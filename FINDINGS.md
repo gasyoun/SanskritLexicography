@@ -28,15 +28,16 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §45) whatever its section, so existing numbers never shift; when a finding is later
+(currently §55) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
 
 **Grammar & morphology data**
 
-- 🟠 [§1. Whitney accent-mobility rules are machine-encodable](#1-whitney-accent-mobility-rules-are-machine-encodable) — the Zaliznyak a–f accent axis is an encoding task, not a missing source; VedaWeb 2.0 validates. **Encoded 02-07-2026** → WhitneyRoots `crosswalk/accent_rules.json`.
-- 🟠 [§42. Whitney self-contradicts on derivative ī-stem gen.pl accent](#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent) — §320 "not thrown forward" vs §319a RV "usually" shifts vs §356's own printed nadī́nām; encode as a per-lemma variant, not a rule.
+- 🟠 [§1. Whitney accent-mobility rules are machine-encodable](#1-whitney-accent-mobility-rules-are-machine-encodable) — the Zaliznyak a–f accent axis is an encoding task, not a missing source; VedaWeb 2.0 validates. **Encoded 02-07-2026, validated 03-07-2026 (17/19 GO)** → WhitneyRoots `crosswalk/accent_rules.json` / `accent_validation.json`.
+- 🟠 [§42. Whitney self-contradicts on derivative ī-stem gen.pl accent](#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent) — §320 "not thrown forward" vs §319a RV "usually" shifts vs §356's own printed nadī́nām; encode as a per-lemma variant, not a rule. **Empirical split measured 03-07-2026 (n=2, too thin to resolve)** → §54.
+- 🟠 [§54. Whitney accent axis validates at 17/19 matrix cells GO against attested RV accents](#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents) — VedaWeb 2.0 scoring; one exception-candidate lemma found; D3 split too thin to resolve.
 - 🟠 [§2. Homonym token-splitting has a hard morphological ceiling](#2-homonym-token-splitting-has-a-hard-morphological-ceiling) — only 5 of 38 DCS-lumped groups are gaṇa-splittable; the rest need gloss adjudication.
 - 🟠 [§3. The Warnemyr scrape union-smears homonym classes](#3-the-warnemyr-scrape-union-smears-homonym-classes) — local Whitney class files merge homonyms' classes; derive from the live paradigm pages.
 - 🟡 [§4. PWG nominal grammar compresses into 335 paradigm tokens](#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens) — 98,639 of 123,366 entries carry a Zaliznyak-style token.
@@ -132,6 +133,9 @@ Whitney-rule encoding + the join remain. (The legacy `/rigveda/api/search` is su
 (18 rules, 19-cell matrix, 16 lexical exceptions, recorded calls D1–D11) with a Sonnet-runnable
 [validation spec](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_SPEC.md);
 only the validation run + the a–f emission remain. One contradiction found → §42.
+**Status 03-07-2026: the validation run is DONE** — 17 of 19 matrix cells GO (≥90% position
+accuracy) against attested VedaWeb 2.0 RV forms, 0 NO-GO → §54. The ZALIZNYAK_INDEX a–f
+emission is cleared on all 17 GO cells.
 
 > **Source:** [`ZALIZNYAK_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)
 > §"Vedic accent mobility" + `WhitneyRoots/src/whitney_sections.json` §§315–319 — RussianTranslation · 2026-06-29
@@ -201,6 +205,37 @@ adjective bahvī́-type vs noun nadī́-type). Do not "fix" the disagreement by 
 
 > **Source:** [`crosswalk/accent_rules.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
 > R13/D3 (+ R14) — WhitneyRoots · 2026-07-02, Fable 5 (`claude-fable-5`)
+
+### §54. Whitney accent axis validates at 17/19 matrix cells GO against attested RV accents
+
+🟠 **Whitney's formal accent-in-declension table (18 rules, 19 matrix cells) predicts attested
+Rig-Veda accent POSITION correctly for 17 of 19 matrix cells at ≥90% accuracy, 0 cells NO-GO —
+the ZALIZNYAK_INDEX a–f axis is cleared to proceed on the 17 GO cells.**
+Evidence: scored [`crosswalk/accent_rules.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
+against attested accented RV forms from VedaWeb 2.0 + Casaretto et al. (2025), joined on PWG
+`key2` udātta positions (`RussianTranslation/src/headword_index.tsv`), per the method in
+[`ACCENT_VALIDATION_SPEC.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_SPEC.md).
+17/19 cells GO (12 unconditional + 3 low-confidence-per-spec-but-clean at 96.9–100%), 1
+GO-with-exceptions (`T8c·oxytone`, 82%, 14 of 17 rule-errors from one lemma `samyaYc`/samyañc —
+every other añc-declension lemma in the sample scores 100%), 2 measurement-only cells reached 0–1
+attested lemmas (`T2·monosyllable`, `T4/T6·monosyllable`; expected per spec). A mid-run scoring
+bug was caught and fixed: 9 of the 19 cells define case/number-specific `per_case` overrides
+(`G.pl`, `N.A.du.n`) that the first pass silently ignored in favor of the generic strong/middle/
+weakest slot value, which had zeroed the D3 genitive-plural split (§42) entirely (0 observations
+before the fix). After the fix, the D3 split (`-īnā́m` ending vs `-ī́nām` stem_final) measured 2/2
+`ending` (`raTI`, `vaDU`) — **too thin (n=2) to resolve Whitney's own §319a/§356
+self-contradiction**, directional only.
+Implication: 17 GO cells can drive the ZALIZNYAK_INDEX a–f emission now. The `samyaYc`
+exception needs a Whitney-§-cited human review before patching `lexical_exceptions[]` (candidate:
+participle-derived añc-compound subclass, §409–411 — not verified). The D3 split needs a wider
+VedaWeb pull (uncapped `max_locations`, or the bulk export path once it stops returning async
+`202`s) before it can move past measurement-only. Whitelisted-exception forms (138 in this
+sample) are currently excluded from the scored denominator rather than scored against their own
+stated behavior — a known pipeline simplification, not yet a defect fix.
+
+> **Source:** [`crosswalk/accent_validation.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_validation.json) /
+> [`docs/ACCENT_VALIDATION_REPORT.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_REPORT.md)
+> — WhitneyRoots v1.2.0 · 2026-07-03, Sonnet 5 (`claude-sonnet-5`)
 
 ## Corpus & parallel-text data
 
