@@ -13,6 +13,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -40,6 +41,18 @@ from window_reports import (
     build_production_metrics,
     write_reports,
 )
+
+def _under_tempdir(path):
+    """True if `path` lives under the OS temp dir — i.e. a self-test/fixture wf_output rather
+    than a real repo run. Used to auto-guard the live singleton status files (FL8): a fixture
+    audit must never overwrite window_status.json / audit_window.report.json. commonpath raises
+    ValueError across Windows drives (temp on a different drive than the wf) -> treat as real."""
+    try:
+        tmp = os.path.realpath(tempfile.gettempdir())
+        return os.path.commonpath([tmp, os.path.realpath(path)]) == tmp
+    except (ValueError, OSError):
+        return False
+
 
 COLLECT = os.path.join(SRC, '_pilot_collect.py')
 BATCH_FILE = os.path.join(OUT, '_realtest_batch.json')
@@ -245,6 +258,10 @@ def main():
     ap.add_argument('--write-requeue', action='store_true')
     ap.add_argument('--allow-stale', action='store_true',
                     help='forensic mode: continue even if workflow/rootmap/input provenance is stale')
+    ap.add_argument('--ephemeral', action='store_true',
+                    help='fixture/self-test mode: write status+report to a throwaway scratch dir, '
+                         'never touching the live singleton window_status.json / '
+                         'audit_window.report.json (auto-enabled for a wf_output under the OS temp dir)')
     ap.add_argument('--judge-sample-rate', type=float, default=0.10,
                     help='deterministic clean-key semantic judge sample rate (default: 0.10)')
     ap.add_argument('--judge-sample-min', type=int, default=5,
@@ -274,6 +291,10 @@ def main():
     wf = os.path.abspath(args.wf_output)
     if not os.path.exists(wf):
         sys.exit('no workflow output %r' % args.wf_output)
+    # FL8 fixture guard: a self-test / temp-file audit writes its status+report to a scratch
+    # dir so it can never clobber the live singletons; a real repo run writes OUT as before.
+    ephemeral = args.ephemeral or _under_tempdir(wf)
+    report_out_dir = tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None
 
     _payload, wf_meta, results, keys, null_cards = workflow_payload(wf)
     emit_audit_event(
@@ -302,7 +323,7 @@ def main():
                   'judge_sample_seed': args.judge_sample_seed,
                   'production_metrics': build_production_metrics(args)}
         json_path, md_path, rq_path, js_path, status_json, status_md = write_reports(
-            report, args.write_requeue, write_requeue_file=False)
+            report, args.write_requeue, write_requeue_file=False, out_dir=report_out_dir)
         emit_audit_event(
             'stale_refusal', level='error', root=args.root, state='stale_artifact',
             summary='stale artifact refused before collect/gates/glue (%d issue%s)' %
@@ -462,7 +483,8 @@ def main():
     report['judge_sample'] = build_judge_sample(
         report, args.judge_sample_rate, args.judge_sample_min, args.judge_sample_seed)
     report['production_metrics'] = build_production_metrics(args)
-    json_path, md_path, rq_path, js_path, status_json, status_md = write_reports(report, args.write_requeue)
+    json_path, md_path, rq_path, js_path, status_json, status_md = write_reports(
+        report, args.write_requeue, out_dir=report_out_dir)
     state = audit_state(report)
     emit_audit_event(
         'requeue_summary',

@@ -122,8 +122,9 @@ def next_action_for(state, report, pending):
     return 'Window is mechanically clean; advance to the next frequency root.'
 
 
-def append_ledger(status):
-    os.makedirs(OUT, exist_ok=True)
+def append_ledger(status, out_dir=None):
+    out_dir = out_dir or OUT
+    os.makedirs(out_dir, exist_ok=True)
     compact = {
         'recorded_at': status.get('recorded_at'),
         'root': status.get('root'),
@@ -144,11 +145,12 @@ def append_ledger(status):
         'crashed': status.get('crashed'),
         'rootmap_sha256': status.get('rootmap_sha256'),
     }
-    with open(LEDGER, 'a', encoding='utf-8') as f:
+    with open(os.path.join(out_dir, os.path.basename(LEDGER)), 'a', encoding='utf-8') as f:
         f.write(json.dumps(compact, ensure_ascii=False) + '\n')
 
 
-def write_window_status(report):
+def write_window_status(report, out_dir=None):
+    out_dir = out_dir or OUT
     root = report.get('root')
     rootmap = rootmap_for(root) if root else None
     subkeys = []
@@ -221,8 +223,9 @@ def write_window_status(report):
                  'nested_exists': glue.get('nested_exists'),
                  'seconds': glue.get('seconds')},
     }
-    json_path = os.path.join(OUT, 'window_status.json')
-    md_path = os.path.join(OUT, 'window_status.md')
+    os.makedirs(out_dir, exist_ok=True)
+    json_path = os.path.join(out_dir, 'window_status.json')
+    md_path = os.path.join(out_dir, 'window_status.md')
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(status, f, ensure_ascii=False, indent=1)
     lines = [
@@ -289,7 +292,7 @@ def write_window_status(report):
     lines += (judge_sample.get('keys') or ['(none)'])
     with open(md_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines) + '\n')
-    append_ledger(status)
+    append_ledger(status, out_dir)
     return json_path, md_path
 
 
@@ -320,18 +323,23 @@ def audit_state(report):
     return 'clean'
 
 
-def write_reports(report, write_requeue, write_requeue_file=True):
-    os.makedirs(OUT, exist_ok=True)
+def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
+    # out_dir defaults to the live OUT dir. An ephemeral/fixture audit (see audit_window.py
+    # --ephemeral) passes a throwaway scratch dir so a self-test or temp-file run can NEVER
+    # clobber the live singleton window_status.json / audit_window.report.json — the "current
+    # status" once reported a temp-file fixture precisely because these names were fixed (FL8).
+    out_dir = out_dir or OUT
+    os.makedirs(out_dir, exist_ok=True)
     if 'judge_sample' not in report:
         report['judge_sample'] = build_judge_sample(
             report,
             report.get('judge_sample_rate', 0.10),
             report.get('judge_sample_min', 5),
             report.get('judge_sample_seed'))
-    json_path = os.path.join(OUT, 'audit_window.report.json')
-    md_path = os.path.join(OUT, 'audit_window.report.md')
-    requeue_path = os.path.join(OUT, 'requeue.keys.txt')
-    judge_sample_path = JUDGE_SAMPLE_FILE
+    json_path = os.path.join(out_dir, 'audit_window.report.json')
+    md_path = os.path.join(out_dir, 'audit_window.report.md')
+    requeue_path = os.path.join(out_dir, 'requeue.keys.txt')
+    judge_sample_path = os.path.join(out_dir, os.path.basename(JUDGE_SAMPLE_FILE))
     requeue_written = bool(write_requeue and write_requeue_file)
     report['requeue_file_written'] = requeue_written
     report.setdefault('requeue_file_preserved', bool(write_requeue and not write_requeue_file))
@@ -424,9 +432,9 @@ def write_reports(report, write_requeue, write_requeue_file=True):
                              ('requeue.defect.keys.txt', report.get('requeue_defect'))):
             if keys_ is None:
                 continue
-            with open(os.path.join(OUT, fname), 'w', encoding='utf-8') as f:
+            with open(os.path.join(out_dir, fname), 'w', encoding='utf-8') as f:
                 f.write('\n'.join(keys_) + ('\n' if keys_ else ''))
-    status_json, status_md = write_window_status(report)
+    status_json, status_md = write_window_status(report, out_dir)
     return (json_path, md_path,
             requeue_path if write_requeue and write_requeue_file else None,
             judge_sample_path, status_json, status_md)

@@ -654,6 +654,40 @@ def test_stale_refusal_preserves_requeue():
                 f.write(old)
 
 
+def test_fixture_audit_does_not_clobber_live_status():
+    """FL8: a fixture/self-test audit run must NEVER overwrite the live singleton status files
+    (window_status.json / audit_window.report.json). A temp-file wf auto-enables the guard, and
+    --ephemeral forces it; either way the live OUT singletons are byte-identical afterward."""
+    live = [os.path.join(OUT, 'window_status.json'),
+            os.path.join(OUT, 'audit_window.report.json'),
+            os.path.join(OUT, 'window_ledger.jsonl')]
+
+    def snap(p):
+        return open(p, 'rb').read() if os.path.exists(p) else None
+
+    before = {p: snap(p) for p in live}
+    fixture = {'meta': {'root': 'zzfixture'}, 'results': [
+        {'key': 'zzfixture~~h0_00_pwg00', 'card': {'iast': 'zz', 'records': [
+            {'h': '1', 'senses': [{'tag': '1', 'german': '{%Wasser%}', 'russian': 'вода',
+             'equivalence_type': 'equivalent', 'source_type': 'attested',
+             'stratum': '', 'differentia': ''}]}]}}]}
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        wf_path = f.name
+        json.dump(fixture, f, ensure_ascii=False)
+    try:
+        # No expect() — a fixture may audit clean/blocked/stale; the guarantee under test is
+        # only that the live singletons are not touched, whatever the exit code.
+        subprocess.run([sys.executable, os.path.join(SRC, 'pilot', 'audit_window.py'),
+                        wf_path, '--ephemeral'],
+                       cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+        after = {p: snap(p) for p in live}
+        for p in live:
+            if before[p] != after[p]:
+                fail('ephemeral audit clobbered the live status file %s' % os.path.basename(p))
+    finally:
+        os.remove(wf_path)
+
+
 def test_release_manifest_hash_validation():
     with tempfile.TemporaryDirectory() as tmp:
         edition = os.path.join(tmp, 'edition_selftest')
@@ -1035,6 +1069,7 @@ def main():
         test_ru_coverage_denominator_not_silently_exempt,
         test_whitney_homonym_safety,
         test_stale_refusal_preserves_requeue,
+        test_fixture_audit_does_not_clobber_live_status,
         test_release_manifest_hash_validation,
     ]
     for test in tests:
