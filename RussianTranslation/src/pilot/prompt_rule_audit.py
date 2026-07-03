@@ -64,7 +64,14 @@ GERMAN_GLOSS_WORDS = re.compile(
     r'eines|einem|einen|auch|wohl|vielleicht|beim|Name|Art|Theil|Teil|'
     r'Bedeutung|Schulter|Strahl|Sonne|Wasser|Gewässer|Gabe|Geschenk|Glanz|'
     r'Schimmer|Pracht|Feuer|Brand|Schein|Ort|Zeit|Grund|Handeln|Zeug|'
-    r'Pflanze|Gefäss|Gefäß|Handhaben|Henkeln|Schulden)\b',
+    r'Pflanze|Gefäss|Gefäß|Handhaben|Henkeln|Schulden|'
+    # Jmd/jmdm/jmdn = "jemand(en)/jemandem" (someone), a near-ubiquitous B&R
+    # abbreviation; du/wie/woraus/dieses = common short German pronouns/
+    # interrogatives that otherwise collide with FRENCH_WORDS ("du") or leave
+    # colloquial questions ("wie kommst du darauf?") with no recognized German
+    # marker at all, mis-tripping foreign_gloss_translated (gam~~h0_20_ava,
+    # gam~~h0_38_sam_a).
+    r'Jmd|jmdm|jmdn|du|wie|woraus|dieses)\b',
     re.I)
 TEXT_CITATION = re.compile(
     r'(?:<ls\b|ṚV|RV|Atharv|AV\.|MBH|Mahābh|Rām|R\.|M\.|BhP|ŚBr|TS\.|VS\.|'
@@ -85,7 +92,7 @@ LEXICOGRAPHIC_CITATION = re.compile(
 LATIN_WORDS = re.compile(
     r'\b(?:inire|feminam?|legere|inveteratus|convenire|coitus|coire|coeundi|'
     r'membrum|virile|penis|pudenda|futuere|mingere|venus|venere|in\s+coitu|'
-    r'cum|quasi|scilicet|sic|idem|vide)\b', re.I)
+    r'cum|quasi|scilicet|sic|idem|vide|sequi|obsequi)\b', re.I)
 FRENCH_WORDS = re.compile(
     r"(?:\bl['’]|\b(?:une?|les?|des|du|aux?|plus|tr[eè]s|homme|femme|basse|"
     r"extraction|chose|terre|qui|dans|pour|avec|sans)\b)", re.I)
@@ -101,6 +108,7 @@ IAST_DIACRITIC = re.compile(r'[āīūṛṝḷḹṅñṭḍṇśṣ]')
 # field: {%German%} kept beside the Russian, {#Sanskrit#}, and <ab>/<ls>/<is> tags.
 RETAINED_SPAN = re.compile(r'\{%.*?%\}|\{#.*?#\}|<(?:ab|ls|is)\b[^>]*>.*?</(?:ab|ls|is)>'
                            r'|<(?:ab|ls|is)\b[^>]*>', re.S | re.I)
+SANSKRIT_SPAN = re.compile(r'\{#.*?#\}', re.S)
 
 SENSE_REQUIRED = (
     'tag', 'german', 'russian', 'equivalence_type', 'source_type', 'stratum',
@@ -446,7 +454,12 @@ def looks_foreign_literal(gloss, context):
         return False
     if LATIN_FLAG_CONTEXT.search(context or ''):
         return True
-    if LATIN_BINOMIAL.match(value):
+    # LATIN_BINOMIAL ("Capitalized-word lowercase-word", meant for species names like
+    # "Homo sapiens") lacked the same GERMAN_GLOSS_WORDS guard its LATIN_WORDS/FRENCH_WORDS/
+    # ENGLISH_GLOSS_WORDS siblings have below -- German capitalizes every noun, so an ordinary
+    # capitalized abbreviation + lowercase verb ("Jmd zusammenkommen") matched unconditionally
+    # and was misflagged foreign_gloss_translated (gam~~h0_38_sam_a).
+    if LATIN_BINOMIAL.match(value) and not GERMAN_GLOSS_WORDS.search(value):
         return True
     if LATIN_WORDS.search(value) and not GERMAN_GLOSS_WORDS.search(value):
         return True
@@ -472,7 +485,12 @@ def braced_gloss_risks(german, russian, tag):
     risks = []
     src = braced_glosses(german)
     dst = braced_glosses(russian)
-    russian_norm = norm_text(russian)
+    # Scrub verbatim {#Sanskrit#} citation spans before the leaked-substring search below:
+    # a short gloss (e.g. "mit") can coincidentally be a literal substring of an unrelated
+    # SLP1 citation token (miTunO -> lowercased "mituno" contains "mit"), spuriously flagging
+    # a correctly-translated gloss as untranslated (gam~~h0_38_sam_a). {%...%} spans are left
+    # alone -- the rendered_echo/side-by-side checks below still need to find them.
+    russian_norm = norm_text(SANSKRIT_SPAN.sub(' ', russian))
     for i, gloss in enumerate(src):
         context = gloss_context(german, i)
         rendered = dst[i].strip() if i < len(dst) else ''

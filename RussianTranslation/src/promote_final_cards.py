@@ -18,7 +18,8 @@ Supersede mode (default): the new store replaces the old run_batch store (which 
 'legacy_needs_review' and therefore exported zero rows anyway). The prior file is backed up to
 <store>.legacy.bak unless --no-backup.
 
-  python src/promote_final_cards.py                 # promote -> src/pwg_ru_translated.jsonl
+  python src/promote_final_cards.py --gen-model-version claude-sonnet-5
+                                                   # promote -> src/pwg_ru_translated.jsonl
   python src/promote_final_cards.py --dry-run        # report coverage, write nothing
   python src/promote_final_cards.py --glob 'wf_output.sd.*.json'   # a subset
 
@@ -41,10 +42,9 @@ DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 DEFAULT_GLOB = 'wf_output*.json'
 MODEL = 'sonnet'                                    # the harness pins model:'sonnet' (gen_opt_harness2)
 # Tier + VERSION must both be recorded (models change — a bare 'sonnet' is ambiguous later;
-# same convention as promote_en.py). The wf_output meta does not carry the resolved version,
-# so it is recorded here; override per run with --gen-model-version if the alias mapping
-# changed for the run being promoted.
-GEN_MODEL_VERSION = 'claude-sonnet-4-6'             # alias 'sonnet' -> Sonnet 4.6 (RU runs)
+# same convention as promote_en.py). The wf_output meta does not reliably carry the resolved
+# version, so normal promotion must pass --gen-model-version explicitly.
+SELFTEST_MODEL_VERSION = 'claude-sonnet-5'
 
 
 def load_wf(path):
@@ -101,7 +101,7 @@ def collect_cards(paths):
     return best, conflicts, sorted(null_keys)
 
 
-def provenance(entry, subkey, model_version=GEN_MODEL_VERSION):
+def provenance(entry, subkey, model_version):
     meta = entry['meta']
     hashes = (meta.get('input_hashes') or {}).get(subkey) or {}
     card = entry.get('card') or {}
@@ -137,7 +137,7 @@ def provenance(entry, subkey, model_version=GEN_MODEL_VERSION):
     return prov
 
 
-def rows_for(subkey, entry, review_status, model_version=GEN_MODEL_VERSION):
+def rows_for(subkey, entry, review_status, model_version):
     card = entry['card']
     key1 = entry['meta'].get('root')               # the join key into assembled_cards.jsonl
     prov = provenance(entry, subkey, model_version)
@@ -175,7 +175,8 @@ def selftest():
              'source_type': 'attested', 'stratum': 'Vedic', 'differentia': ''},
             {'tag': '2', 'russian': '', 'german': 'x'},          # no russian -> skipped
         ]}]}, 'meta': meta, 'wf_file': 'wf_output.sc.pA.json'}
-    rows = list(rows_for('p_a~~h5_00_pwg00', entry, 'ai_translated'))
+    rows = list(rows_for('p_a~~h5_00_pwg00', entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))
     assert len(rows) == 1, 'a sense without russian must be skipped'
     r = rows[0]
     assert r['key1'] == 'pA', 'key1 must be the HEADWORD meta.root, not the sub-card key'
@@ -183,14 +184,15 @@ def selftest():
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'
     p = r['provenance']
     assert p['model'] == 'sonnet' and p['rootmap_sha256'] == 'abc'
-    assert p['model_version'] == GEN_MODEL_VERSION, 'model VERSION recorded, not just the tier alias'
+    assert p['model_version'] == SELFTEST_MODEL_VERSION, 'model VERSION recorded, not just the tier alias'
     assert p['input_raw_sha256'] == 'r1' and p['generated_at'], 'provenance must be complete'
     assert 'partial_card' not in p, 'complete card carries no partial marker'
     # a partial (selfheal) card must be marked on every row it yields
     pentry = dict(entry)
     pentry['card'] = dict(entry['card'], partial=True, missing_fragments=['g2:f1'],
                           missing_groups=1, total_groups=3)
-    pr = list(rows_for('p_a~~h5_00_pwg00', pentry, 'ai_translated'))[0]['provenance']
+    pr = list(rows_for('p_a~~h5_00_pwg00', pentry, 'ai_translated',
+                       SELFTEST_MODEL_VERSION))[0]['provenance']
     assert pr['partial_card'] is True and pr['missing_fragments'] == ['g2:f1'], \
         'partial cards must be distinguishable in the store'
     # collect_cards: a non-null card wins over a null for the same sub-card key.
@@ -215,7 +217,8 @@ def selftest():
     best, _conf, _nulls = collect_cards(sorted([enf, fullf, nullf]))
     got = best['p_a~~h5_00_pwg00']
     assert got['meta'].get('lang') != 'en', 'EN wf file must be excluded from the RU bridge'
-    assert list(rows_for('p_a~~h5_00_pwg00', got, 'ai_translated')), 'RU rows survive the EN sibling'
+    assert list(rows_for('p_a~~h5_00_pwg00', got, 'ai_translated',
+                         SELFTEST_MODEL_VERSION)), 'RU rows survive the EN sibling'
     print('promote_final_cards selftest OK')
 
 
@@ -226,10 +229,9 @@ def main():
     ap.add_argument('--glob', default=DEFAULT_GLOB, help='wf_output glob, relative to repo root')
     ap.add_argument('--store', default=DEFAULT_STORE)
     ap.add_argument('--review-status', default='ai_translated')
-    ap.add_argument('--gen-model-version', default=GEN_MODEL_VERSION,
+    ap.add_argument('--gen-model-version', default=None, required='--selftest' not in sys.argv[1:],
                     help='resolved model version recorded in provenance.model_version '
-                         '(default %(default)s — what the harness\'s model:\'sonnet\' alias '
-                         'resolved to; override if the alias mapping changed for this run)')
+                         '(exact model id required; do not guess from the model alias)')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
     ap.add_argument('--force', action='store_true',

@@ -12,6 +12,26 @@ ranked optimizations, the decision taken, and the failures hit along the way.
 
 ---
 
+## Current status addendum (2026-07-03)
+
+The speed notes below are historical context; the current production path is
+`src/pilot/gen_opt_harness2.py` with batched+masked inputs, guarded retry/heal,
+presplit routing, `OUTPUT_BUDGET=90`, and translation memory auto-enabled when
+sidecars exist (`--tm=auto`, `--no-tm` to opt out). Article-site/dashboard lazy
+loading is already done. Lean TR / rule-3 compression was tested in
+`AB_TEST_LEAN_TR.md` and rejected for quality; do not revive it as an operator
+shortcut.
+
+Remaining speed work should be measured: refresh and widen card/fragment TM
+coverage after promotions/heal harvests, let conservative degenerate
+cross-reference stubs pass through without LLM calls, and use
+`src/pilot/perf_preflight.py` before Max spend to see remaining agent lanes. Use
+`src/pilot/calibrate_perf_harness.py --arm-set conservative` or `--arm-set wide`
+for scratch-only wider calibration. Live calibration arms must be run sequentially
+with cache cooldown, never in parallel same-prompt arms.
+
+---
+
 ## The question
 
 > "10M tokens for one root is too much even in Sonnet mode. What optimisation of

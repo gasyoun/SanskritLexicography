@@ -6,8 +6,8 @@ Resume spec for the PWG→English **bulk** follow-up (FU1) after FU2 (audit gate
 (tri-lingual merge) shipped. **Real Max-quota spend** — run in a Max/Workflow session at
 **≤3-wide concurrency**. All six design decisions below are MG-locked (2026-06-30); do not
 re-litigate. This file is the *decision/rationale* record; the step-by-step **execution runbook**
-is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_pwg_en_fu1_run.md). Parent:
-[`HANDOFF_2026-06-30_pwg_en_followups.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-06-30_pwg_en_followups.md).
+is [`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/HANDOFF_2026-06-30_pwg_en_fu1_run.md). Parent:
+[`HANDOFF_2026-06-30_pwg_en_followups.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/HANDOFF_2026-06-30_pwg_en_followups.md).
 
 ## Locked decisions
 

@@ -8,6 +8,22 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-07-03
+
+### Translation provenance audit/backfill
+- Added `src/audit_translation_provenance.py` to report RU/EN provenance counts,
+  input-hash gaps, partial-card rows, and workflow/date/model groups for
+  `src/pwg_ru_translated.jsonl`. In `--write` mode it conservatively marks
+  ambiguous legacy `sonnet` rows as unresolved without inventing an exact model
+  version.
+- Hardened `src/promote_final_cards.py`: future RU promotions must pass
+  `--gen-model-version <exact-model-id>` when workflow metadata lacks an exact
+  version. The stale implicit default is gone.
+- Live store finding: 10,856 rows; 10,446 older RU rows had no exact
+  `model_version`, 410 RU rows already had `claude-sonnet-5`, and 8,574 EN
+  provenance rows were already exact-versioned. The older RU rows were marked
+  unresolved locally; no translation text or review status changed.
+
 ## 2026-07-02
 
 ### Renou H4 citation bias + Step-0 pilot review sheet — step 1 executed

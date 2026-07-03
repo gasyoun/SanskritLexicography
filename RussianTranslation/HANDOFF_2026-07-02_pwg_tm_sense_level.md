@@ -109,6 +109,6 @@ alignment first; everything else is downstream.
 - Session closed with `/handoff`; this handoff's GTD row flipped.
 
 Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md).
-Prior handoff: [`HANDOFF_2026-07-02_pwg_selfheal_fixes.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HANDOFF_2026-07-02_pwg_selfheal_fixes.md).
+Prior handoff: [`HANDOFF_2026-07-02_pwg_selfheal_fixes.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/HANDOFF_2026-07-02_pwg_selfheal_fixes.md).
 
 _Dr. Mārcis Gasūns_

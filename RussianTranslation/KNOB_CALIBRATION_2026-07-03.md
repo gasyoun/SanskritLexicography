@@ -86,5 +86,12 @@ the token saving) did **not** materialize here.
   "quality" here means the harness-level null/partial/retry signal only, per
   the handoff's instructions. A fidelity sample pass is a natural follow-up
   if 90 is scaled to a full freq-queue run.
+- Follow-up calibrations should use
+  [`calibrate_perf_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/calibrate_perf_harness.py)
+  to generate scratch harness arms/manifests from a fixed key set, after checking
+  the same keys with
+  [`perf_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/perf_preflight.py).
+  Keep the AB_TEST_LEAN_TR lesson: run live arms sequentially with cache cooldown;
+  never run same-prompt arms in parallel.
 
 _Dr. Mārcis Gasūns_
