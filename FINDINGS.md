@@ -1096,6 +1096,48 @@ the Phase 0 @DECIDE — same restriction as the rest of the mirror). Phase 4
 > `sanskrit.inria.fr/DATA/XML/`), gzip integrity + structure verified locally,
 > Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
+### §52. Heritage vs kosha forms diff: the small raw overlap is mostly convention + model difference, and "disagreements" are two-thirds lemmatization policy, not error
+
+Phase 4's forms-oracle diffed Heritage's rule-generated morphology (`SL_morph.xml`
+v3.81, **1,022,526** distinct SLP1 forms) against kosha's DCS+vidyut layer
+(**409,978** forms), joining on the SLP1 form string. The result is
+counter-intuitive and worth recording so the next session does not misread it:
+
+- **Raw form overlap is only 94,264** (23% of kosha, 9% of Heritage) — but this is
+  **not** a coverage failure. Heritage *generates the entire paradigm* of each
+  stem (incl. ~half a million compound-initial `iic`/`iiv` forms a corpus never
+  tokenises), so its 928k Heritage-only forms are engine surplus, not gaps.
+- **The kosha-only gap is inflated by two transcription conventions.** DCS writes
+  word-final/pre-consonant nasalisation as **anusvara `M`** where Heritage writes
+  the phonetic homorganic nasal (`AvAsaM`/`AvAsam`, `oMkAra`/`oNkAra`): **18,636**
+  kosha-only forms recover a Heritage match under nasal-normalisation. A further
+  **8,264** kosha-only forms are DCS **avagraha sandhi artifacts** (leading `'`,
+  e.g. `''jYAya`) that by construction never appear in a citation declension table.
+- **On the 94k overlap, 78.3% agree** on ≥1 lemma. Of the 21.7% (20,496)
+  disagreements, **66% are verbal-derived** (participle / finite-verb /
+  verbal-indecl) — a documented **root ↔ derived-stem lemmatization-policy**
+  difference (Heritage → participle-stem `garhita` / root `kf`; DCS/vidyut → root
+  `garh` / causative-stem `kampay`), **not a contradiction.** The genuine-divergence
+  pool is the remaining **6,966 nominal-only** disagreements, and hand-adjudication
+  of 40 rows shows roughly half of *those* are both-valid ambiguities (`ābhābhyām`
+  ← ābhā *or* ābha). **Net genuine one-sided divergence is low-single-digit % of
+  the overlap**, and it exists on both sides: DCS corpus mis-tags
+  (`vaiśvadeveṣu` → *aparāhṇika*) and Heritage stem-choice oddities
+  (`goṣṭhīm` → *goṣṭha*).
+
+Implication for reuse: (1) never compare Heritage and DCS/corpus form strings
+without **anusvara/nasal normalisation** first — the raw string join understates
+true overlap by tens of thousands of forms. (2) A "disjoint-lemma" disagreement is
+**not** an error signal on its own; filter to **nominal-only** rows before treating
+disagreements as a correction queue. (3) Heritage's precative/subjunctive/
+injunctive/conditional **scope gaps** mean those DCS verb forms are kosha-only *by
+design* — expected, not missing. Full write-up + reproducible script:
+[heritage_forms_oracle.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.md).
+
+> **Source:** [HeadwordLists/heritage_forms_oracle.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.py)
+> over `SL_morph.xml` v3.81 + `kosha.db`; 40-row hand-adjudication;
+> Opus 4.8 (`claude-opus-4-8`) · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
