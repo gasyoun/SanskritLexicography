@@ -1101,6 +1101,196 @@ def test_tm_pre_resolves_cards():
             pass
 
 
+def test_tm_auto_no_sidecar_metadata():
+    """Default CLI semantics are --tm=auto: if the sidecar is missing, generation continues
+    normally and records the no-op in META instead of silently changing lanes."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    from window_common import rootmap_path, input_paths
+    root = 'gam'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath:
+        return
+    rootmap, keys = gh.selected_keys(root, None)
+    keys = [k for k in keys if os.path.exists(input_paths(k)[0])][:3]
+    if not keys:
+        return
+    missing_tm = os.path.join(tempfile.gettempdir(), 'missing_pwg_tm_selftest_%s.json' % os.getpid())
+    try:
+        os.remove(missing_tm)
+    except OSError:
+        pass
+    js, _batches = gh.build(root, keys, rootmap, 12000, tm_path=missing_tm, tm_auto=True)
+    meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+    if not meta.get('tm_auto'):
+        fail('META.tm_auto must be true for --tm=auto/default generation')
+    if meta.get('tm_available'):
+        fail('META.tm_available must be false when the auto sidecar is absent')
+    if meta.get('tm_cards') != 0 or meta.get('tm_hits'):
+        fail('missing auto TM sidecar must not pre-resolve any cards')
+    owed = {k for b in meta['batches'] for k in b} | set(meta['presplit_keys']) | set(meta['degenerate_passthrough_keys'])
+    if owed != set(keys):
+        fail('missing auto TM sidecar must keep every selected key owed/accounted')
+
+
+def test_degenerate_passthrough_accounted():
+    """A safely-degenerate cross-reference stub is emitted as an accounted no-LLM row and is
+    excluded from translation lanes; it is never a silent skip."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    from window_common import input_paths, read_text
+    key = 'ab'
+    rp, pp = input_paths(key)
+    if not (os.path.exists(rp) and os.path.exists(pp)):
+        return
+    card = gh.degenerate_passthrough_card(key, read_text(rp), read_text(pp), 'russian')
+    if not card or not card.get('degenerate_passthrough'):
+        fail('ab fixture should qualify for conservative degenerate pass-through')
+    js, batches = gh.build(key, [key], None, 12000, nominal=True, tm_path=None)
+    meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+    if meta.get('degenerate_passthrough_keys') != [key]:
+        fail('META.degenerate_passthrough_keys must account for the stub key')
+    if batches or meta.get('presplit_keys'):
+        fail('a degenerate pass-through key must not also enter an agent translation lane')
+    if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
+        fail('generated harness must emit explicit degenerate pass-through rows')
+
+
+def test_degenerate_passthrough_rejects_glosses():
+    import gen_opt_harness2 as gh
+    import perf_preflight as pp
+    raw = """=== LAYER: PWG — MAIN ENTRY ===
+{#agni#}¦ {%Feuer%}, <ls>RV.</ls>
+"""
+    if gh.degenerate_passthrough_card('agni', raw, '{"key1":"agni"}', 'russian'):
+        fail('cards with German gloss blocks must not enter deterministic pass-through')
+    if pp.near_degenerate_reason('agni', raw, '{"key1":"agni"}', 'russian'):
+        fail('cards with German gloss blocks must not be suggested as near-degenerate stubs')
+    correction = """=== LAYER: PWG — MAIN ENTRY ===
+{#as#}¦ <ab>vgl.</ab> mit {#aBi#} <ab>Z.</ab> 9 <ab>v. u.</ab> lies: {#etattrikam#}.
+"""
+    if gh.degenerate_passthrough_card('as', correction, '{"key1":"as"}', 'russian'):
+        fail('editorial correction prose (lies:) must stay out of deterministic pass-through')
+    if 'editorial correction prose' not in (pp.near_degenerate_reason('as', correction, '{"key1":"as"}', 'russian') or ''):
+        fail('preflight should explain why correction prose is report-only')
+    strike = """=== LAYER: PWG — MAIN ENTRY ===
+{#vid#}¦ <ab>Z.</ab> 5 ist ein {#tasya#} zu streichen.
+"""
+    if gh.degenerate_passthrough_card('vid', strike, '{"key1":"vid"}', 'russian'):
+        fail('editorial correction prose (streichen) must stay out of deterministic pass-through')
+
+
+def test_perf_preflight_small_tm_and_no_tm():
+    key = 'gam~~h0_03_sec_3'
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
+                '--keys=%s' % key, '--json'], 0)
+    report = json.loads(proc.stdout)
+    if report['selected_keys'] != [key]:
+        fail('perf_preflight must preserve the requested fixed key set')
+    if report.get('schema') != 'pwg.performance_preflight.v1' or 'reports' in report:
+        fail('single-root perf_preflight JSON must remain the plain v1 report shape')
+    if 'tm_available' not in report or 'agent_expected_after_tm' not in report:
+        fail('perf_preflight JSON missing TM/agent accounting fields')
+    proc2 = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
+                 '--keys=%s' % key, '--no-tm', '--json'], 0)
+    no_tm = json.loads(proc2.stdout)
+    if no_tm['tm_auto'] or no_tm['tm_cards'] != 0:
+        fail('--no-tm preflight must disable TM accounting')
+    if no_tm['batch_count'] < 1 or no_tm['agent_expected_after_tm'] < 1:
+        fail('small no-TM card should still be owed by a normal agent lane')
+
+
+def test_perf_preflight_dense_presplit():
+    key = 'gam~~h0_00_pwg00'
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
+                '--keys=%s' % key, '--no-tm', '--json'], 0)
+    report = json.loads(proc.stdout)
+    if key not in report.get('presplit_keys', []):
+        fail('dense key must report presplit routing in performance preflight')
+    if report.get('agent_expected_after_tm', 0) < 1:
+        fail('dense presplit key must report a nonzero expected agent lane')
+
+
+def test_perf_preflight_degenerate_zero_agent():
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'ab',
+                '--nominal', '--keys=ab', '--json'], 0)
+    report = json.loads(proc.stdout)
+    if report.get('degenerate_passthrough_keys') != ['ab']:
+        fail('ab must report degenerate pass-through in performance preflight')
+    if report.get('agent_expected_after_tm') != 0:
+        fail('degenerate pass-through should report zero expected agents')
+
+
+def test_perf_preflight_multi_root_matrix_and_order():
+    tm_sidecar = os.path.join(HERE, 'translation_memory.ru.json')
+    if not os.path.exists(tm_sidecar):
+        return
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py',
+                'gam', 'han', 'as', 'vid', '--json'], 0)
+    matrix = json.loads(proc.stdout)
+    if matrix.get('schema') != 'pwg.performance_preflight.matrix.v1':
+        fail('multi-root perf_preflight JSON must use the matrix wrapper')
+    reports = {r['root']: r for r in matrix.get('reports', [])}
+    for root in ['gam', 'han', 'as', 'vid']:
+        if root not in reports:
+            fail('multi-root matrix missing %s' % root)
+    if reports['han'].get('agent_expected_after_tm') != 0:
+        fail('han should be recognized as fully cached / zero-agent in the local TM preflight')
+    if 'han' not in matrix.get('recommended_order', {}).get('skip_cached', []):
+        fail('fully cached roots must be listed in skip_cached')
+    run_first = matrix.get('recommended_order', {}).get('run_first', [])
+    if 'vid' not in run_first or 'as' not in run_first:
+        fail('low-agent roots should appear in recommended run order')
+
+
+def test_perf_preflight_fragment_tm_empty_warning():
+    from window_common import rootmap_path, input_paths
+    root = 'gam'
+    key = 'gam~~h0_00_pwg00'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath or not os.path.exists(input_paths(key)[0]):
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        tm_sidecar = os.path.join(tmp, 'translation_memory.ru.json')
+        with open(tm_sidecar, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.translation_memory.v1', 'lang': 'ru', 'entries': {}}, f)
+        proc = run([sys.executable, 'src/pilot/perf_preflight.py', root,
+                    '--keys=%s' % key, '--tm=%s' % tm_sidecar,
+                    '--wf-glob=no_such_frag_prov_fixture_*.json', '--json'], 0)
+        report = json.loads(proc.stdout)
+        warnings = report.get('warnings') or []
+        if key not in report.get('presplit_keys', []):
+            fail('dense fixture must route to presplit for fragment-TM warning test')
+        joined = '\n'.join(warnings)
+        if 'build-frags --lang ru' not in joined:
+            fail('empty fragment TM warning must include the build-frags command')
+        if 'no fragment provenance available yet' not in joined:
+            fail('empty fragment TM warning must state when no frag_prov source exists')
+
+
+def test_calibration_arm_set_conservative_emit_only():
+    with tempfile.TemporaryDirectory() as tmp:
+        out_dir = os.path.join(tmp, 'perf_smoke_preflight')
+        proc = run([sys.executable, 'src/pilot/calibrate_perf_harness.py', 'gam',
+                    '--keys=gam~~h0_03_sec_3', '--arm-set', 'conservative',
+                    '--emit-only', '--out-dir=%s' % out_dir], 0)
+        manifest_path = os.path.join(out_dir, 'manifest.json')
+        if not os.path.exists(manifest_path):
+            fail('calibration emit-only must write manifest.json')
+        manifest = json.load(open(manifest_path, encoding='utf-8'))
+        arms = {(a['output_budget'], a['selfheal_budget'], a['tm_mode'])
+                for a in manifest.get('arms', [])}
+        expected = {(90, 12, 'auto'), (90, 12, 'off'), (110, 12, 'auto'), (110, 12, 'off')}
+        if arms != expected:
+            fail('conservative arm set mismatch: %s' % sorted(arms))
+        if 'cache cooldown' not in manifest.get('cache_warning', ''):
+            fail('calibration manifest must keep the cache-cooldown warning')
+        if any(name.endswith('.js') for name in os.listdir(out_dir)):
+            fail('emit-only calibration must not generate harness JS files')
+        if 'cache cooldown' not in proc.stdout:
+            fail('calibration CLI must print the cache-cooldown warning')
+
+
 def test_frag_tm_reuse():
     """Fragment-level --tm: a card that plan()-splits into >=2 fragments, with ONE fragment
     in the fragment sidecar, emits a FRAG_TM group-shape mirroring FRAGS where exactly the
@@ -1179,6 +1369,15 @@ def main():
     tests = [
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
+        test_tm_auto_no_sidecar_metadata,
+        test_degenerate_passthrough_accounted,
+        test_degenerate_passthrough_rejects_glosses,
+        test_perf_preflight_small_tm_and_no_tm,
+        test_perf_preflight_dense_presplit,
+        test_perf_preflight_degenerate_zero_agent,
+        test_perf_preflight_multi_root_matrix_and_order,
+        test_perf_preflight_fragment_tm_empty_warning,
+        test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
