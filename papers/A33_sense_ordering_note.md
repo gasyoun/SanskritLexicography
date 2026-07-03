@@ -2,8 +2,12 @@
 
 **A33 · research note / short communication · draft 2026-06-24 · target: Lexikos / IJL / eLex**
 
-> **Status:** full first draft (3/5). Evidence assembled and reproducible; needs prose
-> tightening, a related-work paragraph, and a venue decision before submission.
+> **Status:** revision executed, pending author pass (4/5). Evidence assembled and
+> reproducible; hostile referee pass + apparatus fixes 03-07-2026, Fable 5
+> (`claude-fable-5`) — every figure re-verified against the committed metrics, see
+> [A33_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_review_fable5.md).
+> Remaining: venue decision (MG), AP90 Vedic-siglum recall hand-check, optional GRA/PW
+> control columns.
 
 ## Abstract
 
@@ -37,11 +41,27 @@ affinity), *etymological* (root meaning first, then derived), and *frequency* (n
 frequency dictionary of Sanskrit exists). The received view, repeated in handbooks, is that
 the comparative-philology generation ordered senses historically. We test it.
 
+**Relation to existing work.** The typology we test is the classical one: Zgusta (1971)
+distinguishes historical, logical, and frequency-based arrangement of senses as the
+standing options of dictionary microstructure, and modern practical lexicography has
+largely settled on frequency/salience-first ordering for learner-facing works (Atkins and
+Rundell 2008) — exactly the split our Vedic-density discriminator recovers empirically
+between the philological and the pedagogical camps. The microstructure vocabulary is
+Hausmann and Wiegand's (1989); the Sanskrit lexicographic tradition the European
+dictionaries drew on is surveyed by Vogel (1979). That PWG and MW behave as "the same
+animal" (§3.1) is expected rather than surprising: MW's dependence on the Petersburg
+lexicon is philologically established (Zgusta 1988; re-examined by Hanneder 2020), so
+their shared ordering regime is one more inherited convention — measured here for the
+first time at corpus scale. What we add to this line is quantification: a per-entry,
+citation-dated test of *which* arrangement principle a dictionary actually follows,
+rather than a preface-level characterisation.
+
 ## 2. Method
 
 We use the CDSL editions (`csl-orig`) and an existing citation-dating resource built for the
 `pwg_ru` translation project: a map from each `<ls>` literary-source siglum to a numeric
-date and a Renou state (I Vedic · II Pāṇinian · III Epic · IV Classical · V Buddhist/Jaina).
+date and a Renou language-state (I Vedic · II Pāṇinian · III Epic · IV Classical ·
+V Buddhist/Jaina — the periodisation of Renou 1956).
 The map covers **72.4 %** of PWG's 772,567 source citations; the unrecognised tail is
 dominated by catalogues and secondary literature (Aufrecht's Oxford catalogue, *Indische
 Studien*, *Indische Sprüche*), not primary datable texts, so the sample is the most-cited
@@ -50,7 +70,7 @@ primary corpus and is if anything conservative about the oldest layer.
 For each entry we segment the printed senses (PWG/PW: `<div>`-numbered senses; MW:
 consecutive `<L>` records sharing the headword; AP90: `{@N@}` markers), extract the dated
 citations in each sense, and compute (1) whether the first printed sense is the
-oldest-attested, and the Kendall τ between printed order and date order; (3) whether the
+oldest-attested; (2) the Kendall τ between printed order and date order; (3) whether the
 citations *inside* a sense run oldest→newest. As a single cross-dictionary discriminator we
 compute **Vedic-citation density**: the fraction of cited senses that reach at least one
 Renou-I (Vedic) source. Apte has no citation map, so its density is measured by matching
@@ -128,21 +148,72 @@ Vedic / Brāhmaṇa / epic / classical badge), with an optional, explicitly-labe
 an authorial stance; chronology and frequency are lenses laid over it, not replacements for
 it.
 
-## 5. Reproducibility
+## 5. Reproducibility and companion studies
 
-Scripts and metrics: [`research/analyze_sense_order.py`](../RussianTranslation/research/analyze_sense_order.py),
-[`research/analyze_cross_dict.py`](../RussianTranslation/research/analyze_cross_dict.py),
-[`research/sense_order_metrics.md`](../RussianTranslation/research/sense_order_metrics.md),
-[`research/cross_dict_metrics.md`](../RussianTranslation/research/cross_dict_metrics.md). Full
+Scripts and metrics: [`research/analyze_sense_order.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_sense_order.py),
+[`research/analyze_cross_dict.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/analyze_cross_dict.py),
+[`research/sense_order_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sense_order_metrics.md),
+[`research/cross_dict_metrics.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/cross_dict_metrics.md). Full
 preface evidence and probe-word reads:
-[`research/HANDOFF_sense_ordering.md`](../RussianTranslation/research/HANDOFF_sense_ordering.md).
+[`research/HANDOFF_sense_ordering.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/HANDOFF_sense_ordering.md).
 Source editions: Cologne Digital Sanskrit Lexicon (`csl-orig`). Citation-dating map:
 `ls_source_map.json` / `ls_source_map_mw.json`.
 
+**Companion studies (division of the ordering question).** This note owns *within-entry
+sense order vs attestation date*. Two companions in the same series attack adjacent faces
+of the same question and are cross-cited rather than re-derived: the sense-inheritance
+study (csl-atlas P2, *Condensation, Not Inflation*) owns sense *survival and drift along
+inheritance edges*; the kośa-macrostructure study (csl-atlas P6, *Order Is the
+Dictionary*) owns *concept-level arrangement* in the indigenous onomasiological
+tradition, where the ordering IS the lexicographic content. The three share the ordering
+metric vocabulary (printed-vs-date τ, lead-sense stability) by design.
+
+## References (draft — author to finalise)
+
+*Primary dictionaries.* Böhtlingk, Otto, and Rudolph Roth. 1855–1875. *Sanskrit-Wörterbuch*
+(PWG), 7 vols. St. Petersburg: Kaiserliche Akademie der Wissenschaften. — Böhtlingk, Otto.
+1879–1889. *Sanskrit-Wörterbuch in kürzerer Fassung* (PW), 7 vols. St. Petersburg. —
+Monier-Williams, Monier. 1899. *A Sanskrit-English Dictionary*, new ed. Oxford: Clarendon
+Press. — Grassmann, Hermann. 1873–1875. *Wörterbuch zum Rig-Veda.* Leipzig: Brockhaus. —
+Apte, Vaman Shivram. 1890. *The Practical Sanskrit-English Dictionary.* Poona. —
+Кочергина, В. А. 1987. *Санскритско-русский словарь*, 2-е изд. Москва: Русский язык.
+
+*Secondary.*
+
+Atkins, B. T. Sue, and Michael Rundell. 2008. *The Oxford Guide to Practical
+Lexicography.* Oxford: Oxford University Press.
+
+Hanneder, Jürgen. 2020. "Woher hat er das? Zum Charakter des *Sanskrit-English
+Dictionary* von Monier-Williams." *Zeitschrift der Deutschen Morgenländischen
+Gesellschaft* 170 (1): 107–117.
+
+Hausmann, Franz Josef, and Herbert Ernst Wiegand. 1989. "Component Parts and Structures
+of General Monolingual Dictionaries: A Survey." In Hausmann, Reichmann, Wiegand and
+Zgusta (eds.), *Wörterbücher / Dictionaries / Dictionnaires,* vol. 1 (HSK 5.1), 328–360.
+Berlin and New York: Walter de Gruyter.
+
+Renou, Louis. 1956. *Histoire de la langue sanskrite.* Lyon and Paris: IAC.
+
+Vogel, Claus. 1979. *Indian Lexicography.* (A History of Indian Literature, vol. V,
+fasc. 4, ed. Jan Gonda.) Wiesbaden: Otto Harrassowitz.
+
+Zgusta, Ladislav. 1971. *Manual of Lexicography.* (Janua Linguarum, Series Maior 39.)
+Prague: Academia; The Hague and Paris: Mouton.
+
+Zgusta, Ladislav. 1988. "Copying in Lexicography: Monier-Williams' Sanskrit Dictionary
+and Other Cases (Dvaikośyam)." *Lexicographica* 4: 145–164.
+
+**Primary digital source.** Cologne Digital Sanskrit Dictionaries (CDSL). Institute of
+Indology and Tamil Studies, University of Cologne.
+[`sanskrit-lexicon.uni-koeln.de`](https://www.sanskrit-lexicon.uni-koeln.de/).
+
 ## To do before submission
 
-- Related work: position against Stamm/Hausmann lexicographic-microstructure theory and the
-  Sanskrit-lexicography literature (Wezler, Vogel's *Indian Lexicography*).
+- ~~Related work~~ ✅ done (03-07-2026 referee pass; see §1). If specific comparative
+  works were intended by the earlier "Zaïane 2008 / Cysouw 2013 / Pereltsvaig 2019"
+  suggestions, the author should supply verified citations — they could not be confirmed
+  as on-topic sense-ordering literature and are not cited.
 - Add GRA and PW to the quantitative tables (GRA is single-corpus, so chronology is moot — a
   useful control); confirm the AP90 Vedic-siglum recall against a hand-checked sample.
-- Decide venue (Lexikos vs IJL vs eLex) and trim to that length.
+- Decide venue (Lexikos vs IJL vs eLex) and trim to that length — MG `@DECIDE`, tracked
+  in GTD.
