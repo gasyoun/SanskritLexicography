@@ -1096,6 +1096,75 @@ the Phase 0 @DECIDE — same restriction as the rest of the mirror). Phase 4
 > `sanskrit.inria.fr/DATA/XML/`), gzip integrity + structure verified locally,
 > Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
+### §52. Heritage vs kosha forms diff: the small raw overlap is mostly convention + model difference, and "disagreements" are two-thirds lemmatization policy, not error
+
+Phase 4's forms-oracle diffed Heritage's rule-generated morphology (`SL_morph.xml`
+v3.81, **1,022,526** distinct SLP1 forms) against kosha's DCS+vidyut layer
+(**409,978** forms), joining on the SLP1 form string. The result is
+counter-intuitive and worth recording so the next session does not misread it:
+
+- **Raw form overlap is only 94,264** (23% of kosha, 9% of Heritage) — but this is
+  **not** a coverage failure. Heritage *generates the entire paradigm* of each
+  stem (incl. ~half a million compound-initial `iic`/`iiv` forms a corpus never
+  tokenises), so its 928k Heritage-only forms are engine surplus, not gaps.
+- **The kosha-only gap is inflated by two transcription conventions.** DCS writes
+  word-final/pre-consonant nasalisation as **anusvara `M`** where Heritage writes
+  the phonetic homorganic nasal (`AvAsaM`/`AvAsam`, `oMkAra`/`oNkAra`): **18,636**
+  kosha-only forms recover a Heritage match under nasal-normalisation. A further
+  **8,264** kosha-only forms are DCS **avagraha sandhi artifacts** (leading `'`,
+  e.g. `''jYAya`) that by construction never appear in a citation declension table.
+- **On the 94k overlap, 78.3% agree** on ≥1 lemma. Of the 21.7% (20,496)
+  disagreements, **66% are verbal-derived** (participle / finite-verb /
+  verbal-indecl) — a documented **root ↔ derived-stem lemmatization-policy**
+  difference (Heritage → participle-stem `garhita` / root `kf`; DCS/vidyut → root
+  `garh` / causative-stem `kampay`), **not a contradiction.** The genuine-divergence
+  pool is the remaining **6,966 nominal-only** disagreements, and hand-adjudication
+  of 40 rows shows roughly half of *those* are both-valid ambiguities (`ābhābhyām`
+  ← ābhā *or* ābha). **Net genuine one-sided divergence is low-single-digit % of
+  the overlap**, and it exists on both sides: DCS corpus mis-tags
+  (`vaiśvadeveṣu` → *aparāhṇika*) and Heritage stem-choice oddities
+  (`goṣṭhīm` → *goṣṭha*).
+
+Implication for reuse: (1) never compare Heritage and DCS/corpus form strings
+without **anusvara/nasal normalisation** first — the raw string join understates
+true overlap by tens of thousands of forms. (2) A "disjoint-lemma" disagreement is
+**not** an error signal on its own; filter to **nominal-only** rows before treating
+disagreements as a correction queue. (3) Heritage's precative/subjunctive/
+injunctive/conditional **scope gaps** mean those DCS verb forms are kosha-only *by
+design* — expected, not missing. Full write-up + reproducible script:
+[heritage_forms_oracle.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.md).
+
+> **Source:** [HeadwordLists/heritage_forms_oracle.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.py)
+> over `SL_morph.xml` v3.81 + `kosha.db`; 40-row hand-adjudication;
+> Opus 4.8 (`claude-opus-4-8`) · 2026-07-03
+
+### §53. The WIL etymology extraction's affix field is ~half noise — Wilson "outlier" figures are substantially a measurement artifact
+
+🔴 **`csl-orig/v02/wil/wil_etymology.tsv`'s `affix` column contains 3,375 distinct values
+against a closed 23–39-item Pāṇinian vocabulary in every Sanskrit-side extraction; only
+50.1 % of WIL's 19,641 affix instances are valid Pāṇinian affix names.** Any agreement or
+frequency statistic computed over the raw WIL affix column inherits this noise floor:
+vocabulary-filtering lifts WIL↔SKD affix agreement 22.9 → 66.7 %, WIL↔VCP 61.2 → 80.2 %.
+WIL's *root* column has the analogous defect — roots captured in Wilson's thematic surface
+form (`aMSa` where SKD has `aMS`), unreached by the corpus root-normalization fold — giving
+WIL root "agreement" of 7.9–20 % against every dictionary **including MW at 8.4 %**
+(n=1,074), which is form mismatch, not editorial divergence. Also: MD (201×) and CAE (584×)
+carry the same `<ab>E.</ab>` tag WIL uses as its etymology marker, but there it means **Epic
+register** — never feed them to a WIL-style E.-extractor.
+
+Evidence: computed 03-07-2026 over the committed TSVs with the same set-intersection rule as
+[stats_etymology.py](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/stats_etymology.py)
+§6a; full workings + fix plan (M1/M4/m3) in
+[papers/A35_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A35_review_fable5.md).
+
+Implication: consume `wil_etymology.tsv` only after filtering `affix` against the Pāṇinian
+vocabulary (union of the Sanskrit-side extractions) and treat its `root` column as
+surface-form, not citation-form; quote A35's Wilson figures only in the vocabulary-filtered
+version until the extractor is fixed.
+
+> **Source:** [A35_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A35_review_fable5.md),
+> Fable 5 `claude-fable-5` · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
