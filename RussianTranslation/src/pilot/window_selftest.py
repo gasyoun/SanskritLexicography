@@ -894,6 +894,60 @@ def test_ru_coverage_denominator_not_silently_exempt():
             ru_coverage.REPO, ru_coverage.RU_STORE, sys.argv = old_repo, old_store, old_argv
 
 
+def test_en_residual_coverage_complete():
+    """FL4: en_residual_keys 'done' means coverage-complete, not '>=1 English sense'. A card
+    with 1 of 2 senses translated is a residual (its 1 untranslated sense must not be hidden);
+    a fully-translated card is done; a null/empty card is never done."""
+    from en_residual_keys import card_done, en_coverage
+    partial = {'records': [{'senses': [{'german': 'a', 'english': 'x'}, {'german': 'b'}]}]}
+    if en_coverage(partial) != (1, 2):
+        fail('en_coverage miscounted the partial card')
+    if card_done(partial):
+        fail('a 1/2-sense card must NOT count as done (the FL4 1/40 bug)')
+    full = {'records': [{'senses': [{'german': 'a', 'english': 'x'},
+                                    {'german': 'b', 'english': 'y'}]}]}
+    if not card_done(full):
+        fail('a fully-translated card must count as done')
+    if card_done(None) or card_done({'records': []}):
+        fail('a null/empty card must never count as done')
+
+
+def test_en_split_triage_keeps_missing_input():
+    """FL4: a residual (null) card whose source input file is absent must stay VISIBLE in
+    triage with a missing_input marker, not be silently skipped."""
+    import en_split_triage as est
+    with tempfile.TemporaryDirectory() as tmp:
+        wf = {'meta': {'selected_keys': ['aa~~h0_00', 'bb~~h0_00']},
+              'results': [
+                  {'key': 'aa~~h0_00', 'card': {'records': [
+                      {'senses': [{'german': 'g', 'english': 'e'}]}]}},
+                  {'key': 'bb~~h0_00', 'card': None}]}
+        with open(os.path.join(tmp, 'wf_output.en.zz.json'), 'w', encoding='utf-8') as f:
+            json.dump(wf, f, ensure_ascii=False)
+        aa_raw = os.path.join(tmp, 'aa.raw.txt')
+        with open(aa_raw, 'w', encoding='utf-8') as f:
+            f.write('<ls>x</ls> Wasser')
+
+        def fake_paths(key):
+            if key == 'aa~~h0_00':
+                return aa_raw, aa_raw + '.portrait'
+            return os.path.join(tmp, 'nope_%s.txt' % key), ''
+
+        old_repo, old_ip = est.REPO, est.input_paths
+        est.REPO, est.input_paths = tmp, fake_paths
+        try:
+            rows = est.scan()
+        finally:
+            est.REPO, est.input_paths = old_repo, old_ip
+    by = {k: f for _r, k, f, _p in rows}
+    if 'bb~~h0_00' not in by:
+        fail('missing-input null card was dropped from triage (FL4)')
+    if not by['bb~~h0_00'].get('missing_input'):
+        fail('missing-input residual not marked missing_input')
+    if by['aa~~h0_00'].get('missing_input'):
+        fail('a present-input card wrongly marked missing_input')
+
+
 def test_whitney_homonym_safety():
     """FL1: requesting a Whitney homonym a root lacks must return EMPTY, never fall back to
     ALL homonyms — attaching a different homonym's grammar is a silent wrong-root error."""
@@ -1067,6 +1121,8 @@ def main():
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
         test_ru_coverage_denominator_not_silently_exempt,
+        test_en_residual_coverage_complete,
+        test_en_split_triage_keeps_missing_input,
         test_whitney_homonym_safety,
         test_stale_refusal_preserves_requeue,
         test_fixture_audit_does_not_clobber_live_status,
