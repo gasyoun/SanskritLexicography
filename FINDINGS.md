@@ -1202,6 +1202,81 @@ version until the extractor is fixed.
 
 ---
 
+### §54. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary
+
+🟡 **The Heritage DICO mirror's named entry anchors mark three different
+structural roles that all share the same CSS class, and conflating them
+truncates or over-merges entry glosses.** (1) a fresh headword anchor
+immediately preceded by its own Devanagari span; (2) a compound/sub-entry
+anchor immediately preceded by a bare paragraph break (no Devanagari span) —
+genuinely a separate entry (e.g. `aṃśavāda`, `aṃśahara` under `aṃśa`'s letter
+group); (3) an inline cross-reference anchor embedded mid-sentence in another
+entry's own prose (e.g. the proper noun `Aṃśa` mentioned inside `aṃśa`'s
+definition, or a dual form like `aṃsau` mentioned inline in `aṃsa`'s gloss) —
+**not** a boundary. A naive per-anchor split (boundary = every anchor)
+truncates entries like `aṃśa` mid-sentence before its mythological sense; the
+opposite over-correction (boundary = only Devanagari-preceded anchors) merges
+the compound sub-entries' distinct glosses into the parent's. The fix
+distinguishes (1)/(2) from (3) by checking whether the anchor is preceded
+(modulo whitespace/entity noise) by a tag close versus plain running text,
+and must resolve the boundary to the **start** of the next Devanagari span
+(not the anchor position itself), else the next entry's headword text leaks
+into the tail of the previous gloss. Separately: DICO uses two distinct
+link-color classes for genuine cross-references to other entries (inline
+citation links, and trailing "see also" links) — a third color class is only
+external declension/conjugation-generator CGI links, not an entry
+cross-reference, and must be excluded from any `cross_refs` field.
+
+Evidence: 24,549/24,549 crosswalk-resolved entries extracted with zero
+truncation/bleed on 25 hand-checked rows (10 shortest, 10 longest up to 3,832
+chars, 5 random) — full workings in
+[heritage_dico_gloss.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.md).
+
+Implication: any future DICO HTML parser must classify anchors by their
+*preceding-tag context*, not just their CSS class, before treating one as an
+entry boundary.
+
+> **Source:** [heritage_dico_gloss.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.md),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
+### §55. `gen_opt_harness2.py` output-budget: coarser wins on both knobs, in opposite directions
+
+🟢 **Two untuned S10-era knobs in
+[`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+calibrated by A/B — the general lesson is "coarser batching wins," but it does
+NOT generalize to "coarser splitting always wins":** (1) `--output-budget`
+60→90 on the 56-card `hA` root: **90 wins clearly** — 60 agent calls vs 66
+(−9%), 4.03M vs 4.68M tokens (−14%), 496s vs 1,082s wall-clock (−54%),
+identical quality (0/56 null both). Shipped as the new default same-session.
+(2) `AUTOSPLIT_LS_BUDGET` (giant-head fragment granularity, in
+[`autosplit_requeue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/autosplit_requeue.py))
+18 (stock) vs 10 (finer) on the 150-`<ls>` giant head `gam~~h0_00_pwg00`: finer
+fragmentation made it **worse** — 21 agent calls vs 13 (+62%), 1.46M vs 925K
+tokens (+58%), 1,207s vs 615s wall-clock (+96%), same outcome (1/1 healed,
+0 null). Kept at 18, not changed. The direction differs because
+`--output-budget` controls how many *whole cards* share a batch (bigger =
+more amortization of the fixed per-call system-prompt overhead), while
+`AUTOSPLIT_LS_BUDGET` controls how finely ONE already-failing giant card gets
+chopped (finer = more, smaller heal calls, each still paying the fixed
+overhead, with no offsetting reduction in per-fragment failure rate at this
+citation density).
+
+Evidence: 4-arm live calibration (Sonnet 5 `claude-sonnet-5`), fresh worktree
+off `origin/master` (branch `knob-calibration-20260703`), full numbers in
+[RussianTranslation/KNOB_CALIBRATION_2026-07-03.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/KNOB_CALIBRATION_2026-07-03.md).
+
+Implication: when tuning a batching/splitting knob in this harness, check
+which of the two mechanisms it governs (amortization vs failure-isolation)
+before assuming "smaller unit = more robust" — for this harness the opposite
+held on the split-granularity knob.
+
+> **Source:** [KNOB_CALIBRATION_2026-07-03.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/KNOB_CALIBRATION_2026-07-03.md),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_

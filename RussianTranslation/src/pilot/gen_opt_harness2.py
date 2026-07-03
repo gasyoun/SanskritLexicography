@@ -17,7 +17,9 @@ input-format + markup-verbatim specifics ("keep {Tn} verbatim" instead of "{#..#
 Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=N] [--out=PATH]
         [--no-selfheal] [--selfheal-budget=12]  # selfheal ON by default (MG 2026-07-02)
         [--no-binary-split]                     # binary-split ON by default (MG 2026-07-02)
-        [--output-budget=N|off]                 # citation-weighted batching, DEFAULT 60;
+        [--output-budget=N|off]                 # citation-weighted batching, DEFAULT 90
+                                                # (calibrated 2026-07-03, see
+                                                # KNOB_CALIBRATION_2026-07-03.md);
                                                 # 'off' or an explicit --budget=N = byte mode
         [--tm[=PATH]]                           # content-addressed translation memory:
                                                 # pre-resolve cards whose source SHA is cached
@@ -65,14 +67,18 @@ BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole 
                    #  batch — isolates a single poison card without re-billing the cards around
                    #  it. Bottoms out at single cards, which fall through to selfheal as before.
                    #  --no-binary-split restores the flat-retry loop.
-OUTPUT_BUDGET = 60 # DEFAULT 60 citation-weighted units since 2026-07-02 (the S10-validated
-                   #  value): size the main batches by estimated OUTPUT complexity (1 + <ls>
-                   #  count per card — same metric as --selfheal-budget) instead of INPUT bytes
-                   #  (skeleton+portrait). Input bytes don't predict StructuredOutput failure
-                   #  (TOKEN_LEVER_FINDING_2026-06-30: the portrait-slim byte lever was a
-                   #  non-lever); citation density does. Byte mode is still reachable: an
-                   #  EXPLICIT --budget=N (without --output-budget) or --output-budget=off —
-                   #  keeps documented byte-budget invocations (e.g. FU1 --budget=6000) exact.
+OUTPUT_BUDGET = 90 # DEFAULT 90 citation-weighted units since 2026-07-03 (raised from the
+                   #  untuned S10-era 60 after a calibration A/B on the hA root: 90 clearly
+                   #  won on both cost and quality — 60 agents/4.03M tok/496s vs 60's
+                   #  66 agents/4.68M tok/1082s, both 56/56 ok with 0 null — see
+                   #  KNOB_CALIBRATION_2026-07-03.md): size the main batches by estimated
+                   #  OUTPUT complexity (1 + <ls> count per card — same metric as
+                   #  --selfheal-budget) instead of INPUT bytes (skeleton+portrait). Input
+                   #  bytes don't predict StructuredOutput failure (TOKEN_LEVER_FINDING_2026-06-30:
+                   #  the portrait-slim byte lever was a non-lever); citation density does.
+                   #  Byte mode is still reachable: an EXPLICIT --budget=N (without
+                   #  --output-budget) or --output-budget=off — keeps documented byte-budget
+                   #  invocations (e.g. FU1 --budget=6000) exact.
 
 
 def grammar_text(root):
