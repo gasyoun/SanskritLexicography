@@ -29,6 +29,8 @@ IN = os.path.join(HERE, 'pilot', 'input')
 
 LOW, OVER = 0.80, 1.50
 DIVN = re.compile(r'<div n=')
+NUMBERED_DIVN = re.compile(r'<div n="(\d+)">')
+LAYER_RE = re.compile(r'=== LAYER:.*?===\n', re.S)
 
 
 def find_results(o):
@@ -47,13 +49,44 @@ def find_results(o):
     return None
 
 
+def layer_bodies(t):
+    """Split a raw.txt into its independent '=== LAYER: ... ===' blocks. Most sub-cards carry
+    exactly one layer; PW/SCH/PWKVN addenda cards bundle several independent revision entries
+    into one sub-card file (e.g. gam~~h0_zz_pw04: 3 layers). Falls back to the whole text as a
+    single block if no header is found."""
+    parts = [b for b in LAYER_RE.split(t) if b.strip()]
+    return parts or [t]
+
+
+def layer_sense_count(body):
+    """One layer's raw sense-marker count, counting only real sense boundaries.
+
+    <div n="p"> is a STRUCTURAL prefix/secondary-conjugation divider elsewhere in this
+    codebase (root_units.py, scale_preflight.py's _DIVP, verify_root_glue.py), never a sense
+    number -- only the 'N〉' glyph and numbered <div n="N"> mark an actual new sense (a long
+    citation list can reopen the same numeral across several continuation paragraphs, so
+    distinct labels are counted, not raw occurrences). A layer with neither (pure
+    cross-reference addenda, e.g. '-- Mit X, see II.5') still contributes its own
+    translatable unit, floored at 1 rather than silently counting as zero senses."""
+    nums = set(re.findall(r'(\d+)〉', body)) | set(NUMBERED_DIVN.findall(body))
+    return len(nums) or 1
+
+
 def raw_markers(stem):
     p = os.path.join(IN, stem + '.raw.txt')
     if not os.path.exists(p):
         return None
     t = open(p, encoding='utf-8').read()
-    body = t.split('===', 2)[-1]
-    return max(body.count('〉'), len(DIVN.findall(body)))
+    bodies = layer_bodies(t)
+    if len(bodies) == 1:
+        # Preserve the original single-layer heuristic verbatim (raw '<div n=' occurrence
+        # count, including 'p' divs) to avoid changing behavior for the vast majority of
+        # ordinary sub-cards; only multi-layer addenda cards get the layer-aware count below.
+        # A genuine 0 here (no markers at all) must stay 0, not None -- the caller treats
+        # None as NO-RAW/fail and 0 as the legitimate 'not sense-divided' case.
+        body = bodies[0]
+        return max(body.count('〉'), len(DIVN.findall(body)))
+    return sum(layer_sense_count(b) for b in bodies)
 
 
 def main():
@@ -74,6 +107,16 @@ def main():
             print('%-28s %-8s %-8d %s' % (k, 'n/a', cs, flag))
             if rm is None:
                 fails.append(k)
+            continue
+        if res.get('presplit'):
+            # Presplit/fragment-reassembled cards (a huge head split into per-fragment
+            # translation units, e.g. gam~~h0_63_sam_0) produce one JSON sense row per
+            # fragment chunk by construction, not one per raw numbered sense -- that row
+            # count is not comparable to the coarse raw <div>/glyph count and was tripping
+            # COVERAGE-OVER as a false positive. A dropped/missing fragment is already caught
+            # by audit_window.py's partial-card check, so skip the LOW/OVER thresholds here
+            # rather than duplicate that signal with a confusing mismatch.
+            print('%-28s %-8d %-8d %s' % (k, rm, cs, 'ok (presplit — granular fragment rows)'))
             continue
         # absolute-difference guard: a ±1 sense gap on a tiny card is sub-sense splitting /
         # merging, not a real drop/fabrication — require a meaningful absolute gap too.

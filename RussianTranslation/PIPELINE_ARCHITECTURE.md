@@ -66,6 +66,12 @@ Current source of truth:
 - The corpus word-alignment lexicon exists; bulk throughput is no longer
   blocked on that asset. Print readiness remains downstream of human/gold
   gates G5/G6/G7/G10.
+- Provenance lives in the promoted store, not necessarily in standalone final
+  workflow cards. `src/promote_final_cards.py` writes one row per sense with
+  model alias, exact `model_version`, root/rootmap/input hashes, generation
+  time, and `wf_file`; future RU promotions must pass `--gen-model-version
+  <exact-model-id>`. Legacy rows whose `sonnet` alias cannot be resolved are
+  marked with `model_version_unresolved`, not guessed.
 
 ---
 

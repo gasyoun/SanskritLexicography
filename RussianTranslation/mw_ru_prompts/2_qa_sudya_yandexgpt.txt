@@ -159,27 +159,27 @@ body_en: <body><s>vy-avasTA—ratna-mAlA</s>   <lex>f.</lex> <ab>N.</ab> of <ab>
 body_ru: <body><s>vy-avasTA—ratna-mAlA</s> <lex>f.</lex> <ab>N.</ab> <ab>ch.</ab><info lex="f" /></body>
 comment: <ab>N.</ab> <ab>ch.</ab> без 'of' — валидная конвенция, читается как «название главы».
 
---- term-mistranslation (verdict=BAD, sev=5, issues=[term-mistranslation,markup-loss]) ---
+--- term-mistranslation (verdict=BAD, sev=5, issues=[term-mistranslation]) ---
 body_en: <body><s>dIpa—SiKA</s>   <lex>f.</lex> the flame of a <ab n="lamp">l°</ab>-foe, <ls>Kathās. xviii, 77</ls><info lex="f" /></body>
 body_ru: <body><s>dIpa—SiKA</s>   <lex>f.</lex> пламя врага <ab n="lamp">l°</ab>, <ls>Kathās. xviii, 77</ls><info lex="f" /></body>
 comment: 'l°' = lamp, перевод должен быть 'пламя лампы', не 'пламя врага'
 
---- anglicism_iz (verdict=BAD, sev=4, issues=[term-mistranslation,grammar]) ---
+--- anglicism_iz (verdict=BAD, sev=4, issues=[grammar]) ---
 body_en: <body><s>pUtanA—mokzaRa-prastAva</s>   <lex>m.</lex> <ab>N.</ab> of <ab>ch.</ab> of <ls>BrahmaP.</ls><info lex="m" /></body>
 body_ru: <body><s>pUtanA—mokzaRa-prastAva</s>   <lex>m.</lex> <ab>N.</ab> из <ab>ch.</ab> из <ls>BrahmaP.</ls><info lex="m" /></body>
 comment: Калька «<ab>X.</ab> из <ab>Y.</ab>» — 'N. of ch. of' это 'название главы в', не 'из ... из'
 
---- term-mistranslation (verdict=BAD, sev=4, issues=[term-mistranslation]) ---
+--- addition (verdict=BAD, sev=4, issues=[addition]) ---
 body_en: <body><s>BArgavo<srs />papurARa</s>   <lex>n.</lex> <ab>N.</ab> of an <s1 slp1="upapurARa">Upapurāṇa</s1>.<info lex="n" /></body>
 body_ru: <body><s>BArgavo<srs />papurARa</s>   <lex>n.</lex> <ab>N.</ab> названия Упапураны.<info lex="n" /></body>
 comment: Лишнее слово «названия» рядом с <ab>N.</ab> создаёт семантический дубль «название названия».
 
---- markup-loss (verdict=BAD, sev=4, issues=[term-mistranslation,markup-loss]) ---
+--- omission (verdict=BAD, sev=4, issues=[omission,term-mistranslation]) ---
 body_en: <body>   a <bot>Barleria</bot> with <ab n="yellow">y°</ab> flowers, <ls>L.</ls><info lex="inh" /></body>
 body_ru: <body>с цветками Барлерии, <ab n="yellow">y°</ab>, <ls>L.</ls><info lex="inh" /></body>
 comment: Утрачено значение 'Barleria с жёлтыми цветами'; 'y°' — сокращение yellow
 
---- addition (verdict=BAD, sev=4, issues=[addition,term-mistranslation]) ---
+--- term-mistranslation (verdict=BAD, sev=4, issues=[term-mistranslation]) ---
 body_en: <body>   a distiller of spirituous liquor<info lex="inh" /></body>
 body_ru: <body>житель, занимающийся перегонкой спиртных напитков<info lex="inh" /></body>
 comment: «житель» — выдумка; нужно «винокур/перегонщик спиртных напитков»
