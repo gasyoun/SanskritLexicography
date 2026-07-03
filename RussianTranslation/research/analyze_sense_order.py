@@ -36,10 +36,11 @@ SMAP = renou.load_map('pwg')
 
 DEFAULT_PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 
-# Top-level PWG sense marker: <div n="1"> optionally "— " then "N) " or "N〉 ".
-# The delimiter after the sense number is ")" in older csl-orig snapshots and "〉"
-# (U+3009 RIGHT ANGLE BRACKET) since the 2026-06-27 pwg.txt edit; accept both so the
-# metric survives that source drift (which silently zeroed the old ")"-only regex).
+# Top-level PWG sense marker: <div n="1"> optionally "— " then "N〉 " (or "N) ").
+# The committed csl-orig pwg.txt uses "〉" (U+3009 RIGHT ANGLE BRACKET) as the sense
+# delimiter — verified back to at least 2026-06-24 — so the original ")"-only regex
+# matched ZERO senses against committed data and the metric never reproduced as
+# committed. Accept both delimiters; "〉" is the real one.
 SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)[)〉]')
 LS_RE = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
 
