@@ -959,6 +959,50 @@ full export mission.
 
 ---
 
+### §49. MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's "current" dictionary is a different-scope asset than the 2014 reader stem list
+
+🟠 **The Heritage mirror's own README calls Heritage-covered MW entries "the yellow
+areas," but in the static `MW/*.html` there is no yellow — coverage is encoded as a
+duplicate anchor pair: a covered entry carries both `<a name="H_<key>">` and
+`<a name="<key>">` immediately before its `<span class="Deva">` (an uncovered entry
+carries only the plain anchor).** The `H_<key>` and `DICO/*.html`'s
+`<a class="navy" name="<key>">` anchors use the *same* VH-derived key, so a covered MW
+entry resolves to its Heritage dictionary entry directly — no fuzzy matching or OCR
+needed. Two key-normalisation traps found building the crosswalk: DICO prefixes proper
+nouns with a bare `U` that MW's `H_` anchor lacks (`Uaadinaatha` vs `H_aadinaatha`), and
+MW's plain anchor drops the `#N` homonym-disambiguation suffix DICO always keeps
+(`a.mzaka` vs `a.mzaka#1`/`#2`) — both are worked around in
+[`heritage_mw_crosswalk.py`](HeadwordLists/heritage_mw_crosswalk.py), lifting anchor
+resolution from 92.5% to 97.6% of covered entries.
+
+**Separately:** the mirror's `DICO/` (current, 38,343 unique stem keys) is not a version
+bump of the 2014 reader-export stem list
+([`then-2014/21562-huet-velthius.txt`](HeadwordLists/then-2014/21562-huet-velthius.txt),
+21,055 keys) — it is the **full current dictionary**, a different-scope asset. Naively
+diffing the two and reporting "61% more stems since 2014" would be misleading: the 2014
+list is a *reader's* curated corpus-driven selection, and the fuller current dictionary
+correspondingly shows **lower** CDSL/DCS coverage density (80.1%/50.1% vs. the 2014
+list's 86.2%/60.0%) simply because it includes more of the dictionary's grammatical
+long tail (affix entries, comparative/superlative derived forms) that the reader's
+selection filtered out — not because the underlying lexicon regressed.
+
+Evidence: [HERITAGE_MIRROR_INVENTORY.md](HeadwordLists/HERITAGE_MIRROR_INVENTORY.md),
+[Huet-INRIA-Wordlist-vs-Cologne.md §6](HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md#6-current-mirror-vs-the-2014-export-03-07-2026),
+[mw_heritage_crosswalk.md](HeadwordLists/mw_heritage_crosswalk.md) — H099 Phases 0–2,
+03-07-2026.
+
+Implication: any future MW↔Heritage alignment work should read coverage off the
+duplicate-anchor pattern (not attempt to scrape a rendered "yellow" style that doesn't
+exist in the static export), apply the `U`-prefix/`#N`-suffix normalisation before
+joining DICO and MW keys, and never present the current-DICO-vs-2014-reader-list delta
+as a same-asset time series without the scope caveat.
+
+> **Source:** [HeadwordLists/heritage_mw_crosswalk.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py) +
+> [heritage_coverage_current.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_coverage_current.py),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
