@@ -2,9 +2,11 @@
 
 **A34 · research note / short communication · draft 2026-06-26 · target: Lexikos / IJL / eLex**
 
-> **Status:** full first draft (3/5). Tagging built, audited, and reproducible across
-> eight dictionaries; needs a related-work paragraph, one external validation pass on
-> the épigraphique sample, and a venue decision before submission.
+> **Status:** revised draft (4/5 after the 03-07-2026 Fable 5 referee pass,
+> [A34_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_review_fable5.md)).
+> Tagging built, audited, and reproducible across eight dictionaries; still needs the
+> EI/CII external validation pass on the épigraphique sample and a venue decision
+> (Lexikos / IJL / eLex) before submission.
 
 ## Abstract
 
@@ -20,9 +22,10 @@ tag cannot express either. We operationalise **both** axes — a diachronic **st
 subsections) — and apply them to **770,292 entries across eight machine-readable Cologne
 dictionaries**, each tag carrying its evidential provenance (lexicographer's citation /
 corpus attestation / register membership). The headline result is a structural one: of
-**709 headwords tagged épigraphique, 484 (68 %) have no attestation in the literary
-corpus at all** — they exist only in inscriptions (`akṣayanīvī` "perpetual endowment",
-monastery names, the dynastic onomasticon). The register axis recovers a stratum that
+**709 headwords tagged épigraphique, 484 (68.3 %) have no attestation in the literary
+corpus at all** (the conservative reading — neither a corpus nor an enriched state;
+the strict corpus-only reading gives 518, 73.1 %) — they exist only in inscriptions
+(`akṣayanīvī` "perpetual endowment", monastery names, the dynastic onomasticon). The register axis recovers a stratum that
 both the corpus and the period axis structurally miss. We release the tagger and eight
 register glossaries.
 
@@ -41,6 +44,17 @@ makes the gap concrete: the Classical chapter alone holds four distinct register
 Pāṇinian-norm chapter hosts the épigraphique witness. None of these is a fifth, sixth, or
 seventh *state*; they are an orthogonal dimension.
 
+**Relation to prior work.** The provenance model extends this project's own study of the
+MW citation apparatus as two distinct registers (*Two Citation Registers*, A08): there the
+citation *register* is a property of the dictionary's evidential practice; here Renou's
+*language* registers become a per-sense annotation axis. On the inscriptional side, the
+épigraphique glossary is the citation-derived counterpart of Sircar's corpus-derived
+*Indian Epigraphical Glossary* (1966), with Salomon (1998) as the standard guide to the
+underlying corpus; on the Buddhist side, register V's lexicon is Edgerton's (1953) by
+construction. For the lexicographic frame of the eight source dictionaries, Vogel (1979).
+We are not aware of a prior operationalisation of Renou's *subsections* — as opposed to
+his five chapter-states — as a tagging scheme.
+
 ## 2. Method
 
 We tag every dictionary sense on **two independent axes**, each multi-label (a word can
@@ -51,7 +65,9 @@ carry several values) and each value carrying a provenance set:
   **DCS-corpus** attestation (the lemma's occurrence across the Digital Corpus of
   Sanskrit, each text typed to a state by genre/name/date); **Edgerton's BHS** set
   membership for V; and a partial **wisdomlib** tradition tag.
-- **Register** — a 20-code lattice of Renou's subsections, built from the *same* two
+- **Register** — a 20-code lattice of Renou's subsections (the source TOC's own coding
+  table proposes 14; the lattice extends it with six further TOC-derivable sections —
+  *Atharvaveda*, *yajus*, *vyākaraṇa*, epic, *kārikā*, *hors-de-l'Inde*), built from the *same* two
   primary signals plus dedicated detectors: a genre/name→register map over the corpus
   texts (commentary caught by name-stems `*bhāṣya/ṭīkā/vṛtti/vārttika`, since the corpus
   has no commentary *genre*); the `<ls>` siglum's source genre/name (the only route to
@@ -65,8 +81,9 @@ per lemma, the per-state and per-register evidence depth `{n_texts, confidence}`
 attested in ≥2 texts *or* in one authoritatively-typed text, which prunes the thin
 date-fallback tail (9.9 % of corpus state-assignments; **0 %** of states II and V, which
 come only from typed sources). The two axes are kept in **disjoint vocabularies and
-separate fields**; an independent data-integrity audit confirmed entry-count invariance,
-provenance coherence across 1.43 M register assignments, and zero leakage between axes.
+separate fields**; an independent data-integrity audit (`renou_audit.py`; its report is
+regenerated with the indices, not committed) confirmed entry-count invariance, provenance
+coherence across all register assignments, and zero leakage between axes.
 
 The substrate is the Cologne Digital Sanskrit Lexicon (`csl-orig`) — PWG, MW, PW, AP,
 AP90, BEN, SCH, BHS — and the DCS 2026 corpus snapshot.
@@ -75,8 +92,9 @@ AP90, BEN, SCH, BHS — and the DCS 2026 corpus snapshot.
 
 ### 3.1 Coverage
 
-The register axis is populated across all eight dictionaries (19–100 % of entries carry
-≥1 register; BHS is 100 %, every entry being Buddhist). The commentary register is large
+The register axis is populated across all eight dictionaries (~38–41 % of all entries
+carry ≥1 register; per dictionary the rate rises to 100 % for BHS, every entry being
+Buddhist by construction). The commentary register is large
 and robust — *bhāṣya* tags **14,498 distinct headwords** (10,320 attested in ≥2
 dictionaries); the poetic and Buddhist lexica reach 26,973 (*kāvya*) and 25,740
 (*bauddha*). Nineteen of the twenty lattice registers are populated; only *hors-de-l'Inde*
@@ -86,7 +104,7 @@ dictionaries); the poetic and Buddhist lexica reach 26,973 (*kāvya*) and 25,740
 
 | Register | Distinct headwords | Corpus-absent (no DCS attestation) |
 |---|--:|--:|
-| **épigraphique** | **709** | **484 (68 %)** |
+| **épigraphique** | **709** | **484 (68.3 %)** |
 | jaina | 286 | 0 |
 | bhāṣya | 14,498 | (corpus-rich) |
 
@@ -110,15 +128,16 @@ editorially meaningful strata that neither axis alone can name:
 | Slice | Definition | Headwords | What it is |
 |---|---|--:|---|
 | Vedic-in-commentary | register `bhāṣya` ∩ state I | 6,895 | Vedic vocabulary the commentarial tradition kept alive |
-| born-in-kāvya | register `kāvya` ∖ state I | 20,758 | poetic words with no Vedic attestation (`abdhi` "ocean" vs Vedic *samudra*) |
+| born-in-kāvya | register `kāvya` ∖ state I | 20,758 | poetic words with no Vedic attestation (e.g. `abdhi` "ocean", states III·IV only, vs Vedic *samudra*, I–V) |
 | pure archaisms | state I only | 25,220 | words dropped after the Saṃhitās |
 
 The full coordinate per sense is `(state, register, provenance)` — e.g. *akṣobhya* =
 `III·V` / `purāṇa·tantra·bauddha` / all-signals — an evidence-graded position, not a
 single label. Six such slices are worked through in detail — with quantitative anatomy
 and glossed examples — in
-[`RENOU_CROSSAXIS.md`](../RussianTranslation/RENOU_CROSSAXIS.md): the bhāṣya register as a
-**Vedic reservoir**, kāvya as a **coinage engine** (≈¼ of its words dictionary-specific),
+[`RENOU_CROSSAXIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_CROSSAXIS.md): the bhāṣya register as a
+**Vedic reservoir**, kāvya as a **coinage engine** (≈¼ of the born-in-kāvya slice —
+5,073 of 20,758 — is dictionary-specific; the register overall runs 19.8 %),
 the *dvaṃdva*-type **grammatical meta-language** (vyākaraṇa∩bhāṣya), **Buddhist poetry**
 (bauddha∩kāvya, *sugata* etc.), and the inscription-only **onomasticon** (épig∖corpus:
 *vākāṭaka*, *humāuṃ* = Humāyūn) — register in the *absence* of period.
@@ -136,7 +155,7 @@ assumption.
 
 Beyond épigraphique, the per-register metrics (dictionary-specificity, corpus-absence,
 era-spread) surface four results, detailed in
-[`RENOU_FINDINGS.md`](../RussianTranslation/RENOU_FINDINGS.md):
+[`RENOU_FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_FINDINGS.md):
 (i) **bhāṣya is a cross-disciplinary *syntactic* register** — Renou's own thesis (the
 nominal style "*durci*… expression doctrinale à tous les types de problèmes et de
 disciplines*", p. 133), corroborated by its low 8.8 % dictionary-specificity (a standardised,
@@ -144,17 +163,19 @@ not idiosyncratic, vocabulary); (ii) **bauddha is a second self-contained lexica
 44.5 % single-dictionary, of which 92 % (10,511 headwords) are recorded only by Edgerton's
 BHS, and 12.4 % corpus-absent — a parallel to épigraphique by a different mechanism;
 (iii) **the doctrinal registers carry the perennial lexicon** (kārikā/tantra/upaniṣad,
-57–65 % of headwords spanning ≥4 states) while narrative/poetic/documentary registers are
-period-bound (épig/epic/kāvya, 10–22 %); (iv) **nāṭya and kāvya are the coinage registers**
-(highest dictionary-specificity), the śāstric ones the standardising — conservation vs
-invention, read straight off the register metrics.
+56.7–65.0 % of headwords spanning ≥4 states) while narrative/poetic/documentary registers
+are period-bound (épig/epic/kāvya, 10.0–22.2 %); (iv) **nāṭya and kāvya are the coinage
+registers among the literary registers** (dictionary-specificity 23.8 % and 19.8 %, with
+epic at 21.7 % between them; the overall maximum is bauddha's 44.5 %, a closed lexical
+world rather than a coinage engine — see (ii)), the śāstric ones the standardising —
+conservation vs invention, read straight off the register metrics.
 
 A fifth result steps off the headword axis entirely and onto running text: **(v)** Renou's
 *nominal-style* thesis is confirmed on the DCS corpus — finite-verb density more than halves
 across the states (Vedic 14.4 % → Classical 6.7 %) as participles and nominals rise, and
 **bhāṣya (6.25 %) is more nominal than kāvya (7.48 %)**, the exact wording of *Histoire*
 p. 139. Full study in
-[`RENOU_NOMINAL_STYLE.md`](../RussianTranslation/RENOU_NOMINAL_STYLE.md) (tool
+[`RENOU_NOMINAL_STYLE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_NOMINAL_STYLE.md) (tool
 `nominal_style.py`); it corroborates F1 from a second, syntactic direction and may seed a
 separate short paper on register-predicted finite-verb density.
 
@@ -165,38 +186,79 @@ independent of the period badge, and the two compose into a queryable coordinate
 than a flat label. Two concrete payoffs: (1) **reusable register lexica** — we ship eight
 glossaries (épigraphique, *bhāṣya*, *kāvya*, *bauddha*, *jaina*, plus the three cross-axis
 slices of §3.3), each a deduplicated, provenance-tagged headword list; the épigraphique
-list is, in effect, a ready feed of inscriptional Sanskrit vocabulary for epigraphists.
-(2) **honest negative coverage** — the 68 % corpus-absent figure is itself a finding about
-the limits of corpus-driven lexicography, and the tagging makes that gap measurable
+list is, in effect, a ready feed of inscriptional Sanskrit vocabulary for epigraphists —
+positioned as a *derived, provenance-tagged complement* to Sircar's *Indian Epigraphical
+Glossary* (1966): where Sircar curated inscriptional vocabulary from the epigraphic corpus
+directly, this list recovers it from the lexicographers' citation apparatus, so the two
+resources can validate each other (§ "To do": the EI/CII sample check runs exactly this
+comparison).
+(2) **honest negative coverage** — the 68.3 % corpus-absent figure is itself a finding
+about the limits of corpus-driven lexicography, and the tagging makes that gap measurable
 instead of invisible.
 
 ## 5. Reproducibility
 
 Tagger and resolvers:
-[`src/renou.py`](../RussianTranslation/src/renou.py),
-[`src/renou_register.py`](../RussianTranslation/src/renou_register.py),
-[`src/build_dcs_renou.py`](../RussianTranslation/src/build_dcs_renou.py),
-[`src/tag_dict_from_source.py`](../RussianTranslation/src/tag_dict_from_source.py).
-Audit and display: [`src/renou_audit.py`](../RussianTranslation/src/renou_audit.py),
-[`src/renou_portrait.py`](../RussianTranslation/src/renou_portrait.py). Glossary extractor
+[`src/renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou.py),
+[`src/renou_register.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_register.py),
+[`src/build_dcs_renou.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dcs_renou.py),
+[`src/tag_dict_from_source.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tag_dict_from_source.py).
+Audit and display: [`src/renou_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_audit.py),
+[`src/renou_portrait.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_portrait.py). Glossary extractor
 and the eight shipped glossaries:
-[`src/renou_glossary.py`](../RussianTranslation/src/renou_glossary.py),
-[`glossaries/`](../RussianTranslation/glossaries/README.md). System overview:
-[`RENOU.md`](../RussianTranslation/RENOU.md); register design:
-[`RENOU_SUBSECTIONS_PLAN.md`](../RussianTranslation/RENOU_SUBSECTIONS_PLAN.md); the
+[`src/renou_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_glossary.py),
+[`glossaries/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossaries/README.md). System overview:
+[`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md); register design:
+[`RENOU_SUBSECTIONS_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_SUBSECTIONS_PLAN.md); the
 source-book structure: [Renou 1956 TOC](https://github.com/gasyoun/VisualDCS/blob/main/docs/Renou_1956_structure.md).
+The headline verification memo:
+[`A34_corpus_absent_verification.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_corpus_absent_verification.md).
 Derived indices (`{code}.renou.jsonl`) are gitignored and regenerated by
 `renou_pipeline.py --all`.
 
+## References
+
+Böhtlingk, O. & Roth, R. (1855–1875). *Sanskrit-Wörterbuch*. 7 vols. St. Petersburg:
+Kaiserliche Akademie der Wissenschaften. [PWG]
+
+Edgerton, F. (1953). *Buddhist Hybrid Sanskrit Grammar and Dictionary*. 2 vols.
+New Haven: Yale University Press. [BHS]
+
+Hellwig, O. (2010–). *DCS — The Digital Corpus of Sanskrit*.
+https://www.sanskrit-linguistics.org/dcs/ (2026 snapshot used here).
+
+Monier-Williams, M. (1899). *A Sanskrit-English Dictionary, new edition*. Oxford:
+Clarendon Press. [MW]
+
+Renou, L. (1956). *Histoire de la langue sanskrite*. Lyon–Paris: Éditions IAC.
+
+Salomon, R. (1998). *Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit,
+Prakrit, and the Other Indo-Aryan Languages*. New York: Oxford University Press.
+
+Sircar, D. C. (1966). *Indian Epigraphical Glossary*. Delhi: Motilal Banarsidass.
+
+Vogel, C. (1979). *Indian Lexicography* (A History of Indian Literature V.4). Wiesbaden:
+Harrassowitz.
+
+Cologne Digital Sanskrit Dictionaries (CDSL). Universität zu Köln.
+https://www.sanskrit-lexicon.uni-koeln.de/ — machine-readable substrate (`csl-orig`) for
+the eight dictionaries tagged here.
+
+Gasūns, M. (in preparation). *Two Citation Registers* (OBS-C, companion study of the MW
+citation apparatus, A08) — the citation-register axis this note's provenance model
+extends.
+
 ## To do before submission
 
-- Related work: position against the citation-register literature (this project's own
-  A08/A18 on the two MW citation registers), Renou reception, and digital-philology
-  register tagging; cite Vogel's *Indian Lexicography* and Edgerton (BHS) directly.
 - External validation: hand-check a sample of the 709 épigraphique headwords against a
-  published inscription corpus (EI / CII) to estimate the inscription-marker detector's
-  precision and recall — the one number a referee will ask for.
+  published inscription corpus (EI / CII, or Sircar 1966 as the curated proxy) to
+  estimate the inscription-marker detector's precision and recall — the one number a
+  referee will ask for.
 - Broaden the inscription detector beyond the `Insch?r` marker (it is deliberately
   conservative); report the recall ceiling honestly.
 - Decide venue (Lexikos vs IJL vs eLex) and trim to length; fold the method figure from
   RENOU.md.
+- Regenerate `RENOU_FINDINGS.md`'s per-register table from `renou_audit.py` (its épig
+  corpus-absent cell is a stale 63.0 % hand-copy from an earlier DCS-index generation;
+  the committed glossary gives 68.3 % — see the verification memo). Re-check §3.5's
+  bauddha 12.4 % from the same regenerated table.
