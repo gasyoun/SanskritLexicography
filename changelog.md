@@ -9,6 +9,19 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.1.5] - 2026-07-03
+
+### Added — Indische Sprüche dataset
+- New [`IndischeSprueche/`](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche)
+  data asset: the full Böhtlingk *Indische Sprüche* collection (2nd ed. 1870–1873),
+  7,537 sayings exported from `VisualDCS` archive.sqlite's `subhashita` table (D4)
+  via the new `VisualDCS/src/DCS-data-2026/export_subhashita_jsonl.py`, as
+  [`IndischeSprueche/data/indische_sprueche.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl).
+  PWG cites this collection 6,666 times and PWK 138 times as `Spr. N` — see
+  [`IndischeSprueche/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/README.md)
+  for provenance and the scoped PWG/PWK citation-crosswalk follow-on
+  ([Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)).
+
 ## [1.1.4] - 2026-07-03
 
 ## [0.0.42] - 2026-07-02
