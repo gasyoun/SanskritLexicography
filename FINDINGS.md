@@ -96,6 +96,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 **External platforms & services**
 
 - 🟠 [§41. The Sanskrit dictionary-platform landscape, probed live](#41-the-sanskrit-dictionary-platform-landscape-probed-live) — michaelmeyer.fr = 41 dicts w/ per-sense scan links; Heritage Inria bot-walled; DCS HTTPS broken; VedaWeb → Tekst; Cologne license is BY-**SA**, not NC.
+- 🟠 [§47. Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it](#47-heritage-data-is-acquirable-despite-the-anubis-wall--via-a-github-mirror-the-morphology-xml-is-not-in-it) — gitlab.inria.fr walled too; mirror [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources) (03-2025, LGPLLR) has DICO + MW-aligned pages + freq TSVs; inflected-form XML only via install-time/walled page.
 
 ---
 
@@ -792,6 +793,34 @@ must ship BY-SA — an NC restriction cannot be added to it.
 > (three parallel live-fetch passes, Fable 5 `claude-fable-5`) +
 > [csl-orig/LICENSE](https://github.com/sanskrit-lexicon/csl-orig/blob/master/LICENSE) —
 > kosha · 2026-07-02
+
+### §47. Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it
+
+🟠 **The Anubis anti-bot wall extends to INRIA's GitLab, not just the Heritage site — but a
+GitHub mirror of `Heritage_Resources` exists, carries most of the data, and is LGPLLR-licensed.**
+
+Evidence: [gitlab.inria.fr/huet/Heritage_Resources](https://gitlab.inria.fr/huet/Heritage_Resources)
+returned the Anubis challenge page to a programmatic fetch (03-07-2026), same as
+sanskrit.inria.fr in §41 — so "use the mirror" applies to the *data repository* too, not only
+the live services. [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources)
+(branch `develop-main`, last updated 03-2025) mirrors it; contents verified via the GitHub API:
+`DICO/` (hypertext Heritage dictionary), `MW/` (**MW pages aligned with DICO**, Heritage-covered
+entries highlighted), `DATA/` (OCaml `.rem` banks incl. `mw_index.rem` **plus plain-TSV
+frequency tables** `pada_freq.tsv` / `pada_morph_freq.tsv` / `pada_trans_freq.tsv` /
+`comp_freq.tsv`), `CORPUS/`, `XML/` (legacy `SL_morph.dtd`/`WX_morph.dtd` + LGPLLR texts).
+Per the upstream README (Huet 2021), the inflected-form XML databanks themselves are **not in
+the repository** — they are generated at Platform install time and downloadable only from the
+site's linguistic-resources page, i.e. behind the wall.
+
+Implication: ingest Heritage *data* from the GitHub mirror; the morphology XML needs one manual
+human-browser download (or a local Platform install) — never point an agent at
+sanskrit.inria.fr or gitlab.inria.fr. License is **LGPLLR**, not CC — rule on composition with
+BY-SA derived data before vendoring anything. Staged reuse plan:
+[HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md).
+
+> **Source:** live fetch of the GitLab URL + GitHub API listing of the mirror
+> (`gh api repos/darkone23/Heritage_Resources/…`), Fable 5 (`claude-fable-5`) —
+> SanskritLexicography · 2026-07-03
 
 ### §43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one
 
