@@ -25,6 +25,10 @@ Outputs (this directory):
   heritage_forms_oracle.tsv.gz             full intersection, agreement-flagged
   heritage_forms_oracle_disagreements.tsv  disjoint-lemma rows only (browsable)
   heritage_forms_oracle_stats.json         machine-readable summary
+  heritage_only_forms.tsv                  H111 kosha ingest feed: form_slp1 ·
+                                            lemma_slp1 (bare stem) · heritage_category,
+                                            one row per (stem, category) pair, for the
+                                            forms absent from kosha's `forms` table.
 """
 import sys, os, re, gzip, csv, json, sqlite3
 import xml.etree.ElementTree as ET
@@ -38,6 +42,7 @@ KOSHA_DB = os.path.normpath(os.path.join(HERE, "..", "..", "kosha", "data", "db"
 OUT_FULL = os.path.join(HERE, "heritage_forms_oracle.tsv.gz")
 OUT_DIS = os.path.join(HERE, "heritage_forms_oracle_disagreements.tsv")
 OUT_STATS = os.path.join(HERE, "heritage_forms_oracle_stats.json")
+OUT_ONLY = os.path.join(HERE, "heritage_only_forms.tsv")
 
 HASH_N = re.compile(r'#\d+$')
 
@@ -116,11 +121,14 @@ def stream_heritage(kosha_forms):
       n_f          total <f> elements
       hforms       set of ALL distinct heritage form strings
       inter        form -> [set(bare_stem), set(category)] for forms also in kosha
+      honly        form -> [set(bare_stem), set(category)] for forms NOT in kosha
+                   (H111 kosha-ingest feed)
     """
     n_f = 0
     hforms = set()
     hnorm = set()
     inter = {}
+    honly = {}
     with gzip.open(SL_MORPH, 'rb') as fh:
         context = ET.iterparse(fh, events=('start', 'end'))
         _, root = next(context)  # <forms>
@@ -133,22 +141,29 @@ def stream_heritage(kosha_forms):
             hnorm.add(nasal_norm(form))
             s = elem.find('s')
             stem = HASH_N.sub('', s.get('stem')) if s is not None else ''
+            cat = 'other'
+            for child in elem:
+                if child.tag != 's':
+                    cat = CAT.get(child.tag, child.tag)
+                    break
             if form in kosha_forms:
-                cat = 'other'
-                for child in elem:
-                    if child.tag != 's':
-                        cat = CAT.get(child.tag, child.tag)
-                        break
                 bucket = inter.get(form)
                 if bucket is None:
                     inter[form] = [{stem}, {cat}]
                 else:
                     bucket[0].add(stem)
                     bucket[1].add(cat)
+            else:
+                bucket = honly.get(form)
+                if bucket is None:
+                    honly[form] = [{stem}, {cat}]
+                else:
+                    bucket[0].add(stem)
+                    bucket[1].add(cat)
             root.clear()
             if n_f % 200000 == 0:
                 print(f"  ...{n_f} forms parsed", flush=True)
-    return n_f, hforms, hnorm, inter
+    return n_f, hforms, hnorm, inter, honly
 
 
 def main():
@@ -162,7 +177,7 @@ def main():
     print(f"  kosha distinct forms: {len(kosha_lem)}", flush=True)
 
     print("streaming Heritage SL_morph.xml ...", flush=True)
-    n_f, hforms, hnorm, inter = stream_heritage(set(kosha_lem.keys()))
+    n_f, hforms, hnorm, inter, honly = stream_heritage(set(kosha_lem.keys()))
     print(f"  heritage <f> elements: {n_f}", flush=True)
     print(f"  heritage distinct forms: {len(hforms)}", flush=True)
 
@@ -228,6 +243,19 @@ def main():
         w.writerow(header)
         w.writerows(dis_rows)
 
+    # H111 kosha-ingest feed: one row per (form, stem, category) for forms
+    # kosha does not have at all. `honly` keys are exactly hforms - inter_forms.
+    only_rows = []
+    for form in sorted(honly):
+        stems, cats = honly[form]
+        for stem in sorted(stems):
+            for cat in sorted(cats):
+                only_rows.append((form, stem, cat))
+    with open(OUT_ONLY, 'w', encoding='utf-8', newline='') as f:
+        w = csv.writer(f, delimiter='\t', lineterminator='\n')
+        w.writerow(['form_slp1', 'lemma_slp1', 'heritage_category'])
+        w.writerows(only_rows)
+
     # disagreement breakdowns
     from collections import Counter
     dis_by_cat = Counter(r[4] for r in dis_rows)
@@ -253,6 +281,7 @@ def main():
         'nasal_norm_coverage_of_kosha_pct': round(100 * norm_inter / max(1, len(knorm)), 2),
         'kosha_only_recovered_by_nasal_norm': kosha_only_recovered,
         'kosha_only_avagraha_artifacts': kosha_only_avagraha,
+        'heritage_only_forms_feed_rows': len(only_rows),
         'disagreement_by_class': dict(dis_by_class.most_common()),
         'disagreement_by_heritage_category': dict(dis_by_cat.most_common()),
     }
@@ -264,6 +293,7 @@ def main():
         print(f"  {k}: {v}")
     print(f"\nwritten: {OUT_FULL}")
     print(f"written: {OUT_DIS} ({len(dis_rows)} rows)")
+    print(f"written: {OUT_ONLY} ({len(only_rows)} rows, H111 kosha ingest feed)")
     print(f"written: {OUT_STATS}")
 
 

@@ -17,6 +17,7 @@
   "nasal_norm_coverage_of_kosha_pct": 25.4,
   "kosha_only_recovered_by_nasal_norm": 18636,
   "kosha_only_avagraha_artifacts": 8264,
+  "heritage_only_forms_feed_rows": 992194,
   "disagreement_by_class": {
     "genuine-or-ambiguous": 12905,
     "stem-granularity": 7132,
