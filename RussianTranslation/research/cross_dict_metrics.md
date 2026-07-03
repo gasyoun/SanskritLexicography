@@ -12,8 +12,8 @@ Fraction of *cited* senses that cite at least one Vedic (Renou state I) source.
 
 | Dict | Vedic density | basis (cited senses) | reading |
 |---|---|---|---|
-| **PWG** | **23.4%** | 118,528 | strong historical apparatus |
-| **MW**  | **24.8%** | 99,726 | strong historical apparatus |
+| **PWG** | **23.4%** | 113,012 | strong historical apparatus |
+| **MW**  | **24.8%** | 99,716 | strong historical apparatus |
 | **AP90**| **2.3%** | 19,163 | **~10x lower — no historical apparatus** |
 | **Koch**| **0.0%** | 29,177 records | **0 citations — logical-semantic by construction** |
 
@@ -24,11 +24,11 @@ order of magnitude (2.3%); Kochergina has no dated citations at all (5/29,177 re
 
 | Metric | PWG | MW |
 |---|---|---|
-| Multi-sense dated entries | 13,900 | 13,825 |
+| Multi-sense dated entries | 11,882 | 13,822 |
 | **Printed sense-1 = oldest** | 73.5% | **69.4%** |
 | **Kendall tau (printed vs date)** | 0.375 | **0.367** |
-| Within-sense strict-chrono | 26.2% | 55.0% |
-| Adjacent cite pairs non-decreasing | 76.3% | 67.6% |
+| Within-sense strict-chrono | 25.4% | 55.0% |
+| Adjacent cite pairs non-decreasing | 76.8% | 67.6% |
 
 MW tracks PWG almost exactly on the cross-sense axis (sense-1-oldest 69.4% vs 73.5%;
 tau 0.367 vs 0.375) — **the same genetic, moderately-date-correlated regime.** MW's higher

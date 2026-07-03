@@ -1,9 +1,10 @@
 # Genetic, not historical: how the 19th-century European Sanskrit dictionaries order senses — and how Apte and Kochergina differ
 
-**A33 · research note / short communication · draft 2026-06-24 · target: Lexikos / IJL / eLex**
+**A33 · research note / short communication · draft 2026-06-24 · data refreshed 2026-07-03 · target: Lexikos / IJL / eLex**
 
-> **Status:** full first draft (3/5). Evidence assembled and reproducible; needs prose
-> tightening, a related-work paragraph, and a venue decision before submission.
+> **Status:** full first draft (3/5). Evidence assembled and reproducible; all counts
+> re-verified against the 2026-07 `csl-orig` snapshot (§5). Needs prose tightening, a
+> related-work paragraph, and a venue decision before submission.
 
 ## Abstract
 
@@ -16,10 +17,11 @@ literary-source siglum a date and a Renou language-state (I–V), we test this a
 scale. The assumption is **half right**. These dictionaries are better described as
 **etymological-genetic**: the lead sense is the reconstructed root meaning
 (*Grundbedeutung*), and chronology governs a *tendency* in citation order rather than a
-strict sort. Across 13,900 multi-sense PWG entries, the printed first sense is the
-oldest-attested sense **73.5 %** of the time, and the overall sense order correlates with
-attestation date only **moderately** (Kendall τ = 0.375). Monier-Williams behaves almost
-identically (69.4 %; τ = 0.367). By contrast, Apte's student dictionary (AP90) and
+strict sort. Across 11,882 multi-sense PWG entries, the printed first sense is the
+oldest-attested sense **73.5 %** of the time (against a date-agnostic floor of 52.7 %),
+and the overall sense order correlates with attestation date only **moderately** (Kendall
+τ = 0.375, where a date-agnostic ordering gives 0 and a strict oldest-first sort gives 1).
+Monier-Williams behaves almost identically (69.4 %; τ = 0.367). By contrast, Apte's student dictionary (AP90) and
 Kochergina's modern Russian learner's dictionary order senses by **pedagogical salience**:
 their Vedic-citation density is **2.3 %** and **0 %** respectively, against **23–25 %** for
 PWG and MW. The finding has a direct consequence for digital re-editions: re-sorting senses
@@ -42,7 +44,7 @@ the comparative-philology generation ordered senses historically. We test it.
 We use the CDSL editions (`csl-orig`) and an existing citation-dating resource built for the
 `pwg_ru` translation project: a map from each `<ls>` literary-source siglum to a numeric
 date and a Renou state (I Vedic · II Pāṇinian · III Epic · IV Classical · V Buddhist/Jaina).
-The map covers **72.4 %** of PWG's 772,567 source citations; the unrecognised tail is
+The map covers **70.9 %** of PWG's 801,788 source citations; the unrecognised tail is
 dominated by catalogues and secondary literature (Aufrecht's Oxford catalogue, *Indische
 Studien*, *Indische Sprüche*), not primary datable texts, so the sample is the most-cited
 primary corpus and is if anything conservative about the oldest layer.
@@ -64,16 +66,16 @@ released with this note.
 
 | Metric | PWG | MW |
 |---|---|---|
-| Multi-sense entries with ≥2 dated senses | 13,900 | 13,825 |
+| Multi-sense entries with ≥2 dated senses | 11,882 | 13,822 |
 | Printed sense 1 = oldest-attested sense | **73.5 %** | **69.4 %** |
 | Kendall τ (printed order vs date order) | **0.375** | **0.367** |
-| Citations within a sense strictly oldest→newest | 26.2 % | 55.0 % |
-| Adjacent citation pairs non-decreasing in date | 76.3 % | 67.6 % |
+| Citations within a sense strictly oldest→newest | 25.4 % | 55.0 % |
+| Adjacent citation pairs non-decreasing in date | 76.8 % | 67.6 % |
 
 The two dictionaries are statistically almost the same animal. The lead sense is the oldest
 about 70–74 % of the time — high, but far from the ~100 % a true historical sort would give;
 and the overall τ ≈ 0.37 shows only a moderate correlation with date. Inside a sense,
-citations *lean* old-to-new (76 % of adjacent pairs in PWG) but are strictly sorted in only
+citations *lean* old-to-new (77 % of adjacent pairs in PWG) but are strictly sorted in only
 a quarter of cases, because the editors also group citations by sub-sense and grammatical
 construction. (MW's higher strict-chronology figure is a granularity artefact: an MW "sense"
 is a single short record with few citations, so monotonicity is easier to attain.)
@@ -101,8 +103,8 @@ The discriminator that separates the two traditions cleanly is Vedic-citation de
 
 | Dictionary | Vedic-citation density | basis |
 |---|---|---|
-| PWG (Böhtlingk–Roth) | **23.4 %** | 118,528 cited senses |
-| MW (Monier-Williams) | **24.8 %** | 99,726 cited senses |
+| PWG (Böhtlingk–Roth) | **23.4 %** | 113,012 cited senses |
+| MW (Monier-Williams) | **24.8 %** | 99,716 cited senses |
 | AP90 (Apte, 1890) | **2.3 %** | 19,163 cited senses |
 | Koch (Kochergina, 1978/87) | **0.0 %** | 29,177 records (5 dated cites total) |
 
@@ -130,14 +132,32 @@ it.
 
 ## 5. Reproducibility
 
-Scripts and metrics: [`research/analyze_sense_order.py`](../RussianTranslation/research/analyze_sense_order.py),
-[`research/analyze_cross_dict.py`](../RussianTranslation/research/analyze_cross_dict.py),
+Scripts and metrics: [`research/analyze_sense_order.py`](../RussianTranslation/research/analyze_sense_order.py)
+(PWG cross-sense + within-sense + probe),
+[`research/analyze_cross_dict.py`](../RussianTranslation/research/analyze_cross_dict.py)
+(MW / AP90 / Kochergina segmentation and Vedic density),
+[`research/analyze_sense_order_null.py`](../RussianTranslation/research/analyze_sense_order_null.py)
+(the date-agnostic chance baseline of §3.1),
 [`research/sense_order_metrics.md`](../RussianTranslation/research/sense_order_metrics.md),
 [`research/cross_dict_metrics.md`](../RussianTranslation/research/cross_dict_metrics.md). Full
 preface evidence and probe-word reads:
 [`research/HANDOFF_sense_ordering.md`](../RussianTranslation/research/HANDOFF_sense_ordering.md).
 Source editions: Cologne Digital Sanskrit Lexicon (`csl-orig`). Citation-dating map:
 `ls_source_map.json` / `ls_source_map_mw.json`.
+
+**Two reproducibility notes.** (i) *Sense delimiter.* The PWG sense-number marker in
+`csl-orig` is `<div n="1"> N〉` (U+3009 right angle bracket), not `N)`; both segmentation
+scripts accept `[)〉]` so they survive that markup (an earlier `)`-only regex matched zero
+senses against the committed source). (ii) *Snapshot.* All counts above are pinned to the
+2026-07 `csl-orig` snapshot. The **rates are stable** across snapshots (sense-1-oldest
+73.5 %, τ 0.375, Vedic density 23.4 %/24.8 %), but the *entry and citation counts* drift
+with the ongoing `<ls>` corrections in `csl-orig` — the PWG multi-sense-dated set moved from
+13,900 (2026-06 snapshot) to 11,882 here, and citation coverage from 72.4 % to 70.9 % — so
+report the counts with their snapshot date. The **chance baseline** is committed and
+recomputes from the same parser: the printed lead sense is oldest 73.5 % of the time against
+a date-agnostic uniform-permutation floor of **52.7 %** (ceiling 100 %), covering 44 % of the
+floor-to-ceiling span; τ = 0.375 against a shuffle floor of 0 covers 38 % — the quantitative
+form of "genetic, not a strict date-sort".
 
 ## To do before submission
 

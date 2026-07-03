@@ -1,18 +1,18 @@
 {
   "mw": {
     "sense_grouping": "consecutive <L> records sharing k1+k2(bare)+hom; compounds (—) excluded",
-    "entries_multisense_dated": 13825,
+    "entries_multisense_dated": 13822,
     "pct_sense1_is_oldest": 69.4,
     "mean_tau_printed_vs_date": 0.367,
-    "within_sense_senses_ge2_dated": 25134,
+    "within_sense_senses_ge2_dated": 25138,
     "pct_within_sense_strict_chrono": 55.0,
     "pct_adjacent_pairs_nondecreasing": 67.6,
     "vedic_density_pct": 24.8,
-    "vedic_density_basis_cited_senses": 99726
+    "vedic_density_basis_cited_senses": 99716
   },
   "pwg_vedic_density": {
     "vedic_density_pct": 23.4,
-    "basis_cited_senses": 118528
+    "basis_cited_senses": 113012
   },
   "ap90": {
     "sense_marker": "{@N@} within one <L>",
