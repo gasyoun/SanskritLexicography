@@ -1,14 +1,22 @@
 # Architecture audit — pwg translation pipeline (Fable window S10)
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 03-07-2026_
 
 > **Update 02-07-2026 — audit-churn session closed.** The §3 flags FL1/FL2/FL3/FL5 named
 > for a follow-up "audit-churn (Opus/Fable-tier judgment)" session in §6 are now FIXED and
 > merged: [#82](https://github.com/gasyoun/SanskritLexicography/pull/82) (FL1),
 > [#80](https://github.com/gasyoun/SanskritLexicography/pull/80) (FL2),
 > [#81](https://github.com/gasyoun/SanskritLexicography/pull/81) (FL3),
-> [#79](https://github.com/gasyoun/SanskritLexicography/pull/79) (FL5). FL4/FL8 remain open
-> (EN-track / small PRs). Session model: Opus 4.8 (`claude-opus-4-8`).
+> [#79](https://github.com/gasyoun/SanskritLexicography/pull/79) (FL5). Session model: Opus 4.8 (`claude-opus-4-8`).
+>
+> **Update 03-07-2026 — audit-tail session closed.** The three deferred items are now FIXED and
+> merged, each with a pinning `window_selftest.py` test (now 31 green): FL8
+> [#92](https://github.com/gasyoun/SanskritLexicography/pull/92) (fixture status-file guard),
+> FL4 [#93](https://github.com/gasyoun/SanskritLexicography/pull/93) (EN triage coverage-complete
+> + missing-input visibility), and item-1 `ka` missing-group topup
+> [#94](https://github.com/gasyoun/SanskritLexicography/pull/94) (`autosplit_requeue.py topup`
+> consumes `missing_fragments`; validated on `ka` — 10 of 81 fragments targeted, complete
+> 63-sense card reassembled). Session model: Opus 4.8 (`claude-opus-4-8`).
 
 **Mission:** M.G. reported the pwg pipeline "failed too often" over the last week — big/dense
 cards not translated even after many retries. A same-day Sonnet 5 (`claude-sonnet-5`) session
@@ -131,11 +139,11 @@ mission forbids touching translation-quality logic — or its own scoped change)
 | FL1 | [`whitney_grammar.py:154-160`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/whitney_grammar.py) | `grammar_for(slp1, homonym)` falls back `… or recs`: a nonexistent homonym silently returns ALL homonyms — wrong-root grammar attached; collides with the siD homonym-safety finding | **✅ FIXED — [#82](https://github.com/gasyoun/SanskritLexicography/pull/82)** (empty + warning; validated on `vas`) |
 | FL2 | [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) | the EN gate has no teeth: nulls never fail `--strict`; `save_and_audit.py` invokes it non-strict with no `--report`; a crashing sense-dupe subgate counts as clean (`returncode None` is falsy) | **✅ FIXED — [#80](https://github.com/gasyoun/SanskritLexicography/pull/80)** (nulls/crash fail `--strict`; strict-by-default in save; report always written) |
 | FL3 | [`ru_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ru_coverage.py) | the anti-silent-partial gate is wired to NOTHING (hand-run only), and a corrupt/missing EN denominator silently exempts a root from the very check built after the gam-6/127 incident | **✅ FIXED — [#81](https://github.com/gasyoun/SanskritLexicography/pull/81)** (wired into `save_and_audit.py`; corrupt denom fails, missing denom loud `UNVERIFIABLE`) |
-| FL4 | `en_residual_keys.py:27-34` + `en_split_triage.py:66-68` | "done" = ≥1 English sense (a 1/40 card counts as done); a null card with a missing input vanishes from triage entirely | EN-track session (still open) |
+| FL4 | `en_residual_keys.py:27-34` + `en_split_triage.py:66-68` | "done" = ≥1 English sense (a 1/40 card counts as done); a null card with a missing input vanishes from triage entirely | **✅ FIXED — [#93](https://github.com/gasyoun/SanskritLexicography/pull/93)** ("done" = coverage-complete; missing-input nulls kept visible; heal-merge store w/o `selected_keys` no longer crashes scan) |
 | FL5 | [`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py) `has_text_signal()` | Mode-6 false positive (`suspicious_attested_without_text_signal`, 66% of round-2 risks) — requeues that NO model output can clear; 2,152 key-requeues on 06-29 alone | **✅ FIXED — [#79](https://github.com/gasyoun/SanskritLexicography/pull/79)** (meaning-claim + lexicographic-signal redesign, 37→6 fires; report-only by construction; reasoning in [`AUDIT_CHURN_FL5.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AUDIT_CHURN_FL5.md)) |
 | FL6 | [`pwg_mask.py:43-58`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) | a truncated final record (missing `<L END>`) is buffered and never yielded — last record silently disappears from every consumer | small PR, low urgency (source file is stable) |
 | FL7 | `corpus_gate.py` evidence loaders | absent evidence jsonl → authority silently removed (degrades safely to LLM-verdict, but "sources not built" and "word uncovered" are indistinguishable); DB errors leave `corpus_examples: []` unmarked | note-only; safe direction |
-| FL8 | singleton status files (`window_status.json`, `audit_window.report.json`) | ANY audit run — including test fixtures — clobbers them; "current status" cannot be trusted without the event log (observed: current status reports a temp-file fixture) | small PR: per-run-id reports or a fixture guard |
+| FL8 | singleton status files (`window_status.json`, `audit_window.report.json`) | ANY audit run — including test fixtures — clobbers them; "current status" cannot be trusted without the event log (observed: current status reports a temp-file fixture) | **✅ FIXED — [#92](https://github.com/gasyoun/SanskritLexicography/pull/92)** (`--ephemeral` + auto-detect for wf under the OS temp dir → status/report written to a scratch dir; live singletons untouched) |
 
 ---
 
@@ -196,7 +204,8 @@ specific follow-ups (in priority order):
    (`vas~~h0_zz_pw00`, `vas~~h0_zz_pw01`, `vas~~h2_11_prati`, `vas~~h4_18_ni`,
    `gam~~h0_zz_pw00`, `gam~~h3_04_upa`, `gam~~h3_06_vini`, `gam~~h3_08_sam` — 4 vas keys
    live-run this session, see below), `en.DA`'s 7 nulls, the 77 EN residuals, and `ka`'s 2
-   missing groups (now targetable via `missing_fragments`). ≤3-wide, per Mode 2.
+   missing groups (now consumable via `autosplit_requeue.py topup` —
+   [#94](https://github.com/gasyoun/SanskritLexicography/pull/94)). ≤3-wide, per Mode 2.
 2. **Audit-churn session (Opus/Fable-tier judgment).** Fix FL5 (`has_text_signal`) — it
    burned more requeues last week than every real failure combined — plus FL2/FL3 gate
    wiring.
