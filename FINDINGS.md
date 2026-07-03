@@ -818,9 +818,23 @@ sanskrit.inria.fr or gitlab.inria.fr. License is **LGPLLR**, not CC — rule on 
 BY-SA derived data before vendoring anything. Staged reuse plan:
 [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md).
 
+**Update (03-07-2026, MG browser access): confirmed dead end, not just unverified.** MG
+manually browsed
+[gitlab.inria.fr/huet/Heritage_Resources/-/tree/master/XML](https://gitlab.inria.fr/huet/Heritage_Resources/-/tree/master/XML)
+past the Anubis wall — its `XML/` tree is **byte-identical in scope** to the GitHub mirror's
+(`SL_morph.dtd`, `WX_morph.dtd`, `LICENSES/`, the same README), last touched 6 years ago
+(commit `ba45c546`, "New version 3.23", Huet, May 2020). The `LICENSES/` folder's own commit
+message says it plainly: *"Now XML banks are constructed by Platform."* So this is not a case
+of the GitHub mirror lagging GitLab — **neither repository has ever carried the inflected-form
+XML databanks**; both stopped shipping them the same release. The GTD `@DO` (manual download
+of current morphology XML) must go through the site's linguistic-resources page specifically
+(behind the Platform's own install/session flow), not through either git repository — checking
+GitLab again will not help.
+
 > **Source:** live fetch of the GitLab URL + GitHub API listing of the mirror
 > (`gh api repos/darkone23/Heritage_Resources/…`), Fable 5 (`claude-fable-5`) —
-> SanskritLexicography · 2026-07-03
+> SanskritLexicography · 2026-07-03; GitLab `XML/` cross-check via MG browser screenshot,
+> Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
 ### §43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one
 
@@ -956,6 +970,131 @@ full export mission.
 
 > **Source:** live probe against `vedaweb.uni-koeln.de/api`, [openapi.json](https://vedaweb.uni-koeln.de/api/openapi.json)
 > schema inspection + task-trigger + download attempts, Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
+### §49. MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's "current" dictionary is a different-scope asset than the 2014 reader stem list
+
+🟠 **The Heritage mirror's own README calls Heritage-covered MW entries "the yellow
+areas," but in the static `MW/*.html` there is no yellow — coverage is encoded as a
+duplicate anchor pair: a covered entry carries both `<a name="H_<key>">` and
+`<a name="<key>">` immediately before its `<span class="Deva">` (an uncovered entry
+carries only the plain anchor).** The `H_<key>` and `DICO/*.html`'s
+`<a class="navy" name="<key>">` anchors use the *same* VH-derived key, so a covered MW
+entry resolves to its Heritage dictionary entry directly — no fuzzy matching or OCR
+needed. Two key-normalisation traps found building the crosswalk: DICO prefixes proper
+nouns with a bare `U` that MW's `H_` anchor lacks (`Uaadinaatha` vs `H_aadinaatha`), and
+MW's plain anchor drops the `#N` homonym-disambiguation suffix DICO always keeps
+(`a.mzaka` vs `a.mzaka#1`/`#2`) — both are worked around in
+[`heritage_mw_crosswalk.py`](HeadwordLists/heritage_mw_crosswalk.py), lifting anchor
+resolution from 92.5% to 97.6% of covered entries.
+
+**Separately:** the mirror's `DICO/` (current, 38,343 unique stem keys) is not a version
+bump of the 2014 reader-export stem list
+([`then-2014/21562-huet-velthius.txt`](HeadwordLists/then-2014/21562-huet-velthius.txt),
+21,055 keys) — it is the **full current dictionary**, a different-scope asset. Naively
+diffing the two and reporting "61% more stems since 2014" would be misleading: the 2014
+list is a *reader's* curated corpus-driven selection, and the fuller current dictionary
+correspondingly shows **lower** CDSL/DCS coverage density (80.1%/50.1% vs. the 2014
+list's 86.2%/60.0%) simply because it includes more of the dictionary's grammatical
+long tail (affix entries, comparative/superlative derived forms) that the reader's
+selection filtered out — not because the underlying lexicon regressed.
+
+Evidence: [HERITAGE_MIRROR_INVENTORY.md](HeadwordLists/HERITAGE_MIRROR_INVENTORY.md),
+[Huet-INRIA-Wordlist-vs-Cologne.md §6](HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md#6-current-mirror-vs-the-2014-export-03-07-2026),
+[mw_heritage_crosswalk.md](HeadwordLists/mw_heritage_crosswalk.md) — H099 Phases 0–2,
+03-07-2026.
+
+Implication: any future MW↔Heritage alignment work should read coverage off the
+duplicate-anchor pattern (not attempt to scrape a rendered "yellow" style that doesn't
+exist in the static export), apply the `U`-prefix/`#N`-suffix normalisation before
+joining DICO and MW keys, and never present the current-DICO-vs-2014-reader-list delta
+as a same-asset time series without the scope caveat.
+
+> **Source:** [HeadwordLists/heritage_mw_crosswalk.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py) +
+> [heritage_coverage_current.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_coverage_current.py),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+### §50. CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026
+
+🟠 **The CDSL per-dictionary web apps do not all live under `/scans/{CODE}Scan/2020/web/`:
+NMMB (added June 2026) lives under `/2026/web/` — the 2020 path 404s. Any tool that
+constructs CDSL display URLs from a code must take the year from the front-page row's own
+href.** Also: two new digitizations exist — **NMMB is a live catalog row** (first addition
+in years; *Nāmamālikā* of Bhoja, 1955 Deccan College ed., 506 synonym groups, via the
+sanskrit-kosha project), and **PWKVN** (Böhtlingk's own *Nachträge und Verbesserungen*
+appendixes to PW, 24,976 records — each volume's appendix restarts at *a*, so headwords
+recur) has full [csl-orig source](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pwkvn)
+but **no catalog row** — only an
+[experimental display](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/pwkvn/).
+
+Evidence: `curl` 2026-07-03 — `NMMBScan/2020/web/webtc/indexcaller.php` → **404**,
+`NMMBScan/2026/web/…` → 200; csl-guides' catalog generator had the 2020 hardcode and
+produced dead NMMB links (fixed in
+[build-catalog.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-catalog.mjs),
+[PR #82](https://github.com/sanskrit-lexicon/csl-guides/pull/82)).
+
+Implication: never assume the `/2020/web/` template for new dictionaries; parse the year
+from the live front page. Watch for PWKVN (and the still-absent KOW/KNA) gaining real
+catalog rows.
+
+> **Source:** [csl-guides PR #82](https://github.com/sanskrit-lexicon/csl-guides/pull/82) audit sweep,
+> Fable 5 `claude-fable-5` · 2026-07-03
+
+---
+
+### §51. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered
+
+🟠 **MG already corresponded with Gérard Huet directly on 30-03-2021 about this exact
+repository** — MG had asked why `Heritage_Resources`' `XML/` folder was empty (only DTDs);
+Huet replied (from `Gerard.Huet@inria.fr`) that the XML data banks were dropped from the git
+repo for space reasons and are instead generated at Platform install time, downloadable as
+compressed archives from the site's linguistic-resources page — and admitted the repo's
+README doesn't explain this ("Sorry about the README... not up-to-date, I shall update it").
+**§47's "confirmed dead end" finding (03-07-2026) independently re-derived exactly what Huet
+already told MG four years earlier** — the outreach draft this session originally prepared
+wrongly stated "no prior contact found" (a memory/search gap, not a fabrication: the 2021
+email lives outside any repo or session memory this project indexes).
+
+MG then retrieved the live `https://sanskrit.inria.fr/xml.html` page in a real browser
+(saved locally, past the Anubis wall a script cannot pass) and it gives **exact download
+URLs**, still live: `https://sanskrit.inria.fr/DATA/XML/WX_morph.xml.gz`,
+`https://sanskrit.inria.fr/DATA/XML/SL_morph.xml.gz` (+ `.txt` DTDs at the same path,
+`LGPLLR.pdf`). Current dictionary version **3.81, dated 2026-06-21** — the live site is
+**over a year ahead** of the GitHub mirror's `develop-main` (03-2025) and the
+`Heritage_Resources` README the mirror ships is still stale exactly as Huet flagged in 2021.
+
+Implication: (1) **check for prior correspondence in the user's own email/files before
+drafting a "first approach" outreach email** — repo/session/memory search alone can miss a
+years-old exchange that fully answers the question being asked; when in doubt, ask the human
+rather than assert "no prior contact." (2) The morphology-XML `@DO` gate is now a **known,
+bookmarked download**, not an open-ended "find the resources page" task — a human browser
+visit to the two `.xml.gz` URLs above is the entire remaining step. (3) Any future Heritage
+freshness comparison should note the mirror is ~14+ months stale against the live dictionary
+version and flag that gap rather than treating the mirror as current.
+
+> **Source:** MG-provided 30-03-2021 email thread + locally-saved
+> `https://sanskrit.inria.fr/xml.html` (browser-passed Anubis, pasted into session
+> 03-07-2026), Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
+
+**Update (03-07-2026, same day): the @DO download landed and is confirmed real,
+current, and exactly the data the roadmap needs.** MG downloaded both `.xml.gz`
+files + DTDs; both are valid gzip, ~184 MB decompressed each. `SL_morph.xml`
+(SLP1-keyed): **1,286,615 inflected forms across 32,837 distinct stems**, dated
+"21 Juin 2026" in its embedded header (matches the site's stated v3.81) —
+**3× kosha's existing vidyut-built forms layer (426,410 pairs)**, confirming
+this is worth ingesting as roadmap Phase 4's third morphology witness, not a
+redundant re-derivation. The `stem` attribute uses the *same* `#N`
+homonym-disambiguation convention as `mw_heritage_crosswalk.tsv`
+(`stem="aMSaka#2"`) — directly joinable without re-normalisation. Files staged
+at `HeadwordLists/heritage_mirror/manual/` (gitignored, LGPLLR rights pending
+the Phase 0 @DECIDE — same restriction as the rest of the mirror). Phase 4
+(forms-oracle build) is now unblocked on data; still gated on the license
+@DECIDE for anything vendored beyond local/derived use.
+
+> **Source:** files provided by MG (downloaded via browser from
+> `sanskrit.inria.fr/DATA/XML/`), gzip integrity + structure verified locally,
+> Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
 ---
 
