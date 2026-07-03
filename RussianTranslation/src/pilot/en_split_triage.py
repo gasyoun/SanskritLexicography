@@ -54,7 +54,12 @@ def has_en(card):
 
 
 def scan():
-    """Return list of (root, key, features, passed) for every card in every EN store."""
+    """Return list of (root, key, features, passed) for every card in every EN store.
+
+    A residual key whose source input file is missing is NOT dropped (FL4): it is kept with
+    a `missing_input` feature marker so it stays visible in triage. Silently skipping it hid
+    a null card whose input we could not find — exactly the kind of card that needs a human's
+    eye. Missing-input rows are excluded from boundary learning (no size features to learn)."""
     rows = []
     for fp in sorted(glob.glob(os.path.join(REPO, 'wf_output.en.*.json'))):
         root = os.path.basename(fp).replace('wf_output.en.', '').replace('.json', '')
@@ -62,9 +67,16 @@ def scan():
         passed = {}
         for e in d['results']:
             passed[e['key']] = has_en(e.get('card'))
-        for key in d['meta']['selected_keys']:
+        # A heal/autosplit-merge store (e.g. wf_output.en.man_heal.json) carries no
+        # selected_keys — fall back to its result keys so its cards still appear in triage
+        # rather than crashing the whole run (FL4: nothing should vanish from triage).
+        selected = (d.get('meta') or {}).get('selected_keys')
+        if selected is None:
+            selected = [e['key'] for e in d['results']]
+        for key in selected:
             rp, _ = input_paths(key)
             if not os.path.exists(rp):
+                rows.append((root, key, {'missing_input': True}, passed.get(key, False)))
                 continue
             raw = open(rp, encoding='utf-8').read()
             rows.append((root, key, feats(raw), passed.get(key, False)))
@@ -75,6 +87,7 @@ def learn_boundary(rows):
     """Pick, per feature, the value that best separates pass/fail (max Youden's J),
     plus the 'clean' threshold = the smallest fail value above ALL pass values (a
     high-precision SPLIT cut: nothing above it ever passed)."""
+    rows = [r for r in rows if not r[2].get('missing_input')]   # no size features to learn from
     out = {}
     for key in ('ls', 'est_out_tok', 'raw', 'spans'):
         passv = sorted(f[key] for _, _, f, p in rows if p)
@@ -120,11 +133,16 @@ def main():
         return False
 
     resid = [(r, k, f) for r, k, f, p in rows if not p]
+    # Missing-input residuals have no size features — keep them VISIBLE in their own section
+    # (FL4) rather than dropping them, but exclude them from size classification/sorting.
+    missing_input = [(r, k) for r, k, f in resid if f.get('missing_input')]
+    sized = [(r, k, f) for r, k, f in resid if not f.get('missing_input')]
     split, retry = [], []
-    for r, k, f in resid:
+    for r, k, f in sized:
         (split if needs_split(f) else retry).append((r, k, f))
 
-    print('=== EN residual triage (no LLM) — %d null card(s) ===' % len(resid))
+    print('=== EN residual triage (no LLM) — %d null card(s) (%d missing-input) ==='
+          % (len(resid), len(missing_input)))
     if ls_cut is None and tok_cut is None:
         print('FINDING: NO clean size wall exists — some cards that PASSED are larger on')
         print('every feature than the ones that failed (the 5 largest <ls> cards all passed).')
@@ -139,9 +157,14 @@ def main():
         for r, k, f in sorted(split, key=lambda x: -x[2]['ls']):
             print('  %-26s ls=%-4d sk=%-4d raw=%-6d ~out=%d' % (k, f['ls'], f['sk'], f['raw'], f['est_out_tok']))
     label = 'RETRY priority (ranked by risk; recover cheaply, escalate only if persistent)'
-    print('--- %s (%d) ---' % (label, len(retry) + len(split)))
-    for r, k, f in sorted(resid, key=lambda x: -x[2]['est_out_tok']):
+    print('--- %s (%d) ---' % (label, len(sized)))
+    for r, k, f in sorted(sized, key=lambda x: -x[2]['est_out_tok']):
         print('  %-26s ls=%-4d sk=%-4d raw=%-6d ~out=%d' % (k, f['ls'], f['sk'], f['raw'], f['est_out_tok']))
+    if missing_input:
+        print('--- MISSING INPUT (%d) — null card, source file absent; needs manual attention '
+              '(NOT silently dropped) ---' % len(missing_input))
+        for r, k in sorted(missing_input):
+            print('  %-26s (root %s) — no input file at src/pilot/input/' % (k, r))
 
     if args.all:
         print('\n=== learned boundary per feature (from %d cards) ===' % len(rows))
