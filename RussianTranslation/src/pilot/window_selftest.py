@@ -40,6 +40,7 @@ from prompt_rule_audit import (
     semantic_risks,
 )
 from fix_german_connectives import fix_text as fix_german_text
+import audit_coverage
 
 
 def fail(message):
@@ -316,7 +317,7 @@ def test_braced_gloss_audit():
     # untranslated German (the convention keeps them verbatim).
     for ger in ('{%inire feminam%}', '{%legere%}', '{%inveteratus%}',
                 "{%un homme de l'extraction la plus basse%}", '{%abhi%}',
-                '{%upanis%}', '{%āgamya%}'):
+                '{%upanis%}', '{%āgamya%}', '{%sequi, obsequi%}'):
         leftover = {r['id'] for r in braced_gloss_risks(ger, ger, '1')}
         if 'untranslated_braced_german_gloss' in leftover:
             fail('braced gloss audit wrongly flagged non-German literal: %s' % ger)
@@ -324,6 +325,31 @@ def test_braced_gloss_audit():
     side = braced_gloss_risks('{%herfallen über%}', 'нападать на ({%herfallen über%})', '1')
     if {r['id'] for r in side} & {'untranslated_braced_german_gloss'}:
         fail('braced gloss audit flagged required side-by-side German echo')
+
+    # gam~~h0_20_ava / gam~~h0_38_sam_a (2026-07-03): short/colloquial German that collides
+    # with a FRENCH_WORDS entry ("du") or matches LATIN_BINOMIAL's over-permissive
+    # Capitalized-word+lowercase-word shape ("Jmd zusammenkommen", "Jmd" being the common B&R
+    # abbreviation for "jemand") must be recognized as German and NOT flagged
+    # foreign_gloss_translated merely for being correctly translated into Russian.
+    colloquial = braced_gloss_risks(
+        '{%wie kommst du darauf? woraus schliessest du dieses?%}',
+        '{%как ты до этого дошёл? из чего ты это заключаешь?%}', '1')
+    if {r['id'] for r in colloquial} & {'foreign_gloss_translated'}:
+        fail('braced gloss audit misclassified colloquial German (du) as foreign literal')
+    abbrev = braced_gloss_risks('{%Jmd zusammenkommen%}', '{%встречаться с кем-л.%}', '1')
+    if {r['id'] for r in abbrev} & {'foreign_gloss_translated'}:
+        fail('braced gloss audit misclassified "Jmd ..." (LATIN_BINOMIAL shape) as Latin')
+
+    # gam~~h0_38_sam_a (2026-07-03): a correctly-translated short gloss ({%mit%} -> {%с%})
+    # was flagged untranslated because the "leaked" check did a raw substring search across
+    # the WHOLE Russian text, including verbatim {#Sanskrit#} citation spans -- "mit" is a
+    # literal substring of the unrelated SLP1 citation token "miTunO" (lowercased "mituno").
+    sanskrit_collision = braced_gloss_risks(
+        '{%mit%} (<ab>instr.</ab>) {#yadA vE miTunO samAgacCataH#} (fleischlich)',
+        '{%с%} (<ab>instr.</ab>) {#yadA vE miTunO samAgacCataH#} (плотски)', '1')
+    if {r['id'] for r in sanskrit_collision} & {'untranslated_braced_german_gloss'}:
+        fail('braced gloss audit flagged a gloss that only collided with an embedded '
+             'Sanskrit citation substring, not a real leak')
 
 
 def semantic_card_risk_ids(russian, german='{%nachgehen%}'):
@@ -894,6 +920,82 @@ def test_ru_coverage_denominator_not_silently_exempt():
             ru_coverage.REPO, ru_coverage.RU_STORE, sys.argv = old_repo, old_store, old_argv
 
 
+def test_coverage_gate_multi_layer_and_presplit():
+    """audit_coverage.raw_markers() must not mistake <div n="p"> (a STRUCTURAL prefix/
+    secondary-conjugation divider elsewhere in this codebase -- root_units.py,
+    scale_preflight.py's _DIVP, verify_root_glue.py) for a numbered sense boundary when a
+    sub-card bundles several independent '=== LAYER: ... ===' blocks (PW/SCH/PWKVN addenda,
+    e.g. gam~~h0_zz_pw04: 3 layers, 5 raw '<div n=' tags, all cross-reference continuations
+    -> the correct count is 3, one per layer, not 5). Also: a presplit/fragment-reassembled
+    card's granular per-fragment row count must skip the LOW/OVER thresholds entirely (its
+    row count is not comparable to a coarse raw marker count)."""
+    three_layer_raw = (
+        '=== LAYER: PW ===\n\n'
+        '√gam mit aByud 1〉 aByudgata aufgegangen (Sonne) <ls>X. 1</ls>.\n\n'
+        '=== LAYER: PW ===\n\n'
+        '√gam mit aBi Caus. auch zukommen lassen <ls>Y. 2</ls>.\n'
+        '<div n="p">— Mit nis Caus. auch verlieren <ls>Z. 3</ls>.\n\n'
+        '=== LAYER: PW ===\n\n'
+        '√gam mit aBi Caus. II. 5.\n'
+        '<div n="p">— Mit A II. Agamya so v. a. fuer <ls>W. 4</ls>.\n'
+        '<div n="p">— Mit aByud II. 3.\n'
+        '<div n="p">— Mit nis Caus. II. 5.\n'
+        '<div n="p">— Mit upanis hinausgehen zu <ls>V. 5</ls>.\n'
+    )
+    bodies = audit_coverage.layer_bodies(three_layer_raw)
+    if len(bodies) != 3:
+        fail('expected 3 layer blocks, got %d' % len(bodies))
+    counts = [audit_coverage.layer_sense_count(b) for b in bodies]
+    if counts != [1, 1, 1]:
+        fail('layer_sense_count must floor a pure-cross-reference layer at 1 sense, not count '
+             'every <div n="p"> continuation: got %r' % counts)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        in_dir = os.path.join(tmp, 'pilot', 'input')
+        os.makedirs(in_dir)
+        with open(os.path.join(in_dir, 'zz~~h0_zz_pw04.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write(three_layer_raw)
+        with open(os.path.join(in_dir, 'zz~~presplit_card.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n√gam 1〉 aufgegangen <ls>X. 1</ls>.\n')
+        old_in = audit_coverage.IN
+        audit_coverage.IN = in_dir
+        try:
+            rm = audit_coverage.raw_markers('zz~~h0_zz_pw04')
+            if rm != 3:
+                fail('multi-layer raw_markers must count 1 sense per addenda layer (3), got %r'
+                     % rm)
+
+            wf = os.path.join(tmp, 'wf_output.json')
+            with open(wf, 'w', encoding='utf-8') as f:
+                json.dump({'results': [
+                    {'key': 'zz~~h0_zz_pw04', 'presplit': False,
+                     'card': {'records': [{'senses': [{}, {}, {}]}]}},
+                    {'key': 'zz~~presplit_card', 'presplit': True,
+                     'card': {'records': [{'senses': [{}] * 20}]}},
+                ]}, f)
+            import io, contextlib
+            old_argv = sys.argv
+            sys.argv = ['audit_coverage', wf]
+            buf = io.StringIO()
+            rc = 0
+            try:
+                with contextlib.redirect_stdout(buf):
+                    audit_coverage.main()
+            except SystemExit as e:
+                rc = e.code if isinstance(e.code, int) else 1
+            finally:
+                sys.argv = old_argv
+            out = buf.getvalue()
+            if rc != 0:
+                fail('multi-layer addenda card + presplit card must both pass: %s' % out)
+            if 'COVERAGE-LOW' in out or 'COVERAGE-OVER' in out:
+                fail('coverage gate still flagged a multi-layer/presplit card: %s' % out)
+            if 'presplit' not in out:
+                fail('presplit card must be labeled as such, not silently ok: %s' % out)
+        finally:
+            audit_coverage.IN = old_in
+
+
 def test_en_residual_coverage_complete():
     """FL4: en_residual_keys 'done' means coverage-complete, not '>=1 English sense'. A card
     with 1 of 2 senses translated is a residual (its 1 untranslated sense must not be hidden);
@@ -1401,6 +1503,7 @@ def main():
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
         test_ru_coverage_denominator_not_silently_exempt,
+        test_coverage_gate_multi_layer_and_presplit,
         test_en_residual_coverage_complete,
         test_en_split_triage_keeps_missing_input,
         test_whitney_homonym_safety,

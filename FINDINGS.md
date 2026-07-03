@@ -1310,6 +1310,32 @@ pages; and the 8 missing roots (esp. `yam`) are a samskrtam.ru data gap for MG.
 
 ---
 
+### §58. PWG-RU promoted store has input-level provenance, but old RU rows lacked exact model versions
+
+🟡 **The PWG→Russian final workflow card schema does not itself require model
+provenance, but the promoted store does carry the operational breadcrumb needed
+for reuse and repair.** Each promoted sense row in local
+`RussianTranslation/src/pwg_ru_translated.jsonl` has `provenance` fields for
+model alias, generator, root/rootmap hash, raw and portrait SHA-256, generation
+time, workflow file, and promotion script. That is enough for the
+content-addressed translation memory to reuse unchanged inputs without
+re-running Sonnet. The defect was version specificity: a live audit on
+2026-07-03 measured **10,856 store rows; 10,446 RU rows with `model='sonnet'`
+but no exact `model_version`; 410 RU rows already exact-versioned as
+`claude-sonnet-5`; 8,574 EN provenance rows exact-versioned; 15 rows missing
+input hashes; 80 partial-card rows.**
+
+Implication: do not rerun all old cards just because model technology changed.
+First run the deterministic provenance/gap audit, reuse byte-identical cards by
+`provenance.input_raw_sha256`, and only retranslate changed or failed inputs.
+Legacy `sonnet` aliases whose exact version cannot be proven should be marked
+unresolved, not date-mapped or guessed.
+
+> **Source:** `RussianTranslation/src/audit_translation_provenance.py` live store audit
+> and conservative backfill, Codex/GPT-5 · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_

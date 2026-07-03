@@ -369,6 +369,42 @@ def _rename_sense_field(schema, old, new):
     return s
 
 
+def _ref_names(node):
+    """$ref targets ('#/$defs/name' -> 'name') found anywhere under `node`."""
+    names = []
+    if isinstance(node, dict):
+        ref = node.get('$ref')
+        if isinstance(ref, str) and ref.startswith('#/$defs/'):
+            names.append(ref[len('#/$defs/'):])
+        for v in node.values():
+            names.extend(_ref_names(v))
+    elif isinstance(node, list):
+        for v in node:
+            names.extend(_ref_names(v))
+    return names
+
+
+def _reachable_defs(defs, start):
+    """Subset of `defs` transitively reachable via $ref from `start`.
+
+    pwg_ru_final_card.schema.json is shared with the judge step, so its $defs
+    also carry judge/judge_issue. The translate-only CARDS_SCHEMA never
+    references them (its root is 'card', not the judge-report wrapper) — left
+    in, they were dead weight that pushed the per-call StructuredOutput schema
+    over the Workflow tool's safety-classifier size threshold, blocking every
+    agent() call before any model invocation (0 tokens spent, confirmed via
+    isolated schema-only tests 2026-07-03).
+    """
+    seen, stack = set(), [start]
+    while stack:
+        name = stack.pop()
+        if name in seen or name not in defs:
+            continue
+        seen.add(name)
+        stack.extend(_ref_names(defs[name]))
+    return {k: v for k, v in defs.items() if k in seen}
+
+
 def mw_tm_block(root, mw_tm_path):
     """The MW English translation-memory block injected once per root (en pilot). '' if none."""
     if not mw_tm_path or not os.path.exists(mw_tm_path):
@@ -496,7 +532,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # cards; they are re-derivable downstream). validate_final_card_schema.py was
     # relaxed to match, so RU cards with a missing annotator field still validate.
     schema['$defs']['sense']['required'] = ['tag', 'german', field]
-    defs = schema['$defs']
+    defs = _reachable_defs(schema['$defs'], 'card')
     card_ref = {'$ref': '#/$defs/card'}
     batch_schema = {
         'type': 'object', 'additionalProperties': False, 'required': ['cards'],
