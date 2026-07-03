@@ -914,6 +914,35 @@ consults the curated alias table.
 > [MWS PLANNING_2026-07.md](https://github.com/sanskrit-lexicon/MWS/blob/master/planning/PLANNING_2026-07.md),
 > Fable 5 `claude-fable-5` · 2026-07-02
 
+### §48. VedaWeb 2.0's resource export is an async task behind a pickup-key, not a direct GET — and the server went unresponsive mid-attempt
+
+🟠 **`GET /api/resources/{id}/export` does not stream a file. It returns `202` with a
+`TaskRead` object (`id`, `pickupKey`, `status:"running"`); the actual bytes are fetched
+later from `GET /api/platform/tasks/download?pickupKey=<key>`, which needs no auth despite
+the OpenAPI spec listing `APIKeyCookie`/`OAuth2PasswordBearer` security on the export route
+itself (that route worked fully anonymous in practice — the declared security is aspirational,
+not enforced, at least for `GET /resources` and `GET /resources/{id}/export`).** There is no
+public GET on `/platform/tasks/{id}` to poll task status (only `DELETE`); the intended
+poll path is `/platform/tasks/user`, which itself requires the session cookie.
+
+While attempting H096's bulk export (03-07-2026, ~04:06 UTC), the export task was triggered
+successfully (task id `6a47354cb37f6ea98795ad7a`, resource `66695e4a14f6d337f7788740`
+Casaretto accented word-split), but every subsequent call to `vedaweb.uni-koeln.de` — the
+download endpoint, `/api/status`, even `/api/openapi.json`, which had answered in <1s minutes
+earlier — degraded to a `504 Gateway Timeout` and then to full connection timeouts, confirmed
+from two independent network paths (local `curl` and the sandbox's separate `WebFetch` egress,
+both of which reached `example.com` fine in the same window). The outage is server-side at
+Cologne, not local. No file was downloaded; nothing was committed to `VisualDCS`.
+
+Implication: the next attempt at H096 must (1) build the poll/download loop around the
+pickup-key mechanism, not assume a synchronous export, and (2) retry the whole sequence
+fresh — a `202` response does not guarantee the export completes if the server drops
+mid-task, so re-trigger `/resources/{id}/export` rather than reusing a stale pickup key.
+Treat isolated `504`s on this host as retry-worthy, not as evidence the API changed.
+
+> **Source:** live probe against `vedaweb.uni-koeln.de/api`, [openapi.json](https://vedaweb.uni-koeln.de/api/openapi.json)
+> schema inspection + task-trigger + download attempts, Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
