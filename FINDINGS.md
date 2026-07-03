@@ -1277,6 +1277,39 @@ held on the split-granularity knob.
 
 ---
 
+### §54. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent
+
+🟡 **The [samskrtam.ru/z/](https://samskrtam.ru/z/) verb-root dictionary addresses entries
+only as `/z/verb.php?id=N` (numeric, 905 rows) — there is no lookup-by-root URL, no slug
+scheme, and the nouns/preverbs/suffixes/endings pages have no per-entry pages at all.**
+Deep-linking a headword therefore requires scraping the index table once and keeping a
+static root→id map. Two further traps in the index: the anchor text uses a display font
+where `Ø` stands in for accented vowels (`Øs` = *as*) — the clean IAST citation lives in
+the row's second cell, sometimes with homonym digits (`1 as`) or comma-separated variants
+(`1 aś, aṃś`); and citation grades differ from Bühler-style full-grade forms (site has
+`kṛ`/`mṛd`, a primer citing `kar`/`mard` needs an `ar`→`ṛ` fold plus an alias table —
+`dhyai→dhyā`, `div→dīv`, `pracch→prach`, `marg→mārg`, `kalp→kḷp`). **Eight primer-basic
+roots are simply not in the database: `arth, daṇḍ, dhe, do, gaṇ, yam, śikṣ, śubh` —
+including `yam`** (grep count 0 in the raw index HTML), a gap worth fixing on the site
+itself.
+
+Evidence: measured 03-07-2026 while wiring Bühler glossary links (issue
+[#2](https://github.com/alexander-myltsev/buhler-sanskrit-book/issues/2), PR
+[#12](https://github.com/alexander-myltsev/buhler-sanskrit-book/pull/12)); scraper +
+resolution logic committed as
+[scripts/generate_samskrtam_links.py](https://github.com/gasyoun/buhler-sanskrit-book/blob/issue-2-glossary-links/scripts/generate_samskrtam_links.py)
+(170/178 Bühler roots resolved).
+
+Implication: anything that wants to link into samskrtam.ru/z/ (kosha cross-refs, other
+teaching material) should reuse that generator/table rather than re-derive it; nouns can't
+be linked at all until the site (or kosha P2 lemma cards, ruling D4) provides per-entry
+pages; and the 8 missing roots (esp. `yam`) are a samskrtam.ru data gap for MG.
+
+> **Source:** Bühler H101 session ([H101_buhler_ux_features.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H101_buhler_ux_features.md)),
+> Fable 5 `claude-fable-5` · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
