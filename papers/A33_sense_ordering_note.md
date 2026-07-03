@@ -64,7 +64,7 @@ We use the CDSL editions (`csl-orig`) and an existing citation-dating resource b
 `pwg_ru` translation project: a map from each `<ls>` literary-source siglum to a numeric
 date and a Renou language-state (I Vedic · II Pāṇinian · III Epic · IV Classical ·
 V Buddhist/Jaina — the periodisation of Renou 1956).
-The map covers **72.4 %** of PWG's 772,567 source citations; the unrecognised tail is
+The map covers **70.9 %** of PWG's 801,788 source citations; the unrecognised tail is
 dominated by catalogues and secondary literature (Aufrecht's Oxford catalogue, *Indische
 Studien*, *Indische Sprüche*), not primary datable texts, so the sample is the most-cited
 primary corpus and is if anything conservative about the oldest layer.
@@ -86,7 +86,7 @@ released with this note.
 
 | Metric | PWG | MW |
 |---|---|---|
-| Multi-sense entries with ≥2 dated senses | 11,882 | 13,825 |
+| Multi-sense entries with ≥2 dated senses | 11,882 | 13,822 |
 | Printed sense 1 = oldest-attested sense | **73.5 %** | **69.4 %** |
 | Kendall τ (printed order vs date order) | **0.375** | **0.367** |
 | Citations within a sense strictly oldest→newest | 25.4 % | 55.0 % |
@@ -133,7 +133,7 @@ The discriminator that separates the two traditions cleanly is Vedic-citation de
 | Dictionary | Vedic-citation density | basis |
 |---|---|---|
 | PWG (Böhtlingk–Roth) | **23.4 %** | 113,012 cited senses (2026-07-03 re-run) |
-| MW (Monier-Williams) | **24.8 %** | 99,726 cited senses |
+| MW (Monier-Williams) | **24.8 %** | 99,716 cited senses |
 | AP90 (Apte, 1890) | **2.3 %** | 19,163 cited senses |
 | Koch (Kochergina, 1978/87) | **0.0 %** | 29,177 records (5 dated cites total) |
 
