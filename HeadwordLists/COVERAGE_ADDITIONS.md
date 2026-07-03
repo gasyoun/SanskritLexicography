@@ -62,3 +62,22 @@ and/or [Huet/INRIA](Huet-INRIA-Wordlist-vs-Cologne.md) wordlists →
 real-word additions number **~8**. CDSL's coverage of *attested* vocabulary is essentially
 complete; the print list needs almost nothing added. The handful worth considering are rare
 nouns (plants, vessels, philosophical terms) — exactly the Catalan §5 profile.
+
+## Heritage/INRIA current-mirror candidates (03-07-2026, unvetted)
+
+[`heritage_coverage_current.py`](heritage_coverage_current.py) (Phase 1 of the
+[Heritage reuse roadmap](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md))
+diffed the **current** Heritage/DICO stem inventory (38,343 keys, extracted from the
+GitHub-mirror HTML — see
+[HERITAGE_MIRROR_INVENTORY.md](HERITAGE_MIRROR_INVENTORY.md) and
+[Huet-INRIA-Wordlist-vs-Cologne.md](Huet-INRIA-Wordlist-vs-Cologne.md) §6) against
+the union baseline, producing
+**187** DCS-attested, no-CDSL keys →
+[`heritage_current_candidates_no_cdsl.txt`](heritage_current_candidates_no_cdsl.txt)
+(SLP1, one per line). A 30-line manual skim shows the **same artifact pattern** as
+above: comparative/superlative `-tara`/`-tama` forms (`DImattara`), Pāṇinian
+grammatical-affix tags (`NIp`, `Rini`), and prefixed-verb/desiderative shapes —
+**not yet cross-tagged or triaged** against `kind`/DCS-band the way the priority-416
+set above was. Treat as a raw pool for a future editorial pass, not a vetted add-list;
+do not merge into the union without the same artifact-filtering this file applies
+elsewhere.

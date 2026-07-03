@@ -1,6 +1,6 @@
 # Sanskrit Heritage (INRIA) reuse roadmap
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 03-07-2026 (Huet approved LGPLLR × BY-SA; Phases 4–5 unblocked)_
 
 What of [sanskrit.inria.fr](https://sanskrit.inria.fr) (Gérard Huet's Sanskrit Heritage
 Platform) we already reuse, and the staged plan for the rest. Rulings by MG 03-07-2026
@@ -32,6 +32,13 @@ Platform) we already reuse, and the staged plan for the rest. Rulings by MG 03-0
 - **License: LGPLLR** (Lesser GPL for Linguistic Resources) — redistribution allowed
   with attribution and share-alike-style terms for the *resources*; composition with
   our CC BY-SA derived-data rule needs an explicit ruling (Phase 0 @DECIDE).
+  **✅ RESOLVED 03-07-2026: Gérard Huet approved the LGPLLR × BY-SA composition**
+  in reply to the [outreach email](https://github.com/gasyoun/Uprava/blob/main/handoffs/OUTREACH_2026-07-03_gerard_huet_heritage.md)
+  (sent same day) — derived crosswalks/frequency joins embedding Heritage
+  keys/anchors may ship alongside CC BY-SA Cologne-derived data. Exact wording of
+  Huet's reply (attribution phrasing, any conditions) not transcribed into this
+  repo yet — add verbatim when available. **Unblocks Phases 4–5 vendoring**, not
+  just local/derived use.
 
 ## 1. Already integrated — build on, don't redo
 
@@ -63,29 +70,28 @@ Platform) we already reuse, and the staged plan for the rest. Rulings by MG 03-0
 
 ## 3. Phases
 
-| # | Phase | What | Consumer | Gate |
-|---|---|---|---|---|
-| 0 | Acquisition + rights | Clone the GitHub mirror locally (gitignored, no vendoring yet); LGPLLR×BY-SA composition **@DECIDE**; manual browser download of the current morphology XML + current stem list **@DO**; `/outreach-draft` to Huet **@DO approve+send** | — | none — start now |
-| 1 | Stem-list refresh | Current stems vs the 2014 snapshot (delta in the [NOW_VS_THEN](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) manner); rerun [huet_coverage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py); extend [COVERAGE_ADDITIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) | HeadwordLists | Phase 0 download (mirror's DICO index is a fallback source of current stems) |
-| 2 | MW↔Heritage crosswalk | Parse `MW/*.html` coverage highlighting (+ `DATA/mw_index.rem` if decodable) → entry-level MW↔Heritage crosswalk TSV + coverage numbers | kosha, csl-atlas | mirror only — no gate |
-| 3 | Frequency tables | Ingest the `DATA/*.tsv` pada/compound/transition frequencies; diff against VisualDCS M1–M8 and `corpus_lexicon`; register the feed in [PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md) | VisualDCS, csl-atlas | mirror only — no gate |
-| 4 | Morphology databanks | Current inflected-form XML banks → forms oracle for SanskritSpellCheck + third witness beside kosha's vidyut-built forms layer (426,410 pairs) — diff, never overwrite | SanskritSpellCheck, kosha | Phase 0 @DO download; @DECIDE for anything vendored |
-| 5 | Heritage dictionary (DICO) | French gloss layer + entry structure as an additional witness/gloss source for kosha entries | kosha | @DECIDE ruling + Huet outreach reply |
-| 6 | Segmenter as service | UoHyd-mirror segmenter/lemmatizer cross-validation vs DharmaMitra GPU morphology (csl-atlas #89/#92 lineage) and the RussianTranslation glossary adjudication set — polite: cache, throttle, identify | csl-atlas, RussianTranslation | none; live-service etiquette |
+| # | Phase | What | Consumer | Gate | Status |
+|---|---|---|---|---|---|
+| 0 | Acquisition + rights | Clone the GitHub mirror locally (gitignored, no vendoring yet); LGPLLR×BY-SA composition **@DECIDE**; manual browser download of the current morphology XML + current stem list **@DO**; `/outreach-draft` to Huet **@DO approve+send** | — | none — start now | ✅ **Done 03-07-2026** — mirror sparse-cloned (`DATA/ MW/ DICO/ XML/`, gitignored); inventory in [HERITAGE_MIRROR_INVENTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/HERITAGE_MIRROR_INVENTORY.md); Huet outreach drafted and parked ([OUTREACH_2026-07-03_gerard_huet_heritage.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/OUTREACH_2026-07-03_gerard_huet_heritage.md), **not sent** — GTD @DO); @DECIDE + @DO rows confirmed live in GTD |
+| 1 | Stem-list refresh | Current stems vs the 2014 snapshot (delta in the [NOW_VS_THEN](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) manner); rerun [huet_coverage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py); extend [COVERAGE_ADDITIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) | HeadwordLists | Phase 0 download (mirror's DICO index is a fallback source of current stems) | ✅ **Done 03-07-2026 (mirror-fallback path — the @DO manual download had not landed yet)** — 38,343 current stems extracted ([heritage_stem_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_stem_extract.py)); delta in [Huet-INRIA-Wordlist-vs-Cologne.md §6](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md#6-current-mirror-vs-the-2014-export-03-07-2026); 187 unvetted candidates parked in [COVERAGE_ADDITIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md#heritage-inria-current-mirror-candidates-03-07-2026-unvetted). Rerun against the human-downloaded export once it lands (@DO row in GTD). |
+| 2 | MW↔Heritage crosswalk | Parse `MW/*.html` coverage highlighting (+ `DATA/mw_index.rem` if decodable) → entry-level MW↔Heritage crosswalk TSV + coverage numbers | kosha, csl-atlas | mirror only — no gate | ✅ **Done 03-07-2026** — [mw_heritage_crosswalk.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) (185,803 MW entries, 25,140 Heritage-covered, 97.6% anchor-resolved); report in [mw_heritage_crosswalk.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.md); `DATA/mw_index.rem` (OCaml `Marshal` binary) not decoded — out of scope, see [HERITAGE_MIRROR_INVENTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/HERITAGE_MIRROR_INVENTORY.md) |
+| 3 | Frequency tables | Ingest the `DATA/*.tsv` pada/compound/transition frequencies; diff against VisualDCS M1–M8 and `corpus_lexicon`; register the feed in [PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md) | VisualDCS, csl-atlas | mirror only — no gate | ⬜ queued, own H### |
+| 4 | Morphology databanks | Current inflected-form XML banks → forms oracle for SanskritSpellCheck + third witness beside kosha's vidyut-built forms layer (426,410 pairs) — diff, never overwrite | SanskritSpellCheck, kosha | ~~Phase 0 @DO download; @DECIDE for anything vendored~~ **both cleared 03-07-2026** | 🟢 **Fully unblocked 03-07-2026** — data downloaded+verified (1,286,615 forms / 32,837 stems, v3.81 2026-06-21), staged at `HeadwordLists/heritage_mirror/manual/` (gitignored); license @DECIDE resolved (Huet approved, see §2 above). See [FINDINGS §51 update](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md). **Build not started** — minted as [H105](https://github.com/gasyoun/Uprava/blob/main/handoffs/H105_heritage_phase4_morphology_forms.md) |
+| 5 | Heritage dictionary (DICO) | French gloss layer + entry structure as an additional witness/gloss source for kosha entries | kosha | ~~@DECIDE ruling + Huet outreach reply~~ **both cleared 03-07-2026** | 🟢 **Unblocked 03-07-2026** — Huet approved the license composition; DICO data already in the local mirror ([HeadwordLists/heritage_mirror/DICO/](HeadwordLists/HERITAGE_MIRROR_INVENTORY.md)). **Build not started** — minted as [H106](https://github.com/gasyoun/Uprava/blob/main/handoffs/H106_heritage_phase5_dico_gloss_layer.md) |
+| 6 | Segmenter as service | UoHyd-mirror segmenter/lemmatizer cross-validation vs DharmaMitra GPU morphology (csl-atlas #89/#92 lineage) and the RussianTranslation glossary adjudication set — polite: cache, throttle, identify | csl-atlas, RussianTranslation | none; live-service etiquette | ⬜ queued |
 
 Phases 1–3 are pure-data, agent-doable now off the mirror; 4–5 are gated on the Phase-0
 human items; 6 can run whenever a session needs the second morphology witness.
+Consumer follow-ons flagged by Phase 2 (kosha ingest of the crosswalk, csl-atlas witness
+column) are **not built** — they mint their own H### handoffs per the roadmap's original
+scope note.
 
 ## 4. Execution
 
-Phases 0–2 are bundled as handoff
-[H099](https://github.com/gasyoun/Uprava/blob/main/handoffs/H099_heritage_inria_phase0_2.md):
-
-```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H099_heritage_inria_phase0_2.md and execute it.
-```
-
-Sonnet 5+ or Opus 4.8 chat, `cd` into `SanskritLexicography/`. Phases 3–6 mint their own
-H### handoffs when their gates clear.
+Phases 0–2 executed 03-07-2026 (handoff
+[H099](https://github.com/gasyoun/Uprava/blob/main/handoffs/H099_heritage_inria_phase0_2.md),
+Sonnet 5 `claude-sonnet-5`) — see the Status column above and
+[FINDINGS.md §49](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+Phases 3–6 mint their own H### handoffs when their gates clear.
 
 _Dr. Mārcis Gasūns_

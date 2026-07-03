@@ -54,4 +54,43 @@ Like the Catalan list, it is **MW-dominated** — MW alone covers 83.5 %, and ev
 
 ---
 
+## 6. Current mirror vs the 2014 export (03-07-2026)
+
+Phase 1 of the [Heritage reuse roadmap](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md):
+the 2014 file above is the *reader's* curated stem list; the
+[darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources)
+GitHub mirror's `DICO/` HTML is the **full current Heritage dictionary** — a
+different-scope asset, not a version bump of the same list, so the comparison
+below is "reader export vs. full dictionary," not "2014 vs 2026 of the same
+thing." [`heritage_stem_extract.py`](heritage_stem_extract.py) pulls
+38,343 unique current stem keys from `DICO/`'s anchor index (see
+[HERITAGE_MIRROR_INVENTORY.md](HERITAGE_MIRROR_INVENTORY.md) for the
+anchor-normalisation rules); [`heritage_coverage_current.py`](heritage_coverage_current.py)
+reruns `huet_coverage.py`'s pipeline on it and diffs against the 2014 set.
+
+| | 2014 reader export | Current DICO (full dict) |
+|---|--:|--:|
+| unique normalised keys | 21,055 | 38,343 |
+| any CDSL dictionary | 86.2 % | 80.1 % |
+| DCS corpus-attested | 60.0 % | 50.1 % |
+| DCS-attested, no CDSL | 131 (0.6 %) | 304 (0.8 %) |
+
+- **Overlap:** 20,172 of the 2014 keys survive in the current dictionary (95.8 %);
+  883 do not appear in the current `DICO/` anchor index (likely renamed/merged
+  entries, or reader-only forms never in the full dictionary — not re-verified
+  against the live site, which is Anubis-walled).
+- **18,171 keys are new** since 2014 — expected, since the full dictionary is
+  ~1.8× the reader's curated subset. Of those, 72.1 % already have a CDSL entry
+  and 37.7 % are DCS-attested; **187 are DCS-attested with no CDSL entry**,
+  parked (unvetted, artifact-heavy) in
+  [COVERAGE_ADDITIONS.md](COVERAGE_ADDITIONS.md#heritage-inria-current-mirror-candidates-03-07-2026-unvetted).
+- **Coverage % dropped** (86.2→80.1 any-CDSL, 60.0→50.1 DCS) because the full
+  dictionary carries far more of the "dictionary dark matter" (grammatical
+  affix entries, comparative/superlative derived forms, rare proper nouns) that
+  the reader's corpus-driven subset filtered out — consistent with the §4
+  finding that the reader list is denser in corpus-attested vocabulary
+  precisely because it is a *selection*, not the full spine.
+
+---
+
 *Method: VH→IAST→SLP1, accent- and (where applicable) hyphen-insensitive lemma-identity match against `<k1>` of CDSL dictionaries in `csl-orig/v02` and against the DCS-2021 lemma index. Reproducible via [`huet_coverage.py`](huet_coverage.py) (includes a transcoder self-check).*
