@@ -1,7 +1,7 @@
 {
  "snapshots": [
   {
-   "date": "2026-07-02",
+   "date": "2026-07-03",
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
@@ -29,11 +29,12 @@
     "queue_decay_pct": 0.82
    },
    "registry": {
-    "total": 43,
+    "total": 53,
     "by_importance": {
-     "2": 28,
+     "2": 36,
      "1": 5,
-     "3": 10
+     "3": 11,
+     "None": 1
     },
     "stale": 0
    }
