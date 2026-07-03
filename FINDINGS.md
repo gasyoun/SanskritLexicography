@@ -1138,6 +1138,33 @@ design* — expected, not missing. Full write-up + reproducible script:
 > over `SL_morph.xml` v3.81 + `kosha.db`; 40-row hand-adjudication;
 > Opus 4.8 (`claude-opus-4-8`) · 2026-07-03
 
+### §53. The WIL etymology extraction's affix field is ~half noise — Wilson "outlier" figures are substantially a measurement artifact
+
+🔴 **`csl-orig/v02/wil/wil_etymology.tsv`'s `affix` column contains 3,375 distinct values
+against a closed 23–39-item Pāṇinian vocabulary in every Sanskrit-side extraction; only
+50.1 % of WIL's 19,641 affix instances are valid Pāṇinian affix names.** Any agreement or
+frequency statistic computed over the raw WIL affix column inherits this noise floor:
+vocabulary-filtering lifts WIL↔SKD affix agreement 22.9 → 66.7 %, WIL↔VCP 61.2 → 80.2 %.
+WIL's *root* column has the analogous defect — roots captured in Wilson's thematic surface
+form (`aMSa` where SKD has `aMS`), unreached by the corpus root-normalization fold — giving
+WIL root "agreement" of 7.9–20 % against every dictionary **including MW at 8.4 %**
+(n=1,074), which is form mismatch, not editorial divergence. Also: MD (201×) and CAE (584×)
+carry the same `<ab>E.</ab>` tag WIL uses as its etymology marker, but there it means **Epic
+register** — never feed them to a WIL-style E.-extractor.
+
+Evidence: computed 03-07-2026 over the committed TSVs with the same set-intersection rule as
+[stats_etymology.py](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/stats_etymology.py)
+§6a; full workings + fix plan (M1/M4/m3) in
+[papers/A35_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A35_review_fable5.md).
+
+Implication: consume `wil_etymology.tsv` only after filtering `affix` against the Pāṇinian
+vocabulary (union of the Sanskrit-side extractions) and treat its `root` column as
+surface-form, not citation-form; quote A35's Wilson figures only in the vocabulary-filtered
+version until the extractor is fixed.
+
+> **Source:** [A35_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A35_review_fable5.md),
+> Fable 5 `claude-fable-5` · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
