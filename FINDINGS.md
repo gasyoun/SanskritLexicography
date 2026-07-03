@@ -1043,7 +1043,7 @@ catalog rows.
 
 ---
 
-### §50. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered
+### §51. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered
 
 🟠 **MG already corresponded with Gérard Huet directly on 30-03-2021 about this exact
 repository** — MG had asked why `Heritage_Resources`' `XML/` folder was empty (only DTDs);
