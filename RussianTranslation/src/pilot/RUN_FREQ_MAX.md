@@ -31,8 +31,14 @@ and eliminated the transient dropouts.
 ## Current operating truth
 
 - The optimized **translate-only** Max harness is live and is generated per root by
-  [`gen_opt_harness.py`](gen_opt_harness.py). It inlines raw/portrait inputs, disables
-  translate-agent tools, and returns provenance metadata used by the audit stale guard.
+  [`gen_opt_harness2.py`](gen_opt_harness2.py). It masks and batches raw/portrait inputs,
+  disables translate-agent tools, auto-uses translation-memory sidecars when present,
+  presplits over-budget dense cards into the selfheal lane, and returns provenance metadata
+  used by the audit stale guard.
+- Article-site/root dashboard lazy loading is already shipped; do not spend performance time
+  re-implementing that path.
+- Lean TR / prompt trimming was tested and rejected; keep the full production TR unless a new
+  measured sequential calibration proves otherwise.
 - Superseded a-section/manual harness notes are archived under
   [`archive/legacy_max_2026-06-27/`](archive/legacy_max_2026-06-27/). Do not use those
   files for current production windows.
@@ -134,28 +140,54 @@ Preflight the root before spending Claude/Max tokens:
 
 ```powershell
 python src\pilot\root_window_status.py sTA
+python src\pilot\perf_preflight.py sTA
+python src\pilot\perf_preflight.py sTA BU gam as i yuj vid han
 ```
 
-This command prints the structural state plus one `next action` and one
+The first command prints the structural state plus one `next action` and one
 `next command`; if it disagrees with stale notes elsewhere, trust the command
-output and `src\pilot\output\window_status.json`.
+output and `src\pilot\output\window_status.json`. The second command is read-only
+performance accounting: it reports card/fragment TM hits, degenerate pass-through,
+presplit routing, batch count, and `agent_expected_after_tm` before Max spend. Use
+`--json` when saving a machine-readable preflight report. With more than one root it
+prints a compact comparison table plus a recommended order: zero-agent roots are skipped,
+low-agent roots run first, and high-agent roots are deferred until cache refresh or
+calibration. If presplit keys exist while `translation_memory.frag.<lang>.jsonl` is empty,
+the preflight warns to run
+`python src\pilot\translation_memory.py build-frags --lang ru` after a heal Workflow emits
+`frag_prov`; if no matching `wf_output*.json` contains `frag_prov`, the warning says so.
 
 Generate the harness for the root. **Default: the batched + masked v2 harness**
 ([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), packs
 several per agent call, and restores `{Tn}` to source markup in-JS so the result is a
 canonical `wf_output.json` (audit consumes it unchanged, no extra step). Measured
 **−72 % cost on a full mixed root** (gam: original per-card **\$16.14 → \$4.45**; a clean
-small batch is −90 %). See [`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYPE.md).
+small batch is −90 %). Current defaults: `--output-budget=90`, selfheal on,
+binary-split on, presplit routing on, and `--tm=auto` (uses
+`translation_memory.<lang>.json` + `translation_memory.frag.<lang>.jsonl` when present;
+`--no-tm` is the explicit opt-out). Refresh TM after every promotion/heal harvest:
+`python src\pilot\translation_memory.py build --lang ru` and, when fragment provenance was
+created, `python src\pilot\translation_memory.py build-frags --lang ru`. See
+[`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYPE.md).
 
 ```powershell
-python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, -72%)
+python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, TM auto, output-budget 90)
 # -> writes src\pilot\run_pilot_wf.opt2.js  (run THIS in Max, save result as wf_output.json)
-# --budget=N tunes batch packing (chars of skeleton+portrait per batch; default 12000 —
-#   higher = fewer agent calls = less ~30k/agent fixed overhead; the post-restore fidelity
-#   guard nulls any degraded big-batch card -> requeue. See TOKEN_LEVER_FINDING_2026-06-30.md).
+# --output-budget=N tunes citation-weighted output packing (default 90).
+# --budget=N without --output-budget keeps legacy byte-mode packing.
+# --no-tm disables automatic card/fragment translation-memory reuse.
 # A batch retries only its still-unresolved cards; a card whose restored <ls>/{#..#}
 # counts don't match source is nulled -> requeue (never emitted garbled).
 ```
+
+Remaining useful speed work is measured, not guessed: increase TM/fragment-TM coverage,
+let conservative degenerate cross-reference stubs pass through without an LLM call, and use
+[`calibrate_perf_harness.py`](calibrate_perf_harness.py) for scratch-only wider calibration
+across fixed key sets (`--arm-set conservative` or `--arm-set wide`). Run live calibration
+arms sequentially with cache cooldown; never run same-prompt arms in parallel.
+Do not widen degenerate pass-through for editorial correction prose (`lies:`, `zu streichen`,
+etc.); those rows stay in the normal LLM lane unless a future fixture proves exact
+deterministic reconstruction is safe.
 
 Legacy per-card harness (still supported; no masking/batching):
 

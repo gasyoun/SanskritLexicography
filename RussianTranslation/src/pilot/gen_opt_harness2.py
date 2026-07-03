@@ -21,9 +21,9 @@ Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=N] 
                                                 # (calibrated 2026-07-03, see
                                                 # KNOB_CALIBRATION_2026-07-03.md);
                                                 # 'off' or an explicit --budget=N = byte mode
-        [--tm[=PATH]]                           # content-addressed translation memory:
-                                                # pre-resolve cards whose source SHA is cached
-                                                # (0 tokens); OFF by default. See translation_memory.py
+        [--tm[=PATH] | --no-tm]                 # content-addressed translation memory:
+                                                # default auto-uses translation_memory.<lang>.json
+                                                # when present; --no-tm opts out.
         (--selfheal / --binary-split still accepted as no-ops for documented runbooks)
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
@@ -159,11 +159,9 @@ def parse_args(argv):
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
     lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
-    tm = None                          # --tm[=PATH]: content-addressed translation-memory cache;
-                                       #  pre-resolves any card whose source SHA is already in the
-                                       #  TM (zero tokens, no manual --keys scoping). OFF by default
-                                       #  (opt-in; a stale/empty TM is simply a no-op). See
-                                       #  translation_memory.py.
+    tm = '__auto__'                    # default auto: use translation_memory.<lang>.json if present;
+                                       #  no sidecar = no-op with a loud summary. --no-tm disables.
+    tm_auto = True
     budget_explicit = output_explicit = False
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
         if a.startswith('--keys='):
@@ -180,10 +178,15 @@ def parse_args(argv):
             mw_tm = a.split('=', 1)[1]
         elif a == '--tm':
             tm = '__default__'          # resolved to translation_memory.<lang>.json after the loop
+            tm_auto = False
         elif a.startswith('--tm='):
             tm = a.split('=', 1)[1]
+            tm_auto = (tm == 'auto')
+            if tm_auto:
+                tm = '__auto__'
         elif a == '--no-tm':
             tm = None
+            tm_auto = False
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
@@ -216,9 +219,9 @@ def parse_args(argv):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
         mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
-    if tm == '__default__':
+    if tm in ('__default__', '__auto__'):
         tm = os.path.join(os.path.dirname(INP), 'translation_memory.%s.json' % lang)
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto
 
 
 def extract_nws(tr):
@@ -381,8 +384,75 @@ def mw_tm_block(root, mw_tm_path):
             'lacks (e.g. a domain note "(as heavenly bodies)"), OMIT it) ===\n%s\n\n' % tm)
 
 
+_DEGENERATE_WORDS = {
+    's', 'siehe', 's.', 'vgl', 'vgl.', 'vergl', 'vergl.', 'u', 'und',
+    'ff', 'fgg', 'fg', 'fg.', 'fgg.', 'nachtrage', 'nachträge',
+}
+_DEGENERATE_CORRECTION_RE = re.compile(r'\b(lies|lesen|streichen)\b', re.I)
+
+
+def _portrait_key_iast(portrait_text, key):
+    try:
+        p = json.loads(portrait_text)
+    except Exception:
+        return key
+    rows = p if isinstance(p, list) else [p]
+    for row in rows:
+        if isinstance(row, dict):
+            return row.get('iast') or row.get('key1') or key
+    return key
+
+
+def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
+    """Conservative no-LLM lane for cross-reference/supplement stubs.
+
+    These cards contain citation/reference markup but no German gloss prose to translate.
+    False negatives are fine (normal harness handles them); false positives are not, so the
+    classifier intentionally admits only tiny non-gloss stubs with no gloss blocks or senses.
+    """
+    if not raw or len(raw) > 900:
+        return None
+    if '{%' in raw or '<div' in raw or re.search(r'\b\d+\)', raw):
+        return None
+    if not (re.search(r'\{#[^}]+#\}', raw) or '<ls' in raw or '<ab>' in raw):
+        return None
+    body = re.sub(r'^=== LAYER:.*?===\s*', '', raw, flags=re.S).strip()
+    if not body:
+        return None
+    if _DEGENERATE_CORRECTION_RE.search(body):
+        return None
+    probe = re.sub(r'\{#[^}]*#\}', ' ', body)
+    probe = re.sub(r'\{%[^}]*%\}', ' ', probe)
+    probe = re.sub(r'<[^>]+>', ' ', probe)
+    probe = re.sub(r'\[[^\]]+\]', ' ', probe)
+    words = [w.lower().strip('.:,;()') for w in re.findall(r'[A-Za-zÄÖÜäöüß]+\.?', probe)]
+    words = [w for w in words if w]
+    norm = [w.replace('ä', 'a').replace('ö', 'o').replace('ü', 'u').replace('ß', 'ss')
+            for w in words]
+    if len(words) > 8 or any((w not in _DEGENERATE_WORDS and n not in _DEGENERATE_WORDS)
+                             for w, n in zip(words, norm)):
+        return None
+    sense = {
+        'tag': 'xref',
+        'german': body,
+        field: body,
+        'equivalence_type': 'explanatory',
+        'source_type': 'lexicographic',
+        'stratum': '',
+        'differentia': 'Deterministic pass-through: cross-reference stub with no translatable gloss.',
+    }
+    return {
+        'key1': key,
+        'iast': _portrait_key_iast(portrait_text, key),
+        'records': [{'h': None, 'senses': [sense]}],
+        'notes': '',
+        'degenerate_passthrough': True,
+    }
+
+
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
-          nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None):
+          nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None,
+          tm_auto=False):
     field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
     if lang == 'en':
@@ -434,18 +504,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         '$defs': defs,
     }
 
-    inputs, phmaps, input_hashes = {}, {}, {}
+    inputs, phmaps, input_hashes, raws, portraits = {}, {}, {}, {}, {}
     for k in keys:
         rp, pp = input_paths(k)
         if not (os.path.exists(rp) and os.path.exists(pp)):
             die('missing input for %s' % k)
         raw = read_text(rp)
+        portrait = read_text(pp)
         skel, ph, _ = pwg_mask.mask(raw)
         if pwg_mask.restore(skel, ph) != raw:
             die('mask round-trip not lossless for %s' % k)
-        inputs[k] = {'skeleton': skel, 'portrait': read_text(pp),
+        inputs[k] = {'skeleton': skel, 'portrait': portrait,
                      'ls': raw.count('<ls'), 'sk': raw.count('{#'),
                      'nws': 1 if 'NWS' in raw else 0}
+        raws[k] = raw
+        portraits[k] = portrait
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
 
@@ -469,6 +542,18 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     elif tm_path:
         print('  tm: %s not found — no pre-resolution (run translation_memory.py build)' % tm_path)
     tm_keys = set(tm_resolved)
+
+    degenerate_resolved = {}
+    for k in keys:
+        if k in tm_keys:
+            continue
+        card = degenerate_passthrough_card(k, raws[k], portraits[k], field)
+        if card:
+            degenerate_resolved[k] = card
+    degenerate_keys = set(degenerate_resolved)
+    if degenerate_keys:
+        print('  degenerate: %d/%d cross-reference stub(s) accounted with no LLM: %s'
+              % (len(degenerate_keys), len(keys), ','.join(sorted(degenerate_keys))))
 
     # --selfheal: precompute a per-card fragment fallback (deterministic sense/citation split).
     # The JS uses it only for cards the batch could not translate; each fragment is masked here
@@ -499,7 +584,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     if SELFHEAL:
         import translation_memory as _tm
         for k in keys:
-            if k in tm_keys:                 # cached whole card — no heal fallback needed
+            if k in tm_keys or k in degenerate_keys:  # cached/pass-through whole card — no heal fallback needed
                 continue
             pl = split_plan(read_text(input_paths(k)[0]))
             if len(pl) < 2:
@@ -542,11 +627,12 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     presplit = []
     if SELFHEAL and OUTPUT_BUDGET is not None:
         presplit = [k for k in keys
-                    if k not in tm_keys and (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
+                    if k not in tm_keys and k not in degenerate_keys
+                    and (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
         for k in presplit:
             print('  presplit: %s (%d <ls> exceeds output budget %d) -> direct fragment translation'
                   % (k, inputs[k]['ls'], OUTPUT_BUDGET))
-    batch_keys = [k for k in keys if k not in presplit and k not in tm_keys]
+    batch_keys = [k for k in keys if k not in presplit and k not in tm_keys and k not in degenerate_keys]
 
     # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
     # (1 + <ls> per card) instead of input bytes — bytes don't predict StructuredOutput
@@ -587,11 +673,19 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
+        'tm_auto': bool(tm_auto),
+        'tm_available': bool(tm_path and os.path.exists(tm_path)),
+        'tm_cards': len(tm_keys),
         'tm_hits': sorted(tm_keys),
         'frag_tm': os.path.basename(frag_file) if (frag_cache and tm_path) else None,
         'frag_tm_cards': sorted(frag_tm),
         'frag_tm_fragments': sum(sum(1 for grp in v for s in grp if s) for v in frag_tm.values()),
+        'degenerate_passthrough_keys': sorted(degenerate_keys),
+        'agent_expected_after_tm': len(batches) + len(presplit),
     }
+    print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
+          % (meta['tm_cards'], len(meta['frag_tm_cards']),
+             len(meta['degenerate_passthrough_keys']), meta['agent_expected_after_tm']))
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the
@@ -619,6 +713,9 @@ const PRESPLIT = %(presplit)s
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
 const TM_RESOLVED = %(tm_resolved)s
+// Conservative no-LLM lane for tiny cross-reference/supplement stubs that contain no
+// translatable German gloss. These are accounted rows, not skipped keys.
+const DEGENERATE_RESOLVED = %(degenerate_resolved)s
 // --tm fragment reuse: FRAG_TM[k] mirrors FRAGS[k]'s group shape; each slot is either a
 // cached fragment's ALREADY-RESTORED senses (served with NO agent() call inside selfHeal)
 // or null (translate it). A fully-cached card heals at zero cost; a partial giant card
@@ -929,6 +1026,7 @@ const seen = new Set()
 // TM lane first: pre-resolved cards cost nothing and are already accounted for, so seed
 // them before backfilling the translated units. tm:true marks provenance for the summary.
 for (const k in TM_RESOLVED) { if (!seen.has(k)) { out.push({ key: k, card: TM_RESOLVED[k], judge: null, judge_sonnet: null, escalated: false, tm: true }); seen.add(k) } }
+for (const k in DEGENERATE_RESOLVED) { if (!seen.has(k)) { out.push({ key: k, card: DEGENERATE_RESOLVED[k], judge: null, judge_sonnet: null, escalated: false, degenerate_passthrough: true }); seen.add(k) } }
 grouped.forEach((rows, i) => {
   if (Array.isArray(rows)) {
     for (const r of rows) if (r && r.key && !seen.has(r.key)) { out.push(r); seen.add(r.key) }
@@ -949,6 +1047,7 @@ for (const r of out) if (!r.card) _failures[r.key] = r.error || FAIL[r.key] || '
 const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   null: out.length - _ok, healed: out.filter(r => r.escalated).length,
                   presplit: PRESPLIT.length, tm: out.filter(r => r.tm).length,
+                  degenerate_passthrough: out.filter(r => r.degenerate_passthrough).length,
                   frag_tm_fragments: META.frag_tm_fragments || 0,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
@@ -973,6 +1072,7 @@ return { meta: META, summary, results: out }
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
         'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
+        'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
@@ -982,7 +1082,7 @@ return { meta: META, summary, results: out }
 
 
 def main():
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm = parse_args(sys.argv[1:])
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -992,7 +1092,7 @@ def main():
         rootmap, keys = selected_keys(root, keyfilter)
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm)
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm, tm_auto)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
     # raw \r control chars, so a CRLF harness cannot be launched on Windows.
