@@ -22,6 +22,16 @@ if the reassembled <ls>/{#..#} counts drift from the source.
   # run the printed harness via the Workflow tool, then:
   python src/pilot/autosplit_requeue.py merge <root> <lang> <task_output>  # stitch -> wf file
   # then: promote_final_cards.py --glob 'wf_output.<tag>.<root>.autosplit.json' --merge
+
+TOP-UP a partially-healed card (targeted, no full re-split). A card selfHeal could only
+partially heal carries partial:true + missing_fragments (gN:fM ids) + frag_prov (the
+resolved fragments). `topup` re-translates ONLY the missing fragments and stitches them
+back onto the resolved ones — instead of re-planning the whole card from scratch:
+
+  python src/pilot/autosplit_requeue.py topup       <root> <lang> <wf_output.json>  # missing frags + harness
+  # run the printed harness via the Workflow tool, then:
+  python src/pilot/autosplit_requeue.py topup-merge  <root> <lang> <task_output>     # stitch complete card
+  # then: promote_final_cards.py --glob 'wf_output.<tag>.<root>.autosplit.json' --merge
 """
 import json
 import os
@@ -114,6 +124,252 @@ def plan(raw, ls_budget=LS_BUDGET):
 
 def fk_of(orig, si, pi):
     return '%s__s%dp%d' % (orig, si, pi)
+
+
+# --------------------------------------------------------------------------- topup
+# A card the harness selfHeal could only PARTIALLY heal comes back with partial:true +
+# missing_fragments (exact 'gN:fM' ids, N=1-based group, M=0-based fragment-in-group) +
+# frag_prov (freshly-resolved fragments, content-addressed by fsha). The inline path recorded
+# WHICH fragments failed but nothing consumed them, so `autosplit_requeue.py test ka ka` only
+# re-planned the whole 81-fragment card. `topup` closes that: it maps the missing_fragments
+# ids back to their plan() fragments, re-translates ONLY those, and stitches them back onto the
+# already-resolved fragments (from frag_prov / the fragment TM) — a targeted fix, not a re-split.
+
+def topup_manifest_path(lang, root):
+    return os.path.join(HERE, 'output', 'autosplit_topup_%s_%s.json' % (lang, safe_name(root)))
+
+
+def missing_file_path(lang, root):
+    # Same name/location cmd_merge already writes its missing-fragment file to (one persistence
+    # channel for both the standalone-merge and the topup path).
+    return os.path.join(HERE, 'output', 'autosplit_missing_%s_%s.json' % (lang, safe_name(root)))
+
+
+def frag_groups(raw):
+    """Reconstruct the EXACT selfHeal fragment-group partition gen_opt_harness2 builds for a
+    card, so a 'gN:fM' missing-fragment id maps back to a plan() fragment. Returns
+    [[(si, pi, text), ...], ...] — groups in document order, the same partition as FRAGS[k].
+    Lazy-imports the harness grouper (a) to stay byte-identical to the producer of the ids and
+    (b) to avoid the autosplit<->harness circular import at module load."""
+    from gen_opt_harness2 import _group_by_budget, SELFHEAL_GROUP_BUDGET
+    pl = plan(raw)
+    return _group_by_budget(pl, lambda f: 1 + f[2].count('<ls'), SELFHEAL_GROUP_BUDGET)
+
+
+def resolve_frag_ids(groups, missing_fragments):
+    """Map each 'gN:fM' id to its (si, pi, text) plan fragment. Raises loudly on an out-of-range
+    id rather than silently mis-mapping (the whole point is a TRUSTWORTHY targeted requeue)."""
+    out = []
+    for mid in missing_fragments:
+        try:
+            g, f = mid.split(':')
+            gi, fi = int(g[1:]) - 1, int(f[1:])
+        except (ValueError, IndexError):
+            raise ValueError('malformed missing-fragment id %r (want gN:fM)' % mid)
+        if not (0 <= gi < len(groups) and 0 <= fi < len(groups[gi])):
+            raise ValueError('missing-fragment id %r out of range (%d groups; group has %d)'
+                             % (mid, len(groups), len(groups[gi]) if 0 <= gi < len(groups) else -1))
+        out.append(groups[gi][fi])
+    return out
+
+
+def topup_fragments(wf_file, lang):
+    """Read a wf_output and return, per partial card carrying missing_fragments, everything a
+    targeted top-up needs: the full plan (each fragment's fsha + fk + missing flag), the senses
+    of every ALREADY-resolved fragment (harvested from the card's frag_prov, backfilled from the
+    fragment TM sidecar), the (si,pi,text) list of the missing fragments to re-translate, and the
+    card's iast/h. Pure (no writes). A card with no frag_prov cannot be topped up in place — its
+    resolved fragments are unrecoverable — and is skipped with a warning; use full `gen` for it."""
+    from translation_memory import frag_address, load_frag_tm
+    d = json.load(open(wf_file, encoding='utf-8'))
+    res = d.get('result') or d
+    if isinstance(res, str):
+        res = json.loads(res)
+    frag_cache = load_frag_tm(lang)
+    cards = []
+    for r in res.get('results') or []:
+        card = (r or {}).get('card')
+        if not card or not card.get('partial') or not card.get('missing_fragments'):
+            continue
+        orig = r.get('key') or card.get('key1')
+        resolved = {}
+        for fp in card.get('frag_prov') or []:
+            if fp.get('fsha') and fp.get('senses'):
+                resolved.setdefault(fp['fsha'], fp['senses'])
+        raw = read_text(input_paths(orig)[0])
+        groups = frag_groups(raw)
+        missing = resolve_frag_ids(groups, card['missing_fragments'])
+        missing_set = {(si, pi) for si, pi, _ in missing}
+        planrows, unresolvable = [], []
+        for g in groups:
+            for (si, pi, text) in g:
+                fsha = frag_address(lang, text)
+                if (si, pi) not in missing_set and fsha not in resolved:
+                    cached = frag_cache.get(fsha)
+                    if cached and cached.get('senses'):
+                        resolved[fsha] = cached['senses']
+                    else:
+                        unresolvable.append((si, pi))
+                planrows.append({'s': si, 'p': pi, 'fsha': fsha, 'fk': fk_of(orig, si, pi),
+                                 'missing': (si, pi) in missing_set, 'text': text})
+        if unresolvable:
+            print('  ! %s: %d resolved fragment(s) not in frag_prov/frag-TM — cannot top up in '
+                  'place (use full `gen`); skipping' % (orig, len(unresolvable)))
+            continue
+        h = None
+        for rec in card.get('records') or []:
+            h = h or rec.get('h')
+        cards.append({'orig': orig, 'iast': card.get('iast'), 'h': h,
+                      'plan': planrows, 'resolved': resolved, 'missing': missing})
+    return cards
+
+
+def _stitch_tree(tree, field):
+    """tree: {sense_ord: {part_ord: senses_list_or_None}} -> (senses, missing_sense_ords).
+    Mirrors cmd_merge's stitch: one merged sense per sense_ord, concatenating every part and
+    sub-sense; a sense with any missing part is left out and reported."""
+    senses, missing_si = [], []
+    for si in sorted(tree):
+        parts = tree[si]
+        if any(parts[pi] is None for pi in parts):
+            missing_si.append(si)
+            continue
+        g_txt, t_txt, tag, extra = [], [], None, {}
+        for pi in sorted(parts):
+            for s in parts[pi]:
+                g_txt.append(s.get('german') or '')
+                t_txt.append(s.get(field) or '')
+                if tag is None:
+                    tag = s.get('tag')
+                    extra = {kk: s.get(kk) for kk in
+                             ('equivalence_type', 'source_type', 'stratum', 'differentia')}
+        merged = {'tag': tag, 'german': '\n'.join(x for x in g_txt if x),
+                  field: '\n'.join(x for x in t_txt if x)}
+        merged.update({kk: vv for kk, vv in extra.items() if vv is not None})
+        senses.append(merged)
+    return senses, missing_si
+
+
+def stitch_topup(manifest_cards, got, field):
+    """Reassemble each card from its resolved fragments (senses baked into the manifest) plus the
+    freshly-recovered missing fragments (`got`: fk -> senses list, or None if still failed).
+    Returns (results, still_missing) — results rows shaped exactly like cmd_merge's."""
+    results, still_missing = [], {}
+    for c in manifest_cards:
+        orig, resolved = c['orig'], c.get('resolved') or {}
+        tree, missing_fk = defaultdict(dict), []
+        for row in c['plan']:
+            si, pi = row['s'], row['p']
+            if row['missing']:
+                senses = got.get(row['fk'])
+                if senses is None:
+                    missing_fk.append(row['fk'])
+                tree[si][pi] = senses
+            else:
+                tree[si][pi] = resolved.get(row['fsha'])
+        senses, missing_si = _stitch_tree(tree, field)
+        total_senses = len(tree)
+        if not senses:
+            still_missing[orig] = missing_fk
+            results.append({'key': orig, 'card': None,
+                            'error': 'topup-merge: 0/%d senses resolved' % total_senses,
+                            'partial': True, 'missing_senses': total_senses,
+                            'total_senses': total_senses})
+            continue
+        if missing_si:
+            still_missing[orig] = missing_fk
+        results.append({'key': orig,
+                        'card': {'key1': orig, 'iast': c.get('iast'),
+                                 'records': [{'h': c.get('h'), 'senses': senses}]},
+                        'partial': bool(missing_si),
+                        'missing_senses': len(missing_si), 'total_senses': total_senses})
+    return results, still_missing
+
+
+def cmd_topup(root, lang, wf_file):
+    cards = topup_fragments(wf_file, lang)
+    if not cards:
+        print('no partial cards with missing_fragments (and recoverable frag_prov) in %s — '
+              'nothing to top up' % wf_file)
+        return
+    fragkeys, missing_persist = [], {}
+    for c in cards:
+        orig = c['orig']
+        _rp0, pp0 = input_paths(orig)
+        portrait = read_text(pp0) if os.path.exists(pp0) else '[]'
+        miss_fks = []
+        for (si, pi, text) in c['missing']:
+            fk = fk_of(orig, si, pi)
+            rp2, pp2 = input_paths(fk)
+            open(rp2, 'w', encoding='utf-8', newline='\n').write(text)
+            open(pp2, 'w', encoding='utf-8', newline='\n').write(portrait)
+            fragkeys.append(fk)
+            miss_fks.append(fk)
+        missing_persist[orig] = miss_fks
+    # persistence mechanism: the missing-fragment file (same channel cmd_merge uses)
+    mf = missing_file_path(lang, root)
+    os.makedirs(os.path.dirname(mf), exist_ok=True)
+    json.dump(missing_persist, open(mf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # topup manifest: self-contained for merge (full plan + resolved senses baked in)
+    man = {'root': root, 'lang': lang, 'mode': 'topup',
+           'field': 'russian' if lang == 'ru' else 'english',
+           'cards': [{'orig': c['orig'], 'iast': c['iast'], 'h': c['h'],
+                      'plan': [{'s': r['s'], 'p': r['p'], 'fsha': r['fsha'],
+                                'fk': r['fk'], 'missing': r['missing']} for r in c['plan']],
+                      'resolved': c['resolved']} for c in cards]}
+    mpath = topup_manifest_path(lang, root)
+    json.dump(man, open(mpath, 'w', encoding='utf-8'), ensure_ascii=False)
+    out = os.path.join(HERE, 'run_pilot_wf.%s_%s_topup.js' % (lang, safe_name(root)))
+    subprocess.run([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root,
+                    '--nominal', '--no-grammar', '--lang=%s' % lang,
+                    '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out], check=True)
+    data = open(out, 'rb').read().replace(b'\r\n', b'\n').replace(b'\r', b'\n')  # LF for Workflow
+    open(out, 'wb').write(data)
+    total = sum(len(c['plan']) for c in cards)
+    print('\ntopup: %d missing fragment(s) across %d partial card(s) — the other %d fragment(s) '
+          'are reused from frag_prov/frag-TM (NOT re-translated)'
+          % (len(fragkeys), len(cards), total - len(fragkeys)))
+    print('manifest %s ; missing-file %s' % (mpath, mf))
+    print('RUN via Workflow tool: %s' % out)
+    print('then: python src/pilot/autosplit_requeue.py topup-merge %s %s <task_output>'
+          % (root, lang))
+
+
+def cmd_topup_merge(root, lang, task_file):
+    field = 'russian' if lang == 'ru' else 'english'
+    mpath = topup_manifest_path(lang, root)
+    if not os.path.exists(mpath):
+        sys.exit('no topup manifest %s — run `topup` first' % mpath)
+    man = json.load(open(mpath, encoding='utf-8'))
+    d = json.load(open(task_file, encoding='utf-8'))
+    res = d.get('result') or d
+    if isinstance(res, str):
+        res = json.loads(res)
+    got = {}
+    for r in res.get('results') or []:
+        if not r:
+            continue
+        c = r.get('card')
+        got[r['key']] = ([s for rec in (c.get('records') or []) for s in (rec.get('senses') or [])]
+                         if c else None)
+    results, still_missing = stitch_topup(man['cards'], got, field)
+    tag = 'en' if lang == 'en' else 'sc'
+    out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
+    meta = {'root': root, 'safe_root': safe_name(root), 'lang': lang,
+            'generator': 'autosplit_requeue.topup', 'schema_version': 'pwg_ru.workflow_meta.v1',
+            'selected_keys': sorted(c['orig'] for c in man['cards'])}
+    json.dump({'meta': meta, 'results': results}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)
+    complete = [r for r in results if r.get('card') and not r['partial']]
+    partial = [r['key'] for r in results if r['partial']]
+    print('topup-merge: %d card(s) -> %d complete, %d still partial -> %s'
+          % (len(results), len(complete), len(partial), out))
+    if still_missing:
+        mf = missing_file_path(lang, root)
+        os.makedirs(os.path.dirname(mf), exist_ok=True)
+        json.dump(still_missing, open(mf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        print('  still-missing fragment keys -> %s (re-run `topup` to target again)' % mf)
+    print("then: python src/promote_final_cards.py --glob 'wf_output.%s.%s.autosplit.json' --merge"
+          % (tag, root))
 
 
 def cmd_test(root, keys):
@@ -271,6 +527,10 @@ def main():
         cmd_gen(a[1], a[2], [k for k in a[3].split(',') if k])
     elif a[0] == 'merge':
         cmd_merge(a[1], a[2], a[3])
+    elif a[0] == 'topup':
+        cmd_topup(a[1], a[2], a[3])
+    elif a[0] == 'topup-merge':
+        cmd_topup_merge(a[1], a[2], a[3])
     else:
         sys.exit('unknown mode %r' % a[0])
 

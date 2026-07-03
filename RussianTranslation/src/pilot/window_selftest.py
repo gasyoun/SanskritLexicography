@@ -948,6 +948,86 @@ def test_en_split_triage_keeps_missing_input():
         fail('a present-input card wrongly marked missing_input')
 
 
+def test_autosplit_topup_targets_and_reassembles():
+    """Item-1 (ka): a partial card's missing_fragments drive a TARGETED top-up, not a full
+    re-split. Using ka's real 81-fragment / 41-group plan: mark 2 groups missing (the rest
+    resolved via frag_prov), assert topup_fragments targets ONLY those 2 groups' fragments,
+    then feed synthetic recoveries and assert stitch_topup reassembles a COMPLETE ka card."""
+    import autosplit_requeue as ar
+    import translation_memory as tm
+    from window_common import input_paths, read_text
+    if not os.path.exists(input_paths('ka')[0]):
+        return  # ka input not present in this checkout — nothing to assert
+    raw = read_text(input_paths('ka')[0])
+    groups = ar.frag_groups(raw)
+    if len(groups) < 3:
+        return
+    lang, field = 'ru', 'russian'
+    missing_gi = {len(groups) - 1, len(groups) - 2}     # the last 2 groups fail
+
+    def senses_for(text, marker):
+        return [{'tag': '1', 'german': text[:16], 'russian': marker,
+                 'equivalence_type': 'equivalent', 'source_type': 'attested',
+                 'stratum': '', 'differentia': ''}]
+
+    frag_prov, missing_ids = [], []
+    for gi, g in enumerate(groups):
+        for fi, (si, pi, text) in enumerate(g):
+            if gi in missing_gi:
+                missing_ids.append('g%d:f%d' % (gi + 1, fi))
+            else:
+                frag_prov.append({'fsha': tm.frag_address(lang, text),
+                                  'senses': senses_for(text, 'resolved')})
+    partial_card = {'key1': 'ka', 'iast': 'ka', 'partial': True,
+                    'missing_fragments': missing_ids, 'frag_prov': frag_prov,
+                    'records': [{'h': '1', 'senses': []}]}
+    wf = {'meta': {'root': 'ka', 'lang': lang},
+          'results': [{'key': 'ka', 'card': partial_card}]}
+    fd, wf_path = tempfile.mkstemp(suffix='.json')
+    os.close(fd)
+    with open(wf_path, 'w', encoding='utf-8') as f:
+        json.dump(wf, f, ensure_ascii=False)
+    try:
+        cards = ar.topup_fragments(wf_path, lang)
+    finally:
+        os.remove(wf_path)
+    if len(cards) != 1:
+        fail('topup_fragments did not surface the single partial ka card')
+    c = cards[0]
+    expected_missing = sum(len(groups[gi]) for gi in missing_gi)
+    if len(c['missing']) != expected_missing:
+        fail('topup targeted %d fragments, expected %d (the 2 missing groups only)'
+             % (len(c['missing']), expected_missing))
+    if len(c['missing']) >= len(c['plan']):
+        fail('topup did not reduce the fragment set — it re-planned the whole card')
+
+    # feed synthetic recoveries for the missing fragments -> expect a COMPLETE card
+    manifest_card = {'orig': c['orig'], 'iast': c['iast'], 'h': c['h'],
+                     'plan': [{'s': r['s'], 'p': r['p'], 'fsha': r['fsha'],
+                               'fk': r['fk'], 'missing': r['missing']} for r in c['plan']],
+                     'resolved': c['resolved']}
+    got = {ar.fk_of('ka', si, pi): senses_for(text, 'recovered')
+           for (si, pi, text) in c['missing']}
+    results, still_missing = ar.stitch_topup([manifest_card], got, field)
+    row = results[0]
+    if row['partial'] or not row['card']:
+        fail('topup-merge left ka partial after every missing fragment was recovered')
+    if still_missing:
+        fail('no fragments should remain missing after full recovery')
+    n_senses = len({r['s'] for r in c['plan']})
+    if len(row['card']['records'][0]['senses']) != n_senses:
+        fail('reassembled ka is missing senses: %d vs %d source sense-ords'
+             % (len(row['card']['records'][0]['senses']), n_senses))
+
+    # a still-failing missing fragment must keep the card partial (never silently complete)
+    partial_got = dict(got)
+    a_missing = ar.fk_of('ka', c['missing'][0][0], c['missing'][0][1])
+    partial_got[a_missing] = None
+    presults, pmissing = ar.stitch_topup([manifest_card], partial_got, field)
+    if not presults[0]['partial'] or a_missing not in (pmissing.get('ka') or []):
+        fail('a still-failing fragment must keep the card partial with its fk recorded')
+
+
 def test_whitney_homonym_safety():
     """FL1: requesting a Whitney homonym a root lacks must return EMPTY, never fall back to
     ALL homonyms — attaching a different homonym's grammar is a silent wrong-root error."""
@@ -1100,6 +1180,7 @@ def main():
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
         test_frag_tm_reuse,
+        test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
