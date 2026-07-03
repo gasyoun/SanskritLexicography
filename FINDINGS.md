@@ -1077,6 +1077,25 @@ version and flag that gap rather than treating the mirror as current.
 > `https://sanskrit.inria.fr/xml.html` (browser-passed Anubis, pasted into session
 > 03-07-2026), Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
+**Update (03-07-2026, same day): the @DO download landed and is confirmed real,
+current, and exactly the data the roadmap needs.** MG downloaded both `.xml.gz`
+files + DTDs; both are valid gzip, ~184 MB decompressed each. `SL_morph.xml`
+(SLP1-keyed): **1,286,615 inflected forms across 32,837 distinct stems**, dated
+"21 Juin 2026" in its embedded header (matches the site's stated v3.81) —
+**3× kosha's existing vidyut-built forms layer (426,410 pairs)**, confirming
+this is worth ingesting as roadmap Phase 4's third morphology witness, not a
+redundant re-derivation. The `stem` attribute uses the *same* `#N`
+homonym-disambiguation convention as `mw_heritage_crosswalk.tsv`
+(`stem="aMSaka#2"`) — directly joinable without re-normalisation. Files staged
+at `HeadwordLists/heritage_mirror/manual/` (gitignored, LGPLLR rights pending
+the Phase 0 @DECIDE — same restriction as the rest of the mirror). Phase 4
+(forms-oracle build) is now unblocked on data; still gated on the license
+@DECIDE for anything vendored beyond local/derived use.
+
+> **Source:** files provided by MG (downloaded via browser from
+> `sanskrit.inria.fr/DATA/XML/`), gzip integrity + structure verified locally,
+> Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
