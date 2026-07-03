@@ -1043,6 +1043,42 @@ catalog rows.
 
 ---
 
+### §50. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered
+
+🟠 **MG already corresponded with Gérard Huet directly on 30-03-2021 about this exact
+repository** — MG had asked why `Heritage_Resources`' `XML/` folder was empty (only DTDs);
+Huet replied (from `Gerard.Huet@inria.fr`) that the XML data banks were dropped from the git
+repo for space reasons and are instead generated at Platform install time, downloadable as
+compressed archives from the site's linguistic-resources page — and admitted the repo's
+README doesn't explain this ("Sorry about the README... not up-to-date, I shall update it").
+**§47's "confirmed dead end" finding (03-07-2026) independently re-derived exactly what Huet
+already told MG four years earlier** — the outreach draft this session originally prepared
+wrongly stated "no prior contact found" (a memory/search gap, not a fabrication: the 2021
+email lives outside any repo or session memory this project indexes).
+
+MG then retrieved the live `https://sanskrit.inria.fr/xml.html` page in a real browser
+(saved locally, past the Anubis wall a script cannot pass) and it gives **exact download
+URLs**, still live: `https://sanskrit.inria.fr/DATA/XML/WX_morph.xml.gz`,
+`https://sanskrit.inria.fr/DATA/XML/SL_morph.xml.gz` (+ `.txt` DTDs at the same path,
+`LGPLLR.pdf`). Current dictionary version **3.81, dated 2026-06-21** — the live site is
+**over a year ahead** of the GitHub mirror's `develop-main` (03-2025) and the
+`Heritage_Resources` README the mirror ships is still stale exactly as Huet flagged in 2021.
+
+Implication: (1) **check for prior correspondence in the user's own email/files before
+drafting a "first approach" outreach email** — repo/session/memory search alone can miss a
+years-old exchange that fully answers the question being asked; when in doubt, ask the human
+rather than assert "no prior contact." (2) The morphology-XML `@DO` gate is now a **known,
+bookmarked download**, not an open-ended "find the resources page" task — a human browser
+visit to the two `.xml.gz` URLs above is the entire remaining step. (3) Any future Heritage
+freshness comparison should note the mirror is ~14+ months stale against the live dictionary
+version and flag that gap rather than treating the mirror as current.
+
+> **Source:** MG-provided 30-03-2021 email thread + locally-saved
+> `https://sanskrit.inria.fr/xml.html` (browser-passed Anubis, pasted into session
+> 03-07-2026), Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
