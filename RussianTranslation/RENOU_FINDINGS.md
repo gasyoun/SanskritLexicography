@@ -1,11 +1,19 @@
 # Renou register axis — findings register
 
-_Created: 26-06-2026 · Last updated: 02-07-2026_
+_Created: 26-06-2026 · Last updated: 03-07-2026_
 
 Empirical findings from the two-axis tagging ([`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)), beyond the
 headline épigraphique result of [`papers/A34_renou_register_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md).
 Each is marked **[source]** (grounded in Renou's text) or **[data]** (measured over the
 8 Renou-tagged dictionaries). The per-register metrics behind them:
+
+> ⚠️ **Staleness (03-07-2026):** this table is a hand-copy from an earlier DCS-index
+> generation and needs regeneration from `renou_audit.py` (indices via
+> `renou_pipeline.py --all`). Known defect: the **epig corpus-absent cell reads 63.0 %,
+> but the committed glossary gives 484/709 = 68.3 %** — verified in
+> [`papers/A34_corpus_absent_verification.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_corpus_absent_verification.md);
+> the paper (A34) carries the correct 68.3 %. Until the regen, trust the glossaries over
+> this table wherever they disagree, and re-check bauddha's 12.4 % in the same pass.
 
 | register | N | corpus-absent | 1-dict | mean states | ≥4 states |
 |---|--:|--:|--:|--:|--:|
