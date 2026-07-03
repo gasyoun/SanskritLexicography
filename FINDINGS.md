@@ -940,6 +940,20 @@ fresh — a `202` response does not guarantee the export completes if the server
 mid-task, so re-trigger `/resources/{id}/export` rather than reusing a stale pickup key.
 Treat isolated `504`s on this host as retry-worthy, not as evidence the API changed.
 
+**Update (03-07-2026, same day, hours later, Sonnet 5 `claude-sonnet-5`): outage persists,
+now a full HTTP-layer hang rather than `504`s.** Re-probed `https://vedaweb.uni-koeln.de/`
+and `/api/openapi.json` three times over ~90s: TCP connects and the TLS handshake completes
+(port 443 reachable, `curl -v` shows the request sent), but zero bytes return before a 15–25s
+timeout — no `504`, just silence, suggesting the app process itself is wedged rather than a
+transient gateway hiccup. `http://vedaweb.uni-koeln.de/` still answers instantly with a `301`
+to the dead `https://` host. General internet (`google.com`, `github.com`) and
+`https://uni-koeln.de/` root both returned `200` in the same window, isolating the failure to
+the `vedaweb` subdomain/app specifically — confirmed server-side, not a local/sandbox network
+issue. Nothing downloaded or committed. Treat this as an extended outage, not a blip — before
+the next H096 attempt, do a single cheap liveness check
+(`curl -sI --max-time 15 https://vedaweb.uni-koeln.de/api/openapi.json`) before running the
+full export mission.
+
 > **Source:** live probe against `vedaweb.uni-koeln.de/api`, [openapi.json](https://vedaweb.uni-koeln.de/api/openapi.json)
 > schema inspection + task-trigger + download attempts, Sonnet 5 `claude-sonnet-5` · 2026-07-03
 
