@@ -818,9 +818,23 @@ sanskrit.inria.fr or gitlab.inria.fr. License is **LGPLLR**, not CC — rule on 
 BY-SA derived data before vendoring anything. Staged reuse plan:
 [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md).
 
+**Update (03-07-2026, MG browser access): confirmed dead end, not just unverified.** MG
+manually browsed
+[gitlab.inria.fr/huet/Heritage_Resources/-/tree/master/XML](https://gitlab.inria.fr/huet/Heritage_Resources/-/tree/master/XML)
+past the Anubis wall — its `XML/` tree is **byte-identical in scope** to the GitHub mirror's
+(`SL_morph.dtd`, `WX_morph.dtd`, `LICENSES/`, the same README), last touched 6 years ago
+(commit `ba45c546`, "New version 3.23", Huet, May 2020). The `LICENSES/` folder's own commit
+message says it plainly: *"Now XML banks are constructed by Platform."* So this is not a case
+of the GitHub mirror lagging GitLab — **neither repository has ever carried the inflected-form
+XML databanks**; both stopped shipping them the same release. The GTD `@DO` (manual download
+of current morphology XML) must go through the site's linguistic-resources page specifically
+(behind the Platform's own install/session flow), not through either git repository — checking
+GitLab again will not help.
+
 > **Source:** live fetch of the GitLab URL + GitHub API listing of the mirror
 > (`gh api repos/darkone23/Heritage_Resources/…`), Fable 5 (`claude-fable-5`) —
-> SanskritLexicography · 2026-07-03
+> SanskritLexicography · 2026-07-03; GitLab `XML/` cross-check via MG browser screenshot,
+> Sonnet 5 (`claude-sonnet-5`) · 2026-07-03
 
 ### §43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one
 
