@@ -1167,6 +1167,45 @@ version until the extractor is fixed.
 
 ---
 
+### §54. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary
+
+🟡 **The Heritage DICO mirror's named entry anchors mark three different
+structural roles that all share the same CSS class, and conflating them
+truncates or over-merges entry glosses.** (1) a fresh headword anchor
+immediately preceded by its own Devanagari span; (2) a compound/sub-entry
+anchor immediately preceded by a bare paragraph break (no Devanagari span) —
+genuinely a separate entry (e.g. `aṃśavāda`, `aṃśahara` under `aṃśa`'s letter
+group); (3) an inline cross-reference anchor embedded mid-sentence in another
+entry's own prose (e.g. the proper noun `Aṃśa` mentioned inside `aṃśa`'s
+definition, or a dual form like `aṃsau` mentioned inline in `aṃsa`'s gloss) —
+**not** a boundary. A naive per-anchor split (boundary = every anchor)
+truncates entries like `aṃśa` mid-sentence before its mythological sense; the
+opposite over-correction (boundary = only Devanagari-preceded anchors) merges
+the compound sub-entries' distinct glosses into the parent's. The fix
+distinguishes (1)/(2) from (3) by checking whether the anchor is preceded
+(modulo whitespace/entity noise) by a tag close versus plain running text,
+and must resolve the boundary to the **start** of the next Devanagari span
+(not the anchor position itself), else the next entry's headword text leaks
+into the tail of the previous gloss. Separately: DICO uses two distinct
+link-color classes for genuine cross-references to other entries (inline
+citation links, and trailing "see also" links) — a third color class is only
+external declension/conjugation-generator CGI links, not an entry
+cross-reference, and must be excluded from any `cross_refs` field.
+
+Evidence: 24,549/24,549 crosswalk-resolved entries extracted with zero
+truncation/bleed on 25 hand-checked rows (10 shortest, 10 longest up to 3,832
+chars, 5 random) — full workings in
+[heritage_dico_gloss.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.md).
+
+Implication: any future DICO HTML parser must classify anchors by their
+*preceding-tag context*, not just their CSS class, before treating one as an
+entry boundary.
+
+> **Source:** [heritage_dico_gloss.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.md),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
