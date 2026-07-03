@@ -164,7 +164,9 @@ def analyze_mw():
 
 # ---------------------------------------------------------------- PWG (Vedic density only; #1/#3 already in analyze_sense_order.py)
 
-PWG_SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)\)')
+# PWG sense delimiter is "N〉" (U+3009), NOT "N)" — the committed csl-orig pwg.txt has
+# always used the angle bracket, so a ")"-only regex matches ZERO senses. Accept both.
+PWG_SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)[)〉]')
 
 
 def analyze_pwg_vedic():

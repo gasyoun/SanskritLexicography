@@ -1,21 +1,21 @@
 {
   "source": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\pwg\\pwg.txt",
   "analysis_1_cross_sense_order": {
-    "entries_with_numbered_senses": 19172,
-    "entries_with_>=2_dated_senses": 13900,
+    "entries_with_numbered_senses": 15756,
+    "entries_with_>=2_dated_senses": 11882,
     "pct_printed_sense1_is_oldest_attested": 73.5,
     "mean_kendall_tau_printed_vs_date": 0.375,
     "note": "tau=1 -> printed order already = oldest-first; tau=0 -> uncorrelated."
   },
   "analysis_3_within_sense_chronology": {
-    "senses_with_>=2_dated_citations": 32254,
-    "pct_senses_fully_chronological(tau=1)": 26.2,
-    "mean_within_sense_kendall_tau": 0.28,
-    "pct_adjacent_citation_pairs_nondecreasing": 76.3
+    "senses_with_>=2_dated_citations": 28280,
+    "pct_senses_fully_chronological(tau=1)": 25.4,
+    "mean_within_sense_kendall_tau": 0.27,
+    "pct_adjacent_citation_pairs_nondecreasing": 76.8
   },
   "analysis_2_probe": {
-    "n_probe_words_with_>=2_dated_senses": 57,
-    "pct_probe_sense1_is_oldest": 71.9,
+    "n_probe_words_with_>=2_dated_senses": 51,
+    "pct_probe_sense1_is_oldest": 72.5,
     "rows": [
       {
         "k1": "BAva",
@@ -36,10 +36,10 @@
       {
         "k1": "Darma",
         "n_dated_senses": 4,
-        "sense1_oldest": true,
-        "sense1_date": 80,
-        "min_date": 80,
-        "tau": 1.0
+        "sense1_oldest": false,
+        "sense1_date": 600,
+        "min_date": 200,
+        "tau": 0.6
       },
       {
         "k1": "aMSa",
@@ -82,20 +82,12 @@
         "tau": 1.0
       },
       {
-        "k1": "aNga",
-        "n_dated_senses": 2,
-        "sense1_oldest": true,
-        "sense1_date": 550,
-        "min_date": 550,
-        "tau": null
-      },
-      {
         "k1": "aRu",
-        "n_dated_senses": 4,
+        "n_dated_senses": 3,
         "sense1_oldest": false,
-        "sense1_date": -500,
+        "sense1_date": -900,
         "min_date": -1125,
-        "tau": 0.0
+        "tau": 0.3333333333333333
       },
       {
         "k1": "akzara",
@@ -115,11 +107,11 @@
       },
       {
         "k1": "arTa",
-        "n_dated_senses": 6,
-        "sense1_oldest": true,
-        "sense1_date": 80,
-        "min_date": 80,
-        "tau": 0.07692307692307693
+        "n_dated_senses": 5,
+        "sense1_oldest": false,
+        "sense1_date": 600,
+        "min_date": 420,
+        "tau": -0.5
       },
       {
         "k1": "dravya",
@@ -138,14 +130,6 @@
         "tau": 1.0
       },
       {
-        "k1": "dravya",
-        "n_dated_senses": 2,
-        "sense1_oldest": false,
-        "sense1_date": 1400,
-        "min_date": 70,
-        "tau": -1.0
-      },
-      {
         "k1": "gati",
         "n_dated_senses": 14,
         "sense1_oldest": true,
@@ -155,11 +139,11 @@
       },
       {
         "k1": "gati",
-        "n_dated_senses": 4,
-        "sense1_oldest": false,
-        "sense1_date": 1400,
-        "min_date": 300,
-        "tau": -0.3333333333333333
+        "n_dated_senses": 3,
+        "sense1_oldest": true,
+        "sense1_date": 550,
+        "min_date": 550,
+        "tau": 1.0
       },
       {
         "k1": "grAma",
@@ -170,20 +154,12 @@
         "tau": 1.0
       },
       {
-        "k1": "guRa",
-        "n_dated_senses": 2,
-        "sense1_oldest": true,
-        "sense1_date": -940,
-        "min_date": -940,
-        "tau": 1.0
-      },
-      {
         "k1": "kAla",
-        "n_dated_senses": 5,
-        "sense1_oldest": true,
-        "sense1_date": -400,
+        "n_dated_senses": 4,
+        "sense1_oldest": false,
+        "sense1_date": 70,
         "min_date": -400,
-        "tau": 0.7777777777777778
+        "tau": 0.6666666666666666
       },
       {
         "k1": "kAla",
@@ -192,14 +168,6 @@
         "sense1_date": -1125,
         "min_date": -1125,
         "tau": 0.6
-      },
-      {
-        "k1": "kAla",
-        "n_dated_senses": 2,
-        "sense1_oldest": false,
-        "sense1_date": 80,
-        "min_date": 70,
-        "tau": -1.0
       },
       {
         "k1": "karaRa",
@@ -227,7 +195,7 @@
       },
       {
         "k1": "karman",
-        "n_dated_senses": 3,
+        "n_dated_senses": 2,
         "sense1_oldest": false,
         "sense1_date": 600,
         "min_date": 550,
@@ -266,14 +234,6 @@
         "tau": -1.0
       },
       {
-        "k1": "mAtra",
-        "n_dated_senses": 2,
-        "sense1_oldest": true,
-        "sense1_date": 70,
-        "min_date": 70,
-        "tau": 1.0
-      },
-      {
         "k1": "mUrti",
         "n_dated_senses": 2,
         "sense1_oldest": true,
@@ -291,19 +251,19 @@
       },
       {
         "k1": "naya",
-        "n_dated_senses": 4,
-        "sense1_oldest": false,
-        "sense1_date": 600,
+        "n_dated_senses": 3,
+        "sense1_oldest": true,
+        "sense1_date": 80,
         "min_date": 80,
-        "tau": 0.6
+        "tau": 1.0
       },
       {
         "k1": "nyAya",
-        "n_dated_senses": 5,
+        "n_dated_senses": 4,
         "sense1_oldest": true,
         "sense1_date": -1000,
         "min_date": -1000,
-        "tau": -0.1111111111111111
+        "tau": 0.0
       },
       {
         "k1": "nyAya",
@@ -394,14 +354,6 @@
         "tau": 1.0
       },
       {
-        "k1": "tantra",
-        "n_dated_senses": 2,
-        "sense1_oldest": false,
-        "sense1_date": 600,
-        "min_date": 70,
-        "tau": -1.0
-      },
-      {
         "k1": "tattva",
         "n_dated_senses": 2,
         "sense1_oldest": true,
@@ -427,10 +379,10 @@
       },
       {
         "k1": "vaMSa",
-        "n_dated_senses": 3,
+        "n_dated_senses": 2,
         "sense1_oldest": true,
-        "sense1_date": -1125,
-        "min_date": -1125,
+        "sense1_date": 80,
+        "min_date": 80,
         "tau": 1.0
       },
       {
