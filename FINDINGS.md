@@ -1202,7 +1202,7 @@ version until the extractor is fixed.
 
 ---
 
-### §54. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary
+### §56. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary
 
 🟡 **The Heritage DICO mirror's named entry anchors mark three different
 structural roles that all share the same CSS class, and conflating them
@@ -1277,7 +1277,7 @@ held on the split-granularity knob.
 
 ---
 
-### §54. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent
+### §57. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent
 
 🟡 **The [samskrtam.ru/z/](https://samskrtam.ru/z/) verb-root dictionary addresses entries
 only as `/z/verb.php?id=N` (numeric, 905 rows) — there is no lookup-by-root URL, no slug
