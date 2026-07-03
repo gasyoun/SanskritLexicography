@@ -1015,6 +1015,32 @@ as a same-asset time series without the scope caveat.
 > [heritage_coverage_current.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_coverage_current.py),
 > Sonnet 5 `claude-sonnet-5` · 2026-07-03
 
+### §50. CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026
+
+🟠 **The CDSL per-dictionary web apps do not all live under `/scans/{CODE}Scan/2020/web/`:
+NMMB (added June 2026) lives under `/2026/web/` — the 2020 path 404s. Any tool that
+constructs CDSL display URLs from a code must take the year from the front-page row's own
+href.** Also: two new digitizations exist — **NMMB is a live catalog row** (first addition
+in years; *Nāmamālikā* of Bhoja, 1955 Deccan College ed., 506 synonym groups, via the
+sanskrit-kosha project), and **PWKVN** (Böhtlingk's own *Nachträge und Verbesserungen*
+appendixes to PW, 24,976 records — each volume's appendix restarts at *a*, so headwords
+recur) has full [csl-orig source](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pwkvn)
+but **no catalog row** — only an
+[experimental display](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/pwkvn/).
+
+Evidence: `curl` 2026-07-03 — `NMMBScan/2020/web/webtc/indexcaller.php` → **404**,
+`NMMBScan/2026/web/…` → 200; csl-guides' catalog generator had the 2020 hardcode and
+produced dead NMMB links (fixed in
+[build-catalog.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-catalog.mjs),
+[PR #82](https://github.com/sanskrit-lexicon/csl-guides/pull/82)).
+
+Implication: never assume the `/2020/web/` template for new dictionaries; parse the year
+from the live front page. Watch for PWKVN (and the still-absent KOW/KNA) gaining real
+catalog rows.
+
+> **Source:** [csl-guides PR #82](https://github.com/sanskrit-lexicon/csl-guides/pull/82) audit sweep,
+> Fable 5 `claude-fable-5` · 2026-07-03
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
