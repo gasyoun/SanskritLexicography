@@ -7,7 +7,7 @@ then **cut a new version every time the changelog is updated** (promote
 [Unreleased] to the next `x.y.z` with today's date and start a fresh
 [Unreleased]).
 
-## [Unreleased]
+## [1.1.4] - 2026-07-03
 
 ## [0.0.42] - 2026-07-02
 
