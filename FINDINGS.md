@@ -74,6 +74,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🔴 [§30. Body-text headword mining is a dead end (38.6 percent precision)](#30-body-text-headword-mining-is-a-dead-end-386-percent-precision) — the 376k broad index is near-ceiling; measured negative result.
 - 🟠 [§31. Detector precision stratifies by digitization quality](#31-detector-precision-stratifies-by-digitization-quality) — mature dicts ~0.2 % real flags vs 11–15 % on poorly-digitised ones.
 - 🟡 [§32. Correction events concentrate in sense text](#32-correction-events-concentrate-in-sense-text) — 52.7 % sense / 17.5 % markup / 17.3 % headword over 52k events.
+- 🟠 [§46. Twelve years of corrections cover only ~10–14 % of the estimated error population](#46-twelve-years-of-corrections-cover-only-1014--of-the-estimated-error-population) — Chapman mark–recapture over the two near-disjoint correction eras; PW ~14 %, MW ~10 % done; 40 dicts not even estimable.
 - 🟠 [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
@@ -622,6 +623,24 @@ diacritic fixes; markup errors are a real 17.5 % class, not noise.
 
 > **Source:** [csl-observatory `reports/obs_t_typology.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_typology.md)
 > (Axis A table) — csl-observatory · 2026-06-17
+
+### §46. Twelve years of corrections cover only ~10–14 % of the estimated error population
+
+🟠 **The two CDSL correction eras (2014–2019 web form; 2019–2026 git) touch nearly disjoint
+record sets, and under Chapman mark–recapture that near-disjointness implies the corrected
+records are a small minority of the error-prone population: PW ~78k error-prone records
+(~14 % corrected), MW ~65k (~10 %), BUR saturates its entire 19,776 records (~8 %).**
+Evidence: of 40,234 observed error sites (dict + headword) across 43 dicts, only PW (m=169),
+MW (m=105) and BUR (m=23) have ≥10 two-era recaptures — 40 dictionaries cannot be estimated
+at all; estimates are capped at csl-orig `<L>` record counts, and the Chao heterogeneity
+scenario pushes the totals toward the full dictionary.
+Implication: correction-campaign planning should assume the work is mostly ahead, not mostly
+done; any "quality is converging" claim from correction-volume decline confuses effort decay
+with error exhaustion. Order-of-magnitude only — sequential eras bias the estimate up,
+correlated corrector attention biases it down.
+
+> **Source:** [csl-observatory `reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md)
+> (Chapman/Chao tables + sensitivity) — csl-observatory · 2026-07-03 · paper track A48
 
 ## Etymology & derivation
 
