@@ -56,6 +56,10 @@ SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
 DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+from foreign_literal_guards import FRENCH_CONTEXT_WORDS, AMBIGUOUS_DE_FR_WORDS
+
 LS = re.compile(r'<ls\b')
 SAN = re.compile(r'\{#.*?#\}', re.S)
 AB = re.compile(r'<(?:ab|lex|lang)\b')
@@ -142,6 +146,14 @@ def audit_sense(german, english):
     if CYR.search(ep):
         soft.append('RU-RESIDUE')
     de_hits = set(m.lower() for m in DE_WORDS.findall(ep))
+    # "des" is both a German genitive/plural article ("des Todes") and a French
+    # partitive/plural article ("des chevaux") -- the gen_fidelity_judge_en prompt
+    # explicitly preserves French/Latin literals verbatim in the english field, so a
+    # bare "des" hit with no other unambiguous German marker, alongside other French
+    # vocabulary (FRENCH_WORDS), is a preserved French literal, not German residue.
+    # Mirrors the RU "du"-vs-French collision fixed 2026-07-03 (prompt_rule_audit.py).
+    if de_hits <= AMBIGUOUS_DE_FR_WORDS and FRENCH_CONTEXT_WORDS.search(ep):
+        de_hits.clear()
     # Umlaut/eszett never occurs in IAST, but DOES occur in scholar names (Graßmann,
     # Böhtlingk) that legitimately survive. Genuine German residue (eig., überh., übertr.)
     # is lowercase, so only count an umlaut inside a non-capitalized token.

@@ -945,6 +945,22 @@ def test_markup_loss_soft_flag_en():
             os.remove(report_path)
 
 
+def test_en_de_residue_french_guard():
+    """EN analogue of the 2026-07-03 RU 'du'-vs-French collision fix (prompt_rule_audit.py):
+    'des' is both a German article ("des Todes") and a French partitive article (as in "de
+    basse extraction", a stock B&R euphemism for "of low birth"). gen_fidelity_judge_en.py's
+    prompt explicitly preserves French literals verbatim, so a bare 'des' hit alongside
+    another confirming French word must NOT fire DE-RESIDUE; genuine German residue ('des
+    Todes', no other French markers) still must."""
+    from audit_window_en import audit_sense
+    _, soft_french = audit_sense('{%des basse extraction%}', 'des basse extraction')
+    if any(s.startswith('DE-RESIDUE') for s in soft_french):
+        fail('DE-RESIDUE wrongly fired on a preserved French literal ("des basse extraction")')
+    _, soft_german = audit_sense('{%Todesangst%}', 'fear of des Todes')
+    if not any(s.startswith('DE-RESIDUE') for s in soft_german):
+        fail('DE-RESIDUE did not fire on genuine German residue ("des Todes")')
+
+
 def test_ru_coverage_denominator_not_silently_exempt():
     """FL3: a corrupt EN denominator must FAIL the coverage gate (not be silently skipped),
     and a RU root with no denominator must be surfaced as UNVERIFIABLE (the gam 6/127 blind
@@ -1855,6 +1871,7 @@ def main():
         test_en_gate_strict_has_teeth,
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
+        test_en_de_residue_french_guard,
         test_ru_coverage_denominator_not_silently_exempt,
         test_coverage_gate_multi_layer_and_presplit,
         test_en_residual_coverage_complete,
