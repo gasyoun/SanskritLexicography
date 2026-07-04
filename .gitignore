@@ -3,6 +3,10 @@
 .contributing_audit.txt
 RussianTranslation/.claude/
 RussianTranslation/src/pilot/.claude/
+# Claude Code worktree-management config for a repo-root session (settings.local.json,
+# worktrees/) — machine/session-local, not repo content. Matches at ANY level since a
+# worktree session can start in any subdirectory, not just RussianTranslation/.
+.claude/
 RussianTranslation/tmp.md
 RussianTranslation/src/audit[0-9].py
 RussianTranslation/src/audit_fidelity.py
