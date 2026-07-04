@@ -7,3 +7,10 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
       - id: check-merge-conflict
+  - repo: local
+    hooks:
+      - id: russian-translation-review-changelog
+        name: RussianTranslation review changelog guard
+        entry: python RussianTranslation/src/review_changelog_guard.py --staged
+        language: system
+        pass_filenames: false

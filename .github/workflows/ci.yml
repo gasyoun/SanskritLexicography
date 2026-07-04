@@ -45,6 +45,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v6
       - run: pip install pyyaml
       - name: Validate all YAML
@@ -126,6 +128,14 @@ jobs:
       - name: Check pilot workflow syntax
         working-directory: RussianTranslation
         run: node --check src/pilot/run_pilot_wf.js
+      - name: Guard review changelog updates
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin "${{ github.base_ref }}" --depth=50
+            python RussianTranslation/src/review_changelog_guard.py --base FETCH_HEAD --head HEAD
+          else
+            python RussianTranslation/src/review_changelog_guard.py --base HEAD~1 --head HEAD
+          fi
       - name: Validate review gate fixtures
         working-directory: RussianTranslation
         run: |
