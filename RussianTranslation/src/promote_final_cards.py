@@ -321,9 +321,14 @@ def main():
         bak = args.store + ('.premerge.bak' if args.merge else '.legacy.bak')
         os.replace(args.store, bak)
         print('\nbacked up prior store -> %s' % os.path.basename(bak))
-    with open(args.store, 'w', encoding='utf-8') as f:
+    # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write
+    # can never leave the canonical store truncated (the store this project has lost
+    # before). Matches the tmp+replace pattern in run_batch.apply_review.
+    tmp = args.store + '.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + '\n')
+    os.replace(tmp, args.store)
     print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
           % (args.store, len(rows), args.review_status))
     print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'

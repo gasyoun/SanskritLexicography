@@ -67,6 +67,25 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
 ```json lang_parity_ledger
 [
   {
+    "id": "latin_cue_masking",
+    "mechanism": "classify_pct recovers the Latin/Greek cue from masked {Tn} placeholders (expand + de-tag the preceding window) so a {%...%} cognate after <ab>lat.</ab> is masked as Latin, not leaked into the prompt as untranslated German",
+    "files": [
+      "src/pwg_mask.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "Code review 2026-07-04: <ab>lat.</ab>/<ab>griech.</ab> cues are masked to {Tn} in mask() step 1 BEFORE classify_pct runs, so the end-anchored LATIN_CUE regex matched the placeholder, not the cue; measured 33 Latin/Greek cognate glosses across all of PWG (e.g. ignis, uncus, ansa after `lat.`) were being sent for German translation and leaked verbatim into the translator prompt. Fix expands trailing placeholders back to source and strips tags in the classify context window. Masking is stage-0 and runs before any --lang branch, so the fix is identical for RU and EN. Round-trip stays lossless. Pinned by window_selftest.test_pwg_mask_latin_cue_behind_ab_tag.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
+      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+    }
+  },
+  {
     "id": "presplit_router",
     "mechanism": "Presplit router sends over-budget dense cards straight to the fragment lane",
     "files": [
@@ -99,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "6450db8535cd39b7630613e0ebb78249b379dd12d2f49f026a9209c4b99711cd"
+      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
     }
   },
   {
@@ -118,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "6450db8535cd39b7630613e0ebb78249b379dd12d2f49f026a9209c4b99711cd"
+      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
     }
   },
   {
@@ -277,8 +296,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "854b86a71ebfa20b06a9c31240b5f4b9ebf3cf3a7fc5fc935c813c4d9ead27b0",
-      "src/promote_en.py": "b2b97ad362fd7020549a778216dd6cfb230342db76a28883b32bdebd4d124bef"
+      "src/promote_final_cards.py": "9356c53c5f4a64e9e5ec264dd2c34ca43a7af2c40e912147d2815d81f10c5ca0",
+      "src/promote_en.py": "96e1928ad4ceae44aa7a9984d3f5b6cb7bb2f1877923fd3adbc46cab56bac022"
     }
   },
   {
@@ -297,7 +316,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "6450db8535cd39b7630613e0ebb78249b379dd12d2f49f026a9209c4b99711cd"
+      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
     }
   },
   {
@@ -316,7 +335,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "6450db8535cd39b7630613e0ebb78249b379dd12d2f49f026a9209c4b99711cd"
+      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
     }
   }
 ]
