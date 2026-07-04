@@ -149,43 +149,59 @@ def cmd_collect(args):
     wf = args[0]
     model = args[1] if len(args) > 1 else None      # optional translate-model override
     raw = json.load(open(wf, encoding='utf-8'))
-    res = raw.get('result', raw).get('results', raw.get('results', []))
+    # A workflow result is often a JSON-encoded STRING, not a nested object — every
+    # sibling loader (save_and_audit, promote_en, promote_final_cards) handles that;
+    # this one used to call .get() on the string and crash, stranding the whole run's
+    # generation output (the "run lost / re-driven" class). Normalise first.
+    result = raw.get('result', raw)
+    if isinstance(result, str):
+        result = json.loads(result)
+    if not isinstance(result, dict):
+        result = raw
+    res = result.get('results', raw.get('results', []))
     by_i = {r['i']: r for r in res if 'i' in r}
-    batch = {json.loads(l)['i']: json.loads(l) for l in open(BATCH_IN, encoding='utf-8')}
+    batch = {}
+    for l in open(BATCH_IN, encoding='utf-8'):
+        rec_in = json.loads(l)            # single parse per line (was parsed twice)
+        batch[rec_in['i']] = rec_in
     prov = provenance(os.path.splitext(os.path.basename(wf))[0], model)
     appended = ok = bad = mism = needs = 0
+    out_lines = []
+    for i, card in batch.items():
+        r = by_i.get(i)
+        if not r:
+            continue
+        ph = card['placeholders']
+        src = set(re.findall(r'\{T(\d+)\}', card['de_skeleton']))
+        got = set(re.findall(r'\{T(\d+)\}', r['ru_skeleton']))
+        integrity = src == got
+        ru = re.sub(r'\{T(\d+)\}',
+                    lambda m: ph[int(m.group(1)) - 1] if 0 < int(m.group(1)) <= len(ph) else m.group(0),
+                    r['ru_skeleton'])
+        keymatch = r.get('key1') == card['key1']
+        v = r.get('verdict') or {}   # judge may be null (e.g. rate-limited) → treat as pending
+        good = bool(v.get('ok')) and integrity and keymatch
+        sev = v.get('severity')
+        # review state machine: an LLM verdict is never final for print —
+        # anything failing or sev>=3 or with a structural mismatch queues for a human.
+        review_status = 'judged' if (good and (sev or 0) < 3) else 'needs_review'
+        rec = {'ord': card['ord'], 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
+               'placeholders_ok': integrity, 'key_match': keymatch, 'verdict': v,
+               'ok': good, 'severity': sev,
+               'review_status': review_status, 'reviewer': None,
+               'attested': card.get('attested', []),     # persist the reuse evidence (rec 1)
+               'provider_gate': card.get('provider_gate', {}),
+               'provenance': prov}
+        out_lines.append(json.dumps(rec, ensure_ascii=False) + '\n')
+        appended += 1
+        ok += 1 if good else 0
+        bad += 0 if good else 1
+        mism += 0 if (integrity and keymatch) else 1
+        needs += 1 if review_status == 'needs_review' else 0
+    # One append syscall instead of one-per-row shrinks the window in which a crash
+    # can leave a torn final JSONL line that breaks every later json.loads pass.
     with open(STORE, 'a', encoding='utf-8', newline='') as out:
-        for i, card in batch.items():
-            r = by_i.get(i)
-            if not r:
-                continue
-            ph = card['placeholders']
-            src = set(re.findall(r'\{T(\d+)\}', card['de_skeleton']))
-            got = set(re.findall(r'\{T(\d+)\}', r['ru_skeleton']))
-            integrity = src == got
-            ru = re.sub(r'\{T(\d+)\}',
-                        lambda m: ph[int(m.group(1)) - 1] if 0 < int(m.group(1)) <= len(ph) else m.group(0),
-                        r['ru_skeleton'])
-            keymatch = r.get('key1') == card['key1']
-            v = r.get('verdict') or {}   # judge may be null (e.g. rate-limited) → treat as pending
-            good = bool(v.get('ok')) and integrity and keymatch
-            sev = v.get('severity')
-            # review state machine: an LLM verdict is never final for print —
-            # anything failing or sev>=3 or with a structural mismatch queues for a human.
-            review_status = 'judged' if (good and (sev or 0) < 3) else 'needs_review'
-            rec = {'ord': card['ord'], 'key1': card['key1'], 'key2': card['key2'], 'ru': ru,
-                   'placeholders_ok': integrity, 'key_match': keymatch, 'verdict': v,
-                   'ok': good, 'severity': sev,
-                   'review_status': review_status, 'reviewer': None,
-                   'attested': card.get('attested', []),     # persist the reuse evidence (rec 1)
-                   'provider_gate': card.get('provider_gate', {}),
-                   'provenance': prov}
-            out.write(json.dumps(rec, ensure_ascii=False) + '\n')
-            appended += 1
-            ok += 1 if good else 0
-            bad += 0 if good else 1
-            mism += 0 if (integrity and keymatch) else 1
-            needs += 1 if review_status == 'needs_review' else 0
+        out.write(''.join(out_lines))
     print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d, needs_review %d)'
           % (appended, os.path.basename(STORE), ok, bad, mism, needs))
     print('  provenance: %s @ %s (pwg %s, prompts %s)'
