@@ -54,6 +54,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - Verified the current publication-facing RU TM: 2,392 publication records pass
   `translation_memory.py validate --lang ru --publication`.
 
+### Review discipline — changelog after major reviews
+- Added a blocking `review_changelog_guard.py` hook for authored review/audit
+  documents and roadmap review JSON. Major review edits must now update this
+  changelog in the same diff, or carry an explicit `Changelog: not applicable`
+  marker so the bypass is auditable. The guard is wired into both local
+  pre-commit and CI.
+
 ### Pipeline versioning — stamp WHICH tooling produced each translation
 - New `src/pipeline_version.py` + manifest `src/pipeline_versions.json`: a semver
   per output-affecting component family — **prompt** (`pwg_ru_prompts/`),
