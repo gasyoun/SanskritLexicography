@@ -297,7 +297,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_final_cards.py": "57bf1030c3dd9ca46ea06f13d8225ea16ef3160e57462e2babc5c856f1906da8",
-      "src/promote_en.py": "96e1928ad4ceae44aa7a9984d3f5b6cb7bb2f1877923fd3adbc46cab56bac022"
+      "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
     }
   },
   {
@@ -340,20 +340,21 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "pipeline_version_stamp_en_gap",
-    "mechanism": "promote_final_cards.py (RU) stamps provenance.pipeline (semver of the promotion tooling, orthogonal to the Claude model version) on every promoted row via pipeline_version.stamp(); promote_en.py (EN) was not updated in the same PR and has no equivalent stamp",
+    "mechanism": "promote_final_cards.py (RU) stamps provenance.pipeline (semver of the promotion tooling, orthogonal to the Claude model version) on every promoted row via pipeline_version.stamp(); promote_en.py (EN) now stamps the same pipeline block into en_provenance.pipeline",
     "files": [
       "src/promote_final_cards.py",
       "src/promote_en.py"
     ],
     "languages": [
-      "ru"
+      "ru",
+      "en"
     ],
-    "verdict": "GAP",
-    "note": "Found incidentally while re-affirming parity for H169 (unrelated QA-gate-teeth fix). PR #140 (feat(provenance): pipeline versioning, 2026-07-04) added pipeline_version stamping only to promote_final_cards.py; promote_en.py has no `import pipeline_version` and no `provenance.pipeline` field, so a future tooling bugfix cannot tell which promoted EN rows predate it the way it can for RU rows.",
-    "tracking": "Uprava/GTD_NEXT_ACTIONS.md @DO — port pipeline_version stamping to promote_en.py",
+    "verdict": "SHARED",
+    "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
+    "tracking": "",
     "verified_sha256": {
       "src/promote_final_cards.py": "57bf1030c3dd9ca46ea06f13d8225ea16ef3160e57462e2babc5c856f1906da8",
-      "src/promote_en.py": "96e1928ad4ceae44aa7a9984d3f5b6cb7bb2f1877923fd3adbc46cab56bac022"
+      "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
     }
   },
   {
