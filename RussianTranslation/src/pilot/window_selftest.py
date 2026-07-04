@@ -1652,6 +1652,41 @@ def test_perf_preflight_fragment_tm_empty_warning():
             fail('empty fragment TM warning must state when no frag_prov source exists')
 
 
+def test_verb_worklist_excludes_missing_rootmaps():
+    import verb_worklist as vw
+    with tempfile.TemporaryDirectory() as tmp:
+        preverb = os.path.join(tmp, 'pwg_preverb1.txt')
+        manifest = os.path.join(tmp, 'scale_manifest.freq.json')
+        store = os.path.join(tmp, 'pwg_ru_translated.jsonl')
+        rootmaps = os.path.join(tmp, 'input')
+        os.makedirs(rootmaps, exist_ok=True)
+        with open(preverb, 'w', encoding='utf-8') as f:
+            f.write(';; Case 1: L=1, k1=SrI, k2=x, code=x,\n')
+            f.write(';; Case 2: L=2, k1=dah, k2=x, code=x,\n')
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump([
+                {'key1': 'SrI', 'score': 99.0, 'band': 5, 'bytes': 900},
+                {'key1': 'dah', 'score': 10.0, 'band': 5, 'bytes': 100},
+            ], f)
+        with open(store, 'w', encoding='utf-8') as f:
+            f.write('')
+        with open(os.path.join(rootmaps, 'dah.rootmap.json'), 'w', encoding='utf-8') as f:
+            json.dump({'meta': {'root': 'dah'}, 'items': []}, f)
+
+        payload = vw.build_worklist(preverb=preverb, manifest=manifest,
+                                    store=store, rootmap_dir=rootmaps)
+        if payload.get('remaining') != ['SrI', 'dah']:
+            fail('verb_worklist must preserve the raw score-ranked backlog')
+        if payload.get('runnable_remaining') != ['dah']:
+            fail('verb_worklist --top must be backed by runnable roots only')
+        if payload.get('blocked_missing_rootmap') != ['SrI']:
+            fail('missing-rootmap roots must remain visible in blocked_missing_rootmap')
+        if payload.get('remaining_count') != 2 or payload.get('runnable_count') != 1:
+            fail('verb_worklist count fields must distinguish backlog from runnable queue')
+        if payload.get('remaining_bytes') != 1000 or payload.get('runnable_bytes') != 100:
+            fail('verb_worklist byte fields must distinguish backlog from runnable queue')
+
+
 def test_calibration_arm_set_conservative_emit_only():
     with tempfile.TemporaryDirectory() as tmp:
         out_dir = os.path.join(tmp, 'perf_smoke_preflight')
@@ -2025,6 +2060,7 @@ def main():
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
         test_perf_preflight_fragment_tm_empty_warning,
+        test_verb_worklist_excludes_missing_rootmaps,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,

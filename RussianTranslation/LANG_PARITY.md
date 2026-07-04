@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   },
   {
@@ -316,7 +316,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   },
   {
@@ -335,7 +335,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   },
   {
@@ -373,7 +373,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+      "src/pilot/window_selftest.py": "c2b42a29571cd28548c243ecd5b9dfa42fb008a94648b855f49b55a403f80b08"
     }
   }
 ]
