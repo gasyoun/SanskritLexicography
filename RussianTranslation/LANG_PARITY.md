@@ -99,7 +99,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
-      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
+      "src/pilot/window_selftest.py": "0f7e260c53317a0dc9ae46f1d9be9c03e0da89a4bccbb70e48d559922b107d2f"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
-      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
+      "src/pilot/window_selftest.py": "0f7e260c53317a0dc9ae46f1d9be9c03e0da89a4bccbb70e48d559922b107d2f"
     }
   },
   {
@@ -239,6 +239,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED 2026-07-04 (was GAP, task_d29bb788): audited audit_window_en.py against all 3 fixes. (1) multi-layer over-count is N/A -- EN has no analogous raw-marker-vs-card-sense coverage check to carry the bug. (2) the Sanskrit-span leak is already safe -- audit_window_en.py's prose() already scrubs {#..#} spans before residue matching, unlike RU's pre-fix braced_gloss_risks. (3) a REAL EN analogue existed in DE-RESIDUE: 'des' is both a German article and a French partitive article, and gen_fidelity_judge_en.py's own prompt preserves French/Latin literals verbatim -- fixed by extracting LATIN_WORDS/FRENCH_WORDS into a new shared src/pilot/foreign_literal_guards.py imported by both prompt_rule_audit.py and audit_window_en.py, with a French-context guard on the ambiguous 'des' hit. Pinned by test_en_de_residue_french_guard in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
+      "src/audit_coverage.py": "8c54aa22943140624238273b5bb6a2cbe9aceded5f8295cb84cd36bd994904c0",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
       "src/pilot/audit_window.py": "91019c993e877311cdd90812c286a50d1b2094eb8a9473bb4b4ff9b11f032f88",
       "src/pilot/audit_window_en.py": "068a6c410076ede4235afa3a280199028d0f6a2e399df6cde95b000a56513c19"
@@ -296,7 +297,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
-      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
+      "src/pilot/window_selftest.py": "0f7e260c53317a0dc9ae46f1d9be9c03e0da89a4bccbb70e48d559922b107d2f"
     }
   },
   {
@@ -315,7 +316,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
-      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
+      "src/pilot/window_selftest.py": "0f7e260c53317a0dc9ae46f1d9be9c03e0da89a4bccbb70e48d559922b107d2f"
     }
   }
 ]
