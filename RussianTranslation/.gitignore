@@ -43,6 +43,8 @@ src/pilot/run_pilot_wf.sc_y*.js
 # translation_memory.frag.<lang>.jsonl — both regenerable, neither a deliverable.
 src/pilot/translation_memory.*.json
 src/pilot/translation_memory.frag.*.jsonl
+src/pilot/translation_memory.suggest.*.jsonl
+src/pilot/translation_memory.denylist.jsonl
 
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
