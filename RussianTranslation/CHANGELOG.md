@@ -31,6 +31,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   needing re-translation; `stamp-md` refreshes a `_pipeline …_` footer on rendered
   `.md` cards; `backfill` stamps legacy unversioned rows with *explicitly asserted*
   versions (never guessed), mirroring the no-guessing philosophy of the provenance audit.
+- The `.md` footer is now written automatically at render time, not only via a batch
+  `stamp-md` pass: `_pilot_collect.py` stamps each whole card it emits (model + date from
+  the wf meta), and `root_glue_translated.py` stamps the assembled `.NESTED.md` once at
+  the end. Split-root **sub-cards deliberately carry no footer** — `root_glue`'s `body_of`
+  keeps everything after the title, so a per-sub-card footer would scatter through the
+  glued article; the glue step stamps the whole card instead. The render-side files are
+  intentionally NOT in the `script` hash set (a footer-format tweak must not force a
+  re-translation), so this changes no component version.
 - Live store state at introduction: 10,794 rows, all pre-versioning → bucketed as
   "unversioned legacy" (NOT flagged stale, so the deploy does not falsely mark every
   historical row for re-run). Baseline frozen at prompt/glossary/script v1.0.0.
