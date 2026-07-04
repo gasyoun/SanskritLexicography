@@ -909,6 +909,61 @@ def test_en_gate_strict_has_teeth():
             os.remove(report_path)
 
 
+def test_en_gate_dup_has_teeth():
+    """H169 defect 1: two senses in one record sharing identical english used to slide
+    through clean — the only within-record duplicate signal was the soft SAME-GLOSS flag,
+    gated on >=3 content words, so a short duplicate ("to go" / "to go") produced zero flags
+    and --strict passed. DUP must fire HARD regardless of gloss length."""
+    fixture = {'meta': {'root': 'zz'}, 'results': [
+        {'key': 'zz~~h0_00_pwg00', 'card': {'iast': 'zz', 'records': [
+            {'h': 'zz', 'senses': [
+                {'tag': '1', 'german': '{%gehen%}', 'english': 'to go'},
+                {'tag': '2', 'german': '{%gehen%}', 'english': 'to go'}]}]}},
+    ]}
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        wf_path = f.name
+        json.dump(fixture, f, ensure_ascii=False)
+    report_path = wf_path + '.report.json'
+    en_audit = os.path.join(HERE, 'audit_window_en.py')
+    try:
+        # report-only: still exits 0 even with the hard DUP flag present
+        run([sys.executable, en_audit, wf_path, '--no-mw'], expect=0)
+        run([sys.executable, en_audit, wf_path, '--no-mw', '--strict', '--report', report_path],
+            expect=1)
+        rep = json.load(open(report_path, encoding='utf-8'))
+        if not any(fl['flag'].startswith('DUP') for ff in rep['files'] for fl in ff['flags']):
+            fail('EN gate did not emit a DUP flag for two identical-english senses')
+        if not any('hard flag' in r for r in rep.get('strict_reasons') or []):
+            fail('EN gate report did not record a strict failure reason for the DUP hard flag')
+    finally:
+        os.remove(wf_path)
+        if os.path.exists(report_path):
+            os.remove(report_path)
+
+
+def test_ru_gate_fails_loud_on_unparseable_child():
+    """H169 defect 2: the RU gate used to recover child-auditor verdicts by regex-scraping
+    prose stdout (`| flagged: ...`) — any wording drift in audit_translation.py /
+    audit_coverage.py / audit_sense_dupes.py made the parser return [] and silently drop
+    flagged cards from the requeue while the gate reported clean. The fixed parser must
+    return None (never []) when the strict `FLAGGED_JSON:` verdict line is missing or
+    malformed, so the caller can fail loud instead of passing silently."""
+    from audit_window import parse_flagged_json
+    drifted_stdout = 'FAIL: 2/5 units clean | flagged: root_a, root_b\n'
+    if parse_flagged_json(drifted_stdout) is not None:
+        fail('parser must return None (unparseable) when the child emits no FLAGGED_JSON '
+             'line, not silently treat wording drift as a clean pass')
+    malformed = 'FLAGGED_JSON: {not valid json\n'
+    if parse_flagged_json(malformed) is not None:
+        fail('parser must return None on malformed JSON, not crash or silently drop flags')
+    clean_line = 'PASS: 5/5 units clean\nFLAGGED_JSON: []\n'
+    if parse_flagged_json(clean_line) != []:
+        fail('parser did not parse a genuinely clean FLAGGED_JSON: [] line')
+    flagged_line = 'FAIL: 3/5 units clean | flagged: root_a, root_b\nFLAGGED_JSON: ["root_a", "root_b"]\n'
+    if parse_flagged_json(flagged_line) != ['root_a', 'root_b']:
+        fail('parser did not parse a well-formed FLAGGED_JSON line correctly')
+
+
 def test_pwg_mask_latin_cue_behind_ab_tag():
     """Regression (review 2026-07-04): a Latin/Greek cue inside an <ab> span
     (e.g. `<ab>lat.</ab> {%ignis%}`) is masked to a {Tn} placeholder in mask()
@@ -1997,6 +2052,8 @@ def main():
         test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
+        test_en_gate_dup_has_teeth,
+        test_ru_gate_fails_loud_on_unparseable_child,
         test_pwg_mask_latin_cue_behind_ab_tag,
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
