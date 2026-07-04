@@ -49,13 +49,15 @@ and eliminated the transient dropouts.
   and G10 edition cut remain blocked until human review/gold work is done.
   `preflight_remaining_gates.py` and `release_readiness.py` are report-only by default; add
   `--fail-on-blocked` when using them as CI/go-no-go gates.
-- Canonical next roots: finish the `sTA` re-batch cleanup, then run
-  `BU`, `gam`, `yuj`, `as`, `i`, `vid`, `han`.
-- Do **not** run 10 big roots in one broad Max push yet. The current staged plan
-  is: fresh `sTA` only; then clean-ready roots `BU`, `as`, and `i`; then prune
-  and recheck stale roots `gam`, `yuj`, `vid`, and `han` before any Max spend.
-  This produces enough audit/cost data without mixing clean roots with avoidable
-  stale generated inputs.
+- **Scope ruling (MG, 04-07-2026): drain ALL remaining DCS-attested verb roots**, in
+  frequency order, root-by-root. The worklist is enumerated reproducibly by
+  [`verb_worklist.py`](verb_worklist.py) (verbs01 universe ∩ freq manifest − promoted
+  store): 749 attested verb roots, 46 promoted, **703 remaining** (~5.3 MB source) as of
+  04-07-2026. Drain discipline lives in the standing handoff
+  [`H151`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md).
+- The per-root loop below is unchanged — "all roots next batch" scales the QUEUE, not the
+  width. Roots still run **one at a time (≤3-wide max)**; the Slice-D 18×-parallel collapse
+  (117 transient nulls) is the standing counter-example.
 
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
@@ -208,7 +210,14 @@ then audit the fresh `wf_output.json`.
 
 Run the generated harness (default `src\pilot\run_pilot_wf.opt2.js`, or the legacy
 `run_pilot_wf.opt.js`) in the Claude/Max Workflow surface and save the JSON result as
-`wf_output.json`. Both are self-contained: they inline inputs, disable translate-agent tools
+`wf_output.json`.
+**Immediately after saving, verify the file actually landed before closing the Workflow
+tab:** `meta.root` in the freshly-saved `wf_output.json` must equal the root you just ran and
+`meta.generated_at` must be newer than the harness generation time. The H145 `vid` run
+(03-07-2026) was lost exactly here — the Workflow completed but the save never reached disk,
+and the stale file silently still held the previous root. A Claude Code session driving the
+Workflow tool writes the file itself and does not have this manual hand-off gap; prefer that
+route for production windows. Both are self-contained: they inline inputs, disable translate-agent tools
 with `tools: []`, and return top-level workflow provenance (`meta`: root, mode, selected keys,
 rootmap SHA-256, per-input SHA-256). The v2 harness additionally batches, masks, and restores
 `{Tn}` in-JS — its output is already canonical, so the audit step is unchanged. It is the
