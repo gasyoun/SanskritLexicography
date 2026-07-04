@@ -232,16 +232,16 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/audit_window_en.py"
     ],
     "languages": [
-      "ru"
+      "ru",
+      "en"
     ],
-    "verdict": "GAP",
-    "note": "audit_window_en.py reimplements its own gates from scratch rather than importing the RU modules (its own comment: 'the RU gate is wired around Russian-specific semantic checks'), so none of the 3 July fixes reached EN. EN cards from the same PWG/PW/SCH source have the same multi-layer/addenda structure, so the same false-positive classes plausibly apply there too.",
-    "tracking": "spawned task chip task_d29bb788 (2026-07-04): 'Port RU gate fixes to audit_window_en.py' — running",
+    "verdict": "SHARED",
+    "note": "RESOLVED 2026-07-04 (was GAP, task_d29bb788): audited audit_window_en.py against all 3 fixes. (1) multi-layer over-count is N/A -- EN has no analogous raw-marker-vs-card-sense coverage check to carry the bug. (2) the Sanskrit-span leak is already safe -- audit_window_en.py's prose() already scrubs {#..#} spans before residue matching, unlike RU's pre-fix braced_gloss_risks. (3) a REAL EN analogue existed in DE-RESIDUE: 'des' is both a German article and a French partitive article, and gen_fidelity_judge_en.py's own prompt preserves French/Latin literals verbatim -- fixed by extracting LATIN_WORDS/FRENCH_WORDS into a new shared src/pilot/foreign_literal_guards.py imported by both prompt_rule_audit.py and audit_window_en.py, with a French-context guard on the ambiguous 'des' hit. Pinned by test_en_de_residue_french_guard in window_selftest.py.",
+    "tracking": "",
     "verified_sha256": {
-      "src/audit_coverage.py": "8c54aa22943140624238273b5bb6a2cbe9aceded5f8295cb84cd36bd994904c0",
-      "src/pilot/prompt_rule_audit.py": "ae9fc97ba288e2dbd0aac38f03f7dd8df230b29782c94ca41bad23f673e165fa",
+      "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
       "src/pilot/audit_window.py": "91019c993e877311cdd90812c286a50d1b2094eb8a9473bb4b4ff9b11f032f88",
-      "src/pilot/audit_window_en.py": "f6e6519d06a664f1c1f6c6f1e0564415d35b1f2a089be269c5e8dd3b77d73056"
+      "src/pilot/audit_window_en.py": "068a6c410076ede4235afa3a280199028d0f6a2e399df6cde95b000a56513c19"
     }
   },
   {
@@ -334,12 +334,17 @@ the file. Run `python src/pilot/window_selftest.py` to confirm the gate
 passes.
 
 **Case B — you found a fix that landed on one language and not the other.**
-(Real example, `gate_fixes_20260703_ru_only` above.) You don't fix the gap in
-the same session unless it's trivial — classify **GAP**, write `note`
-explaining the asymmetry (what's different about the two paths that let this
-happen), and `tracking` MUST point somewhere real: a spawned task id, an
-`H###` handoff, or a GTD row. `lang_parity_check.py` will refuse an empty
-`tracking` field — this is the mechanism, not a suggestion.
+You don't fix the gap in the same session unless it's trivial — classify
+**GAP**, write `note` explaining the asymmetry (what's different about the
+two paths that let this happen), and `tracking` MUST point somewhere real: a
+spawned task id, an `H###` handoff, or a GTD row. `lang_parity_check.py` will
+refuse an empty `tracking` field — this is the mechanism, not a suggestion.
+(`gate_fixes_20260703_ru_only` was this case originally, GAP + `tracking:
+task_d29bb788`; that task closed the gap the same day by porting the one
+sub-fix that actually applied to EN into a shared helper, so the entry was
+re-verdicted to **SHARED** and `tracking` cleared — see its current `note`
+for the worked resolution, including the two sub-fixes that turned out to be
+non-issues on EN and shouldn't be "ported" at all.)
 
 **Case C — you touched a file a ledger entry already tracks, for an
 unrelated reason.** `window_selftest.py` will fail with a drift message
