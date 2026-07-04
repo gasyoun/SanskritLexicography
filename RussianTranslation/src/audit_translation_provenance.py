@@ -14,6 +14,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+import pipeline_version
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 UNRESOLVED_FIELD = 'model_version_unresolved'
@@ -40,12 +42,32 @@ def audit(path):
     stats = collections.Counter()
     by_model = collections.Counter()
     by_wf = collections.Counter()
+    by_pipeline = collections.Counter()
     missing_examples = []
     unresolved_examples = []
+    stale_examples = []
     rows = []
+    try:
+        manifest = pipeline_version.load_manifest()
+    except (OSError, ValueError):
+        manifest = None
     for lineno, row in iter_rows(path):
         stats['rows'] += 1
         prov = row.get('provenance') or {}
+        pipeline = prov.get('pipeline') or {}
+        if pipeline:
+            stats['pipeline_versioned_rows'] += 1
+            by_pipeline[(pipeline.get('prompt_version'), pipeline.get('glossary_version'),
+                         pipeline.get('script_version'))] += 1
+        else:
+            stats['pipeline_missing_rows'] += 1
+        if manifest is not None:
+            reasons = pipeline_version.stale_reasons(pipeline, manifest)
+            if reasons:
+                stats['pipeline_stale_rows'] += 1
+                if len(stale_examples) < 5:
+                    stale_examples.append((lineno, row.get('key1'), row.get('ord'),
+                                           '; '.join(reasons)))
         en_prov = row.get('en_provenance') or {}
         model_key = (prov.get('model'), prov.get('model_version'))
         by_model[model_key] += 1
@@ -79,8 +101,10 @@ def audit(path):
         'stats': stats,
         'by_model': by_model,
         'by_wf': by_wf,
+        'by_pipeline': by_pipeline,
         'missing_examples': missing_examples,
         'unresolved_examples': unresolved_examples,
+        'stale_examples': stale_examples,
         'rows': rows,
     }
 
@@ -121,6 +145,18 @@ def print_report(result):
     print('partial-card rows                  : %d' % stats['partial_card_rows'])
     print('EN provenance rows                 : %d' % stats['en_provenance_rows'])
     print('EN rows with exact model_version   : %d' % stats['en_versioned_rows'])
+    print('rows with pipeline version stamp   : %d' % stats['pipeline_versioned_rows'])
+    print('rows missing pipeline version      : %d' % stats['pipeline_missing_rows'])
+    print('rows STALE (below min_valid → re-run): %d' % stats['pipeline_stale_rows'])
+    print()
+    print('Top pipeline version groups (prompt/glossary/script):')
+    for (pv, gv, sv), n in result['by_pipeline'].most_common(12):
+        print('  %6d  prompt=%s glossary=%s script=%s' % (n, pv, gv, sv))
+    if result['stale_examples']:
+        print()
+        print('First stale (re-run) examples:')
+        for ex in result['stale_examples']:
+            print('  line=%s key1=%s ord=%s  %s' % ex)
     print()
     print('Top RU model/version groups:')
     for (model, version), n in result['by_model'].most_common(12):

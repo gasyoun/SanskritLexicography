@@ -36,6 +36,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+import pipeline_version
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -118,6 +120,9 @@ def provenance(entry, subkey, model_version):
         'generated_at': meta.get('generated_at'),
         'wf_file': entry['wf_file'],
         'promoted_by': 'promote_final_cards.py',
+        # semver of OUR tooling at promotion time — orthogonal to model_version;
+        # lets a later bugfix flag which rows need re-translation (see pipeline_version.py).
+        'pipeline': pipeline_version.stamp(model_version=model_version),
     }
     # A partial card is USABLE but INCOMPLETE — record that on every row it yields, or a
     # store consumer cannot distinguish it from a complete card (audit_coverage only flags

@@ -27,6 +27,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pwg_mask
 import corpus_gate as cg
 import assemble
+import pipeline_version
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -68,9 +69,13 @@ def _pwg_commit():
 
 
 def provenance(run_id, translate_model=None):
+    # pipeline = semver of OUR tooling (prompt/glossary/script), orthogonal to the
+    # model version — lets a later bugfix flag which rows need re-translation.
     return {'schema_version': SCHEMA_VERSION,
             'translate_model': translate_model or TRANSLATE_MODEL,
             'judge_model': JUDGE_MODEL,
+            'model_version': translate_model or TRANSLATE_MODEL,
+            'pipeline': pipeline_version.stamp(model_version=translate_model or TRANSLATE_MODEL),
             'prompt_set_sha': _prompt_set_sha(),
             'pwg_src_commit': _pwg_commit(),
             'run_id': run_id,
@@ -165,6 +170,10 @@ def cmd_collect(args):
         rec_in = json.loads(l)            # single parse per line (was parsed twice)
         batch[rec_in['i']] = rec_in
     prov = provenance(os.path.splitext(os.path.basename(wf))[0], model)
+    for d in pipeline_version.check():
+        print('  WARNING pipeline drift: %s files changed but version still v%s '
+              '(recorded %s → now %s) — bump pipeline_versions.json + freeze'
+              % (d['component'], d['version'], d['recorded_sha'], d['current_sha']))
     appended = ok = bad = mism = needs = 0
     out_lines = []
     for i, card in batch.items():
@@ -204,8 +213,11 @@ def cmd_collect(args):
         out.write(''.join(out_lines))
     print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d, needs_review %d)'
           % (appended, os.path.basename(STORE), ok, bad, mism, needs))
+    pl = prov['pipeline']
     print('  provenance: %s @ %s (pwg %s, prompts %s)'
           % (prov['translate_model'], prov['generated_at'], prov['pwg_src_commit'], prov['prompt_set_sha']))
+    print('  pipeline: prompt v%s · glossary v%s · script v%s'
+          % (pl['prompt_version'], pl['glossary_version'], pl['script_version']))
 
 
 def cmd_status(args):

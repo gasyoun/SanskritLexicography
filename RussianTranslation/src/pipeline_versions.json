@@ -1,0 +1,39 @@
+{
+  "schema": "pwg_ru.pipeline_versions.v1",
+  "doc": "Semver of the SOFTWARE that produces a translation, orthogonal to the Claude model version (provenance.model_version) and to the project CHANGELOG release. Bump by re-run impact: MAJOR = rows below MUST be re-translated; MINOR = re-run recommended; PATCH = no re-run needed. After a bump, run `python pipeline_version.py freeze` to record the new content SHA. `min_valid` is the re-run threshold: any stamped version < min_valid is stale.",
+  "components": {
+    "prompt": {
+      "version": "1.0.0",
+      "min_valid": "1.0.0",
+      "sha": "eb081209a5ea01a2",
+      "files": [
+        "pwg_ru_prompts/*.txt",
+        "pwg_ru_prompts/*.md"
+      ],
+      "note": "translate / judge / corpus-check prompt set"
+    },
+    "glossary": {
+      "version": "1.0.0",
+      "min_valid": "1.0.0",
+      "sha": "ca1c632639627174",
+      "files": [
+        "glossaries/*.tsv",
+        "glossaries/*.md"
+      ],
+      "note": "domain vocab (kavya/bauddha/jaina/vedic/epigraphic) + de-ru translation aids"
+    },
+    "script": {
+      "version": "1.0.0",
+      "min_valid": "1.0.0",
+      "sha": "0ac4d57a230ec6f2",
+      "files": [
+        "src/run_batch.py",
+        "src/pwg_mask.py",
+        "src/corpus_gate.py",
+        "src/assemble.py",
+        "src/promote_final_cards.py"
+      ],
+      "note": "deterministic mask / harvest / restore / corpus-gate + card promotion"
+    }
+  }
+}
