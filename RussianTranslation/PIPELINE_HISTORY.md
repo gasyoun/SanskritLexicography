@@ -172,6 +172,44 @@ cause: an undersized (non-splittable) card shares a batch with denser
 content, the batch blows its retry cap, and the small card has zero
 recovery mechanism of its own — flagged as a follow-up, not yet fixed.
 
+5. **Fragment-tag collision (SENSE-DUPE false positive) on giant single-sense
+   heads.** `vid`'s homonym head `h0`'s giant single-sense part
+   (`h0_00_pwg00`, source sense "1", 168 `<ls>` citations) is tier-2
+   citation-split by `autosplit_requeue.plan()` into many fragments, ALL
+   belonging to the same source sense (`sense_ord`/`si` == 0) — but
+   `gen_opt_harness2.py`'s `FRAGS[k]` builder discarded that `sense_ord`
+   (bound to `_si` and thrown away), so the JS `selfHeal()` heal path had no
+   way to tell "these fragments are citation batches of ONE sense" from
+   "these are genuinely different senses." Translating each fragment
+   independently, the model fabricated fresh incrementing tags per fragment
+   (2, 3, 4...) that then collided with a sibling rootmap part's REAL
+   different senses in `audit_sense_dupes.py`'s cross-part duplicate check —
+   a deterministic tagging artifact (reproduced identically across 2
+   independent live requeue rounds), not model stochasticity. Fixed by
+   threading `sense_ord` into `FRAGS` as `si` and normalizing every
+   fragment's tag to its group's first-seen tag per `si` in JS `selfHeal()`
+   (`siTag`/`applyTag`). Same-session, also hardened the SAME split path
+   against a second, adjacent hypothesis: `_cit_parts()` decided its budget
+   cuts purely on running `<ls>` counts with zero awareness of `{#...#}`
+   Sanskrit-span state — a `<ls>...</ls>` span can never straddle a cut (a
+   new `<ls>` can only open once the previous one closed), but `{#...#}`
+   never contributed to the count at all, so a still-open `{#...#}` block
+   could get torn across a cut forced by a later, unrelated `<ls>` tag. A
+   torn span can no longer be matched by `pwg_mask`'s PAIRED regex, so its
+   Sanskrit content passes through UNMASKED into the model's "translatable"
+   prose — a plausible mechanism for the SAN-LOSS pattern observed on the
+   same giant heads, though NOT empirically reproduced against the actual
+   failing `vid` data (the run's raw fragment files were no longer present
+   in-tree to inspect). Fixed defensively via `_span_open()`: defer the cut
+   until the accumulated fragment text is `<ls>`/`{#..#}` balanced. Both
+   fixes covered by new `window_selftest.py` fixtures
+   (`test_selfheal_fragment_si_threaded_and_tags_normalized`,
+   `test_cit_split_never_tears_open_span`). Same-shape risk: any other
+   already-promoted or future-drained root with a citation-dense
+   single-sense giant head (BU/yuj/as/sTA/i in the H151 queue are candidates)
+   can hit the same tag-collision pattern — worth a SENSE-DUPE re-check on
+   promoted cards once the fix has run.
+
 ## Recurring failure patterns (read this before assuming something new is broken)
 
 These are the failure *shapes* that have recurred across the project — if a

@@ -627,7 +627,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                 print('  selfheal: %s has no fallback (card does not split — <2 fragments)' % k)
                 continue
             fl = []
-            for _si, _pi, t in pl:
+            for si, _pi, t in pl:
                 fsk, fph, _ = pwg_mask.mask(t)
                 if pwg_mask.restore(fsk, fph) != t:
                     fl = []
@@ -637,14 +637,20 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                     break
                 fsha = _tm.frag_address(lang, t)
                 cached = frag_cache.get(fsha)
+                # si (sense_ord from split_plan) travels with the fragment into FRAGS so the
+                # JS heal path can tell "these fragments are all citation-batches of the SAME
+                # source sense" apart from "these are genuinely different senses" — without it,
+                # the model tags each fragment independently and fabricates fresh incrementing
+                # tags for citation continuations that carry no sense-boundary marker of their
+                # own (see PIPELINE_HISTORY.md fragment-tag-collision entry).
                 fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
-                           'ph': fph, 'fsha': fsha,
+                           'ph': fph, 'fsha': fsha, 'si': si,
                            'tm': cached.get('senses') if cached else None})
             if not fl:
                 continue
             groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
-                          'fsha': it['fsha']} for it in g] for g in groups]
+                          'fsha': it['fsha'], 'si': it['si']} for it in g] for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
             # FRAG_TM[k]: same group shape, each slot = cached restored senses or null.
             # Only emitted when this card has at least one cached fragment (keeps the JS lean
@@ -918,6 +924,18 @@ async function selfHeal(k) {
   const fragProv = []           // {fsha, senses} per FRESHLY-resolved fragment — harvested by
                                 // translation_memory.py build-frags into the fragment TM so the
                                 // next run reuses it (ground truth captured at the moment of success)
+  // siTag: canonical tag per source sense_ord (FRAGS[k][gi][i].si), fixed to whatever tag the
+  // FIRST fragment of that sense_ord reports. Citation-batch continuations of the same oversized
+  // sense carry no sense-boundary marker of their own, so the model tags them independently and
+  // fabricates fresh incrementing numbers (1,2,3...) that then collide with a sibling rootmap
+  // part's REAL different senses in audit_sense_dupes.py's cross-part check. Forcing every
+  // fragment sharing a sense_ord onto the same tag is the fix (see PIPELINE_HISTORY.md).
+  const siTag = {}
+  const applyTag = (si, s) => {
+    if (si === undefined || si === null) return
+    if (siTag[si] === undefined) siTag[si] = s.tag
+    else s.tag = siTag[si]
+  }
   for (let gi = 0; gi < groups.length; gi++) {
     const grp = groups[gi]
     const gph = (PHF[k] || [])[gi] || []
@@ -941,8 +959,10 @@ async function selfHeal(k) {
     for (let i = 0; i < grp.length; i++) {
       if (gtm[i]) {
         // cached senses are ALREADY restored to source markup (validated at their harvest run);
-        // slot them in at their document position — do NOT re-restore (no {Tn} remain).
-        for (const s of gtm[i]) senses.push(s)
+        // slot them in at their document position — do NOT re-restore (no {Tn} remain). Tag
+        // normalization still applies: an older cache entry harvested before this fix may carry
+        // a fabricated tag.
+        for (const s of gtm[i]) { applyTag(grp[i].si, s); senses.push(s) }
         continue
       }
       const card = r.resolved[i]
@@ -952,6 +972,7 @@ async function selfHeal(k) {
       for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
         if (s.german !== undefined) s.german = restore(s.german, ph)
         if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+        applyTag(grp[i].si, s)
         senses.push(s); fsenses.push(s)
       }
       if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses })
