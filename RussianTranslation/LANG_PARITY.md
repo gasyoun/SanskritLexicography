@@ -80,7 +80,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -98,8 +98,27 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 (2026-07-04): tyaj~~h0_zz_pw (a PW addenda card compressing a whole root article — base verb + Caus/Desid + every prefix combo) packs 35 senses into 11 <ls>, so 1+<ls>=12 ranked it as trivial while its real output surface was the heaviest of the root; it deterministically blew the whole-card StructuredOutput retry cap and stalled ~7 min retrying the identical call. The frag-count trigger is computed from split_plan() length (lang-agnostic; no RU/EN branching) and applies whenever SELFHEAL is on, independent of the citation trigger and of byte/citation batching mode — so it protects both language paths identically. Validated live: the [sam, zz_pw] pair that stalled now returns ok:2/null:0 with zz_pw healed complete via 4 fragment groups.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488",
-      "src/pilot/window_selftest.py": "3a5702ee855139c23455c5eda758f6bdd26835d39afdab08ed0a06a2c50c44d3"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79",
+      "src/pilot/window_selftest.py": "7a993dfed5506b6e6e18b788ea1430ad4d6f22fc20e49bee41fc1a18823f3a6f"
+    }
+  },
+  {
+    "id": "wall_clock_kill_gate",
+    "mechanism": "Every schema-bearing agent() call is raced against a setTimeout budget scaled to its skeleton-byte output volume (KILL_FACTOR x (BASE + SLOPE x skelBytes)); a call that overruns is abandoned (KillTimeout) and its cards routed to the fragment lane, instead of waiting out the full StructuredOutput retry cap",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H155 follow-up (2026-07-04): the runtime BACKSTOP for whole-card StructuredOutput stalls whose driver isn't yet a structural presplit trigger (gloss volume, masked-token count, multi-layer nesting, novel shapes). Entirely lang-agnostic — the budget keys on masked-skeleton bytes (INPUTS[k].skeleton.length) and setTimeout, no RU/EN branching; both paths get the same gate. Budget calibrated from a tyaj --no-tm timing benchmark (skeleton bytes are the best single time predictor since output ~= 2x skeleton). setTimeout is a relative timer (Date.now() is banned); AbortController is unavailable so a killed call keeps running in the background until its own cap, but the harness stops blocking. Default ON; --no-kill / --kill-factor=N tune it. See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79",
+      "src/pilot/window_selftest.py": "7a993dfed5506b6e6e18b788ea1430ad4d6f22fc20e49bee41fc1a18823f3a6f"
     }
   },
   {
@@ -116,7 +135,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -133,7 +152,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -167,7 +186,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -184,7 +203,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -200,7 +219,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The bare 'sonnet' alias resolved to Sonnet 4.6 (not 5.0) on a prior EN run — pinned explicitly there after that surprise. RU's alias was never observed to misresolve, so it was left alone rather than touching a stable production path for a problem it doesn't have. Re-evaluate if RU is ever caught on a stale alias too.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79"
     }
   },
   {
@@ -276,8 +295,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488",
-      "src/pilot/window_selftest.py": "3a5702ee855139c23455c5eda758f6bdd26835d39afdab08ed0a06a2c50c44d3"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79",
+      "src/pilot/window_selftest.py": "7a993dfed5506b6e6e18b788ea1430ad4d6f22fc20e49bee41fc1a18823f3a6f"
     }
   },
   {
@@ -295,8 +314,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2c0c6789f7b77b5dcf6964161ffcbef0c4c28a1ac55f79bef9f986dae9935488",
-      "src/pilot/window_selftest.py": "3a5702ee855139c23455c5eda758f6bdd26835d39afdab08ed0a06a2c50c44d3"
+      "src/pilot/gen_opt_harness2.py": "e99e56426c8c071c6ae68c2b13c0ac95e93d31038c8f8acfd0b350998be26c79",
+      "src/pilot/window_selftest.py": "7a993dfed5506b6e6e18b788ea1430ad4d6f22fc20e49bee41fc1a18823f3a6f"
     }
   }
 ]
