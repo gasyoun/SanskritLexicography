@@ -3,6 +3,16 @@
 Grounded from the FU1 PWG→English run on **Sonnet 5 (`claude-sonnet-5`)** and repo counts.
 Primary deliverable is **PWG→Russian**; English is a test harness (see §Sequencing).
 
+> **04-07-2026 correction for the hard 30-day SLA.** The throughput math below still
+> makes a full PWG→RU pass plausible under continuous operation, but it is not a
+> license to widen live LLM/Workflow concurrency. The locked production ceiling is
+> **≤3 concurrent translation lanes**; wider parallelism is allowed only for
+> deterministic prep/audit/rootmap/validation work. The live H151 worklist also
+> exposed a current blocker: many remaining verb roots were visible in the backlog
+> but not runnable because rootmaps were missing. The SLA plan therefore treats
+> rootmap generation and non-root/noun bulk coverage as separate workstreams:
+> [`FULL_PWG_RU_30_DAY_SLA_PLAN.md`](../../FULL_PWG_RU_30_DAY_SLA_PLAN.md).
+
 ## Measured throughput (FU1 EN run — same harness/economics as RU)
 
 Audit tool: `python src/pilot/parse_workflow_cost.py <workflow_transcript_dir>...` (computed
@@ -19,8 +29,10 @@ on demand from transcripts; no persistent cost file). Over the 76 FU1 workflows:
 | Wall-clock throughput @ **≤3-wide** | ~**800–1,000 cards/hour** |
 
 The $0.082 reflects one-time discovery waste (finding+fixing the StructuredOutput cap). A clean
-production run lands near **$0.03–0.05/card**. Throughput scales ~linearly with concurrency
-(10-wide ≈ 2,500–3,000/hr), bounded by Max weekly caps and the ≤3-wide collapse-avoidance doctrine.
+production run lands near **$0.03–0.05/card**. Do **not** extrapolate this into a live
+10-wide Workflow run: Slice-D already proved that wide LLM fan-out collapses. Use the
+≤3-wide measured lane as the production ceiling; use wider parallelism only for deterministic
+preparation and validation.
 
 ## Scope (grounded, not estimated)
 
