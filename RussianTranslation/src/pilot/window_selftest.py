@@ -1571,6 +1571,99 @@ def test_no_fallback_batch_isolation():
         fail('fallback key must still be owed by some batch')
 
 
+def test_cit_split_never_tears_open_span():
+    """SAN-LOSS hypothesis (2026-07-04 vid drain): autosplit_requeue._cit_parts split a
+    (sub)sense purely on running <ls> counts per line, with NO awareness of {#...#} span
+    state. A well-formed <ls>...</ls> span can never straddle a cut (a NEW <ls> can only
+    open once the PREVIOUS one has closed, and the algorithm never lets the running count
+    exceed budget), but a {#...#} span never contributes to that count at all — so a
+    {#...#} block that is still open when a LATER, unrelated <ls> tag pushes the running
+    <ls> count over budget got torn across the cut. A torn {#...#} span can no longer be
+    matched by pwg_mask's PAIRED regex (needs a complete open+close pair), so its Sanskrit
+    content passed through UNMASKED as ordinary translatable prose — the model then
+    paraphrases or drops it, producing SAN-LOSS on exactly the citation-dense giant heads
+    that need tier-2 splitting. Fixed via _span_open(): defer the cut until the accumulated
+    fragment text is <ls>/{#..#} balanced. This constructs the vulnerable shape (a
+    {#...#} span straddling what would otherwise be the cut point) and asserts every
+    returned fragment is internally balanced."""
+    from autosplit_requeue import plan as split_plan
+    raw = (
+        '<ls n="1">a</ls>\n'
+        '{#Sanskrit quote start\n'
+        '<ls n="2">b</ls>\n'
+        'quote end#}\n'
+        '<ls n="3">c</ls>\n'
+    )
+    parts = split_plan(raw, ls_budget=1)
+    if len(parts) < 2:
+        fail('fixture did not force a split — adjust ls_budget/fixture')
+    for _si, _pi, text in parts:
+        if text.count('<ls') != text.count('</ls>'):
+            fail('a returned fragment has an unbalanced <ls>/</ls> pair — span torn across '
+                 'a cut: %r' % text)
+        if text.count('{#') != text.count('#}'):
+            fail('a returned fragment has an unbalanced {#/#} pair — Sanskrit span torn '
+                 'across a cut: %r' % text)
+
+
+def test_selfheal_fragment_si_threaded_and_tags_normalized():
+    """Regression for the 2026-07-04 vid drain SENSE-DUPE false-positive: root vid's
+    homonym head h0's giant single-sense part (h0_00_pwg00, source sense '1', 168 <ls>
+    citations) was tier-2 split into many citation-batch fragments, all belonging to the
+    SAME source sense — but FRAGS[k] (the fragment fallback fed to the JS selfHeal path)
+    discarded split_plan()'s sense_ord (previously bound to `_si` and thrown away), so the
+    JS heal path had no way to know the fragments shared a parent sense. Translating each
+    fragment independently, the model fabricated fresh incrementing tags per fragment
+    (2,3,4...) that then collided with a sibling rootmap part's REAL different senses in
+    audit_sense_dupes.py's cross-part duplicate check — a deterministic tagging artifact,
+    not model stochasticity (reproduced identically across 2 independent live requeue
+    rounds). Fixed by threading sense_ord into FRAGS as 'si' (Python side, gen_opt_harness2)
+    and normalizing every fragment's tag to its group's first-seen tag per si in JS
+    selfHeal() (siTag/applyTag — verified by code inspection; window_selftest has no JS
+    runtime). This test exercises the Python-side wiring: a citation-dense single-sense
+    fixture card must produce >=2 FRAGS fragments that ALL carry the same si."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    from window_common import input_paths
+    from autosplit_requeue import plan as split_plan
+    key = '_selftest_giant~~h0_00_pwgtest'
+    lines = ['Uebersicht der Citate zu diesem einzigen Sinn dieses Testkopfes.']
+    for i in range(25):
+        lines.append('Wort%d <ls n="RV.%d.1">citation text %d</ls> und mehr erlaeuternder Text.'
+                     % (i, i, i))
+    raw = '\n'.join(lines)
+    rp, pp = input_paths(key)
+    if os.path.exists(rp) or os.path.exists(pp):
+        fail('selftest fixture key collides with a real input file — pick a different key')
+    os.makedirs(os.path.dirname(rp), exist_ok=True)
+    try:
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('{}')
+        pl = split_plan(raw)
+        if len(pl) < 2:
+            fail('fixture did not produce a multi-fragment plan — adjust the fixture')
+        if len({si for si, _pi, _t in pl}) != 1:
+            fail('fixture should be ONE giant sense split into citation batches (all si==0)')
+        js, _batches = gh.build('_selftest_giant', [key], None, 100000, tm_path=None)
+        frags = json.loads(_re.search(r'^const FRAGS = (.*)$', js, _re.M).group(1))
+        if key not in frags:
+            fail('selfheal fallback was not computed for the fixture card')
+        sis = [frag.get('si') for grp in frags[key] for frag in grp]
+        if len(sis) < 2:
+            fail('fixture did not thread into >=2 FRAGS fragments')
+        if any(si is None for si in sis):
+            fail('FRAGS fragments are missing the si (sense_ord) field — the '
+                 'fragment-tag-collision fix regressed')
+        if len(set(sis)) != 1:
+            fail('all fragments of one giant sense must share the SAME si, got %r' % sis)
+    finally:
+        for p in (rp, pp):
+            if os.path.exists(p):
+                os.remove(p)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -1587,6 +1680,8 @@ def main():
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
+        test_cit_split_never_tears_open_span,
+        test_selfheal_fragment_si_threaded_and_tags_normalized,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,

@@ -80,13 +80,27 @@ def _blocks(raw):
     return header, blocks
 
 
+def _span_open(text):
+    """True if `text` ends with an unterminated <ls>...</ls> or {#...#} span (a paired
+    span opened but not yet closed). Citation/Sanskrit spans can legitimately run across
+    several lines; cutting a fragment in the middle of one leaves BOTH halves holding an
+    unbalanced tag that pwg_mask.mask() can no longer match (its PAIRED regex requires a
+    complete open+close pair even with re.S), so the Sanskrit/citation text passes through
+    UNMASKED as ordinary translatable prose — the model then paraphrases or drops it,
+    producing LS-LOSS/SAN-LOSS specifically on the giant citation-dense heads that need
+    tier-2 splitting (see PIPELINE_HISTORY.md)."""
+    return text.count('<ls') > text.count('</ls>') or text.count('{#') > text.count('#}')
+
+
 def _cit_parts(block, ls_budget):
-    """Split one (sub)sense block into parts each <= ls_budget <ls>, on line boundaries."""
+    """Split one (sub)sense block into parts each <= ls_budget <ls>, on line boundaries —
+    but never inside an open <ls>/{#...#} span (see _span_open); the budget cut is deferred
+    to the next line where the accumulated text is tag-balanced."""
     lines = block.split('\n')
     parts, cur, c = [], [], 0
     for l in lines:
         n = l.count('<ls')
-        if cur and c + n > ls_budget:
+        if cur and c + n > ls_budget and not _span_open('\n'.join(cur)):
             parts.append('\n'.join(cur)); cur, c = [], 0
         cur.append(l); c += n
     if cur:
