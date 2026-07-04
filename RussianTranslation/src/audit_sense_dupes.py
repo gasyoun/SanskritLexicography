@@ -151,10 +151,16 @@ def main():
              and not is_dupe_exempt(k[0], k[1], v, exempt)}
     if not dupes:
         print('SENSE-DUPE GATE: PASS — no numbered sense rendered by >1 head-part per homonym')
+        print('FLAGGED_JSON: []')
         return 0
     print('SENSE-DUPE GATE: FAIL — %d duplicated sense(s):' % len(dupes))
     for (hom, t), keys in sorted(dupes.items()):
         print('  %s sense "%s" rendered by: %s' % (hom, t, ', '.join(sorted(keys))))
+    # Machine-readable verdict line — the parent audit_window.py parses THIS strictly rather
+    # than scraping the "rendered by:" prose above, so a future wording tweak here can never
+    # silently drop flagged cards from the requeue (H169 defect 2).
+    flagged = sorted({k for keys in dupes.values() for k in keys})
+    print('FLAGGED_JSON: %s' % json.dumps(flagged))
     return 1
 
 

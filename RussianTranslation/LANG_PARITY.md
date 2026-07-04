@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
     }
   },
   {
@@ -258,10 +258,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED 2026-07-04 (was GAP, task_d29bb788): audited audit_window_en.py against all 3 fixes. (1) multi-layer over-count is N/A -- EN has no analogous raw-marker-vs-card-sense coverage check to carry the bug. (2) the Sanskrit-span leak is already safe -- audit_window_en.py's prose() already scrubs {#..#} spans before residue matching, unlike RU's pre-fix braced_gloss_risks. (3) a REAL EN analogue existed in DE-RESIDUE: 'des' is both a German article and a French partitive article, and gen_fidelity_judge_en.py's own prompt preserves French/Latin literals verbatim -- fixed by extracting LATIN_WORDS/FRENCH_WORDS into a new shared src/pilot/foreign_literal_guards.py imported by both prompt_rule_audit.py and audit_window_en.py, with a French-context guard on the ambiguous 'des' hit. Pinned by test_en_de_residue_french_guard in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/audit_coverage.py": "8c54aa22943140624238273b5bb6a2cbe9aceded5f8295cb84cd36bd994904c0",
+      "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
-      "src/pilot/audit_window.py": "91019c993e877311cdd90812c286a50d1b2094eb8a9473bb4b4ff9b11f032f88",
-      "src/pilot/audit_window_en.py": "068a6c410076ede4235afa3a280199028d0f6a2e399df6cde95b000a56513c19"
+      "src/pilot/audit_window.py": "dd2d71c2b67546b4cd89cd92d3487242c1eaa5d5b9130f997143216fcef450d2",
+      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
   {
@@ -296,7 +296,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "9356c53c5f4a64e9e5ec264dd2c34ca43a7af2c40e912147d2815d81f10c5ca0",
+      "src/promote_final_cards.py": "57bf1030c3dd9ca46ea06f13d8225ea16ef3160e57462e2babc5c856f1906da8",
       "src/promote_en.py": "96e1928ad4ceae44aa7a9984d3f5b6cb7bb2f1877923fd3adbc46cab56bac022"
     }
   },
@@ -316,7 +316,44 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+    }
+  },
+  {
+    "id": "en_dup_hard_gate_20260704",
+    "mechanism": "audit_window_en.py's DUP check (two senses in one record share identical english) is promoted from a soft, >=3-content-word-gated SAME-GLOSS signal to a real HARD gate that fires regardless of gloss length, matching the docstring's advertised --strict failure set",
+    "files": [
+      "src/pilot/audit_window_en.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H169 (2026-07-04 review, 'broken validators'): the advertised HARD DUP gate was never emitted -- the only within-record duplicate signal was soft SAME-GLOSS, gated on >=3 content words, so a short duplicate ('to go'/'to go') produced zero flags and --strict passed. Classified GAP-being-closed rather than INTENTIONAL-DIVERGENCE: RU's within-record duplicate protection is the cross-part audit_sense_dupes.py gate (already SHARED, see gate_fixes_20260703_ru_only/PR #135) plus the soft, all-senses-only identical_russian_glosses risk in prompt_rule_audit.py (MEDIUM, not high-confidence) -- neither is a pairwise HARD gate. EN now closes that with a real HARD pairwise DUP check; RU getting an equivalent pairwise HARD gate (rather than its current all-or-nothing soft signal) is left as a natural follow-up, not blocking this fix. Pinned by test_en_gate_dup_has_teeth in window_selftest.py.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
+    }
+  },
+  {
+    "id": "pipeline_version_stamp_en_gap",
+    "mechanism": "promote_final_cards.py (RU) stamps provenance.pipeline (semver of the promotion tooling, orthogonal to the Claude model version) on every promoted row via pipeline_version.stamp(); promote_en.py (EN) was not updated in the same PR and has no equivalent stamp",
+    "files": [
+      "src/promote_final_cards.py",
+      "src/promote_en.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "GAP",
+    "note": "Found incidentally while re-affirming parity for H169 (unrelated QA-gate-teeth fix). PR #140 (feat(provenance): pipeline versioning, 2026-07-04) added pipeline_version stamping only to promote_final_cards.py; promote_en.py has no `import pipeline_version` and no `provenance.pipeline` field, so a future tooling bugfix cannot tell which promoted EN rows predate it the way it can for RU rows.",
+    "tracking": "Uprava/GTD_NEXT_ACTIONS.md @DO — port pipeline_version stamping to promote_en.py",
+    "verified_sha256": {
+      "src/promote_final_cards.py": "57bf1030c3dd9ca46ea06f13d8225ea16ef3160e57462e2babc5c856f1906da8",
+      "src/promote_en.py": "96e1928ad4ceae44aa7a9984d3f5b6cb7bb2f1877923fd3adbc46cab56bac022"
     }
   },
   {
@@ -335,7 +372,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
-      "src/pilot/window_selftest.py": "54bd75e23fb1311076889a1e65ebf43a67b8686f06b5db247f45c51512e919f6"
+      "src/pilot/window_selftest.py": "db2b80ebe49a658bb6ae4ef8b14e7f7c78e725b2fd6e90bd3e43e83384385efb"
     }
   }
 ]

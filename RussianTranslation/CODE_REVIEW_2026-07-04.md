@@ -23,6 +23,14 @@ prioritized backlog below, to be worked before/alongside the next scale run.
 | F3 | [run_batch.py:152](src/run_batch.py) | `cmd_collect` called `.get()` on a possibly-JSON-string `result`, crashing and stranding the run's generation output (the "run lost / re-driven" class); sibling loaders all handle the string case. | Normalise `result` (str→`json.loads`, non-dict→raw); also single-parse the batch file and coalesce per-row appends into one write to shrink the torn-last-line window. |
 | F4 | [pwg_mask.py:98](src/pwg_mask.py) | `classify_pct` looked for the Latin cue (`<ab>lat.</ab>`) in the already-masked body, so it saw `{Tn}` not `lat.` → **33 Latin/Greek cognate glosses across PWG** (e.g. `ignis`, `uncus`, `ansa`) were leaked into the translator prompt as German. | Expand trailing `{Tn}` placeholders + strip tags in the classify context. Round-trip stays lossless. Pinned by `window_selftest.test_pwg_mask_latin_cue_behind_ab_tag`; SHARED parity entry `latin_cue_masking`. |
 
+**Fixed in H169** (branch `fix/qa-gate-teeth`): the two 🟠 QA-gate-teeth
+defects below (real `DUP` hard flag + RU-gate verdict-parse guard).
+
+| # | File | Defect | Fix |
+|---|---|---|---|
+| F5 | [audit_window_en.py:252](src/pilot/audit_window_en.py) | Advertised HARD `DUP` gate never emitted — two senses with identical english passed `--strict`; the only signal was soft SAME-GLOSS, gated on `>=3` content words. | Emit a real `DUP` hard flag on any identical-english pair within a record, independent of word count; added to `HARD`. Pinned by `window_selftest.test_en_gate_dup_has_teeth`; SHARED parity entry `en_dup_hard_gate_20260704`. |
+| F6 | [audit_window.py:71](src/pilot/audit_window.py) | RU gate recovered child-auditor verdicts by regex-scraping prose stdout (`\| flagged: ...`) — any wording drift in `audit_translation.py` / `audit_coverage.py` / `audit_sense_dupes.py` silently returned `[]`, dropping flagged cards from the requeue with the gate reporting clean. | Child auditors now also emit a strict machine-readable `FLAGGED_JSON: [...]` line; the parent parses it strictly and treats a missing/malformed line as unparseable — requeueing every card in the window and marking the gate crashed rather than silently passing. Dead `parse_nws` removed. Pinned by `window_selftest.test_ru_gate_fails_loud_on_unparseable_child`. |
+
 ---
 
 ## 🔴 Backlog — correctness (wrong output under a headword)
@@ -32,8 +40,6 @@ prioritized backlog below, to be worked before/alongside the next scale run.
 
 ## 🟠 Backlog — broken validators (green light on defective output)
 
-- **Advertised HARD `DUP` gate never emitted** — [audit_window_en.py:252](src/pilot/audit_window_en.py). Two senses with identical English pass `--strict`. *Fix: emit a real `DUP` hard flag, or delete the false docstring claim.*
-- **RU gate recovers verdicts by regex-scraping subprocess stdout** — [audit_window.py:71](src/pilot/audit_window.py). Any wording drift in the child auditors → `[]` → flagged cards silently omitted from requeue, gate reports clean; the child returncode is not consulted. *Fix: assert a parseable verdict was emitted / consult returncode.*
 - **`--min-cards` mode skips the count-integrity check** — [validate_assembled_export.py:163](src/validate_assembled_export.py). Bounded runs can't catch dropped/duplicated cards (only a `>=` floor). *Fix: still assert exact count when known.*
 - **`reverse_index --show` entirely dead** — [reverse_index.py:155](src/reverse_index.py). A 4-vs-8 column guard is never true → `_representative` always `(None, None)`. *Fix: index the correct column (`parts[4]`).*
 

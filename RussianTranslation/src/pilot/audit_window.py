@@ -68,39 +68,29 @@ def run_py(args, env=None):
             'seconds': round(time.perf_counter() - t0, 3)}
 
 
-def parse_flagged(stdout):
-    m = re.search(r'\|\s*flagged:\s*(.+)$', stdout, re.M)
+def parse_flagged_json(stdout):
+    """Strict parse of a child auditor's machine-readable verdict line
+    (`FLAGGED_JSON: [...]`, emitted by audit_translation.py / audit_coverage.py /
+    audit_sense_dupes.py). Returns None — never `[]` — when the line is missing or
+    malformed, so the caller can tell "genuinely clean" apart from "unparseable
+    output" instead of silently treating a wording drift as a clean pass (H169
+    defect 2: the old prose-scraping parser returned [] on any drift and dropped
+    flagged cards from the requeue without a trace)."""
+    m = re.search(r'^FLAGGED_JSON:\s*(.+)$', stdout, re.M)
     if not m:
-        return []
-    return [x.strip() for x in m.group(1).split(',') if x.strip()]
+        return None
+    try:
+        parsed = json.loads(m.group(1))
+    except (ValueError, TypeError):
+        return None
+    if not isinstance(parsed, list):
+        return None
+    return sorted(str(x).strip() for x in parsed if str(x).strip())
 
 
-def parse_translation(stdout):
-    return parse_flagged(stdout)
-
-
-def parse_coverage(stdout):
-    return parse_flagged(stdout)
-
-
-def parse_dupes(stdout):
-    keys = set()
-    for line in stdout.splitlines():
-        m = re.search(r'rendered by:\s*(.+)$', line)
-        if m:
-            keys.update(k.strip() for k in m.group(1).split(',') if k.strip())
-    return sorted(keys)
-
-
-def parse_nws(stdout):
-    keys = set()
-    m = re.search(r'GATE: FAIL[^\n]*\n\s*rejected:\s*(.+)', stdout)
-    if m:
-        keys.update(k.strip() for k in m.group(1).split() if k.strip())
-    for line in stdout.splitlines():
-        if 'MISATTRIBUTION' in line:
-            keys.add(line.split()[0])
-    return sorted(keys)
+parse_translation = parse_flagged_json
+parse_coverage = parse_flagged_json
+parse_dupes = parse_flagged_json
 
 
 def exact_file_exists(directory, name):
@@ -378,7 +368,16 @@ def main():
             name, parser = futures[fut]
             res = fut.result()
             if parser:
-                res['requeue'] = parser(res['stdout'])
+                parsed = parser(res['stdout'])
+                if parsed is None:
+                    # Unparseable child verdict (missing/malformed FLAGGED_JSON line): never
+                    # silently treat this as "no flags". Fail loud and requeue every card in
+                    # the window so a wording drift in the child auditor cannot silently drop
+                    # flagged cards (H169 defect 2).
+                    res['requeue'] = sorted(keys)
+                    res['unparseable_verdict'] = True
+                else:
+                    res['requeue'] = parsed
             gates[name] = res
 
     for name in ['nws', 'translation', 'coverage', 'sense_dupes', 'prompt_semantic']:
@@ -432,6 +431,8 @@ def main():
         gate_requeue.update(gate.get('requeue') or [])
         if gate['returncode'] not in (0, 1):
             crashed.append(name)
+        if gate.get('unparseable_verdict'):
+            crashed.append(name + '-unparseable-verdict')
     requeue.update(gate_requeue)
     if glue and glue['returncode'] != 0:
         crashed.append('glue')
