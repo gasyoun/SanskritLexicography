@@ -80,7 +80,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -98,8 +98,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 (2026-07-04): tyaj~~h0_zz_pw (a PW addenda card compressing a whole root article — base verb + Caus/Desid + every prefix combo) packs 35 senses into 11 <ls>, so 1+<ls>=12 ranked it as trivial while its real output surface was the heaviest of the root; it deterministically blew the whole-card StructuredOutput retry cap and stalled ~7 min retrying the identical call. The frag-count trigger is computed from split_plan() length (lang-agnostic; no RU/EN branching) and applies whenever SELFHEAL is on, independent of the citation trigger and of byte/citation batching mode — so it protects both language paths identically. Validated live: the [sam, zz_pw] pair that stalled now returns ok:2/null:0 with zz_pw healed complete via 4 fragment groups.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c",
-      "src/pilot/window_selftest.py": "47185b0c84a6b54d464039d037e1ab5fcc53c852f7dc75957a39626e071faff6"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
+      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
     }
   },
   {
@@ -117,8 +117,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 follow-up (2026-07-04): the runtime BACKSTOP for whole-card StructuredOutput stalls whose driver isn't yet a structural presplit trigger (gloss volume, masked-token count, multi-layer nesting, novel shapes). Entirely lang-agnostic — the budget keys on masked-skeleton bytes (INPUTS[k].skeleton.length) and setTimeout, no RU/EN branching; both paths get the same gate. Budget calibrated from a tyaj --no-tm timing benchmark (skeleton bytes are the best single time predictor since output ~= 2x skeleton). setTimeout is a relative timer (Date.now() is banned); AbortController is unavailable so a killed call keeps running in the background until its own cap, but the harness stops blocking. Default ON; --no-kill / --kill-factor=N tune it. See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c",
-      "src/pilot/window_selftest.py": "47185b0c84a6b54d464039d037e1ab5fcc53c852f7dc75957a39626e071faff6"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
+      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
     }
   },
   {
@@ -135,7 +135,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -152,7 +152,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -169,7 +169,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "41ff5b08afd961e166ee24f38ef00aa307803d6dcc4fd4eb6ca1806a67a4a1a3"
+      "src/pilot/translation_memory.py": "8f3cb2ebd8aa61ed77d2d8f2f65b42a9fe804058cbac250deeea1f04d48afcc0"
     }
   },
   {
@@ -186,7 +186,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -203,7 +203,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -219,7 +219,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The bare 'sonnet' alias resolved to Sonnet 4.6 (not 5.0) on a prior EN run — pinned explicitly there after that surprise. RU's alias was never observed to misresolve, so it was left alone rather than touching a stable production path for a problem it doesn't have. Re-evaluate if RU is ever caught on a stale alias too.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549"
     }
   },
   {
@@ -239,9 +239,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "spawned task chip task_d29bb788 (2026-07-04): 'Port RU gate fixes to audit_window_en.py' — running",
     "verified_sha256": {
       "src/audit_coverage.py": "8c54aa22943140624238273b5bb6a2cbe9aceded5f8295cb84cd36bd994904c0",
-      "src/pilot/prompt_rule_audit.py": "293b580cdf8866c8ae0d892dd77981e34561398e2c0142623aed1127740019b0",
-      "src/pilot/audit_window.py": "2f9e418010d2ed9bc5c49be934eb95d672cae9ad3f01aa4099756dc7cf0e44a1",
-      "src/pilot/audit_window_en.py": "4775368d2da38f0d6aede470d838becb6cc863de4914a785aa855baf45735fd8"
+      "src/pilot/prompt_rule_audit.py": "ae9fc97ba288e2dbd0aac38f03f7dd8df230b29782c94ca41bad23f673e165fa",
+      "src/pilot/audit_window.py": "91019c993e877311cdd90812c286a50d1b2094eb8a9473bb4b4ff9b11f032f88",
+      "src/pilot/audit_window_en.py": "f6e6519d06a664f1c1f6c6f1e0564415d35b1f2a089be269c5e8dd3b77d73056"
     }
   },
   {
@@ -258,7 +258,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 (commit 8cb84f7): the helper is lang-agnostic (takes a root, not a --lang flag; gen_opt_harness2.py resolves lang from the rootmap), so the fix applies to any language's requeue in one place. Was a both-paths gap before the fix, not an RU/EN divergence.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "3dd94b3f20084a3db1b6211e149d7347ba86ffd479424ec2fb88084090ddcf5f"
+      "src/pilot/requeue_from_audit.py": "dae859f31c427f5b0f77e911f33c17fd3223dad2c143e0b1ecc12190ee8cb0a3"
     }
   },
   {
@@ -276,8 +276,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "572bb45477ce4856f6caba7e813e00a146bbeeedf3ae04b471e4616dafaa8935",
-      "src/promote_en.py": "7d3ce9680e304fff8ba0bcaba843945c36c6f0894441a56e8695ec58a6b5ebfe"
+      "src/promote_final_cards.py": "854b86a71ebfa20b06a9c31240b5f4b9ebf3cf3a7fc5fc935c813c4d9ead27b0",
+      "src/promote_en.py": "b2b97ad362fd7020549a778216dd6cfb230342db76a28883b32bdebd4d124bef"
     }
   },
   {
@@ -295,8 +295,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c",
-      "src/pilot/window_selftest.py": "47185b0c84a6b54d464039d037e1ab5fcc53c852f7dc75957a39626e071faff6"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
+      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
     }
   },
   {
@@ -314,8 +314,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "132fb699c64c203e51abc7cc5ddf85d8aa075321dd7ebb7caeb2f5a0ff539e0c",
-      "src/pilot/window_selftest.py": "47185b0c84a6b54d464039d037e1ab5fcc53c852f7dc75957a39626e071faff6"
+      "src/pilot/gen_opt_harness2.py": "a18b05f265ac30880f2ea7507a200091108d8b812236bee29d6211aed9324549",
+      "src/pilot/window_selftest.py": "9fbc2e20074f7711d95e6cd0a9e92114334882b0a844f5d9831b19ddc69461b2"
     }
   }
 ]

@@ -766,6 +766,30 @@ def test_lang_parity_ledger_complete():
              % (len(violations), '\n  '.join(violations)))
 
 
+def test_lang_parity_hash_crlf_independent():
+    """file_sha256() must normalize CRLF->LF so verified_sha256 snapshots match the git-blob
+    content regardless of core.autocrlf on the checkout OS (Windows disk bytes carry CRLF;
+    Linux/CI checkouts and git blobs carry LF) — see LANG_PARITY.md fix, 2026-07-04."""
+    import tempfile
+    import lang_parity_check
+    with tempfile.TemporaryDirectory() as tmp:
+        lf_path = os.path.join(tmp, 'lf.txt')
+        crlf_path = os.path.join(tmp, 'crlf.txt')
+        with open(lf_path, 'wb') as f:
+            f.write(b'line one\nline two\n')
+        with open(crlf_path, 'wb') as f:
+            f.write(b'line one\r\nline two\r\n')
+        old_root = lang_parity_check.REPO_ROOT
+        lang_parity_check.REPO_ROOT = tmp
+        try:
+            lf_hash = lang_parity_check.file_sha256('lf.txt')
+            crlf_hash = lang_parity_check.file_sha256('crlf.txt')
+        finally:
+            lang_parity_check.REPO_ROOT = old_root
+        if lf_hash != crlf_hash:
+            fail('file_sha256 is not CRLF/LF-independent: %s != %s' % (lf_hash, crlf_hash))
+
+
 def test_sense_dupe_batch_override():
     """The cross-part sense-duplicate exemption must be reproducible from the committed
     rootmap_overrides.json, NOT from a gitignored hand-edited rootmap (PROCESS_AUDIT rec 15)."""
@@ -1840,6 +1864,7 @@ def main():
         test_fixture_audit_does_not_clobber_live_status,
         test_release_manifest_hash_validation,
         test_lang_parity_ledger_complete,
+        test_lang_parity_hash_crlf_independent,
     ]
     for test in tests:
         test()
