@@ -1,0 +1,32 @@
+{
+  "schema": "pwg.translation_memory.publication_manifest.v1",
+  "lang": "ru",
+  "built_at": "2026-07-04T12:23:46Z",
+  "artifact": "translation_memory.ru.publication.jsonl",
+  "artifact_sha256": "02a24c1eb8b1e1fb73a6991fca49b8350b0e470283c4c12c68a119ce15e16dc6",
+  "record_count": 2392,
+  "record_counts": {
+    "exact_card": 2175,
+    "exact_fragment": 217
+  },
+  "trust_counts": {
+    "machine_exact": 2392
+  },
+  "validation": {
+    "ok": 2392
+  },
+  "source_files": {
+    "card_tm": {
+      "path": "src\\pilot\\translation_memory.ru.json",
+      "sha256": "2506f38708248a46647d2b788240d52d5082744564bc1566e5cfe7e4c64dd56e"
+    },
+    "fragment_tm": {
+      "path": "src\\pilot\\translation_memory.frag.ru.jsonl",
+      "sha256": "2d89aab877e49c6855825f3eae8be0cd412527ea8371a1b4791761a008e06a3d"
+    },
+    "store": {
+      "path": "src\\pwg_ru_translated.jsonl",
+      "sha256": "04cfb992fac7eef9f43bd87de90e8280edadc212a3872c4d3ce31cddb67fcc44"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+{"schema":"pwg.translation_memory.suggest.v1","lang":"ru","key":"bad_mw","trust_level":"suggestion","reuse_policy":"suggest_only","source_kind":"mw_seed","text":"raw MW English must not enter RU prompts","score_combined":1.0}
+{"schema":"pwg.translation_memory.suggest.v1","lang":"ru","key":"bad_score","trust_level":"suggestion","reuse_policy":"suggest_only","source_kind":"curated_sa_ru_terminology","provenance_note":"fixture","text":"bad score","score_de_fragment":1.5}

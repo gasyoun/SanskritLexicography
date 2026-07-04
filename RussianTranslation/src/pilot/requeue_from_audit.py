@@ -4,6 +4,7 @@
   python src/pilot/requeue_from_audit.py sTA               # all requeue keys (requeue.keys.txt)
   python src/pilot/requeue_from_audit.py sTA --transient   # only null cards (cheap re-run)
   python src/pilot/requeue_from_audit.py sTA --defect      # only real content failures (rework)
+  python src/pilot/requeue_from_audit.py sTA --lang=en     # EN requeue / EN TM denylist
 
 A defect/all requeue always regenerates with --no-tm: a gate-flagged key's TM entry
 addresses on the input SHA, not on whether the cached translation passed the gates, so a
@@ -15,6 +16,7 @@ import json
 import os
 import subprocess
 import sys
+import datetime
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -27,6 +29,10 @@ REQUEUE = os.path.join(OUT, 'requeue.keys.txt')
 
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
+from window_common import sha256_file
+
+sys.path.insert(0, HERE)
+import translation_memory
 
 
 def rootmap_path(root):
@@ -53,14 +59,42 @@ def read_requeue(path):
     return keys
 
 
+def append_tm_denylist(root, keys, which, lang='ru'):
+    """Invalidate exact card-TM addresses for defect/all requeues. Append-only and local-only."""
+    if which == 'transient':
+        return 0
+    path = translation_memory.denylist_path()
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec='seconds').replace('+00:00', 'Z')
+    n = 0
+    with open(path, 'a', encoding='utf-8') as f:
+        for k in keys:
+            raw = os.path.join(INP, k + '.raw.txt')
+            if not os.path.exists(raw):
+                continue
+            address = '%s:%s' % (lang, sha256_file(raw))
+            f.write(json.dumps({'schema': 'pwg.translation_memory.denylist.v1',
+                                'kind': 'card', 'address': address, 'key': k,
+                                'root': root, 'lang': lang, 'reason': 'requeue_%s' % which,
+                                'blocked_at': now}, ensure_ascii=False) + '\n')
+            n += 1
+    return n
+
+
 def main():
     argv = sys.argv[1:]
     which = ('transient' if '--transient' in argv else
              'defect' if '--defect' in argv else 'all')
+    lang = 'ru'
+    for a in argv:
+        if a.startswith('--lang='):
+            lang = a.split('=', 1)[1]
+    if lang not in ('ru', 'en'):
+        sys.exit('unknown --lang %r (ru|en)' % lang)
     positional = [a for a in argv if not a.startswith('--')]
     root = positional[0] if positional else ''
     if not root:
-        sys.exit('usage: python src/pilot/requeue_from_audit.py <root> [--transient|--defect]')
+        sys.exit('usage: python src/pilot/requeue_from_audit.py <root> [--transient|--defect] [--lang=ru|en]')
     rp = rootmap_path(root)
     if not rp:
         sys.exit('no rootmap for %r under %s' % (root, INP))
@@ -80,9 +114,12 @@ def main():
         for k in invalid:
             print('  ' + k)
         sys.exit(1)
+    denied = append_tm_denylist(root, resolved, which, lang=lang)
 
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
+    if lang != 'ru':
+        cmd.append('--lang=%s' % lang)
     if which != 'transient':
         cmd.append('--no-tm')
     p = subprocess.run(cmd, cwd=os.path.dirname(os.path.dirname(HERE)),
@@ -98,6 +135,8 @@ def main():
     print('requeue root      : %s' % root)
     print('requeue source    : %s' % which)
     print('requeue keys      : %d' % len(resolved))
+    if denied:
+        print('tm denylist       : +%d card address(es)' % denied)
     print('generated harness : %s' % harness)
     print('keys:')
     for k in resolved:

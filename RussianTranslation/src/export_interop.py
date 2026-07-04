@@ -50,6 +50,7 @@ def iter_cards(path, limit=None):
 
 
 APPROVED_STATUSES = {'approved', 'human_reviewed'}
+MACHINE_PREVIEW_STATUSES = {'ai_translated', 'machine_gated', 'machine_exact', 'legacy_promoted'}
 
 
 def approved_store(path, statuses=APPROVED_STATUSES):
@@ -71,6 +72,8 @@ def approved_store(path, statuses=APPROVED_STATUSES):
 
 
 def statuses(args):
+    if getattr(args, 'preview_machine', False):
+        return APPROVED_STATUSES | MACHINE_PREVIEW_STATUSES
     raw = getattr(args, 'review_status', None)
     if not raw:
         return APPROVED_STATUSES
@@ -105,7 +108,10 @@ def card_glosses(card, translations, emitted=None):
         if isinstance(emitted, set):
             emitted.add(key1)
         for i, r in enumerate(translations.get(key1, []), 1):
-            rows.append(('approved_translation', '%s-review-%d' % (store_homonym(r), i), r.get('ru')))
+            status = r.get('review_status')
+            source = ('approved_translation' if status in APPROVED_STATUSES or status is None
+                      else 'machine_preview_non_citable')
+            rows.append((source, '%s-review-%d' % (store_homonym(r), i), r.get('ru')))
     return rows
 
 
@@ -117,7 +123,9 @@ def export_tei(args):
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<TEI xmlns="http://www.tei-c.org/ns/1.0">\n')
         f.write('  <teiHeader><fileDesc><titleStmt><title>PWG Russian assembled export</title></titleStmt>')
-        f.write('<publicationStmt><p>Project release artifact.</p></publicationStmt>')
+        note = ('Project release artifact.' if not args.preview_machine else
+                'NON-CITABLE machine-preview artifact: includes machine-gated internal rows.')
+        f.write('<publicationStmt><p>%s</p></publicationStmt>' % q(note))
         f.write('<sourceDesc><p>Generated from assembled_cards.jsonl.</p></sourceDesc></fileDesc></teiHeader>\n')
         f.write('  <text><body>\n')
         emitted, idn = set(), collections.Counter()
@@ -201,6 +209,8 @@ def main():
     ap.add_argument('--limit', type=int, default=None)
     ap.add_argument('--review-status', default=None,
                     help='comma list of review_status values to include; default = approved,human_reviewed (G5 gate). Use ai_translated only to PREVIEW the bridge.')
+    ap.add_argument('--preview-machine', action='store_true',
+                    help='include machine-gated internal rows as NON-CITABLE preview material')
     args = ap.parse_args()
     if args.mode in ('tei', 'all'):
         export_tei(args)

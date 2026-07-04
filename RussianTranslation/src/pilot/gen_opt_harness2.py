@@ -24,6 +24,8 @@ Usage:  python src/pilot/gen_opt_harness2.py <root> [--keys=k1,k2] [--budget=N] 
         [--tm[=PATH] | --no-tm]                 # content-addressed translation memory:
                                                 # default auto-uses translation_memory.<lang>.json
                                                 # when present; --no-tm opts out.
+        [--suggest-tm[=PATH]]                   # advisory suggestions; never skip agent calls
+        [--suggest-profile=semantic|german|sanskrit|balanced]
         (--selfheal / --binary-split still accepted as no-ops for documented runbooks)
 Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-chat path to
         avoid the gen->copy race when several chats generate harnesses concurrently)
@@ -214,6 +216,8 @@ def parse_args(argv):
     lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
     tm = '__auto__'                    # default auto: use translation_memory.<lang>.json if present;
                                        #  no sidecar = no-op with a loud summary. --no-tm disables.
+    suggest_tm = '__auto__'            # suggestion memory: advisory prompt context only
+    suggest_profile = 'semantic'       # MG prior: semantic-tag/register channel first
     tm_auto = True
     budget_explicit = output_explicit = False
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
@@ -240,6 +244,13 @@ def parse_args(argv):
         elif a == '--no-tm':
             tm = None
             tm_auto = False
+            suggest_tm = None
+        elif a == '--suggest-tm':
+            suggest_tm = '__default__'
+        elif a.startswith('--suggest-tm='):
+            suggest_tm = a.split('=', 1)[1]
+        elif a.startswith('--suggest-profile='):
+            suggest_profile = a.split('=', 1)[1].strip().lower()
         elif a == '--lean':
             lean = True
         elif a == '--nws-gate':
@@ -283,7 +294,11 @@ def parse_args(argv):
         mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
     if tm in ('__default__', '__auto__'):
         tm = os.path.join(os.path.dirname(INP), 'translation_memory.%s.json' % lang)
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto
+    if suggest_tm in ('__default__', '__auto__'):
+        suggest_tm = os.path.join(os.path.dirname(INP), 'translation_memory.suggest.%s.jsonl' % lang)
+    if suggest_profile not in ('semantic', 'german', 'sanskrit', 'balanced'):
+        die('unknown --suggest-profile %r (semantic|german|sanskrit|balanced)' % suggest_profile)
+    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile
 
 
 def extract_nws(tr):
@@ -548,9 +563,44 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     }
 
 
+def tm_card_sane(card, lang, field, raw):
+    """Cheap guard before exact TM auto-serve. The source SHA does the hard compatibility work;
+    this catches malformed/legacy sidecar rows before they become zero-token output."""
+    if not isinstance(card, dict):
+        return False, 'card is not an object'
+    if not card.get('records'):
+        return False, 'card has no records'
+    n_senses = 0
+    for rec in card.get('records') or []:
+        for s in rec.get('senses') or []:
+            n_senses += 1
+            if not (s.get(field) or '').strip():
+                return False, 'sense missing %s' % field
+    if not n_senses:
+        return False, 'card has no senses'
+    ls = sum(((s.get('german') or '').count('<ls') for rec in card.get('records') or []
+              for s in rec.get('senses') or []))
+    sk = sum(((s.get('german') or '').count('{#') for rec in card.get('records') or []
+              for s in rec.get('senses') or []))
+    if ls and ls != raw.count('<ls'):
+        return False, '<ls> count drift'
+    if sk and sk != raw.count('{#'):
+        return False, '{# count drift'
+    return True, ''
+
+
+def tm_senses_sane(senses, field):
+    if not senses:
+        return False
+    for s in senses:
+        if not isinstance(s, dict) or not (s.get(field) or '').strip():
+            return False
+    return True
+
+
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
           nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None,
-          tm_auto=False):
+          tm_auto=False, suggest_tm_path=None, suggest_profile='semantic'):
     field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
     if lang == 'en':
@@ -635,6 +685,10 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         for k in keys:
             hit = cache.get('%s:%s' % (lang, input_hashes[k]['raw_sha256']))
             if hit:
+                ok, why = tm_card_sane(hit.get('card'), lang, field, raws[k])
+                if not ok:
+                    print('  tm: refusing cached %s (%s)' % (k, why))
+                    continue
                 tm_resolved[k] = hit['card']
         print('  tm: %d/%d cards pre-resolved from %s (0 tokens)%s'
               % (len(tm_resolved), len(keys), os.path.basename(tm_path),
@@ -642,6 +696,20 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     elif tm_path:
         print('  tm: %s not found — no pre-resolution (run translation_memory.py build)' % tm_path)
     tm_keys = set(tm_resolved)
+
+    suggest_tm = {}
+    if suggest_tm_path and os.path.exists(suggest_tm_path):
+        import translation_memory as _tm
+        all_suggestions = _tm.load_ranked_suggestions(lang, suggest_tm_path,
+                                                      profile=suggest_profile, limit=5)
+        for k in keys:
+            root_key = k.split('~~', 1)[0]
+            rows = (all_suggestions.get(k) or []) + (all_suggestions.get(root_key) or [])
+            if rows:
+                suggest_tm[k] = _tm.rank_suggestions(rows, profile=suggest_profile, limit=5)
+        if suggest_tm:
+            print('  suggest-tm: %d card(s) carry advisory suggestion(s) from %s (profile=%s)'
+                  % (len(suggest_tm), os.path.basename(suggest_tm_path), suggest_profile))
 
     degenerate_resolved = {}
     for k in keys:
@@ -701,6 +769,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                     break
                 fsha = _tm.frag_address(lang, t)
                 cached = frag_cache.get(fsha)
+                if cached and not tm_senses_sane(cached.get('senses'), field):
+                    print('  frag-tm: refusing cached fragment for %s (%s)' % (k, fsha[:12]))
+                    cached = None
                 # si (sense_ord from split_plan) travels with the fragment into FRAGS so the
                 # JS heal path can tell "these fragments are all citation-batches of the SAME
                 # source sense" apart from "these are genuinely different senses" — without it,
@@ -836,6 +907,18 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'frag_tm': os.path.basename(frag_file) if (frag_cache and tm_path) else None,
         'frag_tm_cards': sorted(frag_tm),
         'frag_tm_fragments': sum(sum(1 for grp in v for s in grp if s) for v in frag_tm.values()),
+        'suggest_tm': os.path.basename(suggest_tm_path) if (suggest_tm_path and os.path.exists(suggest_tm_path)) else None,
+        'suggest_profile': suggest_profile,
+        'suggest_tm_cards': sorted(suggest_tm),
+        'suggest_tm_top': {k: [{'source_kind': r.get('source_kind'),
+                                'rank_profile': r.get('rank_profile'),
+                                'rank_score': r.get('rank_score'),
+                                'score_de_fragment': r.get('score_de_fragment'),
+                                'score_sa_headword': r.get('score_sa_headword'),
+                                'score_semantic_tag': r.get('score_semantic_tag'),
+                                'text': (r.get('text') or '')[:80]}
+                               for r in v]
+                           for k, v in suggest_tm.items()},
         'degenerate_passthrough_keys': sorted(degenerate_keys),
         # A presplit card is routed to the fragment lane, i.e. len(frags[k]) agent() calls
         # (one per fragment group), NOT one — frags[k] always exists for a presplit key (the
@@ -891,6 +974,9 @@ const DEGENERATE_RESOLVED = %(degenerate_resolved)s
 // or null (translate it). A fully-cached card heals at zero cost; a partial giant card
 // re-runs only its still-missing fragments. Empty ({}) unless --tm found a fragment sidecar.
 const FRAG_TM = %(frag_tm)s
+// Suggestion TM is advisory only: it may seed wording/evidence in the prompt, but it NEVER
+// pre-resolves a card and therefore never changes tm_hits, batches, or agent accounting.
+const SUGGEST_TM = %(suggest_tm)s
 const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
@@ -941,7 +1027,19 @@ function restoreCard(card, k) {
 }
 // Per-card grammar (nominal mode): each headword carries its own block. Empty in root
 // mode (the shared GRAMMAR is injected once before CONV_TR) and in the --no-grammar arm.
-const cardBlock = k => (GRAMMARS[k] || '') + '\\n\\n=== CARD ' + k + ' ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + INPUTS[k].skeleton + '\\n--- portrait (evidence) ---\\n' + INPUTS[k].portrait
+const suggestionBlock = k => {
+  const rows = SUGGEST_TM[k] || []
+  if (!rows.length) return ''
+  const scoreBits = r => [
+    'de=' + (r.score_de_fragment ?? 'n/a'),
+    'sa=' + (r.score_sa_headword ?? 'n/a'),
+    'tag=' + (r.score_semantic_tag ?? 'n/a'),
+    'combined=' + (r.score_combined ?? r.score ?? 'n/a')
+  ].join(' ')
+  return '\\n--- advisory translation-memory suggestions (SUGGEST ONLY: may seed weak evidence; do not copy unsupported senses; mark provenance if used) ---\\n' +
+    rows.map(r => '[' + (r.source_kind || 'suggestion') + ' ' + scoreBits(r) + ' ' + (r.provenance_note || '') + '] ' + (r.text || '')).join('\\n')
+}
+const cardBlock = k => (GRAMMARS[k] || '') + '\\n\\n=== CARD ' + k + ' ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + INPUTS[k].skeleton + suggestionBlock(k) + '\\n--- portrait (evidence) ---\\n' + INPUTS[k].portrait
 
 const accept = (c, k) => {
   if (!c) return null
@@ -1303,6 +1401,7 @@ return { meta: META, summary, results: out }
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
+        'suggest_tm': json.dumps(suggest_tm, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
@@ -1311,7 +1410,7 @@ return { meta: META, summary, results: out }
 
 
 def main():
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto = parse_args(sys.argv[1:])
+    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -1321,7 +1420,7 @@ def main():
         rootmap, keys = selected_keys(root, keyfilter)
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm, tm_auto)
+    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
     # raw \r control chars, so a CRLF harness cannot be launched on Windows.

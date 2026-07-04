@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg.translation_memory.publication.schema.v1",
+  "title": "PWG Translation Memory Publication Contract",
+  "description": "Audit-oriented schema contract for exact card TM, exact fragment TM, and advisory suggestion/terminology TM rows.",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/card_tm_file"
+    },
+    {
+      "$ref": "#/$defs/card_entry"
+    },
+    {
+      "$ref": "#/$defs/fragment_entry"
+    },
+    {
+      "$ref": "#/$defs/suggestion_entry"
+    },
+    {
+      "$ref": "#/$defs/publication_record"
+    }
+  ],
+  "$defs": {
+    "lang": {
+      "enum": [
+        "ru",
+        "en"
+      ]
+    },
+    "trust_level": {
+      "enum": [
+        "reviewed_exact",
+        "machine_exact",
+        "legacy_promoted",
+        "suggestion"
+      ]
+    },
+    "reuse_policy": {
+      "enum": [
+        "auto_exact",
+        "suggest_only",
+        "blocked",
+        "defect"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "audit_meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "trust_level": {
+          "$ref": "#/$defs/trust_level"
+        },
+        "gate_status": {
+          "type": "string"
+        },
+        "gate_version": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string"
+        },
+        "reuse_policy": {
+          "$ref": "#/$defs/reuse_policy"
+        },
+        "source_kind": {
+          "type": "string"
+        },
+        "supersedes": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "card_tm_file": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema",
+        "lang",
+        "entries"
+      ],
+      "properties": {
+        "schema": {
+          "const": "pwg.translation_memory.v1"
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "built_at": {
+          "type": "string"
+        },
+        "trust_counts": {
+          "type": "object"
+        },
+        "entries": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/card_entry"
+          }
+        }
+      }
+    },
+    "card_entry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/audit_meta"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "card",
+            "trust_level",
+            "reuse_policy"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "src_key": {
+              "type": "string"
+            },
+            "raw_sha256": {
+              "type": "string"
+            },
+            "card": {
+              "type": "object"
+            },
+            "n_senses": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "fragment_entry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/audit_meta"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "schema",
+            "lang",
+            "fsha",
+            "senses",
+            "trust_level",
+            "reuse_policy"
+          ],
+          "properties": {
+            "schema": {
+              "const": "pwg.translation_memory.frag.v1"
+            },
+            "lang": {
+              "$ref": "#/$defs/lang"
+            },
+            "fsha": {
+              "type": "string"
+            },
+            "src_key": {
+              "type": "string"
+            },
+            "raw_sha256": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "splitter_version": {
+              "type": "string"
+            },
+            "senses": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "suggestion_entry": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema",
+        "lang",
+        "text",
+        "trust_level",
+        "reuse_policy",
+        "source_kind"
+      ],
+      "properties": {
+        "schema": {
+          "const": "pwg.translation_memory.suggest.v1"
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "key": {
+          "type": "string"
+        },
+        "root": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trust_level": {
+          "const": "suggestion"
+        },
+        "reuse_policy": {
+          "const": "suggest_only"
+        },
+        "source_kind": {
+          "type": "string"
+        },
+        "provenance_note": {
+          "type": "string"
+        },
+        "score_de_fragment": {
+          "$ref": "#/$defs/score"
+        },
+        "score_sa_headword": {
+          "$ref": "#/$defs/score"
+        },
+        "score_semantic_tag": {
+          "$ref": "#/$defs/score"
+        },
+        "score_combined": {
+          "$ref": "#/$defs/score"
+        },
+        "curator_id": {
+          "type": "string"
+        },
+        "reviewer_id": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_uri": {
+          "type": "string"
+        },
+        "source_hash": {
+          "type": "string"
+        }
+      }
+    },
+    "publication_record": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema",
+        "tm_record_id",
+        "record_type",
+        "lang",
+        "trust_level",
+        "reuse_policy",
+        "review_status",
+        "gate_status",
+        "source_hashes",
+        "provenance",
+        "evidence"
+      ],
+      "properties": {
+        "schema": {
+          "const": "pwg.translation_memory.publication.v1"
+        },
+        "tm_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "enum": [
+            "exact_card",
+            "exact_fragment",
+            "suggestion"
+          ]
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "trust_level": {
+          "$ref": "#/$defs/trust_level"
+        },
+        "reuse_policy": {
+          "$ref": "#/$defs/reuse_policy"
+        },
+        "review_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gate_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gate_version": {
+          "type": "string"
+        },
+        "source_kind": {
+          "type": "string"
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object"
+          }
+        },
+        "payload": {
+          "type": "object"
+        },
+        "supersedes": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

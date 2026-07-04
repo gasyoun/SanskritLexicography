@@ -836,6 +836,29 @@ def test_requeue_transient_vs_defect_state():
     legacy = dict(base, requeue=['k1'])  # pre-split report: no requeue_defect key
     if audit_state(legacy) != 'needs_requeue':
         fail('pre-split reports must remain needs_requeue (no silent transient downgrade)')
+    import requeue_from_audit as rq
+    with tempfile.TemporaryDirectory() as tmp:
+        old_inp = rq.INP
+        old_deny = rq.translation_memory.denylist_path
+        try:
+            rq.INP = tmp
+            raw = os.path.join(tmp, 'k1.raw.txt')
+            with open(raw, 'w', encoding='utf-8') as f:
+                f.write('source')
+            deny = os.path.join(tmp, 'deny.jsonl')
+            rq.translation_memory.denylist_path = lambda out=None: deny
+            n_en = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='en')
+            n_ru = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='ru')
+            if (n_en, n_ru) != (1, 1):
+                fail('denylist should append one row per lang')
+            rows = [json.loads(line) for line in open(deny, encoding='utf-8')]
+            if rows[0]['lang'] != 'en' or not rows[0]['address'].startswith('en:'):
+                fail('EN denylist address must carry en:<sha>')
+            if rows[1]['lang'] != 'ru' or not rows[1]['address'].startswith('ru:'):
+                fail('RU denylist address must carry ru:<sha>')
+        finally:
+            rq.INP = old_inp
+            rq.translation_memory.denylist_path = old_deny
 
 
 def test_export_translation_dedup():
@@ -1315,6 +1338,86 @@ def test_tm_auto_no_sidecar_metadata():
     owed = {k for b in meta['batches'] for k in b} | set(meta['presplit_keys']) | set(meta['degenerate_passthrough_keys'])
     if owed != set(keys):
         fail('missing auto TM sidecar must keep every selected key owed/accounted')
+
+
+def test_suggest_tm_does_not_skip_agents():
+    """Suggestion TM is prompt context only: it must appear in META/SUGGEST_TM but leave
+    tm_hits empty and keep the selected key owed by a normal translate lane."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    from window_common import rootmap_path, input_paths
+    root = 'gam'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath:
+        return
+    rootmap, keys = gh.selected_keys(root, None)
+    keys = [k for k in keys if os.path.exists(input_paths(k)[0])][:1]
+    if not keys:
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        suggest = os.path.join(tmp, 'translation_memory.suggest.ru.jsonl')
+        with open(suggest, 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'schema': 'pwg.translation_memory.suggest.v1',
+                                'lang': 'ru', 'key': keys[0],
+                                'score_de_fragment': 0.4,
+                                'score_sa_headword': 1.0,
+                                'score_semantic_tag': 0.7,
+                                'score_combined': 0.88,
+                                'trust_level': 'suggestion', 'reuse_policy': 'suggest_only',
+                                'source_kind': 'curated_sa_ru_terminology',
+                                'provenance_note': 'fixture curated term',
+                                'text': 'advisory only'}, ensure_ascii=False) + '\n')
+            f.write(json.dumps({'schema': 'pwg.translation_memory.suggest.v1',
+                                'lang': 'ru', 'key': keys[0],
+                                'trust_level': 'suggestion', 'reuse_policy': 'suggest_only',
+                                'source_kind': 'mw_seed',
+                                'score_combined': 1.0,
+                                'text': 'must be filtered'}, ensure_ascii=False) + '\n')
+        js, _batches = gh.build(root, keys, rootmap, 12000, tm_path=None, suggest_tm_path=suggest)
+        meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+        suggest_const = json.loads(_re.search(r'^const SUGGEST_TM = (.*)$', js, _re.M).group(1))
+        if meta.get('tm_hits') or meta.get('tm_cards') != 0:
+            fail('suggestion TM must not create exact TM hits')
+        if meta.get('suggest_tm_cards') != keys:
+            fail('suggestion TM metadata must list the advisory key')
+        if keys[0] not in suggest_const:
+            fail('generated harness must emit SUGGEST_TM advisory rows')
+        if len(suggest_const[keys[0]]) != 1:
+            fail('malformed/raw-MW RU suggestion row must be filtered before prompt injection')
+        if suggest_const[keys[0]][0].get('score_de_fragment') != 0.4:
+            fail('separate fuzzy evidence scores must survive load/render round-trip')
+        for needle in ('score_de_fragment', 'score_sa_headword', 'score_semantic_tag',
+                       "'de='", "'sa='", "'tag='"):
+            if needle not in js:
+                fail('suggestion prompt must render separate evidence-channel scores')
+        owed = {k for b in meta['batches'] for k in b} | set(meta['presplit_keys']) | set(meta['degenerate_passthrough_keys'])
+        if keys[0] not in owed:
+            fail('suggestion TM must not remove the key from agent work lanes')
+
+
+def test_tm_publication_fixtures_validate():
+    """Tracked fixtures pin the publication-grade TM row contract."""
+    import translation_memory as tm
+    valid = os.path.join(SRC, 'fixtures', 'translation_memory_valid.fixture.jsonl')
+    invalid = os.path.join(SRC, 'fixtures', 'translation_memory_invalid.fixture.jsonl')
+    rows = [json.loads(line) for line in open(valid, encoding='utf-8') if line.strip()]
+    ok, why = tm.validate_suggestion_row(rows[0], lang='ru')
+    if not ok:
+        fail('valid suggestion fixture rejected: %s' % why)
+    ok, why = tm.validate_frag_entry(rows[1], lang='ru')
+    if not ok:
+        fail('valid fragment fixture rejected: %s' % why)
+    bad = [json.loads(line) for line in open(invalid, encoding='utf-8') if line.strip()]
+    reasons = []
+    for row in bad:
+        ok, why = tm.validate_suggestion_row(row, lang='ru')
+        if ok:
+            fail('invalid suggestion fixture unexpectedly passed')
+        reasons.append(why)
+    if 'raw MW English seed is forbidden for RU' not in reasons:
+        fail('invalid fixture must pin raw MW English rejection')
+    if 'score_de_fragment must be a number 0..1' not in reasons:
+        fail('invalid fixture must pin score-channel range validation')
 
 
 def test_degenerate_passthrough_accounted():
@@ -1834,6 +1937,8 @@ def main():
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
         test_tm_auto_no_sidecar_metadata,
+        test_suggest_tm_does_not_skip_agents,
+        test_tm_publication_fixtures_validate,
         test_degenerate_passthrough_accounted,
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,

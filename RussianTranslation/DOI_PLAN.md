@@ -17,3 +17,11 @@ The nominal grammar layer ships its own Frictionless descriptor
 It is **independent of the translation edition** (the A/B kept grammar out of translation), so it
 can be archived/DOI-registered on its own track — rebuild deterministically with
 `python src/reverse_index.py --build` (provenance: read-only `csl-orig/v02/pwg/pwg.txt` + `mw.txt`).
+
+## Curated Sanskrit-to-Russian terminology — separate DOI track
+
+MG ruled on 04-07-2026 that curated Sanskrit-to-Russian terminology is **not** a subsection of
+the PWG translation-memory artifact. It has its own release lane under
+[`release/sa_ru_terminology/`](release/sa_ru_terminology/) and should receive its own DOI once
+non-empty curated terms pass review. PWG TM suggestion rows should cite terminology `term_id` /
+`source_hash` values rather than embedding the terminology dataset wholesale.

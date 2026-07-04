@@ -1,0 +1,60 @@
+{
+  "schema": "pwg.translation_memory.fuzzy_speed_report.v1",
+  "lang": "ru",
+  "built_at": "2026-07-04T12:24:19Z",
+  "suggestion_tm": null,
+  "keys": "all",
+  "profiles": {
+    "none": {
+      "suggestion_cards": 0,
+      "suggestion_rows": 0,
+      "suggestion_text_chars": 0,
+      "estimated_agent_call_delta": 0,
+      "null_count": null,
+      "partial_count": null,
+      "wall_clock_seconds": null,
+      "token_count": null
+    },
+    "balanced": {
+      "suggestion_cards": 0,
+      "suggestion_rows": 0,
+      "suggestion_text_chars": 0,
+      "estimated_agent_call_delta": 0,
+      "null_count": null,
+      "partial_count": null,
+      "wall_clock_seconds": null,
+      "token_count": null
+    },
+    "german": {
+      "suggestion_cards": 0,
+      "suggestion_rows": 0,
+      "suggestion_text_chars": 0,
+      "estimated_agent_call_delta": 0,
+      "null_count": null,
+      "partial_count": null,
+      "wall_clock_seconds": null,
+      "token_count": null
+    },
+    "sanskrit": {
+      "suggestion_cards": 0,
+      "suggestion_rows": 0,
+      "suggestion_text_chars": 0,
+      "estimated_agent_call_delta": 0,
+      "null_count": null,
+      "partial_count": null,
+      "wall_clock_seconds": null,
+      "token_count": null
+    },
+    "semantic": {
+      "suggestion_cards": 0,
+      "suggestion_rows": 0,
+      "suggestion_text_chars": 0,
+      "estimated_agent_call_delta": 0,
+      "null_count": null,
+      "partial_count": null,
+      "wall_clock_seconds": null,
+      "token_count": null
+    }
+  },
+  "note": "Static speed proxy: suggestion prompt coverage/bytes. Runtime wall-clock and tokens come from workflow summaries."
+}
