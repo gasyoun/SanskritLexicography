@@ -28,6 +28,19 @@ and eliminated the transient dropouts.
   severity>=3`), Opus verdict final — see [`../../research/JUDGE_POLICY.md`](../../research/JUDGE_POLICY.md).
   Publishable cards spend no Opus tokens.
 
+## Cross-language parity — read before closing out any RU/EN fix or feature
+
+This pipeline runs RU and EN (and any future language) through the same
+lang-parameterized tooling. A fix landing on only one language path and never
+reaching the other is a recurring failure mode (3 gate-bug fixes shipped
+2026-07-03 stayed RU-only for a day before an audit caught it). Before calling
+any fix/feature session done, classify it in
+[`../../LANG_PARITY.md`](../../LANG_PARITY.md) as SHARED / INTENTIONAL-DIVERGENCE
+(with a one-line why) / GAP (with a tracked follow-up) — see that file's policy
+section. `python src/pilot/lang_parity_check.py` enforces ledger completeness +
+tracked-file drift and is wired into `window_selftest.py`
+(`test_lang_parity_ledger_complete`).
+
 ## Current operating truth
 
 - The optimized **translate-only** Max harness is live and is generated per root by
