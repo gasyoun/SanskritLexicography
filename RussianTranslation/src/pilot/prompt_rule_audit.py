@@ -35,6 +35,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from workflow_payload import workflow_payload
+from foreign_literal_guards import LATIN_WORDS, FRENCH_WORDS
 
 GERMAN_RESIDUE = re.compile(
     r'\b(?:der|die|das|den|dem|des|und|oder|mit|ohne|von|für|nicht|eine|einer|'
@@ -86,16 +87,9 @@ LEXICOGRAPHIC_CITATION = re.compile(
     r'kośa|lexicographic)',
     re.I)
 
-# Latin and Romance glosses B&R deliberately leave untranslated (esp. indelicate
-# euphemisms written in Latin, e.g. "inire feminam"). These must NOT be flagged as
-# untranslated German — the convention keeps them verbatim.
-LATIN_WORDS = re.compile(
-    r'\b(?:inire|feminam?|legere|inveteratus|convenire|coitus|coire|coeundi|'
-    r'membrum|virile|penis|pudenda|futuere|mingere|venus|venere|in\s+coitu|'
-    r'cum|quasi|scilicet|sic|idem|vide|sequi|obsequi)\b', re.I)
-FRENCH_WORDS = re.compile(
-    r"(?:\bl['’]|\b(?:une?|les?|des|du|aux?|plus|tr[eè]s|homme|femme|basse|"
-    r"extraction|chose|terre|qui|dans|pour|avec|sans)\b)", re.I)
+# LATIN_WORDS / FRENCH_WORDS (Latin euphemisms + French/Romance glosses B&R deliberately
+# leaves untranslated, e.g. "inire feminam") now live in foreign_literal_guards.py, shared
+# with the EN gate (audit_window_en.py) — see that module's docstring.
 # Sanskrit preverbs / transliterated tokens that appear braced on messy layer cards
 # (e.g. SCH) and are not German glosses.
 SANSKRIT_PREVERBS = {
