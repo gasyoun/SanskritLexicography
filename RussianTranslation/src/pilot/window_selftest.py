@@ -1352,6 +1352,20 @@ def test_perf_preflight_dense_presplit():
         fail('dense presplit key must report a nonzero expected agent lane')
 
 
+def test_perf_preflight_presplit_counts_fragments_not_one():
+    """agent_expected_after_tm for a presplit giant must be its true fragment-group count,
+    not 1 — the old len(presplit) formula underestimated vid's real 102-agent run as 13."""
+    key = 'gam~~h0_00_pwg00'
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
+                '--keys=%s' % key, '--no-tm', '--json'], 0)
+    report = json.loads(proc.stdout)
+    if key not in report.get('presplit_keys', []):
+        fail('fixture card must still route to presplit')
+    if report.get('agent_expected_after_tm', 0) < 5:
+        fail('a 150+-<ls> presplit giant needs many fragment calls, not ~1 — '
+             'got agent_expected_after_tm=%r' % report.get('agent_expected_after_tm'))
+
+
 def test_perf_preflight_degenerate_zero_agent():
     proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'ab',
                 '--nominal', '--keys=ab', '--json'], 0)
@@ -1379,9 +1393,14 @@ def test_perf_preflight_multi_root_matrix_and_order():
         fail('han should be recognized as fully cached / zero-agent in the local TM preflight')
     if 'han' not in matrix.get('recommended_order', {}).get('skip_cached', []):
         fail('fully cached roots must be listed in skip_cached')
-    run_first = matrix.get('recommended_order', {}).get('run_first', [])
-    if 'vid' not in run_first or 'as' not in run_first:
-        fail('low-agent roots should appear in recommended run order')
+    # vid and as each carry presplit giants (fragment-lane cards), so their true
+    # agent_expected_after_tm is dozens, not the ~13-14 the pre-fix len(presplit) formula
+    # reported (the real 2026-07-04 vid run spent 102 agents) — they belong in defer, not
+    # run_first, once the estimate reflects real fragment-call counts.
+    deferred = matrix.get('recommended_order', {}).get('defer', [])
+    if 'vid' not in deferred or 'as' not in deferred:
+        fail('presplit-giant roots should defer-calibrate once agent_expected_after_tm '
+             'reflects real fragment-call counts, not the old len(presplit) undercount')
 
 
 def test_perf_preflight_fragment_tm_empty_warning():
@@ -1515,6 +1534,7 @@ def main():
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,
         test_perf_preflight_dense_presplit,
+        test_perf_preflight_presplit_counts_fragments_not_one,
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
         test_perf_preflight_fragment_tm_empty_warning,

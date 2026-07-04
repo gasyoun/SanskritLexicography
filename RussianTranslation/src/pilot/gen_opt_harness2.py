@@ -717,7 +717,14 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'frag_tm_cards': sorted(frag_tm),
         'frag_tm_fragments': sum(sum(1 for grp in v for s in grp if s) for v in frag_tm.values()),
         'degenerate_passthrough_keys': sorted(degenerate_keys),
-        'agent_expected_after_tm': len(batches) + len(presplit),
+        # A presplit card is routed to the fragment lane, i.e. len(frags[k]) agent() calls
+        # (one per fragment group), NOT one — frags[k] always exists for a presplit key (the
+        # router only routes cards already present in frags). Undercounting this as len(presplit)
+        # made a 150-<ls> giant "cost 1 agent" in every preflight (observed: vid's real run spent
+        # 102 agents against a 13-agent preflight estimate, almost entirely from its 5 presplit
+        # giants each needing ~10-20 fragment calls). This is still an optimistic floor — it
+        # ignores retries and whole-batch selfheal fallback on non-presplit cards.
+        'agent_expected_after_tm': len(batches) + sum(len(frags.get(k, [None])) for k in presplit),
     }
     print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
           % (meta['tm_cards'], len(meta['frag_tm_cards']),

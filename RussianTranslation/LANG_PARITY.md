@@ -80,7 +80,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -97,7 +97,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -114,7 +114,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -148,7 +148,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -165,7 +165,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -181,7 +181,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The bare 'sonnet' alias resolved to Sonnet 4.6 (not 5.0) on a prior EN run — pinned explicitly there after that surprise. RU's alias was never observed to misresolve, so it was left alone rather than touching a stable production path for a problem it doesn't have. Re-evaluate if RU is ever caught on a stale alias too.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24"
     }
   },
   {
@@ -240,6 +240,25 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/promote_final_cards.py": "572bb45477ce4856f6caba7e813e00a146bbeeedf3ae04b471e4616dafaa8935",
       "src/promote_en.py": "7d3ce9680e304fff8ba0bcaba843945c36c6f0894441a56e8695ec58a6b5ebfe"
+    }
+  },
+  {
+    "id": "presplit_agent_count_estimator",
+    "mechanism": "agent_expected_after_tm counted len(presplit) (1 per giant) instead of len(frags[k]) (true fragment-call count per giant)",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "5002832e97ac581481033a034a96cc046c06cbfd2331c33bf492e5b87a406f24",
+      "src/pilot/window_selftest.py": "f85e06f66b8912495894981d7dcfd1e9b400779edaa664dcd69d5ea36c6b7cce"
     }
   }
 ]
