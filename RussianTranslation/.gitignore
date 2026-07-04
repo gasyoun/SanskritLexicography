@@ -93,6 +93,7 @@ src/pilot/run_pilot_wf.en_*.js
 # list can't keep up — glob it).
 src/pilot/run_pilot_wf.opt2.*_requeue*.js
 src/pilot/run_pilot_wf.opt2.*_translate.js
+src/pilot/run_pilot_wf.*_topup.js
 
 # Pre-operation safety snapshots of the local-only translated store / wf_output
 # (regenerable-adjacent backups taken before a risky merge/overlay, never a
