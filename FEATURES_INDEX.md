@@ -24,9 +24,9 @@ carries a **real example** and its **first-introduced month/year**.
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
-`G`–`K` interfaces · `L`–`M` tools; dictionaries use their code). Datasets are graded by **severity/maturity**: 🟢 **canonical**
-(authoritative, reproducible, widely consumed) · 🟡 **derived** (secondary / analysis output) ·
-⚪ **raw** (gitignored, binary, or external mirror). The **Intro** column is the asset's
+`G`–`K` interfaces · `L`–`M` tools; dictionaries use their code). Datasets are graded by **size** (measured
+on disk, so magnitudes are comparable — rows/entries alone are not): 🟢 **large** (&gt;10 MB) · 🟡 **medium**
+(1–10 MB) · ⚪ **small** (&lt;1 MB); the **Size** column carries the count and the exact MB. The **Intro** column is the asset's
 first-introduced month/year from git history; for the external stacks (M10–M14) it is instead the
 **last update**, each from a documented source of truth (see the † note under that table).
 
@@ -40,74 +40,74 @@ these are clickable `#tags` that pivot the whole index to everything in a cluste
 
 ## I. Data assets — query it, someone already spent the compute
 
-Tier prefix: 🟢 canonical · 🟡 derived · ⚪ raw. Examples are **verbatim sample rows** from the
+Size tier: 🟢 large (&gt;10 MB) · 🟡 medium (1–10 MB) · ⚪ small (&lt;1 MB). Examples are **verbatim sample rows** from the
 actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so the shape is shown).
 
 ### A · Sanskrit → Russian & translation
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| 🟢 A1 | `corpus_lexicon` | 1.09 M word-aligned Sa→Ru rows (per verse-pair, SLP1-keyed, ~190k keys) | 1.09 M rows | `<slp1-word>  <russian>  <verse-pair-id>` (schema; JSONL gitignored) | 06/26 | [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) |
-| 🟢 A2 | SanskritRussian glossary (3-layer) | Ranked Sa→Ru glossary: surface 190,838 · lemma 40,370 · root 2,021; 87% coverage | 233k entries | `A → принеси · freq 43 · ADP` (lemma layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| 🟢 A3 | `mw_en_tm.json` | SLP1-keyed MW English-gloss translation memory behind the RU/EN kits | 187,506 · 12 MB | `"a": "the first letter of the alphabet · the first short vowel…"` | 06/26 | [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
-| 🟡 A4 | lemma / root glossary (DCS) | DCS lemma→gloss and root→gloss glossaries, bilingual, TSV + JSONL | lemma 16–26 MB · root 5 MB | `AGozi → Распространяя звуки · verb` (root layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 A1 | `corpus_lexicon` | 1.09 M word-aligned Sa→Ru rows (per verse-pair, SLP1-keyed, ~190k keys) | 1.09 M rows · 276.6 MB | `<slp1-word>  <russian>  <verse-pair-id>` (schema; JSONL gitignored) | 06/26 | [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) |
+| 🟢 A2 | SanskritRussian glossary (3-layer) | Ranked Sa→Ru glossary: surface 190,838 · lemma 40,370 · root 2,021; 87% coverage | 233k entries · 61.3 MB | `A → принеси · freq 43 · ADP` (lemma layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 A3 | `mw_en_tm.json` | SLP1-keyed MW English-gloss translation memory behind the RU/EN kits | 187,506 · 11.1 MB | `"a": "the first letter of the alphabet · the first short vowel…"` | 06/26 | [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
+| 🟢 A4 | lemma / root glossary (DCS) | DCS lemma→gloss and root→gloss glossaries, bilingual, TSV + JSONL | lemma 16– · root · 20.3 MB | `AGozi → Распространяя звуки · verb` (root layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
 
 ### B · Roots & etymology
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| 🟢 B5 | `mw_roots.tsv` | MW verbal-root inventory: 2,113 records with explicit `verb_type` (750 genuineroot + 1363 root) | 2,113 · 76 KB | `aMS   aṃś   genuineroot   10P,10Ā` | 06/26 | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) |
-| 🟢 B6 | `mw_etymology.tsv` / `pwg_etymology.tsv` | Headword→root derivation tables (Pāṇinian), 10 dicts | ~9–11k rows each | `10   aṃśa   aMSa   aś   aS   fr-root   0Ā,0P   Y` | 06/26 | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_etymology.tsv) |
-| 🟢 B7 | `etymology_stats` | Cross-dict aggregates: root oracle, 41-pair agreement matrix (95% CI), affix entropy/frequency | 10 dicts | `root_oracle:  A   ā   kram   kram   1   mw` | 06/26 | [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) |
-| 🟡 B8 | `etymology-oracle.json` | csl-atlas cross-dict etymology aggregator, consumed verbatim from `etymology_stats` | 67k rows · 23 KB | `{ "dictionaryCount": 10, "generatedAt": "2026-06-26…", "totals": {…} }` | 06/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
-| 🟡 B9 | `root_crosswalk.csv` + `class_concordance.csv` | MW ↔ Whitney root-class alignment + concordance with frequency | 37 KB + 18 KB | `1,aṃh,yes,114,,matched,0` | 06/26 | [MWS/root_crosswalk](https://github.com/gasyoun/MWS/tree/main/root_crosswalk) |
-| 🟡 B10 | `Whitney_DCS_audit.json` | Whitney × DCS root audit vs the 935-root Whitney hub | 415 KB | `{ "root":"aṃh", "dcs_lemma":"aṃh", "status":"matched", "class_verdict":"whitney-missing" }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
-| 🟡 B11 | `corpus_class_verdicts.json` | Corpus-verified root-class verdicts. ⚠ unaccented DCS can't split class I vs VI | 514 KB | `{ "aṃh": { "classes": [], "verdict": "not_attested" } }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
-| 🟡 B12 | `dcs_ppp_verified.tsv` | Corpus-attested past-passive-participle forms + counts | 5,181 forms | `vac   ukta   2   P.   7734` (√vac → ukta, 7734×) | 07/26 | [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy) |
+| ⚪ B5 | `mw_roots.tsv` | MW verbal-root inventory: 2,113 records with explicit `verb_type` (750 genuineroot + 1363 root) | 2,113 · 75 KB | `aMS   aṃś   genuineroot   10P,10Ā` | 06/26 | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) |
+| 🟡 B6 | `mw_etymology.tsv` / `pwg_etymology.tsv` | Headword→root derivation tables (Pāṇinian), 10 dicts | ~9–11k rows each · 2.9 MB | `10   aṃśa   aMSa   aś   aS   fr-root   0Ā,0P   Y` | 06/26 | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_etymology.tsv) |
+| 🟡 B7 | `etymology_stats` | Cross-dict aggregates: root oracle, 41-pair agreement matrix (95% CI), affix entropy/frequency | 10 dicts · 2.9 MB | `root_oracle:  A   ā   kram   kram   1   mw` | 06/26 | [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) |
+| ⚪ B8 | `etymology-oracle.json` | csl-atlas cross-dict etymology aggregator, consumed verbatim from `etymology_stats` | 67k rows · 23 KB | `{ "dictionaryCount": 10, "generatedAt": "2026-06-26…", "totals": {…} }` | 06/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| ⚪ B9 | `root_crosswalk.csv` + `class_concordance.csv` | MW ↔ Whitney root-class alignment + concordance with frequency | + · 53 KB | `1,aṃh,yes,114,,matched,0` | 06/26 | [MWS/root_crosswalk](https://github.com/gasyoun/MWS/tree/main/root_crosswalk) |
+| ⚪ B10 | `Whitney_DCS_audit.json` | Whitney × DCS root audit vs the 935-root Whitney hub | 415 KB | `{ "root":"aṃh", "dcs_lemma":"aṃh", "status":"matched", "class_verdict":"whitney-missing" }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
+| ⚪ B11 | `corpus_class_verdicts.json` | Corpus-verified root-class verdicts. ⚠ unaccented DCS can't split class I vs VI | 514 KB | `{ "aṃh": { "classes": [], "verdict": "not_attested" } }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
+| ⚪ B12 | `dcs_ppp_verified.tsv` | Corpus-attested past-passive-participle forms + counts | 5,181 forms · 147 KB | `vac   ukta   2   P.   7734` (√vac → ukta, 7734×) | 07/26 | [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy) |
 
 ### C · Headwords & crosswalks
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| 🟢 C13 | `union_headwords.tsv` | Cross-dict union headword index with per-dict provenance | ~323k | `A   ā   12   AP BUR CAE CCS GRA MD MW PWG PWK SCH SKD VCP   fmn` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
-| 🟢 C14 | `mw_heritage_crosswalk.tsv` | MW → Sanskrit Heritage alignment: 185,803 entries, 97.6% anchor-resolved | 185.8k · 3.2 MB | `a   0` (MW headword → Heritage anchor id / coverage) | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) |
-| 🟢 C15 | DCS↔CDSL crosswalk | DCS lemma ↔ CDSL headword linkset, 12,946 rows (81.4% linked) | 12,946 rows | `37875   tad   tad   tad   1   3734   pron` | 06/26 | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv) |
-| 🟡 C16 | union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union | `5   nominal   enad   enad` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
-| 🟡 C17 | csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
-| ⚪ C18 | csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set | the below-threshold subset of `alignment-confidence.json` (schema) | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| 🟢 C13 | `union_headwords.tsv` | Cross-dict union headword index with per-dict provenance | ~323k · 11.8 MB | `A   ā   12   AP BUR CAE CCS GRA MD MW PWG PWK SCH SKD VCP   fmn` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
+| 🟡 C14 | `mw_heritage_crosswalk.tsv` | MW → Sanskrit Heritage alignment: 185,803 entries, 97.6% anchor-resolved | 185.8k · 3.1 MB | `a   0` (MW headword → Heritage anchor id / coverage) | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) |
+| ⚪ C15 | DCS↔CDSL crosswalk | DCS lemma ↔ CDSL headword linkset, 12,946 rows (81.4% linked) | 12,946 rows · 618 KB | `37875   tad   tad   tad   1   3734   pron` | 06/26 | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv) |
+| ⚪ C16 | union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union · 711 KB | `5   nominal   enad   enad` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
+| 🟢 C17 | csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards · 43.0 MB | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| 🟢 C18 | csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set · 31.3 MB | the below-threshold subset of `alignment-confidence.json` (schema) | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
 
 ### D · Heritage & morphology oracles
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| ⚪ D19 | `heritage_forms_oracle.tsv.gz` | Pandora → Heritage inflected-form alignment oracle, morphology-aware | 526 KB gz | `form ↔ Heritage lemma + morphology` (schema; gzip) | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| 🟡 D20 | `heritage_dico_gloss.tsv` | Heritage DICO lemma glosses — SLP1 / Devanāgarī / English | 24.5k · 4.4 MB | `akAra   DICO/1.html#akaara   [ ( a ) - kāra ] m. le son ou la lettre 'a'.   kaara` | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| 🟡 D21 | `heritage_forms_oracle_disagreements.tsv` | Cross-dict morphology disagreement audit | 20.5k · 1.4 MB | `ABAByAm   disagree   ABA   ABa   nominal   dcs   genuine-or-ambiguous` | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| ⚪ D22 | `heritage_only_forms.tsv` | Forms attested in Heritage but absent from MW/PWG/etc. | 29 MB | one Heritage-exclusive form per line (schema) | 11/14 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| ⚪ D23 | `heritage_mirror/DATA/` frequency tables | Heritage frequency & morphology corpus TSVs (pada_freq, comp_freq, …) | 22 MB | `comp_freq.tsv:   a   6894` | 07/26 | [heritage_mirror](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/heritage_mirror) |
-| ⚪ D24 | `sanhw1.xlsx` (Sanskrit-Hybrid Word) | Catalan-Pujol Sanskrit-Hybrid Word master headword list | 61k · 40 MB | xlsx: one headword per row (schema) | 11/14 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| ⚪ D19 | `heritage_forms_oracle.tsv.gz` | Pandora → Heritage inflected-form alignment oracle, morphology-aware | 525 KB | `form ↔ Heritage lemma + morphology` (schema; gzip) | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟡 D20 | `heritage_dico_gloss.tsv` | Heritage DICO lemma glosses — SLP1 / Devanāgarī / English | 24.5k · 4.3 MB | `akAra   DICO/1.html#akaara   [ ( a ) - kāra ] m. le son ou la lettre 'a'.   kaara` | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟡 D21 | `heritage_forms_oracle_disagreements.tsv` | Cross-dict morphology disagreement audit | 20.5k · 1.3 MB | `ABAByAm   disagree   ABA   ABa   nominal   dcs   genuine-or-ambiguous` | 07/26 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟢 D22 | `heritage_only_forms.tsv` | Forms attested in Heritage but absent from MW/PWG/etc. | 28.9 MB | one Heritage-exclusive form per line (schema) | 11/14 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟢 D23 | `heritage_mirror/DATA/` frequency tables | Heritage frequency & morphology corpus TSVs (pada_freq, comp_freq, …) | 21.0 MB | `comp_freq.tsv:   a   6894` | 07/26 | [heritage_mirror](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/heritage_mirror) |
+| 🟢 D24 | `sanhw1.xlsx` (Sanskrit-Hybrid Word) | Catalan-Pujol Sanskrit-Hybrid Word master headword list | 61k · 39.3 MB | xlsx: one headword per row (schema) | 11/14 | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
 
 ### E · Frequency & corpus
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| 🟢 E25 | VisualDCS DCS ingest + lemma summary | Canonical CoNLL-U → SQLite build + `dcs_lemma_summary.json`. ⚠ Tense=Past conflates aorist/perfect | ~15.9k lemmas | `{ "A": { "freqBand": 5, "attested": true } }` | 06/26 | [import_dcs_conllu.py](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py) |
-| 🟢 E26 | kosha frequency layer | SLP1-keyed sidecar: whole-corpus counts + per-period vectors + core-vocab coverage (DCS M9) | 83,277 · 4.7 MB | `ca   155088   ind   1   9 Vedic=8283 · 1 -800=2897 · …   176104` | 07/26 | [kosha/data/frequency](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
-| 🟢 E27 | `dcs_form2lemma.tsv` | DCS form→lemma alignment, SLP1-keyed | 408k · 9.4 MB | `''jYAya   AjYA   VERB   1` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| 🟡 E28 | `dcs_lemma2root.tsv` | DCS lemma → root mapping | 245 KB | `ABA   BA   suffix` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| 🟡 E29 | `vidyut_form2lemma.tsv` | Stage-C fallback: forms DCS missed, resolved via the **vidyut** FST | 28.5k · 745 KB | `ABAga   ABAj   noun   2` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| 🟡 E30 | `surface_dcs_misses.tsv` | DCS resolution-gap analysis — forms that failed DCS lookup | 6.6 MB | `'maratejasi   'maratejasi   1   …` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| 🟢 E31 | Zaliznyak grammar index | Compact Zaliznyak-style grammar tokens over all PWG: 98,639 headwords, 335 tokens | 98,639 rows | `a   2   f.   a   f·1   a-stem` (headword · G·T · stem-class) | 06/26 | [headword_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv) |
-| 🟢 E32 | `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 59 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | 06/26 | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
+| 🟡 E25 | VisualDCS DCS ingest + lemma summary | Canonical CoNLL-U → SQLite build + `dcs_lemma_summary.json`. ⚠ Tense=Past conflates aorist/perfect | ~15.9k lemmas · 3.4 MB | `{ "A": { "freqBand": 5, "attested": true } }` | 06/26 | [import_dcs_conllu.py](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py) |
+| 🟡 E26 | kosha frequency layer | SLP1-keyed sidecar: whole-corpus counts + per-period vectors + core-vocab coverage (DCS M9) | 83,277 · 4.7 MB | `ca   155088   ind   1   9 Vedic=8283 · 1 -800=2897 · …   176104` | 07/26 | [kosha/data/frequency](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
+| 🟡 E27 | `dcs_form2lemma.tsv` | DCS form→lemma alignment, SLP1-keyed | 408k · 9.4 MB | `''jYAya   AjYA   VERB   1` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| ⚪ E28 | `dcs_lemma2root.tsv` | DCS lemma → root mapping | 244 KB | `ABA   BA   suffix` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| ⚪ E29 | `vidyut_form2lemma.tsv` | Stage-C fallback: forms DCS missed, resolved via the **vidyut** FST | 28.5k · 744 KB | `ABAga   ABAj   noun   2` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟡 E30 | `surface_dcs_misses.tsv` | DCS resolution-gap analysis — forms that failed DCS lookup | 6.5 MB | `'maratejasi   'maratejasi   1   …` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟡 E31 | Zaliznyak grammar index | Compact Zaliznyak-style grammar tokens over all PWG: 98,639 headwords, 335 tokens | 98,639 rows · 5.8 MB | `a   2   f.   a   f·1   a-stem` (headword · G·T · stem-class) | 06/26 | [headword_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv) |
+| 🟢 E32 | `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 58.7 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | 06/26 | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
 
 ### F · Text collections & other
 
 | ID | Asset | What it is | Size | Example (real sample) | Intro | Home |
 |---|---|---|---|---|---|---|
-| 🟢 F33 | Indische Sprüche | All 7,537 Böhtlingk subhāṣitas as JSONL (public domain) | 7,537 · 6.9 MB | `{ "num":1, "saying_id":"Saying 1", "deva":"अंशो ऽपि दुष्टदिष्टानां…" }` | 07/26 | [indische_sprueche.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) |
-| 🟡 F34 | ortho-drift reform maps | 19th-c.→modern spelling maps: de 15,685 · ru 7,709 · fr 254 · en 71 | ~23.7k forms | `de_reform_map.tsv:   aachner → aachener   (×75)` | 06/26 | [SanskritSpellCheck/ortho_drift](https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/ortho_drift) |
-| 🟡 F35 | do-not-file corpus | 2,297 deliberately non-standard headword spellings across 33 dicts | 2,297 | `ABasvara` (deliberately non-standard — do not "correct") | 06/26 | [do_not_file_suppress.txt](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) |
-| ⚪ F36 | csl-santam Tamil SQLite | MW + Cappeller + Cologne Online Tamil Lexicon combined | 321,620 · 30 MB | `source(mwd·cap·otl) · headword · body` (schema; Harvard-Kyoto keys) | 06/15 | [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
+| 🟡 F33 | Indische Sprüche | All 7,537 Böhtlingk subhāṣitas as JSONL (public domain) | 7,537 · 6.9 MB | `{ "num":1, "saying_id":"Saying 1", "deva":"अंशो ऽपि दुष्टदिष्टानां…" }` | 07/26 | [indische_sprueche.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) |
+| ⚪ F34 | ortho-drift reform maps | 19th-c.→modern spelling maps: de 15,685 · ru 7,709 · fr 254 · en 71 | ~23.7k forms · 727 KB | `de_reform_map.tsv:   aachner → aachener   (×75)` | 06/26 | [SanskritSpellCheck/ortho_drift](https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/ortho_drift) |
+| ⚪ F35 | do-not-file corpus | 2,297 deliberately non-standard headword spellings across 33 dicts | 2,297 · 25 KB | `ABasvara` (deliberately non-standard — do not "correct") | 06/26 | [do_not_file_suppress.txt](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) |
+| 🟢 F36 | csl-santam Tamil SQLite | MW + Cappeller + Cologne Online Tamil Lexicon combined | 321,620 · 29.9 MB | `source(mwd·cap·otl) · headword · body` (schema; Harvard-Kyoto keys) | 06/15 | [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
 | ⚪ F37 | OCR'd dictionary front-matter | Faithful Markdown + EN/RU editions of title pages, prefaces, abbreviations | multi-dict | per dict: title-page + preface + abbreviations as Markdown (schema) | 06/26 | [csl-guides](https://github.com/gasyoun/csl-guides) |
 
 ---
@@ -259,6 +259,27 @@ M14 [vidyut GitHub release py-0.4.0, 2025-01-22](https://github.com/ambuda-org/v
 *The **vidyut** engine (M14) is what `build_vidyut_fallback.py` (L6) calls, and what generates
 `vidyut_form2lemma.tsv` (E29) and the Zaliznyak-index paradigms (E31) — one cluster, three entries
 across two sections. The interactive artifact makes that link a clickable `#vidyut` tag.*
+
+---
+
+## Contributing — add your dataset, tool or interface
+
+Anyone can propose an asset. Open an issue on
+[`SanskritLexicography`](https://github.com/gasyoun/SanskritLexicography/issues/new?title=Add+asset+to+Features+Index&labels=features-index)
+with these fields, and it gets added to this file and the interactive index:
+
+| Field | Example |
+|---|---|
+| **Name** | `my_crosswalk.tsv` |
+| **Category** | data / interface / tool |
+| **One-line description** | what it is, in a sentence |
+| **Size** | count + on-disk size (e.g. `12,946 rows · 618 KB`) |
+| **Example** | one real sample row, or a usage snippet |
+| **Repo / source URL** | the file or repo it lives in |
+| **Tags** | `#topic` clusters + `@yoursurname` |
+| **First introduced** | `MM/YY` |
+
+New assets are appended to the **Changelog** below with the date they were added.
 
 ---
 
