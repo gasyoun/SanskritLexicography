@@ -98,6 +98,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 
 - 🟠 [§41. The Sanskrit dictionary-platform landscape, probed live](#41-the-sanskrit-dictionary-platform-landscape-probed-live) — michaelmeyer.fr = 41 dicts w/ per-sense scan links; Heritage Inria bot-walled; DCS HTTPS broken; VedaWeb → Tekst; Cologne license is BY-**SA**, not NC.
 - 🟠 [§47. Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it](#47-heritage-data-is-acquirable-despite-the-anubis-wall--via-a-github-mirror-the-morphology-xml-is-not-in-it) — gitlab.inria.fr walled too; mirror [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources) (03-2025, LGPLLR) has DICO + MW-aligned pages + freq TSVs; inflected-form XML only via install-time/walled page.
+- 🟡 [§59. Böhtlingk's Indische Sprüche (both editions) already fully digitized in sanskrit-lexicon-scans](#59-böhtlingks-indische-sprüche-both-editions-already-fully-digitized-in-sanskrit-lexicon-scans-not-just-sanskrit-lexicon) — check funderburkjim personal repos + sanskrit-lexicon-scans org before assuming a Cologne primary source isn't digitized yet.
 
 ---
 
@@ -1333,6 +1334,37 @@ unresolved, not date-mapped or guessed.
 
 > **Source:** `RussianTranslation/src/audit_translation_provenance.py` live store audit
 > and conservative backfill, Codex/GPT-5 · 2026-07-03
+
+---
+
+### §59. Böhtlingk's *Indische Sprüche* (both editions) already fully digitized in `sanskrit-lexicon-scans`, not just `sanskrit-lexicon`
+
+🟡 **A prior-art search that only checks local clones + the `sanskrit-lexicon`
+org will miss finished Cologne-project digitizations that live in
+`funderburkjim`'s personal repos or the `sanskrit-lexicon-scans` org.**
+[`sanskrit-lexicon-scans/boesp1`](https://github.com/sanskrit-lexicon-scans/boesp1)
+(1st ed., 1863–5, 5,419 sayings, PDF source courtesy Mārcis Gasūns) and
+[`boesp2`](https://github.com/sanskrit-lexicon-scans/boesp2) (2nd ed., 1870–73,
+7,613 sayings, digitized by Thomas Malten) are both live, per-verse-served
+digitizations. The PWG/PWK `Spr. N` citation crosswalk was already shipped and
+closed via [`sanskrit-lexicon/PWG#87`](https://github.com/sanskrit-lexicon/PWG/issues/87)
+(2026-05-06): `csl-orig/v02/pwg/pwg.txt` carries 10,366 `<ls>`-wrapped `Spr.`
+citations distinguishing 1st-ed. (`Spr. N`) from 2nd-ed. (`Spr. (II) N`), and
+`csl-websanlexicon`'s `basicadjust.php` already generates live hrefs for them.
+
+Implication: on 2026-07-03 (Sonnet 5, `claude-sonnet-5`) this was missed —
+`SanskritLexicography/IndischeSprueche/` was built as a fresh dataset
+extraction and [Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)
+scoped a "new" crosswalk, both corrected/retracted same-day once MG flagged
+it. Any future prior-art check touching a Cologne primary source, scan set, or
+citation crosswalk must also run `gh repo list funderburkjim` and
+`gh repo list sanskrit-lexicon-scans`, and grep the actual `csl-orig` source
+text for existing `<ls>` markup, before assuming nothing exists.
+
+> **Source:** MG correction mid-session ("It exists as Jim Funderburk repo, both
+> Indische Sprüche editions"), verified via `gh api`/`curl` against
+> `sanskrit-lexicon-scans/boesp1`+`boesp2` and `sanskrit-lexicon/PWG#87`,
+> Sonnet 5 `claude-sonnet-5` · 2026-07-03
 
 ---
 
