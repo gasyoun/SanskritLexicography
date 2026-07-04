@@ -4,6 +4,12 @@
   python src/pilot/requeue_from_audit.py sTA               # all requeue keys (requeue.keys.txt)
   python src/pilot/requeue_from_audit.py sTA --transient   # only null cards (cheap re-run)
   python src/pilot/requeue_from_audit.py sTA --defect      # only real content failures (rework)
+
+A defect/all requeue always regenerates with --no-tm: a gate-flagged key's TM entry
+addresses on the input SHA, not on whether the cached translation passed the gates, so a
+plain --tm=auto rerun would silently re-serve the exact already-flagged content (see
+Uprava/FINDINGS.md, the gam requeue trap). --transient (null cards, nothing was ever
+cached) keeps --tm=auto since there is no flagged content to re-serve.
 """
 import json
 import os
@@ -77,6 +83,8 @@ def main():
 
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
+    if which != 'transient':
+        cmd.append('--no-tm')
     p = subprocess.run(cmd, cwd=os.path.dirname(os.path.dirname(HERE)),
                        text=True, encoding='utf-8', capture_output=True)
     if p.stdout.strip():
