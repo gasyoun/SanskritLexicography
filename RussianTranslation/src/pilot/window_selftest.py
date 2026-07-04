@@ -724,6 +724,18 @@ def test_release_manifest_hash_validation():
         run([sys.executable, os.path.join(SRC, 'validate_release.py'), edition], expect=1)
 
 
+def test_lang_parity_ledger_complete():
+    """LANG_PARITY.md's ledger must have a verdict for every entry (SHARED /
+    INTENTIONAL-DIVERGENCE with a note / GAP with a tracking ref), and no tracked
+    file may have drifted since its entry was last verified. See LANG_PARITY.md."""
+    import lang_parity_check
+    entries, _, _ = lang_parity_check.load_ledger()
+    violations = lang_parity_check.check(entries)
+    if violations:
+        fail('LANG_PARITY.md has %d unresolved parity violation(s):\n  %s'
+             % (len(violations), '\n  '.join(violations)))
+
+
 def test_sense_dupe_batch_override():
     """The cross-part sense-duplicate exemption must be reproducible from the committed
     rootmap_overrides.json, NOT from a gitignored hand-edited rootmap (PROCESS_AUDIT rec 15)."""
@@ -1510,6 +1522,7 @@ def main():
         test_stale_refusal_preserves_requeue,
         test_fixture_audit_does_not_clobber_live_status,
         test_release_manifest_hash_validation,
+        test_lang_parity_ledger_complete,
     ]
     for test in tests:
         test()
