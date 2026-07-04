@@ -36,7 +36,7 @@ hub repo). Authored by Fable 5 (`claude-fable-5`).
 ### Phase 0 — on-ramp ✅ DONE
 
 Probe + rules + spec, as above. Handoff for the validation run exists:
-[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/SONNET_WhitneyRoots_accent_validation.md).
+[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
 
 ### Phase 1 — bulk export → registered VisualDCS feed (unblocks everything)
 
@@ -44,10 +44,10 @@ Probe + rules + spec, as above. Handoff for the validation run exists:
   [`VisualDCS/non-derived/vedaweb/`](https://github.com/gasyoun/VisualDCS/tree/main/non-derived)
   with provenance README (CC BY 4.0 attribution), registered in `non-derived/INDEX.md` +
   PROJECT_INTERLINKS. Handoff:
-  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096_vedaweb_feed_export.md).
+  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
 
 ```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H096_vedaweb_feed_export.md and execute it.
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md and execute it.
 ```
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
@@ -61,7 +61,7 @@ Sonnet-tier chat in `GitHub\VisualDCS`.
   read from it instead.
 
 ```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\SONNET_WhitneyRoots_accent_validation.md and execute it.
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md and execute it.
 ```
 
 Sonnet-tier chat in `GitHub\WhitneyRoots`.
@@ -73,10 +73,10 @@ Sonnet-tier chat in `GitHub\WhitneyRoots`.
   feed dir; ONE `content-enhancement` issue on
   [sanskrit-lexicon/GRA](https://github.com/sanskrit-lexicon/GRA) proposing entry→RV
   deep links. Handoff:
-  [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097_gra_vedaweb_crosswalk.md).
+  [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
 
 ```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097_gra_vedaweb_crosswalk.md and execute it.
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md and execute it.
 ```
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
@@ -89,10 +89,10 @@ Sonnet-tier chat in `GitHub\VisualDCS`.
   [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
   RU context, German translations as PWG gloss witness), GO/NO-GO memo; GO items get
   their own minted H### handoffs. Handoff:
-  [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098_vedaweb_meter_translations_triage.md).
+  [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
 
 ```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H098_vedaweb_meter_translations_triage.md and execute it.
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md and execute it.
 ```
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
