@@ -1,0 +1,18 @@
+{
+  "profile": "data-package",
+  "name": "pwg-sa-ru-terminology",
+  "title": "Curated Sanskrit-to-Russian Terminology for PWG Translation Memory",
+  "licenses": [
+    {
+      "name": "CC-BY-SA-4.0"
+    }
+  ],
+  "resources": [
+    {
+      "name": "sa_ru_terminology",
+      "path": "sa_ru_terminology.ru.jsonl",
+      "format": "jsonl",
+      "mediatype": "application/x-ndjson"
+    }
+  ]
+}
