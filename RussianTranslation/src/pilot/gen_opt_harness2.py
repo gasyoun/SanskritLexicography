@@ -675,11 +675,37 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # failure (a dense card's masked bytes can be small while its sense/citation count is
     # what blows the retry cap). Byte mode (explicit --budget=N / --output-budget=off)
     # keeps the original input-byte behavior.
-    if OUTPUT_BUDGET is not None:
-        batches = _group_by_budget(batch_keys, lambda k: 1 + inputs[k]['ls'], OUTPUT_BUDGET)
+    #
+    # Fallback isolation (2026-07-04, collateral-null fix): a card with NO selfheal fallback
+    # (split_plan() < 2 fragments, or a lossy fragment mask — see the `frags` loop above)
+    # has zero recovery if its batch hard-fails the retry cap. Left mixed into ordinary
+    # batches, such a card's survival depends entirely on which OTHER cards happen to share
+    # its batch — a dense card WITH a fallback can blow the whole-batch retry cap, and the
+    # small no-fallback card goes down with it for reasons unrelated to its own content
+    # (observed 2026-07-04 vid run: 10/10 null cards traced to 2 batches that hard-failed,
+    # every null a no-fallback card in one of them). Group no-fallback keys into their OWN
+    # batch(es), separate from fallback-having keys, so a batch-wide hard failure never takes
+    # down an unrelated card that had nothing to do with causing it. A no-fallback batch can
+    # still fail on its own content, but that failure is then attributable to itself, not to
+    # a neighbor.
+    if SELFHEAL:
+        fallback_keys = [k for k in batch_keys if k in frags]
+        no_fallback_keys = [k for k in batch_keys if k not in frags]
     else:
-        batches = _group_by_budget(
-            batch_keys, lambda k: len(inputs[k]['skeleton']) + len(inputs[k]['portrait']), budget)
+        fallback_keys, no_fallback_keys = batch_keys, []
+    if OUTPUT_BUDGET is not None:
+        sizer = lambda k: 1 + inputs[k]['ls']
+        budget_n = OUTPUT_BUDGET
+    else:
+        sizer = lambda k: len(inputs[k]['skeleton']) + len(inputs[k]['portrait'])
+        budget_n = budget
+    batches = (_group_by_budget(fallback_keys, sizer, budget_n)
+               + _group_by_budget(no_fallback_keys, sizer, budget_n))
+    if no_fallback_keys:
+        print('  fallback-isolation: %d no-selfheal-fallback card(s) routed to %d dedicated batch(es), '
+              'separate from %d fallback-having card(s)'
+              % (len(no_fallback_keys), len(_group_by_budget(no_fallback_keys, sizer, budget_n)),
+                 len(fallback_keys)))
 
     # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
     # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
