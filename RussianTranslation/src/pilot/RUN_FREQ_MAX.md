@@ -62,11 +62,12 @@ tracked-file drift and is wired into `window_selftest.py`
   and G10 edition cut remain blocked until human review/gold work is done.
   `preflight_remaining_gates.py` and `release_readiness.py` are report-only by default; add
   `--fail-on-blocked` when using them as CI/go-no-go gates.
-- **Scope ruling (MG, 04-07-2026): drain ALL remaining DCS-attested verb roots**, in
-  frequency order, root-by-root. The worklist is enumerated reproducibly by
-  [`verb_worklist.py`](verb_worklist.py) (verbs01 universe ∩ freq manifest − promoted
-  store): 749 attested verb roots, 46 promoted, **703 remaining** (~5.3 MB source) as of
-  04-07-2026. Drain discipline lives in the standing handoff
+- **Scope ruling (MG, 04-07-2026): drain ALL remaining DCS-attested verb roots**, root-by-root.
+  The worklist is enumerated reproducibly by [`verb_worklist.py`](verb_worklist.py) (verbs01
+  universe ∩ freq manifest − promoted store): 749 attested verb roots, 46 promoted,
+  **703 remaining** (~5.3 MB source) as of 04-07-2026. Operator `--top` output is filtered
+  to roots with existing rootmaps; the JSON keeps the full backlog plus
+  `blocked_missing_rootmap`. Drain discipline lives in the standing handoff
   [`H151`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md).
 - The per-root loop below is unchanged — "all roots next batch" scales the QUEUE, not the
   width. Roots still run **one at a time (≤3-wide max)**; the Slice-D 18×-parallel collapse
@@ -92,7 +93,9 @@ Observed state:
 
 - `scale_manifest.freq.json`: **43,968 / 106,082** PWG headwords are DCS-attested
   (**41%**).
-- Frequency top 8: `sTA`, `BU`, `gam`, `yuj`, `as`, `i`, `vid`, `han`.
+- Frequency top lists are advisory unless they come from current
+  `verb_worklist.py --top` runnable output; roots missing rootmaps are reported separately in
+  `blocked_missing_rootmap`.
 - Top 3 with `--root-split`: already generated locally (`0 to generate`), so the
   machine has the required rootmaps/sub-cards for `sTA`, `BU`, and `gam`.
 - `verify_root_glue.py`: **ALL GATES PASS**; lossless round-trip, 0 secondary
@@ -133,13 +136,14 @@ manner/position forcing) as soft-judged guidance (judge check 7). Source tables:
 The loop is fixed: **preflight → generate optimized harness → Max Workflow → deterministic
 audit → requeue or sampled semantic judging**. Do not skip or reorder these steps.
 
-For enough data to estimate speed and quality, use staged roots:
+For enough data to estimate speed and quality, use the live runnable queue plus
+`perf_preflight.py`:
 
-1. **Stage A:** run fresh `sTA` only and audit/requeue until mechanically clean.
-2. **Stage B:** run `BU`, `as`, and `i` one root at a time after `sTA` clears.
-3. **Stage C:** before `gam`, `yuj`, `vid`, or `han`, run
-   `root_window_status.py <root> --prune-stale`, recheck, then generate harnesses
-   only for roots that are structurally clean.
+1. Generate the current runnable queue with `python src\pilot\verb_worklist.py --top 20`.
+2. Run `perf_preflight.py` over the next runnable roots and follow its recommended order.
+3. Give any `defer-calibrate` root a dedicated calibration/session. Current calibration
+   warning: `sTA` live preflight on 04-07-2026 reports 123 cards, 19 batches, 241 expected
+   agents, `defer-calibrate`; do not use the older ~30-agent estimate.
 
 ```powershell
 cd RussianTranslation\src
@@ -156,7 +160,8 @@ Preflight the root before spending Claude/Max tokens:
 ```powershell
 python src\pilot\root_window_status.py sTA
 python src\pilot\perf_preflight.py sTA
-python src\pilot\perf_preflight.py sTA BU gam as i yuj vid han
+python src\pilot\verb_worklist.py --top 20
+python src\pilot\perf_preflight.py sTA BU yuj as i tap dah ram
 ```
 
 The first command prints the structural state plus one `next action` and one
