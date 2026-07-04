@@ -73,9 +73,11 @@ def stale_check(root, workflow_meta, workflow_keys):
         if invalid:
             check['errors'].append('workflow selected keys not in current rootmap: %s' %
                                    ', '.join(invalid[:12]))
-    if workflow_keys != expected_keys:
-        missing = sorted(set(expected_keys) - set(workflow_keys))
-        unexpected = sorted(set(workflow_keys) - set(expected_keys))
+    workflow_key_set = set(workflow_keys)
+    expected_key_set = set(expected_keys)
+    if workflow_key_set != expected_key_set:
+        missing = sorted(expected_key_set - workflow_key_set)
+        unexpected = sorted(workflow_key_set - expected_key_set)
         check['errors'].append('workflow keys do not match current selected rootmap keys '
                                '(workflow=%d expected=%d missing=%d unexpected=%d)' %
                                (len(workflow_keys), len(expected_keys), len(missing), len(unexpected)))

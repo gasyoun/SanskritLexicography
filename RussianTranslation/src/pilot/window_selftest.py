@@ -30,7 +30,7 @@ if SRC not in sys.path:
 
 from workflow_payload import workflow_payload
 from window_common import harness_meta
-from window_provenance import current_root_provenance
+from window_provenance import current_root_provenance, stale_check
 from prompt_rule_audit import (
     DEFAULT_TEMPLATE,
     audit_card_result,
@@ -144,6 +144,33 @@ def test_harness_scope_and_tools():
     if agent_calls != tool_guards or not tool_guards:
         fail('optimized harness tools guard mismatch: %d agent calls, %d guards' %
              (agent_calls, tool_guards))
+
+
+def test_stale_check_key_order_independent():
+    """stale_check must compare workflow result-key order against meta.selected_keys as a
+    SET, not a positional list — the harness assembles results TM-lane-first then
+    DEGENERATE-lane then per-batch-completion order, which never matches the rootmap's
+    declared order even when every key is present exactly once."""
+    meta = harness_meta()
+    if not meta.get('ok'):
+        fail('optimized harness missing or invalid: %s' % meta.get('error'))
+    root = meta.get('root')
+    current = current_root_provenance(root, meta.get('selected_keys'))
+    if not current.get('ok'):
+        fail('current root provenance unavailable: %s' % current.get('error'))
+    workflow_meta = {
+        'root': root,
+        'safe_root': current['safe_root'],
+        'rootmap_sha256': current['rootmap_sha256'],
+        'selected_keys': current['selected_keys'],
+        'input_hashes': current['input_hashes'],
+    }
+    reordered_keys = list(reversed(current['selected_keys']))
+    check = stale_check(root, workflow_meta, reordered_keys)
+    if any('do not match' in err for err in check.get('errors') or []):
+        fail('stale_check flagged reordered-but-identical key set as a mismatch')
+    if check['stale']:
+        fail('stale_check treated an order-only difference as stale: %s' % check.get('errors'))
 
 
 def test_prompt_rule_audit_template():
@@ -1500,6 +1527,7 @@ def main():
         test_export_translation_dedup,
         test_requeue_transient_vs_defect_state,
         test_harness_scope_and_tools,
+        test_stale_check_key_order_independent,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
         test_semantic_risk_checker,
