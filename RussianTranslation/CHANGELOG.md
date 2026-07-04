@@ -8,6 +8,33 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## 2026-07-04
+
+### Pipeline versioning — stamp WHICH tooling produced each translation
+- New `src/pipeline_version.py` + manifest `src/pipeline_versions.json`: a semver
+  per output-affecting component family — **prompt** (`pwg_ru_prompts/`),
+  **glossary** (`glossaries/`), **script** (`src/` deterministic code) — orthogonal
+  to the Claude model version and to this CHANGELOG release. Bump rule is by re-run
+  impact: MAJOR = rows below MUST be re-translated, MINOR = re-run recommended,
+  PATCH = no re-run. `min_valid` per component is the re-run threshold. This answers
+  "a bug was fixed in the tooling — which stored translations predate the fix and
+  need a batch re-run?", which the model version alone could not.
+- Every new row now carries `provenance.pipeline` (flat `<comp>_version`/`<comp>_sha`
+  keys + echoed `model_version`), wired into both store producers: `run_batch.py`
+  and `promote_final_cards.py`.
+- **Forgotten-bump guard**: the manifest records the content SHA each version was
+  frozen at; `pipeline_version.py check` (and a WARNING in `run_batch.py collect`)
+  fires when the prompt/glossary/script files changed but the version was not bumped.
+  Run `pipeline_version.py freeze` after a deliberate bump.
+- `audit_translation_provenance.py` now reports pipeline-version groups, missing-stamp
+  count, and stale (below-`min_valid`) rows. `pipeline_version.py stale` lists rows
+  needing re-translation; `stamp-md` refreshes a `_pipeline …_` footer on rendered
+  `.md` cards; `backfill` stamps legacy unversioned rows with *explicitly asserted*
+  versions (never guessed), mirroring the no-guessing philosophy of the provenance audit.
+- Live store state at introduction: 10,794 rows, all pre-versioning → bucketed as
+  "unversioned legacy" (NOT flagged stale, so the deploy does not falsely mark every
+  historical row for re-run). Baseline frozen at prompt/glossary/script v1.0.0.
+
 ## 2026-07-03
 
 ### Translation provenance audit/backfill
