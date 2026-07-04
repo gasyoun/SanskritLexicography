@@ -72,6 +72,25 @@ card is translated; Sanskrit (`<s>`), grammar abbreviations (`<gram>`), and
 source references (`<ls>`) are deliberately left untouched. Do not "fix" that —
 it is intentional. Most content in this directory is in Russian.
 
+## RussianTranslation/ — pwg_ru (PWG→RU/EN, a separate pipeline from mw_ru above)
+
+A second, independent translation effort in the same directory: PWG
+(Böhtlingk-Roth, "Petersburg Dictionary") → Russian (primary) and English
+(secondary), run headword-by-headword through the Claude Workflow tool at
+scale (749 DCS-attested verb roots alone). Start at
+[`RussianTranslation/PIPELINE_HISTORY.md`](RussianTranslation/PIPELINE_HISTORY.md)
+for the chronological "how did we get here" orientation (major fixes,
+recurring failure patterns, current state) before touching any pwg_ru code —
+it exists specifically so a fresh session doesn't rediscover an already-fixed
+bug. Live operating procedure:
+[`RussianTranslation/src/pilot/RUN_FREQ_MAX.md`](RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+(includes a worked end-to-end example with real numbers). Cross-language
+(RU/EN, and any future language) fix-parity policy — mandatory classification
+of every fix as SHARED / INTENTIONAL-DIVERGENCE / GAP before closing a
+session, mechanically enforced by a selftest gate:
+[`RussianTranslation/LANG_PARITY.md`](RussianTranslation/LANG_PARITY.md).
+Live session journal: [`RussianTranslation/.ai_state.md`](RussianTranslation/.ai_state.md).
+
 ## Authoring conventions
 
 - Markdown is the primary authored format (roadmap, changelog, lectures, the

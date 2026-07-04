@@ -80,7 +80,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -97,7 +97,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -114,7 +114,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -148,7 +148,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -165,7 +165,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -181,7 +181,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The bare 'sonnet' alias resolved to Sonnet 4.6 (not 5.0) on a prior EN run — pinned explicitly there after that surprise. RU's alias was never observed to misresolve, so it was left alone rather than touching a stable production path for a problem it doesn't have. Re-evaluate if RU is ever caught on a stale alias too.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "a6a1438d13e0f0a92aa261f024c6cc65d96c15c30eb97d4dd179ac8b7a0e8e12"
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433"
     }
   },
   {
@@ -241,9 +241,79 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_final_cards.py": "572bb45477ce4856f6caba7e813e00a146bbeeedf3ae04b471e4616dafaa8935",
       "src/promote_en.py": "7d3ce9680e304fff8ba0bcaba843945c36c6f0894441a56e8695ec58a6b5ebfe"
     }
+  },
+  {
+    "id": "presplit_agent_count_estimator",
+    "mechanism": "agent_expected_after_tm counted len(presplit) (1 per giant) instead of len(frags[k]) (true fragment-call count per giant)",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433",
+      "src/pilot/window_selftest.py": "c0838db18869807a5b03da8b31542a38ffa10e17adfc8ba95ea9ebc0712b8a5a"
+    }
+  },
+  {
+    "id": "no_fallback_batch_isolation",
+    "mechanism": "Batching separates no-selfheal-fallback keys (split_plan() < 2 fragments, or lossy fragment mask) into their own dedicated batch(es), never mixed with fallback-having keys, so a batch-wide hard failure never takes down an unrelated card",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching).",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "cde5e4c2243a293a9e958f7d76deae214489f3c61d4757d6404c3b47906c2433",
+      "src/pilot/window_selftest.py": "c0838db18869807a5b03da8b31542a38ffa10e17adfc8ba95ea9ebc0712b8a5a"
+    }
   }
 ]
 ```
+
+## Worked examples
+
+**Case A — you just fixed a bug in lang-agnostic code.** (Real example,
+`requeue_no_tm_enforcement` above.) You edited `requeue_from_audit.py`, which
+doesn't take a `--lang` flag at all — it resolves language from the root's
+own rootmap. Classify **SHARED**, add an entry with both `ru` and `en` in
+`languages`, write a one-line `note` explaining *why* it's lang-agnostic (so
+a future reader doesn't have to re-derive that), leave `tracking` empty, and
+run `python src/pilot/lang_parity_check.py --update-hash <id>` to snapshot
+the file. Run `python src/pilot/window_selftest.py` to confirm the gate
+passes.
+
+**Case B — you found a fix that landed on one language and not the other.**
+(Real example, `gate_fixes_20260703_ru_only` above.) You don't fix the gap in
+the same session unless it's trivial — classify **GAP**, write `note`
+explaining the asymmetry (what's different about the two paths that let this
+happen), and `tracking` MUST point somewhere real: a spawned task id, an
+`H###` handoff, or a GTD row. `lang_parity_check.py` will refuse an empty
+`tracking` field — this is the mechanism, not a suggestion.
+
+**Case C — you touched a file a ledger entry already tracks, for an
+unrelated reason.** `window_selftest.py` will fail with a drift message
+naming the entry and file. Re-read that entry's `note` — if your edit didn't
+touch the behavior it describes (e.g. you fixed an unrelated bug 40 lines
+away), just re-snapshot: `python src/pilot/lang_parity_check.py --update-hash
+<id>`. If your edit DID change that behavior (e.g. you made a SHARED
+mechanism lang-specific), update the verdict and note honestly before
+re-snapshotting — the drift check exists precisely to force this fork, not
+to be rubber-stamped past.
+
+**Case D — a 3rd language is proposed.** See the section below.
 
 ## When a 3rd language is proposed
 

@@ -1352,6 +1352,20 @@ def test_perf_preflight_dense_presplit():
         fail('dense presplit key must report a nonzero expected agent lane')
 
 
+def test_perf_preflight_presplit_counts_fragments_not_one():
+    """agent_expected_after_tm for a presplit giant must be its true fragment-group count,
+    not 1 — the old len(presplit) formula underestimated vid's real 102-agent run as 13."""
+    key = 'gam~~h0_00_pwg00'
+    proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
+                '--keys=%s' % key, '--no-tm', '--json'], 0)
+    report = json.loads(proc.stdout)
+    if key not in report.get('presplit_keys', []):
+        fail('fixture card must still route to presplit')
+    if report.get('agent_expected_after_tm', 0) < 5:
+        fail('a 150+-<ls> presplit giant needs many fragment calls, not ~1 — '
+             'got agent_expected_after_tm=%r' % report.get('agent_expected_after_tm'))
+
+
 def test_perf_preflight_degenerate_zero_agent():
     proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'ab',
                 '--nominal', '--keys=ab', '--json'], 0)
@@ -1379,9 +1393,14 @@ def test_perf_preflight_multi_root_matrix_and_order():
         fail('han should be recognized as fully cached / zero-agent in the local TM preflight')
     if 'han' not in matrix.get('recommended_order', {}).get('skip_cached', []):
         fail('fully cached roots must be listed in skip_cached')
-    run_first = matrix.get('recommended_order', {}).get('run_first', [])
-    if 'vid' not in run_first or 'as' not in run_first:
-        fail('low-agent roots should appear in recommended run order')
+    # vid and as each carry presplit giants (fragment-lane cards), so their true
+    # agent_expected_after_tm is dozens, not the ~13-14 the pre-fix len(presplit) formula
+    # reported (the real 2026-07-04 vid run spent 102 agents) — they belong in defer, not
+    # run_first, once the estimate reflects real fragment-call counts.
+    deferred = matrix.get('recommended_order', {}).get('defer', [])
+    if 'vid' not in deferred or 'as' not in deferred:
+        fail('presplit-giant roots should defer-calibrate once agent_expected_after_tm '
+             'reflects real fragment-call counts, not the old len(presplit) undercount')
 
 
 def test_perf_preflight_fragment_tm_empty_warning():
@@ -1506,6 +1525,52 @@ def test_frag_tm_reuse():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_no_fallback_batch_isolation():
+    """Collateral-null fix (2026-07-04): a card with NO selfheal fallback (split_plan() < 2
+    fragments) must never share a batch with a card that DOES have one. Mixed together, a
+    whole-batch hard failure (StructuredOutput retry cap) drags the no-fallback card down
+    with it even though its own content had nothing to do with the failure — only the
+    fallback-having card can be rescued via selfHeal. Verified on real 'gam' fixtures: pick
+    one splittable card and one unsplittable card, force them into the same output-budget
+    window, and assert build() never puts them in the same batch."""
+    import gen_opt_harness2 as gh
+    from autosplit_requeue import plan as split_plan
+    from window_common import rootmap_path, input_paths, read_text
+    root = 'gam'
+    rmpath, _ = rootmap_path(root)
+    if not rmpath:
+        return  # inputs not present in this checkout — nothing to assert
+    rootmap, keys = gh.selected_keys(root, None)
+    keys = [k for k in keys if os.path.exists(input_paths(k)[0])]
+    fallback_key, nofallback_key = None, None
+    for k in keys:
+        pl = split_plan(read_text(input_paths(k)[0]))
+        if len(pl) >= 2 and fallback_key is None:
+            fallback_key = k
+        elif len(pl) < 2 and nofallback_key is None:
+            nofallback_key = k
+        if fallback_key and nofallback_key:
+            break
+    if not (fallback_key and nofallback_key):
+        return  # fixture set doesn't offer both shapes — nothing to assert
+    # a generous shared OUTPUT_BUDGET so both cards would land in ONE batch under the
+    # pre-fix (budget-only) grouping — the isolation must still keep them apart.
+    saved_budget = gh.OUTPUT_BUDGET
+    gh.OUTPUT_BUDGET = 1000
+    try:
+        js, batches = gh.build(root, [fallback_key, nofallback_key], rootmap, 100000, tm_path=None)
+    finally:
+        gh.OUTPUT_BUDGET = saved_budget
+    for b in batches:
+        if fallback_key in b and nofallback_key in b:
+            fail('a no-selfheal-fallback card must never share a batch with a '
+                 'fallback-having card — got both in %r' % (b,))
+    if not any(nofallback_key in b for b in batches):
+        fail('no-fallback key must still be owed by some batch')
+    if not any(fallback_key in b for b in batches):
+        fail('fallback key must still be owed by some batch')
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -1515,11 +1580,13 @@ def main():
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,
         test_perf_preflight_dense_presplit,
+        test_perf_preflight_presplit_counts_fragments_not_one,
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
         test_perf_preflight_fragment_tm_empty_warning,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
+        test_no_fallback_batch_isolation,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,

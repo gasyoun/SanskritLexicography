@@ -364,6 +364,45 @@ measurements in `window_status.json` and `window_ledger.jsonl`. Append milestone
 `PILOT_COST.md` §6 when a root or run-to-cap tranche is complete. The point is to answer the
 feasibility question: one Max seat over roughly two months vs a paid API bulk run.
 
+## Worked example — one real root, start to finish (vid, 04-07-2026)
+
+A concrete run, with real numbers, so the loop above isn't just abstract steps.
+`vid` (55 sub-cards, 5 giant heads at 141-193 `<ls>` citations each):
+
+1. **Preflight:** `python src\pilot\perf_preflight.py vid as BU yuj` → recommended
+   order `vid, as, BU, yuj` (agent estimates as of the fixed estimator: 63/21/…).
+2. **Generate:** `python src\pilot\gen_opt_harness2.py vid` → 55 cards in 8 batches,
+   5 cards routed to presplit (each too dense for one call).
+3. **Run:** drive `run_pilot_wf.opt2.js` via the Workflow tool from the Claude Code
+   session (not a manual Max-surface save — see the H145 loss lesson above).
+   Real result: **102 agents, 6,626,992 tokens, ~19 min wall-clock.**
+4. **Capture:** read the workflow task's `.result` from its output file (holds the
+   full `{meta, summary, results}` payload uncapped) and write it to `wf_output.json`
+   directly — do not rely on the completion notification text, which truncates.
+5. **Reorder before auditing:** the harness emits `results` in TM-lane /
+   degenerate-lane / batch-completion order, which essentially never matches the
+   rootmap's declared `meta.selected_keys` order even though every key is present.
+   `window_provenance.stale_check` now compares as sets (fixed 04-07-2026), so this
+   step is no longer mandatory, but reordering to `meta.selected_keys` order first
+   is still good hygiene (keeps `wf_output.json` in a canonical, diffable shape).
+6. **Audit:** `python src\pilot\audit_window.py wf_output.json --root vid --write-requeue`
+   → 34/55 clean, 21 requeue (10 transient null, 11 defect), 8 partial-but-usable.
+7. **Requeue:** `python src\pilot\requeue_from_audit.py vid` (now automatically
+   appends `--no-tm` on anything but `--transient` — fixed 04-07-2026) → a 21-key
+   harness, ~7 agents expected. Run it the same way as step 3, then repeat steps
+   4-6 until requeue is empty or clearly diminishing (compare to the `gam` history:
+   two rounds recovered most residuals, a stubborn few needed a manual resolution).
+8. **Promote + rebuild TM:** `promote_final_cards.py --gen-model-version claude-sonnet-5`,
+   then `translation_memory.py build --lang ru` (+ `build-frags` if any heal emitted
+   `frag_prov`).
+9. **Micro-commit**, move to the next queued root.
+
+What this run taught (folded into the process above, not left as trivia): the
+preflight's agent-count estimate was badly wrong for presplit-heavy roots (now
+fixed); 100% of the null cards traced to 2 batches that failed outright, and
+specifically to the undersized cards inside them that have no fragment fallback
+of their own (an open follow-up, not yet fixed — see `PIPELINE_HISTORY.md`).
+
 ## Done criterion
 
 The frequency queue milestone is done when:
