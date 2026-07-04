@@ -1571,6 +1571,65 @@ def test_no_fallback_batch_isolation():
         fail('fallback key must still be owed by some batch')
 
 
+def test_sense_dense_card_presplit():
+    """H155 (2026-07-04): a SENSE-dense card must presplit even when its CITATION weight
+    (1+<ls>) is FAR below the output budget. A PW addenda card compresses a whole root article
+    (base verb + Caus/Desid + every prefix combination) into dozens of terse senses carrying
+    few citations, so the citation metric (1+<ls>) ranks it as one of the LIGHTEST cards while
+    its real output surface (dozens of {tag,german,russian} sense objects) is the HEAVIEST — it
+    deterministically blows the whole-card StructuredOutput retry cap (tyaj~~h0_zz_pw: 35 senses
+    in 11 <ls>, weight 12, stalled ~7 min retrying the identical call). The fragment-count
+    trigger (frag count > SENSE_PRESPLIT_BUDGET) routes it straight to the proven fragment lane,
+    same as the citation giants — independent of the citation trigger and of byte/citation
+    batching mode. Uses a synthetic card (30 senses, 1 <ls>) so it never depends on a specific
+    corpus fixture."""
+    import gen_opt_harness2 as gh
+    senses = '\n'.join('<div n="1">— %d〉 {%%Bedeutung %d%%}.' % (i, i)
+                       for i in range(1, 31))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n' + senses + '\n')
+    key = 'zz~~synthetic_sense_dense'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')  # empty portrait — exactly the real tyaj~~h0_zz_pw shape
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            # citation weight 1+<ls>=2 is far below OUTPUT_BUDGET(90): only the SENSE trigger
+            # can route this card. nominal mode makes the key its own card (no rootmap needed).
+            js, batches = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            import re as _re
+            presplit = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js, _re.M).group(1))
+            batched = {k for b in batches for k in b}
+            if key not in presplit:
+                fail('a sense-dense card (30 senses, 1 <ls>) must be routed to presplit by the '
+                     'fragment-count trigger; got PRESPLIT=%r batches=%r' % (presplit, batches))
+            if key in batched:
+                fail('a presplit card must be pulled OUT of the whole-card batch lane, got it in '
+                     '%r' % (batches,))
+            # the citation trigger alone must NOT explain it (proves the sense trigger is load-
+            # bearing): with the sense trigger disabled, the card falls back to a batch.
+            saved_sb = gh.SENSE_PRESPLIT_BUDGET
+            gh.SENSE_PRESPLIT_BUDGET = None
+            try:
+                js2, batches2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+                presplit2 = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js2, _re.M).group(1))
+            finally:
+                gh.SENSE_PRESPLIT_BUDGET = saved_sb
+            if key in presplit2:
+                fail('with --sense-presplit-budget=off the citation-light card must NOT presplit '
+                     '(only the sense trigger should route it); got PRESPLIT=%r' % presplit2)
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -1587,6 +1646,7 @@ def main():
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
+        test_sense_dense_card_presplit,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,

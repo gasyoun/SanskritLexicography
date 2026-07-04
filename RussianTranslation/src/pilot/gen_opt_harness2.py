@@ -79,6 +79,26 @@ OUTPUT_BUDGET = 90 # DEFAULT 90 citation-weighted units since 2026-07-03 (raised
                    #  Byte mode is still reachable: an EXPLICIT --budget=N (without
                    #  --output-budget) or --output-budget=off — keeps documented byte-budget
                    #  invocations (e.g. FU1 --budget=6000) exact.
+SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECOND, orthogonal
+                   #  presplit trigger added 2026-07-04 (H155, tyaj~~h0_zz_pw stall). The
+                   #  citation metric (1 + <ls>) predicts whole-card StructuredOutput failure for
+                   #  CITATION giants (150-<ls> pwg00 heads) but is BLIND to SENSE-dense cards: a
+                   #  PW addenda card that compresses a whole root article (base verb + Caus/Desid
+                   #  + every prefix combination) can carry ~35 senses in only ~11 <ls>, so its
+                   #  1+<ls>=12 weight ranks it as one of the LIGHTEST cards while its actual
+                   #  output surface (dozens of {tag,german,russian} sense objects + reproducing
+                   #  ~140 masked tokens in exact positions) is the HEAVIEST — deterministically
+                   #  blowing the retry cap as a whole card (tyaj~~h0_zz_pw: 35 senses, stalled
+                   #  ~7 min retrying the identical call before MG stopped it; the gam~~h0_zz_pw01
+                   #  precedent hit the cap and only recovered via selfheal). A card whose
+                   #  deterministic FRAGMENT count (== sense-units the model must emit) exceeds
+                   #  this budget is routed STRAIGHT to the proven fragment lane, same as the
+                   #  citation giants — converting up-to-5 doomed retries + binary-split cascade
+                   #  into zero. Threshold 20 sits on a clean shelf: only ~0.2% of cards carry
+                   #  >20 senses (survey 2026-07-04), and every known-good whole-card head is far
+                   #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
+                   #  (sam translates fine at 34 <ls>), so this budget is intentionally much
+                   #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
 
 
 def grammar_text(root):
@@ -201,6 +221,9 @@ def parse_args(argv):
             globals()['SELFHEAL'] = False
         elif a.startswith('--selfheal-budget='):
             globals()['SELFHEAL_GROUP_BUDGET'] = int(a.split('=', 1)[1])
+        elif a.startswith('--sense-presplit-budget='):
+            v = a.split('=', 1)[1].strip().lower()
+            globals()['SENSE_PRESPLIT_BUDGET'] = None if v in ('off', '0', 'none') else int(v)
         elif a == '--binary-split':
             globals()['BINARY_SPLIT'] = True # default since 2026-07-02; kept for documented runbooks
         elif a == '--no-binary-split':
@@ -616,7 +639,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             print('  frag-tm: %d cached fragment(s) available from %s'
                   % (len(frag_cache), os.path.basename(frag_file)))
 
-    frags, phf, frag_tm = {}, {}, {}
+    frags, phf, frag_tm, frag_n = {}, {}, {}, {}
     if SELFHEAL:
         import translation_memory as _tm
         for k in keys:
@@ -643,6 +666,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             if not fl:
                 continue
             groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
+            frag_n[k] = len(pl)   # raw deterministic fragment count == sense-units the model
+                                  # must emit; drives the sense-density presplit trigger below
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
                           'fsha': it['fsha']} for it in g] for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
@@ -653,21 +678,39 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             if any(slot for grp in gview for slot in grp):
                 frag_tm[k] = gview
 
-    # Pre-split router (MG decision 2026-07-02): a card whose citation-weighted output
-    # complexity (1 + <ls>) alone exceeds the WHOLE per-batch output budget is near-certain
-    # to blow the StructuredOutput retry cap as a whole card (observed: the 125-<ls> pwg00
-    # heads failed even solo — HANDOFF_2026-07-01_pwg_en_fu1_finalize.md), and every one of
-    # those up-to-5 retries is paid-for waste. Route such cards STRAIGHT to the proven
-    # selfheal fragment path at run time instead of letting them fail first. Only cards with
-    # a usable fragment fallback are routed; unsplittable ones keep the old solo-batch try.
+    # Pre-split router (MG decision 2026-07-02): a card whose output complexity alone is
+    # near-certain to blow the StructuredOutput retry cap as a whole card is routed STRAIGHT to
+    # the proven selfheal fragment path at run time instead of letting it fail first (every one
+    # of those up-to-5 retries + the binary-split cascade is paid-for waste). TWO orthogonal
+    # triggers, because two independent things drive whole-card failure:
+    #   (a) CITATION density — 1 + <ls> exceeds the whole per-batch output budget (the 125-150
+    #       <ls> pwg00 heads failed even solo — HANDOFF_2026-07-01_pwg_en_fu1_finalize.md).
+    #   (b) SENSE density — the deterministic fragment count (== sense-objects the model must
+    #       emit) exceeds SENSE_PRESPLIT_BUDGET. A PW addenda card can pack ~35 senses into ~11
+    #       <ls>, so (a) sees weight 12 and waves it through while its real output surface is the
+    #       heaviest of the root — the tyaj~~h0_zz_pw stall (H155, 2026-07-04). Independent of
+    #       byte/citation batching mode: a sense-dense card fails whole regardless of how the
+    #       OTHER cards are batched.
+    # Only cards with a usable fragment fallback are routed; unsplittable ones keep the old
+    # solo-batch try.
     presplit = []
-    if SELFHEAL and OUTPUT_BUDGET is not None:
-        presplit = [k for k in keys
-                    if k not in tm_keys and k not in degenerate_keys
-                    and (1 + inputs[k]['ls']) > OUTPUT_BUDGET and k in frags]
-        for k in presplit:
-            print('  presplit: %s (%d <ls> exceeds output budget %d) -> direct fragment translation'
-                  % (k, inputs[k]['ls'], OUTPUT_BUDGET))
+    if SELFHEAL:
+        cite_budget = OUTPUT_BUDGET  # None in byte mode -> citation trigger off, sense trigger stays
+        for k in keys:
+            if k in tm_keys or k in degenerate_keys or k not in frags:
+                continue
+            cite_hit = cite_budget is not None and (1 + inputs[k]['ls']) > cite_budget
+            sense_hit = SENSE_PRESPLIT_BUDGET is not None and frag_n.get(k, 0) > SENSE_PRESPLIT_BUDGET
+            if not (cite_hit or sense_hit):
+                continue
+            presplit.append(k)
+            why = []
+            if cite_hit:
+                why.append('%d <ls> exceeds output budget %d' % (inputs[k]['ls'], cite_budget))
+            if sense_hit:
+                why.append('%d senses/fragments exceed sense budget %d'
+                           % (frag_n[k], SENSE_PRESPLIT_BUDGET))
+            print('  presplit: %s (%s) -> direct fragment translation' % (k, '; '.join(why)))
     batch_keys = [k for k in keys if k not in presplit and k not in tm_keys and k not in degenerate_keys]
 
     # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
@@ -733,6 +776,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
+        'sense_presplit_budget': SENSE_PRESPLIT_BUDGET if SELFHEAL else None,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_auto': bool(tm_auto),

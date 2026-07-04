@@ -161,6 +161,25 @@ same session rather than worked around:
    — any run whose harness emitted results in completion order rather than
    rootmap-declared order (the normal case) was wrongly refused as
    `stale_artifact`, blocking gates/glue outright. Fixed to compare as sets.
+5. **The presplit router was blind to SENSE density** (H155). `tyaj`'s drain
+   stalled ~7 min on one agent retrying the identical call and never
+   producing valid output — the `tyaj~~h0_zz_pw` PW addenda card compresses a
+   whole root article (base verb + Caus/Desid + every prefix combination)
+   into ~35 terse senses carrying only 11 `<ls>`, so its citation weight
+   `1+<ls>=12` ranked it among the *lightest* cards while its real output
+   surface (dozens of `{tag,german,russian}` sense objects + ~140 masked
+   tokens to reproduce exactly) was the *heaviest* — it deterministically
+   blew the whole-card StructuredOutput retry cap. The presplit router
+   (built in Phase 5 for the 150-`<ls>` citation giants) only measured
+   citations, so it waved this card through into a normal batch. Fixed by
+   adding a second, orthogonal presplit trigger keyed on the deterministic
+   fragment count (== sense-objects to emit) vs a new `SENSE_PRESPLIT_BUDGET`
+   (20; only ~0.2% of cards exceed it, a clean shelf above every known-good
+   whole-card head). Validated live: the `[sam, zz_pw]` pair that stalled now
+   returns ok:2/null:0 with `zz_pw` healed complete via 4 fragment groups.
+   The `_zz_pw` addenda class was a known StructuredOutput-cap trigger
+   (`gam~~h0_zz_pw01` hit it before and only recovered via selfheal after the
+   doomed retries); this makes the recovery *immediate* instead of paid-for.
 
 A cross-language audit also found that 3 of the Phase-6 gate-bug fixes
 never reached the EN audit path (a separate implementation,
@@ -205,6 +224,18 @@ likely the SAME class, not a new bug:
   and this session's presplit-agent-count bug undercounted exactly the same
   kind of thing: a card that needs to be broken into many pieces was priced
   as if it were one piece.
+- **A complexity metric tuned for one failure driver is blind to a second
+  one.** The presplit router priced output complexity as `1+<ls>` (citation
+  count), which correctly flags 150-`<ls>` citation giants but *silently
+  waves through* SENSE-dense cards — a PW `_zz_` addenda card can pack ~35
+  senses into ~11 `<ls>`, looking trivial by citations while being the
+  heaviest card to actually emit. Symptom: one agent stuck retrying the
+  identical `agent()` call for minutes on `root: must have required property
+  'cards' / must NOT have additional properties` (the model can't emit the
+  whole card as valid StructuredOutput, so it never returns `{cards:[…]}`).
+  If a card looks light but has dozens of senses, it belongs in the fragment
+  lane (H155 fix: the fragment-count trigger now routes it there). The
+  `_zz_pw`/`_zz_sch` addenda class is the usual suspect.
 - **A fix that lands on one language path doesn't automatically reach the
   other.** See [`LANG_PARITY.md`](LANG_PARITY.md), shipped this session
   specifically because this had already happened once (3 gate fixes,
