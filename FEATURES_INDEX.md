@@ -11,7 +11,7 @@ inventory a newcomer (or a fresh session) reads to see the shape of the whole. E
 carries a **real example** (a verbatim sample row, a live lookup, or a usage snippet).
 
 - **Interactive view:** a filterable single-file HTML artifact renders this same catalogue
-  (full-text search + category tabs + per-section status/language filters + clickable
+  (full-text search + category tabs + per-section status/severity/language filters + clickable
   cross-cutting tags). Local/shared artifact only — not committed here.
 - **Code-level "who owns this":** [`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md).
 - **Data-flow "who feeds whom":** [`PROJECT_INTERLINKS.md`](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md).
@@ -22,90 +22,93 @@ carries a **real example** (a verbatim sample row, a live lookup, or a usage sni
 
 **At a glance:** 44 dictionaries · 20 interfaces (16 live) · 37 data assets · 14 tools · 4 external stacks.
 
+**IDs & tiers.** Every asset has a **stable ID** — dictionaries use their code, data `D##`,
+interfaces `I##`, tools `T##` — so it can be referenced unambiguously. Datasets are graded by
+**severity/maturity**: 🟢 **canonical** (authoritative, reproducible, widely consumed) ·
+🟡 **derived** (secondary / analysis output) · ⚪ **raw** (gitignored, binary, or external
+mirror). Interfaces & tools carry a status: 🟢 Live · 🟡 Beta / local · ⚪ Source / library.
+
 **How assets connect.** Many entries belong to shared clusters — the **vidyut**
-lemmatization chain (`build_vidyut_fallback.py` calls the `vidyut` engine, feeding
-`vidyut_form2lemma.tsv` and the Zaliznyak index), the **DCS** frequency stack, the
+lemmatization chain (`build_vidyut_fallback.py` (T06) calls the `vidyut` engine (T14), feeding
+`vidyut_form2lemma.tsv` (D29) and the Zaliznyak index (D31)), the **DCS** frequency stack, the
 **Heritage** oracle suite, the **roots / etymology** crosswalks. In the interactive artifact
 these are clickable `#tags` that pivot the whole index to everything in a cluster — so from
-`build_vidyut_fallback.py` you reach `vidyut` (and vice-versa) in one click. In this static
-doc the clusters are called out in this note and by shared terms in the "What it is" column.
-
-**Status key** — 🟢 **Live** deployed & reachable · 🟡 **Beta / local** in development or
-local-only · ⚪ **Source / library** a dataset, package or spine with no UI of its own.
+`build_vidyut_fallback.py` you reach `vidyut` (and vice-versa) in one click.
 
 ---
 
 ## I. Data assets — query it, someone already spent the compute
 
-Examples are **verbatim sample rows** from the actual files (⚪ *schema* = the file is
-gitignored / binary / too large, so the shape is shown instead).
+Tier prefix: 🟢 canonical · 🟡 derived · ⚪ raw. Examples are **verbatim sample rows** from the
+actual files (⚪-tier / *schema*-marked = the file is gitignored / binary / too large, so the
+shape is shown instead).
 
 ### Sanskrit → Russian & translation
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| `corpus_lexicon` | 1.09 M word-aligned Sa→Ru rows (per verse-pair, SLP1-keyed, ~190k keys) | 1.09 M rows | ⚪ `<slp1-word>  <russian>  <verse-pair-id>` (JSONL gitignored) | [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) |
-| SanskritRussian glossary (3-layer) | Ranked Sa→Ru glossary: surface 190,838 · lemma 40,370 · root 2,021; 87% coverage | 233k entries | `A → принеси · freq 43 · ADP` (lemma layer) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| `mw_en_tm.json` | SLP1-keyed MW English-gloss translation memory behind the RU/EN kits | 187,506 · 12 MB | `"a": "the first letter of the alphabet · the first short vowel…"` | [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
-| lemma / root glossary (DCS) | DCS lemma→gloss and root→gloss glossaries, bilingual, TSV + JSONL | lemma 16–26 MB · root 5 MB | `AGozi → Распространяя звуки · verb` (root layer) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 **D01** `corpus_lexicon` | 1.09 M word-aligned Sa→Ru rows (per verse-pair, SLP1-keyed, ~190k keys) | 1.09 M rows | `<slp1-word>  <russian>  <verse-pair-id>` (schema; JSONL gitignored) | [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) |
+| 🟢 **D02** SanskritRussian glossary (3-layer) | Ranked Sa→Ru glossary: surface 190,838 · lemma 40,370 · root 2,021; 87% coverage | 233k entries | `A → принеси · freq 43 · ADP` (lemma layer) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 **D03** `mw_en_tm.json` | SLP1-keyed MW English-gloss translation memory behind the RU/EN kits | 187,506 · 12 MB | `"a": "the first letter of the alphabet · the first short vowel…"` | [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
+| 🟡 **D04** lemma / root glossary (DCS) | DCS lemma→gloss and root→gloss glossaries, bilingual, TSV + JSONL | lemma 16–26 MB · root 5 MB | `AGozi → Распространяя звуки · verb` (root layer) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
 
 ### Roots & etymology
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| `mw_roots.tsv` | MW verbal-root inventory: 2,113 records with explicit `verb_type` (750 genuineroot + 1363 root) | 2,113 · 76 KB | `aMS   aṃś   genuineroot   10P,10Ā` | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) |
-| `mw_etymology.tsv` / `pwg_etymology.tsv` | Headword→root derivation tables (Pāṇinian), 10 dicts | ~9–11k rows each | `10   aṃśa   aMSa   aś   aS   fr-root   0Ā,0P   Y` | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_etymology.tsv) |
-| `etymology_stats` | Cross-dict aggregates: root oracle, 41-pair agreement matrix (95% CI), affix entropy/frequency | 10 dicts | `root_oracle:  A   ā   kram   kram   1   mw` | [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) |
-| `etymology-oracle.json` | csl-atlas cross-dict etymology aggregator, consumed verbatim from `etymology_stats` | 67k rows · 23 KB | `{ "dictionaryCount": 10, "generatedAt": "2026-06-26…", "totals": {…} }` | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
-| `root_crosswalk.csv` + `class_concordance.csv` | MW ↔ Whitney root-class alignment + concordance with frequency | 37 KB + 18 KB | `1,aṃh,yes,114,,matched,0` | [MWS/root_crosswalk](https://github.com/gasyoun/MWS/tree/main/root_crosswalk) |
-| `Whitney_DCS_audit.json` | Whitney × DCS root audit vs the 935-root Whitney hub | 415 KB | `{ "root":"aṃh", "dcs_lemma":"aṃh", "status":"matched", "class_verdict":"whitney-missing" }` | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
-| `corpus_class_verdicts.json` | Corpus-verified root-class verdicts. ⚠ unaccented DCS can't split class I vs VI | 514 KB | `{ "aṃh": { "classes": [], "verdict": "not_attested" } }` | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
-| `dcs_ppp_verified.tsv` | Corpus-attested past-passive-participle forms + counts | 5,181 forms | `vac   ukta   2   P.   7734` (√vac → ukta, 7734×) | [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy) |
+| 🟢 **D05** `mw_roots.tsv` | MW verbal-root inventory: 2,113 records with explicit `verb_type` (750 genuineroot + 1363 root) | 2,113 · 76 KB | `aMS   aṃś   genuineroot   10P,10Ā` | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) |
+| 🟢 **D06** `mw_etymology.tsv` / `pwg_etymology.tsv` | Headword→root derivation tables (Pāṇinian), 10 dicts | ~9–11k rows each | `10   aṃśa   aMSa   aś   aS   fr-root   0Ā,0P   Y` | [csl-orig/v02/mw](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_etymology.tsv) |
+| 🟢 **D07** `etymology_stats` | Cross-dict aggregates: root oracle, 41-pair agreement matrix (95% CI), affix entropy/frequency | 10 dicts | `root_oracle:  A   ā   kram   kram   1   mw` | [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) |
+| 🟡 **D08** `etymology-oracle.json` | csl-atlas cross-dict etymology aggregator, consumed verbatim from `etymology_stats` | 67k rows · 23 KB | `{ "dictionaryCount": 10, "generatedAt": "2026-06-26…", "totals": {…} }` | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| 🟡 **D09** `root_crosswalk.csv` + `class_concordance.csv` | MW ↔ Whitney root-class alignment + concordance with frequency | 37 KB + 18 KB | `1,aṃh,yes,114,,matched,0` | [MWS/root_crosswalk](https://github.com/gasyoun/MWS/tree/main/root_crosswalk) |
+| 🟡 **D10** `Whitney_DCS_audit.json` | Whitney × DCS root audit vs the 935-root Whitney hub | 415 KB | `{ "root":"aṃh", "dcs_lemma":"aṃh", "status":"matched", "class_verdict":"whitney-missing" }` | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
+| 🟡 **D11** `corpus_class_verdicts.json` | Corpus-verified root-class verdicts. ⚠ unaccented DCS can't split class I vs VI | 514 KB | `{ "aṃh": { "classes": [], "verdict": "not_attested" } }` | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
+| 🟡 **D12** `dcs_ppp_verified.tsv` | Corpus-attested past-passive-participle forms + counts | 5,181 forms | `vac   ukta   2   P.   7734` (√vac → ukta, 7734×) | [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy) |
 
 ### Headwords & crosswalks
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| `union_headwords.tsv` | Cross-dict union headword index with per-dict provenance | ~323k | `A   ā   12   AP BUR CAE CCS GRA MD MW PWG PWK SCH SKD VCP   fmn` | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
-| `mw_heritage_crosswalk.tsv` | MW → Sanskrit Heritage alignment: 185,803 entries, 97.6% anchor-resolved | 185.8k · 3.2 MB | `a   0` (MW headword → Heritage anchor id / coverage) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) |
-| DCS↔CDSL crosswalk | DCS lemma ↔ CDSL headword linkset, 12,946 rows (81.4% linked) | 12,946 rows | `37875   tad   tad   tad   1   3734   pron` | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv) |
-| union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union | `5   nominal   enad   enad` | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
-| csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
-| csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set | ⚪ the below-threshold subset of `alignment-confidence.json` | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| 🟢 **D13** `union_headwords.tsv` | Cross-dict union headword index with per-dict provenance | ~323k | `A   ā   12   AP BUR CAE CCS GRA MD MW PWG PWK SCH SKD VCP   fmn` | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
+| 🟢 **D14** `mw_heritage_crosswalk.tsv` | MW → Sanskrit Heritage alignment: 185,803 entries, 97.6% anchor-resolved | 185.8k · 3.2 MB | `a   0` (MW headword → Heritage anchor id / coverage) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) |
+| 🟢 **D15** DCS↔CDSL crosswalk | DCS lemma ↔ CDSL headword linkset, 12,946 rows (81.4% linked) | 12,946 rows | `37875   tad   tad   tad   1   3734   pron` | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv) |
+| 🟡 **D16** union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union | `5   nominal   enad   enad` | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
+| 🟡 **D17** csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| ⚪ **D18** csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set | the below-threshold subset of `alignment-confidence.json` (schema) | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
 
 ### Heritage & morphology oracles
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| `heritage_forms_oracle.tsv.gz` | Pandora → Heritage inflected-form alignment oracle, morphology-aware | 526 KB gz | ⚪ `form ↔ Heritage lemma + morphology` (gzip) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| `heritage_dico_gloss.tsv` | Heritage DICO lemma glosses — SLP1 / Devanāgarī / English | 24.5k · 4.4 MB | `akAra   DICO/1.html#akaara   [ ( a ) - kāra ] m. le son ou la lettre 'a'.   kaara` | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| `heritage_forms_oracle_disagreements.tsv` | Cross-dict morphology disagreement audit | 20.5k · 1.4 MB | `ABAByAm   disagree   ABA   ABa   nominal   dcs   genuine-or-ambiguous` | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| `heritage_only_forms.tsv` | Forms attested in Heritage but absent from MW/PWG/etc. | 29 MB | ⚪ one Heritage-exclusive form per line | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
-| `heritage_mirror/DATA/` frequency tables | Heritage frequency & morphology corpus TSVs (pada_freq, comp_freq, …) | 22 MB | `comp_freq.tsv:   a   6894` | [heritage_mirror](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/heritage_mirror) |
-| `sanhw1.xlsx` (Sanskrit-Hybrid Word) | Catalan-Pujol Sanskrit-Hybrid Word master headword list | 61k · 40 MB | ⚪ xlsx: one headword per row | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| ⚪ **D19** `heritage_forms_oracle.tsv.gz` | Pandora → Heritage inflected-form alignment oracle, morphology-aware | 526 KB gz | `form ↔ Heritage lemma + morphology` (schema; gzip) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟡 **D20** `heritage_dico_gloss.tsv` | Heritage DICO lemma glosses — SLP1 / Devanāgarī / English | 24.5k · 4.4 MB | `akAra   DICO/1.html#akaara   [ ( a ) - kāra ] m. le son ou la lettre 'a'.   kaara` | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| 🟡 **D21** `heritage_forms_oracle_disagreements.tsv` | Cross-dict morphology disagreement audit | 20.5k · 1.4 MB | `ABAByAm   disagree   ABA   ABa   nominal   dcs   genuine-or-ambiguous` | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| ⚪ **D22** `heritage_only_forms.tsv` | Forms attested in Heritage but absent from MW/PWG/etc. | 29 MB | one Heritage-exclusive form per line (schema) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
+| ⚪ **D23** `heritage_mirror/DATA/` frequency tables | Heritage frequency & morphology corpus TSVs (pada_freq, comp_freq, …) | 22 MB | `comp_freq.tsv:   a   6894` | [heritage_mirror](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/heritage_mirror) |
+| ⚪ **D24** `sanhw1.xlsx` (Sanskrit-Hybrid Word) | Catalan-Pujol Sanskrit-Hybrid Word master headword list | 61k · 40 MB | xlsx: one headword per row (schema) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
 
 ### Frequency & corpus
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| VisualDCS DCS ingest + lemma summary | Canonical CoNLL-U → SQLite build + `dcs_lemma_summary.json`. ⚠ Tense=Past conflates aorist/perfect | ~15.9k lemmas | `{ "A": { "freqBand": 5, "attested": true } }` | [import_dcs_conllu.py](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py) |
-| kosha frequency layer | SLP1-keyed sidecar: whole-corpus counts + per-period vectors + core-vocab coverage (DCS M9) | 83,277 · 4.7 MB | `ca   155088   ind   1   9 Vedic=8283 · 1 -800=2897 · …   176104` | [kosha/data/frequency](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
-| `dcs_form2lemma.tsv` | DCS form→lemma alignment, SLP1-keyed | 408k · 9.4 MB | `''jYAya   AjYA   VERB   1` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| `dcs_lemma2root.tsv` | DCS lemma → root mapping | 245 KB | `ABA   BA   suffix` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| `vidyut_form2lemma.tsv` | Stage-C fallback: forms DCS missed, resolved via the **vidyut** FST | 28.5k · 745 KB | `ABAga   ABAj   noun   2` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| `surface_dcs_misses.tsv` | DCS resolution-gap analysis — forms that failed DCS lookup | 6.6 MB | `'maratejasi   'maratejasi   1   …` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| Zaliznyak grammar index | Compact Zaliznyak-style grammar tokens over all PWG: 98,639 headwords, 335 tokens | 98,639 rows | `a   2   f.   a   f·1   a-stem` (headword · G·T · stem-class) | [headword_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv) |
-| `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 59 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
+| 🟢 **D25** VisualDCS DCS ingest + lemma summary | Canonical CoNLL-U → SQLite build + `dcs_lemma_summary.json`. ⚠ Tense=Past conflates aorist/perfect | ~15.9k lemmas | `{ "A": { "freqBand": 5, "attested": true } }` | [import_dcs_conllu.py](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py) |
+| 🟢 **D26** kosha frequency layer | SLP1-keyed sidecar: whole-corpus counts + per-period vectors + core-vocab coverage (DCS M9) | 83,277 · 4.7 MB | `ca   155088   ind   1   9 Vedic=8283 · 1 -800=2897 · …   176104` | [kosha/data/frequency](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
+| 🟢 **D27** `dcs_form2lemma.tsv` | DCS form→lemma alignment, SLP1-keyed | 408k · 9.4 MB | `''jYAya   AjYA   VERB   1` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟡 **D28** `dcs_lemma2root.tsv` | DCS lemma → root mapping | 245 KB | `ABA   BA   suffix` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟡 **D29** `vidyut_form2lemma.tsv` | Stage-C fallback: forms DCS missed, resolved via the **vidyut** FST | 28.5k · 745 KB | `ABAga   ABAj   noun   2` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟡 **D30** `surface_dcs_misses.tsv` | DCS resolution-gap analysis — forms that failed DCS lookup | 6.6 MB | `'maratejasi   'maratejasi   1   …` | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 **D31** Zaliznyak grammar index | Compact Zaliznyak-style grammar tokens over all PWG: 98,639 headwords, 335 tokens | 98,639 rows | `a   2   f.   a   f·1   a-stem` (headword · G·T · stem-class) | [headword_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv) |
+| 🟢 **D32** `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 59 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
 
 ### Text collections & other
 
-| Asset | What it is | Size | Example (real sample) | Home |
+| ID · Tier · Asset | What it is | Size | Example (real sample) | Home |
 |---|---|---|---|---|
-| Indische Sprüche | All 7,537 Böhtlingk subhāṣitas as JSONL (public domain) | 7,537 · 6.9 MB | `{ "num":1, "saying_id":"Saying 1", "deva":"अंशो ऽपि दुष्टदिष्टानां…" }` | [indische_sprueche.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) |
-| ortho-drift reform maps | 19th-c.→modern spelling maps: de 15,685 · ru 7,709 · fr 254 · en 71 | ~23.7k forms | `de_reform_map.tsv:   aachner → aachener   (×75)` | [SanskritSpellCheck/ortho_drift](https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/ortho_drift) |
-| do-not-file corpus | 2,297 deliberately non-standard headword spellings across 33 dicts | 2,297 | `ABasvara` (deliberately non-standard — do not "correct") | [do_not_file_suppress.txt](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) |
-| csl-santam Tamil SQLite | MW + Cappeller + Cologne Online Tamil Lexicon combined | 321,620 · 30 MB | ⚪ `source(mwd·cap·otl) · headword · body` (Harvard-Kyoto keys) | [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
-| OCR'd dictionary front-matter | Faithful Markdown + EN/RU editions of title pages, prefaces, abbreviations | multi-dict | ⚪ per dict: title-page + preface + abbreviations as Markdown | [csl-guides](https://github.com/gasyoun/csl-guides) |
+| 🟢 **D33** Indische Sprüche | All 7,537 Böhtlingk subhāṣitas as JSONL (public domain) | 7,537 · 6.9 MB | `{ "num":1, "saying_id":"Saying 1", "deva":"अंशो ऽपि दुष्टदिष्टानां…" }` | [indische_sprueche.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) |
+| 🟡 **D34** ortho-drift reform maps | 19th-c.→modern spelling maps: de 15,685 · ru 7,709 · fr 254 · en 71 | ~23.7k forms | `de_reform_map.tsv:   aachner → aachener   (×75)` | [SanskritSpellCheck/ortho_drift](https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/ortho_drift) |
+| 🟡 **D35** do-not-file corpus | 2,297 deliberately non-standard headword spellings across 33 dicts | 2,297 | `ABasvara` (deliberately non-standard — do not "correct") | [do_not_file_suppress.txt](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt) |
+| ⚪ **D36** csl-santam Tamil SQLite | MW + Cappeller + Cologne Online Tamil Lexicon combined | 321,620 · 30 MB | `source(mwd·cap·otl) · headword · body` (schema; Harvard-Kyoto keys) | [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
+| ⚪ **D37** OCR'd dictionary front-matter | Faithful Markdown + EN/RU editions of title pages, prefaces, abbreviations | multi-dict | per dict: title-page + preface + abbreviations as Markdown (schema) | [csl-guides](https://github.com/gasyoun/csl-guides) |
 
 ---
 
@@ -113,9 +116,9 @@ gitignored / binary / too large, so the shape is shown instead).
 
 Roster from [`csl-guides/src/data/dictionaries.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/dictionaries.json),
 verified against [`csl-orig/v02/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02).
-The **Example** column links a real sample headword (or *browse*) to that dictionary's live
-Cologne interface (URL pattern `…/scans/<CODE>Scan/<YEAR>/web/index.php`, MW & AP90 verified;
-per-dict year where it differs from 2020).
+The **code is the ID**. The **Example** column links a real sample headword (or *browse*) to that
+dictionary's live Cologne interface (URL pattern `…/scans/<CODE>Scan/<YEAR>/web/index.php`, MW &
+AP90 verified; per-dict year where it differs from 2020).
 
 | Code | Dictionary | Language | Author | Year | Pages | Repo | Example |
 |---|---|---|---|---:|---:|---|---|
@@ -174,48 +177,48 @@ The **name links** to the live interface; the **Try** column names a concrete th
 
 ### Dictionary web & search
 
-| Interface | What it does | Status | Try | Stack · Repo |
-|---|---|---|---|---|
-| [Cologne Digital Sanskrit Dictionaries (CDSL)](https://www.sanskrit-lexicon.uni-koeln.de/) | Flagship multi-dictionary search over all 43 dicts | 🟢 Live | look up देव across all 43 dictionaries | PHP · SQLite · [csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon) |
-| [C-SALT / Kosh API](https://github.com/sanskrit-lexicon/csl-apidev) | REST + GraphQL API over CDSL | 🟢 Live | call the `salt_entries` / `salt_graphql` endpoints over MW | PHP · SQLite · [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) |
-| [kosha — translator-first dictionary](https://github.com/gasyoun/kosha) | Multi-dict collapse (MW+PWG+AP90), scan-anchored | 🟡 Beta | collapse MW + PWG + AP90 for one headword | FastAPI · SQLite · [kosha](https://github.com/gasyoun/kosha) |
+| ID | Interface | What it does | Status | Try | Stack · Repo |
+|---|---|---|---|---|---|
+| **I01** | [Cologne Digital Sanskrit Dictionaries (CDSL)](https://www.sanskrit-lexicon.uni-koeln.de/) | Flagship multi-dictionary search over all 43 dicts | 🟢 Live | look up देव across all 43 dictionaries | PHP · SQLite · [csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon) |
+| **I02** | [C-SALT / Kosh API](https://github.com/sanskrit-lexicon/csl-apidev) | REST + GraphQL API over CDSL | 🟢 Live | call the `salt_entries` / `salt_graphql` endpoints over MW | PHP · SQLite · [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) |
+| **I03** | [kosha — translator-first dictionary](https://github.com/gasyoun/kosha) | Multi-dict collapse (MW+PWG+AP90), scan-anchored | 🟡 Beta | collapse MW + PWG + AP90 for one headword | FastAPI · SQLite · [kosha](https://github.com/gasyoun/kosha) |
 
 ### Corpus & reader apps
 
-| Interface | What it does | Status | Try | Stack · Repo |
-|---|---|---|---|---|
-| [Samudra Manthanam](https://samskrtam.ru) | Parallel Sanskrit–Russian corpus with morphological search | 🟢 Live | regex + stem search across parallel Sa–Ru texts | FastAPI · SQLite FTS5 · [SamudraManthanam](https://github.com/gasyoun/SamudraManthanam) |
-| [Sanskrit→Russian Glossary](https://gasyoun.github.io/SanskritRussian/) | Three-layer word-aligned glossary, fuzzy search | 🟢 Live | a form → its surface / lemma / root Russian renderings | Static · Fuse.js · [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| [Russian Rāmāyaṇa portal](https://gasyoun.github.io/RussianRamayana/) | Parallel-text reader + crowdfunding portal | 🟢 Live | read Book IV with the parallel Sanskrit–Russian reader | Static · Leaflet · [RussianRamayana](https://github.com/gasyoun/RussianRamayana) |
-| [Sanskrit Karaoke](https://gasyoun.github.io/SanskritKaraoke/) | Verse wave-diagram visualiser + karaoke exporter | 🟢 Live | wave diagram + meter detection for an anuṣṭubh verse | Standalone JS · Chart.js · [SanskritKaraoke](https://github.com/gasyoun/SanskritKaraoke) |
+| ID | Interface | What it does | Status | Try | Stack · Repo |
+|---|---|---|---|---|---|
+| **I04** | [Samudra Manthanam](https://samskrtam.ru) | Parallel Sanskrit–Russian corpus with morphological search | 🟢 Live | regex + stem search across parallel Sa–Ru texts | FastAPI · SQLite FTS5 · [SamudraManthanam](https://github.com/gasyoun/SamudraManthanam) |
+| **I05** | [Sanskrit→Russian Glossary](https://gasyoun.github.io/SanskritRussian/) | Three-layer word-aligned glossary, fuzzy search | 🟢 Live | a form → its surface / lemma / root Russian renderings | Static · Fuse.js · [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| **I06** | [Russian Rāmāyaṇa portal](https://gasyoun.github.io/RussianRamayana/) | Parallel-text reader + crowdfunding portal | 🟢 Live | read Book IV with the parallel Sanskrit–Russian reader | Static · Leaflet · [RussianRamayana](https://github.com/gasyoun/RussianRamayana) |
+| **I07** | [Sanskrit Karaoke](https://gasyoun.github.io/SanskritKaraoke/) | Verse wave-diagram visualiser + karaoke exporter | 🟢 Live | wave diagram + meter detection for an anuṣṭubh verse | Standalone JS · Chart.js · [SanskritKaraoke](https://github.com/gasyoun/SanskritKaraoke) |
 
 ### Dashboards & data-viz
 
-| Interface | What it does | Status | Try | Stack · Repo |
-|---|---|---|---|---|
-| [CSL Observatory](https://sanskrit-lexicon.github.io/csl-observatory/) | Org-wide metrics + correction typology | 🟢 Live | the bus-factor and correction-typology charts | Observable · Python · [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
-| [VisualDCS — verb-form frequency](https://github.com/gasyoun/VisualDCS) | Pareto analysis of 781,616 verb examples | 🟢 Live | the Pareto curve over 781,616 verb examples | Standalone HTML · Chart.js · [VisualDCS](https://github.com/gasyoun/VisualDCS) |
-| [VisualDCS — paradigm browser](https://github.com/gasyoun/VisualDCS) | Interactive verb-form paradigm browser | 🟢 Live | 6 roots × 9 tenses × 9 person/number cells, flashcard mode | Standalone HTML · Chart.js · [VisualDCS](https://github.com/gasyoun/VisualDCS) |
-| [BookIndex / Zalizniakiada](https://gasyoun.github.io/BookIndex/) | Single-file PWA over Zaliznyak's legacy | 🟢 Live | the sound-law simulator + KWIC concordance | D3 · Leaflet · PWA · [BookIndex](https://github.com/gasyoun/BookIndex) |
-| [IndologyScholars — forum archive](https://gasyoun.github.io/IndologyScholars/) | Network analysis over 1,362 talks | 🟢 Live | the network of 1,362 talks by 270 scholars | Static · D3 · RDF · [IndologyScholars](https://github.com/gasyoun/IndologyScholars) |
+| ID | Interface | What it does | Status | Try | Stack · Repo |
+|---|---|---|---|---|---|
+| **I08** | [CSL Observatory](https://sanskrit-lexicon.github.io/csl-observatory/) | Org-wide metrics + correction typology | 🟢 Live | the bus-factor and correction-typology charts | Observable · Python · [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
+| **I09** | [VisualDCS — verb-form frequency](https://github.com/gasyoun/VisualDCS) | Pareto analysis of 781,616 verb examples | 🟢 Live | the Pareto curve over 781,616 verb examples | Standalone HTML · Chart.js · [VisualDCS](https://github.com/gasyoun/VisualDCS) |
+| **I10** | [VisualDCS — paradigm browser](https://github.com/gasyoun/VisualDCS) | Interactive verb-form paradigm browser | 🟢 Live | 6 roots × 9 tenses × 9 person/number cells, flashcard mode | Standalone HTML · Chart.js · [VisualDCS](https://github.com/gasyoun/VisualDCS) |
+| **I11** | [BookIndex / Zalizniakiada](https://gasyoun.github.io/BookIndex/) | Single-file PWA over Zaliznyak's legacy | 🟢 Live | the sound-law simulator + KWIC concordance | D3 · Leaflet · PWA · [BookIndex](https://github.com/gasyoun/BookIndex) |
+| **I12** | [IndologyScholars — forum archive](https://gasyoun.github.io/IndologyScholars/) | Network analysis over 1,362 talks | 🟢 Live | the network of 1,362 talks by 270 scholars | Static · D3 · RDF · [IndologyScholars](https://github.com/gasyoun/IndologyScholars) |
 
 ### Docs & article sites
 
-| Interface | What it does | Status | Try | Stack · Repo |
-|---|---|---|---|---|
-| [CSL Guides](https://sanskrit-lexicon.github.io/csl-guides/) | Docusaurus docs: 43 deep dictionary pages, widgets | 🟢 Live | a deep dictionary page + the comparison widget | Docusaurus 3 · React 19 · [csl-guides](https://github.com/sanskrit-lexicon/csl-guides) |
-| [CommentaryStrategies essays](https://github.com/gasyoun/CommentaryStrategies) | Comparative DH essays + TEI/CSV/JSON exports | 🟢 Live | the Mahābhārata translator-commentary comparison | HTML · Python · TEI P5 · [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies) |
-| [SamudraManthanam corpus-FAQ](https://samskrtam.ru/corpus-faq/) | RU knowledge base via ZettelkastenWiki | 🟢 Live | the Russian corpus knowledge base | ZettelkastenWiki · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
-| [PWG article dashboard](https://gasyoun.github.io/SanskritLexicography/) | Per-entry PWG site with live `<ls>` scan links | 🟢 Live | a PWG entry with live `<ls>` scan-page links | Static (build_article_site.py) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) |
-| [Uprava articles dashboard](https://github.com/gasyoun/Uprava/tree/main/dashboard) | Private, local-only publication-pipeline board | 🟡 Beta | (local) the publication-readiness board over ARTICLES.md | HTML + articles.js · [Uprava](https://github.com/gasyoun/Uprava) |
+| ID | Interface | What it does | Status | Try | Stack · Repo |
+|---|---|---|---|---|---|
+| **I13** | [CSL Guides](https://sanskrit-lexicon.github.io/csl-guides/) | Docusaurus docs: 43 deep dictionary pages, widgets | 🟢 Live | a deep dictionary page + the comparison widget | Docusaurus 3 · React 19 · [csl-guides](https://github.com/sanskrit-lexicon/csl-guides) |
+| **I14** | [CommentaryStrategies essays](https://github.com/gasyoun/CommentaryStrategies) | Comparative DH essays + TEI/CSV/JSON exports | 🟢 Live | the Mahābhārata translator-commentary comparison | HTML · Python · TEI P5 · [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies) |
+| **I15** | [SamudraManthanam corpus-FAQ](https://samskrtam.ru/corpus-faq/) | RU knowledge base via ZettelkastenWiki | 🟢 Live | the Russian corpus knowledge base | ZettelkastenWiki · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
+| **I16** | [PWG article dashboard](https://gasyoun.github.io/SanskritLexicography/) | Per-entry PWG site with live `<ls>` scan links | 🟢 Live | a PWG entry with live `<ls>` scan-page links | Static (build_article_site.py) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) |
+| **I17** | [Uprava articles dashboard](https://github.com/gasyoun/Uprava/tree/main/dashboard) | Private, local-only publication-pipeline board | 🟡 Beta | (local) the publication-readiness board over ARTICLES.md | HTML + articles.js · [Uprava](https://github.com/gasyoun/Uprava) |
 
 ### Learning & platform apps
 
-| Interface | What it does | Status | Try | Stack · Repo |
-|---|---|---|---|---|
-| [CSL App (Flutter)](https://github.com/sanskrit-lexicon/csl-app) | Offline cross-platform dictionary, 50+ dicts | 🟢 Live | offline lookup with ITRANS / HK / SLP1 / Devanāgarī input | Flutter · Riverpod · sqflite · [csl-app](https://github.com/sanskrit-lexicon/csl-app) |
-| [Systema Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) | Laravel LMS for a Sanskrit school | 🟡 Beta | the student workbench + course shop | Laravel 10 · Filament · MySQL · [Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) |
-| [csl-santam — Tamil lexicon search](https://github.com/sanskrit-lexicon/csl-santam) | PHP/Perl search over combined Tamil SQLite | 🟡 Beta | a Harvard-Kyoto search over 321k combined entries | PHP · Perl · SQLite · [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
+| ID | Interface | What it does | Status | Try | Stack · Repo |
+|---|---|---|---|---|---|
+| **I18** | [CSL App (Flutter)](https://github.com/sanskrit-lexicon/csl-app) | Offline cross-platform dictionary, 50+ dicts | 🟢 Live | offline lookup with ITRANS / HK / SLP1 / Devanāgarī input | Flutter · Riverpod · sqflite · [csl-app](https://github.com/sanskrit-lexicon/csl-app) |
+| **I19** | [Systema Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) | Laravel LMS for a Sanskrit school | 🟡 Beta | the student workbench + course shop | Laravel 10 · Filament · MySQL · [Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) |
+| **I20** | [csl-santam — Tamil lexicon search](https://github.com/sanskrit-lexicon/csl-santam) | PHP/Perl search over combined Tamil SQLite | 🟡 Beta | a Harvard-Kyoto search over 321k combined entries | PHP · Perl · SQLite · [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
 
 ---
 
@@ -223,30 +226,30 @@ The **name links** to the live interface; the **Try** column names a concrete th
 
 ### Import it — the code toolkit
 
-| Tool | What it is | Example (usage) | Reuse instead of · Home |
-|---|---|---|---|
-| `sanskrit-util` | Python+JS IAST ⇄ SLP1 ⇄ Devanāgarī transcode + normalization keys, parity-tested; v0.3.0 SLP1-side API | `from sanskrit_util import to_slp1; to_slp1("देव") → "deva"` | Re-typing the SLP1 table (62 files) · [sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util) |
-| csl-pywork correction pipeline | `updateByLine`, `parseheadline`, `diff_to_changes`, `make_xml`, `generate_dict.sh` | `python updateByLine.py mw.txt change.txt out.txt` | Forking `updateByLine.py` an 84th time · [csl-pywork](https://github.com/sanskrit-lexicon/csl-pywork/tree/main/v02/makotemplates/pywork) |
-| web-endpoint template | makotemplates source for `getword`/`servepdf`/`serveimg`; 40+ dicts regenerate | `getword.php?key=deva&dict=mw → entry display` | Editing 37 drifted per-dict copies · [csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon/tree/main/v02/makotemplates/web/webtc) |
-| `kosha/app/render.py` | Python port of the PHP SAX display engine (MW/PWG/AP90), golden-snapshotted | `render(entry_xml) → IAST <s>-display HTML` | Re-porting Cologne entry rendering to Python · [kosha](https://github.com/gasyoun/kosha/blob/main/app/render.py) |
-| `ls_resolver.py` | `<ls>` citation → scanned-edition page-URL resolver | `resolve("Spr. 1") → the boesp scan-page URL` | Re-implementing citation→scan mapping · [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
-| `build_vidyut_fallback.py` | Stage-C lemmatizer via the **vidyut** FST lexicon *(→ see the vidyut stack below)* | `ABAga → ABAj (noun)` — via the vidyut FST | Writing another lemmatization fallback · [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
-| RU translation kit | Parameterized `mw_ru`/`pwg_ru` kit over one `build_src.py` | `1_perevod → 2_qa_sudya → 3_pereperevod → 4_korpus_proverka` | Cloning a third kit · [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) |
-| ZettelkastenWiki | Canonical static-site generator for note/FAQ/wiki collections | `zettelkastenwiki build ./notes → ./public` | Writing site generator #5 · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
-| CI & hygiene templates | CodeQL, Dependabot (+auto-merge), pre-commit, CoC, branch protection via `/cologne-*` skills | `/cologne-codeql-all · /cologne-dependabot-all` | Hand-writing CI per repo · [SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md) |
+| ID | Tool | What it is | Example (usage) | Reuse instead of · Home |
+|---|---|---|---|---|
+| **T01** | `sanskrit-util` | Python+JS IAST ⇄ SLP1 ⇄ Devanāgarī transcode + normalization keys, parity-tested; v0.3.0 SLP1-side API | `from sanskrit_util import to_slp1; to_slp1("देव") → "deva"` | Re-typing the SLP1 table (62 files) · [sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util) |
+| **T02** | csl-pywork correction pipeline | `updateByLine`, `parseheadline`, `diff_to_changes`, `make_xml`, `generate_dict.sh` | `python updateByLine.py mw.txt change.txt out.txt` | Forking `updateByLine.py` an 84th time · [csl-pywork](https://github.com/sanskrit-lexicon/csl-pywork/tree/main/v02/makotemplates/pywork) |
+| **T03** | web-endpoint template | makotemplates source for `getword`/`servepdf`/`serveimg`; 40+ dicts regenerate | `getword.php?key=deva&dict=mw → entry display` | Editing 37 drifted per-dict copies · [csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon/tree/main/v02/makotemplates/web/webtc) |
+| **T04** | `kosha/app/render.py` | Python port of the PHP SAX display engine (MW/PWG/AP90), golden-snapshotted | `render(entry_xml) → IAST <s>-display HTML` | Re-porting Cologne entry rendering to Python · [kosha](https://github.com/gasyoun/kosha/blob/main/app/render.py) |
+| **T05** | `ls_resolver.py` | `<ls>` citation → scanned-edition page-URL resolver | `resolve("Spr. 1") → the boesp scan-page URL` | Re-implementing citation→scan mapping · [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
+| **T06** | `build_vidyut_fallback.py` | Stage-C lemmatizer via the **vidyut** FST lexicon *(→ see T14 below)* | `ABAga → ABAj (noun)` — via the vidyut FST | Writing another lemmatization fallback · [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
+| **T07** | RU translation kit | Parameterized `mw_ru`/`pwg_ru` kit over one `build_src.py` | `1_perevod → 2_qa_sudya → 3_pereperevod → 4_korpus_proverka` | Cloning a third kit · [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) |
+| **T08** | ZettelkastenWiki | Canonical static-site generator for note/FAQ/wiki collections | `zettelkastenwiki build ./notes → ./public` | Writing site generator #5 · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
+| **T09** | CI & hygiene templates | CodeQL, Dependabot (+auto-merge), pre-commit, CoC, branch protection via `/cologne-*` skills | `/cologne-codeql-all · /cologne-dependabot-all` | Hand-writing CI per repo · [SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md) |
 
 ### Call it — external stacks (don't clone)
 
-| Stack | What it is | Example (usage) | Reuse rule · Home |
-|---|---|---|---|
-| Samsaadhanii / SCL (Amba Kulkarni, UoHyd) | Morph analyzer, sandhi/segmenter, Pāṇinian parser, Amarakośa net, Dhātupāṭha | `GET …/scl/…/morph.cgi?word=Bavati → morphology` | Call the live JSON APIs; don't clone the GPL source · [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md) |
-| Sanskrit Heritage (Gérard Huet, INRIA) | Dictionary + morphology + segmenter (LGPLLR): DICO, MW-aligned pages, frequency TSVs | `DICO/1.html#akaara → Heritage gloss + morphology` | Pull from the GitHub mirror (INRIA is bot-walled) · [Heritage_Resources](https://github.com/darkone23/Heritage_Resources) |
-| DharmaMitra (Berkeley) | AI-translation stack; GPU morphology supplier to csl-atlas | `Translate · Deep-Research (with references) · segmentation · OCR` | Reuse their MT error taxonomy; prospective Kosh-API consumer · [dharmamitra.org](https://dharmamitra.org/) |
-| VedaWeb (Cologne / UZH, CC BY 4.0) | Accented Rig-Veda + per-word morphology, C-SALT-linked | `bulk-export accented RV text + per-word UZH morphology` | The validation set for the Vedic accent axis — export once · [vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de/rigveda/) |
-| vidyut (Ambuda) | Rust Sanskrit toolkit: kosha FST lexicon, prakriyā generator, cheda segmenter, chandas meter | `from vidyut.kosha import Kosha; k.get("Bavati")` | Hand-rolling paradigm generation · [vidyut](https://github.com/ambuda-org/vidyut) |
+| ID | Stack | What it is | Example (usage) | Reuse rule · Home |
+|---|---|---|---|---|
+| **T10** | Samsaadhanii / SCL (Amba Kulkarni, UoHyd) | Morph analyzer, sandhi/segmenter, Pāṇinian parser, Amarakośa net, Dhātupāṭha | `GET …/scl/…/morph.cgi?word=Bavati → morphology` | Call the live JSON APIs; don't clone the GPL source · [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md) |
+| **T11** | Sanskrit Heritage (Gérard Huet, INRIA) | Dictionary + morphology + segmenter (LGPLLR): DICO, MW-aligned pages, frequency TSVs | `DICO/1.html#akaara → Heritage gloss + morphology` | Pull from the GitHub mirror (INRIA is bot-walled) · [Heritage_Resources](https://github.com/darkone23/Heritage_Resources) |
+| **T12** | DharmaMitra (Berkeley) | AI-translation stack; GPU morphology supplier to csl-atlas | `Translate · Deep-Research (with references) · segmentation · OCR` | Reuse their MT error taxonomy; prospective Kosh-API consumer · [dharmamitra.org](https://dharmamitra.org/) |
+| **T13** | VedaWeb (Cologne / UZH, CC BY 4.0) | Accented Rig-Veda + per-word morphology, C-SALT-linked | `bulk-export accented RV text + per-word UZH morphology` | The validation set for the Vedic accent axis — export once · [vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de/rigveda/) |
+| **T14** | vidyut (Ambuda) | Rust Sanskrit toolkit: kosha FST lexicon, prakriyā generator, cheda segmenter, chandas meter | `from vidyut.kosha import Kosha; k.get("Bavati")` | Hand-rolling paradigm generation · [vidyut](https://github.com/ambuda-org/vidyut) |
 
-*The **vidyut** engine above is what `build_vidyut_fallback.py` (in the toolkit) calls, and
-what generates `vidyut_form2lemma.tsv` and the Zaliznyak-index paradigms — one cluster, three
+*The **vidyut** engine (T14) is what `build_vidyut_fallback.py` (T06) calls, and what generates
+`vidyut_form2lemma.tsv` (D29) and the Zaliznyak-index paradigms (D31) — one cluster, three
 entries across two sections. The interactive artifact makes that link a clickable `#vidyut` tag.*
 
 ---
