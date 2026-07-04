@@ -296,9 +296,14 @@ def main():
         with open(bak, 'w', encoding='utf-8') as f, open(args.store, encoding='utf-8') as src:
             f.write(src.read())
         print('\nbacked up store -> %s' % os.path.basename(bak))
-    with open(args.store, 'w', encoding='utf-8') as f:
+    # Atomic write: temp file + os.replace so a crash/kill mid-write cannot truncate
+    # the tri-lingual store (the "EN layer wiped" scar). Under --no-backup this is the
+    # ONLY thing standing between an interrupted write and total loss.
+    tmp = args.store + '.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + '\n')
+    os.replace(tmp, args.store)
     print('wrote tri-lingual store -> %s (%d rows, %d now carry en)'
           % (os.path.relpath(args.store, ROOT), len(rows), stats['attached']))
     print('NEXT: re-run `python src/annotate_dcs_freq.py` to (re)attach the dcs_freq block.')

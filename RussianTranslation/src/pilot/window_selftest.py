@@ -909,6 +909,29 @@ def test_en_gate_strict_has_teeth():
             os.remove(report_path)
 
 
+def test_pwg_mask_latin_cue_behind_ab_tag():
+    """Regression (review 2026-07-04): a Latin/Greek cue inside an <ab> span
+    (e.g. `<ab>lat.</ab> {%ignis%}`) is masked to a {Tn} placeholder in mask()
+    step 1, so classify_pct used to see "{T5}" instead of "lat." and misread the
+    following {%...%} cognate as German — leaking Latin verbatim into the
+    translator prompt. The cue must be recovered from the placeholder so the
+    Latin gloss is masked, while a genuine German gloss stays inline. SHARED
+    (masking runs before any --lang branch; identical for RU and EN)."""
+    import pwg_mask
+    body = 'Feuer <ab>lat.</ab> {%ignis%} und Wasser'
+    sk, ph, st = pwg_mask.mask(body)
+    if st['pct_la'] != 1 or st['pct_de'] != 0:
+        fail('Latin cue behind <ab> not caught: %r' % st)
+    if '{%ignis%}' in sk:
+        fail('Latin gloss leaked into skeleton unmasked: %r' % sk)
+    if pwg_mask.restore(sk, ph) != body:
+        fail('mask round-trip not lossless after Latin-cue fix')
+    # a genuine German gloss (no Latin cue) must still be kept inline for translation
+    sk2, ph2, st2 = pwg_mask.mask('das <ab>Subst.</ab> {%Feuer%}')
+    if st2['pct_de'] != 1 or st2['pct_la'] != 0:
+        fail('German gloss wrongly masked as Latin: %r' % st2)
+
+
 def test_markup_loss_soft_flag_ru():
     """S7 rec 1 (RU): a dropped {%..%} gloss wrapper is a SOFT, report-only signal —
     markup_wrapper_dropped fires at low severity and is NEVER a requeue trigger; a retained
@@ -1974,6 +1997,7 @@ def main():
         test_attested_text_signal_redesign,
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
+        test_pwg_mask_latin_cue_behind_ab_tag,
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
         test_en_de_residue_french_guard,

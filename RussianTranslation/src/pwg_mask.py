@@ -93,11 +93,22 @@ def mask(body):
         return take(m)
     body = PAIRED_RE.sub(paired, body)
 
-    # 2) {%…%}: German kept inline, Latin masked, ambiguous flagged-but-kept
+    # 2) {%…%}: German kept inline, Latin masked, ambiguous flagged-but-kept.
+    # The Latin cue ("<ab>lat.</ab>", "griech.") is overwhelmingly inside an <ab>
+    # span, which step 1 has ALREADY masked to a {Tn} placeholder — so the raw
+    # `preceding` window would show "{T5}", not "lat.", and every tagged cue would
+    # be misread as German and leaked inline. Expand any placeholders back to their
+    # source and drop tags before classifying, so the cue is visible again.
+    def _cue_context(text):
+        def _back(mm):
+            idx = int(mm.group(1)) - 1
+            return ph[idx] if 0 <= idx < len(ph) else mm.group(0)
+        return TAG_RE.sub('', re.sub(r'\{T(\d+)\}', _back, text))
+
     out, last = [], 0
     for m in PCT_RE.finditer(body):
         out.append(body[last:m.start()])
-        kind = classify_pct(m.group(1).strip(), body[max(0, m.start() - 35):m.start()])
+        kind = classify_pct(m.group(1).strip(), _cue_context(body[max(0, m.start() - 40):m.start()]))
         if kind == 'la':
             stats['pct_la'] += 1
             ph.append(m.group(0))
