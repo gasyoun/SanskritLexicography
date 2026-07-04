@@ -3,7 +3,7 @@ paper_id: A42
 title: "A Word-Aligned Sanskrit→Russian Corpus Lexicon: a 1.09-Million-Pair Open Alignment Resource"
 status: draft (skeleton, 2/5) — scaffolded 2026-06-26
 readiness: 2/5
-venue: "Письменные памятники Востока / Вопросы языкознания (ВЯ) / CLARIN-LRE"
+venue: "Письменные памятники Востока / Вопросы языкознания (ВЯ) / CLARIN-LRE / ComputEL / LoResMT (added 04-07-2026, ACL Anthology scan — both live, on-topic for low-resource classical-language alignment)"
 author: "M. Gasūns (sole) — ORCID to confirm"
 data_source: "RussianTranslation/src/corpus_lexicon.jsonl (built & verified; 1,091,528 alignments) — figures recomputed 2026-06-26 from the JSONL and from RussianTranslation/gold/precision_report.md"
 ---
@@ -85,20 +85,60 @@ fabrication, rather than produced by a deterministic statistical aligner. We des
 it by its artifact and method and treat the particular model as a build detail
 recorded in the changelog, not as the contribution.
 
-## 2. Related work  *(TODO — to be written)*
+## 2. Related work
 
 Position against three axes. (a) **Parallel-corpus and word-alignment resources** for
 Sanskrit and for low/medium-resource pairs: the DCS corpus and lemma data, the
 verse-aligned `samskrtam.ru` Sanskrit↔Russian corpus this work is induced from, and
 statistical/neural aligners (IBM models, `fast_align`, `awesome-align`) versus
-LLM-prompted alignment. (b) **The Sanskrit→Russian lexicographic tradition** —
-Kochergina 1987, Kossowich 1854, Knauer 1908, Smirnov, Frisch — none of which is a
-corpus-attested token-alignment resource; this resource is complementary, not a
-replacement. (c) **LLM-induced word alignment and bitext mining as method**, and the
-evaluation practice (gold sets, precision/recall, adversarial verification) that a
-resource paper is held to. Land the novelty claim precisely: the contribution is the
-*first large, openly-documented, period/genre/date-stratified Sanskrit→Russian
-alignment lexicon*, induced and corpus-gated — not a new alignment algorithm.
+LLM-prompted alignment. The closest published analogue is Nehrdich's **SansTib**, a
+Sanskrit–Tibetan parallel corpus of 317,289 automatically sentence-aligned pairs with
+a bilingual sentence-embedding model (LREC 2022,
+[2022.lrec-1.724](https://aclanthology.org/2022.lrec-1.724/)) — a large classical-
+Sanskrit-paired alignment resource for a different target language, built by
+embedding-based sentence alignment rather than LLM-prompted word alignment; the two
+resources differ in granularity (sentence vs. word) and method but share the goal of
+turning an implicit bitext into a queryable alignment asset. Punia et al.'s
+Sanskrit–English NMT work (ICON 2020,
+[2020.icon-main.30](https://aclanthology.org/2020.icon-main.30/)) similarly releases
+a parallel/aligned Sanskrit corpus alongside its translation model and is a useful
+prior-resource comparison point on the English side, as is **Itihasa**, the
+93,000-pair Sanskrit–English śloka parallel corpus (WAT 2021,
+[2021.wat-1.22](https://aclanthology.org/2021.wat-1.22/)) that functions as the
+field's standard MT-benchmarking scale reference — worth citing alongside our own
+1.09M-alignment figure to situate the resource's scale. Sentence/word-alignment work
+for Sanskrit does exist in the Anthology, but as corpus-construction papers built on
+automatic/embedding alignment, not LLM-prompted alignment framed as the method
+itself; the closest methodological analogue for that framing is Mao & Yu's LLM
+fine-tuning with statistical-alignment-derived contrastive signal for unseen
+low-resource MT (LoResMT 2024,
+[2024.loresmt-1.1](https://aclanthology.org/2024.loresmt-1.1/)). No ACL Anthology
+paper targets Sanskrit→Russian specifically or frames LLM-induced (vs.
+statistical/embedding) word alignment as the explicit contribution for a classical
+Indic language — this genuine gap, not a search miss, is what this paper's novelty
+claim rests on (rule-based Sanskrit→Hindi MT and generic English–Hindi
+word-alignment work were checked and found too off-topic to cite as direct
+comparators). A distinct but sibling precedent is Patel & Kulkarni's **Word Sense
+Alignment of Sanskrit Lexica** (ISCLS 2024,
+[2024.iscls-1.1](https://aclanthology.org/2024.iscls-1.1/)), which aligns
+*dictionary senses* between Wilson and Yates rather than *corpus token
+occurrences* — the closer Sanskrit-specific precedent for [[A09]] and [[A35]]'s
+dictionary-crosswalk problem, not this paper's, and cross-referenced here only to
+keep the two alignment objects (lexicon sense vs. corpus token) distinct.
+**ComputEL** (Computational Methods for the Study of Endangered
+Languages, live, 9th edition 2026, [venues/computel](https://aclanthology.org/venues/computel/))
+and **LoResMT** (live, 9th edition 2026, [venues/loresmt](https://aclanthology.org/venues/loresmt/))
+are both active low-resource-focused workshops and are added below as submission-venue
+candidates alongside the existing Russian-orientalist target journals, given a
+classical-language, LLM-induced alignment resource is squarely in scope for either.
+(b) **The Sanskrit→Russian lexicographic tradition** — Kochergina 1987, Kossowich
+1854, Knauer 1908, Smirnov, Frisch — none of which is a corpus-attested
+token-alignment resource; this resource is complementary, not a replacement.
+(c) **LLM-induced word alignment and bitext mining as method**, and the evaluation
+practice (gold sets, precision/recall, adversarial verification) that a resource
+paper is held to. Land the novelty claim precisely: the contribution is the *first
+large, openly-documented, period/genre/date-stratified Sanskrit→Russian alignment
+lexicon*, induced and corpus-gated — not a new alignment algorithm.
 
 ## 3. Data and method
 
@@ -213,6 +253,23 @@ verification:** the resource already feeds the `pwg_ru` corpus gate
 whether a proposed Russian gloss is attested in translated context. The induced-then-
 gated design is what makes a million-row resource tractable to build while keeping a
 deterministic, auditable join.
+
+### 5.1 Technique-adoption assessment: Mao & Yu's contrastive signal (§2)
+
+**Yes, concretely actionable — a prompt-construction change, not citation-only.**
+Mao & Yu's LoResMT 2024 method feeds a statistical aligner's output into the LLM as a
+contrastive signal during fine-tuning. This pipeline does not fine-tune, but the
+equivalent prompt-time move is available cheaply: before calling `align_batch()`
+(`build_corpus_lexicon.py:135`), look up the Sanskrit surface form's `form_key()` in
+the already-accumulated `corpus_lexicon.jsonl` and, if prior renderings exist for that
+key, inject them into the prompt as "previously observed rendering(s) for this word:
+…confirm, refine, or override if this context differs." This is a stronger prior than
+Mao & Yu's statistical aligner, since it comes from the same LLM's own accumulated,
+Cyrillic-guarded output rather than an independent word-alignment model — but the
+structural idea (give the model a contrastive anchor instead of aligning cold every
+time) is exactly theirs. Scope: one new lookup function plus a prompt-template edit;
+no new dependency, no schema change to `corpus_lexicon.jsonl`. Not yet implemented —
+flagged here as a scoped follow-up, not done in this pass.
 
 ## 6. Limitations
 
