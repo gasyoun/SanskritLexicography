@@ -139,7 +139,10 @@ def test_harness_scope_and_tools():
     if meta.get('selected_keys') != current.get('selected_keys'):
         fail('optimized harness selected_keys do not match current rootmap selection')
     text = open(meta['path'], encoding='utf-8').read()
-    agent_calls = text.count('agent(prompt, {')
+    # Every schema-bearing model call must carry tools: [] (the yuj file-read-blowup guard).
+    # Since the kill gate (H155 follow-up) the call sites go through agentKill(prompt, {..}),
+    # not a bare agent(prompt, {..}); count both so the guard still holds whichever is used.
+    agent_calls = text.count('agentKill(prompt, {') + text.count('agent(prompt, {')
     tool_guards = text.count('tools: []')
     if agent_calls != tool_guards or not tool_guards:
         fail('optimized harness tools guard mismatch: %d agent calls, %d guards' %
@@ -1664,6 +1667,128 @@ def test_selfheal_fragment_si_threaded_and_tags_normalized():
                 os.remove(p)
 
 
+def test_sense_dense_card_presplit():
+    """H155 (2026-07-04): a SENSE-dense card must presplit even when its CITATION weight
+    (1+<ls>) is FAR below the output budget. A PW addenda card compresses a whole root article
+    (base verb + Caus/Desid + every prefix combination) into dozens of terse senses carrying
+    few citations, so the citation metric (1+<ls>) ranks it as one of the LIGHTEST cards while
+    its real output surface (dozens of {tag,german,russian} sense objects) is the HEAVIEST — it
+    deterministically blows the whole-card StructuredOutput retry cap (tyaj~~h0_zz_pw: 35 senses
+    in 11 <ls>, weight 12, stalled ~7 min retrying the identical call). The fragment-count
+    trigger (frag count > SENSE_PRESPLIT_BUDGET) routes it straight to the proven fragment lane,
+    same as the citation giants — independent of the citation trigger and of byte/citation
+    batching mode. Uses a synthetic card (30 senses, 1 <ls>) so it never depends on a specific
+    corpus fixture."""
+    import gen_opt_harness2 as gh
+    senses = '\n'.join('<div n="1">— %d〉 {%%Bedeutung %d%%}.' % (i, i)
+                       for i in range(1, 31))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n' + senses + '\n')
+    key = 'zz~~synthetic_sense_dense'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')  # empty portrait — exactly the real tyaj~~h0_zz_pw shape
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            # citation weight 1+<ls>=2 is far below OUTPUT_BUDGET(90): only the SENSE trigger
+            # can route this card. nominal mode makes the key its own card (no rootmap needed).
+            js, batches = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            import re as _re
+            presplit = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js, _re.M).group(1))
+            batched = {k for b in batches for k in b}
+            if key not in presplit:
+                fail('a sense-dense card (30 senses, 1 <ls>) must be routed to presplit by the '
+                     'fragment-count trigger; got PRESPLIT=%r batches=%r' % (presplit, batches))
+            if key in batched:
+                fail('a presplit card must be pulled OUT of the whole-card batch lane, got it in '
+                     '%r' % (batches,))
+            # the citation trigger alone must NOT explain it (proves the sense trigger is load-
+            # bearing): with the sense trigger disabled, the card falls back to a batch.
+            saved_sb = gh.SENSE_PRESPLIT_BUDGET
+            gh.SENSE_PRESPLIT_BUDGET = None
+            try:
+                js2, batches2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+                presplit2 = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js2, _re.M).group(1))
+            finally:
+                gh.SENSE_PRESPLIT_BUDGET = saved_sb
+            if key in presplit2:
+                fail('with --sense-presplit-budget=off the citation-light card must NOT presplit '
+                     '(only the sense trigger should route it); got PRESPLIT=%r' % presplit2)
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_kill_gate_wired():
+    """H155 follow-up (2026-07-04): the wall-clock kill gate must be wired into every
+    schema-bearing agent() call so a stalled/doomed call (the ~7-min tyaj~~h0_zz_pw
+    retry-cap loop, or any un-characterized future driver) is abandoned at KILL_FACTOR x
+    its expected-for-complexity time and routed to the bounded fragment lane — instead of
+    burning the full StructuredOutput retry cap. Static regression guard on the generated
+    harness: the kill consts render, the budget helper + both call sites use agentKill,
+    INPUTS carries the skeleton (the complexity signal), and --no-kill disables it."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n'
+           '<div n="1">— 1〉 {%verlassen%} <ls>Y. 2</ls>.\n')
+    key = 'zz~~synthetic_kill'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            # consts present with the calibrated defaults
+            if 'const KILL = true' not in js:
+                fail('kill gate must default ON (const KILL = true) in the generated harness')
+            for c in ('KILL_FACTOR', 'KILL_BASE_MS', 'KILL_SLOPE_MS', 'KILL_FLOOR_MS', 'KILL_CEIL_MS'):
+                if not _re.search(r'^const %s = [0-9.]+$' % c, js, _re.M):
+                    fail('kill const %s missing/malformed in the generated harness' % c)
+            # helper + BOTH call sites (resolveGroup main lane + healGroup fragment lane) use it
+            n = js.count('agentKill(')
+            if n < 3:
+                fail('agentKill must appear 3x (definition + main-batch call + heal-group call); '
+                     'got %d — a call site is unguarded' % n)
+            if 'class KillTimeout' not in js or 'const isKill' not in js:
+                fail('KillTimeout/isKill classifier must be present so a kill is distinguished '
+                     'from a real hard failure')
+            # the complexity signal (skeleton bytes) must be carried per card
+            inputs = json.loads(_re.search(r'^const INPUTS = (\{.*?\})\nconst PH', js, _re.S | _re.M).group(1))
+            if 'skeleton' not in inputs[key] or 'senses' not in inputs[key]:
+                fail('INPUTS must carry skeleton (kill-budget signal) + senses; got keys %r'
+                     % sorted(inputs[key]))
+            meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
+            if not meta.get('kill') or not meta.get('kill_gate'):
+                fail('meta must record the kill-gate provenance (kill + kill_gate)')
+            # --no-kill disables it
+            saved_kill = gh.KILL
+            gh.KILL = False
+            try:
+                js2, _b2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            finally:
+                gh.KILL = saved_kill
+            if 'const KILL = false' not in js2:
+                fail('--no-kill / KILL=False must render const KILL = false (disables the gate)')
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -1682,6 +1807,8 @@ def main():
         test_no_fallback_batch_isolation,
         test_cit_split_never_tears_open_span,
         test_selfheal_fragment_si_threaded_and_tags_normalized,
+        test_sense_dense_card_presplit,
+        test_kill_gate_wired,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
