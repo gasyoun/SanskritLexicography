@@ -114,6 +114,10 @@ def main():
     print('\n%s: %d/%d units clean%s'
           % ('PASS' if not fails else 'FAIL', len(stems) - len(fails), len(stems),
              '' if not fails else ' | flagged: ' + ', '.join(fails)))
+    # Machine-readable verdict line — the parent audit_window.py parses THIS strictly rather
+    # than scraping the prose summary above, so a future wording tweak here can never silently
+    # drop flagged cards from the requeue (H169 defect 2).
+    print('FLAGGED_JSON: %s' % json.dumps(fails))
     sys.exit(0 if not fails else 1)
 
 

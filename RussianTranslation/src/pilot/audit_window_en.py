@@ -194,13 +194,19 @@ def audit_card(result, tm, do_mw):
             norm = re.sub(r'\s+', ' ', ep).strip().lower()
             if norm and norm == h.lower():
                 soft.append('CIRCULAR')
-            # Within-card identical-gloss check (soft): skip structural headers and trivial
-            # prose — preverb headers ("With ...") legitimately repeat. The canonical
-            # cross-card tag dedup is delegated to audit_sense_dupes.py below.
+            # Within-card identical-gloss check: skip structural headers — preverb headers
+            # ("With ...") legitimately repeat. The canonical cross-card tag dedup is
+            # delegated to audit_sense_dupes.py below.
+            # DUP (HARD): two senses share the exact same english, regardless of length —
+            # a real duplicate is a real duplicate whether it's one word or ten.
+            # SAME-GLOSS (soft): kept as a lower-confidence variant gated on >=3 content
+            # words, for callers that only want the historical soft signal.
             headerlike = any(hk in tag for hk in HEADERLIKE)
-            if norm and not headerlike and len(words) >= 3:
+            if norm and not headerlike:
                 if norm in seen:
-                    soft.append('SAME-GLOSS(=%s)' % seen[norm])
+                    hard.append('DUP(=%s)' % seen[norm])
+                    if len(words) >= 3:
+                        soft.append('SAME-GLOSS(=%s)' % seen[norm])
                 else:
                     seen[norm] = tag
             for fl in hard + soft:
@@ -249,7 +255,7 @@ def run_sense_dupes(mod, path):
     return {'returncode': rc, 'summary': line.strip()}
 
 
-HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'SENSE-DUPE')
+HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'SENSE-DUPE', 'DUP')
 
 
 def is_hard(flag):
