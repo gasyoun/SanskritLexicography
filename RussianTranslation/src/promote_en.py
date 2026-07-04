@@ -51,6 +51,8 @@ from collections import defaultdict
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+import pipeline_version
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -124,6 +126,10 @@ def en_index(paths, gen_model_version=GEN_MODEL_VERSION):
                     'rootmap_sha256': rootmap_sha256,
                     'input_sha256': ih.get('raw_sha256'),
                     'mw_used': None,
+                    # semver of OUR tooling at promotion time — orthogonal to model_version;
+                    # mirrors provenance.pipeline on the RU side (promote_final_cards.py) so a
+                    # later bugfix can flag which EN rows predate it too (pipeline_version.py).
+                    'pipeline': pipeline_version.stamp(model_version=gen_model_version),
                 }
     return idx, prov
 
@@ -212,7 +218,8 @@ def selftest():
     ]}
     prov = {'p_a~~h0': {'model': 'sonnet', 'model_version': 'claude-sonnet-4-6', 'judge': None,
                         'generated_at': '2026-06-30T00:00:00Z', 'rootmap_sha256': 'deadbeef',
-                        'input_sha256': 'cafe', 'mw_used': None}}
+                        'input_sha256': 'cafe', 'mw_used': None,
+                        'pipeline': pipeline_version.stamp(model_version='claude-sonnet-4-6')}}
     judge = {'p_a~~h0': {'model': 'opus', 'model_version': 'claude-opus-4-8', 'ok': True,
                          'severity': 1, 'verdict': 'ok', 'note': 'fine'}}
     stats = attach(rows, idx, 0.92, prov=prov, judge=judge)
@@ -227,6 +234,8 @@ def selftest():
     p0 = rows[0].get('en_provenance')
     assert p0 and p0['model'] == 'sonnet' and p0['input_sha256'] == 'cafe', 'en_provenance attached'
     assert p0['model_version'] == 'claude-sonnet-4-6', 'gen model VERSION recorded (not just tier)'
+    assert p0.get('pipeline') and p0['pipeline'].get('schema') == pipeline_version.PIPELINE_SCHEMA, \
+        'en_provenance carries a pipeline stamp, mirroring the RU side'
     assert p0['judge'] and p0['judge']['model'] == 'opus' and p0['judge']['verdict'] == 'ok', 'judge folded'
     assert p0['judge']['model_version'] == 'claude-opus-4-8', 'judge model VERSION recorded'
     assert 'en_provenance' not in rows[2], 'no provenance on unmatched rows'
