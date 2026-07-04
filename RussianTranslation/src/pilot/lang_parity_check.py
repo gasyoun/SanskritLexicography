@@ -39,7 +39,10 @@ def file_sha256(rel_path):
     p = os.path.join(REPO_ROOT, rel_path)
     if not os.path.exists(p):
         return None
-    return hashlib.sha256(open(p, 'rb').read()).hexdigest()
+    # Normalize CRLF->LF so the hash matches the git-blob content regardless of
+    # core.autocrlf on the checkout OS (Windows disk bytes vs Linux/CI bytes).
+    data = open(p, 'rb').read().replace(b'\r\n', b'\n')
+    return hashlib.sha256(data).hexdigest()
 
 
 def check(entries):
