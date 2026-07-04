@@ -85,6 +85,19 @@ src/dcs_freq_dims.json
 src/mw_en_tm.json
 src/pilot/run_pilot_wf.en_*.js
 
+# Per-root generated requeue/translate harnesses (same AUTO-DERIVED class as the
+# run_pilot_wf.opt2.js patterns above; one gets created per root/slice, so a fixed
+# list can't keep up — glob it).
+src/pilot/run_pilot_wf.opt2.*_requeue*.js
+src/pilot/run_pilot_wf.opt2.*_translate.js
+
+# Pre-operation safety snapshots of the local-only translated store / wf_output
+# (regenerable-adjacent backups taken before a risky merge/overlay, never a
+# deliverable — same policy as the *.prefreq.bak entry above).
+src/pwg_ru_translated.jsonl.*.bak
+src/pwg_ru_translated.jsonl.*.keep
+wf_output.*.keep
+
 # Sa→Ru glossary — this repo holds only the generation pipeline (src/build_*.py) + docs.
 # The data + live site live in gasyoun/SanskritRussian; regenerate here, don't commit it.
 # Tracked: glossary/README.md, glossary/SAMPLE_root_glossary.md, and the src/ scripts.
