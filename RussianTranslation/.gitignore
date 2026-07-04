@@ -56,6 +56,10 @@ wf_before*.json
 wf_opt*.json
 wf_prod*.json
 
+# Local legacy runtime snapshots; keep on disk, never commit.
+archive/legacy_runtime_*/
+src/pilot/archive/legacy_runtime_*/
+
 # Operator-generated key list files (local requeue/split artifacts)
 da_keys_a.txt
 da_keys_b.txt
