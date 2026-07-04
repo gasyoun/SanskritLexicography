@@ -19,6 +19,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from safe_filename import safe_name
+import pipeline_version
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INP = os.path.join(HERE, 'pilot', 'input')
@@ -86,6 +87,10 @@ def glue(root, outdir):
             parts.append('_[перевод под-карточки `%s` ещё не готов в этом сэмпле]_' % s['subkey'])
             miss += 1
         parts.append('')
+    # one pipeline-provenance footer for the whole assembled card (sub-cards carry none, so
+    # nothing scatters mid-document). Versions come from the current tooling; the model id
+    # stays authoritative in the JSONL store.
+    parts.append(pipeline_version.md_footer(pipeline_version.stamp()))
     nested = os.path.join(outdir, safe_name(root) + '.NESTED.md')
     open(nested, 'w', encoding='utf-8').write('\n'.join(parts) + '\n')
     print('glue-after-translate  %s: %d sub-cards (%d translated, %d pending) -> %s'
