@@ -238,7 +238,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "audit_window_en.py reimplements its own gates from scratch rather than importing the RU modules (its own comment: 'the RU gate is wired around Russian-specific semantic checks'), so none of the 3 July fixes reached EN. EN cards from the same PWG/PW/SCH source have the same multi-layer/addenda structure, so the same false-positive classes plausibly apply there too.",
     "tracking": "spawned task chip task_d29bb788 (2026-07-04): 'Port RU gate fixes to audit_window_en.py' — running",
     "verified_sha256": {
-      "src/audit_coverage.py": "f9d224ff876a401008cd6d695cf4da71432f6a883255f7d1464758f2aa1cf79f",
+      "src/audit_coverage.py": "8c54aa22943140624238273b5bb6a2cbe9aceded5f8295cb84cd36bd994904c0",
       "src/pilot/prompt_rule_audit.py": "293b580cdf8866c8ae0d892dd77981e34561398e2c0142623aed1127740019b0",
       "src/pilot/audit_window.py": "2f9e418010d2ed9bc5c49be934eb95d672cae9ad3f01aa4099756dc7cf0e44a1",
       "src/pilot/audit_window_en.py": "4775368d2da38f0d6aede470d838becb6cc863de4914a785aa855baf45735fd8"
@@ -276,7 +276,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "ed223728fce3e5c71449a2df56c333cc3ff64f9708bb97cdaa1d1e6442dd8dc1",
+      "src/promote_final_cards.py": "572bb45477ce4856f6caba7e813e00a146bbeeedf3ae04b471e4616dafaa8935",
       "src/promote_en.py": "7d3ce9680e304fff8ba0bcaba843945c36c6f0894441a56e8695ec58a6b5ebfe"
     }
   },
