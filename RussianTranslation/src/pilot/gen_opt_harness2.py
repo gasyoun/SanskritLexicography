@@ -99,6 +99,39 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
                    #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
                    #  (sam translates fine at 34 <ls>), so this budget is intentionally much
                    #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
+# --- wall-clock kill gate (H155 follow-up, 2026-07-04) ----------------------------
+# The structural presplit triggers above catch the KNOWN whole-card failure drivers
+# (citation + sense density) BEFORE a run. The kill gate is the runtime BACKSTOP for
+# the drivers we haven't characterized yet (gloss-prose volume, masked-token count,
+# multi-layer nesting, novel shapes — see FAILURE_MODES_AND_KILL_GATE_2026-07-04.md):
+# every schema-bearing agent() call is budgeted a wall-clock allowance scaled to its
+# complexity, and a call that runs past KILL_FACTOR x its expected time is abandoned
+# (the harness stops blocking and routes its cards to the bounded fragment lane)
+# instead of waiting out the full ~5-deep StructuredOutput retry cap (the ~7-min
+# tyaj~~h0_zz_pw stall MG stopped by hand). Implemented in-JS with setTimeout (a
+# RELATIVE timer — Date.now() is banned in Workflow scripts); AbortController is
+# unavailable in the runtime, so an abandoned call keeps running in the background
+# until it dies on its own cap — we stop WAITING on it, which is the win.
+# Budget model (fitted from the tyaj --no-tm benchmark, 13 agent calls, 2026-07-04):
+# a call's expected ms ~= KILL_BASE_MS + KILL_SLOPE_MS * skel_bytes, where skel_bytes =
+# the summed MASKED-SKELETON byte length of the call's cards/fragments. Skeleton bytes
+# are the best single time predictor because the model's OUTPUT is ~2x the skeleton (echo
+# the german + write the russian), and they are a natural COMPOSITE of every driver in
+# FAILURE_MODES_AND_KILL_GATE_2026-07-04.md — citations (as {Tn}), senses (more lines),
+# and gloss prose all land in the skeleton. Benchmark: legit main-batch calls ran
+# ~25 ms/skel_byte (max ~44 on a slow-variance call), 16-84 s wall-clock. The SLOPE below
+# is set ABOVE the observed ceiling and then KILL_FACTOR is applied on top, so no legit
+# call (even a +50% variance one) is ever killed, while a doomed stall (the ~7-min
+# zz_pw retry-cap loop = ~5x normal) blows past. Budget = KILL_FACTOR * (BASE + SLOPE *
+# skel_bytes), clamped to [KILL_FLOOR_MS, KILL_CEIL_MS]. Conservative first cut on
+# purpose (a false kill costs one selfheal, but we still want zero of them on rollout);
+# tighten with --kill-factor once real runs confirm the envelope.
+KILL = True                 # --no-kill disables; --kill-factor=N tunes the multiple
+KILL_FACTOR = 2.0           # MG's "200%": kill a call at 2x its expected-for-complexity time
+KILL_BASE_MS = 30000        # fixed per-call latency (model spin-up + fixed framing)
+KILL_SLOPE_MS = 45          # ms per masked-skeleton byte (above the ~44 ms/byte observed ceiling)
+KILL_FLOOR_MS = 120000      # never kill before 2 min (jitter guard on tiny calls)
+KILL_CEIL_MS = 480000       # hard ceiling — nothing runs past 8 min even at max size
 
 
 def grammar_text(root):
@@ -224,6 +257,12 @@ def parse_args(argv):
         elif a.startswith('--sense-presplit-budget='):
             v = a.split('=', 1)[1].strip().lower()
             globals()['SENSE_PRESPLIT_BUDGET'] = None if v in ('off', '0', 'none') else int(v)
+        elif a == '--no-kill':
+            globals()['KILL'] = False
+        elif a == '--kill':
+            globals()['KILL'] = True         # default; kept for documented runbooks
+        elif a.startswith('--kill-factor='):
+            globals()['KILL_FACTOR'] = float(a.split('=', 1)[1])
         elif a == '--binary-split':
             globals()['BINARY_SPLIT'] = True # default since 2026-07-02; kept for documented runbooks
         elif a == '--no-binary-split':
@@ -575,6 +614,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             die('mask round-trip not lossless for %s' % k)
         inputs[k] = {'skeleton': skel, 'portrait': portrait,
                      'ls': raw.count('<ls'), 'sk': raw.count('{#'),
+                     'senses': raw.count('〉'),  # '〉' sense-delimiter count — coarse
+                                                     # output-complexity signal for the kill budget
                      'nws': 1 if 'NWS' in raw else 0}
         raws[k] = raw
         portraits[k] = portrait
@@ -783,6 +824,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
         'sense_presplit_budget': SENSE_PRESPLIT_BUDGET if SELFHEAL else None,
+        'kill': KILL,
+        'kill_gate': ({'factor': KILL_FACTOR, 'base_ms': KILL_BASE_MS, 'slope_ms': KILL_SLOPE_MS,
+                       'floor_ms': KILL_FLOOR_MS, 'ceil_ms': KILL_CEIL_MS} if KILL else None),
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_auto': bool(tm_auto),
@@ -828,6 +872,13 @@ const FRAGS = %(frags)s
 const PHF = %(phf)s
 const BINARY_SPLIT = %(binary_split)s
 const PRESPLIT = %(presplit)s
+// Wall-clock kill gate (H155 follow-up). See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md.
+const KILL = %(kill)s
+const KILL_FACTOR = %(kill_factor)s
+const KILL_BASE_MS = %(kill_base_ms)s
+const KILL_SLOPE_MS = %(kill_slope_ms)s
+const KILL_FLOOR_MS = %(kill_floor_ms)s
+const KILL_CEIL_MS = %(kill_ceil_ms)s
 // --tm: cards pre-resolved from the content-addressed translation memory (source-SHA hit).
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
@@ -851,6 +902,27 @@ const countOf = (card, re) => { let n = 0; for (const rec of (card.records || []
 // per-row (results[].error) and in summary.failures.
 const FAIL = {}
 const noteFail = (k, why) => { FAIL[k] = String(why).slice(0, 300) }
+// --- wall-clock kill gate ---------------------------------------------------------
+// Budget each schema-bearing agent() call a wall-clock allowance scaled to its output
+// volume (skelBytes = summed masked-skeleton length of its cards/fragments — the model's
+// output is ~2x this, and it's a natural composite of every failure driver); a call that
+// runs past KILL_FACTOR x its expected time is abandoned so the caller can fall to the
+// bounded fragment lane instead of waiting out the full StructuredOutput retry cap.
+// setTimeout is a RELATIVE timer (Date.now() is banned in the runtime); AbortController
+// is unavailable, so an abandoned call keeps running in the background until it dies on
+// its own cap — we stop BLOCKING on it, which is the whole point.
+class KillTimeout extends Error {}
+const isKill = e => (e instanceof KillTimeout) || (e && /kill-timeout/.test(String(e && e.message)))
+const killBudgetMs = skelBytes => Math.min(KILL_CEIL_MS, Math.max(KILL_FLOOR_MS, KILL_FACTOR * (KILL_BASE_MS + KILL_SLOPE_MS * skelBytes)))
+const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k].skeleton.length : 0), 0)
+async function agentKill(prompt, opts, skelBytes) {
+  if (!KILL) return agent(prompt, opts)
+  const ms = killBudgetMs(skelBytes)
+  let timer
+  const guard = new Promise((_, rej) => { timer = setTimeout(() => rej(new KillTimeout('kill-timeout ' + Math.round(ms / 1000) + 's @ skelBytes=' + skelBytes)), ms) })
+  try { return await Promise.race([agent(prompt, opts), guard]) }
+  finally { clearTimeout(timer) }
+}
 // Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
 // Two texts with equal token multisets restore to identical citation/markup content.
 const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
@@ -912,7 +984,16 @@ async function healGroup(k, idxs, grp, label) {
   for (let att = 0; att < 3 && pending.length; att++) {
     const blocks = pending.map(i => '\\n\\n=== CARD ' + fkey(i) + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
-    const res = await agent(prompt, { label: label + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
+    let res
+    try {
+      res = await agentKill(prompt, { label: label + '[' + pending.length + ']' + (att ? '(r' + att + ')' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, gskel)
+    } catch (e) {
+      if (!isKill(e)) throw e   // real hard failure — propagate (caught by selfHeal's per-group try)
+      pending.forEach(fi => noteFail(fkey(fi), e.message))
+      log(label + ': ' + e.message + ' — abandoned, bisecting ' + pending.length + ' fragment(s)')
+      break   // stop retrying this group; fall to the bisection below (smaller, cheaper halves)
+    }
     if (res && Array.isArray(res.cards)) {
       const km = byKey1(res.cards)
       // match by echoed key1 first; fall back to position within the pending set
@@ -1059,7 +1140,18 @@ async function resolveGroup(pending, label) {
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && cur.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
-    const res = await agent(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] })
+    let res
+    try {
+      res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur))
+    } catch (e) {
+      if (!isKill(e)) throw e   // real hard failure — propagate as before (translateBatch -> selfheal)
+      // Kill: stop RE-billing this whole call — a stall re-times-out identically. Mark the
+      // still-pending cards and break so BINARY_SPLIT can isolate the slow one (smaller halves
+      // get proportionally smaller budgets), bottoming out to selfHeal per card.
+      cur.forEach(k => noteFail(k, e.message))
+      log(label + ': ' + e.message + ' — abandoned, routing ' + cur.length + ' card(s) to split/heal')
+      break
+    }
     if (res && Array.isArray(res.cards)) {
       // Match responses by their echoed key1 FIRST, position second. Positional-only
       // matching shifts every card after an omitted/reordered one onto the wrong key;
@@ -1205,6 +1297,9 @@ return { meta: META, summary, results: out }
         'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
         'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
+        'kill': json.dumps(KILL), 'kill_factor': json.dumps(KILL_FACTOR),
+        'kill_base_ms': json.dumps(KILL_BASE_MS), 'kill_slope_ms': json.dumps(KILL_SLOPE_MS),
+        'kill_floor_ms': json.dumps(KILL_FLOOR_MS), 'kill_ceil_ms': json.dumps(KILL_CEIL_MS),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),

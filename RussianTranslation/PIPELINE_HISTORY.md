@@ -180,6 +180,29 @@ same session rather than worked around:
    The `_zz_pw` addenda class was a known StructuredOutput-cap trigger
    (`gam~~h0_zz_pw01` hit it before and only recovered via selfheal after the
    doomed retries); this makes the recovery *immediate* instead of paid-for.
+6. **A wall-clock kill gate — the runtime backstop for the failure drivers
+   we haven't turned into structural triggers yet** (H155 follow-up, MG:
+   *"card complexity is sense-count — that's just one case; what else is
+   possible? Add a gate: if a translation runs too long, kill it, don't wait
+   for miracles"*). #5 fixes the *known* sense driver proactively, but the
+   taxonomy in [`FAILURE_MODES_AND_KILL_GATE_2026-07-04.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md)
+   lists more (gloss-prose volume, masked-token count, multi-layer nesting,
+   batch-level sums, and whatever hasn't surfaced) — any single-metric budget
+   is blind to the others. So every schema-bearing `agent()` call is now raced
+   against a `setTimeout` budget scaled to its masked-skeleton byte volume
+   (the best time predictor — output ≈ 2× skeleton — measured from a 13-call
+   `tyaj --no-tm` benchmark: legit calls ran ≤ 84 s at ~25 ms/byte). A call
+   that overruns `KILL_FACTOR=2 ×` its expected time is abandoned and its cards
+   fall to the bounded fragment lane, instead of waiting out the full ~5-deep
+   retry cap. Runtime constraints shaped it: `setTimeout` works (a *relative*
+   timer — `Date.now()` is banned), but `AbortController` is absent, so a
+   killed call keeps running in the background until its own cap — the harness
+   just stops *blocking* on it. Default ON (`--no-kill` / `--kill-factor=N`);
+   proven by a zero-token behavioural test (9/9) + a static wiring selftest.
+   **The discipline going forward:** when a new stall class appears in a real
+   run, promote it from "caught by the kill gate" to its own structural
+   trigger (as #5 did for senses) so the next occurrence spends zero doomed
+   tokens.
 
 A cross-language audit also found that 3 of the Phase-6 gate-bug fixes
 never reached the EN audit path (a separate implementation,
@@ -303,6 +326,9 @@ likely the SAME class, not a new bug:
   is the exact loop, verbatim.
 - **Touching RU or EN-specific code?** → [`LANG_PARITY.md`](LANG_PARITY.md)'s
   policy: classify SHARED / INTENTIONAL-DIVERGENCE / GAP before closing out.
+- **A card/batch stalled, or wondering what else can blow the retry cap?** →
+  [`FAILURE_MODES_AND_KILL_GATE_2026-07-04.md`](FAILURE_MODES_AND_KILL_GATE_2026-07-04.md):
+  the full driver taxonomy + the wall-clock kill-gate design and calibration.
 - **What's queued/in-flight/blocked right now?** → [`.ai_state.md`](.ai_state.md),
   the live journal (this document doesn't replace it — it's the map, not the
   territory).
