@@ -8,7 +8,51 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
-## 2026-07-04
+## [Unreleased]
+
+## [1.2.0] - 2026-07-04
+
+### Production ramp — runnable work, not wishful work
+- Added the live PWG->RU ramp planner (`src/pilot/ramp_plan.py`) for the
+  100 -> 1,000 -> 10,000 card progression. It prices each runnable root with
+  the same preflight machinery used before Max spend, reports card/agent/batch
+  counts, and marks the 10,000-card mode as a root-by-root drain with default
+  concurrency 1 and hard ceiling 3 until the store/merge discipline is proven
+  at larger volume.
+- Made the H151 verb-root worklist runnable-aware (`src/pilot/verb_worklist.py`):
+  the operator queue now filters DCS-attested remaining verbs to roots with an
+  existing rootmap, while preserving the missing-rootmap backlog for audit and
+  expansion planning. Current live plan: 702 DCS-attested verb roots remain, 13
+  are runnable, and 689 are blocked on rootmap generation/recovery.
+- Locked the first controlled ramp target to runnable roots (`tyaj`, `dah`,
+  `kzip`): 106 cards/sub-cards, 45 expected agents, 4 presplit cards. The
+  current runnable pool reaches 810 cards, so the 1,000-card milestone requires
+  at least 190 more cards from newly generated or recovered rootmaps.
+
+### QA gates — fail loud, then requeue
+- Hardened the RU audit gate so child auditors must emit strict
+  `FLAGGED_JSON`; missing or malformed verdict lines now crash loud and requeue
+  the whole window instead of silently clearing flagged cards.
+- Added a real EN duplicate-sense hard gate and ported the gate-bug fixes across
+  the EN path, closing the language-parity gap that could have hidden identical
+  English senses under soft-report wording.
+- Fixed the Latin/Greek cue masking leak: `<ab>lat.</ab>` behind a placeholder
+  is now expanded for classification, so cognate glosses such as `ignis` are not
+  treated as German translation material.
+- Made collection/store writes safer: robust JSON-string result parsing, one
+  parsed batch pass, and coalesced appends reduce the stranded-run and torn-line
+  failure surface.
+
+### Publication assets — schema-validated translation memory
+- Added publication and terminology export commands for the translation-memory
+  lane. The RU publication feed is checksum-locked and schema-validated under
+  `release/translation_memory/`; the separate `sa_ru_terminology` DOI lane is
+  intentionally empty until curated term suggestions exist.
+- Added fuzzy-speed reporting and ranking profiles for TM reuse, keeping exact
+  reuse machine-gated while allowing fuzzy matches to remain advisory until
+  validated.
+- Verified the current publication-facing RU TM: 2,392 publication records pass
+  `translation_memory.py validate --lang ru --publication`.
 
 ### Pipeline versioning — stamp WHICH tooling produced each translation
 - New `src/pipeline_version.py` + manifest `src/pipeline_versions.json`: a semver
