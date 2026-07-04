@@ -27,7 +27,8 @@ restarts at 1 in each sub-section** (`A`–`F` data · `G`–`K` interfaces · `
 dictionaries use their code). Datasets are graded by **severity/maturity**: 🟢 **canonical**
 (authoritative, reproducible, widely consumed) · 🟡 **derived** (secondary / analysis output) ·
 ⚪ **raw** (gitignored, binary, or external mirror). The **Intro** column is the asset's
-first-introduced month/year from git history (external stacks: —).
+first-introduced month/year from git history; for the external stacks (M1–M5) it is instead the
+**last update**, each from a documented source of truth (see the † note under that table).
 
 **How assets connect.** Many entries belong to shared clusters — the **vidyut**
 lemmatization chain (`build_vidyut_fallback.py` (L6) calls the `vidyut` engine (M5), feeding
@@ -242,11 +243,18 @@ first appearance where the repo predates it).
 
 | ID | Stack | What it is | Example (usage) | Intro | Reuse rule · Home |
 |---|---|---|---|---|---|
-| M1 | Samsaadhanii / SCL (Amba Kulkarni, UoHyd) | Morph analyzer, sandhi/segmenter, Pāṇinian parser, Amarakośa net, Dhātupāṭha | `GET …/scl/…/morph.cgi?word=Bavati → morphology` | — | Call the live JSON APIs; don't clone the GPL source · [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md) |
-| M2 | Sanskrit Heritage (Gérard Huet, INRIA) | Dictionary + morphology + segmenter (LGPLLR): DICO, MW-aligned pages, frequency TSVs | `DICO/1.html#akaara → Heritage gloss + morphology` | — | Pull from the GitHub mirror (INRIA is bot-walled) · [Heritage_Resources](https://github.com/darkone23/Heritage_Resources) |
-| M3 | DharmaMitra (Berkeley) | AI-translation stack; GPU morphology supplier to csl-atlas | `Translate · Deep-Research (with references) · segmentation · OCR` | — | Reuse their MT error taxonomy; prospective Kosh-API consumer · [dharmamitra.org](https://dharmamitra.org/) |
-| M4 | VedaWeb (Cologne / UZH, CC BY 4.0) | Accented Rig-Veda + per-word morphology, C-SALT-linked | `bulk-export accented RV text + per-word UZH morphology` | — | The validation set for the Vedic accent axis — export once · [vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de/rigveda/) |
-| M5 | vidyut (Ambuda) | Rust Sanskrit toolkit: kosha FST lexicon, prakriyā generator, cheda segmenter, chandas meter | `from vidyut.kosha import Kosha; k.get("Bavati")` | — | Hand-rolling paradigm generation · [vidyut](https://github.com/ambuda-org/vidyut) |
+| M1 | Samsaadhanii / SCL (Amba Kulkarni, UoHyd) | Morph analyzer, sandhi/segmenter, Pāṇinian parser, Amarakośa net, Dhātupāṭha | `GET …/scl/…/morph.cgi?word=Bavati → morphology` | 12/25 † | Call the live JSON APIs; don't clone the GPL source · [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md) |
+| M2 | Sanskrit Heritage (Gérard Huet, INRIA) | Dictionary + morphology + segmenter (LGPLLR): DICO, MW-aligned pages, frequency TSVs | `DICO/1.html#akaara → Heritage gloss + morphology` | 03/25 † | Pull from the GitHub mirror (INRIA is bot-walled) · [Heritage_Resources](https://github.com/darkone23/Heritage_Resources) |
+| M3 | DharmaMitra (Berkeley) | AI-translation stack; GPU morphology supplier to csl-atlas | `Translate · Deep-Research (with references) · segmentation · OCR` | 05/26 † | Reuse their MT error taxonomy; prospective Kosh-API consumer · [dharmamitra.org](https://dharmamitra.org/) |
+| M4 | VedaWeb (Cologne / UZH, CC BY 4.0) | Accented Rig-Veda + per-word morphology, C-SALT-linked | `bulk-export accented RV text + per-word UZH morphology` | 10/24 † | The validation set for the Vedic accent axis — export once · [vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de/rigveda/) |
+| M5 | vidyut (Ambuda) | Rust Sanskrit toolkit: kosha FST lexicon, prakriyā generator, cheda segmenter, chandas meter | `from vidyut.kosha import Kosha; k.get("Bavati")` | 01/25 † | Hand-rolling paradigm generation · [vidyut](https://github.com/ambuda-org/vidyut) |
+
+† External stacks: **Intro** shows the **last update** (not a first-introduced date), each from a documented source of truth —
+M1 [SCL site footer "Updated 25 Dec 2025"](https://sanskrit.uohyd.ac.in/scl/) ·
+M2 [Heritage mirror latest commit 2025-03-02](https://github.com/darkone23/Heritage_Resources) (live INRIA site bot-walled) ·
+M3 [DharmaMitra news feed — Segment View 2026-05-11](https://dharmamitra.github.io/dharmamitra-guides/news/) ·
+M4 [VedaWeb Zenodo data v2, 2024-10-25](https://doi.org/10.5281/zenodo.15489124) ·
+M5 [vidyut GitHub release py-0.4.0, 2025-01-22](https://github.com/ambuda-org/vidyut/releases).
 
 *The **vidyut** engine (M5) is what `build_vidyut_fallback.py` (L6) calls, and what generates
 `vidyut_form2lemma.tsv` (E5) and the Zaliznyak-index paradigms (E7) — one cluster, three entries
