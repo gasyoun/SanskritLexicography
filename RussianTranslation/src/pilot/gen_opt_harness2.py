@@ -887,6 +887,12 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             timespec='seconds').replace('+00:00', 'Z'),
         'root': root, 'safe_root': safe_name(root), 'lang': lang,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
+        # Nominal mode: `root` is only a window LABEL (e.g. pril10_w1), never a real headword,
+        # and result rows are keyed by the safe-name file stem (k_ala, r_upa). promote_final_cards
+        # keys the store row on meta.nominal + nominal_keymap[stem] -> true SLP1 headword; without
+        # these two fields it would fall back to meta.root and mis-key every card to the label.
+        'nominal': nominal,
+        'nominal_keymap': ({k: (_slp1_lex_for_key(k)[0] or k) for k in keys} if nominal else None),
         'grammar_layer': ('nominal' if nominal else 'root') if grammar_on else 'none',
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
         'rootmap_sha256': sha256_file(rootmap) if rootmap else None,

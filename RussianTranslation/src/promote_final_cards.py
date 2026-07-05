@@ -205,6 +205,16 @@ def selftest():
     assert p['model'] == 'sonnet' and p['rootmap_sha256'] == 'abc'
     assert p['model_version'] == SELFTEST_MODEL_VERSION, 'model VERSION recorded, not just the tier alias'
     assert p['input_raw_sha256'] == 'r1' and p['generated_at'], 'provenance must be complete'
+    # NOMINAL mode: meta.root is a window LABEL; the row must key to the true SLP1 headword
+    # recovered from nominal_keymap[stem], NOT to the label (regression guard, H179 drain).
+    nmeta = {'root': 'pril10_w1', 'nominal': True, 'nominal_keymap': {'k_ala': 'kAla'},
+             'input_hashes': {'k_ala': {'raw_sha256': 'r', 'portrait_sha256': 'p'}}}
+    ncard = {'key1': 'kAla', 'iast': 'kāla',
+             'records': [{'h': 'kāla', 'senses': [{'tag': '1', 'russian': 'время', 'german': 'Zeit'}]}]}
+    nrow = list(rows_for('k_ala', {'card': ncard, 'meta': nmeta, 'wf_file': 'wf_output.json'},
+                         'ai_translated', SELFTEST_MODEL_VERSION))[0]
+    assert nrow['key1'] == 'kAla', 'nominal card must key to true SLP1 headword, not the window label'
+    assert nrow['subcard'] == 'k_ala' and nrow['layer'] == 'pwg'
     assert 'partial_card' not in p, 'complete card carries no partial marker'
     # a partial (selfheal) card must be marked on every row it yields
     pentry = dict(entry)
