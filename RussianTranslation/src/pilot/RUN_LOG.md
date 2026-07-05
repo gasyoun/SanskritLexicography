@@ -217,3 +217,36 @@ F-gate-nws-fp false positive. This satisfies the handoff's "fresh sTA is
 mechanically clean **or has a targeted rerun plan**" gate for advancing to Stage B.
 Open follow-ups left for later (not blocking BU): fix `has_text_signal()` to count
 NWS owner citations; optional Opus retranslate of the ~6 real braced-gloss failers.
+
+---
+
+## 2026-07-05 — nominal window `pril10_w1` — ⛔ ABORTED (cost/latency blow-up) — **Sonnet 5** gen
+
+First nominal production attempt: top-8 largest PWG heads (`kAla, rasa, rUpa,
+brahman, arTa, sva, manas, antara`). Harness was 1.03 MB (> 512 KB cap), split into
+3 sub-windows (wA/wB/wC) and run concurrently. **Killed by MG after ~20 min** — only
+~3 of 8 cards done, agents burning 3–6.5 min and up to ~900 K tokens each.
+
+| metric | value |
+|---|---:|
+| tokens (all 3, exact) | **42,316,604** |
+| cost (Sonnet 4.x rates — order-of-magnitude) | **~$79.83** |
+| cache-write share of $ | **60% ($47.77)** — framework re-cached per agent |
+| wall-clock | 20.1 min (concurrent) |
+| agents spawned | **230** (vs 174 est., +32%) over 581 turns |
+| cards completed | ~3 of 8 |
+| per intended card | ~5.29 M tok / ~$9.98 |
+| max single agent | 390 s (6.5 min) / 903 K tok |
+| agents > 60 s / > 120 s / > 180 s | 19 / 10 / 8 |
+
+**Root cause (short):** in nominal+presplit mode every *fragment* is its own
+`agent()` call (8 cards → 230 agents, ~29/card), each re-establishing the ~30 K
+framework cache — so the opt2 batching amortization is defeated and **cache-write
+dominates the bill**. Compare Stage A+B verb runs: **~36 K tok/card** (batched);
+this nominal run: **~5.29 M tok/card** — ~145× worse. Extrapolation: 10 K entries
+≈ $100 K, 50 K ≈ $500 K → not viable at scale. Kill gate (`KILL_CEIL_MS=480000`,
+8 min) far too loose vs the MG rule that a subcard > ~60 s is suspicious.
+
+Full post-mortem + fix mandate: [`Uprava/H189`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
+No Max windows to run until H189 §5 guardrails land. Post-mortem by **Opus 4.8
+(`claude-opus-4-8`)**.
