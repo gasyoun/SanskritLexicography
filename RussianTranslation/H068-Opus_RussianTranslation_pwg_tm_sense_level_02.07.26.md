@@ -16,7 +16,7 @@ _Created: 02-07-2026 · Last updated: 02-07-2026_
 Sonnet 5 in the model picker, and type exactly:
 
 ```
-Read C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\HANDOFF_2026-07-02_pwg_tm_sense_level.md and execute it.
+Read C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\H068-Opus_RussianTranslation_pwg_tm_sense_level_02.07.26.md and execute it.
 ```
 
 **Agent, first action:** state this session's model tier + exact resolved version from the
@@ -81,7 +81,7 @@ alignment first; everything else is downstream.
 4. **Test-drive it** in `window_selftest.py` (pin: a card with 1 cached + 1 uncached fragment
    → only the uncached fragment reaches a translate lane; accounting still balances).
 5. **Live-validate** on a genuinely-partial giant card (e.g. `ka`'s 2 missing heal groups —
-   see [OPUS_pwg_audit_tail.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/OPUS_pwg_audit_tail.md))
+   see [H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md))
    with a **dated SAFE store backup first** and **`--merge` promotion only**.
 
 ## Guardrails (unchanged, non-negotiable)
@@ -109,6 +109,6 @@ alignment first; everything else is downstream.
 - Session closed with `/handoff`; this handoff's GTD row flipped.
 
 Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md).
-Prior handoff: [`HANDOFF_2026-07-02_pwg_selfheal_fixes.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/HANDOFF_2026-07-02_pwg_selfheal_fixes.md).
+Prior handoff: [`H038-Sonnet_RussianTranslation_pwg_selfheal_fixes_02.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H038-Sonnet_RussianTranslation_pwg_selfheal_fixes_02.07.26.md).
 
 _Dr. Mārcis Gasūns_
