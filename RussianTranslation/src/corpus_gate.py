@@ -46,6 +46,15 @@ REF = 'kow'                                  # WIL-seeded human PWG→RU referen
 NAME = {'koch': 'Кочергина', 'kna': 'Кнауэр', 'fri': 'Фриш',
         'smirnov': 'Смирнов', 'kow': 'Коссович'}
 
+# Specialist name-glossaries (built by build_glossaries.py from SamudraManthanam's
+# raw Data/*.txt "index of names" appendices, NOT the corpus_builder/jsonl
+# pipeline build_src.py reads). Text-specific proper-noun vocabularies, not
+# general-purpose dictionaries -- kept OUT of INDEP so they never enter the
+# heuristic() correctness score or coverage/tune stats; they are corroborating
+# evidence only, surfaced alongside the real INDEP signal in build_card().
+SPECIALIST = ['grin12', 'grin3']
+SPECIALIST_NAME = {'grin12': 'Гринцер (Рамаяна I-II)', 'grin3': 'Гринцер (Рамаяна III)'}
+
 # Third-language (Hindi) SENSE signal — indic-dict, built by build_indic.py.
 # These gloss in HINDI, not Russian, so they are NOT a correctness vote and are
 # deliberately kept OUT of the Russian-token heuristic(). Their only role is soft
@@ -68,6 +77,10 @@ RIGHTS = {
     'fri':     {'publishable': True, 'status': 'approved-modern', 'basis': 'copyright approval on file'},
     'kna':     {'publishable': True,  'status': 'public-domain', 'basis': 'Ф.И. Кнауэр d.1917 → PD'},
     'kow':     {'publishable': True,  'status': 'public-domain', 'basis': 'К.А. Коссович d.1883 → PD (cite as reference)'},
+    # Specialist glossaries: rights NOT yet confirmed (Гринцер translations,
+    # 1995/2006) -- default evidence-only per guardrail until checked.
+    'grin12':  {'publishable': False, 'status': 'rights-unconfirmed', 'basis': 'evidence-only pending rights check'},
+    'grin3':   {'publishable': False, 'status': 'rights-unconfirmed', 'basis': 'evidence-only pending rights check'},
 }
 
 
@@ -123,6 +136,38 @@ def lookup(idx, key1, key2=None):
              for c in INDEP for g in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
     kow = hit.get(REF, [])[:MAX_GLOSS_PER_SOURCE]
     return indep, kow
+
+# ---- specialist name-glossaries (corroborating evidence, not INDEP) ---------
+_SPECIALIST_IDX = None
+def load_specialist_index():
+    global _SPECIALIST_IDX
+    if _SPECIALIST_IDX is not None:
+        return _SPECIALIST_IDX
+    idx = defaultdict(lambda: defaultdict(list))
+    for code in SPECIALIST:
+        path = os.path.join(HERE, code + '.jsonl')
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                e = json.loads(line)
+                k = form_key(e.get('slp1', ''))
+                if k:
+                    idx[k][code].append(e.get('gloss', ''))
+    _SPECIALIST_IDX = idx
+    return idx
+
+def lookup_specialist(key1, key2=None):
+    sidx = load_specialist_index()
+    hit = sidx.get(form_key(key1))
+    if not hit and key2:
+        hit = sidx.get(form_key(key2))
+    hit = hit or {}
+    return [{'source': SPECIALIST_NAME[c], 'code': c, 'gloss': g, 'publishable': publishable(c)}
+            for c in SPECIALIST for g in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
 
 # ---- Hindi sense index (soft third-language signal, separate from INDEP) ------
 _SENSE_IDX = None
@@ -318,6 +363,7 @@ def build_card(idx, key1, key2, pwg_ru):
             'independent_glosses': [{'source': g['source'], 'code': g['code'],
                                      'gloss': g['gloss']} for g in indep],
             'kow_reference': kow,
+            'specialist_glosses': lookup_specialist(key1, key2),  # text-specific name glossaries, evidence-only
             'deterministic_precheck': deterministic_precheck(pwg_ru, indep),
             'hindi_sense': lookup_sense(key1, key2),   # soft sense signal, not correctness
             'corpus_examples': corpus_examples(key1),
@@ -345,6 +391,10 @@ def cmd_lookup(idx, args):
     print('\nKOW reference (%d):' % len(kow))
     for g in kow:
         print('  %s' % g[:160])
+    spec = lookup_specialist(key1, key2)
+    print('\nspecialist name-glossaries (%d) — evidence-only, text-specific:' % len(spec))
+    for g in spec:
+        print('  [%s] %s' % (g['source'], g['gloss'][:160]))
     sense = lookup_sense(key1, key2)
     print('\nHindi sense signal (%d) — soft, sense-disambiguation only:' % len(sense))
     for s in sense:
