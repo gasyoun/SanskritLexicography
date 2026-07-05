@@ -201,9 +201,10 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing the derivation
 # --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
-# The emitted harness inlines every card's raw+portrait input, so its byte size scales with
-# card count and CAN exceed the Workflow `scriptPath` cap (the `i` 204-card harness = 567 KB
-# > 512 KB, EVOLUTION_TIMELINE F-harness-size-limit; pril10_w1 = 1.03 MB, unlaunchable). The
+# The emitted harness inlines every card that can reach agent() (TM-resolved and
+# degenerate-pass-through rows are self-contained), so its byte size scales with live
+# translation payload and CAN exceed the Workflow `scriptPath` cap (the `i` 204-card harness
+# = 567 KB > 512 KB, EVOLUTION_TIMELINE F-harness-size-limit; pril10_w1 = 1.03 MB). The
 # generator now measures the emitted size and, when it exceeds MAX_HARNESS_BYTES, prints a
 # LOUD warning plus a concrete key-disjoint sub-window split (the exact --keys=... for each
 # piece) so the limit is surfaced at GENERATION, not discovered at launch. Warn (not hard
@@ -1007,6 +1008,10 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # Preflight-parity agent estimate (one call per batch + one per presplit fragment group)
     # and the H189 live budget kill-switch ceiling derived from it.
     agent_expected = len(batches) + sum(len(frags.get(k, [None])) for k in presplit)
+    runtime_keys = set(batch_keys) | set(presplit)
+    runtime_inputs = {k: inputs[k] for k in keys if k in runtime_keys}
+    runtime_phmaps = {k: phmaps[k] for k in keys if k in runtime_keys}
+    runtime_suggest_tm = {k: v for k, v in suggest_tm.items() if k in runtime_keys}
     if MAX_AGENTS_OVERRIDE:
         max_agents = MAX_AGENTS_OVERRIDE
     else:   # proportional to word size + small jitter headroom (NOT a flat floor)
@@ -1028,6 +1033,10 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'selected_keys': keys, 'batches': batches, 'batch_count': len(batches),
         'rootmap_sha256': sha256_file(rootmap) if rootmap else None,
         'input_hashes': input_hashes,
+        # H191: INPUTS/PH now carry only cards reachable by a real agent() call.
+        # TM-resolved and degenerate-pass-through rows remain accounted through
+        # TM_RESOLVED/DEGENERATE_RESOLVED plus the full input_hashes map.
+        'input_payload_keys': sorted(runtime_keys),
         'selfheal': SELFHEAL, 'selfheal_group_budget': SELFHEAL_GROUP_BUDGET if SELFHEAL else None,
         'selfheal_cards': {k: len(v) for k, v in frags.items()} if SELFHEAL else {},
         'binary_split': BINARY_SPLIT, 'output_budget': OUTPUT_BUDGET,
@@ -1056,7 +1065,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'frag_tm_fragments': sum(sum(1 for grp in v for s in grp if s) for v in frag_tm.values()),
         'suggest_tm': os.path.basename(suggest_tm_path) if (suggest_tm_path and os.path.exists(suggest_tm_path)) else None,
         'suggest_profile': suggest_profile,
-        'suggest_tm_cards': sorted(suggest_tm),
+        'suggest_tm_cards': sorted(runtime_suggest_tm),
         'suggest_tm_top': {k: [{'source_kind': r.get('source_kind'),
                                 'rank_profile': r.get('rank_profile'),
                                 'rank_score': r.get('rank_score'),
@@ -1065,7 +1074,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                                 'score_semantic_tag': r.get('score_semantic_tag'),
                                 'text': (r.get('text') or '')[:80]}
                                for r in v]
-                           for k, v in suggest_tm.items()},
+                           for k, v in runtime_suggest_tm.items()},
         'degenerate_passthrough_keys': sorted(degenerate_keys),
         # A presplit card is routed to the fragment lane, i.e. len(frags[k]) agent() calls
         # (one per fragment group), NOT one — frags[k] always exists for a presplit key (the
@@ -1564,8 +1573,8 @@ return { meta: META, summary, results: out }
         'grammars': json.dumps(grammars, ensure_ascii=True),
         'nws': json.dumps(nws_block, ensure_ascii=True),
         'schema': json.dumps(batch_schema, ensure_ascii=True),
-        'batches': json.dumps(batches), 'inputs': json.dumps(inputs, ensure_ascii=True),
-        'phmaps': json.dumps(phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
+        'batches': json.dumps(batches), 'inputs': json.dumps(runtime_inputs, ensure_ascii=True),
+        'phmaps': json.dumps(runtime_phmaps, ensure_ascii=True), 'meta': json.dumps(meta, ensure_ascii=True),
         'frags': json.dumps(frags, ensure_ascii=True), 'phf': json.dumps(phf, ensure_ascii=True),
         'binary_split': json.dumps(BINARY_SPLIT), 'presplit': json.dumps(presplit),
         'kill': json.dumps(KILL), 'kill_factor': json.dumps(KILL_FACTOR),
@@ -1575,7 +1584,7 @@ return { meta: META, summary, results: out }
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
-        'suggest_tm': json.dumps(suggest_tm, ensure_ascii=True),
+        'suggest_tm': json.dumps(runtime_suggest_tm, ensure_ascii=True),
     }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:

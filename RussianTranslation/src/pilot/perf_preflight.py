@@ -78,6 +78,81 @@ def cost_estimate(report, per_card_ceiling=COST_CEIL_PER_CARD_USD,
     }
 
 
+def _cost_from_agents(agents, realism=REALISM_FACTOR):
+    est_agents = agents * realism
+    return {
+        'est_agents_with_realism': round(est_agents, 1),
+        'est_tokens': int(round(est_agents * PER_AGENT_TOKENS)),
+        'est_cost_usd': round(est_agents * PER_AGENT_USD, 2),
+    }
+
+
+def cost_partition(args, root, rootmap, keys, report):
+    """Partition a mixed window so one monster card does not block cheap neighbors."""
+    tm_hits = set(report.get('tm_hits') or [])
+    degenerate = set(report.get('degenerate_passthrough_keys') or [])
+    run_now, defer_monster, per_card = [], [], {}
+    tm_path = ((args.tm_path or default_tm_path(args.lang)) if args.tm_auto else None)
+
+    for key in keys:
+        if key in tm_hits or key in degenerate:
+            agents = 0
+            cost = _cost_from_agents(0)
+        else:
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                js, _batches = gh.build(root, [key], rootmap, args.budget,
+                                        nominal=args.nominal, grammar_on=not args.no_grammar,
+                                        lang=args.lang, tm_path=tm_path,
+                                        tm_auto=args.tm_auto)
+            meta = const_json(js, 'META')
+            agents = meta.get('agent_expected_after_tm', 0) or 0
+            cost = _cost_from_agents(agents)
+        per = round(cost['est_cost_usd'], 2)
+        row = {
+            'key': key,
+            'agent_expected_after_tm': agents,
+            'est_agents_with_realism': cost['est_agents_with_realism'],
+            'est_tokens': cost['est_tokens'],
+            'est_cost_usd': cost['est_cost_usd'],
+            'est_cost_per_card_usd': per,
+            'tm_resolved': key in tm_hits,
+            'degenerate_passthrough': key in degenerate,
+        }
+        per_card[key] = row
+        lane = 'defer_monster' if (agents > 0 and per > args.cost_ceiling_per_card) else 'run_now'
+        (defer_monster if lane == 'defer_monster' else run_now).append(key)
+
+    def grouped_total(subkeys):
+        if not subkeys:
+            return {'agent_expected_after_tm': 0, **_cost_from_agents(0)}
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            js, _batches = gh.build(root, subkeys, rootmap, args.budget,
+                                    nominal=args.nominal, grammar_on=not args.no_grammar,
+                                    lang=args.lang, tm_path=tm_path, tm_auto=args.tm_auto)
+        meta = const_json(js, 'META')
+        agents = meta.get('agent_expected_after_tm', 0) or 0
+        return {'agent_expected_after_tm': agents, **_cost_from_agents(agents)}
+
+    totals = {
+        'run_now': grouped_total(run_now),
+        'defer_monster': grouped_total(defer_monster),
+    }
+    return {
+        'schema': 'pwg.performance_preflight.cost_partition.v1',
+        'per_card_ceiling_usd': args.cost_ceiling_per_card,
+        'run_now': run_now,
+        'defer_monster': defer_monster,
+        'totals': totals,
+        'per_card': per_card,
+        'recommendation': (
+            'run run_now; route defer_monster to the human-budgeted lane'
+            if defer_monster else 'run_now window is under the per-card monster ceiling'
+        ),
+    }
+
+
 def split_csv(text):
     return [x.strip() for x in str(text).split(',') if x.strip()]
 
@@ -235,11 +310,12 @@ def build_report(args, root):
         report,
         per_card_ceiling=getattr(args, 'cost_ceiling_per_card', COST_CEIL_PER_CARD_USD),
         window_ceiling=getattr(args, 'cost_ceiling_window', COST_CEIL_WINDOW_USD))
+    report['cost_partition'] = cost_partition(args, root, rootmap, keys, report)
     if report['cost_gate']['over_ceiling']:
         report['warnings'].append(
             'COST-GATE: est ~%d tokens / ~$%.2f (~$%.2f per translated card, ceiling $%.2f) — '
-            'this window is dominated by expensive cards; split off the monster cards to a '
-            'human-budgeted lane before launching (H189).'
+            'window-level gate is high; use cost_partition.run_now and route '
+            'cost_partition.defer_monster to a human-budgeted lane before launching (H191).'
             % (report['cost_gate']['est_tokens'], report['cost_gate']['est_cost_usd'],
                report['cost_gate']['est_cost_per_card_usd'],
                report['cost_gate']['per_card_ceiling_usd']))
@@ -268,6 +344,12 @@ def print_human(report):
           % (cg.get('est_tokens', 0), cg.get('est_cost_usd', 0.0),
              cg.get('est_cost_per_card_usd', 0.0), cg.get('per_card_ceiling_usd', 0.0),
              cg.get('verdict', 'ok')))
+    part = report.get('cost_partition') or {}
+    if part:
+        print('  partition: run_now=%d defer_monster=%d'
+              % (len(part.get('run_now') or []), len(part.get('defer_monster') or [])))
+        if part.get('defer_monster'):
+            print('  partition recommendation: %s' % part.get('recommendation'))
     for warning in report.get('warnings') or []:
         print('  WARNING: %s' % warning)
 
