@@ -273,3 +273,38 @@ Also fixed a latent nominal-generation crash (`_slp1_lex_for_key` on an empty `[
 portrait). **Standing rule remains: do not launch a window of `kAla`-class monsters as
 bulk** — the amortization fix cuts the presplit lane ~2.5× but such heads are intrinsically
 expensive; the cost gate is the guardrail that keeps them out of the pipeline.
+
+### 2026-07-05 — H191 deterministic verification + 100-small nominal staging (Codex/GPT-5)
+
+Executed H191 as a deterministic Codex pass only; no Max/Workflow translation run was started.
+
+**Verification:** `window_selftest.py` PASS; `lang_parity_check.py` clean (20 entries);
+`translation_memory.py selftest` PASS; `py_compile` PASS for the touched modules; generated
+`run_pilot_wf.nominal_w1_100small.js` passes `node --check`. The H189 economics reproduce to
+the digit from the three aborted `pril10_w1` transcript directories:
+
+| metric | value |
+|---|---:|
+| input tokens | 5,306,817 |
+| cache-write tokens | 12,738,510 |
+| cache-read tokens | 23,668,772 |
+| output tokens | 602,505 |
+| total tokens | **42,316,604** |
+| estimated cost | **~$79.83** |
+
+**H191 fixes:** B1 prunes harness `INPUTS`/`PH` to agent-reachable keys only (TM-resolved and
+degenerate cards stay self-contained in `TM_RESOLVED` / `DEGENERATE_RESOLVED`); B2 splits a
+single citation-dense physical line into budgeted complete-`<ls>` chunks; B3 adds
+`cost_partition` JSON (`run_now`, `defer_monster`, grouped totals, recommendation) to
+`perf_preflight.py`. Pinning selftests are in `window_selftest.py`; parity ledger hashes were
+refreshed for the shared/lang-agnostic changes.
+
+**100-small nominal window staged:** selected the 100 cheapest runnable Приложение 5 nominal
+heads after generating missing local inputs. Preflight has **0 `defer_monster`**, 5 degenerate
+pass-through cards, 95 live inputs, 3 batches / 3 expected agents, harness **274,848 bytes**,
+and estimated **745,200 tokens / ~$1.41**. Tracked staging artifacts:
+`NOMINAL_W1_100SMALL.keys.txt`, `NOMINAL_W1_100SMALL.selection.json`,
+`NOMINAL_W1_100SMALL.preflight.json`, and `NOMINAL_W1_100SMALL.md`.
+
+**Next:** Sonnet/Max executes
+`C:\Users\user\Documents\GitHub\Uprava\handoffs\H201-Sonnet_RussianTranslation_pwg_ru_nominal_w1_100small_run_05.07.26.md`.
