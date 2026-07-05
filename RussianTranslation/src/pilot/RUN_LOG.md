@@ -250,3 +250,26 @@ this nominal run: **~5.29 M tok/card** — ~145× worse. Extrapolation: 10 K ent
 Full post-mortem + fix mandate: [`Uprava/H189`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
 No Max windows to run until H189 §5 guardrails land. Post-mortem by **Opus 4.8
 (`claude-opus-4-8`)**.
+
+### 2026-07-05 — H189 fixes LANDED (Opus 4.8, `claude-opus-4-8`)
+
+Every §4 hypothesis **CONFIRMED** (economics reproduced to the digit via
+[`parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py))
+— full verified breakdown in
+[`POSTMORTEM_pril10_w1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/POSTMORTEM_pril10_w1.md).
+Five guardrails shipped (all SHARED, 68/68 selftests green):
+
+1. **Presplit-lane re-batching** (`PRESPLIT_GROUP_CITE_BUDGET=60`/`SENSE_CAP=18`):
+   `pril10_w1` **174 → 69** fragment-group calls; real `gam` giants **18 → 6** agents.
+2. **Kill-gate recalibration**: floor 120 s → **45 s**, ceil 480 s → **180 s** (MG rule).
+3. **Live budget kill-switch**: window self-aborts + requeues past
+   `MAX_AGENTS = max(40, ⌈expected×3⌉)`.
+4. **Harness-size guard**: generator warns + prints an exact key-disjoint split > 480 KB.
+5. **Preflight cost gate**: `perf_preflight.py` estimates tokens/$/per-card and flags
+   (or `--refuse-over-cost` refuses) a window over ceiling — flags `pril10_w1` (~$4/card
+   **even post-fix**) → monster-card windows route to a human-budgeted lane, not bulk.
+
+Also fixed a latent nominal-generation crash (`_slp1_lex_for_key` on an empty `[]`
+portrait). **Standing rule remains: do not launch a window of `kAla`-class monsters as
+bulk** — the amortization fix cuts the presplit lane ~2.5× but such heads are intrinsically
+expensive; the cost gate is the guardrail that keeps them out of the pipeline.
