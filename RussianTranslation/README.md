@@ -71,6 +71,42 @@ rebuild the dataset · pull accented RV forms from VedaWeb).
   handling; missing raw/card files requeue, while cards with no NWS layer remain
   neutral.
 
+## Local dashboard
+
+A read-only local dashboard serves live pipeline status **and an evolution
+timelapse** at `http://127.0.0.1:8765/`:
+
+```powershell
+python src\pilot\dashboard_server.py --port 8765
+```
+
+Panels: **Run Status** (current window · gates · queues · production metrics),
+**Evolution Timelapse**, **Print Gates**, **Recent Events**, **Window Ledger**,
+**File Freshness**. The page polls `/api/status` every few seconds
+(`--refresh-ms`); the timelapse polls `/api/evolution` (cached on source mtimes)
+on a slower cadence.
+
+The **Evolution Timelapse**
+([`src/pilot/evolution_stats.py`](src/pilot/evolution_stats.py)) derives the
+pipeline's maturation story from the append-only logs — throughput, PWG/DCS
+coverage, an **academic-rigor index** (share of cards carrying full
+model+pipeline provenance), quality (requeue rate), cost (tokens/window), speed
+(minutes/window), and a **failure typology** ("what was wrong" over time). Static
+trend charts plus a **play/scrub** control replay the history day by day, and a
+**Trends** panel surfaces the computed insights. Run it standalone to write
+`output/evolution_stats.json`:
+
+```powershell
+python src\pilot\evolution_stats.py
+```
+
+**Failure auto-capture:** `audit_window.py` auto-appends error-level incidents
+(kill-gate / stale refusals) to `failures/auto_failures.jsonl` (git-ignored,
+de-duped per root/day) via
+[`src/pilot/failure_capture.py`](src/pilot/failure_capture.py). The curated
+post-mortems in [`failures/FAILURE_GALLERY.md`](failures/FAILURE_GALLERY.md) +
+`failures/failures.jsonl` stay human-authored; the dashboard reads both streams.
+
 ## Flaky Network Policy
 
 Claude production translation is not a Python Claude API loop. It runs through
