@@ -209,7 +209,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   and [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md): do not translate
   10 big dhātus at once yet. Run staged evidence instead: fresh `sTA`, then
   clean-ready `BU`/`as`/`i`, then prune/recheck `gam`/`yuj`/`vid`/`han`.
-- Added [HANDOFF_2026-06-29_claude_code_max.md](HANDOFF_2026-06-29_claude_code_max.md),
+- Added [H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md](H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md),
   a current Claude Code Max handoff with Stage A/B/C commands, root status,
   audit return artifacts, token/time fields to preserve, and print-feasibility
   side checks.
@@ -394,7 +394,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - **The Workflow-tool harness runs from-chat.** Because the optimized harness inlines its inputs
   (no `node:fs`), the freq-queue run no longer "needs a human-driven Max session" — it drives
   from the in-chat Workflow tool. Next: the first real freq window (sthā/bhū/gam), run-to-cap for
-  the absolute weekly-quota number. See [HANDOFF_2026-06-27_freq_run.md](HANDOFF_2026-06-27_freq_run.md).
+  the absolute weekly-quota number. See [H026-Sonnet_RussianTranslation_freq_run_27.06.26.md](H026-Sonnet_RussianTranslation_freq_run_27.06.26.md).
 
 ### Finding 5 tail — dense single-sense citation batching
 - **Single over-budget senses now split deterministically.** The first `sTA` run exposed the

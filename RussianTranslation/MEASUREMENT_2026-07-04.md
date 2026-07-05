@@ -83,7 +83,7 @@ is a non-giant with no rootmap, so it doesn't fit the split-harness, and startin
 a live Max Workflow run on a real production head (`sTA` 185 KB / `as` 59 KB) at
 the tail of a long review session is the exact "run started, output lost" trap
 the project has hit before. The next drain is the standing
-[H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md)
+[H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md)
 queue head, run in its own session — see the resume line in `.ai_state.md`.
 
 _Dr. Mārcis Gasūns_

@@ -8,7 +8,7 @@ ranked optimizations, the decision taken, and the failures hit along the way.
 
 > Companion to [`PILOT_COST.md`](PILOT_COST.md) (the $/quota model) and
 > [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md) (the run loop).
-> Cross-reference: [`HANDOFF_2026-06-25_pwg_ru_max.md`](HANDOFF_2026-06-25_pwg_ru_max.md).
+> Cross-reference: [`H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md`](H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md).
 
 ---
 

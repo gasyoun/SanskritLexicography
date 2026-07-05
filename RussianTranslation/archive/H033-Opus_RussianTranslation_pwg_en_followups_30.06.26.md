@@ -119,4 +119,4 @@ store carrying `de` + `ru` + `en` per sense (+ the `dcs_freq` block already adde
 - tri-lingual: [`src/pilot/trilingual_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/trilingual_sample.py) ·
   sample [`PWG_EN_PILOT_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/PWG_EN_PILOT_2026-06-30.md)
 - loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
-- prior Slice-C recovery handoff: [`HANDOFF_2026-06-30_slicec_recovery.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/HANDOFF_2026-06-30_slicec_recovery.md)
+- prior Slice-C recovery handoff: [`H035-Sonnet_RussianTranslation_slicec_recovery_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/H035-Sonnet_RussianTranslation_slicec_recovery_30.06.26.md)

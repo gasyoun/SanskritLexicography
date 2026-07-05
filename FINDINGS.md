@@ -1316,7 +1316,7 @@ teaching material) should reuse that generator/table rather than re-derive it; n
 be linked at all until the site (or kosha P2 lemma cards, ruling D4) provides per-entry
 pages; and the 8 missing roots (esp. `yam`) are a samskrtam.ru data gap for MG.
 
-> **Source:** Bühler H101 session ([H101_buhler_ux_features.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H101_buhler_ux_features.md)),
+> **Source:** Bühler H101 session ([H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md)),
 > Fable 5 `claude-fable-5` · 2026-07-03
 
 ---

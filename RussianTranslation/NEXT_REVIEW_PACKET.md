@@ -6,7 +6,7 @@ This is the narrow executable packet for the next review. It exists to avoid
 another broad readiness pass.
 
 Claude Code Max handoff:
-[HANDOFF_2026-06-29_claude_code_max.md](HANDOFF_2026-06-29_claude_code_max.md).
+[H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md](H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
 
 ## Verdict Target
 

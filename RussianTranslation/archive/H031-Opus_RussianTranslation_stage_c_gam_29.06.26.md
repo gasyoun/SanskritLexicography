@@ -29,7 +29,7 @@ Stage C stale generated inputs were pruned and rechecked on 2026-06-29:
 | `han` | 128 | PASS: 78/78 raw + portrait, 0 stale |
 
 This handoff supersedes the old Stage C "hold until pruned/rechecked" block in
-`HANDOFF_2026-06-29_claude_code_max.md`.
+`H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`.
 
 ## Non-Negotiable Rules
 

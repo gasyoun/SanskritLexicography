@@ -64,7 +64,7 @@ lesson of the whole project:** Slice D launched 18 roots as parallel
 Workflows at once → ~140-250 peak concurrent Sonnet agents → 80+
 `Server is temporarily limiting requests` 429s → **117 transient null
 cards**. A single-root run at the same time measured **zero** transient
-failures. This is why every subsequent runbook — including [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md),
+failures. This is why every subsequent runbook — including [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md),
 the standing drain handoff this session executes under — hard-locks
 **≤3-wide concurrency, roots one at a time**. Also this phase: a print-bridge
 homograph-multiplication bug found and fixed, and `siD`'s sense_dupes
@@ -134,7 +134,7 @@ silent-loss class fixed with a pinned test) concluded the pipeline was ready
 to scale from "documented small batches" to **all 703 remaining
 DCS-attested verb roots** (`verb_worklist.py` enumerates the set
 reproducibly: 1,882-root universe ∩ 749 DCS-attested − 46 already promoted).
-[H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md)
+[H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md)
 became the standing, resumable drain handoff this and future sessions
 execute against, one root at a time, with the exact RUN_FREQ_MAX loop.
 
@@ -307,7 +307,7 @@ likely the SAME class, not a new bug:
 - Store: `src/pwg_ru_translated.jsonl` (RU spine) + a parallel EN store,
   both local-only/gitignored, both TM-backed.
 - 46 verb roots promoted before this session's drain began; drain target is
-  all 703 DCS-attested remaining, via the standing [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md)
+  all 703 DCS-attested remaining, via the standing [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md)
   handoff, one root at a time, ≤3-wide.
 - Gate stack: `audit_window.py` (RU) mechanically verified clean against its
   own historical false positives (Phase 6); `audit_window_en.py` (EN) has

@@ -2,7 +2,7 @@
 
 Date: 2026-06-29 · Audience: Claude Code (new chat, runs CONCURRENTLY with the Slice A chat) ·
 Repo: `SanskritLexicography/RussianTranslation` (subdir of `gasyoun/SanskritLexicography`,
-`master`). Read `.ai_state.md` and `HANDOFF_2026-06-29_scope_a_freq_queue.md` first.
+`master`). Read `.ai_state.md` and `H029-Sonnet_RussianTranslation_scope_a_freq_queue_29.06.26.md` first.
 
 ## Goal
 

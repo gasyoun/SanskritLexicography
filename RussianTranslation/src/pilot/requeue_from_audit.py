@@ -17,6 +17,7 @@ import os
 import subprocess
 import sys
 import datetime
+import argparse
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -82,29 +83,38 @@ def append_tm_denylist(root, keys, which, lang='ru'):
 
 
 def main():
-    argv = sys.argv[1:]
-    which = ('transient' if '--transient' in argv else
-             'defect' if '--defect' in argv else 'all')
-    lang = 'ru'
-    for a in argv:
-        if a.startswith('--lang='):
-            lang = a.split('=', 1)[1]
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument('root')
+    group = ap.add_mutually_exclusive_group()
+    group.add_argument('--transient', action='store_true')
+    group.add_argument('--defect', action='store_true')
+    ap.add_argument('--lang', default='ru', choices=('ru', 'en'))
+    ap.add_argument('--requeue-file',
+                    help='explicit requeue key file; default uses src/pilot/output singleton files')
+    ap.add_argument('--out',
+                    help='explicit generated harness path; default is src/pilot/run_pilot_wf.opt2.js')
+    ap.add_argument('--nominal', action='store_true',
+                    help='resolve keys directly as nominal cards instead of requiring a rootmap')
+    ap.add_argument('--no-grammar', action='store_true',
+                    help='pass --no-grammar through for nominal requeues')
+    args = ap.parse_args()
+    which = 'transient' if args.transient else 'defect' if args.defect else 'all'
+    lang = args.lang
     if lang not in ('ru', 'en'):
         sys.exit('unknown --lang %r (ru|en)' % lang)
-    positional = [a for a in argv if not a.startswith('--')]
-    root = positional[0] if positional else ''
-    if not root:
-        sys.exit('usage: python src/pilot/requeue_from_audit.py <root> [--transient|--defect] [--lang=ru|en]')
+    root = args.root
     rp = rootmap_path(root)
-    if not rp:
+    if not rp and not args.nominal:
         sys.exit('no rootmap for %r under %s' % (root, INP))
-    rm = json.load(open(rp, encoding='utf-8'))
-    declared = {s['subkey'] for s in rm.get('sub_cards', [])}
-    suffixes = {k.split('~~')[-1]: k for k in declared}
-    keys = read_requeue(requeue_file(which))
+    declared, suffixes = set(), {}
+    if rp:
+        rm = json.load(open(rp, encoding='utf-8'))
+        declared = {s['subkey'] for s in rm.get('sub_cards', [])}
+        suffixes = {k.split('~~')[-1]: k for k in declared}
+    keys = read_requeue(args.requeue_file or requeue_file(which))
     resolved, invalid = [], []
     for k in keys:
-        full = k if k in declared else suffixes.get(k)
+        full = k if (args.nominal or k in declared) else suffixes.get(k)
         if full and os.path.exists(os.path.join(INP, full + '.raw.txt')):
             resolved.append(full)
         else:
@@ -118,6 +128,12 @@ def main():
 
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
+    if args.out:
+        cmd.append('--out=%s' % args.out)
+    if args.nominal:
+        cmd.append('--nominal')
+    if args.no_grammar:
+        cmd.append('--no-grammar')
     if lang != 'ru':
         cmd.append('--lang=%s' % lang)
     if which != 'transient':
@@ -131,7 +147,7 @@ def main():
     if p.returncode:
         sys.exit(p.returncode)
 
-    harness = os.path.join(HERE, 'run_pilot_wf.opt2.js')
+    harness = os.path.abspath(args.out) if args.out else os.path.join(HERE, 'run_pilot_wf.opt2.js')
     print('requeue root      : %s' % root)
     print('requeue source    : %s' % which)
     print('requeue keys      : %d' % len(resolved))

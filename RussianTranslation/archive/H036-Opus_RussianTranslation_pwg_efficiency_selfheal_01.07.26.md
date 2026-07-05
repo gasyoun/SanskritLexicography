@@ -89,6 +89,6 @@ per-root work. If the local store looks small again, restore from `.SAFE_...keep
 
 Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/.ai_state.md)
 (Dev Notes carry the tier ladder + undone tiers). Prior handoff:
-[`HANDOFF_2026-07-01_pwg_en_fu1_finalize.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/HANDOFF_2026-07-01_pwg_en_fu1_finalize.md).
+[`H037-Opus_RussianTranslation_pwg_en_fu1_finalize_01.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/H037-Opus_RussianTranslation_pwg_en_fu1_finalize_01.07.26.md).
 
 _Dr. Mārcis Gasūns_

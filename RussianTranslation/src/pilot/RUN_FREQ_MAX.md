@@ -68,7 +68,7 @@ tracked-file drift and is wired into `window_selftest.py`
   **703 remaining** (~5.3 MB source) as of 04-07-2026. Operator `--top` output is filtered
   to roots with existing rootmaps; the JSON keeps the full backlog plus
   `blocked_missing_rootmap`. Drain discipline lives in the standing handoff
-  [`H151`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151_SanskritLexicography_pwg_ru_verb_batch_drain.md).
+  [`H151`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md).
 - The per-root loop below is unchanged — "all roots next batch" scales the QUEUE, not the
   width. Roots still run **one at a time (≤3-wide max)**; the Slice-D 18×-parallel collapse
   (117 transient nulls) is the standing counter-example.
