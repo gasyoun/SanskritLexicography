@@ -308,3 +308,31 @@ and estimated **745,200 tokens / ~$1.41**. Tracked staging artifacts:
 
 **Next:** Sonnet/Max executes
 `C:\Users\user\Documents\GitHub\Uprava\handoffs\H201-Sonnet_RussianTranslation_pwg_ru_nominal_w1_100small_run_05.07.26.md`.
+
+---
+
+## 2026-07-05 — nominal window `nominal_w1_100small` — ✅ STAGED & VERIFIED-READY (no Max/Workflow run) — prep by **Opus 4.8** (`claude-opus-4-8`)
+
+H201 executed on a **Claude Code (Opus 4.8) session, which is NOT a Max Workflow surface** —
+so the `agent()`-driven translation was **not** run here. Everything deterministic up to the
+Workflow hand-off was done and verified on a clean worktree off `origin/codex/h191-pwg-ru-verify-optimize-100small`:
+
+| check | result |
+|---|---|
+| base | `origin/codex/h191-…` (has H179 adapter #152 + **H189 cost guardrails** #158/#159 + staging) |
+| preflight | 3 batches / **3 expected agents** / **745,200 tok / $1.41** / verdict `ok`, under per-card ($2) + window ($25) ceilings |
+| harness | `run_pilot_wf.nominal_w1_100small.js` = **315,896 bytes** (< 480 KB cap), 100 cards / 3 batches [4, 69, 26], mode NOMINAL, `degenerate_passthrough=1` |
+| `node --check` | **passed** |
+| standalone `node` run | fails by design (no local `agent()`; top-level `return`) — confirms it needs the Workflow runtime |
+
+**⚠ Gotcha (bash executors):** `NOMINAL_W1_100SMALL.keys.txt` is **CRLF**. The handoff's
+PowerShell `(Get-Content …) -join ','` strips `
+` correctly, but a bash `paste -sd,` keeps it —
+every key becomes `n_ar_i
+`, and `gen_opt_harness2.py` dies with `missing input for <key>`.
+Strip it first: `tr -d '\r' < NOMINAL_W1_100SMALL.keys.txt | paste -sd,`. (Preflight is more
+lenient and passed either way; only generation failed.)
+
+**Note:** the fresh worktree lacks the gitignored `src/pilot/input/` (218K generated files); junction/copy it from an existing checkout before preflight/gen.
+
+**Next:** run the generated harness on a **Sonnet Max Workflow** surface, save `wf_output.nominal_w1_100small.json`, then audit → promote per [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md). No run metrics (wall-clock / tokens / promoted count) exist yet — they get logged by the session that actually runs it.
