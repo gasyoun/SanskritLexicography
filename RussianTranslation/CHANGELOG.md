@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-07-05
+
 ### Nominal-window guardrails — H191 verified, optimized, staged
 - Verified the H189 `pril10_w1` post-mortem deterministically: the aborted
   top-size nominal run reproduces to **42,316,604 tokens / ~$79.83**, confirming
