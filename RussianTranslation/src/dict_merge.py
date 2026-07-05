@@ -38,6 +38,33 @@ LAYERS = [
 NWS_LAYER = ('nws', 'external',
              'NWS — Nachtragswörterbuch (Halle), cumulative addendum ~2013; net-new beyond pw/Schmidt')
 
+# The canonical layer set carried on a promoted store row. PWG-internal cards (the
+# base entry + Nachträge + per-preverb sub-cards) all share the base 'pwg' layer —
+# they are NOT keyed apart at the sub-card granularity (Nachträge are folded into the
+# PWG whole-card by _pilot_gen_merged.gen_card), so 'pwg_nachtr' is a raw-LAYER concept
+# inside the .raw.txt, not a promoted-row layer. The overlay layers ARE keyed apart, by
+# the `~~..._zz_<layer>` sub-card suffix the merge writes (_pilot_gen_merged, `sub =
+# '%s~~h0_zz_%s'`).
+LAYER_VALUES = ('pwg', 'pw', 'sch', 'pwkvn', 'nws')
+
+
+def layer_of(subcard):
+    """Classify a store row's `subcard` key into its source LAYER ∈ LAYER_VALUES.
+
+    The overlay layers are encoded as a `_zz_<layer>` segment; everything else (the
+    numbered `_NN_<preverb>` cards, incl. the `_00_pwgNN` base card) is the PWG base.
+    Robust to the numeric suffixes (`pw00`, `nws01`) the merge appends per record.
+    """
+    if not subcard:
+        return 'pwg'
+    seg = subcard.rsplit('_zz_', 1)
+    if len(seg) == 2:
+        tail = seg[1]
+        for code in ('pwkvn', 'nws', 'sch', 'pw'):     # order: match 'pwkvn' before 'pw'
+            if tail.startswith(code):
+                return code
+    return 'pwg'
+
 
 def nws_record(key1):
     """Net-new NWS fragment for a form-key, or '' — the single scraped card, read
@@ -145,10 +172,29 @@ def cmd_merge(args):
             print('  ' + re.sub(r'\s+', ' ', r)[:600])
 
 
+def cmd_selftest(_args):
+    cases = {
+        '_ap~~h0_00_pwg01': 'pwg',     # base card
+        '_ap~~h0_01_a_bi': 'pwg',      # preverb sub-card, still PWG layer
+        'dah~~h0_zz_pw00': 'pw',
+        '_ap~~h0_zz_pw01': 'pw',
+        '_ap~~h0_zz_pwkvn': 'pwkvn',   # must NOT match 'pw'
+        '_ap~~h0_zz_sch': 'sch',
+        'dah~~h0_zz_nws00': 'nws',
+        '': 'pwg',
+    }
+    for sub, want in cases.items():
+        got = layer_of(sub)
+        assert got == want, 'layer_of(%r) = %r, expected %r' % (sub, got, want)
+    assert set(cases.values()) <= set(LAYER_VALUES)
+    print('dict_merge.layer_of selftest OK (%d cases)' % len(cases))
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
-    {'stats': cmd_stats, 'merge': cmd_merge}.get(sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
+    {'stats': cmd_stats, 'merge': cmd_merge,
+     'selftest': cmd_selftest}.get(sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
 if __name__ == '__main__':
