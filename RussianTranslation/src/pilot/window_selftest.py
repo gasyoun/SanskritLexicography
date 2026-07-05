@@ -1814,6 +1814,38 @@ def test_promote_nominal_key1():
         fail('nominal promotion must map safe runtime keys back to assembled key1')
 
 
+def test_build_emits_nominal_keymap():
+    """Producer-side twin of test_promote_nominal_key1: build(nominal=True) MUST emit
+    meta.nominal + meta.nominal_keymap. Without them promote_final_cards.rows_for falls
+    back to meta.root (the window LABEL, e.g. pril10_w1) and mis-keys every nominal card.
+    The consumer test hand-builds its meta, so it cannot catch build() dropping the fields;
+    this test does (guards PR #155 against a silent regression)."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    from window_common import input_paths
+    key = 'ab'
+    rp, pp = input_paths(key)
+    if not (os.path.exists(rp) and os.path.exists(pp)):
+        return  # fixture-gated, same as the sibling nominal build() tests
+    js, _batches = gh.build(key, [key], None, 12000, nominal=True, tm_path=None)
+    meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+    if meta.get('nominal') is not True:
+        fail('build(nominal=True) must set meta.nominal=True (else promote falls back to the window label)')
+    keymap = meta.get('nominal_keymap')
+    if not isinstance(keymap, dict) or key not in keymap:
+        fail('build(nominal=True) must emit meta.nominal_keymap mapping each safe key to its SLP1 headword')
+    slp1 = gh._slp1_lex_for_key(key)[0] or key
+    if keymap[key] != slp1:
+        fail('nominal_keymap must map the safe key to the portrait SLP1 (%r), got %r' % (slp1, keymap[key]))
+    # Negative: a non-nominal (batched) build must NOT carry the nominal routing fields.
+    js2, _b2 = gh.build(key, [key], None, 12000, nominal=False, tm_path=None)
+    meta2 = json.loads(_re.search(r'const META = (\{.*?\})\n', js2, _re.S).group(1))
+    if meta2.get('nominal'):
+        fail('batched (non-nominal) build must not set meta.nominal')
+    if meta2.get('nominal_keymap') is not None:
+        fail('batched (non-nominal) build must leave meta.nominal_keymap null')
+
+
 def test_calibration_arm_set_conservative_emit_only():
     with tempfile.TemporaryDirectory() as tmp:
         out_dir = os.path.join(tmp, 'perf_smoke_preflight')
@@ -2192,6 +2224,7 @@ def main():
         test_coordinator_lock_replaces_stale_dead_owner,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
         test_promote_nominal_key1,
+        test_build_emits_nominal_keymap,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
