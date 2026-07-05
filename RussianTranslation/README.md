@@ -19,6 +19,20 @@ The generated optimized harness inlines inputs, disables tools for translation
 agents, carries provenance metadata, and is audited by deterministic Python gates
 before any mechanical acceptance.
 
+Always preflight before a Max run:
+
+```powershell
+python src\pilot\perf_preflight.py <root> --json
+```
+
+The preflight report estimates agents/tokens/cost and includes
+`cost_partition.run_now` / `cost_partition.defer_monster`, so one expensive
+`kAla`-class card can be quarantined without blocking the cheap cards in the same
+window. The first validated nominal follow-up after the `pril10_w1` cost
+post-mortem is staged in [`src/pilot/NOMINAL_W1_100SMALL.md`](src/pilot/NOMINAL_W1_100SMALL.md)
+with 100 small heads, 0 deferred monsters, and a downstream Sonnet/Max handoff in
+Uprava H201.
+
 For task-oriented operator flows, see [USE_CASES.md](USE_CASES.md). It covers
 preflight, fresh Max windows, stale-output recovery, targeted requeue, sampled
 semantic judging, dashboard monitoring, release readiness checks, and corpus API
@@ -64,6 +78,15 @@ rebuild the dataset · pull accented RV forms from VedaWeb).
 - `root_window_status.py` is the pre-spend truth source for each root. It checks
   rootmap/input structure and verifies that the optimized harness matches the
   intended selected-key scope.
+- `perf_preflight.py` is the cost gate. It reports estimated agents/tokens/$,
+  refuses over-ceiling windows when requested, and partitions mixed windows into
+  `run_now` and `defer_monster` so monster cards move to a human-budgeted lane.
+- `gen_opt_harness2.py` emits only agent-reachable raw/portrait payloads in
+  `INPUTS`/`PH`; TM-resolved and degenerate pass-through cards stay accounted in
+  their own self-contained constants instead of bloating the Workflow script.
+- `autosplit_requeue.py` sub-splits citation-dense single-line fragments at
+  complete `<ls>...</ls>` spans, preserving markup while keeping monster senses
+  under the output-budget envelope.
 - `audit_window.py` refuses stale workflow artifacts before collect/gates/glue,
   preserves existing requeue files on stale refusal, and writes status/ledger
   artifacts for the dashboard.
