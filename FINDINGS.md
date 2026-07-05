@@ -93,6 +93,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§38. Injected BOMs crash the hw record parser](#38-injected-boms-crash-the-hw-record-parser) — "init_entries Error 2" is an encoding symptom, not a structure defect.
 - 🟡 [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - 🟠 [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
+- 🟡 [§60. Practical Russian transcription of Sanskrit names has no safe reverse transliteration](#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration) — dental/retroflex collapse in Cyrillic-only name glossaries blocks a deterministic SLP1 join key.
 
 **External platforms & services**
 
@@ -803,6 +804,32 @@ French dictionaries after ~1890 — the signal is regime-bounded, not a universa
 
 > **Source:** [SanskritSpellCheck `docs/ORTHO_DRIFT_FINDINGS.md`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/ORTHO_DRIFT_FINDINGS.md)
 > + `ortho_drift/*_drift_summary.tsv` (per-language tables) — SanskritSpellCheck · 2026-06-26
+
+### §60. Practical Russian transcription of Sanskrit names has no safe reverse transliteration
+
+🟡 **Cyrillic-only Sanskrit name glossaries cannot be joined to an SLP1 headword key without a
+transliteration step that does not exist and is not safely buildable on the fly.**
+Evidence: of 6 candidate SamudraManthanam name-index glossaries surveyed for `pwg_ru` reuse
+(H184, 2026-07-05), only 2 (Гринцер, Рамаяна I-II/III) carry the IAST form inline in parens
+right after the Cyrillic headword, giving a deterministic `iast_to_slp1` key (663 entries,
+~72% joining a real PWG headword). The other 3 name glossaries (Потапова, Эрман-Темкин,
+словарь Гринцера из Бада Кадамбари) are **100% Cyrillic-only** — 0 lines carry any Latin
+script at all in the headword field. Practical Russian Indological transcription of Sanskrit
+collapses dental/retroflex consonants (т = both त and ट) with no diacritic in plain text, so a
+rule-based Cyrillic→SLP1 converter would silently manufacture WRONG keys for exactly the
+retroflex-bearing names that are common in epic/Puranic material — a correctness-authority
+signal (`corpus_gate.py`'s `INDEP`/`SPECIALIST` tiers) is the worst place to introduce silent
+key corruption. (A 7th candidate, Топоров, isn't a gloss source at all — it's a name→page
+index into a printed encyclopedia, `Агнихотра\t22`, with no gloss text.)
+Implication: don't build a heuristic Cyrillic→Sanskrit transliterator under time pressure to
+close a "wire N glossaries" task — flag the gap and stop. If it's ever wanted, it needs a
+proper-noun lookup table validated against a known Sanskrit onomasticon, not a character-level
+rule, and should be checked as its own artifact before any corpus_gate consumer trusts it.
+
+> **Source:** [`SanskritLexicography/RussianTranslation/REUSE_MAP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md)
+> + [`src/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md#специализированные-глоссарии-имён--build_glossariespy)
+> ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
+> — SanskritLexicography/RussianTranslation · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
 ---
 
