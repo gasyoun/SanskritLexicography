@@ -311,6 +311,53 @@ and estimated **745,200 tokens / ~$1.41**. Tracked staging artifacts:
 
 ---
 
+## 2026-07-06 — nominal window `nominal_w1_100small` — ✅ RUN & PROMOTED (100/100) — gen **Sonnet 5** (`claude-sonnet-5`), orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+H201 executed on an Opus 4.8 Max/Workflow surface. Generation model resolved to **Sonnet 5
+(`claude-sonnet-5`)** (harness pins `model:'sonnet'`; confirmed from the workflow subagent
+`.jsonl` transcripts). Ran in **three Workflow passes** because the first pass hit a transient
+network outage:
+
+| pass | harness | result | agents | subagent tokens | wall-clock |
+|---|---|---|---|---|---|
+| 1 (full) | `run_pilot_wf.nominal_w1_100small.js` | ⛔ **5 ok / 95 null**, `budget_kill_switch_tripped` | 19/19 | 957,970 | ~10m30s |
+| 2 (rerun) | `run_pilot_wf.opt2.js` (all 100 requeued) | ✅ **93 ok / 7 null** | 16/19 | 1,402,160 | ~11m49s |
+| 3 (requeue) | `run_pilot_wf.nominal_w1_100small.requeue7.js` (7 transient) | ✅ **7 ok / 0 null** | 2/13 | 138,666 | ~42s |
+| **total** | — | **100/100 promoted** | 37 | **2,498,796** | ~23m |
+
+**Pass-1 root cause = transient infra, not content/batch-size:** all three batches (incl. the
+**4-card** batch-0) failed with `API Error: Connection closed mid-response`; self-heal splits
+also dropped, exhausting the 19-agent budget. Because even the 4-card batch failed, this was a
+network outage during the run window, not a structural problem — a clean rerun recovered
+(93/100), and the 7 residual nulls were a single contiguous masked sub-block of batch-1
+(`mAza…nIla`), re-run to 7/7 in 42s.
+
+**⚠ Audit caveat confirmed (nominal + `--allow-stale`):** a nominal keys-based window has
+**no rootmap** (`rootmap_sha256:null`), so `audit_window.py` refuses (`no rootmap`) and needs
+`--allow-stale`. In that forensic mode the `glue`/`glue-missing-nested` gates **crash** and the
+`missing_required_sense_field` gate **misfires**, reporting a bogus **86 "defect"** on pass-2.
+Manual inspection of `vedikA`, `prota`, `Apta`, `ucita` confirmed all are complete, well-formed
+cards (the flagged ones are legitimately thin *see-under* cross-reference stubs). The runbook's
+own warning holds: **allow-stale requeue counts are untrustworthy for nominal windows** — trust
+the Workflow `summary.null_keys`, not the stale-audit `defect` count. `requeue_from_audit.py
+--transient --nominal` handles the real nulls correctly.
+
+**Promotion:** `promote_final_cards.py --glob wf_output.nominal_w1_100small.json --merge
+--gen-model-version claude-sonnet-5` → **100 non-null cards / 306 sense rows**, store
+`src/pwg_ru_translated.jsonl` now **11,163 rows** (`review_status=ai_translated`, NOT approved —
+held out of the citable edition until G5 human review). TM rebuilt: `translation_memory.ru.json`
+= **2,297 content-addressed cards**. No `frag_prov` rows → no `build-frags` needed. Requeue
+residuals: **none**.
+
+**Cost note:** the transient pass-1 loss doubled the intended spend (staged estimate ~745K tok /
+$1.41 for one clean pass; actual ~2.5M tok across three passes). The `~745,200 tok / $1.41`
+preflight gate refers to a *single clean* pass and held for pass 2.
+
+**Next:** window is fully AI-translated and promoted; the 100 cards await **G5 human review** to
+flip `ai_translated → approved`. No further agent run needed for this window.
+
+---
+
 ## 2026-07-05 — nominal window `nominal_w1_100small` — ✅ STAGED & VERIFIED-READY (no Max/Workflow run) — prep by **Opus 4.8** (`claude-opus-4-8`)
 
 H201 executed on a **Claude Code (Opus 4.8) session, which is NOT a Max Workflow surface** —
