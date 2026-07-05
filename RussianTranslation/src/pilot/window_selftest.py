@@ -1381,6 +1381,14 @@ def test_tm_pre_resolves_cards():
         union = tm_hits | batched | set(meta['presplit_keys'])
         if union != set(keys):
             fail('accounting: tm ∪ batched ∪ presplit must equal selected keys')
+        inputs = json.loads(_re.search(r'^const INPUTS = (.*)$', js, _re.M).group(1))
+        ph = json.loads(_re.search(r'^const PH = (.*)$', js, _re.M).group(1))
+        if tm_hits & set(inputs):
+            fail('TM-resolved cards must not be inlined in INPUTS: %s' % sorted(tm_hits & set(inputs)))
+        if tm_hits & set(ph):
+            fail('TM-resolved cards must not be inlined in PH: %s' % sorted(tm_hits & set(ph)))
+        if set(inputs) != batched | set(meta['presplit_keys']):
+            fail('INPUTS must contain exactly agent-reachable keys')
     finally:
         try:
             os.remove(tmfile)
@@ -1662,6 +1670,49 @@ def test_perf_preflight_fragment_tm_empty_warning():
             fail('empty fragment TM warning must include the build-frags command')
         if 'no fragment provenance available yet' not in joined:
             fail('empty fragment TM warning must state when no frag_prov source exists')
+
+
+def test_perf_preflight_partitions_mixed_monster_window():
+    import gen_opt_harness2 as gh
+    import perf_preflight as pp
+    import types
+    with tempfile.TemporaryDirectory() as tmp:
+        cheap, monster = 'h191cheap', 'h191monster'
+        raws = {
+            cheap: '=== LAYER: PWG — MAIN ENTRY ===\n{%kurzer deutscher Text%} ohne Citate.',
+            monster: '=== LAYER: PWG — MAIN ENTRY ===\n{%Monster%} ' +
+                     ' '.join('<ls n="T%d">Quelle %d</ls>' % (i, i) for i in range(220)),
+        }
+        for key, raw in raws.items():
+            with open(os.path.join(tmp, key + '.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(os.path.join(tmp, key + '.portrait.json'), 'w', encoding='utf-8') as f:
+                f.write('{}')
+
+        def fake_input_paths(k, input_dir=None):
+            return os.path.join(tmp, k + '.raw.txt'), os.path.join(tmp, k + '.portrait.json')
+
+        old_gh_ip, old_pp_ip = gh.input_paths, pp.input_paths
+        gh.input_paths = fake_input_paths
+        pp.input_paths = fake_input_paths
+        args = types.SimpleNamespace(keys='%s,%s' % (cheap, monster), nominal=True,
+                                     tm_auto=False, tm_path=None, lang='ru',
+                                     budget=12000, no_grammar=True,
+                                     wf_glob='no_such_fixture_*.json',
+                                     cost_ceiling_per_card=2.0,
+                                     cost_ceiling_window=25.0)
+        try:
+            report = pp.build_report(args, 'h191mix')
+        finally:
+            gh.input_paths = old_gh_ip
+            pp.input_paths = old_pp_ip
+        part = report.get('cost_partition') or {}
+        if part.get('run_now') != [cheap]:
+            fail('mixed preflight must leave the cheap card runnable, got %r' % part.get('run_now'))
+        if part.get('defer_monster') != [monster]:
+            fail('mixed preflight must quarantine the monster card, got %r' % part.get('defer_monster'))
+        if 'human-budgeted lane' not in (part.get('recommendation') or ''):
+            fail('partition recommendation must name the human-budgeted monster lane')
 
 
 def test_verb_worklist_excludes_missing_rootmaps():
@@ -2035,6 +2086,22 @@ def test_cit_split_never_tears_open_span():
                  'across a cut: %r' % text)
 
 
+def test_cit_split_caps_single_line_monster_sense():
+    """H191/B2: a single physical line with many complete citations must still be
+    sub-split; line-boundary splitting alone emitted >90-citation fragments."""
+    import autosplit_requeue as ar
+    raw = 'Ein einziger Sinn. ' + ' '.join(
+        '<ls n="SRC.%d">citation %d</ls>' % (i, i) for i in range(150))
+    parts = ar.plan(raw, ls_budget=18)
+    if len(parts) < 2:
+        fail('150-citation one-line fixture must split into multiple fragments')
+    for _si, _pi, text in parts:
+        if text.count('<ls') > 18:
+            fail('fragment exceeds citation budget: %d <ls>' % text.count('<ls'))
+        if text.count('<ls') != text.count('</ls>'):
+            fail('line-level splitter tore an <ls> span')
+
+
 def test_selfheal_fragment_si_threaded_and_tags_normalized():
     """Regression for the 2026-07-04 vid drain SENSE-DUPE false-positive: root vid's
     homonym head h0's giant single-sense part (h0_00_pwg00, source sense '1', 168 <ls>
@@ -2399,6 +2466,7 @@ def main():
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
         test_perf_preflight_fragment_tm_empty_warning,
+        test_perf_preflight_partitions_mixed_monster_window,
         test_verb_worklist_excludes_missing_rootmaps,
         test_coordinator_state_dashboard_and_cap,
         test_coordinator_lock_replaces_stale_dead_owner,
@@ -2409,6 +2477,7 @@ def main():
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
         test_cit_split_never_tears_open_span,
+        test_cit_split_caps_single_line_monster_sense,
         test_selfheal_fragment_si_threaded_and_tags_normalized,
         test_sense_dense_card_presplit,
         test_kill_gate_wired,

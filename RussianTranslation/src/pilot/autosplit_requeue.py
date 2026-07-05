@@ -92,6 +92,34 @@ def _span_open(text):
     return text.count('<ls') > text.count('</ls>') or text.count('{#') > text.count('#}')
 
 
+def _dense_line_parts(line, ls_budget):
+    """Split a single citation-dense physical line at complete <ls>...</ls> spans.
+
+    _cit_parts normally cuts on line boundaries. The H189 monster-fragment audit found
+    some "one sense, one long line" shapes where one physical line can carry far more
+    citations than the budget, so a line-boundary splitter still emits an over-budget
+    fragment. This keeps every citation span intact and only flushes when the accumulated
+    chunk is balanced for both <ls> and {#...#}.
+    """
+    if line.count('<ls') <= ls_budget:
+        return [line]
+    pieces = re.split(r'(<ls\b[^>]*>.*?</ls>)', line, flags=re.S)
+    if len(pieces) == 1:
+        return [line]
+    parts, cur, c = [], [], 0
+    for piece in pieces:
+        if piece == '':
+            continue
+        n = piece.count('<ls')
+        text = ''.join(cur)
+        if cur and c and c + n > ls_budget and not _span_open(text):
+            parts.append(text); cur, c = [], 0
+        cur.append(piece); c += n
+    if cur:
+        parts.append(''.join(cur))
+    return parts or [line]
+
+
 def _cit_parts(block, ls_budget):
     """Split one (sub)sense block into parts each <= ls_budget <ls>, on line boundaries —
     but never inside an open <ls>/{#...#} span (see _span_open); the budget cut is deferred
@@ -99,10 +127,11 @@ def _cit_parts(block, ls_budget):
     lines = block.split('\n')
     parts, cur, c = [], [], 0
     for l in lines:
-        n = l.count('<ls')
-        if cur and c + n > ls_budget and not _span_open('\n'.join(cur)):
-            parts.append('\n'.join(cur)); cur, c = [], 0
-        cur.append(l); c += n
+        for chunk in _dense_line_parts(l, ls_budget):
+            n = chunk.count('<ls')
+            if cur and c + n > ls_budget and not _span_open('\n'.join(cur)):
+                parts.append('\n'.join(cur)); cur, c = [], 0
+            cur.append(chunk); c += n
     if cur:
         parts.append('\n'.join(cur))
     return parts
