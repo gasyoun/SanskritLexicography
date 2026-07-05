@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -99,7 +99,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -117,8 +117,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 (2026-07-04): tyaj~~h0_zz_pw (a PW addenda card compressing a whole root article — base verb + Caus/Desid + every prefix combo) packs 35 senses into 11 <ls>, so 1+<ls>=12 ranked it as trivial while its real output surface was the heaviest of the root; it deterministically blew the whole-card StructuredOutput retry cap and stalled ~7 min retrying the identical call. The frag-count trigger is computed from split_plan() length (lang-agnostic; no RU/EN branching) and applies whenever SELFHEAL is on, independent of the citation trigger and of byte/citation batching mode — so it protects both language paths identically. Validated live: the [sam, zz_pw] pair that stalled now returns ok:2/null:0 with zz_pw healed complete via 4 fragment groups.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -136,8 +136,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 follow-up (2026-07-04): the runtime BACKSTOP for whole-card StructuredOutput stalls whose driver isn't yet a structural presplit trigger (gloss volume, masked-token count, multi-layer nesting, novel shapes). Entirely lang-agnostic — the budget keys on masked-skeleton bytes (INPUTS[k].skeleton.length) and setTimeout, no RU/EN branching; both paths get the same gate. Budget calibrated from a tyaj --no-tm timing benchmark (skeleton bytes are the best single time predictor since output ~= 2x skeleton). setTimeout is a relative timer (Date.now() is banned); AbortController is unavailable so a killed call keeps running in the background until its own cap, but the harness stops blocking. Default ON; --no-kill / --kill-factor=N tune it. See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -154,7 +154,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -171,7 +171,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -205,7 +205,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -222,7 +222,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -238,7 +238,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The bare 'sonnet' alias resolved to Sonnet 4.6 (not 5.0) on a prior EN run — pinned explicitly there after that surprise. RU's alias was never observed to misresolve, so it was left alone rather than touching a stable production path for a problem it doesn't have. Re-evaluate if RU is ever caught on a stale alias too.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108"
     }
   },
   {
@@ -315,8 +315,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -335,7 +335,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -372,8 +372,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d",
-      "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   },
   {
@@ -410,8 +410,29 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 3 pre-run fix. Before this, the nominal promote path (meta.get('nominal') + nominal_keymap) existed in promote_final_cards but the harness never emitted those fields, so a --nominal run's cards would all key to the label (e.g. pril10_w1) instead of kAla/rasa/rUpa. The keymap is built from each card's portrait key1 (_slp1_lex_for_key), which is lang-independent — the identical meta is emitted for RU and EN nominal runs. Pinned by a promote_final_cards.selftest nominal-keying assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "055a57a41805a54d0a3874fc711499e61cd105f1aa72bcd3a86c56591744179d",
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
       "src/promote_final_cards.py": "abb57e9a41e8969346e854fd4d4682b97abdabf203a102b6a5d11fa657eaaa22"
+    }
+  },
+  {
+    "id": "presplit_lane_amortization_and_budget_guards_h189",
+    "mechanism": "Presplit-PRIMARY cards are grouped at PRESPLIT_GROUP_CITE_BUDGET(60)/PRESPLIT_GROUP_SENSE_CAP(18) instead of the conservative SELFHEAL_GROUP_BUDGET(12), amortizing the ~27k framework across many fragments per agent() call; the wall-clock kill gate is recalibrated (floor 120s->45s, ceil 480s->180s) per MG's >60s-suspicious/>3min-unacceptable rule; a window-level budget kill-switch aborts+requeues once agent() calls exceed MAX_AGENTS=max(40, ceil(expected*3)); the generator warns + suggests a key-disjoint split when the harness exceeds MAX_HARNESS_BYTES(480k); perf_preflight adds a per-card / per-window cost gate that flags a window dominated by expensive cards",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/perf_preflight.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H189 (2026-07-05): fixes the pril10_w1 nominal-window cost blow-up (230 agents / 42.3M tokens / ~$80 / ~3 of 8 cards). Every mechanism keys on lang-agnostic signals — citation/sense counts, masked-skeleton bytes, agent-call count, harness bytes, token/$ estimates — with NO RU/EN branching, so RU and EN get identical behaviour; the presplit lane already ran both languages through the same grouping. Also guards _slp1_lex_for_key against an empty-list portrait ([]) crashing the nominal_keymap emission (the real tyaj~~h0_zz_pw / addenda shape). See POSTMORTEM_pril10_w1.md + H189.",
+    "tracking": "H189",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "752cbaa4e69cca3604f64078e02538421e8d5f30c69dcd1c4a52fe33adfe4108",
+      "src/pilot/perf_preflight.py": "7ec7ab37753ecde0eebc20f1ce251565e8bfbf59963592460be460016dee2a43",
+      "src/pilot/window_selftest.py": "8de7b0fd03c11c64d45951b6043842b2c99acc3546d33a26906790d2a4f448e9"
     }
   }
 ]

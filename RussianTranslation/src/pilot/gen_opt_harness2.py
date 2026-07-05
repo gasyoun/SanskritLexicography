@@ -32,6 +32,7 @@ Writes: src/pilot/run_pilot_wf.opt2.js  (or --out=PATH — use a per-root/per-ch
 """
 import datetime
 import json
+import math
 import os
 import re
 import sys
@@ -62,6 +63,30 @@ SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in do
                    #  light (low-<ls>) fragments share one call, cutting a 13-fragment card to a
                    #  handful of calls instead of 13, without recombining the dense units that
                    #  caused the original failure.
+# --- presplit-PRIMARY fragment lane budget (H189, 2026-07-05) ----------------------
+# SELFHEAL_GROUP_BUDGET=12 above is deliberately conservative: it groups the fragments of
+# a card that ALREADY FAILED as a whole card, so small safe groups matter more than
+# amortization. But a PRESPLIT card is routed to the fragment lane as its PRIMARY path
+# (it never attempts the whole-card batch), and in nominal-window runs EVERY card can be
+# presplit — so grouping them at 12 means each ~25-30k-token framework prompt is amortized
+# across only ~2-3 fragments per agent() call. The pril10_w1 blow-up (H189): 8 heads ->
+# 448 fragments -> 174 groups (~2.6 frags/group) -> the framework re-cached ~230x ->
+# cache-write was 60% of a $80 / 3-card bill. The fix: group PRESPLIT cards at a budget
+# close to the proven-safe whole-card ceiling instead. A single fragment-lane agent() call
+# can safely emit as much as the batch lane already emits for a whole card (OUTPUT_BUDGET=90
+# citation-units / SENSE_PRESPLIT_BUDGET=20 senses); staying just UNDER both keeps the same
+# retry-cap safety while packing ~6x more fragments per call. Measured on pril10_w1's real
+# fragment weights: 60/18 takes 174 -> 69 groups (kAla 32->11, antara 32->9), i.e. the
+# framework is re-cached ~2.5x fewer times, at zero new output-size risk (each group stays
+# smaller than a batch the batch lane already runs). The heal-of-a-failed-whole-card path
+# keeps SELFHEAL_GROUP_BUDGET; only the presplit-PRIMARY grouping uses these.
+PRESPLIT_GROUP_CITE_BUDGET = 60  # --presplit-group-budget=N: citation-weighted (1+<ls>) cap
+                   #  per presplit-lane agent() call. 60 < OUTPUT_BUDGET 90 -> each call is
+                   #  strictly lighter than a batch the batch lane already handles.
+PRESPLIT_GROUP_SENSE_CAP = 18    # AND at most this many fragments (== senses emitted) per call,
+                   #  so a run of many tiny (0-<ls>) fragments can't silently pack >18 senses
+                   #  into one call and re-trigger the sense-density failure. 18 < the
+                   #  SENSE_PRESPLIT_BUDGET=20 whole-card ceiling, with margin.
 BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole batch call
                    #  fails/comes back malformed (not just individual cards inside it), bisect
                    #  the still-pending cards into two halves and retry each half recursively
@@ -130,10 +155,53 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
 # tighten with --kill-factor once real runs confirm the envelope.
 KILL = True                 # --no-kill disables; --kill-factor=N tunes the multiple
 KILL_FACTOR = 2.0           # MG's "200%": kill a call at 2x its expected-for-complexity time
-KILL_BASE_MS = 30000        # fixed per-call latency (model spin-up + fixed framing)
+KILL_BASE_MS = 20000        # fixed per-call latency (model spin-up + fixed framing). Lowered
+                            #  from 30000 (H189): 30s was fitted to WHOLE-CARD batch calls; the
+                            #  fragment lane (now the primary path for presplit cards) has less
+                            #  fixed framing, and MG's directive is that a subcard >~60 s is
+                            #  already suspicious.
 KILL_SLOPE_MS = 45          # ms per masked-skeleton byte (above the ~44 ms/byte observed ceiling)
-KILL_FLOOR_MS = 120000      # never kill before 2 min (jitter guard on tiny calls)
-KILL_CEIL_MS = 480000       # hard ceiling — nothing runs past 8 min even at max size
+KILL_FLOOR_MS = 45000       # H189 recalibration (MG: ">~60 s per subcard is suspicious; >3 min
+                            #  unacceptable"). Was 120000 (2 min) — far too loose for a single
+                            #  fragment: it guaranteed nothing was killed before 2 min even for a
+                            #  tiny call, so the pril10_w1 fragments ran 3-6.5 min each. 45 s floor
+                            #  + BASE/SLOPE puts a tiny fragment's hard-kill at ~60-70 s.
+KILL_CEIL_MS = 180000       # hard ceiling — NOTHING runs past 3 min (MG). Was 480000 (8 min); the
+                            #  worst pril10_w1 agent ran 390 s (6.5 min) inside the old ceiling. On
+                            #  kill the call is abandoned and its cards fall to the bounded fragment
+                            #  lane / binary-split, so a killed unit is REQUEUED, never silently
+                            #  lost (see resolveGroup/healGroup below).
+# --- live budget kill-switch (H189, 2026-07-05) -----------------------------------
+# The per-call kill gate above bounds ANY SINGLE agent() call, but nothing bounded the
+# WHOLE WINDOW: pril10_w1 spawned 230 agents (est. 174) and burned 42 M tokens before MG
+# killed it by hand. This is an absolute, window-level backstop: the harness counts every
+# agent() call it makes and, once the count crosses MAX_AGENTS, refuses to start further
+# calls (the remaining cards are nulled with a `budget-kill-switch` reason and REQUEUED,
+# not silently dropped) so a runaway retry/binary-split cascade self-terminates instead of
+# running to a manual kill. Tokens aren't observable inside the runtime (agent() returns
+# structured output, not a usage record), so the mechanical proxy is agent-CALL count —
+# which is exactly what blew up (230 vs 174). The ceiling is derived per window from the
+# preflight estimate: MAX_AGENTS = max(MAX_AGENTS_FLOOR, ceil(expected * MAX_AGENTS_FACTOR)),
+# so a small window isn't over-constrained and a large one still can't 10x its estimate.
+KILL_SWITCH = True          # --no-kill-switch disables; --max-agents=N sets an absolute override
+MAX_AGENTS_FACTOR = 3.0     # abort once actual agent() calls exceed 3x the preflight estimate
+                            #  (pril10_w1 was 230/174 = 1.3x before the manual kill — 3x leaves
+                            #  ample room for legitimate binary-split/heal while still catching a
+                            #  true runaway well before a $80 outcome).
+MAX_AGENTS_FLOOR = 40       # never abort a window below this many calls regardless of estimate
+                            #  (a genuinely small window that heals a few cards stays unaffected).
+MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing the derivation
+# --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
+# The emitted harness inlines every card's raw+portrait input, so its byte size scales with
+# card count and CAN exceed the Workflow `scriptPath` cap (the `i` 204-card harness = 567 KB
+# > 512 KB, EVOLUTION_TIMELINE F-harness-size-limit; pril10_w1 = 1.03 MB, unlaunchable). The
+# generator now measures the emitted size and, when it exceeds MAX_HARNESS_BYTES, prints a
+# LOUD warning plus a concrete key-disjoint sub-window split (the exact --keys=... for each
+# piece) so the limit is surfaced at GENERATION, not discovered at launch. Warn (not hard
+# refuse) by default because some large single-root harnesses do launch via other surfaces;
+# --refuse-oversize makes it a hard error for unattended/automated callers.
+MAX_HARNESS_BYTES = 480000  # ~480 KB, a safety margin under the 512 KB scriptPath cap
+REFUSE_OVERSIZE = False     # --refuse-oversize: exit nonzero instead of warning when oversize
 
 
 def grammar_text(root):
@@ -282,6 +350,20 @@ def parse_args(argv):
             v = a.split('=', 1)[1].strip().lower()
             globals()['OUTPUT_BUDGET'] = None if v in ('off', '0', 'none') else int(v)
             output_explicit = True
+        elif a.startswith('--presplit-group-budget='):   # H189: citation cap per presplit-lane call
+            globals()['PRESPLIT_GROUP_CITE_BUDGET'] = int(a.split('=', 1)[1])
+        elif a.startswith('--presplit-sense-cap='):       # H189: fragment (sense) cap per call
+            globals()['PRESPLIT_GROUP_SENSE_CAP'] = int(a.split('=', 1)[1])
+        elif a == '--no-kill-switch':                     # H189: disable the window budget switch
+            globals()['KILL_SWITCH'] = False
+        elif a == '--kill-switch':
+            globals()['KILL_SWITCH'] = True               # default; kept for documented runbooks
+        elif a.startswith('--max-agents='):               # H189: absolute agent()-count ceiling override
+            globals()['MAX_AGENTS_OVERRIDE'] = int(a.split('=', 1)[1])
+        elif a == '--refuse-oversize':                    # H189: hard-error instead of warn when oversize
+            globals()['REFUSE_OVERSIZE'] = True
+        elif a.startswith('--max-harness-bytes='):
+            globals()['MAX_HARNESS_BYTES'] = int(a.split('=', 1)[1])
     if budget_explicit and not output_explicit:
         # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
         # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
@@ -327,18 +409,37 @@ def compress_rule3(tr):
     return tr2
 
 
-def _group_by_budget(items, sizer, budget):
+def _group_by_budget(items, sizer, budget, count_cap=None):
     """Greedily group `items` (kept in order) into batches whose summed sizer() stays
-    <= budget; a single oversize item still gets its own group (never dropped)."""
+    <= budget; a single oversize item still gets its own group (never dropped).
+
+    count_cap (H189): when set, also close a group once it already holds count_cap
+    items, regardless of summed size — so a run of many tiny (size-1) items can't pack
+    an unbounded COUNT into one group. Needed for the presplit fragment lane, where the
+    item count == senses the model must emit and a group of 40 size-1 fragments would
+    re-trigger the very sense-density failure presplit exists to avoid. Default None
+    preserves the original size-only behavior for every existing caller.
+    """
     groups, cur, sz = [], [], 0
     for it in items:
         isz = sizer(it)
-        if cur and sz + isz > budget:
+        if cur and (sz + isz > budget or (count_cap and len(cur) >= count_cap)):
             groups.append(cur); cur, sz = [], 0
         cur.append(it); sz += isz
     if cur:
         groups.append(cur)
     return groups
+
+
+def _presplit_hit(ls, nfrag, cite_budget):
+    """Shared predicate: does a card's CITATION density (1+<ls> over the output budget)
+    or SENSE density (fragment count over SENSE_PRESPLIT_BUDGET) route it to the
+    presplit-primary fragment lane? Returns (cite_hit, sense_hit). Kept in one place so
+    the frags-loop grouping choice and the presplit-list construction can never drift
+    (H189 — before this, the two sites replicated the condition independently)."""
+    cite_hit = cite_budget is not None and (1 + ls) > cite_budget
+    sense_hit = SENSE_PRESPLIT_BUDGET is not None and nfrag > SENSE_PRESPLIT_BUDGET
+    return cite_hit, sense_hit
 
 
 def selected_keys(root, keyfilter):
@@ -372,6 +473,8 @@ def _slp1_lex_for_key(k):
     except Exception:
         return '', ''
     e = port[0] if isinstance(port, list) and port else port
+    if not isinstance(e, dict):   # empty-list portrait ([]) or unexpected shape -> no grammar key
+        return '', ''             # (the real tyaj~~h0_zz_pw / addenda shape; keymap falls back to k)
     slp1 = e.get('key1') or e.get('slp1') or ''
     val = e.get('lex') or e.get('pos') or e.get('gender') or ''
     if isinstance(val, (list, tuple)):
@@ -783,9 +886,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                            'tm': cached.get('senses') if cached else None})
             if not fl:
                 continue
-            groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frag_n[k] = len(pl)   # raw deterministic fragment count == sense-units the model
                                   # must emit; drives the sense-density presplit trigger below
+            # H189: a card that WILL be routed to presplit uses the fragment lane as its
+            # PRIMARY path (no whole-card attempt), so group it at a budget close to the
+            # proven-safe whole-card ceiling — the ~27k framework then amortizes across many
+            # fragments per call instead of ~2-3. A card without a presplit hit keeps the
+            # conservative SELFHEAL_GROUP_BUDGET (it only reaches these groups via the
+            # heal-of-a-failed-whole-card path, where small safe groups matter more).
+            _cite_hit, _sense_hit = _presplit_hit(inputs[k]['ls'], frag_n[k], OUTPUT_BUDGET)
+            if _cite_hit or _sense_hit:
+                groups = _group_by_budget(fl, lambda it: 1 + it['ls'],
+                                          PRESPLIT_GROUP_CITE_BUDGET,
+                                          count_cap=PRESPLIT_GROUP_SENSE_CAP)
+            else:
+                groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
                           'fsha': it['fsha'], 'si': it['si']} for it in g] for g in groups]
             phf[k] = [[it['ph'] for it in g] for g in groups]
@@ -817,8 +932,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         for k in keys:
             if k in tm_keys or k in degenerate_keys or k not in frags:
                 continue
-            cite_hit = cite_budget is not None and (1 + inputs[k]['ls']) > cite_budget
-            sense_hit = SENSE_PRESPLIT_BUDGET is not None and frag_n.get(k, 0) > SENSE_PRESPLIT_BUDGET
+            cite_hit, sense_hit = _presplit_hit(inputs[k]['ls'], frag_n.get(k, 0), cite_budget)
             if not (cite_hit or sense_hit):
                 continue
             presplit.append(k)
@@ -881,6 +995,14 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     if lang == 'en':                                    # inject MW TM once per root (root mode)
         single_grammar = mw_tm_block(root, mw_tm_path) + single_grammar
 
+    # Preflight-parity agent estimate (one call per batch + one per presplit fragment group)
+    # and the H189 live budget kill-switch ceiling derived from it.
+    agent_expected = len(batches) + sum(len(frags.get(k, [None])) for k in presplit)
+    if MAX_AGENTS_OVERRIDE:
+        max_agents = MAX_AGENTS_OVERRIDE
+    else:
+        max_agents = max(MAX_AGENTS_FLOOR, int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)))
+
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
@@ -904,6 +1026,15 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'kill': KILL,
         'kill_gate': ({'factor': KILL_FACTOR, 'base_ms': KILL_BASE_MS, 'slope_ms': KILL_SLOPE_MS,
                        'floor_ms': KILL_FLOOR_MS, 'ceil_ms': KILL_CEIL_MS} if KILL else None),
+        # H189 live budget kill-switch: the harness aborts (and requeues remaining cards) once
+        # it makes more than max_agents agent() calls — a window-level backstop against the
+        # runaway that spent 230/174 agents on pril10_w1 before a manual kill.
+        'kill_switch': KILL_SWITCH,
+        'max_agents': max_agents if KILL_SWITCH else None,
+        'max_agents_factor': MAX_AGENTS_FACTOR,
+        # H189 presplit-lane amortization budgets (fragments packed per agent() call).
+        'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
+        'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_auto': bool(tm_auto),
@@ -933,7 +1064,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # 102 agents against a 13-agent preflight estimate, almost entirely from its 5 presplit
         # giants each needing ~10-20 fragment calls). This is still an optimistic floor — it
         # ignores retries and whole-batch selfheal fallback on non-presplit cards.
-        'agent_expected_after_tm': len(batches) + sum(len(frags.get(k, [None])) for k in presplit),
+        'agent_expected_after_tm': agent_expected,
     }
     print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
           % (meta['tm_cards'], len(meta['frag_tm_cards']),
@@ -968,6 +1099,13 @@ const KILL_BASE_MS = %(kill_base_ms)s
 const KILL_SLOPE_MS = %(kill_slope_ms)s
 const KILL_FLOOR_MS = %(kill_floor_ms)s
 const KILL_CEIL_MS = %(kill_ceil_ms)s
+// H189 live budget kill-switch: abort the whole window once it has made more than
+// MAX_AGENTS agent() calls (a runaway retry/binary-split cascade), instead of running to a
+// manual kill. Tokens aren't observable in-runtime, so agent-CALL count is the proxy (230
+// vs 174 estimate on pril10_w1). Remaining cards are nulled with a budget-kill-switch reason
+// and requeued by the normal audit path — nothing is silently dropped.
+const KILL_SWITCH = %(kill_switch)s
+const MAX_AGENTS = %(max_agents)s
 // --tm: cards pre-resolved from the content-addressed translation memory (source-SHA hit).
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
@@ -1007,7 +1145,21 @@ class KillTimeout extends Error {}
 const isKill = e => (e instanceof KillTimeout) || (e && /kill-timeout/.test(String(e && e.message)))
 const killBudgetMs = skelBytes => Math.min(KILL_CEIL_MS, Math.max(KILL_FLOOR_MS, KILL_FACTOR * (KILL_BASE_MS + KILL_SLOPE_MS * skelBytes)))
 const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k].skeleton.length : 0), 0)
+// H189 live budget kill-switch state. AGENTS_SPENT counts real agent() calls; once it
+// reaches MAX_AGENTS every further agentKill() throws BudgetExceeded WITHOUT calling agent()
+// (0 tokens), so retry/binary-split cascades short-circuit to instant no-ops and the window
+// winds down at ~MAX_AGENTS calls. BudgetExceeded is deliberately NOT an isKill() (a kill
+// routes to MORE fragment calls — the opposite of what a budget stop wants); the caller's
+// generic catch nulls the card with a budget-kill-switch reason for the normal requeue path.
+class BudgetExceeded extends Error {}
+let AGENTS_SPENT = 0
+let BUDGET_TRIPPED = false
 async function agentKill(prompt, opts, skelBytes) {
+  if (KILL_SWITCH && MAX_AGENTS != null && AGENTS_SPENT >= MAX_AGENTS) {
+    BUDGET_TRIPPED = true
+    throw new BudgetExceeded('budget-kill-switch: window hit MAX_AGENTS=' + MAX_AGENTS + ' agent() calls; remaining cards requeued')
+  }
+  AGENTS_SPENT++
   if (!KILL) return agent(prompt, opts)
   const ms = killBudgetMs(skelBytes)
   let timer
@@ -1379,6 +1531,11 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   presplit: PRESPLIT.length, tm: out.filter(r => r.tm).length,
                   degenerate_passthrough: out.filter(r => r.degenerate_passthrough).length,
                   frag_tm_fragments: META.frag_tm_fragments || 0,
+                  // H189: agents_spent surfaces the real call count vs META.max_agents;
+                  // budget_kill_switch_tripped=true means the window self-aborted and its
+                  // null_keys must be requeued (they were not translated, not defective).
+                  agents_spent: AGENTS_SPENT, max_agents: (KILL_SWITCH ? MAX_AGENTS : null),
+                  budget_kill_switch_tripped: BUDGET_TRIPPED,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -1404,6 +1561,7 @@ return { meta: META, summary, results: out }
         'kill': json.dumps(KILL), 'kill_factor': json.dumps(KILL_FACTOR),
         'kill_base_ms': json.dumps(KILL_BASE_MS), 'kill_slope_ms': json.dumps(KILL_SLOPE_MS),
         'kill_floor_ms': json.dumps(KILL_FLOOR_MS), 'kill_ceil_ms': json.dumps(KILL_CEIL_MS),
+        'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(max_agents if KILL_SWITCH else None),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
@@ -1413,6 +1571,41 @@ return { meta: META, summary, results: out }
         if bad in js:
             die('residual node-ism: %s' % bad)
     return js, batches
+
+
+def _even_chunks(seq, n):
+    """Split `seq` into n contiguous, near-equal chunks (order preserved)."""
+    n = max(1, min(n, len(seq)))
+    q, r = divmod(len(seq), n)
+    out, i = [], 0
+    for j in range(n):
+        take = q + (1 if j < r else 0)
+        out.append(seq[i:i + take])
+        i += take
+    return out
+
+
+def harness_size_report(root, keys, nominal, js_len, max_bytes):
+    """H189 harness-size guard: if the emitted harness exceeds max_bytes (the Workflow
+    scriptPath cap, F-harness-size-limit), compute a key-disjoint split into sub-windows
+    each expected under the cap and return the human-facing warning lines + suggested
+    commands. Returns (oversize: bool, lines: [str])."""
+    if js_len <= max_bytes:
+        return False, []
+    # Leave headroom for the fixed framework (CONV_TR/PREAMBLE/SCHEMA) duplicated per
+    # sub-window; 0.85 * cap keeps each piece safely under the real limit.
+    n = max(2, int(math.ceil(js_len / (max_bytes * 0.85))))
+    chunks = _even_chunks(list(keys), n)
+    lines = ['HARNESS OVERSIZE: %d bytes > %d cap (Workflow scriptPath limit, F-harness-size-limit).'
+             % (js_len, max_bytes),
+             '  A harness this large cannot launch as one workflow. Split into %d key-disjoint '
+             'sub-windows (regenerate each, verify each is under the cap):' % len(chunks)]
+    prefix = ('--nominal --keys=' if nominal else '%s --keys=' % root)
+    for i, ch in enumerate(chunks, 1):
+        lines.append('  w%d: python src/pilot/gen_opt_harness2.py %s%s --out=run_pilot_wf.opt2.w%d.js'
+                     % (i, prefix, ','.join(ch), i))
+    lines.append('  Then merge the sub-window results (see _merge_subwindows.py / H189).')
+    return True, lines
 
 
 def main():
@@ -1436,6 +1629,13 @@ def main():
         'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',
           '(sizes', [len(b) for b in batches], ') | mode', mode)
+    # H189 harness-size guard: surface the scriptPath cap at generation, not at launch.
+    oversize, lines = harness_size_report(root, keys, nominal, len(js), MAX_HARNESS_BYTES)
+    if oversize:
+        for ln in lines:
+            print(ln)
+        if REFUSE_OVERSIZE:
+            die('refusing oversize harness (--refuse-oversize); split as shown above')
 
 
 if __name__ == '__main__':
