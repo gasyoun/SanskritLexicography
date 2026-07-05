@@ -2318,10 +2318,15 @@ def test_budget_kill_switch_wired():
                 fail('BudgetExceeded must not be classified as a kill (would spawn more agents)')
             meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
             expected = meta.get('agent_expected_after_tm', 0)
-            want = max(gh.MAX_AGENTS_FLOOR, int(math.ceil(expected * gh.MAX_AGENTS_FACTOR)))
+            # H189 follow-up: the ceiling SCALES with word size (ceil(expected*factor)+headroom),
+            # NOT a flat floor — a flat floor let a small-word runaway burn 40 agents unchecked.
+            want = int(math.ceil(expected * gh.MAX_AGENTS_FACTOR)) + gh.MAX_AGENTS_HEADROOM
             if meta.get('max_agents') != want:
-                fail('meta.max_agents must be max(floor, ceil(expected*factor))=%d; got %r'
+                fail('meta.max_agents must be ceil(expected*factor)+headroom=%d; got %r'
                      % (want, meta.get('max_agents')))
+            if hasattr(gh, 'MAX_AGENTS_FLOOR'):
+                fail('the flat one-size-fits-all MAX_AGENTS_FLOOR must be gone — the ceiling '
+                     'must scale with word size so a small-word runaway is caught, not clamped to 40')
             # summary must expose the trip flag for the requeue path
             if 'budget_kill_switch_tripped' not in js:
                 fail('run summary must expose budget_kill_switch_tripped so a self-aborted '

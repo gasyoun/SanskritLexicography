@@ -263,7 +263,7 @@ Five guardrails shipped (all SHARED, 68/68 selftests green):
    `pril10_w1` **174 → 69** fragment-group calls; real `gam` giants **18 → 6** agents.
 2. **Kill-gate recalibration**: floor 120 s → **45 s**, ceil 480 s → **180 s** (MG rule).
 3. **Live budget kill-switch**: window self-aborts + requeues past
-   `MAX_AGENTS = max(40, ⌈expected×3⌉)`.
+   `MAX_AGENTS = ⌈expected×3⌉ + 10 (size-proportional)`.
 4. **Harness-size guard**: generator warns + prints an exact key-disjoint split > 480 KB.
 5. **Preflight cost gate**: `perf_preflight.py` estimates tokens/$/per-card and flags
    (or `--refuse-over-cost` refuses) a window over ceiling — flags `pril10_w1` (~$4/card

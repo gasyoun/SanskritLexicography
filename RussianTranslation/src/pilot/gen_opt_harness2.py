@@ -180,16 +180,25 @@ KILL_CEIL_MS = 180000       # hard ceiling — NOTHING runs past 3 min (MG). Was
 # not silently dropped) so a runaway retry/binary-split cascade self-terminates instead of
 # running to a manual kill. Tokens aren't observable inside the runtime (agent() returns
 # structured output, not a usage record), so the mechanical proxy is agent-CALL count —
-# which is exactly what blew up (230 vs 174). The ceiling is derived per window from the
-# preflight estimate: MAX_AGENTS = max(MAX_AGENTS_FLOOR, ceil(expected * MAX_AGENTS_FACTOR)),
-# so a small window isn't over-constrained and a large one still can't 10x its estimate.
+# which is exactly what blew up (230 vs 174). The ceiling is derived per window and must
+# SCALE WITH WORD SIZE, not be a one-size-fits-all floor: a `gam`-class word legitimately
+# needs dozens of calls, but a 3-card stub must never be allowed 40 — a flat floor would let
+# a small-word runaway burn 40 agents before the switch ever fired, defeating it for exactly
+# the words that need it. So the ceiling is proportional to the preflight estimate plus a
+# small fixed headroom for one hard card's heal/binary-split jitter:
+#   MAX_AGENTS = ceil(expected * MAX_AGENTS_FACTOR) + MAX_AGENTS_HEADROOM
+# e.g. expected 2 -> 16, 6 -> 28, 20 -> 70, 60 -> 190 — a continuous small/medium/large
+# typology, no cliff at a tier boundary and no "what counts as medium" to pin down.
 KILL_SWITCH = True          # --no-kill-switch disables; --max-agents=N sets an absolute override
 MAX_AGENTS_FACTOR = 3.0     # abort once actual agent() calls exceed 3x the preflight estimate
                             #  (pril10_w1 was 230/174 = 1.3x before the manual kill — 3x leaves
                             #  ample room for legitimate binary-split/heal while still catching a
                             #  true runaway well before a $80 outcome).
-MAX_AGENTS_FLOOR = 40       # never abort a window below this many calls regardless of estimate
-                            #  (a genuinely small window that heals a few cards stays unaffected).
+MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expected 1-2) whose one
+                            #  hard card binary-splits into ~5-7 heal agents isn't false-aborted —
+                            #  replaces the old flat floor of 40, which was far too loose for
+                            #  small/medium words (they never legitimately approach 40, so the
+                            #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing the derivation
 # --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
 # The emitted harness inlines every card's raw+portrait input, so its byte size scales with
@@ -1000,8 +1009,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     agent_expected = len(batches) + sum(len(frags.get(k, [None])) for k in presplit)
     if MAX_AGENTS_OVERRIDE:
         max_agents = MAX_AGENTS_OVERRIDE
-    else:
-        max_agents = max(MAX_AGENTS_FLOOR, int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)))
+    else:   # proportional to word size + small jitter headroom (NOT a flat floor)
+        max_agents = int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)) + MAX_AGENTS_HEADROOM
 
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
@@ -1032,6 +1041,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'kill_switch': KILL_SWITCH,
         'max_agents': max_agents if KILL_SWITCH else None,
         'max_agents_factor': MAX_AGENTS_FACTOR,
+        'max_agents_headroom': MAX_AGENTS_HEADROOM,
         # H189 presplit-lane amortization budgets (fragments packed per agent() call).
         'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
         'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
