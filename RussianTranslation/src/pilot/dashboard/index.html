@@ -49,6 +49,31 @@
       </div>
     </section>
 
+    <section id="evolutionSection">
+      <div class="section-head">
+        <h2>Evolution Timelapse</h2>
+        <span class="subtle" id="evoSpan"></span>
+      </div>
+      <div class="metrics" id="evoHeadline"></div>
+      <div class="evo-controls">
+        <button id="evoPlay" type="button">&#9654; Play</button>
+        <input type="range" id="evoScrub" min="0" max="0" value="0" step="1" aria-label="timelapse day">
+        <span class="mono" id="evoDay">--</span>
+        <label class="evo-toggle"><input type="checkbox" id="evoCursorAll" checked> full history</label>
+      </div>
+      <div class="evo-charts" id="evoCharts"></div>
+      <div class="two-col">
+        <div>
+          <h3>Failure typology (fuckup history)</h3>
+          <div id="evoFailures"></div>
+        </div>
+        <div>
+          <h3>Trends</h3>
+          <div id="evoTrends" class="note"></div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="section-head">
         <h2>Print Gates</h2>

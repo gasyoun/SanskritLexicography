@@ -209,4 +209,149 @@ async function refresh() {
   }
 }
 
+// ---------------- Evolution timelapse ----------------
+let evoData = null;
+let evoCursor = 0;
+let evoInit = false;
+let evoPlaying = false;
+let evoPlayTimer = null;
+let evoFullHistory = true;
+
+function fmtNum(v, pct) {
+  if (!Number.isFinite(v)) return '--';
+  if (pct) return (Math.round(v * 100) / 100) + '%';
+  if (v >= 1000) return (v / 1000).toFixed(v >= 10000 ? 0 : 1) + 'k';
+  return String(Math.round(v * 100) / 100);
+}
+
+function svgLine(values, opts) {
+  opts = opts || {};
+  const W = 320, H = 110, padL = 30, padR = 6, padT = 10, padB = 14;
+  const n = values.length;
+  const cursor = Number.isInteger(opts.cursor) ? opts.cursor : n - 1;
+  const upTo = opts.grow ? cursor : n - 1;
+  const nums = values.filter(v => Number.isFinite(v));
+  const maxV = nums.length ? Math.max(...nums) : 1;
+  const span = maxV || 1;
+  const x = (i) => padL + (n <= 1 ? 0 : (W - padL - padR) * i / (n - 1));
+  const y = (v) => padT + (H - padT - padB) * (1 - v / span);
+  const pts = [];
+  for (let i = 0; i <= upTo; i++) {
+    const v = values[i];
+    if (!Number.isFinite(v)) continue;
+    pts.push(`${x(i).toFixed(1)},${y(v).toFixed(1)}`);
+  }
+  const color = opts.color || '#4da3ff';
+  let area = '';
+  if (opts.area && pts.length) {
+    area = `<polygon points="${padL.toFixed(1)},${y(0).toFixed(1)} ${pts.join(' ')} ${x(upTo).toFixed(1)},${y(0).toFixed(1)}" fill="${color}" opacity="0.13"/>`;
+  }
+  const line = pts.length ? `<polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke"/>` : '';
+  const cx = x(cursor);
+  const cursorLine = `<line x1="${cx.toFixed(1)}" y1="${padT}" x2="${cx.toFixed(1)}" y2="${H - padB}" stroke="var(--evo-cursor,#9aa)" stroke-dasharray="3 3" stroke-width="1" vector-effect="non-scaling-stroke"/>`;
+  const cv = values[cursor];
+  const dot = Number.isFinite(cv) ? `<circle cx="${cx.toFixed(1)}" cy="${y(cv).toFixed(1)}" r="3" fill="${color}"/>` : '';
+  const yMax = `<text x="1" y="${(y(maxV) + 3).toFixed(1)}" class="evo-axis">${esc(fmtNum(maxV, opts.pct))}</text>`;
+  const yMin = `<text x="1" y="${y(0).toFixed(1)}" class="evo-axis">0</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" class="evo-svg" preserveAspectRatio="none">${area}${line}${cursorLine}${dot}${yMax}${yMin}</svg>`;
+}
+
+function evoCard(title, values, opts) {
+  opts = opts || {};
+  const cur = (values || [])[evoCursor];
+  const val = Number.isFinite(cur) ? fmtNum(cur, opts.pct) : '--';
+  return `<div class="evo-card"><div class="evo-card-head"><span>${esc(title)}</span><b>${esc(val)}</b></div>${
+    svgLine(values || [], { ...opts, cursor: evoCursor, grow: !evoFullHistory })
+  }</div>`;
+}
+
+function renderEvolution() {
+  if (!evoData || evoData.empty) {
+    $('evoCharts').innerHTML = '<div class="note">no timelapse data yet</div>';
+    return;
+  }
+  const s = evoData.series, days = evoData.days, hl = evoData.headline || {};
+  if ($('evoSpan')) $('evoSpan').textContent = `${evoData.span.start} → ${evoData.span.end} (${evoData.span.days}d)`;
+  const scrub = $('evoScrub');
+  scrub.max = String(days.length - 1);
+  if (evoCursor > days.length - 1) evoCursor = days.length - 1;
+  scrub.value = String(evoCursor);
+  $('evoDay').textContent = days[evoCursor];
+  $('evoHeadline').innerHTML = [
+    metric('Cards', hl.total_cards),
+    metric('Headwords', hl.total_roots),
+    metric('PWG coverage', (hl.coverage_pwg_pct ?? '--') + '%'),
+    metric('DCS coverage', (hl.coverage_dcs_pct ?? '--') + '%'),
+    metric('Rigor index', (hl.rigor_index_pct ?? '--') + '%'),
+    metric('Requeue rate', (hl.requeue_rate_pct ?? '--') + '%')
+  ].join('');
+  $('evoCharts').innerHTML = [
+    evoCard('Throughput — cards', s.cards_cumulative, { color: '#4da3ff', area: true }),
+    evoCard('Coverage — % of PWG', s.coverage_pwg_pct, { color: '#38b000', pct: true }),
+    evoCard('Academic rigor — %', s.rigor_index_pct, { color: '#b06bff', pct: true }),
+    evoCard('Quality — requeue rate %', s.requeue_rate_pct, { color: '#ff8c42', pct: true }),
+    evoCard('Cost — tokens/window', s.tokens_per_window, { color: '#e05260' }),
+    evoCard('Speed — minutes/window', s.minutes_per_window, { color: '#00b3a4' })
+  ].join('');
+  const ft = evoData.failure_typology || {};
+  const modes = ft.modes || [];
+  const modeMax = Math.max(1, ...modes.map(m => m.count));
+  $('evoFailures').innerHTML = modes.length ? modes.map(m =>
+    `<div class="evo-bar-row"><span class="evo-bar-label">${esc(m.mode)}</span><span class="evo-bar"><span style="width:${(100 * m.count / modeMax).toFixed(1)}%"></span></span><b>${esc(m.count)}</b></div>`
+  ).join('') : '<div class="note">no failures recorded</div>';
+  const trends = evoData.trends || [];
+  $('evoTrends').innerHTML = trends.length
+    ? `<ul>${trends.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`
+    : 'no trends computed yet';
+}
+
+function evoStep() {
+  if (!evoData || evoData.empty) return;
+  evoCursor = (evoCursor + 1) % evoData.days.length;
+  renderEvolution();
+}
+
+function evoSetPlaying(on) {
+  evoPlaying = on;
+  $('evoPlay').innerHTML = on ? '&#9208; Pause' : '&#9654; Play';
+  clearInterval(evoPlayTimer);
+  if (on) {
+    if (evoData && evoCursor >= evoData.days.length - 1) evoCursor = 0;
+    evoPlayTimer = setInterval(evoStep, 650);
+  }
+}
+
+function wireEvolutionControls() {
+  $('evoPlay').addEventListener('click', () => evoSetPlaying(!evoPlaying));
+  $('evoScrub').addEventListener('input', (e) => {
+    evoSetPlaying(false);
+    evoCursor = parseInt(e.target.value, 10) || 0;
+    renderEvolution();
+  });
+  $('evoCursorAll').addEventListener('change', (e) => {
+    evoFullHistory = e.target.checked;
+    renderEvolution();
+  });
+}
+
+async function refreshEvolution() {
+  try {
+    const res = await fetch('/api/evolution', { cache: 'no-store' });
+    if (res.ok) {
+      evoData = await res.json();
+      if (!evoInit && evoData && evoData.days && evoData.days.length) {
+        evoCursor = evoData.days.length - 1;
+        evoInit = true;
+      }
+      renderEvolution();
+    }
+  } catch (err) {
+    /* evolution is best-effort; the status poll reports health */
+  } finally {
+    setTimeout(refreshEvolution, 30000);
+  }
+}
+
+wireEvolutionControls();
 refresh();
+refreshEvolution();

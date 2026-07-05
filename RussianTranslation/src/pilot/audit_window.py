@@ -239,6 +239,17 @@ def run_prompt_semantic_audit(wf, protected, review_limit=25):
 def emit_audit_event(event_type, level='info', root=None, state=None, summary='', data=None):
     append_event('audit_window', event_type, level=level, root=root,
                  state=state, summary=summary, data=data or {})
+    # Auto-capture genuine failures (error-level) into the failure gallery for the
+    # dashboard's typology/trends. Best-effort + de-duped per (mode, root, day) so
+    # it never floods the curated post-mortems or breaks an audit.
+    if level == 'error':
+        try:
+            from failure_capture import append_failure
+            append_failure(mode=state or event_type or 'audit-failure',
+                           symptom=summary or event_type, severity='high',
+                           root=root, data={'event_type': event_type})
+        except Exception:
+            pass
 
 
 def main():
