@@ -105,6 +105,11 @@ def build_worklist(wordlist_path, manifest=MANIFEST, store=STORE, preverb=PREVER
     done = store_roots(store)
     verbs = verb_universe(preverb)
     pwg = dm.index('pwg')                                      # form_key -> PWG record bufs
+    # The 3 other local layers a headword can carry WITHOUT a PWG record (H206, per
+    # PWG_LAYER_COMBINATIONS.md / FINDINGS.md §61 — ~36% of the local union has zero
+    # PWG record). Indexed here (not just via dm.merged()) so a miss can be tagged with
+    # exactly which layer(s) it hit, cheaply, before any per-key merge() call.
+    OTHER_LAYERS = (('pw', dm.index('pw')), ('sch', dm.index('sch')), ('pwkvn', dm.index('pwkvn')))
 
     core_verbs, hits, misses = [], [], []
     for w in words:
@@ -118,6 +123,31 @@ def build_worklist(wordlist_path, manifest=MANIFEST, store=STORE, preverb=PREVER
                'iast': m.get('iast', ''), 'spread': m.get('spread', 0),
                'score': freq.get(w, {}).get('score'), 'band': freq.get(w, {}).get('band')}
         (hits if fk in pwg else misses).append(rec)
+
+    # H206 fix: a "PWG miss" is NOT automatically a non-word — check the 3 other local
+    # layers before writing it off. Split misses into:
+    #   - other_layer_hits: real record in PW/SCH/PWKVN, tagged with which layer(s)
+    #     (dropped-but-translatable candidates once the render path supports them —
+    #     see BLOCKED note below).
+    #   - true_misses: absent from EVERY local layer (genuinely not a CDSL word).
+    # NOTE (@DECIDE, see PIPELINE_HISTORY.md): `_pilot_gen_merged.gen_card()` hard-
+    # requires a non-empty PWG buf (`if not pwg_bufs: return None`) — the PWG portrait/
+    # microstructure step (`microstructure.portrait()`) is written against the PWG
+    # record shape specifically. There is currently NO card-building path for a
+    # PW/SCH/PWKVN-only headword, so `other_layer_hits` are surfaced here (tagged,
+    # counted, reported) but are deliberately NOT added to `runnable_remaining` — doing
+    # so would queue keys the existing runner cannot render, not fix the drop. They are
+    # promoted into the runnable queue only once that render-path gap is resolved.
+    other_layer_hits, true_misses = [], []
+    for r in misses:
+        fk = r['form_key']
+        layers = [code for code, idx in OTHER_LAYERS if fk in idx]
+        if layers:
+            r2 = dict(r)
+            r2['other_layers'] = layers
+            other_layer_hits.append(r2)
+        else:
+            true_misses.append(r)
 
     promoted = [h for h in hits if h['key1'] in done]
     remaining = [h for h in hits if h['key1'] not in done]
@@ -138,6 +168,16 @@ def build_worklist(wordlist_path, manifest=MANIFEST, store=STORE, preverb=PREVER
         'pwg_hits': len(hits),
         'pwg_misses': len(misses),
         'miss_keys': [r['key1'] for r in misses],
+        # H206: misses split by whether they carry a real record in another local
+        # layer. `other_layer_hits` are BLOCKED from `runnable_remaining` pending the
+        # gen_card() no-PWG render-path gap (see @DECIDE note above / PIPELINE_HISTORY.md)
+        # — surfaced here so they are visible and re-promotable the moment that gap
+        # closes, instead of silently vanishing into the undifferentiated miss count.
+        'other_layer_hit_count': len(other_layer_hits),
+        'other_layer_hits': [{'key1': r['key1'], 'iast': r['iast'], 'layers': r['other_layers']}
+                              for r in other_layer_hits],
+        'true_miss_count': len(true_misses),
+        'true_miss_keys': [r['key1'] for r in true_misses],
         'already_promoted': sorted(h['key1'] for h in promoted),
         'already_promoted_count': len(promoted),
         'runnable_remaining': [r['key1'] for r in remaining],
@@ -161,6 +201,10 @@ def write_report(payload, path):
     lines.append('| nominal candidates | %d |' % payload['nominal_candidates'])
     lines.append('| PWG hits | %d |' % payload['pwg_hits'])
     lines.append('| PWG misses | %d |' % payload['pwg_misses'])
+    lines.append('| — of which real in PW/SCH/PWKVN (H206, BLOCKED, see below) | %d |'
+                 % payload['other_layer_hit_count'])
+    lines.append('| — of which true misses (absent from every local layer) | %d |'
+                 % payload['true_miss_count'])
     lines.append('| nominal coverage | %.1f%% |' % payload['coverage_pct'])
     lines.append('| already promoted (cumulative dedup) | %d |' % payload['already_promoted_count'])
     lines.append('| **runnable (to translate)** | **%d** |' % payload['runnable_count'])
@@ -175,13 +219,29 @@ def write_report(payload, path):
                         '%.1f' % r['score'] if r['score'] is not None else '—',
                         r['band'] if r['band'] is not None else '—', r['spread']))
     lines.append('')
-    if payload['miss_keys']:
-        lines.append('## PWG misses (%d) — not a PWG headword under their form-key' % payload['pwg_misses'])
+    if payload['other_layer_hits']:
+        lines.append('## PWG misses WITH a real PW/SCH/PWKVN record (%d) — H206, BLOCKED pending render-path fix'
+                     % payload['other_layer_hit_count'])
         lines.append('')
-        lines.append('These are core lemmas whose `form_key` does not resolve to a PWG headword — a')
-        lines.append('different stem/homonym key, or genuinely absent. Review before assuming a gap.')
+        lines.append('These lemmas have NO PWG headword under their `form_key` but DO have a real record')
+        lines.append('in another local layer — dropped-but-translatable, not non-words. They are NOT yet')
+        lines.append('in `runnable_remaining`: `_pilot_gen_merged.gen_card()` hard-requires a non-empty PWG')
+        lines.append('buf and returns `None` otherwise, so today\'s runner cannot build a card for a')
+        lines.append('PW/SCH/PWKVN-only headword. See `PIPELINE_HISTORY.md` and the standing `@DECIDE`.')
         lines.append('')
-        lines.append('> ' + ', '.join(payload['miss_keys']))
+        lines.append('| key1 | IAST | layer(s) |')
+        lines.append('|---|---|---|')
+        for r in payload['other_layer_hits']:
+            lines.append('| %s | %s | %s |' % (r['key1'], r['iast'], '/'.join(r['layers'])))
+        lines.append('')
+    if payload['true_miss_keys']:
+        lines.append('## True misses (%d) — absent from every local layer' % payload['true_miss_count'])
+        lines.append('')
+        lines.append('These are core lemmas whose `form_key` resolves to NO local layer (PWG, PW, SCH,')
+        lines.append('or PWKVN) — a different stem/homonym key, or genuinely absent. Review before')
+        lines.append('assuming a gap.')
+        lines.append('')
+        lines.append('> ' + ', '.join(payload['true_miss_keys']))
         lines.append('')
     lines.append('_Dr. Mārcis Gasūns_')
     with open(path, 'w', encoding='utf-8') as f:
@@ -206,6 +266,10 @@ def main():
           % (payload['source'], payload['total_lemmas'], payload['core_verbs_count'],
              payload['nominal_candidates'], payload['pwg_hits'], payload['pwg_misses'],
              payload['coverage_pct'], payload['already_promoted_count'], payload['runnable_count']))
+    if payload['other_layer_hit_count']:
+        print('  H206: %d of those misses have a real PW/SCH/PWKVN record (BLOCKED from RUNNABLE — '
+              'see @DECIDE in PIPELINE_HISTORY.md); %d are true misses (absent everywhere)'
+              % (payload['other_layer_hit_count'], payload['true_miss_count']))
     print('worklist written: %s' % OUT)
     if args.report:
         write_report(payload, args.report)
