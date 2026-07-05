@@ -9,6 +9,7 @@ only. It does not require a fresh Max run.
 import hashlib
 import datetime
 import json
+import math
 import os
 import shutil
 import subprocess
@@ -1578,16 +1579,19 @@ def test_perf_preflight_dense_presplit():
 
 
 def test_perf_preflight_presplit_counts_fragments_not_one():
-    """agent_expected_after_tm for a presplit giant must be its true fragment-group count,
-    not 1 — the old len(presplit) formula underestimated vid's real 102-agent run as 13."""
+    """agent_expected_after_tm for a presplit giant must be its true fragment-GROUP count,
+    not 1 — the old len(presplit) formula underestimated vid's real 102-agent run as 13.
+    H189: the group count is now LOWER than the pre-H189 per-12-citation grouping (the
+    presplit lane amortizes at PRESPLIT_GROUP_CITE_BUDGET=60), but it must still be >1 (a
+    150+-<ls> giant does not collapse to a single call) — that's the invariant this guards."""
     key = 'gam~~h0_00_pwg00'
     proc = run([sys.executable, 'src/pilot/perf_preflight.py', 'gam',
                 '--keys=%s' % key, '--no-tm', '--json'], 0)
     report = json.loads(proc.stdout)
     if key not in report.get('presplit_keys', []):
         fail('fixture card must still route to presplit')
-    if report.get('agent_expected_after_tm', 0) < 5:
-        fail('a 150+-<ls> presplit giant needs many fragment calls, not ~1 — '
+    if report.get('agent_expected_after_tm', 0) < 2:
+        fail('a 150+-<ls> presplit giant needs several fragment-group calls, not ~1 — '
              'got agent_expected_after_tm=%r' % report.get('agent_expected_after_tm'))
 
 
@@ -1618,14 +1622,21 @@ def test_perf_preflight_multi_root_matrix_and_order():
         fail('han should be recognized as fully cached / zero-agent in the local TM preflight')
     if 'han' not in matrix.get('recommended_order', {}).get('skip_cached', []):
         fail('fully cached roots must be listed in skip_cached')
-    # vid and as each carry presplit giants (fragment-lane cards), so their true
-    # agent_expected_after_tm is dozens, not the ~13-14 the pre-fix len(presplit) formula
-    # reported (the real 2026-07-04 vid run spent 102 agents) — they belong in defer, not
-    # run_first, once the estimate reflects real fragment-call counts.
-    deferred = matrix.get('recommended_order', {}).get('defer', [])
-    if 'vid' not in deferred or 'as' not in deferred:
-        fail('presplit-giant roots should defer-calibrate once agent_expected_after_tm '
-             'reflects real fragment-call counts, not the old len(presplit) undercount')
+    # `as` carries presplit giants and is uncached in the local TM, so its true
+    # agent_expected_after_tm must EXCEED its presplit-key count (the pre-fix len(presplit)
+    # formula undercounted vid's real 102-agent run as 13) and it defers rather than
+    # run_first. H189 note: the per-call count is now lower than pre-H189 (the presplit lane
+    # amortizes at PRESPLIT_GROUP_CITE_BUDGET), but the no-undercount invariant still holds.
+    # vid is NOT asserted: its classification depends on how much of it the local TM has
+    # cached (a mostly-cached vid is legitimately cheap / run-now), same live-state caveat
+    # as han's skip-cached above.
+    as_r = reports['as']
+    if as_r.get('agent_expected_after_tm', 0) <= len(as_r.get('presplit_keys', [])):
+        fail('a presplit-giant root must count real fragment-GROUP calls, exceeding its '
+             'len(presplit) — got agents=%r presplit=%r'
+             % (as_r.get('agent_expected_after_tm'), len(as_r.get('presplit_keys', []))))
+    if 'as' not in matrix.get('recommended_order', {}).get('defer', []):
+        fail('an uncached presplit-giant root should defer-calibrate, not run_first')
 
 
 def test_perf_preflight_fragment_tm_empty_warning():
@@ -2204,6 +2215,170 @@ def test_kill_gate_wired():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_group_by_budget_count_cap():
+    """H189: _group_by_budget's count_cap closes a group once it holds count_cap items
+    regardless of summed size, so a run of many tiny (size-1) fragments can't pack an
+    unbounded COUNT (== senses to emit) into one presplit-lane call. Default (no cap)
+    keeps the size-only behavior every pre-H189 caller relied on."""
+    import gen_opt_harness2 as gh
+    items = [{'w': 1}] * 40
+    sizer = lambda it: it['w']
+    # size-only: 40 weight-1 items at budget 60 = 1 group (nothing caps count)
+    if len(gh._group_by_budget(items, sizer, 60)) != 1:
+        fail('size-only grouping of 40 size-1 items at budget 60 must be a single group')
+    # count_cap=18: 40 -> ceil(40/18) = 3 groups even though total size (40) < budget (60)
+    capped = gh._group_by_budget(items, sizer, 60, count_cap=18)
+    if len(capped) != 3 or any(len(g) > 18 for g in capped):
+        fail('count_cap=18 must yield 3 groups of <=18 for 40 items; got sizes %r'
+             % [len(g) for g in capped])
+
+
+def test_presplit_card_uses_amortized_grouping():
+    """H189 core fix: a card routed to the presplit-PRIMARY lane is grouped at
+    PRESPLIT_GROUP_CITE_BUDGET/PRESPLIT_GROUP_SENSE_CAP (amortizing the ~27k framework
+    across many fragments per call), NOT the conservative SELFHEAL_GROUP_BUDGET. A
+    30-sense/1-<ls> card must group by the sense cap (ceil(30/18)=2), not by the old
+    per-12-citation budget (ceil(30/12)=3) — proving fewer, larger fragment-lane calls."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    senses = '\n'.join('<div n="1">— %d〉 {%%Bedeutung %d%%}.' % (i, i)
+                       for i in range(1, 31))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n' + senses + '\n')
+    key = 'zz~~synthetic_amortize'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            frags = json.loads(_re.search(r'^const FRAGS = (\{.*?\})\nconst PHF', js, _re.S | _re.M).group(1))
+            groups = frags.get(key) or []
+            if not (1 < len(groups) <= 2):
+                fail('a 30-sense presplit card must group into 2 amortized fragment calls '
+                     '(sense cap 18), not the old ~3 at budget 12; got %d groups' % len(groups))
+            if any(len(g) > gh.PRESPLIT_GROUP_SENSE_CAP for g in groups):
+                fail('no presplit group may exceed PRESPLIT_GROUP_SENSE_CAP fragments')
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_kill_gate_recalibrated_envelope():
+    """H189 (MG: '>~60s per subcard suspicious; >3 min unacceptable'): the kill envelope
+    must be the tightened one — floor <= 45s, ceil <= 180s (3 min) — never a regression
+    back to the 2 min floor / 8 min ceiling that let pril10_w1 fragments run 6.5 min."""
+    import gen_opt_harness2 as gh
+    if gh.KILL_FLOOR_MS > 45000:
+        fail('KILL_FLOOR_MS must be <= 45000 (was 120000) so a tiny subcard is killed '
+             'near MG\'s ~60s suspicion line; got %d' % gh.KILL_FLOOR_MS)
+    if gh.KILL_CEIL_MS > 180000:
+        fail('KILL_CEIL_MS must be <= 180000 (3 min hard ceiling, was 480000); got %d'
+             % gh.KILL_CEIL_MS)
+
+
+def test_budget_kill_switch_wired():
+    """H189: the harness must carry a window-level budget kill-switch — count agent()
+    calls and abort (requeue remaining) once past MAX_AGENTS — so a runaway retry/binary-
+    split cascade self-terminates instead of running to a manual kill (pril10_w1: 230
+    agents, 42M tokens, $80 before MG stopped it). MAX_AGENTS is derived from the preflight
+    estimate: max(floor, ceil(expected * factor))."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n'
+           '<div n="1">— 1〉 {%verlassen%} <ls>Y. 2</ls>.\n')
+    key = 'zz~~synthetic_switch'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            for tok in ('const KILL_SWITCH = true', 'const MAX_AGENTS =',
+                        'class BudgetExceeded', 'AGENTS_SPENT++', 'BUDGET_TRIPPED'):
+                if tok not in js:
+                    fail('budget kill-switch token %r missing from the harness' % tok)
+            # BudgetExceeded must NOT be treated as a kill (a kill routes to MORE fragment
+            # calls — the opposite of a budget stop).
+            if _re.search(r'isKill\s*=.*BudgetExceeded', js):
+                fail('BudgetExceeded must not be classified as a kill (would spawn more agents)')
+            meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
+            expected = meta.get('agent_expected_after_tm', 0)
+            want = max(gh.MAX_AGENTS_FLOOR, int(math.ceil(expected * gh.MAX_AGENTS_FACTOR)))
+            if meta.get('max_agents') != want:
+                fail('meta.max_agents must be max(floor, ceil(expected*factor))=%d; got %r'
+                     % (want, meta.get('max_agents')))
+            # summary must expose the trip flag for the requeue path
+            if 'budget_kill_switch_tripped' not in js:
+                fail('run summary must expose budget_kill_switch_tripped so a self-aborted '
+                     'window\'s null cards are requeued, not read as defective')
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_harness_size_guard():
+    """H189 / F-harness-size-limit: the generator must surface an oversize harness at
+    generation with a concrete key-disjoint split, so the Workflow scriptPath cap is not
+    discovered at launch (pril10_w1: 1.03 MB, unlaunchable). Small harness -> no split."""
+    import gen_opt_harness2 as gh
+    keys = ['k%d' % i for i in range(9)]
+    over, lines = gh.harness_size_report('kAla', keys, True, 1_030_000, 480_000)
+    if not over or not lines:
+        fail('a 1.03 MB harness over the 480 KB cap must report oversize with a split')
+    split_cmds = [ln for ln in lines if '--keys=' in ln]
+    if len(split_cmds) < 2:
+        fail('oversize report must suggest >=2 key-disjoint sub-windows; got %d' % len(split_cmds))
+    # every original key must appear in exactly one sub-window (disjoint, complete)
+    seen = []
+    for ln in split_cmds:
+        seen += ln.split('--keys=')[1].split(' --out=')[0].split(',')
+    if sorted(seen) != sorted(keys):
+        fail('the suggested split must partition the keys exactly once each; got %r' % seen)
+    under, lines2 = gh.harness_size_report('kAla', keys, True, 100_000, 480_000)
+    if under or lines2:
+        fail('a harness under the cap must not report oversize')
+
+
+def test_perf_preflight_cost_gate():
+    """H189: the preflight cost gate must FLAG a window whose estimated $ per translated
+    card exceeds the ceiling (a window of kAla-class monsters — exactly pril10_w1) and must
+    PASS a cheap high-card-count window (e.g. `as`: many cards, low per-card cost). The
+    per-card ratio is the load-bearing, model-independent signal."""
+    import perf_preflight as pp
+    # pril10_w1-shape: 8 cards, ~69 fragment-group agents (post-fix) -> ~$4/card >> ceiling
+    monster = {'agent_expected_after_tm': 69, 'selected_keys': ['k%d' % i for i in range(8)],
+               'tm_cards': 0, 'degenerate_passthrough_keys': []}
+    cg = pp.cost_estimate(monster)
+    if not cg['over_ceiling'] or cg['est_cost_per_card_usd'] <= cg['per_card_ceiling_usd']:
+        fail('a window of 8 monster cards costing ~$4/card must trip the cost gate; got %r' % cg)
+    # cheap high-count window: 98 cards, 24 agents -> pennies/card -> passes
+    cheap = {'agent_expected_after_tm': 24, 'selected_keys': ['k%d' % i for i in range(98)],
+             'tm_cards': 0, 'degenerate_passthrough_keys': []}
+    if pp.cost_estimate(cheap)['over_ceiling']:
+        fail('a large but cheap-per-card window must NOT trip the cost gate')
+    # fully cached window: 0 agents -> $0 -> never gated
+    cached = {'agent_expected_after_tm': 0, 'selected_keys': ['k1'], 'tm_cards': 1,
+              'degenerate_passthrough_keys': []}
+    if pp.cost_estimate(cached)['over_ceiling']:
+        fail('a fully-cached (zero-agent) window must never trip the cost gate')
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -2232,6 +2407,12 @@ def main():
         test_selfheal_fragment_si_threaded_and_tags_normalized,
         test_sense_dense_card_presplit,
         test_kill_gate_wired,
+        test_group_by_budget_count_cap,
+        test_presplit_card_uses_amortized_grouping,
+        test_kill_gate_recalibrated_envelope,
+        test_budget_kill_switch_wired,
+        test_harness_size_guard,
+        test_perf_preflight_cost_gate,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
