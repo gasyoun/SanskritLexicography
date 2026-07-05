@@ -144,7 +144,12 @@ def provenance(entry, subkey, model_version):
 
 def rows_for(subkey, entry, review_status, model_version):
     card = entry['card']
-    key1 = entry['meta'].get('root')               # the join key into assembled_cards.jsonl
+    meta = entry['meta']
+    if meta.get('nominal'):
+        keymap = meta.get('nominal_keymap') or {}
+        key1 = keymap.get(subkey) or keymap.get(card.get('key1')) or card.get('key1') or subkey.split('~~', 1)[0]
+    else:
+        key1 = meta.get('root')                    # the join key into assembled_cards.jsonl
     prov = provenance(entry, subkey, model_version)
     for rec in card.get('records') or []:
         for sense in rec.get('senses') or []:

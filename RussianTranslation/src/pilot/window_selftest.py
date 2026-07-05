@@ -7,6 +7,7 @@ only. It does not require a fresh Max run.
   python src/pilot/window_selftest.py
 """
 import hashlib
+import datetime
 import json
 import os
 import shutil
@@ -1687,6 +1688,132 @@ def test_verb_worklist_excludes_missing_rootmaps():
             fail('verb_worklist byte fields must distinguish backlog from runnable queue')
 
 
+def test_coordinator_state_dashboard_and_cap():
+    import coordinator
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            state = coordinator.default_state()
+            for i in range(3):
+                state['leases'].append({
+                    'id': 'lease%d' % i,
+                    'lane': 'lane%d' % i,
+                    'kind': 'verb',
+                    'owner': 'selftest',
+                    'target': 'root%d' % i,
+                    'state': 'prepared',
+                    'artifact_dir': os.path.join(tmp, 'artifacts', 'lease%d' % i),
+                })
+            coordinator.save_state(state)
+            loaded = coordinator.load_state()
+            if len(coordinator.active_translation_leases(loaded)) != 3:
+                fail('coordinator must count exactly three active translation leases')
+            dash = json.load(open(os.path.join(tmp, 'dashboard.json'), encoding='utf-8'))
+            if dash.get('schema') != coordinator.DASHBOARD_SCHEMA:
+                fail('coordinator dashboard schema missing')
+            if dash.get('active_translation_leases') != 3 or dash.get('translation_limit') != 3:
+                fail('coordinator dashboard must expose cap state')
+            state['leases'][0]['state'] = 'promoted'
+            coordinator.save_state(state)
+            if len(coordinator.active_translation_leases(coordinator.load_state())) != 2:
+                fail('promoted leases must not count against the active LLM cap')
+        finally:
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+
+
+def test_coordinator_lock_replaces_stale_dead_owner():
+    import coordinator
+    with tempfile.TemporaryDirectory() as tmp:
+        lock_path = os.path.join(tmp, '.state.lock')
+        os.mkdir(lock_path)
+        old_ts = (datetime.datetime.now(datetime.timezone.utc) -
+                  datetime.timedelta(hours=2)).isoformat(timespec='seconds').replace('+00:00', 'Z')
+        with open(os.path.join(lock_path, 'owner.json'), 'w', encoding='utf-8') as f:
+            json.dump({'pid': 999999999, 'created_at': old_ts}, f)
+        with coordinator.DirLock(lock_path, ttl_seconds=1):
+            if not os.path.exists(os.path.join(lock_path, 'owner.json')):
+                fail('coordinator lock did not recreate owner metadata')
+
+
+def test_coordinator_defect_requeue_uses_no_tm_and_out():
+    import requeue_from_audit as rq
+
+    with tempfile.TemporaryDirectory() as tmp:
+        inp = os.path.join(tmp, 'input')
+        os.makedirs(inp)
+        with open(os.path.join(inp, 'a.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('raw')
+        rqfile = os.path.join(tmp, 'requeue.defect.keys.txt')
+        with open(rqfile, 'w', encoding='utf-8') as f:
+            f.write('a\n')
+        out = os.path.join(tmp, 'run_pilot_wf.requeue.js')
+
+        captured = {}
+
+        class FakeProc:
+            returncode = 0
+            stdout = 'wrote fake harness'
+            stderr = ''
+
+        def fake_run(cmd, **_kwargs):
+            captured['cmd'] = cmd
+            return FakeProc()
+
+        old_inp, old_run = rq.INP, rq.subprocess.run
+        old_deny = rq.append_tm_denylist
+        old_argv = sys.argv[:]
+        rq.INP = inp
+        rq.subprocess.run = fake_run
+        rq.append_tm_denylist = lambda *_args, **_kwargs: 1
+        sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--defect',
+                    '--nominal', '--no-grammar', '--requeue-file=%s' % rqfile,
+                    '--out=%s' % out]
+        try:
+            rq.main()
+        finally:
+            rq.INP = old_inp
+            rq.subprocess.run = old_run
+            rq.append_tm_denylist = old_deny
+            sys.argv = old_argv
+        cmd = captured.get('cmd') or []
+        if '--no-tm' not in cmd:
+            fail('defect requeue must pass --no-tm')
+        if '--nominal' not in cmd or '--no-grammar' not in cmd:
+            fail('nominal requeue flags must pass through')
+        if '--out=%s' % out not in cmd:
+            fail('coordinator requeue must use an explicit harness output path')
+
+
+def test_promote_nominal_key1():
+    import promote_final_cards as pfc
+    entry = {
+        'card': {'key1': 'agni', 'iast': 'agni', 'records': [
+            {'h': 'agni', 'senses': [{'tag': '1', 'russian': 'огонь', 'german': 'Feuer'}]},
+        ]},
+        'meta': {'nominal': True, 'root': 'nominal_batch',
+                 'input_hashes': {'agni': {'raw_sha256': 'r', 'portrait_sha256': 'p'}}},
+        'wf_file': 'wf_output.nominal.json',
+    }
+    rows = list(pfc.rows_for('agni', entry, 'ai_translated', pfc.SELFTEST_MODEL_VERSION))
+    if not rows or rows[0]['key1'] != 'agni':
+        fail('nominal promotion must preserve the assembled-card key1')
+    mapped = {
+        'card': {'key1': 'af_rin', 'records': [
+            {'h': 'afRin', 'senses': [{'tag': '1', 'russian': 'свободный', 'german': 'frei'}]},
+        ]},
+        'meta': {'nominal': True, 'root': 'nominal_batch',
+                 'nominal_keymap': {'af_rin': 'afRin'}},
+        'wf_file': 'wf_output.nominal.json',
+    }
+    rows = list(pfc.rows_for('af_rin', mapped, 'ai_translated', pfc.SELFTEST_MODEL_VERSION))
+    if not rows or rows[0]['key1'] != 'afRin':
+        fail('nominal promotion must map safe runtime keys back to assembled key1')
+
+
 def test_calibration_arm_set_conservative_emit_only():
     with tempfile.TemporaryDirectory() as tmp:
         out_dir = os.path.join(tmp, 'perf_smoke_preflight')
@@ -2061,6 +2188,10 @@ def main():
         test_perf_preflight_multi_root_matrix_and_order,
         test_perf_preflight_fragment_tm_empty_warning,
         test_verb_worklist_excludes_missing_rootmaps,
+        test_coordinator_state_dashboard_and_cap,
+        test_coordinator_lock_replaces_stale_dead_owner,
+        test_coordinator_defect_requeue_uses_no_tm_and_out,
+        test_promote_nominal_key1,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
