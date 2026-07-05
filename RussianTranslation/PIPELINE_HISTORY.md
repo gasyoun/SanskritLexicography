@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 04-07-2026_
+_Created: 04-07-2026 · Last updated: 05-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -251,6 +251,55 @@ recovery mechanism of its own — flagged as a follow-up, not yet fixed.
    single-sense giant head (BU/yuj/as/sTA/i in the H151 queue are candidates)
    can hit the same tag-collision pattern — worth a SENSE-DUPE re-check on
    promoted cards once the fix has run.
+
+### Phase 9 — nominal-side PWG-miss gap fixed in the worklist; render-path gap flagged as `@DECIDE` (H206, 07-05)
+
+[`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md)
+measured that **~36% of the local headword union carries zero PWG record**
+(FINDINGS.md §61) — PWG does not define the headword universe alone; PW-only
+headwords alone outnumber PWG-only ones 6-to-1. A follow-up code read of
+[`src/pilot/nominals_worklist.py`](src/pilot/nominals_worklist.py) confirmed
+this was an active drop, not just a theoretical risk: `build_worklist()`
+split nominal candidates into `hits` (present in `dm.index('pwg')`) and
+`misses` (everything else), and only `hits` ever fed `runnable_remaining` —
+`misses` were reported in an aggregate `pwg_misses` count and then silently
+excluded from the translation queue forever, even when a miss carried a real
+PW, SCH, or PWKVN record (translatable content, not a non-word).
+
+**Damage-scope count** — cross-checking every `miss_keys` entry from the 3
+already-run nominal wordlists (Приложение 5, Приложение 10, Сборное ядро)
+against `dm.index('pw'|'sch'|'pwkvn')`: of **1,743 total PWG misses**, **416**
+(24%) DO have a real record in another local layer — dropped-but-translatable
+— and 1,327 are true misses (absent from every local layer). Deduplicated
+across the 3 wordlists (Сборное ядро overlaps pril5/pril10), that's **232
+unique lemmas**.
+
+**Fixed:** `build_worklist()` now splits `misses` into `other_layer_hits`
+(tagged with which of `pw`/`sch`/`pwkvn` they hit) and `true_misses` (absent
+everywhere), both surfaced in the payload and the committed `.coverage.md`
+reports, instead of one undifferentiated `miss_keys` bucket.
+
+**NOT fixed — flagged as a new `@DECIDE`, not forced:** `other_layer_hits`
+are deliberately NOT added to `runnable_remaining`. `_pilot_gen_merged.gen_card()`
+hard-requires a non-empty PWG buf (`pwg_bufs = pwg_idx.get(fk, []); if not
+pwg_bufs: return None`) — the PWG portrait/microstructure step
+(`microstructure.portrait()`) is written specifically against the PWG record
+shape (header/sense-tree conventions), and there is no card-building path
+today for a PW/SCH/PWKVN-only headword (no PWG "MAIN ENTRY" section to anchor
+the portrait, sense tree, or grammar/POS extraction). Queuing these into
+`runnable_remaining` as-is would just feed the runner keys it silently
+treats as `MISSING in PWG` — papering over the drop with a different failure
+mode, not fixing it. `dict_merge.py` itself is unaffected (`merged()` already
+handles a headword with any subset of layers correctly; the bug was only in
+how the worklist and the card-builder *consume* it).
+
+The 232 deduplicated lemmas are held in the committed
+[`src/pilot/lexical_cores/pwg_miss_backfill_queue.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lexical_cores/pwg_miss_backfill_queue.md)
+backfill queue (key1/IAST/layer(s)/source wordlist(s)), ready to promote the
+moment a `@DECIDE` rules how to render a no-PWG card (e.g., a PW/SCH/PWKVN-
+rooted portrait variant of `gen_card()`, or a simpler raw-only card format for
+this minority case). **Do not rediscover this as a fresh bug** — the worklist
+fix is done; only the render path is open.
 
 ## Recurring failure patterns (read this before assuming something new is broken)
 
