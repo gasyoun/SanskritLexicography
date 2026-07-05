@@ -37,7 +37,7 @@ Five fixes landed (all lang-agnostic → SHARED); all pinned by
 2. **Kill-gate recalibration** — floor 120 s → 45 s, ceil 480 s → 180 s (MG: ">60 s
    suspicious, >3 min unacceptable").
 3. **Live budget kill-switch** — the window self-aborts and requeues once agent() calls
-   exceed `MAX_AGENTS = max(40, ⌈expected × 3⌉)`.
+   exceed `MAX_AGENTS = ⌈expected × 3⌉ + 10`.
 4. **Harness-size guard** — the generator warns + prints an exact key-disjoint split when
    the harness exceeds 480 KB (the `F-harness-size-limit` scriptPath cap).
 5. **Preflight cost gate** — [`perf_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/perf_preflight.py)
@@ -147,7 +147,7 @@ classified SHARED in [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexic
 |---|---|---|---|
 | B | **presplit-lane re-batching** | presplit-primary cards group at `PRESPLIT_GROUP_CITE_BUDGET=60` **and** `PRESPLIT_GROUP_SENSE_CAP=18` (both under the proven-safe whole-card 90/20 ceiling), via `_group_by_budget(..., count_cap=)`. Heal-of-a-failed-whole-card keeps the conservative budget 12. | `pril10_w1` **174 → 69 groups**; real `gam` giants **18 → 6 agents**. Framework re-cache ~4.7 M → ~1.9 M tok. |
 | C1 | **kill-gate recalibration** | `FLOOR 120 s → 45 s`, `CEIL 480 s → 180 s`, `BASE 30 s → 20 s`. Kill → the abandoned call's cards fall to the fragment lane / binary-split (**requeued, never dropped**). | tiny fragment hard-killed ~60–70 s; nothing past 3 min. |
-| C4 | **live budget kill-switch** | harness counts agent() calls; past `MAX_AGENTS = max(40, ⌈expected × 3⌉)` every call throws `BudgetExceeded` (0 tokens, not an `isKill` → no more fragment spawns); remaining cards null with a `budget-kill-switch` reason for the normal requeue. `summary.budget_kill_switch_tripped` surfaces it. | a 174-estimate window aborts at ~522 calls; the real 230 would have been well within, but a true runaway now self-terminates instead of a manual kill. |
+| C4 | **live budget kill-switch** | harness counts agent() calls; past `MAX_AGENTS = ⌈expected × 3⌉ + 10` every call throws `BudgetExceeded` (0 tokens, not an `isKill` → no more fragment spawns); remaining cards null with a `budget-kill-switch` reason for the normal requeue. `summary.budget_kill_switch_tripped` surfaces it. | a 174-estimate window aborts at ~522 calls; the real 230 would have been well within, but a true runaway now self-terminates instead of a manual kill. |
 | C3 | **harness-size guard** | at write time, if the harness > `MAX_HARNESS_BYTES = 480 KB` the generator prints a concrete key-disjoint split (N sub-windows, exact `--keys=` each); `--refuse-oversize` makes it a hard error. | surfaces `F-harness-size-limit` at generation, not launch. |
 | C2 | **preflight cost gate** | `perf_preflight.py` estimates tokens/$ (184 K tok, $0.347/agent from this run, ×1.35 realism) and a **per-translated-card cost**; flags `OVER-CEILING` above `$2/card` or `$25/window`; `--refuse-over-cost` exits nonzero. | flags `pril10_w1` (~$4/card **even post-fix**) → routed to a human-budgeted lane; passes cheap high-count windows (`as`: $0.11/card). |
 
