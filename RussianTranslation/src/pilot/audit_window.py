@@ -252,6 +252,8 @@ def main():
                     help='fixture/self-test mode: write status+report to a throwaway scratch dir, '
                          'never touching the live singleton window_status.json / '
                          'audit_window.report.json (auto-enabled for a wf_output under the OS temp dir)')
+    ap.add_argument('--out-dir',
+                    help='write report/status/requeue artifacts to this directory instead of src/pilot/output')
     ap.add_argument('--judge-sample-rate', type=float, default=0.10,
                     help='deterministic clean-key semantic judge sample rate (default: 0.10)')
     ap.add_argument('--judge-sample-min', type=int, default=5,
@@ -284,7 +286,8 @@ def main():
     # FL8 fixture guard: a self-test / temp-file audit writes its status+report to a scratch
     # dir so it can never clobber the live singletons; a real repo run writes OUT as before.
     ephemeral = args.ephemeral or _under_tempdir(wf)
-    report_out_dir = tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None
+    report_out_dir = os.path.abspath(args.out_dir) if args.out_dir else (
+        tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None)
 
     _payload, wf_meta, results, keys, null_cards = workflow_payload(wf)
     emit_audit_event(

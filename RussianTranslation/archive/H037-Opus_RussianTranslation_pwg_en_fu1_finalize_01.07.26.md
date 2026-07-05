@@ -90,7 +90,7 @@ so the dashboard reflects FU1-EN per-root coverage/flags. Reuse `dashboard_event
 
 ### 4. THEN Phase 2 (validation) — only after 1–3
 Per the runbook
-[`HANDOFF_2026-06-30_pwg_en_fu1_run.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/HANDOFF_2026-06-30_pwg_en_fu1_run.md)
+[`H034-Opus_RussianTranslation_pwg_en_fu1_run_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/H034-Opus_RussianTranslation_pwg_en_fu1_run_30.06.26.md)
 §Phase 2 and the locked plan
 [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/FU1_PLAN.md):
 ```sh

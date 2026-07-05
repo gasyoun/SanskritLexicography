@@ -38,7 +38,7 @@ is acceptable for these.) Same per-root loop as Step 2.
 ## Step 2 — the per-root loop (THIS chat = SLICE A, 26 roots ≈ $65, ~2.5 h)
 
 **Parallelization:** the 52 remaining roots are split into two disjoint slices so a second
-chat (`HANDOFF_2026-06-29_scope_c_freq_queue.md`) can run concurrently. **This chat owns
+chat (`H030-Sonnet_RussianTranslation_scope_c_freq_queue_29.06.26.md`) can run concurrently. **This chat owns
 SLICE A only** (don't touch Slice C):
 
 ```

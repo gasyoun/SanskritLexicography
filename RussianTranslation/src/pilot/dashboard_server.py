@@ -29,6 +29,7 @@ def combined_status(root, refresh_ms):
         'audit_report': os.path.join(out_dir, 'audit_window.report.json'),
         'window_ledger': os.path.join(out_dir, 'window_ledger.jsonl'),
         'dashboard_events': os.path.join(out_dir, 'dashboard_events.jsonl'),
+        'coordinator': os.path.join(out_dir, 'coordinator', 'dashboard.json'),
         'gate_snapshot': os.path.join(release_dir, 'gate_status_snapshot.json'),
         'requeue': os.path.join(out_dir, 'requeue.keys.txt'),
         'judge_sample': os.path.join(out_dir, 'judge_sample.keys.txt'),
@@ -36,6 +37,7 @@ def combined_status(root, refresh_ms):
     window_status = window_common.read_json(paths['window_status'])
     audit_report = window_common.read_json(paths['audit_report'])
     gate_snapshot = window_common.read_json(paths['gate_snapshot'])
+    coordinator = window_common.read_json(paths['coordinator'])
     requeue_result = window_common.read_lines_result(paths['requeue'])
     judge_sample_result = window_common.read_lines_result(paths['judge_sample'])
     requeue = [line for line in requeue_result['lines'] if line.strip()]
@@ -55,6 +57,7 @@ def combined_status(root, refresh_ms):
         },
         'ledger': window_common.tail_jsonl(paths['window_ledger'], limit=30),
         'events': read_events(limit=80, log_path=paths['dashboard_events']),
+        'coordinator': coordinator,
         'freshness': {name: window_common.file_info(path) for name, path in paths.items()},
     }
 

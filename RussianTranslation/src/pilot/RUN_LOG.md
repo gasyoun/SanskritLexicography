@@ -140,7 +140,7 @@ hash maps), then a single `audit_window.py --root i`:
 
 ## 2026-06-29 — Stage A: sTA
 
-Operator: Claude Code Max. Handoff: [`../../HANDOFF_2026-06-29_claude_code_max.md`](../../HANDOFF_2026-06-29_claude_code_max.md).
+Operator: Claude Code Max. Handoff: [`../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`](../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
 
 ### Round 1 — full window (123 cards)
 

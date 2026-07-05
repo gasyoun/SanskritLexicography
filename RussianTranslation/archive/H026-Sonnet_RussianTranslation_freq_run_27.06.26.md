@@ -98,5 +98,5 @@ was 640 k; sTA/BU/gam are larger). Options:
 ## Track B (unchanged, secondary) — flagship sign-offs still open
 
 `agni` + `akṣara` human sign-off gates remain (see the prior handoff
-[`HANDOFF_2026-06-25_pwg_ru_max.md`](HANDOFF_2026-06-25_pwg_ru_max.md) Track B).
+[`H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md`](H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md) Track B).
 Not blocking the freq run.
