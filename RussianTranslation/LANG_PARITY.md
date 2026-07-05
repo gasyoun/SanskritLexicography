@@ -296,7 +296,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "6625839096635d51de924c870d89e26b0f211b7182b42715497535fd682e9943",
+      "src/promote_final_cards.py": "171b9c148a2c18da930959ade98da477c9a6ccbb192e7c88ff0d296d89b31849",
       "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
     }
   },
@@ -353,7 +353,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "6625839096635d51de924c870d89e26b0f211b7182b42715497535fd682e9943",
+      "src/promote_final_cards.py": "171b9c148a2c18da930959ade98da477c9a6ccbb192e7c88ff0d296d89b31849",
       "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
     }
   },
@@ -374,6 +374,25 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "bc0c9a981a5becb70e030cff2dfe018ebd118f0e2f0cc4872c11c70595adc231",
       "src/pilot/window_selftest.py": "30be0b838e7fe3a070b20749929d866e221df4c4aec52132d7dd42f54fb1c791"
+    }
+  },
+  {
+    "id": "layer_field_on_promoted_rows",
+    "mechanism": "promote_final_cards.py writes an explicit `layer` field (pwg/pw/sch/pwkvn/nws, via dict_merge.layer_of parsing the sub-card key) on every promoted store row, so the deferred addenda re-glue/typology (H180) can group by layer without re-parsing keys",
+    "files": [
+      "src/promote_final_cards.py",
+      "src/dict_merge.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/promote_final_cards.py": "171b9c148a2c18da930959ade98da477c9a6ccbb192e7c88ff0d296d89b31849",
+      "src/dict_merge.py": "81cbd01bf4033177c684e11b6d369a594532736cea05ab915459e8ada6fd2d17"
     }
   }
 ]

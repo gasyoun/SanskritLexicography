@@ -37,6 +37,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pipeline_version
+import dict_merge
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -151,6 +152,10 @@ def rows_for(subkey, entry, review_status, model_version):
     else:
         key1 = meta.get('root')                    # the join key into assembled_cards.jsonl
     prov = provenance(entry, subkey, model_version)
+    # Explicit source LAYER (pwg/pw/sch/pwkvn/nws) parsed from the sub-card key. Until now
+    # the layer was ONLY encoded in the key suffix; making it a first-class field lets the
+    # deferred addenda re-glue / typology (H180) group rows by layer without re-parsing keys.
+    layer = dict_merge.layer_of(subkey)
     for rec in card.get('records') or []:
         for sense in rec.get('senses') or []:
             ru = sense.get('russian')
@@ -159,6 +164,7 @@ def rows_for(subkey, entry, review_status, model_version):
             yield {
                 'key1': key1,
                 'subcard': subkey,
+                'layer': layer,
                 'iast': card.get('iast'),
                 'h': rec.get('h'),
                 'sense_tag': sense.get('tag'),
@@ -191,6 +197,9 @@ def selftest():
     r = rows[0]
     assert r['key1'] == 'pA', 'key1 must be the HEADWORD meta.root, not the sub-card key'
     assert r['subcard'] == 'p_a~~h5_00_pwg00' and r['ru'] == 'пить' and r['de'] == 'trinken'
+    assert r['layer'] == 'pwg', 'base sub-card must carry an explicit layer=pwg'
+    assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'
     p = r['provenance']
     assert p['model'] == 'sonnet' and p['rootmap_sha256'] == 'abc'
