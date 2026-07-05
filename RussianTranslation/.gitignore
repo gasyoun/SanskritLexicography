@@ -117,3 +117,7 @@ glossary/*.tsv
 glossary/md/
 glossary/surface/
 glossary/index.html
+
+# Auto-captured live failure incidents (runtime, dedup per root/day); the curated
+# post-mortems in failures/failures.jsonl stay tracked. Read by the dashboard.
+failures/auto_failures.jsonl

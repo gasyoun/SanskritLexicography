@@ -10,6 +10,21 @@ from urllib.parse import unquote, urlparse
 
 from dashboard_events import read_events
 import window_common
+import evolution_stats
+
+# Evolution stats are derived from the full logs (10k+ cards); cache on the
+# newest source mtime so the 5s status poll never triggers a recompute and a
+# separate, slower /api/evolution poll only rebuilds when a source file changes.
+_evo_cache = {'mtime': None, 'data': None}
+
+
+def evolution_payload(root):
+    paths = evolution_stats.source_paths(root)
+    mtime = evolution_stats.newest_mtime(paths)
+    if _evo_cache['data'] is None or _evo_cache['mtime'] != mtime:
+        _evo_cache['data'] = evolution_stats.build_evolution_stats(root)
+        _evo_cache['mtime'] = mtime
+    return _evo_cache['data']
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_ROOT = os.path.normpath(os.path.join(HERE, '..', '..'))
@@ -83,6 +98,11 @@ class DashboardHandler(BaseHTTPRequestHandler):
         if path == '/api/status':
             payload = combined_status(self.server.dashboard_root,
                                       self.server.refresh_ms)
+            self.send_bytes(json.dumps(payload, ensure_ascii=False, indent=1).encode('utf-8'),
+                            'application/json; charset=utf-8')
+            return
+        if path == '/api/evolution':
+            payload = evolution_payload(self.server.dashboard_root)
             self.send_bytes(json.dumps(payload, ensure_ascii=False, indent=1).encode('utf-8'),
                             'application/json; charset=utf-8')
             return
