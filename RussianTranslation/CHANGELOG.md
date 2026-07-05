@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Nominal-window guardrails — H191 verified, optimized, staged
+- Verified the H189 `pril10_w1` post-mortem deterministically: the aborted
+  top-size nominal run reproduces to **42,316,604 tokens / ~$79.83**, confirming
+  that fragment-level `agent()` fan-out and repeated cache writes caused the
+  blow-up.
+- Reduced generated harness size for cached/retry windows by omitting
+  non-agent cards from `INPUTS`/`PH`; TM-resolved and degenerate pass-through
+  cards now remain self-contained in `TM_RESOLVED` / `DEGENERATE_RESOLVED`.
+- Hardened monster handling in two places: citation-dense single-line senses are
+  split only at complete `<ls>...</ls>` spans, and `perf_preflight.py` now emits
+  `cost_partition.run_now` / `cost_partition.defer_monster` with grouped totals.
+  Mixed windows can run their cheap cards while routing `kAla`-class cards to a
+  human-budgeted lane.
+- Staged the first safe nominal follow-up:
+  [`src/pilot/NOMINAL_W1_100SMALL.md`](src/pilot/NOMINAL_W1_100SMALL.md) records
+  100 small Приложение 5 heads, 95 live inputs, 5 degenerate pass-through cards,
+  0 deferred monsters, 3 expected agents, and an estimated **~745k tokens / ~$1.41**.
+  Codex did not run Max/Workflow generation; the downstream Sonnet/Max run is
+  delegated to Uprava H201.
+
 ## [1.2.0] - 2026-07-04
 
 ### Production ramp — runnable work, not wishful work
