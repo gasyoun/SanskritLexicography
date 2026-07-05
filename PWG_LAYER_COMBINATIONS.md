@@ -12,7 +12,7 @@ Grounded in the actual merge code — [`RussianTranslation/src/dict_merge.py`](h
 | **PW** | revision | Böhtlingk, *kürzere Fassung* ("kleines Petersburger Wörterbuch" / PWK), 1879–89, 7 vols. Can cancel a PWG word, meaning, or source, not just append. | `csl-orig/v02/pw/pw.txt` (indexed as `pw`/`pwk`) | 151,349 |
 | **SCH** | supplement | Schmidt, *Nachträge zum Sanskrit-Wörterbuch*, 1928. Can add a new meaning (marked `*`) to an existing PWG sense. | `csl-orig/v02/sch/sch.txt` | 28,455 |
 | **PWKVN** | supplement | PWK variant supplement (Nachträge und Verbesserungen to the kürzere Fassung). | `csl-orig/v02/pwkvn/pwkvn.txt` | 14,995 |
-| **NWS** | external | *Nachtragswörterbuch* (Halle), cumulative addendum, ~2013. Folded in **only** when it is net-new beyond the four layers above (`has_nws_extra` flag) — never duplicated in. May itself contain outdated PWG/PW/SCH data, or partial French/Latin text. | scraped JSON, `RussianTranslation/src/pilot/nws/*.json` (167,991 files, provisional pending a data request) | net-new count not yet measured (large per-file JSON scan still running) |
+| **NWS** | external | *Nachtragswörterbuch* (Halle), cumulative addendum, ~2013. Folded in **only** when it is net-new beyond the four layers above (`has_nws_extra` flag) — never duplicated in. May itself contain outdated PWG/PW/SCH data, or partial French/Latin text. | scraped JSON, `RussianTranslation/src/pilot/nws/*.json` (167,991 files, provisional pending a data request) | **34,101 net-new (`has_nws_extra=true`), 20.3% of scraped files** — measured; per-combination breakdown (which of rows 9/16-18/21-23/25 below each falls into) not yet joined |
 
 **Related but NOT merged into a PWG entry:** CAE, CCS (medium dicts historically based on PWG/PW), MD, KCH (medium), LAN, KNA, FRI (small student dicts) — these track the same headwords as part of the wider "abridged tradition" comparison, but are separate dictionaries in their own right, not overlay layers of PWG. See `pwg-layers.md` lines 91–93.
 
@@ -51,7 +51,9 @@ Sample no-PWG headwords, for spot-checking against the scans: **pw-only** — `v
 
 ## All combinations, smallest to largest
 
-Every non-empty subset of the 5 layers, now labeled with **measured** counts where available (local 4-layer combos) or **pending** (any combo involving NWS — the net-new-only scan of 167,991 JSON files was still running at time of writing; NWS never adds a headword outside the local four, so it only ever narrows/extends an already-listed combo, never creates a new no-PWG-only-NWS row).
+Every non-empty subset of the 5 layers, now labeled with **measured** counts where available (local 4-layer combos, and the aggregate NWS net-new rate) or **pending join** (the exact per-combination NWS split — which local combo each of the 34,101 net-new files sits on top of — which needs one more script matching NWS filenames back to local-layer keys via `candidate_names`/`form_key`, not yet run). NWS never adds a headword outside the local four (its keys are derived from them), so it only ever narrows/extends an already-listed combo, never creates a new no-PWG-only-NWS row.
+
+**NWS aggregate, measured:** 34,101 of 167,991 scraped files (20.3%) carry net-new content beyond the four local layers. That means roughly 1 in 5 headwords in the full PWG "friends" universe gets an NWS-layer contribution — not a marginal case.
 
 ### 1 layer (5 combinations)
 
@@ -99,6 +101,6 @@ The original version of this doc marked every no-PWG combination as "theoretical
 
 ## Remaining open question
 
-The NWS net-new (`has_nws_extra`) scan over 167,991 JSON files was still running at time of writing (per-file JSON parse over a large flat directory is slow on this filesystem). Once it completes, rows 9, 16–18, 21–23, 25 above can be filled in with exact counts; a human decides whether that follow-up measurement is worth a dedicated pass now or can wait.
+The NWS net-new (`has_nws_extra`) scan is done: **34,101 of 167,991 files (20.3%)** carry net-new content. What's still unmeasured is the **per-combination split** — rows 9, 16–18, 21–23, 25 need those 34,101 keys joined back against the local-layer sets (pwg/pw/sch/pwkvn) via `candidate_names`/`form_key` to know exactly how many of them land on, say, a bare PWG+NWS entry versus a full 5-layer entry. That join is a small, well-scoped follow-up script, not a new investigation; a human decides whether it's worth running now or can wait.
 
 _Dr. Mārcis Gasūns_
