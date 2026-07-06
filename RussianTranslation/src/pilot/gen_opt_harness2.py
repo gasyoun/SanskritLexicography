@@ -1222,6 +1222,17 @@ class KillTimeout extends Error {}
 const isKill = e => (e instanceof KillTimeout) || (e && /kill-timeout/.test(String(e && e.message)))
 const killBudgetMs = skelBytes => Math.min(KILL_CEIL_MS, Math.max(KILL_FLOOR_MS, KILL_FACTOR * (KILL_BASE_MS + KILL_SLOPE_MS * skelBytes)))
 const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k].skeleton.length : 0), 0)
+// H220: a SINGLE card with no selfheal fallback (single-fragment supplement / nominal card
+// that does not split) has NO smaller lane for the kill gate to route to — abandoning it on
+// the byte-scaled budget is pure loss. Such a card still returns a VALID card, only slower
+// than a tiny skeleton's budget predicts: the fixed per-call StructuredOutput latency
+// (~55-105 s) dominates, independent of skeleton size. The no-PWG w1 run killed 6/6 nulls
+// this way (kill-timeout 53-104 s, all would have passed accept). Give a no-fallback single
+// the CEIL budget so it is only abandoned on a true >CEIL hang. Multi-card / splittable
+// batches keep the aggressive byte-scaled gate (there a kill routes to binary-split /
+// fragment heal — the gate's whole purpose). SHARED (keys on FRAGS, no RU/EN branching).
+const hasFallback = k => Array.isArray(FRAGS[k]) && FRAGS[k].length > 0
+const killBudgetForCur = cur => (cur.length === 1 && !hasFallback(cur[0])) ? KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))
 // H189 live budget kill-switch state. AGENTS_SPENT counts real agent() calls; once it
 // reaches MAX_AGENTS every further agentKill() throws BudgetExceeded WITHOUT calling agent()
 // (0 tokens), so retry/binary-split cascades short-circuit to instant no-ops and the window
@@ -1231,14 +1242,14 @@ const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k]
 class BudgetExceeded extends Error {}
 let AGENTS_SPENT = 0
 let BUDGET_TRIPPED = false
-async function agentKill(prompt, opts, skelBytes) {
+async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   if (KILL_SWITCH && MAX_AGENTS != null && AGENTS_SPENT >= MAX_AGENTS) {
     BUDGET_TRIPPED = true
     throw new BudgetExceeded('budget-kill-switch: window hit MAX_AGENTS=' + MAX_AGENTS + ' agent() calls; remaining cards requeued')
   }
   AGENTS_SPENT++
   if (!KILL) return agent(prompt, opts)
-  const ms = killBudgetMs(skelBytes)
+  const ms = (budgetMsOverride != null) ? budgetMsOverride : killBudgetMs(skelBytes)
   let timer
   const guard = new Promise((_, rej) => { timer = setTimeout(() => rej(new KillTimeout('kill-timeout ' + Math.round(ms / 1000) + 's @ skelBytes=' + skelBytes)), ms) })
   try { return await Promise.race([agent(prompt, opts), guard]) }
@@ -1383,7 +1394,11 @@ async function healGroup(k, idxs, grp, label) {
 // partial:true + missing_fragments (exact 'gN:fM' ids) + missing_groups/total_groups so a
 // follow-up can requeue JUST the failed pieces instead of re-running the whole card.
 async function selfHeal(k) {
-  const groups = FRAGS[k]; if (!groups || !groups.length) { noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
+  // H220 observability: a no-fallback selfHeal is the LAST resort after an upstream failure
+  // (kill-timeout / missing-or-mismatched-key / fidelity-reject). Don't clobber that specific
+  // reason with the generic 'no-selfheal-fallback' — the overwrite hid a kill-gate mass-kill
+  // behind a misleading message for a whole session. Only set it when nothing failed yet.
+  const groups = FRAGS[k]; if (!groups || !groups.length) { if (!FAIL[k]) noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
   const ftm = FRAG_TM[k] || []            // --tm: per-group cached-senses-or-null, mirrors FRAGS[k]
   const senses = []
   const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
@@ -1486,7 +1501,7 @@ async function resolveGroup(pending, label) {
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
     let res
     try {
-      res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur))
+      res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur), killBudgetForCur(cur))
     } catch (e) {
       if (!isKill(e)) throw e   // real hard failure — propagate as before (translateBatch -> selfheal)
       // Kill: stop RE-billing this whole call — a stall re-times-out identically. Mark the
@@ -1501,8 +1516,22 @@ async function resolveGroup(pending, label) {
       // content under the wrong headword when a model omits/reorders cards, especially for
       // zero-marker cross-reference stubs where count-based fidelity guards are blind.
       const km = byKey1(res.cards)
+      // H220 nominal key-echo tolerance: a masked nominal / no-PWG card carries the CLEAN SLP1
+      // headword in its portrait ('key1': "CAyA"), which pulls the model into echoing that
+      // instead of the mangled sub-card stem in the '=== CARD <stem> ===' header
+      // (_c_ay_a~~h0_zz_pw) — confirmed for leading/interior-underscore stems (_c_ay_a->CAyA,
+      // g_ayatr_i->gAyatrI). Recover ONLY when the returned key1 equals nominal_keymap[stem]
+      // AND that SLP1 maps to EXACTLY ONE pending stem in this batch (unambiguous) — then
+      // re-key the card to the stem. Never positional; NULL for root (PWG) windows
+      // (META.nominal false), so test_generated_harness_strict_key_matching stays honest.
+      const NKM = (META.nominal && META.nominal_keymap) ? META.nominal_keymap : null
       cur.forEach((k, i) => {
-        const cand = km[k]
+        let cand = km[k]
+        if ((cand === undefined || cand === null) && NKM && NKM[k] && NKM[k] !== k) {
+          const slp1 = NKM[k]
+          const rivals = cur.filter(x => NKM[x] === slp1)
+          if (rivals.length === 1 && km[slp1] !== undefined && km[slp1] !== null) { cand = km[slp1]; cand.key1 = k }
+        }
         if (cand === undefined || cand === null) { noteFail(k, 'missing-or-mismatched-key'); return }
         const c = accept(cand, k)
         if (c) resolved[k] = c

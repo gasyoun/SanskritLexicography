@@ -1589,8 +1589,11 @@ def test_generated_harness_strict_key_matching():
             os.path.join(d, k + '.raw.txt'), os.path.join(d, k + '.portrait.json'))
         js, _batches = gh.build('zz', keys, None, 12000, nominal=True,
                                 grammar_on=False, tm_path=None)
-        if 'const cand = km[k]' not in js:
-            fail('full-card lane must use strict key lookup, not positional fallback')
+        # km[k] (the exact expected key) is always the PRIMARY match. H220 added a
+        # nominal-only SLP1-echo fallback (re-key via nominal_keymap), so the binding is
+        # `let cand = km[k]` now — still key-based, never positional.
+        if 'let cand = km[k]' not in js:
+            fail('full-card lane must use strict key lookup (km[k]), not positional fallback')
         if 'res.cards[i]' in js or 'res.cards[idx], fi' in js:
             fail('generated harness still has unsafe positional response assignment')
         if 'missing-or-mismatched-key' not in js:
@@ -2599,6 +2602,125 @@ def test_kill_gate_wired():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_no_fallback_single_gets_ceil_kill_budget():
+    """H220: a SINGLE card with no selfheal fallback (single-fragment supplement / nominal
+    card that does not split) must get the CEIL kill budget, not the byte-scaled one — the
+    kill gate has no smaller lane to route it to, so an early kill on a tiny skeleton's budget
+    is pure loss (the no-PWG w1 run killed 6/6 nulls at 53-104 s; all would have passed
+    accept). Static guard: killBudgetForCur/hasFallback render, the resolveGroup main-lane
+    agentKill call passes killBudgetForCur(cur), and the override returns KILL_CEIL_MS for a
+    single no-fallback card while multi-card / splittable batches keep the byte-scaled gate."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '{#mahat#}¦ <lex>Adv.</lex> {%gross werden%}.\n')
+    key = 'zz~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[{"portrait_kind":"no_pwg_supplement_chain","key1":"mahat","iast":"mahat","senses":[]}]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        finally:
+            gh.input_paths = saved_ip
+        if 'const hasFallback = ' not in js or 'const killBudgetForCur = ' not in js:
+            fail('killBudgetForCur/hasFallback helpers must render in the generated harness')
+        if 'KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))' not in js:
+            fail('killBudgetForCur must return KILL_CEIL_MS for a no-fallback single, else the '
+                 'byte-scaled budget')
+        # the main-lane agentKill call (resolveGroup) must feed the override, not just skelBytes
+        if 'skelBytesOfKeys(cur), killBudgetForCur(cur))' not in js:
+            fail('resolveGroup agentKill call must pass killBudgetForCur(cur) as the budget '
+                 'override — otherwise the byte-scaled gate still kills no-fallback singles')
+        # this no-PWG card is single-fragment: FRAGS empty -> hasFallback false -> CEIL applies
+        frags = json.loads(_re.search(r'^const FRAGS = (\{.*?\})\n', js, _re.S | _re.M).group(1))
+        if frags.get(key):
+            fail('a single no-PWG supplement card must have no FRAGS groups (no split); got %r'
+                 % frags.get(key))
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_nominal_key_echo_tolerance_scoped():
+    """H220: nominal / no-PWG windows must tolerate the model echoing the CLEAN SLP1 headword
+    (nominal_keymap[stem], e.g. 'CAyA') instead of the mangled sub-card stem
+    (_c_ay_a~~h0_zz_pw) in key1 — recovering the card by re-keying it to the stem, but ONLY
+    when the SLP1 maps to exactly one pending stem (unambiguous). This must be GATED on
+    META.nominal so PWG root windows keep strict key matching (paired with
+    test_generated_harness_strict_key_matching). Static guard on the generated harness."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '{#CAya#}¦ {%Schatten%}.\n')
+    key = '_c_ay_a~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[{"portrait_kind":"no_pwg_supplement_chain","key1":"CAyA","iast":"chāyā","senses":[]}]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        finally:
+            gh.input_paths = saved_ip
+        # the recovery is gated on META.nominal + nominal_keymap (inert for root windows)
+        if 'META.nominal && META.nominal_keymap' not in js:
+            fail('nominal key-echo tolerance must be gated on META.nominal so root windows stay strict')
+        # unambiguous rival check (never re-key a SLP1 that maps to >1 pending stem) + re-key to stem
+        if 'const rivals = cur.filter(x => NKM[x] === slp1)' not in js:
+            fail('key-echo recovery must guard on an UNAMBIGUOUS SLP1->stem mapping within the batch')
+        if 'rivals.length === 1' not in js or 'cand.key1 = k' not in js:
+            fail('recovery must require exactly one rival stem and re-key the card to the stem')
+        # strict key lookup (km[k]) is still the FIRST attempt — tolerance is a fallback, not positional
+        if 'let cand = km[k]' not in js:
+            fail('strict key lookup km[k] must remain the primary match; tolerance is a fallback only')
+        meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
+        if not meta.get('nominal') or meta.get('nominal_keymap', {}).get(key) != 'CAyA':
+            fail('nominal harness must carry nominal_keymap[stem]=SLP1 for the re-key (got %r)'
+                 % meta.get('nominal_keymap'))
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_selfheal_no_fallback_preserves_upstream_reason():
+    """H220 observability: when selfHeal has no fragments to work with, it must NOT clobber a
+    more specific upstream failure reason already recorded (kill-timeout / mismatched-key /
+    fidelity-reject) with the generic 'no-selfheal-fallback' — that overwrite hid a kill-gate
+    mass-kill behind a misleading message for a whole session."""
+    import gen_opt_harness2 as gh
+    raw = '=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n{#x#}¦ {%y%}.\n'
+    key = 'zz~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        finally:
+            gh.input_paths = saved_ip
+        if "if (!FAIL[k]) noteFail(k, 'no-selfheal-fallback" not in js:
+            fail("selfHeal no-fallback branch must guard on !FAIL[k] so it preserves the specific "
+                 "upstream reason (kill-timeout etc.) instead of overwriting it")
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_group_by_budget_count_cap():
     """H189: _group_by_budget's count_cap closes a group once it holds count_cap items
     regardless of summed size, so a run of many tiny (size-1) fragments can't pack an
@@ -2803,6 +2925,9 @@ def main():
         test_selfheal_fragment_si_threaded_and_tags_normalized,
         test_sense_dense_card_presplit,
         test_kill_gate_wired,
+        test_no_fallback_single_gets_ceil_kill_budget,
+        test_nominal_key_echo_tolerance_scoped,
+        test_selfheal_no_fallback_preserves_upstream_reason,
         test_group_by_budget_count_cap,
         test_presplit_card_uses_amortized_grouping,
         test_kill_gate_recalibrated_envelope,

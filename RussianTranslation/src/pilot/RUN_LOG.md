@@ -57,6 +57,46 @@ correctness one — the Lbody fix removes one failure class but the strict-key-e
 interaction remains to be root-caused. Re-run w1's still-null keys (now Lbody-resolved) before adding
 new lemmas. wf_outputs kept at `src/pilot/output/wf_output.no_pwg_w1*.json` (gitignored).
 
+### ✅ H220 THROUGHPUT ROOT-CAUSE + FIX (2026-07-06, Opus 4.8 `claude-opus-4-8`) — 40 % → 100 % on a 10-card diagnostic
+
+The ~36 % yield was root-caused from a fresh 10-card single-card diagnostic window (6 mangled-stem +
+4 clean-stem controls, spanning pw/sch/nws) run through the Workflow tool, reading the run's own
+`journal.jsonl` + kill-log lines. **Two compounding failure modes, both now fixed** in
+[`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):
+
+- **DOMINANT — the wall-clock kill gate abandons valid-but-slow single supplement cards.** The kill
+  budget (`KILL_BASE 20 s + KILL_SLOPE 45 ms/byte, ×2`, floor 45 s) was calibrated on dense
+  multi-fragment `tyaj` **root batches**; a tiny single nominal card's wall-clock is dominated by fixed
+  per-call StructuredOutput latency (~55–105 s), which exceeds its byte-derived budget (53–104 s here).
+  The first diagnostic run killed **6/6 nulls** (kill-timeout logs `53 s`…`104 s`), and because no-PWG
+  supplement sub-cards are **single-fragment (no selfheal split)**, a kill has no smaller lane to route
+  to → permanent null. 4 of those 6 killed cards echoed the correct key and were proven (Python
+  re-simulation of `accept()`) to pass the fidelity guard — pure kill-gate loss. **Fix A:** a single
+  card with no selfheal fallback (`FRAGS[k]` empty) now gets the **CEIL budget (180 s)** via
+  `killBudgetForCur(cur)`; the aggressive byte-scaled gate is kept for multi-card / splittable batches
+  where a kill actually routes to binary-split / fragment heal.
+- **SECONDARY — key-echo mismatch on mangled stems.** The `=== CARD <stem> ===` header carries the
+  mangled sub-card stem (`_c_ay_a~~h0_zz_pw`), but the portrait JSON right below carries the clean SLP1
+  `key1` (`CAyA`), pulling the model into echoing the SLP1 in its output `key1` → the harness's strict
+  `km[k]` match drops it as `missing-or-mismatched-key`. Deterministic for leading/interior-underscore
+  stems (`_c_ay_a→CAyA`, `g_ayatr_i→gAyatrI`, `t_a→tA`). **Fix B:** nominal windows recover such a card
+  by re-keying it via `nominal_keymap` **only when the SLP1 maps to exactly one pending stem** in the
+  batch (unambiguous); gated on `META.nominal` so PWG root windows keep strict matching
+  (`test_generated_harness_strict_key_matching` still green).
+- **Plus observability:** `selfHeal`'s generic `no-selfheal-fallback` reason was **overwriting** the real
+  upstream cause (kill-timeout / mismatched-key) — the misleading message hid the kill-gate mass-kill for
+  a whole session. It now preserves a pre-existing `FAIL[k]` reason.
+
+**Verified:** the SAME 10-card window re-run with the fixed harness → **cards 10 / ok 10 / null 0
+(100 %)**, `agents_spent 9` (no retries; was 12), **0 kill-timeouts** (was 6), kill-switch not tripped.
+The journal shows the model still echoed `gAyatrI`/`tA` (SLP1) for 2 cards — both landed anyway because
+Fix B re-keyed them, so both fixes are independently necessary. Pinned by 3 new `window_selftest.py`
+tests (`test_no_fallback_single_gets_ceil_kill_budget`, `test_nominal_key_echo_tolerance_scoped`,
+`test_selfheal_no_fallback_preserves_upstream_reason`); full suite green (83 PASS);
+`lang_parity_check.py` clean (new SHARED entry `no_fallback_single_kill_budget_and_nominal_key_echo`).
+**The 232-lemma no-PWG lane is UNBLOCKED for scaling.** wf_outputs kept at
+`src/pilot/output/wf_output.no_pwg_w1*.json` + the diagnostic `wf_output.no_pwg_diag*` (gitignored).
+
 ## Stage A+B summary (2026-06-29) — all **Sonnet**, no Opus
 
 | root | cards | Max tokens | clean | clean % | gates: nws / sense_dupes |
