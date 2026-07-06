@@ -41,6 +41,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§2. Homonym token-splitting has a hard morphological ceiling](#2-homonym-token-splitting-has-a-hard-morphological-ceiling) — only 5 of 38 DCS-lumped groups are gaṇa-splittable; the rest need gloss adjudication.
 - 🟠 [§3. The Warnemyr scrape union-smears homonym classes](#3-the-warnemyr-scrape-union-smears-homonym-classes) — local Whitney class files merge homonyms' classes; derive from the live paradigm pages.
 - 🟡 [§4. PWG nominal grammar compresses into 335 paradigm tokens](#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens) — 98,639 of 123,366 entries carry a Zaliznyak-style token.
+- 🟡 [§63. vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute](#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) — five añc dhātus (4añc recoverable), no and, but ast IS Paninian; grep vidyut as `ancu`, not `aYc`.
 
 **Corpus & parallel-text data**
 
@@ -48,6 +49,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§6. No printed frequency dictionary of Sanskrit exists](#6-no-printed-frequency-dictionary-of-sanskrit-exists) — DCS-frequency ordering is genuine innovation.
 - 🔴 [§7. DCS lemma data is keyed in two transliterations](#7-dcs-lemma-data-is-keyed-in-two-transliterations) — SLP1 vs IAST across the two frequency files.
 - 🔴 [§8. Unaccented DCS cannot distinguish present class I from VI](#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) — 117 spurious corpus-derived class additions were reverted.
+- 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
 - 🟠 [§11. DCS 2021 and 2026 vintages are not directly comparable](#11-dcs-2021-and-2026-vintages-are-not-directly-comparable) — one metrical line ↔ several CoNLL-U sentences; treebanks on 74/270 texts only.
@@ -250,6 +252,25 @@ pipeline simplification, not yet a defect fix.
 > — WhitneyRoots v1.3.0 · 2026-07-05, Sonnet 5 (`claude-sonnet-5`) (originally v1.2.0 ·
 > 2026-07-03)
 
+### §63. vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute: five añc dhātus, no and, but ast IS Paninian
+
+The 2014 defense review (Krylov, ведущая организация) charged that the Gasūns
+concordance drops roots absent from Palsule (e.g. `4añc`, present in Pāṇini) while
+keeping Palsule-only roots (`2and`, `ast`). The machine-readable vidyut dhātupāṭha
+(2 259 dhātu) settles each case: **five** añc-family entries exist (`01.0215 ancu~
+gatipUjanayoH`; `01.0998 ancu~^` / `01.0999 acu~^` / `01.1000 aci~^` all `gatO
+yAcane ca`; `10.0266 ancu~ viSezaRe`) → the dropped `4añc` is real and recoverable;
+no `and-` dhātu exists → `2and` confirmed Palsule-only; **but `asta~ saNGAte`
+(10.0169, curādi) IS in the Paninian dhātupāṭha** — Krylov's second example was
+itself imprecise. Gotcha for anyone grepping vidyut: the file lists añc
+denasalized-ish as `ancu`, NOT SLP1 `aYc` (`aYc` appears only inside meaning
+glosses like `saYcalane`), and anubandha marks `~ \ ^` must be stripped before
+matching. Full-sweep method (concordance exclusions × vidyut × Whitney) outlined in
+[GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md).
+
+> **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
+> Fable 5 `claude-fable-5` · 2026-07-07
+
 ## Corpus & parallel-text data
 
 ### §5. The parallel corpus rarely attests prefixed-verb forms
@@ -394,6 +415,26 @@ subsections are orthogonal to I–V and add stratum granularity.
 
 > **Source:** [`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)
 > (built by `renou_pipeline.py --all`, validated by `renou_audit.py`) — RussianTranslation · 2026-07-01
+
+### §62. Varga distribution is almost epoch-stable (Cramér's V = 0.037) — and the Gasūns-2014 dissertation prose read its own χ² table backwards
+
+Aggregating the 25 sparśa varṇas of DCS (pin 2026-03-05; 9 940 591 stop/nasal varṇas
+across time slots 1–5) into the 5 vargas gives per-epoch shares that barely move:
+dentals ≈ 47–52 %, labials ≈ 24–27 %, gutturals 8.9 → 14.9 %, palatals ≈ 8–9 %,
+cerebrals 4.5 → 5.9 %. Effect size for the 5×5 varga × epoch table: **Cramér's V =
+0.0372** (χ² = 54 890) — on such N nearly everything is "significant", so p-values
+carry no signal; the only real shifts are the dental drop Vedic→epic (−4.2 pp) and
+the guttural climb through medieval (+6.0 pp total). Bonus forensic finding: the
+2014 Gasūns dissertation prose (§2.6 / положение 9) systematically labels as
+«набирающие популярность» exactly the vargas whose pairwise-χ² p-values were LARGE
+(labials 0.26 / cerebrals 0.32 for epic; palatals 0.95 for medieval; labials 0.66
+for late) — i.e. the statistically *unchanged* ones; apparently high p was read as
+growth. The 2026 shares agree with the 2014 p-table **against** the 2014 prose.
+Reproducible: [SanskritGrammar/GasunsDhatu_2014/revision-2026/varga_shares.py](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/varga_shares.py)
+over [VisualDCS derived-data/Fonetika/regen-2026/varna_freq.csv](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/regen-2026/varna_freq.csv).
+
+> **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
+> Fable 5 `claude-fable-5` · 2026-07-07
 
 ## Dictionary structure & markup
 
