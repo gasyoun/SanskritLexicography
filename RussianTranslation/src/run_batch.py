@@ -104,6 +104,50 @@ def _ensure_parent(path):
         os.makedirs(parent, exist_ok=True)
 
 
+def _store_review_id(row, pos=None):
+    """Stable reviewer-facing id across legacy ord rows and promoted sense rows."""
+    if row.get('ord') is not None:
+        return 'ord:%s' % row.get('ord')
+    sub = row.get('subcard')
+    tag = row.get('sense_tag')
+    prefix = 'row:%06d:' % pos if pos is not None else ''
+    if sub is not None and tag is not None:
+        return '%ssubcard:%s#%s' % (prefix, sub, tag)
+    if sub is not None:
+        return '%ssubcard:%s' % (prefix, sub)
+    if pos is not None:
+        return 'row:%d' % pos
+    return ''
+
+
+def _display_ord(row):
+    return '' if row.get('ord') is None else row.get('ord')
+
+
+def _row_key_match(row):
+    if row.get('key_match') is not None:
+        return bool(row.get('key_match'))
+    # Promoted sense-level rows have already survived the deterministic promote path;
+    # they no longer carry the legacy batch key_match flag.
+    return bool(row.get('key1') and row.get('subcard'))
+
+
+def _row_placeholders_ok(row):
+    if row.get('placeholders_ok') is not None:
+        return bool(row.get('placeholders_ok'))
+    # Merged-pipeline rows do not use the old {Tn} placeholder skeleton, so absence of
+    # the legacy flag is neutral rather than a validation failure.
+    return bool(row.get('ru'))
+
+
+def _bool_cell(v):
+    return 'True' if v else 'False'
+
+
+def _parse_bool_cell(v):
+    return str(v).strip().lower() in ('true', '1', 'yes', 'y')
+
+
 def attested_for(idx, key1, key2):
     indep, kow = cg.lookup(idx, key1, key2)
     att = [{'source': g['source'], 'code': g['code'], 'gloss': _clean(g['gloss'])[:110],
@@ -229,7 +273,7 @@ def cmd_status(args):
     for line in open(STORE, encoding='utf-8'):
         r = json.loads(line)
         n += 1
-        machine_ok = bool(r.get('ok') and r.get('placeholders_ok') and r.get('key_match'))
+        machine_ok = _machine_ok(r)
         ok += 1 if machine_ok else 0
         status = r.get('review_status') or 'unstamped'
         rs[status] = rs.get(status, 0) + 1
@@ -237,7 +281,7 @@ def cmd_status(args):
         s = r.get('severity')
         if s:
             sev[s] = sev.get(s, 0) + 1
-    print('translated cards in store: %d  | machine-ok (ok+placeholders+key): %d (%.0f%%)'
+    print('translated cards in store: %d  | mechanically reviewable: %d (%.0f%%)'
           % (n, ok, 100.0 * ok / max(n, 1)))
     print('print-ready (human-reviewed/approved + machine-ok): %d (%.0f%%)'
           % (final, 100.0 * final / max(n, 1)))
@@ -252,7 +296,7 @@ def cmd_review(args):
     if not os.path.exists(STORE):
         print('store empty'); return
     items = []
-    for line in open(STORE, encoding='utf-8'):
+    for pos, line in enumerate(open(STORE, encoding='utf-8'), 1):
         r = json.loads(line)
         status = r.get('review_status')
         if status is None:                 # legacy card → derive from ok+severity
@@ -260,10 +304,11 @@ def cmd_review(args):
         if status in ('judged', 'human_reviewed', 'approved'):
             continue                       # cleared (by LLM or human); not in the queue
         v = r.get('verdict') or {}
-        items.append({'ord': r['ord'], 'key1': r['key1'], 'key2': r.get('key2'),
+        items.append({'review_id': _store_review_id(r, pos),
+                      'ord': _display_ord(r), 'key1': r['key1'], 'key2': r.get('key2'),
                       'severity': r.get('severity') or v.get('severity') or 0,
                       'reason': v.get('reason') or v.get('issues') or v.get('note') or '',
-                      'key_match': r.get('key_match'), 'placeholders_ok': r.get('placeholders_ok'),
+                      'key_match': _row_key_match(r), 'placeholders_ok': _row_placeholders_ok(r),
                       'review_status': r.get('review_status', 'unstamped'),
                       'ru': r.get('ru', ''), 'attested': r.get('attested', [])})
     items.sort(key=lambda x: -(x['severity'] or 0))
@@ -274,8 +319,8 @@ def cmd_review(args):
     print('review queue: %d card(s) need a human → %s (sorted by severity)'
           % (len(items), os.path.basename(REVIEW_Q)))
     for it in items[:15]:
-        print('  sev%s  ord=%s  %s  key_match=%s ph_ok=%s  %s'
-              % (it['severity'], it['ord'], it['key1'], it['key_match'],
+        print('  sev%s  id=%s  %s  key_match=%s ph_ok=%s  %s'
+              % (it['severity'], it['review_id'], it['key1'], it['key_match'],
                  it['placeholders_ok'], (it['reason'] or '')[:60]))
 
 
@@ -295,7 +340,7 @@ def cmd_review_csv(args):
     if not os.path.exists(REVIEW_Q):
         print('no %s — run: python run_batch.py review' % os.path.basename(REVIEW_Q))
         return
-    fields = ['severity', 'ord', 'key1', 'key2', 'review_status',
+    fields = ['review_id', 'severity', 'ord', 'key1', 'key2', 'review_status',
               'key_match', 'placeholders_ok', 'reason', 'attested',
               'ru', 'reviewer_id', 'decision', 'edit', 'notes']
     n = 0
@@ -309,13 +354,14 @@ def cmd_review_csv(args):
                 continue
             r = json.loads(line)
             w.writerow({
+                'review_id': r.get('review_id') or '',
                 'severity': r.get('severity'),
                 'ord': r.get('ord'),
                 'key1': r.get('key1'),
                 'key2': r.get('key2'),
                 'review_status': r.get('review_status'),
-                'key_match': r.get('key_match'),
-                'placeholders_ok': r.get('placeholders_ok'),
+                'key_match': _bool_cell(r.get('key_match')),
+                'placeholders_ok': _bool_cell(r.get('placeholders_ok')),
                 'reason': r.get('reason') or '',
                 'attested': _attested_summary(r.get('attested')),
                 'ru': r.get('ru') or '',
@@ -349,43 +395,57 @@ def _load_store_rows():
     return rows
 
 
+def _review_row_id(row):
+    rid = (row.get('review_id') or '').strip()
+    if rid:
+        return rid
+    raw_ord = (row.get('ord') or '').strip()
+    if raw_ord.isdigit():
+        return 'ord:%s' % int(raw_ord)
+    return ''
+
+
 def _review_validation(rows):
     errors = []
     decisions = {}
     for i, row in enumerate(rows, 2):  # header is line 1
         raw_ord = (row.get('ord') or '').strip()
-        if not raw_ord.isdigit():
-            errors.append('line %d: ord must be an integer' % i)
-            continue
-        ord_ = int(raw_ord)
+        review_id = _review_row_id(row)
+        label = review_id or ('ord=%s' % raw_ord if raw_ord else 'missing id')
         decision = (row.get('decision') or '').strip()
         reviewer = (row.get('reviewer_id') or '').strip()
         edit = (row.get('edit') or '').strip()
         if not decision:
             continue                    # blank = not reviewed yet
+        if not review_id:
+            errors.append('line %d: review_id required for decision' % i)
+            continue
         if decision not in REVIEW_DECISIONS:
-            errors.append('line %d ord=%d: bad decision %r' % (i, ord_, decision))
+            errors.append('line %d %s: bad decision %r' % (i, label, decision))
         if not reviewer:
-            errors.append('line %d ord=%d: reviewer_id required for decision' % (i, ord_))
-        if decision in PRINT_READY and (row.get('key_match') != 'True' or row.get('placeholders_ok') != 'True'):
-            errors.append('line %d ord=%d: cannot mark non-integral row print-ready' % (i, ord_))
+            errors.append('line %d %s: reviewer_id required for decision' % (i, label))
+        if decision in PRINT_READY and (not _parse_bool_cell(row.get('key_match')) or
+                                        not _parse_bool_cell(row.get('placeholders_ok'))):
+            errors.append('line %d %s: cannot mark non-integral row print-ready' % (i, label))
         if decision in PRINT_READY and edit:
             pass                        # edit is optional; accepted when reviewer fixed text
-        decisions[ord_] = {'decision': decision, 'reviewer': reviewer,
-                           'edit': edit, 'notes': (row.get('notes') or '').strip()}
+        decisions[review_id] = {'decision': decision, 'reviewer': reviewer,
+                                'edit': edit, 'notes': (row.get('notes') or '').strip()}
     return errors, decisions
 
 
 def _machine_ok(row):
-    return bool(row.get('ok') and row.get('placeholders_ok') and row.get('key_match'))
+    if row.get('ok') is not None:
+        return bool(row.get('ok') and _row_placeholders_ok(row) and _row_key_match(row))
+    return bool(_row_placeholders_ok(row) and _row_key_match(row))
 
 
 def _csv_machine_ok(row):
-    return (row.get('key_match') == 'True' and row.get('placeholders_ok') == 'True')
+    return _parse_bool_cell(row.get('key_match')) and _parse_bool_cell(row.get('placeholders_ok'))
 
 
 def _review_summary(rows, decisions, errors, store):
-    by_ord = {r.get('ord'): r for r in store}
+    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
     counts = {
         'rows': len(rows),
         'blank': 0,
@@ -401,6 +461,8 @@ def _review_summary(rows, decisions, errors, store):
     top = []
     for row in rows:
         raw_ord = (row.get('ord') or '').strip()
+        review_id = _review_row_id(row)
+        display_id = raw_ord or review_id
         decision = (row.get('decision') or '').strip()
         if not decision:
             counts['blank'] += 1
@@ -408,7 +470,7 @@ def _review_summary(rows, decisions, errors, store):
                 sev = int(row.get('severity') or 0)
             except ValueError:
                 sev = 0
-            pending.append((sev, raw_ord, row.get('key1') or '', row.get('reason') or ''))
+            pending.append((sev, display_id, row.get('key1') or '', row.get('reason') or ''))
             continue
         counts['decisions'] += 1
         if decision in PRINT_READY:
@@ -424,7 +486,7 @@ def _review_summary(rows, decisions, errors, store):
         if r.get('review_status') in PRINT_READY and _machine_ok(r):
             counts['applied_in_store'] += 1
     top = sorted(pending, reverse=True)[:20]
-    return counts, top, by_ord
+    return counts, top, by_id
 
 
 def cmd_validate_review(args):
@@ -434,9 +496,9 @@ def cmd_validate_review(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_ord = {r.get('ord'): r for r in store}
-    missing = sorted(o for o in decisions if o not in by_ord)
-    errors.extend('ord=%d: not found in store' % o for o in missing)
+    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
+    missing = sorted(rid for rid in decisions if rid not in by_id)
+    errors.extend('%s: not found in store' % rid for rid in missing)
     counts, _, _ = _review_summary(rows, decisions, errors, store)
     print('review CSV rows: %(rows)d | blank: %(blank)d | decisions: %(decisions)d' % counts)
     print('  print-ready candidates: %(print_ready_candidate)d | reject: %(reject)d | needs_review: %(needs_review)d' % counts)
@@ -445,8 +507,7 @@ def cmd_validate_review(args):
         for e in errors[:50]:
             print('  ERROR:', e)
         sys.exit('review validation failed: %d error(s)' % len(errors))
-    machine_ok = {r.get('ord') for r in store
-                  if r.get('ok') and r.get('placeholders_ok') and r.get('key_match')}
+    machine_ok = {_store_review_id(r, i) for i, r in enumerate(store, 1) if _machine_ok(r)}
     approved = {o for o, d in decisions.items() if d['decision'] in PRINT_READY}
     print('review validation OK: %d print-ready decision(s), %d machine-ok row(s) in store'
           % (len(approved), len(machine_ok)))
@@ -459,9 +520,9 @@ def cmd_review_report(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_ord = {r.get('ord'): r for r in store}
-    missing = sorted(o for o in decisions if o not in by_ord)
-    errors.extend('ord=%d: not found in store' % o for o in missing)
+    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
+    missing = sorted(rid for rid in decisions if rid not in by_id)
+    errors.extend('%s: not found in store' % rid for rid in missing)
     counts, top, _ = _review_summary(rows, decisions, errors, store)
     lines = [
         '# Review readiness report',
@@ -480,7 +541,7 @@ def cmd_review_report(args):
         '',
         '## Top Pending Rows',
         '',
-        '| severity | ord | key1 | reason |',
+        '| severity | review_id | key1 | reason |',
         '|---:|---:|---|---|',
     ]
     for sev, ord_, key1, reason in top:
@@ -501,9 +562,9 @@ def cmd_apply_review(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_ord = {r.get('ord'): r for r in store}
-    missing = sorted(o for o in decisions if o not in by_ord)
-    errors.extend('ord=%d: not found in store' % o for o in missing)
+    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
+    missing = sorted(rid for rid in decisions if rid not in by_id)
+    errors.extend('%s: not found in store' % rid for rid in missing)
     if errors:
         for e in errors[:50]:
             print('  ERROR:', e)
@@ -511,8 +572,8 @@ def cmd_apply_review(args):
 
     changed = 0
     reviewed_at = datetime.datetime.now().isoformat(timespec='seconds')
-    for r in store:
-        d = decisions.get(r.get('ord'))
+    for i, r in enumerate(store, 1):
+        d = decisions.get(_store_review_id(r, i))
         if not d or not d['decision']:
             continue
         decision = d['decision']
