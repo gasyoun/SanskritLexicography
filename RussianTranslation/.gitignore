@@ -152,3 +152,10 @@ review/h180_*_sheet.html
 # only. The numeric scores table (no text) IS committed.
 pwg_ru/reglue/synth_outputs/*
 !pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv
+
+# H178 B-1 evaluation bake-off (h178_eval_bakeoff.py) — sample/baseline/judge/
+# comet outputs and the 4 voting sheets embed unpublished `ru` translations
+# (repo is PUBLIC): keep local-only; only the generator + protocol doc are
+# committed. decisions.json votes land here too (personal review artifacts).
+pwg_ru/eval/
+review/h178_*_sheet.html
