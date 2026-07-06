@@ -1,0 +1,79 @@
+name: pwg_ru upstream watch
+
+# Monthly Cologne (csl-orig) drift watch for the pwg_ru translation corpus.
+# Detects headwords that changed upstream after we translated them and flags the
+# affected promoted rows. NEVER re-translates — re-runs go through the drain handoffs.
+# NWS (live Halle scrape) is intentionally left to the local run, not CI.
+#
+# State (src/pilot/upstream_changes/) is committed back so the next run diffs
+# incrementally against the last-seen csl-orig commit.
+
+on:
+  schedule:
+    - cron: "0 7 1 * *"      # 07:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  cologne-drift:
+    name: Cologne drift diff
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SanskritLexicography
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Checkout csl-orig (read-only source)
+        uses: actions/checkout@v7
+        with:
+          repository: sanskrit-lexicon/csl-orig
+          path: csl-orig
+          fetch-depth: 0        # git show of the last-seen commit needs history
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Run Cologne watcher + layer snapshot
+        env:
+          PWG_RU_CSL_ORIG: ${{ github.workspace }}/csl-orig
+        run: |
+          cd RussianTranslation/src/pilot
+          python watch_upstream.py cologne
+          python layer_versions.py snapshot
+
+      - name: Commit updated watcher state
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add RussianTranslation/src/pilot/upstream_changes \
+                  RussianTranslation/src/pilot/layer_version_log.jsonl
+          if git diff --cached --quiet; then
+            echo "no watcher state change"
+          else
+            git commit -m "chore(pwg_ru): monthly upstream-watch state $(date -u +%Y-%m)"
+            git push
+          fi
+
+      - name: Open / update drift issue when rows are flagged
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          MONTH=$(date -u +%Y-%m)
+          REPORT="RussianTranslation/src/pilot/upstream_changes/${MONTH}.stale.json"
+          if [ ! -f "$REPORT" ]; then echo "no report"; exit 0; fi
+          STALE=$(python -c "import json,sys;d=json.load(open('$REPORT',encoding='utf-8'));print(sum(len(v.get('stale',[])) for v in d['sources'].values()))")
+          echo "stale groups: $STALE"
+          if [ "$STALE" -eq 0 ]; then echo "no drift affecting promoted rows"; exit 0; fi
+          TITLE="pwg_ru monthly upstream drift — ${MONTH}"
+          BODY=$(cat "RussianTranslation/src/pilot/upstream_changes/${MONTH}.md")
+          NUM=$(gh issue list --search "$TITLE in:title" --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY" --label "pwg_ru,text-correction"
+          fi
