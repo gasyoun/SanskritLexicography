@@ -83,7 +83,7 @@ consumption pattern.
 - Both `match_key` via `sanskrit-util` `to_slp1`→`slp1_simplify`; strip parentheticals, underscores, fold anusvara.
 - **Deliverable:** `HeadwordLists/works_catalogue/acc.jsonl`, `ncc.jsonl` + row counts logged.
 
-### P1 — Full-fuzzy matching engine (tiered, scored) ✅ DONE (06-07-2026)
+### P1 — Full-fuzzy matching engine (tiered, scored) ✅ DONE ([PR #205](https://github.com/gasyoun/SanskritLexicography/pull/205), 06-07-2026)
 [`build_works_crosswalk.py`](HeadwordLists/works_catalogue/build_works_crosswalk.py) emits
 `crosswalk_candidates.jsonl.gz` (169,260 rows), each tier + score — see
 [`P1_COUNTS.md`](HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown:
