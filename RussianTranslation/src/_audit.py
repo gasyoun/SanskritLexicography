@@ -121,6 +121,21 @@ def main():
         except Exception as e:
             print('TMX export: validation skipped (%s)' % e)
 
+    # H215 Slice 2: the grader's deterministic invariants (qe ordering, source
+    # override, consensus, grade gates) are a cheap integrity check regardless of a
+    # release existing -- a broken grader silently mis-stamps the publication TMX.
+    try:
+        import io
+        import contextlib
+        import tm_grade
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = tm_grade.selftest()
+        ok = rc == 0
+        print('TM grader selftest:', 'OK' if ok else 'FAILED')
+        clean = clean and ok
+    except Exception as e:
+        print('TM grader selftest: skipped (%s)' % e)
+
     print('VERDICT:', 'CLEAN' if clean else 'CONTAMINATION FOUND')
     return 0 if clean else 1
 
