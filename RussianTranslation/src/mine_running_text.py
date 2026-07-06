@@ -17,7 +17,12 @@ world-knowledge instead of the passage is exactly the failure mode we refuse).
 
   python mine_running_text.py test  <textfile> [N]   extract, print (no write)
   python mine_running_text.py mine  <textfile> [N] [workers]   → corpus_lexicon.mined.jsonl
+  python mine_running_text.py mineall [--min-tb 15] [--include a,b] [--exclude c] [--plan] [--workers 8]
+                                                     scan the whole SM folder, apply the
+                                                     deterministic selection rule, mine each
+                                                     selected running-text source (resumable)
   python mine_running_text.py status                 mined rows + distinct keys + per-source
+  python mine_running_text.py aligned-works          print the 116 aligned works (needs corpus)
 """
 import json, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -29,6 +34,49 @@ import build_corpus_lexicon as bcl   # deepseek(), to_slp1(), has_cyr(), SM, REJ
 HERE = os.path.dirname(os.path.abspath(__file__))
 SM = bcl.SM
 OUT = os.path.join(HERE, 'corpus_lexicon.mined.jsonl')
+ALIGNED_WORKS_FILE = os.path.join(HERE, '..', 'pwg_ru', 'aligned_works.txt')
+
+# ── mineall selection rule (H224 — baked in so no future session re-derives it) ──
+# (2) verse-aligned works (in corpus_lexicon.jsonl) are Track A's domain → skipped via
+#     load_aligned_works(); (3) registered dictionaries / glossaries / non-Sanskrit →
+#     DENYLIST; (4) an explicit index file skipped by name → SKIP_INDEX; other low-yield
+#     sources fall out of the < --min-tb term-bearing gate. Every skip is logged.
+DENYLIST = {
+    'kochergina', 'knauer', 'frish', 'slovar-smirnova', 'kossovich', 'kewa', 'dic_mw',
+    'dic_apte', 'dsg', 'erman-temkin', 'fasmer-dr-ind', 'slovar-potapovoy',
+    'slovar-grintsera-iz-ramayany-1-2', 'slovar-grintsera-iz-bada-kadambari',
+    'ramayana-3-slovar', 'toporov', 'warnemyr', 'iliada_gnedich',
+}
+SKIP_INDEX = {'ukazateli-makhabkharaty'}   # 17,915-line MBh index, 29 term-bearing (0%)
+# the 6,291-passage MBh commentary — always mined LAST (dominant cost)
+MINE_LAST = 'kommentarii-k-makhabkharate'
+
+
+def load_aligned_works():
+    """The 116 verse-aligned works to skip. Prefer the live corpus (authoritative);
+    fall back to the committed frozen list (corpus is gitignored, absent in fresh
+    worktrees). Errors loudly if neither is available."""
+    corpus = os.path.join(HERE, 'corpus_lexicon.jsonl')
+    if os.path.exists(corpus):
+        seen = set()
+        for line in open(corpus, encoding='utf-8'):
+            try:
+                w = json.loads(line).get('work')
+            except Exception:
+                continue
+            if w:
+                seen.add(w)
+        return seen
+    if os.path.exists(ALIGNED_WORKS_FILE):
+        return {ln.strip() for ln in open(ALIGNED_WORKS_FILE, encoding='utf-8')
+                if ln.strip() and not ln.startswith('#')}
+    raise SystemExit('no corpus_lexicon.jsonl and no %s — cannot determine aligned works'
+                     % ALIGNED_WORKS_FILE)
+
+
+def count_term_bearing(textfile):
+    """Term-bearing Russian passage count for one work (drives the --min-tb gate)."""
+    return sum(1 for _ in entries(textfile))
 
 # A passage is worth an API call only if it plausibly carries a Sanskrit term to gloss:
 # a Latin token with IAST diacritics, Devanagari, or an explicit Sanskrit-origin marker.
@@ -156,6 +204,91 @@ def cmd_mine(args):
           % (work0, len(items), wrote, failed, os.path.basename(OUT)))
 
 
+def select_sources(min_tb=15, include=None, exclude=None):
+    """Apply the deterministic selection rule to the whole SM folder.
+
+    Returns (selected, skips) where `selected` is a list of (work, tb_count) ordered
+    cheap-first with MINE_LAST forced to the end, and `skips` is a list of
+    (work, reason) for every file NOT mined — so nothing is silently dropped.
+    `include` forces a work in (still counted); `exclude` forces it out.
+    """
+    aligned = load_aligned_works()
+    include = set(include or [])
+    exclude = set(exclude or [])
+    files = sorted(f for f in os.listdir(SM) if f.endswith('.jsonl'))
+    selected, skips = [], []
+    for f in files:
+        work = f[:-len('.jsonl')]
+        if work in exclude:
+            skips.append((work, 'excluded (--exclude)'))
+            continue
+        forced = work in include
+        if not forced:
+            if work in aligned:
+                skips.append((work, 'verse-aligned (Track A domain)'))
+                continue
+            if work in DENYLIST:
+                skips.append((work, 'dictionary/glossary/non-Sanskrit (denylist)'))
+                continue
+            if work in SKIP_INDEX:
+                skips.append((work, 'index file (skip-by-name)'))
+                continue
+        tb = count_term_bearing(f)
+        if not forced and tb < min_tb:
+            skips.append((work, 'low-yield: %d term-bearing < min-tb %d' % (tb, min_tb)))
+            continue
+        selected.append((work, tb))
+    # cheap-first, then MINE_LAST forced to the very end (dominant cost)
+    selected.sort(key=lambda wt: (wt[0] == MINE_LAST, wt[1]))
+    return selected, skips
+
+
+def cmd_mineall(args):
+    min_tb, include, exclude, workers, plan = 15, None, None, 8, False
+    i = 0
+    while i < len(args):
+        a = args[i]
+        if a == '--min-tb':
+            i += 1; min_tb = int(args[i])
+        elif a == '--include':
+            i += 1; include = [x for x in args[i].split(',') if x]
+        elif a == '--exclude':
+            i += 1; exclude = [x for x in args[i].split(',') if x]
+        elif a == '--workers':
+            i += 1; workers = int(args[i])
+        elif a == '--plan':
+            plan = True
+        else:
+            print('unknown arg:', a); return
+        i += 1
+
+    selected, skips = select_sources(min_tb, include, exclude)
+    print('=== mineall selection (min-tb=%d) ===' % min_tb)
+    for work, reason in skips:
+        print('  SKIP  %-52s %s' % (work, reason))
+    print('  ---')
+    tot = 0
+    for work, tb in selected:
+        print('  MINE  %-52s %d term-bearing' % (work, tb))
+        tot += tb
+    print('  === %d sources selected, %d term-bearing passages total ===' % (len(selected), tot))
+    if plan:
+        print('(--plan: no API calls made)')
+        return
+
+    done = done_refs()
+    for idx, (work, tb) in enumerate(selected, 1):
+        pending = tb - sum(1 for r in done if r[0] == work)  # rough; cmd_mine is exact
+        print('\n[%d/%d] mining %s (~%d term-bearing, resuming) ...'
+              % (idx, len(selected), work, tb), flush=True)
+        cmd_mine([work + '.jsonl', str(10**9), str(workers)])
+
+
+def cmd_aligned_works(args):
+    for w in sorted(load_aligned_works()):
+        print(w)
+
+
 def cmd_status(args):
     import collections
     if not os.path.exists(OUT):
@@ -175,4 +308,5 @@ def cmd_status(args):
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'status'
     rest = sys.argv[2:]
-    {'test': cmd_test, 'mine': cmd_mine, 'status': cmd_status}.get(cmd, cmd_status)(rest)
+    {'test': cmd_test, 'mine': cmd_mine, 'mineall': cmd_mineall,
+     'aligned-works': cmd_aligned_works, 'status': cmd_status}.get(cmd, cmd_status)(rest)

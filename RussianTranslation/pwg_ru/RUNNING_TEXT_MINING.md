@@ -52,8 +52,40 @@ reusing `build_corpus_lexicon`'s `has_cyr` / `to_slp1` / `REJECT_RU`):
 ```
 python mine_running_text.py test  <textfile> [N]           # extract + print, no write
 python mine_running_text.py mine  <textfile> [N] [workers]  # → corpus_lexicon.mined.jsonl
+python mine_running_text.py mineall [--min-tb 15] [--include a,b] [--exclude c] [--plan] [--workers 8]
 python mine_running_text.py status                          # rows + distinct keys + per-source
 ```
+
+## Batch scan (`mineall`) — the deterministic selection rule (H224)
+
+[`mineall`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mine_running_text.py)
+scans **every** `*.jsonl` in SamudraManthanam's `web/corpus_builder/jsonl/`, applies the
+rule below, and mines each selected source resumably (cheap sources first,
+`kommentarii-k-makhabkharate` LAST). `--plan` prints the selection with term-bearing
+counts and makes no API calls. **Every skip is logged with its reason — no silent caps.**
+
+1. **Skip verse-aligned works** (the 116 in `corpus_lexicon.jsonl`) — Track A's domain,
+   not running text. The skip-set is read from the live corpus if present, else from the
+   committed
+   [`pwg_ru/aligned_works.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/aligned_works.txt)
+   (the corpus is gitignored, absent in fresh worktrees).
+2. **Skip registered dictionaries / glossaries / non-Sanskrit** (`DENYLIST`, 18 works:
+   `kochergina, knauer, frish, slovar-smirnova, kossovich, kewa, dic_mw, dic_apte, dsg,
+   erman-temkin, fasmer-dr-ind, slovar-potapovoy, slovar-grintsera-iz-ramayany-1-2,
+   slovar-grintsera-iz-bada-kadambari, ramayana-3-slovar, toporov, warnemyr,
+   iliada_gnedich`).
+3. **Skip the `ukazateli-makhabkharaty` index** by name (17,915-line MBh index, 29
+   term-bearing, 0%).
+4. **Skip low-yield** sources whose term-bearing passage count `< --min-tb` (default 15):
+   `mify-drind` (12), `pandey` (9), `buddhacharita-balmont` (5), `vishnu-purana` (2),
+   `13_mahabharata-anushasanaparva` (0 — all-`…` Russian).
+5. Mine everything left, resumably.
+
+Over the 148-file folder this selects **8 sources** (18 denylist + 116 aligned + 1 index
++ 5 low-yield = 140 skipped, all logged). One delta from the H224 handoff's illustrative
+Step-2 table: `stepanyants` (472 term-bearing, a philosophy term-encyclopedia the doc had
+listed as "queued") is selected by the rule and mined — the rule is authoritative, so it
+is included, not dropped.
 
 - **Candidate pre-filter** (`term_bearing`) — a passage is sent to DeepSeek only if it
   carries an IAST diacritic, Devanagari, or a Sanskrit-origin marker (`санскр`,
@@ -70,7 +102,8 @@ python mine_running_text.py status                          # rows + distinct ke
 | [`induizm-dzhaynizm-sikkhizm`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md) | philosophy term-encyclopedia (headword + inline gloss) | high, clean |
 | `mify_759_ind` | mythological encyclopedia (`Term (др.-инд. X, «gloss»)`) | high, clean |
 | `syrkin_tom_1_utf` | running scholarly prose, terms scattered | lower, noisier |
-| `pandey`, `stepanyants`, `stati-makhabkharaty`, Eliade-Yoga | prose monographs | queued (scale phase) |
+| `stepanyants`, `stati-makhabkharaty`, Eliade-Yoga, `biruni` | prose monographs / encyclopedias | **mined** (scale phase — see below) |
+| `pandey` | prose monograph | skipped — 9 term-bearing < min-tb 15 |
 | samskrtam.ru lecture transcripts (`/l/…`) | **Sanskrit verse + Russian exegesis** | route to **Track A** (parallel-ish), not mined here — see below |
 
 ## Pilot (06-07-2026)
@@ -100,15 +133,59 @@ passage (sample kept at
 that is one of an enumerated set gets the set's description). The verbatim-in-passage
 guard held — zero fabricated (not-in-passage) glosses survived to the sample.
 
-### Scale decision
+## Scale run (H224, 06-07-2026) — whole corpus folder via `mineall`
 
-**Proceed** — precision clears the bar for a quarantined lower-confidence tier. Mine the
-remainder of the two encyclopedias and the prose monographs (`pandey`, `stepanyants`,
-`stati-makhabkharaty`, Eliade-Yoga) in the scale phase, keeping the tier quarantined.
-Known noise to weight down, not to "fix" in the miner: (a) proper-name transliterations
-carry low lexical information; (b) list-category mis-scoping is the dominant hard-error
-mode. Neither justifies polluting the clean corpus — that is exactly why the tier is
-separate.
+The pilot's "proceed" decision was executed at folder scale with `mineall`. Extraction =
+DeepSeek `deepseek-chat`; orchestration + adjudication = Opus 4.8 (`claude-opus-4-8`).
+The small/new sources were mined and precision re-gated **before** committing to the
+6,291-passage commentary. Final per-source `mined` counts:
+
+| Source | Term-bearing passages | Mined pairs | Notes |
+|---|---|---|---|
+| `yoga-…-eliade-…` (Yoga: Immortality & Freedom) | 23 | 72 | new |
+| `biruni` (al-Bīrūnī, India) | 33 | 280 | new |
+| `syrkin_tom_1_utf` | 41 | 36 | pilot (re-mined; `mined.jsonl` absent in fresh worktree) |
+| `induizm-dzhaynizm-sikkhizm` | 181 | 323 | pilot source, finished |
+| `mify_759_ind` | 223 | 333 | pilot source, finished |
+| `stepanyants` (philosophy encyclopedia) | 472 | 1,248 | new |
+| `stati-makhabkharaty` | 495 | 596 | new |
+| `kommentarii-k-makhabkharate` | 6,291 | 7,244 | new — dominant cost, run LAST (incl. mop-up) |
+| **Total** | **7,759** | **10,132** | 8 sources; distinct `(slp1, ru)` = 8,576 |
+
+**API failures (logged, not silent):** the first `kommentarii` pass hit **227** DeepSeek
+read-timeout failures (transient `_ssl` / `read timeout=10.0`) that exhausted all 6
+retries; those passages wrote no rows. A single resumable mop-up re-run (the miner skips
+already-mined `(work, passage)`) re-scanned the 1,733 not-yet-done passages and recovered
+**all 227 → +385 pairs, 0 failures**. Final residual: **0**. All other sources: **0
+failures** on the first pass.
+
+### Precision gate on the NEW material (30-row stratified sample)
+
+Fresh deterministic 30-row sample across the 5 new sources (biruni / stati-makhabkharaty /
+Eliade / stepanyants / kommentarii), 6 rows each, each gloss adjudicated against its
+source passage. Sample kept at
+[`pwg_ru/running_text_mining_precision_sample_scale.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/running_text_mining_precision_sample_scale.jsonl):
+
+| Verdict | Count | Rate |
+|---|---|---|
+| Correct meaning-gloss (`yaj`→«совершать жертвоприношение», `ghṛta`→«топленое масло», `Bhāvanākrama`→«Ступени созерцания») | 22 | 73% |
+| Correct but low-information (proper-name / river / person / text ident.: `Durga`→дурга, `pulomā`→«супруга Бхригу…», `vipāṭa`→«третий младший брат Карны») | 7 | 23% |
+| **Hard error** (`anāhata`→«звук» — grabbed from an adjacent Mūlādhāra-chakra clause: list/context mis-scoping) | 1 | 3.3% |
+
+**Correct-equivalence precision = 29/30 (97%); useful meaning-gloss = 22/30 (73%);
+hard-error rate = 3.3%.** Statistically identical to the pilot (97% / 80% / 3.3%). The
+slightly lower meaning-gloss share reflects the new sources (al-Bīrūnī's rivers, MBh
+commentary's persons) carrying more proper-name/identifying glosses — low-information but
+not wrong. The single hard error is again the **list/context mis-scoping** mode H186
+flagged; the verbatim-in-passage guard held (zero fabricated glosses in the sample).
+
+### Decision
+
+**Scale complete — tier stays quarantined and down-weighted.** Precision clears the bar
+for a lower-confidence TM tier; the folder is fully scanned (every skip logged). Known
+noise to weight down, not to "fix" in the miner: (a) proper-name transliterations carry
+low lexical information; (b) list-category mis-scoping is the dominant hard-error mode.
+Neither justifies polluting the clean corpus — that is exactly why the tier is separate.
 
 ## Track A status (parallel-text alignment) — BLOCKED on missing verse-aligned input
 
