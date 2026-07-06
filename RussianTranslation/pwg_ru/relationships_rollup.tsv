@@ -1,0 +1,9 @@
+subtype	op	direction	layer	count
+restate	restate	abridging	pw	5054
+nws_at_sense	add	additive	nws	211
+a2a	relocate	additive	pwkvn	89
+sch_star	add	additive	sch	88
+foreign_fragment	add	additive	nws	62
+derived_sense	add	additive	sch	58
+derived_sense	add	additive	pwkvn	40
+pw_correct	correct	abridging	pw	1

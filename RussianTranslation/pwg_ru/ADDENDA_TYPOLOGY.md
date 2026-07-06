@@ -2,6 +2,13 @@
 
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
+> **Implemented 06-07-2026** — [`src/build_relationships.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_relationships.py)
+> classifies all **5,603** non-`pwg` sub-card senses into the sidecar
+> [`src/pwg_ru_relationships.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ru_relationships.jsonl)
+> (non-destructive — the canonical store stays byte-identical) + the rollup
+> [`pwg_ru/relationships_rollup.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv).
+> Counts are in §5 below.
+
 A **typed operation algebra** for every cross-layer change in the five-layer PWG→RU
 merge (PWG · PW · SCH · PWKVN · NWS), plus the abridging descendants (MW · AP). It is
 the metadata contract that lets [`REGLUE_SPEC.md`](REGLUE_SPEC.md) place each supplement
@@ -157,17 +164,30 @@ Written per non-`pwg` sub-card (the `pwg` skeleton needs none):
   `pwg_ru_translated.jsonl` + PWG skeleton, writing the sidecar back per sub-card and a
   `pwg_ru/relationships_rollup.tsv`. **No workflow / translate call** — pure metadata.
 
-## 5. Rollup table (to be populated by the emitter)
+## 5. Rollup table (populated 06-07-2026 by `build_relationships.py`)
 
 | subtype | op | direction | layer(s) | count | notes |
 |---|---|---|---|---:|---|
-| `sch_star` | add | additive | sch | _tbd_ | new `*` senses |
-| `nws_at_sense` | add | additive | nws | _tbd_ | attach to PWG sense N |
-| `foreign_fragment` | add | additive | nws | _tbd_ | `needs_ru_from_{fr,la,en}` |
-| `derived_sense` | add | additive | pwkvn, sch | _tbd_ | preverb/caus/desid |
-| `a2a` | relocate | additive | pwkvn | _tbd_ | Nachträge-to-Nachträge |
-| `pw_cancel` | delete | abridging | pw | _tbd_ | gender/sense/source withdrawal |
-| `pw_correct` | correct | abridging | pw | _tbd_ | changed value, same referent |
+| `restate` | restate | abridging | pw | 5,054 | PW abridging restatement (default when no gender conflict) |
+| `nws_at_sense` | add | additive | nws | 211 | attach to PWG sense N |
+| `a2a` | relocate | additive | pwkvn | 89 | Nachträge-to-Nachträge |
+| `sch_star` | add | additive | sch | 88 | new `*` senses |
+| `foreign_fragment` | add | additive | nws | 62 | all detected `en` (English) — the handoff named FR/LA; the scrape is English-heavy |
+| `derived_sense` | add | additive | sch | 58 | preverb/caus/desid |
+| `derived_sense` | add | additive | pwkvn | 40 | preverb/caus/desid |
+| `pw_correct` | correct | abridging | pw | 1 | gender change, same referent |
+
+**Findings from the first run:**
+- **`pw_correct` is rare (1) and `pw_cancel` (0) by the deterministic gender test** — a
+  `pw_cancel`/`pw_correct` fires only when PWG *and* PW both carry a `<lex>` gender token
+  at the *same numeric sense*, which is uncommon in the verb-root-first store (most PW
+  gender info sits on nominal cards not yet translated). This is a **coverage** limit, not
+  a typology gap; the abridging-direction ops will populate as nominal PWG lands.
+- **Foreign fragments are 100% English** in the scrape — the `needs_ru_from_en` flag (the
+  handoff correction §3.4) is the only one that fires; FR/LA remain first-class categories
+  for when they appear.
+- **`restate` dominates** because PW is overwhelmingly an abridging *re-statement* of PWG,
+  not a canceller — consistent with MG's "abridgement = entry depth, not withdrawal".
 
 ## 6. Validation plan (first pass)
 

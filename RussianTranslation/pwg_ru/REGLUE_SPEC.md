@@ -95,6 +95,36 @@ relationship sidecar; emits `pwg_ru/reglue/`). Depends on
 [`ADDENDA_TYPOLOGY.md`](ADDENDA_TYPOLOGY.md)'s `build_relationships.py` having populated
 `insertion_point`.
 
+## 5a. Pilot run results (06-07-2026, Arm A — zero re-translation proven)
+
+[`src/build_reglue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue.py)
+built all **15/15** pilot headwords →
+[`pwg_ru/reglue/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/reglue)
+(`<key1>.json` + rendered `.md` + [`PILOT_SUMMARY.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/reglue/PILOT_SUMMARY.tsv)).
+
+**Success criteria met:**
+- **(a) byte-identity** — every emitted `ru` (skeleton *and* supplement) is asserted
+  present verbatim in the store; all 15 pass `byte_ok=True`. **Re-glue is free.**
+- **(b) nothing lost** — every supplement lands at a real PWG sense (`placed`) or is
+  flagged `*new`; none dropped.
+- **(c) cancellations visible** — the 1 `DA` `pw_correct` renders annotated, not dropped.
+- **(d) human spot-check** — deferred to an interactive HTML voting sheet (not checkboxes).
+
+**Key finding — descendant sense-numbering diverges from PWG, so most supplements fall
+to `*new` rather than `placed`** (e.g. `Sam` 0 placed / 130 new; `DA` 36 / 412). Two
+causes, both measured:
+1. **PW renumbers.** A PW sense `5` is *PW's own* numbering, **not** a pointer to PWG
+   sense 5 — so naive leading-integer attachment misfires. True alignment needs *content*
+   matching (gloss-to-sense), which is exactly the deferred gold pass, not a first-pass
+   heuristic.
+2. **The store is verb-root-first** — PWG senses live on *per-preverb* sub-cards each with
+   their own `1,2,3…`, so a flat "sense N" key is ambiguous until more of PWG is
+   translated.
+
+The mechanism is proven and lossless; higher placement is a *content-alignment* task for
+the gold pass, not a re-glue-engine fix. This divergence is itself evidence for the
+Deliverable-5 paper ("how the tradition renumbered itself when it abridged").
+
 ## 6. Guardrails
 
 - Never blocks the H179 run; consumes its output.
