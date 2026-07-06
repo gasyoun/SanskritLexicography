@@ -4,6 +4,26 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-06 — `dah` tail (H178 A-2) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Fable 5** (`claude-fable-5`) — ✅ 31/31 PROMOTED (1 documented 🟡 residual)
+
+Finished the two 04-07 held `dah` cards via three Workflow runs (TM-denylisted):
+
+| run | target | result | agents | subagent tokens | wall-clock |
+|---|---|---|---|---|---|
+| defect requeue | `dah~~h0_zz_nws00` (whole card, single-key requeue file) | ✅ 1/1 ok | 1 | 75,693 | ~68s |
+| topup attempt 1 | `dah~~h0_zz_pw` — 17 missing fragments | 12/17 ok, 5 retry-cap nulls | 17 | 1,144,751 | ~67s |
+| topup attempt 2 | same 17 | 15/17 ok, 2 retry-cap nulls | 17 | 1,147,780 | ~78s |
+
+Union of both topup attempts = **16/17 fragments**; only `dah~~h0_zz_pw__s10p0` hard-failed the
+StructuredOutput retry cap (5×) on BOTH fresh attempts → per the H178 2-attempt cap + the `vid`
+precedent, the card is promoted as a **documented 🟡 residual** (residual class: single
+PW-addenda sense fragment, StructuredOutput retry-cap schema-emission failure — NOT the H220
+kill-gate class). Promotions via `promote_final_cards.py --merge --gen-model-version
+claude-sonnet-5`: store **11,185 → 11,261 rows**; `dah` = **31/31 cards**. TM rebuilt (card
+2,302 / frag 217 / publication 2,392, all validate green); provenance audit clean (11,261/11,261
+model_version + pipeline stamps). Full memo:
+[`pwg_ru/H178_REAUDIT_2026-07-06.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_REAUDIT_2026-07-06.md).
+
 ## 2026-07-06 — `no_pwg_w1` (H214 no-PWG lane, FIRST run) — gen **Sonnet 5** / orchestration **Opus 4.8** — ⚠️ VALIDATED-NOT-PROMOTED
 
 First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
