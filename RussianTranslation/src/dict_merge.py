@@ -115,6 +115,44 @@ def index(code):
     return idx
 
 
+# `{{Lbody=NNNN}}` is a Cologne ALTERNATE-HEADWORD pointer: an alt-spelling record (e.g.
+# `<L>205646.1<k1>CAyA` body `{{Lbody=205646}}`) carries no independent gloss — its content is
+# the body of the primary entry NNNN (`<L>205646<k1>CAya`). 12,186 PW records (~7%) are these.
+# Left unresolved they reach the translator as a bare pointer and leak verbatim into `russian`
+# (H214 no-PWG run finding, 2026-07-06). Resolve them to the referenced entry's real body.
+_LBODY_RE = re.compile(r'\{\{Lbody=(\d+(?:\.\d+)?)\}\}')
+_IDIDX = {}
+
+
+def id_index(code):
+    """L-id (HEADER_RE group 1, e.g. '205646' / '205646.1') -> that record's body text."""
+    if code in _IDIDX:
+        return _IDIDX[code]
+    idx = {}
+    for buf in records_of(code):
+        m = pwg_mask.HEADER_RE.match(buf[0])
+        if m:
+            idx[m.group(1)] = '\n'.join(buf[1:])
+    _IDIDX[code] = idx
+    return idx
+
+
+def resolve_lbody(code, body, _depth=0):
+    """Resolve `{{Lbody=NNNN}}` alternate-headword pointers to the referenced entry's real
+    body (bounded depth; an unresolvable or self-referential pointer is left untouched)."""
+    if _depth > 3 or '{{Lbody=' not in body:
+        return body
+    idx = id_index(code)
+
+    def sub(m):
+        target = idx.get(m.group(1))
+        if target is None or ('{{Lbody=%s}}' % m.group(1)) in target:
+            return m.group(0)                    # unresolvable / self-ref -> leave as-is
+        return resolve_lbody(code, target, _depth + 1)
+
+    return _LBODY_RE.sub(sub, body)
+
+
 def merged(key1):
     fk = cg.form_key(key1)
     out = []
@@ -122,7 +160,7 @@ def merged(key1):
         recs = index(code).get(fk, [])
         if recs:
             out.append({'layer': code, 'role': role, 'blurb': blurb,
-                        'records': ['\n'.join(b[1:]) for b in recs]})
+                        'records': [resolve_lbody(code, '\n'.join(b[1:])) for b in recs]})
     nws = nws_record(fk)               # external addendum, last; only if net-new
     if nws:
         code, role, blurb = NWS_LAYER
@@ -188,6 +226,18 @@ def cmd_selftest(_args):
         assert got == want, 'layer_of(%r) = %r, expected %r' % (sub, got, want)
     assert set(cases.values()) <= set(LAYER_VALUES)
     print('dict_merge.layer_of selftest OK (%d cases)' % len(cases))
+
+    # resolve_lbody: an alternate-headword pointer resolves to the referenced entry's real
+    # body; a non-pointer body is unchanged; an unresolvable id is left intact (no crash).
+    assert resolve_lbody('pw', 'plain gloss') == 'plain gloss'
+    assert resolve_lbody('pw', '{{Lbody=999999999}}') == '{{Lbody=999999999}}'
+    resolved = resolve_lbody('pw', '{{Lbody=205646}}')
+    assert '{{Lbody=' not in resolved and 'Abschrift' in resolved, \
+        'Lbody pointer must resolve to the primary entry body, got %r' % resolved[:120]
+    # and it flows through merged(): no CAyA pw record leaks a raw pointer
+    caya_pw = [r for L in merged('CAyA') if L['layer'] == 'pw' for r in L['records']]
+    assert caya_pw and all('{{Lbody=' not in r for r in caya_pw), 'merged() must resolve Lbody'
+    print('dict_merge.resolve_lbody selftest OK')
 
 
 def main():

@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "98673632dcdaec7c9adb64a8e5e646cd7a085768c17d4a6cfc3561b256fcd321",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "98673632dcdaec7c9adb64a8e5e646cd7a085768c17d4a6cfc3561b256fcd321",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -260,7 +260,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
-      "src/pilot/audit_window.py": "8ab1aee803e6102fa4125a22006e929d254422854e5f1983030d6a3b21dcbd89",
+      "src/pilot/audit_window.py": "0ec016f09fa2e770ef538251882b829a4d7ea3e9ea61995fc47d0963138c0206",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
@@ -316,7 +316,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "98673632dcdaec7c9adb64a8e5e646cd7a085768c17d4a6cfc3561b256fcd321",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -335,7 +335,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -373,7 +373,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "98673632dcdaec7c9adb64a8e5e646cd7a085768c17d4a6cfc3561b256fcd321",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   },
   {
@@ -392,7 +392,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_final_cards.py": "47143a98618429e81897fca734c64ea0811f87ef698753d7218bfc10c90141ee",
-      "src/dict_merge.py": "81cbd01bf4033177c684e11b6d369a594532736cea05ab915459e8ada6fd2d17"
+      "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
   {
@@ -432,7 +432,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "98673632dcdaec7c9adb64a8e5e646cd7a085768c17d4a6cfc3561b256fcd321",
       "src/pilot/perf_preflight.py": "4593a0499b74b1a9557e07b69280e9dd352c01bd816571895a7b3fc1e5ebbb2f",
-      "src/pilot/window_selftest.py": "a1d51b6987ff3bf96b509712779fe5e9dec464ee7f231aeecfdbf1d8b36f1c67"
+      "src/pilot/window_selftest.py": "502fa836dbc0c86a2147d8157aefd5bbf3ca00683df6401e86ee4ffe8f025c22"
     }
   }
 ]

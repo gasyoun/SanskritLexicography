@@ -287,14 +287,13 @@ def test_no_pwg_worklist_runnable_lane():
     NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
     PWG-rooted runnable count."""
     import nominals_worklist as nw
-    fd, path = tempfile.mkstemp(suffix='.slp1.txt')
-    os.close(fd)
-    try:
-        with open(path, 'w', encoding='utf-8') as f:
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, 'sample.slp1.txt')
+        store = os.path.join(tmp, 'store.jsonl')      # isolated empty store: the runnable/promoted
+        with open(path, 'w', encoding='utf-8') as f:  # split must not depend on the live store
             f.write('Bagavat\nAkulita\nZZzznotaword\n')      # pw-only, sch-only, true miss
-        payload = nw.build_worklist(path)
-    finally:
-        os.remove(path)
+        open(store, 'w', encoding='utf-8').close()
+        payload = nw.build_worklist(path, store=store)
     runnable = set(payload['no_pwg_runnable'])
     if 'Bagavat' not in runnable or 'Akulita' not in runnable:
         fail('no_pwg_runnable must contain the PW/SCH-only lemmas: %s' % sorted(runnable))
