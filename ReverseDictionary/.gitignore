@@ -1,0 +1,12 @@
+# This folder is a general personal materials dump (see README.md / INDEX.md) that also
+# happens to hold the reverse-dictionary research materials. Only the curated summary docs
+# and this session's .mdx conversions are tracked; everything else (raw manuscript drafts,
+# scanned literature, and — critically — unrelated personal/legal/business files) stays local.
+# See README.md "Commit scope" note before changing this.
+*
+!.gitignore
+!README.md
+!INDEX.md
+!*/
+!*.mdx
+!*_media/**
