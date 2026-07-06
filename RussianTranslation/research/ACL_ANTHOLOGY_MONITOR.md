@@ -1,6 +1,6 @@
 # ACL Anthology / NLP-for-DH Monitor
 
-_Created: 04-07-2026 · Last updated: 04-07-2026_
+_Created: 04-07-2026 · Last updated: 06-07-2026_
 
 Monthly monitor home for ACL Anthology and adjacent NLP-for-Digital-Humanities
 work relevant to the Sanskrit repos.
@@ -149,5 +149,73 @@ an `Actionable for us?` verdict and the concrete file/decision it touches.
   and evaluate it, per Bouthors et al. (entry 4).
 - **[venue]** Log **ISCLS** as target venue for the pwg_ru study in `Uprava/ARTICLES.md`
   (entry 10).
+
+## 06-07-2026 — Publication-grade layered TM: alignment + speech, and the three-gap map
+
+Added when scoping the **Publication-Grade Sa→Ru Translation Memory** (handoff H215):
+making the existing `corpus_lexicon`/`corpus_harvest` spine both an engine-retrieval input
+AND a citable resource, layered word+segment, ingesting scholarly *and* oral translations,
+with a reliability grade per unit. Two subsystems the 04-07 seed run never reached —
+**word/sentence alignment** and **speech-translation alignment** — get their own sections
+here, plus the summary map of "which of our three gaps each NLP direction closes".
+
+### The three publication-grade gaps → NLP directions (summary map)
+
+| Our gap | NLP direction it maps to | Canonical work |
+|---|---|---|
+| verse-level signal → **per-word gloss** ("publication-grade", not "somewhere in the verse") | embedding-based **word alignment** (no training) | SimAlign (Jalili Sabet 2020), awesome-align (Dou & Neubig 2021), eflomal — §G |
+| "publication-grade" = **reliability of each unit** | reference-free **Quality Estimation** → A/B/C grade | COMET / COMET-QE (Rei 2020), TransQuest — §B/§A judge lineage + §G below |
+| many translators of one verse | **multi-reference** + consensus | MBR-decoding, multi-reference eval — §B |
+| TM as **retrieval input** to the LLM engine | retrieval-augmented / fuzzy-match NMT | Neural Fuzzy Repair (Bulté & Tezcan 2019), kNN-MT (Khandelwal 2021) — §B entries 3–5 |
+| **oral corpus** (not yet formalized) | **speech-translation alignment** | WhisperX, MFA; MuST-C schema — §H |
+| citable, provenance-bearing resource | **data statements / datasheets**, TMX/XLIFF interchange | Bender-Friedman 2018, Gebru 2018 — §F |
+
+### G. Word & sentence alignment (touches L1 word-layer + L0 segment-layer of the TM)
+
+12. **Jalili Sabet et al., "SimAlign: High-Quality Word Alignments without Parallel
+    Training Data using Static and Contextualized Embeddings", Findings EMNLP 2020** —
+    [aclanthology.org/2020.findings-emnlp.147](https://aclanthology.org/2020.findings-emnlp.147/).
+    Word alignment straight from multilingual embeddings, **no training** and no bitext —
+    competitive with or better than statistical aligners on low-resource pairs.
+    `Actionable for us? YES.` A training-free **cross-check on the DeepSeek word-alignment**
+    already in `corpus_lexicon.jsonl` (L1) — run it as a second opinion, store an
+    `alignment_confidence`, and let disagreement route a unit to review instead of trusting
+    one aligner. Exactly the "verse-level → per-word gloss" upgrade in the gap map.
+
+13. **Dou & Neubig, "Word Alignment by Fine-tuning Embeddings on Parallel Corpora",
+    EACL 2021 (awesome-align)** — [aclanthology.org/2021.eacl-main.181](https://aclanthology.org/2021.eacl-main.181/).
+    Fine-tunes mBERT on available parallel data for higher alignment quality; supersedes
+    SimAlign when even a little Sa↔Ru bitext exists. `Actionable for us? EVALUATE.` We
+    *have* aligned pairs (the 1.09M lexicon) — awesome-align could be fine-tuned on them as
+    the higher-precision L1 aligner, SimAlign as the zero-shot fallback for new texts.
+
+14. **Thompson & Koehn, "Vecalign: Improved Sentence Alignment in Linear Time and Space",
+    EMNLP 2019** + **Feng et al., "Language-agnostic BERT Sentence Embedding (LaBSE)",
+    ACL 2022** — [aclanthology.org/D19-1136](https://aclanthology.org/D19-1136/) ·
+    [aclanthology.org/2022.acl-long.62](https://aclanthology.org/2022.acl-long.62/).
+    Embedding-based **sentence alignment** (Vecalign over LaBSE/LASER vectors), linear-time,
+    robust to insertions/deletions. `Actionable for us? YES — enables new ingest.` This is
+    how a **plain transcript or handout** (no pre-existing verse alignment) becomes L0 TM
+    units: LaBSE-embed both sides, Vecalign to pair Sanskrit ↔ Russian segments. The entry
+    path for scholar prose and oral-corpus handouts that Samudra's verse alignment can't cover.
+
+### H. Speech-translation alignment (touches the oral Sa→Ru corpus — new subsystem)
+
+15. **Bain et al., "WhisperX: Time-Accurate Speech Transcription of Long-Form Audio",
+    Interspeech 2023** — [arxiv.org/abs/2303.00747](https://arxiv.org/abs/2303.00747) ·
+    forced alignment via **Montreal Forced Aligner (MFA)**, McAuliffe et al., Interspeech 2017,
+    [montreal-forced-aligner.readthedocs.io](https://montreal-forced-aligner.readthedocs.io/).
+    Whisper ASR + phoneme-level **forced alignment** gives word-level timestamps on long
+    recordings. `Actionable for us? YES — the oral-corpus pipeline.` Lecture/reading audio →
+    Whisper (RU) → WhisperX/MFA timestamps → sentence segmentation → LaBSE-align (§G) to the
+    read Sanskrit → L0 units with `modality: oral` + time anchors. Formalizes the
+    "Устный санскритско-русский корпус"; coordinate with the `spoken-sanskrit-corpus` repo (H174).
+
+16. **Di Gangi et al., "MuST-C: a Multilingual Speech Translation Corpus", NAACL 2019** —
+    [aclanthology.org/N19-1202](https://aclanthology.org/N19-1202/).
+    The reference **schema** for a speech-translation corpus: aligned (audio segment,
+    transcript, translation) triples with speaker/segment metadata. `Actionable for us?
+    SCHEMA MODEL.` Adopt its triple layout for the oral corpus so it is a recognizable
+    speech-translation dataset at release, not a bespoke format — feeds the FAIR/DOI plan.
 
 _Dr. Mārcis Gasūns_
