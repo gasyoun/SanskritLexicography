@@ -20,7 +20,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 20 interfaces (16 live) · 37 data assets · 14 tools · 4 external stacks.
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 37 data assets · 14 tools · 4 external stacks.
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -213,6 +213,7 @@ first appearance where the repo predates it).
 | J15 | [SamudraManthanam corpus-FAQ](https://samskrtam.ru/corpus-faq/) | RU knowledge base via ZettelkastenWiki | 🟢 Live | the Russian corpus knowledge base | 07/26 | ZettelkastenWiki · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
 | J16 | [PWG article dashboard](https://gasyoun.github.io/SanskritLexicography/) | Per-entry PWG site with live `<ls>` scan links | 🟢 Live | a PWG entry with live `<ls>` scan-page links | 07/26 | Static (build_article_site.py) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) |
 | J17 | [Uprava articles dashboard](https://github.com/gasyoun/Uprava/tree/main/dashboard) | Private, local-only publication-pipeline board | 🟡 Beta | (local) the publication-readiness board over ARTICLES.md | 06/26 | HTML + articles.js · [Uprava](https://github.com/gasyoun/Uprava) |
+| J21 | [kosha data & tools directory](https://gasyoun.github.io/kosha/directory/) | Curated Sanskrit-NLP data + tools directory: our datasets (downloadable) + external stacks, schema.org Dataset JSON-LD | 🟢 Live | download a public dataset or find the external stack to call | 07/26 | Static (build_directory.py from datasets.json + external_tools.json) · [kosha](https://github.com/gasyoun/kosha/blob/main/scripts/build_directory.py) |
 
 ### K · Learning & platform apps
 
