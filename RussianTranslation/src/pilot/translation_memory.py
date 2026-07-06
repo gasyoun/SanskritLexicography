@@ -171,6 +171,14 @@ def _entry_time(row):
     return ''
 
 
+def _as_list(value):
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return value
+    return [value]
+
+
 def reusable(row):
     if not row:
         return False
@@ -187,7 +195,7 @@ def best_reusable(rows):
     candidates = [r for r in rows if reusable(r)]
     if not candidates:
         return None
-    superseded = {s for r in candidates for s in (r.get('supersedes') or []) if s}
+    superseded = {s for r in candidates for s in _as_list(r.get('supersedes')) if s}
     candidates = [r for r in candidates if not r.get('id') or r.get('id') not in superseded]
     if not candidates:
         return None
@@ -253,6 +261,12 @@ def reconstruct_cards(store_path, lang):
 
     entries, skipped = {}, Counter()
     for sub, rows in by_sub.items():
+        if any((r.get('provenance') or {}).get('partial_card') or
+               (r.get('provenance') or {}).get('missing_fragments') or
+               (r.get('provenance') or {}).get('missing_groups')
+               for r in rows):
+            skipped['partial-card'] += 1
+            continue
         shas = {(r.get('provenance') or {}).get('input_raw_sha256') for r in rows}
         shas.discard(None)
         if not shas:
@@ -1184,7 +1198,8 @@ def validation_ok(stats):
 def selftest():
     import tempfile
     # Two sub-cards; the second row-set disagrees on the source sha (must be skipped),
-    # the third is missing a translation (must be skipped), the fourth has no sha (skipped).
+    # the third is missing a translation (must be skipped), the fourth has no sha (skipped),
+    # and the fifth is a partial selfheal card (usable as output evidence, but not exact TM).
     rows = [
         {'subcard': 'x~~h0_1', 'key1': 'x', 'iast': 'xa', 'h': 'xa', 'sense_tag': '1',
          'ru': 'один', 'de': 'eins', 'equivalence_type': 'equivalent', 'source_type': 'attested',
@@ -1202,6 +1217,10 @@ def selftest():
          'ru': '', 'de': 'fuenf', 'provenance': {'input_raw_sha256': 'DDD'}},         # missing ru
         {'subcard': 'w~~h0_1', 'key1': 'w', 'iast': 'wa', 'h': 'wa', 'sense_tag': '1',
          'ru': 'шесть', 'de': 'sechs', 'provenance': {}},                             # no sha
+        {'subcard': 'p~~h0_1', 'key1': 'p', 'iast': 'pa', 'h': 'pa', 'sense_tag': '1',
+         'ru': 'семь', 'de': 'sieben',
+         'provenance': {'input_raw_sha256': 'EEE', 'partial_card': True,
+                        'missing_fragments': ['g1:f2']}},                              # partial
     ]
     fd, store = tempfile.mkstemp(suffix='.jsonl'); os.close(fd)
     fd, out = tempfile.mkstemp(suffix='.json'); os.close(fd)
@@ -1220,6 +1239,7 @@ def selftest():
         assert skipped['sha-disagreement'] == 1, skipped
         assert skipped['incomplete-ru'] == 1, skipped
         assert skipped['no-raw-sha'] == 1, skipped
+        assert skipped['partial-card'] == 1, skipped
         # build + load + lookup round-trip
         path, n, _ = build(store, 'ru', out=out)
         assert n == 1, n
@@ -1308,6 +1328,9 @@ def _trust_selftest():
     assert best_reusable([good_old, good_new])['id'] == 'new'
     assert best_reusable([good_new, reviewed])['id'] == 'rev'
     assert best_reusable([blocked]) is None
+    superseded = dict(good_new, id='newer', supersedes='old')
+    assert best_reusable([good_old, superseded])['id'] == 'newer', \
+        'string supersedes must be treated as one id, not iterated character-by-character'
     mixed_rows = [
         {'review_status': 'approved', 'gate_status': 'human_reviewed'},
         {'review_status': 'rejected', 'gate_status': 'defect'},
