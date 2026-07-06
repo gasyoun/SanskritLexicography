@@ -1,0 +1,45 @@
+#!/bin/sh
+# Refuse commits made directly in the canonical SanskritLexicography main-tree
+# checkout — force all local work through a git worktree instead.
+#
+# Why: adopted 06-07-2026 after the H214 tree-intermix incident — a Codex
+# session and a Claude session implemented the same handoff in this shared
+# working directory at the same time, undetected until PR time. Git-level
+# enforcement is the only mechanism that binds BOTH tools identically: neither
+# Claude Code hooks nor Codex's `notify` lifecycle can see the other agent's
+# session, but both invoke real `git commit` through this same hooks path
+# (worktrees of this repo all share .git/config, so this applies to every
+# worktree unless a fresh clone re-sets core.hooksPath — see AGENTS.md/CLAUDE.md
+# Session state protocol).
+#
+# Escape hatch: ALLOW_MAIN_TREE_COMMIT=1 git commit ...  (deliberate override,
+# e.g. for a genuinely solo quick fix with no concurrent session risk).
+
+CANONICAL_MAIN_TREE="C:/Users/user/Documents/GitHub/SanskritLexicography"
+
+if [ -n "$ALLOW_MAIN_TREE_COMMIT" ]; then
+  exit 0
+fi
+
+toplevel=$(git rev-parse --show-toplevel 2>/dev/null)
+# Normalize backslashes/case for a Windows-safe comparison.
+norm_toplevel=$(printf '%s' "$toplevel" | tr 'A-Z' 'a-z' | tr '\\' '/')
+norm_canonical=$(printf '%s' "$CANONICAL_MAIN_TREE" | tr 'A-Z' 'a-z' | tr '\\' '/')
+
+if [ "$norm_toplevel" = "$norm_canonical" ]; then
+  echo "" >&2
+  echo "BLOCKED: direct commit in the shared SanskritLexicography main tree." >&2
+  echo "" >&2
+  echo "This checkout is used by multiple concurrent sessions (Claude Code +" >&2
+  echo "Codex) and committing here risks a repeat of the H214 tree-intermix" >&2
+  echo "incident (06-07-2026). Do your work in a git worktree instead:" >&2
+  echo "" >&2
+  echo "  git worktree add -b <branch> ../SanskritLexicography-<slug> origin/master" >&2
+  echo "" >&2
+  echo "Deliberate override (solo quick fix, no concurrent-session risk):" >&2
+  echo "  ALLOW_MAIN_TREE_COMMIT=1 git commit ..." >&2
+  echo "" >&2
+  exit 1
+fi
+
+exit 0
