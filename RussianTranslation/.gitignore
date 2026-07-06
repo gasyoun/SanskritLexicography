@@ -146,3 +146,9 @@ pwg_ru/reglue/synth_inputs/*.de.txt
 # feed decisions.json to /decisions-apply). Only the generator + the metadata-only
 # *_sample.jsonl audit trails (no translations) are committed.
 review/h180_*_sheet.html
+
+# H180 Arm-B synthesize-first outputs (synth_de_first.py + Opus-4.8 synth agents):
+# the merged German entries embed `de` from the unpublished store (repo public) — local
+# only. The numeric scores table (no text) IS committed.
+pwg_ru/reglue/synth_outputs/*
+!pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv
