@@ -252,7 +252,7 @@ recovery mechanism of its own — flagged as a follow-up, not yet fixed.
    can hit the same tag-collision pattern — worth a SENSE-DUPE re-check on
    promoted cards once the fix has run.
 
-### Phase 9 — nominal-side PWG-miss gap fixed in the worklist; render-path gap flagged as `@DECIDE` (H206, 07-05)
+### Phase 9 — nominal-side PWG-miss gap fixed; H214 no-PWG lane implemented (H206/H214, 07-05/07-06)
 
 [`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md)
 measured that **~36% of the local headword union carries zero PWG record**
@@ -274,32 +274,32 @@ against `dm.index('pw'|'sch'|'pwkvn')`: of **1,743 total PWG misses**, **416**
 across the 3 wordlists (Сборное ядро overlaps pril5/pril10), that's **232
 unique lemmas**.
 
-**Fixed:** `build_worklist()` now splits `misses` into `other_layer_hits`
+**H206 fixed:** `build_worklist()` now splits `misses` into `other_layer_hits`
 (tagged with which of `pw`/`sch`/`pwkvn` they hit) and `true_misses` (absent
 everywhere), both surfaced in the payload and the committed `.coverage.md`
 reports, instead of one undifferentiated `miss_keys` bucket.
 
-**NOT fixed — flagged as a new `@DECIDE`, not forced:** `other_layer_hits`
-are deliberately NOT added to `runnable_remaining`. `_pilot_gen_merged.gen_card()`
-hard-requires a non-empty PWG buf (`pwg_bufs = pwg_idx.get(fk, []); if not
-pwg_bufs: return None`) — the PWG portrait/microstructure step
-(`microstructure.portrait()`) is written specifically against the PWG record
-shape (header/sense-tree conventions), and there is no card-building path
-today for a PW/SCH/PWKVN-only headword (no PWG "MAIN ENTRY" section to anchor
-the portrait, sense tree, or grammar/POS extraction). Queuing these into
-`runnable_remaining` as-is would just feed the runner keys it silently
-treats as `MISSING in PWG` — papering over the drop with a different failure
-mode, not fixing it. `dict_merge.py` itself is unaffected (`merged()` already
-handles a headword with any subset of layers correctly; the bug was only in
-how the worklist and the card-builder *consume* it).
+**H214 implemented:** M.G. ruled the old portrait-design `@DECIDE`: PWG-missing
+but PW/SCH/PWKVN/NWS-present lemmas are needed translations and should render as
+standalone supplement-chain cards, without inventing a PWG base portrait or
+sense tree. `_pilot_gen_merged.gen_no_pwg_card()` now reuses `dict_merge.merged()`
+to emit one labeled sub-card per available non-PWG layer (`<safe>~~h0_zz_<layer>`),
+with a minimal portrait carrying `source_profile: "no_pwg_supplement_chain"`.
+`gen_opt_harness2.py` carries that marker into workflow meta, and
+`promote_final_cards.py` carries it into row provenance alongside the first-class
+`layer` field.
 
-The 232 deduplicated lemmas are held in the committed
+`nominals_worklist.py` deliberately keeps these separate from PWG-rooted
+`runnable_remaining`: the payload now exposes `no_pwg_runnable`,
+`no_pwg_runnable_count`, and `no_pwg_promoted_count`. That separation is
+intentional because the rows rest on different-vintage source material, even
+though they are now runnable through the nominal harness.
+
+The 232 deduplicated lemmas remain documented in the committed
 [`src/pilot/lexical_cores/pwg_miss_backfill_queue.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lexical_cores/pwg_miss_backfill_queue.md)
-backfill queue (key1/IAST/layer(s)/source wordlist(s)), ready to promote the
-moment a `@DECIDE` rules how to render a no-PWG card (e.g., a PW/SCH/PWKVN-
-rooted portrait variant of `gen_card()`, or a simpler raw-only card format for
-this minority case). **Do not rediscover this as a fresh bug** — the worklist
-fix is done; only the render path is open.
+backfill queue (key1/IAST/layer(s)/source wordlist(s)). **Do not rediscover this
+as a fresh bug** — both the worklist drop and the render path are fixed; what
+remains is ordinary lane scheduling/review.
 
 ## Recurring failure patterns (read this before assuming something new is broken)
 

@@ -108,6 +108,11 @@ def provenance(entry, subkey, model_version):
     meta = entry['meta']
     hashes = (meta.get('input_hashes') or {}).get(subkey) or {}
     card = entry.get('card') or {}
+    # H214: prefer the PER-CARD source-material profile; fall back to the window-level marker
+    # for older harness outputs that only carried meta.source_profile.
+    profiles = meta.get('source_profiles')
+    source_profile = (profiles.get(subkey) if isinstance(profiles, dict)
+                      else meta.get('source_profile'))
     prov = {
         'model': MODEL,
         'model_version': model_version,
@@ -115,6 +120,11 @@ def provenance(entry, subkey, model_version):
         'schema_version': meta.get('schema_version'),
         'root': meta.get('root'),
         'safe_root': meta.get('safe_root'),
+        # H214: per-card source-material profile ('no_pwg_supplement_chain' |
+        # 'pwg_with_supplements' (MIXED) | 'pwg_only' | 'pwg_supplement_subcard' | None) —
+        # pairs with the first-class `layer` field so the QA chain / export know each row's
+        # vintage. Filter 'pwg_with_supplements' to find every mixed card.
+        'source_profile': source_profile,
         'rootmap_sha256': meta.get('rootmap_sha256'),
         'input_raw_sha256': hashes.get('raw_sha256'),
         'input_portrait_sha256': hashes.get('portrait_sha256'),
