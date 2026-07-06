@@ -30,11 +30,32 @@ First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/
   (no rootmap) and in that mode the glue gates crash (H201 caveat) — so these no-PWG cards can't be
   mechanically vetted before promotion.
 
-**Decision: NOT promoted** (pushing `{{Lbody}}`-leak / untranslated rows would pollute the store).
-**Two blockers to clear before the no-PWG lane is drainable:** (1) the supplement-card translation
-quality/masking leak + low single-card yield; (2) a nominal-compatible audit path. Do **not** scale to
-the full 232 lemmas until both are fixed. wf_outputs kept at `src/pilot/output/wf_output.no_pwg_w1*.json`
-(gitignored) for the fix session to resume from.
+**Initial decision: NOT promoted** (pushing `{{Lbody}}`-leak / untranslated rows would pollute the store).
+
+### ✅ RESOLUTION (same day, 2026-07-06, Opus 4.8) — both blockers fixed, 5 verified-clean promoted
+
+- **Blocker 1 root-caused + fixed:** `{{Lbody=NNNN}}` is not a masking bug — it is a Cologne
+  **alternate-headword pointer** (record `205646.1` `CAyA` reuses the body of primary entry `205646`
+  `CAya`; ~12,186 PW records / 7 % are these). Added `dict_merge.resolve_lbody()` + `id_index()`
+  (L-id → body) and applied it in `merged()`, so every consumer now gets the referenced entry's real
+  gloss instead of a bare pointer (e.g. `CAyA` pw → `…bedeutet nach J. BURGESS auch {%Abschrift,
+  Copie%}`). Lang-agnostic (SHARED); pinned by `dict_merge.py resolve_lbody selftest`.
+- **Blocker 2 fixed:** `audit_window.py` now **skips the root-glue step for a nominal / no-rootmap
+  window** (`meta.nominal` or no rootmap on disk) instead of crashing, so the content gates
+  (translation / coverage / sense-dupes / nws / prompt-semantic) run to completion and give a real
+  clean/requeue verdict.
+- **Promoted 5 verified-clean** (audit clean, 0 flags): `Bagavat~~h0_zz_nws00`, `SAKA~~h0_zz_nws00`,
+  `SAKA~~h0_zz_pw`, `devI~~h0_zz_pw`, `duzkfta~~h0_zz_pw` → store **11,163 → 11,185** (+22 sense rows,
+  `ai_translated`, held for G5). Every row carries `layer` + `provenance.source_profile =
+  no_pwg_supplement_chain`. TM rebuilt (2,301 cards). The audit correctly **rejected 2 of the 7**
+  leak/quality-clean candidates (`devI~~h0_zz_nws00`, `mAyA~~h0_zz_nws00` — NWS F12 owner
+  misattribution + coverage-over), which is why only 5, not 7, were promoted.
+
+**Still open before scaling to the full 232:** the low single-card yield (~36 % this window; stochastic
+StructuredOutput failures on masked nominal supplement cards) is a **throughput** issue, not a
+correctness one — the Lbody fix removes one failure class but the strict-key-echo / Workflow-runtime
+interaction remains to be root-caused. Re-run w1's still-null keys (now Lbody-resolved) before adding
+new lemmas. wf_outputs kept at `src/pilot/output/wf_output.no_pwg_w1*.json` (gitignored).
 
 ## Stage A+B summary (2026-06-29) — all **Sonnet**, no Opus
 

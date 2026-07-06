@@ -418,7 +418,16 @@ def main():
             gates['nws']['stdout'] += '  quarantined        : %s\n' % ' '.join(rejected)
 
     glue = None
-    if args.root:
+    # Root-article glue reassembles a PWG root's sub-cards from its rootmap. A NOMINAL window
+    # (keys-based, meta.nominal / no rootmap on disk — e.g. the H214 no-PWG supplement lane) has
+    # no rootmap, so root_glue_translated crashes there (H201/H214 caveat). Skip glue cleanly in
+    # that case: the content gates above still vet the cards; there is simply no root to glue.
+    rootmap_path = os.path.join(OUT, safe_name(args.root) + '.rootmap.json') if args.root else None
+    nominal_window = bool((wf_meta or {}).get('nominal')) or (
+        bool(args.root) and not os.path.exists(rootmap_path))
+    if args.root and nominal_window:
+        print('\n=== glue %s: skipped (nominal / no-rootmap window) ===' % args.root)
+    elif args.root:
         print('\n=== glue %s ===' % args.root)
         res = run_py([os.path.join(SRC, 'root_glue_translated.py'), args.root])
         print(res['stdout'].rstrip())
