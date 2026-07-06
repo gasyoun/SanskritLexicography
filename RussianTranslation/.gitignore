@@ -139,3 +139,10 @@ src/pwg_ru_relationships.jsonl
 pwg_ru/learner_scores.tsv
 pwg_ru/reglue/*.json
 pwg_ru/reglue/synth_inputs/*.de.txt
+
+# H180 human review sheets (build_h180_review_sheets.py) — the generated HTML
+# voting sheets embed translated `ru` bodies from the local-only/unpublished store,
+# and THIS REPO IS PUBLIC, so the sheets stay local (open from file://, vote, then
+# feed decisions.json to /decisions-apply). Only the generator + the metadata-only
+# *_sample.jsonl audit trails (no translations) are committed.
+review/h180_*_sheet.html
