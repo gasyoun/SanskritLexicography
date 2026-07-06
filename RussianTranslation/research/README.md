@@ -21,6 +21,16 @@ method · output table · preliminary priors), runnable in a fresh chat or by an
 the project's handoff idiom (cf. `src/NWS_AUDIT_HANDOFF.md`). Findings feed back into the
 merged-translate prompt + the (to-build) root segmenter/glue before scaling.
 
+## Living monitors (standing references, not one-off studies)
+
+Unlike the design studies above (each answers one question, then closes), these are
+**append-only living references** consulted repeatedly — the permanent home for reusable
+classifications/method-maps so they never get stranded in an ephemeral handoff:
+
+| Doc | What it holds |
+|---|---|
+| [ACL_ANTHOLOGY_MONITOR.md](ACL_ANTHOLOGY_MONITOR.md) | Monthly ACL-Anthology / NLP-for-DH monitor mapped onto the pwg_ru subsystems (judge · TM · terminology · structured-output · Sanskrit-NLP · data-docs · **word/sentence alignment** · **speech-translation alignment**), each entry with an `Actionable for us?` verdict. Includes the **"three publication-grade TM gaps → NLP directions"** map (verse→word alignment, per-segment QE grading, retrieval-TM). Codex automation `monthly-acl-anthology-sanskrit-nlp-monitor` appends to it. |
+
 
 ## Spawned as handoff chats (2026-06-23)
 Each brief was spun off as its own cold background-task chat (one click to start in a
