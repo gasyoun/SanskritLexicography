@@ -4,6 +4,38 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-06 — `no_pwg_w1` (H214 no-PWG lane, FIRST run) — gen **Sonnet 5** / orchestration **Opus 4.8** — ⚠️ VALIDATED-NOT-PROMOTED
+
+First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
+**no-PWG supplement-chain lane** — 24 PWG-missing headwords (of the 232-lemma backfill queue) →
+**58 supplement sub-cards** (`<key>~~h0_zz_<layer>`, pw/sch/pwkvn/nws). Branch
+`pwg-ru/no-pwg-lane-drain-w1`. Preflight cost-gate: verdict `ok`, run-now-low, ~497 K tok / ~$0.94.
+
+**Outcome: the render/plumbing path is VALIDATED end-to-end, but the output is NOT promotable yet.**
+
+- **Plumbing works:** gen → nominal harness (keymap `subcard→key1`) → Workflow → wf_output →
+  `source_profile`/`layer` all correct per row. Individual cards translate correctly when they
+  land (e.g. `duṣkṛta~~h0_zz_pw` = a clean, complete RU card).
+- **Throughput is poor (~36%):** 3 Workflow passes (batched → 9-batch → 46 single-card,
+  `--no-tm`), ~3.4 M subagent tokens total → **only 21 / 58 distinct sub-cards ok** (11 headwords).
+  Passes 1–2 tripped the budget kill-switch (multi-card StructuredOutput failures binary-split into
+  an agent-budget cascade); single-card mode (pass 3, `--output-budget=1`) removed the cascade but
+  still only ~15–20 %/pass, **stochastic** (a card null in passes 1–2 succeeds in pass 3) — abnormally
+  low vs the ~90 % a clean rerun gives elsewhere. Suspected: strict subcard-key echo interacting with
+  the masked nominal prompt + Workflow-runtime agent limits.
+- **Quality is mixed:** of the 21 "ok", only ~7 are clean full RU translations; the rest are broken
+  (`{{Lbody=205646}}` body-id leak into `russian`, e.g. `_c_ay_a~~h0_zz_pw`), degenerate cross-ref
+  stubs (no gloss to translate), or carry untranslated `{%…%}` spans.
+- **No nominal audit gate:** `audit_window.py` needs `--allow-stale` for a keys-based nominal window
+  (no rootmap) and in that mode the glue gates crash (H201 caveat) — so these no-PWG cards can't be
+  mechanically vetted before promotion.
+
+**Decision: NOT promoted** (pushing `{{Lbody}}`-leak / untranslated rows would pollute the store).
+**Two blockers to clear before the no-PWG lane is drainable:** (1) the supplement-card translation
+quality/masking leak + low single-card yield; (2) a nominal-compatible audit path. Do **not** scale to
+the full 232 lemmas until both are fixed. wf_outputs kept at `src/pilot/output/wf_output.no_pwg_w1*.json`
+(gitignored) for the fix session to resume from.
+
 ## Stage A+B summary (2026-06-29) — all **Sonnet**, no Opus
 
 | root | cards | Max tokens | clean | clean % | gates: nws / sense_dupes |
