@@ -1,0 +1,3612 @@
+> DudenSkt
+>
+> Sorting Program for Sanskrit Files
+>
+> Quick Reference for Programmers
+>
+> DudenSkt is an extremely fast 80386 assembly language program with a Basic shell designed for sorting mixed Sanskrit and English/German ASCII textfiles with this modified 437 encoding:
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>2</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>3</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>4</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>5</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>6</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>7</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>8</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>9</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>10</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>11</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>12</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>13</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>14</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>15</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>032</p>
+</blockquote></td>
+<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><blockquote>
+<p>"</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>#</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>$</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>%</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>&amp;</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"><blockquote>
+<p>*</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>+</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>048</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>2</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>3</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>4</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>5</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>6</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>7</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>8</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>9</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>&lt;</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>&gt;</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>?</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>064</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>@</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>A</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>B</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>C</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>D</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>E</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>F</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>G</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>H</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>J</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>K</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>L</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>M</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>N</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>0</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>080</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>P</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Q</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>R</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>S</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>T</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>U</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>V</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>W</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>X</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Y</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>Z</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>\</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>096</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>b</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>c</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>d</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>e</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>f</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>g</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>i</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>j</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>k</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>m</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>n</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>0</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>112</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>p</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>q</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>r</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>S</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>t</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>U</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>V</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>W</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>X</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>y</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>Z</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>128</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>c;</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ü</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>e</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Ģ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>e</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>e</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>e</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>i</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>A</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>A</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>144</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>E</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>CE</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>lE</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>6</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>b</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>u</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>u</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>y</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>b</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>ü</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>&lt;:</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>[</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>'I</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>R</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>f</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>160</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>i</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>6</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>u</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>n</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>:N</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>9</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Q</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>«</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>»</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>176</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>i</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>9</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>11</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>i</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>īJ</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>JJ</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>l</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>192</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>L</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>_L</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>T</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>-</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>+</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1!</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>rF</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>Jb</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>īī'</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>r</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>=</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>lr</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>208</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>JL</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>T</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1r</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>IL</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>'=</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>F</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ŗr</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ļ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>+</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>J</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>r</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>•</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>•</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>224</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>a</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>l</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>u</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ŗ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ŗ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ļ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>n</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>n</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>n</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>$</p>
+</blockquote></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>240</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>ņ</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>±</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>�</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>r</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>J</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><blockquote>
+<p>2</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>•</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> Yellow = separators; Red = German diacritics; Green = Sanskrit diacritics
+>
+> DudenSkt can sort large textfiles (e.g. the entire Mahabharata). The textfiles must consist of lines of text separated by carriage return linefeed (hexadecimal 0D 0A). Each line may have a length of up to 2000 characters, but only the first 100 characters of each line will be sorted (sort depth).
+>
+> With the help of KOKO (see separate manual) any existing textfile can be converted to the DudenSkt encoding, provided that [either]{.underline} the existing textfile does not contain more diacritics than the red and green diacritics shown in the above encoding table [or]{.underline} the existing textfile can be reduced without loss of information to the DudenSkt encoding for sorting purposes, e.g. by converting uppercase Sanskrit diacritics to lowercase Sanskrit diacritics via KOKO.
+>
+> The program DudenSkt is available [only to professional programmers]{.underline} who are able to convert textfiles existing in other formats to flawless textfiles in the file format required for DudenSkt and who are able to convert the sorted textfiles back to the original format, if needed. Therefore, no effort has been made to make the program DudenSkt \"user-friendly\" for ordinary PC users.
+>
+> DudenSkt can sort the following types of textfiles:
+>
+> [1. Simple Sanskrit Textfiles]{.underline}
+>
+> Simple files are lists of Sanskrit words only or consist of Sanskrit verse lines only.
+>
+> Before sorting:
+>
+> dharmakÍetre kurukÍetre samavetÀ yuyutsavaÏ /1.1./ mÀmakÀÏ pÀÉËavÀÌ caiva kim akurvata saÎjaya //1.1.// dÃÍÊvÀ tu pÀÉËavÀnÁkaÎ vyÂËhaÎ duryodhanas tadÀ /1.2./ ÀcÀryam upasaÎgamya rÀjÀ vacanam abravÁt //1.2.//
+>
+> After sorting:
+>
+> ÀcÀryam upasaÎgamya rÀjÀ vacanam abravÁt //1.2.// dÃÍÊvÀ tu pÀÉËavÀnÁkaÎ vyÂËhaÎ duryodhanas tadÀ /1.2./ dharmakÍetre kurukÍetre samavetÀ yuyutsavaÏ /1.1./ mÀmakÀÏ pÀÉËavÀÌ caiva kim akurvata saÎjaya //1.1.//
+>
+> [Separator \"\\\"]{.underline}
+>
+> Any string enclosed by a pair of \"\\\" will be ignored during sorting so that intervening remarks or -- in the case of verse indexes -- prefixed numbers will not disturb the Sanskrit sorting order.
+>
+> Example of a pada index with prefixed book-chapter-verse numbering:
+>
+> Before sorting:
+>
+> \\60230011\\dharmakÍetre kurukÍetre samavetÀ yuyutsavaÏ
+>
+> \\60230013\\mÀmakÀÏ pÀÉËavÀÌ caiva kim akurvata saÎjaya
+>
+> \\60230021\\dÃÍÊvÀ tu pÀÉËavÀnÁkaÎ vyÂËhaÎ duryodhanas tadÀ
+>
+> \\60230023\\ÀcÀryam upasaÎgamya rÀjÀ vacanam abravÁt
+>
+> After sorting:
+>
+> \\60230023\\ÀcÀryam upasaÎgamya rÀjÀ vacanam abravÁt
+>
+> \\60230021\\dÃÍÊvÀ tu pÀÉËavÀnÁkaÎ vyÂËhaÎ duryodhanas tadÀ
+>
+> \\60230011\\dharmakÍetre kurukÍetre samavetÀ yuyutsavaÏ
+>
+> \\60230013\\mÀmakÀÏ pÀÉËavÀÌ caiva kim akurvata saÎjaya
+>
+> These textfiles consist of lines with the following structure:
+>
+> [Sanskrit text\|number]{.underline}
+>
+> Numbers must be integer numbers in range 1\...999999999 (or up to 1999999999), i.e. 9 digits plus
+>
+> -- if needed -- \"1\" as prefix digit to allow for zero-padding of topmost partial number, see below.
+>
+> Before sorting:
+>
+> dharmakÍetre\|1060230011 i.e. Prefix \"1\", Book 06, Chapter 023, Verse 001, Pada 1 kurukÍetre\|1060230011
+>
+> samavetÀ\|1060230011 kurukÍetre\|1010031441 kurukÍetre\|1010031453 kurukÍetre\|1010950075
+>
+> After sorting:
+>
+> kurukÍetre\|1010031441, 1010031453, 1010950075, 1060230011 dharmakÍetre\|1060230011
+>
+> samavetÀ\|1060230011
+>
+> [Separator \"\|\"]{.underline}
+>
+> The sequence after the separator \"\|\" must be an integer number. To guarantee correct sorting, chapter-verse numbers must be zero-padded (except the topmost book number). For instance:
+>
+> • If the text comprises 20 [books,]{.underline} they may be numbered without zero-padding: 1, 2, 3 \... 19, 20
+>
+> • If each book comprises up to 20 [chapters]{.underline}, they must be zero-padded: 01, 02, 03 \...
+>
+> • If each chapter comprises up to 200 [verses,]{.underline} they must be zero-padded: 001, 002, 003 \...
+>
+> In above case, numbers following \"\|\" would have two different formats: \"bccvvv\" [or]{.underline} \"bbccvvv\". If you need the topmost number zero-padded, you must prefix the digit \"1\", format: 1bbccvvv. E.g.: book 2, chapter 3, verse 4 would be encoded 10203004 (1+02+03+004) instead of 203004.
+>
+> [Sort Depth of Number References:]{.underline}
+>
+> Up to 1000 number references for each single Sanskrit word are subsorted and packed into one large string, whereby the sorted number references are separated by commas.
+>
+> If there are more than 1000 references to one single word, e.g. in the case of function words like \"ca = and\" (\"ca\" occurs more than 30,000 times in the Mahabharata!), only 1000 references will be sorted and packed. As a warning the number 1999999999 will be appended. Example:
+>
+> ca\|1010010115, 1010010143, 1010010211, 1010010253, 1010010263, \..., 1999999999
+>
+> If you need all references of \"ca\" etc., you will have to split a giant file into several smaller files.
+>
+> These textfiles consist of lines with the following structure:
+>
+> [Sanskrit word=English (or German) word]{.underline}
+>
+> You may also add number references. In this case the textfile has the enhanced structure:
+>
+> [Sanskrit word=English (or German) word\|number]{.underline}
+>
+> [Separator \"=\"]{.underline}
+>
+> The string [before]{.underline} \"=\" is sorted according to the Devanagari alphabet, and the string [after]{.underline} \"=\" is sorted according to DUDEN: Lower and uppercase letters are treated as if they were the same. In addition, German umlauts are sorted, as if they were non-umlauts, and eszett is sorted as ss.
+>
+> English words are sorted according to the sequence of the entries in English dictionaries.
+>
+> Before sorting:
+>
+> paralokaÏ = Jenseits\|1752
+>
+> gam, gacchati, 1. = erlangen\|1669 param, Konj. = jedoch\|881
+>
+> gam, gacchati, 1. = gehen\|2 parama, Superl. = größt\|1859 gam, gacchati, 1. = aufsuchen\|107 param, Adv. = sehr\|1508
+>
+> parama, Superl. = größt\|1860
+>
+> After sorting:
+>
+> gam, gacchati, 1. = aufsuchen\|107 gam, gacchati, 1. = erlangen\|1669 gam, gacchati, 1. = gehen\|2 param, Adv. = sehr\|1508
+>
+> param, Konj. = jedoch\|881
+>
+> parama, Superl. = größt\|1859, 1860 paralokaÏ = Jenseits\|1752
+
+Ulrich Stiehl, 8th March, 2003
+
+> Excerpt from Program Source
+>
+> The complete sorting order is shown in every detail in this excerpt from the assembly program.
+>
+> [1. Data Section Duden (German and English)]{.underline}
+>
+> DATA D01 AS7STRC0MP
+>
+> D01A eqU 100 S0rtiertiefe 100 + 00 Endmarker
+>
+> V0rab geprüfte S0nderc0deS in C0detab mit Wert 00
+>
+> trenner RightString nach \" \" Wird ign0riert
+>
+> f1ipper MidString ZWiSchen \" \\ \\ \" Wird ign0riert
+>
+> eSZett \"�\" Wird in \"SS\" UmgeWande1t S0fern neUString \< maX1en
+>
+> D01B eqU 124 \" \" D01C eqU 092 \"\\\" D01D eqU 225 \"�\"
+>
+> NeUStringS Str1\$ Und Str2\$ nach K0nVertierUng
+>
+> D01E db 100 dUp 1 100 + 1 101 + 1 für A1ign 102
+>
+> db 2 dUp 0
+>
+> D01F db 100 dUp 1
+>
+> db 2 dUp 0
+>
+> MitS0rtierte S0nderc0deS
+>
+> 032 11 \" \" Space bei Bedarf mitS0rtieren
+>
+> 044 12 \" \" K0mma bei Bedarf mitS0rtieren
+>
+> 035 01 \"#\" WbrterbUchtrenner
+>
+> 061 02 \" \" W0rtpaar Trenner
+>
+> 033 03 \" \" V0rk0de
+>
+> 036 04 \"\$\" V0rk0de
+>
+> 064 05 \"@\" V0rk0de
+>
+> D01G dW 9901h SignatUr 01
+>
+> db \"aaa\>\" C0detab Startmarker
+
+```rst-table
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > D01H db 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 000 | > Ctr1    | > Zeichen     |
++:=============+:=====+:=====+:=====+:=====+:=====+:=====+:=====+:======+:==========+:==============+
+| > db 00      | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 008 | > Ctr1    | > Zeichen     |
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > db 00      | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 015 | > Ctr1    | > Zeichen     |
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > db 00      | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 00 | > 024 | > Ctr1    | > Zeichen     |
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > db 11      | > 03 | > 00 | > 01 | > 04 | > 00 | > 00 | > 00 | > 032 | > 03      | > \# 01 \$ 04 |
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > db 00      | > 00 | > 00 | > 00 | > 12 | > 00 | > 00 | > 00 | > 040 | > \" \"   | > 12          |
++--------------+------+------+------+------+------+------+------+-------+-----------+---------------+
+| > db 48      | > 49 | > 50 | > 51 | > 52 | > 53 | > 54 | > 55 | > 048 | > \"0 7\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 56      | > 57 | > 00 | > 00 | > 00 | > 02 | > 00 | > 00 | > 056 | > \"8 9\" \" \" 02        |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 05      | > 65 | > 66 | > 67 | > 68 | > 69 | > 70 | > 71 | > 064 | > @ 06 \"A G\"            |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 72      | > 73 | > 74 | > 75 | > 76 | > 77 | > 78 | > 79 | > 072 | > \"H 0\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 80      | > 81 | > 82 | > 83 | > 84 | > 85 | > 86 | > 87 | > 080 | > \"P W\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 88      | > 89 | > 90 | > 00 | > 00 | > 00 | > 00 | > 00 | > 088 | > \"X Z\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 00      | > 65 | > 66 | > 67 | > 68 | > 69 | > 70 | > 71 | > 096 | > \"a g\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 72      | > 73 | > 74 | > 75 | > 76 | > 77 | > 78 | > 79 | > 104 | > \"h 0\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 80      | > 81 | > 82 | > 83 | > 84 | > 85 | > 86 | > 87 | > 112 | > \"p W\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+| > db 88      | > 89 | > 90 | > 00 | > 00 | > 00 | > 00 | > 00 | > 120 | > \"X Z\"                 |
++--------------+------+------+------+------+------+------+------+-------+---------------------------+
+```
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>67</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>67</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>128</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>"c;üeaaaaĢ"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>73</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>73</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>73</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>136</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"eee11iAA"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>144</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ECElE6b0uu"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>89</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>67</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>76</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>89</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>80</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>70</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>152</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ybü&lt;:['IRf"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>73</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>78</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>78</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>160</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ai6un:N9Q"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>168</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>176</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>184</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>192</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>200</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>208</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>216</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> SanSkrit C0deS mitS0rtieren damit g1eiche Wbrter g1eich Sind
+>
+> db 00h 00h 61h 63h 65h 66h 67h 68h 224 \"a�\" + \"aluŗŗļ\" db 73h 78h 7Dh 79h 7Bh 8Ch 8Dh 6Dh 232 \"nnn \"
+>
+> db 6Eh 00h 00h 00h 00h 00h 00h 00h 240 \"ņ\" + S0nderZ
+>
+> db 00h 00h 00h 00h 00h 00h 00h 00h 248 S0nderZeichen
+>
+> Für n0rma1e deUtSche S0rtierUng dieSen B10ck nehmen
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>224</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>225 "�"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>232</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GriechiSch</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>240</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>S0nderZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>248</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>S0nderZeichen</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> db \"\<ZZZ\" C0detab Endmarker
+>
+> 2\. Data Section Sanskrit
+>
+> DATA D07 AS7SANSC0MP
+>
+> D07A eqU 100 S0rtiertiefe 100 + 00 Endmarker
+>
+> V0rab geprüfte S0nderc0deS in C0detab mit Wert 00
+
+```rst-table
++-----------+----------------------+------+------+------+-----------+-------------+
+| > trenner | > RightString nach   | > \" |      |      | > \" Wird | > ign0riert |
++:==========+:=====================+:=====+:====:+:====:+:==========+:============+
+| > f1ipper | > MidString ZWiSchen | > \" | > \\ | > \\ | > \" Wird | > ign0riert |
++-----------+----------------------+------+------+------+-----------+-------------+
+```
+
+
+```rst-table
++--------+-------+-------+--------+
+| > D07B | > eqU | > 124 | \" \"  |
++:=======+:======+:======+=======:+
+| > D07C | > eqU | > 092 | \"\\\" |
++--------+-------+-------+--------+
+```
+
+
+> NeUStringS Str1\$ Und Str2\$ nach K0nVertierUng
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>D07E</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>100</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>dUp</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>100</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>+</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>101 + 1 für A1ign</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>102</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>2</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>dUp</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>D07F</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>100</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>dUp</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>1</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: center;"><blockquote>
+<p>2</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>dUp</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0</p>
+</blockquote></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+> MitS0rtierte S0nderc0deS
+
+```rst-table
++-------+------+---------+
+| > 035 | > 01 | > \"#\" |
++:======+:=====+:========+
+| > 044 | > 02 | > \" \" |
++-------+------+---------+
+| > 063 | > 03 | > \" \" |
++-------+------+---------+
+```
+
+
+```rst-table
++--------+------+-------------+---------------+
+| > D07G | > dW | > 9907h     | > SignatUr 07 |
++========+:=====+:============+:==============+
+|        | > db | > \"aaa\>\" | > C0detab     |
++--------+------+-------------+---------------+
+```
+
+
+```rst-table
++------+------+------+------+
+| > a  | > 61 | > 60 |      |
++:=====+:=====+:=====+:=====+
+| > a  | > E2 | > 61 | > \* |
++------+------+------+------+
+| > i  | > 69 | > 62 | > \* |
++------+------+------+------+
+| > l  | > E3 | > 63 | > \* |
++------+------+------+------+
+| > U  | > 75 | > 64 | > \* |
++------+------+------+------+
+| > u  | > E4 | > 65 | > \* |
++------+------+------+------+
+| > ŗ  | > E5 | > 66 | > \* |
++------+------+------+------+
+| > ŗ  | > E6 | > 67 | > \* |
++------+------+------+------+
+| > ļ  | > E7 | > 68 | > \* |
++------+------+------+------+
+| > e  | > 65 | > 69 | > \* |
++------+------+------+------+
+| > ai | > 65 | > 6A |      |
++------+------+------+------+
+| > 0  | > 6F | > 6B | > \* |
++------+------+------+------+
+| > aU | > 65 | > 6C |      |
++------+------+------+------+
+|      | > EF | > 6D | > \* |
++------+------+------+------+
+| > ņ  | > F0 | > 6E | > \* |
++------+------+------+------+
+| > k  | > 6B | > 6F |      |
++------+------+------+------+
+| > kh | > 6B | > 70 |      |
++------+------+------+------+
+| > g  | > 67 | > 71 |      |
++------+------+------+------+
+| > gh | > 67 | > 72 |      |
++------+------+------+------+
+| > n  | > E8 | > 73 | > \* |
++------+------+------+------+
+| > c  | > 63 | > 74 |      |
++------+------+------+------+
+| > ch | > 63 | > 75 |      |
++------+------+------+------+
+| > j  | > 6A | > 76 |      |
++------+------+------+------+
+| > jh | > 6A | > 77 |      |
++------+------+------+------+
+| > n  | > E9 | > 78 | > \* |
++------+------+------+------+
+|      | > EB | > 79 |      |
++------+------+------+------+
+| > h  | > EB | > 7A |      |
++------+------+------+------+
+|      | > EC | > 7B |      |
++------+------+------+------+
+| > h  | > EB | > 7C |      |
++------+------+------+------+
+| > n  | > EA | > 7D | > \* |
++------+------+------+------+
+| > t  | > 74 | > 7E |      |
++------+------+------+------+
+| > th | > 74 | > 7F |      |
++------+------+------+------+
+| > d  | > 64 | > 80 |      |
++------+------+------+------+
+| > dh | > 64 | > 81 |      |
++------+------+------+------+
+| > n  | > 6E | > 82 | > \* |
++------+------+------+------+
+| > p  | > 70 | > 83 |      |
++------+------+------+------+
+| > ph | > 70 | > 84 |      |
++------+------+------+------+
+| > b  | > 62 | > 85 |      |
++------+------+------+------+
+```
+
+
+```rst-table
++------+------+------+------+
+| > bh | > 62 | > 86 |      |
++:=====+:=====+:=====+:=====+
+| > m  | > 6D | > 87 | > \* |
++------+------+------+------+
+| > y  | > 79 | > 88 | > \* |
++------+------+------+------+
+| > r  | > 72 | > 89 | > \* |
++------+------+------+------+
+| > 1  | > 6C | > 8A | > \* |
++------+------+------+------+
+| > V  | > 76 | > 8B | > \* |
++------+------+------+------+
+|      | > ED | > 8C | > \* |
++------+------+------+------+
+| > \$ | > EE | > 8D | > \* |
++------+------+------+------+
+| > S  | > 73 | > 8E | > \* |
++------+------+------+------+
+| > h  | > 68 | > 8F | > \* |
++------+------+------+------+
+```
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>D07H</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>Ctr1</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>Zeichen</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>08</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Ctr1</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Zeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>10</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Ctr1</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Zeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>18</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Ctr1</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Zeichen</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+```rst-table
++------+-------------------------------+-------+------+------+------+---------+---------+------+
+| > db | > 20h 00 00 01 00 00 00 00    |       | > 20 | > \" | > \" | > 20    | > \"#\" | > 01 |
++:=====+:==============================+=======+:=====+:=====+:=====+:========+:========+:=====+
+| > db | > 00 00 00 00 02 00h 00 00    |       | > 28 | > \" | > \" | > 02    | > \" \" | > 00 |
++------+-------------------------------+-------+------+------+------+---------+---------+------+
+| > db | > 30h 31h 32h 33h 34h 35h 36h | > 37h | > 30 | > 0  | > 7  |         |         |      |
++------+-------------------------------+-------+------+------+------+---------+---------+------+
+| > db | > 38h 39h 00 00 00 04 00 00   |       | > 38 | > 8  | > 9  | > \" \" | > 04    |      |
++------+-------------------------------+-------+------+------+------+---------+---------+------+
+```
+
+
+> Gr0�bUchStaben ZU1aSSen Wegen \"StichW0rt Prap \" USW
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>65</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>66</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>67</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>68</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>69</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>70</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>71</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>064</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>"A</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>G"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>72</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>73</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>74</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>75</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>76</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>77</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>78</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>79</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>072</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"H</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>80</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>81</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>82</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>83</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>84</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>85</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>86</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>87</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>080</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"P</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>W"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>88</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>89</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>90</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>088</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"X</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Z"</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> Gr0�bUchStaben ggf NU11c0deS
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>40</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>"A</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>G"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>48</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"H</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>50</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"P</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>W"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>58</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"X</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Z"</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> K1einbUchStaben für SanSkrit Standard
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>60h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>85h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>74h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>80h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>69h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>71h</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>60</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>"@"</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>+ "a</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>g"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>8Fh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>62h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>76h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>6Fh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>8Ah</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>87h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>82h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>6Bh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>68</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>0"</p>
+</blockquote></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>83h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>89h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>8Eh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>7Eh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>64h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>8Bh</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>70</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"p</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>W"</p>
+</blockquote></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>88h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00h</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>78</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"X</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>Z"</p>
+</blockquote></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>80</p>
+</blockquote></th>
+<th style="text-align: left;"><blockquote>
+<p>"c;üeaaaaĢ"</p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>88</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"eee11iAA"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>90</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ECElE6b0uu"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>98</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ybü&lt;:['IRf"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>A0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>"ai6un:N9Q"</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>A8</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>B0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>B8</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>C0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>C8</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>D0</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>db</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>00</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>D8</p>
+</blockquote></td>
+<td style="text-align: left;"><blockquote>
+<p>GrafikZeichen</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+> db 00h 00h 61h 63h 65h 66h 67h 68h E0 \"a�\" + \"aluŗŗļ\" db 73h 78h 7Dh 79h 7Bh 8Ch 8Dh 6Dh E8 \"nnn \"
+>
+> db 6Eh 00h 00h 00h 00h 00h 00h 00h F0 \"ņ\" db 00h 00h 00h 00h 00h 00h 00h 00h F8
+>
+> db \"\<ZZZ\" C0detab Endmarker
+>
+> [2. Code Section]{.underline}
+>
+> C0DE C07 AS7SANSC0MP
+>
+> ZWeck Verg1eich V0n ZWei SanSkrit StringS
+>
+> AUfrUf Verg1eichSWert% AS7SANSC0MP% String1\$ BYVAL String2\$ BYVAL
+
+```rst-table
++-------+-------+-------+-------+-------+
+| > 2   | > 3   | > 4   | > 5   | > 6   |
++:======+:======+:======+:======+:======+
+| > 01% | > 11% | > S2% | > 02% | > 12% |
++-------+-------+-------+-------+-------+
+```
+
+
+bp+16 bp+14 bp+12 bp+10 bp+8 bp+6
+
+> 1
+>
+> AS7SANSC0MP% S1%
+>
+> Danach
+>
+> Verg1eichSWert% 0 String1\$ String2\$ Verg1eichSWert% 1 String1\$ \< String2\$ Verg1eichSWert% 2 String1\$ \> String2\$
+>
+> PUBL1C AS7SANSC0MP AS7SANSC0MP PR0C
+>
+> RegiSter retten Und Frame P0inter SetZen
+
+```rst-table
++--------+------+------+---+------------+-------+---------+
+| > pUSh | > bp |      | 1 | > RegiSter | > aUf | > Stack |
++:=======+:=====+:=====+===+============+=======+=========+
+| > m0V  | > bp | > Sp |   |            |       |         |
++--------+------+------+---+------------+-------+---------+
+| > pUSh | > di |      | 2 | > RegiSter | > aUf | > Stack |
++--------+------+------+---+------------+-------+---------+
+| > pUSh | > Si |      | 3 | > RegiSter | > aUf | > Stack |
++--------+------+------+---+------------+-------+---------+
+| > pUSh | > eS |      | 4 | > RegiSter | > aUf | > Stack |
++--------+------+------+---+------------+-------+---------+
+```
+
+
+> Sind ASSemb1er DATA im MED1UM QUickbaSic DATA Segment? Wenn ASM DS \<\> QB DS dann End10SSch1eife
+>
+> C07A m0V aX D07G
+>
+> cmp aX 9907h SignatUr 07
+>
+> jne C07A Feh1er End10SSch1eife
+>
+> ErSt Char V0n Str1 mit ErSt Char V0n Str2 V0rab Verg1eichen
+>
+> Wenn keine NU11String1angen V0r1iegen Und die beiden erSten Zeichen der beiden StringS einen n0rma1en UNGLE1CHEN Nicht 00 C0de haben dann kann bereitS hier die C0mpare R0Utine dUrchgeführt Werden Z B UNGLE1CHE StringS \"A nt0n\" \< \"B erta\" 0der \"D 0ra\" \> \"A nt0n\"
+>
+> DieS iSt aUch bei den D0ppe1k0deS kh gh USW mbg1ich
+>
+> Bei den Diphth0ngen ai Und aU geht dieS jed0ch nicht
+>
+> C07B m0V aX 0 C0mpare NU11
+>
+> m0V bX bp+12 12 A1tString1 Lange cmp bX aX A1tString1 Lange nU11? je C07D Wenn ja N0rma1r0Utine m0V Si bp+14 14 A1tString1 0ffSet m0V bX bp+16 16 A1tString1 Segment m0V eS bX
+>
+> m0V b1 eS Si BL ErSt A1tchar V0n m0V bh ah BH 1bSchen
+>
+> m0V c1 D07H bX CL ErSt NeUchar V0n
+
+A1tString1
+
+A1tString1
+
+> cmp c1 a1
+
+NU11 C0de
+
+> je C07D Wenn ja N0rma1r0Utine
+>
+> cmp c1 60h ai aU S0nderfa11 a 60h
+>
+> je C07D
+
+```rst-table
++-------+------------+--------------------------+
+| > m0V | > bX bp+6  | > 6 A1tString2 Lange     |
++:======+:===========+:=========================+
+| > cmp | > bX aX    | > A1tString2 Lange nU11? |
++-------+------------+--------------------------+
+| > je  | > C07D     | > Wenn ja N0rma1r0Utine  |
++-------+------------+--------------------------+
+| > m0V | > Si bp+8  | > 8 A1tString2 0ffSet    |
++-------+------------+--------------------------+
+| > m0V | > bX bp+10 | > 10 A1tString2 Segment  |
++-------+------------+--------------------------+
+```
+
+
+> 1
+
+```rst-table
++--------+-------+---------+---------------------------------+
+|        | > cmp | > c1 ch | > String1 Char CMP String2 Char |
+|        +-------+---------+---------------------------------+
+|        | > je  | > C07D  | > Wenn g1eich N0rma1r0Utine     |
+|        +-------+---------+---------------------------------+
+|        | > ja  | > C07C  |                                 |
+|        +-------+---------+---------------------------------+
+|        | > jmp | > C07R  | > String1 \< String2            |
++:=======+:======+:========+:================================+
+| > C07C | > jmp | > C07S  | > String1 \> String2            |
++--------+-------+---------+---------------------------------+
+```
+
+
+```rst-table
++------------+------------+------------+----------------------+
+| > m0V      | > eS       | > bX       |                      |
++:===========+:===========+:===========+:=====================+
+| > m0V      | > b1       | > eS Si    | > BL                 |
++------------+------------+------------+----------------------+
+| > m0V      | > bh       | > ah       | > BH                 |
++------------+------------+------------+----------------------+
+| > m0V      | > ch       | > D07H bX  | > CH                 |
++------------+------------+------------+----------------------+
+| > cmp      | > ch       | > a1       | > NU                 |
++------------+------------+------------+----------------------+
+| > je C07D Wenn ja N0rma1r0Utine                             |
++------------+-------------------------+----------------------+
+| > cmp      | > ch 60h                | > ai aU S0nderfa11 a |
++------------+-------------------------+----------------------+
+| > je       | > C07D                  |                      |
++------------+-------------------------+----------------------+
+```
+
+
+Langen 0ffSet Und Segment BY VALUE V0m Stack nehmen
+
+> a1tString1\$
+
+```rst-table
++--------+-------+-------------+--------+--------------------------+
+| > C07D | > m0V | > aX bp+12  |        | > 12 A1tString1 Lange    |
++========+:======+:============+========+:=========================+
+|        | > cmp | > aX D07A   |        | > cmp 1en mit maX1en     |
++--------+-------+-------------+--------+--------------------------+
+|        | > jna | > C07E      |        | > 0kay da 1en \< maX1en  |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > aX D07A   |        | > nein aUf maX1en kürZen |
++--------+-------+-------------+--------+--------------------------+
+| > C07E | > m0V | > dX aX     |        | > dX A1tString1 Lange    |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > Si bp+14  |        | > Si A1tString1 0ffSet   |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > bX bp+16  |        | > eS A1tString1 Segment  |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > eS bX     |        |                          |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > di 0FFSET | > D07E | > di NeUString1 AdreSSe  |
++--------+-------+-------------+--------+--------------------------+
+```
+
+
+> WarnUng CALL mU� NEAR Sein S0nSt StürZt Pr0gramm ab ca11 NEAR PTR C07G
+>
+> a1tString2\$
+
+```rst-table
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > aX bp+6   |        | > 12 A1tString2 Lange    |
+|        +-------+-------------+--------+--------------------------+
+|        | > cmp | > aX D07A   |        | > cmp 1en mit maX1en     |
+|        +-------+-------------+--------+--------------------------+
+|        | > jna | > C07F      |        | > 0kay da 1en \< maX1en  |
+|        +-------+-------------+--------+--------------------------+
+|        | > m0V | > aX D07A   |        | > nein aUf maX1en kürZen |
++:=======+:======+:============+========+:=========================+
+| > C07F | > m0V | > dX aX     |        | > dX A1tString2 Lange    |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > Si bp+8   |        | > Si A1tString2 0ffSet   |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > bX bp+10  |        | > eS A1tString2 Segment  |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > eS bX     |        |                          |
++--------+-------+-------------+--------+--------------------------+
+|        | > m0V | > di 0FFSET | > D07F | > di NeUString2 AdreSSe  |
++--------+-------+-------------+--------+--------------------------+
+```
+
+
+> WarnUng CALL mU� NEAR Sein S0nSt StürZt Pr0gramm ab
+>
+> ca11 NEAR PTR C07G
+>
+> jmp C07N
+>
+> Umk0dierUng der A1tStringS in NeUStringS
+
+```rst-table
++------+------------------------+------------+
+| > bX | > C0detabe11en AdreSSe |            |
++:=====+:=======================+:===========+
+| > Si | > A1tString AdreSSe    | > \> eS Si |
++------+------------------------+------------+
+| > di | > NeUString AdreSSe    |            |
++------+------------------------+------------+
+```
+
+
+```rst-table
++------------+---------------------------------------------------+-----------------------+
+| > a1 c1 d1 | > A1tchar1NeUchar NeUString Lange A1tString Lange |                       |
++:===========+:==================================================+:======================+
+| > ah ch    | > \"0\" Endmarker                                 | > Beim C0mpare Wird   |
+|            | >                                                 | >                     |
+|            | > \" \" Trenner                                   | > \"CMP a1 ch\" Statt |
++------------+---------------------------------------------------+-----------------------+
+```
+
+
+> dh NeXt Char \"i\" für ai \"U\" für aU \"h\" für kh gh ch jh USW
+
+```rst-table
++--------+-------+------+----------+--------+------+-------------------+
+| > C07G | > m0V | > aX | > 0      |        | > ah | > 00 Endmarker    |
++========+:======+:=====+:=========+========+:=====+:==================+
+|        | > m0V | > cX | > 0      |        | > cX | > 1bSchen         |
++--------+-------+------+----------+--------+------+-------------------+
+|        | > m0V | > ch | > D07B   |        | > ch | > \" \" Trenner   |
++--------+-------+------+----------+--------+------+-------------------+
+|        | > m0V | > bX | > 0FFSET | > D07H | > bX | > C0detab AdreSSe |
++--------+-------+------+----------+--------+------+-------------------+
+```
+
+
+```rst-table
++-------+---------+-------------------+--------+
+| > cmp | > d1 ah | > A1tString Lange | > 0?   |
++:======+:========+:==================+========+
+| > jne | > C07H  | > nein Weiter     |        |
++-------+---------+-------------------+--------+
+| > jmp | > C07M  | > Wenn ja S0f0rt  | > Ende |
++-------+---------+-------------------+--------+
+```
+
+
+> Sch1eife AdreSSe Zeigt aUf m0mentaneS A1tZeichen
+
+```rst-table
++--------+---------------------+--------------------+------+-----------------------------+
+| > C07H | > m0V cmp je cmp je | > a1 eS a1 ch C07M | > Si | > A1tchar 1aden             |
+|        |                     | >                  |      | >                           |
+|        |                     | > a1 D07C C07L     |      | > \" \" Trenner?            |
+|        |                     |                    |      | >                           |
+|        |                     |                    |      | > Wenn ja S0f0rt Ende       |
+|        |                     |                    |      | >                           |
+|        |                     |                    |      | > \"\\\" F1ipper            |
+|        |                     |                    |      | >                           |
+|        |                     |                    |      | > Wenn ja F1ipper R0Utine   |
++========+:====================+:===================+======+:============================+
+|        | > X1at cmp          | > a1 ah            |      | > V0rab aUf NU11k0de prüfen |
+|        |                     |                    |      | >                           |
+|        |                     |                    |      | > NU11k0de?                 |
++--------+---------------------+--------------------+------+-----------------------------+
+|        | > je                | > C07J             | > Si | > ja dann S0f0rt Weiter     |
+|        | >                   | >                  |      | >                           |
+|        | > m0V               | > a1 eS            |      | > A1tchar erneUt 1aden      |
++--------+---------------------+--------------------+------+-----------------------------+
+```
+
+
+> D0ppe1k0de \"ai aU\" 0der \"kh gh ch jh th dh\" USW ?
+
+```rst-table
++---------+----------------+------------------+---------+------------------------------+
+|         | > cmp je ca11  | > a1 \"a\" C07H1 | > C07A1 | > \"a\" V0rWeg prüfen        |
+|         |                | >                |         | >                            |
+|         |                | > NEAR PTR       |         | > \"kgcj tdpb \" D0ppe1k0de? |
+|         +----------------+------------------+---------+------------------------------+
+|         | > jnc          | > C07H5          |         | > nein dann n0rma1 behande1n |
++:========+:===============+:=================+=========+:=============================+
+| > C07H1 | > cmp jna      | > d1 1           |         | > N0ch mindeStenS 2 Char?    |
+|         |                | >                |         | >                            |
+|         |                | > C07H5          |         | > nein dann n0rma1 behande1n |
++---------+----------------+------------------+---------+------------------------------+
+```
+
+
+> NachSteS Zeichen für D0ppe1k0de h01en
+
+```rst-table
++-------+------+------+------+---------------------+--------------+
+| > dec | > d1 |      |      | > A1tString Lange   | > Vermindern |
++:======+:=====+======+======+:====================+:=============+
+| > inc | > Si |      |      | > A1tString AdreSSe | > erhbhen    |
++-------+------+------+------+---------------------+--------------+
+| > m0V | > dh | > eS | > Si | > NeXt Char h01en   |              |
++-------+------+------+------+---------------------+--------------+
+```
+
+
+```rst-table
++---------+------------------+------------------+--------------+-----------------------+
+|         | > cmp jne        | > a1 \"a\" C07H3 | > a U 0 nein | > er a U?             |
+|         |                  |                  |              | >                     |
+|         |                  |                  |              | > dann Vie11eicht X h |
+|         +------------------+------------------+--------------+-----------------------+
+|         | > cmp je cmp jne | > dh \"i\" C07H2 | > Weder      | > ai n0ch aU          |
+|         |                  | >                |              |                       |
+|         |                  | > dh \"U\" C07H4 |              |                       |
++:========+:=================+:=================+:=============+=======================+
+| > C07H2 | > m0V            | > a1 06Ch        | > aU         |                       |
+|         | >                | >                | >            |                       |
+|         | > jmp            | > C071           | > ai         |                       |
+|         | >                | >                |              |                       |
+|         | > m0V            | > a1 06Ah        |              |                       |
+|         | >                | >                |              |                       |
+|         | > jmp            | > C071           |              |                       |
++---------+------------------+------------------+--------------+-----------------------+
+```
+
+
+Diphth0nge ai aU?
+
+> d
+>
+> ASpiraten kh gh ch jh h h th dh ph bh?
+
+```rst-table
++---------+-------+------------+----------------------------+
+| > C07H3 | > cmp | > d1 \"h\" | > 1St nachSter Char \"h\"? |
++=========+:======+:===========+:===========================+
+|         | > jne | > C07H4    | > Nein dann n0rma1 Weiter  |
++---------+-------+------------+----------------------------+
+```
+
+
+> Der ASpirat K0de iSt immer Um 1 grb�er a1S der Nicht ASpirat K0de
+
+```rst-table
++--------+--------+----+------+------------------------+-----+------+
+| > X1at |        | a1 | > \> | > Nicht ASpirat K0de Z | > B | > k  |
++:=======+:=======+===:+:=====+:=======================+:====+:=====+
+| > inc  | > a1   | a1 | > \> | > jetZt ASpirat K0de Z | > b | > kh |
++--------+--------+----+------+------------------------+-----+------+
+| > jmp  | > C071 |    |      |                        |     |      |
++--------+--------+----+------+------------------------+-----+------+
+```
+
+
+> D0ppe1k0de nicht gefUnden NeXt Char P0inter Wieder ZUrückSetZen
+
+```rst-table
++---------+-------+------+-----------------------------------+
+| > C07H4 | > inc | > d1 | > A1tString Lange n0rma1iSieren   |
++=========+:======+:=====+:==================================+
+|         | > dec | > Si | > A1tString AdreSSe n0rma1iSieren |
++---------+-------+------+-----------------------------------+
+```
+
+
+> A1tchar a1 ergibt X1at 0ffSet in bX C0detabe11e
+
+```rst-table
++---------+--------+----------------------------+
+| > C07H5 | > X1at | > a1 entha1t C0de nach X1a |
++=========+:=======+:===========================+
+|         | > cmp  | > a1 ah                    |
++---------+--------+----------------------------+
+|         | > je   | > C07J                     |
++---------+--------+----------------------------+
+```
+
+
+t
+
+> NeUZeichen Speichern Und AdreSSe V0n NeUString erhbhen
+>
+> C071 m0V di a1 Wenn nein C0de Speichern
+>
+> inc di NeUString AdreSSe erhbhen inc c1 NeUString Lange erhbhen
+>
+> Wenn G1eichheitSZeichen \" \" 04 dann SprUng ZU DUdenS0rt
+
+```rst-table
++-------+---------+------------------------------------+
+| > cmp | > a1 4  | > DieSe 2 Zei1en entfernen         |
++:======+:========+:===================================+
+| > je  | > C07B0 | > damit AS7SANS Se1bStandig b1eibt |
++-------+---------+------------------------------------+
+```
+
+
+> AdreSSe V0n A1tString erhbhen
+
+```rst-table
++--------+-------+--------+-------------------------------+
+| > C07J | > inc | > Si   | > A1tString AdreSSe erhbhen   |
++========+:======+:=======+:==============================+
+|        | > dec | > d1   | > A1tString Lange Vermindern  |
++--------+-------+--------+-------------------------------+
+|        | > je  | > C07M | > Wenn Lange 0 dann EXit      |
++--------+-------+--------+-------------------------------+
+|        | > jmp | > C07H | > Weiter mit Pr0grammSch1eife |
++--------+-------+--------+-------------------------------+
+```
+
+
+> F1ipper SpeZia1r0Utine
+>
+> MidString ZWiSchen \"\\ \\\" Wird ign0riert
+>
+> Daher A1tString biS ZUm nachSten \"\\\" abSUchen
+>
+> AchtUng Wenn ZWeiter F1ipper \"\\\" in S0rtdatei VergeSSen Wird
+>
+> S0 hat der F1ipper dieSe1be WirkUng Wie der Trenner \" \"
+
+```rst-table
++--------+-------+-----------+------+------------------------------+
+| > C07L | > inc | > Si      |      | > A1tString AdreSSe erhbhen  |
++========+:======+:==========+======+:=============================+
+|        | > dec | > d1      |      | > A1tString Lange Vermindern |
++--------+-------+-----------+------+------------------------------+
+|        | > je  | > C07M    |      | > Wenn Lange 0 dann EXit     |
++--------+-------+-----------+------+------------------------------+
+|        | > m0V | > a1 eS   | > Si | > A1tchar                    |
++--------+-------+-----------+------+------------------------------+
+|        | > cmp | > a1 D07C |      | > \"\\\" F1ipper             |
++--------+-------+-----------+------+------------------------------+
+|        | > jne | > C07L    |      | > Wenn nein nachSter A1tchar |
++--------+-------+-----------+------+------------------------------+
+|        | > je  | > C07J    |      | > Wenn ja n0rma1 Weiter      |
++--------+-------+-----------+------+------------------------------+
+```
+
+
+> 0 Endmarker an NeUString anhangen Und Ende
+>
+> C07M m0V di ah ah 0 0 Endmarker
+>
+> WarnUng RET mU� NEAR Sein RETN S0nSt StürZt Pr0gramm ab retn
+>
+> Ab jetZt nach DUden S0rtieren
+
+```rst-table
++---------+---------+-------------+---------+---------------------+--------------+
+| > C07B0 | > inc   | > Si        |         | > A1tString AdreSSe | > erhbhen    |
++=========+:========+:============+=========+:====================+:=============+
+|         | > dec   | > d1        |         | > A1tString Lange   | > Vermindern |
++---------+---------+-------------+---------+---------------------+--------------+
+| > je C07M Wenn Lange 0 dann EXit                                               |
++-------------------+-------------+---------+------------------------------------+
+| > m0V             | > dh \"�\"  |         | > dh jetZt ESZett                  |
++-------------------+-------------+---------+------------------------------------+
+| > m0V             | > bX 0FFSET | > D01H  | > DUden Tabe11e                    |
++-------------------+-------------+---------+------------------------------------+
+```
+
+
+> AdreSSe Zeigt aUf m0mentaneS A1tZeichen
+>
+> C07B1 m0V a1 eS Si A1tchar 1aden
+>
+> cmp a1 ch A1tchar \" \" Trenner?
+>
+> je C07B6 Wenn ja S0f0rt Ende
+>
+> cmp a1 dh A1tchar \"�\" ESZett?
+>
+> je C07B4 Wenn ja ESZett R0Utine
+>
+> cmp a1 D07C \"\\\" F1ipper
+>
+> je C07B5 Wenn ja F1ipper R0Utine
+>
+> A1tchar a1 ergibt X1at 0ffSet in bX C0detabe11e
+>
+> X1at a1 entha1t C0de nach X1at cmp a1 ah ah a1 0 C0de?
+>
+> je C07B3 Wenn ja C0de ign0rieren
+>
+> NeUZeichen Speichern Und AdreSSe V0n NeUString erhbhen
+>
+> C07B2 m0V di a1 Wenn nein C0de Speichern inc di NeUString AdreSSe erhbhen inc c1 NeUString Lange erhbhen
+
+```rst-table
++-------+-----------+------------------------------+
+| > cmp | > c1 D07A | > c1 \> maX1en? Wegen ESZett |
++:======+:==========+:=============================+
+| > jnb | > C07B6   | > ja S0f0rt Ende             |
++-------+-----------+------------------------------+
+```
+
+
+> AdreSSe V0n A1tString erhbhen
+
+```rst-table
++---------+-------+---------+-----------------------------+
+| > C07B3 | > inc | > Si    | > A1tString AdreSSe erhbhen |
++=========+:======+:========+:============================+
+|         | > dec | > d1    | > A1tString Lange           |
++---------+-------+---------+-----------------------------+
+|         | > jne | > C07B1 | > Wenn Lange \<\> 0         |
++---------+-------+---------+-----------------------------+
+|         | > je  | > C07B6 | > Wenn Lange 0              |
++---------+-------+---------+-----------------------------+
+```
+
+
+> ESZett SpeZia1r0Utine
+>
+> \"�\" Wird \"SS\" S0fern c1 \< maX1en
+>
+> \"�\" Wird \"S\" S0fern c1 maX1en
+
+```rst-table
++---------+-------+------------+-----------------------------------+
+| > C07B4 | > m0V | > a1 \"S\" | > \"SS\" für ESZett               |
++=========+:======+:===========+:==================================+
+|         | > m0V | > di a1    | > ErSteS \"S\" Speichern          |
++---------+-------+------------+-----------------------------------+
+|         | > inc | > di       | > NeUString AdreSSe erhbhen       |
++---------+-------+------------+-----------------------------------+
+|         | > inc | > c1       | > NeUString Lange erhbhen         |
++---------+-------+------------+-----------------------------------+
+|         | > cmp | > c1 D07A  | > c1 \< maX1en?                   |
++---------+-------+------------+-----------------------------------+
+|         | > jb  | > C07B2    | > Ja ZWeiteS \"S\" Speichern      |
++---------+-------+------------+-----------------------------------+
+|         | > jnb | > C07B6    | > Nein EXit + ReStString abhacken |
++---------+-------+------------+-----------------------------------+
+```
+
+
+> F1ipper SpeZia1r0Utine
+>
+> MidString ZWiSchen \"\\ \\\" Wird ign0riert
+>
+> Daher A1tString biS ZUm nachSten \"\\\" abSUchen
+>
+> AchtUng Wenn ZWeiter F1ipper \"\\\" in S0rtdatei VergeSSen Wird
+>
+> S0 hat der F1ipper dieSe1be WirkUng Wie der Trenner \" \"
+
+```rst-table
++---------+-------+-----------+------+------------------------------+
+| > C07B5 | > inc | > Si      |      | > A1tString AdreSSe erhbhen  |
++=========+:======+:==========+======+:=============================+
+|         | > dec | > d1      |      | > A1tString Lange Vermindern |
++---------+-------+-----------+------+------------------------------+
+|         | > je  | > C07B6   |      | > Wenn Lange 0 dann EXit     |
++---------+-------+-----------+------+------------------------------+
+|         | > m0V | > a1 eS   | > Si | > A1tchar                    |
++---------+-------+-----------+------+------------------------------+
+|         | > cmp | > a1 D07C |      | > \"\\\" F1ipper             |
++---------+-------+-----------+------+------------------------------+
+|         | > jne | > C07B5   |      | > Wenn nein nachSter A1tchar |
++---------+-------+-----------+------+------------------------------+
+|         | > je  | > C07B3   |      | > Wenn ja n0rma1 Weiter      |
++---------+-------+-----------+------+------------------------------+
+```
+
+
+> 0 Endmarker an NeUString anhangen Und Ende
+>
+> C07B6 jmp C07M ZUrück ZU ALTEM EXit
+>
+> Liegt \"kgcj dpb\" kh gh ch jh h h th dh ph bh V0r?
+>
+> Carry Set gefUnden
+
+```rst-table
++---------+--------+-----------+------------+------------+
+| > C07A1 | > cmp  | > a1 06Bh | > k        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 067h | > g        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 063h | > c        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 06Ah | > j        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 0EBh |            |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 0ECh |            |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 074h | > t        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 064h | > d        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 070h | > p        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++---------+--------+-----------+------------+            |
+|         | > cmp  | > a1 062h | > b        |            |
++---------+--------+-----------+------------+            |
+|         | > je   | > C07A2   |            |            |
++=========+:=======+===========+:===========+:===========+
+|         | > c1c  |           | > nicht    | > gefUnden |
++---------+--------+-----------+------------+------------+
+|         | > jnc  | > C07A3   |            |            |
++---------+--------+-----------+------------+------------+
+| > C07A2 | > Stc  |           | > gefUnden              |
++---------+--------+-----------+-------------------------+
+| > C07A3 | > retn |           | > ret mU� NEAR Sein     |
++---------+--------+-----------+-------------------------+
+```
+
+
+> NeUStringS neUStr1 Und neUStr2 Verg1eichen
+>
+> Si neUStr1 AdreSSe di neUStr2 AdreSSe a1 neUStr1 char
+>
+> d1 neUStr2 char ah 0 für CMP
+
+```rst-table
++--------+-------+------+----------+--------+------+
+| > C07N | > m0V | > Si | > 0FFSET | > D07E |      |
++========+:======+:=====+:=========+:=======+======+
+|        | > m0V | > di | > 0FFSET | > D07F |      |
++--------+-------+------+----------+--------+------+
+|        | > m0V | > ah | > 0      |        | > ah |
++--------+-------+------+----------+--------+------+
+```
+
+
+> L00p
+
+```rst-table
++--------+-------+------+------+----------------+
+| > C070 | > m0V | > a1 | > Si | > neUStr1 char |
++========+:======+:=====+:=====+:===============+
+|        | > m0V | > d1 | > di | > neUStr2 char |
++--------+-------+------+------+----------------+
+```
+
+
+> Endmarke bei einem der beiden StringS erreicht?
+
+```rst-table
++-------+---------+------------------------------+
+| > cmp | > a1 ah | > neUStr1 Ende erreicht?     |
++:======+:========+:=============================+
+| > je  | > C07Q  | > ja Wenn nein               |
++-------+---------+------------------------------+
+| > cmp | > d1 ah | > neUStr2 Ende erreicht?     |
++-------+---------+------------------------------+
+| > je  | > C07S  | > ja a1S0 neUStr1 \> neUStr2 |
++-------+---------+------------------------------+
+```
+
+
+> StringS ab Char P0Siti0n Ung1eich?
+
+```rst-table
++-------+---------+----------------------+
+| > cmp | > a1 d1 | > neUStr1 ? neUStr2  |
++:======+:========+:=====================+
+| > jc  | > C07R  | > neUStr1 \< neUStr2 |
++-------+---------+----------------------+
+| > jne | > C07S  | > neUStr1 \> neUStr2 |
++-------+---------+----------------------+
+```
+
+
+> Wenn bei Char P0Siti0n g1eich dann Zah1er erhbhen
+>
+> inc Si neUStr1 inc di neUStr2
+>
+> jne C070 immer da maX1en \< 255
+>
+> C07P Stc Pr0grammfeh1er jc C07P
+>
+> neUStr1 Endmarker erreicht
+>
+> C07Q cmp d1 ah neUStr2 Ende ebenfa11S erreicht?
+>
+> je C07T ja a1S0 beide NU11StringS
+>
+> jne C07R nein a1S0 neUStr1 \< neUStr2
+>
+> AX Wert bei EXit
+>
+> aX 0 neUStr1 neUStr2 aX 1 neUStr1 \< neUStr2 aX 2 neUStr1 \> neUStr2
+>
+> aX \< 2 bedeUtet neUStr1 \< neUStr2 aX \> 0 bedeUtet neUStr1 \<\> neUStr2 aX \<\> 1 bedeUtet neUStr1 \> neUStr2
+>
+> C07R m0V aX 1 1 neUStr1 \< neUStr2 jmp SH0RT C07U
+>
+> C07S m0V aX 2 2 neUStr1 \> neUStr2 jmp SH0RT C07U
+>
+> C07T m0V aX 0 0 neUStr1 neUStr2
+>
+> EndSeqUenZ
+>
+> Gerettete RegiSter in Umgekehrter Reihenf01ge V0n Stack h01en
+
+```rst-table
++--------+-------+------+---+------------+-------+---------+
+| > C07U | > p0p | > eS | 4 | > RegiSter | > V0m | > Stack |
++========+:======+:=====+==:+:===========+:======+:========+
+|        | > p0p | > Si | 3 | > RegiSter | > V0m | > Stack |
++--------+-------+------+---+------------+-------+---------+
+|        | > p0p | > di | 2 | > RegiSter | > V0m | > Stack |
++--------+-------+------+---+------------+-------+---------+
+|        | > p0p | > bp | 1 | > RegiSter | > V0m | > Stack |
++--------+-------+------+---+------------+-------+---------+
+```
+
+
+> ret 12 6 2 X 3 ReferenZparameter
+>
+> AS7SANSC0MP ENDP
