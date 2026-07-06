@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Upstream-change watcher (H182) — Cologne + NWS monthly drift → stale worklist
+- Added [`src/pilot/layer_versions.py`](src/pilot/layer_versions.py) +
+  append-only [`src/pilot/layer_version_log.jsonl`](src/pilot/layer_version_log.jsonl):
+  logs *which* upstream commit/scrape each source layer (pwg/pw/sch/pwkvn/nws) was
+  drawn from — answers "do we log when each layer was added?". Backfilled once.
+- Added [`src/pilot/watch_upstream.py`](src/pilot/watch_upstream.py): `cologne`
+  diffs each csl-orig layer file `last-seen..HEAD` (git `show`, read-only) → changed
+  headwords via the `dict_merge`/`pwg_mask`/`form_key` parse → cross-references the
+  promoted store by `(form_key, layer)` and emits a monthly
+  `upstream_changes/<YYYY-MM>.md` + `.stale.json` worklist carrying each flagged
+  headword's stamped `input_raw_sha256` (the H170 re-run primitive). `nws` re-fetches
+  only the ~48 promoted headwords from Halle (polite, resilient to downtime).
+- The watcher **only flags** — re-translation stays on the drain discipline (H179/H151).
+  Wired a monthly schedule: [`.github/workflows/upstream-watch.yml`](../.github/workflows/upstream-watch.yml)
+  (opens/updates a drift issue) + a local `schtasks` recipe, documented in
+  [UPSTREAM_WATCHER.md](UPSTREAM_WATCHER.md).
+
 ## [1.3.0] - 2026-07-05
 
 ### Nominal-window guardrails — H191 verified, optimized, staged
