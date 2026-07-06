@@ -43,6 +43,18 @@ tracked-file drift and is wired into `window_selftest.py`
 
 ## Current operating truth
 
+- **Session + generation model (H178 A-4a, 06-07-2026):** run in a session that **HAS the
+  Workflow tool** — the session model picker does NOT control generation. Generation is
+  **always Sonnet 5 (`claude-sonnet-5`)**: the generated harness hardcodes `model:'sonnet'`
+  on every `agent()` call. Workflow-tool availability is a per-session tooling fact, not a
+  tier rule (Opus 4.8 and Fable 5 sessions had it; one Sonnet chat did not) — check the
+  toolset at session start instead of selecting a "generation tier".
+- **The translated source is the 5-layer all-in-one** built by
+  [`_pilot_gen_merged.py`](../_pilot_gen_merged.py) — PWG main+Nachträge + PW + SCH + PWKVN +
+  NWS (owner-mapped) — live since commit `1dad0dd` (17-06-2026), never reverted.
+  `csl-orig/v02/pwg/pwg.txt` is read-only and is only the **PWG layer input**, not "the
+  source"; the `_zz_pw` / `_zz_sch` / `_zz_pwkvn` / `_zz_nws00` card-ID suffixes are the live
+  per-layer routing (H178 A-4b).
 - The optimized **translate-only** Max harness is live and is generated per root by
   [`gen_opt_harness2.py`](gen_opt_harness2.py). It masks and batches raw/portrait inputs,
   disables translate-agent tools, auto-uses translation-memory sidecars when present,
@@ -118,7 +130,8 @@ These four were folded into the inlined prompt of
   `CONV` line + **HARD RULE 3**;
 - ✅ render **every** PWG Nachträge patch — **HARD RULE 4** ("ALL RECORDS,
   INCLUDING NACHTRÄGE … dropping any single patch fails coverage"); inputs are
-  assembled main+Nachträge by `_pilot_gen_merged.py`;
+  assembled by `_pilot_gen_merged.py` as the **5-layer all-in-one** (PWG main+Nachträge
+  + PW + SCH + PWKVN + NWS), not main+Nachträge alone;
 - ✅ treat `<is>...</is>` source italics as siglum text, never `{%...%}` gloss —
   `CONV` line + **HARD RULE 3**;
 - ✅ `nws_split.py` owner-map gate — **HARD RULE 5** (authoritative pre-parsed
