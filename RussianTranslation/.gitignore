@@ -87,6 +87,11 @@ src/pilot/output/prompt_rule_audit.md
 # Local API retry ledger
 src/corpus_lexicon.failures.jsonl
 
+# H215 corpus TM TMX export (build_tmx.py) — rights-encumbered (mixes in-copyright
+# named modern RU translations); no public release before per-translator clearance
+# (H215 Slice 5 / /publish-safety-check). Generator + README are committed.
+release/corpus_tm/
+
 # regenerable DCS frequency table (build_dcs_freq.py)
 src/dcs_freq.json
 src/pwg_ru_translated.jsonl.prefreq.bak
