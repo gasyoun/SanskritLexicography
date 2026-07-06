@@ -629,6 +629,54 @@ def _portrait_key_iast(portrait_text, key):
     return key
 
 
+def _portrait_source_profile(portrait_text):
+    """The `source_profile` a portrait declares (H214: 'no_pwg_supplement_chain'), or None
+    for an ordinary PWG-rooted portrait. This is the AUTHORITATIVE no-PWG signal — only a
+    truly PWG-less headword's portrait carries it — so it disambiguates a no-PWG supplement
+    card from a PWG root-split supplement sub-card whose raw looks identical."""
+    try:
+        rows = json.loads(portrait_text)
+    except Exception:
+        return None
+    rows = rows if isinstance(rows, list) else [rows]
+    for r in rows:
+        if isinstance(r, dict) and r.get('source_profile'):
+            return r.get('source_profile')
+    return None
+
+
+# A supplement LAYER marker in a raw card (PW / SCH / PWKVN / NWS). The trailing space after
+# "PW" is load-bearing: it matches "PW — …" but NOT "PWG …" (PWG has no space) or "PWKVN …".
+_SUPP_LAYER_RE = re.compile(r'=== LAYER: (?:PW |SCH|PWKVN|NWS)')
+
+
+def card_source_profile(raw, portrait_text=None):
+    """H214 per-card source-material profile, stamped on every promoted row:
+
+      'no_pwg_supplement_chain' — no PWG layer AND the headword has no PWG base (portrait-flagged)
+      'pwg_with_supplements'    — ONE card carrying BOTH a PWG layer and >=1 supplement layer
+                                  (the MIXED whole-card shape from gen_card — filter for this to
+                                  find all mixed cards)
+      'pwg_only'                — only PWG layer(s) (pure base card / root-split head sub-card)
+      'pwg_supplement_subcard'  — a supplement-only sub-card of a PWG root-split headword (its
+                                  headword DOES have a PWG base elsewhere, so it is NOT no-PWG)
+
+    Returns None when the raw carries no LAYER markers (degenerate/unknown). The portrait's
+    explicit no-PWG flag wins first, so a root-split supplement sub-card (empty portrait) is
+    never mis-tagged as no-PWG."""
+    if _portrait_source_profile(portrait_text) == 'no_pwg_supplement_chain':
+        return 'no_pwg_supplement_chain'
+    has_pwg = '=== LAYER: PWG' in raw
+    has_supp = bool(_SUPP_LAYER_RE.search(raw))
+    if has_pwg and has_supp:
+        return 'pwg_with_supplements'
+    if has_pwg:
+        return 'pwg_only'
+    if has_supp:
+        return 'pwg_supplement_subcard'
+    return None
+
+
 def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     """Conservative no-LLM lane for cross-reference/supplement stubs.
 
@@ -1017,11 +1065,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     else:   # proportional to word size + small jitter headroom (NOT a flat floor)
         max_agents = int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)) + MAX_AGENTS_HEADROOM
 
+    # H214: per-card source-material profile, stamped on promoted rows via
+    # meta.source_profiles (promote_final_cards.provenance reads it per sub-card). Window-level
+    # meta.source_profile intentionally stays narrow for compatibility with the H214 contract:
+    # only an all-no-PWG window is marked; ordinary/mixed PWG windows remain null.
+    source_profiles = {k: card_source_profile(raws.get(k, ''), portraits.get(k)) for k in keys}
+    _distinct = {p for p in source_profiles.values() if p}
+    source_profile = 'no_pwg_supplement_chain' if _distinct == {'no_pwg_supplement_chain'} else None
+
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
         'root': root, 'safe_root': safe_name(root), 'lang': lang,
+        'source_profile': source_profile,
+        'source_profiles': source_profiles,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
         # Nominal mode: `root` is only a window LABEL (e.g. pril10_w1), never a real headword,
         # and result rows are keyed by the safe-name file stem (k_ala, r_upa). promote_final_cards
