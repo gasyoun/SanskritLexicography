@@ -1,0 +1,27 @@
+{
+  "_comment": "H215 Slice 2 source-trust priors for the composite TM grader (tm_grade.py). Weight in [0,1] = how much a rendering's provenance is trusted BEFORE the per-unit QE/consensus signals. Hand-ranked, versioned; edit deliberately. Lookup order: by_work (exact) > by_work_contains (source-family substring) > by_kind > default.",
+  "version": "0.1.0",
+  "default": 0.6,
+  "by_kind": {
+    "translation": 0.75,
+    "commentary": 0.6,
+    "mined": 0.4,
+    "specialist": 0.7
+  },
+  "by_work_contains": {
+    "bhagavadgita": 0.8,
+    "yoga-sutry": 0.78,
+    "ramayana": 0.75,
+    "mahabharata": 0.75,
+    "rigveda": 0.72,
+    "atharvaveda": 0.72,
+    "-up": 0.74
+  },
+  "by_work": {
+    "bhagavadgita-sementsov": 0.9,
+    "bhagavadgita-smirnov": 0.88,
+    "bhagavadgita-erman": 0.88,
+    "manavadharmashastra": 0.82,
+    "kama-sutra": 0.8
+  }
+}

@@ -10,6 +10,7 @@ Slice 2 (this exporter stamps grade=C on every unit until then, per the handoff)
 
   python build_tmx.py build                 corpus_lexicon.jsonl -> release TMX
   python build_tmx.py build --sample 500    first 500 L1 units (reviewable slice)
+  python build_tmx.py build --grades PATH   stamp real A/B/C from a tm_grade.py sidecar
   python build_tmx.py build --in PATH --out PATH
   python build_tmx.py validate <file.tmx>   round-trip parse + structural checks
   python build_tmx.py selftest              fixture -> export -> re-parse, assert
@@ -147,21 +148,49 @@ def header_xml(count, srcfile):
            count))
 
 
+def load_grades(path):
+    """tuid -> grade from a tm_grade.py sidecar (JSONL: {tuid, grade, ...}). Absent
+    path -> empty map -> every unit keeps DEFAULT_GRADE (Slice-1 behaviour)."""
+    grades = {}
+    if not path:
+        return grades
+    if not os.path.exists(path):
+        sys.exit('grades sidecar not found: %s (run tm_grade.py grade first)' % path)
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                r = json.loads(line)
+            except Exception:
+                continue
+            if r.get('tuid') and r.get('grade'):
+                grades[r['tuid']] = r['grade']
+    return grades
+
+
 def build(in_path, out_path, sample=None, grade=DEFAULT_GRADE,
-          modality=DEFAULT_MODALITY):
+          modality=DEFAULT_MODALITY, grades_path=None):
     if not os.path.exists(in_path):
         sys.exit('input not found: %s\n(corpus_lexicon.jsonl is gitignored; build it '
                  'first with build_corpus_lexicon.py)' % in_path)
+    grades = load_grades(grades_path)
     units = list(iter_units(in_path))
     if sample is not None:
         units = units[:sample]
+    dist = {}
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as out:
         out.write(header_xml(len(units), in_path))
         for r in units:
-            out.write(tu_xml(r, grade=grade, modality=modality))
+            g = grades.get(tuid(r), grade)   # sidecar wins; else the default stamp
+            dist[g] = dist.get(g, 0) + 1
+            out.write(tu_xml(r, grade=g, modality=modality))
         out.write(' </body>\n</tmx>\n')
-    print('build_tmx: %d L1 units -> %s' % (len(units), out_path))
+    gsrc = 'sidecar %s' % os.path.basename(grades_path) if grades else 'default=%s' % grade
+    print('build_tmx: %d L1 units -> %s  (grade: %s; dist %s)'
+          % (len(units), out_path, gsrc, dist))
     ok, msg = validate(out_path)
     print(msg)
     return 0 if ok else 1
@@ -285,7 +314,8 @@ def main():
     b.add_argument('--in', dest='inp', default=DEFAULT_IN)
     b.add_argument('--out', dest='out', default=DEFAULT_OUT)
     b.add_argument('--sample', type=int, default=None, help='export only the first N L1 units')
-    b.add_argument('--grade', default=DEFAULT_GRADE, help='grade stamp (default C; Slice 2 replaces this)')
+    b.add_argument('--grade', default=DEFAULT_GRADE, help='fallback grade stamp when no sidecar (default C)')
+    b.add_argument('--grades', dest='grades', default=None, help='tm_grade.py sidecar JSONL -> real A/B/C per unit')
     b.add_argument('--modality', default=DEFAULT_MODALITY)
 
     v = sub.add_parser('validate', help='round-trip validate an existing TMX')
@@ -295,7 +325,8 @@ def main():
 
     a = ap.parse_args()
     if a.cmd == 'build':
-        return build(a.inp, a.out, sample=a.sample, grade=a.grade, modality=a.modality)
+        return build(a.inp, a.out, sample=a.sample, grade=a.grade,
+                     modality=a.modality, grades_path=a.grades)
     if a.cmd == 'validate':
         ok, msg = validate(a.path)
         print(msg)

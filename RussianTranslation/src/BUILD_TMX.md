@@ -1,4 +1,4 @@
-# build_tmx.py — corpus Sa→Ru TM as TMX 1.4b
+# build_tmx.py — corpus Sa→Ru TM as TMX 1.4b + composite grader
 
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
@@ -32,11 +32,51 @@ Each L1 unit becomes one TMX `<tu>`:
 ## Layers and grade (H215 architecture)
 
 TMX today emits the **L1** (word/phrase) layer; the **L0** verse-segment layer
-(real `<tu>` segment pairs) arrives with **Slice 3**. Every unit is stamped
-**`grade=C`** ("usage/citation only") until the composite grader
-(**Slice 2**, `src/tm_grade.py`: COMET-QE + source-weight + alignment confidence +
-consensus → A/B/C) assigns a real grade. Do **not** hand-promote grades in this
-exporter.
+(real `<tu>` segment pairs) arrives with **Slice 3**. The composite A/B/C grade is
+assigned by **Slice 2** ([`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
+below); `build_tmx build --grades <sidecar>` stamps those real grades. Without a
+sidecar the exporter falls back to `grade=C` ("usage/citation only") — do **not**
+hand-promote grades in the exporter.
+
+## Composite grade — Slice 2 (`tm_grade.py`)
+
+[`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py)
+assigns each unit the publication-grade **A/B/C** stamp MG specified, from a weighted
+composite of four signals (weights versioned in the module, currently
+qe 0.35 · source 0.30 · consensus 0.20 · align 0.15):
+
+| Signal | This slice | Notes |
+|---|---|---|
+| `source_weight` | **real** — [`src/tm_source_weights.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_source_weights.json) | hand-ranked, versioned trust prior per work / translator / kind |
+| `consensus` | **real** — computed over the whole corpus | distinct works giving a rendering for the same `(passage, slp1)`, and how far they agree |
+| `qe_score` | pluggable — `proxy` (default) or `comet` | `proxy` = deterministic, reference-free **fluency/form** heuristic so it runs with no model; `comet` = COMET-QE (`Unbabel/wmt22-cometkiwi-da`) via `unbabel-comet` if installed |
+| `alignment_confidence` | **proxy** (weighted low) | token-count plausibility; the real SimAlign / awesome-align score lands in **Slice 3** |
+
+**Grade gates.** `A` = composite ≥ 0.70 **AND corroborated** (≥2 works agreeing,
+≥50%) **OR** human-adjudicated — a publication/citable gloss. `B` = composite ≥ 0.55
+(decent, single-reference, aligned — the corpus-signal role in `corpus_gate.py`).
+`C` = everything else. The corroboration gate on `A` is deliberate: it is what makes
+the stamp trustworthy, not the QE proxy alone.
+
+```
+python src/tm_grade.py grade [--in P] [--qe proxy|comet] [--sample N] [--out sidecar]
+python src/tm_grade.py calibrate [--gold gold/gold_set.jsonl] [--in P]
+python src/tm_grade.py selftest
+python src/build_tmx.py build --grades release/corpus_tm/corpus_tm.grades.jsonl   # stamp real grades
+```
+
+**Measured (06-07-2026, `qe=proxy`, Opus 4.8 `claude-opus-4-8` orchestration).** Over
+the full 1,091,528-unit corpus: **A 5.7% · B 94.0% · C 0.3%**. Every one of the 62,503
+A units satisfies the consensus gate (0 violations) — A is driven by the
+multi-translation clusters (Bhagavad-gītā ×10, repeated epic verses). Calibration on
+the 320-row labelled [`gold/gold_set.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl)
+shows **0 defective rows (`hallucinated`/`wrong-sense`/`partial`) ever reach A** — but
+also that the reference-free proxy QE only weakly separates acceptable from defective
+(ranking AUC ≈ 0.58): a **surface heuristic cannot detect wrong-sense** (a wrong gloss
+is as fluent as a right one). Semantic discrimination therefore comes from *consensus*
+and the *A-gate's conservatism*, not the proxy — which is precisely why `--qe comet`
+(a trained adequacy model) and Slice 3's real aligner are the next lifts. The grades
+sidecar is gitignored with the corpus; only the grader + weights table + this doc ship.
 
 ## Usage
 
