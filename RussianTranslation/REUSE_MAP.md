@@ -1,6 +1,6 @@
 # pwg_ru — Russian reuse-source map
 
-_Created: 05-07-2026 · Last updated: 05-07-2026_
+_Created: 05-07-2026 · Last updated: 06-07-2026_
 
 Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_ru`
 (PWG→RU) pipeline, and how to consume each — written so no future session
@@ -80,6 +80,19 @@ confidence `mined` TM layer — see
 Track B. H186 Track A additionally aligns ~12 not-yet-added parallel Sa-Ru
 texts. This map's "context only" framing applies to what `corpus_gate.py`
 currently does with these sources — H186 is the tracked plan to go further.
+
+**H186 outcome (06-07-2026, Opus 4.8 `claude-opus-4-8` + DeepSeek `deepseek-chat`):**
+- **Track B DONE (pilot).** A `mined` TM tier now exists —
+  [`src/mine_running_text.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mine_running_text.py)
+  → `src/corpus_lexicon.mined.jsonl` (gitignored), `tier: "mined"`, quarantined from the
+  1.09M. Pilot mined 421 pairs from `induizm-dzhaynizm-sikkhizm` + `mify_759_ind` +
+  `syrkin_tom_1_utf`; 30-row precision gate = **97% correct-equivalence, 80% useful
+  meaning-gloss, 3.3% hard error** → scale approved. Design + guards + precision:
+  [`pwg_ru/RUNNING_TEXT_MINING.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RUNNING_TEXT_MINING.md).
+- **Track A BLOCKED.** None of MG's ~12 parallel texts exist in verse-aligned jsonl the
+  aligner can consume (raw GRETIL Sanskrit + separate Russian glossaries/prose only) —
+  building parallel corpora is an upstream SamudraManthanam `corpus_builder` job needing
+  human edition/alignment decisions. See `RUNNING_TEXT_MINING.md` § Track A status.
 
 ## 5. Etymology / future additions
 
