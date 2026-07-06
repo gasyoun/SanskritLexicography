@@ -75,7 +75,7 @@ consumption pattern.
 
 ## 3. Phased plan
 
-### P0 — Parsers & canonical extraction (this repo)
+### P0 — Parsers & canonical extraction (this repo) ✅ DONE ([PR #201](https://github.com/gasyoun/SanskritLexicography/pull/201), 06-07-2026)
 - `HeadwordLists/works_catalogue/parse_acc.py` — [acc.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/acc/acc.txt)
   → JSONL: `{acc_L, pc_scan, k1_slp1, k2, body, sigla[], match_key}`.
 - `HeadwordLists/works_catalogue/parse_ncc.py` — [combined.txt](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/NCC/files/src/SktNewCatalogus_Catalogorum_combined.txt)
@@ -83,17 +83,19 @@ consumption pattern.
 - Both `match_key` via `sanskrit-util` `to_slp1`→`slp1_simplify`; strip parentheticals, underscores, fold anusvara.
 - **Deliverable:** `HeadwordLists/works_catalogue/acc.jsonl`, `ncc.jsonl` + row counts logged.
 
-### P1 — Full-fuzzy matching engine (tiered, scored)
-`HeadwordLists/works_catalogue/build_works_crosswalk.py` emits candidate links, each tier + score:
+### P1 — Full-fuzzy matching engine (tiered, scored) ✅ DONE ([PR #205](https://github.com/gasyoun/SanskritLexicography/pull/205), 06-07-2026)
+[`build_works_crosswalk.py`](HeadwordLists/works_catalogue/build_works_crosswalk.py) emits
+`crosswalk_candidates.jsonl.gz` (169,260 rows), each tier + score — see
+[`P1_COUNTS.md`](HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown:
 
-| Tier | Rule | Disposition |
-|---|---|---|
-| A | exact simplified-key | auto-accept (8,413 confirmed) |
-| B | qualifier/compound-normalized, anusvara-folded | auto-accept |
-| C | prefix / containment (`Abhayapradāna ⊂ Abhayapradānasāra`) | **adjudicate** |
-| D | edit-distance ≤ threshold on simplified key | **adjudicate** |
+| Tier | Rule | Disposition | Measured (distinct keys) |
+|---|---|---|---:|
+| A | exact simplified-key | auto-accept | 8,397 ACC / 8,397 NCC (matches P0) |
+| B | nasal-fold (`m`/`n`) + geminate-fold, beyond A | auto-accept | +2,041 ACC / +2,047 NCC |
+| C | prefix containment (min 5-char key) | **adjudicate** | +1,254 ACC / +2,904 NCC |
+| D | length-scaled edit-distance (rapidfuzz), blocked by first-letter+length | **adjudicate** | +7,552 ACC / +7,745 NCC |
 
-- **Deliverable:** `crosswalk_candidates.jsonl` with per-tier counts (measured, logged — no silent caps).
+- **Deliverable:** `crosswalk_candidates.jsonl.gz` with per-tier counts (measured, logged — no silent caps).
 
 ### P2 — Adjudication (human-gated — mandatory for full-fuzzy)
 - `/review-sheet` HTML voting sheet over Tier C/D candidates → `decisions.json` → `/decisions-apply`.
