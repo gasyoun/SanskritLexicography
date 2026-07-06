@@ -133,11 +133,15 @@ def test_harness_scope_and_tools():
     meta = harness_meta()  # canonical opt2 harness (window_common.OPT_HARNESS)
     if not meta.get('ok'):
         fail('optimized harness missing or invalid: %s' % meta.get('error'))
-    current = current_root_provenance(meta.get('root'), meta.get('selected_keys'))
+    is_nominal = bool((meta.get('meta') or {}).get('nominal'))
+    current = current_root_provenance(meta.get('root'), meta.get('selected_keys'),
+                                      nominal=is_nominal)
     if not current.get('ok'):
         fail('current root provenance unavailable: %s' % current.get('error'))
-    if meta.get('rootmap_sha256') != current.get('rootmap_sha256'):
+    if not is_nominal and meta.get('rootmap_sha256') != current.get('rootmap_sha256'):
         fail('optimized harness rootmap hash does not match current rootmap')
+    if is_nominal and meta.get('rootmap_sha256') is not None:
+        fail('nominal optimized harness must not pretend to have a rootmap hash')
     if meta.get('selected_keys') != current.get('selected_keys'):
         fail('optimized harness selected_keys do not match current rootmap selection')
     text = open(meta['path'], encoding='utf-8').read()
@@ -160,7 +164,8 @@ def test_stale_check_key_order_independent():
     if not meta.get('ok'):
         fail('optimized harness missing or invalid: %s' % meta.get('error'))
     root = meta.get('root')
-    current = current_root_provenance(root, meta.get('selected_keys'))
+    is_nominal = bool((meta.get('meta') or {}).get('nominal'))
+    current = current_root_provenance(root, meta.get('selected_keys'), nominal=is_nominal)
     if not current.get('ok'):
         fail('current root provenance unavailable: %s' % current.get('error'))
     workflow_meta = {
@@ -169,6 +174,7 @@ def test_stale_check_key_order_independent():
         'rootmap_sha256': current['rootmap_sha256'],
         'selected_keys': current['selected_keys'],
         'input_hashes': current['input_hashes'],
+        'nominal': is_nominal,
     }
     reordered_keys = list(reversed(current['selected_keys']))
     check = stale_check(root, workflow_meta, reordered_keys)
@@ -176,6 +182,46 @@ def test_stale_check_key_order_independent():
         fail('stale_check flagged reordered-but-identical key set as a mismatch')
     if check['stale']:
         fail('stale_check treated an order-only difference as stale: %s' % check.get('errors'))
+
+
+def test_nominal_provenance_without_rootmap():
+    """Nominal windows use selected headword keys directly; lack of a rootmap is expected."""
+    import gen_opt_harness2 as gh
+    from window_common import input_paths
+    keys = ['_selftest_nominal_prov']
+    rp, pp = input_paths(keys[0])
+    old_raw = open(rp, encoding='utf-8').read() if os.path.exists(rp) else None
+    old_portrait = open(pp, encoding='utf-8').read() if os.path.exists(pp) else None
+    try:
+        os.makedirs(os.path.dirname(rp), exist_ok=True)
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('<L>1<pc>1<k1>a<k2>a<h>1\n<body>{#a#} x</body>\n')
+        with open(pp, 'w', encoding='utf-8') as f:
+            json.dump({'key1': 'a', 'lex': 'm.'}, f)
+        current = current_root_provenance('nominal_selftest', keys, nominal=True)
+        if not current.get('ok') or current.get('rootmap_sha256') is not None:
+            fail('nominal provenance must succeed without a rootmap')
+        workflow_meta = {
+            'root': 'nominal_selftest',
+            'safe_root': current['safe_root'],
+            'rootmap_sha256': None,
+            'selected_keys': keys,
+            'input_hashes': current['input_hashes'],
+            'nominal': True,
+        }
+        check = stale_check('nominal_selftest', workflow_meta, list(reversed(keys)))
+        if check['stale']:
+            fail('nominal stale_check must not require a rootmap: %s' % check.get('errors'))
+    finally:
+        for path, old in ((rp, old_raw), (pp, old_portrait)):
+            if old is None:
+                try:
+                    os.remove(path)
+                except OSError:
+                    pass
+            else:
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(old)
 
 
 def test_prompt_rule_audit_template():
@@ -1345,7 +1391,7 @@ def test_tm_pre_resolves_cards():
     in TM_RESOLVED, excluded from every translate lane), and the total-accounting invariant
     (tm ∪ batched ∪ presplit == selected, disjoint) holds. Uses a real root's on-disk inputs."""
     import gen_opt_harness2 as gh
-    from window_common import rootmap_path, input_paths, sha256_file
+    from window_common import rootmap_path, input_paths, sha256_file, read_text
     root = 'gam'
     rmpath, _ = rootmap_path(root)
     if not rmpath:
@@ -1359,9 +1405,10 @@ def test_tm_pre_resolves_cards():
     try:
         entries = {}
         for k in cached:
-            sha = sha256_file(input_paths(k)[0])
+            raw_path = input_paths(k)[0]
+            sha = sha256_file(raw_path)
             entries['ru:%s' % sha] = {'card': {'key1': k, 'iast': None,
-                'records': [{'h': None, 'senses': [{'tag': '1', 'german': 'g', 'russian': 'р',
+                'records': [{'h': None, 'senses': [{'tag': '1', 'german': read_text(raw_path), 'russian': 'р',
                     'equivalence_type': 'equivalent', 'source_type': 'attested',
                     'stratum': '', 'differentia': ''}]}]}, 'src_key': k}
         with open(tmfile, 'w', encoding='utf-8') as f:
@@ -1394,6 +1441,55 @@ def test_tm_pre_resolves_cards():
             os.remove(tmfile)
         except OSError:
             pass
+
+
+def test_tm_card_sane_rejects_zero_marker_drift():
+    """A cached card with zero citations/Sanskrit markers must not satisfy a cited source."""
+    import gen_opt_harness2 as gh
+    raw = '{#agni#}¦ Feuer <ls>RV. 1</ls>.'
+    card = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
+                                     'russian': 'огонь'}]}]}
+    ok, why = gh.tm_card_sane(card, 'ru', 'russian', raw)
+    if ok or '<ls>' not in why:
+        fail('zero-<ls> cached card must be refused for cited source, got ok=%r why=%r' %
+             (ok, why))
+    raw2 = '{#agni#}¦ Feuer.'
+    card2 = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
+                                      'russian': 'огонь'}]}]}
+    ok2, why2 = gh.tm_card_sane(card2, 'ru', 'russian', raw2)
+    if ok2 or '{#' not in why2:
+        fail('zero-{# cached card must be refused for Sanskrit-marked source, got ok=%r why=%r' %
+             (ok2, why2))
+
+
+def test_generated_harness_strict_key_matching():
+    """Generated JS must not positionally assign a returned full card to another key."""
+    import gen_opt_harness2 as gh
+    raw = '<L>1<pc>1<k1>a<k2>a<h>1\n{#a#}¦ {%eins%}.\n'
+    d = tempfile.mkdtemp()
+    keys = ['zz_key_a', 'zz_key_b']
+    saved_ip = gh.input_paths
+    try:
+        for k in keys:
+            with open(os.path.join(d, k + '.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(os.path.join(d, k + '.portrait.json'), 'w', encoding='utf-8') as f:
+                f.write('{}')
+        gh.input_paths = lambda k, input_dir=None: (
+            os.path.join(d, k + '.raw.txt'), os.path.join(d, k + '.portrait.json'))
+        js, _batches = gh.build('zz', keys, None, 12000, nominal=True,
+                                grammar_on=False, tm_path=None)
+        if 'const cand = km[k]' not in js:
+            fail('full-card lane must use strict key lookup, not positional fallback')
+        if 'res.cards[i]' in js or 'res.cards[idx], fi' in js:
+            fail('generated harness still has unsafe positional response assignment')
+        if 'missing-or-mismatched-key' not in js:
+            fail('missing/mismatched full-card keys must get an explicit failure reason')
+        if 'missing-or-mismatched-fragment-key' not in js:
+            fail('missing/mismatched fragment keys must get an explicit failure reason')
+    finally:
+        gh.input_paths = saved_ip
+        shutil.rmtree(d, ignore_errors=True)
 
 
 def test_tm_auto_no_sidecar_metadata():
@@ -2455,6 +2551,8 @@ def main():
     tests = [
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
+        test_tm_card_sane_rejects_zero_marker_drift,
+        test_generated_harness_strict_key_matching,
         test_tm_auto_no_sidecar_metadata,
         test_suggest_tm_does_not_skip_agents,
         test_tm_publication_fixtures_validate,
@@ -2495,6 +2593,7 @@ def main():
         test_requeue_transient_vs_defect_state,
         test_harness_scope_and_tools,
         test_stale_check_key_order_independent,
+        test_nominal_provenance_without_rootmap,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
         test_semantic_risk_checker,

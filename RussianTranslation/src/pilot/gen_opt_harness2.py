@@ -695,9 +695,9 @@ def tm_card_sane(card, lang, field, raw):
               for s in rec.get('senses') or []))
     sk = sum(((s.get('german') or '').count('{#') for rec in card.get('records') or []
               for s in rec.get('senses') or []))
-    if ls and ls != raw.count('<ls'):
+    if ls != raw.count('<ls'):
         return False, '<ls> count drift'
-    if sk and sk != raw.count('{#'):
+    if sk != raw.count('{#'):
         return False, '{# count drift'
     return True, ''
 
@@ -1194,6 +1194,11 @@ const cardTokens = card => { let a = []; for (const rec of (card.records || []))
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
 // positional-only matching silently misassigns every card after an omitted/reordered one.
 const byKey1 = cards => { const m = {}; for (const c of cards) if (c && c.key1 !== undefined && !(c.key1 in m)) m[c.key1] = c; return m }
+const exactCard = (cards, km, expected, fallbackIndex) => {
+  if (km[expected] !== undefined) return km[expected]
+  const c = cards[fallbackIndex]
+  return (c && c.key1 === expected) ? c : null
+}
 function restoreCard(card, k) {
   const ph = PH[k] || []
   for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
@@ -1271,8 +1276,14 @@ async function healGroup(k, idxs, grp, label) {
     }
     if (res && Array.isArray(res.cards)) {
       const km = byKey1(res.cards)
-      // match by echoed key1 first; fall back to position within the pending set
-      pending.forEach((fi, idx) => { acceptFrag(km[fkey(fi)] !== undefined ? km[fkey(fi)] : res.cards[idx], fi) })
+      // Fragments may arrive reordered, but a positional fallback is safe only when the
+      // fallback card still echoes the exact fragment key and passes the token multiset guard.
+      pending.forEach((fi, idx) => {
+        const fk = fkey(fi)
+        const cand = exactCard(res.cards, km, fk, idx)
+        if (!cand) { noteFail(fk, 'missing-or-mismatched-fragment-key'); return }
+        acceptFrag(cand, fi)
+      })
     } else {
       pending.forEach(fi => noteFail(fkey(fi), res ? 'malformed-response (no cards[])' : 'agent-returned-null'))
     }
@@ -1428,14 +1439,13 @@ async function resolveGroup(pending, label) {
       break
     }
     if (res && Array.isArray(res.cards)) {
-      // Match responses by their echoed key1 FIRST, position second. Positional-only
-      // matching shifts every card after an omitted/reordered one onto the wrong key;
-      // accept()'s count guard catches MOST such shifts, but two cards with equal
-      // <ls>/{# counts would swap silently — content under the wrong headword.
+      // Match responses by their echoed key1 ONLY. Positional fallback can silently put
+      // content under the wrong headword when a model omits/reorders cards, especially for
+      // zero-marker cross-reference stubs where count-based fidelity guards are blind.
       const km = byKey1(res.cards)
       cur.forEach((k, i) => {
-        const cand = km[k] !== undefined ? km[k] : res.cards[i]
-        if (cand === undefined || cand === null) { noteFail(k, 'missing-from-response'); return }
+        const cand = km[k]
+        if (cand === undefined || cand === null) { noteFail(k, 'missing-or-mismatched-key'); return }
         const c = accept(cand, k)
         if (c) resolved[k] = c
       })

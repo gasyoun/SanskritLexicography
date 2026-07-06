@@ -150,9 +150,11 @@ def _representative(token):
     """First (k1, lex) headword carrying `token`, from headword_index.tsv (built on demand)."""
     if not os.path.exists(HW_TSV):
         build()
-    for line in open(HW_TSV, encoding='utf-8'):
+    for i, line in enumerate(open(HW_TSV, encoding='utf-8')):
         parts = line.rstrip('\n').split('\t')
-        if len(parts) == 4 and parts[3] == token:
+        if i == 0:
+            continue
+        if len(parts) >= 5 and parts[4] == token:
             return parts[0], parts[2]            # k1, lex
     return None, None
 
