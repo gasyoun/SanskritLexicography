@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 03-07-2026_
+_Created: 26-06-2026 · Last updated: 07-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §55) whatever its section, so existing numbers never shift; when a finding is later
+(currently §61) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -79,6 +79,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
+- 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
 
 **Etymology & derivation**
 
@@ -1425,6 +1426,34 @@ human adjudication, and reserve a *trained adequacy* model (COMET-QE, the
 > Indische Sprüche editions"), verified via `gh api`/`curl` against
 > `sanskrit-lexicon-scans/boesp1`+`boesp2` and `sanskrit-lexicon/PWG#87`,
 > Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
+### §61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable
+
+🔴 **The ~266,820-word reverse Sanskrit dictionary merges 30 source dictionaries
+(1822–2005) whose rights status splits ~18 safely public domain / 2 likely-PD-verify /
+7 clearly in copyright (Kochergina 1978 → RF ~2088, Turner 1962–85 → ~2053, Mylius 1975,
+Pujol 2005, Edgerton 1953, Stchoupak–Nitti–Renou 1932, Vettam Mani 1979) / 1 own-license
+(Huet) / 2 unclear — so publishing the merged headword list openly is a genuine legal
+judgment, not a default.**
+
+Evidence: per-source classification of all 30 sources (editions + compiler/author death
+years) in
+[`ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md` §3.1](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md),
+built from the compiler's own bibliography
+([`Словари-источники.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8.mdx)).
+
+Implication: any session touching publication of merged multi-dictionary data (this list,
+or a future union headword release) must route through the §3.1 rights table and the open
+`@DECIDE` in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+§ Waiting on Me — options: (a) publish all on the facts-not-expression reading, (b) PD-only
+subset (unique-to-risky-source count = H270 step 5), (c) restricted tier (kosha pattern).
+A descriptive *paper* about the resource is NOT gated by the ruling — only the data tier is.
+
+> **Source:** H265 analysis ([PR #207](https://github.com/gasyoun/SanskritLexicography/pull/207)),
+> Fable 5 `claude-fable-5` · 2026-07-07
 
 ---
 
