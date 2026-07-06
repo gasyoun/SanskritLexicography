@@ -1398,6 +1398,29 @@ citation crosswalk must also run `gh repo list funderburkjim` and
 `gh repo list sanskrit-lexicon-scans`, and grep the actual `csl-orig` source
 text for existing `<ls>` markup, before assuming nothing exists.
 
+### §60. pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense
+
+🟡 **Grading the 1.09M-unit Sa→Ru translation memory
+([`tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
+H215 Slice 2) with the deterministic `proxy` QE yields A 5.7% / B 94.0% / C 0.3%
+over the full corpus.** All 62,503 A units satisfy the corroboration gate
+(≥2 distinct works agreeing on one `(passage, slp1)`, ≥50%) — A is driven by the
+multi-translation clusters (Bhagavad-gītā ×10, repeated epic verses), not by QE
+score alone. Measured 06-07-2026 (Opus 4.8 `claude-opus-4-8` orchestration;
+extraction upstream DeepSeek `deepseek-chat`).
+
+Implication: **a reference-free *surface/fluency* heuristic is near-useless for
+adequacy.** Calibrated on the 320-row labelled
+[`gold/gold_set.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl),
+the proxy separates semantically-acceptable from defective rows at only
+**ranking AUC ≈ 0.58** — a `wrong-sense` gloss is as clean/short/Cyrillic as a
+correct one, so the form-based signal can't tell them apart. What *does* protect
+the publication-grade A stamp is (a) the consensus gate and (b) the A-gate's
+conservatism (0 defective gold rows ever reached A). Anyone tempted to lean on a
+cheap reference-free QE for semantic filtering should instead weight consensus /
+human adjudication, and reserve a *trained adequacy* model (COMET-QE, the
+`--qe comet` hook) for the real QE signal.
+
 > **Source:** MG correction mid-session ("It exists as Jim Funderburk repo, both
 > Indische Sprüche editions"), verified via `gh api`/`curl` against
 > `sanskrit-lexicon-scans/boesp1`+`boesp2` and `sanskrit-lexicon/PWG#87`,
