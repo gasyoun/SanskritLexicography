@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 05-07-2026_
+_Created: 04-07-2026 · Last updated: 06-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -301,6 +301,52 @@ backfill queue (key1/IAST/layer(s)/source wordlist(s)). **Do not rediscover this
 as a fresh bug** — both the worklist drop and the render path are fixed; what
 remains is ordinary lane scheduling/review.
 
+**H234 implemented (06-07-2026):** the H180 Arm-B synthesis run (Opus 4.8
+`claude-opus-4-8` orchestrating 10 async sub-agents) degenerated into a
+~40-minute fiasco caught only by hand via file mtimes. Six distinct failures,
+all now guarded by
+[`src/synth_dispatch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_dispatch.py)
+(deterministic dispatch-and-monitor wrapper, 7-case selftest, zero model call
+in the wrapper itself):
+
+1. **False-stall kill** — all 10 agents were judged stalled at ~6 min because
+   their transcripts read 0 bytes, and were killed mid-work; on resume they had
+   in fact read + analysed their inputs. Async-agent transcripts **buffer** —
+   transcript size is NOT a liveness signal. The wrapper judges liveness by
+   **output-file growth only**.
+2. **Mid-stream API stalls under wide concurrency** — 7/10 resumed agents died
+   with `API Error: Response stalled mid-stream`; 10 concurrent large Opus
+   generations (26–212 KB inputs) is over the cliff, staggered waves of ~4 ran
+   clean. The wrapper caps concurrency at 3 (hard cap 4) with staggered starts.
+3. **34-minute silent hang** — the `car` agent last grew its transcript at
+   17:45, wrote nothing, emitted no completion/failure signal, and a queued
+   resume message was never delivered (a hung agent takes no tool rounds).
+   Only a wall-clock guard catches this: the wrapper kills any attempt whose
+   output file hasn't grown in 10 min (`--kill-after 600`).
+4. **Watcher wiped gitignored outputs mid-build** — outputs written as bare
+   untracked files under `pwg_ru/reglue/synth_outputs/` were deleted by the
+   repo watcher while agents were still writing. The wrapper authors in a
+   staging dir OUTSIDE the repo, lands atomically, and re-verifies the landed
+   sha after a delay (the `/watcher-safe-commit` pattern), re-landing if wiped.
+5. **Zombie overwrote a scored result** — a replacement `viS` agent produced
+   the version that was scored (1597 `<ls>`); the old agent, never confirmed
+   dead, finished 47 min later and silently overwrote it with a 1593-`<ls>`
+   version. The wrapper confirms an attempt is dead (`wait()` returned) before
+   re-dispatching, gives each attempt a private staging file, and seals a
+   landed job — late output is discarded, never landed.
+6. **Free-form generation of >~800-citation entries is unreliable** — `viS`
+   (1597), `DA` (2116), `car` (1019) all stalled or truncated on free-form
+   prose and only completed via programmatic assembly (verbatim fragment
+   reorder). The wrapper routes inputs above `--assemble-over 800` `<ls>` to
+   its deterministic zero-LLM assembler by default; `viS.de_synth.txt` was
+   regenerated this way (1597 raw / 1525 unique `<ls>`, `synth_score.py` row
+   byte-identical to the committed
+   [`ARMB_SCORES.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv)).
+
+Baseline for calibration: a clean single synthesis agent on the largest word
+(`viS`) finishes in **under 3 minutes** — so a 10-minute output-file
+kill-guard is generous, and "make agents faster" was never the problem.
+
 ## Recurring failure patterns (read this before assuming something new is broken)
 
 These are the failure *shapes* that have recurred across the project — if a
@@ -309,7 +355,24 @@ likely the SAME class, not a new bug:
 
 - **Wide concurrency collapses the whole run.** >3 simultaneous root
   Workflows → server-side rate limiting → transient nulls (Slice D: 117 of
-  them). Fix is process discipline (≤3-wide), not code.
+  them). Fix is process discipline (≤3-wide), not code. The same cliff hit
+  the H180 Arm-B fan-out as mid-stream API stalls at 10-wide (H234 #2).
+- **An async agent's transcript size says nothing about liveness.**
+  Transcripts buffer: 0 transcript bytes ≠ stalled (H234 #1 killed 10 healthy
+  agents on that inference), and a growing transcript ≠ progress. The only
+  trustworthy liveness signal is the agent's OUTPUT FILE growing; the only
+  trustworthy completion signal is the output file + a content self-check
+  (e.g. `<ls>` count).
+- **A killed/failed agent is not dead until its death is observed.** Re-
+  dispatching a replacement while the old agent may still be running invites
+  a zombie to finish later and overwrite the good result (H234 #5). Confirm
+  the kill, and give every attempt its own private output path — never two
+  writers on one file.
+- **Untracked/gitignored files in this repo are watcher-bait.** The repo
+  watcher deletes untracked files, including an agent's half-written output
+  (H234 #4). Any agent-facing output must be authored outside the repo and
+  landed atomically with a post-land re-verify (`/watcher-safe-commit`
+  pattern / `synth_dispatch.land_watcher_safe`).
 - **TM/cache silently re-serves already-rejected content.** Any requeue path
   that doesn't explicitly disable the translation-memory lookup will hand
   back the exact content a gate just flagged, because TM addresses on input
