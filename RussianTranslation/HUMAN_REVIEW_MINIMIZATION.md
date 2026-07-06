@@ -16,7 +16,7 @@ Current gate status:
 
 | gate | status | blocker |
 |---|---|---|
-| G5 translation review | blocked | 0/217 review decisions; 0 print-ready rows |
+| G5 translation review | blocked | 0/11,163 review decisions; 0 print-ready rows |
 | G6 human gold | blocked | 0/320 labels complete |
 | G7 double review | blocked | 0/80 second reviews; no agreement report |
 | G10 edition cut | blocked | waits for G5/G6/G7 |
@@ -59,6 +59,12 @@ Input file: `src/_review_queue.csv`
 
 Purpose: decide whether existing translated rows are print-ready.
 
+The regenerated queue currently covers the full promoted translation store
+(11,163 `ai_translated` rows). This is a G5 publication-review queue, **not**
+the gold annotation set. Do not expand G6 to all 11,163 rows; G6 remains the
+bounded, stratified 320-row gold sample unless a later methodology decision
+changes the sample design.
+
 Allowed edit columns:
 
 | column | allowed values / use |
@@ -68,7 +74,7 @@ Allowed edit columns:
 | `edit` | optional corrected Russian text |
 | `notes` | optional reviewer note |
 
-Do not edit: `severity`, `ord`, `key1`, `key2`, `review_status`,
+Do not edit: `review_id`, `severity`, `ord`, `key1`, `key2`, `review_status`,
 `key_match`, `placeholders_ok`, `reason`, `attested`, `ru`.
 
 Minimum valid action:
@@ -177,4 +183,3 @@ the agreement report exists.
 6. G7 80-row double review complete.
 7. `release_readiness.py`.
 8. Immutable `edition_vN` cut only after G5/G6/G7 pass.
-
