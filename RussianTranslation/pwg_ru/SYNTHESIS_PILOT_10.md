@@ -74,6 +74,24 @@ the layered store; coherence + fluency need a small human pass (interactive HTML
 | dah | B | | | | | | | 1+1 |
 | … | | | | | | | | |
 
+## Status (06-07-2026) — Arm A done, Arm B inputs assembled
+
+- **Arm A (after-translation remix)** is built for all 10 words as part of the
+  [reglue pilot](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md#5a-pilot-run-results-06-07-2026-arm-a--zero-re-translation-proven)
+  (`dah…Sam` ⊂ the 15-headword set) — zero re-translation.
+- **Arm B (synthesize-German-first)** — the deterministic, zero-cost half is done:
+  [`src/synth_de_first.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_de_first.py)
+  assembled each word's per-layer German + the two prompts + manifest →
+  [`pwg_ru/reglue/synth_inputs/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/reglue/synth_inputs).
+  The **model generation** (synthesize with Opus 4.8 `claude-opus-4-8` → translate with
+  Sonnet 5 `claude-sonnet-5`) is an isolated, tagged Workflow run, **deferred** — it emits
+  10 new translations and only makes sense paired with the human coherence/fluency HTML
+  sheet, so it is not run until that sheet is stood up.
+- **Measured layer coverage** (from the assembler) refines this doc's approximate table:
+  `As`=pwg+pwkvn, `car`=pwg+pw, `siD`=pwg+pw+**nws**, `viS`=pwg+pw+pwkvn,
+  `Cid`/`gA`/`Sam`=all five. The manifest is
+  [`synth_inputs/MANIFEST.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/reglue/synth_inputs/MANIFEST.tsv).
+
 ## Guardrails
 
 - Arm B is a **calibration probe only** — running it does not commit the corpus to

@@ -1,0 +1,23 @@
+{
+ "key1": "gA",
+ "layers": [
+  "pwg",
+  "pw",
+  "sch",
+  "pwkvn",
+  "nws"
+ ],
+ "n_subcards": 319,
+ "synthesize": {
+  "model_tier": "Opus 4.8",
+  "model_version": "claude-opus-4-8",
+  "system": "Du bist Lexikograph des Petersburger Wörterbuchs. Unten stehen ALLE Schicht-Fragmente (PWG-Skelett + Ergänzungen PW/SCH/PWKVN/NWS) zu EINEM Stichwort. Verschmilz sie zu EINEM kohärenten deutschen Eintrag: PWG bleibt das Gerüst, Ergänzungen an ihre passende Bedeutung einsortieren, Widersprüche (z.B. PW streicht/korrigiert PWG) explizit vermerken, nichts erfinden, jede Bedeutung und jeden Beleg (<ls>) erhalten. Gib nur den fusionierten deutschen Eintrag zurück.",
+  "input_file": "gA.de.txt"
+ },
+ "translate": {
+  "model_tier": "Sonnet 5",
+  "model_version": "claude-sonnet-5",
+  "system": "Übersetze den folgenden fusionierten deutschen Wörterbucheintrag ins Russische. Sanskrit ({#…#}/{%…%}), Grammatik-Abkürzungen (<lex>) und Quellen (<ls>) unverändert lassen; nur die deutsche Prosa übersetzen.",
+  "input": "<synthesized German from step 1>"
+ }
+}
