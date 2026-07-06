@@ -132,6 +132,31 @@ before set operations, or the learner signal inherits this OCR/citation-form noi
 4. Doubles as evidence for the Deliverable-5 paper ("how the Petersburg tradition
    abridged itself").
 
+## 5a. Run results (06-07-2026)
+
+[`src/build_learner_scores.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_learner_scores.py)
+(+ the shared [`src/slp1_norm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/slp1_norm.py))
+scored all **106,079** normalized PWG headwords →
+[`pwg_ru/learner_scores.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/learner_scores.tsv):
+
+- **learner-core (kept by ≥1 Russian student dict): 22,772 (21%)** — a plausible first cut
+  for a "lighter PWG for Russian students".
+- kept by **Kochergina** (weight 1.0, the anchor): **15,254**.
+- kept by **≥2** Russian dicts (solidly learner-core): **6,516**.
+
+**Edition deltas** (normalized through `slp1_norm`) →
+[`pwg_ru/edition_deltas.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/edition_deltas.tsv):
+
+| pair | kept | added | dropped |
+|---|---:|---:|---:|
+| AP90 → AP | 30,781 | 58,086 | **3,489** |
+| MW72 → MW | 45,898 | 148,157 | **5,257** |
+
+These confirm §3's normalized figures (MW72→MW ≈ 5,301; AP90→AP is lower than the
+final-`M`-only 4,030 because `slp1_norm` *also* collapses internal anusvara + strips
+homonym numbers, catching the residual variants §3 flagged). The threshold calibration on
+a human HTML sheet is the remaining (deferred) step.
+
 ## 6. Guardrails (H180)
 
 - Never blocks the H179 run; operates on already-translated sub-cards.

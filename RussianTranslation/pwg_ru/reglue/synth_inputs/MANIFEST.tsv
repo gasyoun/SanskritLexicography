@@ -1,0 +1,11 @@
+key1	n_layers	n_subcards	layers	synth_model	translate_model
+dah	1	63	pwg	claude-opus-4-8	claude-sonnet-5
+As	2	90	pwg+pwkvn	claude-opus-4-8	claude-sonnet-5
+car	2	257	pwg+pw	claude-opus-4-8	claude-sonnet-5
+siD	3	187	pwg+pw+nws	claude-opus-4-8	claude-sonnet-5
+viS	3	537	pwg+pw+pwkvn	claude-opus-4-8	claude-sonnet-5
+Ap	4	152	pwg+pw+sch+pwkvn	claude-opus-4-8	claude-sonnet-5
+DA	4	803	pwg+pw+sch+pwkvn	claude-opus-4-8	claude-sonnet-5
+Cid	5	154	pwg+pw+sch+pwkvn+nws	claude-opus-4-8	claude-sonnet-5
+gA	5	319	pwg+pw+sch+pwkvn+nws	claude-opus-4-8	claude-sonnet-5
+Sam	5	172	pwg+pw+sch+pwkvn+nws	claude-opus-4-8	claude-sonnet-5
