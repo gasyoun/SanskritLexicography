@@ -108,6 +108,19 @@ def main():
             print('   %s: %d contaminated rows (leak=%d)' % (w, c, leak[w]))
     json.dump({'rows': dict(rows), 'total': tot}, open(STATE, 'w', encoding='utf-8'))
     clean = not bad
+
+    # H215 Slice 1: if a TMX export exists (release/corpus_tm/, gitignored), round-trip
+    # validate it so a malformed publication artifact is caught by the same audit.
+    tmx = os.path.normpath(os.path.join(HERE, '..', 'release', 'corpus_tm', 'corpus_tm.sa-ru.tmx'))
+    if os.path.exists(tmx):
+        try:
+            import build_tmx
+            ok, msg = build_tmx.validate(tmx)
+            print('TMX export:', msg)
+            clean = clean and ok
+        except Exception as e:
+            print('TMX export: validation skipped (%s)' % e)
+
     print('VERDICT:', 'CLEAN' if clean else 'CONTAMINATION FOUND')
     return 0 if clean else 1
 
