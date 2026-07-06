@@ -1,10 +1,38 @@
 # PWG-Miss Render-Path Decisions
 
-_Created: 05-07-2026 · Last updated: 05-07-2026_
+_Created: 05-07-2026 · Last updated: 06-07-2026_
 
 This file records settled decisions for the PWG-less headword card-rendering gap
 found during [H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md).
 Do not re-ask these as open planning questions unless the topic is explicitly reopened.
+
+## ⚠️ SUPERSESSION — 06-07-2026 (H214, Opus 4.8 `claude-opus-4-8`)
+
+M.G. ruled the H206/H212 ambiguity explicitly, and it **supersedes decisions #2 and #4
+below on the portrait-design point**. The new, implemented ruling
+([H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)):
+
+- **Do NOT invent or force a PWG-style base portrait / sense-tree** for a PWG-missing
+  headword. Decision #2 ("extend `microstructure.portrait()` to a real structured
+  portrait") is **withdrawn** — a PW/SCH/PWKVN-only lemma gets **standalone
+  supplement-chain cards** built from the available non-PWG layers, one labeled
+  sub-card per layer.
+- **A minimal / no-PWG portrait is acceptable** as long as the layer labels
+  (`pw`/`sch`/`pwkvn`/`nws`) survive cleanly through raw card → prompt → sub-card id
+  (`<key>~~h0_zz_<layer>`) → provenance (`source_profile: "no_pwg_supplement_chain"`) →
+  promoted/exportable rows (first-class `layer` field via `dict_merge.layer_of()`).
+  Decision #4's "flag PWG-less cards distinctly downstream" is **kept and satisfied by
+  this marker chain**, not by a richer portrait.
+- These are **needed translations**; the open work was implementation, not whether to
+  translate them. The 232-lemma backfill queue moves from BLOCKED to a **runnable
+  `no_pwg_runnable` lane** in
+  [`nominals_worklist.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nominals_worklist.py).
+
+Implementation: `_pilot_gen_merged.gen_no_pwg_card()` (reuses `supplement_parts()` →
+`dict_merge.merged()`, no parallel merge path); `gen_opt_harness2.build()` stamps
+`meta.source_profile`; `promote_final_cards.provenance()` carries it to every store row.
+Decisions #1 and #3 (build it; sequencing) stand. Everything below is the **original
+05-07-2026 record**, kept for provenance.
 
 ## Context
 

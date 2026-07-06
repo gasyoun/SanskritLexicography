@@ -584,6 +584,101 @@ def gen_root_split(key, pwg_idx, verbose=True):
     return len(submap)
 
 
+def no_pwg_parts(key):
+    """H214 — the labeled sub-card parts for a PWG-MISSING headword, one per non-PWG layer.
+
+    Like supplement_parts() (same chunking, same ROLE labels, same authoritative NWS owner
+    map) but built for a headword with NO PWG base, so — crucially, unlike supplement_parts,
+    which renders NWS ONLY as the owner map — it ALSO renders the raw NWS record, mirroring
+    gen_card's step-2 NWS handling. Otherwise a headword whose only-or-additional layer is
+    NWS (e.g. `Bagavat`: pw + nws) would silently drop its NWS material when the deterministic
+    owner-map parse comes back empty. Reuses dm.merged() (no parallel merge/index path).
+    -> [(section_label, blob), ...]."""
+    supp = {}
+    for L in dm.merged(key):
+        if L['layer'] == 'pwg':                      # defensive — a no-PWG key has none
+            continue
+        supp.setdefault(L['layer'], []).extend(L['records'])
+    parts = []
+    for code in ('pw', 'sch', 'pwkvn'):
+        if not supp.get(code):
+            continue
+        groups = chunk_records(supp[code], HEAD_BUDGET)
+        for i, grp in enumerate(groups):
+            label = code if len(groups) == 1 else '%s%02d' % (code, i)
+            blob = '\n\n'.join('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r)
+                               for r in grp)
+            parts.append((label, blob))
+    if supp.get('nws'):
+        blocks = ['=== LAYER: %s ===\n\n%s' % (ROLE['nws'], r) for r in supp['nws']]
+        omap = nws_owner_map(key)                    # authoritative owner->gloss pairing (kills F12)
+        if omap:
+            n_entries = omap.count('\n') + 1
+            blocks.append(
+                '=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, %d entries) ===\n\n'
+                'Emit EXACTLY one card row per numbered entry; copy its [NWS: OWNER] VERBATIM as '
+                'the row’s last citation; translate the gloss from its own language; keep IAST/'
+                'sigla; do NOT re-derive owners.\n\n%s' % (n_entries, omap))
+        parts.append(('nws00', '\n\n'.join(blocks)))
+    return parts
+
+
+def gen_no_pwg_card(key, pwg_idx, verbose=True):
+    """H214 no-PWG supplement-chain card.
+
+    For a headword ABSENT from PWG that DOES carry a PW/SCH/PWKVN/NWS record, render one
+    labeled sub-card per available non-PWG layer (id `<safe>~~h0_zz_<layer>`) plus a
+    no-PWG portrait sidecar — WITHOUT inventing a PWG base portrait or sense-tree. Reuses
+    supplement_parts() (which itself reuses dm.merged()), so there is no parallel merge/
+    index path. The `~~h0_zz_<layer>` id is exactly what dict_merge.layer_of() classifies,
+    so the source layer survives raw card -> sub-card id -> promoted-row `layer` for free.
+
+    Returns the sub-card count, or None if the key has NO non-PWG layer either (a genuine
+    miss — the caller then lets gen_card log MISSING). Runs through the NOMINAL harness path
+    (`gen_opt_harness2.py --nominal --keys=<these sub-card ids>`): no rootmap is written,
+    since the nominal path keys on meta.nominal + nominal_keymap[stem]->key1 (read from the
+    portrait), not on a root rootmap/glue reassembly.
+    """
+    fk = cg.form_key(key)
+    if pwg_idx.get(fk):
+        return None                                  # has a PWG record -> not the no-PWG path
+    parts = no_pwg_parts(key)                         # one labeled sub-card per non-PWG layer
+    if not parts:
+        return None                                  # absent from every non-PWG layer too
+    root = safe_name(key)
+    iast = ''.join(cg._S2I.get(c, c) for c in fk)
+    layers = sorted({dm.layer_of('%s~~h0_zz_%s' % (root, label)) for label, _ in parts})
+    # A structurally valid portrait that NAMES this a no-PWG supplement-chain card and does
+    # NOT fabricate a PWG main-entry/sense-tree. A one-element list keeps the shape every
+    # portrait consumer already tolerates (port[0].get('key1'/'iast'); senses:[] = nothing to
+    # over-read). `source_profile` lets gen_opt_harness2 stamp a no-PWG provenance marker so
+    # it reaches every promoted store row (H214).
+    portrait = [{'portrait_kind': 'no_pwg_supplement_chain',
+                 'source_profile': 'no_pwg_supplement_chain',
+                 'key1': key, 'iast': iast, 'layers': layers, 'senses': []}]
+
+    prefix = root + '~~'                             # clear stale sub-cards for this root first
+    for fn in os.listdir(OUT):
+        if fn.startswith(prefix) and (fn.endswith('.raw.txt') or fn.endswith('.portrait.json')):
+            os.remove(os.path.join(OUT, fn))
+    for ext in ('.raw.txt', '.portrait.json'):       # and any superseded whole-card input
+        stale = os.path.join(OUT, root + ext)
+        if os.path.exists(stale):
+            os.remove(stale)
+
+    submap = []
+    for part, (label, blob) in enumerate(parts):
+        sub = '%s~~h0_zz_%s' % (root, label)
+        open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(blob)
+        json.dump(portrait, open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'),
+                  ensure_ascii=False, indent=1)
+        submap.append({'subkey': sub, 'layer': dm.layer_of(sub), 'section': label})
+    if verbose:
+        print('  %-10s NO-PWG → %d supplement sub-card(s) [%s] → %s~~h0_zz_*.raw.txt'
+              % (key, len(submap), '/'.join(layers), root))
+    return len(submap)
+
+
 def manifest_keys(section):
     p = os.path.join(HERE, 'pilot', 'output', 'scale_manifest.%s.json' % section)
     if not os.path.exists(p):
@@ -652,6 +747,7 @@ def main():
           % (len(keys), ' [scaled, resumable]' if scaled else '', len(todo)))
 
     n = missing = with_nws = split_roots = split_subcards = 0
+    no_pwg_roots = no_pwg_subcards = 0
     errored = []                       # keys unwritable on this FS (e.g. '|' in arI|a)
     lc_tot = {'pw': 0, 'sch': 0, 'pwkvn': 0, 'nws': 0}
     for j, key in enumerate(todo, 1):
@@ -661,6 +757,15 @@ def main():
                 if nsub is not None:   # giant root -> exploded into sub-cards; skip whole-card gen
                     split_roots += 1
                     split_subcards += nsub
+                    continue
+            # H214: a PWG-missing headword that still carries a PW/SCH/PWKVN/NWS record gets
+            # standalone no-PWG supplement-chain sub-cards (no fabricated PWG portrait). Only
+            # keys genuinely absent from EVERY layer fall through to gen_card -> MISSING.
+            if not pwg_idx.get(cg.form_key(key)):
+                nsub = gen_no_pwg_card(key, pwg_idx, verbose=not scaled)
+                if nsub is not None:
+                    no_pwg_roots += 1
+                    no_pwg_subcards += nsub
                     continue
             lc = gen_card(key, pwg_idx, verbose=not scaled)
         except OSError as e:           # one bad key must not kill an 11k-card run
@@ -685,6 +790,10 @@ def main():
     if root_split and split_roots:
         print('  ROOT-SPLIT: %d giant root(s) exploded into %d sub-cards (+ rootmap.json each)'
               % (split_roots, split_subcards))
+    if no_pwg_roots:
+        print('  NO-PWG: %d PWG-missing headword(s) rendered as %d supplement-chain sub-card(s) '
+              '(run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)'
+              % (no_pwg_roots, no_pwg_subcards))
     if scaled and n:
         print('  layer coverage: PW %d (%.0f%%)  SCH %d (%.0f%%)  PWKVN %d (%.0f%%)  NWS-extra %d (%.0f%%)'
               % (lc_tot['pw'], 100 * lc_tot['pw'] / n, lc_tot['sch'], 100 * lc_tot['sch'] / n,

@@ -224,6 +224,117 @@ def test_nominal_provenance_without_rootmap():
                     f.write(old)
 
 
+def test_no_pwg_card_source_profile_taxonomy():
+    """H214: the per-card source-material classifier. The portrait's explicit no-PWG flag wins,
+    so a root-split supplement sub-card (empty portrait) is NOT mis-tagged as no-PWG; and the
+    supplement PW matcher must not fire on 'PWG'."""
+    import gen_opt_harness2 as gh
+    no_pwg_portrait = json.dumps([{'portrait_kind': 'no_pwg_supplement_chain',
+                                   'source_profile': 'no_pwg_supplement_chain', 'key1': 'k'}])
+    cases = [
+        ('=== LAYER: PW — Böhtlingk ===\n\nfoo', no_pwg_portrait, 'no_pwg_supplement_chain'),
+        ('=== LAYER: PW — Böhtlingk ===\n\nfoo', '[]', 'pwg_supplement_subcard'),
+        ('=== LAYER: NWS — Halle ===\n\nfoo', '[]', 'pwg_supplement_subcard'),
+        ('=== LAYER: PWG — MAIN ENTRY ===\n\nx\n\n=== LAYER: PW — y ===\n\nz', '[]', 'pwg_with_supplements'),
+        ('=== LAYER: PWG — MAIN ENTRY ===\n\nx', '[]', 'pwg_only'),
+        ('=== LAYER: PWG-ROOT HEAD — root=gam ===\n\nx', None, 'pwg_only'),
+        ('no layer markers here', None, None),
+    ]
+    for raw, port, want in cases:
+        got = gh.card_source_profile(raw, port)
+        if got != want:
+            fail('card_source_profile(%r) = %r, expected %r' % (raw[:30], got, want))
+
+
+def test_no_pwg_supplement_card_renders_without_pwg():
+    """H214: a PW-only lemma (Bagavat) and a SCH-only lemma (Akulita) render standalone
+    supplement-chain sub-cards (raw + portrait) with NO fabricated PWG layer; a PWG key
+    (agni) is left to the normal path (gen_no_pwg_card returns None)."""
+    import _pilot_gen_merged as pg
+    import gen_opt_harness2 as gh
+    import dict_merge as dm
+    pwg_idx = dm.index('pwg')
+    if pg.gen_no_pwg_card('agni', pwg_idx, verbose=False) is not None:
+        fail('gen_no_pwg_card must return None for a PWG-present key (agni)')
+    for key, want_layer in (('Bagavat', 'pw'), ('Akulita', 'sch')):
+        n = pg.gen_no_pwg_card(key, pwg_idx, verbose=False)
+        if not n:
+            fail('gen_no_pwg_card(%s) produced no sub-cards' % key)
+        sub = '%s~~h0_zz_%s' % (pg.safe_name(key), want_layer)
+        rp = os.path.join(pg.OUT, sub + '.raw.txt')
+        pp = os.path.join(pg.OUT, sub + '.portrait.json')
+        if not (os.path.exists(rp) and os.path.exists(pp)):
+            fail('expected no-PWG sub-card files for %s (%s)' % (key, sub))
+        raw = open(rp, encoding='utf-8').read()
+        port = open(pp, encoding='utf-8').read()
+        if '=== LAYER: PWG' in raw:
+            fail('%s no-PWG card must NOT contain a PWG layer' % key)
+        if '=== LAYER:' not in raw:
+            fail('%s no-PWG card missing a LAYER marker' % key)
+        p0 = json.loads(port)[0]
+        if p0.get('portrait_kind') != 'no_pwg_supplement_chain' or p0.get('key1') != key:
+            fail('%s portrait must be a no_pwg_supplement_chain sidecar keyed to the headword' % key)
+        if p0.get('senses') != []:
+            fail('%s no-PWG portrait must not fabricate a sense tree' % key)
+        if gh.card_source_profile(raw, port) != 'no_pwg_supplement_chain':
+            fail('%s sub-card must classify as no_pwg_supplement_chain' % key)
+        if dm.layer_of(sub) != want_layer:
+            fail('%s sub-card id must encode layer %s' % (key, want_layer))
+
+
+def test_no_pwg_worklist_runnable_lane():
+    """H214: the worklist exposes a no_pwg_runnable lane for PW/SCH/PWKVN-only lemmas and does
+    NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
+    PWG-rooted runnable count."""
+    import nominals_worklist as nw
+    fd, path = tempfile.mkstemp(suffix='.slp1.txt')
+    os.close(fd)
+    try:
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write('Bagavat\nAkulita\nZZzznotaword\n')      # pw-only, sch-only, true miss
+        payload = nw.build_worklist(path)
+    finally:
+        os.remove(path)
+    runnable = set(payload['no_pwg_runnable'])
+    if 'Bagavat' not in runnable or 'Akulita' not in runnable:
+        fail('no_pwg_runnable must contain the PW/SCH-only lemmas: %s' % sorted(runnable))
+    if 'ZZzznotaword' in runnable or 'ZZzznotaword' not in set(payload['true_miss_keys']):
+        fail('a true miss must stay a true miss, never runnable')
+    if runnable & set(payload['runnable_remaining']):
+        fail('no-PWG runnable must stay separate from the PWG-rooted runnable lane')
+
+
+def test_no_pwg_layer_and_profile_survive_promotion():
+    """H214: layer label + source_profile survive sub-card id -> provenance -> promoted rows,
+    for a no-PWG card AND a mixed (pwg_with_supplements) card, in one nominal window."""
+    import promote_final_cards as pf
+    meta = {
+        'root': 'no_pwg_selftest', 'safe_root': 'no_pwg_selftest', 'generator': 'g',
+        'schema_version': 'v', 'rootmap_sha256': None, 'generated_at': '2026-07-06T00:00:00Z',
+        'nominal': True,
+        'nominal_keymap': {'_bagavat~~h0_zz_pw00': 'Bagavat', 'x~~h0_00_pwg00': 'x'},
+        'source_profiles': {'_bagavat~~h0_zz_pw00': 'no_pwg_supplement_chain',
+                            'x~~h0_00_pwg00': 'pwg_with_supplements'},
+        'input_hashes': {'_bagavat~~h0_zz_pw00': {'raw_sha256': 'r', 'portrait_sha256': 'p'},
+                         'x~~h0_00_pwg00': {'raw_sha256': 'r2', 'portrait_sha256': 'p2'}},
+    }
+
+    def one(subkey, key1, ru):
+        card = {'key1': key1, 'iast': key1,
+                'records': [{'h': '1', 'senses': [{'tag': '1', 'russian': ru, 'german': 'x'}]}]}
+        entry = {'card': card, 'meta': meta, 'wf_file': 't'}
+        return list(pf.rows_for(subkey, entry, 'ai_translated', pf.SELFTEST_MODEL_VERSION))[0]
+
+    r = one('_bagavat~~h0_zz_pw00', 'Bagavat', 'блаженный')
+    if r['key1'] != 'Bagavat' or r['layer'] != 'pw':
+        fail('no-PWG row must key to the headword and carry layer=pw: %r' % r)
+    if r['provenance'].get('source_profile') != 'no_pwg_supplement_chain':
+        fail('no-PWG provenance marker did not reach the promoted row')
+    m = one('x~~h0_00_pwg00', 'x', 'слово')
+    if m['layer'] != 'pwg' or m['provenance'].get('source_profile') != 'pwg_with_supplements':
+        fail('mixed card must carry layer=pwg + source_profile=pwg_with_supplements: %r' % m)
+
+
 def test_prompt_rule_audit_template():
     report = build_report([DEFAULT_TEMPLATE])
     if report.get('missing_rule_count'):
@@ -2004,6 +2115,117 @@ def test_build_emits_nominal_keymap():
         fail('batched (non-nominal) build must leave meta.nominal_keymap null')
 
 
+def test_no_pwg_supplement_chain_cards_render():
+    """H214: PWG-missing lemmas with real PW/SCH/PWKVN/NWS records are runnable.
+
+    This uses real dictionary data but writes to a temp input directory, so it proves the
+    generator path without touching live pilot/input artifacts.
+    """
+    import _pilot_gen_merged as pg
+    from safe_filename import safe_name
+    old_out = pg.OUT
+    with tempfile.TemporaryDirectory() as tmp:
+        pg.OUT = tmp
+        try:
+            bagavat_n = pg.gen_no_pwg_card('Bagavat', {}, verbose=False)
+            akulita_n = pg.gen_no_pwg_card('Akulita', {}, verbose=False)
+            if not bagavat_n:
+                fail('Bagavat should render as a no-PWG supplement-chain card')
+            if not akulita_n:
+                fail('Akulita should render as a SCH-only no-PWG supplement-chain card')
+            bagavat_stem = safe_name('Bagavat')
+            akulita_stem = safe_name('Akulita')
+            bagavat_files = [n for n in os.listdir(tmp) if n.startswith(bagavat_stem + '~~h0_zz_')]
+            akulita_files = [n for n in os.listdir(tmp) if n.startswith(akulita_stem + '~~h0_zz_')]
+            if not any('_zz_pw' in n and n.endswith('.raw.txt') for n in bagavat_files):
+                fail('Bagavat must emit a PW-labeled no-PWG sub-card')
+            if not any('_zz_sch' in n and n.endswith('.raw.txt') for n in akulita_files):
+                fail('Akulita must emit a SCH-labeled no-PWG sub-card')
+            for stem in (bagavat_stem + '~~h0_zz_pw', akulita_stem + '~~h0_zz_sch'):
+                raw_path = os.path.join(tmp, stem + '.raw.txt')
+                portrait_path = os.path.join(tmp, stem + '.portrait.json')
+                if not os.path.exists(raw_path) or not os.path.exists(portrait_path):
+                    fail('missing no-PWG generated files for %s' % stem)
+                raw = open(raw_path, encoding='utf-8').read()
+                portrait = json.load(open(portrait_path, encoding='utf-8'))
+                if '=== LAYER: PWG' in raw:
+                    fail('%s must not fabricate a PWG layer' % stem)
+                if not portrait or portrait[0].get('source_profile') != 'no_pwg_supplement_chain':
+                    fail('%s portrait must carry source_profile=no_pwg_supplement_chain' % stem)
+                if portrait[0].get('senses') != []:
+                    fail('%s portrait must not fabricate a PWG sense tree' % stem)
+        finally:
+            pg.OUT = old_out
+
+
+def test_nominals_worklist_exposes_no_pwg_lane():
+    import nominals_worklist as nw
+    with tempfile.TemporaryDirectory() as tmp:
+        wordlist = os.path.join(tmp, 'sample.slp1.txt')
+        store = os.path.join(tmp, 'store.jsonl')
+        with open(wordlist, 'w', encoding='utf-8') as f:
+            f.write('Bagavat\nAkulita\nnotalocalword\n')
+        open(store, 'w', encoding='utf-8').close()
+        payload = nw.build_worklist(wordlist, store=store)
+    got = set(payload.get('no_pwg_runnable') or [])
+    if not {'Bagavat', 'Akulita'}.issubset(got):
+        fail('PW/SCH-only misses must enter no_pwg_runnable, got %s' % sorted(got))
+    if 'notalocalword' not in payload.get('true_miss_keys', []):
+        fail('true misses must remain misses, not no-PWG runnable')
+    for field in ('no_pwg_runnable_count', 'no_pwg_promoted_count', 'no_pwg_runnable_detail'):
+        if field not in payload:
+            fail('nominals_worklist payload missing %s' % field)
+    if any(k in payload.get('runnable_remaining', []) for k in got):
+        fail('no-PWG runnable keys must stay separate from PWG-rooted runnable_remaining')
+
+
+def test_no_pwg_source_profile_promotes():
+    import gen_opt_harness2 as gh
+    import promote_final_cards as pfc
+    old_input_paths = gh.input_paths
+    with tempfile.TemporaryDirectory() as tmp:
+        key = 'bagavat~~h0_zz_pw'
+        raw_path = os.path.join(tmp, key + '.raw.txt')
+        portrait_path = os.path.join(tmp, key + '.portrait.json')
+        with open(raw_path, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n{#Bagavat#}¦ selig.\n')
+        with open(portrait_path, 'w', encoding='utf-8') as f:
+            json.dump([{'portrait_kind': 'no_pwg_supplement_chain',
+                        'source_profile': 'no_pwg_supplement_chain',
+                        'key1': 'Bagavat', 'iast': 'bhagavat', 'layers': ['pw'],
+                        'senses': []}], f)
+        gh.input_paths = lambda k, input_dir=None: (
+            os.path.join(tmp, k + '.raw.txt'), os.path.join(tmp, k + '.portrait.json'))
+        try:
+            js, _batches = gh.build('no_pwg_sample', [key], None, 12000, nominal=True,
+                                    grammar_on=False, tm_path=None)
+        finally:
+            gh.input_paths = old_input_paths
+        import re as _re
+        meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+        if meta.get('source_profile') != 'no_pwg_supplement_chain':
+            fail('all-no-PWG harness must stamp window source_profile')
+        if (meta.get('source_profiles') or {}).get(key) != 'no_pwg_supplement_chain':
+            fail('harness must stamp per-card no-PWG source profile')
+        entry = {
+            'card': {'key1': key, 'iast': 'bhagavat', 'records': [
+                {'senses': [{'tag': '1', 'russian': 'бхагават', 'german': '{#Bagavat#}¦ selig.'}]},
+            ]},
+            'meta': meta,
+            'wf_file': 'wf_output.no_pwg.json',
+        }
+        rows = list(pfc.rows_for(key, entry, 'ai_translated', pfc.SELFTEST_MODEL_VERSION))
+        if not rows:
+            fail('no-PWG promotion fixture yielded no rows')
+        row = rows[0]
+        if row['key1'] != 'Bagavat':
+            fail('no-PWG nominal promotion must map runtime key back to true key1')
+        if row['layer'] != 'pw':
+            fail('no-PWG promoted row must preserve layer=pw')
+        if row['provenance'].get('source_profile') != 'no_pwg_supplement_chain':
+            fail('promoted provenance must preserve source_profile=no_pwg_supplement_chain')
+
+
 def test_calibration_arm_set_conservative_emit_only():
     with tempfile.TemporaryDirectory() as tmp:
         out_dir = os.path.join(tmp, 'perf_smoke_preflight')
@@ -2571,6 +2793,9 @@ def main():
         test_coordinator_defect_requeue_uses_no_tm_and_out,
         test_promote_nominal_key1,
         test_build_emits_nominal_keymap,
+        test_no_pwg_supplement_chain_cards_render,
+        test_nominals_worklist_exposes_no_pwg_lane,
+        test_no_pwg_source_profile_promotes,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
         test_no_fallback_batch_isolation,
@@ -2594,6 +2819,10 @@ def main():
         test_harness_scope_and_tools,
         test_stale_check_key_order_independent,
         test_nominal_provenance_without_rootmap,
+        test_no_pwg_card_source_profile_taxonomy,
+        test_no_pwg_supplement_card_renders_without_pwg,
+        test_no_pwg_worklist_runnable_lane,
+        test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
         test_semantic_risk_checker,
