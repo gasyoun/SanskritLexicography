@@ -153,6 +153,11 @@ def units_for_group(group, d, work, strata, with_comm=True):
     # all of these -> modality defaults 'written', anchors stay absent (unchanged TMX).
     modality = (sa.get('modality') or 'written')
     source_media = sa.get('source_media')
+    # H290 (Slice 4a): the text+PDF oral path (build_oral_l0.py) tags which of the
+    # three oral shapes a unit came from; carry it through so the graded unit + TMX
+    # record it. Absent on the subtitle path and all written sources.
+    orality = sa.get('orality')
+    source_type = sa.get('source_type')
     base = {'work': work, 'group': group,
             'genre': st.get('genre'), 'period': st.get('period'),
             'date': st.get('date_median')}
@@ -174,6 +179,10 @@ def units_for_group(group, d, work, strata, with_comm=True):
                'speaker_ru': (rec.get('author') or '').strip() or None}
         if modality and modality != 'written':
             out['modality'] = modality
+            if orality:
+                out['orality'] = orality
+            if source_type:
+                out['source_type'] = source_type
             t_start = rec.get('t_start', sa.get('t_start'))
             t_end = rec.get('t_end', sa.get('t_end'))
             if t_start is not None:

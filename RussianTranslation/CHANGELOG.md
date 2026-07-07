@@ -10,6 +10,33 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H290 (H215 Slice 4a) — oral TEXT + PDF front-end
+- New [`src/build_oral_l0.py`](src/build_oral_l0.py): the text+PDF front-end for oral
+  transcripts that are **not** a pre-aligned subtitle pair (what `ingest_oral.py`
+  needs). Reads one transcript (+ optional PDF/DOC companion), **detects** which of
+  three shapes MG defined — `bi` (interleaved Sa+Ru), `sa+pdf` (Sanskrit-only + Russian
+  handout), `ru+cit` (Russian lecture quoting Sanskrit) — routes it, and emits the
+  **same** `corpus_builder/<work>.jsonl` seg-rows `ingest_oral` does, tagged `orality`
+  + `source_type`. Ambiguous input is flagged for human review, never guessed.
+- **PDF-role classifier** (`classify_pdf_role`): `edited-ru` / `sanskrit-source` /
+  `commentary` from language mix + structure; the `edited-ru` case is emitted as a
+  **multi-reference** (separate `work`, shared verse `passage`) so a spoken rendering
+  and its written handout become a consensus signal. Companion PDF/DOC → `.mdx` via the
+  `/docx-to-md` skill only (never a flat `.md`); no PDF extraction is re-implemented.
+- Reuse, not fork: emission delegates to a minimally generalized
+  `ingest_oral.to_corpus_rows(..., extra=)`; `build_l0.py` now carries `orality`/
+  `source_type` through to the L0 unit. Script detection treats **SLP1/HK romanization**
+  as Sanskrit (the earlier IAST-only test missed it). `selftest` covers all of the
+  above on a synthetic fixture; written TMX and the Slice-4 selftests byte-unchanged.
+- **Scaffold only** (data-independent). The `sa+pdf` sentence aligner is a labelled
+  index/verse-key **placeholder** (`align='placeholder-*'`); the real LaBSE+Vecalign
+  backend + heuristic calibration + series ingest are gated on a representative sample
+  (MG `@DO`). **Open policy conflict surfaced, not silently resolved:** MG ruling 4
+  (oral → A when it agrees with a *written* translation) vs the merged Slice-4
+  `oral_cap` (oral A→B unless human-adjudicated) — reconciliation deferred to the
+  real-data step, tracked `@DECIDE`. See [`src/ORAL_INGEST.md`](src/ORAL_INGEST.md)
+  "Slice 4a".
+
 ### H215 Slice 4 — oral register of the publication-grade TM
 - New [`src/ingest_oral.py`](src/ingest_oral.py): a deterministic converter turning a
   *cleaned* timecoded transcript (WebVTT/SRT/JSON, or `--pairs` JSONL) of spoken
