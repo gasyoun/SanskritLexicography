@@ -159,3 +159,7 @@ pwg_ru/reglue/synth_outputs/*
 # committed. decisions.json votes land here too (personal review artifacts).
 pwg_ru/eval/
 review/h178_*_sheet.html
+
+# Generated Workflow harnesses embed source/portrait payloads and are local-only.
+src/pilot/run_pilot_wf.*.js
+!src/pilot/run_pilot_wf.js
