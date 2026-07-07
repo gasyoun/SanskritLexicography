@@ -1,6 +1,6 @@
 # Reverse Dictionary of Sanskrit — working materials
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 07-07-2026_
 
 ## What this is
 
@@ -213,12 +213,20 @@ proposed volume — reusable as a starting layout template, but the content spli
   comparison spreadsheet) was never turned into the comparison table the preface promises —
   worth doing before Volume 2's apparatus is drafted, not after.
 
+## Publication-prep documents (added 07-07-2026, [H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
+
+- [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md) — venue landscape, DH data-standard gap analysis, and the licensing `@DECIDE` with per-source facts.
+- [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md) — canonical-version declaration (`266820-reverse-Gasuns.txt`) and the outstanding-errata investigation.
+- [`SCHEMA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md) — TSV column semantics, source-code→bibliography-key table, encoding audit.
+- [`DATA_STATEMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/DATA_STATEMENT.md) / [`CITATION.cff`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CITATION.cff) — Bender & Friedman data statement + citation metadata (distribution tier honestly marked undecided pending the licensing ruling).
+
 ## See also
 
 - [`INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/INDEX.md) — full 413-file inventory with relevance classification.
 - [`../CLAUDE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md) — Sanskrit Lexicography repo conventions (encoding/BOM caveats
   apply to the `.txt` corpora in this folder too — check before re-saving any of them).
 - [`../FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) — org-wide capability inventory; this reverse
-  dictionary is not yet registered there and should be, once a canonical word list is declared.
+  dictionary is not yet registered there — registration follows the licensing ruling
+  (see `ACL_DH_COMPATIBILITY_ANALYSIS.md` §4 step 7).
 
 _Dr. Mārcis Gasūns_
