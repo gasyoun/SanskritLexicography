@@ -33,6 +33,7 @@ back onto the resolved ones — instead of re-planning the whole card from scrat
   python src/pilot/autosplit_requeue.py topup-merge  <root> <lang> <task_output>     # stitch complete card
   # then: promote_final_cards.py --glob 'wf_output.<tag>.<root>.autosplit.json' --merge
 """
+import datetime
 import json
 import os
 import re
@@ -48,12 +49,59 @@ SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 sys.path.insert(0, HERE)
 sys.path.insert(0, SRC)
-from window_common import input_paths, read_text          # noqa: E402
+from window_common import input_paths, read_text, sha256_file  # noqa: E402
 import pwg_mask                                            # noqa: E402
 from safe_filename import safe_name                        # noqa: E402
 
 LS_BUDGET = int(os.environ.get('AUTOSPLIT_LS_BUDGET', '18'))   # max <ls> per fragment (tier 2)
 MANIFEST = os.path.join(HERE, 'output', 'autosplit_manifest.json')   # legacy shared path (pre per-root)
+
+
+def _utc_now():
+    return datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec='seconds').replace('+00:00', 'Z')
+
+
+def _stamp_input_hashes(orig_keys):
+    """Per-original-card source hashes for autosplit provenance (H188 fix).
+
+    An autosplit merge re-stitches fragments back under each ORIGINAL card key. The
+    promoted store rows must still carry the same source provenance the harness stamps
+    on a normal window — `input_raw_sha256` / `input_portrait_sha256`, keyed by that
+    original sub-card key. Before this, both autosplit writers emitted a stripped meta
+    with NO `input_hashes`, so `promote_final_cards.provenance()` read an empty map and
+    every autosplit row landed SHA-less (`audit_translation_provenance` flagged them; the
+    kAla/ka/SrI-class high-density roots run through exactly this path). Raw + portrait
+    paths come from `window_common.input_paths`, hashed with the SAME canonical
+    `sha256_file` the harness uses, so the address is byte-identical to a non-autosplit
+    run of the same card. A key whose source file is absent (a fully-failed/ghost card)
+    is skipped, never crashing the merge."""
+    hashes = {}
+    for k in orig_keys:
+        try:
+            rp, pp = input_paths(k)
+        except Exception:
+            continue
+        entry = {}
+        if rp and os.path.exists(rp):
+            entry['raw_sha256'] = sha256_file(rp)
+        if pp and os.path.exists(pp):
+            entry['portrait_sha256'] = sha256_file(pp)
+        if entry:
+            hashes[k] = entry
+    return hashes
+
+
+def _autosplit_meta(root, lang, generator, orig_keys, generated_at=None):
+    """The workflow-meta block written by both autosplit merge writers.
+
+    Carries the provenance a normal harness window carries (`input_hashes` +
+    `generated_at`) so promoted autosplit rows are NOT provenance-incomplete (H188)."""
+    return {'root': root, 'safe_root': safe_name(root), 'lang': lang,
+            'generator': generator, 'schema_version': 'pwg_ru.workflow_meta.v1',
+            'selected_keys': sorted(orig_keys),
+            'input_hashes': _stamp_input_hashes(orig_keys),
+            'generated_at': generated_at or _utc_now()}
 
 
 def manifest_path(lang, root):
@@ -398,9 +446,8 @@ def cmd_topup_merge(root, lang, task_file):
     results, still_missing = stitch_topup(man['cards'], got, field)
     tag = 'en' if lang == 'en' else 'sc'
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
-    meta = {'root': root, 'safe_root': safe_name(root), 'lang': lang,
-            'generator': 'autosplit_requeue.topup', 'schema_version': 'pwg_ru.workflow_meta.v1',
-            'selected_keys': sorted(c['orig'] for c in man['cards'])}
+    meta = _autosplit_meta(root, lang, 'autosplit_requeue.topup',
+                           [c['orig'] for c in man['cards']])
     json.dump({'meta': meta, 'results': results}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)
     complete = [r for r in results if r.get('card') and not r['partial']]
     partial = [r['key'] for r in results if r['partial']]
@@ -542,9 +589,9 @@ def cmd_merge(root, lang, task_file):
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
     # selected_keys = the original cards this merge covers — audits reconstruct scope from
     # it (earlier autosplit outputs carried no key list, so a dropped card was invisible).
-    meta = {'root': root, 'safe_root': safe_name(root), 'lang': lang,
-            'generator': 'autosplit_requeue', 'schema_version': 'pwg_ru.workflow_meta.v1',
-            'selected_keys': sorted(tree.keys())}
+    # input_hashes/generated_at (H188): stamp the same source provenance a normal window
+    # carries, so promoted autosplit rows are not SHA-less in the store.
+    meta = _autosplit_meta(root, lang, 'autosplit_requeue', list(tree.keys()))
     json.dump({'meta': meta, 'results': results}, open(out, 'w', encoding='utf-8'), ensure_ascii=False)
     ok = [r for r in results if r.get('card')]
     print('stitched %d card(s) (%d fully complete, %d partial); %d fully-empty kept as '
@@ -560,8 +607,45 @@ def cmd_merge(root, lang, task_file):
           % (tag, root))
 
 
+def cmd_selftest():
+    """Pin the H188 provenance fix: both autosplit writers stamp per-card input_hashes
+    (keyed by the original sub-card key) + generated_at, so promoted rows are not SHA-less."""
+    import hashlib
+    import tempfile
+    global input_paths
+    d = tempfile.mkdtemp()
+    rawp = os.path.join(d, 'raw.bin')
+    portp = os.path.join(d, 'port.bin')
+    with open(rawp, 'wb') as f:
+        f.write(b'RAW-SOURCE-vid')
+    with open(portp, 'wb') as f:
+        f.write(b'PORTRAIT-vid')
+    orig_ip = input_paths
+    try:
+        input_paths = lambda k: (rawp, portp)                      # noqa: E731
+        h = _stamp_input_hashes(['vid~~h0_10_ni'])
+        assert 'vid~~h0_10_ni' in h, 'stamp must key by the ORIGINAL sub-card key'
+        e = h['vid~~h0_10_ni']
+        assert e['raw_sha256'] == hashlib.sha256(b'RAW-SOURCE-vid').hexdigest(), \
+            'raw hash must match the canonical sha256_file the harness uses'
+        assert e['portrait_sha256'] == hashlib.sha256(b'PORTRAIT-vid').hexdigest(), \
+            'portrait hash must be stamped too'
+        meta = _autosplit_meta('vid', 'ru', 'autosplit_requeue', ['vid~~h0_10_ni'])
+        assert meta['input_hashes'] == h, 'meta must carry per-card input_hashes (H188)'
+        assert meta['generated_at'], 'autosplit meta must stamp generated_at (was None before H188)'
+        assert meta['selected_keys'] == ['vid~~h0_10_ni'] and meta['root'] == 'vid'
+        # a ghost card whose source files are absent is skipped, never crashes the merge
+        input_paths = lambda k: (os.path.join(d, 'nope.bin'), os.path.join(d, 'nope2.bin'))  # noqa: E731
+        assert _stamp_input_hashes(['ghost']) == {}, 'absent source files -> no hash, no crash'
+    finally:
+        input_paths = orig_ip
+    print('autosplit_requeue selftest OK')
+
+
 def main():
     a = sys.argv[1:]
+    if a[:1] == ['selftest']:
+        return cmd_selftest()
     if len(a) < 3:
         sys.exit(__doc__)
     if a[0] == 'test':

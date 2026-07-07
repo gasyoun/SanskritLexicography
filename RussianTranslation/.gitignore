@@ -87,6 +87,11 @@ src/pilot/output/prompt_rule_audit.md
 # Local API retry ledger
 src/corpus_lexicon.failures.jsonl
 
+# H215 corpus TM TMX export (build_tmx.py) — rights-encumbered (mixes in-copyright
+# named modern RU translations); no public release before per-translator clearance
+# (H215 Slice 5 / /publish-safety-check). Generator + README are committed.
+release/corpus_tm/
+
 # regenerable DCS frequency table (build_dcs_freq.py)
 src/dcs_freq.json
 src/pwg_ru_translated.jsonl.prefreq.bak
@@ -121,3 +126,36 @@ glossary/index.html
 # Auto-captured live failure incidents (runtime, dedup per root/day); the curated
 # post-mortems in failures/failures.jsonl stay tracked. Read by the dashboard.
 failures/auto_failures.jsonl
+
+# H180 typology/re-glue/learner builders — DERIVED from the local-only store
+# (pwg_ru_translated.jsonl) by build_relationships.py / build_learner_scores.py /
+# build_reglue.py / synth_de_first.py. Regenerable, not deliverables, and useless
+# without the (gitignored) store — so the bulk machine forms stay local. The
+# COMMITTED deliverables are: the builders, the spec docs, the small summary
+# tables (relationships_rollup.tsv, edition_deltas.tsv, reglue/PILOT_SUMMARY.tsv,
+# reglue/synth_inputs/MANIFEST.tsv + *.prompts.json), and the rendered pilot
+# cards reglue/*.md (the human-reviewable output).
+src/pwg_ru_relationships.jsonl
+pwg_ru/learner_scores.tsv
+pwg_ru/reglue/*.json
+pwg_ru/reglue/synth_inputs/*.de.txt
+
+# H180 human review sheets (build_h180_review_sheets.py) — the generated HTML
+# voting sheets embed translated `ru` bodies from the local-only/unpublished store,
+# and THIS REPO IS PUBLIC, so the sheets stay local (open from file://, vote, then
+# feed decisions.json to /decisions-apply). Only the generator + the metadata-only
+# *_sample.jsonl audit trails (no translations) are committed.
+review/h180_*_sheet.html
+
+# H180 Arm-B synthesize-first outputs (synth_de_first.py + Opus-4.8 synth agents):
+# the merged German entries embed `de` from the unpublished store (repo public) — local
+# only. The numeric scores table (no text) IS committed.
+pwg_ru/reglue/synth_outputs/*
+!pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv
+
+# H178 B-1 evaluation bake-off (h178_eval_bakeoff.py) — sample/baseline/judge/
+# comet outputs and the 4 voting sheets embed unpublished `ru` translations
+# (repo is PUBLIC): keep local-only; only the generator + protocol doc are
+# committed. decisions.json votes land here too (personal review artifacts).
+pwg_ru/eval/
+review/h178_*_sheet.html

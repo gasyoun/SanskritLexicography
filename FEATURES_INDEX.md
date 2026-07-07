@@ -20,7 +20,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 20 interfaces (16 live) · 37 data assets · 14 tools · 4 external stacks.
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 37 data assets · 14 tools · 4 external stacks.
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -99,6 +99,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | 🟡 E30 | `surface_dcs_misses.tsv` | DCS resolution-gap analysis — forms that failed DCS lookup | 6.5 MB | `'maratejasi   'maratejasi   1   …` | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
 | 🟡 E31 | Zaliznyak grammar index | Compact Zaliznyak-style grammar tokens over all PWG: 98,639 headwords, 335 tokens | 98,639 rows · 5.8 MB | `a   2   f.   a   f·1   a-stem` (headword · G·T · stem-class) | 06/26 | [headword_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv) |
 | 🟢 E32 | `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 58.7 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | 06/26 | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
+| 🟡 E38 | `<ls>` citation-frequency graph | Which classical texts each dict quotes via `<ls>`, canonicalized to shared nodes across 11 dicts; 828,505 resolved citations, 912 texts. MW non-text markers filtered | 912 texts · 1,707 edges · ~150 KB | `pwg   Mahābhārata   39130` (edge) · `Mahābhārata   56818   8   MAHĀBHĀRATA; MBh; …` (node) | 07/26 | [csl-atlas/data/citations](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations) |
 
 ### F · Text collections & other
 
@@ -212,6 +213,7 @@ first appearance where the repo predates it).
 | J15 | [SamudraManthanam corpus-FAQ](https://samskrtam.ru/corpus-faq/) | RU knowledge base via ZettelkastenWiki | 🟢 Live | the Russian corpus knowledge base | 07/26 | ZettelkastenWiki · [ZettelkastenWiki](https://github.com/gasyoun/ZettelkastenWiki) |
 | J16 | [PWG article dashboard](https://gasyoun.github.io/SanskritLexicography/) | Per-entry PWG site with live `<ls>` scan links | 🟢 Live | a PWG entry with live `<ls>` scan-page links | 07/26 | Static (build_article_site.py) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) |
 | J17 | [Uprava articles dashboard](https://github.com/gasyoun/Uprava/tree/main/dashboard) | Private, local-only publication-pipeline board | 🟡 Beta | (local) the publication-readiness board over ARTICLES.md | 06/26 | HTML + articles.js · [Uprava](https://github.com/gasyoun/Uprava) |
+| J21 | [kosha data & tools directory](https://gasyoun.github.io/kosha/directory/) | Curated Sanskrit-NLP data + tools directory: our datasets (downloadable) + external stacks, schema.org Dataset JSON-LD | 🟢 Live | download a public dataset or find the external stack to call | 07/26 | Static (build_directory.py from datasets.json + external_tools.json) · [kosha](https://github.com/gasyoun/kosha/blob/main/scripts/build_directory.py) |
 
 ### K · Learning & platform apps
 
@@ -290,7 +292,8 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
-| 07/26 | **Initial index** — 44 dictionaries · 20 interfaces (16 live) · 37 datasets · 14 tools + 4 external stacks catalogued, each with a real example, a severity tier, a first-introduced date and a stable per-section ID. |
+| 07/26 | **E38** — `<ls>` citation-frequency graph (csl-atlas, [PR #220](https://github.com/sanskrit-lexicon/csl-atlas/pull/220)): 828,505 canonicalized citations → 912 texts across 11 dicts. |
+| 07/26 | **Initial index** — 44 dictionaries · 20 interfaces (16 live) · 38 datasets · 14 tools + 4 external stacks catalogued, each with a real example, a severity tier, a first-introduced date and a stable per-section ID. |
 
 ---
 

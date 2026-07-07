@@ -1,0 +1,42 @@
+{
+  "schema": "pwg_ru.upstream_stale.v1",
+  "month": "2026-07",
+  "generated_at": "2026-07-06T06:48:28",
+  "sources": {
+    "cologne": {
+      "per_layer": {
+        "pwg": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0,
+          "baseline": true
+        },
+        "pw": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0,
+          "baseline": true
+        },
+        "sch": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0,
+          "baseline": true
+        },
+        "pwkvn": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0,
+          "baseline": true
+        }
+      },
+      "stale": [],
+      "csl_orig_head": "78cbb257d9c655f7464e342d17507f8133140c96",
+      "note": "Baseline seeded for pwg, pw, sch, pwkvn at csl-orig 78cbb257d9c6 — first future run diffs against this."
+    }
+  }
+}

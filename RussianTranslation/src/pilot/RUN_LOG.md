@@ -4,6 +4,119 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-06 — `dah` tail (H178 A-2) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Fable 5** (`claude-fable-5`) — ✅ 31/31 PROMOTED (1 documented 🟡 residual)
+
+Finished the two 04-07 held `dah` cards via three Workflow runs (TM-denylisted):
+
+| run | target | result | agents | subagent tokens | wall-clock |
+|---|---|---|---|---|---|
+| defect requeue | `dah~~h0_zz_nws00` (whole card, single-key requeue file) | ✅ 1/1 ok | 1 | 75,693 | ~68s |
+| topup attempt 1 | `dah~~h0_zz_pw` — 17 missing fragments | 12/17 ok, 5 retry-cap nulls | 17 | 1,144,751 | ~67s |
+| topup attempt 2 | same 17 | 15/17 ok, 2 retry-cap nulls | 17 | 1,147,780 | ~78s |
+
+Union of both topup attempts = **16/17 fragments**; only `dah~~h0_zz_pw__s10p0` hard-failed the
+StructuredOutput retry cap (5×) on BOTH fresh attempts → per the H178 2-attempt cap + the `vid`
+precedent, the card is promoted as a **documented 🟡 residual** (residual class: single
+PW-addenda sense fragment, StructuredOutput retry-cap schema-emission failure — NOT the H220
+kill-gate class). Promotions via `promote_final_cards.py --merge --gen-model-version
+claude-sonnet-5`: store **11,185 → 11,261 rows**; `dah` = **31/31 cards**. TM rebuilt (card
+2,302 / frag 217 / publication 2,392, all validate green); provenance audit clean (11,261/11,261
+model_version + pipeline stamps). Full memo:
+[`pwg_ru/H178_REAUDIT_2026-07-06.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_REAUDIT_2026-07-06.md).
+
+## 2026-07-06 — `no_pwg_w1` (H214 no-PWG lane, FIRST run) — gen **Sonnet 5** / orchestration **Opus 4.8** — ⚠️ VALIDATED-NOT-PROMOTED
+
+First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
+**no-PWG supplement-chain lane** — 24 PWG-missing headwords (of the 232-lemma backfill queue) →
+**58 supplement sub-cards** (`<key>~~h0_zz_<layer>`, pw/sch/pwkvn/nws). Branch
+`pwg-ru/no-pwg-lane-drain-w1`. Preflight cost-gate: verdict `ok`, run-now-low, ~497 K tok / ~$0.94.
+
+**Outcome: the render/plumbing path is VALIDATED end-to-end, but the output is NOT promotable yet.**
+
+- **Plumbing works:** gen → nominal harness (keymap `subcard→key1`) → Workflow → wf_output →
+  `source_profile`/`layer` all correct per row. Individual cards translate correctly when they
+  land (e.g. `duṣkṛta~~h0_zz_pw` = a clean, complete RU card).
+- **Throughput is poor (~36%):** 3 Workflow passes (batched → 9-batch → 46 single-card,
+  `--no-tm`), ~3.4 M subagent tokens total → **only 21 / 58 distinct sub-cards ok** (11 headwords).
+  Passes 1–2 tripped the budget kill-switch (multi-card StructuredOutput failures binary-split into
+  an agent-budget cascade); single-card mode (pass 3, `--output-budget=1`) removed the cascade but
+  still only ~15–20 %/pass, **stochastic** (a card null in passes 1–2 succeeds in pass 3) — abnormally
+  low vs the ~90 % a clean rerun gives elsewhere. Suspected: strict subcard-key echo interacting with
+  the masked nominal prompt + Workflow-runtime agent limits.
+- **Quality is mixed:** of the 21 "ok", only ~7 are clean full RU translations; the rest are broken
+  (`{{Lbody=205646}}` body-id leak into `russian`, e.g. `_c_ay_a~~h0_zz_pw`), degenerate cross-ref
+  stubs (no gloss to translate), or carry untranslated `{%…%}` spans.
+- **No nominal audit gate:** `audit_window.py` needs `--allow-stale` for a keys-based nominal window
+  (no rootmap) and in that mode the glue gates crash (H201 caveat) — so these no-PWG cards can't be
+  mechanically vetted before promotion.
+
+**Initial decision: NOT promoted** (pushing `{{Lbody}}`-leak / untranslated rows would pollute the store).
+
+### ✅ RESOLUTION (same day, 2026-07-06, Opus 4.8) — both blockers fixed, 5 verified-clean promoted
+
+- **Blocker 1 root-caused + fixed:** `{{Lbody=NNNN}}` is not a masking bug — it is a Cologne
+  **alternate-headword pointer** (record `205646.1` `CAyA` reuses the body of primary entry `205646`
+  `CAya`; ~12,186 PW records / 7 % are these). Added `dict_merge.resolve_lbody()` + `id_index()`
+  (L-id → body) and applied it in `merged()`, so every consumer now gets the referenced entry's real
+  gloss instead of a bare pointer (e.g. `CAyA` pw → `…bedeutet nach J. BURGESS auch {%Abschrift,
+  Copie%}`). Lang-agnostic (SHARED); pinned by `dict_merge.py resolve_lbody selftest`.
+- **Blocker 2 fixed:** `audit_window.py` now **skips the root-glue step for a nominal / no-rootmap
+  window** (`meta.nominal` or no rootmap on disk) instead of crashing, so the content gates
+  (translation / coverage / sense-dupes / nws / prompt-semantic) run to completion and give a real
+  clean/requeue verdict.
+- **Promoted 5 verified-clean** (audit clean, 0 flags): `Bagavat~~h0_zz_nws00`, `SAKA~~h0_zz_nws00`,
+  `SAKA~~h0_zz_pw`, `devI~~h0_zz_pw`, `duzkfta~~h0_zz_pw` → store **11,163 → 11,185** (+22 sense rows,
+  `ai_translated`, held for G5). Every row carries `layer` + `provenance.source_profile =
+  no_pwg_supplement_chain`. TM rebuilt (2,301 cards). The audit correctly **rejected 2 of the 7**
+  leak/quality-clean candidates (`devI~~h0_zz_nws00`, `mAyA~~h0_zz_nws00` — NWS F12 owner
+  misattribution + coverage-over), which is why only 5, not 7, were promoted.
+
+**Still open before scaling to the full 232:** the low single-card yield (~36 % this window; stochastic
+StructuredOutput failures on masked nominal supplement cards) is a **throughput** issue, not a
+correctness one — the Lbody fix removes one failure class but the strict-key-echo / Workflow-runtime
+interaction remains to be root-caused. Re-run w1's still-null keys (now Lbody-resolved) before adding
+new lemmas. wf_outputs kept at `src/pilot/output/wf_output.no_pwg_w1*.json` (gitignored).
+
+### ✅ H220 THROUGHPUT ROOT-CAUSE + FIX (2026-07-06, Opus 4.8 `claude-opus-4-8`) — 40 % → 100 % on a 10-card diagnostic
+
+The ~36 % yield was root-caused from a fresh 10-card single-card diagnostic window (6 mangled-stem +
+4 clean-stem controls, spanning pw/sch/nws) run through the Workflow tool, reading the run's own
+`journal.jsonl` + kill-log lines. **Two compounding failure modes, both now fixed** in
+[`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):
+
+- **DOMINANT — the wall-clock kill gate abandons valid-but-slow single supplement cards.** The kill
+  budget (`KILL_BASE 20 s + KILL_SLOPE 45 ms/byte, ×2`, floor 45 s) was calibrated on dense
+  multi-fragment `tyaj` **root batches**; a tiny single nominal card's wall-clock is dominated by fixed
+  per-call StructuredOutput latency (~55–105 s), which exceeds its byte-derived budget (53–104 s here).
+  The first diagnostic run killed **6/6 nulls** (kill-timeout logs `53 s`…`104 s`), and because no-PWG
+  supplement sub-cards are **single-fragment (no selfheal split)**, a kill has no smaller lane to route
+  to → permanent null. 4 of those 6 killed cards echoed the correct key and were proven (Python
+  re-simulation of `accept()`) to pass the fidelity guard — pure kill-gate loss. **Fix A:** a single
+  card with no selfheal fallback (`FRAGS[k]` empty) now gets the **CEIL budget (180 s)** via
+  `killBudgetForCur(cur)`; the aggressive byte-scaled gate is kept for multi-card / splittable batches
+  where a kill actually routes to binary-split / fragment heal.
+- **SECONDARY — key-echo mismatch on mangled stems.** The `=== CARD <stem> ===` header carries the
+  mangled sub-card stem (`_c_ay_a~~h0_zz_pw`), but the portrait JSON right below carries the clean SLP1
+  `key1` (`CAyA`), pulling the model into echoing the SLP1 in its output `key1` → the harness's strict
+  `km[k]` match drops it as `missing-or-mismatched-key`. Deterministic for leading/interior-underscore
+  stems (`_c_ay_a→CAyA`, `g_ayatr_i→gAyatrI`, `t_a→tA`). **Fix B:** nominal windows recover such a card
+  by re-keying it via `nominal_keymap` **only when the SLP1 maps to exactly one pending stem** in the
+  batch (unambiguous); gated on `META.nominal` so PWG root windows keep strict matching
+  (`test_generated_harness_strict_key_matching` still green).
+- **Plus observability:** `selfHeal`'s generic `no-selfheal-fallback` reason was **overwriting** the real
+  upstream cause (kill-timeout / mismatched-key) — the misleading message hid the kill-gate mass-kill for
+  a whole session. It now preserves a pre-existing `FAIL[k]` reason.
+
+**Verified:** the SAME 10-card window re-run with the fixed harness → **cards 10 / ok 10 / null 0
+(100 %)**, `agents_spent 9` (no retries; was 12), **0 kill-timeouts** (was 6), kill-switch not tripped.
+The journal shows the model still echoed `gAyatrI`/`tA` (SLP1) for 2 cards — both landed anyway because
+Fix B re-keyed them, so both fixes are independently necessary. Pinned by 3 new `window_selftest.py`
+tests (`test_no_fallback_single_gets_ceil_kill_budget`, `test_nominal_key_echo_tolerance_scoped`,
+`test_selfheal_no_fallback_preserves_upstream_reason`); full suite green (83 PASS);
+`lang_parity_check.py` clean (new SHARED entry `no_fallback_single_kill_budget_and_nominal_key_echo`).
+**The 232-lemma no-PWG lane is UNBLOCKED for scaling.** wf_outputs kept at
+`src/pilot/output/wf_output.no_pwg_w1*.json` + the diagnostic `wf_output.no_pwg_diag*` (gitignored).
+
 ## Stage A+B summary (2026-06-29) — all **Sonnet**, no Opus
 
 | root | cards | Max tokens | clean | clean % | gates: nws / sense_dupes |
@@ -308,6 +421,53 @@ and estimated **745,200 tokens / ~$1.41**. Tracked staging artifacts:
 
 **Next:** Sonnet/Max executes
 `C:\Users\user\Documents\GitHub\Uprava\handoffs\H201-Sonnet_RussianTranslation_pwg_ru_nominal_w1_100small_run_05.07.26.md`.
+
+---
+
+## 2026-07-06 — nominal window `nominal_w1_100small` — ✅ RUN & PROMOTED (100/100) — gen **Sonnet 5** (`claude-sonnet-5`), orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+H201 executed on an Opus 4.8 Max/Workflow surface. Generation model resolved to **Sonnet 5
+(`claude-sonnet-5`)** (harness pins `model:'sonnet'`; confirmed from the workflow subagent
+`.jsonl` transcripts). Ran in **three Workflow passes** because the first pass hit a transient
+network outage:
+
+| pass | harness | result | agents | subagent tokens | wall-clock |
+|---|---|---|---|---|---|
+| 1 (full) | `run_pilot_wf.nominal_w1_100small.js` | ⛔ **5 ok / 95 null**, `budget_kill_switch_tripped` | 19/19 | 957,970 | ~10m30s |
+| 2 (rerun) | `run_pilot_wf.opt2.js` (all 100 requeued) | ✅ **93 ok / 7 null** | 16/19 | 1,402,160 | ~11m49s |
+| 3 (requeue) | `run_pilot_wf.nominal_w1_100small.requeue7.js` (7 transient) | ✅ **7 ok / 0 null** | 2/13 | 138,666 | ~42s |
+| **total** | — | **100/100 promoted** | 37 | **2,498,796** | ~23m |
+
+**Pass-1 root cause = transient infra, not content/batch-size:** all three batches (incl. the
+**4-card** batch-0) failed with `API Error: Connection closed mid-response`; self-heal splits
+also dropped, exhausting the 19-agent budget. Because even the 4-card batch failed, this was a
+network outage during the run window, not a structural problem — a clean rerun recovered
+(93/100), and the 7 residual nulls were a single contiguous masked sub-block of batch-1
+(`mAza…nIla`), re-run to 7/7 in 42s.
+
+**⚠ Audit caveat confirmed (nominal + `--allow-stale`):** a nominal keys-based window has
+**no rootmap** (`rootmap_sha256:null`), so `audit_window.py` refuses (`no rootmap`) and needs
+`--allow-stale`. In that forensic mode the `glue`/`glue-missing-nested` gates **crash** and the
+`missing_required_sense_field` gate **misfires**, reporting a bogus **86 "defect"** on pass-2.
+Manual inspection of `vedikA`, `prota`, `Apta`, `ucita` confirmed all are complete, well-formed
+cards (the flagged ones are legitimately thin *see-under* cross-reference stubs). The runbook's
+own warning holds: **allow-stale requeue counts are untrustworthy for nominal windows** — trust
+the Workflow `summary.null_keys`, not the stale-audit `defect` count. `requeue_from_audit.py
+--transient --nominal` handles the real nulls correctly.
+
+**Promotion:** `promote_final_cards.py --glob wf_output.nominal_w1_100small.json --merge
+--gen-model-version claude-sonnet-5` → **100 non-null cards / 306 sense rows**, store
+`src/pwg_ru_translated.jsonl` now **11,163 rows** (`review_status=ai_translated`, NOT approved —
+held out of the citable edition until G5 human review). TM rebuilt: `translation_memory.ru.json`
+= **2,297 content-addressed cards**. No `frag_prov` rows → no `build-frags` needed. Requeue
+residuals: **none**.
+
+**Cost note:** the transient pass-1 loss doubled the intended spend (staged estimate ~745K tok /
+$1.41 for one clean pass; actual ~2.5M tok across three passes). The `~745,200 tok / $1.41`
+preflight gate refers to a *single clean* pass and held for pass 2.
+
+**Next:** window is fully AI-translated and promoted; the 100 cards await **G5 human review** to
+flip `ai_translated → approved`. No further agent run needed for this window.
 
 ---
 

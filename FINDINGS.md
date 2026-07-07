@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 03-07-2026_
+_Created: 26-06-2026 · Last updated: 07-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §62) whatever its section, so existing numbers never shift; when a finding is later
+(currently §65) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -41,6 +41,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§2. Homonym token-splitting has a hard morphological ceiling](#2-homonym-token-splitting-has-a-hard-morphological-ceiling) — only 5 of 38 DCS-lumped groups are gaṇa-splittable; the rest need gloss adjudication.
 - 🟠 [§3. The Warnemyr scrape union-smears homonym classes](#3-the-warnemyr-scrape-union-smears-homonym-classes) — local Whitney class files merge homonyms' classes; derive from the live paradigm pages.
 - 🟡 [§4. PWG nominal grammar compresses into 335 paradigm tokens](#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens) — 98,639 of 123,366 entries carry a Zaliznyak-style token.
+- 🟡 [§63. vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute](#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) — five añc dhātus (4añc recoverable), no and, but ast IS Paninian; grep vidyut as `ancu`, not `aYc`.
 
 **Corpus & parallel-text data**
 
@@ -48,6 +49,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§6. No printed frequency dictionary of Sanskrit exists](#6-no-printed-frequency-dictionary-of-sanskrit-exists) — DCS-frequency ordering is genuine innovation.
 - 🔴 [§7. DCS lemma data is keyed in two transliterations](#7-dcs-lemma-data-is-keyed-in-two-transliterations) — SLP1 vs IAST across the two frequency files.
 - 🔴 [§8. Unaccented DCS cannot distinguish present class I from VI](#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) — 117 spurious corpus-derived class additions were reverted.
+- 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
 - 🟠 [§11. DCS 2021 and 2026 vintages are not directly comparable](#11-dcs-2021-and-2026-vintages-are-not-directly-comparable) — one metrical line ↔ several CoNLL-U sentences; treebanks on 74/270 texts only.
@@ -79,7 +81,8 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§43. SKD/VCP sense/citation fusion is a record-type effect, not a dictionary-level one](#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) — corpus-scale count inverted the one-lemma *dharma* exemplar's direction; never generalise a citation-register claim from one lemma.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
-- 🔴 [§61. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#61-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
+- 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
+- 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
 
 **Etymology & derivation**
 
@@ -250,6 +253,25 @@ pipeline simplification, not yet a defect fix.
 > — WhitneyRoots v1.3.0 · 2026-07-05, Sonnet 5 (`claude-sonnet-5`) (originally v1.2.0 ·
 > 2026-07-03)
 
+### §63. vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute: five añc dhātus, no and, but ast IS Paninian
+
+The 2014 defense review (Krylov, ведущая организация) charged that the Gasūns
+concordance drops roots absent from Palsule (e.g. `4añc`, present in Pāṇini) while
+keeping Palsule-only roots (`2and`, `ast`). The machine-readable vidyut dhātupāṭha
+(2 259 dhātu) settles each case: **five** añc-family entries exist (`01.0215 ancu~
+gatipUjanayoH`; `01.0998 ancu~^` / `01.0999 acu~^` / `01.1000 aci~^` all `gatO
+yAcane ca`; `10.0266 ancu~ viSezaRe`) → the dropped `4añc` is real and recoverable;
+no `and-` dhātu exists → `2and` confirmed Palsule-only; **but `asta~ saNGAte`
+(10.0169, curādi) IS in the Paninian dhātupāṭha** — Krylov's second example was
+itself imprecise. Gotcha for anyone grepping vidyut: the file lists añc
+denasalized-ish as `ancu`, NOT SLP1 `aYc` (`aYc` appears only inside meaning
+glosses like `saYcalane`), and anubandha marks `~ \ ^` must be stripped before
+matching. Full-sweep method (concordance exclusions × vidyut × Whitney) outlined in
+[GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md).
+
+> **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
+> Fable 5 `claude-fable-5` · 2026-07-07
+
 ## Corpus & parallel-text data
 
 ### §5. The parallel corpus rarely attests prefixed-verb forms
@@ -394,6 +416,26 @@ subsections are orthogonal to I–V and add stratum granularity.
 
 > **Source:** [`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)
 > (built by `renou_pipeline.py --all`, validated by `renou_audit.py`) — RussianTranslation · 2026-07-01
+
+### §62. Varga distribution is almost epoch-stable (Cramér's V = 0.037) — and the Gasūns-2014 dissertation prose read its own χ² table backwards
+
+Aggregating the 25 sparśa varṇas of DCS (pin 2026-03-05; 9 940 591 stop/nasal varṇas
+across time slots 1–5) into the 5 vargas gives per-epoch shares that barely move:
+dentals ≈ 47–52 %, labials ≈ 24–27 %, gutturals 8.9 → 14.9 %, palatals ≈ 8–9 %,
+cerebrals 4.5 → 5.9 %. Effect size for the 5×5 varga × epoch table: **Cramér's V =
+0.0372** (χ² = 54 890) — on such N nearly everything is "significant", so p-values
+carry no signal; the only real shifts are the dental drop Vedic→epic (−4.2 pp) and
+the guttural climb through medieval (+6.0 pp total). Bonus forensic finding: the
+2014 Gasūns dissertation prose (§2.6 / положение 9) systematically labels as
+«набирающие популярность» exactly the vargas whose pairwise-χ² p-values were LARGE
+(labials 0.26 / cerebrals 0.32 for epic; palatals 0.95 for medieval; labials 0.66
+for late) — i.e. the statistically *unchanged* ones; apparently high p was read as
+growth. The 2026 shares agree with the 2014 p-table **against** the 2014 prose.
+Reproducible: [SanskritGrammar/GasunsDhatu_2014/revision-2026/varga_shares.py](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/varga_shares.py)
+over [VisualDCS derived-data/Fonetika/regen-2026/varna_freq.csv](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/regen-2026/varna_freq.csv).
+
+> **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
+> Fable 5 `claude-fable-5` · 2026-07-07
 
 ## Dictionary structure & markup
 
@@ -691,7 +733,7 @@ correlated corrector attention biases it down.
 > **Source:** [csl-observatory `reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md)
 > (Chapman/Chao tables + sensitivity) — csl-observatory · 2026-07-03 · paper track A48
 
-### §61. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe
+### §64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe
 
 🔴 **A direct co-occurrence tally over the 4 local pwg_ru merge layers (PWG/PW/SCH/PWKVN) shows
 PWG does not define the headword universe by itself — PW alone covers 40,338 headwords
@@ -1425,10 +1467,61 @@ citation crosswalk must also run `gh repo list funderburkjim` and
 `gh repo list sanskrit-lexicon-scans`, and grep the actual `csl-orig` source
 text for existing `<ls>` markup, before assuming nothing exists.
 
+### §60. pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense
+
+🟡 **Grading the 1.09M-unit Sa→Ru translation memory
+([`tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
+H215 Slice 2) with the deterministic `proxy` QE yields A 5.7% / B 94.0% / C 0.3%
+over the full corpus.** All 62,503 A units satisfy the corroboration gate
+(≥2 distinct works agreeing on one `(passage, slp1)`, ≥50%) — A is driven by the
+multi-translation clusters (Bhagavad-gītā ×10, repeated epic verses), not by QE
+score alone. Measured 06-07-2026 (Opus 4.8 `claude-opus-4-8` orchestration;
+extraction upstream DeepSeek `deepseek-chat`).
+
+Implication: **a reference-free *surface/fluency* heuristic is near-useless for
+adequacy.** Calibrated on the 320-row labelled
+[`gold/gold_set.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl),
+the proxy separates semantically-acceptable from defective rows at only
+**ranking AUC ≈ 0.58** — a `wrong-sense` gloss is as clean/short/Cyrillic as a
+correct one, so the form-based signal can't tell them apart. What *does* protect
+the publication-grade A stamp is (a) the consensus gate and (b) the A-gate's
+conservatism (0 defective gold rows ever reached A). Anyone tempted to lean on a
+cheap reference-free QE for semantic filtering should instead weight consensus /
+human adjudication, and reserve a *trained adequacy* model (COMET-QE, the
+`--qe comet` hook) for the real QE signal.
+
 > **Source:** MG correction mid-session ("It exists as Jim Funderburk repo, both
 > Indische Sprüche editions"), verified via `gh api`/`curl` against
 > `sanskrit-lexicon-scans/boesp1`+`boesp2` and `sanskrit-lexicon/PWG#87`,
 > Sonnet 5 `claude-sonnet-5` · 2026-07-03
+
+---
+
+### §61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable
+
+🔴 **The ~266,820-word reverse Sanskrit dictionary merges 30 source dictionaries
+(1822–2005) whose rights status splits ~18 safely public domain / 2 likely-PD-verify /
+7 clearly in copyright (Kochergina 1978 → RF ~2088, Turner 1962–85 → ~2053, Mylius 1975,
+Pujol 2005, Edgerton 1953, Stchoupak–Nitti–Renou 1932, Vettam Mani 1979) / 1 own-license
+(Huet) / 2 unclear — so publishing the merged headword list openly is a genuine legal
+judgment, not a default.**
+
+Evidence: per-source classification of all 30 sources (editions + compiler/author death
+years) in
+[`ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md` §3.1](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md),
+built from the compiler's own bibliography
+([`Словари-источники.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8.mdx)).
+
+Implication: any session touching publication of merged multi-dictionary data (this list,
+or a future union headword release) must route through the §3.1 rights table and the open
+`@DECIDE` in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+§ Waiting on Me — options: (a) publish all on the facts-not-expression reading, (b) PD-only
+subset (unique-to-risky-source count = H270 step 5), (c) restricted tier (kosha pattern).
+A descriptive *paper* about the resource is NOT gated by the ruling — only the data tier is.
+
+> **Source:** H265 analysis ([PR #207](https://github.com/gasyoun/SanskritLexicography/pull/207)),
+> Fable 5 `claude-fable-5` · 2026-07-07
 
 ---
 

@@ -8,7 +8,7 @@ This gate checks the local output of:
 It deliberately uses only the standard library. The export itself is gitignored,
 but the validator is committed so G4 can be reproduced before a print cut.
 
-  python validate_assembled_export.py [--min-cards N] [--cards PATH] [--quarantine PATH]
+  python validate_assembled_export.py [--expected-cards N | --min-cards N] [--cards PATH] [--quarantine PATH]
 """
 import argparse
 import json, os, sys
@@ -139,6 +139,8 @@ def parse_args():
         description='Validate the deterministic assembled-card export.')
     ap.add_argument('--min-cards', type=int,
                     help='minimum card count for bounded/fixture validation')
+    ap.add_argument('--expected-cards', type=int,
+                    help='exact card count for bounded/fixture validation')
     ap.add_argument('--cards', default=OUT,
                     help='assembled cards JSONL path')
     ap.add_argument('--quarantine', default=QUARANTINE,
@@ -146,12 +148,17 @@ def parse_args():
     args = ap.parse_args()
     if args.min_cards is not None and args.min_cards < 1:
         ap.error('--min-cards must be a positive integer')
+    if args.expected_cards is not None and args.expected_cards < 1:
+        ap.error('--expected-cards must be a positive integer')
+    if args.min_cards is not None and args.expected_cards is not None:
+        ap.error('--min-cards and --expected-cards are mutually exclusive')
     return args
 
 
 def main():
     args = parse_args()
     min_cards = args.min_cards
+    expected_cards = args.expected_cards
     out, quarantine_path = args.cards, args.quarantine
     if not os.path.exists(out):
         fail('missing %s; run python assemble.py build first' % os.path.basename(out))
@@ -160,13 +167,17 @@ def main():
 
     cards = load_jsonl(out)
     quarantine = load_jsonl(quarantine_path)
-    expected = expected_card_count() if min_cards is None else None
-    if min_cards is None and len(cards) != expected:
-        fail('assembled card count %d does not match PWG grouped count %d' %
-             (len(cards), expected))
+    expected = expected_card_count() if min_cards is None and expected_cards is None else expected_cards
+    if expected is not None and len(cards) != expected:
+        label = 'PWG grouped count' if expected_cards is None else 'expected bounded count'
+        fail('assembled card count %d does not match %s %d' %
+             (len(cards), label, expected))
     if min_cards is not None and len(cards) < min_cards:
         fail('assembled card count %d is below required minimum %d' %
              (len(cards), min_cards))
+    if min_cards is not None:
+        print('warning: --min-cards is a floor-only bounded check; use --expected-cards when the fixture count is known',
+              file=sys.stderr)
 
     covered = quarantined_in_cards = 0
     for line_no, card in cards:
@@ -180,7 +191,7 @@ def main():
              (quarantined_in_cards, len(quarantine)))
 
     pct = 100.0 * covered / max(len(cards), 1)
-    mode = 'full' if min_cards is None else 'bounded'
+    mode = 'full' if min_cards is None and expected_cards is None else 'bounded'
     print('assembled export validation OK (%s): %d cards, %d covered (%.1f%%), %d quarantined record(s)' %
           (mode, len(cards), covered, pct, len(quarantine)))
 

@@ -629,6 +629,54 @@ def _portrait_key_iast(portrait_text, key):
     return key
 
 
+def _portrait_source_profile(portrait_text):
+    """The `source_profile` a portrait declares (H214: 'no_pwg_supplement_chain'), or None
+    for an ordinary PWG-rooted portrait. This is the AUTHORITATIVE no-PWG signal — only a
+    truly PWG-less headword's portrait carries it — so it disambiguates a no-PWG supplement
+    card from a PWG root-split supplement sub-card whose raw looks identical."""
+    try:
+        rows = json.loads(portrait_text)
+    except Exception:
+        return None
+    rows = rows if isinstance(rows, list) else [rows]
+    for r in rows:
+        if isinstance(r, dict) and r.get('source_profile'):
+            return r.get('source_profile')
+    return None
+
+
+# A supplement LAYER marker in a raw card (PW / SCH / PWKVN / NWS). The trailing space after
+# "PW" is load-bearing: it matches "PW — …" but NOT "PWG …" (PWG has no space) or "PWKVN …".
+_SUPP_LAYER_RE = re.compile(r'=== LAYER: (?:PW |SCH|PWKVN|NWS)')
+
+
+def card_source_profile(raw, portrait_text=None):
+    """H214 per-card source-material profile, stamped on every promoted row:
+
+      'no_pwg_supplement_chain' — no PWG layer AND the headword has no PWG base (portrait-flagged)
+      'pwg_with_supplements'    — ONE card carrying BOTH a PWG layer and >=1 supplement layer
+                                  (the MIXED whole-card shape from gen_card — filter for this to
+                                  find all mixed cards)
+      'pwg_only'                — only PWG layer(s) (pure base card / root-split head sub-card)
+      'pwg_supplement_subcard'  — a supplement-only sub-card of a PWG root-split headword (its
+                                  headword DOES have a PWG base elsewhere, so it is NOT no-PWG)
+
+    Returns None when the raw carries no LAYER markers (degenerate/unknown). The portrait's
+    explicit no-PWG flag wins first, so a root-split supplement sub-card (empty portrait) is
+    never mis-tagged as no-PWG."""
+    if _portrait_source_profile(portrait_text) == 'no_pwg_supplement_chain':
+        return 'no_pwg_supplement_chain'
+    has_pwg = '=== LAYER: PWG' in raw
+    has_supp = bool(_SUPP_LAYER_RE.search(raw))
+    if has_pwg and has_supp:
+        return 'pwg_with_supplements'
+    if has_pwg:
+        return 'pwg_only'
+    if has_supp:
+        return 'pwg_supplement_subcard'
+    return None
+
+
 def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     """Conservative no-LLM lane for cross-reference/supplement stubs.
 
@@ -695,9 +743,9 @@ def tm_card_sane(card, lang, field, raw):
               for s in rec.get('senses') or []))
     sk = sum(((s.get('german') or '').count('{#') for rec in card.get('records') or []
               for s in rec.get('senses') or []))
-    if ls and ls != raw.count('<ls'):
+    if ls != raw.count('<ls'):
         return False, '<ls> count drift'
-    if sk and sk != raw.count('{#'):
+    if sk != raw.count('{#'):
         return False, '{# count drift'
     return True, ''
 
@@ -1017,11 +1065,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     else:   # proportional to word size + small jitter headroom (NOT a flat floor)
         max_agents = int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)) + MAX_AGENTS_HEADROOM
 
+    # H214: per-card source-material profile, stamped on promoted rows via
+    # meta.source_profiles (promote_final_cards.provenance reads it per sub-card). Window-level
+    # meta.source_profile intentionally stays narrow for compatibility with the H214 contract:
+    # only an all-no-PWG window is marked; ordinary/mixed PWG windows remain null.
+    source_profiles = {k: card_source_profile(raws.get(k, ''), portraits.get(k)) for k in keys}
+    _distinct = {p for p in source_profiles.values() if p}
+    source_profile = 'no_pwg_supplement_chain' if _distinct == {'no_pwg_supplement_chain'} else None
+
     meta = {
         'schema_version': 'pwg_ru.workflow_meta.v1', 'generator': 'gen_opt_harness2.batched-masked',
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
         'root': root, 'safe_root': safe_name(root), 'lang': lang,
+        'source_profile': source_profile,
+        'source_profiles': source_profiles,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
         # Nominal mode: `root` is only a window LABEL (e.g. pril10_w1), never a real headword,
         # and result rows are keyed by the safe-name file stem (k_ala, r_upa). promote_final_cards
@@ -1164,6 +1222,17 @@ class KillTimeout extends Error {}
 const isKill = e => (e instanceof KillTimeout) || (e && /kill-timeout/.test(String(e && e.message)))
 const killBudgetMs = skelBytes => Math.min(KILL_CEIL_MS, Math.max(KILL_FLOOR_MS, KILL_FACTOR * (KILL_BASE_MS + KILL_SLOPE_MS * skelBytes)))
 const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k].skeleton.length : 0), 0)
+// H220: a SINGLE card with no selfheal fallback (single-fragment supplement / nominal card
+// that does not split) has NO smaller lane for the kill gate to route to — abandoning it on
+// the byte-scaled budget is pure loss. Such a card still returns a VALID card, only slower
+// than a tiny skeleton's budget predicts: the fixed per-call StructuredOutput latency
+// (~55-105 s) dominates, independent of skeleton size. The no-PWG w1 run killed 6/6 nulls
+// this way (kill-timeout 53-104 s, all would have passed accept). Give a no-fallback single
+// the CEIL budget so it is only abandoned on a true >CEIL hang. Multi-card / splittable
+// batches keep the aggressive byte-scaled gate (there a kill routes to binary-split /
+// fragment heal — the gate's whole purpose). SHARED (keys on FRAGS, no RU/EN branching).
+const hasFallback = k => Array.isArray(FRAGS[k]) && FRAGS[k].length > 0
+const killBudgetForCur = cur => (cur.length === 1 && !hasFallback(cur[0])) ? KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))
 // H189 live budget kill-switch state. AGENTS_SPENT counts real agent() calls; once it
 // reaches MAX_AGENTS every further agentKill() throws BudgetExceeded WITHOUT calling agent()
 // (0 tokens), so retry/binary-split cascades short-circuit to instant no-ops and the window
@@ -1173,14 +1242,14 @@ const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k]
 class BudgetExceeded extends Error {}
 let AGENTS_SPENT = 0
 let BUDGET_TRIPPED = false
-async function agentKill(prompt, opts, skelBytes) {
+async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   if (KILL_SWITCH && MAX_AGENTS != null && AGENTS_SPENT >= MAX_AGENTS) {
     BUDGET_TRIPPED = true
     throw new BudgetExceeded('budget-kill-switch: window hit MAX_AGENTS=' + MAX_AGENTS + ' agent() calls; remaining cards requeued')
   }
   AGENTS_SPENT++
   if (!KILL) return agent(prompt, opts)
-  const ms = killBudgetMs(skelBytes)
+  const ms = (budgetMsOverride != null) ? budgetMsOverride : killBudgetMs(skelBytes)
   let timer
   const guard = new Promise((_, rej) => { timer = setTimeout(() => rej(new KillTimeout('kill-timeout ' + Math.round(ms / 1000) + 's @ skelBytes=' + skelBytes)), ms) })
   try { return await Promise.race([agent(prompt, opts), guard]) }
@@ -1194,6 +1263,11 @@ const cardTokens = card => { let a = []; for (const rec of (card.records || []))
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
 // positional-only matching silently misassigns every card after an omitted/reordered one.
 const byKey1 = cards => { const m = {}; for (const c of cards) if (c && c.key1 !== undefined && !(c.key1 in m)) m[c.key1] = c; return m }
+const exactCard = (cards, km, expected, fallbackIndex) => {
+  if (km[expected] !== undefined) return km[expected]
+  const c = cards[fallbackIndex]
+  return (c && c.key1 === expected) ? c : null
+}
 function restoreCard(card, k) {
   const ph = PH[k] || []
   for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
@@ -1271,8 +1345,14 @@ async function healGroup(k, idxs, grp, label) {
     }
     if (res && Array.isArray(res.cards)) {
       const km = byKey1(res.cards)
-      // match by echoed key1 first; fall back to position within the pending set
-      pending.forEach((fi, idx) => { acceptFrag(km[fkey(fi)] !== undefined ? km[fkey(fi)] : res.cards[idx], fi) })
+      // Fragments may arrive reordered, but a positional fallback is safe only when the
+      // fallback card still echoes the exact fragment key and passes the token multiset guard.
+      pending.forEach((fi, idx) => {
+        const fk = fkey(fi)
+        const cand = exactCard(res.cards, km, fk, idx)
+        if (!cand) { noteFail(fk, 'missing-or-mismatched-fragment-key'); return }
+        acceptFrag(cand, fi)
+      })
     } else {
       pending.forEach(fi => noteFail(fkey(fi), res ? 'malformed-response (no cards[])' : 'agent-returned-null'))
     }
@@ -1314,7 +1394,11 @@ async function healGroup(k, idxs, grp, label) {
 // partial:true + missing_fragments (exact 'gN:fM' ids) + missing_groups/total_groups so a
 // follow-up can requeue JUST the failed pieces instead of re-running the whole card.
 async function selfHeal(k) {
-  const groups = FRAGS[k]; if (!groups || !groups.length) { noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
+  // H220 observability: a no-fallback selfHeal is the LAST resort after an upstream failure
+  // (kill-timeout / missing-or-mismatched-key / fidelity-reject). Don't clobber that specific
+  // reason with the generic 'no-selfheal-fallback' — the overwrite hid a kill-gate mass-kill
+  // behind a misleading message for a whole session. Only set it when nothing failed yet.
+  const groups = FRAGS[k]; if (!groups || !groups.length) { if (!FAIL[k]) noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
   const ftm = FRAG_TM[k] || []            // --tm: per-group cached-senses-or-null, mirrors FRAGS[k]
   const senses = []
   const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
@@ -1417,7 +1501,7 @@ async function resolveGroup(pending, label) {
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
     let res
     try {
-      res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur))
+      res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur), killBudgetForCur(cur))
     } catch (e) {
       if (!isKill(e)) throw e   // real hard failure — propagate as before (translateBatch -> selfheal)
       // Kill: stop RE-billing this whole call — a stall re-times-out identically. Mark the
@@ -1428,14 +1512,27 @@ async function resolveGroup(pending, label) {
       break
     }
     if (res && Array.isArray(res.cards)) {
-      // Match responses by their echoed key1 FIRST, position second. Positional-only
-      // matching shifts every card after an omitted/reordered one onto the wrong key;
-      // accept()'s count guard catches MOST such shifts, but two cards with equal
-      // <ls>/{# counts would swap silently — content under the wrong headword.
+      // Match responses by their echoed key1 ONLY. Positional fallback can silently put
+      // content under the wrong headword when a model omits/reorders cards, especially for
+      // zero-marker cross-reference stubs where count-based fidelity guards are blind.
       const km = byKey1(res.cards)
+      // H220 nominal key-echo tolerance: a masked nominal / no-PWG card carries the CLEAN SLP1
+      // headword in its portrait ('key1': "CAyA"), which pulls the model into echoing that
+      // instead of the mangled sub-card stem in the '=== CARD <stem> ===' header
+      // (_c_ay_a~~h0_zz_pw) — confirmed for leading/interior-underscore stems (_c_ay_a->CAyA,
+      // g_ayatr_i->gAyatrI). Recover ONLY when the returned key1 equals nominal_keymap[stem]
+      // AND that SLP1 maps to EXACTLY ONE pending stem in this batch (unambiguous) — then
+      // re-key the card to the stem. Never positional; NULL for root (PWG) windows
+      // (META.nominal false), so test_generated_harness_strict_key_matching stays honest.
+      const NKM = (META.nominal && META.nominal_keymap) ? META.nominal_keymap : null
       cur.forEach((k, i) => {
-        const cand = km[k] !== undefined ? km[k] : res.cards[i]
-        if (cand === undefined || cand === null) { noteFail(k, 'missing-from-response'); return }
+        let cand = km[k]
+        if ((cand === undefined || cand === null) && NKM && NKM[k] && NKM[k] !== k) {
+          const slp1 = NKM[k]
+          const rivals = cur.filter(x => NKM[x] === slp1)
+          if (rivals.length === 1 && km[slp1] !== undefined && km[slp1] !== null) { cand = km[slp1]; cand.key1 = k }
+        }
+        if (cand === undefined || cand === null) { noteFail(k, 'missing-or-mismatched-key'); return }
         const c = accept(cand, k)
         if (c) resolved[k] = c
       })

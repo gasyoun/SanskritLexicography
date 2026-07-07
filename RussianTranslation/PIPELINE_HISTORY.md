@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 04-07-2026_
+_Created: 04-07-2026 · Last updated: 07-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -252,6 +252,187 @@ recovery mechanism of its own — flagged as a follow-up, not yet fixed.
    can hit the same tag-collision pattern — worth a SENSE-DUPE re-check on
    promoted cards once the fix has run.
 
+### Phase 9 — nominal-side PWG-miss gap fixed; H214 no-PWG lane implemented (H206/H214, 07-05/07-06)
+
+[`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md)
+measured that **~36% of the local headword union carries zero PWG record**
+(FINDINGS.md §61) — PWG does not define the headword universe alone; PW-only
+headwords alone outnumber PWG-only ones 6-to-1. A follow-up code read of
+[`src/pilot/nominals_worklist.py`](src/pilot/nominals_worklist.py) confirmed
+this was an active drop, not just a theoretical risk: `build_worklist()`
+split nominal candidates into `hits` (present in `dm.index('pwg')`) and
+`misses` (everything else), and only `hits` ever fed `runnable_remaining` —
+`misses` were reported in an aggregate `pwg_misses` count and then silently
+excluded from the translation queue forever, even when a miss carried a real
+PW, SCH, or PWKVN record (translatable content, not a non-word).
+
+**Damage-scope count** — cross-checking every `miss_keys` entry from the 3
+already-run nominal wordlists (Приложение 5, Приложение 10, Сборное ядро)
+against `dm.index('pw'|'sch'|'pwkvn')`: of **1,743 total PWG misses**, **416**
+(24%) DO have a real record in another local layer — dropped-but-translatable
+— and 1,327 are true misses (absent from every local layer). Deduplicated
+across the 3 wordlists (Сборное ядро overlaps pril5/pril10), that's **232
+unique lemmas**.
+
+**H206 fixed:** `build_worklist()` now splits `misses` into `other_layer_hits`
+(tagged with which of `pw`/`sch`/`pwkvn` they hit) and `true_misses` (absent
+everywhere), both surfaced in the payload and the committed `.coverage.md`
+reports, instead of one undifferentiated `miss_keys` bucket.
+
+**H214 implemented:** M.G. ruled the old portrait-design `@DECIDE`: PWG-missing
+but PW/SCH/PWKVN/NWS-present lemmas are needed translations and should render as
+standalone supplement-chain cards, without inventing a PWG base portrait or
+sense tree. `_pilot_gen_merged.gen_no_pwg_card()` now reuses `dict_merge.merged()`
+to emit one labeled sub-card per available non-PWG layer (`<safe>~~h0_zz_<layer>`),
+with a minimal portrait carrying `source_profile: "no_pwg_supplement_chain"`.
+`gen_opt_harness2.py` carries that marker into workflow meta, and
+`promote_final_cards.py` carries it into row provenance alongside the first-class
+`layer` field.
+
+`nominals_worklist.py` deliberately keeps these separate from PWG-rooted
+`runnable_remaining`: the payload now exposes `no_pwg_runnable`,
+`no_pwg_runnable_count`, and `no_pwg_promoted_count`. That separation is
+intentional because the rows rest on different-vintage source material, even
+though they are now runnable through the nominal harness.
+
+The 232 deduplicated lemmas remain documented in the committed
+[`src/pilot/lexical_cores/pwg_miss_backfill_queue.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lexical_cores/pwg_miss_backfill_queue.md)
+backfill queue (key1/IAST/layer(s)/source wordlist(s)). **Do not rediscover this
+as a fresh bug** — both the worklist drop and the render path are fixed; what
+remains is ordinary lane scheduling/review.
+
+### Phase 10 — nominal-lane cost post-mortem, verified twice, then the first 100-card window (H189 → H191 → H201, 07-05 → 07-06)
+
+The `pril10_w1` nominal window blew its cost estimate; instead of shrugging, the
+blowup got a full post-mortem
+([`src/pilot/POSTMORTEM_pril10_w1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/POSTMORTEM_pril10_w1.md),
+H189, Opus 4.8 `claude-opus-4-8`, [PR #158](https://github.com/gasyoun/SanskritLexicography/pull/158)):
+every hypothesis confirmed, the economics reproduced to the digit, and the fix
+set landed as shared code — presplit-lane re-batching (174→69 fragment groups;
+real `gam` replay 18→6 agents) plus the standing rule that `kAla`-class monster
+windows are never bulk-run, they go to the human-budgeted defer lane. A second
+model then **independently re-verified the post-mortem to the digit** (H191,
+Codex/GPT-5, [PR #160](https://github.com/gasyoun/SanskritLexicography/pull/160)),
+added three guardrail optimizations with selftests, and staged a
+deliberately-shaped production window: 100 small nominal heads, 0 deferred
+monsters ([`NOMINAL_W1_100SMALL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/NOMINAL_W1_100SMALL.md)).
+That window then ran to completion (H201, gen Sonnet 5 `claude-sonnet-5`,
+orchestration Opus 4.8, [PR #173](https://github.com/gasyoun/SanskritLexicography/pull/173)):
+pass 1 was lost whole to a transient `Connection closed mid-response` outage
+(the 19-agent kill switch fired exactly as designed), a clean rerun recovered
+93/100, a 7-key transient requeue closed the rest — **100/100 cards promoted
+(306 senses)**, the first at-scale proof of the nominal lane end to end.
+
+### Phase 11 — the TM grows teeth: mined tier, batch scale, publication grade (H184 / H186 / H224 / H215, 07-05 → 07-06)
+
+The translation memory stopped being just a byte-reuse cache and became a
+curated, graded, exportable asset. Four increments:
+[`src/build_glossaries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_glossaries.py)
+(H184, Sonnet 5 `claude-sonnet-5`) extracted 663 IAST-keyed entries from the
+two machine-usable Гринцер Ramāyaṇa name-glossaries and wired them into
+[`corpus_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py)
+as an evidence-only `SPECIALIST` tier (the four unusable candidates are
+documented, not silently dropped).
+[`src/mine_running_text.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mine_running_text.py)
+(H186, Opus 4.8; extraction DeepSeek `deepseek-chat`,
+[PR #187](https://github.com/gasyoun/SanskritLexicography/pull/187)) opened a
+**second TM source**: Sa→Ru term glosses mined from Russian running prose into
+a quarantined `mined` tier — never the clean 1.09M-pair `corpus_lexicon` — with
+a never-invent prompt, a verbatim-in-passage guard, and a 30-row human
+precision gate (97% correct equivalence) before scale was approved. H224
+(Opus 4.8, [PR #190](https://github.com/gasyoun/SanskritLexicography/pull/190))
+then batch-mined the whole SamudraManthanam folder: **10,132 mined pairs**.
+Finally H215 (Opus 4.8, [PR #193](https://github.com/gasyoun/SanskritLexicography/pull/193) /
+[PR #194](https://github.com/gasyoun/SanskritLexicography/pull/194)) made the
+TM **publication-grade**: a TMX 1.4b exporter
+([`src/build_tmx.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py))
+so the asset is consumable by standard CAT tooling, and a composite A/B/C
+quality grader ([`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py))
+so every TM row carries an evidence grade instead of implicit trust (grade
+distribution logged as FINDINGS §60). H215's remaining slices (L0 segment
+layer, oral-corpus ingest, FAIR release clearance) are open — the release
+clearance is the real blocker.
+
+### Phase 12 — the re-glue research track: addenda typology, learner apparatus, and the Arm-A/B verdict (H180, 07-05 → 07-06)
+
+A parallel *research* track asked what a print-shaped PWG→RU edition should be
+glued from. After a spec pass ([PR #172](https://github.com/gasyoun/SanskritLexicography/pull/172):
+5 spec docs, NWS staleness measured at SCH Jaccard 0.992, paper A49
+registered), the implementation landed as four deterministic, zero-LLM
+builders: [`src/build_relationships.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_relationships.py)
+classified **5,603** non-PWG sub-card senses into a provenance-relationship
+typology (`restate` 5,054 · `nws_at_sense` 211 · `derived_sense` 98 · `a2a` 89 ·
+`sch_star` 88 · `foreign_fragment` 62 · `pw_correct` 1);
+[`src/build_learner_scores.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_learner_scores.py)
+scored **106,079** PWG headwords by Russian-student-dictionary retention
+(learner-core 22,772 = 21%); [`src/build_reglue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue.py)
+re-glued 15/15 pilot headwords with **byte-identity asserted on every `ru`**
+(re-glue is free — no re-translation); and
+[`src/synth_de_first.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_de_first.py)
+assembled the synthesize-first (Arm B) inputs for a 10-word bake-off. Three
+HTML review sheets went up for the human gates
+([PR #191](https://github.com/gasyoun/SanskritLexicography/pull/191)); the
+Arm-B model run + both-arms scoring
+([PR #195](https://github.com/gasyoun/SanskritLexicography/pull/195)) returned
+the verdict: **synthesize-first does not beat re-glue** — the deterministic
+re-glue path stays the edition backbone. Getting that Arm-B run to finish is
+what exposed every orchestration failure in the next phase.
+
+### Phase 13 — the orchestration post-mortem and the dispatch wrapper (H234, 07-06)
+
+**H234 implemented (06-07-2026):** the H180 Arm-B synthesis run (Opus 4.8
+`claude-opus-4-8` orchestrating 10 async sub-agents) degenerated into a
+~40-minute fiasco caught only by hand via file mtimes. Six distinct failures,
+all now guarded by
+[`src/synth_dispatch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_dispatch.py)
+(deterministic dispatch-and-monitor wrapper, 7-case selftest, zero model call
+in the wrapper itself):
+
+1. **False-stall kill** — all 10 agents were judged stalled at ~6 min because
+   their transcripts read 0 bytes, and were killed mid-work; on resume they had
+   in fact read + analysed their inputs. Async-agent transcripts **buffer** —
+   transcript size is NOT a liveness signal. The wrapper judges liveness by
+   **output-file growth only**.
+2. **Mid-stream API stalls under wide concurrency** — 7/10 resumed agents died
+   with `API Error: Response stalled mid-stream`; 10 concurrent large Opus
+   generations (26–212 KB inputs) is over the cliff, staggered waves of ~4 ran
+   clean. The wrapper caps concurrency at 3 (hard cap 4) with staggered starts.
+3. **34-minute silent hang** — the `car` agent last grew its transcript at
+   17:45, wrote nothing, emitted no completion/failure signal, and a queued
+   resume message was never delivered (a hung agent takes no tool rounds).
+   Only a wall-clock guard catches this: the wrapper kills any attempt whose
+   output file hasn't grown in 10 min (`--kill-after 600`).
+4. **Watcher wiped gitignored outputs mid-build** — outputs written as bare
+   untracked files under `pwg_ru/reglue/synth_outputs/` were deleted by the
+   repo watcher while agents were still writing. The wrapper authors in a
+   staging dir OUTSIDE the repo, lands atomically, and re-verifies the landed
+   sha after a delay (the `/watcher-safe-commit` pattern), re-landing if wiped.
+5. **Zombie overwrote a scored result** — a replacement `viS` agent produced
+   the version that was scored (1597 `<ls>`); the old agent, never confirmed
+   dead, finished 47 min later and silently overwrote it with a 1593-`<ls>`
+   version. The wrapper confirms an attempt is dead (`wait()` returned) before
+   re-dispatching, gives each attempt a private staging file, and seals a
+   landed job — late output is discarded, never landed.
+6. **Free-form generation of >~800-citation entries is unreliable** — `viS`
+   (1597), `DA` (2116), `car` (1019) all stalled or truncated on free-form
+   prose and only completed via programmatic assembly (verbatim fragment
+   reorder). The wrapper routes inputs above `--assemble-over 800` `<ls>` to
+   its deterministic zero-LLM assembler by default; `viS.de_synth.txt` was
+   regenerated this way (1597 raw / 1525 unique `<ls>`, `synth_score.py` row
+   byte-identical to the committed
+   [`ARMB_SCORES.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv)).
+
+Baseline for calibration: a clean single synthesis agent on the largest word
+(`viS`) finishes in **under 3 minutes** — so a 10-minute output-file
+kill-guard is generous, and "make agents faster" was never the problem.
+
+The same session also ran a registry audit of every pwg_ru handoff: 10 stale
+"queued" rows were verified done against merged-PR/`.ai_state` evidence and
+rebucketed, leaving the truly-unapplied pwg_ru queue at exactly three
+handoffs (H178 ACL verify-and-improve, H188 full pipeline audit, H220 no-PWG
+throughput) plus one human `@DECIDE` (H143) — the registry, not the work,
+had drifted.
+
 ## Recurring failure patterns (read this before assuming something new is broken)
 
 These are the failure *shapes* that have recurred across the project — if a
@@ -260,7 +441,24 @@ likely the SAME class, not a new bug:
 
 - **Wide concurrency collapses the whole run.** >3 simultaneous root
   Workflows → server-side rate limiting → transient nulls (Slice D: 117 of
-  them). Fix is process discipline (≤3-wide), not code.
+  them). Fix is process discipline (≤3-wide), not code. The same cliff hit
+  the H180 Arm-B fan-out as mid-stream API stalls at 10-wide (H234 #2).
+- **An async agent's transcript size says nothing about liveness.**
+  Transcripts buffer: 0 transcript bytes ≠ stalled (H234 #1 killed 10 healthy
+  agents on that inference), and a growing transcript ≠ progress. The only
+  trustworthy liveness signal is the agent's OUTPUT FILE growing; the only
+  trustworthy completion signal is the output file + a content self-check
+  (e.g. `<ls>` count).
+- **A killed/failed agent is not dead until its death is observed.** Re-
+  dispatching a replacement while the old agent may still be running invites
+  a zombie to finish later and overwrite the good result (H234 #5). Confirm
+  the kill, and give every attempt its own private output path — never two
+  writers on one file.
+- **Untracked/gitignored files in this repo are watcher-bait.** The repo
+  watcher deletes untracked files, including an agent's half-written output
+  (H234 #4). Any agent-facing output must be authored outside the repo and
+  landed atomically with a post-land re-verify (`/watcher-safe-commit`
+  pattern / `synth_dispatch.land_watcher_safe`).
 - **TM/cache silently re-serves already-rejected content.** Any requeue path
   that doesn't explicitly disable the translation-memory lookup will hand
   back the exact content a gate just flagged, because TM addresses on input
@@ -302,7 +500,7 @@ likely the SAME class, not a new bug:
   specifically because this had already happened once (3 gate fixes,
   RU-only, undiscovered for a day).
 
-## Current state (as of this session, 04-07-2026)
+## Current state (as of 07-07-2026)
 
 - Store: `src/pwg_ru_translated.jsonl` (RU spine) + a parallel EN store,
   both local-only/gitignored, both TM-backed.
@@ -312,9 +510,24 @@ likely the SAME class, not a new bug:
 - Gate stack: `audit_window.py` (RU) mechanically verified clean against its
   own historical false positives (Phase 6); `audit_window_en.py` (EN) has
   NOT yet received the same fixes — tracked as a GAP in `LANG_PARITY.md`.
+- Nominal lane: production-proven at 100/100 cards (Phase 10, H201); the
+  PWG-miss drop is fixed and no-PWG supplement-chain cards render (Phase 9);
+  the 232-lemma backfill queue is documented, awaiting ordinary scheduling.
 - Cost/performance: `perf_preflight.py` gives a now-accurate agent-count
-  estimate (fixed this session); TM (card + fragment level) is the main
+  estimate (fixed Phase 8); TM (card + fragment level) is the main
   standing cost lever; `OUTPUT_BUDGET=90` is the calibrated default.
+- TM asset (Phase 11): clean 1.09M-pair `corpus_lexicon` + quarantined
+  `mined` tier (10,132 pairs, 97%-precision-gated) + `SPECIALIST` glossary
+  tier; every row gradeable A/B/C (`tm_grade.py`), exportable as TMX 1.4b
+  (`build_tmx.py`). FAIR release clearance is the open blocker (H215 S3–S5).
+- Edition backbone (Phase 12): deterministic re-glue won the Arm-A/B
+  bake-off — synthesize-first is retired for composition; the addenda
+  typology (5,603 senses) and learner scores (106,079 headwords) are built,
+  three review sheets await votes.
+- Multi-agent runs (Phase 13): every pwg_ru sub-agent fan-out goes through
+  `src/synth_dispatch.py` (≤4 concurrency, 10-min output-file kill-guard,
+  single-owner sealed outputs, watcher-safe landing) — bare fan-outs are
+  banned.
 - Process discipline (all MG-locked, do not re-litigate): opt2 canonical
   harness, ≤3-wide concurrency, `--no-tm` mandatory on requeue, lang-fix
   parity classification mandatory before closing a session, drive the

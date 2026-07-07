@@ -10,6 +10,52 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-07-06
+
+### no-PWG supplement-chain lane (H214) — PWG-missing headwords become translatable
+- PWG-missing headwords that carry a PW/SCH/PWKVN/NWS record now render as
+  standalone **supplement-chain sub-cards** (`<key>~~h0_zz_<layer>`) via new
+  [`_pilot_gen_merged.no_pwg_parts()` / `gen_no_pwg_card()`](src/_pilot_gen_merged.py) —
+  **no fabricated PWG base portrait** (supersedes decisions #2/#4 of
+  [PWG_MISS_RENDER_PATH_DECISIONS.md](PWG_MISS_RENDER_PATH_DECISIONS.md)). Reuses
+  `dict_merge.merged()`; renders raw NWS + the authoritative owner map. Run through the
+  nominal harness (keymap `subcard→key1`, no rootmap). Layer identity survives raw →
+  sub-card id (`dict_merge.layer_of`) → provenance → promoted `layer`.
+- **Per-card `source_profile`** on every promoted row (`no_pwg_supplement_chain` /
+  `pwg_with_supplements` (MIXED) / `pwg_only` / `pwg_supplement_subcard`) via
+  [`gen_opt_harness2.card_source_profile()`](src/pilot/gen_opt_harness2.py) →
+  [`promote_final_cards.provenance()`](src/promote_final_cards.py) — filter
+  `pwg_with_supplements` to find all mixed cards.
+- [`nominals_worklist.py`](src/pilot/nominals_worklist.py): the 232 PWG-miss lemmas
+  become a `no_pwg_runnable` lane, kept separate from PWG-rooted counts.
+- **Fixed — `{{Lbody=NNNN}}` leak:** it is a Cologne alternate-headword pointer (~12,186
+  PW records); [`dict_merge.resolve_lbody()`](src/dict_merge.py) + `id_index()` resolve it
+  to the referenced entry's real gloss in `merged()`, so it no longer leaks into `russian`.
+- **Fixed — nominal audit crash:** [`audit_window.py`](src/pilot/audit_window.py) skips the
+  root-glue step for a nominal / no-rootmap window instead of crashing, so the content gates
+  run to a real verdict.
+- First live run (`no_pwg_w1`, 24 headwords) validated end-to-end; **5 verified-clean
+  sub-cards promoted** (store 11,163→11,185, held for G5). Residual: low single-card
+  translation throughput (~36%) tracked in [H220](../../Uprava/handoffs/H220-Sonnet_RussianTranslation_pwg_ru_no_pwg_throughput_06.07.26.md)
+  and the [RUN_LOG.md `no_pwg_w1` block](src/pilot/RUN_LOG.md).
+
+### Upstream-change watcher (H182) — Cologne + NWS monthly drift → stale worklist
+- Added [`src/pilot/layer_versions.py`](src/pilot/layer_versions.py) +
+  append-only [`src/pilot/layer_version_log.jsonl`](src/pilot/layer_version_log.jsonl):
+  logs *which* upstream commit/scrape each source layer (pwg/pw/sch/pwkvn/nws) was
+  drawn from — answers "do we log when each layer was added?". Backfilled once.
+- Added [`src/pilot/watch_upstream.py`](src/pilot/watch_upstream.py): `cologne`
+  diffs each csl-orig layer file `last-seen..HEAD` (git `show`, read-only) → changed
+  headwords via the `dict_merge`/`pwg_mask`/`form_key` parse → cross-references the
+  promoted store by `(form_key, layer)` and emits a monthly
+  `upstream_changes/<YYYY-MM>.md` + `.stale.json` worklist carrying each flagged
+  headword's stamped `input_raw_sha256` (the H170 re-run primitive). `nws` re-fetches
+  only the ~48 promoted headwords from Halle (polite, resilient to downtime).
+- The watcher **only flags** — re-translation stays on the drain discipline (H179/H151).
+  Wired a monthly schedule: [`.github/workflows/upstream-watch.yml`](../.github/workflows/upstream-watch.yml)
+  (opens/updates a drift issue) + a local `schtasks` recipe, documented in
+  [UPSTREAM_WATCHER.md](UPSTREAM_WATCHER.md).
+
 ## [1.3.0] - 2026-07-05
 
 ### Nominal-window guardrails — H191 verified, optimized, staged

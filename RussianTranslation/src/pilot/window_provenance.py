@@ -11,7 +11,38 @@ if SRC not in sys.path:
 from safe_filename import safe_name
 
 
-def current_root_provenance(root, selected_keys=None):
+def current_root_provenance(root, selected_keys=None, nominal=False):
+    if nominal:
+        keys = selected_keys or []
+        if not keys:
+            return {'ok': False, 'rootmap_path': None,
+                    'error': 'nominal window %r has no selected_keys' % root}
+        input_hashes = {}
+        missing = []
+        for key in keys:
+            raw_path, portrait_path = input_paths(key, input_dir=INP)
+            rec = {}
+            if os.path.exists(raw_path):
+                rec['raw_sha256'] = sha256_file(raw_path)
+            else:
+                missing.append(key + '.raw.txt')
+            if os.path.exists(portrait_path):
+                rec['portrait_sha256'] = sha256_file(portrait_path)
+            else:
+                missing.append(key + '.portrait.json')
+            input_hashes[key] = rec
+        return {
+            'ok': True,
+            'root': root,
+            'safe_root': safe_name(root),
+            'nominal': True,
+            'rootmap_path': None,
+            'rootmap_sha256': None,
+            'root_keys': keys,
+            'selected_keys': keys,
+            'input_hashes': input_hashes,
+            'missing_inputs': missing,
+        }
     rootmap = rootmap_for(root)
     if not rootmap:
         return {'ok': False, 'rootmap_path': None, 'error': 'no rootmap for %r' % root}
@@ -58,7 +89,8 @@ def stale_check(root, workflow_meta, workflow_keys):
         selected_keys = None
     else:
         selected_keys = workflow_meta.get('selected_keys') or None
-    current = current_root_provenance(root, selected_keys)
+    nominal = bool((workflow_meta or {}).get('nominal'))
+    current = current_root_provenance(root, selected_keys, nominal=nominal)
     check['current'] = current
     if not current.get('ok'):
         check['ok'] = False
@@ -68,7 +100,7 @@ def stale_check(root, workflow_meta, workflow_keys):
 
     root_keys = current['root_keys']
     expected_keys = current['selected_keys']
-    if selected_keys:
+    if selected_keys and not nominal:
         invalid = sorted(set(selected_keys) - set(root_keys))
         if invalid:
             check['errors'].append('workflow selected keys not in current rootmap: %s' %
@@ -94,7 +126,7 @@ def stale_check(root, workflow_meta, workflow_keys):
         if workflow_meta.get('safe_root') and workflow_meta.get('safe_root') != safe_name(root):
             check['errors'].append('workflow safe_root %r != current safe_root %r' %
                                    (workflow_meta.get('safe_root'), safe_name(root)))
-        if workflow_meta.get('rootmap_sha256') != current['rootmap_sha256']:
+        if not nominal and workflow_meta.get('rootmap_sha256') != current['rootmap_sha256']:
             check['errors'].append('rootmap hash mismatch')
         workflow_hashes = workflow_meta.get('input_hashes') or {}
         for key in expected_keys:
@@ -120,15 +152,19 @@ def harness_matches_current_root(report):
     current = stale.get('current') or {}
     expected = current.get('selected_keys') or []
     meta = harness_meta()
-    if not root or not current.get('rootmap_sha256') or not expected:
+    nominal = bool((report.get('workflow_meta') or {}).get('nominal') or
+                   (stale.get('workflow_meta') or {}).get('nominal') or current.get('nominal'))
+    if not root or not expected:
+        return False, meta
+    if not nominal and not current.get('rootmap_sha256'):
         return False, meta
     if not meta.get('ok'):
         return False, meta
-    ok = (
-        meta.get('root') == root and
-        meta.get('rootmap_sha256') == current.get('rootmap_sha256') and
-        (meta.get('selected_keys') or []) == expected
-    )
+    ok = (meta.get('root') == root and (meta.get('selected_keys') or []) == expected)
+    if nominal:
+        ok = ok and bool((meta.get('meta') or {}).get('nominal'))
+    else:
+        ok = ok and meta.get('rootmap_sha256') == current.get('rootmap_sha256')
     if not ok:
         meta['scope_error'] = 'harness scope does not match current rootmap selection'
     return ok, meta
