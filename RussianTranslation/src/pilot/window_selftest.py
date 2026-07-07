@@ -2890,6 +2890,49 @@ def test_perf_preflight_cost_gate():
         fail('a fully-cached (zero-agent) window must never trip the cost gate')
 
 
+def test_launch_failure_ledger_complete():
+    """Launch failures must be classified with expected/actual economics before a
+    handoff closes; H220 must stay represented because that incident was previously
+    easier to find in .ai_state/RUN_LOG than in the narrative history."""
+    import check_launch_ledger as cl
+    entries = cl.load_ledger()
+    violations = cl.check_entries(entries)
+    if violations:
+        fail('launch failure ledger has violations: %r' % violations)
+    missing = cl.check_requested(entries, handoff='H220')
+    if missing:
+        fail('H220 must have a launch failure ledger entry: %r' % missing)
+
+
+def test_launch_failure_ledger_rejects_incomplete_entry():
+    """A ledger block that omits classification / metrics must fail loudly, so the
+    closeout ritual cannot silently decay into narrative-only notes."""
+    import check_launch_ledger as cl
+    bad = [{
+        'id': 'BAD',
+        'date': '2026-07-07',
+        'title': 'incomplete',
+        'lane': 'verb batch',
+        'model': 'claude-sonnet-5',
+        'orchestrator': 'Workflow',
+        'expected': {'agents': '1'},
+        'actual': {'agents': '2'},
+        'passes': 1,
+        'symptoms': 'nulls',
+        'root_cause': 'unknown',
+        'guardrail': 'none',
+        'residual_status': 'fixed',
+        'residual_risk': 'none',
+    }]
+    violations = cl.check_entries(bad)
+    if not any('classification' in v for v in violations):
+        fail('incomplete launch ledger entry must reject missing classification: %r' % violations)
+    if not any('expected.tokens' in v for v in violations):
+        fail('incomplete launch ledger entry must reject missing expected.tokens: %r' % violations)
+    if not any('actual.tokens' in v for v in violations):
+        fail('incomplete launch ledger entry must reject missing actual.tokens: %r' % violations)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -2934,6 +2977,8 @@ def main():
         test_budget_kill_switch_wired,
         test_harness_size_guard,
         test_perf_preflight_cost_gate,
+        test_launch_failure_ledger_complete,
+        test_launch_failure_ledger_rejects_incomplete_entry,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
         test_sense_dupe_batch_override,
