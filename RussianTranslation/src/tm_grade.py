@@ -70,6 +70,12 @@ T_B = 0.55   # composite floor for B
 CONSENSUS_MIN_REFS = 2      # A needs >=2 works ...
 CONSENSUS_MIN_AGREE = 0.50  # ... and >=50% of them agreeing on the modal rendering
 
+# H215 Slice 4: oral units start from a lower base. The composite score carries a
+# fixed penalty for the higher noise floor of live interpretation (translationese,
+# paraphrase, hesitation), and build_tmx.oral_cap additionally forbids A unless a
+# human adjudicated it. Versioned constant so the policy is auditable.
+ORAL_PENALTY = 0.15
+
 CYR_TOKEN = re.compile(r'[Ѐ-ӿ]+')
 LATIN = re.compile(r'[A-Za-zĀ-ſḀ-ỿ]')
 REJECT_RU = {'нет', 'неизвестно', '—', '-', '?', '...', '…'}
@@ -231,8 +237,11 @@ def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False,
     # the Slice-2 token-count proxy when supplied via `grade --align <sidecar>`.
     align = align_proxy(rec) if align_override is None else align_override
     n_refs, cons = consensus_signal(rec, consensus_idx)
+    modality = rec.get('modality') or 'written'
     score = (W['qe'] * qe + W['source'] * src
              + W['consensus'] * cons + W['align'] * align)
+    if modality == 'oral':
+        score = max(0.0, score - ORAL_PENALTY)   # lowered base for live interpretation
     corroborated = n_refs >= CONSENSUS_MIN_REFS and cons >= CONSENSUS_MIN_AGREE
     if adjudicated and qe > 0:
         grade = 'A'
@@ -242,11 +251,13 @@ def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False,
         grade = 'B'
     else:
         grade = 'C'
+    # oral never reaches A on automatic signals alone -- only human adjudication.
+    grade = build_tmx.oral_cap(grade, modality, adjudicated=adjudicated)
     return {'grade': grade, 'score': round(score, 4),
             'qe': round(qe, 4), 'source_weight': round(src, 4),
             'alignment_confidence': round(align, 4),
             'align_source': 'proxy' if align_override is None else 'tm_align',
-            'consensus': round(cons, 4), 'n_refs': n_refs}
+            'consensus': round(cons, 4), 'n_refs': n_refs, 'modality': modality}
 
 
 # ------------------------------------------------------------------------- cmds
@@ -418,7 +429,19 @@ def selftest():
     # adjudicated overlay forces A
     gAdj = grade_unit(runon, FIXTURE_WEIGHTS, qe_fn, {}, adjudicated=True)
     assert gAdj['grade'] == 'A', 'adjudicated unit should be A'
-    print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates')
+
+    # H215 Slice 4: an oral unit gets the lowered base -- same clean corroborated
+    # gloss that reaches A when written is capped at B when oral, and its composite
+    # carries the penalty; human adjudication still lifts it to A.
+    oral = dict(clean, modality='oral')
+    gOral = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx)
+    assert gA['grade'] == 'A' and gOral['grade'] == 'B', \
+        'oral corroborated gloss must cap at B, got %s (written was %s)' % (gOral['grade'], gA['grade'])
+    assert gOral['score'] < gA['score'], 'oral penalty must lower the composite'
+    assert gOral['modality'] == 'oral'
+    gOralAdj = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx, adjudicated=True)
+    assert gOralAdj['grade'] == 'A', 'human-adjudicated oral unit may reach A'
+    print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates, oral cap')
     return 0
 
 
