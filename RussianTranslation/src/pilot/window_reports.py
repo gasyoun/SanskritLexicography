@@ -428,8 +428,12 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
         with open(requeue_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(report['requeue']) + ('\n' if report['requeue'] else ''))
         # Split files so a cheap transient re-run never triggers expensive defect rework.
+        # requeue.defect.fshas.txt (H304): the defect cards' frag_prov content addresses —
+        # requeue_from_audit appends these to the TM denylist so the fragment sidecar can
+        # never re-serve a gate-flagged fragment.
         for fname, keys_ in (('requeue.transient.keys.txt', report.get('requeue_transient')),
-                             ('requeue.defect.keys.txt', report.get('requeue_defect'))):
+                             ('requeue.defect.keys.txt', report.get('requeue_defect')),
+                             ('requeue.defect.fshas.txt', report.get('requeue_defect_fshas'))):
             if keys_ is None:
                 continue
             with open(os.path.join(out_dir, fname), 'w', encoding='utf-8') as f:

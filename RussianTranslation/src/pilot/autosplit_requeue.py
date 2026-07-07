@@ -236,15 +236,28 @@ def missing_file_path(lang, root):
     return os.path.join(HERE, 'output', 'autosplit_missing_%s_%s.json' % (lang, safe_name(root)))
 
 
-def frag_groups(raw):
+def frag_groups(raw, meta=None, key=None):
     """Reconstruct the EXACT selfHeal fragment-group partition gen_opt_harness2 builds for a
     card, so a 'gN:fM' missing-fragment id maps back to a plan() fragment. Returns
     [[(si, pi, text), ...], ...] — groups in document order, the same partition as FRAGS[k].
     Lazy-imports the harness grouper (a) to stay byte-identical to the producer of the ids and
-    (b) to avoid the autosplit<->harness circular import at module load."""
-    from gen_opt_harness2 import _group_by_budget, SELFHEAL_GROUP_BUDGET
+    (b) to avoid the autosplit<->harness circular import at module load.
+
+    H304: the harness groups a PRESPLIT card at PRESPLIT_GROUP_CITE_BUDGET with a sense
+    count_cap (H189 re-batching), not at SELFHEAL_GROUP_BUDGET — so reconstructing every card
+    with the heal budget mis-maps gN:fM ids for exactly the giant cards topup exists for.
+    Pass the wf_output `meta` + the card's `key`: the lane and its budgets are read from the
+    run that MINTED the ids (falling back to current constants for older metas)."""
+    from gen_opt_harness2 import (_group_by_budget, SELFHEAL_GROUP_BUDGET,
+                                  PRESPLIT_GROUP_CITE_BUDGET, PRESPLIT_GROUP_SENSE_CAP)
     pl = plan(raw)
-    return _group_by_budget(pl, lambda f: 1 + f[2].count('<ls'), SELFHEAL_GROUP_BUDGET)
+    meta = meta or {}
+    if key is not None and key in (meta.get('presplit_keys') or []):
+        cite = meta.get('presplit_group_cite_budget') or PRESPLIT_GROUP_CITE_BUDGET
+        cap = meta.get('presplit_group_sense_cap') or PRESPLIT_GROUP_SENSE_CAP
+        return _group_by_budget(pl, lambda f: 1 + f[2].count('<ls'), cite, count_cap=cap)
+    heal = meta.get('selfheal_group_budget') or SELFHEAL_GROUP_BUDGET
+    return _group_by_budget(pl, lambda f: 1 + f[2].count('<ls'), heal)
 
 
 def resolve_frag_ids(groups, missing_fragments):
@@ -277,6 +290,7 @@ def topup_fragments(wf_file, lang):
     if isinstance(res, str):
         res = json.loads(res)
     frag_cache = load_frag_tm(lang)
+    wf_meta = res.get('meta') or {}
     cards = []
     for r in res.get('results') or []:
         card = (r or {}).get('card')
@@ -288,7 +302,7 @@ def topup_fragments(wf_file, lang):
             if fp.get('fsha') and fp.get('senses'):
                 resolved.setdefault(fp['fsha'], fp['senses'])
         raw = read_text(input_paths(orig)[0])
-        groups = frag_groups(raw)
+        groups = frag_groups(raw, meta=wf_meta, key=orig)
         missing = resolve_frag_ids(groups, card['missing_fragments'])
         missing_set = {(si, pi) for si, pi, _ in missing}
         planrows, unresolvable = [], []

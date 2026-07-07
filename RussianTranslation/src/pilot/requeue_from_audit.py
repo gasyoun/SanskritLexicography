@@ -60,10 +60,16 @@ def read_requeue(path):
     return keys
 
 
-def append_tm_denylist(root, keys, which, lang='ru'):
-    """Invalidate exact card-TM addresses for defect/all requeues. Append-only and local-only."""
+def append_tm_denylist(root, keys, which, lang='ru', fsha_file=None):
+    """Invalidate exact card-TM addresses for defect/all requeues. Append-only and local-only.
+
+    H304: also invalidate the flagged cards' FRAGMENT addresses. build_frags harvests
+    frag_prov from raw wf_output before any gate runs, so without this a defect card's
+    fragments stay reusable in the sidecar and --tm=auto re-serves the flagged content on
+    the next window that shares a fragment. audit_window writes the fshas to
+    requeue.defect.fshas.txt next to the requeue key files."""
     if which == 'transient':
-        return 0
+        return 0, 0
     path = translation_memory.denylist_path()
     now = datetime.datetime.now(datetime.timezone.utc).isoformat(
         timespec='seconds').replace('+00:00', 'Z')
@@ -79,7 +85,19 @@ def append_tm_denylist(root, keys, which, lang='ru'):
                                 'root': root, 'lang': lang, 'reason': 'requeue_%s' % which,
                                 'blocked_at': now}, ensure_ascii=False) + '\n')
             n += 1
-    return n
+    nf = 0
+    fp = fsha_file or os.path.join(OUT, 'requeue.defect.fshas.txt')
+    if os.path.exists(fp):
+        fshas = [ln.strip() for ln in open(fp, encoding='utf-8') if ln.strip()]
+        with open(path, 'a', encoding='utf-8') as f:
+            for fsha in fshas:
+                f.write(json.dumps({'schema': 'pwg.translation_memory.denylist.v1',
+                                    'kind': 'frag', 'fsha': fsha,
+                                    'root': root, 'lang': lang,
+                                    'reason': 'requeue_%s_fragment' % which,
+                                    'blocked_at': now}, ensure_ascii=False) + '\n')
+                nf += 1
+    return n, nf
 
 
 def main():
@@ -124,7 +142,13 @@ def main():
         for k in invalid:
             print('  ' + k)
         sys.exit(1)
-    denied = append_tm_denylist(root, resolved, which, lang=lang)
+    fsha_file = None
+    if args.requeue_file:
+        cand = os.path.join(os.path.dirname(os.path.abspath(args.requeue_file)),
+                            'requeue.defect.fshas.txt')
+        fsha_file = cand if os.path.exists(cand) else None
+    denied, denied_frags = append_tm_denylist(root, resolved, which, lang=lang,
+                                              fsha_file=fsha_file)
 
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
@@ -153,6 +177,8 @@ def main():
     print('requeue keys      : %d' % len(resolved))
     if denied:
         print('tm denylist       : +%d card address(es)' % denied)
+    if denied_frags:
+        print('tm denylist       : +%d fragment fsha(s)' % denied_frags)
     print('generated harness : %s' % harness)
     print('keys:')
     for k in resolved:
