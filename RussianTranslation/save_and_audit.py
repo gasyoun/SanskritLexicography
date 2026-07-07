@@ -122,7 +122,7 @@ def main():
     if not os.path.exists(audit):
         print(f"({os.path.basename(audit)} not found — saved only)")
         return
-    p = subprocess.run(cmd, text=True, encoding="utf-8")
+    p = subprocess.run(cmd, text=True, encoding="utf-8", timeout=1800)
 
     # RU path: also run the anti-silent-partial coverage gate for this root (FL3). Advisory
     # (--warn-only) because it reads the promoted store (pwg_ru_translated.jsonl), which this
@@ -134,7 +134,7 @@ def main():
         if os.path.exists(cov):
             print("\n=== RU coverage (advisory, current store) ===")
             subprocess.run([sys.executable, cov, "--root", root, "--warn-only"],
-                           text=True, encoding="utf-8")
+                           text=True, encoding="utf-8", timeout=1800)
     sys.exit(p.returncode)
 
 

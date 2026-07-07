@@ -3126,6 +3126,82 @@ def test_coordinator_cost_gate_enforced():
         co.defer_monster = old
 
 
+def test_pwg_mask_bom_source_keeps_first_record():
+    """Hardening (H316; FL6 / CODE_REVIEW 2026-07-04): a UTF-8 BOM on the PWG
+    source used to leave the first line as BOM+'<L>...', which
+    startswith('<L>') misses -- the FIRST record of the dictionary was silently
+    dropped. records() now reads utf-8-sig (a no-op on BOM-less files).
+    SHARED (stage-0 masking, before any --lang branch)."""
+    import tempfile
+    import pwg_mask
+    body = ('<L>1<pc>1,1<k1>agni<k2>agni\nFeuer\n<LEND>\n'
+            '<L>2<pc>1,1<k1>ap<k2>ap\nWasser\n<LEND>\n')
+    for bom, label in ((b'\xef\xbb\xbf', 'BOM'), (b'', 'no-BOM')):
+        tf = tempfile.NamedTemporaryFile('wb', suffix='.txt', delete=False)
+        tf.write(bom + body.encode('utf-8'))
+        tf.close()
+        old = pwg_mask.PWG
+        pwg_mask.PWG = tf.name
+        try:
+            recs = list(pwg_mask.records())
+        finally:
+            pwg_mask.PWG = old
+            os.unlink(tf.name)
+        if len(recs) != 2:
+            fail('%s source: expected 2 records, got %d' % (label, len(recs)))
+        if not recs[0][0].startswith('<L>1'):
+            fail('%s source: first record dropped/mangled: %r' % (label, recs[0][0]))
+
+
+def test_pwg_mask_truncated_final_record_not_silent():
+    """Hardening (H316): a final record opened with <L> but never closed by
+    <LEND> (truncated source) must not be yielded downstream -- but it must not
+    vanish silently either: records() warns on stderr."""
+    import contextlib
+    import io
+    import tempfile
+    import pwg_mask
+    body = ('<L>1<pc>1,1<k1>agni<k2>agni\nFeuer\n<LEND>\n'
+            '<L>2<pc>1,1<k1>ap<k2>ap\nWasser\n')  # no closing <LEND>
+    tf = tempfile.NamedTemporaryFile('w', suffix='.txt', delete=False, encoding='utf-8')
+    tf.write(body)
+    tf.close()
+    old = pwg_mask.PWG
+    pwg_mask.PWG = tf.name
+    err = io.StringIO()
+    try:
+        with contextlib.redirect_stderr(err):
+            recs = list(pwg_mask.records())
+    finally:
+        pwg_mask.PWG = old
+        os.unlink(tf.name)
+    if len(recs) != 1:
+        fail('truncated source: expected 1 complete record, got %d' % len(recs))
+    if 'truncated final record' not in err.getvalue():
+        fail('truncated final record dropped SILENTLY -- warning missing')
+
+
+def test_subprocess_gate_calls_hardened():
+    """Hardening (H316): Windows cp1252 pitfall + hang guard. Gate/driver
+    subprocess.run calls that capture child output must pass encoding='utf-8';
+    shell-outs wrapping potentially long children must carry a timeout. Static
+    wiring pin so a refactor cannot silently regress either."""
+    checks = [
+        (os.path.join(SRC, 'make_edition_cut.py'), "encoding='utf-8'"),
+        (os.path.join(SRC, 'preflight_remaining_gates.py'), "encoding='utf-8'"),
+        (os.path.join(SRC, 'release_readiness.py'), "encoding='utf-8'"),
+        (os.path.normpath(os.path.join(SRC, '..', 'save_and_audit.py')), 'timeout=1800'),
+        (os.path.join(HERE, 'audit_window.py'), 'timeout=1800'),
+        (os.path.join(HERE, 'autosplit_requeue.py'), 'timeout=600'),
+    ]
+    for path, needle in checks:
+        with open(path, encoding='utf-8') as f:
+            src_txt = f.read()
+        if 'subprocess.run' in src_txt and needle not in src_txt:
+            fail('%s: expected %r on its subprocess.run call(s)'
+                 % (os.path.basename(path), needle))
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -3219,6 +3295,9 @@ def main():
         test_save_merge_better_attempt_wins,
         test_defer_monster_ledger_dedupes,
         test_coordinator_cost_gate_enforced,
+        test_pwg_mask_bom_source_keeps_first_record,
+        test_pwg_mask_truncated_final_record_not_silent,
+        test_subprocess_gate_calls_hardened,
     ]
     for test in tests:
         test()

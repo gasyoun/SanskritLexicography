@@ -427,7 +427,8 @@ def cmd_topup(root, lang, wf_file):
     out = os.path.join(HERE, 'run_pilot_wf.%s_%s_topup.js' % (lang, safe_name(root)))
     subprocess.run([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root,
                     '--nominal', '--no-grammar', '--lang=%s' % lang,
-                    '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out], check=True)
+                    '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out],
+                   check=True, timeout=600)
     data = open(out, 'rb').read().replace(b'\r\n', b'\n').replace(b'\r', b'\n')  # LF for Workflow
     open(out, 'wb').write(data)
     total = sum(len(c['plan']) for c in cards)
@@ -512,7 +513,8 @@ def cmd_gen(root, lang, keys):
     # lookup can't key on; the fragment header already carries prefix/root context.
     subprocess.run([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root,
                     '--nominal', '--no-grammar', '--lang=%s' % lang,
-                    '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out], check=True)
+                    '--keys=' + ','.join(fragkeys), '--budget=1', '--out=' + out],
+                   check=True, timeout=600)
     data = open(out, 'rb').read().replace(b'\r\n', b'\n').replace(b'\r', b'\n')  # LF for Workflow
     open(out, 'wb').write(data)
     print('\n%d fragment(s) from %d card(s); manifest %s' % (len(fragkeys), len(keys), mpath))

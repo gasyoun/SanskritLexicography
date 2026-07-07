@@ -62,7 +62,7 @@ PROTECTED = {'aMSa', 'anna', 'ap'}
 def run_py(args, env=None):
     t0 = time.perf_counter()
     p = subprocess.run([sys.executable] + args, cwd=SRC, capture_output=True,
-                       text=True, encoding='utf-8', env=env)
+                       text=True, encoding='utf-8', env=env, timeout=1800)
     return {'argv': [sys.executable] + args, 'returncode': p.returncode,
             'stdout': p.stdout, 'stderr': p.stderr,
             'seconds': round(time.perf_counter() - t0, 3)}

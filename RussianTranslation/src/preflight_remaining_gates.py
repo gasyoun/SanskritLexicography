@@ -28,7 +28,8 @@ G10 = 'G10_immutable_edition_cut'
 
 
 def run(label, cmd, ok_codes=(0,)):
-    r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=180)
+    r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True,
+                       encoding='utf-8', timeout=180)
     status = 'ok' if r.returncode in ok_codes else 'fail'
     detail = (r.stdout.strip() or r.stderr.strip()).splitlines()
     return label, status, detail[-1] if detail else ''

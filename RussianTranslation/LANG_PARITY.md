@@ -81,8 +81,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Code review 2026-07-04: <ab>lat.</ab>/<ab>griech.</ab> cues are masked to {Tn} in mask() step 1 BEFORE classify_pct runs, so the end-anchored LATIN_CUE regex matched the placeholder, not the cue; measured 33 Latin/Greek cognate glosses across all of PWG (e.g. ignis, uncus, ansa after `lat.`) were being sent for German translation and leaked verbatim into the translator prompt. Fix expands trailing placeholders back to source and strips tags in the classify context window. Masking is stage-0 and runs before any --lang branch, so the fix is identical for RU and EN. Round-trip stays lossless. Pinned by window_selftest.test_pwg_mask_latin_cue_behind_ab_tag.",
     "tracking": "",
     "verified_sha256": {
-      "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -279,7 +279,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
-      "src/pilot/audit_window.py": "0a2256245f35ef9468d722e8bd7c7714586f8186178d32abcc92e6d71facf440",
+      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
@@ -298,7 +298,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
     "tracking": "Uprava/handoffs/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "0a2256245f35ef9468d722e8bd7c7714586f8186178d32abcc92e6d71facf440",
+      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
       "src/pilot/window_reports.py": "1649a33f3cf65fdd9f770cd1f05bb84d3eccdbc8369132ee3a1800c0ea62a72e",
       "src/pilot/requeue_from_audit.py": "a315cd02276908ffdcc64f09d226798865885a7eea47ca60681a256a240d6272"
     }
@@ -355,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -374,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   },
   {
@@ -471,7 +471,38 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+    }
+  },
+  {
+    "id": "subprocess_and_bom_hardening_h316",
+    "mechanism": "pwg_mask.records() reads utf-8-sig (BOM on the PWG source no longer drops the FIRST record) and warns loudly on a truncated final record instead of silently dropping it; every gate/driver subprocess.run that captures child output passes encoding='utf-8' (Windows cp1252 pitfall); save_and_audit/audit_window/autosplit_requeue shell-outs carry timeouts so a wedged child cannot hang the driver",
+    "files": [
+      "src/pwg_mask.py",
+      "src/make_edition_cut.py",
+      "src/preflight_remaining_gates.py",
+      "src/release_readiness.py",
+      "save_and_audit.py",
+      "src/pilot/audit_window.py",
+      "src/pilot/autosplit_requeue.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H316 code-hardening pass (2026-07-07). All fixes sit below the --lang branch: stage-0 masking (records feeds both RU and EN lanes), gate shell-out plumbing, and hang guards are language-agnostic by construction. Pinned by test_pwg_mask_bom_source_keeps_first_record, test_pwg_mask_truncated_final_record_not_silent, and the static wiring pin test_subprocess_gate_calls_hardened.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
+      "src/make_edition_cut.py": "5a24d8c96611f50f008689609f8140ef47b02731524dbc255438426b36d306fd",
+      "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
+      "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
+      "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
+      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
+      "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
+      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
     }
   }
 ]
