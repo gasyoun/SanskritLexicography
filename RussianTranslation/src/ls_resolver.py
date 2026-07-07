@@ -15,6 +15,33 @@ where `key` is computed internally via extractFirstKey (as the Dart caller does)
 import re
 import sys
 
+# Swallowed-exception surface. The two pattern-engine try/except blocks below
+# used to `except Exception: pass` — a malformed regex/template silently
+# produced a dead link with no trace. Route them through here instead so a
+# resolver failure is at least visible on stderr (the caller's control flow —
+# fall through to the next pattern / return '' — is unchanged; this only makes
+# the failure observable). Set LS_RESOLVER_QUIET=1 to silence in bulk runs.
+import os as _os
+
+
+def _warn_swallowed(where, exc, data1):
+    if _os.environ.get('LS_RESOLVER_QUIET'):
+        return
+    sys.stderr.write('ls_resolver: %s swallowed %s: %s (data1=%r)\n'
+                     % (where, type(exc).__name__, exc, data1))
+
+
+def _is_rv_prefix(key):
+    """True iff the leading citation abbreviation is the Ṛgveda (ṚV/RV), so a
+    rvAvHymnUrl citation routes to rv-, else av-. ANCHORED on the abbreviation
+    prefix (startswith), NOT a bare containment test: matching the rv/ṛ
+    characters anywhere mis-routed any citation that merely CONTAINS them
+    (parv., gṛ., kṛ., …) to Ṛgveda. AV and everything else fall through to the
+    av default."""
+    kl = (key or '').lower()
+    return kl.startswith('ṛv') or kl.startswith('rv')
+
+
 # ---------------------------------------------------------------------------
 # Roman numeral helpers  (LsService.romanInt / romanInt20)
 # ---------------------------------------------------------------------------
@@ -962,8 +989,8 @@ def _evaluate_conditional(expr: str, match):
             for i in range(1, match.re.groups + 1):
                 result_url = result_url.replace('$' + str(i), match.group(i) or '')
             return result_url
-    except Exception:
-        pass
+    except Exception as exc:
+        _warn_swallowed('_evaluate_conditional', exc, expr)
     return ''
 
 
@@ -992,16 +1019,10 @@ def _generate_href_from_patterns(dict_code: str, data1: str):
 
                 # Special URL generators reachable from pwg list.
                 if url == 'rvAvHymnUrl':
-                    key = extract_first_key(data1)
-                    kl = (key or '').lower()
-                    is_rv = ('rv' in kl) or ('ṛ' in kl) or kl.startswith('ṛ')
-                    pfx = 'rv' if is_rv else 'av'
+                    pfx = 'rv' if _is_rv_prefix(extract_first_key(data1)) else 'av'
                     return href_rv_av(pfx, data1, dict_code)
                 elif url == 'rvAvHymnUrl2':
-                    key = extract_first_key(data1)
-                    kl = (key or '').lower()
-                    is_rv = ('rv' in kl) or ('ṛ' in kl) or kl.startswith('ṛ')
-                    pfx = 'rv' if is_rv else 'av'
+                    pfx = 'rv' if _is_rv_prefix(extract_first_key(data1)) else 'av'
                     return href_rv_av2(pfx, data1, dict_code)
                 elif url == 'ramayanaUrl':
                     return href_ramayana(data1, dict_code)
@@ -1043,8 +1064,8 @@ def _generate_href_from_patterns(dict_code: str, data1: str):
 
                 if url:
                     return url
-        except Exception:
-            pass
+        except Exception as exc:
+            _warn_swallowed('_generate_href_from_patterns', exc, data1)
     return None
 
 

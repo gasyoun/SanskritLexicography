@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -207,7 +207,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "7067832e30e9e0c93b43fd010a90758335d605ce1bd25ca431c2121d205472c9"
+      "src/pilot/translation_memory.py": "38c404a4d88c4ea0d34617721edc6725423c70250b49e91b40d93008cdcbdfba"
     }
   },
   {
@@ -355,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -374,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -471,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   },
   {
@@ -502,7 +502,63 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
       "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
       "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
-      "src/pilot/window_selftest.py": "a26f2d2a85f4bb6a40cb51bfe1593d1e76772b2aee3c2300a22af82929f23a12"
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+    }
+  },
+  {
+    "id": "frag_tm_fidelity_gate_h321",
+    "mechanism": "build_frags refuses a corrupt/blanked frag_prov (frag_senses_sane) instead of first-seen-wins caching it, load_frag_tm applies the same fidelity filter at serve, and a later GOOD harvest of an fsha whose only cached rows are corrupt can override them",
+    "files": [
+      "src/pilot/translation_memory.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H321 (code review 2026-07-04 item #3b): the fragment sidecar is content-addressed on the fragment SOURCE and was harvested append-only first-seen-wins with NO fidelity check, so a hand-edited/corrupt wf_output*.json (blanked or malformed senses) permanently poisoned reuse and a later good harvest of the same fsha could never override it. frag_senses_sane(senses, lang) keys on the CARD-shaped translation field ('russian'/'english') and is applied at BOTH harvest (never cache garbage; a cached-corrupt fsha maps to False so a good row overrides it) and serve (load_frag_tm drops any corrupt historical row). Entirely lang-agnostic — lang is a first-class parameter of frag_address/frag_senses_sane/load_frag_tm/build_frags, no RU/EN branch. Pinned by test_frag_tm_fidelity_gate_and_override. Extends translation_memory_card_and_fragment.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/translation_memory.py": "38c404a4d88c4ea0d34617721edc6725423c70250b49e91b40d93008cdcbdfba",
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+    }
+  },
+  {
+    "id": "corpus_gate_evidence_markers_fl7_h321",
+    "mechanism": "corpus_gate.build_card marks evidence_status (evidence_unavailable when NO independent Sanskrit-Russian authority is loaded) and corpus_status (db_absent / db_error / skipped_short_term / ok), so a missing source or a DB failure is no longer indistinguishable from a genuinely uncovered headword degrading silently to the LLM verdict",
+    "files": [
+      "src/corpus_gate.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H321 (architecture audit FL7 / code review 2026-07-04 item #4). corpus_gate.py is the RU-only stage-4 correctness gate: it joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович) and the SamudraManthanam RU-aligned verse corpus. The EN pilot has no analogous corpus gate (no Sanskrit-English authority set is wired here), so this fix is inherently Russian-only — an INTENTIONAL-DIVERGENCE, not a GAP to port. The marker mechanism (SOURCES_PRESENT / evidence_status() / corpus_examples_with_status) would generalize if an EN correctness gate is ever built; revisit then. Pinned by test_corpus_gate_evidence_and_db_markers.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/corpus_gate.py": "2257f04cdca96b2aea51cd6d097358c43109977e1847d39ff59476cc5cf50863",
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+    }
+  },
+  {
+    "id": "ls_resolver_rv_av_anchor_h321",
+    "mechanism": "ls_resolver Ṛgveda/Atharva hymn-URL disambiguation is anchored on the leading citation abbreviation (_is_rv_prefix: startswith ṛv/rv) instead of a bare substring containment that mis-routed any citation merely containing rv/ṛ (parv., gṛ., kṛ.) to the RV scans; the two pattern-engine swallowed-exception sites now surface via _warn_swallowed",
+    "files": [
+      "src/ls_resolver.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H321 (code review 2026-07-04 item #5). ls_resolver resolves an <ls> citation to a scan/hymns URL independent of the translation language (it keys on the citation abbreviation + numbers, never on RU/EN prose), so both language editions' link-targets share it. The anchored _is_rv_prefix and the _warn_swallowed exception surfacing are pure link-resolution correctness, no lang branch. Pinned by test_ls_resolver_rv_av_anchored.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
+      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
   }
 ]

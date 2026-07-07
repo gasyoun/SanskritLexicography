@@ -1,6 +1,6 @@
 # Code review — pwg_ru pipeline (2026-07-04)
 
-_Created: 04-07-2026 · Last updated: 04-07-2026_
+_Created: 04-07-2026 · Last updated: 07-07-2026_
 
 Full-tree review of `RussianTranslation/src` (34,668 LOC, ~90 Python files) by
 five parallel reviewers (Opus 4.8, `claude-opus-4-8`), each scoped to one
@@ -33,10 +33,26 @@ defects below (real `DUP` hard flag + RU-gate verdict-parse guard).
 
 ---
 
+## ✅ Resolved in H321 (2026-07-07, Opus 4.8 `claude-opus-4-8`, [PR to master](https://github.com/gasyoun/SanskritLexicography/pulls))
+
+The [H321 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H321-Opus_RussianTranslation_pwg-ru-correctness-backlog_07.07.26.md) worked the open 🔴/🟡 items below. Several were already closed by intervening PRs (verified against current `master`); the rest were fixed or measured this pass. Each fix lands behind a `window_selftest.py` pin + a [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) ledger entry.
+
+| Item | Disposition |
+|---|---|
+| 🔴 Positional card misassignment (`resolveGroup`/`healGroup`) | **Already fixed** — `resolveGroup` matches on `byKey1(res.cards)` only (`missing-or-mismatched-key` on miss, never positional); `healGroup`'s `exactCard` positional fallback requires the candidate to echo the exact key. Pinned by `test_generated_harness_strict_key_matching` (present on `master`). Verified, no change needed. |
+| 🔴 `tm_card_sane` zero-`<ls>` bypass | **Already fixed** in [PR #175](https://github.com/gasyoun/SanskritLexicography/pull/175) — the guard now compares `<ls>`/`{#` against the source count unconditionally (no `if ls and …`). Pinned by `test_tm_card_sane_rejects_zero_marker_drift`. Verified. |
+| 🟡 Whole card dropped on one blank sense (`translation_memory.py:265`) | **Deliberate NO-CHANGE (measured):** 0/2313 sub-cards in the live 11,261-row store carry a blank non-partial sense — zero incidence. Caching a blank-sense card is also unsafe: `tm_card_sane` refuses it at serve, so it would churn or force serving incomplete output. Kept as-is; a code comment now records this. |
+| 🟡 Partial card content-addressed as exact hit (`:1204`) | **Already fixed** — `reconstruct_cards` excludes `partial_card`/`missing_fragments`/`missing_groups` from the exact TM (pinned by `translation_memory.selftest` `skipped['partial-card']`). Verified. |
+| 🟡 `frag_prov` first-seen, no fidelity (`:481`) | **Fixed (H321)** — `frag_senses_sane` gates harvest AND serve; a corrupt/blanked `wf_output` is refused, and a later good harvest overrides a previously-cached corrupt row. Pinned by `test_frag_tm_fidelity_gate_and_override`; ledger `frag_tm_fidelity_gate_h321`. |
+| 🟡 `ls_resolver` RV/AV substring + bare `except: pass` | **Fixed (H321)** — anchored `_is_rv_prefix` (startswith), and both swallowed excepts surface via `_warn_swallowed`. Pinned by `test_ls_resolver_rv_av_anchored`; ledger `ls_resolver_rv_av_anchor_h321`. |
+| FL7 corpus-gate silent evidence degradation | **Fixed (H321)** — `build_card` marks `evidence_status` (`evidence_unavailable`) + `corpus_status` (`db_absent`/`db_error`/`skipped_short_term`/`ok`). Pinned by `test_corpus_gate_evidence_and_db_markers`; ledger `corpus_gate_evidence_markers_fl7_h321` (INTENTIONAL-DIVERGENCE, RU-only gate). |
+
+Not in H321 scope (still open): the 🟠 broken-validator items, `supersedes` string-iteration (latent), `degenerate_passthrough` German-in-RU, and the 🟡 data-builder items below.
+
 ## 🔴 Backlog — correctness (wrong output under a headword)
 
-- **Positional card misassignment** — [gen_opt_harness2.py:1259](src/pilot/gen_opt_harness2.py) (`resolveGroup`) and `healGroup` :1098. When the model drops/reorders a card, the `res.cards[i]` positional fallback assigns content to the wrong `key`. The `<ls>/{#`-count fidelity guard is **blind for zero-marker cross-ref stubs**, so two such cards can swap silently → Russian under the wrong Sanskrit headword. *Fix needs care (JS-in-Python harness); add a hard key-agreement assertion or drop-to-fragment-lane when `byKey1` misses instead of positional fallback.*
-- **`tm_card_sane` zero-`<ls>` guard bypass** — [gen_opt_harness2.py:585](src/pilot/gen_opt_harness2.py). `if ls and ls != raw.count('<ls')` short-circuits when the cached card has zero `<ls>`, so a citation-stripped/degraded cached card is served verbatim, dropping every citation. *Fix: check `ls is not None` / compare against source count unconditionally.*
+- ✅ **Positional card misassignment** — see the H321 table above (already fixed; verified). ~~[gen_opt_harness2.py:1259](src/pilot/gen_opt_harness2.py) (`resolveGroup`) and `healGroup` :1098. When the model drops/reorders a card, the `res.cards[i]` positional fallback assigns content to the wrong `key`.~~
+- ✅ **`tm_card_sane` zero-`<ls>` guard bypass** — see the H321 table above (fixed in PR #175). ~~[gen_opt_harness2.py:585](src/pilot/gen_opt_harness2.py).~~
 
 ## 🟠 Backlog — broken validators (green light on defective output)
 
@@ -45,10 +61,10 @@ defects below (real `DUP` hard flag + RU-gate verdict-parse guard).
 
 ## 🟡 Backlog — TM reuse & quality
 
-- **Whole card dropped from cache on one empty sense** — [translation_memory.py:265](src/pilot/translation_memory.py). One legitimately-blank xref sense → giant card re-translated every run. *Fix: cache per-sense / tolerate blank pass-through senses.*
-- **Partial/incomplete card content-addressed as an exact hit** (SUSPECTED, depends on save path) — [gen_opt_harness2.py:1204](src/pilot/gen_opt_harness2.py) + `reconstruct_cards`. A future byte-identical run serves an incomplete card with zero agents. *Fix: exclude `partial:true` cards from the exact card-TM.*
-- **`supersedes` string→char-iteration** — [translation_memory.py:190](src/pilot/translation_memory.py). Iterates a string SHA character-by-character, defeating supersession. **Latent** (0 store rows carry a string `supersedes` today — verified), but the TM is now a published schema; *coerce to list defensively.*
-- **`frag_prov` senses harvested with no fidelity check, first-seen-wins** — [translation_memory.py:481](src/pilot/translation_memory.py). A hand-edited/corrupt `wf_output*.json` permanently poisons the fragment TM. *Fix: validate `<ls>/{#` counts before caching; allow later-good override.*
+- ✅ **Whole card dropped from cache on one empty sense** — [translation_memory.py:265](src/pilot/translation_memory.py). H321: deliberate NO-CHANGE (0/2313 incidence measured; unsafe — see the H321 table above).
+- ✅ **Partial/incomplete card content-addressed as an exact hit** — already fixed: `reconstruct_cards` excludes `partial:true`/`missing_*` (see the H321 table above).
+- **`supersedes` string→char-iteration** — [translation_memory.py:190](src/pilot/translation_memory.py). Iterates a string SHA character-by-character, defeating supersession. **Latent** (0 store rows carry a string `supersedes` today — verified), but the TM is now a published schema; *coerce to list defensively.* (Still open — not in H321 scope.)
+- ✅ **`frag_prov` senses harvested with no fidelity check, first-seen-wins** — [translation_memory.py:481](src/pilot/translation_memory.py). H321: fixed (`frag_senses_sane` at harvest+serve, later-good override) — see the H321 table above.
 - **`degenerate_passthrough` can emit German as the Russian field** — [gen_opt_harness2.py:519](src/pilot/gen_opt_harness2.py). A borderline stub bypasses the LLM with German copied into the RU field, no downstream gate. *Fix: tighten the allowlist / gate passthrough rows.*
 
 ## 🟡 Backlog — data builders (correctness)
@@ -57,7 +73,7 @@ defects below (real `DUP` hard flag + RU-gate verdict-parse guard).
 - **Silent lemma loss on genre join-key miss** — [build_dcs_freq_dims.py:133](src/build_dcs_freq_dims.py). A text whose name doesn't normalize-match gets zero genre attribution, indistinguishable from the intended register-less tail. *Fix: log unmatched `text_id`s.*
 - **Homograph Ru-gloss attribution is winner-take-all + nondeterministic tie order** — [build_rollup_glossaries.py:60](research/… → src/build_rollup_glossaries.py) `most_common` sorts by count only; equal-count lemmas ordered by file order. *Fix: stable tiebreak; split near-tied distributions.*
 - **Citation index dedup semantics disagree across two code paths** — [build_citation_index.py:136](src/build_citation_index.py) vs `occurrence_stats()`; `CITATION_SOURCES.md` and `UNCOVERED_SOURCES.md` can disagree on coverage. *Fix: single source of truth for coverage.*
-- **`ls_resolver` Ṛgveda/Atharva disambiguation is substring-based** — [ls_resolver.py:996](src/ls_resolver.py) `'rv' in kl or 'ṛ' in kl` mis-routes e.g. `ṚV. PRĀTIŚ.`. Bare `except: pass` at :1046/:965 hides resolver failures. *Fix: anchored match; surface exceptions.*
+- ✅ **`ls_resolver` Ṛgveda/Atharva disambiguation is substring-based** — [ls_resolver.py](src/ls_resolver.py). H321: fixed (anchored `_is_rv_prefix`; bare excepts now surface via `_warn_swallowed`) — see the H321 table above.
 
 ## ⚡ Backlog — performance
 
