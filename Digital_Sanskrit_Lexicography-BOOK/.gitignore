@@ -1,0 +1,10 @@
+# This is a sideproject planning folder (Brill monograph build plan), not an active
+# development area. Keep it quiet: only the plan doc and session-state/changelog scaffolding
+# are tracked; anything else dropped here (drafts, scratch notes, exports) stays local unless
+# explicitly added to the allowlist below.
+*
+!.gitignore
+!BOOK_PLAN.md
+!CHANGELOG.md
+!.ai_state.md
+!*/
