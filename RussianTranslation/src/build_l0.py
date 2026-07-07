@@ -146,6 +146,13 @@ def units_for_group(group, d, work, strata, with_comm=True):
         return
     st = strata.get(work, {})
     passage = sa.get('passage', '') or ''
+    # H215 Slice 4: oral provenance. The verse-anchoring Sanskrit segment carries the
+    # modality + media (a whole recording is one modality); time anchors can differ
+    # per segment (the Russian cue may span a different window), so they're read from
+    # the emitting seg with a fallback to the Sanskrit anchor. Written sources omit
+    # all of these -> modality defaults 'written', anchors stay absent (unchanged TMX).
+    modality = (sa.get('modality') or 'written')
+    source_media = sa.get('source_media')
     base = {'work': work, 'group': group,
             'genre': st.get('genre'), 'period': st.get('period'),
             'date': st.get('date_median')}
@@ -158,13 +165,27 @@ def units_for_group(group, d, work, strata, with_comm=True):
         if not has_cyr(ru):            # untranslated placeholder -> never emit
             return None
         toks = sa_tokens(sa_slp1)
-        return {**base, 'l0id': l0id(group, seg), 'seg': seg, 'kind': kind,
-                'passage': rec.get('passage', passage) or passage,
-                'sa': sa_iast, 'slp1': sa_slp1, 'ru': ru,
-                'n_sa_tok': len(toks),
-                'n_ru_tok': len(re.findall(r'[Ѐ-ӿ]+', ru)),
-                'speaker_sa': (sa.get('author') or '').strip() or None,
-                'speaker_ru': (rec.get('author') or '').strip() or None}
+        out = {**base, 'l0id': l0id(group, seg), 'seg': seg, 'kind': kind,
+               'passage': rec.get('passage', passage) or passage,
+               'sa': sa_iast, 'slp1': sa_slp1, 'ru': ru,
+               'n_sa_tok': len(toks),
+               'n_ru_tok': len(re.findall(r'[Ѐ-ӿ]+', ru)),
+               'speaker_sa': (sa.get('author') or '').strip() or None,
+               'speaker_ru': (rec.get('author') or '').strip() or None}
+        if modality and modality != 'written':
+            out['modality'] = modality
+            t_start = rec.get('t_start', sa.get('t_start'))
+            t_end = rec.get('t_end', sa.get('t_end'))
+            if t_start is not None:
+                out['t_start'] = t_start
+            if t_end is not None:
+                out['t_end'] = t_end
+            if source_media:
+                out['source_media'] = source_media
+            asr = rec.get('asr_conf', sa.get('asr_conf'))
+            if asr is not None:
+                out['asr_conf'] = asr
+        return out
 
     u = emit('ru', 'translation')
     if u:
