@@ -433,6 +433,47 @@ handoffs (H178 ACL verify-and-improve, H188 full pipeline audit, H220 no-PWG
 throughput) plus one human `@DECIDE` (H143) — the registry, not the work,
 had drifted.
 
+### Phase 14 — no-PWG throughput and the launch-failure ledger (H220, 07-06 → 07-07)
+
+H220 closed the no-PWG supplement-chain throughput gap with an actual
+diagnostic Workflow run, not speculation: a 10-card no-PWG window first
+measured the lane at ~40% yield, then root-caused the failures to two
+different guardrail mistakes. **First**, the wall-clock kill gate was
+calibrated on dense verb-root batches, where a slow schema call usually means
+"too complex, fall to fragments"; a no-PWG supplement singleton has no
+selfheal lane, and its fixed StructuredOutput latency can legitimately sit in
+the same 55-105 s band the old byte-scaled budget treated as suspicious. Six
+of six nulls were kill-timeouts, and four would have passed if allowed to
+finish. **Second**, strict key matching dropped valid output when the portrait's
+clean SLP1 `key1` pulled the model away from the mangled safe-name card header.
+
+The fix is lane-specific, not global: no-fallback singles now receive the
+180-second ceiling budget, nominal windows may re-key through a scoped
+`nominal_keymap`, and the selfheal path preserves the real upstream failure
+reason instead of overwriting it with `no-selfheal-fallback`. The same
+diagnostic window reran at **10/10 ok, 0 kill-timeouts, 9 agents**, and the
+232-lemma no-PWG backfill lane is unblocked for ordinary scheduling.
+
+This phase also adds the post-launch discipline that the history itself had
+been missing: [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) is now the mandatory
+per-launch incident ledger, checked by
+[`src/pilot/check_launch_ledger.py`](src/pilot/check_launch_ledger.py). This
+file (`PIPELINE_HISTORY.md`) remains the curated narrative map; the ledger is
+the exhaustive closeout register for Workflow/API failures, expected-vs-actual
+economics, classification, guardrail, and residual risk.
+
+## Post-launch discipline
+
+Every Workflow/API launch that hits a failure, null wave, stall, kill,
+stale-artifact refusal, cost drift, retry, or suspicious residual must get a
+classified entry in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) before the handoff
+is closed. Use the compact typology there (`concurrency/api`,
+`structured-output-limit`, `complexity-estimate-drift`,
+`kill-gate-calibration`, `gate-bug`, `artifact/provenance`, `tm/cache`,
+`filesystem/watcher`, `key/schema-mismatch`, `operator/process`,
+`external-api`, `unknown`). A repeated `unknown` shape is not an accepted
+residual; it becomes a bug-hunt handoff.
+
 ## Recurring failure patterns (read this before assuming something new is broken)
 
 These are the failure *shapes* that have recurred across the project — if a
@@ -499,6 +540,11 @@ likely the SAME class, not a new bug:
   other.** See [`LANG_PARITY.md`](LANG_PARITY.md), shipped this session
   specifically because this had already happened once (3 gate fixes,
   RU-only, undiscovered for a day).
+- **Kill-gate calibration is lane-specific.** H220 proved that a budget tuned
+  for dense verb batches false-kills no-fallback no-PWG singleton cards. Verb
+  batch, nominal small, nominal monster, no-PWG single, synth fan-out, and
+  external API mining launches keep separate calibration evidence; do not
+  blindly promote one lane's timeout envelope to another.
 
 ## Current state (as of 07-07-2026)
 
@@ -511,8 +557,9 @@ likely the SAME class, not a new bug:
   own historical false positives (Phase 6); `audit_window_en.py` (EN) has
   NOT yet received the same fixes — tracked as a GAP in `LANG_PARITY.md`.
 - Nominal lane: production-proven at 100/100 cards (Phase 10, H201); the
-  PWG-miss drop is fixed and no-PWG supplement-chain cards render (Phase 9);
-  the 232-lemma backfill queue is documented, awaiting ordinary scheduling.
+  PWG-miss drop is fixed, no-PWG supplement-chain cards render (Phase 9), and
+  no-PWG singleton throughput is fixed/calibrated (Phase 14); the 232-lemma
+  backfill queue is documented, awaiting ordinary scheduling.
 - Cost/performance: `perf_preflight.py` gives a now-accurate agent-count
   estimate (fixed Phase 8); TM (card + fragment level) is the main
   standing cost lever; `OUTPUT_BUDGET=90` is the calibrated default.
@@ -531,7 +578,8 @@ likely the SAME class, not a new bug:
 - Process discipline (all MG-locked, do not re-litigate): opt2 canonical
   harness, ≤3-wide concurrency, `--no-tm` mandatory on requeue, lang-fix
   parity classification mandatory before closing a session, drive the
-  Workflow from the Claude Code session (not a manual Max-surface save).
+  Workflow from the Claude Code session (not a manual Max-surface save), and
+  update/check `LAUNCH_FUCKUPS.md` before closing any launch-shaped handoff.
 
 ## Where to go next
 
@@ -542,6 +590,9 @@ likely the SAME class, not a new bug:
 - **A card/batch stalled, or wondering what else can blow the retry cap?** →
   [`FAILURE_MODES_AND_KILL_GATE_2026-07-04.md`](FAILURE_MODES_AND_KILL_GATE_2026-07-04.md):
   the full driver taxonomy + the wall-clock kill-gate design and calibration.
+- **Closing a launch after failures or retries?** →
+  [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) + `python src/pilot/check_launch_ledger.py
+  --handoff H###` are the mandatory incident register and checker.
 - **What's queued/in-flight/blocked right now?** → [`.ai_state.md`](.ai_state.md),
   the live journal (this document doesn't replace it — it's the map, not the
   territory).
