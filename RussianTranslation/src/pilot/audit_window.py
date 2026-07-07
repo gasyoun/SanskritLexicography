@@ -499,6 +499,17 @@ def main():
                       if e.startswith('fidelity-reject') or e.startswith('stitched-fidelity')}
     report['requeue_transient'] = sorted(set(null_cards) - fidelity_nulls)
     report['requeue_defect'] = sorted((gate_requeue - set(null_cards)) | fidelity_nulls)
+    # H304 gate-outcome memory: the fragment TM is harvested from raw wf_output BEFORE any
+    # gate runs, so a defect card's fragments would otherwise stay silently reusable
+    # (frag_address keys on the input SHA, not on whether the output passed). Surface every
+    # defect card's frag_prov fsha here; requeue_from_audit appends them to the TM denylist
+    # alongside the card addresses. Conservative by design — the gates flag CARDS, so all of
+    # a flagged card's fragments are blocked (a re-translation is cheap; a re-served defect
+    # is the gam requeue trap at fragment granularity).
+    defect_set = set(report['requeue_defect'])
+    report['requeue_defect_fshas'] = sorted(
+        {fp['fsha'] for r in results or [] if r and r.get('key') in defect_set
+         for fp in ((r.get('card') or {}).get('frag_prov') or []) if fp.get('fsha')})
     report['prompt_rules'] = gates.get('prompt_semantic', {}).get('prompt_rules')
     report['semantic_risks'] = gates.get('prompt_semantic', {}).get('card_risks')
     report['judge_sample_rate'] = args.judge_sample_rate

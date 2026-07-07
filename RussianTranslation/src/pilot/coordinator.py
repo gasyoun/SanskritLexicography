@@ -41,6 +41,7 @@ import promote_final_cards  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
 import translation_memory  # noqa: E402
 import verb_worklist  # noqa: E402
+from window_common import defer_monster  # noqa: E402
 
 
 def utc_now():
@@ -265,7 +266,18 @@ def verb_candidates(state, limit=20):
     for root in roots:
         report = by_root.get(root) or {'root': root, 'agent_expected_after_tm': 9999}
         action = report.get('recommended_action')
-        if action == 'defer-calibrate':
+        cost_gate = report.get('cost_gate') or {}
+        # Cap-and-defer (H304, MG ruling 07-07-2026): a window the cost gate flags is
+        # never claimable as bulk — it goes to the deferred-monsters ledger and waits
+        # for a dedicated human-budgeted session (see deferred_monsters.jsonl).
+        if action == 'defer-calibrate' or cost_gate.get('over_ceiling'):
+            reason = ('cost_gate_over_ceiling' if cost_gate.get('over_ceiling')
+                      else 'defer-calibrate')
+            defer_monster(root, reason, source='coordinator.claim',
+                          estimate={k: cost_gate.get(k) for k in
+                                    ('est_tokens', 'est_cost_usd', 'est_cost_per_card_usd')
+                                    if cost_gate.get(k) is not None} or None,
+                          keys=(report.get('cost_partition') or {}).get('defer_monster'))
             continue
         ordered.append(report)
     ordered.sort(key=lambda r: (r.get('agent_expected_after_tm', 9999),
@@ -362,6 +374,38 @@ def claim(args):
     print(json.dumps(lease, ensure_ascii=False, indent=1))
 
 
+def enforce_cost_gate(preflight_path, target, allow_over_cost=False):
+    """Cap-and-defer at prepare time (H304): a lease whose preflight trips the H189/H191
+    cost gate is parked in the deferred-monsters ledger and refused, instead of handing the
+    operator a harness that repeats the pril10_w1 blow-up ($79.83/3 cards). Pass
+    --allow-over-cost only inside an explicitly human-budgeted monster session."""
+    try:
+        with open(preflight_path, encoding='utf-8') as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return
+    for rep in (data.get('reports') or [data]):
+        cg = rep.get('cost_gate') or {}
+        if not cg.get('over_ceiling'):
+            continue
+        part = rep.get('cost_partition') or {}
+        defer_monster(target or rep.get('root'), 'cost_gate_over_ceiling',
+                      source='coordinator.prepare',
+                      estimate={k: cg.get(k) for k in
+                                ('est_tokens', 'est_cost_usd', 'est_cost_per_card_usd')
+                                if cg.get(k) is not None} or None,
+                      keys=part.get('defer_monster'))
+        if not allow_over_cost:
+            raise SystemExit(
+                'COST-GATE: %s over ceiling (est ~$%.2f window, ~$%.2f/card) — parked in '
+                'deferred_monsters.jsonl. Re-claim with only cost_partition.run_now keys '
+                '(%d run-now / %d monster), or re-run prepare with --allow-over-cost in a '
+                'dedicated human-budgeted session.'
+                % (target or rep.get('root'), cg.get('est_cost_usd') or 0.0,
+                   cg.get('est_cost_per_card_usd') or 0.0,
+                   len(part.get('run_now') or []), len(part.get('defer_monster') or [])))
+
+
 def prepare(args):
     with DirLock(paths()['lock']):
         state = load_state()
@@ -375,6 +419,8 @@ def prepare(args):
                          root, '--json'])
             with open(preflight_path, 'w', encoding='utf-8') as f:
                 f.write(p.stdout)
+            enforce_cost_gate(preflight_path, lease.get('target'),
+                              allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
                      root, '--out=%s' % harness])
@@ -389,6 +435,8 @@ def prepare(args):
                          root, '--nominal', '--no-grammar', '--keys=%s' % key_arg, '--json'])
             with open(preflight_path, 'w', encoding='utf-8') as f:
                 f.write(p.stdout)
+            enforce_cost_gate(preflight_path, lease.get('target'),
+                              allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
                      root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
@@ -629,6 +677,9 @@ def main(argv=None):
     c.set_defaults(func=claim)
     p = sub.add_parser('prepare')
     p.add_argument('lease_id')
+    p.add_argument('--allow-over-cost', action='store_true',
+                   help='H304 cap-and-defer override: prepare a cost-gate-flagged window '
+                        'anyway (dedicated human-budgeted monster session only)')
     p.set_defaults(func=prepare)
     r = sub.add_parser('record-output')
     r.add_argument('lease_id')

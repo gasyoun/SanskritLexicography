@@ -1005,8 +1005,11 @@ def test_requeue_transient_vs_defect_state():
                 f.write('source')
             deny = os.path.join(tmp, 'deny.jsonl')
             rq.translation_memory.denylist_path = lambda out=None: deny
-            n_en = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='en')
-            n_ru = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='ru')
+            no_fshas = os.path.join(tmp, 'no_fshas.txt')   # keep the frag channel out of scope
+            n_en, _ = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='en',
+                                            fsha_file=no_fshas)
+            n_ru, _ = rq.append_tm_denylist('zz', ['k1'], 'defect', lang='ru',
+                                            fsha_file=no_fshas)
             if (n_en, n_ru) != (1, 1):
                 fail('denylist should append one row per lang')
             rows = [json.loads(line) for line in open(deny, encoding='utf-8')]
@@ -2039,7 +2042,7 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
         old_argv = sys.argv[:]
         rq.INP = inp
         rq.subprocess.run = fake_run
-        rq.append_tm_denylist = lambda *_args, **_kwargs: 1
+        rq.append_tm_denylist = lambda *_args, **_kwargs: (1, 0)
         sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--defect',
                     '--nominal', '--no-grammar', '--requeue-file=%s' % rqfile,
                     '--out=%s' % out]
@@ -2933,6 +2936,196 @@ def test_launch_failure_ledger_rejects_incomplete_entry():
         fail('incomplete launch ledger entry must reject missing actual.tokens: %r' % violations)
 
 
+def test_frag_groups_presplit_parity():
+    """H304: frag_groups must reconstruct the SAME partition the harness used to mint the
+    gN:fM ids. A presplit card groups at PRESPLIT_GROUP_CITE_BUDGET with a sense count_cap
+    (H189), not at SELFHEAL_GROUP_BUDGET — reconstructing with the heal budget mis-maps the
+    ids for exactly the giant cards topup exists for."""
+    import autosplit_requeue as ar
+    from gen_opt_harness2 import _group_by_budget
+    fixture = [(si, 0, 'sense %d <ls>A</ls> <ls>B</ls>' % si) for si in range(1, 41)]
+    old_plan = ar.plan
+    ar.plan = lambda raw, ls_budget=None: fixture
+    try:
+        meta = {'presplit_keys': ['X'], 'presplit_group_cite_budget': 60,
+                'presplit_group_sense_cap': 18, 'selfheal_group_budget': 12}
+        sizer = lambda f: 1 + f[2].count('<ls')
+        want_presplit = _group_by_budget(fixture, sizer, 60, count_cap=18)
+        want_heal = _group_by_budget(fixture, sizer, 12)
+        if want_presplit == want_heal:
+            fail('fixture too small — presplit and heal partitions must differ for the test')
+        got_presplit = ar.frag_groups('ignored', meta=meta, key='X')
+        if got_presplit != want_presplit:
+            fail('frag_groups(presplit key) does not match the harness presplit partition '
+                 '(%d vs %d groups)' % (len(got_presplit), len(want_presplit)))
+        got_heal = ar.frag_groups('ignored', meta=meta, key='Y')
+        if got_heal != want_heal:
+            fail('frag_groups(non-presplit key) must keep the heal-budget partition')
+        got_legacy = ar.frag_groups('ignored')
+        if got_legacy != want_heal:
+            fail('frag_groups without meta must keep the pre-H304 heal-budget behavior')
+    finally:
+        ar.plan = old_plan
+
+
+def test_defect_fragment_denylist_round_trip():
+    """H304 gate-outcome memory: a defect card's frag_prov fshas (requeue.defect.fshas.txt)
+    are appended to the TM denylist by requeue_from_audit, and load_frag_tm then refuses to
+    serve them — a gate-flagged fragment is never re-served by --tm=auto."""
+    import requeue_from_audit as rfa
+    import translation_memory as tm
+    tmp = tempfile.mkdtemp()
+    deny_path = os.path.join(tmp, 'denylist.jsonl')
+    fsha_good = tm.frag_address('ru', 'clean fragment')
+    fsha_bad = tm.frag_address('ru', 'flagged fragment')
+    fsha_file = os.path.join(tmp, 'requeue.defect.fshas.txt')
+    with open(fsha_file, 'w', encoding='utf-8') as f:
+        f.write(fsha_bad + '\n')
+    old_dp = rfa.translation_memory.denylist_path
+    rfa.translation_memory.denylist_path = lambda path=None: deny_path
+    try:
+        n, nf = rfa.append_tm_denylist('h304root', [], 'defect', lang='ru',
+                                       fsha_file=fsha_file)
+    finally:
+        rfa.translation_memory.denylist_path = old_dp
+    if (n, nf) != (0, 1):
+        fail('append_tm_denylist defect fsha count: got %r, want (0, 1)' % ((n, nf),))
+    deny = tm.load_denylist(deny_path)
+    if fsha_bad not in deny['frags']:
+        fail('defect fsha missing from the loaded denylist frag set')
+    senses = [{'tag': '1', 'german': 'x', 'russian': 'y'}]
+    sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
+    with open(sidecar, 'w', encoding='utf-8') as f:
+        for fsha in (fsha_good, fsha_bad):
+            f.write(json.dumps({'fsha': fsha, 'senses': senses}) + '\n')
+    cache = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
+    if fsha_bad in cache:
+        fail('denylisted fragment still served by load_frag_tm')
+    if fsha_good not in cache:
+        fail('clean fragment wrongly dropped by the denylist')
+    # transient requeues must not denylist anything
+    n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru')
+    if (n, nf) != (0, 0):
+        fail('transient requeue must never append denylist rows')
+
+
+def test_write_reports_emits_defect_fsha_file():
+    """H304: --write-requeue also persists requeue.defect.fshas.txt so requeue_from_audit
+    can denylist the flagged fragments without re-reading the wf_output."""
+    from window_reports import write_reports
+    tmp = tempfile.mkdtemp()
+    report = {'workflow': 'wf.json', 'root': 'h304root', 'keys': ['k1'],
+              'null_cards': [], 'requeue': ['k1'], 'crashed': [],
+              'gates': {}, 'glue': None, 'collect': {},
+              'requeue_transient': [], 'requeue_defect': ['k1'],
+              'requeue_defect_fshas': ['a' * 64, 'b' * 64],
+              'judge_sample': {'keys': [], 'sample_count': 0, 'seed': None,
+                               'clean_key_count': 0}}
+    write_reports(report, True, out_dir=tmp)
+    p = os.path.join(tmp, 'requeue.defect.fshas.txt')
+    if not os.path.exists(p):
+        fail('requeue.defect.fshas.txt not written by write_reports')
+    got = [ln.strip() for ln in open(p, encoding='utf-8') if ln.strip()]
+    if got != ['a' * 64, 'b' * 64]:
+        fail('defect fsha file content mismatch: %r' % got)
+
+
+def test_save_merge_better_attempt_wins():
+    """H304: 'latest requeue wins' is WRONG — a requeue can regress a card (gam h0_63_sam_0
+    went 2->3->7 missing fragments). --merge must keep the better prior attempt: complete
+    beats partial, fewer missing fragments beat more; a complete fresh card still replaces."""
+    from window_common import REPO as repo_root
+    save = os.path.join(repo_root, 'save_and_audit.py')
+    root, tag = 'h304tmp', 'sftest'
+    out_path = os.path.join(repo_root, 'wf_output.%s.%s.json' % (tag, root))
+    tmp = tempfile.mkdtemp()
+
+    def wf(card):
+        return {'result': {'meta': {'root': root},
+                           'results': [{'key': 'k1', 'card': card}]}}
+
+    def save_run(name, card, *extra):
+        p = os.path.join(tmp, name)
+        with open(p, 'w', encoding='utf-8') as f:
+            json.dump(wf(card), f)
+        run([sys.executable, save, root, p, tag, '--no-audit'] + list(extra), expect=0)
+
+    try:
+        complete = {'key1': 'k1', 'senses_marker': 'first-complete'}
+        save_run('a.json', complete)
+        worse = {'key1': 'k1', 'partial': True,
+                 'missing_fragments': ['g1:f0', 'g1:f1'], 'senses_marker': 'regression'}
+        save_run('b.json', worse, '--merge')
+        got = json.load(open(out_path, encoding='utf-8'))
+        card = got['results'][0]['card']
+        if card.get('partial') or card.get('senses_marker') != 'first-complete':
+            fail('--merge let a partial attempt regress a complete card')
+        fresh = {'key1': 'k1', 'senses_marker': 'second-complete'}
+        save_run('c.json', fresh, '--merge')
+        got = json.load(open(out_path, encoding='utf-8'))
+        if got['results'][0]['card'].get('senses_marker') != 'second-complete':
+            fail('an equal-quality fresh card must still replace (ties go to new)')
+    finally:
+        if os.path.exists(out_path):
+            os.remove(out_path)
+
+
+def test_defer_monster_ledger_dedupes():
+    """H304 cap-and-defer: the deferred-monsters ledger is append-only and deduped on
+    (target, reason, UTC day) so a daily coordinator sweep cannot flood it."""
+    from window_common import defer_monster
+    tmp = tempfile.mkdtemp()
+    p = os.path.join(tmp, 'deferred_monsters.jsonl')
+    row = defer_monster('kAla', 'cost_gate_over_ceiling',
+                        estimate={'est_cost_usd': 79.83}, keys=['kAla~~h0_00'], path=p)
+    if not row or row.get('schema') != 'pwg.deferred_monsters.v1':
+        fail('first defer_monster call must write a schema-stamped row')
+    if defer_monster('kAla', 'cost_gate_over_ceiling', path=p) is not None:
+        fail('same (target, reason, day) must dedupe to None')
+    if defer_monster('kAla', 'defer-calibrate', path=p) is None:
+        fail('a different reason for the same target must append')
+    lines = [ln for ln in open(p, encoding='utf-8') if ln.strip()]
+    if len(lines) != 2:
+        fail('ledger must hold exactly 2 rows, got %d' % len(lines))
+
+
+def test_coordinator_cost_gate_enforced():
+    """H304: coordinator prepare refuses a cost-gate-flagged window (parks it in the
+    deferred ledger) unless --allow-over-cost; a clean window passes untouched."""
+    import coordinator as co
+    tmp = tempfile.mkdtemp()
+    flagged = os.path.join(tmp, 'preflight.json')
+    with open(flagged, 'w', encoding='utf-8') as f:
+        json.dump({'reports': [{'root': 'kAla',
+                                'cost_gate': {'over_ceiling': True, 'est_cost_usd': 79.83,
+                                              'est_cost_per_card_usd': 4.0},
+                                'cost_partition': {'run_now': ['a'],
+                                                   'defer_monster': ['b', 'c']}}]}, f)
+    clean = os.path.join(tmp, 'preflight_clean.json')
+    with open(clean, 'w', encoding='utf-8') as f:
+        json.dump({'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
+    captured = []
+    old = co.defer_monster
+    co.defer_monster = lambda *a, **k: captured.append((a, k))
+    try:
+        try:
+            co.enforce_cost_gate(flagged, 'kAla')
+            fail('enforce_cost_gate must refuse an over-ceiling window')
+        except SystemExit as e:
+            if 'deferred_monsters' not in str(e):
+                fail('cost-gate refusal must point at the deferred ledger: %s' % e)
+        if len(captured) != 1:
+            fail('refusal must park the window in the ledger exactly once')
+        co.enforce_cost_gate(flagged, 'kAla', allow_over_cost=True)   # no raise
+        if len(captured) != 2:
+            fail('--allow-over-cost must still record the ledger row')
+        co.enforce_cost_gate(clean, 'vah')
+        if len(captured) != 2:
+            fail('a clean window must not touch the ledger')
+    finally:
+        co.defer_monster = old
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -3020,6 +3213,12 @@ def main():
         test_release_manifest_hash_validation,
         test_lang_parity_ledger_complete,
         test_lang_parity_hash_crlf_independent,
+        test_frag_groups_presplit_parity,
+        test_defect_fragment_denylist_round_trip,
+        test_write_reports_emits_defect_fsha_file,
+        test_save_merge_better_attempt_wins,
+        test_defer_monster_ledger_dedupes,
+        test_coordinator_cost_gate_enforced,
     ]
     for test in tests:
         test()

@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 06-07-2026_
+_Created: 04-07-2026 · Last updated: 07-07-2026_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "5bbb029b2dc287f52d4efd4f9f44ff4a12952a15984554568afa645eec2804bd",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -279,8 +279,28 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
-      "src/pilot/audit_window.py": "0ec016f09fa2e770ef538251882b829a4d7ea3e9ea61995fc47d0963138c0206",
+      "src/pilot/audit_window.py": "0a2256245f35ef9468d722e8bd7c7714586f8186178d32abcc92e6d71facf440",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
+    }
+  },
+  {
+    "id": "defect_fragment_denylist_h304",
+    "mechanism": "audit emits requeue.defect.fshas.txt (the defect cards' frag_prov content addresses); requeue_from_audit appends them to the TM denylist so the fragment sidecar can never re-serve a gate-flagged fragment (build_frags harvests wf_output BEFORE gates run)",
+    "files": [
+      "src/pilot/audit_window.py",
+      "src/pilot/window_reports.py",
+      "src/pilot/requeue_from_audit.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "GAP",
+    "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
+    "tracking": "Uprava/handoffs/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
+    "verified_sha256": {
+      "src/pilot/audit_window.py": "0a2256245f35ef9468d722e8bd7c7714586f8186178d32abcc92e6d71facf440",
+      "src/pilot/window_reports.py": "1649a33f3cf65fdd9f770cd1f05bb84d3eccdbc8369132ee3a1800c0ea62a72e",
+      "src/pilot/requeue_from_audit.py": "a315cd02276908ffdcc64f09d226798865885a7eea47ca60681a256a240d6272"
     }
   },
   {
@@ -297,7 +317,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 (commit 8cb84f7): the helper is lang-agnostic (takes a root, not a --lang flag; gen_opt_harness2.py resolves lang from the rootmap), so the fix applies to any language's requeue in one place. Was a both-paths gap before the fix, not an RU/EN divergence.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "a121e99b5e4a5f2a205e094de0a49e1b86674a4ceabf382a67d89b70f875f2cf"
+      "src/pilot/requeue_from_audit.py": "a315cd02276908ffdcc64f09d226798865885a7eea47ca60681a256a240d6272"
     }
   },
   {
@@ -335,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -354,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -392,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   },
   {
@@ -451,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "31c82a4467816f438f3224c6fb06396eec718d4e0aa38d645cdc192602a2474e"
+      "src/pilot/window_selftest.py": "3255052a7ba933d420d13e565945fe74a317bb39e4e09c620fbfd55b72f7429b"
     }
   }
 ]
