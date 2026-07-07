@@ -1,6 +1,6 @@
 # Oral-corpus ingest — the spoken register of the Sa→Ru TM (H215 Slice 4)
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 07-07-2026 (Slice 4a text+PDF front-end, H290)_
 
 This is the design + shared-schema doc for
 [`src/ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py),
@@ -160,6 +160,65 @@ _Model provenance: deterministic — no LLM. Pilot generated under Opus 4.8
 - **Scale ingest** is asset-gated: no oral recordings are in a tracked repo yet
   (H174 not built). This slice ships the schema + tooling + an end-to-end fixture
   pilot; scale runs when H174 delivers cleaned transcripts.
+
+## Slice 4a — the text + PDF front-end ([H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
+
+[`ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py)
+above assumes the input is already a **pre-aligned parallel pair** of timecoded
+subtitle tracks (one recording, Sanskrit VTT + Russian VTT, same segmentation) or an
+explicit `--pairs` file. Most existing oral transcripts are **not** that shape. MG
+split Slice 4 (07-07-2026) into **4a — the text + PDF path (now)** and **4b — the
+audio/ASR path (deferred ~1 week)**.
+[`src/build_oral_l0.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_oral_l0.py)
+is 4a: it reads **one** transcript (+ optional PDF/DOC companion), detects which of
+three shapes it is, routes it, and emits the **same corpus seg-rows** `ingest_oral`
+does — so `build_l0 → tm_grade → build_tmx` consume it unchanged.
+
+**MG ruling 1 — detect the shape (never assume one):**
+
+| Shape | What it is | Alignment |
+|---|---|---|
+| `bi` | bilingual transcript: spoken Sanskrit + its Russian interleaved | Sa↔Ru line pairs |
+| `sa+pdf` | Sanskrit-only recitation; Russian only in a PDF handout | transcript-sa ↔ pdf-ru |
+| `ru+cit` | Russian lecture quoting Sanskrit inline | citation ↔ surrounding gloss |
+
+Ambiguous input (e.g. a Sanskrit-only transcript with **no** companion) is a
+first-class outcome → routed to the human reviewable sample, **never** guessed. The
+detector uses only cheap signals: per-line dominant script (Cyrillic = Russian; any of
+Devanāgarī / IAST / **SLP1-romanized** = Sanskrit) and the Sa/Ru line balance.
+
+**MG ruling 2 — classify each companion's ROLE first**
+(`classify_pdf_role`): `edited-ru` | `sanskrit-source` | `commentary`, from language
+mix + structure. The **edited-ru** case becomes a **multi-reference** pair — emitted as
+a separate `work` sharing the verse `passage`, so `tm_grade.seg_key=(passage,slp1)`
+computes the spoken rendering and its written handout as a consensus signal. Companion
+`.pdf/.doc/.docx` are converted by the **`/docx-to-md` skill → `.mdx`** (never a flat
+`.md`); `build_oral_l0` never re-implements PDF extraction.
+
+**Status = data-independent scaffold.** `python build_oral_l0.py selftest` exercises
+the three source-type detectors (+ambiguous guards), the three PDF-role classifiers,
+the three per-shape extractors, the never-invent/no-zip-truncate guards, and the
+seg-rows → `build_l0` → L0 carry of `modality`+`orality`. The **one open prerequisite**
+is a representative real sample (one transcript + its PDF); until it arrives the
+`sa+pdf` sentence aligner is a labelled index/verse-key **placeholder**
+(`align='placeholder-*'`), and the real LaBSE/LASER + Vecalign backend + heuristic
+calibration are the gated steps 3–4.
+
+### ⚠️ Open policy conflict — oral → A gate (MG ruling 4 vs merged Slice 4)
+
+MG ruling 4 (H290): an oral unit is **distrusted by default but not barred from
+publication-grade** — it should reach **A when it agrees with a written translation**
+(consensus promotes). But the **merged** Slice-4
+[`build_tmx.oral_cap()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py)
+currently forces oral **A→B unless a human adjudicated it** — consensus does *not*
+promote. These **conflict**. This scaffold **deliberately does not silently flip** that
+merged publication-grade gate: reconciling it needs real oral graded output to validate
+(exactly the gated prerequisite), so it is deferred to the real-data step and tracked
+as an `@DECIDE` in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+The likely resolution: relax `oral_cap` to allow A when the consensus set contains ≥1
+agreeing **written** work (a real change to `build_consensus`/`grade_unit` to carry
+per-work modality) — but only once a sample proves it does not over-promote.
 
 ## Rights
 
