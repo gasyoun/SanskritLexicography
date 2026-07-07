@@ -251,6 +251,10 @@ def build_report(args, root):
     keylist = split_csv(args.keys) if args.keys else None
     rootmap, keys = selected(root, keylist, args.nominal)
     tm_path = (args.tm_path or default_tm_path(args.lang)) if args.tm_auto else None
+    old_output_budget = gh.OUTPUT_BUDGET
+    output_budget = getattr(args, 'output_budget', None)
+    if output_budget is not None:
+        gh.OUTPUT_BUDGET = None if output_budget in ('off', '0', 'none') else int(output_budget)
     buf = io.StringIO()
     with contextlib.redirect_stdout(buf):
         js, _batches = gh.build(root, keys, rootmap, args.budget,
@@ -319,6 +323,7 @@ def build_report(args, root):
             % (report['cost_gate']['est_tokens'], report['cost_gate']['est_cost_usd'],
                report['cost_gate']['est_cost_per_card_usd'],
                report['cost_gate']['per_card_ceiling_usd']))
+    gh.OUTPUT_BUDGET = old_output_budget
     return report
 
 
@@ -412,6 +417,8 @@ def main(argv=None):
                     help='H189 cost gate: flag a window whose est $ per translated card exceeds this (default %(default)s).')
     ap.add_argument('--cost-ceiling-window', type=float, default=COST_CEIL_WINDOW_USD,
                     help='H189 cost gate: flag a window whose total est $ exceeds this (default %(default)s).')
+    ap.add_argument('--output-budget', default=None,
+                    help='Mirror gen_opt_harness2.py --output-budget for accurate preflight accounting.')
     ap.add_argument('--refuse-over-cost', action='store_true',
                     help='H189 cost gate: exit nonzero if any window exceeds a cost ceiling (for automated callers).')
     ap.add_argument('--json', action='store_true')
