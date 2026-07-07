@@ -71,7 +71,8 @@ def gold_counts():
 def interop_ok(release_dir):
     r = subprocess.run([sys.executable, os.path.join(HERE, 'validate_interop.py'),
                         '--dir', release_dir],
-                       cwd=ROOT, capture_output=True, text=True, timeout=120)
+                       cwd=ROOT, capture_output=True, text=True,
+                       encoding='utf-8', timeout=120)
     return r.returncode == 0, (r.stdout.strip() or r.stderr.strip())
 
 

@@ -24,7 +24,8 @@ INTEROP = ('tei_lex0.xml', 'ontolex.ttl', 'reverse_index.jsonl')
 
 
 def run(cmd):
-    r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=120)
+    r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True,
+                       encoding='utf-8', timeout=120)
     if r.returncode != 0:
         raise RuntimeError('%s\n%s' % (' '.join(cmd), r.stderr.strip() or r.stdout.strip()))
     return r.stdout.strip()
