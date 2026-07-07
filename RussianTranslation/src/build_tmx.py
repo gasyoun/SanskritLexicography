@@ -101,6 +101,55 @@ def tu_xml(rec, grade=DEFAULT_GRADE, modality=DEFAULT_MODALITY):
     return ''.join(parts)
 
 
+# Slice 3: L0 verse-segment <tu>s (segtype="block") from build_l0.py's corpus_l0.jsonl.
+# Source seg = the cleaned SLP1 verse (matches srclang="sa-slp1"); IAST surface kept
+# as a <prop>. grade defaults to C (per-verse grade aggregation from child L1 grades
+# is a documented follow-up, not this slice).
+L0_GRADE = 'C'
+
+
+def l0_tu_xml(rec, grade=L0_GRADE):
+    slp1 = (rec.get('slp1') or '').strip()
+    sa = (rec.get('sa') or '').strip()
+    ru = (rec.get('ru') or '').strip()
+    src = slp1 or sa
+    parts = ['<tu tuid=%s segtype="block">\n' % quoteattr(rec.get('l0id') or tuid(rec))]
+    parts.append(_prop('layer', 'L0'))
+    parts.append(_prop('grade', grade))
+    parts.append(_prop('modality', DEFAULT_MODALITY))
+    parts.append(_prop('kind', rec.get('kind')))
+    parts.append(_prop('surface', sa))
+    parts.append(_prop('work', rec.get('work')))
+    parts.append(_prop('passage', rec.get('passage')))
+    parts.append(_prop('group', rec.get('group')))
+    parts.append(_prop('genre', rec.get('genre')))
+    parts.append(_prop('period', rec.get('period')))
+    parts.append(_prop('date', rec.get('date')))
+    parts.append('  <tuv xml:lang="%s"><seg>%s</seg></tuv>\n' % (SRCLANG, q(src)))
+    parts.append('  <tuv xml:lang="%s"><seg>%s</seg></tuv>\n' % (TGTLANG, q(ru)))
+    parts.append(' </tu>\n')
+    return ''.join(parts)
+
+
+def iter_l0(path):
+    """Yield L0 verse units, applying the same never-invent guards: a Sanskrit
+    source present and a Cyrillic Russian target."""
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                r = json.loads(line)
+            except Exception:
+                continue
+            src = (r.get('slp1') or r.get('sa') or '').strip()
+            ru = (r.get('ru') or '').strip()
+            if not src or not has_cyr(ru):
+                continue
+            yield r
+
+
 def iter_units(path):
     """Yield well-formed L1 records, skipping any that fail the never-invent
     guards (non-Cyrillic ru, empty key, ru==sa) -- the same invariants _audit.py
@@ -171,7 +220,7 @@ def load_grades(path):
 
 
 def build(in_path, out_path, sample=None, grade=DEFAULT_GRADE,
-          modality=DEFAULT_MODALITY, grades_path=None):
+          modality=DEFAULT_MODALITY, grades_path=None, l0_path=None):
     if not os.path.exists(in_path):
         sys.exit('input not found: %s\n(corpus_lexicon.jsonl is gitignored; build it '
                  'first with build_corpus_lexicon.py)' % in_path)
@@ -179,18 +228,28 @@ def build(in_path, out_path, sample=None, grade=DEFAULT_GRADE,
     units = list(iter_units(in_path))
     if sample is not None:
         units = units[:sample]
+    l0_units = []
+    if l0_path:
+        if not os.path.exists(l0_path):
+            sys.exit('L0 file not found: %s (run build_l0.py build first)' % l0_path)
+        l0_units = list(iter_l0(l0_path))
+        if sample is not None:
+            l0_units = l0_units[:sample]
     dist = {}
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as out:
-        out.write(header_xml(len(units), in_path))
+        out.write(header_xml(len(units) + len(l0_units), in_path))
+        for r in l0_units:                    # L0 verse segments first (the anchors)
+            out.write(l0_tu_xml(r))
         for r in units:
             g = grades.get(tuid(r), grade)   # sidecar wins; else the default stamp
             dist[g] = dist.get(g, 0) + 1
             out.write(tu_xml(r, grade=g, modality=modality))
         out.write(' </body>\n</tmx>\n')
     gsrc = 'sidecar %s' % os.path.basename(grades_path) if grades else 'default=%s' % grade
-    print('build_tmx: %d L1 units -> %s  (grade: %s; dist %s)'
-          % (len(units), out_path, gsrc, dist))
+    l0note = '' if not l0_path else '  + %d L0 verse segments' % len(l0_units)
+    print('build_tmx: %d L1 units%s -> %s  (grade: %s; dist %s)'
+          % (len(units), l0note, out_path, gsrc, dist))
     ok, msg = validate(out_path)
     print(msg)
     return 0 if ok else 1
@@ -316,6 +375,7 @@ def main():
     b.add_argument('--sample', type=int, default=None, help='export only the first N L1 units')
     b.add_argument('--grade', default=DEFAULT_GRADE, help='fallback grade stamp when no sidecar (default C)')
     b.add_argument('--grades', dest='grades', default=None, help='tm_grade.py sidecar JSONL -> real A/B/C per unit')
+    b.add_argument('--l0', dest='l0', default=None, help='build_l0.py corpus_l0.jsonl -> add real L0 verse-segment <tu>s')
     b.add_argument('--modality', default=DEFAULT_MODALITY)
 
     v = sub.add_parser('validate', help='round-trip validate an existing TMX')
@@ -326,7 +386,7 @@ def main():
     a = ap.parse_args()
     if a.cmd == 'build':
         return build(a.inp, a.out, sample=a.sample, grade=a.grade,
-                     modality=a.modality, grades_path=a.grades)
+                     modality=a.modality, grades_path=a.grades, l0_path=a.l0)
     if a.cmd == 'validate':
         ok, msg = validate(a.path)
         print(msg)

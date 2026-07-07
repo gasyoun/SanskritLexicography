@@ -437,6 +437,29 @@ over [VisualDCS derived-data/Fonetika/regen-2026/varna_freq.csv](https://github.
 > **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
 > Fable 5 `claude-fable-5` · 2026-07-07
 
+### §65. 6.6 % of the DeepSeek corpus word-alignments ground to nothing in their verse
+
+🟠 **One in fifteen DeepSeek L1 word-pairs does not trace back to its own verse.**
+Evidence: [`src/tm_align.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_align.py)
+cross-checks every one of the **1,091,528** `corpus_lexicon.jsonl` word-pairs against
+the L0 verse it was extracted from (rebuilt by
+[`src/build_l0.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_l0.py)
+from the SamudraManthanam verse-aligned source — **99,733 L0 units over 116 works**):
+mean grounding confidence **0.684**, **93.4 % grounded**, but **6.6 % score 0** — the
+Sanskrit citation-word is absent from the verse *and* the Russian rendering's stems are
+absent from the translation. Feeding this real `alignment_confidence` into
+[`tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py)
+(vs the Slice-2 token-count proxy) moves publication-grade **A 5.7 % → 5.3 %** and
+usage-only **C 0.3 % → 0.9 %** — the ungrounded pairs correctly demote.
+Implication: a reference-free QE/consensus grade over DeepSeek alignments should carry a
+grounding cross-check; the ungrounded 6.6 % are the first place to look for the
+never-invent failure mode at the word-pair layer. A real embedding aligner (`embed`,
+mBERT — ran on a Vedic sample) is weak on *transliterated* Sanskrit and needs XLM-R / a
+Sanskrit-aware encoder before it beats the deterministic grounding proxy.
+
+> **Source:** H215 Slice 3 ([`src/BUILD_TMX.md` § L0 + alignment](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/BUILD_TMX.md)),
+> Opus 4.8 `claude-opus-4-8` · 2026-07-07
+
 ## Dictionary structure & markup
 
 ### §15. PWG encodes secondary stems inline, not in div markup

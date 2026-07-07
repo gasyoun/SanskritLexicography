@@ -223,10 +223,13 @@ def consensus_signal(rec, idx):
 
 
 # ---------------------------------------------------------------- composite grade
-def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False):
+def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False,
+               align_override=None):
     qe = qe_fn(rec)
     src = source_weight(rec, weights)
-    align = align_proxy(rec)
+    # Slice 3: a real tm_align.py cross-check score (tuid -> confidence) supersedes
+    # the Slice-2 token-count proxy when supplied via `grade --align <sidecar>`.
+    align = align_proxy(rec) if align_override is None else align_override
     n_refs, cons = consensus_signal(rec, consensus_idx)
     score = (W['qe'] * qe + W['source'] * src
              + W['consensus'] * cons + W['align'] * align)
@@ -242,34 +245,66 @@ def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False):
     return {'grade': grade, 'score': round(score, 4),
             'qe': round(qe, 4), 'source_weight': round(src, 4),
             'alignment_confidence': round(align, 4),
+            'align_source': 'proxy' if align_override is None else 'tm_align',
             'consensus': round(cons, 4), 'n_refs': n_refs}
 
 
 # ------------------------------------------------------------------------- cmds
+def load_align(path):
+    """tuid -> real alignment_confidence from a tm_align.py sidecar. Absent path ->
+    empty map -> grade_unit falls back to the Slice-2 align proxy."""
+    amap = {}
+    if not path:
+        return amap
+    if not os.path.exists(path):
+        sys.exit('align sidecar not found: %s (run tm_align.py cross first)' % path)
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                r = json.loads(line)
+            except Exception:
+                continue
+            if r.get('tuid') and r.get('alignment_confidence') is not None:
+                amap[r['tuid']] = float(r['alignment_confidence'])
+    return amap
+
+
 def cmd_grade(a):
     if not os.path.exists(a.inp):
         sys.exit('input not found: %s (corpus_lexicon.jsonl is gitignored -- build it '
                  'first)' % a.inp)
     weights = load_weights()
     qe_fn, qe_name = make_qe(a.qe)
+    amap = load_align(getattr(a, 'align', None))
+    if amap:
+        print('grade: %d real tm_align confidences loaded (supersede the align proxy)'
+              % len(amap))
     print('grade: building consensus index over %s ...' % os.path.basename(a.inp),
           flush=True)
     idx = build_consensus(a.inp)
     print('grade: %d distinct (passage,key) segments indexed' % len(idx))
     dist = collections.Counter()
+    align_real = 0
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     n = 0
     with open(a.out, 'w', encoding='utf-8', newline='\n') as out:
         for rec in build_tmx.iter_units(a.inp):
-            g = grade_unit(rec, weights, qe_fn, idx)
+            tid = build_tmx.tuid(rec)
+            ov = amap.get(tid)
+            if ov is not None:
+                align_real += 1
+            g = grade_unit(rec, weights, qe_fn, idx, align_override=ov)
             dist[g['grade']] += 1
-            out.write(json.dumps({'tuid': build_tmx.tuid(rec), **g},
-                                 ensure_ascii=False) + '\n')
+            out.write(json.dumps({'tuid': tid, **g}, ensure_ascii=False) + '\n')
             n += 1
             if a.sample and n >= a.sample:
                 break
     tot = sum(dist.values()) or 1
-    print('grade: %d units graded (qe=%s) -> %s' % (n, qe_name, a.out))
+    print('grade: %d units graded (qe=%s, align=%s) -> %s'
+          % (n, qe_name, 'tm_align %d/%d' % (align_real, n) if amap else 'proxy', a.out))
     for g in 'ABC':
         print('  %s  %8d  %5.1f%%' % (g, dist[g], 100 * dist[g] / tot))
     return 0
@@ -402,6 +437,9 @@ def main():
     g.add_argument('--in', dest='inp', default=DEFAULT_IN)
     g.add_argument('--out', dest='out', default=DEFAULT_OUT)
     g.add_argument('--qe', choices=['proxy', 'comet'], default='proxy')
+    g.add_argument('--align', default=None,
+                   help='tm_align.py sidecar -> real alignment_confidence per unit '
+                        '(supersedes the Slice-2 proxy)')
     g.add_argument('--sample', type=int, default=None)
 
     c = sub.add_parser('calibrate', help='grade the labelled gold set, cross-tab vs label')
