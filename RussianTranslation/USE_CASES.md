@@ -1,5 +1,7 @@
 # RussianTranslation Use Cases
 
+_Created: 28-06-2026 · Last updated: 07-07-2026_
+
 Operational scenarios for the PWG -> Russian production pipeline. The canonical
 runbook remains [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md); this
 page is a quick map from intent to command path.
@@ -189,3 +191,100 @@ Hits carry per-resource highlights; the udātta word-split is in the Casaretto e
 annotation resource `66695e4a14f6d337f7788740` (lemma `679b7da2…`, accented text `66695c4b…`).
 Bulk: `GET /api/resources/{id}/export`. CC BY 4.0. See
 [ZALIZNYAK_INDEX.md](ZALIZNYAK_INDEX.md) §"Vedic accent mobility".
+
+---
+
+# Translation memory as an asset
+
+The TM is three tiers: the clean 1.09M-pair verse-aligned
+`src/corpus_lexicon.jsonl`, a quarantined `mined` tier from Russian running
+prose, and an evidence-only `SPECIALIST` glossary tier. Every tier is gradeable
+and exportable.
+
+## 14. Mine New TM Pairs from Russian Running Prose
+
+Use when a new Russian indological text (translation with commentary, essay
+collection) lands in the SamudraManthanam folder. Output goes to the
+quarantined `mined` tier
+([`src/corpus_lexicon.mined.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RUNNING_TEXT_MINING.md)),
+**never** the clean corpus_lexicon.
+
+```powershell
+python src\mine_running_text.py status            # what's mined vs pending
+python src\mine_running_text.py mine <textfile>   # one text (DeepSeek extraction)
+python src\mine_running_text.py mineall           # batch the whole SM folder
+```
+
+Guards: never-invent prompt + verbatim-in-passage check; a 30-row human
+precision gate (97% correct equivalence on the pilot) gated the scale-up.
+Design: [`pwg_ru/RUNNING_TEXT_MINING.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RUNNING_TEXT_MINING.md).
+
+## 15. Grade the TM and Export TMX for CAT Tools
+
+Use before citing TM quality or handing pairs to a translator's CAT tool.
+
+```powershell
+python src\tm_grade.py grade                      # A/B/C sidecar + distribution
+python src\build_tmx.py build                     # TMX 1.4b (reads the grade sidecar)
+python src\build_tmx.py build --sample 1000       # small export for inspection
+```
+
+Grades: A = strong direct-equivalence evidence · B = plausible gloss · C =
+usage/citation-only co-occurrence. Distribution is logged as FINDINGS §60.
+Public release of the export waits on the H215 rights clearance.
+
+---
+
+# Edition composition (re-glue) and multi-agent runs
+
+## 16. Re-Glue a Print-Shaped Entry (zero re-translation)
+
+Use when composing edition-shaped output from already-translated sub-cards.
+Re-glue is the edition backbone — the Arm-A/B bake-off verdict is that
+LLM synthesize-first does **not** beat it
+([`ARMB_SCORES.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/reglue/synth_outputs/ARMB_SCORES.tsv)).
+
+```powershell
+python src\build_reglue.py                        # pilot set; asserts byte-identity on every ru
+python src\synth_de_first.py                      # (research) assemble Arm-B inputs
+python src\synth_score.py                         # score synth outputs vs source <ls> sets
+```
+
+## 17. Run a Multi-Agent Synthesis Fan-Out Safely
+
+Use for ANY sub-agent fan-out in this repo (synthesis, batch generation).
+Bare async dispatches are banned after the H180 Arm-B post-mortem
+([PIPELINE_HISTORY.md](PIPELINE_HISTORY.md) Phase 13): transcripts buffer, hung
+agents emit no signal, the repo watcher deletes untracked outputs, and
+unconfirmed-dead agents overwrite good results.
+
+```powershell
+python src\synth_dispatch.py selftest             # 7-case guard verification, no model calls
+python src\synth_dispatch.py plan <keys...>       # which lane each key takes
+python src\synth_dispatch.py assemble <keys...>   # zero-LLM programmatic assembly (>800 <ls> auto)
+python src\synth_dispatch.py run <keys...> [--max-concurrent 3] [--kill-after 600]
+```
+
+The wrapper judges liveness by **output-file growth only**, caps concurrency
+at 3 (hard cap 4, staggered), kills any attempt whose output hasn't grown in
+`--kill-after` seconds, confirms death before re-dispatching, seals landed
+outputs against late zombies, and lands watcher-safe (staging outside the
+repo, post-land sha re-verify).
+
+## 18. Score Headwords for the Learner Edition / Classify Addenda
+
+Use when working on the print-edition apparatus (deterministic, zero-LLM).
+
+```powershell
+python src\build_learner_scores.py                # 106,079 headwords vs student dicts
+python src\build_relationships.py                 # supplement-sense typology sidecar
+```
+
+Outputs: learner-core membership (22,772 headwords, 21% of PWG), normalized
+edition deltas (AP90→AP, MW72→MW), and the 5,603-sense
+`provenance.relationship` typology rolled up in
+[`pwg_ru/relationships_rollup.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv).
+Human calibration goes through the three H180 review sheets (regenerate:
+`python src\build_h180_review_sheets.py`), not by editing thresholds inline.
+
+_Dr. Mārcis Gasūns_
