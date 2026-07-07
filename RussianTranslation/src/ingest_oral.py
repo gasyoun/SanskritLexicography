@@ -194,12 +194,17 @@ def load_pairs(path):
 
 
 # ------------------------------------------------------------------- emit
-def to_corpus_rows(pairs, work, media=None):
+def to_corpus_rows(pairs, work, media=None, extra=None):
     """Turn paired cues into corpus_builder jsonl rows (build_l0.py input schema),
     tagged oral with time anchors. Two rows per kept pair (seg=sa, seg=ru), sharing
     one globally-unique `group`. Applies the never-invent guards: a Sanskrit surface
     present AND a Cyrillic-bearing Russian -- an untranslated/garbled cue is dropped
-    (reported), never emitted as a fabricated pair."""
+    (reported), never emitted as a fabricated pair.
+
+    `extra` (H290): a constant dict merged into both seg rows' anchors -- e.g. the
+    text+PDF path (build_oral_l0.py) passes {orality, source_type} so the ingested
+    unit records which of the three oral shapes it came from. None -> unchanged
+    (the subtitle path emits exactly as before)."""
     rows = []
     kept = dropped = 0
     for p in pairs:
@@ -214,6 +219,8 @@ def to_corpus_rows(pairs, work, media=None):
                    't_start': p.get('t_start'), 't_end': p.get('t_end')}
         if media:
             anchors['source_media'] = media
+        if extra:
+            anchors.update({k: v for k, v in extra.items() if v is not None})
         if p.get('asr_conf') is not None:
             anchors['asr_conf'] = p['asr_conf']
         sa_row = {'group': group, 'seg': 'sa', 'passage': passage,
