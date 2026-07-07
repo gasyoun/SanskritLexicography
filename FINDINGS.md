@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §61) whatever its section, so existing numbers never shift; when a finding is later
+(currently §65) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -82,6 +82,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
 - 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
+- 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
 
 **Etymology & derivation**
 
@@ -731,6 +732,32 @@ correlated corrector attention biases it down.
 
 > **Source:** [csl-observatory `reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md)
 > (Chapman/Chao tables + sensitivity) — csl-observatory · 2026-07-03 · paper track A48
+
+### §64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe
+
+🔴 **A direct co-occurrence tally over the 4 local pwg_ru merge layers (PWG/PW/SCH/PWKVN) shows
+PWG does not define the headword universe by itself — PW alone covers 40,338 headwords
+(24.0% of the union) that have no PWG record at all, roughly 6× the 6,453 PWG-only headwords.**
+Evidence: unioned `index('pwg')`/`index('pw')`/`index('sch')`/`index('pwkvn')` from
+`RussianTranslation/src/dict_merge.py` over the full local layer set (167,988 headwords total).
+No-PWG combinations: `pw`-only 40,338 (24.0%), `sch`-only 9,990 (5.9%), `pw+sch+pwkvn` 10,057
+(6.0%), `pw+pwkvn` 875, `pw+sch` 624, `pwkvn`-only 20, `sch+pwkvn` 2 — **≈35,900 headwords
+(≈36% of the local union) carry zero PWG record.** PWG-only is 6,453 (3.8%); the dominant
+combination overall is `pwg+pw` at 91,648 (54.6%). Separately, of the 167,991 scraped NWS
+JSON fragments, 34,101 (20.3%) are net-new (`has_nws_extra`) beyond all four local layers —
+also far from a marginal contribution. Full breakdown + methodology:
+[`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md).
+Implication: any pwg_ru worklist/queue builder that enumerates "headwords" by iterating PWG
+records alone (as the verb-root worklist does today, via `verbs01`/PWG) will silently miss
+roughly a third of the local-layer universe — PW/SCH/PWKVN-only entries need their own
+explicit queue path, not incidental discovery through a PWG walk. This also reframes PW: it is
+not merely a revision of existing PWG senses but an independent source of new headwords, which
+matters for any "abridged tradition" retention-score analysis (don't assume PW ⊆ PWG's
+headword set). NWS at 20.3% net-new means it must be budgeted as real translation volume in
+cost/time forecasts, not treated as a rare bonus layer.
+
+> **Source:** [`SanskritLexicography/PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md)
+> (direct `dict_merge.py` index tally + NWS `has_nws_extra` scan) — SanskritLexicography · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
 ## Etymology & derivation
 

@@ -58,6 +58,11 @@ Where to read what.
 - [RussianTranslation/NWS_AUDIT_REPORT.md](RussianTranslation/NWS_AUDIT_REPORT.md)
   — living cumulative report of the NWS attribution-parser audit (per-section
   roll-up, real-loss taxonomy, source errata).
+- [PWG_LAYER_COMBINATIONS.md](PWG_LAYER_COMBINATIONS.md) — how a PWG entry is
+  actually assembled from up to 5 dictionary layers (PWG/PW/SCH/PWKVN/NWS),
+  the fixed merge order in `dict_merge.py`, and a measured co-occurrence
+  tally showing no-PWG combinations (esp. PW-only, 24% of the headword
+  universe) are common, not edge cases.
 - [RussianTranslation/LITERATURE_FOR_PWG_RU.md](RussianTranslation/LITERATURE_FOR_PWG_RU.md)
   — the reference-shelf harvest for the Sanskrit→Russian PWG translation, mined by
   pipeline insertion point (glossary, translator prompt, QA judge, corpus gate,
