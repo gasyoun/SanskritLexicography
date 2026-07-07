@@ -59,6 +59,17 @@ def has_cyr(s):
     return bool(s) and bool(CYR.search(s))
 
 
+# H215 Slice 4 -- the "lowered base grade" for oral units, in ONE place so build_tmx
+# (L0) and tm_grade (L1) apply the identical rule. Live interpretation is noisier
+# (translationese, paraphrase, hesitation), so an oral unit never reaches A on the
+# automatic signals alone -- only human adjudication lifts it there. B and C pass
+# through unchanged; written units are untouched.
+def oral_cap(grade, modality, adjudicated=False):
+    if modality == 'oral' and not adjudicated and grade == 'A':
+        return 'B'
+    return grade
+
+
 def q(s):
     """Escape text for an XML element body."""
     return escape('' if s is None else str(s))
@@ -113,10 +124,14 @@ def l0_tu_xml(rec, grade=L0_GRADE):
     sa = (rec.get('sa') or '').strip()
     ru = (rec.get('ru') or '').strip()
     src = slp1 or sa
+    # H215 Slice 4: modality/time anchors flow from the L0 record (build_l0.py) when
+    # the source was oral; written L0 records omit them -> DEFAULT_MODALITY, no anchors.
+    modality = rec.get('modality') or DEFAULT_MODALITY
+    grade = oral_cap(grade, modality, adjudicated=bool(rec.get('adjudicated')))
     parts = ['<tu tuid=%s segtype="block">\n' % quoteattr(rec.get('l0id') or tuid(rec))]
     parts.append(_prop('layer', 'L0'))
     parts.append(_prop('grade', grade))
-    parts.append(_prop('modality', DEFAULT_MODALITY))
+    parts.append(_prop('modality', modality))
     parts.append(_prop('kind', rec.get('kind')))
     parts.append(_prop('surface', sa))
     parts.append(_prop('work', rec.get('work')))
@@ -125,6 +140,11 @@ def l0_tu_xml(rec, grade=L0_GRADE):
     parts.append(_prop('genre', rec.get('genre')))
     parts.append(_prop('period', rec.get('period')))
     parts.append(_prop('date', rec.get('date')))
+    # oral-only provenance props (absent -> no prop line, so written TMX is unchanged)
+    parts.append(_prop('t_start', rec.get('t_start')))
+    parts.append(_prop('t_end', rec.get('t_end')))
+    parts.append(_prop('source_media', rec.get('source_media')))
+    parts.append(_prop('asr_conf', rec.get('asr_conf')))
     parts.append('  <tuv xml:lang="%s"><seg>%s</seg></tuv>\n' % (SRCLANG, q(src)))
     parts.append('  <tuv xml:lang="%s"><seg>%s</seg></tuv>\n' % (TGTLANG, q(ru)))
     parts.append(' </tu>\n')
@@ -361,8 +381,35 @@ def selftest():
 
     # tuid is deterministic.
     assert tuid(FIXTURE[0]) == tuid(dict(FIXTURE[0])), 'tuid not deterministic'
-    print('build_tmx selftest OK -- 3/6 rows kept, escaping + props + validation clean')
+
+    # H215 Slice 4: an oral L0 unit emits modality=oral + time anchors, and the
+    # shared oral_cap forbids A on the automatic default. A written L0 unit is
+    # unchanged (modality=written, no anchor props).
+    oral_l0 = {'l0id': 'l0-oral1', 'kind': 'translation', 'slp1': 'yogaH',
+               'sa': 'yogaḥ', 'ru': 'йога', 'work': 'gita-lecture', 'passage': '1',
+               'modality': 'oral', 't_start': 1.0, 't_end': 4.5,
+               'source_media': 'gita01.mp3', 'asr_conf': 0.82}
+    xml = l0_tu_xml(oral_l0, grade='A')      # try to force A ...
+    props = dict(re.findall(r'<prop type="([^"]+)">([^<]*)</prop>', xml))
+    assert props.get('modality') == 'oral', props
+    assert props.get('grade') == 'B', 'oral_cap must knock A->B on L0, got %s' % props.get('grade')
+    assert props.get('t_start') == '1.0' and props.get('t_end') == '4.5', props
+    assert props.get('source_media') == 'gita01.mp3', props
+    written_l0 = {'l0id': 'l0-w1', 'kind': 'translation', 'slp1': 'yogaH',
+                  'sa': 'yogaḥ', 'ru': 'йога', 'work': 'w', 'passage': '1'}
+    wprops = dict(re.findall(r'<prop type="([^"]+)">([^<]*)</prop>', l0_tu_xml(written_l0)))
+    assert wprops.get('modality') == 'written' and 't_start' not in wprops, wprops
+    assert assert_oral_cap(), 'oral_cap unit checks'
+    print('build_tmx selftest OK -- 3/6 rows kept, escaping + props + validation + oral L0 clean')
     return 0
+
+
+def assert_oral_cap():
+    assert oral_cap('A', 'oral') == 'B'
+    assert oral_cap('A', 'oral', adjudicated=True) == 'A'
+    assert oral_cap('B', 'oral') == 'B' and oral_cap('C', 'oral') == 'C'
+    assert oral_cap('A', 'written') == 'A'
+    return True
 
 
 def main():

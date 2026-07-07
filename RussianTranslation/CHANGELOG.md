@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H215 Slice 4 — oral register of the publication-grade TM
+- New [`src/ingest_oral.py`](src/ingest_oral.py): a deterministic converter turning a
+  *cleaned* timecoded transcript (WebVTT/SRT/JSON, or `--pairs` JSONL) of spoken
+  Sanskrit + its Russian rendering into the `corpus_builder/<work>.jsonl` schema the
+  L0 pipeline already consumes — tagged `modality=oral` with `t_start`/`t_end` time
+  anchors, `source_media`, optional `asr_conf`, and a canonical `iast_to_slp1` key. No
+  ASR, no cleaning (that is [H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)'s
+  upstream stage — this is the Sa→Ru-alignment half). Parallel tracks pair by index;
+  a cue-count mismatch is a hard error, never a silent `zip()` truncation.
+- **Lowered base grade for oral** in one place: shared `build_tmx.oral_cap()` forbids
+  grade A for an oral unit on automatic signals (capped at B; only human adjudication
+  lifts it), plus `tm_grade.ORAL_PENALTY` (0.15) on the composite. `build_l0.py` and
+  `build_tmx.py` thread `modality`/anchors through unchanged for written sources.
+- Design + shared schema (coordinated with H174): [`src/ORAL_INGEST.md`](src/ORAL_INGEST.md).
+  Fixture pilot: end-to-end ingest→L0→grade→TMX validates; same corroborated units
+  grade **6×A written vs 6×B oral** (mean composite 0.892→0.743). Selftests added to
+  `ingest_oral.py`, `build_tmx.py`, `tm_grade.py`.
+
 ## [1.4.0] - 2026-07-06
 
 ### no-PWG supplement-chain lane (H214) — PWG-missing headwords become translatable

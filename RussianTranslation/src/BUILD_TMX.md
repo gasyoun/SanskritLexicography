@@ -189,6 +189,25 @@ F1): rows with a non-Cyrillic `ru`, an empty SLP1 key, or `ru == sa` are dropped
 `tuid`s are content-derived (deterministic — no clock/random), so the same lexicon
 yields byte-identical TMX.
 
+## Slice 4 — the oral register
+
+Recorded/spoken Sanskrit with a Russian rendering flows through this same L0 → grade
+→ TMX pipeline via
+[`src/ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py)
+(cleaned VTT/SRT transcript → `corpus_builder/<work>.jsonl` tagged `modality=oral`
+with `t_start`/`t_end` time anchors + `source_media`). See
+[`ORAL_INGEST.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ORAL_INGEST.md)
+for the shared schema (coordinated with
+[H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)),
+the grade policy, and the pilot results.
+
+Two touch-points here: `l0_tu_xml` emits `modality`/`t_start`/`t_end`/`source_media`/
+`asr_conf` props (absent on written L0, so written TMX is byte-unchanged), and the
+shared `oral_cap()` — the **lowered base grade** — forbids grade **A** for an oral
+unit on the automatic signals alone (capped at B; only human adjudication lifts it),
+paired with `tm_grade.ORAL_PENALTY` on the composite. Fixture pilot: the same
+corroborated units grade 6×A written vs 6×B oral.
+
 ## Rights — why the output is gitignored
 
 `corpus_lexicon.jsonl` mixes public-domain and **in-copyright** named modern Russian
