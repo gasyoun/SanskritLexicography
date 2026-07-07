@@ -64,13 +64,34 @@ def main():
             existing = None
         old_nn = nn(existing) if isinstance(existing, dict) else 0
         if isinstance(existing, dict) and "--merge" in flags:
+            # Better-attempt-wins (H304): "latest requeue wins" is WRONG — a requeue can
+            # regress a card (gam h0_63_sam_0 went 2->3->7 missing fragments). Rank:
+            # any card > none; complete > partial; fewer missing fragments > more.
+            # Ties go to the NEW attempt (fresh gen, same completeness).
+            def q(r):
+                c = (r or {}).get("card")
+                if not c:
+                    return (0, 0, 0)
+                partial = bool(c.get("partial") or (r or {}).get("partial"))
+                missing = len(c.get("missing_fragments")
+                              or (r or {}).get("missing_fragments") or [])
+                return (1, 0 if partial else 1, -missing)
+
             by_key = {r.get("key"): r for r in (existing.get("results") or [])}
+            kept_better = []
             for r in result.get("results") or []:
-                if r.get("card") or r.get("key") not in by_key:
-                    by_key[r.get("key")] = r        # new non-null fills; new keys append
+                k = r.get("key")
+                if k not in by_key:
+                    by_key[k] = r                    # new keys append
+                elif r.get("card") and q(r) >= q(by_key[k]):
+                    by_key[k] = r                    # equal-or-better non-null replaces
+                elif r.get("card"):
+                    kept_better.append(k)            # worse attempt: keep the prior card
             existing["results"] = list(by_key.values())
             result = existing                        # keep the full-set meta; write merged
             print(f"Merged into {os.path.basename(out_path)}: {old_nn} -> {nn(result)} non-null")
+            if kept_better:
+                print("kept better prior attempt for: " + ", ".join(kept_better))
         elif old_nn > new_nn and "--force" not in flags:
             sys.exit(f"REFUSED: {os.path.basename(out_path)} has {old_nn} non-null cards; new has "
                      f"only {new_nn}. Use --merge to fill nulls, or --force to overwrite.")

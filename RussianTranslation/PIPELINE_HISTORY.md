@@ -580,6 +580,22 @@ likely the SAME class, not a new bug:
   parity classification mandatory before closing a session, drive the
   Workflow from the Claude Code session (not a manual Max-surface save), and
   update/check `LAUNCH_FUCKUPS.md` before closing any launch-shaped handoff.
+- Coordinator hardening (Phase 15, H304, 07-07-2026 — four operator-memory
+  rules became code): (1) `autosplit_requeue.frag_groups()` now reconstructs
+  a PRESPLIT card's fragment partition with the same H189 budgets the harness
+  used to mint the `gN:fM` ids (was: heal-budget always → topup of exactly
+  the giant cards mis-mapped); (2) gate-outcome memory — `audit_window`
+  emits `requeue.defect.fshas.txt` and `requeue_from_audit` denylists those
+  fragments, so the fragment TM can never re-serve gate-flagged content
+  (RU-emitter only so far — `defect_fragment_denylist_h304` GAP in
+  `LANG_PARITY.md`); (3) `save_and_audit --merge` is better-attempt-wins
+  (complete beats partial, fewer `missing_fragments` beat more — the gam
+  2→3→7 regression class is dead); (4) cap-and-defer — `coordinator.py`
+  claim/prepare act on the `perf_preflight` cost gate: an over-ceiling
+  window is parked in `src/pilot/deferred_monsters.jsonl` (append-only,
+  committed) and refused unless `prepare --allow-over-cost` in a dedicated
+  human-budgeted session. Closes the kAla-class monster-card `@DECIDE`
+  (MG ruling 07-07-2026: cap-and-defer).
 
 ## Where to go next
 

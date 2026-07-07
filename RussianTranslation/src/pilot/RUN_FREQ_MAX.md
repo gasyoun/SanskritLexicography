@@ -84,6 +84,20 @@ tracked-file drift and is wired into `window_selftest.py`
 - The per-root loop below is unchanged — "all roots next batch" scales the QUEUE, not the
   width. Roots still run **one at a time (≤3-wide max)**; the Slice-D 18×-parallel collapse
   (117 transient nulls) is the standing counter-example.
+- **H304 hardening (07-07-2026) — four operator-memory rules are now code paths:**
+  (1) **cap-and-defer** — `coordinator.py claim/prepare` act on the `perf_preflight` cost
+  gate: an over-ceiling (kAla-class) window is parked in
+  [`deferred_monsters.jsonl`](deferred_monsters.jsonl) and refused (`prepare
+  --allow-over-cost` only inside a dedicated human-budgeted monster session — MG ruling
+  07-07-2026); (2) **gate-outcome memory** — the RU audit writes
+  `output/requeue.defect.fshas.txt` and `requeue_from_audit.py` denylists those fragment
+  addresses, so `--tm=auto` can never re-serve a gate-flagged fragment (EN emitter is a
+  tracked GAP: `defect_fragment_denylist_h304` in [`LANG_PARITY.md`](../../LANG_PARITY.md));
+  (3) **better-attempt-wins** — `save_and_audit.py --merge` keeps the better prior attempt
+  per card (complete > partial, fewer `missing_fragments` > more), so a requeue can no
+  longer regress a card; (4) **presplit topup is sound** — `autosplit_requeue.frag_groups()`
+  reconstructs the fragment partition with the budgets of the run that minted the `gN:fM`
+  ids (pass the wf `meta` + key), instead of always the heal budget.
 
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
