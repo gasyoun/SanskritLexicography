@@ -41,8 +41,11 @@ HOMOGRAPH = {'in', 'an', 'un', 'et', 'ut', 'a', 'i'}  # de/lat ambiguous short t
 
 
 def records(limit=None):
+    # utf-8-sig on READ only: strips a leading BOM if the source ever carries one
+    # (a plain utf-8 read leaves '﻿<L>' unmatched and silently DROPS the
+    # first record — FL6/CODE_REVIEW 2026-07-04). No-op on BOM-less files.
     buf, n = [], 0
-    with open(PWG, encoding='utf-8') as f:
+    with open(PWG, encoding='utf-8-sig') as f:
         for line in f:
             line = line.rstrip('\n')
             if line.startswith('<L>'):
@@ -56,6 +59,11 @@ def records(limit=None):
                 buf = []
             elif buf:
                 buf.append(line)
+    if buf:
+        # a record opened with <L> but never closed by <LEND> (truncated source);
+        # never yield it downstream, but never lose it silently either
+        print('pwg_mask: WARNING — truncated final record dropped (no <LEND>): %r'
+              % buf[0][:80], file=sys.stderr)
 
 
 def parse(buf):
