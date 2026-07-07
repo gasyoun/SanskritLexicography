@@ -382,6 +382,34 @@ measurements in `window_status.json` and `window_ledger.jsonl`. Append milestone
 `PILOT_COST.md` §6 when a root or run-to-cap tranche is complete. The point is to answer the
 feasibility question: one Max seat over roughly two months vs a paid API bulk run.
 
+## Post-launch closeout
+
+Every Workflow/API launch with a failure, null wave, stall, kill, stale-artifact refusal,
+retry pass, cost drift, or suspicious residual must be registered in
+[`../../LAUNCH_FUCKUPS.md`](../../LAUNCH_FUCKUPS.md) before the handoff is closed. The
+entry must include expected vs actual agents/tokens, pass count, failure class, root cause,
+guardrail/fix, and residual risk. This is the exhaustive incident register; the narrative
+history in [`../../PIPELINE_HISTORY.md`](../../PIPELINE_HISTORY.md) only gets curated
+phase-level lessons.
+
+Closeout checklist:
+
+```powershell
+# Update the live state and launch evidence.
+# - .ai_state.md: handoff result and next physical action
+# - src\pilot\RUN_LOG.md: launch metrics and pass/fail narrative
+# - LAUNCH_FUCKUPS.md: classified failure record for any non-clean launch
+
+python src\pilot\check_launch_ledger.py --handoff H220
+python src\pilot\check_launch_ledger.py --since 2026-07-05
+```
+
+Calibration is lane-specific. Keep separate evidence for `verb batch`, `nominal small`,
+`nominal monster`, `no-PWG single`, `synth fan-out`, and `external API mining`; do not copy
+one lane's kill-budget, cost, or concurrency envelope into another without a measured
+launch/replay. H220 is the standing counter-example: the dense-root kill gate was correct
+for verb batches but false-killed valid no-fallback no-PWG singleton cards.
+
 ## Worked example — one real root, start to finish (vid, 04-07-2026)
 
 A concrete run, with real numbers, so the loop above isn't just abstract steps.
@@ -413,7 +441,10 @@ A concrete run, with real numbers, so the loop above isn't just abstract steps.
 8. **Promote + rebuild TM:** `promote_final_cards.py --gen-model-version claude-sonnet-5`,
    then `translation_memory.py build --lang ru` (+ `build-frags` if any heal emitted
    `frag_prov`).
-9. **Micro-commit**, move to the next queued root.
+9. **Close out the launch ledger:** if the run had nulls, retries, kills, stale-artifact
+   refusals, or cost drift, update `LAUNCH_FUCKUPS.md` and run
+   `python src\pilot\check_launch_ledger.py --handoff H151` (or the active handoff ID).
+10. **Micro-commit**, move to the next queued root.
 
 What this run taught (folded into the process above, not left as trivia): the
 preflight's agent-count estimate was badly wrong for presplit-heavy roots (now
@@ -429,4 +460,6 @@ The frequency queue milestone is done when:
   glued nested article;
 - zero `*.merged.REJECTED.md` files remain for that window;
 - rootmap-backed giant roots have matching `*.NESTED.md` outputs;
-- the cost/quota table has enough windows to estimate the run duration.
+- the cost/quota table has enough windows to estimate the run duration;
+- every non-clean Workflow/API launch in the window has a complete
+  `LAUNCH_FUCKUPS.md` entry and passes `check_launch_ledger.py`.
