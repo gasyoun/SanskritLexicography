@@ -3202,6 +3202,124 @@ def test_subprocess_gate_calls_hardened():
                  % (os.path.basename(path), needle))
 
 
+def test_ls_resolver_rv_av_anchored():
+    """H321 item #5: Ṛgveda/Atharva disambiguation must be ANCHORED on the leading
+    citation abbreviation, not a bare `'rv' in kl or 'ṛ' in kl` substring that
+    mis-routes any citation merely CONTAINING those characters (parv., gṛ., kṛ.)
+    to the RV hymn URL."""
+    import ls_resolver as L
+    # RV-family abbreviations → rv; AV / everything else → av (default).
+    for key, want in [('ṚV.', True), ('RV.', True), ('ṛv.', True),
+                      ('AV.', False), ('Nir.', False),
+                      ('parv.', False), ('Gṛ.', False), ('kṛ.', False)]:
+        got = L._is_rv_prefix(key)
+        if got != want:
+            fail('_is_rv_prefix(%r) = %r, want %r (anchored, not substring)' % (key, got, want))
+    # The fragile substring form must be gone from the source.
+    src_txt = open(os.path.join(SRC, 'ls_resolver.py'), encoding='utf-8').read()
+    if "'rv' in kl" in src_txt or "'ṛ' in kl" in src_txt:
+        fail('ls_resolver still uses the substring RV/AV disambiguation')
+    # The two pattern-engine excepts must surface, not silently `pass`.
+    if src_txt.count('except Exception:\n            pass') or '_warn_swallowed' not in src_txt:
+        fail('ls_resolver pattern-engine excepts must surface via _warn_swallowed, not pass')
+    # Live resolution still correct for genuine RV/AV samhita citations.
+    if 'rvhymns' not in (L.generate_href('pwg', 'ṚV. ', '10,85,24') or ''):
+        fail('ṚV. citation must still resolve to the rv hymns URL')
+    if 'avhymns' not in (L.generate_href('pwg', 'AV. ', '11,4,26') or ''):
+        fail('AV. citation must still resolve to the av hymns URL')
+
+
+def test_frag_tm_fidelity_gate_and_override():
+    """H321 item #3b: build_frags must NOT harvest a corrupt/blanked frag_prov
+    (first-seen-wins previously let a hand-edited wf_output poison content-addressed
+    fragment reuse), load_frag_tm must not SERVE such a row, and a later good harvest
+    must be able to override a previously-cached corrupt row."""
+    import translation_memory as tm
+    # 1) frag_senses_sane: blank/malformed senses are rejected.
+    if tm.frag_senses_sane([{'tag': '1', 'russian': 'фу'}], 'ru') is not True:
+        fail('a sane ru fragment sense must pass frag_senses_sane')
+    if tm.frag_senses_sane([{'tag': '1', 'russian': '  '}], 'ru') is not False:
+        fail('a blank-translation fragment sense must fail frag_senses_sane')
+    if tm.frag_senses_sane([], 'ru') is not False:
+        fail('empty senses must fail frag_senses_sane')
+
+    d = tempfile.mkdtemp()
+    old_repo = tm.REPO
+    try:
+        tm.REPO = d
+        good_src = '=== h ===\n1) foo <ls>ṚV.</ls>'
+        bad_src = '=== h ===\n1) bar <ls>AV.</ls>'
+        good_fsha = tm.frag_address('ru', good_src)
+        bad_fsha = tm.frag_address('ru', bad_src)
+        good_senses = [{'tag': '1', 'german': 'foo', 'russian': 'фу'}]
+        blank_senses = [{'tag': '1', 'german': 'bar', 'russian': ''}]
+        wf = {'meta': {'lang': 'ru', 'root': 'zz'}, 'results': [
+            {'key': 'zz~~h0', 'card': {'key1': 'zz', 'records': [{'senses': good_senses}],
+                                       'frag_prov': [{'fsha': good_fsha, 'senses': good_senses},
+                                                     {'fsha': bad_fsha, 'senses': blank_senses}]}}]}
+        with open(os.path.join(d, 'wf_output.sc.zz.json'), 'w', encoding='utf-8') as f:
+            json.dump(wf, f, ensure_ascii=False)
+        sidecar = os.path.join(d, 'frag.ru.jsonl')
+        _p, added, _tot = tm.build_frags('wf_output.sc.*.json', 'ru', out=sidecar)
+        served = tm.load_frag_tm('ru', sidecar)
+        if good_fsha not in served:
+            fail('a sane fragment must be harvested and served')
+        if bad_fsha in served:
+            fail('a corrupt (blank-sense) fragment must NOT be harvested/served')
+
+        # 2) Later-good override: pre-seed a CORRUPT row for an fsha, then harvest a
+        # good one for the same fsha — the good row must win at serve.
+        d2 = tempfile.mkdtemp()
+        try:
+            tm.REPO = d2
+            sidecar2 = os.path.join(d2, 'frag.ru.jsonl')
+            with open(sidecar2, 'w', encoding='utf-8') as f:
+                f.write(json.dumps({'schema': tm.FRAG_SCHEMA, 'lang': 'ru', 'fsha': good_fsha,
+                                    'senses': [{'tag': '1', 'russian': ''}],  # corrupt
+                                    'trust_level': tm.TRUST_MACHINE,
+                                    'harvested_at': '2026-01-01T00:00:00Z'}, ensure_ascii=False) + '\n')
+            if tm.load_frag_tm('ru', sidecar2):
+                fail('serve-time filter must drop a corrupt historical row (empty served map)')
+            with open(os.path.join(d2, 'wf_output.sc.zz.json'), 'w', encoding='utf-8') as f:
+                json.dump(wf, f, ensure_ascii=False)
+            tm.build_frags('wf_output.sc.*.json', 'ru', out=sidecar2)
+            served2 = tm.load_frag_tm('ru', sidecar2)
+            if good_fsha not in served2:
+                fail('a later GOOD harvest must override a previously-cached corrupt row')
+        finally:
+            shutil.rmtree(d2, ignore_errors=True)
+    finally:
+        tm.REPO = old_repo
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_corpus_gate_evidence_and_db_markers():
+    """H321 item #4 (FL7): corpus_gate must distinguish 'evidence not built/available'
+    from 'consulted and empty' — an absent evidence source or a DB failure previously
+    degraded to a bare [] indistinguishable from a genuinely uncovered headword."""
+    import corpus_gate as cg
+    saved_db = cg.CORPUS_DB
+    saved_present = set(cg.SOURCES_PRESENT)
+    try:
+        cg.SOURCES_PRESENT.clear()
+        cg.CORPUS_DB = os.path.join(tempfile.gettempdir(), 'zz_no_such_corpus.db')
+        if cg.evidence_status() != 'evidence_unavailable':
+            fail('no INDEP source loaded must report evidence_unavailable, not ok')
+        ex, st = cg.corpus_examples_with_status('agni')
+        if ex != [] or st != 'db_absent':
+            fail('absent DB must yield ([], "db_absent"), got (%r, %r)' % (ex, st))
+        card = cg.build_card({}, 'agni', None, 'огонь')
+        if card.get('evidence_status') != 'evidence_unavailable' or card.get('corpus_status') != 'db_absent':
+            fail('build_card must surface evidence_status + corpus_status markers')
+        # back-compat: corpus_examples still returns a bare list.
+        if cg.corpus_examples('agni') != []:
+            fail('corpus_examples must stay a list-returning wrapper')
+    finally:
+        cg.CORPUS_DB = saved_db
+        cg.SOURCES_PRESENT.clear()
+        cg.SOURCES_PRESENT.update(saved_present)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -3298,6 +3416,9 @@ def main():
         test_pwg_mask_bom_source_keeps_first_record,
         test_pwg_mask_truncated_final_record_not_silent,
         test_subprocess_gate_calls_hardened,
+        test_ls_resolver_rv_av_anchored,
+        test_frag_tm_fidelity_gate_and_override,
+        test_corpus_gate_evidence_and_db_markers,
     ]
     for test in tests:
         test()

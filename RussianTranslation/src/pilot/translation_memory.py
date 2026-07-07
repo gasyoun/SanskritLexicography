@@ -276,6 +276,15 @@ def reconstruct_cards(store_path, lang):
             skipped['sha-disagreement'] += 1
             continue
         raw_sha = next(iter(shas))
+        # A card with ANY blank sense is NOT content-addressed into the exact TM.
+        # H321 (code review 2026-07-04 item #3a) proposed caching such cards
+        # "per-sense" to avoid re-translating a giant card that has one blank
+        # xref sense — but measured 0/2313 sub-cards in the live store carry a
+        # blank non-partial sense (zero incidence), and the change is unsafe:
+        # tm_card_sane refuses any card with a blank sense at SERVE, so caching
+        # it would either churn (cached-then-refused) or force serving an
+        # incomplete card as complete. Kept as-is deliberately; consistent with
+        # the serve-time guard and the audit completeness gates.
         if any(not (r.get(field) or '').strip() for r in rows):
             skipped['incomplete-%s' % lang] += 1
             continue
@@ -413,6 +422,31 @@ def frag_tm_path(lang, out=None):
     return out or os.path.join(HERE, 'translation_memory.frag.%s.jsonl' % lang)
 
 
+# frag_prov senses are CARD-shaped (harvested from wf_output cards), so the
+# translation lives under 'russian'/'english' — NOT the store column names in FIELD.
+_FRAG_TRANSLATION_FIELD = {'ru': 'russian', 'en': 'english'}
+
+
+def frag_senses_sane(senses, lang):
+    """A frag_prov `senses[]` is usable only if it is a non-empty list of sense
+    objects each carrying a non-empty translation in `lang`.
+
+    The fragment sidecar is content-addressed on the fragment SOURCE and was
+    previously harvested first-seen-wins with NO fidelity check (code review
+    2026-07-04): a hand-edited or corrupt `wf_output*.json` — blanked or
+    malformed senses — permanently poisoned fragment reuse, and a later good
+    harvest of the same fsha could never override it. This gate is applied at
+    BOTH harvest (never cache garbage; let a good row override a cached bad one)
+    and serve (never hand a corrupt historical row to the harness)."""
+    if not isinstance(senses, list) or not senses:
+        return False
+    field = _FRAG_TRANSLATION_FIELD.get(lang, 'russian')
+    for s in senses:
+        if not isinstance(s, dict) or not (s.get(field) or '').strip():
+            return False
+    return True
+
+
 def _normalize_frag_row(row):
     row = dict(row or {})
     row.setdefault('id', row.get('fsha'))
@@ -445,7 +479,10 @@ def load_frag_tm(lang, path=None, denylist=None):
             except json.JSONDecodeError:
                 continue
             fsha = row.get('fsha')
-            if fsha and fsha not in deny['frags'] and row.get('senses'):
+            # Serve-time fidelity filter: a corrupt/blanked historical row is
+            # never handed to the harness, regardless of when it was harvested.
+            if (fsha and fsha not in deny['frags']
+                    and frag_senses_sane(row.get('senses'), lang)):
                 by_fsha[fsha].append(_normalize_frag_row(row))
     for fsha, candidates in by_fsha.items():
         best = best_reusable(candidates)
@@ -459,9 +496,13 @@ def build_frags(glob_pattern, lang, out=None):
     append-only fragment sidecar. Idempotent: a fragment already present (by fsha) is never
     duplicated. Returns (path, added, total)."""
     path = frag_tm_path(lang, out)
-    seen = set(load_frag_tm(lang, path))
+    # seen[fsha] == True once a SANE row for that fsha is cached. A fsha whose only
+    # cached rows are corrupt maps to False, so a later good harvest can override it
+    # (previously first-seen-wins locked in the poisoned row). load_frag_tm already
+    # applies the serve-time fidelity filter, so its keys are exactly the sane fshas.
+    seen = {fsha: True for fsha in load_frag_tm(lang, path)}
     files = sorted(_glob.glob(os.path.join(REPO, glob_pattern)))
-    new_rows, added = [], 0
+    new_rows, added, refused = [], 0, 0
     for fp in files:
         try:
             with open(fp, encoding='utf-8') as f:
@@ -493,12 +534,23 @@ def build_frags(glob_pattern, lang, out=None):
                 continue
             for fpv in card.get('frag_prov') or []:
                 fsha, senses = fpv.get('fsha'), fpv.get('senses')
-                if not fsha or not senses or fsha in seen:
+                if not fsha or not senses:
+                    continue
+                if not frag_senses_sane(senses, lang):
+                    # Never cache a corrupt/blanked fragment (poison guard).
+                    refused += 1
+                    print('warning: refusing corrupt frag_prov %s (senses fail %s fidelity) in %s'
+                          % (fsha[:12], lang, os.path.basename(fp)), file=sys.stderr)
+                    continue
+                if seen.get(fsha):
+                    # A sane row is already cached — idempotent skip. (A previously
+                    # cached CORRUPT row maps to False here, so this good row falls
+                    # through and overrides it.)
                     continue
                 src_key = r.get('key')
                 raw_sha = ((input_hashes.get(src_key) or {}).get('raw_sha256')
                            if src_key else None)
-                seen.add(fsha)
+                seen[fsha] = True
                 added += 1
                 new_rows.append({
                     'schema': FRAG_SCHEMA, 'lang': lang, 'fsha': fsha,

@@ -110,12 +110,32 @@ def slp1_to_ascii(s):
     return ''.join(c for c in nfd if not unicodedata.combining(c)).lower()
 
 # ---- dictionary index ----------------------------------------------------
+# Which correctness-authority source files were present at the last load_index().
+# FL7 (architecture audit 2026-07-02 / code review 2026-07-04): an absent evidence
+# jsonl was silently skipped, so "no independent gloss" could mean EITHER "sources
+# not built" OR "this headword is genuinely uncovered" — indistinguishable. This
+# set lets build_card mark evidence_unavailable explicitly instead of degrading
+# to an unmarked LLM-verdict.
+SOURCES_PRESENT = set()
+
+
+def evidence_status():
+    """'ok' if >=1 independent correctness authority (INDEP) is loaded; else
+    'evidence_unavailable' — meaning a 'no independent gloss' precheck reflects
+    MISSING SOURCES, not an uncovered headword. Fail loud rather than silently
+    degrade to the LLM verdict as if the evidence had been consulted and found
+    nothing."""
+    return 'ok' if any(c in SOURCES_PRESENT for c in INDEP) else 'evidence_unavailable'
+
+
 def load_index():
     idx = defaultdict(lambda: defaultdict(list))
+    SOURCES_PRESENT.clear()
     for code in INDEP + [REF]:
         path = os.path.join(HERE, code + '.jsonl')
         if not os.path.exists(path):
             continue
+        SOURCES_PRESENT.add(code)
         with open(path, encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
@@ -279,12 +299,20 @@ def close_corpus_connection():
 atexit.register(close_corpus_connection)
 
 
-def corpus_examples(slp1, limit=3):
+def corpus_examples_with_status(slp1, limit=3):
+    """Query aligned corpus verses, returning (examples, status). status is one of:
+      'ok'                — the query RAN; [] then genuinely means no aligned verse
+      'db_absent'         — the corpus DB file isn't present (evidence not available)
+      'db_error'          — the DB is present but the query raised (evidence NOT
+                            confirmed empty — a failure, not an absence of matches)
+      'skipped_short_term'— the search term was <2 chars, deliberately not queried
+    FL7: before this, every one of these returned a bare [] indistinguishable from
+    'no matches', so a build/query failure silently read as 'word uncovered'."""
     if not os.path.exists(CORPUS_DB):
-        return []
+        return [], 'db_absent'
     term = slp1_to_ascii(slp1)
     if len(term) < 2:
-        return []
+        return [], 'skipped_short_term'
     out = []
     try:
         con = corpus_connection()
@@ -308,8 +336,14 @@ def corpus_examples(slp1, limit=3):
                 if len(out) >= limit:
                     break
     except Exception as ex:
-        sys.stderr.write('corpus query skipped: %s\n' % ex)
-    return out
+        sys.stderr.write('corpus query FAILED (evidence NOT confirmed empty): %s\n' % ex)
+        return out, 'db_error'
+    return out, 'ok'
+
+
+def corpus_examples(slp1, limit=3):
+    """Back-compatible list-only wrapper (see corpus_examples_with_status)."""
+    return corpus_examples_with_status(slp1, limit)[0]
 
 # ---- heuristic correctness pre-check (LLM is the real verdict) -----------
 _RU_END = re.compile(r'(ого|ому|ыми|ами|ого|ая|ое|ые|ый|ий|ом|ой|ах|ам|ов|у|ю|и|ы|а|я|о|е|ь|й|х|м)$')
@@ -359,14 +393,20 @@ def deterministic_precheck(pwg_ru, indep):
 
 def build_card(idx, key1, key2, pwg_ru):
     indep, kow = lookup(idx, key1, key2)
+    corpus_ex, corpus_stat = corpus_examples_with_status(key1)
     return {'key1': key1, 'key2': key2 or key1, 'pwg_ru': pwg_ru,
             'independent_glosses': [{'source': g['source'], 'code': g['code'],
                                      'gloss': g['gloss']} for g in indep],
             'kow_reference': kow,
             'specialist_glosses': lookup_specialist(key1, key2),  # text-specific name glossaries, evidence-only
             'deterministic_precheck': deterministic_precheck(pwg_ru, indep),
+            # FL7 markers: distinguish "evidence not built/available" from
+            # "consulted and empty" so the LLM verdict prompt never mistakes a
+            # missing source for an uncovered headword.
+            'evidence_status': evidence_status(),
             'hindi_sense': lookup_sense(key1, key2),   # soft sense signal, not correctness
-            'corpus_examples': corpus_examples(key1),
+            'corpus_examples': corpus_ex,
+            'corpus_status': corpus_stat,
             'latin_binomials': lookup_binomials(key1, key2),   # Meulenbeld/SNP, botanical
             'skd_vcp_synonyms': lookup_synonyms(key1, key2)}   # Sanskrit kosha synonyms
 
