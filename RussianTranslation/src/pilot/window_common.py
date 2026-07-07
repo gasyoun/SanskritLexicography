@@ -30,6 +30,49 @@ def sha256_file(path):
     return h.hexdigest()
 
 
+# Cap-and-defer monster ledger (H304, MG ruling 07-07-2026). A card/window the
+# perf_preflight cost gate flags over-ceiling is never bulk-run; it is appended here
+# and excluded, accumulating for an occasional dedicated human-budgeted session.
+# Committed (not gitignored): the ledger IS the queue of deferred work — losing it
+# silently drops the most expensive (usually highest-value) entries.
+DEFERRED_MONSTERS = os.path.join(HERE, 'deferred_monsters.jsonl')
+
+
+def defer_monster(target, reason, estimate=None, source='perf_preflight', keys=None,
+                  path=None):
+    """Append one cap-and-defer row, deduped on (target, reason, UTC day) so a daily
+    coordinator sweep can't flood the ledger. Returns the row, or None if deduped.
+    Best-effort like failure_capture: a ledger write must never break a claim/prepare."""
+    p = path or DEFERRED_MONSTERS
+    today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+    try:
+        if os.path.exists(p):
+            with open(p, encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        row = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if (row.get('target') == target and row.get('reason') == reason
+                            and row.get('date') == today):
+                        return None
+        row = {'schema': 'pwg.deferred_monsters.v1', 'date': today, 'target': target,
+               'reason': reason, 'source': source, 'status': 'deferred'}
+        if estimate:
+            row['estimate'] = estimate
+        if keys:
+            row['keys'] = list(keys)
+        with open(p, 'a', encoding='utf-8') as f:
+            f.write(json.dumps(row, ensure_ascii=False) + '\n')
+        return row
+    except OSError as e:
+        print('warning: deferred_monsters ledger write failed: %s' % e, file=sys.stderr)
+        return None
+
+
 def load_json(path):
     with open(path, encoding='utf-8') as f:
         return json.load(f)
