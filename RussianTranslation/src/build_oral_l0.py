@@ -79,10 +79,37 @@ ORALITY_HANDOUT = 'handout'          # PDF handout side of a (sa+pdf) pair
 DEVA = re.compile('[ऀ-ॿ]')                       # Devanagari block U+0900..097F
 IAST = re.compile('[Ā-ſḀ-ỿāīūṛṝḷṅñṇśṣṭḍṃḥ]')     # precomposed IAST diacritics
 LATIN = re.compile('[A-Za-z]')                    # ASCII incl. SLP1/HK romanization
+_PURE_WORD = re.compile(r'^[A-Za-z]+$')           # bare-letters only -- see _is_latin_sa
 
 
 def _has(rx, s):
     return bool(s) and bool(rx.search(s))
+
+
+_ROMAN_NUMERAL = re.compile(r'^[IVXLCDM]+$')      # all-caps roman-numeral charset only
+
+
+def _is_latin_sa(tok):
+    """True if an ASCII token PLAUSIBLY carries romanized (SLP1/HK) Sanskrit, e.g.
+    `yogaH`/`karmasu`. A real transcript rendered from HTML (the H290 calibration
+    sample, 07-07-2026: samskrtam.ru lecture pages via defuddle) carries two noise
+    families that also contain bare Latin letters and were false-flagged as Sanskrit
+    citations before this guard:
+      - markdown markup -- `[▶](https://...)` timecode links, a `YT/RT/AU` site UI tag
+        -- excluded by requiring pure letters (no slash/colon/bracket/digit);
+      - all-caps ROMAN NUMERALS used as century markers ("XII век", slide numbers
+        XVIII/XIX/XX) -- excluded by the all-caps + roman-numeral-charset check below.
+        Lower/mixed-case tokens (`vi`, `kauSalam`) are unaffected -- a real SLP1 word is
+        never all-caps-only from {IVXLCDM}.
+    A residual ambiguity this does NOT resolve: bare English words/proper nouns cited by
+    the lecturer (book titles, "Bibliography", "Republic of") are still indistinguishable
+    from SLP1/HK romanization by a script-only heuristic -- logged as an open calibration
+    finding in ORAL_INGEST.md rather than guessed at here."""
+    if not _PURE_WORD.match(tok):
+        return False
+    if tok.isupper() and _ROMAN_NUMERAL.match(tok):
+        return False
+    return True
 
 
 def script_ratios(text):
@@ -96,7 +123,7 @@ def script_ratios(text):
     sample per the Slice-4a prerequisite.)"""
     toks = re.findall(r'\S+', text or '')
     alpha = [t for t in toks
-             if build_tmx.has_cyr(t) or _has(DEVA, t) or _has(IAST, t) or _has(LATIN, t)]
+             if build_tmx.has_cyr(t) or _has(DEVA, t) or _has(IAST, t) or _is_latin_sa(t)]
     if not alpha:
         return {'cyr': 0.0, 'sa': 0.0, 'n': 0}
     cyr = sum(1 for t in alpha if build_tmx.has_cyr(t))
@@ -256,7 +283,7 @@ def pairs_ru_citation(text):
         # remainder is the gloss.
         sa_toks = [t for t in re.findall(r'\S+', ln)
                    if not build_tmx.has_cyr(t) and (_has(DEVA, t) or _has(IAST, t)
-                                                    or _has(LATIN, t))]
+                                                    or _is_latin_sa(t))]
         ru_toks = [t for t in re.findall(r'\S+', ln) if build_tmx.has_cyr(t)]
         sa = ' '.join(sa_toks).strip(' .,:;—–-')
         ru = ' '.join(ru_toks).strip()

@@ -204,6 +204,46 @@ is a representative real sample (one transcript + its PDF); until it arrives the
 (`align='placeholder-*'`), and the real LaBSE/LASER + Vecalign backend + heuristic
 calibration are the gated steps 3–4.
 
+### Calibration on a real `ru+cit` sample (07-07-2026)
+
+MG supplied the first real sample: two samskrtam.ru lecture-course pages (`/l/sgi/01`,
+`/l/vvip/01` — "Sacred Geography of India" and "Introduction to Indian Philosophy",
+fetched via the `defuddle` skill, no companion PDF). Both correctly detect as `ru+cit`
+(304/409 lines, ~2–4% Sanskrit-line share). Running `ingest` surfaced two real
+false-positive families the synthetic fixture never exercised, both fixed on this
+branch in `_is_latin_sa()`:
+
+1. **Markdown/HTML markup** — `[▶](https://samskrtam.ru/...?t=29 "0:29")` timecode
+   links and a `YT/RT/AU` site UI tag contain bare Latin letters and were extracted as
+   "Sanskrit citations". Fixed by requiring a candidate token to be pure letters (no
+   slash/colon/bracket/digit) — markup is never a bare word.
+2. **All-caps Roman numerals** — century markers ("XII век") and slide numbers
+   (XVIII/XIX/XX/II/VI/XIV) matched the same non-Cyrillic-alphabetic test. Fixed by
+   excluding all-caps tokens drawn entirely from `{I,V,X,L,C,D,M}` — a real SLP1/HK word
+   is never all-caps-only from that charset (lower/mixed-case Sanskrit prefixes like
+   `vi`/`sa` are unaffected, since the exclusion only fires on `.isupper()`).
+
+After both fixes, `sgi/01` yields 6 clean pairs (down from 166 pre-fix, mostly noise)
+and `vvip/01` yields 8 clean pairs (down from 19), including real hits:
+`Bhārat Gaṇarājya`, `Āstika`, `Nāstika`.
+
+**Residual open finding — English contamination (not fixed, needs a design call):**
+both samples still surface bare **English** words/proper nouns the lecturer cites
+inline — slide captions ("Bibliography", "Republic of", "British") and a transliterated
+political-party name ("Janata Bharatiya", `vvip/01`) — that a script-only heuristic
+cannot distinguish from SLP1/HK romanized Sanskrit (both are pure ASCII words). Options
+for a future pass: (a) a small English-stopword/dictionary check to reject common
+English tokens, (b) a minimum-length + no-common-suffix heuristic, (c) route low-
+confidence Latin-only "citations" to the human reviewable sample instead of auto-
+accepting. Tracked as an `@DECIDE` in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) —
+not blocking, since these lectures have no companion PDF (no multi-reference consensus
+signal to corroborate/reject against yet).
+
+Test artefacts (fetched HTML→md, jsonl output) live under the gitignored
+`release/corpus_tm/oral_samples/` — not committed (rights: third-party recorded
+lectures, per the Rights section below).
+
 ### ⚠️ Open policy conflict — oral → A gate (MG ruling 4 vs merged Slice 4)
 
 MG ruling 4 (H290): an oral unit is **distrusted by default but not barred from
