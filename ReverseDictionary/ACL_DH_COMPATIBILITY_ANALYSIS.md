@@ -219,4 +219,53 @@ as an `@DECIDE`. Nothing in this report pre-empts the ruling.
    [sighum.wordpress.com](https://sighum.wordpress.com/)) with **WSC 2027** (Dec 2027, IIT
    Bombay) as the flagship target; final venue pick via `/decision-record` when the CFPs are out.
 
+---
+
+## 5. Option (b)'s cost — measured 07-07-2026 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
+
+**Method used, and why the originally-named source changed.** The plan was to cross
+`187992 headwords.txt` (described as "multi-source attestation tags") against the
+master list. On inspection, that file is **not** a per-word attestation dataset — it is
+a 30-line category-count *legend* (e.g. "74009 headwords coded as cpd1: simple compound
+of 2 parts...") with only 3 illustrative example lines, not the full tagged list its
+name implies. It cannot answer "which headwords are attested only in in-copyright
+sources." Recorded here rather than silently substituted, per this handoff's standing
+rule to investigate rather than guess.
+
+**What was used instead:** the master list's own single-letter source-code column
+(documented in [`SCHEMA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md)).
+Since PWK (public domain) is the implicit default and every other source is marked
+*only when the word is not already coverable from PWK or a higher-priority source*, a
+headword's marked code is a genuine (if imperfect — see caveat below) proxy for "this
+word's presence in the merged list depends on this specific source."
+
+**Result.** Of the 12 source codes actually used in the 266,820-line file, exactly two
+belong to the `ACL_DH_COMPATIBILITY_ANALYSIS.md` §3.1 "in copyright — clear risk" tier:
+
+| Code | Source | Headwords |
+|---|---|--:|
+| `H` | Edgerton, *Buddhist Hybrid Sanskrit Dictionary* (1953) | 12,552 |
+| `P` | Vettam Mani, *Puranic Encyclopaedia* (1979) | 1,919 |
+| **Total** | | **14,471** |
+
+**14,471 / 266,820 = 5.4%** of the full list is tagged to a genuinely in-copyright
+source under this reading — i.e. option (b) (drop/mask risky-source-unique headwords)
+would cost roughly **1 in 18 headwords**, concentrated almost entirely in two sources.
+
+**Important caveat, stated honestly:** the other five "clear risk" sources named in
+§3.1 — Stchoupak–Nitti–Renou, Turner *CDIAL*, Mylius, Kochergina, Pujol — **never
+appear as a marked source-code in the file at all** (see `SCHEMA.md`'s note on the 18
+declared-but-unused codes). This does not prove they contributed zero headwords; it
+means the single-letter-per-line scheme cannot isolate their *unique* contribution from
+whatever higher-priority source a shared headword got tagged under instead. **14,471 is
+therefore a lower bound**, not a final figure — the true cost of option (b) could be
+higher if, e.g., a Kochergina-only headword happens to coincide in form with a PWK
+headword and was silently absorbed as unmarked. Establishing a tighter bound would need
+per-source headword lists for the five silent sources (not available in this folder) to
+diff against the canonical list — out of scope for this pass.
+
+→ This count (14,471 confirmed + caveat) is mirrored to the `@DECIDE` row in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+so the licensing ruling can weigh it — the ruling itself remains unresolved by this pass.
+
 _Dr. Mārcis Gasūns_

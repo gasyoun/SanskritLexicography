@@ -1,0 +1,64 @@
+cff-version: 1.2.0
+message: "If you use the Reverse Dictionary of Sanskrit, please cite it using the metadata below."
+title: >-
+  Reverse Dictionary of Sanskrit: a suffix-sorted headword index merging
+  ~30 source dictionaries (1822-2005)
+abstract: >-
+  A reverse (suffix-first, rückläufiges) index of Sanskrit headwords, sorted by
+  final letter, then penultimate letter, recursively -- built for word-formation
+  research, verse/rhyme composition, and identifying partial word-forms in damaged
+  manuscripts. Merges headwords from ~30 source Sanskrit dictionaries spanning
+  1822-2005 (Böhtlingk & Roth's Petersburger Wörterbuch, PWK, Monier-Williams,
+  Apte, Macdonell, Turner, Schmidt's Nachträge, Kochergina, Grassmann,
+  Vachaspatyam, Śabdakalpadruma, and others) into a single list of 266,820
+  headwords, roughly double the size of its main predecessor (Wolfgang Schwarz's
+  1974 German reverse dictionary of Sanskrit, ~130,000 words). This dataset is
+  the bare headword + source-attribution list only (no definitions/glosses) --
+  see DATA_STATEMENT.md for scope, restrictions, and current distribution status.
+type: dataset
+authors:
+  - family-names: Gasūns
+    given-names: Mārcis
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: insert real ORCID and uncomment
+  - name: "Dhaval Patel"
+    # role: algorithmic sorting (reverse-Devanagari sort, reverse15.php, 2013)
+  - name: "Anton Pilyuganov"
+    # role: statistical appendices
+date-released: "2026-07-07"
+version: "1.0.0"
+repository-code: "https://github.com/gasyoun/SanskritLexicography"
+keywords:
+  - sanskrit
+  - lexicography
+  - reverse dictionary
+  - rhyming dictionary
+  - digital humanities
+  - word formation
+  - indology
+# `license` deliberately omitted (optional per CFF 1.2.0) rather than asserted:
+# publication tier (open / PD-subset / restricted) awaits the licensing @DECIDE
+# ruling -- see ACL_DH_COMPATIBILITY_ANALYSIS.md §3.1 / GTD_NEXT_ACTIONS.md. The
+# merged headword list draws on ~30 source dictionaries of mixed copyright
+# status; asserting a license here before that ruling would misstate the
+# dataset's actual, still-undecided legal status.
+references:
+  - type: generic
+    title: "Sanskrit-Wörterbuch in kürzerer Fassung"
+    authors:
+      - family-names: Böhtlingk
+        given-names: Otto
+    year: 1889
+    notes: "Default/unmarked source (PWK), merged with Schmidt's Nachträge — see SCHEMA.md"
+  - type: generic
+    title: "A Sanskrit-English Dictionary"
+    authors:
+      - family-names: Monier-Williams
+        given-names: Monier
+    year: 1899
+  - type: generic
+    title: "Rückläufiges Wörterbuch des Altindischen"
+    authors:
+      - family-names: Schwarz
+        given-names: Wolfgang
+    year: 1974
+    notes: "Main predecessor work (~130,000 words); this dataset is roughly double its size."
