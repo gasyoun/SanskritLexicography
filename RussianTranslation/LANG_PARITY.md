@@ -560,6 +560,23 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
       "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
     }
+  },
+  {
+    "id": "government_census",
+    "mechanism": "Deterministic census of case-government markers (Rektion) over the raw csl-orig PWG source: parenthesized case groups ((<ab>loc.</ab>), (<ab>loc.</ab> und <ab>gen.</ab>)) and prose mit-phrases, counted per entry/sense-unit with POS breakdown (H335 W3a)",
+    "files": [
+      "src/government_census.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/government_census.py": "3ae290eed18a31baa864a01321a0b80c1ced6c616d050a6aa3716e80f1b0a228"
+    }
   }
 ]
 ```
