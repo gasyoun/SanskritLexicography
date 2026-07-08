@@ -88,23 +88,30 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097-Sonnet_VisualDCS_gra_ve
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
 
-### Phase 4 — meter + translation layers triage — ✅ DONE 08-07-2026 (DECIDE outcome, not GO)
+### Phase 4 — meter + translation layers triage — ✅ DONE 08-07-2026, rights CONFIRMED same day
 
 - [x] Full 36-layer inventory confirmed (Elizarenkova Russian layer real, 10,551
   Cyrillic-text stanzas; a VedaWeb-generated metrical-scansion layer with per-pada
   long/short marks + meter-type label, both sample-exported and field-mapped). **Rights
   finding: only 2/36 catalog resources carry an explicit `license` field** — the blanket
-  "CC BY 4.0 for everything" framing above (Standing constraints) is an unverified
-  assumption, not a re-confirmed fact; see
+  "CC BY 4.0 for everything" framing above (Standing constraints) was an unverified
+  assumption at triage time; see
   [FINDINGS.md §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
-  **No layer in this triage's scope (meter/translation/German gloss/morphology-beyond-RV)
-  cleared the guardrail for a GO** — every candidate is DECIDE pending rights
-  confirmation (Elizarenkova RU explicitly in-copyright to ~2078, Renou to ~2036; PD-era
-  translators' VedaWeb-specific digitized editions still unconfirmed). Full table + per-
+  Triage originally parked all 4 meter/translation candidates DECIDE pending confirmation
+  (Elizarenkova RU explicitly in-copyright to ~2078, Renou to ~2036). Full table + per-
   consumer effort estimates:
   [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md).
-  `@DECIDE` rows opened in GTD. Handoff:
-  [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
+  Handoff: [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
+- [x] **Rights confirmed same day** — [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
+  outreach email to VedaWeb (Prof. Kölligan/Reinöhl) got an explicit written reply: all 4
+  candidate layers (Metrical Data 2024, Elizarenkova RU, Geldner de, Grassmann de)
+  confirmed **CC BY 4.0**, same terms as H096's already-landed layers — retroactively
+  confirming H096's blanket claim too. VedaWeb also confirmed the 34-null-license gap is a
+  metadata omission, not an absence of rights, and will backfill it. Consumer handoffs
+  minted: [H360](https://github.com/gasyoun/Uprava/blob/main/handoffs/H360-Sonnet_SanskritKaraoke_vedaweb_metrical_verse_seeds_08.07.26.md)
+  (SanskritKaraoke meter), [H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md)
+  (RussianTranslation RU witness), [H362](https://github.com/gasyoun/Uprava/blob/main/handoffs/H362-Sonnet_VisualDCS_vedaweb_geldner_grassmann_pwg_gloss_08.07.26.md)
+  (PWG German gloss witness).
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md and execute it.
