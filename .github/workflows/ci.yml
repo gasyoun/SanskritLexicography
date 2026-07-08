@@ -88,6 +88,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2   # the changelog guard diffs HEAD~1..HEAD on push; depth 1 has no HEAD~1
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
