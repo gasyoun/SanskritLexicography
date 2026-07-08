@@ -24,7 +24,7 @@ Relied on by: `dcs_cdsl_xref.tsv` (kosha manifest `dcs-cdsl-xref`), `build_xref.
 Verified?: ⚠️ spot-checked once (11-06-2026, n=15,902 lemmas) — 81.4% link, 18.6% (2,956 lemmas) have NO CDSL headword.
 Test to confirm: recount linked/total in [`dcs_cdsl_xref.tsv`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/dcs_cdsl_xref.tsv); any pipeline assuming 100% coverage silently drops ~1/5 of corpus vocabulary.
 ↔ Interlinks: [RECIPES §2](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) reproduces the 81.4% number that bounds this premise · [GLOSSARY "headword vs lemma"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the distinction this assumption blurs · the unlinked 18.6% is the frontier next to [GAPS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (Heritage as a third witness).
-> **Source:** [FINDINGS §12](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#12-a-fifth-of-dcs-lemmas-have-no-cdsl-headword) · csl-apidev · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §12](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#12-a-fifth-of-dcs-lemmas-have-no-cdsl-headword) · [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §2. One transliteration scheme keys all DCS files
 🔴 ✍️ **A frequency/lemma join can assume a single transliteration across the DCS-derived files.**
@@ -32,7 +32,7 @@ Relied on by: `freq_route.py`, any join between `VisualDCS/dcs_lemma_summary.jso
 Verified?: ⚠️ spot-checked once (24-06-2026) — the two files are keyed in DIFFERENT schemes (SLP1 vs IAST).
 Test to confirm: diff a sample of keys across both files; a raw string join misses every non-ASCII-coincident lemma unless one side is transcoded via `sanskrit-util`.
 ↔ Interlinks: [GLOSSARY "SLP1 vs IAST"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) is the term this premise trips over · [DEAD_ENDS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) is the *wrong* way to bridge schemes (NFD+strip) · [RECIPES §2](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) shows the transcode-then-join done right.
-> **Source:** [FINDINGS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#7-dcs-lemma-data-is-keyed-in-two-transliterations) · VisualDCS/RussianTranslation · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#7-dcs-lemma-data-is-keyed-in-two-transliterations) · [VisualDCS](https://github.com/gasyoun/VisualDCS)/[RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 
@@ -45,7 +45,7 @@ Relied on by: `gen_root_split()`, any PWG root-portrait/segmentation walk over h
 Verified?: ⚠️ spot-checked once (24-06-2026, top-50 freq roots) — 19 of 50 have a giant homonym at index > 0 (√i at 2, √mā at 2, √as at 1).
 Test to confirm: re-run [`audit_root_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_root_split.py); iterate ALL homonym records, never `bufs[0]`.
 ↔ Interlinks: [GLOSSARY "homonym index"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the ordinal this premise mis-assumes · [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (homonym token frequency) is what stays unreachable while this holds.
-> **Source:** [FINDINGS §16](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#16-giant-verb-roots-sit-at-non-zero-homonym-indexes) · csl-orig (pwg)/RussianTranslation · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §16](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#16-giant-verb-roots-sit-at-non-zero-homonym-indexes) · [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) (pwg)/[RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §4. A worklist built by iterating PWG keys covers the local layer universe
 🔴 ✍️ **Enumerating "headwords" by walking PWG records reaches the whole pwg_ru merge universe.**
@@ -53,7 +53,7 @@ Relied on by: the verb-root worklist (`verbs01`/PWG), any pwg_ru queue builder.
 Verified?: ⚠️ spot-checked once (05-07-2026, n=167,988 headwords) — ≈35,900 headwords (≈36%) carry ZERO PWG record; PW-only alone = 40,338 (24%).
 Test to confirm: re-run the `dict_merge.py` index tally in [`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md); PW/SCH/PWKVN-only entries need their own queue path.
 ↔ Interlinks: [RECIPES §5](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (union headword index) is the asset that *measures* the true universe this premise underestimates.
-> **Source:** [FINDINGS §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) · SanskritLexicography · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 
@@ -66,7 +66,7 @@ Relied on by: any cross-dict tag-count survey (etymology detectors, `<ls>` densi
 Verified?: ⚠️ spot-checked once (26-06-2026) — `<ab>E.</ab>` = Etymology in WIL but "Epithet of" in CAE, "Epic" in MD; SKD/VCP score 0 on Western markers by construction, not for lack of content.
 Test to confirm: read entry contexts per dict before parsing; count the meaning, not the marker.
 ↔ Interlinks: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) is the same "tag effect is record-type-bound" trap at corpus scale · [GLOSSARY "`<ls>` / iti register"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) is the register confound this premise ignores.
-> **Source:** [FINDINGS §34](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#34-the-e-abbreviation-tag-is-polysemous-across-dicts) + [§19](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#19-skd-and-vcp-carry-essentially-zero-western-markup) · csl-orig · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §34](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#34-the-e-abbreviation-tag-is-polysemous-across-dicts) + [§19](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#19-skd-and-vcp-carry-essentially-zero-western-markup) · [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §6. A verified correction queue stays valid until filed
 🟠 ✍️ **A triaged correction stays applicable against live csl-orig between triage and filing.**
@@ -74,7 +74,7 @@ Relied on by: the monthly csl-orig batch PR, the SanskritSpellCheck FILE-FIRST q
 Verified?: ⚠️ spot-checked once (02-07-2026, n=122) — ≈0.8%/week decay; 1 candidate already fixed upstream within ~1 week.
 Test to confirm: re-verify every row against current `csl-orig` immediately before filing; a stale row reads as bot noise.
 ↔ Interlinks: this is the ASSUMPTIONS-layer restatement of the *decay* that [STALENESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md) makes generic across all findings · [DEAD_ENDS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (blind typo respell) is what happens when a stale queue is filed unchecked · [RECIPES §6](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (correction loci) is the census this queue feeds.
-> **Source:** [FINDINGS §25](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#25-a-verified-correction-queue-decays-against-live-csl-orig) · SanskritSpellCheck · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §25](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#25-a-verified-correction-queue-decays-against-live-csl-orig) · [SanskritSpellCheck](https://github.com/drdhaval2785/SanskritSpellCheck) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 

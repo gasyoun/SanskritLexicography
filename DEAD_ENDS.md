@@ -26,7 +26,7 @@ Failed because: 38.6% precision overall (bor 18%, bur 32% transcode-garbage, ae 
 Evidence: adversarial classification, csl-atlas broad-headword review (15-06-2026); the measuring extractor `scripts/lib/dict-body-headwords.mjs` was deleted with the rejected experiment (numbers survive only in the review record).
 Don't retry unless: you have a fundamentally different signal — a corpus inflected-form→lemma index (DCS) or vidyut sandhi/compound splitting, which raises findability, not distinct-lemma count.
 ↔ Interlinks: [GAPS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the broad-headword-coverage frontier this mining tried and failed to move · [RECIPES §5](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (union headword index) is the *real* asset that measures true distinct-lemma count · [ASSUMPTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (PWG-worklist scope) is the adjacent "what covers the universe" premise.
-> **Source:** [FINDINGS §30](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#30-body-text-headword-mining-is-a-dead-end-386-percent-precision) · csl-atlas · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §30](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#30-body-text-headword-mining-is-a-dead-end-386-percent-precision) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §2. Corpus-derived present-class attribution — abandoned
 🔴 ✍️ **Deriving verb present-class (I vs VI, IV vs passive) from the DCS corpus.**
@@ -34,7 +34,7 @@ Failed because: the corpus carries no pitch accent, and the class distinction re
 Evidence: a corpus-derived class pass produced 117 spurious I/VI additions — all reverted (120 unsound total vs 19 kept); WhitneyRoots CHANGELOG revert.
 Don't retry unless: you have a grammar / Zaliznyak cross-check for every corpus-derived class — never write one into reviewed data raw.
 ↔ Interlinks: [CONTRADICTIONS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Whitney gen.pl accent) is the sibling case where the missing accent signal bites · [GLOSSARY "SLP1 vs IAST"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) covers why the corpus surface strings carry no pitch · [RECIPES §1](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) is the accent-validation path that *does* have the signal (attested RV forms).
-> **Source:** [FINDINGS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) · WhitneyRoots · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) · [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §3. Sandhi-join lookup for prefixed-verb corpus evidence — abandoned
 🟠 ✍️ **Building a `upasarga+root` sandhi-join lookup to gain prefixed-verb corpus attestations.**
@@ -42,7 +42,7 @@ Failed because: it's a no-op — the corpus lemmatizes prefixed verbs to the roo
 Evidence: `pwg_preverb1.txt` join measured in `subcard_portrait()` / FREQ_TEST_RUNBOOK.
 Don't retry unless: a different corpus that keeps prefixed surface forms is available; otherwise defer to the dictionary's own gloss for the ~80%.
 ↔ Interlinks: [ASSUMPTIONS §2](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (one transliteration keys all DCS files) is the join premise this attestation walk sat on · [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (homonym token frequency) is a neighbouring corpus-coverage gap · [GLOSSARY "headword vs lemma"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) frames why the corpus lemmatizes prefixed verbs away.
-> **Source:** [FINDINGS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#5-the-parallel-corpus-rarely-attests-prefixed-verb-forms) · RussianTranslation · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#5-the-parallel-corpus-rarely-attests-prefixed-verb-forms) · [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 
@@ -55,7 +55,7 @@ Failed because: ~9% of "typo" corrections are collisions — the "correct" spell
 Evidence: source-verification of all 122 FILE-FIRST candidates vs csl-orig (02-07-2026) — YAT 5, MW 2, PWG 2, PW 1 dual-listings; `file_first_verified.tsv`.
 Don't retry unless: the filing offers a third editorial category (merge vs respell vs leave) and checks whether the "right" form already exists as its own entry first.
 ↔ Interlinks: [ASSUMPTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a verified correction queue stays valid) is the premise a blind bulk respell violates · [RECIPES §6](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (correction loci census) is the audited path these corrections should flow through instead.
-> **Source:** [FINDINGS §24](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#24-about-9-percent-of-typo-corrections-are-collisions) · SanskritSpellCheck · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §24](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#24-about-9-percent-of-typo-corrections-are-collisions) · [SanskritSpellCheck](https://github.com/drdhaval2785/SanskritSpellCheck) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §5. NFD-decompose-then-strip-Mn as a Sanskrit normalization key — abandoned
 🔴 ✍️ **Using blanket NFD + strip-combining-marks to make an IAST comparison/join key.**
@@ -63,7 +63,7 @@ Failed because: it destroys vowel length (`ā`→`a`) and retroflex dots (`ṣ`�
 Evidence: the `form_key` design note in sanskrit_util; the recurring failure mode behind poisoned siglum folds (§45: `samk` merges Śaṃk°+Sāṃk°).
 Don't retry unless: you use a length-preserving `form_key` (never blanket NFD+strip); for `<ls>` sigla, consult the curated alias table, never fold-key similarity.
 ↔ Interlinks: [ASSUMPTIONS §2](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (one transliteration keys all files) is the join premise this is the *wrong* way to satisfy · [GLOSSARY "form_key"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) and [GLOSSARY "SLP1 vs IAST"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) define the length-preserving key that replaces it.
-> **Source:** [FINDINGS §36](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#36-iast-unicode-collides-and-normalises-lossily) + [§45](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) · sanskrit-util/csl-atlas · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §36](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#36-iast-unicode-collides-and-normalises-lossily) + [§45](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) · [sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util)/[csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §6. `OccId` / `sent_id` as a DCS primary key — abandoned
 🔴 ✍️ **Keying the DCS CoNLL-U import on `OccId` or `sent_id`.**
@@ -71,7 +71,7 @@ Failed because: both are non-unique — `OccId` is reused across a line's sub-se
 Evidence: `DCS_CONLLU_IMPORT_PLAN.md` §M5–M6, `m5_validation.md`/`m6_validation.md`.
 Don't retry unless: never — use synthetic autoincrement surrogates or position-within-text; the stable cross-corpus key is `LemmaId`.
 ↔ Interlinks: [ASSUMPTIONS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (DCS lemma == CDSL headword) is the join layer these ids were meant to feed · [RECIPES §3](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (DeepSeek alignment grounding) is a DCS-import pipeline that depends on a stable per-token key.
-> **Source:** [FINDINGS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#9-dcs-occid-and-sent_id-are-not-unique-keys) · VisualDCS · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#9-dcs-occid-and-sent_id-are-not-unique-keys) · [VisualDCS](https://github.com/gasyoun/VisualDCS) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 
@@ -85,7 +85,7 @@ Failed because: it did NOT hold — the classifier over the full corpus reversed
 Evidence: R2606-06 (refuted 02-07-2026), `r2_kosa_fusion.json`, [csl-atlas PR #184](https://github.com/sanskrit-lexicon/csl-atlas/pull/184).
 Don't retry unless: you compute the direction at corpus scale from the start — never generalise a single hand-picked lemma's fusion direction to a dictionary-level rule.
 ↔ Interlinks: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is the corpus-scale contradiction this refuted approach became · [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing across dicts) is the same "record-type-bound, not dictionary-level" trap.
-> **Source:** [QUESTIONS_LOG R2606-06](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md) · csl-atlas · 08-07-2026 · auto (seed_dead_ends.py)
+> **Source:** [QUESTIONS_LOG R2606-06](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_dead_ends.py)
 
 ---
 

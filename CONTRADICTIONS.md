@@ -29,7 +29,7 @@ Positions:
 Status: 🟡 provisional pick — encode as a per-lemma variant, NOT a rule; §54 weakly favours `stem_final` but n=2.
 Blocks: the D3 genitive-plural cell of the ZALIZNYAK_INDEX a–f accent emission.
 ↔ Interlinks: [GAPS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the n=2 data scarcity that keeps this unrulable — close that and this resolves · [RECIPES §1](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (Whitney accent validation) is the pass that measures which of the three answers the corpus supports.
-> **Source:** [FINDINGS §42](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent) + [§54](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents) · WhitneyRoots · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §42](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent) + [§54](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents) · [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §2. Varga-diachrony: 2014 dissertation prose vs its own χ² table
 🟠 ✍️ **The 2014 Gasūns dissertation prose labels as "gaining popularity" exactly the vargas its own χ² p-table shows as statistically unchanged.**
@@ -41,7 +41,7 @@ Positions:
 Status: 🟡 provisional pick — the 2026 shares + p-table AGREE against the 2014 prose; the prose is the error.
 Blocks: the GasunsDhatu 2026 §2.6 Table 5 / П9 correction (manifest `varga-series-diachrony`).
 ↔ Interlinks: [RECIPES §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (varga diachrony) is the reproducible pass whose χ² table the prose misread · [GAPS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the same epoch-stability question one layer down (collocations vs vargas) · [GLOSSARY "varga"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the unit in dispute.
-> **Source:** [FINDINGS §62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) · SanskritGrammar/VisualDCS · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar)/[VisualDCS](https://github.com/gasyoun/VisualDCS) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ## B. A claim overturned (or split) by machine-scale evidence
 *A scholarly charge or a hand-picked exemplar checked against a full machine dataset — the count adjudicates.*
@@ -56,7 +56,7 @@ Positions:
 Status: 🟡 provisional pick — vidyut adjudicates: Krylov right on `4añc`/`2and`, wrong on `ast`.
 Blocks: the GasunsDhatu 2014 revision's response to the ведущая организация review.
 ↔ Interlinks: [GLOSSARY "dhātupāṭha citation form"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the citation form the charge turns on · [ASSUMPTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) is the parallel verb-root record premise the same dhātu data underlies.
-> **Source:** [FINDINGS §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) · SanskritGrammar · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §4. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count
 🟠 ✍️ **The hand-picked *dharma* exemplar's fusion direction reverses at corpus scale.**
@@ -68,7 +68,7 @@ Positions:
 Status: 🟡 provisional pick — a record-type/genre effect, not a per-dictionary convention; the corpus count wins.
 Blocks: any "dictionary X marks citations this way" generalization from a single lemma.
 ↔ Interlinks: [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) is the same "a shared tag/convention means the same across dicts" premise this refutes at record-type level · [DEAD_ENDS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (sense-inheritance at corpus scale) is the sibling generalization that also failed when scaled up.
-> **Source:** [FINDINGS §43](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) · csl-atlas · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §43](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ## C. Two runs disagree
 *The same measurement, recomputed, gives two numbers — a reproducibility contradiction to reconcile before either is cited.*
@@ -83,7 +83,7 @@ Positions:
 Status: 🟡 provisional pick — the paper's numbers are canonical; either way the trend is flat and school-bound.
 Blocks: any per-sense-normalized cross-dict metric that doesn't family-control.
 ↔ Interlinks: [DEAD_ENDS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (sense-inheritance at corpus scale) is the neighbouring sense-count claim that also collapsed · [GAPS §10](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the same "two independent passes disagree" reliability worry for a benchmark's gold.
-> **Source:** [FINDINGS §27](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend) · csl-atlas · 08-07-2026 · Opus 4.8 (`claude-opus-4-8`)
+> **Source:** [FINDINGS §27](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
 
