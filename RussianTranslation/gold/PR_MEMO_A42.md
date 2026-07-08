@@ -10,7 +10,7 @@ The single place A42 (Корпус санскритско-русских соо�
 |---|---|---|---|---|
 | **Precision** (good renderings) | **84.4%** | 80.0–87.9 | 320 pairs, stratified period×kind, seed=42 | LLM-judged (38-agent panel + adversarial verification, 2026-06-16); human packets pending |
 | good + partial | 93.1% | — | same | same |
-| **Recall** (word-level, within processed groups) | **95.4%** (was 92.1%) | 92.2–97.3 | 287 content lemmata / 32 groups, stratified by period, seed=42 | LLM-adjudicated (Fable 5 `claude-fable-5`, H136, 07-07-2026; Medieval stratum re-adjudicated post-re-harvest by Sonnet 5 `claude-sonnet-5`, H309, 08-07-2026); human spot-check pending |
+| **Recall** (word-level, within processed groups) | **95.4%** (was 92.1%) | 92.2–97.3 | 280 translated content lemmata (287 sampled) / 32 groups, stratified by period, seed=42 | LLM-adjudicated (Fable 5 `claude-fable-5`, H136, 07-07-2026; Medieval stratum re-adjudicated post-re-harvest by Sonnet 5 `claude-sonnet-5`, H309, 08-07-2026); human spot-check pending |
 | **Group-level coverage** (eligible groups with ≥1 row) | **98.9%** | — | full corpus scan, 58,897 eligible groups | deterministic |
 | End-to-end coverage of translated content words | ≈94.3% (was 91.1%) | — | recall × group coverage | derived |
 
@@ -21,6 +21,6 @@ The single place A42 (Корпус санскритско-русских соо�
 
 ## How A42 should phrase it
 
-The resource is LLM-induced, not deterministic; both P and R are LLM-estimated with committed, re-checkable gold scaffolds awaiting human confirmation (packets under [reviewer_packets/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/gold/reviewer_packets)). Until the human pass completes, cite as "LLM-judged estimates over frozen stratified samples": precision 84.4% (95% CI 80.0–87.9, n=320 pairs), word-level recall 95.4% (95% CI 92.2–97.3, n=280 translated content lemmata, post-H309), group-level coverage 98.9% (n=58,897, deterministic). State the residual known weakness (a small number of adverb-class misses persist outside the 780-group commentary population re-harvested this pass; 4 residual commentary-class misses even within it) — bounded and documented, not eliminated.
+The resource is LLM-induced, not deterministic; both P and R are LLM-estimated with committed, re-checkable gold scaffolds awaiting human confirmation (packet generation specified in [REVIEWER_HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/REVIEWER_HANDOFF.md); packets are generated on demand, not committed). Until the human pass completes, cite as "LLM-judged estimates over frozen stratified samples": precision 84.4% (95% CI 80.0–87.9, n=320 pairs), word-level recall 95.4% (95% CI 92.2–97.3, n=280 translated content lemmata, post-H309), group-level coverage 98.9% (n=58,897, deterministic). State the residual known weakness (a small number of adverb-class misses persist outside the 780-group commentary population re-harvested this pass; 4 residual commentary-class misses even within it) — bounded and documented, not eliminated.
 
 _Dr. Mārcis Gasūns_
