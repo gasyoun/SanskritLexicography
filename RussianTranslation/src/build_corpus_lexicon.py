@@ -58,9 +58,13 @@ REJECT_RU = {'(no clear counterpart)', 'нет соответствия', '—',
 def has_cyr(s):
     return bool(s) and bool(CYR.search(s))
 SYS = ('You align a Sanskrit verse to its Russian translation at the WORD level. '
-       'For each notable Sanskrit CONTENT word (noun, verb, adjective; skip pure '
-       'particles/conjunctions), give the Russian word or phrase that renders it '
-       'in THIS translation. Output ONLY JSON: '
+       'For each notable Sanskrit CONTENT word (noun, verb, adjective, ADVERB — '
+       'e.g. temporal/manner adverbs like adya, satatam, parastāt; skip pure '
+       'particles/conjunctions/pronouns), give the Russian word or phrase that '
+       'renders it in THIS translation. Be EXHAUSTIVE: a dense verse or a verse '
+       'fused with prose commentary can carry a dozen or more content words — '
+       'go through the Sanskrit text word by word and do not stop after the '
+       'first few salient ones. Output ONLY JSON: '
        '{"pairs":[{"sa":"<sanskrit content word, IAST>","ru":"<russian equivalent '
        'from the translation>"}]}. Omit Sanskrit words with no clear Russian '
        'counterpart. Use the dictionary/citation form of the Sanskrit word.')
@@ -120,9 +124,13 @@ def align(sa_text, ru_text):
 
 SYS_BATCH = ('You word-align Sanskrit to Russian. You are given N items; each has a '
              'Sanskrit text and a Russian rendering. For EACH item INDEPENDENTLY, map '
-             'each Sanskrit content word (noun, verb, adjective; skip pure particles) to '
+             'each Sanskrit content word (noun, verb, adjective, ADVERB — e.g. temporal/'
+             'manner adverbs like adya, satatam, parastāt; skip pure particles/pronouns) to '
              'its Russian equivalent in THAT item only — NEVER carry a word between items. '
-             'Use the dictionary/citation form of the Sanskrit word. Items marked [NOTE] '
+             'Use the dictionary/citation form of the Sanskrit word. Be EXHAUSTIVE per item: '
+             'a dense verse, or a verse fused with prose commentary, can carry a dozen or '
+             'more content words — go through each item\'s Sanskrit text word by word and do '
+             'not stop after the first few salient ones. Items marked [NOTE] '
              'are sparse commentary footnotes, NOT full translations: for those align ONLY '
              'the words the note actually glosses and OMIT verse words it does not mention. '
              'CRITICAL: if a Sanskrit word has no genuine Russian counterpart in the '
