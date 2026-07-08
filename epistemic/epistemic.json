@@ -1,0 +1,427 @@
+{
+ "generated_at": "2026-07-08T10:22:45Z",
+ "side": "Sanskrit-data",
+ "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
+ "layers": [
+  {
+   "key": "ASSUMPTIONS",
+   "act": "relying on an unproven premise",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md",
+   "total": 6,
+   "by_importance": {
+    "3": 4,
+    "2": 2,
+    "1": 0
+   },
+   "by_origin": {
+    "auto": 0,
+    "human": 6
+   },
+   "entries": [
+    {
+     "title": "§1. DCS lemma == CDSL headword",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#1-dcs-lemma--cdsl-headword"
+    },
+    {
+     "title": "§2. One transliteration scheme keys all DCS files",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#2-one-transliteration-scheme-keys-all-dcs-files"
+    },
+    {
+     "title": "§3. A dict's giant verb root lives at homonym index 0",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#3-a-dicts-giant-verb-root-lives-at-homonym-index-0"
+    },
+    {
+     "title": "§4. A worklist built by iterating PWG keys covers the local layer universe",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#4-a-worklist-built-by-iterating-pwg-keys-covers-the-local-layer-universe"
+    },
+    {
+     "title": "§5. A shared markup tag means the same thing across dicts",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#5-a-shared-markup-tag-means-the-same-thing-across-dicts"
+    },
+    {
+     "title": "§6. A verified correction queue stays valid until filed",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#6-a-verified-correction-queue-stays-valid-until-filed"
+    }
+   ]
+  },
+  {
+   "key": "CONTRADICTIONS",
+   "act": "≥2 sources disagree, no verdict",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
+   "total": 5,
+   "by_importance": {
+    "3": 0,
+    "2": 5,
+    "1": 0
+   },
+   "by_origin": {
+    "auto": 0,
+    "human": 5
+   },
+   "entries": [
+    {
+     "title": "§1. Derivative ī/ū-stem gen.pl accent (Whitney, internal)",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#1-derivative-īū-stem-genpl-accent-whitney-internal"
+    },
+    {
+     "title": "§2. Varga-diachrony: 2014 dissertation prose vs its own χ² table",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#2-varga-diachrony-2014-dissertation-prose-vs-its-own-χ²-table"
+    },
+    {
+     "title": "§3. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#3-krylovs-2014-palsule-exclusion-charge-vs-vidyut-dhātupāṭha"
+    },
+    {
+     "title": "§4. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#4-skdvcp-citation-fusion-direction-one-lemma-exemplar-vs-corpus-count"
+    },
+    {
+     "title": "§5. Sense-granularity: two runs disagree on the year-correlation",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#5-sense-granularity-two-runs-disagree-on-the-year-correlation"
+    }
+   ]
+  },
+  {
+   "key": "GAPS",
+   "act": "not-yet-knowing (the frontier)",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
+   "total": 11,
+   "by_importance": {
+    "3": 0,
+    "2": 4,
+    "1": 7
+   },
+   "by_origin": {
+    "auto": 5,
+    "human": 6
+   },
+   "entries": [
+    {
+     "title": "§1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#1-derivative-īū-genpl-accent-split-d3--n2-unresolvable"
+    },
+    {
+     "title": "§2. Error population of 40 of 43 dictionaries",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#2-error-population-of-40-of-43-dictionaries"
+    },
+    {
+     "title": "§3. Heritage inflected-form morphology XML — never ingested",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#3-heritage-inflected-form-morphology-xml--never-ingested"
+    },
+    {
+     "title": "§4. Homonym token frequency beyond the 26+5 splittable groups",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#4-homonym-token-frequency-beyond-the-265-splittable-groups"
+    },
+    {
+     "title": "§5. `Stopovye` parallel-passage bundle vs full export — never content-diffed",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#5-stopovye-parallel-passage-bundle-vs-full-export--never-content-diffed"
+    },
+    {
+     "title": "§6. Cyrillic-only Sanskrit name glossaries — no join key exists",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#6-cyrillic-only-sanskrit-name-glossaries--no-join-key-exists"
+    },
+    {
+     "title": "§7. `dcs-stem-cooccurrence-full` (353,352 stem-pair rows) is uncharacterised",
+     "importance": 1,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#7-dcs-stem-cooccurrence-full-353352-stem-pair-rows-is-uncharacterised"
+    },
+    {
+     "title": "§8. DCS syntagmatic collocation tables (Прил. 6 + 7) are unanalysed",
+     "importance": 1,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#8-dcs-syntagmatic-collocation-tables-прил-6--7-are-unanalysed"
+    },
+    {
+     "title": "§9. `heritage-forms-crosswalk-extras` disagreement classes are uncounted",
+     "importance": 1,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#9-heritage-forms-crosswalk-extras-disagreement-classes-are-uncounted"
+    },
+    {
+     "title": "§10. Which-dictionary routing benchmark has single-annotator gold, no κ",
+     "importance": 2,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#10-which-dictionary-routing-benchmark-has-single-annotator-gold-no-κ"
+    },
+    {
+     "title": "§11. `dcs-verb-form-frequency-prelim` is flagged preliminary, never finalised",
+     "importance": 1,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#11-dcs-verb-form-frequency-prelim-is-flagged-preliminary-never-finalised"
+    }
+   ]
+  },
+  {
+   "key": "DEAD_ENDS",
+   "act": "abandoning an approach",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
+   "total": 7,
+   "by_importance": {
+    "3": 5,
+    "2": 2,
+    "1": 0
+   },
+   "by_origin": {
+    "auto": 1,
+    "human": 6
+   },
+   "entries": [
+    {
+     "title": "§1. Body-text / reverse-dict headword mining — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#1-body-text--reverse-dict-headword-mining--abandoned"
+    },
+    {
+     "title": "§2. Corpus-derived present-class attribution — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#2-corpus-derived-present-class-attribution--abandoned"
+    },
+    {
+     "title": "§3. Sandhi-join lookup for prefixed-verb corpus evidence — abandoned",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#3-sandhi-join-lookup-for-prefixed-verb-corpus-evidence--abandoned"
+    },
+    {
+     "title": "§4. Bulk-respell of \"typo\" headword-correction lists — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#4-bulk-respell-of-typo-headword-correction-lists--abandoned"
+    },
+    {
+     "title": "§5. NFD-decompose-then-strip-Mn as a Sanskrit normalization key — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#5-nfd-decompose-then-strip-mn-as-a-sanskrit-normalization-key--abandoned"
+    },
+    {
+     "title": "§6. `OccId` / `sent_id` as a DCS primary key — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#6-occid--sentid-as-a-dcs-primary-key--abandoned"
+    },
+    {
+     "title": "§7. Generalising dictionary-level sense-inheritance direction to corpus scale — refuted",
+     "importance": 2,
+     "origin": "auto",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#7-generalising-dictionary-level-sense-inheritance-direction-to-corpus-scale--refuted"
+    }
+   ]
+  },
+  {
+   "key": "RECIPES",
+   "act": "reproducing a fact",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md",
+   "total": 6,
+   "by_importance": {
+    "3": 2,
+    "2": 4,
+    "1": 0
+   },
+   "by_origin": {
+    "auto": 0,
+    "human": 6
+   },
+   "entries": [
+    {
+     "title": "§1. Whitney accent axis validation (17→18/19 GO) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#1-whitney-accent-axis-validation-171819-go--reproduce"
+    },
+    {
+     "title": "§2. DCS↔CDSL crosswalk (81.4% linked) → reproduce",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#2-dcscdsl-crosswalk-814-linked--reproduce"
+    },
+    {
+     "title": "§3. DeepSeek word-alignment grounding cross-check (6.6% ungrounded) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#3-deepseek-word-alignment-grounding-cross-check-66-ungrounded--reproduce"
+    },
+    {
+     "title": "§4. Varga diachrony + Cramér's V (0.037) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#4-varga-diachrony--cramérs-v-0037--reproduce"
+    },
+    {
+     "title": "§5. Cross-dict union headword index (323,425 / PWG∩MW=94,753) → reproduce",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#5-cross-dict-union-headword-index-323425--pwgmw94753--reproduce"
+    },
+    {
+     "title": "§6. Correction loci census (39,540 records) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#6-correction-loci-census-39540-records--reproduce"
+    }
+   ]
+  },
+  {
+   "key": "STALENESS",
+   "act": "decaying — confidence over time",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md",
+   "total": 66,
+   "by_importance": null,
+   "by_origin": {
+    "auto": 66,
+    "human": 0
+   },
+   "flags": {
+    "red": 0,
+    "yellow": 0,
+    "green": 66,
+    "unknown": 0
+   },
+   "entries": []
+  },
+  {
+   "key": "GLOSSARY",
+   "act": "defining canonical terms",
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md",
+   "total": 12,
+   "by_importance": {
+    "3": 4,
+    "2": 7,
+    "1": 1
+   },
+   "by_origin": {
+    "auto": 0,
+    "human": 12
+   },
+   "entries": [
+    {
+     "title": "form_key",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#formkey"
+    },
+    {
+     "title": "headword vs lemma",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#headword-vs-lemma"
+    },
+    {
+     "title": "homonym index",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#homonym-index"
+    },
+    {
+     "title": "ls source map",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#ls-source-map"
+    },
+    {
+     "title": "gaṇa",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#gaṇa"
+    },
+    {
+     "title": "Renou period-state",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#renou-period-state"
+    },
+    {
+     "title": "varga",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#varga"
+    },
+    {
+     "title": "SLP1 vs IAST",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#slp1-vs-iast"
+    },
+    {
+     "title": "key1 vs key2",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#key1-vs-key2"
+    },
+    {
+     "title": "Zaliznyak index (a–f accent axis)",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#zaliznyak-index-af-accent-axis"
+    },
+    {
+     "title": "`<ls>` / iti register",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#ls--iti-register"
+    },
+    {
+     "title": "dhātupāṭha citation form",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#dhātupāṭha-citation-form"
+    }
+   ]
+  }
+ ],
+ "staleness": {
+  "total": 66,
+  "red": 0,
+  "yellow": 0,
+  "green": 66,
+  "unknown": 0
+ },
+ "totals": {
+  "rows": 113,
+  "auto": 72,
+  "human": 41,
+  "by_importance": {
+   "3": 15,
+   "2": 24,
+   "1": 8
+  },
+  "layers": 7
+ }
+}
