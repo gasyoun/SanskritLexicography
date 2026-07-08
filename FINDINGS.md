@@ -82,6 +82,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
 - 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
+- 🟠 [§62. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate](#62-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) — 2,309 single-case parens + 40 variation groups + 1,504 mit-phrases; verbs only 417 of 1,476 marker-bearing entries; the store slot `government` is empty (0/11,261).
 - 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
 
 **Etymology & derivation**
@@ -1545,6 +1546,35 @@ A descriptive *paper* about the resource is NOT gated by the ruling — only the
 
 > **Source:** H265 analysis ([PR #207](https://github.com/gasyoun/SanskritLexicography/pull/207)),
 > Fable 5 `claude-fable-5` · 2026-07-07
+
+---
+
+### §62. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate
+
+🟠 **Böhtlingk-Roth state case government (управление; the `snih` + loc. class) explicitly
+≈3,853 times in the German sense text — 2,309 parenthesized single-case markers
+(`(<ab>acc.</ab>)` 1,102 · loc 385 · instr 270 · gen 245 · abl 190 · dat 117), only 40
+parenthesized case-VARIATION groups (`loc. und gen.` / `oder`), and 1,504 prose
+`mit (dem) <ab>case</ab>` phrases — across ≈3,222 sense units in 1,476 entries; and
+verbs are a MINORITY of the marker-bearing entries (417 of 1,476; adjectives 327,
+nominals 241, indeclinables 64), so a government layer restricted to verb roots would
+miss ~70% of the phenomenon.**
+
+Measured by the deterministic, selftest-gated
+[`RussianTranslation/src/government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py)
+over raw `csl-orig/v02/pwg/pwg.txt` (`<ls>` spans stripped; parenthesized `nom.`/`voc.`
+segregated as citation-form notes); 30/30 seeded spot-check precision. Counts are a
+**floor**: multi-case continuations after `mit` (e.g. `mit abl. instr. oder gen.`) count
+their first case only. The per-sense schema slot `government` exists in
+[`schemas/pwg_ru_final_card.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_ru_final_card.schema.json)
+but is populated on **0 of 11,261** live store rows; 510 store rows carry a marker in
+their `de` field (backfill must parse `de` — Russian preserves the markers in only
+375/510 rows). Full tables + wiring spec:
+[`RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md` §W3](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md);
+build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/H338-Sonnet_RussianTranslation_pwg-ru-government-backfill_08.07.26.md).
+
+> **Source:** H335 capability audit ([PR #227](https://github.com/gasyoun/SanskritLexicography/pull/227)),
+> Fable 5 `claude-fable-5` · 2026-07-08
 
 ---
 
