@@ -38,12 +38,14 @@ hub repo). Authored by Fable 5 (`claude-fable-5`).
 Probe + rules + spec, as above. Handoff for the validation run exists:
 [H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
 
-### Phase 1 — bulk export → registered VisualDCS feed (unblocks everything)
+### Phase 1 — bulk export → registered VisualDCS feed (unblocks everything) ✅ DONE 08-07-2026
 
-- [ ] One bulk export per core resource + full catalog → committed under
-  [`VisualDCS/non-derived/vedaweb/`](https://github.com/gasyoun/VisualDCS/tree/main/non-derived)
-  with provenance README (CC BY 4.0 attribution), registered in `non-derived/INDEX.md` +
-  PROJECT_INTERLINKS. Handoff:
+- [x] One bulk export per core resource + full catalog → committed under
+  [`VisualDCS/non-derived/vedaweb/`](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb)
+  ([PR #17](https://github.com/gasyoun/VisualDCS/pull/17), Sonnet 5 `claude-sonnet-5`)
+  with provenance [README](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/README.md)
+  (CC BY 4.0 attribution), registered in `non-derived/INDEX.md` + PROJECT_INTERLINKS.
+  Handoff:
   [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
 
 ```
