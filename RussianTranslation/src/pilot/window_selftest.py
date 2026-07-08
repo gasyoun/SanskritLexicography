@@ -3320,6 +3320,82 @@ def test_corpus_gate_evidence_and_db_markers():
         cg.SOURCES_PRESENT.update(saved_present)
 
 
+def test_promote_claim_contention():
+    """H336/H-1: the O_EXCL promotion claim file — a second claimant on a live claim
+    must retry/error cleanly (not silently proceed to race the read-guard-write window),
+    a stale (TTL-expired) claim is reclaimed with NO PID-liveness check (meaningless
+    across clones/machines — the whole point of this claim over coordinator.DirLock),
+    and --steal-lock bypasses even a fresh claim. Pins promote_lock.py's own selftest
+    into the aggregate suite rather than re-deriving the contention scenario here."""
+    import promote_lock
+    promote_lock.selftest()
+
+
+def test_audit_window_tag_routing():
+    """H336/H-2: --window-tag routes window_status/report/requeue/judge-sample to
+    src/pilot/output/<tag>/ instead of the flat singletons, so two accounts auditing
+    different windows in ONE clone cannot clobber each other's status. Untagged
+    invocation must still write the flat singletons (backward compatible)."""
+    from safe_filename import safe_name
+    tag_dir = os.path.join(OUT, safe_name('selftest_tag_zzqq'))
+    if os.path.isdir(tag_dir):
+        shutil.rmtree(tag_dir)
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        wf_path = f.name
+        json.dump({'meta': {'rootmap_sha256': None}, 'results': []}, f)
+    try:
+        proc = run([sys.executable, os.path.join(SRC, 'pilot', 'audit_window.py'),
+                   wf_path, '--root', 'zzqq', '--window-tag', 'selftest_tag_zzqq',
+                   '--allow-stale'], expect=0)
+        status_path = os.path.join(tag_dir, 'window_status.json')
+        report_path = os.path.join(tag_dir, 'audit_window.report.json')
+        if not os.path.exists(status_path):
+            fail('--window-tag must write window_status.json under output/<tag>/, got:\n%s'
+                 % proc.stdout)
+        if not os.path.exists(report_path):
+            fail('--window-tag must write audit_window.report.json under output/<tag>/')
+        live_status = os.path.join(OUT, 'window_status.json')
+        live_before = (open(live_status, encoding='utf-8').read()
+                      if os.path.exists(live_status) else None)
+        # A bare --root run (no tag) must be unaffected by the tag dir's existence.
+        if live_before is not None:
+            got = json.loads(open(live_status, encoding='utf-8').read())
+            if got.get('root') == 'zzqq':
+                fail('a tagged run must not also overwrite the flat OUT singleton')
+    finally:
+        os.remove(wf_path)
+        if os.path.isdir(tag_dir):
+            shutil.rmtree(tag_dir)
+
+
+def test_denylist_torn_line_warns():
+    """H336/H-3: translation_memory.load_denylist must WARN loudly (stderr) on a torn/
+    undecodable JSONL line instead of silently dropping it — a silently-dropped denylist
+    row is a correctness hole (a gate-rejected address quietly becomes TM-reusable
+    again), the scariest single entry in the H335 collision matrix."""
+    import translation_memory as tm
+    d = tempfile.mkdtemp()
+    path = os.path.join(d, 'denylist.jsonl')
+    good = {'schema': 'pwg.translation_memory.denylist.v1', 'kind': 'card',
+            'address': 'ru:deadbeef', 'key': 'x~~h0', 'root': 'x', 'lang': 'ru',
+            'reason': 'requeue_defect', 'blocked_at': '2026-07-08T00:00:00Z'}
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(good, ensure_ascii=False) + '\n')
+        f.write('{"kind": "card", "address": "ru:TORN_MID_LINE\n')   # deliberately truncated/torn
+    proc = subprocess.run(
+        [sys.executable, '-c',
+         "import sys; sys.path.insert(0, %r); import translation_memory as tm; "
+         "d = tm.load_denylist(%r); "
+         "assert 'ru:deadbeef' in d['addresses'], d; "
+         "print('OK')" % (HERE, path)],
+        capture_output=True, text=True, encoding='utf-8')
+    if proc.returncode != 0 or 'OK' not in proc.stdout:
+        fail('load_denylist must still load the well-formed row past a torn line:\n%s\n%s'
+            % (proc.stdout, proc.stderr))
+    if 'torn' not in proc.stderr.lower() and 'undecodable' not in proc.stderr.lower():
+        fail('load_denylist must WARN on stderr for a torn/undecodable line, got:\n%s' % proc.stderr)
+
+
 def main():
     tests = [
         test_translation_memory_addressing,
@@ -3419,6 +3495,9 @@ def main():
         test_ls_resolver_rv_av_anchored,
         test_frag_tm_fidelity_gate_and_override,
         test_corpus_gate_evidence_and_db_markers,
+        test_promote_claim_contention,
+        test_audit_window_tag_routing,
+        test_denylist_torn_line_warns,
     ]
     for test in tests:
         test()

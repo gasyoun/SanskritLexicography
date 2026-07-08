@@ -40,6 +40,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 import dict_merge as dm            # noqa: E402  — csl-orig layer indexes + NWS layout
+from window_common import append_jsonl_line  # noqa: E402
 
 LOG = os.path.join(HERE, 'layer_version_log.jsonl')
 NWS_DIR = dm.NWS_DIR
@@ -173,8 +174,7 @@ def build_snapshot(counts=False):
 
 # --- log I/O ----------------------------------------------------------------
 def append_log(record, path=LOG):
-    with open(path, 'a', encoding='utf-8', newline='\n') as f:
-        f.write(json.dumps(record, ensure_ascii=False) + '\n')
+    append_jsonl_line(path, record)
 
 
 def read_log(path=LOG):

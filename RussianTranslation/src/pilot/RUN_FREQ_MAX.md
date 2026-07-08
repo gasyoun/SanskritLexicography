@@ -350,6 +350,19 @@ Sonnet agents on a single Max session. Slice D launched 18 at once → ~140–25
 runs measured **zero** transient failures. Run roots sequentially or ≤3-wide from one driver;
 a clean sequential sweep is faster end-to-end than a collapsed wide run plus its recovery pass.
 
+**Running 3 accounts at once (3 clones, not 3 chats in one clone)?** Read the
+[3-account operating protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#recommended-3-account-operating-protocol-no-code-changes-needed)
+(H335 W1) first: one worktree per account (never a shared clone), shard roots via
+`verb_worklist.py` before starting, only ONE account runs `promote_final_cards.py --merge`
+per catch-up (single-promoter rule), and the ≤3-wide rule above is **global across all
+accounts**, not per-account — 3 accounts × 3-wide each is the 429 danger band all over again.
+H336 hardened the direct-path collision matrix that protocol documents (promotion claim file,
+`--window-tag` output namespacing, JSONL append hygiene) — see
+[promote_lock.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_lock.py)
+and `audit_window.py --window-tag` / `requeue_from_audit.py --window-tag` — but the operating
+protocol (sharding + single-promoter) is still the primary defense; the hardening is a backstop,
+not a substitute for it.
+
 ## Flaky API / Internet Policy
 
 - There is no Claude API client in this repo for production PWG translation. Claude work runs

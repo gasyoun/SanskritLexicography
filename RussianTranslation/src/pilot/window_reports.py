@@ -7,7 +7,7 @@ import math
 import os
 import re
 
-from window_common import HERE, OUT, load_json, rootmap_for, exact_file_exists
+from window_common import HERE, OUT, load_json, rootmap_for, exact_file_exists, append_jsonl_line
 from window_provenance import harness_matches_current_root
 
 import sys
@@ -145,8 +145,7 @@ def append_ledger(status, out_dir=None):
         'crashed': status.get('crashed'),
         'rootmap_sha256': status.get('rootmap_sha256'),
     }
-    with open(os.path.join(out_dir, os.path.basename(LEDGER)), 'a', encoding='utf-8') as f:
-        f.write(json.dumps(compact, ensure_ascii=False) + '\n')
+    append_jsonl_line(os.path.join(out_dir, os.path.basename(LEDGER)), compact)
 
 
 def write_window_status(report, out_dir=None):

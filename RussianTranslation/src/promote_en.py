@@ -40,6 +40,7 @@ AFTER this (it is language-agnostic and idempotent) to (re)attach the dcs_freq b
   python src/promote_en.py --selftest
 """
 import argparse
+import datetime
 import difflib
 import glob
 import json
@@ -52,6 +53,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pipeline_version
+from promote_lock import PromoteClaim, ClaimBusy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -263,6 +265,13 @@ def main():
                          '(default %(default)s)')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-backup', action='store_true')
+    ap.add_argument('--steal-lock', action='store_true',
+                    help='H336/H-1: bypass a live promotion claim on --store unconditionally. Only '
+                         'for a claim you are certain is dead (crashed run) — no PID-liveness check '
+                         'is possible across clones/machines, so this is the only override.')
+    ap.add_argument('--lock-ttl-seconds', type=int, default=None,
+                    help='override the promotion claim staleness TTL (default: promote_lock.'
+                         'DEFAULT_TTL_SECONDS = 30 min)')
     args = ap.parse_args()
 
     if not os.path.exists(args.store):
@@ -300,22 +309,33 @@ def main():
     if args.dry_run:
         print('\n(dry run — store not written)')
         return
-    if not args.no_backup:
-        bak = args.store + '.preEN.bak'
-        with open(bak, 'w', encoding='utf-8') as f, open(args.store, encoding='utf-8') as src:
-            f.write(src.read())
-        print('\nbacked up store -> %s' % os.path.basename(bak))
-    # Atomic write: temp file + os.replace so a crash/kill mid-write cannot truncate
-    # the tri-lingual store (the "EN layer wiped" scar). Under --no-backup this is the
-    # ONLY thing standing between an interrupted write and total loss.
-    tmp = args.store + '.tmp'
-    with open(tmp, 'w', encoding='utf-8') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
-    os.replace(tmp, args.store)
-    print('wrote tri-lingual store -> %s (%d rows, %d now carry en)'
-          % (os.path.relpath(args.store, ROOT), len(rows), stats['attached']))
-    print('NEXT: re-run `python src/annotate_dcs_freq.py` to (re)attach the dcs_freq block.')
+
+    # H336/H-1 (LANG_PARITY: SHARED with promote_final_cards.py): claim the store across
+    # the backup+write window so two concurrent promote_en runs can't race the same LWW
+    # write, and give each run its own timestamped backup instead of clobbering one
+    # '.preEN.bak'. See promote_lock.py for why staleness is TTL-only, not PID-based.
+    ttl_kwargs = {'ttl_seconds': args.lock_ttl_seconds} if args.lock_ttl_seconds else {}
+    try:
+        with PromoteClaim(args.store, steal=args.steal_lock, **ttl_kwargs):
+            if not args.no_backup:
+                stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+                bak = args.store + '.preEN.%s.bak' % stamp
+                with open(bak, 'w', encoding='utf-8') as f, open(args.store, encoding='utf-8') as src:
+                    f.write(src.read())
+                print('\nbacked up store -> %s' % os.path.basename(bak))
+            # Atomic write: temp file + os.replace so a crash/kill mid-write cannot truncate
+            # the tri-lingual store (the "EN layer wiped" scar). Under --no-backup this is the
+            # ONLY thing standing between an interrupted write and total loss.
+            tmp = args.store + '.tmp'
+            with open(tmp, 'w', encoding='utf-8') as f:
+                for row in rows:
+                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
+            os.replace(tmp, args.store)
+            print('wrote tri-lingual store -> %s (%d rows, %d now carry en)'
+                  % (os.path.relpath(args.store, ROOT), len(rows), stats['attached']))
+            print('NEXT: re-run `python src/annotate_dcs_freq.py` to (re)attach the dcs_freq block.')
+    except ClaimBusy as e:
+        sys.exit(str(e))
 
 
 if __name__ == '__main__':
