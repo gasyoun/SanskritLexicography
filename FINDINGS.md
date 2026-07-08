@@ -1635,6 +1635,40 @@ check the analogous `<L>`-number identity first rather than re-deriving a text m
 
 ---
 
+### §64. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field
+
+🟠 **Re-checking the VedaWeb 2.0 catalog's own `license`/`licenseUrl` fields (not the
+`ROADMAP_VEDAWEB_REUSE.md` summary) found `license: null` on 34 of 36 resources.** Only
+the Zurich AVP Edition (Zehnder et al./Hellwig et al. 2024) and the Würzburger AV Text
+(Kim 2025) carry an explicit license (`CC BY 4.0` and `CC BY-SA 4.0` respectively). The
+platform's own site-notice segment (`GET /api/platform/segments/6669938faf86e41764a1502a`)
+states *"Individual resources provide their own citation guidelines… please use these for
+citing specific data"* — i.e. VedaWeb's stated policy is per-resource **citation**, not a
+blanket redistribution **license**. No platform-wide content-license text was found
+anywhere on `/api/platform` (about/footer/privacy/site-notice); the only license string
+present platform-wide is for the Tekst **software** (`AGPL-3.0-or-later`), unrelated to
+the hosted dictionary/translation/annotation data.
+
+This does not retroactively invalidate the four layers [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md)
+already landed (Casaretto morphology, lemmatization, Scarlata & Widmer accented text,
+Lubotsky padapāṭha) — those are VedaWeb-team-authored derived scholarship, not
+third-party in-copyright translator prose, a materially different rights posture. But it
+does mean the blanket "CC BY 4.0" framing carried through `ROADMAP_VEDAWEB_REUSE.md` was
+an unverified assumption from an early on-ramp probe, not a re-confirmed fact — a
+translation like Elizarenkova's Russian Rig-Veda (translator died 2007, in copyright to
+~2078 under Russian life+70 term) is a fundamentally different case than VedaWeb's own
+annotation layer, regardless of how the platform's hosting terms are eventually read.
+
+Implication: any future VedaWeb-derived feed with a `license: null` catalog entry needs
+its own rights call before landing (bulk import), not an inherited blanket assumption —
+see [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md)
+for the full 36-layer table and the open `@DECIDE` to confirm or narrow H096's own claim.
+
+> **Source:** H098 triage ([VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb)),
+> Sonnet 5 `claude-sonnet-5` · 2026-07-08
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_

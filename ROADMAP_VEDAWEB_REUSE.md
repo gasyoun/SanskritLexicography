@@ -88,14 +88,22 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097-Sonnet_VisualDCS_gra_ve
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
 
-### Phase 4 — meter + translation layers triage — gated on Phase 1 catalog
+### Phase 4 — meter + translation layers triage — ✅ DONE 08-07-2026 (DECIDE outcome, not GO)
 
-- [ ] Inventory what 2.0 actually serves (translations incl. a possible Elizarenkova
-  Russian layer — verify, don't assume; metrical annotations; per-layer license), map
-  each viable layer to its consumer (SanskritKaraoke meter,
-  [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
-  RU context, German translations as PWG gloss witness), GO/NO-GO memo; GO items get
-  their own minted H### handoffs. Handoff:
+- [x] Full 36-layer inventory confirmed (Elizarenkova Russian layer real, 10,551
+  Cyrillic-text stanzas; a VedaWeb-generated metrical-scansion layer with per-pada
+  long/short marks + meter-type label, both sample-exported and field-mapped). **Rights
+  finding: only 2/36 catalog resources carry an explicit `license` field** — the blanket
+  "CC BY 4.0 for everything" framing above (Standing constraints) is an unverified
+  assumption, not a re-confirmed fact; see
+  [FINDINGS.md §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+  **No layer in this triage's scope (meter/translation/German gloss/morphology-beyond-RV)
+  cleared the guardrail for a GO** — every candidate is DECIDE pending rights
+  confirmation (Elizarenkova RU explicitly in-copyright to ~2078, Renou to ~2036; PD-era
+  translators' VedaWeb-specific digitized editions still unconfirmed). Full table + per-
+  consumer effort estimates:
+  [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md).
+  `@DECIDE` rows opened in GTD. Handoff:
   [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
 
 ```
