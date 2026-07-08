@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 08-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -99,9 +99,12 @@ prefers a different cut: **A03** (three axes of descent), **A07** (redundancy & 
 **A09** (sense alignment across 15 dicts), **A44** (dictionary-body triage — a DH-method
 chapter), **A37** (orthographic drift as a dater — a philology chapter).
 
-> ⚠ Confirm **A12**'s authorship. The Q3 roadmap kept the co-authored observatory papers
-> (A13/A14) out of the sole-author 15; A12 (OBS-T) is treated here as sole-authored — verify
-> before locking it as a chapter, else swap in **A48** (capture–recapture) or drop to 14+bench.
+> ✅ **A12 authorship confirmed sole-authored (08-07-2026).** The
+> [OBS-T draft](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_paper_draft.md)
+> byline is **Mārcis Gasūns** alone; Jim Funderburk and Dhaval Patel appear only as
+> *correctors within the dataset* (the 50,953 events) and as acknowledgees, not co-authors
+> (contrast the genuinely co-authored A13/A14, correctly excluded). **Ch. 15 = A12 locks;**
+> no swap to A48 needed.
 
 ---
 
@@ -337,26 +340,38 @@ artifact to draft (open item, §11).
 
 **Resolved 06-07-2026:** ✅ the 15 (§2) **approved as proposed** · ✅ series = **de Gruyter
 LSM primary, BIL fallback** · ✅ **standard subscription** (not OA).
+**Resolved 08-07-2026:** ✅ **A12 authorship = sole-authored** (§2 note; Ch. 15 locks, no swap).
 
 Still open:
-1. **A12 authorship check** — confirm OBS-T is sole-authored before locking it as Ch. 15;
-   else swap in a bench paper (A48/A07).
-2. **Book B (handbook):** confirm HdO Section 2 as its home, and its priority/timing
+1. **Book B (handbook):** confirm HdO Section 2 as its home, and its priority/timing
    relative to Book A.
-3. **Автореферат / dissertation apparatus:** is a formal ИЯз РАН thesis document needed, and
+2. **Автореферат / dissertation apparatus:** is a formal ИЯз РАН thesis document needed, and
    should it be generated from the same article base?
 
 ---
 
 ## 11. Next actions
 
-1. MG rules on §10.1–§10.2 (the 15 + the series).
-2. Run the **FAIR/DOI sprint** (Zenodo + CITATION.cff + re-mint the false DOI).
-3. Build the **rights table** (§7c).
-4. Draft the **Brill BIL proposal** (§7b) — ToC + per-chapter summaries + comparables +
-   word count + rights table.
-5. Convert the two most-mature chapters (A16, A01) to book form as sample chapters.
-6. Reconcile **M01** in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
-   to the true 15-article source set.
+**Done 08-07-2026 (H248 execution, Opus 4.8 `claude-opus-4-8`):**
+- ✅ **A12 authorship confirmed sole-authored** (§2/§10) — Ch. 15 locks.
+- ✅ **Rights table built** →
+  [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md).
+  Key finding: all 15 are unpublished drafts ⇒ copyright 100% author-held today; no chapter
+  is rights-blocked; the only standing task is a per-venue CTA read *at each article's
+  acceptance* (OUP + Nodus rows), with the CC-BY venues clean.
+- ✅ **Brill/De Gruyter proposal drafted** →
+  [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+  — author, title, aim & scope, series/readership, full ToC + per-chapter summaries,
+  length/figures/timeline, comparables, rights disclosure, author open items.
+- ✅ **M01 reconciled** in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
+  to the true 15-article source set (was "from A01–A06").
+
+**Still to do:**
+1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
+   + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
+   **CITATION.cff** add to kosha / SanskritLexicography / SanskritRussian is a Fable/Sonnet
+   follow-on (those 3 lack a `.cff`; atlas/observatory/orig/MWS already have one).
+2. Convert the two most-mature chapters (A16, A01) to book form as sample chapters
+   (Fable/Sonnet-tier mechanical conversion).
 
 _Dr. Mārcis Gasūns_
