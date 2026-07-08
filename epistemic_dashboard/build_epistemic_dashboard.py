@@ -115,7 +115,10 @@ def main():
     layers = []
     staleness = None
     tot_rows = tot_auto = tot_human = 0
+    tot_entry = tot_cand = tot_cats = tot_ilinks = 0
     tot_imp = {"3": 0, "2": 0, "1": 0}
+    cat_re = re.compile(r"^## (?:[A-Z]\.|⚙️)", re.M)   # thematic category headers (not Conclusions)
+    ilink_re = re.compile(r"^↔ Interlinks:", re.M)
 
     for key, act in LAYERS:
         p = root / f"{key}.md"
@@ -141,12 +144,19 @@ def main():
                 by_imp[str(e["importance"])] += 1
                 tot_imp[str(e["importance"])] += 1
             by_org[e["origin"]] += 1
+        cats = len(cat_re.findall(text))
+        ilinks = len(ilink_re.findall(text))
         layers.append({"key": key, "act": act, "url": file_url,
                        "total": len(entries), "by_importance": by_imp,
-                       "by_origin": by_org, "entries": entries})
+                       "by_origin": by_org, "categories": cats,
+                       "interlinks": ilinks, "entries": entries})
         tot_rows += len(entries)
         tot_auto += by_org["auto"]
         tot_human += by_org["human"]
+        tot_entry += len(entries)
+        tot_cand += by_org["auto"]
+        tot_cats += cats
+        tot_ilinks += ilinks
 
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -155,7 +165,9 @@ def main():
         "layers": layers,
         "staleness": staleness,
         "totals": {"rows": tot_rows, "auto": tot_auto, "human": tot_human,
-                   "by_importance": tot_imp, "layers": len(layers)},
+                   "by_importance": tot_imp, "layers": len(layers),
+                   "entry_rows": tot_entry, "candidates": tot_cand,
+                   "categories": tot_cats, "interlinks": tot_ilinks},
     }
     Path(args.out).write_text(json.dumps(data, ensure_ascii=False, indent=1),
                               encoding="utf-8")
