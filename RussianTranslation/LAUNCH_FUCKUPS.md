@@ -224,6 +224,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "guardrail": "src/synth_dispatch.py now caps concurrency, watches output-file growth only, confirms dead-before-redispatch, uses private staging and watcher-safe landing, seals outputs, and routes >800 <ls> entries to deterministic assembly.",
     "residual_status": "structurally-guarded",
     "residual_risk": "All future pwg_ru multi-agent fan-outs must go through synth_dispatch.py; bare fan-outs are banned."
+  },
+  {
+    "id": "H317_MEDIUM50_3WIDE_KILL_CASCADE_2026-07-08",
+    "handoff": "H317",
+    "date": "2026-07-08",
+    "title": "3 concurrent Workflow windows -> 100% kill-timeout cascade, 0/38 cards clean",
+    "lane": "nominal medium (band-4, 3-30 citation size)",
+    "model": "claude-sonnet-5",
+    "orchestrator": "Sonnet 5 Claude Code session, 3 Workflow tool launches in one message",
+    "expected": {
+      "agents": "19 + 17 + 13 = 49 expected agents across h317_w1a/w1b/w2a (perf_preflight agent_expected_after_tm)",
+      "tokens": "not estimated per-window; order of ~2-3M subagent tokens for 38 cards"
+    },
+    "actual": {
+      "agents": "67 + 61 + 49 = 177 agents (each window hit its own MAX_AGENTS budget-kill-switch)",
+      "tokens": "599,538 + 422,945 + 528,476 = 1,550,959 subagent tokens, 0 cards translated"
+    },
+    "passes": 2,
+    "symptoms": "All three simultaneously-launched windows (13+12+13=38 cards) returned 0 ok / 38 null. Every batch and every self-heal bisection group hit kill-timeout (45-180s ceiling), cascading into ever-smaller heal fragments until each window's own MAX_AGENTS budget-kill-switch tripped. One agent (h317_w1a b3) additionally errored with 'API Error: Connection closed mid-response.' A SOLO (1-wide) retry of h317_w1a (pass 2, run wf_b2b55c28-409) still surfaced 8 separate 'Connection closed mid-response' agent errors out of 67 agent() calls and again tripped its own MAX_AGENTS=67 kill-switch, yielding only 1/13 cards with content at all (zoqa_san), and even that one was flagged missing_senses by the deterministic gate (0/13 clean net).",
+    "classification": "concurrency/api",
+    "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
+    "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
+    "residual_status": "open -- retries paused pending confirmation the transient API instability has cleared; 0/50 H317 cards clean as of this entry",
+    "residual_risk": "If this recurs on a later clean-environment retry, escalate as a genuine kill-gate miscalibration for nominal single-card windows rather than assuming transient infra every time; if it does NOT recur, this entry is the transient-outage case per the NOMINAL_W1_100SMALL_2026-07-06 precedent."
   }
 ]
 ```
