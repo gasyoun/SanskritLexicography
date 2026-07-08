@@ -28,6 +28,7 @@ is a requeue subset (the full Slice-C originals were overwritten; re-run or reco
 re-run this script — it is idempotent and supersede-safe).
 """
 import argparse
+import datetime
 import glob
 import json
 import os
@@ -38,6 +39,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import pipeline_version
 import dict_merge
+from promote_lock import PromoteClaim, ClaimBusy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -281,6 +283,13 @@ def main():
                          'translated sub-cards not in this run). Use for a per-root catch-up — the '
                          'default full overwrite WIPES any root whose wf_output file is no longer '
                          'on disk (the gam-RU loss mode).')
+    ap.add_argument('--steal-lock', action='store_true',
+                    help='H336/H-1: bypass a live promotion claim on --store unconditionally. Only '
+                         'for a claim you are certain is dead (crashed run) — no PID-liveness check '
+                         'is possible across clones/machines, so this is the only override.')
+    ap.add_argument('--lock-ttl-seconds', type=int, default=None,
+                    help='override the promotion claim staleness TTL (default: promote_lock.'
+                         'DEFAULT_TTL_SECONDS = 30 min)')
     args = ap.parse_args()
 
     paths = sorted(glob.glob(os.path.join(ROOT, args.glob)))
@@ -314,65 +323,86 @@ def main():
         print('  output was overwritten; re-run that root and re-run this script to complete it):')
         print('  ' + ', '.join('%s(%d)' % (r, per_root[r]['cards']) for r in thin))
 
-    # --merge: replace only the SUB-CARDS present in this run, keep every other row.
-    # Sub-card granularity (not root) is deliberate: a per-root CATCH-UP promotes only the
-    # missing sub-cards, which are disjoint from the ones already in the store — a root-level
-    # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
-    # Guards against the full-overwrite wipe when only a subset of wf_output files is on disk.
-    kept = 0
-    if args.merge and os.path.exists(args.store):
-        promoted_subs = {r['subcard'] for r in rows}
-        touched_roots = {r['key1'] for r in rows}
-        keep_rows = []
-        with open(args.store, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                if e.get('subcard') not in promoted_subs:
-                    keep_rows.append(e)
-        kept = len(keep_rows)
-        print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
-              % (len(promoted_subs), sorted(touched_roots), kept))
-        rows = keep_rows + rows
-
     if args.dry_run:
+        # A dry run never writes, so it needs no claim — but SKIP the merge-preview read of
+        # args.store here too (it would be a second, unlocked reader of a file a real promote
+        # run might be mid-write on); dry-run coverage above is computed from wf_output alone.
         print('\n(dry run — no store written)')
         return
 
-    # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current size.
-    # A default (non-merge) run rebuilds the store from whatever wf_output files are on disk;
-    # if most are gone (or only a subset is present) this silently WIPES the store — a
-    # 10,122-row store was once overwritten to 472. Require --force to shrink >50%.
-    if os.path.exists(args.store) and not args.force:
-        try:
-            with open(args.store, encoding='utf-8') as f:
-                existing = sum(1 for line in f if line.strip())
-        except OSError:
-            existing = 0
-        if existing and len(rows) < existing * 0.5:
-            sys.exit('REFUSED: would shrink store %d -> %d rows (>50%% loss). Use --merge for a '
-                     'per-root catch-up, or --force if a full rebuild is truly intended.'
-                     % (existing, len(rows)))
+    # H336/H-1: claim the store for the ENTIRE read-guard-write window — merge-read,
+    # overwrite guard, backup, final write — so two concurrent promote runs can never
+    # interleave. See promote_lock.py for why this is TTL-only, not PID-based.
+    ttl_kwargs = {'ttl_seconds': args.lock_ttl_seconds} if args.lock_ttl_seconds else {}
+    try:
+        claim_cm = PromoteClaim(args.store, steal=args.steal_lock, **ttl_kwargs)
+        with claim_cm:
+            # --merge: replace only the SUB-CARDS present in this run, keep every other row.
+            # Sub-card granularity (not root) is deliberate: a per-root CATCH-UP promotes only
+            # the missing sub-cards, disjoint from the ones already in the store — a root-level
+            # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
+            # Guards against the full-overwrite wipe when only a subset of wf_output is on disk.
+            kept = 0
+            if args.merge and os.path.exists(args.store):
+                promoted_subs = {r['subcard'] for r in rows}
+                touched_roots = {r['key1'] for r in rows}
+                keep_rows = []
+                with open(args.store, encoding='utf-8') as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        e = json.loads(line)
+                        if e.get('subcard') not in promoted_subs:
+                            keep_rows.append(e)
+                kept = len(keep_rows)
+                print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
+                      % (len(promoted_subs), sorted(touched_roots), kept))
+                rows_to_write = keep_rows + rows
+            else:
+                rows_to_write = rows
 
-    if os.path.exists(args.store) and not args.no_backup:
-        bak = args.store + ('.premerge.bak' if args.merge else '.legacy.bak')
-        os.replace(args.store, bak)
-        print('\nbacked up prior store -> %s' % os.path.basename(bak))
-    # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write
-    # can never leave the canonical store truncated (the store this project has lost
-    # before). Matches the tmp+replace pattern in run_batch.apply_review.
-    tmp = args.store + '.tmp'
-    with open(tmp, 'w', encoding='utf-8') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
-    os.replace(tmp, args.store)
-    print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
-          % (args.store, len(rows), args.review_status))
-    print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'
-          % args.review_status)
-    print('      edition until G5 human review flips review_status to approved.')
+            # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current
+            # size. A default (non-merge) run rebuilds the store from whatever wf_output files
+            # are on disk; if most are gone (or only a subset is present) this silently WIPES
+            # the store — a 10,122-row store was once overwritten to 472. Require --force to
+            # shrink >50%.
+            if os.path.exists(args.store) and not args.force:
+                try:
+                    with open(args.store, encoding='utf-8') as f:
+                        existing = sum(1 for line in f if line.strip())
+                except OSError:
+                    existing = 0
+                if existing and len(rows_to_write) < existing * 0.5:
+                    sys.exit('REFUSED: would shrink store %d -> %d rows (>50%% loss). Use --merge '
+                             'for a per-root catch-up, or --force if a full rebuild is truly '
+                             'intended.' % (existing, len(rows_to_write)))
+
+            if os.path.exists(args.store) and not args.no_backup:
+                # H336/H-1: a UNIQUE timestamped backup name — the old fixed '.premerge.bak'
+                # meant a second concurrent promote (even serialized seconds apart by this same
+                # claim) would overwrite the first run's only recovery copy of the pre-merge
+                # store. Each promote now keeps its own backup.
+                stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+                bak = args.store + ('.premerge.%s.bak' % stamp if args.merge
+                                    else '.legacy.%s.bak' % stamp)
+                os.replace(args.store, bak)
+                print('\nbacked up prior store -> %s' % os.path.basename(bak))
+            # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write
+            # can never leave the canonical store truncated (the store this project has lost
+            # before). Matches the tmp+replace pattern in run_batch.apply_review.
+            tmp = args.store + '.tmp'
+            with open(tmp, 'w', encoding='utf-8') as f:
+                for row in rows_to_write:
+                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
+            os.replace(tmp, args.store)
+            print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
+                  % (args.store, len(rows_to_write), args.review_status))
+            print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'
+                  % args.review_status)
+            print('      edition until G5 human review flips review_status to approved.')
+    except ClaimBusy as e:
+        sys.exit(str(e))
 
 
 if __name__ == '__main__':

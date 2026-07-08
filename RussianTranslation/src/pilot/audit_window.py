@@ -265,6 +265,13 @@ def main():
                          'audit_window.report.json (auto-enabled for a wf_output under the OS temp dir)')
     ap.add_argument('--out-dir',
                     help='write report/status/requeue artifacts to this directory instead of src/pilot/output')
+    ap.add_argument('--window-tag', nargs='?', const='', default=None,
+                    help='H336/H-2: route window_status/report/requeue/judge-sample artifacts to '
+                         'src/pilot/output/<tag>/ instead of the flat singletons, so 3 accounts '
+                         'auditing 3 different windows in ONE clone cannot clobber each other\'s '
+                         'status or requeue a sibling window\'s keys. Bare --window-tag (no value) '
+                         'defaults the tag to --root. Omit entirely for the untagged legacy '
+                         'behavior (writes src/pilot/output/ singletons, unchanged).')
     ap.add_argument('--judge-sample-rate', type=float, default=0.10,
                     help='deterministic clean-key semantic judge sample rate (default: 0.10)')
     ap.add_argument('--judge-sample-min', type=int, default=5,
@@ -297,8 +304,13 @@ def main():
     # FL8 fixture guard: a self-test / temp-file audit writes its status+report to a scratch
     # dir so it can never clobber the live singletons; a real repo run writes OUT as before.
     ephemeral = args.ephemeral or _under_tempdir(wf)
+    # Precedence: explicit --out-dir wins outright; else --window-tag namespaces under
+    # OUT/<tag> (tag defaults to --root when the flag is bare); else the ephemeral
+    # scratch-dir guard; else None (write the flat OUT singletons, untagged legacy path).
+    window_tag = (args.window_tag or args.root or 'default') if args.window_tag is not None else None
     report_out_dir = os.path.abspath(args.out_dir) if args.out_dir else (
-        tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None)
+        os.path.join(OUT, safe_name(window_tag)) if window_tag else (
+        tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None))
 
     _payload, wf_meta, results, keys, null_cards = workflow_payload(wf)
     emit_audit_event(

@@ -65,8 +65,22 @@ def input_digest(subs):
     return h.hexdigest(), missing
 
 
-def latest_state(root):
-    status = latest_status(OUT)
+def tag_out_dir(tag, root):
+    """H336/H-2: prefer the per-window tag dir a tagged audit_window.py run wrote to,
+    falling back to the flat OUT singletons when no tag dir exists (untagged legacy runs,
+    or a tag dir that was never created for this root)."""
+    if tag:
+        cand = os.path.join(OUT, safe_name(tag))
+        if os.path.isdir(cand):
+            return cand
+    default_tag_dir = os.path.join(OUT, safe_name(root))
+    if not tag and os.path.isdir(default_tag_dir):
+        return default_tag_dir
+    return OUT
+
+
+def latest_state(root, out_dir=OUT):
+    status = latest_status(out_dir)
     if not status:
         return 'ready'
     if status.get('_error'):
@@ -100,13 +114,13 @@ def harness_matches(root, rootmap_sha, expected_keys=None):
     return ok, meta
 
 
-def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=None):
+def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=None, out_dir=OUT):
     if failures:
         return {
             'action': 'Fix root-split input issues before generating a harness.',
             'command': 'python src\\pilot\\root_window_status.py %s' % root,
         }
-    status = latest_status(OUT)
+    status = latest_status(out_dir)
     harness = os.path.join(HERE, 'run_pilot_wf.opt2.js')
     all_keys = list(all_keys or [])
     pending_keys = list(pending_keys or [])
@@ -127,8 +141,8 @@ def next_action(root, failures, rootmap_sha=None, all_keys=None, pending_keys=No
                 meta.get('error') if isinstance(meta, dict) and status and status.get('_error') else ''),
         }
     state = status.get('state') or 'unknown'
-    requeue, requeue_error = queue_lines(os.path.join(OUT, 'requeue.keys.txt'))
-    judge_sample, sample_error = queue_lines(os.path.join(OUT, 'judge_sample.keys.txt'))
+    requeue, requeue_error = queue_lines(os.path.join(out_dir, 'requeue.keys.txt'))
+    judge_sample, sample_error = queue_lines(os.path.join(out_dir, 'judge_sample.keys.txt'))
     if requeue_error or sample_error:
         return {
             'action': 'Queue files could not be read; inspect file permissions before continuing.',
@@ -182,8 +196,13 @@ def main():
     ap.add_argument('root')
     ap.add_argument('--prune-stale', action='store_true',
                     help='delete generated raw/portrait inputs for this root prefix that are not declared in the current rootmap')
+    ap.add_argument('--window-tag',
+                    help='H336/H-2: prefer src/pilot/output/<tag>/ for status/requeue reads (falls '
+                         'back to the flat singletons if the tag dir does not exist). Omit to auto-'
+                         'prefer a dir named after the root, if one exists, else the singletons.')
     args = ap.parse_args()
     root = args.root
+    status_dir = tag_out_dir(args.window_tag, root)
     rp, stem = rootmap_path(root)
     if not rp:
         sys.exit('FAIL: no rootmap for %r under %s' % (root, INP))
@@ -273,7 +292,7 @@ def main():
         failures.append('batch metadata errors: %d' % len(batch_errors))
 
     print('root              : %s (%s)' % (root, stem))
-    print('current state     : %s' % latest_state(root))
+    print('current state     : %s' % latest_state(root, out_dir=status_dir))
     print('rootmap           : %s' % rp)
     print('rootmap sha256    : %s' % rootmap_sha)
     print('input digest      : %s' % digest)
@@ -301,14 +320,14 @@ def main():
     if failures:
         print('FAIL:', '; '.join(failures))
         nxt = next_action(root, failures, rootmap_sha=rootmap_sha,
-                          all_keys=all_keys, pending_keys=pending_keys)
+                          all_keys=all_keys, pending_keys=pending_keys, out_dir=status_dir)
         print('next action       : %s' % nxt['action'])
         print('next command      : %s' % nxt['command'])
         if nxt.get('note'):
             print('next note         : %s' % nxt['note'])
         sys.exit(1)
     nxt = next_action(root, failures, rootmap_sha=rootmap_sha,
-                      all_keys=all_keys, pending_keys=pending_keys)
+                      all_keys=all_keys, pending_keys=pending_keys, out_dir=status_dir)
     print('next action       : %s' % nxt['action'])
     print('next command      : %s' % nxt['command'])
     if nxt.get('note'):

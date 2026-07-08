@@ -16,6 +16,10 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+from window_common import append_jsonl_line  # noqa: E402
+
 REPO = os.path.normpath(os.path.join(HERE, '..', '..'))
 # Auto-captured incidents go to a SEPARATE, git-ignored log so the curated,
 # tracked post-mortems in failures/failures.jsonl stay pristine (human-authored
@@ -81,8 +85,7 @@ def append_failure(mode, symptom, severity='high', root=None, data=None,
         parent = os.path.dirname(os.path.abspath(path))
         if parent:
             os.makedirs(parent, exist_ok=True)
-        with open(path, 'a', encoding='utf-8') as f:
-            f.write(json.dumps(rec, ensure_ascii=False) + '\n')
+        append_jsonl_line(path, rec)
         return rec
     except Exception as e:
         print('warning: failure auto-capture failed: %s' % e, file=sys.stderr)
