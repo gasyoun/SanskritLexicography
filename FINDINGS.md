@@ -1604,6 +1604,37 @@ build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/H338-S
 
 ---
 
+### §63. VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk
+
+🟢 **VedaWeb 2.0's `lemmatization.json` export (H096) already carries a per-token
+`id_gra` array resolved via its own `kosh.uni-koeln.de/cdsd/gra/restful/ids` API — and
+that internal ID is exactly the Grassmann `<L>` entry number in
+[`csl-orig/v02/gra/gra.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/gra/gra.txt)**
+(confirmed live: `id_gra=79` → `<L>79<pc>0008<k1>agni…`; `id_gra=1824` →
+`<L>1824<pc>0230<k1>Iq…`). H097 built the full crosswalk
+([`gra_vedaweb_crosswalk.tsv`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/gra_vedaweb_crosswalk.tsv),
+[report](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/GRA_CROSSWALK.md))
+entirely from local `csl-orig` data — no bulk API calls, no accent-normalization text
+matching (§36's transcoder pitfalls don't apply to a plain ID join). Coverage: 9,945/12,785
+GRA entries (77.8%), 9,475/11,108 unique `key1` headwords (85.3%) attested ≥1× in RV;
+192,637 linked token occurrences. Only 1,633 headwords are unattested, and a spot-check
+traced these to compound-member-only stems ("enthalten in …") rather than a matching gap.
+
+**Caveat:** `lemmatization.json`'s 164,758 tokens all carry a non-empty `id_gra` — the
+export appears pre-filtered to dictionary-linkable content words, not a full RV word
+census. Occurrence counts here mean "attested via VedaWeb's curated linking layer," not
+an exhaustive RV frequency count.
+
+**Implication for future GRA/PWG/MW × VedaWeb work:** the `<L>`-number-as-ID pattern likely
+generalizes — `lemmatization.json` also carries `id_mw` and `id_pwg` fields with the same
+kosh RESTful API backing, so an MW↔VedaWeb or PWG↔VedaWeb crosswalk (if ever queued) should
+check the analogous `<L>`-number identity first rather than re-deriving a text match.
+
+> **Source:** direct inspection of `VisualDCS/non-derived/vedaweb/lemmatization.json` +
+> one live `kosh.uni-koeln.de` API probe, Sonnet 5 `claude-sonnet-5` · 2026-07-08 (H097)
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
