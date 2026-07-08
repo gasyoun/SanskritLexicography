@@ -40,6 +40,11 @@ DOT = re.compile(r"(🔴|🟠|🟡)")
 ORIGIN = re.compile(r"(⚙️|✍️)")
 STALE_ROW = re.compile(r"^\|\s*\[§(\d+)\]")
 STALE_FLAG = re.compile(r"(🔴|🟡|🟢|⬜)")
+# FINDINGS.md — the settled-fact CORE the seven siblings orbit. Two layouts: the Sanskrit side
+# uses `### §N.` ATX headings, the infra side uses inline `🔴 **§N.**` bold.
+FINDING_ATX = re.compile(r"^### §(\d+)\.", re.M)
+FINDING_INLINE = re.compile(r"^(?:🔴|🟠|🟡)\s*\*\*§(\d+)\.", re.M)
+IMP = {"🔴": 3, "🟠": 2, "🟡": 1}
 
 
 def gh_slug(heading):
@@ -100,6 +105,19 @@ def parse_staleness(text):
     return total, flags
 
 
+def parse_findings_core(text):
+    """Count FINDINGS.md's settled facts + importance, from whichever layout it uses.
+    Importance = the first 🔴/🟠/🟡 dot in each finding's block."""
+    bounds = list(FINDING_ATX.finditer(text)) or list(FINDING_INLINE.finditer(text))
+    by_imp = {"3": 0, "2": 0, "1": 0}
+    for i, m in enumerate(bounds):
+        start, end = m.start(), (bounds[i + 1].start() if i + 1 < len(bounds) else len(text))
+        dm = DOT.search(text[start:end])
+        if dm:
+            by_imp[str(IMP[dm.group(1)])] += 1
+    return len(bounds), by_imp
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", required=True)
@@ -158,16 +176,29 @@ def main():
         tot_cats += cats
         tot_ilinks += ilinks
 
+    # FINDINGS.md — the settled-fact CORE the seven siblings orbit (measured, all ✍️ human).
+    core = None
+    fp = root / "FINDINGS.md"
+    if fp.exists():
+        f_total, f_imp = parse_findings_core(fp.read_text(encoding="utf-8"))
+        core = {"key": "FINDINGS",
+                "act": "measuring — the settled facts the seven siblings graduate into",
+                "url": f"{args.repo_url}/FINDINGS.md",
+                "total": f_total, "by_importance": f_imp,
+                "by_origin": {"auto": 0, "human": f_total}}
+
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "side": side_name,
         "repo_url": args.repo_url,
+        "core": core,
         "layers": layers,
         "staleness": staleness,
         "totals": {"rows": tot_rows, "auto": tot_auto, "human": tot_human,
                    "by_importance": tot_imp, "layers": len(layers),
                    "entry_rows": tot_entry, "candidates": tot_cand,
-                   "categories": tot_cats, "interlinks": tot_ilinks},
+                   "categories": tot_cats, "interlinks": tot_ilinks,
+                   "findings": core["total"] if core else 0},
     }
     Path(args.out).write_text(json.dumps(data, ensure_ascii=False, indent=1),
                               encoding="utf-8")
