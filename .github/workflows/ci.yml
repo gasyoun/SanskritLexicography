@@ -115,7 +115,14 @@ jobs:
             RussianTranslation/src/make_edition_cut.py \
             RussianTranslation/src/validate_release.py \
             RussianTranslation/src/release_readiness.py \
-            RussianTranslation/src/preflight_remaining_gates.py
+            RussianTranslation/src/preflight_remaining_gates.py \
+            RussianTranslation/src/export_lod.py \
+            RussianTranslation/src/lod_acceptance.py
+      - name: LOD graph acceptance (fixture-only, H350/E7)
+        working-directory: RussianTranslation
+        run: |
+          pip install rdflib pyshacl
+          python src/lod_acceptance.py --cards /nonexistent
       - name: Validate roadmap
         working-directory: RussianTranslation
         run: python src/roadmap_check.py
