@@ -83,9 +83,8 @@ function bar(auto, human){
     `Seven sibling registries to <a href="${esc(d.repo_url)}/FINDINGS.md">FINDINGS.md</a>, ` +
     `minted under <a href="https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md">H356</a>. ` +
     (isInfra
-      ? 'This is the <b>infra / process</b> side — private, viewed locally (not published). '
-      : 'This is the <b>Sanskrit-data</b> side. Its infra twin lives in the private Uprava repo. ') +
-    `Generated ${esc(d.generated_at)}.`;
+      ? 'This is the <b>infra / process</b> side — private, viewed locally (not published).'
+      : 'This is the <b>Sanskrit-data</b> side. Its infra twin lives in the private Uprava repo.');
   document.getElementById('findings-link').href = d.repo_url + '/FINDINGS.md';
 
   const t = d.totals;
@@ -157,18 +156,14 @@ function bar(auto, human){
   cc.push(`Each row carries an <b>↔ Interlinks</b> line, so the seven docs read as one graph: an assumption points to the recipe that would settle it and the dead end that shows what breaks if it fails.`);
   document.getElementById('conclusions').innerHTML = cc.map(x => `<li>${x}</li>`).join('');
 
-  // Footer — authored-doc dated header + a live "data generated" stamp.
-  const gen = d.generated_at || '';
-  const g = gen.slice(0, 10);  // YYYY-MM-DD
-  document.getElementById('lastup').textContent = g ? `${g.slice(8,10)}-${g.slice(5,7)}-${g.slice(0,4)}` : '—';
-  document.getElementById('genstamp').textContent = gen ? `Data generated ${gen} by build_epistemic_dashboard.py.` : '';
+  // Footer — authored-doc dated header (date only; no machine timestamp).
+  const g = (d.generated_at || '').slice(0, 10);  // YYYY-MM-DD
+  document.getElementById('lastup').textContent = g ? `${g.slice(8,10)}-${g.slice(5,7)}-${g.slice(0,4)}` : '08-07-2026';
 })();
 </script>
 
 <footer style="margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem;text-align:right;font-style:italic;color:var(--mut);font-size:.85rem">
-  <div>Created: 08-07-2026 · Last updated: <span id="lastup">—</span></div>
-  <div id="genstamp"></div>
-  <div>Dr. Mārcis Gasūns</div>
+  Created: 08-07-2026 · Last updated: <span id="lastup">08-07-2026</span> · Dr. Mārcis Gasūns
 </footer>
 </body>
 </html>
