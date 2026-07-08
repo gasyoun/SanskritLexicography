@@ -38,6 +38,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   routed to `csl-standards` (G2); full data publication gated on G5 approvals. IRI
   publication domain is an open `@DECIDE` (placeholder w3id PURL until ruled).
 
+### H6 Zipf agreement (Renou hypothesis programme step 3) — 08-07-2026
+- New [`src/renou_h6_zipf.py`](src/renou_h6_zipf.py): among 172,845 entries across
+  the 8 canonical dicts carrying both `<ls>` and `dcs` era spans, bins by
+  log10(DCS lemma text frequency) and fits a logistic curve to `ls`–`dcs` exact
+  agreement. **H6 confirmed**: exact agreement 66.7% → 0.2% across the frequency
+  range, `dcs_adds` 9.3% → 97.8% in lockstep; 50% crossing at freq ≈ 2.7 DCS
+  texts. See [`RENOU_H6_ZIPF.md`](RENOU_H6_ZIPF.md) (F7 in `RENOU_FINDINGS.md`).
+  Recommends (no code change) a frequency-gated confidence flag as an
+  alternative to `renou_portrait.py`'s state-count `LOW_INFO_MIN_STATES`
+  heuristic. Computed by Sonnet 5 (`claude-sonnet-5`).
+
 ### H290 (H215 Slice 4a) — oral TEXT + PDF front-end
 - New [`src/build_oral_l0.py`](src/build_oral_l0.py): the text+PDF front-end for oral
   transcripts that are **not** a pre-aligned subtitle pair (what `ingest_oral.py`
