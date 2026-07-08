@@ -52,7 +52,35 @@ from the lexicon.
   print the actual **verse pair + the published Russian translation it's quoted from**
   (Елизаренкова РВ/АВ, academic Mahābhārata, …). Currently wired for 4 flagship headwords
   (agni, anya, akṣara, ananta); generalize its `WORDS` map to document any headword that
-  way. Requires the SamudraManthanam sibling repo.
+  way. Requires the SamudraManthanam sibling repo. **This corpus's Elizarenkova text is
+  grey-rights** (not cleared for redistribution, per `SamudraManthanam/README.md`) — it
+  stays internal to that application, never surfaced in a public artifact.
+
+## RV citation witness (VedaWeb, CC BY 4.0 — distinct from the corpus above)
+
+[`src/vedaweb_ru_witness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/vedaweb_ru_witness.py)
+([H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md))
+looks up Elizarenkova's published Russian rendering by **RV location**
+(`mandala.hymn.stanza`), reading the committed
+[`VisualDCS/non-derived/vedaweb/elizarenkova_ru_1989_1999.json`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/elizarenkova_ru_1989_1999.json)
+feed (10,552 stanzas, sibling repo). This is a **different source and a different rights
+posture** from the `_build_corpus_ru.py` DB above: VedaWeb (Universität zu Köln) holds an
+explicit written CC BY 4.0 grant for this specific hosted resource (confirmed 08-07-2026,
+see the feed's own README), so it is committed openly — the SamudraManthanam copy is not,
+and the two must never be conflated when citing "Elizarenkova via this org."
+
+```
+python src/vedaweb_ru_witness.py 1.1.1          # one stanza
+python src/vedaweb_ru_witness.py --hymn 1.1     # every stanza in a hymn
+python src/vedaweb_ru_witness.py --citation     # full bibliographic citation
+```
+
+**Advisory/citation-context only** — this is a lookup tool, not a data pipeline. It is
+meant to be run by hand (or from an ad-hoc script) when a PWG/MW headword's RV citation
+would benefit from the published Russian rendering as scholarly context. Nothing it
+returns is ever written into `headword_index.tsv` or any other reviewed store data —
+per the org's I/VI accent-collapse lesson, external corpus/translation data stays
+read-only and advisory everywhere.
 
 ## So, to answer "why is this Russian here?"
 

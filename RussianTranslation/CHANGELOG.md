@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H361 — Elizarenkova RV citation/context witness (VedaWeb, CC BY 4.0)
+- New [`src/vedaweb_ru_witness.py`](src/vedaweb_ru_witness.py): RV `location` →
+  Elizarenkova's published Russian rendering, reading the committed
+  [`VisualDCS/non-derived/vedaweb/elizarenkova_ru_1989_1999.json`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/elizarenkova_ru_1989_1999.json)
+  feed (10,552 stanzas, CC BY 4.0 confirmed 08-07-2026). Advisory/citation-context
+  only — never written into `headword_index.tsv` or any reviewed store data. See
+  [CORPUS_PROVENANCE.md § RV citation witness](CORPUS_PROVENANCE.md#rv-citation-witness-vedaweb-cc-by-40--distinct-from-the-corpus-above)
+  for why this is a distinct rights posture from the grey-rights Elizarenkova copy
+  already inside the `SamudraManthanam` corpus DB.
+
 ### H350 / E7 — flat OntoLex export → real LOD graph (OntoLex + vartrans + PROV-O + LiLa)
 - New [`src/export_lod.py`](src/export_lod.py): upgrades the flat one-way string
   export ([`src/export_interop.py`](src/export_interop.py) → `release/ontolex.ttl`,

@@ -32,6 +32,12 @@ relicense third-party material:
   — may be quoted verbatim, with attribution, as before.
 - **Modern corpus translations** remain tied to their source corpus/project
   permissions. Keep citation/provenance metadata on every reused passage.
+- **Elizarenkova's Russian Rig-Veda translation** (accessed via
+  [`src/vedaweb_ru_witness.py`](src/vedaweb_ru_witness.py), sourced from VedaWeb 2.0,
+  Universität zu Köln) is **CC BY 4.0**, confirmed explicitly for that specific hosted
+  resource (see [`CORPUS_PROVENANCE.md`](CORPUS_PROVENANCE.md#rv-citation-witness-vedaweb-cc-by-40--distinct-from-the-corpus-above)).
+  This is a separate copy/rights posture from the Elizarenkova text inside the
+  `SamudraManthanam` corpus (grey-rights, not redistributed here or anywhere public).
 
 The **code** in this repository is licensed separately; see the repository's
 top-level `LICENSE`.
