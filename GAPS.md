@@ -59,4 +59,45 @@ How to close: a proper-noun lookup table validated against a Sanskrit onomastico
 
 ---
 
+## ⚙️ Auto-seeded candidates (unconfirmed — `seed_gaps.py`, 08-07-2026)
+
+Surfaced by [`seed_gaps.py`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/seed_gaps.py) as a set-difference over the [kosha manifest](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json): datasets that exist but carry **no** FINDINGS row measuring them. These are `⚙️ auto` **candidates** — a human confirms (→ `✍️`, promote to FINDINGS once measured) or deletes. Row counts are the manifest's; the "why it matters" is a first pass to be sharpened.
+
+### §7. `dcs-stem-cooccurrence-full` (353,352 stem-pair rows) is uncharacterised
+🟡 ⚙️ **We have the full Sanskrit-stem co-occurrence table (353,352 pairs, IDs 1–222342) but NO FINDINGS row on what its network structure shows.**
+Why it matters: a corpus-wide collocation graph would ground compound-formation, synonym-cluster, and semantic-field claims that are currently asserted per-lemma; feeds any distributional-semantics analysis.
+Blocker: no tool — needs a graph/statistics pass (degree distribution, top collocates, hapax rate), not a row count.
+How to close: load the pair table, compute the obvious network statistics, append a FINDINGS row; owner VisualDCS.
+> **Source:** manifest `dcs-stem-cooccurrence-full` (H291) · kosha · 08-07-2026 · auto (seed_gaps.py)
+
+### §8. DCS syntagmatic collocation tables (Прил. 6 + 7) are unanalysed
+🟡 ⚙️ **We have the per-lemma collocate tables — all-corpus (`dcs-sintagmatic-appendix7`, 82,800 rows) and per-historical-period (`dcs-sintagmatic-appendix6-periods`, 19,076 rows, 7 files) — but NO FINDINGS row comparing them.**
+Why it matters: the period-split vs all-corpus pair is exactly the data to test whether collocations are epoch-stable (the varga question §62, but at the lexical layer); a genuine diachronic-collocation finding.
+Blocker: no tool — needs a per-period vs all-corpus diff; the appendix7 copy also has a byte-different UTF-16LE Cyrillic twin (H291) to dedup first.
+How to close: align the period files against the all-corpus table, measure collocation drift; owner VisualDCS.
+> **Source:** manifest `dcs-sintagmatic-appendix7` / `dcs-sintagmatic-appendix6-periods` (H291) · kosha · 08-07-2026 · auto (seed_gaps.py)
+
+### §9. `heritage-forms-crosswalk-extras` disagreement classes are uncounted
+🟡 ⚙️ **We have the Heritage form-level crosswalk extras (1,037,239 rows, incl. a `heritage_forms_oracle_disagreements` form→disagreement-class table) but NO FINDINGS row on how often Heritage and kosha disagree, or on what.**
+Why it matters: the disagreement rate + its classes are the missing quality metric for the Heritage morphology witness ([GAPS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)); tells us whether to trust Heritage forms as an oracle.
+Blocker: data tier — `restricted` (Heritage LGPLLR composition), so the count is publishable but the rows aren't public.
+How to close: tally the disagreement-class distribution, append a FINDINGS row (rate only); owner SanskritLexicography HeadwordLists.
+> **Source:** manifest `heritage-forms-crosswalk-extras` (H291) · kosha · 08-07-2026 · auto (seed_gaps.py)
+
+### §10. Which-dictionary routing benchmark has single-annotator gold, no κ
+🟠 ⚙️ **The 24-scenario routing shared-task benchmark (`which-dictionary-routing-benchmark`) has single-annotator gold (Fable 5, one pass) — NO inter-annotator agreement measured over its 44-code answer space.**
+Why it matters: a shared-task benchmark with no κ can't quantify its own gold reliability, which caps the credibility of any leaderboard result built on it (csl-guides `/about/shared-tasks`).
+Blocker: needs a second independent annotation pass (see `/gold-adjudicate`), not just a rerun.
+How to close: second-annotate the 24 scenarios, compute κ + a confusion table, append a FINDINGS row.
+> **Source:** manifest `which-dictionary-routing-benchmark` (H281) · kosha/csl-guides · 08-07-2026 · auto (seed_gaps.py)
+
+### §11. `dcs-verb-form-frequency-prelim` is flagged preliminary, never finalised
+🟡 ⚙️ **The DCS verb-form frequency table (106 rows) is explicitly `preliminary` in the manifest — NO FINDINGS row, and no final version.**
+Why it matters: verb forms are the top of the frequency dictionary (roots dominate §64/§16); a finalised verb-form frequency would directly feed the freq-first translation queue.
+Blocker: unclear — the "preliminary" marker's reason isn't recorded (coverage? method?); needs the owner to state what makes it non-final.
+How to close: identify the preliminary caveat, finalise or document why it can't be, append a FINDINGS row; owner VisualDCS.
+> **Source:** manifest `dcs-verb-form-frequency-prelim` (H291) · kosha · 08-07-2026 · auto (seed_gaps.py)
+
+---
+
 _Dr. Mārcis Gasūns_
