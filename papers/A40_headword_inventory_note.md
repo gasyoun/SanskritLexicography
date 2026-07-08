@@ -1,28 +1,39 @@
 ---
 paper_id: A40
 title: "Twelve Years of Headwords: A Controlled 2014-vs-2026 Census of the Cologne Digital Sanskrit Dictionaries and Their Corpus Grounding"
-status: draft (skeleton, 2/5) — scaffolded 2026-06-26
-readiness: 2/5
+status: draft (skeleton, 3/5) — scaffolded 2026-06-26, advanced 2026-07-08 (H348)
+readiness: 3/5
 venue: "IJL / eLex"
 author: "Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru"
-data_source: "HeadwordLists/NOW_VS_THEN.md (census complete; figures regenerate from headword_diff.py against pinned csl-orig) + VisualDCS/dcs_lemma_summary.json (DCS-2021 attested lemmas)"
+data_source: "HeadwordLists/NOW_VS_THEN.md (census complete; figures regenerate from headword_diff.py against pinned csl-orig) + VisualDCS/dcs_lemma_summary.json (DCS-2021 attested lemmas; draft tables) + A38 / VisualDCS DCS-2026 release (98,606 lemmas — submission denominator, recompute pending)"
 ---
 
 # Twelve Years of Headwords: A Controlled 2014-vs-2026 Census of the Cologne Digital Sanskrit Dictionaries and Their Corpus Grounding
 
-> **Draft status (2026-06-26).** Manuscript skeleton built directly on the completed
-> census in [`../HeadwordLists/NOW_VS_THEN.md`](../HeadwordLists/NOW_VS_THEN.md). All
+_Created: 26-06-2026 · Last updated: 08-07-2026_
+
+> **Draft status (2026-07-08, H348; scaffolded 2026-06-26).** Manuscript skeleton built
+> directly on the completed census in
+> [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md). All
 > numerical claims below are transcribed from that synthesis and recompute from the
-> frozen [`then-2014/`](../HeadwordLists/then-2014/) snapshots vs the current
-> [`now-2026/`](../HeadwordLists/now-2026/) regeneration via
-> [`headword_diff.py`](../HeadwordLists/headword_diff.py). **Open before submission:**
-> (1) write §2 Related work; (2) pin a single csl-orig commit SHA and reconcile the
-> AP 88,869/88,867 live-drift discrepancy; (3) lock ONE DCS denominator (DCS-2021's
-> 83,239 attested lemmas) and recompute the per-dictionary attestation table with a
-> homograph control, reporting each rate as an upper bound; (4) finalise the byline
-> (ORCID) and add the A38 citation once its DOI is minted. The per-dictionary
-> DCS-attestation rates in §4.3 are **illustrative upper bounds** (bare-lemma join)
-> pending the homograph control.
+> frozen [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) snapshots vs the current
+> [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) regeneration via
+> [headword_diff.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py).
+> **Home repo for the manuscript: SanskritLexicography `papers/`** — the census artifacts
+> live in this repository; [gasyoun/VisualDCS](https://github.com/gasyoun/VisualDCS)
+> contributes only the DCS denominator.
+> **Advanced 08-07-2026 (readiness 2/5 → 3/5, H348, Fable 5 `claude-fable-5`):** §2
+> Related work written; denominator policy locked (§3.3 — draft tables stay DCS-2021 as
+> computed, the submission headline recomputes against A38's DCS-2026); the
+> corpus-unattested ≠ ghost-word caveat and the lemmatizer-is-model-output caveat made
+> first-class (§3.4, §6); claim→artifact inventory (§8) and companion-paper scope block
+> (§9) added; the "eight format-migrated lists" miscount corrected to six.
+> **Open before submission:** (1) pin a single csl-orig commit SHA and reconcile the
+> AP 88,869/88,867 live-drift discrepancy; (2) recompute the attestation table against
+> the DCS-2026 denominator (98,606) with a homograph control — until then the
+> per-dictionary rates in §4.4 are **illustrative upper bounds** (bare-lemma join,
+> DCS-2021); (3) venue + byline (a human decides); (4) add the A38 citation once its
+> DOI is minted.
 
 ## Abstract
 
@@ -87,27 +98,58 @@ Our claims:
    re-runs against any pinned csl-orig checkout, so the census is reproducible and
    repeatable as the source evolves.
 
-## 2. Related work *(TODO — to be written)*
+## 2. Related work
 
-Position against: CDSL / Cologne project descriptors and the history of the digitisation;
-corpus-coverage and lexical-coverage studies for Sanskrit (Gérard Huet's *Sanskrit Heritage*
-lexicon, the Catalan headword list — both already cross-tagged against our additions in
-[`union/coverage_additions_crosstagged.tsv`](../HeadwordLists/union/coverage_additions_crosstagged.tsv));
-the Digital Corpus of Sanskrit and its descriptors (Hellwig; and the companion DCS-2026
-release described in A38); and the broader literature on dictionary growth / lexical
-inflation and on "ghost words" / unattested headwords in historical lexicography. The
-novelty claim is the **controlled longitudinal census** combined with the **per-dictionary
-corpus-grounding rate on one common denominator** — not any single count and not a new
-corpus.
+Three strands frame the contribution; none of them contains a controlled longitudinal
+census of a digitized dictionary collection combined with a per-dictionary
+corpus-grounding rate on one denominator — that combination is the novelty claim, not any
+single count and not a new corpus.
+
+**The collection as a digitisation project.** The Cologne Digital Sanskrit Dictionaries
+([sanskrit-lexicon.uni-koeln.de](https://www.sanskrit-lexicon.uni-koeln.de/); source at
+[sanskrit-lexicon/csl-orig](https://github.com/sanskrit-lexicon/csl-orig)) are documented
+primarily as a digitisation and access programme: uniform XML markup over ~36
+dictionaries, normalised headword keys (`<k1>`/`<k2>`), display and API layers. The
+project's self-descriptions are synchronic — they state what the collection contains, not
+how its inventory moves. Yet the post-2014 editing wave is the largest change to the
+collection since the original digitisation (Apte's re-edit alone adds ~53k headwords,
+§4.2), and it is visible only longitudinally. A40 treats the collection as a *versioned
+object* with a measurable growth profile, exploiting the accident that a frozen 2014 key
+export survived alongside the continuously edited source.
+
+**Coverage studies of Sanskrit lexical resources.** Coverage comparisons across Sanskrit
+resources exist mostly as engineering byproducts. Huet's *Sanskrit Heritage* lexicon
+(Huet 2005) maintains its own headword inventory, whose overlap with the Cologne lists is
+already tracked in this repository —
+[coverage_additions_crosstagged.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/coverage_additions_crosstagged.tsv)
+cross-tags our post-2014 additions against the Heritage and Catalan headword lists. The
+Digital Corpus of Sanskrit (Hellwig; the DCS-2026 release is described in the companion
+paper A38) supplies the attested-lemma inventory we use as denominator. What prior work
+lacks is *symmetry*: each dictionary joined against the **same** corpus denominator, with
+the join's upper-bound status stated, so that attestation rates are comparable across
+lexica. That comparability is what §4.4 adds.
+
+**Ghost words and lexicographer-only tradition.** Since Skeat's presidential address
+coined the term (Skeat 1886), historical lexicography has known that corpus-unattested
+entries are a mixture of transmission artefacts and genuine but text-poor tradition.
+Sanskrit sharpens the distinction: the kośa lexica transmit real lexemes with thin or no
+surviving textual attestation, and Monier-Williams marks senses resting on lexical
+authority alone with `<ls>L.</ls>` ("Lexicographers"). The companion paper A45 works
+through exactly this stratum for MW's botanical layer, and A39 states the matching
+attestation-coverage caveats for verbal roots; A40 cites both rather than re-deriving
+them. A low attestation rate is therefore read as a *property of a dictionary's purpose*
+(corpus-facing vs corpus-detached, §4.4), never as an error rate.
 
 ## 3. Data and method
 
 ### 3.1 The two snapshots
-Each `*-unique-key{1,2}-N.txt` file in [`then-2014/`](../HeadwordLists/then-2014/) is a frozen
+Each `*-unique-key{1,2}-N.txt` file in [`then-2014/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) is a frozen
 2014 snapshot whose filename count `N` is its line count at extraction (first committed
-**2014-10-05**, "Cologne headwords"). The 2026 "now" side is re-extracted from the live
-csl-orig source for the same field, written to [`now-2026/`](../HeadwordLists/now-2026/), and
-diffed by [`headword_diff.py`](../HeadwordLists/headword_diff.py); full per-list word-level
+**2014-10-05**, "Cologne headwords"; for three of the 26 files — AP-key2, MD-key2,
+PD-key1 — the census's actual *then* line count differs slightly from the filename `N`,
+so the census table's counts, not the filenames, are authoritative). The 2026 "now" side is re-extracted from the live
+csl-orig source for the same field, written to [`now-2026/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026), and
+diffed by [`headword_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); full per-list word-level
 diffs land under `HeadwordLists/_diff/`. We define **growth** = (now − then) / then and
 **overlap** = the share of the *then* keys still present *now*.
 
@@ -116,7 +158,8 @@ diffs land under `HeadwordLists/_diff/`. We define **growth** = (now − then) /
 > `4f342dc4` (2026-06-26). The submission must quote one SHA and re-run against that exact
 > checkout. A symptom of the drift is already visible: Apte's live key1 count appears as
 > **88,869** in the census table but **88,867** in the prose and the `now-2026/` filename —
-> a two-headword edit between two extractions. Reconcile to the pinned value.
+> a two-headword edit between two extractions; likewise AP key2 is **88,829** in the census
+> table vs **88,828** in the on-disk `now-2026/` filename. Reconcile both to the pinned value.
 
 ### 3.2 key1 vs key2, and the comparability rule
 `<k1>` is the normalised computational key (built for matching/dedup; may match no printed
@@ -128,39 +171,61 @@ the 2014 `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (e.g
 *aṃśa*) while csl-orig is now SLP1: the raw then-vs-now diff is ~100% and is an encoding
 artefact, **not** a headword change. We therefore aggregate growth **only over the comparable
 lists**, and report the format-migrated lists in a separate panel (their *current* SLP1 form
-is perfectly usable; it simply cannot be line-diffed against the numeric 2014 file). Eight
-lists are format-migrated: BHS, GRA-k2, MW-k2 (two snapshot variants), SCH, VEI-k2.
-[Verified in [`NOW_VS_THEN.md`](../HeadwordLists/NOW_VS_THEN.md).]
+is perfectly usable; it simply cannot be line-diffed against the numeric 2014 file). Six
+lists are format-migrated: BHS, GRA-k2, MW-k2 (two snapshot variants), SCH, VEI-k2; the
+two PD lists are set aside separately (PD has no csl-orig source, §6), so the 26 snapshots
+partition as 18 comparable + 6 format-migrated + 2 PD.
+[Verified in [`NOW_VS_THEN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md).]
 
 ### 3.3 The corpus-grounding denominator
 For each comparable dictionary we compute the share of its headwords attested in a running
 corpus, using the Digital Corpus of Sanskrit as the common denominator. The vendored
-[`../../VisualDCS/dcs_lemma_summary.json`](../../VisualDCS/dcs_lemma_summary.json) is the
+[`../../VisualDCS/dcs_lemma_summary.json`](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json) is the
 **DCS-2021** asset: **83,239 attested SLP1 lemmas**, frequency-banded 1–5 (1 = hapax (1
 occurrence), 2 = rare (2–9), 3 = uncommon (10–99), 4 = common (100–999), 5 = very-common
 (1000+); source: Hellwig, DCS ~2021 snapshot, CC BY).
 
-> **TODO (one denominator).** A40 must fix a single denominator and never mix releases. The
-> DCS-**2026** release (A38) reports **98,606** distinct attested lemmas; **91,406** is the
-> 2021 attested-by-LemmaId figure; **83,239** is the 2021 attested-lemma list in the committed
-> file. We recommend pinning **DCS-2021 (83,239)**, because that is the file actually committed
-> in this repository, and stating the release explicitly wherever an attestation rate appears.
+> **Denominator policy (locked 08-07-2026, H348).** One denominator per table, the release
+> always stated, releases never mixed. Three distinct figures exist and must not be
+> conflated: **98,606** distinct attested lemmas in the DCS-**2026** release (the companion
+> paper A38; [VisualDCS CHANGELOG.md](https://github.com/gasyoun/VisualDCS/blob/main/CHANGELOG.md) +
+> [m6_validation.md](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m6_validation.md));
+> **91,406** = the DCS-2021 attested-by-LemmaId figure; **83,239** = the DCS-2021
+> attested-lemma list in the committed
+> [dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json).
+> The draft tables below are **DCS-2021 (83,239)** because that is the file the join was
+> actually run against; the **submission headline recomputes against DCS-2026 (98,606)**,
+> so that A40 cites its companion A38's release rather than a superseded snapshot. NB
+> `dcs_lemma_summary.json` is the DCS-**2021** asset — never cite it for the 2026 figure
+> (a conflation A39's fact-check pass already caught once).
 
 ### 3.4 The join, and its upper-bound caveat
 The attestation rate is computed by intersecting each dictionary's headword key set with the
 DCS lemma key set on surface form. Because homograph numbering (`<h>`) is collapsed and no
 inflectional morphology is applied, a dictionary headword matches a DCS lemma on surface form
 alone. **This is an upper bound**: collapsing homographs and ignoring inflection can only
-inflate the apparent match. The reported rates in §4.3 are therefore ceilings, and the
+inflate the apparent match. The reported rates in §4.4 are therefore ceilings, and the
 submission applies a homograph control before drawing the corpus-facing/corpus-detached
 conclusion. The cross-dict union behind this join —
-[`union/union_headwords.tsv`](../HeadwordLists/union/union_headwords.tsv), 323,425 headwords
+[`union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv), 323,425 headwords
 across 15 dictionaries with gender-confirmed feminine folding — is documented in
-[`union/UNION.md`](../HeadwordLists/union/UNION.md).
+[`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md).
 
 > **TODO (homograph control).** Replace or supplement the bare-lemma join with a control that
 > bounds the homograph inflation (count distinct homograph senses, or intersect on a
 > sense-normalised key), and report both the naive ceiling and the controlled estimate.
+
+Two further caveats are first-class, not footnotes. **Corpus-unattested ≠ ghost word.** A
+headword absent from DCS may be a transmission artefact — but equally a real lexeme of the
+kośa tradition transmitted on lexicographer authority alone, the stratum Monier-Williams
+explicitly marks `<ls>L.</ls>` ("Lexicographers"); the companion paper A45 works through
+exactly this distinction for MW's botanical layer, and A39 carries the matching
+attestation-coverage caveats for verbal roots. The typology in §4.4 therefore
+*classifies* the unattested stratum; it does not condemn it. **The denominator is model
+output.** DCS lemmatization is produced by the ByT5-Sanskrit pipeline (Nehrdich, Hellwig &
+Keutzer 2024), so lemmatizer error bounds the join from both sides — a dictionary headword
+can miss an attested lemma the model mis-lemmatized, and match a lemma the model invented.
+The framing A39 applies to its root tables applies here unchanged.
 
 ## 4. Results
 
@@ -173,7 +238,7 @@ not be aggregated for growth) is **1,721,983**.
 ### 4.2 Growth is additive but uneven
 The net growth is concentrated in a few actively-edited dictionaries; the canonical large
 lexica are essentially frozen. Verified per-dictionary figures (comparable lists, from
-[`NOW_VS_THEN.md`](../HeadwordLists/NOW_VS_THEN.md)):
+[`NOW_VS_THEN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)):
 
 | dictionary (list) | 2014 | 2026 | added | removed | overlap | growth |
 |---|--:|--:|--:|--:|--:|--:|
@@ -246,17 +311,27 @@ recompute and both expose structure a count cannot.
 
 ## 6. Limitations
 
-- **Format-migrated lists are an encoding artefact, not growth.** Eight key2 lists migrated from
+- **Format-migrated lists are an encoding artefact, not growth.** Six key2 lists migrated from
   legacy numeric transliteration to SLP1; their raw ~100% diff is meaningless and is excluded from
   the growth aggregate. Folding them in would be the single biggest way to produce a wrong number.
+  More generally, headword-count comparability across dictionary generations is bounded by
+  normalization and homonym-key drift between the 2014 extraction and the 2026 one — the
+  comparable/format-migrated verdict per list is the census's control for exactly this.
 - **The DCS attestation rate is an upper bound** in this draft (bare-lemma join, homographs
   collapsed, no inflection); the submission applies a homograph control and reports the controlled
   estimate as the headline.
 - **The 2026 side drifts.** csl-orig is edited daily; the census must pin a SHA. The unreconciled
   AP 88,869/88,867 discrepancy is a live example.
-- **One denominator only.** DCS-2021 (83,239) is the committed file; the 2026 release (98,606) and
-  the 2021-by-LemmaId figure (91,406) are *different numbers* and must never be mixed into the same
-  rate.
+- **One denominator only.** DCS-2021 (83,239) is the committed file the draft rates were computed
+  against; the 2026 release (98,606, A38) and the 2021-by-LemmaId figure (91,406) are *different
+  numbers* and must never be mixed into the same rate. The submission recomputes against DCS-2026
+  (§3.3).
+- **The denominator is model output.** DCS lemmatization is ByT5-Sanskrit output (Nehrdich,
+  Hellwig & Keutzer 2024), not gold annotation; lemmatizer error propagates into every attestation
+  rate (§3.4).
+- **Corpus-unattested ≠ ghost word.** The unattested stratum includes the legitimate
+  lexicographer-transmitted kośa layer (MW's `<ls>L.</ls>`); see §3.4 and the companion papers
+  A45 (botanical layer) and A39 (verbal roots).
 - **PD (Deccan College dictionary) has no csl-orig source** locally, so it is censused only on its
   2014 snapshot and excluded from the growth and grounding tables.
 
@@ -270,18 +345,71 @@ corpus denominator separates corpus-facing from corpus-detached lexica by roughl
 growth profile plus a grounding rate is a more faithful description of a dictionary collection than
 any headline inventory number, and both are reproducible from the committed diff machinery.
 
+## 8. Claim → artifact inventory
+
+Every headline claim, its figure, and the committed artifact it recomputes from
+(per the `/paper-scaffold` discipline — a claim without a committed artifact is a gap,
+flagged as such):
+
+| # | Claim | Figure(s) | Artifact | Status |
+|--:|---|---|---|---|
+| 1 | Aggregate comparable growth 2014→2026 | 1,055,081 → 1,206,384; +171,644 added / −20,341 removed; +14.3% | [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) TOTAL row (18 comparable lists) | ✅ committed |
+| 2 | Growth is concentrated: AP +146.7% (36,030 → 88,869), PWK +14.7% (131,918 → 151,349); MW +0.1%, PWG −0.0% | per-list table rows | [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) | ✅ committed |
+| 3 | Six format-migrated lists excluded from the growth aggregate (BHS, GRA-k2, MW-k2 ×2, SCH, VEI-k2); 26 snapshots = 18 comparable + 6 migrated + 2 PD | verdict column | [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) | ✅ committed |
+| 4 | Removals are an audit channel (−20,341; per-list removed samples) | §4.3 | `_diff/<list>.removed.txt` — **not committed**, regenerated deterministically by [headword_diff.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); 40-item samples inline in NOW_VS_THEN.md | ⚠️ regenerable |
+| 5 | Per-dictionary attestation rates, VEI 69.8% … SKD 14.1% (~5× spread) | §4.4 table | [dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json) (DCS-2021) × current key1 lists | ⬜ upper bound; DCS-2026 + homograph-control recompute pending |
+| 6 | Union-wide attestation 61,340 / 323,425 = 19.0% (upper bound) | §4.4 | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) + [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) | ✅ committed (same recompute pending) |
+| 7 | DCS-2026 denominator = 98,606 distinct attested lemmas | §3.3 | A38 / [VisualDCS CHANGELOG.md](https://github.com/gasyoun/VisualDCS/blob/main/CHANGELOG.md) + [m6_validation.md](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m6_validation.md) | ✅ committed; ⬜ cite A38 DOI when minted |
+| 8 | 2014 snapshot provenance (frozen export, first committed 2014-10-05, "Cologne headwords") | §3.1 | git history of [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | ✅ committed |
+
+## 9. Scope versus companion papers (anti-salami)
+
+- **A38 (the DCS-2026 release)** owns the corpus: the treebank/SQLite release pipeline,
+  its validation, and the 98,606-lemma inventory. A40 **cites** the denominator and never
+  re-describes the release.
+- **A39 (verbal-root disagreement)** owns the grammar-vs-dictionary-vs-corpus story for
+  roots; A40 does not re-litigate root attestation.
+- **A45 (botanical crosswalk)** owns the `<ls>L.</ls>` lexicographer-stratum attestation
+  story for MW's plant names; A40 cites its treatment as the worked example of
+  "unattested ≠ ghost".
+- A40 leads with exactly two things nothing else owns: the **controlled 2014-vs-2026
+  growth census** and the **per-dictionary attestation typology on one denominator**.
+
 ## Data and reproducibility
 
 The census, every figure, and the comparable-vs-format-migrated verdicts live in
-[`../HeadwordLists/NOW_VS_THEN.md`](../HeadwordLists/NOW_VS_THEN.md); the generator is
-[`../HeadwordLists/headword_diff.py`](../HeadwordLists/headword_diff.py)
+[`../HeadwordLists/NOW_VS_THEN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md); the generator is
+[`../HeadwordLists/headword_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py)
 (`python headword_diff.py` rebuilds the table + `_diff/`; `headword_diff.py now` rewrites
-[`now-2026/`](../HeadwordLists/now-2026/)). Frozen 2014 snapshots are in
-[`then-2014/`](../HeadwordLists/then-2014/); the cross-dict union and DCS/Catalan/Huet coverage
-tags are in [`../HeadwordLists/union/`](../HeadwordLists/union/) (builder
-[`build_union.py`](../HeadwordLists/build_union.py)). The corpus denominator is
-[`../../VisualDCS/dcs_lemma_summary.json`](../../VisualDCS/dcs_lemma_summary.json) (DCS-2021,
+[`now-2026/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026)). Frozen 2014 snapshots are in
+[`then-2014/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014); the cross-dict union and DCS/Catalan/Huet coverage
+tags are in [`../HeadwordLists/union/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) (builder
+[`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py)). The corpus denominator is
+[`../../VisualDCS/dcs_lemma_summary.json`](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json) (DCS-2021,
 83,239 attested SLP1 lemmas, CC BY). Reproduction requires pinning the csl-orig commit (TODO:
 SHA — `4f342dc4` at scaffolding) and stating the single DCS release used. The work is a census and
 a coverage measurement only — it never edits csl-orig. *(TODO: add A38's DOI to the reference list
 once minted.)*
+
+## References ⬜
+
+- Cologne Digital Sanskrit Dictionaries (CDSL), Universität zu Köln —
+  [sanskrit-lexicon.uni-koeln.de](https://www.sanskrit-lexicon.uni-koeln.de/); source markup at
+  [sanskrit-lexicon/csl-orig](https://github.com/sanskrit-lexicon/csl-orig).
+- Hellwig, O. *Digital Corpus of Sanskrit (DCS)* — DCS-2021 attested-lemma list via
+  [dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json)
+  (CC BY); DCS-2026 release via the companion paper A38.
+- Huet, G. 2005. A functional toolkit for morphological and phonological processing,
+  application to a Sanskrit tagger. *Journal of Functional Programming* 15(4): 573–614.
+  (The Sanskrit Heritage platform — [sanskrit.inria.fr](https://sanskrit.inria.fr/).)
+- Monier-Williams, M. 1899. *A Sanskrit-English Dictionary* — Cologne digitization
+  ([csl-orig](https://github.com/sanskrit-lexicon/csl-orig)); the `<ls>L.</ls>`
+  ("Lexicographers") source marker.
+- Nehrdich, S., O. Hellwig & K. Keutzer. 2024.
+  [One model is all you need: ByT5-Sanskrit, a unified model for Sanskrit NLP tasks](https://aclanthology.org/2024.findings-emnlp.805/).
+  *Findings of EMNLP 2024*.
+- Skeat, W. W. 1886. Report upon "ghost-words", or words which have no real existence
+  (presidential address). *Transactions of the Philological Society* 1885–87.
+- ⬜ A38, A39, A45 self-citations once their venues/DOIs freeze.
+
+_Dr. Mārcis Gasūns_
