@@ -1120,6 +1120,32 @@ fresh — a `202` response does not guarantee the export completes if the server
 mid-task, so re-trigger `/resources/{id}/export` rather than reusing a stale pickup key.
 Treat isolated `504`s on this host as retry-worthy, not as evidence the API changed.
 
+**Update 08-07-2026 (H096 executed, Sonnet 5 `claude-sonnet-5`):** a liveness probe
+(`curl -sI .../openapi.json` → `200`) confirmed the outage above had cleared; all 4
+core exports + the 36-resource catalog landed at
+[VisualDCS PR #17](https://github.com/gasyoun/VisualDCS/pull/17). Two new gotchas
+surfaced during the run:
+
+- **The `pickupKey` is single-use, independent of whether the download actually
+  succeeds.** A `curl --max-time 30` on the `lemmatization` export (40MB) was cut off
+  mid-transfer by the client-side timeout; the *next* request with the same key
+  returned `404 {"key":"exportNotFound"}` even though the export itself had completed
+  server-side — the first `GET .../download` call had already consumed the key. There
+  is no way to "resume" or re-fetch with a stale key; the only fix is to re-trigger
+  `/resources/{id}/export` for a fresh `pickupKey` and download it in one shot with a
+  timeout generous enough for the file size (the retry needed `--max-time 120` for a
+  41MB payload). Budget the download timeout to the resource, not a fixed short value.
+- **Export readiness time varies wildly and is not correlated with `resourceType`
+  alone.** The three `plainText`/`textAnnotation` exports (padapāṭha, accented text,
+  Casaretto word-split) were pickup-ready within seconds of triggering. The `apiCall`
+  resource (`lemmatization`, which cross-references live CDSD dictionary lookups per
+  token) needed 4 total trigger attempts and ~9 minutes of elapsed wall-clock before a
+  download succeeded clean — not from repeated failures, but because each earlier
+  attempt's key got burned by a timeout-truncated download before the export was even
+  polled again. Poll with `404 exportNotFound` as "not ready yet, keep the same key",
+  and only re-trigger a fresh export after a completed-but-truncated download, not
+  preemptively.
+
 **Update (03-07-2026, same day, hours later, Sonnet 5 `claude-sonnet-5`): outage persists,
 now a full HTTP-layer hang rather than `504`s.** Re-probed `https://vedaweb.uni-koeln.de/`
 and `/api/openapi.json` three times over ~90s: TCP connects and the TLS handshake completes
