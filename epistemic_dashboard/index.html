@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epistemic registries dashboard</title>
+<style>
+  :root { --fg:#1f2328; --mut:#59636e; --bg:#fff; --card:#f6f8fa; --line:#d1d9e0;
+          --auto:#8250df; --human:#1a7f37; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --mut:#9198a1; --bg:#0d1117; --card:#161b22; --line:#30363d;
+            --auto:#a371f7; --human:#3fb950; }
+  }
+  body { font: 15px/1.5 system-ui, sans-serif; color:var(--fg); background:var(--bg);
+         max-width: 1080px; margin: 0 auto; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; margin-bottom:.2rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .mut { color: var(--mut); font-size: .85rem; }
+  .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+          padding: .7rem 1.1rem; min-width: 7rem; }
+  .card b { font-size: 1.5rem; display: block; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--mut); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  a { color: inherit; }
+  .bar { display:flex; height:.5rem; border-radius:4px; overflow:hidden; min-width:6rem;
+         background:var(--line); }
+  .bar i { display:block; }
+  .auto { color: var(--auto); } .human { color: var(--human); }
+  .swatch { display:inline-block; width:.7rem; height:.7rem; border-radius:2px;
+            vertical-align:baseline; margin-right:.25rem; }
+</style>
+</head>
+<body>
+<h1 id="title">Epistemic registries — dashboard</h1>
+<p class="mut" id="lede"></p>
+
+<div class="cards" id="cards"></div>
+
+<h2>The seven layers</h2>
+<p class="mut">Each layer holds one epistemic act that <a id="findings-link" href="#">FINDINGS.md</a>
+(measured-fact-only) structurally can't. <span class="swatch" style="background:var(--auto)"></span><span class="auto">⚙️ auto</span> rows were emitted by a seed script and are <em>candidates</em> until a human confirms; <span class="swatch" style="background:var(--human)"></span><span class="human">✍️ human</span> rows were written by a session. Rows graduate into FINDINGS / CROSS_REPO_DECISIONS as they mature.</p>
+<table id="layers"></table>
+
+<h2>STALENESS — confidence decay</h2>
+<p class="mut">The fully-auto-generated layer. Flag = 🔴 &gt;6 mo since last re-verify · 🟡 3–6 mo · 🟢 fresh (&lt;3 mo) · ⬜ undated.</p>
+<div class="cards" id="stale"></div>
+
+<h2>Origin mix — how much is machine-seeded vs human-written</h2>
+<p class="mut">The registries are designed to be seeded automatically and confirmed by hand. A healthy layer trends from ⚙️ toward ✍️ over time as candidates are confirmed or deleted.</p>
+<table id="origin"></table>
+
+<script>
+'use strict';
+const DOT = {3:'🔴', 2:'🟠', 1:'🟡'};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function j(f){ try { const r = await fetch(f); return r.ok ? r.json() : null; } catch { return null; } }
+
+function bar(auto, human){
+  const t = auto + human || 1;
+  return `<span class="bar" title="⚙️ ${auto} auto · ✍️ ${human} human">
+    <i style="width:${100*auto/t}%;background:var(--auto)"></i>
+    <i style="width:${100*human/t}%;background:var(--human)"></i></span>`;
+}
+
+(async () => {
+  const d = await j('epistemic.json');
+  if (!d) { document.getElementById('lede').textContent = 'epistemic.json not found.'; return; }
+  const isInfra = /infra/i.test(d.side);
+  document.getElementById('title').textContent =
+    `Epistemic registries — ${d.side} side`;
+  document.getElementById('lede').innerHTML =
+    `Seven sibling registries to <a href="${esc(d.repo_url)}/FINDINGS.md">FINDINGS.md</a>, ` +
+    `minted under <a href="https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md">H356</a>. ` +
+    (isInfra
+      ? 'This is the <b>infra / process</b> side — private, viewed locally (not published). '
+      : 'This is the <b>Sanskrit-data</b> side. Its infra twin lives in the private Uprava repo. ') +
+    `Generated ${esc(d.generated_at)}.`;
+  document.getElementById('findings-link').href = d.repo_url + '/FINDINGS.md';
+
+  const t = d.totals;
+  document.getElementById('cards').innerHTML =
+    `<div class="card"><b>${t.rows}</b>rows</div>` +
+    `<div class="card"><b>${t.layers}</b>layers</div>` +
+    `<div class="card"><b class="auto">${t.auto}</b>⚙️ auto</div>` +
+    `<div class="card"><b class="human">${t.human}</b>✍️ human</div>` +
+    [3,2,1].map(i => `<div class="card"><b>${t.by_importance[i]||0}</b>${DOT[i]}</div>`).join('');
+
+  document.getElementById('layers').innerHTML =
+    '<tr><th>Layer</th><th>Epistemic act</th><th class="num">rows</th>' +
+    '<th class="num">🔴</th><th class="num">🟠</th><th class="num">🟡</th><th>origin</th></tr>' +
+    d.layers.map(L => {
+      const bi = L.by_importance || {};
+      const org = L.by_origin || {auto:0,human:0};
+      const n = k => bi[k] || '';
+      return `<tr><td><a href="${esc(L.url)}"><b>${esc(L.key)}</b></a></td>` +
+        `<td class="mut">${esc(L.act)}</td>` +
+        `<td class="num">${L.total}</td>` +
+        `<td class="num">${n(3)}</td><td class="num">${n(2)}</td><td class="num">${n(1)}</td>` +
+        `<td>${bar(org.auto, org.human)}</td></tr>`;
+    }).join('');
+
+  const s = d.staleness || {total:0,red:0,yellow:0,green:0,unknown:0};
+  document.getElementById('stale').innerHTML =
+    `<div class="card"><b>${s.total}</b>findings dated</div>` +
+    `<div class="card"><b>${s.red}</b>🔴 &gt;6 mo</div>` +
+    `<div class="card"><b>${s.yellow}</b>🟡 3–6 mo</div>` +
+    `<div class="card"><b>${s.green}</b>🟢 fresh</div>` +
+    (s.unknown ? `<div class="card"><b>${s.unknown}</b>⬜ undated</div>` : '');
+
+  document.getElementById('origin').innerHTML =
+    '<tr><th>Layer</th><th class="num">⚙️ auto</th><th class="num">✍️ human</th><th>mix</th></tr>' +
+    d.layers.map(L => {
+      const o = L.by_origin || {auto:0,human:0};
+      return `<tr><td>${esc(L.key)}</td><td class="num auto">${o.auto}</td>` +
+        `<td class="num human">${o.human}</td><td>${bar(o.auto, o.human)}</td></tr>`;
+    }).join('') +
+    `<tr><td><b>total</b></td><td class="num auto"><b>${t.auto}</b></td>` +
+    `<td class="num human"><b>${t.human}</b></td><td>${bar(t.auto, t.human)}</td></tr>`;
+})();
+</script>
+</body>
+</html>
