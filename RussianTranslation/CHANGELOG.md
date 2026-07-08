@@ -10,6 +10,30 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H337 — per-sense evidence provenance retrofit + annotation_report query CLI (H335 W2)
+- New [`src/annotate_evidence.py`](src/annotate_evidence.py): deterministic, LLM-free
+  backfill of corpus_gate's 7 evidence lanes onto the store as queryable per-sense
+  provenance. Per Russian authority (koch/kna/fri/smirnov/kow/grin12/grin3) it records
+  `provides` (exact Russian equivalent) / `supports` (token containment ≥
+  `corpus_gate.THRESHOLD`) per sense, and `contradicts` / `silent` per lemma; the
+  non-Russian lanes (apte_hi/vedic_rituals_hi/kosha_syn/meulenbeld/corpus) are recorded
+  as lemma-level presence corroboration. A source with no usable Russian meaning gloss
+  is `silent`, never `contradicts` (guards against false disagreement on Smirnov
+  citation-lists / Kossovich transliteration). `leonov` reserved in the schema enum,
+  not built.
+- Schema (D1, [DECISIONS_PIPELINE_CAPABILITY_H335.md](DECISIONS_PIPELINE_CAPABILITY_H335.md)):
+  optional `evidence[]` on `$defs.sense` + lemma-level `evidence_summary` on `$defs.card`
+  in [`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json).
+- New [`src/annotation_report.py`](src/annotation_report.py): the single query surface —
+  `<selector>` full row dump, `--by-source X [--relation]` (answers "which senses did
+  Grintser/Kossovich support?"), `--source-summary`, `--silent-for <key1>`. H338/H339
+  fold their queries in here.
+- Backfill executed over the full gitignored store (D2: retrofit all): 11,261 rows /
+  145 lemmas, 2,239 (19.9%) with ≥1 evidence entry. Per-source table in
+  [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md § W2](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md).
+- LANG_PARITY: `evidence_retrofit_annotate_h337` = INTENTIONAL-DIVERGENCE (RU-only; the
+  lanes are Sanskrit→Russian sourced). Pinned by `test_annotate_evidence_relation_semantics`.
+
 ### H361 — Elizarenkova RV citation/context witness (VedaWeb, CC BY 4.0)
 - New [`src/vedaweb_ru_witness.py`](src/vedaweb_ru_witness.py): RV `location` →
   Elizarenkova's published Russian rendering, reading the committed
