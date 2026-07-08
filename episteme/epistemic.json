@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T10:22:45Z",
+ "generated_at": "2026-07-08T11:22:44Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "layers": [
@@ -338,6 +338,18 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#formkey"
     },
     {
+     "title": "SLP1 vs IAST",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#slp1-vs-iast"
+    },
+    {
+     "title": "key1 vs key2",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#key1-vs-key2"
+    },
+    {
      "title": "headword vs lemma",
      "importance": 3,
      "origin": "human",
@@ -374,34 +386,22 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#varga"
     },
     {
-     "title": "SLP1 vs IAST",
-     "importance": 3,
-     "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#slp1-vs-iast"
-    },
-    {
-     "title": "key1 vs key2",
-     "importance": 2,
-     "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#key1-vs-key2"
-    },
-    {
      "title": "Zaliznyak index (a–f accent axis)",
      "importance": 1,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#zaliznyak-index-af-accent-axis"
     },
     {
-     "title": "`<ls>` / iti register",
-     "importance": 2,
-     "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#ls--iti-register"
-    },
-    {
      "title": "dhātupāṭha citation form",
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#dhātupāṭha-citation-form"
+    },
+    {
+     "title": "`<ls>` / iti register",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md#ls--iti-register"
     }
    ]
   }
