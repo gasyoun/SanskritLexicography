@@ -16,6 +16,10 @@
   h1 { font-size: 1.5rem; margin-bottom:.2rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
   .mut { color: var(--mut); font-size: .85rem; }
   .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  /* header stat cards: a fixed 6-wide grid so 12 cards fill exactly two rows */
+  #cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: .7rem; }
+  #cards .card { min-width: 0; padding: .6rem .7rem; }
+  @media (max-width: 760px) { #cards { grid-template-columns: repeat(3, 1fr); } }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
           padding: .7rem 1.1rem; min-width: 7rem; }
   .card b { font-size: 1.5rem; display: block; }
@@ -85,12 +89,24 @@ function bar(auto, human){
   document.getElementById('findings-link').href = d.repo_url + '/FINDINGS.md';
 
   const t = d.totals;
-  document.getElementById('cards').innerHTML =
-    `<div class="card"><b>${t.rows}</b>rows</div>` +
-    `<div class="card"><b>${t.layers}</b>layers</div>` +
-    `<div class="card"><b class="auto">${t.auto}</b>⚙️ auto</div>` +
-    `<div class="card"><b class="human">${t.human}</b>✍️ human</div>` +
-    [3,2,1].map(i => `<div class="card"><b>${t.by_importance[i]||0}</b>${DOT[i]}</div>`).join('');
+  const s0 = d.staleness || {total:0,green:0};
+  const entry = t.entry_rows != null ? t.entry_rows : (t.rows - s0.total);
+  const cand = t.candidates != null ? t.candidates : (t.auto - s0.total);
+  const card = (v, label, cls) => `<div class="card"><b${cls ? ' class="'+cls+'"' : ''}>${v}</b>${label}</div>`;
+  document.getElementById('cards').innerHTML = [
+    card(t.rows, 'rows'),
+    card(t.layers, 'layers'),
+    card(entry, 'entry rows'),
+    card(cand, '⚙️ candidates', 'auto'),
+    card(t.human, '✍️ human', 'human'),
+    card(s0.total, '⚙️ auto table'),
+    card(t.by_importance[3]||0, '🔴'),
+    card(t.by_importance[2]||0, '🟠'),
+    card(t.by_importance[1]||0, '🟡'),
+    card(s0.green, '🟢 fresh'),
+    card(t.categories != null ? t.categories : '—', 'categories'),
+    card(t.interlinks != null ? t.interlinks : '—', '↔ interlinks'),
+  ].join('');
 
   document.getElementById('layers').innerHTML =
     '<tr><th>Layer</th><th>Epistemic act</th><th class="num">rows</th>' +
@@ -140,7 +156,19 @@ function bar(auto, human){
   if (biggestHuman) cc.push(`The most human-curated layer is <b>${esc(biggestHuman.key)}</b> (${biggestHuman.by_origin.human} ✍️ rows); the highest-stakes layer by 🔴 count is <b>${esc(mostRed.key)}</b> — start confirmations there.`);
   cc.push(`Each row carries an <b>↔ Interlinks</b> line, so the seven docs read as one graph: an assumption points to the recipe that would settle it and the dead end that shows what breaks if it fails.`);
   document.getElementById('conclusions').innerHTML = cc.map(x => `<li>${x}</li>`).join('');
+
+  // Footer — authored-doc dated header + a live "data generated" stamp.
+  const gen = d.generated_at || '';
+  const g = gen.slice(0, 10);  // YYYY-MM-DD
+  document.getElementById('lastup').textContent = g ? `${g.slice(8,10)}-${g.slice(5,7)}-${g.slice(0,4)}` : '—';
+  document.getElementById('genstamp').textContent = gen ? `Data generated ${gen} by build_epistemic_dashboard.py.` : '';
 })();
 </script>
+
+<footer style="margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem;text-align:right;font-style:italic;color:var(--mut);font-size:.85rem">
+  <div>Created: 08-07-2026 · Last updated: <span id="lastup">—</span></div>
+  <div id="genstamp"></div>
+  <div>Dr. Mārcis Gasūns</div>
+</footer>
 </body>
 </html>
