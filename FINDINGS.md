@@ -1662,10 +1662,24 @@ annotation layer, regardless of how the platform's hosting terms are eventually 
 Implication: any future VedaWeb-derived feed with a `license: null` catalog entry needs
 its own rights call before landing (bulk import), not an inherited blanket assumption —
 see [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md)
-for the full 36-layer table and the open `@DECIDE` to confirm or narrow H096's own claim.
+for the full 36-layer table.
+
+**✅ Resolved 08-07-2026:** [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
+outreach email to VedaWeb got an explicit written reply from Prof. Daniel Kölligan
+(writing also on behalf of Prof. Uta Reinöhl): the 4 candidate layers this finding flagged
+as DECIDE (Metrical Data 2024, Elizarenkova RU, Geldner de, Grassmann de) are confirmed
+**CC BY 4.0**, and — directly answering the "implication" above — VedaWeb confirmed the
+34-null-license-field gap is a metadata omission on their side, not an absence of rights,
+and committed to backfilling all 34 entries with CC BY 4.0. This retroactively confirms
+H096's own blanket claim was correct, even though it had not been independently verified
+at the time it was made. Full reply:
+[`Uprava/handoffs/OUTREACH_2026-07-08_vedaweb_kolligan_reinohl_rights.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/OUTREACH_2026-07-08_vedaweb_kolligan_reinohl_rights.md).
+The general lesson stands independent of this specific happy outcome: a `license: null`
+field is not evidence of *no* rights, but it is also not evidence *of* rights — ask, don't
+assume, and here asking took one email and about a day's turnaround.
 
 > **Source:** H098 triage ([VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb)),
-> Sonnet 5 `claude-sonnet-5` · 2026-07-08
+> Sonnet 5 `claude-sonnet-5` · 2026-07-08; resolution via H359, Sonnet 5 `claude-sonnet-5` · 2026-07-08
 
 ---
 
