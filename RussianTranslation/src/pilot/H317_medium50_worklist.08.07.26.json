@@ -1,0 +1,523 @@
+{
+ "schema": "pwg.h317_medium50_selection.v1",
+ "source": "src/pilot/output/scale_manifest.freq.json",
+ "band": 4,
+ "sense_range": [
+  3,
+  30
+ ],
+ "excludes": [
+  "verbs01 universe",
+  "promoted store (pwg_ru_translated.jsonl)",
+  "live requeue lanes",
+  "multi-record (nrecs>1) headwords"
+ ],
+ "band4_total": 3170,
+ "candidates_scanned": 1109,
+ "candidates_matched": 150,
+ "n_selected": 50,
+ "keys": [
+  "nakzatra",
+  "sarvatra",
+  "sakft",
+  "Srama",
+  "vAhana",
+  "zoqaSan",
+  "SudDi",
+  "prajYA",
+  "prAtar",
+  "retas",
+  "patnI",
+  "nUnam",
+  "samIpa",
+  "vfzwi",
+  "AcArya",
+  "dIkzA",
+  "rAtra",
+  "rAzwra",
+  "Bezaja",
+  "vyavasTA",
+  "spfS",
+  "Ahuti",
+  "yuvan",
+  "vicitra",
+  "maraRa",
+  "ftvij",
+  "vinASa",
+  "Bakza",
+  "jAtavedas",
+  "yajus",
+  "aDama",
+  "SvAsa",
+  "aDastAt",
+  "saKi",
+  "darBa",
+  "Akfti",
+  "prasU",
+  "idAnIm",
+  "SoDana",
+  "vraRa",
+  "prada",
+  "vadana",
+  "sAhasra",
+  "martya",
+  "sadana",
+  "BrU",
+  "yOvana",
+  "loman",
+  "zoqaSa",
+  "divA"
+ ],
+ "detail": [
+  {
+   "key1": "nakzatra",
+   "score": 29.873,
+   "band": 4,
+   "n_texts": 122,
+   "bytes": 3684,
+   "senses": 30,
+   "recs": 1
+  },
+  {
+   "key1": "sarvatra",
+   "score": 29.688,
+   "band": 4,
+   "n_texts": 138,
+   "bytes": 2863,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "sakft",
+   "score": 28.911,
+   "band": 4,
+   "n_texts": 123,
+   "bytes": 2788,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "Srama",
+   "score": 28.523,
+   "band": 4,
+   "n_texts": 81,
+   "bytes": 5187,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "vAhana",
+   "score": 28.439,
+   "band": 4,
+   "n_texts": 82,
+   "bytes": 4942,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "zoqaSan",
+   "score": 28.381,
+   "band": 4,
+   "n_texts": 116,
+   "bytes": 2648,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "SudDi",
+   "score": 28.337,
+   "band": 4,
+   "n_texts": 99,
+   "bytes": 3414,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "prajYA",
+   "score": 28.265,
+   "band": 4,
+   "n_texts": 117,
+   "bytes": 2528,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "prAtar",
+   "score": 28.258,
+   "band": 4,
+   "n_texts": 128,
+   "bytes": 2187,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "retas",
+   "score": 28.256,
+   "band": 4,
+   "n_texts": 96,
+   "bytes": 3518,
+   "senses": 25,
+   "recs": 1
+  },
+  {
+   "key1": "patnI",
+   "score": 28.223,
+   "band": 4,
+   "n_texts": 108,
+   "bytes": 2850,
+   "senses": 20,
+   "recs": 1
+  },
+  {
+   "key1": "nUnam",
+   "score": 28.132,
+   "band": 4,
+   "n_texts": 92,
+   "bytes": 3658,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "samIpa",
+   "score": 28.107,
+   "band": 4,
+   "n_texts": 78,
+   "bytes": 4913,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "vfzwi",
+   "score": 28.003,
+   "band": 4,
+   "n_texts": 88,
+   "bytes": 3812,
+   "senses": 30,
+   "recs": 1
+  },
+  {
+   "key1": "AcArya",
+   "score": 27.825,
+   "band": 4,
+   "n_texts": 119,
+   "bytes": 2177,
+   "senses": 18,
+   "recs": 1
+  },
+  {
+   "key1": "dIkzA",
+   "score": 27.654,
+   "band": 4,
+   "n_texts": 88,
+   "bytes": 3439,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "rAtra",
+   "score": 27.546,
+   "band": 4,
+   "n_texts": 121,
+   "bytes": 1963,
+   "senses": 10,
+   "recs": 1
+  },
+  {
+   "key1": "rAzwra",
+   "score": 27.5,
+   "band": 4,
+   "n_texts": 77,
+   "bytes": 4187,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "Bezaja",
+   "score": 27.499,
+   "band": 4,
+   "n_texts": 88,
+   "bytes": 3285,
+   "senses": 30,
+   "recs": 1
+  },
+  {
+   "key1": "vyavasTA",
+   "score": 27.463,
+   "band": 4,
+   "n_texts": 87,
+   "bytes": 3317,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "spfS",
+   "score": 27.294,
+   "band": 4,
+   "n_texts": 132,
+   "bytes": 1604,
+   "senses": 14,
+   "recs": 1
+  },
+  {
+   "key1": "Ahuti",
+   "score": 27.251,
+   "band": 4,
+   "n_texts": 89,
+   "bytes": 2993,
+   "senses": 15,
+   "recs": 1
+  },
+  {
+   "key1": "yuvan",
+   "score": 27.185,
+   "band": 4,
+   "n_texts": 87,
+   "bytes": 3054,
+   "senses": 30,
+   "recs": 1
+  },
+  {
+   "key1": "vicitra",
+   "score": 27.129,
+   "band": 4,
+   "n_texts": 75,
+   "bytes": 3927,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "maraRa",
+   "score": 27.053,
+   "band": 4,
+   "n_texts": 107,
+   "bytes": 2077,
+   "senses": 26,
+   "recs": 1
+  },
+  {
+   "key1": "ftvij",
+   "score": 27.024,
+   "band": 4,
+   "n_texts": 79,
+   "bytes": 3457,
+   "senses": 22,
+   "recs": 1
+  },
+  {
+   "key1": "vinASa",
+   "score": 26.909,
+   "band": 4,
+   "n_texts": 90,
+   "bytes": 2655,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "Bakza",
+   "score": 26.754,
+   "band": 4,
+   "n_texts": 75,
+   "bytes": 3501,
+   "senses": 26,
+   "recs": 1
+  },
+  {
+   "key1": "jAtavedas",
+   "score": 26.729,
+   "band": 4,
+   "n_texts": 78,
+   "bytes": 3235,
+   "senses": 17,
+   "recs": 1
+  },
+  {
+   "key1": "yajus",
+   "score": 26.656,
+   "band": 4,
+   "n_texts": 84,
+   "bytes": 2775,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "aDama",
+   "score": 26.637,
+   "band": 4,
+   "n_texts": 88,
+   "bytes": 2546,
+   "senses": 21,
+   "recs": 1
+  },
+  {
+   "key1": "SvAsa",
+   "score": 26.607,
+   "band": 4,
+   "n_texts": 72,
+   "bytes": 3609,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "aDastAt",
+   "score": 26.558,
+   "band": 4,
+   "n_texts": 92,
+   "bytes": 2307,
+   "senses": 18,
+   "recs": 1
+  },
+  {
+   "key1": "saKi",
+   "score": 26.488,
+   "band": 4,
+   "n_texts": 82,
+   "bytes": 2752,
+   "senses": 26,
+   "recs": 1
+  },
+  {
+   "key1": "darBa",
+   "score": 26.486,
+   "band": 4,
+   "n_texts": 91,
+   "bytes": 2301,
+   "senses": 24,
+   "recs": 1
+  },
+  {
+   "key1": "Akfti",
+   "score": 26.45,
+   "band": 4,
+   "n_texts": 101,
+   "bytes": 1918,
+   "senses": 23,
+   "recs": 1
+  },
+  {
+   "key1": "prasU",
+   "score": 26.421,
+   "band": 4,
+   "n_texts": 114,
+   "bytes": 1573,
+   "senses": 20,
+   "recs": 1
+  },
+  {
+   "key1": "idAnIm",
+   "score": 26.383,
+   "band": 4,
+   "n_texts": 92,
+   "bytes": 2192,
+   "senses": 18,
+   "recs": 1
+  },
+  {
+   "key1": "SoDana",
+   "score": 26.356,
+   "band": 4,
+   "n_texts": 76,
+   "bytes": 3027,
+   "senses": 21,
+   "recs": 1
+  },
+  {
+   "key1": "vraRa",
+   "score": 26.354,
+   "band": 4,
+   "n_texts": 68,
+   "bytes": 3712,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "prada",
+   "score": 26.278,
+   "band": 4,
+   "n_texts": 95,
+   "bytes": 2016,
+   "senses": 16,
+   "recs": 1
+  },
+  {
+   "key1": "vadana",
+   "score": 26.227,
+   "band": 4,
+   "n_texts": 76,
+   "bytes": 2910,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "sAhasra",
+   "score": 26.224,
+   "band": 4,
+   "n_texts": 60,
+   "bytes": 4537,
+   "senses": 27,
+   "recs": 1
+  },
+  {
+   "key1": "martya",
+   "score": 26.129,
+   "band": 4,
+   "n_texts": 89,
+   "bytes": 2150,
+   "senses": 22,
+   "recs": 1
+  },
+  {
+   "key1": "sadana",
+   "score": 26.114,
+   "band": 4,
+   "n_texts": 70,
+   "bytes": 3263,
+   "senses": 26,
+   "recs": 1
+  },
+  {
+   "key1": "BrU",
+   "score": 26.108,
+   "band": 4,
+   "n_texts": 84,
+   "bytes": 2356,
+   "senses": 28,
+   "recs": 1
+  },
+  {
+   "key1": "yOvana",
+   "score": 26.107,
+   "band": 4,
+   "n_texts": 76,
+   "bytes": 2805,
+   "senses": 30,
+   "recs": 1
+  },
+  {
+   "key1": "loman",
+   "score": 26.1,
+   "band": 4,
+   "n_texts": 88,
+   "bytes": 2172,
+   "senses": 29,
+   "recs": 1
+  },
+  {
+   "key1": "zoqaSa",
+   "score": 26.098,
+   "band": 4,
+   "n_texts": 94,
+   "bytes": 1946,
+   "senses": 24,
+   "recs": 1
+  },
+  {
+   "key1": "divA",
+   "score": 26.051,
+   "band": 4,
+   "n_texts": 103,
+   "bytes": 1658,
+   "senses": 21,
+   "recs": 1
+  }
+ ]
+}
