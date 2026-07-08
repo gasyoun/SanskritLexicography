@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H350 / E7 — flat OntoLex export → real LOD graph (OntoLex + vartrans + PROV-O + LiLa)
+- New [`src/export_lod.py`](src/export_lod.py): upgrades the flat one-way string
+  export ([`src/export_interop.py`](src/export_interop.py) → `release/ontolex.ttl`,
+  placeholder `example.org` IRIs, string-only `ontolex:usage`, no query surface)
+  into a real Linked-Open-Data graph — **real configurable IRIs** (`--base-iri`),
+  **`vartrans`** sense↔sense relations (from `pwg_ru_relationships.jsonl`),
+  **PROV-O evidence grades** (a SKOS scheme; the citable release is now a SPARQL
+  filter, not a separate build), per-sense **`<ls>` citations as first-class
+  `pwglex:Citation` resources**, and the **Renou stratum** (`pwg_sense_stratum.jsonl`)
+  as dated `pwglex:StratumAttestation`. `export_interop.py` is untouched (still owns
+  TEI Lex-0 + reverse-index).
+- **LiLa-style lemma bank:** one shared `ontolex:Form`/`lila:Lemma` node per `key1`
+  (SLP1 spine) is the join hub; the **separate** DCS-frequency graph
+  (`export_lod.py dcs-freq` → `dcs_freq.ttl`) keys `pwglex:dcsCount`/`dcsBand` to the
+  *same* lemma IRI, so cross-dataset queries join on it.
+- **Acceptance gate** [`src/lod_acceptance.py`](src/lod_acceptance.py) (exit ≠ 0 on
+  failure): (A) a **federated SPARQL join** [`release/query/sense_citation_dcsfreq.rq`](release/query/sense_citation_dcsfreq.rq)
+  sense → `<ls>` citation **+** lemma DCS frequency; (B) **lossless round-trip** —
+  byte-identical regeneration, parse↔serialise graph-isomorphism, and source-coverage
+  (every `<ls>`, stratum, grade recounted from the jsonl survives as a triple);
+  plus structural invariants + **SHACL** [`release/shapes.ttl`](release/shapes.ttl).
+  Fixture-only mode is CI-safe (no gitignored source needed). Committed fixture
+  [`release/fixture/`](release/fixture/) (`rakz`+`a`/`aMSa`/`aMSaka`, 4157 triples).
+- Design + before/after coverage table + modelling boundaries: [`LOD_GRAPH.md`](LOD_GRAPH.md).
+- **Boundary:** generator + data stay here; the published graph + SPARQL surface are
+  routed to `csl-standards` (G2); full data publication gated on G5 approvals. IRI
+  publication domain is an open `@DECIDE` (placeholder w3id PURL until ruled).
+
 ### H290 (H215 Slice 4a) — oral TEXT + PDF front-end
 - New [`src/build_oral_l0.py`](src/build_oral_l0.py): the text+PDF front-end for oral
   transcripts that are **not** a pre-aligned subtitle pair (what `ingest_oral.py`

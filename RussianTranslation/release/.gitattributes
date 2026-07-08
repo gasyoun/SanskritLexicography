@@ -1,0 +1,6 @@
+# The LOD fixture + query + shapes are byte-compared by lod_acceptance.py (B1
+# lossless-round-trip). Pin LF so a fresh checkout matches the LF the generator
+# emits on every platform -- an autocrlf CRLF checkout would fail B1 spuriously.
+*.ttl        text eol=lf
+*.rq         text eol=lf
+fixture.keys text eol=lf

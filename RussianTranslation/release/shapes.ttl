@@ -1,0 +1,38 @@
+# SHACL shapes for the PWG->RU LOD graph (H350/E7). Validated in lod_acceptance.py
+# when pyshacl is installed. These pin the modelling contract: an entry has a
+# canonical lemma and at least one graded sense; a citation and a stratum
+# attestation carry their required provenance fields.
+
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+
+pwglex:EntryShape a sh:NodeShape ;
+  sh:targetClass ontolex:LexicalEntry ;
+  sh:property [ sh:path ontolex:canonicalForm ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path rdfs:label ; sh:minCount 1 ] .
+
+pwglex:SenseShape a sh:NodeShape ;
+  sh:targetClass ontolex:LexicalSense ;
+  sh:property [ sh:path pwglex:evidenceGrade ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path skos:definition ; sh:minCount 1 ] .
+
+pwglex:CitationShape a sh:NodeShape ;
+  sh:targetClass pwglex:Citation ;
+  sh:property [ sh:path pwglex:lsRaw ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path rdfs:label ; sh:minCount 1 ] .
+
+pwglex:AttestationShape a sh:NodeShape ;
+  sh:targetClass pwglex:StratumAttestation ;
+  sh:property [ sh:path pwglex:renouOldest ; sh:minCount 1 ] ;
+  sh:property [ sh:path pwglex:datedCitations ; sh:minCount 1 ; sh:datatype xsd:integer ] .
+
+pwglex:RelationShape a sh:NodeShape ;
+  sh:targetClass vartrans:SenseRelation ;
+  sh:property [ sh:path vartrans:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path vartrans:target ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path pwglex:relOp ; sh:minCount 1 ] .
