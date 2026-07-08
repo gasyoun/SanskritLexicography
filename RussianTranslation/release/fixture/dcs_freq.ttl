@@ -1,0 +1,24 @@
+# DCS frequency graph -- join by shared lemma IRI (export_lod.py dcs-freq)
+
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix lime:     <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix lila:     <http://lila-erc.eu/ontologies/lila/> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+@prefix gr:       <https://w3id.org/sanskrit-lexicon/pwg-ru/grade/> .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/dcs/dataset> a prov:Entity ; rdfs:label "VisualDCS token frequency" ;
+  pwglex:totalTokens "5688416"^^xsd:integer ; pwglex:distinctLemmas "90349"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> pwglex:dcsCount "15354"^^xsd:integer ; pwglex:dcsBand "5"^^xsd:integer ; pwglex:dcsHapax false ; pwglex:dcsCore80 true .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> pwglex:dcsCount "2388"^^xsd:integer ; pwglex:dcsBand "5"^^xsd:integer ; pwglex:dcsHapax false ; pwglex:dcsCore80 true .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> pwglex:dcsCount "180"^^xsd:integer ; pwglex:dcsBand "4"^^xsd:integer ; pwglex:dcsHapax false ; pwglex:dcsCore80 false .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz> pwglex:dcsCount "1930"^^xsd:integer ; pwglex:dcsBand "5"^^xsd:integer ; pwglex:dcsHapax false ; pwglex:dcsCore80 true .
