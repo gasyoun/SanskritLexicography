@@ -30,7 +30,7 @@ REQUEUE = os.path.join(OUT, 'requeue.keys.txt')
 
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
-from window_common import sha256_file
+from window_common import sha256_file, append_jsonl_line
 
 sys.path.insert(0, HERE)
 import translation_memory
@@ -44,8 +44,15 @@ def rootmap_path(root):
     return None
 
 
-def requeue_file(which):
-    return os.path.join(OUT, {
+def tag_out_dir(tag):
+    """H336/H-2: the same per-window namespacing audit_window.py --window-tag writes to.
+    None (untagged / legacy) resolves to the flat OUT singleton dir — unchanged default
+    behavior so an untagged invocation keeps reading the old singletons."""
+    return os.path.join(OUT, safe_name(tag)) if tag else OUT
+
+
+def requeue_file(which, tag=None):
+    return os.path.join(tag_out_dir(tag), {
         'transient': 'requeue.transient.keys.txt',   # null cards only — cheap re-run
         'defect': 'requeue.defect.keys.txt',         # real content failures — rework
     }.get(which, 'requeue.keys.txt'))
@@ -74,29 +81,30 @@ def append_tm_denylist(root, keys, which, lang='ru', fsha_file=None):
     now = datetime.datetime.now(datetime.timezone.utc).isoformat(
         timespec='seconds').replace('+00:00', 'Z')
     n = 0
-    with open(path, 'a', encoding='utf-8') as f:
-        for k in keys:
-            raw = os.path.join(INP, k + '.raw.txt')
-            if not os.path.exists(raw):
-                continue
-            address = '%s:%s' % (lang, sha256_file(raw))
-            f.write(json.dumps({'schema': 'pwg.translation_memory.denylist.v1',
-                                'kind': 'card', 'address': address, 'key': k,
-                                'root': root, 'lang': lang, 'reason': 'requeue_%s' % which,
-                                'blocked_at': now}, ensure_ascii=False) + '\n')
-            n += 1
+    for k in keys:
+        raw = os.path.join(INP, k + '.raw.txt')
+        if not os.path.exists(raw):
+            continue
+        address = '%s:%s' % (lang, sha256_file(raw))
+        # H336/H-3: one os.write() per row (window_common.append_jsonl_line) — a bare
+        # buffered 'a' handle can split one line across writes, and a concurrent
+        # appender (another account's requeue) can then tear it.
+        append_jsonl_line(path, {'schema': 'pwg.translation_memory.denylist.v1',
+                                 'kind': 'card', 'address': address, 'key': k,
+                                 'root': root, 'lang': lang, 'reason': 'requeue_%s' % which,
+                                 'blocked_at': now})
+        n += 1
     nf = 0
     fp = fsha_file or os.path.join(OUT, 'requeue.defect.fshas.txt')
     if os.path.exists(fp):
         fshas = [ln.strip() for ln in open(fp, encoding='utf-8') if ln.strip()]
-        with open(path, 'a', encoding='utf-8') as f:
-            for fsha in fshas:
-                f.write(json.dumps({'schema': 'pwg.translation_memory.denylist.v1',
-                                    'kind': 'frag', 'fsha': fsha,
-                                    'root': root, 'lang': lang,
-                                    'reason': 'requeue_%s_fragment' % which,
-                                    'blocked_at': now}, ensure_ascii=False) + '\n')
-                nf += 1
+        for fsha in fshas:
+            append_jsonl_line(path, {'schema': 'pwg.translation_memory.denylist.v1',
+                                     'kind': 'frag', 'fsha': fsha,
+                                     'root': root, 'lang': lang,
+                                     'reason': 'requeue_%s_fragment' % which,
+                                     'blocked_at': now})
+            nf += 1
     return n, nf
 
 
@@ -108,7 +116,13 @@ def main():
     group.add_argument('--defect', action='store_true')
     ap.add_argument('--lang', default='ru', choices=('ru', 'en'))
     ap.add_argument('--requeue-file',
-                    help='explicit requeue key file; default uses src/pilot/output singleton files')
+                    help='explicit requeue key file; default uses src/pilot/output singleton files, '
+                         'or src/pilot/output/<window-tag>/ if --window-tag is given')
+    ap.add_argument('--window-tag',
+                    help='H336/H-2: read requeue/fsha files from src/pilot/output/<tag>/ — the same '
+                         'tag audit_window.py --window-tag wrote them to. Closes the same-clone '
+                         'requeue TOCTOU: an untagged run reads whichever window last rewrote the '
+                         'singleton, possibly not this one.')
     ap.add_argument('--out',
                     help='explicit generated harness path; default is src/pilot/run_pilot_wf.opt2.js')
     ap.add_argument('--nominal', action='store_true',
@@ -129,7 +143,7 @@ def main():
         rm = json.load(open(rp, encoding='utf-8'))
         declared = {s['subkey'] for s in rm.get('sub_cards', [])}
         suffixes = {k.split('~~')[-1]: k for k in declared}
-    keys = read_requeue(args.requeue_file or requeue_file(which))
+    keys = read_requeue(args.requeue_file or requeue_file(which, tag=args.window_tag))
     resolved, invalid = [], []
     for k in keys:
         full = k if (args.nominal or k in declared) else suffixes.get(k)
@@ -143,10 +157,10 @@ def main():
             print('  ' + k)
         sys.exit(1)
     fsha_file = None
-    if args.requeue_file:
-        cand = os.path.join(os.path.dirname(os.path.abspath(args.requeue_file)),
-                            'requeue.defect.fshas.txt')
-        fsha_file = cand if os.path.exists(cand) else None
+    fsha_dir = (os.path.dirname(os.path.abspath(args.requeue_file)) if args.requeue_file
+                else tag_out_dir(args.window_tag))
+    cand = os.path.join(fsha_dir, 'requeue.defect.fshas.txt')
+    fsha_file = cand if os.path.exists(cand) else None
     denied, denied_frags = append_tm_denylist(root, resolved, which, lang=lang,
                                               fsha_file=fsha_file)
 

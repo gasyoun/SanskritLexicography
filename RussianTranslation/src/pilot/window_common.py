@@ -73,6 +73,24 @@ def defer_monster(target, reason, estimate=None, source='perf_preflight', keys=N
         return None
 
 
+def append_jsonl_line(path, obj):
+    """Append ONE JSONL row as a single os.write() of a fully-encoded line (H336/H-3).
+
+    A buffered text-mode 'a' handle can split one logical line across more than one
+    underlying write() syscall (large lines, buffer-full flush), so two processes
+    appending concurrently can interleave PARTWAY through a line and tear it — and
+    translation_memory.load_denylist used to silently DROP a torn line, silently
+    re-enabling TM reuse of gate-rejected content. A single write() to an O_APPEND
+    fd is the OS-level append primitive: each row lands whole, even if another
+    writer's row lands immediately before or after it."""
+    data = (json.dumps(obj, ensure_ascii=False) + '\n').encode('utf-8')
+    fd = os.open(path, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o644)
+    try:
+        os.write(fd, data)
+    finally:
+        os.close(fd)
+
+
 def load_json(path):
     with open(path, encoding='utf-8') as f:
         return json.load(f)

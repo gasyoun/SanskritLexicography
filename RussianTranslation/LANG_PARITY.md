@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -207,7 +207,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "38c404a4d88c4ea0d34617721edc6725423c70250b49e91b40d93008cdcbdfba"
+      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579"
     }
   },
   {
@@ -279,7 +279,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
-      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
+      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
@@ -298,9 +298,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
     "tracking": "Uprava/handoffs/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
-      "src/pilot/window_reports.py": "1649a33f3cf65fdd9f770cd1f05bb84d3eccdbc8369132ee3a1800c0ea62a72e",
-      "src/pilot/requeue_from_audit.py": "a315cd02276908ffdcc64f09d226798865885a7eea47ca60681a256a240d6272"
+      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
+      "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878"
     }
   },
   {
@@ -317,7 +317,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 (commit 8cb84f7): the helper is lang-agnostic (takes a root, not a --lang flag; gen_opt_harness2.py resolves lang from the rootmap), so the fix applies to any language's requeue in one place. Was a both-paths gap before the fix, not an RU/EN divergence.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "a315cd02276908ffdcc64f09d226798865885a7eea47ca60681a256a240d6272"
+      "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878"
     }
   },
   {
@@ -335,8 +335,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "47143a98618429e81897fca734c64ea0811f87ef698753d7218bfc10c90141ee",
-      "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
+      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
+      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b"
     }
   },
   {
@@ -355,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -374,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -392,8 +392,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "47143a98618429e81897fca734c64ea0811f87ef698753d7218bfc10c90141ee",
-      "src/promote_en.py": "7c9b24b12371937735efb7cb3eb7f9b51238614d34b357621b1e8f1715c21420"
+      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
+      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b"
     }
   },
   {
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -430,7 +430,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "47143a98618429e81897fca734c64ea0811f87ef698753d7218bfc10c90141ee",
+      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
       "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
@@ -450,7 +450,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/promote_final_cards.py": "47143a98618429e81897fca734c64ea0811f87ef698753d7218bfc10c90141ee"
+      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d"
     }
   },
   {
@@ -471,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -500,9 +500,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
       "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
-      "src/pilot/audit_window.py": "4842e14d11c4830eeb3a7840c016d2d773d5268421c1ca9c2aa3d9cfdbfd60ae",
+      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
       "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -520,8 +520,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #3b): the fragment sidecar is content-addressed on the fragment SOURCE and was harvested append-only first-seen-wins with NO fidelity check, so a hand-edited/corrupt wf_output*.json (blanked or malformed senses) permanently poisoned reuse and a later good harvest of the same fsha could never override it. frag_senses_sane(senses, lang) keys on the CARD-shaped translation field ('russian'/'english') and is applied at BOTH harvest (never cache garbage; a cached-corrupt fsha maps to False so a good row overrides it) and serve (load_frag_tm drops any corrupt historical row). Entirely lang-agnostic — lang is a first-class parameter of frag_address/frag_senses_sane/load_frag_tm/build_frags, no RU/EN branch. Pinned by test_frag_tm_fidelity_gate_and_override. Extends translation_memory_card_and_fragment.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "38c404a4d88c4ea0d34617721edc6725423c70250b49e91b40d93008cdcbdfba",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579",
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -539,7 +539,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "2257f04cdca96b2aea51cd6d097358c43109977e1847d39ff59476cc5cf50863",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -558,7 +558,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
-      "src/pilot/window_selftest.py": "12a5a7b3ec794d681433ba6f155c40b1240d44f9ba2f71fb8856f7692abc4f12"
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   },
   {
@@ -576,6 +576,83 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/government_census.py": "3ae290eed18a31baa864a01321a0b80c1ced6c616d050a6aa3716e80f1b0a228"
+    }
+  },
+  {
+    "id": "promotion_claim_file_h336",
+    "mechanism": "O_EXCL claim file (promote_lock.PromoteClaim) guarding the promotion read-guard-write window in promote_final_cards.py --merge and promote_en.py, plus a UNIQUE timestamped .premerge.<UTC>.bak / .preEN.<UTC>.bak backup name replacing the old fixed name (H335 W1 / H336 H-1)",
+    "files": [
+      "src/promote_lock.py",
+      "src/promote_final_cards.py",
+      "src/promote_en.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H336 (08-07-2026). The claim wraps whichever store path --store points at, and both promote_final_cards.py (RU bridge) and promote_en.py (EN attach) import the identical PromoteClaim class with identical TTL-only (no PID-liveness) staleness semantics and the same --steal-lock override — there is exactly one implementation, not a per-language reimplementation. Pinned by test_promote_claim_contention (pins promote_lock.py's own --selftest into the aggregate suite).",
+    "tracking": "",
+    "verified_sha256": {
+      "src/promote_lock.py": "dca26a006a32ba4a9eeb98453fa059585ccb8504ada8423f5e22d3fe1b25310f",
+      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
+      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b",
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
+    }
+  },
+  {
+    "id": "window_tag_output_namespacing_h336",
+    "mechanism": "audit_window.py --window-tag routes window_status/report/requeue/judge-sample artifacts to src/pilot/output/<tag>/ instead of the flat singletons (default tag = --root when the flag is bare); requeue_from_audit.py --window-tag and root_window_status.py --window-tag read from the same tag dir. Untagged invocation is unchanged (writes the flat singletons) — H335 W1 / H336 H-2",
+    "files": [
+      "src/pilot/audit_window.py",
+      "src/pilot/requeue_from_audit.py",
+      "src/pilot/root_window_status.py",
+      "src/pilot/window_reports.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H336 (08-07-2026). window_reports.write_reports/write_window_status already took an out_dir parameter (pre-existing --out-dir escape hatch); --window-tag is a thin, lang-agnostic sugar layer over that same parameter computed once in audit_window.py and threaded through unchanged to requeue_from_audit.py/root_window_status.py. Neither RU nor EN branch differently. Pinned by test_audit_window_tag_routing.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
+      "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
+      "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
+    }
+  },
+  {
+    "id": "jsonl_append_hygiene_h336",
+    "mechanism": "window_common.append_jsonl_line() writes ONE os.write() of a fully-encoded JSONL line per row (O_APPEND fd) instead of a buffered text-mode 'a' handle, used by every append-only sidecar (window_ledger, TM denylist, TM fragment sidecar, layer_version_log, auto_failures); translation_memory.load_denylist now WARNS loudly on a torn/undecodable line instead of silently dropping it (H335 W1 / H336 H-3)",
+    "files": [
+      "src/pilot/window_common.py",
+      "src/pilot/window_reports.py",
+      "src/pilot/requeue_from_audit.py",
+      "src/pilot/layer_versions.py",
+      "src/pilot/failure_capture.py",
+      "src/pilot/translation_memory.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H336 (08-07-2026). append_jsonl_line is a single shared primitive (window_common.py) used identically by every JSONL append site regardless of --lang; the TM denylist stores 'ru'/'en' addresses in the same file with no per-language code path. Pinned by test_denylist_torn_line_warns.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/window_common.py": "0a26bac1b0aa1ca63d8af5fe0b3f4431c97df371f5fd20a0f400b6900f86d1ac",
+      "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
+      "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
+      "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
+      "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
+      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579",
+      "src/pilot/window_selftest.py": "0fab11659575a19de1a4fd682d1354f17af9abe317abaa9515dcd24e87b6daad"
     }
   }
 ]

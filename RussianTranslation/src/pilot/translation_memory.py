@@ -80,6 +80,8 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
+from window_common import append_jsonl_line  # noqa: E402
+
 DEFAULT_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 FIELD = {'ru': 'ru', 'en': 'en'}                    # store column holding the translation
 TRUST_REVIEWED = 'reviewed_exact'
@@ -211,13 +213,21 @@ def load_denylist(path=None):
     if not os.path.exists(p):
         return out
     with open(p, encoding='utf-8') as f:
-        for line in f:
+        for lineno, line in enumerate(f, 1):
             line = line.strip()
             if not line:
                 continue
             try:
                 row = json.loads(line)
-            except json.JSONDecodeError:
+            except json.JSONDecodeError as e:
+                # H336/H-3: a torn/undecodable denylist line used to be silently DROPPED
+                # here, which silently re-enables TM reuse of gate-rejected content — the
+                # single scariest failure mode in the collision matrix. WARN loudly instead
+                # so a torn append (concurrent writer, crash mid-write) surfaces immediately
+                # rather than as a quiet correctness hole.
+                print('warning: torn/undecodable denylist line %d in %s (%s) — a gate-'
+                      'rejected address may be silently missing from the deny set: %r'
+                      % (lineno, p, e, line[:200]), file=sys.stderr)
                 continue
             kind = row.get('kind')
             value = row.get('address') or row.get('fsha') or row.get('value')
@@ -564,10 +574,8 @@ def build_frags(glob_pattern, lang, out=None):
                     'reuse_policy': 'auto_exact', 'source_kind': 'frag_prov',
                     'supersedes': None, 'harvested_at': _utc_now(),
                 })
-    if new_rows:
-        with open(path, 'a', encoding='utf-8') as f:
-            for row in new_rows:
-                f.write(json.dumps(row, ensure_ascii=False) + '\n')
+    for row in new_rows:
+        append_jsonl_line(path, row)
     return path, added, len(seen)
 
 
