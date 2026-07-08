@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 07-07-2026_
+_Created: 26-06-2026 · Last updated: 08-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -84,6 +84,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
 - 🟠 [§62. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate](#62-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) — 2,309 single-case parens + 40 variation groups + 1,504 mit-phrases; verbs only 417 of 1,476 marker-bearing entries; the store slot `government` is empty (0/11,261).
 - 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
+- 🟠 [§65. The ls-graph citation matrix is degenerate for MW](#65-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
 
 **Etymology & derivation**
 
@@ -1680,6 +1681,32 @@ assume, and here asking took one email and about a day's turnaround.
 
 > **Source:** H098 triage ([VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb)),
 > Sonnet 5 `claude-sonnet-5` · 2026-07-08; resolution via H359, Sonnet 5 `claude-sonnet-5` · 2026-07-08
+
+---
+
+### §65. The ls-graph citation matrix is degenerate for MW — its top abbreviations sit unresolved; use the citation-apparatus siglum matrix for cross-dict citation profiles
+
+**Claim.** [`csl-atlas/data/citations/ls_citation_edges.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv)
+(the H213 canonicalized dict×text citation graph) resolves **MW to only 5 texts**
+(Ṛgveda, Buddhist, Brāhmaṇa, Inscriptions, Sāmaveda) — MW's actual top citation keys
+(MBh. 22,990 · R. 9,049 · BhP. 6,979 · Kathās. 5,926 · Suśr. 5,690 …) all sit in
+[`ls_citation_unresolved_top.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_unresolved_top.tsv),
+because the graph's longest-prefix abbreviation resolution misses MW's dotted-siglum key.
+Any pairwise similarity computed on that graph over an MW edge measures **resolver
+coverage, not canon shape** — BEN~MW cosine = 0.0000 exactly, an artifact (compounded by
+an unfolded `Rigveda` vs `Ṛgveda` variant on the BEN side). The H342 fourth-axis test
+therefore took its citation vectors from the **citation-apparatus canonical-siglum
+matrix** ([`src/data/dicts/citation-apparatus.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/dicts/citation-apparatus.json),
+MW fully resolved: 320,828 tagged citations, Mahābhārata 28,058), keeping the ls-graph
+cosine only as a flagged sensitivity column (rank agreement Spearman 0.7 across the 5
+testable edges). Corollary measured in the same pass: only **7 of the 14** documented
+L0-edge dictionaries have a validated `<ls>` citation adapter (PWG, PW, MW, AP90, AP,
+SCH, BEN) — the agenda's "9 of the 13" estimate was optimistic; WIL/YAT/SHS/CCS/CAE/
+MW72/BOP have none, so any per-edge citation statistic shrinks to n=5 edges. Full packet:
+[`FOUR_AXIS_CITATION_INDEPENDENCE.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/FOUR_AXIS_CITATION_INDEPENDENCE.md).
+
+> **Source:** H342 PH2 CITE-4AXIS ([csl-atlas PR #233](https://github.com/sanskrit-lexicon/csl-atlas/pull/233)),
+> Fable 5 `claude-fable-5` · 2026-07-08
 
 ---
 
