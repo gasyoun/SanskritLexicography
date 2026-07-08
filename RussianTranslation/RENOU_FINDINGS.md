@@ -151,6 +151,24 @@ tool [src/renou_h4_citation_bias.py](https://github.com/gasyoun/SanskritLexicogr
 figures [research/figures/renou/h4_citation_vs_usage_{dict}.svg](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/research/figures/renou).
 Computed by Sonnet 5 (`claude-sonnet-5`).
 
+## F7. `ls`–`dcs` agreement collapses almost as soon as a lemma is attested at all — **[data]**
+
+H6 (Zipf agreement): among 172,845 entries across the 8 canonical dictionaries carrying
+both an `<ls>` citation span and a `dcs` corpus span, exact agreement falls from **66.7%**
+at the sparsest attested frequencies (~2 DCS texts) to **0.2%** at the densest (~162
+texts), while `dcs_adds` (dcs widening the era span beyond `<ls>`) rises in lockstep from
+9.3% to 97.8% — monotonic across every bin, no reversal. A fitted logistic curve
+(`P(exact) = sigmoid(-2.7315·log10(freq) + 1.1969)`) crosses 50% at **freq ≈ 2.7 DCS
+texts** — far earlier than intuition suggests: `dcs_adds` already has better than even
+odds of beating an exact `<ls>` match by the time a lemma clears the single-attestation
+floor. This gives `renou_low_info`'s current state-count heuristic a principled
+frequency-based alternative (recommendation only, no code change this pass — see the doc
+for the operating-point tradeoff). Full method, table, and limitations:
+[RENOU_H6_ZIPF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H6_ZIPF.md);
+tool [src/renou_h6_zipf.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_h6_zipf.py);
+figure [research/figures/renou/h6_zipf_agreement.svg](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/figures/renou/h6_zipf_agreement.svg).
+Computed by Sonnet 5 (`claude-sonnet-5`).
+
 ---
 
 ## Reproducibility
