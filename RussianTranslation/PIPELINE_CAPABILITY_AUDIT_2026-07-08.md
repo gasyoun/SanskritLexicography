@@ -1,6 +1,6 @@
 # PWG→RU pipeline capability audit — 3-account concurrency · per-sense evidence provenance · case-government · per-sense genre (H335)
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 09-07-2026_
 
 Audit-only pass answering MG's four capability questions of 08-07-2026
 ([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
@@ -204,6 +204,45 @@ assembly is fully deterministic and local.
 - **Leonov**: reserve `source: "leonov"` now (777-note Sundarakāṇḍa apparatus,
   org memory `project_sundara_commentary_apparatus`); it becomes a lane only
   when that apparatus ships as a machine-usable glossary — do not build.
+
+### W2 retrofit — EXECUTED 08-07-2026 (H337)
+
+**Verdict now: DELIVERED.** [`src/annotate_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/annotate_evidence.py)
+(deterministic, LLM-free) backfilled all **11,261** store rows (145 distinct
+lemmas/roots currently translated); [`src/annotation_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/annotation_report.py)
+answers MG's queries. Schema (D1): optional `evidence[]` on `$defs.sense` +
+lemma-level `evidence_summary` on `$defs.card` ([`schemas/pwg_ru_final_card.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_ru_final_card.schema.json)).
+**2,239 rows (19.9%) carry ≥1 per-sense evidence entry.**
+
+Per-source tally (provides/supports = sense-level; contradicts/silent/present =
+lemma-level over the 145 lemmas); the annotation is deterministic code (no model
+tier), run by Opus 4.8 (`claude-opus-4-8`):
+
+| source | provides | supports | contradicts | silent | present |
+|---|--:|--:|--:|--:|--:|
+| koch | 143 | 560 | 14 | 79 | 0 |
+| kna | 824 | 494 | 9 | 89 | 0 |
+| fri | 23 | 15 | 10 | 126 | 0 |
+| smirnov | 530 | 489 | 4 | 103 | 0 |
+| kow | 202 | 359 | 9 | 116 | 0 |
+| grin12 | 0 | 0 | 1 | 144 | 0 |
+| grin3 | 0 | 0 | 0 | 145 | 0 |
+| apte_hi | 0 | 0 | 0 | 60 | 85 |
+| vedic_rituals_hi | 0 | 0 | 0 | 140 | 5 |
+| kosha_syn | 0 | 0 | 0 | 114 | 31 |
+| meulenbeld | 0 | 0 | 0 | 144 | 1 |
+| corpus | 0 | 0 | 0 | 53 | 92 |
+
+**Honest caveat on the Grintser query.** MG's literal question ("which senses did
+Grintser support") is now *answerable* but currently *near-empty*: the store today
+holds 145 verb-roots + nominal windows, while the Гринцер glossaries (grin12/grin3,
+457+206 entries) are **Rāmāyaṇa proper-noun** vocabularies — silent for ~all
+current-store roots (grin12 hits 1 lemma, grin3 hits 0). The machinery is in place
+and populates as name-lemmas/nominals are translated; the near-empty result faithfully
+reflects the current store content, not a defect. `silent` deliberately folds "absent"
+together with "present but no usable Russian meaning gloss" (Smirnov citation-lists,
+Kossovich bare transliteration); a source is marked `contradicts` only when it carries
+a real Russian gloss overlapping no sense — avoiding false-disagreement claims.
 
 ---
 

@@ -3331,6 +3331,17 @@ def test_promote_claim_contention():
     promote_lock.selftest()
 
 
+def test_annotate_evidence_relation_semantics():
+    """H337 (W2): the per-sense evidence relation classifier. Pins annotate_evidence.py's
+    own pure-function selftest (provides = exact Russian equivalent; supports = token
+    containment >= corpus_gate.THRESHOLD; a citation-only sense yields nothing; a source
+    with no usable meaning tokens is SILENT not contradicts; the lemma summary is
+    lemma-scoped and shared across a lemma's rows). No gate-source file IO, so it runs in
+    CI where the gitignored src/*.jsonl dictionaries are absent."""
+    import annotate_evidence
+    annotate_evidence.selftest()
+
+
 def test_audit_window_tag_routing():
     """H336/H-2: --window-tag routes window_status/report/requeue/judge-sample to
     src/pilot/output/<tag>/ instead of the flat singletons, so two accounts auditing
@@ -3496,6 +3507,7 @@ def main():
         test_frag_tm_fidelity_gate_and_override,
         test_corpus_gate_evidence_and_db_markers,
         test_promote_claim_contention,
+        test_annotate_evidence_relation_semantics,
         test_audit_window_tag_routing,
         test_denylist_torn_line_warns,
     ]

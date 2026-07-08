@@ -47,6 +47,9 @@
         },
         "notes": {
           "type": "string"
+        },
+        "evidence_summary": {
+          "$ref": "#/$defs/evidence_summary"
         }
       }
     },
@@ -158,6 +161,104 @@
             ""
           ],
           "description": "The Renou state of this sense's earliest-dated <ls> citation, or empty when no dated citation is present."
+        },
+        "evidence": {
+          "type": "array",
+          "description": "OPTIONAL. Per-sense evidence provenance from the corpus_gate lanes (H335 W2 / H337). Each entry records a Russian-glossing authority that PROVIDES or SUPPORTS this sense's Russian gloss. Lemma-level standing (silent/contradicts, and the non-Russian corroboration lanes) lives in the card's evidence_summary. Deterministic, LLM-free; the supports/provides split is a token-overlap heuristic. Added by annotate_evidence.py; also written per-row on the flat store.",
+          "items": {
+            "$ref": "#/$defs/evidence_item"
+          }
+        }
+      }
+    },
+    "evidence_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "relation"
+      ],
+      "properties": {
+        "source": {
+          "enum": [
+            "koch",
+            "kna",
+            "fri",
+            "smirnov",
+            "kow",
+            "grin12",
+            "grin3",
+            "apte_hi",
+            "vedic_rituals_hi",
+            "kosha_syn",
+            "meulenbeld",
+            "corpus",
+            "leonov"
+          ],
+          "description": "Evidence lane source code. leonov is RESERVED (Sundarakāṇḍa apparatus, not yet machine-usable) — never emitted, only reserved so the enum is stable."
+        },
+        "relation": {
+          "enum": [
+            "provides",
+            "supports",
+            "contradicts",
+            "silent"
+          ],
+          "description": "provides = source states this sense's exact Russian equivalent; supports = token containment with the sense ru at/above corpus_gate.THRESHOLD; contradicts/silent are lemma-level and appear in evidence_summary, not in a sense's evidence[]."
+        },
+        "gloss_ref": {
+          "type": "string",
+          "description": "The matched source gloss / synonym / passage snippet."
+        },
+        "match": {
+          "enum": [
+            "lemma",
+            "stem"
+          ],
+          "description": "Whether the lane joined on the lemma key or its bare stem (the Hindi SENSE / botanical lanes index on both)."
+        }
+      }
+    },
+    "evidence_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "OPTIONAL. Lemma-level (per key1) evidence roll-up (D1, DECISIONS_PIPELINE_CAPABILITY_H335.md): recorded once per lemma — on the structured card, and identically on every flat store row sharing the key1 (the flat store has no lemma object). Added by annotate_evidence.py.",
+      "properties": {
+        "silent": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Source codes absent for this lemma, or present but carrying no usable Russian meaning gloss (e.g. a Smirnov citation-list, Kossovich bare transliteration) — an uninformative silence, deliberately NOT a contradicts."
+        },
+        "contradicts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Russian-glossing sources that have a usable gloss for the lemma but overlap NO sense of it (a heuristic disagreement candidate)."
+        },
+        "present": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string" },
+              "match": { "enum": ["lemma", "stem"] }
+            },
+            "required": ["source"]
+          },
+          "description": "Non-Russian corroboration lanes present for the lemma (apte_hi/vedic_rituals_hi/kosha_syn/meulenbeld/corpus) — presence signal only, never a correctness verdict."
+        },
+        "supports_senses": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Russian source codes that provided/supported >=1 sense of the lemma (their per-sense detail is in each sense's evidence[])."
+        },
+        "evidence_status": {
+          "type": "string",
+          "description": "corpus_gate.evidence_status() at annotation time: 'ok' when >=1 INDEP authority was loaded, else 'evidence_unavailable' (so a false 'silent' from missing sources is distinguishable)."
+        },
+        "corpus_status": {
+          "type": "string",
+          "description": "corpus_gate corpus_examples_with_status() status: ok / db_absent / db_error / skipped_short_term."
         }
       }
     },
