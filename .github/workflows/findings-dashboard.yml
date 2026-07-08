@@ -49,15 +49,17 @@ jobs:
           ref: gh-pages
           path: pages
 
-      - name: Publish to gh-pages/findings/ and gh-pages/epistemic/
+      - name: Publish to gh-pages/findings/ and gh-pages/episteme/
         run: |
-          mkdir -p pages/findings pages/epistemic
+          mkdir -p pages/findings pages/episteme
           cp findings_dashboard/index.html findings_dashboard/data.json findings_dashboard/timeseries.json pages/findings/
           [ -f findings_dashboard/platform_status.json ] && cp findings_dashboard/platform_status.json pages/findings/ || true
-          cp epistemic_dashboard/index.html epistemic_dashboard/epistemic.json pages/epistemic/
+          cp epistemic_dashboard/index.html epistemic_dashboard/epistemic.json pages/episteme/
           cd pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add findings epistemic
+          # the dashboard published at /epistemic/ before the 08-07-2026 rename to /episteme/ — drop the stale copy
+          git rm -r --quiet --ignore-unmatch epistemic
+          git add findings episteme
           git diff --cached --quiet || git commit -m "chore(dashboards): publish monthly refresh"
           git push
