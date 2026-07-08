@@ -52,6 +52,10 @@
 <p class="mut">The registries are designed to be seeded automatically and confirmed by hand. A healthy layer trends from ⚙️ toward ✍️ over time as candidates are confirmed or deleted.</p>
 <table id="origin"></table>
 
+<h2>Conclusions</h2>
+<ul id="conclusions"></ul>
+<p class="mut">The seven layers are one system: a fact starts as an <b>assumption</b>, a <b>gap</b>, or a <b>contradiction</b>; a <b>recipe</b> says how to settle it; once settled it <b>graduates</b> into FINDINGS (or a decision); a failed attempt is parked as a <b>dead end</b>; <b>staleness</b> tells you when a settled fact needs re-checking; and the <b>glossary</b> is the shared vocabulary they are all written in.</p>
+
 <script>
 'use strict';
 const DOT = {3:'🔴', 2:'🟠', 1:'🟡'};
@@ -119,6 +123,23 @@ function bar(auto, human){
     }).join('') +
     `<tr><td><b>total</b></td><td class="num auto"><b>${t.auto}</b></td>` +
     `<td class="num human"><b>${t.human}</b></td><td>${bar(t.auto, t.human)}</td></tr>`;
+
+  // Computed conclusions — recomputed from the data each load, so they can't drift.
+  const entryLayers = d.layers.filter(L => L.key !== 'STALENESS');
+  const biggestHuman = entryLayers.slice().sort((a,b)=>(b.by_origin?.human||0)-(a.by_origin?.human||0))[0];
+  const mostRed = entryLayers.slice().sort((a,b)=>((b.by_importance?.['3']||0)-(a.by_importance?.['3']||0)))[0];
+  const autoPct = t.rows ? Math.round(100*t.auto/t.rows) : 0;
+  const candidates = entryLayers.reduce((n,L)=>n+(L.by_origin?.auto||0),0);
+  const staleTotal = s.red + s.yellow;
+  const cc = [];
+  cc.push(`<b>${t.rows} rows across ${t.layers} layers</b> — ${t.by_importance[3]||0} 🔴 · ${t.by_importance[2]||0} 🟠 · ${t.by_importance[1]||0} 🟡. The registries now hold as much structured "what we don't yet know / can't yet trust" as FINDINGS holds settled fact.`);
+  cc.push(`<b>${autoPct}% of rows are machine-generated</b> (${t.auto} ⚙️ / ${t.human} ✍️), but almost all of that is the fully-auto STALENESS table; only <b>${candidates} entry rows are ⚙️ auto candidates</b> still awaiting a human confirm-or-delete — that is the actionable backlog to graduate.`);
+  cc.push(staleTotal === 0
+    ? `<b>Nothing is stale</b> — every dated finding is 🟢 fresh (&lt;3 mo). The decay clock only starts to matter after the next quarter; re-run the STALENESS generator monthly.`
+    : `<b>${staleTotal} findings are aging</b> (${s.red} 🔴 >6 mo · ${s.yellow} 🟡 3–6 mo) — re-verify these before citing.`);
+  if (biggestHuman) cc.push(`The most human-curated layer is <b>${esc(biggestHuman.key)}</b> (${biggestHuman.by_origin.human} ✍️ rows); the highest-stakes layer by 🔴 count is <b>${esc(mostRed.key)}</b> — start confirmations there.`);
+  cc.push(`Each row carries an <b>↔ Interlinks</b> line, so the seven docs read as one graph: an assumption points to the recipe that would settle it and the dead end that shows what breaks if it fails.`);
+  document.getElementById('conclusions').innerHTML = cc.map(x => `<li>${x}</li>`).join('');
 })();
 </script>
 </body>
