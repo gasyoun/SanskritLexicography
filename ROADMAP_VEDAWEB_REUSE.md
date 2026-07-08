@@ -68,14 +68,19 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H063-Sonnet_WhitneyRoots_acc
 
 Sonnet-tier chat in `GitHub\WhitneyRoots`.
 
-### Phase 3 — GRA (Grassmann) ↔ VedaWeb crosswalk — gated on Phase 1
+### Phase 3 — GRA (Grassmann) ↔ VedaWeb crosswalk — ✅ DONE 08-07-2026
 
-- [ ] Check VedaWeb's own Grassmann linking first (consume, don't rebuild), then GRA
-  headwords × lemmatization export → crosswalk TSV + coverage report in the VisualDCS
-  feed dir; ONE `content-enhancement` issue on
-  [sanskrit-lexicon/GRA](https://github.com/sanskrit-lexicon/GRA) proposing entry→RV
-  deep links. Handoff:
-  [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
+- [x] VedaWeb's own Grassmann linking (`id_gra`) confirmed to equal the Grassmann `<L>`
+  entry number in `csl-orig/v02/gra/gra.txt` — crosswalk built entirely from local data,
+  no text-matching needed. Landed:
+  [`gra_vedaweb_crosswalk.tsv`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/gra_vedaweb_crosswalk.tsv) +
+  [`GRA_CROSSWALK.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/GRA_CROSSWALK.md)
+  ([PR #18](https://github.com/gasyoun/VisualDCS/pull/18), merged). Coverage: 9,945/12,785
+  GRA entries (77.8%), 9,475/11,108 unique headwords (85.3%) attested ≥1× in RV. Issue open:
+  [sanskrit-lexicon/GRA#52](https://github.com/sanskrit-lexicon/GRA/issues/52)
+  (`content-enhancement`, Major Enhancements milestone). Finding logged:
+  [FINDINGS.md §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+  Handoff: [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md and execute it.
