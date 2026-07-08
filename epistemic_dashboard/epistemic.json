@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T11:53:17Z",
+ "generated_at": "2026-07-08T12:27:43Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "layers": [
@@ -17,6 +17,8 @@
     "auto": 0,
     "human": 6
    },
+   "categories": 3,
+   "interlinks": 6,
    "entries": [
     {
      "title": "§1. DCS lemma == CDSL headword",
@@ -70,6 +72,8 @@
     "auto": 0,
     "human": 5
    },
+   "categories": 3,
+   "interlinks": 5,
    "entries": [
     {
      "title": "§1. Derivative ī/ū-stem gen.pl accent (Whitney, internal)",
@@ -117,6 +121,8 @@
     "auto": 5,
     "human": 6
    },
+   "categories": 3,
+   "interlinks": 11,
    "entries": [
     {
      "title": "§1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable",
@@ -200,6 +206,8 @@
     "auto": 1,
     "human": 6
    },
+   "categories": 3,
+   "interlinks": 7,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -259,6 +267,8 @@
     "auto": 0,
     "human": 6
    },
+   "categories": 3,
+   "interlinks": 6,
    "entries": [
     {
      "title": "§1. Whitney accent axis validation (17→18/19 GO) → reproduce",
@@ -330,6 +340,8 @@
     "auto": 0,
     "human": 12
    },
+   "categories": 4,
+   "interlinks": 12,
    "entries": [
     {
      "title": "form_key",
@@ -422,6 +434,10 @@
    "2": 24,
    "1": 8
   },
-  "layers": 7
+  "layers": 7,
+  "entry_rows": 47,
+  "candidates": 6,
+  "categories": 19,
+  "interlinks": 47
  }
 }
