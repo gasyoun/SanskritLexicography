@@ -1,0 +1,130 @@
+{
+  "schema": "pwg.skillopt.heldout.v1",
+  "created": "08-07-2026",
+  "handoff": "H388",
+  "snapshot_source": "verb_worklist.py --top 40 (runnable=17)",
+  "split_ratio": "2:1:7 (train:selection:test)",
+  "unit": "root",
+  "n_active": 16,
+  "notes": [
+    "Only 17 roots were runnable (had rootmaps) on the snapshot date; a larger exam requires generating more rootmaps first (prerequisite).",
+    "sTA (241 expected agents, defer-calibrate) held aside as a cost-deferred control, NOT scored in this benchmark.",
+    "selection split GATES every edit; test split is report-only."
+  ],
+  "size_band_counts": {
+    "large": 3,
+    "medium": 5,
+    "small": 8
+  },
+  "splits": {
+    "train": [
+      {
+        "root": "i",
+        "source_bytes": 146340,
+        "worklist_score": 57.4,
+        "size_band": "large"
+      },
+      {
+        "root": "as",
+        "source_bytes": 59006,
+        "worklist_score": 57.5,
+        "size_band": "medium"
+      },
+      {
+        "root": "SaMs",
+        "source_bytes": 26005,
+        "worklist_score": 45.2,
+        "size_band": "small"
+      }
+    ],
+    "sel": [
+      {
+        "root": "muh",
+        "source_bytes": 21894,
+        "worklist_score": 44.5,
+        "size_band": "small"
+      },
+      {
+        "root": "tap",
+        "source_bytes": 39184,
+        "worklist_score": 49.4,
+        "size_band": "medium"
+      }
+    ],
+    "test": [
+      {
+        "root": "yuj",
+        "source_bytes": 106851,
+        "worklist_score": 58.2,
+        "size_band": "large"
+      },
+      {
+        "root": "BU",
+        "source_bytes": 102570,
+        "worklist_score": 60.2,
+        "size_band": "large"
+      },
+      {
+        "root": "kzip",
+        "source_bytes": 37869,
+        "worklist_score": 46.7,
+        "size_band": "medium"
+      },
+      {
+        "root": "ram",
+        "source_bytes": 35782,
+        "worklist_score": 48.1,
+        "size_band": "medium"
+      },
+      {
+        "root": "Baj",
+        "source_bytes": 34013,
+        "worklist_score": 47.4,
+        "size_band": "medium"
+      },
+      {
+        "root": "aS",
+        "source_bytes": 21710,
+        "worklist_score": 46.1,
+        "size_band": "small"
+      },
+      {
+        "root": "nu",
+        "source_bytes": 20679,
+        "worklist_score": 44.4,
+        "size_band": "small"
+      },
+      {
+        "root": "sev",
+        "source_bytes": 20037,
+        "worklist_score": 43.4,
+        "size_band": "small"
+      },
+      {
+        "root": "tyaj",
+        "source_bytes": 17387,
+        "worklist_score": 45.0,
+        "size_band": "small"
+      },
+      {
+        "root": "hu",
+        "source_bytes": 16988,
+        "worklist_score": 44.0,
+        "size_band": "small"
+      },
+      {
+        "root": "pU",
+        "source_bytes": 14411,
+        "worklist_score": 43.3,
+        "size_band": "small"
+      }
+    ]
+  },
+  "deferred_controls": [
+    {
+      "root": "sTA",
+      "source_bytes": 184881,
+      "reason": "241 expected agents (defer-calibrate) — own budgeted session"
+    }
+  ]
+}
