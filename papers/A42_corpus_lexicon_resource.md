@@ -1,30 +1,42 @@
 ---
 paper_id: A42
 title: "A Word-Aligned Sanskrit→Russian Corpus Lexicon: a 1.09-Million-Pair Open Alignment Resource"
-status: draft (skeleton, 2/5) — scaffolded 2026-06-26
-readiness: 2/5
+status: draft (skeleton, 3/5) — scaffolded 2026-06-26, advanced 2026-07-08 (H353)
+readiness: 3/5
 venue: "Письменные памятники Востока / Вопросы языкознания (ВЯ) / CLARIN-LRE / ComputEL / LoResMT (added 04-07-2026, ACL Anthology scan — both live, on-topic for low-resource classical-language alignment)"
-author: "M. Gasūns (sole) — ORCID to confirm"
-data_source: "RussianTranslation/src/corpus_lexicon.jsonl (built & verified; 1,091,528 alignments) — figures recomputed 2026-06-26 from the JSONL and from RussianTranslation/gold/precision_report.md"
+author: "Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru — venue + byline to confirm (a human decides)"
+data_source: "RussianTranslation/src/corpus_lexicon.jsonl (built & verified; 1,091,528 alignments at the 2026-06-26 recompute; 1,093,391 after the H309 targeted re-harvest of 08-07-2026) — evaluation figures from RussianTranslation/gold/PR_MEMO_A42.md (P 84.4% / R 95.4% / coverage 98.9%, LLM-estimated, human packets pending)"
 ---
 
 # A Word-Aligned Sanskrit→Russian Corpus Lexicon: a 1.09-Million-Pair Open Alignment Resource
 
-> **Draft status (2026-06-26).** Manuscript skeleton built directly on the verified
-> data asset
-> [`RussianTranslation/src/corpus_lexicon.jsonl`](../RussianTranslation/src/corpus_lexicon.jsonl)
-> and the precision scaffold
-> [`RussianTranslation/gold/precision_report.md`](../RussianTranslation/gold/precision_report.md).
-> Every numeric claim below was recomputed from the JSONL on this date (rows,
-> works, distinct keys, kind split, date span, period/genre tallies) or transcribed
-> from the precision report. **Open before submission:** (1) write §2 Related work
-> (currently a stub); (2) state recall as a measured gap — no recall figure exists
-> yet, do not invent one; (3) downgrade the precision number to "LLM-judged
-> estimate" wording until the human gold pass lands; (4) **[@DO]** document the IP /
-> redistribution rights of the underlying modern Russian translations before any
-> public deposit; (5) **[@DO]** mint a Zenodo DOI; (6) **[@DO]** confirm ORCID and
-> lock the venue. The alignment is **LLM-induced, not deterministic** — the resource
-> is described by artifact and method, never headlined by a model name.
+_Created: 26-06-2026 · Last updated: 08-07-2026_
+
+> **Draft status (2026-07-08, H353; scaffolded 2026-06-26).** Manuscript skeleton built
+> directly on the verified data asset
+> [`RussianTranslation/src/corpus_lexicon.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py)
+> (the JSONL itself is gitignored; link is to its committed builder) and the evaluation
+> memo [PR_MEMO_A42.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md) —
+> the single citation point for every evaluation number in this paper. Scale/shape
+> figures were recomputed from the JSONL on 2026-06-26; evaluation figures follow the
+> memo as of 08-07-2026 (post-[H309](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H309-Sonnet_RussianTranslation_corpus-lexicon-reharvest-gaps_07.07.26.md)).
+> **§2 Related work written 04-07-2026**
+> ([PR #145](https://github.com/gasyoun/SanskritLexicography/pull/145), ACL Anthology
+> scan; citations verified).
+> **Advanced 08-07-2026 (readiness 2/5 → 3/5, H353, Fable 5 `claude-fable-5`):** the
+> measured recall figures (H136 measurement + H309 targeted fix) folded in as the
+> headline evaluation with the "LLM-estimated, human packets pending" caveat
+> first-class (§4.4–§4.6); reproducibility limits of an LLM-induced, non-deterministic
+> resource stated explicitly, in contrast with A41's deterministic extraction (§3.6);
+> claim→artifact inventory (§9) and companion-paper scope block (§10) added;
+> References (§11); all links upgraded to full blob URLs.
+> **Open before submission:** (1) **[@DO]** document the IP / redistribution rights of
+> the underlying modern Russian translations before any public deposit (what the 1.09M
+> pairs derive from and what ships openly — §6, §8); (2) **[@DO]** mint a Zenodo DOI
+> once the rights scope is fixed; (3) venue + byline/ORCID (a human decides); (4) both
+> precision and recall are **LLM-judged estimates until the human gold packets land**
+> (annotator recruit is a standing @DO) — the frozen scaffolds are committed and
+> re-checkable, but no number below may be cited as print-grade before that pass.
 
 ## Abstract
 
@@ -39,13 +51,15 @@ evidence is a running **translation** (990,499 rows, 90.7%) or a **commentary** 
 verse-aligned Sanskrit↔Russian pair in an existing parallel corpus, a large language
 model is prompted, under a strict JSON contract and a Cyrillic-presence guard, to
 emit the per-word renderings attested in that translation; a length-preserving SLP1
-normaliser then provides a deterministic join key into the dictionary side. On a
-stratified random sample of 320 alignments judged against their source verses,
-estimated precision is **84.4%** (95% CI 80.0–87.9), rising to 90.0% on Vedic and
-Epic strata; this is an LLM-judged estimate pending a human gold pass. The
-contribution is not a new alignment algorithm — induced bitext alignment is a mature
-method — but the construction, stratification, evaluation, and open documentation of
-a **diachronically labelled Sanskrit→Russian lexical-alignment resource** that did
+normaliser then provides a deterministic join key into the dictionary side. On frozen
+stratified samples, estimated **precision is 84.4%** (95% CI 80.0–87.9, n=320
+alignments) and estimated **word-level recall is 95.4%** (95% CI 92.2–97.3, n=280
+translated content lemmata) within processed groups, with deterministic **group-level coverage
+of 98.9%** (58,897 eligible groups); precision and recall are LLM-judged estimates
+pending a human gold pass over the committed scaffolds. The contribution is not a new
+alignment algorithm — induced bitext alignment is a mature method — but the
+construction, stratification, evaluation, and open documentation of a
+**diachronically labelled Sanskrit→Russian lexical-alignment resource** that did
 not previously exist, together with the empirical per-headword distribution of
 attested Russian renderings it makes computable.
 
@@ -79,6 +93,9 @@ Our claims:
 3. **A consumable join, not a black box.** A length-preserving SLP1 key
    (`form_key()`) joins the lexicon deterministically to dictionary headwords; the
    resource already feeds an independent dictionary-verification gate.
+4. **An evaluated draft layer, honestly labelled.** Precision, recall, and coverage
+   are measured on frozen, committed, re-checkable stratified scaffolds — and
+   explicitly flagged as LLM-judged estimates until a human pass confirms them.
 
 The alignment is **LLM-induced**: per-pair, JSON-constrained, and guarded against
 fabrication, rather than produced by a deterministic statistical aligner. We describe
@@ -149,17 +166,26 @@ translations held verse-aligned against the Sanskrit in the SamudraManthanam cor
 Sanskrit segment (`sa`), the running translation (`ru`), and any commentary notes
 (`comm1`, `comm2`, …) are distinct segments. We align the translation (tagged
 `kind = translation`) and the commentary notes (`kind = commentary`) separately and
-never confuse one for the other.
+never confuse one for the other. The corpus itself — its sources and their
+deterministic markup-aligned extraction — is documented by the companion paper A41
+([SamudraManthanam papers/A41_parallel_corpus_descriptor.md](https://github.com/gasyoun/SamudraManthanam/blob/main/papers/A41_parallel_corpus_descriptor.md));
+this paper consumes it and never re-describes it (§10).
 
 ### 3.2 Inducing the word alignment
 For each aligned pair, a large language model is prompted to map every Sanskrit
-*content* word (noun, verb, adjective; particles skipped) to the Russian word or
-phrase that renders it *in that translation only*, in the word's dictionary/citation
-form, emitting strict JSON and omitting any Sanskrit word with no genuine Russian
-counterpart. Calls are batched (~8 verse-units each), run concurrently, and the build
-is append-only and group-resumable. Each surviving alignment is written as
+*content* word (noun, verb, adjective, adverb; particles skipped) to the Russian word
+or phrase that renders it *in that translation only*, in the word's
+dictionary/citation form, emitting strict JSON and omitting any Sanskrit word with no
+genuine Russian counterpart. Calls are batched and run
+concurrently (~8 align-units per call — one align-unit per target segment, so a
+group with both a translation and a commentary note counts twice; a group is never
+split across batches), and the build is append-only and group-resumable. Each surviving
+alignment is written as
 `{group, work, passage, slp1, sa, ru, kind, genre, period, date}`. Implementation:
-[`RussianTranslation/src/build_corpus_lexicon.py`](../RussianTranslation/src/build_corpus_lexicon.py).
+[`RussianTranslation/src/build_corpus_lexicon.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py).
+(The adverb category and an explicit exhaustiveness instruction were added to the
+harvest prompt on 08-07-2026 after the recall measurement exposed their absence —
+§4.5; the prompt lineage is part of the method's audit trail, not hidden.)
 
 ### 3.3 The fabrication guard (an integrity control, not cosmetics)
 Early builds fed *untranslated* placeholder verses (a bare `…` or `—` where the corpus
@@ -168,7 +194,7 @@ translation that did not exist — **166k of 204k rows (≈81%) were fabricated*
 the guard was added. The shipped resource refuses to align, or to write, any Russian
 segment carrying no Cyrillic letter (`has_cyr`), drops rows where the Russian equals
 the Sanskrit or is a known refusal string (`REJECT_RU`), strips dhātu `√` notation
-from keys, and de-duplicates repeated commentary units. The 1.09M shipped rows are all
+from keys, and de-duplicates repeated commentary units. The shipped rows are all
 post-guard.
 
 ### 3.4 The join key
@@ -177,19 +203,44 @@ length-preserving normalisation that keeps case and vowel length, drops accents,
 slashes, and hyphen bounds, and is explicitly *not* a naive NFD-strip-combining-marks
 (which would destroy vowel length and the retroflex dots). This key joins the lexicon
 to dictionary headwords; it is the same key the consuming verification gate
-([`RussianTranslation/src/corpus_gate.py`](../RussianTranslation/src/corpus_gate.py))
+([`RussianTranslation/src/corpus_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py))
 uses.
 
 ### 3.5 Stratification
 Every row inherits its work's `genre`, `period`, and median `date` from a curated
 strata table, so the lexicon is queryable by epoch and register, not only by headword.
 
+### 3.6 Reproducibility limits: an LLM-induced resource, honestly stated
+The alignment layer is **non-deterministic**: re-running the committed builder against
+the same corpus will not reproduce the shipped JSONL byte-for-byte, because the
+inducing step is an LLM call, not a deterministic algorithm. This is a structural
+property of the method, not an accident, and we state its consequences plainly rather
+than blur them. What *is* deterministic and re-checkable: (i) the join key
+(`form_key()`) and the consuming gate; (ii) the group-level coverage scan (§4.6),
+recomputable by anyone from the shipped rows; (iii) the frozen evaluation scaffolds —
+[gold_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl)
+and [recall_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_set.jsonl) —
+which pin the exact samples and per-item labels so the estimates can be re-adjudicated
+by a human without re-sampling; and (iv) the fabrication-guard and de-duplication
+rules, which are ordinary code. The honest reproducibility claim is therefore:
+*the artifact is versioned and its evaluation is replicable; the artifact's generation
+is not bit-replicable.* This contrasts with the companion corpus paper A41, whose
+verse-aligned corpus is produced by **deterministic markup extraction** and is fully
+re-derivable from its sources — the two resources sit at different points on the
+reproducibility spectrum and are cited accordingly, never conflated (§10).
+
 ## 4. Results
 
-All figures below were recomputed on 2026-06-26 directly from
-[`corpus_lexicon.jsonl`](../RussianTranslation/src/corpus_lexicon.jsonl) (290 MB),
-except the precision block, transcribed from
-[`gold/precision_report.md`](../RussianTranslation/gold/precision_report.md).
+All scale/shape figures below (§4.1–§4.3) were recomputed on 2026-06-26 directly from
+`corpus_lexicon.jsonl` (290 MB; gitignored, regenerated by
+[`build_corpus_lexicon.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py)).
+Evaluation figures (§4.4–§4.6) are transcribed from the consolidated memo
+[gold/PR_MEMO_A42.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md)
+as of 08-07-2026. A targeted re-harvest of two commentary works on 08-07-2026 (H309;
+§4.5) brought the shipped build to **1,093,391 rows** (+1,863 net, all within a
+780-group population); the §4.1–§4.3 breakdowns were **not** recomputed after it and
+describe the 2026-06-26 build — the delta is confined to the Medieval commentary
+stratum and does not materially move any figure below.
 
 ### 4.1 Scale and shape
 
@@ -227,18 +278,61 @@ every flagged error, estimated **precision (good renderings) is 84.4%** (95% CI
 Epic / early-Classical 90.0%, Classical 78.8%, Medieval 78.8%. By kind: translation
 **86.9%** vs commentary **81.9%** — commentary is noisier, as expected from sparser,
 note-form evidence. Label counts: correct 200 · lemma-variant 46 · proper-name 24 ·
-partial 28 · wrong-sense 13 · hallucinated 9.
+partial 28 · wrong-sense 13 · hallucinated 9. Source:
+[gold/precision_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/precision_report.md)
+(measured 2026-06-16; not affected by the H309 recall-side re-harvest).
 
 > This is an **LLM-judged** estimate (per the report's own note and
-> [`HUMAN_GOLD_PROTOCOL.md`](../RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md)). The
+> [`HUMAN_GOLD_PROTOCOL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md)). The
 > frozen 320-row sample is the scaffold for a human spot-check that will confirm or
 > adjust these numbers; until then it must not be cited as print-grade precision.
 
-### 4.5 Recall  *(TODO — measured gap)*
-The gold set measures precision of emitted alignments, **not recall** (the share of
-Sanskrit content words that received any aligned rendering). No recall figure exists
-in the sources; the resource is best characterised as **high-precision, partial-recall**
-and the figure left as a TODO rather than invented.
+### 4.5 Recall (LLM-adjudicated estimate; human spot-check pending)
+Recall — the share of Sanskrit content words *rendered in the published Russian* that
+received an aligned row — was measured on 07-07-2026 over a stratified sample of
+**32 processed groups** (8 per period stratum, seed 42), yielding **287 unique content
+lemmata** after excluding particles, pronouns, copulas, and tokenization junk; every
+sampled token was read against its source verse and published translation, and the
+per-group labels are frozen in
+[recall_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_set.jsonl).
+Estimated **word-level recall is 95.4%** (Wilson 95% CI 92.2–97.3, n=280), counting a
+lemma as covered when the lexicon has a pair for it in that group and as a recall loss
+only when the published Russian renders it and the lexicon lacks it; the 7 sampled
+lemmata with no distinct Russian counterpart in their translation are reported
+separately and excluded from the denominator (280 = 267 covered + 13 missed). By stratum:
+Vedic 97.3%, Epic / early-Classical 91.3%, Classical 96.3%, Medieval 95.1%. Source:
+[gold/recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md).
+
+The measurement did its diagnostic job: the initial figure was **92.1%** (CI
+88.4–94.7), with the Medieval stratum at 84.0%, and the failure classes it
+exposed were root-caused and the largest fixed the next day (H309, 08-07-2026).
+(1) *Commentary-tail dilution:* on dense groups whose `sa` blob fuses verse and prose
+commentary, the single-pass aligner silently dropped content words — fixed by an
+explicit exhaustiveness instruction plus a **targeted REPLACE re-harvest** of the two
+genre-tagged commentary works (780 groups; 12,841 → 14,704 rows), re-measured against
+the *same* eight frozen Medieval groups (apples-to-apples): Medieval recall
+**84.0% → 95.1%**, 9 of 13 misses resolved, 4 residual misses documented individually.
+(2) *Adverb skip:* adverbs were simply absent from the prompt's content-word category
+list — fixed for all future harvests; the sampled instances live outside the
+re-harvested population and remain documented residuals in the shipped build (the
+re-harvest was deliberately targeted, not a full rebuild).
+(3) *Scattered single misses:* a small heterogeneous remainder (e.g. `sarva`, `eka`,
+`arh`) with no single mechanism; the two of these that fell inside the re-harvested
+population were resolved by it, the rest are unchanged and documented. Like precision, this is an
+LLM-adjudicated estimate (single frontier-model reading pass) awaiting a human
+spot-check over the frozen scaffold.
+
+### 4.6 Group-level coverage (deterministic)
+Of the **58,897** verse groups eligible for harvesting (a Sanskrit segment and a
+Cyrillic-bearing Russian segment, work present in the strata table), **98.9%** have at
+least one lexicon row (Vedic 99.9%, Epic / early-Classical 99.3%, Classical 90.2%,
+Medieval 99.6%) — a full-corpus deterministic scan, not a sample. Combining the
+axes, end-to-end coverage of translated content words is roughly
+**recall × group coverage ≈ 94.3%** — a derived characterisation, not an
+independently measured figure. The resource is best described as
+**high-precision, high-recall within processed groups, with a measured and
+documented residual**, replacing the earlier "high-precision, partial-recall,
+recall unmeasured" characterisation that stood before 07-07-2026.
 
 ## 5. Discussion
 
@@ -249,7 +343,8 @@ translator preferences a single gloss list hides. (2) **Diachronic / register st
 the period and genre stamps let one ask how a word's Russian rendering shifts from
 Vedic to Classical, or between epic narration and śāstric commentary. (3) **Dictionary
 verification:** the resource already feeds the `pwg_ru` corpus gate
-([`corpus_gate.py`](../RussianTranslation/src/corpus_gate.py)) as corpus evidence for
+([`corpus_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py))
+as corpus evidence for
 whether a proposed Russian gloss is attested in translated context. The induced-then-
 gated design is what makes a million-row resource tractable to build while keeping a
 deterministic, auditable join.
@@ -260,7 +355,8 @@ deterministic, auditable join.
 Mao & Yu's LoResMT 2024 method feeds a statistical aligner's output into the LLM as a
 contrastive signal during fine-tuning. This pipeline does not fine-tune, but the
 equivalent prompt-time move is available cheaply: before calling `align_batch()`
-(`build_corpus_lexicon.py:135`), look up the Sanskrit surface form's `form_key()` in
+([`build_corpus_lexicon.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py)),
+look up the Sanskrit surface form's `form_key()` in
 the already-accumulated `corpus_lexicon.jsonl` and, if prior renderings exist for that
 key, inject them into the prompt as "previously observed rendering(s) for this word:
 …confirm, refine, or override if this context differs." This is a stronger prior than
@@ -275,10 +371,21 @@ flagged here as a scoped follow-up, not done in this pass.
 
 - **Induced, not gold.** Alignments are LLM-emitted, not hand-verified; the resource
   is a high-precision draft layer, not a manually curated gold alignment.
-- **Precision is LLM-judged.** The 84.4% figure (§4.4) is an estimate pending the
-  human gold pass defined in `HUMAN_GOLD_PROTOCOL.md`.
-- **Recall is unmeasured** (§4.5) and should be reported before strong coverage
-  claims are made.
+- **Non-deterministic generation.** Re-running the builder will not reproduce the
+  shipped rows byte-for-byte (§3.6); the versioned artifact plus frozen evaluation
+  scaffolds, not bit-replication, are the reproducibility contract.
+- **Both evaluation axes are LLM-estimated.** Precision 84.4% (§4.4) and recall 95.4%
+  (§4.5) are LLM-judged/adjudicated estimates over frozen, committed samples pending
+  the human gold pass defined in
+  [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md)
+  (reviewer-packet generation is specified in
+  [gold/REVIEWER_HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/REVIEWER_HANDOFF.md);
+  the packets themselves are generated on demand, not committed; annotator
+  recruitment is an open action).
+- **Recall residual is bounded and documented, not zero.** A small adverb-class miss
+  set and a scattered heterogeneous remainder persist outside the 780-group population
+  re-harvested on 08-07-2026, and 4 residual commentary-class misses persist within it
+  (§4.5) — each documented individually in the recall report.
 - **Commentary is noisier than translation** (81.9% vs 86.9% precision); the
   commentary stratum should be consumed with that in mind.
 - **Corpus composition is skewed Epic** (MBh + Rām + Gītā dominate), so per-headword
@@ -289,28 +396,35 @@ flagged here as a scoped follow-up, not done in this pass.
 - **Third-party translation rights.** The Russian renderings derive from modern
   published translations (Elizarenkova, the academic Mahābhārata, Russian Gītās)
   whose redistribution is governed by their source-corpus permissions, *not* by this
-  project's own licence — see §8 and the open IP gate.
+  project's own licence — see §8 and the open IP gate. Which slice of the 1.09M pairs
+  can ship openly (full pairs vs. alignment-only vs. aggregate frequencies) is
+  undetermined until that documentation pass completes.
 
 ## 7. Conclusion
 
 We document the first large, openly-described Sanskrit→Russian word-alignment lexicon:
-1,091,528 alignments over 116 works, −1125 to 1374 CE, in SLP1 + IAST + Cyrillic,
+1.09 million alignments over 116 works, −1125 to 1374 CE, in SLP1 + IAST + Cyrillic,
 stamped by period, genre, and date and tagged translation-vs-commentary, induced from
 a verse-aligned parallel corpus, fabrication-guarded, and joined deterministically by
-a length-preserving SLP1 key. The resource makes the Russian rendering of a Sanskrit
-word a computable, diachronically situated distribution rather than a single printed
-gloss, and is already consumed as evidence by an independent dictionary-verification
-pipeline. The remaining work is a human-confirmed precision pass, a recall
-measurement, and a rights-cleared, DOI-minted public deposit.
+a length-preserving SLP1 key. Its evaluation is unusually complete for an induced
+resource of this size — precision 84.4%, word-level recall 95.4%, group coverage
+98.9%, all on frozen committed scaffolds — and unusually honest about its status:
+both sampled estimates are LLM-judged pending a human pass, and the recall
+measurement's own failure classes were root-caused, one fixed by a targeted
+re-harvest, and the residual documented item-by-item. The resource makes the Russian
+rendering of a Sanskrit word a computable, diachronically situated distribution
+rather than a single printed gloss, and is already consumed as evidence by an
+independent dictionary-verification pipeline. The remaining work is the
+human-confirmed evaluation pass and a rights-cleared, DOI-minted public deposit.
 
 ## 8. Data and reproducibility
 
 The data asset is
-[`RussianTranslation/src/corpus_lexicon.jsonl`](../RussianTranslation/src/corpus_lexicon.jsonl)
+`RussianTranslation/src/corpus_lexicon.jsonl`
 (JSON-lines; one alignment per line; `{group, work, passage, slp1, sa, ru, kind,
 genre, period, date}`). It is gitignored for size and for the third-party rights below
 and is regenerated by the committed builder
-[`build_corpus_lexicon.py`](../RussianTranslation/src/build_corpus_lexicon.py):
+[`build_corpus_lexicon.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py):
 
 ```sh
 python build_corpus_lexicon.py build <textfile> [N]   # needs an API key in src/.env
@@ -318,18 +432,103 @@ python build_corpus_lexicon.py status                 # rows · distinct SLP1 ke
 ```
 
 The deterministic join contract and the consuming gate are in
-[`corpus_gate.py`](../RussianTranslation/src/corpus_gate.py); the precision scaffold
-and human protocol are in
-[`gold/precision_report.md`](../RussianTranslation/gold/precision_report.md) and
-[`gold/HUMAN_GOLD_PROTOCOL.md`](../RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md);
+[`corpus_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py);
+the consolidated evaluation memo is
+[`gold/PR_MEMO_A42.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md);
+the precision scaffold and human protocol are in
+[`gold/precision_report.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/precision_report.md) and
+[`gold/HUMAN_GOLD_PROTOCOL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md);
+the recall scaffold and sampler are in
+[`gold/recall_report.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md),
+[`gold/recall_set.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_set.jsonl), and
+[`src/gold_recall_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_recall_sample.py);
 the build history and the placeholder-fabrication fix are in
-[`CHANGELOG.md`](../RussianTranslation/CHANGELOG.md).
+[`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md).
 
-**Licence.** The project's own work (alignments produced by this pipeline, the
-stratification, the documentation) is **CC BY-SA 4.0** — see
-[`DATA_LICENSE.md`](../RussianTranslation/DATA_LICENSE.md). **Third-party rights
+**Licence.** The project's own contributions are released **CC BY-SA 4.0** — see
+[`DATA_LICENSE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DATA_LICENSE.md);
+its enumerated scope currently names the pwg_ru edition, stratification, and
+documentation, and extending its wording to name the alignment lexicon explicitly is
+part of the open rights pass. **Third-party rights
 (blocking for public release):** the Russian side derives from modern published
 translations whose redistribution is governed by their source-corpus permissions, not
 by this licence; the public deposit scope (full pairs vs. alignment-only vs. aggregate
 frequencies) must be settled per source before release. **DOI:** *TODO — Zenodo DOI to
 mint once the rights scope is fixed (author action).*
+
+## 9. Claim → artifact inventory
+
+Every headline claim, its figure, and the artifact it traces to (per the
+`/paper-scaffold` discipline — a claim without a committed artifact is a gap,
+flagged as such):
+
+| # | Claim | Figure(s) | Artifact | Status |
+|--:|---|---|---|---|
+| 1 | Scale and shape (rows, works, keys, kind split, date span) | 1,091,528 rows · 116 works · 190,838 keys · 90.7%/9.3% · −1125…1374 | `corpus_lexicon.jsonl` (gitignored) via [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) `status` | ⚠️ regenerable, not committed (size + rights); recomputed 2026-06-26 |
+| 2 | Post-H309 build size | 1,093,391 rows (+1,863 in the 780-group re-harvest population) | [PR_MEMO_A42.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md) + [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) affected-group census | ✅ committed |
+| 3 | Precision 84.4% (CI 80.0–87.9), n=320, stratified period×kind, seed 42 | §4.4 | [precision_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/precision_report.md) + frozen [gold_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl) | ✅ committed; ⬜ LLM-judged, human packets pending |
+| 4 | Word-level recall 95.4% (CI 92.2–97.3), n=280 translated lemmata (287 sampled) / 32 groups, seed 42 | §4.5 | [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) + frozen [recall_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_set.jsonl) | ✅ committed; ⬜ LLM-adjudicated, human spot-check pending |
+| 5 | Medieval recall 84.0% → 95.1% after the targeted H309 re-harvest (same 8 frozen groups) | §4.5 | [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) re-measurement table | ✅ committed |
+| 6 | Group-level coverage 98.9% (58,897 eligible groups) | §4.6 | [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) coverage table, deterministic scan via [gold_recall_sample.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_recall_sample.py) `coverage` | ✅ committed |
+| 7 | Pre-guard fabrication: 166k of 204k rows (≈81%) | §3.3 | [RussianTranslation/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md) build history | ✅ committed |
+| 8 | Per-headword distributions (65,089 keys ≥2 renderings; max 458; `agni` ×1111/×408) | §4.3 | recomputed 2026-06-26 from the JSONL | ⚠️ regenerable, not committed |
+| 9 | Source corpus: verse-aligned Sa↔Ru parallel corpus, deterministic extraction | §3.1 | companion paper [A41](https://github.com/gasyoun/SamudraManthanam/blob/main/papers/A41_parallel_corpus_descriptor.md) + [SamudraManthanam](https://github.com/gasyoun/SamudraManthanam) | ✅ committed (cited, owned by A41) |
+
+## 10. Scope versus companion papers (anti-salami)
+
+- **A41 (SamudraManthanam parallel-corpus descriptor)** owns the verse-aligned
+  Sa↔Ru corpus itself: its sources, the markup-aligned **deterministic**
+  extraction, and the corpus-level statistics. A42 consumes that corpus read-only and
+  cites it; it never re-describes the corpus, and it never blurs the method line —
+  A41's extraction is deterministic and re-derivable, A42's alignment layer is
+  LLM-induced and is evaluated precisely because it is not (§3.6).
+- **A43 (the Russian Sanskrit lexicographic family)** owns the digitized printed
+  tradition — Kochergina, Kossowich, Knauer and their comparability as a dictionary
+  family. A42 references that tradition only as background (§1, §2b) and contributes
+  the corpus-attested layer none of those dictionaries has; the dictionaries
+  themselves are A43's object.
+- **A40 (CDSL headword census) and A38 (the DCS-2026 corpus release)** own the
+  dictionary-inventory and Sanskrit-corpus sides respectively; A42 overlaps neither —
+  its denominator is a Sa↔Ru parallel corpus, not the DCS, and its output is an
+  alignment lexicon, not a headword census.
+- A42 leads with exactly what nothing else owns: the **word-level, LLM-induced,
+  diachronically stratified Sanskrit→Russian alignment lexicon** and its
+  precision/recall/coverage evaluation on frozen scaffolds.
+
+## 11. References
+
+- Aralikatte, R., M. de Lhoneux, A. Kunchukuttan & A. Søgaard. 2021.
+  [Itihāsa: A large-scale corpus for Sanskrit to English translation](https://aclanthology.org/2021.wat-1.22/).
+  *Proceedings of the 8th Workshop on Asian Translation (WAT 2021)*.
+- Dou, Z.-Y. & G. Neubig. 2021.
+  [Word alignment by fine-tuning embeddings on parallel corpora](https://aclanthology.org/2021.eacl-main.181/).
+  *Proceedings of EACL 2021*. (awesome-align.)
+- Dyer, C., V. Chahuneau & N. A. Smith. 2013.
+  [A simple, fast, and effective reparameterization of IBM Model 2](https://aclanthology.org/N13-1073/).
+  *Proceedings of NAACL-HLT 2013*. (fast_align.)
+- Hellwig, O. *Digital Corpus of Sanskrit (DCS)* —
+  [github.com/OliverHellwig/sanskrit](https://github.com/OliverHellwig/sanskrit).
+- Knauer, F. (Кнауэр, Ф. И.). 1908. *Учебник санскритскаго языка.* Leipzig.
+- Kochergina, V. A. (Кочергина, В. А.). 1987. *Санскритско-русский словарь.* Moscow:
+  Русский язык.
+- Kossowich, K. A. (Коссович, К. А.). 1854. *Санскрито-русскій словарь.*
+  St. Petersburg.
+- Mao, Z. & C. Yu. 2024.
+  [Tuning LLMs with contrastive alignment instructions for machine translation in unseen, low-resource languages](https://aclanthology.org/2024.loresmt-1.1/).
+  *Proceedings of LoResMT 2024*.
+- Nehrdich, S. 2022.
+  [SansTib: A Sanskrit–Tibetan parallel corpus and bilingual sentence embedding model](https://aclanthology.org/2022.lrec-1.724/).
+  *Proceedings of LREC 2022*.
+- Patel, D. & M. Kulkarni. 2024.
+  [Word sense alignment of Sanskrit lexica](https://aclanthology.org/2024.iscls-1.1/).
+  *Proceedings of ISCLS 2024*.
+- Punia, R. et al. 2020.
+  [Improving neural machine translation for Sanskrit–English](https://aclanthology.org/2020.icon-main.30/).
+  *Proceedings of ICON 2020*.
+- SamudraManthanam — the verse-aligned Sanskrit↔Russian parallel corpus behind
+  `samskrtam.ru`: [github.com/gasyoun/SamudraManthanam](https://github.com/gasyoun/SamudraManthanam);
+  descriptor paper A41 (in preparation,
+  [papers/A41_parallel_corpus_descriptor.md](https://github.com/gasyoun/SamudraManthanam/blob/main/papers/A41_parallel_corpus_descriptor.md)).
+- ⬜ A41 / A43 self-citations to be finalized once their venues/DOIs freeze.
+
+_Dr. Mārcis Gasūns_
