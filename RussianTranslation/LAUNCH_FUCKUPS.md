@@ -338,6 +338,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "guardrail": "gen_opt_harness2.py:_strip_post_generation_fields() + _POST_GENERATION_{CARD,RECORD,SENSE}_FIELDS strip government/labels/renou/renou_oldest/evidence/evidence_summary/stats/renou_oldest_sense from the per-call StructuredOutput schema (kept on the full schema file for promote/annotate). window_selftest.py:test_generation_schema_carries_no_post_generation_field pins the reachable-defs shape and a <=5,000-char ceiling.",
     "residual_status": "fixed",
     "residual_risk": "None. If a future annotator field is added to schemas/pwg_ru_final_card.schema.json and it is post-generation-only, it must be added to the relevant _POST_GENERATION_*_FIELDS tuple or the new selftest will not catch its omission (only re-measures size, not the specific field list beyond the banned set already known)."
+  },
+  {
+    "id": "H437_MEDIUM50_KILLGATE_CASCADE_2026-07-09",
+    "handoff": "H437",
+    "date": "2026-07-09",
+    "title": "3 solo medium50 windows all trip their MAX_AGENTS budget-kill-switch -> 2/37 clean; kill-gate isolated as the blocker (classifier now unblocked, network healthy)",
+    "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
+    "model": "claude-sonnet-5",
+    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; 3 sequential SOLO (1-wide) launches, one per window; generation Sonnet 5 (harness-pinned)",
+    "expected": {
+      "agents": "17 + 13 + 14 = 44 expected agents across h317_w1b/w2a/w2b (agent_expected_after_tm)",
+      "tokens": "order of ~2M subagent tokens per window"
+    },
+    "actual": {
+      "agents": "61 + 49 + 52 = 162 agents (each window hit its own MAX_AGENTS budget-kill-switch: 61/61, 49/49, 52/52)",
+      "tokens": "2,898,353 + 1,628,556 + 2,153,758 = 6,680,667 subagent tokens; 2 cards clean (yuvan, ftvij), 6 raw-but-defective, 29 transient-null"
+    },
+    "passes": 1,
+    "symptoms": "Post-H428 (schema classifier unblocked, --dump-schema re-confirmed 1,698 chars) relaunch of the three windows H389 could not run. Each launched solo, sequentially. Every window returned only 2-3 raw cards and tripped budget_kill_switch_tripped=true: w1b 3 ok (1 clean yuvan, 2 defect), w2a 3 ok (1 clean ftvij, 2 defect), w2b 2 ok (0 clean, 2 defect). ZERO 'Connection closed mid-response' errors across all 162 agent() calls / 6.68M tokens -- the agents ran to completion. The 9-10 nulls per window were mostly UN-ATTEMPTED cards requeued when the switch tripped, not cards that failed on their own merits. Failure strings were uniformly 'heal-group-hard-failure gN: budget-kill-switch: window hit MAX_AGENTS=NN agent() calls; remaining cards requeued' (plus 1 'kill-timeout 115s' and 2 'selfheal-nothing-resolved').",
+    "classification": "kill-gate-calibration",
+    "root_cause": "By elimination across H317/H389/H437 the blocker is now isolated: NOT concurrency (all three ran 1-wide), NOT transient API instability (0 connection errors, healthy network), NOT the schema classifier (H428 fixed that; agents ran and spent tokens). It is the self-heal / kill-gate budget for dense band-4 nominal SINGLETON cards. A card carrying many <ls>/senses (the presplit_keys) enters the binary-split heal lanes; each bisection counts against the same per-window MAX_AGENTS (factor 3 x batches + headroom 10), so one pathological card consumes the whole budget and starves the un-attempted cards behind it in the batch -- converting a healthy run into near-total loss (~2M tokens buys ~1 clean card). This is the 'genuine kill-gate miscalibration for nominal medium-band cards' that H389's recommended-next-action foresaw as branch (3).",
+    "guardrail": "STOP relaunching medium50 windows blind -- the cascade is reproduced 3x; each blind re-run is ~2M tokens for ~1 card. Do not resume this lane at scale until the heal/kill budget is redesigned. Escalated to a bug-hunt handoff (H442) to recalibrate: cap heal bisections PER CARD (not just per window) so one dense card cannot starve its batch-mates; consider more aggressive presplit (lower output_budget/sense_presplit_budget) to turn a heal-cascade card into small clean fragment cards up front; separate the heal budget from the kill-timeout ceiling. Any change pinned by window_selftest.py + LANG_PARITY (SHARED).",
+    "residual_status": "bug-hunt-handoff",
+    "residual_risk": "Routed to H442 (https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md). Until H442 lands, the entire band-4 nominal-singleton lane is effectively blocked at ~1 clean card per 12-13 keys; verb-root drain (H151) is unaffected (dense verb BATCHES behave differently from no-fallback nominal singletons, per DAH_TAIL_2026-07-06). The 2 promoted cards (yuvan, ftvij) are in pwg_ru_translated.jsonl and are not at risk."
   }
 ]
 ```

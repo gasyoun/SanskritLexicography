@@ -154,4 +154,76 @@ Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
 `H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09` (and the prior
 `H317_MEDIUM50_3WIDE_KILL_CASCADE_2026-07-08` entry marked `superseded`).
 
+## Update — 09-07-2026 relaunch (H437): classifier IS unblocked, but the kill-gate cascade is now the isolated blocker
+
+[H437](https://github.com/gasyoun/Uprava/blob/main/handoffs/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md)
+relaunched the three windows H389 could not (`h317_w1b`, `h317_w2a`,
+`h317_w2b`) now that
+[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md)
+slimmed the opt2 generation schema (10,940 → 1,698 chars; `--dump-schema`
+re-confirmed 1,698 at the start of this session). Opus 4.8 (`claude-opus-4-8`)
+drove the Workflow tool; generation model unchanged (Sonnet 5, hardcoded in the
+harness). Each window launched **solo (1-wide)**, sequentially, per
+`RUN_FREQ_MAX.md`. Fresh worktree `SanskritLexicography-h437` (branch
+`h437-pwg-ru-medium50-resume`).
+
+### Per-window result — every window tripped its own budget-kill-switch
+
+| window | cards | agents (spent/max) | raw returns | **net clean (promoted)** | defect | transient-null | subagent tokens | wall-clock |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| h317_w1b | 12 | 61/61 | 3 | **1** (`yuvan`) | 2 (`dīkṣā`, `rātra`) | 9 | 2,898,353 | 7.96 min |
+| h317_w2a | 13 | 49/49 | 3 | **1** (`ṛtvij`) | 2 (`bhakṣa`, `vināśa`) | 10 | 1,628,556 | 6.28 min |
+| h317_w2b | 12 | 52/52 | 2 | **0** | 2 (`bhrū`, `prada`) | 10 | 2,153,758 | 6.82 min |
+| **total** | **37** | **162** | **8** | **2** | **6** | **29** | **6,680,667** | **21.06 min** |
+
+`budget_kill_switch_tripped = true` on all three. Two clean cards promoted to
+`pwg_ru_translated.jsonl` (`yuvan` 11 sense-rows, `ṛtvij` 3 sense-rows) via
+`promote_final_cards.py --merge` on the audit-clean subset only (defects and
+kill-switched nulls held back).
+
+### The three-way branch H317 posed is now decided — it is (3), the kill-gate
+
+H317's measurement named three candidate blockers and could not choose between
+them; each successive session eliminated one:
+
+1. **Concurrency** — refuted by H317 attempt 2 (solo 1-wide still failed) and
+   again here (all three solo launches failed identically).
+2. **Transient API instability** (`Connection closed mid-response`) — refuted
+   here: **zero** connection errors across 162 agent calls / 6.68 M tokens. The
+   agents ran to completion; they were not dropped.
+3. **Kill-gate / self-heal-budget miscalibration for nominal medium-band
+   singleton cards** — **confirmed.** With the classifier unblocked and the
+   network healthy, every window still cascaded through the self-heal
+   binary-split heal lanes (`heal-group-hard-failure gN`) until it exhausted its
+   own `MAX_AGENTS` budget. The cost profile is near-total-loss by design: ~2 M
+   tokens per window buys ~1 clean card, because each hard-failure group's
+   bisection attempts count against the same budget, so a window that hits dense
+   `<ls>`/sense presplit fragments spends its whole budget healing instead of
+   failing fast to a clean transient-requeue.
+
+This is the escalation H389's recommended-next-action foresaw ("If a
+clean-environment solo retry *still* shows this failure pattern, escalate as a
+genuine kill-gate miscalibration for nominal medium-band cards"). The
+clean-environment retry happened; the pattern held; it is escalated.
+
+### n=50 medium50 — final tally
+
+| window | keys | status | net clean |
+|---|---:|---|---:|
+| h317_w1a | 13 | H389 diagnostic classifier-blocked (0 tokens) pre-H428; **not relaunched under H437** (out of scope; cascade now reproduced on the other 3, so relaunching without the kill-gate fix would burn ~2 M tokens for ~1 card) | 0 |
+| h317_w1b | 12 | launched, kill-switch tripped | 1 |
+| h317_w2a | 13 | launched, kill-switch tripped | 1 |
+| h317_w2b | 12 | launched (first-ever), kill-switch tripped | 0 |
+| **medium50** | **50** | **2 promoted; kill-gate is the blocker** | **2** |
+
+Net across the whole H317→H389→H437 arc: **50 keys planned, 2 promoted (4%)**;
+the pipeline is now proven to *run* on this card class (H428 unblocked
+generation) but the kill-gate/self-heal budget converts that into ~1 clean card
+per 12–13 dense band-4 nominal singletons.
+
+Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
+`H437_MEDIUM50_KILLGATE_CASCADE_2026-07-09` (`kill-gate-calibration`, routed to a
+bug-hunt handoff for the recalibration). Compact rollup row in
+[`RESULTS_LOG.md`](RESULTS_LOG.md).
+
 _Dr. Mārcis Gasūns_
