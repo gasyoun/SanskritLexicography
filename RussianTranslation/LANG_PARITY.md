@@ -278,7 +278,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
-      "src/pilot/prompt_rule_audit.py": "bbd3fe10ff72b9d58e6d763069352129df8c246d4cb18ae41520ddcf6fee7525",
+      "src/pilot/prompt_rule_audit.py": "d2c578eb62a1919c5c22c0726940df952dee7ead0791bf61d1a1bc7c83f26fdf",
       "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
@@ -575,7 +575,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated.",
     "tracking": "",
     "verified_sha256": {
-      "src/government_census.py": "3ae290eed18a31baa864a01321a0b80c1ced6c616d050a6aa3716e80f1b0a228"
+      "src/government_census.py": "501c21da829cf32555fa086274f5cd01578b7d8f88cd76f3402b5c16b124fd9b"
     }
   },
   {
