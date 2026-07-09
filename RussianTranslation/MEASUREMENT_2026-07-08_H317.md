@@ -97,4 +97,61 @@ retry *still* shows this failure pattern, escalate as a genuine kill-gate
 miscalibration for nominal medium-band cards (parallel to the `DAH_TAIL`
 no-fallback-singleton finding) rather than assuming transient infra again.
 
+## Update — 09-07-2026 diagnostic (H389): the real blocker is the agent() schema classifier, not transient infra
+
+[H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md)
+launched the single solo diagnostic window this measurement recommended
+(`h317_w1a`, 13 keys, no concurrency), on 09-07-2026, Opus 4.8
+(`claude-opus-4-8`) driving the Workflow tool; generation model unchanged
+(Sonnet 5, hardcoded in the harness).
+
+**Result: 0/13, 0 subagent tokens, 83 ms.** All 67 `agent()` calls — every
+batch (b0–b9), every binary-split heal group, every retry — errored identically:
+
+> `blocked by safety classifier: output schema too large to classify safely`
+
+The budget kill-switch (`MAX_AGENTS=67`) tripped because every errored call
+counts against the window budget. No model was ever invoked (0 tokens).
+
+### This supersedes the "transient API instability" reading above
+
+The recommended-next-action test ("resume once a solo diagnostic comes back
+mostly clean, else escalate as a kill-gate miscalibration") returned a **third,
+decisive** answer neither branch anticipated: a **deterministic, pre-generation
+platform block**. It is not concurrency (the run was 1-wide), not transient
+latency (`Connection closed mid-response` did not appear — the agents never ran),
+and not the nominal kill-gate (the kill-gate never engaged; the classifier
+refused the schema first).
+
+Root cause = the same one measured for the H388 SkillOpt B-arm the same day:
+the opt2 `CARDS_SCHEMA` handed to every `agent({schema})` call is **too large
+for the Workflow-tool safety classifier** (~8,202 chars: nested `$defs` for
+card/record/sense carrying `government`/`evidence`/`evidence_summary` objects,
+many enums, long descriptions). [Uprava/FINDINGS.md §30](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+🔴 first recorded this class; its orphan-`$def` prune fix (`_ref_names` /
+`_reachable_defs`, landed 03-07, H130) is **necessary but no longer sufficient**
+— H335 (government) and H405 (evidence/stage-2) grew the *reachable* schema past
+the classifier threshold after that fix landed.
+
+### Consequence — the whole opt2 path is blocked, not just this window
+
+Every pwg_ru opt2 window uses `gen_opt_harness2.py` and hits the identical block:
+the H317/H389 medium50 windows, the H388 B-arm live gate, and the H151 verb-root
+drain. The block wastes **0 tokens per attempt but yields 0 progress**, so
+retrying is pointless.
+
+**Decision: STOP the H317/H389 window resume.** Do not launch `h317_w1b`,
+`h317_w2a`, or `h317_w2b` — they would each hit the same deterministic refusal.
+Escalated to
+[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md):
+slim the *generation* schema to reachable-AND-model-generated fields only (drop
+the post-generation-added `government`/`evidence`/`evidence_summary`/`labels`/
+`renou*`, trim descriptions, flatten `$defs`), pinned by a `window_selftest.py`
+test so a future field addition cannot silently re-cross the threshold. Once
+H428 lands, H389's medium50 windows become launchable again.
+
+Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
+`H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09` (and the prior
+`H317_MEDIUM50_3WIDE_KILL_CASCADE_2026-07-08` entry marked `superseded`).
+
 _Dr. Mārcis Gasūns_
