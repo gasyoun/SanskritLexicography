@@ -10,6 +10,36 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H409 — `has_meaning()` short-token stemmer gap fixed, RATIO-scoring regression caught and reverted
+- New [`corpus_gate.ru_has_content()`](src/corpus_gate.py): relaxes the
+  `>=3-char-after-stemming` floor for tokens already `<=3` letters before
+  stemming — `оно` ("it") was being stemmed to `он` (2 chars) and discarded
+  as no-meaning even though the whole word is a real Russian pronoun.
+  `koch_xref.has_meaning()`/`fri_xref.has_meaning` now use it. Census across
+  the RU family: 77 entries reclassified no-meaning → has-meaning
+  (koch 27, fri 27, kna 9, smirnov 3, kow 11). koch's bare-`см.` xref count
+  drops 3,472→3,471 (resolved 3,204→3,208); fri's drops 340→337 (rate
+  32.6%→32.9%).
+- **A ratio-scoring regression was caught by re-measuring before shipping,
+  not silently absorbed.** The same relaxed floor applied to
+  `annotate_evidence.ru_tokens_full()`/`corpus_gate.ru_tokens()` — which feed
+  `best_relation()`'s token-containment ratio, not a boolean presence check —
+  measurably regressed classification (107 previously-correct `supports`
+  verdicts lost vs 37 gained on the live store: a short function word like
+  `что` inside `что-либо` ("something") inflated the ratio's denominator).
+  Reverted those two functions to their pre-H409 stemming; the relaxed floor
+  lives only in the new `ru_has_content()`. Store backfill
+  (`annotate_evidence.py --dry-run`) confirmed **unchanged** vs the pre-H409
+  baseline for every source.
+- A second data-quality artifact caught in the same census: 9 fri/smirnov
+  entries whose entire gloss is a leaked Excel `#ИМЯ?` ("#NAME?") formula
+  error — fixed with a narrow `corpus_gate._SPREADSHEET_ERR_RE` guard so the
+  real word `имя` embedded in the error string doesn't count as meaning.
+- See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md — W2b correction](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2b-correction--has_meaning-short-token-stemmer-gap-fixed--executed-09-07-2026-h409)
+  for the full census table and worked examples.
+- LANG_PARITY: `koch_xref_resolution_h397`/`fri_xref_resolution_h404`
+  INTENTIONAL-DIVERGENCE verdicts re-affirmed, hashes refreshed.
+
 ### H405 — Stage-2 mechanical pre-gate (`stage2_pregate.py`), PIPELINE_CAPABILITY_AUDIT W5
 - New [`src/stage2_pregate.py`](src/stage2_pregate.py): a deterministic mechanical
   pre-gate for the Stage-2 QA judge, implementing the W5 recommendation of
