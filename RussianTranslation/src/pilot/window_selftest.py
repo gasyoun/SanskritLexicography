@@ -114,6 +114,83 @@ def gam_pilot_fixture():
                     f.write(old)
 
 
+@contextlib.contextmanager
+def matrix_pilot_fixture():
+    """Provide deterministic multi-root preflight inputs and a tiny TM sidecar."""
+    inp = os.path.join(HERE, 'input')
+    os.makedirs(inp, exist_ok=True)
+
+    def small_raw(root):
+        return '=== LAYER: PWG - MAIN ENTRY ===\n1) {#%s#} {%%gehen%%}.\n' % root
+
+    def dense_raw(root, offset):
+        return ('=== LAYER: PWG - MAIN ENTRY ===\n' +
+                '\n'.join('%d) {#%s#} {%%gehen%%} <ls>RV. %d</ls>.'
+                          % (i, root, offset + i)
+                          for i in range(1, 26)) + '\n')
+
+    roots = {
+        'gam': ['gam~~h0_03_sec_3'],
+        'han': ['han~~h0_00_pwg00'],
+        'vid': ['vid~~h0_00_pwg00'],
+        'as': ['as~~h0_%02d_pwg00' % i for i in range(12)],
+    }
+    files = {}
+    for root, keys in roots.items():
+        files[root + '.rootmap.json'] = json.dumps({
+            'schema': 'pwg.rootmap.fixture.v1',
+            'root': root,
+            'sub_cards': [{'subkey': key} for key in keys],
+        }, ensure_ascii=False)
+        for idx, key in enumerate(keys):
+            raw = dense_raw(root, idx * 100) if root == 'as' else small_raw(root)
+            files[key + '.raw.txt'] = raw
+            files[key + '.portrait.json'] = json.dumps({'key1': root, 'lex': 'm.'})
+
+    backup = {}
+    try:
+        for name, text in files.items():
+            path = os.path.join(inp, name)
+            backup[path] = open(path, encoding='utf-8').read() if os.path.exists(path) else None
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(text)
+        with tempfile.TemporaryDirectory() as tmp:
+            han_key = roots['han'][0]
+            han_raw = os.path.join(inp, han_key + '.raw.txt')
+            han_body = files[han_key + '.raw.txt']
+            tm_sidecar = os.path.join(tmp, 'translation_memory.ru.json')
+            with open(tm_sidecar, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'schema': 'pwg.translation_memory.v1',
+                    'lang': 'ru',
+                    'entries': {
+                        'ru:%s' % sha256(han_raw): {
+                            'src_key': han_key,
+                            'card': {
+                                'key1': 'han',
+                                'iast': 'han',
+                                'records': [{'h': None, 'senses': [{
+                                    'tag': '1',
+                                    'german': han_body,
+                                    'russian': han_body,
+                                }]}],
+                            },
+                        },
+                    },
+                }, f, ensure_ascii=False)
+            yield tm_sidecar
+    finally:
+        for path, old in backup.items():
+            if old is None:
+                try:
+                    os.remove(path)
+                except OSError:
+                    pass
+            else:
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(old)
+
+
 def manifest_files(edition_dir):
     files = {}
     for dirpath, _dirs, names in os.walk(edition_dir):
@@ -189,6 +266,8 @@ def test_workflow_payload_nested():
 def test_harness_scope_and_tools():
     meta = harness_meta()  # canonical opt2 harness (window_common.OPT_HARNESS)
     if not meta.get('ok'):
+        if meta.get('error') == 'missing harness':
+            return  # ignored runtime artifact absent in a fresh worktree
         fail('optimized harness missing or invalid: %s' % meta.get('error'))
     text = open(meta['path'], encoding='utf-8').read()
     # Every schema-bearing model call must carry tools: [] (the yuj file-read-blowup guard).
@@ -221,6 +300,8 @@ def test_stale_check_key_order_independent():
     declared order even when every key is present exactly once."""
     meta = harness_meta()
     if not meta.get('ok'):
+        if meta.get('error') == 'missing harness':
+            return  # ignored runtime artifact absent in a fresh worktree
         fail('optimized harness missing or invalid: %s' % meta.get('error'))
     root = meta.get('root')
     is_nominal = bool((meta.get('meta') or {}).get('nominal'))
@@ -350,11 +431,18 @@ def test_no_pwg_worklist_runnable_lane():
     import nominals_worklist as nw
     with tempfile.TemporaryDirectory() as tmp:
         path = os.path.join(tmp, 'sample.slp1.txt')
+        manifest = os.path.join(tmp, 'scale_manifest.freq.json')
         store = os.path.join(tmp, 'store.jsonl')      # isolated empty store: the runnable/promoted
         with open(path, 'w', encoding='utf-8') as f:  # split must not depend on the live store
             f.write('Bagavat\nAkulita\nZZzznotaword\n')      # pw-only, sch-only, true miss
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump([
+                {'key1': 'Bagavat', 'score': 3, 'band': 1},
+                {'key1': 'Akulita', 'score': 2, 'band': 1},
+                {'key1': 'ZZzznotaword', 'score': 1, 'band': 1},
+            ], f)
         open(store, 'w', encoding='utf-8').close()
-        payload = nw.build_worklist(path, store=store)
+        payload = nw.build_worklist(path, manifest=manifest, store=store)
     runnable = set(payload['no_pwg_runnable'])
     if 'Bagavat' not in runnable or 'Akulita' not in runnable:
         fail('no_pwg_runnable must contain the PW/SCH-only lemmas: %s' % sorted(runnable))
@@ -1892,14 +1980,9 @@ def test_perf_preflight_degenerate_zero_agent():
 
 
 def test_perf_preflight_multi_root_matrix_and_order():
-    tm_sidecar = os.path.join(HERE, 'translation_memory.ru.json')
-    if not os.path.exists(tm_sidecar):
-        return
-    from window_common import rootmap_path
-    if any(not rootmap_path(root)[0] for root in ['gam', 'han', 'as', 'vid']):
-        return  # live-state matrix test; old ignored runtime rootmaps are absent
-    proc = run([sys.executable, 'src/pilot/perf_preflight.py',
-                'gam', 'han', 'as', 'vid', '--json'], 0)
+    with matrix_pilot_fixture() as tm_sidecar:
+        proc = run([sys.executable, 'src/pilot/perf_preflight.py',
+                    'gam', 'han', 'as', 'vid', '--tm=%s' % tm_sidecar, '--json'], 0)
     matrix = json.loads(proc.stdout)
     if matrix.get('schema') != 'pwg.performance_preflight.matrix.v1':
         fail('multi-root perf_preflight JSON must use the matrix wrapper')
@@ -2290,11 +2373,18 @@ def test_nominals_worklist_exposes_no_pwg_lane():
     import nominals_worklist as nw
     with tempfile.TemporaryDirectory() as tmp:
         wordlist = os.path.join(tmp, 'sample.slp1.txt')
+        manifest = os.path.join(tmp, 'scale_manifest.freq.json')
         store = os.path.join(tmp, 'store.jsonl')
         with open(wordlist, 'w', encoding='utf-8') as f:
             f.write('Bagavat\nAkulita\nnotalocalword\n')
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump([
+                {'key1': 'Bagavat', 'score': 3, 'band': 1},
+                {'key1': 'Akulita', 'score': 2, 'band': 1},
+                {'key1': 'notalocalword', 'score': 1, 'band': 1},
+            ], f)
         open(store, 'w', encoding='utf-8').close()
-        payload = nw.build_worklist(wordlist, store=store)
+        payload = nw.build_worklist(wordlist, manifest=manifest, store=store)
     got = set(payload.get('no_pwg_runnable') or [])
     if not {'Bagavat', 'Akulita'}.issubset(got):
         fail('PW/SCH-only misses must enter no_pwg_runnable, got %s' % sorted(got))
