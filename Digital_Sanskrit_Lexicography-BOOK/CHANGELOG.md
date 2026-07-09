@@ -1,11 +1,29 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 08-07-2026_
+_Created: 07-07-2026 · Last updated: 09-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 09-07-2026 (H430 execution)
+
+- [chapters/ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md):
+  book-form sample chapter converted from the A01 journal draft
+  ([csl-atlas paper_measurement_framework.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_measurement_framework.md))
+  — journal front/back matter stripped, re-anchored to the evidence-graph thesis,
+  companion-paper pointers remapped to sibling chapters (Chs. 4/5/6/8/10/11), all figures
+  and measured numbers unchanged.
+- [chapters/ch05_mw_block_economy.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch05_mw_block_economy.md):
+  book-form sample chapter converted from the A16 journal draft
+  ([MWS papers/microanalysis/PAPER.md, `docs-pass`](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/PAPER.md))
+  — IJL submission header/abstract stripped, voice unified to first-person singular,
+  relative repo links upgraded to full `docs-pass` URLs, re-anchored to Ch. 2's framework;
+  all tables, figures, and measured numbers unchanged. Reference lists normalized to one
+  Chicago author-date convention across both chapters (book-wide bibliography merge and
+  section renumbering deferred to a later production pass).
+- `.gitignore`: `!chapters/*.md` added to the allowlist so the sample chapters are tracked.
 
 ### Added — 08-07-2026 (H248 execution)
 
