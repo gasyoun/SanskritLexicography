@@ -1,5 +1,7 @@
 # Grammar layer — the 3rd axis (Whitney) for pwg_ru
 
+_Created: 07-07-2026 · Last updated: 09-07-2026_
+
 pwg_ru already carries two evidence axes per headword: **lexicon** (corpus_lexicon Sa→Ru
 candidates) and **corpus** (parallel verse + Renou register). This adds the **grammar** axis,
 reusing the existing [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) crosswalk
@@ -131,3 +133,59 @@ per-case accent rules are already ingested (`whitney_sections.json` §§315–31
 423, 446) and the per-word accent position is in PWG `key2`'s udātta `/`; it is an encoding task
 (hand-build a stem-class→case-accent table, join, validate vs accented RV). Spec in
 [`ZALIZNYAK_INDEX.md`](ZALIZNYAK_INDEX.md) §"Vedic accent mobility".
+
+## Counting grammar — what's countable in a card, and caching the counts
+
+Case-government is now backfilled (`sense.government[]`, deterministically extracted by
+[`government_census.py`](src/government_census.py):`extract_government`, D4 ruling). But the
+**counts** derived from grammar are still recomputed on every question:
+[`government_census.py`](src/government_census.py) re-scans raw `pwg.txt` end-to-end each run,
+and [`government_queries.py`](src/government_queries.py) reloads the whole
+`pwg_ru_translated.jsonl` store and re-aggregates every query. Nothing on the card records
+"this lemma has N senses, M government markers, governs {loc, gen}, spans Renou I–IV." The
+census/query cost is paid again each time.
+
+### What is countable in a card
+
+All derivable from fields **already stored** — no new source parsing:
+
+| Scope | Countable |
+|---|---|
+| Structural | `n_records` (homonyms), `n_senses` (total + per record), max sense depth |
+| Grammar | `n_government` markers, `cases_governed` (union set), `has_variation`, `n_domain_labels`, stem-class present?, root class(es), `n_irregularities` |
+| Chronology (Renou) | `strata_span` (min–max), `n_strata`, oldest-sense index |
+| Evidence | `n_provides` / `n_supports` / `n_contradicts` / `n_silent`, `evidence_status` |
+| QA | `severity`, `n_issues`, `coverage_ok` |
+| Source markup | `n_ls` citations, `n_compound_members`, `has_accent` |
+
+### Store them: a derived, self-invalidating `stats` block
+
+Same backfill pattern the pipeline already uses — `annotate_government.py` /
+`annotate_renou.py` / `annotate_evidence.py` each write derived fields once, materialized into
+the card. Counts are just another deterministic annotation, folded by one new
+`annotate_stats.py` run **last** in the annotator chain (reads only fields already on the
+card). Two rules keep a cached count safe rather than a stale-data trap:
+
+1. **Provenance stamp** — `stats.computed_by` + `stats.pipeline_version` (via
+   [`pipeline_version.py`](src/pipeline_version.py)), mirroring how `evidence_summary` carries
+   `evidence_status`: a count computed under an older version is *visibly* invalid →
+   recompute; otherwise trust it without a rescan.
+2. **Corpus-level rollup is a committed artifact, not a live scan** — the census totals
+   ("сколько таких помет в PWG") get written to a stats sidecar / `RESULTS_LOG.md` with date +
+   model tier (persist-tables reflex), so nobody re-scans `pwg.txt` to re-answer a settled
+   count.
+
+Additive shape (`additionalProperties:false`-compatible, sits on `card`):
+
+```json
+"stats": {
+  "n_records": 2, "n_senses": 7,
+  "n_government": 3, "cases_governed": ["loc","gen"], "has_variation": true,
+  "n_irregularities": 1, "strata_span": ["I","IV"], "n_strata": 3,
+  "evidence": {"provides": 2, "supports": 4, "contradicts": 0, "silent": 3},
+  "computed_by": "annotate_stats.py", "pipeline_version": "…"
+}
+```
+
+Status: **design only** (2026-07-09) — `annotate_stats.py` + the schema `stats` block are not
+yet built.
