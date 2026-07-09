@@ -288,7 +288,7 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "classification": "concurrency/api",
     "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
     "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
-    "residual_status": "open -- retries paused pending confirmation the transient API instability has cleared; 0/50 H317 cards clean as of this entry",
+    "residual_status": "open-paused",
     "residual_risk": "If this recurs on a later clean-environment retry, escalate as a genuine kill-gate miscalibration for nominal single-card windows rather than assuming transient infra every time; if it does NOT recur, this entry is the transient-outage case per the NOMINAL_W1_100SMALL_2026-07-06 precedent."
   }
 ]

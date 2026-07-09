@@ -207,7 +207,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579"
+      "src/pilot/translation_memory.py": "901ffd21e7db7e0ea6d0433c342166dab7caa5e1abe43ad04745a7a7f99b198a"
     }
   },
   {
@@ -520,7 +520,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #3b): the fragment sidecar is content-addressed on the fragment SOURCE and was harvested append-only first-seen-wins with NO fidelity check, so a hand-edited/corrupt wf_output*.json (blanked or malformed senses) permanently poisoned reuse and a later good harvest of the same fsha could never override it. frag_senses_sane(senses, lang) keys on the CARD-shaped translation field ('russian'/'english') and is applied at BOTH harvest (never cache garbage; a cached-corrupt fsha maps to False so a good row overrides it) and serve (load_frag_tm drops any corrupt historical row). Entirely lang-agnostic — lang is a first-class parameter of frag_address/frag_senses_sane/load_frag_tm/build_frags, no RU/EN branch. Pinned by test_frag_tm_fidelity_gate_and_override. Extends translation_memory_card_and_fragment.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579",
+      "src/pilot/translation_memory.py": "901ffd21e7db7e0ea6d0433c342166dab7caa5e1abe43ad04745a7a7f99b198a",
       "src/pilot/window_selftest.py": "8f78477d25c1e9335e3091f9c2c1d64450f086e43ce592f1d125899e6d29089e"
     }
   },
@@ -651,7 +651,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
-      "src/pilot/translation_memory.py": "69ccc561e2a0090924176c969d52a088fbcc8d8b784bc10183994ace0905a579",
+      "src/pilot/translation_memory.py": "901ffd21e7db7e0ea6d0433c342166dab7caa5e1abe43ad04745a7a7f99b198a",
       "src/pilot/window_selftest.py": "8f78477d25c1e9335e3091f9c2c1d64450f086e43ce592f1d125899e6d29089e"
     }
   },
