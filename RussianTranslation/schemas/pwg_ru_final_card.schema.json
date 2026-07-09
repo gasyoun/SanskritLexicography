@@ -50,6 +50,9 @@
         },
         "evidence_summary": {
           "$ref": "#/$defs/evidence_summary"
+        },
+        "stats": {
+          "$ref": "#/$defs/stats"
         }
       }
     },
@@ -287,6 +290,82 @@
         "corpus_status": {
           "type": "string",
           "description": "corpus_gate corpus_examples_with_status() status: ok / db_absent / db_error / skipped_short_term."
+        }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "OPTIONAL. Derived, self-invalidating per-lemma counts (GRAMMAR_LAYER.md § 'Counting grammar', H422) — cached from fields already on the card so government_census.py / government_queries.py-style aggregation is not re-run on every question. Added by annotate_stats.py, run last in the annotator chain; attached identically to every flat store row sharing key1 (the flat store has no lemma object), mirroring evidence_summary.",
+      "required": [
+        "n_records",
+        "n_senses",
+        "computed_by",
+        "pipeline_version"
+      ],
+      "properties": {
+        "n_records": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Distinct homonym groups (records) for this lemma."
+        },
+        "n_senses": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total sense count across all records of this lemma."
+        },
+        "n_government": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Senses carrying >=1 case-government marker (annotate_government.py)."
+        },
+        "cases_governed": {
+          "type": "array",
+          "items": {
+            "enum": ["acc", "loc", "instr", "gen", "dat", "abl"]
+          },
+          "uniqueItems": true,
+          "description": "Union of cases governed across this lemma's senses."
+        },
+        "has_variation": {
+          "type": "boolean",
+          "description": "True when >=1 government marker lists more than one case."
+        },
+        "n_irregularities": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Whitney-grammar exception count for this lemma. 0 until the grammar block (whitney_grammar.py) is joined onto card rows -- see GRAMMAR_LAYER.md."
+        },
+        "strata_span": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 0,
+          "maxItems": 2,
+          "description": "[oldest, youngest] Renou-style era found in this lemma's free-text `stratum` fields, in STRATA_ORDER (Vedic..Medieval). Empty when no sense carries a recognised stratum label."
+        },
+        "n_strata": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Distinct recognised era labels found across this lemma's senses."
+        },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["provides", "supports", "contradicts", "silent"],
+          "properties": {
+            "provides": { "type": "integer", "minimum": 0 },
+            "supports": { "type": "integer", "minimum": 0 },
+            "contradicts": { "type": "integer", "minimum": 0 },
+            "silent": { "type": "integer", "minimum": 0 }
+          },
+          "description": "Sense-level provides/supports counts (from each sense's evidence[]) plus lemma-level contradicts/silent counts (source-code counts from evidence_summary)."
+        },
+        "computed_by": {
+          "const": "annotate_stats.py"
+        },
+        "pipeline_version": {
+          "type": "string",
+          "description": "pipeline_version.py manifest 'script' component version at compute time. A stats block stamped below the current script version is stale -> recompute (annotate_stats.is_stale)."
         }
       }
     },
