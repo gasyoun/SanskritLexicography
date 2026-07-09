@@ -486,6 +486,75 @@ See the registry rows in
 [Uprava/handoffs/README.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md)
 for the starter lines.
 
+## W5 — LLM→Python migration surface (which stages can shed the model)
+
+Added 09-07-2026 (Opus 4.8, `claude-opus-4-8`) answering "what LLM work here can
+become deterministic Python?" The pipeline already runs a strong Python floor —
+masking/unmasking
+([`src/pwg_mask.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py)),
+the markup-fidelity gate
+([`src/audit_translation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_translation.py)),
+and the LLM-free evidence/government joins (W2/W3). The question is where the
+model is still doing work code could do.
+
+### Measured, not asserted — the Stage-4 claim was tested and largely fails
+
+A first pass ranked **Stage 4 (corpus/terminology check,
+[`4_korpus_proverka.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/4_korpus_proverka.txt))**
+as the biggest Python win, on the theory that its verdict is re-deriving
+overlaps
+[`src/corpus_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py)
+already computes. That is **wrong**, for two reasons:
+
+1. **No ground truth exists.** Stage 4 has *never been run* — its header says
+   *"Запуск ещё НЕ выполнялся"* and there are zero stage-4 verdict files on disk.
+   So the requested "how often does `corpus_gate` agree with the Opus verdict?"
+   has nothing to compare against.
+
+2. **The deterministic precheck under-fires massively.** Running
+   `corpus_gate.deterministic_precheck` over the live store
+   (`src/pwg_ru_translated.jsonl`, 11,261 rows / 145 a-section lemmas):
+
+   | precheck route | rows | share | destination |
+   |---|---|---|---|
+   | `pass` (Python auto-decides) | 669 | **5.9%** | no LLM |
+   | `review` (has gloss, low overlap) | 8,560 | 76.0% | → LLM |
+   | `no-check` (no independent gloss) | 2,032 | 18.0% | → LLM |
+
+   The `review` bucket's head-term overlap is **mean 0.04, median 0.00** against a
+   0.50 threshold — i.e. an independent Russian gloss usually exists but shares
+   almost no surface tokens with our translation. The reason is intrinsic, not a
+   threshold bug: even **two agreeing human dictionaries** on the same headword
+   clear Jaccard ≥ 0.6 in only ~5% of pairs and sit at ≈0 overlap 84% of the time
+   (38 dict pairs over the store keys — thin, but the direction matches
+   `corpus_gate`'s own docstring note *"low overlap is the norm even between
+   agreeing human dictionaries"*). Synonymy, morphology, and differentia phrasing
+   defeat token overlap. **Stage 4's verdict is irreducibly synonym-aware — it
+   stays LLM.** Only ~6% is safely auto-decidable now; lemmatization (Vidyut /
+   pymorphy) + thesaurus expansion might lift that, but not to a majority.
+
+### What genuinely can shed the model (format & structure, not meaning)
+
+These win because they check *invariants* — anchor counts, tag membership, set
+diffs — never lexical agreement, so the overlap problem above does not apply:
+
+| Candidate | Move | Why it works where Stage 4 didn't |
+|---|---|---|
+| **Stage 2 mechanical criteria** ([`2_qa_sudya_opus.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/2_qa_sudya_opus.txt)) | Extend `audit_translation.py` to the full `{Tn}`-anchor count/order + no-unmasking + `<ab>`-token-intact check and run it as a **blocking pre-gate**; strip those criteria from the judge rubric | The prompt already declares these *"НЕ должно влиять на вердикт"* — they are deterministic invariants the judge is wastefully re-checking. Removes a failure class from the LLM and shrinks tokens; enables dropping to one judge on the Python-passed set |
+| **Stage 5/6 structural guards** (no fabricated sense/tag; tags match raw; no duplicate senses; `[new]` only if absent from earlier layer) | Python **set-diff** of output sense/tag set vs the raw German sense/tag set, as a pre/post gate | Structure membership is decidable from the raw card; leaves the judge only *semantic* fabrication (meaning present but wrong) |
+| **TM / near-dup reuse** ([`src/pilot/translation_memory.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/translation_memory.py)) | Serve byte-identical / trivially-normalized source cards from TM with **no LLM call** — dedup before spend | Pure string identity; measure the freq-run dup rate to size the win |
+
+**Irreducibly LLM** (cannot be Python): the DE/EN/FR→RU gloss translation and
+Apresjan synonym discrimination (Stages 1/3/5/6), the Stage-4 terminology
+verdict (measured above), and the semantic half of the Stage-2 judge on the
+format-clean residue.
+
+**Re-ranked recommendation:** do the Stage-2 mechanical pre-gate and the
+Stage-5/6 structural set-diff first — they are deterministic by construction.
+Do **not** build a deterministic Stage-4 verdict; if Stage 4 is built at all,
+build it LLM-first with `corpus_gate` supplying evidence, and only auto-accept
+the ~6% high-overlap tail.
+
 ## LANG_PARITY
 
 `government_census.py` reads the raw PWG source below the `--lang` branch and
