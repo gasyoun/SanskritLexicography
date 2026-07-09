@@ -3598,6 +3598,17 @@ def test_koch_xref_resolution():
     koch_xref.selftest()
 
 
+def test_fri_xref_resolution():
+    """H404 (H397 generalization): fri's bare Latin-apparatus (v./cf./q.v.) redirect
+    resolver — targets are already roman (build_src.iast_to_slp1 reused, no Devanagari
+    crosswalk needed), one hop, and the resolve_fri_lane() wrapper
+    annotate_evidence.gather() calls. Pins fri_xref.py's own pure-function selftest
+    (no fri.jsonl file IO, so it runs in CI where the gitignored src/*.jsonl
+    dictionaries are absent)."""
+    import fri_xref
+    fri_xref.selftest()
+
+
 def test_audit_window_tag_routing():
     """H336/H-2: --window-tag routes window_status/report/requeue/judge-sample to
     src/pilot/output/<tag>/ instead of the flat singletons, so two accounts auditing
@@ -3766,6 +3777,7 @@ def main():
         test_annotate_evidence_relation_semantics,
         test_annotate_genres_sense_join,
         test_koch_xref_resolution,
+        test_fri_xref_resolution,
         test_audit_window_tag_routing,
         test_denylist_torn_line_fails_loud,
     ]

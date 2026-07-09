@@ -60,6 +60,7 @@ if HERE not in sys.path:
 
 import corpus_gate as cg
 import koch_xref
+import fri_xref
 
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 
@@ -67,6 +68,9 @@ STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 # best_relation/source_meaning_tokens run, so a resolvable redirect counts as
 # provides/supports evidence instead of silence. --no-resolve-xref reproduces H337 exactly.
 RESOLVE_KOCH_XREF = True
+# H404: same idea for fri's bare v./cf./q.v. Latin-apparatus redirects (kna/smirnov/kow
+# measured below H397's ~2% materiality bar — not touched). --no-resolve-xref disables both.
+RESOLVE_FRI_XREF = True
 
 # Russian-glossing, token-comparable authorities (relation = provides/supports/contradicts/silent).
 RU_SOURCES = ['koch', 'kna', 'fri', 'smirnov', 'kow', 'grin12', 'grin3']
@@ -174,6 +178,8 @@ def gather(idx, key1):
 
     if RESOLVE_KOCH_XREF and ru.get('koch'):
         ru['koch'], _n_resolved = koch_xref.resolve_koch_lane(ru['koch'])
+    if RESOLVE_FRI_XREF and ru.get('fri'):
+        ru['fri'], _n_resolved = fri_xref.resolve_fri_lane(ru['fri'])
 
     sense_codes = {s['code'] for s in cg.lookup_sense(key1, None)}
     nonru = {
@@ -328,13 +334,14 @@ def main():
     ap.add_argument('--limit', type=int, default=None, help='annotate only the first N rows (smoke test)')
     ap.add_argument('--selftest', action='store_true')
     ap.add_argument('--no-resolve-xref', dest='resolve_xref', action='store_false', default=True,
-                     help='disable H397 koch `см. X` xref resolution (reproduces H337 exactly)')
+                     help='disable H397/H404 koch+fri xref resolution (reproduces H337 exactly)')
     args = ap.parse_args()
     if args.selftest:
         return selftest()
 
-    global RESOLVE_KOCH_XREF
+    global RESOLVE_KOCH_XREF, RESOLVE_FRI_XREF
     RESOLVE_KOCH_XREF = args.resolve_xref
+    RESOLVE_FRI_XREF = args.resolve_xref
 
     idx = cg.load_index()
     if cg.evidence_status() != 'ok':
