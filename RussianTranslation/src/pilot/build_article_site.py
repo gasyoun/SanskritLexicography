@@ -85,6 +85,9 @@ def _render(text, mode):
     if not text:
         return ''
     t = _PAGE.sub('', text)
+    # XML/source metalanguage that must never reach the web (Cologne drops it too):
+    #  ¦ (U+00A6) = lemma-terminator after the head-word; ⌊..⌋ hidden text.
+    t = t.replace('¦', '')
     if mode == 'html':
         # Convert the tags we KEEP into sentinel-wrapped tags first (LT/GT are
         # placeholder chars, unquoted class= so html.escape won't mangle them),
@@ -356,16 +359,22 @@ def subcard_md(sub):
     return '\n'.join(lines) + '\n'
 
 
-def load_colocation(model_roots):
-    """PWG print co-location: for each article root, the other headwords that sat
-    on the SAME printed column (Böhtlingk-Roth Spalte) — read from the committed
-    src/pwg_columns.tsv (built by pwg_page_index.py, H429). Returns
-    {root_slp1: [{col, page, scan, words:[{iast, root, linked, self}]}]}.
+def _pwg_scan(colnum):
+    return ('https://sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/'
+            'web/webtc/servepdf.php?page=%d' % int(colnum))
 
-    Böhtlingk-Roth prints two columns per page; <pc> encodes the column, so the
-    column is the finest co-location unit and the servepdf scan is addressed by
-    it. `linked` = the neighbour is itself a translated article (clickable);
-    `self` = the article's own entry (kept, marked, in printed order.)"""
+
+def load_colocation(model_roots):
+    """PWG print co-location by PRINTED LEAF: for each article root, the physical
+    page(s) it sits on — BOTH columns of the leaf (Böhtlingk-Roth prints two
+    columns per page) — read from the committed src/pwg_columns.tsv (H429).
+
+    Returns {root_slp1: [ {leaf, vol, cols:[{col, side, scan, words:[...] }]} ]},
+    side 'L' (column 2P-1) / 'R' (column 2P), P = ceil(colnum/2). Each word:
+    {iast, root, linked, self} — `linked` = a translated article (clickable
+    in-site); non-linked non-self words link out to the kosha co-location browser
+    (built by the JS render). `self` = the article's own entry, highlighted, in
+    printed order."""
     cols_path = os.path.join(SRC, 'pwg_columns.tsv')
     if not os.path.exists(cols_path):
         sys.stderr.write('  [coloc] %s absent — run pwg_page_index.py first; '
@@ -386,23 +395,38 @@ def load_colocation(model_roots):
                 hw_cols.setdefault(h, [])
                 if column not in hw_cols[h]:
                     hw_cols[h].append(column)
+
     coloc = {}
     for root in model_roots:
-        cols = hw_cols.get(root)
-        if not cols:
+        touched = hw_cols.get(root)
+        if not touched:
             continue
-        blocks = []
-        for column in cols:
-            vol, colnum = column.split('-')
-            words = []
+
+        def words_of(column):
+            out = []
             for _lid, hw in col_words.get(column, []):
-                words.append({'iast': slp1_iast(hw), 'root': hw,
-                              'linked': hw in model_roots and hw != root,
-                              'self': hw == root})
-            scan = ('https://sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/'
-                    'web/webtc/servepdf.php?page=%d' % int(colnum))
-            blocks.append({'col': column, 'vol': int(vol), 'scan': scan, 'words': words})
-        coloc[root] = blocks
+                out.append({'iast': slp1_iast(hw), 'root': hw,
+                            'linked': hw in model_roots and hw != root,
+                            'self': hw == root})
+            return out
+
+        leaves, seen = [], set()
+        for column in touched:
+            vol, colnum = column.split('-')
+            vol, colnum = int(vol), int(colnum)
+            leaf = (colnum + 1) // 2            # physical leaf within the volume
+            key = (vol, leaf)
+            if key in seen:
+                continue
+            seen.add(key)
+            left_n, right_n = 2 * leaf - 1, 2 * leaf   # the leaf's two columns
+            cols = []
+            for cn, side in ((left_n, 'L'), (right_n, 'R')):
+                ckey = '%d-%04d' % (vol, cn)
+                cols.append({'col': ckey, 'side': side, 'scan': _pwg_scan(cn),
+                             'words': words_of(ckey)})
+            leaves.append({'leaf': leaf, 'vol': vol, 'cols': cols})
+        coloc[root] = leaves
     return coloc
 
 
@@ -469,15 +493,24 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .coloc{margin:26px 0 8px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
 .coloc h4{margin:0 0 4px;font-size:15px}
 .coloc .hint{color:var(--mut);font-size:12px;margin-bottom:10px}
-.colcol{margin:10px 0}
+.coloc .hint a{color:var(--accent)}
+.leaf{margin:12px 0;padding-top:8px;border-top:1px solid var(--line)}
+.leaf .llab{font-size:12px;color:var(--mut);margin-bottom:6px}
+.leaf .llab b{color:var(--fg)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.pair{grid-template-columns:1fr}}
+.colcol{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .colcol .clab{font-size:12px;color:var(--mut);font-family:ui-monospace,monospace}
+.colcol .side{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;margin-left:5px}
 .colcol a.scan{color:var(--accent);font-size:12px;text-decoration:none;border-bottom:1px dotted var(--accent);margin-left:6px}
 .colcol a.scan:hover{border-bottom-color:transparent}
-.cwords{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
-.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--mut);white-space:nowrap}
-.cw.lnk{color:var(--accent);border-color:var(--accent);cursor:pointer}
-.cw.lnk:hover{background:var(--accent);color:#fff}
+.cwords{margin-top:6px;display:flex;flex-wrap:wrap;gap:5px}
+.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--fg);white-space:nowrap;text-decoration:none;cursor:pointer}
+.cw:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cw.lnk{color:var(--accent);border-color:var(--accent);font-weight:500}
 .cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
+.cw.empty:hover{background:none;color:var(--mut)}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
@@ -516,20 +549,35 @@ function renderBody(r){
  });
  artbody.innerHTML=(h||'<p class="na">нет данных</p>')+colocHtml(r.root); applyLang();
 }
-// Print co-location: the words that physically shared this article's PWG column(s).
+// Print co-location by LEAF: the printed page (two columns) this article sits on.
+var KOSHA_COLOC='https://gasyoun.github.io/kosha/colocation/';
+function koshaHref(col,slp1){return KOSHA_COLOC+'#pwg/'+encodeURIComponent(col)+'?w='+encodeURIComponent(slp1);}
+function colWords(c){
+ if(!c.words.length)return '<div class="cwords"><span class="cw empty">— здесь ни одна статья не начинается —</span></div>';
+ var h='<div class="cwords">';
+ c.words.forEach(function(w){
+  if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
+  else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
+  else{h+='<a class="cw" href="'+koshaHref(c.col,w.root)+'" target="_blank" rel="noopener" title="открыть в словаре kosha">'+esc(w.iast)+'</a>';}
+ });
+ return h+'</div>';
+}
+function colBox(c){
+ return '<div class="colcol"><span class="clab">'+esc(c.col)
+  +' <span class="side">'+(c.side==='L'?'левая колонка':'правая колонка')+'</span></span>'
+  +'<a class="scan" href="'+esc(c.scan)+'" target="_blank" rel="noopener">🖼 скан</a>'
+  +colWords(c);
+}
 function colocHtml(root){
- var blocks=(window.COLOC||{})[root]||[]; if(!blocks.length)return '';
- var h='<div class="coloc"><h4>🖇 На той же печатной колонке PWG</h4>'
-  +'<div class="hint">Слова, стоявшие рядом на той же колонке (Spalte) печатного словаря Бётлингка–Рота. Выделенные — уже переведены (нажмите, чтобы открыть).</div>';
- blocks.forEach(function(bk){
-  h+='<div class="colcol"><span class="clab">колонка '+esc(bk.col)+' (том '+esc(bk.vol)+')</span>'
-   +'<a class="scan" href="'+esc(bk.scan)+'" target="_blank" rel="noopener">🖼 скан</a><div class="cwords">';
-  bk.words.forEach(function(w){
-   if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
-   else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
-   else{h+='<span class="cw">'+esc(w.iast)+'</span>';}
-  });
-  h+='</div></div>';
+ var leaves=(window.COLOC||{})[root]||[]; if(!leaves.length)return '';
+ var h='<div class="coloc"><h4>🖇 На том же печатном листе PWG</h4>'
+  +'<div class="hint">Печатный словарь Бётлингка–Рота набран в <b>две колонки на страницу</b>; ниже — весь лист (левая + правая колонка). '
+  +'Красным — уже переведённые статьи (открываются здесь), остальные ведут в '
+  +'<a href="'+KOSHA_COLOC+'" target="_blank" rel="noopener">листалку колонок kosha</a>. '
+  +'Оговорка: в источнике есть номера <i>колонок</i>, но не книжной страницы, поэтому лево/право <i>колонки</i> точны, а recto/verso листа не выводимы.</div>';
+ leaves.forEach(function(lf){
+  h+='<div class="leaf"><div class="llab">Печатный лист · том <b>'+esc(lf.vol)+'</b>, лист <b>'+esc(lf.leaf)+'</b> (колонки '+esc(lf.cols[0].col)+' + '+esc(lf.cols[1].col)+')</div>'
+   +'<div class="pair">'+colBox(lf.cols[0])+colBox(lf.cols[1])+'</div></div>';
  });
  return h+'</div>';
 }
