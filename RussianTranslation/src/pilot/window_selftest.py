@@ -3183,29 +3183,52 @@ def test_frag_groups_presplit_parity():
 
 def test_defect_fragment_denylist_round_trip():
     """H304 gate-outcome memory: a defect card's frag_prov fshas (requeue.defect.fshas.txt)
-    are appended to the TM denylist by requeue_from_audit, and load_frag_tm then refuses to
-    serve them — a gate-flagged fragment is never re-served by --tm=auto."""
+    are appended to the TM denylist by requeue_from_audit, card addresses are denylisted from
+    their raw input sha, and the runtime loaders then refuse to serve either class — a
+    gate-flagged card/fragment is never re-served by --tm=auto."""
     import requeue_from_audit as rfa
     import translation_memory as tm
     tmp = tempfile.mkdtemp()
+    inp = os.path.join(tmp, 'input')
+    os.makedirs(inp)
     deny_path = os.path.join(tmp, 'denylist.jsonl')
+    key = 'h304root~~h0'
+    raw_path = os.path.join(inp, key + '.raw.txt')
+    with open(raw_path, 'w', encoding='utf-8') as f:
+        f.write('flagged raw card')
+    card_address = 'ru:%s' % sha256(raw_path)
     fsha_good = tm.frag_address('ru', 'clean fragment')
     fsha_bad = tm.frag_address('ru', 'flagged fragment')
     fsha_file = os.path.join(tmp, 'requeue.defect.fshas.txt')
     with open(fsha_file, 'w', encoding='utf-8') as f:
         f.write(fsha_bad + '\n')
     old_dp = rfa.translation_memory.denylist_path
+    old_inp = rfa.INP
     rfa.translation_memory.denylist_path = lambda path=None: deny_path
+    rfa.INP = inp
     try:
-        n, nf = rfa.append_tm_denylist('h304root', [], 'defect', lang='ru',
+        n, nf = rfa.append_tm_denylist('h304root', [key], 'defect', lang='ru',
                                        fsha_file=fsha_file)
     finally:
         rfa.translation_memory.denylist_path = old_dp
-    if (n, nf) != (0, 1):
-        fail('append_tm_denylist defect fsha count: got %r, want (0, 1)' % ((n, nf),))
+        rfa.INP = old_inp
+    if (n, nf) != (1, 1):
+        fail('append_tm_denylist defect deny count: got %r, want (1, 1)' % ((n, nf),))
     deny = tm.load_denylist(deny_path)
+    if card_address not in deny['addresses']:
+        fail('defect card address missing from the loaded denylist address set')
     if fsha_bad not in deny['frags']:
         fail('defect fsha missing from the loaded denylist frag set')
+    card_tm = os.path.join(tmp, 'translation_memory.ru.json')
+    with open(card_tm, 'w', encoding='utf-8') as f:
+        json.dump({'schema': tm.CARD_SCHEMA, 'lang': 'ru', 'entries': {
+            card_address: {'id': card_address,
+                           'card': {'records': [{'senses': [{'russian': 'bad cached card'}]}]},
+                           'trust_level': tm.TRUST_MACHINE,
+                           'gate_status': 'machine_gated',
+                           'reuse_policy': 'auto_exact'}}}, f, ensure_ascii=False)
+    if tm.load_tm('ru', card_tm, denylist=deny_path):
+        fail('denylisted defect card still served by load_tm')
     senses = [{'tag': '1', 'german': 'x', 'russian': 'y'}]
     sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
     with open(sidecar, 'w', encoding='utf-8') as f:
@@ -3612,10 +3635,10 @@ def test_audit_window_tag_routing():
             shutil.rmtree(tag_dir)
 
 
-def test_denylist_torn_line_warns():
-    """H336/H-3: translation_memory.load_denylist must WARN loudly (stderr) on a torn/
-    undecodable JSONL line instead of silently dropping it — a silently-dropped denylist
-    row is a correctness hole (a gate-rejected address quietly becomes TM-reusable
+def test_denylist_torn_line_fails_loud():
+    """P0.1 / H336-H3: translation_memory.load_denylist must FAIL loudly on a torn/
+    undecodable JSONL line instead of continuing with a partial deny set — a silently-dropped
+    denylist row is a correctness hole (a gate-rejected address quietly becomes TM-reusable
     again), the scariest single entry in the H335 collision matrix."""
     import translation_memory as tm
     d = tempfile.mkdtemp()
@@ -3629,15 +3652,13 @@ def test_denylist_torn_line_warns():
     proc = subprocess.run(
         [sys.executable, '-c',
          "import sys; sys.path.insert(0, %r); import translation_memory as tm; "
-         "d = tm.load_denylist(%r); "
-         "assert 'ru:deadbeef' in d['addresses'], d; "
-         "print('OK')" % (HERE, path)],
+         "tm.load_denylist(%r)" % (HERE, path)],
         capture_output=True, text=True, encoding='utf-8')
-    if proc.returncode != 0 or 'OK' not in proc.stdout:
-        fail('load_denylist must still load the well-formed row past a torn line:\n%s\n%s'
-            % (proc.stdout, proc.stderr))
-    if 'torn' not in proc.stderr.lower() and 'undecodable' not in proc.stderr.lower():
-        fail('load_denylist must WARN on stderr for a torn/undecodable line, got:\n%s' % proc.stderr)
+    if proc.returncode == 0:
+        fail('load_denylist must fail on a torn line, got success:\n%s\n%s'
+             % (proc.stdout, proc.stderr))
+    if 'DenylistError' not in proc.stderr or 'torn/undecodable denylist line' not in proc.stderr:
+        fail('load_denylist must surface a DenylistError for a torn line, got:\n%s' % proc.stderr)
 
 
 def main():
@@ -3746,7 +3767,7 @@ def main():
         test_annotate_genres_sense_join,
         test_koch_xref_resolution,
         test_audit_window_tag_routing,
-        test_denylist_torn_line_warns,
+        test_denylist_torn_line_fails_loud,
     ]
     for test in tests:
         test()
