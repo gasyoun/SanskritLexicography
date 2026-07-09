@@ -595,6 +595,53 @@ def _reachable_defs(defs, start):
     return {k: v for k, v in defs.items() if k in seen}
 
 
+# Fields present on the final card/sense/record schema but added AFTER generation, by a
+# deterministic annotator script — never by the translating model. Keeping them in the
+# per-call StructuredOutput schema only adds dead weight: H428 measured the full reachable
+# schema (post-H335/H405/H422 growth) at 10,940 chars, over the Workflow tool's safety-
+# classifier size threshold (every agent() call blocked pre-generation, 0 tokens, H388/H389).
+# Stripping these from the *generation* schema only — the promote/annotate scripts below
+# still add them back onto the promoted card from the unmodified schema file on disk.
+_POST_GENERATION_SENSE_FIELDS = (
+    'government',       # annotate_government.py / government_census.py (H335 W3)
+    'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
+                         # prompt or annotator currently populates it either, but it is not
+                         # model-generated, so it does not belong in the generation schema
+    'renou', 'renou_oldest',  # annotate_renou.py
+    'evidence',          # annotate_evidence.py
+)
+_POST_GENERATION_RECORD_FIELDS = (
+    'renou_oldest_sense',  # annotate_renou.py
+)
+_POST_GENERATION_CARD_FIELDS = (
+    'evidence_summary',  # annotate_evidence.py
+    'stats',             # annotate_stats.py
+)
+
+
+def _strip_post_generation_fields(defs):
+    """Deep-copy `defs` with every post-generation-added field removed from `properties`
+    (and `required`, though none of them are required today). See H428 /
+    Uprava/FINDINGS.md §30."""
+    import copy
+    defs = copy.deepcopy(defs)
+    for def_name, fields in (
+        ('card', _POST_GENERATION_CARD_FIELDS),
+        ('record', _POST_GENERATION_RECORD_FIELDS),
+        ('sense', _POST_GENERATION_SENSE_FIELDS),
+    ):
+        node = defs.get(def_name)
+        if not node:
+            continue
+        props = node.get('properties', {})
+        for f in fields:
+            props.pop(f, None)
+        req = node.get('required')
+        if isinstance(req, list):
+            node['required'] = [r for r in req if r not in fields]
+    return defs
+
+
 def mw_tm_block(root, mw_tm_path):
     """The MW English translation-memory block injected once per root (en pilot). '' if none."""
     if not mw_tm_path or not os.path.exists(mw_tm_path):
@@ -805,7 +852,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     # cards; they are re-derivable downstream). validate_final_card_schema.py was
     # relaxed to match, so RU cards with a missing annotator field still validate.
     schema['$defs']['sense']['required'] = ['tag', 'german', field]
-    defs = _reachable_defs(schema['$defs'], 'card')
+    defs = _strip_post_generation_fields(schema['$defs'])
+    defs = _reachable_defs(defs, 'card')
     card_ref = {'$ref': '#/$defs/card'}
     batch_schema = {
         'type': 'object', 'additionalProperties': False, 'required': ['cards'],
@@ -1724,7 +1772,37 @@ def harness_size_report(root, keys, nominal, js_len, max_bytes):
     return True, lines
 
 
+def dump_schema(lang='ru'):
+    """H428 diagnostic: print the per-call generation StructuredOutput schema's reachable
+    $defs and char length, so a schema-size regression is visible without a Workflow-tool
+    probe. Mirrors the schema build() actually sends (field-rename + required-narrowing +
+    post-generation-field strip + reachable-defs prune)."""
+    field = 'english' if lang == 'en' else 'russian'
+    schema = load_json(os.path.join(REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
+    if field != 'russian':
+        schema = _rename_sense_field(schema, 'russian', field)
+    schema['$defs']['sense']['required'] = ['tag', 'german', field]
+    defs = _strip_post_generation_fields(schema['$defs'])
+    defs = _reachable_defs(defs, 'card')
+    batch_schema = {
+        'type': 'object', 'additionalProperties': False, 'required': ['cards'],
+        'properties': {'cards': {'type': 'array', 'minItems': 1, 'items': {'$ref': '#/$defs/card'}}},
+        '$defs': defs,
+    }
+    s = json.dumps(batch_schema)
+    print('lang=%s reachable $defs: %s' % (lang, sorted(defs.keys())))
+    print('char length: %d' % len(s))
+    print(s)
+
+
 def main():
+    if '--dump-schema' in sys.argv[1:]:
+        lang = 'ru'
+        for a in sys.argv[1:]:
+            if a.startswith('--lang='):
+                lang = a.split('=', 1)[1].strip().lower()
+        dump_schema(lang)
+        return
     root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
