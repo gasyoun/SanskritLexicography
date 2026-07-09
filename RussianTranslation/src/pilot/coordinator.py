@@ -41,7 +41,7 @@ import promote_final_cards  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
 import translation_memory  # noqa: E402
 import verb_worklist  # noqa: E402
-from window_common import defer_monster  # noqa: E402
+from window_common import append_jsonl_line, defer_monster  # noqa: E402
 
 
 def utc_now():
@@ -99,6 +99,7 @@ class DirLock:
         deadline = time.time() + 30
         while True:
             try:
+                os.makedirs(os.path.dirname(self.path), exist_ok=True)
                 os.mkdir(self.path)
                 self.write_meta()
                 return self
@@ -158,6 +159,7 @@ def load_state():
 
 def save_state(state):
     p = ensure_dirs()
+    expire_stale_leases(state)
     state['updated_at'] = utc_now()
     tmp = p['state'] + '.tmp'
     with open(tmp, 'w', encoding='utf-8') as f:
@@ -167,7 +169,38 @@ def save_state(state):
 
 
 def terminal_state(state):
-    return state in ('released', 'promoted', 'abandoned', 'blocked')
+    return state in ('released', 'promoted', 'abandoned', 'blocked', 'expired')
+
+
+def lease_expired(lease, now=None):
+    if terminal_state(lease.get('state')):
+        return False
+    if lease.get('state') != 'claimed':
+        return False
+    expires = parse_ts(lease.get('expires_at'))
+    if not expires:
+        return False
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    return expires <= now
+
+
+def expire_stale_leases(state):
+    """Turn TTL-expired non-terminal leases into terminal expired leases.
+
+    The coordinator's global <=3 translation cap is only useful if dead
+    pre-prepare claims eventually release their slots. Prepared leases are
+    durable operator artifacts: they may wait for a human Workflow run and should
+    not be invalidated merely because the handoff spans days.
+    """
+    now = datetime.datetime.now(datetime.timezone.utc)
+    changed = []
+    for lease in state.get('leases', []):
+        if lease_expired(lease, now=now):
+            lease['previous_state'] = lease.get('state')
+            lease['state'] = 'expired'
+            lease['expired_at'] = utc_now()
+            changed.append(lease)
+    return changed
 
 
 def translation_lease(lease):
@@ -175,6 +208,7 @@ def translation_lease(lease):
 
 
 def active_translation_leases(state):
+    expire_stale_leases(state)
     return [
         lease for lease in state.get('leases', [])
         if translation_lease(lease) and not terminal_state(lease.get('state'))
@@ -194,8 +228,7 @@ def artifact_dir(lease_id):
 
 def append_jsonl(path, rec):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, 'a', encoding='utf-8') as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + '\n')
+    append_jsonl_line(path, rec)
 
 
 def registry_event(lease, event_type, data=None):
@@ -241,6 +274,7 @@ def load_store_key1s(store=None):
 
 
 def active_targets(state):
+    expire_stale_leases(state)
     return {lease.get('target') for lease in state.get('leases', [])
             if not terminal_state(lease.get('state'))}
 

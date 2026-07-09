@@ -1999,6 +1999,51 @@ def test_coordinator_state_dashboard_and_cap():
                 os.environ['PWG_COORDINATOR_DIR'] = old
 
 
+def test_coordinator_expired_leases_release_cap():
+    """A killed/offline pre-prepare claim must not hold one global translation lane
+    forever, while an already-prepared harness remains a durable operator artifact."""
+    import coordinator
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            expired_at = (datetime.datetime.now(datetime.timezone.utc) -
+                          datetime.timedelta(seconds=1)).isoformat(
+                              timespec='seconds').replace('+00:00', 'Z')
+            future_at = (datetime.datetime.now(datetime.timezone.utc) +
+                         datetime.timedelta(hours=1)).isoformat(
+                             timespec='seconds').replace('+00:00', 'Z')
+            state = coordinator.default_state()
+            state['leases'] = [
+                {'id': 'old-claim', 'lane': 'a', 'kind': 'verb', 'owner': 'selftest',
+                 'target': 'gam', 'state': 'claimed', 'expires_at': expired_at},
+                {'id': 'old-prepared', 'lane': 'b', 'kind': 'verb', 'owner': 'selftest',
+                 'target': 'tyaj', 'state': 'prepared', 'expires_at': expired_at},
+                {'id': 'live', 'lane': 'b', 'kind': 'verb', 'owner': 'selftest',
+                 'target': 'dah', 'state': 'prepared', 'expires_at': future_at},
+            ]
+            coordinator.save_state(state)
+            loaded = coordinator.load_state()
+            active = coordinator.active_translation_leases(loaded)
+            if [l.get('id') for l in active] != ['old-prepared', 'live']:
+                fail('only expired pre-prepare coordinator claims must release the LLM cap')
+            if loaded['leases'][0].get('state') != 'expired':
+                fail('expired coordinator claim must be marked terminal')
+            if loaded['leases'][1].get('state') != 'prepared':
+                fail('prepared coordinator leases must not expire just because the TTL passed')
+            if coordinator.active_targets(loaded) != {'tyaj', 'dah'}:
+                fail('only the expired claim target must be reclaimable')
+            coordinator.save_state(loaded)
+            persisted = coordinator.load_state()
+            if persisted['leases'][0].get('state') != 'expired':
+                fail('expired coordinator claim state must persist to disk')
+        finally:
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+
+
 def test_coordinator_lock_replaces_stale_dead_owner():
     import coordinator
     with tempfile.TemporaryDirectory() as tmp:
@@ -2011,6 +2056,15 @@ def test_coordinator_lock_replaces_stale_dead_owner():
         with coordinator.DirLock(lock_path, ttl_seconds=1):
             if not os.path.exists(os.path.join(lock_path, 'owner.json')):
                 fail('coordinator lock did not recreate owner metadata')
+
+
+def test_coordinator_lock_creates_parent_dir():
+    import coordinator
+    with tempfile.TemporaryDirectory() as tmp:
+        lock_path = os.path.join(tmp, 'missing', 'coordinator', '.state.lock')
+        with coordinator.DirLock(lock_path, ttl_seconds=1):
+            if not os.path.exists(os.path.join(lock_path, 'owner.json')):
+                fail('coordinator lock must create its parent directory before locking')
 
 
 def test_coordinator_defect_requeue_uses_no_tm_and_out():
@@ -3427,7 +3481,9 @@ def main():
         test_perf_preflight_partitions_mixed_monster_window,
         test_verb_worklist_excludes_missing_rootmaps,
         test_coordinator_state_dashboard_and_cap,
+        test_coordinator_expired_leases_release_cap,
         test_coordinator_lock_replaces_stale_dead_owner,
+        test_coordinator_lock_creates_parent_dir,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
         test_promote_nominal_key1,
         test_build_emits_nominal_keymap,
