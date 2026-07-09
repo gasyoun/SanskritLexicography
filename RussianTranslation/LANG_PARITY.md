@@ -279,7 +279,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "d2c578eb62a1919c5c22c0726940df952dee7ead0791bf61d1a1bc7c83f26fdf",
-      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
@@ -298,7 +298,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
     "tracking": "Uprava/handoffs/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
       "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878"
     }
@@ -500,7 +500,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
       "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
-      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
       "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
@@ -619,7 +619,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). window_reports.write_reports/write_window_status already took an out_dir parameter (pre-existing --out-dir escape hatch); --window-tag is a thin, lang-agnostic sugar layer over that same parameter computed once in audit_window.py and threaded through unchanged to requeue_from_audit.py/root_window_status.py. Neither RU nor EN branch differently. Pinned by test_audit_window_tag_routing.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
+      "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
@@ -733,19 +733,37 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "stage2_mechanical_pregate_h405",
-    "mechanism": "stage2_pregate.py — deterministic mechanical pre-gate for the Stage-2 QA judge. Given a (German source, translation) card pair it hard-fails the format invariants the judge prompt already declares must not affect the verdict: untranslatable-span preservation (LS/SAN/AB/IS/LEX/LANG, category regexes kept in sync with pwg_mask.PAIRED by --selftest), {Tn} anchor multiset equality on masked pairs, stranded/never-restored {Tn} on final cards, and unmask-leak; NO-RUSSIAN is emitted as a soft warning (never blocks) because a {%…%}-with-no-Cyrillic card may be a form-citation apparatus stub. A failed card is requeued, not judged, so the judge rubric can drop the mechanical criteria and rule only on the semantic part",
+    "mechanism": "stage2_pregate.py — deterministic mechanical pre-gate for the Stage-2 QA judge. Given a (German source, translation) card pair it hard-fails the format invariants the judge prompt already declares must not affect the verdict: untranslatable-span preservation (LS/SAN/AB/IS/LEX/LANG, category regexes kept in sync with pwg_mask.PAIRED by --selftest), {Tn} anchor multiset equality on masked pairs, stranded/never-restored {Tn} on final cards, and unmask-leak; NO-RUSSIAN is emitted as a soft warning (never blocks) because a {%…%}-with-no-Cyrillic card may be a form-citation apparatus stub. A failed card is requeued, not judged, so the judge rubric can drop the mechanical criteria and rule only on the semantic part. The `--wf <wf_output.json>` window-gate mode reads audit_translation.py's IN/<stem>.raw.txt (source) vs OUT/<stem>.merged.md (output) file pairs and emits FLAGGED_JSON of hard fails; wired into src/pilot/audit_window.py's gate list as `stage2_mechanical` (parse_flagged_json), so a hard-failed card joins the requeue",
     "files": [
-      "src/stage2_pregate.py"
+      "src/stage2_pregate.py",
+      "src/pilot/audit_window.py"
     ],
     "languages": [
       "ru",
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
+    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring are shipped here; the EN audit_window_en.py wiring is a separate GAP (see stage2_pregate_en_wiring_h405) because that edition audits in-process per-card (audit_card), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
     "tracking": "",
     "verified_sha256": {
-      "src/stage2_pregate.py": "18dca6de028fefe8beea610b98910242ea044266d6c9d31e538b01e5e3d08799"
+      "src/stage2_pregate.py": "f801740067f981f66e480330a586e12d9e98f85f7f564e40520d7ff43af139e2",
+      "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005"
+    }
+  },
+  {
+    "id": "stage2_pregate_en_wiring_h405",
+    "mechanism": "The Stage-2 mechanical pre-gate (stage2_pregate.py) is wired into the RU window auditor (src/pilot/audit_window.py) but NOT yet into the EN auditor (src/pilot/audit_window_en.py). The RU auditor runs deterministic gates as subprocess `--wf` shell-outs over IN/<stem>.raw.txt vs OUT/<stem>.merged.md file pairs; the EN auditor instead audits each wf card in-process (audit_card(res, tm, do_mw)) with no such file pairs, so the pre-gate cannot be dropped in by adding a command tuple — it needs an in-process adapter that hands audit_card's (source, translation) to pregate()",
+    "files": [
+      "src/pilot/audit_window_en.py"
+    ],
+    "languages": [
+      "en"
+    ],
+    "verdict": "GAP",
+    "note": "H405 (09-07-2026). The gate LOGIC is SHARED (see stage2_mechanical_pregate_h405); only the EN wiring is missing, and it is a real architectural adapter (in-process per-card), not a mechanical port. Deferred so the RU wiring ships without waiting on the EN refactor.",
+    "tracking": "H405 (Uprava/handoffs/H405-Opus_RussianTranslation_stage2-mechanical-pregate_09.07.26.md) — EN wiring follow-up",
+    "verified_sha256": {
+      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
     }
   },
   {

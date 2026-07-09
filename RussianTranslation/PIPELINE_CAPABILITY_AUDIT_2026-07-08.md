@@ -724,8 +724,22 @@ volume — the merged pipeline is 99.7% clean, so nearly everything still reache
 the judge — it is (a) a **cheaper, correct-by-construction rubric** (the judge no
 longer re-checks or mis-checks format) and (b) a **deterministic defect catch**
 that surfaced 13 genuine format defects in supposedly-promoted data on its first
-run. Next: wire the gate as a blocking pre-step in `audit_window.py` and strip
-the mechanical criteria from `2_qa_sudya_opus.txt`.
+run.
+
+**Wired (09-07-2026).** `stage2_pregate.py` gained a `--wf <wf_output.json>`
+window-gate mode (emits `FLAGGED_JSON` of hard fails over the same
+`.raw.txt`/`.merged.md` file pairs the fidelity gate reads) and is registered in
+[`src/pilot/audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py)'s
+gate list as `stage2_mechanical`, so a hard-failed card now joins the window
+requeue. The mechanical-criteria block was stripped from both judge prompts
+([`2_qa_sudya_opus.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/2_qa_sudya_opus.txt)
+and its YandexGPT twin) — replaced with a note that the pre-gate guarantees
+anchor/markup integrity, so the judge rules only on semantics (`anchors` kept
+as an emergency backstop). The **EN** auditor
+([`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py))
+audits in-process per-card, not via the file-pair subprocess model, so its
+wiring is a tracked GAP (`stage2_pregate_en_wiring_h405` in
+[LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)).
 
 ## LANG_PARITY
 

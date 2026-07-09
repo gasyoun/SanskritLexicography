@@ -28,9 +28,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - `python src/stage2_pregate.py --selftest` → PASS (11 cases + a `pwg_mask.PAIRED`
   sync assertion). LANG_PARITY: `stage2_mechanical_pregate_h405`, SHARED (structure-only,
   language-agnostic).
-- Remaining (H405 second half, no LLM spend): wire `pregate()` as a blocking pre-step in
-  `src/pilot/audit_window.py`; strip the mechanical criteria from
-  `pwg_ru_prompts/2_qa_sudya_opus.txt`.
+- **Wired into the RU window auditor (09-07-2026).** New `--wf <wf_output.json>` mode emits
+  `FLAGGED_JSON` of hard fails over the same `.raw.txt`/`.merged.md` pairs the fidelity gate
+  reads; registered in [`src/pilot/audit_window.py`](src/pilot/audit_window.py) as the
+  `stage2_mechanical` gate, so a hard-failed card joins the requeue. Mechanical criteria
+  stripped from both judge prompts ([`2_qa_sudya_opus.txt`](pwg_ru_prompts/2_qa_sudya_opus.txt)
+  + YandexGPT twin) — the judge now rules only on semantics (`anchors` kept as a backstop).
+  `window_selftest.py` green. The EN auditor (`audit_window_en.py`, in-process per-card) is a
+  tracked GAP (`stage2_pregate_en_wiring_h405`).
 
 ### H404 — cross-reference count/resolve generalized to every gate source (H397 generalization)
 - **Part A (RU family).** Measured `kna`/`fri`/`smirnov`/`kow` against koch_xref's
