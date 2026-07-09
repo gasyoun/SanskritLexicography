@@ -126,8 +126,36 @@
           "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
         },
         "government": {
-          "type": "string",
-          "description": "OPTIONAL. The rekcija / government pattern of this sense rendered in the Kochergina idiom — the case(s)/preposition frame the word takes, e.g. '+ Acc. (ради, для)', 'с Instr.', 'Abl. (по причине)'. Derived from PWG/PW case-<ab> tokens + the Koch model. Empty/absent when the sense governs nothing. Grounds: apparatus study Dimension 1."
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cases": {
+                "type": "array",
+                "items": {
+                  "enum": ["acc", "loc", "instr", "gen", "dat", "abl"]
+                },
+                "description": "Government case(s), copied VERBATIM from the source <ab>case.</ab> token(s) — never invented."
+              },
+              "variation": {
+                "type": "boolean",
+                "description": "True when this marker lists more than one case (e.g. 'loc. und gen.')."
+              },
+              "connector": {
+                "type": "string",
+                "description": "'und' / 'oder' when variation is true, else empty."
+              },
+              "kind": {
+                "enum": ["paren-single", "paren-variation", "mit-phrase"]
+              },
+              "span": {
+                "type": "string",
+                "description": "The exact source snippet the marker was read from, e.g. '(<ab>loc.</ab> und <ab>gen.</ab>)'."
+              }
+            },
+            "required": ["cases", "variation", "kind"]
+          },
+          "description": "OPTIONAL. Structured case-government (Rektion) marker(s) for this sense — the case(s) frame the word takes, one entry per parenthesized <ab>case.</ab> group or 'mit'-phrase found in the source German (a sense may carry more than one, e.g. two clauses each governing a different case). D4 ruling (08-07-2026): structured object, not a free string — copy the case abbreviation verbatim from the source; NEVER invent, guess, or generalize one. Empty array when the sense governs nothing. Deterministically extractable via RussianTranslation/src/government_census.py:extract_government(german). Grounds: apparatus study Dimension 1 / H335 W3."
         },
         "labels": {
           "type": "array",

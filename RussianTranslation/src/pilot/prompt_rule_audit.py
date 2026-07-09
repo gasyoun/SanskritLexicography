@@ -33,9 +33,12 @@ DEFAULT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt.js')
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
+if SRC not in sys.path:
+    sys.path.insert(0, SRC)
 
 from workflow_payload import workflow_payload
 from foreign_literal_guards import LATIN_WORDS, FRENCH_WORDS
+from government_census import extract_government
 
 GERMAN_RESIDUE = re.compile(
     r'\b(?:der|die|das|den|dem|des|und|oder|mit|ohne|von|für|nicht|eine|einer|'
@@ -134,6 +137,11 @@ MEDIUM_RISKS = {
     'suspicious_attested_without_text_signal',
     'suspicious_lexicographic_with_text_signal',
     'possible_sense_compression',
+    # H338: deterministic extractor(german) vs model-written `government` field
+    # mismatch. MEDIUM, not high-confidence — the field is new (D4, 08-07-2026)
+    # and unproven in the wild; a mismatch is a review signal, not yet a
+    # requeue trigger (same caution as the REPORT_ONLY_RISKS below).
+    'government_mismatch',
 }
 
 SEVERITY_WEIGHT = {'high': 100, 'medium': 10, 'low': 1}
@@ -261,6 +269,12 @@ RULES = [
         'category': 'Mitrenina/Zaliznyak-Paducheva/Ruppel',
         'severity': 'required',
         'phrases': ['CORRELATIVES', 'yad…tad', 'кто…тот'],
+    },
+    {
+        'id': 'government_verbatim',
+        'category': 'D4/H338',
+        'severity': 'required',
+        'phrases': ['GOVERNMENT MARKERS VERBATIM', 'government'],
     },
 ]
 
@@ -601,6 +615,12 @@ def semantic_risks(card_like):
             if not sense.get('source_type'):
                 add_risk(risks, 'missing_source_type',
                          'sense lacks source_type', tag=tag)
+            gov_expected = extract_government(german)
+            gov_actual = sense.get('government') or []
+            if gov_actual != gov_expected:
+                add_risk(risks, 'government_mismatch',
+                         'government field does not match extract_government(german): '
+                         'stored=%s expected=%s' % (gov_actual, gov_expected), tag=tag)
             # Strip the markup spans the convention keeps verbatim ({%German%}
             # side-by-side, {#Sanskrit#}, <ab>/<ls>/<is>) before hunting German
             # residue, so retained-by-design German is not mistaken for a leak.
