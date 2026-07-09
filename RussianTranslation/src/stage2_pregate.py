@@ -41,6 +41,7 @@ false-flagged, while a real apparatus dump loss still trips.
 Language-agnostic by construction (it compares structure, never meaning), so it is
 SHARED across RU/EN — see LANG_PARITY.md entry `stage2_pregate`.
 
+  python src/stage2_pregate.py --wf <wf.json> # window gate: FLAGGED_JSON of hard fails (audit_window)
   python src/stage2_pregate.py store [N]     # run over the translated store, bucket pass/fail
   python src/stage2_pregate.py card <key1>   # gate every store row for one headword, verbose
   python src/stage2_pregate.py --selftest    # synthetic cases; exit 1 on any failure
@@ -229,6 +230,56 @@ def cmd_card(args):
         print('no store rows for key1=%s' % key1)
 
 
+# ---- window gate (audit_window.py integration) ---------------------------
+# The pre-gate reads the SAME (German source, Russian output) file pairs the
+# deterministic fidelity gate already consumes — audit_translation.py's
+# IN/<stem>.raw.txt (source, header stripped) vs OUT/<stem>.merged.md (output) —
+# so the two gates vet identical inputs. Emits `FLAGGED_JSON: [...]` (the contract
+# audit_window.parse_flagged_json parses) listing only HARD failures; warnings do
+# NOT requeue. A missing translation output is itself a hard failure (untranslated).
+def cmd_wf(args):
+    if not args:
+        sys.exit('usage: python src/stage2_pregate.py --wf <wf_output.json>')
+    import audit_translation as at
+    wf = args[0]
+    stems = at.stems_from_wf(wf)
+    flagged, warned = [], []
+    rows = []
+    for stem in stems:
+        rawp = os.path.join(at.IN, stem + '.raw.txt')
+        outp = os.path.join(at.OUT, stem + '.merged.md')
+        if not os.path.exists(outp):
+            flagged.append(stem)                      # untranslated / missing output
+            rows.append((stem, 'FAIL', ['NO-OUTPUT']))
+            continue
+        if not os.path.exists(rawp):
+            rows.append((stem, 'skip', ['NO-RAW']))   # cannot compare; leave to other gates
+            continue
+        de = at.body(open(rawp, encoding='utf-8').read())
+        ru = open(outp, encoding='utf-8').read()
+        res = pregate(de, ru)
+        if res['status'] == 'fail':
+            flagged.append(stem)
+            rows.append((stem, 'FAIL', res['flags']))
+        elif res['warnings']:
+            warned.append(stem)
+            rows.append((stem, 'warn', res['warnings']))
+        else:
+            rows.append((stem, 'ok', []))
+
+    print('=== Stage-2 mechanical pre-gate (%d units) ===' % len(stems))
+    print('%-28s %-5s %s' % ('unit', 'st', 'flags'))
+    for stem, st, marks in rows:
+        if st != 'ok':
+            print('%-28s %-5s %s' % (stem[:28], st, ' '.join(marks)))
+    print('\n%s: %d/%d clean, %d warned, %d hard-flagged'
+          % ('PASS' if not flagged else 'FAIL',
+             len(stems) - len(flagged) - len(warned), len(stems), len(warned), len(flagged)))
+    # Machine-readable verdict — audit_window.py parses THIS, not the prose above.
+    print('FLAGGED_JSON: %s' % json.dumps(flagged))
+    return 0 if not flagged else 1
+
+
 # ---- selftest ------------------------------------------------------------
 def _selftest():
     fails = []
@@ -307,6 +358,8 @@ def main():
     args = sys.argv[1:]
     if args[:1] == ['--selftest']:
         sys.exit(_selftest())
+    if args[:1] == ['--wf']:
+        sys.exit(cmd_wf(args[1:]))
     if args[:1] == ['store']:
         return cmd_store(args[1:])
     if args[:1] == ['card']:
