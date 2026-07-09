@@ -7,4 +7,4 @@
 
 - **RU:** **2.** *hā*¦ с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18]. — С *abhivi* покидать [KIR. 10,1].
 - **EN:** 2. *****hā*¦ with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18]. — With *abhivi* to abandon [KIR. 10,1].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

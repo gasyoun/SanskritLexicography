@@ -10,4 +10,4 @@
 [NĪLAK.] : *yuktaiścāraiḥ muktairiti pāṭhe nisṛṣṭairnaraiḥ upajijñāsyaḥ nimantrayethāḥ* .
 - **EN:** — *upa* desid.; the more recent Ausg. reads: *tānyuktairupajijñāsyastathā dvijavarottamān*;
 [NĪLAK.]: *yuktaiścāraiḥ muktairiti pāṭhe nisṛṣṭairnaraiḥ upajijñāsyaḥ nimantrayethāḥ*.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [R. 6,11,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,35) without complement, hence v. a. insisting on one's own view, obstinate: *daiva*
 [MBH. 12,3902.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3902) *mūrkha*
 [Spr. 1876.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1876) [2661.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2661)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

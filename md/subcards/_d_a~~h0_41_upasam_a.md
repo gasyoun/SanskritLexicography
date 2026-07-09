@@ -34,10 +34,10 @@
 [6,7,5.] *(kalā) annenopasamāhitā*
 [6.] to place upright, to set in its position: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
 [DAŚAK.] in [BENF. Chr. 201,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *upasamādhāna* .
 
 - **RU:** — Vgl. *upasamādhāna* .
 - **EN:** Vgl. *upasamādhāna* .
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

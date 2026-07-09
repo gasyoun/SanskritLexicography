@@ -22,7 +22,7 @@
 * mayā tatra tvayi karmavimohite*
 [BHĀG. P. 2,9,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,22) *atha vā vai paraguṇāṃ buddhiṃ pratyādiśanti naḥ*
 [R. 5,81,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,81,44)
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd (acc.) Etwas wiederberichten: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
 [MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717)
@@ -31,7 +31,7 @@
 [MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717)
 - **EN:** — 2) to report something back to someone (acc.): *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
 [MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717)
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd vorladen: *saṃjīvakaḥ pratyādiśyatām*
 [HIT. 71,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?71,16)
@@ -40,7 +40,7 @@
 [HIT. 71,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?71,16)
 - **EN:** — 3) to summon someone: *saṃjīvakaḥ pratyādiśyatām*
 [HIT. 71,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?71,16)
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) zurückweisen, abweisen: *ṛjupraṇāmakriyayaiva tanvī pratyādideśainamabhāṣamāṇā*
 [RAGH. 6,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,25)
@@ -79,7 +79,7 @@
 [1,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,61) *pratyādiṣṭa = pratyākhyāta*
 [AK. 3,1,40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,40)
 [H. 1474.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1474)
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zurückweisen s. v. a. überwinden, besiegen: *pratyādiṣṭa*
 [MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460)
@@ -89,9 +89,9 @@
 - **EN:** — 5) to repel s. v. a. to overcome, defeat: *pratyādiṣṭa*
 [MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460)
 — Vgl. *pratyādeśa* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *pratyādeśa* .
 
 - **RU:** — Vgl. *pratyādeśa* .
-  <sub>DCS 12 · attested</sub>
+  <sub>attested</sub>

@@ -8,4 +8,4 @@
 
 - **RU:** — *vyava* распределять, раздавать: *vyavadāyāśnanti*
 [KAUŚ. 66. 68.]
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

@@ -19,4 +19,4 @@
 [ŚĀK. 105.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105) *pratyekaṃ vyavāyaśabdaḥ parisamāpyate*
 [PAT.] to [P. 8,3,58.](https://ashtadhyayi.com/sutraani/8/3/58) *tasminparisamāpte tu rājñaḥ satre*
 [MBH. 1,8139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8139)
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>

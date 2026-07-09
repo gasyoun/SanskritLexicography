@@ -23,7 +23,7 @@
 [BHĀG. P. 1,2,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,32) *hṛdaye 'vadhāya* enclosing in the heart
 [3,5,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,41) *vāsudevaḥ svamāyayātmanyavadhīyamānaḥ*
 [5,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,11,13)
-  <sub>DCS 304 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wegdrängen, eindrücken: *so 'vaivāvaraṃ samudraṃ dadhāvava pūrvam* [ŚAT. BR. 1,6,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,11) *utsakthyā ava gudaṃ dhehi* [VS. 23,21.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,21)
 
@@ -31,7 +31,7 @@
 - **EN:** — 2) to push away, to press in: *so 'vaivāvaraṃ samudraṃ dadhāvava pūrvam*
 [ŚAT. BR. 1,6,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,11) *utsakthyā ava gudaṃ dhehi*
 [VS. 23,21.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,21)
-  <sub>DCS 304 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) aufmerken, Acht geben: *deva avadhīyatām* [HIT. 83,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,15) *avahita* (oxyt. gaṇa *pravṛddhādi* zu [P. 6,2,147](https://ashtadhyayi.com/sutraani/6/2/147) ) aufmerksam, Acht gebend, ganz bei einer Sache seiend: *śṛṇu me 'vahitā vacaḥ* [R. 2,63,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,4) [ŚĀK. 30](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?30), v. l. [100.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?100) [64,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?64,13) [95,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?95,3) [111,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,2) [MEGH. 98.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?98) [PRAB. 79,7.] *kartavyeṣvavahitena bhavatā bhavitavyam* [33,2.]
 
@@ -44,11 +44,11 @@
 [MEGH. 98.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?98)
 [PRAB. 79,7.] *kartavyeṣvavahitena bhavatā bhavitavyam*
 [33,2.]
-  <sub>DCS 304 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *avadhātavya, ˚dhāna, ˚dhi* . — caus.: *garteṣvavakāmavadhāpayet* lässt einlegen [ĀŚV. GṚHY. 2,8. 4,4.]
 
 - **RU:** — Vgl. *avadhātavya, ˚dhāna, ˚dhi* . — caus.: *garteṣvavakāmavadhāpayet* велит вложить [ĀŚV. GṚHY. 2,8. 4,4.]
 - **EN:** — Vgl. *avadhātavya, ˚dhāna, ˚dhi* . — caus.: *garteṣvavakāmavadhāpayet* causes to insert
 [ĀŚV. GṚHY. 2,8. 4,4.]
-  <sub>DCS 304 · attested</sub>
+  <sub>attested</sub>

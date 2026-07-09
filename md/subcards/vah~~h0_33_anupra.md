@@ -17,16 +17,16 @@
 [ṚV. 10,2,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03)
 - **EN:** — 2) to advance, come forward: *ā devānāmapi panthāmaganma yacchaknavāma tadanu pravo|um* "as much as, so much as"
 [ṚV. 10,2,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.03)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *anupra*
 
 - **RU:** — *anupra*
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) umherfahren, umherführen: *sa māṃ rathenānuprāvahat*
 [MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307)
 
 - **RU:** 1) ездить вокруг, водить вокруг: *sa māṃ rathenānuprāvahat*
 [MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

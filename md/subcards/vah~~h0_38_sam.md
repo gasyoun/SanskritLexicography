@@ -39,7 +39,7 @@
 [MBH. 12,12405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12405) pass. to be carried by, to ride upon (instr.): *garuḍena samuhyamānaḥ*
 [BHĀG. P. 8,3,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,31) *pakṣibhyāṃ kūrmaḥ samuhyate*
 [HIT. 112,3](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?112,3), v. l.
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) entlang fahren mit der Hand, streichen: *tasyāḥ pādau karābhyāṃ śanakaiḥ saṃvavāhatuḥ*
 [MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) [WESTERGAARD] stellt diese unregelmässige Form (st. *samūhatus*) zu *vāh* .
@@ -48,7 +48,7 @@
 [MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) [WESTERGAARD] относит эту нерегулярную форму (st. *samūhatus*) к *vāh* .
 - **EN:** — 2) to pass the hand along, to stroke: *tasyāḥ pādau karābhyāṃ śanakaiḥ saṃvavāhatuḥ*
 [MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) [WESTERGAARD] assigns this irregular form (st. *samūhatus*) to *vāh* .
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) an den Tag legen, äussern: *vāsudeve samuvāha bhaktim*
 [BHĀG. P. 9,5,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,25)
@@ -57,7 +57,7 @@
 [BHĀG. P. 9,5,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,25)
 - **EN:** — 3) to display, to express: *vāsudeve samuvāha bhaktim*
 [BHĀG. P. 9,5,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,25)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *samuhya* in Ordnung bringend (*kuṭilālakān*
 [BHĀG. P. 10,43,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,43,3) *keśān*
@@ -69,7 +69,7 @@
 - **EN:** — 4) *samuhya* putting in order (*kuṭilālakān*
 [BHĀG. P. 10,43,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,43,3) *keśān*
 [60,26](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,26)) belongs to 1. *ūh* .
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.1)** — Vgl. *samūḍha* und 1. *ūh* mit *sam* . — caus.
  1) zusammenführen, sammeln: *kṣipraṃ saṃvāhyatāṃ vrajaḥ*
@@ -84,7 +84,7 @@
  1) to bring together, to collect: *kṣipraṃ saṃvāhyatāṃ vrajaḥ*
 [HARIV. 3496.](https://sanskrit-lexicon-scans.github.io/hariv?3496) *sainyam*
 [RĀJA-TAR. 4,468.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,468)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.2)** — 2) fahren, lenken (den Wagen u. s. w.), hinfahren, hinführen: *sūtaḥ saṃvāhayāmāsa ratham*
 [R. 6,79,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,7)
@@ -108,7 +108,7 @@
 [9,1653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1653) to lead home (a wife)
 [VET. in LA. 17,14], v. l. to chase, to drive: *so 'pi saṃvāhyate loke tṛṣṇayā*
 [Spr. 540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?540)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.3)** — 3) entlang fahren mit der Hand, streichen
 [R. 2,91,52](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,52) ([100,51](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,51) [GORR.]). [R. GORR. 2,80,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,10) (med.). [ŚĀK. 69.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?69) [KATHĀS. 66,157.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,157) [BHĀG. P. 10,38,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,38,39) [WEBER, KṚṢṆAJ. 288. fg.] Comm. zu [GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3)
@@ -117,10 +117,10 @@
 [R. 2,91,52](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,52) ([100,51](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,51) [GORR.]). [R. GORR. 2,80,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,10) (med.). [ŚĀK. 69.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?69) [KATHĀS. 66,157.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,157) [BHĀG. P. 10,38,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,38,39) [WEBER, KṚṢṆAJ. 288. fg.] Comm. к [GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3)
 - **EN:** — 3) to pass the hand along, to stroke
 [R. 2,91,52](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,52) ([100,51](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,51) [GORR.]). [R. GORR. 2,80,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,10) (med.). [ŚĀK. 69.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?69) [KATHĀS. 66,157.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,157) [BHĀG. P. 10,38,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,38,39) [WEBER, KṚṢṆAJ. 288. fg.] Comm. to [GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.note)** — Vgl. *saṃvāha* fgg.
 
 - **RU:** — Vgl. *saṃvāha* fgg.
 - **EN:** — Vgl. *saṃvāha* fgg.
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>

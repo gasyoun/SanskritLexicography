@@ -58,4 +58,4 @@
 [BHAG. 10,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,38)
 [BHĀG. P. 3,19,10](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,10) (where *jigīṣāsa* is to be read). To go out after booty, med.: *jigīṣase paśurivāvasṛṣṭaḥ*
 [ṚV. 10,4,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.004.html#rv10.004.03)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

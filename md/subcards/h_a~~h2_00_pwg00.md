@@ -175,4 +175,4 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* the more recent Ausg.) *hā heti vādinau* as an expression of contentment
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

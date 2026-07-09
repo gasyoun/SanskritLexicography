@@ -28,21 +28,21 @@
 [MBH. 7,838.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.838) *mānasam* to gain entry into someone's heart
 [RĀJA-TAR. 8,1614.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,1614) *dhyānam* to fall into thought
 [R. 7,26,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,26,52)
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) geschlechtlich beiwohnen (vom Manne): *patirbhāryāṃ saṃpraviśya* [Spr. 4492.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4492) [4659.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4659)
 
 - **RU:** — 2) «сожительствовать (половым образом)» (о мужчине): *patirbhāryāṃ saṃpraviśya* [Spr. 4492.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4492) [4659.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4659)
 - **EN:** — 2) to have sexual intercourse with (of the man): *patirbhāryāṃ saṃpraviśya*
 [Spr. 4492.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4492) [4659.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4659)
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich zu Jmd halten, verkehren mit: *dharmānvitānsaṃpraviśedbahiḥ kṛtveha duṣkṛtīn* [MBH. 12,4545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4545) [4849.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4849)
 
 - **RU:** — 3) «держаться кого-л., общаться с»: *dharmānvitānsaṃpraviśedbahiḥ kṛtveha duṣkṛtīn* [MBH. 12,4545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4545) [4849.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4849)
 - **EN:** — 3) to hold to someone, to associate with: *dharmānvitānsaṃpraviśedbahiḥ kṛtveha duṣkṛtīn*
 [MBH. 12,4545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4545) [4849.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4849)
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *saṃpraviśya* [RĀJA-TAR. 6,361](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,361) fehlerhaft für *saṃpraveśya*; s. [Spruch 5042.]
 
@@ -50,7 +50,7 @@
 - **EN:** — 4) *saṃpraviśya*
 [RĀJA-TAR. 6,361](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,361) erroneous for *saṃpraveśya*; s.
 [Spruch 5042.]
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>
 
 **Caus)** — Vgl. *saṃpraveśa* . — caus. eintreten lassen, hineinführen: *sabhām* [RĀJA-TAR. 4,555.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,555) *svapuram* [HARIV. 5845](https://sanskrit-lexicon-scans.github.io/hariv?5845) (nach der Lesart der neueren Ausg.). *āśrame* [R. 7,50,1.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,50,1) *samīpaṃ rākṣasendrasya* [5,44,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,19) [HARIV. 4568.](https://sanskrit-lexicon-scans.github.io/hariv?4568) [RĀJA-TAR. 8,2138.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2138) *saṃpraveśita* in's Land wieder eingelassen im Gegens. zu *nirvāsita* verbannt [6,342.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,342) *vyasane* in's Unglück bringen [Spr. 5042](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5042) (Conj.). — *saṃpraveśya* [RĀJA-TAR. 4,325](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,325) fehlerhaft für *saṃpraviśya* .
 
@@ -63,4 +63,4 @@
 [6,342.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,342) *vyasane* to bring into misfortune
 [Spr. 5042](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5042) (Conj.). — *saṃpraveśya*
 [RĀJA-TAR. 4,325](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,325) erroneous for *saṃpraviśya*.
-  <sub>DCS 29 · attested</sub>
+  <sub>attested</sub>

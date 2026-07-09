@@ -8,4 +8,4 @@
 - **RU:** — *ava* vgl. *avacarantikā* гипокористикон от partic. praes. _f._ *˚carantī*; vgl. *pravartamānaka* в параллельном месте [ṚV. 1,191,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.16)
 - **EN:** — *ava* vgl. *avacarantikā* a hypocoristic of partic. praes. _f._ *˚carantī*; vgl. *pravartamānaka* in the parallel passage
 [ṚV. 1,191,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.16)
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

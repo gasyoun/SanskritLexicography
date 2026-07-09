@@ -9,7 +9,7 @@
 - **RU:** 3. *vā*, *vāyati* [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; также med. в Bed. от 2. *vā*; partic. *vāna* (s. bes.) и *vāta* .
 - **EN:** 3. *vā*¦, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; also med. in the Bed. of 2. *vā*; partic. *vāna* (s. bes.) and *vāta* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1) matt —, müde werden, sich erschöpfen, erliegen: *na vāyanti subhvo devayuktāḥ*
 [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ*
@@ -21,7 +21,7 @@
 [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ*
 [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* does not grow weary of consuming
 [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) = 2. *vā* wehen: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
 [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
@@ -31,4 +31,4 @@
 - **EN:** — 2) = 2. *vā* to blow: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
 [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
 [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) misprint for *avārayat* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

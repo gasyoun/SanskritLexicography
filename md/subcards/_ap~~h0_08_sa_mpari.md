@@ -10,4 +10,4 @@
 [KAUŚ. 90.]
 - **EN:** — *saṃpari* to sum up, to take together: *saṃparyāpya mūlāni ca prāntāni ca*
 [KAUŚ. 90.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

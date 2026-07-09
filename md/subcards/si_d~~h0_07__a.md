@@ -12,16 +12,16 @@
 — caus. велеть арестовать ebend. 3.
 - **EN:** — *ā*, partic. *āsiddha* {arrested, detained}
 [MIT. 2,3,a,4. 5.]
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *āseddhar* fg.
 
 - **RU:** — Vgl. *āseddhar* fg.
 - **EN:** — caus. {to have (someone) arrested} ebend. 3.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *āseddhar* fg.
 
 - **RU:** — Vgl. *āseddhar* fg.
 - **EN:** — Vgl. *āseddhar* fg.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

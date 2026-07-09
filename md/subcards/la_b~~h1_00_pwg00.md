@@ -11,4 +11,4 @@
  3) обретать, получать
 [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
 - **EN:** *labh* with *samā* 3) to obtain, to gain [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>

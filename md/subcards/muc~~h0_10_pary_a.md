@@ -10,4 +10,4 @@
 [GAUḌAP.] к [SĀṂKHYAK. 67.]
 - **EN:** — *paryā* "to detach all around and take off": *ghaṭaṃ paryāmuñcati* (from the potter's wheel)
 [GAUḌAP.] to [SĀṂKHYAK. 67.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

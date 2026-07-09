@@ -9,4 +9,4 @@
 - **EN:** — *abhyudā* caus.: *asuraviśaṃ ha vai devānabhyudācārya āsīt*
 [AIT. BR. 6,36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,36) according to [SĀY.] *devānabhilakṣya ullaṅghanarūpamācaraṇaṃ kṛtvā tiraskṛtya āsīt* "he made them overleap the gods" d. h. "to miss"; rather probably "the people of Asura had advanced (lay in the field"; thus *abhyudācarya* is to be conjectured) "against the gods." Moreover the neglect of Saṃdhi is striking; vgl. also
 [Ind. St. 9,307.]
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

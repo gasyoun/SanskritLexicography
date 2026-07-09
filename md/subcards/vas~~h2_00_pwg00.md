@@ -230,4 +230,4 @@
 [M. 4,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,116) [11,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,122)
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [P. 8,3,61](https://ashtadhyayi.com/sutraani/8/3/61), Schol.
 - **EN:** — desid. from caus. *siṣedhayiṣati*
 [P. 8,3,61](https://ashtadhyayi.com/sutraani/8/3/61), Schol.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

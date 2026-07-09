@@ -19,4 +19,4 @@ herumlegen: *yadimān (pariśritaḥ) paryeva dadhāti*
 to lay around, to wrap around: *yadimān (pariśritaḥ) paryeva dadhāti*
 [ŚAT. BR. 9,4,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,9) *parinidhāya*
 [KĀTY. ŚR. 18,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?18,6,13)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

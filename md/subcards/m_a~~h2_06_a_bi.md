@@ -11,4 +11,4 @@
 [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8)
 [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
 - **EN:** — *abhi* to measure against, measure thereon: [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8) [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

@@ -9,4 +9,4 @@
 - **RU:** — *atipra* сильно веять: *vāyunātipravāyatā* [MBH. 12,12418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12418)
 - **EN:** — *atipra* to blow violently: *vāyunātipravāyatā*
 [MBH. 12,12418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12418)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** 2. *ji*¦, *jināti* s. u. *jyā* .
 - **EN:** 2. *ji*¦, *jināti* s. u. *jyā* .
-  <sub>DCS 4090 · lexicographic</sub>
+  <sub>lexicographic</sub>

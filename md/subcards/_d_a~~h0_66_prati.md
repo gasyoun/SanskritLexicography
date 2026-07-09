@@ -55,7 +55,7 @@
 [AV. 9,4,24.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.004.html#av09.004.24) *so 'syāyamātmā* (*ayamitara ātmā* at
 [ŚAṂK.] to [BṚH. ĀR. UP. p. 307]) *puṇyebhyaḥ karmabhyaḥ pratidhīyate* steps into his place for the sake of the sacred works
 [AIT. UP. 4,4.]
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anlegen (den Pfeil), zielen: *sa idasteva prati dhādasiṣyan*
 [ṚV. 6,3,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.05) *iṣurna dhanvanpratidhīyate*
@@ -79,7 +79,7 @@
 [ṚV. 10,103,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.103.html#rv10.103.03)
 [AV. 6,90,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.090.html#av06.090.03) [11,2,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.01)
 [ŚĀṄKH. BR. 6,1.]
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ansetzen (zum Trinken): *indro madāya prati dhatpibadhyai*
 [ṚV. 4,27,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.05)
@@ -88,7 +88,7 @@
 [ṚV. 4,27,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.05)
 - **EN:** — 3) to put (to one's lips) for drinking: *indro madāya prati dhatpibadhyai*
 [ṚV. 4,27,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.05)
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) aufsetzen (den Fuss): *apade pādā pratidhātave*
 [ṚV. 1,24,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.08) *sarvaiḥ padbhiḥ pratidadhatpalāyeta* mit allen Vieren aufsetzend d. h. ausgreifend
@@ -103,7 +103,7 @@
 [ṚV. 1,24,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.08) *sarvaiḥ padbhiḥ pratidadhatpalāyeta* setting down all four (limbs) d. h. striding out
 [ŚAT. BR. 13,3,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,3,1)
 [PAÑCAV. BR. 21,4,5.]
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) darreichen, anbieten: *yathā kumārāya jātāya stanaṃ pratidadhyāt*
 [AIT. BR. 5,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,31) [6,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,29)
@@ -112,7 +112,7 @@
 [AIT. BR. 5,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,31) [6,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,29)
 - **EN:** — 5) to hand, offer: *yathā kumārāya jātāya stanaṃ pratidadhyāt*
 [AIT. BR. 5,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,31) [6,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,29)
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) anwenden: *duṣṭadaivatanāśāya vajro dhyānasamādhinā . sarvatrākṣatavikṣepācchāntikaṃ pratidhāsyati ..*
 [ŚATR. 14,245.]
@@ -121,7 +121,7 @@
 [ŚATR. 14,245.]
 - **EN:** — 6) to apply: *duṣṭadaivatanāśāya vajro dhyānasamādhinā . sarvatrākṣatavikṣepācchāntikaṃ pratidhāsyati ..*
 [ŚATR. 14,245.]
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) med. anheben. anfangen: *prati stomaṃ dadhīmahi turāṇām*
 [ṚV. 7,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.040.html#rv07.040.01) [73,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.073.html#rv07.073.01) *prati vāṃ stomo adhāyi*
@@ -151,4 +151,4 @@
 [MAH.] as pl.). *sugrīṣmaḥ pratidhīyatāṃ*
 (Schol. *saṃpadyatām) naḥ*
 [PĀR. GṚHY. 3,2.]
-  <sub>DCS 108 · attested</sub>
+  <sub>attested</sub>

@@ -351,4 +351,4 @@ Schol. cf. [P. 6,3,133.](https://ashtadhyayi.com/sutraani/6/3/133) [7,1,45.](htt
 ([MBH. 3,1262](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1262)). with acc. and instr.: *tadvṛttaṃ nṛpatiḥ śrutvā dūtaśreṣṭhaiḥ*
 [R. 1,70,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,8) in the Bed. "to ask, request" (according to the Scholl.)
 [BHAṬṬ. 8,77.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,77)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

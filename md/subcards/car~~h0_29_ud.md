@@ -49,7 +49,7 @@
 [RAGH. 16,87.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,87) [9,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,73) *aśvatthatarostasmāduccacāra sarasvatī*
 [KATHĀS. 20,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,32)
 [VID. 114.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?114)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in die Höhe schnellen (vom Bogen): *visphūrjitairdhanuṣa uccarataḥ*
 [BHĀG. P. 2,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25)
@@ -58,7 +58,7 @@
 [BHĀG. P. 2,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25)
 - **EN:** — 2) to spring up, snap upward (of a bow): *visphūrjitairdhanuṣa uccarataḥ*
 [BHĀG. P. 2,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) aus sich hervorgehen: *sa yathorṇavābhistantunoccaret* wie die Spinne mittelst des Fadens ihren Inhalt aus sich entlässt
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
@@ -67,7 +67,7 @@
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
 - **EN:** — 3) to issue forth from oneself: *sa yathorṇavābhistantunoccaret* as the spider releases its contents out of itself by means of the thread
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) den Leib ausleeren: *tiraskṛtyoccaretkāṣṭhaloṣṭapatratṛṇādinā*
 [M. 4,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,49) *uccarita* _n._ die Excremente
@@ -79,7 +79,7 @@
 - **EN:** — 4) to empty the body, void excrement: *tiraskṛtyoccaretkāṣṭhaloṣṭapatratṛṇādinā*
 [M. 4,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,49) *uccarita* _n._ the excrement
 [BHĀG. P. 5,5,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,32)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) von sich geben, entlassen, aussprechen: *dadāti sarvamīśānaḥ purastācchukramuccaran*
 [MBH. 5,917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.917) [3,1139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1139) [5,2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2751) *vāgvacanamuccarati*
@@ -100,7 +100,7 @@ Sch. к [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [MBH. 3,12466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12466) *jagati rāma ityayaṃ śabda uccarita eva māmagāt*
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73) *daśavāramuccarito gośabdaḥ*
 Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) med. verlassen: *maghoni divamuccaramāṇe*
 [NAIṢ. 5,48.] *pathaḥ* (acc.) *kṣīvā vṛndairudacarata*
@@ -112,7 +112,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 - **EN:** — 6) med. to leave, abandon: *maghoni divamuccaramāṇe*
 [NAIṢ. 5,48.] *pathaḥ* (acc.) *kṣīvā vṛndairudacarata*
 [BHAṬṬ. 8,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,31)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) sich gegen Jmd versehen, untreu sein dem Gatten: *patnyaḥ patīnuccaranta patnīśca patayastathā*
 [MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) übertreten, zuwiderhandeln; med.: *dharmam, guruvacanamuccarate*
@@ -127,7 +127,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) to transgress, offend; med.: *dharmam, guruvacanamuccarate*
 [P. 1,3,53](https://ashtadhyayi.com/sutraani/1/3/53), Sch.
 [VOP. 23,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,45) According to [P.] *car* with *ud* appears simply as trans. in med. —
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **8 (causative) 1)** caus.
  1) den Leib ausleeren: *uccārita* (kann auch auf *uccāra* zurückgeführt werden) der eine Ausleerung gehabt hat
@@ -160,7 +160,7 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 
 - **RU:** 1) опорожнять тело: *uccārita* (может быть возведено также к *uccāra*) тот, кто опорожнил тело
 [SUŚR. 2,463,15.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-2)** — 2) (Laute) entlassen, ertönen lassen, verkünden, aussprechen: *madhurāṃ vāṇīm*
 [MBH. 1,7255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7255) *giram*
@@ -179,9 +179,9 @@ Sch. to [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [8190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8190) *svarādi duṣṭamasakṛduccārayati*
 [P. 1,3,71](https://ashtadhyayi.com/sutraani/1/3/71), Sch.
 - [LĀṬY. 6,10,18.] [MBH. 3,13653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13653) [13,4045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4045) [R. 2,91,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,27) [MṚCCH. 44,15.] [RĀJA-TAR. 5,475.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,475) [BHĀG. P. 3,21,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,34) Sch. к [JAIM. 1,2,17. 19.] Sch. к [P. 1,1,8.](https://ashtadhyayi.com/sutraani/1/1/8) [8,1,3.](https://ashtadhyayi.com/sutraani/8/1/3) [VOP. 1,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,2) [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag-3)** — Vgl. *uccāra* fgg.
 
 - **RU:** — Vgl. *uccāra* fgg.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

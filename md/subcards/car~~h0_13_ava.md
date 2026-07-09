@@ -19,10 +19,10 @@
 [SUŚR. 2,8,12. 48,20.] *śastram*
 [1,16,5.] *kaṣāyaṃ kāle 'vacāritam* applied in good time
 [2,415,13. 367,5. 381,6.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *avacara, avacāraṇa* .
 
 - **RU:** — Vgl. *avacara, avacāraṇa* .
 - **EN:** Vgl. *avacara, avacāraṇa*.
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

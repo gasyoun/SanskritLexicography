@@ -10,4 +10,4 @@
 [KĀṬH. 28,6.]
 - **EN:** — *samava* to point to, explain with regard to something: *rudraṃ vai devā yajñānnirabhajaṃste samavādiśan eṣa te mātari bhāga iti*
 [KĀṬH. 28,6.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

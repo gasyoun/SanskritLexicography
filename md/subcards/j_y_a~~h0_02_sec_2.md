@@ -65,7 +65,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [AV. 14,1,56.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.56)
 - **EN:** — 2) to surmise, suspect: *idaṃ tadrūpaṃ yadavasta yoṣā jāyāṃ jijñāse manasā carantīm*
 [AV. 14,1,56.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.56)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **desid-intro)** — desid. *jijñāsate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
@@ -74,7 +74,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 - **RU:** — desid. *jijñāsate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
 [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) ep. auch act.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **desid-sense-1)** 1) zu kennen —, zu wissen —, zu erkennen —, kennen zu lernen begehren; untersuchen, prüfen, auf die Probe stellen: *hāsaṃ te — jijñāsāmi* ich verlange zu wissen worüber du lachst
 [R. 2,35,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,19) *jijñāsantau parāṃ gatim*
@@ -125,4 +125,4 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) *mayā jijñāsito hyasi*
 [13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) добиваться достоверности относительно: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

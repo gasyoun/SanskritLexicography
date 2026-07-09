@@ -56,4 +56,4 @@
 [ŚĀṄKH. GṚHY. 2,12.] *parīta* ошибочно st. *parītta*
 [MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) — caus. велеть передать: *(tam) paridāpya yudhiṣṭhire*
 [MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445)
-  <sub>DCS 217 · attested</sub>
+  <sub>attested</sub>

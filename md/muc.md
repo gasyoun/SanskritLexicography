@@ -29,7 +29,7 @@ _PWG article — 42 sub-card(s), 313 sense(s) · RU 265/313 · EN 290/313_
 [Ind. St. 5,340. 363.] *amucat* and *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** 3. pl. *mokṣīs*
 [HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* und *˚te, moktā*
@@ -461,7 +461,7 @@ Schol. to [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* "lacking"
 [R. 6,9,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,36) *kadācinmuñceyaṃ madanaśikhipīḍāparibhavam*
 
 [Spr. 2840.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2840) *duḥkhaṃ mokṣye kadāham*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -664,7 +664,7 @@ Schol. to [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* "lacking"
 [MBH. 1,6740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6740) *girivarataṭānmuktaścātmā*
 [Spr. 2741.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2741) *mukta* "detached, fallen off": *tṛṇarājaphalānīva muktāni śikharāttaroḥ*
 [HARIV. 8093.](https://sanskrit-lexicon-scans.github.io/hariv?8093) Vgl. *amukta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -792,7 +792,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) *(gardabhaḥ) śasyakṣetre mocitaḥ* "he let the donkey loose, let it go freely upon"
 [HIT. ed. JOHNS. 1706.] "to let something go" thus v. a. "to spend, give away": *tapasā dravyamāsādya mocayetsādhitena yaḥ*
 [MĀRK. P. 121,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,3)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd veranlassen aufzugeben, — fahren zu lassen, — zu entlassen, — von sich zu geben: *tvāmapyaśraṃ jalalavamayaṃ mocayiṣyatyavaśyam*
 [MEGH. 91.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?91) *vājinaḥ — āyūṃṣi — amocayat*
@@ -804,7 +804,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 - **EN:** — 2) "to cause someone to give up —, to let go —, to dismiss —, to part with": *tvāmapyaśraṃ jalalavamayaṃ mocayiṣyatyavaśyam*
 [MEGH. 91.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?91) *vājinaḥ — āyūṃṣi — amocayat*
 [BHAṬṬ. 9,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,67)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) erfreuen
 [DHĀTUP.]
@@ -813,7 +813,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [DHĀTUP.]
 - **EN:** — 3) "to delight, gladden"
 [DHĀTUP.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -842,7 +842,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 "to be about to let go —, to give up": *prāṇānkasmānmumukṣasi*
 [KATHĀS. 73,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,18) "to be about to hurl": *vajraṃ mumukṣanniva vajrapāṇiḥ*
 [RAGH. 2,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,42)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) med. sich zu befreien gewillt sein: *mumukṣate vatsaḥ*
 [P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
@@ -863,7 +863,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
 [MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) *mokṣate*
  a) sich zu lösen suchen, — wünschen, Rettung suchen
@@ -884,7 +884,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mokṣate vatsaḥ svayameva*
 [P.], Sch. *ta enaṃ baddhā mokṣamāṇā avagamayanti*
 [KĀṬH. 11,6.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) sich befreien von (acc.): *mokṣiṣye manaso jvaram*
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
@@ -893,7 +893,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
 - **EN:** — b) "to free oneself from" (acc.): *mokṣiṣye manaso jvaram*
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -910,7 +910,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 - **EN:** — desid. of the caus. "to be willing to be freed (from the bonds of the world)": *yaṃ tu mumocayiṣyanti (devāḥ)*
 [ŚAṂK.] to [BṚH. ĀR. UP. S. 234.]
 — Vgl. *mumocayiṣu*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## atimuc
 
@@ -936,7 +936,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [5,2,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,5) *mṛtyūn*
 [4,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,1,1) [14,4,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,13) [6,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,1,5) [TS. 6,6,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,9,2) [ŚĀṄKH. BR. 13,3. 15,5.] [KENOP. 2.] — desid. med. "to save oneself from" (acc.): *yathāgniṃ pradāvyamatimokṣamāṇaḥ*
 [ŚĀṄKH. BR. 16,7.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (aDi+)
 
@@ -953,7 +953,7 @@ Vgl. *adhimukti* .
 - **EN:** — *adhi*, partic. in *śraddhādhimukta* "full of trust"
 [BURN. Intr. 268, N. 1.]
 Vgl. *adhimukti*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (aBi+)
 
@@ -966,14 +966,14 @@ Vgl. *adhimukti*.
 - **EN:** — *abhi* "to let loose": *nādharmaḥ kāraṇāpekṣī kartāramabhimuñcati*
 [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) "to hurl, shoot off": *abhyamuñcanta — śaravarṣāṇi*
 [7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) schleudern, abschiessen: *abhyamuñcanta — śaravarṣāṇi*
 [7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967)
 
 - **RU:** [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) метать, пускать (стрелу): *abhyamuñcanta — śaravarṣāṇi*
 [7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (ava+)
 
@@ -1025,7 +1025,7 @@ Vgl. *adhimukti*.
 [11,801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.801) *(syamantakam) svakaṇṭhādavamucya*
 [HARIV. 2049.](https://sanskrit-lexicon-scans.github.io/hariv?2049)
 [R. 2,9,47](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,47) ([8,54](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,54) [GORR.]). [6,112,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,91)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (vyava+)
 
@@ -1039,7 +1039,7 @@ Vgl. *adhimukti*.
 [R. 2,112,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,22)
 - **EN:** — *vyava* "to detach from oneself, lay aside": *pāduke vyavamucya*
 [R. 2,112,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,22)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (A+)
 
@@ -1122,7 +1122,7 @@ Vgl. *adhimukti*.
 [Spr. 94](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?94), v. l. clothed, adorned with: *bhrājatkaustubhāmuktakaṃdhara*
 [BHĀG. P. 3,28,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,14) *āmuktamiva pāṣaṇḍam*
 [4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) after the Schol. wrapped in a heretic's garb (i.e. *āmukta* in transit. Bed.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ablegen (ein Kleidungsstück): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
@@ -1131,7 +1131,7 @@ Vgl. *adhimukti*.
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
 - **EN:** — 2) to take off (a garment): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) befreien, loslassen: *āmuktāḥ (āsaktāḥ* liest der
 Schol.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738) schleudern, werfen: *airāvataḥ — salilam — megheṣvāmuñcate*
@@ -1147,12 +1147,12 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
 [MEGH. 36.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?36)
 — Vgl. *āmocana* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **add.)** — Vgl. *āmocana* .
 
 - **RU:** — Vgl. *āmocana* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (paryA+)
 
@@ -1166,7 +1166,7 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [GAUḌAP.] к [SĀṂKHYAK. 67.]
 - **EN:** — *paryā* "to detach all around and take off": *ghaṭaṃ paryāmuñcati* (from the potter's wheel)
 [GAUḌAP.] to [SĀṂKHYAK. 67.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (vyA+)
 
@@ -1180,7 +1180,7 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [PAÑCAR. 3,1,19.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,1,19)
 - **EN:** — *vyā* "to dismiss, let go from oneself": *vyāmuñcetpavanamatha mārgeṇa khamaṇeḥ*
 [PAÑCAR. 3,1,19.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,1,19)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (ud+)
 
@@ -1260,7 +1260,7 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [Spr. 5266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5266) *unmukta* at the end of a comp. "free of, lacking": *mānonmukta*
 [VARĀH. BṚH. S. 15,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,21) *prabhañjanonmuktā saṃdhyā*
 [30,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?30,20)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **misc)** — Vgl. *unmuca, unmocana* . — caus. lösen, aufbinden: *unmocanīyā veṇī*
 [MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. ablösen, abnehmen: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
@@ -1287,7 +1287,7 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [KATHĀS. 22,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,195) *bandhanāt*
 [67,46.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,46) [PAÑCAT. 37,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,20) [257,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,22) *na vikramo na cāpyartho na mitraṃ na suhṛjjanaḥ . tathonmocayate duḥkhādyathātmā sthirasaṃyamaḥ ..*
 [MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc (upa+)
 
@@ -1310,13 +1310,13 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [TS. 5,4,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,4,4)
 [KAUŚ. 18.]
 [KĀTY. ŚR. 15,6,24.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,6,24)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **misc)** — Vgl. *yathopamuktam* .
 
 - **RU:** — Vgl. *yathopamuktam* .
 - **EN:** — Vgl. *yathopamuktam* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## nis-muc
 
@@ -1751,7 +1751,7 @@ the bonds of the world)
 - **EN:** — *paripra* med. "to detach oneself from": *pra muñcasva pari kutsādihā gahi*
 
 [ṚV. 10,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.038.html#rv10.038.05)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratipramuc
 
@@ -1765,7 +1765,7 @@ the bonds of the world)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
 - **EN:** — *pratipra* "to admit to" (the calf to its mother)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vipramuc
 
@@ -1776,20 +1776,20 @@ the bonds of the world)
 
 - **RU:** — *vipra* отделять, снимать: *saṃnāhānvipramucya*
 - **EN:** — *vipra* "to detach, remove": *saṃnāhānvipramucya*
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MBH. 6,5767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5767) Jmd befreien: *tānṛṣīnvipramucya*
 
 - **RU:** [MBH. 6,5767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5767) освобождать кого-л.: *tānṛṣīnvipramucya*
 - **EN:** [MBH. 6,5767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5767) "to free someone": *tānṛṣīnvipramucya*
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [R. 3,39,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,37) schleudern, abschiessen: *vipramokṣyāmyahaṃ bāṇānnṛvājigajamarmasu*
 
 - **RU:** [R. 3,39,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,37) метать, пускать (стрелу и т. п.): *vipramokṣyāmyahaṃ bāṇānnṛvājigajamarmasu*
 - **EN:** [R. 3,39,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,37) "to hurl, shoot off": *vipramokṣyāmyahaṃ bāṇānnṛvājigajamarmasu*
 [R. GORR. 2,20,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,42) *jyāvipramuktāḥ śarāḥ*
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [R. GORR. 2,20,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,42) *jyāvipramuktāḥ śarāḥ*
 [3,62,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,7) verscheuchen: *vipramuktabhaya (tālavana)* so v. a. frei von Gefahren
@@ -1797,7 +1797,7 @@ the bonds of the world)
 - **RU:** [R. GORR. 2,20,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,42) *jyāvipramuktāḥ śarāḥ*
 [3,62,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,7) отгонять, рассеивать: *vipramuktabhaya (tālavana)* так v. a. свободный от опасностей
 - **EN:** [3,62,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,7) "to scare/drive away": *vipramuktabhaya (tālavana)*, hence v. a. "free from dangers"
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **5)** [HARIV. 3725.](https://sanskrit-lexicon-scans.github.io/hariv?3725) pass. sich befreien: *kilviṣādvipramokṣyase*
 
@@ -1808,26 +1808,26 @@ the bonds of the world)
 [MBH. 1,1318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1318) [5879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5879) [13,3535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3535) [4185](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4185) *(vipramokṣyasi* at the end of a Śloka without need). *rakṣasā vipramuktaḥ*
 [1,6772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6772) *guṇavipramukta* "free from"
 [BHĀG. P. 7,9,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,18)
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **6)** [MBH. 3,11800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11800) [13,3600](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3600) (besser *kṣaṇena vipramucyeta* [ed. Bomb.]).
 
 - **RU:** [MBH. 3,11800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11800) [13,3600](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3600) (лучше *kṣaṇena vipramucyeta* [ed. Bomb.]).
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **7)** [MĀRK. P. 101,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,7) *dāsyādvo vipramucyeyam*
 [MBH. 1,1318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1318) [5879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5879) [13,3535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3535) [4185](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4185) *(vipramokṣyasi* am Ende eines Śloka ohne Noth). *rakṣasā vipramuktaḥ*
 
 - **RU:** [MĀRK. P. 101,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,7) *dāsyādvo vipramucyeyam*
 [MBH. 1,1318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1318) [5879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5879) [13,3535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3535) [4185](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4185) *(vipramokṣyasi* в конце Śloka без нужды). *rakṣasā vipramuktaḥ*
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 **8)** [1,6772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6772) *guṇavipramukta* frei von
 [BHĀG. P. 7,9,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,18)
 
 - **RU:** [1,6772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6772) *guṇavipramukta* свободный от
 [BHĀG. P. 7,9,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,18)
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 ## sampramuc
 
@@ -1841,7 +1841,7 @@ the bonds of the world)
 [ŚĀṄKH. BR. 18,7.]
 - **EN:** — *saṃpra* "to loosen completely"
 [ŚĀṄKH. BR. 18,7.]
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **2 (passive))** [ŚR. 15,27,14.] *saṃpramucya* mit passiver Bed. sich befreiend von
 [ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
@@ -1850,7 +1850,7 @@ the bonds of the world)
 [ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
 - **EN:** [ŚR. 15,27,14.] *saṃpramucya* with passive Bed. "freeing oneself from"
 [ŚAT. BR. 14,7,1,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,41)
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 ## pratimuc
 
@@ -1969,7 +1969,7 @@ the bonds of the world)
 [53.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.53) [296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.296) *kavacāni pratimuñcantu — gātreṣu*
 [1022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1022) *indradattāmimāṃ mālāṃ sugrīvaḥ pratimuñcatu*
 [R. 4,16,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,16,51)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd freilassen, entlassen: *mahākratoramuṃ turaṃgaṃ pratimoktumarhasi*
 [RAGH. 3,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,46) *gṛhītapratimukta*
@@ -2008,7 +2008,7 @@ the bonds of the world)
 [13,1659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1659) *narakātpratimuktaḥ*
 [MĀRK. P. 15,1.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,1) "to free(!)": *tiryagyonau gatāṃścaiva* (so the more recent Ausg.) *karmabhirnirayopamaiḥ . tānapi pratimucyeta brahmayuktena cetasā ..*
 [HARIV. 11619.](https://sanskrit-lexicon-scans.github.io/hariv?11619)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) schleudern: *tasmādghrāṇaṃ prati śarānpratimokṣyāmyahaṃ śitān*
 [MBH. 14,847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.847) [850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.850) [856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.856) [862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.862) *kṛpeṇa śaravarṣāṇi pratimuktāni saṃyuge*
@@ -2035,7 +2035,7 @@ the bonds of the world)
 
 *kataro meniṃ prati taṃ mucāte*
 [ṚV. 10,27,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.11)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *pratimocana* . — caus. befreien, erretten: *asmāṃstvaṃ pratimocaya*
 [MBH. 1,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5812) *tvadarthametadvinipātyamānaṃ dehaṃ tvayaiva pratimocitaṃ me*
@@ -2047,7 +2047,7 @@ the bonds of the world)
 - **EN:** — Vgl. *pratimocana*. — caus. "to free, rescue": *asmāṃstvaṃ pratimocaya*
 [MBH. 1,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5812) *tvadarthametadvinipātyamānaṃ dehaṃ tvayaiva pratimocitaṃ me*
 [MṚCCH. 172,15.] — desid. s. *pratimokṣa*.
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 ## sampratimuc
 
@@ -2061,7 +2061,7 @@ the bonds of the world)
 [BHĀG. P. 5,24,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,23)
 - **EN:** — *saṃprati* "to bind, fetter": *varuṇapāśaiśca saṃpratimuktaḥ*
 [BHĀG. P. 5,24,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,23)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vimuc
 
@@ -2308,7 +2308,7 @@ the bonds of the world)
 [HARIV. 7210](https://sanskrit-lexicon-scans.github.io/hariv?7210) = [7294.](https://sanskrit-lexicon-scans.github.io/hariv?7294) *ātmānaṃ gaṅgādevyāṃ vimuñcati* бросается
 [UTTARARĀMAC. 121,3.]
 - **EN:** — *vi* to unfasten, untie, free; med. to unfasten something for oneself or on one's own account, z. B. to unharness one's own (horses): *vi mumoktu pāśān*
-  <sub>DCS 1119 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ṚV. 1,24,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.13) *aśvān*
 [104,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.104.html#rv01.104.01) *muca*
@@ -2620,7 +2620,7 @@ the bonds of the world)
 [M. 11,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,112)
 [MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782)
 [SĀṂKHYAK. 63.]
-  <sub>DCS 1119 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [RAGH. ed. Calc. 3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,20) [BHĀG. P. 1,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,23) [6,2,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,31) [7,6,9](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,9) (*vimocitum*) .
 [Spr. 608.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?608) *saṃśayāt*
@@ -2665,7 +2665,7 @@ the bonds of the world)
 [VID. 103.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?103) to let something go, release, give up: *pravimucya śākhām*
 [MBH. 3,15602.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15602) *śarīram*
 [KATHĀS. 36,111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,111)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MĀRK. P. 109,31.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,31) pass. sich befreien von: *duḥsvapnātpravimucyate*
 [SUŚR. 1,111,16.]
@@ -2687,7 +2687,7 @@ the bonds of the world)
 - **EN:** — *sam* to dismiss, give forth from oneself: *netrodbhavaṃ saṃmumucuḥ — vāri*
 [MBH. 3,10236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10236) — caus. to free someone: *saṃmocitaḥ satyavatā tvayāhaṃ śāpāt*
 [RAGH. 5,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,56)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -2736,7 +2736,7 @@ the bonds of the world)
 - **EN:** *muc* (= 1. *muc)* nom. ag. at the end of a comp. "freeing someone from": *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [10.] entlassend, von sich gebend, schleudernd: *śramaphena˚ (turaṃgama)*
 [RAGH. 9,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,72) *sveda˚ (payodharayuga)*
@@ -2786,7 +2786,7 @@ the bonds of the world)
 
 - **RU:** 3. *muc*¦, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## muc
 
@@ -2809,19 +2809,19 @@ the bonds of the world)
 — *vi*, *vimukta* in *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) thus v. a. *yukta*.* avimuktacakra*
 [PĀR. GṚHY. 1,15] according to the Comm. thus v. a. *anullaṅghitaśāstra* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag T26)** — *nis*, *nirmukta*
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) fehlerhaft für *niryukta* .
 
 - **RU:** — *nis*, *nirmukta*
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вместо *niryukta*.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T27)** — *prati*
 
 - **RU:** — *prati*
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T28 1))** 1) *sahasraṃ vāruṇānpāśānātmani pratimuñcati*
 [R. 7,59,3,35.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,3,35) — caus.: *bhūpātkathamapyātmānaṃ pratimocya saḥ*
@@ -2830,7 +2830,7 @@ the bonds of the world)
 - **RU:** 1) *sahasraṃ vāruṇānpāśānātmani pratimuñcati*
 [R. 7,59,3,35.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,3,35) — caus.: *bhūpātkathamapyātmānaṃ pratimocya saḥ*
 [KATHĀS. 111,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?111,41)
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T29)** — *vi*, *vimukta* in *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) so v. a. *yukta*.* avimuktacakra*
@@ -2839,7 +2839,7 @@ the bonds of the world)
 - **RU:** — *vi*, *vimukta* в *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) так v. a. *yukta*.* avimuktacakra*
 [PĀR. GṚHY. 1,15] согласно Comm. так v. a. *anullaṅghitaśāstra*.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## muc
 
@@ -2859,7 +2859,7 @@ the bonds of the world)
 [Sp. 810, Z. 8] v. u. the example
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) is to be deleted, since here *bhuktam* is to be read; vgl.
 [Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2)** — *abhi* von sich geben, ausströmen: *tāpam*
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
@@ -2868,7 +2868,7 @@ the bonds of the world)
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
 - **EN:** — *abhi* "to give forth, to emit": *tāpam*
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -2879,601 +2879,601 @@ the bonds of the world)
 
 - **RU:** **1.** √*muc*¦ Основы настоящего времени: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) и *mumoca*; Act. Med.
 - **EN:** **1.** √*muc*; present stems: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) and *mumoca*; Act. Med.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1〉 Jmd losmachen, freimachen, befreien, — von (Abl. oder _Adv._ auf *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. sich losmachen, sich befreien von (Abl., Instr. und ausnahmsweise Gen.), entrinnen. *mukta* freigelassen, befreit von (Abl. oder Instr.), — *durch (Abl. oder Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
 
 - **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобождённый от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
 - **EN:** — 1) to loose, set free, liberate someone — from (Abl. or _Adv._ on *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. to free oneself, become released from (Abl., Instr. and exceptionally Gen.), to escape. *mukta* freed, liberated from (Abl. or Instr.) — *through (Abl. or Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 verschonen [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
 
 - **RU:** — 2〉 щадить [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
 - **EN:** — 2) to spare [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 ablösen, abbinden, lösen. *kaṇṭham* die Kehle lösen, so v. a. seine Stimme erheben. *prāṇān* Jmds (Gen.) Lebensgeister lösen, so v. a. Jmd das Leben nehmen. *mukta* losgebunden; abgelöst, herabgefallen (Frucht); aufgelöst, so v. a. erschlafft (die Glieder des Körpers).
 
 - **RU:** — 3〉 отвязывать, развязывать, распускать. *kaṇṭham* освободить горло, т.е. v. a. возвысить голос. *prāṇān* разрешить чьи-либо (Gen.) жизненные силы, т.е. v. a. лишить кого-либо жизни. *mukta* развязанный; отделившийся, упавший (плод); расслабленный, расслаблённый, т.е. v. a. ослабевший (члены тела).
 - **EN:** — 3) to detach, untie, loosen. *kaṇṭham* "to loosen the throat," i.e. v. a. to raise one's voice. *prāṇān* "to loosen someone's (Gen.) vital spirits," i.e. v. a. to take someone's life. *mukta* untied; detached, fallen off (of fruit); relaxed, i.e. v. a. slackened (of the limbs of the body).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 loslassen, freilassen ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), die Zügel schiessen lassen (Partic. *mukta*); entlassen, gehen lassen. *padātpadam* mit *na* den einen Fuss nicht vom andern lassen, so v. a. sich nicht von der Stelle bewegen. *ubhayorhastayormuktamannam* so v. a. Speise, die man nicht mit beiden Händen hält, [VASIṢṬHA 11,25].
 
 - **RU:** — 4〉 отпускать, отпускать на волю ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), отпускать поводья (Partic. *mukta*); отпускать, давать уйти. *padātpadam* с *na* не отрывать одну ногу от другой, т.е. v. a. не двигаться с места. *ubhayorhastayormuktamannam* т.е. v. a. еда, которую держат не обеими руками, [VASIṢṬHA 11,25].
 - **EN:** — 4) to let loose, set free ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), to give free rein to the reins (Partic. *mukta*); to release, let go. *padātpadam* with *na* "not to let one foot leave the other," i.e. v. a. not to move from the spot. *ubhayorhastayormuktamannam* thus v. a. food that one does not hold with both hands [VASIṢṬHA 11,25].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
 
 - **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незаграждённый ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
 - **EN:** — 5) to leave a place. *mukta* left, vacated (of a road). laid open ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* denotes that quarter of the world which the sun has just left.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
 
 - **RU:** — 6〉 бросать кого-либо или что-либо, покидать, отказываться от, снимать с себя, слагать ([CAMPAKA. 92]), класть на хранение ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) оставить тело, жизненные силы, жизнь, уйти в смерть, умереть. *mukta* оставленный, покинутый, снятый, сброшенный, отложенный ([CAMPAKA. 473]), выброшенный (одежды [ĀPAST. 2,21,11]), оставленный, оставленный позади, более не существующий, исчезнувший (insbes. в начале adj. Comp.).
 - **EN:** — 6) to let go of, abandon, give up someone or something, lay aside, set down ([CAMPAKA. 92]), deposit ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) to give up the body, the vital spirits, life, i.e. to go to death, to die. *mukta* let go, abandoned, taken off, laid aside, deposited ([CAMPAKA. 473]), thrown away (of clothes [ĀPAST. 2,21,11]), given up, abandoned, no longer present, vanished (insbes. at the beginning of a adj. Comp.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 aus sich entlassen, von sich geben, ausstossen, vergiessen (Thränen). *mukta* aus sich entlassen, von sich gegeben, ausgestossen, vergossen (Thränen).
 
 - **RU:** — 7〉 испускать, извергать из себя, проливать (слёзы). *mukta* испущенный, пролитый, извергнутый (слёзы).
 - **EN:** — 7) to release from oneself, give forth, emit, shed (tears). *mukta* released, given forth, emitted, shed (of tears).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8〉 von sich geben, so v. a. verleihen; übergeben abgeben [CAMPAKA. 281].
 
 - **RU:** — 8〉 давать от себя, т.е. v. a. жаловать, передавать, отдавать [CAMPAKA. 281].
 - **EN:** — 8) to give forth from oneself, i.e. v. a. to bestow; to hand over, deliver [CAMPAKA. 281].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9〉 werfen, schleudern, abschiessen, — auf (Loc., Dat., Gen. oder Acc. mit *prati*). *ātmānam* sich stürzen von (Abl.). *mukta* hingeworfen ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), geschleudert, abgeschossen. *pādaprahāra* ein versetzter Fusstritt, *ātman* selbst sich gestürzt habend von (Abl.).
 
 - **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесённый удар ногой, *ātman* сам бросившийся с (Abl.).
 - **EN:** — 9) to throw, hurl, shoot — at (Loc., Dat., Gen. or Acc. with *prati*). *ātmānam* to hurl oneself down from (Abl.). *mukta* thrown down ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), hurled, shot. *pādaprahāra* a kick delivered, *ātman* having hurled oneself from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10〉 schicken in (Loc.) *mukta* [CAMPAKA. 230].
 
 - **RU:** — 10〉 посылать в (Loc.) *mukta* [CAMPAKA. 230].
 - **EN:** — 10) to send into (Loc.) *mukta* [CAMPAKA. 230].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11〉 Med. ausfahren.
 
 - **RU:** — 11〉 Med. выходить.
 - **EN:** — 11) Med. to drive out, set out.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12〉 Pass.
 
 - **RU:** — 12〉 Pass.
 - **EN:** — 12) Pass.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12a)** — a〉 befreit —, erlöst werden von einer Sünde, — von den Sünden, — von den Banden der Welt. *muktvā* erlöst seiend [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* von einer Sünde befreit ([ĀPAST. 1,24,21]), erlöst von den Sünden, — von den Banden der Welt.
 
 - **RU:** — a〉 быть освобождённым — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобождённый от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
 - **EN:** — a) to be freed —, released from a sin, — from sins, — from the bonds of the world. *muktvā* being released [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* freed from a sin ([ĀPAST. 1,24,21]), released from sins, — from the bonds of the world.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12b)** — b〉 lassen von (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
 
 - **RU:** — b〉 отказываться от (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
 - **EN:** — b) to let go of (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12c)** — c〉 kommen um (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
 
 - **RU:** — c〉 лишаться (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
 - **EN:** — c) to lose, be deprived of (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12d)** — d〉 ermangeln, mit Instr. *mukta* ermangelnd, die Ergänzung im Instr. oder im Comp. vorangehend.
 
 - **RU:** — d〉 не иметь, лишаться, с Instr. *mukta* лишённый, дополнение стоит в Instr. или в предшествующем Comp..
 - **EN:** — d) to lack, with Instr. *mukta* lacking, the complement preceding in the Instr. or in the Comp..
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13〉 *muktvā* Absol. mit Ausnahme von, ausser; mit Acc.
 
 - **RU:** — 13〉 *muktvā* Absol. за исключением, кроме; с Acc.
 - **EN:** — 13) *muktvā* Absol. with the exception of, except; with Acc.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **intro2)** — Caus. *mocayati*, *˚te* (metrisch)
 
 - **RU:** — Caus. *mocayati*, *˚te* (метрически)
 - **EN:** — Caus. *mocayati*, *˚te* (metrically)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i1)** — 1〉 befreien, — von (Abl., ausnahmsweise Instr.), loslassen, frei einhergehen lassen.
 
 - **RU:** — 1〉 освобождать, — от (Abl., в виде исключения Instr.), отпускать, давать свободно передвигаться.
 - **EN:** — 1) to free — from (Abl., exceptionally Instr.), to let loose, let go free.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i2)** — 2〉 ablösen, abbinden, lösen, abspannen.
 
 - **RU:** — 2〉 снимать, отвязывать, развязывать, распрягать.
 - **EN:** — 2) to detach, untie, loosen, unyoke.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i3)** — 3〉 öffnen.
 
 - **RU:** — 3〉 открывать.
 - **EN:** — 3) to open.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i4)** — 4〉 einlösen (ein Pfand).
 
 - **RU:** — 4〉 выкупать (залог).
 - **EN:** — 4) to redeem (a pledge).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i5)** — 5〉 verausgeben, vergeben.
 
 - **RU:** — 5〉 расходовать, раздавать.
 - **EN:** — 5) to expend, give away.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i6)** — 6〉 Jmd veranlassen aufzugeben, — fahren zu lassen; mit doppeltem Acc.
 
 - **RU:** — 6〉 побуждать кого-либо отказаться от, — оставить; с двойным Acc.
 - **EN:** — 6) to cause someone to give up —, to let go; with double Acc.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **i7)** — 7〉 Jmd veranlassen aus sich zu entlassen, — von sich zu geben; mit doppeltem Acc.
 
 - **RU:** — 7〉 побуждать кого-либо испускать, — давать от себя; с двойным Acc.
 - **EN:** — 7) to cause someone to release from himself —, to give forth from himself; with double Acc.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **desid_intro)** — Desid.
 
 - **RU:** — Desid.
 - **EN:** — Desid.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1)** — 1〉 *mumukṣati*, *˚te*
 
 - **RU:** — 1〉 *mumukṣati*, *˚te*
 - **EN:** — 1) *mumukṣati*, *˚te*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1a)** — a〉 Act. im Begriff stehen.
 
 - **RU:** — a〉 Act. намереваться.
 - **EN:** — a) Act. to be about to.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1a-alpha)** — α〉 *frei zu machen.
 
 - **RU:** — α〉 *освобождать.
 - **EN:** — α) *to set free.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1a-beta)** — β〉 fahren zu lassen, aufzugeben.
 
 - **RU:** — β〉 оставлять, отказываться от.
 - **EN:** — β) to let go, to give up.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1a-gamma)** — γ〉 zu schleudern.
 
 - **RU:** — γ〉 метать.
 - **EN:** — γ) to hurl.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d1b)** — b〉 Med. sich zu befreien wünschen, — von (Abl.). Partic. Act. *mumukṣat* (metrisch) Erlösung suchend.
 
 - **RU:** — b〉 Med. желать освободиться, — от (Abl.). Partic. Act. *mumukṣat* (метрически) ищущий освобождения.
 - **EN:** — b) Med. to wish to free oneself — from (Abl.). Partic. Act. *mumukṣat* (metrically) seeking release.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d2)** — 2〉 *mokṣate*
 
 - **RU:** — 2〉 *mokṣate*
 - **EN:** — 2) *mokṣate*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d2a)** — a〉 sich zu lösen suchen, sich zu befreien wünschen, Rettung suchen [MAITR. S. 2,2,1 (14,18)].
 
 - **RU:** — a〉 стремиться освободиться, желать избавиться, искать спасения [MAITR. S. 2,2,1 (14,18)].
 - **EN:** — a) to seek to free oneself, to wish to be released, to seek deliverance [MAITR. S. 2,2,1 (14,18)].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d2b)** — b〉 sich befreien von (Acc.).
 
 - **RU:** — b〉 освобождаться от (Acc.).
 - **EN:** — b) to free oneself from (Acc.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **d-extra)** — Desid. von Caus. *mumocayiṣati* Jmd von den Banden der Welt zu erlösen gewillt sein.
 
 - **RU:** — Desid. от Caus. *mumocayiṣati* быть готовым освободить кого-либо от уз мирского существования.
 - **EN:** — Desid. of Caus. *mumocayiṣati* to be willing to release someone from the bonds of the world.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ud)** — Mit *ati* Pass. vermeiden, entgehen; mit Acc. *atimukta* entgangen, mit Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
 
 - **RU:** — С *ati* Pass. избегать, уклоняться; с Acc. *atimukta* избегнутый, с Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
 - **EN:** — With *ati* Pass. to avoid, escape; with Acc. *atimukta* escaped, with Acc. [ŚAT. BR. 2,3,2,10](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,10).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ud2)** — Desid. *atimokṣate* sich retten vor (Acc.)
 
 - **RU:** — Desid. *atimokṣate* спасаться от (Acc.)
 - **EN:** — Desid. *atimokṣate* to save oneself from (Acc.)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-anu)** — Mit *adhi* pass. sich hingezogen fühlen zu (Acc.) [VAJRACCH. 30,14. 38,10]. *˚adhimukta* sich hingezogen fühlend zu [LALIT. 26,6. 7].
 
 - **RU:** — С *adhi* pass. чувствовать влечение к (Acc.) [VAJRACCH. 30,14. 38,10]. *˚adhimukta* чувствующий влечение к [LALIT. 26,6. 7].
 - **EN:** — With *adhi* pass. to feel drawn towards (Acc.) [VAJRACCH. 30,14. 38,10]. *˚adhimukta* feeling drawn towards [LALIT. 26,6. 7].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-apa)** — Mit *vyapa* Schmucksachen ablegen von (Abl.).
 
 - **RU:** — С *vyapa* украшения снимать с (Abl.).
 - **EN:** — With *vyapa* to lay aside ornaments from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ava-intro)** — Mit *abhi*
 
 - **RU:** — С *abhi*
 - **EN:** — With *abhi*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ava1)** — 1〉 loslassen.
 
 - **RU:** — 1〉 отпускать.
 - **EN:** — 1) to let loose.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ava2)** — 2〉 von sich geben, ausströmen.
 
 - **RU:** — 2〉 давать от себя, испускать.
 - **EN:** — 2) to give forth from oneself, to pour out.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ava3)** — 3〉 schleudern, abschiessen.
 
 - **RU:** — 3〉 метать, выпускать.
 - **EN:** — 3) to hurl, shoot.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-ud-intro2)** — Mit *ava*
 
 - **RU:** — С *ava*
 - **EN:** — With *ava*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **ud1)** — 1〉 ablösen, abspannen.
 
 - **RU:** — 1〉 отвязывать, распрягать.
 - **EN:** — 1) to detach, unyoke.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **ud2)** — 2〉 loslassen, fahrenlassen.
 
 - **RU:** — 2〉 отпускать, оставлять.
 - **EN:** — 2) to let loose, let go.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **ud3)** — 3〉 ablösen, ausziehen; Med. von sich abstreifen, ablegen, abnehmen von (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
 
 - **RU:** — 3〉 снимать, сбрасывать; Med. сбрасывать с себя, снимать, убирать с (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
 - **EN:** — 3) to detach, take off; Med. to strip off from oneself, lay aside, remove from (Abl.) [42,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?42).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-pari1)** — Mit *vyava* von sich ablösen, ablegen. Nur Absol.
 
 - **RU:** — С *vyava* снимать с себя, сбрасывать. Только Absol.
 - **EN:** — With *vyava* to detach from oneself, lay aside. Only Absol.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-pra-intro)** — Mit *ā*
 
 - **RU:** — С *ā*
 - **EN:** — With *ā*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra1)** — 1〉 anlegen (Andern oder sich ein Kleidungsstück, einen Schmuck). *āmukta*
 
 - **RU:** — 1〉 надевать (другому или себе одежду, украшение). *āmukta*
 - **EN:** — 1) to put on (a garment or ornament, on another or oneself). *āmukta*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra1a)** — a〉 angelegt [LALIT. 186,18].
 
 - **RU:** — a〉 надетый [LALIT. 186,18].
 - **EN:** — a) put on [LALIT. 186,18].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra1b)** — b〉 bekleidet mit. (im Comp. vorangehend) [VEṆĪS. 53]. geharnischt [GAL.]
 
 - **RU:** — b〉 одетый в. (в предшествующем Comp.) [VEṆĪS. 53]. закованный в броню [GAL.]
 - **EN:** — b) clothed with. (preceding in the Comp.) [VEṆĪS. 53]. armored [GAL.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra1c)** — c〉 gekleidet in (Acc.).
 
 - **RU:** — c〉 облачённый в (Acc.).
 - **EN:** — c) dressed in (Acc.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra2)** — 2〉 ablegen. Nur Partic. *āmukta* abgelegt (ein Kleidungsstück).
 
 - **RU:** — 2〉 снимать. Только Partic. *āmukta* снятый (предмет одежды).
 - **EN:** — 2) to take off. Only Partic. *āmukta* taken off (a garment).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra3)** — 3〉 werfen, schleudern, — auf (Loc.). den Blick werfen auf Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
 
 - **RU:** — 3〉 бросать, метать, — на (Loc.). бросать взгляд на Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
 - **EN:** — 3) to throw, hurl — at (Loc.). to cast one's glance upon Loc. () [MEGH. 35](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?35).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **pra4)** — 4〉 *āmukta* fehlerhaft für *āsakta*.
 
 - **RU:** — 4〉 *āmukta* ошибочно вместо *āsakta*.
 - **EN:** — 4) *āmukta* erroneously for *āsakta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-pari2)** — Mit *paryā* rund herum ablösen und abnehmen.
 
 - **RU:** — С *paryā* снимать и убирать кругом.
 - **EN:** — With *paryā* to detach and remove all around.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-pra2)** — Mit *vyā* entlassen, von sich lassen.
 
 - **RU:** — С *vyā* отпускать, давать от себя.
 - **EN:** — With *vyā* to release, let go from oneself.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-vi-intro)** — Mit *ud*
 
 - **RU:** — С *ud*
 - **EN:** — With *ud*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi1)** — 1〉 befreien, — von (Abl.); Pass. loskommen, gerettet sein. *˚unmukta* frei von, ermangelnd.
 
 - **RU:** — 1〉 освобождать, — от (Abl.); Pass. вырваться на свободу, быть спасённым. *˚unmukta* свободный от, лишённый.
 - **EN:** — 1) to free — from (Abl.); Pass. to get free, be saved. *˚unmukta* free from, lacking.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi2)** — 2〉 auflösen, losmachen; Med. auch sich losmachen.
 
 - **RU:** — 2〉 развязывать, разрешать; Med. также освобождаться.
 - **EN:** — 2) to dissolve, loosen; Med. also to free oneself.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi3)** — 3〉 aufmachen, erbrechen (einen Brief) [BĀLAR. 116,19].
 
 - **RU:** — 3〉 вскрывать (письмо) [BĀLAR. 116,19].
 - **EN:** — 3) to open, break open (a letter) [BĀLAR. 116,19].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi4)** — 4〉 ausziehen, ablegen. *unmukta* ausgezogen, abgelegt.
 
 - **RU:** — 4〉 снимать, сбрасывать. *unmukta* снятый, сброшенный.
 - **EN:** — 4) to take off, lay aside. *unmukta* taken off, laid aside.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi5)** — 5〉 verlassen.
 
 - **RU:** — 5〉 покидать.
 - **EN:** — 5) to abandon.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi6)** — 6〉 abtragen (eine Schuld).
 
 - **RU:** — 6〉 погашать (долг).
 - **EN:** — 6) to pay off (a debt).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi7)** — 7〉 entlassen, von sich geben, ausstossen, erheben (ein Geschrei). *unmukta* entlassen, — aus (im Comp. vorangehend), ausgestossen.
 
 - **RU:** — 7〉 отпускать, испускать, издавать, поднимать (крик). *unmukta* отпущенный, — из (в предшествующем Comp.), испущенный.
 - **EN:** — 7) to release, give forth, utter, raise (a cry). *unmukta* released — from (preceding in the Comp.), uttered.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vi8)** — 8〉 schleudern, — auf (Loc.)
 
 - **RU:** — 8〉 метать, — на (Loc.)
 - **EN:** — 8) to hurl — at (Loc.)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-vini-intro)** — Caus.
 
 - **RU:** — Caus.
 - **EN:** — Caus.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vini1)** — 1〉 Jmd befreien, — von (Abl.)
 
 - **RU:** — 1〉 освобождать кого-либо, — от (Abl.)
 - **EN:** — 1) to free someone — from (Abl.)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vini2)** — 2〉 lösen (das Haar).
 
 - **RU:** — 2〉 распускать (волосы).
 - **EN:** — 2) to loosen (the hair).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vini3)** — 3〉 ablösen, abnehmen.
 
 - **RU:** — 3〉 снимать, убирать.
 - **EN:** — 3) to detach, remove.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-vini-extra)** — Mit *prod*, *pronmukta* aufgelöst (Haar) [VEṆĪS. 166].
 
 - **RU:** — С *prod*, *pronmukta* распущенный (волосы) [VEṆĪS. 166].
 - **EN:** — With *prod*, *pronmukta* loosened (of hair) [VEṆĪS. 166].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-sam1)** — Mit *samud* zugleich fahren lassen, — aufgeben (den Körper, so v. a. streben). Nur *samunmukta* [KĀD. 2,14122].
 
 - **RU:** — С *samud* одновременно оставлять, — отказываться от (тела, т.е. v. a. стремиться). Только *samunmukta* [KĀD. 2,14122].
 - **EN:** — With *samud* to let go —, give up at once (the body, thus v. a. to strive). Only *samunmukta* [KĀD. 2,14122].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-sam2)** — Mit *upa* Med. sich Etwas anziehen, — anlegen.
 
 - **RU:** — С *upa* Med. надевать на себя что-либо, — облачаться.
 - **EN:** — With *upa* Med. to put something on oneself, — don it.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-sannimoc-intro)** — Mit *nis*
 
 - **RU:** — С *nis*
 - **EN:** — With *nis*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc1)** — 1〉 befreien, — von (Abl.); Pass. freigelassen werden ([SAṂHITOPAN. 8,8]), sich befreien von (Abl.) *nirmukta* befreit, Jmd (Instr.) entkommen, errettet von (Abl.), frei von (Abl. oder im Comp. vorangehend).
 
 - **RU:** — 1〉 освобождать, — от (Abl.); Pass. быть отпущенным на свободу ([SAṂHITOPAN. 8,8]), освобождаться от (Abl.) *nirmukta* освобождённый, спасшийся (Instr.), вырвавшийся из (Abl.), свободный от (Abl. или в предшествующем Comp.).
 - **EN:** — 1) to free — from (Abl.); Pass. to be set free ([SAṂHITOPAN. 8,8]), to free oneself from (Abl.) *nirmukta* freed, having escaped someone (Instr.), saved from (Abl.), free from (Abl. or preceding in the Comp.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc2)** — 2〉 lösen, aufbinden. *nirmukta* abgelöst.
 
 - **RU:** — 2〉 развязывать, распутывать. *nirmukta* отвязанный.
 - **EN:** — 2) to loosen, untie. *nirmukta* detached.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc3)** — 3〉 fahren lassen, aufgeben; nur Pass. *nirmukta*
 
 - **RU:** — 3〉 оставлять, отказываться от; только Pass. *nirmukta*
 - **EN:** — 3) to let go, give up; only Pass. *nirmukta*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc3a)** — a〉 am Anfange eines adj. Comp. aufgegeben, verloren, verschwunden, nicht mehr daseiend.
 
 - **RU:** — a〉 в начале adj. Comp. оставленный, утраченный, исчезнувший, более не существующий.
 - **EN:** — a) at the beginning of a adj. Comp., given up, lost, vanished, no longer present.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc3b)** — b〉 an Nichts hängend.
 
 - **RU:** — b〉 ни к чему не привязанный.
 - **EN:** — b) hanging from nothing.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc4)** — 4〉 schleudern; nur *nirmukta* geschleudert.
 
 - **RU:** — 4〉 метать; только *nirmukta* брошенный.
 - **EN:** — 4) to hurl; only *nirmukta* hurled.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc5)** — 5〉 Pass.
 
 - **RU:** — 5〉 Pass.
 - **EN:** — 5) Pass.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc5a)** — a〉 sich von seiner Haut befreien, sich häuten (von einer Schlange). *nirmukta* sich vor Kurzen gehäutet habend.
 
 - **RU:** — a〉 сбрасывать кожу, линять (о змее). *nirmukta* недавно сбросивший кожу.
 - **EN:** — a) to free oneself from one's skin, to slough (of a snake). *nirmukta* having recently sloughed its skin.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **smc5b)** — b〉 verlustig gehen, kommen um (Instr.). *˚nirmukta* ermangelnd. Ohne Ergänzung aller Habe entbehrend, Nichts besitzend. — *nirmukta* auch fehlerhaft für *nirmukta*.
 
 - **RU:** — b〉 лишаться, утрачивать (Instr.). *˚nirmukta* лишённый. Без дополнения лишённый всего имущества, ничего не имеющий. — *nirmukta* также ошибочно вместо *nirmukta*.
 - **EN:** — b) to forfeit, lose (Instr.). *˚nirmukta* lacking. Without complement: destitute of all possessions, owning nothing. — *nirmukta* also erroneously for *nirmukta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-extra1)** — Caus. befreien von (Abl.) einlösen (ein Pfand) von Jmd (Abl.) [VIṢṆUS. 5,181] (zu lesen *tasmādani˚*).
 
 - **RU:** — Caus. освобождать от (Abl.), выкупать (залог) у кого-либо (Abl.) [VIṢṆUS. 5,181] (читать *tasmādani˚*).
 - **EN:** — Caus. to free from (Abl.) to redeem (a pledge) from someone (Abl.) [VIṢṆUS. 5,181] (to be read *tasmādani˚*).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-extra2)** — Desid. in *nirmokṣa*.
 
 - **RU:** — Desid. в *nirmokṣa*.
 - **EN:** — Desid. in *nirmokṣa*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-extra3)** — Mit *adhinis* Pass. sich befreien von (Abl.).
 
 - **RU:** — С *adhinis* Pass. освобождаться от (Abl.).
 - **EN:** — With *adhinis* Pass. to free oneself from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-extra4)** — Mit *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) und sonst oft fehlerhaft für *abhinirmrukta*.
 
 - **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вместо *abhinirmrukta*.
 - **EN:** — With *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) and elsewhere often erroneously for *abhinirmrukta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-vyut-intro)** — Mit *vinis*
 
 - **RU:** — С *vinis*
 - **EN:** — With *vinis*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vy1)** — 1〉 pass. sich befreien, sich losmachen von (Instr.) *vinirmukta* davongekommen, entronnen, sich befreit habend —, frei von (Abl., Instr. oder im Comp. vorangehend).
 
 - **RU:** — 1〉 pass. освобождаться, вырываться от (Instr.) *vinirmukta* спасшийся, вырвавшийся, освободившийся, — свободный от (Abl., Instr. или в предшествующем Comp.).
 - **EN:** — 1) pass. to free oneself, become released from (Instr.) *vinirmukta* having escaped, got away, freed oneself — from (Abl., Instr. or preceding in the Comp.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vy2)** — 2〉 fahrenlassen, aufgeben. *kalevaram* den Körper, so v. a. sterben.
 
 - **RU:** — 2〉 оставлять, отказываться от. *kalevaram* тело, т.е. v. a. умирать.
 - **EN:** — 2) to let go, give up. *kalevaram* the body, i.e. v. a. to die.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **vy3)** — 3〉 schleudern; nur *vinirmukta* geschleudert.
 
 - **RU:** — 3〉 метать; только *vinirmukta* метнутый.
 - **EN:** — 3) to hurl; only *vinirmukta* hurled.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **compound-sammoc-intro)** — Mit *pari*
 
 - **RU:** — С *pari*
 - **EN:** — With *pari*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **sm1)** — 1〉 befreien, — von (Abl.) Med. Pass. sich befreien —, sich losmachen von (Abl., Gen. oder Instr.). *parimukta* befreit, — von (im Comp. vorangehend).
 
 - **RU:** — 1〉 освобождать, — от (Abl.) Med. Pass. освобождаться, — вырываться от (Abl., Gen. или Instr.). *parimukta* освобождённый, — от (в предшествующем Comp.).
 - **EN:** — 1) to free — from (Abl.) Med. Pass. to free oneself —, become released from (Abl., Gen. or Instr.). *parimukta* freed — from (preceding in the Comp.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **sm2)** — 2〉 lösen, ablösen, abnehmen. — *parimukta* abgegeben.
 
 - **RU:** — 2〉 развязывать, отделять, снимать. — *parimukta* переданный.
 - **EN:** — 2) to loosen, detach, remove. — *parimukta* delivered, handed over.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **sm3)** — 3〉 verlassen, fahren lassen, aufgeben.
 
 - **RU:** — 3〉 покидать, оставлять, отказываться от.
 - **EN:** — 3) to abandon, let go, give up.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **sm4)** — 4〉 aus sich entlassen, von sich geben.
 
 - **RU:** — 4〉 испускать, давать от себя.
 - **EN:** — 4) to release from oneself, give forth.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **sm5)** — 5〉 pass. von den Banden der Welt erlöst werden.
 
 - **RU:** — 5〉 pass. быть избавленным от уз мирского существования.
 - **EN:** — 5) pass. to be released from the bonds of the world.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -3484,414 +3484,414 @@ the bonds of the world)
 
 - **RU:** — Caus. *parimocita* спасённый, освобождённый [VAJRACCH. 42,9. fgg.] Desid. в *parimokṣa*.
 - **EN:** — Caus. *parimocita* rescued, redeemed [VAJRACCH. 42,9. fgg.] Desid. in *parimokṣa*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Mit *vipari* pass. sich befreien von (Abl.).
 
 - **RU:** — С *vipari* pass. освобождаться от (Abl.).
 - **EN:** — With *vipari* pass. to free oneself from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Mit *pra*
 
 - **RU:** — С *pra*
 - **EN:** — With *pra*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.1)** — 1〉 freilassen, laufen lassen, befreien von (Abl.); Pass. sich befreien von (Abl. oder Instr.) [GAUT.] *pramucya* sich befreiend von (Abl.), *pramukta* befreit von (Abl. oder Instr.)
 
 - **RU:** — 1〉 отпускать на свободу, давать уйти, освобождать от (Abl.); Pass. освобождаться от (Abl. или Instr.) [GAUT.] *pramucya* освобождаясь от (Abl.), *pramukta* освобождённый от (Abl. или Instr.)
 - **EN:** — 1) to set free, let loose, liberate from (Abl.); Pass. to free oneself from (Abl. or Instr.) [GAUT.] *pramucya* freeing oneself from (Abl.), *pramukta* freed from (Abl. or Instr.)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.2)** — 2〉 auflösen, aufknüpfen, aufbinden, ablösen; Pass. sich auflösen, sich ablösen, abfallen (von Früchten), — von (Abl.).
 
 - **RU:** — 2〉 развязывать, распутывать, отвязывать, отделять; Pass. развязываться, отделяться, опадать (о плодах), — от (Abl.).
 - **EN:** — 2) to loosen, untie, undo, detach; Pass. to come loose, come off, fall off (of fruits) — from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.3)** — 3〉 verscheuchen, von sich abschütteln.
 
 - **RU:** — 3〉 отгонять, отряхивать от себя.
 - **EN:** — 3) to drive away, shake off.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.4)** — 4〉 Jmd im Stich lassen; nur *pramukta* im Stich gelassen.
 
 - **RU:** — 4〉 бросать кого-л. в беде; только *pramukta* брошенный в беде.
 - **EN:** — 4) to abandon someone; only *pramukta* "abandoned".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.5)** — 5〉 Etwas fahren lassen, aufgeben. *pramukta* aufgegeben.
 
 - **RU:** — 5〉 Отказываться от чего-л., оставлять. *pramukta* оставленный, покинутый.
 - **EN:** — 5) to let something go, give it up. *pramukta* "given up".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.6)** — 6〉 aus sich entlassen, von sich geben, ausstossen. *āśūṇi* Thränen vergiessen [KĀRAṆḌ. 70,4]. *pramukta* von sich gegeben, ausgestossen; vergossen (Thränen [KĀRAṆḌ. 70,2]).
 
 - **RU:** — 6〉 испускать, извергать, выбрасывать. *āśūṇi* проливать слёзы [KĀRAṆḌ. 70,4]. *pramukta* испущенный, выброшенный; пролитый (слёзы [KĀRAṆḌ. 70,2]).
 - **EN:** — 6) to emit, give forth, expel from oneself. *āśūṇi* to shed tears [KĀRAṆḌ. 70,4]. *pramukta* "given forth, expelled; shed" (tears [KĀRAṆḌ. 70,2]).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.7)** — 7〉 schleudern, abschiessen. *pramukta* geschleudert, abgeschossen.
 
 - **RU:** — 7〉 метать, пускать, выпускать (стрелу). *pramukta* брошенный, выпущенный.
 - **EN:** — 7) to hurl, shoot off. *pramukta* "hurled, shot off".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.8)** — 8〉 verleihen, schenken.
 
 - **RU:** — 8〉 даровать, жаловать.
 - **EN:** — 8) to bestow, grant.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3.9)** — 9〉 Pass. nachlassen, aufhören.
 
 - **RU:** — 9〉 Pass. ослабевать, прекращаться.
 - **EN:** — 9) Pass. to abate, cease.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Caus.
 
 - **RU:** — Caus.
 - **EN:** — Caus.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **4.1)** — 1〉 befreien von (Abl.).
 
 - **RU:** — 1〉 освобождать от (Abl.).
 - **EN:** — 1) to free from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **4.2)** — 2〉 auflösen, aufbinden.
 
 - **RU:** — 2〉 развязывать, распутывать.
 - **EN:** — 2) to loosen, untie.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Desid. *pramumukṣāta* aufzugeben —, fahren zu lassen im Begriff stehen.
 
 - **RU:** — Desid. *pramumukṣāta* намеревающийся оставить —, отказаться.
 - **EN:** — Desid. *pramumukṣāta* "being about to give up — to let go".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Mit *anupra* nach einander loslassen.
 
 - **RU:** — С *anupra* отпускать поочерёдно.
 - **EN:** — With *anupra* "to release one after another".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — Mit *paripra* Med. sich losmachen von (Abl.).
 
 - **RU:** — С *paripra* Med. освобождаться от (Abl.).
 - **EN:** — With *paripra* Med. "to free oneself from" (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — Mit *pratipra* ein Kalb zulassen zur Mutter.
 
 - **RU:** — С *pratipra* подпускать телёнка к матери.
 - **EN:** — With *pratipra*, of a calf, "to admit to its mother".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — Mit *vipra*
 
 - **RU:** — С *vipra*
 - **EN:** — With *vipra*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9.1)** — 1〉 befreien; Pass. sich befreien von (Abl.) frei ausgehen, nicht bestraft werden [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* befreit —, frei von (Instr. oder im Comp. vorangehend.)
 
 - **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобождённый —, свободный от (Instr. или в Comp. предшествующем.)
 - **EN:** — 1) to free; Pass. "to free oneself from" (Abl.), "to come off free, go unpunished" [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* "freed —, free from" (Instr. or in the Comp. preceding).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9.2)** — 2〉 ablösen, abnehmen.
 
 - **RU:** — 2〉 снимать, отнимать.
 - **EN:** — 2) to detach, take off.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9.3)** — 3〉 verscheuchen. — Nur *vipramukta* am Anfange eines adj. Comp. verscheucht, so v. a. nicht vorhanden.
 
 - **RU:** — 3〉 отгонять. — Только *vipramukta* в начале adj. Comp. отогнанный, так v. a. отсутствующий.
 - **EN:** — 3) to drive away. — Only *vipramukta* at the beginning of a adj. Comp. "driven away", i.e. v. a. "not present".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **9.4)** — 4〉 schleudern, abschiessen. *vipramukta* abgeschossen.
 
 - **RU:** — 4〉 метать, выпускать. *vipramukta* выпущенный.
 - **EN:** — 4) to hurl, shoot off. *vipramukta* "shot off".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — Mit *saṃpra* vollständig lösen. Pass. sich befreien von (Abl.) [GOP. BR. 2,1,21]. *saṃpramucya* sich befreiend von (Abl.)
 
 - **RU:** — С *saṃpra* полностью освобождать. Pass. освобождаться от (Abl.) [GOP. BR. 2,1,21]. *saṃpramucya* освобождаясь от (Abl.)
 - **EN:** — With *saṃpra* "to loosen completely". Pass. "to free oneself from" (Abl.) [GOP. BR. 2,1,21]. *saṃpramucya* "freeing oneself from" (Abl.)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — Mit *prati*
 
 - **RU:** — С *prati*
 - **EN:** — With *prati*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.1)** — 1〉 Jmdm (Dat., Loc. oder Gen.) Etwas anziehen, anlegen; Med. (später auch Act.) sich anziegen, anlegen; annehmen (eine Gestalt u. s. w.). sich (sibi) setzen auf (Loc.). *pratimukta* aufgetragen (Salbe) auf (Loc.).
 
 - **RU:** — 1〉 надевать, облачать кого-л. (Dat., Loc. или Gen.) во что-л.; Med. (позднее также Act.) надевать на себя, облачаться; принимать (облик u. s. w.). садиться (sibi) на (Loc.). *pratimukta* нанесённый (мазь) на (Loc.).
 - **EN:** — 1) to put something on someone (Dat., Loc. or Gen.), to dress them in it; Med. (later also Act.) "to put on oneself, dress; to assume" (a form u. s. w.); "to set (sibi) upon oneself" (Loc.). *pratimukta* "applied" (an ointment) "to" (Loc.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.2)** — 2〉 Jmd (Loc.) Etwas anhängen, so v. a. anthun.
 
 - **RU:** — 2〉 навешивать на кого-л. (Loc.) что-л., так v. a. причинять.
 - **EN:** — 2) to attach something to someone (Loc.), thus v. a. "to inflict".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.3)** — 3〉 befestigen, anbinden an (Loc.). *pratimikta* gebunden.
 
 - **RU:** — 3〉 прикреплять, привязывать к (Loc.). *pratimikta* привязанный.
 - **EN:** — 3) to fasten, tie to (Loc.). *pratimikta* "bound".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.4)** — 4〉 freilassen, entlassen; Pass. sich befreien von (Abl.) und gefreien (!) *pratimukta* freigelassen, befreit von (Abl.).
 
 - **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от (Abl.) и быть освобождённым (!); *pratimukta* отпущенный на свободу, освобождённый от (Abl.).
 - **EN:** — 4) to set free, release; Pass. "to free oneself from" (Abl.) and "to be freed (!)". *pratimukta* "set free, freed from" (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.5)** — 5〉 Etwas fahren lassen, aufgeben. *pratimukta* aufgegeben.
 
 - **RU:** — 5〉 отказываться от чего-л., оставлять. *pratimukta* оставленный.
 - **EN:** — 5) to let something go, give it up. *pratimukta* "given up".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.6)** — 6〉 abtragen (eine Schuld).
 
 - **RU:** — 6〉 погашать (долг).
 - **EN:** — 6) to discharge (a debt).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **11.7)** — 7〉 werfen, schleudern, — auf (Loc.). *pratimikta* geschleudert.
 
 - **RU:** — 7〉 бросать, метать, — на (Loc.). *pratimikta* брошенный.
 - **EN:** — 7) to throw, hurl — at (Loc.). *pratimikta* "hurled".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — Caus. befreien, erretten.
 
 - **RU:** — Caus. освобождать, спасать.
 - **EN:** — Caus. "to free, rescue".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — Desid. in *pratimokṣa*.
 
 - **RU:** — Desid. в *pratimokṣa*.
 - **EN:** — Desid. in *pratimokṣa*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — Mit *saṃprati*, *˚mukta* gebunden, gefesselt.
 
 - **RU:** — С *saṃprati*, *˚mukta* связанный, скованный.
 - **EN:** — With *saṃprati*, *˚mukta* "bound, fettered".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — Mit *vi*
 
 - **RU:** — С *vi*
 - **EN:** — With *vi*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.1)** — 1〉 ablösen, losbinden, abspannen; Med. an sich oder für sich ablösen. (z. B. die eigenen Pferde abspannen); Med. Pass. sich lösen (auch mit *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), abgehen (von einer Leibesfrucht). *vimukta* ledig, nicht angespannt; aufgebunden, aufgelöst (Haar).
 
 - **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (z. B. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряжённый; развязанный, распущенный (волосы).
 - **EN:** — 1) to detach, untie, unharness; Med. "to detach for oneself" or "on one's own account". (z. B., of one's own horses, "to unharness"); Med. Pass. "to come loose" (also with *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), "to come away" (of an unborn fetus). *vimukta* "free, unharnessed; untied, loosened" (hair).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.2)** — 2〉 Act. Med. abspannen, so v. a. Halt machen, einkehren.
 
 - **RU:** — 2〉 Act. Med. распрягать, так v. a. делать привал, останавливаться на ночлег.
 - **EN:** — 2) Act. Med. "to unharness", thus v. a. "to stop, put up (for the night)".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.3)** — 3〉 ablegen (Kleider, Schmucksachen u. s. w.); ausnahmsweise Med.
 
 - **RU:** — 3〉 снимать (одежду, украшения u. s. w.); исключительно Med.
 - **EN:** — 3) to take off, lay aside (clothes, ornaments u. s. w.); exceptionally Med.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.4)** — 4〉 freigeben, laufen lassen, befreien; Pass. sich von Jmd (Abl.) befreien, sich Jmds Gewalt entziehen; Jmd (Gen.) entkommen; sich befreien —, befreit werden von (Abl., _Adv._ auf *tas* oder Instr.). Ohne Ergänzung frei kommen, erlöst werden, insbes. _n._ von den Banden der Welt. *vimukta* befreit —, frei von (Abl. Instr. oder im Comp. vorangehend), entkommen aus (Abl.). Ohne Ergänzung frei —, flott gemacht (Schiff); erlöst, insbes. von den Banden der Welt.
 
 - **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от кого-л. (Abl.), избавляться от власти кого-л.; ускользать от кого-л. (Gen.); освобождаться —, быть освобождённым от (Abl., _Adv._ на *tas* или Instr.). Без дополнения: выходить на свободу, обретать спасение, insbes. _n._ от уз мира. *vimukta* освобождённый —, свободный от (Abl. Instr. или в Comp. предшествующем), спасшийся из (Abl.). Без дополнения: освобождённый, снятый с мели (корабль); спасённый, insbes. от уз мира.
 - **EN:** — 4) to set free, let loose, liberate; Pass. "to free oneself from someone" (Abl.), "to withdraw from someone's power; to escape someone" (Gen.); "to free oneself from —, be freed from" (Abl., _Adv._ referring to *tas* or Instr.). Without complement "to come free, be redeemed", insbes. _n._ "from the bonds of the world". *vimukta* "freed —, free from" (Abl. Instr. or in the Comp. preceding), "escaped from" (Abl.). Without complement "free —, set afloat" (of a ship); "redeemed", insbes. "from the bonds of the world".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.5)** — 5〉 einen Ort verlassen.
 
 - **RU:** — 5〉 покидать какое-л. место.
 - **EN:** — 5) to leave a place.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.6)** — 6〉 Jmd oder Etwas fahren lassen, Jmd im sich lassen ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), aufgeben. *prāṇān* die Lebensgeister fahren lassen, so v. a. sterben. *vimukta* im Stich gelassen von (im Comp. vorangehend), fahren gelassen, aufgegeben (insbes. am Anfange eines adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
 
 - **RU:** — 6〉 бросать кого-л. или что-л., оставлять кого-л. на произвол судьбы ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), отказываться. *prāṇān* испустить жизненные силы, так v. a. умирать. *vimukta* брошенный, покинутый (в Comp. предшествующем), оставленный, покинутый (insbes. в начале adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
 - **EN:** — 6) to let go of someone or something, to abandon someone ([Spr. 7709](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7709)), to give up. *prāṇān* "to let go of the vital spirits", thus v. a. "to die". *vimukta* "abandoned by" (in the Comp. preceding), "let go, given up" (insbes. at the beginning of a adj. Comp. [120,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120)).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.7)** — 7〉 aufgeben, vermeiden.
 
 - **RU:** — 7〉 отказываться, избегать.
 - **EN:** — 7) to give up, avoid.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.8)** — 8〉 verlieren. *saṃjñām* das Bewusstsein.
 
 - **RU:** — 8〉 терять. *saṃjñām* сознание.
 - **EN:** — 8) to lose. *saṃjñām* "consciousness".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.9)** — 9〉 erlassen, verzeihen.
 
 - **RU:** — 9〉 прощать, извинять.
 - **EN:** — 9) to remit, forgive.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.10)** — 10〉 aus sich entlassen, von sich geben, ausstossen (Laute u. s. w.). *grastam* einen verschluckten (verfinsterten) Himmelskörper wieder von sich geben, so v. a. von, so v. a. sich ergiessend aus (im Comp. vorangehend [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
 
 - **RU:** — 10〉 испускать, издавать, выбрасывать (звуки u. s. w.). *grastam* снова выпускать проглоченное (затемнённое) небесное тело, так v. a. от, так v. a. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
 - **EN:** — 10) to emit, give forth, utter (sounds u. s. w.). *grastam* "to release again a swallowed (eclipsed)" heavenly body, thus v. a. "from", thus v. a. "pouring forth from" (in the Comp. preceding [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.11)** — 11〉 werfen, schleudern, abschiessen, — auf (Loc.). *ātmānam* sich stürzen in (Loc.). *vimukta* geworfen, geschleudert.
 
 - **RU:** — 11〉 бросать, метать, выпускать, — на (Loc.). *ātmānam* бросаться в (Loc.). *vimukta* брошенный, пущенный.
 - **EN:** — 11) to throw, hurl, shoot off — at (Loc.). *ātmānam* "to plunge into" (Loc.). *vimukta* "thrown, hurled".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.12)** — 12〉 gelangen lassen zu (Loc.), verleihen.
 
 - **RU:** — 12〉 доставлять к (Loc.), даровать.
 - **EN:** — 12) to cause to reach (Loc.), to bestow.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.13)** — 13〉 annehmen (eine Gestalt).
 
 - **RU:** — 13〉 принимать (облик).
 - **EN:** — 13) to assume (a form).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.14)** — 14〉 Act. mit *na* nicht ablassen, nicht ruhen (von Pferden).
 
 - **RU:** — 14〉 Act. с *na* не успокаиваться, не давать покоя (о лошадях).
 - **EN:** — 14) Act. with *na* "not to let up, not to rest" (of horses).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.15)** — 15〉 Pass. verlustig gehen Jmds (Instr.). *praṇais* des Lebens [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* gekommen um (Instr.), verlustig gegangen.
 
 - **RU:** — 15〉 Pass. лишаться кого-л. (Instr.). *praṇais* жизни [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* лишившийся (Instr.), утративший.
 - **EN:** — 15) Pass. "to forfeit someone/something" (Instr.). *praṇais* "of life" [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* "deprived of" (Instr.), "forfeited".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.16)** — 16〉 *vimukta*
 
 - **RU:** — 16〉 *vimukta*
 - **EN:** — 16) *vimukta*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.16.a)** — a〉 sich vor Kurzem gehäutet habend.
 
 - **RU:** — a〉 только что сбросивший кожу.
 - **EN:** — a) having recently sloughed its skin.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.16.b)** — b〉 frei von aller Leidenschaft.
 
 - **RU:** — b〉 свободный от всякой страсти.
 - **EN:** — b) free of all passion.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.16.c)** — c〉 am Anfange eines adj. Comp. gewichen. *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
 
 - **RU:** — c〉 в начале adj. Comp. отступивший, рассеявшийся. *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
 - **EN:** — c) at the beginning of a adj. Comp., "departed, gone". *vimuktaśāpa* [108,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?108) = *śāpavimukta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **15.16.d)** — d〉 verbunden mit (im Comp. vorangehend).
 
 - **RU:** — d〉 связанный с (в Comp. предшествующем).
 - **EN:** — d) connected with (in the Comp. preceding).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — Caus.
 
 - **RU:** — Caus.
 - **EN:** — Caus.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **16.1)** — 1〉 ablösen, abspannen.
 
 - **RU:** — 1〉 снимать, распрягать.
 - **EN:** — 1) to detach, unharness.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **16.2)** — 2〉 befreien, — von (Abl.).
 
 - **RU:** — 2〉 освобождать, — от (Abl.).
 - **EN:** — 2) to free — from (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **16.3)** — 3〉 von sich abhalten.
 
 - **RU:** — 3〉 отстранять от себя.
 - **EN:** — 3) to keep away from oneself.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **17)** — Desid. *vimumukṣati* zu befreien im Begriff stehen, Med. sich zu befreien wünschen. Vgl. *vimokṣa*.
 
 - **RU:** — Desid. *vimumukṣati* намереваться освободить, Med. желать освободиться. Vgl. *vimokṣa*.
 - **EN:** — Desid. *vimumukṣati* "being about to free", Med. "wishing to free oneself". Vgl. *vimokṣa*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **18)** — Mit *pravi*
 
 - **RU:** — С *pravi*
 - **EN:** — With *pravi*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **18.1)** — 1〉 Jmd entlassen.
 
 - **RU:** — 1〉 отпускать кого-л..
 - **EN:** — 1) to dismiss someone.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **18.2)** — 2〉 Etwas loslassen, fahren lassen, aufgeben.
 
 - **RU:** — 2〉 отпускать что-л., бросать, отказываться.
 - **EN:** — 2) to let something go, release it, give it up.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **18.3)** — 3〉 Pass. sich befreien von (Abl.).
 
 - **RU:** — 3〉 Pass. освобождаться от (Abl.).
 - **EN:** — 3) Pass. "to free oneself from" (Abl.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **19)** — Mit *sam* aus sich entlassen, von sich geben, vergiessen (Thränen).
 
 - **RU:** — С *sam* испускать, извергать, проливать (слёзы).
 - **EN:** — With *sam* "to emit, give forth, shed" (tears).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **20)** — Caus. befreien.
 
 - **RU:** — Caus. освобождать.
 - **EN:** — Caus. "to free".
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-ud-intro)** — Caus.
 
 - **RU:** — Caus.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -3903,66 +3903,66 @@ the bonds of the world)
 - **RU:** — 1〉 _Adj._ в конце Comp.
 - **EN:** **2.** *muc*
 — 1) _Adj._ at the end of a Comp.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** — a〉 befreiend von.
 
 - **RU:** — a〉 освобождающий от.
 - **EN:** — a) freeing from, liberating from.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b〉 entlassend, von sich gebend, ausströmend.
 
 - **RU:** — b〉 испускающий, изливающий, выпускающий.
 - **EN:** — b) discharging, giving forth, emitting, pouring out.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c〉 schleudernd.
 
 - **RU:** — c〉 мечущий, пускающий.
 - **EN:** — c) hurling, casting, flinging.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 _f._ Befreiung in *āmuc*.
 
 - **RU:** — 2〉 _f._ освобождение в *āmuc*.
 - **EN:** — 2) _f._ liberation, release, in *āmuc*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **3.** *√*muc*¦ *mocate* *kalkane*.
 
 - **RU:** **3.** *√*muc*¦ *mocate* *kalkane*.
 - **EN:** 3. *√*muc* *mocate* *kalkane*.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **1)** **1.** √*muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
 
 - **RU:** **1.** √*muc*¦ V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
 - **EN:** 1. √*muc* V. 12) someone (Gen.) escapes, slips away from [JĀTAKAM. 20]. [21,11]. [22].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47].
 
 - **RU:** — С *pra* также освобождаться от (Gen.), избегать [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* свободный от (Abl.) [MAHĀVY. 19,47].
 - **EN:** — With *pra* also: to free oneself from (Gen.), to escape [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta*: free from (Abl.) [MAHĀVY. 19,47].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Mit *vi*, *˚mukta* Jmd (Gen.) entkommen [JĀTAKAM. 21]. [23].
 
 - **RU:** — С *vi*, *˚mukta* спасаться от кого-л. (Gen.) [JĀTAKAM. 21]. [23].
 - **EN:** — With *vi*, *˚mukta*: someone (Gen.) gets away, escapes [JĀTAKAM. 21]. [23].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Mit *pratisam*, *˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
 - **RU:** — С *pratisam*, *˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 - **EN:** — With *pratisam*, *˚saṃmukta*: released, freed from a painful state/condition [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** **2.** *muc*¦
 
 - **RU:** **2.** *muc*¦
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -3975,22 +3975,22 @@ the bonds of the world)
 **12-main)** 1. muc¦ 12. jemand (Gen.) entwischen, [Jātakam. 20; 21,11; 22.]
 
 - **RU:** 1. muc¦ 12. ускользать от кого-л. (Gen.), [Jātakam. 20; 21,11; 22.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-pra)** Mit pra auch: sich losmachen von (Gen.), entgehen, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta frei von (Abl.), [Mahāvy. 19,47.]
 
 - **RU:** С pra также: освобождаться от (Gen.), избегать, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta свободный от (Abl.), [Mahāvy. 19,47.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-vi)** Mit vi, ˚mukta jemand (Gen.) entkommen, [Jātakam. 21. 23.]
 
 - **RU:** С vi, ˚mukta спасаться от кого-л. (Gen.), [Jātakam. 21. 23.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-pratisam)** Mit pratisam, ˚saṃmukta erlöst, von einem peinlichen Zustande befreit, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5)
 
 - **RU:** С pratisam, ˚saṃmukta освобождённый, избавленный от мучительного состояния, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 ## muc
 
@@ -4003,19 +4003,19 @@ the bonds of the world)
 **V-12)** **1.** *muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
 
 - **RU:** **1.** *muc*¦ V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-vi)** Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47].
 
 - **RU:** С *pra* также освобождаться от (Gen.), избегать [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* свободный от (Abl.) [MAHĀVY. 19,47].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-vipra)** Mit *vi, ˚mukta* Jmd (Gen.) entkommen [JĀTAKAM. 21]. [23].
 
 - **RU:** С *vi, ˚mukta* спасаться от кого-л. (Gen.) [JĀTAKAM. 21]. [23].
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **mit-pratisam)** Mit *pratisam, ˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
 - **RU:** С *pratisam, ˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

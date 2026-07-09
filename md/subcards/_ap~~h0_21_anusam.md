@@ -10,4 +10,4 @@
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26) Vgl. *anusamāpana* .
 - **EN:** — *anusam* caus. to complete in addition, subsequently bring about: *tamupetya śeṣamanusamāpayeyuḥ*
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26) Vgl. *anusamāpana* .
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>

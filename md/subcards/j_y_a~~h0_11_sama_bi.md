@@ -10,4 +10,4 @@
 [MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945)
 - **EN:** — *samabhi* to recognize: *indrasenāṃ saha bhrātrā samabhijñāya*
 [MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

@@ -31,7 +31,7 @@
 [MBH. 14,1921.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1921) [12,9769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9769) *āsanaṃ cāsya — vyādideśa*
 [R. 1,52,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,2) *bhartā tu mama yadyeva lokanāthasya bhāryayā vyādiṣṭaḥ*
 [HARIV. 9960.](https://sanskrit-lexicon-scans.github.io/hariv?9960)
-  <sub>DCS 72 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anweisen, anzeigen: *vyādiśa me deśaṃ sodakam*
 [R. 3,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,12)
@@ -40,7 +40,7 @@
 [R. 3,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,12)
 - **EN:** — 2) to instruct, indicate: *vyādiśa me deśaṃ sodakam*
 [R. 3,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,12)
-  <sub>DCS 72 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anweisen, auseinandersetzen, lehren: *karmakāṇḍavyādiṣṭapaddhati (yajñavidyā)*
 [PRAB. 107,5.]
@@ -49,7 +49,7 @@
 [PRAB. 107,5.]
 - **EN:** — 3) to instruct, expound, teach: *karmakāṇḍavyādiṣṭapaddhati (yajñavidyā)*
 [PRAB. 107,5.]
-  <sub>DCS 72 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) die Weisung geben, vorschreiben, anbefehlen; Jmd (acc.) anweisen, einen Befehl, — Auftrag ertheilen, abordnen: *yadvyādiśetkāryam*
 [R. 2,21,58.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,58) *vyādiśya*
@@ -106,7 +106,7 @@
 [R. 1,17,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,30) (GORR. [19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,19)). *vyādideśa raṇe śūrānanyān*
 [HARIV. 10139](https://sanskrit-lexicon-scans.github.io/hariv?10139) (p. 791). *vyādideśātha pūrvasyāṃ prahastaṃ dvāri rākṣasam*
 [R. 6,12,17. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,17)
-  <sub>DCS 72 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) von Jmd (acc.) aussagen, vorhersagen: *iyam — kenāpi — matsakṣaṃ vyādiṣṭā* (v. l. *ādiṣṭā) . vatsaramātramiyaṃ preṣyabhāvamanubhūya tataḥ sadṛśabhartṛgāminī bhaviṣyati*
 [MĀLAV. 69,13. fgg.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?69,13); vgl. u. *samā*
@@ -118,4 +118,4 @@
 - **EN:** — 5) to state, predict of someone (acc.): *iyam — kenāpi — matsakṣaṃ vyādiṣṭā* (v. l. *ādiṣṭā) . vatsaramātramiyaṃ preṣyabhāvamanubhūya tataḥ sadṛśabhartṛgāminī bhaviṣyati*
 [MĀLAV. 69,13. fgg.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?69,13); vgl. u. *samā*
 [3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?3)
-  <sub>DCS 72 · attested</sub>
+  <sub>attested</sub>

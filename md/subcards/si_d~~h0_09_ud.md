@@ -10,10 +10,10 @@
 [PAÑCAV. BR. 15,9,11. 19,7,4.]
 - **EN:** — *ud* {to drive aside}: *paśūn*
 [PAÑCAV. BR. 15,9,11. 19,7,4.]
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *utsedha* .
 
 - **RU:** — Vgl. *utsedha* .
 - **EN:** — Vgl. *utsedha* .
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [VS. 20,41.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,41)
 [ṚV. 2,3,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.06) *tardmasamuta* "pegged together with pins"
 [ŚAT. BR. 3,2,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,2)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

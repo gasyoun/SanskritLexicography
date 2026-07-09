@@ -10,4 +10,4 @@
 [R. GORR. 2,32,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,6)
 - **EN:** — *abhipra* caus. to urge, impel
 [R. GORR. 2,32,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,6)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

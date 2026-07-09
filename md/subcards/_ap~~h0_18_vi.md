@@ -52,7 +52,7 @@
 [M. 12,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,14) [24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,24)
 [ŚĀK. 1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?1) *vyāpyamāna*
 [P. 3,4,56.](https://ashtadhyayi.com/sutraani/3/4/56)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) reichen bis *(ā): tattu syādāprapadīnaṃ vyāpnotyāprapadaṃ hi yat (prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
@@ -64,7 +64,7 @@
 - **EN:** — 2) to reach as far as *(ā): tattu syādāprapadīnaṃ vyāpnotyāprapadaṃ hi yat (prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
 [AK. 2,6,3,21](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,21)) [H. 678.](https://sanskrit-lexicon-scans.github.io/abch2/app1?678) — partic. *vyāpta*
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1)** 1) durchdrungen, erfüllt, angefüllt
 [H. 1473.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1473) *tasyāvayavabhūtaistu vyāptaṃ sarvamidaṃ jagat*
@@ -97,7 +97,7 @@
 [171,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?171,1) *samiccaṣālacamasavyāptā gṛhā yajvanām*
 [PRAB. 44,8.] *(āpaḥ) avyāptāścedamedhyena*
 [M. 5,128.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,128)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.2)** — 2) eingenommen, in Besitz genommen: *vṛtreṇa pṛthivī vyāptā purā kila*
 [MBH. 14,299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.299) *vyāpte jyotiṣi vṛtreṇa rūpe 'tha viṣaye hṛte*
@@ -124,7 +124,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [PAÑCAT. 227,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?227,11) *kiṃ vyāptaṃ kimapohitam*
 [PRAB. 116,7.]
 Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.3)** — 3) in Besitz gelangt, befriedigt: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
@@ -133,4 +133,4 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
 - **EN:** — 3) come into possession of, satisfied: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>

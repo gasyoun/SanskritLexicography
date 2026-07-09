@@ -8,4 +8,4 @@
 
 - **RU:** — *anvā* med. забирать обратно, брать назад: *anvā 'ahaṃ tāṃ dāsye*
 [ŚAT. BR. 2,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,16)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

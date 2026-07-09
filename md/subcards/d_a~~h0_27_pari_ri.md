@@ -8,4 +8,4 @@
 
 - **RU:** — *pariṇi*, *˚dadāti*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

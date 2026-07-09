@@ -22,4 +22,4 @@
 [11,4,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.10) [13,3,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.003.html#av13.003.11) to clothe oneself
 [ŚĀṄKH. BR. 25,15.]
 [PĀR. GṚHY. 3,4.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

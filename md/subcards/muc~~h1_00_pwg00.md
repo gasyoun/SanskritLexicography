@@ -45,7 +45,7 @@
 - **EN:** *muc* (= 1. *muc)* nom. ag. at the end of a comp. "freeing someone from": *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [10.] entlassend, von sich gebend, schleudernd: *śramaphena˚ (turaṃgama)*
 [RAGH. 9,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,72) *sveda˚ (payodharayuga)*

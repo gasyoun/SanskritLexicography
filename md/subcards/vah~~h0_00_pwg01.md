@@ -67,7 +67,7 @@
 [VARĀH. BṚH. S. 54,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,6) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,19) [21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,36) [39.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,39) [66.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,66) [71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,71) [73.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,73) *asraughaṃ muhurūhatuḥ* let a stream of tears flow
 [BHĀG. P. 4,9,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,48) *(śiraḥ) vavāha (!) raktam*
 [MĀRK. P. 88,45.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?88,45)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) wehen (dahinfahren vom Winde): *mandaṃ vahati mārutaḥ*
 [R. 3,78,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,78,13)
@@ -85,7 +85,7 @@
 [Spr. 3137.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3137)
 [GĪT. 5,2.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,2)
 [SĀH. D. 19,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?19,18)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) heimführen, heirathen; med.: *janīḥ*
 [ṚV. 1,167,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.07) [5,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.03) *ya īṃ vahāte ya īṃ vā vareyāt*
@@ -142,7 +142,7 @@
 [H. 526.](https://sanskrit-lexicon-scans.github.io/abch2/app1?526) *ūḍhātprabhṛti* since the marriage (of a woman)
 [MBH. 5,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2961) The form *voḍha* (vgl. *soḍha*) in the passage: *idaṃ bhāryāśatam — putrārthinā mayā voḍham* (*coḍham?*)
 [MBH. 3,10482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10482)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) mit sich —, bei sich führen: *na sa pathyodanaṃ vahet*
 [Spr. 4816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4816) *yo hi hitvā dvijaśreṣṭhaṃ gajakakṣāṃ vahet*
@@ -154,7 +154,7 @@
 - **EN:** — 7) to carry with —, to carry on one's person: *na sa pathyodanaṃ vahet*
 [Spr. 4816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4816) *yo hi hitvā dvijaśreṣṭhaṃ gajakakṣāṃ vahet*
 [2575.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2575)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) zuführen: *guhāsamīraṇo gandhānnānāpuṣpabhavānvahan*
 [R. 2,94,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,14) *divyagandhavahadvāta*
@@ -193,7 +193,7 @@
 [BHAG. 9,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,22) *manovāgdehavastubhiḥ . preyasaḥ paramāṃ prītimuvāha*
 [BHĀG. P. 9,18,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,47) *duḥkhanivaham*
 [3,9,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,9)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) wegführen: *(sarasvatī) vegenovāha taṃ vipraṃ viśvāmitrāśramaṃ prati*
 [MBH. 9,2391.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2391) *adreḥ śṛṅgaṃ vahati pavanaḥ kiṃ svit*
@@ -220,7 +220,7 @@
 [9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) *jalenoḍham* swept away by the water
 [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) *ūḍha* dragged off, abducted
 [9,270.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,270)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) tragen: *pṛṣṭhena*
 [MBH. 1,5888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5888) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
@@ -388,4 +388,4 @@
 [KUMĀRAS. 7,68.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,68) *vasuṃdharām, kṣmāmaṇḍalam* to bear thus v. a. to rule
 [RĀJA-TAR. 1,101.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,101) [4,119.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,119) *asubhiruhyamānāḥ* borne by the vital breaths thus v. a. kept alive
 [BHĀG. P. 5,26,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,22)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>

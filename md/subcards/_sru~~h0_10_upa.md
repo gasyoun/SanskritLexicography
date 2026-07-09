@@ -75,7 +75,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 - **EN:** — 2) *upaśruta* promised, pledged
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *upaśruti* fg. — desid. med. zuhören, aufmerken
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
@@ -84,7 +84,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
 - **EN:** — Vgl. *upaśruti* fg. — desid. med. to listen, pay attention
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *upa*
  1) anhören, hören, vernehmen: *giraḥ*
@@ -151,4 +151,4 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [HARIV. 5305.](https://sanskrit-lexicon-scans.github.io/hariv?5305)
 [BHĀG. P. 4,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,23) *pulastyasya sakāśāt*
 [MBH. 3,4032.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4032)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>

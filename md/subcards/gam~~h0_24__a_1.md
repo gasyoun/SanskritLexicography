@@ -79,8 +79,8 @@ Sch. *āgamayate kālam*
 Sch. *āgamayate kālam*
 [VOP. 23,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,3) *karmādiṣu sarveṣvadhvaryuḥ saṃpraiṣamāgamayeta*
 [LĀṬY. 4,9,8.] *adhīyīta vā tadvidbhyo vā parvāgamayeta*
-[GOBH. 1,5,14.] — "to approach repeatedly": *ā ganīganti karṇam*
-[ṚV. 6,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.03) — "to be about to come": *grāmamājigamiṣantaḥ*
+[GOBH. 1,5,14.] — intens. "to approach repeatedly": *ā ganīganti karṇam*
+[ṚV. 6,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.03) — desid. "to be about to come": *grāmamājigamiṣantaḥ*
 [ĀŚV. GṚHY. 4,1.]
   <sub>attested</sub>
 

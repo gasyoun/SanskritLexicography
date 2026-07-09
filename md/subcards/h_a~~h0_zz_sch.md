@@ -7,4 +7,4 @@
 
 - **RU:** 2. hā¦ с viprati, ˚hīna свободный от... (предшествует в сложении), [Divyāvad. 95,18.] — С abhivi покидать, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
 - **EN:** 2. hā¦ with viprati, ˚hīna free from… (preceding in the comp.), [Divyāvad. 95,18.] — With abhivi to abandon, [Kir. 10,1.] [[Yudh. 2,90.]]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

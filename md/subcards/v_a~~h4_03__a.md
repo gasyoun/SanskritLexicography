@@ -51,7 +51,7 @@
 [MUṆḌ. UP. 3,1,9.]
 [MAITRYUP. 6,3.] *otaproto 'ham*
 [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789)
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *ṛgāvānam* und *nasyota* .
 - **EN:** — Vgl. *ṛgāvānam* and *nasyota*.

@@ -19,7 +19,7 @@
 [M. 1,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,91) *tasmai rājyaṃ samādiśya*
 [R. 1,43,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,43,3)
 [MBH. 4,1024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1024)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) aussagen, verkünden, zu wissen thun, lehren: *rājñe samādiśat*
 [DAŚAK. 123,2] v. u. *devyā viṣṇubhaktyā samādiṣṭaṃ yathā saṃkalpayonayo devatā bhavanti*
@@ -43,7 +43,7 @@
 [KĀM. NĪTIS. 15,2.] *citrāsu (ketubhirādhūmitāsu spṛṣṭāsu vā) kurukṣetrādhipasya maraṇaṃ samādiśetprājñaḥ*
 [VARĀH. BṚH. S. 11,58.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,58)
 [BṚH. 4,9.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) bestimmen, bezeichnen, nennen: *ekadeśaṃ ca śākhāyāḥ samādiṣṭām*
 [MBH. 3,2829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2829) *samādiśantu *
@@ -79,7 +79,7 @@
 [22,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,117) *āryakanāmā gopāladārakaḥ siddhādeśena samādiṣṭo rājā bhaviṣyatīti*
 [MṚCCH. 35,22]; vgl.
 [MĀLAV. 69,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?69,14)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd anweisen, einen Befehl ertheilen, auffordern, beauftragen, abordnen: *brāhmaṇaṃ rājani* (Soma) *samādiśya*
 [LĀṬY. 5,6,5. 8,7.] *nāpitaṃ samādiśati akṣaṇvanvapa*
@@ -141,11 +141,11 @@
 [R. 5,44,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,20)
 — Vgl. *samādeśa* . — caus. to command
 [PAÑCAT. 171,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?171,8)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *samādeśa* . — caus. befehlen
 [PAÑCAT. 171,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?171,8)
 
 - **RU:** — Vgl. *samādeśa* . — caus. приказывать
 [PAÑCAT. 171,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?171,8)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

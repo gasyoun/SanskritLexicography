@@ -10,4 +10,4 @@
 [R. 5,90,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,90,31)
 - **EN:** *abhisamā*, partic. *abhisamāhita* combined, united with (instr.)
 [R. 5,90,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,90,31)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

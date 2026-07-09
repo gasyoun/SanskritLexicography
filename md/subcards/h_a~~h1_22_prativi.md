@@ -10,4 +10,4 @@
 [MBH. 12,3818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3818)
 - **EN:** — *prativi* to let something go, give up
 [MBH. 12,3818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3818)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

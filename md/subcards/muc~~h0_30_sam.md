@@ -13,4 +13,4 @@
 - **EN:** — *sam* to dismiss, give forth from oneself: *netrodbhavaṃ saṃmumucuḥ — vāri*
 [MBH. 3,10236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10236) — caus. to free someone: *saṃmocitaḥ satyavatā tvayāhaṃ śāpāt*
 [RAGH. 5,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,56)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

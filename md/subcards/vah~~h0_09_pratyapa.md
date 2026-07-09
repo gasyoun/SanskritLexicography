@@ -10,4 +10,4 @@
 [BHĀG. P. 10,36,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,36,11)
 - **EN:** — *pratyapa* to push back, to repel: *gṛhītvā śṛṅgayostaṃ ca aṣṭādaśa padāni saḥ . pratyapovāha bhagavān*
 [BHĀG. P. 10,36,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,36,11)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>

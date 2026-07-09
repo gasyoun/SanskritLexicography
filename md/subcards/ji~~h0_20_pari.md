@@ -10,10 +10,10 @@
 [MBH. 5,712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.712)
 - **EN:** — *pari* to defeat, overcome: *sarvātmanā parijetuṃ vayaṃ cenna śaknumo dhṛtarāṣṭrasya putram*
 [MBH. 5,712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.712)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *parijayya* .
 
 - **RU:** — Vgl. *parijayya* .
 - **EN:** — Vgl. *parijayya*.
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

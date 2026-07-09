@@ -11,4 +11,4 @@
 
 - **RU:** — *samud*, *samujjahuḥ*
 [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вместо *samujjahruḥ*, как читает [ed. Bomb.].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

@@ -19,4 +19,4 @@
 [113](https://ashtadhyayi.com/sutraani/8/3/113), Schol. partic. *˚ṣiddha* {driven hither, driven up}: *vācābhiṣiddha upāvartate*
 [AIT. BR. 4,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,1) — desid. from the caus. *˚ṣiṣedhayiṣati*
 [P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Schol.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

@@ -9,4 +9,4 @@
 - **EN:** 3. *vas*¦
 Z. 2 add *vasiṣṭa*
 [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

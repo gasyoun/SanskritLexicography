@@ -10,7 +10,7 @@
 [P. 6,1,86.](https://ashtadhyayi.com/sutraani/6/1/86) [4,22.](https://ashtadhyayi.com/sutraani/6/4/22) [8,2,1.](https://ashtadhyayi.com/sutraani/8/2/1)
 - **EN:** — e) "valid": *a˚*
 [P. 6,1,86.](https://ashtadhyayi.com/sutraani/6/1/86) [4,22.](https://ashtadhyayi.com/sutraani/6/4/22) [8,2,1.](https://ashtadhyayi.com/sutraani/8/2/1)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-f)** — f) zu Theil geworden: *tapaḥprabhāvasiddhābhirviśeṣapratipattibhiḥ*
 [RAGH. 15,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,12) *naisargikī surabhiṇaḥ kusumasya siddhā mūrdhni sthitiḥ* so v. a. eigenthümlich, eigen
@@ -46,7 +46,7 @@ zu [MAHĀBH.] ([1,12,a] lith. Ausg.) ist *siddha = nitya* так v. a. непр�
 [TRIK. 3,3,224.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,224)
 [H. an.] In [PAT.] in the introduction
 to [MAHĀBH.] ([1,12,a] lith. Ausg.) *siddha = nitya* is taken to mean v. a. "imperishable, immutable"; thus one says *siddhā dyauḥ, siddhā pṛthivī, siddhamākāśam*.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-g)** — g) in Ordnung gekommen, geheilt: eine Person
 [Spr. (II) 356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?356)
@@ -55,7 +55,7 @@ to [MAHĀBH.] ([1,12,a] lith. Ausg.) *siddha = nitya* is taken to mean v. a. "im
 [Spr. (II) 356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?356)
 - **EN:** — g) "set right, healed": of a person
 [Spr. (II) 356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?356)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-h)** — h) aus Etwas sich
 
@@ -88,7 +88,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [SIDDH. K.] zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) Schol. zu [1,1,62.](https://ashtadhyayi.com/sutraani/1/1/62) [3,61.](https://ashtadhyayi.com/sutraani/1/3/61) zu [TS. PRĀT. 1,11.] [14.] [4,3.] [5,26.] [8,21.] *pratyakṣa˚*
 [SĀH. D. 2,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?2,2) *svabhāva˚* "self-evident"
 [KĀŚ.] zu [P. 1,2,53.](https://ashtadhyayi.com/sutraani/1/2/53)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-i)** — i) feststehend so v. a. bekannt; = *prasiddha*
 [H. an.] [ŚABDAR.] im [ŚKDR.] [ĀŚV. ŚR. 9,1,2.] *viṣṭārapaṅkti*
@@ -124,7 +124,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [HARIV. 3734.](https://sanskrit-lexicon-scans.github.io/hariv?3734)
 [BHĀG. P. 10,18,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,18,16)
 [SARVADARŚANAS. 3,14.]
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-k)** — k) wirksam, Zauberkraft besitzend: leblose Gegenstände
 [Spr. (II) 7046.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7046)
@@ -136,7 +136,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 - **EN:** — k) "efficacious, possessing magical power": of inanimate objects
 [Spr. (II) 7046.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7046)
 [VET. in LA. (III) 3,15.] [RĀJA-TAR. 1,110.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,110) Vgl. *siddhakajjala* u. s. w.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-l)** — l) zu Willen seiend, zu Jmdes (gen.) Verfügung stehend (insbes. von Geistern und andern Zaubermitteln): *siddhā yasya sarasvatī bhagavatī*
 [Z. d. d. m. G. 27,77.] *yakṣiṇī*
@@ -160,7 +160,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [28,169.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,169) [49,184.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,184) [109,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,104) [PAÑCAT. 250,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?250,12) *˚sādhana*
 [Verz. d. Oxf. H. 86,a,21.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) *siddhāni cāsya ratnāni vidyāśca*
 [KATHĀS. 46,188.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,188) [109,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,19) [21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,21)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-m)** — m) der sein Ziel erreicht hat
 [BHĀG. P. 10,22,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,27) der das höchste Ziel erreicht hat, zur Vollkommenheit gelangt —, Meister geworden in Etwas (geht im comp. voran)
@@ -184,7 +184,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [6356.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6356) *tapaḥ˚*
 [7668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7668) [R. 1,47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [BHĀG. P. 7,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,17) *anarthāya* "a master at stirring up mischief"
 [KATHĀS. 28,185.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,185)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **PPP-n)** — n) vollkommen geworden so v. a. in den Besitz übernatürlicher Kräfte gelangt, den Naturgesetzen nicht mehr unterworfen; = *mukta*
 [H. an.] *siddho 'hyatra mahātapāḥ*
@@ -244,13 +244,13 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [RĀJA-TAR. 3,468.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,468)
 [PAÑCAT. 242,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,21) *suvarṇa˚*
 [243,1. fgg.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?243,1)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2-intro)** — 2) _m._
 
 - **RU:** — 2) _m._
 - **EN:** — 2) _m._
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** a) ein Vollendeter, Glückseliger, Bez. einer Klasse von Halbgöttern (wie Kapila, Vyāsa, Vasiṣṭha, Viśvāmitra, Bharadvāja), denen übernatürliche Kräfte, insbes. das Fliegen durch den Luftraum, beigeschrieben werden,
 [AK. 1,1,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,1,6)
@@ -328,7 +328,7 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 [BHĀG. P. 4,6,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,11) *siddhāṅganā*
 [MEGH. 14.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?14) *siddhā*
 _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [77,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,8)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) bei den Jaina Bez. eines Jina und daher der Zahl vierundzwanzig
 [GAṆIT.]
@@ -340,4 +340,4 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 - **EN:** — b) among the Jaina Bez. of a Jina and hence "of the number twenty-four"
 [GAṆIT.]
 [PRATYABDAŚ. 22.] [SPAṢṬĀDH. 4.] [TRIPR. 62.]
-  <sub>DCS 2028 · lexicographic</sub>
+  <sub>lexicographic</sub>

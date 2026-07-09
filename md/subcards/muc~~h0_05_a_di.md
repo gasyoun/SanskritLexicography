@@ -13,4 +13,4 @@ Vgl. *adhimukti* .
 - **EN:** — *adhi*, partic. in *śraddhādhimukta* "full of trust"
 [BURN. Intr. 268, N. 1.]
 Vgl. *adhimukti*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

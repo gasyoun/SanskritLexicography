@@ -30,7 +30,7 @@ u. s. w.) для кого-л. (dat. gen.), обращать жертвенное
 [6,3,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,27) [3,9,3,7.](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?3,9,3) *anvevaitaducyate nettu hūyate*
 [1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,4,8) [ĀŚV. ŚR. 1,2,1.] *yeṣāṃ dvijānāṃ sāvitrī nānūcyeta yathāvidhi*
 [M. 11,191.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,191)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd (acc.) mit einem Spruche ansprechen: *anūkta*
 [KAUŚ. 47. fg.]
@@ -39,7 +39,7 @@ u. s. w.) для кого-л. (dat. gen.), обращать жертвенное
 [KAUŚ. 47. fg.]
 - **EN:** — 2) to address someone (acc.) with a formula: *anūkta*
 [KAUŚ. 47. fg.]
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd Etwas aufsagen so v. a. lehren, mittheilen
 [ŚAT. BR. 2,3,1,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,31)
@@ -54,7 +54,7 @@ u. s. w.) для кого-л. (dat. gen.), обращать жертвенное
 [ŚAT. BR. 2,3,1,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,31)
 [BHĀG. P. 1,5,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,30) *anūcyatāṃ tāta svadhītaṃ kiṃciduttamam*
 [7,5,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,22)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) med. nachsagen (dem Lehrer
 u. s. w.) so v. a. lernen, studiren: *yo brāhmaṇo vidyāmanūcya na viroceta*
@@ -101,7 +101,7 @@ u. s. w.) so v. a. учиться, изучать: *yo brāhmaṇo vidyāmanūcy
 [KUMĀRAS. 6,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,15) *anūkta* (s. also bes.) studied, learned
 [ĀŚV. GṚHY. 1,22,15.] *mayā yathānūktamavādi te hareḥ kṛtāvatārasya sumitra ceṃṣṭitam* hence v. a. as it has been heard from me
 [BHĀG. P. 3,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,32)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) beistimmen, Recht geben: *prajāpatirmanasa evānūvāca*
 [ŚAT. BR. 1,4,5,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,11)
@@ -110,7 +110,7 @@ u. s. w.) so v. a. учиться, изучать: *yo brāhmaṇo vidyāmanūcy
 [ŚAT. BR. 1,4,5,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,11)
 - **EN:** — 5) to assent, to concede that one is right: *prajāpatirmanasa evānūvāca*
 [ŚAT. BR. 1,4,5,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,11)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) nennen: *manunā harirityanūktaḥ*
 [BHĀG. P. 2,7,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,2) —
@@ -125,7 +125,7 @@ Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcā
 [BHĀG. P. 2,7,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,2) —
 
 Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcāna*, 1. *anūcya* . — caus.
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** 1) Jmd die Formel oder Einladung für — aussprechen lassen
 [KĀTY. ŚR. 4,4,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,4,15) *agnaye*
@@ -145,7 +145,7 @@ Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcā
 [6,3,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,3,1) *vāyave*
 [9,9,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,9,14) with gen. the thing for which
 [6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,9,6)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2) einladen lassen auf, — zu Etwas (dat.): *stokebhyaḥ*
 [KĀTY. ŚR. 6,6,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,18) *somāya*
@@ -157,7 +157,7 @@ Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcā
 - **EN:** Causative — 2) to have someone invited to, — to something (dat.): *stokebhyaḥ*
 [KĀTY. ŚR. 6,6,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,18) *somāya*
 [7,9,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,9,15) [8,4,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,4,1) [26,6,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?26,6,21)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **caus3)** — 3) lesen
 [ŚĀK. 17,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?17,4) [90,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?90,18)
@@ -175,7 +175,7 @@ Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcā
 [VIKR. 26,3.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?26,3)
 [MĀLAV. 8,13.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?8,13)
 [KATHĀS. 74,273.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,273) [76,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?76,22)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** Vgl. *anuvācana* . — desid. med. zu lernen sich anschicken
 [ŚAT. BR. 4,6,7,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,2)
@@ -187,4 +187,4 @@ Vgl. *anuvaktavya, anuvacana, anuvāka, anuvākyā* fg., *anūkta* fg., *anūcā
 
 - **RU:** — Vgl. *anuvācana* . — desid. med. собираться учиться
 [ŚAT. BR. 4,6,7,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,2)
-  <sub>DCS 264 · attested</sub>
+  <sub>attested</sub>

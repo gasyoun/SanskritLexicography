@@ -10,4 +10,4 @@
 [MBH. 7,7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) (*apa˚* [ed. Bomb.]).
 - **EN:** — *ava* {to ward off, keep off from} (abl.)
 [MBH. 7,7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) (*apa˚* [ed. Bomb.]).
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

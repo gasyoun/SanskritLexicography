@@ -22,10 +22,10 @@
 [ŚĀṄKH. ŚR. 18,21,8.] *prāmūṃ jaya*
 [AV. 6,126,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.126.html#av06.126.03) *tānprajayāmyadya*
 [MBH. 7,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.70)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *prajaya* .
 
 - **RU:** — Vgl. *prajaya* .
 - **EN:** — Vgl. *prajaya*.
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

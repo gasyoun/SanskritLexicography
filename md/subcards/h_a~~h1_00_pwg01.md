@@ -48,7 +48,7 @@
 [Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017) *agniṃ svapṛṣṭhataḥ*
 [KATHĀS. 39,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,146) *śardhaṃ jahāti māṣaḥ* causes one to discharge,
 [VOP. 26,61.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,61)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s3)** — 3) hierher wäre *jahā* zu stellen: *jahā ko asmadīṣate*
 [ṚV. 8,45,37](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.37), wenn es, wie
@@ -66,7 +66,7 @@ soll *jahāka* als ein Wort _adj._ = *hānaśīla* sein.
 [NIR. 4,2](https://sanskrit-lexicon-scans.github.io/nirukta/app1?4,2) (and after him
 [SĀY.]) assumes, a verbal form (= *jaghāna* 1. sg. from *han*). We hold it, however, to be an interjection: bah! who indeed flees before us? According to the Comm. on [TAITT. ĀR. 1,3,1]
 *jahāka* is said to be, as a word, _adj._ = *hānaśīla*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s4)** — 4) pass. *hīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
@@ -199,7 +199,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — 5) partic. praet. pass.
 - **EN:** — 5) partic. praet. pass.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5a)** a) *hāta* aufgegeben, fahren gelassen: *˚lajja*
 [BHĀG. P. 8,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,33) *hātavant* gekommen um (acc.): *kalatrāṇi*
@@ -211,13 +211,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **EN:** a) *hāta* given up —, let go: *˚lajja*
 [BHĀG. P. 8,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,33) *hātavant* bereft of (acc.): *kalatrāṇi*
 [KĀM. NĪTIS. 14,49], v. l.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5b)** — b) *hīna* s. bes.
 
 - **RU:** — b) *hīna* s. bes.
 - **EN:** — b) *hīna* s. bes.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5c)** — c) *jahita* verstossen, verlassen: *prātirataṃ jahitasyāyuḥ*
 [ṚV. 1,116,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.10) *anu dvā jahitā nayo 'ndhaṃ śroṇaṃ ca*
@@ -232,13 +232,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [ṚV. 1,116,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.10) *anu dvā jahitā nayo 'ndhaṃ śroṇaṃ ca*
 [4,30,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.030.html#rv04.030.19) *taugryaḥ samudre jahitaḥ*
 [8,5,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.22)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s_end)** — Vgl. *prajahita* u. — *pra* .
 
 - **RU:** — Vgl. *prajahita* u. — *pra*.
 - **EN:** — Vgl. *prajahita* u. — *pra*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-ablegen)** [33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,33) [Spr. (II) 7120.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7120) [BHĀG. P. 7,15,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,24) Schol. zu [KAP. 1,4.] *vipadam*
 [KATHĀS. 26,200.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,200) *śucaḥ*
@@ -255,12 +255,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MEGH. 61.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?61) *śikhādāma*
 [89.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89) *kaupīnam*
 [DAŚAK. 68,12.] *matsyādirūpāṇi yathā naṭaḥ*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-aus-der-Hand)** [BHĀG. P. 1,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,35) aus der Hand fahren lassen: *cāpam*
 
 - **RU:** [BHĀG. P. 1,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,35) выпускать из рук: *cāpam*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-liegen-lassen)** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) liegen lassen: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
@@ -269,7 +269,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) оставлять лежать, бросать: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
 [Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **4-Passiv)** — 4) pass. *hīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
@@ -318,7 +318,7 @@ S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
 [PAÑCAV. BR. 12,11,11.] *sāmnaḥ* лишается
 S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
 [ŚAT. BR. 11,5,6,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,9) *ahāyi*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **4-aufgegeben-werden)** [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) — aufgegeben —, vermieden werden: *kopaścetasi hīyatām*
 [Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328), v. l. abnehmen, geringer werden, hinschwinden, vergehen, zu Ende gehen, zu Schanden —, zu Nichte werden
@@ -401,4 +401,4 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [VARĀH. BṚH. S. 53,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,67) *jahe prāṇaiḥ*
 [BHAṬṬ. 14,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,35) отделяться от, выпадать: *ye 'hīyantāmutaḥ keśāḥ*
 [BHĀG. P. 3,20,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,48)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

@@ -19,7 +19,7 @@
 [ṚV. 1,76,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.076.html#rv01.076.01)
 [TS. 7,3,1,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,1,4)
 [ŚAT. BR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,8)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ein Ende machen, genug sein lassen: *bhīma paryāpnuhi*
 [MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) — part. *paryāpta* erfüllt, zum Abschluss gebracht, das volle Maass habend, ein hohes Maass erreichend, geräumig, vollständig, voll, hinreichend, genügend: *kāmānyaḥ kāmayate manyamānaḥ *
@@ -115,7 +115,7 @@
 [AK. 2,9,57.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,57)
 [H. 1505.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1505) Equivalent in meaning to *paryāpta* is *paryāptavant*
 [RAGH. 16,28](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,28) : *pīḍāmaparyāptavatīva soḍhum* . — desid.
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **1-med)** 1) verlangen, fordern, wünschen: *dātā — ṛṇam — parīpsetkena hetunā*
 [M. 8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *sā bahūni parīpsati*
@@ -136,7 +136,7 @@
 [1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) *vadhaṃ kṛṣṇā parīpsantī senāvāhasya*
 [4,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.503) *priyameva parīpsante*
 [2,563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.563)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **2-med)** — 2) zu erhalten wünschen, in Acht nehmen, schützen: *na peyamudakam — prāṇāniha parīpsatā*
 [MBH. 3,17327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17327) *vyāyāmena parīpsasva jīvitam*
@@ -157,7 +157,7 @@
 [480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.480) *vaikartanaṃ parīpsanto gandharvānsamavākiran*
 [3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) *tānparīpsasva*
 [4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **3-med)** — 3) Jmd beizukommen suchen, auf Jmd oder Etwas lauern, nachstellen: *sa mayā sāgarāvarte dṛṣṭa āsītparīpsatā*
 [MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
@@ -172,4 +172,4 @@
 [MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
 [11454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11454) *pañcaśatāñchūrān — parīpsamānaḥ*
 [15723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15723)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>

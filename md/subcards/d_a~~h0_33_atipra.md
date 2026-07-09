@@ -8,4 +8,4 @@
 
 - **RU:** — *atipra* передавать через, перебрасывать: *˚dāya*
 [LĀṬY. 5,9,5.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

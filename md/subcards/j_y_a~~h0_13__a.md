@@ -70,13 +70,13 @@ Befehl des Bruders richtete
 brother's command
 [3,51,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,8) — *ājajñatuḥ*
 [HARIV. 2929](https://sanskrit-lexicon-scans.github.io/hariv?2929) erroneous for *ājagmatuḥ* .
-  <sub>DCS 780 · attested</sub>
+  <sub>attested</sub>
 
 **2 (header))** — Vgl. *ājñā, ājñāta, ājñāna* fg., *ājñāyin, anājñāta* . — caus.
 
 - **RU:** — Vgl. *ājñā, ājñāta, ājñāna* fg., *ājñāyin, anājñāta* . — caus.
 - **EN:** — Vgl. *ājñā, ājñāta, ājñāna* fg., *ājñāyin, anājñāta* . — caus.
-  <sub>DCS 780 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2.1)** 1) befehlen, anbefehlen, über Etwas befehlen, Jmd (acc.) anweisen, an Jmd einen Befehl richten: *bhakṣyatāmiti suvyaktaṃ prabhurājñāpayiṣyati*
 [R. 5,25,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,48) [4,24,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,24) *anyathā na tu yaṣṭavyaṃ vayamājñāpayāmahe*
@@ -187,7 +187,7 @@ brother's command
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24) *māṃ dṛṣṭvā badhāyājñāpayiṣyati* he will give the order to kill me
 [R. 5,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,79) *ājñāpitaṃ māmaśane*
 [MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310)
-  <sub>DCS 780 · attested</sub>
+  <sub>attested</sub>
 
 **2.2)** — 2) versichern, betheuern: *na kiṃcidasyā vṛjinamahamājñāpayāmi te*
 [R. 6,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,10)
@@ -196,10 +196,10 @@ brother's command
 [R. 6,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,10)
 - **EN:** — 2) to assure, affirm: *na kiṃcidasyā vṛjinamahamājñāpayāmi te*
 [R. 6,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,10)
-  <sub>DCS 780 · attested</sub>
+  <sub>attested</sub>
 
 **2.3)** — Vgl. *ājñapti, ājñāpya* . — desid. s. *ājijñāsenya* .
 
 - **RU:** — Vgl. *ājñapti, ājñāpya* . — desid. s. *ājijñāsenya* .
 - **EN:** — Vgl. *ājñapti, ājñāpya* . — desid. s. *ājijñāsenya* .
-  <sub>DCS 780 · lexicographic</sub>
+  <sub>lexicographic</sub>

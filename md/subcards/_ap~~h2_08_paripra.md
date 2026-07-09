@@ -7,4 +7,4 @@
 
 - **RU:** — *paripra* vgl. *pariprāpti, pariprepsu* .
 - **EN:** — *paripra* vgl. *pariprāpti, pariprepsu*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

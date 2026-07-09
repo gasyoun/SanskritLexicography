@@ -7,4 +7,4 @@
 
 - **RU:** — *vyava* s. *vyavadeśa* .
 - **EN:** *vyava* s. *vyavadeśa* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

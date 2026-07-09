@@ -10,4 +10,4 @@ Z. 8. fg. streiche die Stelle
 - **RU:** — *saṃpra*
 Z. 8. fg. следует вычеркнуть это место
 [Verz. d. Oxf. H. 1,b,13](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?1), так как здесь *saṃpradāya* subst. стоит.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

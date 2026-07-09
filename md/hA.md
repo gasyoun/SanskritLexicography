@@ -29,7 +29,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [10,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.059.html#rv10.059.01) *atyo na vājī sudhuro jihānaḥ* {taking a run-up}
 [3,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.01) *jihāna* {flying} of an arrow
 [KIR. 13,23.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) losspringen auf (acc.): *yanmājihīta vayunā cana*
 [ṚV. 10,49,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.05) sich hinbegeben zu: *ahāsta tām*
@@ -41,24 +41,24 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 - **EN:** — 2) {to spring forward at, leap upon} (acc.): *yanmājihīta vayunā cana*
 [ṚV. 10,49,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.05) {to betake oneself to}: *ahāsta tām*
 [NALOD. 1,38.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** 3. pl., *ajihata*
 
 - **RU:** 3. pl., *ajihata*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** 3. pl. [P. 6,4,112. fg.](https://ashtadhyayi.com/sutraani/6/4/112) *jihīta, ahāsata*
 
 - **RU:** 3. pl. [P. 6,4,112. fg.](https://ashtadhyayi.com/sutraani/6/4/112) *jihīta, ahāsata*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** 3. pl., *hāsate, ahāsta, hāsyate, hātum, hātvā*
 [P. 7,4,43](https://ashtadhyayi.com/sutraani/7/4/43), Schol.; partic. pass. *˚hāna* .
 
 - **RU:** 3. pl., *hāsate, ahāsta, hāsyate, hātum, hātvā*
 [P. 7,4,43](https://ashtadhyayi.com/sutraani/7/4/43), Schol.; partic. pass. *˚hāna* .
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sub-1)** 1) aufspringen, wegspringen vor, weichen; mit dat.: *amāya vo maruto yātave dyaurjihīta*
 [ṚV. 8,20,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.06) [5,32,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.09) *parātaraṃ su nirṛtirjihītām*
@@ -71,7 +71,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [10,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.059.html#rv10.059.01) *atyo na vājī sudhuro jihānaḥ* разбегаясь
 [3,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.01) *jihāna* летя от стрелы
 [KIR. 13,23.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -109,7 +109,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [4,3,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,25) {with the passing-over of}
 [5,24,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,24) *atihāna* {overleaped}
 [ŚAT. BR. 4,2,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,3,4)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -144,7 +144,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [AV. 5,18,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.018.html#av05.018.09)
 [TS. 3,2,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,2,2) [7,1,1,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,1,2)
 [PAÑCAV. BR. 6,1,4.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd folgen, sich anschliessen, sich fügen
 [ṚV. 3,31,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.17) *anu tatta ojo 'martyā jihata indra devāḥ*
@@ -159,7 +159,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [ṚV. 3,31,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.17) *anu tatta ojo 'martyā jihata indra devāḥ*
 [6,18,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.15) *anvāpo ajihata jāyamānam*
 [10,89,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.13)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -179,7 +179,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 [ṚV. 7,71,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.01) *apa badhirā ahāsata*
 [9,73,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.06) *apedu hāsate tamaḥ*
 [10,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.03)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -196,7 +196,7 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 - **EN:** — *abhi* {to catch, seize unawares}: *etyākāle 'bhihāya mukhamapyagṛhṇāt* {came, seized him unexpectedly and held his mouth shut}
 [AIT. BR. 6,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,33) *pādamagṛhṇāt*
 [KĀṬH. 13,2.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -255,7 +255,7 @@ or *bhūmita u˚* {rises from the earth}
 [10,51,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,51,1) [NAIṢ. 22,45. 55.] *kolāhalo lokasyodajihīta*
 [DAŚAK. 66,3.] *ujjihānajīvitā* {whose life is about to depart —; wishes to escape}
 [MĀLATĪM. 163,11.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in die Höhe richten: *akṣibhruvamujjihānaḥ*
 [BHAṬṬ. 3,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,47)
@@ -265,12 +265,12 @@ or *bhūmita u˚* {rises from the earth}
 - **EN:** — 2) {to direct upward}: *akṣibhruvamujjihānaḥ*
 [BHAṬṬ. 3,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,47)
 — Vgl. *ujjihāna*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *ujjihāna* .
 
 - **RU:** — Vgl. *ujjihāna* .
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -284,7 +284,7 @@ or *bhūmita u˚* {rises from the earth}
 [ŚAT. BR. 14,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,14)
 - **EN:** — *atyud* {to raise oneself above}: *śīrṣṇā yūpam*
 [ŚAT. BR. 14,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,14)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -298,7 +298,7 @@ or *bhūmita u˚* {rises from the earth}
 [TBR. 1,7,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,7,2)
 - **EN:** — *anūd* {to set out toward}
 [TBR. 1,7,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,7,2)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -312,7 +312,7 @@ or *bhūmita u˚* {rises from the earth}
 [CHĀND. UP. 1,11,5.]
 - **EN:** — *abhyud* {to raise oneself together with someone}: *sarvāṇi ha vā imāni bhūtāni prāṇamevābhisaṃviśanti prāṇamabhyujjihate*
 [CHĀND. UP. 1,11,5.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -326,7 +326,7 @@ or *bhūmita u˚* {rises from the earth}
 [ṚV. 5,1,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.01)
 - **EN:** — *prod* {to shoot up, dart upward} (of flames): *yahvā iva pra vayāmujjihānāḥ pra bhānavaḥ sisrate*
 [ṚV. 5,1,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.01)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -340,7 +340,7 @@ or *bhūmita u˚* {rises from the earth}
 [ṚV. 1,9,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.009.html#rv01.009.04)
 - **EN:** — *pratyud* {to start up toward} (acc.): *giraḥ prati tvāmudahāsata*
 [ṚV. 1,9,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.009.html#rv01.009.04)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -354,7 +354,7 @@ or *bhūmita u˚* {rises from the earth}
 [BHĀG. P. 4,20,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,20,19) [8,6,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,13)
 - **EN:** — *samud* {to raise oneself} so v. a. {to come into view, appear}: *ujjihāna*
 [BHĀG. P. 4,20,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,20,19) [8,6,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,13)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## upahā
 
@@ -368,7 +368,7 @@ or *bhūmita u˚* {rises from the earth}
 [ŚIŚ. 1,37.]
 - **EN:** — *upa* {to descend upon, alight upon} (acc.): *upājihīthā na mahītalaṃ yadi*
 [ŚIŚ. 1,37.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## nihā
 
@@ -390,14 +390,14 @@ or *bhūmita u˚* {rises from the earth}
 [ĀŚV. ŚR. 5,7,3.]
 [ŚĀṄKH. BR. 28,5.] — desid. {to wish to crouch down}: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ŚĀṄKH. BR. 28,5.] — desid. sich ducken wollen: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
 
 - **RU:** [ŚĀṄKH. BR. 28,5.] — desid. желать пригнуться: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## nirhā
 
@@ -411,7 +411,7 @@ or *bhūmita u˚* {rises from the earth}
 [RĀJA-TAR. 4,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,171)
 - **EN:** — *nis* {to shoot out, rise up}: *nirjihānaṃ dadarśa saḥ . dhūpadhūmaṃ vanapluṣṭātkālāguruvanāt*
 [RĀJA-TAR. 4,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,171)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## anunirh ā
 
@@ -425,7 +425,7 @@ or *bhūmita u˚* {rises from the earth}
 [BHĀG. P. 7,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,19)
 - **EN:** — *anunis* dass.: (*sattvam*) *madhyādanunirjihānam*
 [BHĀG. P. 7,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,19)
-  <sub>DCS 5743 · attested</sub>
+  <sub>attested</sub>
 
 ## parāhā
 
@@ -439,7 +439,7 @@ or *bhūmita u˚* {rises from the earth}
 [TS. 5,4,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,3)
 - **EN:** *parā* to give way, swerve into (acc.): *ajā parṇaṃ parājihīta*
 [TS. 5,4,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,3)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## prahā
 
@@ -454,13 +454,13 @@ or *bhūmita u˚* {rises from the earth}
 [ṚV. 1,166,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.166.html#rv01.166.05) прыгать, бросаться: *tiryakprajihīta*
 [ŚAT. BR. 1,7,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,12) = *pragacchet* Comm., однако возможно следует читать *prayacchet*, а именно *prāśitram*, то есть подавать, протягивать; vgl. *atipra* .
 - **EN:** — *pra* to drive off, drive away: *rathīyantīva pra jihīta oṣadhiḥ*
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *prahā* .
 
 - **RU:** — Vgl. *prahā* .
 - **EN:** [ṚV. 1,166,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.166.html#rv01.166.05) to spring loose, bound away: *tiryakprajihīta*
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [ŚAT. BR. 1,7,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,12) = *pragacchet* Comm., es ist aber vielleicht *prayacchet* zu lesen, nämlich *prāśitram*, also darreichen; vgl. *atipra* .
 - **EN:** [ŚAT. BR. 1,7,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,12) = *pragacchet* Comm., but it is perhaps to be read as *prayacchet*, namely *prāśitram*, hence to hand over, proffer; vgl. *atipra*.
@@ -469,7 +469,7 @@ or *bhūmita u˚* {rises from the earth}
 
 - **RU:** — Vgl. *prahā* .
 - **EN:** — Vgl. *prahā*.
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 ## atiprahā
 
@@ -483,7 +483,7 @@ or *bhūmita u˚* {rises from the earth}
 [ŚAT. BR. 2,5,2,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,40) *uttarāṃ vedimatikramayya tadiḍāpātraṃ pragamayet* Comm. Значение здесь, как под *pra*, не вписывается в основное значение данного корня.
 - **EN:** *atipra* to reach across, hand over: *pratiprasthātre 'tiprajihīte* (*prāśitram*)
 [ŚAT. BR. 2,5,2,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,40) *uttarāṃ vedimatikramayya tadiḍāpātraṃ pragamayet* Comm. The meaning here, as under *pra*, does not fit the basic meaning of our root.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## abhiprahā
 
@@ -497,7 +497,7 @@ or *bhūmita u˚* {rises from the earth}
 [ŚĀṄKH. ŚR. 12,17,4.]
 - **EN:** *abhipra* to ride/drive up onto, mount upon: *abhīva svaḥ prajihīte*
 [ŚĀṄKH. ŚR. 12,17,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vihā
 
@@ -528,7 +528,7 @@ or *bhūmita u˚* {rises from the earth}
 [5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) [AV. 5,25,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.025.html#av05.025.09) [6,121,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.121.html#av06.121.04) *vi jihāthāṃ mā mā saṃ taptam*
 [TS. 1,1,12,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,1,12,1) *˚hīthām*
 [ŚAT. BR. 14,9,4,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,20) [8,12,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,12,1) Vgl. *viha* and 2. *vihāyas* .
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **2)** caus. öffnen, klaffen machen: *yonim*
 [AV. 1,11,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.03)
@@ -571,7 +571,7 @@ or *bhūmita u˚* {rises from the earth}
 [6,3,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,36) [4,2,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,2,11) [6,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,4,2) [TS. 7,1,19,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,19,3) [AIT. BR. 7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) [ĀŚV. GṚHY. 2,3,11. 13.] [KAUŚ. 10. 19.] [NIR. 3,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,18) *prātaḥ saṃjihānaḥ*
 [CHĀND. UP. 1,10,6. 5,11,5. 4,1,5.] partic. *saṃhāna*
 [VS. 22,7.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?22,7)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich umherbewegen: *yathā jale saṃjihate jalaukasaḥ*
 [BHĀG. P. 10,40,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,40,15)
@@ -580,7 +580,7 @@ or *bhūmita u˚* {rises from the earth}
 [BHĀG. P. 10,40,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,40,15)
 - **EN:** — 2) to move about, move to and fro: *yathā jale saṃjihate jalaukasaḥ*
 [BHĀG. P. 10,40,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,40,15)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) theilhaftig werden (wie alle Verba der Bewegung
 
@@ -595,7 +595,7 @@ nach Comm.): *samahāsta mudam*
 
 according to Comm.): *samahāsta mudam*
 [NALOD. 1,54.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *saṃhāṭyam* . — caus. *saṃhāpayati* sich aufrichten machen
 [KAUŚ. 80.]
@@ -604,7 +604,7 @@ according to Comm.): *samahāsta mudam*
 [KAUŚ. 80.]
 - **EN:** — Vgl. *saṃhāṭyam*. — caus. *saṃhāpayati* to cause to raise oneself up, to set upright
 [KAUŚ. 80.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## parisamhā
 
@@ -618,7 +618,7 @@ according to Comm.): *samahāsta mudam*
 [ṚV. 7,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.10)
 - **EN:** *parisam* to start up out of (abl.): *vidyuto jyotiḥ pari saṃjihānam*
 [ṚV. 7,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.10)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratisamhā
 
@@ -632,7 +632,7 @@ according to Comm.): *samahāsta mudam*
 [GOP. BR. 1,2,4.]
 - **EN:** *pratisam* to rise up before someone
 [GOP. BR. 1,2,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -999,7 +999,7 @@ according to Comm.): *samahāsta mudam*
 [Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017) *agniṃ svapṛṣṭhataḥ*
 [KATHĀS. 39,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,146) *śardhaṃ jahāti māṣaḥ* causes one to discharge,
 [VOP. 26,61.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,61)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s3)** — 3) hierher wäre *jahā* zu stellen: *jahā ko asmadīṣate*
 [ṚV. 8,45,37](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.37), wenn es, wie
@@ -1017,7 +1017,7 @@ soll *jahāka* als ein Wort _adj._ = *hānaśīla* sein.
 [NIR. 4,2](https://sanskrit-lexicon-scans.github.io/nirukta/app1?4,2) (and after him
 [SĀY.]) assumes, a verbal form (= *jaghāna* 1. sg. from *han*). We hold it, however, to be an interjection: bah! who indeed flees before us? According to the Comm. on [TAITT. ĀR. 1,3,1]
 *jahāka* is said to be, as a word, _adj._ = *hānaśīla*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s4)** — 4) pass. *hīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
@@ -1150,7 +1150,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — 5) partic. praet. pass.
 - **EN:** — 5) partic. praet. pass.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5a)** a) *hāta* aufgegeben, fahren gelassen: *˚lajja*
 [BHĀG. P. 8,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,33) *hātavant* gekommen um (acc.): *kalatrāṇi*
@@ -1162,13 +1162,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **EN:** a) *hāta* given up —, let go: *˚lajja*
 [BHĀG. P. 8,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,33) *hātavant* bereft of (acc.): *kalatrāṇi*
 [KĀM. NĪTIS. 14,49], v. l.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5b)** — b) *hīna* s. bes.
 
 - **RU:** — b) *hīna* s. bes.
 - **EN:** — b) *hīna* s. bes.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s5c)** — c) *jahita* verstossen, verlassen: *prātirataṃ jahitasyāyuḥ*
 [ṚV. 1,116,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.10) *anu dvā jahitā nayo 'ndhaṃ śroṇaṃ ca*
@@ -1183,13 +1183,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [ṚV. 1,116,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.10) *anu dvā jahitā nayo 'ndhaṃ śroṇaṃ ca*
 [4,30,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.030.html#rv04.030.19) *taugryaḥ samudre jahitaḥ*
 [8,5,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.22)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **s_end)** — Vgl. *prajahita* u. — *pra* .
 
 - **RU:** — Vgl. *prajahita* u. — *pra*.
 - **EN:** — Vgl. *prajahita* u. — *pra*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-ablegen)** [33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,33) [Spr. (II) 7120.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7120) [BHĀG. P. 7,15,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,24) Schol. zu [KAP. 1,4.] *vipadam*
 [KATHĀS. 26,200.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,200) *śucaḥ*
@@ -1206,12 +1206,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MEGH. 61.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?61) *śikhādāma*
 [89.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89) *kaupīnam*
 [DAŚAK. 68,12.] *matsyādirūpāṇi yathā naṭaḥ*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-aus-der-Hand)** [BHĀG. P. 1,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,35) aus der Hand fahren lassen: *cāpam*
 
 - **RU:** [BHĀG. P. 1,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,35) выпускать из рук: *cāpam*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **1-liegen-lassen)** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) liegen lassen: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
@@ -1220,7 +1220,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) оставлять лежать, бросать: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
 [Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **4-Passiv)** — 4) pass. *hīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
@@ -1269,7 +1269,7 @@ S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
 [PAÑCAV. BR. 12,11,11.] *sāmnaḥ* лишается
 S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
 [ŚAT. BR. 11,5,6,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,9) *ahāyi*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **4-aufgegeben-werden)** [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) — aufgegeben —, vermieden werden: *kopaścetasi hīyatām*
 [Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328), v. l. abnehmen, geringer werden, hinschwinden, vergehen, zu Ende gehen, zu Schanden —, zu Nichte werden
@@ -1352,7 +1352,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [VARĀH. BṚH. S. 53,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,67) *jahe prāṇaiḥ*
 [BHAṬṬ. 14,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,35) отделяться от, выпадать: *ye 'hīyantāmutaḥ keśāḥ*
 [BHĀG. P. 3,20,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,48)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1383,7 +1383,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **caus-head)** — caus. *hāpayati*
 
 - **RU:** — caus. *hāpayati*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) versäumen, vernachlässigen: *pañcaitānyo mahāyajñānna hāpayati śaktitaḥ*
 [M. 3,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,71) [4,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,21) [5,169.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,169)
@@ -1402,7 +1402,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 5,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.856) [3326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3326) *ahāpayankālam* не теряя времени, не медля
 [KĀM. NĪTIS. 5,64.] *lokavādānna hāpayet*
 [MĀRK. P. 58,67.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,67)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) es fehlen lassen an: *śaktiṃ na hāpayiṣyanti*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
@@ -1413,7 +1413,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
 [Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265) *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) fahren lassen, aufgeben: *asūnajījahat*
 [HARIV. 1138.](https://sanskrit-lexicon-scans.github.io/hariv?1138) einbüssen, verlieren: *yadupāttaṃ yaśaḥ pitrā dhanaṃ vīryamathāpi vā . tanna hāpayate yastu*
@@ -1422,7 +1422,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** — 3) бросать, оставлять: *asūnajījahat*
 [HARIV. 1138.](https://sanskrit-lexicon-scans.github.io/hariv?1138) утрачивать, терять: *yadupāttaṃ yaśaḥ pitrā dhanaṃ vīryamathāpi vā . tanna hāpayate yastu*
 [Spr. (II) 5250.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5250)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) partic. *hāpita*
  a) beschädigt, mitgenommen: ein Pfand
@@ -1437,7 +1437,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 — b) лишённый (instr.). *asubhirindreṇa*
 [BHĀG. P. 8,15,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,3) *trapayā*
 [10,22,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,22)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1473,12 +1473,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [8,20,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,13) презирать w.: *vrīhīn*
 [Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635) ускользать от w.: *duḥkham*
 [SARVADARŚANAS. 103,16.] [WILSON, SĀṂKHYAK. S. 10.] *duḥkhaṃ jihāsitam* 8.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **desid-tail)** — Vgl. *jihāsā* fg.
 
 - **RU:** — Vgl. *jihāsā* fg.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1497,7 +1497,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66) [116.](https://ashtadhyayi.com/sutraani/6/4/116)
 [VOP. 20,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,4) *jahāti, jaheti*
 [20,18.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,18)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1519,27 +1519,27 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **apa_1_zurückbleiben)** *apa* med. zurückbleiben so v. a. das Ziel nicht erreichen
 
 - **RU:** *apa* med. отставать, так v. a. не достигать цели
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_2_verlassend)** [AV. 18,3,73.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.73) *apahāya* verlassend: *mathurām*
 
 - **RU:** [AV. 18,3,73.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.73) *apahāya* оставляя: *mathurām*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_3_meidend)** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) Jmd [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) meidend
 
 - **RU:** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) кого-л. [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) сторонясь, избегая
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_4_ablegend)** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612) ablegend: *strīrūpam*
 
 - **RU:** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612) слагая с себя, отлагая: *strīrūpam*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_5_befreiend)** [HARIV. 11835.](https://sanskrit-lexicon-scans.github.io/hariv?11835) sich befreiend von: *ṛṇāni*
 
 - **RU:** [HARIV. 11835.](https://sanskrit-lexicon-scans.github.io/hariv?11835) освобождаясь от: *ṛṇāni*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_6_hintansetzung)** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) mit Hintansetzung von
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143)
@@ -1548,29 +1548,29 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) пренебрегая, отодвигая на задний план
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143)
 [Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_7_abgesehen)** [BHĀG. P. 1,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,37) abgesehen von
 
 - **RU:** [BHĀG. P. 1,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,37) не считая, отвлекаясь от
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_8_ausnahme)** [KUSUM. 16,18. fg.] mit Uebergehung —, mit Ausnahme von
 
 - **RU:** [KUSUM. 16,18. fg.] минуя —, за исключением
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_9_abnehmen)** [RAGH. 9,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,19) — pass. abnehmen: *balam*
 [SUŚR. 1,19,16.]
 
 - **RU:** [RAGH. 9,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,19) — pass. убывать, уменьшаться: *balam*
 [SUŚR. 1,19,16.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa_10_note)** — Vgl. *apahāna, apahāni* (dieses gehört mit Sicherheit hierher, das erstere vielleicht zu 1. *hā*).
 
 - **RU:** — Vgl. *apahāna, apahāni* (последнее принадлежит сюда с уверенностью, первое же, возможно, к 1. *hā*).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1585,7 +1585,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *vyapa* покидать, оставлять: *prajā dharmaṃ ca kāmaṃ ca vyapahāya*
 [HARIV. 900](https://sanskrit-lexicon-scans.github.io/hariv?900) по чтению новейших Ausg.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1612,39 +1612,39 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** *ava* покидать, оставлять позади: *rayiṃ na kaścinmamṛvā avāhāḥ*
 [ṚV. 1,116,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.03) *mā so asmā avahāya parāgāt*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_2_aufgeben)** [TS. 5,7,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,9,1) aufgeben, fahren lassen: *śūdrakarma tu yaḥ kuryādavahāya svakarma ca*
 
 - **RU:** [TS. 5,7,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,9,1) отказываться, отпускать: *śūdrakarma tu yaḥ kuryādavahāya svakarma ca*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_3_zurückbleiben)** [MBH. 13,6208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6208) — pass. zurückbleiben: *agacchansahitāstatra na kaścidavahīyate*
 
 - **RU:** [MBH. 13,6208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6208) — pass. отставать: *agacchansahitāstatra na kaścidavahīyate*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_4_nicht_ziel)** [MBH. 3,11558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11558) nicht zum Ziele kommen: *videvaste yajñe 'vahāsyate*
 
 - **RU:** [MBH. 3,11558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11558) не достигать цели: *videvaste yajñe 'vahāsyate*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_5_im_stich)** [KĀṬH. 26,9.] im Stich gelassen werden von (abl.): *avahīye sakhibhyaḥ*
 
 - **RU:** [KĀṬH. 26,9.] быть покинутым на произвол судьбы (со стороны abl.): *avahīye sakhibhyaḥ*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_6_übertroffen)** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) bei Seite gelassen —, so v. a. übertroffen werden: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
 
 - **RU:** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) быть оставленным в стороне —, тем самым v. a. быть превзойдённым: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ava_7_kausativ)** [R. 5,2,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,11) — caus. zurückbleiben machen: *mā yāmādasmādapa jīhipo naḥ* so v. a. lass uns in diesem Lauf nicht dahintenbleiben
 [ṚV. 3,53,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.19)
 
 - **RU:** [R. 5,2,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,11) — caus. заставлять отставать: *mā yāmādasmādapa jīhipo naḥ* так v. a. «пусть мы в этом беге не отстанем»
 [ṚV. 3,53,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.19)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1661,7 +1661,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** — *vyava* покидать, оставлять: *brāhmaṇaṃ vyavahāya tam*
 [MBH. 3,13661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13661) *prajā dharmaṃ ca kāmaṃ ca*
 [HARIV. 900.](https://sanskrit-lexicon-scans.github.io/hariv?900)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1676,7 +1676,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *samava* покидать, избегать: *samavahāya guroścaraṇam*
 [BHĀG. P. 10,87,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,33)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## āhā
 
@@ -1691,7 +1691,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *ā* мнимо (кажущееся употребление)
 [RĀJA-TAR. 4,654](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,654), поскольку с [ed. Calc.] следует читать *kāṅkṣatāpagamā jahuḥ*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1711,12 +1711,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** — *apā*, absol. *˚hāya* покидая кого-л.
 [MBH. 1,4946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4946) пренебрегая, отодвигая на задний план
 [3,2963.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2963) [HARIV. 570.](https://sanskrit-lexicon-scans.github.io/hariv?570) за исключением
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apA_2_metrum_note)** [MBH. 3,11982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11982) [4,1484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1484) [14,2832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2832) eine durch das Metrum bedingte Verlängerung von *apa*, nicht *apa + ā* .
 
 - **RU:** [MBH. 3,11982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11982) [4,1484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1484) [14,2832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2832) обусловленное метром удлинение *apa*, а не *apa + ā*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1731,7 +1731,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *samud*, *samujjahuḥ*
 [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вместо *samujjahruḥ*, как читает [ed. Bomb.].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1746,7 +1746,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *upa* pass. убывать, уменьшаться: *yeṣāṃ trivargaḥ* (так [ed. Bomb.]) *kṛtyeṣu vartate* (вероятно, следует читать *vardhate*) *nopahīyate*
 [MBH. 13,2028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2028)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1767,14 +1767,14 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** — *ni* pass. потерпеть поражение, уступить: *ni hīyatāmatiyājasya yaṣṭā*
 [ṚV. 6,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.052.html#rv06.052.01) *ni hīyatāṃ tanvā3 tanā ca*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ni_2_editorial)** [7,104,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.10) — partic. *nihīna* s. bes. und füge
 [Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888) hinzu. [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) liest [ed. Bomb.] *vihīna* .
 
 - **RU:** [7,104,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.10) — partic. *nihīna* s. bes. и добавь
 [Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888). [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) читает [ed. Bomb.] *vihīna*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -1788,7 +1788,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [AIT. BR. 3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7)
 - **EN:** — *nis*, partic. *nirhāṇa* in *anirhāṇarca* _adj._ = *saṃpūrṇayājyāpāṭhopeta* whereby nothing is lacking in the recitation of (Yājā-) the verses
 [AIT. BR. 3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## parihā
 
@@ -1827,7 +1827,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [NĪLAK.]) [MBH. 2,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2460) *vyājena sadbhirvihito dharmaste parihāsyati*
 [12,5436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5436) to lose, be deprived of (abl.), to forfeit: *na rāgātparihāsyathaḥ*
 [R. 7,93,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,93,8)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** — 3) pass.
  a) gemieden —, unterlassen werden: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
@@ -1869,7 +1869,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [3769.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769) to reach its end: *rājavaṃśastu bharturme parihāsyate*
 [R. 7,48,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,48,8) day, night, watch (*prahara*)
 [KATHĀS. 5,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,80) [6,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,123) [13,31.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,31) [26,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,25) [74,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,107) [124,185.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,185)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) den Kürzern ziehen, unterliegen, Schlimmes erfahren: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
 [MBH. 3,12858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12858) [5,5446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5446)
@@ -1887,7 +1887,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [HARIV. 3090.](https://sanskrit-lexicon-scans.github.io/hariv?3090)
 [Spr. (II) 678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?678) [5344.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5344) *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* to be defeated, to fall behind
 [MĀLAV. 12,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?12,14)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3d)** — d) mit abl. ablassen —, abstehen von, untreu werden: *svadharmāt*
 [MBH. 3,16780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16780) kommen um: *svargāt*
@@ -1911,7 +1911,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [Spr. (II) 1973.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1973) *śarīradharmakośebhyaḥ*
 [6290.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6290) so v. a. to know nothing of: *na tarhi prāgavasthāyāḥ parihīyase*
 [MĀLATĪM. 69,18.]
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3e-intro)** — e) partic. *parihīṇa* (häufig *˚hīna* geschrieben)
 [KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
@@ -1920,7 +1920,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
 - **EN:** — e) partic. *parihīṇa* (often written *˚hīna*)
 [KĀŚ.] on [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3e-alpha)** α) unterblieben, fehlend: *˚kriya*
 [MBH. 13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) geschwunden: *vardhamānaparihīnatejasau*
@@ -1935,7 +1935,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) vanished: *vardhamānaparihīnatejasau*
 [RAGH. 11,82.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,82) *˚bhagavadanugraha*
 [BHĀG. P. 5,24,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **3e-beta)** — β) sich enthaltend, es fehlen lassend an: *balikarmataḥ*
 [MBH. 13,4784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4784) ermangelnd, ohne — seiend: *pramāṇāt*
@@ -1962,13 +1962,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [Spr. (II) 617](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?617), v. l. *kiraṇaiḥ*
 [VARĀH. BṚH. S. 4,29.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,29) in comp. with the supplement: *artha˚*
 [16,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,33) [54,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [47.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,47) [90.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,90) [68,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,8) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,19) [26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,26) [BHĀṢĀP. 14.]
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **compound-intro)** — Vgl. *parihāṇa* fg. — caus.
 
 - **RU:** — Vgl. *parihāṇa* fg. — caus.
 - **EN:** — Vgl. *parihāṇa* fg. — caus.
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **compound-1)** 1) unterbrechen, nicht zu Ende führen: *svakarma*
 [M. 8,206. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,206)
@@ -1977,7 +1977,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [M. 8,206. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,206)
 - **EN:** 1) to interrupt, to leave unfinished: *svakarma*
 [M. 8,206. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,206)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **compound-2)** 2) Jmd um Etwas (instr.) bringen: *vṛttyā parihāpitaḥ*
 [BHĀG. P. 11,22,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,22,57)
@@ -1987,7 +1987,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **act.1)** — *pari*
 
 - **RU:** — *pari*
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **act.1.1)** 1) Jmd verlassen: *vaidehīṃ parihāya*
 [R. GORR. 2,16,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,16,31) *taṃ parihātum*
@@ -2006,12 +2006,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 * paryahāsīḥ* (*pratihāsīḥ* более новое Ausg.)
 [HARIV. 14317.](https://sanskrit-lexicon-scans.github.io/hariv?14317)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **pass.3)** — 3) pass.
 
 - **RU:** — 3) pass.
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **pass.3a)** a) gemieden —, unterlassen werden: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
 [Spr. (II) 2984.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2984) *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
@@ -2032,14 +2032,14 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [R. 1,12,16. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,16) *setsyate vīra kāryārtho na kiṃcitparihāsyate*
 [HARIV. 3979](https://sanskrit-lexicon-scans.github.io/hariv?3979) = [4054](https://sanskrit-lexicon-scans.github.io/hariv?4054) = [R. 5,1,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,91) *na kālaḥ kālamatyeti na kālaḥ parihīyate* неизбежно наступает
 [Spr. (II) 3193.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3193)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) Jmd um Etwas (instr.) bringen: *vṛttyā parihāpitaḥ*
 [BHĀG. P. 11,22,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,22,57)
 
 - **RU:** — 2) лишать кого-л. чего-л. (instr.): *vṛttyā parihāpitaḥ*
 [BHĀG. P. 11,22,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,22,57)
-  <sub>DCS 74 · attested</sub>
+  <sub>attested</sub>
 
 ## prahā
 
@@ -2141,7 +2141,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 *mohametau prahāsyete* to let go
 [R. 6,21,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,21,29)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) entlassen, schleudern: *prajahuḥ śūlapaṭṭiśān*
 [BHAṬṬ. 14,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,23)
@@ -2150,7 +2150,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [BHAṬṬ. 14,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,23)
 - **EN:** — 2) to release, to hurl: *prajahuḥ śūlapaṭṭiśān*
 [BHAṬṬ. 14,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,23)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ungenau für pass. weichen, schwinden: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* wäre nicht gegen das Metrum)
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
@@ -2162,7 +2162,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **EN:** — 3) inaccurately for pass. to yield, to vanish: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* would not be against the metre)
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
 [12,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1869)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** — 4) pass.
  a) aufgegeben werden, weichen von (instr.): *prahīyatāmatra nṛpeṇa mānitā*
@@ -2184,7 +2184,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 8,1917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1917)
 - **EN:** — b) to draw the shorter straw, to be worsted: in a flight contest
 [MBH. 8,1917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1917)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **5a-alpha)** — 5) partic.
  a) *prahīṇa*
@@ -2204,7 +2204,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
 - **EN:** — β) not coming about with something (instr.): *sarvakarmabhiḥ*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **5a-gamma)** — γ) ermangelnd, ohne — seiend: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
@@ -2213,7 +2213,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
 - **EN:** — γ) lacking, being without —: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **5b)** — b) *prajahita* verlassen, aufgegeben: *vanāni*
 [ṚV. 8,1,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.13) Bez. eines Feuers, das aufgegeben ist, weil aus demselben ein anderes entnommen wurde,
@@ -2225,7 +2225,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **EN:** — b) *prajahita* abandoned, given up: *vanāni*
 [ṚV. 8,1,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.13) Bez. of a fire that has been given up, because another was taken from it,
 [LĀṬY. 2,2,22.] Schol. on [PAÑCAV. BR. 1,4,11.] on [ŚĀṄKH. ŚR. 2,2,8.]
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **compound)** — Vgl. *prājahita* und *prahāṇa* fg. — caus. verscheuchen, entfernen: *lokabhayam*
 [BHĀG. P. 6,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,32)
@@ -2234,17 +2234,17 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [BHĀG. P. 6,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,32)
 - **EN:** — Vgl. *prājahita* and *prahāṇa* fg. — caus. to drive away, to remove: *lokabhayam*
 [BHĀG. P. 6,8,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,32)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *pra*
 
 - **RU:** — *pra*
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **pass.4)** — 4) pass.
 
 - **RU:** — 4) pass.
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **pass.4a)** a) aufgegeben werden, weichen von (instr.): *prahīyatāmatra nṛpeṇa mānitā*
 [KIR. 14,13.] unterbleiben, versäumt werden
@@ -2257,26 +2257,26 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [BHAṬṬ. 6,65.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,65) исчезать, обращаться в ничто: *dharmācārāḥ*
 [MBH. 3,29.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.29) *prajñā tejo balaṃ cakṣurāyuścaiva*
 [M. 4,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,41)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **ppp.5)** — 5) partic.
 
 - **RU:** — 5) partic.
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **ppp.5a)** a) *prahīṇa*
 [KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
 
 - **RU:** a) *prahīṇa*
 [KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 **ppp.5a.alpha)** α) gelassen so v. a. liegen geblieben: *dhanamudīcyāṃ diśi*
 [BHĀG. P. 1,12,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,34)
 
 - **RU:** α) оставленный спокойно так v. a. оставшийся лежать: *dhanamudīcyāṃ diśi*
 [BHĀG. P. 1,12,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,34)
-  <sub>DCS 195 · attested</sub>
+  <sub>attested</sub>
 
 ## viprahā
 
@@ -2305,13 +2305,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [5,6002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6002) [R. 2,31,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,17) *tejasā*
 [MBH. 1,8142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8142) excluded from: *gaganāt*
 [3651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3651)
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *viprahāṇa* .
 
 - **RU:** Vgl. *viprahāṇa*.
 - **EN:** — Vgl. *viprahāṇa*.
-  <sub>DCS 26 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 ## saṃprahā
 
@@ -2325,7 +2325,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 4,517.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.517)
 - **EN:** — *saṃpra* to abandon: *saṃprahāya śayanam*
 [MBH. 4,517.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.517)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -2340,7 +2340,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **EN:** — *prati*
  1) to abandon, so v. a. to leave unheeded: *mā ca śakrasya vacanaṃ pratihāsīḥ* (so the more recent Ausg.) *kathaṃ ca na*
 [HARIV. 14317.](https://sanskrit-lexicon-scans.github.io/hariv?14317)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) pass. den Kürzern ziehen, Jmd (abl.) weichen: im Wettfluge
 [MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916)
@@ -2349,12 +2349,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916)
 - **EN:** — 2) pass. to draw the shorter straw, to yield to someone (abl.): in a flight contest
 [MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *prati*
 
 - **RU:** — *prati*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## vihā
 
@@ -2563,7 +2563,7 @@ to get rid of, to free oneself from
 [VARĀH. BṚH. S. 53,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,32)
 [BṚH. 4,12. 12,10.] [SARVADARŚANAS. 102,5.] [TRIK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,1) *vihāya hastatrayam* so v. a. at a distance of
 [VARĀH. BṚH. S. 54,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,18)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abstehen von (abl.): *krīḍārasātprastutāt*
 [Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) ohne Ergänzung eine Thätigkeit einstellen
@@ -2575,7 +2575,7 @@ to get rid of, to free oneself from
 - **EN:** — 2) to desist from (abl.): *krīḍārasātprastutāt*
 [Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) without an object, to stop an activity
 [VARĀH. BṚH. S. 77,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,3)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) eine Einbusse erleiden, verloren gehen: *mā te gātrā vi hāyi*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *prema tayoḥ parasparasyopari na vyahīyata*
@@ -2588,7 +2588,7 @@ to get rid of, to free oneself from
  a) to suffer a loss, to be lost: *mā te gātrā vi hāyi*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *prema tayoḥ parasparasyopari na vyahīyata*
 [RAGH. ed. Calc. 3,24.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,24)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b) zurückbleiben
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16) Jmd (abl.) nachstehen: *ācāryaputrāttasmāttu viśeṣopacaye pṛthak . na vyahīyata*
@@ -2600,7 +2600,7 @@ to get rid of, to free oneself from
 - **EN:** — b) to remain behind, to lag
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16) to fall behind someone (abl.): *ācāryaputrāttasmāttu viśeṣopacaye pṛthak . na vyahīyata*
 [MBH. 1,5229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5229)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-alpha)** α) mangelnd, fehlend: *˚tilakeva strī*
 [R. 3,22,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,8) *˚sattva*
@@ -2613,7 +2613,7 @@ to get rid of, to free oneself from
  α) lacking, missing: *˚tilakeva strī*
 [R. 3,22,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,8) *˚sattva*
 [VARĀH. BṚH. S. 16,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,32)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-beta)** — β) niedrig stehend, gemein: Personen
 [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) (nach der Lesart der [ed. Bomb.]).
@@ -2628,7 +2628,7 @@ to get rid of, to free oneself from
 [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) (according to the reading of [ed. Bomb.]).
 [15649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15649) *˚yoni*
 [15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-gamma)** — γ) ermangelnd, ohne — seiend, beraubt —, frei von; die Ergänzung im instr.: *darśanena*
 [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) *tvayā*
@@ -2691,17 +2691,17 @@ to get rid of, to free oneself from
 [an. 5,23.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?5,23)
 [HALĀY. 2,264.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,264)
 [PĀRŚVANĀTHAK. 4,1] (according to [AUFRECHT]).
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) pass.
 
 - **RU:** — 3) pass.
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) partic. *vihīna*
 
 - **RU:** — c) partic. *vihīna*
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 ## pravihā
 
@@ -2715,7 +2715,7 @@ to get rid of, to free oneself from
 [Z. d. d. m. G. 27,79.] to let something go, to give up: *harṣam*
 [R. 2,100,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,39) *pravihāya* with neglect of —, passing over —
 [Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [Z. d. d. m. G. 27,79.] Etwas fahren lassen, aufgeben: *harṣam*
 [R. 2,100,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,39) *pravihāya* mit Hintansetzung —, mit Uebergehung von
@@ -2724,7 +2724,7 @@ to get rid of, to free oneself from
 - **RU:** [Z. d. d. m. G. 27,79.] отпускать, отказываться от чего-л.: *harṣam*
 [R. 2,100,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,39) *pravihāya* пренебрегая —, обходя
 [Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## prativihā
 
@@ -2738,7 +2738,7 @@ to get rid of, to free oneself from
 [MBH. 12,3818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3818)
 - **EN:** — *prativi* to let something go, give up
 [MBH. 12,3818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3818)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samhā
 
@@ -2752,7 +2752,7 @@ to get rid of, to free oneself from
 [MBH. 7,3045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3045)
 - **EN:** — *sam* to give up, to renounce: *dharmaṃ na saṃjahyāt*
 [MBH. 7,3045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3045)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -2931,7 +2931,7 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* the more recent Ausg.) *hā heti vādinau* as an expression of contentment
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -2945,31 +2945,31 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 вскакивать, отпрыгивать от, уступать; с Dat.
 - **EN:** **1.** √*hā*¦, *jihīte*
 — 1〉 to start up, spring away from, give way; with Dat.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2〉 losspringen auf (Acc.).
 
 - **RU:** — 2〉 бросаться на (Acc.).
 - **EN:** — 2〉 to spring upon, leap at (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 fliegen. Nur *jihāna* von einem Pfeile.
 
 - **RU:** — 3〉 лететь. Только *jihāna* о стреле.
 - **EN:** — 3〉 to fly. Only *jihāna*, of an arrow.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4〉 sich hinbegeben zu (Acc.) [NALOD.]
 
 - **RU:** — 4〉 направляться к (Acc.) [NALOD.]
 - **EN:** — 4〉 to betake oneself to, go to (Acc.) [NALOD.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 in einen Zustand (Acc.) gerathen [ŚIŚ. 17,57].
 
 - **RU:** — 5〉 впадать в состояние (Acc.) [ŚIŚ. 17,57].
 - **EN:** — 5〉 to fall into, come into a state (Acc.) [ŚIŚ. 17,57].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ati-1)** — Mit *ati*
 — 1〉 überspringen. *atihāna* übersprungen.
@@ -2978,31 +2978,31 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 перепрыгивать. *atihāna* пропущенный.
 - **EN:** — With *ati*
 — 1〉 to leap over, overleap. *atihāna* overleaped.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ati-2)** — 2〉 stürzen von (Abl.) auf (Acc.).
 
 - **RU:** — 2〉 бросаться с (Abl.) на (Acc.).
 - **EN:** — 2〉 to plunge, rush down from (Abl.) upon (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ati-3)** — 3〉 sich hervorthun.
 
 - **RU:** — 3〉 выдаваться, отличаться.
 - **EN:** — 3〉 to distinguish oneself, excel.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ati-4)** — 4〉 übertreten (ein Gebot).
 
 - **RU:** — 4〉 преступать (заповедь).
 - **EN:** — 4〉 to transgress (a precept).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ati-5)** — 5〉 übergehen.
 
 - **RU:** — 5〉 обходить, пропускать.
 - **EN:** — 5〉 to pass over, go past, omit.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **adhi-1)** — Mit *anu*
 — 1〉 nacheilen, erhaschen, einfangen.
@@ -3011,25 +3011,25 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 гнаться за, настигать, захватывать.
 - **EN:** — With *anu*
 — 1〉 to hasten after, catch up with, snatch, capture.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **adhi-2)** — 2〉 Jmd folgen, sich anschliessen, sich fügen; mit Acc.
 
 - **RU:** — 2〉 следовать за кем-л., присоединяться, подчиняться; с Acc.
 - **EN:** — 2〉 to follow someone, attach oneself to, conform, comply; with Acc.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **apa)** — Mit *apa* enteilen, sich davon machen.
 
 - **RU:** — С *apa* умчаться, убраться прочь.
 - **EN:** — With *apa* to hurry away, make off.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **abhi)** — Mit *abhi* erwischen.
 
 - **RU:** — С *abhi* поймать, схватить.
 - **EN:** — With *abhi* to catch, seize.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ud-1)** — Mit *ud*
 — 1〉 auffahren, sich aufrichten, sich erheben ([NAIṢ. 7,37]), über Etwas (Acc.) hinaus.
@@ -3038,91 +3038,91 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 вскакивать, выпрямляться, подниматься ([NAIṢ. 7,37]), над чем-л. (Acc.) вверх.
 - **EN:** — With *ud*
 — 1〉 to start up, raise oneself, rise ([NAIṢ. 7,37]), above something (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ud-2)** — 2〉 sich öffnen (von Thüren).
 
 - **RU:** — 2〉 открываться (о дверях).
 - **EN:** — 2〉 to open (of doors).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ud-3)** — 3〉 hinausfahren, entweichen.
 
 - **RU:** — 3〉 вырываться наружу, ускользать.
 - **EN:** — 3〉 to dart out, escape.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ud-4)** — 4〉 in die Höhe richten.
 
 - **RU:** — 4〉 направлять вверх.
 - **EN:** — 4〉 to raise, direct upward.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **udabhi)** — Mit *atyud* sich erheben über (Acc.).
 
 - **RU:** — С *atyud* подниматься над (Acc.).
 - **EN:** — With *atyud* to rise above (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **udā)** — Mit *anūd* sich aufmachen nach (Acc.).
 
 - **RU:** — С *anūd* отправляться к (Acc.).
 - **EN:** — With *anūd* to set out for, make for (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **udsam)** — Mit *abhyud* mit Jmd (Acc.) sich erheben.
 
 - **RU:** — С *abhyud* подниматься вместе с кем-л. (Acc.).
 - **EN:** — With *abhyud* to rise up together with someone (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **upa-1)** — Mit *prod* hinauffahren, — schlagen (von der Flamme).
 
 - **RU:** — С *prod* взмывать вверх, вздыматься (о пламени).
 - **EN:** — With *prod* to dart up, leap up (of a flame).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **upa-2)** — Mit *pratyud* auffahren zu (Acc.).
 
 - **RU:** — С *pratyud* устремляться вверх к (Acc.).
 - **EN:** — With *pratyud* to start up to, leap toward (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ni-1)** — Mit *samud* sich erheben, so v. a. zum Vorschein kommen, erschallen [PRASANNAR. 133,5].
 
 - **RU:** — С *samud* подниматься, так v. a. появляться, раздаваться [PRASANNAR. 133,5].
 - **EN:** — With *samud* to rise up, so v. a. to appear, resound [PRASANNAR. 133,5].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ni-2)** — Mit *upa* hinabfahren —, herabsteigen auf (Acc.).
 
 - **RU:** — С *upa* спускаться вниз —, нисходить на (Acc.).
 - **EN:** — With *upa* to swoop down upon, descend upon (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ni-3)** — Mit *ni* hinunterfahren, sich ducken.
 
 - **RU:** — С *ni* нырять вниз, пригибаться.
 - **EN:** — With *ni* to dart down, crouch down.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ni-4)** — Desid. (*˚jihīṣate*) sich ducken wollen.
 
 - **RU:** — Desid. (*˚jihīṣate*) желать пригнуться.
 - **EN:** — Desid. (*˚jihīṣate*) wishing to crouch down.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **nis-ud)** — Mit *nis* und *anunis* herausfahren, emporsteigen.
 
 - **RU:** — С *nis* и *anunis* вырываться наружу, подниматься вверх.
 - **EN:** — With *nis* and *anunis* to dart out, rise up.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pari-1)** — Mit *parā* ausweichen in (Acc.).
 
 - **RU:** — С *parā* уклоняться в (Acc.).
 - **EN:** — With *parā* to dodge into, evade into (Acc.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra-1)** — Mit *pra*
 — 1〉 davon-, wegfahren.
@@ -3131,37 +3131,37 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 уноситься, удаляться.
 - **EN:** — With *pra*
 — 1〉 to dart off, dart away.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra-2)** — 2〉 losspringen.
 
 - **RU:** — 2〉 бросаться, прыгать.
 - **EN:** — 2〉 to spring off, leap forth.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati)** — Mit *atipra* hinüberreichen.
 
 - **RU:** — С *atipra* перекидываться через, достигать по ту сторону.
 - **EN:** — With *atipra* to reach across, extend over.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **vy-ud)** — Mit *abhipra* hinauffahren.
 
 - **RU:** — С *abhipra* взлетать вверх.
 - **EN:** — With *abhipra* to dart upward.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **vi-1)** — Mit *vi* auseinanderweichen, sich aufthun, klaffen.
 
 - **RU:** — С *vi* расходиться, раскрываться, зиять.
 - **EN:** — With *vi* to part asunder, open up, gape.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **vi-2)** — Caus. (*˚hāpayati*) öffnen, klaffen machen.
 
 - **RU:** — Caus. (*˚hāpayati*) открывать, разверзать.
 - **EN:** — Caus. (*˚hāpayati*) to open, cause to gape.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam-1)** — Mit *sam*
 — 1〉 sich aufrichten, sich aufraffen, aufstehen. Partic. *saṃhāna*.
@@ -3170,31 +3170,31 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 — 1〉 выпрямляться, встряхнуться, вставать. Partic. *saṃhāna*.
 - **EN:** — With *sam*
 — 1〉 to raise oneself up, rouse oneself, stand up. Partic. *saṃhāna*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam-2)** — 2〉 sich umherbewegen [BHĀG. P.]
 
 - **RU:** — 2〉 двигаться кругом, расхаживать [BHĀG. P.]
 - **EN:** — 2〉 to move about [BHĀG. P.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam-3)** — 3〉 theilhaftig werden [NALOD.]
 
 - **RU:** — 3〉 становиться причастным [NALOD.]
 - **EN:** — 3〉 to become possessed of, partake of [NALOD.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ut-sam)** — Mit *parisam* auffahren aus (Abl.).
 
 - **RU:** — С *parisam* вскакивать из (Abl.).
 - **EN:** — With *parisam* to start up out of (Abl.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati-2)** — Mit *pratisam* vor Jmd aufstehen.
 
 - **RU:** — С *pratisam* вставать перед кем-л.
 - **EN:** — With *pratisam* to stand up before someone.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -3509,49 +3509,49 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — e〉 быть побеждённым кем-л. (Instr.), уступать кому-л.
 - **EN:** e) Instr. to be defeated by, to be inferior to Instr. someone.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **f)** — f〉 ablassen —, abstehen von, untreu werden; mit Abl.
 
 - **RU:** — f〉 отступаться —, воздерживаться от, изменять; с Abl.
 - **EN:** f) to desist from, to abandon, to become unfaithful (to); with Abl.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **g)** — g〉 kommen um (Abl.)
 
 - **RU:** — g〉 лишаться (Abl.)
 - **EN:** g) to lose, to be deprived of Abl.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **h)** — h〉 Nichts wissen von (Abl.).
 
 - **RU:** — h〉 ничего не знать о (Abl.).
 - **EN:** h) to know nothing of Abl..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7〉 *parihīṇa* (häufig *˚hīna* geschrieben)
 
 - **RU:** — 7〉 *parihīṇa* (часто пишется *˚hīna*)
 - **EN:** 7) *parihīṇa* (often written *˚hīna*)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **7a)** — a〉 unterblieben, fehlend, geschwunden.
 
 - **RU:** — a〉 не состоявшийся, отсутствующий, исчезнувший.
 - **EN:** a) omitted, lacking, vanished.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **7b)** — b〉 sich enthaltend, es fehlen lassend an (*˚tas*).
 
 - **RU:** — b〉 воздерживающийся, допускающий недостаток в (*˚tas*).
 - **EN:** b) abstaining from, letting something be wanting in *˚tas*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **7c)** — c〉 ermangelnd, ohne — seiend (die Ergänzung im Abl., Instr. oder im Comp. vorangehend).
 
 - **RU:** — c〉 лишённый, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
 - **EN:** c) lacking, being without — (the complement preceding in the Abl., Instr., or in the Comp.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** 
 
@@ -3559,25 +3559,25 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 1〉 побуждать покидать, — отказываться [NAIṢ. 6,105].
 - **EN:** 1) to cause to abandon, — to give up [NAIṢ. 6,105].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2〉 unterbrechen, nicht zu Ende führen.
 
 - **RU:** — 2〉 прерывать, не доводить до конца.
 - **EN:** 2) to interrupt, not to carry through to the end.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus3)** — 3〉 Jmd um Etwas (Instr.) bringen.
 
 - **RU:** — 3〉 лишать кого-л. чего-л. (Instr.).
 - **EN:** 3) to deprive someone of something Instr..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **caus4)** — 4〉 *parihāpya* mit Ausnahme von (Acc.) [ĀPAST. 1,13,9. 17,15. 25,11. 30,14. 2,10,6. 14,1. 15,5]. [ĀPAST. ŚR. 12,4,5. 8].
 
 - **RU:** — 4〉 *parihāpya* за исключением (Acc.) [ĀPAST. 1,13,9. 17,15. 25,11. 30,14. 2,10,6. 14,1. 15,5]. [ĀPAST. ŚR. 12,4,5. 8].
 - **EN:** 4) *parihāpya* with the exception of Acc. [ĀPAST. 1,13,9. 17,15. 25,11. 30,14. 2,10,6. 14,1. 15,5]. [ĀPAST. ŚR. 12,4,5. 8].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra-intro)** — Mit *pra*
 - **EN:** With *pra*
@@ -3589,97 +3589,97 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 2〉 отпускать что-л., отказываться, отрекаться, нарушать (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), не соблюдать (обещание).
 - **EN:** 2) to let something go, to give up, to renounce, to violate (*dharmam* [60,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?60)), not to keep (a promise).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra3)** — 3〉 entlassen, schleudern.
 
 - **RU:** — 3〉 отпускать, метать.
 - **EN:** 3) to release, to hurl.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra4)** — 4〉 ungenau für Pass. weichen, schwinden.
 
 - **RU:** — 4〉 неточно вместо Pass. отступать, исчезать.
 - **EN:** 4) inaccurately for Pass. to yield, to vanish.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra5)** — 5〉 Pass.
 
 - **RU:** — 5〉 Pass.
 - **EN:** 5) Pass.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra5a)** — a〉 aufgegeben werden —, weichen von Jmd (Instr.).
 
 - **RU:** — a〉 быть оставленным —, отступать от кого-л. (Instr.).
 - **EN:** a) to be given up by —, to depart from someone Instr..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra5b)** — b〉 unterbleiben, versäumt werden.
 
 - **RU:** — b〉 не совершаться, быть упущенным.
 - **EN:** b) to be omitted, to be neglected.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra5c)** — c〉 schwinden, zu Nichte werden.
 
 - **RU:** — c〉 исчезать, обращаться в ничто.
 - **EN:** c) to vanish, to come to nought.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra5d)** — d〉 den Kürzeren ziehen, unterliegen (im Wettkampfe).
 
 - **RU:** — d〉 потерпеть поражение, проигрывать (в состязании).
 - **EN:** d) to draw the short straw, to be defeated (in a contest).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6)** — 6〉 *prahīṇa*
 
 - **RU:** — 6〉 *prahīṇa*
 - **EN:** 6) *prahīṇa*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6a)** — a〉 verlassen, so v. a. allein stehend, keine Angehörigen habend [VASIṢṬHA 16,19].
 
 - **RU:** — a〉 покинутый, так v. a. одиноко стоящий, не имеющий близких [VASIṢṬHA 16,19].
 - **EN:** a) abandoned, thus v. a. standing alone, having no relatives [VASIṢṬHA 16,19].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6b)** — b〉 verlassen, so v. a. liegen geblieben.
 
 - **RU:** — b〉 покинутый, так v. a. оставшийся лежать.
 - **EN:** b) abandoned, thus v. a. left lying.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6c)** — c〉 abgelegt, abgetragen (Kleid) [GAUT. 3,19].
 
 - **RU:** — c〉 снятый, изношенный (одежда) [GAUT. 3,19].
 - **EN:** c) laid aside, worn out (a garment) [GAUT. 3,19].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6d)** — d〉 nicht zu Stande kommend mit Etwas (Instr.).
 
 - **RU:** — d〉 не справляющийся с чем-л. (Instr.).
 - **EN:** d) not coming about with something Instr..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6e)** — e〉 geschwunden [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
 
 - **RU:** — e〉 исчезнувший [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
 - **EN:** e) vanished [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra6f)** — f〉 am Ende eines Comp. ermangelnd, ohne — seiend.
 
 - **RU:** — f〉 в конце Comp. лишённый, не имеющий.
 - **EN:** f) at the end of a Comp., lacking, being without —.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **pra7)** — 7〉 *prajahita* s. bes.
 
 - **RU:** — 7〉 *prajahita* s. bes.
 - **EN:** 7) *prajahita* s. bes.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati-intro)** — Mit *vipra*
 - **EN:** With *vipra*
@@ -3691,31 +3691,31 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 2〉 *viprahīṇa* (обычно *˚hīna*)
 - **EN:** 2) *viprahīṇa* (usually *˚hīna*)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati2a)** — a〉 ausgeschlossen von (Abl.).
 
 - **RU:** — a〉 исключённый из (Abl.).
 - **EN:** a) excluded from Abl..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati2b)** — b〉 geschwunden, dahin seiend.
 
 - **RU:** — b〉 исчезнувший, миновавший.
 - **EN:** b) vanished, gone.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **prati2c)** — c〉 ermangelnd, ohne — seiend; die Ergänzung im Instr.
 
 - **RU:** — c〉 лишённый, не имеющий; дополнение в Instr.
 - **EN:** c) lacking, being without —; the complement in the Instr.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **vi-prati)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
 
 - **RU:** — С *saṃpra* покидать [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
 - **EN:** With *saṃpra* to abandon [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **vi-intro)** — Mit *prati*
 - **EN:** With *prati*
@@ -3736,127 +3736,127 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 2〉 отпускать что-л., отказываться, отрекаться.
 - **EN:** 2) to let something go, to give up, to renounce.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam3)** — 3〉 Etwas loswerden, verlieren, kommen um, sich befreien von; mit Acc.
 
 - **RU:** — 3〉 избавляться от чего-л., терять, лишаться, освобождаться от; с Acc.
 - **EN:** 3) to get rid of something, to lose, to be deprived of, to free oneself from; with Acc.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam4)** — 4〉 liegen lassen.
 
 - **RU:** — 4〉 оставлять лежать.
 - **EN:** 4) to leave lying.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam5)** — 5〉 ablegen, abthun.
 
 - **RU:** — 5〉 снимать, откладывать в сторону.
 - **EN:** 5) to lay aside, to discard.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam6)** — 6〉 verschmähen.
 
 - **RU:** — 6〉 пренебрегать.
 - **EN:** 6) to disdain.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam7)** — 7〉 abstehen von (Abl.).
 
 - **RU:** — 7〉 воздерживаться от (Abl.).
 - **EN:** 7) to desist from Abl..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam8)** — 8〉 ein Thätigkeit einstellen.
 
 - **RU:** — 8〉 прекращать деятельность.
 - **EN:** 8) to cease an activity.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9)** — 9〉 *vihāya* mit Acc.
 
 - **RU:** — 9〉 *vihāya* с Acc.
 - **EN:** 9) *vihāya* with Acc.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9a)** — a〉 hinter sich lassend, so v. a. in einer Entfernung von.
 
 - **RU:** — a〉 оставляя позади себя, так v. a. на расстоянии от.
 - **EN:** a) leaving behind, thus v. a. at a distance of.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9b)** — b〉 ohne zu beachten, mit Hintansetzung —, mit Umgehung von zu [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
 
 - **RU:** — b〉 не принимая во внимание, с пренебрежением —, в обход к [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
 - **EN:** b) without heeding, with disregard of —, with evasion of, to [Spr. 1225](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1225).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9c)** — c〉 trotz.
 
 - **RU:** — c〉 несмотря на.
 - **EN:** c) despite.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9d)** — d〉 mit Ausnahme von.
 
 - **RU:** — d〉 за исключением.
 - **EN:** d) with the exception of.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam9e)** — e〉 bei Seite lassend, so v. a. mehr als.
 
 - **RU:** — e〉 откладывая в сторону, так v. a. более чем.
 - **EN:** e) leaving aside, thus v. a. more than.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam10)** — 10〉 Pass.
 
 - **RU:** — 10〉 Pass.
 - **EN:** 10) Pass.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam10a)** — a〉 zurückbleiben.
 
 - **RU:** — a〉 отставать.
 - **EN:** a) to remain behind.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam10b)** — b〉 Jmd (Abl.) nachstehen.
 
 - **RU:** — b〉 уступать кому-л. (Abl.).
 - **EN:** b) to be inferior to someone Abl..
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam10c)** — c〉 eine Einbusse erleiden, verloren, gehen.
 
 - **RU:** — c〉 нести потерю, пропадать.
 - **EN:** c) to suffer a loss, to be lost.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam11)** — 11〉 *vihīna*
 
 - **RU:** — 11〉 *vihīna*
 - **EN:** 11) *vihīna*
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam11a)** — a〉 niedrig stehend, gemein. *˚varṇa* [GAUT. 23,14].
 
 - **RU:** — a〉 низкого положения, низкий. *˚varṇa* [GAUT. 23,14].
 - **EN:** a) standing low, base, common. *˚varṇa* [GAUT. 23,14].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam11b)** — b〉 mangelnd, fühlend.
 
 - **RU:** — b〉 испытывающий нужду, ощущающий недостаток.
 - **EN:** b) wanting, feeling the lack of.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam11c)** — c〉 ermangelnd, ohne — seiend, beraubt —, getrennt —, frei von (Instr., Abl. oder im Comp. vorangehend).
 
 - **RU:** — c〉 лишённый, не имеющий, лишённый —, отделённый —, свободный от (Instr., Abl. или предшествует в Comp.).
 - **EN:** c) lacking, being without —, deprived of —, separated from —, free from — (Instr., Abl., or preceding in the Comp.).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **note1)** Caus. s. *vihāpita* [Nachtr. 6].
 - **EN:** Caus. s. *vihāpita* [Nachtr. 6].
@@ -3865,7 +3865,7 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — Desid. желать покинуть кого-л. [HEM. PAR. 1,441].
 - **EN:** Desid. to wish to abandon someone [HEM. PAR. 1,441].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-intro)** — Mit *pravi*.
 - **EN:** With *pravi*.
@@ -3877,19 +3877,19 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 2〉 отпускать что-л., отказываться.
 - **EN:** 2) to let something go, to give up.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **abhi3)** — 3〉 *pravihāya* mit Hintansetzung —, mit Uebergehung von.
 
 - **RU:** — 3〉 *pravihāya* с пренебрежением —, в обход.
 - **EN:** 3) *pravihāya* with disregard of —, with passing over of.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **ut)** — Mit *prativi* Etwas fahren lassen, aufgeben.
 
 - **RU:** — С *prativi* отпускать что-л., отказываться.
 - **EN:** With *prativi* to let something go, to give up.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **sam-abhi-intro)** — Mit *sam*
 - **EN:** With *sam*
@@ -3901,7 +3901,7 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** — 2〉 отказываться, отрекаться.
 - **EN:** 2) to give up, to renounce.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **desid-final)** verlassen wollen [CARAKA. 424,19] (*kāntaṃ vā saṃjihāsatām* zu lesen).
 - **EN:** Desid. to wish to abandon [CARAKA. 424,19] (read as *kāntaṃ vā saṃjihāsatām*).
@@ -3909,64 +3909,64 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 **caus)** — Caus.
 
 - **RU:** — Caus.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T18-1)** — Mit *pra*
 — 1〉 verlassen.
 
 - **RU:** — С *pra*
 — 1〉 покидать.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T36-1)** — Mit *vipra*
 — 1〉 verlassen, aufgeben, entsagen.
 
 - **RU:** — С *vipra*
 — 1〉 покидать, отказываться, отрекаться.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T43-1)** — Mit *prati*
 — 1〉 verlassen, so v. a. unbeachtet lassen.
 
 - **RU:** — С *prati*
 — 1〉 покидать, так v. a. оставлять без внимания.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T43-2)** — 2〉 Pass. den Kürzeren ziehen, hinter Jmd (Abl.) zurückbleiben (im Wettfluge).
 
 - **RU:** — 2〉 Pass. потерпеть поражение, отставать от кого-л. (Abl.) (в состязании в беге).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T47-1)** — Mit *vi*
 — 1〉 zurücklassen, verlassen ([GAUT.]), im Stich lassen. *śarīram* u. s. w., *prāṇān*, *asūn* so v. a. sterben.
 
 - **RU:** — С *vi*
 — 1〉 оставлять позади, покидать ([GAUT.]), бросать в беде. *śarīram* u. s. w., *prāṇān*, *asūn* так v. a. умирать.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **addenda-ptcp)** — Caus. s. *vihāpita* [Nachtr. 6].
 
 - **RU:** — Caus. s. *vihāpita* [Nachtr. 6].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T75-1)** — Mit *pravi*.
 — 1〉 Jmd verlassen.
 
 - **RU:** — С *pravi*.
 — 1〉 покидать кого-л.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **mit-T78-1)** — Mit *sam*
 — 1〉 zusammen verlassen [ĀPAST. GṚHY. 19,11].
 
 - **RU:** — С *sam*
 — 1〉 покидать вместе [ĀPAST. GṚHY. 19,11].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **desid-end)** — Desid. verlassen wollen [CARAKA. 424,19] (*kāntaṃ vā saṃjihāsatām* zu lesen).
 
 - **RU:** — Desid. желать покидать [CARAKA. 424,19] (*kāntaṃ vā saṃjihāsatām* zu lesen).
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -3977,19 +3977,19 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** **3.** *hā*¦ Interj. боли, изумления и удовольствия. До и после Voc.; с последующим Acc. горе! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
 - **EN:** 3. *****hā*¦ Interj. an exclamation of pain, of astonishment, and of satisfaction. Before and after a Voc.; with a following Acc. woe upon! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **viprati)** **2.** √*hā*¦ mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18].
 
 - **RU:** **2.** √*hā*¦ с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18].
 - **EN:** 2. ****√*hā*¦ with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **abhivi)** — Mit *abhivi* verlassen [KIR. 10,1].
 
 - **RU:** — С *abhivi* покидать [KIR. 10,1].
 - **EN:** With *abhivi* to abandon [KIR. 10,1].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -4000,7 +4000,7 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** 2. hā¦ с viprati, ˚hīna свободный от... (предшествует в сложении), [Divyāvad. 95,18.] — С abhivi покидать, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
 - **EN:** 2. hā¦ with viprati, ˚hīna free from… (preceding in the comp.), [Divyāvad. 95,18.] — With abhivi to abandon, [Kir. 10,1.] [[Yudh. 2,90.]]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 ## hā
 
@@ -4011,4 +4011,4 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 - **RU:** **2.** *hā*¦ с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18]. — С *abhivi* покидать [KIR. 10,1].
 - **EN:** 2. *****hā*¦ with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18]. — With *abhivi* to abandon [KIR. 10,1].
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

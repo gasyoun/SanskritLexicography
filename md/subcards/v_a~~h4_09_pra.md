@@ -100,10 +100,10 @@
 [10,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,35) [9,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,7) [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789) *etābhiḥ sarvamidamotaṃ protaṃ ca* "interwoven, traversed"
 [MAITRYUP. 6,3.] [NṚS. TĀP. UP.] in [Ind. St. 9,158. fg.] *prota* "woven stuff, a woven garment", _m._
 [H. 667.](https://sanskrit-lexicon-scans.github.io/abch2/app1?667) _n._ [H. an.] [MED.]
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
 
 - **RU:** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
 - **EN:** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>

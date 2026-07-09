@@ -32,7 +32,7 @@
 [AIT. BR. 6,9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,9) [8,24.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,24) *ghṛtakulyā madhukulyāḥ pitṝnsvadhā abhivahanti*
 [ŚAT. BR. 11,5,6,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,4) *tato 'bhyavahadavyagrau vairāṭiḥ savyasācinam . yatrātiṣṭhatkṛpaḥ*
 [MBH. 4,1757. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1757) Vgl. *abhivahana, abhivāhya, abhyūḍhi*.
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. zubringen (eine Zeit) fehlerhaft für *ati*
 [RĀJA-TAR. 1,332](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,332) (wo ausserdem zu lesen ist *satrayodaśavāsarā*) und

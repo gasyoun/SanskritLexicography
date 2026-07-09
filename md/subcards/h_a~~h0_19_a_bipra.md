@@ -10,4 +10,4 @@
 [ŚĀṄKH. ŚR. 12,17,4.]
 - **EN:** *abhipra* to ride/drive up onto, mount upon: *abhīva svaḥ prajihīte*
 [ŚĀṄKH. ŚR. 12,17,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

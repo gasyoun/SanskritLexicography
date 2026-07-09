@@ -13,7 +13,7 @@
 - **EN:** — *upā*
  1) to instruct, to assign: (Drupada speaks to Yudhiṣṭhira) *bhavānvā vidhivatpāṇiṃ gṛhṇātu duhiturmama . yasya vā manyase vīra tasya kṛṣṇāmupādiśa*
 [MBH. 1,7239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7239)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anzeigen, mittheilen, verkünden: *iti rājña upadiśya viprā jātakakovidāḥ*
 [BHĀG. P. 1,12,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,29)
@@ -22,7 +22,7 @@
 [BHĀG. P. 1,12,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,29)
 - **EN:** — 2) to indicate, communicate, proclaim: *iti rājña upadiśya viprā jātakakovidāḥ*
 [BHĀG. P. 1,12,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,29)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Etwas vorschreiben oder Jmd anweisen, einen Befehl ertheilen: *tapasyupadiṣṭa* (kann loc. und nom. _m._ sein) *ivādadhe manaḥ*
 [BHĀG. P. 2,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,7)
@@ -31,4 +31,4 @@
 [BHĀG. P. 2,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,7)
 - **EN:** — 3) to prescribe something or to instruct someone, to issue a command: *tapasyupadiṣṭa* (can be loc. and nom. _m._) *ivādadhe manaḥ*
 [BHĀG. P. 2,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,7)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

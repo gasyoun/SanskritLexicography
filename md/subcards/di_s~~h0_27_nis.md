@@ -22,7 +22,7 @@
 [ŚĀK. 63,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,15) [75,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?75,1) [110,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,4)
 [MĀLAV. 50,18.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?50,18) *pīṭhamāsanne niradikṣat* thus v. a. to instruct
 [BHAṬṬ. 15,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,8)
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas anweisen, bestimmen: *idaṃ daśarathāya nirdiṣṭaṃ pāyasaṃ mayā*
 [R. GORR. 1,15,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,15,18) *sūryaprabhastu prāsādaḥ — lakṣmaṇāyāḥ — nirdiṣṭaḥ śārṅgadhanvanā*
@@ -37,7 +37,7 @@
 [R. GORR. 1,15,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,15,18) *sūryaprabhastu prāsādaḥ — lakṣmaṇāyāḥ — nirdiṣṭaḥ śārṅgadhanvanā*
 [HARIV. 8985.](https://sanskrit-lexicon-scans.github.io/hariv?8985) *svakarmaphalanirdiṣṭaṃ tato jātyantaraṃ gatāḥ*
 [MĀRK. P. 15,79.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,79)
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) bezeichnen, angeben, näher bestimmen, nennen: *ime pañceme catvāro 'sāveka iti nirdiśeyuḥ*
 [PAÑCAV. BR. 10,3.] *nirdiśyāpahnute ca yaḥ*
@@ -127,7 +127,7 @@
 [SUŚR. 1,9,11. 10,9. 14,14.] *dharmasthaḥ kāraṇairetairhīnaṃ tamapi nirdiśet* him too he declares to be inferior
 [M. 8,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,57) *(tāni) sparśe medhyāni nirdiśet* to regard as, take as
 [5,133.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,133) [3,199.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,199) [VET. 16,16.]
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) verkünden, ankündigen, voraussagen: *mānuṣānmṛtyureteṣāṃ nirdiṣṭo brahmaṇā purā*
 [MBH. 3,12211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12211) *śākhābhaṅge 'kasmādvṛkṣāṇāṃ nirdiśedraṇodyogam*
@@ -139,7 +139,7 @@
 - **EN:** — 4) to proclaim, announce, predict: *mānuṣānmṛtyureteṣāṃ nirdiṣṭo brahmaṇā purā*
 [MBH. 3,12211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12211) *śākhābhaṅge 'kasmādvṛkṣāṇāṃ nirdiśedraṇodyogam*
 [VARĀH. BṚH. S. 45,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,25)
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) von Etwas (acc.) auf Etwas (dat.) aussagen, von Etwas aussagen, dass es Etwas bewirken werde: *(daityaḥ samāgataḥ) paścātkarṣakasevakavījanāśāya nirdiṣṭaḥ*
 [VARĀH. BṚH. S. 5,34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,34) *(ulkā) nakṣatragrahaghāte tadbhaktīnāṃ kṣayāya nirdiṣṭā*
@@ -151,7 +151,7 @@
 - **EN:** — 5) of something (acc.) to state with regard to something (dat.), to state of something that it will bring about something: *(daityaḥ samāgataḥ) paścātkarṣakasevakavījanāśāya nirdiṣṭaḥ*
 [VARĀH. BṚH. S. 5,34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,34) *(ulkā) nakṣatragrahaghāte tadbhaktīnāṃ kṣayāya nirdiṣṭā*
 [32,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,17)
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) Jmd Etwas anrathen, mit dopp. acc.: *ya ādāveva bhūpatim . yuddhodyamaṃ svabhūtyāgaṃ nirdiśati*
 [HIT. III,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,39)
@@ -160,7 +160,7 @@
 [HIT. III,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,39)
 - **EN:** — 6) to advise someone of something, with dopp. acc.: *ya ādāveva bhūpatim . yuddhodyamaṃ svabhūtyāgaṃ nirdiśati*
 [HIT. III,39.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,39)
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *nirdeśa, nirdeśya* . — desid. *nirdidikṣati* angeben —, näher bestimmen wollen
 [ŚAṂK.] zu [BṚH. ĀR. UP. p. 152.]
@@ -169,4 +169,4 @@
 [ŚAṂK.] к [BṚH. ĀR. UP. p. 152.]
 - **EN:** — Vgl. *nirdeśa, nirdeśya* . — desid. *nirdidikṣati* to wish to indicate —, to wish to define more closely
 [ŚAṂK.] to [BṚH. ĀR. UP. p. 152.]
-  <sub>DCS 523 · attested</sub>
+  <sub>attested</sub>

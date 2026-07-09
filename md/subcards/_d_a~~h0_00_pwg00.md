@@ -163,7 +163,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 ([HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) and in *durdhita, nemadhita, mitra˚, vasu˚*) and later *hita* (s. d. bes.)
 [P. 7,4,42.](https://ashtadhyayi.com/sutraani/7/4/42)
 [VOP. 26,122](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,122);
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) setzen, legen, stellen; setzen —, legen in, auf (loc.); act.: *imaṃ jīvebhyaḥ paridhiṃ dadhāmi*
 [ṚV. 10,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04) *dadho yatketumupamaṃ samatsu*
@@ -253,7 +253,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* the seed is introduced from behind to the front
 [TS. 2,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,3) to lie in, to be contained in: *evaṃ sarvamahiṃsāyāṃ dharmārthamapi dhīyate*
 [MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinbringen zu, hinschaffen zu (loc.); act.: *imaṃ no yajñamamṛteṣu dhehi*
 
@@ -283,7 +283,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [ṚV. 3,50,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.050.html#rv03.050.02) *draviṇeha dhattāt*
 [8,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.01) [ŚAT. BR. 11,5,5,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,6) *grīvāsu tadgaṇḍaṃ dadhyāt* thereby he hangs a goitre around his neck
 [AIT. BR. 1,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,25)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd an einen Ort oder in einen Zustand versetzen, Jmd verhelfen zu, bringen in, — zu (loc. dat.); act.: *asmā amṛtatve dadhātana*
 [ṚV. 5,55,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.04) [1,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.07) *dyāvāpṛthivī ame dhāḥ*
@@ -331,4 +331,4 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [2,23,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.14) *gobhirmimikṣuṃ dadhire supāramindraṃ jyaiṣṭhyāya dhāyase gṛṇānāḥ*
 [3,50,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.050.html#rv03.050.03) to cause to: *indraṃ vāṇīḥ satrā rājānaṃ dadhire sahadhyai*
 [7,31,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12) [6,67,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

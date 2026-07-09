@@ -18,7 +18,7 @@
 - **EN:** 1) to halt, to encamp (for the night): *tarostale*
 [KATHĀS. 25,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,87) *sāyam*
 [28,120.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,120) [56,390.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,390) [57,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,73) [109,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,82)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen, zum Aufenthaltsort erwählen, bewohnen: *āśramam*
 [R. 2,54,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,41) *puram*
@@ -43,7 +43,7 @@ v. l.).
 [R. 2,54,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,41) *puram*
 [KĀM. NĪTIS. 4,57] (text and Comm. *samāvaśet)*.
 [BHĀG. P. 3,22,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,32) *brahmakulam*
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *samā*
  1) Halt machen, sich lagern (für die Nacht): *tarostale*
@@ -59,4 +59,4 @@ v. l.).
 (v. l. *samāvāsito) vartate*
 [HIT. 97,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?97,15) [39,5](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,5) (here the same
 v. l.).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

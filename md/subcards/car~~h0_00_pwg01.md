@@ -58,7 +58,7 @@
 [HARIV. 3548.](https://sanskrit-lexicon-scans.github.io/hariv?3548) *vihāya kāmānyaḥ sarvānpumāṃścarati niḥspṛhaḥ*
 [BHAG. 2,71.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,71) *sa svāminamavajñāya carecca niravagrahaḥ*
 [HIT. II,94.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,94)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) leben, sein, sich befinden; von einem länger dauernden Zustande und von einem beweglichen oder lebenden Subjecte gebraucht: *atha śuṣkāsyā cara*
 [AV. 6,139,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.139.html#av06.139.02) *agadaścara*
@@ -97,7 +97,7 @@
 [M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) *svasti caranti*
 [BHĀG. P. 3,1,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,35) to be situated, stand, be of stars: *āśleṣāsu caran*
 [VARĀH. BṚH. S. 9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28) [10,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,15) [18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,18)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) an Etwas gehen, sich an Etwas machen, üben, treiben, vollziehen; sich einer Sache unterziehen; (im Handeln) beobachten; mit dem acc.: *yatkiṃ cedaṃ daivye jane 'bhidrohaṃ carāmasi*
 [ṚV. 7,89,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.089.html#rv07.089.05) [10,164,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.164.html#rv10.164.04) *yena dhanena prapaṇaṃ carāmi*
@@ -235,7 +235,7 @@
 [PAÑCAT. 229,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?229,17) Hence probably *car* to eat
 [DHĀTUP. 15,51](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15), v. l.; vgl. however u. *ā*.* tapasā indriyagrāmaṃ yaścaret* to subject the sense-organs to austerities, to mortify
 [MBH. 14,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.544)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) euphem. mit Auslassung von *mithuna* (s. u.
 [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5)): es zu thun haben mit: *ratvā caritvā*
@@ -250,7 +250,7 @@
 [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5)): to have to do with: *ratvā caritvā*
 [ŚAT. BR. 14,7,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,17) *yadanyasya satyanyena carati (strī)* if she belongs to the one and has to do with another
 [2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) Jmd (acc.) zu Etwas (acc.) machen: *vayaṃ narendraṃ satyasthaṃ bharata carāma* wollen
 
@@ -268,7 +268,7 @@ wir dahin wirken, dass der König seinem Worte getreu bleibe,
 to work toward the king remaining true to his word,
 [R. 2,107,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,19)
 [GORR. 2,115,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,115,19) reads *nṛpa karavāma* st. *bharata carāma*.
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) auskundschaften (vgl. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
 [R. 6,6,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,6,16) *balam . sukhasuptaṃ samāsādya caritaṃ prathamaṃ caraiḥ*
@@ -280,4 +280,4 @@ to work toward the king remaining true to his word,
 - **EN:** — 8) to spy out, reconnoitre (vgl. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
 [R. 6,6,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,6,16) *balam . sukhasuptaṃ samāsādya caritaṃ prathamaṃ caraiḥ*
 [7,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,21)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

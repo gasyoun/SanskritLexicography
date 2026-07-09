@@ -16,10 +16,10 @@
 [AIT. BR. 2,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,1) to find, discover: *jyotiranu prajānan*
 [ṚV. 3,26,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.026.html#rv03.026.08) *na haitaṃ daivamātmānamanuprajānīyāt*
 [ŚAT. BR. 7,4,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,19)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *anuprajñāna* .
 
 - **RU:** — Vgl. *anuprajñāna* .
 - **EN:** — Vgl. *anuprajñāna*.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

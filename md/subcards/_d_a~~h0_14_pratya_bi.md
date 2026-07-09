@@ -10,7 +10,7 @@
  1) to draw back to oneself, to withdraw into oneself again: *viśvam — pratyabhidhāsyati*
 [BHĀG. P. 3,7,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,4) Vgl. u. *abhi*
 6.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erwiedern, antworten: *pratyabhyadhatta* [BHĀG. P. 4,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,15) *mayā pratyabhihitā* [ŚĀK. 84,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?84,14)
 
@@ -18,11 +18,11 @@
 - **EN:** — 2) to reply, to answer: *pratyabhyadhatta*
 [BHĀG. P. 4,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,15) *mayā pratyabhihitā*
 [ŚĀK. 84,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?84,14)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) seine Zustimmung geben: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
 
 - **RU:** — 3) давать своё согласие: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
 - **EN:** — 3) to give one's assent: *mayā ca pratyabhihitam*
 [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

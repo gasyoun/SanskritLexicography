@@ -10,4 +10,4 @@
 [WEBER, KṚṢṆAJ. 228.]
 - **EN:** — *upā* (out of metr. considerations, instead of *upa*) to fast
 [WEBER, KṚṢṆAJ. 228.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

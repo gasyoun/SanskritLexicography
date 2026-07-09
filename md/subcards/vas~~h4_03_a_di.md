@@ -55,7 +55,7 @@
 [11,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,61) *sahāsanaṃ gotrabhidādhyavātsīt* took, together with Indra, the same seat
 [BHAṬṬ. 1,3.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,3) *kathaṃ parṇavṛtāṃ bhūmimadhivatsyati me snuṣā* to lie on the ground
 [R. GORR. 2,62,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,13) [BHAṬṬ. 8,79.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,79) [15,69.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,69) partic. *adhyuṣita*
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) besetzt, eingenommen, innegehabt (von einem Orte), bewohnt: *bharatādhyuṣitaṃ pūrvaṃ so 'dhyatiṣṭhatpurottamam*
 [MBH. 1,3736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3736) [3,2464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2464) [12208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12208) [13,2666.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2666)
@@ -79,7 +79,7 @@
 [VARĀH. BṚH. S. 53,98.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,98) *marutā paritāpakṛtādhyuṣite — yamunāpuline* so v. a. where a wind blows
 [PAÑCAR. 3,12,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,12,4) *anuttamenādhyuṣitaḥ* (*bāhuḥ*) *priyeṇa vīreṇa* on which the beloved lay
 [R. 5,28,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,14)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) geweilt —, zugebracht habend: *saṃvatsaraṃ cādhyuṣitā rāghavasya niveśane*
 [R. 3,53,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,3) *ciram*
@@ -94,7 +94,7 @@
 [R. 3,53,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,3) *ciram*
 [R. SCHL. 2,30,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,8) dwelling in: *dvārakām*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) dem man obliegt: *pramadādhyuṣitāṃ vṛttim*
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
@@ -103,7 +103,7 @@
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
 - **EN:** 3) that one attends to, that is incumbent upon one: *pramadādhyuṣitāṃ vṛttim*
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *amlādhyuṣita* _n._ (sc. *netra*) eine durch Genuss saurer Speise erzeugte Augenentzündung
 [WISE 293.]
@@ -115,13 +115,13 @@
 - **EN:** 4) *amlādhyuṣita* _n._ (sc. *netra*) an inflammation of the eye produced by eating sour food
 [WISE 293.]
 [SUŚR. 2,305,8. 315,1.]
-  <sub>DCS 80 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **intro)** — Vgl. 1. *adhivāsa, samayādhyuṣita* . — caus.
 
 - **RU:** — Vgl. 1. *adhivāsa, samayādhyuṣita* . — caus.
 - **EN:** — Vgl. 1. *adhivāsa, samayādhyuṣita*. — caus.
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) über Nacht liegen lassen: *adhivāsyāparedyuḥ pāṭayitvā*
 [SUŚR. 1,32,9.] *adhivāsita*
@@ -133,7 +133,7 @@
 - **EN:** 1) to let lie overnight: *adhivāsyāparedyuḥ pāṭayitvā*
 [SUŚR. 1,32,9.] *adhivāsita*
 [VARĀH. BṚH. S. 26,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?26,1)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) einweihen (ein neues Götterbild): *suptāṃ* (*pratimāṃ*) *sunṛtyagītairjāgarakaiḥ samyagevamadhivāsya . daivajñasaṃpradiṣṭe kāle saṃsthāpanaṃ kuryāt*
 
@@ -145,7 +145,7 @@
 - **EN:** 2) to consecrate (a new image of a god): *suptāṃ* (*pratimāṃ*) *sunṛtyagītairjāgarakaiḥ samyagevamadhivāsya . daivajñasaṃpradiṣṭe kāle saṃsthāpanaṃ kuryāt*
 
 [VARĀH. BṚH. S. 60,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?60,15)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) heimsuchen: *vaidhavyenādhivāsitā*
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
@@ -154,7 +154,7 @@
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
 - **EN:** 3) to visit, to afflict: *vaidhavyenādhivāsitā*
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich einverstanden erklären mit Jmd (gen.), Jmd willfahren
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā* .
@@ -163,4 +163,4 @@
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā* .
 - **EN:** 4) to declare oneself in agreement with someone (gen.), to comply with someone's wishes
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā*.
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>

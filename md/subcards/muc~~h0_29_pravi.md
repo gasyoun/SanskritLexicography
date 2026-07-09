@@ -20,7 +20,7 @@
 [VID. 103.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?103) to let something go, release, give up: *pravimucya śākhām*
 [MBH. 3,15602.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15602) *śarīram*
 [KATHĀS. 36,111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,111)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MĀRK. P. 109,31.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,31) pass. sich befreien von: *duḥsvapnātpravimucyate*
 [SUŚR. 1,111,16.]

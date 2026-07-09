@@ -35,4 +35,4 @@
 [KĀṬH. 31,3.] *sukho vāto 'bhivāti mām*
 [MBH. 4,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2238) *purābhivāti māruto yamasya yaḥ puraḥsaraḥ*
 [12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

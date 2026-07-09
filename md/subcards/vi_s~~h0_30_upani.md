@@ -7,7 +7,7 @@
 
 - **RU:** — *upani*, partic. *˚viṣṭa*
 - **EN:** — *upani*, partic. *˚viṣṭa*
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) belagernd, einschliessend: mit acc.: *laṅkāmupaniviṣṭe ca rāme*
 [R. 6,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,26)
@@ -16,7 +16,7 @@
 [R. 6,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,26)
 - **EN:** 1) besieging, enclosing: with acc.: *laṅkāmupaniviṣṭe ca rāme*
 [R. 6,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,26)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erfüllend, mit acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
 [MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248)
@@ -25,7 +25,7 @@
 [MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248)
 - **EN:** 2) filling, with acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
 [MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) erfüllt von: *bhāratādīni varṣāṇi nadībhiḥ parvataistathā . bhūtaiścopaniviṣṭāni gatimadbhirdhruvaistathā ..*
 [Verz. d. Oxf. H. 48,a,42. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?48)
@@ -34,13 +34,13 @@
 [Verz. d. Oxf. H. 48,a,42. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?48)
 - **EN:** 3) filled with: *bhāratādīni varṣāṇi nadībhiḥ parvataistathā . bhūtaiścopaniviṣṭāni gatimadbhirdhruvaistathā ..*
 [Verz. d. Oxf. H. 48,a,42. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?48)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *upaniveśin* . — caus.
 
 - **RU:** — Vgl. *upaniveśin* . — caus.
 - **EN:** — Vgl. *upaniveśin*. — caus.
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** 1) sich an einem Orte lagern lassen: *senām*
 [R. 7,25,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,25,52)
@@ -49,7 +49,7 @@
 [R. 7,25,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,25,52)
 - **EN:** 1) to let encamp in a place: *senām*
 [R. 7,25,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,25,52)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2) anlegen, gründen (eine Stadt)
 [RAGH. 15,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,29)
@@ -58,4 +58,4 @@
 [RAGH. 15,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,29)
 - **EN:** 2) to found, establish (a city)
 [RAGH. 15,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,29)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

@@ -76,7 +76,7 @@
 [R. 6,100,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,2) *vijitāripura*
 [RAGH. 1,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,59) *bhujavijitavimāna*
 [12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besiegen, überwinden: *yena devānmanuṣyāṃśca pārtho vijayate mṛdhe*
 [MBH. 4,1345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1345) [1,7970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7970)
@@ -175,7 +175,7 @@
 [R. 1,6,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,6,3) [63,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,63,21) *vijitātman* Beiw. Śiva's
 [ŚIV.] *vijitāsana* who has overcome his seat, to whom it is all one what he sits on
 [BHĀG. P. 3,28,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,8)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) siegen: *yasmānna ṛte vijayante janāsaḥ*
 [ṚV. 2,12,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.012.html#rv02.012.09) *utāparībhyo maghavā vi jigye*
@@ -262,7 +262,7 @@ Vgl. *vijaya, vijigīṣā, vijeṣa* .
 [HARIV. 4977.](https://sanskrit-lexicon-scans.github.io/hariv?4977) —
 
 Vgl. *vijaya, vijigīṣā, vijeṣa* .
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *vi* med.
 [P. 1,3,19.](https://ashtadhyayi.com/sutraani/1/3/19)
@@ -271,4 +271,4 @@ Vgl. *vijaya, vijigīṣā, vijeṣa* .
 - **RU:** — *vi* med.
 [P. 1,3,19.](https://ashtadhyayi.com/sutraani/1/3/19)
 [VOP. 23,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,1)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

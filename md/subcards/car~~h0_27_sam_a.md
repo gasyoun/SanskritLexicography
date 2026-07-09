@@ -16,7 +16,7 @@
  1) to proceed, go to work: *evaṃ samācaran*
 [MBH.] in [LA. 48,16.] [PAÑCAT. 79,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?79,23) *yasya yasya hi yo bhāvastena tena samācaret*
 [I,78.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,78)
-  <sub>DCS 472 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) an Etwas gehen, thun, üben, verrichten, vollziehen: *śubhaṃ karma*
 [M. 11,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,231) *ninditam*
@@ -145,4 +145,4 @@
 [DAŚAK.] in [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* to put far away, banish
 [M. 4,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,151)
 — Vgl. *samācara* u. s. w.
-  <sub>DCS 472 · attested</sub>
+  <sub>attested</sub>

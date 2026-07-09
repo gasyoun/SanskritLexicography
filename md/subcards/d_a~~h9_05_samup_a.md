@@ -10,4 +10,4 @@
 - **RU:** — *samupā*
  1) брать
 [BENFEY.]
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

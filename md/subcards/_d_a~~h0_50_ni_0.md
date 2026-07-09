@@ -163,7 +163,7 @@
 [HIT. 87,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?87,13) *kriyām* to apply effort to something: *nādravye nihitā kācitkriyā phalavatī bhavet*
 [HIT. Pr. 43.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,43) *karmaṇi* to appoint someone to something: *pṛthagjanocite karmaṇyarhato nidadhāti yaḥ*
 [RĀJA-TAR. 3,212.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,212)
-  <sub>DCS 1601 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) niederlegen, ablegen, beseitigen: *ni heLo dhatta*
 [ṚV. 1,171,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.171.html#rv01.171.01) *nyadhācchakma*
@@ -199,7 +199,7 @@
 [RAGH. 4,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,1) *tato nidhāya nagare mātṝḥ* leaving behind
 [R. GORR. 2,126,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,126,1) *yaśaḥ sphītaṃ nidhāyāruruhe paraṃ padam* leaving behind great fame
 [BHĀG. P. 4,21,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,7)
-  <sub>DCS 1601 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) niederlegen zur Aufbewahrung oder um zu verbergen; übergeben, anvertrauen, schenken: *araṇyornihito jātavedāḥ*
 [ṚV. 3,29,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.02) *nidhīyamānamapagū|amapsu*
@@ -298,7 +298,7 @@
 [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44) *ātmānaṃ prakṛtiṣvaddhā nidhāya śreya āpnuyāt* to entrust oneself
 [BHĀG. P. 6,14,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,18) *hṛdayaṃ premapeśalam . nidhāya mayi* to give one's heart
 [KATHĀS. 22,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,74)
-  <sub>DCS 1601 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) niederhalten, zurückhalten: *salilairnihitaṃ rajaḥ*
 [GHAṬ. 1.] *imaṃ tu pāśairvaruṇasya baddhvā nidhehi bhīto na palāyate yathā*
@@ -310,4 +310,4 @@
 - **EN:** — 4) to hold down, to restrain: *salilairnihitaṃ rajaḥ*
 [GHAṬ. 1.] *imaṃ tu pāśairvaruṇasya baddhvā nidhehi bhīto na palāyate yathā*
 [BHĀG. P. 7,5,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,50)
-  <sub>DCS 1601 · attested</sub>
+  <sub>attested</sub>

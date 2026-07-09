@@ -85,7 +85,7 @@
 [MĀRK. P. 100,17. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?100,17) *sanatkumārādvacanamiti vai saṃśrutaṃ mayā*
 [R. GORR. 1,8,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,29) *purāṇe saṃśruto mayā* thus v. a. read
 [MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusagen, versprechen: *mātāmahe samaśrauṣīdrājyaśulkam*
 [R. 2,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,3) *kariṣya iti saṃśrutya pūrvamasmāsu*
@@ -127,13 +127,13 @@ der Person).
 of the person).
 [RAGH. 12,5.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,5)
 [RĀJA-TAR. 3,19.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,19)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — Vgl. *saṃśrava* u. s. w. — caus.
 
 - **RU:** — Vgl. *saṃśrava* u. s. w. — caus.
 - **EN:** — Vgl. *saṃśrava* u. s. w. — caus.
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) hören lassen, verkünden
 [YĀJÑ. 2,112.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,112) *saṃśrāvayannadhvani deśikendraḥ*
@@ -184,7 +184,7 @@ of the person).
 [BHĀG. P. 1,3,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,42) *etān śabdaṃ saṃśrāvya*
 [PAÑCAT. 172,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?172,25) *saṃśrāvitatallekhau* thus v. a. read aloud
 [KATHĀS. 43,271.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,271)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erschallen machen: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
@@ -193,4 +193,4 @@ of the person).
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
 - **EN:** — 2) to make resound: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@
 [ŚAT. BR. 3,6,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,17)
 - **EN:** — 3) To drive someone out victoriously from (abl.): *tāntsadaso jigyuḥ*
 [ŚAT. BR. 3,6,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,17)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd um Etwas bringen, in Etwas besiegen, Jmd Etwas im Spiele abnehmen; mit doppeltem acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
@@ -28,7 +28,7 @@
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
 [DAŚAK.] in [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] to [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) ohne obj. siegen, siegreich sein, den Sieg davontragen (im Kampfe u. s. w.), gewinnen (im Spiele): *jeṣāmendra tvayā yujā*
 [ṚV. 8,52,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.052.html#rv08.052.11) *samithe*
@@ -94,4 +94,4 @@
 [VOP. S. 176.] *rādhāmādhavayorjayanti yamunākūle rahaḥkelayaḥ*
 [GĪT. 1,1.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,1) *śītāṃśoḥ kiraṇacchaṭā iva jayantyetarhi tatkīrtayaḥ*
 [DHŪRTAS. 67,18.]
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

@@ -43,4 +43,4 @@
 (Sch.: = *garhitaṃ caranti) 'bhito laṅkām*
 [BHAṬṬ. 18,25.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?18,25) *prāpya cañcūryamāṇāsau patīyantī raghūttamam*
 [4,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,19) Sch. : = *garhitamācarantī, garhitaṃ punaḥ punaścarantī* to twist and writhe so as to arouse the man's passion.
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

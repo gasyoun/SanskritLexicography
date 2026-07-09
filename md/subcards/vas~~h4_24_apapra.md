@@ -7,4 +7,4 @@
 
 - **RU:** — *apapra* s. *apaproṣita*.
 - **EN:** — *apapra* s. *apaproṣita* .
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

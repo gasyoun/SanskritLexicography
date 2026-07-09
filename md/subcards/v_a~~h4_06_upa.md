@@ -16,4 +16,4 @@
 [P. 6,1,41](https://ashtadhyayi.com/sutraani/6/1/41), Schol. *upota* "stuck into" (into the quiver or into another device for arrows): *˚paruṣa*
 [ŚĀṄKH. ŚR. 14,22,20.]
 [LĀṬY. 8,5,8.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

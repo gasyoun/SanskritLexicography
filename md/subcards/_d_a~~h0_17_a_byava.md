@@ -10,4 +10,4 @@
 [R. 2,40,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,33)
 - **EN:** — *abhyava* to beat down (the dust): *paurajanāśrubhiḥ . patitairabhyavahitaṃ praśaśāma mahīrajaḥ ..*
 [R. 2,40,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,33)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

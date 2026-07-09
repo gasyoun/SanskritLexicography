@@ -10,4 +10,4 @@
 [SARVADARŚANAS. 96,1.]
 - **EN:** — caus.: *vidyādijñāpitaiśvarya* made known, manifesting itself
 [SARVADARŚANAS. 96,1.]
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

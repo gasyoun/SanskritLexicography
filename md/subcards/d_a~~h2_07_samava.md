@@ -24,4 +24,4 @@
 [ŚAT. BR. 3,4,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,5) [8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,8) [9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,9) *samavatta*
 [1,8,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,17) *˚dhānī*
 [3,8,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,13) [KĀTY. ŚR. 25,7,30.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,7,30)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

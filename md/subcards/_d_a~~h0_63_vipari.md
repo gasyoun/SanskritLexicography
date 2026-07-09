@@ -22,4 +22,4 @@
 [YĀJÑ. 1,196.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,196)
 [MĀRK. P. 35,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?35,24) With the complement *vāsaḥ*
 [GOBH. 1,2,37.]
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

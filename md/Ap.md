@@ -1,6 +1,6 @@
 # āp
 
-_PWG article — 44 sub-card(s), 211 sense(s) · RU 152/211 · EN 192/211_
+_PWG article — 45 sub-card(s), 296 sense(s) · RU 152/296 · EN 277/296_
 
 ## āp
 
@@ -628,7 +628,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — *ud* to reach up to, to attain
 [ŚAT. BR. 2,6,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,16) *divaṃ martya iva bāhubhyāṃ nodāpuḥ*
 [13,5,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,14) [23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,23)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## upa+āp
 
@@ -660,7 +660,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [ŚAT. BR. 6,2,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,10) [11,5,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,2,9) [4,3,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,3,2,13)
 [AIT. BR. 2,16.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) — desid. with something (instr.) to seek to win someone over: *brāhmaṇānbhaktenopepsanti*
 [KAUŚ. 68. 140.]
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 ## pari+āp
 
@@ -683,7 +683,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [ṚV. 1,76,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.076.html#rv01.076.01)
 [TS. 7,3,1,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,1,4)
 [ŚAT. BR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,8)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ein Ende machen, genug sein lassen: *bhīma paryāpnuhi*
 [MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) — part. *paryāpta* erfüllt, zum Abschluss gebracht, das volle Maass habend, ein hohes Maass erreichend, geräumig, vollständig, voll, hinreichend, genügend: *kāmānyaḥ kāmayate manyamānaḥ *
@@ -779,7 +779,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [AK. 2,9,57.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,57)
 [H. 1505.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1505) Equivalent in meaning to *paryāpta* is *paryāptavant*
 [RAGH. 16,28](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,28) : *pīḍāmaparyāptavatīva soḍhum* . — desid.
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **1-med)** 1) verlangen, fordern, wünschen: *dātā — ṛṇam — parīpsetkena hetunā*
 [M. 8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *sā bahūni parīpsati*
@@ -800,7 +800,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) *vadhaṃ kṛṣṇā parīpsantī senāvāhasya*
 [4,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.503) *priyameva parīpsante*
 [2,563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.563)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **2-med)** — 2) zu erhalten wünschen, in Acht nehmen, schützen: *na peyamudakam — prāṇāniha parīpsatā*
 [MBH. 3,17327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17327) *vyāyāmena parīpsasva jīvitam*
@@ -821,7 +821,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.480) *vaikartanaṃ parīpsanto gandharvānsamavākiran*
 [3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) *tānparīpsasva*
 [4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **3-med)** — 3) Jmd beizukommen suchen, auf Jmd oder Etwas lauern, nachstellen: *sa mayā sāgarāvarte dṛṣṭa āsītparīpsatā*
 [MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
@@ -836,7 +836,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
 [11454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11454) *pañcaśatāñchūrān — parīpsamānaḥ*
 [15723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15723)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 ## sampari+āp
 
@@ -850,7 +850,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [KAUŚ. 90.]
 - **EN:** — *saṃpari* to sum up, to take together: *saṃparyāpya mūlāni ca prāntāni ca*
 [KAUŚ. 90.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+āp
 
@@ -930,7 +930,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [BHAṬṬ. 15,70.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,70) *tena sa ca kaṭvervārau yathāpakve madhuraḥ sanraso 'pi na . prāpyate* (is met with, found) *hi*
 [YĀJÑ. 3,142.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,142) *prāpi mahāgiriḥ*
 [BHAṬṬ. 15,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,106)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, gewinnen, sich zuziehen, auf sich laden, erleiden; act.: *prāpeyaṃ sarvā *
 
@@ -1020,7 +1020,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 1,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,7) [2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28) [4,34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,28) — pass.: *prāpyate hyamṛtaṃ tataḥ*
 [M. 12,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,85) *svargo rakṣaṇātprāpyate yathā*
 [R. 1,17,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,6)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gramm. in eine Form, einen Laut (acc.) übergehen: *nāsikāśabdaśca nasaṃ prāpnoti* und das Wort *nāsikā* geht in *nasa* über
 [SIDDH. K.] zu [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
@@ -1032,7 +1032,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — 3) gramm. to pass over into a form, a sound (acc.): *nāsikāśabdaśca nasaṃ prāpnoti* and the word *nāsikā* passes into *nasa*
 [SIDDH. K.] to [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
 [VOP. 2,25.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,25)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) intrans. reichen bis *(ā): āprapadaṃ prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
@@ -1044,7 +1044,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — 4) intrans. to extend as far as *(ā): āprapadaṃ prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
 [AK. 2,6,3,21.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,21)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich finden, vorhanden sein: *yatra prāpnoṣyoṣadhe*
 [AV. 4,19,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.02) in der Gramm. in Folge einer Regel Geltung erhalten, sich aus einer Regel ergeben: *sthānyāśrayaṃ kāryamādeśe na prāpnoti*
@@ -1062,7 +1062,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [KĀŚ.] to [P. 1,1,56.](https://ashtadhyayi.com/sutraani/1/1/56) *iko ye guṇavṛddhī prāpnutaste na bhavataḥ*
 [4](https://ashtadhyayi.com/sutraani/1/1/4), Sch. In the same Bed. also pass.: *prāpyamāṇānāṃ yaḥ sadṛśatamaḥ*
 [50](https://ashtadhyayi.com/sutraani/1/1/50), Sch. — partic. *prāpta*
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-1)** 1) erreicht, getroffen, angetroffen: *dhūmaprāptaḥ*
 [KĀTY. ŚR. 22,6,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16) [17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,17) *yathaidhastejasā vahniḥ prāptaṃ nirdahati kṣaṇāt*
@@ -1083,7 +1083,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [HIT. 20,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15) *kenāpi vyādhena — sa mantharaḥ prāptaḥ*
 [42,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,13) *pathaḥ prāptakarmatvāt* because *pathin* is an object reached (in *panthānaṃ gacchati*)
 [P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12), Vārtt. 3, Sch.
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-2)** — 2) erlangt, gewonnen, sich zugezogen, auf sich geladen
 [AK. 3,2,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,54)
@@ -1151,7 +1151,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [AK. 2,8,2,85.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,85)
 [VID. 284.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?284) In such compp. a transposition of the members is assumed, because *prāpta* is taken in an active sense. Vgl.
 [AK. 3,6,43.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,43)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-3)** — 3) erreicht oder getroffen habend, an einem Orte angelangt seiend: *tṛṇāni prāptaḥ*
 [AV. 9,7,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.007.html#av09.007.22) *aprāptā hīmāṃ bhavanti*
@@ -1196,7 +1196,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [VIŚV. 9,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,5) *saṃtuṣṭe karaprāpte 'pyarthe bhavati nādaraḥ*
 [HIT. I,139.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,139) Vgl. *tasya hastagato jayaḥ*
 [MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+āp
 
@@ -1216,7 +1216,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 
 [8,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,198) [300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,300) [342.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,342) *āyudhavyasanaprāptam* (vgl.
 [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24)) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) — [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) [10887.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.10887) [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [13,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,47) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,47)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-5)** — 5) gekommen, angelangt, da seiend: *sabhāntaḥ sākṣiṇaḥ prāptān* [M. 8,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,79) *kāle prāptaḥ* [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) *prāpto 'syamaravat* [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) [N. 23,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,16) [26,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,31) [INDR. 1,12.] [VID. 43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177) [300.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?300) *ātyayike kārye prāpte* [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *māghaśuklasya vā prāpte pūrvāhṇe prathame 'hani* [4,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,96) *prāpte kāle* [9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) [MBH. 3,2191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2191) *prāpte tu ṣoḍaśe varṣe* [CĀṆ. 11.] Citat bei [MALLIN.] zu [RAGH. 3,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,28) *vayasi prāpte* [N. 1,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,11) *avasare prāpte* [VID. 233.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?233) *prāptāyāṃ rajanau* [77.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?77) *prāptakāla* _m._ und _adj._ [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) [13,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,17) [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [HIT. I,44.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,44) [22,1](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1), v. l. *prāptayauvanā* [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas* [BRĀHMAṆ. 1,28.] *kramaprāpta* [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
 
@@ -1241,7 +1241,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas*
 [BRĀHMAṆ. 1,28.] *kramaprāpta*
 [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-6)** — 6) zum Abschluss, zur Reife gelangt, fertig: *aprāptavyavahāra* dessen Process nicht beendigt ist [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* ein Mädchen, das noch nicht mannbar ist, [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
 
@@ -1249,7 +1249,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — 6) brought to completion, having reached maturity, finished: *aprāptavyavahāra* whose process is not yet finished
 [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* a girl not yet marriageable,
 [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-7)** — 7) gramm. in Folge einer Regel Geltung habend: *gaṇapāṭhātsarvatra prāptā saṃjñā* [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), Sch. *prāptavibhāṣā* oder *prāpte vi˚* s. u. *vibhāṣā* . medic. indicirt: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate* [SUŚR. 2,7,2.] — Die Lexicographen kennen noch zwei Bedeutungen:
 
@@ -1258,14 +1258,14 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), Sch.
 *prāptavibhāṣā* or *prāpte vi˚* s. u. *vibhāṣā* . medic. indicates: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate*
 [SUŚR. 2,7,2.] — The lexicographers know two further meanings:
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ppp-8)** 8) gestellt (*praṇihita*) [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
 
 - **RU:** 8) поставленный (*praṇihita*) [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
 - **EN:** 8) placed, positioned (*praṇihita*)
 [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ppp-9)** — 9) schicklich [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* oder *prāpya* [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), Sch. [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
 
@@ -1274,7 +1274,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* or *prāpya*
 [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), Sch.
 [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus-1)** 1) Jmd oder Etwas wohin (acc. oder Ortsadv.) gelangen lassen, treiben, führen, bringen, befördern; act.: *prāpaya na ācāryakulam* [CHĀND. UP. 4,5,1.] [MBH. 1,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.818) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1850) [2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2998) [4,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1664) [ARJ. 4,23.] [R. 2,40,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,11) [4,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,19) [PAÑCAT. 114,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,23) [115,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,3) [KATHĀS. 10,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,189) [22,179.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,179) [VID. 34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?34) [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), Sch. *prāpayainam — ito janapadātparam* [R. 2,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,10) [MBH. 3,13289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13289) — med. [ŚAT. BR. 1,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,16) [MBH. 4,1739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1739) [1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1748) *punargatvā pārthivaṃ taṃ sametya vākyaṃ madīyaṃ prāpayasvārthayuktam* [14,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.242) — pass.: *tayā — śmaśānaṃ prāpitaḥ so 'bhūt* [KATHĀS. 25,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,214) *sā mañjūṣā prāpitā bahubhirjanaiḥ* [4,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,76) *yaiḥ — paramaṃ mṛtyoḥ padaṃ prāpitaḥ* [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (eine Angelegenheit) [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
 
@@ -1299,7 +1299,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ*
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (a matter, an affair)
 [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) Jmd (acc.) Etwas (acc.) erlangen lassen: *rājānam — prāpayenmahatīṃ śriyam* [MBH. 2,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.171) *vyākaraṇaṃ* (acc.) *loke pratiṣṭhāṃ prāpayiṣyati* [KATHĀS. 2,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,69) *harīṇāṃ prāpito rājyaṃ tvaṃ durātmā mahātmanā* [R. 4,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,25) *mayaiṣa śaṣpabhuksācivyaṃ prāpitaḥ* [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) *prāpito mukhyamantritām* [RĀJA-TAR. 5,424.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424)
 
@@ -1310,7 +1310,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 4,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,25) *mayaiṣa śaṣpabhuksācivyaṃ prāpitaḥ*
 [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) *prāpito mukhyamantritām*
 [RĀJA-TAR. 5,424.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) erlangen: *tvatprasādādavighnena prāpayeyaṃ kriyāphalam* [R. 1,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,8) — desid. zu erreichen suchen, streben: *yathā vatso jāta stanaṃ prepsati* [TS. 5,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,1) [ŚAT. BR. 1,4,2,13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,13) (die Hdschr.: *prepsyati*). [4,1,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,1,21) Vgl. *prepsu* .
 
@@ -1320,7 +1320,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [TS. 5,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,1)
 [ŚAT. BR. 1,4,2,13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,13) (the Hdschr.: *prepsyati*).
 [4,1,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,1,21) Vgl. *prepsu* .
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 ## anu-pra-āp
 
@@ -1409,7 +1409,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [ŚAT. BR. 6,7,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,7,4,11) *yaddhāsyaitā aṅgaṃ nābhiprāpnuyuḥ*
 [8,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,1,4,1) [7,2,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,7,2,14) [3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,7,3,6) *naite saṃvatsaramabhiprāpnuvanti*
 [CHĀND. UP. 5,10,3.] — desid. s. *abhiprepsu* .
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## upapra+āp
 
@@ -1421,7 +1421,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **RU:** — *upapra* подойти, приблизиться: *mṛgarkṣaṃ mahiṣaṃ vāpi — nāvarjayamupaprāptaṃ kṣīṇapuṇyaḥ kṣudhānvitaḥ* [R. 3,75,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,17)
 - **EN:** — *upapra* to be added, approach: *mṛgarkṣaṃ mahiṣaṃ vāpi — nāvarjayamupaprāptaṃ kṣīṇapuṇyaḥ kṣudhānvitaḥ*
 [R. 3,75,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,17)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃprāp
 
@@ -1601,7 +1601,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [DRAUP. 8,16.] *tīramevābhisaṃprāptā dakṣiṇam*
 [R. 2,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,21) *ke yūyamabhisaṃprāptāḥ — mamāntikam*
 [MBH. 3,408.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.408)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen: *svaṃ rūpamabhisaṃprāpya*
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
@@ -1610,7 +1610,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
 - **EN:** — 2) to obtain: *svaṃ rūpamabhisaṃprāpya*
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anlangen, kommen: *yadarthamabhisaṃprāptaḥ*
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
@@ -1619,7 +1619,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
 - **EN:** — 3) to arrive, come: *yadarthamabhisaṃprāptaḥ*
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## upasampra+āp
 
@@ -1636,7 +1636,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — *upasaṃpra*
  1) to reach: *tāṃ sabhāmupasaṃprāpya*
 [MBH. 3,2337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2337)
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen: *hāsyatāmupasaṃprāptam*
 [MBH. 1,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5188)
@@ -1645,7 +1645,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [MBH. 1,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5188)
 - **EN:** — 2) to obtain: *hāsyatāmupasaṃprāptam*
 [MBH. 1,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5188)
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hinzukommen: *jighāṃsūnupasaṃprāptāndevāndṛṣṭvā*
 [MBH. 3,14378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14378)
@@ -1654,7 +1654,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [MBH. 3,14378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14378)
 - **EN:** — 3) to be added (to come besides): *jighāṃsūnupasaṃprāptāndevāndṛṣṭvā*
 [MBH. 3,14378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14378)
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+āp
 
@@ -1710,7 +1710,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [M. 12,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,14) [24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,24)
 [ŚĀK. 1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?1) *vyāpyamāna*
 [P. 3,4,56.](https://ashtadhyayi.com/sutraani/3/4/56)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) reichen bis *(ā): tattu syādāprapadīnaṃ vyāpnotyāprapadaṃ hi yat (prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
@@ -1722,7 +1722,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 - **EN:** — 2) to reach as far as *(ā): tattu syādāprapadīnaṃ vyāpnotyāprapadaṃ hi yat (prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
 [AK. 2,6,3,21](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,21)) [H. 678.](https://sanskrit-lexicon-scans.github.io/abch2/app1?678) — partic. *vyāpta*
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1)** 1) durchdrungen, erfüllt, angefüllt
 [H. 1473.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1473) *tasyāvayavabhūtaistu vyāptaṃ sarvamidaṃ jagat*
@@ -1755,7 +1755,7 @@ Sch. on [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. from caus. to stri
 [171,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?171,1) *samiccaṣālacamasavyāptā gṛhā yajvanām*
 [PRAB. 44,8.] *(āpaḥ) avyāptāścedamedhyena*
 [M. 5,128.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,128)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.2)** — 2) eingenommen, in Besitz genommen: *vṛtreṇa pṛthivī vyāptā purā kila*
 [MBH. 14,299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.299) *vyāpte jyotiṣi vṛtreṇa rūpe 'tha viṣaye hṛte*
@@ -1782,7 +1782,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [PAÑCAT. 227,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?227,11) *kiṃ vyāptaṃ kimapohitam*
 [PRAB. 116,7.]
 Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 **pp.3)** — 3) in Besitz gelangt, befriedigt: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
@@ -1791,7 +1791,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
 - **EN:** — 3) come into possession of, satisfied: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 ## abhivi+āp
 
@@ -1811,13 +1811,13 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [P. 2,1,134](https://ashtadhyayi.com/sutraani/2/1/134), Sch.
 *adhikāro 'yaṃ yūnastirityabhivyāpya*
 [SIDDH. K.] to [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *abhivyāpaka* fgg.
 
 - **RU:** — Vgl. *abhivyāpaka* fgg.
 - **EN:** — Vgl. *abhivyāpaka* fgg.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+āp
 
@@ -1858,7 +1858,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [WEST.] : permeare, complecti) *tato 'si sarvaḥ*
 [BHAG. 11,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,10) *yāvatteṣāṃ samāpyeranyajñāḥ paryāptadakṣiṇāḥ*
 [RAGH. 17,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,17)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) vollenden, erfüllen: *bhūtayajñaṃ samāpnoti*
 [ŚAT. BR. 11,5,6,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,2) [8,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,2) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,4) [12,3,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,3,5)
@@ -1873,7 +1873,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [ŚAT. BR. 11,5,6,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,2) [8,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,2) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,4) [12,3,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,3,5)
 [KĀTY. ŚR. 22,2,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,2,17) [25,8,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,18) [12,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,20) *yadvai ma idaṃ karma samāpsyate*
 [ŚAT. BR. 10,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,4,1,10)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) heranreichen: *yasmāllokātparameṣṭhī samāpa*
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
@@ -1882,7 +1882,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
 - **EN:** — 3) to extend up to, draw near: *yasmāllokātparameṣṭhī samāpa*
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1)** 1) vollendet, beendigt, zu Ende gegangen
 [M. 5,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,88) [11,81](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,81) (*samāpte dvādaśe varṣe*).
@@ -1912,7 +1912,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [MBH. 16,83.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.83) *asamāpta*
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26)
 [KATHĀS. 22,234.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,234)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **pp.2)** — 2) vollendet, geschickt: *puruṣaḥ*
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
@@ -1921,7 +1921,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
 - **EN:** — 2) accomplished, skilled: *puruṣaḥ*
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** 1) erreichen oder erlangen lassen: *sainaṃ svargaṃ lokaṃ samāpayati*
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
@@ -1930,7 +1930,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
 - **EN:** 1) to make reach or cause to obtain: *sainaṃ svargaṃ lokaṃ samāpayati*
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) zu Ende führen, vollbringen, vollführen: *vyavahārānsamāpayan*
 [M. 8,420.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,420) *vrataśeṣaṃ samāpayet*
@@ -1993,7 +1993,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [RAGH. 8,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,72) *samāpite 'rcane*
 [KATHĀS. 20,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,196) *evaṃ pādatrayeṇa vākyavicāraḥ samāpitaḥ*
 [MADHUS.] in [Ind. St. 1,19.] — desid.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **des.1)** 1) zu erreichen oder zu erlangen wünschen, begehren: *samīpsita* begehrt, erwünscht: *śivena vai yāhi samīpsitaṃ vanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
@@ -2002,7 +2002,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
 - **EN:** 1) to wish to reach or desire to obtain: *samīpsita* desired, wished for: *śivena vai yāhi samīpsitaṃ vanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **des.2)** — 2) zu vollenden streben: *yamadhvānaṃ samīpsati taṃ samaśnute*
 [ŚAT. BR. 12,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,10) — desid. vom caus. zu vollbringen suchen: *samāpipayiṣet*
@@ -2017,7 +2017,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [ŚAT. BR. 12,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,10) — desid. of the caus. to seek to accomplish: *samāpipayiṣet*
 [ŚAT. BR. 14,4,3,34](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,34) = [BṚH. ĀR. UP. 1,5,23.] Vgl. *samāpipayiṣu*
 [MBH. 1,6872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 ## anusam+āp
 
@@ -2031,7 +2031,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26) Vgl. *anusamāpana* .
 - **EN:** — *anusam* caus. to complete in addition, subsequently bring about: *tamupetya śeṣamanusamāpayeyuḥ*
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26) Vgl. *anusamāpana* .
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## parisam+āp
 
@@ -2054,7 +2054,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [ŚĀK. 105.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105) *pratyekaṃ vyavāyaśabdaḥ parisamāpyate*
 [PAT.] to [P. 8,3,58.](https://ashtadhyayi.com/sutraani/8/3/58) *tasminparisamāpte tu rājñaḥ satre*
 [MBH. 1,8139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8139)
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2065,7 +2065,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 - **RU:** *āp*¦ [vgl. ] Z. 19 v. u. следует читать *kaścāsau* st. *kasyāsau*.
 - **EN:** *āp*¦ [vgl. ] Z. 19 v. u. read *kaścāsau* st. *kasyāsau*.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2079,7 +2079,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [Z. 13] *āpnāna* s. также особо. — partic. *āpta*
 - **EN:** *āp*¦
 [Z. 13] *āpnāna* s. also separately. — partic. *āpta*
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **4)** 4) vollständig: *dvādaśāha*
 [PAÑCAV. BR. 23,1,2.] *vājapeya*
@@ -2094,7 +2094,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [PAÑCAV. BR. 23,1,2.] *vājapeya*
 [ŚĀṄKH. ŚR. 15,3,14.] *devayajana*
 [TS. 6,2,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,6,1) — caus.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* gebracht
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. herbeiholen
@@ -2106,7 +2106,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 - **EN:** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* brought
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. to fetch
 [PAÑCAV. BR. 20,3,2.] partic. *īpsita*
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **note)** 1)
 [M. 3,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,231) [4,156.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,156) [9,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,59) — Z. 3 lies *kaścāsau* st. *kasyāsau* .
@@ -2115,7 +2115,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [M. 3,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,231) [4,156.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,156) [9,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,59) — Z. 3 следует читать *kaścāsau* st. *kasyāsau* .
 - **EN:** 1)
 [M. 3,231.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,231) [4,156.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,156) [9,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,59) — Z. 3 read *kaścāsau* st. *kasyāsau* .
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## ava+āp
 
@@ -2135,7 +2135,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
  1) *guṇadoṣāvavāpyete puṃsāṃ saṃśīlanādbudhaiḥ* in this way come upon merits and defects
 [Spr. 838.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?838) *tato 'tra vīkṣyate yāvadvālastāvadavāpi saḥ* was discovered — found
 [KATHĀS. 106,26.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,26)
-  <sub>DCS 1574 · attested</sub>
+  <sub>attested</sub>
 
 ## upāp
 
@@ -2146,7 +2146,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 - **RU:** — *upa* vgl. *upāpa, upāpti, upepsā* .
 - **EN:** — *upa* vgl. *upāpa, upāpti, upepsā*.
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>
 
 ## samupāp
 
@@ -2157,7 +2157,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 - **RU:** — *samupa* desid. vgl. *samupepsu* .
 - **EN:** — *samupa* desid. vgl. *samupepsu*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## paryāp
 
@@ -2210,7 +2210,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [4,33.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,33) = *kṛtam*
 [5,3.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,3) — caus. "to accomplish": *akāryāṇyapi paryāpya*
 [Spr. 3368.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3368) — desid. vgl. *parīpsā, parīpsu*.
-  <sub>DCS 184 · mixed</sub>
+  <sub>mixed</sub>
 
 ## prāp
 
@@ -2230,7 +2230,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
  9)
 [MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32) [HALĀY. 4,61.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,61) [DAŚAK.] in [BENF. Chr. 188,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) — caus. "to put forward, report, announce": *prāpayāsya ca vākyāni yato dūtastvamāgataḥ*
 [R. 7,103,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,103,10)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 ## anupraāp
 
@@ -2244,7 +2244,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
 - **EN:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* probably "all liquids are ultimately water"
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## abhipraāp
 
@@ -2255,7 +2255,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 
 - **RU:** — *abhipra* vgl. *abhiprāpaṇa* .
 - **EN:** — *abhipra* vgl. *abhiprāpaṇa*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## paripraāp
 
@@ -2266,7 +2266,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 
 - **RU:** — *paripra* vgl. *pariprāpti, pariprepsu* .
 - **EN:** — *paripra* vgl. *pariprāpti, pariprepsu*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyāp
 
@@ -2280,7 +2280,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
 - **EN:** — *prati* desid. "to woo, court" (a girl): *tvatsvāmyarthaṃ pratīpsa tām*
 [KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vyāp
 
@@ -2303,7 +2303,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam* so v. a. "falls under the concept of transience"
 [TARKAS. 41.] — caus. *vyāpita* "filled"
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>
 
 ## samāp
 
@@ -2326,7 +2326,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *samāptavaradakṣiṇāḥ (kratavaḥ)* "complete, full in number"
 [523](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?523), v. l. *asamāpta* "lacking something" (instr.) "not full, that with respect to which something is wanting"
 [ṚV. PRĀT. 13,13.] — caus.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 2)
 [ṚV. PRĀT. 10,1.]
@@ -2335,7 +2335,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [ṚV. PRĀT. 10,1.]
 - **EN:** 2)
 [ṚV. PRĀT. 10,1.]
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd abthun, Jmd den Garaus machen: *śarairaṣṭabhirekaikaṃ samāpya*
 [KATHĀS. 48,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,67) *yadeṣa sādhuhṛcchayastvayāsuraḥ samāpitaḥ* (so ist zu schreiben)
@@ -2347,7 +2347,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 - **EN:** — 3) "to do away with someone, to finish someone off": *śarairaṣṭabhirekaikaṃ samāpya*
 [KATHĀS. 48,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,67) *yadeṣa sādhuhṛcchayastvayāsuraḥ samāpitaḥ* (thus it is to be written)
 [BHĀG. P. 7,8,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,51)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 ## parisamāp
 
@@ -2361,13 +2361,13 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* Schol.
 - **EN:** — *parisam* pass. "to come to a conclusion, to reach the final goal"
 [BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* Schol.
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *parisamāpti* .
 
 - **RU:** — Vgl. *parisamāpti* .
 - **EN:** — Vgl. *parisamāpti*.
-  <sub>DCS 19 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2452,6 +2452,296 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 [2,317,a.]
   <sub>attested</sub>
 
+## _ap~~h0_zz_pw00
+
+`_ap~~h0_zz_pw00`
+
+
+**1)** √*āp*¦ *āpnoti*, seltener Med.
+— 1〉 erreichen, einholen, stossen auf, antreffen.
+- **EN:** √*āp*¦ *āpnoti*, rarely Med.
+ — 1) to reach, overtake, come upon, meet with.
+
+**2)** — 2〉 erlangen, bekommen, in Besitz nehmen, theilhaftig werden, erleiden.
+- **EN:** — 2) to attain, obtain, take possession of, become partaker of, undergo, suffer.
+
+**3)** — 3〉 über Jmd kommen, zu Theil werden.
+- **EN:** — 3) to come upon someone, to fall to one's share.
+
+**4)** — 4〉 Pass. voll werden.
+— Partic. *āpta*
+- **EN:** — 4) Pass. to become full.
+ — Partic. *āpta*
+
+**1)** — 1〉 erreicht, ereilt, getroffen.
+- **EN:** — 1) reached, overtaken, hit.
+
+**2)** — 2〉 erlangt, empfangen, bekommen.
+- **EN:** — 2) attained, received, obtained.
+
+**3)** — 3〉 erfüllt, durchdrungen [ŚAT. BR. 1,1,1,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,1,14).
+- **EN:** — 3) filled, pervaded [ŚAT. BR. 1,1,1,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,1,14).
+
+**4)** — 4〉 angelangt bei (Acc.) [NAIṢ. 22,42].
+- **EN:** — 4) arrived at, come to (Acc.) [NAIṢ. 22,42].
+
+**5)** — 5〉 sich erstreckend über (*abhi*). *˚tama* am Weitesten reichend [NṚS. UP.] in [Ind. St. 9,146].
+- **EN:** — 5) extending over, reaching over *abhi*. *˚tama* reaching furthest [NṚS. UP.] in [Ind. St. 9,146].
+
+**6)** — 6〉 dividirt.
+- **EN:** — 6) divided.
+
+**7)** — 7〉 vollständig, reichlich.
+- **EN:** — 7) complete, full; abundant, ample.
+
+**8)** — 8〉 zuverlässig; _m._ Gewährsmann.
+- **EN:** — 8) reliable, trustworthy; _m._ a reliable authority, warrantor.
+
+**9)** — 9〉 nahe stehend, befreundet.
+— Caus. *āpayati*
+- **EN:** — 9) close, closely connected; friendly, on friendly terms.
+— Caus. *āpayati*
+
+**1)** — 1〉 erreichen —, gelangen lassen, bringen zu.
+- **EN:** — 1) to cause to reach, to make attain; to bring to.
+
+**2)** — 2〉 erlangen lassen.
+- **EN:** — 2) to cause to obtain, to make gain.
+
+**3)** — 3〉 Jmd (Acc.) Etwas abgeben, zu fühlen geben. Desid. *īpsati* und *˚te* zu erreichen suchen, zu erlangen streben [TĀṆḌYA-BR. 20,3,2].
+— Partic. *īpsita*
+- **EN:** — 3) Acc. makes Desid. feel *īpsati*; to strive to reach, to endeavour to attain *˚te* [TĀṆḌYA-BR. 20,3,2].
+— Partic. *īpsita*
+
+**1)** — 1〉 wen oder was man zu haben wünscht, begehrt, erwünscht, genehm, lieb. Superl. *˚tama* zunächst stehend [224,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
+- **EN:** — 1) whom or what one wishes, desires to have; desired, welcome, dear. Superl. *˚tama* standing nearest [224,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
+
+**2)** — 2〉 von einer Autorität festgesetzt, anerkannt.
+— Desid. vom Caus. *āpipayiṣati* zu erreichen streben.
+— Mit *anu* erreichen [AIT. BR. 3,27](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,27).
+— Mit *abhi* bis zu Etwas reichen, erreichen.
+— Caus. bis anʼs Ziel bringen.
+— Desid. zu erlangen streben, nach Etwas verlangen, wünschen.
+— Mit *ava*
+- **EN:** — 2) fixed, established, recognized by an authority.
+— Desid. strives to reach Caus. *āpipayiṣati*.
+— With *anu*: to reach, to attain [AIT. BR. 3,27](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,27).
+— With *abhi*: to extend to, to reach as far as something.
+— Caus. to bring to the goal.
+— Desid. to strive to obtain, to desire, to wish for something.
+— With *ava*
+
+**1)** — 1〉 erreichen, gelangen zu, stossen auf, antreffen. *avāpta* auch mit act. Bed.
+- **EN:** — 1) to reach, to arrive at, to come upon, to meet with. *avāpta* also with act. Bed.
+
+**2)** — 2〉 erlangen, bekommen, in Besitz nehmen, theilhaftig werden, erleiden.
+- **EN:** — 2) to obtain, to get, to take possession of, to become a partaker of, to suffer.
+
+**3)** — 3〉 durch Division erhalten.
+— Mit *pratyava* wiedererlangen.
+— Mit *samava*
+- **EN:** — 3) to obtain by division.
+— With *pratyava*: to regain.
+— With *samava*
+
+**1)** — 1〉 stossen auf, antreffen.
+- **EN:** — 1) to come upon, to meet with.
+
+**2)** — 2〉 erlangen, bekommen, theilhaftig werden, erleben.
+- **EN:** — 2) to attain, obtain, become partaker of, experience.
+
+**mit-T1)** — Mit *ā* erreichen, über Jmd (Acc.) kommen [ṚV. 10,32,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08).
+- **EN:** — With *ā*: to reach, to come over someone (Acc.) [ṚV. 10,32,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08).
+
+**mit-T4)** — Mit *ud* hinaufreichen, erreichen.
+- **EN:** — With *ud*: to reach up to, to attain.
+
+**mit-T5)** — Mit *upa* gelangen zu, erlangen [AIT. ĀR. 370,11. 13].
+- **EN:** — With *upa*: to arrive at, to attain [AIT. ĀR. 370,11. 13].
+
+**T7)** — Desid. Jmd zu gewinnen suchen [MAITR. S. 2,1,11]. [GOBH. 1,9,5].
+- **EN:** — Desid.: to seek to win someone over [MAITR. S. 2,1,11]. [GOBH. 1,9,5].
+
+**mit-T10)** — Mit *samupa* Desid. in *asmupepsu*.
+- **EN:** — With *samupa* Desid. in *asmupepsu*.
+
+**mit-T13)** — Mit *pari*
+- **EN:** — With *pari*
+
+**1)** — 1〉 erreichen, gewinnen.
+- **EN:** — 1) to reach, to gain.
+
+**2)** — 2〉 ein Ende machen, genug sein lassen.
+- **EN:** — 2) to make an end, to let it be enough.
+
+**ppp)** — Partic. *paryāpta* zum Abschluss gebracht, das volle Maass habend, reichlich, geräumig, hinreichend für (Dat. oder Gen. [182,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)). genügend; einer Sache (Dat. Loc. eines Nom. act. oder Infin.) oder einer Person (Gen.) gewachsen *˚m* _Adv._ so v. a. Alles in Allem [Spr. 4813](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4813) v. l.
+- **EN:** — Partic. *paryāpta*: brought to completion, having the full measure, abundant, spacious, sufficient for (Dat. or Gen. [182,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)); sufficient; equal to a thing (Dat. Loc. of a Nom. act. or Infin.) or to a person (Gen.) *˚m* _Adv._; thus v. a. on the whole, all in all, [Spr. 4813](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4813) v. l.
+
+**T17)** — Caus. vollbringen.
+- **EN:** — Caus.: to accomplish.
+
+**T18)** — Desid.
+- **EN:** — Desid.
+
+**1)** — 1〉 verlangen, fordern, wünschen.
+- **EN:** — 1) to demand, to require, to desire.
+
+**2)** — 2〉 zu erhalten wünschen, in Acht nehmen, schützen.
+- **EN:** — 2) to wish to obtain, to take heed of, to protect.
+
+**3)** — 3〉 beizukommen suchen, lauern auf, nachstellen.
+- **EN:** — 3) to seek to get at, to lie in wait for, to pursue with hostile intent.
+
+**3-with-T1)** — Mit *saṃpari* zusammenfassen, zusammennehmen.
+- **EN:** — With *saṃpari* to sum up, to gather together.
+
+**3-with-T2)** — Mit *pra*
+- **EN:** — With *pra*
+
+**1)** — 1〉 gelangen an, in zu, stossen auf, antreffen, erwischen [120,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120). [123,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123). reichen bis (*ā*). *aprāpya* mit Acc. so v. a. diesseits. *diśaḥ* so v. a. nach allen Richtungen hin fliehen. *prāpya kṛṣṇacaturdaśīm* nach Erreichung dieses Tages, so v. a. nachdem dieser Tag gekommen war [110,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
+- **EN:** — 1) to arrive at, come into, to hit upon, to meet with, to catch [120,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120). [123,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123). to extend as far as (*ā*). *aprāpya* with Acc. thus v. a. on this side. *diśaḥ* thus v. a. to flee in all directions. *prāpya kṛṣṇacaturdaśīm* after the arrival of this day, thus v. a. after this day had come [110,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
+
+**2)** — 2〉 Jmd treffen (von einem Ungemach).
+- **EN:** — 2) to befall someone (of a misfortune).
+
+**3)** — 3〉 erlangen, bekommen, gewinnen, theilhaftig werden, sich zuziehen, erleiden. Mit Infin. bekommen zu.
+- **EN:** — 3) to attain, to get, to gain, to become partaker of, to incur, to suffer. With Infin. to get to (do something).
+
+**4)** — 4〉 zum Gatten oder zur Gattin bekommen.
+- **EN:** — 4) to get as husband or as wife.
+
+**5)** — 5〉 in der Gramm. übergehen in.
+- **EN:** — 5) in the Gramm. to pass over into.
+
+**6)** — 6〉 sich finden, vorhanden sein.
+- **EN:** — 6) to be found, to be present.
+
+**7)** — 7〉 in Folge einer Regel Geltung erhalten, sich aus einer Regel ergeben [235,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [240,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). In derselben Bed. auch Pass.
+— Partic. *prāpta*
+- **EN:** — 7) to acquire validity as a consequence of a rule, to result from a rule [235,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?235). [240,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). In the same Bed. also Pass.
+ — Partic. *prāpta*
+
+**1)** — 1〉 erreicht [159,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). getroffen, angetroffen, erwischt.
+- **EN:** — 1) reached [159,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159); hit upon, come upon, caught.
+
+**2)** — 2〉 erlangt, gewonnen, sich zugezogen, auf sich geladen.
+- **EN:** — 2) obtained, gained, incurred (upon oneself), taken upon oneself.
+
+**3)** — 3〉 erreicht —, getroffen habend (auch von einem Ungemach als Subj.), angelangt bei; die Ergänzung im Acc. oder im Comp. vorangehend. *sahasram* in Tausend voll geworden.
+- **EN:** — 3) having reached —, having met with (also of a misfortune as Subj.), arrived at; the complement precedes in the Acc. or in the Comp.. *sahasram* "having become complete, made up to a thousand."
+
+**4)** — 4〉 erlangt —, sich zugezogen —, auf sich geladen —, erlitten habend; die Ergänzung im Acc. oder im Comp. vorangehend. *kaṃ citprakāram* so v. a. eine best. Art zu sein habend [230,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?230).
+- **EN:** — 4) having obtained —, having incurred (upon oneself) —, having taken upon oneself —, having suffered; the complement precedes in the Acc. or in the Comp.. *kaṃ citprakāram* thus v. a. "having a best. manner of being" [230,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?230).
+
+**5)** — 5〉 gekommen, eingetroffen, angelangt, da seiend [92,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?92). [119,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?119). [120,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120). [125,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?125). [291,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291). *prāpteṣu kāleṣu* so v. a. zu gewissen Zeiten [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651). gelangt zu (Acc.) [Chr. 226,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?226).
+- **EN:** — 5) come, arrived, having arrived, present [92,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?92). [119,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?119). [120,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?120). [125,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?125). [291,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?291). *prāpteṣu kāleṣu* so v. a. at certain times [Spr. 7651](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7651). arrived at, reached (Acc.) [Chr. 226,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?226).
+
+**6)** — 6〉 in der Med. indicirt.
+- **EN:** — 6) indicated in the Med..
+
+**7)** — 7〉 in der Gramm. in Folge einer Regel Geltung habend, sich aus einer Regel ergebend [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223). [227,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227).
+— Caus.
+- **EN:** — 7〉 valid in Gramm. as a consequence of a rule, resulting from a rule [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223). [227,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227).
+— Caus.
+
+**1)** — 1〉 Jmd oder Etwas (Acc.) irgendwohin (Acc. oder Ortsadv.) gelangen lassen, treibe, Jmd (Dat.) Etwas (Acc.) zuführen [107,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107). bringen, befördern.
+- **EN:** — 1〉 to let someone or something (Acc.) reach somewhere (Acc. or Ortsadv.), to drive; to cause someone (Dat.) to be brought something (Acc.) [107,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107): to bring, to convey.
+
+**2)** — 2〉 Jmd (Acc.) Etwas (Acc.) erlangen lassen.
+- **EN:** — 2〉 to let someone (Acc.) obtain something (Acc.); to cause to attain, to procure for.
+
+**3)** — 3〉 Etwas zu Jmd gelangen lassen, so v. a. überbringen, melden, anmelden, verkünden [M. 8,43](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43). [MBH. 14,9,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,9,24). [RAGH. 14,60](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60).
+- **EN:** — 3〉 to let something reach someone, thus v. a. to deliver, to report, to announce, to proclaim [M. 8,43](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43). [MBH. 14,9,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,9,24). [RAGH. 14,60](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60).
+
+**4)** — 4〉 erlangen, theilhaftig werden.
+- **EN:** — 4) to reach, to obtain, to become possessed of.
+
+**4-caus)** — Desid. zu erreichen suchen, verlangen nach.
+- **EN:** — Desid.: to strive to reach, to desire.
+
+**4-mit)** — Mit *anupra*
+- **EN:** — With *anupra*
+
+**1)** — 1〉 gelangen zu, erreichen, stossen auf, finden.
+- **EN:** — 1) to arrive at, to reach, to come upon, to find.
+
+**2)** — 2〉 nachgehen, nachahmen.
+- **EN:** — 2) to follow, to imitate.
+
+**2-mit)** — Partic. *anuprāpta*
+- **EN:** — Partic. *anuprāpta*
+
+**1)** — 1〉 angelangt bei, gekommen zu (Acc.).
+- **EN:** — 1) arrived at, come to (Acc.).
+
+**2)** — 2〉 gerathen in (Acc.). [MBH. 5,190,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,190,11).
+- **EN:** — 2) to fall into, to get into (Acc.). [MBH. 5,190,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,190,11).
+
+**3)** — 3〉 widerfahren [R. 5,35,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,14).
+- **EN:** — 3) to befall, to happen to [R. 5,35,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,14).
+
+**4)** — 4〉 gekommen (auch von bestimmten Zeiten und Umständen), eingetroffen.
+- **EN:** — 4) come (also of particular times and circumstances), arrived.
+
+**5)** — 5〉 hinauslaufend auf, einbegriffen —, enthalten in (Acc.) [NIR. 1,16](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16).
+- **EN:** — 5) amounting to, included in —, contained in (Acc.) [NIR. 1,16](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16).
+
+**5-with)** — Mit *samanupra* erreichen, anlangen bei.
+- **EN:** — With *samanupra*, to reach, arrive at.
+
+**5-note)** — Partic. *asmanuprāpta*
+- **EN:** — Partic. *asmanuprāpta*
+
+**1)** — 1〉 angelangt bei (Acc.).
+- **EN:** — 1) arrived at (Acc.).
+
+**2)** — 2〉 erlangt habend, mit Acc.
+- **EN:** — 2) having attained, with Acc.
+
+**3)** — 3〉 angekommen, angelangt.
+- **EN:** — 3) arrived, come to.
+
+**3a)** — Mit *abhipra* reichen bis zu, errichten.
+- **EN:** — With *abhipra*, to reach as far as, to extend to.
+
+**3b)** — Desid. in *abhiprepsu*.
+- **EN:** — Desid. in *abhiprepsu*.
+
+**3c)** — Mit *upapra*, Partic. *˚prāpta* genaht, herangetreten.
+- **EN:** — With *upapra*, Partic. *˚prāpta*, approached, come up to.
+
+**3d)** — Mit *paripra* in *pariprāpti* und *pariprepsu*.
+- **EN:** — With *paripra* in *pariprāpti* and *pariprepsu*.
+
+**3e)** — Caus. mit Etwas zu Stande kommen [LALIT. 167,1. fgg.]
+- **EN:** — Caus. to come to an accomplishment with something [LALIT. 167,1. fgg.]
+
+**3f)** — Mit *saṃparipra* Desid. in *saṃpariprepsu*.
+- **EN:** — With *saṃparipra* Desid. in *saṃpariprepsu*.
+
+**3g)** — Mit *saṃpra*
+- **EN:** — With *saṃpra*
+
+**1)** — 1〉 erreichen, gelangen zu, antreffen [122,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [123,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123) *kṛcchakālam* in die Zeit der Noth hereinkommen [76,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76).
+- **EN:** — 1) to reach, arrive at, come upon [122,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [123,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123) *kṛcchakālam* to come into a time of distress [76,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?76).
+
+**2)** — 2〉 erlangen, theilhaftig werden [139,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139). sich zuziehen, erleiden.
+- **EN:** — 2) to obtain, become partaker of [139,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139). to draw upon oneself, to suffer.
+
+**3)** — 3〉 zur Gattin bekommen. [135,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135).
+— Partic. *saṃprāpta*
+- **EN:** — 3) to obtain as a wife. [135,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?135).
+— Partic. *saṃprāpta*
+
+**1)** — 1〉 angetroffen.
+- **EN:** — 1) met with, encountered.
+
+**2)** — 2〉 erlangt [296,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?296). sich zugezogen, auf sich geladen.
+- **EN:** — 2) obtained, gained [296,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?296). drawn upon oneself, incurred.
+
+**3)** — 3〉 erreicht habend, angelangt bei, gekommen zu, gerathen auf (Acc.) [67,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?67). [228,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?228). sich erstreckend auf (im Comp. vorangehend).
+- **EN:** — 3) having reached, arrived at, come to, fallen upon (Acc.) [67,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?67). [228,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?228). extending to, reaching as far as (preceding in the Comp.).
+
 ## āp
 
 `_ap~~h0_zz_pw01`
@@ -2461,25 +2751,25 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 4〉 достигший, попавший в (несчастье).
 - **EN:** — 4) having obtained, having fallen into (a misfortune).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5〉 angelangt, gekommen. (insbes. von Zeitpunkten); herstammend von (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
 
 - **RU:** — 5〉 прибывший, пришедший. (insbes. о моментах времени); происходящий от (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
 - **EN:** — 5) arrived, come. (insbes. of points in time); descended from, derived from (Abl.) [197,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Caus. erreichen machen.
 
 - **RU:** — Caus. заставлять достигать.
 - **EN:** — Caus. to cause to reach.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **abhi)** — Mit *anusaṃpra* erreichen, anlangen bei, in antreffen.
 
 - **RU:** — Mit *anusaṃpra* достигать, прибывать к, заставать в.
 - **EN:** — With *anusaṃpra* to reach, to arrive at, to meet with in.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-ppp-intro)** — Partic. *anusaṃprāpta*
 - **EN:** — Partic. *anusaṃprāpta*
@@ -2491,13 +2781,13 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 случившийся с кем-л. (Acc.).
 - **EN:** — 2) befallen someone (Acc.).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **abhi-ppp3)** — 3〉 gekommen, erschienen, da seinen.
 
 - **RU:** — 3〉 пришедший, появившийся, присутствующий.
 - **EN:** — 3) come, appeared, being present.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **prati-intro)** — Mit *abhisaṃpra*
 - **EN:** — With *abhisaṃpra*
@@ -2509,7 +2799,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 обретать, получать, становиться причастным.
 - **EN:** — 2) to obtain, to get, to partake of.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **prati-ppp-intro)** — Partic. *abhisaṃprāpta*
 - **EN:** — Partic. *abhisaṃprāpta*
@@ -2521,13 +2811,13 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 пришедший.
 - **EN:** — 2) come.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **upa)** — Mit *upasaṃpra* gelangen zu.
 
 - **RU:** — Mit *upasaṃpra* достигать, приходить к.
 - **EN:** — With *upasaṃpra* to arrive at.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **upa-ppp-intro)** — Partic. *upasaṃprāpta*
 - **EN:** — Partic. *upasaṃprāpta*
@@ -2539,13 +2829,13 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 подошедший, приблизившийся.
 - **EN:** — 2) come near, approached.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sam-desid)** — Mit *prati* Desid. werden um (ein Mädchen).
 
 - **RU:** — Mit *prati* Desid. добиваться (девушки).
 - **EN:** — With *prati* Desid. to woo for (a girl).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-intro)** — Mit *vi*
 - **EN:** — With *vi*
@@ -2557,7 +2847,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 простираться до (*ā*).
 - **EN:** — 2) to extend up to (*ā*).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-ppp-intro)** — Partic. *vyāpta*
 - **EN:** — Partic. *vyāpta*
@@ -2569,37 +2859,37 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 занятый, взятый во владение.
 - **EN:** — 2) taken, taken possession of.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-ppp3)** — 3〉 behaftet mit (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
 
 - **RU:** — 3〉 поражённый, страдающий (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
 - **EN:** — 3) afflicted with (Instr.) [TARKAS. 41] (to be read *anityatvena*).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-ppp4)** — 4〉 in etwas Anderm eingeschlossen, — enthalten [BHĀṢĀP. 67].
 
 - **RU:** — 4〉 заключённый в чём-либо другом, — содержащийся [BHĀṢĀP. 67].
 - **EN:** — 4) enclosed in something else, — contained [BHĀṢĀP. 67].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-ppp5)** — 5〉 wohlhabend [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
 
 - **RU:** — 5〉 зажиточный, состоятельный [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
 - **EN:** — 5) wealthy [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vyā-pass)** — Caus. Partic. *vyāpita* durchdrungen, erfüllt [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
 
 - **RU:** — Caus. Partic. *vyāpita* пронизанный, наполненный [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
 - **EN:** — Caus. Partic. *vyāpita* pervaded, filled [Spr. 1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samanu)** — Mit *abhivi* Absol. *˚vyāpya* bis — (Acc.) inclusive.
 
 - **RU:** — Mit *abhivi* Absol. *˚vyāpya* вплоть до — (Acc.) включительно.
 - **EN:** — With *abhivi* Absol. *˚vyāpya* up to — (Acc.) inclusive.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-intro)** — Mit *sam*
 - **EN:** — With *sam*
@@ -2611,19 +2901,19 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 завершать.
 - **EN:** — 2) to complete.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā3)** — 3〉 heranreichen.
 
 - **RU:** — 3〉 достигать (по величине/качеству).
 - **EN:** — 3) to reach up to.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-ppp)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
 
 - **RU:** — Partic. *samāpta* завершённый, оконченный, доведённый до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
 - **EN:** — Partic. *samāpta* completed, finished, brought to a conclusion. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) erroneous for *mamāptaḥ*.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-caus-intro)** — Caus.
 - **EN:** — Caus.
@@ -2635,31 +2925,31 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 доводить до конца, совершать.
 - **EN:** — 2) to bring to an end, to accomplish.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-caus3)** — 3〉 Jmd abthun, den Garaus machen. Desid. zu vollenden streben.
 
 - **RU:** — 3〉 уничтожать кого-л., покончить с кем-л. Desid. стремиться уничтожить.
 - **EN:** — 3) to do away with someone, to finish someone off. Desid. to strive to complete.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-desid)** — Partic. *samīpsita* begehrt, erwünscht.
 
 - **RU:** — Partic. *samīpsita* желанный, желательный.
 - **EN:** — Partic. *samīpsita* desired, wished for.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samā-desid2)** — Desid. von Caus. zu vollbringen suchen.
 
 - **RU:** — Desid. von Caus. стремиться совершить.
 - **EN:** — Desid. of Caus. to seek to accomplish.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **samupa)** — Mit *anusam* Caus. dazu vollenden, nachher zu Stande bringen.
 
 - **RU:** — Mit *anusam* Caus. дополнительно завершать, впоследствии осуществлять.
 - **EN:** — With *anusam* Caus. to complete in addition, to bring about afterwards.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sampra-intro)** — Mit *parisam* Pass.
 - **EN:** — With *parisam* Pass.
@@ -2671,13 +2961,13 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 распространяться на, относиться к (Loc. oder *prati*).
 - **EN:** — 2) to extend to, to belong to (Loc. or *prati*).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sampra3)** — 3〉 das Endziel erreichen.
 
 - **RU:** — 3〉 достигать конечной цели.
 - **EN:** — 3) to reach the final goal.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sampra-ppp-intro)** — Partic. *parisamāpta*
 - **EN:** — Partic. *parisamāpta*
@@ -2689,83 +2979,83 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** — 2〉 совершенный, завершённый, так v. a. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
 - **EN:** — 2) completed, so v. a. standing at the high point [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sampra-caus)** — Caus. vollenden [JĀBĀLOP. S. 444].
 
 - **RU:** — Caus. завершать [JĀBĀLOP. S. 444].
 - **EN:** — Caus. to complete [JĀBĀLOP. S. 444].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_T6_1)** — Partic. *anusaṃprāpta*
 — 1〉 angelangt bei (Acc.).
 
 - **RU:** — Partic. *anusaṃprāpta*
 — 1〉 прибывший к (Acc.).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T10_1)** — Mit *abhisaṃpra*
 — 1〉 erreichen, gelangen zu.
 
 - **RU:** — Mit *abhisaṃpra*
 — 1〉 достигать, приходить к.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_T11_1)** — Partic. *abhisaṃprāpta*
 — 1〉 angelangt bei (Acc.).
 
 - **RU:** — Partic. *abhisaṃprāpta*
 — 1〉 прибывший к (Acc.).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_T15_1)** — Partic. *upasaṃprāpta*
 — 1〉 sich zugezogen habend, gerathen in (Acc.).
 
 - **RU:** — Partic. *upasaṃprāpta*
 — 1〉 навлёкший на себя, попавший в (Acc.).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T20_1)** — Mit *vi*
 — 1〉 hindurchreichen, durchdringen, erfüllen, ausfüllen.
 
 - **RU:** — Mit *vi*
 — 1〉 пронизывать, проникать, наполнять, заполнять.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_T22_1)** — Partic. *vyāpta*
 — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 - **RU:** — Partic. *vyāpta*
 — 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так v. a. целиком освещённый [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T40_1)** — Mit *sam*
 — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
 - **RU:** — Mit *sam*
 — 1〉 обретать, становиться причастным. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **caus_T48_1)** — Caus.
 — 1〉 Jmd Etwas erreichen —, erlangen lassen.
 
 - **RU:** — Caus.
 — 1〉 давать кому-л. достичь чего-л., помогать обрести.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **mit_T56_1)** — Mit *parisam* Pass.
 — 1〉 enthalten sein in (Loc.).
 
 - **RU:** — Mit *parisam* Pass.
 — 1〉 содержаться в (Loc.).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ppp_T61_1)** — Partic. *parisamāpta*
 — 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
 
 - **RU:** — Partic. *parisamāpta*
 — 1〉 полностью завершённый [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2776,7 +3066,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** √*āp*¦ mit *ava* Caus. заставлять кого-л. (Acc.) достигать чего-л. (Acc.) [NAIṢ. 8,89].
 - **EN:** √*āp* with *ava* Caus. to cause someone (Acc.) to obtain something (Acc.) [NAIṢ. 8,89].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **1)** √*āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 - **EN:** √*āp* with *anu* Desid. to join in agreement, to chime in. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
@@ -2791,7 +3081,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** √*āp*¦ mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 - **EN:** √*āp* with *vi*, *vyāpta* 4) contained in everything, spread everywhere [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] according to Comm. = *sarvāṅgīna*. According to [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57), *vyāpta* is also = *khyāta*.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **idx1)** √*āp*¦ mit *anu* Desid. 3.
 - **EN:** √*āp* with *anu* Desid. 3.
@@ -2812,7 +3102,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** √*āp*¦ mit *pra*, *prāpta* I. подходящий, приличествующий, целесообразный [JĀTAKAM. 22].
 - **EN:** √*āp* with *pra*, *prāpta* I. fitting, proper, advisable [JĀTAKAM. 22].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **anu_verb)** √*āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 — Mit *paryava* Etwas ganz in sich aufnehmen, sich ganz zu eigen machen [VAJRACCH. 28,14]. [30,17].
@@ -2821,7 +3111,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 - **RU:** √*āp*¦ mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 — Mit *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17].
 — Mit *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **cross_refs)** √*āp*¦ mit *anu* Desid. 3.
 — Mit *ava* Caus. 1.
@@ -2834,7 +3124,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 — Mit *payarva* 3.
 — Mit *vi* I. 6.
 — Mit *sam* I. 3.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2845,7 +3135,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** āp¦ mit anu Desid. соглашаться. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
 - **EN:** āp with anu Desid. to join in agreement. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ava)** — Mit ava [Kaus.] jemand (Akk.) etwas (Akk.) erlangen lassen, [Naiṣ. 8,89.]
 - **EN:** — With ava [Kaus.] to cause someone (Acc.) to obtain something (Acc.), [Naiṣ. 8,89.]
@@ -2854,7 +3144,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** Mit paryava целиком усваивать что-л., полностью присваивать себе, [Vajracch. 28,14; 30,17.]
 - **EN:** — With paryava to absorb something entirely into oneself, to make something entirely one's own, [Vajracch. 28,14; 30,17.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **para-suffix)** — Mit ˚para ausreichen, [H 29,47.]
 - **EN:** — With ˚para to suffice, [H 29,47.]
@@ -2875,37 +3165,37 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** āp¦ mit ˚udava, достигать, покрывать, [Kir. IX,11.]
 - **EN:** āp with ˚udava, to reach, to overspread, [Kir. IX,11.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **ava_caus)** Mit ava [Kaus.] jemand (Akk.) etwas (Akk.) erlangen lassen, [Naiṣ. 8,89.]
 
 - **RU:** Mit ava [Kaus.] заставлять кого-л. (Акк.) достигать чего-л. (Акк.), [Naiṣ. 8,89.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **para)** Mit ˚para ausreichen, [H 29,47.]
 
 - **RU:** Mit ˚para быть достаточным, хватать, [H 29,47.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **pra_prapta)** Mit pra, prāpta passend, schicklich, ratsam, [Jātakam. 22.]
 
 - **RU:** Mit pra, prāpta подходящий, приличествующий, целесообразный, [Jātakam. 22.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **paripra)** Mit paripra, ˚pariprāpta = vijñapta, [S I,196,6.]
 
 - **RU:** Mit paripra, ˚pariprāpta = vijñapta, [S I,196,6.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **vi_vyapta_4)** Mit vi, vyāpta 4. in allem enthalten, überallhin verbreitet, [Ind. St. 9,137.] Superl. ˚tama 146. vyāptadeha [Śiś. 18,5] nach dem Komm. = sarvāṅgīna. Nach [Med. 1,57] ist vyāpta auch = khyāta.
 
 - **RU:** Mit vi, vyāpta 4. содержащийся во всём, распространённый повсюду, [Ind. St. 9,137.] Superl. ˚tama 146. vyāptadeha [Śiś. 18,5] nach dem Komm. = sarvāṅgīna. Nach [Med. 1,57] ist vyāpta auch = khyāta.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **sam_4)** Mit sam 4. mit oder ohne ātmānam seinem Leben ein Ende machen, [Āpast. 1,25,2. 7.]
 
 - **RU:** Mit sam 4. с ātmānam или без него положить конец своей жизни, [Āpast. 1,25,2. 7.]
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 ## āp
 
@@ -2916,7 +3206,7 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** *āp*¦ mit *ava* Caus. заставлять кого-л. (Acc.) достигать чего-л. (Acc.) [NAIṢ. 8,89].
 - **EN:** *āp* with *ava* Caus. to cause someone (Acc.) to obtain something (Acc.) [NAIṢ. 8,89].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **1)** *āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 - **EN:** *āp* with *anu* Desid. to join in agreement, to chime in. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
@@ -2931,21 +3221,21 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. "extends to everything, belongs to ev
 
 - **RU:** *āp*¦ mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 - **EN:** *āp* with *vi*, *vyāpta* 4) contained in everything, spread everywhere [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] according to Comm. = *sarvāṅgīna*. According to [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57), *vyāpta* is also = *khyāta*.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **idx1)** *āp*¦ mit *anu* Desid. 3. — Mit *ava* Caus. 1. — Mit *payarva* 3. — Mit *vi* I. 6. — Mit *sam* I. 3.
 
 - **RU:** *āp*¦ mit *anu* Desid. 3. — Mit *ava* Caus. 1. — Mit *payarva* 3. — Mit *vi* I. 6. — Mit *sam* I. 3.
 - **EN:** *āp* with *anu* Desid. 3. — With *ava* Caus. 1. — With *payarva* 3. — With *vi* I. 6. — With *sam* I. 3.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **1)** *āp*¦ mit *pra*, *prāpta* I. passend, schicklich, rathsam [JĀTAKAM. 22].
 
 - **RU:** *āp*¦ mit *pra*, *prāpta* I. подходящий, приличествующий, целесообразный [JĀTAKAM. 22].
 - **EN:** *āp* with *pra*, *prāpta* I. fitting, proper, advisable [JĀTAKAM. 22].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **anu_verb)** *āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11]. — Mit *paryava* Etwas ganz in sich aufnehmen, sich ganz zu eigen machen [VAJRACCH. 28,14]. [30,17]. — Mit *sam* 4〉 mit oder ohne *ātmānam* seinem Leben ein Ende machen [ĀPAST. 1,25,2]. [7].
 
 - **RU:** *āp*¦ mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11]. — Mit *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17]. — Mit *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>

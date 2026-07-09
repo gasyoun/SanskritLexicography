@@ -52,7 +52,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 
 "are expiated" (= *niḥśeṣita* [NĪLAK.])
 [1,6456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6456)
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parivasatha, parivāsa* . — caus. über Nacht stehen lassen
 [ĀŚV. GṚHY. 2,8,4.]
@@ -61,4 +61,4 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [ĀŚV. GṚHY. 2,8,4.]
 - **EN:** — Vgl. *parivasatha, parivāsa* . — caus. "to let stand overnight"
 [ĀŚV. GṚHY. 2,8,4.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>

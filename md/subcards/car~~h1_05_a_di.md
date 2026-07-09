@@ -7,4 +7,4 @@
 
 - **RU:** — *adhi* vgl. ещё *adhicara* .
 - **EN:** — *adhi* vgl. also *adhicara*.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

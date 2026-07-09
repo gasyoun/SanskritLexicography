@@ -7,7 +7,7 @@
 
 - **RU:** — *adhini* caus.
 - **EN:** — *adhini* caus.
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) setzen über: *catasṛṣvāśāsvātmayoninā — adhiniveśitā ye dviradapatayaḥ*
 [BHĀG. P. 5,20,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,39)
@@ -16,7 +16,7 @@
 [BHĀG. P. 5,20,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,39)
 - **EN:** 1) to set over: *catasṛṣvāśāsvātmayoninā — adhiniveśitā ye dviradapatayaḥ*
 [BHĀG. P. 5,20,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,39)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd veranlassen einer Sache obzuliegen, — sich zu widmen: *˚veśitakarmādhikāra*
 [BHĀG. P. 5,1,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,23)
@@ -25,4 +25,4 @@
 [BHĀG. P. 5,1,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,23)
 - **EN:** 2) to induce someone to attend to, to devote himself to a thing: *˚veśitakarmādhikāra*
 [BHĀG. P. 5,1,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,23)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

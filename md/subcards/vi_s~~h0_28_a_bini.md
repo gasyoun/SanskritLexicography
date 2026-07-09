@@ -13,7 +13,7 @@
 - **EN:** — *abhini* with acc.
 [P. 1,4,47.](https://ashtadhyayi.com/sutraani/1/4/47)
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) eintreten in: *grāmamabhiniviśate*
 [P. 1,4,47](https://ashtadhyayi.com/sutraani/1/4/47), Schol. *(nadī) nadanadīpatimabhiniviśati* ergiesst sich in
@@ -28,7 +28,7 @@
 [P. 1,4,47](https://ashtadhyayi.com/sutraani/1/4/47), Schol. *(nadī) nadanadīpatimabhiniviśati* pours itself into
 [BHĀG. P. 5,17,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,5) *abhinyavikṣathāstvaṃ me yathaivāvyāhatā manaḥ* to penetrate into, hence v. a. to make oneself master of
 [BHAṬṬ. 8,80.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,80)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich in Etwas (acc.) versenken, sich ganz hingeben: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
@@ -43,13 +43,13 @@
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
 [DAŚAK. 78,8. 9.] without complement, to insist on one's own view: *te cedabhinivekṣyanti (˚nte* [ed. Bomb.]) *nābhyupaiṣyanti me vacaḥ*
 [MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) partic. *˚viṣṭa*
 
 - **RU:** — 3) partic. *˚viṣṭa*
 - **EN:** 3) partic. *˚viṣṭa*
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) sich festgesetzt habend an einem Orte
 [SUŚR. 1,82,12.] hartnäckig: *paraspareṇābhiniviṣṭaroṣayoḥ*
@@ -61,7 +61,7 @@
 - **EN:** a) having settled firmly in a place
 [SUŚR. 1,82,12.] obstinate, stubborn: *paraspareṇābhiniviṣṭaroṣayoḥ*
 [MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b) fest auf einen Punkt gerichtet, ganz mit Etwas beschäftigt, nur Eines vor Augen habend: *arthasūkṣmābhiniviṣṭadṛṣṭi*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *abhiniviṣṭayā dṛśā mālatīmukhāvalokanavihitayā*
@@ -103,7 +103,7 @@
 [MĀLATĪM. 88,2.] *abhiniviṣṭo 'si kaṣṭe* hence v. a. bent upon
 [KATHĀS. 79,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?79,4) *śunorekārthābhiniviṣṭayoḥ*
 [Spr. 2414.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2414)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) durchdrungen von, in Beschlag genommen von: *manorathenābhiniviṣṭacetasaḥ*
 [BHĀG. P. 10,1,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,41) *gurubhirlokapālānubhāvaiḥ* reichlich versehen mit
@@ -115,13 +115,13 @@
 - **EN:** c) pervaded by, taken possession of by: *manorathenābhiniviṣṭacetasaḥ*
 [BHĀG. P. 10,1,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,41) *gurubhirlokapālānubhāvaiḥ* richly furnished with
 [RAGH. 2,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,75)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — Vgl. *abhiniviṣṭa* fgg. — caus.
 
 - **RU:** — Vgl. *abhiniviṣṭa* fgg. — caus.
 - **EN:** — Vgl. *abhiniviṣṭa* fgg. — caus.
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** 1) hineingehen lassen, führen in: *kālasūtrasaṃjñake narake*
 [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *yadabhiniveśito 'hamindriyaiḥ — ˚viṣayāndhakūpe*
@@ -136,7 +136,7 @@
 [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *yadabhiniveśito 'hamindriyaiḥ — ˚viṣayāndhakūpe*
 [1,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,38) *rūpāṇi cakṣuṣā jyotiṣyabhiniveśayet* to let enter into
 [7,12,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,28)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2) sich gegenüber sitzen heissen: *munimāsane — abhinyavīviśat*
 [ŚIŚ. 1,15.]
@@ -162,14 +162,14 @@
 - **EN:** 4) to cause someone to turn his whole heart to a thing, to direct someone's whole desire upon something: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
 [MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) sich gegenüber sitzen heissen: *munimāsane — abhinyavīviśat*
 [ŚIŚ. 1,15.]
 
 - **RU:** — 2) «усаживать напротив»: *munimāsane — abhinyavīviśat*
 [ŚIŚ. 1,15.]
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) *manaḥ, ātmānam* den Geist —, die Gedanken ganz auf Etwas (loc.) richten
 [BHĀG. P. 5,8,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,26) *tadabhiniveśitamanas*
@@ -180,4 +180,4 @@
 [BHĀG. P. 5,8,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,26) *tadabhiniveśitamanas*
 [4,29,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,54) *arthakāmābhiniveśitātman*
 [1,18,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,45)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

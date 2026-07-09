@@ -46,6 +46,18 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 #artbody.lang-de .de{font-size:16px}
 #artbody:not(.lang-de) .de{color:var(--mut)}   /* dim the source when a translation is primary */
 #artbody:not(.lang-de) .de i.sa{color:var(--sa)}
+.coloc{margin:26px 0 8px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.coloc h4{margin:0 0 4px;font-size:15px}
+.coloc .hint{color:var(--mut);font-size:12px;margin-bottom:10px}
+.colcol{margin:10px 0}
+.colcol .clab{font-size:12px;color:var(--mut);font-family:ui-monospace,monospace}
+.colcol a.scan{color:var(--accent);font-size:12px;text-decoration:none;border-bottom:1px dotted var(--accent);margin-left:6px}
+.colcol a.scan:hover{border-bottom-color:transparent}
+.cwords{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
+.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--mut);white-space:nowrap}
+.cw.lnk{color:var(--accent);border-color:var(--accent);cursor:pointer}
+.cw.lnk:hover{background:var(--accent);color:#fff}
+.cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
@@ -82,7 +94,24 @@ function renderBody(r){
     +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
   });
  });
- artbody.innerHTML=h||'<p class="na">нет данных</p>'; applyLang();
+ artbody.innerHTML=(h||'<p class="na">нет данных</p>')+colocHtml(r.root); applyLang();
+}
+// Print co-location: the words that physically shared this article's PWG column(s).
+function colocHtml(root){
+ var blocks=(window.COLOC||{})[root]||[]; if(!blocks.length)return '';
+ var h='<div class="coloc"><h4>🖇 На той же печатной колонке PWG</h4>'
+  +'<div class="hint">Слова, стоявшие рядом на той же колонке (Spalte) печатного словаря Бётлингка–Рота. Выделенные — уже переведены (нажмите, чтобы открыть).</div>';
+ blocks.forEach(function(bk){
+  h+='<div class="colcol"><span class="clab">колонка '+esc(bk.col)+' (том '+esc(bk.vol)+')</span>'
+   +'<a class="scan" href="'+esc(bk.scan)+'" target="_blank" rel="noopener">🖼 скан</a><div class="cwords">';
+  bk.words.forEach(function(w){
+   if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
+   else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
+   else{h+='<span class="cw">'+esc(w.iast)+'</span>';}
+  });
+  h+='</div></div>';
+ });
+ return h+'</div>';
 }
 function renderRoot(r){
  cur=r.root;
@@ -107,6 +136,8 @@ function renderRoot(r){
 }
 // delegated tab handler (survives per-root re-render)
 document.getElementById('main').addEventListener('click',function(e){
+ var cw=e.target.closest?e.target.closest('.cw.lnk'):null;
+ if(cw){var rt=cw.getAttribute('data-root');for(var i=0;i<A.roots.length;i++){if(A.roots[i].root===rt){cur=rt;renderList(q.value.toLowerCase());renderRoot(A.roots[i]);window.scrollTo(0,0);return;}}return;}
  var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
 });
 q.oninput=function(){renderList(q.value.toLowerCase());};

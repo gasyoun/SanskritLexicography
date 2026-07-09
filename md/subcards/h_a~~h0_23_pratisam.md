@@ -10,4 +10,4 @@
 [GOP. BR. 1,2,4.]
 - **EN:** *pratisam* to rise up before someone
 [GOP. BR. 1,2,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

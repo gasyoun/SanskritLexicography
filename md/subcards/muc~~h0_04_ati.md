@@ -22,4 +22,4 @@
 [5,2,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,5) *mṛtyūn*
 [4,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,1,1) [14,4,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,13) [6,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,1,5) [TS. 6,6,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,9,2) [ŚĀṄKH. BR. 13,3. 15,5.] [KENOP. 2.] — desid. med. "to save oneself from" (acc.): *yathāgniṃ pradāvyamatimokṣamāṇaḥ*
 [ŚĀṄKH. BR. 16,7.]
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>

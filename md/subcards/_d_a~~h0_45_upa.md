@@ -85,7 +85,7 @@
 [RAGH. 7,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,68) *kriyām* to apply effort to something: *kriyā hi vastūpahitā prasīdati*
 [3,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,29) to transfer to someone, thus v. a. to teach: *mithaḥ strīṣu nṛtyamupadhāya*
 [19,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,36)
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Etwas sich unterlegen, sich auf Etwas legen: *tasyāham — upadhāya bhujaṃ savyam — kathaṃ nāmopadhāsyāmi bhujamanyasya kasyacit*
 [R. 5,23,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,13) [14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,14) *kāṣṭhaṃ vā yadi vāśmānamupadhāya śayiṣyate*
@@ -97,7 +97,7 @@
 - **EN:** — 2) to place something under oneself, to lie down upon something: *tasyāham — upadhāya bhujaṃ savyam — kathaṃ nāmopadhāsyāmi bhujamanyasya kasyacit*
 [R. 5,23,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,13) [14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,14) *kāṣṭhaṃ vā yadi vāśmānamupadhāya śayiṣyate*
 [R. SCHL. 2,42,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,16) [61,7.] [5,13,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,56)
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) belegen. bedecken, umhüllen: *avidyayātmanyupadhīyamāne*
 [BHĀG. P. 5,5,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,6) *etadupahitaṃ caitanyam*
@@ -109,7 +109,7 @@
 - **EN:** — 3) to cover over, to cover, to wrap: *avidyayātmanyupadhīyamāne*
 [BHĀG. P. 5,5,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,6) *etadupahitaṃ caitanyam*
 [VEDĀNTAS. (Allah.) No. 25. 40. 62. 64. 72. 73. 75. 77. 78.] [BALL.]: located.
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) hinzusetzen, hinzufügen: *ṛcaḥ*
 [AIT. BR. 5,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,10)
@@ -124,7 +124,7 @@
 [AIT. BR. 5,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,10)
 [LĀṬY. 4,8,7.] *prāṇe hīmānyaṅgānyupeva hitāni* joining onto, attaching to
 [ŚAT. BR. 6,1,2,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,1,2,25)
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) in der Gramm. sich legen auf so v. a. unmittelbar vorhergehen: *prathamairupadhīyamānaḥ śakāraḥ* ein *śa*, auf welches sich die Ersten (eines Varga) legen, d. i. ein auf die Ersten folgendes *śa*
 [ṚV. PRĀT. 4,2.] *ityetena — padairupahitena*
@@ -139,7 +139,7 @@
 [ṚV. PRĀT. 4,2.] *ityetena — padairupahitena*
 [2,16.] *svarānusvāropahita*
 [6,1.] Vgl. *upadhā*.
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) herbeischaffen, herbeiführen; ertheilen: *āsanāni — prayatnopahitāni*
 [MBH. 1,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2891) *upahitabali* v. l. für *upacita˚*
@@ -178,7 +178,7 @@
 [Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.] *upahita* thus v. a. ready, prepared: *niveśanaṃ ca kupyaṃ ca kṣetraṃ bhāryā suhṛjjanaḥ . etānyupahitānyāhuḥ sarvatra labhate pumān ..*
 [MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) *kratāvupahite nyastaṃ haviḥ*
 [13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286)
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) *upahita* wohl als Spion zu Jmd geschickt (vgl. *praṇi): vyaktaṃ tvamapyupahitaḥ pāṇḍavaiḥ pāpadeśaja*
 [MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) [BENFEY] ([PAÑCAT. Bd. I, S. 581]) übersetzt das Wort an der zweiten Stelle durch diejenigen
@@ -191,7 +191,7 @@ denen ihre Feinde nachgestellt haben, an der dritten durch verstellt.
 на кого враги устроили засаду, в третьем — как притворившийся.
 - **EN:** — 7) *upahita* probably sent as a spy to someone (vgl. *praṇi): vyaktaṃ tvamapyupahitaḥ pāṇḍavaiḥ pāpadeśaja*
 [MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) [BENFEY] ([PAÑCAT. Bd. I, S. 581]) translates the word in the second passage as those against whom their enemies have laid snares, and in the third passage as dissembling.
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *upahita* verbunden mit: *amarmopahite deśe*
 [SUŚR. 1,88,3.] *saindhavopahita*
@@ -213,9 +213,9 @@ denen ihre Feinde nachgestellt haben, an der dritten durch verstellt.
 [R. 5,69,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,15) — The Bed. of *upahita* is not entirely clear
 [MĀLAV. 20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20)
 — Vgl. *upadadhi, ˚dhā, ˚dhāna, ˚dhānīya, ˚dhi, ˚dheya*.
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *upadadhi, ˚dhā, ˚dhāna, ˚dhānīya, ˚dhi, ˚dheya* .
 
 - **RU:** — Vgl. *upadadhi, ˚dhā, ˚dhāna, ˚dhānīya, ˚dhi, ˚dheya* .
-  <sub>DCS 975 · attested</sub>
+  <sub>attested</sub>

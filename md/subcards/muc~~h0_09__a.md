@@ -79,7 +79,7 @@
 [Spr. 94](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?94), v. l. clothed, adorned with: *bhrājatkaustubhāmuktakaṃdhara*
 [BHĀG. P. 3,28,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,14) *āmuktamiva pāṣaṇḍam*
 [4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) after the Schol. wrapped in a heretic's garb (i.e. *āmukta* in transit. Bed.).
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ablegen (ein Kleidungsstück): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
@@ -88,7 +88,7 @@
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
 - **EN:** — 2) to take off (a garment): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
 [R. 5,13,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,35)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) befreien, loslassen: *āmuktāḥ (āsaktāḥ* liest der
 Schol.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738) schleudern, werfen: *airāvataḥ — salilam — megheṣvāmuñcate*
@@ -104,9 +104,9 @@ Schol.) reads [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/
 [MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
 [MEGH. 36.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?36)
 — Vgl. *āmocana* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **add.)** — Vgl. *āmocana* .
 
 - **RU:** — Vgl. *āmocana* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

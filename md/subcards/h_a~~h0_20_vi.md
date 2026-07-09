@@ -27,7 +27,7 @@
 [5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) [AV. 5,25,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.025.html#av05.025.09) [6,121,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.121.html#av06.121.04) *vi jihāthāṃ mā mā saṃ taptam*
 [TS. 1,1,12,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,1,12,1) *˚hīthām*
 [ŚAT. BR. 14,9,4,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,20) [8,12,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,12,1) Vgl. *viha* and 2. *vihāyas* .
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **2)** caus. öffnen, klaffen machen: *yonim*
 [AV. 1,11,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.03)

@@ -186,7 +186,7 @@ u. s. w.) [ĀŚV. GṚHY. 4,4,11.] [MBH. 3,2145.](https://sanskrit-lexicon-scans
 [KĀM. NĪTIS. 7,47. 14,40.] [ŚĀK. 7,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,11) [KATHĀS. 18,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,211) [RĀJA-TAR. 5,358.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,358) Устойчивое выражение в драме для выхода на сцену.
 - **EN:** — *pra*
  1) to go in, enter; to penetrate, hide oneself; to get into; to betake oneself to, — among: with acc. and loc.: *gṛham*
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **1-examples)** [ṚV. 10,16,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.10)
 [R. 2,42,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,22)
@@ -375,7 +375,7 @@ u. s. w.) [ĀŚV. GṚHY. 4,4,11.] [MBH. 3,2145.](https://sanskrit-lexicon-scans
 - **EN:** — 2) to have sexual intercourse (said of both sexes): *ṛtukāle manasvinī . patnī drupadarājasya drupadaṃ praviveśa ha*
 [MBH. 5,7397.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7397) *yo vā jananīṃ praviśennaraḥ* in a dream
 [SUŚR. 1,110,9.]
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) an Etwas gehen, obliegen, sich einer Sache hingeben: *dīkṣāṃ praviśa*
 [R. 1,31,28. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,28) ([32,22](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,32,22) [GORR.]). [MBH. 14,2850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2850) *vayaṃ dīkṣāṃ pravekṣyāmaḥ saṃvatsaragaṇānbahūn*
@@ -387,7 +387,7 @@ u. s. w.) [ĀŚV. GṚHY. 4,4,11.] [MBH. 3,2145.](https://sanskrit-lexicon-scans
 - **EN:** — 3) to set about something, to devote oneself to, to apply oneself to a matter: *dīkṣāṃ praviśa*
 [R. 1,31,28. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,28) ([32,22](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,32,22) [GORR.]). [MBH. 14,2850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2850) *vayaṃ dīkṣāṃ pravekṣyāmaḥ saṃvatsaragaṇānbahūn*
 [HARIV. 300.](https://sanskrit-lexicon-scans.github.io/hariv?300)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) in Jmd hineingehen so v. a. in ihm aufgehen, gegen ihn verschwinden, vor ihm ganz in den Schatten treten: *taṃ* (*arjunaṃ*) *pravekṣyanti vai sarve rājānaḥ śastrayodhinaḥ*
 [HARIV. 4039.](https://sanskrit-lexicon-scans.github.io/hariv?4039)
@@ -396,7 +396,7 @@ u. s. w.) [ĀŚV. GṚHY. 4,4,11.] [MBH. 3,2145.](https://sanskrit-lexicon-scans
 [HARIV. 4039.](https://sanskrit-lexicon-scans.github.io/hariv?4039)
 - **EN:** — 4) to go into someone, so v. a. to be absorbed into him, to disappear before him, to be utterly eclipsed by him: *taṃ* (*arjunaṃ*) *pravekṣyanti vai sarve rājānaḥ śastrayodhinaḥ*
 [HARIV. 4039.](https://sanskrit-lexicon-scans.github.io/hariv?4039)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) partic. *praviṣṭa*
  a) in act. Bed.
@@ -405,4 +405,4 @@ u. s. w.) [ĀŚV. GṚHY. 4,4,11.] [MBH. 3,2145.](https://sanskrit-lexicon-scans
  a) в act. Bed.
 - **EN:** — 5) partic. *praviṣṭa*
  a) in act. Bed.
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>

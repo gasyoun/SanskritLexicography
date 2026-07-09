@@ -10,4 +10,4 @@
 [Spr. 1001.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1001)
 - **EN:** — *adhini* to choose as a dwelling place: *suranadīm*
 [Spr. 1001.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1001)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

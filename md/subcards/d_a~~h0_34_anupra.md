@@ -8,9 +8,9 @@
 
 - **RU:** — *anupra* передавать, уступать: *˚dāsyāmi*
 [SADDH. P. 4,20,b. 21,a.]
-  <sub>DCS 40 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *anupradāna* .
 
 - **RU:** — Vgl. *anupradāna* .
-  <sub>DCS 40 · lexicographic</sub>
+  <sub>lexicographic</sub>

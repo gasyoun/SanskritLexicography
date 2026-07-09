@@ -7,4 +7,4 @@
 
 - **RU:** — *upa* s. *upavāsana* .
 - **EN:** — *upa* s. *upavāsana*.
-  <sub>DCS 373 · attested</sub>
+  <sub>attested</sub>

@@ -12,7 +12,7 @@
 [ṚV. 1,41,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.08) (med.).
 - **EN:** — *prati*
  1) to proclaim, announce [ṚV. 1,41,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.08) (med.).
-  <sub>DCS 557 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) antworten, erwiedern
 [VS. 23,51.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,51) *manaścinme hṛda ā pratyavocat*
@@ -102,10 +102,10 @@
 [5,1,89.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,89) to answer: *prativaktāsmi te vacaḥ*
 [MBH. 14,1700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1700)
 [NIR. 1,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,14)
-  <sub>DCS 557 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *uktapratyukta, prativaktavya* fg., *pratyukta* fg.
 
 - **RU:** — Vgl. *uktapratyukta, prativaktavya* fg., *pratyukta* fg.
 - **EN:** — Vgl. *uktapratyukta, prativaktavya* fg., *pratyukta* fg.
-  <sub>DCS 557 · attested</sub>
+  <sub>attested</sub>

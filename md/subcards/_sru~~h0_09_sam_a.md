@@ -10,4 +10,4 @@
 [BHĀG. P. 10,85,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,28)
 - **EN:** *samā* caus. with dopp. acc. to communicate something to someone: *kṛṣṇarāmau* (acc.) *samāśrāvya putrānkaṃsavihiṃsitān*
 [BHĀG. P. 10,85,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,28)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

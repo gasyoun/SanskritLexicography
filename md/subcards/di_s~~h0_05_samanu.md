@@ -11,4 +11,4 @@
 **samanu-header)** — *samanu* anweisen: *tadyadarvāgyatparaḥ kṛntanti yadulbaṇaṃ yadvithuraṃ kriyate śamitṛbhyaścaivainattannigrabhītṛbhyaśca samanudiśati* [AIT. BR. 2,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,7)
 
 - **RU:** — *samanu* назначать, давать указание: *tadyadarvāgyatparaḥ kṛntanti yadulbaṇaṃ yadvithuraṃ kriyate śamitṛbhyaścaivainattannigrabhītṛbhyaśca samanudiśati* [AIT. BR. 2,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,7)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

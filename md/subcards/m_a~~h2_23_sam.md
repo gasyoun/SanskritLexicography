@@ -26,7 +26,7 @@
 [MBH. 4,657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.657) *adrohaḥ sarvabhūteṣu saṃtoṣaḥ śīlamārjavam . tapo damaśca satyaṃ ca pradānaṃ ceti saṃmitam ..*
 [14,2809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2809) viell. symmetrical
 [PAÑCAR. 1,7,58,d.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,58)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) nach dem Maasse (eines Andern) machen, gleichmachen (an Grösse, Zahl u. s. w.), nachbilden: *nava prāṇānnavabhiḥ saṃ mimīte*
 [AV. 5,28,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.01)
@@ -170,7 +170,7 @@
 [HARIV. 13622.](https://sanskrit-lexicon-scans.github.io/hariv?13622) *tulayā saṃmitaḥ* equal in weight to the Erkl. of *tulya*
 [P. 4,4,91.](https://ashtadhyayi.com/sutraani/4/4/91) *brahmaghnāṃ pāpasaṃmitaḥ* equalling Brahman-slayers in sin, thus v. a. one who has committed a sin as great as that of a Brahman-slayer
 [BHAṬṬ. 6,126.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,126) Vgl. *samita*.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Platz finden, hineingehen in (loc.): *mṛṇālasūtramapi te na saṃmāti stanāntare*
 [Spr. 2402.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2402) pass. dass.: *na kṛtsnaḥ puttikāśarīre saṃmīyeta*
@@ -182,7 +182,7 @@
 - **EN:** — 3) to find room, to fit into (loc.): *mṛṇālasūtramapi te na saṃmāti stanāntare*
 [Spr. 2402.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2402) pass. dass.: *na kṛtsnaḥ puttikāśarīre saṃmīyeta*
 [NĪLAK. 121.] Vgl. simpl. 3.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) act. zutheilen, gewähren: *asmadrya1ksaṃ mimīhi śravāṃsi*
 [ṚV. 3,54,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) [5,4,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.02) *devairavo mimīhi saṃ jaritre*
@@ -194,7 +194,7 @@
 - **EN:** — 4) act. to allot, to grant: *asmadrya1ksaṃ mimīhi śravāṃsi*
 [ṚV. 3,54,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) [5,4,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.02) *devairavo mimīhi saṃ jaritre*
 [3,1,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.15)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *saṃmita* versehen mit (instr.): *saptabhirdvāraiḥ*
 [PAÑCAR. 1,7,58.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,58) *supuṇyajala˚*
@@ -218,15 +218,15 @@
 [MBH. 3,3018](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3018), but the [ed. Bomb.] *˚saṃmita)*.* dvādaśaskandha˚ (bhāgavata)* consisting of twelve Sk
 [PAÑCAR. 2,7,28.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,7,28) *mṛtyu˚ (˚saṃdhita* [ed. Bomb.]) thus v. a. devoted to death, doomed to die
 [MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **ref)** — Vgl. *asaṃmita, dvirephagaṇasaṃmitā* und *saṃmiti* .
 
 - **RU:** — Vgl. *asaṃmita, dvirephagaṇasaṃmitā* und *saṃmiti* .
 - **EN:** — Vgl. *asaṃmita, dvirephagaṇasaṃmitā* and *saṃmiti*.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-marker)** — *sam*
 
 - **RU:** — *sam*
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

@@ -68,4 +68,4 @@
 [ŚĀṄKH. ŚR. 14,42,16.] *yuktasenasya nṛpateḥ parānabhijigīṣataḥ*
 [SUŚR. 1,122,3.]
 — Vgl. *abhijaya, abhijit* fgg.
-  <sub>DCS 132 · attested</sub>
+  <sub>attested</sub>

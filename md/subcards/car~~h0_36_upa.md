@@ -8,7 +8,7 @@
 
 - **RU:** — *upa*, *kāmamapucaradhyai* ved.
 [P. 3,4,9](https://ashtadhyayi.com/sutraani/3/4/9), Sch.
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) herbeikommen, sich nähern, hinzutreten zu (acc.): *avannavantīrupa no duraścara*
 [ṚV. 7,46,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.046.html#rv07.046.02)
@@ -28,7 +28,7 @@
 [ŚAT. BR. 1,9,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,8) *yaḥ paśuṃ purastātpratyañcamupacarati*
 [TS. 5,7,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,6,1) *sa tānupacaran*
 [R. 5,64,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,64,5)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinzutreten um zu bedienen, Jmd an die Hand gehen, bedienen, aufwarten; mit dem acc. der Person: *sa yo hainaṃ śobhanenopacarati*
 [ŚAT. BR. 3,3,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,3) *madantībhiḥ*
@@ -106,7 +106,7 @@
 [3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* supported
 [5,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.21) *upacarita = varivasita* u. s. w.
 [AK. 3,2,51.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,51)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich an Etwas machen, unternehmen, angreifen: *uttarato yajñamupacariṣyāmaḥ*
 [ŚAT. BR. 4,6,6,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,6,1) *yadā vā annaṃ pacyate 'tha tatsṛṇyopacaranti*
@@ -121,7 +121,7 @@
 [ŚAT. BR. 4,6,6,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,6,1) *yadā vā annaṃ pacyate 'tha tatsṛṇyopacaranti*
 [7,2,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,2,5) *yo vā ayathādevataṃ yajñamupacarati*
 [TS. 3,1,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,6,1)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) behandeln (medic.): *upadravāṃśca yathāsvamupacaret* (vgl. u. *upā*)
 [SUŚR. 2,48,18.] mit dem acc. der Person: *vividhaiḥ śītopāyaiḥ — upacaryamāṇaścirātkathaṃcitsacetano babhūva*
@@ -133,7 +133,7 @@
 - **EN:** — 4) to treat (medic.): *upadravāṃśca yathāsvamupacaret* (vgl. u. *upā*)
 [SUŚR. 2,48,18.] with the acc. of the person: *vividhaiḥ śītopāyaiḥ — upacaryamāṇaścirātkathaṃcitsacetano babhūva*
 [PAÑCAT. 43,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,10)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) pass. uneigentlich —, metaphorisch gebraucht sein, — zugeschrieben werden: *kālo 'yaṃ dviparārdhyākhyo nimeṣa* (loc.) *upacaryate . avyākṛtasyānantasya anāderjagadātmanaḥ ..*
 [BHĀG. P. 3,11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,37) *yathā loke svaśaktiṣu yodheṣu vartamānau jayaparājayau rājñi upacaryete* wie Sieg und Niederlage in der Welt uneigentlich dem Könige zugeschreiben werden, indem dieselben eigentlich seine Kämpfer treffen,
@@ -151,10 +151,10 @@ Sch. к [SĀṂKHYAK. 21 (S. 78). 62 (S. 177).] *vibhaktā bhrātara ityatra ca 
 Sch. to [SĀṂKHYAK. 21 (S. 78). 62 (S. 177).] *vibhaktā bhrātara ityatra ca dhanasya yadvibhaktitvaṃ tadbhrātṛṣūpacaryate*
 [MALLIN.] to [KIR. 1,1.] [SĀH. D. 8,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?8,7) [30,19.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?30,19) Here probably also belongs the passage: *tenopacaryate rāhuḥ . yāmyottarā śaśigatirgaṇite 'pyupacaryate tena*
 [VARĀH. BṚH. S. 5,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,15)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *upacara* fg., *upacarya, upacāra* fg., *upacārya* .
 
 - **RU:** — Vgl. *upacara* fg., *upacarya, upacāra* fg., *upacārya* .
 - **EN:** — Vgl. *upacara* fg., *upacarya, upacāra* fg., *upacārya* .
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>

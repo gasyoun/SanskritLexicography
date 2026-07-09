@@ -7,4 +7,4 @@
 
 - **RU:** — intens. *seṣidhyate* ebend.
 - **EN:** — intens. *seṣidhyate* ebend.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

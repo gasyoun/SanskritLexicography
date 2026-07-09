@@ -46,10 +46,10 @@
 [ŚĀṄKH. ŚR. 13,29,6.]
 [KĀTY. ŚR. 4,7,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,7,15)
 [GOBH. 1,1,15.]
-  <sub>DCS 150 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *abhyādhāna* .
 
 - **RU:** — Vgl. *abhyādhāna* .
 - **EN:** — Vgl. *abhyādhāna* .
-  <sub>DCS 150 · attested</sub>
+  <sub>attested</sub>

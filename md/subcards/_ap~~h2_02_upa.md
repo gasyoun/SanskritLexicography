@@ -7,4 +7,4 @@
 
 - **RU:** — *upa* vgl. *upāpa, upāpti, upepsā* .
 - **EN:** — *upa* vgl. *upāpa, upāpti, upepsā*.
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>

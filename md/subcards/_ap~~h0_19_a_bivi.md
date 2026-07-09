@@ -16,10 +16,10 @@
 [P. 2,1,134](https://ashtadhyayi.com/sutraani/2/1/134), Sch.
 *adhikāro 'yaṃ yūnastirityabhivyāpya*
 [SIDDH. K.] to [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *abhivyāpaka* fgg.
 
 - **RU:** — Vgl. *abhivyāpaka* fgg.
 - **EN:** — Vgl. *abhivyāpaka* fgg.
-  <sub>DCS 7 · attested</sub>
+  <sub>attested</sub>

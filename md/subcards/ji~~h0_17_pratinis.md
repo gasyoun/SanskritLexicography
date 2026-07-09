@@ -10,4 +10,4 @@
 [R. 2,26,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,22)
 - **EN:** — *pratinis* to abolish, destroy: *sa samayo dharmeṇa pratinirjitaḥ*
 [R. 2,26,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,22)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

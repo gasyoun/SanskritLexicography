@@ -8,4 +8,4 @@
 
 - **RU:** — *samabhyā* med. собирать вместе, сводить воедино: *etāstejomātrāḥ samabhyādadānaḥ*
 [ŚAT. BR. 14,7,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,1)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

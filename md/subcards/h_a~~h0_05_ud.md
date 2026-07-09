@@ -55,7 +55,7 @@ or *bhūmita u˚* {rises from the earth}
 [10,51,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,51,1) [NAIṢ. 22,45. 55.] *kolāhalo lokasyodajihīta*
 [DAŚAK. 66,3.] *ujjihānajīvitā* {whose life is about to depart —; wishes to escape}
 [MĀLATĪM. 163,11.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in die Höhe richten: *akṣibhruvamujjihānaḥ*
 [BHAṬṬ. 3,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,47)
@@ -65,9 +65,9 @@ or *bhūmita u˚* {rises from the earth}
 - **EN:** — 2) {to direct upward}: *akṣibhruvamujjihānaḥ*
 [BHAṬṬ. 3,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,47)
 — Vgl. *ujjihāna*.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *ujjihāna* .
 
 - **RU:** — Vgl. *ujjihāna* .
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

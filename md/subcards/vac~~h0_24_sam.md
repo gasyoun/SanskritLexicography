@@ -23,7 +23,7 @@
 - **EN:** — *sam* to proclaim, to communicate
 [PAÑCAR. 1,15,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,15,8) [Journ. of the Am. Or. S. 6,561] (to explain comprehensively
 [HALL]).
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>
 
 **2)** sprechen, sagen
 [KATHĀS. 3,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,49) *hitārthaṃ samuvācemāṃ bhāratīṃ bharatānprati*

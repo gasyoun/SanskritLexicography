@@ -24,7 +24,7 @@ Z. 4. fg. sich Wege bahnen falsch; vgl. u. 2. *mārga* 2) f). — caus.
 Z. 4. fg. прокладывать пути неверно; vgl. u. 2. *mārga* 2) f). — caus.
 - **EN:** — 11)
 Z. 4. fg. "to make/clear one's way for oneself" is wrong; [see] vgl. u. 2. *mārga* 2) f). — caus.
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **11.1)** 1) *so 'śvānvicārayitvā rathe yuktān*
 [R. 7,46,22.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,46,22)
@@ -33,7 +33,7 @@ Z. 4. fg. "to make/clear one's way for oneself" is wrong; [see] vgl. u. 2. *mār
 [R. 7,46,22.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,46,22)
 - **EN:** 1) *so 'śvānvicārayitvā rathe yuktān*
 [R. 7,46,22.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,46,22)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **11.3)** — 3) *mitraṃ vicārya bahuśaḥ* .
 [Spr. 2196.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2196)
@@ -42,7 +42,7 @@ Z. 4. fg. "to make/clear one's way for oneself" is wrong; [see] vgl. u. 2. *mār
 [Spr. 2196.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2196)
 - **EN:** — 3) *mitraṃ vicārya bahuśaḥ*.
 [Spr. 2196.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2196)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **vi_main)** — *vi*
  4)
@@ -57,4 +57,4 @@ vgl. u. 2. *mārga* 2) f).
 vgl. u. 2. *mārga* 2) f).
 — 6) *vicaratyasamunnaddho yaḥ*
 [Spr. 3591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3591)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>

@@ -42,4 +42,4 @@ in der Bed. auseinanderthun, ausweiten, öffnen auch in anderer Verb. als mit Mu
 в значении Bed. разверзать, раздвигать, открывать также в ином Verb., нежели о рте: *nadīkūlaṃ vyādadāti, vipādikāṃ (= pādasphoṭaṃ*
 [SIDDH. K.]) *vyā˚*; по
 [SIDDH. K. 163,b,4] med. в значении Bed. открывать рот другого (!): *vyādadate pipīlikāḥ pataṃgasya mukham* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

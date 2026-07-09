@@ -10,4 +10,4 @@
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 103.]
 - **EN:** — *abhisaṃni*, partic. *˚viṣṭa* united in someone
 [ŚAṂK.] with [BṚH. ĀR. UP. S. 103.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

@@ -10,4 +10,4 @@
 [P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
 - **EN:** — desid. *vivatsati*
 [P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

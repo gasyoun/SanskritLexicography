@@ -40,4 +40,4 @@ Sch. к [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 [DAŚAK. 55,3.] *vyavadāta = avadātaḥ prabhrājamānā vyavadātāḥ (vāryāḥ puruṣāḥ)*
 [TAITT. ĀR. 1,9,4.] _f._ *ī*
 [17,2.]
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

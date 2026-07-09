@@ -10,4 +10,4 @@
 [ṚV. 10,160,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.160.html#rv10.160.04)
 - **EN:** *nis* viell. to find out: *niraratnau maghavā taṃ dadhāti*
 [ṚV. 10,160,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.160.html#rv10.160.04)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

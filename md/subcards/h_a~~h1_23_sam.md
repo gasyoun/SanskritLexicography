@@ -10,4 +10,4 @@
 [MBH. 7,3045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3045)
 - **EN:** — *sam* to give up, to renounce: *dharmaṃ na saṃjahyāt*
 [MBH. 7,3045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3045)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

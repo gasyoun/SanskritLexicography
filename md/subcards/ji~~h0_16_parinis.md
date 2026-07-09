@@ -13,4 +13,4 @@
 - **EN:** — *parinis* dass.: *ekena tena vīreṇa ṣaḍrathāḥ parinirjitāḥ*
 [MBH. 4,2251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2251)
 [R. 5,36,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,38)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

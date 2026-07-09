@@ -31,7 +31,7 @@
 [MBH. 12,3766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3766) *dhvaniḥ*
 [VARĀH. BṚH. S. 19,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,13) *amniḥ*
 [31 (30),13.]
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) in's Feld ziehen, einen Angriff machen: *kaliḥ prasupto bhavati sa (rājā) jāgraddvāparaṃ yugam . karmasvabhyudyatastretā vicaraṃstu*
 ([KULL.]: *[yadā] yathāśāstraṃ punaḥ karmāṇyanutiṣṭhanvicarati) kṛtaṃ yugam ..*
@@ -58,7 +58,7 @@
 [MBH. 4,1906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1906) *anena tvaṃ yadāstreṇa saṃgrāme vicariṣyasi*
 [3,1696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1696) *vyacaratpṛtanāntare*
 [7,488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.488)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zerrinnen, ablaufen: *vṛtrasya niṇyaṃ vi carantyāpaḥ*
 [ṚV. 1,32,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.032.html#rv01.032.10) *yasya dyāvo na vicaranti mānuṣā* dessen Tage nicht ablaufen nach Menschenart
@@ -70,7 +70,7 @@
 - **EN:** — 3) to pass away, elapse: *vṛtrasya niṇyaṃ vi carantyāpaḥ*
 [ṚV. 1,32,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.032.html#rv01.032.10) *yasya dyāvo na vicaranti mānuṣā* whose days do not elapse after the manner of men
 [51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) herumstreichen, sich ergehen, laufen: *sūryā māsā vicarantā*
 [ṚV. 10,92,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.12)
@@ -145,7 +145,7 @@
 [M. 2,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,88) *sarvabhūtānāṃ bhāve vicaratā śubhe* (of the god of love)
 [HIḌ. 4,32.] *vicarita* _n._ the roaming about, wandering: *vane*
 [N. 24,44.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,44)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) durchschreiten, durchstreichen, durchwandern, durchlaufen; eindringen, durchdringen; mit dem acc.: *puro vibhindannacaradvi dāsīḥ*
 [ṚV. 1,103,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.103.html#rv01.103.03) *ṛtasya sadma vi carāmi vidvān*
@@ -199,7 +199,7 @@
 [MBH. 7,495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.495) *vicīrṇāni vanāni*
 [MBH. 3,11432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11432)
 [R. 3,73,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,25)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) stehen in, sich befinden (von Gestirnen): *prājapatye — vicaran (bhaumaḥ)*
 [VARĀH. BṚH. S. 6,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,11) [9,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,14) [39 (38),14.]
@@ -208,7 +208,7 @@
 [VARĀH. BṚH. S. 6,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,11) [9,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,14) [39 (38),14.]
 - **EN:** — 6) to stand in, be situated (of heavenly bodies): *prājapatye — vicaran (bhaumaḥ)*
 [VARĀH. BṚH. S. 6,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,11) [9,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,14) [39 (38),14.]
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) verfahren, auftreten, zu Werke gehen: *nāhamevaṃ care loke yathā tvamabhimanyase . apatyahetorvicare tacca kṛcchragataṃ mayā ..*
 [MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) *na garvamāsādya svaprabhutayā vicaraṇīyam*
@@ -220,7 +220,7 @@
 - **EN:** — 7) to proceed, act, go about a matter: *nāhamevaṃ care loke yathā tvamabhimanyase . apatyahetorvicare tacca kṛcchragataṃ mayā ..*
 [MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) *na garvamāsādya svaprabhutayā vicaraṇīyam*
 [PAÑCAT. 26,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,3)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) leben, sein Leben zubringen: *veśavāgbuddhisārūpyamācaranvicarediha*
 [M. 4,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,18) *adhyātmaratirāsīno nirāpekṣo nirāmiṣaḥ . ātmanaiva sahāyena sukhārthī vicarediha ..*
@@ -238,7 +238,7 @@
 [6,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,49) [52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,52) *tasmāttvaṃ nartanaḥ pārtha strīmadhye mānavarjitaḥ . apumāniti vikhyātaḥ ṣaṇḍhavadvicariṣyasi ..*
 [MBH. 3,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1866) *teṣāṃ madhye vicaran*
 [PAÑCAT. 68,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,25)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) mit Jmd (instr.) Umgang pflegen: *yenāgre vicacartha ha*
 [BHĀG. P. 4,28,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)
@@ -247,7 +247,7 @@
 [BHĀG. P. 4,28,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)
 - **EN:** — 9) to associate with someone (instr.): *yenāgre vicacartha ha*
 [BHĀG. P. 4,28,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) ausschweifen: *yanme mātā pralulubhe vicarantyapativratā*
 [ŚĀṄKH. GṚHY. 3,13] = [M. 9,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,20) ein Versehen machen: *vyacaradvācā vaṣaṭkāraṃ gṛṇandvijaḥ*
@@ -259,7 +259,7 @@
 - **EN:** — 10) to stray, transgress: *yanme mātā pralulubhe vicarantyapativratā*
 [ŚĀṄKH. GṚHY. 3,13] = [M. 9,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,20) to make a mistake: *vyacaradvācā vaṣaṭkāraṃ gṛṇandvijaḥ*
 [BHĀG. P. 9,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,1,15)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) üben, vollführen, vollbringen: *mṛgayāṃ vyacarat*
 [MBH. 3,12654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12654) *yuddhaṃ viceratuḥ*
@@ -283,7 +283,7 @@
 [PAÑCAT. I,307.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,307) *sa tena (nistriṃśena) vicaranmārgānekaḥ* to blaze a trail for oneself
 [HARIV. 10147.](https://sanskrit-lexicon-scans.github.io/hariv?10147) *bhrāntamudbhrāntamāviddhamāplutaṃ vidrutaṃ plutam . iti prakārāndvātriṃśadvicaran*
 [10148.](https://sanskrit-lexicon-scans.github.io/hariv?10148) — caus.
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** 1) laufen —, herumstreichen lassen: *tato vicārya bahuśo rathamārgeṣu tānhayān . anodayatsame deśe*
 [ARJ. 6,17.] *(cārān) udyāneṣu vihāreṣu* u. s. w. *vicārayet*
@@ -301,7 +301,7 @@
 [MBH. 1,5605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5605) *vicārya sa tato dṛṣṭiṃ kānane*
 [R. 4,13,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,44) *buddhiratra vicāryatām* to let the mind wander about, hence v. a. to reflect
 [1,41,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,9)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2) ausschweifen lassen, verführen: *puro vicārya mohena ṛṣipatnīṃ śatakratuḥ . dharṣayitvā muneḥ śāpāttatraiva viphalaḥ kṛtaḥ ..*
 [R. 1,49,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,49,6)
@@ -310,7 +310,7 @@
 [R. 1,49,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,49,6)
 - **EN:** Causative — 2) to let stray, seduce: *puro vicārya mohena ṛṣipatnīṃ śatakratuḥ . dharṣayitvā muneḥ śāpāttatraiva viphalaḥ kṛtaḥ ..*
 [R. 1,49,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,49,6)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **caus3)** — 3) in Gedanken hin und her gehen lassen, erwägen, gegen einander abwägen, in Betracht ziehen, prüfen, nachdenken: *āyatiṃ sarvakāryāṇāṃ tadātvaṃ ca vicārayet*
 [M. 7,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,178) *vicārya tasya vā vṛttam*
@@ -370,4 +370,4 @@
 [R. 3,13,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,31) [49,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,16) *manasā*
 [42,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,29) *avicāritaṃ karma na kartavyam*
 [HIT. 12,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,16)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>

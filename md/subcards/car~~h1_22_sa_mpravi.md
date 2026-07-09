@@ -10,4 +10,4 @@
 [R. 7,95,17.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,95,17)
 - **EN:** — *saṃpravi* caus. to weigh carefully, to examine closely
 [R. 7,95,17.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,95,17)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

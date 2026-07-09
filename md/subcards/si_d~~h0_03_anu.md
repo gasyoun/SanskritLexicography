@@ -10,4 +10,4 @@
 [ṚV. 1,23,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.023.html#rv01.023.15)
 - **EN:** — *anu* intens. {to drive along the path, derive}: *uto sa mahyamindubhiḥ ṣaḍyuktā anuseṣidhat*
 [ṚV. 1,23,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.023.html#rv01.023.15)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

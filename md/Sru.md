@@ -355,7 +355,7 @@ Schol. cf. [P. 6,3,133.](https://ashtadhyayi.com/sutraani/6/3/133) [7,1,45.](htt
 ([MBH. 3,1262](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1262)). with acc. and instr.: *tadvṛttaṃ nṛpatiḥ śrutvā dūtaśreṣṭhaiḥ*
 [R. 1,70,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,8) in the Bed. "to ask, request" (according to the Scholl.)
 [BHAṬṬ. 8,77.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,77)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -444,7 +444,7 @@ Bomb.). *śṛṇudhvam*
 [MBH. 7,2725.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2725) *śṛṇuṣvāvahito mama*
 [13,1119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1119) [14,424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.424) *śuśruve* with acc. of the thing and abl. of the person
 [1,386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.386)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. (im Veda) in pass. Bed. und pass. *śrūyate* u. s. w. (nach-vedisch): *sa ghoṣaḥ śṛṇve 'vamairamitraiḥ* wird vernommen
 [ṚV. 3,30,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.16) [5,73,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.07) [10,94,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.06) *keno nu kaṃ śromatena na śuśruve vṛtrahā*
@@ -603,7 +603,7 @@ u. s. w. [ŚĀK. 95,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2
 [SARVADARŚANAS. 152,2.] with abl. of the person: *vṛddhebhyaḥ śrūyate yathā*
 [KATHĀS. 6,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,74) with gen. of the thing: *śrūyatāmasya dhanuṣo yadarśamiha tiṣṭhati*
 [R. 1,66,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,7) — *śuśruvaṃs* and *śruta* s. bes.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -722,7 +722,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [12276.](https://sanskrit-lexicon-scans.github.io/hariv?12276) pass. "to get to hear": *śrāvyantāṃ pṛthivīkṣitaḥ . yattvayābhihitaṃ vākyaṃ mayā ca pratibhāṣitam*
 [HARIV. 9620.](https://sanskrit-lexicon-scans.github.io/hariv?9620) with acc. of the thing: *iti vacanaṃ paulastyaḥ śrāvyatām*
 [R. 5,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,18) partic. *śrāvita*
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-1)** 1) der Etwas (acc.) zu hören bekommen hat, — vernommen hat: *ityasya dūtaiḥ sa śrāvito 'bhavat*
 [RĀJA-TAR. 4,552.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,552)
@@ -752,7 +752,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [6,5830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5830) [3,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2) [5,7508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7508) [14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) [HARIV. 1097.](https://sanskrit-lexicon-scans.github.io/hariv?1097) [R. 1,17,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,18) ([7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,7) [GORR.]). [2,62,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,1) [4,32,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,32,4) [7,50,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,50,18) (*śrāvitaḥ* to be read). with gen. of the person
 [MBH. 7,6403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6403) with abl. of the person: *sākṣyamanyebhyaḥ*
 [YĀJÑ. 2,82.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,82)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-2)** — 2) verkündet, gesprochen, mitgetheilt
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
@@ -761,7 +761,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
 - **EN:** — 2) "proclaimed, spoken, communicated"
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-3)** — 3) angemeldet: *sacivaiḥ śrāvitāḥ pūrvaṃ praviṣṭāste narādhipāḥ*
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
@@ -770,7 +770,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
 - **EN:** — 3) "announced": *sacivaiḥ śrāvitāḥ pūrvaṃ praviṣṭāste narādhipāḥ*
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-4)** — 4) genannt: *śrāvastīti purī ramyā śrāvitā ca lavasya ha*
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
@@ -779,7 +779,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
 - **EN:** — 4) "named, called": *śrāvastīti purī ramyā śrāvitā ca lavasya ha*
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-5)** — 5) so v. a. *āśrāvita* der rituelle Zuruf
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
@@ -788,13 +788,13 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
 - **EN:** — 5) so v. a. *āśrāvita* "the ritual call"
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya* .
 
 - **RU:** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya* .
 - **EN:** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya*.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -856,7 +856,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [MBH. 5,1565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1565)
 [BHĀG. P. 1,18,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,15) [2,3,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,14) [10,51,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,51,32) *śuśrūṣitāṃ vācaṃ bhāṣitā*
 [ŚAT. BR. 14,9,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gehorchen, Jmd seine Aufmerksamkeit erzeigen, zu Jmdes Dienst sein
 [KUMĀRAS. 1,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,60) *bhāryā na śuśrūṣate*
@@ -943,13 +943,13 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [MBH. 12,4588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4588) [15,117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.117)
 [BHĀG. P. 6,18,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,30)
 [PAÑCAT. 118,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?118,24)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *śuśrūṣaka* fgg.
 
 - **RU:** — Vgl. *śuśrūṣaka* fgg.
 - **EN:** — Vgl. *śuśrūṣaka* fgg.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **desid. intro)** — desid. *śuśrūṣate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
@@ -958,7 +958,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 - **RU:** — desid. *śuśrūṣate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
 [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) в эпосе по метрическим соображениям также med.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -975,7 +975,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 - **EN:** — desid. vom. caus. *śiśrāvayiṣati* and *śuśrāvayiṣati*
 [P. 7,4,81.](https://ashtadhyayi.com/sutraani/7/4/81)
 [VOP. 19,15.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,15)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -989,7 +989,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [KULL.] zu [M. 2,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,243), возможно, лишь ошибочное написание вместо *śuśrūṣeta*.
 - **EN:** — caus. from desid. = desid. "to be at someone's service": *garuṃ śuśrūṣayet*
 [KULL.] for [M. 2,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,243) perhaps merely erroneous for *śuśrūṣeta*.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## anuśru
 
@@ -1057,7 +1057,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [PAÑCAT. 3,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?3,9) [6,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?6,3) [234,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?234,5) *tadvā ṛṣīṇāmanuśrutamāsa*
 [ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1) [9,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,25) [3,1,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,4,4)
 [BHĀG. P. 5,25,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,25,8)
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) von Neuem —, wieder hören: *śrutaṃ śrutamevārthamanuśṛṇoti*
 [PRAŚNOP. 4,5.] *śrotraṃ śṛṇvatsarve prāṇā anuśṛṇvanti*
@@ -1072,7 +1072,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [PRAŚNOP. 4,5.] *śrotraṃ śṛṇvatsarve prāṇā anuśṛṇvanti*
 [KAUṢ. UP. 3,2.] — Vergl. *anuśrava* and *˚śrāva*. — desid. "to obey": *kausalyāto 'tiriktaṃ ca so 'nuśuśrūṣate hi mām (mama śuśrūṣate bahu* [ed. Bomb.])
 [R. 2,8,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8,18) Vgl. *anuśuśrūṣā*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 ## abhiśru
 
@@ -1095,7 +1095,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [HARIV. 4583.](https://sanskrit-lexicon-scans.github.io/hariv?4583) *jagato 'bhiśṛṇvataḥ*
 [BHĀG. P. 4,4,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,10) *tamāgatamabhiśrutya*
 [MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427)
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) partic. *˚śruta* bekannt
 [AV. 6,138,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.138.html#av06.138.01)
@@ -1104,13 +1104,13 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [AV. 6,138,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.138.html#av06.138.01)
 - **EN:** — 2) partic. *˚śruta* "known"
 [AV. 6,138,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.138.html#av06.138.01)
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *abhiśrāva* .
 
 - **RU:** — Vgl. *abhiśrāva* .
 - **EN:** — Vgl. *abhiśrāva*.
-  <sub>DCS 10 · attested</sub>
+  <sub>attested</sub>
 
 ## āśru
 
@@ -1139,7 +1139,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [7,67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.10) *kārave*
 [3,33,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.033.html#rv03.033.09) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.033.html#rv03.033.10) [10,95,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.095.html#rv10.095.11) [AV. 5,13,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.013.html#av05.013.05) [20,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.020.html#av05.020.05) [6,142,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.142.html#av06.142.02) [ŚAT. BR. 1,5,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,2,6) *ghoṣam*
 [9,5,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,2) [8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,8) [PAÑCAV. BR. 21,3,5.] [BHĀG. P. 3,4,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,10)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hören, vernehmen: *āśrutya vacaḥ*
 [BHĀG. P. 1,19,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,22) [3,19,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,33) [5,10,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,16) [7,2,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,36) [8,24,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,16) [10,21,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,21,3) [60,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,22) *āśruta* hörbar *āśrutataraṃ vadati*
@@ -1151,7 +1151,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 - **EN:** — 2) to hear, perceive: *āśrutya vacaḥ*
 [BHĀG. P. 1,19,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,22) [3,19,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,33) [5,10,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,16) [7,2,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,36) [8,24,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,16) [10,21,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,21,3) [60,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,22) *āśruta* audible *āśrutataraṃ vadati*
 [TS. 2,5,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,11,1)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zusagen, versprechen; mit acc. der Sache und dat. der Person
 [P. 1,4,40.](https://ashtadhyayi.com/sutraani/1/4/40)
@@ -1175,7 +1175,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489) *kuryādyathāśrutam*
 [YĀJÑ. 2,196.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,196)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *āśruta = āśrāvita* der rituelle Zuruf
 [KĀTY. ŚR. 3,2,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,6) [5,4,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,33) [9,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,9,11)
@@ -1187,7 +1187,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 - **EN:** — 4) *āśruta = āśrāvita* the ritual call
 [KĀTY. ŚR. 3,2,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,6) [5,4,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,33) [9,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,9,11)
 [TS. 7,3,11,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,11,2)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. 1. *āśrava, āśrut, āśruti* . — caus.
  1) verkünden, bekannt machen: *ā no jane śravayatam*
@@ -1211,7 +1211,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [ĀŚV. ŚR. 1,3,23.] *āśrāvayacca tatkarma*
 [MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260)
 [BHĀG. P. 5,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,17) [10,70,40](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,40) (med.). [73,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,34)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anreden, anrufen: *yo jātānyāśrāvayati ślokena*
 [ṚV. 5,82,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.09) *ā dyāṃ raveṇa pṛthivīmaśuśruvuḥ*
@@ -1226,7 +1226,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [ṚV. 5,82,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.09) *ā dyāṃ raveṇa pṛthivīmaśuśruvuḥ*
 [10,94,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.12) with dopp. acc. to say something to someone: *āśrāvya rāmaṃ durvācyam*
 [BHĀG. P. 10,68,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,29)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) speciell vom rituellen Zurufen, namentlich des Adhvaryu an den Agnīdh zum Aussprechen der *śrauṣaṭ*-Formel
 [AV. 9,6,49.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.49)
@@ -1271,7 +1271,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [TBR. 2,1,5,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,5,9)
 [ŚAT. BR. 11,4,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,2,5)
 [KĀTY. ŚR. 3,3,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,3,14)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) herbeirufen, zu sich heranlocken: *parasya janam*
 [BHAṬṬ. 12,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,30)
@@ -1280,7 +1280,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [BHAṬṬ. 12,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,30)
 - **EN:** — 4) to call hither, entice to oneself: *parasya janam*
 [BHAṬṬ. 12,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,30)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) besprechen: *āśrāvita (mantra)*
 [R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
@@ -1289,7 +1289,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
 - **EN:** — 5) to discuss, talk over: *āśrāvita (mantra)*
 [R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Vgl. *āśrāvaṇa* . — desid. *āśuśrūṣati* (nicht *˚te*)
 [P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59)
@@ -1301,7 +1301,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 - **EN:** — Vgl. *āśrāvaṇa* . — desid. *āśuśrūṣati* (not *˚te*)
 [P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59)
 [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyāśru
 
@@ -1327,7 +1327,7 @@ u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/
 u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,9,5) [ŚAT. BR. 1,5,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,2,7) [2,6,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,25) [ĀŚV. ŚR. 9,7,10. 1,4,13.] partic. *pratyāśrāvita* _n._ the response to the ritual call
 [TBR. 2,1,5,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,5,9)
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9) Vgl. *pratyāśrāvaṇa*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samāśru
 
@@ -1341,7 +1341,7 @@ u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/
 [BHĀG. P. 10,85,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,28)
 - **EN:** *samā* caus. with dopp. acc. to communicate something to someone: *kṛṣṇarāmau* (acc.) *samāśrāvya putrānkaṃsavihiṃsitān*
 [BHĀG. P. 10,85,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,28)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## upaśru
 
@@ -1420,7 +1420,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 - **EN:** — 2) *upaśruta* promised, pledged
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *upaśruti* fg. — desid. med. zuhören, aufmerken
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
@@ -1429,7 +1429,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
 - **EN:** — Vgl. *upaśruti* fg. — desid. med. to listen, pay attention
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>
 
 **1))** — *upa*
  1) anhören, hören, vernehmen: *giraḥ*
@@ -1496,7 +1496,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [HARIV. 5305.](https://sanskrit-lexicon-scans.github.io/hariv?5305)
 [BHĀG. P. 4,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,23) *pulastyasya sakāśāt*
 [MBH. 3,4032.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4032)
-  <sub>DCS 81 · attested</sub>
+  <sub>attested</sub>
 
 ## samupaśru
 
@@ -1516,7 +1516,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [BHĀG. P. 5,19,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,2) *teṣāṃ tu samupaśrutya sūtamāgadhabandinām . sarvā bubudhire*
 [R. GORR. 2,67,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,4) *brāhmaṇātsamupaśrutya*
 [MBH. 1,384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.384)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pariśru
 
@@ -1533,7 +1533,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **EN:** *pari* to hear, perceive: *patiṃ hi pariśṛṇvantī rāmam* hearing of, learning something about
 [R. 5,29,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,29,35) *tāmāgatāṃ pariśrutya*
 [6,99,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,19) — partic. *˚śruta*
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) gehört, vernommen: *kathā*
 [MBH. 1,4685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4685) *na ca nastādṛśaṃ dṛṣṭaṃ naiva cāpi pariśrutam*
@@ -1560,7 +1560,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [MBH. 1,3754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3754) *pariśruto mayā pūrvaṃ rāmeṇaiṣa sahāyavān*
 [R. 4,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,15) *iti pariśrutam* impers.
 [HARIV. 2010.](https://sanskrit-lexicon-scans.github.io/hariv?2010)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bekannt als, geltend für, gekannt als, genannt: *aśvamedhaḥ kratuśreṣṭhaḥ kṣatriyāṇāṃ pariśrutaḥ*
 [HARIV. 11110.](https://sanskrit-lexicon-scans.github.io/hariv?11110) *mahāvṛndasahasrāṇāṃ śataṃ padmaṃ pariśrutam*
@@ -1587,7 +1587,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [R. 7,35,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,20) known so v. a. famous
 [MBH. 12,1799](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1799) (according to the reading of the [ed. Bomb.]).
 [3127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3127) [BHĀG. P. 4,9,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,5)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) fehlerhaft für *pratiśruta*
 
@@ -1602,13 +1602,13 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 
 (thus [ed. Bomb.])
 [MBH. 4,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus.)** — Vgl. *pariśruta* .
 
 - **RU:** — Vgl. *pariśruta* .
 - **EN:** Vgl. *pariśruta*.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 ## praśru
 
@@ -1625,7 +1625,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **EN:** — *pra* med.
  1) to be heard, to make oneself heard: *pra ye divo bṛhataḥ śṛṇvire*
 [ṚV. 5,87,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.087.html#rv05.087.03)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bekannt werden: *avobhiḥ sa pra śṛṇve*
 [ṚV. 4,41,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.02) *prāhaṃ mahe vṛtrahatye aśuśravi*
@@ -1637,13 +1637,13 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **EN:** — 2) to become known: *avobhiḥ sa pra śṛṇve*
 [ṚV. 4,41,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.02) *prāhaṃ mahe vṛtrahatye aśuśravi*
 [10,48,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.08) [7,8,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.04)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *praśravas* (hierher oder *pra + śra˚*).
 
 - **RU:** — Vgl. *praśravas* (сюда или *pra + śra˚*).
 - **EN:** — Vgl. *praśravas* (belonging here, or *pra + śra˚*).
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## atipraśru
 
@@ -1657,7 +1657,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [ṚV. 10,11,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.07)
 - **EN:** *atipra* med. to become known before others
 [ṚV. 10,11,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.07)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratiśru
 
@@ -1718,7 +1718,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [R. 3,41,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,18) *anistīrṇa˚* _adj._
 [BHĀG. P. 10,89,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,45)
 - **EN:** — *prati* 1) to answer; to affirm, assent to, promise (with acc. of the thing and dat. [also gen.] of the person [P. 1,4,40.](https://ashtadhyayi.com/sutraani/1/4/40) [VOP. 5,15](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,15)) [AV. 9,6,50.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.50) *sa yāmani prati śrudhi* [ṚV. 1,15,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.015.html#rv01.015.20) [ŚAT. BR. 1,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,10) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,12) [18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,18) [11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) [14,9,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,1) *atha hainamṛṣabho 'bhyuvāda satyakāma3 iti bhagava iti ha pratiśuśrāva* [CHĀND. UP. 4,5,1.] *iti pṛṣṭvā pratiśṛṇoti pratyācaṣṭe vā* [ŚĀṄKH. ŚR. 5,1,10. 10,13,17.] [MBH. 1,714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.714) [3,2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) *yo na dadyātpratiśrutya* [13,405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.405) [415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.415) [2763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2763) [3177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3177) [HARIV. 15843.](https://sanskrit-lexicon-scans.github.io/hariv?15843) [R. 1,16,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,8) [2,98,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,5) [R. GORR. 2,23,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,23,21) [89,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,89,1) [RAGH. 2,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,65) [3,67](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,67) (*˚śuśruvān*). [12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,69) [14,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,29) [15,4.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,4) [KATHĀS. 24,126.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,126) [SADDH. P. 4,17,a.] [BHĀG. P. 6,7,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,38) [8,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,3) *satyam* [MBH. 3,2964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2964) [R. 2,98,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,3) [6,81,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,10) *kanyakām* [KATHĀS. 14,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,79) *pratiśruta* — assented, promised — [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489) *pratiśrute juhoti* — after the assent has been given — [ŚĀṄKH. GṚHY. 1,7. 9. 5,10.] *yaccānyasmai pratiśrutam* [YĀJÑ. 2,175.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,175) *rājaputryāḥ pratiśrutam* [MBH. 4,456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.456) [1610](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610) (according to the reading of [ed. Bomb.]). *vācā* [5,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.211) [R. 2,88,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,22) [R. GORR. 2,17,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,19) [3,14,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [5,47,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,47,9) [KUMĀRAS. 2,56.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,56) [RAGH. 15,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,74) [MĀLAV. 8,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?8,17) [KATHĀS. 26,187.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,187) [119,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,4) [RĀJA-TAR. 1,242.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,242) [4,56.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,56) [BHĀG. P. 1,7,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,38) [14,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,40) [2,7,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,18) [3,23,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,51) [6,18,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,42) *kuru pratiśrutaṃ satyam* [1,7,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,54) [MBH. 5,7032.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7032) *āḍhyasya sutā nagaravāsinaḥ . tvatkṛte yācitāsmābhiḥ sā ca pitrā pratiśrutā ..* [KATHĀS. 61,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,19) *sā ca pitrā dātuṃ pratiśrutā* [123,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,166) *yatheṣṭamaśanaṃ dātuṃ tato 'nena pratiśrute* [RĀJA-TAR. 1,132.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,132) _n._ — assent, promise —: *satya˚* _adj._ [R. 3,41,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,18) *anistīrṇa˚* _adj._ [BHĀG. P. 10,89,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,45)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *pratiśruta* wiederhallend: *tathā tayorgadāpothairdiśaḥ sarvāḥ pratiśrutāḥ*
 [R. 7,32,55.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,32,55)
@@ -1726,7 +1726,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **RU:** — 2) *pratiśruta* отдающийся эхом, гулкий: *tathā tayorgadāpothairdiśaḥ sarvāḥ pratiśrutāḥ*
 [R. 7,32,55.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,32,55)
 - **EN:** — 2) *pratiśruta* — echoing, resounding —: *tathā tayorgadāpothairdiśaḥ sarvāḥ pratiśrutāḥ* [R. 7,32,55.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,32,55)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) hören, vernehmen: *tadbhīru mayā sarvaṃ pratiśrutam (pariśrutam?)*
 [R. 6,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,6)
@@ -1734,7 +1734,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **RU:** — 3) слышать, воспринимать слухом: *tadbhīru mayā sarvaṃ pratiśrutam (pariśrutam?)*
 [R. 6,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,6)
 - **EN:** — 3) to hear, perceive —: *tadbhīru mayā sarvaṃ pratiśrutam (pariśrutam?)* [R. 6,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,6)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *pratiśrutaṃ* genannt
 [HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) fehlerhaft für *pariśruta*, wie die neuere Ausgabe liest.
@@ -1742,7 +1742,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **RU:** — 4) *pratiśrutaṃ* называемый
 [HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) ошибочно вместо *pariśruta*, как читает новейшее издание.
 - **EN:** — 4) *pratiśrutaṃ* — called, named —. [HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) is erroneous for *pariśruta*, as the more recent edition reads. — Vgl. *pratiśrava* fgg. — desid. *˚śuśrūṣati* (not med.) [P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59) [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *pratiśrava* fgg. — desid. *˚śuśrūṣati* (nicht med.)
 [P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59)
@@ -1751,7 +1751,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **RU:** — Vgl. *pratiśrava* fgg. — desid. *˚śuśrūṣati* (не med.)
 [P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59)
 [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57)
-  <sub>DCS 184 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃpratiśru
 
@@ -1766,14 +1766,14 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 - **EN:** *saṃprati* to assent, promise: *yo 'smabhyaṃ saṃpratiśrutya kanyāratnaṃ vigarhya naḥ . kṛṣṇāyādāt*
 [BHĀG. P. 10,57,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,57,4) — caus. to induce someone to give an assent, to extract a promise from someone
 [R. 2,107,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,5)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. Jmd veranlassen eine Zusage zu machen, Jmd ein Versprechen abnehmen
 [R. 2,107,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,5)
 
 - **RU:** — caus. побудить кого-либо дать обещание, взять с кого-либо обещание
 [R. 2,107,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,5)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## viśru
 
@@ -1814,7 +1814,7 @@ in the [HALL] to Einl. [VĀSAVAD. 24.] *upaśṛṇvāna*
 [R. 1,13,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,13)
 [VET. in LA. 21,1.] *svano viśuśruve*
 [R. 2,103,48.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,48)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. (ved.) und pass. bekannt —, berühmt werden
 [ṚV. 4,8,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.008.html#rv04.008.06)
@@ -1910,7 +1910,7 @@ zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [RAGH. 18,9.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,9)
 [Spr. (II) 1928.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1928) — partic. *viśruta* compounded with *śreṇi* u. s. w. gaṇa *kṛtādi*
 for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **1 (śruta-))** 1) vernommen, gehört
 [AV. 15,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av15.002.html#av15.002.04)
@@ -1987,7 +1987,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [H. an.] и [VIŚVA] a. a. O.
 - **EN:** — 3) glad (*hṛṣṭa, saṃhṛṣṭa*)
 [H. an.] and [VIŚVA] a. a. O.
-  <sub>DCS 608 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **intro)** — Vgl. *viśrāva, viśruta*, 1. *viśruti, lokaviśruta* (auch
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
@@ -1996,7 +1996,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
 - **EN:** — Vgl. *viśrāva, viśruta*, 1. *viśruti, lokaviśruta* (also
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) hören lassen, verkünden, mittheilen: *ityevaṃ vāco vyaśrāvayan*
 [R. 6,70,58.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,58) *mayā viśrāvite vākye*
@@ -2035,7 +2035,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [BHĀG. P. 10,64,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,64,44) with double acc. to communicate something to someone: *mama karma ca devendraṃ (devendre*
 [ARJ. 10,69]) *mātalirvistareṇa tat . sarvaṃ viśrāvayāmāsa yathābhūtam ..*
 [MBH. 3,12265. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12265)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) berühmt machen: *nāma viśrāvitaṃ bhuvi*
 [HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857)
@@ -2047,7 +2047,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 - **EN:** — 2) to make famous: *nāma viśrāvitaṃ bhuvi*
 [HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857)
 [R. 7,33,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,33,16)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) erschallen machen: *dundubhim*
 [MBH. 6,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1628) *tato 'ntarīkṣe vāgāsītsarvā viśrāvayan* (statt *˚śrāvayantī) diśaḥ*
@@ -2059,7 +2059,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 - **EN:** — 3) to make resound: *dundubhim*
 [MBH. 6,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1628) *tato 'ntarīkṣe vāgāsītsarvā viśrāvayan* (instead of *˚śrāvayantī) diśaḥ*
 [3,16556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16556)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 ## abhiviśru
 
@@ -2079,7 +2079,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [MBH. 1,1275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1275) [2718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2718) [3219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3219) [3,8760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8760)
 [HARIV. 812.](https://sanskrit-lexicon-scans.github.io/hariv?812) [8982.](https://sanskrit-lexicon-scans.github.io/hariv?8982) [14917.](https://sanskrit-lexicon-scans.github.io/hariv?14917)
 [R. 1,45,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,45,38) ([46,28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,46,28) [GORR.]). [2,55,7](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,7) ([5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,55,5) [GORR.]). [110,35](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,110,35) ([119,32](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,119,32) [GORR.]). [R. GORR. 1,26,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,26,10) [MĀRK. P. 46,43.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?46,43) [BHĀG. P. 8,1,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,1,21) [9,15,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,13)
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 ## saṃśru
 
@@ -2168,7 +2168,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [MĀRK. P. 100,17. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?100,17) *sanatkumārādvacanamiti vai saṃśrutaṃ mayā*
 [R. GORR. 1,8,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,29) *purāṇe saṃśruto mayā* thus v. a. read
 [MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zusagen, versprechen: *mātāmahe samaśrauṣīdrājyaśulkam*
 [R. 2,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,3) *kariṣya iti saṃśrutya pūrvamasmāsu*
@@ -2210,13 +2210,13 @@ der Person).
 of the person).
 [RAGH. 12,5.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,5)
 [RĀJA-TAR. 3,19.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,19)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — Vgl. *saṃśrava* u. s. w. — caus.
 
 - **RU:** — Vgl. *saṃśrava* u. s. w. — caus.
 - **EN:** — Vgl. *saṃśrava* u. s. w. — caus.
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) hören lassen, verkünden
 [YĀJÑ. 2,112.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,112) *saṃśrāvayannadhvani deśikendraḥ*
@@ -2267,7 +2267,7 @@ of the person).
 [BHĀG. P. 1,3,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,42) *etān śabdaṃ saṃśrāvya*
 [PAÑCAT. 172,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?172,25) *saṃśrāvitatallekhau* thus v. a. read aloud
 [KATHĀS. 43,271.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,271)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erschallen machen: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
@@ -2276,7 +2276,7 @@ of the person).
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
 - **EN:** — 2) to make resound: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
 [MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
-  <sub>DCS 67 · attested</sub>
+  <sub>attested</sub>
 
 ## abhisaṃśru
 
@@ -2290,7 +2290,7 @@ of the person).
 [R. 2,66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
 - **EN:** — *abhisam* to perceive, hear: *etadabhisaṃśrutya*
 [R. 2,66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratisam+śru
 
@@ -2304,7 +2304,7 @@ of the person).
 [MBH. 13,7306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7306)
 - **EN:** — *pratisam* to agree to, promise: *aśvinoḥ pratisaṃśrutya*
 [MBH. 13,7306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7306)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -2337,7 +2337,7 @@ of the person).
 - **EN:** *śru*¦ = *sru*.* śruvat, śruvantu* to set itself in motion (namely of the parts); to come apart, to dissolve, to melt away: *ta ā gamantu ta iha śruvantu*
 [ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (according to the Comm. to 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) In later writings too this root and its derivatives are often written with the palatal sibilant. We refer those passages, however, under *sru* .
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — *ā* dass.: *ā vo yāmāya pṛthivī cidaśrot* die Erde selbst wich eurem Lauf
 [ṚV. 1,39,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.06)
@@ -2371,7 +2371,7 @@ of the person).
 [SĀMAVIDH. BR. 2,3,2.] с instr. и acc. [4,7.]
 - **EN:** 1. *śru*¦ with *abhi* caus. to let someone hear something, to speak about something to someone, to discuss something with someone; with double acc.
 [SĀMAVIDH. BR. 2,3,2.] with instr. and acc. [4,7.]
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -2637,39 +2637,39 @@ of the person).
 **Hauptbed.)** **2.** √*śru*¦ = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
 
 - **RU:** **2.** √*śru* = *sru* приходить в движение (в особенности о частях), расходиться, растекаться. Только *śruvat* и *śruvanta*. В более поздних текстах просто ошибка вместо *sru*.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Mit apa)** — Mit *ā* (nur *ā — aśrot*) weichen, nachgeben.
 
 - **RU:** — С *ā* (только *ā — aśrot*) отступать, уступать.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Mit pra)** — Mit *pra* Caus. (*˚śravayati* und *˚śrāvayati*) vorwärts bringen.
 
 - **RU:** — С *pra* Caus. (*˚śravayati* и *˚śrāvayati*) продвигать вперёд.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Mit vi)** — Mit *vi* in **2.** *viśruti*.
 
 - **RU:** — С *vi* в **2.** *viśruti*.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Mit sam)** — Mit *sam*, *saṃśruta* zusammengeflossen.
 
 - **RU:** — С *sam*, *saṃśruta* слившийся вместе, стёкшийся.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag VI mit upa)** **1.** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — Mit *upa* VI. geloben [JĀTAKAM. 31].
 
 - **RU:** **1.** √*śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — С *upa* VI. давать обет, обещаться [JĀTAKAM. 31].
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag prati antworten)** **1.** √*śru*¦ mit *prati* VI. antworten hinzuzufügen.
 
 - **RU:** **1.** √*śru* с *prati* VI. следует добавить: отвечать.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -2688,7 +2688,7 @@ of the person).
 **śuśrāva pass. Bed.)** 1. [śru]¦ , śuśrāva mit pass. Bed., [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — Mit upa geloben, [Jātakam. 31.] — Mit prati "antworten" hinzuzufügen. {part=,seq=25726,type=,n=4}
 
 - **RU:** 1. [śru], śuśrāva с пассивным значением, [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — С upa давать обет, [Jātakam. 31.] — С prati следует добавить «отвечать».
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 ## śru
 
@@ -2699,7 +2699,7 @@ of the person).
 
 - **RU:** **1.** *śru*¦ VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
 - **EN:** *śru*¦ VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Mit *upa* VI. geloben [JĀTAKAM. 31].
 - **EN:** — With *upa* VI. "to vow, promise" [JĀTAKAM. 31].
@@ -2708,9 +2708,9 @@ of the person).
 
 - **RU:** **1.** *śru*¦ VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
 - **EN:** *śru*¦ with *prati* VI. "to answer" to be added.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **1.** *śru*¦ mit *prati* VI. antworten hinzuzufügen.
 
 - **RU:** **1.** *śru*¦ с *prati* VI. отвечать — добавить.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 
 - **RU:** 3. *muc*¦, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>

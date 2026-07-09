@@ -64,10 +64,10 @@
 [MBH. 5,6033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6033) [13,3869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3869) *avajñātā ca lokeṣu*
 [1,6161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6161) *yaddānamapattrebhyaśca dīyate . asatkṛtamavajñātaṃ tattāmasamudāhṛtam* a gift bestowed in a manner that betrays disdain,
 [BHAG. 17,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?17,22)
-  <sub>DCS 202 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *avajñā* fgg., *avajñeya* .
 
 - **RU:** — Vgl. *avajñā* fgg., *avajñeya* .
 - **EN:** — Vgl. *avajñā* fgg., *avajñeya* .
-  <sub>DCS 202 · lexicographic</sub>
+  <sub>lexicographic</sub>

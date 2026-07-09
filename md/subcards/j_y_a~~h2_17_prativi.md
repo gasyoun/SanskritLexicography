@@ -10,4 +10,4 @@
 [Spr. 5330. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5330)
 - **EN:** — *prativi* read "to be grateful" and vgl.
 [Spr. 5330. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5330)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

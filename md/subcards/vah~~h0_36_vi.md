@@ -19,7 +19,7 @@
 [ṚV. 4,27,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.03) *harī yamasya vahato vi sūribhiḥ*
 [10,23,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.023.html#rv10.023.03) to wash away, sweep away: *lohitāpagā . gajāśvanaradehānsā vyuvāha patitānbahūn*
 [MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379)
-  <sub>DCS 47 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wegführen (die Braut aus dem Elternhause)
 [AV. 14,1,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.13) heimführen, heirathen (ein Mädchen) überh.: *ato 'dattāṃ ca pitrā tvāṃ bhadre na vivahāmyaham*
@@ -71,7 +71,7 @@
 [MĀRK. P. 51,104.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,104) [134,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,34) *gāndharvavivāhenātmānaṃ vivāhayitvā*
 [PAÑCAT. 129,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,9) *tenāndhena saha vivāhitā*
 [262,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,3)
-  <sub>DCS 47 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) heimführen, heirathen (ein Mädchen): *rājaputreṇa kiṃ na tāvadvivāhyate*
 [KATHĀS. 34,228.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,228) [36,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,54) *vivāhya*
@@ -89,7 +89,7 @@
 [49,231.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,231) [52,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,38) [53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,53) [84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,84) [84,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,65) [VET. in LA. (III) 18,19.] *tena gāndharvavivāhena sā vivāhitā*
 [PAÑCAT. 46,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,11)
 [KATHĀS. 124,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,92)
-  <sub>DCS 47 · attested</sub>
+  <sub>attested</sub>
 
 **2) Act.)** — 2) wegführen (die Braut aus dem Elternhause)
 [AV. 14,1,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.13) heimführen, heirathen (ein Mädchen) überh.: *ato 'dattāṃ ca pitrā tvāṃ bhadre na vivahāmyaham*
@@ -118,4 +118,4 @@
 [KATHĀS. 34,6.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,6) [238.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,238)
 [BHĀG. P. 10,60,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,48)
 [PRAB. 23,14.] — *vyūḍha* s. также bes. и под 1. *ūh* с *vi* . Vgl. *vivāha* u. s. w. — caus.
-  <sub>DCS 47 · attested</sub>
+  <sub>attested</sub>

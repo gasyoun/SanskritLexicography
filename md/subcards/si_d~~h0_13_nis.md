@@ -13,4 +13,4 @@
 - **EN:** — *nis* {to scare away}: *niṣkravyādaṃ sedha*
 [VS. 1,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,17)
 [ŚĀṄKH. ŚR. 16,18,20. fg.] Here belongs *puruniḥṣidh* {warding off much.}
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

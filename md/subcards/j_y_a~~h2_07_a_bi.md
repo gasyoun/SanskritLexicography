@@ -14,16 +14,16 @@
 
 - **RU:** — Vgl. *abhijñāpaka* .
 - **EN:** — Vgl. *abhijñāpaka*.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **abhi_main)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 2) *ye tvenamabhijānanti vṛttenābhijanena vā* die ihn anerkennen (Gegens. *nindanti)*
 [Spr. 4556.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4556)
 
 - **RU:** 2) *ye tvenamabhijānanti vṛttenābhijanena vā* те, кто его признаёт (Gegens. *nindanti)*
 [Spr. 4556.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4556)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

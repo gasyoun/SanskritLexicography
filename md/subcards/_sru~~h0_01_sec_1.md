@@ -115,7 +115,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [12276.](https://sanskrit-lexicon-scans.github.io/hariv?12276) pass. "to get to hear": *śrāvyantāṃ pṛthivīkṣitaḥ . yattvayābhihitaṃ vākyaṃ mayā ca pratibhāṣitam*
 [HARIV. 9620.](https://sanskrit-lexicon-scans.github.io/hariv?9620) with acc. of the thing: *iti vacanaṃ paulastyaḥ śrāvyatām*
 [R. 5,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,18) partic. *śrāvita*
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-1)** 1) der Etwas (acc.) zu hören bekommen hat, — vernommen hat: *ityasya dūtaiḥ sa śrāvito 'bhavat*
 [RĀJA-TAR. 4,552.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,552)
@@ -145,7 +145,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [6,5830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5830) [3,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2) [5,7508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7508) [14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) [HARIV. 1097.](https://sanskrit-lexicon-scans.github.io/hariv?1097) [R. 1,17,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,18) ([7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,7) [GORR.]). [2,62,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,1) [4,32,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,32,4) [7,50,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,50,18) (*śrāvitaḥ* to be read). with gen. of the person
 [MBH. 7,6403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6403) with abl. of the person: *sākṣyamanyebhyaḥ*
 [YĀJÑ. 2,82.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,82)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-2)** — 2) verkündet, gesprochen, mitgetheilt
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
@@ -154,7 +154,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
 - **EN:** — 2) "proclaimed, spoken, communicated"
 [R. GORR. 1,1,105.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,105) [BHĀG. P. 3,22,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,8) [4,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,18,2)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-3)** — 3) angemeldet: *sacivaiḥ śrāvitāḥ pūrvaṃ praviṣṭāste narādhipāḥ*
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
@@ -163,7 +163,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
 - **EN:** — 3) "announced": *sacivaiḥ śrāvitāḥ pūrvaṃ praviṣṭāste narādhipāḥ*
 [HARIV. 6055.](https://sanskrit-lexicon-scans.github.io/hariv?6055)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-4)** — 4) genannt: *śrāvastīti purī ramyā śrāvitā ca lavasya ha*
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
@@ -172,7 +172,7 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
 - **EN:** — 4) "named, called": *śrāvastīti purī ramyā śrāvitā ca lavasya ha*
 [R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-5)** — 5) so v. a. *āśrāvita* der rituelle Zuruf
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
@@ -181,10 +181,10 @@ u. s. w. [M. 3,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
 - **EN:** — 5) so v. a. *āśrāvita* "the ritual call"
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya* .
 
 - **RU:** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya* .
 - **EN:** — Vgl. 3. *śrāvaṇa, śrāvaṇīya, śrāvya*.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

@@ -38,4 +38,4 @@
 [ŚAT. BR. 11,3,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,3,7) *teto viśve devā amṛtatvamapājayan* отсюда боги отвратили обретение бессмертия (для Asura)
 [3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) [29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,29)
 — Vgl. *anapajayyam* .
-  <sub>DCS 25 · attested</sub>
+  <sub>attested</sub>

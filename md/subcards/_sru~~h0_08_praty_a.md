@@ -22,4 +22,4 @@ u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/
 u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,9,5) [ŚAT. BR. 1,5,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,2,7) [2,6,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,25) [ĀŚV. ŚR. 9,7,10. 1,4,13.] partic. *pratyāśrāvita* _n._ the response to the ritual call
 [TBR. 2,1,5,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,5,9)
 [ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9) Vgl. *pratyāśrāvaṇa*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

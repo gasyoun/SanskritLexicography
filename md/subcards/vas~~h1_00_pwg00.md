@@ -43,7 +43,7 @@
 [TRIK. 3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) = *vyuṣita*
 [H. an. 3,253.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,253)
 [MED. t. 96.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,96)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** — Vgl. 1. *uṣa, uṣas*,
 2. und 3. *uṣā*, 2. *usra* .
@@ -74,7 +74,7 @@
 [ṚV. 1,48,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.08) *uṣā ucchadapa sridhaḥ*
 [7,81,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.06) [104,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.23) [AV. 2,8,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.008.html#av02.008.02) *candramā vo 'pocchatu*
 [6,83,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.083.html#av06.083.01) [14,2,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.48) [16,6,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.006.html#av16.006.02)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.2)** — 2) erlöschen: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
@@ -146,7 +146,7 @@ it would not have become day
 [TS. 6,4,8,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,8,3)
 [TBR. 1,4,4,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,4,5)
 [PAÑCAV. BR. 8,1,13. 18,9,8. 11,11.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.4)** — *abhivi* hell werden über d. h. zur Zeit von (acc.): *yadi paryāyānabhivyucchet* über den p. d. h. ehe diese beendet sind
 [ĀŚV. ŚR. 6,6,1.]
@@ -161,7 +161,7 @@ it would not have become day
 [ĀŚV. ŚR. 6,6,1.]
 [PAÑCAV. BR. 9,3,3.] med. (*˚ccheta* perhaps only a copying error for *˚cchet*)
 [ŚĀṄKH. ŚR. 13,10,4.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.5)** — *parivi* aufleuchten von — her so v. a. nach: *vyucchantī pari svasuḥ*
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
@@ -170,50 +170,50 @@ it would not have become day
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
 - **EN:** — *parivi* to light up from — onward, so v. a. towards: *vyucchantī pari svasuḥ*
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T139 — 1) (caus./desid. forms, sub-senses 1–3))** — Vgl. 1. *uṣa, uṣas*,
 2. und 3. *uṣā*, 2. *usra* .
 
 - **RU:** — Vgl. 1. *uṣa, uṣas*,
 2. и 3. *uṣā*, 2. *usra* .
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T140 — caus. aufleuchten machen)** — caus. aufleuchten machen: *pra cakṣaya rodasī vāsayoṣasaḥ*
 [ṚV. 1,134,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.03) [6,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.017.html#rv06.017.05) [32,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.02) [7,91,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.091.html#rv07.091.01)
 
 - **RU:** — caus. заставлять воссиять: *pra cakṣaya rodasī vāsayoṣasaḥ*
 [ṚV. 1,134,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.03) [6,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.017.html#rv06.017.05) [32,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.02) [7,91,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.091.html#rv07.091.01)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T141 — bei Tagesanbruch)** — *adhi*, *adhyuṣite* bei Tagesanbruch
 [MBH. 8,1673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1673)
 
 - **RU:** — *adhi*, *adhyuṣite* на рассвете, при наступлении дня
 [MBH. 8,1673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1673)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T142)** — *apa*
 
 - **RU:** — *apa*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T144 — 2) erlöschen)** — 2) erlöschen: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
 
 - **RU:** — 2) угасать, гаснуть: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T145)** — Vgl. *apavāsa* .
 
 - **RU:** — Vgl. *apavāsa* .
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T146)** — *vi*
 
 - **RU:** — *vi*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T147 — 1) aufleuchten, in oder an das Licht treten)** 1) aufleuchten, in oder an das Licht treten
 [ṚV. 1,113,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.07) *yā vyūṣuryāśca nūnaṃ vyucchān*
@@ -254,4 +254,4 @@ es wäre nicht Tag geworden
 [TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103) = *kalya*
 [3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) [MED. ṭ. 28](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,28); vgl. *avyuṣṭa*.* vyuṣite*
 [ŚĀṄKH. ŚR. 2,7,3.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

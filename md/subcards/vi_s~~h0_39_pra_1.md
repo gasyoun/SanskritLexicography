@@ -154,7 +154,7 @@
 [MEGH. 90.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?90) *unnamya nayanaṃ yadatipraviṣṭam* sunk too deep
 [SUŚR. 2,358,17.] *praviṣṭe kalau* so v. a. entered, having broken (of time/day)
 [VET. in LA. (III) 30,10.]
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **β)** — β) der an Etwas gegangen ist, sich an Etwas gemacht hat, beschäftigt mit: *navakarmaṇi*
 [RĀJA-TAR. 4,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,58)
@@ -163,7 +163,7 @@
 [RĀJA-TAR. 4,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,58)
 - **EN:** — β) who has set about something, has applied himself to something, occupied with: *navakarmaṇi*
 [RĀJA-TAR. 4,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,58)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **b)** — b) in pass. Bed.
 - **EN:** — b) in pass. Bed.
@@ -191,13 +191,13 @@
 
 * puṣyate dhanam*
 [RĀJA-TAR. 4,681.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,681)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **c)** — Vgl. *praveśa* u. s. w. — caus.
 
 - **RU:** — Vgl. *praveśa* u. s. w. — caus.
 - **EN:** — Vgl. *praveśa* u. s. w. — caus.
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **Caus.1)** 1) hereintreten lassen, an einen Ort bringen, niederlegen, hineinwerfen u. s. w.
 [AV. 9,5,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.23) *agnau kāmān*
@@ -311,7 +311,7 @@ u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954
  α) в который вошли, посещённый: *praviṣṭaṃ te mayā vaktram*
 [R. 5,56,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,28) *apraviṣṭaviṣayasya — antakasya*
 [RAGH. 11,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,18)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) hereintreten lassen, an einen Ort bringen, niederlegen, hineinwerfen u. s. w.
 [AV. 9,5,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.23) *agnau kāmān*
@@ -402,7 +402,7 @@ u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954
 [KATHĀS. 12,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,68)
 [RĀJA-TAR. 3,205.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,205) [4,560.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,560) [6,321.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,321) [329.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,329) [336.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,336)
 [PAÑCAT. 16,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,2) *praveśyatāmeṣa samīpamāśu me*
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1-театр)** [MBH. 4,314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.314) hereinführen auf die Bühne, auftreten lassen: *yatra pātraṃ naiva praveśyate*
 [BHAR.] beim Schol. zu [ŚĀK. 8,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,20) *pratipuruṣam*
@@ -419,4 +419,4 @@ u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954
 [MĀLAV. 10,20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,20) [65,16.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?65,16) [18.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?65,18)
 [DHŪRTAS. 89,7.] *praveśita* введённый в своё достоинство —, в свою должность
 [BHĀG. P. 5,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,18)
-  <sub>DCS 2848 · attested</sub>
+  <sub>attested</sub>

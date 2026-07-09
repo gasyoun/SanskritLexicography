@@ -85,7 +85,7 @@ Bomb.). *śṛṇudhvam*
 [MBH. 7,2725.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2725) *śṛṇuṣvāvahito mama*
 [13,1119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1119) [14,424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.424) *śuśruve* with acc. of the thing and abl. of the person
 [1,386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.386)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. (im Veda) in pass. Bed. und pass. *śrūyate* u. s. w. (nach-vedisch): *sa ghoṣaḥ śṛṇve 'vamairamitraiḥ* wird vernommen
 [ṚV. 3,30,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.16) [5,73,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.07) [10,94,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.06) *keno nu kaṃ śromatena na śuśruve vṛtrahā*
@@ -244,4 +244,4 @@ u. s. w. [ŚĀK. 95,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2
 [SARVADARŚANAS. 152,2.] with abl. of the person: *vṛddhebhyaḥ śrūyate yathā*
 [KATHĀS. 6,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,74) with gen. of the thing: *śrūyatāmasya dhanuṣo yadarśamiha tiṣṭhati*
 [R. 1,66,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,7) — *śuśruvaṃs* and *śruta* s. bes.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

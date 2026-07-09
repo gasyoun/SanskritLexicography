@@ -10,4 +10,4 @@
 [NĀGĀN. 19,10.]
 - **EN:** — *samati* caus. to let pass, to spend (time): *divasaśeṣam*
 [NĀGĀN. 19,10.]
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>

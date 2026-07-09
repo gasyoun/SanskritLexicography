@@ -10,4 +10,4 @@
 [ŚAT. BR. 1,1,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,5)
 - **EN:** — *pratisam* to be kindly disposed toward someone: *prati hi svaḥ saṃjānīte*
 [ŚAT. BR. 1,1,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,5)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

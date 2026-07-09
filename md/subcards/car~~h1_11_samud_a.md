@@ -8,4 +8,4 @@
 - **RU:** — *samudā* 2) [ed. Bomb.] правильно *samudācaran* .
 - **EN:** — *samudā*
  2) [ed. Bomb.] correctly *samudācaran*.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

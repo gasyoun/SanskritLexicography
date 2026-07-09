@@ -10,4 +10,4 @@
 [ṚV. 6,44,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.17)
 - **EN:** — *abhyā* to aim at someone, to have designs on someone: *(amitrān) abhiṣeṇā abhyā3dediśānānparāca indra pra mṛṇa jaḥī ca*
 [ṚV. 6,44,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.17)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

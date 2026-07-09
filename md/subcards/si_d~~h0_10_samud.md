@@ -7,4 +7,4 @@
 
 - **RU:** — *samud* s. *samutsedha* .
 - **EN:** — *samud* s. *samutsedha* .
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

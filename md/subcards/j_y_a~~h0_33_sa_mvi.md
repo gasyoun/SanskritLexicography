@@ -12,7 +12,7 @@
 [RĀJA-TAR. 3,180.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,180)
 - **EN:** — *saṃvi* to encourage, advise Jmd (someone) (gen.): *ādau pravartite cakre tathaivādiparāyaṇe . vartasva puruṣavyāghra saṃvijānāmi te 'nagha ..*
 [MBH. 12,2451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2451)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. kundmachen, hersagen: *atha kṛtvā kṣaṇācchlokametaṃ taṃ saṃvyajijñapat*
 [RĀJA-TAR. 3,180.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,180)

@@ -16,4 +16,4 @@
 [BHĀG. P. 5,19,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,2) *teṣāṃ tu samupaśrutya sūtamāgadhabandinām . sarvā bubudhire*
 [R. GORR. 2,67,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,4) *brāhmaṇātsamupaśrutya*
 [MBH. 1,384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.384)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

@@ -25,7 +25,7 @@
 [Ind. St. 5,340. 363.] *amucat* and *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** 3. pl. *mokṣīs*
 [HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* und *˚te, moktā*
@@ -457,4 +457,4 @@ Schol. to [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* "lacking"
 [R. 6,9,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,36) *kadācinmuñceyaṃ madanaśikhipīḍāparibhavam*
 
 [Spr. 2840.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2840) *duḥkhaṃ mokṣye kadāham*
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

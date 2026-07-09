@@ -43,7 +43,7 @@
 [M. 11,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,112)
 [MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782)
 [SĀṂKHYAK. 63.]
-  <sub>DCS 1119 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [RAGH. ed. Calc. 3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,20) [BHĀG. P. 1,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,23) [6,2,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,31) [7,6,9](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,9) (*vimocitum*) .
 [Spr. 608.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?608) *saṃśayāt*

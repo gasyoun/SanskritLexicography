@@ -11,15 +11,15 @@
 - **EN:** — *pratyabhi*
  1)
 [KATHĀS. 55,269.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,269)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *pratyabhijñā* .
 
 - **RU:** — Vgl. *pratyabhijñā* .
 - **EN:** — Vgl. *pratyabhijñā*.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **pratyabi_main)** — *pratyabhi*
 
 - **RU:** — *pratyabhi*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

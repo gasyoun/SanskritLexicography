@@ -31,7 +31,7 @@
 [TS. 3,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,4,3,1)
 [ŚAT. BR. 4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,10)
 [KĀṬH. 13,2. 27,3.] *tato lokānvivātyasau (vāyuḥ)*
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MBH. 12,13379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13379) nach verschiedenen Richtungen hin wehen: *viṣvagvātāśca vivavuḥ*
 [6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) *vāyurvivāti hṛdayāni harannarāṇām*

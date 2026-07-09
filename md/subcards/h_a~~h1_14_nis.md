@@ -10,4 +10,4 @@
 [AIT. BR. 3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7)
 - **EN:** — *nis*, partic. *nirhāṇa* in *anirhāṇarca* _adj._ = *saṃpūrṇayājyāpāṭhopeta* whereby nothing is lacking in the recitation of (Yājā-) the verses
 [AIT. BR. 3,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,7)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

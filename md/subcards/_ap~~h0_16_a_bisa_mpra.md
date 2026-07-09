@@ -19,7 +19,7 @@
 [DRAUP. 8,16.] *tīramevābhisaṃprāptā dakṣiṇam*
 [R. 2,55,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,21) *ke yūyamabhisaṃprāptāḥ — mamāntikam*
 [MBH. 3,408.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.408)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen: *svaṃ rūpamabhisaṃprāpya*
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
@@ -28,7 +28,7 @@
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
 - **EN:** — 2) to obtain: *svaṃ rūpamabhisaṃprāpya*
 [R. 4,3,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,3,27)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anlangen, kommen: *yadarthamabhisaṃprāptaḥ*
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
@@ -37,4 +37,4 @@
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
 - **EN:** — 3) to arrive, come: *yadarthamabhisaṃprāptaḥ*
 [MBH. 3,11366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11366)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

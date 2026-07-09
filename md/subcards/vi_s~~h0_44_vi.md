@@ -9,4 +9,4 @@
 - **EN:** — *vi* to go into: *abhyantaram*
 [MAITRYUP. 2,6.] — caus. apparently
 [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910), where, however, with the later Ausg. *viveśatuḥ* (= *vivi˚)*) is to be read.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

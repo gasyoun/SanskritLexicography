@@ -82,7 +82,7 @@
 [MBH. 4,920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.920) [3,8290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8290) [12402.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12402) *dhīyamāna* and *dhita* viell. whose mind is directed upon something: *adharme dhīyamānasya sadbhistatra nivāraṇam*
 [HARIV. 1854.](https://sanskrit-lexicon-scans.github.io/hariv?1854) *patibhaktyai dhitāḥ sma*
 [7799.](https://sanskrit-lexicon-scans.github.io/hariv?7799)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd (loc. dat. gen.) Etwas bestimmen, verleihen, zutheilen, verschaffen, geben, schenken; act.: *dakṣaṃ dadhāti somini*
 [ṚV. 7,32,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.12) *yadindre śuṣmamadadhātā vasiṣṭhāḥ*
@@ -154,7 +154,7 @@
 [2,25,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.025.html#rv02.025.05) [3,51,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.051.html#rv03.051.06) [8,63,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.063.html#rv08.063.07) *adhāyi dhītirasasṛgramaṃśāḥ*
 [10,31,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.03) *vākpataṃgāya dhīyate*
 [189,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.189.html#rv10.189.03)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) einsetzen als, bestimmen zu.
 
@@ -214,7 +214,7 @@ to make into, to establish, constituere; act.: *yaṃ devāso havyavāhamadadhur
 [1,141,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.141.html#rv01.141.01) *dadhiryo dhāyi sate vayāṃsi*
 [10,46,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.046.html#rv10.046.01) *eva bṛhaspatirvṛṣabho dhāyi devaḥ*
 [1,190,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.190.html#rv01.190.08)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) machen, schaffen, hervorbringen, zeugen, verursachen; act.: *śataṃ sahasrā bheṣajāni dhattaḥ (varuṇaśatabhiṣajau)*
 [TBR. 3,1,2,9](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,9) in [Z. f. d. K. d. M. 7,273.] *ya eko 'varṇo bahudhā śaktiyogādvarṇānanekānnihitārtho dadhāti*
@@ -253,7 +253,7 @@ to make into, to establish, constituere; act.: *yaṃ devāso havyavāhamadadhur
 [67,93.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,93) [68.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,68) [5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,5) [21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?67,21) [88,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?88,7) *rogān — dhatte*
 [104,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,5) [34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,34) to do, undertake: *yātrāmadhāttataḥ*
 [RĀJA-TAR. 1,295.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,295)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) halten (in der Hand), fassen, tragen, behalten; med.
 [ṚV. 1,85,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.09) [82,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.082.html#rv01.082.06) *hastayoradhithāḥ kṛṣṭīḥ*
@@ -319,4 +319,4 @@ to make into, to establish, constituere; act.: *yaṃ devāso havyavāhamadadhur
 [BHAṬṬ. 17,54.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,54) *dadhatam — alaṃkālam*
 [NALOD. 2,52.] to bear blossoms, thus v. a. to be covered with blossoms: *sapallave puṣpacayaṃ dadhānāḥ* (*aśokāḥ*)
 [ṚT. 6,16.]
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

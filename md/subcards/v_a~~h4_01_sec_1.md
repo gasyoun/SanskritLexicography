@@ -11,4 +11,4 @@
 - **EN:** — caus. *vāyayati*
 [P. 7,3,37.](https://ashtadhyayi.com/sutraani/7/3/37)
 [VOP. 18,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,6)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

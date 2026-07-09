@@ -31,7 +31,7 @@
 [P. 7,2,83.](https://ashtadhyayi.com/sutraani/7/2/83)
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) and *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sitzen, sich setzen
 [DHĀTUP. 24,11.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *ya āste yaśca carati*
@@ -121,7 +121,7 @@
 [1,72,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15) of animals and dead bodies: "to rest, lie"
 [MEGH. 53.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?53) *vidyādharaśarīrāṇi tatra hyasmākamāsate*
 [KATHĀS. 26,265.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,265)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich aufhalten, wohnen, seinen Wohnsitz aufschlagen: *divi devāsa āsate*
 [ṚV. 1,20,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.06) [9,15,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.015.html#rv09.015.02) *yatrāsate sukṛto yatra te yayuḥ*
@@ -175,7 +175,7 @@
 [ṚV. 9,113,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.113.html#rv09.113.11) *āsānebhirmiyedhaiḥ*
 [6,51,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.051.html#rv06.051.12) *āsīnāmūrjamupa ye sacante*
 [AV. 18,4,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.40)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sitzen bleiben, stillsitzen, verweilen, verbleiben, aushalten, verharren; sowohl mit dem Begriff der Unthätigkeit als mit dem der Ausdauer oder der ruhigen Würde: *vayo nakiṣṭe paptivāṃsa āsate vyuṣṭau*
 [ṚV. 1,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.06) [2,43,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.03) *jyokpitṛṣvāstām*
@@ -238,13 +238,13 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *ye dīrghasattramāsīran*
 [ŚAT. BR. 4,5,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,12) [9,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,9,1) [5,5,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,5,13) [11,5,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,1) *kṛtvā mūtramupaspṛśya saṃdhyāṃ so 'ste* (for *sa āste) sma* ("performed his devotions") *naiṣadhaḥ . akṛtvā pādayoḥ śaucaṃ tatrainaṃ kalirāviśat ..*
 [N. 7,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,3)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) einer Handlung fortwährend obliegen, in einem Zustande oder Verhältnisse verharren, sich längere Zeit hindurch darin befinden, anhalten, dauern; die Ergänzung ist mannigf. Art:
 
 - **RU:** — 4) «непрестанно быть занятым каким-либо действием, пребывать в каком-либо состоянии или положении, находиться в нём продолжительное время, длиться, продолжаться»; дополнение носит характер mannigf.:
 - **EN:** 4) "to be continually engaged in an action" or "to persist in a state" or condition, to remain therein for a longer time, to continue, to last; the complement is of mannigf. kind:
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) ein mit dem praed. congruirendes partic., _adj._ oder subst.: *ṛtasya yoniṃ vimṛśanta āsate*
 [ṚV. 10,65,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.065.html#rv10.065.07) [71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [2,13,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.04) *videvaṃ dīvyamānā jātyā āsate*
@@ -319,4 +319,4 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [MBH. 1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) *āyuṣmānāstāmayam*
 [VIKR. 86,14.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?86,14) *āsatām* (!) — *ājñādāne parivṛḍhau bhṛtyāvājñāparigrahe* "they were always masters when it came to giving a command, but servants when it came to receiving one",
 [RĀJA-TAR. 5,3.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,3)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>

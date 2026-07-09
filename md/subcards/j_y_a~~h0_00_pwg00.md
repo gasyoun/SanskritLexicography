@@ -280,7 +280,7 @@ Sch. *jñāta* known, recognised
 [14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641); *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1)** 1) kennen, wissen, eine Kenntniss von Etwas oder Jmd haben; erkennen, innewerden, merken, kennen lernen, erfahren: *yathāmī anyo anyaṃ na jānan*
 [VS. 17,47.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,47) *nābhiṃ jānānāḥ śiśavaḥ samāyān*
@@ -415,7 +415,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [R. 3,51,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,1) *mama sa jñāyatāṃ suhṛt*
 [MBH. 12,6409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6409) *jānīhi bhrātaraṃ viduraṃ mama . yadi jīvati*
 [3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *jānīhi saumyaināṃ kasya vātra kuto 'pi vā*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-subframe-acc-pred)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
@@ -444,21 +444,21 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [3,2739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2739) *vasantaṃ tatra nājñāsīt*
 [4,2255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2255) *cirāyamāṇāṃ māṃ jñātvā*
 [1,6016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6016) [R. 1,42,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,1) [DAŚ. 1,39.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,39) *jñātvā mām — vighnārthaṃ samupāgatām*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-subframe-consider)** [BRAHMA-P. in LA. 51,9.] [VET. 25,3.] ansehen für, halten: *ātmānaṃ daivatamiva — jānataḥ (tasya)*
 [RĀJA-TAR. 5,352.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,352)
 
 - **RU:** [BRAHMA-P. in LA. 51,9.] [VET. 25,3.] считать за, принимать за: *ātmānaṃ daivatamiva — jānataḥ (tasya)*
 [RĀJA-TAR. 5,352.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,352)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-subframe-acquaint)** [NAIṢ. 10,32.] kennen, kennen lernen, mit dem gen.: *jānanme*
 [HARIV. 7095.](https://sanskrit-lexicon-scans.github.io/hariv?7095) *jñātumicchāmi te*
 
 - **RU:** [NAIṢ. 10,32.] знать, знакомиться с чем-либо, с gen.: *jānanme*
 [HARIV. 7095.](https://sanskrit-lexicon-scans.github.io/hariv?7095) *jñātumicchāmi te*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-subframe-familiar)** [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) bekannt, vertraut sein: *ūrdhvā te anu sūnṛtā manastiṣṭhatu jānatī*
 [ṚV. 1,134,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01) *jānanneva *
@@ -469,7 +469,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [ṚV. 1,134,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01) *jānanneva *
 * jānatīrnitya ā śaye*
 [140,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.07) [9,96,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.096.html#rv09.096.07) доверительно навещать кого-либо: *jānīhi kṛtye kartāraṃ duhiteva pitaraṃ svam*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-gram-note-cow)** [AV. 10,1,25.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.25) Nach [P. 1,3,76](https://ashtadhyayi.com/sutraani/1/3/76) und [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58) med., wenn das obj. in näherer Beziehung zum subj. steht: *gāṃ jānīte* er kennt seine Kuh
 [P.], Sch. Ist die nähere Beziehung durch ein anderes Wort angegeben, so kann sowohl act. als med. stehen nach
@@ -478,7 +478,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 - **RU:** [AV. 10,1,25.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.25) По [P. 1,3,76](https://ashtadhyayi.com/sutraani/1/3/76) и [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58) med., когда obj. находится в более тесной связи с subj.: *gāṃ jānīte* он знает свою корову
 [P.], Sch. Если более тесная связь обозначена другим словом, то возможно как act., так и med. — согласно
 [P. 1,3,77.](https://ashtadhyayi.com/sutraani/1/3/77) *svāṃ gāṃ jānāti* или *jānīte*
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sense-1-pp-jnata)** Sch. *jñāta* bekannt, gekannt
 [H. 1496.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1496) *jñāto jñātakulīnaḥ, jñāto 'nūcānaḥ*
@@ -521,4 +521,4 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [M. 9,173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) кому-либо (gen.) известный как: *yo lakṣmyāḥ kāmuko jñātaḥ satām*
 [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) принимаемый за: *pūrvameva mayā jñātaṃ pūrṇametāddha medasā*
 [PAÑCAT. I,123.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,123)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

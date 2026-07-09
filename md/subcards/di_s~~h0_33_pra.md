@@ -64,7 +64,7 @@
 [MBH. 12,7050.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7050) *matpradiṣṭena karmaṇā*
 [HARIV. 3259.](https://sanskrit-lexicon-scans.github.io/hariv?3259) *dāhaṃ daśavadanaḥ pradideśa vānarasya*
 [BHAṬṬ. 9,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,137)
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd anweisen, auffordern, antreiben: *(mayā) pradiśyamānena tayā gaccheti bahuśaḥ*
 [R. 3,66,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,9)
@@ -73,7 +73,7 @@
 [R. 3,66,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,9)
 - **EN:** — 2) to instruct, urge, impel someone: *(mayā) pradiśyamānena tayā gaccheti bahuśaḥ*
 [R. 3,66,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,9)
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zuweisen, zutheilen, zukommen lassen
 [M. 8,265.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,265) *idaṃ divyaṃ* (*astraṃ*) *pradiśāmi te*
@@ -119,9 +119,9 @@
 [R. 3,66,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,7) [24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,24) (where *sītayā* is to be read). — intens. to encourage: *uttaro dhuro vahati pradediśat*
 [ṚV. 10,102,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.102.html#rv10.102.10)
 — Vgl. *pradeśa* u. s. w.
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *pradeśa* u. s. w.
 
 - **RU:** — Vgl. *pradeśa* u. s. w.
-  <sub>DCS 307 · attested</sub>
+  <sub>attested</sub>

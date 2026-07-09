@@ -59,7 +59,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* and *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
-  <sub>DCS 1985 · mixed</sub>
+  <sub>mixed</sub>
 
 ## ās
 
@@ -94,7 +94,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [P. 7,2,83.](https://ashtadhyayi.com/sutraani/7/2/83)
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) and *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) sitzen, sich setzen
 [DHĀTUP. 24,11.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *ya āste yaśca carati*
@@ -184,7 +184,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [1,72,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15) of animals and dead bodies: "to rest, lie"
 [MEGH. 53.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?53) *vidyādharaśarīrāṇi tatra hyasmākamāsate*
 [KATHĀS. 26,265.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,265)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich aufhalten, wohnen, seinen Wohnsitz aufschlagen: *divi devāsa āsate*
 [ṚV. 1,20,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.06) [9,15,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.015.html#rv09.015.02) *yatrāsate sukṛto yatra te yayuḥ*
@@ -238,7 +238,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [ṚV. 9,113,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.113.html#rv09.113.11) *āsānebhirmiyedhaiḥ*
 [6,51,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.051.html#rv06.051.12) *āsīnāmūrjamupa ye sacante*
 [AV. 18,4,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.40)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sitzen bleiben, stillsitzen, verweilen, verbleiben, aushalten, verharren; sowohl mit dem Begriff der Unthätigkeit als mit dem der Ausdauer oder der ruhigen Würde: *vayo nakiṣṭe paptivāṃsa āsate vyuṣṭau*
 [ṚV. 1,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.06) [2,43,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.03) *jyokpitṛṣvāstām*
@@ -301,13 +301,13 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *ye dīrghasattramāsīran*
 [ŚAT. BR. 4,5,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,12) [9,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,9,1) [5,5,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,5,13) [11,5,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,1) *kṛtvā mūtramupaspṛśya saṃdhyāṃ so 'ste* (for *sa āste) sma* ("performed his devotions") *naiṣadhaḥ . akṛtvā pādayoḥ śaucaṃ tatrainaṃ kalirāviśat ..*
 [N. 7,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,3)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) einer Handlung fortwährend obliegen, in einem Zustande oder Verhältnisse verharren, sich längere Zeit hindurch darin befinden, anhalten, dauern; die Ergänzung ist mannigf. Art:
 
 - **RU:** — 4) «непрестанно быть занятым каким-либо действием, пребывать в каком-либо состоянии или положении, находиться в нём продолжительное время, длиться, продолжаться»; дополнение носит характер mannigf.:
 - **EN:** 4) "to be continually engaged in an action" or "to persist in a state" or condition, to remain therein for a longer time, to continue, to last; the complement is of mannigf. kind:
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) ein mit dem praed. congruirendes partic., _adj._ oder subst.: *ṛtasya yoniṃ vimṛśanta āsate*
 [ṚV. 10,65,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.065.html#rv10.065.07) [71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [2,13,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.04) *videvaṃ dīvyamānā jātyā āsate*
@@ -382,7 +382,7 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [MBH. 1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) *āyuṣmānāstāmayam*
 [VIKR. 86,14.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?86,14) *āsatām* (!) — *ājñādāne parivṛḍhau bhṛtyāvājñāparigrahe* "they were always masters when it came to giving a command, but servants when it came to receiving one",
 [RĀJA-TAR. 5,3.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,3)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -417,7 +417,7 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
 [56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) Vgl. also u. *upa* and *prāyamupaviṣṭān*
 [R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) From this it follows that *prāyamāśiṣye, āśitum* and *upāśiṣye* (s. 1. *aś* with *ā* and *upa*) is merely a false spelling. On the confusion of *ās* and *aś* s. see also u. 6. Since *ās* also otherwise combines with a acc. (vgl. below at the partic. *āsita* the first example u. "c"), *doham* and *prāyam* may also be understood as genuine acc..
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
 [MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
@@ -450,7 +450,7 @@ bes. often *sattram* "sessionem" ("sacrificam") "sedere"
 [ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* ("finds himself in these circumstances") *mahābhāgā sītā*
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) This is probably also to be referred here: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 and 64.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4d)** — d) ein instr.: *hiraṇyako 'pi sahasramukhaviladurgaṃ praviṣṭaḥ sannakutobhayaḥ sukhenāste* befindet sich ganz wohl
 [PAÑCAT. 107,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?107,2) *yasminkṛtyaṃ samāveśya nirviśaṅkena cetasā . āsyate* bei dem man sich ruhiges Herzens fühlt, wenn man ihm
@@ -468,7 +468,7 @@ ein Geschäft übertragen hat,
 
 "entrusted him with a task",
 [I,106.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,106)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) ein dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* möge die gute Führung redlicher Leute wie eine Neuvermählte euerm Herzen zur Freude gereichen und zwar dauernd
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
@@ -477,7 +477,7 @@ ein Geschäft übertragen hat,
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
 - **EN:** e) a dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* "may the good conduct of honest people, like a newly-wed bride, bring joy to your heart, and that lastingly"
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich legen, ein Ende nehmen: *tadāstāṃ tāvadvihaṃgamāmiṣalobho yāvatkuṭumbajīvanopāyabhūtaṃ jālamapi me naṣṭam*
 [PAÑCAT. 106,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?106,19) *āstāṃ tāvat* (es ist Zeit ein Ende zu machen mit der Aufzählung der Untugenden der Weiber) *kimanyena daurātmyeneha yoṣitām . vivṛtaṃ svodareṇāpi ghnanti putraṃ svakaṃ ruṣā ..*
@@ -501,7 +501,7 @@ ein Geschäft übertragen hat,
 [DAŚAK. 185], ult. *āstāṃ mā maivam* "enough! not so! not so!"
 [HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
 [127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) die Form *āsan*
 [ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07) : *yebhiḥ sapitvaṃ pitaro na āsan* ist eine unregelm. Schreibung und zu 1. *aś* zu ziehen; man vgl. oben u. 4, b und den Wechsel zwischen Formen von *ās* und *aś* in
@@ -516,7 +516,7 @@ ein Geschäft übertragen hat,
 [ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07): *yebhiḥ sapitvaṃ pitaro na āsan* is a unregelm. spelling and is to be referred to 1. *aś*; compare vgl. above u. 4, "b" and the alternation between forms of *ās* and *aś* in
 [SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2] and the corresponding passages of the
 [ṚV.] — partic. *āsita*
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1a)** 1) _adj._
 a) der gesessen oder gewohnt hat: *āsitaḥ saḥ*
@@ -572,7 +572,7 @@ Sch. to [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 — c) «то, чем занимаются»: *anāsitakuṭumbāni kuṭumbibhavanāni*
 [R. 2,71,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,35) *rāmalakṣmaṇasītābhī rājñā daśarathena ca — .. āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam . tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati ..*
 [1,3,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,4)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **VN-2)** — 2) _n._
  a) das Sitzen, Sichsetzen: *jṛmbhāsitādikṛt (ālasyam)*
@@ -595,7 +595,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), Sch.
 — desid. *āsisiṣate*
 [P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Sch.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -776,7 +776,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ṚV. 7,2,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.002.html#rv07.002.11)
 - **EN:** "to sit down upon something" (acc.): *barhirna āstāmaditiḥ*
 [ṚV. 7,2,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.002.html#rv07.002.11)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ud-ās
 
@@ -822,7 +822,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [BHAG. 9,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,9)
 [KUMĀRAS. 2,13.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,13)
 [SĀṂKHYAK. 20.] *ucchṛṅkhaleṣu teṣvāsīdudāsīno vidūṣakaḥ*
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [VID. 63.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?63) — *udāsīna* _m._ ein Gleichgültiger, nicht Freund und nicht Feind: *anantaramariṃ vidyādarisevinameva ca . areranantaraṃ mitramudāsīnaṃ tayoḥ param ..*
 [M. 7,158](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,158) (vgl.
@@ -1216,7 +1216,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [KUMĀRAS. 2,38.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,38) *aśaktā eva sarvatra narendraṃ paryupāsate*
 [PAÑCAT. I,271.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,271) *suhṛdbhiḥ paryupāsīnaḥ* (pass. Bed.)
 [R. 2,69,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,6)
-  <sub>DCS 149 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) auf Etwas sitzen: *prākkūlānparyupāsīnaḥ*
 ([KULL.]: = *prāgagrāndarbhānadhyāsīnaḥ*)
@@ -1228,7 +1228,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **EN:** — 2) to sit upon something: *prākkūlānparyupāsīnaḥ*
 ([KULL.]: = *prāgagrāndarbhānadhyāsīnaḥ*)
 [M. 2,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,75)
-  <sub>DCS 149 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) umwohnen: *etaccandramasastīrthamṛṣayaḥ paryupāsate*
 [MBH. 3,10412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10412)
@@ -1237,7 +1237,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [MBH. 3,10412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10412)
 - **EN:** — 3) to dwell around: *etaccandramasastīrthamṛṣayaḥ paryupāsate*
 [MBH. 3,10412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10412)
-  <sub>DCS 149 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) beiwohnen, an Etwas Theil nehmen: *striyo gītasvanaṃ tasya muditāḥ paryupāsate*
 [MBH. 4,574.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.574) *ete mayā mahāghorāḥ samgrāmāḥ paryupāsitāḥ*
@@ -1249,7 +1249,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **EN:** — 4) to be present at, to take part in something: *striyo gītasvanaṃ tasya muditāḥ paryupāsate*
 [MBH. 4,574.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.574) *ete mayā mahāghorāḥ samgrāmāḥ paryupāsitāḥ*
 [ARJ. 8,21.]
-  <sub>DCS 149 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd dienend nahen, Ehre erzeigen, verehren: *tapasyantamṛṣiṃ tatra gandharvī paryupāsata . somadā nāma bhadraṃ te ūrmilatanayā tadā* (ergänze: sagte der Weise) *..*
 [R. 1,34,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,39) *brāhmaṇānparyupāsīta prātarutthāya pārthivaḥ*
@@ -1270,7 +1270,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [BHAG. 9,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,22) [12,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,1) [3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,3)
 [MBH. 3,11056](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11056) (p. 571). [R. 3,77,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,12) pass.: *paryupāsyanta lakṣmyā*
 [RAGH. 10,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,63)
-  <sub>DCS 149 · attested</sub>
+  <sub>attested</sub>
 
 ## samupās
 
@@ -1287,7 +1287,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **EN:** — *samupa*
  1) to sit together: *tūṣṇīṃ te samupāsīnā na śaktā bhāṣaṇe tadā*
 [R. 2,105,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,1)
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) einer Sache gemeinschaftlich obliegen, in Gemeinschaft ausüben, verrichten: *te trayaḥ saṃdhyāṃ samupāsata*
 [R. 2,87,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,19) von einer einzelnen Person: *saṃdhyāṃ tāṃ samupāsata*
@@ -1299,7 +1299,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **EN:** — 2) to attend to a matter jointly, to perform or carry out something in common; of a single person: *te trayaḥ saṃdhyāṃ samupāsata*
 [R. 2,87,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,19) *saṃdhyāṃ tāṃ samupāsata*
 [4,10,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,24) [GṚHYASAṂGR. 2,67.]
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) in Gemeinschaft Jmd Ehre erzeigen, verehren: *keśavaṃ samupāsate . yatra brahmādayo devāḥ*
 [MBH. 3,5067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5067) *nṛpatiriva — samupāsyate janena*
@@ -1314,7 +1314,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [MBH. 3,5067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5067) *nṛpatiriva — samupāsyate janena*
 [MṚCCH. 33,4.] pass. with a sing.: *samupāsyata — śriyā*
 [RAGH. 8,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,14)
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 ## pariās
 
@@ -1337,7 +1337,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ṚV. 9,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.03) *pari tvāsate nidhibhiḥ sakhāyaḥ*
 [10,179,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.02) [8,31,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.01) [9,86,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.01) *tāmetaddevāśca paryāsate ye ceme brāhmaṇāḥ*
 [ŚAT. BR. 1,3,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,3,8)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sitzen bleiben, unthätig bleiben: *amṛta itparyāsīta dūram*
 [ṚV. 7,20,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.020.html#rv07.020.07) *pra prānye yanti paryanya āsate*
@@ -1352,7 +1352,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ṚV. 7,20,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.020.html#rv07.020.07) *pra prānye yanti paryanya āsate*
 [3,9,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.009.html#rv03.009.03) *kimanye paryāsate 'smatstomobhiraśvinā (ṛṣiravīvṛdhat)*
 [8,8,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.008.html#rv08.008.08)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich ausschliessen von (acc.), supersedere: *yuvo rarāvā pari sakhyamāsate*
 [ṚV. 10,40,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.07)
@@ -1361,7 +1361,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ṚV. 10,40,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.07)
 - **EN:** — 3) to exclude oneself from (acc.), supersedere: *yuvo rarāvā pari sakhyamāsate*
 [ṚV. 10,40,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.07)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## pratiās
 
@@ -1375,7 +1375,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ŚAT. BR. 3,6,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,20)
 - **EN:** — *prati* to set oneself against something (acc.)
 [ŚAT. BR. 3,6,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,20)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## samās
 
@@ -1410,7 +1410,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
 [1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) with the instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
 [SĀV. 6,27.]
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sitzen: *pūrvāṃ saṃdhyāṃ japaṃstiṣṭhetsāvitrīmārkadarśanāt . paścimāṃ tu samāsīnaḥ samyagṛkṣavibhāvanāt ..*
 [M. 2,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,101) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,102) *pratyuvāca samāsīnaṃ vasiṣṭham*
@@ -1425,7 +1425,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [M. 2,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,101) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,102) *pratyuvāca samāsīnaṃ vasiṣṭham*
 [R. 2,111,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,8) *bhṛgutuṅge samāsīnamṛcīkam*
 [VIŚV. 11,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?11,11)
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zur Berathung zusammensitzen, Rath halten: *eṣāmahaṃ samāsīnānāṃ varco vijñānamā dade*
 [AV. 7,12,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.012.html#av07.012.03) *te ha vaiśvānare samāsata teṣāṃ ha vaiśvānare na samiyāya* sie beriethen sich über V. und wurden über ihn nicht einig
@@ -1437,7 +1437,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **EN:** — 3) to sit together in counsel, to hold council: *eṣāmahaṃ samāsīnānāṃ varco vijñānamā dade*
 [AV. 7,12,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.012.html#av07.012.03) *te ha vaiśvānare samāsata teṣāṃ ha vaiśvānare na samiyāya* they took counsel about V. and could not agree about him
 [ŚAT. BR. 10,6,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,1)
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) es mit Jmd (acc.) oder Etwas aufnehmen, gewachsen sein, widerstehen: *kastānyudhi samāsīta*
 [MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
@@ -1452,7 +1452,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
 [14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
 [R. 5,36,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,50) Vgl. — *pratisam*.
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 ## pratisamās
 
@@ -1478,7 +1478,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [R. 3,42,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,23) *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktā vegaṃ pratisamāsitum*
 [5,68,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,19) *droṇakarṇaprabhṛtayo yena pratisamāsitāḥ . raṇe*
 [MBH. 14,1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1830) Vgl. — *sam* 4.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -1495,7 +1495,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [ṚV. 7,99,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.099.html#rv07.099.07)
 - **EN:** 1) abl. *āsas* (with *ā*) from mouth to mouth, at immediate close quarters: *vaṣaṭte viṣṇavāsa ā kṛṇomi*
 [ṚV. 7,99,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.099.html#rv07.099.07)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) instr. *āsā* _adv._ gebraucht in Bedd., welche mit coram nahe zusammentreffen: vor und von Angesicht, mündlich; persönlich, gegenwärtig, leibhaftig; daher
 [NAIGH. 2,16](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,16) unter den Wörten für nahe aufgezählt. *tvaṃ hotā manurhito vahnirāsā viduṣṭaraḥ . agne yakṣi divo viśaḥ*
@@ -1543,12 +1543,12 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [1,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.02) *āsāvivāsannaditimuruṣyet*
 [152,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.152.html#rv01.152.06) *āsā gāvo vandyāso nokṣaṇaḥ*
 [168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) Vgl. *āsayā*. — In the comp. s. *ādaghna, āspātra, anās, svās*; vgl. also still *āsan* and *āsya*.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **3)** *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 
 - **RU:** *ās*¦ уста, рот, лицо; употребляется лишь в двух формах:
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -1562,7 +1562,7 @@ Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* s
 - **RU:** 2. *ās*¦
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** *ās*¦
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
@@ -1581,7 +1581,7 @@ Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* s
 - **EN:** 1) act.: *āsaneṣvāsata* (= *āsta)*
 [R. 7,44,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,44,18) To be added at the end: *kucagirivarayugmaṃ yadvinādhāramāste* that the fair pair of hills of the breasts sits firm without support
 [Spr. 5328.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5328)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *āste kapilaśarmākhyo nagare 'smindvijottamaḥ*
 [KATHĀS. 112,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?112,102) *jagāma yatrāsyati (āsyati = āste* Schol.) *tatra mārutaḥ*
@@ -1599,7 +1599,7 @@ Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* s
 [R. 7,35,64.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,64) *dūrata ās* should instead have been placed under
  4)
  c).
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) *nāse gṛhe 'sya*
 [KATHĀS. 52,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,36) *nāsiṣye 'sya gṛheṣu*
@@ -1611,7 +1611,7 @@ Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* s
 - **EN:** — 3) *nāse gṛhe 'sya*
 [KATHĀS. 52,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,36) *nāsiṣye 'sya gṛheṣu*
 [53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,53)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** — 4)
  a) *āsatām* im letzten
@@ -1626,7 +1626,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
  a) *āsatām* in the last
 
 example is, as already indicated by the exclamation mark, an incorrect form; the correct one would be *āsātām*.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** — b) *parāpātamāsata* flogen häufig
 [KĀṬH. 36,7. 34,8.]
@@ -1635,7 +1635,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [KĀṬH. 36,7. 34,8.]
 - **EN:** — b) *parāpātamāsata* flew frequently
 [KĀṬH. 36,7. 34,8.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) *yathaivāste tathaivāstām* wie es ihm gerade ergeht, so mag es ihm ergehen
 [Spr. 2086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2086) *eṇākṣīspṛhayālutā na kathamapyāste vivekodayāt* besteht nicht mehr
@@ -1647,7 +1647,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — c) *yathaivāste tathaivāstām* whatever befalls him, so let it befall him
 [Spr. 2086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2086) *eṇākṣīspṛhayālutā na kathamapyāste vivekodayāt* no longer exists
 [3843.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3843)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) lies möge eure Klugheit wie eine Neuvermählte lange dem Herzen Redlicher zur Freude gereichen und vgl.
 [Spr. 4721.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4721)
@@ -1656,7 +1656,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 4721.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4721)
 - **EN:** — e) read may your wisdom, like a newly-wed bride, long bring joy to the heart of the honest and vgl.
 [Spr. 4721.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4721)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4f)** — f) ein nom. act. im loc.: *āste 'niruddho rakṣāyām*
 [BHĀG. P. 10,82,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,6)
@@ -1665,7 +1665,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [BHĀG. P. 10,82,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,6)
 - **EN:** — f) a nom. act. in the loc.: *āste 'niruddho rakṣāyām*
 [BHĀG. P. 10,82,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,6)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *āstām* bedeutet so v. a. es unterbleibe, mag unbesprochen bleiben, ich will Nichts davon wissen; vgl. noch
 [Spr. 406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?406) [3737.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3737) [4710.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4710)
@@ -1686,7 +1686,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [67,23.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,23) — *āsita* sitting
 [KATHĀS. 121,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,99) — caus.
 [ṢAḌV. BR. 2,4.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **6.1)** — *adhi*
  1) act.: *adhyāsanparyaṅkam*
@@ -1698,7 +1698,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — *adhi*
  1) act.: *adhyāsanparyaṅkam*
 [VARĀH. BṚH. S. 79,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?79,14)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **6.3)** — 3) *nityamukhaṃ na pramāṇapaddhatimadhyāste* so v. a. lässt sich nicht beweisen
 [SARVADARŚANAS. 118,8]; vgl. *na pramāṇapathamavatarati*
@@ -1710,7 +1710,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — 3) *nityamukhaṃ na pramāṇapaddhatimadhyāste* so v. a. cannot be proven
 [SARVADARŚANAS. 118,8]; vgl. *na pramāṇapathamavatarati*
 [135,2] v. u.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **6.7)** — 7) über Jmd (acc.) —, höher als Jmd sitzen
 [BHĀG. P. 10,78,23. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,78,23)
@@ -1719,7 +1719,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [BHĀG. P. 10,78,23. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,78,23)
 - **EN:** — 7) over someone (acc.) —, to sit higher than someone
 [BHĀG. P. 10,78,23. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,78,23)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **intro2)** — *anu*
  3) richtig *saṃdhyāmanvāsta* [ed. Bomb.] *saṃdhyāmanvāsya*
@@ -1734,7 +1734,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
  3) correctly *saṃdhyāmanvāsta* [ed. Bomb.] *saṃdhyāmanvāsya*
 [R. 7,34,32. fg.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,34,32) *sattrāṇyanvāsate*
 [Spr. 4420](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4420), v. l. for *sattrāṇyupāsate*.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **ava.1)** — *ud*
  1) unbetheiligt sein u. s. w.: *tatkimityudāsate bharatāḥ*
@@ -1752,7 +1752,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [MĀLATĪM. 2,12.] *udāsīnāśca dehādau*
 [BHĀG. P. 10,73,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,23) [11,10,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,10,7) *udāsīna* ascetic
 [WILSON, Sel. Works 1,169. fg.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **ava.2)** — 2) bei Seite lassen, übergehen: *tatprapañcaḥ — granthabhūyastvabhayādudāsyate*
 [SARVADARŚANAS. 100,9.]
@@ -1761,7 +1761,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [SARVADARŚANAS. 100,9.]
 - **EN:** — 2) to leave aside, to pass over: *tatprapañcaḥ — granthabhūyastvabhayādudāsyate*
 [SARVADARŚANAS. 100,9.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.1)** — *upa*
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
@@ -1776,7 +1776,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
 [R. 7,6,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,45) *upāsate yathā bālā mātaraṃ kṣudhayārditāḥ* to surround, beleaguer
 [MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.3)** — 3) *mahendraṃ vai giriśreṣṭhaṃ rāmo nityamupāsti ha* zum Aufenthaltsort haben
 [MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
@@ -1794,7 +1794,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 4321.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4321) *pāraṃ gatvā śrutaughasya dhanyā vanamupāsate*
 [1814.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1814) *śreyaskāmāstathā gaṅgāmupāsantīha dehinaḥ*
 [MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.7)** — 7) *upāsitena mantreṇa*
 [WEBER, RĀMAT. UP. 356,4.] *sādhoḥ saṅgamupāsate ca satatam* so v. a. pflegt Umgang mit einem Guten
@@ -1806,7 +1806,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — 7) *upāsitena mantreṇa*
 [WEBER, RĀMAT. UP. 356,4.] *sādhoḥ saṅgamupāsate ca satatam* so v. a. keeps company with a good man
 [Spr. 5224.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5224)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.8)** — 8) *māsaṃ strītvamupāsitvā māsaṃ syāṃ puruṣaḥ punaḥ* so v. a. Weib sein
 [R. 7,87,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,87,27)
@@ -1815,7 +1815,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [R. 7,87,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,87,27)
 - **EN:** — 8) *māsaṃ strītvamupāsitvā māsaṃ syāṃ puruṣaḥ punaḥ* so v. a. to be a wife
 [R. 7,87,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,87,27)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.9)** — 9) *utthānavīrānvāgvīrā ramayanta upāsate*
 [Spr. 3770.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3770)
@@ -1824,7 +1824,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 3770.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3770)
 - **EN:** — 9) *utthānavīrānvāgvīrā ramayanta upāsate*
 [Spr. 3770.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3770)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.10)** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* ruhig abwarten
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
@@ -1836,7 +1836,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* to wait calmly
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
 [MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa.11)** — 11) *(yaḥ) śūnyamupāsate* wer einem Habenichts dient
 [Spr. 3635.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3635) *guṇapriyaṃ mitramupāssva sajjanam*
@@ -1851,13 +1851,13 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 3635.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3635) *guṇapriyaṃ mitramupāssva sajjanam*
 [Ind. St. 8,378.] *yo hi dogdhrīmupāste ca sa nityaṃ vindate payaḥ* is accustomed to
 [Spr. 4917.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4917)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pari-intro)** — Vgl. *upāsaka, upāsana* fg., *upāsitar* fg., *upāsti, upāsya* .
 
 - **RU:** — Vgl. *upāsaka, upāsana* fg., *upāsitar* fg., *upāsti, upāsya*.
 - **EN:** — Vgl. *upāsaka, upāsana* fg., *upāsitar* fg., *upāsti, upāsya*.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pari.1)** — *paryupa*
  1) umlagern (einen Feind)
@@ -1869,7 +1869,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — *paryupa*
  1) to surround, beleaguer (an enemy)
 [MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pari.5)** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)
@@ -1881,7 +1881,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **EN:** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)
 [MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pari.6)** — 6) Etwas ruhig ansehen: *nahyato duṣkarataraṃ manye lokeṣvapi triṣu . yatsapatnaśriyaṃ dīptāṃ hīnaśrīḥ paryupāsate ..*
 [Spr. 4375.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4375)
@@ -1890,13 +1890,13 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 4375.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4375)
 - **EN:** — 6) to look on at something calmly: *nahyato duṣkarataraṃ manye lokeṣvapi triṣu . yatsapatnaśriyaṃ dīptāṃ hīnaśrīḥ paryupāsate ..*
 [Spr. 4375.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4375)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pra-intro)** — Vgl. *paryupāsaka* fgg.
 
 - **RU:** — Vgl. *paryupāsaka* fgg.
 - **EN:** — Vgl. *paryupāsaka* fgg.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sam-intro)** — *sam*
 - **EN:** — *sam*
@@ -1913,7 +1913,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [R. 7,106,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,106,7) = *tūṣṇīṃ sthitāḥ* Schol.
 - **EN:** — 3) *tacchrutvā mantriṇaḥ sarve sopādhyāyāḥ samāsata*
 [R. 7,106,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,106,7) = *tūṣṇīṃ sthitāḥ* Schol.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sam.5)** — 5) einer Sache obliegen: *dvādaśaṃ hi gataṃ varṣaṃ jalaśayyāṃ samāsataḥ*
 [R. 7,76,17.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,17)
@@ -1922,7 +1922,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [R. 7,76,17.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,17)
 - **EN:** — 5) to attend to a matter, to be occupied with something: *dvādaśaṃ hi gataṃ varṣaṃ jalaśayyāṃ samāsataḥ*
 [R. 7,76,17.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,17)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sam.6)** — 6) achten auf Etwas, anerkennen: *ṛṣayo devatāścaiva satyameva samāsate*
 [Spr. 3816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3816)
@@ -1931,7 +1931,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 [Spr. 3816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3816)
 - **EN:** — 6) to pay heed to something, to acknowledge: *ṛṣayo devatāścaiva satyameva samāsate*
 [Spr. 3816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3816)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sub-entry-8)** — *sam*
  2) *ye 'rthaṃ samāsādya dīnā iva samāsate* wie arme Schlucker dasitzen
@@ -1940,7 +1940,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 - **RU:** — *sam*
  2) *ye 'rthaṃ samāsādya dīnā iva samāsate* сидеть как бедняки
 [Spr. 4895.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4895)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -1950,7 +1950,7 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 2. *ās*¦ mit *adhi*
 
 - **RU:** 2. *ās*¦ с *adhi*
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** *ās*¦ mit *adhi*
  4) *vivādādhyāsita*
@@ -1971,19 +1971,19 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 
 - **RU:** 4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sub-entry)** — *upa*
 
 - **RU:** — *upa*
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **sub-entry 9))** 9) *iha prāyamupāsiṣye* (so [ed. Bomb.])
 [MBH. 3,10580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10580)
 
 - **RU:** 9) *iha prāyamupāsiṣye* (так [ed. Bomb.])
 [MBH. 3,10580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10580)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 ## ās
 
@@ -2263,14 +2263,14 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 
 - **RU:** **2.** *ās*¦ I. 1. Mit *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
 - **EN:** **2.** *ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — With *anu* I. 1.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **9-var)** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater ? [HARṢAC. 126,9].
 
 - **RU:** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* так v. a. как поживает отец? [HARṢAC. 126,9].
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **upa-var-1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 
 - **RU:** — Mit *anu* 1〉 находиться вблизи кого-либо (Gen.) [HEMĀDRI 1,35,20].
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>

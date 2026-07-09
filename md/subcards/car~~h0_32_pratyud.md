@@ -10,4 +10,4 @@
 [MBH. 8,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3553)
 - **EN:** — *pratyud* caus. to excite, stir up someone
 [MBH. 8,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3553)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

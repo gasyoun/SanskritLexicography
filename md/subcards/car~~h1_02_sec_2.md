@@ -13,4 +13,4 @@
 - **EN:** — desid.
  3) "to try to go": *cicarṣan*
 [ŚĀṄKH. BR. 30,8.]
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

@@ -25,7 +25,7 @@
 [MBH. 4,1421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1421)
 [R. 1,29,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,25) [41,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,23)
 [R. GORR. 1,13,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,33) [30,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,24) [2,86,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,86,9)
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) salben
 [R. 2,25,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,35) *prāṇān* d. i. Mund und Nase
@@ -58,10 +58,10 @@
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *samālambha* fgg.
 
 - **RU:** — Vgl. *samālambha* fgg.
 - **EN:** — Vgl. *samālambha* fgg.
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>

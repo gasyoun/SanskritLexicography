@@ -13,7 +13,7 @@
 - **EN:** *pari* to hear, perceive: *patiṃ hi pariśṛṇvantī rāmam* hearing of, learning something about
 [R. 5,29,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,29,35) *tāmāgatāṃ pariśrutya*
 [6,99,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,19) — partic. *˚śruta*
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) gehört, vernommen: *kathā*
 [MBH. 1,4685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4685) *na ca nastādṛśaṃ dṛṣṭaṃ naiva cāpi pariśrutam*
@@ -40,7 +40,7 @@
 [MBH. 1,3754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3754) *pariśruto mayā pūrvaṃ rāmeṇaiṣa sahāyavān*
 [R. 4,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,15) *iti pariśrutam* impers.
 [HARIV. 2010.](https://sanskrit-lexicon-scans.github.io/hariv?2010)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bekannt als, geltend für, gekannt als, genannt: *aśvamedhaḥ kratuśreṣṭhaḥ kṣatriyāṇāṃ pariśrutaḥ*
 [HARIV. 11110.](https://sanskrit-lexicon-scans.github.io/hariv?11110) *mahāvṛndasahasrāṇāṃ śataṃ padmaṃ pariśrutam*
@@ -67,7 +67,7 @@
 [R. 7,35,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,20) known so v. a. famous
 [MBH. 12,1799](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1799) (according to the reading of the [ed. Bomb.]).
 [3127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3127) [BHĀG. P. 4,9,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,5)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) fehlerhaft für *pratiśruta*
 
@@ -82,10 +82,10 @@
 
 (thus [ed. Bomb.])
 [MBH. 4,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **caus.)** — Vgl. *pariśruta* .
 
 - **RU:** — Vgl. *pariśruta* .
 - **EN:** Vgl. *pariśruta*.
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>

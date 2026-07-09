@@ -18,9 +18,9 @@
 [9,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,10) *darbhāṇāmapādatte*
 [KAUŚ. 2.] *darvyottamamapādāya*
 [68.]
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *apādāna* .
 
 - **RU:** — Vgl. *apādāna* .
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>

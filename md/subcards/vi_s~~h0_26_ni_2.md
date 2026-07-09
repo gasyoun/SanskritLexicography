@@ -55,7 +55,7 @@
 [KĀM. NĪTIS. 17,32]; vgl. *yairiyaṃ pṛthivī karavatī prativarṣaṃ niveśitā*
 [MĀRK. P. 53,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?53,11) *samaye* hence v. a. to conclude a treaty with someone
 [MBH. 1,6297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6297)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12) Jmd Etwas übertragen: *adhikāraṃ saciveṣu*
 [RAGH. 19,4.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,4) *dhūrjagataḥ saciveṣu niveśitā*
@@ -79,7 +79,7 @@
 [5,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,123) *bharate sā* (*prītiḥ*) *niveśyatām*
 [R. GORR. 2,43,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,6) *nāma* to give someone a name
 [KATHĀS. 23,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,87)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13) *citte, hṛdaye* Etwas dem Herzen einprägen, dem Geiste vorführen
 [ŚĀK. 42](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?42), v. l.
@@ -97,7 +97,7 @@
 [BHĀG. P. 9,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,15)
 [Spr. 4272.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4272)
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14) richten (den Blick, die Gedanken, den Geist u. s. w.) auf Etwas (loc.): *dṛṣṭiṃ pāñcālyām*
 [MBH. 1,7141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7141)
@@ -141,11 +141,11 @@
 [Spr. 3313.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3313)
 — Vgl. *niveśana, niveśya*. — desid. *nivivikṣate*
 [P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Schol.
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtr.)** — Vgl. *niveśana, niveśya* . — desid. *nivivikṣate*
 [P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Schol.
 
 - **RU:** — Vgl. *niveśana, niveśya* . — desid. *nivivikṣate*
 [P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Schol.
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>

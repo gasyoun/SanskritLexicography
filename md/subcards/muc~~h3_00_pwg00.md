@@ -19,19 +19,19 @@
 — *vi*, *vimukta* in *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) thus v. a. *yukta*.* avimuktacakra*
 [PĀR. GṚHY. 1,15] according to the Comm. thus v. a. *anullaṅghitaśāstra* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag T26)** — *nis*, *nirmukta*
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) fehlerhaft für *niryukta* .
 
 - **RU:** — *nis*, *nirmukta*
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вместо *niryukta*.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T27)** — *prati*
 
 - **RU:** — *prati*
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T28 1))** 1) *sahasraṃ vāruṇānpāśānātmani pratimuñcati*
 [R. 7,59,3,35.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,3,35) — caus.: *bhūpātkathamapyātmānaṃ pratimocya saḥ*
@@ -40,7 +40,7 @@
 - **RU:** 1) *sahasraṃ vāruṇānpāśānātmani pratimuñcati*
 [R. 7,59,3,35.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,3,35) — caus.: *bhūpātkathamapyātmānaṃ pratimocya saḥ*
 [KATHĀS. 111,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?111,41)
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **Nachtrag T29)** — *vi*, *vimukta* in *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) so v. a. *yukta*.* avimuktacakra*
@@ -49,4 +49,4 @@
 - **RU:** — *vi*, *vimukta* в *kusumarasavimuktaṃ vastram*
 [R. 7,59,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,23) так v. a. *yukta*.* avimuktacakra*
 [PĀR. GṚHY. 1,15] согласно Comm. так v. a. *anullaṅghitaśāstra*.
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>

@@ -22,4 +22,4 @@
 * pañcabhī raśmibhirudavayan*
 [TBR. 1,2,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,4,2)
 [AIT. BR. 4,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,19)
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>

@@ -25,7 +25,7 @@
 [14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) *tasmingurau guruvāsaṃ niruṣya*
 [14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) — *nirvatsyāmi*
 [4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) erroneously for *nirvartsyāmi*, as [ed. Bomb.] reads.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** — Vgl. *nirvāsa* . — caus.
  1) aus seinem Wohnorte entfernen, vertreiben, verbannen: *purāt*
@@ -57,7 +57,7 @@
 [Z. d. d. m. G. 14,574,16.]
 - **EN:** — 2) to drive away (for oneself), to spend, to pass (time): *mṛgayāvihāranirvāsitasakaladivasa*
 [Z. d. d. m. G. 14,574,16.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **ref)** — Vgl. 1. *nirvāsana, nirvāsanīya* (auch
 [DAŚAK. 82,12]), *nirvāsya* .
@@ -66,12 +66,12 @@
 [DAŚAK. 82,12]), *nirvāsya* .
 - **EN:** — Vgl. 1. *nirvāsana, nirvāsanīya* (also
 [DAŚAK. 82,12]), *nirvāsya* .
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus_intro)** — Vgl. *nirvāsa* . — caus.
 
 - **RU:** Vgl. *nirvāsa* . — caus.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** 1) aus seinem Wohnorte entfernen, vertreiben, verbannen: *purāt*
 [M. 9,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,225) *rāṣṭrāt*
@@ -94,4 +94,4 @@
 [BHĀG. P. 3,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,15) [4,8,65.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,65) отпускать: *mukhanirvāsito vāyuḥ*
 [5,16,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,25) *dehī nirvāsyate kadā nu*
 [3,31,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,17)
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>

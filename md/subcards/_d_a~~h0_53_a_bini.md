@@ -16,7 +16,7 @@
  1) to place upon, to lay on: *yathā śīrṇe garamabhinidadhyāt*
 [ŚAT. BR. 11,5,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,8,6) med. to lay (dat.) upon oneself: *guruṃ bhāramabhinidadhate*
 [AIT. BR. 4,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,13)
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) berühren, nahe kommen: *kṣureṇābhinidadhāti*
 [ŚAT. BR. 3,1,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,7) *asinā*
@@ -69,4 +69,4 @@ Schol. to [ṚV. PRĀT. 2,19.] Schol. to [VS. PRĀT. 4,61] in [Ind. St. 4,230.] 
 [CHĀND. UP. 2,22,5]; *leśenābhanihitā* (read with
 Schol. *leśenānabhi˚) vaktavyāḥ*; vgl. to this *abhinidhāna*
 [ṚV. PRĀT. 6,5.] [9.] [11.] [12.]
-  <sub>DCS 59 · attested</sub>
+  <sub>attested</sub>

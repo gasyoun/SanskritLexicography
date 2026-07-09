@@ -34,4 +34,4 @@
 [4,3,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,25) {with the passing-over of}
 [5,24,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,24) *atihāna* {overleaped}
 [ŚAT. BR. 4,2,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,3,4)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

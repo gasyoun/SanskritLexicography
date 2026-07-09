@@ -9,4 +9,4 @@
 - **RU:** — *atipra* вести дальше, тянуть дальше (за что-либо): *chandaḥ*
 [ŚĀṄKH. BR. 11,5.]
 - **EN:** *atipra* to lead beyond, draw beyond: *chandaḥ* [ŚĀṄKH. BR. 11,5.]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

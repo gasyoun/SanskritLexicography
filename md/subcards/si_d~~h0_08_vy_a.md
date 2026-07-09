@@ -10,10 +10,10 @@
 [YĀJÑ. 2,261.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,261)
 - **EN:** — *vyā*, partic. *˚siddha* {forbidden, prohibited}
 [YĀJÑ. 2,261.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,261)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *vyāsedha* .
 
 - **RU:** — Vgl. *vyāsedha* .
 - **EN:** — Vgl. *vyāsedha* .
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

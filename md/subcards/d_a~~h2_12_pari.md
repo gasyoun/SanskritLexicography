@@ -8,4 +8,4 @@
 
 - **RU:** — *pari* обрезать кругом; *parītta* обрезанный, неполный, ограниченный, в Gegens. к *apramāṇa*
 [BURN.] [Lot. de la b. l. 396. Intr. 611. 612.] [BURNOUF] возводит форму к 1. *dā*.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

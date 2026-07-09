@@ -7,4 +7,4 @@
 
 - **RU:** — *abhipra* vgl. *abhiprāpaṇa* .
 - **EN:** — *abhipra* vgl. *abhiprāpaṇa*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

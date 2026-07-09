@@ -21,10 +21,10 @@ wünschen: *tadvijijñāsasva*
 [TAITT. UP. 3,1. fgg.] *vijñānaṃ bhagavo vijijñāse*
 [CHĀND. UP. 7,17,1.] *etadevākhilam — vijijñāsāmi*
 [BHĀG. P. 5,16,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,2)
-  <sub>DCS 2285 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *vijñijñāsā, vijijñāsitavya, vijijñāsya* .
 
 - **RU:** — Vgl. *vijñijñāsā, vijijñāsitavya, vijijñāsya* .
 - **EN:** — Vgl. *vijñijñāsā, vijijñāsitavya, vijijñāsya*.
-  <sub>DCS 2285 · attested</sub>
+  <sub>attested</sub>

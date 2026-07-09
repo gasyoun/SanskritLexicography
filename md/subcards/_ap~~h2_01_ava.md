@@ -16,4 +16,4 @@
  1) *guṇadoṣāvavāpyete puṃsāṃ saṃśīlanādbudhaiḥ* in this way come upon merits and defects
 [Spr. 838.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?838) *tato 'tra vīkṣyate yāvadvālastāvadavāpi saḥ* was discovered — found
 [KATHĀS. 106,26.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,26)
-  <sub>DCS 1574 · attested</sub>
+  <sub>attested</sub>

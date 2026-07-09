@@ -16,4 +16,4 @@
 [MBH. 7,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5812) *khaṃ vāyumangiṃ salilaṃ tathorvīṃ samaṃ tato 'bhyāviśate śarīrī*
 [12,7412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7412) *bhayaṃ nābhyāviśettatra* {to gain entry}
 [4,933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.933)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

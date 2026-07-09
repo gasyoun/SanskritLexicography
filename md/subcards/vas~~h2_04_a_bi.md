@@ -28,4 +28,4 @@
 [TBR. 3,2,8,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,7)
 [ŚAT. BR. 1,2,2,16. fg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,2,16)
 [KĀTY. ŚR. 2,5,25.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,5,25)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

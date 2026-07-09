@@ -24,7 +24,7 @@
 [MBH. 3,2014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2014) *gṛhe*
 [BHĀG. P. 3,32,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,1) [7,10,47](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,47) (= [15,75](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,75)). to be near or present: *dūrāccidāvasato asya karṇā*
 [ṚV. 6,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.038.html#rv06.038.02)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen (einen Ort), zum Aufenthaltsort erwählen, bewohnen; mit acc.
 [P. 1,4,48.](https://ashtadhyayi.com/sutraani/1/4/48) *svājīvyaṃ deśam*
@@ -63,7 +63,7 @@
 [4,8,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,1) *āvasatātsa hṛnnaḥ*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *gurostalpam* to take possession of the teacher's marriage-bed, so v. a. to commit adultery with the teacher's wife
 [CHĀND. UP. 5,10,9.]
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zubringen (eine Nacht): *niśāṃ tāṃ sukhamāvasat*
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
@@ -72,7 +72,7 @@
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
 - **EN:** 3) to spend (a night): *niśāṃ tāṃ sukhamāvasat*
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich begeben in, antreten: *gṛhasthāśramam*
 [M. 3,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,2)
@@ -90,7 +90,7 @@
 [MĀRK. P. 28,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,15) *gārhasthyam*
 [MBH. 12,2472. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2472) *rājyam* to assume the government
 [R. 2,12,57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,57) [42,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,21)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) fleischlich beiwohnen: *śūdro guptamaguptaṃ vā dvaijātaṃ varṇamāvasan*
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
@@ -99,7 +99,7 @@
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
 - **EN:** 5) to have carnal intercourse with: *śūdro guptamaguptaṃ vā dvaijātaṃ varṇamāvasan*
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) statt *māmā vasanti*
 [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) vermuthen wir *amā vasantiḥ āvasita*
@@ -111,7 +111,7 @@
 - **EN:** 6) instead of *māmā vasanti*
 [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) we conjecture *amā vasantiḥ āvasita*
 [KATHĀS. 54,124](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,124) erroneous for *āvāsita*.
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — Vgl. *āvasati, āvāsa* . — caus.
 - **EN:** — Vgl. *āvasati, āvāsa*. — caus.
@@ -132,7 +132,7 @@
 - **EN:** 1) to lodge, to let stay with oneself: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
 [R. 2,12,101.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,101)
 [RĀJA-TAR. 3,161.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,161)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen, zum Aufenthaltsort erwählen: *idamevaṃvidhaṃ (nagaraṃ) kasmāddevā nāvāsayantyuta*
 [MBH. 3,12188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12188)
@@ -156,7 +156,7 @@
 * gurupatnyāḥ kalevaram*
 [MBH. 13,2298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2298) *premāvāsitā* in which affection has taken up its dwelling
 [Spr. 3270.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3270)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Halt machen, sich lagern (für die Nacht): *iha kvāvāsyate pānthaiḥ*
 [KATHĀS. 124,133. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,133) *(rājānaḥ) āvāsitā nātidūre ṣaṭpurasya* machten Halt
@@ -177,7 +177,7 @@
 [R. GORR. 2,107,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,107,18)
 [KATHĀS. 47,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,2) [3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,3) [54,124](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,124) (erroneously *āvasita* gedr.).
 [123,268.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,268)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **Ātmanepada-1)** — Vgl. *āvasati, āvāsa* . — caus.
  1) beherbergen, bei sich wohnen lassen: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
@@ -188,4 +188,4 @@
  1) принимать, давать у себя жить: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
 [R. 2,12,101.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,101)
 [RĀJA-TAR. 3,161.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,161)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>

@@ -199,4 +199,4 @@
 [MBH. 1,6740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6740) *girivarataṭānmuktaścātmā*
 [Spr. 2741.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2741) *mukta* "detached, fallen off": *tṛṇarājaphalānīva muktāni śikharāttaroḥ*
 [HARIV. 8093.](https://sanskrit-lexicon-scans.github.io/hariv?8093) Vgl. *amukta*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

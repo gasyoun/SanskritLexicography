@@ -10,4 +10,4 @@
 [CHĀND. UP. 1,11,5.]
 - **EN:** — *abhyud* {to raise oneself together with someone}: *sarvāṇi ha vā imāni bhūtāni prāṇamevābhisaṃviśanti prāṇamabhyujjihate*
 [CHĀND. UP. 1,11,5.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

@@ -10,7 +10,7 @@
  1) to come up, to join oneself to: *imā nārīrāñjanena sarpiṣā saṃ viśantu*
 [ṚV. 10,18,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.07) *saṃ tvā viśantvoṣadhīrutāpaḥ*
 [VS. 8,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,25)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) eintreten —, eingehen —, fahren in: *sutalam* [BHĀG. P. 10,85,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,34) *agnimiddham* [MBH. 1,6741.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6741) [KATHĀS. 61,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,12) *paricumbati saṃviśya bhramaraścūtamañjarīm* [R. 3,79,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,17) *āpaḥ pṛthivīṃ saṃviśantu* verlaufen sich in die Erde [KAUŚ. 103.] *gandharvāścāpi yaṃ divyāḥ saṃviśanti naram* [MBH. 3,14505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14505) *bahvīryonīḥ* [13,1923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1923) *brāhmīṃ tanum* [12,7171](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7171) (med.). *yasminprāṇaḥ pañcadhā saṃviveśa* [MUṆḌ. UP. 3,1,9.] *ātmaiva saṃviśatyātmanātmānam* [MĀṆḌ. UP. 12.] [NṚS. TĀP. UP.] in [Ind. St. 9,134.] *vidhiṃ hyādyaṃ vidhayo saṃviśanti* gehen auf in [MBH. 13,3539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3539)
 
@@ -29,7 +29,7 @@
 [MUṆḌ. UP. 3,1,9.] *ātmaiva saṃviśatyātmanātmānam*
 [MĀṆḌ. UP. 12.] [NṚS. TĀP. UP.] in [Ind. St. 9,134.] *vidhiṃ hyādyaṃ vidhayo saṃviśanti* to merge into
 [MBH. 13,3539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3539)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich niederlassen, — niederlegen, — zur Ruhe begeben [ŚAT. BR. 8,2,4,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,2,4,20) [11,6,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,1,7) [13,4,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,1,9) *patnyā* [KĀṬH. 14,8.] [LĀṬY. 3,4,4. 5,10,6.] [ĀŚV. GṚHY. 2,3,7. 9,5.] *gṛheṣu* [ŚR. 2,5,17.] [AIT. BR. 8,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) *carmaṇi vā sthaṇḍile vā* [CHĀND. UP. 5,2,8.] *saṃvekṣyan* (so ist st. *saṃveśyan* zu lesen) *jāyāyai* [KAUṢ. UP. 2,10.] [M. 2,194.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,194) [4,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,55) [76.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,76) [7,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,225) [YĀJÑ. 1,114.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,114) [330.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,330) [MBH. 1,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.688) [4299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4299) *śayanīye mayā saha* [4712](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4712) (med.). *caramaṃ saṃviśati yā prathamaṃ pratibudhyate* [2,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2177) [3,13149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13149) [13,1456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1456) [2745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2745) [R. 2,53,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,5) [R. GORR. 2,8,56.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,56) [53,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,53,7) [4,34,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,3) [55,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,16) [20. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,20) [5,92,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,92,19) [SUŚR. 2,165,11.] [KATHĀS. 56,316.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,316) [BHĀG. P. 4,26,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,11) [7,13,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,26) [10,15,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,46) *śādvalopari* [20,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,20,30) *vyādhitairna saṃviśet* er schlafe nicht mit Kranken [YĀJÑ. 1,138.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,138) *śayyām* sich auf's Bett legen [R. 2,46,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,46,14) ([44,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,44,14) [GORR.]). *saṃviṣṭa* zur Ruhe gegangen, schlafend, ruhend [MBH. 1,693.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.693) [5924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5924) *tṛṇeṣu* [R. 2,86,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,86,11) [R. GORR. 2,48,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,48,10) [94,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,94,12) [5,14,13](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,13) (*hastin*).* kuśaśayane* [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) *uruśākhā˚* [KATHĀS. 42,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,43) [54,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,162) *ratnapīṭhe* [Verz. d. Oxf. H. 28,b,33.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?28) [MĀRK. P. 34,59.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,59) *bṛsī˚* [PRAB. 21,5.]
 
@@ -57,7 +57,7 @@
 [KATHĀS. 42,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,43) [54,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,162) *ratnapīṭhe*
 [Verz. d. Oxf. H. 28,b,33.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?28) [MĀRK. P. 34,59.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,59) *bṛsī˚*
 [PRAB. 21,5.]
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) beschlafen: *saṃviśedārtave striyam* [M. 3,48.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,48) [YĀJÑ. 1,79.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,79) [MĀRK. P. 34,81.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,81)
 
@@ -66,7 +66,7 @@
 [M. 3,48.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,48)
 [YĀJÑ. 1,79.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,79)
 [MĀRK. P. 34,81.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,81)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich setzen zu (acc.): *saṃjñaptamaśvam* [HARIV. 11236.](https://sanskrit-lexicon-scans.github.io/hariv?11236) *yaiḥ saṃviṣṭaḥ* [BHĀG. P. 9,11,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,22)
 
@@ -74,14 +74,14 @@
 - **EN:** — 5) to sit down with (acc.): *saṃjñaptamaśvam*
 [HARIV. 11236.](https://sanskrit-lexicon-scans.github.io/hariv?11236) *yaiḥ saṃviṣṭaḥ*
 [BHĀG. P. 9,11,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,22)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) sich mit Etwas (acc.) befassen: *dṛṣṭaṃ śrutamasadbuddhvā nānudhyāyenna saṃviśet (= upabhuñjīta* Comm.) [BHĀG. P. 9,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,20)
 
 - **RU:** — 6) «заниматься чем-л.» (acc.): *dṛṣṭaṃ śrutamasadbuddhvā nānudhyāyenna saṃviśet (= upabhuñjīta* Comm.) [BHĀG. P. 9,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,20)
 - **EN:** — 6) to occupy oneself with something (acc.): *dṛṣṭaṃ śrutamasadbuddhvā nānudhyāyenna saṃviśet (= upabhuñjīta* Comm.)
 [BHĀG. P. 9,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,20)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>
 
 **Caus)** — Vgl. *saṃveśa* fgg. — caus. legen —, setzen auf, in; bringen in, nach: *talpe* [KAUŚ. 79.] *śayane* [MBH. 1,4274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4274) [R. 2,76,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,5) *śivikāyām* [HARIV. 3385.](https://sanskrit-lexicon-scans.github.io/hariv?3385) [R. GORR. 2,83,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,83,8) *paryaṅke* [R. SCHL. 2,34,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,20) *āsaneṣu* [PRAB. 24,4.] *citāmadhye* [R. 2,76,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,17) *citāyām* [6,96,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,9) *tailadroṇyām* [2,66,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,14) — [6,96,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,15) *paraṃ brahma vraje* [Verz. d. Oxf. H. 68,b,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?68) *vākca satyaṃ ca buddhau saṃveśitāni te* [MBH. 12,1556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1556)
 
@@ -99,4 +99,4 @@
 [2,66,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,14) — [6,96,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,96,15) *paraṃ brahma vraje*
 [Verz. d. Oxf. H. 68,b,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?68) *vākca satyaṃ ca buddhau saṃveśitāni te*
 [MBH. 12,1556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1556)
-  <sub>DCS 171 · attested</sub>
+  <sub>attested</sub>

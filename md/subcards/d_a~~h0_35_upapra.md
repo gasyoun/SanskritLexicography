@@ -8,9 +8,9 @@
 
 - **RU:** — *upapra* dass.: *˚dāsyāmaḥ*
 [ŚAT. BR. 1,6,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,4,14)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *upapradāna* .
 
 - **RU:** — Vgl. *upapradāna* .
-  <sub>DCS 12366 · lexicographic</sub>
+  <sub>lexicographic</sub>

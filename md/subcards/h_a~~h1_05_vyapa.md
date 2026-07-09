@@ -11,4 +11,4 @@
 
 - **RU:** — *vyapa* покидать, оставлять: *prajā dharmaṃ ca kāmaṃ ca vyapahāya*
 [HARIV. 900](https://sanskrit-lexicon-scans.github.io/hariv?900) по чтению новейших Ausg.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

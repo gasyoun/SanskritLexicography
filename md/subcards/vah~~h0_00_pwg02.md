@@ -13,7 +13,7 @@
 - **EN:** — 11) to endure, to bear: *manobhavam*
 [MĀRK. P. 18,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,41) to bear thus v. a. to overlook, to forgive
 [BHĀG. P. 5,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,15)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **12)** — 12) an sich tragen, haben: *yaccāśrupātātkalilaṃ vadanaṃ vahase*
 [MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
@@ -37,7 +37,7 @@
 [KATHĀS. 47,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,52) *dṛśā bāṣpakalāmuvāha*
 [BHĀG. P. 4,8,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,16) *vahanniva raviprabhāḥ*
 [RĀJA-TAR. 4,197.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,197)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **13)** — 13) sich unterziehen, sich hingeben; an den Tag legen, äussern: *agnim, viṣam, tulām* sich dem Gottesurtheil mit dem Feuer, dem Gift, der Wage unterwerfen
 [YĀJÑ. 2,99](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,99) (vgl. [Z. d. d. m. G. 9,677, N.).] *vahāma sarve vivaśā yasya diṣṭam*
@@ -151,7 +151,7 @@
 [4,717.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,717) *ūḍhahāsa*
 [BHĀG. P. 2,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25) *ūḍhavayas = prāptavayas*
 [4,9,66.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,66)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **14)** — 14) bezahlen: *mithyābhiyogī dviguṇamabhiyogāddhanaṃ vahet*
 [YĀJÑ. 2,11.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,11) [292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,292)
@@ -160,7 +160,7 @@
 [YĀJÑ. 2,11.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,11) [292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,292)
 - **EN:** — 14) to pay: *mithyābhiyogī dviguṇamabhiyogāddhanaṃ vahet*
 [YĀJÑ. 2,11.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,11) [292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,292)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **15)** — 15) zubringen (eine Zeit): *bahiḥ kenāpyupāyena vaha tvaṃ nālikādvayam*
 [RĀJA-TAR. 4,570.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,570) *tatrāpyahāni dvitrāṇi vahannevābhavat*
@@ -172,7 +172,7 @@
 - **EN:** — 15) to spend (a period of time): *bahiḥ kenāpyupāyena vaha tvaṃ nālikādvayam*
 [RĀJA-TAR. 4,570.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,570) *tatrāpyahāni dvitrāṇi vahannevābhavat*
 [290.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,290)
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **16)** — 16) *vahan (tanmantraṃ sahasā vahan)*
 [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) fehlerhaft für *japan*, wie die neuere Ausg. liest.
@@ -182,9 +182,9 @@
 - **EN:** — 16) *vahan (tanmantraṃ sahasā vahan)*
 [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) erroneous for *japan*, as the more recent Ausg. reads.
 — Vgl. *navoḍhā, sahoḍha, sūryoḍha* .
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *navoḍhā, sahoḍha, sūryoḍha* .
 
 - **RU:** — Vgl. *navoḍhā, sahoḍha, sūryoḍha* .
-  <sub>DCS 1857 · lexicographic</sub>
+  <sub>lexicographic</sub>

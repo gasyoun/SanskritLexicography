@@ -19,4 +19,4 @@
 [HARIV. 13555.](https://sanskrit-lexicon-scans.github.io/hariv?13555) *bahūni yajñarūpāṇi nānākarmaphalāni ca .. tāni yaḥ saṃprajānāti*
 [MBH. 12,2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2319) *vitarkavicārānandāsmitānugamātsaṃprajñātaḥ (samādhiḥ)*
 [YOGAS. 1,17.]
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>

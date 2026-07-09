@@ -1,11 +1,111 @@
 # śam
 
-_PWG article — 37 sub-card(s), 217 sense(s) · RU 173/217 · EN 164/217_
+_PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
+
+## śam
+
+`_sam~~h0_00_pwg00`
+
+
+**etym)** *śam*¦, *śamīṣva, śamīdhvam*
+[P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) und die Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita* .
+- **EN:** *śam*¦, *śamīṣva, śamīdhvam* [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) and the Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita*.
+
+**1)** 1) sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
+[ṚV. 6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *īje yajñebhiḥ śaśame śamībhiḥ*
+[3,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.02) *ṛdhadyaste sudānave dhiyā martaḥ śaśamate*
+[2,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.002.html#rv06.002.04) *ṛdhagitthā sa martyaḥ śaśame devatātaye*
+[8,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.01) *dhruvamayā dhruvamutāśamiṣṭhāḥ*
+[3,29,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.16) [5,2,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.07) *suśami śamīdhvam*
+[TBR. 3,6,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,6,6,4)
+- **EN:** 1) to toil, be diligent, work; insbes. of the activity at the Cultus. [ṚV. 6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *īje yajñebhiḥ śaśame śamībhiḥ* [3,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.02) *ṛdhadyaste sudānave dhiyā martaḥ śaśamate* [2,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.002.html#rv06.002.04) *ṛdhagitthā sa martyaḥ śaśame devatātaye* [8,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.01) *dhruvamayā dhruvamutāśamiṣṭhāḥ* [3,29,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.16) [5,2,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.07) *suśami śamīdhvam* [TBR. 3,6,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,6,6,4)
+
+**2)** — 2) zurichten, zubereiten: *sa idaṃ devebhyo haviḥ śamīṣva*
+[VS. 1,15.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,15) *vītaṃ haviḥ śamitam, śamitā yajadhyai*
+[17,57.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,57) *sūcībhiḥ śamyantu tvā*
+[23,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,33) [37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,37) [40.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,40) *kaste gātrāṇi śamyati*
+[39.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,39) [42.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,42) In den entsprechenden Stellen lesen
+[TS.] und [KĀṬH.] *śimyantu, śimyati* u. s. w.
+- **EN:** — 2) to prepare, make ready: *sa idaṃ devebhyo haviḥ śamīṣva* [VS. 1,15.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,15) *vītaṃ haviḥ śamitam, śamitā yajadhyai* [17,57.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,57) *sūcībhiḥ śamyantu tvā* [23,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,33) [37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,37) [40.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,40) *kaste gātrāṇi śamyati* [39.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,39) [42.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,42) In the corresponding passages one reads [TS.] and [KĀṬH.] *śimyantu, śimyati* u. s. w.
+
+**3)** — 3) partic. *śaśamāna* eifrig bemüht, beschäftigt, fleissig; namentlich in der Arbeit für die Götter
+[NAIGH. 3,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) (*arcatikarman*).
+[4,3.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?4,3) [NIR. 6,8](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,8) (= *śaṃsamāna*).
+[ṚV. 1,85,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.12) *śaśamānasya vā naraḥ svedasya . vidā kāmasya venataḥ*
+[86,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.086.html#rv01.086.08) [113,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.20) [142,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.142.html#rv01.142.02) [3,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.018.html#rv03.018.04) [4,2,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.09) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.13) *śravasyavaḥ śaśamānāsa ukthaiḥ*
+[16,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.15) [51,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.051.html#rv04.051.07) [4,22,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.022.html#rv04.022.08) *yajyu*
+[23,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.023.html#rv04.023.02) [4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.012.html#rv04.012.04) *sunvant*
+[31,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.031.html#rv04.031.08) [1,141,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.141.html#rv01.141.10) [8,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.02) —
+[4,41,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.03) *gavyaṃ cidūrvaṃ naraḥ śaśamānā apa vran*
+[5,29,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.12) *yo vaḥ śamīṃ śaśamānasya nindāt*
+[42,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.10) *yo vāṃ yajñaiḥ śaśamāno ha dāśati*
+[1,151,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.07) [2,12,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.012.html#rv02.012.14) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.020.html#rv02.020.03) [8,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.02) [10,11,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.05) *śaṃsaḥ śaśamānasya*
+[64,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.064.html#rv10.064.10) [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *utte agne śaśamānasya vājāḥ (jihatām)*
+[142,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.06) [AV. 12,2,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.10) *ye agravaḥ śaśamānāḥ pareyuḥ*
+[18,2,47.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.47) [VS. 20,65.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,65)
+— Vgl.
+κάμνω.
+- **EN:** — 3) partic. *śaśamāna* diligently occupied, busy, industrious; namely in labour for the gods [NAIGH. 3,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) (*arcatikarman*). [4,3.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?4,3) [NIR. 6,8](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,8) (= *śaṃsamāna*). [ṚV. 1,85,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.12) *śaśamānasya vā naraḥ svedasya . vidā kāmasya venataḥ* [86,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.086.html#rv01.086.08) [113,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.20) [142,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.142.html#rv01.142.02) [3,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.018.html#rv03.018.04) [4,2,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.09) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.13) *śravasyavaḥ śaśamānāsa ukthaiḥ* [16,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.15) [51,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.051.html#rv04.051.07) [4,22,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.022.html#rv04.022.08) *yajyu* [23,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.023.html#rv04.023.02) [4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.012.html#rv04.012.04) *sunvant* [31,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.031.html#rv04.031.08) [1,141,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.141.html#rv01.141.10) [8,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.02) — [4,41,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.03) *gavyaṃ cidūrvaṃ naraḥ śaśamānā apa vran* [5,29,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.12) *yo vaḥ śamīṃ śaśamānasya nindāt* [42,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.10) *yo vāṃ yajñaiḥ śaśamāno ha dāśati* [1,151,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.07) [2,12,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.012.html#rv02.012.14) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.020.html#rv02.020.03) [8,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.055.html#rv08.055.02) [10,11,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.05) *śaṃsaḥ śaśamānasya* [64,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.064.html#rv10.064.10) [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *utte agne śaśamānasya vājāḥ (jihatām)* [142,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.06) [AV. 12,2,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.10) *ye agravaḥ śaśamānāḥ pareyuḥ* [18,2,47.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.47) [VS. 20,65.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,65) — Vgl. κάμνω.
 
 ## śam
 
 `_sam~~h1_00_pwg00`
 
+
+**etym)** *śam*¦, *śāmyati*
+[DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*).
+[P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74)
+[VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet*
+[R. GORR. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,14) *śaśāma, aśamat*; im Epos aus metrischen Rücksichten auch med.; *śamitvā* und *śāntvā*
+[P. 7,2,56.](https://ashtadhyayi.com/sutraani/7/2/56)
+[VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* und *śāmam* (angeblich vom caus.)
+[P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), Schol. pass. impers. *śamyate, aśami*
+[P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
+- **EN:** *śam*¦, *śāmyati* [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*). [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet* [R. GORR. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,14) *śaśāma, aśamat*; in the epic, for metrical reasons, also med.; *śamitvā* and *śāntvā* [P. 7,2,56.](https://ashtadhyayi.com/sutraani/7/2/56) [VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* and *śāmam* (allegedly from the caus.) [P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), Schol. pass. impers. *śamyate, aśami* [P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
+
+**1)** [VOP. 24,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,6) partic. *śānta* s. bes. ruhig —, still werden, befriedigt sein; aufhören, sich legen, erlöschen: *bhūtānyaśāmyan*
+[VS. 14,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,31) *imau lokāvaśāmyatām*
+[TS. 2,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,2) *no nvevātrāśamat* es ist noch nicht zur Ruhe gekommen
+[ŚAT. BR. 1,7,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,7) *śāmya mā śucaḥ*
+[MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ*
+[KUMĀRAS. 2,40.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,40) *samatsaro 'pi śaśāma tena kṣitipālalokaḥ*
+[RAGH. 7,3.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,3)
+[Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026) [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* beruhigt
+[MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651)
+[R. 4,44,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,45) *śāmyate*
+[MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) *nahi te jātu śāmyerannṛte rājyena*
+[4678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4678) *yadā śāmyanti vipruṣaḥ*
+[ŚAT. BR. 14,2,2,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,28)
+[ṢAḌV. BR. 5,10.]
+[ŚĀṄKH. GṚHY. 6,6.]
+[KAUŚ. 85. 116.] *śūlam*
+[SUŚR. 2,347,1.] *ākranditadhvāna*
+[RĀJA-TAR. 3,17.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,17) *na jātu kāmaḥ kāmānāmupabhogena śāmyati*
+[Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241) [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
+[KATHĀS. 56,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,96) *vairam*
+
+[MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) (med.). *pittaṃ śarkarayā*
+[Spr. 3243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3243) *vṛddhaṃ rajaḥ*
+[BHAṬṬ. 17,63.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,63) *śāmyannimeṣa*
+[11,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,31) *astram*
+[MĀRK. P. 63,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?63,35) *himena himaṃ śāmyedduṣkṛteneva duṣkṛtam*
+[RĀJA-TAR. 5,400.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,400) *śemuśca pāpāni narendrasūnoḥ*
+[HARIV. 8404.](https://sanskrit-lexicon-scans.github.io/hariv?8404) *aśeṣāṇi ghorāṇi*
+[MĀRK. P. 58,72.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,72)
+[PAÑCAR. 4,3,1](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,1) (*sāmyet* geder.). *divyam* (sc. *vaikṛtam*)
+[VARĀH. BṚH. S. 46,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,5) [48,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,84) *brāhmaṇastvanadhīyānastṛṇāgniriva śāmyati*
+[M. 3,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,168) *tejaḥ*
+[9,321.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,321) *tejāṃsi ca tamāṃsi ca*
+[MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) *agnimārutau*
+[HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (med.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* mit der neueren Ausg. zu lesen). *davāgniḥ*
+[RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ*
+[Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422) (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ*
+[KATHĀS. 16,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,15) *dehadāhaḥ*
+[GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41)
+[BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
+- **EN:** [VOP. 24,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,6) partic. *śānta* s. bes. to become quiet, calm, satisfied; to cease, subside, be extinguished: *bhūtānyaśāmyan* [VS. 14,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,31) *imau lokāvaśāmyatām* [TS. 2,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,2) *no nvevātrāśamat* it has not yet come to rest [ŚAT. BR. 1,7,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,7) *śāmya mā śucaḥ* [MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ* [KUMĀRAS. 2,40.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,40) *samatsaro 'pi śaśāma tena kṣitipālalokaḥ* [RAGH. 7,3.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,3) [Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026) [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* calmed, pacified [MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651) [R. 4,44,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,45) *śāmyate* [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) *nahi te jātu śāmyerannṛte rājyena* [4678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4678) *yadā śāmyanti vipruṣaḥ* [ŚAT. BR. 14,2,2,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,28) [ṢAḌV. BR. 5,10.] [ŚĀṄKH. GṚHY. 6,6.] [KAUŚ. 85. 116.] *śūlam* [SUŚR. 2,347,1.] *ākranditadhvāna* [RĀJA-TAR. 3,17.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,17) *na jātu kāmaḥ kāmānāmupabhogena śāmyati* [Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241) [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ* [KATHĀS. 56,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,96) *vairam*
+
+[MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) (med.). *pittaṃ śarkarayā* [Spr. 3243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3243) *vṛddhaṃ rajaḥ* [BHAṬṬ. 17,63.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,63) *śāmyannimeṣa* [11,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,31) *astram* [MĀRK. P. 63,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?63,35) *himena himaṃ śāmyedduṣkṛteneva duṣkṛtam* [RĀJA-TAR. 5,400.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,400) *śemuśca pāpāni narendrasūnoḥ* [HARIV. 8404.](https://sanskrit-lexicon-scans.github.io/hariv?8404) *aśeṣāṇi ghorāṇi* [MĀRK. P. 58,72.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,72) [PAÑCAR. 4,3,1](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,1) (*sāmyet* geder.). *divyam* (sc. *vaikṛtam*) [VARĀH. BṚH. S. 46,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,5) [48,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,84) *brāhmaṇastvanadhīyānastṛṇāgniriva śāmyati* [M. 3,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,168) *tejaḥ* [9,321.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,321) *tejāṃsi ca tamāṃsi ca* [MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) *agnimārutau* [HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (med.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* to be read with the more recent Ausg.). *davāgniḥ* [RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ* [Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422) (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ* [KATHĀS. 16,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,15) *dehadāhaḥ* [GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41) [BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
 
 **main)** 2. *śam*¦, *śāmyati*
 [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*).

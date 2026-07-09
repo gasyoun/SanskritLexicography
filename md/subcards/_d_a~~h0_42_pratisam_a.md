@@ -13,7 +13,7 @@
 - **EN:** — *pratisamā*
  1) to lay on (the arrow), to nock: (*tena*) *avidūre mṛgāndṛṣṭvā vāṇaḥ pratisamāhitaḥ*
 [MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Etwas wieder an seinen Platz stellen, in Ordnung bringen, wiederherstellen: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
 [DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
@@ -25,4 +25,4 @@
 - **EN:** — 2) to put something back in its place, to set in order, to restore: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
 [DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
 [182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

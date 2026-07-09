@@ -10,4 +10,4 @@
 [VOP. 23,55](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,55); vgl. [P. 1,3,15](https://ashtadhyayi.com/sutraani/1/3/15), Vārtt. 2.
 - **EN:** — *vyati* med. (*vyatihāre*)
 [VOP. 23,55](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,55); vgl. [P. 1,3,15](https://ashtadhyayi.com/sutraani/1/3/15), Vārtt. 2.
-  <sub>DCS 1857 · attested</sub>
+  <sub>attested</sub>

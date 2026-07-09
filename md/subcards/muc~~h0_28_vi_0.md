@@ -243,7 +243,7 @@
 [HARIV. 7210](https://sanskrit-lexicon-scans.github.io/hariv?7210) = [7294.](https://sanskrit-lexicon-scans.github.io/hariv?7294) *ātmānaṃ gaṅgādevyāṃ vimuñcati* бросается
 [UTTARARĀMAC. 121,3.]
 - **EN:** — *vi* to unfasten, untie, free; med. to unfasten something for oneself or on one's own account, z. B. to unharness one's own (horses): *vi mumoktu pāśān*
-  <sub>DCS 1119 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ṚV. 1,24,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.13) *aśvān*
 [104,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.104.html#rv01.104.01) *muca*

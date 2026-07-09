@@ -32,9 +32,9 @@
 [8,20,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,13) презирать w.: *vrīhīn*
 [Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635) ускользать от w.: *duḥkham*
 [SARVADARŚANAS. 103,16.] [WILSON, SĀṂKHYAK. S. 10.] *duḥkhaṃ jihāsitam* 8.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>
 
 **desid-tail)** — Vgl. *jihāsā* fg.
 
 - **RU:** — Vgl. *jihāsā* fg.
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

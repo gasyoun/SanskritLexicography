@@ -19,7 +19,7 @@
 [R. 1,2,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,29) *(bhrātre) rājyaṃ saṃdiśya*
 [BHAṬṬ. 6,141.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,141) to assign, hence v. a. to designate for someone, to promise to give: *saṃdiṣṭasyāpradātā*
 [YĀJÑ. 2,232.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,232)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erklären, einen Ausspruch thun, eine Anweisung —, einen Auftrag geben: *dūtairmadhurasaṃbhāṣairnaitaditi saṃdiśan*
 [MBH. 5,7435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7435) [7050.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7050)
@@ -87,10 +87,10 @@
 [R. 2,52,59.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,59) to dispatch someone with a message to someone (dat.): *viśvātmane gaurī saṃdideśa mithaḥ sakhīm*
 [KUMĀRAS. 6,1.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,1) — caus. to call upon someone to give an explanation, to declare oneself on something: *saṃdeśita*
 [MBH. 14,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.458)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *saṃdeśa, saṃdeṣṭavya* .
 
 - **RU:** — Vgl. *saṃdeśa, saṃdeṣṭavya* .
 - **EN:** — Vgl. *saṃdeśa, saṃdeṣṭavya* .
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

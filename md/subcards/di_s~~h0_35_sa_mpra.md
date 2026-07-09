@@ -13,7 +13,7 @@
 - **EN:** — *saṃpra*
  1) to point toward, refer to
 [MBH. 5,7208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anzeigen, bezeichnen, angeben: *daivajñasaṃpradiṣṭe kāle*
 [VARĀH. BṚH. S. 59,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,15) mit Bestimmtheit angeben, nachweisen: *yasmindeśe snigdhaniśchidrapattrāḥ saṃdṛśyante vṛkṣagulmalatāśca tasminvṛṣṭiḥ śobhanā saṃpradiṣṭā*
@@ -28,7 +28,7 @@
 [VARĀH. BṚH. S. 59,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,15) to state with certainty, demonstrate: *yasmindeśe snigdhaniśchidrapattrāḥ saṃdṛśyante vṛkṣagulmalatāśca tasminvṛṣṭiḥ śobhanā saṃpradiṣṭā*
 [28,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?28,14) to designate as, pass. to be known as: *navākṣarā bṛhatī saṃpradiṣṭā*
 [MBH. 3,10666.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10666)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd anweisen, unterweisen
 [BHĀG. P. 2,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,37)
@@ -37,4 +37,4 @@
 [BHĀG. P. 2,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,37)
 - **EN:** — 3) to instruct, teach someone
 [BHĀG. P. 2,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,37)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

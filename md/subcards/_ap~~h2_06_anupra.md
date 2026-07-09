@@ -10,4 +10,4 @@
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
 - **EN:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* probably "all liquids are ultimately water"
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

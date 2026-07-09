@@ -19,7 +19,7 @@
 [ṚV. 1,57,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.057.html#rv01.057.05) *anu devā mamire vīryaṃ te*
 [163,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.08) *devāścitte asuryāya pūrve 'nu kṣatrāya mamire sahāṃsi* "their strength does not equal your sovereign power"
 [7,21,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.021.html#rv07.021.07)
-  <sub>DCS 145 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich über Etwas oder Jmd eine Vorstellung bilden; aus Etwas (abl. instr.) schliessen auf, erschliessen, folgern: *yathā kālo 'numīyate . bhūtabhavyabhavacchabdaḥ*
 [BHĀG. P. 2,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,12) *evaṃ kālo 'pyanumitaḥ saukṣmye sthaulye ca*
@@ -152,4 +152,4 @@ Schol. к [KAP. 1,137.] *anumita* выведенный, заключённый
 — Vgl. *anumā, anumāna, anumiti, anumeya* (также
 [KUMĀRAS. 1,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,37)
 [BHĀṢĀP. 49]).
-  <sub>DCS 145 · attested</sub>
+  <sub>attested</sub>

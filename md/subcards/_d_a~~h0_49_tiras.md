@@ -7,4 +7,4 @@
 
 - **RU:** — *tiras* s. u. d. W.
 - **EN:** — *tiras* s. u. d. W.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

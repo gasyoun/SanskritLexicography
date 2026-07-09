@@ -25,4 +25,4 @@
 [4,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,2,1) *iṣṭakāḥ*
 [ŚAT. BR. 6,2,2,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,28) [29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,29) [8,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,2,3,2) [7,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,7,2,5) med.: *citim*
 [2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,2,3,3)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>

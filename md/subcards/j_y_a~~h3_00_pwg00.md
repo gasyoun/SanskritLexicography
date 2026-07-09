@@ -19,4 +19,4 @@ heisst so v. a. werden nicht verehrt
 
 "means", i.e. so much as "are not revered"
 [Spr. (II) 2948.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2948)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

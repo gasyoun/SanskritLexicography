@@ -43,7 +43,7 @@
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) [9,16.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,16) *mātum, mitvā*
 [SIDDH. K. 212,b,5.] *˚māya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69) pass. *mīyate, amāyi, mita* (s. bes.).
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) messen, abmessen, ausmessen
 [DHĀTUP.] *yasya priye mamaturyajñiyasya na rodasī mahimānaṃ mamāte*
@@ -115,7 +115,7 @@
 [ṚV. 1,146,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.146.html#rv01.146.03) [6,62,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.02) *yojanāni*
 [10,78,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.078.html#rv10.078.07) [VS. 9,13.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,13) *yāvanmimīte bhuvanāni śaṃbhuḥ* Inschr. in
 [Journ. of the Am. Or. S. 6,508, Śl. 31.]
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abmessen gegen, vergleichen mit (instr.): *yathā tadīyairnayanaiḥ — amimīta locane*
 [KUMĀRAS. 5,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,15)
@@ -124,7 +124,7 @@
 [KUMĀRAS. 5,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,15)
 - **EN:** — 2) "to measure against, to compare with" (instr.): *yathā tadīyairnayanaiḥ — amimīta locane*
 [KUMĀRAS. 5,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,15)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) dem Maasse entsprechen, Raum finden in, hineingehen in (loc.): *māti mātumaśakyo 'pi yaśorāśiryadatra (bhuvanatritayodare) te*
 [Spr. 3671.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3671) *na mamau tatra (kamaṇḍalau, kūpe)*
@@ -148,7 +148,7 @@
 [ŚIŚ. 1,23.] "to be large enough for": *gṛhṇīta yadyadupabandhamamuṣya mātā śulvaṃ sutasya na tu tattadamuṣya māti*
 [BHĀG. P. 2,7,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,30) *paśyanmamocitāṃ bhāryāṃ na māti sma mudā kvacit* so v. a. "he did not know where to turn for joy"
 [KATHĀS. 22,131.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,131) Vgl. u. *sam* 3.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) zumessen, zutheilen, gewähren: *yo me sahasramamimīta savān*
 [ṚV. 1,126,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.126.html#rv01.126.01) *rayim*
@@ -163,7 +163,7 @@
 [ṚV. 1,126,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.126.html#rv01.126.01) *rayim*
 [4,44,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.044.html#rv04.044.06) *svasti*
 [5,51,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.051.html#rv05.051.11)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) zurichten, zubereiten; bilden, verfertigen; bauen, machen: *ahā mimāno aktubhiḥ*
 [ṚV. 1,50,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.050.html#rv01.050.07) [159,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.159.html#rv01.159.04) *akṣareṇa mimate sapta vāṇīḥ*
@@ -199,7 +199,7 @@
 [10,5,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.005.html#rv10.005.03) [VS. 20,42.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,42) [29,7.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,7) act.: *mimīhi ślokamāsye*
 [ṚV. 1,38,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.14) *rāye ca no mimītaṃ vājavatyai* "help us to attain"
 [120,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.09)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) entfalten, zeigen: *ojo mimānaḥ*
 [ṚV. 2,17,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.02) [5,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.031.html#rv05.031.07) [7,82,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.082.html#rv07.082.06) [10,84,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.084.html#rv10.084.02) *śriyaḥ*
@@ -214,7 +214,7 @@
 [ṚV. 2,17,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.02) [5,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.031.html#rv05.031.07) [7,82,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.082.html#rv07.082.06) [10,84,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.084.html#rv10.084.02) *śriyaḥ*
 [3,1,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.05) "to show to someone": *tasminmimāthāmabhibhūtyojaḥ*
 [4,41,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.04)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) sich entfalten, sich bilden: *mātariśvā yadamimīta mātari*
 [ṚV. 3,29,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.11)
@@ -223,7 +223,7 @@
 [ṚV. 3,29,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.11)
 - **EN:** — 7) "to unfold (itself), to take shape": *mātariśvā yadamimīta mātari*
 [ṚV. 3,29,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.11)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) folgern, schliessen: *pūrvabhāvo hi hetutvaṃ mīyate yena kenacit*
 [KUSUM. 18,22. 23,16.]
@@ -232,7 +232,7 @@
 [KUSUM. 18,22. 23,16.]
 - **EN:** — 8) "to infer, to conclude": *pūrvabhāvo hi hetutvaṃ mīyate yena kenacit*
 [KUSUM. 18,22. 23,16.]
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) *mimīhi = yācñākarman*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)
@@ -241,10 +241,10 @@
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)
 - **EN:** — 9) *mimīhi = yācñākarman*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **xref)** — Vgl. 1. *maya, mātar, mātra*.* māna, mita, miti, meya* und 1. *mi* .
 
 - **RU:** — Vgl. 1. *maya, mātar, mātra*.* māna, mita, miti, meya* и 1. *mi*.
 - **EN:** — Vgl. 1. *maya, mātar, mātra*.* māna, mita, miti, meya* and 1. *mi* .
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>

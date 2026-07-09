@@ -25,7 +25,7 @@
 [R. 3,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,6) *hṛtāṃ kṛṣṇāmavājayat*
 [MBH. 4,1537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1537)
 [R. 5,71,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,71,13) [6,9,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,30)
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abhalten, abwenden: *gṛhasthaścāvajeṣyāmi mṛtyum*
 [MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124)
@@ -34,7 +34,7 @@
 [MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124)
 - **EN:** — 2) to keep off, avert: *gṛhasthaścāvajeṣyāmi mṛtyum*
 [MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124)
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) besiegen: *avajitya suśarmāṇam*
 [MBH. 4,1118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1118) [6,3757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3757) — desid. abgewinnen —, wiedergewinnen wollen: *rāṣṭramavajigīṣan*
@@ -45,7 +45,7 @@
 [ŚĀṄKH. ŚR. 14,50,8.]
 - **EN:** — 3) to defeat: *avajitya suśarmāṇam*
 [MBH. 4,1118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1118) [6,3757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3757)
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** — desid. abgewinnen —, wiedergewinnen wollen: *rāṣṭramavajigīṣan*
 [ŚĀṄKH. ŚR. 14,50,8.]
@@ -57,4 +57,4 @@
 **addenda)** — Vgl. *avajaya* .
 
 - **RU:** — Vgl. *avajaya* .
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>

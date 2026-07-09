@@ -1,6 +1,6 @@
 # vas
 
-_PWG article — 66 sub-card(s), 464 sense(s) · RU 258/464 · EN 418/464_
+_PWG article — 66 sub-card(s), 495 sense(s) · RU 415/495 · EN 418/495_
 
 ## vas
 
@@ -15,7 +15,7 @@ _PWG article — 66 sub-card(s), 464 sense(s) · RU 258/464 · EN 418/464_
 [VS. PRĀT. 2,5.]
 [P. 8,1,21.](https://ashtadhyayi.com/sutraani/8/1/21) [24. fgg.](https://ashtadhyayi.com/sutraani/8/1/24) ?acc. [ṚV. 7,36,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.09) [37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.01) dat. [1,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.014.html#rv01.014.04) [20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.05) [7,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.042.html#rv07.042.03) gen. [1,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.05) [39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.04) [7,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.047.html#rv07.047.02)
 - **EN:** *vas* — enclitic acc., dat. and gen. pl. of the pronoun of the 2nd person [VS. PRĀT. 2,5.] [P. 8,1,21.](https://ashtadhyayi.com/sutraani/8/1/21) [24. fgg.](https://ashtadhyayi.com/sutraani/8/1/24) ?acc. [ṚV. 7,36,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.09) [37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.01) dat. [1,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.014.html#rv01.014.04) [20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.05) [7,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.042.html#rv07.042.03) gen. [1,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.05) [39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.04) [7,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.047.html#rv07.047.02)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -62,7 +62,7 @@ _PWG article — 66 sub-card(s), 464 sense(s) · RU 258/464 · EN 418/464_
 [TRIK. 3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) = *vyuṣita*
 [H. an. 3,253.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,253)
 [MED. t. 96.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,96)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** — Vgl. 1. *uṣa, uṣas*,
 2. und 3. *uṣā*, 2. *usra* .
@@ -93,7 +93,7 @@ _PWG article — 66 sub-card(s), 464 sense(s) · RU 258/464 · EN 418/464_
 [ṚV. 1,48,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.08) *uṣā ucchadapa sridhaḥ*
 [7,81,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.06) [104,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.23) [AV. 2,8,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.008.html#av02.008.02) *candramā vo 'pocchatu*
 [6,83,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.083.html#av06.083.01) [14,2,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.48) [16,6,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.006.html#av16.006.02)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.2)** — 2) erlöschen: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
@@ -165,7 +165,7 @@ it would not have become day
 [TS. 6,4,8,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,8,3)
 [TBR. 1,4,4,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,4,5)
 [PAÑCAV. BR. 8,1,13. 18,9,8. 11,11.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.4)** — *abhivi* hell werden über d. h. zur Zeit von (acc.): *yadi paryāyānabhivyucchet* über den p. d. h. ehe diese beendet sind
 [ĀŚV. ŚR. 6,6,1.]
@@ -180,7 +180,7 @@ it would not have become day
 [ĀŚV. ŚR. 6,6,1.]
 [PAÑCAV. BR. 9,3,3.] med. (*˚ccheta* perhaps only a copying error for *˚cchet*)
 [ŚĀṄKH. ŚR. 13,10,4.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **compound.5)** — *parivi* aufleuchten von — her so v. a. nach: *vyucchantī pari svasuḥ*
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
@@ -189,50 +189,50 @@ it would not have become day
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
 - **EN:** — *parivi* to light up from — onward, so v. a. towards: *vyucchantī pari svasuḥ*
 [ṚV. 4,52,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.052.html#rv04.052.01)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T139 — 1) (caus./desid. forms, sub-senses 1–3))** — Vgl. 1. *uṣa, uṣas*,
 2. und 3. *uṣā*, 2. *usra* .
 
 - **RU:** — Vgl. 1. *uṣa, uṣas*,
 2. и 3. *uṣā*, 2. *usra* .
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T140 — caus. aufleuchten machen)** — caus. aufleuchten machen: *pra cakṣaya rodasī vāsayoṣasaḥ*
 [ṚV. 1,134,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.03) [6,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.017.html#rv06.017.05) [32,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.02) [7,91,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.091.html#rv07.091.01)
 
 - **RU:** — caus. заставлять воссиять: *pra cakṣaya rodasī vāsayoṣasaḥ*
 [ṚV. 1,134,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.03) [6,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.017.html#rv06.017.05) [32,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.02) [7,91,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.091.html#rv07.091.01)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T141 — bei Tagesanbruch)** — *adhi*, *adhyuṣite* bei Tagesanbruch
 [MBH. 8,1673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1673)
 
 - **RU:** — *adhi*, *adhyuṣite* на рассвете, при наступлении дня
 [MBH. 8,1673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1673)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T142)** — *apa*
 
 - **RU:** — *apa*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T144 — 2) erlöschen)** — 2) erlöschen: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
 
 - **RU:** — 2) угасать, гаснуть: *apavāsa uṣasāmapa kṣetriyamucchatu*
 [AV. 3,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.007.html#av03.007.07)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T145)** — Vgl. *apavāsa* .
 
 - **RU:** — Vgl. *apavāsa* .
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T146)** — *vi*
 
 - **RU:** — *vi*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **T147 — 1) aufleuchten, in oder an das Licht treten)** 1) aufleuchten, in oder an das Licht treten
 [ṚV. 1,113,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.07) *yā vyūṣuryāśca nūnaṃ vyucchān*
@@ -273,7 +273,7 @@ es wäre nicht Tag geworden
 [TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103) = *kalya*
 [3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) [MED. ṭ. 28](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,28); vgl. *avyuṣṭa*.* vyuṣite*
 [ŚĀṄKH. ŚR. 2,7,3.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -507,7 +507,7 @@ es wäre nicht Tag geworden
 [M. 4,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,116) [11,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,122)
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -547,7 +547,7 @@ lassen
 [6,35,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.035.html#rv06.035.01) *taṃ gīrbhirvāsayāmasi*
 [9,35,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.035.html#rv09.035.05) [43,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.043.html#rv09.043.01) *vāsita = vastracchanna*
 [H. an. 3,295. fg.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,295)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## adhivas
 
@@ -566,12 +566,12 @@ lassen
 
 - **RU:** — *adhi* надевать: *utādhi vaste subhagā madhuvṛdham*
 [ṚV. 10,75,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.08)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **T8 — 2.)** — Vgl. 2. *adhivāsa* und *adhīvāsa* .
 
 - **RU:** — Vgl. 2. *adhivāsa* и *adhīvāsa* .
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -597,7 +597,7 @@ lassen
 [11,4,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.10) [13,3,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.003.html#av13.003.11) to clothe oneself
 [ŚĀṄKH. BR. 25,15.]
 [PĀR. GṚHY. 3,4.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -629,7 +629,7 @@ lassen
 [TBR. 3,2,8,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,7)
 [ŚAT. BR. 1,2,2,16. fg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,2,2,16)
 [KĀTY. ŚR. 2,5,25.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,5,25)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## upavas
 
@@ -640,7 +640,7 @@ lassen
 
 - **RU:** — *upa* s. *upavāsana* .
 - **EN:** — *upa* s. *upavāsana*.
-  <sub>DCS 373 · attested</sub>
+  <sub>attested</sub>
 
 ## nivas
 
@@ -687,7 +687,7 @@ lassen
 [5,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,22) *nānākarma˚* so v. a. occupied with
 [MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) Vgl. *nivāsa* (*ācchādane*)
 [DHĀTUP. 35,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) and 2. *nivāsana*.
-  <sub>DCS 396 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -698,7 +698,7 @@ lassen
 
 - **RU:** — *pratini* s. *pratinivāsana* .
 - **EN:** — *pratini* s. *pratinivāsana*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -712,7 +712,7 @@ lassen
 [MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745)
 - **EN:** — *saṃni* to don, to put on: *prāvārān*
 [MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -729,7 +729,7 @@ lassen
 - **EN:** — *pari*
  1) to put on (clothing)
 [ṚV. 3,1,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.05)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) umgeben, um Etwas her sein: *ahorātre pari sūryaṃ vasāne*
 [AV. 13,2,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.22)
@@ -738,7 +738,7 @@ lassen
 [AV. 13,2,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.22)
 - **EN:** — 2) to surround, to be around something: *ahorātre pari sūryaṃ vasāne*
 [AV. 13,2,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.22)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -752,7 +752,7 @@ lassen
 [R. 2,100,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,30)
 - **EN:** — *pra* to put on, wrap around (clothing): *mṛgājine pravaste*
 [R. 2,100,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,30)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## prativas
 
@@ -762,9 +762,14 @@ lassen
 **1)** — *prati* dass.: *sa īṃ rebho na prati vasta usrāḥ*
 [ṚV. 6,3,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.03) — caus. sich hüllen in (instr.): *ajinaiḥ prativāsitaḥ*
 [MBH. 2,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2469) [2502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2502) [3,11362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11362) [5,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.930) [2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2147) [9,1792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1792)
+
+- **RU:** — *prati* dass.: *sa īṃ rebho na prati vasta usrāḥ*
+[ṚV. 6,3,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.03) — caus. облекаться, одеваться в (instr.): *ajinaiḥ prativāsitaḥ*
+[MBH. 2,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2469) [2502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2502) [3,11362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11362) [5,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.930) [2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2147) [9,1792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1792)
 - **EN:** — *prati* dass.: *sa īṃ rebho na prati vasta usrāḥ*
 [ṚV. 6,3,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.03) — caus. to wrap oneself in (instr.): *ajinaiḥ prativāsitaḥ*
 [MBH. 2,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2469) [2502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2502) [3,11362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11362) [5,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.930) [2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2147) [9,1792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1792)
+  <sub>attested</sub>
 
 ## vas
 
@@ -784,7 +789,7 @@ lassen
  1) to exchange clothes: *vāsasī iva vivasānau ye carāvaḥ*
 [TS. 1,5,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,10,1)
 [ĀŚV. ŚR. 2,5,10.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anziehen, umlegen: *manorame na vyavasiṣṭa vastre*
 [BHAṬṬ. 3,20.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,20) — caus. anziehen, umlegen: *vivāsyantāṃ rurucarmāṇi*
@@ -798,14 +803,14 @@ lassen
 
 - **RU:** — 2) надевать, набрасывать: *manorame na vyavasiṣṭa vastre*
 [BHAṬṬ. 3,20.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,20)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **vi 2) (2nd instance))** caus. anziehen, umlegen: *vivāsyantāṃ rurucarmāṇi*
 [MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520)
 
 - **RU:** caus. надевать, набрасывать: *vivāsyantāṃ rurucarmāṇi*
 [MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -822,7 +827,7 @@ lassen
 
 - **RU:** — *sam* облачаться в: *samabhreṇa vasata parvatāsaḥ*
 [ṚV. 5,85,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.085.html#rv05.085.04)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -839,7 +844,7 @@ lassen
 
 - **RU:** — *abhisam* накидывать на себя: *samānaṃ tantumabhisaṃvasānau*
 [AV. 12,3,52.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.52)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -853,7 +858,7 @@ lassen
 [RAGH. 11,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,16)
 - **EN:** 4. *vas*¦ (= 3. *vas*) _adj._, at the end of a comp., clothed in: *pretacīvara˚*
 [RAGH. 11,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,16)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -921,7 +926,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 7,2,52.](https://ashtadhyayi.com/sutraani/7/2/52) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) for metrical reasons in the classical language often also med.; in the older language, of the simpl. med., only partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) dwelling or having dwelt
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); and at this point too other explanations are possible. Medial forms in the older language s. u. *sam*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) an einem Orte bleiben, Halt machen, übernachten; verweilen, sich aufhalten, wohnen; stehen bleiben bei Etwas: *kuhābhipitvaṃ karataḥ kuhoṣatuḥ* wo übernachtet ihr?
 [ṚV. 10,40,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.02) *vasannaraṇyānyām*
@@ -1287,14 +1292,14 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [KATHĀS. 24,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,85) [18,376.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,376) *divasenaiva tatkuryādyena rātrau sukhaṃ vaset . aṣṭamāsena tatkuryādyena varṣāḥ sukhaṃ vaset ..* удобно устроиться, жить в довольстве
 [Spr. 4182.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4182) *yena vṛddhaḥ sukhaṃ vaset, yenāmutra sukhaṃ vaset*
 [4570.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4570) [4863.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4863) [M. 6,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,95) *aṭamāna uvāsa kṛcchram*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [cohabitation subsense])** [BHĀG. P. 9,10,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,9) *nāhaṃ kamaṇḍalāvasminkṛcchraṃ vastumihotsahe* spricht ein herangewachsener Fisch
 [8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) beiwohnen, geschlechtlichen Umgang haben mit (loc.): *viyoniṣu ca vatsyanti* (*cariṣyanti* die neuere Ausg.) *pramadāsu narāstathā*
 
 - **RU:** [BHĀG. P. 9,10,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,9) *nāhaṃ kamaṇḍalāvasminkṛcchraṃ vastumihotsahe* говорит выросшая рыба
 [8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) сожительствовать, иметь плотское общение с (loc.): *viyoniṣu ca vatsyanti* (*cariṣyanti* более новое Ausg.) *pramadāsu narāstathā*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [animal subsense])** [HARIV. 11167.](https://sanskrit-lexicon-scans.github.io/hariv?11167) seinen Standort haben, von Thieren: *yatrodakaṃ tatra vasanti haṃsāḥ*
 [Spr. 4776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4776) *mūle vasati cetphaṇī*
@@ -1305,7 +1310,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [Spr. 4776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4776) *mūle vasati cetphaṇī*
 [2210.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2210) [3198.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3198) [GĪT. 1,47.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,47) [KATHĀS. 33,44.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,44) *catvāraḥ prāṇinastatra vasanti sma mahātarau*
 [107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,107) [HIT. 14,18](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,18), v. l. *hastino labdhanāmānasturaṃgāstu manojavāḥ . gṛhopakaṇṭhe nṛpatervaseyuḥ svāptarakṣitāḥ ..*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [negation subsense])** [KĀM. NĪTIS. 16,8.] bleiben so v. a. nicht fortgehen
 [Spr. 3673.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3673) *avaśyaṃ yātāraścirataramuṣitvāpi viṣayāḥ*
@@ -1318,7 +1323,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?243) *dṛṣṭvā ca dūrato vyāghramuvāsa sa sarastaṭe*
 [PAÑCAR. 1,3,69.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,3,69) *dūratas* держаться в стороне
 [Spr. 2257](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2257), v. l. *nāvasattatra* (*nāramattatra* [ed. Bomb.]) *tatrāsya dṛṣṭiḥ*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [location subsense])** [MBH. 13,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1480) sich irgendwo befinden, — sein: *sa mṛtyorvasate 'ntike*
 [MBH. 12,3515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3515) *pārśvatas*
@@ -1357,7 +1362,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HIT. ed. JOHNS. 2700]
 (*sevayā* ed. SCHL. [127,11](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,11)). держаться (кого-л.) (loc.) *kuśāsane*
 [Verz. d. Oxf. H. 20,a, No. 65. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?20)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -1383,7 +1388,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [ŚAT. BR. 9,2,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,2,3) *channā vasati*
 [KĀTY. ŚR. 5,4,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,1) *vasatu nu na idam*
 [TS. 6,4,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,2,1)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) in einer Lage u. s. w. sich dauernd befinden, sich widmen, obliegen: *nābrāhmaṇe gurau śiṣyo vāsamātyantikaṃ vaset*
 [M. 2,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,242) *hṛṣṭo vāsamuvāsa ha*
@@ -1447,7 +1452,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) *vīrāsanam*
 [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *idaṃ vatsyāmaḥ* (z. B. *gārhasthyam* Comm.)
 [ĀŚV. GṚHY. 3,10,2.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b) an einem Orte verbleiben: *nadīrvaneṣu coṣitvā*
 [VOP. 5,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,3) *vasa tāṃ purīm*
@@ -1459,7 +1464,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** — b) to remain in a place: *nadīrvaneṣu coṣitvā*
 [VOP. 5,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,3) *vasa tāṃ purīm*
 [R. GORR. 2,114,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,24)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) in der Stelle: *brāhmeṇa viprānvasati yuddhenaiva ca kṣatriyān . pradānakarmaṇā vaiśyān śūdrānparicareṇa ca ..*
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) ergänzt [NĪLAK.] zum acc. *adhiṣṭhāyaḥ* dem Zusammenhange nach muss *vas* hier so v. a. sich beschäftigen lassen (bekleiden?) bedeuten.
@@ -1468,7 +1473,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) дополняет [NĪLAK.] к acc. *adhiṣṭhāyaḥ*; по смыслу контекста *vas* здесь должно означать дать себя занять (облачить?).
 - **EN:** — c) in the passage: *brāhmeṇa viprānvasati yuddhenaiva ca kṣatriyān . pradānakarmaṇā vaiśyān śūdrānparicareṇa ca ..*
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) supplies [NĪLAK.] to acc. *adhiṣṭhāyaḥ* according to the context *vas* here must mean v. a. to let oneself be occupied (clothed?).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) mit pass. Bed.: *dinamekaṃ manye tvayā sārdhamihoṣitam* zugebracht, verlebt
 [BRAHMA-P. in LA. (III) 56,13.] impers.: *yatroṣitaṃ tvayā* wo du geweilt hast
@@ -1487,7 +1492,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 1,3268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3268) *kārāgṛhe*
 [RAGH. 6,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,40)
 [Spr. 2445.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2445) [2928.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2928)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-intro)** — b) mit act. Bed. = *sthitavant*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
@@ -1496,7 +1501,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
 - **EN:** — b) with act. Bed. = *sthitavant*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-alpha)** α) Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend: *velātaṭeṣūṣitasainikāśvaḥ*
 [RAGH. 18,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,22) *trirātramuṣitaḥ* drei Nächte zugebracht habend
@@ -1574,7 +1579,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) having waited a year
 [1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) *abhyantaroṣita* having one's abode
 [KĀM. NĪTIS. 17,28.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-beta)** — β) gestanden —, gelegen habend (insbes. über Nacht), von Sachen: *śvabhroṣitaṃ kusumam*
 [VARĀH. BṚH. S. 53,95.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,95) *kṣāre dinoṣite*
@@ -1601,7 +1606,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [1,181,16. 199,19.] *ciroṣitaṃ bhaktaṃ paryuṣitaṃ ca*
 [MĀRK. P. 34,57.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,57) *jaloṣita* having lain in water
 [SUŚR. 2,448,15.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-gamma)** — γ) gefastet habend (vgl. unter *upa): śuciḥ purodhāstryahoṣitaḥ snātaḥ*
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
@@ -1610,17 +1615,17 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
 - **EN:** — γ) having fasted (vgl. under *upa): śuciḥ purodhāstryahoṣitaḥ snātaḥ*
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) mit einem acc.
 
 - **RU:** 3) с acc.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *uṣita*
 
 - **RU:** 4) partic. *uṣita*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -1631,7 +1636,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 
 - **RU:** 1) *vāsayati, ˚te*;
 - **EN:** 1) *vāsayati, ˚te*;
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) über Nacht behalten, Quartier geben, beherbergen, wohnen lassen; med.
 [P. 1,3,89.](https://ashtadhyayi.com/sutraani/1/3/89) *yadenānvāsayate yadebhyo 'śanaṃ dadāti* wenn er sie beherbergt, wenn er sie speist
@@ -1706,7 +1711,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [KATHĀS. 64,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,21) *ayonau yaḥ samākrāmedbahubhirvā vāsayet* so v. a. to let many perform cohabitation
 [MATSYAP.] in [VIVĀDAC. 50,15. fgg.] to let stand overnight: *tisro vāsayitvā*
 [KAUŚ. 7.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) warten lassen, hinhalten: *vāsayasīva vedhasastvaṃ naḥ kadā na indra vacaso bubodhaḥ*
 [ṚV. 7,37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.06) aufhalten: *riporbalam*
@@ -1718,7 +1723,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** — b) to make wait, to put off: *vāsayasīva vedhasastvaṃ naḥ kadā na indra vacaso bubodhaḥ*
 [ṚV. 7,37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.06) to delay: *riporbalam*
 [KĀM. NĪTIS. 18,22.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) bevölkern: *svarāṣṭraṃ vāsayedrājā paradeśāpavāhanāt*
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
@@ -1727,7 +1732,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
 - **EN:** — c) to populate: *svarāṣṭraṃ vāsayedrājā paradeśāpavāhanāt*
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) bestehen lassen, erhalten: *te yadidaṃ sarvaṃ vāsayante tasmādvasava iti*
 [ŚAT. BR. 11,6,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,3,6) [14,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,20) act. in derselben Verbindung
@@ -1742,7 +1747,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [ŚAT. BR. 11,6,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,3,6) [14,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,20) act. in the same connection
 [BṚH. ĀR. UP. 3,9,3], v. l. in [ŚAṂK.] (vgl. however [BURNOUF], [AŚNA S. 344)] and [CHĀND. UP. 3,16,1.] *yaḥ sarvāllokānudgṛhṇāti visṛjati vāsayati*
 [ATHARVAŚ. UP.] in [MUIR, ST. IV,299,18. 27.] [NṚS. TĀP. UP.] in [Ind. St. 9,93.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) stellen, setzen, an einen Ort thun: *mūrdhni tvāṃ vāsayeyaṃ vai*
 [MBH. 4,265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.265) *svamevāṃśamavāsayat* (sc. *tasya śarīre*)
@@ -1760,7 +1765,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HARIV. 1428.](https://sanskrit-lexicon-scans.github.io/hariv?1428) *jaghane mama — maṇirasanāvasanābharaṇāni — vāsaya*
 [GĪT. 12,24.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,24) *anadhyāyaṃ mukhe vāsayate* so v. a. observes silence, is silent
 [NAIṢ. 9,61.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1f)** — f) entstehen lassen, hervorrufen: *prakṛtiḥ* (wird so genannt) *prakṛṣṭakaraṇādvāsanā vāsayedyataḥ*
 [SARVADARŚANAS. 66,11.]
@@ -1769,7 +1774,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [SARVADARŚANAS. 66,11.]
 - **EN:** — f) to bring into being, to call forth: *prakṛtiḥ* (is so called) *prakṛṣṭakaraṇādvāsanā vāsayedyataḥ*
 [SARVADARŚANAS. 66,11.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *vasayati* wohnen (*nivāse*)
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
@@ -1778,12 +1783,12 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
 - **EN:** — 2) *vasayati* to dwell (*nivāse*)
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **caus.)** — caus.
 
 - **RU:** — caus.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -1797,7 +1802,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
 - **EN:** — desid. *vivatsati*
 [P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## adhivas
 
@@ -1856,7 +1861,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [11,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,61) *sahāsanaṃ gotrabhidādhyavātsīt* took, together with Indra, the same seat
 [BHAṬṬ. 1,3.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,3) *kathaṃ parṇavṛtāṃ bhūmimadhivatsyati me snuṣā* to lie on the ground
 [R. GORR. 2,62,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,13) [BHAṬṬ. 8,79.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,79) [15,69.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,69) partic. *adhyuṣita*
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) besetzt, eingenommen, innegehabt (von einem Orte), bewohnt: *bharatādhyuṣitaṃ pūrvaṃ so 'dhyatiṣṭhatpurottamam*
 [MBH. 1,3736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3736) [3,2464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2464) [12208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12208) [13,2666.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2666)
@@ -1880,7 +1885,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [VARĀH. BṚH. S. 53,98.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,98) *marutā paritāpakṛtādhyuṣite — yamunāpuline* so v. a. where a wind blows
 [PAÑCAR. 3,12,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,12,4) *anuttamenādhyuṣitaḥ* (*bāhuḥ*) *priyeṇa vīreṇa* on which the beloved lay
 [R. 5,28,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,14)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) geweilt —, zugebracht habend: *saṃvatsaraṃ cādhyuṣitā rāghavasya niveśane*
 [R. 3,53,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,3) *ciram*
@@ -1895,7 +1900,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [R. 3,53,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,3) *ciram*
 [R. SCHL. 2,30,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,8) dwelling in: *dvārakām*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) dem man obliegt: *pramadādhyuṣitāṃ vṛttim*
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
@@ -1904,7 +1909,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
 - **EN:** 3) that one attends to, that is incumbent upon one: *pramadādhyuṣitāṃ vṛttim*
 [R. 3,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,7)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *amlādhyuṣita* _n._ (sc. *netra*) eine durch Genuss saurer Speise erzeugte Augenentzündung
 [WISE 293.]
@@ -1916,13 +1921,13 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 4) *amlādhyuṣita* _n._ (sc. *netra*) an inflammation of the eye produced by eating sour food
 [WISE 293.]
 [SUŚR. 2,305,8. 315,1.]
-  <sub>DCS 80 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **intro)** — Vgl. 1. *adhivāsa, samayādhyuṣita* . — caus.
 
 - **RU:** — Vgl. 1. *adhivāsa, samayādhyuṣita* . — caus.
 - **EN:** — Vgl. 1. *adhivāsa, samayādhyuṣita*. — caus.
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) über Nacht liegen lassen: *adhivāsyāparedyuḥ pāṭayitvā*
 [SUŚR. 1,32,9.] *adhivāsita*
@@ -1934,7 +1939,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 1) to let lie overnight: *adhivāsyāparedyuḥ pāṭayitvā*
 [SUŚR. 1,32,9.] *adhivāsita*
 [VARĀH. BṚH. S. 26,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?26,1)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) einweihen (ein neues Götterbild): *suptāṃ* (*pratimāṃ*) *sunṛtyagītairjāgarakaiḥ samyagevamadhivāsya . daivajñasaṃpradiṣṭe kāle saṃsthāpanaṃ kuryāt*
 
@@ -1946,7 +1951,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 2) to consecrate (a new image of a god): *suptāṃ* (*pratimāṃ*) *sunṛtyagītairjāgarakaiḥ samyagevamadhivāsya . daivajñasaṃpradiṣṭe kāle saṃsthāpanaṃ kuryāt*
 
 [VARĀH. BṚH. S. 60,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?60,15)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) heimsuchen: *vaidhavyenādhivāsitā*
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
@@ -1955,7 +1960,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
 - **EN:** 3) to visit, to afflict: *vaidhavyenādhivāsitā*
 [HARIV. 5398.](https://sanskrit-lexicon-scans.github.io/hariv?5398)
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich einverstanden erklären mit Jmd (gen.), Jmd willfahren
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā* .
@@ -1964,7 +1969,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā* .
 - **EN:** 4) to declare oneself in agreement with someone (gen.), to comply with someone's wishes
 [LALIT. ed. Calc. 6,9.] [Lot. de la b. l. 351.] [BURN. Intr. 250, N. 1]; vgl. *adhivāsanā*.
-  <sub>DCS 80 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -1978,7 +1983,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 1,4,48.](https://ashtadhyayi.com/sutraani/1/4/48)
 - **EN:** — *anu* with acc.
 [P. 1,4,48.](https://ashtadhyayi.com/sutraani/1/4/48)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) Jmd nachziehen, Jmd an einen Ort folgen; mit acc. der Person
 [MBH. 5,664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.664) [12,6516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6516) [10598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10598)
@@ -1993,7 +1998,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 5,664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.664) [12,6516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6516) [10598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10598)
 [R. 2,37,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,26) [88,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,23) [25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,25) ([96,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,96,27) [GORR.]). *anūṣito guruṃ bhavān, anūṣito gururbhavatā, anūṣitaṃ* (impers.) *tvayā*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), Schol.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) an einen Ort ziehen, zum Aufenthaltsort wählen: *grāmam*
 [P. 1,4,48](https://ashtadhyayi.com/sutraani/1/4/48), Schol. *mathurāmanūṣya*
@@ -2011,7 +2016,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *śūnyaṃ vanam*
 [BHAṬṬ. 5,75.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,75) *anvavātsīttaṃ* *(aṇḍakośaṃ) īśvaraḥ*
 [BHĀG. P. 3,20,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,15)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verweilen, irgendwo zubringen (eine Zeit): *śvamāṃsabhojanāḥ sarve vāsiṣṭhā iva jātiṣu . pūrṇavarṣasahasraṃ tu pṛthivyāmanuvatsyatha ..*
 [R. 1,62,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,17) *anuvasannapi* (längere Zeit stehend, älter werdend) *na duṣyati* (*anuvāsanaḥ*)
@@ -2023,7 +2028,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 3) to stay, to spend (time) somewhere: *śvamāṃsabhojanāḥ sarve vāsiṣṭhā iva jātiṣu . pūrṇavarṣasahasraṃ tu pṛthivyāmanuvatsyatha ..*
 [R. 1,62,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,17) *anuvasannapi* (standing for a longer time, growing older) *na duṣyati* (*anuvāsanaḥ*)
 [SUŚR. 2,198,8.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *anuvatsyate*
 [MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) fehlerhaft für *anuvartsyate*, wie die [ed. Bomb.] liest.
@@ -2032,7 +2037,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) ошибочно вместо *anuvartsyate*, как читает [ed. Bomb.].
 - **EN:** 4) *anuvatsyate*
 [MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) erroneous for *anuvartsyate*, as the [ed. Bomb.] reads.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *anuvāsin* . — caus. (das Kalb bei der Mutter) belassen
 [TBR. 1,6,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,7,3)
@@ -2040,7 +2045,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **RU:** — Vgl. *anuvāsin* . — caus. (телёнка при матери) оставлять
 [TBR. 1,6,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,7,3)
 - **EN:** — Vgl. *anuvāsin*. — caus. (the calf with the mother) to leave: [TBR. 1,6,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,7,3)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -2054,7 +2059,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HARIV. 11210](https://sanskrit-lexicon-scans.github.io/hariv?11210) по чтению новейших Ausg.; *samanupatsyati* более раннее Ausg.
 - **EN:** — *samanu* to be incumbent upon, to follow, observe: *hīnāddhīnaṃ tathā dharmaṃ prajā samanuvatsyati*
 [HARIV. 11210](https://sanskrit-lexicon-scans.github.io/hariv?11210) according to the reading of the more recent Ausg.; *samanupatsyati* the older Ausg.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## antar+vas
 
@@ -2071,13 +2076,13 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** — *antar* to be stuck inside
 [ŚIŚ. 3,9.] *niścitya yaḥ prakramate nāntarvasati karmaṇaḥ* who does not get stuck in the middle of the work
 [MBH. 5,994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.994)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *antaruṣya* .
 
 - **RU:** — Vgl. *antaruṣya* .
 - **EN:** — Vgl. *antaruṣya*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## abhi+vas
 
@@ -2091,13 +2096,13 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [R. 3,17,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,17,2)
 - **EN:** — *abhi* to stay, to spend (a night): *sukhamabhyuṣito niśām*
 [R. 3,17,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,17,2)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *abhivāsa* .
 
 - **RU:** — Vgl. *abhivāsa* .
 - **EN:** — Vgl. *abhivāsa*.
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 ## ā+vas
 
@@ -2125,7 +2130,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 3,2014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2014) *gṛhe*
 [BHĀG. P. 3,32,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,1) [7,10,47](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,47) (= [15,75](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,75)). to be near or present: *dūrāccidāvasato asya karṇā*
 [ṚV. 6,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.038.html#rv06.038.02)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen (einen Ort), zum Aufenthaltsort erwählen, bewohnen; mit acc.
 [P. 1,4,48.](https://ashtadhyayi.com/sutraani/1/4/48) *svājīvyaṃ deśam*
@@ -2164,7 +2169,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [4,8,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,1) *āvasatātsa hṛnnaḥ*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *gurostalpam* to take possession of the teacher's marriage-bed, so v. a. to commit adultery with the teacher's wife
 [CHĀND. UP. 5,10,9.]
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zubringen (eine Nacht): *niśāṃ tāṃ sukhamāvasat*
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
@@ -2173,7 +2178,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
 - **EN:** 3) to spend (a night): *niśāṃ tāṃ sukhamāvasat*
 [MĀRK. P. 125,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,24)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) sich begeben in, antreten: *gṛhasthāśramam*
 [M. 3,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,2)
@@ -2191,7 +2196,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MĀRK. P. 28,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,15) *gārhasthyam*
 [MBH. 12,2472. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2472) *rājyam* to assume the government
 [R. 2,12,57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,57) [42,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,21)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) fleischlich beiwohnen: *śūdro guptamaguptaṃ vā dvaijātaṃ varṇamāvasan*
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
@@ -2200,7 +2205,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
 - **EN:** 5) to have carnal intercourse with: *śūdro guptamaguptaṃ vā dvaijātaṃ varṇamāvasan*
 [M. 8,374.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,374)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) statt *māmā vasanti*
 [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) vermuthen wir *amā vasantiḥ āvasita*
@@ -2212,7 +2217,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 6) instead of *māmā vasanti*
 [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) we conjecture *amā vasantiḥ āvasita*
 [KATHĀS. 54,124](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,124) erroneous for *āvāsita*.
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — Vgl. *āvasati, āvāsa* . — caus.
 - **EN:** — Vgl. *āvasati, āvāsa*. — caus.
@@ -2233,7 +2238,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 1) to lodge, to let stay with oneself: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
 [R. 2,12,101.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,101)
 [RĀJA-TAR. 3,161.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,161)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen, zum Aufenthaltsort erwählen: *idamevaṃvidhaṃ (nagaraṃ) kasmāddevā nāvāsayantyuta*
 [MBH. 3,12188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12188)
@@ -2257,7 +2262,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 * gurupatnyāḥ kalevaram*
 [MBH. 13,2298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2298) *premāvāsitā* in which affection has taken up its dwelling
 [Spr. 3270.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3270)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Halt machen, sich lagern (für die Nacht): *iha kvāvāsyate pānthaiḥ*
 [KATHĀS. 124,133. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,133) *(rājānaḥ) āvāsitā nātidūre ṣaṭpurasya* machten Halt
@@ -2278,7 +2283,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [R. GORR. 2,107,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,107,18)
 [KATHĀS. 47,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,2) [3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,3) [54,124](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,124) (erroneously *āvasita* gedr.).
 [123,268.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,268)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **Ātmanepada-1)** — Vgl. *āvasati, āvāsa* . — caus.
  1) beherbergen, bei sich wohnen lassen: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
@@ -2289,7 +2294,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
  1) принимать, давать у себя жить: *vināśakāmāmahitāmamitrāmāvāsayaṃ mṛtyumivātmanastvām*
 [R. 2,12,101.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,101)
 [RĀJA-TAR. 3,161.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,161)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 ## adhyā+vas
 
@@ -2317,7 +2322,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [13,2298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2298) [5320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5320) [R. 1,70,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,2) [R. GORR. 1,35,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,35,44) *tvaddhṛdayamadhyāvasantaṃ māṃ mā rautsīḥ*
 [BHAṬṬ. 8,80.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,80) to have one's abode in, to dwell in; with loc.
 [MBH. 13,5279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5279)
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich begeben in, antreten, obliegen: *gārhasthyamadhyāvasate*
 [MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339)
@@ -2326,7 +2331,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339)
 - **EN:** 2) to enter into, to take up, to attend to: *gārhasthyamadhyāvasate*
 [MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339)
-  <sub>DCS 23 · attested</sub>
+  <sub>attested</sub>
 
 ## udā+vas
 
@@ -2343,7 +2348,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** — *udā* to move out to, into: *vanavāsam*
 [MBH. 13,205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) *upāvasat* st. *udāvasat* [ed. Bomb.] — caus. to take out, to remove: *sarpaṃ tamudāvāsayat*
 [BHĀG. P. 10,16,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,16,1)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## upā+vas
 
@@ -2357,7 +2362,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [WEBER, KṚṢṆAJ. 228.]
 - **EN:** — *upā* (out of metr. considerations, instead of *upa*) to fast
 [WEBER, KṚṢṆAJ. 228.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## samā+vas
 
@@ -2379,7 +2384,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 - **EN:** 1) to halt, to encamp (for the night): *tarostale*
 [KATHĀS. 25,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,87) *sāyam*
 [28,120.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,120) [56,390.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,390) [57,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,73) [109,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,82)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) beziehen, zum Aufenthaltsort erwählen, bewohnen: *āśramam*
 [R. 2,54,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,41) *puram*
@@ -2404,7 +2409,7 @@ v. l.).
 [R. 2,54,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,41) *puram*
 [KĀM. NĪTIS. 4,57] (text and Comm. *samāvaśet)*.
 [BHĀG. P. 3,22,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,32) *brahmakulam*
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *samā*
  1) Halt machen, sich lagern (für die Nacht): *tarostale*
@@ -2420,7 +2425,7 @@ v. l.).
 (v. l. *samāvāsito) vartate*
 [HIT. 97,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?97,15) [39,5](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,5) (here the same
 v. l.).
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>
 
 ## ud+vas
 
@@ -2493,7 +2498,7 @@ v. l.).
 [ŚAT. BR. 12,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,3) to uproot, trees
 [ĀŚV. GṚHY. 2,7,5.] to bid go away: *pitṝn*
 [SAṂSK. K. 236,b,4.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verwüsten: *rakṣasodvāsitāṃ nagarīm*
 [HARIV. 6266.](https://sanskrit-lexicon-scans.github.io/hariv?6266) *sadaivatagaṇāllokānudvāsayati darpitaḥ*
@@ -2508,13 +2513,13 @@ v. l.).
 [HARIV. 6266.](https://sanskrit-lexicon-scans.github.io/hariv?6266) *sadaivatagaṇāllokānudvāsayati darpitaḥ*
 [3065.](https://sanskrit-lexicon-scans.github.io/hariv?3065) *sarvaṃ deśamudvāsya*
 [PAÑCAT. 47,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,6)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *udvāsana, udvāsya* .
 
 - **RU:** — Vgl. *udvāsana, udvāsya* .
 - **EN:** — Vgl. *udvāsana, udvāsya*.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## paryud+vas
 
@@ -2531,7 +2536,7 @@ v. l.).
 - **EN:** — *paryud* caus. = *ud*
  1)
 [AV. 12,3,35.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.35)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## samud+vas
 
@@ -2545,7 +2550,7 @@ v. l.).
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
 - **EN:** — *samud* caus. dass.
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## upa-vas
 
@@ -2820,35 +2825,8 @@ Schol. *vikuṇṭham*
 **1)** — *ni*
  1) verweilen, sich aufhalten, seinen Standort haben (von Menschen und Thieren und bisweilen auch von Sachen), wohnen
 [NIR. 10,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,12) [21](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,21) (ruhen im Gegens. zur Bewegung). *ekarātraṃ tu nivasannatithirbrāhmaṇaḥ smṛtaḥ*
-[M. 3,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,102)
-[MBH. 3,1454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1454) [4,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.276) *aparatra — māsānaṣṭau nyavasatsukham*
-[R. 3,15,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,26) *kenāpadeśena sakṛdapyāśrame nivasāmaḥ*
-[ŚĀK. 27,2](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,2), v. l. *śūdrastu yasminkasminvā (deśe) nivaset*
-[M. 2,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24) [4,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,61) [5,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,43) [6,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,4) [11,78.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,78)
-[YĀJÑ. 2,184.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,184)
-[BHAG. 12,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,8)
-[MBH. 1,5567. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5567) [3,2622. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2622) [2641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2641) [13848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13848) [16917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16917) [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) [5,7539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7539) [12,6316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6316)
-[HARIV. 3948.](https://sanskrit-lexicon-scans.github.io/hariv?3948)
-[R. 1,9,70.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,70) [17,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,41) [48,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,30) [32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,32) [2,27,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,12) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,16) [21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,21) [98,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,30) [3,42,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,5)
-[Spr. 1461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1461) [3868.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3868)
-[ŚĀK. 26.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?26)
-[VARĀH. BṚH. S. 53,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,84)
-[KATHĀS. 12,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,194) [16,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,5) [18,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,62) [22,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,151) [23,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,43) [26,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,62)
-[RĀJA-TAR. 5,393.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,393)
-[PRAB. 25,12.] [107,13.]
-[DAŚAK. 69,8.]
-[BHĀG. P. 4,8,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,43) [5,18,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,29) [10,20,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,20,22) *śaśakaścandramaṇḍale*
-[PAÑCAT. 160,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?160,23) *tatra rātrau nivasanti pakṣiṇaḥ*
-[HIT. 9,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,4) [14,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,16) [18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,18) [17,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,14) [22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,22) [38,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,8) *tvayi ye ca nivatsyanti devagandharvadānavāḥ*
-[R. 4,43,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,43,45) *itthaṃ kriyāsu nivasantyapi yāsu tāsu puṃsāṃ śriyaḥ*
-[KATHĀS. 27,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,208) *nivasannantardāruṇi laṅghyo vahniḥ*
-[Spr. 169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?169) *ilvalāstacchirodeśe tārakā nivasanti yāḥ*
-[AK. 1,1,2,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,2,25) *dūre mārgānnivasasi (śālmale)*
-[Spr. 1223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1223) *tatrasthasyāpi me nityaṃ hṛdaye tvaṃ nivatsyasi*
-[R. GORR. 2,28,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,32) — med. [MBH. 1,6435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6435) [3,1453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1453) [11430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11430) [13703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13703) [4,287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.287) [324.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.324) [7,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2400) [R. 2,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,12) [BHĀG. P. 8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) Hierher könnte man ziehen (mit metrischer Dehnung, die jedoch vom Padap. nicht angenommen wird): *na te adevaḥ pradivo *
 
-* ni vāsate* verweilt, hält aus
-[ṚV. 10,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03)
+- **RU:** 1) пребывать, находиться, иметь своё местопребывание (о людях и животных, а иногда и о вещах), жить, обитать [NIR. 10,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,12) [21](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,21) (покоиться Gegens. в противоположность движению). *ekarātraṃ tu nivasannatithirbrāhmaṇaḥ smṛtaḥ*
 - **EN:** — *ni*
  1) to dwell, to stay, to have one's abode (of people and animals, and occasionally also of things), to live, to reside
 [NIR. 10,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,12) [21](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,21) ("to rest" as opposed to motion). *ekarātraṃ tu nivasannatithirbrāhmaṇaḥ smṛtaḥ*
@@ -2881,20 +2859,35 @@ Schol. *vikuṇṭham*
 
 * ni vāsate* dwells, holds out, endures
 [ṚV. 10,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03)
+  <sub>attested</sub>
 
 **2)** — 2) bewohnen, innehaben: *sa gataḥ svarnivāsaṃ taṃ nivasanmuditaḥ sukhī*
+[MBH. 1,3537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3537) *amūni pañca sthānāni kaliḥ — nyavasat*
+[BHĀG. P. 1,17,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,40)
+
+- **RU:** 2) обитать в, занимать (жилищем): *sa gataḥ svarnivāsaṃ taṃ nivasanmuditaḥ sukhī*
 [MBH. 1,3537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3537) *amūni pañca sthānāni kaliḥ — nyavasat*
 [BHĀG. P. 1,17,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,40)
 - **EN:** — 2) to inhabit, to occupy: *sa gataḥ svarnivāsaṃ taṃ nivasanmuditaḥ sukhī*
 [MBH. 1,3537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3537) *amūni pañca sthānāni kaliḥ — nyavasat*
 [BHĀG. P. 1,17,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,40)
+  <sub>attested</sub>
 
 **3)** — 3) beiwohnen (geschlechtlich): *rohiṇīṃ nivasati (somaḥ)*
 [MBH. 9,2023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2023)
+
+- **RU:** 3) иметь половую близость (с кем-л.), совокупляться: *rohiṇīṃ nivasati (somaḥ)*
+[MBH. 9,2023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2023)
 - **EN:** — 3) to cohabit with (sexually): *rohiṇīṃ nivasati (somaḥ)*
 [MBH. 9,2023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2023)
+  <sub>attested</sub>
 
 **4)** — 4) sich dauernd in einer Lage befinden, sich unterziehen: *ajñātavāsaṃ nyavasadrājñastasya niveśane*
+[MBH. 3,2653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2653) *kathaṃ tvanarhā vanavāsamāśrame nivatsyate*
+(v. l. *sahiṣyate) kleśamimam*
+[16699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16699)
+
+- **RU:** 4) постоянно находиться в (каком-л.) состоянии, подвергаться (чему-л.): *ajñātavāsaṃ nyavasadrājñastasya niveśane*
 [MBH. 3,2653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2653) *kathaṃ tvanarhā vanavāsamāśrame nivatsyate*
 (v. l. *sahiṣyate) kleśamimam*
 [16699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16699)
@@ -2902,34 +2895,119 @@ Schol. *vikuṇṭham*
 [MBH. 3,2653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2653) *kathaṃ tvanarhā vanavāsamāśrame nivatsyate*
 (v. l. *sahiṣyate) kleśamimam*
 [16699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16699)
+  <sub>attested</sub>
 
 **5 (textual note))** — 5) *na me vairo nivasate*
 [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) fehlerhaft für *na me vairaṃ pravasati*, wie die neuere Ausg. hat.
+
+- **RU:** 5) *na me vairo nivasate*
+[HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) ошибочно вместо *na me vairaṃ pravasati*, как то даёт более новое Ausg..
 - **EN:** — 5) *na me vairo nivasate*
 [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) erroneously for *na me vairaṃ pravasati*, as the more recent Ausg. has it.
+  <sub>lexicographic</sub>
 
 **caus. intro)** — Vgl. *nivasati* fgg., *nivastavya*, 1. *nivāsa, nivāsin* . — caus.
+
+- **RU:** — Vgl. *nivasati* fgg., *nivastavya*, 1. *nivāsa, nivāsin*. — caus.
 - **EN:** — Vgl. *nivasati* fgg., *nivastavya*, 1. *nivāsa, nivāsin* . — caus.
+  <sub>attested</sub>
 
 **caus.1)** 1) verweilen lassen, beherbergen, aufnehmen (in seinem Hause): *(tān) nyavāsayatsvageheṣu*
 [BHĀG. P. 10,45,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,45,16) [71,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,44) [75,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,75,28) *paryaṅke* setzen auf
 [81,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,17)
+
+- **RU:** 1) давать пребывать, приютить, принимать (у себя в доме): *(tān) nyavāsayatsvageheṣu*
+[BHĀG. P. 10,45,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,45,16) [71,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,44) [75,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,75,28) *paryaṅke* сажать на
+[81,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,17)
 - **EN:** 1) to cause to dwell, to lodge, to receive (into one's house): *(tān) nyavāsayatsvageheṣu*
 [BHĀG. P. 10,45,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,45,16) [71,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,44) [75,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,75,28) *paryaṅke* to set upon
 [81,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,17)
+  <sub>attested</sub>
 
 **caus.2)** — 2) bewohnt machen, bevölkern: *saṃnivāsān*
 [MBH. 12,4366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4366)
+
+- **RU:** 2) делать обитаемым, заселять: *saṃnivāsān*
+[MBH. 12,4366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4366)
 - **EN:** — 2) to make inhabited, to populate: *saṃnivāsān*
 [MBH. 12,4366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4366)
+  <sub>attested</sub>
 
 **caus.3)** — 3) zur Wohnstatt wählen, bewohnen: *nivāsayāmāsa tadā laṅkām*
 [R. 7,3,31.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,3,31)
+
+- **RU:** 3) избирать местом жительства, обитать в: *nivāsayāmāsa tadā laṅkām*
+[R. 7,3,31.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,3,31)
 - **EN:** — 3) to choose as a dwelling-place, to inhabit: *nivāsayāmāsa tadā laṅkām*
 [R. 7,3,31.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,3,31)
+  <sub>attested</sub>
 
 **caus. xref)** — Vgl. 1. *nivāsana* .
+
+- **RU:** — Vgl. 1. *nivāsana*.
 - **EN:** — Vgl. 1. *nivāsana* .
+  <sub>attested</sub>
+
+**1 (примеры))** [M. 3,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,102)
+[MBH. 3,1454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1454) [4,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.276) *aparatra — māsānaṣṭau nyavasatsukham*
+[R. 3,15,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,26) *kenāpadeśena sakṛdapyāśrame nivasāmaḥ*
+[ŚĀK. 27,2](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,2), v. l. *śūdrastu yasminkasminvā (deśe) nivaset*
+[M. 2,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24) [4,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,61) [5,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,43) [6,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,4) [11,78.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,78)
+[YĀJÑ. 2,184.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,184)
+[BHAG. 12,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,8)
+[MBH. 1,5567. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5567) [3,2622. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2622) [2641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2641) [13848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13848) [16917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16917) [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) [5,7539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7539) [12,6316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6316)
+[HARIV. 3948.](https://sanskrit-lexicon-scans.github.io/hariv?3948)
+[R. 1,9,70.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,70) [17,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,41) [48,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,30) [32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,32) [2,27,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,12) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,16) [21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,21) [98,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,30) [3,42,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,5)
+[Spr. 1461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1461) [3868.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3868)
+[ŚĀK. 26.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?26)
+[VARĀH. BṚH. S. 53,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,84)
+[KATHĀS. 12,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,194) [16,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,5) [18,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,62) [22,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,151) [23,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,43) [26,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,62)
+[RĀJA-TAR. 5,393.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,393)
+[PRAB. 25,12.] [107,13.]
+[DAŚAK. 69,8.]
+[BHĀG. P. 4,8,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,43) [5,18,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,29) [10,20,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,20,22) *śaśakaścandramaṇḍale*
+[PAÑCAT. 160,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?160,23) *tatra rātrau nivasanti pakṣiṇaḥ*
+[HIT. 9,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,4) [14,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,16) [18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,18) [17,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,14) [22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,22) [38,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,8) *tvayi ye ca nivatsyanti devagandharvadānavāḥ*
+[R. 4,43,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,43,45) *itthaṃ kriyāsu nivasantyapi yāsu tāsu puṃsāṃ śriyaḥ*
+[KATHĀS. 27,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,208) *nivasannantardāruṇi laṅghyo vahniḥ*
+[Spr. 169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?169) *ilvalāstacchirodeśe tārakā nivasanti yāḥ*
+[AK. 1,1,2,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,2,25) *dūre mārgānnivasasi (śālmale)*
+[Spr. 1223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1223) *tatrasthasyāpi me nityaṃ hṛdaye tvaṃ nivatsyasi*
+[R. GORR. 2,28,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,32) — med. [MBH. 1,6435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6435) [3,1453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1453) [11430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11430) [13703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13703) [4,287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.287) [324.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.324) [7,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2400) [R. 2,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,12) [BHĀG. P. 8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) Hierher könnte man ziehen (mit metrischer Dehnung, die jedoch vom Padap. nicht angenommen wird): *na te adevaḥ pradivo *
+
+* ni vāsate* verweilt, hält aus
+[ṚV. 10,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03)
+
+- **RU:** [M. 3,102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,102)
+[MBH. 3,1454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1454) [4,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.276) *aparatra — māsānaṣṭau nyavasatsukham*
+[R. 3,15,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,26) *kenāpadeśena sakṛdapyāśrame nivasāmaḥ*
+[ŚĀK. 27,2](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,2), v. l. *śūdrastu yasminkasminvā (deśe) nivaset*
+[M. 2,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,24) [4,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,61) [5,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,43) [6,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,4) [11,78.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,78)
+[YĀJÑ. 2,184.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,184)
+[BHAG. 12,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,8)
+[MBH. 1,5567. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5567) [3,2622. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2622) [2641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2641) [13848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13848) [16917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16917) [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) [5,7539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7539) [12,6316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6316)
+[HARIV. 3948.](https://sanskrit-lexicon-scans.github.io/hariv?3948)
+[R. 1,9,70.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,70) [17,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,41) [48,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,30) [32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,32) [2,27,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,12) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,16) [21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,21) [98,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,30) [3,42,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,5)
+[Spr. 1461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1461) [3868.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3868)
+[ŚĀK. 26.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?26)
+[VARĀH. BṚH. S. 53,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,84)
+[KATHĀS. 12,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,194) [16,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,5) [18,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,62) [22,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,151) [23,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,43) [26,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,62)
+[RĀJA-TAR. 5,393.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,393)
+[PRAB. 25,12.] [107,13.]
+[DAŚAK. 69,8.]
+[BHĀG. P. 4,8,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,43) [5,18,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,29) [10,20,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,20,22) *śaśakaścandramaṇḍale*
+[PAÑCAT. 160,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?160,23) *tatra rātrau nivasanti pakṣiṇaḥ*
+[HIT. 9,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,4) [14,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,16) [18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,18) [17,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,14) [22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,22) [38,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,8) *tvayi ye ca nivatsyanti devagandharvadānavāḥ*
+[R. 4,43,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,43,45) *itthaṃ kriyāsu nivasantyapi yāsu tāsu puṃsāṃ śriyaḥ*
+[KATHĀS. 27,208.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,208) *nivasannantardāruṇi laṅghyo vahniḥ*
+[Spr. 169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?169) *ilvalāstacchirodeśe tārakā nivasanti yāḥ*
+[AK. 1,1,2,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,2,25) *dūre mārgānnivasasi (śālmale)*
+[Spr. 1223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1223) *tatrasthasyāpi me nityaṃ hṛdaye tvaṃ nivatsyasi*
+[R. GORR. 2,28,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,32) — med. [MBH. 1,6435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6435) [3,1453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1453) [11430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11430) [13703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13703) [4,287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.287) [324.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.324) [7,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2400) [R. 2,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,12) [BHĀG. P. 8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) Сюда можно было бы отнести (с метрическим удлинением, которое, однако, Padap. не признаётся): *na te adevaḥ pradivo *
+
+* ni vāsate* пребывает, выдерживает, держится
+[ṚV. 10,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.03)
+  <sub>attested</sub>
 
 ## adhinivas
 
@@ -2943,7 +3021,7 @@ Schol. *vikuṇṭham*
 [Spr. 1001.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1001)
 - **EN:** — *adhini* to choose as a dwelling place: *suranadīm*
 [Spr. 1001.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1001)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## samnivas
 
@@ -2966,7 +3044,7 @@ Schol. *vikuṇṭham*
 [5116.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5116) "to dwell": *yasminsaṃnivasetpure*
 [MBH. 14,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.564)
 [R.] in [LA. (III) 64,18] (in the three Ausgg. available to us, *sa nyavasat*, not *saṃnyavasat)*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## nirvas
 
@@ -2995,7 +3073,7 @@ Schol. *vikuṇṭham*
 [14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) *tasmingurau guruvāsaṃ niruṣya*
 [14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) — *nirvatsyāmi*
 [4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) erroneously for *nirvartsyāmi*, as [ed. Bomb.] reads.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus1)** — Vgl. *nirvāsa* . — caus.
  1) aus seinem Wohnorte entfernen, vertreiben, verbannen: *purāt*
@@ -3027,7 +3105,7 @@ Schol. *vikuṇṭham*
 [Z. d. d. m. G. 14,574,16.]
 - **EN:** — 2) to drive away (for oneself), to spend, to pass (time): *mṛgayāvihāranirvāsitasakaladivasa*
 [Z. d. d. m. G. 14,574,16.]
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **ref)** — Vgl. 1. *nirvāsana, nirvāsanīya* (auch
 [DAŚAK. 82,12]), *nirvāsya* .
@@ -3036,12 +3114,12 @@ Schol. *vikuṇṭham*
 [DAŚAK. 82,12]), *nirvāsya* .
 - **EN:** — Vgl. 1. *nirvāsana, nirvāsanīya* (also
 [DAŚAK. 82,12]), *nirvāsya* .
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus_intro)** — Vgl. *nirvāsa* . — caus.
 
 - **RU:** Vgl. *nirvāsa* . — caus.
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** 1) aus seinem Wohnorte entfernen, vertreiben, verbannen: *purāt*
 [M. 9,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,225) *rāṣṭrāt*
@@ -3064,7 +3142,7 @@ Schol. *vikuṇṭham*
 [BHĀG. P. 3,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,15) [4,8,65.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,65) отпускать: *mukhanirvāsito vāyuḥ*
 [5,16,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,25) *dehī nirvāsyate kadā nu*
 [3,31,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,17)
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 ## parivas
 
@@ -3120,7 +3198,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 
 "are expiated" (= *niḥśeṣita* [NĪLAK.])
 [1,6456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6456)
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *parivasatha, parivāsa* . — caus. über Nacht stehen lassen
 [ĀŚV. GṚHY. 2,8,4.]
@@ -3129,7 +3207,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [ĀŚV. GṚHY. 2,8,4.]
 - **EN:** — Vgl. *parivasatha, parivāsa* . — caus. "to let stand overnight"
 [ĀŚV. GṚHY. 2,8,4.]
-  <sub>DCS 11 · attested</sub>
+  <sub>attested</sub>
 
 ## pravas
 
@@ -3209,7 +3287,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [7,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,17) *ne me vairaṃ pravasati* (so the more recent Ausg.) *ekāhamapi* to vanish, to cease
 [HARIV. 6059.](https://sanskrit-lexicon-scans.github.io/hariv?6059) *proṣitapattralekha* vanished, effaced
 [RAGH. 6,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,72)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verweilen, sich aufhalten: *pravatsyati sukhaṃ vane*
 [R. 2,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8) *yatra nityaṃ pravasati* (*prabhavati* [ed. Bomb.]) *svayaṃ devaḥ prajāpatiḥ*
@@ -3224,7 +3302,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [R. 2,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8) *yatra nityaṃ pravasati* (*prabhavati* [ed. Bomb.]) *svayaṃ devaḥ prajāpatiḥ*
 [MBH. 6,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.466) *atra vaṭe yakṣiṇī pravasati*
 [GAUḌAP.] to [SĀṂKHYAK. 4.]
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) = caus. verbannen: *rāmaṃ vanavāse pravatsyati*
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
@@ -3233,7 +3311,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
 - **EN:** — 3) = caus. to banish: *rāmaṃ vanavāse pravatsyati*
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **deriv. intro)** — Vgl. *pravasatha* fg., *˚vastavya, ˚vāsa, ˚vāsin, aproṣivaṃs* . — caus. etwa entfernen
 [ṚV. 3,7,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.03) Jmd aus seinem Wohnort vertreiben, verbannen
@@ -3283,7 +3361,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [RĀJA-TAR. 6,41.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,41) — *tīrthayātrāpravāsitaḥ*
 [KATHĀS. 73,222](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,222) ошибочно вместо *˚pravāsataḥ*.
 — Vgl. *pravāsana* 1).
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 ## apapravas
 
@@ -3294,7 +3372,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 
 - **RU:** — *apapra* s. *apaproṣita*.
 - **EN:** — *apapra* s. *apaproṣita* .
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## vipravas
 
@@ -3327,7 +3405,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [ŚĀṄKH. GṚHY. 2,16.]
 [M. 2,132.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,132) [217.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,217) *sa tatra* (*janapadapradeśe*) *bahūni varṣāṇi vipravaset*
 [SADDH. P. 4,8,a.] *vanaṃ viproṣite mayi*
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — caus. verbannen: *rāṣṭrāt*
 [M. 8,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,219)
@@ -3339,7 +3417,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 - **EN:** [R. GORR. 2,26,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,26,37) [32,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,28) *ciraviproṣita* "dwelling long abroad — having dwelt (abroad)"
 [111,43](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,43) ([103,38] [SCHL.]). [MBH. 3,2712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2712) [HARIV. 4779.](https://sanskrit-lexicon-scans.github.io/hariv?4779) [KATHĀS. 64,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,114) *rājyaviproṣita* so v. a. "living in exile outside the realm"
 [MBH. 4,7.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.7) *viproṣitakumāraṃ rājyam*
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [MBH. 3,1404.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1404) [8892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8892) verscheuchen, entfernen: *vipravāsitakalmaṣa*
 [R. 2,74,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,30)
@@ -3350,7 +3428,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [BHĀG. P. 1,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,2) [5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,5) — caus. "to banish": *rāṣṭrāt*
 [M. 8,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,219)
 [YĀJÑ. 2,187.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,187) [270.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,270)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 **4)** [MBH. 3,1404.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1404) [8892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8892) verscheuchen, entfernen: *vipravāsitakalmaṣa*
 [R. 2,74,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,30)
@@ -3359,7 +3437,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [R. 2,74,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,30)
 - **EN:** [MBH. 3,1404.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1404) [8892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8892) "to drive off, remove": *vipravāsitakalmaṣa*
 [R. 2,74,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,30)
-  <sub>DCS 35 · attested</sub>
+  <sub>attested</sub>
 
 ## prativas
 
@@ -3382,7 +3460,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [13,3805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3805) [MṚCCH. 121,1.] [PRAB. 83,11.] [PAÑCAT. 26,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,12) [32,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?32,23) [43,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,1) [53,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?53,18) [62,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?62,21) [77,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?77,9) [HIT. 17,22](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,22), v. l. [18,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,8) [26,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?26,13) [27,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,11) [59,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?59,14) [79,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?79,7) [110,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?110,2) [Z. d. d. m. G. 14,573,3. 19. fg.] [Verz. d. Oxf. H. 153,a,7.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?153) [VET. 8,17. fg.] [DHŪRTAS. 77,11.] [VEDĀNTAS. (Allah.) No. 102.] *yatremāḥ śaradaḥ sarvāḥ sukhaṃ prativasemahi*
 [MBH. 3,921.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.921)
 [R. 3,53,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,23)
-  <sub>DCS 102 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *prativasatha, ˚vāsin* . — caus. beherbergen: *etāngṛhe na prativāsayeta*
 - **EN:** — Vgl. *prativasatha, ˚vāsin* . — caus. "to lodge, give shelter to": *etāngṛhe na prativāsayeta*
@@ -3407,7 +3485,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 
 * damūnāḥ*
 [ṚV. 3,1,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.17)
-  <sub>DCS 102 · attested</sub>
+  <sub>attested</sub>
 
 ## vivas
 
@@ -3433,7 +3511,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [31,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,17) *brahmacaryam* "to go into apprenticeship/study"
 [CHĀND. UP. 4,4,1.] *vyuṣita* "away, absent (having travelled)"
 [BHĀG. P. 4,28,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,20) [6,11,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,26)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) zubringen, verleben: *araṇye te vivatsyanti caturdaśa samāḥ*
 [R. 2,23,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,23) [89,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,1) [92,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,1) *tapatyā sahitaṃ vyuṣitaṃ śāśvatīḥ samāḥ*
@@ -3454,7 +3532,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [3,3009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3009) *anyathā vyuṣitāḥ* (*hyuṣitāḥ* [ed. Bomb.]) *pūrvam*
 [12,4124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4124) *sā vyuṣṭā rajanīṃ tatra piturveśmani*
 [3,2721.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2721)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) bewohnen: *ikṣvākuvyuṣitā*
 [R. 6,112,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,50) — *vyuṣita = uṣita*
@@ -3478,7 +3556,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [TRIK. 3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102)
 [MED. ṭ. 28.](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,28) = *paryuṣita*
 [H. an. 2,99.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,99)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4)
 [ĀŚV. ŚR. 11,5,1] ist st. *vatsyantaḥ* zu lesen *vartsyantaḥ* gegen die Ausg. und die Hdschrr.
@@ -3487,7 +3565,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [ĀŚV. ŚR. 11,5,1] следует читать st. *vatsyantaḥ* *vartsyantaḥ* против Ausg. и Hdschrr.
 - **EN:** — 4)
 [ĀŚV. ŚR. 11,5,1] is to be read as st. *vatsyantaḥ* *vartsyantaḥ*, against the Ausg. and the Hdschrr.
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *vivāsa* . — caus.
  1) zum Hause —, zum Lande hinausjagen, verbannen
@@ -3511,7 +3589,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [MBH. 1,5675](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5675) (med.). [5917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5917) *putrānvivāsyataḥ* pass.
 [2,2610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2610) [3,8895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8895) [5,3440.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3440) [R. 1,1,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,23) [2,13,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,13,6) [24,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,4) [33,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,10) [36,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,28) [43,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,3) [8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,8) [48,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,28) [58,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,22) [61,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,23) [84,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,4) [R. GORR. 1,1,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,26) [2,20,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,27) [33,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,33,11) [DAŚAR. 2,21.] [KATHĀS. 4,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,84) [BHĀG. P. 9,11,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,15) [BHAṬṬ. 4,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,35) "to send off, dispatch"
 [MBH. 3,8277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8277)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 2) (eine Zeit) mit Erzählungen —, mit Gesprächen zubringen: *rātrim*
 [P. 3,1,26](https://ashtadhyayi.com/sutraani/3/1/26), Vārtt. 5, Schol.
@@ -3520,13 +3598,13 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [P. 3,1,26](https://ashtadhyayi.com/sutraani/3/1/26), Vārtt. 5, Schol.
 - **EN:** — 2) (of a period of time) "to pass — with tales, with conversations": *rātrim*
 [P. 3,1,26](https://ashtadhyayi.com/sutraani/3/1/26), Vārtt. 5, Schol.
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — Vgl. *vivāsana, vivāsya* .
 
 - **RU:** — Vgl. *vivāsana, vivāsya*.
 - **EN:** — Vgl. *vivāsana, vivāsya* .
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 ## nirvi+vas
 
@@ -3540,7 +3618,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [MBH. 5,3424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3424)
 - **EN:** — *nirvi* "to spend, pass (time)": *dvādaśemāni varṣāṇi vane nirvyuṣitāni naḥ*
 [MBH. 5,3424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3424)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+vas
 
@@ -3617,7 +3695,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [Spr. 1037](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037), v. l. with acc. of the person
 [M. 11,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,190)
 [YĀJÑ. 3,299.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,299)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich aufhalten, seinen Wohnsitz haben, leben: *kṣitau ca ye cādhastātsaṃvasante*
 [MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
@@ -3632,7 +3710,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
 [R. 3,15,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,28) *svabhūmau naiva saṃvaset*
 [Verz. d. Oxf. H. 269,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?269)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zubringen (eine Zeit): *tāṃ samuṣya niśāṃ kṛtsnāṃ prabhāte pratyabudhyata*
 [R. 3,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,1) *vārṣikyaṃ samuvāsa*
@@ -3647,7 +3725,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [R. 3,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,1) *vārṣikyaṃ samuvāsa*
 [7,51,2.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,51,2) *kṣaṇamiva puline yamasvasustāṃ samuṣitaḥ — niśām*
 [BHĀG. P. 3,4,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,27)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *saṃvasatha* u. s. w. — caus.
  1) zusammen wohnen lassen, zusammenbringen: *(somam) saṃ gobhirvāsayāmasi*
@@ -3665,7 +3743,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [ṚV. 9,8,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.008.html#rv09.008.05) *prajā agne saṃvāsaya . āśāśca paśubhiḥ saha*
 [TBR. 1,2,1,13.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,13)
 [LĀṬY. 3,6,1.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 2) beherbergen
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
@@ -3674,7 +3752,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
 - **EN:** — 2) "to lodge, give shelter to"
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## aDisam+vas
 
@@ -3688,7 +3766,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 [TS. 3,5,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,5,1,1) = [TBR. 3,1,1,12.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,12)
 - **EN:** — *adhisam* "to dwell together, live together": *tasyāṃ devā adhi saṃvasanta uttame nāka iha mādayantām*
 [TS. 3,5,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,5,1,1) = [TBR. 3,1,1,12.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,12)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## aBisam+vas
 
@@ -3705,7 +3783,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 - **EN:** — *abhisam* "to unite around, gather around": *agniṃ gṛhapatimabhi saṃvasānāḥ*
 [TBR. 3,7,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,4,4) *sa kṛttikābhirabhisaṃvasānaḥ*
 [1,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,1) [LĀṬY. 2,9,1.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3718,7 +3796,7 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 - **EN:** 6. *vas*¦ (probably = 5. *vas*) approximately "dwelling-place" or "resident": *vasāṃ* (= *vasatāṃ prāṇinām*
 [SĀY.]) *rājānaṃ vasatiṃ janānām* "lord of the houses (of the settled), homeland of the people"
 [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) One could also assume *vasa*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3735,7 +3813,7 @@ or "course against, to rush upon": *madhye vasiṣva tuvinṛmṇorvoḥ* (namel
 [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* "pursuing gain"
 [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* "ward off the ravenous fire, that it not, like a lion, pounce upon the works" (d. h. implements, possessions) "in the house"
 [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anu* den Lauf richten nach: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* er eilt nach der linken Seite (wo der Anrufende sich denkt): unsern Schmaus verschmäht er nicht
 [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)
@@ -3754,26 +3832,26 @@ or "course against, to rush upon": *madhye vasiṣva tuvinṛmṇorvoḥ* (namel
 v. l. st. *sneha; avaharaṇa* and *upaharaṇa*
 v. l. st. *apaharaṇa; vadhe*
 [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *ud* vgl. *udvāsana* 2).
 
 - **RU:** — *ud* vgl. *udvāsana* 2).
 - **EN:** — *ud* vgl. *udvāsana* 2).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *ni*, *nivāsita* um's Leben gebracht [Spr. 2440](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2440), v. l.
 
 - **RU:** — *ni*, *nivāsita* «лишённый жизни» [Spr. 2440](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2440), v. l.
 - **EN:** — *ni*, *nivāsita* "deprived of life, killed"
 [Spr. 2440](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2440), v. l.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — *nis* vgl. 1. *nirvāsana* 2).
 
 - **RU:** — *nis* vgl. 1. *nirvāsana* 2).
 - **EN:** — *nis* vgl. 1. *nirvāsana* 2).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — *pari* rings abschneiden, ausschneiden: *yāvadalohitaṃ tāvatparivāsaya* [AIT. BR. 2,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,14) *audumbarīm* [ŚAT. BR. 3,6,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,6) *yūpam* [4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,17) *vapām* [8,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,18) [KĀTY. ŚR. 6,1,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,1,23) [6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,13) *mūlataḥ śākhām* [MAHĪDH.] zu [VS. 1,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,17) Schol. zu [KĀTY. ŚR. 1,3,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,3,23)
 
@@ -3784,19 +3862,19 @@ v. l. st. *apaharaṇa; vadhe*
 [4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,17) *vapām*
 [8,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,18) [KĀTY. ŚR. 6,1,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,1,23) [6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,13) *mūlataḥ śākhām*
 [MAHĪDH.] to [VS. 1,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,17) Schol. to [KĀTY. ŚR. 1,3,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,3,23)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — Vgl. *parivāsana* .
 
 - **RU:** — Vgl. *parivāsana* .
 - **EN:** — Vgl. *parivāsana* .
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — *pra* vgl. *pravāsana* 2).
 
 - **RU:** — *pra* vgl. *pravāsana* 2).
 - **EN:** — *pra* vgl. *pravāsana* 2).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3808,7 +3886,7 @@ v. l. st. *apaharaṇa; vadhe*
 - **RU:** 9. *vas*¦, *vasyati* (*stambhe*) [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
 - **EN:** 9. *vas*¦, *vasyati* (*stambhe*)
 [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3819,7 +3897,7 @@ v. l. st. *apaharaṇa; vadhe*
 
 - **RU:** **3.** *vas*¦ [vgl. ] Z. 2 добавить *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
 - **EN:** **3.** *vas*¦ [vgl. ] Z. 2 add *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3830,7 +3908,7 @@ v. l. st. *apaharaṇa; vadhe*
 
 - **RU:** **5.** *vas*¦ [vgl. ] mit *adhi* caus. Второе значение подлежит исключению; vgl. *vāsay* mit *adhi* 2〉.
 - **EN:** **5.** *vas*¦ [vgl. ] with *adhi* caus. The second meaning is to be struck out; vgl. *vāsay* with *adhi* 2〉.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3841,7 +3919,7 @@ v. l. st. *apaharaṇa; vadhe*
 
 - **RU:** 2. *vas*¦ mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
 - **EN:** 2. *vas*¦ with *adhi* vgl. 5. *vas* with *adhi* and u. *samayā*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *apa* 1) auch [ṚV. 8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18)
 
@@ -3849,14 +3927,14 @@ v. l. st. *apaharaṇa; vadhe*
 - **EN:** — *apa*
  1) also
 [ṚV. 8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *vi* caus. vgl. unten u. [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.05) *vas* mit *vi* caus. 2).
 
 - **RU:** — *vi* caus. vgl. ниже u. [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.05) *vas* mit *vi* caus. 2).
 - **EN:** — *vi* caus. vgl. below u.
 [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.05) *vas* with *vi* caus. 2).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3869,7 +3947,7 @@ v. l. st. *apaharaṇa; vadhe*
 - **EN:** 3. *vas*¦
 Z. 2 add *vasiṣṭa*
 [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 ## vas
 
@@ -3929,105 +4007,186 @@ Z. 2 add *vasiṣṭa*
 
 
 **1)** **1.** √*vas*¦ enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
+
+- **RU:** **1.** √*vas*¦ энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
 - **EN:** **1.** √*vas*¦ enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
+  <sub>attested</sub>
 
 **2.intro)** **2.** √*vas*¦ *ucchati*
+
+- **RU:** **2.** √*vas*¦ *ucchati*
 - **EN:** **2.** √*vas*¦ *ucchati*
+  <sub>attested</sub>
 
 **2.1)** — 1〉 illucescere, hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens, vom Hellwerden der Nacht u. s. w.).
+
+- **RU:** — 1〉 illucescere, светать, — быть светлым, сиять (о свете занимающегося утра, о просветлении ночи u. s. w.).
 - **EN:** — 1〉 illucescere, to grow bright, — to be bright, to shine (of the light of breaking morning, of the night growing bright u. s. w.).
+  <sub>attested</sub>
 
 **2.2)** — 2〉 durch Leuchten Etwas bringen [ṚV. 1,113,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.17).
+
+- **RU:** — 2〉 приносить что-л. посредством сияния [ṚV. 1,113,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.17).
 - **EN:** — 2〉 to bring something by shining [ṚV. 1,113,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.17).
+  <sub>attested</sub>
 
 **2.3)** — 3〉 mit *dūre* wegleuchten.
+
+- **RU:** — 3〉 с *dūre* рассветая, прогонять (светом).
 - **EN:** — 3〉 with *dūre* to shine away, drive away by shining.
+  <sub>attested</sub>
 
 **2.4)** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04) vielleicht fehlerhaft für *ukṣantu*.
+
+- **RU:** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04), возможно, ошибочно вместо *ukṣantu*.
 - **EN:** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04), perhaps erroneous for *ukṣantu*.
+  <sub>attested</sub>
 
 **2.5)** — 5〉 **uṣita* hell geworden.
+
+- **RU:** — 5〉 **uṣita* ставший светлым.
 - **EN:** — 5〉 **uṣita* grown bright.
+  <sub>attested</sub>
 
 **2.caus)** — Caus. *vāsayati* aufleuchten machen.
+
+- **RU:** — Caus. *vāsayati* заставлять воссиять.
 - **EN:** — Caus. *vāsayati* to make flare up / cause to shine forth.
+  <sub>attested</sub>
 
 **2.adv)** — Mit *adhi*, *adhyuṣite* bei Tagesanbruch.
+
+- **RU:** — С *adhi*, *adhyuṣite* на рассвете.
 - **EN:** — With *adhi*, *adhyuṣite* at daybreak.
+  <sub>attested</sub>
 
 **2.apa.1)** — Mit *apa*
 — 1〉 durch Helle vertreiben.
 - **EN:** — With *apa* — 1〉 to drive away by brightness.
 
 **2.apa.2)** — 2〉 erlöschen.
+
+- **RU:** — 2〉 гаснуть.
 - **EN:** — 2〉 to go out, be extinguished.
+  <sub>attested</sub>
 
 **2.ud.1)** — Mit *vi*
 — 1〉 aufleuchten, in oder an das Licht treten, Tag werden.
 - **EN:** — With *vi* — 1〉 to flare up, to step into or come to the light, to become day.
 
 **2.ud.2)** — 2〉 erhellen in der Form *vivaste* (wegen *vivasvant*).
+
+- **RU:** — 2〉 озарять в форме *vivaste* (из-за *vivasvant*).
 - **EN:** — 2〉 to light up, illuminate in the form *vivaste* (because of *vivasvant*).
+  <sub>attested</sub>
 
 **2.ud.3)** — 3〉 *vyuṣṭa* hell geworden, dem Tage gewichen (Nacht).
+
+- **RU:** — 3〉 *vyuṣṭa* ставшая светлой, уступившая место дню (ночь).
 - **EN:** — 3〉 *vyuṣṭa* grown bright, having yielded to day (of the night).
+  <sub>attested</sub>
 
 **2.ud.4)** — 4〉 *vyuṣite* bei Tagesanbruch.
+
+- **RU:** — 4〉 *vyuṣite* на рассвете.
 - **EN:** — 4〉 *vyuṣite* at daybreak.
+  <sub>attested</sub>
 
 **2.ud.caus)** — Caus. hell —, Tag werden lassen.
+
+- **RU:** — Caus. давать стать светлым —, наступить дню.
 - **EN:** — Caus. to make grow bright —, to make it become day.
+  <sub>attested</sub>
 
 **2.pra)** — Mit *abhivi* hell werden über (Acc.), so v. a. vor Beendigung von — Tag werden. Med. *vyuccheta* vielleicht fehlerhaft für *vyucchet*.
+
+- **RU:** — С *abhivi* светать над (Acc.), так v. a. наступать дню прежде окончания —. Med. *vyuccheta*, возможно, ошибочно вместо *vyucchet*.
 - **EN:** — With *abhivi* to grow bright over (Acc.), hence v. a. to become day before the completion of —. Med. *vyuccheta*, perhaps erroneous for *vyucchet*.
+  <sub>attested</sub>
 
 **2.vi)** — *Caus. die Nacht (Acc.) hell werden lassen, so v. a. bis Tagesanbruch erzählen [PAT. zu P. 3,1,26, Vārtt. 9].
+
+- **RU:** — *Caus. ночь (Acc.) давать посветлеть, так v. a. рассказывать до рассвета [PAT. zu P. 3,1,26, Vārtt. 9].
 - **EN:** — *Caus. the night (Acc.) to make grow bright, hence v. a. to tell (a story) until daybreak [PAT. zu P. 3,1,26, Vārtt. 9].
+  <sub>attested</sub>
 
 **2.sam)** — Mit *parivi* aufleuchten von — her (Abl.), so v. a. nach.
+
+- **RU:** — С *parivi* воссиять откуда-л. (Abl.), так v. a. вслед за.
 - **EN:** — With *parivi* to flare up from — (Abl.), hence v. a. after.
+  <sub>attested</sub>
 
 **3.intro)** **3.** √*vas*¦, *vaste* (einmal *vatsyanti* st. *˚nte*) anziehen, sich ein Gewand ([ĀŚV. GṚHY. 1,19,11]) oder Hülle (Acc.) umlegen, eine Form der Erscheinung annehmen, sich hineinmachen —, eindringen in (Acc.).
+
+- **RU:** **3.** √*vas*¦, *vaste* (однажды *vatsyanti* st. *˚nte*) надевать, облачаться в одеяние ([ĀŚV. GṚHY. 1,19,11]) или покров (Acc.), облекаться, принимать облик, входить в —, проникать в (Acc.).
 - **EN:** **3.** √*vas*¦, *vaste* (once *vatsyanti* st. *˚nte*) to put on, to don a garment ([ĀŚV. GṚHY. 1,19,11]) or covering (Acc.) , to assume an outward form, to put oneself into —, to enter into (Acc.).
+  <sub>attested</sub>
 
 **3.caus.1)** — Caus. *vāsayati*
 — 1〉 ein Gewand anziehen —, tragen lassen.
 - **EN:** — Caus. *vāsayati* — 1〉 to cause to put on —, to let wear a garment.
 
 **3.caus.2)** — 2〉 bekleiden mit (Instr.), einhüllen in (Instr.); Med. sich hüllen in (Instr.) *˚vāsita* bekleidet mit [HEMĀDRI 1,434,12].
+
+- **RU:** — 2〉 облачать в (Instr.), окутывать в (Instr.); Med. облекаться в (Instr.) *˚vāsita* облачённый в [HEMĀDRI 1,434,12].
 - **EN:** — 2〉 to clothe with (Instr.), to wrap in (Instr.); Med. to wrap oneself in (Instr.), *˚vāsita* clothed with [HEMĀDRI 1,434,12].
+  <sub>attested</sub>
 
 **3.a)** — Mit *adhi* anziehen.
+
+- **RU:** — С *adhi* надевать.
 - **EN:** — With *adhi* to put on.
+  <sub>attested</sub>
 
 **3.aa.1)** — Mit *anu*
 — 1〉 bekleiden, umfangen, (schützend) umgeben mit (Instr.).
 - **EN:** — With *anu* — 1〉 to clothe, to enfold, (protectively) to surround with (Instr.).
 
 **3.aa.2)** — 2〉 sich bekleiden, sich hüllen in (Acc.).
+
+- **RU:** — 2〉 облачаться, окутываться в (Acc.).
 - **EN:** — 2〉 to clothe oneself, to wrap oneself in (Acc.).
+  <sub>attested</sub>
 
 **3.upa)** — Mit *abhi* sich hüllen in (Acc.).
+
+- **RU:** — С *abhi* окутываться в (Acc.).
 - **EN:** — With *abhi* to wrap oneself in (Acc.).
+  <sub>attested</sub>
 
 **3.nis)** — Caus. bekleiden, bedecken mit (Instr.).
+
+- **RU:** — Caus. облачать, покрывать (Instr.).
 - **EN:** — Caus. to clothe, to cover with (Instr.).
+  <sub>attested</sub>
 
 **3.nis2)** — Mit *upa* Caus. in *upavāsana*.
+
+- **RU:** — С *upa* Caus. в *upavāsana*.
 - **EN:** — With *upa* Caus. in *upavāsana*.
+  <sub>attested</sub>
 
 **3.pari.1)** — Mit *ni*
 — 1〉 darüber anziehen, — umlegen.
 - **EN:** — With *ni* — 1〉 to put on over —, to wrap around.
 
 **3.pari.2)** — 2〉 umthun, anlegen.
+
+- **RU:** — 2〉 надевать, облачаться.
 - **EN:** — 2〉 to put on, to don.
+  <sub>attested</sub>
 
 **3.pari.3)** — 3〉 sich kleiden, sich aufputzen [BHAṬṬ.]
+
+- **RU:** — 3〉 одеваться, наряжаться [BHAṬṬ.]
 - **EN:** — 3〉 to dress oneself, to adorn oneself [BHAṬṬ.]
+  <sub>attested</sub>
 
 **3.pari.4)** — 4〉 *nivasita* gekleidet in (Instr.).
+
+- **RU:** — 4〉 *nivasita* одетый в (Instr.).
 - **EN:** — 4〉 *nivasita* clothed in (Instr.).
+  <sub>attested</sub>
 
 **3.pra.1)** — Caus.
 — 1〉 anziehen.
@@ -4038,23 +4197,38 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 2〉 *nivāsita* — a〉 clothed in (Instr.).
 
 **3.pra.2b)** — b〉 am Ende eines Comp. beschäftigt mit.
+
+- **RU:** — b〉 в конце Comp. занятый чем-л..
 - **EN:** — b〉 at the end of a Comp. occupied with, engaged in.
+  <sub>attested</sub>
 
 **3.vipra)** — Mit *pratini* Caus. in **pratinivāsana*.
+
+- **RU:** — С *pratini* Caus. в **pratinivāsana*.
 - **EN:** — With *pratini* Caus. in **pratinivāsana*.
+  <sub>attested</sub>
 
 **3.vi.1)** — Mit *saṃni* umthun, anlegen.
+
+- **RU:** — С *saṃni* надевать, облачаться.
 - **EN:** — With *saṃni* to put on, to don.
+  <sub>attested</sub>
 
 **3.vi.2a)** — Mit *pari*
 — 1〉 anziehen.
 - **EN:** — With *pari* — 1〉 to put on.
 
 **3.vi.2b)** — 2〉 umgeben, um Etwas (Acc.) her sein.
+
+- **RU:** — 2〉 окружать, быть вокруг чего-л. (Acc.).
 - **EN:** — 2〉 to surround, to be around something (Acc.).
+  <sub>attested</sub>
 
 **3.sam.1)** — Mit *pra* anziehen, umnehmen.
+
+- **RU:** — С *pra* надевать, накидывать на себя.
 - **EN:** — With *pra* to put on, to wrap around.
+  <sub>attested</sub>
 
 **3.sam.2)** — Mit *prati* dass.
 — Caus. *prativāsita* gehüllt in (Instr.).
@@ -4065,19 +4239,134 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *vi* — 1〉 to exchange the clothes (Acc.).
 
 **3.sam.3b)** — 2〉 anziehen, umlegen.
+
+- **RU:** — 2〉 надевать, накидывать.
 - **EN:** — 2〉 to put on, to wrap around.
+  <sub>attested</sub>
 
 **3.x1)** — Caus. anziehen, umlegen.
+
+- **RU:** — Caus. надевать, накидывать.
 - **EN:** — Caus. to put on, to wrap around.
+  <sub>attested</sub>
 
 **3.x2)** — Mit *sam* sich kleiden in (Instr.).
+
+- **RU:** — С *sam* одеваться в (Instr.).
 - **EN:** — With *sam* to clothe oneself in (Instr.).
+  <sub>attested</sub>
 
 **3.x3)** — Mit *abhisam* umnehmen.
+
+- **RU:** — С *abhisam* накидывать на себя.
 - **EN:** — With *abhisam* to wrap around.
+  <sub>attested</sub>
 
 **4)** **4.** *˚vas*¦ gekleidet in.
+
+- **RU:** **4.** *˚vas*¦ одетый в.
 - **EN:** **4.** *˚vas*¦ clothed in.
+  <sub>attested</sub>
+
+**apa-intro)** — Mit *apa*
+
+- **RU:** — С *apa*
+  <sub>attested</sub>
+
+**apa-1)** — 1〉 durch Helle vertreiben.
+
+- **RU:** — 1〉 прогонять светом.
+  <sub>attested</sub>
+
+**vi-intro)** — Mit *vi*
+
+- **RU:** — С *vi*
+  <sub>attested</sub>
+
+**vi-1)** — 1〉 aufleuchten, in oder an das Licht treten, Tag werden.
+
+- **RU:** — 1〉 воссиять, выступить на свет, наступать (о дне).
+  <sub>attested</sub>
+
+**caus-intro)** — Caus. *vāsayati*
+
+- **RU:** — Caus. *vāsayati*
+  <sub>attested</sub>
+
+**caus-1)** — 1〉 ein Gewand anziehen —, tragen lassen.
+
+- **RU:** — 1〉 давать надеть —, носить одеяние.
+  <sub>attested</sub>
+
+**abhi-intro)** — Mit *anu*
+
+- **RU:** — С *anu*
+  <sub>attested</sub>
+
+**abhi-1)** — 1〉 bekleiden, umfangen, (schützend) umgeben mit (Instr.).
+
+- **RU:** — 1〉 облачать, обнимать, (защитно) окружать (Instr.).
+  <sub>attested</sub>
+
+**aa-intro)** — Mit *ni*
+
+- **RU:** — С *ni*
+  <sub>attested</sub>
+
+**aa-1)** — 1〉 darüber anziehen, — umlegen.
+
+- **RU:** — 1〉 надевать сверху, — накидывать.
+  <sub>attested</sub>
+
+**pari-intro)** — Caus.
+
+- **RU:** — Caus.
+  <sub>attested</sub>
+
+**pari-1)** — 1〉 anziehen.
+
+- **RU:** — 1〉 надевать.
+  <sub>attested</sub>
+
+**pari-2-intro)** — 2〉 *nivāsita*
+
+- **RU:** — 2〉 *nivāsita*
+  <sub>attested</sub>
+
+**pari-2a)** — a〉 gekleidet in (Instr.).
+
+- **RU:** — a〉 одетый в (Instr.).
+  <sub>attested</sub>
+
+**vi-intro)** — Mit *pari*
+
+- **RU:** — С *pari*
+  <sub>attested</sub>
+
+**vi-1)** — 1〉 anziehen.
+
+- **RU:** — 1〉 надевать.
+  <sub>attested</sub>
+
+**samava-intro)** — Mit *prati* dass.
+
+- **RU:** — С *prati* dass.
+  <sub>attested</sub>
+
+**samava)** — Caus. *prativāsita* gehüllt in (Instr.).
+
+- **RU:** — Caus. *prativāsita* окутанный в (Instr.).
+  <sub>attested</sub>
+
+**samaa-intro)** — Mit *vi*
+
+- **RU:** — С *vi*
+  <sub>attested</sub>
+
+**samaa-1)** — 1〉 die Kleider (Acc.) tauschen.
+
+- **RU:** — 1〉 менять одежды (Acc.).
+  <sub>attested</sub>
 
 ## vas
 
@@ -4090,36 +4379,67 @@ Z. 2 add *vasiṣṭa*
 — 1) to stay in a place, halt, pass the night (with and without *rātrim*; not infrequently a numeral or pronoun is to be supplied in the Acc. *rātrīs* or *rātrim*), to tarry (also so v. a. "to stay away, be absent"), to abide, have one's location (also of animals), to take up one's residence, dwell, live in or with, to remain (with a predicative Partic. praet. pass. "to remain in this state —, in this condition —, to lie —, to stand still"), to remain at, to hold to, to be located or be somewhere. The where, wherein, or whereby is given in the Loc. *dūratas* "to keep oneself away," *sukham* also so v. a. "to live comfortably, feel at ease."
 
 **PW-2)** — 2〉 beiwohnen, geschlechtlichen Umgang haben mit (Loc.).
+
+- **RU:** — 2) иметь половую связь с кем-л., совокупляться с (Loc.).
 - **EN:** — 2) to cohabit with, have sexual intercourse with (Loc.).
+  <sub>attested</sub>
 
 **PW-3)** — 3〉 ruhen auf (vom Auge), beruhen auf, sich halten zu; mit Loc.
+
+- **RU:** — 3) покоиться на (о взоре), основываться на, держаться чего-л.; с Loc.
 - **EN:** — 3) to rest upon (of the eye), to rest on, be based on, hold to; with Loc.
+  <sub>attested</sub>
 
 **PW-4)** — 4〉 mit Acc. eines Nom. abstr. (insbesondere mit *vāsam* und *vasatim*) in einer Lage u. s. w. sich dauernd befinden, sich widmen, obliegen.
+
+- **RU:** — 4) с Acc. некоего Nom. abstr. (в частности с *vāsam* и *vasatim*), находясь в некотором положении u. s. w., постоянно пребывать, посвящать себя чему-л., предаваться чему-л..
 - **EN:** — 4) with Acc. of a Nom. abstr. (in particular with *vāsam* and *vasatim*) in a state u. s. w. "to be permanently situated, devote oneself to, attend to."
+  <sub>attested</sub>
 
 **PW-5)** — 5〉 an einem Orte (Acc.) verbleiben.
+
+- **RU:** — 5) оставаться, пребывать в некоем месте (Acc.).
 - **EN:** — 5) to remain in a place (Acc.).
+  <sub>attested</sub>
 
 **PW-6)** — 6〉 Jmd (Acc.) betrauen —, sich beschäftigen lassen mit (Instr.).
+
+- **RU:** — 6) поручать кому-л. (Acc.) заниматься, занимать кого-л. чем-л. (Instr.).
 - **EN:** — 6) to charge someone (Acc.) with —, have him be occupied with (Instr.).
+  <sub>attested</sub>
 
 **PW-7)** — 7〉 *uṣita*
+
+- **RU:** — 7) *uṣita*
 - **EN:** — 7) *uṣita*
+  <sub>attested</sub>
 
 **PW-7a)** — a〉 zugebracht, verlebt (ein Tag); _n._ impers. geweilt —, die Zeit zugebracht worden (das Wo im Loc.).
+
+- **RU:** — a) проведённый, прожитый (о дне); _n._ impers. пробывший — тот, кем было проведено время (место обозначено формой Loc.).
 - **EN:** — a) spent, passed (a day); _n._ impers. "having tarried —, the time having been spent" (the where given in the Loc.).
+  <sub>attested</sub>
 
 **PW-7b)** — b〉 wohin man sich zurückgezogen hat [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+
+- **RU:** — b) то, куда кто-л. удалился [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
 - **EN:** — b) whither one has withdrawn [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
+  <sub>attested</sub>
 
 **PW-7c)** — c〉 Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend, abwesend gewesen, seinen Standort habend, gewartet habend ([HEMĀDRI 1,416,13]); der Ort im Loc. oder im Comp. vorangehend, die Zeit im Acc. oder im Comp. vorangehend. Auch mit Hinzufügung von *˚vāsam* und *˚vasatim*.
+
+- **RU:** — c) тот, кто сделал остановку —, переночевал —, пробыл —, задержался —, где-л. пожил, отсутствовал, имел своё местопребывание, ждал ([HEMĀDRI 1,416,13]); при этом место указывается формой, предшествующей Loc. или Comp., а время — формой, предшествующей Acc. или Comp.. Также с добавлением *˚vāsam* и *˚vasatim*.
 - **EN:** — c) having halted —, passed the night —, tarried —, abided —, having lived somewhere, having been absent, having had one's location, having waited ([HEMĀDRI 1,416,13]); the place preceding in the Loc. or in the Comp., the time preceding in the Acc. or in the Comp.. Also with the addition of *˚vāsam* and *˚vasatim*.
+  <sub>attested</sub>
 
 **PW-7d)** — d〉 mit (*saha*) Jmd geschlechtlich gelebt habend.
+
+- **RU:** — d) имевший половую связь с (*saha*) кем-л..
 - **EN:** — d) having lived in sexual union with (*saha*) someone.
 
 **PW-7e)** — e〉 gestanden —, gelegen habend (insbes. über Nacht) von Sachen; das Wo im Loc. oder im Comp. vorangehend, das Wielange im Acc. oder im Comp. vorangehend.
+
+- **RU:** — e) простоявший —, пролежавший (insbes. в течение ночи) — о вещах; обозначение места (где) предшествует в Loc. или в Comp., обозначение продолжительности (сколь долго) предшествует в Acc. или в Comp..
 - **EN:** — e) having stood —, lain (insbes. overnight), of things; the where preceding in the Loc. or in the Comp., the how-long preceding in the Acc. or in the Comp..
 
 **PW-7f)** — f〉 gefastet habend.
@@ -4129,30 +4449,48 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — Caus.
 
 **PW-Caus-1)** — 1〉 *vāsayati*, *˚te* (älter)
+
+- **RU:** — 1) *vāsayati*, *˚te* (более старая форма)
 - **EN:** — 1) *vāsayati*, *˚te* (older)
 
 **PW-Caus-1a)** — a〉 über Nacht Halt machen lassen, — behalten, Quartier geben, beherbergen, wohnen lassen, — heissen.
+
+- **RU:** — a) давать заночевать —, оставлять на ночь, предоставлять постой, давать приют, поселять —, приказывать поселиться.
 - **EN:** — a) to make halt overnight, — keep, give quarters to, lodge, let dwell, — bid to (do so).
 
 **PW-Caus-1b)** — b〉 mit Jmd (Instr.) den Beischlaf vollziehen lassen.
+
+- **RU:** — b) давать совершить половой акт с (Instr.) кем-л..
 - **EN:** — b) to cause to have intercourse with someone (Instr.).
 
 **PW-Caus-1c)** — c〉 über Nacht Etwas stehen lassen. *tisras* sc. *rātrīs*.
+
+- **RU:** — c) оставлять что-л. стоять в течение ночи. *tisras* sc. *rātrīs*.
 - **EN:** — c) to let something stand overnight. *tisras* sc. *rātrīs*.
 
 **PW-Caus-1d)** — d〉 warten lassen, hinhalten, aufhalten.
+
+- **RU:** — d) заставлять ждать, томить ожиданием, задерживать.
 - **EN:** — d) to make wait, put off, detain.
 
 **PW-Caus-1e)** — e〉 bestehen lassen, erhalten.
+
+- **RU:** — e) давать существовать, сохранять.
 - **EN:** — e) to let continue to exist, preserve.
 
 **PW-Caus-1f)** — f〉 bevölkern.
+
+- **RU:** — f) заселять, населять.
 - **EN:** — f) to populate.
 
 **PW-Caus-1g)** — g〉 stellen, setzen, an einen Ort (Loc.) thun. *anadhyāyaṃ mukhe* so v. a. Stillschweigen beobachten, schweigen.
+
+- **RU:** — g) ставить, помещать, на какое-л. место (Loc.) класть. *anadhyāyaṃ mukhe* так v. a. хранить молчание, молчать.
 - **EN:** — g) to place, set, put at a place (Loc.). *anadhyāyaṃ mukhe* so v. a. "to observe silence, be silent."
 
 **PW-Caus-1h)** — h〉 entstehen lassen, hervorrufen.
+
+- **RU:** — h) вызывать к существованию, порождать.
 - **EN:** — h) to let arise, bring about.
 
 **PW-Caus-2)** — 2〉 **vasayati* wohnen.
@@ -4162,19 +4500,34 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *adhi*
 
 **PW-ava-1)** — 1〉 einen Ort beziehen, zum Aufenthaltsort nehmen, einen Platz einnehmen ([PRASANNAR. 74,12]), bewohnen; liegen auf; mit Acc.
+
+- **RU:** — 1) занимать место, избирать местом пребывания, занимать место ([PRASANNAR. 74,12]), обитать в; лежать на; с Acc.
 - **EN:** — 1) to take up a place, make it one's residence, occupy a spot ([PRASANNAR. 74,12]), inhabit; lie upon; with Acc.
+  <sub>attested</sub>
 
 **PW-ava-2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
+
+- **RU:** — 2) держаться, придерживаться (чего-л.), так v. a. жить за счёт (чего-л.), пользоваться (чем-л.); с Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
 - **EN:** — 2) to hold to, so v. a. "to live on, enjoy"; with Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
+  <sub>attested</sub>
 
 **PW-ava-3)** — 3〉 *adhyuṣita*
+
+- **RU:** — 3) *adhyuṣita*
 - **EN:** — 3) *adhyuṣita*
+  <sub>attested</sub>
 
 **PW-ava-3a)** — a〉 besetzt, eingenommen, innegehabt (von einem Orte). bewohnt, wo sich Jmd aufgehalten hat, worauf Jmd gelegen hat. *marutā* so v. a. vom Winde bestrichen.
+
+- **RU:** — a) занятый, захваченный, находящийся во владении (о месте). обитаемый, где кто-л. пребывал, на чём кто-л. лежал. *marutā* так v. a. обвеваемый ветром.
 - **EN:** — a) occupied, taken, held (of a place); inhabited, where someone has stayed, on which someone has lain. *marutā* so v. a. "swept over by the wind."
+  <sub>attested</sub>
 
 **PW-ava-3b)** — b〉 gewohnt —, zugebracht habend, — in (Loc.), *bewohnend (mit Acc.). *acirādhyuṣita* der nur kurze Zeit bei einem Lehrer zugebracht hat [VARĀH. YOGAY. 14,3].
+
+- **RU:** — b) привыкший —, проведший (время) —, в (Loc.), *обитающий (с Acc.). *acirādhyuṣita* тот, кто провёл лишь короткое время у учителя [VARĀH. YOGAY. 14,3].
 - **EN:** — b) having dwelt —, having spent (time) —, in (Loc.), *inhabiting (with Acc.). *acirādhyuṣita* "who has spent only a short time with a teacher" [VARĀH. YOGAY. 14,3].
+  <sub>attested</sub>
 
 **PW-ava-3c)** — c〉 dem man obliegt.
 - **EN:** — c) which one attends to.
@@ -4183,13 +4536,22 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — Caus.
 
 **PW-Caus-ava-1)** — 1〉 über Nacht liegen lassen.
+
+- **RU:** — 1) оставлять лежать на ночь.
 - **EN:** — 1) to let lie overnight.
+  <sub>attested</sub>
 
 **PW-Caus-ava-2)** — 2〉 heimsuchen.
+
+- **RU:** — 2) поражать, насылать беду (на кого-л.), посещать (в знач. «карать»).
 - **EN:** — 2) to visit, afflict.
+  <sub>attested</sub>
 
 **PW-Caus-ava-3)** — 3〉 sich einverstanden erklären mit Jmd (Gen.), zustimmen.
+
+- **RU:** — 3) соглашаться с кем-л. (Gen.), давать согласие.
 - **EN:** — 3) to declare oneself in agreement with someone (Gen.), to consent.
+  <sub>attested</sub>
 
 **PW-Caus-ava-4)** — 4〉 ertragen, erdulden [LALIT. 452,5]. *vāsay*
 - **EN:** — 4) to bear, endure [LALIT. 452,5]. *vāsay*
@@ -4201,60 +4563,116 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *anu*
 
 **PW-anu-1)** — 1〉 Jmd nachziehen, Jmd an einen Ort folgen; mit Acc. der Person [240,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). **anūṣita* mit passiver, neutraler und activer Bed.
+
+- **RU:** — 1) следовать за кем-л., идти вслед за кем-л. куда-л.; с Acc. лица [240,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). **anūṣita* с пассивным, средним и активным Bed.
 - **EN:** — 1) to follow after someone, follow someone to a place; with Acc. of the person [240,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240). **anūṣita* with passive, neuter and active Bed.
+  <sub>attested</sub>
 
 **PW-anu-2)** — 2〉 an einen Ort ziehen, zum Aufenthaltsort wählen.
+
+- **RU:** — 2) переселяться в некое место, избирать его местом пребывания.
 - **EN:** — 2) to move to a place, choose it as one's residence.
+  <sub>attested</sub>
 
 **PW-anu-3)** — 3〉 verweilen, irgendwo zubringen (eine Zeit, Acc.).
+
+- **RU:** — 3) пребывать, проводить (где-л.) (время, Acc.).
 - **EN:** — 3) to tarry, spend (somewhere) (a period of time, Acc.).
+  <sub>attested</sub>
 
 **PW-anu-4)** — 4〉 längere Zeit stehen, älter werden (von Sachen).
+
+- **RU:** — 4) долго стоять, стареть (о вещах).
 - **EN:** — 4) to stand for a longer time, become older (of things).
+  <sub>attested</sub>
 
 **PW-anu-5)** — 5〉 sich einem Gefühl (Acc.) hingeben [CARAKA. 1,8] (*anuvaset* zu lesen).
+
+- **RU:** — 5) предаваться чувству (Acc.) [CARAKA. 1,8] (читать *anuvaset*).
 - **EN:** — 5) to give oneself over to a feeling (Acc.) [CARAKA. 1,8] (read *anuvaset*).
+  <sub>attested</sub>
 
 **PW-anu-6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) fehlerhaft für *anuvartsyate*.
+
+- **RU:** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) ошибочно вместо *anuvartsyate*.
 - **EN:** — 6) *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) erroneous for *anuvartsyate*.
+  <sub>mixed</sub>
 
 **PW-anu-7)** — Caus. das Kalb (Acc.) bei der Mutter belassen [ĀPAST. ŚR. 8,11,14].
+
+- **RU:** — Caus. телёнка (Acc.) оставлять при матери [ĀPAST. ŚR. 8,11,14].
 - **EN:** — Caus. to leave the calf (Acc.) with the mother [ĀPAST. ŚR. 8,11,14].
+  <sub>attested</sub>
 
 **PW-Caus-anu)** — Mit *samanu* obliegen, befolgen; mit Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
+
+- **RU:** — С *samanu* предаваться (чему-л.), следовать (чему-л.), соблюдать; с Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
 - **EN:** — With *samanu* "to attend to, follow, observe"; with Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
+  <sub>attested</sub>
 
 **PW-anupra-intro)** — Mit *antar*
+
+- **RU:** — С *antar*
 - **EN:** — With *antar*
+  <sub>attested</sub>
 
 **PW-anupra-1)** — 1〉 drinnen stecken.
+
+- **RU:** — 1〉 торчать внутри, застревать внутри.
 - **EN:** — 1) to be stuck inside.
+  <sub>attested</sub>
 
 **PW-anupra-2)** — 2〉 mitten in Etwas (Gen.) stecken bleiben.
+
+- **RU:** — 2〉 застревать посреди чего-л. (Gen.).
 - **EN:** — 2) to remain stuck in the middle of something (Gen.).
+  <sub>attested</sub>
 
 **PW-anupra-3)** — Mit *abhi*, *abhyuṣita* verweilt —, zugebracht habend; mit Acc. der Zeit.
+
+- **RU:** — С *abhi*, *abhyuṣita* пребывавший —, проведший (время); с Acc. времени.
 - **EN:** — With *abhi*, *abhyuṣita* "having tarried —, having spent"; with Acc. of the time.
+  <sub>attested</sub>
 
 **PW-abhi-intro)** — Mit *ā*
+
+- **RU:** — С *ā*
 - **EN:** — With *ā*
+  <sub>attested</sub>
 
 **PW-abhi-1)** — 1〉 verweilen, sich aufhalten, wohnen, — in (Loc.).
+
+- **RU:** — 1〉 пребывать, находиться, жить, обитать — в (Loc.).
 - **EN:** — 1) to tarry, abide, dwell, — in (Loc.).
+  <sub>attested</sub>
 
 **PW-abhi-2)** — 2〉 nahe oder gegenwärtig sein.
+
+- **RU:** — 2〉 быть близким или присутствующим.
 - **EN:** — 2) to be near or present.
+  <sub>attested</sub>
 
 **PW-abhi-3)** — 3〉 beziehen (einen Ort), zum Aufenthaltsort wählen, bewohnen; mit Acc. [GAUT.] *gṛhān* so v. a. einen Haushalt gründen, *gurostalpam* so v. a. mit der Frau des Lehrers Ehebruch treiben.
+
+- **RU:** — 3〉 занимать, вселяться (в) (какое-л. место), избирать место жительства, обитать в; с Acc. [GAUT.] *gṛhān* так v. a. основывать хозяйство/дом, *gurostalpam* так v. a. совершать прелюбодеяние с женой учителя.
 - **EN:** — 3) to move into (a place), choose it as one's residence, inhabit; with Acc. [GAUT.] *gṛhān* so v. a. "to set up a household," *gurostalpam* so v. a. "to commit adultery with the teacher's wife."
+  <sub>mixed</sub>
 
 **PW-abhi-4)** — 4〉 zubringen (eine Nacht, Acc.).
+
+- **RU:** — 4〉 проводить (ночь, Acc.).
 - **EN:** — 4) to spend (a night, Acc.).
+  <sub>attested</sub>
 
 **PW-abhi-5)** — 5〉 sich begeben in, antreten (einen Stand).
+
+- **RU:** — 5〉 вступать в, приступать к (какое-л. состояние/сан).
 - **EN:** — 5) to enter into, take up (a state of life).
+  <sub>attested</sub>
 
 **PW-abhi-6)** — 6〉 fleischlich beiwohnen (einer Frau, Acc.).
+
+- **RU:** — 6) иметь плотскую близость, сожительствовать (с женщиной, Acc.).
 - **EN:** — 6) to have carnal intercourse with (a woman, Acc.).
 
 **PW-abhi-7)** — 7〉 statt *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) ist wohl *amā va˚* zu lesen; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) fehlerhaft für *āvāsita*.
@@ -4264,9 +4682,13 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — Caus.
 
 **PW-Caus-abhi-1)** — 1〉 beherbergen, bei sich wohnen lassen.
+
+- **RU:** — 1) давать приют, поселять у себя.
 - **EN:** — 1) to lodge, let dwell with oneself.
 
 **PW-Caus-abhi-2)** — 2〉 beziehen, zum Aufenthaltsort erwählen. *premāvāsita* in dem die Zuneigung ihre Wohnung aufgeschlagen hat.
+
+- **RU:** — 2) поселяться (в), избирать местом пребывания. *premāvāsita* в ком/чём приязнь обрела себе жилище.
 - **EN:** — 2) to move into, choose as one's residence. *premāvāsita* "in whom affection has taken up its abode."
 
 **PW-Caus-abhi-3)** — 3〉 Halt machen, sich lagern (für die Nacht). *āvāsita* mit act. Bed. [HARṢAC. (ed. Bomb.) 470,4].
@@ -4276,9 +4698,13 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *adhyā*
 
 **PW-aa-1)** — 1〉 beziehen, zum Aufenthaltsort wählen, bewohnen [{{MBH. 3,40,52->MBH. 3,70,23||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
+
+- **RU:** — 1) поселяться (в), избирать местом пребывания, обитать (в) [{{MBH. 3,40,52->MBH. 3,70,23||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
 - **EN:** — 1) to move into, choose as one's residence, inhabit [{{MBH. 3,40,52->MBH. 3,70,23||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
 
 **PW-aa-2)** — 2〉 seinen Aufenthalt haben —, wohnen in (Loc.).
+
+- **RU:** — 2) иметь местопребывание —, жить в (Loc.).
 - **EN:** — 2) to have one's residence —, dwell in (Loc.).
 
 **PW-aa-3)** — 3〉 sich begeben in, antreten, obliegen.
@@ -4297,58 +4723,112 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *samā*
 
 **PW-upani-1)** — 1〉 Halt machen, sich lagern (für die Nacht).
+
+- **RU:** — 1) останавливаться на ночлег, располагаться станом (на ночь).
 - **EN:** — 1) to halt, encamp (for the night).
+  <sub>attested</sub>
 
 **PW-upani-2)** — 2〉 beziehen, zum Aufenthaltsort erwählen, bewohnen; mit Acc.
+
+- **RU:** — 2) поселяться (в местности), избирать местом пребывания, обитать; с Acc.
 - **EN:** — 2) to move into, choose as one's residence, inhabit; with Acc.
+  <sub>attested</sub>
 
 **PW-Caus-upani)** — Caus. Halt machen, sich lagern, sich niederlassen [320,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *samāvāsita* mit act. Bed. [VĀSAV. 172,1].
+
+- **RU:** — Caus. останавливаться, располагаться станом, поселяться [320,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *samāvāsita* с act. Bed. [VĀSAV. 172,1].
 - **EN:** — Caus. "to halt, encamp, settle down" [320,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *samāvāsita* with act. Bed. [VĀSAV. 172,1].
+  <sub>attested</sub>
 
 **PW-pra)** — Mit *ud*, *uduṣita* (Conj.) der das Haus verlassen hat, Asket geworden [HEM. PAR. 5,51].
+
+- **RU:** — С *ud*, *uduṣita* (Conj.) тот, кто оставил дом, ставший аскетом [HEM. PAR. 5,51].
 - **EN:** — With *ud*, *uduṣita* (Conj.) "who has left the house, become an ascetic" [HEM. PAR. 5,51].
+  <sub>attested</sub>
 
 **PW-pra-Caus-intro)** — Caus. Act. Med.
+
+- **RU:** — Caus. Act. Med.
 - **EN:** — Caus. Act. Med.
+  <sub>attested</sub>
 
 **PW-pra-Caus-1)** — 1〉 aus seiner Stelle entfernen (z. B. das Havis, das Feuer vom Altar [MAITR. S. 1,8,4]; auch mit Ergänzung von *agnim*), abtrennen (den Kopf), fortschaffen ([VAITĀN. 7,3]), fortgehen heissen ([VAITĀN. 12,1]).
+
+- **RU:** — 1) удалять с его места (z. B. Havis, огонь с алтаря [MAITR. S. 1,8,4]; также с дополнением *agnim*), отделять (голову), устранять, удалять прочь ([VAITĀN. 7,3]), велеть уйти ([VAITĀN. 12,1]).
 - **EN:** — 1) to remove from its place (z. B. the Havis, the fire from the altar [MAITR. S. 1,8,4]; also with *agnim* understood), to sever (the head), to carry away ([VAITĀN. 7,3]), to bid to go away ([VAITĀN. 12,1]).
+  <sub>attested</sub>
 
 **PW-pra-Caus-2)** — 2〉 verwüsten.
+
+- **RU:** — 2) опустошать, разорять.
 - **EN:** — 2) to lay waste.
+  <sub>attested</sub>
 
 **PW-prati)** — Mit *anūd* Caus. in der Richtung von (Acc.) wegrücken [TBR. 2,1,2,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,2,5).
+
+- **RU:** — С *anūd* Caus. в направлении (Acc.) отодвигать, отставлять [TBR. 2,1,2,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,2,5).
 - **EN:** — With *anūd* Caus. "to move away in the direction of" (Acc.) [TBR. 2,1,2,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,2,5).
+  <sub>attested</sub>
 
 **PW-vi1)** — Mit *abhyud* Caus. dass. [MAITR. S. 1,8,4 (119,16)].
+
+- **RU:** — С *abhyud* Caus. dass. [MAITR. S. 1,8,4 (119,16)].
 - **EN:** — With *abhyud* Caus. dass. [MAITR. S. 1,8,4 (119,16)].
+  <sub>attested</sub>
 
 **PW-vi2)** — Mit *paryud* Caus. und mit *samud* Caus. = *ud* Caus. 1〉.
+
+- **RU:** — С *paryud* Caus. и с *samud* Caus. = *ud* Caus. 1).
 - **EN:** — With *paryud* Caus. and with *samud* Caus. = *ud* Caus. 1).
+  <sub>attested</sub>
 
 **PW-sam-intro)** — Mit *upa*
+
+- **RU:** — С *upa*
 - **EN:** — With *upa*
+  <sub>attested</sub>
 
 **PW-sam-1)** — 1〉 verweilen bei Etwas (Acc.), bei Jmd (Gen.), in (Loc.), warten, abwarten.
+
+- **RU:** — 1) пребывать, задерживаться при чём-л. (Acc.), у кого-л. (Gen.), в (Loc.), ждать, выжидать.
 - **EN:** — 1) to tarry over something (Acc.), with someone (Gen.), in (Loc.), to wait, await.
+  <sub>attested</sub>
 
 **PW-sam-2)** — 2〉 fasten, mit Acc. der Speise oder der Zeitdauer ([GAUT. 27,4]; mit Loc. [13]). *upavatsyadbhakta* _n._ [VAITĀN. 1,11. 6,12]. Ausnahmsweise Med. in der Prosa. *upoṣita*
+
+- **RU:** — 2) поститься, с Acc. пищи или продолжительности времени ([GAUT. 27,4]; с Loc. [13]). *upavatsyadbhakta* _n._ [VAITĀN. 1,11. 6,12]. В виде исключения Med. в прозе. *upoṣita*
 - **EN:** — 2) to fast, with Acc. of the food or the duration of time ([GAUT. 27,4]; with Loc. [13]). *upavatsyadbhakta* _n._ [VAITĀN. 1,11. 6,12]. Exceptionally Med. in prose. *upoṣita*
+  <sub>attested</sub>
 
 **PW-sam-2a)** — a〉 gefastet habend, nüchtern.
+
+- **RU:** — a) постившийся, натощак.
 - **EN:** — a) having fasted, sober.
+  <sub>attested</sub>
 
 **PW-sam-2b)** — b〉 in Fasten zugebracht.
+
+- **RU:** — b) проведённый в посте.
 - **EN:** — b) spent in fasting.
+  <sub>attested</sub>
 
 **PW-sam-3)** — 3〉 *beziehen, zum Aufenthaltsort erwählen.
+
+- **RU:** — 3) *поселяться (где-л.), избирать местом пребывания.
 - **EN:** — 3) *to move into, choose as one's residence.
+  <sub>attested</sub>
 
 **PW-sam-4)** — 4〉 sich zu Jmd (Acc.) in die Lehre begeben.
+
+- **RU:** — 4) поступать к кому-л. (Acc.) в учение.
 - **EN:** — 4) to go to someone (Acc.) to study under him.
+  <sub>attested</sub>
 
 **PW-sam-5)** — 5〉 antreten, sich widmen, obliegen; mit Acc.
+
+- **RU:** — 5) приступать (к чему-л.), посвящать себя (чему-л.), заниматься (чем-л.); с Acc.
 - **EN:** — 5) to take up, devote oneself to, attend to; with Acc.
+  <sub>attested</sub>
 
 **PW-sam-6)** — 6〉 *upavasita* [ĀŚV. GṚHY. 1,14,7] fehlerhaft für *upāvasita* (von *sā* mit *upāva*).
 - **EN:** — 6) *upavasita* [ĀŚV. GṚHY. 1,14,7] erroneous for *upāvasita* (from *sā* with *upāva*).
@@ -4357,31 +4837,128 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — Caus.
 
 **PW-Caus-sam-1)** — 1〉 über Nacht behalten, — liegen lassen, aufbewahren [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,2,3).
+
+- **RU:** — 1) оставлять на ночь, — давать полежать, хранить [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,2,3).
 - **EN:** — 1) to keep overnight, — let lie, preserve [SĀMAV. BR. 3,4,4. fgg.] [TS. 6,3,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,2,3).
+  <sub>attested</sub>
 
 **PW-Caus-sam-2)** — 2〉 fasten lassen.
+
+- **RU:** — 2) давать поститься.
 - **EN:** — 2) to make fast.
+  <sub>attested</sub>
 
 **PW-upasam-intro)** — Mit *samupa*
+
+- **RU:** — С *samupa*
 - **EN:** — With *samupa*
+  <sub>attested</sub>
 
 **PW-upasam-1)** — 1〉 fasten [HEMĀDRI 1,401,20]. *samupoṣita* gefastet habend.
+
+- **RU:** — 1) поститься [HEMĀDRI 1,401,20]. *samupoṣita* тот, кто постился.
 - **EN:** — 1) to fast [HEMĀDRI 1,401,20]. *samupoṣita* "having fasted."
+  <sub>attested</sub>
 
 **PW-upasam-2)** — 2〉 *samupoṣita* angetreten habend, obliegend; mit Acc.
+
+- **RU:** — 2) *samupoṣita* тот, кто вступил (в должность и т.п.), лежащий на обязанности; с Acc.
 - **EN:** — 2) *samupoṣita* "having taken up, attending to"; with Acc.
+  <sub>attested</sub>
 
 **PW-su-intro)** — Mit *ni*
+
+- **RU:** — С *ni*
 - **EN:** — With *ni*
+  <sub>attested</sub>
 
 **PW-su-1)** — 1〉 verweilen, sich aufhalten, seinen Standort haben, (von Menschen und Thieren, bisweilen auch von Sachen), wohnen, — in (Loc.). *nivasita* _n._ impers.
+
+- **RU:** — 1) пребывать, находиться, иметь своим местопребыванием, (о людях и животных, иногда также о вещах), жить, обитать, — в (Loc.). *nivasita* _n._ impers.
 - **EN:** — 1) to tarry, abide, have one's location (of persons and animals, occasionally also of things), to dwell, — in (Loc.). *nivasita* _n._ impers.
+  <sub>attested</sub>
 
 **PW-su-2)** — 2〉 bewohnen, innehaben.
+
+- **RU:** — 2) населять, занимать (жилищем).
 - **EN:** — 2) to inhabit, hold.
+  <sub>attested</sub>
 
 **PW-su-3)** — 3〉 geschlechtlich beiwohnen, mit Acc.
+
+- **RU:** — 3) иметь половую близость, с Acc.
 - **EN:** — 3) to cohabit sexually with, with Acc.
+  <sub>attested</sub>
+
+**0-intro)** **5.** √*vas*¦ *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
+
+- **RU:** **5.** √*vas*¦ *vasati* (метрически также Med.; в более древнем языке Med. только *vāvasāna* и с *sam*), Pass. *uṣyate*;
+  <sub>mixed</sub>
+
+**1)** — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.
+
+- **RU:** — 1〉 оставаться на месте, делать остановку, ночевать (с *rātrim* и без него; нередко к числительному или местоимению следует добавить в мыслях Acc. *rātrīs* или *rātrim*), пребывать, задерживаться (также так v. a. отсутствовать, не являться), находиться, иметь своё местопребывание (также о животных), поселяться, обитать, жить в или у, оставаться (с предикативным Partic. praet. pass. оставаться —, пребывать в этом состоянии —, в этом положении —, — лежать —, — стоять неподвижно), останавливаться на, задерживаться на, находиться где-либо или быть. Где, в чём или при чём — в Loc. *dūratas* держаться в стороне, устраняться, *sukham* также так v. a. жить в довольстве, чувствовать себя уютно.
+  <sub>attested</sub>
+
+**f)** — f〉 gefastet habend.
+— Caus.
+
+- **RU:** — f) постившийся.
+ — Caus.
+
+**2)** — 2〉 **vasayati* wohnen.
+— Mit *adhi*
+
+- **RU:** — 2) **vasayati* жить, обитать.
+ — С *adhi*
+  <sub>attested</sub>
+
+**3c)** — c〉 dem man obliegt.
+— Caus.
+
+- **RU:** — c) тому, чему предаются, что исполняют (как долг).
+ — Caus.
+  <sub>attested</sub>
+
+**4)** — 4〉 ertragen, erdulden [LALIT. 452,5]. *vāsay*
+— Mit *adhi*.
+— Mit *anu*
+
+- **RU:** — 4) терпеть, сносить [LALIT. 452,5]. *vāsay*
+— С *adhi*.
+— С *anu*
+  <sub>attested</sub>
+
+**7-note)** — 7〉 statt *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) ist wohl *amā va˚* zu lesen; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) fehlerhaft für *āvāsita*.
+— Caus.
+
+- **RU:** — 7) вместо *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02), по-видимому, следует читать *amā va˚*; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) ошибочно вместо *āvāsita*.
+— Caus.
+
+**3)** — 3〉 Halt machen, sich lagern (für die Nacht). *āvāsita* mit act. Bed. [HARṢAC. (ed. Bomb.) 470,4].
+— Mit *adhyā*
+
+- **RU:** — 3) останавливаться на ночлег, располагаться станом (на ночь). *āvāsita* с act. Bed. [HARṢAC. (ed. Bomb.) 470,4].
+— С *adhyā*
+
+**3)** — 3〉 sich begeben in, antreten, obliegen.
+— Mit *udā* hinausziehen in oder zu (*˚vāsam*). v. l. *upa*.
+— Caus. hinausbringen, — schaffen.
+— Mit *upā* (metrisch st. *upa*) fasten.
+— Mit *samā*
+
+- **RU:** — 3) отправляться в, приступать к, надлежать, быть должным.
+— С *udā* выступать, выезжать в или к (*˚vāsam*). v. l. *upa*.
+— Caus. выводить, доставлять наружу.
+— С *upā* (в метрическом отношении st. *upa*) поститься.
+— С *samā*
+
+**6)** — 6〉 *upavasita* [ĀŚV. GṚHY. 1,14,7] fehlerhaft für *upāvasita* (von *sā* mit *upāva*).
+— Caus.
+
+- **RU:** — 6) *upavasita* [ĀŚV. GṚHY. 1,14,7] ошибочно вместо *upāvasita* (от *sā* с *upāva*).
+ — Caus.
+  <sub>attested</sub>
 
 ## vas
 

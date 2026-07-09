@@ -29,7 +29,7 @@
 - **EN:** *śru*¦ = *sru*.* śruvat, śruvantu* to set itself in motion (namely of the parts); to come apart, to dissolve, to melt away: *ta ā gamantu ta iha śruvantu*
 [ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (according to the Comm. to 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) In later writings too this root and its derivatives are often written with the palatal sibilant. We refer those passages, however, under *sru* .
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — *ā* dass.: *ā vo yāmāya pṛthivī cidaśrot* die Erde selbst wich eurem Lauf
 [ṚV. 1,39,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.06)

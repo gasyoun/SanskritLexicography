@@ -22,7 +22,7 @@
 [ĀŚV. GṚHY. 1,3.]
 [ŚĀṄKH. ŚR. 4,2,1.] med.: *kathamagnīnanvādadhāno 'nvāhāryapacanamāhārayet*
 [AIT. BR. 7,12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,12)
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) weiter übergeben (ein Pfand): *anvāhita*
 [NĀRADA] in [MIT. 260,4.] [YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *yadekasya haste nihitaṃ dravyaṃ tenāpi paścādanyasya haste svāmine dehīti nihitaṃ tat* (*anvāhitam*)
@@ -34,10 +34,10 @@
 - **EN:** — 2) to pass on further (a pledge): *anvāhita*
 [NĀRADA] in [MIT. 260,4.] [YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *yadekasya haste nihitaṃ dravyaṃ tenāpi paścādanyasya haste svāmine dehīti nihitaṃ tat* (*anvāhitam*)
 [MIT.] in [ŚKDR.]
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *anvādhāna, ˚dhi, ˚dheya* .
 
 - **RU:** — Vgl. *anvādhāna, ˚dhi, ˚dheya* .
 - **EN:** — Vgl. *anvādhāna, ˚dhi, ˚dheya* .
-  <sub>DCS 36 · attested</sub>
+  <sub>attested</sub>

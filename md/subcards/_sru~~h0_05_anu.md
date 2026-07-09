@@ -64,7 +64,7 @@
 [PAÑCAT. 3,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?3,9) [6,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?6,3) [234,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?234,5) *tadvā ṛṣīṇāmanuśrutamāsa*
 [ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1) [9,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,25) [3,1,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,4,4)
 [BHĀG. P. 5,25,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,25,8)
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) von Neuem —, wieder hören: *śrutaṃ śrutamevārthamanuśṛṇoti*
 [PRAŚNOP. 4,5.] *śrotraṃ śṛṇvatsarve prāṇā anuśṛṇvanti*
@@ -79,4 +79,4 @@
 [PRAŚNOP. 4,5.] *śrotraṃ śṛṇvatsarve prāṇā anuśṛṇvanti*
 [KAUṢ. UP. 3,2.] — Vergl. *anuśrava* and *˚śrāva*. — desid. "to obey": *kausalyāto 'tiriktaṃ ca so 'nuśuśrūṣate hi mām (mama śuśrūṣate bahu* [ed. Bomb.])
 [R. 2,8,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8,18) Vgl. *anuśuśrūṣā*.
-  <sub>DCS 57 · attested</sub>
+  <sub>attested</sub>

@@ -247,7 +247,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [MBH. 3,15710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15710) [4,1754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1754) [5,3862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3862) *sa tu dolāyamāno vā dvaidhībhāvena pāṇḍavaḥ*
 [7,1211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1211) [13,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4312) [R. 1,10,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,37) [MṚCCH. 77,2.] [MEGH. 81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) [RAGH. 19,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,51) [Spr. 2562](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2562), v. l. [2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723) [MĀLAV. 87.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?87) [ŚIŚ. 3,63. 4,35. 7,64. 18,25.] [KIR. 3,13.] *mukhendoścandrikā vāsya śiśormugdhasmitaṃ vabhau*
 [PĀRŚVANĀTHAK. 4,18] (after [AUFRECHT]).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) = *eva*
 [H. an.] [KULL.] zu [M. 2,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,30) [KĀTY. ŚR. 1,1,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,1,4) [8,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,8,18) [10,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,2) [2,6,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,20) [29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,29) [36.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,36) [3,1,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,1,7) [4,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,4,15) [Spr. 4702.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4702)
@@ -256,7 +256,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [H. an.] [KULL.] к [M. 2,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,30) [KĀTY. ŚR. 1,1,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,1,4) [8,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,8,18) [10,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,2) [2,6,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,20) [29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,29) [36.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,36) [3,1,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,1,7) [4,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,4,15) [Spr. 4702.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4702)
 - **EN:** — 4) = *eva*
 [H. an.] [KULL.] to [M. 2,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,30) [KĀTY. ŚR. 1,1,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,1,4) [8,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,8,18) [10,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,2) [2,6,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,20) [29.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,29) [36.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,6,36) [3,1,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,1,7) [4,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,4,15) [Spr. 4702.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4702)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) selbst, sogar: *devāsuragaṇānvāpi sagandharvoragānbhuvi . yairamitrānprasahyājau vaśīkṛtya jayiṣyasi*
 [R. 1,29,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,3) *naraṃ vā puruṣarṣabha . ānayasva paśuṃ śīghram*
@@ -280,7 +280,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [Spr. 2742.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2742) *nayanābhyāṃ prasupto vā jāgarti nayacakṣuṣā*
 [4335.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4335) *āgamanamapi teṣāṃ na saṃbhāvyate bhaviṣyati vā* thus v. a. granted even that, supposing that
 [PAÑCAT. 246,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?246,21)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) nach interrogativen und relativen pronomm. so v. a. wohl, etwa: *ke vā*
 [MEGH. 55.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?55)
@@ -310,7 +310,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ŚĀK. 25.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?25) [56,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?56,3) *naitatkartuṃ kṣamā vayam . yo vā śaktaḥ sa kurutām*
 [KATHĀS. 18,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,142) *yatra vā*
 [MBH. 1,7694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7694)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) nach
 [H. an.] und [MED.] *samuccaye* d. i. = *ca*; nach
@@ -322,7 +322,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — 7) after
 [H. an.] and [MED.] *samuccaye* d. i. = *ca*; after
 [MED.] also *pādapūraṇe*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. noch u. *atha*
  7) (b), 1. *ka*
@@ -352,7 +352,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — Vgl. ещё u. *atha*
  7) (b), читать *ka*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag: 1) patch)** 1)
  e) und
@@ -363,7 +363,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
  e) и
  3)
  d,) читать *gha*, читать *ya*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag: 1)(c) patch)** 1)
  c)
@@ -372,14 +372,14 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** 1)
  c)
 (ζ), *yad*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **Nachtrag: 2)(l) patch)** 2)
  l,) *yadi* 9).
 
 - **RU:** 2)
  l,) *yadi* 9).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -477,7 +477,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [AV. 4,5,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.005.html#av04.005.02)
 - **EN:** — *ati* to blow across, blow beyond: *na bhūmiṃ vāto 'ti vāti*
 [AV. 4,5,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.005.html#av04.005.02)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -491,7 +491,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 1,148,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.148.html#rv01.148.04) [4,7,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.007.html#rv04.007.10) [7,3,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.003.html#rv07.003.03) [10,142,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.04) *vāyurasya kāmānanuvāti*
 - **EN:** — *anu* to blow upon, fan, blow on further: *ādasya vāto anu vāti śocirasturna śaryām*
 [ṚV. 1,148,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.148.html#rv01.148.04) [4,7,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.007.html#rv04.007.10) [7,3,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.003.html#rv07.003.03) [10,142,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.04) *vāyurasya kāmānanuvāti*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [KĀṬH. 12,13.] nachwehen: *vātasya pravāmupavāmanu vātyarciḥ*
 [AV. 12,1,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.51)
@@ -500,7 +500,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [AV. 12,1,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.51)
 - **EN:** [KĀṬH. 12,13.] to blow after, continue blowing: *vātasya pravāmupavāmanu vātyarciḥ*
 [AV. 12,1,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.51)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** [TS. 5,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,3) [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,4) *anuvāti śubho vāyuḥ senām* anwehen
 [R. 5,73,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,52) *śivaścānuvavau vāyuḥ* wehen
@@ -514,7 +514,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 **anu+vā: anwehen)** [TS. 5,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,3) [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,4) *anuvāti śubho vāyuḥ senām* anwehen
 
 - **RU:** [TS. 5,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,3) [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,5,7,4) *anuvāti śubho vāyuḥ senām* «обвевать»
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **anu+vā: wehen)** [R. 5,73,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,52) *śivaścānuvavau vāyuḥ* wehen
 [MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942)
@@ -523,7 +523,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** [R. 5,73,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,52) *śivaścānuvavau vāyuḥ* «веять»
 [MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942)
 [BHĀG. P. 10,35,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,35,21)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -537,7 +537,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 1,162,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.10)
 - **EN:** — *apa* to exhale, evaporate, give off vapour: *yadūvadhyamudarasyāpavāti*
 [ṚV. 1,162,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.10)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -576,7 +576,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [KĀṬH. 31,3.] *sukho vāto 'bhivāti mām*
 [MBH. 4,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2238) *purābhivāti māruto yamasya yaḥ puraḥsaraḥ*
 [12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -593,7 +593,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *ava* to blow down: *nya1vāto 'va vāti*
 [ṚV. 10,60,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.060.html#rv10.060.11) *tapurjambho vana ā vātacodito yūthe na sāhvā ava vāti vaṃsagaḥ* is carried by the breath of air into
 [1,58,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.058.html#rv01.058.05)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## āvā
 
@@ -616,7 +616,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [186,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.186.html#rv10.186.01) *āvānāvānmātariśvā*
 [KIR. 5,36.] *yatrāmodamupādāya mārga āvāti mārutaḥ*
 [BHĀG. P. 8,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,18) *āvavurvāyavo ghorāḥ*
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [BHAṬṬ. 14,97.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,97) anwehen: *vāyurbhūtvā sarvā diśa ā vāhi*
 [TBR. 3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
@@ -625,7 +625,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TBR. 3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
 - **EN:** [BHAṬṬ. 14,97.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,97) to blow upon: *vāyurbhūtvā sarvā diśa ā vāhi*
 [TBR. 3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 ## ud+vā
 
@@ -641,7 +641,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 — Vgl. 3. *vā* mit *ud* .
 - **EN:** — *ud* to be extinguished by a draught of air: *agnirvā udvānvāyumanupraviśati*
 [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) ([ŚAṂK.] to [BṚH. ĀR. UP. 321).] [KAUŚ. 72.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 3. *vā* mit *ud* .
 - **EN:** — Vgl. 3. *vā* with *ud*.
@@ -658,7 +658,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] zu [BṚH. ĀR. UP. S. 321).]
 - **EN:** — *anūd*, in the wind (acc.), to be blown away, scattered by the wind: *yadā vā agniranugacchati vāyuṃ tarhyanūdvāti tasmādenamudavāsīdatyāhurvāyuṃ hyanūdvāti*
 [ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] to [BṚH. ĀR. UP. S. 321).]
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 ## upa+vā
 
@@ -677,7 +677,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *upa* to blow upon
 [ŚAT. BR. 13,3,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,8,6) to blow at, blow toward: *yūyaṃ tu me sacyupavāta*
 [4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7)
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *upavā* und 3. *vā* mit *upa* .
 - **EN:** — Vgl. *upavā* and 3. *vā* with *upa*.
@@ -694,7 +694,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Schol.
 - **EN:** — *pariṇi* and *praṇi˚*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Schol.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## nis+vā
 
@@ -711,7 +711,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *nis*
  1) to blow: *nirvavuḥ śataśacaiva vṛṣṭivātāḥ savidyutaḥ*
 [R. 4,29,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,11)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlöschen: *nirvāsyataḥ pradīpasya śikheva*
 [ŚĀK. CH. 91,11.]
@@ -720,7 +720,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ŚĀK. CH. 91,11.]
 - **EN:** — 2) to go out, be extinguished: *nirvāsyataḥ pradīpasya śikheva*
 [ŚĀK. CH. 91,11.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich abkühlen, gestillt —, erquickt werden: *tathā vapurjalārdrāpavanairna nirvavau*
 [ŚIŚ. 1,65.] *iti sarvaṃ samunnaddhaṃ na nirvāti kathaṃ ca na*
@@ -738,7 +738,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
 [Spr. 1086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1086)
 [KATHĀS. 104,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,57) [117,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?117,51)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirvāṇa* . — caus. auslöschen; ablöschen, von der Gluth —, von der Hitze befreien, kühlen; stillen, zur Ruhe bringen, erquicken: *yaṃ tvamagne samadahastamu nirvāpayā punaḥ*
 [ṚV. 10,16,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.13) *agnīnnirvāpayāṃ cakruḥ*
@@ -801,13 +801,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [103,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,72) *nirvāpaya prasannena locanenāmṛtaścyutā . dṛṣṭvā māṃ duḥkhadāvāgnidagdham*
 [101,304.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,304) [Verz. d. Oxf. H. 31,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?31) *sa* (*agniḥ*) *me nirvāpya sahasā cakṣuṣī śāmyate punaḥ* thus v. a. dazzling (= *mandīkṛtya*
 [NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **see-also)** — Vgl. 2. *nirvāpaṇa* fg.
 
 - **RU:** — Vgl. 2. *nirvāpaṇa* fg.
 - **EN:** — Vgl. 2. *nirvāpaṇa* fg.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## anunis+vā
 
@@ -821,7 +821,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [Spr. 1611.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1611)
 - **EN:** — *anunis* to go out after (acc.): *nirvāṇamanunirvāti tapanaṃ tapanopalaḥ*
 [Spr. 1611.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1611)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## parinis+vā
 
@@ -838,7 +838,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *parinis* to be completely extinguished, to attain to rest: *ulkeva parinirvāti sma*
 [LALIT. ed. Calc. 20,9.] *śāmyāmi parinirvāmi*
 [MBH. 12,6635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6635) Vgl. *parinirvāṇa* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** caus. vollkommen zur Ruhe bringen: *parinirvāpayitavya*
 
@@ -850,7 +850,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — caus. causative: to bring completely to rest: *parinirvāpayitavya*
 
 [BURNOUF, Intr. 593.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## parā+vā
 
@@ -864,7 +864,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 10,137,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.02)
 - **EN:** — *parā* to blow away: *parānyo vātu yadrapaḥ*
 [ṚV. 10,137,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.02)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+vā
 
@@ -890,7 +890,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [4509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4509) [3,11998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11998) [6,731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.731) [7,328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.328) [9029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9029) [12,6333.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6333) [12081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12081) [HARIV. 4941.](https://sanskrit-lexicon-scans.github.io/hariv?4941) [8790.](https://sanskrit-lexicon-scans.github.io/hariv?8790) [R. 2,71,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,25) [91,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,26) [R. GORR. 2,100,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,21) [3,22,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,15) [52,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,11) [BHĀG. P. 3,9,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,18) [5,24,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,5) [PAÑCAT. 169,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?169,6) of scents: *gandho yasyāḥ krośātpravāti vai*
 [MBH. 1,6934.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6934) [6,138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.138)
 [R. GORR. 2,100,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,23) [125,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,21) ([114,10] [SCHL.]). [4,13,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,21) [5,73,59.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,59)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **ppp)** — Vgl. *pravā, pravāta* (auch
 [R. 5,26,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,1)), *pravāyya* .
@@ -899,7 +899,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [R. 5,26,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,1)), *pravāyya* .
 - **EN:** — Vgl. *pravā, pravāta* (also
 [R. 5,26,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,1)), *pravāyya* .
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 ## vi+vā
 
@@ -934,7 +934,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TS. 3,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,4,3,1)
 [ŚAT. BR. 4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,10)
 [KĀṬH. 13,2. 27,3.] *tato lokānvivātyasau (vāyuḥ)*
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MBH. 12,13379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13379) nach verschiedenen Richtungen hin wehen: *viṣvagvātāśca vivavuḥ*
 [6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) *vāyurvivāti hṛdayāni harannarāṇām*
@@ -955,7 +955,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
 - **EN:** — *anuvi* to blow through in succession or lengthwise: *diśaḥ*
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+vā
 
@@ -972,7 +972,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *sam* to blow
 [TBR. 3,11,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,11,7,2)
 [MBH. 4,1288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1288) [12,12395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12395) [12401](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12401) (where with the [ed. Bomb.] *saṃvāti* st. *saṃbhāti* is to be read).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## anusam+vā
 
@@ -986,7 +986,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
 - **EN:** — *anusam* to blow upon in succession (together): *diśaḥ*
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -999,7 +999,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** 3. *vā*, *vāyati* [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; также med. в Bed. от 2. *vā*; partic. *vāna* (s. bes.) и *vāta* .
 - **EN:** 3. *vā*¦, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; also med. in the Bed. of 2. *vā*; partic. *vāna* (s. bes.) and *vāta* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — 1) matt —, müde werden, sich erschöpfen, erliegen: *na vāyanti subhvo devayuktāḥ*
 [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ*
@@ -1011,7 +1011,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ*
 [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* does not grow weary of consuming
 [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) = 2. *vā* wehen: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
 [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
@@ -1021,7 +1021,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — 2) = 2. *vā* to blow: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
 [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
 [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) misprint for *avārayat* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1034,7 +1034,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *ati* сильно веять: *ativāyati* при сильном ветре [MBH. 12,12420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12420)
 - **EN:** — *ati* to blow violently: *ativāyati* in a violent wind
 [MBH. 12,12420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12420)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1047,7 +1047,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *abhi*, partic. *˚vāta* вялый, хворый: *abhivātāsu goṣu yā anabhivātāḥ syuḥ* [LĀṬY. 8,5,3.] = *vyādhita* Comm.
 - **EN:** — *abhi*, partic. *˚vāta* faint, sickly: *abhivātāsu goṣu yā anabhivātāḥ syuḥ*
 [LĀṬY. 8,5,3.] = *vyādhita* Comm.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1076,13 +1076,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [CHĀND. UP. 4,3,1.] *udavāsīt*
 
 - **RU:** — *ud* слабеть, угасать; о огне так v. a. угасать в себе [TS. 2,2,4,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,4,7) [5,7,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,5,1) *yasyāhavanīye 'nudvāte gārhapatya udvāyet* [TBR. 1,4,4,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,4,6) [7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,7,2) *yadā vā agnirudvāyati* [CHĀND. UP. 4,3,1.] *udavāsīt*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **ud-2)** [ŚAT. BR. 10,3,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) — caus. ausgehen lassen: *āhavanīyamudvāpya*
 [TBR. 1,4,4,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,4,7)
 
 - **RU:** [ŚAT. BR. 10,3,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) — caus. давать угаснуть, гасить: *āhavanīyamudvāpya* [TBR. 1,4,4,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,4,7)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1099,7 +1099,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [PAÑCAV. BR. 9,9,5.]
 [ŚĀṄKH. ŚR. 13,12,10.] falsely *upavāyāt* (as if from 2. *vā*) st. *˚vāyet*
 [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12) *kalaśamupavāyantaṃ prāṇo 'nūpadasyati*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **ppp)** [KĀṬH. 35,16.] *˚vāta* (Gegens. *ārdra*) trocken: Holz
 [ĀŚV. GṚHY. 3,8,4.] *prakṣālitopavāta*
@@ -1109,7 +1109,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** [KĀṬH. 35,16.] *˚vāta* (Gegens. *ārdra*) dry: of wood
 [ĀŚV. GṚHY. 3,8,4.] *prakṣālitopavāta*
 [KAUŚ. 2.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1122,13 +1122,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *nis* угасать, гаснуть: *nirhyagniḥ śītena vāyati* [TS. 6,2,2,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,2,7)
 - **EN:** — *nis* to go out, be extinguished: *nirhyagniḥ śītena vāyati*
 [TS. 6,2,2,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,2,7)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **see-also)** — Vgl. 2. *vā* mit *nis* simpl. und caus.
 
 - **RU:** — Vgl. 2. *vā* с *nis* simpl. и caus.
 - **EN:** — Vgl. 2. *vā* with *nis* simpl. and caus.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## pravā
 
@@ -1143,13 +1143,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *pra* to blow: *vardhamāne hutavahe vāte cāśu pravāyati*
 [MBH. 1,8431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8431) *naiva vātāḥ pravāyante*
 [HARIV. 10758.](https://sanskrit-lexicon-scans.github.io/hariv?10758)
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **see-also)** — Vgl. 2. *vā* mit *pra* .
 
 - **RU:** — Vgl. 2. *vā* с *pra* .
 - **EN:** — Vgl. 2. *vā* with *pra* .
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1162,7 +1162,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *atipra* сильно веять: *vāyunātipravāyatā* [MBH. 12,12418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12418)
 - **EN:** — *atipra* to blow violently: *vāyunātipravāyatā*
 [MBH. 12,12418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12418)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vivā
 
@@ -1175,7 +1175,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *vi* веять: *sarvagandhavahaḥ śucirvāyurvivāyamānaḥ śarīramaspṛśat* [MBH. 12,13221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13221)
 - **EN:** — *vi* to blow: *sarvagandhavahaḥ śucirvāyurvivāyamānaḥ śarīramaspṛśat*
 [MBH. 12,13221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13221)
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1187,7 +1187,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 
 - **RU:** 4. *vā* побочная форма от 1. *van* . partic. *vāta* желанный, вожделенный; атакованный, оспариваемый: *avasyuvāta* [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta* [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
@@ -1254,7 +1254,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [3,51,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.051.html#rv03.051.07) *kṛtaṃ cideno namasā vivāse* "I seek to appease"
 [6,51,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.051.html#rv06.051.08) = *varjayāmi, vināśayāmi*
 [SĀY.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *abhyā* in feindlicher Absicht sich nähern: *parāśaro havirmathīnāmabhyā3 vivāsatām*
 [ṚV. 7,104,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.21) = *āgacchatām*
@@ -1264,7 +1264,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *abhyā* "to approach with hostile intent": *parāśaro havirmathīnāmabhyā3 vivāsatām*
 [ṚV. 7,104,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.21) = *āgacchatām*
 [SĀY.], according to [DURGA] "of those worshippers who" Yātu "are", that is, "of false worshippers."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — *upa* zu gewinnen suchen: *upa vo gīrbhiramṛtaṃ vivāsata*
 [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
@@ -1272,7 +1272,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** — *upa* стараться завоевать: *upa vo gīrbhiramṛtaṃ vivāsata* [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
 - **EN:** — *upa* "to seek to win over": *upa vo gīrbhiramṛtaṃ vivāsata*
 [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **section-T89)** — Vgl.
 
@@ -1280,7 +1280,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 (auch [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
 
 - **RU:** — Vgl. *a˚, indra˚, deva˚* (также [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1341,7 +1341,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — Vgl. *ūy, amota, otu*, 3. *vāna* .
 - **EN:** — Vgl. *ūy, amota, otu*, 3. *vāna*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **main)** 5. *vā*¦, *vayati* und *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
@@ -1369,7 +1369,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [NṚS. TĀP. UP.] in [Ind. St. 9,158. fg.]
 
 - **RU:** 5. *vā*, *vayati* и *˚te* [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus* [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38) [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha* . [P. 7,2,61](https://ashtadhyayi.com/sutraani/7/2/61), Schol. *vayiṣyati; ˚vāya* [P. 6,1,41.](https://ashtadhyayi.com/sutraani/6/1/41) [VOP. 26,217.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,217) partic. *uta* (также *ūta* сотканный, сшитый [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50) [H. 1487](https://sanskrit-lexicon-scans.github.io/abch2/app1?1487)) [P. 6,4,2.](https://ashtadhyayi.com/sutraani/6/4/2) ткать, плести, искусно соединять, также речи, песни u. s. w.: *nāhaṃ tantuṃ na vi jānāmyotuṃ na yaṃ vayanti samare 'tamānāḥ* [ṚV. 6,9,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.009.html#rv06.009.02) *nirṇijam* [9,99,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.099.html#rv09.099.01) *vastrā* [5,47,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.06) [MBH. 1,723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.723) *paṭaṃ vayantyau* [806.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.806) *vayāmi pratyahaṃ pañca phuṭṭikāyugalāni yat* [KATHĀS. 52,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,99) *indrāyārkamahihatya ūvuḥ* [ṚV. 1,61,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.061.html#rv01.061.08) *mā tantuśchedi vayato dhiyaṃ me* [2,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.028.html#rv02.028.05) [38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.038.html#rv02.038.04) [7,33,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.09) [10,53,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.06) [130,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.01) *ko asminprāṇamavayat* [AV. 10,2,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.002.html#av10.002.13) [VS. 19,80.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,80) [82.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,82) [89.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,89) [TBR. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,1,1) [ŚAT. BR. 3,1,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,19) *khamūyurvasudhāmūvuḥ sāyakā rajjuvattatāḥ* оплетать, делать как бы тканью (*āvṛtavantaḥ, chāditavantaḥ* Comm.) [BHAṬṬ. 14,84.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,84) *rajjūta* [KĀTY. ŚR. 15,7,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,7,1) *ūta* [7,9,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,9,27) Schol. к [15,5,9.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,5,9) *atha turīyeṇotaśca* (вероятно, имеется в виду *turīyeṇa otaśca*) *protaśca hyayamātmā siṃhaḥ* вправленный, торчащий, содержащийся в [NṚS. TĀP. UP.] в [Ind. St. 9,158. fg.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1384,7 +1384,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — caus. *vāyayati*
 [P. 7,3,37.](https://ashtadhyayi.com/sutraani/7/3/37)
 [VOP. 18,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,6)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## apavā
 
@@ -1398,7 +1398,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 10,130,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.01)
 - **EN:** — *apa* "to unravel a fabric"
 [ṚV. 10,130,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.01)
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 ## āvā
 
@@ -1453,7 +1453,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [MUṆḌ. UP. 3,1,9.]
 [MAITRYUP. 6,3.] *otaproto 'ham*
 [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789)
-  <sub>DCS 8 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *ṛgāvānam* und *nasyota* .
 - **EN:** — Vgl. *ṛgāvānam* and *nasyota*.
@@ -1470,7 +1470,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ŚAT. BR. 7,3,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,3,2,13) [8,7,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,7,3,10)
 - **EN:** — *samā* "to grasp, to string up": *āditya imāṃ lokānsūtre samāvayate*
 [ŚAT. BR. 7,3,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,3,2,13) [8,7,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,7,3,10)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## udvā
 
@@ -1496,7 +1496,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 * pañcabhī raśmibhirudavayan*
 [TBR. 1,2,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,4,2)
 [AIT. BR. 4,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,19)
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 ## upavā
 
@@ -1516,7 +1516,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [P. 6,1,41](https://ashtadhyayi.com/sutraani/6/1/41), Schol. *upota* "stuck into" (into the quiver or into another device for arrows): *˚paruṣa*
 [ŚĀṄKH. ŚR. 14,22,20.]
 [LĀṬY. 8,5,8.]
-  <sub>DCS 14 · attested</sub>
+  <sub>attested</sub>
 
 ## nirvā
 
@@ -1530,7 +1530,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), Schol.
 - **EN:** — *nis*, *niruta*
 [P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), Schol.
-  <sub>DCS 34 · attested</sub>
+  <sub>attested</sub>
 
 ## parivā
 
@@ -1550,7 +1550,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [BHĀG. P. 5,26,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,36) "to entwine, to bind": *parivayase paśūniva girā vibudhānapi*
 [10,87,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,27) *paryuta* "set, mounted" (with ornament): a chariot
 [ŚAT. BR. 13,2,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,7,8)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## pravā
 
@@ -1654,13 +1654,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [10,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,35) [9,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,7) [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789) *etābhiḥ sarvamidamotaṃ protaṃ ca* "interwoven, traversed"
 [MAITRYUP. 6,3.] [NṚS. TĀP. UP.] in [Ind. St. 9,158. fg.] *prota* "woven stuff, a woven garment", _m._
 [H. 667.](https://sanskrit-lexicon-scans.github.io/abch2/app1?667) _n._ [H. an.] [MED.]
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
 
 - **RU:** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
 - **EN:** — Vgl. 1. *pravayaṇa, pravāṇa* fg.
-  <sub>DCS 79 · attested</sub>
+  <sub>attested</sub>
 
 ## atipravā
 
@@ -1674,7 +1674,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ŚĀṄKH. BR. 11,5.]
 - **EN:** — *atipra* "to set on further, to add further"
 [ŚĀṄKH. BR. 11,5.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## anupravā
 
@@ -1688,7 +1688,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
 - **EN:** — *anupra* "to fasten onto": *śikhām*
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## sampravā
 
@@ -1705,7 +1705,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — *saṃpra* "to interweave": *praugau*
 [ŚĀṄKH. BR. 24,1.]
 [ŚR. 16,7,15. 14,4.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vivā
 
@@ -1734,7 +1734,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [5,4,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,1) *urau pathi vyute (= vivikte*
 [SĀY.]) *tasthurantaḥ*
 [ṚV. 3,54,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.09)
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>
 
 ## samvā
 
@@ -1754,7 +1754,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [VS. 20,41.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,41)
 [ṚV. 2,3,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.06) *tardmasamuta* "pegged together with pins"
 [ŚAT. BR. 3,2,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,2)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1769,7 +1769,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24) Сюда, возможно, также act. *vivasas* или *vivāsas (vi . vasas* Padap.)
 [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
 - **EN:** *vā*¦ desid. med. *vivāsate* to draw to oneself, to gain [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24). Perhaps also to be placed here act. *vivasas* or *vivāsas (vi . vasas* Padap.) [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -1790,7 +1790,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 — *sam* сшивать вместе, скреплять: *saṃ yadvayaṃ yavasādo yavādaḥ*
 [ṚV. 10,27,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.09)
 - **EN:** *vā*¦, *asya sūtrasya śāṭakaṃ vaya* [PAT. a. a. O. 1,116,b. 244,b.] — *upa*, *upoyamāna* being inserted, stuck in: *śūla* [ĀŚV. ŚR. 3,6,23.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **5b)** — *sam* zusammenheften: *saṃ yadvayaṃ yavasādo yavādaḥ*
 [ṚV. 10,27,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.09)
@@ -1807,7 +1807,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **RU:** **1.** *vā* _Indecl._
 — 1〉 или, следует за предшествующим словом, но метрически также предшествует ему. *na — vā* ни — ни, *vā — vā* или — или (при дизъюнкции двух предложений ударение падает на глагол первого, в виде исключения также второго предложения), *kiṃ* (вопросительная частица). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* ни — ни, *vā — na vā* или — или нет, быть может — быть может и нет ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), или — или нет, *vā na — vā* или не — или, *yadi vā — vā* или — или. При более чем двух членах повторяется начиная со второго или местами опускается; если *vā* стоит уже после первого члена, то здесь оно передаётся через или либо ни (в отрицательном предложении). Отрицание не обязательно повторяется при втором и последующих членах. *vā* чередуется также с *ca* и *api*. Вместо простого *vā* также *api vā*, *api vā punaḥ* (на последнем месте), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (на последнем месте [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* или также нет [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (на первом месте), *vā gha*. В *yajñasya vā niśitiṃ voditiṃ vā* первое *vā* является излишним.
 - **EN:** **1.** *vā* _Indecl._
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-1)** — 1〉 oder, nachfolgend, metrisch aber auch vorangehend. *na — vā* weder — noch, *vā — vā* entweder — oder (bei einer Disjunction zweier Sätze wird das Verbum des ersten, ausnahmsweise auch das des zweiten Satzes betont), *kiṃ* (Fragepartikel). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* weder — noch, *vā — na vā* entweder — oder nicht, vielleicht — vielleicht auch nicht ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), ob — oder nicht, *vā na — vā* entweder nicht — oder, *yadi vā — vā* ob — oder. Bei mehr als zwei Gliedern vom zweiten an wiederholt oder hier und da ausfallend; steht *vā* schon nach dem ersten Gliede, so ist es hier durch entweder oder weder (in einem negativem Satze) wiederzugeben. Eine Negation braucht an zweiter und folgender Stelle nicht wiederholt zu werden. Es wechselt *vā* auch mit *ca* und *api*. Statt des einfachen *vā* auch *api vā*, *api vā punaḥ* (an letzter Stelle), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (an letzter Stelle [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* oder auch nicht [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (an erster Stelle), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* ist das erste *vā* überschüssig.
 - **EN:** — 1〉 "or," following, but metrically also preceding. *na — vā* "neither — nor," *vā — vā* "either — or" (in the disjunction of two clauses the verb of the first, exceptionally also that of the second clause, is accented), *kiṃ* (interrogative particle). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* "neither — nor," *vā — na vā* "either — or not, perhaps — perhaps not" ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), "whether — or not," *vā na — vā* "either not — or," *yadi vā — vā* "whether — or." With more than two members it is repeated from the second on, or occasionally omitted here and there; if *vā* already stands after the first member, it is here to be rendered by "either" or "neither" (in a negative clause). A negation need not be repeated at the second or following position. *vā* also alternates with *ca* and *api*. Instead of the simple *vā* also *api vā*, *api vā punaḥ* (in final position), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (in final position [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* "or else not" [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (in first position), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* the first *vā* is superfluous.
@@ -1816,55 +1816,55 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 или, так v. a. или же нет, произвольно, факультативно.
 - **EN:** — 2〉 "or," so v. a. "either or not, at will, optional."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-3)** — 3〉 = *iva* wie [250,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250). [BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59].
 
 - **RU:** — 3〉 = *iva* как [250,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250). [BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59].
 - **EN:** — 3〉 = *iva* "as" [250,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250). [BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-4)** — 4〉 = **1.** *eva* 3〉 [BĀDAR. 3,3,21]. [BĀLAR. 153,7].
 
 - **RU:** — 4〉 = **1.** *eva* 3〉 [BĀDAR. 3,3,21]. [BĀLAR. 153,7].
 - **EN:** — 4〉 = **1.** *eva* 3〉 [BĀDAR. 3,3,21]. [BĀLAR. 153,7].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-5)** — 5〉 selbst, sogar, gesetzt aber auch dass | (mit Fut.).
 
 - **RU:** — 5〉 сам, даже, пусть даже если | (с Fut.).
 - **EN:** — 5〉 "even, indeed, granted even that" | (with Fut.).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-6)** — 6〉 jedoch, indessen [BĀDAR. 3,1,7]. [BĀLAR. 174,7]. [PRASANNAR. 116,9. 121,4]. Vgl. *atha vā* unter *atha*.
 
 - **RU:** — 6〉 однако, между тем [BĀDAR. 3,1,7]. [BĀLAR. 174,7]. [PRASANNAR. 116,9. 121,4]. Vgl. *atha vā* под *atha*.
 - **EN:** — 6〉 "however, nevertheless" [BĀDAR. 3,1,7]. [BĀLAR. 174,7]. [PRASANNAR. 116,9. 121,4]. Vgl. *atha vā* under *atha*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-7)** — 7〉 nach interrogativen und relativen _Pronomm._ so v. a. wohl, etwa.
 
 - **RU:** — 7〉 после вопросительных и относительных _Pronomm._ так v. a. пожалуй, примерно, разве.
 - **EN:** — 7〉 after interrogative and relative _Pronomm._, so v. a. "perhaps, roughly."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
 
 - **RU:** — 8〉 метрически вместо *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
 - **EN:** — 8〉 metrically instead of *ca* and [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1-9)** — 9〉 nach den Lexicographen auch blosser Lückenbüsser.
 
 - **RU:** — 9〉 по лексикографам также простой заполнитель (плеонастическая частица).
 - **EN:** — 9〉 according to the lexicographers, also a mere expletive filler.
-  <sub>DCS 25488 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2)** — 2〉 oder, so v. a. entweder oder auch nicht, beliebig, facultativ.
 
 - **RU:** — 2〉 или, так v. a. или же нет, произвольно, факультативно.
 - **EN:** **2.** √*vā* *vāti*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-1)** — 1〉 wehen [ĀPAST. 1,12,5].
 - **EN:** — 1〉 "to blow" [ĀPAST. 1,12,5].
@@ -1873,37 +1873,37 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 навевать что-либо, приносить ветром.
 - **EN:** — 2〉 "to blow something hither."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-3)** — 3〉 anwehen.
 
 - **RU:** — 3〉 овевать, обдувать.
 - **EN:** — 3〉 "to blow upon."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-4)** — 4〉 riechen, so v. a. Gerüche aushauchen, ausdünsten, sich verbreiten (von einem Geruche).
 
 - **RU:** — 4〉 пахнуть, так v. a. источать запахи, испарять, распространяться (о запахе).
 - **EN:** — 4〉 "to smell," so v. a. "to exhale odours, give off scent, spread" (of a smell).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-5)** — 5〉 einen Geruch (Acc.) riechen, olfacere [VIKR. drāv. 654,24].
 
 - **RU:** — 5〉 запах (Acc.) обонять, olfacere [VIKR. drāv. 654,24].
 - **EN:** — 5〉 to smell a scent (Acc.) "to smell, olfacere" [VIKR. drāv. 654,24].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-6)** — 6〉 **hiṃsāyām*.
 
 - **RU:** — 6〉 **hiṃsāyām*.
 - **EN:** — 6〉 **hiṃsāyām*.
-  <sub>DCS 25488 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2-ava)** — Mit *ati* hinauswehen über (Acc.).
 
 - **RU:** — С *ati* веять поверх, развеиваться над (Acc.).
 - **EN:** — With *ati* "to blow out over" (Acc.).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-anu)** — Mit *anu*
 - **EN:** — With *anu*
@@ -1915,31 +1915,31 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 веять вслед, с Acc.
 - **EN:** — 2〉 "to blow after," with Acc.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-anu-3)** — 3〉 anwehen.
 
 - **RU:** — 3〉 овевать, обдувать.
 - **EN:** — 3〉 "to blow upon."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-anu-4)** — 4〉 anblasen, anfachen.
 
 - **RU:** — 4〉 раздувать, разжигать дуновением.
 - **EN:** — 4〉 "to blow at, fan into flame."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-anu-5)** — 5〉 wehen.
 
 - **RU:** — 5〉 веять, дуть.
 - **EN:** — 5〉 "to blow."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-abhi)** — Mit *apa* ausdünsten.
 
 - **RU:** — С *apa* испарять, источать.
 - **EN:** — With *apa* "to give off vapour, exhale."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-a)** — Mit *abhi*
 - **EN:** — With *abhi*
@@ -1951,13 +1951,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 овевать.
 - **EN:** — 2〉 "to blow upon."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-a-3)** — 3〉 herwehen (intrans.).
 
 - **RU:** — 3〉 веять сюда (intrans.).
 - **EN:** — 3〉 "to blow hither" (intrans.).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-ni)** — Mit *ava*
 - **EN:** — With *ava*
@@ -1969,7 +1969,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 нестись дуновением ветра в (Loc.).
 - **EN:** — 2〉 "to be carried by a breath of air into" (Loc.).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-pra)** — Mit *ā*
 - **EN:** — With *ā*
@@ -1981,25 +1981,25 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 навевать, приносить ветром, с Acc.
 - **EN:** — 2〉 "to blow hither," with Acc.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-pra-3)** — 3〉 anwehen.
 
 - **RU:** — 3〉 овевать, обдувать.
 - **EN:** — 3〉 "to blow upon."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-vi-erloeschen)** — Mit *ud* durch Luftzug erlöschen.
 
 - **RU:** — С *ud* гаснуть от сквозняка, задуваться.
 - **EN:** — With *ud* "to be extinguished by a draught."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-vi-2)** — Mit *anūd* im Winde (Acc.) verwehen.
 
 - **RU:** — С *anūd* на ветру (Acc.) развеиваться.
 - **EN:** — With *anūd* in the wind (Acc.) "to be blown away."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-sam)** — Mit *upa*
 - **EN:** — With *upa*
@@ -2011,13 +2011,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 = **3.** *vā*
 - **EN:** — 2〉 = **3.** *vā*
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nis)** — Mit *upa* durch Vertrocknen ausgehen, eintrocknen [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
 
 - **RU:** — С *upa* угасать от высыхания, иссыхать [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
 - **EN:** — With *upa* "to go out by drying up, dry out" [KĀTY. ŚR. 25,12,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,10) [12](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,12).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nir)** — Mit *nis*
 - **EN:** — With *nis*
@@ -2029,13 +2029,13 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 гаснуть, угасать. О дневном свете [HARṢAC. 56,9].
 - **EN:** — 2〉 "to be extinguished." Of daylight [HARṢAC. 56,9].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nir-3)** — 3〉 sich abkühlen, gestillt —, erquickt werden [ŚIŚ. 6,19].
 
 - **RU:** — 3〉 остывать, успокаиваться —, освежаться [ŚIŚ. 6,19].
 - **EN:** — 3〉 "to cool down, become stilled —, be refreshed" [ŚIŚ. 6,19].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nir-4)** — 4〉 *nirvāṇa*
 - **EN:** — 4〉 *nirvāṇa*
@@ -2074,25 +2074,25 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — С *anunis* угасать вслед за (Acc.) [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 - **EN:** — With *anunis* "to be extinguished after" (Acc.) [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nir-pari)** — Mit *parinis* vollkommen erlöschen, — zur Ruhe gelangen [LALIT. 489,5. 8. 15]. Vgl. *aparinirvāṇa* ([Nachtr. 1]).
 
 - **RU:** — С *parinis* совершенно угасать, — достигать покоя [LALIT. 489,5. 8. 15]. Vgl. *aparinirvāṇa* ([Nachtr. 1]).
 - **EN:** — With *parinis* "to be completely extinguished, — attain rest" [LALIT. 489,5. 8. 15]. Vgl. *aparinirvāṇa* ([Nachtr. 1]).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-nir-pari-caus)** — Caus. *parinirvāpayati* vollkommen erlösen durch die Einführung in das Nirvāṇa [VAJRACCH. 21,2].
 
 - **RU:** — Caus. *parinirvāpayati* совершенно освобождать введением в Nirvāṇa [VAJRACCH. 21,2].
 - **EN:** — Caus. *parinirvāpayati* "to redeem completely by leading into" Nirvāṇa [VAJRACCH. 21,2].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-apa)** — Mit *parā* wegwehen.
 
 - **RU:** — С *parā* сдувать прочь, развеивать.
 - **EN:** — With *parā* "to blow away."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-pari)** — Mit *pra*
 - **EN:** — With *pra*
@@ -2104,7 +2104,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 испарять, пахнуть, распространяться (о запахе).
 - **EN:** — 2〉 "to give off vapour, be smelled, spread" (of a smell).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-vi2)** — Mit *vi*
 - **EN:** — With *vi*
@@ -2116,37 +2116,37 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 продувать насквозь.
 - **EN:** — 2〉 "to blow through."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-vi2-3)** — 3〉 nach verschiedenen Richtungen hin wehen.
 
 - **RU:** — 3〉 дуть в разные стороны.
 - **EN:** — 3〉 "to blow in various directions."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-vitanu)** — Mit *anuvi* der Reihe oder der Länge nach durchwehen.
 
 - **RU:** — С *anuvi* продувать последовательно или в длину.
 - **EN:** — With *anuvi* "to blow through in succession or lengthwise."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-sam2)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
 
 - **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
 - **EN:** — With *sam* "to blow" [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2-samanu)** — Mit *anusam* der Reihe nach (zusammen) anwehen.
 
 - **RU:** — С *anusam* поочерёдно (совместно) овевать.
 - **EN:** — With *anusam* "to blow upon successively (together)."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3〉 = *iva* wie [250,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250). [BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59].
 
 - **RU:** — 3〉 = *iva* как [250,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250). [BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59].
 - **EN:** **3.** √*vā* *vāyati*, *vāyate* (epic)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-1)** — 1〉 matt —, müde werden, sich erschöpfen, erliegen. Mit einem Partic. Praes. nicht müde werden Etwas zu thun.
 - **EN:** — 1〉 "to grow faint —, weary, become exhausted, succumb." With a Partic. Praes. "not to grow weary" of doing something.
@@ -2155,67 +2155,67 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 Act. ([ĀPAST. 1,12,3]) Med. веять, дуть. Смешение с **2.** *vā*; также ниже.
 - **EN:** — 2〉 Act. ([ĀPAST. 1,12,3]) Med. "to blow." Confusion with **2.** *vā*; likewise further below.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-3)** — 3〉 verlustig gehen, mit Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
 
 - **RU:** — 3〉 лишаться, утрачивать, с Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
 - **EN:** — 3〉 "to lose, forfeit," with Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) fehlerhaft für *avārayat*.
 
 - **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) ошибочно вместо *avārayat*.
 - **EN:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94), erroneous for *avārayat*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-5)** — 5〉 *vāna* trocken.
 
 - **RU:** — 5〉 *vāna* сухой.
 - **EN:** — 5〉 *vāna* "dry."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-ava)** — Mit *ati* heftig wehen. *ativāyati* Loc. bei heftigem Winde.
 
 - **RU:** — С *ati* дуть сильно. *ativāyati* Loc. при сильном ветре.
 - **EN:** — With *ati* "to blow violently." *ativāyati* Loc. "in a violent wind."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-apa)** — Mit *apa* Med. abgehen, eingehen, so v. a. schwinden u. s. w. [GOP. BR. 2,2,4].
 
 - **RU:** — С *apa* Med. отходить, угасать, так v. a. убывать, иссякать u. s. w. [GOP. BR. 2,2,4].
 - **EN:** — With *apa* Med. "to depart, perish," so v. a. "to vanish" u. s. w. [GOP. BR. 2,2,4].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-apa-2)** — Mit *abhi*, *abhivāta* siech, krank. Statt dessen fehlerhaft *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
 
 - **RU:** — С *abhi*, *abhivāta* хворый, больной. Ошибочно вместо этого *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
 - **EN:** — With *abhi*, *abhivāta* "sickly, ill." Instead of this, erroneously, *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-vi)** — Mit *ud* matt werden, hinsterben; vom Feuer in sich erlöschen.
 
 - **RU:** — С *ud* слабеть, угасать; об огне гаснуть самому по себе.
 - **EN:** — With *ud* "to grow faint, die away;" of fire "to go out of itself."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-vi-caus)** — Caus. *udvāpayati* ausgehen lassen (Feuer).
 
 - **RU:** — Caus. *udvāpayati* давать угаснуть, гасить (огонь).
 - **EN:** — Caus. *udvāpayati* "to let go out" (a fire).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-nis)** — Mit *upa* durch Vertrocknen ausgehen, eintrocknen. *upavāta* trocken geworden, trocken [BAUDH. 1,6,12,3].
 
 - **RU:** — С *upa* гаснуть от высыхания, иссыхать. *upavāta* ставший сухим, сухой [BAUDH. 1,6,12,3].
 - **EN:** — With *upa* "to go out by drying up, dry out." *upavāta* "having become dry, dry" [BAUDH. 1,6,12,3].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-nir)** — Mit *nis* erlöschen.
 
 - **RU:** — С *nis* гаснуть, угасать.
 - **EN:** — With *nis* "to be extinguished."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-pra)** — Mit *pra*
 - **EN:** — With *pra*
@@ -2227,37 +2227,37 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 *pravāta* изнурённый, усталый [CARAKA. 1,7].
 - **EN:** — 2〉 *pravāta* "exhausted, weary" [CARAKA. 1,7].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-vi2)** — Mit *atipra* heftig wehen.
 
 - **RU:** — С *atipra* дуть сильно.
 - **EN:** — With *atipra* "to blow violently."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3-sam)** — Mit *vi* Med. wehen.
 
 - **RU:** — С *vi* Med. веять, дуть.
 - **EN:** — With *vi* Med. "to blow."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4)** **4.** *vā*¦ Nebenform von **1.** *van*. *˚vāta* begehrt, erwünscht.
 
 - **RU:** **4.** *vā* Nebenform von **1.** *van*. *˚vāta* желанный, вожделенный.
 - **EN:** **4.** *vā* secondary form of **1.** *van*. *˚vāta* "desired, wished for."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4-a)** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) herbeiziehen, gewinnen [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
 
 - **RU:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) привлекать, добывать, снискивать [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
 - **EN:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) "to draw hither, win over" [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4-a2)** — Mit *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
 
 - **RU:** — С *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
 - **EN:** — With *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4-ni)** — Mit *ā* Desid.
 - **EN:** — With *ā* Desid.
@@ -2269,78 +2269,78 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 
 - **RU:** — 2〉 Med. умиротворять, заглаживать (долг, вину).
 - **EN:** — 2〉 Med. "to appease, make good" (a debt).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4-abhi)** — Mit *abhyā* Desid. Act. in feindlicher Absicht sich nähern.
 
 - **RU:** — С *abhyā* Desid. Act. приближаться с враждебным умыслом.
 - **EN:** — With *abhyā* Desid. Act. "to approach with hostile intent."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4-abhini)** — Mit *upa* Desid. Act. zu gewinnen suchen.
 
 - **RU:** — С *upa* Desid. Act. стремиться снискать, добиваться расположения.
 - **EN:** — With *upa* Desid. Act. "to seek to win over."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **2.** √*vā*¦, *vāti*
 — 1〉 wehen [ĀPAST. 1,12,5].
 
 - **RU:** **2.** √*vā*, *vāti*
 — 1〉 веять, дуть [ĀPAST. 1,12,5].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_anu_1)** — Mit *anu*
 — 1〉 hinwärts wehen [ĀPAST. 1,6,15].
 
 - **RU:** — С *anu*
 — 1〉 веять в направлении [ĀPAST. 1,6,15].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_anu_3)** — 3〉 anwehen.
 
 - **RU:** — 3〉 овевать.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_upa_1)** — Mit *abhi*
 — 1〉 zuwehen, herbeiwehen.
 
 - **RU:** — С *abhi*
 — 1〉 навевать, приносить ветром.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_ni_1)** — Mit *ava*
 — 1〉 herabwehen.
 
 - **RU:** — С *ava*
 — 1〉 веять вниз.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_pra_1)** — Mit *ā*
 — 1〉 herwehen (intrans.), wehen [ŚIŚ. 11,19].
 
 - **RU:** — С *ā*
 — 1〉 веять сюда (intrans.), веять [ŚIŚ. 11,19].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_pra_3)** — 3〉 anwehen.
 
 - **RU:** — 3〉 овевать.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_abhi_1)** — Mit *upa*
 — 1〉 anwehen, anblasen.
 
 - **RU:** — С *upa*
 — 1〉 овевать, обдувать.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_ni2_1)** — Mit *nis*
 — 1〉 wehen.
 
 - **RU:** — С *nis*
 — 1〉 веять, дуть.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_ni2_4)** — 4〉 *nirvāṇa*
 — a〉 erloschen; von der Sonne so v. a. untergegangen [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
@@ -2351,7 +2351,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 — a〉 угасший; о солнце так v. a. зашедший [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
 — b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобождённый от уз существования.
 — c〉 *неподвижный.
-  <sub>DCS 25488 · mixed</sub>
+  <sub>mixed</sub>
 
 **mit_ni2_caus)** — Vgl. *anirvāṇa*.
 — Caus. *nirvāpayati*
@@ -2368,42 +2368,42 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 — 3〉 унимать, успокаивать, освежать. *vairam* унять свою месть [DH. V. 7,7].
 — 4〉 слепить (глаза).
 — 5〉 приводить к Nirvāṇa [LALIT. 376,8].
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_sam_1)** — Mit *pra*
 — 1〉 wehen.
 
 - **RU:** — С *pra*
 — 1〉 веять, дуть.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_vi_1)** — Mit *vi*
 — 1〉 verwehen, auseinanderblasen.
 
 - **RU:** — С *vi*
 — 1〉 развеивать, разносить ветром.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** **3.** √*vā*¦, *vāyati*, *vāyate* (episch)
 — 1〉 matt —, müde werden, sich erschöpfen, erliegen. Mit einem Partic. Praes. nicht müde werden Etwas zu thun.
 
 - **RU:** **3.** √*vā*, *vāyati*, *vāyate* (эпич.)
 — 1〉 слабеть —, уставать, изнемогать, изнурять себя. С Partic. Praes. не уставать делать что-либо.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_abhi_erschoepf_1)** — Mit *pra*
 — 1〉 Act. Med. wehen.
 
 - **RU:** — С *pra*
 — 1〉 Act. Med. веять, дуть.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **mit_upa_vaa_1)** — Mit *ā* Desid.
 — 1〉 Act. Med. zu gewinnen —, herbeizuziehen suchen, huldigen, locken.
 
 - **RU:** — С *ā* Desid.
 — 1〉 Act. Med. стремиться добыть —, привлечь к себе, чествовать, склонять.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -2491,17 +2491,17 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 **apa)** 3. vā¦ mit apa, apavāta hinkränkelnd, [Kauś. 31,6.] — Mit ā vertrocknen, austrocknen, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a. {part=,seq=23735,type=,n=10}
 
 - **RU:** 3. vā с apa, apavāta угасающий, чахнущий, [Kauś. 31,6.] — С ā высыхать, иссыхать, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus-upapra)** 5. vā¦ [Kaus.] vāpayate weben lassen, [Divyāvad. 231,8] ff. — Mit ˚upapra [S II,368,22] (upaprotavyam). {part=,seq=23736,type=,n=3}
 
 - **RU:** 5. vā [Kaus.] vāpayate заставлять ткать, [Divyāvad. 231,8] ff. — С ˚upapra [S II,368,22] (upaprotavyam).
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **vāti)** vā¦ , vāti ˚gehen, [H 48,3. 11] ? {part=,seq=23737,type=,n=1}
 
 - **RU:** vā , vāti ˚идти, [H 48,3. 11] ?
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 ## vā
 
@@ -2517,9 +2517,9 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 **mit T2)** **2.** *vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
 
 - **RU:** С *pra*, vgl. *saṃvatsarapravāta*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** **5.** *vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
 
 - **RU:** Caus. *vāpayate* заставлять ткать [DIVYĀVAD. 231,8. fgg.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

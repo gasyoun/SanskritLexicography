@@ -7,4 +7,4 @@
 
 - **RU:** — *apa* s. *apavaktar, apavācana* .
 - **EN:** — *apa* s. *apavaktar, apavācana*.
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>

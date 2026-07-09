@@ -19,4 +19,4 @@
 [BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam* so v. a. "falls under the concept of transience"
 [TARKAS. 41.] — caus. *vyāpita* "filled"
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
-  <sub>DCS 418 · attested</sub>
+  <sub>attested</sub>

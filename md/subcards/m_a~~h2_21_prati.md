@@ -21,7 +21,7 @@
 [3,60,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.060.html#rv03.060.04) [VS. 20,37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,37) [KAUŚ. 20.] partic. *pratimita* reflected, mirroring itself
 [KATHĀS. 23,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,42)
 [RĀJA-TAR. 5,482.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,482)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **ref)** — Vgl. *pratimā, pratimāna, pratimeya* .
 - **EN:** — Vgl. *pratimā, pratimāna, pratimeya*.

@@ -10,7 +10,10 @@
 - **RU:** — *pra*
  1) предлагать, подносить: *yaddha tyadvāṃ purumī|asya sominaḥ pra mitrāso na dadhire svābhuvaḥ*
 [ṚV. 1,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.02)
-  <sub>DCS 11 · attested</sub>
+- **EN:** — *pra*
+ 1) to set before, to offer, to present: *yaddha tyadvāṃ purumī|asya sominaḥ pra mitrāso na dadhire svābhuvaḥ*
+[ṚV. 1,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.02)
+  <sub>attested</sub>
 
 **2)** — 2) dahingeben: *ātmānameva *
 
@@ -25,4 +28,10 @@
 [TS. 2,3,2,9.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,9) *āyuḥ prajānāṃ pradadhyātpramāyukāḥ syuḥ*
 [KĀṬH. 28,1.] — Столь часто встречающееся partic. *prahita* посланный, выпущенный, направленный на без сомнения восходит к *hi*; desgl. *saṃprahita* . Vgl. *pradhāna* . — caus.: *(prabhagnā camūḥ) diśaścatasraḥ sahasā pradhāpitā*
 [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074); вероятно, лишь ошибочно вместо *pradhāvitā* .
-  <sub>DCS 11 · attested</sub>
+- **EN:** — 2) to give away, to give up: *ātmānameva *
+
+* tadyajamāno 'gnau pradadhāti*
+[TS. 2,3,2,9.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,9) *āyuḥ prajānāṃ pradadhyātpramāyukāḥ syuḥ*
+[KĀṬH. 28,1.] — The so frequently occurring partic. *prahita* sent forth, shot off, directed at is doubtless to be traced back to *hi*; desgl. *saṃprahita*. Vgl. *pradhāna*. — caus.: *(prabhagnā camūḥ) diśaścatasraḥ sahasā pradhāpitā*
+[MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074); probably only erroneous for *pradhāvitā*.
+  <sub>attested</sub>

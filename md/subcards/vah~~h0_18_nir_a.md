@@ -13,4 +13,4 @@
 - **EN:** — *nirā* "to carry off, abduct"
 [PAÑCAV. BR. 9,4,11.] "to fetch": *nāvo hiraṇyayīrāsanyābhiḥ kuṣṭhaṃ nirāvahan*
 [AV. 5,4,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.004.html#av05.004.05)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

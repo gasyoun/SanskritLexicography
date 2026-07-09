@@ -13,7 +13,7 @@
 - **EN:** — *vyud*
  1) to issue forth in various directions: *yathāgneḥ kṣudrā viṣphuliṅgā vyuccaranti*
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) untreu dem Gatten
 
@@ -37,4 +37,4 @@
 [4732. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4732) *vyuccaraṃśca mahādoṣaṃ nara evāparādhyati*
 [12,9518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9518) to commit adultery with (instr.): *vyuccarantyapi duḥśīlā dāsaiḥ paśubhireva ca*
 [3,12868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12868)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

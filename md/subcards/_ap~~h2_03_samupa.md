@@ -7,4 +7,4 @@
 
 - **RU:** — *samupa* desid. vgl. *samupepsu* .
 - **EN:** — *samupa* desid. vgl. *samupepsu*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

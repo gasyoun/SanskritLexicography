@@ -7,7 +7,7 @@
 
 - **RU:** √*āp*¦ mit *ava* Caus. заставлять кого-л. (Acc.) достигать чего-л. (Acc.) [NAIṢ. 8,89].
 - **EN:** √*āp* with *ava* Caus. to cause someone (Acc.) to obtain something (Acc.) [NAIṢ. 8,89].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **1)** √*āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 - **EN:** √*āp* with *anu* Desid. to join in agreement, to chime in. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
@@ -22,7 +22,7 @@
 
 - **RU:** √*āp*¦ mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 - **EN:** √*āp* with *vi*, *vyāpta* 4) contained in everything, spread everywhere [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] according to Comm. = *sarvāṅgīna*. According to [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57), *vyāpta* is also = *khyāta*.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **idx1)** √*āp*¦ mit *anu* Desid. 3.
 - **EN:** √*āp* with *anu* Desid. 3.
@@ -43,7 +43,7 @@
 
 - **RU:** √*āp*¦ mit *pra*, *prāpta* I. подходящий, приличествующий, целесообразный [JĀTAKAM. 22].
 - **EN:** √*āp* with *pra*, *prāpta* I. fitting, proper, advisable [JĀTAKAM. 22].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **anu_verb)** √*āp*¦ mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 — Mit *paryava* Etwas ganz in sich aufnehmen, sich ganz zu eigen machen [VAJRACCH. 28,14]. [30,17].
@@ -52,7 +52,7 @@
 - **RU:** √*āp*¦ mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
 — Mit *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17].
 — Mit *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>
 
 **cross_refs)** √*āp*¦ mit *anu* Desid. 3.
 — Mit *ava* Caus. 1.
@@ -65,4 +65,4 @@
 — Mit *payarva* 3.
 — Mit *vi* I. 6.
 — Mit *sam* I. 3.
-  <sub>DCS 2328 · attested</sub>
+  <sub>attested</sub>

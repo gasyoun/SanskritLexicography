@@ -25,10 +25,10 @@
 [5,6002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6002) [R. 2,31,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,17) *tejasā*
 [MBH. 1,8142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8142) excluded from: *gaganāt*
 [3651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3651)
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *viprahāṇa* .
 
 - **RU:** Vgl. *viprahāṇa*.
 - **EN:** — Vgl. *viprahāṇa*.
-  <sub>DCS 26 · lexicographic</sub>
+  <sub>lexicographic</sub>

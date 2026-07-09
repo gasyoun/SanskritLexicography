@@ -28,7 +28,7 @@
 [R. 1,69,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,9) *sarvāmimāṃ pṛthivīṃ nirjigāya*
 [MBH. 1,3685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3685) [2,491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.491) [3,12272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12272) [15253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15253)
 [BHAṬṬ. 7,94.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,94)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besiegen, überwinden: *pauravaṃ yudhi nirjitya*
 [MBH. 2,1025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1025) [3,2447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2447) [5,7035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7035)
@@ -76,10 +76,10 @@
 [R. 1,69,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,11) *(śāpaḥ) mama ca vyavasāyena tapasā caiva nirjitaḥ*
 [MBH. 3,2970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2970) *saundaryanirjitaratidvijarājakānti* defeated so v. a. surpassed
 [CAURAP. 30.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?30) [32.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?32)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *nirjaya, nirjiti* .
 
 - **RU:** — Vgl. *nirjaya, nirjiti* .
 - **EN:** — Vgl. *nirjaya, nirjiti*.
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

@@ -25,7 +25,7 @@
 [MBH. 14,692. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.692) *pracīrṇa*
 [690. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.690) *iti sma vācaḥ śrūyante pracarantyastataḥ*
 [6,2189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2189)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) voranschreiten zu, gelangen zu (acc.): *avīrahā pra carā soma duryān*
 [ṚV. 1,91,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.091.html#rv01.091.19) [7,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.10) *pra carā puṣṭimaccha*
@@ -49,7 +49,7 @@
 [VS. 16,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,61) *antarvāṇīṣu pra carā su jīvase*
 [ṚV. 9,82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.082.html#rv09.082.04) to visit: *tasyāstīrthaṃ pracaritam*
 [R. 2,55,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,5)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) wandeln: *nigūḍhaḥ pracarati*
 [PRAB. 33,10.] *atha ca yāvatārdhena nabhovīthyāṃ pracarati taṃ kālamayanamācakṣate*
@@ -67,7 +67,7 @@
 [BHĀG. P. 5,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,6) to be in circulation, come into circulation: *tāvadrāmāyaṇakathā lokeṣu pracariṣyati*
 [R. 1,2,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,40) [41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,41) [6,112,101.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,101) *granthasya pracarato 'sya*
 [VARĀH. BṚH. S. 106,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?106,6)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) an's Werk gehen, nam. an das heilige Werk; Etwas verrichten; mit dem instr. des Gegenstandes an oder mit welchem Etwas verrichtet wird: *pra vāmardhvaryuścaratu payasvān*
 [AV. 7,74,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.074.html#av07.074.05) [20,135,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.135.html#av20.135.04) *namo 'gnaye pracarate puruṣāya ca te namaḥ*
@@ -145,7 +145,7 @@ set hand to the liturgical proceedings
 [MBH. 14,815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.815) *cikitsāyāṃ pracaratu*
 [13,4569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4569) *dehendriyaprāṇamanodhiyo 'mī yadaṃśaviddhāḥ pracaranti karmasu*
 [BHĀG. P. 6,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,24)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) vor sich gehen, von Statten gehen: *pravargyeṣu pracaratsu*
 [BHĀG. P. 5,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,2)
@@ -154,7 +154,7 @@ set hand to the liturgical proceedings
 [BHĀG. P. 5,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,2)
 - **EN:** — 5) to take place, to proceed, get on: *pravargyeṣu pracaratsu*
 [BHĀG. P. 5,3,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,2)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) thun, vollziehen, treiben: *yaiḥ karmabhiḥ pracaritaiḥ śuśrūṣyante dvijātayaḥ*
 [M. 10,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,100) — caus. laufen —, herumgehen —, weiden lassen: *aśvaṃ pracārayāmāsa vājimedhāya dīkṣitaḥ*
@@ -166,10 +166,10 @@ set hand to the liturgical proceedings
 - **EN:** — 6) to do, perform, carry on: *yaiḥ karmabhiḥ pracaritaiḥ śuśrūṣyante dvijātayaḥ*
 [M. 10,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,100) — caus. to let run —, let move about —, let graze: *aśvaṃ pracārayāmāsa vājimedhāya dīkṣitaḥ*
 [HARIV. 785.](https://sanskrit-lexicon-scans.github.io/hariv?785)
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *pracara* u. s. w.
 
 - **RU:** — Vgl. *pracara* u. s. w.
 - **EN:** — Vgl. *pracara* u. s. w.
-  <sub>DCS 410 · attested</sub>
+  <sub>attested</sub>

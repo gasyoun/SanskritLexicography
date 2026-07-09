@@ -10,4 +10,4 @@
 [R. 2,66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
 - **EN:** — *abhisam* to perceive, hear: *etadabhisaṃśrutya*
 [R. 2,66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

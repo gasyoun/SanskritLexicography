@@ -13,7 +13,7 @@
 - **EN:** — *ud*
  1) to point at, point towards: *prāgudīcīmuddiśati* (Schol. = *udyamayati*)
 [ŚĀṄKH. ŚR. 2,9,22.]
-  <sub>DCS 567 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anzeigen, bezeichnen, angeben, bestimmen: *panthānamṛṣiṇoddiṣṭam*
 [R. 2,56,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,4) *prathamoddiṣṭamāspadam*
@@ -70,7 +70,7 @@
 [MĀRK. P. 26,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,17) the praed. in the loc.: *aneḍamūka uddiṣṭaḥ śaṭhe*
 [MED. k. 223. n. 231.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,223) to designate —, appoint to: *vidyādharāṃstāṃstānvarānuddiśato bahūn . pituḥ*
 [KATHĀS. 26,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,63)
-  <sub>DCS 567 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anweisen, auseinandersetzen, lehren: *samāsena teṣāṃ prasthānabhedo 'troddiśyate*
 [MADHUS.] in [Ind. St. 1,13,4.] *satāṃ kenoddiṣṭaṃ viṣamamasidhārāvratamidam*
@@ -82,7 +82,7 @@
 - **EN:** — 3) to instruct, expound, teach: *samāsena teṣāṃ prasthānabhedo 'troddiśyate*
 [MADHUS.] in [Ind. St. 1,13,4.] *satāṃ kenoddiṣṭaṃ viṣamamasidhārāvratamidam*
 [BHARTṚ. 2,54.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,54) [61.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,61)
-  <sub>DCS 567 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) absol. *uddiśya* mit Hinweisung auf (acc.) so v. a. gegen, auf, zu, nach; zur Bez. des Zieles (*lakṣyam* kann dabei stehen) einer Bewegung: *saṃdhāya cāpe tānāśu lakṣyamuddiśya rākṣasān . mumoca rāghavo vāṇān*
 [R. 3,26,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,20) *tameva mṛgamuddiśya taṃ śaraṃ rāghavaḥ śitam . mumoca*
@@ -208,7 +208,7 @@
 [R. GORR. 1,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,80,21) *vacasi bhavati saṃtyāgamuddiśya vārttā śrutimukharamukhānāṃ kevalaṃ paṇḍitānām* thus v. a. the practice of renunciation
 [BHARTṚ. 1,56.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,56) With obj. to be supplied: *sālaṃkārāngajānaśvānkanyāścaiva varastriyaḥ . uddiśyoddiśya sarvebhyo dadau* according to the sense thus v. a. to this one, to that one
 [MBH. 15,414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.414)
-  <sub>DCS 567 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *uddeśa* fgg., *ekoddiṣṭa* (auch
 [YĀJÑ. 1,250](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,250)).
@@ -217,4 +217,4 @@
 [YĀJÑ. 1,250](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,250)).
 - **EN:** — Vgl. *uddeśa* fgg., *ekoddiṣṭa* (also
 [YĀJÑ. 1,250](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,250)).
-  <sub>DCS 567 · attested</sub>
+  <sub>attested</sub>

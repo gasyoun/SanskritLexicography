@@ -10,4 +10,4 @@
 [P. 7,3,36](https://ashtadhyayi.com/sutraani/7/3/36); s. u. *antar, api, abhi, ava, ā, ni, saṃni, pari, pra* .
 - **EN:** — caus. *dhāpayati*
 [P. 7,3,36](https://ashtadhyayi.com/sutraani/7/3/36); s. u. *antar, api, abhi, ava, ā, ni, saṃni, pari, pra* .
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

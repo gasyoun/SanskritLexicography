@@ -76,7 +76,7 @@
 [M. 2,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,116) *yaḥ svāminānanujñātamādhiṃ bhuṅkte*
 [8,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,150) *tena kramāgataṃ rājyaṃ sāvadhānena śāsatā . anujajñe mitaṃ kālaṃ pūrvabhūpālapaddhatiḥ* was approved thus v. a. taken as a guiding rule
 [RĀJA-TAR. 1,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,353)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas nachsehen, verzeihen: *anupraveśe yadvīra kṛtavāṃstvaṃ mamāpriyam . sarvaṃ tadanujānāmi*
 [MBH. 1,7772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7772) *tanmayā prītimatā yuvayoranujñātam*
@@ -91,7 +91,7 @@
 [MBH. 1,7772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7772) *tanmayā prītimatā yuvayoranujñātam*
 [ŚĀK. 65,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,4) *nūnamidānīmanujñātam*
 [MĀLAV. 42,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?42,9)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Etwas bereuen: *agṛhṇāṃ yacca te pāṇima gniṃ paryaṇayaṃ ca yat . anujānāmi tatsarvamasmin loke paratra ca ..*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8)
@@ -100,7 +100,7 @@
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8)
 - **EN:** — 3) to repent of something: *agṛhṇāṃ yacca te pāṇima gniṃ paryaṇayaṃ ca yat . anujānāmi tatsarvamasmin loke paratra ca ..*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd (acc.) ermächtigen, eine Erlaubniss ertheilen: *yadi māṃ nānujānāsi*
 [MĀLAV. 18.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?18) *vanavāsānuyānāya māmanujñātumarhasi*
@@ -139,7 +139,7 @@
 [YĀJÑ. 1,68.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,68)
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230)
 [PAÑCAT. 72,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?72,11)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd (acc.) erlauben fortzugehen, verabschieden, entlassen: *anujānāmi *
 
@@ -202,7 +202,7 @@
 [R. 6,97,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,4) *anujñātaṃ tu rāmeṇa tadvimānaṃ manojavam . utpapāta*
 [108,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,108,1) *sarvamevānujānāmi cīrāṇyevānuyāntu me* I bid farewell to everything, I leave everything behind
 [2,37,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,4)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) Jmd auffordern, bitten, beschwören: *tvāṃ sāhamanujānāmi na gantavyamito vanam*
 [R. 2,21,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,25) jubere
@@ -214,7 +214,7 @@
 - **EN:** — 6) to call upon someone, to request, to entreat: *tvāṃ sāhamanujānāmi na gantavyamito vanam*
 [R. 2,21,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,25) jubere
 [WEST.]
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) sich Jmd (acc.) gnädig erweisen, seine Gewogenheit an den Tag legen: *anvajānātsa dharmajño munirdivyena cakṣuṣā . pāṇḍoḥ putrān — āsyatāmiti cābravīt*
 [MBH. 3,11631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11631) *te māṃ vīryeṇa yaśasā — astraiścāpyanvajānanta*
@@ -229,7 +229,7 @@
 [MBH. 3,11631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11631) *te māṃ vīryeṇa yaśasā — astraiścāpyanvajānanta*
 [12045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12045) *sarvabhūteṣvanujñātaḥ śaṃkareṇa*
 [8,823.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.823)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) nach *anujñāta*, wenn es ein Lob einschliesst, ist das nachfolgende Wort im comp., so wie auch ein nachfolgendes verbum finitum, unbetont, gaṇa *kāṣṭhādi* zu [P. 8,1,67.](https://ashtadhyayi.com/sutraani/8/1/67)
 [68.](https://ashtadhyayi.com/sutraani/8/1/68)
@@ -238,7 +238,7 @@
 [68.](https://ashtadhyayi.com/sutraani/8/1/68)
 - **EN:** — 8) according to *anujñāta*, when it includes a commendation, the following word is in the comp., and likewise a following finite verb is unaccented, gaṇa *kāṣṭhādi* to [P. 8,1,67.](https://ashtadhyayi.com/sutraani/8/1/67)
 [68.](https://ashtadhyayi.com/sutraani/8/1/68)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **desid-intro)** — Vgl. *anujñā* . — caus.
 - **EN:** — Vgl. *anujñā* . — caus.
@@ -264,7 +264,7 @@
 [9,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,82) *te kauravyamanujñāpya dhṛtarāṣṭam — dahane tu saputrāyāḥ kuntyā buddhimakārayan*
 [MBH. 1,5636.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5636) *sa mātaramanujñāpya tapasyeva mano dadhe*
 [2414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2414)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **desid-3)** — 3) Jmd um Erlaubniss bitten fortzugehen, sich verabschieden bei (acc.): *evamāśvāsya rājānam — anujñāpya — tatraivāntaradhīyata*
 [MBH. 3,8274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8274) *jagmatuśca yathākāmamanujñāpya parasparam*
@@ -290,7 +290,7 @@ From the intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 - **RU:** — Vgl. *anujñā* . — caus.
  1) просить разрешения для (acc.): *ghṛtāktamannamanujñāpayati*
 [ĀŚV. GṚHY. 4,7.]
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) Jmd um Erlaubniss bitten fortzugehen, sich verabschieden bei (acc.): *evamāśvāsya rājānam — anujñāpya — tatraivāntaradhīyata*
 [MBH. 3,8274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8274) *jagmatuśca yathākāmamanujñāpya parasparam*
@@ -301,7 +301,7 @@ From the intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 [MBH. 3,8274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8274) *jagmatuśca yathākāmamanujñāpya parasparam*
 [12781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12781) [HARIV. 8712.](https://sanskrit-lexicon-scans.github.io/hariv?8712) [R. 2,71,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,13) [3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16) [PAÑCAT. 233,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?233,14) — desid. act. *anujijñāsati*
 [P. 1,3,58.](https://ashtadhyayi.com/sutraani/1/3/58)
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>
 
 **desid)** [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) gewähren —, zugestehen wollen: *anujijñāsatevātha laṅkādarśanamindunā — udaiyata*
 [BHAṬṬ. 8,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,35) Jmd (acc.) eine Erlaubniss zu ertheilen beabsichtigen: *putramanujijñāsati*
@@ -312,4 +312,4 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 [BHAṬṬ. 8,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,35) намереваться дать кому-л. (acc.) разрешение: *putramanujijñāsati*
 [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.
 О intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
-  <sub>DCS 592 · attested</sub>
+  <sub>attested</sub>

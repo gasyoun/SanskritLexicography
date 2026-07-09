@@ -13,7 +13,7 @@ or "course against, to rush upon": *madhye vasiṣva tuvinṛmṇorvoḥ* (namel
 [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* "pursuing gain"
 [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* "ward off the ravenous fire, that it not, like a lion, pounce upon the works" (d. h. implements, possessions) "in the house"
 [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — *anu* den Lauf richten nach: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* er eilt nach der linken Seite (wo der Anrufende sich denkt): unsern Schmaus verschmäht er nicht
 [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)

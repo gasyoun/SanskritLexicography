@@ -43,7 +43,7 @@
 [YĀJÑ. 2,143.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,143) *dāyādupāgataḥ (dāsaḥ)* fallen to by inheritance
 [MIT. 268,1.] to return
 [VID. 332.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?332)
-  <sub>DCS 600 · attested</sub>
+  <sub>attested</sub>
 
 **2)** in einen Zustand, ein Verhältniss treten, — gerathen: *aikamatyamupāgamya* einerlei Meinung werden [R. 1,34,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,32) *vaśamupāgataḥ* in Jmdes Gewalt gekommen [YĀJÑ. 1,342.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,342) *doṣam* zu Schaden gekommen [2,256.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,256) *pañcatvam* [PAÑCAT. 120,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?120,13) *vṛddhibhāvam* [50,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?50,8) *prakṛtiṃ svām* [R. 3,48,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,48,4) *kṣayam* [MBH. 1,6622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6622) *parāṃ tuṣṭim* [7712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7712) *prītim* [3,1797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1797) *moham* [ŚĀK. 92,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?92,11) [DHŪRTAS. 95,16.] *paraṃ kopam* [PAÑCAT. 117,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?117,16) *parāṃ tṛptim* [87,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?87,9) *khyātim* [I,416.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,416) *jalakrīḍām* sich hingeben [MBH. 1,6440.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6440)
 
@@ -79,7 +79,7 @@
 [87,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?87,9) *khyātim*
 [I,416.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,416) *jalakrīḍām* to give oneself up to
 [MBH. 1,6440.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6440)
-  <sub>DCS 600 · attested</sub>
+  <sub>attested</sub>
 
 **3 (cross-reference))** — Vgl. *upāgama* und u. *gam* mit *upa* .
 - **EN:** — Vgl. *upāgama* and u. *gam* with *upa* .
@@ -87,4 +87,4 @@
 **3)** 
 
 - **RU:** — Vgl. *upāgama* и u. *gam* с *upa*.
-  <sub>DCS 600 · lexicographic</sub>
+  <sub>lexicographic</sub>

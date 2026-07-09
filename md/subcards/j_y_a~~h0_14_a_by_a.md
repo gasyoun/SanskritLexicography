@@ -7,4 +7,4 @@
 
 - **RU:** — *abhyā* s. *abhyājñāya* .
 - **EN:** — *abhyā* s. *abhyājñāya* .
-  <sub>DCS 5059 · lexicographic</sub>
+  <sub>lexicographic</sub>

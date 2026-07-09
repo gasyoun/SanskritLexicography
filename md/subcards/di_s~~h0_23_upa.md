@@ -13,7 +13,7 @@
 - **EN:** — *upa*
  1) to point to, refer to: *mūrdhānamupadiśan*
 [ŚAT. BR. 10,6,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,11)
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anzeigen, anweisen, angeben, auseinandersetzen, lehren: *panthānamupadeṣṭum*
 [R. GORR. 2,55,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,55,2) [9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,55,9) [3,19,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,27) [RĀJA-TAR. 4,287.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,287) *budhopadiṣṭena pathā*
@@ -103,7 +103,7 @@
 [MBH. 12,6644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6644) *upadekṣyamāṇa*
 [BHĀG. P. 5,19,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,10) to advise, counsel to: *sa kiṃ mantrī yaḥ prathamaṃ bhūmityāgaṃ yuddhodyogaṃ yuddhodyogaṃ vopadiśati*
 [HIT. 57,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,1)
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) die gehörige Stelle anweisen, ordnen: *yathānupūrvyā ca yathāvayaśca yatsaṃniyogaiśca tadopadiṣṭāḥ (upaviṣṭāḥ?) . annāni te vai bubhujuḥ*
 [HARIV. 8438.](https://sanskrit-lexicon-scans.github.io/hariv?8438)
@@ -112,7 +112,7 @@
 [HARIV. 8438.](https://sanskrit-lexicon-scans.github.io/hariv?8438)
 - **EN:** — 3) to assign its proper place, arrange: *yathānupūrvyā ca yathāvayaśca yatsaṃniyogaiśca tadopadiṣṭāḥ (upaviṣṭāḥ?) . annāni te vai bubhujuḥ*
 [HARIV. 8438.](https://sanskrit-lexicon-scans.github.io/hariv?8438)
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) erwähnen, aufführen: *upadiṣṭā varṇāḥ*
 [VS. PRĀT. 1,34.] *pṛṣodarādīni yathopadiṣṭam*
@@ -136,7 +136,7 @@
 [BHĀG. P. 5,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,29) [21,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,7) *na dvitīyaśca sādhvīnāṃ kvacidbhartopadiśyate* nowhere is mention made of a second husband in the case of virtuous wives
 [M. 5,162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,162) [3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) *kiṃ kulenopadiṣṭena śīlamevātra kāraṇam* why speak of lineage, of descent?
 [MṚCCH. 126,12.]
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) Jmd (acc.) anweisen. belehren: *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
 [HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] Mit acc. der Person und acc. der Sache: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
@@ -148,7 +148,7 @@
 - **EN:** — 5) to instruct, teach someone (acc.): *vidvānevopadeṣṭavyo nāvidvāṃstu kadā ca na . vānarānupadiśyājñānsthānabhraṃśaṃ yayuḥ khagāḥ ..*
 [HIT. III,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,5) [DAŚAK.] in [BENF. Chr. 185,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) [VEDĀNTAS. (Allah.) No. 19.] With acc. of the person and acc. of the thing: *ājagāma gharmaḥ priyā veṣamivopadeṣṭum*
 [RAGH. 16,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,43)
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) festsetzen, vorschreiben: *brāhmaṇasyaiva karmaitadupadiṣṭam*
 [M. 2,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,190) *pāṇigrahaṇasaṃskāraḥ savarṇāsūpadiśyate*
@@ -181,7 +181,7 @@
 [VID. 180.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?180)
 [PAÑCAT. 43,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,10) *digupadiṣṭe bahuvrīhisamāse*
 [P. 1,1,28](https://ashtadhyayi.com/sutraani/1/1/28), Sch.
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) anweisen so v. a. befehlen über, beherrschen: *pṛthūpadiṣṭā* (*dharitrī*)
 [KUMĀRAS. 1,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,2)
@@ -190,7 +190,7 @@
 [KUMĀRAS. 1,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,2)
 - **EN:** — 7) to instruct, thus v. a. to command over, rule: *pṛthūpadiṣṭā* (*dharitrī*)
 [KUMĀRAS. 1,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,2)
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) benennen, pass. heissen: *tasmādandhatāmimraṃ tamupadiśanti*
 [BHĀG. P. 5,26,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *niṣkāmaṃ jñānapūrvaṃ tu nivṛttamupadiśyate*
@@ -208,10 +208,10 @@
 [M. 12,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,89) *vyāna ityupadiśyate*
 [MBH. 12,6873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6873) [14,318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.318)
 [ŚRUT. 31.]
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *upadeśa, upadeśaka, upadeśanā, upadeśin, upadeśya* fgg.
 
 - **RU:** — Vgl. *upadeśa, upadeśaka, upadeśanā, upadeśin, upadeśya* fgg.
 - **EN:** — Vgl. *upadeśa, upadeśaka, upadeśanā, upadeśin, upadeśya* fgg.
-  <sub>DCS 804 · attested</sub>
+  <sub>attested</sub>

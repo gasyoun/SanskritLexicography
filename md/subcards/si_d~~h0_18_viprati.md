@@ -16,7 +16,7 @@
  1) "denied, forbidden"
 [KĀTY. ŚR. 4,3,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,3,19)
 [MBH. 5,4489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4489)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) entgegengesetzt, widersprechend
 [NIR. 1,15.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,15)
@@ -37,4 +37,4 @@ Vārtt. 2 zu [P. 2,4,12.](https://ashtadhyayi.com/sutraani/2/4/12) 1 zu [85.](ht
 [UTTARAR. 108,3 (146,7).] [ŚAṂK.] zu [BṚH. ĀR. UP. S. 38.] *año* (abl.) *vuñ vipratiṣiddham* so v. a. *vipratiṣedhāt*
 Vārtt. 2 zu [P. 4,2,39.](https://ashtadhyayi.com/sutraani/4/2/39) *pūrva˚* (vgl. *pūrvavipratiṣedha* under *vipratiṣedha* 2)
 Vārtt. 2 zu [P. 2,4,12.](https://ashtadhyayi.com/sutraani/2/4/12) 1 zu [85.](https://ashtadhyayi.com/sutraani/2/4/85) 2 zu [4,2,39.](https://ashtadhyayi.com/sutraani/4/2/39) 1 zu [5,1,2.](https://ashtadhyayi.com/sutraani/5/1/2)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

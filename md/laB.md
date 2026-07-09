@@ -86,7 +86,7 @@ z. B. *labhati*
 [14,2644](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2644) and *ālambhantām*
 [285](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.285) the [ed. Bomb.] correctly reads *alabhanta*
 u. s. w.; [2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) both have Ausgg. *pralambhante*.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) erwischen, fassen; antreffen, finden: *namucimasuraṃ nālabhata*
 [TBR. 1,7,1,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,1,6) *dūra iva paśuṃ labhate*
@@ -215,7 +215,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [5,14,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,21) *kātyāyanasyāyaṃ labdhaḥ kālaḥ prakāśane* thus v. a. the moment has come
 [KATHĀS. 5,90.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,90) *labdhatīrtha* thus v. a. having the opportunity
 [BHĀG. P. 3,19,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,4)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erhalten, bekommen, in den Besitz von Etwas gelangen, theilhaftig werden (pass. zu Theil werden), wiedererlangen: *yajñe lapsyamāno bhavati* er wird beim Opfer Etwas bekommen d. h. einen Gewinn davon haben
 [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *dhanam*
@@ -464,7 +464,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [R. GORR. 2,121,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,121,1) [4,7,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,24) *netranirvāṇam*
 [ŚĀK. 33,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?33,1) *dhṛtim*
 [KATHĀS. 18,315.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,315) *labdhadivyarasāsvāda*
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -567,7 +567,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [TRIK. 3,3,148.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,148)
 [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
 - **EN:** [346.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,346) *śāntimātmanaḥ* [R. 1,64,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,16) *śamam* [2,85,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,19) *kevalatvam* [MAITRYUP. 6,21.] *svātantryam* [22.] *puruṣatvam* [MBH. 5,7382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7382) [Spr. 4171.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4171) [BHĀG. P. 5,24,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,1) *brāhmaṇyam* [R. 1,65,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,25) *yauvarājyam* [R. GORR. 2,12,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,12,27) *svāsthyam* [ŚĀK. 58,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?58,5) *vāllabhyam* [RĀJA-TAR. 6,158.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,158) *mānam* [R. 2,109,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,3) *dyutiṃ saiṃhīm* [Spr. 2822.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2822) *pratiṣṭhām* [3965.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3965) *viśrāntim* [VIKR. 20.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?20) *viśrambham* [R. 2,60,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,60,7) *vṛddhim* [ṚT. 1,25.] *prabhāvam* [KATHĀS. 19,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,11) *suprathām* [Spr. 5226.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5226) *praveśam* [MEGH. 41.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41) [PAÑCAT. 31,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?31,9) *khaṅgadhārāpariṣvaṅgam* [Spr. 2486.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2486) *śiraḥkṛntanavidhim* [4147.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4147) *sakhyam* [R. 4,7,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,4) *sevām* [RĀJA-TAR. 5,154.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,154) *labdhayuṣmatprasāda* [BHĀG. P. 3,15,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,7) *anujñām* [MBH. 3,14797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14797) [AK. 2,7,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,10) *duḥkham* [R. 2,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,25) [Spr. 267.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?267) [3262.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3262) *kleśam* [2062.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2062) *mṛtyum* [R. 3,49,54.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,54) [MĀRK. P. 43,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?43,20) *śāpam* [74,42.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,42) *janāttiraskriyām* [Spr. 169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?169) *asaṃmānam, viḍambanam* [163.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?163) *vañcanām* [R. 2,34,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,37) *pāpam* [75,38.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,38) *nidrām* [R. 2,51,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,9) [86,10](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,86,10) ([94,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,94,11) [GORR.]). [Spr. 4521.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4521) [VET. in LA. (III) 20,5.] *sparśam, saṃsparśam* to experience a touch, be touched [RĀJA-TAR. 4,22.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,22) [KATHĀS. 4,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,63) [37,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,17) *karpūraḥ pāvakaspṛṣṭaḥ saurabhaṃ labhatetarām* [Spr. 3329.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3329) *alabhatatarāṃ nirvṛtim* [KATHĀS. 26,283.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,283) *labdha = prāpta* [AK. 3,2,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,54) [TRIK. 3,3,148.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,148) [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) mit einem infin.
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65) zu — bekommen: *draṣṭum*
@@ -597,7 +597,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашёл брахмана для совершения жертвоприношения
 [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)
 - **EN:** 3) with an infin. [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65) to get to —: *draṣṭum* [MBH. 4,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.95) [Spr. 5131](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5131) (vgl. *na tamiha darśanāya labhate* [CHĀND. UP. 8,3,1.]). *bhoktum* [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), Sch. *praveṣṭuṃ labhate* he succeeds in entering [HARIV. 8249.](https://sanskrit-lexicon-scans.github.io/hariv?8249) *na cainaṃ kaścidāroḍhuṃ* (v. l. for *ārūḍhaṃ) labhate rājasattamam* thus v. a. no one succeeds in seeing how the king ascends [MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) *martumapi na labhyate* one is not granted to die more than once [KATHĀS. 96,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?96,22) *nādharmo labhyate kartuṃ loke vaidyādhare* thus v. a. no wrong can —, may — be committed [106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* he found no brahmin to offer the sacrifice [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) besitzen, haben: *apatyotpādanāya sāmarthyamalabhamānaḥ*
 [SĀY.] zu [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *labhante nātmalābhaṃ raśmayaścandrasūryayoḥ*
@@ -609,7 +609,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [MĀRK. P. 60,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?60,8) *anvayamalabhamānaḥ* не имеющий логической связи
 [SĀH. D. 12,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?12,2) [15,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?15,6)
 - **EN:** 4) to possess, have: *apatyotpādanāya sāmarthyamalabhamānaḥ* [SĀY.] to [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *labhante nātmalābhaṃ raśmayaścandrasūryayoḥ* [MĀRK. P. 60,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?60,8) *anvayamalabhamānaḥ* having no logical connection [SĀH. D. 12,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?12,2) [15,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?15,6)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) wahrnehmen, erkennen: *tadabhijñānalabdhā*
 [KATHĀS. 39,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,107) herausbringen, hinter Etwas kommen: *satyamalabhamānaḥ*
@@ -625,7 +625,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [WEBER, JYOT. 83.] *bhramaṇaṃ recanam* u. s. w. *gamanādeva labhyate* так v. a. подпадает под понятие
 [BHĀṢĀP. 6.]
 - **EN:** 5) to perceive, recognize: *tadabhijñānalabdhā* [KATHĀS. 39,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,107) to find out, get to the bottom of something: *satyamalabhamānaḥ* [KULL.] to [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109) pass. to result, turn out, come to light [SARVADARŚANAS. 125,9. fgg. 131,1. 159,10.] [SĀH. D. 4,8.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?4,8) as the result of a calculation [WEBER, JYOT. 83.] *bhramaṇaṃ recanam* u. s. w. *gamanādeva labhyate* thus v. a. falls under the notion of [BHĀṢĀP. 6.]
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -633,7 +633,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 
 
 **1)** — caus. *lambhayati* [P. 7,1,64.](https://ashtadhyayi.com/sutraani/7/1/64) aor. *alalambhat* [VOP. 18,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,1) 1) bewirken, dass Jmd Etwas erlangt, bekommt, theilhaftig wird; mit dopp. acc.: *āsanam* [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām* [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8) [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa* [MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ* [MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) [HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* giebt Vid. ein Zeichen [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam* [ŚATR. 14,78.] [ŚAṂK.] zu [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ* [MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) *strībhāvaṃ cāpi lambhitā* [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ* [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ* [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha* [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) statt des acc. auch instr. der Sache: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan* [ŚIŚ. 1,25.]
-- **EN:** causative 1) to cause someone to attain, get, become possessed of something; with dopp. acc.: *āsanam* [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām* [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8) [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa* [MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ* [MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) [HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* gives Vid. a sign [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam* [ŚATR. 14,78.] [ŚAṂK.] to [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ* [MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) *strībhāvaṃ cāpi lambhitā* [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ* [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ* [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha* [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) instead of the acc. also instr. of the thing: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan* [ŚIŚ. 1,25.]
+- **EN:** caus. *lambhayati* [P. 7,1,64.](https://ashtadhyayi.com/sutraani/7/1/64) aor. *alalambhat* [VOP. 18,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,1) 1) to cause someone to attain, get, become possessed of something; with dopp. acc.: *āsanam* [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām* [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8) [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa* [MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ* [MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) [HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* gives Vid. a sign [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam* [ŚATR. 14,78.] [ŚAṂK.] to [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ* [MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) *strībhāvaṃ cāpi lambhitā* [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ* [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ* [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha* [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) instead of the acc. also instr. of the thing: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan* [ŚIŚ. 1,25.]
 
 **2)** — 2) bekommen, erhalten: *svabhāryāṃ kule mahati lambhitām* (= *pariṇītām*
 
@@ -645,7 +645,7 @@ Comm.)
 Comm.)
 [BHĀG. P. 6,1,65.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,65)
 - **EN:** 2) to get, receive: *svabhāryāṃ kule mahati lambhitām* (= *pariṇītām* Comm.) [BHĀG. P. 6,1,65.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,65)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) herausbringen, hinter Etwas kommen: *asākṣikeṣu tvartheṣu mitho vivādamānayoḥ . avindaṃstattvataḥ satyaṃ śapathenāpi lambhayet ..*
 [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
@@ -653,7 +653,7 @@ Comm.)
 - **RU:** — 3) выяснить, дознаться до чего-л.: *asākṣikeṣu tvartheṣu mitho vivādamānayoḥ . avindaṃstattvataḥ satyaṃ śapathenāpi lambhayet ..*
 [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
 - **EN:** 3) to find out, get to the bottom of something: *asākṣikeṣu tvartheṣu mitho vivādamānayoḥ . avindaṃstattvataḥ satyaṃ śapathenāpi lambhayet ..* [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **caus-intro)** — caus. *lambhayati*
 [P. 7,1,64.](https://ashtadhyayi.com/sutraani/7/1/64) aor. *alalambhat*
@@ -662,7 +662,7 @@ Comm.)
 - **RU:** — caus. *lambhayati*
 [P. 7,1,64.](https://ashtadhyayi.com/sutraani/7/1/64) aor. *alalambhat*
 [VOP. 18,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,1)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) bewirken, dass Jmd Etwas erlangt, bekommt, theilhaftig wird; mit dopp. acc.: *āsanam*
 [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām*
@@ -699,7 +699,7 @@ Comm.)
 [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha*
 [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) вместо acc. также instr. вещи: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
 [ŚIŚ. 1,25.]
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -752,13 +752,13 @@ Comm.)
 [P. 3,3,7.](https://ashtadhyayi.com/sutraani/3/3/7) *lipsita*
 [R. 4,1,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,1,30)
 - **EN:** desiderative desid. *lipsate (līpsate* [TBR.]). [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [8,4,55.](https://ashtadhyayi.com/sutraani/8/4/55) [VOP. 19,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,9) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,12) here and there also act. for metrical reasons; to seek to seize —, to catch —, to get —, to attain —, to receive —, to win: *ruruṃ nipāne* (thus the [ed. Bomb.]) *lipsantau vyāghravattāvatiṣṭhatām* [MBH. 7,3792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3792) [15,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.225) [BHAṬṬ. 7,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,88) *bhagasya* [TBR. 1,6,10,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,10,5) [ŚĀṄKH. ŚR. 8,8,9.] *havyam* [GOBH. 1,9,14.] [LĀṬY. 5,3,9.] *bhikṣām* [M. 6,50.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,50) *alabdhaṃ caiva lipseta* [Spr. 233.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?233) *yo 'dattādāyino hastāllipseta brāhmaṇo dhanam* [M. 8,340.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,340) *lipsantaḥ sarvavastūni* [BHĀG. P. 8,8,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,35) [HIT. II,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,8) (probably faulty). *kāmyāṃ vṛttiṃ lipsamānaḥ* [MBH. 12,9431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9431) *deśānalabdhāllipseta labdhāṃśca paripālayet* [M. 9,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,251) *sāmnaibārthaṃ tato lipset* [MBH. 3,1256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1256) *ajñātalipsaṃ* (_adv._, *˚psāṃ* [ed. Bomb.]) *lipseta* [12,9987.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9987) [13,1617](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1617) (act.). [14,882.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.882) [R. GORR. 1,32,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,32,9) [2,26,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,26,37) [KĀM. NĪTIS. 11,32.] *antaram* [MBH. 5,1637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1637) [2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2645) *tasmātsnehaṃ na lipseta mitrebhyo dhanasaṃcayāt* [Spr. 5012.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5012) *guṇādhikānmudaṃ lipsedanukrośaṃ guṇādhamāt* [BHĀG. P. 4,8,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,34) *lipsyamāna* [P. 3,3,7.](https://ashtadhyayi.com/sutraani/3/3/7) *lipsita* [R. 4,1,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,1,30)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *lipsā* fg. und *līpsitavya* .
 
 - **RU:** — Vgl. *lipsā* fg. и *līpsitavya*.
 - **EN:** — Vgl. *lipsā* fg. and *līpsitavya*.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -775,7 +775,7 @@ Comm.)
 [KĀTY. ŚR. 25,12,24.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,24) — desid.
 [ŚAT. BR.] ebend. [KĀTY. ŚR. 25,12,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,23)
 - **EN:** *anu* (from behind) to seize, snatch: *dhāvantam* [ŚAT. BR. 3,2,1,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,36) [4,5,10,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,10,7) [KĀTY. ŚR. 25,12,24.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,24) — desid. [ŚAT. BR.] ebend. [KĀTY. ŚR. 25,12,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,23)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## abhilabh
 
@@ -790,7 +790,7 @@ Comm.)
  1) схватить, прикоснуться: *bhāgavatāṅghrireṇum*
 [BHĀG. P. 2,3,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,23)
 - **EN:** 1) to take hold of, touch: *bhāgavatāṅghrireṇum* [BHĀG. P. 2,3,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,23)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bekommen, erhalten, erlangen, theilhaftig werden: *devāstridivaṃ cābhilebhire*
 [MBH. 12,1186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1186) *ambaram* ein Kleid
@@ -812,7 +812,7 @@ Comm.)
 [MBH. 1,2940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2940) *vṛttyarthamabhilipsantaḥ*
 [VĀYU-P.] при [MUIR, ST. I,30, N. 55.]
 - **EN:** 2) to get, receive, attain, become possessed of: *devāstridivaṃ cābhilebhire* [MBH. 12,1186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1186) *ambaram* a garment [VARĀH. BṚH. S. 71,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?71,13) *sarvaṃ svārtham* [BHĀG. P. 11,5,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,5,36) *avamānādīni janāt* [5,14,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,36) *mānam* [9,10,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,7) *yaṃ rukmiṇī bhagavatto 'bhilebhe* sc. as a son [3,1,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,28) — desid. to wish to catch —, to obtain: *vāsastadabhilipsatī* (which the wind had carried off) [MBH. 1,2940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2940) *vṛttyarthamabhilipsantaḥ* [VĀYU-P.] in [MUIR, ST. I,30, N. 55.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## ālabh
 
@@ -863,7 +863,7 @@ Comm.)
 [13,156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.156) *satyamātmānamālabhe*
 [15,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.112)
 - **EN:** 1) to seize, grasp; take hold of, touch [ṚV. 10,87,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.07) *idhmamarcirālabhate* [TBR. 2,1,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,10,1) *pāṇibhyām* [AIT. BR. 8,6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,6) *vedaśirasā nābhideśamālabheta* [ĀŚV. ŚR. 1,11,2.] [GṚHY. 1,13,7.] [KĀTY. ŚR. 1,10,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,14) [2,3,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,3,1) [PĀR. GṚHY. 2,2.] *lalāṭam* [KAUŚ. 90.] [M. 4,117.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,117) *gām* [5,87](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,87) (= [MĀRK. P. 35,29](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?35,29)). [11,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,202) *nāmṛtasya hi pāpīyānbhāryāmālabhya jīvati* [MBH. 4,516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.516) [1313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1313) *anālabdhaṃ jṛmbhati gāṇḍivam* [5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) [2929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2929) [R. GORR. 1,42,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,42,21) [VARĀH. BṚH. S. 24,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,8) *gāvaścālebhire* (pass.) *bhaṭaiḥ* [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) The following oath-formulas are noteworthy: *satyenāyudhamālabhe* [MBH. 3,15197.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15197) [R. 2,98,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,6) [3,33,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,3) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,26) *āyudhaṃ tena satyena pādau caivālabhe tava* [2,18,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,19) *satyenālambhya pādau te* [29,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,29,24) *tathā mūṃrdhānamālabhe* [MBH. 5,5991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5991) *satyenātmānamālabhe* [3,16847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16847) [5,5992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5992) [14,2373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2373) *tenāhaṃ vipra satyena svayamātmānamālabhe* [13,156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.156) *satyamātmānamālabhe* [15,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.112)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) das Opferthier fassen und anbinden, daher euphemistisch für schlachten, opfern: *yattriṣu yūpeṣvālabheta*
 [TBR. 1,8,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,1) *nāsmānālapsyadhve*
@@ -893,7 +893,7 @@ Comm.)
 [MṚCCH. 161,12.]
 [BHĀG. P. 5,9,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,13) [11,10,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,10,28) [21,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,30)
 - **EN:** 2) to seize and tie up the sacrificial animal, hence euphemistically for to slaughter, sacrifice: *yattriṣu yūpeṣvālabheta* [TBR. 1,8,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,1) *nāsmānālapsyadhve* [AIT. BR. 2,3.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,3) [6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,6) [8.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,8) [4,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,22) *tametamabhiṣecanīyaṃ puruṣaṃ paśumālebhe* [7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) [TS. 5,4,12,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,12,2) *prātarvai paśūnālabhante* [ŚAT. BR. 3,7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,7,2,4) [1,1,4,15. fg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,15) *vaśāmālabhya saṃjñapayanti* [4,5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,2,1) [11,8,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,3,5) *aśvamedham* [2,5,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,2,5,4) [13,7,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,7,1,9) [KĀTY. ŚR. 21,2,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?21,2,4) *brahmaṇe brāhmaṇamālabheta* Cit. in [NĪLAK.] to [MBH. 2,865.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.865) *gardabhaṃ paśumālabhya* [YĀJÑ. 3,280.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,280) [MBH. 7,2372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2372) [12,9428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9428) [14,285](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.285) (*alabhanta* [ed. Bomb.] also in first position). [2644](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2644) (*alabhanta* [ed. Bomb.]). [MṚCCH. 161,12.] [BHĀG. P. 5,9,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,13) [11,10,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,10,28) [21,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,30)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) anfangen,
 
@@ -905,7 +905,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [TS. 1,6,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,7,2) [10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,10,3) *ardharcam*
 [2,5,7,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,4)
 - **EN:** 3) to begin, undertake (cf. *rabh* with *ā*): *vratam* [TS. 1,6,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,7,2) [10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,10,3) *ardharcam* [2,5,7,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,4)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd gewinnen: *evaṃ sāmabhiralabdhaḥ* (= *uktaḥ* oder *hṛdi spṛṣṭaḥ* Comm.).
 [BHĀG. P. 10,57,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,57,40)
@@ -913,7 +913,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 - **RU:** — 4) расположить кого-л. к себе, завоевать расположение: *evaṃ sāmabhiralabdhaḥ* (= *uktaḥ* или *hṛdi spṛṣṭaḥ* Comm.).
 [BHĀG. P. 10,57,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,57,40)
 - **EN:** 4) to win someone over: *evaṃ sāmabhiralabdhaḥ* (= *uktaḥ* or *hṛdi spṛṣṭaḥ* Comm.). [BHĀG. P. 10,57,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,57,40)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) erlangen, theilhaftig werden: *na caivālabhase trāṇamabhipannā balīyasā*
 [MBH. 4,701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.701) *kāntim*
@@ -925,7 +925,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [MEGH. 15.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?15) *tasya viśrambhamālabhya*
 [KĀM. NĪTIS. 9,63.]
 - **EN:** 5) to attain, become possessed of: *na caivālabhase trāṇamabhipannā balīyasā* [MBH. 4,701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.701) *kāntim* [MEGH. 15.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?15) *tasya viśrambhamālabhya* [KĀM. NĪTIS. 9,63.]
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) *ālalambhe*
 [RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) fehlerhaft für *ālalambe* .
@@ -933,7 +933,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 - **RU:** — 6) *ālalambhe*
 [RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) ошибочно вместо *ālalambe* .
 - **EN:** 6) *ālalambhe* [RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) erroneous for *ālalambe*.
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *ālabdhi* fgg. und *ālambha* fgg. — caus.
  1) *ālambhayati* anfassen —, berühren lassen
@@ -951,7 +951,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [TBR. 2,2,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,2) — desid. *ālipsate* Schol. к [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54)
 [8,4,55.](https://ashtadhyayi.com/sutraani/8/4/55)
 - **EN:** causative Vgl. *ālabdhi* fgg. and *ālambha* fgg. — caus. 1) *ālambhayati* to cause to take hold of —, to touch [KAUŚ. 52. 58. 72.] [KĀTY. ŚR. 7,5,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,5,3) [8,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,15)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 **caus2)** — 2) beginnen lassen: *bratam* [TBR. 2,2,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,2) — desid. *ālipsate* Schol. zu [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [8,4,55.](https://ashtadhyayi.com/sutraani/8/4/55)
 - **EN:** 2) to cause to begin: *bratam* [TBR. 2,2,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,2,2) — desid. *ālipsate* Schol. to [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [8,4,55.](https://ashtadhyayi.com/sutraani/8/4/55)
@@ -971,7 +971,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [KĀTY. ŚR. 8,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,2,7)
 — 2) желать привязать — желать заколоть
 [ŚAT. BR. 6,2,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,1,5) [7,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,5,2,4)
-  <sub>DCS 907 · attested</sub>
+  <sub>attested</sub>
 
 ## anvālabh
 
@@ -994,7 +994,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [MBH. 5,1195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1195)
 [HARIV. 8207.](https://sanskrit-lexicon-scans.github.io/hariv?8207)
 - **EN:** 1) (from behind) to grasp, take in hand, touch: *raśmīn* [ṚV. 10,130,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.07) *aṃsam* [GOBH. 2,10,26.] [KAUŚ. 69. 80.] [MBH. 5,1195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1195) [HARIV. 8207.](https://sanskrit-lexicon-scans.github.io/hariv?8207)
-  <sub>DCS 18 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich halten an: *satyam*
 [ŚAT. BR. 9,5,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,13)
@@ -1002,13 +1002,13 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 - **RU:** — 2) держаться за что-л., придерживаться: *satyam*
 [ŚAT. BR. 9,5,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,13)
 - **EN:** 2) to hold on to: *satyam* [ŚAT. BR. 9,5,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,13)
-  <sub>DCS 18 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *anvālambhana* .
 
 - **RU:** — Vgl. *anvālambhana* .
 - **EN:** — Vgl. *anvālambhana*.
-  <sub>DCS 18 · attested</sub>
+  <sub>attested</sub>
 
 ## upālabh
 
@@ -1025,13 +1025,13 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 - **EN:** — *upā*
  1) to touch
 [ŚAT. BR. 1,9,2,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,21)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hinzu binden d. i. — schlachten; s. *upālambhya* .
 
 - **RU:** — 2) дополнительно привязать d. i. — заколоть; s. *upālambhya* .
 - **EN:** — 2) to tie on, attach d. i. — to slaughter; s. *upālambhya*.
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) tadeln, Vorwürfe machen; mit acc. der Person
 [CHĀND. UP. 2,22,3. 4.]
@@ -1046,7 +1046,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [CHĀND. UP. 2,22,3. 4.]
 [NIR. 1,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,14)
 [MBH. 1,4330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4330) [2,1337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1337) [3,16832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16832) [4,485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.485) [659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.659) [675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.675) [7,2536](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2536) (act.). [R. GORR. 2,61,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,61,27) [116,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,11) [MṚCCH. 83,14. fg. 91,20.] [RAGH. 7,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,41) [KUMĀRAS. 5,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,58) [ŚĀK. 59,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?59,15) [85,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?85,7) ad [54.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?54) [VIKR. 63,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?63,12) [Spr. 3670.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3670) [ŚIŚ. 9,60.] [KATHĀS. 17,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) [64,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,12) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,18) [BHĀG. P. 5,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,19) [7,4,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,45) [PRAB. 103,19.] [BHAṬṬ. 3,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,30) [6,125.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,125)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) *upāla˚* fehlerhaft für *upala˚*
 [MBH. 7,3070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) [ŚĀK. CH. 14,13.] [BHĀG. P. 5,10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,1) [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) an den drei ersten Stellen hat die
@@ -1058,7 +1058,7 @@ v. l. имеет правильное чтение.
 - **EN:** — 4) *upāla˚* erroneous for *upala˚*
 [MBH. 7,3070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) [ŚĀK. CH. 14,13.] [BHĀG. P. 5,10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,1) [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264); in the first three places the
 v. l. has the correct reading.
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *upālabhya* fgg. — caus. Jmd tadeln, Jmd Vorwürfe machen
 [PAÑCAT. 134,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?134,24)
@@ -1067,7 +1067,7 @@ v. l. has the correct reading.
 [PAÑCAT. 134,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?134,24)
 - **EN:** — Vgl. *upālabhya* fgg. — caus. to blame someone, to reproach someone
 [PAÑCAT. 134,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?134,24)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 ## pratyālabh
 
@@ -1084,7 +1084,7 @@ v. l. has the correct reading.
 - **EN:** *pratyā* to seize hold of from the other side: *aṅguṣṭhena*
 [ĀŚV. ŚR. 1,7,5.] *parāñcamāvṛttaṃ saṃpiṃṣyādapratyālabhamānam* without him being able to seize hold of — i.e. defend himself — in turn
 [ŚAT. BR. 1,6,3,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,33)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 ## samālabh
 
@@ -1113,7 +1113,7 @@ v. l. has the correct reading.
 [MBH. 4,1421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1421)
 [R. 1,29,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,25) [41,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,23)
 [R. GORR. 1,13,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,33) [30,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,24) [2,86,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,86,9)
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) salben
 [R. 2,25,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,35) *prāṇān* d. i. Mund und Nase
@@ -1146,13 +1146,13 @@ v. l. has the correct reading.
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *samālambha* fgg.
 
 - **RU:** — Vgl. *samālambha* fgg.
 - **EN:** — Vgl. *samālambha* fgg.
-  <sub>DCS 28 · attested</sub>
+  <sub>attested</sub>
 
 ## udlabh
 
@@ -1166,7 +1166,7 @@ v. l. has the correct reading.
 [MṚCCH. ed. Calc. 342,17. fg.], где, однако, согласно новейшему Ausg. *me vayasyo labhyaṃ* следует читать st. *ca yasyollabhyaṃ* .
 - **EN:** *ud*
 [MṚCCH. ed. Calc. 342,17. fg.], where however, following the more recent Ausg., *me vayasyo labhyaṃ* st. *ca yasyollabhyaṃ* is to be read.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 ## upalabh
 
@@ -1730,7 +1730,7 @@ In both places perhaps also in the Bed. 3).
 [KṚṢIS. 7,26.]
 - **EN:** — *vi*
  1) to take apart, dismantle [KĀTY. ŚR. 10,8,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,8,5); to pull away, draw off (the dung from the stall) [KṚṢIS. 7,26.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verleihen, verschaffen: *paurapurandhrīṇāṃ vilabdhanayanotsavaḥ*
 [KATHĀS. 55,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,100)
@@ -1738,7 +1738,7 @@ In both places perhaps also in the Bed. 3).
 - **RU:** — 2) давать взаймы, доставлять: *paurapurandhrīṇāṃ vilabdhanayanotsavaḥ*
 [KATHĀS. 55,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,100)
 - **EN:** — 2) to grant, bestow, procure: *paurapurandhrīṇāṃ vilabdhanayanotsavaḥ* [KATHĀS. 55,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,100)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abtreten, überlassen: *vilabdha iva cakrāhvaistasya tīrṇanīśaistadā . — karuṇākranditadhvaniḥ*
 [KATHĀS. 87,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?87,19) *ahamatra prabhuryūyaṃ karadāśca kuṭumbinaḥ . vikramādityadevena vilabdhāḥ śāsanena me ..*
@@ -1752,7 +1752,7 @@ In both places perhaps also in the Bed. 3).
 [RĀJA-TAR. 3,243.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,243) [5,265.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,265) *iti jñātvā svāmibhogādikaṃ grahīṣyatha vilapsyatha ca* так v. a. вручать (levy
 [HALL]) Inschr. в [Journ. of the Am. Or. S. 6,548,10.]
 - **EN:** — 3) to cede, hand over: *vilabdha iva cakrāhvaistasya tīrṇanīśaistadā . — karuṇākranditadhvaniḥ* [KATHĀS. 87,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?87,19) *ahamatra prabhuryūyaṃ karadāśca kuṭumbinaḥ . vikramādityadevena vilabdhāḥ śāsanena me ..* [124,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,77) *maṇḍalāni vilabhyante yaiḥ* [RĀJA-TAR. 3,243.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,243) [5,265.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,265) *iti jñātvā svāmibhogādikaṃ grahīṣyatha vilapsyatha ca*, so v. a. to deliver into the hand (levy [HALL]) Inschr. in [Journ. of the Am. Or. S. 6,548,10.]
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *vilambha* . — caus. Jmd Etwas zu Theil werden lassen, mit dopp. acc.
 [KATHĀS. 121,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,167) — desid. auseinandernehmen —, vertheilen wollen
@@ -1762,7 +1762,7 @@ In both places perhaps also in the Bed. 3).
 [KATHĀS. 121,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,167) — desid. желать разобрать —, распределить
 [ŚAT. BR. 2,6,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,16) [4,4,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,3,9)
 - **EN:** — Vgl. *vilambha*. — caus. to let someone have a share of something, with dopp. acc. [KATHĀS. 121,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,167) — desid. to wish to take apart —, to wish to distribute [ŚAT. BR. 2,6,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,16) [4,4,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,3,9)
-  <sub>DCS 4 · attested</sub>
+  <sub>attested</sub>
 
 ## pra+vi+labh
 
@@ -1775,7 +1775,7 @@ In both places perhaps also in the Bed. 3).
 - **RU:** — *pravi* вновь обретать, возвращать себе
 [MBH. 14,1732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1732) *viprala˚* [ed. Bomb.]; правильным чтением, по всей видимости, будет *pratila˚*.
 - **EN:** *pravi* to regain, to get back again [MBH. 14,1732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1732) *viprala˚* [ed. Bomb.]; the correct reading will be *pratila˚*.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## sam+labh
 
@@ -1791,7 +1791,7 @@ In both places perhaps also in the Bed. 3).
 [TBR. 1,7,1,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,1,6)
 - **EN:** — *sam*
  1) to seize one another, grapple with one another [TBR. 1,7,1,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,1,6)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen, theilhaftig werden: *mātuluṅgaṃ kuta idaṃ saṃlabdhaṃ bhavatām*
 [KATHĀS. 53,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,40) *yayā* (*bhaktyā*) *saṃlabhyate ratiḥ*
@@ -1801,7 +1801,7 @@ In both places perhaps also in the Bed. 3).
 [KATHĀS. 53,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,40) *yayā* (*bhaktyā*) *saṃlabhyate ratiḥ*
 [BHĀG. P. 7,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,33) — desid. s. *saṃlipsu* .
 - **EN:** — 2) to attain, obtain, become possessed of: *mātuluṅgaṃ kuta idaṃ saṃlabdhaṃ bhavatām* [KATHĀS. 53,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,40) *yayā* (*bhaktyā*) *saṃlabhyate ratiḥ* [BHĀG. P. 7,7,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,33) — desid. s. *saṃlipsu*.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -1816,7 +1816,7 @@ In both places perhaps also in the Bed. 3).
  3) обретать, получать
 [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
 - **EN:** *labh* with *samā* 3) to obtain, to gain [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -2117,7 +2117,7 @@ In both places perhaps also in the Bed. 3).
 
 - **RU:** labh¦ с prati, *pratilabdha так в знач. ставший причастным к чему-либо, [Mahāvy. 30,6. 33. 245,575.] {part=,seq=23168,type=,n=3}
 - **EN:** labh¦ with prati, *pratilabdha thus s.v.a. (so viel als = as good as) having become possessed of, [Mahāvy. 30,6. 33. 245,575.]
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 ## labh
 
@@ -2128,4 +2128,4 @@ In both places perhaps also in the Bed. 3).
 
 - **RU:** *labh*¦ с *prati* V. **˚pratilabdha* так v. a. ставший причастным к чему-либо [MAHĀVY. 30,6]. [33]. [245,575].
 - **EN:** *labh* with *prati* V. **˚pratilabdha* thus v. a. having become possessed of [MAHĀVY. 30,6]. [33]. [245,575].
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>

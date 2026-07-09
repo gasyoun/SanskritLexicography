@@ -40,4 +40,4 @@ geben wollen, zu geben bereit sein: *asmabhyaminna ditsasi*
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Хотя
 [ŚĀṄKH. ŚR. 16,16,7] имеет то же чтение (лишь *˚tha*), однако из
 [ŚAT. BR. 13,7,1,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,7,1,15) видно, что здесь испорченное чтение.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

@@ -34,7 +34,7 @@
 ) known as a great hero
 [14,2141.](https://ashtadhyayi.com/sutraani/2/14/2141) *bāhuyuddham — kriyābalasamājñātam* in whom skill and strength are recognized
 [HARIV. 4697.](https://sanskrit-lexicon-scans.github.io/hariv?4697)
-  <sub>DCS 30 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *samājñā* . — caus. befehlen, anbefehlen, Jmd (acc.) anweisen, Jmd einen Befehl ertheilen: *rāṣṭriyaḥ samājñāpayati*
 [MṚCCH. 66,23.] *yogaṃ samājñāpaya me balānām*
@@ -73,4 +73,4 @@
 [RAGH. 16,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,75) *kaṃsenāpi samājñaptaścāṇūraḥ pūrvameva tu . yoddhavyaṃ saha kṛṣṇena tvayā yatnavateti vai ..*
 [HARIV. 4694.](https://sanskrit-lexicon-scans.github.io/hariv?4694) [8845.](https://sanskrit-lexicon-scans.github.io/hariv?8845) [11507.](https://sanskrit-lexicon-scans.github.io/hariv?11507) *dvāḥsthena ca samājñaptaḥ praviveśa gṛhottamam*
 [15051.](https://sanskrit-lexicon-scans.github.io/hariv?15051)
-  <sub>DCS 30 · attested</sub>
+  <sub>attested</sub>

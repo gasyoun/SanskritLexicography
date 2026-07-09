@@ -14,29 +14,29 @@
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* дай себя связать (по
 [MAHĪDH.] от 1. *dā*)
 [VS. 38,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?38,3)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T57})** — Vgl. 3. *da*, 4. *dāman, dāmā* .
 
 - **RU:** — Vgl. 3. *da*, 4. *dāman, dāmā* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T58})** — *ā* binden, fesseln: *sā brahmajyaṃ devapīyuṃ brahmagavyādīyamānā . mṛtyoḥ paḍbīśa ā dyati*
 [AV. 12,5,15.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.15)
 
 - **RU:** — *ā* вязать, связывать, сковывать: *sā brahmajyaṃ devapīyuṃ brahmagavyādīyamānā . mṛtyoḥ paḍbīśa ā dyati*
 [AV. 12,5,15.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.15)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T59})** — Vgl. 2 *ādāna* .
 
 - **RU:** — Vgl. 2 *ādāna* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T60})** — *ud* s. *uddāna, uddita, udita* .
 
 - **RU:** — *ud* s. *uddāna, uddita, udita* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T61})** — *ni* anbinden: *nidāya vatsam* im
 [KALPA] bei [SĀY.] zu [TAITT. ĀR. 4,8,9.] *śunaścicchepaṃ niditaṃ sahasrādyūpādamuñcaḥ*
@@ -47,12 +47,12 @@
 [KALPA] при [SĀY.] к [TAITT. ĀR. 4,8,9.] *śunaścicchepaṃ niditaṃ sahasrādyūpādamuñcaḥ*
 [ṚV. 5,2,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.07) *nidita* спрятанный, сокрытый: *uditā yo niditā veditā vasvā yajñiyo vavartati*
 [8,92,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.092.html#rv08.092.11)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T62})** — *vi* s. u. 3. *dā* mit *vi* .
 
 - **RU:** — *vi* s. u. 3. *dā* с *vi* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T63})** — *sam* zusammenbinden, anbinden, fesseln: *vi mṛLīkāya te mano rathīraśvaṃ na saṃditam . gīrbhirvaruṇa sīmahi*
 [ṚV. 1,25,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.03) *saṃdāya*
@@ -75,9 +75,9 @@
 [MED. dh. 27.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,27) *saṃditaṃ sarpabhogena kṛṣyamāṇaṃ yathā mṛgam*
 [HARIV. 3674.](https://sanskrit-lexicon-scans.github.io/hariv?3674) *saṃditau māmakairvāṇaiḥ — nemau mocayituṃ śakyāvetasmādiṣubandhanāt*
 [R. 6,21,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,21,12)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **{T64})** — Vgl. *saṃdāna, asaṃdita, asaṃdina* .
 
 - **RU:** — Vgl. *saṃdāna, asaṃdita, asaṃdina* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 
 - **RU:** — *sam* облачаться в: *samabhreṇa vasata parvatāsaḥ*
 [ṚV. 5,85,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.085.html#rv05.085.04)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

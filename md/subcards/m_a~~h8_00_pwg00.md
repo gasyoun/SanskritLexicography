@@ -13,7 +13,7 @@
 - **EN:** *mā*¦
  1) *mā bhūdāgataḥ* so v. a. "should he perhaps not have come?"
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3)
 Z. 8 lies 7, 59, 12.
@@ -22,7 +22,7 @@ Z. 8 lies 7, 59, 12.
 Z. 8 читай 7, 59, 12.
 - **EN:** — 3)
 Z. 8 read 7, 59, 12.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4)
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
@@ -31,4 +31,4 @@ Z. 8 read 7, 59, 12.
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
 - **EN:** — 4)
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

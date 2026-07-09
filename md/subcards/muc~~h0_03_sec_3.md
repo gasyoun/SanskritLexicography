@@ -13,4 +13,4 @@
 - **EN:** — desid. of the caus. "to be willing to be freed (from the bonds of the world)": *yaṃ tu mumocayiṣyanti (devāḥ)*
 [ŚAṂK.] to [BṚH. ĀR. UP. S. 234.]
 — Vgl. *mumocayiṣu*.
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

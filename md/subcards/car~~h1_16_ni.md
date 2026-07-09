@@ -7,4 +7,4 @@
 
 - **RU:** — *ni* vgl. *niceru* .
 - **EN:** — *ni* vgl. *niceru* .
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

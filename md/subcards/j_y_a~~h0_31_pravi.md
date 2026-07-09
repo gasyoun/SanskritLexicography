@@ -10,4 +10,4 @@
 [SUŚR. 1,342,3.]
 - **EN:** — *pravi* to know in detail, to know precisely: *yaḥ snāyūḥ pravijānāti bāhyāścābhyantarāstathā*
 [SUŚR. 1,342,3.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

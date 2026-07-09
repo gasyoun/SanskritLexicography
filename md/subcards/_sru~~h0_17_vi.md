@@ -37,7 +37,7 @@
 [R. 1,13,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,13)
 [VET. in LA. 21,1.] *svano viśuśruve*
 [R. 2,103,48.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,48)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) med. (ved.) und pass. bekannt —, berühmt werden
 [ṚV. 4,8,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.008.html#rv04.008.06)
@@ -133,7 +133,7 @@ zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [RAGH. 18,9.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,9)
 [Spr. (II) 1928.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1928) — partic. *viśruta* compounded with *śreṇi* u. s. w. gaṇa *kṛtādi*
 for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **1 (śruta-))** 1) vernommen, gehört
 [AV. 15,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av15.002.html#av15.002.04)
@@ -210,7 +210,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [H. an.] и [VIŚVA] a. a. O.
 - **EN:** — 3) glad (*hṛṣṭa, saṃhṛṣṭa*)
 [H. an.] and [VIŚVA] a. a. O.
-  <sub>DCS 608 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **intro)** — Vgl. *viśrāva, viśruta*, 1. *viśruti, lokaviśruta* (auch
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
@@ -219,7 +219,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
 - **EN:** — Vgl. *viśrāva, viśruta*, 1. *viśruti, lokaviśruta* (also
 [MBH. 4,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.362) [5,5945](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5945)), *viśva˚* . — caus.
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) hören lassen, verkünden, mittheilen: *ityevaṃ vāco vyaśrāvayan*
 [R. 6,70,58.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,58) *mayā viśrāvite vākye*
@@ -258,7 +258,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 [BHĀG. P. 10,64,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,64,44) with double acc. to communicate something to someone: *mama karma ca devendraṃ (devendre*
 [ARJ. 10,69]) *mātalirvistareṇa tat . sarvaṃ viśrāvayāmāsa yathābhūtam ..*
 [MBH. 3,12265. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12265)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) berühmt machen: *nāma viśrāvitaṃ bhuvi*
 [HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857)
@@ -270,7 +270,7 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 - **EN:** — 2) to make famous: *nāma viśrāvitaṃ bhuvi*
 [HARIV. 4857.](https://sanskrit-lexicon-scans.github.io/hariv?4857)
 [R. 7,33,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,33,16)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) erschallen machen: *dundubhim*
 [MBH. 6,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1628) *tato 'ntarīkṣe vāgāsītsarvā viśrāvayan* (statt *˚śrāvayantī) diśaḥ*
@@ -282,4 +282,4 @@ for [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 - **EN:** — 3) to make resound: *dundubhim*
 [MBH. 6,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1628) *tato 'ntarīkṣe vāgāsītsarvā viśrāvayan* (instead of *˚śrāvayantī) diśaḥ*
 [3,16556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16556)
-  <sub>DCS 608 · attested</sub>
+  <sub>attested</sub>

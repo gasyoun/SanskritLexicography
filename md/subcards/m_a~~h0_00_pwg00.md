@@ -25,7 +25,7 @@
 [an. 1,10.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?1,10)
 [MED. avy. 49](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,49) (*vāraṇe vikalpe ca*). A following *cha* is doubled after *mā* (*mā cchidat*)
 [P. 6,1,74.](https://ashtadhyayi.com/sutraani/6/1/74)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) mit conj. (aor. ohne Augment in der späteren Sprache)
 [P. 3,3,175.](https://ashtadhyayi.com/sutraani/3/3/175) [6,4,74.](https://ashtadhyayi.com/sutraani/6/4/74)
@@ -151,7 +151,7 @@ Schol. to [P. 6,4,75.](https://ashtadhyayi.com/sutraani/6/4/75) *mā vyagamat*
 
 In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gantumarhasi*
 [R. GORR. 2,116,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) mit imperat.
 [P. 3,3,175](https://ashtadhyayi.com/sutraani/3/3/175), Sch.
@@ -190,7 +190,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [MBH. 14,127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.127) *viṣaṃ bhavatu mā vāstu*
 [Spr. 1613.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1613) *santu mā santu vā, dehi mā dehi vā, niryāntu mā yāntu vā*
 [5337.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5337)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) mit potent.: *mā śabdaḥ sukhasuptānāṃ bhrātṝṇāṃ me bhavet*
 [MBH. 1,6003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6003) [3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) [16889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16889)
@@ -223,7 +223,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [54,24.] With potent. aor. in the Veda: *mṛtyormukṣīya māmṛtāt*
 [ṚV. 7,59,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.059.html#rv07.059.02) *taṃ śalyaḥ prāha mā karṇa gṛhīthāḥ* (probably *gṛhṇīthāḥ* to be read despite the agreement of both Ausgg.) *pārthivottamam*
 [MBH. 8,2353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2353)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) mit precat.: *māsya dharme mano bhūyāt*
 [R. ed. Bomb. 2,75,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,75,42)
@@ -232,7 +232,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [R. ed. Bomb. 2,75,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,75,42)
 - **EN:** — 4) with precat.: *māsya dharme mano bhūyāt*
 [R. ed. Bomb. 2,75,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,75,42)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) mit fut.
 [VOP. 25,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,27) damit nicht: *samaṃ vartasva bhāryāsu mā tvāṃ śapsye*
@@ -250,7 +250,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [MBH. 9,2025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2025) [8,2353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2353) [13,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.493) *mā smaiva tvaṃ punarāgāḥ kathaṃcidbṛhaspatiṃ paridātuṃ marutte . mā tvāṃ dhakṣye cakṣuṣā*
 [14,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.237) [R. GORR. 2,65,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,65,39) [PAÑCAT. 257,24](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,24) (where *yad* st. *yadi* is to be read with the v. l., as already
 [BENFEY] has noted).
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) mit einem partic. praes.
 [P. 3,2,120](https://ashtadhyayi.com/sutraani/3/2/120), Vārtt. 6. *mā jīvanyaḥ* u. s. w. derjenige soll (verdient) nicht zu leben, der u. s. w.
@@ -262,7 +262,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 - **EN:** — 6) with a partic. praes.
 [P. 3,2,120](https://ashtadhyayi.com/sutraani/3/2/120), Vārtt. 6. *mā jīvanyaḥ* u. s. w. "he does not deserve to live, who u. s. w."
 [Spr. 2161.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2161)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) elliptisch ohne Verbum: *mā prātṛda* nicht so, o Prātṛda!
 [ŚAT. BR. 14,8,13,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,13,2) *maivam*
@@ -319,7 +319,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [HARIV. 2911.](https://sanskrit-lexicon-scans.github.io/hariv?2911) *mā śabda ityevaṃ bruvantaḥ*
 [5004](https://sanskrit-lexicon-scans.github.io/hariv?5004); vgl. *māśabdika*.* aye padaśabda iva mā nāma rakṣiṇaḥ* "would that they were not watchmen!"
 [MṚCCH. 50,12.]
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) *mo (mā u)* und nicht: *mā maghonaḥ pari khyataṃ mo asmākamṛṣīṇām*
 [ṚV. 5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) *arātīvā mā nastārīnmo ca naḥ kiṃ canāmamat*
@@ -334,4 +334,4 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [ṚV. 5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) *arātīvā mā nastārīnmo ca naḥ kiṃ canāmamat*
 [9,114,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.114.html#rv09.114.04) [8,92,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.092.html#rv08.092.13) [5,31,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.031.html#rv05.031.13) *mo ṣu*
 [1,38,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.06) [173,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.173.html#rv01.173.12) [3,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.055.html#rv03.055.02) [7,32,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.01) [59,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.059.html#rv07.059.05) [89,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.089.html#rv07.089.01) [8,2,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.20)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

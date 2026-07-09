@@ -105,7 +105,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 [P. 6,1,7](https://ashtadhyayi.com/sutraani/6/1/7), Sch.
 to draw near, to present oneself: *kāle tvanugate*
 [BHĀG. P. 1,14,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,5)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) von hinten bedecken: *śivamivānugataṃ gajacarmaṇā*
 [KIR. 5,2.]
@@ -113,7 +113,7 @@ to draw near, to present oneself: *kāle tvanugate*
 - **RU:** покрывать сзади: *śivamivānugataṃ gajacarmaṇā* [KIR. 5,2.]
 - **EN:** — 2) to cover from behind: *śivamivānugataṃ gajacarmaṇā*
 [KIR. 5,2.]
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) begehen, ausführen: *anu svadhāmṛbhavo jagmuretām*
 [ṚV. 4,33,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.033.html#rv04.033.06) *tadadyedamṛbhavo nānu gacchatha*
@@ -125,7 +125,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [ṚV. 4,33,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.033.html#rv04.033.06) *tadadyedamṛbhavo nānu gacchatha*
 [1,161,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.11) *dhyānayogānugata* with act. Bed.
 [ŚVETĀŚV. UP. 1,3.]
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) befolgen, sich richten nach: *madbuddhiranugamyatām*
 [R. 2,21,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,43) *tadyuvābhyāṃ kṣatradharmo 'nugantavyaḥ*
@@ -135,7 +135,7 @@ to draw near, to present oneself: *kāle tvanugate*
 - **EN:** — 4) to follow, to conform to: *madbuddhiranugamyatām*
 [R. 2,21,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,43) *tadyuvābhyāṃ kṣatradharmo 'nugantavyaḥ*
 [HIT. 116,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?116,17)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) nachmachen, entsprechen: *āsphālitaṃ yatpramadākarāgrairmṛdaṅgadhīradhvanimanvagacchat — ambhaḥ*
 [RAGH. 16,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,13) *prastāvānugataṃ pṛṣṭaḥ* den Umständen gemäss
@@ -145,7 +145,7 @@ to draw near, to present oneself: *kāle tvanugate*
 - **EN:** — 5) to imitate, to correspond to: *āsphālitaṃ yatpramadākarāgrairmṛdaṅgadhīradhvanimanvagacchat — ambhaḥ*
 [RAGH. 16,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,13) *prastāvānugataṃ pṛṣṭaḥ* according to circumstances
 [PAÑCAT. 218,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) eingehen in, mit dem loc.: *mādhuryadravaśaityādijaladharmāstaraṃgake . anugamyātha tanniṣṭhe phene hyanugatā yathā .. sākṣisthāḥ saccidānandāḥ saṃbaddhā vyāvahārike . taddvāreṇānugacchanti tathaiva prātibhāsike ..*
 [BĀLAB. 44. 45.]
@@ -153,7 +153,7 @@ to draw near, to present oneself: *kāle tvanugate*
 - **RU:** входить в, с loc.: *mādhuryadravaśaityādijaladharmāstaraṃgake . anugamyātha tanniṣṭhe phene hyanugatā yathā .. sākṣisthāḥ saccidānandāḥ saṃbaddhā vyāvahārike . taddvāreṇānugacchanti tathaiva prātibhāsike ..* [BĀLAB. 44. 45.]
 - **EN:** — 6) to enter into, with the loc.: *mādhuryadravaśaityādijaladharmāstaraṃgake . anugamyātha tanniṣṭhe phene hyanugatā yathā .. sākṣisthāḥ saccidānandāḥ saṃbaddhā vyāvahārike . taddvāreṇānugacchanti tathaiva prātibhāsike ..*
 [BĀLAB. 44. 45.]
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) eig. dem Windzuge nachgehen, ausgehen, verlöschen, vom Feuer (vgl. *yadā vā agniranugacchati vāyuṃ tarhyanūdvāti*
 [ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8)): *yadyeṣa ukhyo 'gniranugacchet*
@@ -175,7 +175,7 @@ to draw near, to present oneself: *kāle tvanugate*
 [ŚAT. BR. 3,8,1,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,15) (which explains the
 [BRĀHM.] by *devānanugacchati*). Also viell. in the passage: *parāyatīṃ mātaramanvacaṣṭa na nānu gānyanu nu gamāni*
 [ṚV. 4,18,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.03)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — Vgl. *anuga, anugata* fgg., *anugāmin* fg. — caus.
  1) nachahmen: *mayūrairudgrīvairanugamitasya puṣkarasya*
@@ -192,9 +192,9 @@ to draw near, to present oneself: *kāle tvanugate*
 **1)** 
 
 - **RU:** подражать: *mayūrairudgrīvairanugamitasya puṣkarasya* [MĀLAV. 20.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 
 
 - **RU:** гасить [ŚAT. BR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,8) [12,4,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,2,4) [3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,3,9)
-  <sub>DCS 792 · attested</sub>
+  <sub>attested</sub>

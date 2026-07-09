@@ -10,4 +10,4 @@
 [MĀLATĪM. 88,2], поскольку здесь *prati* следует соединять с предшествующим acc..
 - **EN:** — *pratyabhini* apparently
 [MĀLATĪM. 88,2], since here *prati* is to be connected with the preceding acc..
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

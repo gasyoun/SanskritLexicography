@@ -10,4 +10,4 @@
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 - **EN:** — intens. *dedhīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

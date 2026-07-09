@@ -40,7 +40,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi vadan*
 [VARĀH. BṚH. S. 104,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,37)
 [KATHĀS. 27,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,92)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bilden, schaffen: *pramimāṇa*
 [MBH. 7,9457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9457) viell. zurechtmachen: *sa mṛjyamāno daśabhiḥ sukarmabhiḥ pra madhyamāsu mātṛṣu prame* (loc. infin.) *sacā*
@@ -52,7 +52,7 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 - **EN:** — 2) to form, to create: *pramimāṇa*
 [MBH. 7,9457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9457) viell. to fashion, to prepare: *sa mṛjyamāno daśabhiḥ sukarmabhiḥ pra madhyamāsu mātṛṣu prame* (loc. infin.) *sacā*
 [ṚV. 9,70,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.070.html#rv09.070.04)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich eine richtige Vorstellung bilden über (acc.): *anenaiva pramīyate hi kālaḥ*
 [MAITRYUP. 6,11.] *tadaśakyo 'yamarthaḥ pramātum*
@@ -81,4 +81,4 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 [HARIV. 9169.](https://sanskrit-lexicon-scans.github.io/hariv?9169) *pratyakṣapramita*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 226.]
 — Vgl. *pramā, pramāṇa, pramātar, pramitākṣarā, pramiti, prameya* .
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

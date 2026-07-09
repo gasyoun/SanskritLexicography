@@ -70,4 +70,4 @@ Sch.
 [LASSEN] в [DHŪRTAS. 67,3], однако там следует разложить: *dātā* (nom. от 1. *dātar) ava˚* . — desid. *ditsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) — intens. *dedīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

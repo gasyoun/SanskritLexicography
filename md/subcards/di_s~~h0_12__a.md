@@ -25,7 +25,7 @@
 [MBH. 7,1234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1234) *tatastadvidrutaṃ sainyam — ādiśyādiśya nārācairājaghāna*
 [3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) *ādiśyādiśya tejasvī śirāṃsyeṣāṃ vyapātayat*
 [14,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2493)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas anweisen, zuweisen: *sā no bhūmirā diśatu yaddhanaṃ kāmayāmahe*
 [AV. 12,1,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.40) *kimanyasyai devatāyā ādiśet*
@@ -49,7 +49,7 @@
 [R. 4,41,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,7) [9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,9) *ādikṣat — siṃhāsanaṃ tasya*
 [BHAṬṬ. 3,3.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,3) *nyaseddhṛdaya oṃkāraṃ vikāramanu mūrdhani . ṣakāraṃ tu bhruvormadhye ṇakāraṃ śikhayādiśet* (one would have expected the dat.)
 [BHĀG. P. 6,8,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,7)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Etwas anzeigen, mittheilen, verkünden, lehren: *ityubhayamādiṣṭaṃ bhavati*
 [CHĀND. UP. 3,18,1.] *yo no 'nekamadāndhānāṃ vibhraṃśaṃ cakṣurādiśat*
@@ -88,7 +88,7 @@
 [VARĀH. BṚH. S. 48,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,8) [5,55.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,55) [96.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,96) [12,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,16) [17,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,1) [28,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?28,5) [49,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?49,10) [52,110.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?52,110)
 [LAGHUJ. 5,6.]
 [SŪRYAS. 4,16. 6,19.]
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) bestimmen, bezeichnen, benennen: *yadyu abhicaredādiśet*
 [ŚAT. BR. 3,5,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,8) *tasya nāmādiśet*
@@ -136,7 +136,7 @@
 [AIT. BR. 2,16.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) of someone (acc.) to state, predict
 [MĀLAV. 69,14](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?69,14), v. l. (vgl. u. *vyā* 5.
 ).
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) die Weisung geben, vorschreiben, anbefehlen: *ādiśati ācāryādhīno bhava (iti)*
 [GOBH. 3,1,12.] *brahmacaryam*
@@ -178,7 +178,7 @@
 [MĀLAV. 16,13.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?16,13)
 [HIT. 40,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,9) *śīghraṃ me yānamādiśa* order the chariot for me quickly
 [MBH. 3,2714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2714)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) Jmd anweisen, einen Befehl geben, abordnen: *ityādideśa mām*
 [R. GORR. 2,58,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,33) [6,19,74.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,74) *anveṣaṇe 'niruddhasya carānādiśa māciram*
@@ -238,7 +238,7 @@
 [PRAB. 19,4.] [78,9.]
 [DAŚAK.] into [BENF. Chr. 183,9. 196,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *vindhyāṭavyāṃ piśācaṃ tamādiśaddhaneśvaraḥ* banished him into the Vindhya-forest
 [KATHĀS. 2,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,19)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) reizen, herausfordern: *yo naḥ suśaṃsino duḥśaṃsa ādideśati*
 [AV. 6,6,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.006.html#av06.006.02)
@@ -256,7 +256,7 @@
 [ṚV. 9,52,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.052.html#rv09.052.04) [10,133,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.133.html#rv10.133.04) [134,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.134.html#rv10.134.02) to call upon, summon: *ya enamādideśati karambhāditi pūṣaṇam . na tena deva ādiśe*
 [6,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.056.html#rv06.056.01) *(taṃ vaḥ) aryamaṇaṃ na mandraṃ sṛprabhojasaṃ viṣṇuṃ na stuṣa ādiśe*
 [48,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.048.html#rv06.048.14)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) sich Etwas vorschreiben, sich unterziehen: *caredbratamahatvāpi ghātārthaṃ cetsamāgataḥ . dviguṇaṃ savanasthe tu brāhmaṇe vratamādiśet*
 [YĀJÑ. 3,252.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,252) *tato vaikhānasaṃ mārgamasthāya sahalakṣmaṇaḥ . vratamādiṣṭavānrāmaḥ*
@@ -271,7 +271,7 @@
 [YĀJÑ. 3,252.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,252) *tato vaikhānasaṃ mārgamasthāya sahalakṣmaṇaḥ . vratamādiṣṭavānrāmaḥ*
 [R. 2,52,65.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,65) *ādideśa tathetyuktvā dīkṣāṃ tadahareva tu*
 [R. GORR. 1,32,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,32,23)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) versuchen, erproben: *brahmāstramādiśam*
 [MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968)
@@ -280,7 +280,7 @@
 [MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968)
 - **EN:** — 9) to try, to test: *brahmāstramādiśam*
 [MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *anādiṣṭa, ādiś, ādiṣṭa, ādeśa* u. s. w. — caus. Jmd anzeigen, angeben: *ācaranmadirāmapi . ādeśito dharmaparaiḥ punaḥ saṃskāramarhati*
 [MBH. 12,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1227) zeigen, anweisen (den Weg): *adhikaraṇamaṇḍapasya mārgamādeśaya*
@@ -307,4 +307,4 @@
 [MBH. 12,13147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13147) *ādeśita = ādiṣṭa*
 [MED. ṭ. 33.](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,33) — intens. to try, to apply (?): *vṛṣā śuṣmeṇa bādhate vi durmatīrādediśānaḥ śaryaheva śurudhaḥ*
 [ṚV. 9,70,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.070.html#rv09.070.05)
-  <sub>DCS 628 · attested</sub>
+  <sub>attested</sub>

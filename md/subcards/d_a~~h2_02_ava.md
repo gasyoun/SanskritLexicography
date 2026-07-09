@@ -24,16 +24,16 @@
 [AIT. BR. 2,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,10)
 [KĀTY. ŚR. 6,8,9.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,8,9) *tāṃśca tāśca te paśava iha nihatā yamasadane yātayanto rakṣogaṇāḥ saunikā iva svadhitināvadāyāsṛkpibanti* разрубать на куски
 [BHĀG. P. 5,26,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,31)
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd abfertigen: *ava stomebhī rudraṃ diṣīya*
 [ṚV. 2,33,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.05); vgl. *day* mit *ava* .
 
 - **RU:** — 2) отделываться от кого-л., отпускать кого-л.: *ava stomebhī rudraṃ diṣīya*
 [ṚV. 2,33,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.05); vgl. *day* с *ava* .
-  <sub>DCS 15 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. *avatta, caturavatta*, 1. *avadāna* .
 
 - **RU:** — Vgl. *avatta, caturavatta*, 1. *avadāna* .
-  <sub>DCS 15 · lexicographic</sub>
+  <sub>lexicographic</sub>

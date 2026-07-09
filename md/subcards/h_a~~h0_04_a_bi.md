@@ -13,4 +13,4 @@
 - **EN:** — *abhi* {to catch, seize unawares}: *etyākāle 'bhihāya mukhamapyagṛhṇāt* {came, seized him unexpectedly and held his mouth shut}
 [AIT. BR. 6,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,33) *pādamagṛhṇāt*
 [KĀṬH. 13,2.]
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

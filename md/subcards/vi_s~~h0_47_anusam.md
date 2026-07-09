@@ -11,4 +11,4 @@
 [TBR. 1,5,10,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,10,7)
 [KAUŚ. 103.] *suptāmanusaṃviveśa* when she slept, he too lay down to rest
 [RAGH. 2,24.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,24)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

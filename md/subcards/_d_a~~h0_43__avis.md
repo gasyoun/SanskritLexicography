@@ -13,4 +13,4 @@
 
 - **RU:** — *āvis*, partic. *āvirhita* появившийся на свет, обнаружившийся
 [BHĀG. P. 2,7,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,36)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

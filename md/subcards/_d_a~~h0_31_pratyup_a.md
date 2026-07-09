@@ -10,4 +10,4 @@
 [BHĀG. P. 8,24,61.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,61)
 - **EN:** — *pratyupā* to regain, recover: *pralayapayasi dhātuḥ suptaśaktermukhebhyaḥ śrutigaṇamapanītaṃ pratyupādhatta*
 [BHĀG. P. 8,24,61.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,61)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

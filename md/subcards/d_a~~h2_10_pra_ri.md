@@ -14,4 +14,4 @@ Sch.
 Sch.
 *praṇyadāt*
 [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

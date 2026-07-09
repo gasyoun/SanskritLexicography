@@ -13,4 +13,4 @@
 - **EN:** — *abhipra* to think of someone, to care for someone: *tamaśanāyāpipāse abrūtāmāvābhyāmabhiprajānīhīti*
 [AIT. UP. 2,5.]
 [SĀY.] supplies *adhiṣṭhānam* and explains *abhi˚* by *cintaya* think out.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

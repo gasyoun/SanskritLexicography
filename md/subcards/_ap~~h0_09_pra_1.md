@@ -16,7 +16,7 @@
 
 [8,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,198) [300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,300) [342.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,342) *āyudhavyasanaprāptam* (vgl.
 [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24)) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) — [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) [10887.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.10887) [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [13,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,47) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,47)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-5)** — 5) gekommen, angelangt, da seiend: *sabhāntaḥ sākṣiṇaḥ prāptān* [M. 8,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,79) *kāle prāptaḥ* [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) *prāpto 'syamaravat* [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) [N. 23,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,16) [26,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,31) [INDR. 1,12.] [VID. 43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177) [300.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?300) *ātyayike kārye prāpte* [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *māghaśuklasya vā prāpte pūrvāhṇe prathame 'hani* [4,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,96) *prāpte kāle* [9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) [MBH. 3,2191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2191) *prāpte tu ṣoḍaśe varṣe* [CĀṆ. 11.] Citat bei [MALLIN.] zu [RAGH. 3,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,28) *vayasi prāpte* [N. 1,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,11) *avasare prāpte* [VID. 233.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?233) *prāptāyāṃ rajanau* [77.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?77) *prāptakāla* _m._ und _adj._ [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) [13,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,17) [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [HIT. I,44.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,44) [22,1](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1), v. l. *prāptayauvanā* [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas* [BRĀHMAṆ. 1,28.] *kramaprāpta* [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
 
@@ -41,7 +41,7 @@
 [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas*
 [BRĀHMAṆ. 1,28.] *kramaprāpta*
 [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-6)** — 6) zum Abschluss, zur Reife gelangt, fertig: *aprāptavyavahāra* dessen Process nicht beendigt ist [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* ein Mädchen, das noch nicht mannbar ist, [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
 
@@ -49,7 +49,7 @@
 - **EN:** — 6) brought to completion, having reached maturity, finished: *aprāptavyavahāra* whose process is not yet finished
 [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* a girl not yet marriageable,
 [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-7)** — 7) gramm. in Folge einer Regel Geltung habend: *gaṇapāṭhātsarvatra prāptā saṃjñā* [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), Sch. *prāptavibhāṣā* oder *prāpte vi˚* s. u. *vibhāṣā* . medic. indicirt: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate* [SUŚR. 2,7,2.] — Die Lexicographen kennen noch zwei Bedeutungen:
 
@@ -58,14 +58,14 @@
 [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), Sch.
 *prāptavibhāṣā* or *prāpte vi˚* s. u. *vibhāṣā* . medic. indicates: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate*
 [SUŚR. 2,7,2.] — The lexicographers know two further meanings:
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ppp-8)** 8) gestellt (*praṇihita*) [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
 
 - **RU:** 8) поставленный (*praṇihita*) [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
 - **EN:** 8) placed, positioned (*praṇihita*)
 [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **ppp-9)** — 9) schicklich [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* oder *prāpya* [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), Sch. [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
 
@@ -74,7 +74,7 @@
 [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* or *prāpya*
 [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), Sch.
 [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
-  <sub>DCS 6022 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **caus-1)** 1) Jmd oder Etwas wohin (acc. oder Ortsadv.) gelangen lassen, treiben, führen, bringen, befördern; act.: *prāpaya na ācāryakulam* [CHĀND. UP. 4,5,1.] [MBH. 1,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.818) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1850) [2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2998) [4,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1664) [ARJ. 4,23.] [R. 2,40,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,11) [4,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,19) [PAÑCAT. 114,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,23) [115,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,3) [KATHĀS. 10,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,189) [22,179.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,179) [VID. 34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?34) [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), Sch. *prāpayainam — ito janapadātparam* [R. 2,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,10) [MBH. 3,13289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13289) — med. [ŚAT. BR. 1,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,16) [MBH. 4,1739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1739) [1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1748) *punargatvā pārthivaṃ taṃ sametya vākyaṃ madīyaṃ prāpayasvārthayuktam* [14,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.242) — pass.: *tayā — śmaśānaṃ prāpitaḥ so 'bhūt* [KATHĀS. 25,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,214) *sā mañjūṣā prāpitā bahubhirjanaiḥ* [4,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,76) *yaiḥ — paramaṃ mṛtyoḥ padaṃ prāpitaḥ* [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (eine Angelegenheit) [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
 
@@ -99,7 +99,7 @@
 [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ*
 [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (a matter, an affair)
 [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) Jmd (acc.) Etwas (acc.) erlangen lassen: *rājānam — prāpayenmahatīṃ śriyam* [MBH. 2,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.171) *vyākaraṇaṃ* (acc.) *loke pratiṣṭhāṃ prāpayiṣyati* [KATHĀS. 2,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,69) *harīṇāṃ prāpito rājyaṃ tvaṃ durātmā mahātmanā* [R. 4,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,25) *mayaiṣa śaṣpabhuksācivyaṃ prāpitaḥ* [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) *prāpito mukhyamantritām* [RĀJA-TAR. 5,424.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424)
 
@@ -110,7 +110,7 @@
 [R. 4,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,25) *mayaiṣa śaṣpabhuksācivyaṃ prāpitaḥ*
 [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) *prāpito mukhyamantritām*
 [RĀJA-TAR. 5,424.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) erlangen: *tvatprasādādavighnena prāpayeyaṃ kriyāphalam* [R. 1,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,8) — desid. zu erreichen suchen, streben: *yathā vatso jāta stanaṃ prepsati* [TS. 5,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,1) [ŚAT. BR. 1,4,2,13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,13) (die Hdschr.: *prepsyati*). [4,1,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,1,21) Vgl. *prepsu* .
 
@@ -120,4 +120,4 @@
 [TS. 5,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,1)
 [ŚAT. BR. 1,4,2,13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,13) (the Hdschr.: *prepsyati*).
 [4,1,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,1,21) Vgl. *prepsu* .
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>

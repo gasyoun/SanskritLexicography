@@ -22,4 +22,4 @@
 [MBH. 3,2989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2989) *sa eṣo 'ntaścarate bahudhā jāyamānaḥ* he multiplies himself within (vgl. simpl. u.
 3,b) [MUṆḌ. UP. 2,2,6.] *prajāpatiścarati garbhe antaḥ* is in the womb
 [VS. 31,19.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?31,19)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

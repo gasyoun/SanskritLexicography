@@ -19,7 +19,7 @@
 [BHĀG. P. 10,48,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,19) *hrīśca krodhaśca bībhatsuṃ kṣaṇenānvāviveśa ha*
 [MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389) *mohaḥ*
 [7,1405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1405)
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) nachgehen, folgen, sich nach Etwas richten: *yathā hyeveha prajā anvāviśanti yathānuśāsanam*
 [CHĀND. UP. 8,1,5.] *taṃ dharmamasurāḥ — nāmṛṣyanta — vivardhamānāḥ kramaśastatra te 'nvāviśanprajāḥ*
@@ -31,4 +31,4 @@
 - **EN:** — 2) to go after, follow, conform oneself to (something): *yathā hyeveha prajā anvāviśanti yathānuśāsanam*
 [CHĀND. UP. 8,1,5.] *taṃ dharmamasurāḥ — nāmṛṣyanta — vivardhamānāḥ kramaśastatra te 'nvāviśanprajāḥ*
 [MBH. 12,10800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10800)
-  <sub>DCS 5 · attested</sub>
+  <sub>attested</sub>

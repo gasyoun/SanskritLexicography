@@ -22,4 +22,4 @@
 [R. 3,42,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,23) *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktā vegaṃ pratisamāsitum*
 [5,68,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,19) *droṇakarṇaprabhṛtayo yena pratisamāsitāḥ . raṇe*
 [MBH. 14,1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1830) Vgl. — *sam* 4.
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

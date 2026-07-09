@@ -5,14 +5,14 @@
 
 **abhyud-1)** √*gam*¦ mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
 
-- **RU:** √*gam*¦ с *abhyud* 1) *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
+- **RU:** √*gam*¦ с *abhyud* 1〉 *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
 - **EN:** √*gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
   <sub>attested</sub>
 
 **nis-zukommen)** √*gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY. zu ṚV. 9,1,4].
 — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
 
-- **RU:** √*gam*¦ с *abhi* Caus. также давать причитаться [SĀY. zu ṚV. 9,1,4].
+- **RU:** √*gam*¦ с *abhi* Caus. также давать причитающееся, предоставлять [SĀY. zu ṚV. 9,1,4].
 — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
 - **EN:** √*gam* with *abhi* Caus. also to let accrue to, grant [SĀY. zu ṚV. 9,1,4].
 — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].

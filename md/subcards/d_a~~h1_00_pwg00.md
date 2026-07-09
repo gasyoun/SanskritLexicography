@@ -14,4 +14,4 @@
 [SĀY.] der dat. *de*
 [5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) В конце comp. дающий, дарующий; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
 — Vgl. 1. *da* .
-  <sub>DCS 12366 · lexicographic</sub>
+  <sub>lexicographic</sub>

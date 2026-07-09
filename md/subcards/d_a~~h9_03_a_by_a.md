@@ -12,4 +12,4 @@ Schol. Th. 3, S. 371.
  1) к *na hīnataḥ paramabhyādadīta* vgl.
 [Spr. 1554](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1554) и объяснения
 Schol. Th. 3, S. 371.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

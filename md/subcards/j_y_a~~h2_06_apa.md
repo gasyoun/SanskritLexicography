@@ -7,4 +7,4 @@
 
 - **RU:** — *apa* vgl. *apajñāna* .
 - **EN:** — *apa* vgl. *apajñāna*.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

@@ -19,7 +19,7 @@
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *samāptavaradakṣiṇāḥ (kratavaḥ)* "complete, full in number"
 [523](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?523), v. l. *asamāpta* "lacking something" (instr.) "not full, that with respect to which something is wanting"
 [ṚV. PRĀT. 13,13.] — caus.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **2)** 2)
 [ṚV. PRĀT. 10,1.]
@@ -28,7 +28,7 @@
 [ṚV. PRĀT. 10,1.]
 - **EN:** 2)
 [ṚV. PRĀT. 10,1.]
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) Jmd abthun, Jmd den Garaus machen: *śarairaṣṭabhirekaikaṃ samāpya*
 [KATHĀS. 48,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,67) *yadeṣa sādhuhṛcchayastvayāsuraḥ samāpitaḥ* (so ist zu schreiben)
@@ -40,4 +40,4 @@
 - **EN:** — 3) "to do away with someone, to finish someone off": *śarairaṣṭabhirekaikaṃ samāpya*
 [KATHĀS. 48,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,67) *yadeṣa sādhuhṛcchayastvayāsuraḥ samāpitaḥ* (thus it is to be written)
 [BHĀG. P. 7,8,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,51)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>

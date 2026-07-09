@@ -25,7 +25,7 @@ Sch.
 [12,2,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,3,9) [3,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,3,5) *upajñāta*
 [P. 4,3,115.](https://ashtadhyayi.com/sutraani/4/3/115) = *vinopadeśena jñātam*
 Sch.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *upajñā* . — desid. ausfindig zu machen suchen (?)
 [MBH. 13,3016](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3016)
@@ -34,10 +34,10 @@ Sch.
 [MBH. 13,3016](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3016)
 - **EN:** — Vgl. *upajñā* . — desid. to seek to find out (?)
 [MBH. 13,3016](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3016)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *upajijñāsya* .
 
 - **RU:** — Vgl. *upajijñāsya* .
 - **EN:** — Vgl. *upajijñāsya* .
-  <sub>DCS 5059 · lexicographic</sub>
+  <sub>lexicographic</sub>

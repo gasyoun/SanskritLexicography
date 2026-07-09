@@ -22,7 +22,7 @@
 [ŚAT. BR. 9,2,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,2,3) *channā vasati*
 [KĀTY. ŚR. 5,4,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,1) *vasatu nu na idam*
 [TS. 6,4,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,2,1)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) in einer Lage u. s. w. sich dauernd befinden, sich widmen, obliegen: *nābrāhmaṇe gurau śiṣyo vāsamātyantikaṃ vaset*
 [M. 2,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,242) *hṛṣṭo vāsamuvāsa ha*
@@ -86,7 +86,7 @@
 [MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) *vīrāsanam*
 [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *idaṃ vatsyāmaḥ* (z. B. *gārhasthyam* Comm.)
 [ĀŚV. GṚHY. 3,10,2.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b) an einem Orte verbleiben: *nadīrvaneṣu coṣitvā*
 [VOP. 5,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,3) *vasa tāṃ purīm*
@@ -98,7 +98,7 @@
 - **EN:** — b) to remain in a place: *nadīrvaneṣu coṣitvā*
 [VOP. 5,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,3) *vasa tāṃ purīm*
 [R. GORR. 2,114,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,24)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) in der Stelle: *brāhmeṇa viprānvasati yuddhenaiva ca kṣatriyān . pradānakarmaṇā vaiśyān śūdrānparicareṇa ca ..*
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) ergänzt [NĪLAK.] zum acc. *adhiṣṭhāyaḥ* dem Zusammenhange nach muss *vas* hier so v. a. sich beschäftigen lassen (bekleiden?) bedeuten.
@@ -107,7 +107,7 @@
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) дополняет [NĪLAK.] к acc. *adhiṣṭhāyaḥ*; по смыслу контекста *vas* здесь должно означать дать себя занять (облачить?).
 - **EN:** — c) in the passage: *brāhmeṇa viprānvasati yuddhenaiva ca kṣatriyān . pradānakarmaṇā vaiśyān śūdrānparicareṇa ca ..*
 [HARIV. 11968](https://sanskrit-lexicon-scans.github.io/hariv?11968) supplies [NĪLAK.] to acc. *adhiṣṭhāyaḥ* according to the context *vas* here must mean v. a. to let oneself be occupied (clothed?).
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4a)** a) mit pass. Bed.: *dinamekaṃ manye tvayā sārdhamihoṣitam* zugebracht, verlebt
 [BRAHMA-P. in LA. (III) 56,13.] impers.: *yatroṣitaṃ tvayā* wo du geweilt hast
@@ -126,7 +126,7 @@
 [MBH. 1,3268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3268) *kārāgṛhe*
 [RAGH. 6,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,40)
 [Spr. 2445.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2445) [2928.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2928)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-intro)** — b) mit act. Bed. = *sthitavant*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
@@ -135,7 +135,7 @@
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
 - **EN:** — b) with act. Bed. = *sthitavant*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-alpha)** α) Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend: *velātaṭeṣūṣitasainikāśvaḥ*
 [RAGH. 18,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,22) *trirātramuṣitaḥ* drei Nächte zugebracht habend
@@ -213,7 +213,7 @@
 [MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) having waited a year
 [1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) *abhyantaroṣita* having one's abode
 [KĀM. NĪTIS. 17,28.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-beta)** — β) gestanden —, gelegen habend (insbes. über Nacht), von Sachen: *śvabhroṣitaṃ kusumam*
 [VARĀH. BṚH. S. 53,95.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,95) *kṣāre dinoṣite*
@@ -240,7 +240,7 @@
 [1,181,16. 199,19.] *ciroṣitaṃ bhaktaṃ paryuṣitaṃ ca*
 [MĀRK. P. 34,57.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,57) *jaloṣita* having lain in water
 [SUŚR. 2,448,15.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4b-gamma)** — γ) gefastet habend (vgl. unter *upa): śuciḥ purodhāstryahoṣitaḥ snātaḥ*
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
@@ -249,14 +249,14 @@
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
 - **EN:** — γ) having fasted (vgl. under *upa): śuciḥ purodhāstryahoṣitaḥ snātaḥ*
 [VARĀH. BṚH. S. 46,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) mit einem acc.
 
 - **RU:** 3) с acc.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) partic. *uṣita*
 
 - **RU:** 4) partic. *uṣita*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

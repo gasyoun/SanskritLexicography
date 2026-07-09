@@ -17,7 +17,7 @@
 
 * pratyajaiṣīt*
 [MBH. 7,1357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1357)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [MBH. 7,1357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1357) — desid. siegen —, besiegen wollen; angreifen: *vayaṃ pratijigīṣantastatra tānsamabhidrutāḥ*
 [MBH. 7,4376.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4376)
@@ -26,4 +26,4 @@
 [MBH. 7,4376.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4376)
 - **EN:** — desid. to wish to conquer —, to wish to defeat; to attack: *vayaṃ pratijigīṣantastatra tānsamabhidrutāḥ*
 [MBH. 7,4376.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4376)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

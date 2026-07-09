@@ -26,7 +26,7 @@
 [7,19,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.019.html#rv07.019.07) *parā dehi śāmulyaṃ brahmabhyo vi bhajā vasu*
 [10,85,29.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.29) [1,81,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.06) [AV. 12,1,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.37) [ŚAT. BR. 14,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,6) *mahe cana tvāmadrivaḥ parā śulkāya deyām* отдавать за (dat.), обменивать
 [ṚV. 8,1,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.05)
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausschliessen von: *bhavaṃ ye barhiṣo bhāgabhājaṃ parāduḥ*
 [BHĀG. P. 4,6,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,5) — *parātta* partic.
@@ -35,9 +35,9 @@
 - **RU:** — 2) лишать, исключать из: *bhavaṃ ye barhiṣo bhāgabhājaṃ parāduḥ*
 [BHĀG. P. 4,6,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,5) — *parātta* partic.
 [P. 7,4,47](https://ashtadhyayi.com/sutraani/7/4/47), Sch.
-  <sub>DCS 20 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *parādadi, parādāna* .
 
 - **RU:** — Vgl. *parādadi, parādāna* .
-  <sub>DCS 20 · lexicographic</sub>
+  <sub>lexicographic</sub>

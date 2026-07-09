@@ -76,7 +76,7 @@
 [BHAṬṬ. 15,70.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,70) *tena sa ca kaṭvervārau yathāpakve madhuraḥ sanraso 'pi na . prāpyate* (is met with, found) *hi*
 [YĀJÑ. 3,142.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,142) *prāpi mahāgiriḥ*
 [BHAṬṬ. 15,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,106)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlangen, gewinnen, sich zuziehen, auf sich laden, erleiden; act.: *prāpeyaṃ sarvā *
 
@@ -166,7 +166,7 @@
 [R. 1,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,7) [2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28) [4,34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,28) — pass.: *prāpyate hyamṛtaṃ tataḥ*
 [M. 12,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,85) *svargo rakṣaṇātprāpyate yathā*
 [R. 1,17,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,6)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) gramm. in eine Form, einen Laut (acc.) übergehen: *nāsikāśabdaśca nasaṃ prāpnoti* und das Wort *nāsikā* geht in *nasa* über
 [SIDDH. K.] zu [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
@@ -178,7 +178,7 @@
 - **EN:** — 3) gramm. to pass over into a form, a sound (acc.): *nāsikāśabdaśca nasaṃ prāpnoti* and the word *nāsikā* passes into *nasa*
 [SIDDH. K.] to [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
 [VOP. 2,25.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,25)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) intrans. reichen bis *(ā): āprapadaṃ prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
@@ -190,7 +190,7 @@
 - **EN:** — 4) intrans. to extend as far as *(ā): āprapadaṃ prāpnoti*
 [P. 5,2,8.](https://ashtadhyayi.com/sutraani/5/2/8)
 [AK. 2,6,3,21.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,3,21)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich finden, vorhanden sein: *yatra prāpnoṣyoṣadhe*
 [AV. 4,19,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.02) in der Gramm. in Folge einer Regel Geltung erhalten, sich aus einer Regel ergeben: *sthānyāśrayaṃ kāryamādeśe na prāpnoti*
@@ -208,7 +208,7 @@
 [KĀŚ.] to [P. 1,1,56.](https://ashtadhyayi.com/sutraani/1/1/56) *iko ye guṇavṛddhī prāpnutaste na bhavataḥ*
 [4](https://ashtadhyayi.com/sutraani/1/1/4), Sch. In the same Bed. also pass.: *prāpyamāṇānāṃ yaḥ sadṛśatamaḥ*
 [50](https://ashtadhyayi.com/sutraani/1/1/50), Sch. — partic. *prāpta*
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-1)** 1) erreicht, getroffen, angetroffen: *dhūmaprāptaḥ*
 [KĀTY. ŚR. 22,6,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16) [17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,17) *yathaidhastejasā vahniḥ prāptaṃ nirdahati kṣaṇāt*
@@ -229,7 +229,7 @@
 [HIT. 20,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15) *kenāpi vyādhena — sa mantharaḥ prāptaḥ*
 [42,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,13) *pathaḥ prāptakarmatvāt* because *pathin* is an object reached (in *panthānaṃ gacchati*)
 [P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12), Vārtt. 3, Sch.
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-2)** — 2) erlangt, gewonnen, sich zugezogen, auf sich geladen
 [AK. 3,2,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,54)
@@ -297,7 +297,7 @@
 [AK. 2,8,2,85.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,85)
 [VID. 284.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?284) In such compp. a transposition of the members is assumed, because *prāpta* is taken in an active sense. Vgl.
 [AK. 3,6,43.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,43)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-3)** — 3) erreicht oder getroffen habend, an einem Orte angelangt seiend: *tṛṇāni prāptaḥ*
 [AV. 9,7,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.007.html#av09.007.22) *aprāptā hīmāṃ bhavanti*
@@ -342,4 +342,4 @@
 [VIŚV. 9,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,5) *saṃtuṣṭe karaprāpte 'pyarthe bhavati nādaraḥ*
 [HIT. I,139.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,139) Vgl. *tasya hastagato jayaḥ*
 [MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296)
-  <sub>DCS 6022 · attested</sub>
+  <sub>attested</sub>

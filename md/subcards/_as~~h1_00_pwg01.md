@@ -31,7 +31,7 @@
 [R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
 [56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) Vgl. also u. *upa* and *prāyamupaviṣṭān*
 [R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) From this it follows that *prāyamāśiṣye, āśitum* and *upāśiṣye* (s. 1. *aś* with *ā* and *upa*) is merely a false spelling. On the confusion of *ās* and *aś* s. see also u. 6. Since *ās* also otherwise combines with a acc. (vgl. below at the partic. *āsita* the first example u. "c"), *doham* and *prāyam* may also be understood as genuine acc..
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
 [MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
@@ -64,7 +64,7 @@
 [ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* ("finds himself in these circumstances") *mahābhāgā sītā*
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) This is probably also to be referred here: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 and 64.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4d)** — d) ein instr.: *hiraṇyako 'pi sahasramukhaviladurgaṃ praviṣṭaḥ sannakutobhayaḥ sukhenāste* befindet sich ganz wohl
 [PAÑCAT. 107,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?107,2) *yasminkṛtyaṃ samāveśya nirviśaṅkena cetasā . āsyate* bei dem man sich ruhiges Herzens fühlt, wenn man ihm
@@ -82,7 +82,7 @@ ein Geschäft übertragen hat,
 
 "entrusted him with a task",
 [I,106.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,106)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **4e)** — e) ein dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* möge die gute Führung redlicher Leute wie eine Neuvermählte euerm Herzen zur Freude gereichen und zwar dauernd
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
@@ -91,7 +91,7 @@ ein Geschäft übertragen hat,
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
 - **EN:** e) a dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* "may the good conduct of honest people, like a newly-wed bride, bring joy to your heart, and that lastingly"
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich legen, ein Ende nehmen: *tadāstāṃ tāvadvihaṃgamāmiṣalobho yāvatkuṭumbajīvanopāyabhūtaṃ jālamapi me naṣṭam*
 [PAÑCAT. 106,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?106,19) *āstāṃ tāvat* (es ist Zeit ein Ende zu machen mit der Aufzählung der Untugenden der Weiber) *kimanyena daurātmyeneha yoṣitām . vivṛtaṃ svodareṇāpi ghnanti putraṃ svakaṃ ruṣā ..*
@@ -115,7 +115,7 @@ ein Geschäft übertragen hat,
 [DAŚAK. 185], ult. *āstāṃ mā maivam* "enough! not so! not so!"
 [HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
 [127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) die Form *āsan*
 [ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07) : *yebhiḥ sapitvaṃ pitaro na āsan* ist eine unregelm. Schreibung und zu 1. *aś* zu ziehen; man vgl. oben u. 4, b und den Wechsel zwischen Formen von *ās* und *aś* in
@@ -130,7 +130,7 @@ ein Geschäft übertragen hat,
 [ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07): *yebhiḥ sapitvaṃ pitaro na āsan* is a unregelm. spelling and is to be referred to 1. *aś*; compare vgl. above u. 4, "b" and the alternation between forms of *ās* and *aś* in
 [SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2] and the corresponding passages of the
 [ṚV.] — partic. *āsita*
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1a)** 1) _adj._
 a) der gesessen oder gewohnt hat: *āsitaḥ saḥ*
@@ -186,7 +186,7 @@ Sch. to [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 — c) «то, чем занимаются»: *anāsitakuṭumbāni kuṭumbibhavanāni*
 [R. 2,71,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,35) *rāmalakṣmaṇasītābhī rājñā daśarathena ca — .. āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam . tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati ..*
 [1,3,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,4)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **VN-2)** — 2) _n._
  a) das Sitzen, Sichsetzen: *jṛmbhāsitādikṛt (ālasyam)*
@@ -209,4 +209,4 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), Sch.
 — desid. *āsisiṣate*
 [P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Sch.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to step forward, go forward: *mahābalāste kupitāḥ parasparaṃ niṣūdayantaḥ pravicerurojasā*
 [MBH. 7,1451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1451) *yatheṣṭaṃ svacchandaḥ pravicarati matto gaja iva*
 [HIT. II,135.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,135)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herumstreichen, umhergehen: *śulkamiva sādhayanto madhukarapuruṣāḥ pravicaranti*
 [MṚCCH. 107,6.]
@@ -25,7 +25,7 @@
 [MṚCCH. 107,6.]
 - **EN:** — 2) to roam about, wander about: *śulkamiva sādhayanto madhukarapuruṣāḥ pravicaranti*
 [MṚCCH. 107,6.]
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) durchschreiten, durchgehen, durchwandern: *sa madhyaṃ prāpya sainyānāṃ sarvāḥ pravicarandiśaḥ*
 [MBH. 7,644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.644) [908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.908) *nirjanānasahāyastvaṃ deśānpravicariṣyasi*
@@ -40,4 +40,4 @@
 [MBH. 7,644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.644) [908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.908) *nirjanānasahāyastvaṃ deśānpravicariṣyasi*
 [10,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.732) — caus. to weigh exactly, examine: *suhṛdbhirāptairasakṛdvicāritaṃ svayaṃ ca buddhyā pravicāritāśrayam . karoti kāryaṃ khalu yaḥ sa buddhimān*
 [PAÑCAT. III,116.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,116)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

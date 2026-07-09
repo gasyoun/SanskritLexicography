@@ -45,13 +45,13 @@
 [10,32,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,32,11) [52,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,52,37) med. [3,18,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,1) [8,19,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,10) [10,89,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,51) *nirviṣṭa* having entered, lodged in
 [1,2,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,33) [3,16,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,34) [4,24,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,56) sitting
 [RAGH. 12,68](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,68) (*niviṣṭa* [ed. Calc.]).
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ein Haus beziehen, heirathen (vom Manne): *nirviṣan* (lies *nirviśan*) heirathend und *anirviṣṭa* nicht verheirathet s. u. *pariviṇa* .
 
 - **RU:** — 2) обосноваться в доме, жениться (о мужчине): *nirviṣan* (читай *nirviśan*) вступающий в брак und *anirviṣṭa* не вступивший в брак s. u. *pariviṇa* .
 - **EN:** — 2) to set up house, to marry (of a man): *nirviṣan* (read *nirviśan*) marrying and *anirviṣṭa* unmarried s. u. *pariviṇa*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) abtragen, bezahlen: *nirveṣṭuṃ bhartṛpiṇḍam*
 [MBH. 8,637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.637) *asti nūnaṃ karma kṛtaṃ purastādanirviṣṭaṃ pāpakaṃ dhārtarāṣṭraiḥ*
@@ -63,7 +63,7 @@
 - **EN:** — 3) to pay off, discharge: *nirveṣṭuṃ bhartṛpiṇḍam*
 [MBH. 8,637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.637) *asti nūnaṃ karma kṛtaṃ purastādanirviṣṭaṃ pāpakaṃ dhārtarāṣṭraiḥ*
 [5,1816.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1816)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) geniessen, Genuss —, Freude an Etwas haben; act. mit acc.: *pradoṣān*
 [RAGH. 6,34.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,34) *madhum*
@@ -114,7 +114,7 @@
 [DAŚAK. 24,16.fg.] *nirviṣṭa* enjoyed
 [RAGH. 6,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,38) [12,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,1) [13,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,60) [14,80.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,80)
 [Spr. (II) 1087.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1087)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) *nirviśantyāṃ*
 [MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) fehlerhaft für *nivi˚*, wie die [ed. Bomb.] liest.
@@ -123,10 +123,10 @@
 [MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) ошибочно вместо *nivi˚*, как читает [ed. Bomb.].
 - **EN:** — 5) *nirviśantyāṃ*
 [MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) erroneous for *nivi˚*, as the [ed. Bomb.] reads.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *nirveśa* fg., *nirveṣṭavya* (statt der zweiten Bed. ist zu setzen woran man Genuss haben kann) und *niveśya* 3), wo die [ed. Bomb.], wie wir vermuthet hatten, *nirveśya* liest.
 
 - **RU:** — Vgl. *nirveśa* fg., *nirveṣṭavya* (вместо второго Bed. следует поставить то, чем можно наслаждаться) und *niveśya* 3), где [ed. Bomb.], как мы предполагали, читает *nirveśya*.
 - **EN:** — Vgl. *nirveśa* fg., *nirveṣṭavya* (instead of the second Bed. one is to read that in which one can have enjoyment) and *niveśya* 3), where the [ed. Bomb.], as we had conjectured, reads *nirveśya*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

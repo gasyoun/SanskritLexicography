@@ -38,7 +38,7 @@
 [MBH. 5,4929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4929) *sādhu sādhviti sarvatra niśceruḥ stutisaṃhitāḥ . vācaḥ*
 [6,1635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1635) *gāthā niścaranti sma*
 [LALIT. ed. Calc. 3,18.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **causative)** — caus. hervorgehen lassen ebend.
 - **EN:** — caus. {to cause to come forth} ebend.
@@ -46,4 +46,4 @@
 **caus)** [LALIT. ed. Calc. 3,18.] — caus. hervorgehen lassen ebend.
 
 - **RU:** [LALIT. ed. Calc. 3,18.] — caus. заставлять выходить, извлекать ebend.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

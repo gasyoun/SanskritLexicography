@@ -12,9 +12,9 @@
 **mit T2)** **2.** *vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
 
 - **RU:** С *pra*, vgl. *saṃvatsarapravāta*.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** **5.** *vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
 
 - **RU:** Caus. *vāpayate* заставлять ткать [DIVYĀVAD. 231,8. fgg.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

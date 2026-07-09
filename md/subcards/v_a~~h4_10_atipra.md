@@ -10,4 +10,4 @@
 [ŚĀṄKH. BR. 11,5.]
 - **EN:** — *atipra* "to set on further, to add further"
 [ŚĀṄKH. BR. 11,5.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

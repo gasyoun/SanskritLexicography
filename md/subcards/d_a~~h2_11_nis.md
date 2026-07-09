@@ -8,9 +8,9 @@
 
 - **RU:** — *nis*, partic. *nirdita*
 [P. 7,4,40](https://ashtadhyayi.com/sutraani/7/4/40), Sch.
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *nirdātar* .
 
 - **RU:** — Vgl. *nirdātar* .
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

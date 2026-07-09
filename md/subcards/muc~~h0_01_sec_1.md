@@ -124,7 +124,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) *(gardabhaḥ) śasyakṣetre mocitaḥ* "he let the donkey loose, let it go freely upon"
 [HIT. ed. JOHNS. 1706.] "to let something go" thus v. a. "to spend, give away": *tapasā dravyamāsādya mocayetsādhitena yaḥ*
 [MĀRK. P. 121,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,3)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd veranlassen aufzugeben, — fahren zu lassen, — zu entlassen, — von sich zu geben: *tvāmapyaśraṃ jalalavamayaṃ mocayiṣyatyavaśyam*
 [MEGH. 91.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?91) *vājinaḥ — āyūṃṣi — amocayat*
@@ -136,7 +136,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 - **EN:** — 2) "to cause someone to give up —, to let go —, to dismiss —, to part with": *tvāmapyaśraṃ jalalavamayaṃ mocayiṣyatyavaśyam*
 [MEGH. 91.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?91) *vājinaḥ — āyūṃṣi — amocayat*
 [BHAṬṬ. 9,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,67)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) erfreuen
 [DHĀTUP.]
@@ -145,4 +145,4 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [DHĀTUP.]
 - **EN:** — 3) "to delight, gladden"
 [DHĀTUP.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

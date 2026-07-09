@@ -9,4 +9,4 @@
 - **RU:** — *abhi*, partic. *˚vāta* вялый, хворый: *abhivātāsu goṣu yā anabhivātāḥ syuḥ* [LĀṬY. 8,5,3.] = *vyādhita* Comm.
 - **EN:** — *abhi*, partic. *˚vāta* faint, sickly: *abhivātāsu goṣu yā anabhivātāḥ syuḥ*
 [LĀṬY. 8,5,3.] = *vyādhita* Comm.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

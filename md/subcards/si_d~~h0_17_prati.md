@@ -70,7 +70,7 @@
 [R. GORR. 2,16,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,16,35) [23,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,23,11) [4,8,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,47) [16,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,16,14) [5,63,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,7)
 [RAGH. 12,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,26)
 [ŚĀK. 105,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?105,18)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Etwas zurückhalten, unterdrücken: *˚ṣidhya māyām*
 [BHĀG. P. 4,7,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,26) Etwas verwehren, verbieten, untersagen, verneinen
@@ -169,7 +169,7 @@ zu [3,1,134.](https://ashtadhyayi.com/sutraani/3/1/134) *˚ṣiddhavant* тот,
 [P. 8,1,44.](https://ashtadhyayi.com/sutraani/8/1/44) gaṇa *grāhyādi*
 zu [3,1,134.](https://ashtadhyayi.com/sutraani/3/1/134) *˚ṣiddhavant* "one who has forbidden —, prohibited something"
 [RĀJA-TAR. 1,114.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,114)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **II.1)** — Vgl. *pratiṣeddhar* fgg. — caus.
  1) abwehren, abhalten, abweisen: *amātyān*
@@ -196,7 +196,7 @@ zu [3,1,134.](https://ashtadhyayi.com/sutraani/3/1/134) *˚ṣiddhavant* "one wh
 [R. 2,96,42](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,42) ([105,41](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,41) [GORR.]). [4,9,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,63) *astrāṇi*
 [MBH. 5,7171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7171) *mṛtyuśca pratiṣedhitaḥ*
 [R. 5,78,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,78,14)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **II.2)** — 2) Etwas verwehren, untersagen, verbieten: *mārgaṃ vātasya*
 [HARIV. 10443.](https://sanskrit-lexicon-scans.github.io/hariv?10443) *vidhāvapratiṣedhite*
@@ -211,4 +211,4 @@ zu [3,1,134.](https://ashtadhyayi.com/sutraani/3/1/134) *˚ṣiddhavant* "one wh
 [HARIV. 10443.](https://sanskrit-lexicon-scans.github.io/hariv?10443) *vidhāvapratiṣedhite*
 [MBH. 12,350.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.350) Comm. zu [TS. PRĀT. 13,3.] "to negate"
 [SARVADARŚANAS. 8,19.]
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

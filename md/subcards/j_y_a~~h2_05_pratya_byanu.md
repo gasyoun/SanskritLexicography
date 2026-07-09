@@ -7,4 +7,4 @@
 
 - **RU:** — *pratyabhyanu* vgl. *pratyabhyanujñā* .
 - **EN:** — *pratyabhyanu* vgl. *pratyabhyanujñā*.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

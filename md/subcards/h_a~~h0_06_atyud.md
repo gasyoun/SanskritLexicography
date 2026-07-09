@@ -10,4 +10,4 @@
 [ŚAT. BR. 14,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,14)
 - **EN:** — *atyud* {to raise oneself above}: *śīrṣṇā yūpam*
 [ŚAT. BR. 14,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,14)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

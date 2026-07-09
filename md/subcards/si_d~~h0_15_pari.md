@@ -19,4 +19,4 @@
 *dviṣo ghnanparisedhataḥ* (= *āgacchataḥ, sarvato gacchataḥ* Comm.)
 [BHAṬṬ. 9,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,88) — desid. *˚ṣiṣedhayiṣati*
 [P. 8,3,64](https://ashtadhyayi.com/sutraani/8/3/64), Schol.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

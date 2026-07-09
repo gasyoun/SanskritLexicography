@@ -16,7 +16,7 @@
  1) to exchange clothes: *vāsasī iva vivasānau ye carāvaḥ*
 [TS. 1,5,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,10,1)
 [ĀŚV. ŚR. 2,5,10.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anziehen, umlegen: *manorame na vyavasiṣṭa vastre*
 [BHAṬṬ. 3,20.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,20) — caus. anziehen, umlegen: *vivāsyantāṃ rurucarmāṇi*
@@ -30,11 +30,11 @@
 
 - **RU:** — 2) надевать, набрасывать: *manorame na vyavasiṣṭa vastre*
 [BHAṬṬ. 3,20.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,20)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **vi 2) (2nd instance))** caus. anziehen, umlegen: *vivāsyantāṃ rurucarmāṇi*
 [MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520)
 
 - **RU:** caus. надевать, набрасывать: *vivāsyantāṃ rurucarmāṇi*
 [MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

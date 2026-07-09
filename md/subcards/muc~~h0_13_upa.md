@@ -19,10 +19,10 @@
 [TS. 5,4,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,4,4)
 [KAUŚ. 18.]
 [KĀTY. ŚR. 15,6,24.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,6,24)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **misc)** — Vgl. *yathopamuktam* .
 
 - **RU:** — Vgl. *yathopamuktam* .
 - **EN:** — Vgl. *yathopamuktam* .
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

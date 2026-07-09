@@ -28,4 +28,4 @@
 [ŚAT. BR. 6,2,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,10) [11,5,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,2,9) [4,3,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,3,2,13)
 [AIT. BR. 2,16.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) — desid. with something (instr.) to seek to win someone over: *brāhmaṇānbhaktenopepsanti*
 [KAUŚ. 68. 140.]
-  <sub>DCS 55 · attested</sub>
+  <sub>attested</sub>

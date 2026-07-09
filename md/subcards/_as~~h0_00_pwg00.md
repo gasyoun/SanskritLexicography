@@ -55,4 +55,4 @@
 [AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* and *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
-  <sub>DCS 1985 · mixed</sub>
+  <sub>mixed</sub>

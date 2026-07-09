@@ -13,4 +13,4 @@
 - **EN:** — desid. vom. caus. *śiśrāvayiṣati* and *śuśrāvayiṣati*
 [P. 7,4,81.](https://ashtadhyayi.com/sutraani/7/4/81)
 [VOP. 19,15.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,15)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

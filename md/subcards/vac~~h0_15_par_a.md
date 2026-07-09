@@ -9,10 +9,10 @@
 - **RU:** — *parā* возражать, отвергать (Gegens. *anu*)
 [ŚAT. BR. 1,4,5,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,12)
 - **EN:** to contradict, to reject (Gegens. *anu*) [ŚAT. BR. 1,4,5,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,12)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *parāvāka, parocya* .
 
 - **RU:** — Vgl. *parāvāka, parocya* .
 - **EN:** Vgl. *parāvāka, parocya*.
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

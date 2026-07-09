@@ -13,4 +13,4 @@ Schol. к [KĀTY. ŚR. 106,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **EN:** — *pratinis* to reject, refer back: *taditi prakṛtaṃ yuktavadbhāvalakṣaṇaṃ pratinirdiśyate*
 [KĀŚ.] regarding [P. 1,2,53.](https://ashtadhyayi.com/sutraani/1/2/53) *uddiṣṭapratinirdiṣṭa*
 Schol. regarding [KĀTY. ŚR. 106,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?106,21) [107,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?107,4)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

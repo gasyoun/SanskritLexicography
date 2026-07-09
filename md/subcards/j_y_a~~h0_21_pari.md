@@ -76,10 +76,10 @@
 [MBH. 12,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6310) *parijñātānvanaspatīn*
 [13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) (vgl. [M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39), where st. its *prajñāta)*.* svena nāmnā parijñātam*
 [HARIV. 2821.](https://sanskrit-lexicon-scans.github.io/hariv?2821)
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *kuparijñāta, parijñātar* u. s. w.
 
 - **RU:** — Vgl. *kuparijñāta, parijñātar* u. s. w.
 - **EN:** — Vgl. *kuparijñāta, parijñātar* u. s. w.
-  <sub>DCS 76 · attested</sub>
+  <sub>attested</sub>

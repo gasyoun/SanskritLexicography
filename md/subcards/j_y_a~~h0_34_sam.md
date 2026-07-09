@@ -55,7 +55,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [P. 2,3,22.](https://ashtadhyayi.com/sutraani/2/3/22) *pitrā* or *pitaraṃ saṃjānīte*
 Sch. *saṃjānīṣva svamīśā ca*
 [VOP. 5,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,13)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas anweisen, bestimmen: *yannaḥ pitā saṃjānīte tasmiṃstiṣṭhāmahe vayam*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
@@ -70,7 +70,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
 [BHĀG. P. 9,16,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,34) *indriyaṃ ghnāṇasaṃjñātaṃ nāsiketyabhisaṃjñikā* the sense designated for smell
 [MBH. 12,9095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9095)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) (eine Schuld) anerkennen: *śataṃ saṃjānīte*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), Sch.
@@ -79,7 +79,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), Sch.
 - **EN:** — 4) to acknowledge (a debt): *śataṃ saṃjānīte*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), Sch.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) als das Seinige anerkennen, in Besitz nehmen (vgl. simpl. u. 3.): *sarvaṃ saṃjānīyāḥ*
 [SADDH. P. 4,23,b. 24,a.]
@@ -88,7 +88,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [SADDH. P. 4,23,b. 24,a.]
 - **EN:** — 5) to acknowledge as one's own, to take possession of (vgl. simpl. u. 3.): *sarvaṃ saṃjānīyāḥ*
 [SADDH. P. 4,23,b. 24,a.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) gedenken, mit Wehmuth sich erinnern, act. (überhaupt nur in dieser Bed. nach den Grammatikern)
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
@@ -109,7 +109,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [P. 2,3,52](https://ashtadhyayi.com/sutraani/2/3/52)) *saṃjānāti*
 [P.], Sch. *saṃjānīhi śivam*
 [VOP. 5,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,13)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) verstehen: *sarvabhūtarutaṃ tasmātsaṃjajñe*
 [R. 2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17)
@@ -118,7 +118,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [R. 2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17)
 - **EN:** — 7) to understand: *sarvabhūtarutaṃ tasmātsaṃjajñe*
 [R. 2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) aufpassen: *saṃjānānānpariharanrāvaṇānucarānbahūn . laṅkāṃ samāviśadrātrau*
 [BHAṬṬ. 8,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,27)
@@ -127,7 +127,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [BHAṬṬ. 8,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,27)
 - **EN:** — 8) to pay attention, to be watchful: *saṃjānānānpariharanrāvaṇānucarānbahūn . laṅkāṃ samāviśadrātrau*
 [BHAṬṬ. 8,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,27)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** — Vgl. *saṃjñā* . — caus.
  1) einig machen, zusammenbringen: *tā etayarcā samajñapayat*
@@ -154,7 +154,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [ŚĀK. 60,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?60,2) *ahamenāṃ saṃjñāpayāmi*
 ([WEBER]: I shall yet bring her back to consciousness)
 [MĀLAV. 58,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?58,17)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) machen, dass Jmd sich beruhigt, sich in Etwas ergiebt, euphem. vom Tödten des Opferthieres, das nicht gewaltsam zum Tode geführt werden, sondern sich den Göttern hingeben soll (vgl. Einl. zum
 [NIR. XXXIX](https://sanskrit-lexicon-scans.github.io/nirukta/app0?xxxix)): *yatpaśuṃ saṃjñapayanti viśāsati tattaṃ ghnanti*
@@ -193,7 +193,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 
 [BHĀG. P. 4,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,7) *saṃjñapitaḥ paśuḥ*
 [P. 6,4,52](https://ashtadhyayi.com/sutraani/6/4/52), Sch.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) begreiflich machen, zur Anerkennung bringen: *tadvijñapayāmyahaṃ (vāk) saṃjñapayāmi*
 [ŚAT. BR. 1,4,5,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,10)
@@ -202,7 +202,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [ŚAT. BR. 1,4,5,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,10)
 - **EN:** — 4) to make comprehensible, to bring to recognition: *tadvijñapayāmyahaṃ (vāk) saṃjñapayāmi*
 [ŚAT. BR. 1,4,5,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,5,10)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus-5)** — 5) Jmd ein Zeichen geben, sich durch Zeichen verständigen: *ubhau devakulapraveśaṃ nirūpayataḥ . dṛṣṭvā anyo 'nyaṃ saṃjñāpya*
 [MṚCCH. 30,15. 17.]
@@ -211,7 +211,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [MṚCCH. 30,15. 17.]
 - **EN:** — 5) to give someone a sign, to communicate by signs: *ubhau devakulapraveśaṃ nirūpayataḥ . dṛṣṭvā anyo 'nyaṃ saṃjñāpya*
 [MṚCCH. 30,15. 17.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus-6)** — 6) Jmd (acc.) einen Befehl ertheilen (vgl. u. *samā): preṣyājanaṃ saṃjñayātha nākhyeyo 'smīti saṃjñapan* (sic)
 [HARIV. 7056.](https://sanskrit-lexicon-scans.github.io/hariv?7056)
@@ -220,12 +220,12 @@ Sch. *saṃjānīṣva svamīśā ca*
 [HARIV. 7056.](https://sanskrit-lexicon-scans.github.io/hariv?7056)
 - **EN:** — 6) to issue a command to someone (acc.) (vgl. u. *samā): preṣyājanaṃ saṃjñayātha nākhyeyo 'smīti saṃjñapan* (sic)
 [HARIV. 7056.](https://sanskrit-lexicon-scans.github.io/hariv?7056)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus_intro)** — Vgl. *saṃjñā* . — caus.
 
 - **RU:** — Vgl. *saṃjñā* . — caus.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>
 
 **caus_1)** 1) einig machen, zusammenbringen: *tā etayarcā samajñapayat*
 [AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20)
@@ -234,4 +234,4 @@ Sch. *saṃjānīṣva svamīśā ca*
 - **RU:** 1) примирять, сводить вместе: *tā etayarcā samajñapayat*
 [AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20)
 [AV. 6,74,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.074.html#av06.074.05)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

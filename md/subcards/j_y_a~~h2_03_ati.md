@@ -10,4 +10,4 @@
 [BHĀG. P. 12,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,3,28), однако следует читать *iti jānīhi*.
 - **EN:** — *ati*, apparently
 [BHĀG. P. 12,3,28](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,3,28), where however *iti jānīhi* is to be read instead.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

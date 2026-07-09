@@ -10,4 +10,4 @@
 [AV. 14,2,74.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.74)
 - **EN:** — *ati* to carry off the victory over: *virāḍiyaṃ suprajā atyajaiṣīt*
 [AV. 14,2,74.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.74)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

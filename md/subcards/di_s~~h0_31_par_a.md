@@ -10,4 +10,4 @@
 [AV. 12,2,55.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.55)
 - **EN:** — *parā* to talk away, to dismiss with words: *parāmīṣāmasūndideśa dīrgheṇāyuṣā samimāntsṛjāmi*
 [AV. 12,2,55.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.55)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

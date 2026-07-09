@@ -27,7 +27,7 @@
 [P. 3,3,19](https://ashtadhyayi.com/sutraani/3/3/19), Sch.
 *˚māya*
 [6,4,70](https://ashtadhyayi.com/sutraani/6/4/70), Sch. [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5 (cont. b))** — Vgl. *apamityaka* . — desid. *˚mitsate*
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
@@ -36,7 +36,7 @@
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
 - **EN:** — Vgl. *apamityaka*. — desid. *˚mitsate*
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5 (cont. c))** — *ni* vertauschen gegen (instr.): *pakvenāmasya niyamaṃ na praśaṃsanti sādhavaḥ . nimayetpakvamāṃsena bhojanārthāya*
 [MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) *narapaśunā na nimīyate gajendraḥ*
@@ -48,7 +48,7 @@
 - **EN:** — *ni* to exchange for (instr.): *pakvenāmasya niyamaṃ na praśaṃsanti sādhavaḥ . nimayetpakvamāṃsena bhojanārthāya*
 [MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) *narapaśunā na nimīyate gajendraḥ*
 [Spr. 870.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?870)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **5 (cont. d))** — Vgl. *nimaya, nimātavya* .
 - **EN:** — Vgl. *nimaya, nimātavya*.
@@ -75,7 +75,7 @@
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **addendum-2)** — Vgl. *nimaya, nimātavya* .
 — *pariṇi*, ˚*mayate*
@@ -88,4 +88,4 @@
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 — *praṇi*, ˚*mayate* ebend.
 — *vini* s. *vinimaya* .
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

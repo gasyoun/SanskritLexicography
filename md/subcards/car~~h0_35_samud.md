@@ -10,4 +10,4 @@
 [NIR. 6,11.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,11)
 - **EN:** — *samud* {to go out, come forth}
 [NIR. 6,11.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,11)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

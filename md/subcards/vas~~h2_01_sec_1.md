@@ -36,4 +36,4 @@ lassen
 [6,35,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.035.html#rv06.035.01) *taṃ gīrbhirvāsayāmasi*
 [9,35,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.035.html#rv09.035.05) [43,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.043.html#rv09.043.01) *vāsita = vastracchanna*
 [H. an. 3,295. fg.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,295)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

@@ -10,10 +10,10 @@
 [BHĀG. P. 5,17,6. fgg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,6) *mahāgajo dhvāntamabhipraviṣṭaḥ* to get into
 [R. 2,21,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,53) st. *nipānagambhīramabhipraviṣṭam*
 [HARIV. 8799](https://sanskrit-lexicon-scans.github.io/hariv?8799) the later Ausg. reads *˚gambhīramiva pra˚*.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **end)** — Vgl. *abhipraveśa* .
 
 - **RU:** — Vgl. *abhipraveśa* .
 - **EN:** — Vgl. *abhipraveśa*.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

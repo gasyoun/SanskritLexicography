@@ -43,8 +43,8 @@
 - **RU:** — caus. *gamayati*
 [P. 2,4,46.](https://ashtadhyayi.com/sutraani/2/4/46)
 [VOP. 18,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,22)
- 1) заставлять Jmd (acc.) идти или приходить; приводить к Jmd (dat.); доставлять Jmd (acc.) в некое место (acc.) (
-[P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52)); приводить в некое состояние (acc.): *gamayati devadattaṃ yajñadattaḥ*
+ 1) побуждать кого-л. (acc.) идти или приходить; доставлять к кому-л. (dat.) ; приводить кого-л. (acc.) в какое-л. место (acc.) (
+[P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52)); приводить в какое-л. состояние (acc.): *gamayati devadattaṃ yajñadattaḥ*
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Sch.
 *svayaṃ ha rathena yātī3 . upādhyāyaṃ padātiṃ gamayati*
 [8,1,60](https://ashtadhyayi.com/sutraani/8/1/60), Sch. *tena tvamevaṃ gamito mayā*
@@ -141,7 +141,7 @@
 **3)** — 3) herbeiführen, verleihen: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
 [MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179)
 
-- **RU:** — 3) вызывать, даровать: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
+- **RU:** — 3) причинять, даровать: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
 [MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179)
 - **EN:** — 3) to bring about, to bestow, to confer: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
 [MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179)
@@ -171,9 +171,10 @@
 [ŚAṂK.] zu [ŚĀK. 10,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?10,6) — caus. vom caus. *gamayati* Jmd (acc.) durch Jmd (instr.) zum Gehen bringen
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Sch.
 
-- **RU:** — 5) вызывать (некое) значение, обозначать: *yatrodyamanaṃ vayo gamayati*
+- **RU:** — 5) вызывать значение, обозначать: *yatrodyamanaṃ vayo gamayati*
 [P. 3,2,10](https://ashtadhyayi.com/sutraani/3/2/10), Sch.
-*dvau niṣedhau prakṛtyarthaṃ gamayataḥ* (могло бы быть отнесено также к 1) [ŚAṂK.] к [ŚĀK. 10,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?10,6) — caus. от caus. *gamayati* побуждать Jmd (acc.) идти через Jmd (instr.)
+*dvau niṣedhau prakṛtyarthaṃ gamayataḥ* (могло бы быть отнесено также к 1.)
+[ŚAṂK.] к [ŚĀK. 10,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?10,6) — caus. от caus. *gamayati* побуждать кого-л. (acc.) через кого-л. (instr.) идти
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Sch.
 - **EN:** — 5) to evoke a meaning, to denote: *yatrodyamanaṃ vayo gamayati*
 [P. 3,2,10](https://ashtadhyayi.com/sutraani/3/2/10), Sch.

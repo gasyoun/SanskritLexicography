@@ -73,7 +73,7 @@
 [Spr. 1037](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037), v. l. with acc. of the person
 [M. 11,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,190)
 [YĀJÑ. 3,299.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,299)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich aufhalten, seinen Wohnsitz haben, leben: *kṣitau ca ye cādhastātsaṃvasante*
 [MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
@@ -88,7 +88,7 @@
 [MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
 [R. 3,15,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,28) *svabhūmau naiva saṃvaset*
 [Verz. d. Oxf. H. 269,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?269)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zubringen (eine Zeit): *tāṃ samuṣya niśāṃ kṛtsnāṃ prabhāte pratyabudhyata*
 [R. 3,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,1) *vārṣikyaṃ samuvāsa*
@@ -103,7 +103,7 @@
 [R. 3,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,1) *vārṣikyaṃ samuvāsa*
 [7,51,2.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,51,2) *kṣaṇamiva puline yamasvasustāṃ samuṣitaḥ — niśām*
 [BHĀG. P. 3,4,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,27)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *saṃvasatha* u. s. w. — caus.
  1) zusammen wohnen lassen, zusammenbringen: *(somam) saṃ gobhirvāsayāmasi*
@@ -121,7 +121,7 @@
 [ṚV. 9,8,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.008.html#rv09.008.05) *prajā agne saṃvāsaya . āśāśca paśubhiḥ saha*
 [TBR. 1,2,1,13.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,13)
 [LĀṬY. 3,6,1.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 2) beherbergen
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
@@ -130,4 +130,4 @@
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
 - **EN:** — 2) "to lodge, give shelter to"
 [MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

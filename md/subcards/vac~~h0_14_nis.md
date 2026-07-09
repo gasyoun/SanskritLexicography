@@ -103,7 +103,7 @@
 [ĀŚV. ŚR. 2,14,32.] expressly named, — prescribed
 [GṚHY. 1,22,27.] *tadidaṃ vacanaṃ teṣāṃ niruktaṃ vai* is explained thus v. a. has proved true, has come to fulfilment
 [MBH. 9,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1316)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) wegsprechen, durch Worte vertreiben: *śalyānniravocamahaṃ viṣam*
 [AV. 4,6,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.006.html#av04.006.04) *yakṣmamaṅgebhyaḥ*
@@ -115,7 +115,7 @@
 - **EN:** — 2) to speak away, drive off by words: *śalyānniravocamahaṃ viṣam*
 [AV. 4,6,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.006.html#av04.006.04) *yakṣmamaṅgebhyaḥ*
 [5,30,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.030.html#av05.030.08) [16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.030.html#av05.030.16) [9,8,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.008.html#av09.008.10)
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *nirukta* (in der Bed. 2.: *niruktamasya yo veda*
 [Verz. d. Oxf. H. 50,a,18.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?50) *saniruktāṃ svasaṃhitām*
@@ -127,4 +127,4 @@
 - **EN:** — Vgl. *nirukta* (in the Bed. 2.: *niruktamasya yo veda*
 [Verz. d. Oxf. H. 50,a,18.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?50) *saniruktāṃ svasaṃhitām*
 [BHĀG. P. 12,6,58](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,6,58)), *nirukti, nirvaktavya* fg., *nirvacanīya, nirvāka, nirvācya*.
-  <sub>DCS 130 · attested</sub>
+  <sub>attested</sub>

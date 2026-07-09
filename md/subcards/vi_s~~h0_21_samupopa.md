@@ -10,4 +10,4 @@
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042)
 - **EN:** — *samupopa* to sit down: *˚viṣṭā śayane*
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

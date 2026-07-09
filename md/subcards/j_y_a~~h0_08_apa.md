@@ -14,7 +14,7 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
 [BHAṬṬ. 8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26)
 - **EN:** — *apa* med. to deny, disavow, conceal
 [P. 1,3,44.](https://ashtadhyayi.com/sutraani/1/3/44) *śatamapajānīte*
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,35) unkenntlich machen: *ātmānamapajānānaḥ śaśamātro 'nayaddinam*
 [BHAṬṬ. 8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26)

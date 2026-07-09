@@ -65,7 +65,7 @@
 [BHAṬṬ. 3,54.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,54)
 - **EN:** — 2) to bear, to carry: *rājyadhurām*
 [BHAṬṬ. 3,54.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,54)
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) an sich tragen, haben, an den Tag legen, äussern: *bhaktiṃ tvayi*
 [BHĀG. P. 4,9,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,11) [12,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,18) — *prohya* fortschiebend, ausnehmend
@@ -77,13 +77,13 @@
 - **EN:** — 3) to bear on oneself, to have, to display, to manifest: *bhaktiṃ tvayi*
 [BHĀG. P. 4,9,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,11) [12,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,18) — *prohya* pushing forward, excepting
 [VOP. 6,53.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?6,53), Anf. belongs to 1. *ūh*.
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **causative-intro)** — Vgl. *pravaha* fg., *pravāha, pravāhin, pravoḍhar, prauḍha* . — caus.
 
 - **RU:** — Vgl. *pravaha* fg., *pravāha, pravāhin, pravoḍhar, prauḍha* . — caus.
 - **EN:** — Vgl. *pravaha* fg., *pravāha, pravāhin, pravoḍhar, prauḍha*. — caus.
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) fortfahren lassen so v. a. wegschicken: die Väter
 [ĀŚV. ŚR. 2,7,9.]
@@ -92,7 +92,7 @@
 [ĀŚV. ŚR. 2,7,9.]
 - **EN:** 1) to let drive on, hence v. a. to send away: the fathers
 [ĀŚV. ŚR. 2,7,9.]
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) im Fliessen entführen, pass. fortgeschwemmt werden: *sa tvevaṃ naikadhā chinnaḥ kṣāranadyāṃ pravāhyate*
 [MĀRK. P. 14,68.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,68)
@@ -101,7 +101,7 @@
 [MĀRK. P. 14,68.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,68)
 - **EN:** — 2) to carry off in flowing, pass. to be washed away: *sa tvevaṃ naikadhā chinnaḥ kṣāranadyāṃ pravāhyate*
 [MĀRK. P. 14,68.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,68)
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **caus-3)** — 3) in Bewegung setzen, in Gang bringen: *ūrdhvaṃ cāpi pravāhyantāṃ prāsā vai tomarāṇi ca*
 [HARIV. 5487](https://sanskrit-lexicon-scans.github.io/hariv?5487) (*nivāhyantāṃ* st. dessen
@@ -116,7 +116,7 @@
 [HARIV. 5487](https://sanskrit-lexicon-scans.github.io/hariv?5487) (*nivāhyantāṃ* st. whose
 [5009](https://sanskrit-lexicon-scans.github.io/hariv?5009)). *lokayātrām*
 [R. ed. Bomb. 2,109,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,109,27)
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **caus-4)** — 4) *lomapravāhitam*
 [MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
@@ -125,13 +125,13 @@
 [MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) ошибочно вместо *lomapravāhinam* (s. d.), как читает [ed. Bomb.].
 - **EN:** — 4) *lomapravāhitam*
 [MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) erroneous for *lomapravāhinam* (s. d.), as the [ed. Bomb.] reads.
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **final-note)** — Vgl. *pravāhaka, pravāhaṇa* .
 
 - **RU:** — Vgl. *pravāhaka, pravāhaṇa* .
 - **EN:** — Vgl. *pravāhaka, pravāhaṇa*.
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *pra* act.
 [P. 1,3,81.](https://ashtadhyayi.com/sutraani/1/3/81)
@@ -140,7 +140,7 @@
 - **RU:** — *pra* act.
 [P. 1,3,81.](https://ashtadhyayi.com/sutraani/1/3/81)
 [VOP. 22,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,1)
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>
 
 **1))** 1) weiterführen, vorwärts ziehen
 [ṚV. 10,94,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.06) *(somaḥ) prohyamāṇaḥ*
@@ -191,4 +191,4 @@
 [MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) med. уезжать, отплывать: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
-  <sub>DCS 77 · attested</sub>
+  <sub>attested</sub>

@@ -22,7 +22,7 @@
 [12,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,82) [51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,51) [VARĀH. BṚH. S. 40 (39),1.] [47,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,19) [83 (80,c),11.] [94,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?94,19) to designate as, call: *vāyavyaṃ (vajraṃ) yavopamaṃ samuddiṣṭam*
 [81 (80,a),10.] *ājyaṃ tejaḥ samuddiṣṭam*
 [47,52.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,52)
-  <sub>DCS 116 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) absol. *samuddiśya* mit Hinweisung auf (acc.) so v. a. auf, gegen: *na ripūnvai samuddiśya vimuñcanti narāḥ śarān*
 [MBH. 1,4573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4573) für, zu Ehren von, wegen, in Berücksichtigung von: *śyāmākaṃ bhojanaṃ tatra yaḥ prayacchati mānavaḥ . devānpitṝnsamuddiśya*
@@ -62,10 +62,10 @@ Arjuna's 489.
 [MBH. 1,7688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7688) *virāṭenottarā dattā snuṣā yatra kirīṭinaḥ . abhimanyuṃ samuddiśya* where Virāṭa gave his daughter in marriage to Abhimanyu , whereby she became the daughter-in-law
 
 Arjuna's became, 489.
-  <sub>DCS 116 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** — Vgl. *samuddeśa* .
 
 - **RU:** — Vgl. *samuddeśa* .
 - **EN:** — Vgl. *samuddeśa* .
-  <sub>DCS 116 · attested</sub>
+  <sub>attested</sub>

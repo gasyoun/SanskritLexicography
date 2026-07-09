@@ -49,4 +49,4 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [4,33.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,33) = *kṛtam*
 [5,3.](https://sanskrit-lexicon-scans.github.io/armh2/app1?5,3) — caus. "to accomplish": *akāryāṇyapi paryāpya*
 [Spr. 3368.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3368) — desid. vgl. *parīpsā, parīpsu*.
-  <sub>DCS 184 · mixed</sub>
+  <sub>mixed</sub>

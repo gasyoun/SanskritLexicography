@@ -19,4 +19,4 @@
 [5116.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5116) "to dwell": *yasminsaṃnivasetpure*
 [MBH. 14,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.564)
 [R.] in [LA. (III) 64,18] (in the three Ausgg. available to us, *sa nyavasat*, not *saṃnyavasat)*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

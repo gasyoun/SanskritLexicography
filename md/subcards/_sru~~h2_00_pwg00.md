@@ -10,4 +10,4 @@
 [SĀMAVIDH. BR. 2,3,2.] с instr. и acc. [4,7.]
 - **EN:** 1. *śru*¦ with *abhi* caus. to let someone hear something, to speak about something to someone, to discuss something with someone; with double acc.
 [SĀMAVIDH. BR. 2,3,2.] with instr. and acc. [4,7.]
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>

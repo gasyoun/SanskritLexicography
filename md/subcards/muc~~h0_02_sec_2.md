@@ -25,7 +25,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 "to be about to let go —, to give up": *prāṇānkasmānmumukṣasi*
 [KATHĀS. 73,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,18) "to be about to hurl": *vajraṃ mumukṣanniva vajrapāṇiḥ*
 [RAGH. 2,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,42)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) med. sich zu befreien gewillt sein: *mumukṣate vatsaḥ*
 [P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
@@ -46,7 +46,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
 [MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) *mokṣate*
  a) sich zu lösen suchen, — wünschen, Rettung suchen
@@ -67,7 +67,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mokṣate vatsaḥ svayameva*
 [P.], Sch. *ta enaṃ baddhā mokṣamāṇā avagamayanti*
 [KĀṬH. 11,6.]
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) sich befreien von (acc.): *mokṣiṣye manaso jvaram*
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
@@ -76,4 +76,4 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
 - **EN:** — b) "to free oneself from" (acc.): *mokṣiṣye manaso jvaram*
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

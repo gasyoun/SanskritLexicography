@@ -14,4 +14,4 @@
 
 - **RU:** — *pratyupa* покрывать, закрывать: *tānneṣṭakayā purastātpratyupadadhyāt*
 [ŚAT. BR. 7,4,2,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,36)
-  <sub>DCS 6 · attested</sub>
+  <sub>attested</sub>

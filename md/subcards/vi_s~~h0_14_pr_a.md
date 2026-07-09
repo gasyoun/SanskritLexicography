@@ -16,4 +16,4 @@
 [ŚĀṄKH. ŚR. 7,18,9.] — caus. {to let in, to lead in}: *vadhaṃ prāptau* (so the [ed. Bomb.]) *manyate nau prāveśya śaraveśmani*
 [MBH. 8,647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.647) *tvayā prāveśāyiṣye*
 [DAŚAK. 122,8.]
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

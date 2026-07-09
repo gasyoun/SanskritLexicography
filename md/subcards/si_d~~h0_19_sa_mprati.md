@@ -10,4 +10,4 @@
 [MBH. 10,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.184)
 - **EN:** — *saṃprati* "to keep someone off, restrain someone": *tathaiva suhṛdaṃ prājñaṃ kurvāṇaṃ karma pāpakam . prājñāḥ saṃpratiṣedhanti yathāśakti punaḥ punaḥ ..*
 [MBH. 10,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.184)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

@@ -13,7 +13,7 @@
 - **EN:** — *nis*
  1) to blow: *nirvavuḥ śataśacaiva vṛṣṭivātāḥ savidyutaḥ*
 [R. 4,29,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,11)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erlöschen: *nirvāsyataḥ pradīpasya śikheva*
 [ŚĀK. CH. 91,11.]
@@ -22,7 +22,7 @@
 [ŚĀK. CH. 91,11.]
 - **EN:** — 2) to go out, be extinguished: *nirvāsyataḥ pradīpasya śikheva*
 [ŚĀK. CH. 91,11.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich abkühlen, gestillt —, erquickt werden: *tathā vapurjalārdrāpavanairna nirvavau*
 [ŚIŚ. 1,65.] *iti sarvaṃ samunnaddhaṃ na nirvāti kathaṃ ca na*
@@ -40,7 +40,7 @@
 [MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
 [Spr. 1086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1086)
 [KATHĀS. 104,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,57) [117,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?117,51)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *nirvāṇa* . — caus. auslöschen; ablöschen, von der Gluth —, von der Hitze befreien, kühlen; stillen, zur Ruhe bringen, erquicken: *yaṃ tvamagne samadahastamu nirvāpayā punaḥ*
 [ṚV. 10,16,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.13) *agnīnnirvāpayāṃ cakruḥ*
@@ -103,10 +103,10 @@
 [103,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,72) *nirvāpaya prasannena locanenāmṛtaścyutā . dṛṣṭvā māṃ duḥkhadāvāgnidagdham*
 [101,304.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,304) [Verz. d. Oxf. H. 31,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?31) *sa* (*agniḥ*) *me nirvāpya sahasā cakṣuṣī śāmyate punaḥ* thus v. a. dazzling (= *mandīkṛtya*
 [NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **see-also)** — Vgl. 2. *nirvāpaṇa* fg.
 
 - **RU:** — Vgl. 2. *nirvāpaṇa* fg.
 - **EN:** — Vgl. 2. *nirvāpaṇa* fg.
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

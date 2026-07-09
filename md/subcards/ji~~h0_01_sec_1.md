@@ -19,4 +19,4 @@
 [VOP. 18,17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,17) to make someone win something: *indraṃ vājaṃ jāpayata*
 [VS. 9,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,11) [12.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,12) *yadi tvadhvaryava ājiṃ jāpayeyuḥ*
 [ĀŚV. ŚR. 9,9.]
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

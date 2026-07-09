@@ -16,4 +16,4 @@ Sch. к [P. 8,1,35.](https://ashtadhyayi.com/sutraani/8/1/35)
 [VS. 2,15.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,15)
 [KĀTY. ŚR. 3,5,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,5,22) *agnirhi pūrvamudajayattamindro 'nūdajayat* ved. citation in
 Sch. on [P. 8,1,35.](https://ashtadhyayi.com/sutraani/8/1/35)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

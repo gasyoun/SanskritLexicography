@@ -9,9 +9,9 @@
 - **EN:** — *abhi*
  3) *pūrvābhicaritā = pūrvadiggāminī* according to the
 Schol.
-  <sub>DCS 169 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — *abhi*
 
 - **RU:** — *abhi*
-  <sub>DCS 169 · attested</sub>
+  <sub>attested</sub>

@@ -34,7 +34,7 @@
 [AK. 3,2,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,41)
 [H. 1485.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1485) *tasya niṣka upāhita āsa* probably set as a prize
 [ŚAT. BR. 11,4,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,1)
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) machen zu: *(mā) bhartāram — asaddharmamupādadhāḥ*
 [R. 2,35,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28) *upāhita* bewirkt, hervorgebracht: *kopopāhitavāṣpa*
@@ -49,7 +49,7 @@
 [R. 2,35,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28) *upāhita* effected, produced: *kopopāhitavāṣpa*
 [BHARTṚ. 3,80.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,80) *tadupāhitavikāra*
 [GĪT. 10,8.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?10,8)
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) med. bei sich behalten: *ardhamindriyasyātmanyupādhatta*
 [TBR. 2,3,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,4,1)
@@ -58,10 +58,10 @@
 [TBR. 2,3,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,4,1)
 - **EN:** — 3) med. to keep with oneself, retain: *ardhamindriyasyātmanyupādhatta*
 [TBR. 2,3,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,4,1)
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>
 
 **cross-ref)** — Vgl. 1. *upādhi* .
 
 - **RU:** — Vgl. 1. *upādhi* .
 - **EN:** — Vgl. 1. *upādhi* .
-  <sub>DCS 45 · attested</sub>
+  <sub>attested</sub>

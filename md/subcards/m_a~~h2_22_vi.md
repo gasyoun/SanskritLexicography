@@ -38,7 +38,7 @@
 [ṚV. 1,110,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.110.html#rv01.110.05) — *bhaumāntreṇūnsa vimame* to count through, to count
 [BHĀG. P. 8,5,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,5,6) [23,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,23,29) [2,7,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,40) *avimitavikrama* unmeasured, immeasurable
 [5,25,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,25,12)
-  <sub>DCS 71 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) anordnen, fertigmachen, festsetzen: *sadyo jāto vyamimīta yajñam*
 [ṚV. 10,110,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.110.html#rv10.110.11) [114,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.06) *yajñasya mātrāṃ vi mimīta u tvaḥ*
@@ -56,7 +56,7 @@
 [71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [1,186,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.186.html#rv01.186.04) *ṛtasya dhāma vi mime purūṇi*
 [10,124,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.124.html#rv10.124.03) *bṛhaccharīro vimimāna ṛkvabhiryuvā kumāraḥ pratyetyāhavam*
 [1,155,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.155.html#rv01.155.06)
-  <sub>DCS 71 · attested</sub>
+  <sub>attested</sub>
 
 **ref)** — Vgl.
 
@@ -68,9 +68,9 @@
 - **EN:** — Vgl.
 
 *vimāna* and u. 1. *mi* with *vi*.
-  <sub>DCS 71 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-marker)** — *vi*
 
 - **RU:** — *vi*
-  <sub>DCS 71 · attested</sub>
+  <sub>attested</sub>

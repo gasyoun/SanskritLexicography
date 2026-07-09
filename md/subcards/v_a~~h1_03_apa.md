@@ -10,4 +10,4 @@
 [ṚV. 1,162,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.10)
 - **EN:** — *apa* to exhale, evaporate, give off vapour: *yadūvadhyamudarasyāpavāti*
 [ṚV. 1,162,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.10)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

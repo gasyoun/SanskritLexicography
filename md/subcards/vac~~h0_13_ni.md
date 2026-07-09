@@ -13,7 +13,7 @@
 - **EN:** — *ni*
  1) to talk, speak: *nyavocat*
 [BHĀG. P. 3,17,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,29)
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) schmähen: *duryodhanaṃ naikṛtikaṃ nyavocat*
 [MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320)
@@ -22,7 +22,7 @@
 [MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320)
 - **EN:** — 2) to revile, abuse: *duryodhanaṃ naikṛtikaṃ nyavocat*
 [MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320)
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — Vgl. *nivacana, nivāku* . — caus. schmähen
 [VYUTP. 73.]
@@ -31,4 +31,4 @@
 [VYUTP. 73.]
 - **EN:** — Vgl. *nivacana, nivāku*. — caus. to revile
 [VYUTP. 73.]
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>

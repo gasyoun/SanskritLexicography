@@ -42,7 +42,7 @@
 [BHAG. 9,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,9)
 [KUMĀRAS. 2,13.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,13)
 [SĀṂKHYAK. 20.] *ucchṛṅkhaleṣu teṣvāsīdudāsīno vidūṣakaḥ*
-  <sub>DCS 21 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [VID. 63.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?63) — *udāsīna* _m._ ein Gleichgültiger, nicht Freund und nicht Feind: *anantaramariṃ vidyādarisevinameva ca . areranantaraṃ mitramudāsīnaṃ tayoḥ param ..*
 [M. 7,158](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,158) (vgl.

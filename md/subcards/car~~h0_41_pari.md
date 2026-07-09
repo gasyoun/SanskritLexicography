@@ -37,7 +37,7 @@
 [R. 6,16,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,11) *sabhām*
 [MBH. 3,2349.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2349) [7,221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.221)
 [R. 5,52,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,52,5)
-  <sub>DCS 159 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd aufwarten, bedienen, besorgen; seine Sorge ganz auf Jmd oder Etwas richten, sich ganz Jmd oder Etwas hingeben; mit dem acc.: *(agnim) sujātāsaḥ pari caranti vīrāḥ*
 [ṚV. 7,1,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.15) [3,7,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.02) *adha smā te pari carantyajara śruṣṭīvāno na*
@@ -112,7 +112,7 @@
 [MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) Instead of *bhavatoḥ paricarya*
 [YAJÑAD. 2,46] has
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48): *bhavantau pari˚*. — caus.
-  <sub>DCS 159 · attested</sub>
+  <sub>attested</sub>
 
 **caus-1)** 1) umgeben: *śākhābhiḥ paricārya*
 [KAUŚ. 83.] *paricārayati kaṇṭakairvṛkṣam*
@@ -128,7 +128,7 @@ med. располагаться вокруг: *paricārayante kaṇṭakā vṛk
 [P. 3,1,87](https://ashtadhyayi.com/sutraani/3/1/87), Vārtt. 7,
 Sch.
 med. to encamp around: *paricārayante kaṇṭakā vṛkṣam* ebend.
-  <sub>DCS 159 · attested</sub>
+  <sub>attested</sub>
 
 **caus-2)** — 2) med. sich bedienen —, aufwarten lassen: *jaivalaṃ paricārayamāṇam*
 [ŚAT. BR. 14,9,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,1) *ābhirmatprattābhiḥ paricārayasva*
@@ -140,7 +140,7 @@ med. to encamp around: *paricārayante kaṇṭakā vṛkṣam* ebend.
 - **EN:** — 2) med. to have oneself served —, to have someone wait upon one: *jaivalaṃ paricārayamāṇam*
 [ŚAT. BR. 14,9,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,1) *ābhirmatprattābhiḥ paricārayasva*
 [KAṬHOP. 1,25.]
-  <sub>DCS 159 · attested</sub>
+  <sub>attested</sub>
 
 **etym)** *paricara* u. s. w.
 - **EN:** *paricara* u. s. w.
@@ -148,4 +148,4 @@ med. to encamp around: *paricārayante kaṇṭakā vṛkṣam* ebend.
 **tail)** — Vgl. *paricara* u. s. w.
 
 - **RU:** — Vgl. *paricara* u. s. w.
-  <sub>DCS 159 · attested</sub>
+  <sub>attested</sub>

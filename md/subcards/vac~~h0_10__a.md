@@ -11,4 +11,4 @@
 [ṚV. 7,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.073.html#rv07.073.02) *indrāya brahmāṇyoktā*
 [1,63,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.063.html#rv01.063.09) [ŚĀṄKH. BR. 7,4.]
 - **EN:** *ā* to address someone, to call out to someone: *ā vāṃ voce vidatheṣu prayasvān* [ṚV. 7,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.073.html#rv07.073.02) *indrāya brahmāṇyoktā* [1,63,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.063.html#rv01.063.09) [ŚĀṄKH. BR. 7,4.]
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

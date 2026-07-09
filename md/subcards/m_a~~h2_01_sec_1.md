@@ -49,10 +49,10 @@ Sch.
 [MBH. 2,20.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.20) *śiviram*
 [5,5175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5175) *(taiḥ) gṛhāṇi māpitānyabhūvan*
 [LALIT. ed. Calc. 68,13.]
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **xref)** — Vgl. *māpana, māpanā* .
 
 - **RU:** — Vgl. *māpana, māpanā*.
 - **EN:** — Vgl. *māpana, māpanā* .
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>

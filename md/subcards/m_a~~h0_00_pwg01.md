@@ -55,10 +55,10 @@
 [MBH. 5,2736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2736) with potent.: *mā smainaṃ pratyudīkṣethāḥ*
 [R. 2,9,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,19) *mā sma sīmantinī kācijjanayetputramīdṛśam* "might not"
 [Spr. 1599.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1599)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **appendix)** — Vgl. *na* .
 
 - **RU:** — Vgl. *na*.
 - **EN:** — Vgl. *na* .
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>

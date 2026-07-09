@@ -30,4 +30,4 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 [HARIV. 11006](https://sanskrit-lexicon-scans.github.io/hariv?11006) (p. 790). Vgl. *saṃpradātavya, saṃpradāna, saṃpradānīya, saṃpradāya* . — caus. приказать выдать: *tasya yānaṃ ca dāsīśca saumitre saṃpradāpaya*
 [R. 2,32,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,16) [21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,21) — desid. желать дать: *maruḍbhyaḥ saṃpraditsāṃ cakāra*
 [NIR. 1,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,5)
-  <sub>DCS 58 · attested</sub>
+  <sub>attested</sub>

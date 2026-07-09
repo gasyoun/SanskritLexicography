@@ -16,4 +16,4 @@
 [ĀŚV. ŚR. 5,3,24.]
 [LĀṬY. 2,4,7.] of the crouching posture of an animal giving birth,
 [ŚAT. BR. 7,4,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,1,2)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

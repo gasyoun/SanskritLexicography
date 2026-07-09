@@ -13,4 +13,4 @@
 - **EN:** — *upa* {to ward off, keep off from} (abl.): *vārddhakṣatrirupāsedhatpravaṇādiva kuñjaraḥ*
 [MBH. 7,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1748) it should probably be read *˚kṣatrirapāsedhat — kuñjaram*; vgl.
 [7397.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397)
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

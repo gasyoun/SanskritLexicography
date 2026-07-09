@@ -154,7 +154,7 @@ Sch.
 [PAÑCAT. 128,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,22) *pradattā* выданная замуж
 [130,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,2) *pradattanayanotsava* доставляющий наслаждение взору
 [KATHĀS. 15,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,128)
-  <sub>DCS 1348 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hineinthun, hineinlegen: *hutaśeṣaṃ pradadyāttu bhājaneṣu*
 [YĀJÑ. 1,236.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,236) *hutāśanam* Feuer an Etwas legen: *bhavanasya tava dvāri pradāsyati hutāśanam*
@@ -165,7 +165,7 @@ Sch.
 [YĀJÑ. 1,236.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,236) *hutāśanam* поджигать что-л.: *bhavanasya tava dvāri pradāsyati hutāśanam*
 [MBH. 1,5801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5801) *citāṃ kṛtvā sumahatīṃ pradāya ca hutāśanam*
 [5,7387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7387)
-  <sub>DCS 1348 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** — Vgl. *prada, pradadi, pradātar, pradātavya, pradāna, pradāya, pradāyaka, pradeya* . — caus.
  1) zu geben veranlassen
@@ -188,18 +188,18 @@ Sch.
 [HARIV. 16198. fg.](https://sanskrit-lexicon-scans.github.io/hariv?16198) принуждать платить
 [KULL.] zu [M. 8,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) принуждать возвращать: *cauraṃ pradāpyāpahṛtam*
 [YĀJÑ. 2,270.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,270)
-  <sub>DCS 1348 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) hineinthun —, hineinlegen lassen: *śaṇasarjarasādīni yāni dravyāṇi kānicit . āgneyānyuta santīha tāni tatra pradāpaya ..*
 [MBH. 1,5723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5723)
 
 - **RU:** — 2) велеть вложить или поместить внутрь: *śaṇasarjarasādīni yāni dravyāṇi kānicit . āgneyānyuta santīha tāni tatra pradāpaya ..*
 [MBH. 1,5723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5723)
-  <sub>DCS 1348 · attested</sub>
+  <sub>attested</sub>
 
 **desid.)** — Vgl. *pradāpayitar* . — desid. med. zur Frau geben wollen
 [DAŚAK. 77,7.]
 
 - **RU:** — Vgl. *pradāpayitar* . — desid. med. желать выдать замуж
 [DAŚAK. 77,7.]
-  <sub>DCS 1348 · attested</sub>
+  <sub>attested</sub>

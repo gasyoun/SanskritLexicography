@@ -19,7 +19,7 @@
 [Spr. 4205.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4205) *tvaṃ cetsaṃcarase vṛṣeṇa* "to ride upon"
 [1079.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1079) *mṛdusaṃcaratkara* ("hand" and "trunk")
 [1709.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1709) Z. 4 read 1,123,7 st. 1,23,7.
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) durchlaufen, durchwandern: *sūryastrīnrāśīnudaguttaram . saṃcaran*
 [SŪRYAS. 12,48. fg.] — caus.
@@ -28,7 +28,7 @@
 [SŪRYAS. 12,48. fg.] — caus.
 - **EN:** — 4) "to traverse, to wander through": *sūryastrīnrāśīnudaguttaram . saṃcaran*
 [SŪRYAS. 12,48. fg.] — caus.
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>
 
 **4b)** 3) weiden lassen
 [BHĀG. P. 10,15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,9)
@@ -37,4 +37,4 @@
 [BHĀG. P. 10,15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,9)
 - **EN:** 3) "to let graze"
 [BHĀG. P. 10,15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,9)
-  <sub>DCS 4031 · attested</sub>
+  <sub>attested</sub>

@@ -36,4 +36,4 @@
 [16](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,16) (*˚vekṣyasi*
 [GORR.]).
 — Vgl. *pratyupaveśa* .
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

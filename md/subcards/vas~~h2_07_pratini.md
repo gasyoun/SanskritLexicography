@@ -7,4 +7,4 @@
 
 - **RU:** — *pratini* s. *pratinivāsana* .
 - **EN:** — *pratini* s. *pratinivāsana*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

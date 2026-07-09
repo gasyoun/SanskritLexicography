@@ -205,7 +205,7 @@ to get rid of, to free oneself from
 [VARĀH. BṚH. S. 53,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,32)
 [BṚH. 4,12. 12,10.] [SARVADARŚANAS. 102,5.] [TRIK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,1) *vihāya hastatrayam* so v. a. at a distance of
 [VARĀH. BṚH. S. 54,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,18)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abstehen von (abl.): *krīḍārasātprastutāt*
 [Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) ohne Ergänzung eine Thätigkeit einstellen
@@ -217,7 +217,7 @@ to get rid of, to free oneself from
 - **EN:** — 2) to desist from (abl.): *krīḍārasātprastutāt*
 [Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) without an object, to stop an activity
 [VARĀH. BṚH. S. 77,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,3)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3a)** a) eine Einbusse erleiden, verloren gehen: *mā te gātrā vi hāyi*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *prema tayoḥ parasparasyopari na vyahīyata*
@@ -230,7 +230,7 @@ to get rid of, to free oneself from
  a) to suffer a loss, to be lost: *mā te gātrā vi hāyi*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *prema tayoḥ parasparasyopari na vyahīyata*
 [RAGH. ed. Calc. 3,24.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,24)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3b)** — b) zurückbleiben
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16) Jmd (abl.) nachstehen: *ācāryaputrāttasmāttu viśeṣopacaye pṛthak . na vyahīyata*
@@ -242,7 +242,7 @@ to get rid of, to free oneself from
 - **EN:** — b) to remain behind, to lag
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16) to fall behind someone (abl.): *ācāryaputrāttasmāttu viśeṣopacaye pṛthak . na vyahīyata*
 [MBH. 1,5229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5229)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-alpha)** α) mangelnd, fehlend: *˚tilakeva strī*
 [R. 3,22,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,8) *˚sattva*
@@ -255,7 +255,7 @@ to get rid of, to free oneself from
  α) lacking, missing: *˚tilakeva strī*
 [R. 3,22,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,8) *˚sattva*
 [VARĀH. BṚH. S. 16,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,32)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-beta)** — β) niedrig stehend, gemein: Personen
 [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) (nach der Lesart der [ed. Bomb.]).
@@ -270,7 +270,7 @@ to get rid of, to free oneself from
 [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) (according to the reading of [ed. Bomb.]).
 [15649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15649) *˚yoni*
 [15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674)
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c-gamma)** — γ) ermangelnd, ohne — seiend, beraubt —, frei von; die Ergänzung im instr.: *darśanena*
 [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) *tvayā*
@@ -333,14 +333,14 @@ to get rid of, to free oneself from
 [an. 5,23.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?5,23)
 [HALĀY. 2,264.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,264)
 [PĀRŚVANĀTHAK. 4,1] (according to [AUFRECHT]).
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) pass.
 
 - **RU:** — 3) pass.
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>
 
 **3c)** — c) partic. *vihīna*
 
 - **RU:** — c) partic. *vihīna*
-  <sub>DCS 568 · attested</sub>
+  <sub>attested</sub>

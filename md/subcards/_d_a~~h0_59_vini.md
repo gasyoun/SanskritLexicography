@@ -18,7 +18,14 @@
 [ŚAT. BR. 14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) *tredhātmānaṃ vinyadhatta pṛthivyāṃ tṛtīyam* u. s. w.
 [TS. 2,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,4,12,3) *tanūḥ*
 [ŚAT. BR. 2,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,1,14)
-  <sub>DCS 58 · attested</sub>
+- **EN:** — *vini*
+ 1) to lay away in different places, distribute: *tadāsāṃ pāpmano *
+
+* vinyadadhāt*
+[ŚAT. BR. 14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) *tredhātmānaṃ vinyadhatta pṛthivyāṃ tṛtīyam* u. s. w.
+[TS. 2,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,4,12,3) *tanūḥ*
+[ŚAT. BR. 2,2,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,1,14)
+  <sub>attested</sub>
 
 **2)** — 2) ablegen, niederlegen, wegstellen: *vinidhāya tato bhāraṃ saṃnidhāya phalāni ca*
 [MBH. 1,2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) *pātram*
@@ -27,7 +34,10 @@
 - **RU:** — 2) отложить, положить, поставить в сторону: *vinidhāya tato bhāraṃ saṃnidhāya phalāni ca*
 [MBH. 1,2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) *pātram*
 [SUŚR. 2,152,4.]
-  <sub>DCS 58 · attested</sub>
+- **EN:** — 2) to lay down, set down, put away: *vinidhāya tato bhāraṃ saṃnidhāya phalāni ca*
+[MBH. 1,2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) *pātram*
+[SUŚR. 2,152,4.]
+  <sub>attested</sub>
 
 **3)** — 3) aufsetzen, auflegen, stellen —, legen auf, in
 [RĀJA-TAR. 2,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,104) *madanaripuṇā mūrdhni dhavalaṃ kapālaṃ yasyoccairvinihitam*
@@ -52,4 +62,15 @@
 [31.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,31) вставить в: *yatrāhaṃ* (Indra говорит) *devānāmaindre vinihitaḥ pade*
 [HARIV. 3988](https://sanskrit-lexicon-scans.github.io/hariv?3988) — *vinihita*
 [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вместо *vinihata* .
-  <sub>DCS 58 · attested</sub>
+- **EN:** — 3) to set on, put on, place — , lay on, in
+[RĀJA-TAR. 2,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,104) *madanaripuṇā mūrdhni dhavalaṃ kapālaṃ yasyoccairvinihitam*
+[BHARTṚ. 3,61.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,61) *stanavinihitamapi hāram*
+[GĪT. 4,11.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?4,11) *makaramadho vinidhāya kare ca śaram*
+[6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?4,6) to store up: *madhugandhatailaghṛtaphāṇitāni vinidhāya dviguṇā dvitīyamāse labdhiḥ*
+[VARĀH. BṚH. S. 41 (40),5.] *dṛṣṭim, manaḥ* to direct the eye, the mind upon: *mayi vinihitadṛṣṭiḥ*
+[MṚCCH. 143,20.] *harivinihitamanasām*
+[GĪT. 11,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,9) *hṛdi* to take someone to heart: *hṛdi vinidhāya harim*
+[31.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,31) to install in: *yatrāhaṃ* (Indra speaks) *devānāmaindre vinihitaḥ pade*
+[HARIV. 3988](https://sanskrit-lexicon-scans.github.io/hariv?3988) — *vinihita*
+[MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) erroneous for *vinihata* .
+  <sub>attested</sub>

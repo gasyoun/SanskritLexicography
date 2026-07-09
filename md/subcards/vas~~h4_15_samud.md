@@ -10,4 +10,4 @@
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
 - **EN:** — *samud* caus. dass.
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

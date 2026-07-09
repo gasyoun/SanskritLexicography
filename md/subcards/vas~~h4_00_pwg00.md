@@ -64,7 +64,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 7,2,52.](https://ashtadhyayi.com/sutraani/7/2/52) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) for metrical reasons in the classical language often also med.; in the older language, of the simpl. med., only partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) dwelling or having dwelt
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); and at this point too other explanations are possible. Medial forms in the older language s. u. *sam*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) an einem Orte bleiben, Halt machen, übernachten; verweilen, sich aufhalten, wohnen; stehen bleiben bei Etwas: *kuhābhipitvaṃ karataḥ kuhoṣatuḥ* wo übernachtet ihr?
 [ṚV. 10,40,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.02) *vasannaraṇyānyām*
@@ -430,14 +430,14 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [KATHĀS. 24,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,85) [18,376.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,376) *divasenaiva tatkuryādyena rātrau sukhaṃ vaset . aṣṭamāsena tatkuryādyena varṣāḥ sukhaṃ vaset ..* удобно устроиться, жить в довольстве
 [Spr. 4182.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4182) *yena vṛddhaḥ sukhaṃ vaset, yenāmutra sukhaṃ vaset*
 [4570.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4570) [4863.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4863) [M. 6,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,95) *aṭamāna uvāsa kṛcchram*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [cohabitation subsense])** [BHĀG. P. 9,10,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,9) *nāhaṃ kamaṇḍalāvasminkṛcchraṃ vastumihotsahe* spricht ein herangewachsener Fisch
 [8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) beiwohnen, geschlechtlichen Umgang haben mit (loc.): *viyoniṣu ca vatsyanti* (*cariṣyanti* die neuere Ausg.) *pramadāsu narāstathā*
 
 - **RU:** [BHĀG. P. 9,10,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,9) *nāhaṃ kamaṇḍalāvasminkṛcchraṃ vastumihotsahe* говорит выросшая рыба
 [8,24,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,18) сожительствовать, иметь плотское общение с (loc.): *viyoniṣu ca vatsyanti* (*cariṣyanti* более новое Ausg.) *pramadāsu narāstathā*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [animal subsense])** [HARIV. 11167.](https://sanskrit-lexicon-scans.github.io/hariv?11167) seinen Standort haben, von Thieren: *yatrodakaṃ tatra vasanti haṃsāḥ*
 [Spr. 4776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4776) *mūle vasati cetphaṇī*
@@ -448,7 +448,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [Spr. 4776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4776) *mūle vasati cetphaṇī*
 [2210.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2210) [3198.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3198) [GĪT. 1,47.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,47) [KATHĀS. 33,44.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,44) *catvāraḥ prāṇinastatra vasanti sma mahātarau*
 [107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,107) [HIT. 14,18](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,18), v. l. *hastino labdhanāmānasturaṃgāstu manojavāḥ . gṛhopakaṇṭhe nṛpatervaseyuḥ svāptarakṣitāḥ ..*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [negation subsense])** [KĀM. NĪTIS. 16,8.] bleiben so v. a. nicht fortgehen
 [Spr. 3673.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3673) *avaśyaṃ yātāraścirataramuṣitvāpi viṣayāḥ*
@@ -461,7 +461,7 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?243) *dṛṣṭvā ca dūrato vyāghramuvāsa sa sarastaṭe*
 [PAÑCAR. 1,3,69.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,3,69) *dūratas* держаться в стороне
 [Spr. 2257](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2257), v. l. *nāvasattatra* (*nāramattatra* [ed. Bomb.]) *tatrāsya dṛṣṭiḥ*
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1) [location subsense])** [MBH. 13,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1480) sich irgendwo befinden, — sein: *sa mṛtyorvasate 'ntike*
 [MBH. 12,3515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3515) *pārśvatas*
@@ -500,4 +500,4 @@ and *uṣya; vastum*; pass. *uṣyate; uṣita*
 [HIT. ed. JOHNS. 2700]
 (*sevayā* ed. SCHL. [127,11](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,11)). держаться (кого-л.) (loc.) *kuśāsane*
 [Verz. d. Oxf. H. 20,a, No. 65. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?20)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

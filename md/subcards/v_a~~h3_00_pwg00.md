@@ -8,7 +8,7 @@
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 
 - **RU:** 4. *vā* побочная форма от 1. *van* . partic. *vāta* желанный, вожделенный; атакованный, оспариваемый: *avasyuvāta* [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta* [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
@@ -75,7 +75,7 @@
 [3,51,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.051.html#rv03.051.07) *kṛtaṃ cideno namasā vivāse* "I seek to appease"
 [6,51,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.051.html#rv06.051.08) = *varjayāmi, vināśayāmi*
 [SĀY.]
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — *abhyā* in feindlicher Absicht sich nähern: *parāśaro havirmathīnāmabhyā3 vivāsatām*
 [ṚV. 7,104,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.21) = *āgacchatām*
@@ -85,7 +85,7 @@
 - **EN:** — *abhyā* "to approach with hostile intent": *parāśaro havirmathīnāmabhyā3 vivāsatām*
 [ṚV. 7,104,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.21) = *āgacchatām*
 [SĀY.], according to [DURGA] "of those worshippers who" Yātu "are", that is, "of false worshippers."
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — *upa* zu gewinnen suchen: *upa vo gīrbhiramṛtaṃ vivāsata*
 [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
@@ -93,7 +93,7 @@
 - **RU:** — *upa* стараться завоевать: *upa vo gīrbhiramṛtaṃ vivāsata* [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
 - **EN:** — *upa* "to seek to win over": *upa vo gīrbhiramṛtaṃ vivāsata*
 [ṚV. 6,15,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.06)
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>
 
 **section-T89)** — Vgl.
 
@@ -101,4 +101,4 @@
 (auch [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
 
 - **RU:** — Vgl. *a˚, indra˚, deva˚* (также [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
-  <sub>DCS 25488 · attested</sub>
+  <sub>attested</sub>

@@ -13,4 +13,4 @@
 - **RU:** — *vyava* покидать, оставлять: *brāhmaṇaṃ vyavahāya tam*
 [MBH. 3,13661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13661) *prajā dharmaṃ ca kāmaṃ ca*
 [HARIV. 900.](https://sanskrit-lexicon-scans.github.io/hariv?900)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

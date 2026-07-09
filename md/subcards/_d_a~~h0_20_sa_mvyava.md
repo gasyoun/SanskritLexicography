@@ -10,4 +10,4 @@
 [BHĀG. P. 5,6,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,6)
 - **EN:** — *saṃvyava*, *asaṃvyavahitam* _adv._ immediately
 [BHĀG. P. 5,6,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,6)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

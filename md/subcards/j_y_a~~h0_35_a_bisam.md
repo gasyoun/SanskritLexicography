@@ -16,4 +16,4 @@
 [ŚAT. BR. 2,6,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,3,6) *svamevaitadrasamabhisaṃjānate*
 [5,4,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,19) *indraṃ devā jyaiṣṭhyāyābhisamajānata*
 [TS. 2,2,11,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,11,6)
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

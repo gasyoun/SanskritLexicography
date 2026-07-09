@@ -48,4 +48,4 @@
 [11,801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.801) *(syamantakam) svakaṇṭhādavamucya*
 [HARIV. 2049.](https://sanskrit-lexicon-scans.github.io/hariv?2049)
 [R. 2,9,47](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,47) ([8,54](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,54) [GORR.]). [6,112,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,91)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

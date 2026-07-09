@@ -13,4 +13,4 @@
 - **EN:** — desid. *mitsati* and *˚te*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
 [VOP. 19,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,9) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,12)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

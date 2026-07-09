@@ -31,7 +31,7 @@
 [3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
 [1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) with the instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
 [SĀV. 6,27.]
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sitzen: *pūrvāṃ saṃdhyāṃ japaṃstiṣṭhetsāvitrīmārkadarśanāt . paścimāṃ tu samāsīnaḥ samyagṛkṣavibhāvanāt ..*
 [M. 2,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,101) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,102) *pratyuvāca samāsīnaṃ vasiṣṭham*
@@ -46,7 +46,7 @@
 [M. 2,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,101) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,102) *pratyuvāca samāsīnaṃ vasiṣṭham*
 [R. 2,111,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,8) *bhṛgutuṅge samāsīnamṛcīkam*
 [VIŚV. 11,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?11,11)
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zur Berathung zusammensitzen, Rath halten: *eṣāmahaṃ samāsīnānāṃ varco vijñānamā dade*
 [AV. 7,12,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.012.html#av07.012.03) *te ha vaiśvānare samāsata teṣāṃ ha vaiśvānare na samiyāya* sie beriethen sich über V. und wurden über ihn nicht einig
@@ -58,7 +58,7 @@
 - **EN:** — 3) to sit together in counsel, to hold council: *eṣāmahaṃ samāsīnānāṃ varco vijñānamā dade*
 [AV. 7,12,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.012.html#av07.012.03) *te ha vaiśvānare samāsata teṣāṃ ha vaiśvānare na samiyāya* they took counsel about V. and could not agree about him
 [ŚAT. BR. 10,6,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,1)
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) es mit Jmd (acc.) oder Etwas aufnehmen, gewachsen sein, widerstehen: *kastānyudhi samāsīta*
 [MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
@@ -73,4 +73,4 @@
 [MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
 [14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
 [R. 5,36,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,50) Vgl. — *pratisam*.
-  <sub>DCS 107 · attested</sub>
+  <sub>attested</sub>

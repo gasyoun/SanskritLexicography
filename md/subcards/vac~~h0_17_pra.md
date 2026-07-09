@@ -106,7 +106,7 @@
 [BHĀG. P. 4,1,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,12) *saṃjñaptaḥ paśuriti prokte* when it is indicated
 [KĀTY. ŚR. 6,5,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,5,23) to betray someone: *yo mā prāvocaḥ*
 [TS. 2,6,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,6,1) [3,5,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,5,2,1)
-  <sub>DCS 3242 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) überweisen, überantworten: *mā no agne durbhṛtaye pra vocaḥ*
 [ṚV. 7,1,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.22) *pra ṇaḥ pūrvasmai suvitāya vocata*
@@ -124,7 +124,7 @@
 [8,27,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.027.html#rv08.027.10) *viśaṃ rājñe*
 [PAÑCAV. BR. 21,1,1.] *tebhyo ha pṛthagāvasathānprovāca*
 [ŚAT. BR. 10,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,2)
-  <sub>DCS 3242 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sagen, sprechen
 [MBH. 2,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.503) [5,7487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7487)
@@ -196,7 +196,7 @@
 [Spr. 1927.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1927)
 [ŚUK. in LA. (III) 33,15.] with dopp. acc.: *taṃ pravakṣyāmi bhāratīm*
 [R. 2,64,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,37)
-  <sub>DCS 3242 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) erklären für, nennen: *te maṇimadhyaṃ procuridam*
 [ŚRUT. 17.] *prokta* genannt, erklärt für, geltend: *āpo nārā iti proktāḥ*
@@ -235,7 +235,7 @@
 [HARIV. 5702.](https://sanskrit-lexicon-scans.github.io/hariv?5702) *uditaṃ proktamudgate* (so read) d. i. *udita* means thus v. a. *udgata*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150) — *proktvā*
 [PAÑCAT. 97,14](https://sanskrit-lexicon-scans.github.io/pantankose/app2?97,14) is a false form for *procya*.
-  <sub>DCS 3242 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *pravaktar* fg., *pravacana* fg., *pravāka, pravācya* (in der Bed.
  1) b) auch
@@ -264,4 +264,4 @@
 [GOBH. 1,3,19.]
 — Vgl. *pravācana* . — desid. по видимости
 [MBH. 12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767), где, однако, с [ed. Bomb.] следует читать *pravivikṣataḥ* .
-  <sub>DCS 3242 · attested</sub>
+  <sub>attested</sub>

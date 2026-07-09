@@ -13,7 +13,7 @@
 - **EN:** — *vyava*
  1) to place between, to interpose: *vyavadhāya deham*
 [RAGH. 9,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,57)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) hier und dort hinlegen: *vyavadadhāti darbhapiñjūlāni*
 [ŚĀṄKH. BR. 18,8.]
@@ -22,7 +22,7 @@
 [ŚĀṄKH. BR. 18,8.]
 - **EN:** — 2) to place here and there: *vyavadadhāti darbhapiñjūlāni*
 [ŚĀṄKH. BR. 18,8.]
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) weglassen: *vyavadadhyāddhātāram*
 [KĀṬH. 12,8.] trennen, unterbrechen: *evaṃ bhāryāśca putrāśca suhṛdaśca vasūni ca . sametya vyavadhīyante*
@@ -95,4 +95,4 @@ Schol. zu [KAP. 1,90.] [ŚAṂK.] zu [BṚH. ĀR. UP. p. 36. 191. 247.] [ŚIŚ. 
 ([BURN.]: qui ne se distingue plus de moi) *yā bhaktiḥ puruṣottame*
 [BHĀG. P. 3,29,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,12)
 — Vgl. *vyavadhā* fgg.
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

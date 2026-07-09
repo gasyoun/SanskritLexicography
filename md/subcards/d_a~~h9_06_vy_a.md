@@ -8,4 +8,4 @@
 
 - **RU:** — *vyā*, ˚*dehi* и med. *vyādatta* без *mukham*
 [BHĀG. P. 10,8,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,36)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

@@ -16,7 +16,7 @@
  1) to be separated: *yadyātmanā prajayā vā vyādhīyeta, paśuto vyā˚*
 [ṢAḌV. BR. 2,9.] *chandaḥ*
 [PAÑCAV. BR. 16,11,12. 13.]
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich unwohl fühlen: *vyādhīyante*
 ([ŚAṂK.]: *duḥkhino bhavanti) prāṇāḥ* im Gegens. zu *ānandino bhavanti*
@@ -31,4 +31,4 @@
 ([ŚAṂK.]: *duḥkhino bhavanti) prāṇāḥ* in Gegens. as *ānandino bhavanti*
 [CHĀND. UP. 7,10,1.] *vyāhita* sick, ill
 [ŚAT. BR. 14,8,11,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,11,1); vgl. *vyādhi* .
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

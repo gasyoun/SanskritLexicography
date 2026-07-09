@@ -12,7 +12,7 @@
 [BHĀG. P. 6,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,8)
 - **EN:** — *vinis*
  1) to assign, allot [BHĀG. P. 6,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,8)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) bezeichnen, angeben: *gajānāṃ ca parīmāṇametadvinirdiśet*
 [MBH. 1,294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.294) *alpakāryaṃ vinirdiṣṭaṃ tasyāgamanakāraṇam*
@@ -56,7 +56,7 @@ to proclaim: *śuddhiṃ tasya vinirdiśet*
 [MBH. 12,2997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2997)
 [SUŚR. 1,88,16. 136,14.]
 [VET. 25,8.]
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ankündigen so v. a. bestimmen, beschliessen: *mokṣaṃ tasya vinirdiśa*
 [MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413)
@@ -65,7 +65,7 @@ to proclaim: *śuddhiṃ tasya vinirdiśet*
 [MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413)
 - **EN:** — 3) to announce, hence v. a. to determine, resolve upon: *mokṣaṃ tasya vinirdiśa*
 [MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413)
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) Jmd zu Etwas (loc.) anweisen, mit Etwas beauftragen: *ekakārye vinirdiṣṭo yo bahūnyapi sādhayet*
 [R. 5,37,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,32)
@@ -75,9 +75,9 @@ to proclaim: *śuddhiṃ tasya vinirdiśet*
 - **EN:** — 4) to instruct someone to do something (loc.), to charge someone with something: *ekakārye vinirdiṣṭo yo bahūnyapi sādhayet*
 [R. 5,37,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,32)
 — Vgl. *vinirdeśya* .
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>
 
 **tail)** — Vgl. *vinirdeśya* .
 
 - **RU:** — Vgl. *vinirdeśya* .
-  <sub>DCS 4018 · attested</sub>
+  <sub>attested</sub>

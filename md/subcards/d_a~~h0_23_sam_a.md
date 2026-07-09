@@ -14,7 +14,7 @@
 [MBH. 3,10063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10063) *bhūmidānaṃ samādadyādbrāhmaṇāya*
 [HARIV. 16367.](https://sanskrit-lexicon-scans.github.io/hariv?16367) возвращать: *triviṣṭapaṃ mahendrāya yajñabhāgānsamādaduḥ*
 [BHĀG. P. 9,17,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,17,15)
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>
 
 **2a)** — 2) med.
  a) zusammenfassen, mit einander nehmen, mit sich nehmen: *samādāya*
@@ -45,7 +45,7 @@
 [PAÑCAT. 96,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,14)
 [KATHĀS. 18,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,45)
 [BHAṬṬ. 5,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,95)
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>
 
 **2b)** — b) fortnehmen, wegnehmen, herausziehen, entziehen: *piṇḍebhyastvalpikāṃ mātrāṃ samādāya*
 [M. 3,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,219) *mahānasācchṛtaṃ māṃsaṃ samādāyaihi*
@@ -60,7 +60,7 @@
 [MBH. 1,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8390) *rājñaśca tathaiva nīle vastre samādatsva*
 [4,2117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2117) *nūnametatsamādātuṃ punaricchatyadhokṣajaḥ . yadasya śiśupālasya tejastiṣṭhati ..*
 [2,1428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1428)
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>
 
 **2c)** — c) ergreifen, fassen, packen: *śastrāṇi divyāni samādadānāḥ*
 [MBH. 4,2111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2111) [6,5595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5595) [8,814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.814)
@@ -87,7 +87,7 @@
 [3,11395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11395) *samādatta* схваченный, пойманный
 [HARIV. 12098.](https://sanskrit-lexicon-scans.github.io/hariv?12098) *skandhaiḥ samādāya kumārān* взваливать на плечи
 [11200.](https://sanskrit-lexicon-scans.github.io/hariv?11200)
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>
 
 **2d)** — d) an Etwas gehen, sich an Etwas machen: *samādadānaḥ pṛthagastramārgānyathāgniriddho gahanaṃ nidāghe*
 [MBH. 5,1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1913) *vākyam* eine Rede beginnen
@@ -96,7 +96,7 @@
 - **RU:** — d) приниматься за что-л., браться за что-л.: *samādadānaḥ pṛthagastramārgānyathāgniriddho gahanaṃ nidāghe*
 [MBH. 5,1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1913) *vākyam* начинать речь
 [26.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.26)
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>
 
 **2e)** — e) zu Herzen nehmen, beherzigen: *sā tadbhartuḥ samādāya vacaḥ*
 [BHĀG. P. 3,23,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,24)
@@ -105,4 +105,4 @@
 - **RU:** — e) принимать близко к сердцу, принимать к сведению: *sā tadbhartuḥ samādāya vacaḥ*
 [BHĀG. P. 3,23,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,24)
 — Vgl. *samādāna, samādeya* .
-  <sub>DCS 305 · attested</sub>
+  <sub>attested</sub>

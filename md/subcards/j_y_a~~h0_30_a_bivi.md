@@ -19,4 +19,4 @@
 [MBH. 1,1565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1565) *mṛta ityabhivijñāya jvaram*
 [HARIV. 10533.](https://sanskrit-lexicon-scans.github.io/hariv?10533) *kathaṃcidabhivijñāya vivarṇavadanaṃ kṛśam . bhrātaraṃ bharatam*
 [R. 2,101,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,101,1)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

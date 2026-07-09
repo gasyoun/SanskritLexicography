@@ -40,13 +40,13 @@
 [10,27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *mimāti vahniretaśaḥ*
 [9,64,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19) — *memyat* partic. intens. "bleating", of a he-goat
 [ṚV. 1,162,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.02)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **xref1)** — Vgl. 2. *maya, mayu, mayūra* .
 
 - **RU:** — Vgl. 2. *maya, mayu, mayūra*.
 - **EN:** — Vgl. 2. *maya, mayu, mayūra* .
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **compound1)** — *anu* blöken zu, — hin, — auf: *gauramīmedanu vatsaṃ miṣantam*
 [ṚV. 1,164,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.28)
@@ -55,7 +55,7 @@
 [ṚV. 1,164,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.28)
 - **EN:** — *anu* "to bleat at, — towards, — up to": *gauramīmedanu vatsaṃ miṣantam*
 [ṚV. 1,164,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.28)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **compound2)** — *ā* anblöken: *vatsa īmenāstaruṇa āmimīyāt*
 [KĀṬH. 19,13.]
@@ -64,7 +64,7 @@
 [KĀṬH. 19,13.]
 - **EN:** — *ā* "to bleat at": *vatsa īmenāstaruṇa āmimīyāt*
 [KĀṬH. 19,13.]
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>
 
 **deriv1)** — *pariṇi*, ˚*mimīte*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
@@ -73,7 +73,7 @@
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 - **EN:** — *pariṇi*, ˚*mimīte*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **deriv2)** — *praṇi*, ˚*mimīte*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
@@ -85,7 +85,7 @@
 - **EN:** — *praṇi*, ˚*mimīte*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 [VOP. 8,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,22) [10,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12)
-  <sub>DCS 4955 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **deriv3)** — *vi* brüllen, schreien(?): *jīvaṃ rudanti vi mayante adhvare*
 [ṚV. 10,40,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10) *vi nayantyadhvaram* liest
@@ -97,4 +97,4 @@
 - **EN:** — *vi* "to roar, to cry (?)": *jīvaṃ rudanti vi mayante adhvare*
 [ṚV. 10,40,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10) *vi nayantyadhvaram* reads
 [AV. 14,1,46.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.46)
-  <sub>DCS 4955 · attested</sub>
+  <sub>attested</sub>

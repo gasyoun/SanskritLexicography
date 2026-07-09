@@ -22,7 +22,7 @@
 
 - **RU:** — С *anu* Intens. (*anuseṣidhat*) гнать по пути, вести.
 - **EN:** — With *anu* Intens. (*anuseṣidhat*) to drive along the path, to derive.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-2-intro)** — Mit *apa*
 - **EN:** — With *apa*
@@ -37,19 +37,19 @@
 
 - **RU:** — С *abhi*, *˚ṣiddha* пригнанный сюда.
 - **EN:** — With *abhi*, *˚ṣiddha* driven hither.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-2-note2)** — *Desid. vom Caus. *abhiṣiṣaṣedhayiṣati*.
 
 - **RU:** — *Desid. от Caus. *abhiṣiṣaṣedhayiṣati*.
 - **EN:** — *Desid. from Caus. *abhiṣiṣaṣedhayiṣati*.
-  <sub>DCS 2028 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **prefix-3)** — Mit *ava* abwehren, — abhalten von (Abl.) v. l. *apa*.
 
 - **RU:** — С *ava* отражать, — удерживать от (Abl.) v. l. *apa*.
 - **EN:** — With *ava* to ward off, to keep from (Abl.) v. l. *apa*.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-4-intro)** — Mit *ā*
 - **EN:** — With *ā*
@@ -82,19 +82,19 @@
 
 - **RU:** — С *ud* оттеснять в сторону.
 - **EN:** — With *ud* to drive aside.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-8)** — Mit *samud* in *samutsedha*.
 
 - **RU:** — С *samud* в *samutsedha*.
 - **EN:** — With *samud* in *samutsedha*.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-9)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 
 - **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 - **EN:** — With *upa* to ward off, to keep from (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Correct *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-10-intro)** — Mit *ni*
 - **EN:** — With *ni*
@@ -127,13 +127,13 @@
 
 - **RU:** — С *nis* распугивать.
 - **EN:** — With *nis* to scare away.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-13)** — Mit *parā* in *parāsedha*.
 
 - **RU:** — С *parā* в *parāsedha*.
 - **EN:** — With *parā* in *parāsedha*.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-14)** — Mit **pari*. *˚ṣedhati* und *˚sedhati* (dieses in der Bed. umherschwirren) [BHAṬṬ.]
 - **EN:** — With **pari*. *˚ṣedhati* and *˚sedhati* (this in the Bed. to whirl about) [BHAṬṬ.]
@@ -145,7 +145,7 @@
 
 - **RU:** — С *pra* Act. Med. гнать вперёд.
 - **EN:** — With *pra* Act. Med. to drive forward.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-16-intro)** — Mit *prati* (*˚ṣedhati*)
 - **EN:** — With *prati* (*˚ṣedhati*)
@@ -184,13 +184,13 @@
 
 - **RU:** — С *saṃprati* удерживать кого-л..
 - **EN:** — With *saṃprati* to keep someone off.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prefix-20)** — Mit **vi* (*˚sedhati*) sich hinbegeben zu (Acc.).
 
 - **RU:** — С **vi* (*˚sedhati*) направляться к (Acc.).
 - **EN:** — With **vi* (*˚sedhati*) to betake oneself to (Acc.).
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **root-1)** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
@@ -203,7 +203,7 @@
 — 2〉 хвалить или карать [BHAṬṬ.]
 — *Desid. от Caus. *siṣedhayiṣati*.
 — *Intens. *seṣidhyate*. Vgl. *anu*.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **apa-1)** — Mit *apa*
 — 1〉 wegtreiben, verjagen.
@@ -212,7 +212,7 @@
 - **RU:** — С *apa*
 — 1〉 отгонять, прогонять.
 — 2〉 отражать, удерживать, — от. (Abl.). v. l. также Med.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **ni-1)** — Mit *ā*
 — 1〉 antreiben [Comm. zu LĀṬY. 8,6,3].
@@ -221,7 +221,7 @@
 - **RU:** — С *ā*
 — 1〉 понукать [Comm. zu LĀṬY. 8,6,3].
 — 2〉 *āsiddha* задержанный [213,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213). [30,33](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30).
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **ni-caus-1)** — Caus. *āsedhayati*
 — 1〉 verhaften lassen [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
@@ -230,7 +230,7 @@
 - **RU:** — Caus. *āsedhayati*
 — 1〉 велеть задержать [213,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
 — 2〉 прикреплять [BĀLAR. 208,13].
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **pari-1)** — Mit *vyā*
 — 1〉 Jmd abhalten, abwehren [ŚIŚ. 12,43].
@@ -239,7 +239,7 @@
 - **RU:** — С *vyā*
 — 1〉 удерживать кого-л., отражать [ŚIŚ. 12,43].
 — 2〉 *vyāsiddha* запрещённый, воспрещённый.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prati-1)** — Mit *ni*
 — 1〉 vertreiben.
@@ -254,7 +254,7 @@
 — 3〉 отражать что-л. [BHAṬṬ.]
 — 4〉 запрещать что-л., воспрещать, отклонять, выступать против чего-л., заявлять протест; с Acc. предмета. *niṣiddha* воспрещённый, запрещённый, запрещённый к (Infin.).
 — 5〉 *запрещать что-л., не давать распространяться,/} так v. a. {%преувеличивать (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **prati-caus-1)** — Caus. *niṣedhayati*
 — 1〉 Jmd wehren, Jmd zurückhalten [PAÑCAD.]
@@ -263,14 +263,14 @@
 - **RU:** — Caus. *niṣedhayati*
 — 1〉 препятствовать кому-л., удерживать кого-л. [PAÑCAD.]
 — 2〉 запрещать что-л., воспрещать, отрицать.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **star-prefix)** — Mit **pari*. *˚ṣedhati* und *˚sedhati* (dieses in der Bed. umherschwirren) [BHAṬṬ.]
 — *Desid. vom Caus. *pariṣiṣedhayiṣati*.
 
 - **RU:** — С **pari*. *˚ṣedhati* и *˚sedhati* (последнее в значении Bed. порхать вокруг) [BHAṬṬ.]
 — *Desid. от Caus. *pariṣiṣedhayiṣati*.
-  <sub>DCS 2028 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **sam-1)** — Mit *prati* (*˚ṣedhati*)
 — 1〉 vertreiben.
@@ -283,7 +283,7 @@
 — 2〉 отражать кого-л., удерживать, стремиться отвадить от чего-л. (Abl.), запрещать кому-л. (Acc.) то, кому что-л. воспрещено.
 — 3〉 удерживать что-л., подавлять. *pratiṣiddha* воздерживаться.
 — 4〉 запрещать что-л., воспрещать, отрицать [ĀPAST. 1,8,20]. *pratiṣiddha* воспрещённый, запрещённый, заповеданный, отрицаемый [GAUT. 3,30. 5,2. 12,27. 19,2. 22,33. 25,7. 8]. [ĀPAST. 1,21,14. 26,7]. отрицаемый,/} так v. a. {%снабжённый отрицанием. *pratiṣiddhavant* воспретивший что-л. — запретивший.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **sam-caus)** — Caus. (*pratiṣedhayati*)
 — 1〉 abwehren, abhalten, abweisen.
@@ -292,7 +292,7 @@
 - **RU:** — Caus. (*pratiṣedhayati*)
 — 1〉 отражать, удерживать, отклонять.
 — 2〉 запрещать что-л., воспрещать, заказывать ([ĀPAST. 1,28,3]), отрицать.
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>
 
 **sam-nisiddha-1)** — Mit *viprati*, *˚ṣiddha*
 — 1〉 verwehrt, untersagt [ĀPAST. 1,13,20. 2,14,19. 21,13].
@@ -301,4 +301,4 @@
 - **RU:** — С *viprati*, *˚ṣiddha*
 — 1〉 запрещённый, воспрещённый [ĀPAST. 1,13,20. 2,14,19. 21,13].
 — 2〉 противоположный, противоречивый [ĀPAST. 2,8,12]. *˚m* _Adv._ = *vipratiṣedhena* (*año vuñ* так v. a. при столкновении этих двух побеждает *vuñ* над *añ*), *pūrvavirpatiṣiddham* = *˚ṣedhena* (s. *pūrvavipratiṣedha* [Nachtr. 5]).
-  <sub>DCS 2028 · attested</sub>
+  <sub>attested</sub>

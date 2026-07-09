@@ -69,7 +69,7 @@
 [ŚAT. BR. 12,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,3) to uproot, trees
 [ĀŚV. GṚHY. 2,7,5.] to bid go away: *pitṝn*
 [SAṂSK. K. 236,b,4.]
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verwüsten: *rakṣasodvāsitāṃ nagarīm*
 [HARIV. 6266.](https://sanskrit-lexicon-scans.github.io/hariv?6266) *sadaivatagaṇāllokānudvāsayati darpitaḥ*
@@ -84,10 +84,10 @@
 [HARIV. 6266.](https://sanskrit-lexicon-scans.github.io/hariv?6266) *sadaivatagaṇāllokānudvāsayati darpitaḥ*
 [3065.](https://sanskrit-lexicon-scans.github.io/hariv?3065) *sarvaṃ deśamudvāsya*
 [PAÑCAT. 47,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,6)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *udvāsana, udvāsya* .
 
 - **RU:** — Vgl. *udvāsana, udvāsya* .
 - **EN:** — Vgl. *udvāsana, udvāsya*.
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

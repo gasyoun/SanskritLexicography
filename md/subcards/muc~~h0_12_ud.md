@@ -76,7 +76,7 @@
 [Spr. 5266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5266) *unmukta* at the end of a comp. "free of, lacking": *mānonmukta*
 [VARĀH. BṚH. S. 15,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,21) *prabhañjanonmuktā saṃdhyā*
 [30,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?30,20)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>
 
 **misc)** — Vgl. *unmuca, unmocana* . — caus. lösen, aufbinden: *unmocanīyā veṇī*
 [MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. ablösen, abnehmen: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
@@ -103,4 +103,4 @@
 [KATHĀS. 22,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,195) *bandhanāt*
 [67,46.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,46) [PAÑCAT. 37,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,20) [257,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,22) *na vikramo na cāpyartho na mitraṃ na suhṛjjanaḥ . tathonmocayate duḥkhādyathātmā sthirasaṃyamaḥ ..*
 [MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

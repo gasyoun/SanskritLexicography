@@ -7,7 +7,7 @@
 
 - **RU:** 1) *vāsayati, ˚te*;
 - **EN:** 1) *vāsayati, ˚te*;
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1a)** a) über Nacht behalten, Quartier geben, beherbergen, wohnen lassen; med.
 [P. 1,3,89.](https://ashtadhyayi.com/sutraani/1/3/89) *yadenānvāsayate yadebhyo 'śanaṃ dadāti* wenn er sie beherbergt, wenn er sie speist
@@ -82,7 +82,7 @@
 [KATHĀS. 64,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,21) *ayonau yaḥ samākrāmedbahubhirvā vāsayet* so v. a. to let many perform cohabitation
 [MATSYAP.] in [VIVĀDAC. 50,15. fgg.] to let stand overnight: *tisro vāsayitvā*
 [KAUŚ. 7.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1b)** — b) warten lassen, hinhalten: *vāsayasīva vedhasastvaṃ naḥ kadā na indra vacaso bubodhaḥ*
 [ṚV. 7,37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.06) aufhalten: *riporbalam*
@@ -94,7 +94,7 @@
 - **EN:** — b) to make wait, to put off: *vāsayasīva vedhasastvaṃ naḥ kadā na indra vacaso bubodhaḥ*
 [ṚV. 7,37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.06) to delay: *riporbalam*
 [KĀM. NĪTIS. 18,22.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1c)** — c) bevölkern: *svarāṣṭraṃ vāsayedrājā paradeśāpavāhanāt*
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
@@ -103,7 +103,7 @@
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
 - **EN:** — c) to populate: *svarāṣṭraṃ vāsayedrājā paradeśāpavāhanāt*
 [Spr. 5361.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5361)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1d)** — d) bestehen lassen, erhalten: *te yadidaṃ sarvaṃ vāsayante tasmādvasava iti*
 [ŚAT. BR. 11,6,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,3,6) [14,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,20) act. in derselben Verbindung
@@ -118,7 +118,7 @@
 [ŚAT. BR. 11,6,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,3,6) [14,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,1,20) act. in the same connection
 [BṚH. ĀR. UP. 3,9,3], v. l. in [ŚAṂK.] (vgl. however [BURNOUF], [AŚNA S. 344)] and [CHĀND. UP. 3,16,1.] *yaḥ sarvāllokānudgṛhṇāti visṛjati vāsayati*
 [ATHARVAŚ. UP.] in [MUIR, ST. IV,299,18. 27.] [NṚS. TĀP. UP.] in [Ind. St. 9,93.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1e)** — e) stellen, setzen, an einen Ort thun: *mūrdhni tvāṃ vāsayeyaṃ vai*
 [MBH. 4,265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.265) *svamevāṃśamavāsayat* (sc. *tasya śarīre*)
@@ -136,7 +136,7 @@
 [HARIV. 1428.](https://sanskrit-lexicon-scans.github.io/hariv?1428) *jaghane mama — maṇirasanāvasanābharaṇāni — vāsaya*
 [GĪT. 12,24.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,24) *anadhyāyaṃ mukhe vāsayate* so v. a. observes silence, is silent
 [NAIṢ. 9,61.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **1f)** — f) entstehen lassen, hervorrufen: *prakṛtiḥ* (wird so genannt) *prakṛṣṭakaraṇādvāsanā vāsayedyataḥ*
 [SARVADARŚANAS. 66,11.]
@@ -145,7 +145,7 @@
 [SARVADARŚANAS. 66,11.]
 - **EN:** — f) to bring into being, to call forth: *prakṛtiḥ* (is so called) *prakṛṣṭakaraṇādvāsanā vāsayedyataḥ*
 [SARVADARŚANAS. 66,11.]
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) *vasayati* wohnen (*nivāse*)
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
@@ -154,9 +154,9 @@
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
 - **EN:** — 2) *vasayati* to dwell (*nivāse*)
 [DHĀTUP. 35,84,e.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35)
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>
 
 **caus.)** — caus.
 
 - **RU:** — caus.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

@@ -8,4 +8,4 @@
 
 - **RU:** — *ud* вынимать, вырывать: *uddāya mṛdhe svarikthaṃ parātsuparṇāviva vajrivaktrāt*
 [BHĀG. P. 3,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,39)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

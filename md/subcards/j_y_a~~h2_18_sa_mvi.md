@@ -10,4 +10,4 @@
 [NIR. 1,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,12)
 - **EN:** — *saṃvi*, ˚*jñāta* "generally acknowledged"
 [NIR. 1,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,12)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

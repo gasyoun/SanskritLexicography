@@ -76,7 +76,7 @@
 [7,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,17) *ne me vairaṃ pravasati* (so the more recent Ausg.) *ekāhamapi* to vanish, to cease
 [HARIV. 6059.](https://sanskrit-lexicon-scans.github.io/hariv?6059) *proṣitapattralekha* vanished, effaced
 [RAGH. 6,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,72)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) verweilen, sich aufhalten: *pravatsyati sukhaṃ vane*
 [R. 2,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8) *yatra nityaṃ pravasati* (*prabhavati* [ed. Bomb.]) *svayaṃ devaḥ prajāpatiḥ*
@@ -91,7 +91,7 @@
 [R. 2,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8) *yatra nityaṃ pravasati* (*prabhavati* [ed. Bomb.]) *svayaṃ devaḥ prajāpatiḥ*
 [MBH. 6,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.466) *atra vaṭe yakṣiṇī pravasati*
 [GAUḌAP.] to [SĀṂKHYAK. 4.]
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) = caus. verbannen: *rāmaṃ vanavāse pravatsyati*
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
@@ -100,7 +100,7 @@
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
 - **EN:** — 3) = caus. to banish: *rāmaṃ vanavāse pravatsyati*
 [R. 2,41,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,6)
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>
 
 **deriv. intro)** — Vgl. *pravasatha* fg., *˚vastavya, ˚vāsa, ˚vāsin, aproṣivaṃs* . — caus. etwa entfernen
 [ṚV. 3,7,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.03) Jmd aus seinem Wohnort vertreiben, verbannen
@@ -150,4 +150,4 @@
 [RĀJA-TAR. 6,41.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,41) — *tīrthayātrāpravāsitaḥ*
 [KATHĀS. 73,222](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,222) ошибочно вместо *˚pravāsataḥ*.
 — Vgl. *pravāsana* 1).
-  <sub>DCS 218 · attested</sub>
+  <sub>attested</sub>

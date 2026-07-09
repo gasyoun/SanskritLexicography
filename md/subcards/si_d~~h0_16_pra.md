@@ -16,4 +16,4 @@
 [PAÑCAV. BR. 14,3,13.] *gāvau yuktau mo ṣu pra sedhīrmuhurinmamandhi* "do not drive on"
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) med.: *dhanuṣkeṇāniṣuṇā vrātyāḥ prasedhamānā yanti*
 [LĀṬY. 8,6,8.]
-  <sub>DCS 450 · attested</sub>
+  <sub>attested</sub>

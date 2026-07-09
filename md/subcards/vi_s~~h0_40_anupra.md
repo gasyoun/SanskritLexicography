@@ -113,7 +113,7 @@
 [SUŚR. 1,313,11.] *pathikasārthaṃ vidiśagāminamanupraviṣṭaḥ* so v. a. joined himself to
 [MĀLAV. 67,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?67,19) *anupraviṣṭa* with pass. Bed.: *śavo vetālānupraviṣṭaḥ*
 [KATHĀS. 73,290.](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,290) [121,174.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,174)
-  <sub>DCS 157 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) nach Jmd in ein Haus, in ein Gemach treten, zu Jmd hereintreten; mit acc. der Person
 [MBH. 1,396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.396) [4275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4275) [7762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7762) [7800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7800)
@@ -137,7 +137,7 @@
 [MBH. 12,4985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4985) *kṛṣṇasyānupraviṣṭāḥ* after Kṛṣṇa having come in
 [HARIV. 8166.](https://sanskrit-lexicon-scans.github.io/hariv?8166) *devyāṃ gītāyāmanupraviṣṭā* fled to
 [PRAB. 105,9.]
-  <sub>DCS 157 · attested</sub>
+  <sub>attested</sub>
 
 **Caus)** — Vgl. *anupraveśa* fg. — caus. eingehen machen: *yonim*
 [MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487)
@@ -146,9 +146,9 @@
 [MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487)
 - **EN:** — Vgl. *anupraveśa* fg. — caus. to cause to go in: *yonim*
 [MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487)
-  <sub>DCS 157 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *anupra*
 
 - **RU:** — *anupra*
-  <sub>DCS 157 · attested</sub>
+  <sub>attested</sub>

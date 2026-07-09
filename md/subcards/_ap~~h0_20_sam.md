@@ -37,7 +37,7 @@
 [WEST.] : permeare, complecti) *tato 'si sarvaḥ*
 [BHAG. 11,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,10) *yāvatteṣāṃ samāpyeranyajñāḥ paryāptadakṣiṇāḥ*
 [RAGH. 17,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,17)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) vollenden, erfüllen: *bhūtayajñaṃ samāpnoti*
 [ŚAT. BR. 11,5,6,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,2) [8,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,2) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,4) [12,3,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,3,5)
@@ -52,7 +52,7 @@
 [ŚAT. BR. 11,5,6,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,2) [8,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,2) [4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,4,4) [12,3,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,3,5)
 [KĀTY. ŚR. 22,2,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,2,17) [25,8,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,18) [12,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,20) *yadvai ma idaṃ karma samāpsyate*
 [ŚAT. BR. 10,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,4,1,10)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) heranreichen: *yasmāllokātparameṣṭhī samāpa*
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
@@ -61,7 +61,7 @@
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
 - **EN:** — 3) to extend up to, draw near: *yasmāllokātparameṣṭhī samāpa*
 [AV. 12,3,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.45) — *samāpta*
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **pp.1)** 1) vollendet, beendigt, zu Ende gegangen
 [M. 5,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,88) [11,81](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,81) (*samāpte dvādaśe varṣe*).
@@ -91,7 +91,7 @@
 [MBH. 16,83.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.83) *asamāpta*
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26)
 [KATHĀS. 22,234.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,234)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **pp.2)** — 2) vollendet, geschickt: *puruṣaḥ*
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
@@ -100,7 +100,7 @@
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
 - **EN:** — 2) accomplished, skilled: *puruṣaḥ*
 [MBH. 14,2561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) — caus.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **caus.1)** 1) erreichen oder erlangen lassen: *sainaṃ svargaṃ lokaṃ samāpayati*
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
@@ -109,7 +109,7 @@
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
 - **EN:** 1) to make reach or cause to obtain: *sainaṃ svargaṃ lokaṃ samāpayati*
 [ŚAT. BR. 2,3,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,3,16)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **caus.2)** — 2) zu Ende führen, vollbringen, vollführen: *vyavahārānsamāpayan*
 [M. 8,420.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,420) *vrataśeṣaṃ samāpayet*
@@ -172,7 +172,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [RAGH. 8,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,72) *samāpite 'rcane*
 [KATHĀS. 20,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,196) *evaṃ pādatrayeṇa vākyavicāraḥ samāpitaḥ*
 [MADHUS.] in [Ind. St. 1,19.] — desid.
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **des.1)** 1) zu erreichen oder zu erlangen wünschen, begehren: *samīpsita* begehrt, erwünscht: *śivena vai yāhi samīpsitaṃ vanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
@@ -181,7 +181,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
 - **EN:** 1) to wish to reach or desire to obtain: *samīpsita* desired, wished for: *śivena vai yāhi samīpsitaṃ vanam*
 [R. 3,5,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,22)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>
 
 **des.2)** — 2) zu vollenden streben: *yamadhvānaṃ samīpsati taṃ samaśnute*
 [ŚAT. BR. 12,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,10) — desid. vom caus. zu vollbringen suchen: *samāpipayiṣet*
@@ -196,4 +196,4 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [ŚAT. BR. 12,4,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,10) — desid. of the caus. to seek to accomplish: *samāpipayiṣet*
 [ŚAT. BR. 14,4,3,34](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,34) = [BṚH. ĀR. UP. 1,5,23.] Vgl. *samāpipayiṣu*
 [MBH. 1,6872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872)
-  <sub>DCS 341 · attested</sub>
+  <sub>attested</sub>

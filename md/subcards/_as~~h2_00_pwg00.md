@@ -13,7 +13,7 @@
 [ṚV. 7,99,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.099.html#rv07.099.07)
 - **EN:** 1) abl. *āsas* (with *ā*) from mouth to mouth, at immediate close quarters: *vaṣaṭte viṣṇavāsa ā kṛṇomi*
 [ṚV. 7,99,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.099.html#rv07.099.07)
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) instr. *āsā* _adv._ gebraucht in Bedd., welche mit coram nahe zusammentreffen: vor und von Angesicht, mündlich; persönlich, gegenwärtig, leibhaftig; daher
 [NAIGH. 2,16](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,16) unter den Wörten für nahe aufgezählt. *tvaṃ hotā manurhito vahnirāsā viduṣṭaraḥ . agne yakṣi divo viśaḥ*
@@ -61,9 +61,9 @@
 [1,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.02) *āsāvivāsannaditimuruṣyet*
 [152,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.152.html#rv01.152.06) *āsā gāvo vandyāso nokṣaṇaḥ*
 [168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) Vgl. *āsayā*. — In the comp. s. *ādaghna, āspātra, anās, svās*; vgl. also still *āsan* and *āsya*.
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>
 
 **3)** *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 
 - **RU:** *ās*¦ уста, рот, лицо; употребляется лишь в двух формах:
-  <sub>DCS 1985 · attested</sub>
+  <sub>attested</sub>

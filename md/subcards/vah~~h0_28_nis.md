@@ -25,7 +25,7 @@
 [18,2,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.27) *yānena mṛtam*
 [LĀṬY. 8,5. 6.] "to wash away": *augha imāḥ sarvāḥ prajā nirvoḍhā*
 [ŚAT. BR. 1,8,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,2) [6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6)
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) ausführen, zu Stande bringen: *karma*
 [SUŚR. 1,12,21.]
@@ -34,7 +34,7 @@
 [SUŚR. 1,12,21.]
 - **EN:** — 2) "to carry out, accomplish, bring about": *karma*
 [SUŚR. 1,12,21.]
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) zu Stande kommen, gelingen: *tatkarma nirvahecca naḥ*
 [KATHĀS. 32,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,32) *caryāṃ vinā yogo 'pi na nirvahati*
@@ -52,7 +52,7 @@
 [SARVADARŚANAS. 82,11.] "to reach one's goal, to get safely through something"
 [ŚUK. in LA. (III) 37,22.] *gṛhasthāśrayeṇa sarvāśramiṇo nirvahanti*
 [KULL.] to [M. 3,77.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,77)
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **4 (caus.))** — Vgl. *nirūḍhi, nirvahaṇa* fg., *nirvāha, nirvāhin, nirvāhya, nirvoḍhar* . — caus. zu Ende bringen, verbringen: *bālyasamayam*
 [PAÑCAT. 219,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?219,14) ausführen, vollführen, zu Stande bringen: *kuṭumbakam*
@@ -73,10 +73,10 @@
 [55,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?55,211) *pratipannamartham*
 [76,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?76,42) *pratijñātaṃ kāryam*
 [123,174.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,174) [HIT. 106,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?106,4)
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *nirvāhaka* fg.
 
 - **RU:** — Vgl. *nirvāhaka* fg.
 - **EN:** — Vgl. *nirvāhaka* fg.
-  <sub>DCS 26 · attested</sub>
+  <sub>attested</sub>

@@ -18,11 +18,11 @@
 [ĀŚV. ŚR. 5,7,3.]
 [ŚĀṄKH. BR. 28,5.] — desid. {to wish to crouch down}: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **2)** [ŚĀṄKH. BR. 28,5.] — desid. sich ducken wollen: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
 
 - **RU:** [ŚĀṄKH. BR. 28,5.] — desid. желать пригнуться: *varṣmā rathasya ni jihīṣate divaḥ*
 [AV. 20,127,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.02)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

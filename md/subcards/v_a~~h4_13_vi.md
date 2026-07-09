@@ -25,4 +25,4 @@
 [5,4,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,1) *urau pathi vyute (= vivikte*
 [SĀY.]) *tasthurantaḥ*
 [ṚV. 3,54,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.09)
-  <sub>DCS 13 · attested</sub>
+  <sub>attested</sub>

@@ -13,10 +13,10 @@
 - **EN:** — *apa* to put away, to take away: *agnirviśvānyapa duṣkṛtānyajuṣṭānyāre asmaddadhātu*
 [ṚV. 10,164,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.164.html#rv10.164.03) *maḥo druḥo apa viśvāyu dhāyi vajrasya yatpatane pādi śuṣṇaḥ*
 [6,20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.05)
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — Vgl. *apadhā* .
 
 - **RU:** — Vgl. *apadhā* .
 - **EN:** — Vgl. *apadhā* .
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

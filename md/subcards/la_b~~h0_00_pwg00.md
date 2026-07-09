@@ -82,7 +82,7 @@ z. B. *labhati*
 [14,2644](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2644) and *ālambhantām*
 [285](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.285) the [ed. Bomb.] correctly reads *alabhanta*
 u. s. w.; [2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) both have Ausgg. *pralambhante*.
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) erwischen, fassen; antreffen, finden: *namucimasuraṃ nālabhata*
 [TBR. 1,7,1,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,1,6) *dūra iva paśuṃ labhate*
@@ -211,7 +211,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [5,14,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,21) *kātyāyanasyāyaṃ labdhaḥ kālaḥ prakāśane* thus v. a. the moment has come
 [KATHĀS. 5,90.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,90) *labdhatīrtha* thus v. a. having the opportunity
 [BHĀG. P. 3,19,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,4)
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) erhalten, bekommen, in den Besitz von Etwas gelangen, theilhaftig werden (pass. zu Theil werden), wiedererlangen: *yajñe lapsyamāno bhavati* er wird beim Opfer Etwas bekommen d. h. einen Gewinn davon haben
 [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *dhanam*
@@ -460,4 +460,4 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [R. GORR. 2,121,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,121,1) [4,7,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,24) *netranirvāṇam*
 [ŚĀK. 33,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?33,1) *dhṛtim*
 [KATHĀS. 18,315.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,315) *labdhadivyarasāsvāda*
-  <sub>DCS 3345 · attested</sub>
+  <sub>attested</sub>

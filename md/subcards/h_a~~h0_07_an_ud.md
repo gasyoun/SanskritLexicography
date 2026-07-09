@@ -10,4 +10,4 @@
 [TBR. 1,7,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,7,2)
 - **EN:** — *anūd* {to set out toward}
 [TBR. 1,7,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,7,2)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

@@ -16,4 +16,4 @@
 [BHĀG. P. 5,26,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,36) "to entwine, to bind": *parivayase paśūniva girā vibudhānapi*
 [10,87,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,27) *paryuta* "set, mounted" (with ornament): a chariot
 [ŚAT. BR. 13,2,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,7,8)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

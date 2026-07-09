@@ -44,12 +44,12 @@
 [VOP. 19,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,9) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,12) to wish to put, to wish to lay: *svaṃ vavriṃ kuha dhitsathaḥ*
 [ṚV. 1,46,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.09) *yathemānprāṇānālupya śīrṣandhitset*
 [AIT. BR. 1,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,17) Vgl. *dhitsya* .
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **desid-intro)** — desid.
 
 - **RU:** — desid.
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) *didhiṣati* geben —, verschaffen wollen: *devāya devīrdidhiṣantyannam*
 [ṚV. 2,35,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.035.html#rv02.035.05) *prajāvadasme didhiṣantu ratnam*
@@ -74,4 +74,4 @@
 [114,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.01) *stotāramiddidhiṣeya* я желал бы приобрести или я желал бы одарить
 [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.07) [32,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.18) желать собрать, раздобыть: *indrasyāvadyaṃ didhiṣanta āpaḥ*
 [4,18,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.07) Vgl. *didhiṣāyya, didhiṣu* .
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

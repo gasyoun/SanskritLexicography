@@ -16,4 +16,4 @@
  6) the more recent Ausg. reads *preṣyājanaṃ sa saṃjñāya anākhyeyo *
 
 * 'smi saṃjñayā* .
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

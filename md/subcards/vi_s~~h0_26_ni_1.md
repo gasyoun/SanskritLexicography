@@ -34,7 +34,7 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 [20,24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,24) (*guṇaiḥ* furnished with
 GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). — Instead of *niviṣṭaṃ*
 [HARIV. 5171](https://sanskrit-lexicon-scans.github.io/hariv?5171) the newer Ausg. reads *vicitraṃ*. Vgl. *aniviśamāna, niviṣṭi, niveśa, niveśana, niveśin, niveṣṭavya*. — caus.
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) zur Ruhe bringen: *niveśayannamṛtaṃ martyaṃ ca*
 [ṚV. 1,35,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.035.html#rv01.035.02)
@@ -49,7 +49,7 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 [ṚV. 1,35,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.035.html#rv01.035.02)
 [TAITT. BR. 3,1,1,10.]
 [ṚV. 4,53,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.053.html#rv04.053.03) [7,45,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.045.html#rv07.045.01)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd in ein Haus führen, einquartiren: *bhāryāṃ svabhavane*
 [MBH. 1,4424](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4424) (med.). [HARIV. 8983.](https://sanskrit-lexicon-scans.github.io/hariv?8983) [R. 2,42,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,28) *lohamaye gehe*
@@ -64,7 +64,7 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 [MBH. 1,4424](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4424) (med.). [HARIV. 8983.](https://sanskrit-lexicon-scans.github.io/hariv?8983) [R. 2,42,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,28) *lohamaye gehe*
 [KATHĀS. 56,148.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,148) *māṃ niveśyeha*
 [MBH. 3,15607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15607)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) ein Haus beziehen lassen so v. a. verheirathen (einen Mann)
 [ŚĀK. 95.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95)
@@ -73,7 +73,7 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 [ŚĀK. 95.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95)
 - **EN:** 3) to let move into a house, hence v. a. to give in marriage (a man)
 [ŚĀK. 95.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) an einem Orte niedersetzen, hinstellen, an einen Ort bringen, — versetzen: *yasmāccaivoddhṛtaḥ sthānāttatraivāyaṃ niveśyatām . sugrīvaḥ*
 [R. 6,84,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,8) *nāgānpuryāṃ tasyām*
@@ -106,7 +106,7 @@ ein Drama (Etwas) versetzen so v. a. es dort zur Erscheinung bringen
 
 a drama, i.e. to bring it to appear there
 [SĀH. D. 32,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?32,1)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) aufstellen, errichten (ein Gebäude, ein Heiligthum u. s. w.): *bandhanāni sarvāṇi mārge*
 [M. 9,288.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,288) *skandhāvāraniveśe tena ceha niveśite*
@@ -151,7 +151,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [R. 3,16,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,35) to populate, to make inhabited: *purīm*
 [HARIV. 1542.](https://sanskrit-lexicon-scans.github.io/hariv?1542) [1546.](https://sanskrit-lexicon-scans.github.io/hariv?1546) [1591.](https://sanskrit-lexicon-scans.github.io/hariv?1591)
 [R. 7,72,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,72,10)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) aufstellen (ein Heer): *balaṃ janasthāne*
 [R. 3,60,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,31) *lubdhānmaṇḍalena*
@@ -175,7 +175,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [R. 2,83,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,23) ([90,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,36) [GORR.]). [25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,25) (med. GORR. [38](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,38)). [26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,26) ([39](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,39) [GORR.]). *niveśayitvā*
 [89,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,23)
 (*niveśya* [98,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,98,24) [GORR.]). [99,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,16) [5,74,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,20) [23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,23) [KĀM. NĪTIS. 16,1. 40.] [RAGH. 5,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,42) [16,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,37) [ŚĀK. 18,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,23) [PRAB. 82,2.]
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) sitzen machen, Jmd setzen auf: *tāmaṅke*
 [R. 1,18,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,18,21) *bhūmau*
@@ -193,7 +193,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [2,76,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,4) [4,7,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,14) [KUMĀRAS. 7,13.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,13) *kisalayaśayananiveśitā*
 [GĪT. 2,13.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,13) *viṣṭare*
 [RĀJA-TAR. 4,555.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,555)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) stecken —, hineinsetzen in: *śarīraṃ tailadroṇyām*
 [R. GORR. 2,68,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,68,47) *kanyakāṃ mañjūṣāyām*
@@ -229,7 +229,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [KATHĀS. 10,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,107) [61,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,25) *(hṛdi) kukāvyahavyāhutayo niveśitāḥ*
 [Spr. 2352.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2352) *sve kha idaṃ niveśya*
 [BHĀG. P. 3,5,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,6)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) schleudern —, abschiessen auf: *bhallān — tava putre*
 [MBH. 8,3146](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3146) (med.). *śarānmūrdhni*
@@ -241,7 +241,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 - **EN:** 9) to hurl, shoot at: *bhallān — tava putre*
 [MBH. 8,3146](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3146) (med.). *śarānmūrdhni*
 [R. 5,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,7)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) aufstecken, aufsetzen, auflegen, anlegen: *taṃ śūle*
 [M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276) *dhvajāgre tārkṣyastena niveśitaḥ*
@@ -352,4 +352,4 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [MĀRK. P. 36,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?36,8) *nāma svahastena* to sign one's name underneath with one's own hand
 [YĀJÑ. 2,86.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,86) *citre* hence v. a. to paint
 [ŚĀK. 42.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?42)
-  <sub>DCS 265 · attested</sub>
+  <sub>attested</sub>

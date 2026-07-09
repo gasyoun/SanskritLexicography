@@ -11,4 +11,4 @@
 
 - **RU:** — *ā* мнимо (кажущееся употребление)
 [RĀJA-TAR. 4,654](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,654), поскольку с [ed. Calc.] следует читать *kāṅkṣatāpagamā jahuḥ*.
-  <sub>DCS 0 · attested</sub>
+  <sub>attested</sub>

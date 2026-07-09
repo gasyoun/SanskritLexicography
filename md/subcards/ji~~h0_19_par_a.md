@@ -13,7 +13,7 @@
 - **EN:** — *parā* med.
 [P. 1,3,19.](https://ashtadhyayi.com/sutraani/1/3/19)
 [VOP. 23,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,1)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) Etwas (acc.) verlieren, um Etwas gebracht werden: *ahamindro na parā jigya iddhanam*
 [ṚV. 10,48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.05) *parā bhāgamoṣadhīnāṃ jayantām*
@@ -34,7 +34,7 @@
 [ŚAT. BR. 1,5,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,4,11) act.: *bahu vittaṃ parājaiṣīḥ ācakṣva vittaṃ kaunteya yadi te 'styaparājitam*
 [MBH. 2,2141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2141) [2167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2167) [2204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2204) *yadātmānaṃ parājayeḥ* (thus to be read with [WEST.])
 [2170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2170)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) besiegt werden, unterliegen: *ubhā jigyathurna parā jayethe*
 [ṚV. 6,69,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.069.html#rv06.069.08)
@@ -67,7 +67,7 @@
 [ṚV. 10,84,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.084.html#rv10.084.07)
 [AV. 3,1,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.06) [5,21,9](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.021.html#av05.021.09); vgl. u.
 [4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) einer Sache unterliegen; Etwas nicht überwinden —, ertragen können; mit dem abl.
 [P. 1,4,26.](https://ashtadhyayi.com/sutraani/1/4/26) *adhyayanātparājayate*
@@ -85,7 +85,7 @@ Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
 Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
 [BHAṬṬ. 8,71.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,71) *parājitaḥ duḥkhāt*
 [VOP. 5,20.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,20)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) besiegen, überwinden: *tasmāddroṇaḥ parājaiṣṭa mām*
 [MBH. 1,6378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378) *parājayiṣye kauravyaṃ kavacenāpi rakṣitam*
@@ -169,10 +169,10 @@ Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
 [YĀJÑ. 2,306.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,306) *gāvo varṣaparājitāḥ*
 [HARIV. 3917.](https://sanskrit-lexicon-scans.github.io/hariv?3917) *putraśoka˚*
 [R. 2,65,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,16)
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — Vgl. *aparājita, ātmaparājita, parājaya* .
 
 - **RU:** — Vgl. *aparājita, ātmaparājita, parājaya* .
 - **EN:** — Vgl. *aparājita, ātmaparājita, parājaya*.
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

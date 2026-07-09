@@ -37,7 +37,7 @@
 [CHĀND. UP. 1,10,2.] med. [LĀṬY. 4,11,17.] to bring near: *karṇayorupanidhāya* (his mouth) *medhā jananaṃ japati*
 [ĀŚV. GṚHY. 1,15] (vgl. *abhini*). to bring about, to bring near: *vahati malayasamīre madanamupanidhāya*
 [GĪT. 5,2.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,2)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) herbeiführen, bewirken: *bhayamupanidadhe sa rākṣasānām* jagte Furcht ein
 [BHAṬṬ. 4,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,45)
@@ -46,7 +46,7 @@
 [BHAṬṬ. 4,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,45)
 - **EN:** — 2) to bring about, to cause: *bhayamupanidadhe sa rākṣasānām* instilled fear
 [BHAṬṬ. 4,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,45)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) verwahren, vergraben (einen Schatz); zur Verwahrung übergeben, anvertrauen: *brāhmaṇo dṛṣṭvā pūrvopanihitaṃ nidhim*
 [M. 8,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,37) *nikṣiptasya dhanasyaivaṃ prītyopanihitasya ca*
@@ -61,10 +61,10 @@
 [M. 8,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,37) *nikṣiptasya dhanasyaivaṃ prītyopanihitasya ca*
 [196.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,196) *(ātmajam) brāhmaṇeṣūpanidhāya*
 [BHĀG. P. 5,4,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,5)
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *upanidhātar* fgg.
 
 - **RU:** — Vgl. *upanidhātar* fgg.
 - **EN:** — Vgl. *upanidhātar* fgg.
-  <sub>DCS 51 · attested</sub>
+  <sub>attested</sub>

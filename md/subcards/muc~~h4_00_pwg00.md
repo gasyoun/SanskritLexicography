@@ -16,7 +16,7 @@
 [Sp. 810, Z. 8] v. u. the example
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) is to be deleted, since here *bhuktam* is to be read; vgl.
 [Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
-  <sub>DCS 3914 · lexicographic</sub>
+  <sub>lexicographic</sub>
 
 **2)** — *abhi* von sich geben, ausströmen: *tāpam*
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
@@ -25,4 +25,4 @@
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
 - **EN:** — *abhi* "to give forth, to emit": *tāpam*
 [Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
-  <sub>DCS 3914 · attested</sub>
+  <sub>attested</sub>

@@ -7,4 +7,4 @@
 
 - **RU:** — *ud* s. *udvācana* .
 - **EN:** — *ud* s. *udvācana*.
-  <sub>DCS 33950 · attested</sub>
+  <sub>attested</sub>

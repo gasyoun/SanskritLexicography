@@ -1,4 +1,4 @@
-## upasaṃ-gam
+## upasaṃgam
 
 `gam~~h2_36_upasam`
 
@@ -9,8 +9,8 @@
 [82,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,40)
 
 - **RU:** — *upasam*
- 1) *mārge grāmajanāḥ — tatra tatropasaṃgatāḥ* сошедшийся, собравшийся
-[BHĀG. P. 10,41,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,7) [71,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,37) присоединиться к кому-л., примкнуть к кому-л.
+ 1) *mārge grāmajanāḥ — tatra tatropasaṃgatāḥ* собравшийся, сошедшийся
+[BHĀG. P. 10,41,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,7) [71,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,37) присоединяться к кому-либо
 [82,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,40)
 - **EN:** — *upasam*
   <sub>attested</sub>

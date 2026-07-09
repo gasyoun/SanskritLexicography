@@ -7,4 +7,4 @@
 
 - **RU:** — *anupra* s. *anupravacana* .
 - **EN:** — *anupra* s. *anupravacana*.
-  <sub>DCS 2 · attested</sub>
+  <sub>attested</sub>

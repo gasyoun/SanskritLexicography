@@ -10,10 +10,10 @@
 [R. 3,17,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,17,2)
 - **EN:** — *abhi* to stay, to spend (a night): *sukhamabhyuṣito niśām*
 [R. 3,17,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,17,2)
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>
 
 **1)** — Vgl. *abhivāsa* .
 
 - **RU:** — Vgl. *abhivāsa* .
 - **EN:** — Vgl. *abhivāsa*.
-  <sub>DCS 3 · attested</sub>
+  <sub>attested</sub>

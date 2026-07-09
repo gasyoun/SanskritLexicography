@@ -13,7 +13,7 @@
 - **EN:** — *ni* med.
 [P. 1,3,17.](https://ashtadhyayi.com/sutraani/1/3/17)
 [VOP. 23,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,1)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **1)** 1) hineingehen, heimgehen (in's Haus, Lager, Nest); sich zur Ruhe begeben, sich legen; sich lagern: *nyaviśranpatayiṣṇavaḥ*
 [ṚV. 8,17,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.017.html#rv08.017.12) [10,127,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.04) *ni grāmāso avikṣata ni padvantaḥ*
@@ -73,7 +73,7 @@
 [1,7308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7308) [WILSON, SĀṂKHYAK. S. 62.] *jñeyapade* to enter the realm of the knowable
 [SARVADARŚANAS. 101,7. 8.] *dehasyāpacayo matau niviśate* penetrates the mind, i.e. v. a. comes to consciousness
 [Spr. 1973.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1973)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) sich flüchten zu (acc.)
 [BHĀG. P. 10,2,3](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,2,3) (act.).
@@ -82,7 +82,7 @@
 [BHĀG. P. 10,2,3](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,2,3) (act.).
 - **EN:** — 2) to flee for refuge to (acc.)
 [BHĀG. P. 10,2,3](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,2,3) (act.).
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) sich setzen: *āsane*
 [ŚIŚ. 1,19.]
@@ -97,7 +97,7 @@
 [ŚIŚ. 1,19.]
 [RĀJA-TAR. 6,129.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,129) *(makaraḥ) tīropānte nyaviśat* (more correctly *niviṣṭaḥ* [ed. Bomb.])
 [PAÑCAT. 205,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?205,8)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — 4) hinuntersinken: *adrīṇāṃ niviśatāṃ bhāraiḥ*
 [BHĀG. P. 8,11,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,34) etwa versinken
@@ -109,7 +109,7 @@
 - **EN:** — 4) to sink down: *adrīṇāṃ niviśatāṃ bhāraiḥ*
 [BHĀG. P. 8,11,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,34) approximately "to sink, founder"
 [ṚV. 10,44,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.044.html#rv10.044.06)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) sich niederlassen so v. a. ein Haus gründen, heirathen (vom Manne)
 [MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) *niveṣṭukāma*
@@ -121,7 +121,7 @@
 - **EN:** — 5) to settle down, i.e. v. a. to found a household, to marry (of a man)
 [MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) *niveṣṭukāma*
 [13,1391](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1391); vgl. under *nis* 2).
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **6)** — 6) gegründet werden: *dvāravatyāṃ niviśantyām*
 [MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) (*nirviśa˚* [ed. Calc.] *nivi˚* [ed. Bomb.]).
@@ -136,7 +136,7 @@
 [MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) (*nirviśa˚* [ed. Calc.] *nivi˚* [ed. Bomb.]).
 [HARIV. 2043](https://sanskrit-lexicon-scans.github.io/hariv?2043) (*nivasantyām* the more recent Ausg., which
 [NĪLAK.] explains by *kṛtanivāsāyām*).
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **7)** — 7) sich hinwenden zu, sich
 
@@ -158,7 +158,7 @@ to, toward: *pāpe niviśate manaḥ*
 [M. 2,8.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,8) *arthe*
 [MBH. 7,3073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3073) *tadā varṇā yathādharmaṃ niviśeyuḥ kathaṃcana*
 [12,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2933)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **8)** — 8) zukommen (Gegens. abgehen): *(guṇaḥ) sattve niviśate 'paiti* Cit. bei
 [VOP.] zu [4,16.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?4,16) so v. a. zur Anwendung kommen
@@ -170,7 +170,7 @@ to, toward: *pāpe niviśate manaḥ*
 - **EN:** — 8) to fall to, to belong to (Gegens. "to be lacking"): *(guṇaḥ) sattve niviśate 'paiti* Cit. with
 [VOP.] for [4,16.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?4,16), i.e. v. a. to come into application
 [KĀTY. ŚR. Comm. 56,3] (act.). [57,24. 58,2.]
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **9)** — 9) sich legen so v. a. sich beruhigen, aufhören: *ni vo nu manyurviśatām*
 [ṚV. 10,34,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.14) der Wind [168,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.168.html#rv10.168.03)
@@ -179,7 +179,7 @@ to, toward: *pāpe niviśate manaḥ*
 [ṚV. 10,34,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.14) ветер [168,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.168.html#rv10.168.03)
 - **EN:** — 9) to lay down, i.e. v. a. to calm down, to cease: *ni vo nu manyurviśatām*
 [ṚV. 10,34,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.14) the wind [168,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.168.html#rv10.168.03)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10-intro)** — 10) partic. *niviṣṭa*
 - **EN:** — 10) partic. *niviṣṭa*
@@ -265,7 +265,7 @@ to, toward: *pāpe niviśate manaḥ*
 [HARIV. 14657.](https://sanskrit-lexicon-scans.github.io/hariv?14657) *sāmye niviṣṭacetasām*
 [KUMĀRAS. 5,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,31) *sīteyamiti niviṣṭabuddhiḥ*
 [R. 5,19,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,19,34)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10c)** — c) gelegen: *purī yamunātīre*
 [HARIV. 3061.](https://sanskrit-lexicon-scans.github.io/hariv?3061) *janapadaḥ sarayūtīre*
@@ -277,7 +277,7 @@ to, toward: *pāpe niviśate manaḥ*
 - **EN:** — c) situated: *purī yamunātīre*
 [HARIV. 3061.](https://sanskrit-lexicon-scans.github.io/hariv?3061) *janapadaḥ sarayūtīre*
 [R. 1,5,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,5) [3,53,35](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,35) [6,15,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,15,22)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10d)** — d) sitzend: *udadheḥ kūle*
 [RAGH. 12,68](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,68) (*nirviṣṭa*
@@ -298,7 +298,7 @@ to, toward: *pāpe niviśate manaḥ*
 [RĀJA-TAR. 1,149.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,149) *āsthānabhūmau*
 [VET. in LA. (III) 23,11.] *(makaraḥ) tīropānte niviṣṭaḥ* "sat down"
 [PAÑCAT. ed. Bomb. IV,1,9.]
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10e)** — e) der sich häuslich niedergelassen hat, verheirathet: *a˚*
 [MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) *anirviṣṭa* u. *pariviṇṇa* .
@@ -307,7 +307,7 @@ to, toward: *pāpe niviśate manaḥ*
 [MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) *anirviṣṭa* u. *pariviṇṇa* .
 - **EN:** — e) one who has settled down domestically, married: *a˚*
 [MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) *anirviṣṭa* u. *pariviṇṇa*.
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10f)** — f) gegründet, angelegt: *divodāsena niviṣṭāṃ nagarīm*
 [HARIV. 1556.](https://sanskrit-lexicon-scans.github.io/hariv?1556) [9597.](https://sanskrit-lexicon-scans.github.io/hariv?9597) *yastu pūrvaniviṣṭasya taḍāgasyodakaṃ haret*
@@ -319,7 +319,7 @@ to, toward: *pāpe niviśate manaḥ*
 - **EN:** — f) founded, established: *divodāsena niviṣṭāṃ nagarīm*
 [HARIV. 1556.](https://sanskrit-lexicon-scans.github.io/hariv?1556) [9597.](https://sanskrit-lexicon-scans.github.io/hariv?9597) *yastu pūrvaniviṣṭasya taḍāgasyodakaṃ haret*
 [M. 9,281.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,281)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10g)** — g) bezogen, eingenommen: *samyaṅniviṣṭadeśaḥ*
 [M. 9,252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,252) *kṛṣikaraiḥ suniviṣṭo janapadaḥ*
@@ -334,7 +334,7 @@ to, toward: *pāpe niviśate manaḥ*
 [M. 9,252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,252) *kṛṣikaraiḥ suniviṣṭo janapadaḥ*
 [R. GORR. 2,109,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,21) *antarniviṣṭapadaṃ śāpam*
 [RAGH. 9,82.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,82)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10h)** — h) begonnen
 [AIT. BR. 7,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,10)
@@ -343,7 +343,7 @@ to, toward: *pāpe niviśate manaḥ*
 [AIT. BR. 7,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,10)
 - **EN:** — h) begun
 [AIT. BR. 7,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,10)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>
 
 **10) PPP — a) zur Ruhe gegangen; gelagert; aufgestellt; an einem Orte verweilend, sich aufhaltend)** — 10) partic. *niviṣṭa*
  a) zur Ruhe gegangen
@@ -370,4 +370,4 @@ to, toward: *pāpe niviśate manaḥ*
 [R. 5,49,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,49,14) пребывающий в каком-л. месте, находящийся
 [BHĀG. P. 1,3,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,44) *dharmapathe*
 [R. 3,48,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,48,18) [5,11,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,18)
-  <sub>DCS 2662 · attested</sub>
+  <sub>attested</sub>

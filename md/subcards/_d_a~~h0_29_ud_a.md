@@ -10,4 +10,4 @@
 [ŚAT. BR. 7,5,1,38.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,5,1,38)
 - **EN:** — *udā*, partic. *udāhita* elevated: *uttaro 'rdha udāhitataraḥ*
 [ŚAT. BR. 7,5,1,38.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,5,1,38)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

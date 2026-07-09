@@ -16,4 +16,4 @@
 
 * . sa sukhaṃ prekṣate rājā*
 [MBH. 12,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5241)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

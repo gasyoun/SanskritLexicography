@@ -13,4 +13,4 @@
 - **EN:** *pratyā* to seize hold of from the other side: *aṅguṣṭhena*
 [ĀŚV. ŚR. 1,7,5.] *parāñcamāvṛttaṃ saṃpiṃṣyādapratyālabhamānam* without him being able to seize hold of — i.e. defend himself — in turn
 [ŚAT. BR. 1,6,3,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,33)
-  <sub>DCS 1 · attested</sub>
+  <sub>attested</sub>

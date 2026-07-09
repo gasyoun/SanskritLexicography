@@ -9,4 +9,4 @@
 - **EN:** 6. *vas*¦ (probably = 5. *vas*) approximately "dwelling-place" or "resident": *vasāṃ* (= *vasatāṃ prāṇinām*
 [SĀY.]) *rājānaṃ vasatiṃ janānām* "lord of the houses (of the settled), homeland of the people"
 [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) One could also assume *vasa*.
-  <sub>DCS 2546 · attested</sub>
+  <sub>attested</sub>

@@ -45,7 +45,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 [PAÑCAT. 173,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?173,23)
 [HIT. 40,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,9)
 - **EN:** 4) to call into doubt, to hesitate, to delay one's decision: *antyaṃ padaṃ vicāryeta* [UPAL. 9,15.] *tatra daṇḍo 'vicāritaḥ* "subject to no hesitation" [M. 8,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,295) *ityetadavicāritam* [MBH. 14,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1344) *na rāmagamane — vicārayitumarhasi* [R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* "what is there to deliberate about for long?" [HARIV. 3818.](https://sanskrit-lexicon-scans.github.io/hariv?3818) *na khalu kiṃcidvicāritamanayā* [MĀLAV. 49,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?49,9) *mā vicāraya* "do not hesitate long" [MBH. 1,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.763) [6668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6668) [SĀV. 5,107.] [R. 5,35,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,25) *avicārayan* (always at the end of a half-verse) "without hesitating" [M. 3,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,114) [7,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,212) [8,283](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,283) u. s. w. [R. 4,8,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,40) [5,3,67.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,67) *vicārita* _n._ "the hesitation": *tata etadvicāritam* [SĀV. 3,13.] *kiṃ vicāritaiḥ* [MṚCCH. 9,5.] *avicāritam* _adv._ "without hesitation" [SĀV. 1,35.] [HARIV. 3853.](https://sanskrit-lexicon-scans.github.io/hariv?3853) [R. 2,76,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,11) [PAÑCAT. 173,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?173,23) [HIT. 40,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,9)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **5)** — 5) herausbringen, dahinterkommen, feststellen: *dṛṣṭvā cainaṃ na vicārayāmyahaṃ gandharvarājo yadi vā puraṃdaraḥ*
 [MBH. 4,235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.235) *vicāryatām yadi kācidāpannasattvā tasya bhāryāsu syāt*
@@ -61,10 +61,10 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49)
 [H. 1475.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1475)
 - **EN:** 5) to find out, to get to the bottom of, to ascertain: *dṛṣṭvā cainaṃ na vicārayāmyahaṃ gandharvarājo yadi vā puraṃdaraḥ* [MBH. 4,235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.235) *vicāryatām yadi kācidāpannasattvā tasya bhāryāsu syāt* [ŚĀK. 90,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?90,21) *sa nāpnoti phalaṃ tasya paratreti vicāritam* "this is established, is settled" [M. 11,28.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,28) *vicārita = vinna, vitta* [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49) [H. 1475.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1475)
-  <sub>DCS 499 · attested</sub>
+  <sub>attested</sub>
 
 **etym/xref)** — Vgl. *vicāra* u. s. w.
 
 - **RU:** — Vgl. *vicāra* u. s. w.
 - **EN:** — Vgl. *vicāra* u. s. w.
-  <sub>DCS 499 · lexicographic</sub>
+  <sub>lexicographic</sub>

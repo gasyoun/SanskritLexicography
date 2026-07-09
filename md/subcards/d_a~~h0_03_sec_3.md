@@ -10,4 +10,4 @@
 - **RU:** intens. *dedīyate*
 [P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66), Sch.
 [VOP. 20,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,4)
-  <sub>DCS 12366 · attested</sub>
+  <sub>attested</sub>

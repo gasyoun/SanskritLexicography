@@ -11,9 +11,9 @@
 - **EN:** — desid.
  1) *jijñāsitum — kuryādiyadbhirdīnāraiḥ kiṃ dvibāhurasāviti*
 [KATHĀS. 53,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,94)
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>
 
 **sec_2_intro)** — desid.
 
 - **RU:** — desid.
-  <sub>DCS 5059 · attested</sub>
+  <sub>attested</sub>

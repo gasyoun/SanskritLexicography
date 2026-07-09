@@ -11,4 +11,4 @@
 
 - **RU:** — *upa* pass. убывать, уменьшаться: *yeṣāṃ trivargaḥ* (так [ed. Bomb.]) *kṛtyeṣu vartate* (вероятно, следует читать *vardhate*) *nopahīyate*
 [MBH. 13,2028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2028)
-  <sub>DCS 3071 · attested</sub>
+  <sub>attested</sub>

@@ -26,7 +26,7 @@
 [AIT. BR. 8,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,7) [13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,13)
 [ĀŚV. GṚHY. 1,10. 11.] *patnīmantardhāya* placing between
 [KĀTY. ŚR. 26,7,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?26,7,6)
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) abscheiden, absondern; ausschliessen, beseitigen; zudecken, verbergen: *antarmṛtyuṃ dadhatāṃ parvatena*
 [ṚV. 10,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04) *antardadhānā duritāni viśvā*
@@ -125,7 +125,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 Sch. *antardhatsva raghuvyāghrāt*
 [BHAṬṬ. 5,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,32) [6,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,15) [8,71.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,71) also with the gen.: *teṣāmantardadhe*
 [BHĀG. P. 8,6,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,26)
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) in sich aufnehmen: *viśvaṃbhare devi māmantardhātumarhasi*
 [RAGH. 15,81.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,81) in sich enthalten: *śāstrametat . antardhāsyati tatsarvametadvaḥ kathitaṃ mayā*
@@ -140,7 +140,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 [RAGH. 15,81.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,81) to contain within oneself: *śāstrametat . antardhāsyati tatsarvametadvaḥ kathitaṃ mayā*
 [MBH. 12,12747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12747) to manifest inwardly, in the heart, to show: *saipāntardadhatī tamovighaṭanādānandamātmaprabham*
 [PRAB. 80,6.] — *antarhita* partic.
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-1)** 1) getrennt: *rātribhirantarhitau*
 [ŚAT. BR. 2,2,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,13) [13,8,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,20) *anantarhita* durch keinen Zwischenraum u. s. w. getrennt, unmittelbar zusammenhängend. — folgend
@@ -158,7 +158,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 [ŚAT. BR. 1,6,3,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,27) [6,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,3,2) *prajā*
 [5,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,5,3,5) *jātarūpa*
 [14,9,4,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,25)
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **ppp-2)** — 2) bedeckt: *śeṣvānantarhitāyāṃ tvaṃ bhūmau* auf der blossen Erde
 [R. 2,9,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,18) *āsīta nānantarhitāyām* (sc. *bhūmau*)
@@ -224,7 +224,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 [BHĀG. P. 1,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,24) With a abl. hidden from, withdrawn from someone's sight
 [ŚAT. BR. 1,9,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,24)
 [VOP. 5,20.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,20)
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **caus)** — Vgl. *antardhā* fgg. — caus. verschwinden machen: *iti rūpamantardhāpitam*
 Schol. zu [NALOD. 3,18.]
@@ -233,9 +233,9 @@ Schol. zu [NALOD. 3,18.]
 Schol. к [NALOD. 3,18.]
 - **EN:** — Vgl. *antardhā* fgg. — caus. to cause to disappear: *iti rūpamantardhāpitam*
 Schol. to [NALOD. 3,18.]
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>
 
 **intro)** — *antar*
 
 - **RU:** — *antar*
-  <sub>DCS 1012 · attested</sub>
+  <sub>attested</sub>

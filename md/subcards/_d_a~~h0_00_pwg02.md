@@ -10,7 +10,7 @@
 [RAGH. 1,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,26)
 - **EN:** — 9) to bear, thus v. a. to maintain, uphold: *saṃpadvinimayenobhau dadhaturbhuvanadvayam*
 [RAGH. 1,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,26)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **10)** — 10) an sich nehmen, empfangen, erlangen, erhalten; med.: *yathā yajñaṃ manuṣo vikṣvā3su dadhidhve*
 [ṚV. 4,37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.037.html#rv04.037.01) *asmākaṃ stomaṃ dhiṣva*
@@ -55,7 +55,7 @@
 [ŚAT. BR. 12,4,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,7) — *dhatte — hari viriñci hareti saṃjñāḥ* receives the names
 [BHĀG. P. 1,2,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,23) also act.: *rājetyadhānnāmadheyam*
 [4,22,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,56)
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>
 
 **11)** — 11) sich zu eigen machen, annehmen so v. a. an sich zur Erscheinung bringen, zeigen; inne haben, besitzen,
 
@@ -205,4 +205,4 @@ to assert, maintain; med.: *varṇaṃ dadhire*
 [10.] [KIR. 5,5. 7.] *dvijihvavadanaṃ dhatte duṣṭo durjanapannagaḥ*
 [KĀM. NĪTIS. 3,20.] For *adhāyata* possessed in the passage: *(dhanuḥ) etadvarṣasahasraṃ tu brahmā pūrvamadhārayat . tato 'nantaramevātha prajāpatiradhāyata ..*
 [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) one should in all probability read *adhārayat*.
-  <sub>DCS 4861 · attested</sub>
+  <sub>attested</sub>

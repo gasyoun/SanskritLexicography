@@ -115,7 +115,7 @@
 [53.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.53) [296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.296) *kavacāni pratimuñcantu — gātreṣu*
 [1022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1022) *indradattāmimāṃ mālāṃ sugrīvaḥ pratimuñcatu*
 [R. 4,16,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,16,51)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) Jmd freilassen, entlassen: *mahākratoramuṃ turaṃgaṃ pratimoktumarhasi*
 [RAGH. 3,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,46) *gṛhītapratimukta*
@@ -154,7 +154,7 @@
 [13,1659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1659) *narakātpratimuktaḥ*
 [MĀRK. P. 15,1.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,1) "to free(!)": *tiryagyonau gatāṃścaiva* (so the more recent Ausg.) *karmabhirnirayopamaiḥ . tānapi pratimucyeta brahmayuktena cetasā ..*
 [HARIV. 11619.](https://sanskrit-lexicon-scans.github.io/hariv?11619)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **3)** — 3) schleudern: *tasmādghrāṇaṃ prati śarānpratimokṣyāmyahaṃ śitān*
 [MBH. 14,847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.847) [850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.850) [856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.856) [862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.862) *kṛpeṇa śaravarṣāṇi pratimuktāni saṃyuge*
@@ -181,7 +181,7 @@
 
 *kataro meniṃ prati taṃ mucāte*
 [ṚV. 10,27,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.11)
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>
 
 **4)** — Vgl. *pratimocana* . — caus. befreien, erretten: *asmāṃstvaṃ pratimocaya*
 [MBH. 1,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5812) *tvadarthametadvinipātyamānaṃ dehaṃ tvayaiva pratimocitaṃ me*
@@ -193,4 +193,4 @@
 - **EN:** — Vgl. *pratimocana*. — caus. "to free, rescue": *asmāṃstvaṃ pratimocaya*
 [MBH. 1,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5812) *tvadarthametadvinipātyamānaṃ dehaṃ tvayaiva pratimocitaṃ me*
 [MṚCCH. 172,15.] — desid. s. *pratimokṣa*.
-  <sub>DCS 174 · attested</sub>
+  <sub>attested</sub>

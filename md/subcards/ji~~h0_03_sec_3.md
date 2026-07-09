@@ -10,4 +10,4 @@
 [P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), Sch.
 - **EN:** — intens. *jejīyate*
 [P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), Sch.
-  <sub>DCS 4090 · attested</sub>
+  <sub>attested</sub>

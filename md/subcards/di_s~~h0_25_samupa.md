@@ -16,4 +16,4 @@
 
 [MBH. 3,2328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2328) to show, hence v. a. to assign, allot to: *anena kṛtakṛtyo 'smi yanmāṃ sa puruṣeśvaraḥ — mṛtyuṃ samupadekṣyati*
 [R. 3,45,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,18)
-  <sub>DCS 9 · attested</sub>
+  <sub>attested</sub>

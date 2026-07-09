@@ -43,4 +43,4 @@
 [5,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,22) *nānākarma˚* so v. a. occupied with
 [MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) Vgl. *nivāsa* (*ācchādane*)
 [DHĀTUP. 35,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) and 2. *nivāsana*.
-  <sub>DCS 396 · attested</sub>
+  <sub>attested</sub>

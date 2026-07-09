@@ -58,7 +58,7 @@
 [MBH. 5,1565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1565)
 [BHĀG. P. 1,18,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,15) [2,3,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,14) [10,51,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,51,32) *śuśrūṣitāṃ vācaṃ bhāṣitā*
 [ŚAT. BR. 14,9,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **2)** — 2) gehorchen, Jmd seine Aufmerksamkeit erzeigen, zu Jmdes Dienst sein
 [KUMĀRAS. 1,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,60) *bhāryā na śuśrūṣate*
@@ -145,13 +145,13 @@
 [MBH. 12,4588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4588) [15,117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.117)
 [BHĀG. P. 6,18,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,30)
 [PAÑCAT. 118,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?118,24)
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **note)** — Vgl. *śuśrūṣaka* fgg.
 
 - **RU:** — Vgl. *śuśrūṣaka* fgg.
 - **EN:** — Vgl. *śuśrūṣaka* fgg.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
 
 **desid. intro)** — desid. *śuśrūṣate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
@@ -160,4 +160,4 @@
 - **RU:** — desid. *śuśrūṣate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
 [VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) в эпосе по метрическим соображениям также med.
-  <sub>DCS 10514 · attested</sub>
+  <sub>attested</sub>
