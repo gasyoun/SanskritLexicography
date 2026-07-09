@@ -343,12 +343,15 @@ deterministic 10 % sample of clean translated keys. It is NOT the mechanical req
 
 ## Concurrency — run a throttled driver, not N parallel chats
 
-**Do not launch more than ~3 root harnesses as separate Workflows at once.** Each generated
-harness internally fans out to ~8–14 agents, so N concurrent root-harnesses peak at N×~12
-Sonnet agents on a single Max session. Slice D launched 18 at once → ~140–250 peak agents →
-~80+ `Server is temporarily limiting requests` 429s → 117 transient null cards; single-root
-runs measured **zero** transient failures. Run roots sequentially or ≤3-wide from one driver;
-a clean sequential sweep is faster end-to-end than a collapsed wide run plus its recovery pass.
+**Default to one Workflow window at a time; treat 3-wide as an upper bound, not a target.**
+Each generated harness internally fans out to ~8–14 agents, so N concurrent root-harnesses
+peak at N×~12 Sonnet agents on a single Max session. Slice D launched 18 at once →
+~140–250 peak agents → ~80+ `Server is temporarily limiting requests` 429s → 117 transient
+null cards. H317 then showed that even **3 concurrent medium windows** can collapse if the
+session/provider is already unstable (0/38 clean, and the solo retry still saw repeated
+`Connection closed mid-response`). In any session with fresh transport errors, first run a
+single solo reference window and see it return mostly clean before trusting any concurrent
+width. A clean sequential sweep is faster end-to-end than a collapsed wide run plus recovery.
 
 **Running 3 accounts at once (3 clones, not 3 chats in one clone)?** Read the
 [3-account operating protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#recommended-3-account-operating-protocol-no-code-changes-needed)
