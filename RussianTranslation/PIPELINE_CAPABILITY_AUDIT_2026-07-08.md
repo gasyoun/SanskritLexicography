@@ -735,10 +735,18 @@ requeue. The mechanical-criteria block was stripped from both judge prompts
 ([`2_qa_sudya_opus.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/2_qa_sudya_opus.txt)
 and its YandexGPT twin) — replaced with a note that the pre-gate guarantees
 anchor/markup integrity, so the judge rules only on semantics (`anchors` kept
-as an emergency backstop). The **EN** auditor
+as an emergency backstop).
+
+The **EN** auditor
 ([`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py))
-audits in-process per-card, not via the file-pair subprocess model, so its
-wiring is a tracked GAP (`stage2_pregate_en_wiring_h405` in
+was wired same-day too. It audits in-process per-sense (`audit_sense(german,
+english)`), not via the file-pair subprocess model, so the adapter is an
+in-process `pregate(g, e)` call that folds in only the **net-new** hard flags
+its own checks lack — `IS-LOSS` (`<is>` spans; the EN `AB` regex omits `<is>`),
+`STRANDED-ANCHOR`, and the anchor-leak/mismatch backstops — while `LS/SAN/AB`
+loss stay owned by `audit_sense` at its own thresholds (no double-reporting).
+Both editions now run the same `pregate()` module; only the adapter differs.
+The parity GAP is closed (`stage2_pregate_en_wiring_h405` → SHARED in
 [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)).
 
 ## LANG_PARITY

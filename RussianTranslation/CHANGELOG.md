@@ -34,8 +34,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `stage2_mechanical` gate, so a hard-failed card joins the requeue. Mechanical criteria
   stripped from both judge prompts ([`2_qa_sudya_opus.txt`](pwg_ru_prompts/2_qa_sudya_opus.txt)
   + YandexGPT twin) — the judge now rules only on semantics (`anchors` kept as a backstop).
-  `window_selftest.py` green. The EN auditor (`audit_window_en.py`, in-process per-card) is a
-  tracked GAP (`stage2_pregate_en_wiring_h405`).
+  `window_selftest.py` green.
+- **EN auditor wired too (09-07-2026).** [`src/pilot/audit_window_en.py`](src/pilot/audit_window_en.py)
+  audits in-process per-sense, so `audit_sense(german, english)` now calls `pregate(g, e)` and
+  folds in only the net-new hard flags its own checks lack — `IS-LOSS` (the EN `AB` regex omits
+  `<is>`), `STRANDED-ANCHOR`, and the anchor-leak/mismatch backstops — while `LS/SAN/AB` stay
+  owned by `audit_sense` (no double-reporting); these were added to the `HARD` tuple so `--strict`
+  fails on them. Parity GAP closed: `stage2_pregate_en_wiring_h405` → SHARED. Both editions now
+  run the same `pregate()` module; only the adapter differs (RU: subprocess `--wf` over file
+  pairs; EN: in-process per-sense).
 
 ### H404 — cross-reference count/resolve generalized to every gate source (H397 generalization)
 - **Part A (RU family).** Measured `kna`/`fri`/`smirnov`/`kow` against koch_xref's

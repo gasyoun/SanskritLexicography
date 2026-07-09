@@ -17,6 +17,13 @@ Gates (per non-null card -> record -> sense, comparing `german` vs `english`):
     MISSING-EN english empty while german had gloss prose to translate [coverage]
     DUP        two senses in one record share identical english       [sense-duplicate]
 
+  shared mechanical pre-gate (H405, stage2_pregate.py — the same gate wired into the
+  RU audit_window.py; here it supplies only the invariants this auditor's own checks
+  above don't, to avoid double-reporting):
+    IS-LOSS         <is>..</is> italic-Sanskrit spans dropped (the AB regex omits <is>)
+    STRANDED-ANCHOR a {Tn} placeholder left unrestored in the final text
+    ANCHOR-LEAK/-MISMATCH  masked-pair anchor damage (defensive; restored EN rarely hits)
+
   markup-loss (pwg_ru/DharmaMitra crosswalk, FU1_PLAN.md; SOFT, never blocks --strict):
     MARKUP-LOSS {%..%} gloss-wrapper / <div> pairs dropped while the prose survives —
                 the dominant EN residual per FABLE_JUDGE_S7 (~47% of rows); tracked here so
@@ -31,7 +38,7 @@ Gates (per non-null card -> record -> sense, comparing `german` vs `english`):
                (soft cross-check against Monier-Williams, the gold MG chose)
 
 Report-only by default (exit 0). `--strict` exits non-zero if any HARD gate
-(LS/SAN/AB/MISSING-EN/DUP) fires, if any card came back null (missing EN), or if the
+(LS/SAN/AB/IS/STRANDED-ANCHOR/MISSING-EN/DUP) fires, if any card came back null (missing EN), or if the
 sense-dupe subgate crashed (a crash is NOT a clean pass); the soft semantic flags never
 fail the gate. Failure reasons are printed and written to `--report`.
 
@@ -58,7 +65,18 @@ DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
+if SRC not in sys.path:
+    sys.path.insert(0, SRC)
 from foreign_literal_guards import FRENCH_CONTEXT_WORDS, AMBIGUOUS_DE_FR_WORDS
+import stage2_pregate   # H405: the shared mechanical pre-gate (RU + EN)
+
+# Flag TYPES the pre-gate contributes to the EN path that this auditor's own
+# per-sense checks above do NOT already produce. LS/SAN/AB/LEX/LANG loss stay owned
+# by audit_sense (same thresholds), so pulling only these avoids double-reporting:
+#   IS-LOSS         <is>…</is> italic-Sanskrit spans dropped (EN's AB regex omits <is>)
+#   STRANDED-ANCHOR a {Tn} placeholder left unrestored in the final text
+#   ANCHOR-LEAK/-MISMATCH  masked-pair anchor damage (defensive; restored EN rarely hits)
+_PREGATE_NEW = {'IS-LOSS', 'STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH'}
 
 LS = re.compile(r'<ls\b')
 SAN = re.compile(r'\{#.*?#\}', re.S)
@@ -162,6 +180,13 @@ def audit_sense(german, english):
             de_hits.add(tok.lower().strip('.,;:()'))
     if de_hits:
         soft.append('DE-RESIDUE(%s)' % ','.join(sorted(de_hits))[:40])
+
+    # H405: fold in the mechanical invariants stage2_pregate.py owns that this
+    # auditor doesn't — <is> preservation and stranded/leaked {Tn} anchors. Only the
+    # NET-NEW flag types (see _PREGATE_NEW) are taken; LS/SAN/AB loss stay owned above.
+    for fl in stage2_pregate.pregate(g, e)['flags']:
+        if fl.split('(')[0] in _PREGATE_NEW:
+            hard.append(fl)
     return hard, soft
 
 
@@ -255,7 +280,8 @@ def run_sense_dupes(mod, path):
     return {'returncode': rc, 'summary': line.strip()}
 
 
-HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'SENSE-DUPE', 'DUP')
+HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS', 'STRANDED-ANCHOR',
+        'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP')
 
 
 def is_hard(flag):
@@ -267,7 +293,7 @@ def main():
     ap.add_argument('wf_output', nargs='+',
                     help='one or more wf_output.en.<root>.json files (globs allowed)')
     ap.add_argument('--strict', action='store_true',
-                    help='exit non-zero on any HARD gate (LS/SAN/AB/MISSING-EN/DUP), '
+                    help='exit non-zero on any HARD gate (LS/SAN/AB/IS/STRANDED-ANCHOR/MISSING-EN/DUP), '
                          'any null card, or a crashed sense-dupe subgate')
     ap.add_argument('--mw-tm', default=DEFAULT_MW_TM,
                     help='MW translation-memory JSON for the soft cross-check (default: src/mw_en_tm.json)')
