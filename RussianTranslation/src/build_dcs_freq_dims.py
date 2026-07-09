@@ -133,14 +133,21 @@ def build_pos(sqlite_path):
 def text_registers(sqlite_path):
     """text_id -> set(register codes), resolved with build_dcs_renou's genre+name logic
     (genre route from dcs_texts_clean.json when the title matches; name-substring route
-    always). Returns (id->registers, coverage stats)."""
+    always). Returns (id->registers, coverage stats, unmatched).
+
+    unmatched is the list of (text_id, name) pairs whose title had NO clean-catalog
+    match at all (exact or normalized) — these are indistinguishable downstream from a
+    genuinely register-less text (medical/śāstra prose, nighaṇṭu) unless logged here.
+    Logging only (CODE_REVIEW_2026-07-04.md silent-lemma-loss item); not a join fix."""
     import build_dcs_renou as b
     exact, norm = b.load_clean()
     con = sqlite3.connect(sqlite_path)
     cur = con.cursor()
-    id2regs, resolved = {}, 0
+    id2regs, resolved, unmatched = {}, 0, []
     for tid, name in cur.execute('select text_id, name from text'):
         rec = exact.get(name) or norm.get(b._norm(name))
+        if rec is None:
+            unmatched.append((tid, name))
         genre = rec.get('genre') if rec else None
         date = rec.get('date') if rec else None
         regs = set(b.registers_for_text(genre, date, name.lower(), b._CONF_RANK['high']))
@@ -148,15 +155,24 @@ def text_registers(sqlite_path):
         id2regs[tid] = regs
         resolved += 1 if regs else 0
     con.close()
-    return id2regs, resolved
+    return id2regs, resolved, unmatched
 
 
 def build_genre(sqlite_path):
     """norm_lemma -> {register -> TOKEN count}. Tokens are counted per register of the
     text they occur in (a text in N registers contributes to each — union semantics, as
     in the Renou register layer). Texts with no Renou register (medical/śāstra prose,
-    nighaṇṭu, …) contribute to nothing — that ~24% of tokens is genuinely register-less."""
-    id2regs, _resolved = text_registers(sqlite_path)
+    nighaṇṭu, …) contribute to nothing — that ~24% of tokens is genuinely register-less.
+
+    Logs unmatched text_ids (no clean-catalog match at all) to stderr — see
+    text_registers docstring."""
+    id2regs, _resolved, unmatched = text_registers(sqlite_path)
+    if unmatched:
+        print('build_genre: %d/%d texts had NO clean-catalog title match (unmatched, '
+              'not genuinely register-less) — top 10 by text_id:' % (len(unmatched), len(id2regs)),
+              file=sys.stderr)
+        for tid, name in unmatched[:10]:
+            print('  text_id=%s  name=%r' % (tid, name), file=sys.stderr)
     con = sqlite3.connect(sqlite_path)
     cur = con.cursor()
     genre = collections.defaultdict(collections.Counter)

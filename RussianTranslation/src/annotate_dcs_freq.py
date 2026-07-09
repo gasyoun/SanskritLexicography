@@ -94,6 +94,17 @@ def dims_block(iast, by_lemma):
     return out
 
 
+def dcs_registers_for(db):
+    """Lane 2 (frequency-weighted, corpus-attested): the sorted register-code vector
+    from a dims_block's genre counts, e.g. ['epic', 'kavya']. [] when unmatched or
+    register-less. Distinct from and NEVER merged with the citation-derived `genre`
+    field (annotate_genres.py, lane 1: 'PWG cites this sense from a kāvya work') —
+    the two answer different questions (see W4, PIPELINE_CAPABILITY_AUDIT_2026-07-08.md)."""
+    if not db:
+        return []
+    return sorted((db.get('genre') or {}).get('counts', {}))
+
+
 def selftest():
     by = {'anuvad': {'count': 5, 'band': 2, 'hapax': False, 'core80': False},
           'vad': {'count': 3918, 'band': 5, 'hapax': False, 'core80': True},
@@ -114,6 +125,10 @@ def selftest():
     # absent
     b = freq_block('zzz+qqq', by)
     assert b['matched'] == 'none' and b['band'] == 0 and b['attested'] is False
+    # dcs_registers: sorted register-code vector from a dims_block, [] when absent
+    assert dcs_registers_for({'genre': {'counts': {'kavya': 12, 'epic': 3}}}) == ['epic', 'kavya']
+    assert dcs_registers_for({}) == []
+    assert dcs_registers_for(None) == []
     print('annotate_dcs_freq selftest OK')
 
 
@@ -153,6 +168,7 @@ def main():
                 r['dcs_freq']['era'] = db.get('era')
                 pos_n += 1 if db.get('pos') else 0
                 genre_n += 1 if db.get('genre') else 0
+            r['dcs_registers'] = dcs_registers_for(db)   # lane 2, sibling of annotate_genres' `genre`
 
     n = len(rows)
     print('=== DCS FREQUENCY ANNOTATION ===')

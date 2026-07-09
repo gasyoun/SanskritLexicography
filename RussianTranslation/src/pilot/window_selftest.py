@@ -3396,6 +3396,16 @@ def test_annotate_evidence_relation_semantics():
     annotate_evidence.selftest()
 
 
+def test_annotate_genres_sense_join():
+    """H339 (W4): per-sense citation genre join (annotate_genres.py). Pins its own
+    pure-function selftest — coarse-bucket rollup keyed off the curated genre label's
+    leading word (Kāvya/Veda/Epic/Śāstra/Purāṇa/Kośa), an unmapped-only citation set
+    stays [] (unknown, never conflated with 'only genre X'), and multi-genre senses
+    keep every cited bucket."""
+    import annotate_genres
+    annotate_genres.selftest()
+
+
 def test_audit_window_tag_routing():
     """H336/H-2: --window-tag routes window_status/report/requeue/judge-sample to
     src/pilot/output/<tag>/ instead of the flat singletons, so two accounts auditing
@@ -3564,6 +3574,7 @@ def main():
         test_corpus_gate_evidence_and_db_markers,
         test_promote_claim_contention,
         test_annotate_evidence_relation_semantics,
+        test_annotate_genres_sense_join,
         test_audit_window_tag_routing,
         test_denylist_torn_line_warns,
     ]

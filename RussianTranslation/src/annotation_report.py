@@ -27,6 +27,20 @@ they populate.
   python annotation_report.py --silent-for <key1>
         The lemma-level evidence_summary for one lemma: which authorities are silent /
         contradict / corroborate it.
+
+  python annotation_report.py --in kavya [--list]
+        Senses whose citations include >=1 curated genre in the given coarse bucket
+        (veda/kavya/epic/sastra/purana/kosha) — "which senses are attested in kāvya?"
+        (H339 W4). --list prints the matching key1/sense_tag rows.
+
+  python annotation_report.py --only veda [--list]
+        The stricter converse: senses whose recognised citation genre(s) are
+        EXCLUSIVELY the given bucket. A sense with no recognised citation genre at
+        all (genre == []) is UNKNOWN, never "only" — see --genre-report.
+
+  python annotation_report.py --genre-report
+        Coverage table: rows per coarse bucket (in / only), plus the count with no
+        recognised citation genre at all.
 """
 import argparse, json, os, sys
 from collections import Counter
@@ -39,6 +53,7 @@ STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 
 RU_SOURCES = ['koch', 'kna', 'fri', 'smirnov', 'kow', 'grin12', 'grin3']
 NONRU_LANES = ['apte_hi', 'vedic_rituals_hi', 'kosha_syn', 'meulenbeld', 'corpus']
+GENRE_COARSE = ('veda', 'kavya', 'epic', 'sastra', 'purana', 'kosha')   # annotate_genres.py
 
 
 def load_rows(store):
@@ -89,6 +104,7 @@ def print_row(row):
     _line('renou', row.get('renou'))
     _line('renou_oldest', row.get('renou_oldest'))
     _line('genre', row.get('genre'))                    # H339 (folds in when populated)
+    _line('genre_coarse', row.get('genre_coarse'))       # H339
     if row.get('dcs_freq'):
         f = row['dcs_freq']
         _line('dcs_freq', 'band %s · genre %s · era %s' % (f.get('band'), f.get('genre'), f.get('era')))
@@ -183,6 +199,59 @@ def cmd_silent_for(rows, key1):
           % (summ.get('evidence_status'), summ.get('corpus_status')))
 
 
+# --- genre queries (H339 W4: annotate_genres.py's sense['genre']/sense['genre_coarse']) ---
+
+def attested_in(rows, coarse):
+    """Senses with >=1 citation mapped to `coarse` (may ALSO carry other genres)."""
+    return [r for r in rows if coarse in (r.get('genre_coarse') or [])]
+
+
+def attested_only_in(rows, coarse):
+    """Senses with a known genre set that is EXCLUSIVELY `coarse` — never conflates an
+    unmapped/uncited sense (genre == [], truly unknown) with 'only veda'."""
+    return [r for r in rows if (r.get('genre_coarse') or []) == [coarse]]
+
+
+def unknown_genre(rows):
+    """Senses with no recognised citation genre at all (uncited, or every cited siglum
+    unmapped) — distinct from every attested_only_in() result."""
+    return [r for r in rows if not (r.get('genre') or [])]
+
+
+def _fmt_row(r):
+    return '%s / %s' % (r.get('key1', '?'), r.get('sense_tag', '?'))
+
+
+def cmd_genre_in(rows, coarse, list_rows):
+    matches = attested_in(rows, coarse)
+    print('senses attested in %s: %d' % (coarse, len(matches)))
+    if list_rows:
+        for r in matches:
+            print('  ' + _fmt_row(r))
+
+
+def cmd_genre_only(rows, coarse, list_rows):
+    matches = attested_only_in(rows, coarse)
+    print('senses attested ONLY in %s: %d' % (coarse, len(matches)))
+    if list_rows:
+        for r in matches:
+            print('  ' + _fmt_row(r))
+
+
+def cmd_genre_report(rows):
+    n = len(rows)
+    annotated = sum(1 for r in rows if 'genre' in r)
+    if annotated == 0:
+        print('0/%d rows carry a genre field — run annotate_genres.py on the store first.' % n)
+        return
+    print('store rows: %d  (genre-annotated: %d, %.1f%%)' % (n, annotated, 100.0 * annotated / n))
+    print('unknown (no recognised citation genre): %d' % len(unknown_genre(rows)))
+    print()
+    print('%-8s %10s %10s' % ('coarse', 'in', 'only'))
+    for c in GENRE_COARSE:
+        print('%-8s %10d %10d' % (c, len(attested_in(rows, c)), len(attested_only_in(rows, c))))
+
+
 def main():
     ap = argparse.ArgumentParser(description='Query the annotated pwg_ru store.')
     ap.add_argument('selector', nargs='?', help='<key1>[~~subcard][#sense_tag]')
@@ -191,6 +260,10 @@ def main():
     ap.add_argument('--relation', choices=['provides', 'supports'])
     ap.add_argument('--source-summary', action='store_true')
     ap.add_argument('--silent-for', help='key1 whose lemma evidence_summary to print')
+    ap.add_argument('--in', dest='in_coarse', choices=GENRE_COARSE)
+    ap.add_argument('--only', dest='only_coarse', choices=GENRE_COARSE)
+    ap.add_argument('--genre-report', action='store_true')
+    ap.add_argument('--list', action='store_true')
     args = ap.parse_args()
 
     rows = load_rows(args.store)
@@ -200,6 +273,12 @@ def main():
         return cmd_silent_for(rows, args.silent_for)
     if args.by_source:
         return cmd_by_source(rows, args.by_source, args.relation)
+    if args.genre_report:
+        return cmd_genre_report(rows)
+    if args.in_coarse:
+        return cmd_genre_in(rows, args.in_coarse, args.list)
+    if args.only_coarse:
+        return cmd_genre_only(rows, args.only_coarse, args.list)
     if args.selector:
         return cmd_lookup(rows, args.selector)
     ap.print_help()
