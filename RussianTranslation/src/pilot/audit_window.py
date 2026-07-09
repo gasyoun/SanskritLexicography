@@ -381,6 +381,7 @@ def main():
 
     commands = [
         ('translation', [os.path.join(SRC, 'audit_translation.py'), '--wf', wf], parse_translation),
+        ('stage2_mechanical', [os.path.join(SRC, 'stage2_pregate.py'), '--wf', wf], parse_flagged_json),
         ('coverage', [os.path.join(SRC, 'audit_coverage.py'), wf], parse_coverage),
         ('sense_dupes', [os.path.join(SRC, 'audit_sense_dupes.py'), wf], parse_dupes),
     ]
@@ -406,7 +407,7 @@ def main():
                     res['requeue'] = parsed
             gates[name] = res
 
-    for name in ['nws', 'translation', 'coverage', 'sense_dupes', 'prompt_semantic']:
+    for name in ['nws', 'translation', 'stage2_mechanical', 'coverage', 'sense_dupes', 'prompt_semantic']:
         res = gates[name]
         print('\n=== %s ===' % name)
         print(res['stdout'].rstrip())
