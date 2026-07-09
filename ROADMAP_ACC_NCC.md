@@ -1,6 +1,6 @@
 # ROADMAP_ACC_NCC — Catalogue-of-Works asset (Aufrecht × New Catalogus Catalogorum)
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 09-07-2026_
 
 Goal: build a **catalogue-of-works data asset** by joining **ACC** (Aufrecht's
 *Catalogus Catalogorum*, Cologne) as the spine with **NCC** (*New Catalogus
@@ -101,6 +101,14 @@ consumption pattern.
 - `/review-sheet` HTML voting sheet over Tier C/D candidates → `decisions.json` → `/decisions-apply`.
 - Full fuzzy manufactures false joins by design; C/D never auto-merge.
 - **Deliverable:** `works_crosswalk.tsv` (accepted/rejected/deferred, with provenance).
+- **Status (09-07-2026, H264, Sonnet 5 `claude-sonnet-5`): tooling shipped, BLOCKED on MG's
+  vote.** Sample-size ruling (asked, not silently picked): full 49,019-row sheet, no
+  sampling. [`HeadwordLists/works_catalogue/build_p2_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/acc-ncc-p2-adjudication/HeadwordLists/works_catalogue/build_p2_sheet.py)
+  generates the virtualized-scroll sheet;
+  [`apply_p2_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/acc-ncc-p2-adjudication/HeadwordLists/works_catalogue/apply_p2_decisions.py)
+  is the smoke-tested `decisions.json` consumer. [Draft PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264),
+  branch `feat/acc-ncc-p2-adjudication`. GTD: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+  § Waiting on Me.
 
 ### P3 — kosha consumption (product repo)
 - kosha adds a `works` table (canonical headword deva/IAST/SLP1; ACC body + sigla + `pc_scan`; NCC body + mss-witnesses; `match_tier`; `ncc_coverage`; per-source `license`), loading this repo's `works_crosswalk.tsv` — mirrors the union-spine load in [kosha `build_db.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_db.py).
