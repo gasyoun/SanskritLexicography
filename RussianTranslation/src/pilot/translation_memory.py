@@ -112,6 +112,10 @@ SUGGEST_PROFILES = {
 _LOAD_TM_CACHE = {}
 
 
+class DenylistError(RuntimeError):
+    """A TM denylist cannot be trusted."""
+
+
 def tm_path(lang, out=None):
     return out or os.path.join(HERE, 'translation_memory.%s.json' % lang)
 
@@ -228,15 +232,12 @@ def load_denylist(path=None):
             try:
                 row = json.loads(line)
             except json.JSONDecodeError as e:
-                # H336/H-3: a torn/undecodable denylist line used to be silently DROPPED
-                # here, which silently re-enables TM reuse of gate-rejected content — the
-                # single scariest failure mode in the collision matrix. WARN loudly instead
-                # so a torn append (concurrent writer, crash mid-write) surfaces immediately
-                # rather than as a quiet correctness hole.
-                print('warning: torn/undecodable denylist line %d in %s (%s) — a gate-'
-                      'rejected address may be silently missing from the deny set: %r'
-                      % (lineno, p, e, line[:200]), file=sys.stderr)
-                continue
+                # H336/H-3 / P0.1: a torn denylist cannot be trusted. Continuing here can
+                # silently re-enable TM reuse of gate-rejected cards/fragments, so make the
+                # caller fix the append/merge before any TM lookup proceeds.
+                raise DenylistError(
+                    'torn/undecodable denylist line %d in %s (%s): %r' %
+                    (lineno, p, e, line[:200]))
             kind = row.get('kind')
             value = row.get('address') or row.get('fsha') or row.get('value')
             if kind in ('card', 'address') and value:
