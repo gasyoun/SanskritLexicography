@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
+- New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
+  volume-column marker on every entry header in
+  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+  (123,366 entries, 100% coverage) and emits three views:
+  [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
+  *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —
+  2-column page mode, 4,329 physical pages (`page = ⌈col/2⌉`, as printed);
+  [`pwg_entry_locations.tsv`](src/pwg_entry_locations.tsv) — reverse lookup,
+  entry → start column, page, all spanned columns (incl. cross-volume Nachträge).
+- `--annotate` adds `volume`/`column`/`page`/`pc_all`/`page_all` to the
+  gitignored `pwg_ru_translated.jsonl` cards (11,239/11,261 matched;
+  22 non-source-headword forms unmatched), idempotently.
+- Served from kosha's DB as the `/api/v1/page` + `/api/v1/neighbors` endpoints
+  (kosha H434, [PR #33](https://github.com/gasyoun/kosha/pull/33)); this is the
+  raw-source view of the same co-location concept.
+  ([PR #286](https://github.com/gasyoun/SanskritLexicography/pull/286)).
+
 ### H409 — `has_meaning()` short-token stemmer gap fixed, RATIO-scoring regression caught and reverted
 - New [`corpus_gate.ru_has_content()`](src/corpus_gate.py): relaxes the
   `>=3-char-after-stemming` floor for tokens already `<=3` letters before
