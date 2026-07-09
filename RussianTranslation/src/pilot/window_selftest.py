@@ -2326,6 +2326,43 @@ def test_build_emits_nominal_keymap():
         fail('batched (non-nominal) build must leave meta.nominal_keymap null')
 
 
+def test_generation_schema_carries_no_post_generation_field():
+    """H428: the per-call StructuredOutput schema (build()'s batch_schema) must never carry
+    a field that a deterministic annotator adds AFTER generation (government, labels, renou,
+    renou_oldest, evidence, evidence_summary, stats, renou_oldest_sense) -- those fields
+    pushed the full reachable schema to 10,940 chars, over the Workflow tool's safety-
+    classifier size threshold, blocking every agent() call pre-generation at 0 tokens
+    (Uprava/FINDINGS.md §30). Pins the fix so a future annotator field added to
+    schemas/pwg_ru_final_card.schema.json cannot silently regress this without also being
+    added to _POST_GENERATION_*_FIELDS."""
+    import gen_opt_harness2 as gh
+    schema = gh.load_json(os.path.join(gh.REPO, 'schemas', 'pwg_ru_final_card.schema.json'))
+    schema['$defs']['sense']['required'] = ['tag', 'german', 'russian']
+    defs = gh._strip_post_generation_fields(schema['$defs'])
+    reachable = gh._reachable_defs(defs, 'card')
+    banned = (gh._POST_GENERATION_CARD_FIELDS + gh._POST_GENERATION_RECORD_FIELDS
+              + gh._POST_GENERATION_SENSE_FIELDS)
+    for def_name in ('card', 'record', 'sense'):
+        props = reachable.get(def_name, {}).get('properties', {})
+        for f in banned:
+            if f in props:
+                fail('generation schema $defs[%r] still carries post-generation field %r' % (def_name, f))
+    # evidence_item/evidence_summary/stats become unreachable once sense.evidence and
+    # card.evidence_summary/stats are stripped -- pin that they actually drop out, since a
+    # dangling $defs entry is exactly the H130 orphan-defs dead weight this fix removes.
+    for orphan in ('evidence_item', 'evidence_summary', 'stats'):
+        if orphan in reachable:
+            fail('%r should be unreachable from card once post-generation fields are stripped' % orphan)
+    size = len(json.dumps({
+        'type': 'object', 'additionalProperties': False, 'required': ['cards'],
+        'properties': {'cards': {'type': 'array', 'minItems': 1, 'items': {'$ref': '#/$defs/card'}}},
+        '$defs': reachable,
+    }))
+    if size > 5000:
+        fail('slimmed generation schema grew to %d chars (was 1,698 at H428) -- '
+             're-measure against the Workflow tool safety-classifier threshold' % size)
+
+
 def test_no_pwg_supplement_chain_cards_render():
     """H214: PWG-missing lemmas with real PW/SCH/PWKVN/NWS records are runnable.
 
@@ -3698,6 +3735,7 @@ def main():
         test_coordinator_defect_requeue_uses_no_tm_and_out,
         test_promote_nominal_key1,
         test_build_emits_nominal_keymap,
+        test_generation_schema_carries_no_post_generation_field,
         test_no_pwg_supplement_chain_cards_render,
         test_nominals_worklist_exposes_no_pwg_lane,
         test_no_pwg_source_profile_promotes,
