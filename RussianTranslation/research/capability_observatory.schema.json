@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PWG->RU capability observatory registry",
+  "type": "object",
+  "required": ["meta", "packages", "cards"],
+  "properties": {
+    "meta": {"type": "object"},
+    "packages": {"type": "object"},
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "package", "title", "deps", "status", "confidence"],
+        "properties": {
+          "id": {"type": "integer", "minimum": 1},
+          "package": {"type": "string", "enum": ["eval", "sense", "tm", "acq", "graph"]},
+          "title": {"type": "string"},
+          "claim": {"type": "string"},
+          "deps": {"type": "array", "items": {"type": "string",
+            "enum": ["local-only", "needs gold sample", "needs external text", "rights-gated", "cross-repo"]}},
+          "status": {"type": "string",
+            "enum": ["not-started", "prototype", "validated", "blocked", "shipped"]},
+          "confidence": {"type": "string", "enum": ["low", "medium", "high"]},
+          "cheap": {"type": "boolean"},
+          "coverage_note": {"type": "string"},
+          "blocker": {"type": "string"},
+          "owner": {"type": "string"},
+          "code_inputs": {"type": "array", "items": {"type": "string"}},
+          "data_inputs": {"type": "array", "items": {"type": "string"}},
+          "acl_anchor": {"type": "string"},
+          "related": {"type": "array", "items": {"type": "integer"}}
+        }
+      }
+    }
+  }
+}
