@@ -93,3 +93,6 @@ literature/*
 # H099/HERITAGE_INRIA_ROADMAP.md Phase 0 @DECIDE): raw data stays local-only,
 # only derived measurements/crosswalks are committed.
 HeadwordLists/heritage_mirror/
+
+# H264 review sheets (personal working artifacts, not repo deliverables)
+review/
