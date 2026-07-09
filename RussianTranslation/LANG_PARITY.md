@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -355,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -374,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -471,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "700665baa30b550c59ca9f1dfc00adc2569bb3d5b91fe1eb0bddb922e7742a18",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -502,7 +502,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
       "src/pilot/audit_window.py": "4623e2f271a6d68cf2c76c0e144c3110bdd01a0526d55eb1804175cdf47059ef",
       "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -521,7 +521,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "901ffd21e7db7e0ea6d0433c342166dab7caa5e1abe43ad04745a7a7f99b198a",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -539,7 +539,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "2257f04cdca96b2aea51cd6d097358c43109977e1847d39ff59476cc5cf50863",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -558,7 +558,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -598,7 +598,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "dca26a006a32ba4a9eeb98453fa059585ccb8504ada8423f5e22d3fe1b25310f",
       "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
       "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -623,7 +623,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -652,7 +652,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "901ffd21e7db7e0ea6d0433c342166dab7caa5e1abe43ad04745a7a7f99b198a",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -670,9 +670,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H337 (08-07-2026). The evidence lanes are inherently Russian: corpus_gate joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович), the Гринцер specialist glossaries, and the SamudraManthanam RU-aligned corpus; the relation classifier tokenises Russian glosses. The EN pilot has no Sanskrit-English authority set wired here, so evidence retrofit is inherently RU-only — the same divergence already recorded for corpus_gate_evidence_markers_fl7_h321. annotation_report.py is a lang-neutral query CLI but reads the RU store; it would generalise if an EN correctness gate is ever built. Pinned by test_annotate_evidence_relation_semantics (annotate_evidence.py's own pure-function --selftest, no gate-source file IO so it runs in CI).",
     "tracking": "",
     "verified_sha256": {
-      "src/annotate_evidence.py": "4f3e3e4adb7b251de0e03ac407bab5c809f9d55275b84569baa8021f5bc6b491",
+      "src/annotate_evidence.py": "4d5991b82647e0f19382f170da253c302e99928161e2696f01f809dd5e688a99",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -691,7 +691,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "5e257d130318be4e903bb55444d70c88544af8725c115253235e5daed716ec51",
-      "src/pilot/window_selftest.py": "795a14d8af3593856493f72440957cdef498d01ea481e2371e3d7b0df61ff29a"
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   },
   {
@@ -709,6 +709,26 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/annotate_genres.py": "5eea7d5269c716d5c96ceb81be5c22358fe45542b066f66963a8fdd1562d89e3"
+    }
+  },
+  {
+    "id": "koch_xref_resolution_h397",
+    "mechanism": "koch_xref.py resolves koch's bare `см. X` cross-reference glosses (a redirect with no meaning of its own, e.g. `-aSrika` -> \"см. अश्रि अश्रिक -aśrika\") to the target headword's real gloss via a Devanagari self-header crosswalk harvested from koch.jsonl itself, chain-safe up to 2 hops with a visited-set cycle guard; annotate_evidence.py's gather() calls resolve_koch_lane() on the koch lane before best_relation/source_meaning_tokens run, so a resolvable redirect counts as provides/supports evidence instead of H337's `silent` classification",
+    "files": [
+      "src/koch_xref.py",
+      "src/annotate_evidence.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H397 (09-07-2026, H337 follow-up). koch is a Sanskrit->RUSSIAN dictionary only (Кочергина); its `см.` (Russian \"see\") cross-reference marker and the Devanagari self-header crosswalk this module builds are RU-lexicographic conventions with no EN counterpart in this pipeline — same divergence basis already recorded for evidence_retrofit_annotate_h337 and corpus_gate_evidence_markers_fl7_h321. Pinned by test_koch_xref_resolution (koch_xref.py's own pure-function --selftest, no koch.jsonl file IO so it runs in CI).",
+    "tracking": "",
+    "verified_sha256": {
+      "src/koch_xref.py": "2a75adb79fc5296ae737bcc195fbb4f411b6d7c446b7cc69d571d52988b7a9ae",
+      "src/annotate_evidence.py": "4d5991b82647e0f19382f170da253c302e99928161e2696f01f809dd5e688a99",
+      "src/pilot/window_selftest.py": "f4e0ae4822a3fa5de54b059e17b134ea7f140268fd19ddfb936bff7b3e50b285"
     }
   }
 ]
