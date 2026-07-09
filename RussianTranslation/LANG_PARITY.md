@@ -280,7 +280,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
       "src/pilot/prompt_rule_audit.py": "d2c578eb62a1919c5c22c0726940df952dee7ead0791bf61d1a1bc7c83f26fdf",
       "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
-      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
+      "src/pilot/audit_window_en.py": "9b5dbe7c70da82330b21a5b58c2c84cee9bf4bc1130662a3a7a1ff8400a2730a"
     }
   },
   {
@@ -373,7 +373,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H169 (2026-07-04 review, 'broken validators'): the advertised HARD DUP gate was never emitted -- the only within-record duplicate signal was soft SAME-GLOSS, gated on >=3 content words, so a short duplicate ('to go'/'to go') produced zero flags and --strict passed. Classified GAP-being-closed rather than INTENTIONAL-DIVERGENCE: RU's within-record duplicate protection is the cross-part audit_sense_dupes.py gate (already SHARED, see gate_fixes_20260703_ru_only/PR #135) plus the soft, all-senses-only identical_russian_glosses risk in prompt_rule_audit.py (MEDIUM, not high-confidence) -- neither is a pairwise HARD gate. EN now closes that with a real HARD pairwise DUP check; RU getting an equivalent pairwise HARD gate (rather than its current all-or-nothing soft signal) is left as a natural follow-up, not blocking this fix. Pinned by test_en_gate_dup_has_teeth in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2",
+      "src/pilot/audit_window_en.py": "9b5dbe7c70da82330b21a5b58c2c84cee9bf4bc1130662a3a7a1ff8400a2730a",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
   },
@@ -743,7 +743,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring are shipped here; the EN audit_window_en.py wiring is a separate GAP (see stage2_pregate_en_wiring_h405) because that edition audits in-process per-card (audit_card), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
+    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring shipped first; the EN audit_window_en.py wiring followed same-day via an in-process per-sense adapter (see stage2_pregate_en_wiring_h405, now SHARED) — that edition audits in-process (audit_sense), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses for RU. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
     "tracking": "",
     "verified_sha256": {
       "src/stage2_pregate.py": "f801740067f981f66e480330a586e12d9e98f85f7f564e40520d7ff43af139e2",
@@ -752,18 +752,21 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "stage2_pregate_en_wiring_h405",
-    "mechanism": "The Stage-2 mechanical pre-gate (stage2_pregate.py) is wired into the RU window auditor (src/pilot/audit_window.py) but NOT yet into the EN auditor (src/pilot/audit_window_en.py). The RU auditor runs deterministic gates as subprocess `--wf` shell-outs over IN/<stem>.raw.txt vs OUT/<stem>.merged.md file pairs; the EN auditor instead audits each wf card in-process (audit_card(res, tm, do_mw)) with no such file pairs, so the pre-gate cannot be dropped in by adding a command tuple — it needs an in-process adapter that hands audit_card's (source, translation) to pregate()",
+    "mechanism": "RESOLVED — the Stage-2 mechanical pre-gate is now wired into the EN auditor (src/pilot/audit_window_en.py) too. Because that edition audits in-process per-sense (audit_sense(german, english)) rather than via the RU auditor's .raw.txt/.merged.md subprocess file pairs, the wiring is an in-process adapter: audit_sense calls stage2_pregate.pregate(g, e) and folds in ONLY the NET-NEW hard flag types the EN auditor's own per-sense checks don't already produce — IS-LOSS (<is> spans; the EN AB regex omits <is>), STRANDED-ANCHOR (leftover {Tn}), ANCHOR-LEAK/-MISMATCH — while LS/SAN/AB loss stay owned by audit_sense at its own thresholds to avoid double-reporting. Those net-new types were added to the HARD tuple so --strict fails on them",
     "files": [
-      "src/pilot/audit_window_en.py"
+      "src/pilot/audit_window_en.py",
+      "src/stage2_pregate.py"
     ],
     "languages": [
+      "ru",
       "en"
     ],
-    "verdict": "GAP",
-    "note": "H405 (09-07-2026). The gate LOGIC is SHARED (see stage2_mechanical_pregate_h405); only the EN wiring is missing, and it is a real architectural adapter (in-process per-card), not a mechanical port. Deferred so the RU wiring ships without waiting on the EN refactor.",
-    "tracking": "H405 (Uprava/handoffs/H405-Opus_RussianTranslation_stage2-mechanical-pregate_09.07.26.md) — EN wiring follow-up",
+    "verdict": "SHARED",
+    "note": "H405 (09-07-2026, resolved same day). Both editions now run the same pregate() module for the mechanical invariants; the difference is only the adapter (RU: subprocess --wf over file pairs; EN: in-process per-sense), not the logic. The partial-adoption (net-new flag types only) is deliberate — the EN auditor already reimplemented LS/SAN/AB/MISSING per-sense with its own thresholds, so pregate contributes exactly the invariants it lacked (<is>, stranded/leaked anchors) rather than duplicating. Verified by a functional test (clean / is-dropped→IS-LOSS / stranded→STRANDED-ANCHOR / ls-dropped→single LS-LOSS not double-flagged) + window_selftest.py green.",
+    "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window_en.py": "850e51292b6885dc7786d92164b880118581fe67d26b0da3bacc93793c09d4d2"
+      "src/pilot/audit_window_en.py": "9b5dbe7c70da82330b21a5b58c2c84cee9bf4bc1130662a3a7a1ff8400a2730a",
+      "src/stage2_pregate.py": "f801740067f981f66e480330a586e12d9e98f85f7f564e40520d7ff43af139e2"
     }
   },
   {
