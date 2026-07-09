@@ -1,6 +1,6 @@
 # Grammar layer — the 3rd axis (Whitney) for pwg_ru
 
-_Created: 07-07-2026 · Last updated: 09-07-2026_
+_Created: 07-07-2026 · Last updated: 09-07-2026 (H422)_
 
 pwg_ru already carries two evidence axes per headword: **lexicon** (corpus_lexicon Sa→Ru
 candidates) and **corpus** (parallel verse + Renou register). This adds the **grammar** axis,
@@ -187,5 +187,7 @@ Additive shape (`additionalProperties:false`-compatible, sits on `card`):
 }
 ```
 
-Status: **design only** (2026-07-09) — `annotate_stats.py` + the schema `stats` block are not
-yet built.
+Status: **built** (H422, 09-07-2026) — [`src/annotate_stats.py`](src/annotate_stats.py) +
+the schema `stats` block ([`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json))
+are in place; validated against all 145 lemmas on the live store. `n_irregularities` stays 0
+until the grammar block is joined onto card rows (not yet a stored field).
