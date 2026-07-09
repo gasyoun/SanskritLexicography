@@ -356,6 +356,56 @@ def subcard_md(sub):
     return '\n'.join(lines) + '\n'
 
 
+def load_colocation(model_roots):
+    """PWG print co-location: for each article root, the other headwords that sat
+    on the SAME printed column (Böhtlingk-Roth Spalte) — read from the committed
+    src/pwg_columns.tsv (built by pwg_page_index.py, H429). Returns
+    {root_slp1: [{col, page, scan, words:[{iast, root, linked, self}]}]}.
+
+    Böhtlingk-Roth prints two columns per page; <pc> encodes the column, so the
+    column is the finest co-location unit and the servepdf scan is addressed by
+    it. `linked` = the neighbour is itself a translated article (clickable);
+    `self` = the article's own entry (kept, marked, in printed order.)"""
+    cols_path = os.path.join(SRC, 'pwg_columns.tsv')
+    if not os.path.exists(cols_path):
+        sys.stderr.write('  [coloc] %s absent — run pwg_page_index.py first; '
+                         'skipping co-location\n' % cols_path)
+        return {}
+    col_words = {}   # 'V-CCCC' -> [(Lid, headword_slp1), ...] in printed order
+    hw_cols = {}     # headword_slp1 -> [columns it starts in], first-seen order
+    with open(cols_path, encoding='utf-8') as f:
+        next(f, None)  # header row
+        for line in f:
+            parts = line.rstrip('\n').split('\t')
+            if len(parts) < 6:
+                continue
+            column, _vol, _page, _n, lids, heads = parts[:6]
+            pairs = list(zip(lids.split(','), [h.strip() for h in heads.split(', ')]))
+            col_words[column] = pairs
+            for _lid, h in pairs:
+                hw_cols.setdefault(h, [])
+                if column not in hw_cols[h]:
+                    hw_cols[h].append(column)
+    coloc = {}
+    for root in model_roots:
+        cols = hw_cols.get(root)
+        if not cols:
+            continue
+        blocks = []
+        for column in cols:
+            vol, colnum = column.split('-')
+            words = []
+            for _lid, hw in col_words.get(column, []):
+                words.append({'iast': slp1_iast(hw), 'root': hw,
+                              'linked': hw in model_roots and hw != root,
+                              'self': hw == root})
+            scan = ('https://sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/'
+                    'web/webtc/servepdf.php?page=%d' % int(colnum))
+            blocks.append({'col': column, 'vol': int(vol), 'scan': scan, 'words': words})
+        coloc[root] = blocks
+    return coloc
+
+
 def root_md(r):
     lines = ['# %s' % r['iast'], '',
              '_PWG article — %d sub-card(s), %d sense(s) · RU %d/%d · EN %d/%d_' % (
@@ -416,6 +466,18 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 #artbody.lang-de .de{font-size:16px}
 #artbody:not(.lang-de) .de{color:var(--mut)}   /* dim the source when a translation is primary */
 #artbody:not(.lang-de) .de i.sa{color:var(--sa)}
+.coloc{margin:26px 0 8px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.coloc h4{margin:0 0 4px;font-size:15px}
+.coloc .hint{color:var(--mut);font-size:12px;margin-bottom:10px}
+.colcol{margin:10px 0}
+.colcol .clab{font-size:12px;color:var(--mut);font-family:ui-monospace,monospace}
+.colcol a.scan{color:var(--accent);font-size:12px;text-decoration:none;border-bottom:1px dotted var(--accent);margin-left:6px}
+.colcol a.scan:hover{border-bottom-color:transparent}
+.cwords{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
+.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--mut);white-space:nowrap}
+.cw.lnk{color:var(--accent);border-color:var(--accent);cursor:pointer}
+.cw.lnk:hover{background:var(--accent);color:#fff}
+.cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
@@ -452,7 +514,24 @@ function renderBody(r){
     +(b?'<div class="badges">'+b+'</div>':'')+'</div>';
   });
  });
- artbody.innerHTML=h||'<p class="na">нет данных</p>'; applyLang();
+ artbody.innerHTML=(h||'<p class="na">нет данных</p>')+colocHtml(r.root); applyLang();
+}
+// Print co-location: the words that physically shared this article's PWG column(s).
+function colocHtml(root){
+ var blocks=(window.COLOC||{})[root]||[]; if(!blocks.length)return '';
+ var h='<div class="coloc"><h4>🖇 На той же печатной колонке PWG</h4>'
+  +'<div class="hint">Слова, стоявшие рядом на той же колонке (Spalte) печатного словаря Бётлингка–Рота. Выделенные — уже переведены (нажмите, чтобы открыть).</div>';
+ blocks.forEach(function(bk){
+  h+='<div class="colcol"><span class="clab">колонка '+esc(bk.col)+' (том '+esc(bk.vol)+')</span>'
+   +'<a class="scan" href="'+esc(bk.scan)+'" target="_blank" rel="noopener">🖼 скан</a><div class="cwords">';
+  bk.words.forEach(function(w){
+   if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
+   else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
+   else{h+='<span class="cw">'+esc(w.iast)+'</span>';}
+  });
+  h+='</div></div>';
+ });
+ return h+'</div>';
 }
 function renderRoot(r){
  cur=r.root;
@@ -477,6 +556,8 @@ function renderRoot(r){
 }
 // delegated tab handler (survives per-root re-render)
 document.getElementById('main').addEventListener('click',function(e){
+ var cw=e.target.closest?e.target.closest('.cw.lnk'):null;
+ if(cw){var rt=cw.getAttribute('data-root');for(var i=0;i<A.roots.length;i++){if(A.roots[i].root===rt){cur=rt;renderList(q.value.toLowerCase());renderRoot(A.roots[i]);window.scrollTo(0,0);return;}}return;}
  var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
 });
 q.oninput=function(){renderList(q.value.toLowerCase());};
@@ -486,6 +567,7 @@ renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
 
 
 def emit(model):
+    coloc = load_colocation({r['root'] for r in model})
     os.makedirs(os.path.join(OUT_DIR, 'md', 'subcards'), exist_ok=True)
     # per-root + per-subcard markdown
     for r in model:
@@ -525,6 +607,9 @@ def emit(model):
         with open(os.path.join(OUT_DIR, 'roots', '%s.js' % safe), 'w', encoding='utf-8', newline='\n') as f:
             f.write('window.ROOT=window.ROOT||{};window.ROOT[%s]=' % json.dumps(r['root'], ensure_ascii=False))
             json.dump(subs, f, ensure_ascii=False)
+            f.write(';\n')
+            f.write('window.COLOC=window.COLOC||{};window.COLOC[%s]=' % json.dumps(r['root'], ensure_ascii=False))
+            json.dump(coloc.get(r['root'], []), f, ensure_ascii=False)
             f.write(';\n')
     with open(os.path.join(OUT_DIR, 'articles.js'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('window.ARTICLES=')
