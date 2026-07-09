@@ -1,6 +1,6 @@
 # PWG→RU pipeline capability audit — 3-account concurrency · per-sense evidence provenance · case-government · per-sense genre (H335)
 
-_Created: 08-07-2026 · Last updated: 09-07-2026_
+_Created: 08-07-2026 · Last updated: 09-07-2026 (H397)_
 
 Audit-only pass answering MG's four capability questions of 08-07-2026
 ([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
@@ -243,6 +243,59 @@ reflects the current store content, not a defect. `silent` deliberately folds "a
 together with "present but no usable Russian meaning gloss" (Smirnov citation-lists,
 Kossovich bare transliteration); a source is marked `contradicts` only when it carries
 a real Russian gloss overlapping no sense — avoiding false-disagreement claims.
+
+### W2 extension — koch `см. X` cross-reference resolution — EXECUTED 09-07-2026 (H397)
+
+**Verdict: DELIVERED.** H337 measured koch (Кочергина) at the whole-dictionary level:
+**4,048 / 29,177 (13.9%)** entries carry no usable Russian meaning gloss, and
+**3,472 of those are bare `см. X` cross-references** (a redirect with no meaning of
+its own — `-aSrika` -> "см. अश्रि अश्रिक -aśrika" = "see aśri"), classified `silent`
+because the redirect target's real meaning lives under a *different* headword.
+[`src/koch_xref.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/koch_xref.py)
+resolves the pointer instead of reporting silence: ~94% of koch entries open with
+their own Devanagari headword immediately followed by `/iast/`
+(`रूपधारिन् /rūpa-dhārin/ ...`) — harvested across all of koch.jsonl, that
+self-describing prefix doubles as a Devanagari → SLP1 crosswalk with no external
+transliterator needed (reuses koch's own data). A `см. X` target's Devanagari token
+is looked up in that crosswalk and joined back into koch's own key1 index for the
+resolved gloss, chain-safe up to 2 hops with a visited-set cycle guard; unresolvable
+pointers are left untouched (still `silent` — never fabricated).
+
+**koch.jsonl-level resolution** (`python src/koch_xref.py --report`):
+
+| | count | % of bare xrefs |
+|---|--:|--:|
+| koch entries | 29,177 | — |
+| Devanagari head crosswalk (collisions: 4, first-wins) | 27,447 | — |
+| bare `см. X` xrefs | 3,472 | 100% |
+| **resolved** | **3,204** | **92.3%** |
+| unresolved (stay `silent`) | 268 | 7.7% |
+
+Target was ≥2,500/3,471 (H397 handoff stop condition) — met at 92.3%.
+
+`annotate_evidence.py`'s `gather()` calls `resolve_koch_lane()` on the koch lane
+before `best_relation`/`source_meaning_tokens` run (`--no-resolve-xref` reproduces
+H337 exactly). Store-level backfill re-run (145 lemmas currently translated — only
+some hold a koch xref, so the store-level lift is smaller than the dictionary-wide
+92.3%, but real):
+
+| source | provides (before→after) | supports (before→after) | contradicts (before→after) | silent (before→after) |
+|---|--:|--:|--:|--:|
+| koch | 143 → 155 (+12) | 560 → 578 (+18) | 14 → 17 (+3) | 79 → 74 (−5) |
+
+All other lanes (kna/fri/smirnov/kow/grin12/grin3/apte_hi/vedic_rituals_hi/kosha_syn/meulenbeld/corpus)
+unchanged — H397 touches only the koch lane. `rows with >=1 evidence` rose
+2,239 → 2,269 (+30, 19.9% → 20.1%). Resolved glosses carry a `«см.→» ` provenance
+prefix in `gloss_ref` so the annotation report shows they came from a redirect, not
+a direct koch gloss. Spot-checked 20 randomly-sampled resolved xrefs (`random.seed(42)`
+over the 3,204): all 20 targets matched the redirect's stated Devanagari headword with
+no fabricated meaning (e.g. `चञ्चू /cañcū/ см. चञ्चु` → `चञ्चु /cañcu/ f. клюв- нос`;
+`वेश्या /veśyā/ см. वेशवधू` → `वेशवधू /veśa-vadhū/ f. 1) любовница 2) куртизанка`).
+Annotated by Sonnet 5 (`claude-sonnet-5`). Pinned by
+`test_koch_xref_resolution` (`koch_xref.py`'s own pure-function `--selftest`, no
+koch.jsonl file IO so it runs in CI). LANG_PARITY: `koch_xref_resolution_h397`,
+INTENTIONAL-DIVERGENCE (koch is Sanskrit→Russian only, same basis as
+`evidence_retrofit_annotate_h337`).
 
 ---
 

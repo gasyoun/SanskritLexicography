@@ -3565,6 +3565,16 @@ def test_annotate_genres_sense_join():
     annotate_genres.selftest()
 
 
+def test_koch_xref_resolution():
+    """H397 (H337 follow-up): koch's bare `см. X` cross-reference resolver — the
+    Devanagari self-header crosswalk, one-hop resolution, chain-safe cycle guard, and
+    the resolve_koch_lane() wrapper annotate_evidence.gather() calls. Pins
+    koch_xref.py's own pure-function selftest (no koch.jsonl file IO, so it runs in CI
+    where the gitignored src/*.jsonl dictionaries are absent)."""
+    import koch_xref
+    koch_xref.selftest()
+
+
 def test_audit_window_tag_routing():
     """H336/H-2: --window-tag routes window_status/report/requeue/judge-sample to
     src/pilot/output/<tag>/ instead of the flat singletons, so two accounts auditing
@@ -3734,6 +3744,7 @@ def main():
         test_promote_claim_contention,
         test_annotate_evidence_relation_semantics,
         test_annotate_genres_sense_join,
+        test_koch_xref_resolution,
         test_audit_window_tag_routing,
         test_denylist_torn_line_warns,
     ]
