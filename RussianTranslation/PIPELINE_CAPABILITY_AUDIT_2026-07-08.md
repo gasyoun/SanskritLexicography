@@ -1,6 +1,6 @@
 # PWG→RU pipeline capability audit — 3-account concurrency · per-sense evidence provenance · case-government · per-sense genre (H335)
 
-_Created: 08-07-2026 · Last updated: 09-07-2026 (H404)_
+_Created: 08-07-2026 · Last updated: 09-07-2026 (H409)_
 
 Audit-only pass answering MG's four capability questions of 08-07-2026
 ([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
@@ -433,6 +433,80 @@ alphabetic word ≥3 chars after stripping tags/citations) — a coarser heurist
 than koch_xref's Cyrillic-token detector since MW/PWG/GRA/PWKVN mix multiple
 Latin-alphabet languages (English, German, Latin apparatus) with no single
 script to key off.
+
+### W2b correction — `has_meaning()` short-token stemmer gap fixed — EXECUTED 09-07-2026 (H409)
+
+H404's own typology of fri's unresolved cases surfaced one misclassified
+example: `adas pron. n. (cf. asau) ; оно` genuinely carries a Russian gloss
+(`оно` = "it") but was flagged as a bare cross-reference anyway.
+[`corpus_gate.ru_has_content()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py)
+(new) relaxes the `>=3-char-after-stemming` floor for tokens that are
+**already** `<=3` letters before stemming — case-stemming a 3-letter word
+like `оно` strips it to `он` (2 chars, discarded) even though the whole word
+is meaningful. `koch_xref.has_meaning()` (and `fri_xref.has_meaning` via the
+same import) now uses it.
+
+**Census across the RU family** (`python koch_xref.py --selftest` reproduces
+the detector; counts are gate-source-wide, entries whose `has_meaning()`
+verdict flips False→True):
+
+| source | total entries | reclassified (no-meaning → has-meaning) | example |
+|---|--:|--:|---|
+| koch | 29,177 | 27 | `दम्° /dam-/ дом` ("house") |
+| fri | 8,151 | 27 | `adas pron. n. (cf. asau) ; оно` ("it") |
+| kna | 3,271 | 9 | `किम् /kim/ /кim/ kim см. ka.` ("what") |
+| smirnov | 3,547 | 3 | `(II-2) IV, 26; XV, 9; ср. р. ухо.` ("ear") |
+| kow | 13,488 | 11 | `1. āha, см. brū.` |
+| **total** | 57,634 | **77** | — |
+
+koch's bare-`см.` xref count correspondingly drops from 3,472 to **3,471**
+(one entry now correctly shows its own content), resolved count rises
+3,204→**3,208**; fri's bare count drops 340→**337**, resolved stays 111 but
+the rate rises 32.6%→**32.9%** (smaller denominator). kna/smirnov/kow stay
+below the materiality bar regardless (unaffected — none of these 3 sources'
+newly-reclassified entries were bare-xref candidates in the first place).
+Store-level backfill (145-lemma live store, `annotate_evidence.py --dry-run`)
+is **unchanged** — `provides`/`supports`/`contradicts`/`silent` all match the
+pre-H409 baseline exactly for every source — because `has_meaning()` only
+feeds the boolean is-this-a-bare-xref check, not the sense/gloss similarity
+scoring described below.
+
+**A real regression was caught and reverted before shipping, not silently
+absorbed.** `has_meaning()`'s underlying token function is shared textually
+(same regex, same floor) with `annotate_evidence.ru_tokens_full()` /
+`corpus_gate.ru_tokens()`, which feed `best_relation()`'s and `heuristic()`'s
+token-containment RATIO (`|a∩b| / |a|`) — a different consumer with a
+different risk profile. Applying the SAME relaxed floor there measurably
+**regressed** classification: on the live 145-lemma store, 107 previously-
+correct `supports` verdicts were lost (mostly PWG verb-root entries whose
+Russian sense text contains a short function word like `что` inside a phrase
+like `что-либо` — "something" — which the relaxed floor now counts as a
+content token, inflating the ratio's denominator and diluting a match that
+used to clear `THRESHOLD`) against only 37 gained — a net loss, not an
+improvement. `ru_tokens()`/`ru_tokens_full()` were reverted to their
+pre-H409 stemming (unrelaxed floor); the relaxed floor lives ONLY in the new
+`corpus_gate.ru_has_content()`, used by `koch_xref.has_meaning()` alone.
+Two different consumers of what looked like one shared primitive turned out
+to need two different floors — documented in `ru_has_content()`'s own
+docstring so a future session doesn't unify them again by well-meaning
+refactor.
+
+**A second, unrelated data-quality artifact was caught in the same census
+and fixed narrowly.** Three fri and six smirnov entries carry a literal
+Excel formula-error string (`#ИМЯ?`, the Russian-locale rendering of
+`#NAME?`) as their entire gloss — a build-pipeline data corruption, not
+Russian prose. Because `ИМЯ` ("name") is itself a real 3-letter word, the
+relaxed floor was about to misclassify these 9 corrupted entries as
+meaningful. Fixed with a narrow `corpus_gate._SPREADSHEET_ERR_RE` guard
+(matches `#ИМЯ?`/`#ЗНАЧ?`/`#ССЫЛКА?`/etc., the standard Russian-locale Excel
+error set) stripped before tokenizing in all three `has_meaning`-family
+functions — verified `#ИМЯ?` alone now correctly returns no-meaning while
+`ākhyā f.; имя` (a real "name" gloss) still returns has-meaning.
+
+`window_selftest.py` and `lang_parity_check.py` green;
+`koch_xref_resolution_h397`/`fri_xref_resolution_h404` INTENTIONAL-DIVERGENCE
+verdicts re-affirmed unchanged (the fix only corrects detection accuracy,
+doesn't touch the RU-only divergence rationale).
 
 ---
 

@@ -44,22 +44,26 @@ XREF_MARK = '«см.→» '   # «см.→» — provenance prefix on a resolved
 
 _TAG_RE = re.compile(r'<[^>]+>')
 _PLACEHOLDER_RE = re.compile(r'\{T\d+\}')
-_RU_END = cg._RU_END                              # reuse the shared stemming suffix regex
 _CM_RE = re.compile(r'см\.\s*')
 _DEVA_RE = re.compile(r'[ऀ-ॿ]+')
 _HEAD_RE = re.compile(r'^([^\s/]+)\s*/([^/]+)/')  # leading "<devanagari> /<iast>/" self-header
 
 
 def has_meaning(text):
-    """True if `text` carries >=1 usable Russian content token (cf.
-    annotate_evidence.source_meaning_tokens — duplicated narrowly here to avoid a
-    circular import; same regex, same >=3-char-after-stemming rule)."""
+    """True if `text` carries >=1 usable Russian content token — a boolean
+    PRESENCE check (is this gloss a bare cross-reference or not), distinct
+    from annotate_evidence.ru_tokens_full's token SET (which feeds a
+    containment ratio and deliberately does NOT use the relaxed floor below;
+    see corpus_gate.ru_has_content's docstring). Uses corpus_gate.ru_has_content
+    (H409) so short closed-class words (`она`, `оно`, `это`, ...) that were
+    previously stemmed below the floor correctly count as meaning."""
     if not text:
         return False
     t = _PLACEHOLDER_RE.sub(' ', text)
     t = _TAG_RE.sub(' ', t)
+    t = cg._SPREADSHEET_ERR_RE.sub(' ', t)
     for tok in re.findall(r'[а-яёА-ЯЁ]{2,}', t.lower()):
-        if len(_RU_END.sub('', tok)) >= 3:
+        if cg.ru_has_content(tok):
             return True
     return False
 
@@ -208,6 +212,17 @@ def selftest():
     assert has_meaning('огонь, бог огня')
     assert not has_meaning('см. अश्रि अश्रिक -aśrika')
     assert not has_meaning('(A. pr. /ghaṭṭate/) см. घट्ट् II घट्ट् I -ghaṭṭ')
+    # H409: short closed-class words (<=3 letters raw) must count as meaning —
+    # the pre-H409 stemmer floor stripped `оно` -> `он` (2 chars) and discarded it.
+    assert has_meaning('adas pron. n. (cf. asau) ; оно')
+    assert has_meaning('это дом')
+    assert has_meaning('это')                # 3-letter raw word, kept whole (H409)
+    assert not has_meaning('во')             # a bare 2-letter fragment, still rejected (floor unchanged)
+    # H409: a leaked Excel formula-error string must NOT count as meaning, even
+    # though it embeds the real word `имя` ("name") — a build-pipeline artifact
+    # found in fri/smirnov, not Russian prose.
+    assert not has_meaning('#ИМЯ?')
+    assert has_meaning('ākhyā f.; имя')      # the same word, as a genuine gloss, still counts
     assert is_bare_xref('см. रूपधर')
     assert is_bare_xref('रूपधारिन् /rūpa-dhārin/ см. रूपधर'), 'см. not at string start is still bare'
     assert not is_bare_xref('तापनीय /tāpanīya/ 1) золотой 2) см. उपानिषद्'), 'has a real sense besides the xref'
