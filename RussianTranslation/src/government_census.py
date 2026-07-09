@@ -54,6 +54,42 @@ LEX_RE = re.compile(r"<lex>([^<]+)</lex>")
 SENSE_SPLIT_RE = re.compile(r"\d+〉")
 
 
+def extract_government(text):
+    """Deterministic case-government (Rektion) extractor for one sense's German text
+    (H335 W3(b) / H338). Reuses this module's census regexes so there is exactly one
+    place that defines what counts as a government marker.
+
+    Returns a list of hit dicts, one per marker found (a sense's ``de`` text may carry
+    more than one, e.g. two clauses each with their own government note):
+      {cases: [...], variation: bool, connector: "und"/"oder"/"", kind: str, span: str}
+
+    ``<ls>...</ls>`` citation spans are stripped first (a case abbreviation could in
+    principle appear inside a citation siglum). Parenthesized non-government cases
+    (``nom.``/``voc.``, usually citation-form notes) are NOT government and are
+    excluded from the result — this is a floor, not a ceiling: a multi-case ``mit``
+    continuation after the first case is not chased (matches the census undercount).
+    """
+    text_nols = LS_RE.sub("", text or "")
+    hits = []
+    for m in PAREN_RE.finditer(text_nols):
+        cases = CASE_RE.findall(m.group(1))
+        if all(c in NONGOV_CASES for c in cases):
+            continue
+        connectors = sorted(set(CONNECTOR_RE.findall(m.group(1))))
+        kind = "paren-single" if len(cases) == 1 else "paren-variation"
+        hits.append({
+            "cases": cases, "variation": len(cases) > 1,
+            "connector": "/".join(connectors), "kind": kind, "span": m.group(0),
+        })
+    for m in MIT_RE.finditer(text_nols):
+        cases = CASE_RE.findall(m.group(1))
+        hits.append({
+            "cases": cases, "variation": False, "connector": "",
+            "kind": "mit-phrase", "span": m.group(0),
+        })
+    return hits
+
+
 def classify_pos(head_line, body_text):
     """Coarse POS for the census: verb root vs head-line <lex> class vs unknown.
 
@@ -268,6 +304,34 @@ def selftest():
         print("government_census selftest: OK")
     finally:
         os.unlink(path)
+    selftest_extract_government()
+
+
+def selftest_extract_government():
+    """H338: extract_government() must reproduce the same shapes on the snih card."""
+    snih_div2 = ("— 2〉 {%sich heften auf%} (<ab>loc.</ab>): {#y#} <ls>KATHĀS. 11,11</ls>. "
+                 "{%Zuneigung empfinden zu%} (<ab>loc.</ab> und <ab>gen.</ab>): {#z#} "
+                 "<ls>ŚĀK. 102,6</ls>.")
+    hits = extract_government(snih_div2)
+    assert len(hits) == 2, hits
+    assert hits[0] == {"cases": ["loc"], "variation": False, "connector": "",
+                        "kind": "paren-single", "span": "(<ab>loc.</ab>)"}, hits[0]
+    assert hits[1]["cases"] == ["loc", "gen"], hits[1]
+    assert hits[1]["variation"] is True, hits[1]
+    assert hits[1]["connector"] == "und", hits[1]
+    assert hits[1]["kind"] == "paren-variation", hits[1]
+
+    snih_div_p = ("— {#sam#} {%zusammen kommen%} mit dem <ab>instr.</ab>: {#w#} "
+                  "<ls>MBH. 1,1</ls>.")
+    mit_hits = extract_government(snih_div_p)
+    assert mit_hits == [{"cases": ["instr"], "variation": False, "connector": "",
+                          "kind": "mit-phrase", "span": "mit dem <ab>instr.</ab>"}], mit_hits
+
+    # (<ab>voc.</ab>) is a citation-form note, not government -> excluded.
+    assert extract_government("{%Gott%} (<ab>pl.</ab>) <ls>ṚV. 1,1,1</ls>. (<ab>voc.</ab>) auch so.") == []
+    # <ls> spans are stripped first -> a stray case token inside a siglum never matches.
+    assert extract_government("<ls>loc. 1,1</ls> plain text") == []
+    print("extract_government selftest: OK")
 
 
 def main():
