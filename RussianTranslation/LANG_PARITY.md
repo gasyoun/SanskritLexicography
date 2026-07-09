@@ -730,6 +730,23 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/annotate_evidence.py": "4d5991b82647e0f19382f170da253c302e99928161e2696f01f809dd5e688a99",
       "src/pilot/window_selftest.py": "311c1b043e30e7f0e1b21690df7faa7befd5feafc32d933f0609f3b4315a2348"
     }
+  },
+  {
+    "id": "stage2_mechanical_pregate_h405",
+    "mechanism": "stage2_pregate.py — deterministic mechanical pre-gate for the Stage-2 QA judge. Given a (German source, translation) card pair it hard-fails the format invariants the judge prompt already declares must not affect the verdict: untranslatable-span preservation (LS/SAN/AB/IS/LEX/LANG, category regexes kept in sync with pwg_mask.PAIRED by --selftest), {Tn} anchor multiset equality on masked pairs, stranded/never-restored {Tn} on final cards, and unmask-leak; NO-RUSSIAN is emitted as a soft warning (never blocks) because a {%…%}-with-no-Cyrillic card may be a form-citation apparatus stub. A failed card is requeued, not judged, so the judge rubric can drop the mechanical criteria and rule only on the semantic part",
+    "files": [
+      "src/stage2_pregate.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
+    "tracking": "",
+    "verified_sha256": {
+      "src/stage2_pregate.py": "18dca6de028fefe8beea610b98910242ea044266d6c9d31e538b01e5e3d08799"
+    }
   }
 ]
 ```

@@ -555,6 +555,41 @@ Do **not** build a deterministic Stage-4 verdict; if Stage 4 is built at all,
 build it LLM-first with `corpus_gate` supplying evidence, and only auto-accept
 the ~6% high-overlap tail.
 
+### BUILT — Stage-2 mechanical pre-gate (H405, 09-07-2026)
+
+[`src/stage2_pregate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/stage2_pregate.py)
+implements the first recommendation. Given a `(de, ru)` card pair it hard-fails
+the format invariants the judge prompt already declares must not affect the
+verdict — untranslatable-span preservation (LS/SAN/AB/IS/LEX/LANG, category
+regexes kept in sync with `pwg_mask.PAIRED` by `--selftest`), `{Tn}` anchor
+multiset equality, stranded/never-restored `{Tn}`, unmask-leak — and emits
+`NO-RUSSIAN` as a **soft warning** (not a block), because a `{%…%}`-with-no-Cyrillic
+card is as often a form-citation apparatus stub (`Mit {%paripra%}, <ls>…</ls>`)
+as a real untranslated defect. Failed cards are requeued, never judged; the
+judge rubric can then drop the mechanical criteria. Language-agnostic → **SHARED**
+in [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+(`stage2_mechanical_pregate_h405`); pinned by an 11-case `--selftest`.
+
+Measured over the live store (`src/pwg_ru_translated.jsonl`, 11,261 rows,
+09-07-2026, Opus 4.8 `claude-opus-4-8`):
+
+| gate outcome | cards | share | destination |
+|---|---|---|---|
+| CLEAN | 11,230 | 99.72% | → judge |
+| WARN (`NO-RUSSIAN`) | 20 | 0.18% | → judge, flagged |
+| **FAIL (hard)** | **11** | **0.10%** | requeue — never judged |
+
+Hard-failure breakdown: `AB-LOSS` 6, `SAN-LOSS` 4, `STRANDED-ANCHOR` 2, `LS-LOSS`
+1 (a card may trip several), concentrated on giant verb-root entries (`banD`,
+`dA`, `mA`, `paS`, `pat`) plus 2 real mask-restore bugs (a `{T196}`/`{T235}` left
+stranded in already-promoted output). The headline value is **not** cutting judge
+volume — the merged pipeline is 99.7% clean, so nearly everything still reaches
+the judge — it is (a) a **cheaper, correct-by-construction rubric** (the judge no
+longer re-checks or mis-checks format) and (b) a **deterministic defect catch**
+that surfaced 13 genuine format defects in supposedly-promoted data on its first
+run. Next: wire the gate as a blocking pre-step in `audit_window.py` and strip
+the mechanical criteria from `2_qa_sudya_opus.txt`.
+
 ## LANG_PARITY
 
 `government_census.py` reads the raw PWG source below the `--lang` branch and

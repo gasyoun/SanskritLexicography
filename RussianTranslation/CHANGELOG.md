@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H405 — Stage-2 mechanical pre-gate (`stage2_pregate.py`), PIPELINE_CAPABILITY_AUDIT W5
+- New [`src/stage2_pregate.py`](src/stage2_pregate.py): a deterministic mechanical
+  pre-gate for the Stage-2 QA judge, implementing the W5 recommendation of
+  [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md).
+  `pregate(de, ru)` hard-fails the format invariants the judge prompt already declares
+  must not affect the verdict — untranslatable-span preservation (LS/SAN/AB/IS/LEX/LANG,
+  category regexes kept in sync with `pwg_mask.PAIRED` by the selftest), `{Tn}` anchor
+  multiset equality, stranded/never-restored `{Tn}`, unmask-leak — and emits `NO-RUSSIAN`
+  as a **soft warning** (not a block), because a `{%…%}`-with-no-Cyrillic card is as often
+  a form-citation apparatus stub as a real untranslated defect. Failed cards are requeued,
+  never judged; the judge rubric can then drop the mechanical criteria.
+- Measured over the live store (11,261 rows): 99.72% CLEAN, 0.18% WARN, 0.10% (11) hard
+  FAIL — surfaced 13 real format defects (giant verb-root apparatus loss + 2
+  stranded-anchor mask-restore bugs) in already-promoted data. Result table persisted in
+  the W5 "BUILT" subsection of the capability audit.
+- `python src/stage2_pregate.py --selftest` → PASS (11 cases + a `pwg_mask.PAIRED`
+  sync assertion). LANG_PARITY: `stage2_mechanical_pregate_h405`, SHARED (structure-only,
+  language-agnostic).
+- Remaining (H405 second half, no LLM spend): wire `pregate()` as a blocking pre-step in
+  `src/pilot/audit_window.py`; strip the mechanical criteria from
+  `pwg_ru_prompts/2_qa_sudya_opus.txt`.
+
 ### H397 — koch `см. X` cross-reference resolution for the evidence lane (H337 follow-up)
 - New [`src/koch_xref.py`](src/koch_xref.py): resolves koch's bare `см. X` redirects
   (3,472 of koch's 4,048 no-meaning entries — a headword pointing to a different
