@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H397 — koch `см. X` cross-reference resolution for the evidence lane (H337 follow-up)
+- New [`src/koch_xref.py`](src/koch_xref.py): resolves koch's bare `см. X` redirects
+  (3,472 of koch's 4,048 no-meaning entries — a headword pointing to a different
+  headword's real gloss) instead of reporting them as `silent`. Builds a Devanagari →
+  SLP1 crosswalk from koch's own self-describing `<devanagari> /iast/` headword prefix
+  (no external transliterator needed), resolves one hop (chain-safe up to 2, visited-set
+  cycle guard), and leaves genuinely unresolvable pointers untouched. 3,204/3,472
+  (92.3%) resolve dictionary-wide. `annotate_evidence.py`'s `gather()` now resolves the
+  koch lane before relation classification (`--no-resolve-xref` reproduces H337
+  exactly); resolved glosses carry a `«см.→» ` provenance prefix. Store backfill:
+  koch `provides` 143→155, `supports` 560→578, `silent` 79→74 (145-lemma current
+  store — the dictionary-wide 92.3% lift materializes further as more lemmas are
+  translated). See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2-extension--koch-см-x-cross-reference-resolution--executed-09-07-2026-h397).
+- Spot-checked 20 randomly-sampled resolved xrefs: all matched the redirect's stated
+  target headword, zero fabricated meanings.
+- LANG_PARITY: `koch_xref_resolution_h397`, INTENTIONAL-DIVERGENCE (koch is
+  Sanskrit→Russian only).
+
 ### H337 — per-sense evidence provenance retrofit + annotation_report query CLI (H335 W2)
 - New [`src/annotate_evidence.py`](src/annotate_evidence.py): deterministic, LLM-free
   backfill of corpus_gate's 7 evidence lanes onto the store as queryable per-sense
