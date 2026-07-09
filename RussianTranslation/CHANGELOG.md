@@ -32,6 +32,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `src/pilot/audit_window.py`; strip the mechanical criteria from
   `pwg_ru_prompts/2_qa_sudya_opus.txt`.
 
+### H404 — cross-reference count/resolve generalized to every gate source (H397 generalization)
+- **Part A (RU family).** Measured `kna`/`fri`/`smirnov`/`kow` against koch_xref's
+  `is_bare_xref` primitive: kna 0.2%, smirnov 1.0% (corrects H397's unpersisted
+  ~1.4% claim), kow 0.0% — all below the ~2% materiality bar, not touched. **fri
+  clears the bar at 4.2%** (340/8,151) via its OWN convention — Latin apparatus
+  (`v.`/`cf.`/`q.v.`), not koch's `см.`. New [`src/fri_xref.py`](src/fri_xref.py)
+  resolves 111/340 (32.6%) via `build_src.iast_to_slp1` (existing prior art) +
+  `corpus_gate.form_key`, wired into `annotate_evidence.py` alongside koch. A
+  mojibake-corruption bug (`v. II apaгa;` — stray Cyrillic г) that silently
+  mis-resolved to the wrong headword was caught by the 20-sample spot-check and
+  fixed (truncated-token matches now refuse instead of guessing).
+- **Part B (English/German CDSL: MW, PWG, GRA, PWKVN, AP90).** New
+  [`src/part_b_xref_discovery.py`](src/part_b_xref_discovery.py) (read-only,
+  count-only over `csl-orig`): discovered each dictionary's actual redirect
+  marker before counting (MW `q.v.`, PWG `s.`/`vgl.`, GRA `s. d. v.`, PWKVN
+  `Vgl.`; AP90 has none — its `[cf. ...]` is etymology, not a same-dict
+  redirect). **Headline: PWG itself carries 5,303/123,366 (4.3%) bare
+  redirects** — more material proportionally than koch's own count. Resolution
+  is out of scope here (csl-orig changes require the correction-workflow, not
+  an ad-hoc resolver); flagged as a fork for a human ruling on a future
+  handoff. See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2b](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2b--cross-reference-countresolve-generalized-to-every-gate-source--executed-09-07-2026-h404-h397-generalization).
+- LANG_PARITY: `fri_xref_resolution_h404`, INTENTIONAL-DIVERGENCE.
+
 ### H397 — koch `см. X` cross-reference resolution for the evidence lane (H337 follow-up)
 - New [`src/koch_xref.py`](src/koch_xref.py): resolves koch's bare `см. X` redirects
   (3,472 of koch's 4,048 no-meaning entries — a headword pointing to a different

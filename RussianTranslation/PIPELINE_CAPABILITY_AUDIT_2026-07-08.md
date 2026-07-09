@@ -1,6 +1,6 @@
 # PWG→RU pipeline capability audit — 3-account concurrency · per-sense evidence provenance · case-government · per-sense genre (H335)
 
-_Created: 08-07-2026 · Last updated: 09-07-2026 (H397)_
+_Created: 08-07-2026 · Last updated: 09-07-2026 (H404)_
 
 Audit-only pass answering MG's four capability questions of 08-07-2026
 ([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
@@ -296,6 +296,143 @@ Annotated by Sonnet 5 (`claude-sonnet-5`). Pinned by
 koch.jsonl file IO so it runs in CI). LANG_PARITY: `koch_xref_resolution_h397`,
 INTENTIONAL-DIVERGENCE (koch is Sanskrit→Russian only, same basis as
 `evidence_retrofit_annotate_h337`).
+
+### W2b — cross-reference count/resolve generalized to every gate source — EXECUTED 09-07-2026 (H404, H397 generalization)
+
+MG asked whether H397's koch `см. X` count/resolve generalizes to every gate
+source, not just koch. **Part A (RU family)** measured `kna`/`fri`/`smirnov`/`kow`
+against the same `is_bare_xref` primitive koch_xref.py already defines
+(`source_meaning_tokens()` empty + a redirect marker present):
+
+| dictionary | records | bare-xref count | % of dict | resolved | resolution rate |
+|---|--:|--:|--:|--:|--:|
+| koch (H397, for scale) | 29,177 | 3,472 | 11.9% | 3,204 | 92.3% |
+| kna | 3,271 | 7 | 0.2% | — not attempted (below materiality bar) | — |
+| fri | 8,151 | 340 | **4.2%** | **111** | **32.6%** |
+| smirnov | 3,547 | 34 | 1.0% | — not attempted (below materiality bar) | — |
+| kow | 13,488 | 2 | 0.0% | — not attempted (below materiality bar) | — |
+
+This **corrects H397's own unpersisted claim** ("smirnov ~1.4%, kow ~0.1%, not
+worth touching") — the real measured figures are smirnov 1.0% and kow 0.0%,
+both still below the ~2% materiality bar so the "not worth touching" verdict
+holds, just on more accurate numbers. **kna and fri were never previously
+measured** — kna is negligible (0.2%), but **fri clears the bar at 4.2%**, so it
+was built: `fri` does NOT use koch's `см.` convention (0.0% via that marker) —
+it redirects with Latin apparatus (`v.`/`cf.`/`q.v.`, e.g. `akārya v.
+akartavya;`). New
+[`src/fri_xref.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/fri_xref.py)
+resolves via `build_src.iast_to_slp1` (existing prior art, reused — fri's
+targets are already roman, no Devanagari crosswalk needed unlike koch's) joined
+through `corpus_gate.form_key` against fri's own `slp1`-keyed index. **111/340
+(32.6%) resolve** — lower than koch's 92.3%.
+
+**Typology of the 229 unresolved cases** (MG asked for this breakdown rather
+than the earlier one-line "phonological variants / pronouns" gloss — it was
+under-specified). Every unresolved gloss was classified by pattern, all 229
+accounted for, no leftover bucket beyond a genuinely mixed `other`:
+
+| category | n | % of unresolved | example |
+|---|--:|--:|---|
+| target headword genuinely absent from fri.jsonl (no entry exists for it at all) | 90 | 39.3% | `I a- pron., cf. a-tas, a-tra &c.;` (no `a-` headword); `antastha v. antaḥstha;` |
+| multi-variant phonological spelling list (anusvāra-before-consonant ↔ nasal-class-consonant spelling pairs, several stems per gloss, `extract_target` only grabs the first) | 42 | 18.3% | `aṃk-, aṃg-, aṃj-, aṃḍ-, aṃt-, … v. aṅk-, aṅg-, añj-, aṇḍ-, ant-, …;` |
+| root cross-form (`√X v. Y` — one root spelling redirecting to another, or a root pointed at by its 3rd-sg. present) | 44 | 19.2% | `√kuṃc v. Kuc;`; `√kṛ karoti v. I kar;` |
+| inflected/derived grammatical form of the headword (absolutive, superlative, comparative, participle, infinitive < base) | 19 | 8.3% | `ajya absol. < añj, q. v.;`; `aṇiṣṭha superl., aṇīyaṃs compar. < aṇu, q. v.;` |
+| causative/desiderative/intensive derivative | 10 | 4.4% | `arpay v. ar, caus. arpayati;`; `kaniṣkan(d)- intens. < skand, q. v.;` |
+| compound decomposition (`X = Y + Z, q.v.`) | 5 | 2.2% | `atho = atha + u, q. v.;`; `macchīla = mad + śīla, q. v.;` |
+| target headword exists in fri but its own gloss(es) are *also* bare (chained silence, would need a 2nd hop — fri's resolver is intentionally 1-hop, unlike koch's 2-hop cap, because fri's redirect chains are shallow and rare) | 3 | 1.3% | `ucchati v. II vas;`; `na + u v. no;`; `sīdati v. I sad;` |
+| target token not extractable by the regex at all (irregular punctuation/markup around the marker) | 16 | 7.0% | entries where `v.`/`cf.`/`q.v.` is followed by something other than a clean alphabetic token |
+
+The largest bucket (39.3%, "target genuinely absent") is a real fri.jsonl
+gap, not a resolver defect — those headwords were simply never given their
+own entry in Frisch's dictionary (common for closed-class pronoun/particle
+paradigms and rare stem-variant spellings, which historical dictionaries
+often fold into the entry that redirects to them instead of duplicating).
+The next two buckets (root cross-forms 19.2%, phonological spelling
+lists 18.3%) are addressable in principle (a root-form joiner, a
+list-of-targets extractor trying every token not just the first) but were
+judged not worth the added resolver complexity for ~86 combined entries
+(1.1% of fri's 8,151-record total) — flagged here rather than silently
+scoped out. **One caveat surfaced by this typology check itself:** one
+`multi_variant_phonological_list` example — `adas pron. n. (cf. asau) ;
+оно` — actually carries a real (if minimal) Russian gloss `оно` ("it"),
+but `has_meaning()`'s stemmer (`_RU_END`, shared with `koch_xref.py` and
+`annotate_evidence.source_meaning_tokens()`) strips 3-letter pronoun forms
+down below its 3-char-after-stemming floor and misses it — a pre-existing
+narrow-token detection gap in shared code, not introduced by this handoff,
+and out of scope to fix here since it would also touch koch's already-shipped
+H397 numbers; flagged for a human call on whether it's worth a follow-up.
+
+**A real bug caught by the spot-check, fixed before shipping:** the first
+resolution pass silently mis-resolved `aparī f., v. II apaгa;` (a known
+mojibake row — a stray Cyrillic г corrupts the Latin target mid-word, per
+`build_src.py`'s own documented "key hygiene" corruption list) to the wrong,
+unrelated headword `apa` ("away, past") instead of the intended `apara`. Fixed
+by rejecting any target match immediately followed by an unexpected letter
+(any script) instead of silently truncating — a truncated-token match is now
+refused, not resolved wrong. Re-verified: 20/20 spot-checked resolutions
+(`random.seed(42)`) match their stated target headword after the fix, zero
+fabrications.
+
+Wired into `annotate_evidence.py`'s `gather()` alongside koch
+(`--no-resolve-xref` disables both, reproducing H337 exactly). Store backfill
+delta over fri is **0** in the current 145-lemma store — verified directly
+(only 4 fri bare-xrefs exist among those 145 lemmas' entries, and none of the
+4 happen to resolve — pronoun/root-cross-form targets, the known-hard case).
+This is expected, not a wiring failure: the 32.6%/111-entry lift materializes
+as more lemmas are translated, exactly like koch's own small 145-lemma sample
+understating its 92.3% dictionary-wide rate. Pinned by `test_fri_xref_resolution`
+(`fri_xref.py`'s own pure-function `--selftest`). LANG_PARITY: sibling entry
+`fri_xref_resolution_h404`, INTENTIONAL-DIVERGENCE (same basis as koch's).
+
+**Part B (English/German CDSL dictionaries — MW, PWG, GRA, PWKVN, AP90)** is
+genuinely new territory: no prior-art script counts these dictionaries'
+redirect conventions anywhere in the org. Discovery-first per the handoff — a
+~20-30 entry sample per dictionary was read before writing any regex. New
+[`src/part_b_xref_discovery.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/part_b_xref_discovery.py)
+(read-only over the `csl-orig` sibling repo, count-only — no resolution code,
+see the fork note below) discovered and counted:
+
+| dictionary | records | marker | bare-redirect count | % of dict |
+|---|--:|---|--:|--:|
+| MW | 286,525 | `<ab>q.v.</ab>` | 6 | 0.0% |
+| **PWG** | 123,366 | `<ab n="siehe">s.</ab>` / `<ab>vgl.</ab>` | **5,303** | **4.3%** |
+| GRA | 12,785 | `<ab n="siehe">s.</ab> <ab n="das">d.</ab> <ab n="vorige">v.</ab>` ("s. d. v.") | 0 | 0.0% |
+| PWKVN | 24,976 | `<ab>Vgl.</ab>` | 302 | 1.2% |
+| AP90 | 34,882 | **none discovered** — its `[cf. …]` brackets are Indo-European etymology (cognate comparison), not a same-dictionary redirect. Genuine null result, not forced into the marker shape. | 0 | 0.0% |
+
+**Headline finding: PWG itself — the flagship large German dictionary this
+entire repo's pipeline translates — carries 5,303 bare `s.`/`vgl.` redirects
+(4.3% of its 123,366 records), more material proportionally than koch's own
+3,472/29,177 (11.9%) count would suggest by comparison to the other RU-family
+sources measured here.** This is the standout result of Part B, not MW/GRA/AP90
+(all negligible) or PWKVN (1.2%, borderline-below the bar).
+
+**Resolution is explicitly OUT of scope for this pass** — `csl-orig` is the
+canonical dictionary text; per the org's
+[csl-orig correction-workflow](https://github.com/sanskrit-lexicon/csl-corrections/blob/main/docs/correction-workflow.md),
+any change must go through snapshot → `updateByLine.py` → XML-validate →
+queue → batch PR, never a direct rewrite or an ad-hoc resolver like
+`koch_xref.py`/`fri_xref.py` (those touch a working *translation store*, not
+`csl-orig` itself). **Fork flagged for a human ruling, not assumed:** is a PWG
+redirect-resolution pass worth commissioning as its own handoff (index-only
+annotation for pwg_ru's own evidence lane vs. an actual csl-orig text
+correction)? Given the size (5,303 records) and PWG's centrality to this
+repo's whole pipeline, it looks materially worthwhile, but the shape of the
+fix (annotation vs. text correction) is a judgment call outside this handoff's
+"n/a — judgment-gated done" Part B exit.
+
+Record model + methodology caveats: `part_b_xref_discovery.py`'s record
+splitting is a `<L>...<LEND>`-boundary parser (or next-`<L>` where `<LEND>` is
+absent, per dictionary's own convention) — an approximation, not the
+dictionaries' own canonical record count (compare MW's 286,525 `<L>` records
+here against `A46`'s 194,084 *distinct headwords* figure — the two are
+different units, `<L>` records include multiple `<hom>`-numbered senses per
+headword). "Bare" = marker present AND no own-language definition content
+detected (German: no `{%...%}` gloss span; English/Latin: no non-apparatus
+alphabetic word ≥3 chars after stripping tags/citations) — a coarser heuristic
+than koch_xref's Cyrillic-token detector since MW/PWG/GRA/PWKVN mix multiple
+Latin-alphabet languages (English, German, Latin apparatus) with no single
+script to key off.
 
 ---
 
