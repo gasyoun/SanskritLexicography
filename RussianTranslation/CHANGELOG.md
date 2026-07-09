@@ -10,6 +10,33 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H428 — opt2 generation schema slimmed to reachable-AND-model-generated fields, unblocking the classifier
+- The Workflow tool's `agent()` safety classifier was blocking 100% of opt2
+  translation calls (67/67 in [H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md),
+  52/52 in H388's B-arm) with `output schema too large to classify safely`, at
+  0 subagent tokens — the reachable `CARDS_SCHEMA` had grown to 10,940 chars
+  after H335 (`government`)/H405 (`evidence`/`evidence_summary`)/H422 (`stats`)
+  each added a legitimately-`$ref`'d field. See [Uprava/FINDINGS.md §30](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+- New `_strip_post_generation_fields()` in
+  [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) drops every
+  field a *downstream deterministic annotator* adds after generation —
+  `government`/`labels`/`renou`/`renou_oldest`/`evidence` (sense),
+  `renou_oldest_sense` (record), `evidence_summary`/`stats` (card) — from the
+  per-call generation schema only; `promote_final_cards.py` + the annotator
+  scripts still add them back from the unmodified schema file on disk.
+  Reachable schema: 10,940 → 1,698 chars (84% reduction); `$defs` collapse
+  from `{card,record,sense,evidence_item,evidence_summary,stats}` to
+  `{card,record,sense}`.
+- New `--dump-schema` CLI flag prints the live generation schema + char length
+  without needing a Workflow-tool probe.
+- Verification: a single diagnostic `agent()` call (nominal window, root
+  `vinasa`) returned a valid card with 75,774 subagent tokens spent (vs 0
+  tokens / classifier-blocked pre-fix). Pinned by new
+  `window_selftest.py:test_generation_schema_carries_no_post_generation_field`.
+  Full `window_selftest.py` (107 tests) and `lang_parity_check.py` (37
+  entries) both green.
+- Unblocks H389 (medium50 windows), H388 B-arm, and the H151 verb-root drain.
+
 ### H409 — `has_meaning()` short-token stemmer gap fixed, RATIO-scoring regression caught and reverted
 - New [`corpus_gate.ru_has_content()`](src/corpus_gate.py): relaxes the
   `>=3-char-after-stemming` floor for tokens already `<=3` letters before

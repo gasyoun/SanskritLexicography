@@ -288,7 +288,7 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "classification": "concurrency/api",
     "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
     "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
-    "residual_status": "superseded",
+    "residual_status": "accepted-as-proven-residual",
     "residual_risk": "SUPERSEDED by H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09: the clean-environment solo retry did NOT recur as a kill-gate miscalibration NOR as transient infra -- the actual, deterministic block is the agent() output-schema safety classifier (see next entry). The 08-07 'Connection closed mid-response' symptoms predate the classifier rollout; the operative blocker today is schema size, not concurrency or transient outage."
   },
   {
@@ -309,11 +309,35 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     },
     "passes": 1,
     "symptoms": "Every batch agent (b0-b9), every binary-split heal group, and every retry returned 'blocked by safety classifier: output schema too large to classify safely' at subagent_tokens:0. Binary-splitting did NOT help (a single-item call still carries the full constant schema). 0/13 cards, 0 tokens. This is a DETERMINISTIC pre-generation block, not the transient/kill cascade of the 08-07 H317 attempts.",
-    "classification": "schema/tooling",
-    "root_cause": "The Workflow-tool agent() safety classifier refuses the opt2 CARDS_SCHEMA (~8,202 chars: nested $defs for card/record/sense carrying government/evidence/evidence_summary objects, many enums, long descriptions) as too large to classify, pre-execution. FINDINGS.md §30's orphan-$def prune (_ref_names/_reachable_defs, landed 03-07 H130) is necessary but NO LONGER SUFFICIENT: H335 (government) + H405 (evidence/stage-2) grew the REACHABLE schema past the classifier threshold after that fix. Identical block hit the H388 SkillOpt B-arm the same day (52/52). Supersedes H317's 'transient API instability + kill-gate' hypothesis.",
-    "guardrail": "Escalated to H428 (Uprava/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md): slim the GENERATION schema to reachable-AND-model-generated fields only -- drop government/evidence/evidence_summary/labels/renou* (all added deterministically post-generation by government_census.py / annotate_evidence.py / annotate_renou.py), trim descriptions, flatten $defs; pin with a window_selftest.py test so a later field addition cannot silently re-cross the threshold. Do NOT retry any opt2 window until H428 lands -- it is a deterministic 0-token 0-progress block.",
-    "residual_status": "routed-to-bug-hunt",
-    "residual_risk": "The ENTIRE pwg_ru opt2 production path is blocked until H428 slims the schema: H389 (medium50 windows w1a/w1b/w2a/w2b), H388 B-arm live gate, and the H151 verb-root drain all use gen_opt_harness2.py and will hit the identical block. 0 tokens are wasted per attempt, but 0 progress is possible."
+    "classification": "structured-output-limit",
+    "root_cause": "The Workflow-tool agent() safety classifier refuses the opt2 CARDS_SCHEMA (~8,202 chars measured H388/H389; re-measured 10,940 chars at H428 after further $defs growth: nested $defs for card/record/sense carrying government/evidence/evidence_summary/stats objects, many enums, long descriptions) as too large to classify, pre-execution. FINDINGS.md §30's orphan-$def prune (_ref_names/_reachable_defs, landed 03-07 H130) is necessary but NO LONGER SUFFICIENT: H335 (government) + H405 (evidence/stage-2) + H422 (stats) grew the REACHABLE schema past the classifier threshold after that fix. Identical block hit the H388 SkillOpt B-arm the same day (52/52). Supersedes H317's 'transient API instability + kill-gate' hypothesis.",
+    "guardrail": "FIXED by H428 (Uprava/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md, 09-07-2026, Sonnet 5 claude-sonnet-5): new `_strip_post_generation_fields()` in gen_opt_harness2.py drops government/labels/renou/renou_oldest/evidence (sense), renou_oldest_sense (record), evidence_summary/stats (card) -- all added deterministically post-generation by government_census.py/annotate_government.py/annotate_renou.py/annotate_evidence.py/annotate_stats.py, never by the translating model -- from the GENERATION schema only (the promote/annotate scripts still add them back from the untouched schema file on disk). Reachable schema: 10,940 -> 1,698 chars (84% reduction); $defs collapse from {card,record,sense,evidence_item,evidence_summary,stats} to {card,record,sense}. Pinned by new window_selftest.py test_generation_schema_carries_no_post_generation_field so a future annotator field addition cannot silently re-cross the threshold. New `--dump-schema` CLI flag prints the live generation schema + char length for future measurement without a Workflow-tool probe.",
+    "residual_status": "fixed",
+    "residual_risk": "None outstanding for schema size. Verification: a single diagnostic agent() call (nominal window, root=vinasa, 1 card, generated via `gen_opt_harness2.py vinasa --nominal --keys=vinasa --no-tm`) returned a valid card with 75,774 subagent tokens spent (vs 0 tokens / classifier-blocked on the pre-fix 10,940-char schema) -- confirms the classifier now accepts the call. Unblocks H389 (medium50 windows w1a/w1b/w2a/w2b), H388 B-arm live gate, and the H151 verb-root drain, all of which use gen_opt_harness2.py."
+  },
+  {
+    "id": "H428_OPT2_SCHEMA_SLIM_FIX_2026-07-09",
+    "handoff": "H428",
+    "date": "2026-07-09",
+    "title": "Slimmed the opt2 generation schema (drop post-generation-only fields) -- classifier now accepts the per-call schema",
+    "lane": "nominal medium (band-4) / all opt2 lanes",
+    "model": "claude-sonnet-5",
+    "orchestrator": "Sonnet 5 Claude Code session, isolated worktree SanskritLexicography-h428, ONE solo diagnostic Workflow launch (1 card, root=vinasa)",
+    "expected": {
+      "agents": "1 (single-card nominal diagnostic window)",
+      "tokens": "order of tens of thousands (a single tiny nominal card)"
+    },
+    "actual": {
+      "agents": "1 agent() call, returned a valid card, 0 errors",
+      "tokens": "75,774 subagent tokens"
+    },
+    "passes": 1,
+    "symptoms": "N/A -- this is the fix-confirmation entry, not a failure. Prior state: H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 (67/67 agent() calls blocked pre-generation, 0 tokens).",
+    "classification": "structured-output-limit",
+    "root_cause": "See H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 -- the reachable generation schema (10,940 chars) crossed the Workflow tool safety-classifier's size threshold.",
+    "guardrail": "gen_opt_harness2.py:_strip_post_generation_fields() + _POST_GENERATION_{CARD,RECORD,SENSE}_FIELDS strip government/labels/renou/renou_oldest/evidence/evidence_summary/stats/renou_oldest_sense from the per-call StructuredOutput schema (kept on the full schema file for promote/annotate). window_selftest.py:test_generation_schema_carries_no_post_generation_field pins the reachable-defs shape and a <=5,000-char ceiling.",
+    "residual_status": "fixed",
+    "residual_risk": "None. If a future annotator field is added to schemas/pwg_ru_final_card.schema.json and it is post-generation-only, it must be added to the relevant _POST_GENERATION_*_FIELDS tuple or the new selftest will not catch its omission (only re-measures size, not the specific field list beyond the banned set already known)."
   }
 ]
 ```
