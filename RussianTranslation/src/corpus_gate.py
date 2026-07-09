@@ -347,11 +347,42 @@ def corpus_examples(slp1, limit=3):
 
 # ---- heuristic correctness pre-check (LLM is the real verdict) -----------
 _RU_END = re.compile(r'(ого|ому|ыми|ами|ого|ая|ое|ые|ый|ий|ом|ой|ах|ам|ов|у|ю|и|ы|а|я|о|е|ь|й|х|м)$')
+# Excel formula-error strings (Russian locale) that leaked into a handful of
+# gate-source builds (e.g. `#ИМЯ?` = "#NAME?", found in fri/smirnov, H409).
+# These are NOT Russian prose; strip before tokenizing so a real word embedded
+# in the error marker (`ИМЯ` = "name") doesn't get counted as a usable gloss.
+_SPREADSHEET_ERR_RE = re.compile(r'#(?:ИМЯ|ЗНАЧ|ССЫЛКА|ДЕЛ/0|ПУСТО|ЧИСЛО|Н/Д)\?')
+
+
+def ru_has_content(tok):
+    """True if a single lowercase Cyrillic token carries real meaning, using a
+    RELAXED floor: a token that is ALREADY <=3 letters before stemming is a
+    short closed-class word in its own right (pronoun/particle: `она`, `оно`,
+    `это`, `все`, `кто`, `что`, ...) — case-stemming a 3-letter word routinely
+    strips it below the >=3-after-stemming floor (e.g. `оно` -> `он`, 2 chars,
+    discarded) even though the whole word is meaningful (H409).
+
+    NOT used by `ru_tokens`/`annotate_evidence.ru_tokens_full` — those feed
+    `best_relation`'s token-containment RATIO (`|a∩b| / |a|`), where adding a
+    grammatical connector like `что` (as in `что-либо` = "something") to the
+    denominator dilutes the ratio and flips previously-correct `supports`
+    verdicts to none (measured: 107 lost vs 37 gained on the live store — a
+    net regression, not an improvement). This relaxed floor is for boolean
+    PRESENCE checks only (`koch_xref.has_meaning` / `is_bare_xref`), where a
+    false positive on a function word is low-stakes (a gloss containing `что`
+    is essentially never a bare cross-reference to begin with). Two different
+    consumers, two different risk profiles — do not unify them."""
+    if len(tok) <= 3:
+        return len(tok) >= 3
+    return len(_RU_END.sub('', tok)) >= 3
+
+
 def ru_tokens(text):
     if HEAD_SENSE_ONLY:
         text = text.split(';')[0]
     text = re.sub(r'\{T\d+\}', ' ', text)          # drop placeholders
     text = re.sub(r'<[^>]+>', ' ', text)           # drop markup
+    text = _SPREADSHEET_ERR_RE.sub(' ', text)      # drop leaked Excel error strings
     toks = re.findall(r'[а-яёА-ЯЁ]{2,}', text.lower())
     return {_RU_END.sub('', t) for t in toks if len(_RU_END.sub('', t)) >= 3}
 

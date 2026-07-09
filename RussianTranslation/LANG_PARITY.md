@@ -538,7 +538,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (architecture audit FL7 / code review 2026-07-04 item #4). corpus_gate.py is the RU-only stage-4 correctness gate: it joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович) and the SamudraManthanam RU-aligned verse corpus. The EN pilot has no analogous corpus gate (no Sanskrit-English authority set is wired here), so this fix is inherently Russian-only — an INTENTIONAL-DIVERGENCE, not a GAP to port. The marker mechanism (SOURCES_PRESENT / evidence_status() / corpus_examples_with_status) would generalize if an EN correctness gate is ever built; revisit then. Pinned by test_corpus_gate_evidence_and_db_markers.",
     "tracking": "",
     "verified_sha256": {
-      "src/corpus_gate.py": "2257f04cdca96b2aea51cd6d097358c43109977e1847d39ff59476cc5cf50863",
+      "src/corpus_gate.py": "9ef1fd0e7c1d31760db187d16046b7dffbafa4fd6d11099ef61fb95094975b27",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
   },
@@ -670,7 +670,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H337 (08-07-2026). The evidence lanes are inherently Russian: corpus_gate joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович), the Гринцер specialist glossaries, and the SamudraManthanam RU-aligned corpus; the relation classifier tokenises Russian glosses. The EN pilot has no Sanskrit-English authority set wired here, so evidence retrofit is inherently RU-only — the same divergence already recorded for corpus_gate_evidence_markers_fl7_h321. annotation_report.py is a lang-neutral query CLI but reads the RU store; it would generalise if an EN correctness gate is ever built. Pinned by test_annotate_evidence_relation_semantics (annotate_evidence.py's own pure-function --selftest, no gate-source file IO so it runs in CI).",
     "tracking": "",
     "verified_sha256": {
-      "src/annotate_evidence.py": "b8e8914dd21aa5f3f1b4bf110e266c0e4c97aea2c36b66c4963a365db13020c0",
+      "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
@@ -726,8 +726,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H397 (09-07-2026, H337 follow-up). koch is a Sanskrit->RUSSIAN dictionary only (Кочергина); its `см.` (Russian \"see\") cross-reference marker and the Devanagari self-header crosswalk this module builds are RU-lexicographic conventions with no EN counterpart in this pipeline — same divergence basis already recorded for evidence_retrofit_annotate_h337 and corpus_gate_evidence_markers_fl7_h321. Pinned by test_koch_xref_resolution (koch_xref.py's own pure-function --selftest, no koch.jsonl file IO so it runs in CI).",
     "tracking": "",
     "verified_sha256": {
-      "src/koch_xref.py": "2a75adb79fc5296ae737bcc195fbb4f411b6d7c446b7cc69d571d52988b7a9ae",
-      "src/annotate_evidence.py": "b8e8914dd21aa5f3f1b4bf110e266c0e4c97aea2c36b66c4963a365db13020c0",
+      "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
+      "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
   },
@@ -764,7 +764,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
-      "src/annotate_evidence.py": "b8e8914dd21aa5f3f1b4bf110e266c0e4c97aea2c36b66c4963a365db13020c0",
+      "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/pilot/window_selftest.py": "91cc1b2c8423bd33f6a00fe8ad0a7d50dbecec46bc504391358fc11d679a3e73"
     }
   }

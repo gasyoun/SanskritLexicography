@@ -82,6 +82,11 @@ RESERVED_SOURCES = ['leonov']
 # Mirrors corpus_gate.ru_tokens' stemming/content regex, WITHOUT the HEAD_SENSE_ONLY
 # ';'-truncation: here we compare one already-split sense (or a source gloss that may
 # itself list several senses), so the full text must be tokenised, not just sense 1.
+# NOTE: deliberately NOT using corpus_gate.ru_has_content's relaxed short-token floor
+# (H409) — this feeds best_relation's containment RATIO, where the relaxed floor
+# measurably regresses supports/provides classification (107 lost vs 37 gained on
+# the live store; see corpus_gate.ru_has_content's docstring). The relaxed floor is
+# scoped to boolean presence checks (koch_xref.has_meaning) only.
 _RU_END = cg._RU_END
 _TAG_RE = re.compile(r'<[^>]+>')
 _SANSKRIT_RE = re.compile(r'\{#.*?#\}')              # {#SLP1 citation#} — drop (not a meaning)
@@ -97,6 +102,7 @@ def ru_tokens_full(text):
         return set()
     text = _PLACEHOLDER_RE.sub(' ', text)
     text = _TAG_RE.sub(' ', text)
+    text = cg._SPREADSHEET_ERR_RE.sub(' ', text)     # drop leaked Excel error strings (H409)
     toks = re.findall(r'[а-яёА-ЯЁ]{2,}', text.lower())
     return {_RU_END.sub('', t) for t in toks if len(_RU_END.sub('', t)) >= 3}
 
@@ -292,6 +298,13 @@ def selftest():
     # source with no usable meaning tokens (Smirnov citation-list) -> uninformative, not contradicts
     assert source_meaning_tokens(['(II-2) IV, 19, 24, 25; VIII,']) == set(), 'citation-list must have no meaning tokens'
     assert source_meaning_tokens(['огонь, бог огня']), 'a real gloss must have meaning tokens'
+    # H409 regression guard: ru_tokens_full deliberately keeps the UNRELAXED stemmer
+    # floor (unlike corpus_gate.ru_has_content) — a short function word like `что`
+    # inside `что-либо` must NOT survive stemming here, or best_relation's ratio
+    # denominator gets diluted (measured: 107 supports lost on the live store when
+    # this WAS relaxed). `что` stems to `чт` (2 chars) and is dropped.
+    assert 'что' not in ru_tokens_full('садиться на что-либо'), \
+        'ru_tokens_full must NOT use the relaxed short-token floor (H409 regression)'
     # phrase_equivalents strips a leading sense number and markup
     assert 'близкий' in phrase_equivalents('6) {%близкий, родственный%}; <lex>m.</lex>')
     # gloss_ref collapses markup/whitespace and truncates
