@@ -47,6 +47,7 @@ VALID_RESIDUAL = {
     'structurally-guarded',
     'accepted-as-proven-residual',
     'bug-hunt-handoff',
+    'open-paused',
 }
 
 REQUIRED_TEXT = (

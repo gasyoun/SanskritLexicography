@@ -109,6 +109,7 @@ SUGGEST_PROFILES = {
     'sanskrit': {'score_sa_headword': 0.60, 'score_semantic_tag': 0.25, 'score_de_fragment': 0.15},
     'balanced': {'score_de_fragment': 1 / 3, 'score_sa_headword': 1 / 3, 'score_semantic_tag': 1 / 3},
 }
+_LOAD_TM_CACHE = {}
 
 
 def tm_path(lang, out=None):
@@ -121,6 +122,13 @@ def suggest_tm_path(lang, out=None):
 
 def denylist_path(out=None):
     return out or os.path.join(HERE, 'translation_memory.denylist.jsonl')
+
+
+def _file_signature(path):
+    if not path or not os.path.exists(path):
+        return (os.path.abspath(path) if path else None, None, None)
+    st = os.stat(path)
+    return (os.path.abspath(path), st.st_mtime_ns, st.st_size)
 
 
 def _utc_now():
@@ -201,10 +209,10 @@ def best_reusable(rows):
     candidates = [r for r in candidates if not r.get('id') or r.get('id') not in superseded]
     if not candidates:
         return None
-    return sorted(candidates, key=lambda r: (
+    return max(candidates, key=lambda r: (
         TRUST_RANK.get(r.get('trust_level') or 'legacy_promoted', 10),
         _entry_time(r),
-    ), reverse=True)[0]
+    ))
 
 
 def load_denylist(path=None):
@@ -372,6 +380,11 @@ def load_tm(lang, tm=None, denylist=None):
     path = tm_path(lang, tm)
     if not os.path.exists(path):
         return {}
+    deny_path = denylist_path(denylist)
+    cache_key = (lang, _file_signature(path), _file_signature(deny_path))
+    cached = _LOAD_TM_CACHE.get(cache_key)
+    if cached is not None:
+        return dict(cached)
     deny = load_denylist(denylist)
     with open(path, encoding='utf-8') as f:
         rows = (json.load(f) or {}).get('entries') or {}
@@ -385,6 +398,8 @@ def load_tm(lang, tm=None, denylist=None):
         best = best_reusable(candidates)
         if best:
             out[address] = best
+    _LOAD_TM_CACHE.clear()
+    _LOAD_TM_CACHE[cache_key] = dict(out)
     return out
 
 
