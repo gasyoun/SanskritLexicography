@@ -288,8 +288,32 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "classification": "concurrency/api",
     "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
     "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
-    "residual_status": "open-paused",
-    "residual_risk": "If this recurs on a later clean-environment retry, escalate as a genuine kill-gate miscalibration for nominal single-card windows rather than assuming transient infra every time; if it does NOT recur, this entry is the transient-outage case per the NOMINAL_W1_100SMALL_2026-07-06 precedent."
+    "residual_status": "superseded",
+    "residual_risk": "SUPERSEDED by H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09: the clean-environment solo retry did NOT recur as a kill-gate miscalibration NOR as transient infra -- the actual, deterministic block is the agent() output-schema safety classifier (see next entry). The 08-07 'Connection closed mid-response' symptoms predate the classifier rollout; the operative blocker today is schema size, not concurrency or transient outage."
+  },
+  {
+    "id": "H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09",
+    "handoff": "H389",
+    "date": "2026-07-09",
+    "title": "opt2 CARDS_SCHEMA too large for agent() safety classifier -> 67/67 blocked pre-generation, 0 tokens",
+    "lane": "nominal medium (band-4, 3-30 citation size)",
+    "model": "claude-sonnet-5 (generation, hardcoded in harness)",
+    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo diagnostic window h317_w1a (13 keys), no concurrency",
+    "expected": {
+      "agents": "19 (agent_expected_after_tm)",
+      "tokens": "~4.7M subagent tokens / ~$8.90 (preflight cost gate)"
+    },
+    "actual": {
+      "agents": "67 agent() calls, ALL errored identically 'blocked by safety classifier: output schema too large to classify safely'; window hit MAX_AGENTS=67 budget-kill-switch",
+      "tokens": "0 subagent tokens (rejected before any model invocation), 83 ms total wall-clock"
+    },
+    "passes": 1,
+    "symptoms": "Every batch agent (b0-b9), every binary-split heal group, and every retry returned 'blocked by safety classifier: output schema too large to classify safely' at subagent_tokens:0. Binary-splitting did NOT help (a single-item call still carries the full constant schema). 0/13 cards, 0 tokens. This is a DETERMINISTIC pre-generation block, not the transient/kill cascade of the 08-07 H317 attempts.",
+    "classification": "schema/tooling",
+    "root_cause": "The Workflow-tool agent() safety classifier refuses the opt2 CARDS_SCHEMA (~8,202 chars: nested $defs for card/record/sense carrying government/evidence/evidence_summary objects, many enums, long descriptions) as too large to classify, pre-execution. FINDINGS.md §30's orphan-$def prune (_ref_names/_reachable_defs, landed 03-07 H130) is necessary but NO LONGER SUFFICIENT: H335 (government) + H405 (evidence/stage-2) grew the REACHABLE schema past the classifier threshold after that fix. Identical block hit the H388 SkillOpt B-arm the same day (52/52). Supersedes H317's 'transient API instability + kill-gate' hypothesis.",
+    "guardrail": "Escalated to H428 (Uprava/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md): slim the GENERATION schema to reachable-AND-model-generated fields only -- drop government/evidence/evidence_summary/labels/renou* (all added deterministically post-generation by government_census.py / annotate_evidence.py / annotate_renou.py), trim descriptions, flatten $defs; pin with a window_selftest.py test so a later field addition cannot silently re-cross the threshold. Do NOT retry any opt2 window until H428 lands -- it is a deterministic 0-token 0-progress block.",
+    "residual_status": "routed-to-bug-hunt",
+    "residual_risk": "The ENTIRE pwg_ru opt2 production path is blocked until H428 slims the schema: H389 (medium50 windows w1a/w1b/w2a/w2b), H388 B-arm live gate, and the H151 verb-root drain all use gen_opt_harness2.py and will hit the identical block. 0 tokens are wasted per attempt, but 0 progress is possible."
   }
 ]
 ```
