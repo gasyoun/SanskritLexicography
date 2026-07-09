@@ -348,6 +348,14 @@ Each card has the same contract:
 - **Acceptance**: all 30 cards display status (`not-started`, `prototype`,
   `validated`, `blocked`, `shipped`) and a dependency flag.
 - **Dependency flag**: `local-only`.
+- **Built (09-07-2026, H421, prototype)**: [`CAPABILITY_OBSERVATORY.md`](CAPABILITY_OBSERVATORY.md)
+  (generated) + [`research/capability_observatory.html`](research/capability_observatory.html)
+  (filterable local view) from the canonical
+  [`research/capability_observatory.json`](research/capability_observatory.json)
+  registry via the deterministic no-LLM
+  [`research/build_observatory.py`](research/build_observatory.py). 14/30 cards
+  flagged cheap-derivable; 4 already prototype. Reaches `shipped` after the
+  per-card status re-verification pass.
 
 ### 30. Research-paper matrix
 
