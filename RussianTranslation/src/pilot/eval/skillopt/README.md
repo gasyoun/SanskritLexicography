@@ -55,4 +55,38 @@ pilot's advantage: a reproducible, un-gameable signal.
 python build_heldout.py     # deterministic; overwrites heldout_v1.json
 ```
 
+## Live-run status (09-07-2026, H388 attempt) — B-arm BLOCKED at generation, zero Max spent
+
+The first live B-arm attempt (Opus 4.8 `claude-opus-4-8`, gate-respecting scope: train
+`{as, SaMs}`, sel `{muh, tap}`, test `{Baj, sev, tyaj}`) completed setup with **no Max
+spend** — regenerated the gitignored fixture rootmaps (`i`=212, `as`=113, `muh`=35
+sub-cards) and ran the mandated `perf_preflight.py --refuse-over-cost` — but the generation
+step is **blocked by a platform change**: the Workflow-tool `agent()` safety classifier
+refuses the opt2 harness's 8,202-char `CARDS_SCHEMA` pre-generation (*"output schema too
+large to classify safely"*; 52/52 agents error, 0 tokens, 86 ms). Batch size is irrelevant
+(a 1-card split carries the same schema). Full detail + unblock path in
+[`Uprava/FINDINGS.md §49`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) and the
+[H388 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H388-Opus_Uprava_skillopt_skill_optimizer_pwg_pilot_08.07.26.md).
+
+**Authoritative preflight cost table** (`--output-budget=90`, TM-resolved; $0.347/agent,
+$25/window ceiling — from `perf_preflight.py`, 09-07-2026):
+
+| Split | Root | agents (after TM) | ~cost | gate verdict |
+|---|---|---|---|---|
+| train | `i` | 64 | ~$22 | REFUSED (>$25 window monster) |
+| train | `as` | 21 | ~$7 | defer-calibrate |
+| train | `SaMs` | 14 | ~$5 | run-now |
+| sel | `muh` | 10 | ~$3.5 | run-now |
+| sel | `tap` | 19 | ~$6.6 | run-next |
+| test | `yuj` | 56 | ~$19 | REFUSED (>$25 window monster) |
+| test | `BU` | 48 | ~$17 | defer-calibrate |
+| test | `Baj` | 16 | ~$5.6 | run-next |
+| test | `sev` | 10 | ~$3.5 | run-now |
+| test | `tyaj` | 7 | ~$2.4 | run-now |
+| test | `kzip, ram, aS, nu, hu, pU` | — | — | no rootmap (needs `_pilot_gen_merged.py --root-split` regen) |
+
+Two fixture roots (`i` train, `yuj` test) exceed the cost ceiling and route to the
+human-budgeted monster lane; the selection gate (`muh`+`tap`, ~$10) is clean. A full-fixture
+live run ≈ $110–140 of real Sonnet-5 Max — moot until the schema-classifier block is lifted.
+
 _Dr. Mārcis Gasūns_
