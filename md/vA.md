@@ -7,7 +7,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h0_00_pwg00`
 
 
-**1)** *vā*¦ indecl.
+**1)** *vā* indecl.
 [VS. PRĀT. 2,16.] gaṇa *cādi* zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57)
  1) oder
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4)
@@ -98,7 +98,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [TS. 1,6,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,7,1) *u vā, yadyu vā kāmayeta*
 [ŚAT. BR. 3,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,16) überzählig: *yajñasya vā niśitiṃ voditiṃ vā*
 [ṚV. 6,15,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.11)
-- **EN:** *vā*¦ indecl.
+- **EN:** *vā* indecl.
 [VS. PRĀT. 2,16.] gaṇa *cādi* to [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57)
 1) 'or'
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4)
@@ -386,7 +386,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h1_00_pwg00`
 
 
-**1)** 2. *vā*¦, *vāti*
+**1)** 2. *vā*, *vāti*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*) .
 [DHĀTUP. 24,42](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*gatigandhanayoḥ, gamanahiṃsayoḥ*
 [VOP.]). *avān* und *avus*
@@ -416,7 +416,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) *nāśakanmāruto vātum*
 [HARIV. 90.](https://sanskrit-lexicon-scans.github.io/hariv?90)
 [KATHĀS. 25,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,42) [44,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,136)
-- **EN:** 2. *vā*¦, *vāti*
+- **EN:** 2. *vā*, *vāti*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 24,42](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*gatigandhanayoḥ, gamanahiṃsayoḥ*
 [VOP.]). *avān* and *avus*
@@ -993,11 +993,11 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h2_00_pwg00`
 
 
-3. *vā*¦, *vāyati*
+3. *vā*, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; auch med. in der Bed. von 2. *vā*; partic. *vāna* (s. bes.) und *vāta* .
 
 - **RU:** 3. *vā*, *vāyati* [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; также med. в Bed. от 2. *vā*; partic. *vāna* (s. bes.) и *vāta* .
-- **EN:** 3. *vā*¦, *vāyati*
+- **EN:** 3. *vā*, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; also med. in the Bed. of 2. *vā*; partic. *vāna* (s. bes.) and *vāta* .
   <sub>attested</sub>
 
@@ -1182,21 +1182,21 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h3_00_pwg00`
 
 
-4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
+4. *vā* Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 
 - **RU:** 4. *vā* побочная форма от 1. *van* . partic. *vāta* желанный, вожделенный; атакованный, оспариваемый: *avasyuvāta* [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta* [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
   <sub>attested</sub>
 
-**1)** 4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
+**1)** 4. *vā* Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 — Vgl.
 
 *a˚, indra˚, deva˚*
 (auch [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
-- **EN:** 4. *vā* ¦ secondary form of 1. *van*. partic. *vāta* "desired, wished-for; attacked, assailed": *avasyuvāta*
+- **EN:** 4. *vā* secondary form of 1. *van*. partic. *vāta* "desired, wished-for; attacked, assailed": *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
  — Vgl.
@@ -1287,7 +1287,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h4_00_pwg00`
 
 
-**1)** 5. *vā*¦, *vayati* und *˚te*
+**1)** 5. *vā*, *vayati* und *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha* .
@@ -1306,7 +1306,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [AV. 10,2,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.002.html#av10.002.13)
 [VS. 19,80.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,80) [82.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,82) [89.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,89)
 [TBR. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,1,1)
-- **EN:** 5. *vā* ¦, *vayati* and *˚te*
+- **EN:** 5. *vā* , *vayati* and *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha*.
@@ -1343,7 +1343,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — Vgl. *ūy, amota, otu*, 3. *vāna*.
   <sub>attested</sub>
 
-**main)** 5. *vā*¦, *vayati* und *˚te*
+**main)** 5. *vā*, *vayati* und *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha* .
@@ -1761,14 +1761,14 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h5_00_pwg00`
 
 
-**4)** 4. *vā*¦ desid. med. *vivāsate* herbeiziehen, gewinnen
+**4)** 4. *vā* desid. med. *vivāsate* herbeiziehen, gewinnen
 [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24) Hierher etwa auch act. *vivasas* oder *vivāsas (vi . vasas* Padap.)
 [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
 
 - **RU:** 4. *vā* desid. med. *vivāsate* привлекать, добывать, снискивать
 [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24) Сюда, возможно, также act. *vivasas* или *vivāsas (vi . vasas* Padap.)
 [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
-- **EN:** *vā*¦ desid. med. *vivāsate* to draw to oneself, to gain [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24). Perhaps also to be placed here act. *vivasas* or *vivāsas (vi . vasas* Padap.) [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
+- **EN:** *vā* desid. med. *vivāsate* to draw to oneself, to gain [ṚV. 8,19,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.24). Perhaps also to be placed here act. *vivasas* or *vivāsas (vi . vasas* Padap.) [ṚV. 7,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.03)
   <sub>attested</sub>
 
 ## vā
@@ -1776,7 +1776,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h6_00_pwg00`
 
 
-**5)** 5. *vā*¦, *asya sūtrasya śāṭakaṃ vaya*
+**5)** 5. *vā*, *asya sūtrasya śāṭakaṃ vaya*
 [PAT. a. a. O. 1,116,b. 244,b.]
 — *upa*, *upoyamāna* eingesteckt werdend: *śūla*
 [ĀŚV. ŚR. 3,6,23.]
@@ -1789,7 +1789,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 [ĀŚV. ŚR. 3,6,23.]
 — *sam* сшивать вместе, скреплять: *saṃ yadvayaṃ yavasādo yavādaḥ*
 [ṚV. 10,27,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.09)
-- **EN:** *vā*¦, *asya sūtrasya śāṭakaṃ vaya* [PAT. a. a. O. 1,116,b. 244,b.] — *upa*, *upoyamāna* being inserted, stuck in: *śūla* [ĀŚV. ŚR. 3,6,23.]
+- **EN:** *vā*, *asya sūtrasya śāṭakaṃ vaya* [PAT. a. a. O. 1,116,b. 244,b.] — *upa*, *upoyamāna* being inserted, stuck in: *śūla* [ĀŚV. ŚR. 3,6,23.]
   <sub>attested</sub>
 
 **5b)** — *sam* zusammenheften: *saṃ yadvayaṃ yavasādo yavādaḥ*
@@ -1801,7 +1801,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h0_zz_pw00`
 
 
-**1)** **1.** *vā*¦ _Indecl._
+**1)** **1.** *vā* _Indecl._
 — 1〉 oder, nachfolgend, metrisch aber auch vorangehend. *na — vā* weder — noch, *vā — vā* entweder — oder (bei einer Disjunction zweier Sätze wird das Verbum des ersten, ausnahmsweise auch das des zweiten Satzes betont), *kiṃ* (Fragepartikel). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* weder — noch, *vā — na vā* entweder — oder nicht, vielleicht — vielleicht auch nicht ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), ob — oder nicht, *vā na — vā* entweder nicht — oder, *yadi vā — vā* ob — oder. Bei mehr als zwei Gliedern vom zweiten an wiederholt oder hier und da ausfallend; steht *vā* schon nach dem ersten Gliede, so ist es hier durch entweder oder weder (in einem negativem Satze) wiederzugeben. Eine Negation braucht an zweiter und folgender Stelle nicht wiederholt zu werden. Es wechselt *vā* auch mit *ca* und *api*. Statt des einfachen *vā* auch *api vā*, *api vā punaḥ* (an letzter Stelle), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (an letzter Stelle [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* oder auch nicht [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (an erster Stelle), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* ist das erste *vā* überschüssig.
 
 - **RU:** **1.** *vā* _Indecl._
@@ -2241,7 +2241,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — With *vi* Med. "to blow."
   <sub>attested</sub>
 
-**4)** **4.** *vā*¦ Nebenform von **1.** *van*. *˚vāta* begehrt, erwünscht.
+**4)** **4.** *vā* Nebenform von **1.** *van*. *˚vāta* begehrt, erwünscht.
 
 - **RU:** **4.** *vā* Nebenform von **1.** *van*. *˚vāta* желанный, вожделенный.
 - **EN:** **4.** *vā* secondary form of **1.** *van*. *˚vāta* "desired, wished for."
@@ -2283,7 +2283,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 - **EN:** — With *upa* Desid. Act. "to seek to win over."
   <sub>attested</sub>
 
-**1)** **2.** √*vā*¦, *vāti*
+**1)** **2.** √*vā*, *vāti*
 — 1〉 wehen [ĀPAST. 1,12,5].
 
 - **RU:** **2.** √*vā*, *vāti*
@@ -2384,7 +2384,7 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 — 1〉 развеивать, разносить ветром.
   <sub>attested</sub>
 
-**1)** **3.** √*vā*¦, *vāyati*, *vāyate* (episch)
+**1)** **3.** √*vā*, *vāyati*, *vāyate* (episch)
 — 1〉 matt —, müde werden, sich erschöpfen, erliegen. Mit einem Partic. Praes. nicht müde werden Etwas zu thun.
 
 - **RU:** **3.** √*vā*, *vāyati*, *vāyate* (эпич.)
@@ -2410,9 +2410,9 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h0_zz_pw01`
 
 
-**1)** **5.** √*vā*¦, *vayati*
+**1)** **5.** √*vā*, *vayati*
 — 1〉 weben, flechten, künstlich ineinanderfügen, auch Reden, Lieder u. s. w.
-- **EN:** **5.** √*vā*¦, *vayati*
+- **EN:** **5.** √*vā*, *vayati*
 — 1〉 to weave, plait, artfully interlace, also of speeches, songs u. s. w.
 
 **2)** — 2〉 beweben, gleichsam zu einem Gewebe machen [BHAṬṬ.]
@@ -2468,37 +2468,37 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 **prati-vi-3)** — 3〉 *samuta* zusammengenäht in *tardmasamuta*.
 - **EN:** — 3〉 *samuta* sewn together, in *tardmasamuta*.
 
-**prati-)** **2.** √*vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
-- **EN:** **2.** √*vā*¦ with *pra*, vgl. *saṃvatsarapravāta*.
+**prati-)** **2.** √*vā* mit *pra*, vgl. *saṃvatsarapravāta*.
+- **EN:** **2.** √*vā* with *pra*, vgl. *saṃvatsarapravāta*.
 
-**caus)** **5.** √*vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
-- **EN:** **5.** √*vā*¦ Caus. *vāpayate* to have woven, to cause to be woven [DIVYĀVAD. 231,8. fgg.]
+**caus)** **5.** √*vā* Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
+- **EN:** **5.** √*vā* Caus. *vāpayate* to have woven, to cause to be woven [DIVYĀVAD. 231,8. fgg.]
 
 ## vā
 
 `v_a~~h0_zz_sch`
 
 
-**1)** 3. vā¦ mit apa, apavāta hinkränkelnd, [Kauś. 31,6.] — Mit ā vertrocknen, austrocknen, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a.
+**1)** 3. vā mit apa, apavāta hinkränkelnd, [Kauś. 31,6.] — Mit ā vertrocknen, austrocknen, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a.
 - **EN:** 3. vā, with apa, apavāta ailing, wasting away, [Kauś. 31,6.] — With ā to dry up, wither, [S I,48,3] (āvāna); 60,13 (Ko.; likewise); 109,1 (likewise); [Sūryaś. 37]a.
 
-**1)** 5. vā¦ [Kaus.] vāpayate weben lassen, [Divyāvad. 231,8] ff. — Mit ˚upapra [S II,368,22] (upaprotavyam).
+**1)** 5. vā [Kaus.] vāpayate weben lassen, [Divyāvad. 231,8] ff. — Mit ˚upapra [S II,368,22] (upaprotavyam).
 - **EN:** 5. vā, [Kaus.] vāpayate to have woven, [Divyāvad. 231,8] ff. — With upapra [S II,368,22] (upaprotavyam).
 
-**1)** vā¦ , vāti ˚gehen, [H 48,3. 11] ?
+**1)** vā , vāti ˚gehen, [H 48,3. 11] ?
 - **EN:** vā, vāti to go(?), [H 48,3. 11] ?
 
-**apa)** 3. vā¦ mit apa, apavāta hinkränkelnd, [Kauś. 31,6.] — Mit ā vertrocknen, austrocknen, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a. {part=,seq=23735,type=,n=10}
+**apa)** 3. vā mit apa, apavāta hinkränkelnd, [Kauś. 31,6.] — Mit ā vertrocknen, austrocknen, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a. {part=,seq=23735,type=,n=10}
 
 - **RU:** 3. vā с apa, apavāta угасающий, чахнущий, [Kauś. 31,6.] — С ā высыхать, иссыхать, [S I,48,3] (āvāna); 60,13 (Ko.; desgl.); 109,1 (desgl.); [Sūryaś. 37]a.
   <sub>attested</sub>
 
-**caus-upapra)** 5. vā¦ [Kaus.] vāpayate weben lassen, [Divyāvad. 231,8] ff. — Mit ˚upapra [S II,368,22] (upaprotavyam). {part=,seq=23736,type=,n=3}
+**caus-upapra)** 5. vā [Kaus.] vāpayate weben lassen, [Divyāvad. 231,8] ff. — Mit ˚upapra [S II,368,22] (upaprotavyam). {part=,seq=23736,type=,n=3}
 
 - **RU:** 5. vā [Kaus.] vāpayate заставлять ткать, [Divyāvad. 231,8] ff. — С ˚upapra [S II,368,22] (upaprotavyam).
   <sub>attested</sub>
 
-**vāti)** vā¦ , vāti ˚gehen, [H 48,3. 11] ? {part=,seq=23737,type=,n=1}
+**vāti)** vā , vāti ˚gehen, [H 48,3. 11] ? {part=,seq=23737,type=,n=1}
 
 - **RU:** vā , vāti ˚идти, [H 48,3. 11] ?
   <sub>attested</sub>
@@ -2508,18 +2508,18 @@ _PWG article — 53 sub-card(s), 238 sense(s) · RU 161/238 · EN 205/238_
 `v_a~~h0_zz_pwkvn`
 
 
-**1)** 2. *vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
+**1)** 2. *vā* mit *pra*, vgl. *saṃvatsarapravāta*.
 - **EN:** 2. *vā* with *pra*, vgl. *saṃvatsarapravāta*.
 
-**1)** 5. *vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
+**1)** 5. *vā* Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
 - **EN:** 5. *vā* Caus. *vāpayate* to have woven [DIVYĀVAD. 231,8. fgg.]
 
-**mit T2)** **2.** *vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
+**mit T2)** **2.** *vā* mit *pra*, vgl. *saṃvatsarapravāta*.
 
 - **RU:** С *pra*, vgl. *saṃvatsarapravāta*.
   <sub>attested</sub>
 
-**caus)** **5.** *vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
+**caus)** **5.** *vā* Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
 
 - **RU:** Caus. *vāpayate* заставлять ткать [DIVYĀVAD. 231,8. fgg.]
   <sub>attested</sub>

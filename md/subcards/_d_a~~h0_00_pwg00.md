@@ -3,7 +3,7 @@
 `_d_a~~h0_00_pwg00`
 
 
-**preamble)** 1. *dhā*¦, *dadhāti*
+**preamble)** 1. *dhā*, *dadhāti*
 [DHĀTUP. 25,10.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25)
 [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) *dhatthas, dhattas*
 [8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhmas, dadhmasi, dhattha, dadhati* (
@@ -57,7 +57,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [P. 7,4,42.](https://ashtadhyayi.com/sutraani/7/4/42)
 [VOP. 26,122](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,122);
 
-- **RU:** 1. *dhā*¦, *dadhāti*
+- **RU:** 1. *dhā*, *dadhāti*
 [DHĀTUP. 25,10.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25)
 [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) *dhatthas, dhattas*
 [8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhmas, dadhmasi, dhattha, dadhati* (
@@ -110,7 +110,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 ([HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) und in *durdhita, nemadhita, mitra˚, vasu˚*) und später *hita* (s. d. bes.)
 [P. 7,4,42.](https://ashtadhyayi.com/sutraani/7/4/42)
 [VOP. 26,122](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,122);
-- **EN:** 1. *dhā*¦, *dadhāti*
+- **EN:** 1. *dhā*, *dadhāti*
 [DHĀTUP. 25,10.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25)
 [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) *dhatthas, dhattas*
 [8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhmas, dadhmasi, dhattha, dadhati* (

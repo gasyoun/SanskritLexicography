@@ -3,9 +3,9 @@
 `m_a~~h0_zz_pw01`
 
 
-**§intro)** **3.** √*mā*¦ *māti*, *mimīte* (auch Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
+**§intro)** **3.** √*mā* *māti*, *mimīte* (auch Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
 
-- **RU:** **3.** √*mā*¦ *māti*, *mimīte* (также Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
+- **RU:** **3.** √*mā* *māti*, *mimīte* (также Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
 - **EN:** **3.** √*mā* — *māti*, *mimīte* (also Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
   <sub>attested</sub>
 

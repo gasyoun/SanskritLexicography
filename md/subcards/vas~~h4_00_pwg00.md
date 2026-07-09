@@ -3,7 +3,7 @@
 `vas~~h4_00_pwg00`
 
 
-**intro)** 5. *vas*¦, *vasati (nivāse)*
+**intro)** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*
@@ -24,7 +24,7 @@ und *uṣya; vastum*; pass. *uṣyate; uṣita*
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) aus metrischen Rücksichten in der klassischen Sprache häufig auch med.; in der älteren Sprache vom simpl. med. nur partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) verweilend oder verweilt habend
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); und auch an dieser Stelle sind andere Erklärungen möglich. Medialformen in der älteren Sprache s. u. *sam* .
 
-- **RU:** 5. *vas*¦, *vasati (nivāse)*
+- **RU:** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*
@@ -44,7 +44,7 @@ und *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 7,2,52.](https://ashtadhyayi.com/sutraani/7/2/52) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) из метрических соображений в классическом языке нередко также med.; в более древнем языке от simpl. med. только partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) пребывающий или побывавший
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); и на этом месте возможны иные объяснения. Медиальные формы в более древнем языке s. u. *sam* .
-- **EN:** 5. *vas*¦, *vasati (nivāse)*
+- **EN:** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*

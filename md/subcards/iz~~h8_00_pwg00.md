@@ -3,15 +3,15 @@
 `iz~~h8_00_pwg00`
 
 
-I. 1. *iṣ*¦ *iṣita*
+I. 1. *iṣ* *iṣita*
 
-- **RU:** I. 1. *iṣ*¦ *iṣita*
+- **RU:** I. 1. *iṣ* *iṣita*
   <sub>attested</sub>
 
-**1)** I. 1. *iṣ*¦ *iṣita*
+**1)** I. 1. *iṣ* *iṣita*
  1) ausgesprochen, verkündet
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
-- **EN:** I. 1. *iṣ*¦ *iṣita*
+- **EN:** I. 1. *iṣ* *iṣita*
  1) uttered, proclaimed
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
 

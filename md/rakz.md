@@ -7,7 +7,7 @@ _PWG article — 23 sub-card(s), 82 sense(s) · RU 67/82 · EN 67/82_
 `rakz~~h0_00_pwg00`
 
 
-**1)** *rakṣ*¦, *rakṣati* (*pālane*)
+**1)** *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (in der späteren Sprache), *rakṣiṣyati*; in der älteren Sprache, desgleichen in der späteren, aber hier nur aus metrischen Rücksichten, auch med.; partic. *rakṣita*; bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*
@@ -144,7 +144,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 
 * buddha˚, mahā˚, maitreya˚* .
 
-- **RU:** *rakṣ*¦, *rakṣati* (*pālane*)
+- **RU:** *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (в более позднем языке), *rakṣiṣyati*; в более раннем языке, равно как и в более позднем, но здесь лишь из метрических соображений, также med.; partic. *rakṣita*; охранять, беречь, защищать, стеречь, блюсти, соблюдать, сохранять, спасать, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*
@@ -280,7 +280,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [Spr. 4692.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4692) Vgl. *devarakṣita, *
 
 * buddha˚, mahā˚, maitreya˚* .
-- **EN:** 1. *rakṣ*¦, *rakṣati* (*pālane*)
+- **EN:** 1. *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (in the later language), *rakṣiṣyati*; in the older language, and likewise in the later, though there only for metrical reasons, also med.; partic. *rakṣita*; to guard, preserve, protect, watch, tend, take heed, keep, save, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*
@@ -970,14 +970,14 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h1_00_pwg00`
 
 
-**1)** 2. *rakṣ*¦ (= 1. *rakṣ*) _adj._ am Ende eines comp. bewachend, hütend u. s. w.
+**1)** 2. *rakṣ* (= 1. *rakṣ*) _adj._ am Ende eines comp. bewachend, hütend u. s. w.
 [VOP. 3,136.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,136)
 — Vgl. *go˚* .
 
-- **RU:** 2. *rakṣ*¦ (= 1. *rakṣ*) _adj._ в конце comp. охраняющий, стерегущий u. s. w.
+- **RU:** 2. *rakṣ* (= 1. *rakṣ*) _adj._ в конце comp. охраняющий, стерегущий u. s. w.
 [VOP. 3,136.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,136)
 — Vgl. *go˚* .
-- **EN:** 2. *rakṣ*¦ (= 1. *rakṣ*) _adj._ at the end of a comp. guarding, watching over u. s. w.
+- **EN:** 2. *rakṣ* (= 1. *rakṣ*) _adj._ at the end of a comp. guarding, watching over u. s. w.
 [VOP. 3,136.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,136)
 — Vgl. *go˚* .
   <sub>lexicographic</sub>
@@ -987,12 +987,12 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h2_00_pwg00`
 
 
-**1)** 3. *rakṣ*¦ (eigentlich *ṛkṣ = riś, riṣ*) beschädigen, verletzen: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
+**1)** 3. *rakṣ* (eigentlich *ṛkṣ = riś, riṣ*) beschädigen, verletzen: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Davon *rakṣas* .
 
-- **RU:** 3. *rakṣ*¦ (собственно *ṛkṣ = riś, riṣ*) повреждать, ранить: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
+- **RU:** 3. *rakṣ* (собственно *ṛkṣ = riś, riṣ*) повреждать, ранить: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Davon *rakṣas* .
-- **EN:** 3. *rakṣ*¦ (properly *ṛkṣ = riś, riṣ*) to injure, harm: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
+- **EN:** 3. *rakṣ* (properly *ṛkṣ = riś, riṣ*) to injure, harm: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Derived from this: *rakṣas* .
   <sub>attested</sub>
 
@@ -1001,12 +1001,12 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h3_00_pwg00`
 
 
-**intro)** 1. *rakṣ*¦
+**intro)** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. lies [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) der 2ten Aufl.) st. 208.
 
-- **RU:** 1. *rakṣ*¦
+- **RU:** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. следует читать [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) 2-го Aufl.) st. 208.
-- **EN:** 1. *rakṣ*¦
+- **EN:** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. read [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) of the 2nd Aufl.) st. 208.
   <sub>attested</sub>
 
@@ -1042,12 +1042,12 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h0_zz_pw`
 
 
-**1)** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
+**1)** **1.** √*rakṣ* *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 bewachen, Wache halten, bewahren, beschützen, hüten (auch das Vieh), behüten, in Acht nehmen, schonen, erhalten, erretten, servare, — vor (Abl.), verwahren; sorgfältig achten auf (Acc., ganz ausnahmsweise Loc.), beobachten (ein Gesetz u. s. w.). Das Land —, das Reich beschützen, so v. a. regieren. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). mit passiver Bed. oder fehlerhaft für *rakṣyamāṇa* *rakṣita* bewacht u. s. w. *rakṣitam* _Adv._ wohl verwahrt.
 
-- **RU:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
+- **RU:** **1.** √*rakṣ* *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон u. s. w.). Страну —, царство защищать, т.е. v. a. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным Bed. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый u. s. w. *rakṣitam* _Adv._ надёжно сохранённый.
-- **EN:** **1.** √*rakṣ*¦ *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
+- **EN:** **1.** √*rakṣ* *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
 — 1〉 to watch, keep watch, preserve, protect, guard (also cattle), to tend, take care of, spare, maintain, rescue, servare, — from (Abl.), to keep in safekeeping; to pay careful attention to (Acc., quite exceptionally Loc.), to observe (a law u. s. w.). To protect the land —, the realm, thus v. a. to rule. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). with passive Bed. or erroneously for *rakṣyamāṇa* *rakṣita* guarded u. s. w. *rakṣitam* _Adv._ well kept.
   <sub>attested</sub>
 
@@ -1188,22 +1188,22 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 - **EN:** — With *sam* to watch over, preserve, protect, guard, keep guard over, maintain, spare, rescue, servare, — from (Abl.). To secure, keep in safekeeping, store up.
   <sub>attested</sub>
 
-**1)** **2.** √*˚rakṣ*¦ bewahrend, hütend in *gorakṣ*.
+**1)** **2.** √*˚rakṣ* bewahrend, hütend in *gorakṣ*.
 
-- **RU:** **2.** √*˚rakṣ*¦ сохраняющий, охраняющий in *gorakṣ*.
-- **EN:** **2.** √*˚rakṣ*¦ preserving, guarding in *gorakṣ*.
+- **RU:** **2.** √*˚rakṣ* сохраняющий, охраняющий in *gorakṣ*.
+- **EN:** **2.** √*˚rakṣ* preserving, guarding in *gorakṣ*.
   <sub>lexicographic</sub>
 
-**1)** **3.** √*rakṣ*¦ (nur *rakṣīs*) beschädigen, verletzen [AV.]
+**1)** **3.** √*rakṣ* (nur *rakṣīs*) beschädigen, verletzen [AV.]
 
-- **RU:** **3.** √*rakṣ*¦ (nur *rakṣīs*) повреждать, ранить [AV.]
-- **EN:** **3.** √*rakṣ*¦ (only *rakṣīs*) to injure, harm [AV.]
+- **RU:** **3.** √*rakṣ* (nur *rakṣīs*) повреждать, ранить [AV.]
+- **EN:** **3.** √*rakṣ* (only *rakṣīs*) to injure, harm [AV.]
   <sub>attested</sub>
 
-**1)** **1.** √*rakṣ*¦ mit *samanu* in Acht nehmen, hüten [DIVYĀVAD. 104,13]. [105,18].
+**1)** **1.** √*rakṣ* mit *samanu* in Acht nehmen, hüten [DIVYĀVAD. 104,13]. [105,18].
 
-- **RU:** **1.** √*rakṣ*¦ mit *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
-- **EN:** **1.** √*rakṣ*¦ with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
+- **RU:** **1.** √*rakṣ* mit *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
+- **EN:** **1.** √*rakṣ* with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
   <sub>attested</sub>
 
 **PW mit prati)** — Mit *prati*
@@ -1220,10 +1220,10 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h0_zz_sch`
 
 
-**samanu+)** 1. rakṣ¦ mit samanu in Acht nehmen, hüten, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
+**samanu+)** 1. rakṣ mit samanu in Acht nehmen, hüten, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
 
-- **RU:** 1. rakṣ¦ с samanu блюсти, охранять, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
-- **EN:** 1. rakṣ¦ with samanu to take heed of, to guard, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
+- **RU:** 1. rakṣ с samanu блюсти, охранять, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
+- **EN:** 1. rakṣ with samanu to take heed of, to guard, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
   <sub>attested</sub>
 
 ## rakṣ
@@ -1231,10 +1231,10 @@ to protect: *ko 'smānatra vane rakṣayiṣyati*
 `rakz~~h0_zz_pwkvn`
 
 
-**samanu+)** **1.** *rakṣ*¦ mit *samanu* in Acht nehmen, hüten [DIVYĀVAD. 104,13]. [105,18].
+**samanu+)** **1.** *rakṣ* mit *samanu* in Acht nehmen, hüten [DIVYĀVAD. 104,13]. [105,18].
 
-- **RU:** **1.** *rakṣ*¦ с *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
-- **EN:** **1.** *rakṣ*¦ with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
+- **RU:** **1.** *rakṣ* с *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
+- **EN:** **1.** *rakṣ* with *samanu* to take heed of, to guard [DIVYĀVAD. 104,13]. [105,18].
   <sub>attested</sub>
 
 ## rakṣ

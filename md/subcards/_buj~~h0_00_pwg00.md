@@ -3,7 +3,7 @@
 `_buj~~h0_00_pwg00`
 
 
-**1-main)** 1. *bhuj*¦, *bhujati* biegen
+**1-main)** 1. *bhuj*, *bhujati* biegen
 [DHĀTUP. 28,124.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) partic. *bhugna*
 [P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45)
 [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) gebogen, gekrümmt, krumm
@@ -22,7 +22,7 @@
 [ṚV. PRĀT. 2,11.]
 — Vgl. *bhuji, bhujyu*, 1. *bhoga* .
 
-- **RU:** 1. *bhuj*¦, *bhujati* «гнуть, сгибать»
+- **RU:** 1. *bhuj*, *bhujati* «гнуть, сгибать»
 [DHĀTUP. 28,124.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) partic. *bhugna*
 [P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45)
 [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) «согнутый, изогнутый, кривой»

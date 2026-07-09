@@ -3,7 +3,7 @@
 `_as~~h0_00_pwg00`
 
 
-**1)** *ās*¦ _interj._ der Freude und des Unwillens: *āḥ* vor *ka, pa* und *sa*
+**1)** *ās* _interj._ der Freude und des Unwillens: *āḥ* vor *ka, pa* und *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
@@ -21,7 +21,7 @@
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* und *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
 
-- **RU:** *ās*¦ _interj._ der Freude und des Unwillens: *āḥ* перед *ka, pa* и *sa*
+- **RU:** *ās* _interj._ der Freude und des Unwillens: *āḥ* перед *ka, pa* и *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
@@ -38,7 +38,7 @@
 [AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* и *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
-- **EN:** *ās*¦ _interj._ an interjection of joy and displeasure: *āḥ* before *ka, pa* and *sa*
+- **EN:** *ās* _interj._ an interjection of joy and displeasure: *āḥ* before *ka, pa* and *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)

@@ -7,7 +7,7 @@ _PWG article — 26 sub-card(s), 174 sense(s) · RU 71/174 · EN 169/174_
 `la_b~~h0_00_pwg00`
 
 
-**intro)** *labh*¦ (= älterem *rabh*), *labhate* (*prāptau*)
+**intro)** *labh* (= älterem *rabh*), *labhate* (*prāptau*)
 [DHĀTUP. 23,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *lebhe, lapsyate, labdhā* (vgl. Kār.
 5 aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). *alabdha*
 [P. 8,2,40](https://ashtadhyayi.com/sutraani/8/2/40), Sch.
@@ -34,7 +34,7 @@ z. B. *labhati*
 [285](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.285) liest die [ed. Bomb.] richtig *alabhanta*
 u. s. w.; [2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) haben beide Ausgg. *pralambhante* .
 
-- **RU:** *labh*¦ (= более древнему *rabh*), *labhate* (*prāptau*)
+- **RU:** *labh* (= более древнему *rabh*), *labhate* (*prāptau*)
 [DHĀTUP. 23,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *lebhe, lapsyate, labdhā* (vgl. Kār.
 5 из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). *alabdha*
 [P. 8,2,40](https://ashtadhyayi.com/sutraani/8/2/40), Sch.
@@ -1808,11 +1808,11 @@ In both places perhaps also in the Bed. 3).
 `la_b~~h1_00_pwg00`
 
 
-**3)** *labh*¦ mit *samā*
+**3)** *labh* mit *samā*
  3) erlangen, gewinnen
 [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
 
-- **RU:** *labh*¦ с *samā*
+- **RU:** *labh* с *samā*
  3) обретать, получать
 [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
 - **EN:** *labh* with *samā* 3) to obtain, to gain [Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
@@ -1823,11 +1823,11 @@ In both places perhaps also in the Bed. 3).
 `la_b~~h0_zz_pw`
 
 
-√*labh*¦, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
-- **EN:** √*labh*¦, *labhate* (*lambhante* u. s. w. faulty; *alabhanta* also faulty for *ālabhanta*), *labhati* (metrical and inexact); *labdha* Partic.
+√*labh*, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
+- **EN:** √*labh*, *labhate* (*lambhante* u. s. w. faulty; *alabhanta* also faulty for *ālabhanta*), *labhati* (metrical and inexact); *labdha* Partic.
 
-√*labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
-- **EN:** √*labh*¦ with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
+√*labh* mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
+- **EN:** √*labh* with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
 
 **1)** — 1〉 erwischen, fassen, sich Jmds bemeistern; antreffen, finden, zu sehen bekommen ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. gefunden —, angetroffen werden. *antaram* eine Gelegenheit finden, sich Eingang verschaffen bei, Eindruck machen auf (Gen.); *avakāśam* Platz —, einen freien Spielraum finden, sich Eingang verschaffen, am Platze sein; *kālam* den richtigen Zeitpunct für Etwas (Loc. eines Nom. act.) finden; *padam* Platz finden, so v. a. sich Eingang verschaffen.
 - **EN:** — 1) {to catch, seize, get hold of, take possession of someone; to come upon, find, catch sight of} ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. {to be found —, be come upon}. *antaram* {to find an opportunity, gain entry with, make an impression upon} (Gen.); *avakāśam* {to find room —, find free scope, gain entry, be appropriate;} *kālam* {to find the right moment for something} (Loc. of a Nom. act.); *padam* {to find scope,} so v. a. {to gain entry}.
@@ -2113,10 +2113,10 @@ In both places perhaps also in the Bed. 3).
 `la_b~~h0_zz_sch`
 
 
-**1)** labh¦ mit prati, *pratilabdha so v.a. teilhaftig geworden, [Mahāvy. 30,6. 33. 245,575.] {part=,seq=23168,type=,n=3}
+**1)** labh mit prati, *pratilabdha so v.a. teilhaftig geworden, [Mahāvy. 30,6. 33. 245,575.] {part=,seq=23168,type=,n=3}
 
-- **RU:** labh¦ с prati, *pratilabdha так в знач. ставший причастным к чему-либо, [Mahāvy. 30,6. 33. 245,575.] {part=,seq=23168,type=,n=3}
-- **EN:** labh¦ with prati, *pratilabdha thus s.v.a. (so viel als = as good as) having become possessed of, [Mahāvy. 30,6. 33. 245,575.]
+- **RU:** labh с prati, *pratilabdha так в знач. ставший причастным к чему-либо, [Mahāvy. 30,6. 33. 245,575.] {part=,seq=23168,type=,n=3}
+- **EN:** labh with prati, *pratilabdha thus s.v.a. (so viel als = as good as) having become possessed of, [Mahāvy. 30,6. 33. 245,575.]
   <sub>attested</sub>
 
 ## labh
@@ -2124,8 +2124,8 @@ In both places perhaps also in the Bed. 3).
 `la_b~~h0_zz_pwkvn`
 
 
-**1)** *labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
+**1)** *labh* mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
 
-- **RU:** *labh*¦ с *prati* V. **˚pratilabdha* так v. a. ставший причастным к чему-либо [MAHĀVY. 30,6]. [33]. [245,575].
+- **RU:** *labh* с *prati* V. **˚pratilabdha* так v. a. ставший причастным к чему-либо [MAHĀVY. 30,6]. [33]. [245,575].
 - **EN:** *labh* with *prati* V. **˚pratilabdha* thus v. a. having become possessed of [MAHĀVY. 30,6]. [33]. [245,575].
   <sub>attested</sub>

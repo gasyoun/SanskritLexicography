@@ -3,7 +3,7 @@
 `_sam~~h4_00_pwg00`
 
 
-**1)** 5. *śam*¦ indecl. gaṇa *svarādi*
+**1)** 5. *śam* indecl. gaṇa *svarādi*
 zu [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 zu [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) wohlthätig, zum Vortheil, — Heil; wohl, gut, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*
@@ -50,7 +50,7 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 [BHĀG. P. 3,5,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,4) *śaṃ yoḥ* s. u. *yos* . Sammlung von Beispielen bei
 [M. MÜLLER, Transl. 1,180.]
 
-- **RU:** 5. *śam*¦ indecl. gaṇa *svarādi*
+- **RU:** 5. *śam* indecl. gaṇa *svarādi*
 к [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 к [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) благодетельный, на благо, — во спасение; хорошо, благо, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*
@@ -96,7 +96,7 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 [BURNOUF] раздельно) *naḥ*
 [BHĀG. P. 3,5,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,4) *śaṃ yoḥ* s. u. *yos* . Собрание примеров у
 [M. MÜLLER, Transl. 1,180.]
-- **EN:** 5. *śam*¦ indecl. gaṇa *svarādi*
+- **EN:** 5. *śam* indecl. gaṇa *svarādi*
 to [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 to [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) beneficent, advantageous, conducive to welfare; well, good, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*

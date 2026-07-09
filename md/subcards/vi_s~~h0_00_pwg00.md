@@ -3,7 +3,7 @@
 `vi_s~~h0_00_pwg00`
 
 
-**root-1)** *viś*¦, *viśati*
+**root-1)** *viś*, *viśati*
 [DHĀTUP. 28,130](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*praveśane*).* viśate, aviśran; viveśa, viviśe*; ved. *viveśus, aviveśīs* und *viviśyās; viviśivaṃs* und *viviśvaṃs*
 [P. 7,2,68.](https://ashtadhyayi.com/sutraani/7/2/68)
 [VOP. 26,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,134) *avikṣat, avikṣata, avikṣmahi; vekṣyati* (vgl. Kār.

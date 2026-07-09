@@ -3,9 +3,9 @@
 `m_a~~h0_zz_pw00`
 
 
-**§1)** **1.** *mā*¦ _Adv._ Conj. nicht (in prohibitiven Sätzen), dass nicht, ach wenn doch nicht, damit nicht.
+**§1)** **1.** *mā* _Adv._ Conj. nicht (in prohibitiven Sätzen), dass nicht, ach wenn doch nicht, damit nicht.
 
-- **RU:** **1.** *mā*¦ _Adv._ Conj. не (в запретительных предложениях), чтобы не, ах если бы только не, дабы не.
+- **RU:** **1.** *mā* _Adv._ Conj. не (в запретительных предложениях), чтобы не, ах если бы только не, дабы не.
 - **EN:** **1.** *mā* — _Adv._ Conj. "not" (in prohibitive clauses), "that not, would that not, lest, in order that not".
   <sub>attested</sub>
 
@@ -45,9 +45,9 @@
 **§1.12)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 - **EN:** — 12) *mā* *sma* with Conj., insbes. Aor. (exceptionally also with augment), and Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) "not" (prohibitive) and "in order that not" (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
-**§2)** **2.** √*mā*¦ enklitischer Acc. zu *aham* ich.
+**§2)** **2.** √*mā* enklitischer Acc. zu *aham* ich.
 
-- **RU:** **2.** √*mā*¦ энклитическая форма Acc. к *aham* я.
+- **RU:** **2.** √*mā* энклитическая форма Acc. к *aham* я.
 - **EN:** **2.** √*mā* — enclitic Acc. of *aham* "I".
   <sub>attested</sub>
 

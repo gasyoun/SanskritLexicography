@@ -3,12 +3,12 @@
 `_bid~~h3_00_pwg00`
 
 
-**1)** 1. *bhid*¦ mit *parā*
+**1)** 1. *bhid* mit *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
 
 - **RU:** 1. *bhid* mit *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
-- **EN:** 1. *bhid*¦ with *parā*
+- **EN:** 1. *bhid* with *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
   <sub>attested</sub>
 

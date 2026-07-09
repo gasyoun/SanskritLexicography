@@ -7,7 +7,7 @@ _PWG article — 41 sub-card(s), 406 sense(s) · RU 271/406 · EN 267/406_
 `m_a~~h0_00_pwg00`
 
 
-**intro)** *mā*¦ _adv._ und conj. nicht, zumeist in verbietenden Sätzen, aber auch bei Wünschen und Voraussetzungen (s. u. 2.); damit nicht,
+**intro)** *mā* _adv._ und conj. nicht, zumeist in verbietenden Sätzen, aber auch bei Wünschen und Voraussetzungen (s. u. 2.); damit nicht,
 [NIR. 1,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,5) gaṇa *svarādi* zu [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37)
 [AK. 3,5,11.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,11)
 [H. 1539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1539)
@@ -15,7 +15,7 @@ _PWG article — 41 sub-card(s), 406 sense(s) · RU 271/406 · EN 267/406_
 [MED. avy. 49](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,49) (*vāraṇe vikalpe ca*) . Ein folgendes *cha* wird nach *mā* verdoppelt (*mā cchidat*)
 [P. 6,1,74.](https://ashtadhyayi.com/sutraani/6/1/74)
 
-- **RU:** *mā*¦ _adv._ и conj. не, преимущественно в запретительных предложениях, но также при пожеланиях и условиях (s. u. 2.); чтобы не,
+- **RU:** *mā* _adv._ и conj. не, преимущественно в запретительных предложениях, но также при пожеланиях и условиях (s. u. 2.); чтобы не,
 [NIR. 1,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,5) gaṇa *svarādi* к [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37)
 [AK. 3,5,11.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,11)
 [H. 1539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1539)
@@ -410,7 +410,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 `m_a~~h1_00_pwg00`
 
 
-**intro)** 2. *mā*¦ (bildet Formen auch aus *mī), mimāti, mimanti; mimīte*
+**intro)** 2. *mā* (bildet Formen auch aus *mī), mimāti, mimanti; mimīte*
 [DHĀTUP. 25,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*śabde*) .
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *amīmet, mimāya; mīmayati*
@@ -423,7 +423,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [9,64,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19) — *memyat* partic. intens. blökend vom Bock
 [ṚV. 1,162,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.02)
 
-- **RU:** 2. *mā*¦ (образует формы также из *mī), mimāti, mimanti; mimīte*
+- **RU:** 2. *mā* (образует формы также из *mī), mimāti, mimanti; mimīte*
 [DHĀTUP. 25,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*śabde*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *amīmet, mimāya; mīmayati*
@@ -511,7 +511,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 `m_a~~h2_00_pwg00`
 
 
-**intro)** 3. *mā*¦, *māti*
+**intro)** 3. *mā*, *māti*
 [DHĀTUP. 24,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *mimīte*
 [25,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) [4,113.](https://ashtadhyayi.com/sutraani/6/4/113) [7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) *mimīmahe, mīmahe* (s. u. *anu* und *upa), mimate* (
 [P. 6,4,112](https://ashtadhyayi.com/sutraani/6/4/112), Sch.),
@@ -525,7 +525,7 @@ In conjunction with *arhasi* st. *na* for metrical reasons: *klaivyaṃ mā gant
 [SIDDH. K. 212,b,5.] *˚māya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69) pass. *mīyate, amāyi, mita* (s. bes.).
 
-- **RU:** 3. *mā*¦, *māti*
+- **RU:** 3. *mā*, *māti*
 [DHĀTUP. 24,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *mimīte*
 [25,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) [4,113.](https://ashtadhyayi.com/sutraani/6/4/113) [7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) *mimīmahe, mīmahe* (s. u. *anu* и *upa), mimate* (
 [P. 6,4,112](https://ashtadhyayi.com/sutraani/6/4/112), Sch.),
@@ -1978,10 +1978,10 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 `m_a~~h3_00_pwg00`
 
 
-4. *mā*¦ (= 3. *mā)* _f._
+4. *mā* (= 3. *mā)* _f._
 
-- **RU:** 4. *mā*¦ (= 3. *mā)* _f._
-- **EN:** 4. *mā*¦ (= 3. *mā)* _f._
+- **RU:** 4. *mā* (= 3. *mā)* _f._
+- **EN:** 4. *mā* (= 3. *mā)* _f._
   <sub>lexicographic</sub>
 
 **1)** 1) Maass
@@ -2019,12 +2019,12 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 `m_a~~h4_00_pwg00`
 
 
-**5)** *mā*¦ *(me), mayate* tauschen
+**5)** *mā* *(me), mayate* tauschen
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
-- **EN:** *mā*¦ *(me), mayate* to exchange
+- **EN:** *mā* *(me), mayate* to exchange
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* and *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
@@ -2080,13 +2080,13 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 **5 (cont. g))** — *vini* s. *vinimaya* .
 - **EN:** — *vini* s. *vinimaya*.
 
-**main)** 5. *mā*¦ *(me), mayate* tauschen
+**main)** 5. *mā* *(me), mayate* tauschen
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
 
-- **RU:** 5. *mā*¦ *(me), mayate* менять, обменивать
+- **RU:** 5. *mā* *(me), mayate* менять, обменивать
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
@@ -2111,12 +2111,12 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 `m_a~~h5_00_pwg00`
 
 
-**6)** *mā*¦ s. u. 1. und 2. *mi* .
-- **EN:** *mā*¦ s. u. 1. and 2. *mi*.
+**6)** *mā* s. u. 1. und 2. *mi* .
+- **EN:** *mā* s. u. 1. and 2. *mi*.
 
-**cross-ref)** 6. *mā*¦ s. u. 1. und 2. *mi* .
+**cross-ref)** 6. *mā* s. u. 1. und 2. *mi* .
 
-- **RU:** 6. *mā*¦ s. u. 1. und 2. *mi* .
+- **RU:** 6. *mā* s. u. 1. und 2. *mi* .
   <sub>lexicographic</sub>
 
 ## mā
@@ -2124,7 +2124,7 @@ measured out, hence as much as = moderate, small, little: *pramitākṣarāṇi 
 `m_a~~h6_00_pwg00`
 
 
-**1)** 1. *mā*¦
+**1)** 1. *mā*
  1)
 Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. hinzuzufügen: *māpatyabuddhimakṛthāḥ*
@@ -2133,7 +2133,7 @@ Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 [BHĀG. P. 10,4,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,4,4) [23,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,29) [29,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,29,31) *mārhatha*
 [32,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,32,21)
 
-- **RU:** 1. *mā*¦
+- **RU:** 1. *mā*
  1)
 Z. 14 следует вставить после 6, 6: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. следует добавить: *māpatyabuddhimakṛthāḥ*
@@ -2141,7 +2141,7 @@ Z. 14 следует вставить после 6, 6: *mā bhūtkālātyayo yat
 [HARIV. 15767.](https://sanskrit-lexicon-scans.github.io/hariv?15767) В конце добавить: *mā hantumarhasi*
 [BHĀG. P. 10,4,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,4,4) [23,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,29) [29,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,29,31) *mārhatha*
 [32,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,32,21)
-- **EN:** *mā*¦
+- **EN:** *mā*
  1)
 Z. 14 after 6, 6 to be inserted: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. to be added: *māpatyabuddhimakṛthāḥ*
@@ -2225,16 +2225,16 @@ Z. 14 after 6, 6 to be inserted: *mā bhūtkālātyayo yathā*
 `m_a~~h7_00_pwg00`
 
 
-**3)** 3. *mā*¦
+**3)** 3. *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)
 
-- **RU:** 3. *mā*¦
+- **RU:** 3. *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)
-- **EN:** *mā*¦
+- **EN:** *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)
@@ -2290,14 +2290,14 @@ Z. 14 after 6, 6 to be inserted: *mā bhūtkālātyayo yathā*
 `m_a~~h8_00_pwg00`
 
 
-**1)** 1. *mā*¦
+**1)** 1. *mā*
  1) *mā bhūdāgataḥ* so v. a. sollte er nicht vielleicht gekommen sein?
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
 
-- **RU:** 1. *mā*¦
+- **RU:** 1. *mā*
  1) *mā bhūdāgataḥ* так v. a. неужели он, пожалуй, пришёл?
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
-- **EN:** *mā*¦
+- **EN:** *mā*
  1) *mā bhūdāgataḥ* so v. a. "should he perhaps not have come?"
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
   <sub>attested</sub>
@@ -2325,9 +2325,9 @@ Z. 8 read 7, 59, 12.
 `m_a~~h9_00_pwg00`
 
 
-**3)** *mā*¦ mit *anu*, partic. *anumita* _n._ Schlussfolgerung
+**3)** *mā* mit *anu*, partic. *anumita* _n._ Schlussfolgerung
 [PAT. a. a. O. 3,78,b.]
-- **EN:** *mā*¦ with *anu*, partic. *anumita* _n._ "conclusion, inference"
+- **EN:** *mā* with *anu*, partic. *anumita* _n._ "conclusion, inference"
 [PAT. a. a. O. 3,78,b.]
 
 **3 (cont.))** — *sam*, die Stelle
@@ -2342,10 +2342,10 @@ Z. 8 read 7, 59, 12.
  2) explained more correctly.
   <sub>attested</sub>
 
-**main)** 3. *mā*¦ mit *anu*, partic. *anumita* _n._ Schlussfolgerung
+**main)** 3. *mā* mit *anu*, partic. *anumita* _n._ Schlussfolgerung
 [PAT. a. a. O. 3,78,b.]
 
-- **RU:** 3. *mā*¦ mit *anu*, partic. *anumita* _n._ умозаключение
+- **RU:** 3. *mā* mit *anu*, partic. *anumita* _n._ умозаключение
 [PAT. a. a. O. 3,78,b.]
   <sub>attested</sub>
 
@@ -2354,15 +2354,15 @@ Z. 8 read 7, 59, 12.
 `m_a~~h10_00_pwg00`
 
 
-**5)** *mā*¦ mit *apa* durch Tausch vergüten, heimgeben: *˚mitya*
+**5)** *mā* mit *apa* durch Tausch vergüten, heimgeben: *˚mitya*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
-- **EN:** *mā*¦ with *apa* to compensate by exchange, to give back in return: *˚mitya*
-[AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
-
-**main)** 5. *mā*¦ mit *apa* durch Tausch vergüten, heimgeben: *˚mitya*
+- **EN:** *mā* with *apa* to compensate by exchange, to give back in return: *˚mitya*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
 
-- **RU:** 5. *mā*¦ mit *apa* вознаграждать путём обмена, воздавать: *˚mitya*
+**main)** 5. *mā* mit *apa* durch Tausch vergüten, heimgeben: *˚mitya*
+[AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
+
+- **RU:** 5. *mā* mit *apa* вознаграждать путём обмена, воздавать: *˚mitya*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
   <sub>attested</sub>
 
@@ -2371,9 +2371,9 @@ Z. 8 read 7, 59, 12.
 `m_a~~h0_zz_pw00`
 
 
-**§1)** **1.** *mā*¦ _Adv._ Conj. nicht (in prohibitiven Sätzen), dass nicht, ach wenn doch nicht, damit nicht.
+**§1)** **1.** *mā* _Adv._ Conj. nicht (in prohibitiven Sätzen), dass nicht, ach wenn doch nicht, damit nicht.
 
-- **RU:** **1.** *mā*¦ _Adv._ Conj. не (в запретительных предложениях), чтобы не, ах если бы только не, дабы не.
+- **RU:** **1.** *mā* _Adv._ Conj. не (в запретительных предложениях), чтобы не, ах если бы только не, дабы не.
 - **EN:** **1.** *mā* — _Adv._ Conj. "not" (in prohibitive clauses), "that not, would that not, lest, in order that not".
   <sub>attested</sub>
 
@@ -2413,9 +2413,9 @@ Z. 8 read 7, 59, 12.
 **§1.12)** — 12〉 *mā* *sma* mit Conj., insbes. Aor. (ausnahmsweise auch mit Augment), und Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) nicht (prohibitiv) und damit nicht (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 - **EN:** — 12) *mā* *sma* with Conj., insbes. Aor. (exceptionally also with augment), and Imper. ([58,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?58)) "not" (prohibitive) and "in order that not" (Aor.). *sma mā-mo* (*mo* [ŚAT. BR.]) *sma* [29,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
 
-**§2)** **2.** √*mā*¦ enklitischer Acc. zu *aham* ich.
+**§2)** **2.** √*mā* enklitischer Acc. zu *aham* ich.
 
-- **RU:** **2.** √*mā*¦ энклитическая форма Acc. к *aham* я.
+- **RU:** **2.** √*mā* энклитическая форма Acc. к *aham* я.
 - **EN:** **2.** √*mā* — enclitic Acc. of *aham* "I".
   <sub>attested</sub>
 
@@ -2484,9 +2484,9 @@ Z. 8 read 7, 59, 12.
 `m_a~~h0_zz_pw01`
 
 
-**§intro)** **3.** √*mā*¦ *māti*, *mimīte* (auch Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
+**§intro)** **3.** √*mā* *māti*, *mimīte* (auch Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
 
-- **RU:** **3.** √*mā*¦ *māti*, *mimīte* (также Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
+- **RU:** **3.** √*mā* *māti*, *mimīte* (также Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
 - **EN:** **3.** √*mā* — *māti*, *mimīte* (also Act. *mimīhi* u. s. w.), **māyate*; *mīyate* Pass.
   <sub>attested</sub>
 
@@ -3352,7 +3352,7 @@ Z. 8 read 7, 59, 12.
 `m_a~~h0_zz_pw03`
 
 
-**§1)** **4.** *mā*¦ _f._
+**§1)** **4.** *mā* _f._
 - **EN:** **4.** *mā* — _f._
 
 **§1.1)** — 1〉 Maass.
@@ -3370,7 +3370,7 @@ Z. 8 read 7, 59, 12.
 - **EN:** — Vgl. **2.** *ma* 2).
   <sub>lexicographic</sub>
 
-**§intro)** **5.** √*mā* (√*mī*)¦ *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (zu belegen nur *mīmayut*), *amīmet*; blöken, brüllen (namentlich von Kühen und Kälbern).
+**§intro)** **5.** √*mā* (√*mī*) *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (zu belegen nur *mīmayut*), *amīmet*; blöken, brüllen (namentlich von Kühen und Kälbern).
 
 - **RU:** *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (засвидетельствовано только *mīmayut*), *amīmet*; блеять, мычать (особенно о коровах и телятах).
 - **EN:** **5.** √*mā* (√*mī*) — *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (attested only *mīmayut*), *amīmet*; "to bleat, to bellow" (especially of cows and calves).
@@ -3400,7 +3400,7 @@ Z. 8 read 7, 59, 12.
 - **EN:** — With **pariṇi* and **praṇi*, *˚mimīte*.
   <sub>attested</sub>
 
-**§intro)** **6.** √*mā*¦, *mayate* lauschen. Simplex nicht zu belegen.
+**§intro)** **6.** √*mā*, *mayate* lauschen. Simplex nicht zu belegen.
 
 - **RU:** *mayate* прислушиваться, подслушивать. Простой глагол не засвидетельствован.
 - **EN:** **6.** √*mā* — *mayate* "to listen, eavesdrop". Simplex not attested.
@@ -3454,19 +3454,19 @@ Z. 8 read 7, 59, 12.
 - **EN:** — With *vi* Pl. approximately "to alternate with one another" [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
   <sub>attested</sub>
 
-**§1)** **7.** *mā*¦ in einigen Formen von **1.** *mi* und **1.** *mī*.
+**§1)** **7.** *mā* in einigen Formen von **1.** *mi* und **1.** *mī*.
 
 - **RU:** *mā* в некоторых формах от **1.** *mi* и **1.** *mī*.
 - **EN:** **7.** *mā* — in some forms of **1.** *mi* and **1.** *mī*.
   <sub>lexicographic</sub>
 
-**§1)** **8.** *mā*¦ Monat im Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
+**§1)** **8.** *mā* Monat im Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
 
 - **RU:** *mā* месяц в Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
 - **EN:** **8.** *mā* — "month" in the Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
   <sub>attested</sub>
 
-**§15)** **3.** √*mā*¦ 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
+**§15)** **3.** √*mā* 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
 - **RU:** 15〉 *mita* наряду с *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 - **EN:** **3.** √*mā* — 15) *mita* alongside *saṃmita* [MAITR. S. 2,11,1 (140,4)].
@@ -3481,13 +3481,13 @@ Z. 8 read 7, 59, 12.
 - **EN:** — With *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
-**§1)** **1.** *mā*¦ mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+**§1)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
 - **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что v. a. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 - **EN:** **1.** *mā* — with Präs. "in order that not" [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* with Präs. so v. a. "otherwise, else" [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrically [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>attested</sub>
 
-**§v5)** **3.** √*mā*¦ V. 5.
+**§v5)** **3.** √*mā* V. 5.
 
 - **RU:** V. 5.
 - **EN:** **3.** √*mā* — V. 5.
@@ -3511,7 +3511,7 @@ Z. 8 read 7, 59, 12.
 - **EN:** — With *sam* V. 5.
   <sub>attested</sub>
 
-**1)** **4.** *mā*¦ _f._
+**1)** **4.** *mā* _f._
 — 1〉 Maass.
 
 - **RU:** 1〉 мера.
@@ -3539,24 +3539,24 @@ Z. 8 read 7, 59, 12.
 `m_a~~h0_zz_sch`
 
 
-**1)** mā¦ mit Praes. damit nicht, [R. Gorr. 1,65,21.] purā mā mit Praes. so v.a. sonst, andernfalls,3,68,44. mā gantum arhasi metrisch statt na gan˚,2,116,5.
-- **EN:** mā¦ with Praes. so that not, [R. Gorr. 1,65,21.] purā mā with Praes. so v.a. otherwise, else, 3,68,44. mā gantum arhasi metrically for na gan˚, 2,116,5.
+**1)** mā mit Praes. damit nicht, [R. Gorr. 1,65,21.] purā mā mit Praes. so v.a. sonst, andernfalls,3,68,44. mā gantum arhasi metrisch statt na gan˚,2,116,5.
+- **EN:** mā with Praes. so that not, [R. Gorr. 1,65,21.] purā mā with Praes. so v.a. otherwise, else, 3,68,44. mā gantum arhasi metrically for na gan˚, 2,116,5.
 
-**3)** mā¦ 15. mitá neben sáṃmita [Maitr. S. 2,11,1] (140,4). — Mit ā 1. bilden, hervorbringen, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07) — 2. herbeischaffen, [ṚV. 10,56,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02) — Mit pra, pramita m. ˚ein Toter, [S I,150,2.] — Desid. sich über etwas (Akk.) eine richtige Vorstellung zu bilden wünschen, Bhāmatī 616,9. — Mit sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
-- **EN:** mā¦ 15. mitá beside sáṃmita [Maitr. S. 2,11,1] (140,4). — With ā 1. to form, to bring forth, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07) — 2. to procure, to bring (something), [ṚV. 10,56,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02) — With pra, pramita m. ˚a dead man, [S I,150,2.] — Desid. to wish to form a correct notion about something (Acc.), Bhāmatī 616,9. — With sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
+**3)** mā 15. mitá neben sáṃmita [Maitr. S. 2,11,1] (140,4). — Mit ā 1. bilden, hervorbringen, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07) — 2. herbeischaffen, [ṚV. 10,56,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02) — Mit pra, pramita m. ˚ein Toter, [S I,150,2.] — Desid. sich über etwas (Akk.) eine richtige Vorstellung zu bilden wünschen, Bhāmatī 616,9. — Mit sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
+- **EN:** mā 15. mitá beside sáṃmita [Maitr. S. 2,11,1] (140,4). — With ā 1. to form, to bring forth, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07) — 2. to procure, to bring (something), [ṚV. 10,56,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02) — With pra, pramita m. ˚a dead man, [S I,150,2.] — Desid. to wish to form a correct notion about something (Acc.), Bhāmatī 616,9. — With sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
 
-**4)** Mā¦ ˚ = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī in mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Sollte nicht māpatya bei Böhtlingk als mā + apatya zu fassen, d. h. mā hier = Lakṣmī sein? [Z.]
+**4)** Mā ˚ = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī in mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Sollte nicht māpatya bei Böhtlingk als mā + apatya zu fassen, d. h. mā hier = Lakṣmī sein? [Z.]
 
 - **RU:** Mā = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī в mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Не следует ли māpatya у Бётлинка понимать как mā + apatya, то есть mā здесь = Lakṣmī? [Z.]
-- **EN:** Mā¦ ˚ = Lakṣmī, [S I,53,5] q.v. (Ko.); [Vās. 122,5.] — mā = Lakṣmī in mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Should not māpatya in Böhtlingk be understood as mā + apatya, i.e. should mā here be = Lakṣmī? [Z.]
+- **EN:** Mā ˚ = Lakṣmī, [S I,53,5] q.v. (Ko.); [Vās. 122,5.] — mā = Lakṣmī in mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Should not māpatya in Böhtlingk be understood as mā + apatya, i.e. should mā here be = Lakṣmī? [Z.]
   <sub>lexicographic</sub>
 
-**SCH-1)** 1. mā¦ mit Praes. damit nicht, [R. Gorr. 1,65,21.] purā mā mit Praes. so v.a. sonst, andernfalls,3,68,44. mā gantum arhasi metrisch statt na gan˚,2,116,5.
+**SCH-1)** 1. mā mit Praes. damit nicht, [R. Gorr. 1,65,21.] purā mā mit Praes. so v.a. sonst, andernfalls,3,68,44. mā gantum arhasi metrisch statt na gan˚,2,116,5.
 
 - **RU:** 1. mā с Praes. чтобы не; [R. Gorr. 1,65,21.] purā mā с Praes. = иначе, в противном случае, 3,68,44. mā gantum arhasi метрически вместо na gan˚, 2,116,5.
   <sub>attested</sub>
 
-**SCH-15)** 3. mā¦ 15. mitá neben sáṃmita [Maitr. S. 2,11,1] (140,4).
+**SCH-15)** 3. mā 15. mitá neben sáṃmita [Maitr. S. 2,11,1] (140,4).
 
 - **RU:** 3. mā 15. mitá наряду с sáṃmita [Maitr. S. 2,11,1] (140,4).
   <sub>attested</sub>
@@ -3591,19 +3591,19 @@ Z. 8 read 7, 59, 12.
 `m_a~~h0_zz_pwkvn`
 
 
-**pwkvn-3-15)** **3.** *mā*¦ 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)]. — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02). — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
-- **EN:** **3.** *mā*¦ 15〉 *mita* beside *saṃmita* [MAITR. S. 2,11,1 (140,4)]. — With *ā* 1〉 'to form, produce' [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2〉 'to procure, bring' [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02). — With *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
+**pwkvn-3-15)** **3.** *mā* 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)]. — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02). — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
+- **EN:** **3.** *mā* 15〉 *mita* beside *saṃmita* [MAITR. S. 2,11,1 (140,4)]. — With *ā* 1〉 'to form, produce' [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07). — 2〉 'to procure, bring' [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02). — With *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
-**pwkvn-1)** **1.** *mā*¦ mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+**pwkvn-1)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
 - **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что v. a. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
-- **EN:** **1.** *mā*¦ with Präs. 'lest, so that not' [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* with Präs. so v. a. 'otherwise, else' [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrically [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+- **EN:** **1.** *mā* with Präs. 'lest, so that not' [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* with Präs. so v. a. 'otherwise, else' [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrically [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>attested</sub>
 
-**pwkvn-3-V5)** **3.** *mā*¦ V. 5. — Mit *ā* 5. — Mit *pra* Desid. sich über Etwas (Acc.) eine richtige Vorstellung zu bilden wünschen [BHĀMATĪ 616,9]. — Mit *sam* V. 5.
-- **EN:** **3.** *mā*¦ V. 5. — With *ā* 5. — With *pra* Desid. 'about something' (Acc.) 'to wish to form a correct notion' [BHĀMATĪ 616,9]. — With *sam* V. 5.
+**pwkvn-3-V5)** **3.** *mā* V. 5. — Mit *ā* 5. — Mit *pra* Desid. sich über Etwas (Acc.) eine richtige Vorstellung zu bilden wünschen [BHĀMATĪ 616,9]. — Mit *sam* V. 5.
+- **EN:** **3.** *mā* V. 5. — With *ā* 5. — With *pra* Desid. 'about something' (Acc.) 'to wish to form a correct notion' [BHĀMATĪ 616,9]. — With *sam* V. 5.
 
-**PWKVN-15)** **3.** *mā*¦ 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
+**PWKVN-15)** **3.** *mā* 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
 - **RU:** 15〉 *mita* наряду с *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
@@ -3623,7 +3623,7 @@ Z. 8 read 7, 59, 12.
 - **RU:** — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
-**PWKVN-3-V5)** **3.** *mā*¦ V. 5.
+**PWKVN-3-V5)** **3.** *mā* V. 5.
 
 - **RU:** V. 5.
   <sub>attested</sub>

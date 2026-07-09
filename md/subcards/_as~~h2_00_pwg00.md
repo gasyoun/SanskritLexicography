@@ -3,7 +3,7 @@
 `_as~~h2_00_pwg00`
 
 
-**0)** 3. *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
+**0)** 3. *ās* os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 - **EN:** 3. *ās* — os, mouth, face; used only in two forms:
 
 **1)** 1) abl. *āsas* (mit *ā*) von Mund zu Mund, aus unmittelbarer Nähe: *vaṣaṭte viṣṇavāsa ā kṛṇomi*
@@ -63,7 +63,7 @@
 [168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) Vgl. *āsayā*. — In the comp. s. *ādaghna, āspātra, anās, svās*; vgl. also still *āsan* and *āsya*.
   <sub>attested</sub>
 
-**3)** *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
+**3)** *ās* os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 
-- **RU:** *ās*¦ уста, рот, лицо; употребляется лишь в двух формах:
+- **RU:** *ās* уста, рот, лицо; употребляется лишь в двух формах:
   <sub>attested</sub>

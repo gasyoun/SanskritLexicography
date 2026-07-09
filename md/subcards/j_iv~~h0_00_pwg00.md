@@ -3,7 +3,7 @@
 `j_iv~~h0_00_pwg00`
 
 
-**1)** *jīv*¦, *jīvati* (in gebundener Rede auch med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+**1)** *jīv*, *jīvati* (in gebundener Rede auch med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
  1) leben
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*
@@ -53,7 +53,7 @@
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
 
-- **RU:** *jīv*¦, *jīvati* (в стихотворной речи также med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+- **RU:** *jīv*, *jīvati* (в стихотворной речи также med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
 1) жить
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*
@@ -102,7 +102,7 @@
 [AV. 6,109,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.01) pass. impers.: *yajjīvyate kṣaṇamapi — manuṣyaiḥ*
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
-- **EN:** *jīv*¦, *jīvati* (in poetic speech also med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+- **EN:** *jīv*, *jīvati* (in poetic speech also med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
  1) *to live*
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*

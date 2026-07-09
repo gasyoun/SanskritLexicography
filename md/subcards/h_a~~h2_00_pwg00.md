@@ -3,7 +3,7 @@
 `h_a~~h2_00_pwg00`
 
 
-**3)** 3. *hā*¦ _interj._ gaṇa *cādi*
+**3)** 3. *hā* _interj._ gaṇa *cādi*
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des Staunens; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
@@ -61,7 +61,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* die neuere Ausg.) *hā heti vādinau* als Ausdruck des Behagens
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
 
-- **RU:** 3. *hā*¦ _interj._ gaṇa *cādi*
+- **RU:** 3. *hā* _interj._ gaṇa *cādi*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) боли и удивления; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
@@ -118,7 +118,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* более новое Ausg.) *hā heti vādinau* как выражение удовольствия
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
-- **EN:** 3. *hā*¦ _interj._ gaṇa *cādi*
+- **EN:** 3. *hā* _interj._ gaṇa *cādi*
 as an exclamation [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) of pain and astonishment; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*

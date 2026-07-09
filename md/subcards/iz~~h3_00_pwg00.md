@@ -3,7 +3,7 @@
 `iz~~h3_00_pwg00`
 
 
-3. *iṣ*¦, *icchati*
+3. *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
@@ -11,7 +11,7 @@
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
 
-- **RU:** 3. *iṣ*¦, *icchati*
+- **RU:** 3. *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
@@ -20,14 +20,14 @@
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
   <sub>attested</sub>
 
-**intro)** *iṣ*¦, *icchati*
+**intro)** *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
 [P. 3,1,85](https://ashtadhyayi.com/sutraani/3/1/85), Kār., Sch.)
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
-- **EN:** *iṣ*¦, *icchati*
+- **EN:** *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* and *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. and epic

@@ -3,14 +3,14 @@
 `p_a~~h2_00_pwg00`
 
 
-**3.intro)** *pā*¦, *pāti*
+**3.intro)** *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* und *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
-- **EN:** *pā*¦, *pāti*
+- **EN:** *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* and *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
 
-**1)** 3. *pā*¦, *pāti*
+**1)** 3. *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* und *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
  1) bewachen, bewahren, schützen, schirmen, hüten vor (abl.): *māsaśca pāthaḥ śaradaśca pūrvīḥ*
@@ -52,7 +52,7 @@
 [TRIK. 3,3,169.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,169)
 [MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32)
 
-- **RU:** 3. *pā*¦, *pāti*
+- **RU:** 3. *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* и *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
  1) стеречь, хранить, защищать, охранять, оберегать от (abl.): *māsaśca pāthaḥ śaradaśca pūrvīḥ*

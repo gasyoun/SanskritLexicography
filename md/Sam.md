@@ -7,9 +7,9 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 `_sam~~h0_00_pwg00`
 
 
-**etym)** *śam*¦, *śamīṣva, śamīdhvam*
+**etym)** *śam*, *śamīṣva, śamīdhvam*
 [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) und die Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita* .
-- **EN:** *śam*¦, *śamīṣva, śamīdhvam* [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) and the Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita*.
+- **EN:** *śam*, *śamīṣva, śamīdhvam* [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) and the Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita*.
 
 **1)** 1) sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 [ṚV. 6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *īje yajñebhiḥ śaśame śamībhiḥ*
@@ -52,7 +52,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 `_sam~~h1_00_pwg00`
 
 
-**etym)** *śam*¦, *śāmyati*
+**etym)** *śam*, *śāmyati*
 [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74)
 [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet*
@@ -61,7 +61,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 [VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* und *śāmam* (angeblich vom caus.)
 [P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), Schol. pass. impers. *śamyate, aśami*
 [P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
-- **EN:** *śam*¦, *śāmyati* [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*). [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet* [R. GORR. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,14) *śaśāma, aśamat*; in the epic, for metrical reasons, also med.; *śamitvā* and *śāntvā* [P. 7,2,56.](https://ashtadhyayi.com/sutraani/7/2/56) [VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* and *śāmam* (allegedly from the caus.) [P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), Schol. pass. impers. *śamyate, aśami* [P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
+- **EN:** *śam*, *śāmyati* [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*). [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet* [R. GORR. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,14) *śaśāma, aśamat*; in the epic, for metrical reasons, also med.; *śamitvā* and *śāntvā* [P. 7,2,56.](https://ashtadhyayi.com/sutraani/7/2/56) [VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* and *śāmam* (allegedly from the caus.) [P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), Schol. pass. impers. *śamyate, aśami* [P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
 
 **1)** [VOP. 24,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,6) partic. *śānta* s. bes. ruhig —, still werden, befriedigt sein; aufhören, sich legen, erlöschen: *bhūtānyaśāmyan*
 [VS. 14,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,31) *imau lokāvaśāmyatām*
@@ -107,7 +107,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 
 [MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) (med.). *pittaṃ śarkarayā* [Spr. 3243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3243) *vṛddhaṃ rajaḥ* [BHAṬṬ. 17,63.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,63) *śāmyannimeṣa* [11,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,31) *astram* [MĀRK. P. 63,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?63,35) *himena himaṃ śāmyedduṣkṛteneva duṣkṛtam* [RĀJA-TAR. 5,400.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,400) *śemuśca pāpāni narendrasūnoḥ* [HARIV. 8404.](https://sanskrit-lexicon-scans.github.io/hariv?8404) *aśeṣāṇi ghorāṇi* [MĀRK. P. 58,72.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,72) [PAÑCAR. 4,3,1](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,1) (*sāmyet* geder.). *divyam* (sc. *vaikṛtam*) [VARĀH. BṚH. S. 46,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,5) [48,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,84) *brāhmaṇastvanadhīyānastṛṇāgniriva śāmyati* [M. 3,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,168) *tejaḥ* [9,321.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,321) *tejāṃsi ca tamāṃsi ca* [MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) *agnimārutau* [HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (med.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* to be read with the more recent Ausg.). *davāgniḥ* [RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ* [Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422) (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ* [KATHĀS. 16,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,15) *dehadāhaḥ* [GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41) [BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
 
-**main)** 2. *śam*¦, *śāmyati*
+**main)** 2. *śam*, *śāmyati*
 [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74)
 [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet*
@@ -157,7 +157,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 [GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41)
 [BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
 
-- **RU:** 2. *śam*¦, *śāmyati*
+- **RU:** 2. *śam*, *śāmyati*
 [DHĀTUP. 26,92](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*upaśame*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74)
 [VOP. 11,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) (*pra*) *śamet*
@@ -1321,18 +1321,18 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 `_sam~~h2_00_pwg00`
 
 
-**main)** 3. *śam*¦, *śamnāti = vadhakarman*
+**main)** 3. *śam*, *śamnāti = vadhakarman*
 [NAIGH. 2,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,19)
 [NIR. 1,10](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,10) (= *hinasti* D.). Jmd ein Leid zufügen: *mā naḥ śamnīthāḥ kathā naḥ śamnīṣa iti*
 [KĀṬH. 10,7.]
 — Vgl. 2. *śam* caus. 1) b).
 
-- **RU:** 3. *śam*¦, *śamnāti = vadhakarman*
+- **RU:** 3. *śam*, *śamnāti = vadhakarman*
 [NAIGH. 2,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,19)
 [NIR. 1,10](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,10) (= *hinasti* D.). причинять кому-либо вред: *mā naḥ śamnīthāḥ kathā naḥ śamnīṣa iti*
 [KĀṬH. 10,7.]
 — Vgl. 2. *śam* caus. 1) b).
-- **EN:** 3. *śam*¦, *śamnāti = vadhakarman*
+- **EN:** 3. *śam*, *śamnāti = vadhakarman*
 [NAIGH. 2,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,19)
 [NIR. 1,10](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,10) (= *hinasti* D.). To cause someone harm: *mā naḥ śamnīthāḥ kathā naḥ śamnīṣa iti*
 [KĀṬH. 10,7.]
@@ -1344,7 +1344,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 `_sam~~h3_00_pwg00`
 
 
-**main)** 4. *śam*¦, *śamayati* und *śāmayati* (vgl.
+**main)** 4. *śam*, *śamayati* und *śāmayati* (vgl.
 [DHĀTUP. 19,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) [33,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) das med. nicht zu belegen). Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen: *niśamya* absol.
 [MBH. 1,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1237) [4228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4228) *taṃ niśamya vṛtaṃ pāṇḍum* dass
 [4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (mit gen., *viśamya* fehlerhaft für *niśamya*).
@@ -1369,7 +1369,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 [MĀRK. P. 14,63.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,63) — *niśamyamāna* mit act. Bed. und gen.
 [R. ed. Bomb. 2,66,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,66,10) Vgl. *niśamana, niśāma, niśāmana* .
 
-- **RU:** 4. *śam*¦, *śamayati* и *śāmayati* (vgl.
+- **RU:** 4. *śam*, *śamayati* и *śāmayati* (vgl.
 [DHĀTUP. 19,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) [33,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) med. не засвидетельствовано). С *ni* замечать, воспринимать, слышать, узнавать, познавать: *niśamya* absol.
 [MBH. 1,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1237) [4228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4228) *taṃ niśamya vṛtaṃ pāṇḍum* что
 [4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (с gen., *viśamya* ошибочно вместо *niśamya*).
@@ -1393,7 +1393,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 [HARIV. 1012.](https://sanskrit-lexicon-scans.github.io/hariv?1012)
 [MĀRK. P. 14,63.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,63) — *niśamyamāna* с act. Bed. и gen.
 [R. ed. Bomb. 2,66,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,66,10) Vgl. *niśamana, niśāma, niśāmana* .
-- **EN:** 4. *śam*¦, *śamayati* and *śāmayati* (vgl.
+- **EN:** 4. *śam*, *śamayati* and *śāmayati* (vgl.
 [DHĀTUP. 19,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) [33,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) the med. not to be attested). With *ni* to perceive, become aware, apprehend, hear, learn, come to know: *niśamya* absol.
 [MBH. 1,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1237) [4228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4228) *taṃ niśamya vṛtaṃ pāṇḍum* that
 [4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (with gen., *viśamya* erroneously for *niśamya*).
@@ -1557,7 +1557,7 @@ _PWG article — 38 sub-card(s), 223 sense(s) · RU 173/223 · EN 170/223_
 `_sam~~h4_00_pwg00`
 
 
-**1)** 5. *śam*¦ indecl. gaṇa *svarādi*
+**1)** 5. *śam* indecl. gaṇa *svarādi*
 zu [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 zu [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) wohlthätig, zum Vortheil, — Heil; wohl, gut, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*
@@ -1604,7 +1604,7 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 [BHĀG. P. 3,5,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,4) *śaṃ yoḥ* s. u. *yos* . Sammlung von Beispielen bei
 [M. MÜLLER, Transl. 1,180.]
 
-- **RU:** 5. *śam*¦ indecl. gaṇa *svarādi*
+- **RU:** 5. *śam* indecl. gaṇa *svarādi*
 к [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 к [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) благодетельный, на благо, — во спасение; хорошо, благо, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*
@@ -1650,7 +1650,7 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 [BURNOUF] раздельно) *naḥ*
 [BHĀG. P. 3,5,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,4) *śaṃ yoḥ* s. u. *yos* . Собрание примеров у
 [M. MÜLLER, Transl. 1,180.]
-- **EN:** 5. *śam*¦ indecl. gaṇa *svarādi*
+- **EN:** 5. *śam* indecl. gaṇa *svarādi*
 to [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37) *cādi*
 to [4,57.](https://ashtadhyayi.com/sutraani/1/4/57) = *sukha, ānanda, kalyāṇa*
 u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6) [AK. 3,5,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,10) [TRIK. 1,1,113.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,113) [H. 1535.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535) [an. 7,15.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,15) [MED. avy. 54.] [HALĀY. 1,123.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,123) beneficent, advantageous, conducive to welfare; well, good, bene: *hinvanti śaṃ rājyaṃ rodasyoḥ*
@@ -1703,12 +1703,12 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h5_00_pwg00`
 
 
-**1)** 2. *śam*¦, intens. absol. *śaṃśamam* und *śaṃśāmam*
+**1)** 2. *śam*, intens. absol. *śaṃśamam* und *śaṃśāmam*
 [PAT. a. a. O. 6 (4),32,b.]
 
-- **RU:** 2. *śam*¦, intens. absol. *śaṃśamam* и *śaṃśāmam*
+- **RU:** 2. *śam*, intens. absol. *śaṃśamam* и *śaṃśāmam*
 [PAT. a. a. O. 6 (4),32,b.]
-- **EN:** 2. *śam*¦, intens. absol. *śaṃśamam* and *śaṃśāmam*
+- **EN:** 2. *śam*, intens. absol. *śaṃśamam* and *śaṃśāmam*
 [PAT. a. a. O. 6 (4),32,b.]
   <sub>attested</sub>
 
@@ -1717,16 +1717,16 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h6_00_pwg00`
 
 
-**1)** 4. *śam*¦ mit *ni*, absol. *niśamya* und *niśamayya*
+**1)** 4. *śam* mit *ni*, absol. *niśamya* und *niśamayya*
 [VĀMANA 5,2,76.]
 — *anuni*
 [PAT. a. a. O. 1,16,b.]
 
-- **RU:** 4. *śam*¦ с *ni*, absol. *niśamya* и *niśamayya*
+- **RU:** 4. *śam* с *ni*, absol. *niśamya* и *niśamayya*
 [VĀMANA 5,2,76.]
 — *anuni*
 [PAT. a. a. O. 1,16,b.]
-- **EN:** 4. *śam*¦ with *ni*, absol. *niśamya* and *niśamayya*
+- **EN:** 4. *śam* with *ni*, absol. *niśamya* and *niśamayya*
 [VĀMANA 5,2,76.]
 — *anuni*
 [PAT. a. a. O. 1,16,b.]
@@ -1737,12 +1737,12 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h0_zz_pw00`
 
 
-**1)** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+**1)** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 
-- **RU:** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 стараться, усердно трудиться, работать; insbes. о деятельности при богослужении.
-- **EN:** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **EN:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 to toil, be zealous, work; insbes. of activity in the cult.
   <sub>attested</sub>
 
@@ -1758,12 +1758,12 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 - **EN:** — 3〉 *śaśamāna* zealously engaged, occupied, diligent; especially in work for the gods.
   <sub>attested</sub>
 
-**1)** **2.** √*śam*¦, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
+**1)** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 ruhig —, still werden, befriedigt sein.
 
-- **RU:** **2.** √*śam*¦, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
+- **RU:** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 успокаиваться, затихать, быть удовлетворённым.
-- **EN:** **2.** √*śam*¦, *śāmyati* (metrically also Med. and *śamet*; *Pass. impers. *śamyate, aśami*)
+- **EN:** **2.** √*śam*, *śāmyati* (metrically also Med. and *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 to become calm, still, satisfied.
   <sub>attested</sub>
 
@@ -2339,15 +2339,15 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h0_zz_pw01`
 
 
-**1)** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) Jmd ein Leid zufügen. Nur *śamnīṣe* und *śamnīthās* zu belegen.
+**1)** **3.** √*śam*, **śamnāti* (*vadhakarman*) Jmd ein Leid zufügen. Nur *śamnīṣe* und *śamnīthās* zu belegen.
 
-- **RU:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) причинить кому-либо вред. Засвидетельствовано лишь в *śamnīṣe* и *śamnīthās*.
-- **EN:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) to inflict suffering on someone. Only *śamnīṣe* and *śamnīthās* to be attested.
+- **RU:** **3.** √*śam*, **śamnāti* (*vadhakarman*) причинить кому-либо вред. Засвидетельствовано лишь в *śamnīṣe* и *śamnīthās*.
+- **EN:** **3.** √*śam*, **śamnāti* (*vadhakarman*) to inflict suffering on someone. Only *śamnīṣe* and *śamnīthās* to be attested.
   <sub>attested</sub>
 
-**ā_1)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+**ā_1)** **4.** √*śam*, *śamayati* und *śāmayati*.
 — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).
-- **EN:** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+- **EN:** **4.** √*śam*, *śamayati* und *śāmayati*.
 — With *ni* to notice, perceive, hear, learn, come to know — that something is or was (with predicative Acc.). Once also with Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* with act. (!) Bed. und Gen. (v. l. but *niśamya*).
 
 **abhi_1)** — Mit *anuni*
@@ -2401,12 +2401,12 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 - **EN:** — With *saṃni* to perceive, come to know.
   <sub>attested</sub>
 
-**1)** **5.** *śam*¦ _Indecl._
+**1)** **5.** *śam* _Indecl._
 — 1〉 wohlthätig, zum Vortheil, — Heil.
 
-- **RU:** **5.** *śam*¦ _Indecl._
+- **RU:** **5.** *śam* _Indecl._
 — 1〉 благотворный, на пользу, во благо.
-- **EN:** **5.** *śam*¦ _Indecl._
+- **EN:** **5.** *śam* _Indecl._
 — 1〉 beneficial, to the advantage, to the welfare.
   <sub>attested</sub>
 
@@ -2416,15 +2416,15 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 - **EN:** — 2〉 as substantive: welfare, weal, happiness, blessing, with Dat. or Gen.
   <sub>attested</sub>
 
-**1)** **1.** √*śam*¦ mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
+**1)** **1.** √*śam* mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
 
-- **RU:** **1.** √*śam*¦ с *ni* VI. гаснуть, угасать [DHARMAŚARM. 13,41].
-- **EN:** **1.** √*śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
+- **RU:** **1.** √*śam* с *ni* VI. гаснуть, угасать [DHARMAŚARM. 13,41].
+- **EN:** **1.** √*śam* with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
   <sub>attested</sub>
 
-**main)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+**main)** **4.** √*śam*, *śamayati* und *śāmayati*.
 
-- **RU:** **4.** √*śam*¦, *śamayati* и *śāmayati*.
+- **RU:** **4.** √*śam*, *śamayati* и *śāmayati*.
   <sub>attested</sub>
 
 **mit upasarga 1 (прист. с управлением))** — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).
@@ -2437,8 +2437,8 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h0_zz_sch`
 
 
-**ni)** 1. śam¦ mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
-- **EN:** 1. śam¦ with ni to be extinguished, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
+**ni)** 1. śam mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
+- **EN:** 1. śam with ni to be extinguished, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
 
 **ni_erlöschen)** 1. śam mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
 
@@ -2450,10 +2450,10 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 `_sam~~h0_zz_pwkvn`
 
 
-**vi)** **1.** *śam*¦ mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
+**vi)** **1.** *śam* mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
 
-- **RU:** **1.** *śam*¦ с *ni* VI. угасать [DHARMAŚARM. 13,41].
-- **EN:** **1.** *śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
+- **RU:** **1.** *śam* с *ni* VI. угасать [DHARMAŚARM. 13,41].
+- **EN:** **1.** *śam* with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
   <sub>attested</sub>
 
 ## śam

@@ -3,10 +3,10 @@
 `sa_mkalik_a`
 
 
-**1)** *saṃkalikā*¦ _f._
+**1)** *saṃkalikā* _f._
 [BURNOUF, Intr. 258, N. 3.]
 
-- **RU:** *saṃkalikā*¦ _f._
+- **RU:** *saṃkalikā* _f._
 [BURNOUF, Intr. 258, N. 3.]
   <sub>lexicographic</sub>
 

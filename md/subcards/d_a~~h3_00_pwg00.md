@@ -3,13 +3,13 @@
 `d_a~~h3_00_pwg00`
 
 
-4. *dā*¦, *dyati*
+4. *dā*, *dyati*
 δέω, binden (fehlt im
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* lass dich binden (nach
 [MAHĪDH.] von 1. *dā*)
 [VS. 38,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?38,3)
 
-- **RU:** 4. *dā*¦, *dyati*
+- **RU:** 4. *dā*, *dyati*
 δέω, вязать, связывать (отсутствует в
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* дай себя связать (по
 [MAHĪDH.] от 1. *dā*)

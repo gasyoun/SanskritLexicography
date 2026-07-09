@@ -3,7 +3,7 @@
 `na_s~~h2_00_pwg00`
 
 
-**1)** 3. *naś*¦ (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+**1)** 3. *naś* (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* und *ānaṭ* werden vom
 Schol. zu [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) und [SIDDH. K. 222,a] hierher gezogen, können aber füglich auf 1. *aś* zurückgeführt werden); *naṃśi* aor. erreichen, erlangen; treffen, zu Theil werden: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*
@@ -18,7 +18,7 @@ Schol. zu [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) und [SIDDH. K. 22
 [7,32,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.21) — caus. eintreffen machen(?): *yuvaṃ kavī ṣṭhaḥ paryaśvinā rathaṃ viśo na kutso jariturnaśāyathaḥ*
 [ṚV. 10,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06)
 
-- **RU:** 3. *naś*¦ (так v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+- **RU:** 3. *naś* (так v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* и *ānaṭ* привлечены
 Schol. к [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) и [SIDDH. K. 222,a] сюда, но вполне могут быть возведены к 1. *aś*); *naṃśi* aor. достигать, получать; настигать, доставаться: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*
@@ -32,7 +32,7 @@ Schol. к [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) и [SIDDH. K. 222
 [1,123,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.11) [165,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.09) [8,31,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.17) *na sredhantaṃ rayirnaśat*
 [7,32,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.21) — caus. заставлять прибывать (?): *yuvaṃ kavī ṣṭhaḥ paryaśvinā rathaṃ viśo na kutso jariturnaśāyathaḥ*
 [ṚV. 10,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06)
-- **EN:** 3. *naś*¦ (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+- **EN:** 3. *naś* (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* and *ānaṭ* are adduced by
 Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) and [SIDDH. K. 222,a] here, but can readily be referred back to 1. *aś*); *naṃśi* aor. to reach, to attain; to meet, to fall to one's share: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*

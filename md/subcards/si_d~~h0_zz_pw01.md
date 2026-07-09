@@ -3,10 +3,10 @@
 `si_d~~h0_zz_pw01`
 
 
-**2.** √*sidh*¦, *sidhyati* (metrisch oder ungenau auch Med.)
+**2.** √*sidh*, *sidhyati* (metrisch oder ungenau auch Med.)
 
-- **RU:** **2.** √*sidh*¦, *sidhyati* (метрически или неточно также Med.)
-- **EN:** **2.** √*sidh*¦, *sidhyati* (metrically or loosely also Med.)
+- **RU:** **2.** √*sidh*, *sidhyati* (метрически или неточно также Med.)
+- **EN:** **2.** √*sidh*, *sidhyati* (metrically or loosely also Med.)
   <sub>attested</sub>
 
 **1)** — 1〉 Zum Ziele kommen, treffen; mit Loc.

@@ -7,12 +7,12 @@ _PWG article — 55 sub-card(s), 362 sense(s) · RU 362/362 · EN 0/362_
 `vid~~h0_00_pwg00`
 
 
-**1)** *vid*¦, *vetti* (*jñāne*)
+**1)** *vid*, *vetti* (*jñāne*)
 [DHĀTUP. 24,56.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) Im Veda: *viddhi, vittāt, vittam, vidyām, vedat, vedathas, vedati, avet, vet* (*aves* aus den Saṃhitā nicht zu belegen; über *ves* s. unter 1. *viṣ* und *vī); veda, vettha, vidathus, vidma, vida, vidus, vidvaṃs* (s. bes.). In den
 [BRĀHMAṆA] u. s. w. : *vidmasi*
 [ŚĀṄKH. ŚR. 15,27,3.] *vittha*
 
-- **RU:** *vid*¦, *vetti* (*jñāne*)
+- **RU:** *vid*, *vetti* (*jñāne*)
 [DHĀTUP. 24,56.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) В Veda: *viddhi, vittāt, vittam, vidyām, vedat, vedathas, vedati, avet, vet* (*aves* из Saṃhitā не засвидетельствовано; о *ves* s. см. под 1. *viṣ* и *vī); veda, vettha, vidathus, vidma, vida, vidus, vidvaṃs* (s. bes.). В
 [BRĀHMAṆA] u. s. w. : *vidmasi*
 [ŚĀṄKH. ŚR. 15,27,3.] *vittha*
@@ -1261,10 +1261,10 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 `vid~~h0_zz_pw00`
 
 
-**1)** **1.** √*vid*¦, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
+**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
 — 1〉 Etwas oder Jmd kennen lernen, erkennen; wissen, begreifen, sich auf Etwas verstehen, Etwas oder Jmd erkennen, wissen von Jmd, ein Bewusstsein von Etwas haben ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), eine richtige Vorstellung haben von; in der älteren Sprachen mit Acc. oder Gen., in der späteren mit Acc. Mit Infin. verstehen zu [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
 
-- **RU:** **1.** √*vid*¦, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
+- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
 — 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чём-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чём-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
   <sub>attested</sub>
 
@@ -1707,9 +1707,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** — Caus. чувствовать, испытывать на себе [LALIT. 147,11. 439,9].
   <sub>attested</sub>
 
-**3)** **2.** *vid*¦
+**3)** **2.** *vid*
 
-- **RU:** **2.** *vid*¦
+- **RU:** **2.** *vid*
   <sub>attested</sub>
 
 **1)** — 1〉 Nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner. Gewöhnlich in Comp. mit seinem Obj. Superl. *˚vittama*.
@@ -1732,10 +1732,10 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 `vid~~h0_zz_pw01`
 
 
-**PW-3)** **3.** √*vid*¦, *vindati*, *˚te* (nur diese Formen in der späteren Sprache), *vidati*, *viddhi*, *vitse*, *vide*;
+**PW-3)** **3.** √*vid*, *vindati*, *˚te* (nur diese Formen in der späteren Sprache), *vidati*, *viddhi*, *vitse*, *vide*;
 — 1〉 finden, habhaft werden, antreffen, sich aneignen, erwerben, gewinnen, theilhaftig werden; besitzen. *diśaḥ* so v. a. sich in den Weltgegenden zurechtfinden.
 
-- **RU:** **3.** √*vid*¦, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
+- **RU:** **3.** √*vid*, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
 — 1) *найти*, *завладеть, застать, овладеть чем-либо*; *приобрести, добыть*, *стать причастным чему-либо*; *обладать*. *diśaḥ*, так v. a. *ориентироваться в странах света*.
   <sub>attested</sub>
 
@@ -2090,9 +2090,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** — С *abhisam* Med. {сходиться, встречаться}.
   <sub>attested</sub>
 
-**3)** **4.** *˚vid*¦ _Adj._
+**3)** **4.** *˚vid* _Adj._
 
-- **RU:** **4.** *˚vid*¦ _Adj._
+- **RU:** **4.** *˚vid* _Adj._
   <sub>attested</sub>
 
 **1)** — 1〉 findend, gewinnend.
@@ -2105,9 +2105,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** — 2〉 {доставляющий, добывающий}.
   <sub>attested</sub>
 
-**2)** **5.** √*vid*¦, *vintte* (*vicāraṇe*) halten für, mit doppeltem Acc. [BHAṬṬ.] **vitta* und **vinna* = *vicārita*.
+**2)** **5.** √*vid*, *vintte* (*vicāraṇe*) halten für, mit doppeltem Acc. [BHAṬṬ.] **vitta* und **vinna* = *vicārita*.
 
-- **RU:** **5.** √*vid*¦, *vintte* (*vicāraṇe*) {считать за,} с двойным Acc. [BHAṬṬ.] **vitta* и **vinna* = *vicārita*.
+- **RU:** **5.** √*vid*, *vintte* (*vicāraṇe*) {считать за,} с двойным Acc. [BHAṬṬ.] **vitta* и **vinna* = *vicārita*.
   <sub>attested</sub>
 
 ## vid
@@ -2125,7 +2125,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 `vid~~h1_00_pwg00`
 
 
-**1)** 2. *vid*¦ (= 1. *vid*)
+**1)** 2. *vid* (= 1. *vid*)
  1) nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner: *evaṃ yo vit*
 [KAṬHOP. 6,18.] *vidāṃ varaḥ*
 [SARVADARŚANAS. 119,1.] [BHĀG. P. 1,5,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,40) [3,4,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,16) [11,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,16) [8,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,29) *a˚*
@@ -2143,7 +2143,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 [MBH. 1,5101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5101)
 [KĀM. NĪTIS. 9,78. 12,18.] [KATHĀS. 34,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,194) [BHĀG. P. 4,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,24) [7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) Vgl. 1. *aśvavid, evaṃ˚, kratu˚, kṣetra˚*,1. *jyotirvid, tadvid, deva˚, daiva˚, nimitta˚, nīthā˚, purā˚, purāṇa˚, pūrva˚, prakala˚, bahu˚, brahma˚, bhūta˚, bhṛgvaṅgiro˚, mati˚, mano˚, mantra˚, marma˚, mṛdu˚, yoga˚, vaco˚* u. s. w.
 
-- **RU:** 2. *vid*¦ (= 1. *vid*)
+- **RU:** 2. *vid* (= 1. *vid*)
  1) nom. ag. «знающий, ведающий, разбирающийся в чём-л., сведущий в чём-л., знаток»: *evaṃ yo vit*
 [KAṬHOP. 6,18.] *vidāṃ varaḥ*
 [SARVADARŚANAS. 119,1.] [BHĀG. P. 1,5,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,40) [3,4,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,16) [11,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,16) [8,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,29) *a˚*
@@ -2183,9 +2183,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 `vid~~h2_00_pwg00`
 
 
-**3)** *vid*¦, *vindati, ˚te*
+**3)** *vid*, *vindati, ˚te*
 
-- **RU:** *vid*¦, *vindati, ˚te*
+- **RU:** *vid*, *vindati, ˚te*
   <sub>attested</sub>
 
 **3)** [DHĀTUP. 28,138](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*lābhe*) .
@@ -2881,9 +2881,9 @@ sich zuwendend: das will ich thun u. s. w..
 `vid~~h3_00_pwg00`
 
 
-**1)** 4. *vid*¦ (= 3. *vid*) _adj._ am Ende eines comp. findend, gewinnend; verschaffend; s. *anna˚*, 2. *aśva˚, aharvid, ekadhana˚, kuhacidvid, gātu˚, go˚, jana˚, jñāti˚*, 2. *jyotirvid, tejo˚, draviṇo˚, nātha˚, paśu˚, prajā˚, mitra˚, rayi˚, vasu˚, svarvid* .
+**1)** 4. *vid* (= 3. *vid*) _adj._ am Ende eines comp. findend, gewinnend; verschaffend; s. *anna˚*, 2. *aśva˚, aharvid, ekadhana˚, kuhacidvid, gātu˚, go˚, jana˚, jñāti˚*, 2. *jyotirvid, tejo˚, draviṇo˚, nātha˚, paśu˚, prajā˚, mitra˚, rayi˚, vasu˚, svarvid* .
 
-- **RU:** 4. *vid*¦ (= 3. *vid*) _adj._ в конце comp. находящий, добывающий; доставляющий; s. *anna˚*, 2. *aśva˚, aharvid, ekadhana˚, kuhacidvid, gātu˚, go˚, jana˚, jñāti˚*, 2. *jyotirvid, tejo˚, draviṇo˚, nātha˚, paśu˚, prajā˚, mitra˚, rayi˚, vasu˚, svarvid* .
+- **RU:** 4. *vid* (= 3. *vid*) _adj._ в конце comp. находящий, добывающий; доставляющий; s. *anna˚*, 2. *aśva˚, aharvid, ekadhana˚, kuhacidvid, gātu˚, go˚, jana˚, jñāti˚*, 2. *jyotirvid, tejo˚, draviṇo˚, nātha˚, paśu˚, prajā˚, mitra˚, rayi˚, vasu˚, svarvid* .
   <sub>lexicographic</sub>
 
 ## vid
@@ -2891,11 +2891,11 @@ sich zuwendend: das will ich thun u. s. w..
 `vid~~h4_00_pwg00`
 
 
-**note)** 5. *vid*¦, *vintte (vicāraṇe)*
+**note)** 5. *vid*, *vintte (vicāraṇe)*
 [DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) erhält keinen Bindevocal *i* Kār. 3 aus
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
 
-- **RU:** 5. *vid*¦, *vintte (vicāraṇe)*
+- **RU:** 5. *vid*, *vintte (vicāraṇe)*
 [DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) не получает соединительного гласного *i* Kār. 3 из
 [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
   <sub>mixed</sub>
@@ -2924,9 +2924,9 @@ sich zuwendend: das will ich thun u. s. w..
 `vid~~h5_00_pwg00`
 
 
-**note)** **1.** *vid*¦ [vgl. ] caus. Z. 2 vom Ende zu lesen {123} st. {1,23}.
+**note)** **1.** *vid* [vgl. ] caus. Z. 2 vom Ende zu lesen {123} st. {1,23}.
 
-- **RU:** **1.** *vid*¦ [vgl. ] caus. Z. 2 от конца читать {123} st. {1,23}.
+- **RU:** **1.** *vid* [vgl. ] caus. Z. 2 от конца читать {123} st. {1,23}.
   <sub>mixed</sub>
 
 ## vid
@@ -2934,9 +2934,9 @@ sich zuwendend: das will ich thun u. s. w..
 `vid~~h6_00_pwg00`
 
 
-**note)** **3.** *vid*¦ [vgl. ] mit *adhi* Z. 5 ist ein *tasya* zu streichen.
+**note)** **3.** *vid* [vgl. ] mit *adhi* Z. 5 ist ein *tasya* zu streichen.
 
-- **RU:** **3.** *vid*¦ [vgl. ] с *adhi* Z. 5 следует вычеркнуть *tasya*.
+- **RU:** **3.** *vid* [vgl. ] с *adhi* Z. 5 следует вычеркнуть *tasya*.
   <sub>mixed</sub>
 
 ## vid
@@ -2944,9 +2944,9 @@ sich zuwendend: das will ich thun u. s. w..
 `vid~~h7_00_pwg00`
 
 
-**note)** 1. *vid*¦ caus. Z. 2 am Ende zu lesen 123 st. 1, 23.
+**note)** 1. *vid* caus. Z. 2 am Ende zu lesen 123 st. 1, 23.
 
-- **RU:** 1. *vid*¦ caus. Z. 2 в конце читать 123 st. 1, 23.
+- **RU:** 1. *vid* caus. Z. 2 в конце читать 123 st. 1, 23.
   <sub>mixed</sub>
 
 **1a)** — *ni* caus. *doṣam* eine Schuld wälzen auf (dat.)

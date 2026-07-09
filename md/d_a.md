@@ -9,7 +9,7 @@ _PWG article — 87 sub-card(s), 367 sense(s) · RU 0/367 · EN 367/367_
 
 **etym-conjugation)** === LAYER: PWG-ROOT HEAD homonym 1 part 1/2 — root=dA (simple verb + senses; same root_key) ===
 
-1. *dā*¦ (*dad, dāy*) A. Präsensformen:
+1. *dā* (*dad, dāy*) A. Präsensformen:
  a) *dadāti*
 [DHĀTUP. 25,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) *dattas, dadmam, dadmasi, dadati; dehi* (
 [P. 6,4,119](https://ashtadhyayi.com/sutraani/6/4/119)), *daddhi* (
@@ -2145,12 +2145,12 @@ Schol. zu [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h1_00_pwg00`
 
 
-**1)** 2. *dā*¦ (= 1. *dā*) _m._ Geber: *kratvā dā astu śreṣṭhaḥ*
+**1)** 2. *dā* (= 1. *dā*) _m._ Geber: *kratvā dā astu śreṣṭhaḥ*
 [ṚV. 6,16,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) Hierher auch nach
 [SĀY.] der dat. *de*
 [5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) Am Ende eines comp. gebend, verleihend; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
 — Vgl. 1. *da* .
-- **EN:** 2. *dā*¦ (= 1. *dā*) _m._ giver: *kratvā dā astu śreṣṭhaḥ*
+- **EN:** 2. *dā* (= 1. *dā*) _m._ giver: *kratvā dā astu śreṣṭhaḥ*
 [ṚV. 6,16,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) Hence too, according to
 [SĀY.] the dat. *de*
 [5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) At the end of a comp. giving, bestowing; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
@@ -2161,7 +2161,7 @@ Schol. zu [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h2_00_pwg00`
 
 
-**1)** 3. *dā*¦ *(dā, do), dāti*
+**1)** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -2194,7 +2194,7 @@ Sch.
 [LASSEN] in [DHŪRTAS. 67,3] zu finden geglaubt, aber daselbst ist aufzulösen: *dātā* (nom. von 1. *dātar) ava˚* . — desid. *ditsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) — intens. *dedīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
-- **EN:** 3. *dā*¦ *(dā, do), dāti*
+- **EN:** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -2447,13 +2447,13 @@ Schol. zu [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 `d_a~~h3_00_pwg00`
 
 
-**1)** 4. *dā*¦, *dyati*
+**1)** 4. *dā*, *dyati*
 δέω, binden (fehlt im
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* lass dich binden (nach
 [MAHĪDH.] von 1. *dā*)
 [VS. 38,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?38,3)
 — Vgl. 3. *da*, 4. *dāman, dāmā* .
-- **EN:** 4. *dā*¦, *dyati*
+- **EN:** 4. *dā*, *dyati*
 δέω, to bind (missing in [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* "let yourself be bound" (according to [MAHĪDH.] from 1. *dā*)
 [VS. 38,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?38,3)
 — Vgl. 3. *da*, 4. *dāman, dāmā* .
@@ -2509,12 +2509,12 @@ Schol. zu [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 `d_a~~h4_00_pwg00`
 
 
-**1)** 5. *dā*¦ *(de), dayate* beschützen
+**1)** 5. *dā* *(de), dayate* beschützen
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, welcher Wurzel auch die Bed. *rakṣaṇa* zugeschrieben wird. — desid. *ditsate*
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
-- **EN:** 5. *dā*¦ *(de), dayate* to protect
+- **EN:** 5. *dā* *(de), dayate* to protect
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, to which root Bed. *rakṣaṇa* is also ascribed. — desid. *ditsate*
@@ -2534,9 +2534,9 @@ Sch. to [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)
 `d_a~~h5_00_pwg00`
 
 
-**1)** 6. *dā*¦ (von 5. *dā*) _f._ Schutz
+**1)** 6. *dā* (von 5. *dā*) _f._ Schutz
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
-- **EN:** 6. *dā*¦ (from 5. *dā*) _f._ protection
+- **EN:** 6. *dā* (from 5. *dā*) _f._ protection
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
 
 ## dā
@@ -2544,10 +2544,10 @@ Sch. to [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)
 `d_a~~h6_00_pwg00`
 
 
-**1)** 7. *dā*¦ *(dai), dāyati* reinigen
+**1)** 7. *dā* *(dai), dāyati* reinigen
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
-- **EN:** 7. *dā*¦ *(dai), dāyati* to cleanse, purify
+- **EN:** 7. *dā* *(dai), dāyati* to cleanse, purify
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
 
@@ -2588,9 +2588,9 @@ Sch. on [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 `d_a~~h7_00_pwg00`
 
 
-**1)** 8. *dā*¦ (von 7. *dā*) _f._ das Reinigen
+**1)** 8. *dā* (von 7. *dā*) _f._ das Reinigen
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
-- **EN:** 8. *dā*¦ (from 7. *dā*) _f._ the cleansing
+- **EN:** 8. *dā* (from 7. *dā*) _f._ the cleansing
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
 
 ## dā
@@ -2598,18 +2598,18 @@ Sch. on [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 `d_a~~h8_00_pwg00`
 
 
-**1)** **1.** *dā*¦ [vgl. ] Z. 7. *datte* auch [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
-- **EN:** **1.** *dā*¦ [vgl. ] Z. 7. *datte* also [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
+**1)** **1.** *dā* [vgl. ] Z. 7. *datte* auch [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
+- **EN:** **1.** *dā* [vgl. ] Z. 7. *datte* also [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
 
 ## dā
 
 `d_a~~h9_00_pwg00`
 
 
-**1a)** 1. *dā*¦ A.
+**1a)** 1. *dā* A.
  a) *datte*
 [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356) [Spr. 3207](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3207), v. l.
-- **EN:** 1. *dā*¦ A.
+- **EN:** 1. *dā* A.
  a) *datte*
 [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356) [Spr. 3207](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3207), v. l.
 
@@ -2800,10 +2800,10 @@ Z. 8. fg. streiche die Stelle
 `d_a~~h10_00_pwg00`
 
 
-**intro)** 3. *dā*¦, *triṃśadbhāgadina* getheilt in
+**intro)** 3. *dā*, *triṃśadbhāgadina* getheilt in
 [WEBER, JYOT. 41,14.]
 — *ava*
-- **EN:** 3. *dā*¦, *triṃśadbhāgadina* divided into [WEBER, JYOT. 41,14.] — *ava*
+- **EN:** 3. *dā*, *triṃśadbhāgadina* divided into [WEBER, JYOT. 41,14.] — *ava*
 
 **1)** 1) zerschneiden, zerstückeln
 [BHĀG. P. 10,55,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,55,5) — caus. med. abtheilen lassen
@@ -2819,29 +2819,29 @@ Z. 8. fg. streiche die Stelle
 `d_a~~h11_00_pwg00`
 
 
-**1)** 4. *dā*¦ mit *ni* vgl. *nidātar, nidāna* .
+**1)** 4. *dā* mit *ni* vgl. *nidātar, nidāna* .
 — *vi* lösen: *vyadyat, vi dyataḥ*
 [TBR. 3,10,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,1)
-- **EN:** 4. *dā*¦ with *ni* vgl. *nidātar, nidāna*. — *vi* to loosen, untie: *vyadyat, vi dyataḥ* [TBR. 3,10,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,1)
+- **EN:** 4. *dā* with *ni* vgl. *nidātar, nidāna*. — *vi* to loosen, untie: *vyadyat, vi dyataḥ* [TBR. 3,10,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,1)
 
 ## dā
 
 `d_a~~h12_00_pwg00`
 
 
-**1)** 7. *dā*¦ mit *ava*
+**1)** 7. *dā* mit *ava*
 Z. 7 lies *trīṇyavadātāni vi˚* .
-- **EN:** 7. *dā*¦ with *ava* Z. for 7 read *trīṇyavadātāni vi˚*.
+- **EN:** 7. *dā* with *ava* Z. for 7 read *trīṇyavadātāni vi˚*.
 
 ## dā
 
 `d_a~~h13_00_pwg00`
 
 
-**intro)** 1. *dā*¦
+**intro)** 1. *dā*
 Z. 7 *datte* auch
 [Spr. (II) 1186.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1186)
-- **EN:** 1. *dā*¦ Z. 7 *datte* also [Spr. (II) 1186.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1186)
+- **EN:** 1. *dā* Z. 7 *datte* also [Spr. (II) 1186.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1186)
 
 **1)** 1) mit doppeltem acc.: *viṣaṃ dātuṃ samarthā sā svāminaṃ guṇināṃ varam*
 [Spr. (II) 6215.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6215) *supātradatta* einem Würdigen gegeben
@@ -2872,20 +2872,20 @@ Z. 7 *datte* auch
 `d_a~~h14_00_pwg00`
 
 
-**3)** 3. *dā*¦ mit *vi*
+**3)** 3. *dā* mit *vi*
  3) vertheilen: *vidāyaṃ ca cakāra*
 [PAÑCAR. 1,12,2](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,2), v. l. *vidayāmāsa* (von *day*) im Texte.
-- **EN:** 3. *dā*¦ with *vi* 3) to distribute: *vidāyaṃ ca cakāra* [PAÑCAR. 1,12,2](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,2), v. l. *vidayāmāsa* (of *day*) in the text.
+- **EN:** 3. *dā* with *vi* 3) to distribute: *vidāyaṃ ca cakāra* [PAÑCAR. 1,12,2](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,2), v. l. *vidayāmāsa* (of *day*) in the text.
 
 ## dā
 
 `d_a~~h15_00_pwg00`
 
 
-**1)** 7. *dā*¦ mit *paryava*, partic. *˚dāta* durch und durch lauter: *savakarmasu* ein Diener
+**1)** 7. *dā* mit *paryava*, partic. *˚dāta* durch und durch lauter: *savakarmasu* ein Diener
 [CARAKA 1,15.] *˚śruta* ein Lehrer
 [3,8.]
-- **EN:** 7. *dā*¦ with *paryava*, partic. *˚dāta* thoroughly pure, pure through and through: *savakarmasu* a servant [CARAKA 1,15.] *˚śruta* a teacher [3,8.]
+- **EN:** 7. *dā* with *paryava*, partic. *˚dāta* thoroughly pure, pure through and through: *savakarmasu* a servant [CARAKA 1,15.] *˚śruta* a teacher [3,8.]
 
 **2)** — Vgl. *paryavadātatva* .
 - **EN:** — Vgl. *paryavadātatva*.
@@ -2895,8 +2895,8 @@ Z. 7 *datte* auch
 `d_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*dā*¦, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
-- **EN:** **1.** √*dā*¦, present stems; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (only *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) and *dadāya* (only Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) and *˚tta*
+**1)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
+- **EN:** **1.** √*dā*, present stems; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (only *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) and *dadāya* (only Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) and *˚tta*
 
 **1.1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.
 - **EN:** — 1) to give, present, bestow; with Acc. or partitive Gen. of the thing and Dat., Gen. or Loc. of the person. *kanyām* to give a daughter to someone in marriage (*bhāryām*, which however is usually omitted). *datta* of a son, thus v. a. to give up, hand over by other parents.
@@ -3400,10 +3400,10 @@ Caus. to see to it that something be given back.
 `d_a~~h0_zz_pw02`
 
 
-**T161-T162)** **2.** *dā*¦ _m._ Geber. Häufig am Ende eines Comp. _Adj._ gebend, verleihend.
+**T161-T162)** **2.** *dā* _m._ Geber. Häufig am Ende eines Comp. _Adj._ gebend, verleihend.
 - **EN:** 2. *dā* _m._ giver. Frequently at the end of a Comp. _Adj._ giving, bestowing.
 
-**T163-T164)** **3.** √*dā*¦, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
+**T163-T164)** **3.** √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
 - **EN:** 3. √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; to cut off, to mow. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) cut to pieces, diminished. *˚dina* divided into.
 
 **T165)** — Pass. *dīyate* wohl wehmüthig gestimmt sein [BHOJA-PR. 51,5]. [RĀJAT. 8,492](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,492).
@@ -3478,7 +3478,7 @@ Caus. *avadāpayate* to have divided off.
 — 1) to gather by cutting.
 — 2) to cut together, to cut small.
 
-**T192-T193)** **4.** √*dā*¦, *dyati* binden. Zu belegen vom Simplex nur *dīśva* lass dich binden.
+**T192-T193)** **4.** √*dā*, *dyati* binden. Zu belegen vom Simplex nur *dīśva* lass dich binden.
 - **EN:** 4. √*dā*, *dyati* to bind. Of the simplex attested only *dīśva* let yourself be bound.
 
 **T194)** — Mit *ā* anbinden, fesseln.
@@ -3500,7 +3500,7 @@ Caus. *avadāpayate* to have divided off.
 **T200)** — Mit *sam* zusammenbinden, anbinden, fesseln. *saṃdita* zusammengebunden, gebunden, gefesselt; an den Ort gefesselt, unbeweglich.
 - **EN:** — With *sam* to bind together, tie up, fetter. *saṃdita* bound together, bound, fettered; fettered to the place, immovable.
 
-**T201-T202)** **5.** *√*dā*¦, *dayate* beschützen. Desid. *ditsate*.
+**T201-T202)** **5.** *√*dā*, *dayate* beschützen. Desid. *ditsate*.
 - **EN:** 5. *√*dā*, *dayate* to protect. Desid. *ditsate*.
 
 **T203)** — Mit *pariṇi*, *˚dayate*.
@@ -3509,10 +3509,10 @@ Caus. *avadāpayate* to have divided off.
 **T204)** — Mit *praṇi*, *˚dayate*.
 - **EN:** — With *praṇi*, *˚dayate*.
 
-**T205-T206)** **6.** **dā*¦ _f._ Schutz.
+**T205-T206)** **6.** **dā* _f._ Schutz.
 - **EN:** 6. **dā* _f._ protection.
 
-**T207-T208)** **7.** √*dā*¦, **dāyati* reinigen.
+**T207-T208)** **7.** √*dā*, **dāyati* reinigen.
 - **EN:** 7. √*dā*, **dāyati* to purify.
 
 **T209-T211)** — Mit *ava*, *˚dāta*
@@ -3537,19 +3537,19 @@ Caus. *avadāpayate* to have divided off.
 **T217)** — Mit *ā*. Hierher zieht [NĪLAK.] *ādāyamāna* (= *parīkṣamāṇa* prüfend, untersuchend) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). Wir haben die Form zu **1.** *dā* gestellt.
 - **EN:** — With *ā*. [NĪLAK.] assigns here *ādāyamāna* (= *parīkṣamāṇa* testing, examining) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). We have placed the form under **1.** *dā*.
 
-**T220-T221)** **8.** **dā*¦ _f._ das Reinigen.
+**T220-T221)** **8.** **dā* _f._ das Reinigen.
 - **EN:** 8. **dā* _f._ the purifying.
 
-**T222-T226)** **3.** √*dā*¦ S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
+**T222-T226)** **3.** √*dā* S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
 - **EN:** 3. √*dā* p. 79, l. 3. fg. *dīyate* probably belongs under **4.** *dī*.
 
-**T227-T229)** **1.** √*dā*¦ mit *ā*, *ātta*, so zu betonen.
+**T227-T229)** **1.** √*dā* mit *ā*, *ātta*, so zu betonen.
 - **EN:** 1. √*dā* with *ā*, *ātta*, to be accented thus.
 
-**T230-T234)** **2.** *dā*¦, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
+**T230-T234)** **2.** *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
 - **EN:** 2. *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) belongs under **2.** *dāś*; s. further below.
 
-**T235-T242)** **1.** √*dā*¦ mit *ā* III. 5.
+**T235-T242)** **1.** √*dā* mit *ā* III. 5.
 — Mit *upā* III. *anupādāya* Absol. sich nicht an die Welt klammernd [DIVYĀVAD. 655,4].
 — Mit *vyā* auch hineinthun —, hineinwerfen in (Loc.) *˚dāya* [KAUŚ. 48,40].
 — Mit *nirvyā* = *vyā* [JĀTAKAM. 34].
@@ -3562,10 +3562,10 @@ Caus. *avadāpayate* to have divided off.
 — With *samā* III. (a vow u. s. w.) to take upon oneself and keep [MAHĀVY. 84,25]. [DIVYĀVAD. 302,19]. Caus. to counsel to the good, to exhort [MAHĀVY. 245]. [DIVYĀVAD. 51,28]. [57,17]. [59,5]. [80,18].
 — With *pari*, *parīdāya* [ĀPAST. GṚHY. 10,12] erroneous for *pari˚*
 
-**T243-T245)** **2.** *dā*¦ III. 5.
+**T243-T245)** **2.** *dā* III. 5.
 - **EN:** 2. *dā* III.5.
 
-**T246-T249)** **3.** √*dā*¦ III. 3.
+**T246-T249)** **3.** √*dā* III. 3.
 — Mit *pari* III. *parītta* begrenzt [DIVYĀVAD. 204,14]. [17]. kurz [498,12. 504,12].
 - **EN:** 3. √*dā* III.3.
 — With *pari* III. *parītta* bounded, limited [DIVYĀVAD. 204,14]. [17]. short [498,12. 504,12].
@@ -3575,13 +3575,13 @@ Caus. *avadāpayate* to have divided off.
 `d_a~~h0_zz_sch`
 
 
-**sch1)** 1. dā¦ ˚(ein Amt) übernehmen, [Prabandh. 246,7.] — Mit ā, ā́tta, so zu betonen. — Mit upā, anupādāya Absol. sich nicht an die Welt klammernd, [Divyāvad. 655,4.] — Mit vyā auch hineintun, hineinwerfen in (Lok.), ˚dāya [Kauś. 48,40.] — Mit nirvyā = vyā, [Jātakam. 34.] — Mit samā (ein Gelübde usw.) auf sich nehmen und halten, [Mahāvy. 84,25]; [Divyāvad. 302,19.] [Kaus.] zum Guten raten, ermahnen, [Mahāvy. 245]; [Divyāvad. 51,28; 57,17; 59,5; 80,18.] — Mit pari parīdāya [Āpast. Gṛhy. 10,12] fehlerhaft für pari˚.
+**sch1)** 1. dā ˚(ein Amt) übernehmen, [Prabandh. 246,7.] — Mit ā, ā́tta, so zu betonen. — Mit upā, anupādāya Absol. sich nicht an die Welt klammernd, [Divyāvad. 655,4.] — Mit vyā auch hineintun, hineinwerfen in (Lok.), ˚dāya [Kauś. 48,40.] — Mit nirvyā = vyā, [Jātakam. 34.] — Mit samā (ein Gelübde usw.) auf sich nehmen und halten, [Mahāvy. 84,25]; [Divyāvad. 302,19.] [Kaus.] zum Guten raten, ermahnen, [Mahāvy. 245]; [Divyāvad. 51,28; 57,17; 59,5; 80,18.] — Mit pari parīdāya [Āpast. Gṛhy. 10,12] fehlerhaft für pari˚.
 - **EN:** 1. dā °to take on, assume (an office), [Prabandh. 246,7.] — With ā, ā́tta, to be accented thus. — With upā, anupādāya absolutive, not clinging to the world, [Divyāvad. 655,4.] — With vyā also to put into, to throw into (loc.), ˚dāya [Kauś. 48,40.] — With nirvyā = vyā, [Jātakam. 34.] — With samā to take upon oneself and keep (a vow etc.), [Mahāvy. 84,25]; [Divyāvad. 302,19.] [Kaus.] to counsel to the good, to exhort, [Mahāvy. 245]; [Divyāvad. 51,28; 57,17; 59,5; 80,18.] — With pari parīdāya [Āpast. Gṛhy. 10,12] erroneous for pari˚.
 
-**sch2)** 2. dā́¦ [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu 2. dāś; s. weiter unten.
+**sch2)** 2. dā́ [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu 2. dāś; s. weiter unten.
 - **EN:** 2. dā́ [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) belongs under 2. dāś; see further below.
 
-**sch3)** 3. dā¦ S. 79, Z. 3 f. dīyate gehört wohl zu 4. dī. — Mit pari, parītta begrenzt, [Divyāvad. 204,14. 17]; kurz,498,12; 504,12.
+**sch3)** 3. dā S. 79, Z. 3 f. dīyate gehört wohl zu 4. dī. — Mit pari, parītta begrenzt, [Divyāvad. 204,14. 17]; kurz,498,12; 504,12.
 - **EN:** 3. dā p. 79, l. 3 f. dīyate probably belongs under 4. dī. — With pari, parītta bounded, [Divyāvad. 204,14. 17]; short, 498,12; 504,12.
 
 ## dā
@@ -3589,20 +3589,20 @@ Caus. *avadāpayate* to have divided off.
 `d_a~~h0_zz_pwkvn`
 
 
-**T44-T47)** **3.** *dā*¦ S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
+**T44-T47)** **3.** *dā* S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
 - **EN:** 3. *dā* p. 79, l. 3. fg. *dīyate* probably belongs under **4.** *dī*.
 
-**T48-T49)** **1.** *dā*¦ mit *ā*, *ātta*, so zu betonen.
+**T48-T49)** **1.** *dā* mit *ā*, *ātta*, so zu betonen.
 - **EN:** 1. *dā* with *ā*, *ātta*, to be accented thus.
 
-**T50-T53)** **2.** *dā*¦, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
+**T50-T53)** **2.** *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
 - **EN:** 2. *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) belongs under **2.** *dāś*; s. further below.
 
-**T54-T55)** **1.** *dā*¦ mit *ā* III. 5. — Mit *upā* III. *anupādāya* Absol. sich nicht an die Welt klammernd [DIVYĀVAD. 655,4]. — Mit *vyā* auch hineinthun —, hineinwerfen in (Loc.) *˚dāya* [KAUŚ. 48,40]. — Mit *nirvyā = vyā* [JĀTAKAM. 34]. — Mit *samā* III. (ein Gelübde u. s. w.) auf sich nehmen und halten [MAHĀVY. 84,25]. [DIVYĀVAD. 302,19]. Caus. zum Guten rathen, ermahnen [MAHĀVY. 245]. [DIVYĀVAD. 51,28]. [57,17]. [59,5]. [80,18]. — Mit *pari, parīdāya* [ĀPAST. GṚHY. 10,12] fehlerhaft für *pari˚*
+**T54-T55)** **1.** *dā* mit *ā* III. 5. — Mit *upā* III. *anupādāya* Absol. sich nicht an die Welt klammernd [DIVYĀVAD. 655,4]. — Mit *vyā* auch hineinthun —, hineinwerfen in (Loc.) *˚dāya* [KAUŚ. 48,40]. — Mit *nirvyā = vyā* [JĀTAKAM. 34]. — Mit *samā* III. (ein Gelübde u. s. w.) auf sich nehmen und halten [MAHĀVY. 84,25]. [DIVYĀVAD. 302,19]. Caus. zum Guten rathen, ermahnen [MAHĀVY. 245]. [DIVYĀVAD. 51,28]. [57,17]. [59,5]. [80,18]. — Mit *pari, parīdāya* [ĀPAST. GṚHY. 10,12] fehlerhaft für *pari˚*
 - **EN:** 1. *dā* with *ā* III.5. — With *upā* III. *anupādāya* Absol. not clinging to the world [DIVYĀVAD. 655,4]. — With *vyā* also to put into —, to throw into (Loc.) *˚dāya* [KAUŚ. 48,40]. — With *nirvyā = vyā* [JĀTAKAM. 34]. — With *samā* III. (a vow u. s. w.) to take upon oneself and keep [MAHĀVY. 84,25]. [DIVYĀVAD. 302,19]. Caus. to counsel to the good, to exhort [MAHĀVY. 245]. [DIVYĀVAD. 51,28]. [57,17]. [59,5]. [80,18]. — With *pari, parīdāya* [ĀPAST. GṚHY. 10,12] erroneous for *pari˚*
 
-**T56-T57)** **2.** *dā*¦ III. 5.
+**T56-T57)** **2.** *dā* III. 5.
 - **EN:** 2. *dā* III.5.
 
-**T58-T59)** **3.** *dā*¦ III. 3. — Mit *pari* III. *parītta* begrenzt [DIVYĀVAD. 204,14]. [17]. kurz [498,12. 504,12].
+**T58-T59)** **3.** *dā* III. 3. — Mit *pari* III. *parītta* begrenzt [DIVYĀVAD. 204,14]. [17]. kurz [498,12. 504,12].
 - **EN:** 3. *dā* III.3. — With *pari* III. *parītta* bounded, limited [DIVYĀVAD. 204,14]. [17]. short [498,12. 504,12].

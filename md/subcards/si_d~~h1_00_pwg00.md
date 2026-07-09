@@ -3,11 +3,11 @@
 `si_d~~h1_00_pwg00`
 
 
-**2)** 2. *sidh*¦ (vgl. *sādh), sidhyati*
+**2)** 2. *sidh* (vgl. *sādh), sidhyati*
 [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*).* siṣedha, asaitsīt, setsyati* (vgl.
 [Kār. 4. 8] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. nur des Metrums wegen.
 
-- **RU:** 2. *sidh*¦ (vgl. *sādh), sidhyati*
+- **RU:** 2. *sidh* (vgl. *sādh), sidhyati*
 [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*).* siṣedha, asaitsīt, setsyati* (vgl.
 [Kār. 4. 8] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. nur des Metrums wegen.
 - **EN:** *sidh* (vgl. *sādh), sidhyati* [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*). * siṣedha, asaitsīt, setsyati* (vgl. [Kār. 4. 8] from [SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. only for the sake of the metre.

@@ -3,10 +3,10 @@
 `n_i~~h5_00_pwg00`
 
 
-**1)** 1. *nī*¦
+**1)** 1. *nī*
 
-- **RU:** 1. *nī*¦
-- **EN:** *nī*¦
+- **RU:** 1. *nī*
+- **EN:** *nī*
  1) *santo hi satyena nayanti sūryam*
 [Spr. 5154.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5154)
 — 3) *tato vivāhyānicchantīmapyanaiṣītsa māṃ dvijaḥ*

@@ -7,7 +7,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 `_as~~h0_00_pwg00`
 
 
-**1)** *ās*¦ _interj._ der Freude und des Unwillens: *āḥ* vor *ka, pa* und *sa*
+**1)** *ās* _interj._ der Freude und des Unwillens: *āḥ* vor *ka, pa* und *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
@@ -25,7 +25,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* und *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
 
-- **RU:** *ās*¦ _interj._ der Freude und des Unwillens: *āḥ* перед *ka, pa* и *sa*
+- **RU:** *ās* _interj._ der Freude und des Unwillens: *āḥ* перед *ka, pa* и *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
@@ -42,7 +42,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
 [H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* и *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
-- **EN:** *ās*¦ _interj._ an interjection of joy and displeasure: *āḥ* before *ka, pa* and *sa*
+- **EN:** *ās* _interj._ an interjection of joy and displeasure: *āḥ* before *ka, pa* and *sa*
 [MṚCCH. 67,3.]
 [PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
 [HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
@@ -66,7 +66,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 `_as~~h1_00_pwg00`
 
 
-**conj.)** 2. *ās*¦, *āste* (ved. und ep. auch *āsate*, ep. auch act.), *āsse*,
+**conj.)** 2. *ās*, *āste* (ved. und ep. auch *āsate*, ep. auch act.), *āsse*,
 3. pl. ep. *āsante*; 2. du. potent. ep. *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* und ep. *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (
@@ -76,7 +76,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) und *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
 
-- **RU:** 2. *ās*¦, *āste* (ved. и эп. также *āsate*, эп. также act.), *āsse*,
+- **RU:** 2. *ās*, *āste* (ved. и эп. также *āsate*, эп. также act.), *āsse*,
 3. pl. эп. *āsante*; 2. du. potent. эп. *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* и эп. *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (
@@ -85,7 +85,7 @@ _PWG article — 20 sub-card(s), 204 sense(s) · RU 90/204 · EN 193/204_
 [P. 7,2,83.](https://ashtadhyayi.com/sutraani/7/2/83)
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) и *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
-- **EN:** 2. *ās*¦, *āste* (ved. and epic also *āsate*, epic also act.), *āsse*,
+- **EN:** 2. *ās*, *āste* (ved. and epic also *āsate*, epic also act.), *āsse*,
 3. pl. epic *āsante*; 2. du. potent. epic *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* and epic *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (
@@ -1485,7 +1485,7 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 `_as~~h2_00_pwg00`
 
 
-**0)** 3. *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
+**0)** 3. *ās* os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 - **EN:** 3. *ās* — os, mouth, face; used only in two forms:
 
 **1)** 1) abl. *āsas* (mit *ā*) von Mund zu Mund, aus unmittelbarer Nähe: *vaṣaṭte viṣṇavāsa ā kṛṇomi*
@@ -1545,9 +1545,9 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) Vgl. *āsayā*. — In the comp. s. *ādaghna, āspātra, anās, svās*; vgl. also still *āsan* and *āsya*.
   <sub>attested</sub>
 
-**3)** *ās*¦ os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
+**3)** *ās* os, Mund, Gesicht; nur in zwei Formen gebräuchlich:
 
-- **RU:** *ās*¦ уста, рот, лицо; употребляется лишь в двух формах:
+- **RU:** *ās* уста, рот, лицо; употребляется лишь в двух формах:
   <sub>attested</sub>
 
 ## ās
@@ -1555,19 +1555,19 @@ Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 `_as~~h3_00_pwg00`
 
 
-2. *ās*¦
+2. *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
 
-- **RU:** 2. *ās*¦
+- **RU:** 2. *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
   <sub>attested</sub>
 
-**intro)** *ās*¦
+**intro)** *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
-- **EN:** *ās*¦
+- **EN:** *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
 
@@ -1947,15 +1947,15 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 `_as~~h4_00_pwg00`
 
 
-2. *ās*¦ mit *adhi*
+2. *ās* mit *adhi*
 
-- **RU:** 2. *ās*¦ с *adhi*
+- **RU:** 2. *ās* с *adhi*
   <sub>attested</sub>
 
-**intro)** *ās*¦ mit *adhi*
+**intro)** *ās* mit *adhi*
  4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
-- **EN:** *ās*¦ with *adhi*
+- **EN:** *ās* with *adhi*
  4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
 
@@ -1990,11 +1990,11 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 `_as~~h0_zz_pw`
 
 
-**1)** **1.** *ās*¦ Interj. der Freude und des Unwillens.
-- **EN:** **1.** *ās*¦ Interj. of joy and displeasure.
+**1)** **1.** *ās* Interj. der Freude und des Unwillens.
+- **EN:** **1.** *ās* Interj. of joy and displeasure.
 
-**intro)** **2.** √*ās*¦, *āste* ep. auch *āsate* und *āsti*.
-- **EN:** **2.** √*ās*¦, *āste* ep. also *āsate* and *āsti*.
+**intro)** **2.** √*ās*, *āste* ep. auch *āsate* und *āsti*.
+- **EN:** **2.** √*ās*, *āste* ep. also *āsate* and *āsti*.
 
 **1)** — 1〉 sitzen, sich setzen, — auf (Loc.; Acc. nur scheinbar. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) zu interpungiren: *etadāsanam āsyatām*. Eben so [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
 - **EN:** — 1〉 to sit, to sit down, — on (Loc.; Acc. only apparently. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) to be punctuated: *etadāsanam āsyatām*. Likewise [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
@@ -2233,20 +2233,20 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 **sam2)** — Mit *pratisam* es aufnehmen mit, gewachsen sein, widerstehen; mit Acc.
 - **EN:** — With *pratisam* to take up against, to be a match for, to withstand; with Acc.
 
-**1)** **3.** *ās*¦ wohl _n._ Mund, Angesicht; nur im Abl. und Instr. *āsa ā* mit einer 1sten Person so v. a. von mir aus. *āsā* vorʼs Angesicht hin, von Aller Augen.
-- **EN:** **3.** *ās*¦ probably _n._ mouth, face; only in the Abl. and Instr. *āsa ā* with a 1st person, so v. a. as far as I am concerned, on my part. *āsā* before the face, in everyone's sight.
+**1)** **3.** *ās* wohl _n._ Mund, Angesicht; nur im Abl. und Instr. *āsa ā* mit einer 1sten Person so v. a. von mir aus. *āsā* vorʼs Angesicht hin, von Aller Augen.
+- **EN:** **3.** *ās* probably _n._ mouth, face; only in the Abl. and Instr. *āsa ā* with a 1st person, so v. a. as far as I am concerned, on my part. *āsā* before the face, in everyone's sight.
 
-**1)** **4.** *ās*¦ ved. 3te Sg. von **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
-- **EN:** **4.** *ās*¦ ved. 3rd Sg. of **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
+**1)** **4.** *ās* ved. 3te Sg. von **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
+- **EN:** **4.** *ās* ved. 3rd Sg. of **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
 
-**v9)** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater? [HARṢAC. 126,9].
-- **EN:** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9].
+**v9)** **2.** √*ās* 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater? [HARṢAC. 126,9].
+- **EN:** **2.** √*ās* 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9].
 
 **v.adhi1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 - **EN:** — With *anu* 1〉 to stay in someone's (Gen.) vicinity [HEMĀDRI 1,35,20].
 
-**anu.1)** **2.** √*ās*¦ I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
-- **EN:** **2.** √*ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
+**anu.1)** **2.** √*ās* I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
+- **EN:** **2.** √*ās* I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
 
 **anu.ref)** — Mit *anu* I. 1.
 - **EN:** — With *anu* I. 1.
@@ -2256,18 +2256,18 @@ example is, as already indicated by the exclamation mark, an incorrect form; the
 `_as~~h0_zz_pwkvn`
 
 
-**v9)** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater ? [HARṢAC. 126,9]. — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
-- **EN:** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9]. — With *anu* 1〉 to stay in someone's (Gen.) vicinity [HEMĀDRI 1,35,20].
+**v9)** **2.** *ās* 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater ? [HARṢAC. 126,9]. — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
+- **EN:** **2.** *ās* 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9]. — With *anu* 1〉 to stay in someone's (Gen.) vicinity [HEMĀDRI 1,35,20].
 
-**anu.1)** **2.** *ās*¦ I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
+**anu.1)** **2.** *ās* I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
 
-- **RU:** **2.** *ās*¦ I. 1. Mit *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
-- **EN:** **2.** *ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — With *anu* I. 1.
+- **RU:** **2.** *ās* I. 1. Mit *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
+- **EN:** **2.** *ās* I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — With *anu* I. 1.
   <sub>attested</sub>
 
-**9-var)** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater ? [HARṢAC. 126,9].
+**9-var)** **2.** *ās* 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater ? [HARṢAC. 126,9].
 
-- **RU:** **2.** *ās*¦ 9〉 *kathamāste tātaḥ* так v. a. как поживает отец? [HARṢAC. 126,9].
+- **RU:** **2.** *ās* 9〉 *kathamāste tātaḥ* так v. a. как поживает отец? [HARṢAC. 126,9].
   <sub>attested</sub>
 
 **upa-var-1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].

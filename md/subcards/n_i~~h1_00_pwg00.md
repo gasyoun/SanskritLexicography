@@ -3,18 +3,18 @@
 `n_i~~h1_00_pwg00`
 
 
-**1)** 2. *nī*¦ (= 1. *nī*) _m._ Führer, Leiter am Ende eines comp.
+**1)** 2. *nī* (= 1. *nī*) _m._ Führer, Leiter am Ende eines comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (als selbstständigen Wortes).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)
 — Vgl. *agraṇī, agre˚, ṛtanī, gāthā˚, grāmaṇī, padanī, pṛtanā˚, yajña˚, vaśa˚, senā˚* .
 
-- **RU:** 2. *nī*¦ (= 1. *nī*) _m._ вождь, руководитель в конце comp.
+- **RU:** 2. *nī* (= 1. *nī*) _m._ вождь, руководитель в конце comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (как самостоятельного слова).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)
 — Vgl. *agraṇī, agre˚, ṛtanī, gāthā˚, grāmaṇī, padanī, pṛtanā˚, yajña˚, vaśa˚, senā˚* .
-- **EN:** 2. *nī*¦ (= 1. *nī*) _m._ leader, guide at the end of a comp.
+- **EN:** 2. *nī* (= 1. *nī*) _m._ leader, guide at the end of a comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (as an independent word).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)

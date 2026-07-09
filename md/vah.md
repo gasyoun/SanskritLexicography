@@ -7,13 +7,13 @@ _PWG article — 51 sub-card(s), 419 sense(s) · RU 366/419 · EN 372/419_
 `vah~~h0_00_pwg00`
 
 
-**1)** 1. *vah*¦, *vahati* und *vahate*
+**1)** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
 [VS.]; *avāḍ*
 
-- **RU:** 1. *vah*¦, *vahati* und *vahate*
+- **RU:** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
@@ -59,13 +59,13 @@ _PWG article — 51 sub-card(s), 419 sense(s) · RU 366/419 · EN 372/419_
 - **EN:** sg. potent.
   <sub>attested</sub>
 
-**1)** 1. *vah*¦, *vahati* und *vahate*
+**1)** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
 [VS.]; *avāḍ*
 
-- **RU:** 1. *vah*¦, *vahati* und *vahate*
+- **RU:** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
@@ -3038,12 +3038,12 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h1_00_pwg00`
 
 
-**1)** 2. *vah*¦ oder *vāh* (= 1. *vah*) am Ende eines comp. fahrend, ziehend, führend, tragend, haltend u. s. w.
+**1)** 2. *vah* oder *vāh* (= 1. *vah*) am Ende eines comp. fahrend, ziehend, führend, tragend, haltend u. s. w.
 [P. 3,2,64.](https://ashtadhyayi.com/sutraani/3/2/64) Declination [6,4,132.](https://ashtadhyayi.com/sutraani/6/4/132) [VOP. 3,102. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,102) Bildung des fem. [4,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?4,9) [P. 4,1,61.](https://ashtadhyayi.com/sutraani/4/1/61) [VS. PRĀT. 4,56.] *uḍupativāḍivāmbudaḥ*
 [BHĀG. P. 10,18,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,18,26)
 — Vgl. *anaḍvah, ano˚, apsu˚, idhma˚, indra˚, girvah, turya˚, dakṣiṇā˚, ditya˚, paṣṭha˚, pārṣṇi˚, pūrva˚, pūrvāgni˚, pṛṣṭi˚, praṣṭha˚, preta˚, bhāra˚, bhū˚, madhyama˚, vajra˚, vīra˚, viśva˚, śveta˚, saha˚, suṣṭu˚, havirvah, havya˚* .
 
-- **RU:** 2. *vah*¦ или *vāh* (= 1. *vah*) в конце comp. едущий, влекущий, ведущий, несущий, держащий u. s. w.
+- **RU:** 2. *vah* или *vāh* (= 1. *vah*) в конце comp. едущий, влекущий, ведущий, несущий, держащий u. s. w.
 [P. 3,2,64.](https://ashtadhyayi.com/sutraani/3/2/64) Declination [6,4,132.](https://ashtadhyayi.com/sutraani/6/4/132) [VOP. 3,102. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,102) Bildung des fem. [4,9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?4,9) [P. 4,1,61.](https://ashtadhyayi.com/sutraani/4/1/61) [VS. PRĀT. 4,56.] *uḍupativāḍivāmbudaḥ*
 [BHĀG. P. 10,18,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,18,26)
 — Vgl. *anaḍvah, ano˚, apsu˚, idhma˚, indra˚, girvah, turya˚, dakṣiṇā˚, ditya˚, paṣṭha˚, pārṣṇi˚, pūrva˚, pūrvāgni˚, pṛṣṭi˚, praṣṭha˚, preta˚, bhāra˚, bhū˚, madhyama˚, vajra˚, vīra˚, viśva˚, śveta˚, saha˚, suṣṭu˚, havirvah, havya˚* .
@@ -3055,9 +3055,9 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h2_00_pwg00`
 
 
-**1)** **1.** *vah*¦ [vgl. ] Z. 6 lies {864} st. {846}.
+**1)** **1.** *vah* [vgl. ] Z. 6 lies {864} st. {846}.
 
-- **RU:** **1.** *vah*¦ [vgl. ] Z. 6 читай {864} st. {846}.
+- **RU:** **1.** *vah* [vgl. ] Z. 6 читай {864} st. {846}.
 - **EN:** 1. *vah* [vgl. ] Z. line 6, read {864} st. {846}.
   <sub>attested</sub>
 
@@ -3066,11 +3066,11 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h3_00_pwg00`
 
 
-**0)** 1. *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
+**0)** 1. *vah*, intens. *vāvahīti* tragen: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 - **EN:** 1. *vah*, intens. *vāvahīti* to carry, bear: *ratnabhāram* [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 
-**1)** *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
+**1)** *vah*, intens. *vāvahīti* tragen: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.
@@ -3082,7 +3082,7 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 — *saṃpra* s. *saṃpravāha* .
 — *vi*
 
-- **RU:** *vah*¦, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
+- **RU:** *vah*, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.
@@ -3680,9 +3680,9 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 **ud4)** — 1〉 hinausführen, — ziehen [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 - **EN:** — 1) to lead out, — to draw out [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
-**1)** **1.** √*vah*¦, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
+**1)** **1.** √*vah*, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
 
-- **RU:** **1.** √*vah*¦, *vahati*, *˚te* (позднее лишь метрически), *uhīta* (в виде исключения), *uhyate* Pass.
+- **RU:** **1.** √*vah*, *vahati*, *˚te* (позднее лишь метрически), *uhīta* (в виде исключения), *uhyate* Pass.
   <sub>attested</sub>
 
 **pra_intro)** — Intens.
@@ -4447,10 +4447,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h0_zz_pw03`
 
 
-**2)** **2.** √*˚vah* (stark *vāh*, schwach *uh* und *ūh*, welches mit einem vorangehenden *a* zu *auh* wird)¦ fahrend, ziehend, führend, tragend, haltend.
+**2)** **2.** √*˚vah* (stark *vāh*, schwach *uh* und *ūh*, welches mit einem vorangehenden *a* zu *auh* wird) fahrend, ziehend, führend, tragend, haltend.
 
-- **RU:** **2.** корень *˚vah* (сильная ступень *vāh*, слабая *uh* и *ūh*, которая после предшествующего *a* переходит в *auh*)¦ везущий, тянущий, ведущий, несущий, держащий.
-- **EN:** **2.** √*˚vah* (strong *vāh*, weak *uh* and *ūh*, which with a preceding *a* becomes *auh*)¦ driving, drawing, leading, bearing, holding.
+- **RU:** **2.** корень *˚vah* (сильная ступень *vāh*, слабая *uh* и *ūh*, которая после предшествующего *a* переходит в *auh*) везущий, тянущий, ведущий, несущий, держащий.
+- **EN:** **2.** √*˚vah* (strong *vāh*, weak *uh* and *ūh*, which with a preceding *a* becomes *auh*) driving, drawing, leading, bearing, holding.
   <sub>attested</sub>
 
 **Lbody)** {{Lbody=101504}}
@@ -4459,18 +4459,18 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 - **EN:** {{Lbody=101504}}
   <sub>attested</sub>
 
-**1)** **1.** √*vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
+**1)** **1.** √*vah* Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
 — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39].
 — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
 — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
-- **EN:** **1.** √*vah*¦ Caus. class VI. to drive, to carry on, conduct (a business) [DIVYĀVAD. 14,20].
+- **EN:** **1.** √*vah* Caus. class VI. to drive, to carry on, conduct (a business) [DIVYĀVAD. 14,20].
 — With *abhi* class VI. to bear, hence v. a. to have [KIR. 16,39].
 — With *samud* Caus. to raise up, lift on high [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
 — With *prati* class VI. to act counter to, contravene (an order, Acc.) [DIVYĀVAD. 178,11].
 
-**1.)** **1.** √*vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
+**1.)** **1.** √*vah* Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20].
 
-- **RU:** **1.** корень *vah*¦ Caus. VI. заниматься, вести (дело) [DIVYĀVAD. 14,20].
+- **RU:** **1.** корень *vah* Caus. VI. заниматься, вести (дело) [DIVYĀVAD. 14,20].
   <sub>attested</sub>
 
 **1. — mit ā)** — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39].
@@ -4493,10 +4493,10 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h0_zz_sch`
 
 
-**1)** vah¦ [Kaus.] treiben, betreiben (ein Geschäft), [Divyāvad. 14,20.]
+**1)** vah [Kaus.] treiben, betreiben (ein Geschäft), [Divyāvad. 14,20.]
 
 - **RU:** vah [Kaus.] гнать, вести (дело, занятие), [Divyāvad. 14,20.]
-- **EN:** 1. vah¦ [Kaus.] to drive, to carry on, conduct (a business), [Divyāvad. 14,20.] — With ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; PW "only ativāhita"]. — With abhi to bear, hence so much as to have, [Kir. 16,39.] — With samud [Kaus.] to raise up, lift on high, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39) — With prati to act counter to (an order, Acc.), [Divyāvad. 178,11.] {part=,seq=23722,type=,n=9}
+- **EN:** 1. vah [Kaus.] to drive, to carry on, conduct (a business), [Divyāvad. 14,20.] — With ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; PW "only ativāhita"]. — With abhi to bear, hence so much as to have, [Kir. 16,39.] — With samud [Kaus.] to raise up, lift on high, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39) — With prati to act counter to (an order, Acc.), [Divyāvad. 178,11.] {part=,seq=23722,type=,n=9}
   <sub>lexicographic</sub>
 
 **2 (mit ati))** Mit ati, [Kaus.] [Sam. I,23] [ativāhya padavīm; pw "nur ativāhita"]
@@ -4524,8 +4524,8 @@ u. s. w.) [MBH. 1,3801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3801
 `vah~~h0_zz_pwkvn`
 
 
-**1)** **1.** *vah*¦ Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20]. — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39]. — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
+**1)** **1.** *vah* Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20]. — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39]. — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
 
-- **RU:** **1.** *vah*¦ Caus. VI. гнать, вести (дело) [DIVYĀVAD. 14,20]. — С *abhi* VI. нести, так v. a. иметь [KIR. 16,39]. — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — С *prati* VI. действовать вопреки (приказу, Acc.) [DIVYĀVAD. 178,11].
-- **EN:** **1.** *vah*¦ Caus. class VI. to drive, to carry on, conduct (a business) [DIVYĀVAD. 14,20]. — With *abhi* class VI. to bear, hence v. a. to have [KIR. 16,39]. — With *samud* Caus. to raise up, lift on high [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — With *prati* class VI. to act counter to, contravene (an order, Acc.) [DIVYĀVAD. 178,11].
+- **RU:** **1.** *vah* Caus. VI. гнать, вести (дело) [DIVYĀVAD. 14,20]. — С *abhi* VI. нести, так v. a. иметь [KIR. 16,39]. — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — С *prati* VI. действовать вопреки (приказу, Acc.) [DIVYĀVAD. 178,11].
+- **EN:** **1.** *vah* Caus. class VI. to drive, to carry on, conduct (a business) [DIVYĀVAD. 14,20]. — With *abhi* class VI. to bear, hence v. a. to have [KIR. 16,39]. — With *samud* Caus. to raise up, lift on high [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — With *prati* class VI. to act counter to, contravene (an order, Acc.) [DIVYĀVAD. 178,11].
   <sub>lexicographic</sub>

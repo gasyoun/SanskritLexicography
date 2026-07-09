@@ -3,7 +3,7 @@
 `hi~~h1_00_pwg00`
 
 
-**2)** 2. *hi*¦ indecl. Einfluss auf ein folgendes *sa*
+**2)** 2. *hi* indecl. Einfluss auf ein folgendes *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] wann pluta
@@ -116,7 +116,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [SARVADARŚANAS. 99,5. 14.] in zwei auf einander folgenden Sätzen: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
 [MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241)
 [R. 1,64,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,19)
-- **EN:** 2. *hi*¦ indecl. influence upon a following *sa*
+- **EN:** 2. *hi* indecl. influence upon a following *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] when pluta
@@ -230,7 +230,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241)
 [R. 1,64,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,19)
 
-**intro)** 2. *hi*¦ indecl. Einfluss auf ein folgendes *sa*
+**intro)** 2. *hi* indecl. Einfluss auf ein folgendes *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] wann pluta
@@ -254,7 +254,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [AK. 3,5,9](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,9), wo aber unsere Ausgg. *'ho hī* st. *hi hau* lesen. *śoke*
 [ŚABDAR.] im [ŚKDR.] Nie am Anfange eines Satzes.
 
-- **RU:** 2. *hi*¦ indecl. влияние на следующее *sa*
+- **RU:** 2. *hi* indecl. влияние на следующее *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] когда pluta

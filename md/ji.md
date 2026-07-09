@@ -7,7 +7,7 @@ _PWG article — 34 sub-card(s), 287 sense(s) · RU 100/287 · EN 256/287_
 `ji~~h0_00_pwg00`
 
 
-*ji*¦, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
+*ji*, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
 [MBH. 4,1604](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604); *ajaiṣīt*, ved. *jeṣas, jeṣat, jeṣma, jeṣma, jeṣāma, (sam) ajais, jes, jeṣi*
 2. sg. med., *ajeṣṭa (parājaiṣṭa*
 [MBH. 1,6378](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378)), *ajījayat*
@@ -21,7 +21,7 @@ _PWG article — 34 sub-card(s), 287 sense(s) · RU 100/287 · EN 256/287_
 [TBR. 2,4,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,4,3,2) pass. *jīyate, ajāyi, jāyiṣyate; jita* .
 [DHĀTUP. 15,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) [22,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 
-- **RU:** *ji*¦, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
+- **RU:** *ji*, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
 [MBH. 4,1604](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604); *ajaiṣīt*, ved. *jeṣas, jeṣat, jeṣma, jeṣma, jeṣāma, (sam) ajais, jes, jeṣi*
 2. sg. med., *ajeṣṭa (parājaiṣṭa*
 [MBH. 1,6378](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378)), *ajījayat*
@@ -3027,10 +3027,10 @@ Vgl. *vijaya, vijigīṣā, vijeṣa* .
 `ji~~h1_00_pwg00`
 
 
-**2)** 2. *ji*¦, *jināti* s. u. *jyā* .
+**2)** 2. *ji*, *jināti* s. u. *jyā* .
 
-- **RU:** 2. *ji*¦, *jināti* s. u. *jyā* .
-- **EN:** 2. *ji*¦, *jināti* s. u. *jyā* .
+- **RU:** 2. *ji*, *jināti* s. u. *jyā* .
+- **EN:** 2. *ji*, *jināti* s. u. *jyā* .
   <sub>lexicographic</sub>
 
 ## ji
@@ -3038,9 +3038,9 @@ Vgl. *vijaya, vijigīṣā, vijeṣa* .
 `ji~~h2_00_pwg00`
 
 
-**sense1)** *ji*¦ (= 1. *ji*) _adj._
+**sense1)** *ji* (= 1. *ji*) _adj._
  1) _adj._ siegend (vgl. *jit*).
-- **EN:** *ji* ¦ (= 1. *ji*) _adj._
+- **EN:** *ji* (= 1. *ji*) _adj._
  1) _adj._ 'victorious' (vgl. *jit*).
 
 **sense2)** — 2) _m._ ein Piśāca
@@ -3053,8 +3053,8 @@ Vgl. *vijaya, vijigīṣā, vijeṣa* .
 `ji~~h3_00_pwg00`
 
 
-**1-intro)** 1. *ji*¦
-- **EN:** 1. *ji*¦
+**1-intro)** 1. *ji*
+- **EN:** 1. *ji*
 
 **1-1)** 1) *jitvā saṃgrāmān* [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 lies 3,34,4 st. 8,34,4.
 - **EN:** 1) *jitvā saṃgrāmān* [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z.; for 4 read 3,34,4 st. 8,34,4.
@@ -3121,11 +3121,11 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 - **EN:** — *vi* 3) at the end, *vijayate jñānapradīpo haraḥ* thus v. a. 'long live!' Śiva [Spr. 929.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?929) — desid.: *na moghaṃ vijigīṣate* 'he does not strive in vain for victory' [Spr. 3699.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3699)
   <sub>attested</sub>
 
-**1)** *ji*¦
+**1)** *ji*
  1) *jitvā saṃgrāmān*
 [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 lies 3,34,4 st. 8,34,4.
 
-- **RU:** *ji*¦
+- **RU:** *ji*
  1) *jitvā saṃgrāmān*
 [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 читай 3,34,4 st. 8,34,4.
   <sub>attested</sub>
@@ -3135,8 +3135,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 `ji~~h4_00_pwg00`
 
 
-**1-intro)** 1. *ji*¦ mit *vi*
-- **EN:** 1. *ji*¦ with *vi*
+**1-intro)** 1. *ji* mit *vi*
+- **EN:** 1. *ji* with *vi*
 
 **1-3)** 3) siegen so v. a. die Oberhand haben: *yāvatpuṇyamidaṃ nṛṇāṃ vijayate* [Spr. (II) 2538.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2538)
 - **EN:** 3) 'to be victorious', thus v. a. 'to have the upper hand': *yāvatpuṇyamidaṃ nṛṇāṃ vijayate* [Spr. (II) 2538.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2538)
@@ -3149,8 +3149,8 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 `ji~~h0_zz_pw`
 
 
-**1)** **1.** √*ji*¦, *jayati* und *˚te* (episch *jayyāt*)
-- **EN:** **1.** √*ji*¦, *jayati* and *˚te* (epic *jayyāt*)
+**1)** **1.** √*ji*, *jayati* und *˚te* (episch *jayyāt*)
+- **EN:** **1.** √*ji*, *jayati* and *˚te* (epic *jayyāt*)
 
 **1.1)** — 1〉 Etwas gewinnen, ersiegen, erbeuten (im Kampfe oder Spiele), erwerben, sich (sibi) unterwerfen, erobern.
 - **EN:** — 1〉 to win, gain by fighting, capture (something) (in battle or in play), to acquire, subdue (to oneself, sibi), conquer.
@@ -3392,11 +3392,11 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **sam_ā.4)** — 4〉 die Sinne besiegen, Herr werden über [HEMĀDRI 1,728,19].
 - **EN:** — 4〉 the senses, to conquer, to become master over [HEMĀDRI 1,728,19].
 
-**ji2)** **2.** √*ji*¦, *jināti* s. **1.** √*jyā*.
-- **EN:** **2.** √*ji*¦, *jināti* s. — see **1.** √*jyā*.
+**ji2)** **2.** √*ji*, *jināti* s. **1.** √*jyā*.
+- **EN:** **2.** √*ji*, *jināti* s. — see **1.** √*jyā*.
 
-**3.hdr)** **3.** **ji*¦
-- **EN:** **3.** **ji*¦
+**3.hdr)** **3.** **ji*
+- **EN:** **3.** **ji*
 
 **3.1)** — 1〉 _Adj._ siegend.
 - **EN:** — 1〉 _Adj._ conquering.
@@ -3404,14 +3404,14 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 **3.2)** — 2〉 _m._ ein Piśāca.
 - **EN:** — 2〉 _m._ a Piśāca.
 
-**1')** **1.** √*ji*¦ Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
-- **EN:** **1.** √*ji*¦ Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+**1')** **1.** √*ji* Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+- **EN:** **1.** √*ji* Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
 
-**1'')** **1.** √*ji*¦ mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
-- **EN:** **1.** √*ji*¦ with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+**1'')** **1.** √*ji* mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+- **EN:** **1.** √*ji* with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
 
-**corr.hdr)** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
-- **EN:** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3, line 2: „Med.“ is to be deleted.
+**corr.hdr)** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
+- **EN:** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3, line 2: „Med.“ is to be deleted.
 
 **corr.1)** — Mit *apa* II. 4.
 - **EN:** — With *apa* II. 4.
@@ -3424,10 +3424,10 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 `ji~~h0_zz_sch`
 
 
-**1)** ji¦ jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata ihr habt gewinnen lassen, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — Mit apa Akt. auch: abgewinnen; mit punar wiedererobern, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — Mit abhinis *erobern, [Mahāvy. 182,7.]
+**1)** ji jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata ihr habt gewinnen lassen, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — Mit apa Akt. auch: abgewinnen; mit punar wiedererobern, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — Mit abhinis *erobern, [Mahāvy. 182,7.]
 
-- **RU:** ji¦ jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata вы дали победить, дали одержать верх, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — С apa Akt. также: отвоёвывать, выигрывать (у кого-л.); с punar отвоёвывать назад, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — С abhinis *завоёвывать, покорять, [Mahāvy. 182,7.]
-- **EN:** ji¦ jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata you (pl.) have caused to win, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — With apa act. also: to win away from (someone), to win as a stake; with punar to reconquer, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — With abhinis *to conquer, [Mahāvy. 182,7.]
+- **RU:** ji jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata вы дали победить, дали одержать верх, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — С apa Akt. также: отвоёвывать, выигрывать (у кого-л.); с punar отвоёвывать назад, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — С abhinis *завоёвывать, покорять, [Mahāvy. 182,7.]
+- **EN:** ji jigiváṃs [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) [Kaus.] ájījipata you (pl.) have caused to win, [TS. 1,7,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4) — With apa act. also: to win away from (someone), to win as a stake; with punar to reconquer, [TS. 6,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1) — With abhinis *to conquer, [Mahāvy. 182,7.]
   <sub>attested</sub>
 
 ## ji
@@ -3435,14 +3435,14 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 `ji~~h0_zz_pwkvn`
 
 
-**pwkvn-1)** **1.** *ji*¦ Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
-- **EN:** **1.** *ji*¦ Caus. *ajījipata* 'you (pl.) have caused to win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+**pwkvn-1)** **1.** *ji* Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+- **EN:** **1.** *ji* Caus. *ajījipata* 'you (pl.) have caused to win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
 
-**pwkvn-2)** **1.** *ji*¦ mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
-- **EN:** **1.** *ji*¦ with *apa* Act. also 'to win away from, win off (someone)'; with *punar* 'to reconquer' [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+**pwkvn-2)** **1.** *ji* mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+- **EN:** **1.** *ji* with *apa* Act. also 'to win away from, win off (someone)'; with *punar* 'to reconquer' [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
 
-**pwkvn-3)** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen. — Mit *apa* II. 4. — Mit *abhinis* II. *erobern [MAHĀVY. 182,7].
-- **EN:** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — at Caus. II. 3, line 2, "Med." is to be struck. — With *apa* II. 4. — With *abhinis* II. 'to conquer' [MAHĀVY. 182,7].
+**pwkvn-3)** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen. — Mit *apa* II. 4. — Mit *abhinis* II. *erobern [MAHĀVY. 182,7].
+- **EN:** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — at Caus. II. 3, line 2, "Med." is to be struck. — With *apa* II. 4. — With *abhinis* II. 'to conquer' [MAHĀVY. 182,7].
 
 ## ji
 

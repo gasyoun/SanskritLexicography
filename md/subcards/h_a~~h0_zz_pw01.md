@@ -3,7 +3,7 @@
 `h_a~~h0_zz_pw01`
 
 
-**1)** **2.** √*hā*¦
+**1)** **2.** √*hā*
 — 1〉 *jahāti* (metrisch *˚jahanti* 3. Pl., *˚jahet* und auch Med.)
 - **EN:** 2. √*hā*
 — 1) *jahāti* (metrically *˚jahanti* 3. Pl., *˚jahet* and also Med.)

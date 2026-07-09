@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 5 sense(s) · RU 5/5 · EN 0/5_
 `utTa`
 
 
-**1)** *utta*¦ partic. von 2. *ud*; s. d.
+**1)** *utta* partic. von 2. *ud*; s. d.
 
-- **RU:** *utta*¦ partic. от 2. *ud*; s. d.
+- **RU:** *utta* partic. от 2. *ud*; s. d.
   <sub>lexicographic</sub>
 
-**1 (PW))** *utta*¦ Partic. von *ud, unatti*.
+**1 (PW))** *utta* Partic. von *ud, unatti*.
 
-- **RU:** *utta*¦ Partic. от *ud, unatti*.
+- **RU:** *utta* Partic. от *ud, unatti*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *utta* [Buddh] Lal 133.16 . [ implied in ( duḥkhena ) cotto ; read either cātto = ca - ātto or cārto = ca - ārto . ]

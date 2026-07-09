@@ -3,16 +3,16 @@
 `_amar_sa`
 
 
-**1)** *āmarśa*¦ _m._ Berührung, Anklang: *hautrāmarśa*
+**1)** *āmarśa* _m._ Berührung, Anklang: *hautrāmarśa*
 [ĀŚV. ŚR. 8,13,32.]
 
-- **RU:** *āmarśa*¦ _m._ «прикосновение, созвучие»: *hautrāmarśa*
+- **RU:** *āmarśa* _m._ «прикосновение, созвучие»: *hautrāmarśa*
 [ĀŚV. ŚR. 8,13,32.]
   <sub>attested</sub>
 
-**PW)** *āmarśa*¦ _m._ Berührung, Anklang.
+**PW)** *āmarśa* _m._ Berührung, Anklang.
 
-- **RU:** *āmarśa*¦ _m._ «прикосновение, созвучие».
+- **RU:** *āmarśa* _m._ «прикосновение, созвучие».
   <sub>attested</sub>
 
 **NWS-1)** *āmarśa* [Gen, unsp] Subst m contact. nearness, similarity. ĀśvŚS ii, 2, 13, 32 [NWS: MW : 147]

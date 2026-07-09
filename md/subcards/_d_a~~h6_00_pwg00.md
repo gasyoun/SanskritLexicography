@@ -3,10 +3,10 @@
 `_d_a~~h6_00_pwg00`
 
 
-**8)** 1. *dhā*¦
+**8)** 1. *dhā*
 Z. 8 *(abhi) dadhyuṣī* auch die [ed. Bomb.]; die Form gehört zu *dhyāḥ*
 Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) liest die neuere Ausg. *patibhaktyorjitāśca* st. *patibhaktyai dhitāḥ sma* .
-- **EN:** 1. *dhā*¦
+- **EN:** 1. *dhā*
 Z. 8 *(abhi) dadhyuṣī* also the [ed. Bomb.]; the form belongs to *dhyāḥ*
 Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) the newer Ausg. reads *patibhaktyorjitāśca* st. *patibhaktyai dhitāḥ sma*.
 

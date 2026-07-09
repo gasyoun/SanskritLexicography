@@ -3,7 +3,7 @@
 `j_y_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*jñā*¦, *jānāti, jānīte* (episch auch *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
+**1)** **1.** √*jñā*, *jānāti, jānīte* (episch auch *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
 - **EN:** **1.** √*jñā*, *jānāti, jānīte* (epic also *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
 
 **1a)** — 1〉 ohne Object oder mit Acc.

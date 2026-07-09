@@ -3,9 +3,9 @@
 `ban_d~~h0_zz_pw02`
 
 
-**IV.1)** √*bandh*¦ IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+**IV.1)** √*bandh* IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 
-- **RU:** √*bandh*¦ IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+- **RU:** √*bandh* IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 - **EN:** √*bandh* class IV, *bandha* 2nd Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
   <sub>attested</sub>
 

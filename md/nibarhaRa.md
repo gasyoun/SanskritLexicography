@@ -7,15 +7,15 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `nibarha_ra`
 
 
-**PWG-1)** *nibarhaṇa*¦ s. *nivarhaṇa* .
+**PWG-1)** *nibarhaṇa* s. *nivarhaṇa* .
 
-- **RU:** *nibarhaṇa*¦ см. (отсылка к другой статье) s. *nivarhaṇa* .
+- **RU:** *nibarhaṇa* см. (отсылка к другой статье) s. *nivarhaṇa* .
   <sub>lexicographic</sub>
 
-**PW-1)** *nibarhaṇa*¦
+**PW-1)** *nibarhaṇa*
 — 1〉 _Adj._ vernichtend, vertilgend, beseitigend, vertreibend.
 
-- **RU:** *nibarhaṇa*¦
+- **RU:** *nibarhaṇa*
 — 1〉 _Adj._ уничтожающий, истребляющий, устраняющий, изгоняющий (губительный, истребительный).
   <sub>lexicographic</sub>
 

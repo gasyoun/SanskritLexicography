@@ -3,7 +3,7 @@
 `su~~h0_zz_pw`
 
 
-**headword and conjugation note)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+**headword and conjugation note)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 - **EN:** **1.** √*su*, *sunoti* (also Med.), *sunvāna* and *suvāna* (*svāna* to be pronounced and always taken passively); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 
 **1) to press out, distil (auspressen, keltern))** — 1〉 auspressen, keltern (den Soma).
@@ -105,43 +105,43 @@
 - **EN:** — With *abhisam* to press simultaneously for (Acc.).
   <sub>attested</sub>
 
-**= 1.su, caused/impelled)** **2.** √*su*¦ = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+**= 1.su, caused/impelled)** **2.** √*su* = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 
-- **RU:** **2.** √*su*¦ = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 - **EN:** **2.** √*su* = **1.** *sū*. From it *sauti* (only [ŚAT. BR.]) and *suhi* (v. l. *sūhi*). Partic. *suta* caused, impelled ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
   <sub>attested</sub>
 
-**cross-reference)** **3.** *su*¦ _Adj._ in *dāvasu*.
+**cross-reference)** **3.** *su* _Adj._ in *dāvasu*.
 
-- **RU:** **3.** *su*¦ _Adj._ в *dāvasu*.
+- **RU:** **3.** *su* _Adj._ в *dāvasu*.
 - **EN:** **3.** *su* _Adj._ in *dāvasu*.
   <sub>attested</sub>
 
-**= 2.sū, beget)** **4.** √*su*¦ = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
+**= 2.sū, beget)** **4.** √*su* = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
 
-- **RU:** **4.** √*su*¦ = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
+- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
 - **EN:** **4.** √*su* = **2.** *sū*. Only *prasvati* (rare), *prasauti* (desgl.), *suta* son and *suṣuti*.
   <sub>attested</sub>
 
-**rare root)** **5.** *√*su*¦, *savati* (*gatau*).
+**rare root)** **5.** *√*su*, *savati* (*gatau*).
 
-- **RU:** **5.** *√*su*¦, *savati* (*gatau*).
+- **RU:** **5.** *√*su*, *savati* (*gatau*).
 - **EN:** **5.** *√*su*, *savati* (*gatau*).
   <sub>lexicographic</sub>
 
-**particle: well, good; intensifying or affirming)** **6.** *su*, *sū*¦ _Adv._ wohl, gut; überhaupt verstärkend oder versichernd; gewiss, leichtlich, völlig u. s. w. wie wohl in älteren deutschen Liedern. Steht selbständig nie am Anfange eines Verses. Häufig am Anfange eines Comp. vor Adjectiven und Substantiven; in der späteren Sprache auch in Verbindung mit einem Absol.
+**particle: well, good; intensifying or affirming)** **6.** *su*, *sū* _Adv._ wohl, gut; überhaupt verstärkend oder versichernd; gewiss, leichtlich, völlig u. s. w. wie wohl in älteren deutschen Liedern. Steht selbständig nie am Anfange eines Verses. Häufig am Anfange eines Comp. vor Adjectiven und Substantiven; in der späteren Sprache auch in Verbindung mit einem Absol.
 
-- **RU:** **6.** *su*, *sū*¦ _Adv._ хорошо, благо; вообще усилительно или заверяющее; несомненно, легко, совершенно u. s. w. как wohl в старых немецких песнях. Самостоятельно никогда не стоит в начале стиха. Часто в начале Comp. перед прилагательными и существительными; в позднейшем языке также в сочетании с Absol.
+- **RU:** **6.** *su*, *sū* _Adv._ хорошо, благо; вообще усилительно или заверяющее; несомненно, легко, совершенно u. s. w. как wohl в старых немецких песнях. Самостоятельно никогда не стоит в начале стиха. Часто в начале Comp. перед прилагательными и существительными; в позднейшем языке также в сочетании с Absol.
 - **EN:** **6.** *su*, *sū* _Adv._ well, good; generally intensifying or affirming; certainly, easily, completely u. s. w. as well in older German songs. Used independently, never at the beginning of a verse. Frequently at the beginning of a Comp. before adjectives and substantives; in the later language also in connection with a Absol.
   <sub>attested</sub>
 
 **addendum marker)** {{Lbody=128531}}
 - **EN:** {{Lbody=128531}}
 
-**1_auspressen)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+**1_auspressen)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 auspressen, keltern (den Soma).
 
-- **RU:** **1.** √*su*¦, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 выжимать, прессовать (Soma).
   <sub>attested</sub>
 

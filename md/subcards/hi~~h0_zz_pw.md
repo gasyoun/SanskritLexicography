@@ -3,10 +3,10 @@
 `hi~~h0_zz_pw`
 
 
-**1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+**1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
 
-- **RU:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
-- **EN:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+- **RU:** **1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+- **EN:** **1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
   <sub>attested</sub>
 
 **1)** — 1〉 Act. Med. in Bewegung setzen, antreiben, anfeuern, reizen. Hierher wohl auch *hayant* Partic. Med. sich in Bewegung setzen, angefeuert werden u. s. w., sich beeifern, beeilen.
@@ -166,21 +166,21 @@
 — 1〉 to dispatch, send forth.
 — 2〉 to bring together, compose, fabricate, bring about, set in order.
 
-**hi2-pw-head)** **2.** *hi*¦ _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
+**hi2-pw-head)** **2.** *hi* _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
 — 1〉 begründend und bestätigend; denn, ja, nämlich. Häufig nach Demonstrativen, Relativen und Interrogativen. In [VS. PRĀT.] bezeichnet es den Schluss eines Abschnitt.
 — 2〉 aufmunternd beim Imperativ oder Potentialis doch. Ebenso *paśyāmo* *hi* wir wollen doch sehen.
 — 3〉 allerdings, jawohl, in der That. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) wohl — aber.
 — 4〉 häufig blosser Versfüller, insbes. zwischen zwei Vocalen zur Entfernung des Hiatus oder zur Gewinnung einer Länge. Erscheint in einem und demselben Satze sogar doppelt.
-- **EN:** **2.** *hi*¦ _Indecl._ (never at the beginning of a sentence; the verbum fin. is thereby orthotoned)
+- **EN:** **2.** *hi* _Indecl._ (never at the beginning of a sentence; the verbum fin. is thereby orthotoned)
 — 1〉 causal and confirmatory; for, indeed, namely. Frequently after demonstratives, relatives, and interrogatives. In [VS. PRĀT.] it marks the close of a section.
 — 2〉 hortatory with the imperative or potential, pray, just. Likewise *paśyāmo* *hi* let us just see.
 — 3〉 certainly, yes indeed, in truth. *hi — tu* or *hi — punar* ([BĀLAR. 296,4]) indeed — but.
 — 4〉 frequently a mere verse-filler, insbes. between two vowels to remove a hiatus or to gain a metrical length. Appears even doubled in one and the same sentence.
 
-**anupra+-pw)** **1.** √*hi*¦ mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
+**anupra+-pw)** **1.** √*hi* mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
 
-- **RU:** **1.** √*hi*¦ mit *anupra* VII. *˚hita* выпущенный, метнутый [KIR. 17,93].
-- **EN:** **1.** √*hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
+- **RU:** **1.** √*hi* mit *anupra* VII. *˚hita* выпущенный, метнутый [KIR. 17,93].
+- **EN:** **1.** √*hi* with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
   <sub>attested</sub>
 
 **PW-6)** — 6〉 = **2.** *hā* [BHĀG. P.]
@@ -363,9 +363,9 @@
 - **RU:** — 2〉 собирать вместе, соединять, изготовлять, приводить в порядок, устраивать.
   <sub>attested</sub>
 
-**PW2-head)** **2.** *hi*¦ _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
+**PW2-head)** **2.** *hi* _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
 
-- **RU:** **2.** *hi*¦ _Indecl._ (никогда в начале предложения; глагол fin. при этом ортотонирован)
+- **RU:** **2.** *hi* _Indecl._ (никогда в начале предложения; глагол fin. при этом ортотонирован)
   <sub>attested</sub>
 
 **PW2-1)** — 1〉 begründend und bestätigend; denn, ja, nämlich. Häufig nach Demonstrativen, Relativen und Interrogativen. In [VS. PRĀT.] bezeichnet es den Schluss eines Abschnitt.

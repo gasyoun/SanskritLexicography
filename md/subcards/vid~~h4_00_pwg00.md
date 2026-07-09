@@ -3,11 +3,11 @@
 `vid~~h4_00_pwg00`
 
 
-**note)** 5. *vid*¦, *vintte (vicāraṇe)*
+**note)** 5. *vid*, *vintte (vicāraṇe)*
 [DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) erhält keinen Bindevocal *i* Kār. 3 aus
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
 
-- **RU:** 5. *vid*¦, *vintte (vicāraṇe)*
+- **RU:** 5. *vid*, *vintte (vicāraṇe)*
 [DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) не получает соединительного гласного *i* Kār. 3 из
 [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
   <sub>mixed</sub>

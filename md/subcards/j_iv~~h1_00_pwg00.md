@@ -3,10 +3,10 @@
 `j_iv~~h1_00_pwg00`
 
 
-**1)** *jīv*¦
+**1)** *jīv*
  1) *jīva jīva* mögest du lange leben
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
-- **EN:** *jīv*¦
+- **EN:** *jīv*
  1) *jīva jīva* "mayest thou live long"
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
 
@@ -88,14 +88,14 @@ to exploit someone
 [BHĀG. P. 10,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,50)
   <sub>attested</sub>
 
-**1 (T42 block))** *jīv*¦
+**1 (T42 block))** *jīv*
  1) *jīva jīva* mögest du lange leben
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) Jmd am Leben erhalten
 [KATHĀS. 65,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,29) *jīva* rufen
 [124,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,113)
 
-- **RU:** *jīv*¦
+- **RU:** *jīv*
  1) *jīva jīva* да живёшь ты долго
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) поддерживать жизнь кого-л.

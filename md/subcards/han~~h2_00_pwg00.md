@@ -3,12 +3,12 @@
 `han~~h2_00_pwg00`
 
 
-**1)** *han*¦ mit *vyati* gemeinsam tödten: *˚hanyante dasyavaḥ*
+**1)** *han* mit *vyati* gemeinsam tödten: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
 
-- **RU:** *han*¦ совместно убивать с *vyati*: *˚hanyante dasyavaḥ*
+- **RU:** *han* совместно убивать с *vyati*: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
-- **EN:** 1. *han*¦ with *vyati* to kill together: *˚hanyante dasyavaḥ*
+- **EN:** 1. *han* with *vyati* to kill together: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
   <sub>attested</sub>
 

@@ -7,9 +7,9 @@ _PWG article — 1 sub-card(s), 8 sense(s) · RU 8/8 · EN 0/8_
 `n_ar_i`
 
 
-**1)** *nārī*¦ s. u. *nāra* .
+**1)** *nārī* s. u. *nāra* .
 
-- **RU:** *nārī*¦ см. s. u. *nāra* .
+- **RU:** *nārī* см. s. u. *nāra* .
   <sub>lexicographic</sub>
 
 **NWS-1)** [NWS: Graßmann 1873 (1996) : 725] *nā́rī* [Ved , unsp] Subst f Weib, Eheweib

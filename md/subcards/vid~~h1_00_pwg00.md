@@ -3,7 +3,7 @@
 `vid~~h1_00_pwg00`
 
 
-**1)** 2. *vid*¦ (= 1. *vid*)
+**1)** 2. *vid* (= 1. *vid*)
  1) nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner: *evaṃ yo vit*
 [KAṬHOP. 6,18.] *vidāṃ varaḥ*
 [SARVADARŚANAS. 119,1.] [BHĀG. P. 1,5,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,40) [3,4,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,16) [11,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,16) [8,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,29) *a˚*
@@ -21,7 +21,7 @@
 [MBH. 1,5101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5101)
 [KĀM. NĪTIS. 9,78. 12,18.] [KATHĀS. 34,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,194) [BHĀG. P. 4,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,24) [7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) Vgl. 1. *aśvavid, evaṃ˚, kratu˚, kṣetra˚*,1. *jyotirvid, tadvid, deva˚, daiva˚, nimitta˚, nīthā˚, purā˚, purāṇa˚, pūrva˚, prakala˚, bahu˚, brahma˚, bhūta˚, bhṛgvaṅgiro˚, mati˚, mano˚, mantra˚, marma˚, mṛdu˚, yoga˚, vaco˚* u. s. w.
 
-- **RU:** 2. *vid*¦ (= 1. *vid*)
+- **RU:** 2. *vid* (= 1. *vid*)
  1) nom. ag. «знающий, ведающий, разбирающийся в чём-л., сведущий в чём-л., знаток»: *evaṃ yo vit*
 [KAṬHOP. 6,18.] *vidāṃ varaḥ*
 [SARVADARŚANAS. 119,1.] [BHĀG. P. 1,5,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,40) [3,4,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,16) [11,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,16) [8,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,29) *a˚*

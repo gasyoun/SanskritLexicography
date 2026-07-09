@@ -3,7 +3,7 @@
 `_cid~~h0_00_pwg00`
 
 
-1. *chid*¦, *chinatti* und *chintte*
+1. *chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -16,7 +16,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
-- **EN:** 1. *chid*¦, *chinatti* and *chintte*
+- **EN:** 1. *chid*, *chinatti* and *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* and *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -30,7 +30,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 from
 [SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-*chid*¦, *chinatti* und *chintte*
+*chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -44,7 +44,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-- **RU:** *chid*¦, *chinatti* und *chintte*
+- **RU:** *chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*

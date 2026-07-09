@@ -3,9 +3,9 @@
 `_ap~~h0_zz_sch`
 
 
-**anu-desid)** āp¦ mit anu Desid. einstimmen. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
+**anu-desid)** āp mit anu Desid. einstimmen. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
 
-- **RU:** āp¦ mit anu Desid. соглашаться. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
+- **RU:** āp mit anu Desid. соглашаться. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
 - **EN:** āp with anu Desid. to join in agreement. Indreṇa bāḍham ity evam anvīpsitam, [VP. 4,2,11.]
   <sub>attested</sub>
 
@@ -33,9 +33,9 @@
 **sam4)** — Mit sam 4. mit oder ohne ātmānam seinem Leben ein Ende machen, [Āpast. 1,25,2. 7.]
 - **EN:** — With sam 4. with or without ātmānam to put an end to one's life, [Āpast. 1,25,2. 7.]
 
-**udava)** āp¦ mit ˚udava, erreichen, überziehen, [Kir. IX,11.]
+**udava)** āp mit ˚udava, erreichen, überziehen, [Kir. IX,11.]
 
-- **RU:** āp¦ mit ˚udava, достигать, покрывать, [Kir. IX,11.]
+- **RU:** āp mit ˚udava, достигать, покрывать, [Kir. IX,11.]
 - **EN:** āp with ˚udava, to reach, to overspread, [Kir. IX,11.]
   <sub>attested</sub>
 

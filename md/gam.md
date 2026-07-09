@@ -7,7 +7,7 @@ _PWG article — 127 sub-card(s), 807 sense(s) · RU 674/807 · EN 621/807_
 `gam~~h0_00_pwg00`
 
 
-**intro)** *gam*¦ (vgl. *gā*) bildet die Special-Tempora auf viererlei Weise: I. *gamati*
+**intro)** *gam* (vgl. *gā*) bildet die Special-Tempora auf viererlei Weise: I. *gamati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) *(ā) gamathas; gamātas, gamātha; (ā) gamet, gameyam* (
 [P. 3,1,86](https://ashtadhyayi.com/sutraani/3/1/86), Sch.);
 *(anu, nis) gamāni, (anu, ā) gamantu; gamam, gamat, gamāma, gaman*; med. *(sam) gamemahi, (sam) gamāmahai* . — II. *ganti*
@@ -250,7 +250,7 @@ partic. *gmant: adha gmantośanā* (Padap.: *gmantā) pṛcchate vāṃ kadarth�
 - **EN:** — 3) to go to, into, towards; to arrive at, reach; to enter into; to fall to one's share; a) with the acc. [P. 2,3,12.](https://ashtadhyayi.com/sutraani/2/3/12) *yamaṃ ha yajño gacchati* [ṚV. 10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *savanamindro gacchati* [1,16,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.016.html#rv01.016.08) [5,87,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.087.html#rv05.087.09) *gṛham* [10,40,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.03) *asunītim* [16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.02) *devān* [1,163,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.13) *girim* [10,155,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.01) [16,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.03) *gacchāmumaraṇaṃ janam* [AV. 5,22,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.022.html#av05.022.12) *divam* [2,34,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.05) *antam* [10,7,42.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.007.html#av10.007.42) *(kṛmiḥ) datāṃ yo madhyaṃ gacchati* [5,23,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.023.html#av05.023.03) *rutaṃ gacchasi niṣkṛte* [5,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.005.html#av05.005.09) *tatra me gacchatāddhavam* [2,30,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.030.html#av02.030.03) *uraḥ* [ṚV. 10,155,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.04) *tadyathā mahāpatha ātata ubhau grāmau gacchati* [CHĀND. UP. 8,6,2.] *yatheyaṃ na prāktvattaḥ purā vidyā brāhmaṇāngacchati* [5,3,7.] *abhayaṃ tvā gacchatāt* [BṚH. ĀR. UP. 4,2,4.] — *vanaṃ gacchet* [M. 6,3.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,3) *mā gaṅgāṃ mā kurūngamaḥ* [8,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,92) *vanena vanaṃ gatvā* [R. 1,1,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,30) *na ca svargaṃ sa gacchati* [M. 3,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,18) [4,235.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,235) *uttamaṃ sthānam* [2,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,249) *brahmaṇaḥ sadma śāśvatam* [244.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,244) *yajñaṃ gacchenna cāvṛtaḥ* [4,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,57) *damayantyāḥ svayaṃvaram . gatvā* [N. 6,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?6,3) *haṃsāḥ samutpatya vidarbhānagaman* [1,21.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,21) *gamiṣyāmi* (sc. *rathena) — ekāhnā — vidarbhanagarīm* [19,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?19,10) *samīpaṃ puṣkarasya ca . gatvā* [7,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,4) [14,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,20) [MBH. 3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) [HIT. 27,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,1) *pratīpaṃ gam* to go against someone, to oppose someone (gen.) [ŚĀK. 93.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?93) *gamyatāmeṣa dakṣiṇasyottaro giriḥ* [R. 4,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,22) [HIT. 80,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?80,8) *uttamānuttamāngacchanhīnānhīnāṃśca varjayan* [M. 4,245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,245) *gacchadhvam — rājānam* [MBH. 1,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1789) [6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) [R. 1,54,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,5) *gacchadhvamenaṃ śaraṇam* [MBH. 3,13006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13006) *ete gacchanti bahavaḥ panthāno dakṣiṇāpatham* [2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2317) [2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2319) [P. 4,3,85.](https://ashtadhyayi.com/sutraani/4/3/85) *jānubhyāmavanīṃ gam* to throw oneself upon one's knees [MBH. 13,935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.935) [PAÑCAT. 236,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?236,9) *dharaṇīṃ mūrdhnā* to bow with the head down to the ground [R. 3,11,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,6) *tvāmapyetādṛśo bhāvaḥ kṣiprameva gamiṣyati — dātāramiva dakṣiṇā* [DAŚ. 2,54.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,54) *chadmanā caritaṃ yacca vrataṃ rakṣāṃsi gacchati* [M. 4,199.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,199) *eno gacchati kartāram* [8,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,19) *tatte sarvaṃ śuno gacchet* [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,90)
   <sub>attested</sub>
 
-**grammar-intro)** *gam*¦ (vgl. *gā*) bildet die Special-Tempora auf viererlei Weise: I. *gamati*
+**grammar-intro)** *gam* (vgl. *gā*) bildet die Special-Tempora auf viererlei Weise: I. *gamati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) *(ā) gamathas; gamātas, gamātha; (ā) gamet, gameyam* (
 [P. 3,1,86](https://ashtadhyayi.com/sutraani/3/1/86), Sch.);
 *(anu, nis) gamāni, (anu, ā) gamantu; gamam, gamat, gamāma, gaman*; med. *(sam) gamemahi, (sam) gamāmahai* . — II. *ganti*
@@ -284,7 +284,7 @@ partic. *gmant: adha gmantośanā* (Padap.: *gmantā) pṛcchate vāṃ kadarth�
 [P. 6,4,38](https://ashtadhyayi.com/sutraani/6/4/38); pass. *(ā) gāmi; gata*
 [P. 6,4,37.](https://ashtadhyayi.com/sutraani/6/4/37)
 
-- **RU:** *gam*¦ (vgl. *gā*) образует специальные времена (Special-Tempora) четырьмя способами: I. *gamati*
+- **RU:** *gam* (vgl. *gā*) образует специальные времена (Special-Tempora) четырьмя способами: I. *gamati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) *(ā) gamathas; gamātas, gamātha; (ā) gamet, gameyam* (
 [P. 3,1,86](https://ashtadhyayi.com/sutraani/3/1/86), Sch.);
 *(anu, nis) gamāni, (anu, ā) gamantu; gamam, gamat, gamāma, gaman*; med. *(sam) gamemahi, (sam) gamāmahai* . — II. *ganti*
@@ -5616,11 +5616,11 @@ Sch. Vārtt. 2, Sch.
 `gam~~h1_00_pwg00`
 
 
-**1)** 2. *gam*¦ = *kṣam* Erde, nur in der Form *gmas* (gen. abl.): *divaśca gmaśca rājasi*
+**1)** 2. *gam* = *kṣam* Erde, nur in der Form *gmas* (gen. abl.): *divaśca gmaśca rājasi*
 [ṚV. 1,25,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.20) [37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.037.html#rv01.037.06) [5,38,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.03) [10,22,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.06) [49,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.02)
 [NAIGH. 1,1](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,1) führt den nom. *gmā* auf.
 
-- **RU:** 2. *gam*¦ = *kṣam* земля, только в форме *gmas* (gen. abl.): *divaśca gmaśca rājasi*
+- **RU:** 2. *gam* = *kṣam* земля, только в форме *gmas* (gen. abl.): *divaśca gmaśca rājasi*
 [ṚV. 1,25,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.20) [37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.037.html#rv01.037.06) [5,38,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.03) [10,22,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.06) [49,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.02)
 [NAIGH. 1,1](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,1) приводит nom. *gmā*.
 - **EN:** 2. *gam* = *kṣam* 'earth', only in the form *gmas* (gen. abl.): *divaśca gmaśca rājasi* [ṚV. 1,25,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.20) [37,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.037.html#rv01.037.06) [5,38,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.03) [10,22,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.06) [49,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.02) [NAIGH. 1,1](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,1) cites the nom. *gmā*.
@@ -5638,7 +5638,7 @@ Sch. Vārtt. 2, Sch.
 - **RU:** 3)
  а) *gacchasva tvaṃ gajāhvayam*
 [BHĀG. P. 10,48,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,32)
-- **EN:** 1. *gam*¦
+- **EN:** 1. *gam*
  3)
  a) *gacchasva tvaṃ gajāhvayam*
 [BHĀG. P. 10,48,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,32)
@@ -5659,9 +5659,9 @@ Sch. Vārtt. 2, Sch.
 - **EN:** — 5) *prāṇadroham* to seek someone's life, attempt to kill someone
 [Spr. 1775.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1775)
 
-**headword)** 1. *gam*¦
+**headword)** 1. *gam*
 
-- **RU:** 1. *gam*¦
+- **RU:** 1. *gam*
 
 ## gam
 
@@ -6541,12 +6541,12 @@ Z. 4 read 9, 6 st. 9, 16.
 `gam~~h3_00_pwg00`
 
 
-**1)** 1. *gam*¦ mit *vyati* gemeinsam passiren: *vyatigamyante grāmāḥ*
+**1)** 1. *gam* mit *vyati* gemeinsam passiren: *vyatigamyante grāmāḥ*
 [PAT. a. a. O. 1,247,a.]
 
-- **RU:** 1. *gam*¦ с *vyati* вместе проходить, совместно совершать (путь): *vyatigamyante grāmāḥ*
+- **RU:** 1. *gam* с *vyati* вместе проходить, совместно совершать (путь): *vyatigamyante grāmāḥ*
 [PAT. a. a. O. 1,247,a.]
-- **EN:** 1. *gam*¦ with *vyati* "to pass jointly, traverse together": *vyatigamyante grāmāḥ*
+- **EN:** 1. *gam* with *vyati* "to pass jointly, traverse together": *vyatigamyante grāmāḥ*
 [PAT. a. a. O. 1,247,a.]
   <sub>attested</sub>
 
@@ -6695,10 +6695,10 @@ Z. 14. fg. Место [N. 12,20](https://sanskrit-lexicon-scans.github.io/bchres
 `gam~~h0_zz_pw00`
 
 
-**root-header)** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
+**root-header)** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
 
-- **RU:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и *gacchati* (лишь эта форма в klass. языке); Act. и Med.
-- **EN:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and *gacchati* (only this in the klass. language); Act. and Med.
+- **RU:** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и *gacchati* (лишь эта форма в klass. языке); Act. и Med.
+- **EN:** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and *gacchati* (only this in the klass. language); Act. and Med.
 
 **1)** — 1〉 kommen.
 
@@ -8911,28 +8911,28 @@ Z. 14. fg. Место [N. 12,20](https://sanskrit-lexicon-scans.github.io/bchres
 `gam~~h0_zz_pw04`
 
 
-**abhyud-1)** √*gam*¦ mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
+**abhyud-1)** √*gam* mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
 
-- **RU:** √*gam*¦ с *abhyud* 1〉 *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
+- **RU:** √*gam* с *abhyud* 1〉 *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
 - **EN:** √*gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
   <sub>attested</sub>
 
-**nis-zukommen)** √*gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY. zu ṚV. 9,1,4].
+**nis-zukommen)** √*gam* mit *abhi* Caus. auch zukommen lassen [SĀY. zu ṚV. 9,1,4].
 — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
 
-- **RU:** √*gam*¦ с *abhi* Caus. также давать причитающееся, предоставлять [SĀY. zu ṚV. 9,1,4].
+- **RU:** √*gam* с *abhi* Caus. также давать причитающееся, предоставлять [SĀY. zu ṚV. 9,1,4].
 — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
 - **EN:** √*gam* with *abhi* Caus. also to let accrue to, grant [SĀY. zu ṚV. 9,1,4].
 — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
   <sub>attested</sub>
 
-**upanis-block)** √*gam*¦ mit *abhi* Caus. II. 5.
+**upanis-block)** √*gam* mit *abhi* Caus. II. 5.
 — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10].
 — Mit *abhyud* II. 3.
 — Mit *nis* Caus. II. 5.
 — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].
 
-- **RU:** √*gam*¦ с *abhi* Caus. II. 5.
+- **RU:** √*gam* с *abhi* Caus. II. 5.
 — С *ā* II. *āgamya* Absol. так v. a. для, ради; с Acc. [DIVYĀVAD. 95,10]. с Gen. [405,10].
 — С *abhyud* II. 3.
 — С *nis* Caus. II. 5.
@@ -8949,12 +8949,12 @@ Z. 14. fg. Место [N. 12,20](https://sanskrit-lexicon-scans.github.io/bchres
 `gam~~h0_zz_sch`
 
 
-**abhi)** gam¦ mit abhi [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04) -Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10. — Mit ˚parā "die"? [Harṣac. 243,3; 252,9.] — Mit abhyud 1. abhyudgata aufgegangen (Sonne), [Vajracch. 32,17.] — Mit nis [Kaus.] auch: verlieren, einbüßen, Campaka 396. 484. — Mit upanis hinausgehen zu (Akk.), [Jātakam. 31.] {part=,seq=12313,type=,n=11}
+**abhi)** gam mit abhi [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04) -Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10. — Mit ˚parā "die"? [Harṣac. 243,3; 252,9.] — Mit abhyud 1. abhyudgata aufgegangen (Sonne), [Vajracch. 32,17.] — Mit nis [Kaus.] auch: verlieren, einbüßen, Campaka 396. 484. — Mit upanis hinausgehen zu (Akk.), [Jātakam. 31.] {part=,seq=12313,type=,n=11}
 - **EN:** gam with abhi [Kaus.] also: to let accrue, grant, [Sāy.] to [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — With ā, āgamya absol. so v. a. for, for the sake of; with Acc. [Divyāvad. 95,10]; with Gen. 405,10. — With °parā "the"? [Harṣac. 243,3; 252,9.] — With abhyud- 1. abhyudgata risen (sun), [Vajracch. 32,17.] — With nis- [Kaus.] also: to lose, forfeit, Campaka 396. 484. — With upanis- to go out to (Acc.), [Jātakam. 31.] {part=,seq=12313,type=,n=11}
 
-**SCH-Nachtr. mit abhi)** ¦ mit abhi [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04)
+**SCH-Nachtr. mit abhi)** mit abhi [Kaus.] auch: zukommen lassen, [Sāy.] zu [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04)
 
-- **RU:** ¦ с abhi [Kaus.], также: дать получить, [Sāy.] к [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04)
+- **RU:** с abhi [Kaus.], также: дать получить, [Sāy.] к [ṚV. 9,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04)
   <sub>lexicographic</sub>
 
 **SCH-Nachtr. mit ā, āgamya)** Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10.
@@ -8987,20 +8987,20 @@ Z. 14. fg. Место [N. 12,20](https://sanskrit-lexicon-scans.github.io/bchres
 `gam~~h0_zz_pwkvn`
 
 
-**abhyud-1)** *gam*¦ mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
+**abhyud-1)** *gam* mit *abhyud* 1〉 *abhyudgata* aufgegangen (Sonne) [VAJRACCH. 32,17].
 
-- **RU:** *gam*¦ с *abhyud* 1) *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
+- **RU:** *gam* с *abhyud* 1) *abhyudgata* взошедшее (солнце) [VAJRACCH. 32,17].
 - **EN:** *gam* with *abhyud* 1) *abhyudgata* risen (sun) [VAJRACCH. 32,17].
   <sub>attested</sub>
 
-**nis-zukommen)** *gam*¦ mit *abhi* Caus. auch zukommen lassen [SĀY.] zu [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
+**nis-zukommen)** *gam* mit *abhi* Caus. auch zukommen lassen [SĀY.] zu [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — Mit *nis* Caus. auch verlieren, einbüssen [CAMPAKA 396]. [484].
 
-- **RU:** *gam*¦ с *abhi* Caus. также давать причитаться [SĀY.] к [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
+- **RU:** *gam* с *abhi* Caus. также давать причитаться [SĀY.] к [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — С *nis* Caus. также терять, лишаться [CAMPAKA 396]. [484].
 - **EN:** *gam* with *abhi* Caus. also to let accrue to, grant [SĀY.] to [ṚV. 9,1,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.001.html#rv09.001.04). — With *nis* Caus. also to lose, forfeit [CAMPAKA 396]. [484].
   <sub>attested</sub>
 
-**upanis-block)** *gam*¦ mit *abhi* Caus. II. 5. — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10]. — Mit *abhyud* II. 3. — Mit *nis* Caus. II. 5. — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].
+**upanis-block)** *gam* mit *abhi* Caus. II. 5. — Mit *ā* II. *āgamya* Absol. so v. a. für, behufs; mit Acc. [DIVYĀVAD. 95,10]. mit Gen. [405,10]. — Mit *abhyud* II. 3. — Mit *nis* Caus. II. 5. — Mit *upanis* hinausgehen zu (Acc.) [JĀTAKAM. 31].
 
-- **RU:** *gam*¦ с *abhi* Caus. II. 5. — С *ā* II. *āgamya* Absol. так v. a. для, ради; с Acc. [DIVYĀVAD. 95,10]. с Gen. [405,10]. — С *abhyud* II. 3. — С *nis* Caus. II. 5. — С *upanis* выходить к (Acc.) [JĀTAKAM. 31].
+- **RU:** *gam* с *abhi* Caus. II. 5. — С *ā* II. *āgamya* Absol. так v. a. для, ради; с Acc. [DIVYĀVAD. 95,10]. с Gen. [405,10]. — С *abhyud* II. 3. — С *nis* Caus. II. 5. — С *upanis* выходить к (Acc.) [JĀTAKAM. 31].
 - **EN:** *gam* with *abhi* Caus. II. 5. — With *ā* II. *āgamya* Absol. thus v. a. for, for the sake of; with Acc. [DIVYĀVAD. 95,10]; with Gen. [405,10]. — With *abhyud* II. 3. — With *nis* Caus. II. 5. — With *upanis* to go out to (Acc.) [JĀTAKAM. 31].
   <sub>attested</sub>

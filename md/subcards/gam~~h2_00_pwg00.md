@@ -10,7 +10,7 @@
 - **RU:** 3)
  а) *gacchasva tvaṃ gajāhvayam*
 [BHĀG. P. 10,48,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,32)
-- **EN:** 1. *gam*¦
+- **EN:** 1. *gam*
  3)
  a) *gacchasva tvaṃ gajāhvayam*
 [BHĀG. P. 10,48,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,32)
@@ -31,6 +31,6 @@
 - **EN:** — 5) *prāṇadroham* to seek someone's life, attempt to kill someone
 [Spr. 1775.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1775)
 
-**headword)** 1. *gam*¦
+**headword)** 1. *gam*
 
-- **RU:** 1. *gam*¦
+- **RU:** 1. *gam*

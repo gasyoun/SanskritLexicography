@@ -3,8 +3,8 @@
 `ji~~h0_zz_pw`
 
 
-**1)** **1.** √*ji*¦, *jayati* und *˚te* (episch *jayyāt*)
-- **EN:** **1.** √*ji*¦, *jayati* and *˚te* (epic *jayyāt*)
+**1)** **1.** √*ji*, *jayati* und *˚te* (episch *jayyāt*)
+- **EN:** **1.** √*ji*, *jayati* and *˚te* (epic *jayyāt*)
 
 **1.1)** — 1〉 Etwas gewinnen, ersiegen, erbeuten (im Kampfe oder Spiele), erwerben, sich (sibi) unterwerfen, erobern.
 - **EN:** — 1〉 to win, gain by fighting, capture (something) (in battle or in play), to acquire, subdue (to oneself, sibi), conquer.
@@ -246,11 +246,11 @@
 **sam_ā.4)** — 4〉 die Sinne besiegen, Herr werden über [HEMĀDRI 1,728,19].
 - **EN:** — 4〉 the senses, to conquer, to become master over [HEMĀDRI 1,728,19].
 
-**ji2)** **2.** √*ji*¦, *jināti* s. **1.** √*jyā*.
-- **EN:** **2.** √*ji*¦, *jināti* s. — see **1.** √*jyā*.
+**ji2)** **2.** √*ji*, *jināti* s. **1.** √*jyā*.
+- **EN:** **2.** √*ji*, *jināti* s. — see **1.** √*jyā*.
 
-**3.hdr)** **3.** **ji*¦
-- **EN:** **3.** **ji*¦
+**3.hdr)** **3.** **ji*
+- **EN:** **3.** **ji*
 
 **3.1)** — 1〉 _Adj._ siegend.
 - **EN:** — 1〉 _Adj._ conquering.
@@ -258,14 +258,14 @@
 **3.2)** — 2〉 _m._ ein Piśāca.
 - **EN:** — 2〉 _m._ a Piśāca.
 
-**1')** **1.** √*ji*¦ Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
-- **EN:** **1.** √*ji*¦ Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+**1')** **1.** √*ji* Caus. *ajījipata* ihr habt gewinnen lassen [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
+- **EN:** **1.** √*ji* Caus. *ajījipata* 'you have let (them) win' [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4).
 
-**1'')** **1.** √*ji*¦ mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
-- **EN:** **1.** √*ji*¦ with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+**1'')** **1.** √*ji* mit *apa* Act. auch abgewinnen; mit *punar* wiedererobern [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
+- **EN:** **1.** √*ji* with *apa* Act. also to win from; with *punar* to reconquer [TS. 6,3,1,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,1,1).
 
-**corr.hdr)** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
-- **EN:** **1.** *ji*, *jigivaṃs*¦ [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3, line 2: „Med.“ is to be deleted.
+**corr.hdr)** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3. Z. 2. ist „Med.“ zu streichen.
+- **EN:** **1.** *ji*, *jigivaṃs* [TS. 1,7,8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,8,4). — Caus. II. 3, line 2: „Med.“ is to be deleted.
 
 **corr.1)** — Mit *apa* II. 4.
 - **EN:** — With *apa* II. 4.

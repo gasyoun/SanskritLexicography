@@ -3,11 +3,11 @@
 `la_b~~h0_zz_pw`
 
 
-√*labh*¦, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
-- **EN:** √*labh*¦, *labhate* (*lambhante* u. s. w. faulty; *alabhanta* also faulty for *ālabhanta*), *labhati* (metrical and inexact); *labdha* Partic.
+√*labh*, *labhate* (*lambhante* u. s. w. fehlerhaft; *alabhanta* auch fehlerhaft für *ālabhanta*), *labhati* (metrisch und ungenau); *labdha* Partic.
+- **EN:** √*labh*, *labhate* (*lambhante* u. s. w. faulty; *alabhanta* also faulty for *ālabhanta*), *labhati* (metrical and inexact); *labdha* Partic.
 
-√*labh*¦ mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
-- **EN:** √*labh*¦ with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
+√*labh* mit *prati* V. **˚pratilabdha* so v. a. theilhaftig geworden [MAHĀVY. 30,6]. [33]. [245,575].
+- **EN:** √*labh* with *prati* V. **˚pratilabdha* so v. a. {having become a partaker of} [MAHĀVY. 30,6]. [33]. [245,575].
 
 **1)** — 1〉 erwischen, fassen, sich Jmds bemeistern; antreffen, finden, zu sehen bekommen ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. gefunden —, angetroffen werden. *antaram* eine Gelegenheit finden, sich Eingang verschaffen bei, Eindruck machen auf (Gen.); *avakāśam* Platz —, einen freien Spielraum finden, sich Eingang verschaffen, am Platze sein; *kālam* den richtigen Zeitpunct für Etwas (Loc. eines Nom. act.) finden; *padam* Platz finden, so v. a. sich Eingang verschaffen.
 - **EN:** — 1) {to catch, seize, get hold of, take possession of someone; to come upon, find, catch sight of} ([61,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?61)); Pass. {to be found —, be come upon}. *antaram* {to find an opportunity, gain entry with, make an impression upon} (Gen.); *avakāśam* {to find room —, find free scope, gain entry, be appropriate;} *kālam* {to find the right moment for something} (Loc. of a Nom. act.); *padam* {to find scope,} so v. a. {to gain entry}.

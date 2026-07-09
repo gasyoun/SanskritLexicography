@@ -3,16 +3,16 @@
 `vas~~h0_zz_pw00`
 
 
-**1)** **1.** √*vas*¦ enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
+**1)** **1.** √*vas* enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
 
-- **RU:** **1.** √*vas*¦ энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
-- **EN:** **1.** √*vas*¦ enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
+- **RU:** **1.** √*vas* энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
+- **EN:** **1.** √*vas* enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
   <sub>attested</sub>
 
-**2.intro)** **2.** √*vas*¦ *ucchati*
+**2.intro)** **2.** √*vas* *ucchati*
 
-- **RU:** **2.** √*vas*¦ *ucchati*
-- **EN:** **2.** √*vas*¦ *ucchati*
+- **RU:** **2.** √*vas* *ucchati*
+- **EN:** **2.** √*vas* *ucchati*
   <sub>attested</sub>
 
 **2.1)** — 1〉 illucescere, hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens, vom Hellwerden der Nacht u. s. w.).
@@ -113,10 +113,10 @@
 - **EN:** — With *parivi* to flare up from — (Abl.), hence v. a. after.
   <sub>attested</sub>
 
-**3.intro)** **3.** √*vas*¦, *vaste* (einmal *vatsyanti* st. *˚nte*) anziehen, sich ein Gewand ([ĀŚV. GṚHY. 1,19,11]) oder Hülle (Acc.) umlegen, eine Form der Erscheinung annehmen, sich hineinmachen —, eindringen in (Acc.).
+**3.intro)** **3.** √*vas*, *vaste* (einmal *vatsyanti* st. *˚nte*) anziehen, sich ein Gewand ([ĀŚV. GṚHY. 1,19,11]) oder Hülle (Acc.) umlegen, eine Form der Erscheinung annehmen, sich hineinmachen —, eindringen in (Acc.).
 
-- **RU:** **3.** √*vas*¦, *vaste* (однажды *vatsyanti* st. *˚nte*) надевать, облачаться в одеяние ([ĀŚV. GṚHY. 1,19,11]) или покров (Acc.), облекаться, принимать облик, входить в —, проникать в (Acc.).
-- **EN:** **3.** √*vas*¦, *vaste* (once *vatsyanti* st. *˚nte*) to put on, to don a garment ([ĀŚV. GṚHY. 1,19,11]) or covering (Acc.) , to assume an outward form, to put oneself into —, to enter into (Acc.).
+- **RU:** **3.** √*vas*, *vaste* (однажды *vatsyanti* st. *˚nte*) надевать, облачаться в одеяние ([ĀŚV. GṚHY. 1,19,11]) или покров (Acc.), облекаться, принимать облик, входить в —, проникать в (Acc.).
+- **EN:** **3.** √*vas*, *vaste* (once *vatsyanti* st. *˚nte*) to put on, to don a garment ([ĀŚV. GṚHY. 1,19,11]) or covering (Acc.) , to assume an outward form, to put oneself into —, to enter into (Acc.).
   <sub>attested</sub>
 
 **3.caus.1)** — Caus. *vāsayati*
@@ -259,10 +259,10 @@
 - **EN:** — With *abhisam* to wrap around.
   <sub>attested</sub>
 
-**4)** **4.** *˚vas*¦ gekleidet in.
+**4)** **4.** *˚vas* gekleidet in.
 
-- **RU:** **4.** *˚vas*¦ одетый в.
-- **EN:** **4.** *˚vas*¦ clothed in.
+- **RU:** **4.** *˚vas* одетый в.
+- **EN:** **4.** *˚vas* clothed in.
   <sub>attested</sub>
 
 **apa-intro)** — Mit *apa*

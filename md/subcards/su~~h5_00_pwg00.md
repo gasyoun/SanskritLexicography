@@ -3,7 +3,7 @@
 `su~~h5_00_pwg00`
 
 
-**6.intro)** 6. *su*¦ _adv._ gaṇa *cādi*
+**6.intro)** 6. *su* _adv._ gaṇa *cādi*
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) über die euphonischen Veränderungen des Wortes (*ṣu, ṣū*), über die Dehnung eines vorangehenden Vocals und über den Wandel eines nachfolgenden *na* in *ṇa* handeln
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]
@@ -15,7 +15,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [MED.] *anāyāsa*
 [BHAR.] zu [AK.] nach [ŚKDR.]
 
-- **RU:** 6. *su*¦ _adv._ gaṇa *cādi*
+- **RU:** 6. *su* _adv._ gaṇa *cādi*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) об эвфонических изменениях слова (*ṣu, ṣū*), об удлинении предшествующего гласного и о переходе последующего *na* в *ṇa*
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]
@@ -26,7 +26,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [H. 1535](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535), Schol. [MED.] *bhṛśa, anumati, kṛcchra, samṛddhi*
 [MED.] *anāyāsa*
 [BHAR.] к [AK.] по [ŚKDR.]
-- **EN:** 6. *su*¦ _adv._ gaṇa *cādi*
+- **EN:** 6. *su* _adv._ gaṇa *cādi*
 on [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) treat of the euphonic changes of the word (*ṣu, ṣū*), of the lengthening of a preceding vowel and of the change of a following *na* into *ṇa*
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]

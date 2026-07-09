@@ -3,10 +3,10 @@
 `pa_s~~h0_00_pwg00`
 
 
-**etym)** *paś*¦, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
-- **EN:** *paś*¦, *spaś*; from the weakened root only the present-tense forms, from the full root the remaining tenses and the caus., but only in the older language. *paśyati*
+**etym)** *paś*, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
+- **EN:** *paś*, *spaś*; from the weakened root only the present-tense forms, from the full root the remaining tenses and the caus., but only in the older language. *paśyati*
 
-**1)** *paś*¦, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
+**1)** *paś*, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *paspaśe (paśpaśāte*
 [P. 7,3,87](https://ashtadhyayi.com/sutraani/7/3/87), Vārtt. 1); *aspaṣṭa*; das partic. *spaṣṭa* s. bes. act. med. sehen, erblicken, wahrnehmen, erschauen, beschauen; med. auch an sich sehen, erleben: *tadviṣṇoḥ paramaṃ padaṃ sadā paśyanti sūrayaḥ*
@@ -124,7 +124,7 @@
 Sch. *paśya* leitet in prosaischen Schriften häufig einen Vers ein,
 z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,16) [17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,17) [24,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,8) [27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6) [30,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,15) [97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15) [111,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,13) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,20)
 
-- **RU:** *paś*¦, *spaś*; от ослабленного корня образуются только формы настоящего времени, от полного корня — прочие времена и caus., но лишь в более древнем языке. *paśyati*
+- **RU:** *paś*, *spaś*; от ослабленного корня образуются только формы настоящего времени, от полного корня — прочие времена и caus., но лишь в более древнем языке. *paśyati*
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *paspaśe (paśpaśāte*
 [P. 7,3,87](https://ashtadhyayi.com/sutraani/7/3/87), Vārtt. 1); *aspaṣṭa*; partic. *spaṣṭa* s. bes. act. med. видеть, замечать, воспринимать, созерцать, рассматривать; med. также испытывать на себе, переживать: *tadviṣṇoḥ paramaṃ padaṃ sadā paśyanti sūrayaḥ*

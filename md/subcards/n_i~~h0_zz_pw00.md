@@ -3,9 +3,9 @@
 `n_i~~h0_zz_pw00`
 
 
-**1)** **1.** √*nī*¦, *nayati, ˚te*
+**1)** **1.** √*nī*, *nayati, ˚te*
 — 1〉 leiten, führen, lenken. *agram* Etwas (Gen.) anführen. Auch vom Ross, das den Wagen führt.
-- **EN:** **1.** √*nī*¦, *nayati, ˚te*
+- **EN:** **1.** √*nī*, *nayati, ˚te*
 — 1〉 to lead, guide, direct. *agram* to adduce, cite something (Gen.). Also of the horse that draws the chariot.
 
 **2)** — 2〉 abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen, — zu (Acc., Acc. mit *prati* [[PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4)], Dat. oder Loc.).

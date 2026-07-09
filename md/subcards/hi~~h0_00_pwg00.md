@@ -3,13 +3,13 @@
 `hi~~h0_00_pwg00`
 
 
-*hi*¦, *hinoti*
+*hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
 [VOP. 12,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?12,4) *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
 3. pl., *hinvāna*; partic. *hita* s. bes.
-- **EN:** *hi*¦, *hinoti*
+- **EN:** *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
@@ -199,13 +199,13 @@
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) shows. = *airśvasaṃgamayitāram* Comm.
   <sub>attested</sub>
 
-**1)** 1. *hi*¦, *hinoti*
+**1)** 1. *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
 [VOP. 12,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?12,4) *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
 
-- **RU:** 1. *hi*¦, *hinoti*
+- **RU:** 1. *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)

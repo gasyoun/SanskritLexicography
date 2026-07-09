@@ -3,7 +3,7 @@
 `m_a~~h0_zz_pw03`
 
 
-**§1)** **4.** *mā*¦ _f._
+**§1)** **4.** *mā* _f._
 - **EN:** **4.** *mā* — _f._
 
 **§1.1)** — 1〉 Maass.
@@ -21,7 +21,7 @@
 - **EN:** — Vgl. **2.** *ma* 2).
   <sub>lexicographic</sub>
 
-**§intro)** **5.** √*mā* (√*mī*)¦ *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (zu belegen nur *mīmayut*), *amīmet*; blöken, brüllen (namentlich von Kühen und Kälbern).
+**§intro)** **5.** √*mā* (√*mī*) *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (zu belegen nur *mīmayut*), *amīmet*; blöken, brüllen (namentlich von Kühen und Kälbern).
 
 - **RU:** *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (засвидетельствовано только *mīmayut*), *amīmet*; блеять, мычать (особенно о коровах и телятах).
 - **EN:** **5.** √*mā* (√*mī*) — *mimāti*, *˚mimīyāt*, **miīte*, *mīmati*, *mīmayati* (attested only *mīmayut*), *amīmet*; "to bleat, to bellow" (especially of cows and calves).
@@ -51,7 +51,7 @@
 - **EN:** — With **pariṇi* and **praṇi*, *˚mimīte*.
   <sub>attested</sub>
 
-**§intro)** **6.** √*mā*¦, *mayate* lauschen. Simplex nicht zu belegen.
+**§intro)** **6.** √*mā*, *mayate* lauschen. Simplex nicht zu belegen.
 
 - **RU:** *mayate* прислушиваться, подслушивать. Простой глагол не засвидетельствован.
 - **EN:** **6.** √*mā* — *mayate* "to listen, eavesdrop". Simplex not attested.
@@ -105,19 +105,19 @@
 - **EN:** — With *vi* Pl. approximately "to alternate with one another" [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
   <sub>attested</sub>
 
-**§1)** **7.** *mā*¦ in einigen Formen von **1.** *mi* und **1.** *mī*.
+**§1)** **7.** *mā* in einigen Formen von **1.** *mi* und **1.** *mī*.
 
 - **RU:** *mā* в некоторых формах от **1.** *mi* и **1.** *mī*.
 - **EN:** **7.** *mā* — in some forms of **1.** *mi* and **1.** *mī*.
   <sub>lexicographic</sub>
 
-**§1)** **8.** *mā*¦ Monat im Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
+**§1)** **8.** *mā* Monat im Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
 
 - **RU:** *mā* месяц в Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
 - **EN:** **8.** *mā* — "month" in the Loc. *māsa* [TS. 7,4,2,2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,2,2).
   <sub>attested</sub>
 
-**§15)** **3.** √*mā*¦ 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
+**§15)** **3.** √*mā* 15〉 *mita* neben *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
 - **RU:** 15〉 *mita* наряду с *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 - **EN:** **3.** √*mā* — 15) *mita* alongside *saṃmita* [MAITR. S. 2,11,1 (140,4)].
@@ -132,13 +132,13 @@
 - **EN:** — With *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
-**§1)** **1.** *mā*¦ mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+**§1)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
 - **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что v. a. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 - **EN:** **1.** *mā* — with Präs. "in order that not" [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* with Präs. so v. a. "otherwise, else" [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrically [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>attested</sub>
 
-**§v5)** **3.** √*mā*¦ V. 5.
+**§v5)** **3.** √*mā* V. 5.
 
 - **RU:** V. 5.
 - **EN:** **3.** √*mā* — V. 5.
@@ -162,7 +162,7 @@
 - **EN:** — With *sam* V. 5.
   <sub>attested</sub>
 
-**1)** **4.** *mā*¦ _f._
+**1)** **4.** *mā* _f._
 — 1〉 Maass.
 
 - **RU:** 1〉 мера.

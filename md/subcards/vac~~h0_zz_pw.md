@@ -3,8 +3,8 @@
 `vac~~h0_zz_pw`
 
 
-**root1-intro)** **1.** √*vac*¦, *vivakti* (vedisch), *vakti* (*vaktu* [129,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?129). [131,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?131)); metrisch auch Med. in der Bedeutung des Act.
-- **EN:** **1.** √*vac*¦, *vivakti* (Vedic), *vakti* (*vaktu* [129,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?129). [131,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?131)); metrically also Med. in the meaning of the Act.
+**root1-intro)** **1.** √*vac*, *vivakti* (vedisch), *vakti* (*vaktu* [129,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?129). [131,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?131)); metrisch auch Med. in der Bedeutung des Act.
+- **EN:** **1.** √*vac*, *vivakti* (Vedic), *vakti* (*vaktu* [129,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?129). [131,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?131)); metrically also Med. in the meaning of the Act.
 
 **1)** — 1〉 sagen, sprechen, aussprechen, hersagen, ansagen, beschreiben, in Worte fassen, verkünden, angeben, — Jmdm (Dat. oder Gen.), zu Jmd (Acc., ausnahmsweise Acc. mit *prati*) sagen, — sprechen, — Etwas (mit doppeltem Acc. oder Acc. der Sache und Dat. oder Gen. der Person), berichten über (Acc.), erzählen von (Acc.), — von Jmd (Abl.). *maivaṃ vocaḥ* nach *iti cet* so sollst du nicht reden, so v. a. eine solche Behauptung wäre unrichtig; *praśnam* eine Frage beantworten; mit *punar* antworten und wiederholen.
 - **EN:** 1〉 to say, speak, utter, recite, announce, describe, put into words, proclaim, state — to someone (Dat. or Gen.), to someone (Acc., exceptionally Acc. with *prati*) to say, — to speak, — something (with double Acc. or Acc. of the thing and Dat. or Gen. of the person), to report on (Acc.), to tell of (Acc.), — of someone (Abl.). *maivaṃ vocaḥ* following *iti cet* 'thus you shall not speak,' so v. a. 'such a claim would be incorrect;' *praśnam* 'to answer a question;' with *punar* 'to answer' and 'to repeat.'
@@ -264,14 +264,14 @@
 **samvivac3)** — 3〉 Jmd zusprechen, Vorstellungen machen; mit Acc.
 - **EN:** 3〉 to encourage someone, to remonstrate with; with Acc.
 
-**root2)** **2.** √*vac*¦ *vacyate* s. u. *vañc*.
-- **EN:** 2. √*vac*¦ *vacyate* s. u. *vañc*.
+**root2)** **2.** √*vac* *vacyate* s. u. *vañc*.
+- **EN:** 2. √*vac* *vacyate* s. u. *vañc*.
 
-**root3)** **1.** √*vac*¦ mit *paripra* bedeutet Jmd (Acc.) mit einer Mittheilung zuvorkommen; s. [J. A. O. S. Procc. Oct. 1885, XXVI. fg.]
-- **EN:** 1. √*vac*¦ with *paripra* means 'to forestall someone (Acc.) with a communication;' s. [J. A. O. S. Procc. Oct. 1885, XXVI. fg.]
+**root3)** **1.** √*vac* mit *paripra* bedeutet Jmd (Acc.) mit einer Mittheilung zuvorkommen; s. [J. A. O. S. Procc. Oct. 1885, XXVI. fg.]
+- **EN:** 1. √*vac* with *paripra* means 'to forestall someone (Acc.) with a communication;' s. [J. A. O. S. Procc. Oct. 1885, XXVI. fg.]
 
-**root4-intro)** **1.** √*vac*¦ mit *paripra* VI. 6.
-- **EN:** 1. √*vac*¦ with *paripra* VI. 6.
+**root4-intro)** **1.** √*vac* mit *paripra* VI. 6.
+- **EN:** 1. √*vac* with *paripra* VI. 6.
 
 **root4-1)** — Mit *vi* *Caus. murren, klagen, ungehalten sein [MAHĀVY. 132,16]. Statt dessen *vipācayati* [281,158].
 - **EN:** With *vi* *Caus. 'to grumble, to complain, to be displeased' [MAHĀVY. 132,16]. Instead of this *vipācayati* [281,158].

@@ -3,9 +3,9 @@
 `di_s~~h0_zz_pw00`
 
 
-**1.** √*diś*¦ *dideṣṭi, diśati*; selten Med.
+**1.** √*diś* *dideṣṭi, diśati*; selten Med.
 
-- **RU:** **1.** √*diś*¦ *dideṣṭi, diśati*; редко Med.
+- **RU:** **1.** √*diś* *dideṣṭi, diśati*; редко Med.
 - **EN:** **1.** √*diś* *dideṣṭi, diśati*; rarely Med.
   <sub>attested</sub>
 

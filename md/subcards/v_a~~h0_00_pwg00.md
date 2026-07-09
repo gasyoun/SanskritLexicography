@@ -3,7 +3,7 @@
 `v_a~~h0_00_pwg00`
 
 
-**1)** *vā*¦ indecl.
+**1)** *vā* indecl.
 [VS. PRĀT. 2,16.] gaṇa *cādi* zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57)
  1) oder
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4)
@@ -94,7 +94,7 @@
 [TS. 1,6,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,7,1) *u vā, yadyu vā kāmayeta*
 [ŚAT. BR. 3,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,16) überzählig: *yajñasya vā niśitiṃ voditiṃ vā*
 [ṚV. 6,15,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.015.html#rv06.015.11)
-- **EN:** *vā*¦ indecl.
+- **EN:** *vā* indecl.
 [VS. PRĀT. 2,16.] gaṇa *cādi* to [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57)
 1) 'or'
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4)

@@ -3,7 +3,7 @@
 `_bid~~h0_00_pwg00`
 
 
-*bhid*¦, *bhinatti, bhintte*
+*bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*,2. p. *abhinas* und *abhinad* (
 Sch. zu [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* und *abhedam; bibheda, bibhide, bibheditha* (
@@ -18,7 +18,7 @@ aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) Sch. zu
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42](https://ashtadhyayi.com/sutraani/8/2/42)).
 
-- **RU:** *bhid*¦, *bhinatti, bhintte*
+- **RU:** *bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. p. *abhinas* и *abhinad* (
 Sch. к [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* и *abhedam; bibheda, bibhide, bibheditha* (
@@ -32,7 +32,7 @@ Sch. к [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [3,1,57](https://a
 ([P. 1,2,11](https://ashtadhyayi.com/sutraani/1/2/11), Sch.);
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42](https://ashtadhyayi.com/sutraani/8/2/42)).
-- **EN:** *bhid*¦, *bhinatti, bhintte*
+- **EN:** *bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. p. *abhinas* and *abhinad* (
 Sch. to [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* and *abhedam; bibheda, bibhide, bibheditha* (

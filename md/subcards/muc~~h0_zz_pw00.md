@@ -3,9 +3,9 @@
 `muc~~h0_zz_pw00`
 
 
-**1.intro)** **1.** √*muc*¦ Präsensstämme: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) und *mumoca*; Act. Med.
+**1.intro)** **1.** √*muc* Präsensstämme: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) und *mumoca*; Act. Med.
 
-- **RU:** **1.** √*muc*¦ Основы настоящего времени: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) и *mumoca*; Act. Med.
+- **RU:** **1.** √*muc* Основы настоящего времени: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) и *mumoca*; Act. Med.
 - **EN:** **1.** √*muc*; present stems: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) and *mumoca*; Act. Med.
   <sub>attested</sub>
 

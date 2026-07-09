@@ -3,7 +3,7 @@
 `vad~~h0_00_pwg00`
 
 
-**root-head)** *vad*¦, *vadati* und *˚te*
+**root-head)** *vad*, *vadati* und *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -19,7 +19,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
 
-- **RU:** *vad*¦, *vadati* und *˚te*
+- **RU:** *vad*, *vadati* und *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -34,7 +34,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 1,5,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,1,18) *vaditum; uditvā*
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
-- **EN:** *vad*¦, *vadati* and *˚te*
+- **EN:** *vad*, *vadati* and *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (

@@ -3,10 +3,10 @@
 `gam~~h0_zz_pw00`
 
 
-**root-header)** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
+**root-header)** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und *gacchati* (nur dieses in der klass. Sprache); Act. und Med.
 
-- **RU:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и *gacchati* (лишь эта форма в klass. языке); Act. и Med.
-- **EN:** √*gam*¦, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and *gacchati* (only this in the klass. language); Act. and Med.
+- **RU:** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и *gacchati* (лишь эта форма в klass. языке); Act. и Med.
+- **EN:** √*gam*, *ganti, gamati* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and *gacchati* (only this in the klass. language); Act. and Med.
 
 **1)** — 1〉 kommen.
 

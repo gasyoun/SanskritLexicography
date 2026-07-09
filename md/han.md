@@ -216,7 +216,7 @@ _PWG article — 78 sub-card(s), 749 sense(s) · RU 600/749 · EN 629/749_
 [279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216) — В астр. так v. a. касаться: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) *manaḥ* ранить сердце
 [Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
-- **EN:** 1. *han*¦, *hanti*
+- **EN:** 1. *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*
@@ -361,7 +361,7 @@ _PWG article — 78 sub-card(s), 749 sense(s) · RU 600/749 · EN 629/749_
 [Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
   <sub>attested</sub>
 
-**gram-intro)** *han*¦, *hanti*
+**gram-intro)** *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*
@@ -401,7 +401,7 @@ _PWG article — 78 sub-card(s), 749 sense(s) · RU 600/749 · EN 629/749_
 [8,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,22) Fehlen des Bindevocals *i* Kār. 4 aus
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) Ueber die Verbindung mit *kaṇe* und *manas* s. u. *manas* .
 
-- **RU:** *han*¦, *hanti*
+- **RU:** *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*
@@ -6126,7 +6126,7 @@ v. l.).
 `han~~h1_00_pwg00`
 
 
-**2)** 2. *han*¦ (= 1. *han*) am Ende eines comp. _adj._ (_f._ *ghnī*) schlagend, tödtend, Mörder, zu Grunde richtend, vernichtend, verscheuchend u. s. w.
+**2)** 2. *han* (= 1. *han*) am Ende eines comp. _adj._ (_f._ *ghnī*) schlagend, tödtend, Mörder, zu Grunde richtend, vernichtend, verscheuchend u. s. w.
 [P. 3,2,87. fg.](https://ashtadhyayi.com/sutraani/3/2/87) Declination
 [6,4,12.](https://ashtadhyayi.com/sutraani/6/4/12) [VOP. 3,111.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,111) *pitṛ˚, mātṛ˚, bhrātṛ˚, svasṛ˚, ācārya˚, brāhmaṇa˚*
 [CHĀND. UP. 7,15,2.] *paravīra˚*
@@ -6141,7 +6141,7 @@ v. l.).
 [3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) [20,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,5)
 — Vgl. *adṛṣṭa˚, abhogdhan, amitra˚, amīva˚, ari˚, aśasti˚, ahi˚, kṛṣṭi˚, cakṣurhan, jyeṣṭha˚, tamo˚, dasyu˚, durṇāma˚, dhātu˚, nṛ˚, para˚, paśu˚, pāpa˚, pārāvata˚, pitṛ˚, punarhan, pura˚, puro˚, pṛśni˚, bali˚, brahma˚, bhaga˚, bhaganetra˚, bhagākṣi˚, bhujaṃga˚, bhūri˚, bhrātṛvya˚, bhrūṇa˚, makha˚, matsya˚, madhu˚, mano˚, mātṛ˚, māna˚, mitra˚, muṣṭi˚, mṛga˚, yajña˚, yaśo˚, yātu˚, rakṣo˚, valavṛtra˚, vasarhan, vāta˚, vāyu˚, vihaṃga˚, vīra˚, vṛtti˚, vṛtra˚, śata˚, śatru˚, śarya˚, satrā˚, sapatna˚, sapta˚, sarpa˚, sasya˚, sāta˚, svara˚* .
 
-- **RU:** 2. *han*¦ (= 1. *han*) в конце comp. _adj._ (_f._ *ghnī*) бьющий, умерщвляющий, убийца, уничтожающий, истребляющий, отгоняющий u. s. w.
+- **RU:** 2. *han* (= 1. *han*) в конце comp. _adj._ (_f._ *ghnī*) бьющий, умерщвляющий, убийца, уничтожающий, истребляющий, отгоняющий u. s. w.
 [P. 3,2,87. fg.](https://ashtadhyayi.com/sutraani/3/2/87) склонение
 [6,4,12.](https://ashtadhyayi.com/sutraani/6/4/12) [VOP. 3,111.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,111) *pitṛ˚, mātṛ˚, bhrātṛ˚, svasṛ˚, ācārya˚, brāhmaṇa˚*
 [CHĀND. UP. 7,15,2.] *paravīra˚*
@@ -6155,7 +6155,7 @@ v. l.).
 [3,36,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,36,23) [VARĀH. BṚH. S. 3,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,18) [31.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,31) [37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,37) [4,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,5) [5,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,30) [9,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,26) [10,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,3) [20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,20) [34,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?34,19) [37,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?37,3) [47,12.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,12) [101,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?101,13) [104,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,23) [31.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,31) [BṚH. 23,1.] [ŚUK. in LA. (III) 34,14.] [BHĀG. P. 1,7,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,18) [38. fgg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,38) [4,17,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,13) [6,11,13. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,13) [18,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,36) [11,5,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,5,33) _f._ *˚ghnī*
 [3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) [20,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,5)
 — Vgl. *adṛṣṭa˚, abhogdhan, amitra˚, amīva˚, ari˚, aśasti˚, ahi˚, kṛṣṭi˚, cakṣurhan, jyeṣṭha˚, tamo˚, dasyu˚, durṇāma˚, dhātu˚, nṛ˚, para˚, paśu˚, pāpa˚, pārāvata˚, pitṛ˚, punarhan, pura˚, puro˚, pṛśni˚, bali˚, brahma˚, bhaga˚, bhaganetra˚, bhagākṣi˚, bhujaṃga˚, bhūri˚, bhrātṛvya˚, bhrūṇa˚, makha˚, matsya˚, madhu˚, mano˚, mātṛ˚, māna˚, mitra˚, muṣṭi˚, mṛga˚, yajña˚, yaśo˚, yātu˚, rakṣo˚, valavṛtra˚, vasarhan, vāta˚, vāyu˚, vihaṃga˚, vīra˚, vṛtti˚, vṛtra˚, śata˚, śatru˚, śarya˚, satrā˚, sapatna˚, sapta˚, sarpa˚, sasya˚, sāta˚, svara˚* .
-- **EN:** 2. *han*¦ (= 1. *han*) at the end of a comp. _adj._ (_f._ *ghnī*) striking, killing, slayer, destroying, annihilating, driving off u. s. w.
+- **EN:** 2. *han* (= 1. *han*) at the end of a comp. _adj._ (_f._ *ghnī*) striking, killing, slayer, destroying, annihilating, driving off u. s. w.
 [P. 3,2,87. fg.](https://ashtadhyayi.com/sutraani/3/2/87) Declension
 [6,4,12.](https://ashtadhyayi.com/sutraani/6/4/12) [VOP. 3,111.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,111) *pitṛ˚, mātṛ˚, bhrātṛ˚, svasṛ˚, ācārya˚, brāhmaṇa˚*
 [CHĀND. UP. 7,15,2.] *paravīra˚*
@@ -6176,12 +6176,12 @@ v. l.).
 `han~~h2_00_pwg00`
 
 
-**1)** *han*¦ mit *vyati* gemeinsam tödten: *˚hanyante dasyavaḥ*
+**1)** *han* mit *vyati* gemeinsam tödten: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
 
-- **RU:** *han*¦ совместно убивать с *vyati*: *˚hanyante dasyavaḥ*
+- **RU:** *han* совместно убивать с *vyati*: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
-- **EN:** 1. *han*¦ with *vyati* to kill together: *˚hanyante dasyavaḥ*
+- **EN:** 1. *han* with *vyati* to kill together: *˚hanyante dasyavaḥ*
 [PAT. a. a. O. 1,247,a.]
   <sub>attested</sub>
 
@@ -6239,10 +6239,10 @@ v. l.).
 `han~~h0_zz_pw00`
 
 
-**intro)** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+**intro)** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
 
-- **RU:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
-- **EN:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **RU:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **EN:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
   <sub>attested</sub>
 
 **1)** — 1〉 schlagen (mit Acc.), — auf (Loc.), hämmern, die Trommel —, einen Spielball —, eine Flüssigkeit schlagen (klopfen).
@@ -8701,16 +8701,16 @@ v. l.).
 `han~~h0_zz_pw04`
 
 
-**108)** **2.** *˚han*¦ _Adj._ (_f._ *˚ghnī*) schlagend, tödtend, Mörder, zu Grunde richtend, vernichtend, verscheuchend u. s. w.
+**108)** **2.** *˚han* _Adj._ (_f._ *˚ghnī*) schlagend, tödtend, Mörder, zu Grunde richtend, vernichtend, verscheuchend u. s. w.
 
-- **RU:** **2.** *˚han*¦ _Adj._ (_f._ *˚ghnī*) бьющий, убивающий, убийца, губящий, уничтожающий, отгоняющий u. s. w.
-- **EN:** **2.** *˚han*¦ _Adj._ (_f._ *˚ghnī*) striking, killing, a slayer, ruining, destroying, driving away u. s. w.
+- **RU:** **2.** *˚han* _Adj._ (_f._ *˚ghnī*) бьющий, убивающий, убийца, губящий, уничтожающий, отгоняющий u. s. w.
+- **EN:** **2.** *˚han* _Adj._ (_f._ *˚ghnī*) striking, killing, a slayer, ruining, destroying, driving away u. s. w.
   <sub>attested</sub>
 
-**109)** **1.** √*han*¦ mit **samava* aus dem Wege räumen, wegschaffen [MAHĀVY. 126].
+**109)** **1.** √*han* mit **samava* aus dem Wege räumen, wegschaffen [MAHĀVY. 126].
 
-- **RU:** **1.** √*han*¦ mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
-- **EN:** **1.** √*han*¦ with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
+- **RU:** **1.** √*han* mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
+- **EN:** **1.** √*han* with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
   <sub>attested</sub>
 
 ## han
@@ -8718,22 +8718,22 @@ v. l.).
 `han~~h0_zz_sch`
 
 
-**1)** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām). — Mit vyati, *gegenseitig töten, [H 43,8.] — Mit *samava, aus dem Wege räumen, wegschaffen, [Mahāvy. 126.] — Mit ˚āni, vernichten, 
+**1)** han , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām). — Mit vyati, *gegenseitig töten, [H 43,8.] — Mit *samava, aus dem Wege räumen, wegschaffen, [Mahāvy. 126.] — Mit ˚āni, vernichten, 
 
  [H 50,45.] — Mit *nipra, abschlagen, [Śrīk. 18,27]; töten, [Uttarar. V,31]d ed. [Lakṣmaṇasūri]. {part=,seq=27776,type=,n=1}
-- **EN:** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām). — With vyati, *to kill one another, [H 43,8.] — With *samava, to remove out of the way, get rid of, [Mahāvy. 126.] — With ˚āni, to destroy, 
+- **EN:** han , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām). — With vyati, *to kill one another, [H 43,8.] — With *samava, to remove out of the way, get rid of, [Mahāvy. 126.] — With ˚āni, to destroy, 
 
  [H 50,45.] — With *nipra, to strike off, [Śrīk. 18,27]; to kill, [Uttarar. V,31]d ed. [Lakṣmaṇasūri]. {part=,seq=27776,type=,n=1}
 
-**2)** han¦ ˚gehen, [S I,351,6.] {part=,seq=27777,type=,n=8}
+**2)** han ˚gehen, [S I,351,6.] {part=,seq=27777,type=,n=8}
 
-- **RU:** han¦ ˚gehen, [S I,351,6.] {part=,seq=27777,type=,n=8}
-- **EN:** han¦ ˚to go, [S I,351,6.] {part=,seq=27777,type=,n=8}
+- **RU:** han ˚gehen, [S I,351,6.] {part=,seq=27777,type=,n=8}
+- **EN:** han ˚to go, [S I,351,6.] {part=,seq=27777,type=,n=8}
   <sub>attested</sub>
 
-**intens-jeghnīyate)** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
+**intens-jeghnīyate)** han , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
 
-- **RU:** han¦ , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
+- **RU:** han , Intens. *jeghnīyate, [Kaṃs. IV,17]d (vijeghnīyatām).
   <sub>attested</sub>
 
 **mit-vyati)** — Mit vyati, *gegenseitig töten, [H 43,8.]
@@ -8770,8 +8770,8 @@ v. l.).
 `han~~h0_zz_pwkvn`
 
 
-**1)** **1.** *han*¦ mit **samava* aus dem Wege räumen, wegschaffen [MAHĀVY. 126].
+**1)** **1.** *han* mit **samava* aus dem Wege räumen, wegschaffen [MAHĀVY. 126].
 
-- **RU:** **1.** *han*¦ mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
-- **EN:** **1.** *han*¦ with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
+- **RU:** **1.** *han* mit **samava* устранять, убирать с дороги [MAHĀVY. 126].
+- **EN:** **1.** *han* with **samava* to remove out of the way, get rid of [MAHĀVY. 126].
   <sub>attested</sub>

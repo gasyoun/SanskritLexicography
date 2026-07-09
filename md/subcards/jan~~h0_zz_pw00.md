@@ -599,10 +599,10 @@
 
 **pw_0)** === LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
 
-√*jan*¦
+√*jan*
 — 1〉 Trans. *janati, ˚te, janayati, ˚te, jāyate* (episch auch *jāyati*) und **jajanti*.
 
-- **RU:** √*jan*¦
+- **RU:** √*jan*
 — 1〉 Trans. *janati, ˚te, janayati, ˚te, jāyate* (в эпосе также *jāyati*) и **jajanti*.
   <sub>attested</sub>
 

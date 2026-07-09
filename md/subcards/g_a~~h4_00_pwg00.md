@@ -3,10 +3,10 @@
 `g_a~~h4_00_pwg00`
 
 
-**1a)** 1. *gā*¦
+**1a)** 1. *gā*
  1) *muktāphalam — agāt* ging auf eine Perle zu
 [Spr. 5231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5231)
-- **EN:** 1. *gā*¦
+- **EN:** 1. *gā*
  1) *muktāphalam — agāt* went towards a pearl
 [Spr. 5231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5231)
 
@@ -49,9 +49,9 @@ Schol.
 [BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)
   <sub>attested</sub>
 
-**heading)** 1. *gā*¦
+**heading)** 1. *gā*
 
-- **RU:** 1. *gā*¦
+- **RU:** 1. *gā*
   <sub>attested</sub>
 
 **prefix_abhi.1)** 1) *muktāphalam — agāt* ging auf eine Perle zu

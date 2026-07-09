@@ -3,9 +3,9 @@
 `iz~~h0_zz_pw`
 
 
-**1)** **1.** √*iṣ*¦, *iṣati, eṣati* (mit *anu*), *iṣyati* und *iṣṇāti* (**ābhīkṣṇye*). Auch Med.
+**1)** **1.** √*iṣ*, *iṣati, eṣati* (mit *anu*), *iṣyati* und *iṣṇāti* (**ābhīkṣṇye*). Auch Med.
 — 1〉 in rasche Bewegung setzen, schnellen, schleudern.
-- **EN:** **1.** √*iṣ*¦, *iṣati, eṣati* (with *anu*), *iṣyati* and *iṣṇāti* (**ābhīkṣṇye*). Also Med.
+- **EN:** **1.** √*iṣ*, *iṣati, eṣati* (with *anu*), *iṣyati* and *iṣṇāti* (**ābhīkṣṇye*). Also Med.
 — 1) to set in rapid motion, cause to dart, hurl.
 
 **2)** — 2〉 aussenden.
@@ -106,12 +106,12 @@
 **31 (with prefix))** — Mit *sam* in *samiṣ*.
 - **EN:** — With *sam* in *samiṣ*.
 
-**1)** **2.** *iṣ*¦ _Adj._ eilend. in *aramiṣ*.
-- **EN:** **2.** *iṣ*¦ _Adj._ hastening, speedy. in *aramiṣ*.
+**1)** **2.** *iṣ* _Adj._ eilend. in *aramiṣ*.
+- **EN:** **2.** *iṣ* _Adj._ hastening, speedy. in *aramiṣ*.
 
-**1)** **3.** √*iṣ*¦, *icchati, ˚te* (in der älteren Sprache und in Epos)
+**1)** **3.** √*iṣ*, *icchati, ˚te* (in der älteren Sprache und in Epos)
 — 1〉 suchen, aufsuchen.
-- **EN:** **3.** √*iṣ*¦, *icchati, ˚te* (in the older language and in epic)
+- **EN:** **3.** √*iṣ*, *icchati, ˚te* (in the older language and in epic)
 — 1) to seek, seek out.
 
 **2)** — 2〉 mit *manasā* haben wollen, herbeiwünschen, erwünschen.
@@ -232,16 +232,16 @@
 **28 (with prefix))** — Mit *vi* suchen.
 - **EN:** — With *vi* to seek.
 
-**1)** **4.** *iṣ*¦
+**1)** **4.** *iṣ*
 — 1〉 _Adj._ suchend u. s. w. in *gaviṣ, namanniṣ, paśviṣ*.
-- **EN:** **4.** *iṣ*¦
+- **EN:** **4.** *iṣ*
 — 1) _Adj._ seeking u. s. w. in *gaviṣ, namanniṣ, paśviṣ*.
 
 **2)** — 2〉 *_f._ Wunsch, in **iṭcara*.
 - **EN:** — 2) *_f._ wish, in **iṭcara*.
 
-**0)** **5.** *iṣ*¦ _f._ Sg. und Pl.
-- **EN:** **5.** *iṣ*¦ _f._ Sg. and Pl.
+**0)** **5.** *iṣ* _f._ Sg. und Pl.
+- **EN:** **5.** *iṣ* _f._ Sg. and Pl.
 
 **1)** — 1〉 Trank, Labung, Erquickung.
 - **EN:** — 1) drink, refreshment, restoration.
@@ -255,24 +255,24 @@
 **4)** — 4〉 Kraft, Frische; Wohlsein, Gedeihen, Wohlstand. In Verbindung mit *ūrj* so v. a. Saft und Kraft.
 - **EN:** — 4) strength, vigour; well-being, thriving, prosperity. In conjunction with *ūrj* thus v. a. sap and strength.
 
-**1)** **1.** √*iṣ*¦ mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
-- **EN:** **1.** √*iṣ*¦ with *upa* to press toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+**1)** **1.** √*iṣ* mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+- **EN:** **1.** √*iṣ* with *upa* to press toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 
-**1)** **4.** √*iṣ*¦ 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
-- **EN:** **4.** √*iṣ*¦ 2) [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
+**1)** **4.** √*iṣ* 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
+- **EN:** **4.** √*iṣ* 2) [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
 
-**1)** **1.** √*iṣ*¦ mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
-- **EN:** **1.** √*iṣ*¦ with *atipra* to call upon further, beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+**1)** **1.** √*iṣ* mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+- **EN:** **1.** √*iṣ* with *atipra* to call upon further, beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 
-**1)** **1.** √*iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
+**1)** **1.** √*iṣ* mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — Mit *upa* 2.
 — Mit *atipra* 5.
-- **EN:** **1.** √*iṣ*¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
+- **EN:** **1.** √*iṣ* with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — With *upa* 2.
 — With *atipra* 5.
 
-**1)** **3.** √*iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
-- **EN:** **3.** √*iṣ*¦ with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+**1)** **3.** √*iṣ* mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+- **EN:** **3.** √*iṣ* with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
 
-**1)** **4.** √*iṣ*¦ I. 3.
-- **EN:** **4.** √*iṣ*¦ I. 3.
+**1)** **4.** √*iṣ* I. 3.
+- **EN:** **4.** √*iṣ* I. 3.

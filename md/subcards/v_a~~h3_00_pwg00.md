@@ -3,21 +3,21 @@
 `v_a~~h3_00_pwg00`
 
 
-4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
+4. *vā* Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 
 - **RU:** 4. *vā* побочная форма от 1. *van* . partic. *vāta* желанный, вожделенный; атакованный, оспариваемый: *avasyuvāta* [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta* [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
   <sub>attested</sub>
 
-**1)** 4. *vā*¦ Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
+**1)** 4. *vā* Nebenform von 1. *van* . partic. *vāta* begehrt, erwünscht; angegriffen, angefochten: *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
 — Vgl.
 
 *a˚, indra˚, deva˚*
 (auch [TS. 3,2,11,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,11,1)), 2. *ni˚, mano˚* .
-- **EN:** 4. *vā* ¦ secondary form of 1. *van*. partic. *vāta* "desired, wished-for; attacked, assailed": *avasyuvāta*
+- **EN:** 4. *vā* secondary form of 1. *van*. partic. *vāta* "desired, wished-for; attacked, assailed": *avasyuvāta*
 [TS. 4,4,12,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,3) *vivasvadvāta*
 [4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,4)
  — Vgl.

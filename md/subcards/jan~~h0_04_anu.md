@@ -3,7 +3,7 @@
 `jan~~h0_04_anu`
 
 
-**1)** — *anu*¦
+**1)** — *anu*
  1) später —, hinterher geboren werden, — zur Welt kommen, — entstehen; nach Jmd (acc.) geboren werden: *putrikāyāṃ kṛtāyāṃ tu yadi putro 'nujāyate*
 [M. 9,131.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,131) *ekavarṣāntarāstvete draupadeyāḥ — anvajāyanta* stets um ein Jahr später als der Vorhergehende
 [MBH. 1,8046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8046) *eṣa sākṣāddhareraṃśo jātaḥ — iyaṃ ca tatparā hi śrīranujajñe*
@@ -14,7 +14,7 @@
 [ṚV. 10,72,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.072.html#rv10.072.03) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.072.html#rv10.072.05) *anujāto māṇavako māṇavikām anujātā* (pass.) *māṇavikā māṇavakena . anujātaṃ* (impers.) *māṇavakena*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), Sch.
 [VOP. 26,129.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,129)
-- **EN:** — *anu*¦
+- **EN:** — *anu*
  1) to be born — to come into the world — to arise later, — afterward; to be born after Someone (acc.): *putrikāyāṃ kṛtāyāṃ tu yadi putro 'nujāyate*
 [M. 9,131.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,131) *ekavarṣāntarāstvete draupadeyāḥ — anvajāyanta* always a year later than the preceding one
 [MBH. 1,8046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8046) *eṣa sākṣāddhareraṃśo jātaḥ — iyaṃ ca tatparā hi śrīranujajñe*

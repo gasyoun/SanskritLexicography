@@ -3,12 +3,12 @@
 `m_a~~h4_00_pwg00`
 
 
-**5)** *mā*¦ *(me), mayate* tauschen
+**5)** *mā* *(me), mayate* tauschen
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
-- **EN:** *mā*¦ *(me), mayate* to exchange
+- **EN:** *mā* *(me), mayate* to exchange
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* and *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
@@ -64,13 +64,13 @@
 **5 (cont. g))** — *vini* s. *vinimaya* .
 - **EN:** — *vini* s. *vinimaya*.
 
-**main)** 5. *mā*¦ *(me), mayate* tauschen
+**main)** 5. *mā* *(me), mayate* tauschen
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
 
-- **RU:** 5. *mā*¦ *(me), mayate* менять, обменивать
+- **RU:** 5. *mā* *(me), mayate* менять, обменивать
 [DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*

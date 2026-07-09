@@ -7,7 +7,7 @@ _PWG article — 42 sub-card(s), 313 sense(s) · RU 265/313 · EN 290/313_
 `muc~~h0_00_pwg00`
 
 
-**1)** 1. *muc*¦, *muñcati, ˚te*
+**1)** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
@@ -15,14 +15,14 @@ _PWG article — 42 sub-card(s), 313 sense(s) · RU 265/313 · EN 290/313_
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
 
-- **RU:** 1. *muc*¦, *muñcati, ˚te*
+- **RU:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
 [Ind. St. 5,340. 363.] *amucat* und *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
-- **EN:** 1. *muc*¦, *muñcati, ˚te*
+- **EN:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* and *amugdhvam, muñcātu*
@@ -2694,7 +2694,7 @@ the bonds of the world)
 `muc~~h1_00_pwg00`
 
 
-**1)** 2. *muc*¦ (= 1. *muc)* nom. ag. am Ende eines comp. Jmd befreiend von: *aṃho˚* (s. bes.), *āgo˚, eno˚*
+**1)** 2. *muc* (= 1. *muc)* nom. ag. am Ende eines comp. Jmd befreiend von: *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
 [10.] entlassend, von sich gebend, schleudernd: *śramaphena˚ (turaṃgama)*
@@ -2714,7 +2714,7 @@ the bonds of the world)
 [BHĀG. P. 3,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,20)
 — Vgl. *a˚, jala˚, toya˚, payo˚, parṇa˚, mada˚, vāri˚* .
 
-- **RU:** 2. *muc*¦ (= 1. *muc)* nom. ag. в конце comp. освобождающий кого-либо от: *aṃho˚* (s. bes.), *āgo˚, eno˚*
+- **RU:** 2. *muc* (= 1. *muc)* nom. ag. в конце comp. освобождающий кого-либо от: *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
 [10.] отпускающий, извергающий, мечущий: *śramaphena˚ (turaṃgama)*
@@ -2776,15 +2776,15 @@ the bonds of the world)
 `muc~~h2_00_pwg00`
 
 
-**3)** *muc*¦, *mocate = mac*
+**3)** *muc*, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
 - **EN:** *muc*, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
 
-**1)** 3. *muc*¦, *mocate = mac*
+**1)** 3. *muc*, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
 
-- **RU:** 3. *muc*¦, *mocate = mac*
+- **RU:** 3. *muc*, *mocate = mac*
 [DHĀTUP. 6,12](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=6), v. l.
   <sub>lexicographic</sub>
 
@@ -2793,10 +2793,10 @@ the bonds of the world)
 `muc~~h3_00_pwg00`
 
 
-**1)** 1. *muc*¦ mit *vyapa* ablösen, ablegen: *vyapamucyāṅgādbhūṣaṇāni*
+**1)** 1. *muc* mit *vyapa* ablösen, ablegen: *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)
 
-- **RU:** 1. *muc*¦ с *vyapa* отцеплять, снимать: *vyapamucyāṅgādbhūṣaṇāni*
+- **RU:** 1. *muc* с *vyapa* отцеплять, снимать: *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)
 - **EN:** *muc* with *vyapa* "to detach, take off": *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)
@@ -2846,12 +2846,12 @@ the bonds of the world)
 `muc~~h4_00_pwg00`
 
 
-**1)** 1. *muc*¦
+**1)** 1. *muc*
 [Sp. 810, Z. 8] v. u. das Beispiel
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) zu streichen, da hier *bhuktam* zu lesen ist; vgl.
 [Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
 
-- **RU:** 1. *muc*¦
+- **RU:** 1. *muc*
 [Sp. 810, Z. 8] v. u. пример
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) следует исключить, поскольку здесь надлежит читать *bhuktam*; vgl.
 [Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
@@ -2875,9 +2875,9 @@ the bonds of the world)
 `muc~~h0_zz_pw00`
 
 
-**1.intro)** **1.** √*muc*¦ Präsensstämme: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) und *mumoca*; Act. Med.
+**1.intro)** **1.** √*muc* Präsensstämme: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) und *mumoca*; Act. Med.
 
-- **RU:** **1.** √*muc*¦ Основы настоящего времени: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) и *mumoca*; Act. Med.
+- **RU:** **1.** √*muc* Основы настоящего времени: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) и *mumoca*; Act. Med.
 - **EN:** **1.** √*muc*; present stems: *muca*, *muṅca*, *macya* (Med.), *mumuc* (*mumoc*) and *mumoca*; Act. Med.
   <sub>attested</sub>
 
@@ -3929,15 +3929,15 @@ the bonds of the world)
 - **EN:** — 2) _f._ liberation, release, in *āmuc*.
   <sub>attested</sub>
 
-**1)** **3.** *√*muc*¦ *mocate* *kalkane*.
+**1)** **3.** *√*muc* *mocate* *kalkane*.
 
-- **RU:** **3.** *√*muc*¦ *mocate* *kalkane*.
+- **RU:** **3.** *√*muc* *mocate* *kalkane*.
 - **EN:** 3. *√*muc* *mocate* *kalkane*.
   <sub>lexicographic</sub>
 
-**1)** **1.** √*muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
+**1)** **1.** √*muc* V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
 
-- **RU:** **1.** √*muc*¦ V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
+- **RU:** **1.** √*muc* V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
 - **EN:** 1. √*muc* V. 12) someone (Gen.) escapes, slips away from [JĀTAKAM. 20]. [21,11]. [22].
   <sub>attested</sub>
 
@@ -3959,9 +3959,9 @@ the bonds of the world)
 - **EN:** — With *pratisam*, *˚saṃmukta*: released, freed from a painful state/condition [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
   <sub>attested</sub>
 
-**intro)** **2.** *muc*¦
+**intro)** **2.** *muc*
 
-- **RU:** **2.** *muc*¦
+- **RU:** **2.** *muc*
   <sub>attested</sub>
 
 ## muc
@@ -3969,12 +3969,12 @@ the bonds of the world)
 `muc~~h0_zz_sch`
 
 
-**1)** 1. muc¦ 12. jemand (Gen.) entwischen, [Jātakam. 20; 21,11; 22.] — Mit pra auch: sich losmachen von (Gen.), entgehen, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta frei von (Abl.), [Mahāvy. 19,47.] — Mit vi, ˚mukta jemand (Gen.) entkommen, [Jātakam. 21. 23.] — Mit pratisam, ˚saṃmukta erlöst, von einem peinlichen Zustande befreit, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5) {part=,seq=22090,type=,n=10}
+**1)** 1. muc 12. jemand (Gen.) entwischen, [Jātakam. 20; 21,11; 22.] — Mit pra auch: sich losmachen von (Gen.), entgehen, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta frei von (Abl.), [Mahāvy. 19,47.] — Mit vi, ˚mukta jemand (Gen.) entkommen, [Jātakam. 21. 23.] — Mit pratisam, ˚saṃmukta erlöst, von einem peinlichen Zustande befreit, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5) {part=,seq=22090,type=,n=10}
 - **EN:** 1. muc, 12. to escape someone (Gen.), [Jātakam. 20; 21,11; 22.] — With pra also: to free oneself from (Gen.), to escape, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta "free from" (Abl.), [Mahāvy. 19,47.] — With vi, ˚mukta "to escape someone" (Gen.), [Jātakam. 21. 23.] — With pratisam, ˚saṃmukta "redeemed, freed from a painful condition", [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5) {part=,seq=22090,type=,n=10}
 
-**12-main)** 1. muc¦ 12. jemand (Gen.) entwischen, [Jātakam. 20; 21,11; 22.]
+**12-main)** 1. muc 12. jemand (Gen.) entwischen, [Jātakam. 20; 21,11; 22.]
 
-- **RU:** 1. muc¦ 12. ускользать от кого-л. (Gen.), [Jātakam. 20; 21,11; 22.]
+- **RU:** 1. muc 12. ускользать от кого-л. (Gen.), [Jātakam. 20; 21,11; 22.]
   <sub>attested</sub>
 
 **mit-pra)** Mit pra auch: sich losmachen von (Gen.), entgehen, [R. ed. Bomb. 3,66,11.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11) pramukta frei von (Abl.), [Mahāvy. 19,47.]
@@ -3997,12 +3997,12 @@ the bonds of the world)
 `muc~~h0_zz_pwkvn`
 
 
-**1)** **1.** *muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22]. — Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47]. — Mit *vi, ˚mukta* Jmd (Gen.) entkommen [JĀTAKAM. 21]. [23]. — Mit *pratisam, ˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
+**1)** **1.** *muc* V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22]. — Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47]. — Mit *vi, ˚mukta* Jmd (Gen.) entkommen [JĀTAKAM. 21]. [23]. — Mit *pratisam, ˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 - **EN:** 1) *muc*, V. 12) to escape someone (Gen.) [JĀTAKAM. 20]. [21,11]. [22]. — With *pra* also "to free oneself from" (Gen.), "to escape" [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* "free from" (Abl.) [MAHĀVY. 19,47]. — With *vi, ˚mukta* "to escape someone" (Gen.) [JĀTAKAM. 21]. [23]. — With *pratisam, ˚saṃmukta* "redeemed, freed from a painful condition" [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
-**V-12)** **1.** *muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
+**V-12)** **1.** *muc* V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
 
-- **RU:** **1.** *muc*¦ V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
+- **RU:** **1.** *muc* V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
   <sub>attested</sub>
 
 **mit-vi)** Mit *pra* auch sich losmachen von (Gen.), entgehen [R. ed. Bomb. 3,66,11](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,66,11). *pramukta* frei von (Abl.) [MAHĀVY. 19,47].

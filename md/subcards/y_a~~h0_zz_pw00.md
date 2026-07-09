@@ -3,9 +3,9 @@
 `y_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*yā*¦, *yāti* (metrisch auch Med.)
+**1)** **1.** √*yā*, *yāti* (metrisch auch Med.)
 — 1〉 fahren (in weiterem Sinne), gehen, ziehen, marschiren (auch so v. a. gegen den Feind ziehen); überh. sich in Bewegung setzen, reisen; fortgehen, aufbrechen, von dannen gehen, sich entfernen (auch so v. a. sich fern halten, nicht kommen [Spr. 7347](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7347)), fliehen (auch *palāyya yā*); entfliehen, entkommen; gehen von einem Wege, laufen von Andern. *yāta* gefahren, gegangen u. s. w.; fortgegangen, von dannen gegangen; auch _n._ impers. mit Instr. des Subjects.
-- **EN:** **1.** √*yā*¦, *yāti* (metrically also Med.)
+- **EN:** **1.** √*yā*, *yāti* (metrically also Med.)
 — 1〉 "to ride, travel" (in a broader sense), "to go, proceed, march" (also so v. a. "to march against the enemy"); überh. "to set out, to journey; to go off, to set forth, to go away from thence, to withdraw" (also so v. a. "to keep away, not to come" [Spr. 7347](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7347)), "to flee" (also *palāyya yā*); "to escape, get away; to go" off a road, "to run" of others. *yāta* "ridden, gone" u. s. w.; "gone off, departed thence;" also _n._ impers. with Instr. of the subject.
 
 **2)** — 2〉 verstreichen, vergehen, verlaufen, verfliessen. *yāta* verstrichen, zu Ende gegangen.

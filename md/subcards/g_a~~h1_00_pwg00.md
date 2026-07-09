@@ -3,7 +3,7 @@
 `g_a~~h1_00_pwg00`
 
 
-**main)** 2. *gā*¦ *(gai), gāyati*
+**main)** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
@@ -66,7 +66,7 @@
 [BHĀG. P. 3,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,18) *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) — *gīta*
 
-- **RU:** 2. *gā*¦ *(gai), gāyati*
+- **RU:** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
@@ -128,7 +128,7 @@
 [R. 1,4,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,15)
 [BHĀG. P. 3,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,18) *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) — *gīta*
-- **EN:** 2. *gā*¦ *(gai), gāyati*
+- **EN:** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)

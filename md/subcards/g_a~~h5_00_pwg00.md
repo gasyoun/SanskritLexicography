@@ -3,14 +3,14 @@
 `g_a~~h5_00_pwg00`
 
 
-**intro)** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. der beim Volke hiess
+**intro)** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. der beim Volke hiess
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* heisst, wird genannt
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
 
-- **RU:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* так v. a. носивший в народе имя
+- **RU:** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* так v. a. носивший в народе имя
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* называется, именуется
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
-- **EN:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
+- **EN:** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* is called, is named
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
   <sub>attested</sub>

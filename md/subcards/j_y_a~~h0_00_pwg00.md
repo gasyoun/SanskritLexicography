@@ -3,7 +3,7 @@
 `j_y_a~~h0_00_pwg00`
 
 
-**1)** *jñā*¦, *jānāti, jānīte*
+**1)** *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -15,7 +15,7 @@
 [14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641); *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
-- **EN:** *jñā*¦, *jānāti, jānīte*
+- **EN:** *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -255,7 +255,7 @@ Sch. *jñāta* known, recognised
 [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) held to be: *pūrvameva mayā jñātaṃ pūrṇametāddha medasā*
 [PAÑCAT. I,123.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,123)
 
-**head-1)** 1. *jñā*¦, *jānāti, jānīte*
+**head-1)** 1. *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -268,7 +268,7 @@ Sch. *jñāta* known, recognised
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
 
-- **RU:** 1. *jñā*¦, *jānāti, jānīte*
+- **RU:** 1. *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*

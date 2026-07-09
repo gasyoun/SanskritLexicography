@@ -3,15 +3,15 @@
 `_sam~~h0_zz_pw01`
 
 
-**1)** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) Jmd ein Leid zufügen. Nur *śamnīṣe* und *śamnīthās* zu belegen.
+**1)** **3.** √*śam*, **śamnāti* (*vadhakarman*) Jmd ein Leid zufügen. Nur *śamnīṣe* und *śamnīthās* zu belegen.
 
-- **RU:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) причинить кому-либо вред. Засвидетельствовано лишь в *śamnīṣe* и *śamnīthās*.
-- **EN:** **3.** √*śam*¦, **śamnāti* (*vadhakarman*) to inflict suffering on someone. Only *śamnīṣe* and *śamnīthās* to be attested.
+- **RU:** **3.** √*śam*, **śamnāti* (*vadhakarman*) причинить кому-либо вред. Засвидетельствовано лишь в *śamnīṣe* и *śamnīthās*.
+- **EN:** **3.** √*śam*, **śamnāti* (*vadhakarman*) to inflict suffering on someone. Only *śamnīṣe* and *śamnīthās* to be attested.
   <sub>attested</sub>
 
-**ā_1)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+**ā_1)** **4.** √*śam*, *śamayati* und *śāmayati*.
 — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).
-- **EN:** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+- **EN:** **4.** √*śam*, *śamayati* und *śāmayati*.
 — With *ni* to notice, perceive, hear, learn, come to know — that something is or was (with predicative Acc.). Once also with Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* with act. (!) Bed. und Gen. (v. l. but *niśamya*).
 
 **abhi_1)** — Mit *anuni*
@@ -65,12 +65,12 @@
 - **EN:** — With *saṃni* to perceive, come to know.
   <sub>attested</sub>
 
-**1)** **5.** *śam*¦ _Indecl._
+**1)** **5.** *śam* _Indecl._
 — 1〉 wohlthätig, zum Vortheil, — Heil.
 
-- **RU:** **5.** *śam*¦ _Indecl._
+- **RU:** **5.** *śam* _Indecl._
 — 1〉 благотворный, на пользу, во благо.
-- **EN:** **5.** *śam*¦ _Indecl._
+- **EN:** **5.** *śam* _Indecl._
 — 1〉 beneficial, to the advantage, to the welfare.
   <sub>attested</sub>
 
@@ -80,15 +80,15 @@
 - **EN:** — 2〉 as substantive: welfare, weal, happiness, blessing, with Dat. or Gen.
   <sub>attested</sub>
 
-**1)** **1.** √*śam*¦ mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
+**1)** **1.** √*śam* mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
 
-- **RU:** **1.** √*śam*¦ с *ni* VI. гаснуть, угасать [DHARMAŚARM. 13,41].
-- **EN:** **1.** √*śam*¦ with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
+- **RU:** **1.** √*śam* с *ni* VI. гаснуть, угасать [DHARMAŚARM. 13,41].
+- **EN:** **1.** √*śam* with *ni* VI. to be extinguished [DHARMAŚARM. 13,41].
   <sub>attested</sub>
 
-**main)** **4.** √*śam*¦, *śamayati* und *śāmayati*.
+**main)** **4.** √*śam*, *śamayati* und *śāmayati*.
 
-- **RU:** **4.** √*śam*¦, *śamayati* и *śāmayati*.
+- **RU:** **4.** √*śam*, *śamayati* и *śāmayati*.
   <sub>attested</sub>
 
 **mit upasarga 1 (прист. с управлением))** — Mit *ni* inne —, gewahr werden, vernehmen, hören, erfahren, kennen lernen, — dass ist oder war (mit prädicativem Acc.). Einmal auch mit Gen. st. Acc. Absol. *niśamya, niśāmya* und *niśamayya* ([ŚIŚ. 16,38]). *niśamyamāna* mit act. (!) Bed. und Gen. (v. l. aber *niśamya*).

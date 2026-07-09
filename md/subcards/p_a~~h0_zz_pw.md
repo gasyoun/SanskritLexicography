@@ -3,20 +3,20 @@
 `p_a~~h0_zz_pw`
 
 
-**3.** √*pā*¦, *pāti*
+**3.** √*pā*, *pāti*
 
-- **RU:** **3.** √*pā*¦, *pāti*
-- **EN:** **3.** √*pā*¦, *pāti*
+- **RU:** **3.** √*pā*, *pāti*
+- **EN:** **3.** √*pā*, *pāti*
   <sub>attested</sub>
 
-**5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
+**5.** √*pā*, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
 
-- **RU:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
-- **EN:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
+- **RU:** **5.** √*pā*, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
+- **EN:** **5.** √*pā*, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
   <sub>attested</sub>
 
-**1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
-- **EN:** **1.** *pā*¦, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
+**1)** **1.** *pā*, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
+- **EN:** **1.** *pā*, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
 
 **1)** — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 - **EN:** — 1〉 to drink, imbibe, sip; with Acc. or partitive Gen. (only in the older language) of the drink: to suck up blood (said of sword and arrow); to suck at ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), to swallow, draw in dust, smoke; to drink, and thus v. a. to drink spirituous liquors.
@@ -375,10 +375,10 @@
 - **EN:** — Caus. to cause to drink.
   <sub>attested</sub>
 
-**1)** **2.** *˚pā*¦ _Adj._ trinkend.
+**1)** **2.** *˚pā* _Adj._ trinkend.
 
-- **RU:** **2.** *˚pā*¦ _Adj._ пьющий.
-- **EN:** **2.** *˚pā*¦ _Adj._ drinking.
+- **RU:** **2.** *˚pā* _Adj._ пьющий.
+- **EN:** **2.** *˚pā* _Adj._ drinking.
   <sub>attested</sub>
 
 **1)** — 1〉 bewachen, bewahren, schützen, schirmen, hüten, — vor (Abl.) die Erde, das Land
@@ -471,10 +471,10 @@
 - **EN:** — With *pra* to guard, preserve from (Abl.).
   <sub>attested</sub>
 
-**1)** **4.** *˚pā*¦ _Adj._ bewachend, behütend, schirmend u. s. w.
+**1)** **4.** *˚pā* _Adj._ bewachend, behütend, schirmend u. s. w.
 
-- **RU:** **4.** *˚pā*¦ _Adj._ охраняющий, оберегающий, защищающий u. s. w.
-- **EN:** **4.** *˚pā*¦ _Adj._ watching, guarding, protecting u. s. w.
+- **RU:** **4.** *˚pā* _Adj._ охраняющий, оберегающий, защищающий u. s. w.
+- **EN:** **4.** *˚pā* _Adj._ watching, guarding, protecting u. s. w.
   <sub>attested</sub>
 
 **preverb-pari)** — Mit *anūd* herfallen über, sich stürzen auf (Acc.) Vgl. **1.** *pā* mit *anūd*
@@ -486,26 +486,26 @@
 - **EN:** — With *pratyud* to rebel against someone (Acc.).
   <sub>attested</sub>
 
-**1)** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
+**1)** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
 
-- **RU:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
-- **EN:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
+- **RU:** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
+- **EN:** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
   <sub>lexicographic</sub>
 
-**1)** **1.** √*pā*¦ mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+**1)** **1.** √*pā* mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 
-- **RU:** **1.** √*pā*¦ с *nis* Caus. давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
-- **EN:** **1.** √*pā*¦ with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **RU:** **1.** √*pā* с *nis* Caus. давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **EN:** **1.** √*pā* with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
   <sub>attested</sub>
 
-**cross-ref)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
+**cross-ref)** **1.** √*pā* mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
-- **EN:** **1.** √*pā*¦ with *upa* Caus. also [ĀPAST. ŚR. 9,18,11].
+- **EN:** **1.** √*pā* with *upa* Caus. also [ĀPAST. ŚR. 9,18,11].
 — With *nis* line 2, read *niṣpīta*. — Caus. 5.
 
-**PW1_1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
+**PW1_1)** **1.** *pā*, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 
-- **RU:** **1.** *pā*¦, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
+- **RU:** **1.** *pā*, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
   <sub>attested</sub>
 
 **PW1_vi_caus)** — Caus. einschlürfen lassen.
@@ -538,9 +538,9 @@
 - **RU:** **1.** *pā* с *anūd*
   <sub>attested</sub>
 
-**PW_vi_main)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
+**PW_vi_main)** **1.** √*pā* mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 
-- **RU:** **1.** √*pā*¦ с *upa* Caus. также [ĀPAST. ŚR. 9,18,11].
+- **RU:** **1.** √*pā* с *upa* Caus. также [ĀPAST. ŚR. 9,18,11].
   <sub>attested</sub>
 
 **PW_vi_note)** — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.

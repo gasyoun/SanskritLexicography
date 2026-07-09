@@ -3,7 +3,7 @@
 `v_a~~h0_zz_pw00`
 
 
-**1)** **1.** *vā*¦ _Indecl._
+**1)** **1.** *vā* _Indecl._
 — 1〉 oder, nachfolgend, metrisch aber auch vorangehend. *na — vā* weder — noch, *vā — vā* entweder — oder (bei einer Disjunction zweier Sätze wird das Verbum des ersten, ausnahmsweise auch das des zweiten Satzes betont), *kiṃ* (Fragepartikel). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* weder — noch, *vā — na vā* entweder — oder nicht, vielleicht — vielleicht auch nicht ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), ob — oder nicht, *vā na — vā* entweder nicht — oder, *yadi vā — vā* ob — oder. Bei mehr als zwei Gliedern vom zweiten an wiederholt oder hier und da ausfallend; steht *vā* schon nach dem ersten Gliede, so ist es hier durch entweder oder weder (in einem negativem Satze) wiederzugeben. Eine Negation braucht an zweiter und folgender Stelle nicht wiederholt zu werden. Es wechselt *vā* auch mit *ca* und *api*. Statt des einfachen *vā* auch *api vā*, *api vā punaḥ* (an letzter Stelle), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (an letzter Stelle [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* oder auch nicht [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (an erster Stelle), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* ist das erste *vā* überschüssig.
 
 - **RU:** **1.** *vā* _Indecl._
@@ -443,7 +443,7 @@
 - **EN:** — With *vi* Med. "to blow."
   <sub>attested</sub>
 
-**4)** **4.** *vā*¦ Nebenform von **1.** *van*. *˚vāta* begehrt, erwünscht.
+**4)** **4.** *vā* Nebenform von **1.** *van*. *˚vāta* begehrt, erwünscht.
 
 - **RU:** **4.** *vā* Nebenform von **1.** *van*. *˚vāta* желанный, вожделенный.
 - **EN:** **4.** *vā* secondary form of **1.** *van*. *˚vāta* "desired, wished for."
@@ -485,7 +485,7 @@
 - **EN:** — With *upa* Desid. Act. "to seek to win over."
   <sub>attested</sub>
 
-**1)** **2.** √*vā*¦, *vāti*
+**1)** **2.** √*vā*, *vāti*
 — 1〉 wehen [ĀPAST. 1,12,5].
 
 - **RU:** **2.** √*vā*, *vāti*
@@ -586,7 +586,7 @@
 — 1〉 развеивать, разносить ветром.
   <sub>attested</sub>
 
-**1)** **3.** √*vā*¦, *vāyati*, *vāyate* (episch)
+**1)** **3.** √*vā*, *vāyati*, *vāyate* (episch)
 — 1〉 matt —, müde werden, sich erschöpfen, erliegen. Mit einem Partic. Praes. nicht müde werden Etwas zu thun.
 
 - **RU:** **3.** √*vā*, *vāyati*, *vāyate* (эпич.)

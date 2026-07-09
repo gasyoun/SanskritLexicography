@@ -7,15 +7,15 @@ _PWG article — 1 sub-card(s), 13 sense(s) · RU 13/13 · EN 0/13_
 `menA`
 
 
-**1)** *mena*¦ s. u. *menā* .
+**1)** *mena* s. u. *menā* .
 
-- **RU:** *mena*¦ см. s. u. *menā* .
+- **RU:** *mena* см. s. u. *menā* .
   <sub>lexicographic</sub>
 
-**PW-1)** *mena*¦
+**PW-1)** *mena*
 — 1〉 _m._
 
-- **RU:** *mena*¦
+- **RU:** *mena*
 — 1〉 _m._
   <sub>lexicographic</sub>
 

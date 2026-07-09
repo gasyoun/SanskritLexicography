@@ -3,16 +3,16 @@
 `m_a~~h7_00_pwg00`
 
 
-**3)** 3. *mā*¦
+**3)** 3. *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)
 
-- **RU:** 3. *mā*¦
+- **RU:** 3. *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)
-- **EN:** *mā*¦
+- **EN:** *mā*
  3) *trailokye 'pi na māti sma sveṣvaṅgeṣu tu kā kathā*
 [KATHĀS. 110,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?110,112) *ātmanyeva na māti sma harṣollāsataraṃgitaḥ*
 [101,368.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,368)

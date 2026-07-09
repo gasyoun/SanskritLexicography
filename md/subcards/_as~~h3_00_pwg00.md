@@ -3,19 +3,19 @@
 `_as~~h3_00_pwg00`
 
 
-2. *ās*¦
+2. *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
 
-- **RU:** 2. *ās*¦
+- **RU:** 2. *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
   <sub>attested</sub>
 
-**intro)** *ās*¦
+**intro)** *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
-- **EN:** *ās*¦
+- **EN:** *ās*
 Z. 2 *āsyatām* (Schol.: *āsyatāmityārṣaṃ paripālayetāmityarthakam)* st. *āsyetām*
 [R. ed. Bomb.]
 

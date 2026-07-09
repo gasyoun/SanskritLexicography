@@ -7,7 +7,7 @@ _PWG article — 66 sub-card(s), 613 sense(s) · RU 545/613 · EN 499/613_
 `vi_s~~h0_00_pwg00`
 
 
-**root-1)** *viś*¦, *viśati*
+**root-1)** *viś*, *viśati*
 [DHĀTUP. 28,130](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*praveśane*).* viśate, aviśran; viveśa, viviśe*; ved. *viveśus, aviveśīs* und *viviśyās; viviśivaṃs* und *viviśvaṃs*
 [P. 7,2,68.](https://ashtadhyayi.com/sutraani/7/2/68)
 [VOP. 26,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,134) *avikṣat, avikṣata, avikṣmahi; vekṣyati* (vgl. Kār.
@@ -5009,12 +5009,12 @@ u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954
 `vi_s~~h1_00_pwg00`
 
 
-**1)** 2. *viś*¦ (= 1. *viś*) nom. *viṭ*
+**1)** 2. *viś* (= 1. *viś*) nom. *viṭ*
 [P. 8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36)
 [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149)
  1) _f._ (in der 2ten und 3ten Bed. masc. nach
 [MED.])
-- **EN:** 2. *viś*¦ (= 1. *viś*) nom. *viṭ*
+- **EN:** 2. *viś* (= 1. *viś*) nom. *viṭ*
 [P. 8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36)
 [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149)
  1) _f._ (in the 2nd and 3rd Bed. masc. after
@@ -5209,10 +5209,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 `vi_s~~h2_00_pwg00`
 
 
-**1)** 3. *viś*¦ _f._ fehlerhaft für *viṣ* faeces [H. 634](https://sanskrit-lexicon-scans.github.io/abch2/app1?634), Schol. [Verz. d. B. H. 278, Śl. 42.]
+**1)** 3. *viś* _f._ fehlerhaft für *viṣ* faeces [H. 634](https://sanskrit-lexicon-scans.github.io/abch2/app1?634), Schol. [Verz. d. B. H. 278, Śl. 42.]
 
-- **RU:** 3. *viś*¦ _f._ ошибочное написание вместо *viṣ* faeces [H. 634](https://sanskrit-lexicon-scans.github.io/abch2/app1?634), Schol. [Verz. d. B. H. 278, Śl. 42.]
-- **EN:** 3. *viś*¦ _f._ erroneous for *viṣ*, faeces
+- **RU:** 3. *viś* _f._ ошибочное написание вместо *viṣ* faeces [H. 634](https://sanskrit-lexicon-scans.github.io/abch2/app1?634), Schol. [Verz. d. B. H. 278, Śl. 42.]
+- **EN:** 3. *viś* _f._ erroneous for *viṣ*, faeces
 [H. 634](https://sanskrit-lexicon-scans.github.io/abch2/app1?634), Schol. [Verz. d. B. H. 278, Śl. 42.]
   <sub>lexicographic</sub>
 
@@ -5221,10 +5221,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 `vi_s~~h3_00_pwg00`
 
 
-**0)** 1. *viś*¦ mit *upa* euphem. für cacare [CARAKA 3,5.]
+**0)** 1. *viś* mit *upa* euphem. für cacare [CARAKA 3,5.]
 
-- **RU:** 1. *viś*¦ с *upa* euphem. для обозначения cacare [CARAKA 3,5.]
-- **EN:** 1. *viś*¦ with *upa* euphem. for to defecate
+- **RU:** 1. *viś* с *upa* euphem. для обозначения cacare [CARAKA 3,5.]
+- **EN:** 1. *viś* with *upa* euphem. for to defecate
 [CARAKA 3,5.]
   <sub>attested</sub>
 
@@ -5297,10 +5297,10 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 `vi_s~~h0_zz_pw00`
 
 
-**1)** **1.** √*viś*¦, *viśati*, *te* (in der späteren Sprache meist metrisch)
+**1)** **1.** √*viś*, *viśati*, *te* (in der späteren Sprache meist metrisch)
 
-- **RU:** **1.** √*viś*¦, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
-- **EN:** **1.** √*viś*¦, *viśati*, *te* (in the later language mostly metrical)
+- **RU:** **1.** √*viś*, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
+- **EN:** **1.** √*viś*, *viśati*, *te* (in the later language mostly metrical)
 — 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
   <sub>attested</sub>
 
@@ -7409,8 +7409,8 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 `vi_s~~h0_zz_pw04`
 
 
-**2.** *viś*¦ (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (nach [MED.] _m._)
-- **EN:** **2.** *viś*¦ (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (after [MED.] _m._)
+**2.** *viś* (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (nach [MED.] _m._)
+- **EN:** **2.** *viś* (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (after [MED.] _m._)
 
 **1)** — 1〉 Niederlassung, Wohnsitz, Haus. *viśaspatiḥ*. als Beiw. Indraʼs und Agniʼs.
 - **EN:** — 1) settlement, dwelling-place, house. *viśaspatiḥ*. as Beiw. of Indra and Agni.
@@ -7430,11 +7430,11 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 **6)** — 6〉 *Eingang, Eintritt.
 - **EN:** — 6) *entrance, entry.
 
-**vis)** **3.** *viś*¦ _f._ schlechte Schreibweise für *viṣ* faeces.
-- **EN:** **3.** *viś*¦ _f._ bad spelling for *viṣ* faeces.
+**vis)** **3.** *viś* _f._ schlechte Schreibweise für *viṣ* faeces.
+- **EN:** **3.** *viś* _f._ bad spelling for *viṣ* faeces.
 
-**praviś)** **1.** √*viś*¦ mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28].
-- **EN:** **1.** √*viś*¦ with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28].
+**praviś)** **1.** √*viś* mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28].
+- **EN:** **1.** √*viś* with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28].
 
 **praviś-manas)** — Mit *manas* seine Gedanken richten auf (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
 - **EN:** — With *manas* to direct one's thoughts toward (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
@@ -7444,16 +7444,16 @@ u. s. w. [ṚV. 4,50,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04
 `vi_s~~h0_zz_sch`
 
 
-**sch-1)** 1. viś¦ mit pra [Kaus.] ahaṃ dārakaṃ praveśitā so v.a. ich bin mit einem Knaben schwanger, [Divyāvad. 541,28.] ˚abernten lassen, [Kauṭ. 118,10.] — Mit manas seine Gedanken richten auf (Lok.), [R. ed. Bomb. 3,68,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38) {part=,seq=24468,type=,n=6}
-- **EN:** 1. viś¦ with pra [Kaus.] ahaṃ dārakaṃ praveśitā that is to say, I am pregnant with a boy, [Divyāvad. 541,28.] °to have harvested, [Kauṭ. 118,10.] — With manas to direct one's thoughts toward (Loc.), [R. ed. Bomb. 3,68,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38) {part=,seq=24468,type=,n=6}
+**sch-1)** 1. viś mit pra [Kaus.] ahaṃ dārakaṃ praveśitā so v.a. ich bin mit einem Knaben schwanger, [Divyāvad. 541,28.] ˚abernten lassen, [Kauṭ. 118,10.] — Mit manas seine Gedanken richten auf (Lok.), [R. ed. Bomb. 3,68,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38) {part=,seq=24468,type=,n=6}
+- **EN:** 1. viś with pra [Kaus.] ahaṃ dārakaṃ praveśitā that is to say, I am pregnant with a boy, [Divyāvad. 541,28.] °to have harvested, [Kauṭ. 118,10.] — With manas to direct one's thoughts toward (Loc.), [R. ed. Bomb. 3,68,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38) {part=,seq=24468,type=,n=6}
 
 ## viś
 
 `vi_s~~h0_zz_pwkvn`
 
 
-**pwkvn)** **1.** *viś*¦ mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28]. — Mit *manas* seine Gedanken richten auf (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
+**pwkvn)** **1.** *viś* mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28]. — Mit *manas* seine Gedanken richten auf (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
 
-- **RU:** **1.** *viś* ¦ с *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* так v. a. я беременна мальчиком [DIVYĀVAD. 541,28]. — С *manas* направлять свои мысли на (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
-- **EN:** **1.** *viś*¦ with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28]. — With *manas* to direct one's thoughts toward (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
+- **RU:** **1.** *viś* с *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* так v. a. я беременна мальчиком [DIVYĀVAD. 541,28]. — С *manas* направлять свои мысли на (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
+- **EN:** **1.** *viś* with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28]. — With *manas* to direct one's thoughts toward (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
   <sub>attested</sub>

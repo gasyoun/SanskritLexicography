@@ -3,7 +3,7 @@
 `si_d~~h0_00_pwg00`
 
 
-**1)** *sidh*¦, *sedhati*
+**1)** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . scheuchen, treiben; vertreiben: *dveṣaḥ*
@@ -14,7 +14,7 @@
 [PAÑCAV. BR. 10,3,13.] *api stuhyapi sedhāsmāṃstathyamuktam* so v. a. du magst uns loben oder strafen
 [BHAṬṬ. 8,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,92)
 
-- **RU:** *sidh*¦, *sedhati*
+- **RU:** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . пугать, гнать; прогонять: *dveṣaḥ*
@@ -24,7 +24,7 @@
 [8,35,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.16) [9,71,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.071.html#rv09.071.08) [10,76,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.076.html#rv10.076.04) [KAUŚ. 97.] *vācā siddhāḥ* животных
 [PAÑCAV. BR. 10,3,13.] *api stuhyapi sedhāsmāṃstathyamuktam* так v. a. ты можешь нас хвалить или наказывать
 [BHAṬṬ. 8,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,92)
-- **EN:** *sidh*¦, *sedhati*
+- **EN:** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . {to scare off, drive; drive away}: *dveṣaḥ*

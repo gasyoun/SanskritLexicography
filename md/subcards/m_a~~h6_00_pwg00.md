@@ -3,7 +3,7 @@
 `m_a~~h6_00_pwg00`
 
 
-**1)** 1. *mā*¦
+**1)** 1. *mā*
  1)
 Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. hinzuzufügen: *māpatyabuddhimakṛthāḥ*
@@ -12,7 +12,7 @@ Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 [BHĀG. P. 10,4,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,4,4) [23,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,29) [29,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,29,31) *mārhatha*
 [32,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,32,21)
 
-- **RU:** 1. *mā*¦
+- **RU:** 1. *mā*
  1)
 Z. 14 следует вставить после 6, 6: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. следует добавить: *māpatyabuddhimakṛthāḥ*
@@ -20,7 +20,7 @@ Z. 14 следует вставить после 6, 6: *mā bhūtkālātyayo yat
 [HARIV. 15767.](https://sanskrit-lexicon-scans.github.io/hariv?15767) В конце добавить: *mā hantumarhasi*
 [BHĀG. P. 10,4,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,4,4) [23,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,29) [29,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,29,31) *mārhatha*
 [32,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,32,21)
-- **EN:** *mā*¦
+- **EN:** *mā*
  1)
 Z. 14 after 6, 6 to be inserted: *mā bhūtkālātyayo yathā*
 [R. 7,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,107,3) Z. 19. fgg. to be added: *māpatyabuddhimakṛthāḥ*

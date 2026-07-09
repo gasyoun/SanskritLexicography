@@ -3,7 +3,7 @@
 `y_a~~h0_00_pwg00`
 
 
-**1)** 1. *yā*¦, *yāti*
+**1)** 1. *yā*, *yāti*
 [DHĀTUP. 24,41.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) partic. *yānt*, gen. *yātas; yāhi; ayus* und *ayān*
 [P. 3,4,111](https://ashtadhyayi.com/sutraani/3/4/111), Sch.;
 *yayau, yayātha, yayima*
@@ -117,7 +117,7 @@ fortgehen, sich entfernen
 [AV. 3,8,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.008.html#av03.008.06) [10,8,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.08)
 [VARĀH. BṚH. S. 68,115.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,115) [86,6](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,6) (oft mit *yāna* verwechselt). der Ort, wo Jmd gegangen ist: *idaṃ yātaṃ ramāpateḥ*
 [VOP. 26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130)
-- **EN:** 1. *yā*¦, *yāti*
+- **EN:** 1. *yā*, *yāti*
 [DHĀTUP. 24,41.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) partic. *yānt*, gen. *yātas; yāhi; ayus* and *ayān*
 [P. 3,4,111](https://ashtadhyayi.com/sutraani/3/4/111), Sch.;
 *yayau, yayātha, yayima*

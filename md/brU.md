@@ -7,7 +7,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 119/153_
 `br_u~~h0_00_pwg00`
 
 
-**etym-intro)** *brū*¦
+**etym-intro)** *brū*
 [DHĀTUP. 24,35.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) Verbum defect.
 [P. 2,4,53.](https://ashtadhyayi.com/sutraani/2/4/53)
 [VOP. 9,54. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,54) *bravīti*
@@ -32,7 +32,7 @@ _PWG article — 23 sub-card(s), 153 sense(s) · RU 110/153 · EN 119/153_
 ([MBH. 3,2729](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2729), v. l.); *abrūta*; partic. *bruvāṇa* . Von allgemeinen Formen nur die 2te pl. prec. *brūyāsta* zu belegen
 [N. 17,35](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,35) ([MBH. 3,2729](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2729) statt dessen *brūyāstat*, die [ed. Bomb.] aber *brūyāsta* mit Erwähnung der Variante *bruvadhvam*) .
 
-- **RU:** *brū*¦
+- **RU:** *brū*
 [DHĀTUP. 24,35.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) Verbum defect.
 [P. 2,4,53.](https://ashtadhyayi.com/sutraani/2/4/53)
 [VOP. 9,54. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,54) *bravīti*
@@ -1095,12 +1095,12 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 `br_u~~h1_00_pwg00`
 
 
-**1)** *brū*¦ mit *pari* für Jmd besprechen so v. a. bei Jmd unter Besprechung verwenden
+**1)** *brū* mit *pari* für Jmd besprechen so v. a. bei Jmd unter Besprechung verwenden
 [AV. 19,39,2. fgg.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.039.html#av19.039.02)
 
-- **RU:** *brū*¦ с *pari* замолвить слово за кого-либо, так v. a. ходатайствовать у кого-либо посредством заступничества
+- **RU:** *brū* с *pari* замолвить слово за кого-либо, так v. a. ходатайствовать у кого-либо посредством заступничества
 [AV. 19,39,2. fgg.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.039.html#av19.039.02)
-- **EN:** *brū*¦ with *pari* to discuss on behalf of someone, so v. a. to employ in discussion with someone [AV. 19,39,2. fgg.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.039.html#av19.039.02)
+- **EN:** *brū* with *pari* to discuss on behalf of someone, so v. a. to employ in discussion with someone [AV. 19,39,2. fgg.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.039.html#av19.039.02)
   <sub>attested</sub>
 
 **2)** — *sam*, *samabruvan* sprachen zu einander
@@ -1116,9 +1116,9 @@ to invite to (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 `br_u~~h0_zz_pw`
 
 
-**intro)** √*brū*¦, *bravīti, brūte, brūmi* (episch), *brūhi* und *bravīhi, ābravīt, ābrabam* und *ābruvam* Von allgemeinen Formen nur das verdächtige *brūyāsta*.
+**intro)** √*brū*, *bravīti, brūte, brūmi* (episch), *brūhi* und *bravīhi, ābravīt, ābrabam* und *ābruvam* Von allgemeinen Formen nur das verdächtige *brūyāsta*.
 
-- **RU:** √*brū*¦, *bravīti, brūte, brūmi* (эпическое), *brūhi* и *bravīhi, ābravīt, ābrabam* и *ābruvam* Из общих форм только сомнительное *brūyāsta*.
+- **RU:** √*brū*, *bravīti, brūte, brūmi* (эпическое), *brūhi* и *bravīhi, ābravīt, ābrabam* и *ābruvam* Из общих форм только сомнительное *brūyāsta*.
 - **EN:** √*brū*, *bravīti, brūte, brūmi* (epic), *brūhi* and *bravīhi, ābravīt, ābrabam* and *ābruvam*. Of general forms only the doubtful *brūyāsta*.
   <sub>lexicographic</sub>
 

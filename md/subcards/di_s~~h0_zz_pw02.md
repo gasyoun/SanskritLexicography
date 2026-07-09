@@ -3,7 +3,7 @@
 `di_s~~h0_zz_pw02`
 
 
-**1)** **2.** *diś*¦ _f._
+**1)** **2.** *diś* _f._
 — 1〉 Richtung, Himmelsrichtung, Himmelsgegend. *diśi diśi* allerwärts, nach allen Richtungen hin [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. so v. a. alle Himmelsgegenden und die ganze Welt ([LA. 89,13]). Von einem Erschrockenen heisst es, dass er nach allen Himmelsgegenden aussehe [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* Es werden 4,5,6,7,8,9 ([SUPARṆ. 28,3]) und 10 Himmelsrichtungen angenommen. *etā daśa diśaḥ* elliptisch so v. a. alle Wege stehen dir offen, gehe wohin dir beliebt. *diśāṃ vrataṃ daśānugānam* Name eines Sāman.
 - **EN:** **2.** *diś* _f._ — 1) direction, cardinal point, quarter of the sky. *diśi diśi* everywhere, in all directions [172,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?172). Pl. thus v. a. all the quarters of the sky and the whole world ([LA. 89,13]). Of a frightened person it is said that he looks about in all directions [320,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). *diśo 'ntāt* 4, 5, 6, 7, 8, 9 ([SUPARṆ. 28,3]) and 10 cardinal points are assumed. *etā daśa diśaḥ* elliptically thus v. a. all roads lie open to you, go wherever you please. *diśāṃ vrataṃ daśānugānam* name of a Sāman.
 
@@ -33,13 +33,13 @@
 — b〉 Pl. = *diśa* 2〉b〉 [VP. 1,8,9].
 - **EN:** — 9) N. pr. — a) of a river. — b) Pl. = *diśa* 2)b) [VP. 1,8,9].
 
-**1)** **3.** *√*diś*¦ volksthümlich = *darś* sehen [MAHĀBH. (K.) 259,14].
+**1)** **3.** *√*diś* volksthümlich = *darś* sehen [MAHĀBH. (K.) 259,14].
 - **EN:** 3. *√*diś* popularly = *darś* to see [MAHĀBH. (K.) 259,14].
 
-**1)** **1.** √*diś*¦ mit *samā* Z. 3, lies [231,16].
+**1)** **1.** √*diś* mit *samā* Z. 3, lies [231,16].
 - **EN:** 1. √*diś* with *samā* l. 3, read [231,16].
 
-**1)** **1.** √*diś*¦ mit *anvā* III. Jmd (Acc.) befehlen [JĀTAKAM. 20]. Befehl geben [22].
+**1)** **1.** √*diś* mit *anvā* III. Jmd (Acc.) befehlen [JĀTAKAM. 20]. Befehl geben [22].
 - **EN:** 1. √*diś* with *anvā* III. to command someone (Acc.) [JĀTAKAM. 20]; to give an order [22].
 
 **2)** — Mit *samā* III. 3.
@@ -51,5 +51,5 @@
 **4)** — Mit *sam* III. Abschied nehmen von (Acc.) [DIVYĀVAD. 446,25].
 - **EN:** — With *sam* III. to take leave of (Acc.) [DIVYĀVAD. 446,25].
 
-**1)** **2.** √*diś*¦ III. 1〉 *diśo digbhyaḥ* in allen Richtungen [DIVYĀVAD. 163,24].
+**1)** **2.** √*diś* III. 1〉 *diśo digbhyaḥ* in allen Richtungen [DIVYĀVAD. 163,24].
 - **EN:** 2. √*diś* III. 1) *diśo digbhyaḥ* in all directions [DIVYĀVAD. 163,24].

@@ -3,9 +3,9 @@
 `vr_iq_a`
 
 
-**1)** *vrīḍā*¦ s. u. *vrīḍa* .
+**1)** *vrīḍā* s. u. *vrīḍa* .
 
-- **RU:** *vrīḍā*¦ см. s. u. *vrīḍa* .
+- **RU:** *vrīḍā* см. s. u. *vrīḍa* .
   <sub>lexicographic</sub>
 
 **NWS-1)** *vrīḍā* [Gen] Subst f shame, modesty, bashfulness. vrīḍāṃ √ kṛ : to feel shame. Mbh , Kāvya(MW) .

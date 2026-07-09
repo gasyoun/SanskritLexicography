@@ -488,21 +488,21 @@
 - **EN:** — With *prasam* to take properly into consideration [MĀN. ŚR. 1,1,1].
   <sub>attested</sub>
 
-**1)** **2.** *paś*¦ _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
+**1)** **2.** *paś* _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
 
-- **RU:** **2.** *paś*¦ _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
+- **RU:** **2.** *paś* _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
 - **EN:** 2. *paś*; _f._ glance or eye. Only *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
   <sub>attested</sub>
 
-**1)** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
+**1)** **3.** √*paś*, *pāśayati* s. !√*pāśay*.
 
-- **RU:** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
+- **RU:** **3.** √*paś*, *pāśayati* s. !√*pāśay*.
 - **EN:** 3. √*paś*; *pāśayati* s. see! √*pāśay*.
   <sub>lexicographic</sub>
 
-**preamble)** **1.** √*paś*¦ nur Präsensstamm *paśya* Act. Med. (meist metrisch).
+**preamble)** **1.** √*paś* nur Präsensstamm *paśya* Act. Med. (meist metrisch).
 
-- **RU:** **1.** √*paś*¦ только основа настоящего времени *paśya* Act. Med. (преимущественно в метрических текстах).
+- **RU:** **1.** √*paś* только основа настоящего времени *paśya* Act. Med. (преимущественно в метрических текстах).
   <sub>attested</sub>
 
 **mit_T38)** — Mit *anu*

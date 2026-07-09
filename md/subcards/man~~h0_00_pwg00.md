@@ -3,7 +3,7 @@
 `man~~h0_00_pwg00`
 
 
-**etym)** *man*¦, *manute*
+**etym)** *man*, *manute*
 [DHĀTUP. 30,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=30) *manvate* (
 [ṚV. 10,2,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.05)), *manvahe, manmahe* (
 [NAIGH. 3,19](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)), *manavate, manavai, manutām, manvāna, amanmahi, amanvata, manvanta* und *manvata*
@@ -382,7 +382,7 @@ inserted or prefixed without affecting the construction (thus also without *iti)
 [KATHĀS. 45,90.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,90) acc. [64,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,113)
   <sub>attested</sub>
 
-**gram-intro)** *man*¦, *manute*
+**gram-intro)** *man*, *manute*
 [DHĀTUP. 30,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=30) *manvate* (
 [ṚV. 10,2,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.05)), *manvahe, manmahe* (
 [NAIGH. 3,19](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)), *manavate, manavai, manutām, manvāna, amanmahi, amanvata, manvanta* und *manvata*
@@ -399,7 +399,7 @@ Sch.), *maṃsthās, amaṃsata* 3. sg.; *maṃsante, maṃsīmahi, maṃsīṣ�
 (Kār. 4. 8 aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)), *maṃsyati* ep., *maniṣye* ved.; *mene, menire; ˚manya* und *˚matya; mantave, mantavai*; partic. *mata*; Ausfall des *na*
 [P. 6,4,37. fg.](https://ashtadhyayi.com/sutraani/6/4/37)
 
-- **RU:** *man*¦, *manute*
+- **RU:** *man*, *manute*
 [DHĀTUP. 30,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=30) *manvate* ([ṚV. 10,2,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.002.html#rv10.002.05)), *manvahe, manmahe* ([NAIGH. 3,19](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19)), *manavate, manavai, manutām, manvāna, amanmahi, amanvata, manvanta* und *manvata*
 3. pl.; *manyate*
 [DHĀTUP. 26,67.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)

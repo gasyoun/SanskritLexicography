@@ -7,16 +7,16 @@ _PWG article — 56 sub-card(s), 412 sense(s) · RU 248/412 · EN 341/412_
 `h_a~~h0_00_pwg00`
 
 
-**1)** 1. *hā*¦, *jihīte*
+**1)** 1. *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*
 
-- **RU:** 1. *hā*¦, *jihīte*
+- **RU:** 1. *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*
-- **EN:** *hā*¦, *jihīte*
+- **EN:** *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*
@@ -639,7 +639,7 @@ according to Comm.): *samahāsta mudam*
 `h_a~~h1_00_pwg00`
 
 
-**intro)** 2. *hā*¦, *jahāti*
+**intro)** 2. *hā*, *jahāti*
 [DHĀTUP. 25,8](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*tyāge*).
 [VOP. 10,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,5) *jahitas* (
 [TBR. 1,4,6,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,5)) und *jahītas, jahithas* und *jahīthas*
@@ -666,7 +666,7 @@ according to Comm.): *samahāsta mudam*
 [10,14,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.08) *˚hāya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
 [VOP. 26,212.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212)
-- **EN:** 2. *hā*¦, *jahāti*
+- **EN:** 2. *hā*, *jahāti*
 [DHĀTUP. 25,8](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*tyāge*).
 [VOP. 10,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,5) *jahitas* (
 [TBR. 1,4,6,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,5)) and *jahītas, jahithas* and *jahīthas*
@@ -2759,7 +2759,7 @@ to get rid of, to free oneself from
 `h_a~~h2_00_pwg00`
 
 
-**3)** 3. *hā*¦ _interj._ gaṇa *cādi*
+**3)** 3. *hā* _interj._ gaṇa *cādi*
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des Staunens; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
@@ -2817,7 +2817,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* die neuere Ausg.) *hā heti vādinau* als Ausdruck des Behagens
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
 
-- **RU:** 3. *hā*¦ _interj._ gaṇa *cādi*
+- **RU:** 3. *hā* _interj._ gaṇa *cādi*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) боли и удивления; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
@@ -2874,7 +2874,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* более новое Ausg.) *hā heti vādinau* как выражение удовольствия
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
-- **EN:** 3. *hā*¦ _interj._ gaṇa *cādi*
+- **EN:** 3. *hā* _interj._ gaṇa *cādi*
 as an exclamation [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) of pain and astonishment; *viṣādaśugārtiṣu*
 [AK. 3,4,32,18.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,18) ([COL. 3,4,28,18.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,4,28,18)) *vismaye pramode ca*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
@@ -2938,12 +2938,12 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*hā*¦, *jihīte*
+**1)** **1.** √*hā*, *jihīte*
 — 1〉 aufspringen, wegspringen vor, weichen; mit Dat.
 
-- **RU:** **1.** √*hā*¦, *jihīte*
+- **RU:** **1.** √*hā*, *jihīte*
 — 1〉 вскакивать, отпрыгивать от, уступать; с Dat.
-- **EN:** **1.** √*hā*¦, *jihīte*
+- **EN:** **1.** √*hā*, *jihīte*
 — 1〉 to start up, spring away from, give way; with Dat.
   <sub>attested</sub>
 
@@ -3201,7 +3201,7 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_pw01`
 
 
-**1)** **2.** √*hā*¦
+**1)** **2.** √*hā*
 — 1〉 *jahāti* (metrisch *˚jahanti* 3. Pl., *˚jahet* und auch Med.)
 - **EN:** 2. √*hā*
 — 1) *jahāti* (metrically *˚jahanti* 3. Pl., *˚jahet* and also Med.)
@@ -3973,16 +3973,16 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_pw03`
 
 
-**interj)** **3.** *hā*¦ Interj. des Schmerzes, des Staunens und des Behagens. Vor und nach einem Voc.; mit folgendem Acc. wehe über! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+**interj)** **3.** *hā* Interj. des Schmerzes, des Staunens und des Behagens. Vor und nach einem Voc.; mit folgendem Acc. wehe über! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
 
-- **RU:** **3.** *hā*¦ Interj. боли, изумления и удовольствия. До и после Voc.; с последующим Acc. горе! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
-- **EN:** 3. *****hā*¦ Interj. an exclamation of pain, of astonishment, and of satisfaction. Before and after a Voc.; with a following Acc. woe upon! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+- **RU:** **3.** *hā* Interj. боли, изумления и удовольствия. До и после Voc.; с последующим Acc. горе! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
+- **EN:** 3. *****hā* Interj. an exclamation of pain, of astonishment, and of satisfaction. Before and after a Voc.; with a following Acc. woe upon! [227,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?227). *hā hā*, *hā dhik*, *hā hanta hanta*, *hā kaṣṭam*, *hā dhikkaṣṭam*, *hā hā dhik*, *hā hā kaṣṭam*, *hākaṣṭaśabda* _m._ [KĀD. 2,122,1 (149,18)]
   <sub>attested</sub>
 
-**viprati)** **2.** √*hā*¦ mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18].
+**viprati)** **2.** √*hā* mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18].
 
-- **RU:** **2.** √*hā*¦ с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18].
-- **EN:** 2. ****√*hā*¦ with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18].
+- **RU:** **2.** √*hā* с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18].
+- **EN:** 2. ****√*hā* with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18].
   <sub>attested</sub>
 
 **abhivi)** — Mit *abhivi* verlassen [KIR. 10,1].
@@ -3996,10 +3996,10 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_sch`
 
 
-**viprati-hina)** 2. hā¦ mit viprati, ˚hīna frei von... (im Komp. vorangehend), [Divyāvad. 95,18.] — Mit abhivi verlassen, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
+**viprati-hina)** 2. hā mit viprati, ˚hīna frei von... (im Komp. vorangehend), [Divyāvad. 95,18.] — Mit abhivi verlassen, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
 
-- **RU:** 2. hā¦ с viprati, ˚hīna свободный от... (предшествует в сложении), [Divyāvad. 95,18.] — С abhivi покидать, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
-- **EN:** 2. hā¦ with viprati, ˚hīna free from… (preceding in the comp.), [Divyāvad. 95,18.] — With abhivi to abandon, [Kir. 10,1.] [[Yudh. 2,90.]]
+- **RU:** 2. hā с viprati, ˚hīna свободный от... (предшествует в сложении), [Divyāvad. 95,18.] — С abhivi покидать, [Kir. 10,1.] [[Yudh. 2,90.]] {part=,seq=27901,type=,n=4}
+- **EN:** 2. hā with viprati, ˚hīna free from… (preceding in the comp.), [Divyāvad. 95,18.] — With abhivi to abandon, [Kir. 10,1.] [[Yudh. 2,90.]]
   <sub>attested</sub>
 
 ## hā
@@ -4007,8 +4007,8 @@ as [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 `h_a~~h0_zz_pwkvn`
 
 
-**viprati)** **2.** *hā*¦ mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18]. — Mit *abhivi* verlassen [KIR. 10,1].
+**viprati)** **2.** *hā* mit *viprati*, *˚hīna* frei von — (im Comp. vorangehend) [DIVYĀVAD. 95,18]. — Mit *abhivi* verlassen [KIR. 10,1].
 
-- **RU:** **2.** *hā*¦ с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18]. — С *abhivi* покидать [KIR. 10,1].
-- **EN:** 2. *****hā*¦ with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18]. — With *abhivi* to abandon [KIR. 10,1].
+- **RU:** **2.** *hā* с *viprati*, *˚hīna* свободный от — (предшествует в Comp.) [DIVYĀVAD. 95,18]. — С *abhivi* покидать [KIR. 10,1].
+- **EN:** 2. *****hā* with *viprati*, *˚hīna* free from — (preceding in the Comp.) [DIVYĀVAD. 95,18]. — With *abhivi* to abandon [KIR. 10,1].
   <sub>attested</sub>

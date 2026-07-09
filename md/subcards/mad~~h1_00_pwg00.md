@@ -3,16 +3,16 @@
 `mad~~h1_00_pwg00`
 
 
-**main)** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen: *mo ṣu pra sedhīrmuhurinmamandhi*
+**main)** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)
 
-- **RU:** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; медлить, выжидать, стоять на месте: *mo ṣu pra sedhīrmuhurinmamandhi*
+- **RU:** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; медлить, выжидать, стоять на месте: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)
-- **EN:** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; to delay, to wait, to stand still: *mo ṣu pra sedhīrmuhurinmamandhi*
+- **EN:** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; to delay, to wait, to stand still: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)

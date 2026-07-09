@@ -3,13 +3,13 @@
 `_ap~~h0_00_pwg00`
 
 
-**headnote)** *āp*¦, *āpnoti*
+**headnote)** *āp*, *āpnoti*
 [DHĀTUP. 27,14.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) *āpati*
 [34,32.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) potent. *prāpeyam* (ved.); perf. *āpa, āpus*; aor. *āpas, āpan; avāpsīs* (ep.); fut. *āpsyati; āptum, āptvā, āpta*
 [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10), Kār. (aus [SIDDH. K.]) 4. med. (ved. und ep.) perf. *āpire*; part. *āpāna*
 [NAIGH. 2,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18)
 [NIR. 3,10](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,10) und *āpnāna* .
-- **EN:** *āp*¦, *āpnoti*
+- **EN:** *āp*, *āpnoti*
 [DHĀTUP. 27,14.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) *āpati*
 [34,32.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) potent. *prāpeyam* (ved.); perf. *āpa, āpus*; aor. *āpas, āpan; avāpsīs* (ep.); fut. *āpsyati; āptum, āptvā, āpta*
 [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10), Kār. (from [SIDDH. K.]) 4th med. (ved. and ep.) perf. *āpire*; part. *āpāna*

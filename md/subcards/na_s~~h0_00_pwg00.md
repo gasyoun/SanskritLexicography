@@ -3,7 +3,7 @@
 `na_s~~h0_00_pwg00`
 
 
-**1)** *naś*¦, *naśati* (ved., *vipraṇaśet*
+**1)** *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) und *naśyati* (
@@ -97,7 +97,7 @@
 [MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
 
-- **RU:** *naś*¦, *naśati* (ved., *vipraṇaśet*
+- **RU:** *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) и *naśyati* (
@@ -190,7 +190,7 @@
 [N. 17,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,7) *sa naśyeta mṛṣā vadan* погибнуть
 [MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
-- **EN:** 1. *naś*¦, *naśati* (ved., *vipraṇaśet*
+- **EN:** 1. *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) and *naśyati* (

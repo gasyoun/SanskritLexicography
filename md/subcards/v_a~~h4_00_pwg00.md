@@ -3,7 +3,7 @@
 `v_a~~h4_00_pwg00`
 
 
-**1)** 5. *vā*¦, *vayati* und *˚te*
+**1)** 5. *vā*, *vayati* und *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha* .
@@ -22,7 +22,7 @@
 [AV. 10,2,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.002.html#av10.002.13)
 [VS. 19,80.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,80) [82.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,82) [89.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,89)
 [TBR. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,1,1)
-- **EN:** 5. *vā* ¦, *vayati* and *˚te*
+- **EN:** 5. *vā* , *vayati* and *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha*.
@@ -59,7 +59,7 @@
 - **EN:** — Vgl. *ūy, amota, otu*, 3. *vāna*.
   <sub>attested</sub>
 
-**main)** 5. *vā*¦, *vayati* und *˚te*
+**main)** 5. *vā*, *vayati* und *˚te*
 [DHĀTUP. 23,37](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *(tantusaṃtāne); vavau, uvāya, vavus, ūvus, ūyus*
 [P. 2,4,41.](https://ashtadhyayi.com/sutraani/2/4/41) [6,1,16.](https://ashtadhyayi.com/sutraani/6/1/16) [38. fgg.](https://ashtadhyayi.com/sutraani/6/1/38)
 [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [135. fgg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,135) *uvayitha* .

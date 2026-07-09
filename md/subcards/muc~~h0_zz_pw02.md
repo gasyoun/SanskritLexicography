@@ -34,15 +34,15 @@
 - **EN:** — 2) _f._ liberation, release, in *āmuc*.
   <sub>attested</sub>
 
-**1)** **3.** *√*muc*¦ *mocate* *kalkane*.
+**1)** **3.** *√*muc* *mocate* *kalkane*.
 
-- **RU:** **3.** *√*muc*¦ *mocate* *kalkane*.
+- **RU:** **3.** *√*muc* *mocate* *kalkane*.
 - **EN:** 3. *√*muc* *mocate* *kalkane*.
   <sub>lexicographic</sub>
 
-**1)** **1.** √*muc*¦ V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
+**1)** **1.** √*muc* V. 12〉 Jmd (Gen.) entwischen [JĀTAKAM. 20]. [21,11]. [22].
 
-- **RU:** **1.** √*muc*¦ V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
+- **RU:** **1.** √*muc* V. 12〉 ускользать от кого-л. (Gen.) [JĀTAKAM. 20]. [21,11]. [22].
 - **EN:** 1. √*muc* V. 12) someone (Gen.) escapes, slips away from [JĀTAKAM. 20]. [21,11]. [22].
   <sub>attested</sub>
 
@@ -64,7 +64,7 @@
 - **EN:** — With *pratisam*, *˚saṃmukta*: released, freed from a painful state/condition [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
   <sub>attested</sub>
 
-**intro)** **2.** *muc*¦
+**intro)** **2.** *muc*
 
-- **RU:** **2.** *muc*¦
+- **RU:** **2.** *muc*
   <sub>attested</sub>

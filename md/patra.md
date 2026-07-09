@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 12 sense(s) · RU 12/12 · EN 0/12_
 `pAtra`
 
 
-**1)** *patra*¦ s. *pattra* .
+**1)** *patra* s. *pattra* .
 
-- **RU:** *patra*¦ см. s. *pattra* .
+- **RU:** *patra* см. s. *pattra* .
   <sub>lexicographic</sub>
 
-**PW-1)** *patra*¦ defective Schreibart für *pattra*.
+**PW-1)** *patra* defective Schreibart für *pattra*.
 
-- **RU:** *patra*¦ дефектное написание вместо *pattra*.
+- **RU:** *patra* дефектное написание вместо *pattra*.
   <sub>lexicographic</sub>
 
 **NWS-1)** [NWS: Graßmann 1873 (1996) : 767] *pátra* [Ved , unsp] Subst n Flügel. enthalten in áchinna -, śatápatra

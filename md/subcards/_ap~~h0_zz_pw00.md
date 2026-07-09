@@ -3,9 +3,9 @@
 `_ap~~h0_zz_pw00`
 
 
-**1)** √*āp*¦ *āpnoti*, seltener Med.
+**1)** √*āp* *āpnoti*, seltener Med.
 — 1〉 erreichen, einholen, stossen auf, antreffen.
-- **EN:** √*āp*¦ *āpnoti*, rarely Med.
+- **EN:** √*āp* *āpnoti*, rarely Med.
  — 1) to reach, overtake, come upon, meet with.
 
 **2)** — 2〉 erlangen, bekommen, in Besitz nehmen, theilhaftig werden, erleiden.

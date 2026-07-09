@@ -3,9 +3,9 @@
 `y_a~~h0_zz_sch`
 
 
-**main)** 1. yā¦ [Kaus.] unterhalten, aufziehen, [Divyāvad. 499,1]; sich wohlbefinden,93,6; 150,16; 196,18; 471,4.
+**main)** 1. yā [Kaus.] unterhalten, aufziehen, [Divyāvad. 499,1]; sich wohlbefinden,93,6; 150,16; 196,18; 471,4.
 
-- **RU:** 1. yā¦ [Kaus.] содержать, воспитывать, [Divyāvad. 499,1]; пребывать в благополучии,93,6; 150,16; 196,18; 471,4.
+- **RU:** 1. yā [Kaus.] содержать, воспитывать, [Divyāvad. 499,1]; пребывать в благополучии,93,6; 150,16; 196,18; 471,4.
 - **EN:** 1. yā — [Kaus.] to maintain, to rear, raise, [Divyāvad. 499,1]; to be well, fare well, 93,6; 150,16; 196,18; 471,4.
   <sub>attested</sub>
 

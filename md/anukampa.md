@@ -7,9 +7,9 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 `anukampA`
 
 
-**1)** *anukampa*¦ s. *anukampā* .
+**1)** *anukampa* s. *anukampā* .
 
-- **RU:** *anukampa*¦ s. *anukampā* .
+- **RU:** *anukampa* s. *anukampā* .
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: BHSD : 26] *anukampa* [Buddh, unsp] LaṅkāvS 6.14 . [ read ° pya , “to be pitied”. ]

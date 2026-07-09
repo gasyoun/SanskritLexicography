@@ -3,7 +3,7 @@
 `m_a~~h2_00_pwg00`
 
 
-**intro)** 3. *mā*¦, *māti*
+**intro)** 3. *mā*, *māti*
 [DHĀTUP. 24,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *mimīte*
 [25,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) [4,113.](https://ashtadhyayi.com/sutraani/6/4/113) [7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) *mimīmahe, mīmahe* (s. u. *anu* und *upa), mimate* (
 [P. 6,4,112](https://ashtadhyayi.com/sutraani/6/4/112), Sch.),
@@ -17,7 +17,7 @@
 [SIDDH. K. 212,b,5.] *˚māya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69) pass. *mīyate, amāyi, mita* (s. bes.).
 
-- **RU:** 3. *mā*¦, *māti*
+- **RU:** 3. *mā*, *māti*
 [DHĀTUP. 24,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *mimīte*
 [25,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) [4,113.](https://ashtadhyayi.com/sutraani/6/4/113) [7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) *mimīmahe, mīmahe* (s. u. *anu* и *upa), mimate* (
 [P. 6,4,112](https://ashtadhyayi.com/sutraani/6/4/112), Sch.),

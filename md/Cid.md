@@ -7,7 +7,7 @@ _PWG article — 32 sub-card(s), 217 sense(s) · RU 154/217 · EN 197/217_
 `_cid~~h0_00_pwg00`
 
 
-1. *chid*¦, *chinatti* und *chintte*
+1. *chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -20,7 +20,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.;
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
-- **EN:** 1. *chid*¦, *chinatti* and *chintte*
+- **EN:** 1. *chid*, *chinatti* and *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* and *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -34,7 +34,7 @@ Sch.; *ciccheda* and *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 from
 [SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-*chid*¦, *chinatti* und *chintte*
+*chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -48,7 +48,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-- **RU:** *chid*¦, *chinatti* und *chintte*
+- **RU:** *chid*, *chinatti* und *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
 [P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
@@ -1435,10 +1435,10 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 `_cid~~h1_00_pwg00`
 
 
-**introd)** 2. *chid*¦ (= 1. *chid*)
-- **EN:** 2. *chid*¦ (= 1. *chid*)
+**introd)** 2. *chid* (= 1. *chid*)
+- **EN:** 2. *chid* (= 1. *chid*)
 
-**1a)** 2. *chid*¦ (= 1. *chid*)
+**1a)** 2. *chid* (= 1. *chid*)
  1) _adj._ am Ende eines comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) abschneidend, zerschneidend, zerbrechend, zerreissend, spaltend, durchbohrend: *(śarāḥ) tanucchidaḥ*
@@ -1446,7 +1446,7 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [R. 5,37,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,10) *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
 
-- **RU:** 2. *chid*¦ (= 1. *chid*)
+- **RU:** 2. *chid* (= 1. *chid*)
  1) _adj._ в конце comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) срезающий, разрезающий, разламывающий, разрывающий, раскалывающий, пробуравливающий: *(śarāḥ) tanucchidaḥ*
@@ -1502,10 +1502,10 @@ Sch. to [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 `_cid~~h2_00_pwg00`
 
 
-**1)** *chid*¦
+**1)** *chid*
 
-- **RU:** *chid*¦
-- **EN:** 1. *chid*¦
+- **RU:** *chid*
+- **EN:** 1. *chid*
   <sub>attested</sub>
 
 **2)** 2) *udanvacchinnā bhūḥ* so v. a. begrenzt
@@ -1705,14 +1705,14 @@ Schol. through *pṛthakprakāśita*.* aparicchinna* unlimited, unrestricted
 `_cid~~h3_00_pwg00`
 
 
-**1)** 1. *chid*¦ mit *ud*
+**1)** 1. *chid* mit *ud*
  1)
 Z. 2 lies [M.] st. [MBH.]
 
-- **RU:** 1. *chid*¦ с *ud*
+- **RU:** 1. *chid* с *ud*
  1)
 Z. 2 — следует читать [M.] st. [MBH.]
-- **EN:** 1. *chid*¦ with *ud*
+- **EN:** 1. *chid* with *ud*
  1)
 Z. 2 read [M.] st. [MBH.]
   <sub>attested</sub>
@@ -1731,14 +1731,14 @@ Z. 2 read [M.] st. [MBH.]
 `_cid~~h4_00_pwg00`
 
 
-**1)** 2. *chid*¦ _f._ nom. act. das Zerschneiden, Zunichtemachen: *bhava˚*
+**1)** 2. *chid* _f._ nom. act. das Zerschneiden, Zunichtemachen: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
 
-- **RU:** 2. *chid*¦ _f._ nom. act. — «рассечение, уничтожение»: *bhava˚*
+- **RU:** 2. *chid* _f._ nom. act. — «рассечение, уничтожение»: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
-- **EN:** 2. *chid*¦ _f._ nom. act. cutting, annihilation: *bhava˚*
+- **EN:** 2. *chid* _f._ nom. act. cutting, annihilation: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
   <sub>attested</sub>
@@ -1748,13 +1748,13 @@ Z. 2 read [M.] st. [MBH.]
 `_cid~~h0_zz_pw`
 
 
-**1-header)** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-- **EN:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
+**1-header)** **1.** √*chid*, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
+- **EN:** **1.** √*chid*, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 
-**1)** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
+**1)** **1.** √*chid*, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 — 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
-- **RU:** **1.** √*chid*¦, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
+- **RU:** **1.** √*chid*, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
 — 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный u. s. w.; разорванный, -резанный; надрезанный, d. h. снабжённый перетяжками [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 - **EN:** — 1〉 to cut off, hew off, strike off, tear off, gnaw off, bite off, cut through, hew through, tear through, split, pierce. *saṃdhim* to make a hole in the wall. Pass. to break, to tear (intrans.). *chinna* cut off u. s. w.; torn open, cut open; incised, d. h. provided with notches/constrictions [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
@@ -2041,8 +2041,8 @@ Z. 2 read [M.] st. [MBH.]
 **sam3-2)** — 2〉 lösen (einen Zweifel), erledigen (eine Frage).
 - **EN:** — 2〉 to resolve (a doubt), to settle (a question).
 
-**2-header)** **2.** *chid*¦
-- **EN:** **2.** *chid*¦
+**2-header)** **2.** *chid*
+- **EN:** **2.** *chid*
 
 **2-1a)** — 1〉 _Adj._ am Ende eines Comp.
 — a〉 abschneidend, zerschneidend, -brechend, -reissend, spaltend, durchbohrend.
@@ -2076,24 +2076,24 @@ Z. 2 read [M.] st. [MBH.]
 - **EN:** — b〉 at the end of a Comp. the annihilation.
   <sub>attested</sub>
 
-**vipra)** √*chid*¦ mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
+**vipra)** √*chid* mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
 
-- **RU:** √*chid*¦ mit *vipra* разлучать, отделять [ĀPAST. ŚR. 10,15,12]. [19,14].
-- **EN:** √*chid*¦ with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
+- **RU:** √*chid* mit *vipra* разлучать, отделять [ĀPAST. ŚR. 10,15,12]. [19,14].
+- **EN:** √*chid* with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
   <sub>attested</sub>
 
-**1)** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
+**1)** **1.** √*chid*, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
 
-- **RU:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
-- **EN:** **1.** √*chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
+- **RU:** **1.** √*chid*, *chindatprāṇi* (Nomin.) травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
+- **EN:** **1.** √*chid*, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**II-6)** **1.** √*chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
+**II-6)** **1.** √*chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
 
-- **RU:** **1.** √*chid*¦ II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
+- **RU:** **1.** √*chid* II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — Mit *vipra* 4.
-- **EN:** **1.** √*chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
+- **EN:** **1.** √*chid* II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
 — With *vipra* 4.
   <sub>attested</sub>
 
@@ -2234,11 +2234,11 @@ Z. 2 read [M.] st. [MBH.]
 — 2〉 разрешать (сомнение), решать (вопрос).
   <sub>attested</sub>
 
-**1a)** **2.** *chid*¦
+**1a)** **2.** *chid*
 — 1〉 _Adj._ am Ende eines Comp.
 — a〉 abschneidend, zerschneidend, -brechend, -reissend, spaltend, durchbohrend.
 
-- **RU:** **2.** *chid*¦
+- **RU:** **2.** *chid*
 — 1〉 _Adj._ в конце Comp.
 — a〉 срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий.
   <sub>attested</sub>
@@ -2248,12 +2248,12 @@ Z. 2 read [M.] st. [MBH.]
 `_cid~~h0_zz_sch`
 
 
-**1)** 1. chid¦ auch lösen, entscheiden (einen Zweifel), [MBh. 1,71,17.] — chindatprāṇi (Nomin.) ein grasfressendes Tier, [Āpast. Śr. 9,13,1; 16,8.] — Mit vipra trennen, [Āpast. Śr. 10,15,12; 19,14.] {part=,seq=13779,type=,n=5}
-- **EN:** 1. chid¦ also to resolve, to decide (a doubt), [MBh. 1,71,17.] — chindatprāṇi (Nomin.) a grass-eating animal, [Āpast. Śr. 9,13,1; 16,8.] — With vipra to separate, [Āpast. Śr. 10,15,12; 19,14.]
+**1)** 1. chid auch lösen, entscheiden (einen Zweifel), [MBh. 1,71,17.] — chindatprāṇi (Nomin.) ein grasfressendes Tier, [Āpast. Śr. 9,13,1; 16,8.] — Mit vipra trennen, [Āpast. Śr. 10,15,12; 19,14.] {part=,seq=13779,type=,n=5}
+- **EN:** 1. chid also to resolve, to decide (a doubt), [MBh. 1,71,17.] — chindatprāṇi (Nomin.) a grass-eating animal, [Āpast. Śr. 9,13,1; 16,8.] — With vipra to separate, [Āpast. Śr. 10,15,12; 19,14.]
 
-**SCH-lösen)** 1. chid¦ auch lösen, entscheiden (einen Zweifel), [MBh. 1,71,17.]
+**SCH-lösen)** 1. chid auch lösen, entscheiden (einen Zweifel), [MBh. 1,71,17.]
 
-- **RU:** 1. chid¦ также — «разрешать, решать» (сомнение), [MBh. 1,71,17.]
+- **RU:** 1. chid также — «разрешать, решать» (сомнение), [MBh. 1,71,17.]
   <sub>attested</sub>
 
 **SCH-chindatprani)** chindatprāṇi (Nomin.) ein grasfressendes Tier, [Āpast. Śr. 9,13,1; 16,8.]
@@ -2271,22 +2271,22 @@ Z. 2 read [M.] st. [MBH.]
 `_cid~~h0_zz_pwkvn`
 
 
-**vipra)** *chid*¦ mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
+**vipra)** *chid* mit *vipra* trennen [ĀPAST. ŚR. 10,15,12]. [19,14].
 
-- **RU:** *chid*¦ с *vipra* — «разделять» [ĀPAST. ŚR. 10,15,12]. [19,14].
-- **EN:** *chid*¦ with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
+- **RU:** *chid* с *vipra* — «разделять» [ĀPAST. ŚR. 10,15,12]. [19,14].
+- **EN:** *chid* with *vipra* to separate [ĀPAST. ŚR. 10,15,12]. [19,14].
   <sub>attested</sub>
 
-**1)** **1.** *chid*¦, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
+**1)** **1.** *chid*, *chindatprāṇi* (Nomin.) ein grasfressendes Thier [ĀPAST. ŚR. 9,13,1]. [16,8].
 
-- **RU:** **1.** *chid*¦, *chindatprāṇi* (Nomin.) — «травоядное животное» [ĀPAST. ŚR. 9,13,1]. [16,8].
-- **EN:** **1.** *chid*¦, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
+- **RU:** **1.** *chid*, *chindatprāṇi* (Nomin.) — «травоядное животное» [ĀPAST. ŚR. 9,13,1]. [16,8].
+- **EN:** **1.** *chid*, *chindatprāṇi* (Nomin.) a grass-eating animal [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**II-6)** **1.** *chid*¦ II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — Mit *vipra* 4.
+**II-6)** **1.** *chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — Mit *vipra* 4.
 
-- **RU:** **1.** *chid*¦ II. 6. Также — «разрешать, решать» (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — С *vipra* 4.
-- **EN:** **1.** *chid*¦ II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — With *vipra* 4.
+- **RU:** **1.** *chid* II. 6. Также — «разрешать, решать» (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — С *vipra* 4.
+- **EN:** **1.** *chid* II. 6. Also to resolve, to decide (a doubt) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17). — With *vipra* 4.
   <sub>attested</sub>
 
 ## chid

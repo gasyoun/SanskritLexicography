@@ -3,9 +3,9 @@
 `vid~~h2_00_pwg00`
 
 
-**3)** *vid*¦, *vindati, ˚te*
+**3)** *vid*, *vindati, ˚te*
 
-- **RU:** *vid*¦, *vindati, ˚te*
+- **RU:** *vid*, *vindati, ˚te*
   <sub>attested</sub>
 
 **3)** [DHĀTUP. 28,138](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*lābhe*) .

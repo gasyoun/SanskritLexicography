@@ -3,12 +3,12 @@
 `su~~h1_00_pwg00`
 
 
-**1)** *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+**1)** *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
 [BRĀHMAṆA]): *suvate*
-- **EN:** *su*¦ (*sū), savati (prasavaiśvaryayoḥ*) [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati* [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*, [VOP.] *kṣepe)*.* suvatāt*; med. (in the [BRĀHMAṆA]): *suvate*
+- **EN:** *su* (*sū), savati (prasavaiśvaryayoḥ*) [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati* [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*, [VOP.] *kṣepe)*.* suvatāt*; med. (in the [BRĀHMAṆA]): *suvate*
 
 **3)** pl. [ŚAT. BR. 5,3,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,13) *suvāntai* 14. *suvante*
 [TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *suvai, suvāvahai*
@@ -42,13 +42,13 @@
 [5,6,3,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,4) [7,5,15,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,15,2) [TBR. 1,8,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,1,1) [ŚAT. BR. 5,4,3,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,23) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,8) [5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,2,1) [PAÑCAV. BR. 18,9,1. 10,1.] pass.: *yo vai somena sūyate (= niṣpadyate* Comm.) [TBR. 2,7,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,5,1) *sūyate ha vā asya kṣatram* [AIT. BR. 8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5) [ŚAT. BR. 5,3,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,1,3) [3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,11) [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,15) [9,3,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,6) *agnisavena suto bhavati* 9. *sarvaṃ vastatsutam* for all this you are authorized [13,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,17) *sūyate vā eṣa yo 'gniṃ cinute* [TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* Comm.) so v. a. be set into action [MAITRYUP. 6,16.] *mā na sāvīrmahāstrāṇi* so v. a. hurl [BHAṬṬ. 9,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,50) — *prajāpateḥ sutaṃ rayiṣṭham* N. of a Sāman [Ind. St. 3,225,a.]
 — Vgl. 2. *sava*, 2. *savana*, 1. *savitar, savīman*.
 
-**2.)** 2. *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+**2.)** 2. *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
 [BRĀHMAṆA]): *suvate*
 
-- **RU:** 2. *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+- **RU:** 2. *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den

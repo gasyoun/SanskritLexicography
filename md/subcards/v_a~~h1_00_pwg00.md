@@ -3,7 +3,7 @@
 `v_a~~h1_00_pwg00`
 
 
-**1)** 2. *vā*¦, *vāti*
+**1)** 2. *vā*, *vāti*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*) .
 [DHĀTUP. 24,42](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*gatigandhanayoḥ, gamanahiṃsayoḥ*
 [VOP.]). *avān* und *avus*
@@ -33,7 +33,7 @@
 [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) *nāśakanmāruto vātum*
 [HARIV. 90.](https://sanskrit-lexicon-scans.github.io/hariv?90)
 [KATHĀS. 25,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,42) [44,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,136)
-- **EN:** 2. *vā*¦, *vāti*
+- **EN:** 2. *vā*, *vāti*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 24,42](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*gatigandhanayoḥ, gamanahiṃsayoḥ*
 [VOP.]). *avān* and *avus*

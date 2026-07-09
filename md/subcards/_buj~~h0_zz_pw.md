@@ -3,8 +3,8 @@
 `_buj~~h0_zz_pw`
 
 
-**root-gloss)** **1.** √*bhuj*¦, *bhujati* biegen.
-- **EN:** **1.** √*bhuj*¦, *bhujati* to bend.
+**root-gloss)** **1.** √*bhuj*, *bhujati* biegen.
+- **EN:** **1.** √*bhuj*, *bhujati* to bend.
 
 **passive)** — Pass. *bhujyate* gebeugt —, entmuthigt werden. — *bhugna*
 - **EN:** — Pass. *bhujyate* to be bent down, to be disheartened. — *bhugna*
@@ -90,16 +90,16 @@
 - **EN:** — With *sam* to wind round [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* bent together.
   <sub>attested</sub>
 
-**in-compound)** **2.** *bhuj*¦ in *tribhuj*.
+**in-compound)** **2.** *bhuj* in *tribhuj*.
 
-- **RU:** **2.** *bhuj*¦ в *tribhuj*.
-- **EN:** **2.** *bhuj*¦ in *tribhuj*.
+- **RU:** **2.** *bhuj* в *tribhuj*.
+- **EN:** **2.** *bhuj* in *tribhuj*.
   <sub>lexicographic</sub>
 
-**root-gloss)** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+**root-gloss)** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
 
-- **RU:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
-- **EN:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+- **RU:** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+- **EN:** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
   <sub>attested</sub>
 
 **1-enjoy-possess)** — 1〉 geniessen, Etwas zu geniessen haben, sowohl zu Nutzen haben, mit Nutzen besitzen, benutzen, sich dem Genuss von Etwas hingeben, als vom Genuss von Speisen; in der älteren Sprache mit Instr., in der späteren meistentheils mit Acc. ohne Object seine Mahlzeit halten und fressen (von Thieren); die Erde, ein Land, eine Stadt (Acc.) geniessen, den Nutzen von ihr haben, so v. a. beherrschen und sich in den Besitz setzen (von einem Fürsten gesagt); Jmd (Acc.) geniessen, so v. a. sich zu Nutzen machen, ausbeuten und geschlechtlich geniessen. In der späteren Sprache gewöhnlich Med.
@@ -294,8 +294,8 @@
 **preverb-sam3-caus)** — Caus. Jmd (Acc.) speisen mit (Instr.).
 - **EN:** — Caus. to feed someone (Acc.) with (Instr.).
 
-**nominal-intro)** **4.** *bhuj*¦
-- **EN:** **4.** *bhuj*¦
+**nominal-intro)** **4.** *bhuj*
+- **EN:** **4.** *bhuj*
 
 **1-noun-senses)** — 1〉 _f._ das Nutzenbringen, Zugutekommen, Frommen; Genuss, Vortheil, Nutzen; das Haben, die Habe. Dat. *bhje* auch als Infin.
 - **EN:** — 1〉 _f._ the fact of being of benefit, of accruing to one's good, of profiting; enjoyment, advantage, use; having, possession. Dat. *bhje* also as Infin.
@@ -315,25 +315,25 @@
 **2d-traversing-time)** — d〉 durchlaufend, erfüllend (von der Zeit).
 - **EN:** — d〉 passing through, fulfilling (of time).
 
-**with-preverb-intend-enjoy)** **3.** √*bhuj*¦ mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
+**with-preverb-intend-enjoy)** **3.** √*bhuj* mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
 
-- **RU:** **3.** √*bhuj*¦ с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
-- **EN:** **3.** √*bhuj*¦ with *upa* Desid. to intend to enjoy (conjugally) [HEM. PAR. 1,380].
+- **RU:** **3.** √*bhuj* с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
+- **EN:** **3.** √*bhuj* with *upa* Desid. to intend to enjoy (conjugally) [HEM. PAR. 1,380].
   <sub>attested</sub>
 
-**cross-ref)** **3.** √*bhuj*¦ mit *upa* Desid. 5.
+**cross-ref)** **3.** √*bhuj* mit *upa* Desid. 5.
 
-- **RU:** **3.** √*bhuj*¦ с *upa* Desid. 5.
-- **EN:** **3.** √*bhuj*¦ with *upa* Desid. 5.
+- **RU:** **3.** √*bhuj* с *upa* Desid. 5.
+- **EN:** **3.** √*bhuj* with *upa* Desid. 5.
   <sub>attested</sub>
 
-**PW1-root)** **1.** √*bhuj*¦, *bhujati* biegen.
+**PW1-root)** **1.** √*bhuj*, *bhujati* biegen.
 — Pass. *bhujyate* gebeugt —, entmuthigt werden. — *bhugna*
 — 1〉 gebogen, gekrümmt, gefurcht (Brauen), Seitwärts gedrängt, verdreht (Augen).
 — 2〉 gebeugt, entmuthigt.
 — 3〉 Bez. des Saṃdhi von *o* und *au* vor nicht-labialen Vocalen.
 
-- **RU:** **1.** √*bhuj*¦, *bhujati* «гнуть, сгибать».
+- **RU:** **1.** √*bhuj*, *bhujati* «гнуть, сгибать».
 — Pass. *bhujyate* «быть согнутым —, упасть духом». — *bhugna*
 — 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
 — 2〉 «согнутый, поникший, упавший духом».
@@ -417,7 +417,7 @@
 — Caus. «кормить кого-либо» (Acc.) «вместе с» (Instr.).
   <sub>attested</sub>
 
-**PW4-def)** **4.** *bhuj*¦
+**PW4-def)** **4.** *bhuj*
 — 1〉 _f._ das Nutzenbringen, Zugutekommen, Frommen; Genuss, Vortheil, Nutzen; das Haben, die Habe. Dat. *bhje* auch als Infin.
 — 2〉 _Adj._ am Ende eines Comp.
 — a〉 geniessend, essend, theilhaftig, fleischlich geniessend. In Verbindung mit Wörtern, die Erde bedeuten, so v. a. beherrschend, Fürst, König.
@@ -425,7 +425,7 @@
 — c〉 Nutzen bringend, frommend.
 — d〉 durchlaufend, erfüllend (von der Zeit).
 
-- **RU:** **4.** *bhuj*¦
+- **RU:** **4.** *bhuj*
 — 1〉 _f._ «принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество». Dat. *bhje* также как Infin.
 — 2〉 _Adj._ в конце Comp.
 — a〉 «наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся». В сочетании со словами, обозначающими землю, — то есть v. a. «властвующий, государь, царь».

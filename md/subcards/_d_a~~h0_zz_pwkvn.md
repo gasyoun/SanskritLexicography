@@ -3,11 +3,11 @@
 `_d_a~~h0_zz_pwkvn`
 
 
-**1)** **1.** *dhā*¦ mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
-- **EN:** **1.** *dhā*¦ with *vi* Act. to strive after (Dat.) [KIR. 1,3,42].
+**1)** **1.** *dhā* mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
+- **EN:** **1.** *dhā* with *vi* Act. to strive after (Dat.) [KIR. 1,3,42].
 
-**abhi corr.)** **1.** *dhā*¦ mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
-- **EN:** **1.** *dhā*¦ with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
+**abhi corr.)** **1.** *dhā* mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
+- **EN:** **1.** *dhā* with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
 
 **abhyupa 3 del.)** — Mit *abhyupa* 3〉 streiche Med.
 - **EN:** — With *abhyupa* 3〉 delete Med..
@@ -15,8 +15,8 @@
 **ā corr.)** — Mit *abhisam* 1〉 lies (Acc.) st. (Loc.).
 - **EN:** — With *abhisam* 1〉 read (Acc.) st. (Loc.).
 
-**samā rhetoric)** **1.** *dhā*¦ mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
-- **EN:** **1.** *dhā*¦ with *samā*, *samāhita* in the rhetoricians so much as muted, suppressed.
+**samā rhetoric)** **1.** *dhā* mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
+- **EN:** **1.** *dhā* with *samā*, *samāhita* in the rhetoricians so much as muted, suppressed.
 
 **vini 6)** — Mit *vini* 6〉 *vinihitātman* in der angeführten Stelle bedeutet keine Aufmerksamkeit Jmd (Loc.) schenkend.
 - **EN:** — With *vini* 6〉 *vinihitātman* in the cited passage means: paying no attention to someone (Loc.).
@@ -24,8 +24,8 @@
 **other preverbs)** — Mit *sam*, Partic. *saṃhita* und *saṃhita*; s. auch bes.
 - **EN:** — With *sam*, Partic. *saṃhita* and *saṃhita*; s. also bes..
 
-**anu III.5)** **1.** *dhā*¦ mit *abhi* III. 5.
-- **EN:** **1.** *dhā*¦ with *abhi* III. 5.
+**anu III.5)** **1.** *dhā* mit *abhi* III. 5.
+- **EN:** **1.** *dhā* with *abhi* III. 5.
 
 **anuni III)** — Mit *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
 - **EN:** — With *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].

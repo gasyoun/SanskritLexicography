@@ -554,9 +554,9 @@
 **ud4)** — 1〉 hinausführen, — ziehen [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 - **EN:** — 1) to lead out, — to draw out [HARIV. 2,89,85](https://sanskrit-lexicon-scans.github.io/hariv?2).
 
-**1)** **1.** √*vah*¦, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
+**1)** **1.** √*vah*, *vahati*, *˚te* (später nur metrisch), *uhīta* (ausnahmsweise), *uhyate* Pass.
 
-- **RU:** **1.** √*vah*¦, *vahati*, *˚te* (позднее лишь метрически), *uhīta* (в виде исключения), *uhyate* Pass.
+- **RU:** **1.** √*vah*, *vahati*, *˚te* (позднее лишь метрически), *uhīta* (в виде исключения), *uhyate* Pass.
   <sub>attested</sub>
 
 **pra_intro)** — Intens.

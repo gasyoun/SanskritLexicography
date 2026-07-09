@@ -3,10 +3,10 @@
 `yat~~h0_zz_pw`
 
 
-**1)** √*yat*¦, *yatati*, *˚te*
+**1)** √*yat*, *yatati*, *˚te*
 — 1〉 Act. in Ordnung (Reihe und Glied) bringen, anschliessen, aneinander fügen, verbinden.
 
-- **RU:** √*yat*¦, *yatati*, *˚te*
+- **RU:** √*yat*, *yatati*, *˚te*
 — 1〉 Act. приводить в порядок (строй и ряд), присоединять, прилагать одно к другому, связывать.
 - **EN:** — 1) Act. to bring into order (rank and file), to attach, join together, connect.
   <sub>attested</sub>
@@ -398,7 +398,7 @@
 - **EN:** — 2) *˚saṃyatta* completely prepared, — equipped.
   <sub>attested</sub>
 
-**pw-etym)** √*yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
+**pw-etym)** √*yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 - **EN:** √*yat*, Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 
 **pw-3)** — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
@@ -464,9 +464,9 @@
 - **RU:** — С *pratisam*
   <sub>attested</sub>
 
-**PW_root2_intro)** √*yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
+**PW_root2_intro)** √*yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
 
-- **RU:** √*yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676].
+- **RU:** √*yat* Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676].
 — С *anvā* V. принимать участие в чём-либо [ŚĀṄKH. BR. 23,5].
   <sub>attested</sub>

@@ -3,9 +3,9 @@
 `d_a~~h0_zz_pw00`
 
 
-**Präsensstämme)** **1.** √*dā*¦, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
+**Präsensstämme)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
 
-- **RU:** **1.** √*dā*¦, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
+- **RU:** **1.** √*dā*, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
   <sub>attested</sub>
 
 **1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.

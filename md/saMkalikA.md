@@ -7,10 +7,10 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 `sa_mkalik_a`
 
 
-**1)** *saṃkalikā*¦ _f._
+**1)** *saṃkalikā* _f._
 [BURNOUF, Intr. 258, N. 3.]
 
-- **RU:** *saṃkalikā*¦ _f._
+- **RU:** *saṃkalikā* _f._
 [BURNOUF, Intr. 258, N. 3.]
   <sub>lexicographic</sub>
 

@@ -7,7 +7,7 @@ _PWG article — 90 sub-card(s), 537 sense(s) · RU 266/537 · EN 501/537_
 `car~~h0_00_pwg00`
 
 
-*car*¦, *carati* (ep. auch med.)
+*car*, *carati* (ep. auch med.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
@@ -21,7 +21,7 @@ _PWG article — 90 sub-card(s), 537 sense(s) · RU 266/537 · EN 501/537_
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
 [BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (s. auch bes.), *cīrṇa* (s. auch bes.).
 
-- **RU:** *car*¦, *carati* (ep. auch med.)
+- **RU:** *car*, *carati* (ep. auch med.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
@@ -4354,14 +4354,14 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 `car~~h1_00_pwg00`
 
 
-**3)** *car*¦
+**3)** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
 
-- **RU:** *car*¦
+- **RU:** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
-- **EN:** *car*¦
+- **EN:** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
 — a) *patnīsaṃyājāvabhṛthyaiścaritvā* so v. a. "performing these"
@@ -4916,14 +4916,14 @@ vgl. u. 2. *mārga* 2) f).
 `car~~h2_00_pwg00`
 
 
-**5)** *car*¦
+**5)** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* fressen
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
 
-- **RU:** *car*¦
+- **RU:** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* пожирать
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
-- **EN:** *car*¦
+- **EN:** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* "to graze, to feed (of animals)"
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
   <sub>attested</sub>
@@ -4984,7 +4984,7 @@ vgl. u. 2. *mārga* 2) f).
 `car~~h0_zz_pw00`
 
 
-**pw00-act)** √*car*¦, *carati* (selten Med.), Partic. *carita* und *cīrṇa*.
+**pw00-act)** √*car*, *carati* (selten Med.), Partic. *carita* und *cīrṇa*.
 - **EN:** *car*, *carati* (rarely Med.), Partic. *carita* and *cīrṇa*.
 
 **pw00-1)** — 1〉 sich regen, — bewegen, umherstreichen, fahren, wandern, sich verbreiten (von Belebtem und Unbelebtem).
@@ -5856,22 +5856,22 @@ vgl. u. 2. *mārga* 2) f).
 `car~~h0_zz_pw03`
 
 
-**1)** √*car*¦ mit *anupari* in *˚cāram*.
+**1)** √*car* mit *anupari* in *˚cāram*.
 
-- **RU:** √*car*¦ с *anupari* в *˚cāram*.
-- **EN:** √*car*¦ with *anupari* in *˚cāram*.
+- **RU:** √*car* с *anupari* в *˚cāram*.
+- **EN:** √*car* with *anupari* in *˚cāram*.
   <sub>attested</sub>
 
-**2)** √*car*¦ mit *anvabhyava* heranschleichen [MAITR. S. 1,10,20 (160,17)].
+**2)** √*car* mit *anvabhyava* heranschleichen [MAITR. S. 1,10,20 (160,17)].
 
-- **RU:** √*car*¦ с *anvabhyava* подкрадываться, украдкой приближаться [MAITR. S. 1,10,20 (160,17)].
-- **EN:** √*car*¦ with *anvabhyava* to creep up to, sneak toward [MAITR. S. 1,10,20 (160,17)].
+- **RU:** √*car* с *anvabhyava* подкрадываться, украдкой приближаться [MAITR. S. 1,10,20 (160,17)].
+- **EN:** √*car* with *anvabhyava* to creep up to, sneak toward [MAITR. S. 1,10,20 (160,17)].
   <sub>attested</sub>
 
-**3)** √*car*¦ mit *saha* gehen mit, so v. a. übereinstimmen mit, ähnlich sein [BĀLAR. 130,19].
+**3)** √*car* mit *saha* gehen mit, so v. a. übereinstimmen mit, ähnlich sein [BĀLAR. 130,19].
 
-- **RU:** √*car*¦ с *saha* идти вместе с, т.е. v. a. сообразовываться с, быть сходным с [BĀLAR. 130,19].
-- **EN:** √*car*¦ with *saha* to go with, hence v. a. to agree with, be similar to [BĀLAR. 130,19].
+- **RU:** √*car* с *saha* идти вместе с, т.е. v. a. сообразовываться с, быть сходным с [BĀLAR. 130,19].
+- **EN:** √*car* with *saha* to go with, hence v. a. to agree with, be similar to [BĀLAR. 130,19].
 — With *anvabhyava* 5.
 — With *upa* II. **˚upacarita* pleasantly affected —, feeling drawn by [MAHĀVY. 10,29].
 — With *pari* II. *˚cīrṇa* finely served, attended [DIVYĀVAD. 421,20]. — Caus. = Simpl. with *pari* 2) [MAHĀVY. 245,943]. [DIVYĀVAD. 1,6].
@@ -5903,10 +5903,10 @@ vgl. u. 2. *mārga* 2) f).
 `car~~h0_zz_sch`
 
 
-**1)** car¦ mit saha gehen mit, so v.a. über einstimmen mit, ähnlich sein, [Bālar.] 
+**1)** car mit saha gehen mit, so v.a. über einstimmen mit, ähnlich sein, [Bālar.] 
 
  130,19. — Mit anvabhyava heran schleichen, [Maitr. S. 1,10,20] (160,17). — Mit upa, *upacarita angenehm berührt -x-, sich angezogen fühlend durch, [Mahāvy. 10,29.] — Mit pari, ˚cīrṇa fein bedient, [Divyāvad. 421,20.] — [Kaus.] = Simpl. mit pari 2. [Mahāvy. 245,943]; [Divyāvad. 1,6.] — Mit anupari in ˚cāram. — Mit pratyud, ˚ponder, [Harṣac. 265,13.] — Mit pra [Kaus.] ˚deceive, dupe, [Pūrṇabh. 80,22]; mit ˚anupra act in obedience to, [Harṣac. 193,17.] {part=,seq=13307,type=,n=15}
-- **EN:** car¦ with saha to go with, i.e. to agree with, be similar to, [Bālar.]
+- **EN:** car with saha to go with, i.e. to agree with, be similar to, [Bālar.]
 
 130,19. — With anvabhyava to creep up to, sneak toward, [Maitr. S. 1,10,20] (160,17). — With upa, *upacarita pleasantly affected —, feeling drawn by, [Mahāvy. 10,29.] — With pari, ˚cīrṇa finely served, attended, [Divyāvad. 421,20.] — [Kaus.] = Simpl. with pari 2. [Mahāvy. 245,943]; [Divyāvad. 1,6.] — With anupari in ˚cāram. — With pratyud, ˚ponder, [Harṣac. 265,13.] — With pra [Kaus.] ˚deceive, dupe, [Pūrṇabh. 80,22]; with ˚anupra act in obedience to, [Harṣac. 193,17.] {part=,seq=13307,type=,n=15}
 
@@ -5915,11 +5915,11 @@ vgl. u. 2. *mārga* 2) f).
 `car~~h0_zz_pwkvn`
 
 
-**1)** *car*¦ mit *anupari* in *˚cāram*.
-- **EN:** *car*¦ with *anupari* in *˚cāram*.
+**1)** *car* mit *anupari* in *˚cāram*.
+- **EN:** *car* with *anupari* in *˚cāram*.
 
-**2)** *car*¦ mit *anvabhyava* heranschleichen [MAITR. S. 1,10,20 (160,17)].
-- **EN:** *car*¦ with *anvabhyava* to creep up to, sneak toward [MAITR. S. 1,10,20 (160,17)].
+**2)** *car* mit *anvabhyava* heranschleichen [MAITR. S. 1,10,20 (160,17)].
+- **EN:** *car* with *anvabhyava* to creep up to, sneak toward [MAITR. S. 1,10,20 (160,17)].
 
-**3)** *car*¦ mit *saha* gehen mit, so v. a. übereinstimmen mit, ähnlich sein [BĀLAR. 130,19]. — Mit *anvabhyava* 5. — Mit *upa* II. **˚upacarita* angenehm berührt —, sich angezogen fühlend durch [MAHĀVY. 10,29]. — Mit *pari* II. *˚cīrṇa* fein bedient [DIVYĀVAD. 421,20]. — Caus. = Simpl. mit *pari* 2〉 [MAHĀVY. 245,943]. [DIVYĀVAD. 1,6]. — Mit *anupari* 2.
-- **EN:** *car*¦ with *saha* to go with, hence v. a. to agree with, be similar to [BĀLAR. 130,19]. — With *anvabhyava* 5. — With *upa* II. **˚upacarita* pleasantly affected —, feeling drawn by [MAHĀVY. 10,29]. — With *pari* II. *˚cīrṇa* finely served, attended [DIVYĀVAD. 421,20]. — Caus. = Simpl. with *pari* 2) [MAHĀVY. 245,943]. [DIVYĀVAD. 1,6]. — With *anupari* 2.
+**3)** *car* mit *saha* gehen mit, so v. a. übereinstimmen mit, ähnlich sein [BĀLAR. 130,19]. — Mit *anvabhyava* 5. — Mit *upa* II. **˚upacarita* angenehm berührt —, sich angezogen fühlend durch [MAHĀVY. 10,29]. — Mit *pari* II. *˚cīrṇa* fein bedient [DIVYĀVAD. 421,20]. — Caus. = Simpl. mit *pari* 2〉 [MAHĀVY. 245,943]. [DIVYĀVAD. 1,6]. — Mit *anupari* 2.
+- **EN:** *car* with *saha* to go with, hence v. a. to agree with, be similar to [BĀLAR. 130,19]. — With *anvabhyava* 5. — With *upa* II. **˚upacarita* pleasantly affected —, feeling drawn by [MAHĀVY. 10,29]. — With *pari* II. *˚cīrṇa* finely served, attended [DIVYĀVAD. 421,20]. — Caus. = Simpl. with *pari* 2) [MAHĀVY. 245,943]. [DIVYĀVAD. 1,6]. — With *anupari* 2.

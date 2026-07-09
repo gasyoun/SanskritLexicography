@@ -3,9 +3,9 @@
 `br_u~~h0_zz_pw`
 
 
-**intro)** √*brū*¦, *bravīti, brūte, brūmi* (episch), *brūhi* und *bravīhi, ābravīt, ābrabam* und *ābruvam* Von allgemeinen Formen nur das verdächtige *brūyāsta*.
+**intro)** √*brū*, *bravīti, brūte, brūmi* (episch), *brūhi* und *bravīhi, ābravīt, ābrabam* und *ābruvam* Von allgemeinen Formen nur das verdächtige *brūyāsta*.
 
-- **RU:** √*brū*¦, *bravīti, brūte, brūmi* (эпическое), *brūhi* и *bravīhi, ābravīt, ābrabam* и *ābruvam* Из общих форм только сомнительное *brūyāsta*.
+- **RU:** √*brū*, *bravīti, brūte, brūmi* (эпическое), *brūhi* и *bravīhi, ābravīt, ābrabam* и *ābruvam* Из общих форм только сомнительное *brūyāsta*.
 - **EN:** √*brū*, *bravīti, brūte, brūmi* (epic), *brūhi* and *bravīhi, ābravīt, ābrabam* and *ābruvam*. Of general forms only the doubtful *brūyāsta*.
   <sub>lexicographic</sub>
 

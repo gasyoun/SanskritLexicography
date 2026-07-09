@@ -3,12 +3,12 @@
 `_bid~~h0_zz_pw01`
 
 
-**2.** *bhid*¦
+**2.** *bhid*
 
-- **RU:** **2.** *bhid*¦
+- **RU:** **2.** *bhid*
   <sub>attested</sub>
 
-**0)** **2.** *bhid*¦
+**0)** **2.** *bhid*
 — 1〉 _Adj._ am Ende eines Comp.
 - **EN:** **2.** *bhid* — 1) _Adj._ at the end of a Comp.
 
@@ -48,23 +48,23 @@
 - **EN:** — c) kind, species.
   <sub>attested</sub>
 
-**PW-1)** **1.** √*bhid*¦ 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
+**PW-1)** **1.** √*bhid* 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
 
-- **RU:** 1. √*bhid*¦ 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
+- **RU:** 1. √*bhid* 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
 - **EN:** ** 1.** √*bhid* — 7) with *antar* to hatch treachery/betrayal [DAŚAK. 19,8].
   <sub>attested</sub>
 
-**PW-2)** **2.** √*bhid*¦ 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
+**PW-2)** **2.** √*bhid* 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
 
-- **RU:** 2. √*bhid*¦ 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] согласно [AUFRECHT].
+- **RU:** 2. √*bhid* 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] согласно [AUFRECHT].
 - **EN:** ** 2.** √*bhid* — 2) d) distinction, difference [VĀGBHAṬĀLAṂKĀRA 1,20] according to [AUFRECHT].
   <sub>attested</sub>
 
-**PW-3)** **1.** √*bhid*¦ mit *antar* IV. 5.
+**PW-3)** **1.** √*bhid* mit *antar* IV. 5.
 — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23].
 — Mit *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 
-- **RU:** 1. √*bhid*¦ с *antar* IV. 5.
+- **RU:** 1. √*bhid* с *antar* IV. 5.
 С *ava* IV. *˚bhinna* раненый [JĀTAKAM. 24,23].
 С *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 - **EN:** ** 1.** √*bhid* — with *antar* IV. 5.
@@ -72,9 +72,9 @@
  — With *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
   <sub>attested</sub>
 
-**PW-4)** **2.** √*bhid*¦ IV. 5.
+**PW-4)** **2.** √*bhid* IV. 5.
 
-- **RU:** 2. √*bhid*¦ IV. 5.
+- **RU:** 2. √*bhid* IV. 5.
 - **EN:** ** 2.** √*bhid* — IV. 5.
   <sub>attested</sub>
 

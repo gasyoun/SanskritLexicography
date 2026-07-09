@@ -7,7 +7,7 @@ _PWG article — 21 sub-card(s), 144 sense(s) · RU 129/144 · EN 102/144_
 `mad~~h0_00_pwg00`
 
 
-1. *mad*¦, *mand, madati, mademahi*
+1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* (
 [P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; später (schon in den
 [BRĀHMAṆA]) *mādyati*
@@ -23,7 +23,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [3,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) *stutimodasvapnagatiṣu*
 [DHĀTUP. 2,12.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2) nach Andern auch *kāntau* und *jāḍye* .
 
-- **RU:** 1. *mad*¦, *mand, madati, mademahi*
+- **RU:** 1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* ([P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; позже (уже в [BRĀHMAṆA]) *mādyati*
 [DHĀTUP. 26,99](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*harṣe*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) *matsi, matsva, matsat, matsati* ([ṚV. 8,83,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.083.html#rv08.083.07)), *matsatha, amatsus, amatsata*
@@ -33,7 +33,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [NAIGH. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,16) = *arcati*
 [3,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) *stutimodasvapnagatiṣu*
 [DHĀTUP. 2,12.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2) по другим также *kāntau* и *jāḍye*.
-- **EN:** 1. *mad*¦, *mand, madati, mademahi*
+- **EN:** 1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* ([P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; later (already in the [BRĀHMAṆA]) *mādyati*
 [DHĀTUP. 26,99](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*harṣe*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) *matsi, matsva, matsat, matsati* ([ṚV. 8,83,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.083.html#rv08.083.07)), *matsatha, amatsus, amatsata*
@@ -1231,16 +1231,16 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 `mad~~h1_00_pwg00`
 
 
-**main)** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen: *mo ṣu pra sedhīrmuhurinmamandhi*
+**main)** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)
 
-- **RU:** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; медлить, выжидать, стоять на месте: *mo ṣu pra sedhīrmuhurinmamandhi*
+- **RU:** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; медлить, выжидать, стоять на месте: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)
-- **EN:** 2. *mad*¦, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; to delay, to wait, to stand still: *mo ṣu pra sedhīrmuhurinmamandhi*
+- **EN:** 2. *mad*, *mand, madati* (s. *upani), mamattana, mamandhi, amaman*; to delay, to wait, to stand still: *mo ṣu pra sedhīrmuhurinmamandhi*
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) *adyedu prā- ṇīdamamannimāhā*
 [32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *yadi śrāto juhotana yadyaśrāto mamattana*
 [179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.179.html#rv10.179.01)
@@ -1285,16 +1285,16 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 `mad~~h2_00_pwg00`
 
 
-**main-intox)** 1. *mad*¦ mit *abhi*
+**main-intox)** 1. *mad* mit *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* berauscht
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
 
-- **RU:** 1. *mad*¦ с *abhi*
+- **RU:** 1. *mad* с *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьянённый
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
-- **EN:** 1. *mad*¦ with *abhi*
+- **EN:** 1. *mad* with *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* intoxicated
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
@@ -1382,14 +1382,14 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 `mad~~h3_00_pwg00`
 
 
-**1)** 1. *mad*¦
+**1)** 1. *mad*
  1) *mādyati yastena (jñānena)* wer sich berauschen lässt durch
 [Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454)
 
-- **RU:** 1. *mad*¦
+- **RU:** 1. *mad*
  1) *mādyati yastena (jñānena)* тот, кто опьяняется
 [Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454)
-- **EN:** 1. *mad*¦
+- **EN:** 1. *mad*
  1) *mādyati yastena (jñānena)* one who lets himself be intoxicated by
 [Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454)
   <sub>attested</sub>
@@ -1404,7 +1404,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 - **RU:** — 1〉 intrans. Acc., редко Med.
 — a〉 радоваться, быть радостным, весёлым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чём-л., угощаться чем-л. или в чём-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном Bed.) от чего-л. (Instr.). *mandamāna* радостно.
-- **EN:** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+- **EN:** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
 — 1〉 intrans. Acc., rarely Med.
 — a〉 to rejoice, be glad, be cheerful, exult, delight in, revel in, be at ease in, fare well in or on (Instr., Gen., Loc., rarely Acc.), to become intoxicated with something, to become intoxicated (also in the figurative Bed.) by (Instr.). *mandamāna* joyful.
   <sub>attested</sub>
@@ -1659,30 +1659,30 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 - **EN:** — 3〉 Med. to be inspired or drunk.
   <sub>attested</sub>
 
-**1)** **2.** √*mad* (stark √*mād*)¦ in *sadhamad*.
+**1)** **2.** √*mad* (stark √*mād*) in *sadhamad*.
 
-- **RU:** **2.** √*mad* (сильная форма √*mād*)¦ в *sadhamad*.
-- **EN:** **2.** √*mad* (strong stem √*mād*)¦ in *sadhamad*.
+- **RU:** **2.** √*mad* (сильная форма √*mād*) в *sadhamad*.
+- **EN:** **2.** √*mad* (strong stem √*mād*) in *sadhamad*.
   <sub>attested</sub>
 
-**1)** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
+**1)** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
 — Mit *ni* in *nimada*.
 — *Caus. *nimādayati* deutlich aussprechen.
 — Mit *upani* zum Stillstehen bringen, zurückhalten.
-- **EN:** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; to hesitate, wait, stand still.
+- **EN:** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; to hesitate, wait, stand still.
 — With *ni* in *nimada*.
 — *Caus. *nimādayati* to pronounce distinctly.
 — With *upani* to bring to a standstill, to hold back.
 
-**1)** **4.** √*mad*¦ mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+**1)** **4.** √*mad* mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
 
-- **RU:** **4.** √*mad*¦ с *nis* Caus. (*nirmādayati*) омывать, смывать [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
-- **EN:** **4.** √*mad*¦ with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+- **RU:** **4.** √*mad* с *nis* Caus. (*nirmādayati*) омывать, смывать [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+- **EN:** **4.** √*mad* with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
   <sub>attested</sub>
 
-**root-paradigm)** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+**root-paradigm)** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
 
-- **RU:** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+- **RU:** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
   <sub>attested</sub>
 
 **3-header)** — 3〉 *matta*
@@ -1805,9 +1805,9 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 - **RU:** — 1〉 доставлять наслаждение, веселить.
   <sub>attested</sub>
 
-**root-paradigm)** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
+**root-paradigm)** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
 
-- **RU:** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; медлить, выжидать, стоять неподвижно.
+- **RU:** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; медлить, выжидать, стоять неподвижно.
   <sub>attested</sub>
 
 **nis-root)** — Mit *ni* in *nimada*.
@@ -1830,18 +1830,18 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 `mad~~h0_zz_sch`
 
 
-**ud)** 1. mad¦ mit ud, unmādita trunken gemacht = ˚zum Aufblühen gebracht, [S I,35,2.] — Mit ˚anupra (nach einem gegebenen Beispiele) gleichfalls lässig sein, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
-- **EN:** 1. mad¦ with ud, unmādita made drunk = caused to blossom, [S I,35,2.] — With ˚anupra (following a given example) likewise to be negligent, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
+**ud)** 1. mad mit ud, unmādita trunken gemacht = ˚zum Aufblühen gebracht, [S I,35,2.] — Mit ˚anupra (nach einem gegebenen Beispiele) gleichfalls lässig sein, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
+- **EN:** 1. mad with ud, unmādita made drunk = caused to blossom, [S I,35,2.] — With ˚anupra (following a given example) likewise to be negligent, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
 
-**nis)** 4. mad¦ mit nis [Kaus.] (nirmādayati) abwaschen, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
+**nis)** 4. mad mit nis [Kaus.] (nirmādayati) abwaschen, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
 
-- **RU:** 4. mad¦ с nis [Kaus.] (nirmādayati) — смывать, отмывать, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
-- **EN:** 4. mad¦ with nis [Kaus.] (nirmādayati) to wash off, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
+- **RU:** 4. mad с nis [Kaus.] (nirmādayati) — смывать, отмывать, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
+- **EN:** 4. mad with nis [Kaus.] (nirmādayati) to wash off, [Mahāvy. 263,75]; [Divyāvad. 53,18; 185,21; 343,1.] {part=,seq=21279,type=,n=3}
   <sub>attested</sub>
 
-**ud-unmadita)** 1. mad¦ mit ud, unmādita trunken gemacht = ˚zum Aufblühen gebracht, [S I,35,2.]
+**ud-unmadita)** 1. mad mit ud, unmādita trunken gemacht = ˚zum Aufblühen gebracht, [S I,35,2.]
 
-- **RU:** 1. mad¦ с ud, unmādita — приведённый в опьянение = доведённый до расцвета, [S I,35,2.]
+- **RU:** 1. mad с ud, unmādita — приведённый в опьянение = доведённый до расцвета, [S I,35,2.]
   <sub>attested</sub>
 
 **anupra-lassig)** Mit ˚anupra (nach einem gegebenen Beispiele) gleichfalls lässig sein, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
@@ -1854,8 +1854,8 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 `mad~~h0_zz_pwkvn`
 
 
-**1)** **4.** *mad*¦ mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+**1)** **4.** *mad* mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
 
 - **RU:** 4. *mad* с *nis* Caus. (*nirmādayati*) смывать [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
-- **EN:** **4.** *mad*¦ with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+- **EN:** **4.** *mad* with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
   <sub>attested</sub>

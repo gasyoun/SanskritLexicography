@@ -7,15 +7,15 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `nirb_ija`
 
 
-**PWG-1)** *nirbīja*¦ (die richtigere Schreibart) s. *nirvīja* .
+**PWG-1)** *nirbīja* (die richtigere Schreibart) s. *nirvīja* .
 
-- **RU:** *nirbīja*¦ (более правильное написание) s. *nirvīja* .
+- **RU:** *nirbīja* (более правильное написание) s. *nirvīja* .
   <sub>lexicographic</sub>
 
-**PW-1)** *nirbīja*¦
+**PW-1)** *nirbīja*
 — 1〉 _Adj._ samenlos, leer, inhaltslos. Nom. abstr., *˚tva* _n._
 
-- **RU:** *nirbīja*¦
+- **RU:** *nirbīja*
 — 1〉 _Adj._ без семени, пустой, лишённый содержания. Nom. abstr., *˚tva* _n._
   <sub>attested</sub>
 

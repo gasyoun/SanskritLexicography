@@ -3,12 +3,12 @@
 `n_i~~h6_00_pwg00`
 
 
-**1)** 1. *nī*¦ mit *abhi*, partic. *˚nīta* erreichbar und *anabhinīta* unerreichbar
+**1)** 1. *nī* mit *abhi*, partic. *˚nīta* erreichbar und *anabhinīta* unerreichbar
 [PAT. a. a. O. 3,95,a.]
 
-- **RU:** 1. *nī*¦ с *abhi*, partic. *˚nīta* достижимый и *anabhinīta* недостижимый
+- **RU:** 1. *nī* с *abhi*, partic. *˚nīta* достижимый и *anabhinīta* недостижимый
 [PAT. a. a. O. 3,95,a.]
-- **EN:** 1. *nī*¦ with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
+- **EN:** 1. *nī* with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
 [PAT. a. a. O. 3,95,a.]
 — *pari* to abduct, carry off
 [ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)

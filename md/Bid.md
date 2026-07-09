@@ -7,7 +7,7 @@ _PWG article — 35 sub-card(s), 215 sense(s) · RU 208/215 · EN 189/215_
 `_bid~~h0_00_pwg00`
 
 
-*bhid*¦, *bhinatti, bhintte*
+*bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*,2. p. *abhinas* und *abhinad* (
 Sch. zu [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* und *abhedam; bibheda, bibhide, bibheditha* (
@@ -22,7 +22,7 @@ aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) Sch. zu
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42](https://ashtadhyayi.com/sutraani/8/2/42)).
 
-- **RU:** *bhid*¦, *bhinatti, bhintte*
+- **RU:** *bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. p. *abhinas* и *abhinad* (
 Sch. к [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* и *abhedam; bibheda, bibhide, bibheditha* (
@@ -36,7 +36,7 @@ Sch. к [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [3,1,57](https://a
 ([P. 1,2,11](https://ashtadhyayi.com/sutraani/1/2/11), Sch.);
 inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42](https://ashtadhyayi.com/sutraani/8/2/42)).
-- **EN:** *bhid*¦, *bhinatti, bhintte*
+- **EN:** *bhid*, *bhinatti, bhintte*
 [DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. p. *abhinas* and *abhinad* (
 Sch. to [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
 [ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* and *abhedam; bibheda, bibhide, bibheditha* (
@@ -1971,7 +1971,7 @@ to join someone (acc.): *tataśca bhagavānasmānupekṣate na saṃbhinatti (sa
 `_bid~~h1_00_pwg00`
 
 
-**1)** 2. *bhid*¦ (= 1. *bhid)*
+**1)** 2. *bhid* (= 1. *bhid)*
  1) _adj._ am Ende eines comp. spaltend u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
@@ -1981,7 +1981,7 @@ Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
 [RAGH. 1,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,61) *agha˚* verscheuchend
 [BHĀG. P. 3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
 
-- **RU:** 2. *bhid*¦ (= 1. *bhid)*
+- **RU:** 2. *bhid* (= 1. *bhid)*
  1) _adj._ в конце comp. раскалывающий u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* разбивающий, сокрушающий
@@ -1990,7 +1990,7 @@ Sch. *iṅgudīphala˚ (upala)* разбивающий, сокрушающий
 [PAÑCAR. 4,3,108.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,108) [H. 10.](https://sanskrit-lexicon-scans.github.io/abch2/app1?10) *dṛṣṭalakṣya˚* поражающий
 [RAGH. 1,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,61) *agha˚* рассеивающий, отгоняющий
 [BHĀG. P. 3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
-- **EN:** 2. *bhid*¦ (= 1. *bhid)*
+- **EN:** 2. *bhid* (= 1. *bhid)*
  1) _adj._ at the end of a comp. cleaving u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* breaking, crushing
@@ -2045,12 +2045,12 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 `_bid~~h2_00_pwg00`
 
 
-**1)** 1. *bhid*¦ mit *abhi* pass. zerspringen, zerbrechen: *yantrasyevābhibhidyataḥ*
+**1)** 1. *bhid* mit *abhi* pass. zerspringen, zerbrechen: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
 
 - **RU:** 1. *bhid* mit *abhi* pass. — трескаться, разламываться: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
-- **EN:** 1. *bhid*¦ with *abhi* pass. to burst, break asunder: *yantrasyevābhibhidyataḥ*
+- **EN:** 1. *bhid* with *abhi* pass. to burst, break asunder: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
   <sub>attested</sub>
 
@@ -2101,12 +2101,12 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 `_bid~~h3_00_pwg00`
 
 
-**1)** 1. *bhid*¦ mit *parā*
+**1)** 1. *bhid* mit *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
 
 - **RU:** 1. *bhid* mit *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
-- **EN:** 1. *bhid*¦ with *parā*
+- **EN:** 1. *bhid* with *parā*
 [ŚAT. BR. 5,3,5,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,29)
   <sub>attested</sub>
 
@@ -2139,7 +2139,7 @@ Sch. *iṅgudīphala˚ (upala)* breaking, crushing
 **1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
 - **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
-- **EN:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; exceptionally also Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+- **EN:** **1.** √*bhid*, *bhadati*, *bhinatti*; exceptionally also Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
 — 1) to split, break into, knock a hole into something, pierce through, break through, burst asunder, tear open, slit open. *setum*, *maryādām*, *sthitim*, *velām* to break through a dam, barriers, the bank. A planet or comet 'breaks through' a star when it passes through it. Pass. *bhidyate*, *˚ti* (metrically, but also with [BAUDH.] in the [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) erroneous for *bhidyatām*) also in intransit. Bed. to burst. *bhinna* smashed, broken u. s. w.
   <sub>attested</sub>
 
@@ -2695,9 +2695,9 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 - **EN:** — With *upasam* dass.
   <sub>attested</sub>
 
-**root-header)** **1.** √*bhid*¦, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+**root-header)** **1.** √*bhid*, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
 
-- **RU:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+- **RU:** **1.** √*bhid*, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
   <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*
@@ -2765,12 +2765,12 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 `_bid~~h0_zz_pw01`
 
 
-**2.** *bhid*¦
+**2.** *bhid*
 
-- **RU:** **2.** *bhid*¦
+- **RU:** **2.** *bhid*
   <sub>attested</sub>
 
-**0)** **2.** *bhid*¦
+**0)** **2.** *bhid*
 — 1〉 _Adj._ am Ende eines Comp.
 - **EN:** **2.** *bhid* — 1) _Adj._ at the end of a Comp.
 
@@ -2810,23 +2810,23 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 - **EN:** — c) kind, species.
   <sub>attested</sub>
 
-**PW-1)** **1.** √*bhid*¦ 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
+**PW-1)** **1.** √*bhid* 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
 
-- **RU:** 1. √*bhid*¦ 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
+- **RU:** 1. √*bhid* 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
 - **EN:** ** 1.** √*bhid* — 7) with *antar* to hatch treachery/betrayal [DAŚAK. 19,8].
   <sub>attested</sub>
 
-**PW-2)** **2.** √*bhid*¦ 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
+**PW-2)** **2.** √*bhid* 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
 
-- **RU:** 2. √*bhid*¦ 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] согласно [AUFRECHT].
+- **RU:** 2. √*bhid* 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] согласно [AUFRECHT].
 - **EN:** ** 2.** √*bhid* — 2) d) distinction, difference [VĀGBHAṬĀLAṂKĀRA 1,20] according to [AUFRECHT].
   <sub>attested</sub>
 
-**PW-3)** **1.** √*bhid*¦ mit *antar* IV. 5.
+**PW-3)** **1.** √*bhid* mit *antar* IV. 5.
 — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23].
 — Mit *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 
-- **RU:** 1. √*bhid*¦ с *antar* IV. 5.
+- **RU:** 1. √*bhid* с *antar* IV. 5.
 С *ava* IV. *˚bhinna* раненый [JĀTAKAM. 24,23].
 С *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 - **EN:** ** 1.** √*bhid* — with *antar* IV. 5.
@@ -2834,9 +2834,9 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
  — With *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
   <sub>attested</sub>
 
-**PW-4)** **2.** √*bhid*¦ IV. 5.
+**PW-4)** **2.** √*bhid* IV. 5.
 
-- **RU:** 2. √*bhid*¦ IV. 5.
+- **RU:** 2. √*bhid* IV. 5.
 - **EN:** ** 2.** √*bhid* — IV. 5.
   <sub>attested</sub>
 
@@ -2850,13 +2850,13 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 `_bid~~h0_zz_sch`
 
 
-**sch_main)** 1. bhid¦ 7. mit antar Verrat schmieden, [Daśak. 19,8.] — Mit ava, ˚bhinna verwundet, [Jātakam. 24,23.] — Mit ˚samud, to burst forth, [Harṣac. 153,15; 167,9.] — Mit upapra, vgl. [Pischel, Ved. Stud. I,72.] — Mit ˚vini, vinibhinna [S II,267,18] Druckfehler für vinirbhinna.
-- **EN:** 1. bhid¦ 7. with antar to plot treason, [Daśak. 19,8.] — With ava, ˚bhinna wounded, [Jātakam. 24,23.] — With ˚samud, to burst forth, [Harṣac. 153,15; 167,9.] — With upapra, cf. [Pischel, Ved. Stud. I,72.] — With ˚vini, vinibhinna [S II,267,18] misprint for vinirbhinna.
+**sch_main)** 1. bhid 7. mit antar Verrat schmieden, [Daśak. 19,8.] — Mit ava, ˚bhinna verwundet, [Jātakam. 24,23.] — Mit ˚samud, to burst forth, [Harṣac. 153,15; 167,9.] — Mit upapra, vgl. [Pischel, Ved. Stud. I,72.] — Mit ˚vini, vinibhinna [S II,267,18] Druckfehler für vinirbhinna.
+- **EN:** 1. bhid 7. with antar to plot treason, [Daśak. 19,8.] — With ava, ˚bhinna wounded, [Jātakam. 24,23.] — With ˚samud, to burst forth, [Harṣac. 153,15; 167,9.] — With upapra, cf. [Pischel, Ved. Stud. I,72.] — With ˚vini, vinibhinna [S II,267,18] misprint for vinirbhinna.
 
-**sch_main2)** 2. bhid¦ 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht. — ˚Vernichtung, [Sūryaś. 14]d.
-- **EN:** 2. bhid¦ 2. d) difference, Vāgbhaṭālaṃkāra 1,20 after Aufrecht. — ˚annihilation, [Sūryaś. 14]d.
+**sch_main2)** 2. bhid 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht. — ˚Vernichtung, [Sūryaś. 14]d.
+- **EN:** 2. bhid 2. d) difference, Vāgbhaṭālaṃkāra 1,20 after Aufrecht. — ˚annihilation, [Sūryaś. 14]d.
 
-**sch-1-antar)** 1. bhid¦ 7. mit antar Verrat schmieden, [Daśak. 19,8.]
+**sch-1-antar)** 1. bhid 7. mit antar Verrat schmieden, [Daśak. 19,8.]
 
 - **RU:** 1. bhid 7. mit antar — замышлять измену, [Daśak. 19,8.]
   <sub>attested</sub>
@@ -2881,7 +2881,7 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 - **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вместо vinirbhinna.
   <sub>attested</sub>
 
-**sch-2-unterschied)** 2. bhid¦ 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht.
+**sch-2-unterschied)** 2. bhid 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht.
 
 - **RU:** 2. bhid 2. d) различие, Vāgbhaṭālaṃkāra 1,20 по Aufrecht.
   <sub>attested</sub>
@@ -2896,26 +2896,26 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 `_bid~~h0_zz_pwkvn`
 
 
-**7_antar)** **1.** *bhid*¦ 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
+**7_antar)** **1.** *bhid* 7〉 mit *antar* Verrath schmieden [DAŚAK. 19,8].
 
 - **RU:** 1. *bhid*: 7〉 с *antar* замышлять предательство [DAŚAK. 19,8].
-- **EN:** **1.** *bhid*¦ 7〉 with *antar* to plot treason [DAŚAK. 19,8].
+- **EN:** **1.** *bhid* 7〉 with *antar* to plot treason [DAŚAK. 19,8].
   <sub>attested</sub>
 
-**2d)** **2.** *bhid*¦ 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
+**2d)** **2.** *bhid* 2〉d〉 Unterschied [VĀGBHAṬĀLAṂKĀRA 1,20] nach [AUFRECHT].
 
 - **RU:** 2. *bhid*: 2〉d〉 различие [VĀGBHAṬĀLAṂKĀRA 1,20] по [AUFRECHT].
-- **EN:** **2.** *bhid*¦ 2〉d〉 difference [VĀGBHAṬĀLAṂKĀRA 1,20] after [AUFRECHT].
+- **EN:** **2.** *bhid* 2〉d〉 difference [VĀGBHAṬĀLAṂKĀRA 1,20] after [AUFRECHT].
   <sub>attested</sub>
 
-**pw_cross)** **1.** *bhid*¦ mit *antar* IV. 5. — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23]. — Mit *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
+**pw_cross)** **1.** *bhid* mit *antar* IV. 5. — Mit *ava* IV. *˚bhinna* verwundet [JĀTAKAM. 24,23]. — Mit *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
 
 - **RU:** 1. *bhid*: с *antar* IV. 5. — С *ava* IV. *˚bhinna* раненый [JĀTAKAM. 24,23]. — С *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
-- **EN:** **1.** *bhid*¦ with *antar* IV. 5. — With *ava* IV. *˚bhinna* wounded [JĀTAKAM. 24,23]. — With *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
+- **EN:** **1.** *bhid* with *antar* IV. 5. — With *ava* IV. *˚bhinna* wounded [JĀTAKAM. 24,23]. — With *upapra* IV. Vgl. [PISCHEL, Vedische Studien 72].
   <sub>attested</sub>
 
-**pw_cross2)** **2.** *bhid*¦ IV. 5.
+**pw_cross2)** **2.** *bhid* IV. 5.
 
 - **RU:** 2. *bhid*: IV. 5.
-- **EN:** **2.** *bhid*¦ IV. 5.
+- **EN:** **2.** *bhid* IV. 5.
   <sub>attested</sub>

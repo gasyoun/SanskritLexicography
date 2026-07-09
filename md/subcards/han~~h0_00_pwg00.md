@@ -212,7 +212,7 @@
 [279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216) — В астр. так v. a. касаться: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) *manaḥ* ранить сердце
 [Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
-- **EN:** 1. *han*¦, *hanti*
+- **EN:** 1. *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*
@@ -357,7 +357,7 @@
 [Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
   <sub>attested</sub>
 
-**gram-intro)** *han*¦, *hanti*
+**gram-intro)** *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*
@@ -397,7 +397,7 @@
 [8,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,22) Fehlen des Bindevocals *i* Kār. 4 aus
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) Ueber die Verbindung mit *kaṇe* und *manas* s. u. *manas* .
 
-- **RU:** *han*¦, *hanti*
+- **RU:** *han*, *hanti*
 [DHĀTUP. 24,2](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*hiṃsāgatyoḥ*).* hathas, hatas, ghnanti*
 [P. 7,3,54.](https://ashtadhyayi.com/sutraani/7/3/54)
 [VOP. 9,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,1) *hanati*

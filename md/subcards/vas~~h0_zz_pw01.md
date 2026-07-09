@@ -3,7 +3,7 @@
 `vas~~h0_zz_pw01`
 
 
-**PW-1)** **5.** √*vas*¦ *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
+**PW-1)** **5.** √*vas* *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
 — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.
 - **EN:** **5.** √*vas* *vasati* (metrically also Med.; in the older language only Med. *vāvasāna*, and with *sam*), Pass. *uṣyate*;
 — 1) to stay in a place, halt, pass the night (with and without *rātrim*; not infrequently a numeral or pronoun is to be supplied in the Acc. *rātrīs* or *rātrim*), to tarry (also so v. a. "to stay away, be absent"), to abide, have one's location (also of animals), to take up one's residence, dwell, live in or with, to remain (with a predicative Partic. praet. pass. "to remain in this state —, in this condition —, to lie —, to stand still"), to remain at, to hold to, to be located or be somewhere. The where, wherein, or whereby is given in the Loc. *dūratas* "to keep oneself away," *sukham* also so v. a. "to live comfortably, feel at ease."
@@ -520,9 +520,9 @@
 - **EN:** — 3) to cohabit sexually with, with Acc.
   <sub>attested</sub>
 
-**0-intro)** **5.** √*vas*¦ *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
+**0-intro)** **5.** √*vas* *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
 
-- **RU:** **5.** √*vas*¦ *vasati* (метрически также Med.; в более древнем языке Med. только *vāvasāna* и с *sam*), Pass. *uṣyate*;
+- **RU:** **5.** √*vas* *vasati* (метрически также Med.; в более древнем языке Med. только *vāvasāna* и с *sam*), Pass. *uṣyate*;
   <sub>mixed</sub>
 
 **1)** — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.

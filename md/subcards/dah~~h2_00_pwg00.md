@@ -3,7 +3,7 @@
 `dah~~h2_00_pwg00`
 
 
-**1. основное значение)** 1. *dah*¦
+**1. основное значение)** 1. *dah*
 Z. 3 *dahiṣyati* auch
 [PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
 
@@ -12,7 +12,7 @@ Z. 3 *dahiṣyati* auch
 [Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* würde dieses auch gebrannt
 [VṚDDHA-CĀṆ. 11,7.]
 
-- **RU:** 1. *dah*¦
+- **RU:** 1. *dah*
 Z. 3 *dahiṣyati* тоже
 [PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
 

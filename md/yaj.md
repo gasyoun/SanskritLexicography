@@ -7,7 +7,7 @@ _PWG article — 25 sub-card(s), 153 sense(s) · RU 100/153 · EN 91/153_
 `yaj~~h0_00_pwg00`
 
 
-**etym-1)** 1. *yaj*¦, *yajati, ˚te*
+**etym-1)** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
@@ -28,7 +28,7 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
 
-- **RU:** 1. *yaj*¦, *yajati, ˚te*
+- **RU:** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
@@ -48,7 +48,7 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 [PAT.] zu [P. 6,1,108.](https://ashtadhyayi.com/sutraani/6/1/108) *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
-- **EN:** 1. *yaj*¦, *yajati, ˚te*
+- **EN:** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
@@ -1276,12 +1276,12 @@ on [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 `yaj~~h1_00_pwg00`
 
 
-**1)** 2. *yaj*¦ (= 1. *yaj*) nom. ag. (nom. *yaḍ* nach
+**1)** 2. *yaj* (= 1. *yaj*) nom. ag. (nom. *yaḍ* nach
 [P. 8,2,36](https://ashtadhyayi.com/sutraani/8/2/36)) am Ende eines comp. huldigend, opfernd; s. *divi˚, deva˚* .
 
-- **RU:** 2. *yaj*¦ (= 1. *yaj*) nom. ag. (nom. *yaḍ* по
+- **RU:** 2. *yaj* (= 1. *yaj*) nom. ag. (nom. *yaḍ* по
 [P. 8,2,36](https://ashtadhyayi.com/sutraani/8/2/36)) в конце comp. воздающий поклонение, приносящий жертву; s. *divi˚, deva˚* .
-- **EN:** 2. *yaj*¦ (= 1. *yaj*) nom. ag. (nom. *yaḍ* according to
+- **EN:** 2. *yaj* (= 1. *yaj*) nom. ag. (nom. *yaḍ* according to
 [P. 8,2,36](https://ashtadhyayi.com/sutraani/8/2/36)) at the end of a comp. paying homage, sacrificing; s. *divi˚, deva˚*.
   <sub>lexicographic</sub>
 
@@ -1290,12 +1290,12 @@ on [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 `yaj~~h2_00_pwg00`
 
 
-**1)** *yaj*¦ (von 1. *yaj*) _m._ N. eines der zehn Rosse des Mondes
+**1)** *yaj* (von 1. *yaj*) _m._ N. eines der zehn Rosse des Mondes
 [VYĀḌI] beim Schol. zu [H. 104.](https://sanskrit-lexicon-scans.github.io/abch2/app1?104)
 
-- **RU:** *yaj*¦ (от 1. *yaj*) _m._ N. одна из десяти лошадей Луны
+- **RU:** *yaj* (от 1. *yaj*) _m._ N. одна из десяти лошадей Луны
 [VYĀḌI] при Schol. к [H. 104.](https://sanskrit-lexicon-scans.github.io/abch2/app1?104)
-- **EN:** *yaj*¦ (from 1. *yaj*) _m._ N. one of the ten horses of the Moon
+- **EN:** *yaj* (from 1. *yaj*) _m._ N. one of the ten horses of the Moon
 [VYĀḌI] in the Schol. on [H. 104.](https://sanskrit-lexicon-scans.github.io/abch2/app1?104)
   <sub>lexicographic</sub>
 
@@ -1304,14 +1304,14 @@ on [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 `yaj~~h3_00_pwg00`
 
 
-**1)** 1. *yaj*¦
+**1)** 1. *yaj*
 Z. 3 hinzuzufügen: (*ā*) *yeje*
 [KĀŚ.] zu [P. 6,4,120.](https://ashtadhyayi.com/sutraani/6/4/120)
 
-- **RU:** 1. *yaj*¦
+- **RU:** 1. *yaj*
 к Z. 3 добавить: (*ā*) *yeje*
 [KĀŚ.] к [P. 6,4,120.](https://ashtadhyayi.com/sutraani/6/4/120)
-- **EN:** 1. *yaj*¦
+- **EN:** 1. *yaj*
 to be added to Z. 3: (*ā*) *yeje*
 [KĀŚ.] on [P. 6,4,120.](https://ashtadhyayi.com/sutraani/6/4/120)
   <sub>attested</sub>
@@ -1330,10 +1330,10 @@ to be added to Z. 3: (*ā*) *yeje*
 `yaj~~h0_zz_pw`
 
 
-**1.1a)** **1.** √*yaj*¦, *yajati*, *˚te*
+**1.1a)** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel Act., wenn Agni oder ein anderer Mittler handelt, und Med., wenn der Mensch für sich verehrt und darbringt; später Act. vom Opferpriester, Med. vom Veranstalter des Opfers. Ausnahmen sind jedoch häufig.
 — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
-- **EN:** **1.** √*yaj*¦, *yajati*, *˚te*
+- **EN:** **1.** √*yaj*, *yajati*, *˚te*
 — 1) to worship, honour a god, also with prayer and offering, hence to consecrate, sacrifice. In the older language regularly Act., when Agni or another mediator acts, and Med., when the man worships and offers on his own behalf; later Act. of the officiating priest, Med. of the institutor of the sacrifice. Exceptions, however, are frequent.
 — a) with Acc. of the god, Dat. of the person or of the purpose for which, and Instr. of the thing (also a partitive Gen.) or of the instrument with which the act is performed. *iṣṭa* he to whom sacrifice has been offered. Also impers. with Instr. of the person who brings the offering, and Instr. of the offering brought [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
 
@@ -1461,16 +1461,16 @@ to be added to Z. 3: (*ā*) *yeje*
 **1.sam2.caus.2)** — 2〉 für Jmd (Acc.) als Opferpriester thätig sein.
 - **EN:** — 2) to act as officiating priest for someone (Acc.).
 
-**2)** **2.** *˚yaj*¦ _Adj._ opfernd u. s. w. in *diviyaj* und *daivayaj*.
+**2)** **2.** *˚yaj* _Adj._ opfernd u. s. w. in *diviyaj* und *daivayaj*.
 
-- **RU:** **2.** *˚yaj*¦ _Adj._ приносящий жертву u. s. w. в *diviyaj* и *daivayaj*.
-- **EN:** **2.** *˚yaj*¦ _Adj._ sacrificing u. s. w., in *diviyaj* and *daivayaj*.
+- **RU:** **2.** *˚yaj* _Adj._ приносящий жертву u. s. w. в *diviyaj* и *daivayaj*.
+- **EN:** **2.** *˚yaj* _Adj._ sacrificing u. s. w., in *diviyaj* and *daivayaj*.
   <sub>attested</sub>
 
-**1)** **1.** √*yaj*¦, *yajati*, *˚te*
+**1)** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel Act., wenn Agni oder ein anderer Mittler handelt, und Med., wenn der Mensch für sich verehrt und darbringt; später Act. vom Opferpriester, Med. vom Veranstalter des Opfers. Ausnahmen sind jedoch häufig.
 
-- **RU:** **1.** √*yaj*¦, *yajati*, *˚te*
+- **RU:** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 почитать, чтить бога, воздавать ему честь, также с молитвой и приношением, отсюда освящать, жертвовать. В древнем языке как правило Act., когда действует Agni или иной посредник, и Med., когда человек почитает и приносит для себя; позднее Act. об обрядовом жреце, Med. об устроителе жертвоприношения. Исключения, однако, часты.
   <sub>attested</sub>
 
@@ -1682,10 +1682,10 @@ to be added to Z. 3: (*ā*) *yeje*
 `yaj~~h0_zz_sch`
 
 
-**1)** yaj¦ + ˚vi ganz besonders verehren, [H] XLVI,64. {part=,seq=22378,type=,n=2}
+**1)** yaj + ˚vi ganz besonders verehren, [H] XLVI,64. {part=,seq=22378,type=,n=2}
 
-- **RU:** yaj¦ + ˚vi особо чтить, [H] XLVI,64.
-- **EN:** yaj¦ + ˚vi to worship in a particularly special manner, [H] XLVI,64.
+- **RU:** yaj + ˚vi особо чтить, [H] XLVI,64.
+- **EN:** yaj + ˚vi to worship in a particularly special manner, [H] XLVI,64.
   <sub>attested</sub>
 
 ## yaj

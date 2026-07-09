@@ -3,16 +3,16 @@
 `vraj~~h0_00_pwg00`
 
 
-*vraj*¦, *vrajati* (*gatau*)
+*vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; aus metrischen Rücksichten auch med. *vrajitum, vrajitvā, vrajita* .
 
-- **RU:** *vraj*¦, *vrajati* (*gatau*)
+- **RU:** *vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; из метрических соображений также med. *vrajitum, vrajitvā, vrajita* .
-- **EN:** *vraj*¦, *vrajati* (*gatau*)
+- **EN:** *vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; also med. *vrajitum, vrajitvā, vrajita* for metrical reasons.

@@ -3,12 +3,12 @@
 `h_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*hā*¦, *jihīte*
+**1)** **1.** √*hā*, *jihīte*
 — 1〉 aufspringen, wegspringen vor, weichen; mit Dat.
 
-- **RU:** **1.** √*hā*¦, *jihīte*
+- **RU:** **1.** √*hā*, *jihīte*
 — 1〉 вскакивать, отпрыгивать от, уступать; с Dat.
-- **EN:** **1.** √*hā*¦, *jihīte*
+- **EN:** **1.** √*hā*, *jihīte*
 — 1〉 to start up, spring away from, give way; with Dat.
   <sub>attested</sub>
 

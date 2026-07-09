@@ -3,9 +3,9 @@
 `_sru~~h0_zz_pw00`
 
 
-**1-1)** **1.** √*śru*¦, *śṛṇoti*
+**1-1)** **1.** √*śru*, *śṛṇoti*
 — 1〉 Act. Med. (später nur metrisch) hören, vernehmen, erfahren, — Etwas oder über (Acc.), — von Jmd (Gen., Abl., Instr., *mukhāt* oder *sakāśāt*), — dass ist u. s. w. (mit doppeltem Acc.), hören —, achten auf Etwas (Acc.) oder Jmd (Gen.); beim Lehrer hören, lernen, studirn.
-- **EN:** **1.** √*śru*¦, *śṛṇoti*
+- **EN:** **1.** √*śru*, *śṛṇoti*
 — 1) Act. Med. (later only metrically) to hear, perceive, learn — something, or about (something) (Acc.), — from someone (Gen., Abl., Instr., *mukhāt* or *sakāśāt*), — that (something) is u. s. w. (with double Acc.), to hear —, to attend to something (Acc.) or someone (Gen.); to hear from a teacher, learn, study.
 
 **1-2)** — 2〉 Med. (vedisch) und Pass. gehört —, vernommen werden, — über (Acc.), — von Jmd (Gen., Abl. oder *mukhāt*); gehört werden, dass ist u. s. w., bekannt sein als, heissen (mit prädicativem Nomin.); beim Lehrer gehört oder studirt werden, gelehrt werden, in einem Werke (Loc.) gelesen werden; gehört —, so v. a. ausgesprochen —, in der Rede angewandt werden (von einem Worte). Häufig impers. *śrūyate* man hört oder ich höre, — von Jmd (Abl.), — über (Gen.); man liest in (Loc.); *śrūyatām* man höre oder höre (2te Sg.).

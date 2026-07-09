@@ -3,10 +3,10 @@
 `muc~~h3_00_pwg00`
 
 
-**1)** 1. *muc*¦ mit *vyapa* ablösen, ablegen: *vyapamucyāṅgādbhūṣaṇāni*
+**1)** 1. *muc* mit *vyapa* ablösen, ablegen: *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)
 
-- **RU:** 1. *muc*¦ с *vyapa* отцеплять, снимать: *vyapamucyāṅgādbhūṣaṇāni*
+- **RU:** 1. *muc* с *vyapa* отцеплять, снимать: *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)
 - **EN:** *muc* with *vyapa* "to detach, take off": *vyapamucyāṅgādbhūṣaṇāni*
 [R. 7,39,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,39,19)

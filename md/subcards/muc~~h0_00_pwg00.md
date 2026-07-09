@@ -3,7 +3,7 @@
 `muc~~h0_00_pwg00`
 
 
-**1)** 1. *muc*¦, *muñcati, ˚te*
+**1)** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
@@ -11,14 +11,14 @@
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
 
-- **RU:** 1. *muc*¦, *muñcati, ˚te*
+- **RU:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
 [Ind. St. 5,340. 363.] *amucat* und *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
-- **EN:** 1. *muc*¦, *muñcati, ˚te*
+- **EN:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
 [VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* and *amugdhvam, muñcātu*

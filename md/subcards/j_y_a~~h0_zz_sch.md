@@ -3,7 +3,7 @@
 `j_y_a~~h0_zz_sch`
 
 
-**sch-1)** 1. jñā¦ mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38) — Mit anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2. c).
+**sch-1)** 1. jñā mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38) — Mit anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2. c).
 - **EN:** 1. jñā — with adhi: to comprehend, understand, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — With anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; cf. Simpl. 2.c).
 
 **sch-2)** — Mit pra [Kaus. 3.] lies: zurechtmachen. So auch [Mahāvy. 226,109] (prajñaptaṃ zu lesen); 244,20.
@@ -18,7 +18,7 @@
 **sch-4)** — Desid. [Med.] ausfindig zu machen suchen oder durchforschen, durchsuchen, [Maitr. S. 2,5,5] (53,19). {part=,seq=14215,type=,n=11}
 - **EN:** — Desid. [Med.] to try to find out or to search through, investigate, [Maitr. S. 2,5,5] (53,19). {part=,seq=14215,type=,n=11}
 
-**1 (adhi))** jñā¦ mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
+**1 (adhi))** jñā mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
 
 - **RU:** jñā с adhi — постигать, понимать, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
   <sub>attested</sub>

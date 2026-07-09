@@ -3,7 +3,7 @@
 `_d_a~~h2_00_pwg00`
 
 
-**main)** 3. *dhā*¦ *(dhe), dhayati*
+**main)** 3. *dhā* *(dhe), dhayati*
 [DHĀTUP. 22,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22); *adhāt, adhāsīt, adadhat*
 [P. 2,4,78.](https://ashtadhyayi.com/sutraani/2/4/78) [3,1,49.](https://ashtadhyayi.com/sutraani/3/1/49)
 [VOP. 8,86](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,86); *dadhau, dadhus; dhāsyati, dhātā*; prec. *dheyāt*
@@ -35,7 +35,7 @@
 [ṚV. 3,55,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.055.html#rv03.055.12) *daśa garbhaṃ carase dhāpayante*
 [5,47,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.04) — desid. *dhitsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54)
-- **EN:** 3. *dhā*¦ *(dhe), dhayati*
+- **EN:** 3. *dhā* *(dhe), dhayati*
 [DHĀTUP. 22,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22); *adhāt, adhāsīt, adadhat*
 [P. 2,4,78.](https://ashtadhyayi.com/sutraani/2/4/78) [3,1,49.](https://ashtadhyayi.com/sutraani/3/1/49)
 [VOP. 8,86](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,86); *dadhau, dadhus; dhāsyati, dhātā*; prec. *dheyāt*

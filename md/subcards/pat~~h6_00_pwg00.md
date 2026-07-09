@@ -3,20 +3,20 @@
 `pat~~h6_00_pwg00`
 
 
-**1)** 1. *pat*¦
+**1)** 1. *pat*
  1) fliegen, wehen von Fahnen (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) dahineilen, entfliehen: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Hierher gehört auch die
 Z. 4 stehende Stelle aus [R.];
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 
-- **RU:** 1. *pat*¦
+- **RU:** 1. *pat*
  1) летать, реять о знамёнах (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) мчаться, бежать: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Сюда же относится
 Z. место из [R.] (п. 4);
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
-- **EN:** 1. *pat*¦
+- **EN:** 1. *pat*
  1) to fly, to wave — of banners (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) to hasten along, to flee: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Here also belongs the

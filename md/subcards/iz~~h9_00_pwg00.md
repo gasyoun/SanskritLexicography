@@ -3,16 +3,16 @@
 `iz~~h9_00_pwg00`
 
 
-I. 3. *iṣ*¦ *iṣ*
+I. 3. *iṣ* *iṣ*
 
-- **RU:** I. 3. *iṣ*¦ *iṣ*
+- **RU:** I. 3. *iṣ* *iṣ*
   <sub>attested</sub>
 
-**2)** I. 3. *iṣ*¦ *iṣ*
+**2)** I. 3. *iṣ* *iṣ*
  2) *te neṣurvaradānam*
 [HARIV. 7967.](https://sanskrit-lexicon-scans.github.io/hariv?7967) *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1,25)
-- **EN:** I. 3. *iṣ*¦ *iṣ*
+- **EN:** I. 3. *iṣ* *iṣ*
  2) *te neṣurvaradānam*
 [HARIV. 7967.](https://sanskrit-lexicon-scans.github.io/hariv?7967) *neṣustadvaradānam* the more recent Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1,25)

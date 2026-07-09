@@ -3,16 +3,16 @@
 `man~~h1_00_pwg00`
 
 
-**intro)** *man*¦ caus.
+**intro)** *man* caus.
 Z. 9 füge *bahumānya*
 [R. 7,6,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,13) hinzu. — desid.
 [BHĀG. P. 10,81,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,24)
 
-- **RU:** *man*¦ caus.
+- **RU:** *man* caus.
 Z. 9 füge *bahumānya*
 [R. 7,6,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,13) hinzu. — desid.
 [BHĀG. P. 10,81,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,24)
-- **EN:** *man*¦ caus.
+- **EN:** *man* caus.
 Z. 9 add *bahumānya*
 [R. 7,6,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,13) . — desid.
 [BHĀG. P. 10,81,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,81,24)

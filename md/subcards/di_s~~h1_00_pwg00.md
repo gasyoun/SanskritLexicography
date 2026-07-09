@@ -154,7 +154,7 @@ fünf (die vorigen mit der *dhruvā*)
 [Ind. St. 3,219.] в конце adj. comp.
 [VID. 101.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?101) в конце _adv._ comp. *diśam* gaṇa *śaradādi* к [P. 5,4,107.](https://ashtadhyayi.com/sutraani/5/4/107)
 [VOP. 6,62.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?6,62)
-- **EN:** *diś*¦ (= 1. *diś*) _f._
+- **EN:** *diś* (= 1. *diś*) _f._
 [P. 3,2,59.](https://ashtadhyayi.com/sutraani/3/2/59) [VOP. 3,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,134) [164.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,164) [SIDDH. K. 247,b,5] v. u.
  1) (the direction *one points to*) quarter, direction; cardinal point, region of the sky (pl. = *sarvā diśaḥ*)
 [AK. 1,1,2,2.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,2,2)
@@ -302,9 +302,9 @@ in [Ind. St. 4,280.] *dāsīsabhaṃ nṛpasabhaṃ rakṣaḥsabhamimā diśa�
 [MBH. 6,327](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.327) ([VP. 182).]
   <sub>attested</sub>
 
-**intro)** 2. *diś*¦ (= 1. *diś*) _f._
+**intro)** 2. *diś* (= 1. *diś*) _f._
 [P. 3,2,59.](https://ashtadhyayi.com/sutraani/3/2/59) [VOP. 3,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,134) [164.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,164) [SIDDH. K. 247,b,5] v. u.
 
-- **RU:** 2. *diś*¦ (= 1. *diś*) _f._
+- **RU:** 2. *diś* (= 1. *diś*) _f._
 [P. 3,2,59.](https://ashtadhyayi.com/sutraani/3/2/59) [VOP. 3,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,134) [164.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,164) [SIDDH. K. 247,b,5] v. u.
   <sub>attested</sub>

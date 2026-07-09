@@ -3,7 +3,7 @@
 `vas~~h2_00_pwg00`
 
 
-3. *vas*¦, *vaste* (*ācchādane*)
+3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*
@@ -117,7 +117,7 @@
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
 
-**3 (main sense))** 3. *vas*¦, *vaste* (*ācchādane*)
+**3 (main sense))** 3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*
@@ -174,7 +174,7 @@
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
 
-- **RU:** 3. *vas*¦, *vaste* (*ācchādane*)
+- **RU:** 3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*

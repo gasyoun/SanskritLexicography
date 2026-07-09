@@ -3,7 +3,7 @@
 `car~~h0_00_pwg00`
 
 
-*car*¦, *carati* (ep. auch med.)
+*car*, *carati* (ep. auch med.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
@@ -17,7 +17,7 @@
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
 [BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (s. auch bes.), *cīrṇa* (s. auch bes.).
 
-- **RU:** *car*¦, *carati* (ep. auch med.)
+- **RU:** *car*, *carati* (ep. auch med.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (

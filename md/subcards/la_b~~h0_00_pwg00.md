@@ -3,7 +3,7 @@
 `la_b~~h0_00_pwg00`
 
 
-**intro)** *labh*¦ (= älterem *rabh*), *labhate* (*prāptau*)
+**intro)** *labh* (= älterem *rabh*), *labhate* (*prāptau*)
 [DHĀTUP. 23,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *lebhe, lapsyate, labdhā* (vgl. Kār.
 5 aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). *alabdha*
 [P. 8,2,40](https://ashtadhyayi.com/sutraani/8/2/40), Sch.
@@ -30,7 +30,7 @@ z. B. *labhati*
 [285](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.285) liest die [ed. Bomb.] richtig *alabhanta*
 u. s. w.; [2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) haben beide Ausgg. *pralambhante* .
 
-- **RU:** *labh*¦ (= более древнему *rabh*), *labhate* (*prāptau*)
+- **RU:** *labh* (= более древнему *rabh*), *labhate* (*prāptau*)
 [DHĀTUP. 23,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *lebhe, lapsyate, labdhā* (vgl. Kār.
 5 из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). *alabdha*
 [P. 8,2,40](https://ashtadhyayi.com/sutraani/8/2/40), Sch.

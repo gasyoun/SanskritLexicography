@@ -3,14 +3,14 @@
 `pat~~h2_00_pwg00`
 
 
-3. *pat*¦, *patyate*
+3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. für *tap*).
 
-- **RU:** 3. *pat*¦, *patyate*
+- **RU:** 3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. für *tap*).
-- **EN:** 3. *pat*¦, *patyate*
+- **EN:** 3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. for *tap*).
   <sub>attested</sub>

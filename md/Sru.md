@@ -7,7 +7,7 @@ _PWG article — 29 sub-card(s), 131 sense(s) · RU 81/131 · EN 118/131_
 `_sru~~h0_00_pwg00`
 
 
-**1)** *śru*¦ (*śravaṇe*
+**1)** *śru* (*śravaṇe*
 [DHĀTUP. 22,44.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)), *śṛṇoti*
 [P. 3,1,74.](https://ashtadhyayi.com/sutraani/3/1/74)
 [VOP. 8,94.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,94) *śṛṇumas* und *śṛṇmas, śṛṇuvas* und *śṛṇvas* 95. *śuśrāva, śuśruva, śuśruma (śuśruvaṃs* s. bes.)
@@ -124,7 +124,7 @@ Schol. zu [P. 6,3,133.](https://ashtadhyayi.com/sutraani/6/3/133) [7,1,45.](http
 [R. 1,70,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,8) In der Bed. bitten (nach den Scholl.)
 [BHAṬṬ. 8,77.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,77)
 
-- **RU:** *śru*¦ (*śravaṇe*
+- **RU:** *śru* (*śravaṇe*
 [DHĀTUP. 22,44.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)), *śṛṇoti*
 [P. 3,1,74.](https://ashtadhyayi.com/sutraani/3/1/74)
 [VOP. 8,94.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,94) *śṛṇumas* und *śṛṇmas, śṛṇuvas* und *śṛṇvas* 95. *śuśrāva, śuśruva, śuśruma (śuśruvaṃs* s. bes.)
@@ -2311,7 +2311,7 @@ of the person).
 `_sru~~h1_00_pwg00`
 
 
-**2)** 2. *śru*¦ = *sru*.* śruvat, śruvantu* sich in Bewegung (namentlich der Theile) setzen; auseinandergehen, zerfliessen: *ta ā gamantu ta iha śruvantu*
+**2)** 2. *śru* = *sru*.* śruvat, śruvantu* sich in Bewegung (namentlich der Theile) setzen; auseinandergehen, zerfliessen: *ta ā gamantu ta iha śruvantu*
 [ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (nach dem Comm. zu 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) Auch in späteren Schriften wird diese Wurzel und ihre Ableitungen öfters mit dem palatalen Zischlaut geschrieben. Wir verweisen jedoch diese Stellen unter *sru* .
 — *ā* dass.: *ā vo yāmāya pṛthivī cidaśrot* die Erde selbst wich eurem Lauf
@@ -2323,7 +2323,7 @@ of the person).
 — *sam* zusammenfliessen: *yadvastāvadhi saṃśrutam*
 [AV. 1,3,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.003.html#av01.003.06)
 
-- **RU:** 2. *śru*¦ = *sru*.* śruvat, śruvantu* приходить в движение (в особенности о частях тела): расходиться, растекаться: *ta ā gamantu ta iha śruvantu*
+- **RU:** 2. *śru* = *sru*.* śruvat, śruvantu* приходить в движение (в особенности о частях тела): расходиться, растекаться: *ta ā gamantu ta iha śruvantu*
 [ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (по Comm. к 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) В более поздних текстах этот корень и его производные нередко пишутся с палатальным сибилянтом. Соответствующие места мы отсылаем, однако, под *sru* .
 — *ā* dass.: *ā vo yāmāya pṛthivī cidaśrot* сама земля уступала вашему движению
@@ -2334,7 +2334,7 @@ of the person).
 — *vi* s. 2. *viśruti* .
 — *sam* стекаться: *yadvastāvadhi saṃśrutam*
 [AV. 1,3,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.003.html#av01.003.06)
-- **EN:** *śru*¦ = *sru*.* śruvat, śruvantu* to set itself in motion (namely of the parts); to come apart, to dissolve, to melt away: *ta ā gamantu ta iha śruvantu*
+- **EN:** *śru* = *sru*.* śruvat, śruvantu* to set itself in motion (namely of the parts); to come apart, to dissolve, to melt away: *ta ā gamantu ta iha śruvantu*
 [ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (according to the Comm. to 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) In later writings too this root and its derivatives are often written with the palatal sibilant. We refer those passages, however, under *sru* .
   <sub>attested</sub>
@@ -2364,12 +2364,12 @@ of the person).
 `_sru~~h2_00_pwg00`
 
 
-**1)** 1. *śru*¦ mit *abhi* caus. Jmd Etwas hören lassen, über Jmd Etwas sprechen, besprechen; mit doppeltem acc.
+**1)** 1. *śru* mit *abhi* caus. Jmd Etwas hören lassen, über Jmd Etwas sprechen, besprechen; mit doppeltem acc.
 [SĀMAVIDH. BR. 2,3,2.] mit instr. und acc. [4,7.]
 
-- **RU:** 1. *śru*¦ с *abhi* caus. дать кому-либо услышать что-либо, говорить о ком-либо что-либо, обсуждать; с двойным acc.
+- **RU:** 1. *śru* с *abhi* caus. дать кому-либо услышать что-либо, говорить о ком-либо что-либо, обсуждать; с двойным acc.
 [SĀMAVIDH. BR. 2,3,2.] с instr. и acc. [4,7.]
-- **EN:** 1. *śru*¦ with *abhi* caus. to let someone hear something, to speak about something to someone, to discuss something with someone; with double acc.
+- **EN:** 1. *śru* with *abhi* caus. to let someone hear something, to speak about something to someone, to discuss something with someone; with double acc.
 [SĀMAVIDH. BR. 2,3,2.] with instr. and acc. [4,7.]
   <sub>attested</sub>
 
@@ -2378,9 +2378,9 @@ of the person).
 `_sru~~h0_zz_pw00`
 
 
-**1-1)** **1.** √*śru*¦, *śṛṇoti*
+**1-1)** **1.** √*śru*, *śṛṇoti*
 — 1〉 Act. Med. (später nur metrisch) hören, vernehmen, erfahren, — Etwas oder über (Acc.), — von Jmd (Gen., Abl., Instr., *mukhāt* oder *sakāśāt*), — dass ist u. s. w. (mit doppeltem Acc.), hören —, achten auf Etwas (Acc.) oder Jmd (Gen.); beim Lehrer hören, lernen, studirn.
-- **EN:** **1.** √*śru*¦, *śṛṇoti*
+- **EN:** **1.** √*śru*, *śṛṇoti*
 — 1) Act. Med. (later only metrically) to hear, perceive, learn — something, or about (something) (Acc.), — from someone (Gen., Abl., Instr., *mukhāt* or *sakāśāt*), — that (something) is u. s. w. (with double Acc.), to hear —, to attend to something (Acc.) or someone (Gen.); to hear from a teacher, learn, study.
 
 **1-2)** — 2〉 Med. (vedisch) und Pass. gehört —, vernommen werden, — über (Acc.), — von Jmd (Gen., Abl. oder *mukhāt*); gehört werden, dass ist u. s. w., bekannt sein als, heissen (mit prädicativem Nomin.); beim Lehrer gehört oder studirt werden, gelehrt werden, in einem Werke (Loc.) gelesen werden; gehört —, so v. a. ausgesprochen —, in der Rede angewandt werden (von einem Worte). Häufig impers. *śrūyate* man hört oder ich höre, — von Jmd (Abl.), — über (Gen.); man liest in (Loc.); *śrūyatām* man höre oder höre (2te Sg.).
@@ -2610,8 +2610,8 @@ of the person).
 `_sru~~h0_zz_pw01`
 
 
-**1)** √*śru*¦ = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
-- **EN:** √*śru*¦ = *sru* "to set itself in motion" (esp. der Theile "of the parts"), "to disperse, dissolve". Only *śruvat* and *śruvanta*. In the later writings simply an error for *sru*.
+**1)** √*śru* = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
+- **EN:** √*śru* = *sru* "to set itself in motion" (esp. der Theile "of the parts"), "to disperse, dissolve". Only *śruvat* and *śruvanta*. In the later writings simply an error for *sru*.
 
 **2)** — Mit *ā* (nur *ā — aśrot*) weichen, nachgeben.
 - **EN:** — With *ā* (only *ā — aśrot*) "to yield, give way".
@@ -2625,16 +2625,16 @@ of the person).
 **5)** — Mit *sam*, *saṃśruta* zusammengeflossen.
 - **EN:** — With *sam*, *saṃśruta* "flowed together, confluent".
 
-**1)** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
-- **EN:** √*śru*¦ VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+**1)** √*śru* VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+- **EN:** √*śru* VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 
 **2)** — Mit *upa* VI. geloben [JĀTAKAM. 31].
 - **EN:** — With *upa* VI. "to vow, promise" [JĀTAKAM. 31].
 
-**1)** √*śru*¦ mit *prati* VI. antworten hinzuzufügen.
-- **EN:** √*śru*¦ with *prati* VI. "to answer" to be added.
+**1)** √*śru* mit *prati* VI. antworten hinzuzufügen.
+- **EN:** √*śru* with *prati* VI. "to answer" to be added.
 
-**Hauptbed.)** **2.** √*śru*¦ = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
+**Hauptbed.)** **2.** √*śru* = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
 
 - **RU:** **2.** √*śru* = *sru* приходить в движение (в особенности о частях), расходиться, растекаться. Только *śruvat* и *śruvanta*. В более поздних текстах просто ошибка вместо *sru*.
   <sub>attested</sub>
@@ -2659,14 +2659,14 @@ of the person).
 - **RU:** — С *sam*, *saṃśruta* слившийся вместе, стёкшийся.
   <sub>attested</sub>
 
-**Nachtrag VI mit upa)** **1.** √*śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+**Nachtrag VI mit upa)** **1.** √*śru* VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — Mit *upa* VI. geloben [JĀTAKAM. 31].
 
 - **RU:** **1.** √*śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
 — С *upa* VI. давать обет, обещаться [JĀTAKAM. 31].
   <sub>attested</sub>
 
-**Nachtrag prati antworten)** **1.** √*śru*¦ mit *prati* VI. antworten hinzuzufügen.
+**Nachtrag prati antworten)** **1.** √*śru* mit *prati* VI. antworten hinzuzufügen.
 
 - **RU:** **1.** √*śru* с *prati* VI. следует добавить: отвечать.
   <sub>attested</sub>
@@ -2676,8 +2676,8 @@ of the person).
 `_sru~~h0_zz_sch`
 
 
-**1)** [śru]¦ , śuśrāva mit pass. Bed., [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23)
-- **EN:** [śru]¦, śuśrāva "with passive meaning", [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23)
+**1)** [śru] , śuśrāva mit pass. Bed., [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23)
+- **EN:** [śru], śuśrāva "with passive meaning", [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23)
 
 **2)** — Mit upa geloben, [Jātakam. 31.]
 - **EN:** — With upa "to vow, promise", [Jātakam. 31.]
@@ -2685,7 +2685,7 @@ of the person).
 **3)** — Mit prati "antworten" hinzuzufügen. {part=,seq=25726,type=,n=4}
 - **EN:** — With prati "to answer" to be added. {part=,seq=25726,type=,n=4}
 
-**śuśrāva pass. Bed.)** 1. [śru]¦ , śuśrāva mit pass. Bed., [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — Mit upa geloben, [Jātakam. 31.] — Mit prati "antworten" hinzuzufügen. {part=,seq=25726,type=,n=4}
+**śuśrāva pass. Bed.)** 1. [śru] , śuśrāva mit pass. Bed., [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — Mit upa geloben, [Jātakam. 31.] — Mit prati "antworten" hinzuzufügen. {part=,seq=25726,type=,n=4}
 
 - **RU:** 1. [śru], śuśrāva с пассивным значением, [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — С upa давать обет, [Jātakam. 31.] — С prati следует добавить «отвечать».
   <sub>attested</sub>
@@ -2695,22 +2695,22 @@ of the person).
 `_sru~~h0_zz_pwkvn`
 
 
-**1)** **1.** *śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — Mit *upa* VI. geloben [JĀTAKAM. 31].
+**1)** **1.** *śru* VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — Mit *upa* VI. geloben [JĀTAKAM. 31].
 
-- **RU:** **1.** *śru*¦ VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
-- **EN:** *śru*¦ VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+- **RU:** **1.** *śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
+- **EN:** *śru* VI. *śuśrāva* with pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
   <sub>attested</sub>
 
 **2)** — Mit *upa* VI. geloben [JĀTAKAM. 31].
 - **EN:** — With *upa* VI. "to vow, promise" [JĀTAKAM. 31].
 
-**1)** **1.** *śru*¦ VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — Mit *upa* VI. geloben [JĀTAKAM. 31].
+**1)** **1.** *śru* VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — Mit *upa* VI. geloben [JĀTAKAM. 31].
 
-- **RU:** **1.** *śru*¦ VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
-- **EN:** *śru*¦ with *prati* VI. "to answer" to be added.
+- **RU:** **1.** *śru* VI. *śuśrāva* с pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
+- **EN:** *śru* with *prati* VI. "to answer" to be added.
   <sub>attested</sub>
 
-**1)** **1.** *śru*¦ mit *prati* VI. antworten hinzuzufügen.
+**1)** **1.** *śru* mit *prati* VI. antworten hinzuzufügen.
 
-- **RU:** **1.** *śru*¦ с *prati* VI. отвечать — добавить.
+- **RU:** **1.** *śru* с *prati* VI. отвечать — добавить.
   <sub>attested</sub>

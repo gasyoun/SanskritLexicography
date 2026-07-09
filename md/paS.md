@@ -7,10 +7,10 @@ _PWG article — 27 sub-card(s), 185 sense(s) · RU 132/185 · EN 155/185_
 `pa_s~~h0_00_pwg00`
 
 
-**etym)** *paś*¦, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
-- **EN:** *paś*¦, *spaś*; from the weakened root only the present-tense forms, from the full root the remaining tenses and the caus., but only in the older language. *paśyati*
+**etym)** *paś*, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
+- **EN:** *paś*, *spaś*; from the weakened root only the present-tense forms, from the full root the remaining tenses and the caus., but only in the older language. *paśyati*
 
-**1)** *paś*¦, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
+**1)** *paś*, *spaś*; von der geschwächten Wurzel nur die Präsens-Formen, von der vollen Wurzel die übrigen Tempora und das caus., aber nur in der älteren Sprache. *paśyati*
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *paspaśe (paśpaśāte*
 [P. 7,3,87](https://ashtadhyayi.com/sutraani/7/3/87), Vārtt. 1); *aspaṣṭa*; das partic. *spaṣṭa* s. bes. act. med. sehen, erblicken, wahrnehmen, erschauen, beschauen; med. auch an sich sehen, erleben: *tadviṣṇoḥ paramaṃ padaṃ sadā paśyanti sūrayaḥ*
@@ -128,7 +128,7 @@ _PWG article — 27 sub-card(s), 185 sense(s) · RU 132/185 · EN 155/185_
 Sch. *paśya* leitet in prosaischen Schriften häufig einen Vers ein,
 z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,16) [17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,17) [24,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,8) [27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6) [30,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,15) [97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15) [111,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,13) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,20)
 
-- **RU:** *paś*¦, *spaś*; от ослабленного корня образуются только формы настоящего времени, от полного корня — прочие времена и caus., но лишь в более древнем языке. *paśyati*
+- **RU:** *paś*, *spaś*; от ослабленного корня образуются только формы настоящего времени, от полного корня — прочие времена и caus., но лишь в более древнем языке. *paśyati*
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *paspaśe (paśpaśāte*
 [P. 7,3,87](https://ashtadhyayi.com/sutraani/7/3/87), Vārtt. 1); *aspaṣṭa*; partic. *spaṣṭa* s. bes. act. med. видеть, замечать, воспринимать, созерцать, рассматривать; med. также испытывать на себе, переживать: *tadviṣṇoḥ paramaṃ padaṃ sadā paśyanti sūrayaḥ*
@@ -1476,10 +1476,10 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h1_00_pwg00`
 
 
-**1)** 2. *paś*¦ nom. s. u. 2. *pad* 1. am Ende.
+**1)** 2. *paś* nom. s. u. 2. *pad* 1. am Ende.
 
-- **RU:** 2. *paś*¦ nom. s. u. 2. *pad* 1. в конце.
-- **EN:** 2. *paś*¦ nom. s. u. 2. *pad* 1. at the end.
+- **RU:** 2. *paś* nom. s. u. 2. *pad* 1. в конце.
+- **EN:** 2. *paś* nom. s. u. 2. *pad* 1. at the end.
   <sub>lexicographic</sub>
 
 ## paś
@@ -1487,10 +1487,10 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h2_00_pwg00`
 
 
-**1)** 3. *paś*¦, *pāśayati* s. *pāśay* .
+**1)** 3. *paś*, *pāśayati* s. *pāśay* .
 
-- **RU:** 3. *paś*¦, *pāśayati* s. *pāśay* .
-- **EN:** 3. *paś*¦, *pāśayati* s. *pāśay*.
+- **RU:** 3. *paś*, *pāśayati* s. *pāśay* .
+- **EN:** 3. *paś*, *pāśayati* s. *pāśay*.
   <sub>lexicographic</sub>
 
 ## paś
@@ -1498,16 +1498,16 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h3_00_pwg00`
 
 
-**1)** 4. *paś*¦
+**1)** 4. *paś*
 [P. 7,4,86.](https://ashtadhyayi.com/sutraani/7/4/86) intens. *pampaśyate, pampaśīti* ebend.
 [VOP. 20,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,8) Nach dem Schol. zu [KĀTY.] eine Sautra-Wurzel; vgl.
 [WESTERG.] in [DHĀTUP. 21,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=21)
 
-- **RU:** 4. *paś*¦
+- **RU:** 4. *paś*
 [P. 7,4,86.](https://ashtadhyayi.com/sutraani/7/4/86) intens. *pampaśyate, pampaśīti* ebend.
 [VOP. 20,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,8) По Schol. к [KĀTY.] корень класса Sautra; vgl.
 [WESTERG.] в [DHĀTUP. 21,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=21)
-- **EN:** 4. *paś*¦
+- **EN:** 4. *paś*
 [P. 7,4,86.](https://ashtadhyayi.com/sutraani/7/4/86) intens. *pampaśyate, pampaśīti* ebend.
 [VOP. 20,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,8) According to the Schol., a [KĀTY.] Sautra-root; vgl.
 [WESTERG.] in [DHĀTUP. 21,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=21)
@@ -1518,16 +1518,16 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h4_00_pwg00`
 
 
-**1)** 1. *paś*¦
+**1)** 1. *paś*
 [Sp. 602, Z. 1] füge noch hinzu
 [Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] füge noch hinzu: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* Schaden für Vortheil und Vortheil für Schaden haltend
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
 
-- **RU:** 1. *paś*¦
+- **RU:** 1. *paś*
 [Sp. 602, Z. 1] добавь ещё
 [Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] добавь ещё: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* принимающий вред за пользу и пользу за вред
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
-- **EN:** 1. *paś*¦
+- **EN:** 1. *paś*
 [Sp. 602, Z. 1] add further
 [Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] add further: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* taking loss for gain and gain for loss
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
@@ -1553,12 +1553,12 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h5_00_pwg00`
 
 
-**1)** 1. *paś*¦ mit *prati* erleben, erfahren: *nāpriyaṃ pratipaśyeyuḥ*
+**1)** 1. *paś* mit *prati* erleben, erfahren: *nāpriyaṃ pratipaśyeyuḥ*
 [Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380)
 
-- **RU:** 1. *paś*¦ с *prati* переживать, испытывать: *nāpriyaṃ pratipaśyeyuḥ*
+- **RU:** 1. *paś* с *prati* переживать, испытывать: *nāpriyaṃ pratipaśyeyuḥ*
 [Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380)
-- **EN:** 1. *paś*¦ with *prati* to live through, experience: *nāpriyaṃ pratipaśyeyuḥ*
+- **EN:** 1. *paś* with *prati* to live through, experience: *nāpriyaṃ pratipaśyeyuḥ*
 [Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380)
   <sub>attested</sub>
 
@@ -2052,21 +2052,21 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 - **EN:** — With *prasam* to take properly into consideration [MĀN. ŚR. 1,1,1].
   <sub>attested</sub>
 
-**1)** **2.** *paś*¦ _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
+**1)** **2.** *paś* _f._ Blick oder Auge Nur *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
 
-- **RU:** **2.** *paś*¦ _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
+- **RU:** **2.** *paś* _f._ взгляд или глаз Только *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
 - **EN:** 2. *paś*; _f._ glance or eye. Only *paḍbhis* [ṚV. 4,2,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.002.html#rv04.002.12).
   <sub>attested</sub>
 
-**1)** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
+**1)** **3.** √*paś*, *pāśayati* s. !√*pāśay*.
 
-- **RU:** **3.** √*paś*¦, *pāśayati* s. !√*pāśay*.
+- **RU:** **3.** √*paś*, *pāśayati* s. !√*pāśay*.
 - **EN:** 3. √*paś*; *pāśayati* s. see! √*pāśay*.
   <sub>lexicographic</sub>
 
-**preamble)** **1.** √*paś*¦ nur Präsensstamm *paśya* Act. Med. (meist metrisch).
+**preamble)** **1.** √*paś* nur Präsensstamm *paśya* Act. Med. (meist metrisch).
 
-- **RU:** **1.** √*paś*¦ только основа настоящего времени *paśya* Act. Med. (преимущественно в метрических текстах).
+- **RU:** **1.** √*paś* только основа настоящего времени *paśya* Act. Med. (преимущественно в метрических текстах).
   <sub>attested</sub>
 
 **mit_T38)** — Mit *anu*
@@ -2219,8 +2219,8 @@ to catch sight of, perceive, see, recognize: *mahānti cānyāni sarāṃsi pār
 `pa_s~~h0_zz_pw01`
 
 
-**1)** **4.** *√*paś*¦ Intens. *pampaśyate, pampaśīti*.
+**1)** **4.** *√*paś* Intens. *pampaśyate, pampaśīti*.
 
-- **RU:** **4.** *√*paś*¦ Intens. *pampaśyate, pampaśīti*.
+- **RU:** **4.** *√*paś* Intens. *pampaśyate, pampaśīti*.
 - **EN:** 4. *√*paś*; Intens. *pampaśyate, pampaśīti*.
   <sub>lexicographic</sub>

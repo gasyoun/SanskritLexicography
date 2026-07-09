@@ -7,7 +7,7 @@ _PWG article — 73 sub-card(s), 413 sense(s) · RU 381/413 · EN 367/413_
 `pat~~h0_00_pwg00`
 
 
-**1)** *pat*¦, *patati*
+**1)** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
@@ -34,7 +34,7 @@ _PWG article — 73 sub-card(s), 413 sense(s) · RU 381/413 · EN 367/413_
 [KENOP. 1.] *patita* _n._ Flug
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913)
 
-- **RU:** *pat*¦, *patati*
+- **RU:** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
@@ -60,7 +60,7 @@ _PWG article — 73 sub-card(s), 413 sense(s) · RU 381/413 · EN 367/413_
 [ṚV. 3,39,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.039.html#rv03.039.03) *keneṣitaṃ patati preṣitaṃ manaḥ*
 [KENOP. 1.] *patita* _n._ полёт
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913)
-- **EN:** *pat*¦, *patati*
+- **EN:** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
@@ -2212,12 +2212,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h0_25_pari_ri`
 
 
-**1)** — *pariṇi*¦
+**1)** — *pariṇi*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 
-- **RU:** — *pariṇi*¦
+- **RU:** — *pariṇi*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
-- **EN:** — *pariṇi*¦
+- **EN:** — *pariṇi*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
   <sub>attested</sub>
 
@@ -3319,10 +3319,10 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h1_00_pwg00`
 
 
-**1)** 2. *pat*¦ (= 1. *pat*) fliegend, fallend; s. *akṣi˚* .
+**1)** 2. *pat* (= 1. *pat*) fliegend, fallend; s. *akṣi˚* .
 
-- **RU:** 2. *pat*¦ (= 1. *pat*) летящий, падающий; s. *akṣi˚* .
-- **EN:** 2. *pat*¦ (= 1. *pat*) flying, falling; s. *akṣi˚* .
+- **RU:** 2. *pat* (= 1. *pat*) летящий, падающий; s. *akṣi˚* .
+- **EN:** 2. *pat* (= 1. *pat*) flying, falling; s. *akṣi˚* .
   <sub>attested</sub>
 
 ## pat
@@ -3330,14 +3330,14 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h2_00_pwg00`
 
 
-3. *pat*¦, *patyate*
+3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. für *tap*).
 
-- **RU:** 3. *pat*¦, *patyate*
+- **RU:** 3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. für *tap*).
-- **EN:** 3. *pat*¦, *patyate*
+- **EN:** 3. *pat*, *patyate*
 [NAIGH. 2,21.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,21)
 [DHĀTUP. 26,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (v. l. for *tap*).
   <sub>attested</sub>
@@ -3434,10 +3434,10 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h3_00_pwg00`
 
 
-**note)** **1.** *pat*¦ [vgl. ] Z. 7. Das Beispiel [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) ist nach [KENOP. 1.] anʼs Ende von 1. zu stellen; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
+**note)** **1.** *pat* [vgl. ] Z. 7. Das Beispiel [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) ist nach [KENOP. 1.] anʼs Ende von 1. zu stellen; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 
-- **RU:** **1.** *pat*¦ [vgl. ] Z. 7. Пример [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) следует, согласно [KENOP. 1.], поместить в конец п. 1.; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
-- **EN:** **1.** *pat*¦ [vgl. ] Z. 7. The example [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) is, according to [KENOP. 1.], to be placed at the end of 1.; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
+- **RU:** **1.** *pat* [vgl. ] Z. 7. Пример [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) следует, согласно [KENOP. 1.], поместить в конец п. 1.; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
+- **EN:** **1.** *pat* [vgl. ] Z. 7. The example [R. 2,105,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) is, according to [KENOP. 1.], to be placed at the end of 1.; vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
   <sub>attested</sub>
 
 ## pat
@@ -3445,10 +3445,10 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h4_00_pwg00`
 
 
-**note)** **1.** *pat*¦ [vgl. ] mit *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) hat das Wort die Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
+**note)** **1.** *pat* [vgl. ] mit *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) hat das Wort die Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
 
-- **RU:** **1.** *pat*¦ [vgl. ] с *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) слово имеет Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
-- **EN:** **1.** *pat*¦ [vgl. ] with *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) the word has the Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
+- **RU:** **1.** *pat* [vgl. ] с *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) слово имеет Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
+- **EN:** **1.** *pat* [vgl. ] with *ā* Z. 12 [RĀJA-TAR. 3,202](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,202) the word has the Bed. 3; vgl. [Spr. 3490.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3490)
   <sub>attested</sub>
 
 ## pat
@@ -3456,10 +3456,10 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h5_00_pwg00`
 
 
-**note)** **1.** *pat*¦ [vgl. ] mit *pari* Z. 13. 14. Lies: *˚patitorasi* und *˚patitā u˚*.
+**note)** **1.** *pat* [vgl. ] mit *pari* Z. 13. 14. Lies: *˚patitorasi* und *˚patitā u˚*.
 
-- **RU:** **1.** *pat*¦ [vgl. ] с *pari* Z. 13. 14. Читай: *˚patitorasi* и *˚patitā u˚*.
-- **EN:** **1.** *pat*¦ [vgl. ] with *pari* Z. 13. 14. Read: *˚patitorasi* and *˚patitā u˚*.
+- **RU:** **1.** *pat* [vgl. ] с *pari* Z. 13. 14. Читай: *˚patitorasi* и *˚patitā u˚*.
+- **EN:** **1.** *pat* [vgl. ] with *pari* Z. 13. 14. Read: *˚patitorasi* and *˚patitā u˚*.
   <sub>attested</sub>
 
 ## pat
@@ -3467,20 +3467,20 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 `pat~~h6_00_pwg00`
 
 
-**1)** 1. *pat*¦
+**1)** 1. *pat*
  1) fliegen, wehen von Fahnen (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) dahineilen, entfliehen: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Hierher gehört auch die
 Z. 4 stehende Stelle aus [R.];
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 
-- **RU:** 1. *pat*¦
+- **RU:** 1. *pat*
  1) летать, реять о знамёнах (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) мчаться, бежать: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Сюда же относится
 Z. место из [R.] (п. 4);
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
-- **EN:** 1. *pat*¦
+- **EN:** 1. *pat*
  1) to fly, to wave — of banners (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) to hasten along, to flee: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Here also belongs the
@@ -3803,15 +3803,15 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 `pat~~h7_00_pwg00`
 
 
-**1)** 1. *pat*¦ mit *ava, anavapatitaśabda* _adj._ wohl dessen Stimme nicht belegt ist
+**1)** 1. *pat* mit *ava, anavapatitaśabda* _adj._ wohl dessen Stimme nicht belegt ist
 [CARAKA 3,8.]
 — *vipari* umhergehen
 [PAT. a. a. O. 3,48,a.]
 
-- **RU:** 1. *pat*¦ с *ava, anavapatitaśabda* _adj._, по всей видимости, чья форма не засвидетельствована
+- **RU:** 1. *pat* с *ava, anavapatitaśabda* _adj._, по всей видимости, чья форма не засвидетельствована
 [CARAKA 3,8.]
 — *vipari* ходить, расхаживать [PAT. a. a. O. 3,48,a.]
-- **EN:** 1. *pat*¦ with *ava, anavapatitaśabda* _adj._ apparently whose voice is not attested [CARAKA 3,8.]
+- **EN:** 1. *pat* with *ava, anavapatitaśabda* _adj._ apparently whose voice is not attested [CARAKA 3,8.]
 — *vipari* to go about, wander [PAT. a. a. O. 3,48,a.]
   <sub>attested</sub>
 
@@ -3820,8 +3820,8 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 `pat~~h0_zz_pw00`
 
 
-**layer-marker)** **1.** √*pat*¦, *patati* (episch auch Med.)
-- **EN:** **1.** √*pat*¦, *patati* (in epic also Med.)
+**layer-marker)** **1.** √*pat*, *patati* (episch auch Med.)
+- **EN:** **1.** √*pat*, *patati* (in epic also Med.)
 
 **1)** — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 - **EN:** — 1〉 to fly, to move swiftly through the air (of animate and inanimate things), to wave (of banners), to speed away, to flee (of time).
@@ -4391,7 +4391,7 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — 2〉 to rise toward someone (Acc.).
   <sub>attested</sub>
 
-**1〉)** **1.** √*pat*¦, *patati* (episch auch Med.)
+**1〉)** **1.** √*pat*, *patati* (episch auch Med.)
 — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 
 - **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевлённых и неодушевлённых предметах), веять (о знамёнах), мчаться, убегать (о времени).
@@ -5147,22 +5147,22 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 `pat~~h0_zz_pw03`
 
 
-**cross_ref)** **2.** *pat*¦ in *akṣipat*.
+**cross_ref)** **2.** *pat* in *akṣipat*.
 
-- **RU:** **2.** *pat*¦ in *akṣipat*.
-- **EN:** **2.** *pat*¦ in *akṣipat*.
+- **RU:** **2.** *pat* in *akṣipat*.
+- **EN:** **2.** *pat* in *akṣipat*.
   <sub>attested</sub>
 
-**cross_ref)** **3.** √*pat*¦, *patyate* s. !√*paty*.
+**cross_ref)** **3.** √*pat*, *patyate* s. !√*paty*.
 
-- **RU:** **3.** √*pat*¦, *patyate* s. !√*paty*.
-- **EN:** **3.** √*pat*¦, *patyate* s. !√*paty*.
+- **RU:** **3.** √*pat*, *patyate* s. !√*paty*.
+- **EN:** **3.** √*pat*, *patyate* s. !√*paty*.
   <sub>attested</sub>
 
-**mit_T8)** **1.** √*pat*¦ mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+**mit_T8)** **1.** √*pat* mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
 
-- **RU:** **1.** √*pat*¦ mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
-- **EN:** **1.** √*pat*¦ with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+- **RU:** **1.** √*pat* mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+- **EN:** **1.** √*pat* with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
   <sub>attested</sub>
 
 **mit_T12_1)** — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
@@ -5171,10 +5171,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — With *abhisam* 1〉 to fly thither, to hasten to, to rush upon (Acc.) — 2〉 to fly along.
   <sub>attested</sub>
 
-**mit_T15_ati)** **1.** √*pat*¦ mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
+**mit_T15_ati)** **1.** √*pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
 
-- **RU:** **1.** √*pat*¦ mit *ati* IV. *˚patya* Absol. mit Acc. так v. a. не заботясь о [JĀTAKAM. 2,26]. [28,13].
-- **EN:** **1.** √*pat*¦ with *ati* IV. *˚patya* Absol. with Acc. so v. a. not caring about [JĀTAKAM. 2,26]. [28,13].
+- **RU:** **1.** √*pat* mit *ati* IV. *˚patya* Absol. mit Acc. так v. a. не заботясь о [JĀTAKAM. 2,26]. [28,13].
+- **EN:** **1.** √*pat* with *ati* IV. *˚patya* Absol. with Acc. so v. a. not caring about [JĀTAKAM. 2,26]. [28,13].
   <sub>attested</sub>
 
 **mit_T22_sama)** — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26].
@@ -5201,10 +5201,10 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 - **EN:** — With *abhisam* 5.
   <sub>attested</sub>
 
-**mit_T34_vyati)** **1.** √*pat*¦ mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
+**mit_T34_vyati)** **1.** √*pat* mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
 
-- **RU:** **1.** √*pat*¦ mit *vyati* выходить за пределы чего-л. [HARAVIJAYA 6,30].
-- **EN:** **1.** √*pat*¦ with *vyati* to go beyond something [HARAVIJAYA 6,30].
+- **RU:** **1.** √*pat* mit *vyati* выходить за пределы чего-л. [HARAVIJAYA 6,30].
+- **EN:** **1.** √*pat* with *vyati* to go beyond something [HARAVIJAYA 6,30].
   <sub>attested</sub>
 
 ## pat
@@ -5212,8 +5212,8 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 `pat~~h0_zz_sch`
 
 
-**ati_absol)** 1. pat¦ mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
-- **EN:** 1. pat¦ with ati, ˚patya absol. with Acc. so as to mean not caring about, [Jātakam. 2,26; 28,13.]
+**ati_absol)** 1. pat mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
+- **EN:** 1. pat with ati, ˚patya absol. with Acc. so as to mean not caring about, [Jātakam. 2,26; 28,13.]
 
 **vyati)** Mit vyati über etwas hinauskommen, Haravijaya 6,30. [46,43.]
 
@@ -5254,9 +5254,9 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 **abhisam_1)** Mit abhisam 1. hinfliegen, hineilen zu, stürzen auf (Akk.) — 2. einherfliegen.
 - **EN:** With abhisam 1. to fly thither, to hasten to, to rush upon (Acc.) — 2. to fly along.
 
-**ati_patya)** 1. pat¦ mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
+**ati_patya)** 1. pat mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
 
-- **RU:** 1. pat¦ mit ati, ˚patya Absol. mit Akk. так, т.е. не заботясь о, [Jātakam. 2,26; 28,13.]
+- **RU:** 1. pat mit ati, ˚patya Absol. mit Akk. так, т.е. не заботясь о, [Jātakam. 2,26; 28,13.]
   <sub>attested</sub>
 
 **fallen_lassen)** [Kaus.] fallen lassen, 
@@ -5281,14 +5281,14 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 `pat~~h0_zz_pwkvn`
 
 
-**mit_T2_abhyud)** **1.** *pat*¦ mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
-- **EN:** **1.** *pat*¦ with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+**mit_T2_abhyud)** **1.** *pat* mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
+- **EN:** **1.** *pat* with *abhyud* Caus. to cause to fly up to (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14).
 
 **mit_T6_abhisam_1)** — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
 - **EN:** — With *abhisam* 1〉 to fly thither, to hasten to, to rush upon (Acc.) — 2〉 to fly along.
 
-**mit_T9_ati)** **1.** *pat*¦ mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
-- **EN:** **1.** *pat*¦ with *ati* IV. *˚patya* Absol. with Acc. so v. a. not caring about [JĀTAKAM. 2,26]. [28,13].
+**mit_T9_ati)** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
+- **EN:** **1.** *pat* with *ati* IV. *˚patya* Absol. with Acc. so v. a. not caring about [JĀTAKAM. 2,26]. [28,13].
 
 **mit_T16_sama)** — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26].
 - **EN:** — With *samā* IV. *˚patita* having appeared unexpectedly, having presented itself [JĀTAKAM. 26].
@@ -5305,18 +5305,18 @@ Z. 3 read: to split, to shatter st. to cause to fly off u. s. w.
 **mit_T26)** — Mit *abhisam* 5.
 - **EN:** — With *abhisam* 5.
 
-**mit_T28_vyati)** **1.** *pat*¦ mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
+**mit_T28_vyati)** **1.** *pat* mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
 
-- **RU:** **1.** *pat*¦ mit *vyati* выходить за пределы чего-л. [HARAVIJAYA 6,30].
-- **EN:** **1.** *pat*¦ with *vyati* to go beyond something [HARAVIJAYA 6,30].
+- **RU:** **1.** *pat* mit *vyati* выходить за пределы чего-л. [HARAVIJAYA 6,30].
+- **EN:** **1.** *pat* with *vyati* to go beyond something [HARAVIJAYA 6,30].
   <sub>attested</sub>
 
-**1_pat_mit_T2)** **1.** *pat*¦ mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
+**1_pat_mit_T2)** **1.** *pat* mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
 
-- **RU:** **1.** *pat*¦ mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперёд.
+- **RU:** **1.** *pat* mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперёд.
   <sub>attested</sub>
 
-**1_pat_mit_T9_IV)** **1.** *pat*¦ mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* herabfallen auf (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. fallenlassen, schleudern (Worte) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
+**1_pat_mit_T9_IV)** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* herabfallen auf (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. fallenlassen, schleudern (Worte) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
 
-- **RU:** **1.** *pat*¦ mit *ati* IV. *˚patya* Absol. mit Acc. так v. a. не заботясь о [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
+- **RU:** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. так v. a. не заботясь о [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
   <sub>attested</sub>

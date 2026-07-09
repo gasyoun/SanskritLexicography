@@ -3,7 +3,7 @@
 `pat~~h0_00_pwg00`
 
 
-**1)** *pat*¦, *patati*
+**1)** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
@@ -30,7 +30,7 @@
 [KENOP. 1.] *patita* _n._ Flug
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913)
 
-- **RU:** *pat*¦, *patati*
+- **RU:** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
@@ -56,7 +56,7 @@
 [ṚV. 3,39,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.039.html#rv03.039.03) *keneṣitaṃ patati preṣitaṃ manaḥ*
 [KENOP. 1.] *patita* _n._ полёт
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913)
-- **EN:** *pat*¦, *patati*
+- **EN:** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)

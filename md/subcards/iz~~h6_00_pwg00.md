@@ -3,14 +3,14 @@
 `iz~~h6_00_pwg00`
 
 
-II. *iṣ*¦
+II. *iṣ*
 
-- **RU:** II. *iṣ*¦
+- **RU:** II. *iṣ*
   <sub>attested</sub>
 
-**1)** II. *iṣ*¦
+**1)** II. *iṣ*
  1) _adj._ sich rasch bewegend, eilend in *aramiṣ* .
-- **EN:** II. *iṣ*¦
+- **EN:** II. *iṣ*
  1) _adj._ moving quickly, hastening, in *aramiṣ*.
 
 **2)** — 2) _f._ Wunsch in *iṭcara* . — Ist identisch mit I. *iṣ*.

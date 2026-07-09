@@ -3,14 +3,14 @@
 `car~~h2_00_pwg00`
 
 
-**5)** *car*¦
+**5)** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* fressen
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
 
-- **RU:** *car*¦
+- **RU:** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* пожирать
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
-- **EN:** *car*¦
+- **EN:** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* "to graze, to feed (of animals)"
 [Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
   <sub>attested</sub>

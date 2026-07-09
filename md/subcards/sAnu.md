@@ -3,9 +3,9 @@
 `sAnu`
 
 
-**1)** *sanu*¦ in 2. *sanutar* fgg.
+**1)** *sanu* in 2. *sanutar* fgg.
 
-- **RU:** *sanu*¦ в 2. *sanutar* fgg.
+- **RU:** *sanu* в 2. *sanutar* fgg.
   <sub>lexicographic</sub>
 
 **NWS-1)** *sánu* [Ved]: gewinnend

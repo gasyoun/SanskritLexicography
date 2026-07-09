@@ -3,27 +3,27 @@
 `y_a~~h0_zz_pw03`
 
 
-**main)** **2.** *˚yā*¦ _Adj._ gehend.
+**main)** **2.** *˚yā* _Adj._ gehend.
 
-- **RU:** **2.** *˚yā*¦ _Adj._ идущий.
+- **RU:** **2.** *˚yā* _Adj._ идущий.
 - **EN:** 2. *˚yā* — _Adj._ going.
   <sub>attested</sub>
 
-**main)** **3.** *yā*¦ _f._ zu **1.** *ya*.
+**main)** **3.** *yā* _f._ zu **1.** *ya*.
 
-- **RU:** **3.** *yā*¦ _f._ к **1.** *ya*.
+- **RU:** **3.** *yā* _f._ к **1.** *ya*.
 - **EN:** 3. *yā* — _f._, see under 1. *ya*.
   <sub>attested</sub>
 
-**main)** **4.** **yā*¦ _f._ zu **2.** *ya*.
+**main)** **4.** **yā* _f._ zu **2.** *ya*.
 
-- **RU:** **4.** **yā*¦ _f._ к **2.** *ya*.
+- **RU:** **4.** **yā* _f._ к **2.** *ya*.
 - **EN:** 4. **yā* — _f._, see under 2. *ya*.
   <sub>attested</sub>
 
-**main)** **1.** √*yā*¦ Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
+**main)** **1.** √*yā* Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
 
-- **RU:** **1.** √*yā*¦ Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
+- **RU:** **1.** √*yā* Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
 - **EN:** 1. √*yā* — Caus. to maintain, to rear, raise [DIVYĀVAD. 499,1]; to be well, fare well [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 

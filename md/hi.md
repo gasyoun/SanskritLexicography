@@ -7,13 +7,13 @@ _PWG article — 20 sub-card(s), 111 sense(s) · RU 101/111 · EN 62/111_
 `hi~~h0_00_pwg00`
 
 
-*hi*¦, *hinoti*
+*hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
 [VOP. 12,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?12,4) *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
 3. pl., *hinvāna*; partic. *hita* s. bes.
-- **EN:** *hi*¦, *hinoti*
+- **EN:** *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
@@ -203,13 +203,13 @@ _PWG article — 20 sub-card(s), 111 sense(s) · RU 101/111 · EN 62/111_
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) shows. = *airśvasaṃgamayitāram* Comm.
   <sub>attested</sub>
 
-**1)** 1. *hi*¦, *hinoti*
+**1)** 1. *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
 [VOP. 12,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?12,4) *jidhyus, (pra) heṣyāmi* . med. *hinve, hinvate, hinvire, (pra) hiṣe, aheṣata*
 
-- **RU:** 1. *hi*¦, *hinoti*
+- **RU:** 1. *hi*, *hinoti*
 [DHĀTUP. 27,11](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*gatau vṛddhau*).* (pra) hiṇmasi*
 [AV.] *ahetana, ahema, ahyam, ahyan, (pra) ahait, (pra) ahaiṣīt, (pra) jighāya*
 [P. 7,3,56.](https://ashtadhyayi.com/sutraani/7/3/56)
@@ -851,7 +851,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 `hi~~h1_00_pwg00`
 
 
-**2)** 2. *hi*¦ indecl. Einfluss auf ein folgendes *sa*
+**2)** 2. *hi* indecl. Einfluss auf ein folgendes *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] wann pluta
@@ -964,7 +964,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [SARVADARŚANAS. 99,5. 14.] in zwei auf einander folgenden Sätzen: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
 [MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241)
 [R. 1,64,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,19)
-- **EN:** 2. *hi*¦ indecl. influence upon a following *sa*
+- **EN:** 2. *hi* indecl. influence upon a following *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] when pluta
@@ -1078,7 +1078,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241)
 [R. 1,64,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,19)
 
-**intro)** 2. *hi*¦ indecl. Einfluss auf ein folgendes *sa*
+**intro)** 2. *hi* indecl. Einfluss auf ein folgendes *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] wann pluta
@@ -1102,7 +1102,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [AK. 3,5,9](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,9), wo aber unsere Ausgg. *'ho hī* st. *hi hau* lesen. *śoke*
 [ŚABDAR.] im [ŚKDR.] Nie am Anfange eines Satzes.
 
-- **RU:** 2. *hi*¦ indecl. влияние на следующее *sa*
+- **RU:** 2. *hi* indecl. влияние на следующее *sa*
 [VS. PRĀT. 3,66.]
 [AV. PRĀT. 2,101.]
 [TS. PRĀT. 3,8.] [6,2.] когда pluta
@@ -1416,10 +1416,10 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 `hi~~h0_zz_pw`
 
 
-**1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+**1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
 
-- **RU:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
-- **EN:** **1.** √*hi*¦ *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+- **RU:** **1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
+- **EN:** **1.** √*hi* *hinoti* (*gatau vṛddhau*; Med. *hinve* u. s. w.)
   <sub>attested</sub>
 
 **1)** — 1〉 Act. Med. in Bewegung setzen, antreiben, anfeuern, reizen. Hierher wohl auch *hayant* Partic. Med. sich in Bewegung setzen, angefeuert werden u. s. w., sich beeifern, beeilen.
@@ -1579,21 +1579,21 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 — 1〉 to dispatch, send forth.
 — 2〉 to bring together, compose, fabricate, bring about, set in order.
 
-**hi2-pw-head)** **2.** *hi*¦ _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
+**hi2-pw-head)** **2.** *hi* _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
 — 1〉 begründend und bestätigend; denn, ja, nämlich. Häufig nach Demonstrativen, Relativen und Interrogativen. In [VS. PRĀT.] bezeichnet es den Schluss eines Abschnitt.
 — 2〉 aufmunternd beim Imperativ oder Potentialis doch. Ebenso *paśyāmo* *hi* wir wollen doch sehen.
 — 3〉 allerdings, jawohl, in der That. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) wohl — aber.
 — 4〉 häufig blosser Versfüller, insbes. zwischen zwei Vocalen zur Entfernung des Hiatus oder zur Gewinnung einer Länge. Erscheint in einem und demselben Satze sogar doppelt.
-- **EN:** **2.** *hi*¦ _Indecl._ (never at the beginning of a sentence; the verbum fin. is thereby orthotoned)
+- **EN:** **2.** *hi* _Indecl._ (never at the beginning of a sentence; the verbum fin. is thereby orthotoned)
 — 1〉 causal and confirmatory; for, indeed, namely. Frequently after demonstratives, relatives, and interrogatives. In [VS. PRĀT.] it marks the close of a section.
 — 2〉 hortatory with the imperative or potential, pray, just. Likewise *paśyāmo* *hi* let us just see.
 — 3〉 certainly, yes indeed, in truth. *hi — tu* or *hi — punar* ([BĀLAR. 296,4]) indeed — but.
 — 4〉 frequently a mere verse-filler, insbes. between two vowels to remove a hiatus or to gain a metrical length. Appears even doubled in one and the same sentence.
 
-**anupra+-pw)** **1.** √*hi*¦ mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
+**anupra+-pw)** **1.** √*hi* mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
 
-- **RU:** **1.** √*hi*¦ mit *anupra* VII. *˚hita* выпущенный, метнутый [KIR. 17,93].
-- **EN:** **1.** √*hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
+- **RU:** **1.** √*hi* mit *anupra* VII. *˚hita* выпущенный, метнутый [KIR. 17,93].
+- **EN:** **1.** √*hi* with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
   <sub>attested</sub>
 
 **PW-6)** — 6〉 = **2.** *hā* [BHĀG. P.]
@@ -1776,9 +1776,9 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 - **RU:** — 2〉 собирать вместе, соединять, изготовлять, приводить в порядок, устраивать.
   <sub>attested</sub>
 
-**PW2-head)** **2.** *hi*¦ _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
+**PW2-head)** **2.** *hi* _Indecl._ (nie am Anfange eines Satzes; das Verbum fin. dabei orthotornirt)
 
-- **RU:** **2.** *hi*¦ _Indecl._ (никогда в начале предложения; глагол fin. при этом ортотонирован)
+- **RU:** **2.** *hi* _Indecl._ (никогда в начале предложения; глагол fin. при этом ортотонирован)
   <sub>attested</sub>
 
 **PW2-1)** — 1〉 begründend und bestätigend; denn, ja, nämlich. Häufig nach Demonstrativen, Relativen und Interrogativen. In [VS. PRĀT.] bezeichnet es den Schluss eines Abschnitt.
@@ -1806,10 +1806,10 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 `hi~~h0_zz_sch`
 
 
-**anupra+)** 1. hi¦ mit anupra, ˚hita abgeschossen, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
+**anupra+)** 1. hi mit anupra, ˚hita abgeschossen, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
 
-- **RU:** 1. hi¦ с anupra, ˚hita выпущенный (стрелой), отстреленный, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
-- **EN:** 1. hi¦ with anupra, ˚hita shot off, discharged, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
+- **RU:** 1. hi с anupra, ˚hita выпущенный (стрелой), отстреленный, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
+- **EN:** 1. hi with anupra, ˚hita shot off, discharged, [Kir. 17,33.] {part=,seq=27937,type=,n=2}
   <sub>attested</sub>
 
 ## hi
@@ -1817,8 +1817,8 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 `hi~~h0_zz_pwkvn`
 
 
-**anupra+)** **1.** *hi*¦ mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
+**anupra+)** **1.** *hi* mit *anupra* VII. *˚hita* abgeschossen [KIR. 17,93].
 
-- **RU:** **1.** *hi*¦ с *anupra* VII. *˚hita* выпущенный (стрелой), отстреленный [KIR. 17,93].
-- **EN:** **1.** *hi*¦ with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
+- **RU:** **1.** *hi* с *anupra* VII. *˚hita* выпущенный (стрелой), отстреленный [KIR. 17,93].
+- **EN:** **1.** *hi* with *anupra* VII. *˚hita* shot off, discharged [KIR. 17,93].
   <sub>attested</sub>

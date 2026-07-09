@@ -3,7 +3,7 @@
 `m_a~~h1_00_pwg00`
 
 
-**intro)** 2. *mā*¦ (bildet Formen auch aus *mī), mimāti, mimanti; mimīte*
+**intro)** 2. *mā* (bildet Formen auch aus *mī), mimāti, mimanti; mimīte*
 [DHĀTUP. 25,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*śabde*) .
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *amīmet, mimāya; mīmayati*
@@ -16,7 +16,7 @@
 [9,64,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19) — *memyat* partic. intens. blökend vom Bock
 [ṚV. 1,162,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.02)
 
-- **RU:** 2. *mā*¦ (образует формы также из *mī), mimāti, mimanti; mimīte*
+- **RU:** 2. *mā* (образует формы также из *mī), mimāti, mimanti; mimīte*
 [DHĀTUP. 25,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*śabde*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *amīmet, mimāya; mīmayati*

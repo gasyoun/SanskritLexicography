@@ -3,7 +3,7 @@
 `_sru~~h0_00_pwg00`
 
 
-**1)** *śru*¦ (*śravaṇe*
+**1)** *śru* (*śravaṇe*
 [DHĀTUP. 22,44.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)), *śṛṇoti*
 [P. 3,1,74.](https://ashtadhyayi.com/sutraani/3/1/74)
 [VOP. 8,94.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,94) *śṛṇumas* und *śṛṇmas, śṛṇuvas* und *śṛṇvas* 95. *śuśrāva, śuśruva, śuśruma (śuśruvaṃs* s. bes.)
@@ -120,7 +120,7 @@ Schol. zu [P. 6,3,133.](https://ashtadhyayi.com/sutraani/6/3/133) [7,1,45.](http
 [R. 1,70,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,8) In der Bed. bitten (nach den Scholl.)
 [BHAṬṬ. 8,77.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,77)
 
-- **RU:** *śru*¦ (*śravaṇe*
+- **RU:** *śru* (*śravaṇe*
 [DHĀTUP. 22,44.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)), *śṛṇoti*
 [P. 3,1,74.](https://ashtadhyayi.com/sutraani/3/1/74)
 [VOP. 8,94.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,94) *śṛṇumas* und *śṛṇmas, śṛṇuvas* und *śṛṇvas* 95. *śuśrāva, śuśruva, śuśruma (śuśruvaṃs* s. bes.)

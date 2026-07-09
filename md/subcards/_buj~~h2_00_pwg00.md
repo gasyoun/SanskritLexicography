@@ -3,7 +3,7 @@
 `_buj~~h2_00_pwg00`
 
 
-**head-3)** 3. *bhuj*¦, *bhunakti (bhuñjati*
+**head-3)** 3. *bhuj*, *bhunakti (bhuñjati*
 [GṚHYASAṂGR. 2,30.]
 [Spr. 4059.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4059) [4844](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4844)) und *bhuṅkte (upabhuñjase*
 [MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) *bhuñjate*
@@ -17,7 +17,7 @@
 [Kār. 2] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *abhukta*, ved. *bhujema; bhuktvā, bhoktum, bhojase*
 [ṚV. 1,55,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.055.html#rv01.055.03) [8,54,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.03)
 [VĀLAKH. 3,3.]
-- **EN:** 3. *bhuj*¦, *bhunakti (bhuñjati*
+- **EN:** 3. *bhuj*, *bhunakti (bhuñjati*
 [GṚHYASAṂGR. 2,30.]
 [Spr. 4059.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4059) [4844](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4844)) and *bhuṅkte (upabhuñjase*
 [MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) *bhuñjate*

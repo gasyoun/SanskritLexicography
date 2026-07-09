@@ -3,7 +3,7 @@
 `h_a~~h1_00_pwg00`
 
 
-**intro)** 2. *hā*¦, *jahāti*
+**intro)** 2. *hā*, *jahāti*
 [DHĀTUP. 25,8](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*tyāge*).
 [VOP. 10,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,5) *jahitas* (
 [TBR. 1,4,6,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,5)) und *jahītas, jahithas* und *jahīthas*
@@ -30,7 +30,7 @@
 [10,14,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.08) *˚hāya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
 [VOP. 26,212.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212)
-- **EN:** 2. *hā*¦, *jahāti*
+- **EN:** 2. *hā*, *jahāti*
 [DHĀTUP. 25,8](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*tyāge*).
 [VOP. 10,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,5) *jahitas* (
 [TBR. 1,4,6,5](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,5)) and *jahītas, jahithas* and *jahīthas*

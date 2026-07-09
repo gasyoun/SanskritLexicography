@@ -3,7 +3,7 @@
 `ban_d~~h0_00_pwg00`
 
 
-*bandh*¦, *badhnāti*
+*bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (fälschlich *batsyati, va˚*
@@ -13,7 +13,7 @@
 [MBH. 3,10727](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727); *banddhum* (hier und da fälschlich *baddhum), bandhitum*
 [R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
 
-- **RU:** *bandh*¦, *badhnāti*
+- **RU:** *bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (ошибочно *batsyati, va˚*
@@ -24,7 +24,7 @@
 [R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
   <sub>attested</sub>
 
-**1))** *bandh*¦, *badhnāti*
+**1))** *bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (fälschlich *batsyati, va˚*

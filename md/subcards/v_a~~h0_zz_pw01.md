@@ -3,9 +3,9 @@
 `v_a~~h0_zz_pw01`
 
 
-**1)** **5.** √*vā*¦, *vayati*
+**1)** **5.** √*vā*, *vayati*
 — 1〉 weben, flechten, künstlich ineinanderfügen, auch Reden, Lieder u. s. w.
-- **EN:** **5.** √*vā*¦, *vayati*
+- **EN:** **5.** √*vā*, *vayati*
 — 1〉 to weave, plait, artfully interlace, also of speeches, songs u. s. w.
 
 **2)** — 2〉 beweben, gleichsam zu einem Gewebe machen [BHAṬṬ.]
@@ -61,8 +61,8 @@
 **prati-vi-3)** — 3〉 *samuta* zusammengenäht in *tardmasamuta*.
 - **EN:** — 3〉 *samuta* sewn together, in *tardmasamuta*.
 
-**prati-)** **2.** √*vā*¦ mit *pra*, vgl. *saṃvatsarapravāta*.
-- **EN:** **2.** √*vā*¦ with *pra*, vgl. *saṃvatsarapravāta*.
+**prati-)** **2.** √*vā* mit *pra*, vgl. *saṃvatsarapravāta*.
+- **EN:** **2.** √*vā* with *pra*, vgl. *saṃvatsarapravāta*.
 
-**caus)** **5.** √*vā*¦ Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
-- **EN:** **5.** √*vā*¦ Caus. *vāpayate* to have woven, to cause to be woven [DIVYĀVAD. 231,8. fgg.]
+**caus)** **5.** √*vā* Caus. *vāpayate* weben lassen [DIVYĀVAD. 231,8. fgg.]
+- **EN:** **5.** √*vā* Caus. *vāpayate* to have woven, to cause to be woven [DIVYĀVAD. 231,8. fgg.]

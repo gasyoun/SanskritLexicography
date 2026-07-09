@@ -3,9 +3,9 @@
 `aSru`
 
 
-**1)** *asru*¦ s. *aśru* .
+**1)** *asru* s. *aśru* .
 
-- **RU:** *asru*¦ s. *aśru* .
+- **RU:** *asru* s. *aśru* .
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: Sen 1952 : 26] [asru Ep, unsp] Subst m tears. R III.61.3 . [ v.l. aśru . ]

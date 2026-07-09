@@ -3,12 +3,12 @@
 `_sam~~h0_zz_pw00`
 
 
-**1)** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+**1)** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 
-- **RU:** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 стараться, усердно трудиться, работать; insbes. о деятельности при богослужении.
-- **EN:** **1.** √*śam*¦ (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **EN:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 to toil, be zealous, work; insbes. of activity in the cult.
   <sub>attested</sub>
 
@@ -24,12 +24,12 @@
 - **EN:** — 3〉 *śaśamāna* zealously engaged, occupied, diligent; especially in work for the gods.
   <sub>attested</sub>
 
-**1)** **2.** √*śam*¦, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
+**1)** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 ruhig —, still werden, befriedigt sein.
 
-- **RU:** **2.** √*śam*¦, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
+- **RU:** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 успокаиваться, затихать, быть удовлетворённым.
-- **EN:** **2.** √*śam*¦, *śāmyati* (metrically also Med. and *śamet*; *Pass. impers. *śamyate, aśami*)
+- **EN:** **2.** √*śam*, *śāmyati* (metrically also Med. and *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 to become calm, still, satisfied.
   <sub>attested</sub>
 

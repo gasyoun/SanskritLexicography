@@ -3,7 +3,7 @@
 `muc~~h1_00_pwg00`
 
 
-**1)** 2. *muc*¦ (= 1. *muc)* nom. ag. am Ende eines comp. Jmd befreiend von: *aṃho˚* (s. bes.), *āgo˚, eno˚*
+**1)** 2. *muc* (= 1. *muc)* nom. ag. am Ende eines comp. Jmd befreiend von: *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
 [10.] entlassend, von sich gebend, schleudernd: *śramaphena˚ (turaṃgama)*
@@ -23,7 +23,7 @@
 [BHĀG. P. 3,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,20)
 — Vgl. *a˚, jala˚, toya˚, payo˚, parṇa˚, mada˚, vāri˚* .
 
-- **RU:** 2. *muc*¦ (= 1. *muc)* nom. ag. в конце comp. освобождающий кого-либо от: *aṃho˚* (s. bes.), *āgo˚, eno˚*
+- **RU:** 2. *muc* (= 1. *muc)* nom. ag. в конце comp. освобождающий кого-либо от: *aṃho˚* (s. bes.), *āgo˚, eno˚*
 [TS. 7,5,22,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,22,1) *doṣa˚*
 [ŚATR. 14,55.] *sarvadoṣa˚*
 [10.] отпускающий, извергающий, мечущий: *śramaphena˚ (turaṃgama)*

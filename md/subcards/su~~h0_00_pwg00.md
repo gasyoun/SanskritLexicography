@@ -3,7 +3,7 @@
 `su~~h0_00_pwg00`
 
 
-**1)** 1. *su*¦, *sunoti*
+**1)** 1. *su*, *sunoti*
 [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe*
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
@@ -57,7 +57,7 @@
 [BHĀG. P. 7,15,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,48) neutr. [CHĀND. UP. 5,12,1.]
 — Vgl. 1. *sava*, 1. *savana, asuta, adriṣuta, jambhasuta, suṣuta* .
 
-- **RU:** *su*¦, *sunoti*
+- **RU:** *su*, *sunoti*
 [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe*
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
@@ -110,7 +110,7 @@
 [10,6,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,8) = *somayāga*
 [BHĀG. P. 7,15,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,48) neutr. [CHĀND. UP. 5,12,1.]
 — Vgl. 1. *sava*, 1. *savana, asuta, adriṣuta, jambhasuta, suṣuta* .
-- **EN:** *su*¦, *sunoti* [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe* [VOP.]). *sunota* [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana* [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta* [10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* and *sunvat* [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; med. *sunve*
+- **EN:** *su*, *sunoti* [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe* [VOP.]). *sunota* [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana* [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta* [10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* and *sunvat* [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; med. *sunve*
   <sub>attested</sub>
 
 **3)** sg. [7,29,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.01) [9,88,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.088.html#rv09.088.01) *sunvire, sunudhvam, sunavai*

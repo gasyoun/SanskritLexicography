@@ -3,10 +3,10 @@
 `han~~h0_zz_pw00`
 
 
-**intro)** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+**intro)** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
 
-- **RU:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
-- **EN:** **1.** √*han*¦, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **RU:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **EN:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [confused with **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
   <sub>attested</sub>
 
 **1)** — 1〉 schlagen (mit Acc.), — auf (Loc.), hämmern, die Trommel —, einen Spielball —, eine Flüssigkeit schlagen (klopfen).

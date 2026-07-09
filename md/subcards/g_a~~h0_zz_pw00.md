@@ -3,10 +3,10 @@
 `g_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
+**1)** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
 — 1〉 kommen.
 
-- **RU:** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
+- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
 - **EN:** 1. √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and **gāte* — 1〉 to come.
   <sub>attested</sub>
 
@@ -288,9 +288,9 @@
 **sam-ā_2)** — 2〉 hingehen zu (Acc.).
 - **EN:** — 2〉 to go towards (Acc.).
 
-**1)** **2.** *˚gā*¦ _Adj._ hingehend zu, gehend, wandelnd.
+**1)** **2.** *˚gā* _Adj._ hingehend zu, gehend, wandelnd.
 
-- **RU:** **2.** *˚gā*¦ _Adj._ идущий к, идущий, странствующий.
+- **RU:** **2.** *˚gā* _Adj._ идущий к, идущий, странствующий.
 - **EN:** 2. *˚gā* _Adj._ going towards, going, moving.
   <sub>attested</sub>
 

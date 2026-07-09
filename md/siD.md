@@ -7,7 +7,7 @@ _PWG article — 29 sub-card(s), 292 sense(s) · RU 188/292 · EN 243/292_
 `si_d~~h0_00_pwg00`
 
 
-**1)** *sidh*¦, *sedhati*
+**1)** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . scheuchen, treiben; vertreiben: *dveṣaḥ*
@@ -18,7 +18,7 @@ _PWG article — 29 sub-card(s), 292 sense(s) · RU 188/292 · EN 243/292_
 [PAÑCAV. BR. 10,3,13.] *api stuhyapi sedhāsmāṃstathyamuktam* so v. a. du magst uns loben oder strafen
 [BHAṬṬ. 8,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,92)
 
-- **RU:** *sidh*¦, *sedhati*
+- **RU:** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . пугать, гнать; прогонять: *dveṣaḥ*
@@ -28,7 +28,7 @@ _PWG article — 29 sub-card(s), 292 sense(s) · RU 188/292 · EN 243/292_
 [8,35,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.16) [9,71,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.071.html#rv09.071.08) [10,76,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.076.html#rv10.076.04) [KAUŚ. 97.] *vācā siddhāḥ* животных
 [PAÑCAV. BR. 10,3,13.] *api stuhyapi sedhāsmāṃstathyamuktam* так v. a. ты можешь нас хвалить или наказывать
 [BHAṬṬ. 8,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,92)
-- **EN:** *sidh*¦, *sedhati*
+- **EN:** *sidh*, *sedhati*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) (*gatikarman*).
 [DHĀTUP. 3,10](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=3) (*gatyām*). 11 (*śāstre māṅgalye ca*).* asedhīt*
 [VOP. 8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) *asedhiṣṭām, asaitsīt* 47. *asaiddhām* 48. partic. *siddha* . {to scare off, drive; drive away}: *dveṣaḥ*
@@ -765,11 +765,11 @@ Vārtt. 2 zu [P. 2,4,12.](https://ashtadhyayi.com/sutraani/2/4/12) 1 zu [85.](ht
 `si_d~~h1_00_pwg00`
 
 
-**2)** 2. *sidh*¦ (vgl. *sādh), sidhyati*
+**2)** 2. *sidh* (vgl. *sādh), sidhyati*
 [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*).* siṣedha, asaitsīt, setsyati* (vgl.
 [Kār. 4. 8] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. nur des Metrums wegen.
 
-- **RU:** 2. *sidh*¦ (vgl. *sādh), sidhyati*
+- **RU:** 2. *sidh* (vgl. *sādh), sidhyati*
 [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*).* siṣedha, asaitsīt, setsyati* (vgl.
 [Kār. 4. 8] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. nur des Metrums wegen.
 - **EN:** *sidh* (vgl. *sādh), sidhyati* [DHĀTUP. 26,83](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*saṃrāddhau*). * siṣedha, asaitsīt, setsyati* (vgl. [Kār. 4. 8] from [SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)). med. only for the sake of the metre.
@@ -1795,8 +1795,8 @@ Davon [SĀH. D. 2,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/ap
 `si_d~~h0_zz_pw00`
 
 
-**1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
-- **EN:** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+**1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+- **EN:** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 
 **1)** — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
 - **EN:** — 1〉 to scare, drive; drive away. *siddha* scared away.
@@ -1984,13 +1984,13 @@ Davon [SĀH. D. 2,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/ap
 - **EN:** — With **vi* (*˚sedhati*) to betake oneself to (Acc.).
   <sub>attested</sub>
 
-**root-1)** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+**root-1)** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
 — 2〉 loben oder strafen [BHAṬṬ.]
 — *Desid. vom Caus. *siṣedhayiṣati*.
 — *Intens. *seṣidhyate*. Vgl. *anu*.
 
-- **RU:** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+- **RU:** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 — 1〉 пугать, гнать; прогонять. *siddha* прогнанный.
 — 2〉 хвалить или карать [BHAṬṬ.]
 — *Desid. от Caus. *siṣedhayiṣati*.
@@ -2100,10 +2100,10 @@ Davon [SĀH. D. 2,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/ap
 `si_d~~h0_zz_pw01`
 
 
-**2.** √*sidh*¦, *sidhyati* (metrisch oder ungenau auch Med.)
+**2.** √*sidh*, *sidhyati* (metrisch oder ungenau auch Med.)
 
-- **RU:** **2.** √*sidh*¦, *sidhyati* (метрически или неточно также Med.)
-- **EN:** **2.** √*sidh*¦, *sidhyati* (metrically or loosely also Med.)
+- **RU:** **2.** √*sidh*, *sidhyati* (метрически или неточно также Med.)
+- **EN:** **2.** √*sidh*, *sidhyati* (metrically or loosely also Med.)
   <sub>attested</sub>
 
 **1)** — 1〉 Zum Ziele kommen, treffen; mit Loc.

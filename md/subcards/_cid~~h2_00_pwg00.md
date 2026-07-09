@@ -3,10 +3,10 @@
 `_cid~~h2_00_pwg00`
 
 
-**1)** *chid*¦
+**1)** *chid*
 
-- **RU:** *chid*¦
-- **EN:** 1. *chid*¦
+- **RU:** *chid*
+- **EN:** 1. *chid*
   <sub>attested</sub>
 
 **2)** 2) *udanvacchinnā bhūḥ* so v. a. begrenzt

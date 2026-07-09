@@ -3,13 +3,13 @@
 `_d_a~~h1_00_pwg00`
 
 
-**1)** 2. *dhā*¦ (= 1. *dhā*)
+**1)** 2. *dhā* (= 1. *dhā*)
  1) _adj._ nom. ag. am Ende von compp.; s. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* u. s. w. Verkürzt *dha* in *adomadha, garbhadha* . Nach
 [MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) ist *dhā = dhāraka* (so haben
 [ŚKDR.] und [WILS.] statt *dvāraka* gelesen) und *brahman*; der nom. lautet hier *dhā* nicht *dhās* (wie
 [ŚKDR.] und [WILS.] richtig angeben). Nach
 [EKĀCṢARAK.] im [ŚKDR.] ist *dhā* auch ein Name Bṛhaspati's.
-- **EN:** 2. *dhā*¦ (= 1. *dhā*)
+- **EN:** 2. *dhā* (= 1. *dhā*)
  1) _adj._ nom. ag. at the end of compp.; s. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* u. s. w. shortened *dha* in *adomadha, garbhadha*. According to
 [MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* is (so
 [ŚKDR.] and [WILS.] have read instead of *dvāraka*) and *brahman*; the nom. reads here *dhā* not *dhās* (as

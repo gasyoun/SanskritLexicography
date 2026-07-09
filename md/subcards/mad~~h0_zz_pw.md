@@ -8,7 +8,7 @@
 
 - **RU:** — 1〉 intrans. Acc., редко Med.
 — a〉 радоваться, быть радостным, весёлым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чём-л., угощаться чем-л. или в чём-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном Bed.) от чего-л. (Instr.). *mandamāna* радостно.
-- **EN:** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+- **EN:** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
 — 1〉 intrans. Acc., rarely Med.
 — a〉 to rejoice, be glad, be cheerful, exult, delight in, revel in, be at ease in, fare well in or on (Instr., Gen., Loc., rarely Acc.), to become intoxicated with something, to become intoxicated (also in the figurative Bed.) by (Instr.). *mandamāna* joyful.
   <sub>attested</sub>
@@ -263,30 +263,30 @@
 - **EN:** — 3〉 Med. to be inspired or drunk.
   <sub>attested</sub>
 
-**1)** **2.** √*mad* (stark √*mād*)¦ in *sadhamad*.
+**1)** **2.** √*mad* (stark √*mād*) in *sadhamad*.
 
-- **RU:** **2.** √*mad* (сильная форма √*mād*)¦ в *sadhamad*.
-- **EN:** **2.** √*mad* (strong stem √*mād*)¦ in *sadhamad*.
+- **RU:** **2.** √*mad* (сильная форма √*mād*) в *sadhamad*.
+- **EN:** **2.** √*mad* (strong stem √*mād*) in *sadhamad*.
   <sub>attested</sub>
 
-**1)** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
+**1)** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
 — Mit *ni* in *nimada*.
 — *Caus. *nimādayati* deutlich aussprechen.
 — Mit *upani* zum Stillstehen bringen, zurückhalten.
-- **EN:** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; to hesitate, wait, stand still.
+- **EN:** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; to hesitate, wait, stand still.
 — With *ni* in *nimada*.
 — *Caus. *nimādayati* to pronounce distinctly.
 — With *upani* to bring to a standstill, to hold back.
 
-**1)** **4.** √*mad*¦ mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+**1)** **4.** √*mad* mit *nis* Caus. (*nirmādayati*) abwaschen [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
 
-- **RU:** **4.** √*mad*¦ с *nis* Caus. (*nirmādayati*) омывать, смывать [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
-- **EN:** **4.** √*mad*¦ with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+- **RU:** **4.** √*mad* с *nis* Caus. (*nirmādayati*) омывать, смывать [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
+- **EN:** **4.** √*mad* with *nis* Caus. (*nirmādayati*) to wash off [MAHĀVY. 263,75]. [DIVYĀVAD. 53,18]. [185,21]. [343,1].
   <sub>attested</sub>
 
-**root-paradigm)** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+**root-paradigm)** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
 
-- **RU:** **1.** √*mad*, √*mand*¦, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
+- **RU:** **1.** √*mad*, √*mand*, *madati, mandati* (trans.), *˚te* (intrans.), *mamatti, mādyati* (intrans.).
   <sub>attested</sub>
 
 **3-header)** — 3〉 *matta*
@@ -409,9 +409,9 @@
 - **RU:** — 1〉 доставлять наслаждение, веселить.
   <sub>attested</sub>
 
-**root-paradigm)** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
+**root-paradigm)** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; zögern, zuwarten, stillstehen.
 
-- **RU:** **3.** √*mad*, √*mand*¦, *˚madati, mamattana, mamandhi, amaman*; медлить, выжидать, стоять неподвижно.
+- **RU:** **3.** √*mad*, √*mand*, *˚madati, mamattana, mamandhi, amaman*; медлить, выжидать, стоять неподвижно.
   <sub>attested</sub>
 
 **nis-root)** — Mit *ni* in *nimada*.

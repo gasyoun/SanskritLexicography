@@ -7,7 +7,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 `dah~~h0_00_pwg00`
 
 
-**1)** *dah*¦, *dahati*
+**1)** *dah*, *dahati*
 [DHĀTUP. 23,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *dadāha; adhākṣīt* (
 [VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* gehört zu *dagh), dhakṣi*; partic. *dhakṣat* und *dakṣat* (vgl.
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Kār.
@@ -56,7 +56,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [69,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,12) *yāvajjīvaṃ jaḍo (sutaḥ) dahet*
 [PAÑCAT. Pr. 4.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?0,4)
 
-- **RU:** *dah*¦, *dahati*
+- **RU:** *dah*, *dahati*
 [DHĀTUP. 23,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *dadāha; adhākṣīt* (
 [VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* относится к *dagh), dhakṣi*; partic. *dhakṣat* и *dakṣat* (vgl.
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Kār.
@@ -865,10 +865,10 @@ vernichtet
 `dah~~h1_00_pwg00`
 
 
-**2)** *dah*¦ (= 1. *dah*) _adj._ brennend, am Ende eines comp.: *dakṣiṇadhak (˚sad*
+**2)** *dah* (= 1. *dah*) _adj._ brennend, am Ende eines comp.: *dakṣiṇadhak (˚sad*
 [VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
 
-- **RU:** *dah*¦ (= 1. *dah*) _adj._ «пылающий, горящий», в конце comp.: *dakṣiṇadhak (˚sad*
+- **RU:** *dah* (= 1. *dah*) _adj._ «пылающий, горящий», в конце comp.: *dakṣiṇadhak (˚sad*
 [VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
   <sub>attested</sub>
 
@@ -877,7 +877,7 @@ vernichtet
 `dah~~h2_00_pwg00`
 
 
-**1. основное значение)** 1. *dah*¦
+**1. основное значение)** 1. *dah*
 Z. 3 *dahiṣyati* auch
 [PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
 
@@ -886,7 +886,7 @@ Z. 3 *dahiṣyati* auch
 [Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* würde dieses auch gebrannt
 [VṚDDHA-CĀṆ. 11,7.]
 
-- **RU:** 1. *dah*¦
+- **RU:** 1. *dah*
 Z. 3 *dahiṣyati* тоже
 [PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
 
@@ -945,10 +945,10 @@ Z. 3 *dahiṣyati* тоже
 `dah~~h3_00_pwg00`
 
 
-**1)** *dah*¦, *hemante himapātena padminī kiṃ na dahyate* versengt werden
+**1)** *dah*, *hemante himapātena padminī kiṃ na dahyate* versengt werden
 [Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385)
 
-- **RU:** *dah*¦, *hemante himapātena padminī kiṃ na dahyate* «обжигаться, опаляться»
+- **RU:** *dah*, *hemante himapātena padminī kiṃ na dahyate* «обжигаться, опаляться»
 [Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385)
   <sub>attested</sub>
 
@@ -1062,10 +1062,10 @@ Z. 3 *dahiṣyati* тоже
 `dah~~h0_zz_pw`
 
 
-**1)** **1.** √*dah*¦
+**1)** **1.** √*dah*
 — 1〉 *dahati* (episch auch Med.)
 
-- **RU:** **1.** √*dah*¦
+- **RU:** **1.** √*dah*
 — 1〉 *dahati* (в эпосе также Med.)
   <sub>attested</sub>
 
@@ -1390,11 +1390,11 @@ Z. 3 *dahiṣyati* тоже
 — Caus. verbrennen lassen.
 — Mit *vyatisam* durcheinander —, in Bausch und Bogen verbrennen.
 — Mit *anusam* der Länge nach zusammenbrennen.
-**2.** *˚dah*¦ _Adj._ brennend.
+**2.** *˚dah* _Adj._ brennend.
 
 - **RU:** — c) изнывать, томиться горем.
  — Caus. давать сжечь, велеть сжечь.
  — С *vyatisam* сжигать вперемешку, целиком, огулом.
  — С *anusam* сгорать вдоль, по длине.
-** 2. ** *˚dah* ¦ _Adj._ горящий.
+** 2. ** *˚dah* _Adj._ горящий.
   <sub>attested</sub>

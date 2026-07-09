@@ -3,11 +3,11 @@
 `v_a~~h2_00_pwg00`
 
 
-3. *vā*¦, *vāyati*
+3. *vā*, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; auch med. in der Bed. von 2. *vā*; partic. *vāna* (s. bes.) und *vāta* .
 
 - **RU:** 3. *vā*, *vāyati* [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; также med. в Bed. от 2. *vā*; partic. *vāna* (s. bes.) и *vāta* .
-- **EN:** 3. *vā*¦, *vāyati*
+- **EN:** 3. *vā*, *vāyati*
 [DHĀTUP. 22,24](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) (*śoṣaṇe*).* avāsīt*; also med. in the Bed. of 2. *vā*; partic. *vāna* (s. bes.) and *vāta* .
   <sub>attested</sub>
 

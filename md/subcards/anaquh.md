@@ -3,9 +3,9 @@
 `anaquh`
 
 
-**1)** *anaḍuh*¦ Schwächung von *anaḍvāh* vor einigen Casusendungen, in Ableitungen und Zusammensetzungen.
+**1)** *anaḍuh* Schwächung von *anaḍvāh* vor einigen Casusendungen, in Ableitungen und Zusammensetzungen.
 
-- **RU:** *anaḍuh*¦ ослабленная форма от *anaḍvāh* перед некоторыми падежными окончаниями, в производных и сложных словах.
+- **RU:** *anaḍuh* ослабленная форма от *anaḍvāh* перед некоторыми падежными окончаниями, в производных и сложных словах.
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: Katre 1968f (1) : 26] *anaḍuh* [Śā, Ling] Subst m an ox, bull. Pāṇ 7.1.98 .

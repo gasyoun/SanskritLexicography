@@ -3,7 +3,7 @@
 `ban_d~~h0_zz_pw00`
 
 
-**root_intro)** √*bandh*¦, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
+**root_intro)** √*bandh*, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
 - **EN:** √*bandh*, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
 
 **1)** — 1〉 binden, anbinden, anheften, fesseln, umstricken. Med. und der späteren Sprache Act. sich Etwas anbinden, — umbinden. In dieser Bed. auch *badhyati* (nach der v. l. Jmd Etwas anheften). In der Philosophie so v. a. an die Welt —, an das Böse fesseln (im Gegensatz zu erlösen) [KAP. 3,73]. Pass. gefesselt werden, wieder sündigen. *baddha* gebunden, gefesselt, umstrickt, angebunden, gefesselt, aufgebunden, aufgehängt; gefesselt in philosophischem Sinne [KAP. 1,7,93].

@@ -3,15 +3,15 @@
 `_as~~h4_00_pwg00`
 
 
-2. *ās*¦ mit *adhi*
+2. *ās* mit *adhi*
 
-- **RU:** 2. *ās*¦ с *adhi*
+- **RU:** 2. *ās* с *adhi*
   <sub>attested</sub>
 
-**intro)** *ās*¦ mit *adhi*
+**intro)** *ās* mit *adhi*
  4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
-- **EN:** *ās*¦ with *adhi*
+- **EN:** *ās* with *adhi*
  4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
 

@@ -3,10 +3,10 @@
 `vas~~h7_00_pwg00`
 
 
-**1)** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
+**1)** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
 
-- **RU:** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
-- **EN:** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana*
+- **RU:** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
+- **EN:** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana*
 v. l. st. *sneha; avaharaṇa* and *upaharaṇa*
 v. l. st. *apaharaṇa; vadhe*
 [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)

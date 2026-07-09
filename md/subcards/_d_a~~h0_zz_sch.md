@@ -3,8 +3,8 @@
 `_d_a~~h0_zz_sch`
 
 
-**abhi corr.)** 1. dhā¦ mit abhi, S. 152, Sp. 1, Z. 2 lies abhíhita.
-- **EN:** 1. dhā¦ with abhi, p. 152, col. 1, l. 2 read abhíhita.
+**abhi corr.)** 1. dhā mit abhi, S. 152, Sp. 1, Z. 2 lies abhíhita.
+- **EN:** 1. dhā with abhi, p. 152, col. 1, l. 2 read abhíhita.
 
 **anvava)** — Mit anvava [Āpast. Śr. 8,11,16]; Gṛhy. 17,5.
 - **EN:** — With anvava [Āpast. Śr. 8,11,16]; Gṛhy. 17,5.

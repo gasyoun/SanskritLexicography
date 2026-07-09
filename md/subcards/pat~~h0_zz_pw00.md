@@ -3,8 +3,8 @@
 `pat~~h0_zz_pw00`
 
 
-**layer-marker)** **1.** √*pat*¦, *patati* (episch auch Med.)
-- **EN:** **1.** √*pat*¦, *patati* (in epic also Med.)
+**layer-marker)** **1.** √*pat*, *patati* (episch auch Med.)
+- **EN:** **1.** √*pat*, *patati* (in epic also Med.)
 
 **1)** — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 - **EN:** — 1〉 to fly, to move swiftly through the air (of animate and inanimate things), to wave (of banners), to speed away, to flee (of time).
@@ -574,7 +574,7 @@
 - **EN:** — 2〉 to rise toward someone (Acc.).
   <sub>attested</sub>
 
-**1〉)** **1.** √*pat*¦, *patati* (episch auch Med.)
+**1〉)** **1.** √*pat*, *patati* (episch auch Med.)
 — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 
 - **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевлённых и неодушевлённых предметах), веять (о знамёнах), мчаться, убегать (о времени).

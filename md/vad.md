@@ -7,7 +7,7 @@ _PWG article — 47 sub-card(s), 329 sense(s) · RU 303/329 · EN 271/329_
 `vad~~h0_00_pwg00`
 
 
-**root-head)** *vad*¦, *vadati* und *˚te*
+**root-head)** *vad*, *vadati* und *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -23,7 +23,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
 
-- **RU:** *vad*¦, *vadati* und *˚te*
+- **RU:** *vad*, *vadati* und *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -38,7 +38,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 1,5,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,1,18) *vaditum; uditvā*
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
-- **EN:** *vad*¦, *vadati* and *˚te*
+- **EN:** *vad*, *vadati* and *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -2754,14 +2754,14 @@ try not to speak with me about it
 `vad~~h1_00_pwg00`
 
 
-*vad*¦ caus.
-- **EN:** *vad*¦ caus.
+*vad* caus.
+- **EN:** *vad* caus.
 
-**2)** *vad*¦ caus.
+**2)** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* machen viel Lärm von sich
 [Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 
-- **RU:** *vad*¦ caus.
+- **RU:** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* производить много шума
 [Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 - **EN:** 2) *guṇairvihīnā bahu vādayanti* to make much noise
@@ -3319,9 +3319,9 @@ try not to speak with me about it
 - **EN:** — d) in the obscure passage [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) draws [SĀY.] *upa* to Acc.
   <sub>attested</sub>
 
-**root)** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
+**root)** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
 
-- **RU:** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
+- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
   <sub>attested</sub>
 
 **3e)** — e〉 angedeutet.
@@ -3897,7 +3897,7 @@ try not to speak with me about it
 `vad~~h0_zz_sch`
 
 
-**sch_visam)** vad¦ mit visam [Kaus.] ˚verwirren, verdächtig machen (einen Prozeß), [Kauṭ. 177,5.] {part=,seq=23457,type=,n=3}
+**sch_visam)** vad mit visam [Kaus.] ˚verwirren, verdächtig machen (einen Prozeß), [Kauṭ. 177,5.] {part=,seq=23457,type=,n=3}
 
 - **RU:** с visam [Kaus.] ˚запутывать, порочить (судебный процесс), [Kauṭ. 177,5.]
 - **EN:** vad with viṣam [Kaus.] °to confuse, to render suspect (a lawsuit), [Kauṭ. 177,5.]

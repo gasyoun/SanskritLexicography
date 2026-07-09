@@ -537,9 +537,9 @@
 - **EN:** — d) in the obscure passage [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) draws [SĀY.] *upa* to Acc.
   <sub>attested</sub>
 
-**root)** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
+**root)** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
 
-- **RU:** √*vad*¦, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
+- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
   <sub>attested</sub>
 
 **3e)** — e〉 angedeutet.

@@ -7,10 +7,10 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 `iz~~h0_00_pwg00`
 
 
-**I)** *iṣ*¦ Etwas in (rasche) Bewegung setzen. Diese Wurzel, welche bis in die einzelnen Verzweigungen der Bedeutung dem griech. ἵημι, ἵεμαι entspricht, bildet fünf Präsensstämme, an welche sich auch einige andere Modificationen der Flexion schliessen. *iṣayati* s. u. *iṣay* .
+**I)** *iṣ* Etwas in (rasche) Bewegung setzen. Diese Wurzel, welche bis in die einzelnen Verzweigungen der Bedeutung dem griech. ἵημι, ἵεμαι entspricht, bildet fünf Präsensstämme, an welche sich auch einige andere Modificationen der Flexion schliessen. *iṣayati* s. u. *iṣay* .
 
-- **RU:** *iṣ*¦ Привести что-либо в (быстрое) движение. Этот корень, который вплоть до отдельных ответвлений значения соответствует греч. ἵημι, ἵεμαι, образует пять основ настоящего времени, к которым примыкают и некоторые другие модификации флексии. *iṣayati* s. u. *iṣay* .
-- **EN:** *iṣ*¦ To set something in (rapid) motion. This root, which corresponds to the Greek
+- **RU:** *iṣ* Привести что-либо в (быстрое) движение. Этот корень, который вплоть до отдельных ответвлений значения соответствует греч. ἵημι, ἵεμαι, образует пять основ настоящего времени, к которым примыкают и некоторые другие модификации флексии. *iṣayati* s. u. *iṣay* .
+- **EN:** *iṣ* To set something in (rapid) motion. This root, which corresponds to the Greek
 ἵημι, ἵεμαι down into the individual branches of its meaning, forms five present stems, to which a few further modifications of the inflexion are also attached. *iṣayati* s. u. *iṣay* .
   <sub>attested</sub>
 
@@ -19,10 +19,10 @@ _PWG article — 37 sub-card(s), 191 sense(s) · RU 92/191 · EN 161/191_
 `iz~~h1_00_pwg00`
 
 
-**1)** 1. *iṣ*¦, *iṣyati* [DHĀTUP. 26,19](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*gatau*). perf. med. *īṣire*; aor. *aiṣītḥ* partic. *iṣita* in rasche Bewegung setzen, schnellen, schleudern u. s. w.: *iṣyanvācamupavakteva hotuḥ* [ṚV. 9,95,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.095.html#rv09.095.05) *hinvāno vācamiṣyasi* [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.09) [25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.25) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.030.html#rv09.030.01) die Stimme ertönen lassen, wie ὄπα ἵει [IL. 3,221.] *apa iṣya hotarityapa iccha hotarityevaitadāha* [ŚAT. BR. 3,9,3,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,15) (wo die Erklärung des [BRĀHMAṆA] dem ganzen alten Sprachgebrauch zuwiderläuft; ursprünglich entweder: sprenge die Wasser! oder = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* schleudern, werfen [AV. 5,19,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.03) Hierher dürfte vielleicht als aor. zu ziehen sein: *stomairiṣemāgnaye* unter Lobpreisungen wollen wir dem Agni sprengen (Butter u. s. w.) oder auch so viel als *stomāniṣema* [ṚV. 8,44,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.044.html#rv08.044.27) — partic. *iṣita*
+**1)** 1. *iṣ*, *iṣyati* [DHĀTUP. 26,19](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*gatau*). perf. med. *īṣire*; aor. *aiṣītḥ* partic. *iṣita* in rasche Bewegung setzen, schnellen, schleudern u. s. w.: *iṣyanvācamupavakteva hotuḥ* [ṚV. 9,95,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.095.html#rv09.095.05) *hinvāno vācamiṣyasi* [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.09) [25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.25) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.030.html#rv09.030.01) die Stimme ertönen lassen, wie ὄπα ἵει [IL. 3,221.] *apa iṣya hotarityapa iccha hotarityevaitadāha* [ŚAT. BR. 3,9,3,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,15) (wo die Erklärung des [BRĀHMAṆA] dem ganzen alten Sprachgebrauch zuwiderläuft; ursprünglich entweder: sprenge die Wasser! oder = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* schleudern, werfen [AV. 5,19,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.03) Hierher dürfte vielleicht als aor. zu ziehen sein: *stomairiṣemāgnaye* unter Lobpreisungen wollen wir dem Agni sprengen (Butter u. s. w.) oder auch so viel als *stomāniṣema* [ṚV. 8,44,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.044.html#rv08.044.27) — partic. *iṣita*
 
-- **RU:** 1. *iṣ*¦, *iṣyati* [DHĀTUP. 26,19](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*gatau*). perf. med. *īṣire*; aor. *aiṣītḥ* partic. *iṣita* привести в быстрое движение, метнуть, бросить u. s. w.: *iṣyanvācamupavakteva hotuḥ* [ṚV. 9,95,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.095.html#rv09.095.05) *hinvāno vācamiṣyasi* [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.09) [25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.25) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.030.html#rv09.030.01) заставить звучать голос, как ὄπα ἵει [IL. 3,221.] *apa iṣya hotarityapa iccha hotarityevaitadāha* [ŚAT. BR. 3,9,3,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,15) (где объяснение [BRĀHMAṆA] противоречит всему древнему словоупотреблению; первоначально либо: расплёскай воды! либо = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* метать, бросать [AV. 5,19,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.03) Сюда, быть может, как aor. следует отнести: *stomairiṣemāgnaye* среди хвалебных гимнов мы хотим к Agni прыснуть (масло u. s. w.) или же столько же, сколько *stomāniṣema* [ṚV. 8,44,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.044.html#rv08.044.27) — partic. *iṣita*
-- **EN:** 1. *iṣ*¦, *iṣyati*
+- **RU:** 1. *iṣ*, *iṣyati* [DHĀTUP. 26,19](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*gatau*). perf. med. *īṣire*; aor. *aiṣītḥ* partic. *iṣita* привести в быстрое движение, метнуть, бросить u. s. w.: *iṣyanvācamupavakteva hotuḥ* [ṚV. 9,95,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.095.html#rv09.095.05) *hinvāno vācamiṣyasi* [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.09) [25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.25) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.030.html#rv09.030.01) заставить звучать голос, как ὄπα ἵει [IL. 3,221.] *apa iṣya hotarityapa iccha hotarityevaitadāha* [ŚAT. BR. 3,9,3,15](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,3,15) (где объяснение [BRĀHMAṆA] противоречит всему древнему словоупотреблению; первоначально либо: расплёскай воды! либо = *preṣya*). med.: *ye vāsmiṃ chuklamīṣire* метать, бросать [AV. 5,19,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.03) Сюда, быть может, как aor. следует отнести: *stomairiṣemāgnaye* среди хвалебных гимнов мы хотим к Agni прыснуть (масло u. s. w.) или же столько же, сколько *stomāniṣema* [ṚV. 8,44,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.044.html#rv08.044.27) — partic. *iṣita*
+- **EN:** 1. *iṣ*, *iṣyati*
 [DHĀTUP. 26,19](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*gatau*). perf. med. *īṣire*; aor. *aiṣītḥ* partic. *iṣita* to set in rapid motion, to make dart, to hurl u. s. w.: *iṣyanvācamupavakteva hotuḥ*
 [ṚV. 9,95,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.095.html#rv09.095.05) *hinvāno vācamiṣyasi*
 [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.09) [25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.25) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.030.html#rv09.030.01) to let the voice resound, as
@@ -349,16 +349,16 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 `iz~~h2_00_pwg00`
 
 
-2. *iṣ*¦, *iṣṇāti*
+2. *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
 
-- **RU:** 2. *iṣ*¦, *iṣṇāti*
+- **RU:** 2. *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
   <sub>attested</sub>
 
-**intro)** *iṣ*¦, *iṣṇāti*
+**intro)** *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
-- **EN:** *iṣ*¦, *iṣṇāti*
+- **EN:** *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna*.
 
 **1)** 1) in rasche Bewegung setzen, schnellen, schwingen: *vajramiṣṇan*
@@ -417,7 +417,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 `iz~~h3_00_pwg00`
 
 
-3. *iṣ*¦, *icchati*
+3. *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
@@ -425,7 +425,7 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
 
-- **RU:** 3. *iṣ*¦, *icchati*
+- **RU:** 3. *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
@@ -434,14 +434,14 @@ With dat. alone: call upon (someone) for the offering (recitation) to a god u. s
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
   <sub>attested</sub>
 
-**intro)** *iṣ*¦, *icchati*
+**intro)** *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. und ep.
 [P. 3,1,85](https://ashtadhyayi.com/sutraani/3/1/85), Kār., Sch.)
 *icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
-- **EN:** *iṣ*¦, *icchati*
+- **EN:** *iṣ*, *icchati*
 [BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* and *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
 [VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; med. (ved. and epic
@@ -1166,9 +1166,9 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 `iz~~h4_00_pwg00`
 
 
-**0)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
+**0)** 4. *iṣ*, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 — Vgl. *eṣ* .
-- **EN:** 4. *iṣ*¦, *eṣati* and *eṣate* attested only in connection with *anu*.
+- **EN:** 4. *iṣ*, *eṣati* and *eṣate* attested only in connection with *anu*.
 — Vgl. *eṣ*.
 
 **1)** — *anu* suchen, nachforschen, durchsuchen: *yamanveṣasi rājānam*
@@ -1204,9 +1204,9 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 [R. 1,3,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,2)
   <sub>attested</sub>
 
-**intro)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
+**intro)** 4. *iṣ*, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 
-- **RU:** 4. *iṣ*¦, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
+- **RU:** 4. *iṣ*, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
   <sub>attested</sub>
 
 **sense_a)** — Vgl. *eṣ* .
@@ -1219,26 +1219,26 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 `iz~~h5_00_pwg00`
 
 
-**1)** 5. *iṣ*¦, *iṣati* nur in Verbindung mit *anu* durch zwei Beispiele zu belegen: *tamevānviṣa* den suche auf
+**1)** 5. *iṣ*, *iṣati* nur in Verbindung mit *anu* durch zwei Beispiele zu belegen: *tamevānviṣa* den suche auf
 [MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). Ein *iṣ, iṣati* wird unter den verbis der Bewegung aufgezählt
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [NIR. 9,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,18)
 — Vgl. *īṣ* .
-- **EN:** 5. *iṣ*¦, *iṣati* attested only in connection with *anu* through two examples: *tamevānviṣa* seek him out
+- **EN:** 5. *iṣ*, *iṣati* attested only in connection with *anu* through two examples: *tamevānviṣa* seek him out
 [MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). A *iṣ, iṣati* is listed among the verbs of motion
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [NIR. 9,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,18)
 — Vgl. *īṣ*.
 
-**intro)** 5. *iṣ*¦, *iṣati* nur in Verbindung mit *anu* durch zwei Beispiele zu belegen: *tamevānviṣa* den suche auf
+**intro)** 5. *iṣ*, *iṣati* nur in Verbindung mit *anu* durch zwei Beispiele zu belegen: *tamevānviṣa* den suche auf
 [MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). Ein *iṣ, iṣati* wird unter den verbis der Bewegung aufgezählt
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [NIR. 9,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,18)
 
-- **RU:** 5. *iṣ*¦, *iṣati* засвидетельствован только в сочетании с *anu* двумя примерами: *tamevānviṣa* найди, отыщи
+- **RU:** 5. *iṣ*, *iṣati* засвидетельствован только в сочетании с *anu* двумя примерами: *tamevānviṣa* найди, отыщи
 [MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). *iṣ, iṣati* причисляется к глаголам движения
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
@@ -1255,14 +1255,14 @@ to take up, to follow them, to heed them: *vacanaṃ na pratīcchatā*
 `iz~~h6_00_pwg00`
 
 
-II. *iṣ*¦
+II. *iṣ*
 
-- **RU:** II. *iṣ*¦
+- **RU:** II. *iṣ*
   <sub>attested</sub>
 
-**1)** II. *iṣ*¦
+**1)** II. *iṣ*
  1) _adj._ sich rasch bewegend, eilend in *aramiṣ* .
-- **EN:** II. *iṣ*¦
+- **EN:** II. *iṣ*
  1) _adj._ moving quickly, hastening, in *aramiṣ*.
 
 **2)** — 2) _f._ Wunsch in *iṭcara* . — Ist identisch mit I. *iṣ*.
@@ -1281,10 +1281,10 @@ II. *iṣ*¦
 `iz~~h7_00_pwg00`
 
 
-**0)** III. *iṣ*¦ _f._ im sg. in allen casus, im pl. nur im nom. acc. (*iṣas*, seltener *iṣas*) und gen. gebräuchlich.
+**0)** III. *iṣ* _f._ im sg. in allen casus, im pl. nur im nom. acc. (*iṣas*, seltener *iṣas*) und gen. gebräuchlich.
 
-- **RU:** III. *iṣ*¦ _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
-- **EN:** III. *iṣ*¦ _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
+- **RU:** III. *iṣ* _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
+- **EN:** III. *iṣ* _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
   <sub>attested</sub>
 
 **1)** 1) Trank, Labung, Erquickung
@@ -1457,15 +1457,15 @@ a stem *iṣi* exists, just as *dṛśaye, yudhaye* datt. are to *dṛś, yudh*.
 `iz~~h8_00_pwg00`
 
 
-I. 1. *iṣ*¦ *iṣita*
+I. 1. *iṣ* *iṣita*
 
-- **RU:** I. 1. *iṣ*¦ *iṣita*
+- **RU:** I. 1. *iṣ* *iṣita*
   <sub>attested</sub>
 
-**1)** I. 1. *iṣ*¦ *iṣita*
+**1)** I. 1. *iṣ* *iṣita*
  1) ausgesprochen, verkündet
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
-- **EN:** I. 1. *iṣ*¦ *iṣita*
+- **EN:** I. 1. *iṣ* *iṣita*
  1) uttered, proclaimed
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
 
@@ -1555,16 +1555,16 @@ I. 1. *iṣ*¦ *iṣita*
 `iz~~h9_00_pwg00`
 
 
-I. 3. *iṣ*¦ *iṣ*
+I. 3. *iṣ* *iṣ*
 
-- **RU:** I. 3. *iṣ*¦ *iṣ*
+- **RU:** I. 3. *iṣ* *iṣ*
   <sub>attested</sub>
 
-**2)** I. 3. *iṣ*¦ *iṣ*
+**2)** I. 3. *iṣ* *iṣ*
  2) *te neṣurvaradānam*
 [HARIV. 7967.](https://sanskrit-lexicon-scans.github.io/hariv?7967) *neṣustadvaradānam* die neuere Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1,25)
-- **EN:** I. 3. *iṣ*¦ *iṣ*
+- **EN:** I. 3. *iṣ* *iṣ*
  2) *te neṣurvaradānam*
 [HARIV. 7967.](https://sanskrit-lexicon-scans.github.io/hariv?7967) *neṣustadvaradānam* the more recent Ausg. *anājñaptastu saumitre praveṣṭuṃ necchayāmyaham (icchayāmi = icchāmi!)*
 [R. 7,59,1,25.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,59,1,25)
@@ -1670,12 +1670,12 @@ I. 3. *iṣ*¦ *iṣ*
 `iz~~h10_00_pwg00`
 
 
-**1)** I. 4. *iṣ*¦ mit *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
+**1)** I. 4. *iṣ* mit *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
 [Spr. 4127.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4127)
 
-- **RU:** I. 4. *iṣ*¦ с *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
+- **RU:** I. 4. *iṣ* с *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
 [Spr. 4127.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4127)
-- **EN:** I. 4. *iṣ*¦ with *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
+- **EN:** I. 4. *iṣ* with *anu, tiṣṭhantaṃ ca śayānaṃ ca mṛtyuranveṣate yadā*
 [Spr. 4127.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4127)
   <sub>attested</sub>
 
@@ -1684,9 +1684,9 @@ I. 3. *iṣ*¦ *iṣ*
 `iz~~h11_00_pwg00`
 
 
-**I.5)** I. 5. *iṣ*¦ *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha* suchend
+**I.5)** I. 5. *iṣ* *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha* suchend
 
-- **RU:** I. 5. *iṣ*¦ *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha* ищущий
+- **RU:** I. 5. *iṣ* *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha* ищущий
 - **EN:** *iṣ*; *iṣ, sa naṣṭāṃ gāṃ kṣudhārto vai anviṣaṃstatra tatra ha*, seeking [R. 7,53,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,53,10)
   <sub>attested</sub>
 
@@ -1700,9 +1700,9 @@ I. 3. *iṣ*¦ *iṣ*
 `iz~~h12_00_pwg00`
 
 
-**II)** II. *iṣ*¦ vgl. *gaviṣ* und *nemanniṣ* .
+**II)** II. *iṣ* vgl. *gaviṣ* und *nemanniṣ* .
 
-- **RU:** II. *iṣ*¦ vgl. *gaviṣ* и *nemanniṣ*.
+- **RU:** II. *iṣ* vgl. *gaviṣ* и *nemanniṣ*.
 - **EN:** *iṣ* — vgl. *gaviṣ* and *nemanniṣ*.
   <sub>attested</sub>
 
@@ -1711,14 +1711,14 @@ I. 3. *iṣ*¦ *iṣ*
 `iz~~h13_00_pwg00`
 
 
-**I.1)** I. 1. *iṣ*¦ mit *pra* caus.
+**I.1)** I. 1. *iṣ* mit *pra* caus.
  2)
 Z. 10 st. *preṣitam* hat die [ed. Bomb.] richtig *proṣitam* .
 
-- **RU:** I. 1. *iṣ*¦ с *pra* caus.
+- **RU:** I. 1. *iṣ* с *pra* caus.
  2)
 Z. 10 st. *preṣitam* правильно понял [ed. Bomb.] *proṣitam*.
-- **EN:** *iṣ* ¦ with *pra* caus.
+- **EN:** *iṣ* with *pra* caus.
   <sub>attested</sub>
 
 **I.1.note)** 2)
@@ -1732,7 +1732,7 @@ Z. 10 st. *preṣitam* правильно понял [ed. Bomb.] *proṣitam*.
 `iz~~h14_00_pwg00`
 
 
-**I.3)** I. 3. *iṣ*¦
+**I.3)** I. 3. *iṣ*
  2)
 Z. 20 [MBH. 3,16487](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16487) (beide Ausgg.) liest *māṃ cejjīvantamicchasi* st. *māṃ ca* u. s. w. —
 Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,37) ist der infin. passivisch aufzufassen; man könnte übrigens auch *jñātam* st. *jñātum* vermuthen (vgl. u. *lajj*).
@@ -1740,14 +1740,14 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 — *prati*, streiche Bed.
  1) und stelle das Citat zu der folgenden.
 
-- **RU:** I. 3. *iṣ*¦
+- **RU:** I. 3. *iṣ*
  2)
 Z. 20 [MBH. 3,16487](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16487) (оба Ausgg.) читает *māṃ cejjīvantamicchasi* st. *māṃ ca* u. s. w. —
 Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,37) следует понимать пассивно; впрочем, можно было бы предположить также *jñātam* st. *jñātum* (vgl. u. *lajj*).
 — *ā* vgl. u. 1. *yaj* с *ā* 1).
 — *prati*, вычеркнуть Bed.
  1) и перенести цитату к следующему.
-- **EN:** I. 3. *iṣ*¦
+- **EN:** I. 3. *iṣ*
  2)
 Z. 20 [MBH. 3,16487](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16487) (both Ausgg.) reads *māṃ cejjīvantamicchasi* st. *māṃ ca* u. s. w. —
 Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,37) is to be taken as passive; one could moreover also conjecture *jñātam* st. *jñātum* (vgl. u. *lajj*).
@@ -1761,9 +1761,9 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 `iz~~h0_zz_pw`
 
 
-**1)** **1.** √*iṣ*¦, *iṣati, eṣati* (mit *anu*), *iṣyati* und *iṣṇāti* (**ābhīkṣṇye*). Auch Med.
+**1)** **1.** √*iṣ*, *iṣati, eṣati* (mit *anu*), *iṣyati* und *iṣṇāti* (**ābhīkṣṇye*). Auch Med.
 — 1〉 in rasche Bewegung setzen, schnellen, schleudern.
-- **EN:** **1.** √*iṣ*¦, *iṣati, eṣati* (with *anu*), *iṣyati* and *iṣṇāti* (**ābhīkṣṇye*). Also Med.
+- **EN:** **1.** √*iṣ*, *iṣati, eṣati* (with *anu*), *iṣyati* and *iṣṇāti* (**ābhīkṣṇye*). Also Med.
 — 1) to set in rapid motion, cause to dart, hurl.
 
 **2)** — 2〉 aussenden.
@@ -1864,12 +1864,12 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **31 (with prefix))** — Mit *sam* in *samiṣ*.
 - **EN:** — With *sam* in *samiṣ*.
 
-**1)** **2.** *iṣ*¦ _Adj._ eilend. in *aramiṣ*.
-- **EN:** **2.** *iṣ*¦ _Adj._ hastening, speedy. in *aramiṣ*.
+**1)** **2.** *iṣ* _Adj._ eilend. in *aramiṣ*.
+- **EN:** **2.** *iṣ* _Adj._ hastening, speedy. in *aramiṣ*.
 
-**1)** **3.** √*iṣ*¦, *icchati, ˚te* (in der älteren Sprache und in Epos)
+**1)** **3.** √*iṣ*, *icchati, ˚te* (in der älteren Sprache und in Epos)
 — 1〉 suchen, aufsuchen.
-- **EN:** **3.** √*iṣ*¦, *icchati, ˚te* (in the older language and in epic)
+- **EN:** **3.** √*iṣ*, *icchati, ˚te* (in the older language and in epic)
 — 1) to seek, seek out.
 
 **2)** — 2〉 mit *manasā* haben wollen, herbeiwünschen, erwünschen.
@@ -1990,16 +1990,16 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **28 (with prefix))** — Mit *vi* suchen.
 - **EN:** — With *vi* to seek.
 
-**1)** **4.** *iṣ*¦
+**1)** **4.** *iṣ*
 — 1〉 _Adj._ suchend u. s. w. in *gaviṣ, namanniṣ, paśviṣ*.
-- **EN:** **4.** *iṣ*¦
+- **EN:** **4.** *iṣ*
 — 1) _Adj._ seeking u. s. w. in *gaviṣ, namanniṣ, paśviṣ*.
 
 **2)** — 2〉 *_f._ Wunsch, in **iṭcara*.
 - **EN:** — 2) *_f._ wish, in **iṭcara*.
 
-**0)** **5.** *iṣ*¦ _f._ Sg. und Pl.
-- **EN:** **5.** *iṣ*¦ _f._ Sg. and Pl.
+**0)** **5.** *iṣ* _f._ Sg. und Pl.
+- **EN:** **5.** *iṣ* _f._ Sg. and Pl.
 
 **1)** — 1〉 Trank, Labung, Erquickung.
 - **EN:** — 1) drink, refreshment, restoration.
@@ -2013,37 +2013,37 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 **4)** — 4〉 Kraft, Frische; Wohlsein, Gedeihen, Wohlstand. In Verbindung mit *ūrj* so v. a. Saft und Kraft.
 - **EN:** — 4) strength, vigour; well-being, thriving, prosperity. In conjunction with *ūrj* thus v. a. sap and strength.
 
-**1)** **1.** √*iṣ*¦ mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
-- **EN:** **1.** √*iṣ*¦ with *upa* to press toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+**1)** **1.** √*iṣ* mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+- **EN:** **1.** √*iṣ* with *upa* to press toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 
-**1)** **4.** √*iṣ*¦ 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
-- **EN:** **4.** √*iṣ*¦ 2) [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
+**1)** **4.** √*iṣ* 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
+- **EN:** **4.** √*iṣ* 2) [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
 
-**1)** **1.** √*iṣ*¦ mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
-- **EN:** **1.** √*iṣ*¦ with *atipra* to call upon further, beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+**1)** **1.** √*iṣ* mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+- **EN:** **1.** √*iṣ* with *atipra* to call upon further, beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 
-**1)** **1.** √*iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
+**1)** **1.** √*iṣ* mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — Mit *upa* 2.
 — Mit *atipra* 5.
-- **EN:** **1.** √*iṣ*¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
+- **EN:** **1.** √*iṣ* with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7).
 — With *upa* 2.
 — With *atipra* 5.
 
-**1)** **3.** √*iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
-- **EN:** **3.** √*iṣ*¦ with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+**1)** **3.** √*iṣ* mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+- **EN:** **3.** √*iṣ* with an infinitive to be taken passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4)e)β) belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
 
-**1)** **4.** √*iṣ*¦ I. 3.
-- **EN:** **4.** √*iṣ*¦ I. 3.
+**1)** **4.** √*iṣ* I. 3.
+- **EN:** **4.** √*iṣ* I. 3.
 
 ## iṣ
 
 `iz~~h0_zz_sch`
 
 
-**4)** 4. iṣ¦ 2. [Hariv. 2],72,52 nach [Nīlak.]
-- **EN:** 4. iṣ ¦ 2. [Hariv. 2],72,52 after [Nīlak.]
+**4)** 4. iṣ 2. [Hariv. 2],72,52 nach [Nīlak.]
+- **EN:** 4. iṣ 2. [Hariv. 2],72,52 after [Nīlak.]
 
-**SCH 4.iṣ 2 addendum)** 4. iṣ¦ 2. [Hariv. 2],72,52 nach [Nīlak.] {part=,seq=7855,type=,n=21}
+**SCH 4.iṣ 2 addendum)** 4. iṣ 2. [Hariv. 2],72,52 nach [Nīlak.] {part=,seq=7855,type=,n=21}
 
 - **RU:** 4. iṣ 2. [Hariv. 2],72,52 после [Nīlak.]
   <sub>attested</sub>
@@ -2053,38 +2053,38 @@ Z. 4 v. u. [M. 12,37](https://sanskrit-lexicon-scans.github.io/manu/index.html?1
 `iz~~h0_zz_pwkvn`
 
 
-**1-a)** **1.** *iṣ*¦ mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+**1-a)** **1.** *iṣ* mit *upa* hinstreben zu (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
 
 - **RU:** 1. *iṣ* с *upa* — устремляться к (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
-- **EN:** **1.** *iṣ* ¦ with *upa* to press onward toward, strive toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
+- **EN:** **1.** *iṣ* with *upa* to press onward toward, strive toward (Acc.) [MAITR. S. 1,2,14] ([KĀṬH. 3,3]. [KAP. S. 2,10]. [MĀN. ŚR. 1,8,2]).
   <sub>attested</sub>
 
-**4-a)** **4.** *iṣ*¦ 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
+**4-a)** **4.** *iṣ* 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) nach [NĪLAK.]
 
 - **RU:** 4. *iṣ* 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) — после [NĪLAK.]
-- **EN:** **4.** *iṣ* ¦ 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
+- **EN:** **4.** *iṣ* 2〉 [HARIV. 2,72,52](https://sanskrit-lexicon-scans.github.io/hariv?2) after [NĪLAK.]
   <sub>attested</sub>
 
-**1-b)** **1.** *iṣ*¦ mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+**1-b)** **1.** *iṣ* mit *atipra* darüber hinaus auffordern [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
 
 - **RU:** 1. *iṣ* с *atipra* — сверх того побуждать [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
-- **EN:** **1.** *iṣ* ¦ with *atipra* to call upon further, exhort beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
+- **EN:** **1.** *iṣ* with *atipra* to call upon further, exhort beyond [ĀPAST. ŚR. 12,27,6]. [14,34,4]. [VAITĀN.]
   <sub>attested</sub>
 
-**1-c)** **1.** *iṣ*¦ mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — Mit *upa* 2. — Mit *atipra* 5.
+**1-c)** **1.** *iṣ* mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — Mit *upa* 2. — Mit *atipra* 5.
 
 - **RU:** 1. *iṣ* с *samanu* I. — обыскивать. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — С *upa* 2. — С *atipra* 5.
-- **EN:** **1.** *iṣ* ¦ with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — With *upa* 2. — With *atipra* 5.
+- **EN:** **1.** *iṣ* with *samanu* I. to search through. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — With *upa* 2. — With *atipra* 5.
   <sub>attested</sub>
 
-**3)** **3.** *iṣ*¦ mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+**3)** **3.** *iṣ* mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
 
 - **RU:** 3. *iṣ* с инфинитивом, понимаемым пассивно: *samudraṃ netumicchāmi bhavadbhiḥ* — я желаю, чтобы вы отвели меня к морю [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). К 4〉e〉β〉 относится *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
-- **EN:** **3.** *iṣ* ¦ with an infinitive to be understood passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4〉e〉β〉 belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+- **EN:** **3.** *iṣ* with an infinitive to be understood passively: *samudraṃ netumicchāmi bhavadbhiḥ* I wish to be led by you to the sea [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). To 4〉e〉β〉 belongs *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
   <sub>attested</sub>
 
-**4-b)** **4.** *iṣ*¦ I. 3.
+**4-b)** **4.** *iṣ* I. 3.
 
 - **RU:** 4. *iṣ* I. 3.
-- **EN:** **4.** *iṣ* ¦ I. 3.
+- **EN:** **4.** *iṣ* I. 3.
   <sub>attested</sub>

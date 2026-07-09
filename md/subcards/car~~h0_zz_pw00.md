@@ -3,7 +3,7 @@
 `car~~h0_zz_pw00`
 
 
-**pw00-act)** √*car*¦, *carati* (selten Med.), Partic. *carita* und *cīrṇa*.
+**pw00-act)** √*car*, *carati* (selten Med.), Partic. *carita* und *cīrṇa*.
 - **EN:** *car*, *carati* (rarely Med.), Partic. *carita* and *cīrṇa*.
 
 **pw00-1)** — 1〉 sich regen, — bewegen, umherstreichen, fahren, wandern, sich verbreiten (von Belebtem und Unbelebtem).

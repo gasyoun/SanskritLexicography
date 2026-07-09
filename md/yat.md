@@ -7,10 +7,10 @@ _PWG article — 28 sub-card(s), 206 sense(s) · RU 159/206 · EN 166/206_
 `yat~~h0_00_pwg00`
 
 
-**1)** *yat*¦, *yatati* und *yatate* (nur dieses nach [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* und *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. anschliessen, aneinanderfügen; verbinden: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
+**1)** *yat*, *yatati* und *yatate* (nur dieses nach [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* und *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. anschliessen, aneinanderfügen; verbinden: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
 
-- **RU:** *yat*¦, *yatati* и *yatate* (только последнее после [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* и *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. присоединять, прилагать; соединять: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
-- **EN:** *yat*¦, *yatati* and *yatate* (only the latter after [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* and *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. to join, attach to one another; to connect: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
+- **RU:** *yat*, *yatati* и *yatate* (только последнее после [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* и *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. присоединять, прилагать; соединять: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
+- **EN:** *yat*, *yatati* and *yatate* (only the latter after [DHĀTUP. 2,29](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2)), *yatamāna, yatāna* and *yatāna; yetire, yatiṣyate, ayatiṣṭa*; 1) act. to join, attach to one another; to connect: *janaṃ na mitro yatati bruvāṇaḥ* [ṚV. 7,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) *hataṃ ca śatrūnyatataṃ ca mitriṇaḥ* [8,35,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.035.html#rv08.035.12) *yuvaṃ mitremaṃ janaṃ yatathaḥ saṃ ca nayathaḥ* [5,65,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.065.html#rv05.065.06) [48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.05)
   <sub>attested</sub>
 
 **2)** — 2) med. sich anschliessen, — anreihen; in Reihen ziehen: *haṃsā iva śreṇiśo yatānāḥ* [ṚV. 3,8,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.09) (vgl. [1,163,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.10)). *śravasyavo na pṛtanāsu yetire* [1,85,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08) [5,33,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.033.html#rv05.033.10) [59,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.02) *viśo na yuktā uṣaso yatante* [7,79,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.079.html#rv07.079.02) [10,13,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.05) *anupūrvaṃ yatamānāḥ* [18,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06) [77,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.02) [8,43,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.04) Auch act. etwa so v. a. in einer Reihe —, auf einer Stufe stehen: *nakirdevebhiryatatho mahitvā* [6,67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.10)
@@ -868,12 +868,12 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h1_00_pwg00`
 
 
-**addendum)** *yat*¦ am Ende hinzuzufügen: vgl. *ayatant* .
+**addendum)** *yat* am Ende hinzuzufügen: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* oben.
 
-- **RU:** *yat*¦ в конце добавить: vgl. *ayatant* .
+- **RU:** *yat* в конце добавить: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* выше.
-- **EN:** *yat*¦ to be added at the end: vgl. *ayatant* .
+- **EN:** *yat* to be added at the end: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* above.
   <sub>attested</sub>
 
@@ -882,10 +882,10 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h0_zz_pw`
 
 
-**1)** √*yat*¦, *yatati*, *˚te*
+**1)** √*yat*, *yatati*, *˚te*
 — 1〉 Act. in Ordnung (Reihe und Glied) bringen, anschliessen, aneinander fügen, verbinden.
 
-- **RU:** √*yat*¦, *yatati*, *˚te*
+- **RU:** √*yat*, *yatati*, *˚te*
 — 1〉 Act. приводить в порядок (строй и ряд), присоединять, прилагать одно к другому, связывать.
 - **EN:** — 1) Act. to bring into order (rank and file), to attach, join together, connect.
   <sub>attested</sub>
@@ -1277,7 +1277,7 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **EN:** — 2) *˚saṃyatta* completely prepared, — equipped.
   <sub>attested</sub>
 
-**pw-etym)** √*yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
+**pw-etym)** √*yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 - **EN:** √*yat*, Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 
 **pw-3)** — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
@@ -1343,10 +1343,10 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 - **RU:** — С *pratisam*
   <sub>attested</sub>
 
-**PW_root2_intro)** √*yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
+**PW_root2_intro)** √*yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
 
-- **RU:** √*yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676].
+- **RU:** √*yat* Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676].
 — С *anvā* V. принимать участие в чём-либо [ŚĀṄKH. BR. 23,5].
   <sub>attested</sub>
 
@@ -1355,20 +1355,20 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h0_zz_sch`
 
 
-**anvā)** yat¦ [Kaus.] vgl. Roth, [ZDMG 41,676.] — Mit anvā sich bei etwas beteiligen, [Śāṅkh. Br. 23,5.]
+**anvā)** yat [Kaus.] vgl. Roth, [ZDMG 41,676.] — Mit anvā sich bei etwas beteiligen, [Śāṅkh. Br. 23,5.]
 - **EN:** yat [Kaus.] cf. Roth, [ZDMG 41,676.] — With anvā: to participate in something, [Śāṅkh. Br. 23,5.].
 
-**satyam-xref)** yat¦ satyam s. unter satya.
+**satyam-xref)** yat satyam s. unter satya.
 - **EN:** yat satyam: see under satya.
 
-**SCH-anvA)** yat¦ [Kaus.] vgl. Roth, [ZDMG 41,676.] — Mit anvā sich bei etwas beteiligen, [Śāṅkh. Br. 23,5.] {part=,seq=22390,type=,n=1}
+**SCH-anvA)** yat [Kaus.] vgl. Roth, [ZDMG 41,676.] — Mit anvā sich bei etwas beteiligen, [Śāṅkh. Br. 23,5.] {part=,seq=22390,type=,n=1}
 
-- **RU:** yat¦ [Kaus.] ср. Roth, [ZDMG 41,676.] — С anvā участвовать в чём-л., [Śāṅkh. Br. 23,5.]
+- **RU:** yat [Kaus.] ср. Roth, [ZDMG 41,676.] — С anvā участвовать в чём-л., [Śāṅkh. Br. 23,5.]
   <sub>attested</sub>
 
-**SCH-satyam)** yat¦ satyam s. unter satya. {part=,seq=22391,type=,n=3}
+**SCH-satyam)** yat satyam s. unter satya. {part=,seq=22391,type=,n=3}
 
-- **RU:** yat¦ satyam см. под satya.
+- **RU:** yat satyam см. под satya.
   <sub>lexicographic</sub>
 
 ## yat
@@ -1376,9 +1376,9 @@ in or at; with loc. or acc.: *aśve vai sarvā devatā anvāyattāḥ*
 `yat~~h0_zz_pwkvn`
 
 
-**main)** *yat*¦ Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676]. — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
+**main)** *yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676]. — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
 
-- **RU:** *yat*¦ Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676]. — С *anvā* V. участвовать в чём-л. [ŚĀṄKH. BR. 23,5].
+- **RU:** *yat* Caus. vgl. [ROTH] в [Z. d. d. m. G. 41,676]. — С *anvā* V. участвовать в чём-л. [ŚĀṄKH. BR. 23,5].
 - **EN:** *yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676]. — With *anvā* V.: to take part in something [ŚĀṄKH. BR. 23,5].
   <sub>attested</sub>
 

@@ -3,7 +3,7 @@
 `yaj~~h0_00_pwg00`
 
 
-**etym-1)** 1. *yaj*¦, *yajati, ˚te*
+**etym-1)** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
@@ -24,7 +24,7 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
 
-- **RU:** 1. *yaj*¦, *yajati, ˚te*
+- **RU:** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
@@ -44,7 +44,7 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 [PAT.] zu [P. 6,1,108.](https://ashtadhyayi.com/sutraani/6/1/108) *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
-- **EN:** 1. *yaj*¦, *yajati, ˚te*
+- **EN:** 1. *yaj*, *yajati, ˚te*
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*

@@ -3,7 +3,7 @@
 `mad~~h0_00_pwg00`
 
 
-1. *mad*¦, *mand, madati, mademahi*
+1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* (
 [P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; später (schon in den
 [BRĀHMAṆA]) *mādyati*
@@ -19,7 +19,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [3,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) *stutimodasvapnagatiṣu*
 [DHĀTUP. 2,12.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2) nach Andern auch *kāntau* und *jāḍye* .
 
-- **RU:** 1. *mad*¦, *mand, madati, mademahi*
+- **RU:** 1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* ([P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; позже (уже в [BRĀHMAṆA]) *mādyati*
 [DHĀTUP. 26,99](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*harṣe*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) *matsi, matsva, matsat, matsati* ([ṚV. 8,83,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.083.html#rv08.083.07)), *matsatha, amatsus, amatsata*
@@ -29,7 +29,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [NAIGH. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,16) = *arcati*
 [3,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,14) *stutimodasvapnagatiṣu*
 [DHĀTUP. 2,12.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=2) по другим также *kāntau* и *jāḍye*.
-- **EN:** 1. *mad*¦, *mand, madati, mademahi*
+- **EN:** 1. *mad*, *mand, madati, mademahi*
 [NAIGH. 3,19.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,19) *mamatsi, mamaddhi, mamattu* ([P. 6,1,192](https://ashtadhyayi.com/sutraani/6/1/192)), *mamattana, mamadas, mamadan*; later (already in the [BRĀHMAṆA]) *mādyati*
 [DHĀTUP. 26,99](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*harṣe*).
 [P. 7,3,74.](https://ashtadhyayi.com/sutraani/7/3/74) *matsi, matsva, matsat, matsati* ([ṚV. 8,83,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.083.html#rv08.083.07)), *matsatha, amatsus, amatsata*

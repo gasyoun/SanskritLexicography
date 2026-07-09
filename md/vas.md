@@ -7,11 +7,11 @@ _PWG article — 66 sub-card(s), 495 sense(s) · RU 415/495 · EN 418/495_
 `vas~~h0_00_pwg00`
 
 
-**1)** 1. *vas*¦ enklitischer acc., dat. und gen. pl. des Pronomens der 2ten Person
+**1)** 1. *vas* enklitischer acc., dat. und gen. pl. des Pronomens der 2ten Person
 [VS. PRĀT. 2,5.]
 [P. 8,1,21.](https://ashtadhyayi.com/sutraani/8/1/21) [24. fgg.](https://ashtadhyayi.com/sutraani/8/1/24) ?acc. [ṚV. 7,36,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.09) [37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.01) dat. [1,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.014.html#rv01.014.04) [20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.05) [7,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.042.html#rv07.042.03) gen. [1,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.05) [39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.04) [7,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.047.html#rv07.047.02)
 
-- **RU:** 1. *vas*¦ энклитический acc., dat. и gen. pl. местоимения 2-го лица
+- **RU:** 1. *vas* энклитический acc., dat. и gen. pl. местоимения 2-го лица
 [VS. PRĀT. 2,5.]
 [P. 8,1,21.](https://ashtadhyayi.com/sutraani/8/1/21) [24. fgg.](https://ashtadhyayi.com/sutraani/8/1/24) ?acc. [ṚV. 7,36,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.09) [37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.01) dat. [1,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.014.html#rv01.014.04) [20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.05) [7,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.042.html#rv07.042.03) gen. [1,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.05) [39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.04) [7,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.047.html#rv07.047.02)
 - **EN:** *vas* — enclitic acc., dat. and gen. pl. of the pronoun of the 2nd person [VS. PRĀT. 2,5.] [P. 8,1,21.](https://ashtadhyayi.com/sutraani/8/1/21) [24. fgg.](https://ashtadhyayi.com/sutraani/8/1/24) ?acc. [ṚV. 7,36,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.09) [37,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.037.html#rv07.037.01) dat. [1,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.014.html#rv01.014.04) [20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.020.html#rv01.020.05) [7,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.042.html#rv07.042.03) gen. [1,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.05) [39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.04) [7,47,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.047.html#rv07.047.02)
@@ -22,7 +22,7 @@ _PWG article — 66 sub-card(s), 495 sense(s) · RU 415/495 · EN 418/495_
 `vas~~h1_00_pwg00`
 
 
-**2.1)** 2. *vas*¦, *ucchati, aucchat, avasran, uvāsa, ūṣa*
+**2.1)** 2. *vas*, *ucchati, aucchat, avasran, uvāsa, ūṣa*
 2. pl. *ūṣus, avatsyat*, inf. *vastave*
 [ṚV. 1,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.02) hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens): *uvāsoṣā ucchācca nu*
 [ṚV. 1,48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.03) [10,11,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.03) *uṣaso revadūṣuḥ*
@@ -36,7 +36,7 @@ _PWG article — 66 sub-card(s), 495 sense(s) · RU 415/495 · EN 418/495_
 [H. an. 3,253.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,253)
 [MED. t. 96.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,96)
 
-- **RU:** 2. *vas*¦, *ucchati, aucchat, avasran, uvāsa, ūṣa*
+- **RU:** 2. *vas*, *ucchati, aucchat, avasran, uvāsa, ūṣa*
 2. pl. *ūṣus, avatsyat*, inf. *vastave*
 [ṚV. 1,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.02) светать, быть светлым, сиять (о свете наступающего утра): *uvāsoṣā ucchācca nu*
 [ṚV. 1,48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.03) [10,11,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.03) *uṣaso revadūṣuḥ*
@@ -280,7 +280,7 @@ es wäre nicht Tag geworden
 `vas~~h2_00_pwg00`
 
 
-3. *vas*¦, *vaste* (*ācchādane*)
+3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*
@@ -394,7 +394,7 @@ es wäre nicht Tag geworden
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
 
-**3 (main sense))** 3. *vas*¦, *vaste* (*ācchādane*)
+**3 (main sense))** 3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*
@@ -451,7 +451,7 @@ es wäre nicht Tag geworden
 [BHĀG. P. 10,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,45) [41,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,39) [65,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,65,30)
 [BHAṬṬ. 3,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,45)
 
-- **RU:** 3. *vas*¦, *vaste* (*ācchādane*)
+- **RU:** 3. *vas*, *vaste* (*ācchādane*)
 [DHĀTUP. 24,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24)
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *vasiṣva*
 ? 2. imper. [ṚV. 1,26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) *vadhvam*
@@ -851,12 +851,12 @@ lassen
 `vas~~h3_00_pwg00`
 
 
-**4)** 4. *vas*¦ (= 3. *vas*) _adj._ am Ende eines comp. gekleidet in: *pretacīvara˚*
+**4)** 4. *vas* (= 3. *vas*) _adj._ am Ende eines comp. gekleidet in: *pretacīvara˚*
 [RAGH. 11,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,16)
 
-- **RU:** 4. *vas*¦ (= 3. *vas*) _adj._ в конце comp. одетый в: *pretacīvara˚*
+- **RU:** 4. *vas* (= 3. *vas*) _adj._ в конце comp. одетый в: *pretacīvara˚*
 [RAGH. 11,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,16)
-- **EN:** 4. *vas*¦ (= 3. *vas*) _adj._, at the end of a comp., clothed in: *pretacīvara˚*
+- **EN:** 4. *vas* (= 3. *vas*) _adj._, at the end of a comp., clothed in: *pretacīvara˚*
 [RAGH. 11,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,16)
   <sub>attested</sub>
 
@@ -865,7 +865,7 @@ lassen
 `vas~~h4_00_pwg00`
 
 
-**intro)** 5. *vas*¦, *vasati (nivāse)*
+**intro)** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*
@@ -886,7 +886,7 @@ und *uṣya; vastum*; pass. *uṣyate; uṣita*
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) aus metrischen Rücksichten in der klassischen Sprache häufig auch med.; in der älteren Sprache vom simpl. med. nur partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) verweilend oder verweilt habend
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); und auch an dieser Stelle sind andere Erklärungen möglich. Medialformen in der älteren Sprache s. u. *sam* .
 
-- **RU:** 5. *vas*¦, *vasati (nivāse)*
+- **RU:** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*
@@ -906,7 +906,7 @@ und *uṣya; vastum*; pass. *uṣyate; uṣita*
 [P. 7,2,52.](https://ashtadhyayi.com/sutraani/7/2/52) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 26,102.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,102) из метрических соображений в классическом языке нередко также med.; в более древнем языке от simpl. med. только partic. perf.: *vāvasānā vivasvati somasya pītyā girā* (*ā gatam*) пребывающий или побывавший
 [ṚV. 1,46,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.13); и на этом месте возможны иные объяснения. Медиальные формы в более древнем языке s. u. *sam* .
-- **EN:** 5. *vas*¦, *vasati (nivāse)*
+- **EN:** 5. *vas*, *vasati (nivāse)*
 [DHĀTUP. 23,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *uvāsa, ūṣatus*
 [P. 6,1,15.](https://ashtadhyayi.com/sutraani/6/1/15) [8,3,60.](https://ashtadhyayi.com/sutraani/8/3/60)
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) [3,34.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,34) *ūṣivaṃs*
@@ -3790,10 +3790,10 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 `vas~~h5_00_pwg00`
 
 
-**1)** 6. *vas*¦ (wohl = 5. *vas*) etwa Wohnplatz oder Ansässiger: *vasāṃ* (= *vasatāṃ prāṇinām* [SĀY.]) *rājānaṃ vasatiṃ janānām* der Häuser (Angesessenen) Herrscher, der Leute Heimath [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) Es könnte auch *vasa* angenommen werden.
+**1)** 6. *vas* (wohl = 5. *vas*) etwa Wohnplatz oder Ansässiger: *vasāṃ* (= *vasatāṃ prāṇinām* [SĀY.]) *rājānaṃ vasatiṃ janānām* der Häuser (Angesessenen) Herrscher, der Leute Heimath [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) Es könnte auch *vasa* angenommen werden.
 
-- **RU:** 6. *vas*¦ (вероятно = 5. *vas*) приблизительно «место жительства» или «оседлый житель»: *vasāṃ* (= *vasatāṃ prāṇinām* [SĀY.]) *rājānaṃ vasatiṃ janānām* «владыка домов (оседлых людей), отечество народа» [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) Можно было бы также допустить *vasa*.
-- **EN:** 6. *vas*¦ (probably = 5. *vas*) approximately "dwelling-place" or "resident": *vasāṃ* (= *vasatāṃ prāṇinām*
+- **RU:** 6. *vas* (вероятно = 5. *vas*) приблизительно «место жительства» или «оседлый житель»: *vasāṃ* (= *vasatāṃ prāṇinām* [SĀY.]) *rājānaṃ vasatiṃ janānām* «владыка домов (оседлых людей), отечество народа» [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) Можно было бы также допустить *vasa*.
+- **EN:** 6. *vas* (probably = 5. *vas*) approximately "dwelling-place" or "resident": *vasāṃ* (= *vasatāṃ prāṇinām*
 [SĀY.]) *rājānaṃ vasatiṃ janānām* "lord of the houses (of the settled), homeland of the people"
 [ṚV. 5,2,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.06) One could also assume *vasa*.
   <sub>attested</sub>
@@ -3803,10 +3803,10 @@ gesühnt sind (= *niḥśeṣita* [NĪLAK.])
 `vas~~h6_00_pwg00`
 
 
-**1)** 7. *vas*¦ *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; den Angriff oder Lauf richten gegen, losstürmen auf: *madhye vasiṣva tuvinṛmṇorvoḥ* (nämlich *dāsasya*) ziele mitten zwischen seine Schenkel [ṚV. 8,59,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.10) *ājāvadriṃ vāvasānasya nartayan* indem er den Schleuderstein des Angreifenden oder Zielenden schnellte [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* dem Erwerb nachjagend [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* wehre dem gefrässigen Feuer, dass es nicht wie ein Löwe auf die Werke (d. h. Geräthe, Besitzthümer) im Hause sich stürze [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03) — *anu* den Lauf richten nach: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* er eilt nach der linken Seite (wo der Anrufende sich denkt): unsern Schmaus verschmäht er nicht [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)
+**1)** 7. *vas* *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; den Angriff oder Lauf richten gegen, losstürmen auf: *madhye vasiṣva tuvinṛmṇorvoḥ* (nämlich *dāsasya*) ziele mitten zwischen seine Schenkel [ṚV. 8,59,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.10) *ājāvadriṃ vāvasānasya nartayan* indem er den Schleuderstein des Angreifenden oder Zielenden schnellte [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* dem Erwerb nachjagend [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* wehre dem gefrässigen Feuer, dass es nicht wie ein Löwe auf die Werke (d. h. Geräthe, Besitzthümer) im Hause sich stürze [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03) — *anu* den Lauf richten nach: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* er eilt nach der linken Seite (wo der Anrufende sich denkt): unsern Schmaus verschmäht er nicht [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)
 
-- **RU:** 7. *vas*¦ *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; «направлять нападение» или «устремляться против, бросаться на»: *madhye vasiṣva tuvinṛmṇorvoḥ* (а именно *dāsasya*) «целься прямо между его бёдрами» [ṚV. 8,59,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.10) *ājāvadriṃ vāvasānasya nartayan* «когда он метнул камень из пращи нападающего» или «целящегося» [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* «преследуя добычу» [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* «удержи прожорливый огонь, чтобы он не бросился, как лев, на имущество» (d. h. орудия, пожитки) «в доме» [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03) — *anu* «направлять бег к»: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* «он спешит к левой стороне» (туда, где мысленно помещает себя взывающий): «нашего пиршества он не отвергает» [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)
-- **EN:** 7. *vas*¦ *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; to direct "the attack"
+- **RU:** 7. *vas* *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; «направлять нападение» или «устремляться против, бросаться на»: *madhye vasiṣva tuvinṛmṇorvoḥ* (а именно *dāsasya*) «целься прямо между его бёдрами» [ṚV. 8,59,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.10) *ājāvadriṃ vāvasānasya nartayan* «когда он метнул камень из пращи нападающего» или «целящегося» [1,51,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.03) *rāyaḥ sūno sahaso vāvasānā ati srasema vṛjanaṃ nāṃhaḥ* «преследуя добычу» [6,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.011.html#rv06.011.06) *rakṣo agnimaśuṣaṃ tūrvayāṇaṃ siṃho na dame apāṃsi vastoḥ* «удержи прожорливый огонь, чтобы он не бросился, как лев, на имущество» (d. h. орудия, пожитки) «в доме» [1,174,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.03) — *anu* «направлять бег к»: *savyāmanu sphigyaṃ vāvāse vṛṣā na dāno asya roṣati* «он спешит к левой стороне» (туда, где мысленно помещает себя взывающий): «нашего пиршества он не отвергает» [ṚV. 8,4,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.004.html#rv08.004.08)
+- **EN:** 7. *vas* *(vaste), vasiṣva, vāvase (vavase* Padap.), *vastos*; to direct "the attack"
 
 or "course against, to rush upon": *madhye vasiṣva tuvinṛmṇorvoḥ* (namely *dāsasya*) "aim right between his thighs"
 [ṚV. 8,59,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.10) *ājāvadriṃ vāvasānasya nartayan* "in that he hurled the sling-stone of the attacker" or "of the one taking aim"
@@ -3825,10 +3825,10 @@ or "course against, to rush upon": *madhye vasiṣva tuvinṛmṇorvoḥ* (namel
 `vas~~h7_00_pwg00`
 
 
-**1)** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
+**1)** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
 
-- **RU:** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
-- **EN:** 8. *vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana*
+- **RU:** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana* v. l. st. *sneha; avaharaṇa* und *upaharaṇa* v. l. st. *apaharaṇa; vadhe* [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
+- **EN:** 8. *vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, snehana*
 v. l. st. *sneha; avaharaṇa* and *upaharaṇa*
 v. l. st. *apaharaṇa; vadhe*
 [VOP.]) [DHĀTUP. 33,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)
@@ -3881,10 +3881,10 @@ v. l. st. *apaharaṇa; vadhe*
 `vas~~h8_00_pwg00`
 
 
-**1)** 9. *vas*¦, *vasyati* (*stambhe*) [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
+**1)** 9. *vas*, *vasyati* (*stambhe*) [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
 
-- **RU:** 9. *vas*¦, *vasyati* (*stambhe*) [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
-- **EN:** 9. *vas*¦, *vasyati* (*stambhe*)
+- **RU:** 9. *vas*, *vasyati* (*stambhe*) [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
+- **EN:** 9. *vas*, *vasyati* (*stambhe*)
 [DHĀTUP. 26,105.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)
   <sub>attested</sub>
 
@@ -3893,10 +3893,10 @@ v. l. st. *apaharaṇa; vadhe*
 `vas~~h9_00_pwg00`
 
 
-**1)** **3.** *vas*¦ [vgl. ] Z. 2 füge bei *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
+**1)** **3.** *vas* [vgl. ] Z. 2 füge bei *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
 
-- **RU:** **3.** *vas*¦ [vgl. ] Z. 2 добавить *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
-- **EN:** **3.** *vas*¦ [vgl. ] Z. 2 add *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
+- **RU:** **3.** *vas* [vgl. ] Z. 2 добавить *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
+- **EN:** **3.** *vas* [vgl. ] Z. 2 add *vasiṣṭa* [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01)
   <sub>attested</sub>
 
 ## vas
@@ -3904,10 +3904,10 @@ v. l. st. *apaharaṇa; vadhe*
 `vas~~h10_00_pwg00`
 
 
-**1)** **5.** *vas*¦ [vgl. ] mit *adhi* caus. Die zweite Bedeutung ist zu streichen; vgl. *vāsay* mit *adhi* 2〉.
+**1)** **5.** *vas* [vgl. ] mit *adhi* caus. Die zweite Bedeutung ist zu streichen; vgl. *vāsay* mit *adhi* 2〉.
 
-- **RU:** **5.** *vas*¦ [vgl. ] mit *adhi* caus. Второе значение подлежит исключению; vgl. *vāsay* mit *adhi* 2〉.
-- **EN:** **5.** *vas*¦ [vgl. ] with *adhi* caus. The second meaning is to be struck out; vgl. *vāsay* with *adhi* 2〉.
+- **RU:** **5.** *vas* [vgl. ] mit *adhi* caus. Второе значение подлежит исключению; vgl. *vāsay* mit *adhi* 2〉.
+- **EN:** **5.** *vas* [vgl. ] with *adhi* caus. The second meaning is to be struck out; vgl. *vāsay* with *adhi* 2〉.
   <sub>attested</sub>
 
 ## vas
@@ -3915,10 +3915,10 @@ v. l. st. *apaharaṇa; vadhe*
 `vas~~h11_00_pwg00`
 
 
-**1)** 2. *vas*¦ mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
+**1)** 2. *vas* mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
 
-- **RU:** 2. *vas*¦ mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
-- **EN:** 2. *vas*¦ with *adhi* vgl. 5. *vas* with *adhi* and u. *samayā*.
+- **RU:** 2. *vas* mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
+- **EN:** 2. *vas* with *adhi* vgl. 5. *vas* with *adhi* and u. *samayā*.
   <sub>attested</sub>
 
 **2)** — *apa* 1) auch [ṚV. 8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18)
@@ -3941,10 +3941,10 @@ v. l. st. *apaharaṇa; vadhe*
 `vas~~h12_00_pwg00`
 
 
-**1)** 3. *vas*¦ Z. 2 füge *vasiṣṭa* [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01) hinzu.
+**1)** 3. *vas* Z. 2 füge *vasiṣṭa* [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01) hinzu.
 
-- **RU:** 3. *vas*¦ Z. 2 добавить *vasiṣṭa* [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01).
-- **EN:** 3. *vas*¦
+- **RU:** 3. *vas* Z. 2 добавить *vasiṣṭa* [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01).
+- **EN:** 3. *vas*
 Z. 2 add *vasiṣṭa*
 [ṚV. 2,36,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01).
   <sub>attested</sub>
@@ -3954,7 +3954,7 @@ Z. 2 add *vasiṣṭa*
 `vas~~h13_00_pwg00`
 
 
-**1)** *vas*¦
+**1)** *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
 [Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
@@ -3978,7 +3978,7 @@ Z. 2 add *vasiṣṭa*
 **2)** 2) gehört zu 2. *vas:* die Nacht hell werden lassen so v. a. bis Tagesanbruch erzählen.
 - **EN:** 2) belongs to 2. *vas:* "to make the night grow bright", thus v. a. "to tell until daybreak".
 
-**5)** 5. *vas*¦
+**5)** 5. *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
 [Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
@@ -3989,7 +3989,7 @@ Z. 2 add *vasiṣṭa*
 — *vi* caus.
  2) gehört zu 2. *vas:* die Nacht hell werden lassen so v. a. bis Tagesanbruch erzählen.
 
-- **RU:** 5. *vas*¦
+- **RU:** 5. *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* основано на
 [Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
@@ -4006,16 +4006,16 @@ Z. 2 add *vasiṣṭa*
 `vas~~h0_zz_pw00`
 
 
-**1)** **1.** √*vas*¦ enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
+**1)** **1.** √*vas* enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
 
-- **RU:** **1.** √*vas*¦ энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
-- **EN:** **1.** √*vas*¦ enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
+- **RU:** **1.** √*vas* энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
+- **EN:** **1.** √*vas* enclitic Acc., Dat., Gen. and Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) of the pronoun of the 2nd person.
   <sub>attested</sub>
 
-**2.intro)** **2.** √*vas*¦ *ucchati*
+**2.intro)** **2.** √*vas* *ucchati*
 
-- **RU:** **2.** √*vas*¦ *ucchati*
-- **EN:** **2.** √*vas*¦ *ucchati*
+- **RU:** **2.** √*vas* *ucchati*
+- **EN:** **2.** √*vas* *ucchati*
   <sub>attested</sub>
 
 **2.1)** — 1〉 illucescere, hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens, vom Hellwerden der Nacht u. s. w.).
@@ -4116,10 +4116,10 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *parivi* to flare up from — (Abl.), hence v. a. after.
   <sub>attested</sub>
 
-**3.intro)** **3.** √*vas*¦, *vaste* (einmal *vatsyanti* st. *˚nte*) anziehen, sich ein Gewand ([ĀŚV. GṚHY. 1,19,11]) oder Hülle (Acc.) umlegen, eine Form der Erscheinung annehmen, sich hineinmachen —, eindringen in (Acc.).
+**3.intro)** **3.** √*vas*, *vaste* (einmal *vatsyanti* st. *˚nte*) anziehen, sich ein Gewand ([ĀŚV. GṚHY. 1,19,11]) oder Hülle (Acc.) umlegen, eine Form der Erscheinung annehmen, sich hineinmachen —, eindringen in (Acc.).
 
-- **RU:** **3.** √*vas*¦, *vaste* (однажды *vatsyanti* st. *˚nte*) надевать, облачаться в одеяние ([ĀŚV. GṚHY. 1,19,11]) или покров (Acc.), облекаться, принимать облик, входить в —, проникать в (Acc.).
-- **EN:** **3.** √*vas*¦, *vaste* (once *vatsyanti* st. *˚nte*) to put on, to don a garment ([ĀŚV. GṚHY. 1,19,11]) or covering (Acc.) , to assume an outward form, to put oneself into —, to enter into (Acc.).
+- **RU:** **3.** √*vas*, *vaste* (однажды *vatsyanti* st. *˚nte*) надевать, облачаться в одеяние ([ĀŚV. GṚHY. 1,19,11]) или покров (Acc.), облекаться, принимать облик, входить в —, проникать в (Acc.).
+- **EN:** **3.** √*vas*, *vaste* (once *vatsyanti* st. *˚nte*) to put on, to don a garment ([ĀŚV. GṚHY. 1,19,11]) or covering (Acc.) , to assume an outward form, to put oneself into —, to enter into (Acc.).
   <sub>attested</sub>
 
 **3.caus.1)** — Caus. *vāsayati*
@@ -4262,10 +4262,10 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *abhisam* to wrap around.
   <sub>attested</sub>
 
-**4)** **4.** *˚vas*¦ gekleidet in.
+**4)** **4.** *˚vas* gekleidet in.
 
-- **RU:** **4.** *˚vas*¦ одетый в.
-- **EN:** **4.** *˚vas*¦ clothed in.
+- **RU:** **4.** *˚vas* одетый в.
+- **EN:** **4.** *˚vas* clothed in.
   <sub>attested</sub>
 
 **apa-intro)** — Mit *apa*
@@ -4373,7 +4373,7 @@ Z. 2 add *vasiṣṭa*
 `vas~~h0_zz_pw01`
 
 
-**PW-1)** **5.** √*vas*¦ *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
+**PW-1)** **5.** √*vas* *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
 — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.
 - **EN:** **5.** √*vas* *vasati* (metrically also Med.; in the older language only Med. *vāvasāna*, and with *sam*), Pass. *uṣyate*;
 — 1) to stay in a place, halt, pass the night (with and without *rātrim*; not infrequently a numeral or pronoun is to be supplied in the Acc. *rātrīs* or *rātrim*), to tarry (also so v. a. "to stay away, be absent"), to abide, have one's location (also of animals), to take up one's residence, dwell, live in or with, to remain (with a predicative Partic. praet. pass. "to remain in this state —, in this condition —, to lie —, to stand still"), to remain at, to hold to, to be located or be somewhere. The where, wherein, or whereby is given in the Loc. *dūratas* "to keep oneself away," *sukham* also so v. a. "to live comfortably, feel at ease."
@@ -4890,9 +4890,9 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — 3) to cohabit sexually with, with Acc.
   <sub>attested</sub>
 
-**0-intro)** **5.** √*vas*¦ *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
+**0-intro)** **5.** √*vas* *vasati* (metrisch auch Med.; in der älteren Sprache Med. nur *vāvasāna* und mit *sam*), Pass. *uṣyate*;
 
-- **RU:** **5.** √*vas*¦ *vasati* (метрически также Med.; в более древнем языке Med. только *vāvasāna* и с *sam*), Pass. *uṣyate*;
+- **RU:** **5.** √*vas* *vasati* (метрически также Med.; в более древнем языке Med. только *vāvasāna* и с *sam*), Pass. *uṣyate*;
   <sub>mixed</sub>
 
 **1)** — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.
@@ -5454,16 +5454,16 @@ Z. 2 add *vasiṣṭa*
 `vas~~h0_zz_pw03`
 
 
-**6)** **6.** *vas*¦ etwa Wohnsitz oder Ansässiger. Nur Gen. Pl. *vasām*.
+**6)** **6.** *vas* etwa Wohnsitz oder Ansässiger. Nur Gen. Pl. *vasām*.
 
-- **RU:** **6.** *vas*¦ примерно «местожительство» или «оседлый житель». Только Gen. Pl. *vasām*.
-- **EN:** **6.** *vas* ¦ perhaps 'dwelling-place' or 'one who is settled'. Only Gen. Pl. *vasām*.
+- **RU:** **6.** *vas* примерно «местожительство» или «оседлый житель». Только Gen. Pl. *vasām*.
+- **EN:** **6.** *vas* perhaps 'dwelling-place' or 'one who is settled'. Only Gen. Pl. *vasām*.
   <sub>lexicographic</sub>
 
-**7_intro)** **7.** √*vas*¦ (nur *vasiṣva*, *˚vāvase* und *vāvasāna*) den Angriff oder Lauf richten gegen, losstürmen auf. *rāyas* so v. a. dem Erwerb nachjagen.
+**7_intro)** **7.** √*vas* (nur *vasiṣva*, *˚vāvase* und *vāvasāna*) den Angriff oder Lauf richten gegen, losstürmen auf. *rāyas* so v. a. dem Erwerb nachjagen.
 
-- **RU:** **7.** √*vas*¦ (только *vasiṣva*, *˚vāvase* и *vāvasāna*) направлять нападение или бег против кого-л., устремляться, бросаться на. *rāyas* так v. a. гнаться за наживой.
-- **EN:** **7.** √*vas* ¦ (only *vasiṣva*, *˚vāvase*, and *vāvasāna*) to direct the attack or course against, to rush upon. *rāyas*, thus v. a., to chase after gain.
+- **RU:** **7.** √*vas* (только *vasiṣva*, *˚vāvase* и *vāvasāna*) направлять нападение или бег против кого-л., устремляться, бросаться на. *rāyas* так v. a. гнаться за наживой.
+- **EN:** **7.** √*vas* (only *vasiṣva*, *˚vāvase*, and *vāvasāna*) to direct the attack or course against, to rush upon. *rāyas*, thus v. a., to chase after gain.
   <sub>attested</sub>
 
 **7_anu)** — Mit *anu* den Lauf richten nach (Acc.). Nach [GELDNER] ([KUHNʼS Z. 27,216. fg.]) verzehren.
@@ -5472,10 +5472,10 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *anu* to direct one's course toward (Acc.). According to [GELDNER] ([KUHNʼS Z. 27,216. fg.]) to consume.
   <sub>attested</sub>
 
-**8_intro)** **8.** √*vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* auch *upaharaṇa* und *avaharaṇa*). Simplex nicht zu belegen.
+**8_intro)** **8.** √*vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* auch *upaharaṇa* und *avaharaṇa*). Simplex nicht zu belegen.
 
-- **RU:** **8.** √*vas*¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* также *upaharaṇa* и *avaharaṇa*). Простая форма (симплекс) не засвидетельствована.
-- **EN:** **8.** √*vas* ¦, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* also *upaharaṇa* and *avaharaṇa*). The simplex is not attested.
+- **RU:** **8.** √*vas*, *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* также *upaharaṇa* и *avaharaṇa*). Простая форма (симплекс) не засвидетельствована.
+- **EN:** **8.** √*vas* , *vāsayati* (*snehacchedāpaharaṇeṣu, vadhe*; st. *apaharaṇa* also *upaharaṇa* and *avaharaṇa*). The simplex is not attested.
   <sub>lexicographic</sub>
 
 **8_a)** — Mit *ud* (?) in *udvāsana** 2〉.
@@ -5508,28 +5508,28 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *pra* in *pravāsana** 2).
   <sub>lexicographic</sub>
 
-**9)** **9.** *√*vas*¦, *vasayati* (*stambhe*).
+**9)** **9.** *√*vas*, *vasayati* (*stambhe*).
 
-- **RU:** **9.** *√*vas*¦, *vasayati* (*stambhe*).
-- **EN:** **9.** *√*vas* ¦, *vasayati* (*stambhe*).
+- **RU:** **9.** *√*vas*, *vasayati* (*stambhe*).
+- **EN:** **9.** *√*vas* , *vasayati* (*stambhe*).
   <sub>lexicographic</sub>
 
-**2_corr)** **2.** √*vas*¦ mit *abhivi* [ĀPAST. ŚR. 14,23,12].
+**2_corr)** **2.** √*vas* mit *abhivi* [ĀPAST. ŚR. 14,23,12].
 
-- **RU:** **2.** √*vas*¦ с *abhivi* [ĀPAST. ŚR. 14,23,12].
-- **EN:** **2.** √*vas* ¦ with *abhivi* [ĀPAST. ŚR. 14,23,12].
+- **RU:** **2.** √*vas* с *abhivi* [ĀPAST. ŚR. 14,23,12].
+- **EN:** **2.** √*vas* with *abhivi* [ĀPAST. ŚR. 14,23,12].
   <sub>lexicographic</sub>
 
-**5_corr)** **5.** √*vas*¦ mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
+**5_corr)** **5.** √*vas* mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
 
-- **RU:** **5.** √*vas*¦ с *vi*: 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
-- **EN:** **5.** √*vas* ¦ with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
+- **RU:** **5.** √*vas* с *vi*: 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
+- **EN:** **5.** √*vas* with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
   <sub>lexicographic</sub>
 
-**2_vi)** **2.** √*vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
+**2_vi)** **2.** √*vas* mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
 
-- **RU:** **2.** √*vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
-- **EN:** **2.** √*vas* ¦ with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
+- **RU:** **2.** √*vas* с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
+- **EN:** **2.** √*vas* with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21).
   <sub>attested</sub>
 
 **2_vi_b)** — Mit *abhivi* VI. 6.
@@ -5538,10 +5538,10 @@ Z. 2 add *vasiṣṭa*
 - **EN:** — With *abhivi* VI. 6.
   <sub>attested</sub>
 
-**5_vi)** **5.** √*vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+**5_vi)** **5.** √*vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
 
-- **RU:** **5.** √*vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
-- **EN:** **5.** √*vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+- **RU:** **5.** √*vas* VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+- **EN:** **5.** √*vas* VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
   <sub>attested</sub>
 
 **5_vi_b)** — Mit *vi* VI. 6.
@@ -5555,10 +5555,10 @@ Z. 2 add *vasiṣṭa*
 `vas~~h0_zz_sch`
 
 
-**vi_aor)** 2. vas¦ mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21) — Mit abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
-- **EN:** 2. vas ¦ with vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Cf. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — With abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
+**vi_aor)** 2. vas mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21) — Mit abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
+- **EN:** 2. vas with vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Cf. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — With abhivi, [Āpast. Śr. 14,23,12.] {part=,seq=23685,type=,n=3}
 
-**2)** vas¦ mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21) — Mit abhivi, [Āpast. Śr. 14,23,12.]
+**2)** vas mit vi, Aor. vyavāṭ, [Maitr. S. 3,4,9] (57,5). Vgl. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21) — Mit abhivi, [Āpast. Śr. 14,23,12.]
 
 - **RU:** vas с vi, аорист vyavāṭ, [Maitr. S. 3,4,9] (57,5). Ср. [AV. 8,1,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21) — С abhivi, [Āpast. Śr. 14,23,12.]
   <sub>attested</sub>
@@ -5568,50 +5568,50 @@ Z. 2 add *vasiṣṭa*
 `vas~~h0_zz_pwkvn`
 
 
-**2_corr)** **2.** *vas*¦ mit *abhivi* [ĀPAST. ŚR. 14,23,12].
-- **EN:** **2.** *vas* ¦ with *abhivi* [ĀPAST. ŚR. 14,23,12].
+**2_corr)** **2.** *vas* mit *abhivi* [ĀPAST. ŚR. 14,23,12].
+- **EN:** **2.** *vas* with *abhivi* [ĀPAST. ŚR. 14,23,12].
 
-**5_corr)** **5.** *vas*¦ mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
-- **EN:** **5.** *vas* ¦ with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
+**5_corr)** **5.** *vas* mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
+- **EN:** **5.** *vas* with *vi* 6)a) read = 5)b) and add [VASIṢṬHA 27,17].
 
-**2_vi)** **2.** *vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — Mit *abhivi* VI. 6.
-- **EN:** **2.** *vas* ¦ with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — With *abhivi* VI. 6.
+**2_vi)** **2.** *vas* mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — Mit *abhivi* VI. 6.
+- **EN:** **2.** *vas* with *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — With *abhivi* VI. 6.
 
-**5_vi)** **5.** *vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — Mit *vi* VI. 6.
-- **EN:** **5.** *vas* ¦ VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — With *vi* VI. 6.
+**5_vi)** **5.** *vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — Mit *vi* VI. 6.
+- **EN:** **5.** *vas* VI. Aor. *avāksam* (thus all Hdschrr. after [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) in a pun with *vāk* st. *avātsam* (thus [HAUG]). 2) with Acc. of the woman [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — With *vi* VI. 6.
 
 **pwkvn-1)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
 
-**2.** *vas*¦ mit *abhivi* [ĀPAST. ŚR. 14,23,12].
+**2.** *vas* mit *abhivi* [ĀPAST. ŚR. 14,23,12].
 
 - **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
 
-**2.** *vas*¦ с *abhivi* [ĀPAST. ŚR. 14,23,12].
+**2.** *vas* с *abhivi* [ĀPAST. ŚR. 14,23,12].
   <sub>lexicographic</sub>
 
 **pwkvn-2)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
 
-**5.** *vas*¦ mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
+**5.** *vas* mit *vi* 6〉a〉 lies = 5〉b〉 und füge [VASIṢṬHA 27,17] hinzu.
 
 - **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
 
-**5.** *vas*¦ с *vi* 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
+**5.** *vas* с *vi* 6〉a〉 читай = 5〉b〉 и добавь [VASIṢṬHA 27,17].
   <sub>lexicographic</sub>
 
 **pwkvn-3)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
 
-**2.** *vas*¦ mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — Mit *abhivi* VI. 6.
+**2.** *vas* mit *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — Mit *abhivi* VI. 6.
 
 - **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
 
-**2.** *vas*¦ с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — С *abhivi* VI. 6.
+**2.** *vas* с *vi* VI. Aor. *vyavāṭ* [MAITR. S. 3,4,9 (57,5)]. Vgl. [AV. 8,1,21](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.21). — С *abhivi* VI. 6.
   <sub>lexicographic</sub>
 
 **pwkvn-4)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
 
-**5.** *vas*¦ VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — Mit *vi* VI. 6.
+**5.** *vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — Mit *vi* VI. 6.
 
 - **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
 
-**5.** *vas*¦ VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — С *vi* VI. 6.
+**5.** *vas* VI. Aor. *avāksam* (так все Hdschrr. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* st. *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4). [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10). — С *vi* VI. 6.
   <sub>lexicographic</sub>

@@ -3,16 +3,16 @@
 `_ap~~h3_00_pwg00`
 
 
-**2)** *āp*¦
+**2)** *āp*
  2)
 Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) ist *apus* von *pā* schützen gemeint. — partic. *āpta* dividirt
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
 
-- **RU:** *āp*¦
+- **RU:** *āp*
  2)
 Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделённый
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
-- **EN:** *āp*¦
+- **EN:** *āp*
  2)
 Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) is *apus* meant from *pā* "to protect". — partic. *āpta* "divided"
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]

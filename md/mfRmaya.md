@@ -7,12 +7,12 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 `mf_rmaya`
 
 
-**1 (PWG))** *mṛṇmaya*¦ s. *mṛnmaya* .
+**1 (PWG))** *mṛṇmaya* s. *mṛnmaya* .
 
-- **RU:** *mṛṇmaya*¦ s. *mṛnmaya* .
+- **RU:** *mṛṇmaya* s. *mṛnmaya* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *mṛṇmaya*¦ _Adj._ fehlerhaft für *mṛnmaya*.
+**1 (PW))** *mṛṇmaya* _Adj._ fehlerhaft für *mṛnmaya*.
 
-- **RU:** *mṛṇmaya*¦ _Adj._ ошибочно вместо *mṛnmaya*.
+- **RU:** *mṛṇmaya* _Adj._ ошибочно вместо *mṛnmaya*.
   <sub>lexicographic</sub>

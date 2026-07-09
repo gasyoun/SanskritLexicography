@@ -3,12 +3,12 @@
 `_bid~~h2_00_pwg00`
 
 
-**1)** 1. *bhid*¦ mit *abhi* pass. zerspringen, zerbrechen: *yantrasyevābhibhidyataḥ*
+**1)** 1. *bhid* mit *abhi* pass. zerspringen, zerbrechen: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
 
 - **RU:** 1. *bhid* mit *abhi* pass. — трескаться, разламываться: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
-- **EN:** 1. *bhid*¦ with *abhi* pass. to burst, break asunder: *yantrasyevābhibhidyataḥ*
+- **EN:** 1. *bhid* with *abhi* pass. to burst, break asunder: *yantrasyevābhibhidyataḥ*
 [R. 7,23,5,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,5,8)
   <sub>attested</sub>
 

@@ -7,7 +7,7 @@ _PWG article — 26 sub-card(s), 163 sense(s) · RU 65/163 · EN 120/163_
 `na_s~~h0_00_pwg00`
 
 
-**1)** *naś*¦, *naśati* (ved., *vipraṇaśet*
+**1)** *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) und *naśyati* (
@@ -101,7 +101,7 @@ _PWG article — 26 sub-card(s), 163 sense(s) · RU 65/163 · EN 120/163_
 [MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
 
-- **RU:** *naś*¦, *naśati* (ved., *vipraṇaśet*
+- **RU:** *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) и *naśyati* (
@@ -194,7 +194,7 @@ _PWG article — 26 sub-card(s), 163 sense(s) · RU 65/163 · EN 120/163_
 [N. 17,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,7) *sa naśyeta mṛṣā vadan* погибнуть
 [MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
-- **EN:** 1. *naś*¦, *naśati* (ved., *vipraṇaśet*
+- **EN:** 1. *naś*, *naśati* (ved., *vipraṇaśet*
 [MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) *vinaśet*
 [3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *naśemahi*
 [7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685)) and *naśyati* (
@@ -922,10 +922,10 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 `na_s~~h1_00_pwg00`
 
 
-**1)** 2. *naś*¦ (= 1. *naś*) _adj._ verloren gehend, zu Grunde gehend; nom. *nak* und *naṭ* [P. 8,2,63](https://ashtadhyayi.com/sutraani/8/2/63), Sch. [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149) — Vgl. *jīva˚* .
+**1)** 2. *naś* (= 1. *naś*) _adj._ verloren gehend, zu Grunde gehend; nom. *nak* und *naṭ* [P. 8,2,63](https://ashtadhyayi.com/sutraani/8/2/63), Sch. [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149) — Vgl. *jīva˚* .
 
-- **RU:** 2. *naś*¦ (= 1. *naś*) _adj._ гибнущий, пропадающий; nom. *nak* und *naṭ* [P. 8,2,63](https://ashtadhyayi.com/sutraani/8/2/63), Sch. [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149) — Vgl. *jīva˚* .
-- **EN:** 2. *naś*¦ (= 1. *naś*) _adj._ perishing, being destroyed; nom. *nak* and *naṭ*
+- **RU:** 2. *naś* (= 1. *naś*) _adj._ гибнущий, пропадающий; nom. *nak* und *naṭ* [P. 8,2,63](https://ashtadhyayi.com/sutraani/8/2/63), Sch. [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149) — Vgl. *jīva˚* .
+- **EN:** 2. *naś* (= 1. *naś*) _adj._ perishing, being destroyed; nom. *nak* and *naṭ*
 [P. 8,2,63](https://ashtadhyayi.com/sutraani/8/2/63), Sch.
 [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149)
 — Vgl. *jīva˚* .
@@ -936,7 +936,7 @@ to be lost, i.e. to be ineffectual, to bear no fruit
 `na_s~~h2_00_pwg00`
 
 
-**1)** 3. *naś*¦ (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+**1)** 3. *naś* (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* und *ānaṭ* werden vom
 Schol. zu [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) und [SIDDH. K. 222,a] hierher gezogen, können aber füglich auf 1. *aś* zurückgeführt werden); *naṃśi* aor. erreichen, erlangen; treffen, zu Theil werden: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*
@@ -951,7 +951,7 @@ Schol. zu [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) und [SIDDH. K. 22
 [7,32,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.21) — caus. eintreffen machen(?): *yuvaṃ kavī ṣṭhaḥ paryaśvinā rathaṃ viśo na kutso jariturnaśāyathaḥ*
 [ṚV. 10,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06)
 
-- **RU:** 3. *naś*¦ (так v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+- **RU:** 3. *naś* (так v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* и *ānaṭ* привлечены
 Schol. к [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) и [SIDDH. K. 222,a] сюда, но вполне могут быть возведены к 1. *aś*); *naṃśi* aor. достигать, получать; настигать, доставаться: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*
@@ -965,7 +965,7 @@ Schol. к [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) и [SIDDH. K. 222
 [1,123,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.11) [165,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.09) [8,31,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.17) *na sredhantaṃ rayirnaśat*
 [7,32,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.21) — caus. заставлять прибывать (?): *yuvaṃ kavī ṣṭhaḥ paryaśvinā rathaṃ viśo na kutso jariturnaśāyathaḥ*
 [ṚV. 10,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06)
-- **EN:** 3. *naś*¦ (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
+- **EN:** 3. *naś* (so v. a. 1. *aś*; vgl. *nakṣ), naśati, naśate, naśat*
 [NAIGH. 2,18](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,18); *(abhi)naṭ, (pra)nak (ānak* and *ānaṭ* are adduced by
 Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) and [SIDDH. K. 222,a] here, but can readily be referred back to 1. *aś*); *naṃśi* aor. to reach, to attain; to meet, to fall to one's share: *jyotirnaśīmahi*
 [ṚV. 10,36,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.03) [10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.036.html#rv10.036.10) *rayim*
@@ -1083,16 +1083,16 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) and [SIDDH. K.
 `na_s~~h3_00_pwg00`
 
 
-**1)** 1. *naś*¦, *naśyato yudhyato vāpi* dessen der da flieht oder kämpft
+**1)** 1. *naś*, *naśyato yudhyato vāpi* dessen der da flieht oder kämpft
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)
 
-- **RU:** 1. *naś*¦, *naśyato yudhyato vāpi* тот, кто бежит или сражается
+- **RU:** 1. *naś*, *naśyato yudhyato vāpi* тот, кто бежит или сражается
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)
-- **EN:** 1. *naś*¦, *naśyato yudhyato vāpi* he who flees or fights
+- **EN:** 1. *naś*, *naśyato yudhyato vāpi* he who flees or fights
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)
@@ -1118,18 +1118,18 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) and [SIDDH. K.
 `na_s~~h4_00_pwg00`
 
 
-**1)** 3. *naś*¦
+**1)** 3. *naś*
 Z. 2. fg. *ānak* wird vom
 Schol. zu [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) auf *naś, ānaṭ*
 
 [SIDDH. K. 222,a,2] auf *aś* zurückgeführt.
 
-- **RU:** 3. *naś*¦
+- **RU:** 3. *naś*
 Z. 2. fg. *ānak* возводится
 Schol. к [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) на *naś, ānaṭ*
 
 [SIDDH. K. 222,a,2] к *aś*.
-- **EN:** 3. *naś*¦
+- **EN:** 3. *naś*
 Z. 2. fg. *ānak* is referred by
 Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, ānaṭ*
 
@@ -1141,12 +1141,12 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 `na_s~~h5_00_pwg00`
 
 
-**1)** 1. *naś*¦ mit *vi, vyanaśat* mit caus. Bed.
+**1)** 1. *naś* mit *vi, vyanaśat* mit caus. Bed.
 [HARIV. 4167](https://sanskrit-lexicon-scans.github.io/hariv?4167) nach der Lesart der neueren Ausg.
 
-- **RU:** 1. *naś*¦ с *vi, vyanaśat* с caus. Bed.
+- **RU:** 1. *naś* с *vi, vyanaśat* с caus. Bed.
 [HARIV. 4167](https://sanskrit-lexicon-scans.github.io/hariv?4167) по чтению новейших Ausg.
-- **EN:** 1. *naś*¦ with *vi, vyanaśat* with caus. Bed.
+- **EN:** 1. *naś* with *vi, vyanaśat* with caus. Bed.
 [HARIV. 4167](https://sanskrit-lexicon-scans.github.io/hariv?4167) according to the reading of the more recent Ausg.
   <sub>attested</sub>
 
@@ -1155,8 +1155,8 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 `na_s~~h0_zz_pw`
 
 
-**1)** **1.** √*naś*¦, *naśati* und *naśyati*; ausnahmsweise auch Med.
-- **EN:** **1.** √*naś*¦, *naśati* and *naśyati*; exceptionally also Med.
+**1)** **1.** √*naś*, *naśati* und *naśyati*; ausnahmsweise auch Med.
+- **EN:** **1.** √*naś*, *naśati* and *naśyati*; exceptionally also Med.
 
 **1.1)** — 1〉 verloren gehen, abhanden kommen, verschwinden, — aus (Abl.), unsichtbar werden, entweichen, entwischen, davon laufen, fliehen, sich scheren. *naṣṭa* verloren gegangen, abhanden gekommen, verschwunden, nicht mehr zu sehen, Jmd (Abl.) aus dem Gesicht gekommen, davon gelaufen, geflohen, — aus (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 - **EN:** — 1〉 to be lost, go missing, disappear, — from (Abl.), to become invisible, slip away, escape, run away, flee, make off. *naṣṭa* lost, gone missing, disappeared, no longer visible, gone from someone's (Abl.) sight, run away, fled, — from (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
@@ -1302,11 +1302,11 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 **comp.vi-pra)** — Mit *sam*, *saṃnaṣṭa* zu Grunde gegangen.
 - **EN:** — With *sam*, *saṃnaṣṭa* ruined, destroyed.
 
-**1)** **2.** *naś*¦ _Adj._ verloren gehend in *jīvanaś*.
-- **EN:** **2.** *naś*¦ _Adj._ going astray, being lost in *jīvanaś*.
+**1)** **2.** *naś* _Adj._ verloren gehend in *jīvanaś*.
+- **EN:** **2.** *naś* _Adj._ going astray, being lost in *jīvanaś*.
 
-**intro)** **3.** √*naś*¦, *naśati, ˚te*
-- **EN:** **3.** √*naś*¦, *naśati, ˚te*
+**intro)** **3.** √*naś*, *naśati, ˚te*
+- **EN:** **3.** √*naś*, *naśati, ˚te*
 
 **1)** — 1〉 erreichen, erlangen.
 - **EN:** — 1〉 to reach, attain.
@@ -1344,8 +1344,8 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 **comp.sam)** — Mit *sam* dass.
 - **EN:** — With *sam* dass.
 
-**intro)** **1.** √*naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
-- **EN:** **1.** √*naś*¦ Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
+**intro)** **1.** √*naś* Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
+- **EN:** **1.** √*naś* Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
 
 **comp.apa)** — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6].
 - **EN:** — With *pra* III. *mārgapranaṣṭa* who has strayed from the path [JĀTAKAM. 6].
@@ -1358,12 +1358,12 @@ Schol. under [P. 6,4,73](https://ashtadhyayi.com/sutraani/6/4/73) to *naś, āna
 `na_s~~h0_zz_pwkvn`
 
 
-**1)** **1.** *naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6]. — Mit *vipra* III. *˚naṣṭa* der sich verirrt hat [JĀTAKAM. 6,24].
-- **EN:** **1.** *naś*¦ Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — With *pra* III. *mārgapranaṣṭa* who has strayed from the path [JĀTAKAM. 6]. — With *vipra* III. *˚naṣṭa* one who has gone astray [JĀTAKAM. 6,24].
+**1)** **1.** *naś* Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6]. — Mit *vipra* III. *˚naṣṭa* der sich verirrt hat [JĀTAKAM. 6,24].
+- **EN:** **1.** *naś* Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — With *pra* III. *mārgapranaṣṭa* who has strayed from the path [JĀTAKAM. 6]. — With *vipra* III. *˚naṣṭa* one who has gone astray [JĀTAKAM. 6,24].
 
-**III)** *naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6]. — Mit *vipra* III. *˚naṣṭa* der sich verirrt hat [JĀTAKAM. 6,24].
+**III)** *naś* Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6]. — Mit *vipra* III. *˚naṣṭa* der sich verirrt hat [JĀTAKAM. 6,24].
 
-- **RU:** *naś*¦ Caus. III. *исключать из общины. Vgl. *nāśitasaṃgraha*. В Aor. отступать от (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — С *pra* III. *mārgapranaṣṭa* сбившийся с пути [JĀTAKAM. 6]. — С *vipra* III. *˚naṣṭa* заблудившийся [JĀTAKAM. 6,24].
+- **RU:** *naś* Caus. III. *исключать из общины. Vgl. *nāśitasaṃgraha*. В Aor. отступать от (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9). — С *pra* III. *mārgapranaṣṭa* сбившийся с пути [JĀTAKAM. 6]. — С *vipra* III. *˚naṣṭa* заблудившийся [JĀTAKAM. 6,24].
   <sub>attested</sub>
 
 ## naś

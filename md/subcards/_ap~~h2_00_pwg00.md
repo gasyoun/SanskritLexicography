@@ -3,12 +3,12 @@
 `_ap~~h2_00_pwg00`
 
 
-**intro)** *āp*¦
+**intro)** *āp*
 [Z. 13] *āpnāna* s. auch besonders. — partic. *āpta*
 
-- **RU:** *āp*¦
+- **RU:** *āp*
 [Z. 13] *āpnāna* s. также особо. — partic. *āpta*
-- **EN:** *āp*¦
+- **EN:** *āp*
 [Z. 13] *āpnāna* s. also separately. — partic. *āpta*
   <sub>attested</sub>
 

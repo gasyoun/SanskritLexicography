@@ -3,10 +3,10 @@
 `vid~~h0_zz_pw00`
 
 
-**1)** **1.** √*vid*¦, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
+**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
 — 1〉 Etwas oder Jmd kennen lernen, erkennen; wissen, begreifen, sich auf Etwas verstehen, Etwas oder Jmd erkennen, wissen von Jmd, ein Bewusstsein von Etwas haben ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), eine richtige Vorstellung haben von; in der älteren Sprachen mit Acc. oder Gen., in der späteren mit Acc. Mit Infin. verstehen zu [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
 
-- **RU:** **1.** √*vid*¦, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
+- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
 — 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чём-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чём-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
   <sub>attested</sub>
 
@@ -449,9 +449,9 @@
 - **RU:** — Caus. чувствовать, испытывать на себе [LALIT. 147,11. 439,9].
   <sub>attested</sub>
 
-**3)** **2.** *vid*¦
+**3)** **2.** *vid*
 
-- **RU:** **2.** *vid*¦
+- **RU:** **2.** *vid*
   <sub>attested</sub>
 
 **1)** — 1〉 Nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner. Gewöhnlich in Comp. mit seinem Obj. Superl. *˚vittama*.

@@ -3,10 +3,10 @@
 `d_a~~h0_zz_pw02`
 
 
-**T161-T162)** **2.** *dā*¦ _m._ Geber. Häufig am Ende eines Comp. _Adj._ gebend, verleihend.
+**T161-T162)** **2.** *dā* _m._ Geber. Häufig am Ende eines Comp. _Adj._ gebend, verleihend.
 - **EN:** 2. *dā* _m._ giver. Frequently at the end of a Comp. _Adj._ giving, bestowing.
 
-**T163-T164)** **3.** √*dā*¦, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
+**T163-T164)** **3.** √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; abschneiden, mähen. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) zerstückelt, verkleinert. *˚dina* getheilt in.
 - **EN:** 3. √*dā*, *dāti, dyati*; Partic. *dina*, *dita*, **dāta*, *˚tta*; to cut off, to mow. *dita* [BHĀG. P. 6,6,23](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) = *khaṇḍita* (Comm.) cut to pieces, diminished. *˚dina* divided into.
 
 **T165)** — Pass. *dīyate* wohl wehmüthig gestimmt sein [BHOJA-PR. 51,5]. [RĀJAT. 8,492](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,492).
@@ -81,7 +81,7 @@ Caus. *avadāpayate* to have divided off.
 — 1) to gather by cutting.
 — 2) to cut together, to cut small.
 
-**T192-T193)** **4.** √*dā*¦, *dyati* binden. Zu belegen vom Simplex nur *dīśva* lass dich binden.
+**T192-T193)** **4.** √*dā*, *dyati* binden. Zu belegen vom Simplex nur *dīśva* lass dich binden.
 - **EN:** 4. √*dā*, *dyati* to bind. Of the simplex attested only *dīśva* let yourself be bound.
 
 **T194)** — Mit *ā* anbinden, fesseln.
@@ -103,7 +103,7 @@ Caus. *avadāpayate* to have divided off.
 **T200)** — Mit *sam* zusammenbinden, anbinden, fesseln. *saṃdita* zusammengebunden, gebunden, gefesselt; an den Ort gefesselt, unbeweglich.
 - **EN:** — With *sam* to bind together, tie up, fetter. *saṃdita* bound together, bound, fettered; fettered to the place, immovable.
 
-**T201-T202)** **5.** *√*dā*¦, *dayate* beschützen. Desid. *ditsate*.
+**T201-T202)** **5.** *√*dā*, *dayate* beschützen. Desid. *ditsate*.
 - **EN:** 5. *√*dā*, *dayate* to protect. Desid. *ditsate*.
 
 **T203)** — Mit *pariṇi*, *˚dayate*.
@@ -112,10 +112,10 @@ Caus. *avadāpayate* to have divided off.
 **T204)** — Mit *praṇi*, *˚dayate*.
 - **EN:** — With *praṇi*, *˚dayate*.
 
-**T205-T206)** **6.** **dā*¦ _f._ Schutz.
+**T205-T206)** **6.** **dā* _f._ Schutz.
 - **EN:** 6. **dā* _f._ protection.
 
-**T207-T208)** **7.** √*dā*¦, **dāyati* reinigen.
+**T207-T208)** **7.** √*dā*, **dāyati* reinigen.
 - **EN:** 7. √*dā*, **dāyati* to purify.
 
 **T209-T211)** — Mit *ava*, *˚dāta*
@@ -140,19 +140,19 @@ Caus. *avadāpayate* to have divided off.
 **T217)** — Mit *ā*. Hierher zieht [NĪLAK.] *ādāyamāna* (= *parīkṣamāṇa* prüfend, untersuchend) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). Wir haben die Form zu **1.** *dā* gestellt.
 - **EN:** — With *ā*. [NĪLAK.] assigns here *ādāyamāna* (= *parīkṣamāṇa* testing, examining) [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25). We have placed the form under **1.** *dā*.
 
-**T220-T221)** **8.** **dā*¦ _f._ das Reinigen.
+**T220-T221)** **8.** **dā* _f._ das Reinigen.
 - **EN:** 8. **dā* _f._ the purifying.
 
-**T222-T226)** **3.** √*dā*¦ S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
+**T222-T226)** **3.** √*dā* S. 79, Z. 3. fg. *dīyate* gehört wohl zu **4.** *dī*.
 - **EN:** 3. √*dā* p. 79, l. 3. fg. *dīyate* probably belongs under **4.** *dī*.
 
-**T227-T229)** **1.** √*dā*¦ mit *ā*, *ātta*, so zu betonen.
+**T227-T229)** **1.** √*dā* mit *ā*, *ātta*, so zu betonen.
 - **EN:** 1. √*dā* with *ā*, *ātta*, to be accented thus.
 
-**T230-T234)** **2.** *dā*¦, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
+**T230-T234)** **2.** *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) gehört zu **2.** *dāś*; s. weiter unten.
 - **EN:** 2. *dā*, [ṚV. 6,16,26](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) belongs under **2.** *dāś*; s. further below.
 
-**T235-T242)** **1.** √*dā*¦ mit *ā* III. 5.
+**T235-T242)** **1.** √*dā* mit *ā* III. 5.
 — Mit *upā* III. *anupādāya* Absol. sich nicht an die Welt klammernd [DIVYĀVAD. 655,4].
 — Mit *vyā* auch hineinthun —, hineinwerfen in (Loc.) *˚dāya* [KAUŚ. 48,40].
 — Mit *nirvyā* = *vyā* [JĀTAKAM. 34].
@@ -165,10 +165,10 @@ Caus. *avadāpayate* to have divided off.
 — With *samā* III. (a vow u. s. w.) to take upon oneself and keep [MAHĀVY. 84,25]. [DIVYĀVAD. 302,19]. Caus. to counsel to the good, to exhort [MAHĀVY. 245]. [DIVYĀVAD. 51,28]. [57,17]. [59,5]. [80,18].
 — With *pari*, *parīdāya* [ĀPAST. GṚHY. 10,12] erroneous for *pari˚*
 
-**T243-T245)** **2.** *dā*¦ III. 5.
+**T243-T245)** **2.** *dā* III. 5.
 - **EN:** 2. *dā* III.5.
 
-**T246-T249)** **3.** √*dā*¦ III. 3.
+**T246-T249)** **3.** √*dā* III. 3.
 — Mit *pari* III. *parītta* begrenzt [DIVYĀVAD. 204,14]. [17]. kurz [498,12. 504,12].
 - **EN:** 3. √*dā* III.3.
 — With *pari* III. *parītta* bounded, limited [DIVYĀVAD. 204,14]. [17]. short [498,12. 504,12].

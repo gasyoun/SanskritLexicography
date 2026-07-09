@@ -3,7 +3,7 @@
 `_buj~~h3_00_pwg00`
 
 
-**1)** 4. *bhuj*¦ (= 3. *bhuj)*
+**1)** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ das Nutzenbringen, Zugutekommen, Frommen: Genuss, Vortheil, Nutzen (dat. zugleich als inf. zu betrachten): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
@@ -23,7 +23,7 @@
 [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *ātmanā bhujamaśnutām* so v. a. möge er seines Lebens froh werden
 [AV. 8,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.08)
 
-- **RU:** 4. *bhuj*¦ (= 3. *bhuj)*
+- **RU:** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ польза, услуга, угода: наслаждение, выгода, польза (dat. рассматривать одновременно как inf.): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
@@ -42,7 +42,7 @@
 [22,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.13) *indre bhujaṃ śaśamānāsa āśata*
 [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *ātmanā bhujamaśnutām* так v. a. да возрадуется он своей жизни
 [AV. 8,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.08)
-- **EN:** 4. *bhuj*¦ (= 3. *bhuj)*
+- **EN:** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ the act of being beneficial, of accruing benefit, of being profitable: enjoyment, advantage, profit (dat. to be regarded at the same time as inf.): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*

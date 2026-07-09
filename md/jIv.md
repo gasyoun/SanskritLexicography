@@ -7,7 +7,7 @@ _PWG article — 17 sub-card(s), 103 sense(s) · RU 78/103 · EN 84/103_
 `j_iv~~h0_00_pwg00`
 
 
-**1)** *jīv*¦, *jīvati* (in gebundener Rede auch med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+**1)** *jīv*, *jīvati* (in gebundener Rede auch med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
  1) leben
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*
@@ -57,7 +57,7 @@ _PWG article — 17 sub-card(s), 103 sense(s) · RU 78/103 · EN 84/103_
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
 
-- **RU:** *jīv*¦, *jīvati* (в стихотворной речи также med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+- **RU:** *jīv*, *jīvati* (в стихотворной речи также med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
 1) жить
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*
@@ -106,7 +106,7 @@ _PWG article — 17 sub-card(s), 103 sense(s) · RU 78/103 · EN 84/103_
 [AV. 6,109,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.01) pass. impers.: *yajjīvyate kṣaṇamapi — manuṣyaiḥ*
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
-- **EN:** *jīv*¦, *jīvati* (in poetic speech also med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
+- **EN:** *jīv*, *jīvati* (in poetic speech also med.); *ajīvīt; jijīva, jijīvima; jīviṣyati; jīvyāsam*;
  1) *to live*
 [DHĀTUP. 15,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *jīvedinmaghavā mama*
 [ṚV. 10,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.033.html#rv10.033.08) [6,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.059.html#rv06.059.01) *jyogjīvantaḥ*
@@ -825,10 +825,10 @@ _PWG article — 17 sub-card(s), 103 sense(s) · RU 78/103 · EN 84/103_
 `j_iv~~h1_00_pwg00`
 
 
-**1)** *jīv*¦
+**1)** *jīv*
  1) *jīva jīva* mögest du lange leben
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
-- **EN:** *jīv*¦
+- **EN:** *jīv*
  1) *jīva jīva* "mayest thou live long"
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
 
@@ -910,14 +910,14 @@ to exploit someone
 [BHĀG. P. 10,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,50)
   <sub>attested</sub>
 
-**1 (T42 block))** *jīv*¦
+**1 (T42 block))** *jīv*
  1) *jīva jīva* mögest du lange leben
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) Jmd am Leben erhalten
 [KATHĀS. 65,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,29) *jīva* rufen
 [124,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,113)
 
-- **RU:** *jīv*¦
+- **RU:** *jīv*
  1) *jīva jīva* да живёшь ты долго
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) поддерживать жизнь кого-л.
@@ -943,12 +943,12 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.githu
 `j_iv~~h0_zz_pw`
 
 
-**1)** √*jīv*¦, *jīvati* (metrisch auch Med.)
+**1)** √*jīv*, *jīvati* (metrisch auch Med.)
 — 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
-- **RU:** √*jīv*¦, *jīvati* (метрически также Med.)
+- **RU:** √*jīv*, *jīvati* (метрически также Med.)
 — 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так v. a. остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
-- **EN:** √*jīv*¦, *jīvati* (metrically also Med.)
+- **EN:** √*jīv*, *jīvati* (metrically also Med.)
 — 1〉 to live, be alive, — remain alive. *jīva jīva* 'mayest thou live long!' Also with the Acc. *jīvikām, jīvant* and *jīvita* (exceptionally) 'living, alive, still being alive'. *jīvangacchati* thus v. a. 'remains alive' [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
   <sub>attested</sub>
 
@@ -1139,8 +1139,8 @@ With *punar* dass. *jīvita* 'revived again'.
 - **EN:** — With *pratisam* revival (n.).
   <sub>attested</sub>
 
-**adhi-caus)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
-- **EN:** √*jīv*¦ with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
+**adhi-caus)** √*jīv* mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
+- **EN:** √*jīv* with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
 
 **abhi2)** — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 - **EN:** — With *abhi* to be more fortunate in life than (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
@@ -1204,10 +1204,10 @@ With *punar* dass. *jīvita* 'revived again'.
 — 2〉 поддерживать жизнь кого-л., кормить.
   <sub>attested</sub>
 
-**PW 2nd record — adhi- caus.)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
+**PW 2nd record — adhi- caus.)** √*jīv* mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
 — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
-- **RU:** √*jīv*¦ с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
+- **RU:** √*jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
 — С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
   <sub>attested</sub>
 
@@ -1216,10 +1216,10 @@ With *punar* dass. *jīvita* 'revived again'.
 `j_iv~~h0_zz_sch`
 
 
-**adhi)** jīv¦ mit adhi [Kaus.] beleben, [Dharmaśarm. 15,1.]
+**adhi)** jīv mit adhi [Kaus.] beleben, [Dharmaśarm. 15,1.]
 
-- **RU:** jīv¦ с adhi [Kaus.] оживлять, [Dharmaśarm. 15,1.]
-- **EN:** jīv¦ with adhi [Kaus.] to animate, [Dharmaśarm. 15,1.]
+- **RU:** jīv с adhi [Kaus.] оживлять, [Dharmaśarm. 15,1.]
+- **EN:** jīv with adhi [Kaus.] to animate, [Dharmaśarm. 15,1.]
   <sub>attested</sub>
 
 **abhi)** — Mit abhi glücklicher im Leben sich befinden als (Abl.), [R. ed. Bomb. 3,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19) {part=,seq=14151,type=,n=4}
@@ -1235,10 +1235,10 @@ With *punar* dass. *jīvita* 'revived again'.
 `j_iv~~h0_zz_pwkvn`
 
 
-**adhi)** *jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
+**adhi)** *jīv* mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
 
-- **RU:** *jīv*¦ с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
-- **EN:** *jīv*¦ with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
+- **RU:** *jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
+- **EN:** *jīv* with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
   <sub>attested</sub>
 
 **abhi)** — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).

@@ -3,7 +3,7 @@
 `y_a~~h5_00_pwg00`
 
 
-**1)** *yā*¦
+**1)** *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
@@ -17,7 +17,7 @@
  2)
 Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 
-- **RU:** *yā*¦
+- **RU:** *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
@@ -30,7 +30,7 @@ Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 — *vi*
  2)
 Z. 4 lies 3, 31, 19 st. 3, 31, 9.
-- **EN:** 1. *yā*¦
+- **EN:** 1. *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]

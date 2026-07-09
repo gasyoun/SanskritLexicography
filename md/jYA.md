@@ -7,7 +7,7 @@ _PWG article — 66 sub-card(s), 355 sense(s) · RU 218/355 · EN 311/355_
 `j_y_a~~h0_00_pwg00`
 
 
-**1)** *jñā*¦, *jānāti, jānīte*
+**1)** *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -19,7 +19,7 @@ _PWG article — 66 sub-card(s), 355 sense(s) · RU 218/355 · EN 311/355_
 [14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641); *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
-- **EN:** *jñā*¦, *jānāti, jānīte*
+- **EN:** *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -259,7 +259,7 @@ Sch. *jñāta* known, recognised
 [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) held to be: *pūrvameva mayā jñātaṃ pūrṇametāddha medasā*
 [PAÑCAT. I,123.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,123)
 
-**head-1)** 1. *jñā*¦, *jānāti, jānīte*
+**head-1)** 1. *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -272,7 +272,7 @@ Sch. *jñāta* known, recognised
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
 
-- **RU:** 1. *jñā*¦, *jānāti, jānīte*
+- **RU:** 1. *jñā*, *jānāti, jānīte*
 [DHĀTUP. 31,36.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31)
 [P. 7,3,79.](https://ashtadhyayi.com/sutraani/7/3/79)
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
@@ -3492,7 +3492,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 `j_y_a~~h2_00_pwg00`
 
 
-**1)** *jñā*¦, *jña = jānīhi*
+**1)** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* so v. a. der Fürst weiss, was er jetzt zu thun hat,
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* ich weiss, ich erinnere mich, dass
@@ -3505,7 +3505,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.
 [RĀJA-TAR. 5,481.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,481) *yadyaśakyamiti jñātvā* für unmöglich haltend
 
-- **RU:** *jñā*¦, *jña = jānīhi*
+- **RU:** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* так v. a. государь знает, что ему теперь надлежит делать,
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* я знаю, я помню, что
@@ -3517,7 +3517,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [2858.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2858) *svajanaiḥ svātmavajjanturjñāyate guṇavānparaiḥ*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.
 [RĀJA-TAR. 5,481.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,481) *yadyaśakyamiti jñātvā* считающий невозможным
-- **EN:** *jñā*¦, *jña = jānīhi*
+- **EN:** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) to know, *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* so v. a. "the prince knows what he now has to do",
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* "I know, I remember that"
@@ -3884,18 +3884,18 @@ Sch. *saṃjānīṣva svamīśā ca*
 `j_y_a~~h3_00_pwg00`
 
 
-**1.1)** 1. *jñā*¦
+**1.1)** 1. *jñā*
  1) *devāḥ pūjāṃ na jānanti* die Götter erfahren nicht, was Verehrung
 
 heisst so v. a. werden nicht verehrt
 [Spr. (II) 2948.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2948)
 
-- **RU:** 1. *jñā*¦
+- **RU:** 1. *jñā*
  1) *devāḥ pūjāṃ na jānanti* боги не узнают, что такое почитание
 
 то есть не получают почитания
 [Spr. (II) 2948.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2948)
-- **EN:** 1. *jñā*¦
+- **EN:** 1. *jñā*
  1) *devāḥ pūjāṃ na jānanti* "the gods do not learn what reverence"
 
 "means", i.e. so much as "are not revered"
@@ -3907,7 +3907,7 @@ heisst so v. a. werden nicht verehrt
 `j_y_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*jñā*¦, *jānāti, jānīte* (episch auch *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
+**1)** **1.** √*jñā*, *jānāti, jānīte* (episch auch *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
 - **EN:** **1.** √*jñā*, *jānāti, jānīte* (epic also *jāna˚* st. *jānī˚*); √*jña* = *jānīhi* [BHĀG. P.]
 
 **1a)** — 1〉 ohne Object oder mit Acc.
@@ -4545,37 +4545,37 @@ heisst so v. a. werden nicht verehrt
 `j_y_a~~h0_zz_pw02`
 
 
-**2)** **2.** *˚jñā*¦ _Adj._ kennend, kundig.
+**2)** **2.** *˚jñā* _Adj._ kennend, kundig.
 
-- **RU:** **2.** *˚jñā*¦ _Adj._ знающий, сведущий.
+- **RU:** **2.** *˚jñā* _Adj._ знающий, сведущий.
 - **EN:** **2.** *˚jñā* — _Adj._ knowing, versed, skilled.
   <sub>lexicographic</sub>
 
-**3)** **3.** *jñā*¦ _f._ = *ājñā* mit elidirtem Anlaut nach *e* oder *o*.
+**3)** **3.** *jñā* _f._ = *ājñā* mit elidirtem Anlaut nach *e* oder *o*.
 
-- **RU:** **3.** *jñā*¦ _f._ = *ājñā* с элидированным начальным звуком после *e* или *o*.
+- **RU:** **3.** *jñā* _f._ = *ājñā* с элидированным начальным звуком после *e* или *o*.
 - **EN:** **3.** *jñā* — _f._ = *ājñā* with elided initial after *e* or *o*.
   <sub>lexicographic</sub>
 
-**anu-c)** **1.** √*jñā*¦ mit *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
+**anu-c)** **1.** √*jñā* mit *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
 
-- **RU:** **1.** √*jñā*¦ с *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
+- **RU:** **1.** √*jñā* с *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
 - **EN:** **1.** √*jñā* — with *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2)c).
   <sub>attested</sub>
 
-**pra-4)** **1.** √*jñā*¦ mit *pra* Caus. 4〉 Pass. sich herausstellen als (Nom.) [VAJRACCH. 20,19].
+**pra-4)** **1.** √*jñā* mit *pra* Caus. 4〉 Pass. sich herausstellen als (Nom.) [VAJRACCH. 20,19].
 
-- **RU:** **1.** √*jñā*¦ с *pra* Caus. 4〉 Pass. оказываться (кем-л./чем-л.) (Nom.) [VAJRACCH. 20,19].
+- **RU:** **1.** √*jñā* с *pra* Caus. 4〉 Pass. оказываться (кем-л./чем-л.) (Nom.) [VAJRACCH. 20,19].
 - **EN:** **1.** √*jñā* — with *pra* Caus. 4) Pass. to turn out to be (Nom.) [VAJRACCH. 20,19].
   <sub>attested</sub>
 
-**anuvi-c)** **1.** √*jñā*¦ mit *pra* Desid. Med. ausfindig zu machen suchen oder durchforschen, durchsuchen [MAITR. S. 2,5,5 (53,19)].
+**anuvi-c)** **1.** √*jñā* mit *pra* Desid. Med. ausfindig zu machen suchen oder durchforschen, durchsuchen [MAITR. S. 2,5,5 (53,19)].
 
-- **RU:** **1.** √*jñā*¦ с *pra* Desid. Med. пытаться разузнать, выяснить или разыскивать, обыскивать [MAITR. S. 2,5,5 (53,19)].
+- **RU:** **1.** √*jñā* с *pra* Desid. Med. пытаться разузнать, выяснить или разыскивать, обыскивать [MAITR. S. 2,5,5 (53,19)].
 - **EN:** **1.** √*jñā* — with *pra* Desid. Med. to try to find out or to search through, investigate [MAITR. S. 2,5,5 (53,19)].
   <sub>attested</sub>
 
-**adhi-c)** **1.** √*jñā*¦ mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
+**adhi-c)** **1.** √*jñā* mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 - **EN:** **1.** √*jñā* — with *adhi* to comprehend, understand [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 
 **abhi-xref)** — Mit *anu* Desid. II. 2.
@@ -4584,11 +4584,11 @@ heisst so v. a. werden nicht verehrt
 **pra-xref)** — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
 - **EN:** With *pra* Caus. II. 3. 3) read: to set in order, fix up. So too [MAHĀVY. 226,109] (read *prajñaptaṃ*) [244,20]. — Desid. 5.
 
-**1 (√T28))** **1.** √*jñā*¦ mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
+**1 (√T28))** **1.** √*jñā* mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 — Mit *anu* Desid. II. 2.
 — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
 
-- **RU:** **1.** √*jñā*¦ с *adhi* постигать, понимать [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
+- **RU:** **1.** √*jñā* с *adhi* постигать, понимать [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 — С *anu* Desid. II. 2.
 — С *pra* Caus. II. 3. 3〉 читать приводить в порядок, налаживать. Также и [MAHĀVY. 226,109] (читать *prajñaptaṃ*) [244,20]. — Desid. 5.
   <sub>attested</sub>
@@ -4598,7 +4598,7 @@ heisst so v. a. werden nicht verehrt
 `j_y_a~~h0_zz_sch`
 
 
-**sch-1)** 1. jñā¦ mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38) — Mit anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2. c).
+**sch-1)** 1. jñā mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38) — Mit anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2. c).
 - **EN:** 1. jñā — with adhi: to comprehend, understand, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — With anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; cf. Simpl. 2.c).
 
 **sch-2)** — Mit pra [Kaus. 3.] lies: zurechtmachen. So auch [Mahāvy. 226,109] (prajñaptaṃ zu lesen); 244,20.
@@ -4613,7 +4613,7 @@ heisst so v. a. werden nicht verehrt
 **sch-4)** — Desid. [Med.] ausfindig zu machen suchen oder durchforschen, durchsuchen, [Maitr. S. 2,5,5] (53,19). {part=,seq=14215,type=,n=11}
 - **EN:** — Desid. [Med.] to try to find out or to search through, investigate, [Maitr. S. 2,5,5] (53,19). {part=,seq=14215,type=,n=11}
 
-**1 (adhi))** jñā¦ mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
+**1 (adhi))** jñā mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
 
 - **RU:** jñā с adhi — постигать, понимать, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
   <sub>attested</sub>
@@ -4638,25 +4638,25 @@ heisst so v. a. werden nicht verehrt
 `j_y_a~~h0_zz_pwkvn`
 
 
-**anu-c)** **1.** *jñā*¦ mit *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
+**anu-c)** **1.** *jñā* mit *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
 
-- **RU:** **1.** *jñā*¦ с *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
+- **RU:** **1.** *jñā* с *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2〉c〉.
 - **EN:** **1.** *jñā* — with *anu* *Desid. Med. *sarpiṣo 'nujijñāsate* [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2)c).
   <sub>lexicographic</sub>
 
-**pra-4)** **1.** *jñā*¦ mit *pra* Caus. 4〉 Pass. sich herausstellen als (Nom.) [VAJRACCH. 20,19].
+**pra-4)** **1.** *jñā* mit *pra* Caus. 4〉 Pass. sich herausstellen als (Nom.) [VAJRACCH. 20,19].
 
-- **RU:** **1.** *jñā*¦ с *pra* Caus. 4〉 Pass. оказаться, обнаружиться в качестве (Nom.) [VAJRACCH. 20,19].
+- **RU:** **1.** *jñā* с *pra* Caus. 4〉 Pass. оказаться, обнаружиться в качестве (Nom.) [VAJRACCH. 20,19].
 - **EN:** **1.** *jñā* — with *pra* Caus. 4) Pass. to turn out to be (Nom.) [VAJRACCH. 20,19].
   <sub>lexicographic</sub>
 
-**anuvi-c)** **1.** *jñā*¦ mit *pra* Desid. Med. ausfindig zu machen suchen oder durchforschen, durchsuchen [MAITR. S. 2,5,5 (53,19)].
+**anuvi-c)** **1.** *jñā* mit *pra* Desid. Med. ausfindig zu machen suchen oder durchforschen, durchsuchen [MAITR. S. 2,5,5 (53,19)].
 
-- **RU:** **1.** *jñā*¦ с *pra* Desid. Med. стараться разыскать, выяснить или обследовать, обыскать [MAITR. S. 2,5,5 (53,19)].
+- **RU:** **1.** *jñā* с *pra* Desid. Med. стараться разыскать, выяснить или обследовать, обыскать [MAITR. S. 2,5,5 (53,19)].
 - **EN:** **1.** *jñā* — with *pra* Desid. Med. to try to find out or to search through, investigate [MAITR. S. 2,5,5 (53,19)].
   <sub>lexicographic</sub>
 
-**adhi-c)** **1.** *jñā*¦ mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
+**adhi-c)** **1.** *jñā* mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 - **EN:** **1.** *jñā* — with *adhi* to comprehend, understand [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 
 **abhi-xref)** — Mit *anu* Desid. II. 2.
@@ -4665,7 +4665,7 @@ heisst so v. a. werden nicht verehrt
 **pra-xref)** — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
 - **EN:** With *pra* Caus. II. 3. 3) read: to set in order, fix up. So too [MAHĀVY. 226,109] (read *prajñaptaṃ*) [244,20]. — Desid. 5.
 
-**4)** **1.** *jñā*¦ mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — Mit *anu* Desid. II. 2. — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
+**4)** **1.** *jñā* mit *adhi* begreifen, verstehen [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — Mit *anu* Desid. II. 2. — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
 
-- **RU:** **1.** *jñā*¦ с *adhi* постигать, понимать [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — С *anu* Desid. II. 2. — С *pra* Caus. II. 3. 3〉 читать приводить в порядок, готовить. Также и [MAHĀVY. 226,109] (следует читать *prajñaptaṃ*) [244,20]. — Desid. 5.
+- **RU:** **1.** *jñā* с *adhi* постигать, понимать [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38). — С *anu* Desid. II. 2. — С *pra* Caus. II. 3. 3〉 читать приводить в порядок, готовить. Также и [MAHĀVY. 226,109] (следует читать *prajñaptaṃ*) [244,20]. — Desid. 5.
   <sub>lexicographic</sub>

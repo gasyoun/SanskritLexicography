@@ -3,11 +3,11 @@
 `vah~~h3_00_pwg00`
 
 
-**0)** 1. *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
+**0)** 1. *vah*, intens. *vāvahīti* tragen: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 - **EN:** 1. *vah*, intens. *vāvahīti* to carry, bear: *ratnabhāram* [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 
-**1)** *vah*¦, intens. *vāvahīti* tragen: *ratnabhāram*
+**1)** *vah*, intens. *vāvahīti* tragen: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.
@@ -19,7 +19,7 @@
 — *saṃpra* s. *saṃpravāha* .
 — *vi*
 
-- **RU:** *vah*¦, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
+- **RU:** *vah*, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 — *ati* caus.
  1) vgl.

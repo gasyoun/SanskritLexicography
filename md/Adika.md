@@ -7,9 +7,9 @@ _PWG article — 1 sub-card(s), 5 sense(s) · RU 5/5 · EN 0/5_
 `_adika`
 
 
-**1)** *ādika*¦ s. u. *ādi* .
+**1)** *ādika* s. u. *ādi* .
 
-- **RU:** *ādika*¦ s. u. *ādi*.
+- **RU:** *ādika* s. u. *ādi*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *ādika* [Ved, unsp] [ifc (Bhvr)] ādi . ityādi : so beginnend. ṚV(Sā) I 165, 11 [NWS: Windisch 1883 : 106]

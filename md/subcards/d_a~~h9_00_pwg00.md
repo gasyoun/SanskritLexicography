@@ -3,10 +3,10 @@
 `d_a~~h9_00_pwg00`
 
 
-**1a)** 1. *dā*¦ A.
+**1a)** 1. *dā* A.
  a) *datte*
 [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356) [Spr. 3207](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3207), v. l.
-- **EN:** 1. *dā*¦ A.
+- **EN:** 1. *dā* A.
  a) *datte*
 [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356) [Spr. 3207](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3207), v. l.
 

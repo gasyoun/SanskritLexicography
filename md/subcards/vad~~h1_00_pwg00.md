@@ -3,14 +3,14 @@
 `vad~~h1_00_pwg00`
 
 
-*vad*¦ caus.
-- **EN:** *vad*¦ caus.
+*vad* caus.
+- **EN:** *vad* caus.
 
-**2)** *vad*¦ caus.
+**2)** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* machen viel Lärm von sich
 [Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 
-- **RU:** *vad*¦ caus.
+- **RU:** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* производить много шума
 [Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 - **EN:** 2) *guṇairvihīnā bahu vādayanti* to make much noise

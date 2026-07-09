@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 21 sense(s) · RU 21/21 · EN 0/21_
 `catur`
 
 
-**1)** *catur*¦ erscheint als geschwächtes Thema in der Declination und in Ableitungen von *catvar*, so wie auch am Anfange von compp.; s. *catvar* . Das _adv._ s. u. *catus* .
+**1)** *catur* erscheint als geschwächtes Thema in der Declination und in Ableitungen von *catvar*, so wie auch am Anfange von compp.; s. *catvar* . Das _adv._ s. u. *catus* .
 
-- **RU:** *catur*¦ выступает как ослабленная основа в склонении и в производных от *catvar*, а также в начале compp.; см. s. *catvar* . adv. _adv._ см. s. u. *catus* .
+- **RU:** *catur* выступает как ослабленная основа в склонении и в производных от *catvar*, а также в начале compp.; см. s. *catvar* . adv. _adv._ см. s. u. *catus* .
   <sub>lexicographic</sub>
 
-**PW)** *catur*¦ s. *catvar*.
+**PW)** *catur* s. *catvar*.
 
-- **RU:** *catur*¦ s. *catvar*.
+- **RU:** *catur* s. *catvar*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *catur* [Śā , Ling] Adj mfn four times. Pāṇ 5.4.18 . Katre 1968f (1) : 230

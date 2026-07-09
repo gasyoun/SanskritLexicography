@@ -3,14 +3,14 @@
 `sattA`
 
 
-**1)** *satta*¦ partic. von 1. *sad*; s. das. und vgl. *nasatta* .
+**1)** *satta* partic. von 1. *sad*; s. das. und vgl. *nasatta* .
 
-- **RU:** *satta*¦ partic. от 1. *sad*; s. см. там же и ср. vgl. *nasatta* .
+- **RU:** *satta* partic. от 1. *sad*; s. см. там же и ср. vgl. *nasatta* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *satta*¦ s. u. **1.** *sad*.
+**1 (PW))** *satta* s. u. **1.** *sad*.
 
-- **RU:** *satta*¦ s. u. **1.** *sad*.
+- **RU:** *satta* s. u. **1.** *sad*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *satta* [Buddh] SaddhP 318.10 . [ read santa . ]

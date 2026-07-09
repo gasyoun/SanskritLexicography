@@ -3,13 +3,13 @@
 `vah~~h0_00_pwg00`
 
 
-**1)** 1. *vah*¦, *vahati* und *vahate*
+**1)** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
 [VS.]; *avāḍ*
 
-- **RU:** 1. *vah*¦, *vahati* und *vahate*
+- **RU:** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
@@ -55,13 +55,13 @@
 - **EN:** sg. potent.
   <sub>attested</sub>
 
-**1)** 1. *vah*¦, *vahati* und *vahate*
+**1)** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
 [VS.]; *avāḍ*
 
-- **RU:** 1. *vah*¦, *vahati* und *vahate*
+- **RU:** 1. *vah*, *vahati* und *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*

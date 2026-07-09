@@ -3,10 +3,10 @@
 `iz~~h7_00_pwg00`
 
 
-**0)** III. *iṣ*¦ _f._ im sg. in allen casus, im pl. nur im nom. acc. (*iṣas*, seltener *iṣas*) und gen. gebräuchlich.
+**0)** III. *iṣ* _f._ im sg. in allen casus, im pl. nur im nom. acc. (*iṣas*, seltener *iṣas*) und gen. gebräuchlich.
 
-- **RU:** III. *iṣ*¦ _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
-- **EN:** III. *iṣ*¦ _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
+- **RU:** III. *iṣ* _f._ в sg. во всех падежах, в pl. употребляется только в nom. acc. (*iṣas*, реже *iṣas*) и gen..
+- **EN:** III. *iṣ* _f._, in the sg. found in all cases, in the pl. used only in the nom. acc. (*iṣas*, more rarely *iṣas*) and gen..
   <sub>attested</sub>
 
 **1)** 1) Trank, Labung, Erquickung

@@ -3,12 +3,12 @@
 `vi_s~~h1_00_pwg00`
 
 
-**1)** 2. *viś*¦ (= 1. *viś*) nom. *viṭ*
+**1)** 2. *viś* (= 1. *viś*) nom. *viṭ*
 [P. 8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36)
 [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149)
  1) _f._ (in der 2ten und 3ten Bed. masc. nach
 [MED.])
-- **EN:** 2. *viś*¦ (= 1. *viś*) nom. *viṭ*
+- **EN:** 2. *viś* (= 1. *viś*) nom. *viṭ*
 [P. 8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36)
 [VOP. 3,149.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,149)
  1) _f._ (in the 2nd and 3rd Bed. masc. after

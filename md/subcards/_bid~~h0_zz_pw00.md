@@ -6,7 +6,7 @@
 **1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
 - **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. Bed. трескаться, лопаться. *bhinna* разбитый, сломанный u. s. w.
-- **EN:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; exceptionally also Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+- **EN:** **1.** √*bhid*, *bhadati*, *bhinatti*; exceptionally also Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
 — 1) to split, break into, knock a hole into something, pierce through, break through, burst asunder, tear open, slit open. *setum*, *maryādām*, *sthitim*, *velām* to break through a dam, barriers, the bank. A planet or comet 'breaks through' a star when it passes through it. Pass. *bhidyate*, *˚ti* (metrically, but also with [BAUDH.] in the [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) erroneous for *bhidyatām*) also in intransit. Bed. to burst. *bhinna* smashed, broken u. s. w.
   <sub>attested</sub>
 
@@ -562,9 +562,9 @@ Mit *saṃpra*, *˚bhinna* von einem Elephanten, dessen Stirn sich geöffnet hat
 - **EN:** — With *upasam* dass.
   <sub>attested</sub>
 
-**root-header)** **1.** √*bhid*¦, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+**root-header)** **1.** √*bhid*, *bhadati*, *bhinatti*; ausnahmsweise auch Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
 
-- **RU:** **1.** √*bhid*¦, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
+- **RU:** **1.** √*bhid*, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
   <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*

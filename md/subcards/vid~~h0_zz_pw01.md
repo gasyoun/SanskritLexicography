@@ -3,10 +3,10 @@
 `vid~~h0_zz_pw01`
 
 
-**PW-3)** **3.** √*vid*¦, *vindati*, *˚te* (nur diese Formen in der späteren Sprache), *vidati*, *viddhi*, *vitse*, *vide*;
+**PW-3)** **3.** √*vid*, *vindati*, *˚te* (nur diese Formen in der späteren Sprache), *vidati*, *viddhi*, *vitse*, *vide*;
 — 1〉 finden, habhaft werden, antreffen, sich aneignen, erwerben, gewinnen, theilhaftig werden; besitzen. *diśaḥ* so v. a. sich in den Weltgegenden zurechtfinden.
 
-- **RU:** **3.** √*vid*¦, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
+- **RU:** **3.** √*vid*, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
 — 1) *найти*, *завладеть, застать, овладеть чем-либо*; *приобрести, добыть*, *стать причастным чему-либо*; *обладать*. *diśaḥ*, так v. a. *ориентироваться в странах света*.
   <sub>attested</sub>
 
@@ -361,9 +361,9 @@
 - **RU:** — С *abhisam* Med. {сходиться, встречаться}.
   <sub>attested</sub>
 
-**3)** **4.** *˚vid*¦ _Adj._
+**3)** **4.** *˚vid* _Adj._
 
-- **RU:** **4.** *˚vid*¦ _Adj._
+- **RU:** **4.** *˚vid* _Adj._
   <sub>attested</sub>
 
 **1)** — 1〉 findend, gewinnend.
@@ -376,7 +376,7 @@
 - **RU:** — 2〉 {доставляющий, добывающий}.
   <sub>attested</sub>
 
-**2)** **5.** √*vid*¦, *vintte* (*vicāraṇe*) halten für, mit doppeltem Acc. [BHAṬṬ.] **vitta* und **vinna* = *vicārita*.
+**2)** **5.** √*vid*, *vintte* (*vicāraṇe*) halten für, mit doppeltem Acc. [BHAṬṬ.] **vitta* und **vinna* = *vicārita*.
 
-- **RU:** **5.** √*vid*¦, *vintte* (*vicāraṇe*) {считать за,} с двойным Acc. [BHAṬṬ.] **vitta* и **vinna* = *vicārita*.
+- **RU:** **5.** √*vid*, *vintte* (*vicāraṇe*) {считать за,} с двойным Acc. [BHAṬṬ.] **vitta* и **vinna* = *vicārita*.
   <sub>attested</sub>

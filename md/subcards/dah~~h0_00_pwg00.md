@@ -3,7 +3,7 @@
 `dah~~h0_00_pwg00`
 
 
-**1)** *dah*¦, *dahati*
+**1)** *dah*, *dahati*
 [DHĀTUP. 23,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *dadāha; adhākṣīt* (
 [VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* gehört zu *dagh), dhakṣi*; partic. *dhakṣat* und *dakṣat* (vgl.
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Kār.
@@ -52,7 +52,7 @@
 [69,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,12) *yāvajjīvaṃ jaḍo (sutaḥ) dahet*
 [PAÑCAT. Pr. 4.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?0,4)
 
-- **RU:** *dah*¦, *dahati*
+- **RU:** *dah*, *dahati*
 [DHĀTUP. 23,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *dadāha; adhākṣīt* (
 [VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* относится к *dagh), dhakṣi*; partic. *dhakṣat* и *dakṣat* (vgl.
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Kār.

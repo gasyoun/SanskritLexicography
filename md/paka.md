@@ -7,22 +7,22 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `pAka`
 
 
-**1)** 1. *paka*¦ = 1. *pa* in *tailapaka* .
+**1)** 1. *paka* = 1. *pa* in *tailapaka* .
 
-- **RU:** 1. *paka*¦ = 1. *pa* в *tailapaka* .
+- **RU:** 1. *paka* = 1. *pa* в *tailapaka* .
   <sub>lexicographic</sub>
 
-**Nachtrag-1)** 2. *paka*¦ = 2. *pa* in *hastipaka* .
+**Nachtrag-1)** 2. *paka* = 2. *pa* in *hastipaka* .
 
-- **RU:** 2. *paka*¦ = 2. *pa* в *hastipaka* .
+- **RU:** 2. *paka* = 2. *pa* в *hastipaka* .
   <sub>lexicographic</sub>
 
-**PW-1)** **1.** *˚paka*¦ _Adj._ trinkend.
+**PW-1)** **1.** *˚paka* _Adj._ trinkend.
 
-- **RU:** **1.** *˚paka*¦ _Adj._ пьющий.
+- **RU:** **1.** *˚paka* _Adj._ пьющий.
   <sub>lexicographic</sub>
 
-**PW-2)** **2.** *˚paka*¦ _Adj._ hütend, beschützend.
+**PW-2)** **2.** *˚paka* _Adj._ hütend, beschützend.
 
-- **RU:** **2.** *˚paka*¦ _Adj._ охраняющий, защищающий.
+- **RU:** **2.** *˚paka* _Adj._ охраняющий, защищающий.
   <sub>lexicographic</sub>

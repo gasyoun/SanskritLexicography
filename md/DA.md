@@ -1274,13 +1274,13 @@ Vgl. *pratisaṃdhāna, ˚dhi, ˚dheya* and *pratisaṃdhita* u. *saṃdhay* wit
 `_d_a~~h1_00_pwg00`
 
 
-**1)** 2. *dhā*¦ (= 1. *dhā*)
+**1)** 2. *dhā* (= 1. *dhā*)
  1) _adj._ nom. ag. am Ende von compp.; s. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* u. s. w. Verkürzt *dha* in *adomadha, garbhadha* . Nach
 [MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) ist *dhā = dhāraka* (so haben
 [ŚKDR.] und [WILS.] statt *dvāraka* gelesen) und *brahman*; der nom. lautet hier *dhā* nicht *dhās* (wie
 [ŚKDR.] und [WILS.] richtig angeben). Nach
 [EKĀCṢARAK.] im [ŚKDR.] ist *dhā* auch ein Name Bṛhaspati's.
-- **EN:** 2. *dhā*¦ (= 1. *dhā*)
+- **EN:** 2. *dhā* (= 1. *dhā*)
  1) _adj._ nom. ag. at the end of compp.; s. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* u. s. w. shortened *dha* in *adomadha, garbhadha*. According to
 [MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* is (so
 [ŚKDR.] and [WILS.] have read instead of *dvāraka*) and *brahman*; the nom. reads here *dhā* not *dhās* (as
@@ -1295,7 +1295,7 @@ Vgl. *pratisaṃdhāna, ˚dhi, ˚dheya* and *pratisaṃdhita* u. *saṃdhay* wit
 `_d_a~~h2_00_pwg00`
 
 
-**main)** 3. *dhā*¦ *(dhe), dhayati*
+**main)** 3. *dhā* *(dhe), dhayati*
 [DHĀTUP. 22,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22); *adhāt, adhāsīt, adadhat*
 [P. 2,4,78.](https://ashtadhyayi.com/sutraani/2/4/78) [3,1,49.](https://ashtadhyayi.com/sutraani/3/1/49)
 [VOP. 8,86](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,86); *dadhau, dadhus; dhāsyati, dhātā*; prec. *dheyāt*
@@ -1327,7 +1327,7 @@ Vgl. *pratisaṃdhāna, ˚dhi, ˚dheya* and *pratisaṃdhita* u. *saṃdhay* wit
 [ṚV. 3,55,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.055.html#rv03.055.12) *daśa garbhaṃ carase dhāpayante*
 [5,47,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.04) — desid. *dhitsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54)
-- **EN:** 3. *dhā*¦ *(dhe), dhayati*
+- **EN:** 3. *dhā* *(dhe), dhayati*
 [DHĀTUP. 22,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22); *adhāt, adhāsīt, adadhat*
 [P. 2,4,78.](https://ashtadhyayi.com/sutraani/2/4/78) [3,1,49.](https://ashtadhyayi.com/sutraani/3/1/49)
 [VOP. 8,86](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,86); *dadhau, dadhus; dhāsyati, dhātā*; prec. *dheyāt*
@@ -1396,34 +1396,34 @@ Schol. to [P. 8,4,17.](https://ashtadhyayi.com/sutraani/8/4/17) [1,1,20.](https:
 `_d_a~~h3_00_pwg00`
 
 
-**1)** *dhā*¦ [vgl. ] Z. 12. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) bedeutet *dhatte* bei der richtigen Lesart (*abhimānakṣīvasvāntaḥkaraṇakariṇaṃ saṃyamālānalīnam*) reddit.
-- **EN:** *dhā*¦ [vgl. ] Z. 12. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) means *dhatte* in the correct reading (*abhimānakṣīvasvāntaḥkaraṇakariṇaṃ saṃyamālānalīnam*) reddit.
+**1)** *dhā* [vgl. ] Z. 12. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) bedeutet *dhatte* bei der richtigen Lesart (*abhimānakṣīvasvāntaḥkaraṇakariṇaṃ saṃyamālānalīnam*) reddit.
+- **EN:** *dhā* [vgl. ] Z. 12. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) means *dhatte* in the correct reading (*abhimānakṣīvasvāntaḥkaraṇakariṇaṃ saṃyamālānalīnam*) reddit.
 
 ## dhā
 
 `_d_a~~h4_00_pwg00`
 
 
-**1)** *dhā*¦ [vgl. ] mit *ava* seine Aufmerksamkeit auf Etwas (loc.) richten: *ātmātmanyavadhīyatām* [ŚĀNTIŚ. 3,11.]
-- **EN:** *dhā*¦ [vgl. ] with *ava* to direct one's attention upon something (loc.): *ātmātmanyavadhīyatām* [ŚĀNTIŚ. 3,11.]
+**1)** *dhā* [vgl. ] mit *ava* seine Aufmerksamkeit auf Etwas (loc.) richten: *ātmātmanyavadhīyatām* [ŚĀNTIŚ. 3,11.]
+- **EN:** *dhā* [vgl. ] with *ava* to direct one's attention upon something (loc.): *ātmātmanyavadhīyatām* [ŚĀNTIŚ. 3,11.]
 
 ## dhā
 
 `_d_a~~h5_00_pwg00`
 
 
-**1)** *dhā*¦ [vgl. ] mit *vyava* pass. sich trennen von: *bandhubhyo vyavadhīyatām* [ŚĀNTIŚ. 3,11.]
-- **EN:** *dhā*¦ [vgl. ] with *vyava* pass. to separate oneself from: *bandhubhyo vyavadhīyatām* [ŚĀNTIŚ. 3,11.]
+**1)** *dhā* [vgl. ] mit *vyava* pass. sich trennen von: *bandhubhyo vyavadhīyatām* [ŚĀNTIŚ. 3,11.]
+- **EN:** *dhā* [vgl. ] with *vyava* pass. to separate oneself from: *bandhubhyo vyavadhīyatām* [ŚĀNTIŚ. 3,11.]
 
 ## dhā
 
 `_d_a~~h6_00_pwg00`
 
 
-**8)** 1. *dhā*¦
+**8)** 1. *dhā*
 Z. 8 *(abhi) dadhyuṣī* auch die [ed. Bomb.]; die Form gehört zu *dhyāḥ*
 Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) liest die neuere Ausg. *patibhaktyorjitāśca* st. *patibhaktyai dhitāḥ sma* .
-- **EN:** 1. *dhā*¦
+- **EN:** 1. *dhā*
 Z. 8 *(abhi) dadhyuṣī* also the [ed. Bomb.]; the form belongs to *dhyāḥ*
 Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) the newer Ausg. reads *patibhaktyorjitāśca* st. *patibhaktyai dhitāḥ sma*.
 
@@ -1897,9 +1897,9 @@ Z. 9 read: appointed them to —, installed them as —.
 `_d_a~~h7_00_pwg00`
 
 
-**2)** *dhā*¦
+**2)** *dhā*
  1) vgl. noch *madhudhā, puṣpadha, bhāgadha*.
-- **EN:** *dhā*¦
+- **EN:** *dhā*
  1) vgl. nor *madhudhā, puṣpadha, bhāgadha*.
 
 **1-cont)** — 2) vgl. noch *purodhā*.
@@ -1910,9 +1910,9 @@ Z. 9 read: appointed them to —, installed them as —.
 `_d_a~~h8_00_pwg00`
 
 
-**main)** 3. *dhā*¦, *dhātuṃ teṣāṃ somam*
+**main)** 3. *dhā*, *dhātuṃ teṣāṃ somam*
 [MBH. 3,14282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14282)
-- **EN:** 3. *dhā*¦, *dhātuṃ teṣāṃ somam*
+- **EN:** 3. *dhā*, *dhātuṃ teṣāṃ somam*
 [MBH. 3,14282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14282)
 
 ## dhā
@@ -1920,16 +1920,16 @@ Z. 9 read: appointed them to —, installed them as —.
 `_d_a~~h9_00_pwg00`
 
 
-**main)** 4. *dhā*¦ (= 3. *dhā)* _adj._ saugend in *payodhā* .
-- **EN:** 4. *dhā*¦ (= 3. *dhā)* _adj._ sucking in *payodhā* .
+**main)** 4. *dhā* (= 3. *dhā)* _adj._ saugend in *payodhā* .
+- **EN:** 4. *dhā* (= 3. *dhā)* _adj._ sucking in *payodhā* .
 
 ## dhā
 
 `_d_a~~h10_00_pwg00`
 
 
-**main)** 1. *dhā*¦ mit *samava* vgl. *samavadhāna* .
-- **EN:** 1. *dhā*¦ with *samava* vgl. *samavadhāna* .
+**main)** 1. *dhā* mit *samava* vgl. *samavadhāna* .
+- **EN:** 1. *dhā* with *samava* vgl. *samavadhāna* .
 
 ## abhyupadhā
 
@@ -2036,16 +2036,16 @@ Z. 6 read 158, 3.
 `_d_a~~h11_00_pwg00`
 
 
-**main)** 4. *dhā*¦ (Nachträge) vgl. auch *sarva˚* .
-- **EN:** 4. *dhā*¦ (Addenda) vgl. also *sarva˚* .
+**main)** 4. *dhā* (Nachträge) vgl. auch *sarva˚* .
+- **EN:** 4. *dhā* (Addenda) vgl. also *sarva˚* .
 
 ## dhā
 
 `_d_a~~h0_zz_pw00`
 
 
-**pres-stems)** **1.** *dhā*¦, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
-- **EN:** **1.** *dhā*¦, present stems: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) and *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) and *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) dubious) and *hita* (s. bes.).
+**pres-stems)** **1.** *dhā*, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
+- **EN:** **1.** *dhā*, present stems: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) and *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) and *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) dubious) and *hita* (s. bes.).
 
 **1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Meist Act.
 - **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Mostly Act.
@@ -3356,9 +3356,9 @@ Z. 6 read 158, 3.
 `_d_a~~h0_zz_pw05`
 
 
-**1)** **2.** *dhā*¦
+**1)** **2.** *dhā*
 — 1〉 _Adj._ am Ende eines Comp. in der Bed. eines Nom. ag. von **1.** *dhā*.
-- **EN:** **2.** *dhā*¦
+- **EN:** **2.** *dhā*
 — 1〉 _Adj._ at the end of a Comp. in the Bed. of a Nom. ag. of **1.** *dhā*.
 
 **2)** — 2〉 *_m._ Bein.
@@ -3373,8 +3373,8 @@ Z. 6 read 158, 3.
 **3)** — 3〉 _f._ am Ende eines Comp. Nom. act. von **1.** *dhā*.
 - **EN:** — 3〉 _f._ at the end of a Comp. Nom. act. of **1.** *dhā*.
 
-**3.dhā)** **3.** √*dhā*¦, *dhayati, dhītvā, dhīta*; saugen an Etwas oder Etwas (Acc.) trinken; aussaugen (auch in übertr. Bed.), einsaugen, so v. a. ganz sich zu eigen machen. Caus. *dhāpayate* säugen, ernähren.
-- **EN:** **3.** √*dhā*¦, *dhayati, dhītvā, dhīta*; "to suck at something" or "something" (Acc.) "to drink; to suck out" (also in übertr. Bed.), "to imbibe," so v. a. "to make wholly one's own." Caus. *dhāpayate* "to suckle, to nourish."
+**3.dhā)** **3.** √*dhā*, *dhayati, dhītvā, dhīta*; saugen an Etwas oder Etwas (Acc.) trinken; aussaugen (auch in übertr. Bed.), einsaugen, so v. a. ganz sich zu eigen machen. Caus. *dhāpayate* säugen, ernähren.
+- **EN:** **3.** √*dhā*, *dhayati, dhītvā, dhīta*; "to suck at something" or "something" (Acc.) "to drink; to suck out" (also in übertr. Bed.), "to imbibe," so v. a. "to make wholly one's own." Caus. *dhāpayate* "to suckle, to nourish."
 
 **3.dhā-1)** — Mit *anu* Caus. Act. zum Saugen anlegen.
 - **EN:** — With *anu* Caus. Act. "to put to the breast for suckling."
@@ -3400,14 +3400,14 @@ Z. 6 read 158, 3.
 **3.dhā-8)** — Mit *prati* in *˚dha*.
 - **EN:** — With *prati* in *˚dha*.
 
-**4.dhā)** **4.** *dhā*¦ _Adj._ saugend in *payodhā*.
-- **EN:** **4.** *dhā*¦ _Adj._ "sucking" in *payodhā*.
+**4.dhā)** **4.** *dhā* _Adj._ saugend in *payodhā*.
+- **EN:** **4.** *dhā* _Adj._ "sucking" in *payodhā*.
 
-**1.dhā-strive)** **1.** √*dhā*¦ mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
-- **EN:** **1.** √*dhā*¦ with *vi* Act. "to strive for, to make an effort for" (Dat.) [KIR. 1,3,42].
+**1.dhā-strive)** **1.** √*dhā* mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
+- **EN:** **1.** √*dhā* with *vi* Act. "to strive for, to make an effort for" (Dat.) [KIR. 1,3,42].
 
-**1.dhā-corrig1)** **1.** √*dhā*¦ mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
-- **EN:** **1.** √*dhā*¦ with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
+**1.dhā-corrig1)** **1.** √*dhā* mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
+- **EN:** **1.** √*dhā* with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
 
 **1.dhā-corrig2)** — Mit *abhyupa* 3〉 streiche Med.
 - **EN:** — With *abhyupa* 3〉 delete Med.
@@ -3415,8 +3415,8 @@ Z. 6 read 158, 3.
 **1.dhā-corrig3)** — Mit *abhisam* 1〉 lies (Acc.) st. (Loc.).
 - **EN:** — With *abhisam* 1〉 read (Acc.) st. (Loc.).
 
-**1.dhā-corrig-suppressed)** **1.** √*dhā*¦ mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
-- **EN:** **1.** √*dhā*¦ with *samā*, *samāhita* among the rhetoricians thus v. a. "muffled, suppressed."
+**1.dhā-corrig-suppressed)** **1.** √*dhā* mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
+- **EN:** **1.** √*dhā* with *samā*, *samāhita* among the rhetoricians thus v. a. "muffled, suppressed."
 
 **1.dhā-corrig-noattention)** — Mit *vini* 6〉 *vinihitātman* in der angeführten Stelle bedeutet keine Aufmerksamkeit Jmd (Loc.) schenkend.
 - **EN:** — With *vini* 6〉 *vinihitātman* in the cited passage means "paying no attention to someone" (Loc.).
@@ -3424,8 +3424,8 @@ Z. 6 read 158, 3.
 **1.dhā-corrig-final)** — Mit *sam*, Partic. *saṃhita* und *saṃhita*; s. auch bes.
 - **EN:** — With *sam*, Partic. *saṃhita* and *saṃhita*; s. also bes.
 
-**1.dhā-III5-a)** **1.** √*dhā*¦ mit *abhi* III. 5.
-- **EN:** **1.** √*dhā*¦ with *abhi* III. 5.
+**1.dhā-III5-a)** **1.** √*dhā* mit *abhi* III. 5.
+- **EN:** **1.** √*dhā* with *abhi* III. 5.
 
 **1.dhā-III-b)** — Mit *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
 - **EN:** — With *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
@@ -3462,8 +3462,8 @@ Z. 6 read 158, 3.
 `_d_a~~h0_zz_sch`
 
 
-**abhi corr.)** 1. dhā¦ mit abhi, S. 152, Sp. 1, Z. 2 lies abhíhita.
-- **EN:** 1. dhā¦ with abhi, p. 152, col. 1, l. 2 read abhíhita.
+**abhi corr.)** 1. dhā mit abhi, S. 152, Sp. 1, Z. 2 lies abhíhita.
+- **EN:** 1. dhā with abhi, p. 152, col. 1, l. 2 read abhíhita.
 
 **anvava)** — Mit anvava [Āpast. Śr. 8,11,16]; Gṛhy. 17,5.
 - **EN:** — With anvava [Āpast. Śr. 8,11,16]; Gṛhy. 17,5.
@@ -3499,11 +3499,11 @@ Z. 6 read 158, 3.
 `_d_a~~h0_zz_pwkvn`
 
 
-**1)** **1.** *dhā*¦ mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
-- **EN:** **1.** *dhā*¦ with *vi* Act. to strive after (Dat.) [KIR. 1,3,42].
+**1)** **1.** *dhā* mit *vi* Act. sich bemühen um (Dat.) [KIR. 1,3,42].
+- **EN:** **1.** *dhā* with *vi* Act. to strive after (Dat.) [KIR. 1,3,42].
 
-**abhi corr.)** **1.** *dhā*¦ mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
-- **EN:** **1.** *dhā*¦ with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
+**abhi corr.)** **1.** *dhā* mit *abhi*, S. 152, Sp. 1, Z. 2 lies *abhihita*.
+- **EN:** **1.** *dhā* with *abhi*, p. 152, col. 1, l. 2 read *abhihita*.
 
 **abhyupa 3 del.)** — Mit *abhyupa* 3〉 streiche Med.
 - **EN:** — With *abhyupa* 3〉 delete Med..
@@ -3511,8 +3511,8 @@ Z. 6 read 158, 3.
 **ā corr.)** — Mit *abhisam* 1〉 lies (Acc.) st. (Loc.).
 - **EN:** — With *abhisam* 1〉 read (Acc.) st. (Loc.).
 
-**samā rhetoric)** **1.** *dhā*¦ mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
-- **EN:** **1.** *dhā*¦ with *samā*, *samāhita* in the rhetoricians so much as muted, suppressed.
+**samā rhetoric)** **1.** *dhā* mit *samā*, *samāhita* bei den Rhetorikern so v. a. gedämpft, unterdrückt.
+- **EN:** **1.** *dhā* with *samā*, *samāhita* in the rhetoricians so much as muted, suppressed.
 
 **vini 6)** — Mit *vini* 6〉 *vinihitātman* in der angeführten Stelle bedeutet keine Aufmerksamkeit Jmd (Loc.) schenkend.
 - **EN:** — With *vini* 6〉 *vinihitātman* in the cited passage means: paying no attention to someone (Loc.).
@@ -3520,8 +3520,8 @@ Z. 6 read 158, 3.
 **other preverbs)** — Mit *sam*, Partic. *saṃhita* und *saṃhita*; s. auch bes.
 - **EN:** — With *sam*, Partic. *saṃhita* and *saṃhita*; s. also bes..
 
-**anu III.5)** **1.** *dhā*¦ mit *abhi* III. 5.
-- **EN:** **1.** *dhā*¦ with *abhi* III. 5.
+**anu III.5)** **1.** *dhā* mit *abhi* III. 5.
+- **EN:** **1.** *dhā* with *abhi* III. 5.
 
 **anuni III)** — Mit *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
 - **EN:** — With *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
@@ -3558,9 +3558,9 @@ Z. 6 read 158, 3.
 `d_a~~h0_00_pwg00`
 
 
-**A. Präsensformen)** *dā*¦ (*dad, dāy*) A. Präsensformen: a) *dadāti* [DHĀTUP. 25,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) *dattas, dadmam, dadmasi, dadati; dehi* ( [P. 6,4,119](https://ashtadhyayi.com/sutraani/6/4/119)), *daddhi* ( [ṚV. 2,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.07)), *dattāt, dadātu, dattam, datta, dadatu; dadyāt; adadāt, adattam, adadāta* und *adattana, adadus*, ohne Augm. *dadās, dadāt, dadāta*; partic. *dadat, dadatam* u. s. w.; med. in Verbindung mit praepp., namentlich mit *ā*.* datte, datse* ( [AV. 12,5,56](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.56)), *dadvahe, dadmahe; datsva, dattām; dadīmahi, dadīran; adatta* . Vom simpl. med.: *datte* [PAÑCAT. 38,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,1) *dadate* [KATHĀS. 8,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,24) — b) *dāti* und *dātu* ved. ([P. 6,1,8](https://ashtadhyayi.com/sutraani/6/1/8), Vārtt. 3, Sch. [P. 2,4,76](https://ashtadhyayi.com/sutraani/2/4/76), Sch.). — c) *dadati* 3. sg. ([MBH. 3,13422](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13422)), *dadanti* ( [MBH. 13,3148](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3148)); *dada* ([MBH. 9,2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2442) [MĀRK. P. 8,35](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35)): *adadat* (ved. und [MBH. 2,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1880) [3,10207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10207) [12204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12204) [13186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13186) [13308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13308) [7,2284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2284) [R. 3,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,19) [5,58,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,14)), *dadat, dadas, dadan*; med. (mit bes. Bed. im Veda): *dade* 1. und 3. sg., *dadate* 3. sg., *dadante; dadamāna, dadāna* und *dadāna; adadanta, adadiṣṭa* ([SV.], *adediṣṭa* [ṚV.]); ep. *dadasva* in der gew. Bed. [MBH. 1,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3482) [7160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7160) [2,1512.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1512) [3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) [HARIV. 6341.](https://sanskrit-lexicon-scans.github.io/hariv?6341) [R. GORR. 2,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,13) [MĀRK. P. 8,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35) [SĀH. D. 50,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?50,1) — d) *dadmi* [MBH. 12,10466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10466) [HARIV. 10858.](https://sanskrit-lexicon-scans.github.io/hariv?10858) [10861.](https://sanskrit-lexicon-scans.github.io/hariv?10861) [R. 1,29,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,15) [2,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,21) *(ā) dadmi* [MBH. 2,880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.880) [14,2753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2753) — e) *(ā) dāyamāna* [MBH. 1,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7029) — f) *(ā) dadāyan* (partic.) [MUṆḌ. UP. 1,2,5.]
+**A. Präsensformen)** *dā* (*dad, dāy*) A. Präsensformen: a) *dadāti* [DHĀTUP. 25,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) *dattas, dadmam, dadmasi, dadati; dehi* ( [P. 6,4,119](https://ashtadhyayi.com/sutraani/6/4/119)), *daddhi* ( [ṚV. 2,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.07)), *dattāt, dadātu, dattam, datta, dadatu; dadyāt; adadāt, adattam, adadāta* und *adattana, adadus*, ohne Augm. *dadās, dadāt, dadāta*; partic. *dadat, dadatam* u. s. w.; med. in Verbindung mit praepp., namentlich mit *ā*.* datte, datse* ( [AV. 12,5,56](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.56)), *dadvahe, dadmahe; datsva, dattām; dadīmahi, dadīran; adatta* . Vom simpl. med.: *datte* [PAÑCAT. 38,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,1) *dadate* [KATHĀS. 8,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,24) — b) *dāti* und *dātu* ved. ([P. 6,1,8](https://ashtadhyayi.com/sutraani/6/1/8), Vārtt. 3, Sch. [P. 2,4,76](https://ashtadhyayi.com/sutraani/2/4/76), Sch.). — c) *dadati* 3. sg. ([MBH. 3,13422](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13422)), *dadanti* ( [MBH. 13,3148](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3148)); *dada* ([MBH. 9,2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2442) [MĀRK. P. 8,35](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35)): *adadat* (ved. und [MBH. 2,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1880) [3,10207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10207) [12204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12204) [13186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13186) [13308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13308) [7,2284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2284) [R. 3,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,19) [5,58,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,14)), *dadat, dadas, dadan*; med. (mit bes. Bed. im Veda): *dade* 1. und 3. sg., *dadate* 3. sg., *dadante; dadamāna, dadāna* und *dadāna; adadanta, adadiṣṭa* ([SV.], *adediṣṭa* [ṚV.]); ep. *dadasva* in der gew. Bed. [MBH. 1,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3482) [7160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7160) [2,1512.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1512) [3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) [HARIV. 6341.](https://sanskrit-lexicon-scans.github.io/hariv?6341) [R. GORR. 2,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,13) [MĀRK. P. 8,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35) [SĀH. D. 50,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?50,1) — d) *dadmi* [MBH. 12,10466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10466) [HARIV. 10858.](https://sanskrit-lexicon-scans.github.io/hariv?10858) [10861.](https://sanskrit-lexicon-scans.github.io/hariv?10861) [R. 1,29,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,15) [2,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,21) *(ā) dadmi* [MBH. 2,880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.880) [14,2753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2753) — e) *(ā) dāyamāna* [MBH. 1,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7029) — f) *(ā) dadāyan* (partic.) [MUṆḌ. UP. 1,2,5.]
 
-- **RU:** *dā*¦ (*dad, dāy*) A. Формы настоящего времени: a) *dadāti* [DHĀTUP. 25,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) *dattas, dadmam, dadmasi, dadati; dehi* ([P. 6,4,119](https://ashtadhyayi.com/sutraani/6/4/119)), *daddhi* ([ṚV. 2,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.07)), *dattāt, dadātu, dattam, datta, dadatu; dadyāt; adadāt, adattam, adadāta* и *adattana, adadus*, без Augm. *dadās, dadāt, dadāta*; partic. *dadat, dadatam* u. s. w.; med. в соединении с praepp., особенно с *ā*.* datte, datse* ([AV. 12,5,56](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.56)), *dadvahe, dadmahe; datsva, dattām; dadīmahi, dadīran; adatta*. От simpl. med.: *datte* [PAÑCAT. 38,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,1) *dadate* [KATHĀS. 8,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,24) — b) *dāti* и *dātu* ved. ([P. 6,1,8](https://ashtadhyayi.com/sutraani/6/1/8), Vārtt. 3, Sch. [P. 2,4,76](https://ashtadhyayi.com/sutraani/2/4/76), Sch.). — c) *dadati* 3. sg. ([MBH. 3,13422](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13422)), *dadanti* ([MBH. 13,3148](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3148)); *dada* ([MBH. 9,2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2442) [MĀRK. P. 8,35](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35)): *adadat* (ved. и [MBH. 2,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1880) [3,10207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10207) [12204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12204) [13186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13186) [13308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13308) [7,2284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2284) [R. 3,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,19) [5,58,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,14)), *dadat, dadas, dadan*; med. (с bes. Bed. в Veda): *dade* 1. и 3. sg., *dadate* 3. sg., *dadante; dadamāna, dadāna* и *dadāna; adadanta, adadiṣṭa* ([SV.], *adediṣṭa* [ṚV.]); ep. *dadasva* в gew. Bed. [MBH. 1,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3482) [7160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7160) [2,1512.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1512) [3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) [HARIV. 6341.](https://sanskrit-lexicon-scans.github.io/hariv?6341) [R. GORR. 2,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,13) [MĀRK. P. 8,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35) [SĀH. D. 50,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?50,1) — d) *dadmi* [MBH. 12,10466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10466) [HARIV. 10858.](https://sanskrit-lexicon-scans.github.io/hariv?10858) [10861.](https://sanskrit-lexicon-scans.github.io/hariv?10861) [R. 1,29,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,15) [2,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,21) *(ā) dadmi* [MBH. 2,880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.880) [14,2753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2753) — e) *(ā) dāyamāna* [MBH. 1,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7029) — f) *(ā) dadāyan* (partic.) [MUṆḌ. UP. 1,2,5.]
+- **RU:** *dā* (*dad, dāy*) A. Формы настоящего времени: a) *dadāti* [DHĀTUP. 25,9.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) *dattas, dadmam, dadmasi, dadati; dehi* ([P. 6,4,119](https://ashtadhyayi.com/sutraani/6/4/119)), *daddhi* ([ṚV. 2,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.017.html#rv02.017.07)), *dattāt, dadātu, dattam, datta, dadatu; dadyāt; adadāt, adattam, adadāta* и *adattana, adadus*, без Augm. *dadās, dadāt, dadāta*; partic. *dadat, dadatam* u. s. w.; med. в соединении с praepp., особенно с *ā*.* datte, datse* ([AV. 12,5,56](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.56)), *dadvahe, dadmahe; datsva, dattām; dadīmahi, dadīran; adatta*. От simpl. med.: *datte* [PAÑCAT. 38,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,1) *dadate* [KATHĀS. 8,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,24) — b) *dāti* и *dātu* ved. ([P. 6,1,8](https://ashtadhyayi.com/sutraani/6/1/8), Vārtt. 3, Sch. [P. 2,4,76](https://ashtadhyayi.com/sutraani/2/4/76), Sch.). — c) *dadati* 3. sg. ([MBH. 3,13422](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13422)), *dadanti* ([MBH. 13,3148](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3148)); *dada* ([MBH. 9,2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2442) [MĀRK. P. 8,35](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35)): *adadat* (ved. и [MBH. 2,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1880) [3,10207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10207) [12204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12204) [13186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13186) [13308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13308) [7,2284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2284) [R. 3,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,19) [5,58,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,14)), *dadat, dadas, dadan*; med. (с bes. Bed. в Veda): *dade* 1. и 3. sg., *dadate* 3. sg., *dadante; dadamāna, dadāna* и *dadāna; adadanta, adadiṣṭa* ([SV.], *adediṣṭa* [ṚV.]); ep. *dadasva* в gew. Bed. [MBH. 1,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3482) [7160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7160) [2,1512.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1512) [3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) [HARIV. 6341.](https://sanskrit-lexicon-scans.github.io/hariv?6341) [R. GORR. 2,32,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,32,13) [MĀRK. P. 8,35.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?8,35) [SĀH. D. 50,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?50,1) — d) *dadmi* [MBH. 12,10466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10466) [HARIV. 10858.](https://sanskrit-lexicon-scans.github.io/hariv?10858) [10861.](https://sanskrit-lexicon-scans.github.io/hariv?10861) [R. 1,29,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,15) [2,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,21) *(ā) dadmi* [MBH. 2,880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.880) [14,2753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2753) — e) *(ā) dāyamāna* [MBH. 1,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7029) — f) *(ā) dadāyan* (partic.) [MUṆḌ. UP. 1,2,5.]
   <sub>attested</sub>
 
 **B. allgemeine Formen)** — B. allgemeine Formen: aor. *adāt* ( [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 8,25.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,25) [87](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,87)), ved. *dāt, dātām, dāta, adus, dus; dāsati* [NAIGH. 2,30.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,30) *dāsathas* 2. du., *deṣma* [VS. 2,32](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,32); med. (mit praepp.): *adita, adiṣi, adiṣata* 3. sg. ( [P. 1,2,17.](https://ashtadhyayi.com/sutraani/1/2/17) [VOP. 10,11](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,11)); perf. *dadau, (parā) dadātha, dadathus, dada, dadus*; partic. *dadāvān* [AV. 5,11,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.011.html#av05.011.01) *dadvān* [ṚV. 10,132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.132.html#rv10.132.03) *dadivāṃsas* ( [VOP. 26,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,133)), *daduṣas* u. s. w.; med. *(pra) dadrire; dadade, dadadāte, dadadire* [P. 6,4,126](https://ashtadhyayi.com/sutraani/6/4/126), Sch. [VOP. 8,52.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,52) [106.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,106); fut. *dāsyāmi*, med. *dāsye, dāsyate, dāsyante* beim simpl. [MBH. 3,10584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10584) [12687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12687) [5,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7489) [BHAG. 3,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,12) [HARIV. 9219.](https://sanskrit-lexicon-scans.github.io/hariv?9219) [R. 1,10,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,6) [34,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,29) [2,30,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,15) [MĀRK. P. 18,21](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,21); prec. *deyāt* [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67) [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) [87.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,87) *(parā) deyām* ved. — *dātum, dātave, dātavai* ( [SIDDH. K. 229,b,4]); *dattvā, dattvāya* ( [P. 7,1,47](https://ashtadhyayi.com/sutraani/7/1/47), Schol.), *˚dāya* [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69) *(upa) dadya* . — pass. *dīyate* [P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *adiṣātām* und *adāyiṣātām, adāyi* ( [P. 7,3,33](https://ashtadhyayi.com/sutraani/7/3/33), Sch.); *dade; dāyiṣyate; dāsīṣṭa* und *dāyisīṣṭa* [P. 6,4,62.](https://ashtadhyayi.com/sutraani/6/4/62) [VOP. 24,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,4) [5](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,5); *upadadyamāna* vom Stamme *dad*; partic. *datta*, nach vocalisch auslautenden praepp. *tta* ([P. 7,4,46.](https://ashtadhyayi.com/sutraani/7/4/46) [47](https://ashtadhyayi.com/sutraani/7/4/47); vgl. auch *devatta* [ṚV. 1,37,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.037.html#rv01.037.04)) und *datta, vyātta* und *vyādita, dāta* in *tvadāta* .
@@ -5386,9 +5386,9 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h0_zz_pw00`
 
 
-**Präsensstämme)** **1.** √*dā*¦, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
+**Präsensstämme)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
 
-- **RU:** **1.** √*dā*¦, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
+- **RU:** **1.** √*dā*, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
   <sub>attested</sub>
 
 **1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.
@@ -6311,7 +6311,7 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h10_00_pwg00`
 
 
-**3)** 3. *dā*¦, *triṃśadbhāgadina* getheilt in
+**3)** 3. *dā*, *triṃśadbhāgadina* getheilt in
 [WEBER, JYOT. 41,14.]
 — *ava*
  1) zerschneiden, zerstückeln
@@ -6320,7 +6320,7 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 — *vi*
  3) die neuere Ausg. *vicintya* st. *viditya* .
 
-- **RU:** 3. *dā*¦, *triṃśadbhāgadina* разделённый на
+- **RU:** 3. *dā*, *triṃśadbhāgadina* разделённый на
 [WEBER, JYOT. 41,14.]
 — *ava*
  1) разрезать, разрубать на куски
@@ -6335,11 +6335,11 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h11_00_pwg00`
 
 
-**4)** 4. *dā*¦ mit *ni* vgl. *nidātar, nidāna* .
+**4)** 4. *dā* mit *ni* vgl. *nidātar, nidāna* .
 — *vi* lösen: *vyadyat, vi dyataḥ*
 [TBR. 3,10,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,1)
 
-- **RU:** 4. *dā*¦ с *ni* vgl. *nidātar, nidāna* .
+- **RU:** 4. *dā* с *ni* vgl. *nidātar, nidāna* .
 — *vi* развязывать, освобождать: *vyadyat, vi dyataḥ*
 [TBR. 3,10,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,1)
   <sub>attested</sub>
@@ -6349,10 +6349,10 @@ Schol. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 `d_a~~h12_00_pwg00`
 
 
-**7)** 7. *dā*¦ mit *ava*
+**7)** 7. *dā* mit *ava*
 Z. 7 lies *trīṇyavadātāni vi˚* .
 
-- **RU:** 7. *dā*¦ с *ava*
+- **RU:** 7. *dā* с *ava*
 Z. 7 читай *trīṇyavadātāni vi˚* .
   <sub>attested</sub>
 
@@ -6361,7 +6361,7 @@ Z. 7 читай *trīṇyavadātāni vi˚* .
 `d_a~~h13_00_pwg00`
 
 
-**1)** 1. *dā*¦
+**1)** 1. *dā*
 Z. 7 *datte* auch
 [Spr. (II) 1186.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1186)
  1) mit doppeltem acc.: *viṣaṃ dātuṃ samarthā sā svāminaṃ guṇināṃ varam*
@@ -6379,7 +6379,7 @@ Z. 7 *datte* auch
 [HEM.]
 [YOGAŚ. 3,11.]
 
-- **RU:** 1. *dā*¦
+- **RU:** 1. *dā*
 Z. 7 *datte* также
 [Spr. (II) 1186.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1186)
  1) с двойным acc.: *viṣaṃ dātuṃ samarthā sā svāminaṃ guṇināṃ varam*
@@ -6403,11 +6403,11 @@ Z. 7 *datte* также
 `d_a~~h14_00_pwg00`
 
 
-**3)** 3. *dā*¦ mit *vi*
+**3)** 3. *dā* mit *vi*
  3) vertheilen: *vidāyaṃ ca cakāra*
 [PAÑCAR. 1,12,2](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,2), v. l. *vidayāmāsa* (von *day*) im Texte.
 
-- **RU:** 3. *dā*¦ с *vi*
+- **RU:** 3. *dā* с *vi*
  3) распределять, раздавать: *vidāyaṃ ca cakāra*
 [PAÑCAR. 1,12,2](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,2), v. l. *vidayāmāsa* (от *day*) в тексте.
   <sub>attested</sub>
@@ -6417,12 +6417,12 @@ Z. 7 *datte* также
 `d_a~~h15_00_pwg00`
 
 
-**7)** 7. *dā*¦ mit *paryava*, partic. *˚dāta* durch und durch lauter: *savakarmasu* ein Diener
+**7)** 7. *dā* mit *paryava*, partic. *˚dāta* durch und durch lauter: *savakarmasu* ein Diener
 [CARAKA 1,15.] *˚śruta* ein Lehrer
 [3,8.]
 — Vgl. *paryavadātatva* .
 
-- **RU:** 7. *dā*¦ с *paryava*, partic. *˚dāta* насквозь чистый, истинный: *savakarmasu* слуга
+- **RU:** 7. *dā* с *paryava*, partic. *˚dāta* насквозь чистый, истинный: *savakarmasu* слуга
 [CARAKA 1,15.] *˚śruta* учитель
 [3,8.]
 — Vgl. *paryavadātatva* .
@@ -6433,13 +6433,13 @@ Z. 7 *datte* также
 `d_a~~h1_00_pwg00`
 
 
-**1)** 2. *dā*¦ (= 1. *dā*) _m._ Geber: *kratvā dā astu śreṣṭhaḥ*
+**1)** 2. *dā* (= 1. *dā*) _m._ Geber: *kratvā dā astu śreṣṭhaḥ*
 [ṚV. 6,16,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) Hierher auch nach
 [SĀY.] der dat. *de*
 [5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) Am Ende eines comp. gebend, verleihend; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
 — Vgl. 1. *da* .
 
-- **RU:** 2. *dā*¦ (= 1. *dā*) _m._ даятель: *kratvā dā astu śreṣṭhaḥ*
+- **RU:** 2. *dā* (= 1. *dā*) _m._ даятель: *kratvā dā astu śreṣṭhaḥ*
 [ṚV. 6,16,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) Сюда же, по
 [SĀY.] der dat. *de*
 [5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) В конце comp. дающий, дарующий; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
@@ -6451,7 +6451,7 @@ Z. 7 *datte* также
 `d_a~~h2_00_pwg00`
 
 
-**1)** 3. *dā*¦ *(dā, do), dāti*
+**1)** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -6485,7 +6485,7 @@ Sch.
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) — intens. *dedīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 
-- **RU:** 3. *dā*¦ *(dā, do), dāti*
+- **RU:** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -6784,13 +6784,13 @@ Schol. к [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 `d_a~~h3_00_pwg00`
 
 
-4. *dā*¦, *dyati*
+4. *dā*, *dyati*
 δέω, binden (fehlt im
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* lass dich binden (nach
 [MAHĪDH.] von 1. *dā*)
 [VS. 38,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?38,3)
 
-- **RU:** 4. *dā*¦, *dyati*
+- **RU:** 4. *dā*, *dyati*
 δέω, вязать, связывать (отсутствует в
 [DHĀTUP.]); partic. *dita*.* gharmāya dīṣva* дай себя связать (по
 [MAHĪDH.] от 1. *dā*)
@@ -6868,13 +6868,13 @@ Schol. к [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 `d_a~~h4_00_pwg00`
 
 
-5. *dā*¦ *(de), dayate* beschützen
+5. *dā* *(de), dayate* beschützen
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, welcher Wurzel auch die Bed. *rakṣaṇa* zugeschrieben wird. — desid. *ditsate*
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
 
-- **RU:** 5. *dā*¦ *(de), dayate* защищать, охранять
+- **RU:** 5. *dā* *(de), dayate* защищать, охранять
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, каковому корню приписывается также Bed. *rakṣaṇa*. — desid. *ditsate*
@@ -6897,10 +6897,10 @@ Sch. к [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)
 `d_a~~h5_00_pwg00`
 
 
-6. *dā*¦ (von 5. *dā*) _f._ Schutz
+6. *dā* (von 5. *dā*) _f._ Schutz
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
 
-- **RU:** 6. *dā*¦ (от 5. *dā*) _f._ защита, охрана
+- **RU:** 6. *dā* (от 5. *dā*) _f._ защита, охрана
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
   <sub>lexicographic</sub>
 
@@ -6909,7 +6909,7 @@ Sch. к [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)
 `d_a~~h6_00_pwg00`
 
 
-**7)** 7. *dā*¦ *(dai), dāyati* reinigen
+**7)** 7. *dā* *(dai), dāyati* reinigen
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
 — *ava*, partic. *avadāta* (abgewaschen) gereinigt, rein: *avadātaṃ mukham*
@@ -6928,7 +6928,7 @@ Sch. zu [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 [TAITT. ĀR. 1,9,4.] _f._ *ī*
 [17,2.]
 
-- **RU:** 7. *dā*¦ *(dai), dāyati* очищать
+- **RU:** 7. *dā* *(dai), dāyati* очищать
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
 — *ava*, partic. *avadāta* (смытый) очищенный, чистый: *avadātaṃ mukham*
@@ -6953,10 +6953,10 @@ Sch. к [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 `d_a~~h7_00_pwg00`
 
 
-**8)** 8. *dā*¦ (von 7. *dā*) _f._ das Reinigen
+**8)** 8. *dā* (von 7. *dā*) _f._ das Reinigen
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
 
-- **RU:** 8. *dā*¦ (от 7. *dā*) _f._ очищение
+- **RU:** 8. *dā* (от 7. *dā*) _f._ очищение
 [MED. d. 1.](https://sanskrit-lexicon-scans.github.io/medini/app1?d,1)
   <sub>attested</sub>
 
@@ -6965,9 +6965,9 @@ Sch. к [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 `d_a~~h8_00_pwg00`
 
 
-**1)** **1.** *dā*¦ [vgl. ] Z. 7. *datte* auch [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
+**1)** **1.** *dā* [vgl. ] Z. 7. *datte* auch [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
 
-- **RU:** **1.** *dā*¦ [vgl. ] Z. 7. *datte* также [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
+- **RU:** **1.** *dā* [vgl. ] Z. 7. *datte* также [PAÑCAT. I,356.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,356)
   <sub>attested</sub>
 
 ## anudā

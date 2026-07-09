@@ -3,16 +3,16 @@
 `na_s~~h3_00_pwg00`
 
 
-**1)** 1. *naś*¦, *naśyato yudhyato vāpi* dessen der da flieht oder kämpft
+**1)** 1. *naś*, *naśyato yudhyato vāpi* dessen der da flieht oder kämpft
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)
 
-- **RU:** 1. *naś*¦, *naśyato yudhyato vāpi* тот, кто бежит или сражается
+- **RU:** 1. *naś*, *naśyato yudhyato vāpi* тот, кто бежит или сражается
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)
-- **EN:** 1. *naś*¦, *naśyato yudhyato vāpi* he who flees or fights
+- **EN:** 1. *naś*, *naśyato yudhyato vāpi* he who flees or fights
 [Spr. 4360.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4360) *raṇānnaṣṭaḥ*
 [KATHĀS. 72,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,34)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)

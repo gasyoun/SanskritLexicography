@@ -3,7 +3,7 @@
 `jan~~h0_00_pwg00`
 
 
-**I.1a)** *jan*¦ I. trans.
+**I.1a)** *jan* I. trans.
  1) Präsensformen:
  a) *janāmi, janāmasi, ajanam, ajanan*; med. *janata, ajananta*; nur in der älteren Sprache.
 - **EN:** *jan* I. trans.
@@ -262,9 +262,9 @@ a) *janiṣe, janiṣva, janidhve, janidhvam*
 [P. 2,4,80](https://ashtadhyayi.com/sutraani/2/4/80) aor.
   <sub>attested</sub>
 
-**I (грамматическая рубрика))** *jan*¦ I. trans.
+**I (грамматическая рубрика))** *jan* I. trans.
 
-- **RU:** *jan*¦ I. trans.
+- **RU:** *jan* I. trans.
   <sub>attested</sub>
 
 **1) Präsensformen)** 1) Präsensformen:

@@ -3,7 +3,7 @@
 `d_a~~h2_00_pwg00`
 
 
-**1)** 3. *dā*¦ *(dā, do), dāti*
+**1)** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -37,7 +37,7 @@ Sch.
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) — intens. *dedīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 
-- **RU:** 3. *dā*¦ *(dā, do), dāti*
+- **RU:** 3. *dā* *(dā, do), dāti*
 [DHĀTUP. 24,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *dyati*
 [26,39.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) [P. 7,3,71.](https://ashtadhyayi.com/sutraani/7/3/71) *(samava) dadire*; aor. *adāt*
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)

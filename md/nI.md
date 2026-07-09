@@ -7,7 +7,7 @@ _PWG article — 97 sub-card(s), 517 sense(s) · RU 410/517 · EN 447/517_
 `n_i~~h0_00_pwg00`
 
 
-**forms)** *nī*¦, *nayati* und *˚te*
+**forms)** *nī*, *nayati* und *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) neben *nayeta* ep. auch *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) neben *anayat* ved. auch *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
@@ -17,7 +17,7 @@ _PWG article — 97 sub-card(s), 517 sense(s) · RU 410/517 · EN 447/517_
 [TS. 3,2,8,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,8,3), wo aber das Metrum *ninīma* fordert; ved. *ninīyāt, ninīthas*; ep. *nayāmāsa; ninye; neṣyāmi*; ep. auch *nayiṣyāmi, ˚ṣye; netā*, ep. auch *nayitā; netum*, ep. (auch
 [AIT. BR.]) auch *nayitum; nītvā, ˚nīya*; pass. *nīyate, nīta* .
 
-- **RU:** *nī*¦, *nayati* и *˚te*
+- **RU:** *nī*, *nayati* и *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) наряду с *nayeta* эп. также *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) наряду с *anayat* ved. также *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
@@ -26,7 +26,7 @@ _PWG article — 97 sub-card(s), 517 sense(s) · RU 410/517 · EN 447/517_
 [P. 6,4,82](https://ashtadhyayi.com/sutraani/6/4/82)), *nīnima*
 [TS. 3,2,8,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,8,3), однако метр требует *ninīma*; ved. *ninīyāt, ninīthas*; эп. *nayāmāsa; ninye; neṣyāmi*; эп. также *nayiṣyāmi, ˚ṣye; netā*, эп. также *nayitā; netum*, эп. (также
 [AIT. BR.]) также *nayitum; nītvā, ˚nīya*; pass. *nīyate, nīta* .
-- **EN:** *nī*¦, *nayati* and *˚te*
+- **EN:** *nī*, *nayati* and *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) beside *nayeta* ep. also *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) beside *anayat* ved. also *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
@@ -4526,18 +4526,18 @@ This is, according to [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) and [
 `n_i~~h1_00_pwg00`
 
 
-**1)** 2. *nī*¦ (= 1. *nī*) _m._ Führer, Leiter am Ende eines comp.
+**1)** 2. *nī* (= 1. *nī*) _m._ Führer, Leiter am Ende eines comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (als selbstständigen Wortes).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)
 — Vgl. *agraṇī, agre˚, ṛtanī, gāthā˚, grāmaṇī, padanī, pṛtanā˚, yajña˚, vaśa˚, senā˚* .
 
-- **RU:** 2. *nī*¦ (= 1. *nī*) _m._ вождь, руководитель в конце comp.
+- **RU:** 2. *nī* (= 1. *nī*) _m._ вождь, руководитель в конце comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (как самостоятельного слова).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)
 — Vgl. *agraṇī, agre˚, ṛtanī, gāthā˚, grāmaṇī, padanī, pṛtanā˚, yajña˚, vaśa˚, senā˚* .
-- **EN:** 2. *nī*¦ (= 1. *nī*) _m._ leader, guide at the end of a comp.
+- **EN:** 2. *nī* (= 1. *nī*) _m._ leader, guide at the end of a comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) Declin.
 [6,4,77](https://ashtadhyayi.com/sutraani/6/4/77) (as an independent word).
 [82.](https://ashtadhyayi.com/sutraani/3/2/82) [7,3,116.](https://ashtadhyayi.com/sutraani/7/3/116) [VOP. 3,59.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,59) [60.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,60)
@@ -4549,10 +4549,10 @@ This is, according to [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) and [
 `n_i~~h2_00_pwg00`
 
 
-**1)** **1.** *nī*¦ [vgl. ] Z. 20. *pūtimunnayan* bedentet wohl zur Reinigung führend, reintgend.
+**1)** **1.** *nī* [vgl. ] Z. 20. *pūtimunnayan* bedentet wohl zur Reinigung führend, reintgend.
 
-- **RU:** **1.** *nī*¦ [vgl. ] Z. 20. *pūtimunnayan* означает, по всей видимости, ведущий к очищению, очищающий.
-- **EN:** **1.** *nī*¦ [vgl. ] Z. 20. *pūtimunnayan* probably means leading to purification, purifying.
+- **RU:** **1.** *nī* [vgl. ] Z. 20. *pūtimunnayan* означает, по всей видимости, ведущий к очищению, очищающий.
+- **EN:** **1.** *nī* [vgl. ] Z. 20. *pūtimunnayan* probably means leading to purification, purifying.
   <sub>lexicographic</sub>
 
 ## nī
@@ -4560,10 +4560,10 @@ This is, according to [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) and [
 `n_i~~h3_00_pwg00`
 
 
-**1)** **1.** *nī*¦ [vgl. ] Z. 19. Lies: 3〉 st. 8〉.
+**1)** **1.** *nī* [vgl. ] Z. 19. Lies: 3〉 st. 8〉.
 
-- **RU:** **1.** *nī*¦ [vgl. ] Z. 19. Читай: 3〉 st. 8〉.
-- **EN:** **1.** *nī*¦ [vgl. ] Z. 19. Read: 3〉 st. 8〉.
+- **RU:** **1.** *nī* [vgl. ] Z. 19. Читай: 3〉 st. 8〉.
+- **EN:** **1.** *nī* [vgl. ] Z. 19. Read: 3〉 st. 8〉.
   <sub>attested</sub>
 
 ## nī
@@ -4571,10 +4571,10 @@ This is, according to [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) and [
 `n_i~~h4_00_pwg00`
 
 
-**1)** **1.** *nī*¦ [vgl. ] Z. 8. Lies: {11,2,6,1} st. {11,26,1}.
+**1)** **1.** *nī* [vgl. ] Z. 8. Lies: {11,2,6,1} st. {11,26,1}.
 
-- **RU:** **1.** *nī*¦ [vgl. ] Z. 8. Читай: {11,2,6,1} st. {11,26,1}.
-- **EN:** **1.** *nī*¦ [vgl. ] Z. 8. Read: {11,2,6,1} st. {11,26,1}.
+- **RU:** **1.** *nī* [vgl. ] Z. 8. Читай: {11,2,6,1} st. {11,26,1}.
+- **EN:** **1.** *nī* [vgl. ] Z. 8. Read: {11,2,6,1} st. {11,26,1}.
   <sub>attested</sub>
 
 ## nī
@@ -4582,10 +4582,10 @@ This is, according to [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) and [
 `n_i~~h5_00_pwg00`
 
 
-**1)** 1. *nī*¦
+**1)** 1. *nī*
 
-- **RU:** 1. *nī*¦
-- **EN:** *nī*¦
+- **RU:** 1. *nī*
+- **EN:** *nī*
  1) *santo hi satyena nayanti sūryam*
 [Spr. 5154.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5154)
 — 3) *tato vivāhyānicchantīmapyanaiṣītsa māṃ dvijaḥ*
@@ -5026,12 +5026,12 @@ Schol. *pariṇītam* как nom. act. брак. —
 `n_i~~h6_00_pwg00`
 
 
-**1)** 1. *nī*¦ mit *abhi*, partic. *˚nīta* erreichbar und *anabhinīta* unerreichbar
+**1)** 1. *nī* mit *abhi*, partic. *˚nīta* erreichbar und *anabhinīta* unerreichbar
 [PAT. a. a. O. 3,95,a.]
 
-- **RU:** 1. *nī*¦ с *abhi*, partic. *˚nīta* достижимый и *anabhinīta* недостижимый
+- **RU:** 1. *nī* с *abhi*, partic. *˚nīta* достижимый и *anabhinīta* недостижимый
 [PAT. a. a. O. 3,95,a.]
-- **EN:** 1. *nī*¦ with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
+- **EN:** 1. *nī* with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
 [PAT. a. a. O. 3,95,a.]
 — *pari* to abduct, carry off
 [ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)
@@ -5071,9 +5071,9 @@ Schol. *pariṇītam* как nom. act. брак. —
 `n_i~~h0_zz_pw00`
 
 
-**1)** **1.** √*nī*¦, *nayati, ˚te*
+**1)** **1.** √*nī*, *nayati, ˚te*
 — 1〉 leiten, führen, lenken. *agram* Etwas (Gen.) anführen. Auch vom Ross, das den Wagen führt.
-- **EN:** **1.** √*nī*¦, *nayati, ˚te*
+- **EN:** **1.** √*nī*, *nayati, ˚te*
 — 1〉 to lead, guide, direct. *agram* to adduce, cite something (Gen.). Also of the horse that draws the chariot.
 
 **2)** — 2〉 abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen, — zu (Acc., Acc. mit *prati* [[PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4)], Dat. oder Loc.).
@@ -6313,22 +6313,22 @@ Schol. *pariṇītam* как nom. act. брак. —
 `n_i~~h0_zz_pw03`
 
 
-**1)** **2.** *˚nī*¦ _Adj._ führend, leitend u. s. w.
+**1)** **2.** *˚nī* _Adj._ führend, leitend u. s. w.
 
-- **RU:** **2.** *˚nī*¦ _Adj._ ведущий, руководящий u. s. w.
-- **EN:** **2.** *˚nī*¦ _Adj._ leading, guiding u. s. w..
+- **RU:** **2.** *˚nī* _Adj._ ведущий, руководящий u. s. w.
+- **EN:** **2.** *˚nī* _Adj._ leading, guiding u. s. w..
   <sub>attested</sub>
 
-**13 — note)** **1.** √*nī*¦ 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. eine Autorität sein im Auge gehabt hätte.
+**13 — note)** **1.** √*nī* 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. eine Autorität sein im Auge gehabt hätte.
 
-- **RU:** **1.** √*nī*¦ 13〉 [CAPPELLER] предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду значение Bed. быть авторитетом.
-- **EN:** **1.** √*nī*¦ 13〉 [CAPPELLER] supposes that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) may have had Bed. as an authority in mind.
+- **RU:** **1.** √*nī* 13〉 [CAPPELLER] предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду значение Bed. быть авторитетом.
+- **EN:** **1.** √*nī* 13〉 [CAPPELLER] supposes that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) may have had Bed. as an authority in mind.
   <sub>attested</sub>
 
-**with T9)** **1.** √*nī*¦ mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+**with T9)** **1.** √*nī* mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
 
-- **RU:** **1.** √*nī*¦ с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
-- **EN:** **1.** √*nī*¦ with *vyava* to pour in singly, one by one [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+- **RU:** **1.** √*nī* с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+- **EN:** **1.** √*nī* with *vyava* to pour in singly, one by one [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
   <sub>attested</sub>
 
 **with T14)** — Mit *samava* 1〉 zusammenführen, vereinigen. — 2〉 zusammengiessen.
@@ -6349,16 +6349,16 @@ Schol. *pariṇītam* как nom. act. брак. —
 - **EN:** — With *abhipra* also to lead to (Acc.).
   <sub>attested</sub>
 
-**with T24)** **1.** √*nī*¦ mit *atipra*, *˚ṇīta* zu weit gehend (Verlangen) [CARAKA 2,6].
+**with T24)** **1.** √*nī* mit *atipra*, *˚ṇīta* zu weit gehend (Verlangen) [CARAKA 2,6].
 
-- **RU:** **1.** √*nī*¦ с *atipra*, *˚ṇīta* заходящий слишком далеко (желание) [CARAKA 2,6].
-- **EN:** **1.** √*nī*¦ with *atipra*, *˚ṇīta* going too far, excessive (desire) [CARAKA 2,6].
+- **RU:** **1.** √*nī* с *atipra*, *˚ṇīta* заходящий слишком далеко (желание) [CARAKA 2,6].
+- **EN:** **1.** √*nī* with *atipra*, *˚ṇīta* going too far, excessive (desire) [CARAKA 2,6].
   <sub>attested</sub>
 
-**III.3)** **1.** √*nī*¦ III. 3.
+**III.3)** **1.** √*nī* III. 3.
 
-- **RU:** **1.** √*nī*¦ III. 3.
-- **EN:** **1.** √*nī*¦ III. 3.
+- **RU:** **1.** √*nī* III. 3.
+- **EN:** **1.** √*nī* III. 3.
   <sub>attested</sub>
 
 **with T28)** — Mit *samanu* = *anu* 3〉 [JĀTAKAM. 28].
@@ -6429,9 +6429,9 @@ Schol. *pariṇītam* как nom. act. брак. —
 **SCH-addenda)** 13. Cappeller vermutet, daß [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. "eine Autorität sein" im Auge gehabt hatte. — Mit samanu = anu 3., [Jātakam. 28.] — Mit apa ˚die Zeit hinbringen, [Gopāl. 118,3; 119,32.] — Mit vyava einzeln eingießen, [Śat. Br. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2); [Āpast. Śr. 11,6,3; 12,17,8; 13,8,2.] — Mit samava 1. zusammenführen, vereinigen. — 2. zusammengießen. — Mit samudā zusammenbringen, sammeln, [Divyāvad. 242,10]; zustande bringen, vollbringen, [Jātakam. 2.] — Mit ud ˚wegführen, [Kauś. 47,53; 49,6.] — Mit upa: zu upanayati [Śat. Br. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2) vgl. Oldenberg in [Kuhn's Z. 27,28]; als Beispiel anführen, [Jātakam. 281.] — Mit pi = api, einschütten, [Āpast. Gṛhy. 14,11.] — Mit pra, praṇīta ausgezeichnet, köstlich, vorzüglich, [Divyāvad. 50,15]; [Jātakam. 4]; [Mahāvy. 245,1262.] — Mit atipra, ˚ṇīta zu weit gehend (Verlangen), [Caraka 2,6.] — Mit abhipra auch: hinzuführen zu (Akk.). — Mit abhivi durch Unterricht bekehren, [Jātakam. 31,42.]
 - **EN:** 13. Cappeller conjectures that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) had in view the Bed. "to be an authority." — With samanu = anu 3., [Jātakam. 28.] — With apa ˚to pass the time, [Gopāl. 118,3; 119,32.] — With vyava to pour in separately, [Śat. Br. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2); [Āpast. Śr. 11,6,3; 12,17,8; 13,8,2.] — With samava 1. to bring together, unite. — 2. to pour together. — With samudā to bring together, collect, [Divyāvad. 242,10]; to bring about, accomplish, [Jātakam. 2.] — With ud ˚to lead away, [Kauś. 47,53; 49,6.] — With upa: on upanayati [Śat. Br. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2) cf. Oldenberg in [Kuhn's Z. 27,28]; to cite as an example, [Jātakam. 281.] — With pi = api, to pour in, [Āpast. Gṛhy. 14,11.] — With pra, praṇīta distinguished, choice, excellent, [Divyāvad. 50,15]; [Jātakam. 4]; [Mahāvy. 245,1262.] — With atipra, ˚ṇīta going too far (desire), [Caraka 2,6.] — With abhipra also: to lead towards (Acc.). — With abhivi to convert by instruction, [Jātakam. 31,42.]
 
-**13)** 1. nī¦ 13. Cappeller vermutet, daß [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. "eine Autorität sein" im Auge gehabt hatte.
+**13)** 1. nī 13. Cappeller vermutet, daß [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. "eine Autorität sein" im Auge gehabt hatte.
 
-- **RU:** 1. nī¦ 13. Cappeller предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду Bed. «быть авторитетом».
+- **RU:** 1. nī 13. Cappeller предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду Bed. «быть авторитетом».
   <sub>attested</sub>
 
 **samanu = anu 3)** — Mit samanu = anu 3., [Jātakam. 28.]
@@ -6504,27 +6504,27 @@ Schol. *pariṇītam* как nom. act. брак. —
 `n_i~~h0_zz_pwkvn`
 
 
-**PWKVN-1a)** **1.** *nī*¦ 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. eine Autorität sein im Auge gehabt hätte.
+**PWKVN-1a)** **1.** *nī* 13〉 [CAPPELLER] vermuthet, dass [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. eine Autorität sein im Auge gehabt hätte.
 
-- **RU:** **1.** *nī*¦ 13〉 [CAPPELLER] предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду значение Bed. быть авторитетом.
-- **EN:** **1.** *nī*¦ 13〉 [CAPPELLER] conjectures that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) had the Bed. "to be an authority" in view.
+- **RU:** **1.** *nī* 13〉 [CAPPELLER] предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду значение Bed. быть авторитетом.
+- **EN:** **1.** *nī* 13〉 [CAPPELLER] conjectures that [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) had the Bed. "to be an authority" in view.
   <sub>attested</sub>
 
-**PWKVN-1b)** **1.** *nī*¦ mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2]. — Mit *samava* 1〉 zusammenführen, vereinigen. — 2〉 zusammengiessen. — Mit *upa*, zu *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281]. — Mit *abhipra* auch hinführen zu (Acc.).
-- **EN:** **1.** *nī*¦ with *vyava* to pour in separately [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2]. — With *samava* 1〉 to bring together, unite. — 2〉 to pour together. — With *upa*, on *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281]. — With *abhipra* also to lead towards (Acc.).
+**PWKVN-1b)** **1.** *nī* mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2]. — Mit *samava* 1〉 zusammenführen, vereinigen. — 2〉 zusammengiessen. — Mit *upa*, zu *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281]. — Mit *abhipra* auch hinführen zu (Acc.).
+- **EN:** **1.** *nī* with *vyava* to pour in separately [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2]. — With *samava* 1〉 to bring together, unite. — 2〉 to pour together. — With *upa*, on *upanayati* [ŚAT. BR. 2,3,2,2](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) vgl. [OLDENBERG] in [KUHNʼs Z. 27,281]. — With *abhipra* also to lead towards (Acc.).
 
-**PWKVN-1c)** **1.** *nī*¦ mit *atipra*, *˚ṇīta* zu weit gehend (Verlangen) [CARAKA 2,6].
+**PWKVN-1c)** **1.** *nī* mit *atipra*, *˚ṇīta* zu weit gehend (Verlangen) [CARAKA 2,6].
 
-- **RU:** **1.** *nī*¦ с *atipra*, *˚ṇīta* заходящий слишком далеко (желание) [CARAKA 2,6].
-- **EN:** **1.** *nī*¦ with *atipra*, *˚ṇīta* going too far (desire) [CARAKA 2,6].
+- **RU:** **1.** *nī* с *atipra*, *˚ṇīta* заходящий слишком далеко (желание) [CARAKA 2,6].
+- **EN:** **1.** *nī* with *atipra*, *˚ṇīta* going too far (desire) [CARAKA 2,6].
   <sub>attested</sub>
 
-**PWKVN-1d)** **1.** *nī*¦ III. 3. — Mit *samanu = anu* 3〉 [JĀTAKAM. 28]. — Mit *vyava* 5. — Mit *samava* 5. — Mit *samudā* zusammenbringen, sammeln [DIVYĀVAD. 242,10]. zu Stande bringen, vollbringen [JĀTAKAM. 2]. — Mit *upa* III. 5. als Beispiel anführen [JĀTAKAM. 28]. — Mit *pi = api* einschütten [ĀPAST. GṚHY. 14,11]. — Mit *pra* III. *praṇīta* ausgezeichnet, köstlich, vorzüglich [DIVYĀVAD. 50,15]. [JĀTAKAM. 4]. [MAHĀVY. 245,1262]. — Mit *atipra* III. 6. — Mit *abhipra* III. 5. — Mit *abhivi* III. durch Unterricht bekehren [JĀTAKAM. 31,42].
-- **EN:** **1.** *nī*¦ III. 3. — With *samanu = anu* 3〉 [JĀTAKAM. 28]. — With *vyava* 5. — With *samava* 5. — With *samudā* to bring together, collect [DIVYĀVAD. 242,10]. to bring about, accomplish [JĀTAKAM. 2]. — With *upa* III. 5. to cite as an example [JĀTAKAM. 28]. — With *pi = api* to pour in [ĀPAST. GṚHY. 14,11]. — With *pra* III. *praṇīta* distinguished, choice, excellent [DIVYĀVAD. 50,15]. [JĀTAKAM. 4]. [MAHĀVY. 245,1262]. — With *atipra* III. 6. — With *abhipra* III. 5. — With *abhivi* III. to convert by instruction [JĀTAKAM. 31,42].
+**PWKVN-1d)** **1.** *nī* III. 3. — Mit *samanu = anu* 3〉 [JĀTAKAM. 28]. — Mit *vyava* 5. — Mit *samava* 5. — Mit *samudā* zusammenbringen, sammeln [DIVYĀVAD. 242,10]. zu Stande bringen, vollbringen [JĀTAKAM. 2]. — Mit *upa* III. 5. als Beispiel anführen [JĀTAKAM. 28]. — Mit *pi = api* einschütten [ĀPAST. GṚHY. 14,11]. — Mit *pra* III. *praṇīta* ausgezeichnet, köstlich, vorzüglich [DIVYĀVAD. 50,15]. [JĀTAKAM. 4]. [MAHĀVY. 245,1262]. — Mit *atipra* III. 6. — Mit *abhipra* III. 5. — Mit *abhivi* III. durch Unterricht bekehren [JĀTAKAM. 31,42].
+- **EN:** **1.** *nī* III. 3. — With *samanu = anu* 3〉 [JĀTAKAM. 28]. — With *vyava* 5. — With *samava* 5. — With *samudā* to bring together, collect [DIVYĀVAD. 242,10]. to bring about, accomplish [JĀTAKAM. 2]. — With *upa* III. 5. to cite as an example [JĀTAKAM. 28]. — With *pi = api* to pour in [ĀPAST. GṚHY. 14,11]. — With *pra* III. *praṇīta* distinguished, choice, excellent [DIVYĀVAD. 50,15]. [JĀTAKAM. 4]. [MAHĀVY. 245,1262]. — With *atipra* III. 6. — With *abhipra* III. 5. — With *abhivi* III. to convert by instruction [JĀTAKAM. 31,42].
 
-**vyava (einzeln eingiessen))** **1.** *nī*¦ mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+**vyava (einzeln eingiessen))** **1.** *nī* mit *vyava* einzeln eingiessen [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
 
-- **RU:** **1.** *nī*¦ с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
+- **RU:** **1.** *nī* с *vyava* вливать по отдельности [ŚAT. BR. 5,1,2,19](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,2,19). [ĀPAST. ŚR. 11,6,3]. [12,27,8]. [13,8,2].
   <sub>attested</sub>
 
 **samava 1 (zusammenführen))** — Mit *samava* 1〉 zusammenführen, vereinigen.
@@ -6547,9 +6547,9 @@ Schol. *pariṇītam* как nom. act. брак. —
 - **RU:** — С *abhipra* также вести к (Acc.).
   <sub>attested</sub>
 
-**III.3)** **1.** *nī*¦ III. 3.
+**III.3)** **1.** *nī* III. 3.
 
-- **RU:** **1.** *nī*¦ III. 3.
+- **RU:** **1.** *nī* III. 3.
   <sub>attested</sub>
 
 **samanu = anu 3)** — Mit *samanu = anu* 3〉 [JĀTAKAM. 28].

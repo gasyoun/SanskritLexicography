@@ -3,15 +3,15 @@
 `ban_d~~h1_00_pwg00`
 
 
-*bandh*¦
+*bandh*
 
-- **RU:** *bandh*¦
+- **RU:** *bandh*
   <sub>attested</sub>
 
-**T56-1)** *bandh*¦
+**T56-1)** *bandh*
  1) *vāgbaddha* in der Rede gebunden so v. a. schweigend, Nichts sprechend
 [KATHĀS. 124,159](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,159); vgl. *vāgyata* .
-- **EN:** *bandh*¦
+- **EN:** *bandh*
  1) *vāgbaddha* "bound in speech" thus v. a. "silent, saying nothing"
 [KATHĀS. 124,159](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,159); vgl. *vāgyata* .
 

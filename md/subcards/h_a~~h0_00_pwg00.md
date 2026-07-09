@@ -3,16 +3,16 @@
 `h_a~~h0_00_pwg00`
 
 
-**1)** 1. *hā*¦, *jihīte*
+**1)** 1. *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*
 
-- **RU:** 1. *hā*¦, *jihīte*
+- **RU:** 1. *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*
-- **EN:** *hā*¦, *jihīte*
+- **EN:** *hā*, *jihīte*
 [DHĀTUP. 25,7](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25) (*gatau*).
 [P. 7,4,76.](https://ashtadhyayi.com/sutraani/7/4/76) [6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190)
 [VOP. 10,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,4) [12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12) *jihate*

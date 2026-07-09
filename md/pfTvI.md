@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 `pf_tv_i`
 
 
-**1 (PWG))** *pṛthvī*¦ s. u. *pṛthu* .
+**1 (PWG))** *pṛthvī* s. u. *pṛthu* .
 
-- **RU:** *pṛthvī*¦ см. s. u. *pṛthu* .
+- **RU:** *pṛthvī* см. s. u. *pṛthu* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *pṛthvī*¦ s. u. *pṛthu*.
+**1 (PW))** *pṛthvī* s. u. *pṛthu*.
 
-- **RU:** *pṛthvī*¦ s. u. *pṛthu*.
+- **RU:** *pṛthvī* s. u. *pṛthu*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *pṛthvī* [Ved]: „surface plane (entre deux angles)“. Caland 1928, p. 112

@@ -3,7 +3,7 @@
 `j_y_a~~h2_00_pwg00`
 
 
-**1)** *jñā*¦, *jña = jānīhi*
+**1)** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* so v. a. der Fürst weiss, was er jetzt zu thun hat,
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* ich weiss, ich erinnere mich, dass
@@ -16,7 +16,7 @@
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.
 [RĀJA-TAR. 5,481.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,481) *yadyaśakyamiti jñātvā* für unmöglich haltend
 
-- **RU:** *jñā*¦, *jña = jānīhi*
+- **RU:** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* так v. a. государь знает, что ему теперь надлежит делать,
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* я знаю, я помню, что
@@ -28,7 +28,7 @@
 [2858.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2858) *svajanaiḥ svātmavajjanturjñāyate guṇavānparaiḥ*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.
 [RĀJA-TAR. 5,481.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,481) *yadyaśakyamiti jñātvā* считающий невозможным
-- **EN:** *jñā*¦, *jña = jānīhi*
+- **EN:** *jñā*, *jña = jānīhi*
 [BHĀG. P. 10,89,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,46)
  1) to know, *iti samyaṅmayā jñātaṃ prabhurjānātyataḥ param* so v. a. "the prince knows what he now has to do",
 [KATHĀS. 103,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,81) *jāne mahāṭavīṃ kāṃcitpraviṣṭā nikhilā vayam* "I know, I remember that"

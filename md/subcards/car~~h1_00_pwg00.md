@@ -3,14 +3,14 @@
 `car~~h1_00_pwg00`
 
 
-**3)** *car*¦
+**3)** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
 
-- **RU:** *car*¦
+- **RU:** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
-- **EN:** *car*¦
+- **EN:** *car*
  3) *(yaḥ) mithyā carati mitrārthe*
 [Spr. 5356.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5356)
 — a) *patnīsaṃyājāvabhṛthyaiścaritvā* so v. a. "performing these"

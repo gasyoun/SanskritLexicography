@@ -7,14 +7,14 @@ _PWG article — 5 sub-card(s), 20 sense(s) · RU 20/20 · EN 0/20_
 `vAsA`
 
 
-**1)** *vasa*¦ nom. act. von 5. *vas* in *durvasa* .
+**1)** *vasa* nom. act. von 5. *vas* in *durvasa* .
 
-- **RU:** *vasa*¦ nom. act. от 5. *vas* в *durvasa* .
+- **RU:** *vasa* nom. act. от 5. *vas* в *durvasa* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *vasa*¦ das Wohnen in *durvasa*.
+**1 (PW))** *vasa* das Wohnen in *durvasa*.
 
-- **RU:** *vasa*¦ пребывание, проживание в *durvasa*.
+- **RU:** *vasa* пребывание, проживание в *durvasa*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vása* [Śā , Ling] [√ vás a] the verbal base vas á nivāse I 1054: to stay, abide, live. Pāṇ 3.2.108
@@ -32,14 +32,14 @@ _PWG article — 5 sub-card(s), 20 sense(s) · RU 20/20 · EN 0/20_
 `vAsa`
 
 
-**1)** *vasa*¦ nom. act. von 5. *vas* in *durvasa* .
+**1)** *vasa* nom. act. von 5. *vas* in *durvasa* .
 
-- **RU:** *vasa*¦ nom. act. от 5. *vas* в *durvasa* .
+- **RU:** *vasa* nom. act. от 5. *vas* в *durvasa* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *vasa*¦ das Wohnen in *durvasa*.
+**1 (PW))** *vasa* das Wohnen in *durvasa*.
 
-- **RU:** *vasa*¦ пребывание, проживание в *durvasa*.
+- **RU:** *vasa* пребывание, проживание в *durvasa*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vása* [Śā , Ling] [√ vás a] the verbal base vas á nivāse I 1054: to stay, abide, live. Pāṇ 3.2.108
@@ -57,14 +57,14 @@ _PWG article — 5 sub-card(s), 20 sense(s) · RU 20/20 · EN 0/20_
 `vaSA`
 
 
-**1)** *vasa*¦ nom. act. von 5. *vas* in *durvasa* .
+**1)** *vasa* nom. act. von 5. *vas* in *durvasa* .
 
-- **RU:** *vasa*¦ nom. act. от 5. *vas* в *durvasa* .
+- **RU:** *vasa* nom. act. от 5. *vas* в *durvasa* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *vasa*¦ das Wohnen in *durvasa*.
+**1 (PW))** *vasa* das Wohnen in *durvasa*.
 
-- **RU:** *vasa*¦ пребывание, проживание в *durvasa*.
+- **RU:** *vasa* пребывание, проживание в *durvasa*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vása* [Śā , Ling] [√ vás a] the verbal base vas á nivāse I 1054: to stay, abide, live. Pāṇ 3.2.108
@@ -82,14 +82,14 @@ _PWG article — 5 sub-card(s), 20 sense(s) · RU 20/20 · EN 0/20_
 `vaSa`
 
 
-**1)** *vasa*¦ nom. act. von 5. *vas* in *durvasa* .
+**1)** *vasa* nom. act. von 5. *vas* in *durvasa* .
 
-- **RU:** *vasa*¦ nom. act. от 5. *vas* в *durvasa* .
+- **RU:** *vasa* nom. act. от 5. *vas* в *durvasa* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *vasa*¦ das Wohnen in *durvasa*.
+**1 (PW))** *vasa* das Wohnen in *durvasa*.
 
-- **RU:** *vasa*¦ пребывание, проживание в *durvasa*.
+- **RU:** *vasa* пребывание, проживание в *durvasa*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vása* [Śā , Ling] [√ vás a] the verbal base vas á nivāse I 1054: to stay, abide, live. Pāṇ 3.2.108
@@ -107,14 +107,14 @@ _PWG article — 5 sub-card(s), 20 sense(s) · RU 20/20 · EN 0/20_
 `vasA`
 
 
-**1)** *vasa*¦ nom. act. von 5. *vas* in *durvasa* .
+**1)** *vasa* nom. act. von 5. *vas* in *durvasa* .
 
-- **RU:** *vasa*¦ nom. act. от 5. *vas* в *durvasa* .
+- **RU:** *vasa* nom. act. от 5. *vas* в *durvasa* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *vasa*¦ das Wohnen in *durvasa*.
+**1 (PW))** *vasa* das Wohnen in *durvasa*.
 
-- **RU:** *vasa*¦ пребывание, проживание в *durvasa*.
+- **RU:** *vasa* пребывание, проживание в *durvasa*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vása* [Śā , Ling] [√ vás a] the verbal base vas á nivāse I 1054: to stay, abide, live. Pāṇ 3.2.108

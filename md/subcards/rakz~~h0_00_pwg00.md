@@ -3,7 +3,7 @@
 `rakz~~h0_00_pwg00`
 
 
-**1)** *rakṣ*¦, *rakṣati* (*pālane*)
+**1)** *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (in der späteren Sprache), *rakṣiṣyati*; in der älteren Sprache, desgleichen in der späteren, aber hier nur aus metrischen Rücksichten, auch med.; partic. *rakṣita*; bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*
@@ -140,7 +140,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 
 * buddha˚, mahā˚, maitreya˚* .
 
-- **RU:** *rakṣ*¦, *rakṣati* (*pālane*)
+- **RU:** *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (в более позднем языке), *rakṣiṣyati*; в более раннем языке, равно как и в более позднем, но здесь лишь из метрических соображений, также med.; partic. *rakṣita*; охранять, беречь, защищать, стеречь, блюсти, соблюдать, сохранять, спасать, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*
@@ -276,7 +276,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [Spr. 4692.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4692) Vgl. *devarakṣita, *
 
 * buddha˚, mahā˚, maitreya˚* .
-- **EN:** 1. *rakṣ*¦, *rakṣati* (*pālane*)
+- **EN:** 1. *rakṣ*, *rakṣati* (*pālane*)
 [DHĀTUP. 17,6.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=17) *rarakṣa, rakṣiṣat, arākṣīt, arakṣīt* (in the later language), *rakṣiṣyati*; in the older language, and likewise in the later, though there only for metrical reasons, also med.; partic. *rakṣita*; to guard, preserve, protect, watch, tend, take heed, keep, save, servare: *sa no rakṣiṣadduritāt*
 [ṚV. 7,12,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.02) [15,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.03) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.012.html#rv07.012.13) *nākaṃ rakṣethe dyubhiraktubhirhitam*
 [1,34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.08) [41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.041.html#rv01.041.01) *vratā rakṣante amṛtāḥ sahobhiḥ*

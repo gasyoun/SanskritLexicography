@@ -3,10 +3,10 @@
 `dah~~h0_zz_pw`
 
 
-**1)** **1.** √*dah*¦
+**1)** **1.** √*dah*
 — 1〉 *dahati* (episch auch Med.)
 
-- **RU:** **1.** √*dah*¦
+- **RU:** **1.** √*dah*
 — 1〉 *dahati* (в эпосе также Med.)
   <sub>attested</sub>
 
@@ -331,11 +331,11 @@
 — Caus. verbrennen lassen.
 — Mit *vyatisam* durcheinander —, in Bausch und Bogen verbrennen.
 — Mit *anusam* der Länge nach zusammenbrennen.
-**2.** *˚dah*¦ _Adj._ brennend.
+**2.** *˚dah* _Adj._ brennend.
 
 - **RU:** — c) изнывать, томиться горем.
  — Caus. давать сжечь, велеть сжечь.
  — С *vyatisam* сжигать вперемешку, целиком, огулом.
  — С *anusam* сгорать вдоль, по длине.
-** 2. ** *˚dah* ¦ _Adj._ горящий.
+** 2. ** *˚dah* _Adj._ горящий.
   <sub>attested</sub>

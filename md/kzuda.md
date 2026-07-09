@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 `kzuDA`
 
 
-**1)** *kṣuda*¦ (von *kṣud*) _m._ Mehl
+**1)** *kṣuda* (von *kṣud*) _m._ Mehl
 [ŚKDR.]
 
-- **RU:** *kṣuda*¦ (от *kṣud*) _m._ мука
+- **RU:** *kṣuda* (от *kṣud*) _m._ мука
 [ŚKDR.]
   <sub>lexicographic</sub>
 
-**PW)** **kṣuda*¦ _m._ Mehl.
+**PW)** **kṣuda* _m._ Mehl.
 
-- **RU:** **kṣuda*¦ _m._ мука.
+- **RU:** **kṣuda* _m._ мука.
   <sub>lexicographic</sub>

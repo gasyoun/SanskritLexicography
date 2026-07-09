@@ -3,9 +3,9 @@
 `n_ar_i`
 
 
-**1)** *nārī*¦ s. u. *nāra* .
+**1)** *nārī* s. u. *nāra* .
 
-- **RU:** *nārī*¦ см. s. u. *nāra* .
+- **RU:** *nārī* см. s. u. *nāra* .
   <sub>lexicographic</sub>
 
 **NWS-1)** [NWS: Graßmann 1873 (1996) : 725] *nā́rī* [Ved , unsp] Subst f Weib, Eheweib

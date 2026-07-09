@@ -3,7 +3,7 @@
 `m_a~~h0_00_pwg00`
 
 
-**intro)** *mā*¦ _adv._ und conj. nicht, zumeist in verbietenden Sätzen, aber auch bei Wünschen und Voraussetzungen (s. u. 2.); damit nicht,
+**intro)** *mā* _adv._ und conj. nicht, zumeist in verbietenden Sätzen, aber auch bei Wünschen und Voraussetzungen (s. u. 2.); damit nicht,
 [NIR. 1,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,5) gaṇa *svarādi* zu [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37)
 [AK. 3,5,11.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,11)
 [H. 1539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1539)
@@ -11,7 +11,7 @@
 [MED. avy. 49](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,49) (*vāraṇe vikalpe ca*) . Ein folgendes *cha* wird nach *mā* verdoppelt (*mā cchidat*)
 [P. 6,1,74.](https://ashtadhyayi.com/sutraani/6/1/74)
 
-- **RU:** *mā*¦ _adv._ и conj. не, преимущественно в запретительных предложениях, но также при пожеланиях и условиях (s. u. 2.); чтобы не,
+- **RU:** *mā* _adv._ и conj. не, преимущественно в запретительных предложениях, но также при пожеланиях и условиях (s. u. 2.); чтобы не,
 [NIR. 1,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,5) gaṇa *svarādi* к [P. 1,1,37.](https://ashtadhyayi.com/sutraani/1/1/37)
 [AK. 3,5,11.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,5,11)
 [H. 1539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1539)

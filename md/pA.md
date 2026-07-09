@@ -7,7 +7,7 @@ _PWG article — 34 sub-card(s), 185 sense(s) · RU 153/185 · EN 151/185_
 `p_a~~h0_00_pwg00`
 
 
-**conjugation)** *pā*¦ I. *pāti, pāhi, peyās* 3. sg. (
+**conjugation)** *pā* I. *pāti, pāhi, peyās* 3. sg. (
 [ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau* . Diese Formen nur in der älteren Sprache. II. *pibati* (in den späteren Schriften meist *pivati* geschrieben)
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) auch med. Vereinzelt finden. sich Formen wie *pipatu*
@@ -26,7 +26,7 @@ _PWG article — 34 sub-card(s), 185 sense(s) · RU 153/185 · EN 151/185_
 [P. 3,4,22](https://ashtadhyayi.com/sutraani/3/4/22), Sch.;
 pass. *pīyate* (
 [P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *apāṣi, pape*; partic. *pīta* .
-- **EN:** *pā*¦ I. *pāti, pāhi, peyās* 3. sg. (
+- **EN:** *pā* I. *pāti, pāhi, peyās* 3. sg. (
 [ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau* . These forms only in the older language. II. *pibati* (in later writings mostly written *pivati*)
 [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78)
 [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) also med. Isolated forms are found such as *pipatu*
@@ -186,9 +186,9 @@ pass. *pīyate* (
 [MED. t. 34.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,34)
   <sub>attested</sub>
 
-**1)** 1. *pā*¦ I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau* . Diese Formen nur in der älteren Sprache. II. *pibati* (in den späteren Schriften meist *pivati* geschrieben) [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78) [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) auch med. Vereinzelt finden. sich Formen wie *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64](https://ashtadhyayi.com/sutraani/6/4/64), Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.037.html#rv06.037.02) [10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01)), *papivaṃs* ([P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.07)); aor. *apāt* [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 8,25](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,25); fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67) [VOP. 8,85](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85); *pītvā, pītvī*, mit praepp. *˚pāya* nach [P. 6,4,69](https://ashtadhyayi.com/sutraani/6/4/69) und [VOP. 26,212](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212), zu belegen nur *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22](https://ashtadhyayi.com/sutraani/3/4/22), Sch.; pass. *pīyate* ([P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *apāṣi, pape*; partic. *pīta* . trinken [DHĀTUP. 22,27.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) mit acc. oder partitivem gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.044.html#rv01.044.14) *madhvaḥ pibanti gauryaḥ* [84,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.10) *(avatam) viśve papire svardṛśaḥ* [2,24,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.024.html#rv02.024.04) *pāhi naḥ sutam* [3,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.040.html#rv03.040.06) [4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) [7,98,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.098.html#rv07.098.03) *na somo apratā pape* (pass.) [8,32,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.032.html#rv08.032.16) [2,11,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.10) [19,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.01) [AV. 5,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.05) [VS. 4,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,11) [21,60.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,60) [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,24) [1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) *pātramapāyi* [ṚV. 6,44,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.16) — *na vāryañjalinā pibet* [M. 4,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,63) [6,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,46) *pibantaṃ caiva vatsakam* [11,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,114) *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2534) [3,17253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17253) [R. 1,44,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,36) *papau* [RAGH. 2,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,69) *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,36) [KATHĀS. 45,230.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,230) *apāt* [BHAṬṬ. 15,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,6) *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.689) [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *peyās* [BHAṬṬ. 19,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,27) *pātum* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [ŚĀK. 84.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?84) *pītvāpaḥ* [M. 5,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,145) *pibate* [MBH. 5,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.268) [HARIV. 11332.](https://sanskrit-lexicon-scans.github.io/hariv?11332) [14808.](https://sanskrit-lexicon-scans.github.io/hariv?14808) *pibamānā* [MBH. 4,403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.403) *pibasva* [3,17259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17259) [4,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.454) [14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) [1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1606) *pāsyāmahe* [HARIV. 8002.](https://sanskrit-lexicon-scans.github.io/hariv?8002) *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,34) [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) [MĀRK. P. 54,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,30) [HIT. Pr. 28.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,28) *pape* impers. [BHAṬṬ. 14,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,92) *rajaḥ* Staub einschlucken [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *stanaṃ papau* [MĀRK. P. 17,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,7) *adharam* [ŚĀK. 22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?22) [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *pibanyaśo mūrtamiva* einsaugen [RAGH. 7,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,60) *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,54) *cakṣuṣā, locanaiḥ* u. s. w. mit den Augen sich laben an [R. GORR. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,5) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) [73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,73) [3,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,17) [KATHĀS. 10,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,211) [49,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,213) [BHAṬṬ. 8,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,49) [BHĀG. P. 9,24,64.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,64) *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* mit den Ohren sich laben an [1,16,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,9) *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* austrinken so v. a. fortnehmen [PAÑCAT. III,233.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,233) *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,20) trinken so v. a. geistige Getränke trinken [MÜLLER, SL. 83.] *pīta*
+**1)** 1. *pā* I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau* . Diese Formen nur in der älteren Sprache. II. *pibati* (in den späteren Schriften meist *pivati* geschrieben) [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78) [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) auch med. Vereinzelt finden. sich Formen wie *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64](https://ashtadhyayi.com/sutraani/6/4/64), Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.037.html#rv06.037.02) [10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01)), *papivaṃs* ([P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.07)); aor. *apāt* [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 8,25](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,25); fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67) [VOP. 8,85](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85); *pītvā, pītvī*, mit praepp. *˚pāya* nach [P. 6,4,69](https://ashtadhyayi.com/sutraani/6/4/69) und [VOP. 26,212](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212), zu belegen nur *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22](https://ashtadhyayi.com/sutraani/3/4/22), Sch.; pass. *pīyate* ([P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *apāṣi, pape*; partic. *pīta* . trinken [DHĀTUP. 22,27.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) mit acc. oder partitivem gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.044.html#rv01.044.14) *madhvaḥ pibanti gauryaḥ* [84,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.10) *(avatam) viśve papire svardṛśaḥ* [2,24,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.024.html#rv02.024.04) *pāhi naḥ sutam* [3,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.040.html#rv03.040.06) [4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) [7,98,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.098.html#rv07.098.03) *na somo apratā pape* (pass.) [8,32,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.032.html#rv08.032.16) [2,11,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.10) [19,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.01) [AV. 5,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.05) [VS. 4,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,11) [21,60.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,60) [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,24) [1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) *pātramapāyi* [ṚV. 6,44,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.16) — *na vāryañjalinā pibet* [M. 4,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,63) [6,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,46) *pibantaṃ caiva vatsakam* [11,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,114) *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2534) [3,17253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17253) [R. 1,44,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,36) *papau* [RAGH. 2,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,69) *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,36) [KATHĀS. 45,230.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,230) *apāt* [BHAṬṬ. 15,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,6) *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.689) [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *peyās* [BHAṬṬ. 19,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,27) *pātum* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [ŚĀK. 84.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?84) *pītvāpaḥ* [M. 5,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,145) *pibate* [MBH. 5,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.268) [HARIV. 11332.](https://sanskrit-lexicon-scans.github.io/hariv?11332) [14808.](https://sanskrit-lexicon-scans.github.io/hariv?14808) *pibamānā* [MBH. 4,403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.403) *pibasva* [3,17259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17259) [4,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.454) [14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) [1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1606) *pāsyāmahe* [HARIV. 8002.](https://sanskrit-lexicon-scans.github.io/hariv?8002) *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,34) [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) [MĀRK. P. 54,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,30) [HIT. Pr. 28.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,28) *pape* impers. [BHAṬṬ. 14,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,92) *rajaḥ* Staub einschlucken [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *stanaṃ papau* [MĀRK. P. 17,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,7) *adharam* [ŚĀK. 22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?22) [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *pibanyaśo mūrtamiva* einsaugen [RAGH. 7,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,60) *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,54) *cakṣuṣā, locanaiḥ* u. s. w. mit den Augen sich laben an [R. GORR. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,5) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) [73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,73) [3,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,17) [KATHĀS. 10,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,211) [49,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,213) [BHAṬṬ. 8,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,49) [BHĀG. P. 9,24,64.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,64) *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* mit den Ohren sich laben an [1,16,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,9) *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* austrinken so v. a. fortnehmen [PAÑCAT. III,233.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,233) *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,20) trinken so v. a. geistige Getränke trinken [MÜLLER, SL. 83.] *pīta*
 
-- **RU:** *pā*¦ I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau*. Эти формы только в более древнем языке. II. *pibati* (в позднейших сочинениях чаще пишется *pivati*) [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78) [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) также med.. Изредка встречаются формы вроде *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64](https://ashtadhyayi.com/sutraani/6/4/64), Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.037.html#rv06.037.02) [10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01)), *papivaṃs* ([P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.07)); aor. *apāt* [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 8,25](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,25); fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67) [VOP. 8,85](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85); *pītvā, pītvī*, с praepp. *˚pāya* после [P. 6,4,69](https://ashtadhyayi.com/sutraani/6/4/69) и [VOP. 26,212](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212), засвидетельствовано лишь *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22](https://ashtadhyayi.com/sutraani/3/4/22), Sch.; pass. *pīyate* ([P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *apāṣi, pape*; partic. *pīta*. пить [DHĀTUP. 22,27.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) с acc. или партитивным gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.044.html#rv01.044.14) *madhvaḥ pibanti gauryaḥ* [84,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.10) *(avatam) viśve papire svardṛśaḥ* [2,24,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.024.html#rv02.024.04) *pāhi naḥ sutam* [3,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.040.html#rv03.040.06) [4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) [7,98,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.098.html#rv07.098.03) *na somo apratā pape* (pass.) [8,32,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.032.html#rv08.032.16) [2,11,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.10) [19,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.01) [AV. 5,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.05) [VS. 4,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,11) [21,60.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,60) [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,24) [1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) *pātramapāyi* [ṚV. 6,44,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.16) — *na vāryañjalinā pibet* [M. 4,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,63) [6,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,46) *pibantaṃ caiva vatsakam* [11,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,114) *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2534) [3,17253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17253) [R. 1,44,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,36) *papau* [RAGH. 2,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,69) *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,36) [KATHĀS. 45,230.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,230) *apāt* [BHAṬṬ. 15,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,6) *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.689) [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *peyās* [BHAṬṬ. 19,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,27) *pātum* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [ŚĀK. 84.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?84) *pītvāpaḥ* [M. 5,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,145) *pibate* [MBH. 5,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.268) [HARIV. 11332.](https://sanskrit-lexicon-scans.github.io/hariv?11332) [14808.](https://sanskrit-lexicon-scans.github.io/hariv?14808) *pibamānā* [MBH. 4,403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.403) *pibasva* [3,17259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17259) [4,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.454) [14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) [1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1606) *pāsyāmahe* [HARIV. 8002.](https://sanskrit-lexicon-scans.github.io/hariv?8002) *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,34) [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) [MĀRK. P. 54,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,30) [HIT. Pr. 28.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,28) *pape* impers. [BHAṬṬ. 14,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,92) *rajaḥ* глотать пыль [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *stanaṃ papau* [MĀRK. P. 17,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,7) *adharam* [ŚĀK. 22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?22) [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *pibanyaśo mūrtamiva* всасывать [RAGH. 7,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,60) *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,54) *cakṣuṣā, locanaiḥ* u. s. w. наслаждаться глазами, упиваться видом [R. GORR. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,5) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) [73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,73) [3,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,17) [KATHĀS. 10,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,211) [49,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,213) [BHAṬṬ. 8,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,49) [BHĀG. P. 9,24,64.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,64) *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* наслаждаться слухом, упиваться (слушая) [1,16,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,9) *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* выпивать до дна, а также v. a. уносить, отнимать [PAÑCAT. III,233.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,233) *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,20) пить, так v. a. пить хмельные напитки [MÜLLER, SL. 83.] *pīta*
+- **RU:** *pā* I. *pāti, pāhi, peyās* 3. sg. ([ṚV. 9,109,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.109.html#rv09.109.02)), *apām* (vgl. aor.), *apus, pās, pātam* u. s. w.; partic. *pāntam, pāntau*. Эти формы только в более древнем языке. II. *pibati* (в позднейших сочинениях чаще пишется *pivati*) [P. 7,3,78.](https://ashtadhyayi.com/sutraani/7/3/78) [VOP. 8,70.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70) также med.. Изредка встречаются формы вроде *pipatu* [KĀṬH. 25,6.] *pipate* (s. u. *anupra*). — perf. *papau, papātha (papitha* [P. 6,4,64](https://ashtadhyayi.com/sutraani/6/4/64), Sch.), *papathus, papus, papīyāt* ([ṚV. 6,37,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.037.html#rv06.037.02) [10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01)), *papivaṃs* ([P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), Sch.), *papuṣas; papire, papāna* ([ṚV. 6,44,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.07)); aor. *apāt* [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 8,25](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,25); fut. *pāsyati, ˚te*; prec. *peyāt* [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67) [VOP. 8,85](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85); *pītvā, pītvī*, с praepp. *˚pāya* после [P. 6,4,69](https://ashtadhyayi.com/sutraani/6/4/69) и [VOP. 26,212](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212), засвидетельствовано лишь *˚pīya; pātum, pātave, pibadhyai*; absol. *pāyam* [P. 3,4,22](https://ashtadhyayi.com/sutraani/3/4/22), Sch.; pass. *pīyate* ([P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *apāṣi, pape*; partic. *pīta*. пить [DHĀTUP. 22,27.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) с acc. или партитивным gen.: *pibatu somaṃ varuṇaḥ* [ṚV. 1,44,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.044.html#rv01.044.14) *madhvaḥ pibanti gauryaḥ* [84,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.084.html#rv01.084.10) *(avatam) viśve papire svardṛśaḥ* [2,24,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.024.html#rv02.024.04) *pāhi naḥ sutam* [3,40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.040.html#rv03.040.06) [4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) [7,98,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.098.html#rv07.098.03) *na somo apratā pape* (pass.) [8,32,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.032.html#rv08.032.16) [2,11,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.10) [19,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.01) [AV. 5,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.05) [VS. 4,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,11) [21,60.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,60) [AIT. BR. 3,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,30) *ya etāsāṃ nadīnāṃ pibanti* [ŚAT. BR. 9,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,1,24) [1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) *pātramapāyi* [ṚV. 6,44,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.16) — *na vāryañjalinā pibet* [M. 4,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,63) [6,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,46) *pibantaṃ caiva vatsakam* [11,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,114) *yadi vakṣo hi te bhittvā na pibecchoṇitaṃ raṇe* [MBH. 2,2534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2534) [3,17253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17253) [R. 1,44,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,36) *papau* [RAGH. 2,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,69) *madhu dvirephaḥ — papau* [KUMĀRAS. 3,36.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,36) [KATHĀS. 45,230.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,230) *apāt* [BHAṬṬ. 15,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,6) *pāsyanti* [HIḌ. 1,52.] [MBH. 4,689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.689) [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *peyās* [BHAṬṬ. 19,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,27) *pātum* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [ŚĀK. 84.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?84) *pītvāpaḥ* [M. 5,145.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,145) *pibate* [MBH. 5,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.268) [HARIV. 11332.](https://sanskrit-lexicon-scans.github.io/hariv?11332) [14808.](https://sanskrit-lexicon-scans.github.io/hariv?14808) *pibamānā* [MBH. 4,403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.403) *pibasva* [3,17259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17259) [4,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.454) [14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) [1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1606) *pāsyāmahe* [HARIV. 8002.](https://sanskrit-lexicon-scans.github.io/hariv?8002) *tīrthodakamiṃdaṃ tāvatpīyatām* [R. 1,9,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,34) [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43) [MĀRK. P. 54,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,30) [HIT. Pr. 28.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,28) *pape* impers. [BHAṬṬ. 14,92.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,92) *rajaḥ* глотать пыль [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *stanaṃ papau* [MĀRK. P. 17,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,7) *adharam* [ŚĀK. 22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?22) [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *pibanyaśo mūrtamiva* всасывать [RAGH. 7,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,60) *papau — āśugaḥ — manuṣyaśoṇitam* [3,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,54) *cakṣuṣā, locanaiḥ* u. s. w. наслаждаться глазами, упиваться видом [R. GORR. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,5) [MEGH. 16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) [RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) [73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,73) [3,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,17) [KATHĀS. 10,211.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,211) [49,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,213) [BHAṬṬ. 8,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,49) [BHĀG. P. 9,24,64.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,64) *aho nṛloke * * pīyeta harilīlāmṛtaṃ vacaḥ* наслаждаться слухом, упиваться (слушая) [1,16,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,9) *carāścareyuḥ paritaḥ pibanto jagatāṃ matam* (vgl. u. *samā*) [KĀM. NĪTIS. 12,26.] *kālaḥ pibati tatphalam* выпивать до дна, а также v. a. уносить, отнимать [PAÑCAT. III,233.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,233) *svatejasāpibattīvramātmaprasvāpanaṃ tamaḥ* [BHĀG. P. 3,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,20) пить, так v. a. пить хмельные напитки [MÜLLER, SL. 83.] *pīta*
   <sub>attested</sub>
 
 ## pā
@@ -684,18 +684,18 @@ sucked dry
 `p_a~~h1_00_pwg00`
 
 
-**1)** 2. *pā*¦ (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
+**1)** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) am Ende eines comp. trinkend: *amṛta˚*
 [MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
 [10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) Vgl. *agre˚, indrapātama* (mit passiver Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. und auch 1. *pa* .
 
-- **RU:** 2. *pā*¦ (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
+- **RU:** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) в конце comp. пьющий: *amṛta˚*
 [MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
 [10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) Vgl. *agre˚, indrapātama* (с пассивным Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. и также 1. *pa* .
-- **EN:** 2. *pā*¦ (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
+- **EN:** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) at the end of a comp. drinking: *amṛta˚*
 [MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
@@ -707,14 +707,14 @@ sucked dry
 `p_a~~h2_00_pwg00`
 
 
-**3.intro)** *pā*¦, *pāti*
+**3.intro)** *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* und *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
-- **EN:** *pā*¦, *pāti*
+- **EN:** *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* and *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
 
-**1)** 3. *pā*¦, *pāti*
+**1)** 3. *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* und *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
  1) bewachen, bewahren, schützen, schirmen, hüten vor (abl.): *māsaśca pāthaḥ śaradaśca pūrvīḥ*
@@ -756,7 +756,7 @@ sucked dry
 [TRIK. 3,3,169.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,169)
 [MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32)
 
-- **RU:** 3. *pā*¦, *pāti*
+- **RU:** 3. *pā*, *pāti*
 [DHĀTUP. 24,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) *pīpāya, pāsati* и *(pari) pāsatas* ved.; aor. *apāsīt*; prec. *pāyāt*
 [P. 6,4,68](https://ashtadhyayi.com/sutraani/6/4/68), Sch.
  1) стеречь, хранить, защищать, охранять, оберегать от (abl.): *māsaśca pāthaḥ śaradaśca pūrvīḥ*
@@ -995,12 +995,12 @@ sucked dry
 `p_a~~h3_00_pwg00`
 
 
-**1)** 4. *pā*¦ (= 3. *pā*) _adj._ (*pā* [!] *pātari*
+**1)** 4. *pā* (= 3. *pā*) _adj._ (*pā* [!] *pātari*
 [MED.] p. 1) am Ende eines comp. bewahrend, behütend, schirmend; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. und auch 2. *pa* .
 
-- **RU:** 4. *pā*¦ (= 3. *pā*) _adj._ (*pā* [!] *pātari*
+- **RU:** 4. *pā* (= 3. *pā*) _adj._ (*pā* [!] *pātari*
 [MED.] p. 1) в конце comp. хранящий, оберегающий, охраняющий; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. и также 2. *pa* .
-- **EN:** 4. *pā*¦ (= 3. *pā*) _adj._ (*pā* [!] *pātari*
+- **EN:** 4. *pā* (= 3. *pā*) _adj._ (*pā* [!] *pātari*
 [MED.] p. 1) at the end of a comp. guarding, keeping safe, sheltering; s. *apāna˚, āprīta˚, āyuṣpā, ṛta˚, kratu˚, go˚, cakṣuṣpā, chardiṣpā, tanū˚, tapuṣpā, nidhi˚, niṣikta˚, paraspā, prāṇa˚* u. s. w. and also 2. *pa* .
   <sub>attested</sub>
 
@@ -1009,16 +1009,16 @@ sucked dry
 `p_a~~h4_00_pwg00`
 
 
-**1)** 5. *pā*¦ *(pai), pāyati* ausdorren
+**1)** 5. *pā* *(pai), pāyati* ausdorren
 [DHĀTUP. 22,23.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *pāyati dhānyamātapena*
 [DURGAD.] bei [WEST.] — caus. *pāyayati*
 [P. 7,3,37](https://ashtadhyayi.com/sutraani/7/3/37), Sch.
 
-- **RU:** 5. *pā*¦ *(pai), pāyati* иссыхать, высыхать
+- **RU:** 5. *pā* *(pai), pāyati* иссыхать, высыхать
 [DHĀTUP. 22,23.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *pāyati dhānyamātapena*
 [DURGAD.] у [WEST.] — caus. *pāyayati*
 [P. 7,3,37](https://ashtadhyayi.com/sutraani/7/3/37), Sch.
-- **EN:** 5. *pā*¦ *(pai), pāyati* to dry out, parch
+- **EN:** 5. *pā* *(pai), pāyati* to dry out, parch
 [DHĀTUP. 22,23.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *pāyati dhānyamātapena*
 [DURGAD.] in [WEST.] — caus. *pāyayati*
 [P. 7,3,37](https://ashtadhyayi.com/sutraani/7/3/37), Sch.
@@ -1029,7 +1029,7 @@ sucked dry
 `p_a~~h5_00_pwg00`
 
 
-**1)** *pā*¦
+**1)** *pā*
 Z. 9, *pītvī* ved.
 Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. zu 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
@@ -1062,7 +1062,7 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 [KATHĀS. 86,115.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,115)
 — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta*.
 
-**Nachtrag_1_patch)** 1. *pā*¦
+**Nachtrag_1_patch)** 1. *pā*
 Z. 9, *pītvī* ved.
 Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. zu 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
@@ -1074,7 +1074,7 @@ Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved
 Z. 3 stelle die Worte mit pass. Bed.: in die zweite Zeile nach
 [2,488,21.]
 
-- **RU:** 1. *pā*¦
+- **RU:** 1. *pā*
 Z. 9, *pītvī* ved.
 Schol. к [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. к 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
@@ -1111,7 +1111,7 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h6_00_pwg00`
 
 
-**3)** *pā*¦
+**3)** *pā*
  1) hierher zieht BROCKHAUS mit Recht die bei uns u. *āp*
  2) stehende Stelle: *(saptaite manavaḥ) sve sve 'ntare sarvamidamutpādyāpuścarācaram*
 [M. 1,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) = *pālitavantaḥ*
@@ -1122,10 +1122,10 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 [M. 1,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) = *pālitavantaḥ*
 [KULL.]
 
-**Nachtrag_3_1)** 3. *pā*¦
+**Nachtrag_3_1)** 3. *pā*
  1) hierher zieht BROCKHAUS mit Recht die bei uns u. *āp*
 
-- **RU:** 3. *pā*¦
+- **RU:** 3. *pā*
  1) сюда BROCKHAUS справедливо относит приводимое у нас u. *āp*
   <sub>attested</sub>
 
@@ -1143,14 +1143,14 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h7_00_pwg00`
 
 
-**1)** 6. *pā*¦, *pipīte* nur in Verbindung mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen: *utpipānaḥ*
+**1)** 6. *pā*, *pipīte* nur in Verbindung mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen: *utpipānaḥ*
 [AV. 5,20,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.020.html#av05.020.07) [13,1,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.31) *utpipīte*
 [TS. 3,2,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,10,2)
 
-- **RU:** 6. *pā*¦, *pipīte* только в сочетании с *ud* восставать, бунтовать против, враждебно противостоять: *utpipānaḥ*
+- **RU:** 6. *pā*, *pipīte* только в сочетании с *ud* восставать, бунтовать против, враждебно противостоять: *utpipānaḥ*
 [AV. 5,20,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.020.html#av05.020.07) [13,1,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.31) *utpipīte*
 [TS. 3,2,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,10,2)
-- **EN:** 6. *pā*¦, *pipīte* only in combination with *ud* to rebel, rise up against, set oneself in hostile opposition to: *utpipānaḥ*
+- **EN:** 6. *pā*, *pipīte* only in combination with *ud* to rebel, rise up against, set oneself in hostile opposition to: *utpipānaḥ*
 [AV. 5,20,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.020.html#av05.020.07) [13,1,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.31) *utpipīte*
 [TS. 3,2,10,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,10,2)
   <sub>attested</sub>
@@ -1178,12 +1178,12 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h8_00_pwg00`
 
 
-**1)** 1. *pā*¦ mit *pra*, absolut. *˚pāya* und *˚pīya*
+**1)** 1. *pā* mit *pra*, absolut. *˚pāya* und *˚pīya*
 [VĀMANA 5,2,78.]
 
-- **RU:** 1. *pā*¦ с *pra*, absolut. *˚pāya* и *˚pīya*
+- **RU:** 1. *pā* с *pra*, absolut. *˚pāya* и *˚pīya*
 [VĀMANA 5,2,78.]
-- **EN:** 1. *pā*¦ with *pra*, absolut. *˚pāya* and *˚pīya*
+- **EN:** 1. *pā* with *pra*, absolut. *˚pāya* and *˚pīya*
 [VĀMANA 5,2,78.]
   <sub>attested</sub>
 
@@ -1192,10 +1192,10 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h9_00_pwg00`
 
 
-**cross-ref)** *pā*¦ mit *ud* (Nachträge), vgl. die unter 1. *pā* mit *ud* angeführte Stelle.
+**cross-ref)** *pā* mit *ud* (Nachträge), vgl. die unter 1. *pā* mit *ud* angeführte Stelle.
 
-- **RU:** *pā*¦ с *ud* (Nachträge), vgl. — место, приведённое под 1. *pā* с *ud*.
-- **EN:** *pā*¦ with *ud* (Addenda), vgl. the passage cited under 1. *pā* with *ud*.
+- **RU:** *pā* с *ud* (Nachträge), vgl. — место, приведённое под 1. *pā* с *ud*.
+- **EN:** *pā* with *ud* (Addenda), vgl. the passage cited under 1. *pā* with *ud*.
   <sub>attested</sub>
 
 ## pā
@@ -1203,20 +1203,20 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h0_zz_pw`
 
 
-**3.** √*pā*¦, *pāti*
+**3.** √*pā*, *pāti*
 
-- **RU:** **3.** √*pā*¦, *pāti*
-- **EN:** **3.** √*pā*¦, *pāti*
+- **RU:** **3.** √*pā*, *pāti*
+- **EN:** **3.** √*pā*, *pāti*
   <sub>attested</sub>
 
-**5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
+**5.** √*pā*, *pipīte* (3, Pl. *pipate*) mit *ud* sich auflehnen, aufbegehren gegen, sich feindlich entgegenstellen. Partic. *utpipāna*.
 
-- **RU:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
-- **EN:** **5.** √*pā*¦, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
+- **RU:** **5.** √*pā*, *pipīte* (3, Pl. *pipate*) с *ud* восставать, противиться, враждебно противостоять. Partic. *utpipāna*.
+- **EN:** **5.** √*pā*, *pipīte* (3, Pl. *pipate*) with *ud* to rebel, revolt against, oppose in a hostile manner. Partic. *utpipāna*.
   <sub>attested</sub>
 
-**1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
-- **EN:** **1.** *pā*¦, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
+**1)** **1.** *pā*, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass.
+- **EN:** **1.** *pā*, present stems: *pā, pip* (quite isolated) and *pib*; Act., more rarely Med.; Absol. *pītvā*, **˚pāya* and *˚pīya*; *pīyate* pass.
 
 **1)** — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 - **EN:** — 1〉 to drink, imbibe, sip; with Acc. or partitive Gen. (only in the older language) of the drink: to suck up blood (said of sword and arrow); to suck at ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), to swallow, draw in dust, smoke; to drink, and thus v. a. to drink spirituous liquors.
@@ -1575,10 +1575,10 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 - **EN:** — Caus. to cause to drink.
   <sub>attested</sub>
 
-**1)** **2.** *˚pā*¦ _Adj._ trinkend.
+**1)** **2.** *˚pā* _Adj._ trinkend.
 
-- **RU:** **2.** *˚pā*¦ _Adj._ пьющий.
-- **EN:** **2.** *˚pā*¦ _Adj._ drinking.
+- **RU:** **2.** *˚pā* _Adj._ пьющий.
+- **EN:** **2.** *˚pā* _Adj._ drinking.
   <sub>attested</sub>
 
 **1)** — 1〉 bewachen, bewahren, schützen, schirmen, hüten, — vor (Abl.) die Erde, das Land
@@ -1671,10 +1671,10 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 - **EN:** — With *pra* to guard, preserve from (Abl.).
   <sub>attested</sub>
 
-**1)** **4.** *˚pā*¦ _Adj._ bewachend, behütend, schirmend u. s. w.
+**1)** **4.** *˚pā* _Adj._ bewachend, behütend, schirmend u. s. w.
 
-- **RU:** **4.** *˚pā*¦ _Adj._ охраняющий, оберегающий, защищающий u. s. w.
-- **EN:** **4.** *˚pā*¦ _Adj._ watching, guarding, protecting u. s. w.
+- **RU:** **4.** *˚pā* _Adj._ охраняющий, оберегающий, защищающий u. s. w.
+- **EN:** **4.** *˚pā* _Adj._ watching, guarding, protecting u. s. w.
   <sub>attested</sub>
 
 **preverb-pari)** — Mit *anūd* herfallen über, sich stürzen auf (Acc.) Vgl. **1.** *pā* mit *anūd*
@@ -1686,26 +1686,26 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 - **EN:** — With *pratyud* to rebel against someone (Acc.).
   <sub>attested</sub>
 
-**1)** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
+**1)** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
 
-- **RU:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
-- **EN:** **6.** *√*pā*¦, *pāyati* (*śoṣaṇe*).
+- **RU:** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
+- **EN:** **6.** *√*pā*, *pāyati* (*śoṣaṇe*).
   <sub>lexicographic</sub>
 
-**1)** **1.** √*pā*¦ mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+**1)** **1.** √*pā* mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 
-- **RU:** **1.** √*pā*¦ с *nis* Caus. давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
-- **EN:** **1.** √*pā*¦ with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **RU:** **1.** √*pā* с *nis* Caus. давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **EN:** **1.** √*pā* with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
   <sub>attested</sub>
 
-**cross-ref)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
+**cross-ref)** **1.** √*pā* mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
-- **EN:** **1.** √*pā*¦ with *upa* Caus. also [ĀPAST. ŚR. 9,18,11].
+- **EN:** **1.** √*pā* with *upa* Caus. also [ĀPAST. ŚR. 9,18,11].
 — With *nis* line 2, read *niṣpīta*. — Caus. 5.
 
-**PW1_1)** **1.** *pā*¦, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
+**PW1_1)** **1.** *pā*, Präsensstämme: *pā, pip* (ganz vereinzelt) und *pib*; Act., seltener Med.; Absol. *pītvā*, **˚pāya* und *˚pīya*; *pīyate* pass. — 1〉 trinken, einsaugen, einschlürfen; mit Acc. oder partitivem Gen. (nur in der älteren Sprache) des Trankes: Blut einsaugen (vom Schwert und Pfeil gesagt); saugen an ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)) Staub, Rauch einschlucken, einziehen; trinken auch so v. a. geistige Getränke trinken.
 
-- **RU:** **1.** *pā*¦, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
+- **RU:** **1.** *pā*, основы настоящего времени: *pā, pip* (крайне редко) и *pib*; Act., реже Med.; Absol. *pītvā*, **˚pāya* и *˚pīya*; *pīyate* pass. — 1〉 пить, всасывать, поглощать; с Acc. или партитивным Gen. (только в более древнем языке) питья: кровь всасывать (говорится о мече и стреле); сосать ([252,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?252)), пыль, дым заглатывать, втягивать; пить, также v. a. пить хмельные напитки.
   <sub>attested</sub>
 
 **PW1_vi_caus)** — Caus. einschlürfen lassen.
@@ -1738,9 +1738,9 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 - **RU:** **1.** *pā* с *anūd*
   <sub>attested</sub>
 
-**PW_vi_main)** **1.** √*pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
+**PW_vi_main)** **1.** √*pā* mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11].
 
-- **RU:** **1.** √*pā*¦ с *upa* Caus. также [ĀPAST. ŚR. 9,18,11].
+- **RU:** **1.** √*pā* с *upa* Caus. также [ĀPAST. ŚR. 9,18,11].
   <sub>attested</sub>
 
 **PW_vi_note)** — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
@@ -1753,12 +1753,12 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h0_zz_sch`
 
 
-**addendum)** 1. pā¦ mit upa [Kaus.] auch [Āpast. Śr. 9,18,11.] — Mit nis Z. 2 lies niṣpīta. — [Kaus.] trinken lassen aus (Abl.), [Maitr. S. 2,3,5] (33,5. 6). {part=,seq=18457,type=,n=4}
-- **EN:** 1. pā¦ with upa [Kaus.] also [Āpast. Śr. 9,18,11.] — With nis line 2 read niṣpīta. — [Kaus.] to cause to drink from (Abl.), [Maitr. S. 2,3,5] (33,5. 6).
+**addendum)** 1. pā mit upa [Kaus.] auch [Āpast. Śr. 9,18,11.] — Mit nis Z. 2 lies niṣpīta. — [Kaus.] trinken lassen aus (Abl.), [Maitr. S. 2,3,5] (33,5. 6). {part=,seq=18457,type=,n=4}
+- **EN:** 1. pā with upa [Kaus.] also [Āpast. Śr. 9,18,11.] — With nis line 2 read niṣpīta. — [Kaus.] to cause to drink from (Abl.), [Maitr. S. 2,3,5] (33,5. 6).
 
-**mit-upa)** 1. pā¦ mit upa [Kaus.] auch [Āpast. Śr. 9,18,11.]
+**mit-upa)** 1. pā mit upa [Kaus.] auch [Āpast. Śr. 9,18,11.]
 
-- **RU:** 1. pā¦ с upa [Kaus.] также [Āpast. Śr. 9,18,11.]
+- **RU:** 1. pā с upa [Kaus.] также [Āpast. Śr. 9,18,11.]
   <sub>attested</sub>
 
 **mit-nis)** Mit nis Z. 2 lies niṣpīta.
@@ -1776,14 +1776,14 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 `p_a~~h0_zz_pwkvn`
 
 
-**1)** **1.** *pā*¦ mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+**1)** **1.** *pā* mit *nis* Caus. trinken lassen aus (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
 
-- **RU:** **1.** *pā*¦ с *nis* Caus. поить, давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
-- **EN:** **1.** *pā*¦ with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **RU:** **1.** *pā* с *nis* Caus. поить, давать пить из (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
+- **EN:** **1.** *pā* with *nis* Caus. to cause to drink from (Abl.) [MAITR. S. 2,3,5 (33,5. 6)].
   <sub>attested</sub>
 
-**cross-ref)** **1.** *pā*¦ mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11]. — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
+**cross-ref)** **1.** *pā* mit *upa* Caus. auch [ĀPAST. ŚR. 9,18,11]. — Mit *nis* Z. 2, lies *niṣpīta*. — Caus. 5.
 
-- **RU:** **1.** *pā*¦ с *upa* Caus. также [ĀPAST. ŚR. 9,18,11]. — С *nis* стр. 2, читай *niṣpīta*. — Caus. 5.
-- **EN:** **1.** *pā*¦ with *upa* Caus. also [ĀPAST. ŚR. 9,18,11]. — With *nis* line 2, read *niṣpīta*. — Caus. 5.
+- **RU:** **1.** *pā* с *upa* Caus. также [ĀPAST. ŚR. 9,18,11]. — С *nis* стр. 2, читай *niṣpīta*. — Caus. 5.
+- **EN:** **1.** *pā* with *upa* Caus. also [ĀPAST. ŚR. 9,18,11]. — With *nis* line 2, read *niṣpīta*. — Caus. 5.
   <sub>attested</sub>

@@ -3,7 +3,7 @@
 `_as~~h1_00_pwg00`
 
 
-**conj.)** 2. *ās*¦, *āste* (ved. und ep. auch *āsate*, ep. auch act.), *āsse*,
+**conj.)** 2. *ās*, *āste* (ved. und ep. auch *āsate*, ep. auch act.), *āsse*,
 3. pl. ep. *āsante*; 2. du. potent. ep. *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* und ep. *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (
@@ -13,7 +13,7 @@
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) und *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
 
-- **RU:** 2. *ās*¦, *āste* (ved. и эп. также *āsate*, эп. также act.), *āsse*,
+- **RU:** 2. *ās*, *āste* (ved. и эп. также *āsate*, эп. также act.), *āsse*,
 3. pl. эп. *āsante*; 2. du. potent. эп. *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* и эп. *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (
@@ -22,7 +22,7 @@
 [P. 7,2,83.](https://ashtadhyayi.com/sutraani/7/2/83)
 [VOP. 26,138](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,138)) и *āsant* (
 [R. 2,97,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,3) [4,10,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7)); *āsitum, āsitvā, āsita* 1.
-- **EN:** 2. *ās*¦, *āste* (ved. and epic also *āsate*, epic also act.), *āsse*,
+- **EN:** 2. *ās*, *āste* (ved. and epic also *āsate*, epic also act.), *āsse*,
 3. pl. epic *āsante*; 2. du. potent. epic *āsyetām* (!
 [R. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15)); imperat. *āssva, āsva* and epic *āsasva* (
 [MBH. 3,10036](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10036)), *ādhvam*; aor. 3. pl. *āsiṣata; āsiṣyate; āsāṃ cakre* (

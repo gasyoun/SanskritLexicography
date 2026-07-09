@@ -3,9 +3,9 @@
 `_sam~~h0_00_pwg00`
 
 
-**etym)** *śam*¦, *śamīṣva, śamīdhvam*
+**etym)** *śam*, *śamīṣva, śamīdhvam*
 [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) und die Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita* .
-- **EN:** *śam*¦, *śamīṣva, śamīdhvam* [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) and the Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita*.
+- **EN:** *śam*, *śamīṣva, śamīdhvam* [P. 7,3,95](https://ashtadhyayi.com/sutraani/7/3/95) and the Erkll. *śamyatu* (s. u. 2), *śaśame, śaśamate* 3. sg., *aśamiṣṭa, aśamiṣṭhāḥ*, partic. *śamita*.
 
 **1)** 1) sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 [ṚV. 6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *īje yajñebhiḥ śaśame śamībhiḥ*

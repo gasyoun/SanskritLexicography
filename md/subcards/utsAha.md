@@ -3,14 +3,14 @@
 `utsAha`
 
 
-**1)** *utsaha*¦ nom. act. von *sah* mit *ud* in *durutsaha* (s. d.)
+**1)** *utsaha* nom. act. von *sah* mit *ud* in *durutsaha* (s. d.)
 
-- **RU:** *utsaha*¦ nom. act. от *sah* с *ud* в *durutsaha* (s. d.)
+- **RU:** *utsaha* nom. act. от *sah* с *ud* в *durutsaha* (s. d.)
   <sub>lexicographic</sub>
 
-**1 (PW))** *utsaha*¦ in *durutsaha*.
+**1 (PW))** *utsaha* in *durutsaha*.
 
-- **RU:** *utsaha*¦ в *durutsaha*.
+- **RU:** *utsaha* в *durutsaha*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *utsaha* [Śā , Ling]: stamina, perseverance over a long time

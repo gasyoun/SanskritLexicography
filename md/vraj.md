@@ -7,16 +7,16 @@ _PWG article — 34 sub-card(s), 137 sense(s) · RU 128/137 · EN 123/137_
 `vraj~~h0_00_pwg00`
 
 
-*vraj*¦, *vrajati* (*gatau*)
+*vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; aus metrischen Rücksichten auch med. *vrajitum, vrajitvā, vrajita* .
 
-- **RU:** *vraj*¦, *vrajati* (*gatau*)
+- **RU:** *vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; из метрических соображений также med. *vrajitum, vrajitvā, vrajita* .
-- **EN:** *vraj*¦, *vrajati* (*gatau*)
+- **EN:** *vraj*, *vrajati* (*gatau*)
 [DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
 [VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; also med. *vrajitum, vrajitvā, vrajita* for metrical reasons.
@@ -1318,11 +1318,11 @@ Schol. to [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **1)** === LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
 
-√*vraj*¦, *vrajati*, *vrajate* (metrisch)
+√*vraj*, *vrajati*, *vrajate* (metrisch)
 — 1〉 schreiten, gehen, wandern ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — zu Fusse (auch mit *padbhyām*, *upānadbhyām* in Schuhen) oder mittelst eines Vehikels (*dhuryais*, *vṛṣasthitaḥ*), laufen (von Pferden), sich bewegen (von unbelebten Dingen), gehen einen Weg (Acc.), — eines Weges (Instr.), eine best. Strecke (Acc.) zurücklegen, hingehen zu oder nach (Acc., seltener Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), gelangen zu (Acc.). *śaraṇam* seine Zuflucht nehmen zu (Acc.), *mūrdhnā pādau* sich zu Jmds (Gen.) Füssen werfen, *antam* anʼs Ende von (Gen.) gelangen; *gehen nach Etwas (Dat.), so v. a. um dieses zu holen; *gehen um zu (Infin., Dat. eines Nom. act. oder ein verbales _Adj._ auf *aka*, wie *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* gegangen (*anyena* auf einem andern Wege).
 - **EN:** === LAYER: PW — Böhtlingk shorter recension (revision of PWG; may correct gender/sense) ===
 
-√*vraj*¦, *vrajati*, *vrajate* (metrically)
+√*vraj*, *vrajati*, *vrajate* (metrically)
  — 1) to stride, go, wander ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — on foot (also with *padbhyām*, *upānadbhyām* in shoes) or by means of a vehicle (*dhuryais*, *vṛṣasthitaḥ*), to run (of horses), to move (of inanimate things), to go a way (Acc.), — of a way (Instr.), to cover a best. stretch (Acc.) or to go to or towards (Acc., more rarely Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), to arrive at (Acc.). *śaraṇam* to take refuge with (Acc.), *mūrdhnā pādau* to throw oneself at someone's (Gen.) feet , *antam* to reach the end of (Gen.); *to go for something (Dat.), so v. a. in order to fetch it; *to go in order to (Infin., Dat. of an Nom. act. or a verbal _Adj._ in *aka*, such as *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* gone (*anyena* by another way).
 
 **2)** — 2〉 zu einem Weibe (Acc.) gehen, so v. a. ihr beiwohnen [CARAKA. 6,2].
@@ -1663,15 +1663,15 @@ Schol. to [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 - **EN:** — With *upasam* to step into, enter (Acc.).
   <sub>attested</sub>
 
-**pw_root)** √*vraj*¦ mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
-- **EN:** √*vraj* ¦ with *pra* Caus. VI. 2) *pravrājita* [DIVYĀVAD. 236,27].
+**pw_root)** √*vraj* mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+- **EN:** √*vraj* with *pra* Caus. VI. 2) *pravrājita* [DIVYĀVAD. 236,27].
 
 **pw_mit23)** — Mit *anupra* VI. nach einem Andern das häusliche Leben aufgeben um ein asketisches zu beginnen [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
 - **EN:** — With *anupra* VI. to give up the householder's life after another in order to begin an ascetic one [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
 
-**PW-head)** √*vraj*¦, *vrajati*, *vrajate* (metrisch)
+**PW-head)** √*vraj*, *vrajati*, *vrajate* (metrisch)
 
-- **RU:** √*vraj*¦, *vrajati*, *vrajate* (метрич.)
+- **RU:** √*vraj*, *vrajati*, *vrajate* (метрич.)
   <sub>attested</sub>
 
 **PW-1)** — 1〉 schreiten, gehen, wandern ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — zu Fusse (auch mit *padbhyām*, *upānadbhyām* in Schuhen) oder mittelst eines Vehikels (*dhuryais*, *vṛṣasthitaḥ*), laufen (von Pferden), sich bewegen (von unbelebten Dingen), gehen einen Weg (Acc.), — eines Weges (Instr.), eine best. Strecke (Acc.) zurücklegen, hingehen zu oder nach (Acc., seltener Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), gelangen zu (Acc.). *śaraṇam* seine Zuflucht nehmen zu (Acc.), *mūrdhnā pādau* sich zu Jmds (Gen.) Füssen werfen, *antam* anʼs Ende von (Gen.) gelangen; *gehen nach Etwas (Dat.), so v. a. um dieses zu holen; *gehen um zu (Infin., Dat. eines Nom. act. oder ein verbales _Adj._ auf *aka*, wie *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* gegangen (*anyena* auf einem andern Wege).
@@ -1709,10 +1709,10 @@ Schol. to [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 - **RU:** — С *abhi*
   <sub>attested</sub>
 
-**PW-addendum-pra)** √*vraj*¦ mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+**PW-addendum-pra)** √*vraj* mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
 — Mit *anupra* VI. nach einem Andern das häusliche Leben aufgeben um ein asketisches zu beginnen [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
 
-- **RU:** √*vraj*¦ с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+- **RU:** √*vraj* с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
 — С *anupra* VI. отречься от домашней жизни вслед за другим, чтобы начать жизнь аскета [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
   <sub>attested</sub>
 
@@ -1721,10 +1721,10 @@ Schol. to [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 `vraj~~h0_zz_sch`
 
 
-**pra-caus)** vraj¦ mit pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
+**pra-caus)** vraj mit pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
 
 - **RU:** vraj с pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
-- **EN:** vraj¦ with pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
+- **EN:** vraj with pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
   <sub>attested</sub>
 
 **anupra)** Mit anupra nach einem Andern das häusliche Leben aufgeben, um ein asketisches zu beginnen, [Divyāvad. 61,17]; [Jātakam. 19. 21.]
@@ -1740,10 +1740,10 @@ Schol. to [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 `vraj~~h0_zz_pwkvn`
 
 
-**vi-2)** *vraj*¦ mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+**vi-2)** *vraj* mit *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
 
-- **RU:** *vraj*¦ с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
-- **EN:** *vraj*¦ with *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+- **RU:** *vraj* с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+- **EN:** *vraj* with *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
   <sub>attested</sub>
 
 **anupra)** Mit *anupra* VI. nach einem Andern das häusliche Leben aufgeben um ein asketisches zu beginnen [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].

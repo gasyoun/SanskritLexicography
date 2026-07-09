@@ -3,7 +3,7 @@
 `n_i~~h0_00_pwg00`
 
 
-**forms)** *nī*¦, *nayati* und *˚te*
+**forms)** *nī*, *nayati* und *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) neben *nayeta* ep. auch *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) neben *anayat* ved. auch *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
@@ -13,7 +13,7 @@
 [TS. 3,2,8,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,8,3), wo aber das Metrum *ninīma* fordert; ved. *ninīyāt, ninīthas*; ep. *nayāmāsa; ninye; neṣyāmi*; ep. auch *nayiṣyāmi, ˚ṣye; netā*, ep. auch *nayitā; netum*, ep. (auch
 [AIT. BR.]) auch *nayitum; nītvā, ˚nīya*; pass. *nīyate, nīta* .
 
-- **RU:** *nī*¦, *nayati* и *˚te*
+- **RU:** *nī*, *nayati* и *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) наряду с *nayeta* эп. также *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) наряду с *anayat* ved. также *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
@@ -22,7 +22,7 @@
 [P. 6,4,82](https://ashtadhyayi.com/sutraani/6/4/82)), *nīnima*
 [TS. 3,2,8,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,8,3), однако метр требует *ninīma*; ved. *ninīyāt, ninīthas*; эп. *nayāmāsa; ninye; neṣyāmi*; эп. также *nayiṣyāmi, ˚ṣye; netā*, эп. также *nayitā; netum*, эп. (также
 [AIT. BR.]) также *nayitum; nītvā, ˚nīya*; pass. *nīyate, nīta* .
-- **EN:** *nī*¦, *nayati* and *˚te*
+- **EN:** *nī*, *nayati* and *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) beside *nayeta* ep. also *nayīta*
 [MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) beside *anayat* ved. also *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*

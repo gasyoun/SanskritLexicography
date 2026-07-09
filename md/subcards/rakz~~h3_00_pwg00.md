@@ -3,12 +3,12 @@
 `rakz~~h3_00_pwg00`
 
 
-**intro)** 1. *rakṣ*¦
+**intro)** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. lies [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) der 2ten Aufl.) st. 208.
 
-- **RU:** 1. *rakṣ*¦
+- **RU:** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. следует читать [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) 2-го Aufl.) st. 208.
-- **EN:** 1. *rakṣ*¦
+- **EN:** 1. *rakṣ*
 [Sp. 215, Z. 2] v. u. read [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) of the 2nd Aufl.) st. 208.
   <sub>attested</sub>
 

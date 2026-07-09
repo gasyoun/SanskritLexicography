@@ -7,7 +7,7 @@ _PWG article — 32 sub-card(s), 254 sense(s) · RU 137/254 · EN 220/254_
 `ban_d~~h0_00_pwg00`
 
 
-*bandh*¦, *badhnāti*
+*bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (fälschlich *batsyati, va˚*
@@ -17,7 +17,7 @@ _PWG article — 32 sub-card(s), 254 sense(s) · RU 137/254 · EN 220/254_
 [MBH. 3,10727](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727); *banddhum* (hier und da fälschlich *baddhum), bandhitum*
 [R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
 
-- **RU:** *bandh*¦, *badhnāti*
+- **RU:** *bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (ошибочно *batsyati, va˚*
@@ -28,7 +28,7 @@ _PWG article — 32 sub-card(s), 254 sense(s) · RU 137/254 · EN 220/254_
 [R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
   <sub>attested</sub>
 
-**1))** *bandh*¦, *badhnāti*
+**1))** *bandh*, *badhnāti*
 [DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
 [BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
 [HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (fälschlich *batsyati, va˚*
@@ -2704,15 +2704,15 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h1_00_pwg00`
 
 
-*bandh*¦
+*bandh*
 
-- **RU:** *bandh*¦
+- **RU:** *bandh*
   <sub>attested</sub>
 
-**T56-1)** *bandh*¦
+**T56-1)** *bandh*
  1) *vāgbaddha* in der Rede gebunden so v. a. schweigend, Nichts sprechend
 [KATHĀS. 124,159](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,159); vgl. *vāgyata* .
-- **EN:** *bandh*¦
+- **EN:** *bandh*
  1) *vāgbaddha* "bound in speech" thus v. a. "silent, saying nothing"
 [KATHĀS. 124,159](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,159); vgl. *vāgyata* .
 
@@ -2894,12 +2894,12 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h2_00_pwg00`
 
 
-*bandh*¦
+*bandh*
 
-- **RU:** *bandh*¦
+- **RU:** *bandh*
   <sub>attested</sub>
 
-**1)** *bandh*¦
+**1)** *bandh*
  3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
 [Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
 - **EN:** *bandh*
@@ -2965,7 +2965,7 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h0_zz_pw00`
 
 
-**root_intro)** √*bandh*¦, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
+**root_intro)** √*bandh*, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
 - **EN:** √*bandh*, *badhnāti*, *badhnīte*, *badhyati* ([HARIV. 3,49,78](https://sanskrit-lexicon-scans.github.io/hariv?3)): *badhyate* Pass.
 
 **1)** — 1〉 binden, anbinden, anheften, fesseln, umstricken. Med. und der späteren Sprache Act. sich Etwas anbinden, — umbinden. In dieser Bed. auch *badhyati* (nach der v. l. Jmd Etwas anheften). In der Philosophie so v. a. an die Welt —, an das Böse fesseln (im Gegensatz zu erlösen) [KAP. 3,73]. Pass. gefesselt werden, wieder sündigen. *baddha* gebunden, gefesselt, umstrickt, angebunden, gefesselt, aufgebunden, aufgehängt; gefesselt in philosophischem Sinne [KAP. 1,7,93].
@@ -3377,9 +3377,9 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h0_zz_pw02`
 
 
-**IV.1)** √*bandh*¦ IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+**IV.1)** √*bandh* IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 
-- **RU:** √*bandh*¦ IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+- **RU:** √*bandh* IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 - **EN:** √*bandh* class IV, *bandha* 2nd Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
   <sub>attested</sub>
 
@@ -3402,8 +3402,8 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h0_zz_sch`
 
 
-**1)** bandh¦ [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper. — Mit ā [Med.] sich erhängen, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
-- **EN:** bandh¦ [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2nd Imper. — With ā [Med.] to hang oneself, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
+**1)** bandh [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper. — Mit ā [Med.] sich erhängen, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
+- **EN:** bandh [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2nd Imper. — With ā [Med.] to hang oneself, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
 
 **2)** — Mit vini fesseln, [Jātakam. 31.]
 
@@ -3414,9 +3414,9 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 **3)** — [Kaus.] dass.,17,17. {part=,seq=20279,type=,n=5}
 - **EN:** — [Kaus.] the same, 17, 17. {part=,seq=20279,type=,n=5}
 
-**sch-bandha-imper)** bandh¦ [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper.
+**sch-bandha-imper)** bandh [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper.
 
-- **RU:** bandh¦ [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper.
+- **RU:** bandh [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper.
   <sub>attested</sub>
 
 **sch-mit-a-sich-erhaengen)** — Mit ā [Med.] sich erhängen, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
@@ -3434,9 +3434,9 @@ Schol. к [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 `ban_d~~h0_zz_pwkvn`
 
 
-**IV.1)** *bandh*¦ IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+**IV.1)** *bandh* IV. *bandha* 2te Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 
-- **RU:** *bandh*¦ IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
+- **RU:** *bandh* IV. *bandha* 2-я Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 - **EN:** *bandh* class IV, *bandha* 2nd Imper. [R. ed. Bomb. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
   <sub>attested</sub>
 

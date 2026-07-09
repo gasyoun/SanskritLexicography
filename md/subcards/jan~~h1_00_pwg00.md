@@ -3,7 +3,7 @@
 `jan~~h1_00_pwg00`
 
 
-**I.1)** *jan*¦ I.
+**I.1)** *jan* I.
 [Sp. 17, Z. 7] lies *ajanayamaherādhi* . — II. 6) vgl. *yo yasya jāyate vadhyaḥ* wem Jemand schon von der Geburt an als Schlachtopfer bestimmt ist
 [Spr. 2559.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2559)
 - **EN:** *jan* I.
@@ -81,10 +81,10 @@
 [MĀLAV. 54,10.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?54,10)
   <sub>attested</sub>
 
-**I (corrigendum))** *jan*¦ I.
+**I (corrigendum))** *jan* I.
 [Sp. 17, Z. 7] lies *ajanayamaherādhi* .
 
-- **RU:** *jan*¦ I.
+- **RU:** *jan* I.
 [Sp. 17, Z. 7] читай *ajanayamaherādhi* .
   <sub>attested</sub>
 

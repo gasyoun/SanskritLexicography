@@ -7,7 +7,7 @@ _PWG article — 90 sub-card(s), 416 sense(s) · RU 316/416 · EN 403/416_
 `y_a~~h0_00_pwg00`
 
 
-**1)** 1. *yā*¦, *yāti*
+**1)** 1. *yā*, *yāti*
 [DHĀTUP. 24,41.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) partic. *yānt*, gen. *yātas; yāhi; ayus* und *ayān*
 [P. 3,4,111](https://ashtadhyayi.com/sutraani/3/4/111), Sch.;
 *yayau, yayātha, yayima*
@@ -121,7 +121,7 @@ fortgehen, sich entfernen
 [AV. 3,8,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.008.html#av03.008.06) [10,8,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.08)
 [VARĀH. BṚH. S. 68,115.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,115) [86,6](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,6) (oft mit *yāna* verwechselt). der Ort, wo Jmd gegangen ist: *idaṃ yātaṃ ramāpateḥ*
 [VOP. 26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130)
-- **EN:** 1. *yā*¦, *yāti*
+- **EN:** 1. *yā*, *yāti*
 [DHĀTUP. 24,41.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) partic. *yānt*, gen. *yātas; yāhi; ayus* and *ayān*
 [P. 3,4,111](https://ashtadhyayi.com/sutraani/3/4/111), Sch.;
 *yayau, yayātha, yayima*
@@ -4629,10 +4629,10 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 `y_a~~h1_00_pwg00`
 
 
-**1)** 2. *yā*¦ (= 1. *yā*) am Ende eines comp. gehend; s. *ṛṇa˚, eva˚, tura˚, deva˚* .
+**1)** 2. *yā* (= 1. *yā*) am Ende eines comp. gehend; s. *ṛṇa˚, eva˚, tura˚, deva˚* .
 
-- **RU:** 2. *yā*¦ (= 1. *yā*) в конце comp. идущий; s. *ṛṇa˚, eva˚, tura˚, deva˚* .
-- **EN:** 2. *yā*¦ (= 1. *yā*) at the end of a comp., {going}; s. *ṛṇa˚, eva˚, tura˚, deva˚*.
+- **RU:** 2. *yā* (= 1. *yā*) в конце comp. идущий; s. *ṛṇa˚, eva˚, tura˚, deva˚* .
+- **EN:** 2. *yā* (= 1. *yā*) at the end of a comp., {going}; s. *ṛṇa˚, eva˚, tura˚, deva˚*.
   <sub>lexicographic</sub>
 
 ## yā
@@ -4640,12 +4640,12 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 `y_a~~h2_00_pwg00`
 
 
-**1)** *yā*¦ _f._ zu 1. *ya* .
-- **EN:** *yā*¦ _f._ = to 1. *ya*.
+**1)** *yā* _f._ zu 1. *ya* .
+- **EN:** *yā* _f._ = to 1. *ya*.
 
-**main)** 3. *yā*¦ _f._ zu 1. *ya* .
+**main)** 3. *yā* _f._ zu 1. *ya* .
 
-- **RU:** 3. *yā*¦ _f._ к 1. *ya* .
+- **RU:** 3. *yā* _f._ к 1. *ya* .
   <sub>lexicographic</sub>
 
 ## yā
@@ -4653,15 +4653,15 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 `y_a~~h3_00_pwg00`
 
 
-**1)** *yā*¦ _f._ zu 2. *ya*; nachzuholen wäre die Bed. *lakṣmī*
+**1)** *yā* _f._ zu 2. *ya*; nachzuholen wäre die Bed. *lakṣmī*
 [H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
-- **EN:** *yā*¦ _f._ = to 2. *ya*; still to be added would be the Bed. *lakṣmī*
-[H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
-
-**main)** 4. *yā*¦ _f._ zu 2. *ya*; nachzuholen wäre die Bed. *lakṣmī*
+- **EN:** *yā* _f._ = to 2. *ya*; still to be added would be the Bed. *lakṣmī*
 [H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
 
-- **RU:** 4. *yā*¦ _f._ к 2. *ya*; следовало бы добавить Bed. *lakṣmī*
+**main)** 4. *yā* _f._ zu 2. *ya*; nachzuholen wäre die Bed. *lakṣmī*
+[H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
+
+- **RU:** 4. *yā* _f._ к 2. *ya*; следовало бы добавить Bed. *lakṣmī*
 [H. 226.](https://sanskrit-lexicon-scans.github.io/abch2/app1?226)
   <sub>lexicographic</sub>
 
@@ -4670,10 +4670,10 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 `y_a~~h4_00_pwg00`
 
 
-**1)** *yā*¦ [vgl. ] mit *vi* 2〉 Z. 4 lies {3,31,19} st. {3,31,9}.
+**1)** *yā* [vgl. ] mit *vi* 2〉 Z. 4 lies {3,31,19} st. {3,31,9}.
 
-- **RU:** *yā*¦ [vgl. ] с *vi* 2〉 Z. 4 читай {3,31,19} st. {3,31,9}.
-- **EN:** *yā*¦ [vgl. ] with *vi* 2〉 Z. 4 read {3,31,19} st. {3,31,9}.
+- **RU:** *yā* [vgl. ] с *vi* 2〉 Z. 4 читай {3,31,19} st. {3,31,9}.
+- **EN:** *yā* [vgl. ] with *vi* 2〉 Z. 4 read {3,31,19} st. {3,31,9}.
   <sub>attested</sub>
 
 ## yā
@@ -4681,7 +4681,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 `y_a~~h5_00_pwg00`
 
 
-**1)** *yā*¦
+**1)** *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
@@ -4695,7 +4695,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
  2)
 Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 
-- **RU:** *yā*¦
+- **RU:** *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
@@ -4708,7 +4708,7 @@ Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 — *vi*
  2)
 Z. 4 lies 3, 31, 19 st. 3, 31, 9.
-- **EN:** 1. *yā*¦
+- **EN:** 1. *yā*
  10) *kiṃ yātametadbhavati . suṣṭhu yātam . sādhu ca yātam*
 [PAT. a. a. O. 6 (4),43,a.] = *gata, jñāta, siddha*
 [KAIY.]
@@ -4740,9 +4740,9 @@ Z. 4 read 3, 31, 19 st. 3, 31, 9.
 `y_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*yā*¦, *yāti* (metrisch auch Med.)
+**1)** **1.** √*yā*, *yāti* (metrisch auch Med.)
 — 1〉 fahren (in weiterem Sinne), gehen, ziehen, marschiren (auch so v. a. gegen den Feind ziehen); überh. sich in Bewegung setzen, reisen; fortgehen, aufbrechen, von dannen gehen, sich entfernen (auch so v. a. sich fern halten, nicht kommen [Spr. 7347](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7347)), fliehen (auch *palāyya yā*); entfliehen, entkommen; gehen von einem Wege, laufen von Andern. *yāta* gefahren, gegangen u. s. w.; fortgegangen, von dannen gegangen; auch _n._ impers. mit Instr. des Subjects.
-- **EN:** **1.** √*yā*¦, *yāti* (metrically also Med.)
+- **EN:** **1.** √*yā*, *yāti* (metrically also Med.)
 — 1〉 "to ride, travel" (in a broader sense), "to go, proceed, march" (also so v. a. "to march against the enemy"); überh. "to set out, to journey; to go off, to set forth, to go away from thence, to withdraw" (also so v. a. "to keep away, not to come" [Spr. 7347](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7347)), "to flee" (also *palāyya yā*); "to escape, get away; to go" off a road, "to run" of others. *yāta* "ridden, gone" u. s. w.; "gone off, departed thence;" also _n._ impers. with Instr. of the subject.
 
 **2)** — 2〉 verstreichen, vergehen, verlaufen, verfliessen. *yāta* verstrichen, zu Ende gegangen.
@@ -5809,27 +5809,27 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 `y_a~~h0_zz_pw03`
 
 
-**main)** **2.** *˚yā*¦ _Adj._ gehend.
+**main)** **2.** *˚yā* _Adj._ gehend.
 
-- **RU:** **2.** *˚yā*¦ _Adj._ идущий.
+- **RU:** **2.** *˚yā* _Adj._ идущий.
 - **EN:** 2. *˚yā* — _Adj._ going.
   <sub>attested</sub>
 
-**main)** **3.** *yā*¦ _f._ zu **1.** *ya*.
+**main)** **3.** *yā* _f._ zu **1.** *ya*.
 
-- **RU:** **3.** *yā*¦ _f._ к **1.** *ya*.
+- **RU:** **3.** *yā* _f._ к **1.** *ya*.
 - **EN:** 3. *yā* — _f._, see under 1. *ya*.
   <sub>attested</sub>
 
-**main)** **4.** **yā*¦ _f._ zu **2.** *ya*.
+**main)** **4.** **yā* _f._ zu **2.** *ya*.
 
-- **RU:** **4.** **yā*¦ _f._ к **2.** *ya*.
+- **RU:** **4.** **yā* _f._ к **2.** *ya*.
 - **EN:** 4. **yā* — _f._, see under 2. *ya*.
   <sub>attested</sub>
 
-**main)** **1.** √*yā*¦ Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
+**main)** **1.** √*yā* Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
 
-- **RU:** **1.** √*yā*¦ Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
+- **RU:** **1.** √*yā* Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
 - **EN:** 1. √*yā* — Caus. to maintain, to rear, raise [DIVYĀVAD. 499,1]; to be well, fare well [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 
@@ -5874,9 +5874,9 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 `y_a~~h0_zz_sch`
 
 
-**main)** 1. yā¦ [Kaus.] unterhalten, aufziehen, [Divyāvad. 499,1]; sich wohlbefinden,93,6; 150,16; 196,18; 471,4.
+**main)** 1. yā [Kaus.] unterhalten, aufziehen, [Divyāvad. 499,1]; sich wohlbefinden,93,6; 150,16; 196,18; 471,4.
 
-- **RU:** 1. yā¦ [Kaus.] содержать, воспитывать, [Divyāvad. 499,1]; пребывать в благополучии,93,6; 150,16; 196,18; 471,4.
+- **RU:** 1. yā [Kaus.] содержать, воспитывать, [Divyāvad. 499,1]; пребывать в благополучии,93,6; 150,16; 196,18; 471,4.
 - **EN:** 1. yā — [Kaus.] to maintain, to rear, raise, [Divyāvad. 499,1]; to be well, fare well, 93,6; 150,16; 196,18; 471,4.
   <sub>attested</sub>
 
@@ -5923,9 +5923,9 @@ With *punar* "to come again" and "to be reborn". *āyāta* with act. Bed.; also 
 `y_a~~h0_zz_pwkvn`
 
 
-**main)** **1.** *yā*¦ Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
+**main)** **1.** *yā* Caus. unterhalten, aufziehen [DIVYĀVAD. 499,1]. sich wohl befinden [93,6. 150,16. 196,18. 471,4].
 
-- **RU:** **1.** *yā*¦ Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
+- **RU:** **1.** *yā* Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
 - **EN:** 1. *yā* — Caus. to maintain, to rear, raise [DIVYĀVAD. 499,1]; to be well, fare well [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 

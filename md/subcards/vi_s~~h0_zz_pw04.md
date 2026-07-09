@@ -3,8 +3,8 @@
 `vi_s~~h0_zz_pw04`
 
 
-**2.** *viś*¦ (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (nach [MED.] _m._)
-- **EN:** **2.** *viś*¦ (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (after [MED.] _m._)
+**2.** *viś* (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (nach [MED.] _m._)
+- **EN:** **2.** *viś* (Nomin. *viṭ*, Loc. Pl. *vikṣu*) _f._ (after [MED.] _m._)
 
 **1)** — 1〉 Niederlassung, Wohnsitz, Haus. *viśaspatiḥ*. als Beiw. Indraʼs und Agniʼs.
 - **EN:** — 1) settlement, dwelling-place, house. *viśaspatiḥ*. as Beiw. of Indra and Agni.
@@ -24,11 +24,11 @@
 **6)** — 6〉 *Eingang, Eintritt.
 - **EN:** — 6) *entrance, entry.
 
-**vis)** **3.** *viś*¦ _f._ schlechte Schreibweise für *viṣ* faeces.
-- **EN:** **3.** *viś*¦ _f._ bad spelling for *viṣ* faeces.
+**vis)** **3.** *viś* _f._ schlechte Schreibweise für *viṣ* faeces.
+- **EN:** **3.** *viś* _f._ bad spelling for *viṣ* faeces.
 
-**praviś)** **1.** √*viś*¦ mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28].
-- **EN:** **1.** √*viś*¦ with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28].
+**praviś)** **1.** √*viś* mit *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* so v. a. ich bin mit einem Knaben schwanger [DIVYĀVAD. 541,28].
+- **EN:** **1.** √*viś* with *pra* Caus. VI. *ahaṃ dārakaṃ praveśitā* thus v. a. I am pregnant with a boy [DIVYĀVAD. 541,28].
 
 **praviś-manas)** — Mit *manas* seine Gedanken richten auf (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).
 - **EN:** — With *manas* to direct one's thoughts toward (Loc.) [R. ed. Bomb. 3,68,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,68,38).

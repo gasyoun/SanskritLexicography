@@ -3,8 +3,8 @@
 `na_s~~h0_zz_pw`
 
 
-**1)** **1.** √*naś*¦, *naśati* und *naśyati*; ausnahmsweise auch Med.
-- **EN:** **1.** √*naś*¦, *naśati* and *naśyati*; exceptionally also Med.
+**1)** **1.** √*naś*, *naśati* und *naśyati*; ausnahmsweise auch Med.
+- **EN:** **1.** √*naś*, *naśati* and *naśyati*; exceptionally also Med.
 
 **1.1)** — 1〉 verloren gehen, abhanden kommen, verschwinden, — aus (Abl.), unsichtbar werden, entweichen, entwischen, davon laufen, fliehen, sich scheren. *naṣṭa* verloren gegangen, abhanden gekommen, verschwunden, nicht mehr zu sehen, Jmd (Abl.) aus dem Gesicht gekommen, davon gelaufen, geflohen, — aus (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 - **EN:** — 1〉 to be lost, go missing, disappear, — from (Abl.), to become invisible, slip away, escape, run away, flee, make off. *naṣṭa* lost, gone missing, disappeared, no longer visible, gone from someone's (Abl.) sight, run away, fled, — from (Abl.). *naṣṭam* impers. [299,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299). *naṣṭavant* = *naṣṭa* [57,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
@@ -150,11 +150,11 @@
 **comp.vi-pra)** — Mit *sam*, *saṃnaṣṭa* zu Grunde gegangen.
 - **EN:** — With *sam*, *saṃnaṣṭa* ruined, destroyed.
 
-**1)** **2.** *naś*¦ _Adj._ verloren gehend in *jīvanaś*.
-- **EN:** **2.** *naś*¦ _Adj._ going astray, being lost in *jīvanaś*.
+**1)** **2.** *naś* _Adj._ verloren gehend in *jīvanaś*.
+- **EN:** **2.** *naś* _Adj._ going astray, being lost in *jīvanaś*.
 
-**intro)** **3.** √*naś*¦, *naśati, ˚te*
-- **EN:** **3.** √*naś*¦, *naśati, ˚te*
+**intro)** **3.** √*naś*, *naśati, ˚te*
+- **EN:** **3.** √*naś*, *naśati, ˚te*
 
 **1)** — 1〉 erreichen, erlangen.
 - **EN:** — 1〉 to reach, attain.
@@ -192,8 +192,8 @@
 **comp.sam)** — Mit *sam* dass.
 - **EN:** — With *sam* dass.
 
-**intro)** **1.** √*naś*¦ Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
-- **EN:** **1.** √*naś*¦ Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
+**intro)** **1.** √*naś* Caus. III. *ausstossen aus der Gemeinde. Vgl. *nāśitasaṃgraha*. Im Aor. abkommen von (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
+- **EN:** **1.** √*naś* Caus. III. *to expel from the community. Vgl. *nāśitasaṃgraha*. In Aor. to deviate from (Abl.). *mādharmyānnīnaśaḥ pathaḥ* [MBH. 3,52,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,52,15) = [R. GORR. 1,24,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,24,9).
 
 **comp.apa)** — Mit *pra* III. *mārgapranaṣṭa* vom Wege abgekommen [JĀTAKAM. 6].
 - **EN:** — With *pra* III. *mārgapranaṣṭa* who has strayed from the path [JĀTAKAM. 6].

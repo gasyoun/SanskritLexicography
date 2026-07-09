@@ -3,16 +3,16 @@
 `iz~~h2_00_pwg00`
 
 
-2. *iṣ*¦, *iṣṇāti*
+2. *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
 
-- **RU:** 2. *iṣ*¦, *iṣṇāti*
+- **RU:** 2. *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
   <sub>attested</sub>
 
-**intro)** *iṣ*¦, *iṣṇāti*
+**intro)** *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna* .
-- **EN:** *iṣ*¦, *iṣṇāti*
+- **EN:** *iṣ*, *iṣṇāti*
 [DHĀTUP. 31,53](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) (*ābhīkṣṇye*). med. *iṣaṇanta*; aor. *iṣanta*; partic. *iṣṇāna*.
 
 **1)** 1) in rasche Bewegung setzen, schnellen, schwingen: *vajramiṣṇan*

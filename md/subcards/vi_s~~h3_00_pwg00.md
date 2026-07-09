@@ -3,10 +3,10 @@
 `vi_s~~h3_00_pwg00`
 
 
-**0)** 1. *viś*¦ mit *upa* euphem. für cacare [CARAKA 3,5.]
+**0)** 1. *viś* mit *upa* euphem. für cacare [CARAKA 3,5.]
 
-- **RU:** 1. *viś*¦ с *upa* euphem. для обозначения cacare [CARAKA 3,5.]
-- **EN:** 1. *viś*¦ with *upa* euphem. for to defecate
+- **RU:** 1. *viś* с *upa* euphem. для обозначения cacare [CARAKA 3,5.]
+- **EN:** 1. *viś* with *upa* euphem. for to defecate
 [CARAKA 3,5.]
   <sub>attested</sub>
 

@@ -3,7 +3,7 @@
 `g_a~~h0_00_pwg00`
 
 
-**forms)** *gā*¦ (vgl. *gam), jigāti; agām*
+**forms)** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (wie von
 
@@ -14,7 +14,7 @@ einer Wurzel *gī*)
 [77](https://ashtadhyayi.com/sutraani/2/4/77), Sch. Die ved. Formen *jagāti* und *jagāyāt*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) sind noch nicht nachzuweisen; eben so wenig *gāte*
 [DHĀTUP. 22,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) Aus der klassischen Literatur ist vom simpl. nur der aor. *agāt* zu belegen; perf. u. s. w. und med. s. u. *adhi* .
-- **EN:** *gā*¦ (vgl. *gam), jigāti; agām*
+- **EN:** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3rd pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (as if from
 
@@ -26,7 +26,7 @@ a root *gī*)
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) are not yet to be demonstrated; equally so *gāte*
 [DHĀTUP. 22,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) From classical literature only the aor. *agāt* is attested for simpl.; perf. u. s. w. and med. s. u. *adhi* .
 
-**1)** *gā*¦ (vgl. *gam), jigāti; agām*
+**1)** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (wie von
 einer Wurzel *gī*)
@@ -66,7 +66,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* kam zu mir so v. a. kam mir zu
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73)
 
-- **RU:** *gā*¦ (vgl. *gam), jigāti; agām*
+- **RU:** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (как от
 корня *gī*)

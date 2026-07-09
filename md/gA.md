@@ -7,7 +7,7 @@ _PWG article — 65 sub-card(s), 413 sense(s) · RU 321/413 · EN 297/413_
 `g_a~~h0_00_pwg00`
 
 
-**forms)** *gā*¦ (vgl. *gam), jigāti; agām*
+**forms)** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (wie von
 
@@ -18,7 +18,7 @@ einer Wurzel *gī*)
 [77](https://ashtadhyayi.com/sutraani/2/4/77), Sch. Die ved. Formen *jagāti* und *jagāyāt*
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) sind noch nicht nachzuweisen; eben so wenig *gāte*
 [DHĀTUP. 22,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) Aus der klassischen Literatur ist vom simpl. nur der aor. *agāt* zu belegen; perf. u. s. w. und med. s. u. *adhi* .
-- **EN:** *gā*¦ (vgl. *gam), jigāti; agām*
+- **EN:** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3rd pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (as if from
 
@@ -30,7 +30,7 @@ a root *gī*)
 [NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) are not yet to be demonstrated; equally so *gāte*
 [DHĀTUP. 22,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) From classical literature only the aor. *agāt* is attested for simpl.; perf. u. s. w. and med. s. u. *adhi* .
 
-**1)** *gā*¦ (vgl. *gam), jigāti; agām*
+**1)** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (wie von
 einer Wurzel *gī*)
@@ -70,7 +70,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* kam zu mir so v. a. kam mir zu
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73)
 
-- **RU:** *gā*¦ (vgl. *gam), jigāti; agām*
+- **RU:** *gā* (vgl. *gam), jigāti; agām*
 ([P. 2,4,45.](https://ashtadhyayi.com/sutraani/2/4/45) [77.](https://ashtadhyayi.com/sutraani/2/4/77) [VOP. 9,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,13)) *gās, gāt, gus, agan* (3te pl.
 [BHĀG. P. 1,9,40](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,40)); *gahi, gadhi; jigāya* (как от
 корня *gī*)
@@ -1262,7 +1262,7 @@ einer Wurzel *gī*)
 `g_a~~h1_00_pwg00`
 
 
-**main)** 2. *gā*¦ *(gai), gāyati*
+**main)** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
@@ -1325,7 +1325,7 @@ einer Wurzel *gī*)
 [BHĀG. P. 3,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,18) *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) — *gīta*
 
-- **RU:** 2. *gā*¦ *(gai), gāyati*
+- **RU:** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
@@ -1387,7 +1387,7 @@ einer Wurzel *gī*)
 [R. 1,4,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,15)
 [BHĀG. P. 3,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,18) *vākyāni mama gāthābhirgāyamānāḥ*
 [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) — *gīta*
-- **EN:** 2. *gā*¦ *(gai), gāyati*
+- **EN:** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
 [MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
@@ -2359,14 +2359,14 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 `g_a~~h2_00_pwg00`
 
 
-**1)** 3. *gā*¦ (von *gam*) _adj._ gehend am Ende von compp.
+**1)** 3. *gā* (von *gam*) _adj._ gehend am Ende von compp.
 [P. 3,2,67](https://ashtadhyayi.com/sutraani/3/2/67) ([ved.).] [VOP. 26,66.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,66) [67.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,67)
 — Vgl. *agā, agregā, purogā, svastigā* und 1. *ga* .
 
-- **RU:** 3. *gā*¦ (от *gam*) _adj._ идущий, в конце compp.
+- **RU:** 3. *gā* (от *gam*) _adj._ идущий, в конце compp.
 [P. 3,2,67](https://ashtadhyayi.com/sutraani/3/2/67) ([ved.).] [VOP. 26,66.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,66) [67.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,67)
 — Vgl. *agā, agregā, purogā, svastigā* и 1. *ga* .
-- **EN:** 3. *gā*¦ (from *gam*) _adj._ going, at the end of compp.
+- **EN:** 3. *gā* (from *gam*) _adj._ going, at the end of compp.
 [P. 3,2,67](https://ashtadhyayi.com/sutraani/3/2/67) ([ved.).] [VOP. 26,66.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,66) [67.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,67)
 — Vgl. *agā, agregā, purogā, svastigā* and 1. *ga* .
   <sub>lexicographic</sub>
@@ -2376,12 +2376,12 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 `g_a~~h3_00_pwg00`
 
 
-**1)** 4. *gā*¦ (= 2. *gā*)
+**1)** 4. *gā* (= 2. *gā*)
  1) _adj._ singend am Ende eines comp. s. *sāmagā* .
 
-- **RU:** 4. *gā*¦ (= 2. *gā*)
+- **RU:** 4. *gā* (= 2. *gā*)
  1) _adj._ поющий, в конце comp. s. *sāmagā* .
-- **EN:** 4. *gā*¦ (= 2. *gā*)
+- **EN:** 4. *gā* (= 2. *gā*)
  1) _adj._ singing, at the end of a comp. s. *sāmagā* .
   <sub>lexicographic</sub>
 
@@ -2409,10 +2409,10 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 `g_a~~h4_00_pwg00`
 
 
-**1a)** 1. *gā*¦
+**1a)** 1. *gā*
  1) *muktāphalam — agāt* ging auf eine Perle zu
 [Spr. 5231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5231)
-- **EN:** 1. *gā*¦
+- **EN:** 1. *gā*
  1) *muktāphalam — agāt* went towards a pearl
 [Spr. 5231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5231)
 
@@ -2455,9 +2455,9 @@ Schol.
 [BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)
   <sub>attested</sub>
 
-**heading)** 1. *gā*¦
+**heading)** 1. *gā*
 
-- **RU:** 1. *gā*¦
+- **RU:** 1. *gā*
   <sub>attested</sub>
 
 **prefix_abhi.1)** 1) *muktāphalam — agāt* ging auf eine Perle zu
@@ -2472,14 +2472,14 @@ Schol.
 `g_a~~h5_00_pwg00`
 
 
-**intro)** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. der beim Volke hiess
+**intro)** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. der beim Volke hiess
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* heisst, wird genannt
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
 
-- **RU:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* так v. a. носивший в народе имя
+- **RU:** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* так v. a. носивший в народе имя
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* называется, именуется
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
-- **EN:** 2. *gā*¦, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
+- **EN:** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* so v. a. who was called among the people
 [KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* is called, is named
 [SARVADARŚANAS. 163,12. fg.] — *gīta*
   <sub>attested</sub>
@@ -2666,10 +2666,10 @@ Schol.
 `g_a~~h6_00_pwg00`
 
 
-**1)** 3. *gā*¦ vgl. noch *tamogā* .
+**1)** 3. *gā* vgl. noch *tamogā* .
 
-- **RU:** 3. *gā*¦ vgl. ещё *tamogā* .
-- **EN:** 3. *gā*¦ vgl. also *tamogā* .
+- **RU:** 3. *gā* vgl. ещё *tamogā* .
+- **EN:** 3. *gā* vgl. also *tamogā* .
   <sub>attested</sub>
 
 ## gā
@@ -2677,10 +2677,10 @@ Schol.
 `g_a~~h0_zz_pw00`
 
 
-**1)** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
+**1)** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
 — 1〉 kommen.
 
-- **RU:** **1.** √*gā*¦, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
+- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
 - **EN:** 1. √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) and **gāte* — 1〉 to come.
   <sub>attested</sub>
 
@@ -2962,9 +2962,9 @@ Schol.
 **sam-ā_2)** — 2〉 hingehen zu (Acc.).
 - **EN:** — 2〉 to go towards (Acc.).
 
-**1)** **2.** *˚gā*¦ _Adj._ hingehend zu, gehend, wandelnd.
+**1)** **2.** *˚gā* _Adj._ hingehend zu, gehend, wandelnd.
 
-- **RU:** **2.** *˚gā*¦ _Adj._ идущий к, идущий, странствующий.
+- **RU:** **2.** *˚gā* _Adj._ идущий к, идущий, странствующий.
 - **EN:** 2. *˚gā* _Adj._ going towards, going, moving.
   <sub>attested</sub>
 
@@ -3338,9 +3338,9 @@ Schol.
 `g_a~~h0_zz_pw01`
 
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā* *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 3. √*gā* *gāyati, ˚te* (rare), *gāti* and **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). to sing, to speak in a singing tone, to sing to someone (Dat.), to proclaim in verse, to celebrate in song (with Acc.), to sing before someone (Acc.), to perform in song. Pass. also to be called, to be named. *gīta* sung, proclaimed in verse, celebrated in song.
   <sub>attested</sub>
 
@@ -3561,10 +3561,10 @@ Schol.
 - **EN:** — With *sam* to celebrate together in song.
   <sub>attested</sub>
 
-**1)** **4.** *gā*¦
+**1)** **4.** *gā*
 — 1〉 _Adj._ am Ende eines Comp. singend.
 
-- **RU:** **4.** *gā*¦
+- **RU:** **4.** *gā*
 — 1〉 _Adj._ в конце Comp. поющий.
 - **EN:** 4. *gā* — 1〉 _Adj._ at the end of a Comp. singing.
   <sub>attested</sub>
@@ -3575,33 +3575,33 @@ Schol.
 - **EN:** — 2〉 *_f._ song, verse.
   <sub>lexicographic</sub>
 
-**1)** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
+**1)** **5.** *√*gā*, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
 
-- **RU:** **5.** *√*gā*¦, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
+- **RU:** **5.** *√*gā*, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
 - **EN:** 5. *√*gā*, *jigāti* (*janmani*) [VOP.] in [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
   <sub>lexicographic</sub>
 
-**main)** **1.** √*gā*¦ mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
+**main)** **1.** √*gā* mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 
-- **RU:** **1.** √*gā*¦ с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
+- **RU:** **1.** √*gā* с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 - **EN:** 1. √*gā* with *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
   <sub>attested</sub>
 
-**main)** **3.** *gā*¦ auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
+**main)** **3.** *gā* auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
-- **RU:** **3.** *gā*¦ также говорить, произносить, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
+- **RU:** **3.** *gā* также говорить, произносить, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 - **EN:** 3. *gā* also to say, speak, — to someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
   <sub>attested</sub>
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā* *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 1. √*gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — With *adhi* Caus. II. 5. — With *ava* II. to understand, to know [KIR. 12,34]. — With *pra* II. 2〉 read [27,10. fgg.] — With *vi* II. to step between, to separate; with Acc. [ŚĀṄKH. BR. 13,9].
   <sub>attested</sub>
 
-**main)** **3.** √*gā*¦ *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
+**main)** **3.** √*gā* *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā*¦ *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
 - **EN:** 3. √*gā* II. 5. — With *ava* II. *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. become tiresome [10,1].
   <sub>attested</sub>
 
@@ -3700,9 +3700,9 @@ Schol.
 - **RU:** — 1〉 порицать [NAIṢ. 9,13].
   <sub>attested</sub>
 
-**addendum-II-main)** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
+**addendum-II-main)** **1.** √*gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
 
-- **RU:** **1.** √*gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
+- **RU:** **1.** √*gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
   <sub>attested</sub>
 
 **addendum-II-ā-)** — Mit *adhi* Caus. II. 5.
@@ -3725,9 +3725,9 @@ Schol.
 - **RU:** — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
   <sub>attested</sub>
 
-**addendum-II-3-main)** **3.** √*gā*¦ II. 5.
+**addendum-II-3-main)** **3.** √*gā* II. 5.
 
-- **RU:** **3.** √*gā*¦ II. 5.
+- **RU:** **3.** √*gā* II. 5.
   <sub>attested</sub>
 
 **addendum-II-3-pari-anu-)** — Mit *ava* II. *˚gīta* abgeschwächt (*śoka*) [JĀTAKAM. 2]. zum Ueberdruss geworden [10,1].
@@ -3740,20 +3740,20 @@ Schol.
 `g_a~~h0_zz_sch`
 
 
-**main)** 1. gā¦ jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — Mit adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — Mit ava verstehen, wissen, [Kir. 12,34.] — Mit pra 2. lies: 27,10 ff. — Mit vi dazwischen treten, trennen; mit Akk. [Śāṅkh. Br. 13,9.]
-- **EN:** 1. gā¦ jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — With adhi: [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — With ava: to understand, to know [Kir. 12,34.] — With pra 2.: read: 27,10 ff. — With vi: to intervene, separate; with Acc. [Śāṅkh. Br. 13,9.].
+**main)** 1. gā jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — Mit adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — Mit ava verstehen, wissen, [Kir. 12,34.] — Mit pra 2. lies: 27,10 ff. — Mit vi dazwischen treten, trennen; mit Akk. [Śāṅkh. Br. 13,9.]
+- **EN:** 1. gā jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — With adhi: [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — With ava: to understand, to know [Kir. 12,34.] — With pra 2.: read: 27,10 ff. — With vi: to intervene, separate; with Acc. [Śāṅkh. Br. 13,9.].
 
-**main)** 3. gā¦ auch sagen, sprechen, -x- zu jemand (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — Mit ava, ˚gīta abgeschwächt (śoka), [Jātakam. 2]; zum Überdruß geworden,10,1.
-- **EN:** 3. gā¦ also: to say, to speak, to address someone (Acc.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — With ava, ˚gīta: weakened (śoka), [Jātakam. 2]; become tiresome, 10,1.
+**main)** 3. gā auch sagen, sprechen, -x- zu jemand (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — Mit ava, ˚gīta abgeschwächt (śoka), [Jātakam. 2]; zum Überdruß geworden,10,1.
+- **EN:** 3. gā also: to say, to speak, to address someone (Acc.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — With ava, ˚gīta: weakened (śoka), [Jātakam. 2]; become tiresome, 10,1.
 
-**SCH_1_gaa)** 1. gā¦ jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — Mit adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — Mit ava verstehen, wissen, [Kir. 12,34.] — Mit pra 2. lies: 27,10 ff. — Mit vi dazwischen treten, trennen; mit Akk. [Śāṅkh. Br. 13,9.] {part=,seq=12430,type=,n=7}
+**SCH_1_gaa)** 1. gā jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — Mit adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — Mit ava verstehen, wissen, [Kir. 12,34.] — Mit pra 2. lies: 27,10 ff. — Mit vi dazwischen treten, trennen; mit Akk. [Śāṅkh. Br. 13,9.] {part=,seq=12430,type=,n=7}
 
-- **RU:** 1. gā¦ jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — С adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — С ava понимать, знать, [Kir. 12,34.] — С pra 2. читать: 27,10 сл. — С vi вступать между, разделять; с Akk. [Śāṅkh. Br. 13,9.]
+- **RU:** 1. gā jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — С adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — С ava понимать, знать, [Kir. 12,34.] — С pra 2. читать: 27,10 сл. — С vi вступать между, разделять; с Akk. [Śāṅkh. Br. 13,9.]
   <sub>attested</sub>
 
-**SCH_3_gaa)** 3. gā¦ auch sagen, sprechen, -x- zu jemand (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — Mit ava, ˚gīta abgeschwächt (śoka), [Jātakam. 2]; zum Überdruß geworden,10,1. {part=,seq=12431,type=,n=6}
+**SCH_3_gaa)** 3. gā auch sagen, sprechen, -x- zu jemand (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — Mit ava, ˚gīta abgeschwächt (śoka), [Jātakam. 2]; zum Überdruß geworden,10,1. {part=,seq=12431,type=,n=6}
 
-- **RU:** 3. gā¦ также говорить, изрекать, к кому-л. (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — С ava, ˚gīta в ослабленном значении (śoka), [Jātakam. 2]; ставший надоедливым, 10,1.
+- **RU:** 3. gā также говорить, изрекать, к кому-л. (Akk.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — С ava, ˚gīta в ослабленном значении (śoka), [Jātakam. 2]; ставший надоедливым, 10,1.
   <sub>attested</sub>
 
 ## gā
@@ -3761,28 +3761,28 @@ Schol.
 `g_a~~h0_zz_pwkvn`
 
 
-**main)** **1.** *gā*¦ mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
+**main)** **1.** *gā* mit *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 
-- **RU:** **1.** *gā*¦ с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
-- **EN:** **1.** *gā*¦: with *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
+- **RU:** **1.** *gā* с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
+- **EN:** **1.** *gā*: with *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
   <sub>attested</sub>
 
-**main)** **3.** *gā*¦ auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
+**main)** **3.** *gā* auch sagen, sprechen, — zu Jmd (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
-- **RU:** **3.** *gā*¦ также говорить, высказываться, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
-- **EN:** **3.** *gā*¦ also: to say, to speak, to address someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
+- **RU:** **3.** *gā* также говорить, высказываться, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
+- **EN:** **3.** *gā* also: to say, to speak, to address someone (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
   <sub>attested</sub>
 
-**main)** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — Mit *adhi* Caus. II. 5. — Mit *ava* II. verstehen, wissen [KIR. 12,34]. — Mit *pra* II. 2〉 lies [27,10. fgg.] — Mit *vi* II. dazwischen treten, trennen; mit Acc. [ŚĀṄKH. BR. 13,9].
+**main)** **1.** *gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — Mit *adhi* Caus. II. 5. — Mit *ava* II. verstehen, wissen [KIR. 12,34]. — Mit *pra* II. 2〉 lies [27,10. fgg.] — Mit *vi* II. dazwischen treten, trennen; mit Acc. [ŚĀṄKH. BR. 13,9].
 
-- **RU:** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — С *adhi* Caus. II. 5. — С *ava* II. понимать, знать [KIR. 12,34]. — С *pra* II. 2〉 читай [27,10. fgg.] — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
-- **EN:** **1.** *gā*¦ II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — With *adhi* Caus. II. 5. — With *ava* II.: to understand, to know [KIR. 12,34]. — With *pra* II. 2〉: read [27,10. fgg.]. — With *vi* II.: to intervene, separate; with Acc. [ŚĀṄKH. BR. 13,9].
+- **RU:** **1.** *gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — С *adhi* Caus. II. 5. — С *ava* II. понимать, знать [KIR. 12,34]. — С *pra* II. 2〉 читай [27,10. fgg.] — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
+- **EN:** **1.** *gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — With *adhi* Caus. II. 5. — With *ava* II.: to understand, to know [KIR. 12,34]. — With *pra* II. 2〉: read [27,10. fgg.]. — With *vi* II.: to intervene, separate; with Acc. [ŚĀṄKH. BR. 13,9].
   <sub>attested</sub>
 
-**main)** **3.** *gā*¦ II. 5. — Mit *ava* II. *˚gīta* abgeschwächt (*śoka*) [JĀTAKAM. 2]. zum Ueberdruss geworden [10,1].
+**main)** **3.** *gā* II. 5. — Mit *ava* II. *˚gīta* abgeschwächt (*śoka*) [JĀTAKAM. 2]. zum Ueberdruss geworden [10,1].
 
-- **RU:** **3.** *gā*¦ II. 5. — С *ava* II. *˚gīta* ослабленное (*śoka*) [JĀTAKAM. 2]. ставший надоедливым [10,1].
-- **EN:** **3.** *gā*¦ II. 5. — With *ava* II.: *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. Become tiresome [10,1].
+- **RU:** **3.** *gā* II. 5. — С *ava* II. *˚gīta* ослабленное (*śoka*) [JĀTAKAM. 2]. ставший надоедливым [10,1].
+- **EN:** **3.** *gā* II. 5. — With *ava* II.: *˚gīta* weakened (*śoka*) [JĀTAKAM. 2]. Become tiresome [10,1].
   <sub>attested</sub>
 
 ## gā

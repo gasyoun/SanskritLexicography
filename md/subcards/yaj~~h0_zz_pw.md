@@ -3,10 +3,10 @@
 `yaj~~h0_zz_pw`
 
 
-**1.1a)** **1.** √*yaj*¦, *yajati*, *˚te*
+**1.1a)** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel Act., wenn Agni oder ein anderer Mittler handelt, und Med., wenn der Mensch für sich verehrt und darbringt; später Act. vom Opferpriester, Med. vom Veranstalter des Opfers. Ausnahmen sind jedoch häufig.
 — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
-- **EN:** **1.** √*yaj*¦, *yajati*, *˚te*
+- **EN:** **1.** √*yaj*, *yajati*, *˚te*
 — 1) to worship, honour a god, also with prayer and offering, hence to consecrate, sacrifice. In the older language regularly Act., when Agni or another mediator acts, and Med., when the man worships and offers on his own behalf; later Act. of the officiating priest, Med. of the institutor of the sacrifice. Exceptions, however, are frequent.
 — a) with Acc. of the god, Dat. of the person or of the purpose for which, and Instr. of the thing (also a partitive Gen.) or of the instrument with which the act is performed. *iṣṭa* he to whom sacrifice has been offered. Also impers. with Instr. of the person who brings the offering, and Instr. of the offering brought [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
 
@@ -134,16 +134,16 @@
 **1.sam2.caus.2)** — 2〉 für Jmd (Acc.) als Opferpriester thätig sein.
 - **EN:** — 2) to act as officiating priest for someone (Acc.).
 
-**2)** **2.** *˚yaj*¦ _Adj._ opfernd u. s. w. in *diviyaj* und *daivayaj*.
+**2)** **2.** *˚yaj* _Adj._ opfernd u. s. w. in *diviyaj* und *daivayaj*.
 
-- **RU:** **2.** *˚yaj*¦ _Adj._ приносящий жертву u. s. w. в *diviyaj* и *daivayaj*.
-- **EN:** **2.** *˚yaj*¦ _Adj._ sacrificing u. s. w., in *diviyaj* and *daivayaj*.
+- **RU:** **2.** *˚yaj* _Adj._ приносящий жертву u. s. w. в *diviyaj* и *daivayaj*.
+- **EN:** **2.** *˚yaj* _Adj._ sacrificing u. s. w., in *diviyaj* and *daivayaj*.
   <sub>attested</sub>
 
-**1)** **1.** √*yaj*¦, *yajati*, *˚te*
+**1)** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 einen Gott verehren, huldigen, auch mit Gebet und Darbringung, daher weihen, opfern. In der alten Sprache in der Regel Act., wenn Agni oder ein anderer Mittler handelt, und Med., wenn der Mensch für sich verehrt und darbringt; später Act. vom Opferpriester, Med. vom Veranstalter des Opfers. Ausnahmen sind jedoch häufig.
 
-- **RU:** **1.** √*yaj*¦, *yajati*, *˚te*
+- **RU:** **1.** √*yaj*, *yajati*, *˚te*
 — 1〉 почитать, чтить бога, воздавать ему честь, также с молитвой и приношением, отсюда освящать, жертвовать. В древнем языке как правило Act., когда действует Agni или иной посредник, и Med., когда человек почитает и приносит для себя; позднее Act. об обрядовом жреце, Med. об устроителе жертвоприношения. Исключения, однако, часты.
   <sub>attested</sub>
 

@@ -3,9 +3,9 @@
 `iz~~h4_00_pwg00`
 
 
-**0)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
+**0)** 4. *iṣ*, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 — Vgl. *eṣ* .
-- **EN:** 4. *iṣ*¦, *eṣati* and *eṣate* attested only in connection with *anu*.
+- **EN:** 4. *iṣ*, *eṣati* and *eṣate* attested only in connection with *anu*.
 — Vgl. *eṣ*.
 
 **1)** — *anu* suchen, nachforschen, durchsuchen: *yamanveṣasi rājānam*
@@ -41,9 +41,9 @@
 [R. 1,3,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,2)
   <sub>attested</sub>
 
-**intro)** 4. *iṣ*¦, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
+**intro)** 4. *iṣ*, *eṣati* und *eṣate* nur in Verbindung mit *anu* zu belegen.
 
-- **RU:** 4. *iṣ*¦, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
+- **RU:** 4. *iṣ*, *eṣati* и *eṣate* засвидетельствованы только в сочетании с *anu*.
   <sub>attested</sub>
 
 **sense_a)** — Vgl. *eṣ* .

@@ -3,13 +3,13 @@
 `d_a~~h4_00_pwg00`
 
 
-5. *dā*¦ *(de), dayate* beschützen
+5. *dā* *(de), dayate* beschützen
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, welcher Wurzel auch die Bed. *rakṣaṇa* zugeschrieben wird. — desid. *ditsate*
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), Sch.
 
-- **RU:** 5. *dā*¦ *(de), dayate* защищать, охранять
+- **RU:** 5. *dā* *(de), dayate* защищать, охранять
 [DHĀTUP. 22,66.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) perf. *digye* (!)
 [P. 7,4,9.](https://ashtadhyayi.com/sutraani/7/4/9)
 [VOP. 8,119.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,119) Vgl. *day*, каковому корню приписывается также Bed. *rakṣaṇa*. — desid. *ditsate*

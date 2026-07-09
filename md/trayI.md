@@ -7,9 +7,9 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 `tray_i`
 
 
-**1)** *trayī*¦ s. u. *traya* .
+**1)** *trayī* s. u. *traya* .
 
-- **RU:** *trayī*¦ см. s. u. *traya* .
+- **RU:** *trayī* см. s. u. *traya* .
   <sub>lexicographic</sub>
 
 **NWS-1)** *trayī* [Śā , Soc]: the „3 Vedas“ taken collectively. [ Ṛk-, Yajur-, Sāmaveda. ] one of the four basic sciences. KA I.1 . [ forms a part of the king's curriculum of sciences; he is advised to learn the sacred canon (~) along with philosophy from the cultured persons. ] s.v. traya (pw)

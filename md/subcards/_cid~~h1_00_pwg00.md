@@ -3,10 +3,10 @@
 `_cid~~h1_00_pwg00`
 
 
-**introd)** 2. *chid*¦ (= 1. *chid*)
-- **EN:** 2. *chid*¦ (= 1. *chid*)
+**introd)** 2. *chid* (= 1. *chid*)
+- **EN:** 2. *chid* (= 1. *chid*)
 
-**1a)** 2. *chid*¦ (= 1. *chid*)
+**1a)** 2. *chid* (= 1. *chid*)
  1) _adj._ am Ende eines comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) abschneidend, zerschneidend, zerbrechend, zerreissend, spaltend, durchbohrend: *(śarāḥ) tanucchidaḥ*
@@ -14,7 +14,7 @@
 [R. 5,37,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,10) *marmacchido vedanāḥ*
 [ŚĀNTIŚ. 1,16.] Vgl. *ukha˚, keśa˚, pakṣa˚, vana˚* .
 
-- **RU:** 2. *chid*¦ (= 1. *chid*)
+- **RU:** 2. *chid* (= 1. *chid*)
  1) _adj._ в конце comp.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61)
  a) срезающий, разрезающий, разламывающий, разрывающий, раскалывающий, пробуравливающий: *(śarāḥ) tanucchidaḥ*

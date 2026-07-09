@@ -3,7 +3,7 @@
 `p_a~~h5_00_pwg00`
 
 
-**1)** *pā*¦
+**1)** *pā*
 Z. 9, *pītvī* ved.
 Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. zu 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
@@ -36,7 +36,7 @@ Schol.) [BHĀG. P. 10,87,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom
 [KATHĀS. 86,115.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,115)
 — *pra* vgl. *prapā, prapāna; — prati* vgl. *˚pāna; — vi* vgl. *pītavipīta*.
 
-**Nachtrag_1_patch)** 1. *pā*¦
+**Nachtrag_1_patch)** 1. *pā*
 Z. 9, *pītvī* ved.
 Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. zu 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
@@ -48,7 +48,7 @@ Schol. zu [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved
 Z. 3 stelle die Worte mit pass. Bed.: in die zweite Zeile nach
 [2,488,21.]
 
-- **RU:** 1. *pā*¦
+- **RU:** 1. *pā*
 Z. 9, *pītvī* ved.
 Schol. к [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. к 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*

@@ -3,8 +3,8 @@
 `pat~~h0_zz_sch`
 
 
-**ati_absol)** 1. pat¦ mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
-- **EN:** 1. pat¦ with ati, ˚patya absol. with Acc. so as to mean not caring about, [Jātakam. 2,26; 28,13.]
+**ati_absol)** 1. pat mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
+- **EN:** 1. pat with ati, ˚patya absol. with Acc. so as to mean not caring about, [Jātakam. 2,26; 28,13.]
 
 **vyati)** Mit vyati über etwas hinauskommen, Haravijaya 6,30. [46,43.]
 
@@ -45,9 +45,9 @@
 **abhisam_1)** Mit abhisam 1. hinfliegen, hineilen zu, stürzen auf (Akk.) — 2. einherfliegen.
 - **EN:** With abhisam 1. to fly thither, to hasten to, to rush upon (Acc.) — 2. to fly along.
 
-**ati_patya)** 1. pat¦ mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
+**ati_patya)** 1. pat mit ati, ˚patya Absol. mit Akk. so v.a. sich nicht kümmernd um, [Jātakam. 2,26; 28,13.]
 
-- **RU:** 1. pat¦ mit ati, ˚patya Absol. mit Akk. так, т.е. не заботясь о, [Jātakam. 2,26; 28,13.]
+- **RU:** 1. pat mit ati, ˚patya Absol. mit Akk. так, т.е. не заботясь о, [Jātakam. 2,26; 28,13.]
   <sub>attested</sub>
 
 **fallen_lassen)** [Kaus.] fallen lassen, 

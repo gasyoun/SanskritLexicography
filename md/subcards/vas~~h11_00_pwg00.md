@@ -3,10 +3,10 @@
 `vas~~h11_00_pwg00`
 
 
-**1)** 2. *vas*¦ mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
+**1)** 2. *vas* mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
 
-- **RU:** 2. *vas*¦ mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
-- **EN:** 2. *vas*¦ with *adhi* vgl. 5. *vas* with *adhi* and u. *samayā*.
+- **RU:** 2. *vas* mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
+- **EN:** 2. *vas* with *adhi* vgl. 5. *vas* with *adhi* and u. *samayā*.
   <sub>attested</sub>
 
 **2)** — *apa* 1) auch [ṚV. 8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18)

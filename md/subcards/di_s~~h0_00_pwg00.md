@@ -3,10 +3,10 @@
 `di_s~~h0_00_pwg00`
 
 
-**headnote)** *diś*¦, *dideṣṭi* und *diśati* (spätere Form, [DHĀTUP. 28,3](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)); *pradiśyati* [MBH. 1,6472](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6472); *dideśa; dekṣyati, deṣṭā* Kār. [5](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *adikṣat* [P. 3,1,45](https://ashtadhyayi.com/sutraani/3/1/45); med. selten, obgleich im [DHĀTUP.] als gleichberechtigt angegeben; *adiṣṭa* ved.; *diṣṭa* .
+**headnote)** *diś*, *dideṣṭi* und *diśati* (spätere Form, [DHĀTUP. 28,3](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)); *pradiśyati* [MBH. 1,6472](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6472); *dideśa; dekṣyati, deṣṭā* Kār. [5](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *adikṣat* [P. 3,1,45](https://ashtadhyayi.com/sutraani/3/1/45); med. selten, obgleich im [DHĀTUP.] als gleichberechtigt angegeben; *adiṣṭa* ved.; *diṣṭa* .
 
-- **RU:** *diś*¦, *dideṣṭi* и *diśati* (более поздняя форма, [DHĀTUP. 28,3](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)); *pradiśyati* [MBH. 1,6472](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6472); *dideśa; dekṣyati, deṣṭā* Kār. [5](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *adikṣat* [P. 3,1,45](https://ashtadhyayi.com/sutraani/3/1/45); med. редко, хотя в [DHĀTUP.] указывается как равноправная; *adiṣṭa* ved.; *diṣṭa* .
-- **EN:** *diś*¦, *dideṣṭi* and *diśati* (later form,
+- **RU:** *diś*, *dideṣṭi* и *diśati* (более поздняя форма, [DHĀTUP. 28,3](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)); *pradiśyati* [MBH. 1,6472](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6472); *dideśa; dekṣyati, deṣṭā* Kār. [5](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *adikṣat* [P. 3,1,45](https://ashtadhyayi.com/sutraani/3/1/45); med. редко, хотя в [DHĀTUP.] указывается как равноправная; *adiṣṭa* ved.; *diṣṭa* .
+- **EN:** *diś*, *dideṣṭi* and *diśati* (later form,
 [DHĀTUP. 28,3](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)); *pradiśyati*
 [MBH. 1,6472](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6472); *dideśa; dekṣyati, deṣṭā* Kār.
 [5](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) from [SIDDH. K.] to [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *adikṣat*

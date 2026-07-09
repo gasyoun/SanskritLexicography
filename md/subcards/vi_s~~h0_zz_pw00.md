@@ -3,10 +3,10 @@
 `vi_s~~h0_zz_pw00`
 
 
-**1)** **1.** √*viś*¦, *viśati*, *te* (in der späteren Sprache meist metrisch)
+**1)** **1.** √*viś*, *viśati*, *te* (in der späteren Sprache meist metrisch)
 
-- **RU:** **1.** √*viś*¦, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
-- **EN:** **1.** √*viś*¦, *viśati*, *te* (in the later language mostly metrical)
+- **RU:** **1.** √*viś*, *viśati*, *te* (в более позднем языке большей частью в метрических текстах)
+- **EN:** **1.** √*viś*, *viśati*, *te* (in the later language mostly metrical)
 — 1) to settle down, enter into —, go in —, move in —, betake oneself into —, slip into —, penetrate —, sink into —, be absorbed into (Loc. or Acc.); also with *antar* added ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. to mount the funeral pyre. In the Astr. to come into conjunction with (Acc.). Without complement: to enter the house u. s. w., to appear on the stage, to come forth.
   <sub>attested</sub>
 

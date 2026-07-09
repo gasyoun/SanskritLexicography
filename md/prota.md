@@ -7,15 +7,15 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `prota`
 
 
-**PWG-1)** *prota*¦ s. u. *vā, vayati* mit *pra* .
+**PWG-1)** *prota* s. u. *vā, vayati* mit *pra* .
 
-- **RU:** *prota*¦ см. под глаголом s. u. *vā, vayati* с *pra* .
+- **RU:** *prota* см. под глаголом s. u. *vā, vayati* с *pra* .
   <sub>lexicographic</sub>
 
-**PW-1)** *prota*¦
+**PW-1)** *prota*
 — 1〉 _Adj._ s. u. **5.** *vā* mit *pra*.
 
-- **RU:** *prota*¦
+- **RU:** *prota*
 — 1〉 _Adj._ s. u. **5.** *vā* с *pra*.
   <sub>attested</sub>
 

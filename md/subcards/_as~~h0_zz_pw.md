@@ -3,11 +3,11 @@
 `_as~~h0_zz_pw`
 
 
-**1)** **1.** *ās*¦ Interj. der Freude und des Unwillens.
-- **EN:** **1.** *ās*¦ Interj. of joy and displeasure.
+**1)** **1.** *ās* Interj. der Freude und des Unwillens.
+- **EN:** **1.** *ās* Interj. of joy and displeasure.
 
-**intro)** **2.** √*ās*¦, *āste* ep. auch *āsate* und *āsti*.
-- **EN:** **2.** √*ās*¦, *āste* ep. also *āsate* and *āsti*.
+**intro)** **2.** √*ās*, *āste* ep. auch *āsate* und *āsti*.
+- **EN:** **2.** √*ās*, *āste* ep. also *āsate* and *āsti*.
 
 **1)** — 1〉 sitzen, sich setzen, — auf (Loc.; Acc. nur scheinbar. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) zu interpungiren: *etadāsanam āsyatām*. Eben so [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
 - **EN:** — 1〉 to sit, to sit down, — on (Loc.; Acc. only apparently. [VIKR. 27,16](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) to be punctuated: *etadāsanam āsyatām*. Likewise [R. ed. Bomb. 1,72,15](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,72,15)).
@@ -246,20 +246,20 @@
 **sam2)** — Mit *pratisam* es aufnehmen mit, gewachsen sein, widerstehen; mit Acc.
 - **EN:** — With *pratisam* to take up against, to be a match for, to withstand; with Acc.
 
-**1)** **3.** *ās*¦ wohl _n._ Mund, Angesicht; nur im Abl. und Instr. *āsa ā* mit einer 1sten Person so v. a. von mir aus. *āsā* vorʼs Angesicht hin, von Aller Augen.
-- **EN:** **3.** *ās*¦ probably _n._ mouth, face; only in the Abl. and Instr. *āsa ā* with a 1st person, so v. a. as far as I am concerned, on my part. *āsā* before the face, in everyone's sight.
+**1)** **3.** *ās* wohl _n._ Mund, Angesicht; nur im Abl. und Instr. *āsa ā* mit einer 1sten Person so v. a. von mir aus. *āsā* vorʼs Angesicht hin, von Aller Augen.
+- **EN:** **3.** *ās* probably _n._ mouth, face; only in the Abl. and Instr. *āsa ā* with a 1st person, so v. a. as far as I am concerned, on my part. *āsā* before the face, in everyone's sight.
 
-**1)** **4.** *ās*¦ ved. 3te Sg. von **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
-- **EN:** **4.** *ās*¦ ved. 3rd Sg. of **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
+**1)** **4.** *ās* ved. 3te Sg. von **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
+- **EN:** **4.** *ās* ved. 3rd Sg. of **1.** *as* [19,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19).
 
-**v9)** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater? [HARṢAC. 126,9].
-- **EN:** **2.** √*ās*¦ 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9].
+**v9)** **2.** √*ās* 9〉 *kathamāste tātaḥ* so v. a. wie geht es dem Vater? [HARṢAC. 126,9].
+- **EN:** **2.** √*ās* 9〉 *kathamāste tātaḥ* so v. a. how is father faring? [HARṢAC. 126,9].
 
 **v.adhi1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 - **EN:** — With *anu* 1〉 to stay in someone's (Gen.) vicinity [HEMĀDRI 1,35,20].
 
-**anu.1)** **2.** √*ās*¦ I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
-- **EN:** **2.** √*ās*¦ I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
+**anu.1)** **2.** √*ās* I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
+- **EN:** **2.** √*ās* I. 1. With *avasthānam* to settle down in a place [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*).
 
 **anu.ref)** — Mit *anu* I. 1.
 - **EN:** — With *anu* I. 1.

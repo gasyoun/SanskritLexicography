@@ -3,7 +3,7 @@
 `d_a~~h6_00_pwg00`
 
 
-**7)** 7. *dā*¦ *(dai), dāyati* reinigen
+**7)** 7. *dā* *(dai), dāyati* reinigen
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
 — *ava*, partic. *avadāta* (abgewaschen) gereinigt, rein: *avadātaṃ mukham*
@@ -22,7 +22,7 @@ Sch. zu [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20) [7,4,46.](https://
 [TAITT. ĀR. 1,9,4.] _f._ *ī*
 [17,2.]
 
-- **RU:** 7. *dā*¦ *(dai), dāyati* очищать
+- **RU:** 7. *dā* *(dai), dāyati* очищать
 [DHĀTUP. 22,26.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) aor. *adāsīt*, prec. *dāyāt*
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85)
 — *ava*, partic. *avadāta* (смытый) очищенный, чистый: *avadātaṃ mukham*

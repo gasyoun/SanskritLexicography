@@ -7,7 +7,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 `_buj~~h0_00_pwg00`
 
 
-**1-main)** 1. *bhuj*¦, *bhujati* biegen
+**1-main)** 1. *bhuj*, *bhujati* biegen
 [DHĀTUP. 28,124.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) partic. *bhugna*
 [P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45)
 [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) gebogen, gekrümmt, krumm
@@ -26,7 +26,7 @@ _PWG article — 39 sub-card(s), 156 sense(s) · RU 104/156 · EN 144/156_
 [ṚV. PRĀT. 2,11.]
 — Vgl. *bhuji, bhujyu*, 1. *bhoga* .
 
-- **RU:** 1. *bhuj*¦, *bhujati* «гнуть, сгибать»
+- **RU:** 1. *bhuj*, *bhujati* «гнуть, сгибать»
 [DHĀTUP. 28,124.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) partic. *bhugna*
 [P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45)
 [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) «согнутый, изогнутый, кривой»
@@ -283,9 +283,9 @@ bent
 `_buj~~h1_00_pwg00`
 
 
-**2-main)** 2. *bhuj*¦ (= 1. *bhuj)* s. *tri˚* .
+**2-main)** 2. *bhuj* (= 1. *bhuj)* s. *tri˚* .
 
-- **RU:** 2. *bhuj*¦ (= 1. *bhuj)* s. *tri˚* .
+- **RU:** 2. *bhuj* (= 1. *bhuj)* s. *tri˚* .
 - **EN:** 2. *bhuj* (= 1. *bhuj)* s. *tri˚* .
   <sub>attested</sub>
 
@@ -294,7 +294,7 @@ bent
 `_buj~~h2_00_pwg00`
 
 
-**head-3)** 3. *bhuj*¦, *bhunakti (bhuñjati*
+**head-3)** 3. *bhuj*, *bhunakti (bhuñjati*
 [GṚHYASAṂGR. 2,30.]
 [Spr. 4059.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4059) [4844](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4844)) und *bhuṅkte (upabhuñjase*
 [MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) *bhuñjate*
@@ -308,7 +308,7 @@ bent
 [Kār. 2] aus [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *abhukta*, ved. *bhujema; bhuktvā, bhoktum, bhojase*
 [ṚV. 1,55,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.055.html#rv01.055.03) [8,54,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.03)
 [VĀLAKH. 3,3.]
-- **EN:** 3. *bhuj*¦, *bhunakti (bhuñjati*
+- **EN:** 3. *bhuj*, *bhunakti (bhuñjati*
 [GṚHYASAṂGR. 2,30.]
 [Spr. 4059.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4059) [4844](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4844)) and *bhuṅkte (upabhuñjase*
 [MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) *bhuñjate*
@@ -1394,7 +1394,7 @@ employing
 `_buj~~h3_00_pwg00`
 
 
-**1)** 4. *bhuj*¦ (= 3. *bhuj)*
+**1)** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ das Nutzenbringen, Zugutekommen, Frommen: Genuss, Vortheil, Nutzen (dat. zugleich als inf. zu betrachten): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
@@ -1414,7 +1414,7 @@ employing
 [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *ātmanā bhujamaśnutām* so v. a. möge er seines Lebens froh werden
 [AV. 8,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.08)
 
-- **RU:** 4. *bhuj*¦ (= 3. *bhuj)*
+- **RU:** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ польза, услуга, угода: наслаждение, выгода, польза (dat. рассматривать одновременно как inf.): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
@@ -1433,7 +1433,7 @@ employing
 [22,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.13) *indre bhujaṃ śaśamānāsa āśata*
 [92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *ātmanā bhujamaśnutām* так v. a. да возрадуется он своей жизни
 [AV. 8,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.08)
-- **EN:** 4. *bhuj*¦ (= 3. *bhuj)*
+- **EN:** 4. *bhuj* (= 3. *bhuj)*
  1) _f._ the act of being beneficial, of accruing benefit, of being profitable: enjoyment, advantage, profit (dat. to be regarded at the same time as inf.): *huve tuviṣṭamā bhuje*
 [ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
 [1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
@@ -1579,18 +1579,18 @@ employing
 `_buj~~h4_00_pwg00`
 
 
-**1)** 1. *bhuj*¦, hierher zieht
+**1)** 1. *bhuj*, hierher zieht
 [BENFEY] *bhujyate* mit der Bed. verneigt sich (besser wird entmuthigt)
 [Spr. 938](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?938), welche Stelle bei uns unter 3. *bhuj*
 ([Sp. 302, Z. 9. fgg.]) steht. *pratyavaskandabhugna* gebeugt, entmuthigt
 [KATHĀS. 71,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,109)
 
-- **RU:** 1. *bhuj*¦, сюда относит
+- **RU:** 1. *bhuj*, сюда относит
 [BENFEY] *bhujyate* со значением Bed. склоняется (лучше: падает духом)
 [Spr. 938](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?938), каковое место у нас стоит под 3. *bhuj*
 ([Sp. 302, Z. 9. fgg.]). *pratyavaskandabhugna* согнутый, павший духом
 [KATHĀS. 71,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,109)
-- **EN:** 1. *bhuj*¦, to this [BENFEY] *bhujyate* with the Bed. bows down (better: becomes disheartened)
+- **EN:** 1. *bhuj*, to this [BENFEY] *bhujyate* with the Bed. bows down (better: becomes disheartened)
 [Spr. 938](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?938), which passage in our edition stands under 3. *bhuj*
 ([Sp. 302, Z. 9. fgg.]). *pratyavaskandabhugna* bent, disheartened
 [KATHĀS. 71,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,109)
@@ -1601,14 +1601,14 @@ employing
 `_buj~~h5_00_pwg00`
 
 
-**1)** 3. *bhuj*¦
+**1)** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. oben u. 1. *bhuj* .
 
-- **RU:** 3. *bhuj*¦
+- **RU:** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. выше u. 1. *bhuj* .
-- **EN:** 3. *bhuj*¦
+- **EN:** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. above u. 1. *bhuj* .
   <sub>attested</sub>
@@ -1660,16 +1660,16 @@ employing
 `_buj~~h6_00_pwg00`
 
 
-**1)** *bhuj*¦ mit *ni* beugen, senken: *nibhujati jānuśirasī*
+**1)** *bhuj* mit *ni* beugen, senken: *nibhujati jānuśirasī*
 [PAT. a. a. O. 1,254,a.]
 
 — *pra* falten, zusammenlegen: *prabhujati vāsasī* ebend.
 
-- **RU:** *bhuj*¦ с *ni* сгибать, склонять: *nibhujati jānuśirasī*
+- **RU:** *bhuj* с *ni* сгибать, склонять: *nibhujati jānuśirasī*
 [PAT. a. a. O. 1,254,a.]
 
 — *pra* складывать, сворачивать: *prabhujati vāsasī* ebend.
-- **EN:** 1. *bhuj*¦ with *ni* to bend, lower: *nibhujati jānuśirasī*
+- **EN:** 1. *bhuj* with *ni* to bend, lower: *nibhujati jānuśirasī*
 [PAT. a. a. O. 1,254,a.]
 
 — *pra* to fold, fold together: *prabhujati vāsasī* ebend.
@@ -1680,18 +1680,18 @@ employing
 `_buj~~h7_00_pwg00`
 
 
-**3)** *bhuj*¦
+**3)** *bhuj*
  1) *bhukṣiṣīya*
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 lies *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* geniessen
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
 
-- **RU:** *bhuj*¦
+- **RU:** *bhuj*
  1) *bhukṣiṣīya*
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 исправить на *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* наслаждаться, вкушать
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
-- **EN:** 3. *bhuj*¦
+- **EN:** 3. *bhuj*
  1) *bhukṣiṣīya*
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 read *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* to enjoy
@@ -1703,14 +1703,14 @@ Z. 4 read *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* to enjoy
 `_buj~~h8_00_pwg00`
 
 
-**4)** *bhuj*¦
+**4)** *bhuj*
  1) füge bei das Haben, die Habe.
 Z. 5 lies 5, 48, 4.
 
-- **RU:** *bhuj*¦
+- **RU:** *bhuj*
  1) добавить обладание, имущество.
 Z. 5 исправить на 5, 48, 4.
-- **EN:** 4. *bhuj*¦
+- **EN:** 4. *bhuj*
  1) add: possession, property.
 Z. 5 read 5, 48, 4.
   <sub>lexicographic</sub>
@@ -1720,8 +1720,8 @@ Z. 5 read 5, 48, 4.
 `_buj~~h0_zz_pw`
 
 
-**root-gloss)** **1.** √*bhuj*¦, *bhujati* biegen.
-- **EN:** **1.** √*bhuj*¦, *bhujati* to bend.
+**root-gloss)** **1.** √*bhuj*, *bhujati* biegen.
+- **EN:** **1.** √*bhuj*, *bhujati* to bend.
 
 **passive)** — Pass. *bhujyate* gebeugt —, entmuthigt werden. — *bhugna*
 - **EN:** — Pass. *bhujyate* to be bent down, to be disheartened. — *bhugna*
@@ -1807,16 +1807,16 @@ Z. 5 read 5, 48, 4.
 - **EN:** — With *sam* to wind round [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* bent together.
   <sub>attested</sub>
 
-**in-compound)** **2.** *bhuj*¦ in *tribhuj*.
+**in-compound)** **2.** *bhuj* in *tribhuj*.
 
-- **RU:** **2.** *bhuj*¦ в *tribhuj*.
-- **EN:** **2.** *bhuj*¦ in *tribhuj*.
+- **RU:** **2.** *bhuj* в *tribhuj*.
+- **EN:** **2.** *bhuj* in *tribhuj*.
   <sub>lexicographic</sub>
 
-**root-gloss)** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+**root-gloss)** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
 
-- **RU:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
-- **EN:** **3.** √*bhuj*¦, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+- **RU:** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
+- **EN:** **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
   <sub>attested</sub>
 
 **1-enjoy-possess)** — 1〉 geniessen, Etwas zu geniessen haben, sowohl zu Nutzen haben, mit Nutzen besitzen, benutzen, sich dem Genuss von Etwas hingeben, als vom Genuss von Speisen; in der älteren Sprache mit Instr., in der späteren meistentheils mit Acc. ohne Object seine Mahlzeit halten und fressen (von Thieren); die Erde, ein Land, eine Stadt (Acc.) geniessen, den Nutzen von ihr haben, so v. a. beherrschen und sich in den Besitz setzen (von einem Fürsten gesagt); Jmd (Acc.) geniessen, so v. a. sich zu Nutzen machen, ausbeuten und geschlechtlich geniessen. In der späteren Sprache gewöhnlich Med.
@@ -2011,8 +2011,8 @@ Z. 5 read 5, 48, 4.
 **preverb-sam3-caus)** — Caus. Jmd (Acc.) speisen mit (Instr.).
 - **EN:** — Caus. to feed someone (Acc.) with (Instr.).
 
-**nominal-intro)** **4.** *bhuj*¦
-- **EN:** **4.** *bhuj*¦
+**nominal-intro)** **4.** *bhuj*
+- **EN:** **4.** *bhuj*
 
 **1-noun-senses)** — 1〉 _f._ das Nutzenbringen, Zugutekommen, Frommen; Genuss, Vortheil, Nutzen; das Haben, die Habe. Dat. *bhje* auch als Infin.
 - **EN:** — 1〉 _f._ the fact of being of benefit, of accruing to one's good, of profiting; enjoyment, advantage, use; having, possession. Dat. *bhje* also as Infin.
@@ -2032,25 +2032,25 @@ Z. 5 read 5, 48, 4.
 **2d-traversing-time)** — d〉 durchlaufend, erfüllend (von der Zeit).
 - **EN:** — d〉 passing through, fulfilling (of time).
 
-**with-preverb-intend-enjoy)** **3.** √*bhuj*¦ mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
+**with-preverb-intend-enjoy)** **3.** √*bhuj* mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
 
-- **RU:** **3.** √*bhuj*¦ с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
-- **EN:** **3.** √*bhuj*¦ with *upa* Desid. to intend to enjoy (conjugally) [HEM. PAR. 1,380].
+- **RU:** **3.** √*bhuj* с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
+- **EN:** **3.** √*bhuj* with *upa* Desid. to intend to enjoy (conjugally) [HEM. PAR. 1,380].
   <sub>attested</sub>
 
-**cross-ref)** **3.** √*bhuj*¦ mit *upa* Desid. 5.
+**cross-ref)** **3.** √*bhuj* mit *upa* Desid. 5.
 
-- **RU:** **3.** √*bhuj*¦ с *upa* Desid. 5.
-- **EN:** **3.** √*bhuj*¦ with *upa* Desid. 5.
+- **RU:** **3.** √*bhuj* с *upa* Desid. 5.
+- **EN:** **3.** √*bhuj* with *upa* Desid. 5.
   <sub>attested</sub>
 
-**PW1-root)** **1.** √*bhuj*¦, *bhujati* biegen.
+**PW1-root)** **1.** √*bhuj*, *bhujati* biegen.
 — Pass. *bhujyate* gebeugt —, entmuthigt werden. — *bhugna*
 — 1〉 gebogen, gekrümmt, gefurcht (Brauen), Seitwärts gedrängt, verdreht (Augen).
 — 2〉 gebeugt, entmuthigt.
 — 3〉 Bez. des Saṃdhi von *o* und *au* vor nicht-labialen Vocalen.
 
-- **RU:** **1.** √*bhuj*¦, *bhujati* «гнуть, сгибать».
+- **RU:** **1.** √*bhuj*, *bhujati* «гнуть, сгибать».
 — Pass. *bhujyate* «быть согнутым —, упасть духом». — *bhugna*
 — 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
 — 2〉 «согнутый, поникший, упавший духом».
@@ -2134,7 +2134,7 @@ Z. 5 read 5, 48, 4.
 — Caus. «кормить кого-либо» (Acc.) «вместе с» (Instr.).
   <sub>attested</sub>
 
-**PW4-def)** **4.** *bhuj*¦
+**PW4-def)** **4.** *bhuj*
 — 1〉 _f._ das Nutzenbringen, Zugutekommen, Frommen; Genuss, Vortheil, Nutzen; das Haben, die Habe. Dat. *bhje* auch als Infin.
 — 2〉 _Adj._ am Ende eines Comp.
 — a〉 geniessend, essend, theilhaftig, fleischlich geniessend. In Verbindung mit Wörtern, die Erde bedeuten, so v. a. beherrschend, Fürst, König.
@@ -2142,7 +2142,7 @@ Z. 5 read 5, 48, 4.
 — c〉 Nutzen bringend, frommend.
 — d〉 durchlaufend, erfüllend (von der Zeit).
 
-- **RU:** **4.** *bhuj*¦
+- **RU:** **4.** *bhuj*
 — 1〉 _f._ «принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество». Dat. *bhje* также как Infin.
 — 2〉 _Adj._ в конце Comp.
 — a〉 «наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся». В сочетании со словами, обозначающими землю, — то есть v. a. «властвующий, государь, царь».
@@ -2156,10 +2156,10 @@ Z. 5 read 5, 48, 4.
 `_buj~~h0_zz_sch`
 
 
-**desid-upa)** 3. bhuj¦ mit upa Desid. (ehelich) zu genießen willens sein, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
+**desid-upa)** 3. bhuj mit upa Desid. (ehelich) zu genießen willens sein, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
 
-- **RU:** 3. bhuj¦ с upa Desid. намереваться (супружески) вкусить, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
-- **EN:** 3. bhuj¦ with upa Desid. to be willing to enjoy (conjugally), [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
+- **RU:** 3. bhuj с upa Desid. намереваться (супружески) вкусить, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
+- **EN:** 3. bhuj with upa Desid. to be willing to enjoy (conjugally), [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
   <sub>attested</sub>
 
 ## bhuj
@@ -2167,14 +2167,14 @@ Z. 5 read 5, 48, 4.
 `_buj~~h0_zz_pwkvn`
 
 
-**desid-upa)** **3.** *bhuj*¦ mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
+**desid-upa)** **3.** *bhuj* mit *upa* Desid. zu geniessen (ehelich) Willens sein [HEM. PAR. 1,380].
 
-- **RU:** **3.** *bhuj*¦ с *upa* Desid. намереваться вкусить (супружески) [HEM. PAR. 1,380].
-- **EN:** **3.** *bhuj*¦ with *upa* Desid. to be willing to enjoy (conjugally) [HEM. PAR. 1,380].
+- **RU:** **3.** *bhuj* с *upa* Desid. намереваться вкусить (супружески) [HEM. PAR. 1,380].
+- **EN:** **3.** *bhuj* with *upa* Desid. to be willing to enjoy (conjugally) [HEM. PAR. 1,380].
   <sub>attested</sub>
 
-**cross-ref)** **3.** *bhuj*¦ mit *upa* Desid. 5.
+**cross-ref)** **3.** *bhuj* mit *upa* Desid. 5.
 
-- **RU:** **3.** *bhuj*¦ с *upa* Desid. 5.
-- **EN:** **3.** *bhuj*¦ with *upa* Desid. 5.
+- **RU:** **3.** *bhuj* с *upa* Desid. 5.
+- **EN:** **3.** *bhuj* with *upa* Desid. 5.
   <sub>lexicographic</sub>

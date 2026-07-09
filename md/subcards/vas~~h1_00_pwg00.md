@@ -3,7 +3,7 @@
 `vas~~h1_00_pwg00`
 
 
-**2.1)** 2. *vas*¦, *ucchati, aucchat, avasran, uvāsa, ūṣa*
+**2.1)** 2. *vas*, *ucchati, aucchat, avasran, uvāsa, ūṣa*
 2. pl. *ūṣus, avatsyat*, inf. *vastave*
 [ṚV. 1,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.02) hell werden, — sein, leuchten (vom Lichte des anbrechenden Morgens): *uvāsoṣā ucchācca nu*
 [ṚV. 1,48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.03) [10,11,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.03) *uṣaso revadūṣuḥ*
@@ -17,7 +17,7 @@
 [H. an. 3,253.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,253)
 [MED. t. 96.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,96)
 
-- **RU:** 2. *vas*¦, *ucchati, aucchat, avasran, uvāsa, ūṣa*
+- **RU:** 2. *vas*, *ucchati, aucchat, avasran, uvāsa, ūṣa*
 2. pl. *ūṣus, avatsyat*, inf. *vastave*
 [ṚV. 1,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.02) светать, быть светлым, сиять (о свете наступающего утра): *uvāsoṣā ucchācca nu*
 [ṚV. 1,48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.03) [10,11,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.03) *uṣaso revadūṣuḥ*

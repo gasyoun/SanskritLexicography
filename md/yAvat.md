@@ -7,14 +7,14 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `y_avat`
 
 
-**1)** *yāvat*¦ indecl. s. u. *yāvant* .
+**1)** *yāvat* indecl. s. u. *yāvant* .
 
-- **RU:** *yāvat*¦ см. indecl. s. u. *yāvant* .
+- **RU:** *yāvat* см. indecl. s. u. *yāvant* .
   <sub>lexicographic</sub>
 
-**1 (PW))** *yāvat*¦ _Indecl._ s. u. *yāvant*.
+**1 (PW))** *yāvat* _Indecl._ s. u. *yāvant*.
 
-- **RU:** *yāvat*¦ _Indecl._ s. u. *yāvant*.
+- **RU:** *yāvat* _Indecl._ s. u. *yāvant*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *yāvat* [Gen]: cependant, assurément, jusqu'à ce que. + Präs = Fut. + na : tant que ne pas.

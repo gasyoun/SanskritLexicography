@@ -3,7 +3,7 @@
 `_bid~~h1_00_pwg00`
 
 
-**1)** 2. *bhid*¦ (= 1. *bhid)*
+**1)** 2. *bhid* (= 1. *bhid)*
  1) _adj._ am Ende eines comp. spaltend u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
@@ -13,7 +13,7 @@ Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
 [RAGH. 1,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,61) *agha˚* verscheuchend
 [BHĀG. P. 3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
 
-- **RU:** 2. *bhid*¦ (= 1. *bhid)*
+- **RU:** 2. *bhid* (= 1. *bhid)*
  1) _adj._ в конце comp. раскалывающий u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* разбивающий, сокрушающий
@@ -22,7 +22,7 @@ Sch. *iṅgudīphala˚ (upala)* разбивающий, сокрушающий
 [PAÑCAR. 4,3,108.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,108) [H. 10.](https://sanskrit-lexicon-scans.github.io/abch2/app1?10) *dṛṣṭalakṣya˚* поражающий
 [RAGH. 1,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,61) *agha˚* рассеивающий, отгоняющий
 [BHĀG. P. 3,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,23) Vgl. *aśma˚, giri˚, gotra˚, takra˚, tamo˚, naga˚, puṭa˚, pura˚, puṣpadanta˚, pūrbhid˚, brahma˚* .
-- **EN:** 2. *bhid*¦ (= 1. *bhid)*
+- **EN:** 2. *bhid* (= 1. *bhid)*
  1) _adj._ at the end of a comp. cleaving u. s. w.
 [P. 3,2,61.](https://ashtadhyayi.com/sutraani/3/2/61) *kāṣṭha˚*
 Sch. *iṅgudīphala˚ (upala)* breaking, crushing

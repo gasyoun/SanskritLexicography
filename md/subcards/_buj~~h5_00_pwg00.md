@@ -3,14 +3,14 @@
 `_buj~~h5_00_pwg00`
 
 
-**1)** 3. *bhuj*¦
+**1)** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. oben u. 1. *bhuj* .
 
-- **RU:** 3. *bhuj*¦
+- **RU:** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. выше u. 1. *bhuj* .
-- **EN:** 3. *bhuj*¦
+- **EN:** 3. *bhuj*
  1)
 [Sp. 302, Z. 9. fgg.] vgl. above u. 1. *bhuj* .
   <sub>attested</sub>

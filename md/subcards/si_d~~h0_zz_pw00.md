@@ -3,8 +3,8 @@
 `si_d~~h0_zz_pw00`
 
 
-**1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
-- **EN:** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+**1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+- **EN:** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 
 **1)** — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
 - **EN:** — 1〉 to scare, drive; drive away. *siddha* scared away.
@@ -192,13 +192,13 @@
 - **EN:** — With **vi* (*˚sedhati*) to betake oneself to (Acc.).
   <sub>attested</sub>
 
-**root-1)** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+**root-1)** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 — 1〉 scheuchen, treiben; vertreiben. *siddha* verscheucht.
 — 2〉 loben oder strafen [BHAṬṬ.]
 — *Desid. vom Caus. *siṣedhayiṣati*.
 — *Intens. *seṣidhyate*. Vgl. *anu*.
 
-- **RU:** **1.** √*sidh*¦, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
+- **RU:** **1.** √*sidh*, *sedhati* (*gatikarman*, *śāstre māṅgalye ca*)
 — 1〉 пугать, гнать; прогонять. *siddha* прогнанный.
 — 2〉 хвалить или карать [BHAṬṬ.]
 — *Desid. от Caus. *siṣedhayiṣati*.

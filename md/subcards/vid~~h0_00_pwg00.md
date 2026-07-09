@@ -3,12 +3,12 @@
 `vid~~h0_00_pwg00`
 
 
-**1)** *vid*¦, *vetti* (*jñāne*)
+**1)** *vid*, *vetti* (*jñāne*)
 [DHĀTUP. 24,56.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) Im Veda: *viddhi, vittāt, vittam, vidyām, vedat, vedathas, vedati, avet, vet* (*aves* aus den Saṃhitā nicht zu belegen; über *ves* s. unter 1. *viṣ* und *vī); veda, vettha, vidathus, vidma, vida, vidus, vidvaṃs* (s. bes.). In den
 [BRĀHMAṆA] u. s. w. : *vidmasi*
 [ŚĀṄKH. ŚR. 15,27,3.] *vittha*
 
-- **RU:** *vid*¦, *vetti* (*jñāne*)
+- **RU:** *vid*, *vetti* (*jñāne*)
 [DHĀTUP. 24,56.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) В Veda: *viddhi, vittāt, vittam, vidyām, vedat, vedathas, vedati, avet, vet* (*aves* из Saṃhitā не засвидетельствовано; о *ves* s. см. под 1. *viṣ* и *vī); veda, vettha, vidathus, vidma, vida, vidus, vidvaṃs* (s. bes.). В
 [BRĀHMAṆA] u. s. w. : *vidmasi*
 [ŚĀṄKH. ŚR. 15,27,3.] *vittha*

@@ -3,16 +3,16 @@
 `mad~~h2_00_pwg00`
 
 
-**main-intox)** 1. *mad*¦ mit *abhi*
+**main-intox)** 1. *mad* mit *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* berauscht
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
 
-- **RU:** 1. *mad*¦ с *abhi*
+- **RU:** 1. *mad* с *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьянённый
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
-- **EN:** 1. *mad*¦ with *abhi*
+- **EN:** 1. *mad* with *abhi*
  2)
 [ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* intoxicated
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)

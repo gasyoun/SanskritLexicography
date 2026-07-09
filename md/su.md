@@ -7,7 +7,7 @@ _PWG article — 34 sub-card(s), 131 sense(s) · RU 94/131 · EN 87/131_
 `su~~h0_00_pwg00`
 
 
-**1)** 1. *su*¦, *sunoti*
+**1)** 1. *su*, *sunoti*
 [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe*
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
@@ -61,7 +61,7 @@ _PWG article — 34 sub-card(s), 131 sense(s) · RU 94/131 · EN 87/131_
 [BHĀG. P. 7,15,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,48) neutr. [CHĀND. UP. 5,12,1.]
 — Vgl. 1. *sava*, 1. *savana, asuta, adriṣuta, jambhasuta, suṣuta* .
 
-- **RU:** *su*¦, *sunoti*
+- **RU:** *su*, *sunoti*
 [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe*
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
@@ -114,7 +114,7 @@ _PWG article — 34 sub-card(s), 131 sense(s) · RU 94/131 · EN 87/131_
 [10,6,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,8) = *somayāga*
 [BHĀG. P. 7,15,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,48) neutr. [CHĀND. UP. 5,12,1.]
 — Vgl. 1. *sava*, 1. *savana, asuta, adriṣuta, jambhasuta, suṣuta* .
-- **EN:** *su*¦, *sunoti* [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe* [VOP.]). *sunota* [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana* [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta* [10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* and *sunvat* [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; med. *sunve*
+- **EN:** *su*, *sunoti* [DHĀTUP. 27,1](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=27) (*abhiṣave, saṃdhākledapīḍāmanthe* [VOP.]). *sunota* [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana* [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta* [10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* and *sunvat* [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; med. *sunve*
   <sub>attested</sub>
 
 **3)** sg. [7,29,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.01) [9,88,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.088.html#rv09.088.01) *sunvire, sunudhvam, sunavai*
@@ -437,12 +437,12 @@ Schol. к [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 `su~~h1_00_pwg00`
 
 
-**1)** *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+**1)** *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
 [BRĀHMAṆA]): *suvate*
-- **EN:** *su*¦ (*sū), savati (prasavaiśvaryayoḥ*) [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati* [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*, [VOP.] *kṣepe)*.* suvatāt*; med. (in the [BRĀHMAṆA]): *suvate*
+- **EN:** *su* (*sū), savati (prasavaiśvaryayoḥ*) [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati* [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*, [VOP.] *kṣepe)*.* suvatāt*; med. (in the [BRĀHMAṆA]): *suvate*
 
 **3)** pl. [ŚAT. BR. 5,3,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,13) *suvāntai* 14. *suvante*
 [TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *suvai, suvāvahai*
@@ -476,13 +476,13 @@ Schol. к [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [5,6,3,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,4) [7,5,15,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,15,2) [TBR. 1,8,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,1,1) [ŚAT. BR. 5,4,3,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,23) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,8) [5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,2,1) [PAÑCAV. BR. 18,9,1. 10,1.] pass.: *yo vai somena sūyate (= niṣpadyate* Comm.) [TBR. 2,7,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,5,1) *sūyate ha vā asya kṣatram* [AIT. BR. 8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5) [ŚAT. BR. 5,3,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,1,3) [3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,11) [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,15) [9,3,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,6) *agnisavena suto bhavati* 9. *sarvaṃ vastatsutam* for all this you are authorized [13,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,17) *sūyate vā eṣa yo 'gniṃ cinute* [TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* Comm.) so v. a. be set into action [MAITRYUP. 6,16.] *mā na sāvīrmahāstrāṇi* so v. a. hurl [BHAṬṬ. 9,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,50) — *prajāpateḥ sutaṃ rayiṣṭham* N. of a Sāman [Ind. St. 3,225,a.]
 — Vgl. 2. *sava*, 2. *savana*, 1. *savitar, savīman*.
 
-**2.)** 2. *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+**2.)** 2. *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
 [BRĀHMAṆA]): *suvate*
 
-- **RU:** 2. *su*¦ (*sū), savati (prasavaiśvaryayoḥ*)
+- **RU:** 2. *su* (*sū), savati (prasavaiśvaryayoḥ*)
 [DHĀTUP. 22,43.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) *suvati*
 [28,115](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*preraṇe*,
 [VOP.] *kṣepe)*.* suvatāt*; med. (in den
@@ -1050,10 +1050,10 @@ Schol. к [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 `su~~h2_00_pwg00`
 
 
-**1)** 3. *su*¦ _adj._ in *dāvasu* vielleicht auf 2. *su* zurückzuführen.
+**1)** 3. *su* _adj._ in *dāvasu* vielleicht auf 2. *su* zurückzuführen.
 
-- **RU:** 3. *su*¦ _adj._ в *dāvasu*, возможно, восходит к 2. *su*.
-- **EN:** 3. *su*¦ _adj._ in *dāvasu* perhaps to be traced back to 2. *su*.
+- **RU:** 3. *su* _adj._ в *dāvasu*, возможно, восходит к 2. *su*.
+- **EN:** 3. *su* _adj._ in *dāvasu* perhaps to be traced back to 2. *su*.
   <sub>attested</sub>
 
 ## su
@@ -1061,8 +1061,8 @@ Schol. к [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 `su~~h3_00_pwg00`
 
 
-**1)** *su*¦ *(sū), sūte* [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*). [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve* ? 1. sg. [ṚV. 10,125,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.125.html#rv10.125.07) *suvai* [VOP. 9,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,40) *suvāte, suvate* 3 pl., *suvāna; asūta, sūta*; später auch *sūyate* [DHĀTUP. 26,23](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*prāṇiprasave*).* savati* und *sauti* s. u. *pra*.* suṣuve, susāva, sasūva* ? ([P. 7,4,74](https://ashtadhyayi.com/sutraani/7/4/74)) [ṚV. 4,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.10) [10,86,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.23) [AV. 10,1,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.23) *asaviṣṭa* und *asoṣṭa* ([CHĀND. UP. 3,17,5]) [VOP. 8,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,40) [46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *savitā* und *sotā* [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) *soṣyate* und *soṣyati* ( [CHĀND. UP. 3,17,5]); *sūṣyantī* und *soṣyantī* [ŚAT. BR. 14,9,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,22) *sūtave* [ṚV. 10,184,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.184.html#rv10.184.03) [AV. 1,11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.02) *savitave* [6,17,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.017.html#av06.017.01) *sūtvā* [KĀŚ.] zu [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) [TS. 2,1,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,5,4) partic. *sūta, suta* (s. besonders; nur wegen *suta* und *suṣuti* ist die Annahme von *su* mit kurzem *u* gerechtfertigt) und *sūna* ([P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45) [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88)). zeugen, gebären
-- **EN:** *su*¦ *(sū), sūte* [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*). [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve* — root su, homonym 4: originally attested only in the 3rd person plural pl., *suvāna; asūta, sūta*; later also *sūyate* [DHĀTUP. 26,23](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*prāṇiprasave*).* savati* and *sauti* s. u. *pra*.* suṣuve, susāva, sasūva* ([P. 7,4,74](https://ashtadhyayi.com/sutraani/7/4/74)) [ṚV. 4,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.10) [10,86,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.23) [AV. 10,1,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.23) *asaviṣṭa* and *asoṣṭa* ([CHĀND. UP. 3,17,5]) [VOP. 8,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,40) [46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *savitā* and *sotā* [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) *soṣyate* and *soṣyati* ([CHĀND. UP. 3,17,5]); *sūṣyantī* and *soṣyantī* [ŚAT. BR. 14,9,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,22) *sūtave* [ṚV. 10,184,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.184.html#rv10.184.03) [AV. 1,11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.02) *savitave* [6,17,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.017.html#av06.017.01) *sūtvā* [KĀŚ.] as to [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) [TS. 2,1,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,5,4) partic. *sūta, suta* (s. in particular; only on account of *suta* and *suṣuti* is the assumption of *su* with short *u* justified) and *sūna* ([P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45) [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88)) — to beget, to bring forth.
+**1)** *su* *(sū), sūte* [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*). [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve* ? 1. sg. [ṚV. 10,125,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.125.html#rv10.125.07) *suvai* [VOP. 9,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,40) *suvāte, suvate* 3 pl., *suvāna; asūta, sūta*; später auch *sūyate* [DHĀTUP. 26,23](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*prāṇiprasave*).* savati* und *sauti* s. u. *pra*.* suṣuve, susāva, sasūva* ? ([P. 7,4,74](https://ashtadhyayi.com/sutraani/7/4/74)) [ṚV. 4,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.10) [10,86,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.23) [AV. 10,1,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.23) *asaviṣṭa* und *asoṣṭa* ([CHĀND. UP. 3,17,5]) [VOP. 8,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,40) [46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *savitā* und *sotā* [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) *soṣyate* und *soṣyati* ( [CHĀND. UP. 3,17,5]); *sūṣyantī* und *soṣyantī* [ŚAT. BR. 14,9,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,22) *sūtave* [ṚV. 10,184,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.184.html#rv10.184.03) [AV. 1,11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.02) *savitave* [6,17,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.017.html#av06.017.01) *sūtvā* [KĀŚ.] zu [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) [TS. 2,1,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,5,4) partic. *sūta, suta* (s. besonders; nur wegen *suta* und *suṣuti* ist die Annahme von *su* mit kurzem *u* gerechtfertigt) und *sūna* ([P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45) [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88)). zeugen, gebären
+- **EN:** *su* *(sū), sūte* [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*). [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve* — root su, homonym 4: originally attested only in the 3rd person plural pl., *suvāna; asūta, sūta*; later also *sūyate* [DHĀTUP. 26,23](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26) (*prāṇiprasave*).* savati* and *sauti* s. u. *pra*.* suṣuve, susāva, sasūva* ([P. 7,4,74](https://ashtadhyayi.com/sutraani/7/4/74)) [ṚV. 4,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.10) [10,86,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.23) [AV. 10,1,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.23) *asaviṣṭa* and *asoṣṭa* ([CHĀND. UP. 3,17,5]) [VOP. 8,40.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,40) [46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *savitā* and *sotā* [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) *soṣyate* and *soṣyati* ([CHĀND. UP. 3,17,5]); *sūṣyantī* and *soṣyantī* [ŚAT. BR. 14,9,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,22) *sūtave* [ṚV. 10,184,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.184.html#rv10.184.03) [AV. 1,11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.02) *savitave* [6,17,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.017.html#av06.017.01) *sūtvā* [KĀŚ.] as to [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) [TS. 2,1,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,5,4) partic. *sūta, suta* (s. in particular; only on account of *suta* and *suṣuti* is the assumption of *su* with short *u* justified) and *sūna* ([P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45) [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88)) — to beget, to bring forth.
 
 **2)** [ṚV. 1,135,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.08) [164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) [168,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.09) *nārī naryaṃ susāva* [7,20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.020.html#rv07.020.05) *sūṣyantī* [5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) *asūta pūrvo vṛṣabhaḥ* wurde geboren [3,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.05) *yadīṃ suvāte uṣasā* [5,1,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.01) [2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.02) *starīryatsūta* [10,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.10) *suvānā putrān* [AV. 2,36,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.036.html#av02.036.03) brüten (von Vögeln) [ṚV. 1,164,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.22) pass. wohl hierher: *asāvanyo asura sūyata dyauḥ* [10,132,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.132.html#rv10.132.04)
 - **EN:** [ṚV. 1,135,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.08) [164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) [168,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.09) *nārī naryaṃ susāva* [7,20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.020.html#rv07.020.05) *sūṣyantī* [5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) *asūta pūrvo vṛṣabhaḥ* — was born; [3,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.05) *yadīṃ suvāte uṣasā* [5,1,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.01) [2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.02) *starīryatsūta* [10,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.10) *suvānā putrān* [AV. 2,36,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.036.html#av02.036.03) — to brood, to hatch (of birds); [ṚV. 1,164,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.22) pass. probably belongs here too: *asāvanyo asura sūyata dyauḥ* [10,132,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.132.html#rv10.132.04)
@@ -1076,7 +1076,7 @@ Schol. к [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 **5)** — Vgl. *savitrī* . — *nis* vgl. *niḥṣūti* . — *pra* 1) gebären: *prasūte sma sutam* [KATHĀS. 39,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,19) [56,287.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,287) [MĀRK. P. 51,114.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,114) *prāsūta* [R. 7,35,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,21) [KATHĀS. 17,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,65) *kanyā prasūyate* [MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) [ṢAḌV. BR. 5,11.] [SUŚR. 1,367,18.] [Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403) [VARĀH. BṚH. 5,8. 11. 16.] [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate* Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ* [MĀRK. P. 49,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,10) *prasavanti* [MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) *prasavantī* [M. 4,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,44) *prasuṣuve* [BHĀG. P. 3,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,2) *prāsoṣṭa* [RĀJA-TAR. 3,106.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,106) [4,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,39) [BHAṬṬ. 1,14.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,14) *prasaviṣyasi* [R. 7,9,24.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,9,24) [MĀRK. P. 51,113.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,113) [77,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,6) [BHĀG. P. 3,21,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,29) *prasoṣyantī* [11,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,1,15) *prasūya* [ŚĀK. 94.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?94) [95](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95), v. l. [KATHĀS. 14,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,38) [PRAB. 11,10.] *prasotum* [BHAṬṬ. 1,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,13) erzeugen: *prasūyate* [M. 10,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,27) [30. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,30) *anena prasaviṣyadhvam* Nachkommenschaft haben [BHAG. 3,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,10) erzeugen in uneig. Bed.: *(buddhiḥ) prasūte hi phalaṃ śrīmadaraṇīva hutāśanam* [KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062) *dhūmaṃ prasauti (agniḥ)* [RĀJA-TAR. 5,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,125) *aṣṭamāsadhṛtaṃ garbham — dyauḥ prasūyate* [R. 4,27,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,3) *prasūyate saṃgatiḥ śriyam* [PRAB. 86,18.] *(drumāḥ) śayanāni prasūyante citrāstaraṇavanti* [R. 4,44,99.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,99) [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate* [Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816) *taravaḥ prāsūyanta* trugen Früchte [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu* [MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) (*śāstraviṭapī*) *phalaṃ prasūya* [Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426)
 - **EN:** — Vgl. *savitrī*. — *nis* vgl. *niḥṣūti*. — *pra* 1) to bring forth, to bear: *prasūte sma sutam* [KATHĀS. 39,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,19) [56,287.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,287) [MĀRK. P. 51,114.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,114) *prāsūta* [R. 7,35,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,21) [KATHĀS. 17,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,65) *kanyā prasūyate* [MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) [ṢAḌV. BR. 5,11.] [SUŚR. 1,367,18.] [Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403) [VARĀH. BṚH. 5,8. 11. 16.] [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate* Schol. as to [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ* [MĀRK. P. 49,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,10) *prasavanti* [MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) *prasavantī* [M. 4,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,44) *prasuṣuve* [BHĀG. P. 3,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,2) *prāsoṣṭa* [RĀJA-TAR. 3,106.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,106) [4,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,39) [BHAṬṬ. 1,14.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,14) *prasaviṣyasi* [R. 7,9,24.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,9,24) [MĀRK. P. 51,113.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,113) [77,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,6) [BHĀG. P. 3,21,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,29) *prasoṣyantī* [11,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,1,15) *prasūya* [ŚĀK. 94.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?94) [95](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95), v. l. [KATHĀS. 14,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,38) [PRAB. 11,10.] *prasotum* [BHAṬṬ. 1,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,13) — to engender: *prasūyate* [M. 10,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,27) [30. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,30) *anena prasaviṣyadhvam* — to have offspring; [BHAG. 3,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,10) — to engender, in uneig. Bed.: *(buddhiḥ) prasūte hi phalaṃ śrīmadaraṇīva hutāśanam* [KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062) *dhūmaṃ prasauti (agniḥ)* [RĀJA-TAR. 5,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,125) *aṣṭamāsadhṛtaṃ garbham — dyauḥ prasūyate* [R. 4,27,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,3) *prasūyate saṃgatiḥ śriyam* [PRAB. 86,18.] *(drumāḥ) śayanāni prasūyante citrāstaraṇavanti* [R. 4,44,99.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,99) [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate* [Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816) *taravaḥ prāsūyanta* — bore fruit; [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu* [MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) (*śāstraviṭapī*) *phalaṃ prasūya* [Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426)
 
-**4-intro)** 4. *su*¦ *(sū), sūte*
+**4-intro)** 4. *su* *(sū), sūte*
 [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*).
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186)
 [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve*
@@ -1096,7 +1096,7 @@ Schol. к [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 [KĀŚ.] zu [P. 7,2,44.](https://ashtadhyayi.com/sutraani/7/2/44) [TS. 2,1,5,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,5,4) partic. *sūta, suta* (s. besonders; nur wegen *suta* und *suṣuti* ist die Annahme von *su* mit kurzem *u* gerechtfertigt) und *sūna*
 ([P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45) [VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88)).
 
-- **RU:** 4. *su*¦ *(sū), sūte*
+- **RU:** 4. *su* *(sū), sūte*
 [DHĀTUP. 24,21](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=24) (*prāṇigarbhavimocane*).
 [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186)
 [VOP. 9,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,39) *suve*
@@ -1677,7 +1677,7 @@ Schol. to [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 `su~~h4_00_pwg00`
 
 
-**1)** *su*¦, *savati*
+**1)** *su*, *savati*
 v. l. für *sru (gatau)*
 [DHĀTUP. 22,42.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 [VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* und *sotā* 96.
@@ -1686,12 +1686,12 @@ v. l. for *sru (gatau)*
 [DHĀTUP. 22,42.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 [VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* and *sotā* 96.
 
-**main)** 5. *su*¦, *savati*
+**main)** 5. *su*, *savati*
 v. l. für *sru (gatau)*
 [DHĀTUP. 22,42.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 [VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* und *sotā* 96.
 
-- **RU:** 5. *su*¦, *savati*
+- **RU:** 5. *su*, *savati*
 v. l. для *sru (gatau)*
 [DHĀTUP. 22,42.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 [VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* und *sotā* 96.
@@ -1702,7 +1702,7 @@ v. l. для *sru (gatau)*
 `su~~h5_00_pwg00`
 
 
-**6.intro)** 6. *su*¦ _adv._ gaṇa *cādi*
+**6.intro)** 6. *su* _adv._ gaṇa *cādi*
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) über die euphonischen Veränderungen des Wortes (*ṣu, ṣū*), über die Dehnung eines vorangehenden Vocals und über den Wandel eines nachfolgenden *na* in *ṇa* handeln
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]
@@ -1714,7 +1714,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [MED.] *anāyāsa*
 [BHAR.] zu [AK.] nach [ŚKDR.]
 
-- **RU:** 6. *su*¦ _adv._ gaṇa *cādi*
+- **RU:** 6. *su* _adv._ gaṇa *cādi*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) об эвфонических изменениях слова (*ṣu, ṣū*), об удлинении предшествующего гласного и о переходе последующего *na* в *ṇa*
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]
@@ -1725,7 +1725,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [H. 1535](https://sanskrit-lexicon-scans.github.io/abch2/app1?1535), Schol. [MED.] *bhṛśa, anumati, kṛcchra, samṛddhi*
 [MED.] *anāyāsa*
 [BHAR.] к [AK.] по [ŚKDR.]
-- **EN:** 6. *su*¦ _adv._ gaṇa *cādi*
+- **EN:** 6. *su* _adv._ gaṇa *cādi*
 on [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,8) treat of the euphonic changes of the word (*ṣu, ṣū*), of the lengthening of a preceding vowel and of the change of a following *na* into *ṇa*
 [VS. PRĀT. 4,183.]
 [TS. PRĀT. 3,7.] [14.]
@@ -1974,7 +1974,7 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 `su~~h0_zz_pw`
 
 
-**headword and conjugation note)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+**headword and conjugation note)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 - **EN:** **1.** √*su*, *sunoti* (also Med.), *sunvāna* and *suvāna* (*svāna* to be pronounced and always taken passively); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 
 **1) to press out, distil (auspressen, keltern))** — 1〉 auspressen, keltern (den Soma).
@@ -2076,43 +2076,43 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 - **EN:** — With *abhisam* to press simultaneously for (Acc.).
   <sub>attested</sub>
 
-**= 1.su, caused/impelled)** **2.** √*su*¦ = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+**= 1.su, caused/impelled)** **2.** √*su* = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 
-- **RU:** **2.** √*su*¦ = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 - **EN:** **2.** √*su* = **1.** *sū*. From it *sauti* (only [ŚAT. BR.]) and *suhi* (v. l. *sūhi*). Partic. *suta* caused, impelled ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
   <sub>attested</sub>
 
-**cross-reference)** **3.** *su*¦ _Adj._ in *dāvasu*.
+**cross-reference)** **3.** *su* _Adj._ in *dāvasu*.
 
-- **RU:** **3.** *su*¦ _Adj._ в *dāvasu*.
+- **RU:** **3.** *su* _Adj._ в *dāvasu*.
 - **EN:** **3.** *su* _Adj._ in *dāvasu*.
   <sub>attested</sub>
 
-**= 2.sū, beget)** **4.** √*su*¦ = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
+**= 2.sū, beget)** **4.** √*su* = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
 
-- **RU:** **4.** √*su*¦ = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
+- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
 - **EN:** **4.** √*su* = **2.** *sū*. Only *prasvati* (rare), *prasauti* (desgl.), *suta* son and *suṣuti*.
   <sub>attested</sub>
 
-**rare root)** **5.** *√*su*¦, *savati* (*gatau*).
+**rare root)** **5.** *√*su*, *savati* (*gatau*).
 
-- **RU:** **5.** *√*su*¦, *savati* (*gatau*).
+- **RU:** **5.** *√*su*, *savati* (*gatau*).
 - **EN:** **5.** *√*su*, *savati* (*gatau*).
   <sub>lexicographic</sub>
 
-**particle: well, good; intensifying or affirming)** **6.** *su*, *sū*¦ _Adv._ wohl, gut; überhaupt verstärkend oder versichernd; gewiss, leichtlich, völlig u. s. w. wie wohl in älteren deutschen Liedern. Steht selbständig nie am Anfange eines Verses. Häufig am Anfange eines Comp. vor Adjectiven und Substantiven; in der späteren Sprache auch in Verbindung mit einem Absol.
+**particle: well, good; intensifying or affirming)** **6.** *su*, *sū* _Adv._ wohl, gut; überhaupt verstärkend oder versichernd; gewiss, leichtlich, völlig u. s. w. wie wohl in älteren deutschen Liedern. Steht selbständig nie am Anfange eines Verses. Häufig am Anfange eines Comp. vor Adjectiven und Substantiven; in der späteren Sprache auch in Verbindung mit einem Absol.
 
-- **RU:** **6.** *su*, *sū*¦ _Adv._ хорошо, благо; вообще усилительно или заверяющее; несомненно, легко, совершенно u. s. w. как wohl в старых немецких песнях. Самостоятельно никогда не стоит в начале стиха. Часто в начале Comp. перед прилагательными и существительными; в позднейшем языке также в сочетании с Absol.
+- **RU:** **6.** *su*, *sū* _Adv._ хорошо, благо; вообще усилительно или заверяющее; несомненно, легко, совершенно u. s. w. как wohl в старых немецких песнях. Самостоятельно никогда не стоит в начале стиха. Часто в начале Comp. перед прилагательными и существительными; в позднейшем языке также в сочетании с Absol.
 - **EN:** **6.** *su*, *sū* _Adv._ well, good; generally intensifying or affirming; certainly, easily, completely u. s. w. as well in older German songs. Used independently, never at the beginning of a verse. Frequently at the beginning of a Comp. before adjectives and substantives; in the later language also in connection with a Absol.
   <sub>attested</sub>
 
 **addendum marker)** {{Lbody=128531}}
 - **EN:** {{Lbody=128531}}
 
-**1_auspressen)** **1.** √*su*¦, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+**1_auspressen)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 auspressen, keltern (den Soma).
 
-- **RU:** **1.** √*su*¦, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 выжимать, прессовать (Soma).
   <sub>attested</sub>
 
@@ -2135,10 +2135,10 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 `su~~h0_zz_sch`
 
 
-**with ava-: to pour upon, add to)** su¦ mit ˚ava beigießen, [Kauṭ. 94,3] v.u. suūtí, so zu betonen.
+**with ava-: to pour upon, add to)** su mit ˚ava beigießen, [Kauṭ. 94,3] v.u. suūtí, so zu betonen.
 - **EN:** su with ˚ava to pour upon, add to, [Kauṭ. 94,3] v.u. suūtí, to be accented thus.
 
-**sch_main)** su¦ mit ˚ava beigießen, [Kauṭ. 94,3] v.u. suūtí, so zu betonen. {part=,seq=26971,type=,n=2}
+**sch_main)** su mit ˚ava beigießen, [Kauṭ. 94,3] v.u. suūtí, so zu betonen. {part=,seq=26971,type=,n=2}
 
-- **RU:** su¦ с ˚ava доливать, подливать, [Kauṭ. 94,3] ниже. suūtí, так следует ставить ударение. {part=,seq=26971,type=,n=2}
+- **RU:** su с ˚ava доливать, подливать, [Kauṭ. 94,3] ниже. suūtí, так следует ставить ударение. {part=,seq=26971,type=,n=2}
   <sub>attested</sub>

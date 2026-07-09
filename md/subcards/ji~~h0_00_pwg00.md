@@ -3,7 +3,7 @@
 `ji~~h0_00_pwg00`
 
 
-*ji*¦, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
+*ji*, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
 [MBH. 4,1604](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604); *ajaiṣīt*, ved. *jeṣas, jeṣat, jeṣma, jeṣma, jeṣāma, (sam) ajais, jes, jeṣi*
 2. sg. med., *ajeṣṭa (parājaiṣṭa*
 [MBH. 1,6378](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378)), *ajījayat*
@@ -17,7 +17,7 @@
 [TBR. 2,4,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,4,3,2) pass. *jīyate, ajāyi, jāyiṣyate; jita* .
 [DHĀTUP. 15,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) [22,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 
-- **RU:** *ji*¦, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
+- **RU:** *ji*, *jayati* und *˚te* (insbes. mit *parā* und *vi)ḥ (parā) jayyāt*
 [MBH. 4,1604](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604); *ajaiṣīt*, ved. *jeṣas, jeṣat, jeṣma, jeṣma, jeṣāma, (sam) ajais, jes, jeṣi*
 2. sg. med., *ajeṣṭa (parājaiṣṭa*
 [MBH. 1,6378](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378)), *ajījayat*

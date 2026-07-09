@@ -3,9 +3,9 @@
 `m_a~~h9_00_pwg00`
 
 
-**3)** *mā*¦ mit *anu*, partic. *anumita* _n._ Schlussfolgerung
+**3)** *mā* mit *anu*, partic. *anumita* _n._ Schlussfolgerung
 [PAT. a. a. O. 3,78,b.]
-- **EN:** *mā*¦ with *anu*, partic. *anumita* _n._ "conclusion, inference"
+- **EN:** *mā* with *anu*, partic. *anumita* _n._ "conclusion, inference"
 [PAT. a. a. O. 3,78,b.]
 
 **3 (cont.))** — *sam*, die Stelle
@@ -20,9 +20,9 @@
  2) explained more correctly.
   <sub>attested</sub>
 
-**main)** 3. *mā*¦ mit *anu*, partic. *anumita* _n._ Schlussfolgerung
+**main)** 3. *mā* mit *anu*, partic. *anumita* _n._ Schlussfolgerung
 [PAT. a. a. O. 3,78,b.]
 
-- **RU:** 3. *mā*¦ mit *anu*, partic. *anumita* _n._ умозаключение
+- **RU:** 3. *mā* mit *anu*, partic. *anumita* _n._ умозаключение
 [PAT. a. a. O. 3,78,b.]
   <sub>attested</sub>

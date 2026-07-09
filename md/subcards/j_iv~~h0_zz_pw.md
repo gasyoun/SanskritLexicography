@@ -3,12 +3,12 @@
 `j_iv~~h0_zz_pw`
 
 
-**1)** √*jīv*¦, *jīvati* (metrisch auch Med.)
+**1)** √*jīv*, *jīvati* (metrisch auch Med.)
 — 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
-- **RU:** √*jīv*¦, *jīvati* (метрически также Med.)
+- **RU:** √*jīv*, *jīvati* (метрически также Med.)
 — 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так v. a. остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
-- **EN:** √*jīv*¦, *jīvati* (metrically also Med.)
+- **EN:** √*jīv*, *jīvati* (metrically also Med.)
 — 1〉 to live, be alive, — remain alive. *jīva jīva* 'mayest thou live long!' Also with the Acc. *jīvikām, jīvant* and *jīvita* (exceptionally) 'living, alive, still being alive'. *jīvangacchati* thus v. a. 'remains alive' [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
   <sub>attested</sub>
 
@@ -199,8 +199,8 @@ With *punar* dass. *jīvita* 'revived again'.
 - **EN:** — With *pratisam* revival (n.).
   <sub>attested</sub>
 
-**adhi-caus)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
-- **EN:** √*jīv*¦ with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
+**adhi-caus)** √*jīv* mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
+- **EN:** √*jīv* with *adhi* Caus. to animate [DHARMAŚARM. 15,1].
 
 **abhi2)** — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 - **EN:** — With *abhi* to be more fortunate in life than (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
@@ -264,9 +264,9 @@ With *punar* dass. *jīvita* 'revived again'.
 — 2〉 поддерживать жизнь кого-л., кормить.
   <sub>attested</sub>
 
-**PW 2nd record — adhi- caus.)** √*jīv*¦ mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
+**PW 2nd record — adhi- caus.)** √*jīv* mit *adhi* Caus. beleben [DHARMAŚARM. 15,1].
 — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
-- **RU:** √*jīv*¦ с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
+- **RU:** √*jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
 — С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
   <sub>attested</sub>

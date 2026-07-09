@@ -3,12 +3,12 @@
 `ban_d~~h2_00_pwg00`
 
 
-*bandh*¦
+*bandh*
 
-- **RU:** *bandh*¦
+- **RU:** *bandh*
   <sub>attested</sub>
 
-**1)** *bandh*¦
+**1)** *bandh*
  3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
 [Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
 - **EN:** *bandh*

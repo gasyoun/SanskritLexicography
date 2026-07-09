@@ -49,15 +49,24 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .coloc{margin:26px 0 8px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
 .coloc h4{margin:0 0 4px;font-size:15px}
 .coloc .hint{color:var(--mut);font-size:12px;margin-bottom:10px}
-.colcol{margin:10px 0}
+.coloc .hint a{color:var(--accent)}
+.leaf{margin:12px 0;padding-top:8px;border-top:1px solid var(--line)}
+.leaf .llab{font-size:12px;color:var(--mut);margin-bottom:6px}
+.leaf .llab b{color:var(--fg)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.pair{grid-template-columns:1fr}}
+.colcol{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .colcol .clab{font-size:12px;color:var(--mut);font-family:ui-monospace,monospace}
+.colcol .side{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;margin-left:5px}
 .colcol a.scan{color:var(--accent);font-size:12px;text-decoration:none;border-bottom:1px dotted var(--accent);margin-left:6px}
 .colcol a.scan:hover{border-bottom-color:transparent}
-.cwords{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
-.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--mut);white-space:nowrap}
-.cw.lnk{color:var(--accent);border-color:var(--accent);cursor:pointer}
-.cw.lnk:hover{background:var(--accent);color:#fff}
+.cwords{margin-top:6px;display:flex;flex-wrap:wrap;gap:5px}
+.cw{font-style:italic;font-size:13px;padding:1px 8px;border:1px solid var(--line);border-radius:11px;color:var(--fg);white-space:nowrap;text-decoration:none;cursor:pointer}
+.cw:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cw.lnk{color:var(--accent);border-color:var(--accent);font-weight:500}
 .cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
+.cw.empty:hover{background:none;color:var(--mut)}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
@@ -96,20 +105,35 @@ function renderBody(r){
  });
  artbody.innerHTML=(h||'<p class="na">нет данных</p>')+colocHtml(r.root); applyLang();
 }
-// Print co-location: the words that physically shared this article's PWG column(s).
+// Print co-location by LEAF: the printed page (two columns) this article sits on.
+var KOSHA_COLOC='https://gasyoun.github.io/kosha/colocation/';
+function koshaHref(col,slp1){return KOSHA_COLOC+'#pwg/'+encodeURIComponent(col)+'?w='+encodeURIComponent(slp1);}
+function colWords(c){
+ if(!c.words.length)return '<div class="cwords"><span class="cw empty">— здесь ни одна статья не начинается —</span></div>';
+ var h='<div class="cwords">';
+ c.words.forEach(function(w){
+  if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
+  else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
+  else{h+='<a class="cw" href="'+koshaHref(c.col,w.root)+'" target="_blank" rel="noopener" title="открыть в словаре kosha">'+esc(w.iast)+'</a>';}
+ });
+ return h+'</div>';
+}
+function colBox(c){
+ return '<div class="colcol"><span class="clab">'+esc(c.col)
+  +' <span class="side">'+(c.side==='L'?'левая колонка':'правая колонка')+'</span></span>'
+  +'<a class="scan" href="'+esc(c.scan)+'" target="_blank" rel="noopener">🖼 скан</a>'
+  +colWords(c);
+}
 function colocHtml(root){
- var blocks=(window.COLOC||{})[root]||[]; if(!blocks.length)return '';
- var h='<div class="coloc"><h4>🖇 На той же печатной колонке PWG</h4>'
-  +'<div class="hint">Слова, стоявшие рядом на той же колонке (Spalte) печатного словаря Бётлингка–Рота. Выделенные — уже переведены (нажмите, чтобы открыть).</div>';
- blocks.forEach(function(bk){
-  h+='<div class="colcol"><span class="clab">колонка '+esc(bk.col)+' (том '+esc(bk.vol)+')</span>'
-   +'<a class="scan" href="'+esc(bk.scan)+'" target="_blank" rel="noopener">🖼 скан</a><div class="cwords">';
-  bk.words.forEach(function(w){
-   if(w.self){h+='<span class="cw self">'+esc(w.iast)+'</span>';}
-   else if(w.linked){h+='<span class="cw lnk" data-root="'+esc(w.root)+'">'+esc(w.iast)+'</span>';}
-   else{h+='<span class="cw">'+esc(w.iast)+'</span>';}
-  });
-  h+='</div></div>';
+ var leaves=(window.COLOC||{})[root]||[]; if(!leaves.length)return '';
+ var h='<div class="coloc"><h4>🖇 На том же печатном листе PWG</h4>'
+  +'<div class="hint">Печатный словарь Бётлингка–Рота набран в <b>две колонки на страницу</b>; ниже — весь лист (левая + правая колонка). '
+  +'Красным — уже переведённые статьи (открываются здесь), остальные ведут в '
+  +'<a href="'+KOSHA_COLOC+'" target="_blank" rel="noopener">листалку колонок kosha</a>. '
+  +'Оговорка: в источнике есть номера <i>колонок</i>, но не книжной страницы, поэтому лево/право <i>колонки</i> точны, а recto/verso листа не выводимы.</div>';
+ leaves.forEach(function(lf){
+  h+='<div class="leaf"><div class="llab">Печатный лист · том <b>'+esc(lf.vol)+'</b>, лист <b>'+esc(lf.leaf)+'</b> (колонки '+esc(lf.cols[0].col)+' + '+esc(lf.cols[1].col)+')</div>'
+   +'<div class="pair">'+colBox(lf.cols[0])+colBox(lf.cols[1])+'</div></div>';
  });
  return h+'</div>';
 }

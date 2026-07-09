@@ -5,9 +5,9 @@
 
 **pw-1)** === LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
 
-√*man*¦, *manate, manute, manyate*; metrisch auch Act.
+√*man*, *manate, manute, manyate*; metrisch auch Act.
 — 1〉 meinen, glauben, sich einbilden, sich vorstellen, vermuthen, dafürhalten, glauben von (Acc.), — an (Acc.), so v. a. für gewiss, für wahrscheinlich halten. *kiṃ bahu manyase* so v. a. wozu stellst du grosse Betrachtungen an? *manye* so meine ich wird in einem Satze vorangestellt oder eingeschobenem ohne einen Einfluss auf die Construction zu haben.
-- **EN:** √*man*¦, *manate, manute, manyate*; metrically also Act.
+- **EN:** √*man*, *manate, manute, manyate*; metrically also Act.
 — 1) to think, believe, imagine, suppose, surmise, hold (Acc.), — to believe in (Acc.), so v. a. to hold for certain, for probable. *kiṃ bahu manyase* so v. a. 'why do you contemplate such weighty considerations?' *manye* 'so I think' is placed at the beginning of a sentence or inserted into it without affecting the construction.
 
 **pw-2)** — 2〉 halten für, mit doppeltem Acc. *ciraṃ tanmene yadvāsaḥ paryadhāsyata* so v. a. es schien ihm zu lange das Gewand zuvor umzunehmen. Bisweilen ist der eigentliche Objekts-Acc., wie *tad*, zu ergänzen, Wenn eine Geringachtung ausgedrückt werden soll. kann das Prädicat auch im Dat. Stehen, Zum Prädicat tritt bisweilen *iva*, oder es erscheint als _Adv._ auf *vat*. Nicht selten ist das Prädicat auch ein anderes Adverb.

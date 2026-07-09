@@ -3,8 +3,8 @@
 `ji~~h3_00_pwg00`
 
 
-**1-intro)** 1. *ji*¦
-- **EN:** 1. *ji*¦
+**1-intro)** 1. *ji*
+- **EN:** 1. *ji*
 
 **1-1)** 1) *jitvā saṃgrāmān* [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 lies 3,34,4 st. 8,34,4.
 - **EN:** 1) *jitvā saṃgrāmān* [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z.; for 4 read 3,34,4 st. 8,34,4.
@@ -71,11 +71,11 @@ Z. 3 читай *ṛṣīṇāmadhivādamapājayat* .
 - **EN:** — *vi* 3) at the end, *vijayate jñānapradīpo haraḥ* thus v. a. 'long live!' Śiva [Spr. 929.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?929) — desid.: *na moghaṃ vijigīṣate* 'he does not strive in vain for victory' [Spr. 3699.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3699)
   <sub>attested</sub>
 
-**1)** *ji*¦
+**1)** *ji*
  1) *jitvā saṃgrāmān*
 [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 lies 3,34,4 st. 8,34,4.
 
-- **RU:** *ji*¦
+- **RU:** *ji*
  1) *jitvā saṃgrāmān*
 [MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) Z. 4 читай 3,34,4 st. 8,34,4.
   <sub>attested</sub>
