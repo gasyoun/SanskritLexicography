@@ -1,9 +1,36 @@
 cff-version: 1.2.0
 message: "If you use this Sanskrit-Russian lexicography dataset, please cite the edition manifest and repository."
-title: "PWG Russian Translation Lexicography Release"
+title: "pwg_ru: a Russian edition of the Sanskrit-German Petersburg Dictionary (PWG, Böhtlingk-Roth)"
+abstract: >-
+  A Russian edition of the Petersburg Dictionary (PWG, Böhtlingk-Roth), produced
+  by corpus-attested sense harvesting over a parallel Sanskrit-Russian corpus
+  combined with LLM translation of the German wrapper prose. Every sense carries
+  source and role provenance; the edition exports to OntoLex-Lemon and TEI Lex-0.
 type: dataset
 authors:
-  - name: "Sanskrit Lexicography Project"
-repository-code: "https://github.com/"
-license: "CC-BY-4.0"
+  - family-names: "Gasūns"
+    given-names: "Mārcis"
+    alias: "gasyoun"
+    orcid: "https://orcid.org/0000-0003-4513-884X"
+    email: "gasyoun@ya.ru"
+    affiliation: "Институт лингвистических исследований РАН (ИЛИ РАН)"
+repository-code: "https://github.com/gasyoun/SanskritLexicography"
+license: "CC-BY-SA-4.0"
 version: "unreleased"
+keywords:
+  - sanskrit
+  - russian
+  - lexicography
+  - petersburg-dictionary
+  - ontolex
+  - tei-lex-0
+preferred-citation:
+  type: book
+  title: "Sanskrit-Wörterbuch"
+  year: 1875
+  authors:
+    - family-names: "Böhtlingk"
+      given-names: "Otto"
+    - family-names: "Roth"
+      given-names: "Rudolph"
+  notes: "The German source dictionary (PWG), public domain."
