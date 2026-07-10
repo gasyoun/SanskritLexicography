@@ -41,6 +41,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
+from agent_budget import derive_agent_budget
 import pwg_mask
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 sys.path.insert(0, SRC)
@@ -174,23 +175,15 @@ KILL_CEIL_MS = 180000       # hard ceiling — NOTHING runs past 3 min (MG). Was
 # --- live budget kill-switch (H189, 2026-07-05) -----------------------------------
 # The per-call kill gate above bounds ANY SINGLE agent() call, but nothing bounded the
 # WHOLE WINDOW: pril10_w1 spawned 230 agents (est. 174) and burned 42 M tokens before MG
-# killed it by hand. This is an absolute, window-level backstop: the harness counts every
-# agent() call it makes and, once the count crosses MAX_AGENTS, refuses to start further
-# calls (the remaining cards are nulled with a `budget-kill-switch` reason and REQUEUED,
-# not silently dropped) so a runaway retry/binary-split cascade self-terminates instead of
-# running to a manual kill. Tokens aren't observable inside the runtime (agent() returns
-# structured output, not a usage record), so the mechanical proxy is agent-CALL count —
-# which is exactly what blew up (230 vs 174). The ceiling is derived per window and must
-# SCALE WITH WORD SIZE, not be a one-size-fits-all floor: a `gam`-class word legitimately
-# needs dozens of calls, but a 3-card stub must never be allowed 40 — a flat floor would let
-# a small-word runaway burn 40 agents before the switch ever fired, defeating it for exactly
-# the words that need it. So the ceiling is proportional to the preflight estimate plus a
-# small fixed headroom for one hard card's heal/binary-split jitter:
-#   MAX_AGENTS = ceil(expected * MAX_AGENTS_FACTOR) + MAX_AGENTS_HEADROOM
-# e.g. expected 2 -> 16, 6 -> 28, 20 -> 70, 60 -> 190 — a continuous small/medium/large
-# typology, no cliff at a tier boundary and no "what counts as medium" to pin down.
-KILL_SWITCH = True          # --no-kill-switch disables; --max-agents=N sets an absolute override
-MAX_AGENTS_FACTOR = 3.0     # abort once actual agent() calls exceed 3x the preflight estimate
+# killed it by hand. H189 added one shared MAX_AGENTS counter; H442/H462 then proved that
+# sharing it between whole-card translation and fragment recovery makes the per-card heal
+# cap unreachable on an all-heal window. The generated runtime now has two independently
+# derived pools: translate calls (including binary-split retries) and heal calls. The
+# translate ceiling remains proportional to its preflight batch count; the heal ceiling is
+# the sum of the already-bounded per-card heal ceilings, so a window cannot starve recovery
+# before those card-level guards can bind. ``agent_budget.py`` owns the pure derivation.
+KILL_SWITCH = True          # --no-kill-switch disables; --max-agents=N overrides the combined total
+MAX_AGENTS_FACTOR = 3.0     # translate pool: abort past 3x the whole-card batch estimate
                             #  (pril10_w1 was 230/174 = 1.3x before the manual kill — 3x leaves
                             #  ample room for legitimate binary-split/heal while still catching a
                             #  true runaway well before a $80 outcome).
@@ -199,7 +192,7 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  replaces the old flat floor of 40, which was far too loose for
                             #  small/medium words (they never legitimately approach 40, so the
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
-MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing the derivation
+MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across both pools
 # --- per-card heal budget (H442, 2026-07-10) --------------------------------------
 # The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
 # cannot stop ONE dense card from spending the WHOLE window budget before the other cards
@@ -1149,17 +1142,26 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     if lang == 'en':                                    # inject MW TM once per root (root mode)
         single_grammar = mw_tm_block(root, mw_tm_path) + single_grammar
 
-    # Preflight-parity agent estimate (one call per batch + one per presplit fragment group)
-    # and the H189 live budget kill-switch ceiling derived from it.
+    # Preflight-parity agent estimate (one call per batch + one per presplit fragment group).
+    # The runtime budget is planned separately: whole-card translation/binary-split calls use
+    # the translate pool; every selfheal-capable card contributes its own bounded ceiling to
+    # the recovery pool. This removes the H442/H462 shared-counter starvation class.
     agent_expected = len(batches) + sum(len(frags.get(k, [None])) for k in presplit)
     runtime_keys = set(batch_keys) | set(presplit)
     runtime_inputs = {k: inputs[k] for k in keys if k in runtime_keys}
     runtime_phmaps = {k: phmaps[k] for k in keys if k in runtime_keys}
     runtime_suggest_tm = {k: v for k, v in suggest_tm.items() if k in runtime_keys}
-    if MAX_AGENTS_OVERRIDE:
-        max_agents = MAX_AGENTS_OVERRIDE
-    else:   # proportional to word size + small jitter headroom (NOT a flat floor)
-        max_agents = int(math.ceil(agent_expected * MAX_AGENTS_FACTOR)) + MAX_AGENTS_HEADROOM
+    budget_plan = derive_agent_budget(
+        len(batches),
+        {k: len(v) for k, v in frags.items() if v},
+        enabled=KILL_SWITCH,
+        translate_factor=MAX_AGENTS_FACTOR,
+        translate_headroom=MAX_AGENTS_HEADROOM,
+        per_card_heal_budget=bool(PER_CARD_HEAL_BUDGET and SELFHEAL),
+        per_card_heal_factor=PER_CARD_HEAL_FACTOR,
+        per_card_heal_headroom=PER_CARD_HEAL_HEADROOM,
+        max_agents_override=MAX_AGENTS_OVERRIDE,
+    )
 
     # H214: per-card source-material profile, stamped on promoted rows via
     # meta.source_profiles (promote_final_cards.provenance reads it per sub-card). Window-level
@@ -1198,11 +1200,16 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'kill': KILL,
         'kill_gate': ({'factor': KILL_FACTOR, 'base_ms': KILL_BASE_MS, 'slope_ms': KILL_SLOPE_MS,
                        'floor_ms': KILL_FLOOR_MS, 'ceil_ms': KILL_CEIL_MS} if KILL else None),
-        # H189 live budget kill-switch: the harness aborts (and requeues remaining cards) once
-        # it makes more than max_agents agent() calls — a window-level backstop against the
-        # runaway that spent 230/174 agents on pril10_w1 before a manual kill.
+        # Split agent pools: translate/binary-split cannot be starved by recovery already in
+        # flight, and recovery cannot hit a shared ceiling before the per-card caps can bind.
         'kill_switch': KILL_SWITCH,
-        'max_agents': max_agents if KILL_SWITCH else None,
+        'agent_budget_strategy': budget_plan.strategy,
+        'max_agents': budget_plan.max_agents,
+        'max_translate_agents': budget_plan.max_translate_agents,
+        'max_heal_agents': budget_plan.max_heal_agents,
+        'translate_agent_expected': budget_plan.translate_expected,
+        'heal_budget_groups': budget_plan.heal_groups,
+        'heal_budget_cards': budget_plan.heal_cards,
         'max_agents_factor': MAX_AGENTS_FACTOR,
         'max_agents_headroom': MAX_AGENTS_HEADROOM,
         # H442 per-card heal budget: caps the heal agent() calls ONE card may spend so a dense
@@ -1280,13 +1287,14 @@ const KILL_BASE_MS = %(kill_base_ms)s
 const KILL_SLOPE_MS = %(kill_slope_ms)s
 const KILL_FLOOR_MS = %(kill_floor_ms)s
 const KILL_CEIL_MS = %(kill_ceil_ms)s
-// H189 live budget kill-switch: abort the whole window once it has made more than
-// MAX_AGENTS agent() calls (a runaway retry/binary-split cascade), instead of running to a
-// manual kill. Tokens aren't observable in-runtime, so agent-CALL count is the proxy (230
-// vs 174 estimate on pril10_w1). Remaining cards are nulled with a budget-kill-switch reason
-// and requeued by the normal audit path — nothing is silently dropped.
+// H189 live budget kill-switch, split after H442/H462: whole-card translation/binary-split
+// and fragment recovery spend independent pools. One runaway recovery cascade can no longer
+// consume the capacity required to attempt the remaining primary batches; the recovery pool
+// is the sum of the per-card heal ceilings, so those card-level guards are reachable.
 const KILL_SWITCH = %(kill_switch)s
 const MAX_AGENTS = %(max_agents)s
+const MAX_TRANSLATE_AGENTS = %(max_translate_agents)s
+const MAX_HEAL_AGENTS = %(max_heal_agents)s
 // H442 per-card heal budget: a per-card ceiling on heal agent() calls, threaded through
 // healGroup's bisection recursion. Unlike MAX_AGENTS (a shared window pool), this stops ONE
 // dense card from spending the whole window budget: once a card's own heal spend crosses
@@ -1352,15 +1360,17 @@ const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k]
 // fragment heal — the gate's whole purpose). SHARED (keys on FRAGS, no RU/EN branching).
 const hasFallback = k => Array.isArray(FRAGS[k]) && FRAGS[k].length > 0
 const killBudgetForCur = cur => (cur.length === 1 && !hasFallback(cur[0])) ? KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))
-// H189 live budget kill-switch state. AGENTS_SPENT counts real agent() calls; once it
-// reaches MAX_AGENTS every further agentKill() throws BudgetExceeded WITHOUT calling agent()
-// (0 tokens), so retry/binary-split cascades short-circuit to instant no-ops and the window
-// winds down at ~MAX_AGENTS calls. BudgetExceeded is deliberately NOT an isKill() (a kill
-// routes to MORE fragment calls — the opposite of what a budget stop wants); the caller's
-// generic catch nulls the card with a budget-kill-switch reason for the normal requeue path.
+// Split-pool budget state. Labels beginning `heal:` are recovery; every other call is primary
+// translation (including resolveGroup binary splits). BudgetExceeded is deliberately NOT an
+// isKill(): a kill routes to recovery, whereas a pool stop must issue zero more calls in that
+// lane. AGENTS_SPENT remains the backwards-compatible total telemetry counter.
 class BudgetExceeded extends Error {}
 let AGENTS_SPENT = 0
 let BUDGET_TRIPPED = false
+let TRANSLATE_AGENTS_SPENT = 0
+let HEAL_AGENTS_SPENT = 0
+let TRANSLATE_BUDGET_TRIPPED = false
+let HEAL_BUDGET_TRIPPED = false
 // H462 telemetry: COUNTERS ONLY, no behavioural change. The two decisive numbers of every
 // launch post-mortem — the kill-timeout count and the 'Connection closed mid-response'
 // count — previously existed only as console.log strings and were hand-counted from
@@ -1375,15 +1385,23 @@ let HEAL_CALLS = 0
 let KILL_BISECT_BLOCKED = 0
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
-  if (KILL_SWITCH && MAX_AGENTS != null && AGENTS_SPENT >= MAX_AGENTS) {
+  const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
+  const lane = healLane ? 'heal' : 'translate'
+  const spent = healLane ? HEAL_AGENTS_SPENT : TRANSLATE_AGENTS_SPENT
+  const ceiling = healLane ? MAX_HEAL_AGENTS : MAX_TRANSLATE_AGENTS
+  if (KILL_SWITCH && ceiling != null && spent >= ceiling) {
     BUDGET_TRIPPED = true
-    throw new BudgetExceeded('budget-kill-switch: window hit MAX_AGENTS=' + MAX_AGENTS + ' agent() calls; remaining cards requeued')
+    if (healLane) HEAL_BUDGET_TRIPPED = true
+    else TRANSLATE_BUDGET_TRIPPED = true
+    throw new BudgetExceeded('budget-kill-switch[' + lane + ']: hit ' + ceiling + ' agent() calls; lane remainder requeued')
   }
   AGENTS_SPENT++
+  if (healLane) HEAL_AGENTS_SPENT++
+  else TRANSLATE_AGENTS_SPENT++
   // heal-lane spend: every healGroup label starts 'heal:' (bisection halves inherit the
   // prefix), so this counts real heal agent() calls against the whole window — the
   // per-card view stays on selfHeal's cardBudget.spent.
-  if (opts && opts.label && /^heal:/.test(String(opts.label))) HEAL_CALLS++
+  if (healLane) HEAL_CALLS++
   if (!KILL) return agent(prompt, opts)   // kill gate off = counters best-effort (never in production)
   const ms = (budgetMsOverride != null) ? budgetMsOverride : killBudgetMs(skelBytes)
   let timer
@@ -1815,11 +1833,16 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   presplit: PRESPLIT.length, tm: out.filter(r => r.tm).length,
                   degenerate_passthrough: out.filter(r => r.degenerate_passthrough).length,
                   frag_tm_fragments: META.frag_tm_fragments || 0,
-                  // H189: agents_spent surfaces the real call count vs META.max_agents;
-                  // budget_kill_switch_tripped=true means the window self-aborted and its
-                  // null_keys must be requeued (they were not translated, not defective).
+                  // Total counters stay backwards-compatible; lane counters make starvation
+                  // and the binding pool directly observable.
                   agents_spent: AGENTS_SPENT, max_agents: (KILL_SWITCH ? MAX_AGENTS : null),
                   budget_kill_switch_tripped: BUDGET_TRIPPED,
+                  translate_agents_spent: TRANSLATE_AGENTS_SPENT,
+                  max_translate_agents: (KILL_SWITCH ? MAX_TRANSLATE_AGENTS : null),
+                  translate_budget_tripped: TRANSLATE_BUDGET_TRIPPED,
+                  heal_agents_spent: HEAL_AGENTS_SPENT,
+                  max_heal_agents: (KILL_SWITCH ? MAX_HEAL_AGENTS : null),
+                  heal_budget_tripped: HEAL_BUDGET_TRIPPED,
                   // H462: returned telemetry (previously log-only, hand-counted from
                   // transcripts). kill_bisect_blocked counts heal groups whose kill-timeout
                   // was routed to requeue instead of bisection (KILL_TIMEOUT_NO_BISECT).
@@ -1850,7 +1873,9 @@ return { meta: META, summary, results: out }
         'kill': json.dumps(KILL), 'kill_factor': json.dumps(KILL_FACTOR),
         'kill_base_ms': json.dumps(KILL_BASE_MS), 'kill_slope_ms': json.dumps(KILL_SLOPE_MS),
         'kill_floor_ms': json.dumps(KILL_FLOOR_MS), 'kill_ceil_ms': json.dumps(KILL_CEIL_MS),
-        'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(max_agents if KILL_SWITCH else None),
+        'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(budget_plan.max_agents),
+        'max_translate_agents': json.dumps(budget_plan.max_translate_agents),
+        'max_heal_agents': json.dumps(budget_plan.max_heal_agents),
         'per_card_heal_budget': json.dumps(PER_CARD_HEAL_BUDGET and SELFHEAL),
         'per_card_heal_factor': json.dumps(PER_CARD_HEAL_FACTOR), 'per_card_heal_headroom': json.dumps(PER_CARD_HEAL_HEADROOM),
         'kill_timeout_no_bisect': json.dumps(bool(KILL_TIMEOUT_NO_BISECT and KILL and SELFHEAL)),
