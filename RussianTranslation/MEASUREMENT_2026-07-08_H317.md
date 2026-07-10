@@ -241,15 +241,15 @@ Tuned to `factor 1.5 / headroom 3` after the w1b caps at `3.0/4` summed to ~198 
 
 ### Per-window result — h317_w1b re-run (one launch)
 
-| run | cards | agents (spent/max) | raw ok | **audit-clean (promotable)** | kill-switch tripped | per-card-cap fires | subagent tokens | wall-clock |
-|---|---:|---:|---:|---:|:--:|---:|---:|---:|
-| H437 w1b (clean env, 0 conn-errors) | 12 | 61/61 | 3 | **1** (`yuvan`) | yes | n/a | 2,898,353 | 7.96 min |
-| H442 w1b (this run, degraded env) | 12 | 61/61 | 3 | **0** | yes | **0** | 2,223,194 | 9.27 min |
+| run | cards | agents | raw ok | **audit-clean** | tripped | conn-errors | kill-timeouts | per-card fires | kill-bisect blocks | tokens | wall |
+|---|---:|---:|---:|---:|:--:|---:|---:|---:|---:|---:|---:|
+| H437 w1b (clean env) | 12 | 61/61 | 3 | **1** (`yuvan`) | yes | 0 | 1 | n/a | n/a | 2.90M | 7.96 min |
+| H442 w1b run-1 (per-card cap) | 12 | 61/61 | 3 | **0** | yes | 3 | 58 | 0 | n/a | 2.22M | 9.27 min |
+| H442 w1b run-2 (+ kill-bisect cap 1) | 12 | 61/61 | 3 | **0** | yes | 3 | 76 | 0 | **19** | 2.17M | 10.49 min |
 
-The harness returned 3 raw cards (`yuvan`, `bheṣaja`, `āhuti`), but **all 3 were flagged
-`requeue_defect` by `audit_window.py`** — authoritative **audit-clean = 0/12** (vs H437's
-1 promoted). The run **did not meet the H442 stop condition** (≥6/12 clean AND no trip), and
-the result is **confounded**, not a clean before/after:
+Both H442 runs returned 3 raw cards, all `requeue_defect` → **audit-clean 0/12** (vs H437's 1
+promoted). Neither met the stop condition (≥6/12 clean AND no trip), and **both were confounded
+by a persistently degraded generation environment** — not the heal lane:
 
 1. **The per-card cap never bound.** `partial_keys` empty, **0** `per-card-heal-budget`
    failures. With all 12 cards routing to the heal lane in one shared `parallel()` pool
@@ -262,21 +262,37 @@ the result is **confounded**, not a clean before/after:
    skelBytes=11`). An 11-byte fragment cannot legitimately need 45 s; the calls themselves
    were hanging. So this window's budget was consumed by *killed* calls, not by healthy
    heal work — a different (infra) failure than H437's clean-env cascade.
-3. **New design flaw exposed — bisecting a *kill-timeout* is pure waste.** `healGroup`
-   bisects a group on kill-timeout the same as on a malformed response, but bisection only
-   helps when a group is too **big** (content-heavy); when the *calls are slow* (infra), each
-   bisection just spawns smaller fragments that hit the **same 45 s floor** and die again
-   (vicitra: g1 → g1/A, g1/B → g1/A/A, g1/A/B, g1/B/A, g1/B/B, all killed at 45–107 s). A
-   killed group should fail fast to requeue after 1–2 kill-timeouts, not bisect toward
-   11-byte fragments that also time out. This is the heal-lane redesign the H442 goal named
-   as its alternative outcome.
+3. **The kill-timeout × bisection waste was fixed, and the fix demonstrably fired.** `healGroup`
+   bisected a kill-timeout the same as a malformed response, but bisection only helps a too-**big**
+   group; under slow calls each split just spawns smaller fragments that hit the **same 45 s
+   floor** (run-1: `heal:vicitra#g1/A/B: kill-timeout 45s @ skelBytes=11`, an 11-byte fragment
+   killed at 45 s). Run-2 added `KILL_BISECT_MAX_DEPTH=1` — a killed group splits at most once,
+   then requeues. It **fired 19 times** in run-2 (19 kill-timeouts routed to requeue instead of
+   re-split), confirming the mechanism works. But it cannot make *slow calls* fast: run-2 had
+   **76 kill-timeouts** (up from 58) and the **same 3 connection errors**, so the window still
+   tripped and 0 cards cleared audit.
 
-**Disposition:** the per-card cap is a sound, tested **guardrail** (it strictly bounds a
-single-pathological-card monopoly and is a no-op when it doesn't bind — no regression), but
-it is **not sufficient** for the medium50 window. The isolated blocker is now the
-**kill-timeout × bisection interaction under slow calls**, not per-card monopoly. Next step
-is a human decision (below); a blind 2nd/3rd launch is not warranted while the env is
-transiently degraded and the true lever has shifted.
+**Both runs were in a degraded generation environment** (3 `Connection closed` errors each;
+58 then 76 kill-timeouts, many on trivially small fragments). H437's clean env (0 connection
+errors, 1 kill-timeout) is **not currently reproducible**, so the H442 stop condition
+(≥6/12 clean, no trip) **cannot be measured right now** — the confound is infrastructure, not
+the code. This is exactly the "each blind re-run is ~2 M tokens for ~1 card" waste the H437
+guardrail warned against, so the 3rd allowed launch is **deliberately NOT fired** into the same
+degradation.
+
+**Disposition (documented decision, per the H442 goal's alternative outcome):**
+- **Landed + kept** ([PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)): the
+  per-card heal budget and the kill-bisect depth cap are both sound guardrails — the per-card
+  cap is a no-op when it doesn't bind (no regression) and *will* bound a single-pathological-card
+  window; the kill-bisect cap demonstrably eliminates the re-split waste (19 fires). Neither
+  harms a healthy run.
+- **Paused, not failed:** the medium50 lane's ≥6/no-trip validation is **blocked on a healthy
+  generation environment**, not on more code. Re-measure w1b once when the API is clean (0
+  connection errors on a warm-up call) before spending the 3rd launch.
+- **Correction to H437's conclusion:** H437 refuted "transient API instability" for *its*
+  session; these two runs show it is **environment-specific and recurs** — the medium50 lane is
+  acutely sensitive to it because every card routes to the heal lane where each call is on the
+  critical path. Logged to [`../../Uprava/SERVER_OUTAGES.md`](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md).
 
 Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
 `H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10`.
