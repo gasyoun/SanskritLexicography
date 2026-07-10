@@ -68,11 +68,14 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 .cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
 .cw.empty:hover{background:none;color:var(--mut)}
-/* PERF: skip layout/paint of off-screen blocks. A big article (e.g. chid: 32
-   subcards, 154 senses, ~57000px tall) otherwise blocks the main thread for
-   seconds while the whole subtree is laid out at once. content-visibility:auto
-   lays out only what's near the viewport; contain-intrinsic-size keeps the
-   scrollbar stable. Measured on chid: reflow ~9700ms -> ~10ms. */
+/* PERF (secondary): skip layout/paint of off-screen blocks so a big article
+   (e.g. chid: 32 subcards, 154 senses, ~66000px tall) doesn't lay its whole
+   subtree out at once. Clean A/B on chid, full render+forced-layout: ~370ms ->
+   ~140ms cold (~2.6x); helps more on slow devices. NOTE the dominant cost is
+   NOT render (~35-370ms) but the per-article network fetch of roots/<safe>.js
+   (~1s cold, up to several seconds on a slow link/cold CDN) — that is what the
+   hover-prefetch below addresses, and it is the real fix for the "Загрузка…"
+   wait. contain-intrinsic-size keeps the scrollbar stable. */
 .sub,.sense,.leaf{content-visibility:auto;contain-intrinsic-size:auto 320px}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
