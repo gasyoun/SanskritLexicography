@@ -1838,6 +1838,41 @@ the probe log's JSONL), never only in a worktree-local gitignored file.
 
 ---
 
+### §69. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers
+
+Verified 2026-07-10 (H534, three-way check): GRETIL's own update history
+([`hist.html`](http://gretil.sub.uni-goettingen.de/hist.html) #370) and TEI
+catalogue ([`gretil.html`](http://gretil.sub.uni-goettingen.de/gretil.html)) list exactly
+**one** Devī­bhāgavata item — "Devibhagavata-Purana: Devigita" (`sa_devIgItA.xml` /
+[`dbhp_dgu.htm`](http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/3_purana/dbhp_dgu.htm)),
+covering **only book 7, adhyāyas 31–40**. There is **no full 12-skandha DBhP on GRETIL,
+nor on any GitHub mirror** (a GRETIL mirror can only carry what GRETIL has). The
+`DbhP_<skandha>,<chapter>.<verse>` marker convention exists **solely as a cross-reference
+inside the Devigita file** (`= DbhP_7,31.1`); it was never applied to a complete DBhP
+digitization anywhere.
+
+The complete text (all 12 skandhas) **does** exist on **sanskritdocuments.org**
+([doc_purana/devIbhAgavatam01.html … 12.html](https://sanskritdocuments.org/doc_purana/)),
+as HTML carrying **Devanagari + IAST**, numbered `॥ chapter.verse ॥` **per skandha** — which
+maps cleanly onto our `SKANDHA.CHAPTER.VERSE` scheme but does **not** carry `DbhP_` markers.
+
+**Consequence for the DBhP corpus (H534):** the handoff's locked "align GRETIL Sanskrit"
+decision is unexecutable as stated. The Ignatjev Russian is ingested **RU-only** (the
+sanctioned per-verse fallback); the Sanskrit pane is a human `@DECIDE` (use
+sanskritdocuments.org, or ship RU-only). The aligner
+([`align_sanskrit.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/corpus_builder/align_sanskrit.py))
+is already source-agnostic — it consumes any Sanskrit JSONL keyed by `SKANDHA.CHAPTER.VERSE`.
+
+**New asset:** a reusable **PDF → canonical-JSONL → app-HTML** ingestion pipeline now exists
+([`PDF_INGESTION_PIPELINE.md`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/corpus_builder/PDF_INGESTION_PIPELINE.md)),
+the free-toolchain successor to the Delphi `cb.exe` for new print/PDF translations; DBhP
+Skandha 1 (1181 verses, 429 comments) is ingested as
+[`Data/devibhagavata-purana-1.html`](https://github.com/gasyoun/SamudraManthanam/blob/main/Index/lib/x86_64-win64/Data/devibhagavata-purana-1.html).
+
+> **Source:** H534, Opus 4.8 (`claude-opus-4-8`), [SamudraManthanam PR #31](https://github.com/gasyoun/SamudraManthanam/pull/31) · 2026-07-10
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
