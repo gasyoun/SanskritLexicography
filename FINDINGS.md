@@ -1805,6 +1805,37 @@ niche (suggestion generation against a validated, provenance-carrying lexicon) i
 > (H452, [PR #27](https://github.com/drdhaval2785/SanskritSpellCheck/pull/27), 3 parallel
 > research agents, every claim fetch-backed), Fable 5 `claude-fable-5` · 2026-07-10
 
+### §69. Hand-transcribed telemetry cannot adjudicate code-vs-infra — and a local-only ledger silently swaps your denominator
+
+Two traps measured by the H462 audit of the pwg_ru launch ledgers (10-07-2026).
+(1) **The decisive numbers were never in the payload.** Every H437/H442 code-vs-infra
+conclusion leaned on kill-timeout and connection-error counts ("58 of 61 kill-timeouts",
+"3 conn-errors") that existed only as `console.log` strings, hand-counted from Workflow
+transcripts into
+[`LAUNCH_FUCKUPS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md)
+— the harness `summary` returned neither, and the ledger checker validated shape, never
+classification. Re-deriving all 13 entries' classes from their own recorded evidence
+overturned 2 of 13 — both from the 24 hours when hand-transcribed telemetry was
+adjudicating exactly that question, and one mis-class kept the corrective effort aimed at
+the heal budget for one more ~1.8 M-token launch. Rule: **any number a post-mortem will
+cite must be returned by the run's payload, not transcribed from its logs** — counters are
+cheap; add them the day the first post-mortem hand-counts something (fixed by returning
+`kill_timeouts`/`conn_errors`/`heal_calls`/`kill_bisect_blocked` in the summary +
+[`classify_run.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/classify_run.py)).
+(2) **A gitignored ledger + worktree isolation = denominator swap.** The committed
+[`LAUNCH_STATS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md)
+reported "Windows launched: **3**" because it was harvested inside a worktree whose
+local-only `output/window_ledger.jsonl` held just that worktree's launches — the main
+checkout's ledger held **450 windows / 55 roots**, and the generated file carried no trace
+of which ledger fed it. Worse, the medium50 launches of 08–10.07 (H317/H389/H437/H442,
+~11 windows) exist in **no** surviving ledger at all: their worktrees' gitignored
+`output/` died with the worktrees. Rule: **an auto-generated stats file must stamp its
+data source and row count, and per-launch records belong in committed storage** (here:
+the probe log's JSONL), never only in a worktree-local gitignored file.
+
+> **Source:** [`RussianTranslation/LAUNCH_LEDGER_AUDIT_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_LEDGER_AUDIT_2026-07.md)
+> (H462), Fable 5 `claude-fable-5` · 2026-07-10
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**

@@ -3096,6 +3096,99 @@ def test_budget_kill_switch_wired():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_run_telemetry_counters_returned():
+    """H462: the two decisive numbers of every launch post-mortem — the kill-timeout count
+    and the 'Connection closed mid-response' count — existed only as console.log strings
+    and were hand-counted from transcripts into LAUNCH_FUCKUPS.md ('58 of 61 kill-timeouts',
+    '3 conn-errors'); every H437/H442 code-vs-infra conclusion leaned on numbers the payload
+    never returned. The harness summary must RETURN kill_timeouts / conn_errors / heal_calls /
+    kill_bisect_blocked so the orchestrator and classify_run.py read them mechanically.
+    Counters only — this pin also guards that the counting stays OUT of control flow."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n'
+           '<div n="1">— 1〉 {%verlassen%} <ls>Y. 2</ls>.\n')
+    key = 'zz~~synthetic_telemetry'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            for tok in ('let KILL_TIMEOUTS = 0', 'let CONN_ERRORS = 0', 'let HEAL_CALLS = 0',
+                        'let KILL_BISECT_BLOCKED = 0', 'const isConn ='):
+                if tok not in js:
+                    fail('telemetry counter token %r missing from the harness' % tok)
+            # the counters must be RETURNED in summary, not just logged
+            for field in ('kill_timeouts: KILL_TIMEOUTS', 'conn_errors: CONN_ERRORS',
+                          'heal_calls: HEAL_CALLS', 'kill_bisect_blocked: KILL_BISECT_BLOCKED'):
+                if field not in js:
+                    fail('summary must return telemetry field %r — hand-counting kill-timeouts '
+                         'from transcripts is exactly what H462 removes' % field)
+            # counting must live in agentKill's catch (central, one site) and re-throw:
+            # the counters observe, they never swallow or reroute the error.
+            if not _re.search(r'catch \(e\) \{ if \(isKill\(e\)\) KILL_TIMEOUTS\+\+; '
+                              r'else if \(isConn\(e\)\) CONN_ERRORS\+\+; throw e \}', js):
+                fail('agentKill must count kills/conn-errors in its catch and RE-THROW — '
+                     'telemetry must not change control flow')
+            # heal-lane spend keyed on the heal: label prefix (bisections inherit it)
+            if not _re.search(r"/\^heal:/\.test\(String\(opts\.label\)\)\) HEAL_CALLS\+\+", js):
+                fail('agentKill must count heal-lane calls via the heal: label prefix')
+            # a KillTimeout must never double-count as a connection error
+            if 'e instanceof KillTimeout' not in js.split('const isConn =', 1)[1].split('\n', 1)[0]:
+                fail('isConn must exclude KillTimeout so a kill is never double-counted as a conn error')
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_classify_run_verdicts():
+    """H462: classify_run.py mechanizes the code-vs-infra rule H442 applied by hand
+    ('if connection errors recur, record as infra-confounded, not a code failure') from
+    the payload summary ALONE. Pin the four verdict shapes: clean, infra-confounded (the
+    H442 launch-3 signature), code-failure (nulls with a quiet network), and the honest
+    refusal on a pre-H462 payload that carries no counters."""
+    import classify_run as cr
+    base = {'agents_spent': 58, 'kill_timeouts': 0, 'conn_errors': 0, 'heal_calls': 40,
+            'kill_bisect_blocked': 0, 'null_keys': [], 'budget_kill_switch_tripped': False}
+    v, _, _ = cr.classify(dict(base))
+    if v != 'clean':
+        fail('all-ok summary must classify clean; got %r' % v)
+    # H442 launch 3: 58/58 agents, 7 kill-timeouts, 2 conn-errors, 12 nulls, tripped
+    infra = dict(base, kill_timeouts=7, conn_errors=2,
+                 null_keys=['k%d' % i for i in range(12)], budget_kill_switch_tripped=True)
+    v, reasons, sig = cr.classify(infra)
+    if v != 'infra-confounded':
+        fail('the H442 launch-3 signature must classify infra-confounded; got %r' % v)
+    if sig['infra_kill_threshold'] != max(3, math.ceil(0.25 * 58)):
+        fail('kill threshold must be max(3, 25%% of agents_spent)')
+    # nulls + trip with a QUIET network = the harness is the suspect
+    code = dict(base, null_keys=['a', 'b'], budget_kill_switch_tripped=True)
+    v, _, _ = cr.classify(code)
+    if v != 'code-failure':
+        fail('nulls with no infra signal must classify code-failure; got %r' % v)
+    # kill-timeouts alone (no conn errors) past the 25%% ceiling are ALSO infra
+    kills = dict(base, kill_timeouts=58, null_keys=['a'], budget_kill_switch_tripped=True)
+    v, _, _ = cr.classify(kills)
+    if v != 'infra-confounded':
+        fail('mass kill-timeouts (58/58) must classify infra-confounded; got %r' % v)
+    # pre-H462 payload: no counters -> unclassifiable, never a guessed verdict
+    old = {'agents_spent': 61, 'null_keys': ['a'], 'budget_kill_switch_tripped': True}
+    v, reasons, _ = cr.classify(old)
+    if v != 'unclassifiable':
+        fail('a summary without H462 counters must be unclassifiable; got %r' % v)
+    if 'kill_timeouts' not in ' '.join(reasons):
+        fail('unclassifiable reason must name the missing counter fields')
+
+
 def test_per_card_heal_budget_wired():
     """H442: the window MAX_AGENTS switch is a SHARED pool — it cannot stop ONE dense card
     from spending the whole window budget before the other cards run (H437 medium50: 3-4
@@ -3931,6 +4024,8 @@ def main():
         test_denylist_torn_line_fails_loud,
         test_per_card_heal_budget_wired,
         test_heal_group_kill_timeout_does_not_bisect,
+        test_run_telemetry_counters_returned,
+        test_classify_run_verdicts,
     ]
     for test in tests:
         test()
