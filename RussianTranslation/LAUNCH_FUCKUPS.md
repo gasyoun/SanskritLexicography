@@ -362,6 +362,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
     "guardrail": "STOP relaunching medium50 windows blind -- the cascade is reproduced 3x; each blind re-run is ~2M tokens for ~1 card. Do not resume this lane at scale until the heal/kill budget is redesigned. Escalated to a bug-hunt handoff (H442) to recalibrate: cap heal bisections PER CARD (not just per window) so one dense card cannot starve its batch-mates; consider more aggressive presplit (lower output_budget/sense_presplit_budget) to turn a heal-cascade card into small clean fragment cards up front; separate the heal budget from the kill-timeout ceiling. Any change pinned by window_selftest.py + LANG_PARITY (SHARED).",
     "residual_status": "bug-hunt-handoff",
     "residual_risk": "Routed to H442 (https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md). Until H442 lands, the entire band-4 nominal-singleton lane is effectively blocked at ~1 clean card per 12-13 keys; verb-root drain (H151) is unaffected (dense verb BATCHES behave differently from no-fallback nominal singletons, per DAH_TAIL_2026-07-06). The 2 promoted cards (yuvan, ftvij) are in pwg_ru_translated.jsonl and are not at risk."
+  },
+  {
+    "id": "H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10",
+    "handoff": "H442",
+    "date": "2026-07-10",
+    "title": "Per-card heal budget landed but never binds on w1b; the actual blocker is a kill-timeout x bisection cascade under transiently-slow calls (58/61 calls killed, incl. 11-byte fragments at the 45s floor)",
+    "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
+    "model": "claude-sonnet-5",
+    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo (1-wide) h317_w1b launch; generation Sonnet 5 (harness-pinned); per_card_heal_budget on at factor 1.5 / headroom 3",
+    "expected": {
+      "agents": "17 expected agents (agent_expected_after_tm) for h317_w1b",
+      "tokens": "~2M subagent tokens; goal >=6/12 clean WITHOUT tripping MAX_AGENTS"
+    },
+    "actual": {
+      "agents": "61/61 (still tripped budget_kill_switch); 0 per-card-heal-budget fires, 0 partial cards -- the per-card cap never bound",
+      "tokens": "2,223,194 subagent tokens; 3 raw cards returned (yuvan, bheṣaja, āhuti) but ALL 3 audit_window-flagged requeue_defect -> audit-clean 0/12 (vs H437's 1 promoted); goal not met; 9.27 min"
+    },
+    "passes": 1,
+    "symptoms": "Re-run of h317_w1b with the H442 per-card heal ceiling active. Net clean rose 1->3 but the window still tripped at 61/61 and the run was CONFOUNDED: (1) transient API degradation returned -- 3x 'Connection closed mid-response' (H437 had zero) and 58 of 61 agent calls were kill-timeouts, including fragments of 11-135 bytes killed at the 45s KILL_FLOOR (e.g. 'heal:vicitra#g1/A/B: kill-timeout 45s @ skelBytes=11'); an 11-byte fragment cannot legitimately need 45s, so the calls themselves were hanging. (2) The per-card cap did NOT fire: with all 12 cards in one shared parallel() pool against one AGENTS_SPENT counter, the window budget (61) is hit first, before any single card reaches its 6-14 cap. Failure taxonomy: 2 budget-kill-switch, 3 whole-card kill-timeout (r_atra 146s, spf_s 133s, mara_ra 150s), 4 selfheal-nothing-resolved (all 4 presplit dense cards vfzwi/r_azwra/vyavas_t_a/vicitra, whose fragments themselves kill-timed-out and bisected to nothing).",
+    "classification": "kill-gate-calibration",
+    "root_cause": "Two findings supersede H437's 'per-card monopoly' hypothesis. (A) Direction #1 (per-card cap) is insufficient ALONE: the binding constraint on a window where EVERY card heals is the SHARED window MAX_AGENTS pool, not one card's monopoly -- the cap is moot until MAX_AGENTS is also raised for nominal-heal windows OR fewer cards route to heal. (B) The real waste mechanism under slow calls is kill-timeout x bisection: healGroup bisects a group on kill-timeout identically to a malformed response, but bisection only helps when a group is too BIG (content); when calls are slow (infra), each bisection spawns smaller fragments that hit the SAME 45s floor and die again (vicitra g1 -> g1/A,g1/B -> g1/A/A,g1/A/B,g1/B/A,g1/B/B all killed 45-107s). A killed group re-bisecting toward 11-byte fragments that also time out is pure budget waste. This run's env was transiently degraded, so it is not a clean before/after -- but the kill-timeout/bisection interaction is a real, env-independent design flaw.",
+    "guardrail": "The per-card heal budget (PR #301) is a sound guardrail and a no-op when it doesn't bind (no regression) -- keep it. But do NOT resume medium50 at scale on it alone. Next candidate fixes, to measure in a CLEAN env (0 connection errors) only: (1) do NOT bisect a kill-timeout -- route a killed group straight to requeue after 1-2 kill-timeouts instead of bisecting toward tiny fragments that hit the same floor; (2) raise/uncouple MAX_AGENTS for nominal-heal windows so the window doesn't trip before cards finish; (3) right-size presplit so the 4 dense presplit cards don't burn budget yielding nothing. A blind 2nd/3rd launch while the env is degraded is not warranted (each ~2.2M tokens for ~1-2 cards). Any change pinned by window_selftest.py + LANG_PARITY (SHARED).",
+    "residual_status": "open-paused",
+    "residual_risk": "band-4 nominal-singleton lane remains blocked (~3 clean per 12 under a degraded env; goal is >=6 without trip). H442 landed the per-card guardrail (PR #301) but the >=6/no-trip stop condition is unmet; a human decision is needed on the next lever (kill-timeout-no-bisect vs MAX_AGENTS uncouple vs presplit right-size) and on whether to re-measure in a clean env. verb-root drain (H151) unaffected. This run promoted 0 cards (the 3 raw returns were audit_window requeue_defect); nothing regressed in pwg_ru_translated.jsonl."
   }
 ]
 ```

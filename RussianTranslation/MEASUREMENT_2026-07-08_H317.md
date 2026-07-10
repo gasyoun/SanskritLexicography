@@ -226,4 +226,59 @@ Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
 bug-hunt handoff for the recalibration). Compact rollup row in
 [`RESULTS_LOG.md`](RESULTS_LOG.md).
 
+## Update — 10-07-2026 (H442): per-card heal budget landed; w1b re-measure CONFOUNDED by transient slowness
+
+[H442](https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md)
+(Opus 4.8 `claude-opus-4-8` drove the Workflow; generation Sonnet 5, hardcoded) added a
+**per-card heal-call ceiling** (direction #1 of the handoff — fail fast, not
+heal-to-exhaustion): `selfHeal` derives one shared `{spent,max}` per card sized
+`ceil(nGroups * PER_CARD_HEAL_FACTOR) + PER_CARD_HEAL_HEADROOM` and threads it through
+`healGroup` + its bisection recursion, so a card that crosses its ceiling returns a
+**partial** instead of draining the shared window `MAX_AGENTS` pool
+([SanskritLexicography PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)).
+Tuned to `factor 1.5 / headroom 3` after the w1b caps at `3.0/4` summed to ~198 >> the
+61-agent window budget. Fresh worktree `SanskritLexicography-h442` (branch `h442-killgate`).
+
+### Per-window result — h317_w1b re-run (one launch)
+
+| run | cards | agents (spent/max) | raw ok | **audit-clean (promotable)** | kill-switch tripped | per-card-cap fires | subagent tokens | wall-clock |
+|---|---:|---:|---:|---:|:--:|---:|---:|---:|
+| H437 w1b (clean env, 0 conn-errors) | 12 | 61/61 | 3 | **1** (`yuvan`) | yes | n/a | 2,898,353 | 7.96 min |
+| H442 w1b (this run, degraded env) | 12 | 61/61 | 3 | **0** | yes | **0** | 2,223,194 | 9.27 min |
+
+The harness returned 3 raw cards (`yuvan`, `bheṣaja`, `āhuti`), but **all 3 were flagged
+`requeue_defect` by `audit_window.py`** — authoritative **audit-clean = 0/12** (vs H437's
+1 promoted). The run **did not meet the H442 stop condition** (≥6/12 clean AND no trip), and
+the result is **confounded**, not a clean before/after:
+
+1. **The per-card cap never bound.** `partial_keys` empty, **0** `per-card-heal-budget`
+   failures. With all 12 cards routing to the heal lane in one shared `parallel()` pool
+   against one `AGENTS_SPENT` counter, the **window budget (61) is hit first** — no single
+   card reaches its own 6–14 cap. Direction #1 alone cannot stop this window: the binding
+   constraint is the *shared* window budget when *every* card heals, not one card's monopoly.
+2. **Transient API degradation returned.** 3 × `Connection closed mid-response` (H437 had
+   **zero**), and **58 of 61 agent calls were kill-timeouts** — including fragments of
+   **11–135 bytes killed at the 45 s floor** (`heal:vicitra#g1/A/B: kill-timeout 45s @
+   skelBytes=11`). An 11-byte fragment cannot legitimately need 45 s; the calls themselves
+   were hanging. So this window's budget was consumed by *killed* calls, not by healthy
+   heal work — a different (infra) failure than H437's clean-env cascade.
+3. **New design flaw exposed — bisecting a *kill-timeout* is pure waste.** `healGroup`
+   bisects a group on kill-timeout the same as on a malformed response, but bisection only
+   helps when a group is too **big** (content-heavy); when the *calls are slow* (infra), each
+   bisection just spawns smaller fragments that hit the **same 45 s floor** and die again
+   (vicitra: g1 → g1/A, g1/B → g1/A/A, g1/A/B, g1/B/A, g1/B/B, all killed at 45–107 s). A
+   killed group should fail fast to requeue after 1–2 kill-timeouts, not bisect toward
+   11-byte fragments that also time out. This is the heal-lane redesign the H442 goal named
+   as its alternative outcome.
+
+**Disposition:** the per-card cap is a sound, tested **guardrail** (it strictly bounds a
+single-pathological-card monopoly and is a no-op when it doesn't bind — no regression), but
+it is **not sufficient** for the medium50 window. The isolated blocker is now the
+**kill-timeout × bisection interaction under slow calls**, not per-card monopoly. Next step
+is a human decision (below); a blind 2nd/3rd launch is not warranted while the env is
+transiently degraded and the true lever has shifted.
+
+Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
+`H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10`.
+
 _Dr. Mārcis Gasūns_
