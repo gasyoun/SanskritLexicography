@@ -90,6 +90,11 @@ of every fix as SHARED / INTENTIONAL-DIVERGENCE / GAP before closing a
 session, mechanically enforced by a selftest gate:
 [`RussianTranslation/LANG_PARITY.md`](RussianTranslation/LANG_PARITY.md).
 Live session journal: [`RussianTranslation/.ai_state.md`](RussianTranslation/.ai_state.md).
+**`<ab>`/`<ls>` tooltips + RU-column abbreviation purity** (a pwg_ru-specific
+policy, distinct from mw_ru's "leave `<gram>` untouched" rule above —
+grammatical-category abbreviations stay international Latin with a tooltip,
+editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
+[`RussianTranslation/ABBREVIATIONS_RU.md`](RussianTranslation/ABBREVIATIONS_RU.md).
 
 ## Authoring conventions
 
