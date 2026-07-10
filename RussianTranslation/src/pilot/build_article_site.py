@@ -22,6 +22,7 @@ Markup rendering (IAST, per MG 2026-07-01):
   python src/pilot/build_article_site.py --root gam # one root (debug print)
 """
 import argparse
+import collections
 import glob
 import html
 import json
@@ -38,6 +39,10 @@ REPO = os.path.dirname(SRC)
 sys.path.insert(0, SRC)
 import corpus_gate as cg  # noqa: E402  (_S2I SLP1->IAST map)
 import ls_resolver as lsr  # noqa: E402  (<ls> citation -> Cologne scan URL; PWG paths)
+import pwg_ab  # noqa: E402  (<ab> grammar/usage abbreviation -> DE/EN expansion, for tooltips)
+import pwg_ab_ru  # noqa: E402  (<ab> -> RU display text for the editorial/cross-ref bucket)
+import pwg_sources as pwgsrc  # noqa: E402  (<ls> siglum -> full source title, for tooltips)
+import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
 
 RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 OUT_DIR = os.path.join(REPO, 'article_site')
@@ -62,6 +67,24 @@ def _ls_href(attrs, visible):
         return lsr.generate_href('pwg', n_attr, (visible or '').strip())
     except Exception:
         return None
+
+
+def _ls_title(attrs, visible):
+    """Resolve one <ls> citation to its full source title (pwgbib), for a hover
+    tooltip -- e.g. 'ṚV.' -> 'Ṛgveda'. Tries the n= attribute first (normalized
+    prefix), falls back to the visible text's own source_key."""
+    m = _N_ATTR.search(attrs or '')
+    n_attr = m.group(1) if m else None
+    for cand in (n_attr, pwgsrc.source_key(visible or '')):
+        if not cand:
+            continue
+        try:
+            r = pwgsrc.resolve(cand)
+        except Exception:
+            r = None
+        if r:
+            return r
+    return None
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
 _LEX = re.compile(r'<lex\b[^>]*>(.*?)</lex>', re.S)
 _IS = re.compile(r'<is\b[^>]*>(.*?)</is>', re.S)
@@ -76,12 +99,76 @@ def slp1_iast(s):
     return ''.join(cg._S2I.get(c, c) for c in s)
 
 
-def _render(text, mode):
+_CYR_VOWELS = 'аеёиоуыэюя'
+_STRIP_MARKUP = re.compile(r'[{}<>#%]|\x01|\x02')
+
+
+def _ab_display(token, lang, pre_ctx=''):
+    """(visible, title) for one <ab> token, language-aware.
+
+    DE/EN columns: visible = the original abbreviation as printed; title = its
+    authoritative German/English expansion (pwg_ab), a straight tooltip.
+    RU column: visible = the curated Russian equivalent when the token is in
+    the editorial/cross-reference bucket (pwg_ab_ru.RU_MAP; MG's own examples,
+    e.g. Bein.->эпит., s.u.->см.); grammatical-category tokens (Acc., caus.,
+    aor., sg. ...) are DELIBERATELY kept as the international Latin siglum per
+    MG's 10-07-2026 decision -- those just gain the same tooltip as DE/EN.
+
+    `pre_ctx` = raw text immediately preceding this tag in the SAME field. Some
+    already-translated cards paraphrase the abbreviation in the surrounding RU
+    prose AND leave the tag (e.g. stored ru = "см. <ab>s. u.</ab> menā" -- the
+    translator wrote "см." by hand, then left the tag) -- rendering our own
+    "см." there too doubles it ("см. см."). If the RU_MAP text is already the
+    last word before the tag, drop the redundant visible text (title/tooltip
+    is kept off too -- there is nothing left to hang it on)."""
+    tok = token.strip()
+    r = pwg_ab.resolve(tok)
+    title = ('%s — %s' % (r['de'], r['en'])) if r else None
+    if lang == 'ru':
+        vis, _ = pwg_ab_ru.display(tok)
+        if vis != tok:
+            pre = _STRIP_MARKUP.sub(' ', pre_ctx)
+            pre = re.sub(r'\s+', ' ', pre).strip(' .').lower()
+            if pre.endswith(vis.rstrip('.').lower()):
+                return '', None
+        return vis, title
+    return tok, title
+
+
+def _is_display(inner, lang, post_ctx=''):
+    """<is> proper-name span: Cyrillicize only for the RU column (see
+    iast_to_cyrillic.py -- DE/EN keep the IAST spelling untouched).
+
+    `post_ctx` = the raw character(s) immediately following the closing tag.
+    The translated store sometimes glues a bare Russian case-vowel directly
+    onto the tag with no space (e.g. "<is>Vṛṣaṇaśva</is>а." for the genitive)
+    -- since our transliteration of an a-stem name already ends in that same
+    vowel ("Вришанашва"), the two would concatenate into a mis-declined
+    double-vowel ("Вришанашваа"). When the transliteration ends in a Cyrillic
+    vowel and the very next stored character is also one (no space between --
+    i.e. a glued-on case ending), drop our trailing vowel so the store's own
+    ending lands on the consonant stem instead, matching how these names were
+    evidently declined by the translator."""
+    if lang != 'ru':
+        return inner
+    cyr = i2c.name_for_ru_prose(inner)
+    nxt = (post_ctx[:1] or '').lower()
+    if cyr and cyr[-1].lower() in _CYR_VOWELS and nxt in _CYR_VOWELS:
+        cyr = cyr[:-1]
+    return cyr
+
+
+def _render(text, mode, lang=None):
     """Render one stored field (de/ru/en) to `html` or `md`.
 
-    Sanskrit spans -> italic IAST; glosses unwrapped; citations/abbrevs kept in a
-    light wrapper; structural tags dropped. The two modes differ only in the
-    emphasis/needed-escaping syntax."""
+    Sanskrit LEXICAL spans ({#..#}) -> italic IAST in every language (headword/
+    cited-form convention, deliberately unchanged — mirrors the mw_ru rule that
+    Sanskrit forms are left untouched). <is> PROPER NAMES and <ab> EDITORIAL
+    abbreviations are language-aware: `lang` ('de'/'ru'/'en') controls whether
+    they get RU-specific treatment (Cyrillic name, Russian abbreviation) — see
+    _ab_display/_is_display. Citations/abbrevs kept in a light wrapper;
+    structural tags dropped. The two modes differ only in the emphasis/needed-
+    escaping syntax."""
     if not text:
         return ''
     t = _PAGE.sub('', text)
@@ -105,21 +192,36 @@ def _render(text, mode):
             # quote/space chars that would require quoting.
             vis = m.group(2).strip()
             url = _ls_href(m.group(1), vis)
+            title = _ls_title(m.group(1), vis)
+            tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
             if url:
-                # <a class=ls href=URL target=_blank rel=noopener>VIS</a>
-                return '%sa class=ls href=%s target=_blank rel=noopener%s%s%s/a%s' % (
-                    LT, url, GT, vis, LT, GT)
-            return '%sspan class=ls%s%s%s/span%s' % (LT, GT, vis, LT, GT)
+                # <a class=ls href=URL title=T target=_blank rel=noopener>VIS</a>
+                return '%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s' % (
+                    LT, url, tattr, GT, vis, LT, GT)
+            return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, vis, LT, GT)
         t = _LS.sub(_ls_html, t)
-        t = _AB.sub(lambda m: '%sspan class=ab%s%s%s/span%s' % (LT, GT, m.group(1).strip(), LT, GT), t)
+
+        def _ab_html(m):
+            vis, title = _ab_display(m.group(1), lang, m.string[:m.start()])
+            if not vis:
+                return ''  # deduped against a preceding hand-written RU paraphrase
+            tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
+            return '%sspan class=ab%s%s%s%s/span%s' % (LT, tattr, GT, vis, LT, GT)
+        t = _AB.sub(_ab_html, t)
         t = _LEX.sub(lambda m: '%sspan class=lex%s%s%s/span%s' % (LT, GT, m.group(1).strip(), LT, GT), t)
-        t = _IS.sub(lambda m: '%si%s%s%s/i%s' % (LT, GT, m.group(1), LT, GT), t)
+        t = _IS.sub(lambda m: '%si%s%s%s/i%s' % (
+            LT, GT, _is_display(m.group(1), lang, m.string[m.end():m.end() + 2]), LT, GT), t)
         t = _HOM.sub(lambda m: '%sb%s%s%s/b%s' % (LT, GT, m.group(1), LT, GT), t)
         t = _GL.sub(lambda m: m.group(1), t)
         t = _TAG.sub('', t)               # drop leftover source structural tags
         t = html.escape(t)                # escape &,<,> in the remaining plain text
         t = t.replace('\n', '<br>')       # real <br> (added after escape)
         t = t.replace(LT, '<').replace(GT, '>')   # restore our kept tags
+        # NOTE: title=... attributes are intentionally left UNQUOTED (matching
+        # href=/class= elsewhere in this renderer) with internal spaces shielded
+        # as U+00A0 (renders identically to a normal space in the tooltip) —
+        # do NOT unshield back to ' ' here, a literal space would split an
+        # unquoted attribute into bogus extra tokens.
     else:  # md
         t = _SK.sub(lambda m: '*%s*' % slp1_iast(m.group(1)), t)
         t = _GL.sub(lambda m: m.group(1), t)
@@ -129,9 +231,9 @@ def _render(text, mode):
             url = _ls_href(m.group(1), vis)
             return '[%s](%s)' % (vis, url) if url else '[%s]' % vis
         t = _LS.sub(_ls_md, t)
-        t = _AB.sub(lambda m: m.group(1).strip(), t)
+        t = _AB.sub(lambda m: _ab_display(m.group(1), lang, m.string[:m.start()])[0], t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)
-        t = _IS.sub(lambda m: m.group(1), t)
+        t = _IS.sub(lambda m: _is_display(m.group(1), lang, m.string[m.end():m.end() + 2]), t)
         t = _HOM.sub(lambda m: '**%s**' % m.group(1), t)
         t = _TAG.sub('', t)
     t = re.sub(r'[ \t]{2,}', ' ', t)
@@ -158,6 +260,35 @@ def ls_stats(de_html_list):
                 html += 1
         tot += len(_SPAN_LS.findall(h or ''))
     return {'ls': tot, 'ls_linked': lnk, 'ls_scan': scan, 'ls_html': html}
+
+
+def ab_frequency(model):
+    """Corpus-wide <ab> token frequency, from the DE (source) senses -- the
+    authoritative reference set (RU/EN mirror the same abbreviations; same
+    convention as ls_stats above). One row per distinct token: count, roots it
+    appears in, the authoritative DE/EN expansion (pwg_ab), whether the RU
+    column translates it (pwg_ab_ru.RU_MAP) or keeps it as international Latin,
+    and the RU display text. Powers the abbreviations.html dashboard."""
+    freq = collections.Counter()
+    roots_of = collections.defaultdict(set)
+    for r in model:
+        for sc in r['subcards']:
+            for s in sc['senses']:
+                for tok in _AB.findall(s.get('de_raw') or ''):
+                    tok = tok.strip()
+                    freq[tok] += 1
+                    roots_of[tok].add(r['root'])
+    rows = []
+    for tok, count in freq.most_common():
+        res = pwg_ab.resolve(tok)
+        ru_vis = pwg_ab_ru.RU_MAP.get(tok)
+        rows.append({
+            'token': tok, 'count': count, 'n_roots': len(roots_of[tok]),
+            'de': res['de'] if res else None, 'en': res['en'] if res else None,
+            'resolved': bool(res), 'ru_display': ru_vis,
+            'bucket': 'translated' if ru_vis else ('latin' if res else 'unresolved'),
+        })
+    return rows
 
 
 def _root_of(key1):
@@ -243,8 +374,8 @@ def make_sense(tag, de, ru, en, dcs, src):
     return {
         'tag': str(tag), 'has_ru': bool(ru), 'has_en': bool(en),
         'de_raw': de or '',   # raw DE source (keeps <ls n=..>); not emitted, used for citation analysis
-        'de_html': _render(de, 'html'), 'ru_html': _render(ru, 'html'), 'en_html': _render(en, 'html'),
-        'de_md': _render(de, 'md'), 'ru_md': _render(ru, 'md'), 'en_md': _render(en, 'md'),
+        'de_html': _render(de, 'html', 'de'), 'ru_html': _render(ru, 'html', 'ru'), 'en_html': _render(en, 'html', 'en'),
+        'de_md': _render(de, 'md', 'de'), 'ru_md': _render(ru, 'md', 'ru'), 'en_md': _render(en, 'md', 'en'),
         'dcs': dcs_count(dcs), 'src': src or '',
     }
 
@@ -478,9 +609,10 @@ h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;marg
 .lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
 i.sa{font-style:italic;color:var(--sa)}
 .ls{color:var(--mut);font-size:.92em}
+.ls[title]{cursor:help;border-bottom:1px dotted var(--mut)}
 a.ls{color:var(--accent);font-size:.92em;text-decoration:none;border-bottom:1px dotted var(--accent)}
 a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
-.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
+.ab{font-style:italic;color:var(--mut);cursor:help;border-bottom:1px dotted var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
 .badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
 .na{color:var(--mut);font-style:italic}
 /* language switch: show German always as reference in ru/en; German-only in de mode */
@@ -512,7 +644,7 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
 .cw.empty:hover{background:none;color:var(--mut)}
 </style></head><body><div id="wrap">
-<nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
+<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
 <script src="articles.js"></script>
 <script>
@@ -614,6 +746,97 @@ renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
 """
 
 
+ABBREV_HTML = r"""<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWG — словарь сокращений</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#6a6a6a;--line:#e4e4e4;--accent:#7a1f1f;--card:#fafafa}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--accent:#e6928a;--card:#1e1e1e}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+#wrap{max-width:1000px;margin:0 auto;padding:20px 24px 60px}
+a{color:var(--accent)}
+h1{font-size:24px;margin:4px 0 4px}
+.back{font-size:13px;color:var(--mut);text-decoration:none;margin-bottom:10px;display:inline-block}
+.summary{color:var(--mut);font-size:13px;margin:6px 0 16px;line-height:1.6}
+.summary b{color:var(--fg)}
+#q{width:100%;max-width:360px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0;background:var(--bg)}
+tr:hover td{background:var(--card)}
+.tok{font-family:ui-monospace,monospace;white-space:nowrap}
+.bucket{display:inline-block;font-size:10px;border-radius:9px;padding:1px 7px;letter-spacing:.02em}
+.bucket.translated{background:#1a7a3a;color:#fff}
+.bucket.latin{background:var(--mut);color:#fff}
+.bucket.unresolved{background:#a04000;color:#fff}
+.ru{color:var(--fg)}.ru.na{color:var(--mut);font-style:italic}
+.count{text-align:right;font-variant-numeric:tabular-nums}
+</style></head><body><div id="wrap">
+<a class="back" href="index.html">← к статьям</a>
+<h1>Словарь сокращений PWG</h1>
+<div class="summary" id="summary">Загрузка…</div>
+<input id="q" placeholder="фильтр по сокращению / расшифровке…">
+<table><thead><tr><th>Сокращение</th><th>×</th><th>Статей</th><th>DE</th><th>EN</th><th>RU (в тексте)</th><th>Статус</th></tr></thead>
+<tbody id="rows"></tbody></table>
+</div>
+<script src="abbreviations.js"></script>
+<script>
+var ROWS=window.AB_ROWS||[];
+var tbody=document.getElementById('rows'), q=document.getElementById('q');
+var BUCKET_LABEL={translated:'переведено на RU',latin:'международный (лат.)',unresolved:'не найдено в pwgab'};
+function esc(x){return x==null?'':(''+x);}
+function render(filter){
+ tbody.innerHTML='';
+ var f=(filter||'').toLowerCase();
+ ROWS.filter(function(r){
+  if(!f)return true;
+  return r.token.toLowerCase().indexOf(f)>=0||(r.de||'').toLowerCase().indexOf(f)>=0
+   ||(r.en||'').toLowerCase().indexOf(f)>=0||(r.ru_display||'').toLowerCase().indexOf(f)>=0;
+ }).forEach(function(r){
+  var tr=document.createElement('tr');
+  var ru = r.ru_display ? '<span class="ru">'+esc(r.ru_display)+'</span>' : '<span class="ru na">— (как в DE)</span>';
+  tr.innerHTML='<td class="tok">'+esc(r.token)+'</td>'
+   +'<td class="count">'+r.count+'</td>'
+   +'<td class="count">'+r.n_roots+'</td>'
+   +'<td>'+esc(r.de)+'</td>'
+   +'<td>'+esc(r.en)+'</td>'
+   +'<td>'+ru+'</td>'
+   +'<td><span class="bucket '+r.bucket+'">'+BUCKET_LABEL[r.bucket]+'</span></td>';
+  tbody.appendChild(tr);
+ });
+}
+var total=ROWS.reduce(function(a,r){return a+r.count;},0);
+var translated=ROWS.filter(function(r){return r.bucket==='translated';}).reduce(function(a,r){return a+r.count;},0);
+var latin=ROWS.filter(function(r){return r.bucket==='latin';}).reduce(function(a,r){return a+r.count;},0);
+var unresolved=ROWS.filter(function(r){return r.bucket==='unresolved';}).reduce(function(a,r){return a+r.count;},0);
+document.getElementById('summary').innerHTML=
+ '<b>'+ROWS.length+'</b> различных сокращений · <b>'+total+'</b> употреблений во всём корпусе PWG→RU.<br>'
+ +'В колонке RU: <b>'+translated+'</b> ('+Math.round(100*translated/total)+'%) переведены на русский (Bein.→эпит., s.u.→см. и т.п.); '
+ +'<b>'+latin+'</b> ('+Math.round(100*latin/total)+'%) — грамматические категории (падеж/наклонение/залог/часть речи), '
+ +'оставлены международным латинским сокращением по решению 10-07-2026 (только подсказка при наведении); '
+ +(unresolved?('<b>'+unresolved+'</b> ('+Math.round(100*unresolved/total)+'%) не найдены в таблице pwgab (791 запись) — редкие/нестандартные формы.'):'все распознаны таблицей pwgab.');
+q.oninput=function(){render(q.value);};
+render('');
+</script></body></html>
+"""
+
+
+def emit_abbreviations(model):
+    """abbreviations.html + abbreviations.js — the site-wide abbreviation
+    dashboard (per-article tooltips live inline in each root's rendered HTML;
+    this is the corpus-wide view MG asked for: every distinct <ab> token, its
+    frequency, how many articles use it, its authoritative DE/EN expansion,
+    and whether/how it renders in the RU column)."""
+    rows = ab_frequency(model)
+    with open(os.path.join(OUT_DIR, 'abbreviations.js'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write('window.AB_ROWS=')
+        json.dump(rows, f, ensure_ascii=False)
+        f.write(';\n')
+    with open(os.path.join(OUT_DIR, 'abbreviations.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(ABBREV_HTML)
+    return rows
+
+
 def emit(model):
     coloc = load_colocation({r['root'] for r in model})
     os.makedirs(os.path.join(OUT_DIR, 'md', 'subcards'), exist_ok=True)
@@ -665,6 +888,8 @@ def emit(model):
         f.write(';\n')
     with open(os.path.join(OUT_DIR, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(INDEX_HTML)
+    ab_rows = emit_abbreviations(model)
+    return ab_rows
 
 
 def main():
