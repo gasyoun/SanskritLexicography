@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 08-07-2026_
+_Created: 26-06-2026 · Last updated: 10-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -1707,6 +1707,34 @@ MW72/BOP have none, so any per-edge citation statistic shrinks to n=5 edges. Ful
 
 > **Source:** H342 PH2 CITE-4AXIS ([csl-atlas PR #233](https://github.com/sanskrit-lexicon/csl-atlas/pull/233)),
 > Fable 5 `claude-fable-5` · 2026-07-08
+
+### §56. The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant
+
+🟠 **No maintained flag-and-suggest Sanskrit spellchecker exists (verified 10-07-2026), and the
+two nearest things both carry traps.** (1) The sanskrit-spellchecker.netlify.app demo M.G. named
+in the 02-07 interview is the online interface of **Prasanna S., "Spellchecker for Sanskrit: The
+Road Less Taken", ICON 2022** ([2022.icon-main.35](https://aclanthology.org/2022.icon-main.35/))
+— identified via the paper's own footnote 14; 37,058-entry Paninian word-and-paradigm Hunspell
+dictionary, **source never published, no license, dormant since ~2022** (all 117 of the author's
+public repos enumerated; the announced Firefox/LibreOffice add-ons never appeared). (2)
+**LibreOffice bundles a 543,758-entry `sa_IN` Hunspell pair since 10-01-2025**
+([LibreOffice/dictionaries `sa_IN/`](https://github.com/LibreOffice/dictionaries/tree/master/sa_IN),
+Shantanu Oak, wikipedia/wikisource-derived flat wordlist + `BREAK` stripping) whose **in-tree
+license is formally unsettled** — a GPL-2 `COPYING` was added 05-05-2025 and reverted three days
+later by a LibreOffice maintainer as contradicting per-file copyright; do NOT ingest that
+wordlist, use it only as an evaluation baseline. Also verified absent: any `sa` pack in
+wooorm/dictionaries or GNU aspell; any spellcheck component in sanscript/indic-transliteration
+(transliteration-only, MIT); any suggestion surface in SCL (its old analyser-based web
+spellchecker is defunct per the ICON paper) or the Heritage Platform (grey-rectangle flag only,
+LGPLLR databanks). A44's related-work citation "contextual spell-checker, ISCLS 2024" was a
+mis-attribution — that volume contains no spellchecking paper; corrected to Prasanna 2022.
+[COLOGNE #91](https://github.com/sanskrit-lexicon/COLOGNE/issues/91) ("Hunspell for Sanskrit?")
+has been open since 2016 — the demand signal for the planned SanskritSpellCheck web app, whose
+niche (suggestion generation against a validated, provenance-carrying lexicon) is unoccupied.
+
+> **Source:** [SanskritSpellCheck docs/PRIOR_ART.md](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/PRIOR_ART.md)
+> (H452, [PR #27](https://github.com/drdhaval2785/SanskritSpellCheck/pull/27), 3 parallel
+> research agents, every claim fetch-backed), Fable 5 `claude-fable-5` · 2026-07-10
 
 ---
 
