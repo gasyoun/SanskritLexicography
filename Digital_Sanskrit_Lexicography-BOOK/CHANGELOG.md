@@ -1,11 +1,34 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 09-07-2026_
+_Created: 07-07-2026 · Last updated: 10-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 10-07-2026 (H505 execution)
+
+- [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md):
+  the 37-work Lexicography-Manuals library read against the plan, proposal, and both
+  written chapters — per-chapter grounding map, gap analysis (corpus-absence induction
+  problem = top referee risk), competing-works positioning (novelty vs LSM 164 restated as
+  the evidence-grade layer), comparative part-bridge recommendation (Baalbaki/Ferri/Dickey),
+  and the chapter-by-chapter quality-bar audit (no cuts; four mandatory reframes; the Ch. 7
+  keep-vs-merge fork parked as `@DECIDE`).
+- [literature/md/Lexicography-Manuals/LEXICOGRAPHY_MANUALS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/LEXICOGRAPHY_MANUALS.meta.md):
+  directory metadoc for the library — provenance (committed 07-07-2026 inside PR #219),
+  bibliographic identities + one-line tags for all 37 works, hygiene defects (1 empty scan,
+  1 duplicate, 1 mangled filename, 1 low-authority anthology), and the ranked beyond-M01
+  backlog (A30/A31/A32, pwg_ru grading, A39, teaching shelf).
+
+### Changed — 10-07-2026
+
+- [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md):
+  §11 gains the H505 done-entry pointing at the crosswalk. Pending corrections surfaced by
+  the audit (Klosa-Kückelhaus sole-editor fix in BRILL_PROPOSAL §7; Vogel 1979 + Baalbaki
+  2014 comparables additions) are listed in LITERATURE_CROSSWALK.md §6, deliberately not
+  applied in this pass.
 
 ### Added — 09-07-2026 (H430 execution)
 
