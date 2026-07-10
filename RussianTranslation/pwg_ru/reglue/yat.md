@@ -3,7 +3,7 @@
 ## h0
 
 **1)** <div n="p">— {#pratisam#} <ab>med.</ab> {%сражаться с, бороться против%}
-<ls>ŚAT. BR. 11,4,1,3.</ls> <ab>partic.</ab> {#˚yatta#} {%вполне подготовленный, — вооружённый%}
+<ls>ŚAT. BR. 11,4,1,3.</ls> <ab>partic.</ab> {#˚yatta#} {%вполне подготовленный, — вооруженный%}
 <ls>MBH. 7,3534.</ls>
 
 **1))** <div n="p">— {#nis#} <ab>caus.</ab>
@@ -49,7 +49,7 @@
 <ls>MBH. 1,2085.</ls>
 <ls>SUŚR. 2,32,18.</ls>
 
-**1c)** <ls>ŚĀK. 18,14.</ls> {#prayattamanvicCati SUlinaM manaH#} {%стремящийся, всецело поглощённый делом%}
+**1c)** <ls>ŚĀK. 18,14.</ls> {#prayattamanvicCati SUlinaM manaH#} {%стремящийся, всецело поглощенный делом%}
 <ls>Spr. 4591.</ls>
 
 **2)** <div n="1">— 2) <ab>med.</ab> {%выстраиваться в ряд%}: {#saM SUra^RAso di\vyAso\ atyA^H . ha\MsA i^va SreRi\So ya^tante#}
@@ -85,7 +85,7 @@
 <ls>AIT. BR. 8,10.</ls> {#sa\MgrA\me saMya^tte#}
 <ls>TS. 2,2,8,2.</ls>
 
-**5)** <div n="1">— 5) {#saMyatta#} {%готовый, всецело поглощённый делом, принявший меры, бдительный, осторожный%}: {#samare#}
+**5)** <div n="1">— 5) {#saMyatta#} {%готовый, всецело поглощенный делом, принявший меры, бдительный, осторожный%}: {#samare#}
 <ls>MBH. 7,5179.</ls> {#taTA yuDyeta saMyatto#}
 (<ab>v. l.</ab> вместо {#saMpanno) vijayeta ripUnyaTA#}
 <ls>M. 7,200.</ls>
@@ -122,7 +122,7 @@
 
 **Nachträge/cross-ref)** <div n="v">— <ab>Vgl.</ab> {#niryAtaka#} <ab>fg.</ab> und {#niryAtya#} .
 
-**PPP_1)** <div n="1"> 1) {%зависящий от, покоящийся на, находящийся в чьём-либо распоряжении%} (дополнение в <ab>loc.</ab>, <ab>gen.</ab> или в <ab>comp.</ab> предшествует) <ls>AK. 3,1,16.</ls> {#amAtye daRqa Ayatto daRqe vEnayikI kriyA . nfpatO kozarAzwre ca dUte saMDiviparyayO ..#} <ls>M. 7,65.</ls> <ls n="M. 7,">205.</ls> <ls>Spr. 5274.</ls> <ls>MBH. 14,2084.</ls> <ls n="MBH. 14,">2351.</ls> <ls>HARIV. 5021.</ls> <ls>R. 1,53,14. fg.</ls> (<ls n="GORR. 1,">54,15. fg.</ls> <ls>GORR.</ls>). <ls n="R.">2,45,28.</ls> <ls>MEGH. 16.</ls> <ls>KATHĀS. 46,180.</ls> {#tavAyattAH prajAScemAH#} <ls>R. GORR. 2,2,26.</ls> {#prAvfwkAlasya cAnnamAyattam#} <ls>VARĀH. BṚH. S. 21,1.</ls> <ls>KATHĀS. 46,19.</ls> <ls>MĀRK. P. 72,21.</ls> <ls n="MĀRK. P.">126,3.</ls> <ls n="MĀRK. P. 126,">4.</ls> <ls n="MĀRK. P. 126,">7.</ls> <ls>HIT. 84,5.</ls> {#vidaDe tasyAyattaM nijaM Danam#} {%предоставил это в его распоряжение%} <ls>RĀJA-TAR. 5,83.</ls> {#cakzurAyattA#} <ls>MAITRYUP. 6,6.</ls> <ls>R. 1,4,29.</ls> <ls n="R.">5,86,12.</ls> <ls>ŚĀK. 92.</ls> <ls>Spr. 1431.</ls> <ls n="Spr.">2263.</ls> <ls n="Spr.">5384.</ls> <ls>VṚDDHACĀṆ. 13,14.</ls> <ls>KĀM. NĪTIS. 5,77. 18,20</ls> ({#mitrAyatte#} следует читать) <ls>DAŚAR. 2,40.</ls> <ls>MĀRK. P. 126,5.</ls> <ls>LA. (II) 90,13.</ls> <ls>KATHĀS. 18,136.</ls> <ls n="KATHĀS.">20,151.</ls> <ls n="KATHĀS.">52,211.</ls> <ls n="KATHĀS.">53,7.</ls> <ls>RĀJA-TAR. 4,491.</ls> <ls>Ind. St. 2,305,1.</ls> <ls>PAÑCAT. 85,17.</ls> <ls>HIT. 52,9.</ls> <ls n="HIT.">130,3.</ls> <ls>HIT. ed. JOHNS. 1086.</ls> <ls>DAŚAK.</ls> в <ls>BENF. Chr. 197,19.</ls> <ls>H. 918.</ls> <ls>VOP. 7,85.</ls> {#madekAyattatAM gatA#} <ls>KATHĀS. 32,171.</ls> {#ISvarecCAyattatva#} <ls>SARVADARŚANAS. 79,14.</ls> без дополнения <ls>R. 7,38,9.</ls> <ls>DAŚAR. 2,22.</ls> {#AyattIkfta#} <ls>RĀJA-TAR. 4,680.</ls> <ab>Vgl.</ab> {#anAyatta, parAyatta, svAyatta#}.
+**PPP_1)** <div n="1"> 1) {%зависящий от, покоящийся на, находящийся в чьем-либо распоряжении%} (дополнение в <ab>loc.</ab>, <ab>gen.</ab> или в <ab>comp.</ab> предшествует) <ls>AK. 3,1,16.</ls> {#amAtye daRqa Ayatto daRqe vEnayikI kriyA . nfpatO kozarAzwre ca dUte saMDiviparyayO ..#} <ls>M. 7,65.</ls> <ls n="M. 7,">205.</ls> <ls>Spr. 5274.</ls> <ls>MBH. 14,2084.</ls> <ls n="MBH. 14,">2351.</ls> <ls>HARIV. 5021.</ls> <ls>R. 1,53,14. fg.</ls> (<ls n="GORR. 1,">54,15. fg.</ls> <ls>GORR.</ls>). <ls n="R.">2,45,28.</ls> <ls>MEGH. 16.</ls> <ls>KATHĀS. 46,180.</ls> {#tavAyattAH prajAScemAH#} <ls>R. GORR. 2,2,26.</ls> {#prAvfwkAlasya cAnnamAyattam#} <ls>VARĀH. BṚH. S. 21,1.</ls> <ls>KATHĀS. 46,19.</ls> <ls>MĀRK. P. 72,21.</ls> <ls n="MĀRK. P.">126,3.</ls> <ls n="MĀRK. P. 126,">4.</ls> <ls n="MĀRK. P. 126,">7.</ls> <ls>HIT. 84,5.</ls> {#vidaDe tasyAyattaM nijaM Danam#} {%предоставил это в его распоряжение%} <ls>RĀJA-TAR. 5,83.</ls> {#cakzurAyattA#} <ls>MAITRYUP. 6,6.</ls> <ls>R. 1,4,29.</ls> <ls n="R.">5,86,12.</ls> <ls>ŚĀK. 92.</ls> <ls>Spr. 1431.</ls> <ls n="Spr.">2263.</ls> <ls n="Spr.">5384.</ls> <ls>VṚDDHACĀṆ. 13,14.</ls> <ls>KĀM. NĪTIS. 5,77. 18,20</ls> ({#mitrAyatte#} следует читать) <ls>DAŚAR. 2,40.</ls> <ls>MĀRK. P. 126,5.</ls> <ls>LA. (II) 90,13.</ls> <ls>KATHĀS. 18,136.</ls> <ls n="KATHĀS.">20,151.</ls> <ls n="KATHĀS.">52,211.</ls> <ls n="KATHĀS.">53,7.</ls> <ls>RĀJA-TAR. 4,491.</ls> <ls>Ind. St. 2,305,1.</ls> <ls>PAÑCAT. 85,17.</ls> <ls>HIT. 52,9.</ls> <ls n="HIT.">130,3.</ls> <ls>HIT. ed. JOHNS. 1086.</ls> <ls>DAŚAK.</ls> в <ls>BENF. Chr. 197,19.</ls> <ls>H. 918.</ls> <ls>VOP. 7,85.</ls> {#madekAyattatAM gatA#} <ls>KATHĀS. 32,171.</ls> {#ISvarecCAyattatva#} <ls>SARVADARŚANAS. 79,14.</ls> без дополнения <ls>R. 7,38,9.</ls> <ls>DAŚAR. 2,22.</ls> {#AyattIkfta#} <ls>RĀJA-TAR. 4,680.</ls> <ab>Vgl.</ab> {#anAyatta, parAyatta, svAyatta#}.
 
 **PPP_2)** <div n="1">— 2) {%напрягающий усилия, прилагающий старание%}: {#paramAyattAH#} <ls>BHĀG. P. 8,7,5.</ls> {%находящийся начеку, остерегающийся%} <ls>R. 7,19,10.</ls> {#DanurAyattamuttamam#} так <ab>v. a.</ab> {%стоящий наготове%} <ls n="R. 7,">109,7.</ls>
 
@@ -156,11 +156,11 @@
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] (se) diriger — направляться. [полисемия, неоднозначно исходящая из. Renou 1997, S. 58.] Renou 1997 : 1009
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединёнными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
+**+)** [NWS·nws_at_sense → *new] [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединенными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). ṚV 3,59,1, ṚV 10,127,7. Hillebrandt 1885 : 110
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. ṚV 7,36,2. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперёд, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. ṚV 10,62,11, ṚV 8,20,12, ṚV 10,113,7, ṚV 1,85,8, ṚV 10,75,3, ṚV 10,18,6. Caus.: a) U.: подстёгивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). ṚV 3,59,1, ṚV 5,32,12, ṚV 10,127,7, ṚV 5,3,9. Geldner 1907 : 140
+**+)** [NWS·nws_at_sense → *new] [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. ṚV 7,36,2. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперед, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. ṚV 10,62,11, ṚV 8,20,12, ṚV 10,113,7, ṚV 1,85,8, ṚV 10,75,3, ṚV 10,18,6. Caus.: a) U.: подстегивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). ṚV 3,59,1, ṚV 5,32,12, ṚV 10,127,7, ṚV 5,3,9. Geldner 1907 : 140
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] {#+ adhi , Ā: anlegen, anstecken. ṚV 1,64,4 .#} + ádhi: 1) med.: надевать на себя что-л. (Acc.) (в качестве украшения); 2) Caus. med.: достигать места (Acc.). Graßmann 1873 (1996) : 1079
 
@@ -172,7 +172,7 @@
 
 **+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#+ nis , Kaus ( niryātayati ): to forgive, pardon, set free.#} (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Instr., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Instr.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Instr., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#– ( niryātita ): given. CII 2.1 (Index) .#} + pari, (páriyatta): окружённый. ṚV 7,83,8. Hillebrandt 1885 : 110
+**+)** [NWS·nws_at_sense → *new] [NWS:] {#– ( niryātita ): given. CII 2.1 (Index) .#} + pari, (páriyatta): окруженный. ṚV 7,83,8. Hillebrandt 1885 : 110
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] {#– umstellen, umzingeln. ṚV 7,83,8 .#} + pári: окружать, обступать (Acc.). Graßmann 1873 (1996) : 1079
 
@@ -200,7 +200,7 @@
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] Indekl. до, вплоть до. PPS, Introduction S. 29, Z. 13. SJS 10 : 185
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#ya#} [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращённому обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
+**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#ya#} [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращенному обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
 
 **+)** [NWS·nws_at_sense → *new] [NWS:] [Buddh, unsp] [ yat tu ] читать yan nu . MSV . BHSD : 442 (s.v. yat tu)
 
@@ -258,7 +258,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 [Page5-119-a] {#A/yatta#}
 <div n="2">— a〉 {%находящийся в%} (<ab>Loc.</ab> или <ab>Acc.</ab>)
-<div n="2">— b〉 {%зависящий от, основывающийся на, состоящий в чьём-либо распоряжении;%} дополнение в <ab>Loc.</ab>, <ab>Gen.</ab> или в <ab>Comp.</ab> предшествует. Также без дополнения.
+<div n="2">— b〉 {%зависящий от, основывающийся на, состоящий в чьем-либо распоряжении;%} дополнение в <ab>Loc.</ab>, <ab>Gen.</ab> или в <ab>Comp.</ab> предшествует. Также без дополнения.
 <div n="2">— c〉 {%напрягающий силы, прилагающий усилия%}.
 <div n="2">— d〉 {%находящийся начеку, остерегающийся%}.
 <div n="2">— e〉 {%стоящий наготове%}.
@@ -299,13 +299,13 @@
 
 **+)** [PW·restate → *new] <div n="p">— С {#pratinis#} <ab>Caus.</ab> {%снова выдавать, возвращать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pari#} {%окружать, обступать%}. {#pa/riyatta#} {%окружённый%}.
+**+)** [PW·restate → *new] <div n="p">— С {#pari#} {%окружать, обступать%}. {#pa/riyatta#} {%окруженный%}.
 
 **+)** [PW·restate → *new] <div n="p">— С {#pra#}
 
 **+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Med.</ab> {%воздействовать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Med.</ab> <ab>Act.</ab> (метрически) {%стремиться, прилагать усилия к, быть озабоченным, усердствовать;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, {#arTE, arTam, hEtos#} или в <ab>Infin.</ab> {#prayatta#} {%стремящийся, всецело поглощённый делом;%} {#prayatita#} <lex>n.</lex> <ab>impers.</ab>
+**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Med.</ab> <ab>Act.</ab> (метрически) {%стремиться, прилагать усилия к, быть озабоченным, усердствовать;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, {#arTE, arTam, hEtos#} или в <ab>Infin.</ab> {#prayatta#} {%стремящийся, всецело поглощенный делом;%} {#prayatita#} <lex>n.</lex> <ab>impers.</ab>
 
 **+)** [PW·restate → *new] <div n="p">— С {#saMpra#} <ab>Med.</ab> {%прилагать усилия к, быть озабоченным%} (<ab>Dat.</ab>).
 
@@ -335,7 +335,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 <ab>Med.</ab> {%столкнуться, вступить в борьбу%}. {#saMgrAmam#} {%начать бой%}. {#sa/Myatta#} <ab>Pl.</ab> {%вступить в конфликт,%} {#saMgrAmE/ sa/MyattE#} {%при начале сражения%} <ls>TS. 2,1,3,1.</ls> <ls n="TS. 2,1,3,">2.</ls> <ls n="TS. 2,1,">8,4</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {#saMyatta#} {%готовый, всецело поглощённый делом, принявший меры, [Page5-119-b] находящийся начеку, остерегающийся%}.
+**+)** [PW·restate → *new] <div n="1">— 5〉 {#saMyatta#} {%готовый, всецело поглощенный делом, принявший меры, [Page5-119-b] находящийся начеку, остерегающийся%}.
 
 **+)** [PW·restate → *new] <div n="p">— С {#aBisam#}, {#˚saMyatta#} {%управляемый, направляемый%} (кони).
 
@@ -343,14 +343,14 @@
 
 **+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Med.</ab> {%бороться против, противостоять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {#˚saMyatta#} {%совершенно готовый, — снаряжённый%}.
+**+)** [PW·restate → *new] <div n="1">— 2〉 {#˚saMyatta#} {%совершенно готовый, — снаряженный%}.
 
 **+)** [PW·restate → *new] √{#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>.
-<div n="p">— С {#anvA#} V. {%принимать участие в чём-либо%} <ls>ŚĀṄKH. BR. 23,5</ls>.<info n="sup_7"/>
+<div n="p">— С {#anvA#} V. {%принимать участие в чем-либо%} <ls>ŚĀṄKH. BR. 23,5</ls>.<info n="sup_7"/>
 
-**+)** [PWKVN·a2a → *new] {#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>. — С {#anvA#} V. {%участвовать в чём-л.%} <ls>ŚĀṄKH. BR. 23,5</ls>.
+**+)** [PWKVN·a2a → *new] {#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>. — С {#anvA#} V. {%участвовать в чем-л.%} <ls>ŚĀṄKH. BR. 23,5</ls>.
 
-**+)** [SCH·sch_star → *new] {%yat%}¦ <ls>Kaus.</ls> ср. Roth, <ls>ZDMG 41,676.</ls> — С {%anvā%} {%участвовать в чём-л.%}, <ls>Śāṅkh. Br. 23,5.</ls>
+**+)** [SCH·sch_star → *new] {%yat%}¦ <ls>Kaus.</ls> ср. Roth, <ls>ZDMG 41,676.</ls> — С {%anvā%} {%участвовать в чем-л.%}, <ls>Śāṅkh. Br. 23,5.</ls>
 
 **+)** [SCH·sch_star → *new] {%yat%}¦ {%satyam%} см. под {%satya%}.
 

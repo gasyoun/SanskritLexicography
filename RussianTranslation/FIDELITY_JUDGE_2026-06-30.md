@@ -28,7 +28,7 @@ effectively 100 %.
   agreement slip; the gloss meaning is faithful.
 
 One borderline sev-2: `muc~~h0_zz_pw00` renders a single German *aufgelöst* as a duplicated
-*"расслабленный, расслаблённый"* (likely a typo dup) — anchors intact.
+*"расслабленный, расслабленный"* (likely a typo dup) — anchors intact.
 
 ### By stratum
 

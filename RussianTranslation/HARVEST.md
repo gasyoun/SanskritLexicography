@@ -46,7 +46,7 @@ The curated map covers the top **45** sources = **72.4%** of all citations:
 
 `python src/corpus_harvest.py <slp1> [LS_KEY] [--raw]`
 
-- **lemma-grouped**: царя/царю/царём collapse to **царь** (count summed, surface
+- **lemma-grouped**: царя/царю/царем collapse to **царь** (count summed, surface
   forms kept as evidence).
 - **stratified**: renderings split by period + genre; the same word shows its
   era-specific Russian — e.g. `dharma` → **дхарма** in Manu (legal term) vs

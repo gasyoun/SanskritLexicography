@@ -96,7 +96,7 @@
 <ls>R. 4,14,15.</ls> {#iti pariSrutam#} <ab>impers.</ab>
 <ls>HARIV. 2010.</ls>
 
-**PPP 2)** <div n="1">— 2) возвещённый, произнесённый, сообщённый
+**PPP 2)** <div n="1">— 2) возвещенный, произнесенный, сообщенный
 <ls>R. GORR. 1,1,105.</ls> <ls>BHĀG. P. 3,22,8.</ls> <ls n="BHĀG. P.">4,18,2.</ls>
 
 **PPP 2))** <div n="1">— 2) известный как, считающийся, слывущий, называемый: {#aSvameDaH kratuSrezWaH kzatriyARAM pariSrutaH#}
@@ -128,7 +128,7 @@
 <ls>YĀJÑ. 2,112.</ls> {#saMSrAvayannaDvani deSikendraH#}
 <ls>Verz. d. Oxf. H. 259,a,19.</ls> {#ruditaDvanim#}
 <ls>KATHĀS. 72,50.</ls> {#vArttAm#}
-<ls>R. 3,63,28.</ls> {#nAma saMSrAvya cAtmanaH#} {%называя своё имя%}
+<ls>R. 3,63,28.</ls> {#nAma saMSrAvya cAtmanaH#} {%называя свое имя%}
 <ls>MBH. 15,732.</ls>
 <ls>R. GORR. 2,2,18.</ls> <ls n="R. GORR.">6,79,10.</ls>
 <ls>KATHĀS. 20,40.</ls> {#saMSrAvyamARezu rAjYAM nAmasu#}
@@ -184,7 +184,7 @@
 **caus. 4))** <div n="1">— 4) призывать, подзывать к себе: {#parasya janam#}
 <ls>BHAṬṬ. 12,30.</ls>
 
-**caus. 5))** <div n="1">— 5) заклинать, нашёптывать над (кем-л.): {#ASrAvita (mantra)#}
+**caus. 5))** <div n="1">— 5) заклинать, нашептывать над (кем-л.): {#ASrAvita (mantra)#}
 <ls>R. 5,82,10.</ls>
 
 **cross-ref)** <div n="v">— <ab>Vgl.</ab> {#SuSrUzaka#} <ab>fgg.</ab>
@@ -224,11 +224,11 @@
 
 **+)** [PW·restate → *new] — С {#A#} (только {#A/ — aSrot#}) отступать, уступать.
 
-**+)** [PW·restate → *new] — С {#pra#} <ab>Caus.</ab> ({#˚Sravayati#} и {#˚SrAvayati#}) продвигать вперёд.
+**+)** [PW·restate → *new] — С {#pra#} <ab>Caus.</ab> ({#˚Sravayati#} и {#˚SrAvayati#}) продвигать вперед.
 
 **+)** [PW·restate → *new] — С {#vi#} в <hom>2.</hom> {#viSruti#}.
 
-**+)** [PW·restate → *new] — С {#sam#}, {#sa/MSruta#} слившийся вместе, стёкшийся.
+**+)** [PW·restate → *new] — С {#sam#}, {#sa/MSruta#} слившийся вместе, стекшийся.
 
 **+)** [PW·restate → *new] <hom>1.</hom> √{#Sru#} VI. {#SuSrAva#} с <ab>pass.</ab> <ab>Bed.</ab> <ls>R. 7,27,23</ls>.
 — С {#upa#} VI. давать обет, обещаться <ls>JĀTAKAM. 31</ls>.
@@ -249,7 +249,7 @@
 <ls n="ṚV.">1,127,3.</ls> В более поздних текстах этот корень и его производные нередко пишутся с палатальным сибилянтом. Соответствующие места мы отсылаем, однако, под {#sru#} .
 <div n="p">— {#A#} <ab>dass.</ab>: {#A vo\ yAmA^ya pfTi\vI ci^daSrot#} {%сама земля уступала вашему движению%}
 <ls>ṚV. 1,39,6.</ls>
-<div n="p">— {#pra#} <ab>caus.</ab> {%продвигать вперёд%}: {#prASrA^vayaM tu\rvaSa\M yadu^m#}
+<div n="p">— {#pra#} <ab>caus.</ab> {%продвигать вперед%}: {#prASrA^vayaM tu\rvaSa\M yadu^m#}
 <ls>ṚV. 10,49,8.</ls> {#prAnDaM Sro\RaM Sra\vaya^n#}
 <ls n="ṚV.">2,13,12.</ls>
 <div n="p">— {#vi#} <ab>s.</ab> 2. {#viSruti#} .

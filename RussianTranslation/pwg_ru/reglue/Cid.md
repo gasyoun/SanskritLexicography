@@ -14,7 +14,7 @@
 <ls>BHAṬṬ. 3,52.</ls> {#vicCinna = viBakta#}
 <ls>TRIK. 3,3,362.</ls>
 <ls>H. an. 3,416.</ls>
-<ls>MED. n. 132.</ls> разорванный, несвязный, разделённый; прерванный, нарушенный: {#vicCinnamfditasrajaH#}
+<ls>MED. n. 132.</ls> разорванный, несвязный, разделенный; прерванный, нарушенный: {#vicCinnamfditasrajaH#}
 <ls>R. 5,13,36.</ls> {#yadarDe vicCinnaM Bavati kftasaMDAnamiva tat#}
 <ls>ŚĀK. 9.</ls> {#kiraRAH#}
 <ls>VARĀH. BṚH. S. 29,9.</ls> {#reKAH#}
@@ -24,7 +24,7 @@
 <ls>RAGH. 16,20.</ls> {#karman#}
 <ls>BHARTṚ. 1,95.</ls> {#timirapraveSavicCinnA (dfzwiH)#}
 <ls>MṚCCH. 14,13.</ls> {#mahABAzya#} отсутствующий, более не существующий
-<ls>RĀJA-TAR. 4,487.</ls> {#vicCinnezu paTizu#} когда пути более не были непрерывны, не были видны глазу во всей своей протяжённости,
+<ls>RĀJA-TAR. 4,487.</ls> {#vicCinnezu paTizu#} когда пути более не были непрерывны, не были видны глазу во всей своей протяженности,
 <ls>AMAR. 74.</ls> {#avicCinna#} непрерывный: {#avicCinnAntaragfhA (purI)#}
 <ls>R. 1,5,9.</ls> {#camU, gaNgA#}
 <ls>RĀJA-TAR. 4,514.</ls> {#udakaDArA#}
@@ -40,7 +40,7 @@
 (<ls>BALL.</ls>: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
 <ls>VEDĀNTAS. (Allah.) No. 134.</ls>
   — [PW·restate] <hom>1.</hom> √{#Cid#}¦, {#Cina/tti, Cintte#} ({#Cindet#} <ls>KṢURIKOP. 14. 19</ls>)
-<div n="1">— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. {#saMDim#} пробить отверстие в стене. <ab>Pass.</ab> разломать, разорвать (<ab>intrans.</ab>). {#Cinna#} отрезанный <ab>u. s. w.</ab>; разорванный, -резанный; надрезанный, <ab>d. h.</ab> снабжённый перетяжками <ls n="Chr.">217,6</ls>.
+<div n="1">— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. {#saMDim#} пробить отверстие в стене. <ab>Pass.</ab> разломать, разорвать (<ab>intrans.</ab>). {#Cinna#} отрезанный <ab>u. s. w.</ab>; разорванный, -резанный; надрезанный, <ab>d. h.</ab> снабженный перетяжками <ls n="Chr.">217,6</ls>.
   — [PW·restate] <hom>2.</hom> {#Cid#}¦
 <div n="1">— 1〉 <lex>Adj.</lex> в конце <ab>Comp.</ab>
 <div n="2">— a〉 срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий.
@@ -62,13 +62,13 @@
 <div n="2">— a〉 срезание, срубание. {#SirasAm#} <ls>BĀLAR. 249,12</ls>.
   — [PW·restate] <div n="2">— b〉 в конце <ab>Comp.</ab> уничтожение.
 
-**4)** 4) {#vicCinna = samAlabDa#} умащённый, намазанный
+**4)** 4) {#vicCinna = samAlabDa#} умащенный, намазанный
 <ls>TRIK. 3,3,262.</ls>
 <ls>H. an.</ls>
 <ls>MED. n. 132.</ls>
   — [PW·restate] <div n="1">— 4〉 прерывать, нарушать.
 
-**5)** 5) {#Cinna#} пришедший в упадок, обессиленный, утомлённый: {#strI˚, BAra˚, mArga˚#}
+**5)** 5) {#Cinna#} пришедший в упадок, обессиленный, утомленный: {#strI˚, BAra˚, mArga˚#}
 <ls>VYUTP. 209.</ls>
   — [PW·restate] <div n="1">— 5〉 уничтожать, губить, разрушать, устранять. {#fRam#} так <ab>v. a.</ab> уплатить долг. <ab>Pass.</ab> исчезать <ls n="Chr.">287,26</ls>. {#Cinna#} исчезнувший, более не существующий. {#kiM naSCinnam#} так <ab>v. a.</ab> что мы при этом теряем? что нам до этого?
 
@@ -106,7 +106,7 @@
 <ls>BHĀG. P. 6,7,39.</ls> <ls n="BHĀG. P.">8,19,32.</ls>
 
 **A-5)** <div n="1">— 5) не обращать внимания, не считаться с чем-либо: {#yattvAM saMcodayati me vaca AcCidya#}
-<ls>R. 2,24,33.</ls> {#yaTA ca manye durjIvamevaM na sukaraM Druvam . AcCidya putre niryAte kOSalyA yatra jIvati ..#} невзирая на то, что сын ушёл,
+<ls>R. 2,24,33.</ls> {#yaTA ca manye durjIvamevaM na sukaraM Druvam . AcCidya putre niryAte kOSalyA yatra jIvati ..#} невзирая на то, что сын ушел,
 <ls n="R. 2,">57,20.</ls>
 
 **A-header)** <div n="p">— {#A#}
@@ -282,23 +282,23 @@
 
 **+)** [NWS·nws_at_sense → *new] {#+ vi : unterbrechen, stören. ChU VI 7, 1 .#} [Ved , unsp] – ( vichinna ). Caland 1896, p. 90 . Ved , unsp ; Renou 1935 : 27 (s.v. vichinna )
 
-**+)** [NWS·nws_at_sense → *new] {#– teilen.#} [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщеплённый, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
+**+)** [NWS·nws_at_sense → *new] {#– teilen.#} [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщепленный, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 
 **+)** [NWS·foreign_fragment → *new] ‹en› {#+ vyava ( vyavacchinna ): 1) separated, detached from a specific thing by the loss of connection with it ; 2) characterized or possessed of an intervention by similar things. MBh on Pāṇ II.1.1 Vā 2 , MBh on Pāṇ III.3.83 .#} [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): установленный; разграниченный. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
 
-**+)** [NWS·nws_at_sense → *new] {#+ vyud ( vyucchinna ): geteilt.#} [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искоренённый, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
+**+)** [NWS·nws_at_sense → *new] {#+ vyud ( vyucchinna ): geteilt.#} [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искорененный, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [ chinná ] разделённый, разорванный, разрезанный, прободённый. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чём стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощённый, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
+**+)** [NWS·foreign_fragment → *new] ‹en› [ chinná ] разделенный, разорванный, разрезанный, прободенный. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чем стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощенный, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
 
-**+)** [NWS·nws_at_sense → *new] [ chedita ] срезанный, разделённый. Lex(MW) . MW : 407 (s.v. chedita )
+**+)** [NWS·nws_at_sense → *new] [ chedita ] срезанный, разделенный. Lex(MW) . MW : 407 (s.v. chedita )
 
-**+)** [NWS·nws_at_sense → *new] [Buddh , unsp] [ppp. chinna ] утомлённый, изнурённый. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
+**+)** [NWS·nws_at_sense → *new] [Buddh , unsp] [ppp. chinna ] утомленный, изнуренный. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
 
 **+)** [NWS·nws_at_sense → *new] {#chid#} [Tan , unsp] [ chinna ] (śivait) coupé. [ défaut pouvant affecter un mantra. ŚāraTi 2.71 . ]
 
 **+)** [PW·restate → *new] <div n="1">— 6〉 делить, производить деление.
 
-**+)** [PW·restate → *new] <div n="1">— 7〉 *{#Cinna#} в конце <ab>Comp.</ab> павший —, обессиленный —, утомлённый от чего-л. или чем-л.
+**+)** [PW·restate → *new] <div n="1">— 7〉 *{#Cinna#} в конце <ab>Comp.</ab> павший —, обессиленный —, утомленный от чего-л. или чем-л.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#Cedayati#}
 <div n="1">— 1〉 велеть срезать —, срубать —, разрубать.
@@ -316,10 +316,10 @@
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#samapa#} срезать <ls>ŚULBAS. 3,72</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#ava#} отвергать кого-л., отталкивать <ls>KĀD. 2,87,8</ls>. <ab>Pass.</ab> быть отделённым —, отлучённым от (<ab>Abl.</ab>). — {#avacCinna#}
+**+)** [PW·restate → *new] <div n="p">— Mit {#ava#} отвергать кого-л., отталкивать <ls>KĀD. 2,87,8</ls>. <ab>Pass.</ab> быть отделенным —, отлученным от (<ab>Abl.</ab>). — {#avacCinna#}
 <div n="1">— 1〉 прерванный.
 <div n="1">— 2〉 ограниченный —, замкнутый (предшествующим в <ab>Comp.</ab>) <ls n="Chr.">260,30</ls>. <ls n="Chr.">261,5</ls>.
-<div n="1">— 3〉 определённый, точно установленный, понятийно определённый.
+<div n="1">— 3〉 определенный, точно установленный, понятийно определенный.
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#paryava#} отделять со всех сторон.
 
@@ -361,8 +361,8 @@
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#pari#}
 <div n="1">— 1〉 обрезать с обеих сторон, подрезать; — злаки жать <ls>KĀRAṆḌ. 71,7</ls>.
-<div n="1">— 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чём-л. {#paricCinna#} ограниченный.
-<div n="1">— 3〉 {#paricCinna#} расщеплённый, поэтому <ab>v. a.</ab> многообразно являющийся.
+<div n="1">— 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чем-л. {#paricCinna#} ограниченный.
+<div n="1">— 3〉 {#paricCinna#} расщепленный, поэтому <ab>v. a.</ab> многообразно являющийся.
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#vipari#} обрезать со всех сторон, подрезать, разрезать.
 
@@ -381,13 +381,13 @@
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#vi#}
 <div n="1">— 1〉 разрывать, -ламывать, раскалывать.
-<div n="1">— 2〉 разрывать, разлучать. {#vicCidya#} отделённый от (<ab>Abl.</ab>) <ab>Pass.</ab> отделяться <ls>AV. PRĀYAŚC. 6,5</ls>. {#vicCinna#} разорванный, разлучённый, несвязный.
+<div n="1">— 2〉 разрывать, разлучать. {#vicCidya#} отделенный от (<ab>Abl.</ab>) <ab>Pass.</ab> отделяться <ls>AV. PRĀYAŚC. 6,5</ls>. {#vicCinna#} разорванный, разлученный, несвязный.
 <div n="1">— 3〉 нарушать, прерывать. {#vicCidya#} с перебоями. {#vicCinna#} прерванный.
 <div n="1">— 4〉 губить, уничтожать. {#vicCinna#} более не существующий.
 <div n="1">— 5〉 раскалываться.
 <div n="1">— 6〉 {#vicCinna#}
 <div n="2">— a〉 *кривой.
-<div n="2">— b〉 *умащённый ({#samAlabDa#}).
+<div n="2">— b〉 *умащенный ({#samAlabDa#}).
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#sam#}
 <div n="1">— 1〉 срезать, -рубать, разрезать, раскалывать, пробуравливать. {#saMCidyantO#} (<ab>v. l.</ab> {#saMCindantO#}) [Page2-245-a] {#ca gAtrARi#} взаимно отрубая члены.
@@ -454,7 +454,7 @@
 
 **Nachtrag §76)** <div n="p">— {#ava#}
 
-**Nachtrag §77-3)** <div n="1"> 3) {#avacCinna#} — «определённый, точно установленный, понятийно ограниченный»: {#zoqaSasaMKyAvacCinno gaRaH zoqaSakaH#}
+**Nachtrag §77-3)** <div n="1"> 3) {#avacCinna#} — «определенный, точно установленный, понятийно ограниченный»: {#zoqaSasaMKyAvacCinno gaRaH zoqaSakaH#}
 <ls>SARVADARŚANAS. 148,21.</ls> <ls>NĪLAK. 205. 225. 238. 242. 244. 170. fg.</ls> {#tAdAtmyasaMbanDAvacCinnapratiyogiko 'nyo'nyABAvaH#}
 <ls>TARKAS. 58.</ls> {#anavacCinna#}
 <ls>SARVADARŚANAS. 84,22.</ls> {#anavacCinnatva#}

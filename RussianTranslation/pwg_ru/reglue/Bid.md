@@ -12,7 +12,7 @@
 <ls>Spr. 5088.</ls>
 <ls>MBH. 15,383.</ls> <ls n="MBH.">2,2443</ls> (где оба <ab>Ausgg.</ab> ошибочно читают {#asaMBinnArTa˚#}). {#saMBinnavftta#} {%тот, кто прервал — оставил свой добродетельный образ жизни%}
 <ls n="MBH.">12,788.</ls>
-  — [PW·restate] 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. {#setum#}, {#maryAdAm#}, {#sTitim#}, {#velAm#} прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. <ab>Pass.</ab> {#Bidyate#}, {#˚ti#} (метрически, но также у <ls>BAUDH.</ls> в <ls>Comm. zu ĀPAST. ŚR. 5,29,12</ls>; {#BindatAm#} <ls>MBH. 6,4125</ls> ошибочно вместо {#BidyatAm#}), также в <ab>intransit.</ab> <ab>Bed.</ab> трескаться, лопаться. {#Binna/#} разбитый, сломанный <ab>u. s. w.</ab>
+  — [PW·restate] 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. {#setum#}, {#maryAdAm#}, {#sTitim#}, {#velAm#} прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. <ab>Pass.</ab> {#Bidyate#}, {#˚ti#} (метрически, но также у <ls>BAUDH.</ls> в <ls>Comm. zu ĀPAST. ŚR. 5,29,12</ls>; {#BindatAm#} <ls>MBH. 6,4125</ls> ошибочно вместо {#BidyatAm#}), также в <ab>intransit.</ab> <ab>Bed.</ab> трескаться, лопаться. {#Binna/#} разбитый, сломанный <ab>u. s. w.</ab>
   — [PW·restate] 1〉 <lex>Adj.</lex> в конце <ab>Comp.</ab>
   — [PW·restate] a〉 разбивающий, сокрушающий, прорывающий, пронзающий, поражающий (цель).
   — [PW·restate] b〉 прогоняющий, уничтожающий.
@@ -34,12 +34,12 @@
 <ls n="M.">9,281.</ls> {#vAri BidyamAnam#} {%бурлящая, ревущая вода, прорывающая берега%}
 <ls>R. 1,26,6.</ls> {#yugAnte BidyamAnAnAM sAgarARAmiva svanaH#} {%прорывающийся, выходящий из берегов%}
 <ls>HARIV. 5003.</ls> {#sAgarasyeva BidyataH#}
-<ls>R. GORR. 2,5,27.</ls> планета или комета {%прорывает%} звезду, когда {%проходит сквозь неё%}: {#ketunA DUmaketostu nakzatrARi trayodaSa . BaraRyAdIni BinnAni nAnuyAnti niSAkaram ..#}
+<ls>R. GORR. 2,5,27.</ls> планета или комета {%прорывает%} звезду, когда {%проходит сквозь нее%}: {#ketunA DUmaketostu nakzatrARi trayodaSa . BaraRyAdIni BinnAni nAnuyAnti niSAkaram ..#}
 <ls>HARIV. 4259.</ls>
 <ls>SŪRYAS. 8,13.</ls>
 <ls>VARĀH. BṚH. S. 4,25.</ls> <ls n="VARĀH. BṚH. S. 4,">26.</ls> <ls n="VARĀH. BṚH. S.">6,9.</ls> <ls n="VARĀH. BṚH. S.">9,28.</ls>
 <ls>Spr. 1886.</ls> <ls n="Spr.">2354.</ls> <ls n="Spr.">2649.</ls> {#yadi Bintte sUryasuto rohiRyAH Sakawam#}
-<ls n="Spr.">2367.</ls> {#tamaH, timiraM Bid#} {%прорвать тьму, — рассеять её%}
+<ls n="Spr.">2367.</ls> {#tamaH, timiraM Bid#} {%прорвать тьму, — рассеять ее%}
 <ls>P. Einl. 2.</ls> <ls>ŚĀK. 181.</ls> <ls>VID. 145.</ls> {#yo na Bidyate (saMgatasaMDiH)#} {%союз, который не может быть нарушен%},
 <ls>Spr. 4880.</ls> {#yESunyAdBidyate snehaH#}
 <ls n="Spr.">199.</ls> {#saMbanDiBinno 'pi gireH kulasya snehastadekAyatanaM jagAma#}
@@ -73,7 +73,7 @@
 [Page5-0288]
 {%присоединяться к кому-л.%} (<ab>acc.</ab>): {#tataSca BagavAnasmAnupekzate na saMBinatti (saMBinanti#} <ab>gedr.</ab>) {#nAcazWe (nA cezwa#} <ab>gedr.</ab>)
 <ls>SADDH. P. 4,27,b.</ls>
-  — [PW·restate] 3〉 расщеплять, то есть <ab>v. a.</ab> делить; <ab>Pass.</ab> быть разделённым, делиться. {#Binna#} разделённый, также в значении <ab>v. a.</ab> неполный, меньше одного.
+  — [PW·restate] 3〉 расщеплять, то есть <ab>v. a.</ab> делить; <ab>Pass.</ab> быть разделенным, делиться. {#Binna#} разделенный, также в значении <ab>v. a.</ab> неполный, меньше одного.
 
 **4)** <div n="1">— 4) {%поссорить, разлучить враждой%}, <ab>pass.</ab> {%поссориться%}; <ab>part.</ab> {#viBinna#} {%в раздоре, живущий в несогласии%}
 <ls>VID. 62.</ls> {%где царит раздор%}: {#sTAna#}
@@ -82,7 +82,7 @@
 
 **5)** <div n="1">— 5) {%переубеждать, склонять к перемене взглядов%}: {#viBetsyati manAMsyezAm#}
 <ls>MBH. 5,124.</ls> <ab>pass.</ab> {%претерпевать перемену настроения%}: {#paSubudDirviBidyate#}
-<ls>BHĀG. P. 7,5,12.</ls> {#viBinna#} {%переубеждённый, переменивший взгляды%}
+<ls>BHĀG. P. 7,5,12.</ls> {#viBinna#} {%переубежденный, переменивший взгляды%}
 <ls>R. GORR. 2,28,15.</ls> {%ставший неверным, изменивший%}
 <ls>RĀJA-TAR. 6,124.</ls>
   — [PW·restate] 5〉 развязывать, распутывать; <ab>Pass.</ab> развязываться, распускаться.
@@ -110,7 +110,7 @@
 **9)** <div n="1">— 9) {%изменять%}; <ab>pass.</ab> {%изменяться%}: {#na — Bindanti mandAM gatim#}
 <ls>KUMĀRAS. 1,11.</ls> {#yaTemA nadyaH syandamAnAH samudrAyaRAH samudraM prApyAstaM gacCanti Bidyete tAsAM nAmarUpe#}
 <ls>PRAŚNOP. 6,5.</ls> {#SuzkaBinnamuKasvarAH#}
-<ls>YĀJÑ. 2,267.</ls> {#Binnasvara#} {%имеющий изменённый, искажённый голос%}
+<ls>YĀJÑ. 2,267.</ls> {#Binnasvara#} {%имеющий измененный, искаженный голос%}
 <ls>SUŚR. 1,308,14.</ls> <ls n="SUŚR.">2,85,13.</ls>
 <ls>Spr. 2048.</ls>
 <ls>ŚĀK. CH. 140,10.</ls> {#BinnakaRWaDvani#}
@@ -142,7 +142,7 @@
 <ab>Sch.</ab> {#jaganmiTo BinnamaBinnamISvarAt#}
 <ls>PRAB. 53,10.</ls> в сочетании с дополнением: {#BramaBinnaM tu jYAnamatrocyate pramA#} {%знание, отличное от заблуждения%}
 <ls>BHĀṢĀP. 133,8.</ls> {#ANBinno nipAtaH#} {%частица, отличная от%} {#AN#}
-<ab>Schol.</ab> к <ls>P. 1,1,14.</ls> <ls n="P. 1,">2,1.</ls> <ls n="P. 1,">4,6.</ls> <ls>NĪLAK. 160.</ls> {%различный%}, тем самым <ab>v. a.</ab> {%отклоняющийся от обычного, нормального%}: {#Binnavartman#}, тем самым <ab>v. a.</ab> {%тот, кто сошёл с верного пути%}
+<ab>Schol.</ab> к <ls>P. 1,1,14.</ls> <ls n="P. 1,">2,1.</ls> <ls n="P. 1,">4,6.</ls> <ls>NĪLAK. 160.</ls> {%различный%}, тем самым <ab>v. a.</ab> {%отклоняющийся от обычного, нормального%}: {#Binnavartman#}, тем самым <ab>v. a.</ab> {%тот, кто сошел с верного пути%}
 <ls>Spr. 1707.</ls> {#BinnacAritradarSana#}
 <ls>R. GORR. 2,118,7.</ls> <ab>Vgl.</ab> {#nAtiBinna#} .
   — [PW·restate] 10〉 вносить раздор в душу кого-либо, смущать, переубеждать; только <ab>Pass.</ab>
@@ -159,7 +159,7 @@
 <ls>ŚIŚ. 4,26. 20,56.</ls> {#tIvrAGAtAdaBimuKataruskanDaBinnEkadantaH (Binna#} <ab>v. l.</ab> вместо {#Bagna)#}, тем самым <ab>v. a.</ab> {%застрявший, прилипший%} (= {#lagna#}
 <ab>Schol.</ab>) <ls>ŚĀK. 32.</ls> {#dfzwvAM BinnaM (= lagnaM#} <ab>Schol.</ab>) {#kuNkumaM kApi kaRWe#} {%висящий на, прилипший%}
 <ls>KUVALAY. 174,a,4.</ls> <ab>Vgl.</ab> {#BinnAYjana#} .
-  — [PW·restate] 11〉 изменять; <ab>Pass.</ab> изменяться. {#Binna#} изменённый, искажённый.
+  — [PW·restate] 11〉 изменять; <ab>Pass.</ab> изменяться. {#Binna#} измененный, искаженный.
 
 **Nachtrag)** <div n="v">— <ab>Vgl.</ab> {#viBettar#} <ab>u. s. w.</ab>
 
@@ -181,7 +181,7 @@
 <ls>HIT. 67,2.</ls> {#Bedita = Binna#}
 <ls>AK. 3,2,50.</ls>
 
-**caus-2)** <div n="1">— 2) {%делить%}: {#zoqaSaBeditAH#} {%разделённый на шестнадцать частей, распадающийся на 16 видов%}
+**caus-2)** <div n="1">— 2) {%делить%}: {#zoqaSaBeditAH#} {%разделенный на шестнадцать частей, распадающийся на 16 видов%}
 <ls>SĀH. D. 18,112.</ls> Могло бы также быть <lex>adj.</lex> от {#zoqaSa — Beda#}.
 
 **caus-3)** <div n="1">— 3) {%рассорить с другими%} или {%с самим собой, сбить с толку кого-либо, переманить на свою сторону%}
@@ -236,7 +236,7 @@
 
 **+)** [PW·restate → *new] 12〉 различать, проводить различие; <ab>Pass.</ab> отличаться, быть отличным от (<ab>Abl.</ab>). {#Binna#} отличный, — от (<ab>Abl.</ab> или в <ab>Comp.</ab> предшествующем); отличный также в значении <ab>v. a.</ab> отклоняющийся от обычного, от нормального.
 
-**+)** [PW·restate → *new] 13〉 {#Binna#} смешанный, соединённый с (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующем), подвешенный, прикреплённый, застрявший на (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем).
+**+)** [PW·restate → *new] 13〉 {#Binna#} смешанный, соединенный с (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующем), подвешенный, прикрепленный, застрявший на (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем).
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#Bedayati#}
 
@@ -244,7 +244,7 @@
 
 **+)** [PW·restate → *new] 2〉 разрушать, уничтожать.
 
-**+)** [PW·restate → *new] 3〉 делить. {#zoqaSaBedita#} разделённый на шестнадцать частей, распадающийся на 46 видов.
+**+)** [PW·restate → *new] 3〉 делить. {#zoqaSaBedita#} разделенный на шестнадцать частей, распадающийся на 46 видов.
 
 **+)** [PW·restate → *new] 4〉 поссорить с другими или с самим собой, сбить с толку, переманить на свою сторону, совратить.
 
@@ -268,7 +268,7 @@
 
 **+)** [PW·restate → *new] С {#aBi#} <ab>Pass.</ab> разрываться, разламываться.
 
-**+)** [PW·restate → *new] С {#ava#} раскалывать, пронзать насквозь. {#a/vaBinna#} пронзённый, расколовшийся.
+**+)** [PW·restate → *new] С {#ava#} раскалывать, пронзать насквозь. {#a/vaBinna#} пронзенный, расколовшийся.
 
 **+)** [PW·restate → *new] С {#A#} разрезать на куски, разрывать.
 
@@ -286,7 +286,7 @@
 
 **+)** [PW·restate → *new] a〉 предавать.
 
-**+)** [PW·restate → *new] b〉 снабжённый, наделённый (в <ab>Comp.</ab> предшествующем) <ls>BHĀG. P. 3,2,5</ls>. <ls>PAÑCAR. 4,6,7</ls>.
+**+)** [PW·restate → *new] b〉 снабженный, наделенный (в <ab>Comp.</ab> предшествующем) <ls>BHĀG. P. 3,2,5</ls>. <ls>PAÑCAR. 4,6,7</ls>.
 
 **+)** [PW·restate → *new] С {#prod#}, {#prodBinna#} выстреливший, вырвавшийся наружу.
 
@@ -322,7 +322,7 @@
 
 **+)** [PW·restate → *new] 1〉 расколотый, разбитый, треснувший, раскрошившийся.
 
-**+)** [PW·restate → *new] 2〉 изменённый, искажённый.
+**+)** [PW·restate → *new] 2〉 измененный, искаженный.
 
 **+)** [PW·restate → *new] С {#pra#}
 
@@ -340,7 +340,7 @@
 
 **+)** [PW·restate → *new] c〉 прорванный, то есть <ab>v. a.</ab> прерванный.
 
-**+)** [PW·restate → *new] d〉 искажённый, изменённый, расстроенный.
+**+)** [PW·restate → *new] d〉 искаженный, измененный, расстроенный.
 
 **+)** [PW·restate → *new] *<ab>Caus.</ab> от <ab>Intens.</ab> {#prabeBidayya#}.
 
@@ -354,21 +354,21 @@
 
 **+)** [PW·restate → *new] 2〉 предавать.
 
-**+)** [PW·restate → *new] 3〉 выражать своё неудовольствие в адрес кого-либо (<ab>Acc.</ab>).
+**+)** [PW·restate → *new] 3〉 выражать свое неудовольствие в адрес кого-либо (<ab>Acc.</ab>).
 
 **+)** [PW·restate → *new] С {#vi#}
 
-**+)** [PW·restate → *new] 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть <ab>v. a.</ab> проходить сквозь него. <ab>Pass.</ab> и в виде исключения <ab>Act.</ab> ломаться, разламываться. {#viBinna#} пронзённый <ab>u. s. w.</ab>
+**+)** [PW·restate → *new] 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть <ab>v. a.</ab> проходить сквозь него. <ab>Pass.</ab> и в виде исключения <ab>Act.</ab> ломаться, разламываться. {#viBinna#} пронзенный <ab>u. s. w.</ab>
 
-**+)** [PW·restate → *new] 2〉 нарушать, то есть <ab>v. a.</ab> уничтожать. {#viBinna#} превращённый в <ab>N.</ab>.
+**+)** [PW·restate → *new] 2〉 нарушать, то есть <ab>v. a.</ab> уничтожать. {#viBinna#} превращенный в <ab>N.</ab>.
 
 **+)** [PW·restate → *new] 3〉 освобождать, разъединять.
 
 **+)** [PW·restate → *new] 4〉 нарушать, то есть <ab>v. a.</ab> преступать <ls>BĀLAR. 74,3</ls>.
 
-**+)** [PW·restate → *new] 5〉 переубеждать, переманивать; <ab>Pass.</ab> подвергаться переубеждению. {#viBinna#} переубеждённый, ставший неверным.
+**+)** [PW·restate → *new] 5〉 переубеждать, переманивать; <ab>Pass.</ab> подвергаться переубеждению. {#viBinna#} переубежденный, ставший неверным.
 
-**+)** [PW·restate → *new] 6〉 <ab>Pass.</ab> изменяться, претерпевать изменение. {#viBinna#} изменённый, искажённый.
+**+)** [PW·restate → *new] 6〉 <ab>Pass.</ab> изменяться, претерпевать изменение. {#viBinna#} измененный, искаженный.
 
 **+)** [PW·restate → *new] 7〉 {#viBinna#}
 
@@ -376,7 +376,7 @@
 
 **+)** [PW·restate → *new] b〉 раздвинутый, разогнанный.
 
-**+)** [PW·restate → *new] c〉 разделённый в {#a˚#} (<ls>Nachtr. 4</ls>).
+**+)** [PW·restate → *new] c〉 разделенный в {#a˚#} (<ls>Nachtr. 4</ls>).
 
 **+)** [PW·restate → *new] d〉 несогласный, живущий в раздоре.
 
@@ -400,7 +400,7 @@
 
 **+)** [PW·restate → *new] 2〉 прерывать, оставлять. {#saMBinnavftta#} <lex>Adj.</lex> тот, кто оставил добропорядочный образ жизни.
 
-**+)** [PW·restate → *new] 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. {#saMBinna#} сжатый (члены черепахи), соприкоснувшийся, соединённый, плотно прилегающий, компактный.
+**+)** [PW·restate → *new] 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. {#saMBinna#} сжатый (члены черепахи), соприкоснувшийся, соединенный, плотно прилегающий, компактный.
 
 **+)** [PW·restate → *new] 4〉 присоединяться к кому-либо (<ab>Acc.</ab>).
 
@@ -491,7 +491,7 @@
 <ls>KATHĀS. 106,181.</ls>
 
 **sam-sense2-verbunden)** — {#sam#}
-2) {#saMBinna#} соединённый; от этого <ab>nom. abstr.</ab> {#˚tA#} <lex>f.</lex>
+2) {#saMBinna#} соединенный; от этого <ab>nom. abstr.</ab> {#˚tA#} <lex>f.</lex>
 <ls>SARVADARŚANAS. 2,14.</ls>
 
 **sam-sense9)** — {#vi#}

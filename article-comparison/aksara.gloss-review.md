@@ -58,7 +58,7 @@ already correct. Flag upstream to the PD source if desired; the RU needs nothing
   (0 H, 2 M), **4 optional add-glosses** (all L), **1 FYI source-typo**.
 - **Flagship split verified correct.** слог (1Ai, 1F) vs. Непреходящее/Высшее Существо
   (2A), обитель Брахмана (2Ci), Непреходящее как обитель Пурушоттамы/Вишну (2Cii),
-  индивидуальная душа/джива (2Di), освобождённая душа (2Dii) — the
+  индивидуальная душа/джива (2Di), освобожденная душа (2Dii) — the
   syllable↔Imperishable/Brahman axis and its theological sub-senses are all rendered to
   Kochergina/Elizarenkova norm. No change proposed on the core split.
 - Transliteration of theonyms and technical terms (Пурушоттама, Вишну, Шива, Ганеша,

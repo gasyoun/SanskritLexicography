@@ -104,9 +104,9 @@
 <ls>BHĀG. P. 1,8,15.</ls> {#saMSAmyatAM tAvanmamApi balavAYCramaH#} {%прекратиться, улечься%}
 <ls>MBH. 15,262.</ls> {#saMSAnta#} {%полностью успокоенный%}
 <ls>MBH. 1,3299.</ls> <ls n="MBH.">3,17064.</ls> <ls n="MBH.">5,2873.</ls>
-<ls>BHĀG. P. 4,6,34.</ls> {%вполне улёгшийся, — прекратившийся%}: {#jalasaMSAntareRu#}
+<ls>BHĀG. P. 4,6,34.</ls> {%вполне улегшийся, — прекратившийся%}: {#jalasaMSAntareRu#}
 <ls>R. GORR. 1,5,4.</ls> <ls n="R. GORR. 1,">76,18.</ls> {%совершенно угасший%}: {#agni#}
-<ls n="R. GORR.">2,68,1</ls> (<ls n="SCHL. 2,">66,1</ls> <ls>SCHL.</ls>). <ls>R. SCHL. 2,69,13.</ls> так <ab>v. a.</ab> {%мёртвый%}
+<ls n="R. GORR.">2,68,1</ls> (<ls n="SCHL. 2,">66,1</ls> <ls>SCHL.</ls>). <ls>R. SCHL. 2,69,13.</ls> так <ab>v. a.</ab> {%мертвый%}
 <ls>MBH. 9,1789.</ls>
 
 **2)** 2) {#SAmayati#} (
@@ -114,7 +114,7 @@
 <ls>MBH. 7,4000.</ls> {#tasmiMstamasi SAmite#} ({#nASite#} <ls>ed. Bomb.</ls>)
 <ls n="MBH.">9,633.</ls> <ab>pass.</ab> {#SAmyatAm#}
 <ls>R. 5,41,4.</ls>
-<ls>MĀRK. P. 114,33</ls> в <ab>Bed.</ab> {%да будет устранён, — обезврежен%} возможно ошибочно вместо {#SamyatAm#} .
+<ls>MĀRK. P. 114,33</ls> в <ab>Bed.</ab> {%да будет устранен, — обезврежен%} возможно ошибочно вместо {#SamyatAm#} .
 
 **2))** <div n="1">— 2) {%успокаивать, утишать, умиротворять%}
 <ls>ŚAT. BR. 1,7,3,11.</ls> <ls n="ŚAT. BR.">3,4,3,1.</ls>
@@ -146,7 +146,7 @@
 <ls>BHĀG. P. 6,4,6.</ls> {#SucaH#}
 <ls n="BHĀG. P.">1,6,21.</ls> {#saptakftvaH praSamitaH KARqave havyavAhanaH#}
 <ls>MBH. 1,8156.</ls>
-<ls>HARIV. 11939.</ls> {#praSamita#} {%приведённый в покой%} так <ab>v. a.</ab> {%обезвреженный, уничтоженный%}
+<ls>HARIV. 11939.</ls> {#praSamita#} {%приведенный в покой%} так <ab>v. a.</ab> {%обезвреженный, уничтоженный%}
 <ls>MBH. 3,2031.</ls> {#praSamitaripu#}
 <ls>MṚCCH. 178,12.</ls>
 
@@ -181,7 +181,7 @@
 <ls>Verz. d. Oxf. H. 229,b,10.</ls> {#pura#}
 <ls>MBH. 3,3063.</ls> {#rAzwra#}
 <ls>R. 1,7,15.</ls> {%тихий, спокойный%}, так <ab>v. a.</ab> {%равнодушный, небрежный%}
-<ls>Spr. (II) 2831</ls>, <ab>v. l.</ab> <ls n="Spr. (II)">4507.</ls> {%прекратившийся, улёгшийся, исчезнувший%}: {#praSAntADyAyasatkaTA#}
+<ls>Spr. (II) 2831</ls>, <ab>v. l.</ab> <ls n="Spr. (II)">4507.</ls> {%прекратившийся, улегшийся, исчезнувший%}: {#praSAntADyAyasatkaTA#}
 <ls>R. 2,48,27.</ls> {#˚gItotsavanftyavAdanA#}
 <ls n="R. 2,48,">29.</ls> {#roza#}
 <ls>R. GORR. 1,77,7.</ls> {#paruzo vAyuH#}
@@ -196,14 +196,14 @@
 <ls>PRAB. 96,11.</ls> {#˚kAma#}
 <ls>BHĀG. P. 7,4,33.</ls> <ls n="BHĀG. P.">9,8,24.</ls> {#rajanIcarAH#} так <ab>v. a.</ab> {%более не являющийся на свет%}
 <ls>R. 3,17,21.</ls> {#rAtri#} {%подошедший к концу%}
-<ls>LALIT. ed. Calc. 4,14.</ls> {#praSAntaBUmipAlABUtkaticiddivasAni BUH#} так <ab>v. a.</ab> {%лишённый царя%}
+<ls>LALIT. ed. Calc. 4,14.</ls> {#praSAntaBUmipAlABUtkaticiddivasAni BUH#} так <ab>v. a.</ab> {%лишенный царя%}
 <ls>RĀJA-TAR. 2,81.</ls> {#praSAntolmuka#} {%угасший%}
 <ls>VARĀH. BṚH. S. 89,1.</ls> {#anala#}
 <ls>MĀRK. P. 99,17.</ls> {#kopajvalana#}
 <ls>PRAB. 5,13.</ls> {#praSAntArcirivAnalaH#}
-<ls>BHĀG. P. 4,13,10.</ls> {#˚kalikApalASakusuma#} {%потерпевший крах, посрамлённый%}
-<ls>BHAṬṬ. 8,131.</ls> {#astra#} так <ab>v. a.</ab> {%устранённый, удалённый%}
-<ls>UTTARAR. 110,1 (148,16).</ls> {%отошедший в вечный покой, умерший, мёртвый%}
+<ls>BHĀG. P. 4,13,10.</ls> {#˚kalikApalASakusuma#} {%потерпевший крах, посрамленный%}
+<ls>BHAṬṬ. 8,131.</ls> {#astra#} так <ab>v. a.</ab> {%устраненный, удаленный%}
+<ls>UTTARAR. 110,1 (148,16).</ls> {%отошедший в вечный покой, умерший, мертвый%}
 <ls>MBH. 7,56.</ls>
 <ls>RĀJA-TAR. 1,95.</ls> <ls n="RĀJA-TAR.">5,127.</ls> {#praSAntArAti#}
 <ls>PRAB. 117,11.</ls> в науке ауспиций = {#SAnta#} {%не предвещающий ничего дурного, boni ominis%}: {#diS#}
@@ -222,7 +222,7 @@
 <ls>MBH. 7,9185.</ls> {#prakftivyasanaM yasmAttatpraSAmya#}
 <ls>KĀM. NĪTIS. 13,18.</ls> {#tejaH paraM tejasEva tapasA ca tapastaTA . praSAmyate#}
 <ls>MĀRK. P. 16,47.</ls> {#praSAmya#} (= {#prakarzeRa Alocya#}
-<ls>NĪLAK.</ls>, таким образом, относится к 4. {#Sam#}) {#nagaram#} {%подчиняться, отвоёвывать обратно%}
+<ls>NĪLAK.</ls>, таким образом, относится к 4. {#Sam#}) {#nagaram#} {%подчиняться, отвоевывать обратно%}
 <ls>MBH. 3,12196.</ls> {#praSAmita#}
 <ls>HARIV. 11939.</ls> <ab>Vgl.</ab> {#praSamana#} .
 
@@ -342,7 +342,7 @@
 
 **+)** [NWS·nws_at_sense → *new] {#śám (=pw śám 2) + as : wohlergehen. ṚV 1,114,1 .#} [Ved , unsp] + bhū : делать добро, идти на благо. ṚV 10,37,10 . [NWS: Geldner 1907 (N) : 236]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#śam (=pw śam 2)#} [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворённым, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
+**+)** [NWS·foreign_fragment → *new] ‹en› {#śam (=pw śam 2)#} [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворенным, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
 
 **+)** [NWS·nws_at_sense → *new] [Śā , Med] ( śāmyati VI ) облегчать, исцелять. Hoernle 1893-1912 (II) 39.260. [NWS: Hoernle 1908 : 327]
 
@@ -354,7 +354,7 @@
 
 **+)** [NWS·foreign_fragment → *new] ‹en› {#+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores away (property); (2) puts away (a monk’s bowl and robe, after his begging-round); (3) harbors (a person), entertains (privately). SaddhP 114.13 , Mvu i.56.2 , MSV ii.99.15 .#} [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): откладывать в сторону, убирать; приводить в порядок. AbhisDh § 8.5.9A2 . Buddh , unsp. [NWS: Karashima 2012 : 378 (s.v. prati - śāmaya -)]
 
-**+)** [NWS·nws_at_sense → *new] {#+ pravi : (° śāmayati ) perh. stills, causes to subside. Divyāv 542.22 .#} [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворённый. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
+**+)** [NWS·nws_at_sense → *new] {#+ pravi : (° śāmayati ) perh. stills, causes to subside. Divyāv 542.22 .#} [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворенный. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
 
 **+)** [NWS·nws_at_sense → *new] {#– (° śamaya -): zur Ruhe bringen, erledigen. AbhisDh § 38.8.30B3 .#} [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : «складывать вместе». Caland 1924, p. 166 . [NWS: Renou 1935 : 46 (s.v. samavaśam -)]
 
@@ -376,7 +376,7 @@
 
 **+)** [NWS·nws_at_sense → *new] {#śaśamāná#} [Ved , unsp] усердно. [NWS: Hillebrandt 1885 : 119 (s.v. śam)]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвёл все приготовления и работы для жертвы; снаряжённый, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
+**+)** [NWS·nws_at_sense → *new] [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвел все приготовления и работы для жертвы; снаряженный, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
 
 **+)** [NWS·nws_at_sense → *new] {#śámi#} [Ved , unsp] Indekl śám . [NWS: Geldner 1907 (N) : 236 (s.v. śám)]
 
@@ -390,7 +390,7 @@
 **+)** [PW·restate → *new] <div n="1">— 3〉 {#SaSamAna/#} {%усердно занятый, деятельный, прилежный;%} в особенности в труде для богов.
 
 **+)** [PW·restate → *new] <hom>2.</hom> √{#Sam#}¦, {#SA/myati#} (metrisch auch <ab>Med.</ab> und {#Samet#}; *<ab>Pass.</ab> <ab>impers.</ab> {#Samyate, aSami#})
-<div n="1">— 1〉 {%успокаиваться, затихать, быть удовлетворённым%}.
+<div n="1">— 1〉 {%успокаиваться, затихать, быть удовлетворенным%}.
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {%прекращаться, ослабевать, утихать, угасать%}.
 
@@ -410,9 +410,9 @@
 
 **+)** [PW·restate → *new] <div n="2">— g〉 о снарядах so <ab>v. a.</ab> {%ставший или сделанный недейственным, безвредным%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший покой,%} so <ab>v. a.</ab> {%умерщвлённый, умерший, вымерший%}.
+**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший покой,%} so <ab>v. a.</ab> {%умерщвленный, умерший, вымерший%}.
 
-**+)** [PW·restate → *new] <div n="2">— i〉 {#SAntaM pApam#} (auch wiederholt) {%да отвратится зло%} — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесённое слово. {#Dik SAntam#} so <ab>v. a.</ab> {%упаси Бог! ни в коем случае!%} {#SAntam#} allein = {#SAntaM pApam#} und auch so <ab>v. a.</ab> {%да поможет мне Бог!%}
+**+)** [PW·restate → *new] <div n="2">— i〉 {#SAntaM pApam#} (auch wiederholt) {%да отвратится зло%} — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесенное слово. {#Dik SAntam#} so <ab>v. a.</ab> {%упаси Бог! ни в коем случае!%} {#SAntam#} allein = {#SAntaM pApam#} und auch so <ab>v. a.</ab> {%да поможет мне Бог!%}
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#Sama/yati#} (metrisch auch {#SAmayati#}; <ab>Pass.</ab> {#SAmyate#} [auch <ls>VAITĀN. 10,18</ls> und zu <ls>Spr. 6899</ls>] <ab>u. s. w.</ab> wohl nur fehlerhaft)
 
@@ -465,7 +465,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 5〉 {%отправлять на вечный покой%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aByupa#}, {#˚SAnta#} {%утолённый, охлаждённый%}.
+**+)** [PW·restate → *new] <div n="p">— Mit {#aByupa#}, {#˚SAnta#} {%утоленный, охлажденный%}.
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#vyupa#}
 <div n="1">— 1〉 {%успокаиваться%} <ls>MBH. 6,121,52</ls>.
@@ -497,7 +497,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 {#praSAnta#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%ставший спокойным, умиротворённый, тихий%}.
+**+)** [PW·restate → *new] <div n="2">— a〉 {%ставший спокойным, умиротворенный, тихий%}.
 
 **+)** [PW·restate → *new] <div n="2">— b〉 {%тихий,%} so <ab>v. a.</ab> {%безразличный, беспечный%}.
 
@@ -505,13 +505,13 @@
 
 **+)** [PW·restate → *new] <div n="2">— d〉 {%угасший%}.
 
-**+)** [PW·restate → *new] <div n="2">— e〉 {%устранённый, удалённый%}.
+**+)** [PW·restate → *new] <div n="2">— e〉 {%устраненный, удаленный%}.
 
 **+)** [PW·restate → *new] <div n="2">— f〉 {%прекратившийся, утихший, исчезнувший, закончившийся, отсутствующий, не показывающийся%}.
 
-**+)** [PW·restate → *new] <div n="2">— g〉 {%посрамлённый, потерпевший неудачу%}.
+**+)** [PW·restate → *new] <div n="2">— g〉 {%посрамленный, потерпевший неудачу%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший вечный покой, умерший, мёртвый%}.
+**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший вечный покой, умерший, мертвый%}.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> (здесь и там с удлинением корневого гласного также без метрической необходимости)
 
@@ -523,7 +523,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 {%обезвреживать, уничтожать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%подчинять себе (sibi), отвоёвывать%}.
+**+)** [PW·restate → *new] <div n="1">— 5〉 {%подчинять себе (sibi), отвоевывать%}.
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#anupra#} in {#anupraSaman#}.
 
@@ -534,7 +534,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {#pratiSAnta#} {%прекратившийся, отступивший, исчезнувший%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#pratiSAmya#} (<ls>VAJRACCH. 19,9</ls>) und {#˚SAmayitvA#} (<ls>MAHĀVASTU 56,2</ls>) {%снова ставить на своё место%}. <ab>Vgl.</ab> <hom>1.</hom> {#Sram#} mit {#pravi#} <ab>Caus.</ab>
+**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#pratiSAmya#} (<ls>VAJRACCH. 19,9</ls>) und {#˚SAmayitvA#} (<ls>MAHĀVASTU 56,2</ls>) {%снова ставить на свое место%}. <ab>Vgl.</ab> <hom>1.</hom> {#Sram#} mit {#pravi#} <ab>Caus.</ab>
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#sam#}
 <div n="1">— 1〉 {%полностью обретать покой%}.
@@ -557,7 +557,7 @@
 
 **+)** [PW·restate → *new] <div n="2">— c〉 {%полностью утихший, — прекратившийся%}.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 {%умерший, мёртвый%}.
+**+)** [PW·restate → *new] <div n="2">— d〉 {%умерший, мертвый%}.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
 

@@ -23,7 +23,7 @@ _Скелет значений Деканского энциклопедичес
 | **Ci** | the abode of Brahma | обитель Брахмана |
 | **ii** | the imperishable (being the abode of Puruṣottama or Viṣṇu) | Непреходящее (как обитель Пурушоттамы или Вишну) |
 | **Di** | individual soul | индивидуальная душа (джива) |
-| **ii** | liberated soul | освобождённая душа |
+| **ii** | liberated soul | освобожденная душа |
 | **iii** | ex- perience of individual soul | опыт индивидуальной души |
 | **iv** | totality of individual souls together with the totality of insentient things | совокупность индивидуальных душ вместе с совокупностью несознательных вещей |
 | **Ei** | primordial matter | первоматерия (пракрити) |
@@ -54,13 +54,13 @@ _Скелет значений Деканского энциклопедичес
 | **16** | continuance, permanence | продолжительность, постоянство |
 | **17** | the plant Achyranthes Aspera | растение Achyranthes aspera |
 | **1** | cow, the cow which never runs dry | корова, вечнодойная корова |
-| **2** | speech, vāc personified | речь, олицетворённая Вач |
+| **2** | speech, vāc personified | речь, олицетворенная Вач |
 | **3** | name of a medicinal plant | название лекарственного растения |
 | **4i** | name of a śakti of Durgā | имя шакти Дурги |
 | **4ii** | name of Pārvatī | имя Парвати |
 | **4iii** | name of Kālī | имя Кали |
 | **4iv** | name of one of the śaktis residing in the petals of the Lotus in the heart | имя одной из шакти, пребывающих на лепестках Лотоса в сердце |
-| **4v** | name of one of the thirteen wives of Kaśyapa | имя одной из тринадцати жён Кашьяпы |
+| **4v** | name of one of the thirteen wives of Kaśyapa | имя одной из тринадцати жен Кашьяпы |
 
 ---
 

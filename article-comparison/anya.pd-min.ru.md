@@ -19,7 +19,7 @@ _Скелет значений Деканского энциклопедичес
 | **iv** | different, i. e. immaterial or irrelevant | иной, т. е. несущественный или не относящийся к делу |
 | **B** | (animate) | (одушевл.) |
 | **i** | different, distinct or separate (with Abl.) different, distinct or separate from (used as noun) different, distinct or separate one (with Abl.) different, disti | отличный, особый или отдельный; (с Abl.) отличный от; (как сущ.) отличный, особый или отдельный |
-| **ii** | separate from i. e. estranged from | отделённый от, т. е. отчуждённый от |
+| **ii** | separate from i. e. estranged from | отделенный от, т. е. отчужденный от |
 | **iii** | (used as noun) (with anya) various ones | (как сущ.) (с anya) различные |
 | **3A** | (inanimate) one or some (used as noun) one or something (with Gen. dual) one of the two things | (неодушевл.) один или некоторый; (как сущ.) один или нечто; (с Gen. дв.) одна из двух вещей |
 | **B** | (animate) | (одушевл.) |
@@ -33,8 +33,8 @@ _Скелет значений Деканского энциклопедичес
 | **i** | thing belonging to another person | вещь, принадлежащая другому лицу |
 | **ii** | other thing, i. e. something wrong | иная вещь, т. е. нечто неправильное |
 | **iii** | (used as noun) other thing, i. e. countersubject | (как сущ.) иная вещь, т. е. противосложение (контрсубъект) |
-| **6A** | (animate) additional, more or many | (одушевл.) дополнительный, ещё или многие |
-| **B** | (inanimate) additional, more or much (used as noun) additional thing | (неодушевл.) дополнительный, ещё или много; (как сущ.) дополнительная вещь |
+| **6A** | (animate) additional, more or many | (одушевл.) дополнительный, еще или многие |
+| **B** | (inanimate) additional, more or much (used as noun) additional thing | (неодушевл.) дополнительный, еще или много; (как сущ.) дополнительная вещь |
 | **7A** | (animate) rest, remaining (used as noun) rest or remaining one | (одушевл.) остальной, оставшийся; (как сущ.) остальной |
 | **B** | (inanimate) rest, remaining (used as noun) rest or remaining thing | (неодушевл.) остальной, оставшийся; (как сущ.) остальная вещь |
 | **8A** | (animate) stranger (used as noun) stranger one | (одушевл.) чужой, посторонний; (как сущ.) чужак |
@@ -52,7 +52,7 @@ _Скелет значений Деканского энциклопедичес
 | **v** | third (used as noun) third thing, idea etc | третий; (как сущ.) третья вещь, идея и т. п. |
 | **11A** | (inanimate) great, wonderful, extraordinary, unique (used as noun) great, i. e. unusual thing | (неодушевл.) великий, чудесный, необычайный, уникальный; (как сущ.) великая, т. е. необычная вещь |
 | **B** | (animate) great, wonderful, extraordinary, unique | (одушевл.) великий, чудесный, необычайный, уникальный |
-| **12** | (animate) inferior, subordinate | (одушевл.) низший, подчинённый |
+| **12** | (animate) inferior, subordinate | (одушевл.) низший, подчиненный |
 | **13** | (animate or inanimate) similar | (одушевл. или неодушевл.) сходный |
 | **14** | (animate) changed, altered | (одушевл.) изменившийся |
 | **15** | (animate) ordinary (used as noun) ordinary one | (одушевл.) обычный; (как сущ.) обычный |
@@ -63,19 +63,19 @@ _Скелет значений Деканского энциклопедичес
 | **3** | epithet of Śiva | эпитет Шивы |
 | **4** | name of a mountain | название горы |
 | **5** | name of a figure of speech | название фигуры речи |
-| **6** | term of particular quantity | термин определённого количества |
+| **6** | term of particular quantity | термин определенного количества |
 | **1** | particular kind of uṇādi suffix | особый вид суффикса унади |
 | **2** | second person | второе лицо |
 | **3** | third person | третье лицо |
 | **1A** | further, additionally, optionally | далее, дополнительно, факультативно |
-| **B** | anew, more | снова, ещё |
+| **B** | anew, more | снова, еще |
 | **2A** | except, otherwise | кроме, иначе |
 | **B** | separately | отдельно |
 | **3A** | in other cases | в иных случаях |
 | **B** | moreover, again and again, besides | более того, снова и снова, кроме того |
 | **4** | or else | или же |
 | **5** | the indeclinable word anyat | неизменяемое слово anyat |
-| **1A** | one of the three types of heroine | один из трёх типов героини |
+| **1A** | one of the three types of heroine | один из трех типов героини |
 | **1B** | another woman, cf | другая женщина, ср. |
 | **{#anyAkara#}** | | |
 | **2** | name of a medicinal plant | название лекарственного растения |

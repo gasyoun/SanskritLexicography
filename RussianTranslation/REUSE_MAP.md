@@ -49,7 +49,7 @@ Rights unconfirmed → evidence-only by default (`RIGHTS['grin12'/'grin3']
 guardrail.
 
 **Four glossaries from MG's original 6-item list were investigated and
-deliberately NOT wired** — see [`src/README.md`](src/README.md#специализированные-глоссарии-имён--build_glossariespy)
+deliberately NOT wired** — see [`src/README.md`](src/README.md#специализированные-глоссарии-имен--build_glossariespy)
 for the full reasoning:
 - `Словарь Потаповой.txt`, `Эрман-Темкин.txt`, `Словарь Гринцера из Бада
   Кадамбари.txt` — Cyrillic-only headwords, no IAST at all. No deterministic
