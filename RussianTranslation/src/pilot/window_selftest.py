@@ -3043,12 +3043,97 @@ def test_kill_gate_recalibrated_envelope():
              % gh.KILL_CEIL_MS)
 
 
+def test_agent_budget_plan_separates_translate_and_heal_pools():
+    """H442/H462: the heal pool must let every per-card cap become reachable."""
+    import agent_budget as ab
+    groups = {'a': 2, 'b': 5, 'c': 1}
+    plan = ab.derive_agent_budget(8, groups)
+    expected_translate = int(math.ceil(8 * 3.0)) + 10
+    expected_heal = sum(int(math.ceil(n * 1.5)) + 3 for n in groups.values())
+    if plan.max_translate_agents != expected_translate:
+        fail('translate pool must scale only from whole-card batches')
+    if plan.max_heal_agents != expected_heal:
+        fail('heal pool must equal the sum of per-card ceilings so the window cannot bind first')
+    if plan.max_agents != expected_translate + expected_heal:
+        fail('combined max_agents must be the sum of the two independently enforced pools')
+    overridden = ab.derive_agent_budget(8, groups, max_agents_override=20)
+    if overridden.max_agents != 20 or not overridden.max_translate_agents or not overridden.max_heal_agents:
+        fail('--max-agents must remain a hard combined override allocated across active pools')
+    disabled = ab.derive_agent_budget(8, groups, enabled=False)
+    if disabled.max_agents is not None:
+        fail('--no-kill-switch must disable both budget pools')
+
+
+def test_split_agent_pools_all_heal_runtime():
+    """Execute the generated JS with a null-returning mock agent.
+
+    Two sense-dense cards route directly to recovery. Every call fails, so each card must
+    stop at its own cap. The window heal pool is exactly the sum of those caps and therefore
+    must *not* trip first — the production invariant H442 could not previously satisfy.
+    """
+    import gen_opt_harness2 as gh
+    senses = '\n'.join('<div n="1">— %d〉 {%%Bedeutung %d%%}.' % (i, i)
+                       for i in range(1, 31))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n' + senses + '\n')
+    keys = ['zz~~runtime_pool_a', 'zz~~runtime_pool_b']
+    d = tempfile.mkdtemp()
+    saved_ip = gh.input_paths
+    saved_kill = gh.KILL
+    try:
+        paths = {}
+        for key in keys:
+            rp = os.path.join(d, key + '.raw.txt')
+            pp = os.path.join(d, key + '.portrait.json')
+            with open(rp, 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(pp, 'w', encoding='utf-8') as f:
+                f.write('[]')
+            paths[key] = (rp, pp)
+        gh.input_paths = lambda k, input_dir=None: paths[k]
+        gh.KILL = False  # mock calls are immediate; exercise budgets, not wall time
+        js, batches = gh.build(
+            'zz_runtime_pool', keys, None, 12000,
+            nominal=True, grammar_on=False, tm_path=None)
+        if batches:
+            fail('sense-dense runtime fixture must be presplit-only; got batches=%r' % batches)
+        marker = 'return { meta: META, summary, results: out }'
+        if marker not in js:
+            fail('generated runtime return marker changed; update behavioral harness deliberately')
+        runnable = (
+            "const phase = () => {};\n"
+            "const log = () => {};\n"
+            "const agent = async () => null;\n"
+            "const parallel = async thunks => Promise.all(thunks.map(async fn => { "
+            "try { return await fn() } catch (_) { return null } }));\n" +
+            js.replace(marker, 'console.log(JSON.stringify({ meta: META, summary, results: out }))'))
+        script = os.path.join(d, 'runtime_pool_test.mjs')
+        with open(script, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(runnable)
+        p = subprocess.run(
+            ['node', script], capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('mock generated runtime failed:\n%s\n%s' % (p.stdout, p.stderr))
+        payload = json.loads(p.stdout.strip().splitlines()[-1])
+        summary = payload['summary']
+        if summary['translate_agents_spent'] != 0:
+            fail('presplit-only fixture must spend zero translate calls')
+        if summary['heal_agents_spent'] != summary['max_heal_agents']:
+            fail('all-heal fixture must stop exactly at the sum of per-card caps; got %r' % summary)
+        if summary['heal_budget_tripped']:
+            fail('window heal pool fired before/at a per-card cap — shared-counter bug returned')
+        if summary['budget_kill_switch_tripped']:
+            fail('no window pool should trip when each card stops at its own ceiling')
+        if summary['null'] != len(keys):
+            fail('null mock must leave every card explicitly requeueable')
+    finally:
+        gh.input_paths = saved_ip
+        gh.KILL = saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_budget_kill_switch_wired():
-    """H189: the harness must carry a window-level budget kill-switch — count agent()
-    calls and abort (requeue remaining) once past MAX_AGENTS — so a runaway retry/binary-
-    split cascade self-terminates instead of running to a manual kill (pril10_w1: 230
-    agents, 42M tokens, $80 before MG stopped it). MAX_AGENTS is derived from the preflight
-    estimate: max(floor, ceil(expected * factor))."""
+    """The generated Workflow must enforce independent translate/heal call ceilings."""
     import re as _re
     import gen_opt_harness2 as gh
     raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
@@ -3068,7 +3153,10 @@ def test_budget_kill_switch_wired():
         try:
             js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
             for tok in ('const KILL_SWITCH = true', 'const MAX_AGENTS =',
-                        'class BudgetExceeded', 'AGENTS_SPENT++', 'BUDGET_TRIPPED'):
+                        'const MAX_TRANSLATE_AGENTS =', 'const MAX_HEAL_AGENTS =',
+                        'class BudgetExceeded', 'AGENTS_SPENT++',
+                        'TRANSLATE_AGENTS_SPENT++', 'HEAL_AGENTS_SPENT++',
+                        'TRANSLATE_BUDGET_TRIPPED', 'HEAL_BUDGET_TRIPPED'):
                 if tok not in js:
                     fail('budget kill-switch token %r missing from the harness' % tok)
             # BudgetExceeded must NOT be treated as a kill (a kill routes to MORE fragment
@@ -3076,20 +3164,24 @@ def test_budget_kill_switch_wired():
             if _re.search(r'isKill\s*=.*BudgetExceeded', js):
                 fail('BudgetExceeded must not be classified as a kill (would spawn more agents)')
             meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
-            expected = meta.get('agent_expected_after_tm', 0)
-            # H189 follow-up: the ceiling SCALES with word size (ceil(expected*factor)+headroom),
-            # NOT a flat floor — a flat floor let a small-word runaway burn 40 agents unchecked.
-            want = int(math.ceil(expected * gh.MAX_AGENTS_FACTOR)) + gh.MAX_AGENTS_HEADROOM
-            if meta.get('max_agents') != want:
-                fail('meta.max_agents must be ceil(expected*factor)+headroom=%d; got %r'
-                     % (want, meta.get('max_agents')))
+            expected_translate = meta.get('batch_count', 0)
+            want_translate = (int(math.ceil(expected_translate * gh.MAX_AGENTS_FACTOR))
+                              + gh.MAX_AGENTS_HEADROOM)
+            if meta.get('max_translate_agents') != want_translate:
+                fail('translate ceiling must be ceil(batch_count*factor)+headroom=%d; got %r'
+                     % (want_translate, meta.get('max_translate_agents')))
+            if meta.get('max_agents') != (meta.get('max_translate_agents', 0)
+                                          + meta.get('max_heal_agents', 0)):
+                fail('meta.max_agents must be the sum of the split pool ceilings')
+            if meta.get('agent_budget_strategy') != 'split-pools-per-card-heal':
+                fail('default generated runtime must declare the split-pool strategy')
             if hasattr(gh, 'MAX_AGENTS_FLOOR'):
                 fail('the flat one-size-fits-all MAX_AGENTS_FLOOR must be gone — the ceiling '
                      'must scale with word size so a small-word runaway is caught, not clamped to 40')
-            # summary must expose the trip flag for the requeue path
-            if 'budget_kill_switch_tripped' not in js:
-                fail('run summary must expose budget_kill_switch_tripped so a self-aborted '
-                     'window\'s null cards are requeued, not read as defective')
+            for field in ('budget_kill_switch_tripped', 'translate_budget_tripped',
+                          'heal_budget_tripped', 'translate_agents_spent', 'heal_agents_spent'):
+                if field not in js:
+                    fail('run summary must expose %s' % field)
         finally:
             gh.input_paths = saved_ip
     finally:
@@ -3138,9 +3230,12 @@ def test_run_telemetry_counters_returned():
                               r'else if \(isConn\(e\)\) CONN_ERRORS\+\+; throw e \}', js):
                 fail('agentKill must count kills/conn-errors in its catch and RE-THROW — '
                      'telemetry must not change control flow')
-            # heal-lane spend keyed on the heal: label prefix (bisections inherit it)
-            if not _re.search(r"/\^heal:/\.test\(String\(opts\.label\)\)\) HEAL_CALLS\+\+", js):
-                fail('agentKill must count heal-lane calls via the heal: label prefix')
+            # heal-lane spend is derived once from the heal: label prefix; both the dedicated
+            # pool and telemetry must use that exact lane decision.
+            if "const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))" not in js:
+                fail('agentKill must classify heal calls via the heal: label prefix')
+            if 'if (healLane) HEAL_CALLS++' not in js:
+                fail('agentKill must count heal-lane calls from the shared lane decision')
             # a KillTimeout must never double-count as a connection error
             if 'e instanceof KillTimeout' not in js.split('const isConn =', 1)[1].split('\n', 1)[0]:
                 fail('isConn must exclude KillTimeout so a kill is never double-counted as a conn error')
@@ -3157,11 +3252,21 @@ def test_classify_run_verdicts():
     H442 launch-3 signature), code-failure (nulls with a quiet network), and the honest
     refusal on a pre-H462 payload that carries no counters."""
     import classify_run as cr
-    base = {'agents_spent': 58, 'kill_timeouts': 0, 'conn_errors': 0, 'heal_calls': 40,
+    base = {'agents_spent': 58,
+            'translate_agents_spent': 18, 'max_translate_agents': 28,
+            'translate_budget_tripped': False,
+            'heal_agents_spent': 40, 'max_heal_agents': 55,
+            'heal_budget_tripped': False,
+            'kill_timeouts': 0, 'conn_errors': 0, 'heal_calls': 40,
             'kill_bisect_blocked': 0, 'null_keys': [], 'budget_kill_switch_tripped': False}
-    v, _, _ = cr.classify(dict(base))
+    v, _, sig = cr.classify(dict(base))
     if v != 'clean':
         fail('all-ok summary must classify clean; got %r' % v)
+    for field in ('translate_agents_spent', 'max_translate_agents',
+                  'translate_budget_tripped', 'heal_agents_spent',
+                  'max_heal_agents', 'heal_budget_tripped'):
+        if sig[field] != base[field]:
+            fail('classifier must preserve split-pool signal %s' % field)
     # H442 launch 3: 58/58 agents, 7 kill-timeouts, 2 conn-errors, 12 nulls, tripped
     infra = dict(base, kill_timeouts=7, conn_errors=2,
                  null_keys=['k%d' % i for i in range(12)], budget_kill_switch_tripped=True)
@@ -3957,6 +4062,8 @@ def main():
         test_group_by_budget_count_cap,
         test_presplit_card_uses_amortized_grouping,
         test_kill_gate_recalibrated_envelope,
+        test_agent_budget_plan_separates_translate_and_heal_pools,
+        test_split_agent_pools_all_heal_runtime,
         test_budget_kill_switch_wired,
         test_harness_size_guard,
         test_perf_preflight_cost_gate,
