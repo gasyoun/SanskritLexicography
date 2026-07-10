@@ -99,294 +99,320 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
 
 ```json launch_failure_ledger
 [
-  {
-    "id": "SLICE_D_2026-06-30",
-    "handoff": "H151",
-    "date": "2026-06-30",
-    "title": "Slice D 18-wide bulk run collapsed into transient nulls",
-    "lane": "verb batch",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Workflow",
-    "expected": {
-      "agents": "one root at a time; no 18-root fan-out",
-      "tokens": "not recorded"
-    },
-    "actual": {
-      "agents": "~140-250 peak concurrent agents",
-      "tokens": "not recorded"
-    },
-    "passes": 1,
-    "symptoms": "80+ server-side 429s and 117 transient null cards after 18 roots were launched in parallel.",
-    "classification": "concurrency/api",
-    "root_cause": "Provider/server concurrency cliff; the same period's single-root run had zero transient failures.",
-    "guardrail": "Standing production discipline: roots run one at a time, <=3-wide maximum, and no bulk parallel Workflow fan-out.",
-    "residual_status": "structurally-guarded",
-    "residual_risk": "Only process drift can reintroduce this; check launch width before every run."
+ {
+  "id": "SLICE_D_2026-06-30",
+  "handoff": "H151",
+  "date": "2026-06-30",
+  "title": "Slice D 18-wide bulk run collapsed into transient nulls",
+  "lane": "verb batch",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Workflow",
+  "expected": {
+   "agents": "one root at a time; no 18-root fan-out",
+   "tokens": "not recorded"
   },
-  {
-    "id": "PRIL10_W1_2026-07-05",
-    "handoff": "H189",
-    "date": "2026-07-05",
-    "title": "pril10_w1 nominal monster window cost and latency blow-up",
-    "lane": "nominal monster",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 Max/Workflow surface",
-    "expected": {
-      "agents": "174 fragment groups estimated before the fix",
-      "tokens": "nominal bulk economics expected to be viable"
-    },
-    "actual": {
-      "agents": "230 agents over 581 turns before abort",
-      "tokens": "42,316,604 total tokens; about $79.83"
-    },
-    "passes": 1,
-    "symptoms": "After about 20 minutes only about 3 of 8 monster cards were done; agents burned 3-6.5 minutes and up to about 900K tokens each.",
-    "classification": "complexity-estimate-drift",
-    "root_cause": "Nominal presplit mode made each fragment an agent call, defeating opt2 batching and re-paying framework cache overhead per fragment.",
-    "guardrail": "H189/H191 added presplit-lane re-batching, tighter kill budgets, a live agent kill-switch, harness-size split warnings, and perf_preflight cost partition/defer-monster gating.",
-    "residual_status": "structurally-guarded",
-    "residual_risk": "kAla-class monster windows remain human-budgeted/defer lane work, not ordinary bulk launches."
+  "actual": {
+   "agents": "~140-250 peak concurrent agents",
+   "tokens": "not recorded"
   },
-  {
-    "id": "NOMINAL_W1_100SMALL_2026-07-06",
-    "handoff": "H201",
-    "date": "2026-07-06",
-    "title": "nominal_w1_100small pass-1 transient outage",
-    "lane": "nominal small",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 Max/Workflow surface",
-    "expected": {
-      "agents": "3 expected agents for one clean pass",
-      "tokens": "~745,200 tokens; about $1.41"
-    },
-    "actual": {
-      "agents": "37 agents across three passes",
-      "tokens": "2,498,796 subagent tokens"
-    },
-    "passes": 3,
-    "symptoms": "Pass 1 returned 5 ok / 95 null with budget_kill_switch_tripped after all batches, including a 4-card batch, hit Connection closed mid-response.",
-    "classification": "concurrency/api",
-    "root_cause": "Transient infrastructure/network outage during the run window, not content complexity or batch sizing.",
-    "guardrail": "Treat same transport error across all batches as transient infra; rerun cleanly and requeue only real residual nulls.",
-    "residual_status": "accepted-as-proven-residual",
-    "residual_risk": "A transient pass can still double spend; expected-vs-actual ledger must record clean-pass estimate and actual passes separately."
+  "passes": 1,
+  "symptoms": "80+ server-side 429s and 117 transient null cards after 18 roots were launched in parallel.",
+  "classification": "concurrency/api",
+  "root_cause": "Provider/server concurrency cliff; the same period's single-root run had zero transient failures.",
+  "guardrail": "Standing production discipline: roots run one at a time, <=3-wide maximum, and no bulk parallel Workflow fan-out.",
+  "residual_status": "structurally-guarded",
+  "residual_risk": "Only process drift can reintroduce this; check launch width before every run."
+ },
+ {
+  "id": "PRIL10_W1_2026-07-05",
+  "handoff": "H189",
+  "date": "2026-07-05",
+  "title": "pril10_w1 nominal monster window cost and latency blow-up",
+  "lane": "nominal monster",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 Max/Workflow surface",
+  "expected": {
+   "agents": "174 fragment groups estimated before the fix",
+   "tokens": "nominal bulk economics expected to be viable"
   },
-  {
-    "id": "DAH_TAIL_2026-07-06",
-    "handoff": "H178",
-    "date": "2026-07-06",
-    "title": "dah tail topup left one documented PW-addenda residual",
-    "lane": "verb batch",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Fable 5 Workflow surface",
-    "expected": {
-      "agents": "1 defect requeue agent plus 17 topup fragment agents per attempt",
-      "tokens": "not pre-estimated in the log"
-    },
-    "actual": {
-      "agents": "35 agents across defect requeue and two topup attempts",
-      "tokens": "2,368,224 subagent tokens"
-    },
-    "passes": 3,
-    "symptoms": "dah~~h0_zz_pw__s10p0 hard-failed the StructuredOutput retry cap on both fresh topup attempts; the union recovered 16/17 fragments.",
-    "classification": "structured-output-limit",
-    "root_cause": "A single PW-addenda sense fragment still exceeded the schema-emission envelope even after bounded topup retries.",
-    "guardrail": "H178 accepted the card only after the two-attempt cap and documented the exact residual; TM was rebuilt and provenance audited clean.",
-    "residual_status": "accepted-as-proven-residual",
-    "residual_risk": "This is a known StructuredOutput retry-cap residual, not the H220 kill-gate class; future similar fragments should be routed through the same bounded topup/acceptance rule."
+  "actual": {
+   "agents": "230 agents over 581 turns before abort",
+   "tokens": "42,316,604 total tokens; about $79.83"
   },
-  {
-    "id": "NO_PWG_W1_FIRST_RUN_2026-07-06",
-    "handoff": "H214",
-    "date": "2026-07-06",
-    "title": "no_pwg_w1 first run validated plumbing but exposed throughput blockers",
-    "lane": "no-PWG single",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 Workflow surface",
-    "expected": {
-      "agents": "preflight about 497K tokens / $0.94 for the first 58-card lane run",
-      "tokens": "~497K tokens preflight estimate"
-    },
-    "actual": {
-      "agents": "three Workflow passes, including batched, 9-batch, and 46 single-card rounds",
-      "tokens": "~3.4M subagent tokens"
-    },
-    "passes": 3,
-    "symptoms": "Only 21/58 distinct sub-cards were ok; budget kill-switches tripped, audit needed nominal no-rootmap handling, and the path was validated but not promotable at first.",
-    "classification": "kill-gate-calibration",
-    "root_cause": "The no-PWG lane combined no-fallback singleton latency, strict key echo behavior, and nominal audit assumptions that were inherited from rootmap-backed lanes.",
-    "guardrail": "H214 fixed the Lbody pointer leak and nominal audit crash; H220 then fixed the no-fallback kill budget and nominal key echo mismatch, raising the diagnostic window to 10/10.",
-    "residual_status": "fixed",
-    "residual_risk": "Scale no-PWG through small single-card windows and keep H220 lane-specific calibration; do not use stale nominal audit defect counts as requeue truth."
+  "passes": 1,
+  "symptoms": "After about 20 minutes only about 3 of 8 monster cards were done; agents burned 3-6.5 minutes and up to about 900K tokens each.",
+  "classification": "complexity-estimate-drift",
+  "root_cause": "Nominal presplit mode made each fragment an agent call, defeating opt2 batching and re-paying framework cache overhead per fragment.",
+  "guardrail": "H189/H191 added presplit-lane re-batching, tighter kill budgets, a live agent kill-switch, harness-size split warnings, and perf_preflight cost partition/defer-monster gating.",
+  "residual_status": "structurally-guarded",
+  "residual_risk": "kAla-class monster windows remain human-budgeted/defer lane work, not ordinary bulk launches."
+ },
+ {
+  "id": "NOMINAL_W1_100SMALL_2026-07-06",
+  "handoff": "H201",
+  "date": "2026-07-06",
+  "title": "nominal_w1_100small pass-1 transient outage",
+  "lane": "nominal small",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 Max/Workflow surface",
+  "expected": {
+   "agents": "3 expected agents for one clean pass",
+   "tokens": "~745,200 tokens; about $1.41"
   },
-  {
-    "id": "NO_PWG_DIAG_2026-07-06",
-    "handoff": "H220",
-    "date": "2026-07-06",
-    "title": "no-PWG single-card throughput false kills and key echo drops",
-    "lane": "no-PWG single",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 Max/Workflow surface",
-    "expected": {
-      "agents": "diagnostic 10-card window should converge without structural nulls",
-      "tokens": "not recorded"
-    },
-    "actual": {
-      "agents": "9 agents on verified rerun",
-      "tokens": "not recorded"
-    },
-    "passes": 2,
-    "symptoms": "Before the fix, the diagnostic window yielded about 40%; 6 of 6 nulls were kill-timeouts, and some valid outputs were dropped by strict key matching.",
-    "classification": "kill-gate-calibration",
-    "root_cause": "The kill gate was calibrated on dense verb batches; no-fallback single supplement cards have fixed StructuredOutput latency and no selfheal lane. Separately, clean SLP1 portrait keys pulled the model away from mangled safe-name headers.",
-    "guardrail": "No-fallback singles now receive the 180s CEIL budget, nominal windows use a gated nominal_keymap re-key, and selfHeal preserves upstream failure reasons.",
-    "residual_status": "fixed",
-    "residual_risk": "Recalibrate per lane; never apply the dense-root kill profile blindly to no-fallback singleton launches."
+  "actual": {
+   "agents": "37 agents across three passes",
+   "tokens": "2,498,796 subagent tokens"
   },
-  {
-    "id": "ARMB_SYNTH_FANOUT_2026-07-06",
-    "handoff": "H234",
-    "date": "2026-07-06",
-    "title": "Arm-B 10-agent synthesis fan-out orchestration failure",
-    "lane": "synth fan-out",
-    "model": "claude-opus-4-8",
-    "orchestrator": "Opus 4.8 async sub-agents",
-    "expected": {
-      "agents": "10 synthesis agents",
-      "tokens": "not recorded"
-    },
-    "actual": {
-      "agents": "10 initial agents plus replacements/resumes",
-      "tokens": "not recorded"
-    },
-    "passes": 2,
-    "symptoms": "False-stall kill from 0-byte transcripts, mid-stream API stalls at 10-wide, a 34-minute silent hang, watcher-wiped outputs, zombie overwrite, and free-form collapse on >800 citation entries.",
-    "classification": "operator/process",
-    "root_cause": "Bare async fan-out used unsafe liveness signals, shared output paths, repo-local untracked outputs, and too-wide concurrency for large Opus generations.",
-    "guardrail": "src/synth_dispatch.py now caps concurrency, watches output-file growth only, confirms dead-before-redispatch, uses private staging and watcher-safe landing, seals outputs, and routes >800 <ls> entries to deterministic assembly.",
-    "residual_status": "structurally-guarded",
-    "residual_risk": "All future pwg_ru multi-agent fan-outs must go through synth_dispatch.py; bare fan-outs are banned."
+  "passes": 3,
+  "symptoms": "Pass 1 returned 5 ok / 95 null with budget_kill_switch_tripped after all batches, including a 4-card batch, hit Connection closed mid-response.",
+  "classification": "concurrency/api",
+  "root_cause": "Transient infrastructure/network outage during the run window, not content complexity or batch sizing.",
+  "guardrail": "Treat same transport error across all batches as transient infra; rerun cleanly and requeue only real residual nulls.",
+  "residual_status": "accepted-as-proven-residual",
+  "residual_risk": "A transient pass can still double spend; expected-vs-actual ledger must record clean-pass estimate and actual passes separately."
+ },
+ {
+  "id": "DAH_TAIL_2026-07-06",
+  "handoff": "H178",
+  "date": "2026-07-06",
+  "title": "dah tail topup left one documented PW-addenda residual",
+  "lane": "verb batch",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Fable 5 Workflow surface",
+  "expected": {
+   "agents": "1 defect requeue agent plus 17 topup fragment agents per attempt",
+   "tokens": "not pre-estimated in the log"
   },
-  {
-    "id": "H317_MEDIUM50_3WIDE_KILL_CASCADE_2026-07-08",
-    "handoff": "H317",
-    "date": "2026-07-08",
-    "title": "3 concurrent Workflow windows -> 100% kill-timeout cascade, 0/38 cards clean",
-    "lane": "nominal medium (band-4, 3-30 citation size)",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Sonnet 5 Claude Code session, 3 Workflow tool launches in one message",
-    "expected": {
-      "agents": "19 + 17 + 13 = 49 expected agents across h317_w1a/w1b/w2a (perf_preflight agent_expected_after_tm)",
-      "tokens": "not estimated per-window; order of ~2-3M subagent tokens for 38 cards"
-    },
-    "actual": {
-      "agents": "67 + 61 + 49 = 177 agents (each window hit its own MAX_AGENTS budget-kill-switch)",
-      "tokens": "599,538 + 422,945 + 528,476 = 1,550,959 subagent tokens, 0 cards translated"
-    },
-    "passes": 2,
-    "symptoms": "All three simultaneously-launched windows (13+12+13=38 cards) returned 0 ok / 38 null. Every batch and every self-heal bisection group hit kill-timeout (45-180s ceiling), cascading into ever-smaller heal fragments until each window's own MAX_AGENTS budget-kill-switch tripped. One agent (h317_w1a b3) additionally errored with 'API Error: Connection closed mid-response.' A SOLO (1-wide) retry of h317_w1a (pass 2, run wf_b2b55c28-409) still surfaced 8 separate 'Connection closed mid-response' agent errors out of 67 agent() calls and again tripped its own MAX_AGENTS=67 kill-switch, yielding only 1/13 cards with content at all (zoqa_san), and even that one was flagged missing_senses by the deterministic gate (0/13 clean net).",
-    "classification": "concurrency/api",
-    "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
-    "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
-    "residual_status": "accepted-as-proven-residual",
-    "residual_risk": "SUPERSEDED by H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09: the clean-environment solo retry did NOT recur as a kill-gate miscalibration NOR as transient infra -- the actual, deterministic block is the agent() output-schema safety classifier (see next entry). The 08-07 'Connection closed mid-response' symptoms predate the classifier rollout; the operative blocker today is schema size, not concurrency or transient outage."
+  "actual": {
+   "agents": "35 agents across defect requeue and two topup attempts",
+   "tokens": "2,368,224 subagent tokens"
   },
-  {
-    "id": "H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09",
-    "handoff": "H389",
-    "date": "2026-07-09",
-    "title": "opt2 CARDS_SCHEMA too large for agent() safety classifier -> 67/67 blocked pre-generation, 0 tokens",
-    "lane": "nominal medium (band-4, 3-30 citation size)",
-    "model": "claude-sonnet-5 (generation, hardcoded in harness)",
-    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo diagnostic window h317_w1a (13 keys), no concurrency",
-    "expected": {
-      "agents": "19 (agent_expected_after_tm)",
-      "tokens": "~4.7M subagent tokens / ~$8.90 (preflight cost gate)"
-    },
-    "actual": {
-      "agents": "67 agent() calls, ALL errored identically 'blocked by safety classifier: output schema too large to classify safely'; window hit MAX_AGENTS=67 budget-kill-switch",
-      "tokens": "0 subagent tokens (rejected before any model invocation), 83 ms total wall-clock"
-    },
-    "passes": 1,
-    "symptoms": "Every batch agent (b0-b9), every binary-split heal group, and every retry returned 'blocked by safety classifier: output schema too large to classify safely' at subagent_tokens:0. Binary-splitting did NOT help (a single-item call still carries the full constant schema). 0/13 cards, 0 tokens. This is a DETERMINISTIC pre-generation block, not the transient/kill cascade of the 08-07 H317 attempts.",
-    "classification": "structured-output-limit",
-    "root_cause": "The Workflow-tool agent() safety classifier refuses the opt2 CARDS_SCHEMA (~8,202 chars measured H388/H389; re-measured 10,940 chars at H428 after further $defs growth: nested $defs for card/record/sense carrying government/evidence/evidence_summary/stats objects, many enums, long descriptions) as too large to classify, pre-execution. FINDINGS.md §30's orphan-$def prune (_ref_names/_reachable_defs, landed 03-07 H130) is necessary but NO LONGER SUFFICIENT: H335 (government) + H405 (evidence/stage-2) + H422 (stats) grew the REACHABLE schema past the classifier threshold after that fix. Identical block hit the H388 SkillOpt B-arm the same day (52/52). Supersedes H317's 'transient API instability + kill-gate' hypothesis.",
-    "guardrail": "FIXED by H428 (Uprava/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md, 09-07-2026, Sonnet 5 claude-sonnet-5): new `_strip_post_generation_fields()` in gen_opt_harness2.py drops government/labels/renou/renou_oldest/evidence (sense), renou_oldest_sense (record), evidence_summary/stats (card) -- all added deterministically post-generation by government_census.py/annotate_government.py/annotate_renou.py/annotate_evidence.py/annotate_stats.py, never by the translating model -- from the GENERATION schema only (the promote/annotate scripts still add them back from the untouched schema file on disk). Reachable schema: 10,940 -> 1,698 chars (84% reduction); $defs collapse from {card,record,sense,evidence_item,evidence_summary,stats} to {card,record,sense}. Pinned by new window_selftest.py test_generation_schema_carries_no_post_generation_field so a future annotator field addition cannot silently re-cross the threshold. New `--dump-schema` CLI flag prints the live generation schema + char length for future measurement without a Workflow-tool probe.",
-    "residual_status": "fixed",
-    "residual_risk": "None outstanding for schema size. Verification: a single diagnostic agent() call (nominal window, root=vinasa, 1 card, generated via `gen_opt_harness2.py vinasa --nominal --keys=vinasa --no-tm`) returned a valid card with 75,774 subagent tokens spent (vs 0 tokens / classifier-blocked on the pre-fix 10,940-char schema) -- confirms the classifier now accepts the call. Unblocks H389 (medium50 windows w1a/w1b/w2a/w2b), H388 B-arm live gate, and the H151 verb-root drain, all of which use gen_opt_harness2.py."
+  "passes": 3,
+  "symptoms": "dah~~h0_zz_pw__s10p0 hard-failed the StructuredOutput retry cap on both fresh topup attempts; the union recovered 16/17 fragments.",
+  "classification": "structured-output-limit",
+  "root_cause": "A single PW-addenda sense fragment still exceeded the schema-emission envelope even after bounded topup retries.",
+  "guardrail": "H178 accepted the card only after the two-attempt cap and documented the exact residual; TM was rebuilt and provenance audited clean.",
+  "residual_status": "accepted-as-proven-residual",
+  "residual_risk": "This is a known StructuredOutput retry-cap residual, not the H220 kill-gate class; future similar fragments should be routed through the same bounded topup/acceptance rule."
+ },
+ {
+  "id": "NO_PWG_W1_FIRST_RUN_2026-07-06",
+  "handoff": "H214",
+  "date": "2026-07-06",
+  "title": "no_pwg_w1 first run validated plumbing but exposed throughput blockers",
+  "lane": "no-PWG single",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 Workflow surface",
+  "expected": {
+   "agents": "preflight about 497K tokens / $0.94 for the first 58-card lane run",
+   "tokens": "~497K tokens preflight estimate"
   },
-  {
-    "id": "H428_OPT2_SCHEMA_SLIM_FIX_2026-07-09",
-    "handoff": "H428",
-    "date": "2026-07-09",
-    "title": "Slimmed the opt2 generation schema (drop post-generation-only fields) -- classifier now accepts the per-call schema",
-    "lane": "nominal medium (band-4) / all opt2 lanes",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Sonnet 5 Claude Code session, isolated worktree SanskritLexicography-h428, ONE solo diagnostic Workflow launch (1 card, root=vinasa)",
-    "expected": {
-      "agents": "1 (single-card nominal diagnostic window)",
-      "tokens": "order of tens of thousands (a single tiny nominal card)"
-    },
-    "actual": {
-      "agents": "1 agent() call, returned a valid card, 0 errors",
-      "tokens": "75,774 subagent tokens"
-    },
-    "passes": 1,
-    "symptoms": "N/A -- this is the fix-confirmation entry, not a failure. Prior state: H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 (67/67 agent() calls blocked pre-generation, 0 tokens).",
-    "classification": "structured-output-limit",
-    "root_cause": "See H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 -- the reachable generation schema (10,940 chars) crossed the Workflow tool safety-classifier's size threshold.",
-    "guardrail": "gen_opt_harness2.py:_strip_post_generation_fields() + _POST_GENERATION_{CARD,RECORD,SENSE}_FIELDS strip government/labels/renou/renou_oldest/evidence/evidence_summary/stats/renou_oldest_sense from the per-call StructuredOutput schema (kept on the full schema file for promote/annotate). window_selftest.py:test_generation_schema_carries_no_post_generation_field pins the reachable-defs shape and a <=5,000-char ceiling.",
-    "residual_status": "fixed",
-    "residual_risk": "None. If a future annotator field is added to schemas/pwg_ru_final_card.schema.json and it is post-generation-only, it must be added to the relevant _POST_GENERATION_*_FIELDS tuple or the new selftest will not catch its omission (only re-measures size, not the specific field list beyond the banned set already known)."
+  "actual": {
+   "agents": "three Workflow passes, including batched, 9-batch, and 46 single-card rounds",
+   "tokens": "~3.4M subagent tokens"
   },
-  {
-    "id": "H437_MEDIUM50_KILLGATE_CASCADE_2026-07-09",
-    "handoff": "H437",
-    "date": "2026-07-09",
-    "title": "3 solo medium50 windows all trip their MAX_AGENTS budget-kill-switch -> 2/37 clean; kill-gate isolated as the blocker (classifier now unblocked, network healthy)",
-    "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; 3 sequential SOLO (1-wide) launches, one per window; generation Sonnet 5 (harness-pinned)",
-    "expected": {
-      "agents": "17 + 13 + 14 = 44 expected agents across h317_w1b/w2a/w2b (agent_expected_after_tm)",
-      "tokens": "order of ~2M subagent tokens per window"
-    },
-    "actual": {
-      "agents": "61 + 49 + 52 = 162 agents (each window hit its own MAX_AGENTS budget-kill-switch: 61/61, 49/49, 52/52)",
-      "tokens": "2,898,353 + 1,628,556 + 2,153,758 = 6,680,667 subagent tokens; 2 cards clean (yuvan, ftvij), 6 raw-but-defective, 29 transient-null"
-    },
-    "passes": 1,
-    "symptoms": "Post-H428 (schema classifier unblocked, --dump-schema re-confirmed 1,698 chars) relaunch of the three windows H389 could not run. Each launched solo, sequentially. Every window returned only 2-3 raw cards and tripped budget_kill_switch_tripped=true: w1b 3 ok (1 clean yuvan, 2 defect), w2a 3 ok (1 clean ftvij, 2 defect), w2b 2 ok (0 clean, 2 defect). ZERO 'Connection closed mid-response' errors across all 162 agent() calls / 6.68M tokens -- the agents ran to completion. The 9-10 nulls per window were mostly UN-ATTEMPTED cards requeued when the switch tripped, not cards that failed on their own merits. Failure strings were uniformly 'heal-group-hard-failure gN: budget-kill-switch: window hit MAX_AGENTS=NN agent() calls; remaining cards requeued' (plus 1 'kill-timeout 115s' and 2 'selfheal-nothing-resolved').",
-    "classification": "kill-gate-calibration",
-    "root_cause": "By elimination across H317/H389/H437 the blocker is now isolated: NOT concurrency (all three ran 1-wide), NOT transient API instability (0 connection errors, healthy network), NOT the schema classifier (H428 fixed that; agents ran and spent tokens). It is the self-heal / kill-gate budget for dense band-4 nominal SINGLETON cards. A card carrying many <ls>/senses (the presplit_keys) enters the binary-split heal lanes; each bisection counts against the same per-window MAX_AGENTS (factor 3 x batches + headroom 10), so one pathological card consumes the whole budget and starves the un-attempted cards behind it in the batch -- converting a healthy run into near-total loss (~2M tokens buys ~1 clean card). This is the 'genuine kill-gate miscalibration for nominal medium-band cards' that H389's recommended-next-action foresaw as branch (3).",
-    "guardrail": "STOP relaunching medium50 windows blind -- the cascade is reproduced 3x; each blind re-run is ~2M tokens for ~1 card. Do not resume this lane at scale until the heal/kill budget is redesigned. Escalated to a bug-hunt handoff (H442) to recalibrate: cap heal bisections PER CARD (not just per window) so one dense card cannot starve its batch-mates; consider more aggressive presplit (lower output_budget/sense_presplit_budget) to turn a heal-cascade card into small clean fragment cards up front; separate the heal budget from the kill-timeout ceiling. Any change pinned by window_selftest.py + LANG_PARITY (SHARED).",
-    "residual_status": "bug-hunt-handoff",
-    "residual_risk": "Routed to H442 (https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md). Until H442 lands, the entire band-4 nominal-singleton lane is effectively blocked at ~1 clean card per 12-13 keys; verb-root drain (H151) is unaffected (dense verb BATCHES behave differently from no-fallback nominal singletons, per DAH_TAIL_2026-07-06). The 2 promoted cards (yuvan, ftvij) are in pwg_ru_translated.jsonl and are not at risk."
+  "passes": 3,
+  "symptoms": "Only 21/58 distinct sub-cards were ok; budget kill-switches tripped, audit needed nominal no-rootmap handling, and the path was validated but not promotable at first.",
+  "classification": "kill-gate-calibration",
+  "root_cause": "The no-PWG lane combined no-fallback singleton latency, strict key echo behavior, and nominal audit assumptions that were inherited from rootmap-backed lanes.",
+  "guardrail": "H214 fixed the Lbody pointer leak and nominal audit crash; H220 then fixed the no-fallback kill budget and nominal key echo mismatch, raising the diagnostic window to 10/10.",
+  "residual_status": "fixed",
+  "residual_risk": "Scale no-PWG through small single-card windows and keep H220 lane-specific calibration; do not use stale nominal audit defect counts as requeue truth."
+ },
+ {
+  "id": "NO_PWG_DIAG_2026-07-06",
+  "handoff": "H220",
+  "date": "2026-07-06",
+  "title": "no-PWG single-card throughput false kills and key echo drops",
+  "lane": "no-PWG single",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 Max/Workflow surface",
+  "expected": {
+   "agents": "diagnostic 10-card window should converge without structural nulls",
+   "tokens": "not recorded"
   },
-  {
-    "id": "H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10",
-    "handoff": "H442",
-    "date": "2026-07-10",
-    "title": "H442 landed 2 heal-lane guardrails (per-card budget + KILL_TIMEOUT_NO_BISECT, PR #301); both w1b re-runs still 0/12 audit-clean because the generation env is persistently degraded (3 conn-errors + 58/76 kill-timeouts each) -- lane paused on infra, not code",
-    "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
-    "model": "claude-sonnet-5",
-    "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo (1-wide) h317_w1b launch; generation Sonnet 5 (harness-pinned); per_card_heal_budget on at factor 1.5 / headroom 3",
-    "expected": {
-      "agents": "17 expected agents (agent_expected_after_tm) for h317_w1b",
-      "tokens": "~2M subagent tokens; goal >=6/12 clean WITHOUT tripping MAX_AGENTS"
-    },
-    "actual": {
-      "agents": "61/61 (still tripped budget_kill_switch); 0 per-card-heal-budget fires, 0 partial cards -- the per-card cap never bound",
-      "tokens": "2,223,194 subagent tokens; 3 raw cards returned (yuvan, bheṣaja, āhuti) but ALL 3 audit_window-flagged requeue_defect -> audit-clean 0/12 (vs H437's 1 promoted); goal not met; 9.27 min"
-    },
-    "passes": 2,
-    "symptoms": "TWO solo h317_w1b re-runs, both audit-clean 0/12 (3 raw returns each, all requeue_defect; vs H437's 1 promoted), both tripped 61/61, both CONFOUNDED by a persistently degraded generation env. RUN-1 (per-card heal ceiling only): 3x 'Connection closed mid-response' (H437 had zero), 58/61 calls kill-timeouts incl. an 11-byte fragment killed at the 45s KILL_FLOOR ('heal:vicitra#g1/A/B: kill-timeout 45s @ skelBytes=11'); the per-card cap did NOT fire (0 fires) because with all 12 cards in one shared parallel() pool the window budget (61) is hit before any single card reaches its 6-14 cap. RUN-2 (kill-timeout no-bisect, run with a depth-1 precursor harness): the guard DID fire 19 times (19 second-level kill-timeouts routed to requeue instead of re-split -- mechanism confirmed working), but the env was even MORE degraded (76 kill-timeouts, same 3 connection errors), so the window still tripped and 0 cards cleared audit. H437's clean env (0 connection errors, 1 kill-timeout) is not currently reproducible. NOTE: the version merged to master is the stricter boolean KILL_TIMEOUT_NO_BISECT (never bisect a kill-timeout), reconciled from this session's depth-1 KILL_BISECT_MAX_DEPTH by a concurrent Codex session before the PR #301 auto-merge.",
-    "classification": "kill-gate-calibration",
-    "root_cause": "Two findings supersede H437's 'per-card monopoly' hypothesis. (A) Direction #1 (per-card cap) is insufficient ALONE: the binding constraint on a window where EVERY card heals is the SHARED window MAX_AGENTS pool, not one card's monopoly -- the cap is moot until MAX_AGENTS is also raised for nominal-heal windows OR fewer cards route to heal. (B) The real waste mechanism under slow calls is kill-timeout x bisection: healGroup bisects a group on kill-timeout identically to a malformed response, but bisection only helps when a group is too BIG (content); when calls are slow (infra), each bisection spawns smaller fragments that hit the SAME 45s floor and die again (vicitra g1 -> g1/A,g1/B -> g1/A/A,g1/A/B,g1/B/A,g1/B/B all killed 45-107s). A killed group re-bisecting toward 11-byte fragments that also time out is pure budget waste. This run's env was transiently degraded, so it is not a clean before/after -- but the kill-timeout/bisection interaction is a real, env-independent design flaw.",
-    "guardrail": "Two guardrails landed (PR #301) and BOTH kept -- PER_CARD_HEAL_BUDGET (no-op when it doesn't bind; will bound a single-pathological-card window) + KILL_TIMEOUT_NO_BISECT (never bisect a kill-timeout; the depth-1 precursor fired 19x in run-2, the shipped form is stricter). Neither harms a healthy run. But do NOT resume medium50 at scale: the lane is blocked on a HEALTHY generation environment, not on more code. STOP rule: do not spend another launch until a warm-up agent() call returns 0 connection errors. When clean, re-measure w1b once; if it STILL trips, the remaining lever is to raise/uncouple MAX_AGENTS for nominal-heal windows (every card routes to heal, so 61 is too small) and/or right-size presplit so the 4 dense presplit cards don't burn budget yielding nothing. Each blind degraded-env launch is ~2.2M tokens for 0 clean cards -- exactly the H437-warned waste.",
-    "residual_status": "open-paused",
-    "residual_risk": "band-4 nominal-singleton lane remains blocked (0 clean per 12 under the current degraded env; goal >=6 without trip). H442 landed both guardrails (PR #301); the >=6/no-trip stop condition is UNMEASURABLE right now because H437's clean env is not reproducible (2 runs, 3 connection errors + 58/76 kill-timeouts each). Blocked on infra, not code -- routed to a clean-env re-measure (see SERVER_OUTAGES.md). verb-root drain (H151) unaffected. Both runs promoted 0 cards (raw returns were requeue_defect); nothing regressed in pwg_ru_translated.jsonl. NOTE: this supersedes H437's 'transient instability refuted' -- it is environment-specific and recurs; the medium50 heal lane is acutely sensitive because every card is on the critical heal path."
-  }
+  "actual": {
+   "agents": "9 agents on verified rerun",
+   "tokens": "not recorded"
+  },
+  "passes": 2,
+  "symptoms": "Before the fix, the diagnostic window yielded about 40%; 6 of 6 nulls were kill-timeouts, and some valid outputs were dropped by strict key matching.",
+  "classification": "kill-gate-calibration",
+  "root_cause": "The kill gate was calibrated on dense verb batches; no-fallback single supplement cards have fixed StructuredOutput latency and no selfheal lane. Separately, clean SLP1 portrait keys pulled the model away from mangled safe-name headers.",
+  "guardrail": "No-fallback singles now receive the 180s CEIL budget, nominal windows use a gated nominal_keymap re-key, and selfHeal preserves upstream failure reasons.",
+  "residual_status": "fixed",
+  "residual_risk": "Recalibrate per lane; never apply the dense-root kill profile blindly to no-fallback singleton launches."
+ },
+ {
+  "id": "ARMB_SYNTH_FANOUT_2026-07-06",
+  "handoff": "H234",
+  "date": "2026-07-06",
+  "title": "Arm-B 10-agent synthesis fan-out orchestration failure",
+  "lane": "synth fan-out",
+  "model": "claude-opus-4-8",
+  "orchestrator": "Opus 4.8 async sub-agents",
+  "expected": {
+   "agents": "10 synthesis agents",
+   "tokens": "not recorded"
+  },
+  "actual": {
+   "agents": "10 initial agents plus replacements/resumes",
+   "tokens": "not recorded"
+  },
+  "passes": 2,
+  "symptoms": "False-stall kill from 0-byte transcripts, mid-stream API stalls at 10-wide, a 34-minute silent hang, watcher-wiped outputs, zombie overwrite, and free-form collapse on >800 citation entries.",
+  "classification": "operator/process",
+  "root_cause": "Bare async fan-out used unsafe liveness signals, shared output paths, repo-local untracked outputs, and too-wide concurrency for large Opus generations.",
+  "guardrail": "src/synth_dispatch.py now caps concurrency, watches output-file growth only, confirms dead-before-redispatch, uses private staging and watcher-safe landing, seals outputs, and routes >800 <ls> entries to deterministic assembly.",
+  "residual_status": "structurally-guarded",
+  "residual_risk": "All future pwg_ru multi-agent fan-outs must go through synth_dispatch.py; bare fan-outs are banned."
+ },
+ {
+  "id": "H317_MEDIUM50_3WIDE_KILL_CASCADE_2026-07-08",
+  "handoff": "H317",
+  "date": "2026-07-08",
+  "title": "3 concurrent Workflow windows -> 100% kill-timeout cascade, 0/38 cards clean",
+  "lane": "nominal medium (band-4, 3-30 citation size)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Sonnet 5 Claude Code session, 3 Workflow tool launches in one message",
+  "expected": {
+   "agents": "19 + 17 + 13 = 49 expected agents across h317_w1a/w1b/w2a (perf_preflight agent_expected_after_tm)",
+   "tokens": "not estimated per-window; order of ~2-3M subagent tokens for 38 cards"
+  },
+  "actual": {
+   "agents": "67 + 61 + 49 = 177 agents (each window hit its own MAX_AGENTS budget-kill-switch)",
+   "tokens": "599,538 + 422,945 + 528,476 = 1,550,959 subagent tokens, 0 cards translated"
+  },
+  "passes": 2,
+  "symptoms": "All three simultaneously-launched windows (13+12+13=38 cards) returned 0 ok / 38 null. Every batch and every self-heal bisection group hit kill-timeout (45-180s ceiling), cascading into ever-smaller heal fragments until each window's own MAX_AGENTS budget-kill-switch tripped. One agent (h317_w1a b3) additionally errored with 'API Error: Connection closed mid-response.' A SOLO (1-wide) retry of h317_w1a (pass 2, run wf_b2b55c28-409) still surfaced 8 separate 'Connection closed mid-response' agent errors out of 67 agent() calls and again tripped its own MAX_AGENTS=67 kill-switch, yielding only 1/13 cards with content at all (zoqa_san), and even that one was flagged missing_senses by the deterministic gate (0/13 clean net).",
+  "classification": "concurrency/api",
+  "root_cause": "Two overlapping causes measured, not one: (1) RUN_FREQ_MAX.md's <=3-wide concurrency ceiling is not a safe floor -- 3 concurrent Workflow launches alone was enough to saturate throughput and trigger cascading kill-timeouts across all three windows simultaneously; (2) a session-wide transient API instability ('Connection closed mid-response') was ALSO present even at 1-wide, so concurrency width did not fully explain the failure -- pass 2's solo run had the same symptom class as pass 1's 3-wide run, just fewer simultaneous casualties.",
+  "guardrail": "Do not keep burning agent budget retrying into a live transient-API window. Pause further H317 window launches until a subsequent solo launch comes back mostly clean (confirming the outage has cleared), then resume sequential (1-wide) retries per window. Revise the standing <=3-wide guidance in RUN_FREQ_MAX.md to require a clean 1-wide reference launch before any concurrent width is trusted again in a session showing these symptoms.",
+  "residual_status": "accepted-as-proven-residual",
+  "residual_risk": "SUPERSEDED by H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09: the clean-environment solo retry did NOT recur as a kill-gate miscalibration NOR as transient infra -- the actual, deterministic block is the agent() output-schema safety classifier (see next entry). The 08-07 'Connection closed mid-response' symptoms predate the classifier rollout; the operative blocker today is schema size, not concurrency or transient outage."
+ },
+ {
+  "id": "H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09",
+  "handoff": "H389",
+  "date": "2026-07-09",
+  "title": "opt2 CARDS_SCHEMA too large for agent() safety classifier -> 67/67 blocked pre-generation, 0 tokens",
+  "lane": "nominal medium (band-4, 3-30 citation size)",
+  "model": "claude-sonnet-5 (generation, hardcoded in harness)",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo diagnostic window h317_w1a (13 keys), no concurrency",
+  "expected": {
+   "agents": "19 (agent_expected_after_tm)",
+   "tokens": "~4.7M subagent tokens / ~$8.90 (preflight cost gate)"
+  },
+  "actual": {
+   "agents": "67 agent() calls, ALL errored identically 'blocked by safety classifier: output schema too large to classify safely'; window hit MAX_AGENTS=67 budget-kill-switch",
+   "tokens": "0 subagent tokens (rejected before any model invocation), 83 ms total wall-clock"
+  },
+  "passes": 1,
+  "symptoms": "Every batch agent (b0-b9), every binary-split heal group, and every retry returned 'blocked by safety classifier: output schema too large to classify safely' at subagent_tokens:0. Binary-splitting did NOT help (a single-item call still carries the full constant schema). 0/13 cards, 0 tokens. This is a DETERMINISTIC pre-generation block, not the transient/kill cascade of the 08-07 H317 attempts.",
+  "classification": "structured-output-limit",
+  "root_cause": "The Workflow-tool agent() safety classifier refuses the opt2 CARDS_SCHEMA (~8,202 chars measured H388/H389; re-measured 10,940 chars at H428 after further $defs growth: nested $defs for card/record/sense carrying government/evidence/evidence_summary/stats objects, many enums, long descriptions) as too large to classify, pre-execution. FINDINGS.md §30's orphan-$def prune (_ref_names/_reachable_defs, landed 03-07 H130) is necessary but NO LONGER SUFFICIENT: H335 (government) + H405 (evidence/stage-2) + H422 (stats) grew the REACHABLE schema past the classifier threshold after that fix. Identical block hit the H388 SkillOpt B-arm the same day (52/52). Supersedes H317's 'transient API instability + kill-gate' hypothesis.",
+  "guardrail": "FIXED by H428 (Uprava/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md, 09-07-2026, Sonnet 5 claude-sonnet-5): new `_strip_post_generation_fields()` in gen_opt_harness2.py drops government/labels/renou/renou_oldest/evidence (sense), renou_oldest_sense (record), evidence_summary/stats (card) -- all added deterministically post-generation by government_census.py/annotate_government.py/annotate_renou.py/annotate_evidence.py/annotate_stats.py, never by the translating model -- from the GENERATION schema only (the promote/annotate scripts still add them back from the untouched schema file on disk). Reachable schema: 10,940 -> 1,698 chars (84% reduction); $defs collapse from {card,record,sense,evidence_item,evidence_summary,stats} to {card,record,sense}. Pinned by new window_selftest.py test_generation_schema_carries_no_post_generation_field so a future annotator field addition cannot silently re-cross the threshold. New `--dump-schema` CLI flag prints the live generation schema + char length for future measurement without a Workflow-tool probe.",
+  "residual_status": "fixed",
+  "residual_risk": "None outstanding for schema size. Verification: a single diagnostic agent() call (nominal window, root=vinasa, 1 card, generated via `gen_opt_harness2.py vinasa --nominal --keys=vinasa --no-tm`) returned a valid card with 75,774 subagent tokens spent (vs 0 tokens / classifier-blocked on the pre-fix 10,940-char schema) -- confirms the classifier now accepts the call. Unblocks H389 (medium50 windows w1a/w1b/w2a/w2b), H388 B-arm live gate, and the H151 verb-root drain, all of which use gen_opt_harness2.py."
+ },
+ {
+  "id": "H428_OPT2_SCHEMA_SLIM_FIX_2026-07-09",
+  "handoff": "H428",
+  "date": "2026-07-09",
+  "title": "Slimmed the opt2 generation schema (drop post-generation-only fields) -- classifier now accepts the per-call schema",
+  "lane": "nominal medium (band-4) / all opt2 lanes",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Sonnet 5 Claude Code session, isolated worktree SanskritLexicography-h428, ONE solo diagnostic Workflow launch (1 card, root=vinasa)",
+  "expected": {
+   "agents": "1 (single-card nominal diagnostic window)",
+   "tokens": "order of tens of thousands (a single tiny nominal card)"
+  },
+  "actual": {
+   "agents": "1 agent() call, returned a valid card, 0 errors",
+   "tokens": "75,774 subagent tokens"
+  },
+  "passes": 1,
+  "symptoms": "N/A -- this is the fix-confirmation entry, not a failure. Prior state: H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 (67/67 agent() calls blocked pre-generation, 0 tokens).",
+  "classification": "structured-output-limit",
+  "root_cause": "See H389_MEDIUM50_SCHEMA_CLASSIFIER_BLOCK_2026-07-09 -- the reachable generation schema (10,940 chars) crossed the Workflow tool safety-classifier's size threshold.",
+  "guardrail": "gen_opt_harness2.py:_strip_post_generation_fields() + _POST_GENERATION_{CARD,RECORD,SENSE}_FIELDS strip government/labels/renou/renou_oldest/evidence/evidence_summary/stats/renou_oldest_sense from the per-call StructuredOutput schema (kept on the full schema file for promote/annotate). window_selftest.py:test_generation_schema_carries_no_post_generation_field pins the reachable-defs shape and a <=5,000-char ceiling.",
+  "residual_status": "fixed",
+  "residual_risk": "None. If a future annotator field is added to schemas/pwg_ru_final_card.schema.json and it is post-generation-only, it must be added to the relevant _POST_GENERATION_*_FIELDS tuple or the new selftest will not catch its omission (only re-measures size, not the specific field list beyond the banned set already known)."
+ },
+ {
+  "id": "H437_MEDIUM50_KILLGATE_CASCADE_2026-07-09",
+  "handoff": "H437",
+  "date": "2026-07-09",
+  "title": "3 solo medium50 windows all trip their MAX_AGENTS budget-kill-switch -> 2/37 clean; kill-gate isolated as the blocker (classifier now unblocked, network healthy)",
+  "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; 3 sequential SOLO (1-wide) launches, one per window; generation Sonnet 5 (harness-pinned)",
+  "expected": {
+   "agents": "17 + 13 + 14 = 44 expected agents across h317_w1b/w2a/w2b (agent_expected_after_tm)",
+   "tokens": "order of ~2M subagent tokens per window"
+  },
+  "actual": {
+   "agents": "61 + 49 + 52 = 162 agents (each window hit its own MAX_AGENTS budget-kill-switch: 61/61, 49/49, 52/52)",
+   "tokens": "2,898,353 + 1,628,556 + 2,153,758 = 6,680,667 subagent tokens; 2 cards clean (yuvan, ftvij), 6 raw-but-defective, 29 transient-null"
+  },
+  "passes": 1,
+  "symptoms": "Post-H428 (schema classifier unblocked, --dump-schema re-confirmed 1,698 chars) relaunch of the three windows H389 could not run. Each launched solo, sequentially. Every window returned only 2-3 raw cards and tripped budget_kill_switch_tripped=true: w1b 3 ok (1 clean yuvan, 2 defect), w2a 3 ok (1 clean ftvij, 2 defect), w2b 2 ok (0 clean, 2 defect). ZERO 'Connection closed mid-response' errors across all 162 agent() calls / 6.68M tokens -- the agents ran to completion. The 9-10 nulls per window were mostly UN-ATTEMPTED cards requeued when the switch tripped, not cards that failed on their own merits. Failure strings were uniformly 'heal-group-hard-failure gN: budget-kill-switch: window hit MAX_AGENTS=NN agent() calls; remaining cards requeued' (plus 1 'kill-timeout 115s' and 2 'selfheal-nothing-resolved').",
+  "classification": "kill-gate-calibration",
+  "root_cause": "By elimination across H317/H389/H437 the blocker is now isolated: NOT concurrency (all three ran 1-wide), NOT transient API instability (0 connection errors, healthy network), NOT the schema classifier (H428 fixed that; agents ran and spent tokens). It is the self-heal / kill-gate budget for dense band-4 nominal SINGLETON cards. A card carrying many <ls>/senses (the presplit_keys) enters the binary-split heal lanes; each bisection counts against the same per-window MAX_AGENTS (factor 3 x batches + headroom 10), so one pathological card consumes the whole budget and starves the un-attempted cards behind it in the batch -- converting a healthy run into near-total loss (~2M tokens buys ~1 clean card). This is the 'genuine kill-gate miscalibration for nominal medium-band cards' that H389's recommended-next-action foresaw as branch (3).",
+  "guardrail": "STOP relaunching medium50 windows blind -- the cascade is reproduced 3x; each blind re-run is ~2M tokens for ~1 card. Do not resume this lane at scale until the heal/kill budget is redesigned. Escalated to a bug-hunt handoff (H442) to recalibrate: cap heal bisections PER CARD (not just per window) so one dense card cannot starve its batch-mates; consider more aggressive presplit (lower output_budget/sense_presplit_budget) to turn a heal-cascade card into small clean fragment cards up front; separate the heal budget from the kill-timeout ceiling. Any change pinned by window_selftest.py + LANG_PARITY (SHARED).",
+  "residual_status": "bug-hunt-handoff",
+  "residual_risk": "Routed to H442 (https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md). Until H442 lands, the entire band-4 nominal-singleton lane is effectively blocked at ~1 clean card per 12-13 keys; verb-root drain (H151) is unaffected (dense verb BATCHES behave differently from no-fallback nominal singletons, per DAH_TAIL_2026-07-06). The 2 promoted cards (yuvan, ftvij) are in pwg_ru_translated.jsonl and are not at risk."
+ },
+ {
+  "id": "H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10",
+  "handoff": "H442",
+  "date": "2026-07-10",
+  "title": "H442 landed 2 heal-lane guardrails (per-card budget + KILL_TIMEOUT_NO_BISECT, PR #301); both w1b re-runs still 0/12 audit-clean because the generation env is persistently degraded (3 conn-errors + 58/76 kill-timeouts each) -- lane paused on infra, not code",
+  "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo (1-wide) h317_w1b launch; generation Sonnet 5 (harness-pinned); per_card_heal_budget on at factor 1.5 / headroom 3",
+  "expected": {
+   "agents": "17 expected agents (agent_expected_after_tm) for h317_w1b",
+   "tokens": "~2M subagent tokens; goal >=6/12 clean WITHOUT tripping MAX_AGENTS"
+  },
+  "actual": {
+   "agents": "61/61 (still tripped budget_kill_switch); 0 per-card-heal-budget fires, 0 partial cards -- the per-card cap never bound",
+   "tokens": "2,223,194 subagent tokens; 3 raw cards returned (yuvan, bheṣaja, āhuti) but ALL 3 audit_window-flagged requeue_defect -> audit-clean 0/12 (vs H437's 1 promoted); goal not met; 9.27 min"
+  },
+  "passes": 2,
+  "symptoms": "TWO solo h317_w1b re-runs, both audit-clean 0/12 (3 raw returns each, all requeue_defect; vs H437's 1 promoted), both tripped 61/61, both CONFOUNDED by a persistently degraded generation env. RUN-1 (per-card heal ceiling only): 3x 'Connection closed mid-response' (H437 had zero), 58/61 calls kill-timeouts incl. an 11-byte fragment killed at the 45s KILL_FLOOR ('heal:vicitra#g1/A/B: kill-timeout 45s @ skelBytes=11'); the per-card cap did NOT fire (0 fires) because with all 12 cards in one shared parallel() pool the window budget (61) is hit before any single card reaches its 6-14 cap. RUN-2 (kill-timeout no-bisect, run with a depth-1 precursor harness): the guard DID fire 19 times (19 second-level kill-timeouts routed to requeue instead of re-split -- mechanism confirmed working), but the env was even MORE degraded (76 kill-timeouts, same 3 connection errors), so the window still tripped and 0 cards cleared audit. H437's clean env (0 connection errors, 1 kill-timeout) is not currently reproducible. NOTE: the version merged to master is the stricter boolean KILL_TIMEOUT_NO_BISECT (never bisect a kill-timeout), reconciled from this session's depth-1 KILL_BISECT_MAX_DEPTH by a concurrent Codex session before the PR #301 auto-merge.",
+  "classification": "kill-gate-calibration",
+  "root_cause": "Two findings supersede H437's 'per-card monopoly' hypothesis. (A) Direction #1 (per-card cap) is insufficient ALONE: the binding constraint on a window where EVERY card heals is the SHARED window MAX_AGENTS pool, not one card's monopoly -- the cap is moot until MAX_AGENTS is also raised for nominal-heal windows OR fewer cards route to heal. (B) The real waste mechanism under slow calls is kill-timeout x bisection: healGroup bisects a group on kill-timeout identically to a malformed response, but bisection only helps when a group is too BIG (content); when calls are slow (infra), each bisection spawns smaller fragments that hit the SAME 45s floor and die again (vicitra g1 -> g1/A,g1/B -> g1/A/A,g1/A/B,g1/B/A,g1/B/B all killed 45-107s). A killed group re-bisecting toward 11-byte fragments that also time out is pure budget waste. This run's env was transiently degraded, so it is not a clean before/after -- but the kill-timeout/bisection interaction is a real, env-independent design flaw.",
+  "guardrail": "Two guardrails landed (PR #301) and BOTH kept -- PER_CARD_HEAL_BUDGET (no-op when it doesn't bind; will bound a single-pathological-card window) + KILL_TIMEOUT_NO_BISECT (never bisect a kill-timeout; the depth-1 precursor fired 19x in run-2, the shipped form is stricter). Neither harms a healthy run. But do NOT resume medium50 at scale: the lane is blocked on a HEALTHY generation environment, not on more code. STOP rule: do not spend another launch until a warm-up agent() call returns 0 connection errors. When clean, re-measure w1b once; if it STILL trips, the remaining lever is to raise/uncouple MAX_AGENTS for nominal-heal windows (every card routes to heal, so 61 is too small) and/or right-size presplit so the 4 dense presplit cards don't burn budget yielding nothing. Each blind degraded-env launch is ~2.2M tokens for 0 clean cards -- exactly the H437-warned waste.",
+  "residual_status": "open-paused",
+  "residual_risk": "band-4 nominal-singleton lane remains blocked (0 clean per 12 under the current degraded env; goal >=6 without trip). H442 landed both guardrails (PR #301); the >=6/no-trip stop condition is UNMEASURABLE right now because H437's clean env is not reproducible (2 runs, 3 connection errors + 58/76 kill-timeouts each). Blocked on infra, not code -- routed to a clean-env re-measure (see SERVER_OUTAGES.md). verb-root drain (H151) unaffected. Both runs promoted 0 cards (raw returns were requeue_defect); nothing regressed in pwg_ru_translated.jsonl. NOTE: this supersedes H437's 'transient instability refuted' -- it is environment-specific and recurs; the medium50 heal lane is acutely sensitive because every card is on the critical heal path."
+ },
+ {
+  "id": "H442_MEDIUM50_LAUNCH3_INFRA_CONFOUNDED_2026-07-10",
+  "handoff": "H442",
+  "date": "2026-07-10",
+  "title": "H442 launch 3 of 3: warm-up probe GREEN, window still 0/12 with 2 conn-errors and kill-timeouts at the 180s CEILING on 1.2-8.0KB skeletons -- audit says 12/12 transient, 0 defect, so the lane is paused on infrastructure, not code",
+  "lane": "nominal medium (band-4, 3-30 citation size), singleton cards",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; ONE solo (1-wide) h317_w1b launch; harness REGENERATED from the post-PR-301 generator (KILL_TIMEOUT_NO_BISECT + PER_CARD_HEAL_FACTOR verified present, depth-1 precursor absent); fired only after a GO warm-up probe",
+  "expected": {
+   "agents": "16 expected agents (agent_expected_after_tm), 8 batches, MAX_AGENTS=58",
+   "tokens": "~2M subagent tokens; goal >=6/12 audit-clean WITHOUT tripping MAX_AGENTS"
+  },
+  "actual": {
+   "agents": "58/58 spent -> budget_kill_switch_tripped=true",
+   "tokens": "1,798,042 subagent tokens; 11.90 min wall",
+   "cards": "0/12 audit-clean; audit_window.py: 12 requeue, 12 transient, 0 defect; healed=0, partial_keys=[]",
+   "errors": "2 x Connection closed mid-response (b4[2], heal:r_azwra#g2[8]); 7 kill-timeouts, 6 of them at the 180s KILL_CEIL on 1,182-7,977 byte skeletons; 3 presplit cards selfheal-nothing-resolved"
+  },
+  "symptoms": "A trivial warm-up agent() call returned in 3.3s with 0 connection errors (probe verdict GO), yet the real window degraded immediately. Unlike runs 1-2 (which hung 11-135 byte fragments at the 45s KILL_FLOOR), this run hung whole multi-KB skeletons at the 180s KILL_CEIL -- so call latency is independent of payload size. Every one of the 12 nulls is transient; zero content defects were produced.",
+  "classification": "external-api",
+  "root_cause": "Generation-API latency degradation, not the heal lane. Corroborated three ways: (1) the auditor classifies 12/12 as transient with 0 defect -- the window emitted no bad Russian, it emitted none; (2) kill-timeouts migrated from the floor to the ceiling as payloads grew, i.e. the hang does not track payload size; (3) connection errors recurred. Secondary, structural: the per-card heal cap has now failed to bind on three consecutive runs because MAX_AGENTS is derived from batch count and is the SAME counter the heal lane spends -- when every card heals, the window budget necessarily binds first, so the per-card ceiling is unreachable by construction for this window shape. That is a design fact, not a mis-tuned constant.",
+  "guardrail": "GENERATION_API_PROBE_LOG.md + probe_log.py added this pass: an append-only log keyed on the READING (not the launch), with a mechanical GO/NO-GO gate (0 conn-errors, sub-30s) and rows for aborted launches. Backfilling it retroactively classifies H442 runs 1-2 as NO-GO. NOTE the gate proved necessary-but-insufficient here: a trivial probe passed and the launch still degraded, so the probe must be made load-representative (>=5KB skeleton payload) before it can authorize a ~2M-token launch.",
+  "residual_status": "open-paused",
+  "residual_risk": "The H442 3-launch cap is exhausted with ZERO measurable clean-rate: all three launches were infra-confounded, so the heal-lane fix (PR #301) remains unvalidated in the field -- it is not known to be wrong, it is untested. Do NOT re-tune the heal budget on this evidence. Next moves, in order: (1) load-representative probe; (2) return kill_timeouts/conn_errors/heal_calls in the harness summary so they stop being hand-counted from transcripts (H462); (3) separate the heal pool from the translate pool, without which the per-card cap can never bind. The medium50 nominal lane stays paused; the H151 verb drain is unaffected.",
+  "passes": 1
+ }
 ]
 ```
 
