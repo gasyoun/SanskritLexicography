@@ -377,4 +377,19 @@ The FIX_PLAN's audit command is also wrong and was corrected in this pass: it sa
 `--root nominal_h317_w1b`, but the harness root is `h317_w1b`; the stale-artifact guard correctly
 refused the mismatched run.
 
+## Update — 10-07-2026: shared-counter design removed offline; live stop condition still pending
+
+The disposition's structural item (c) is implemented on `codex/pwg-runtime-refactor`:
+`agent_budget.py` derives independent translate and heal pools, and the generated runtime
+charges whole-card/binary-split calls to `MAX_TRANSLATE_AGENTS` while fragment recovery and
+presplit calls use `MAX_HEAL_AGENTS`. The heal ceiling is the sum of the per-card ceilings,
+so the window cannot fire before those card caps solely because many cards heal at once.
+
+Offline verification executes generated JavaScript under Node with two sense-dense presplit
+cards and a null-returning mock `agent()`: both cards reach their own caps, all keys remain
+explicitly requeueable, `heal_agents_spent == max_heal_agents`, and
+`heal_budget_tripped=false`. This closes the construction defect, not the production result.
+The medium50 lane remains paused until a load-representative probe passes and one healthy
+`h317_w1b` canary measures the existing `>=6/12`, no-trip, zero-connection-error stop condition.
+
 _Dr. Mārcis Gasūns_

@@ -3064,6 +3064,74 @@ def test_agent_budget_plan_separates_translate_and_heal_pools():
         fail('--no-kill-switch must disable both budget pools')
 
 
+def test_split_agent_pools_all_heal_runtime():
+    """Execute the generated JS with a null-returning mock agent.
+
+    Two sense-dense cards route directly to recovery. Every call fails, so each card must
+    stop at its own cap. The window heal pool is exactly the sum of those caps and therefore
+    must *not* trip first — the production invariant H442 could not previously satisfy.
+    """
+    import gen_opt_harness2 as gh
+    senses = '\n'.join('<div n="1">— %d〉 {%%Bedeutung %d%%}.' % (i, i)
+                       for i in range(1, 31))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n' + senses + '\n')
+    keys = ['zz~~runtime_pool_a', 'zz~~runtime_pool_b']
+    d = tempfile.mkdtemp()
+    saved_ip = gh.input_paths
+    saved_kill = gh.KILL
+    try:
+        paths = {}
+        for key in keys:
+            rp = os.path.join(d, key + '.raw.txt')
+            pp = os.path.join(d, key + '.portrait.json')
+            with open(rp, 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(pp, 'w', encoding='utf-8') as f:
+                f.write('[]')
+            paths[key] = (rp, pp)
+        gh.input_paths = lambda k, input_dir=None: paths[k]
+        gh.KILL = False  # mock calls are immediate; exercise budgets, not wall time
+        js, batches = gh.build(
+            'zz_runtime_pool', keys, None, 12000,
+            nominal=True, grammar_on=False, tm_path=None)
+        if batches:
+            fail('sense-dense runtime fixture must be presplit-only; got batches=%r' % batches)
+        marker = 'return { meta: META, summary, results: out }'
+        if marker not in js:
+            fail('generated runtime return marker changed; update behavioral harness deliberately')
+        runnable = (
+            "const phase = () => {};\n"
+            "const log = () => {};\n"
+            "const agent = async () => null;\n"
+            "const parallel = async thunks => Promise.all(thunks.map(async fn => { "
+            "try { return await fn() } catch (_) { return null } }));\n" +
+            js.replace(marker, 'console.log(JSON.stringify({ meta: META, summary, results: out }))'))
+        script = os.path.join(d, 'runtime_pool_test.mjs')
+        with open(script, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(runnable)
+        p = subprocess.run(
+            ['node', script], capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('mock generated runtime failed:\n%s\n%s' % (p.stdout, p.stderr))
+        payload = json.loads(p.stdout.strip().splitlines()[-1])
+        summary = payload['summary']
+        if summary['translate_agents_spent'] != 0:
+            fail('presplit-only fixture must spend zero translate calls')
+        if summary['heal_agents_spent'] != summary['max_heal_agents']:
+            fail('all-heal fixture must stop exactly at the sum of per-card caps; got %r' % summary)
+        if summary['heal_budget_tripped']:
+            fail('window heal pool fired before/at a per-card cap — shared-counter bug returned')
+        if summary['budget_kill_switch_tripped']:
+            fail('no window pool should trip when each card stops at its own ceiling')
+        if summary['null'] != len(keys):
+            fail('null mock must leave every card explicitly requeueable')
+    finally:
+        gh.input_paths = saved_ip
+        gh.KILL = saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_budget_kill_switch_wired():
     """The generated Workflow must enforce independent translate/heal call ceilings."""
     import re as _re
@@ -3184,11 +3252,21 @@ def test_classify_run_verdicts():
     H442 launch-3 signature), code-failure (nulls with a quiet network), and the honest
     refusal on a pre-H462 payload that carries no counters."""
     import classify_run as cr
-    base = {'agents_spent': 58, 'kill_timeouts': 0, 'conn_errors': 0, 'heal_calls': 40,
+    base = {'agents_spent': 58,
+            'translate_agents_spent': 18, 'max_translate_agents': 28,
+            'translate_budget_tripped': False,
+            'heal_agents_spent': 40, 'max_heal_agents': 55,
+            'heal_budget_tripped': False,
+            'kill_timeouts': 0, 'conn_errors': 0, 'heal_calls': 40,
             'kill_bisect_blocked': 0, 'null_keys': [], 'budget_kill_switch_tripped': False}
-    v, _, _ = cr.classify(dict(base))
+    v, _, sig = cr.classify(dict(base))
     if v != 'clean':
         fail('all-ok summary must classify clean; got %r' % v)
+    for field in ('translate_agents_spent', 'max_translate_agents',
+                  'translate_budget_tripped', 'heal_agents_spent',
+                  'max_heal_agents', 'heal_budget_tripped'):
+        if sig[field] != base[field]:
+            fail('classifier must preserve split-pool signal %s' % field)
     # H442 launch 3: 58/58 agents, 7 kill-timeouts, 2 conn-errors, 12 nulls, tripped
     infra = dict(base, kill_timeouts=7, conn_errors=2,
                  null_keys=['k%d' % i for i in range(12)], budget_kill_switch_tripped=True)
@@ -3985,6 +4063,7 @@ def main():
         test_presplit_card_uses_amortized_grouping,
         test_kill_gate_recalibrated_envelope,
         test_agent_budget_plan_separates_translate_and_heal_pools,
+        test_split_agent_pools_all_heal_runtime,
         test_budget_kill_switch_wired,
         test_harness_size_guard,
         test_perf_preflight_cost_gate,

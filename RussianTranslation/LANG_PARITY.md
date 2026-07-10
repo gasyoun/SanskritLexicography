@@ -82,7 +82,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -118,7 +118,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -137,7 +137,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -156,7 +156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -355,7 +355,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -374,7 +374,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "9b5dbe7c70da82330b21a5b58c2c84cee9bf4bc1130662a3a7a1ff8400a2730a",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -455,7 +455,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "presplit_lane_amortization_and_budget_guards_h189",
-    "mechanism": "Presplit-PRIMARY cards are grouped at PRESPLIT_GROUP_CITE_BUDGET(60)/PRESPLIT_GROUP_SENSE_CAP(18) instead of the conservative SELFHEAL_GROUP_BUDGET(12), amortizing the ~27k framework across many fragments per agent() call; the wall-clock kill gate is recalibrated (floor 120s->45s, ceil 480s->180s) per MG's >60s-suspicious/>3min-unacceptable rule; a window-level budget kill-switch aborts+requeues once agent() calls exceed MAX_AGENTS=ceil(expected*3)+10); the generator warns + suggests a key-disjoint split when the harness exceeds MAX_HARNESS_BYTES(480k); perf_preflight adds a per-card / per-window cost gate that flags a window dominated by expensive cards",
+    "mechanism": "Presplit-PRIMARY cards are grouped at PRESPLIT_GROUP_CITE_BUDGET(60)/PRESPLIT_GROUP_SENSE_CAP(18) instead of the conservative SELFHEAL_GROUP_BUDGET(12), amortizing the ~27k framework across many fragments per agent() call; the wall-clock kill gate is recalibrated (floor 120s->45s, ceil 480s->180s) per MG's >60s-suspicious/>3min-unacceptable rule; the original window-level shared MAX_AGENTS kill-switch is retained as backwards-compatible total telemetry but superseded operationally by the independent translate/heal ceilings in split_agent_budget_pools_20260710; the generator warns + suggests a key-disjoint split when the harness exceeds MAX_HARNESS_BYTES(480k); perf_preflight adds a per-card / per-window cost gate that flags a window dominated by expensive cards",
     "files": [
       "src/pilot/gen_opt_harness2.py",
       "src/pilot/perf_preflight.py",
@@ -471,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
       "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -502,7 +502,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "14409a15772df0c07e1337d795112d9f99f60388b003df241c5b1ccaf03e4e97",
       "src/pilot/audit_window.py": "2a0478b0779e1aba2bf2e2a0e7d5b50807f7acccf44ae4b00a7dc3af3ff29005",
       "src/pilot/autosplit_requeue.py": "17ac6103dbdb6743163bb312531d71deb4a12da35c777e3676baf5d95afe1792",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -521,7 +521,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "65b0cb16a8a1bd6ae5fde9c8e0b131a2ba9af8140ec954aa7c937f915ad8856c",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -539,7 +539,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "9ef1fd0e7c1d31760db187d16046b7dffbafa4fd6d11099ef61fb95094975b27",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -558,7 +558,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -598,7 +598,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "dca26a006a32ba4a9eeb98453fa059585ccb8504ada8423f5e22d3fe1b25310f",
       "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
       "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -623,7 +623,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "f2090d359ff49e798f474b26bb387f5a7309308442b4cfca01a11915d7c9192e",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -652,7 +652,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "65b0cb16a8a1bd6ae5fde9c8e0b131a2ba9af8140ec954aa7c937f915ad8856c",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -672,7 +672,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -691,7 +691,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "5e257d130318be4e903bb55444d70c88544af8725c115253235e5daed716ec51",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -728,7 +728,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -786,7 +786,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -805,7 +805,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -824,7 +824,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   },
   {
@@ -844,8 +844,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672",
-      "src/pilot/classify_run.py": "4da13f241aa3dcfc4d0670e9ff5ffc8bba7cacf848bbf1c51006aa15d49ff9fe"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5",
+      "src/pilot/classify_run.py": "868f9c76df11726d1872ac1c213f3f5b58aafcf090e302165d2ec52a2eddeecc"
     }
   },
   {
@@ -861,12 +861,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "10-07-2026, Codex/GPT-5. Budget planning and generated agentKill lane selection are language-agnostic: both RU and EN use the same batches, FRAGS, healGroup/selfHeal, label prefixes, and counters. The change does not touch prompt text, output fields, or model selection. Pinned by agent_budget.selftest, test_agent_budget_plan_separates_translate_and_heal_pools, and test_budget_kill_switch_wired.",
+    "note": "10-07-2026, Codex/GPT-5. Budget planning and generated agentKill lane selection are language-agnostic: both RU and EN use the same batches, FRAGS, healGroup/selfHeal, label prefixes, and counters. The change does not touch prompt text, output fields, or model selection. Pinned by agent_budget.selftest, test_agent_budget_plan_separates_translate_and_heal_pools, test_split_agent_pools_all_heal_runtime (executes generated JS under Node with a null-returning mock agent), and test_budget_kill_switch_wired.",
     "tracking": "",
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/pilot/window_selftest.py": "70c7119ccb890f04369fd8c416b1694c7fada1c71f7144e8e2ee1fbd8f286672"
+      "src/pilot/window_selftest.py": "abf08e7b81ee664e9c20cc9e1bae62ca460a7312a67f53c5e117e18132720ce5"
     }
   }
 ]

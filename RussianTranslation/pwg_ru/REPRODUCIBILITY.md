@@ -44,8 +44,10 @@ All defined in [gen_opt_harness2.py](https://github.com/gasyoun/SanskritLexicogr
 | `KILL_SLOPE_MS` | 45 | ms per masked-skeleton byte (above the 44 ms/byte observed ceiling) |
 | `KILL_FLOOR_MS` | 45,000 | never kill before 45 s (H189; was 120,000) |
 | `KILL_CEIL_MS` | 180,000 | hard 3-min ceiling (H189; was 480,000). H220 exception: a single card with no selfheal fallback gets the CEIL budget directly |
-| `MAX_AGENTS` | `⌈expected × 3.0⌉ + 10` | live budget kill-switch (`MAX_AGENTS_FACTOR=3.0`, `MAX_AGENTS_HEADROOM=10`, `--max-agents=N` override) |
-| `PER_CARD_HEAL_BUDGET` | on; `⌈groups × 1.5⌉ + 3` | H442 per-card heal-call ceiling (`--no-per-card-heal-budget`, `--per-card-heal-factor=N`, `--per-card-heal-headroom=N`) so one dense card cannot consume the shared window `MAX_AGENTS` pool |
+| `MAX_TRANSLATE_AGENTS` | `⌈batch_count × 3.0⌉ + 10` | whole-card translation + binary-split pool; independent from fragment recovery |
+| `MAX_HEAL_AGENTS` | sum of every active card's heal cap | fragment-recovery/presplit pool; cannot fire before the per-card caps merely because many cards heal concurrently |
+| `MAX_AGENTS` | translate pool + heal pool | backwards-compatible total telemetry; `--max-agents=N` remains a combined hard override allocated across active pools |
+| `PER_CARD_HEAL_BUDGET` | on; `⌈groups × 1.5⌉ + 3` | H442 per-card heal-call ceiling (`--no-per-card-heal-budget`, `--per-card-heal-factor=N`, `--per-card-heal-headroom=N`); pure derivation lives in `src/pilot/agent_budget.py` |
 | retries | 1 per card/stage | plus the runtime's internal StructuredOutput retry cap (~5) |
 | TM | `--tm=auto` default | card + fragment translation memory; **requeue denylists TM** — [requeue_from_audit.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/requeue_from_audit.py) auto-appends `--no-tm` on anything but `--transient` (fixed 04-07-2026) |
 | concurrency | ≤3 root harnesses | Slice-D 18-wide collapse (117 transient nulls) is the standing counter-example |
