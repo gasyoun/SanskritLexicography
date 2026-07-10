@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 04-07-2026_
+_Created: 04-07-2026 · Last updated: 11-07-2026_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -10,9 +10,12 @@ answers *"don't rebuild — consume this"*, this file answers *"what exists at a
 inventory a newcomer (or a fresh session) reads to see the shape of the whole. Every asset
 carries a **real example** and its **first-introduced month/year**.
 
-- **Interactive view:** a filterable single-file HTML artifact renders this same catalogue
-  (search + category tabs + status/severity/language filters + clickable tags + a changelog).
-  Local/shared artifact only — not committed here.
+- **Interactive view:** planned — a filterable single-file HTML artifact (search + category
+  tabs + status/severity/language filters + clickable tags + a changelog) over this same
+  catalogue. **Not built yet** — no generator script or output file exists on disk as of
+  11-07-2026 (checked `SanskritLexicography/` and `Uprava/` for `*features*index*.html`
+  and a matching build script; none found). Until it exists, this Markdown table is the
+  only view — use Ctrl+F / your editor's table search, not a promised UI that isn't there.
 - **Code-level "who owns this":** [`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md).
 - **Data-flow "who feeds whom":** [`PROJECT_INTERLINKS.md`](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md).
 
