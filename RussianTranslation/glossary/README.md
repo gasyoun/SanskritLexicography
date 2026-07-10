@@ -29,8 +29,8 @@ kept (each entry records the split).
 `root_glossary` for **√gam** aggregates **678 surface forms** across **44 verb lemmas**
 (`gam, āgam, saṃāgam, abhigam, adhigam, upagam, anugam, …`), **7,116 occurrences**, ranked:
 
-> пришёл (195) · отправился (176) · ушёл (140) · пришли (100) · достигает (99) · явился (92)
-> · ступай (79) · пошёл (77) · отправились (77) · идёт (73) · удалился (73) · направился (64) …
+> пришел (195) · отправился (176) · ушел (140) · пришли (100) · достигает (99) · явился (92)
+> · ступай (79) · пошел (77) · отправились (77) · идет (73) · удалился (73) · направился (64) …
 
 The four `gamemahi` lines you started from are one surface entry inside this rollup.
 

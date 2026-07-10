@@ -62,8 +62,8 @@ From **Mitrenina** (verbatim table) + **Zaliznyak-Paducheva**:
 | чем | тем |
 | каков | таков *(archaic, copular only)* |
 
-Plus exemplars: classical *Убежал [тот] осёл, которого мы любили* (postposed →
-который) vs. Sanskrit-type *Который осёл убежал, того мы любили* (preposed →
+Plus exemplars: classical *Убежал [тот] осел, которого мы любили* (postposed →
+который) vs. Sanskrit-type *Который осел убежал, того мы любили* (preposed →
 correlative *кто…тот*, often with emphatic *и*).
 
 ### 1c. 19th-c. German → Russian term/spelling decoder
@@ -71,7 +71,7 @@ From **Delbrück** — the period German PWG is written in:
 
 | German (period) | Modern | Russian | Note |
 |---|---|---|---|
-| Theil / getheilt | Teil | часть / разделённый | th→t |
+| Theil / getheilt | Teil | часть / разделенный | th→t |
 | thun, That | tun, Tat | делать, деяние | th→t |
 | citirt, anführen | zitiert | цитируется, приводить | source ref |
 | Uebersetzung | Übersetzung | перевод | Ue→Ü |
@@ -139,7 +139,7 @@ Concrete, checkable defect classes for the judge stage (OK/BAD + severity):
 
 - **Agreement is a hard gate**, aspect is soft: лицо/число/род/время/наклонение must
   agree; aspect choice is stylistic (Peshkovsky).
-- **Accusative under a deverbal noun = error** — *шитьё шубы* (gen.), not *шубу*
+- **Accusative under a deverbal noun = error** — *шитье шубы* (gen.), not *шубу*
   (Peshkovsky).
 - **Perfective verb + `-ся` passive = construction error**; agent of a Russian passive
   is bare instrumental, not *от*+gen. (Testelets, Lomov).

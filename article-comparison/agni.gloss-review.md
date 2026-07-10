@@ -49,10 +49,10 @@ correct. Flag them upstream to the PD source if desired, but the RU needs nothin
 
 | Sense | English (PD), as printed | RU (already correct) |
 |:--|:--|:--|
-| 3iii | with **ghoe** as food etc | вкушающий гхи (топлёное масло) |
+| 3iii | with **ghoe** as food etc | вкушающий гхи (топленое масло) |
 | 6iv | **Semicarpu sanacardium** | Semecarpus anacardium |
 | 24 | **akind** of earthquake | разновидность землетрясения |
-| 25x | **de- ified** types of fires | обожествлённые виды огней |
+| 25x | **de- ified** types of fires | обожествленные виды огней |
 | 16ii / 19 | **Kuṇḍa- linī** / **Hiraṇya- garbha** (hyphen artifacts) | Кундалини / Хираньягарбха |
 | 2iv | dakṣiṇāgni **v** sacrificial fire… (stray "v") | дакшинагни; жертвенный огонь… |
 

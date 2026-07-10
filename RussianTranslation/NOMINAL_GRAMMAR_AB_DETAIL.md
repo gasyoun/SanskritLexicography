@@ -46,11 +46,11 @@ Per dimension (A/B/tie): correctness: A · completeness: A · register: tie · g
 - `[PW·1]` {#abadDa#}¦ <lex>Adj.</lex> <div n="1">— 1〉 {%не связанный, — непривязанный%} <ls>KULL. zu M. 8,342</ls>.
 - `[PW·2]` <div n="1">— 2〉 {%бессвязный, бессмысленный%}.
 - `[PW(addendum)·1·ungezügelt]` {#a/badDa#}¦ 1〉 также {%необузданный%}. {#manas#} <ls>TS. 3,1,1,2</ls>.<info n="sup_1"/>
-- `[PW(addendum)·3]` {#abadDa#}¦ 3〉 {%ещё не проявившийся, ещё отсутствующий%} <ls>RAGH. 18,47</ls>.<info n="sup_2"/>
+- `[PW(addendum)·3]` {#abadDa#}¦ 3〉 {%еще не проявившийся, еще отсутствующий%} <ls>RAGH. 18,47</ls>.<info n="sup_2"/>
 - `[PW(addendum)·I.1.2]` {#a/badDa#}¦ I. 1. 2.<info n="sup_7"/>
-- `[SCH·1·ungezügelt]` {%ábaddha%}¦ 1. также: необузданный. {%manas%} <ls>TS. 3,1,1,2.</ls> — 3. ещё не проявившийся, ещё отсутствующий, <ls>Ragh. 18,47.</ls> {part=,seq=3949,type=,n=4}
+- `[SCH·1·ungezügelt]` {%ábaddha%}¦ 1. также: необузданный. {%manas%} <ls>TS. 3,1,1,2.</ls> — 3. еще не проявившийся, еще отсутствующий, <ls>Ragh. 18,47.</ls> {part=,seq=3949,type=,n=4}
 - `[PWKVN·1·ungezügelt]` {#a/badDa#}¦ 1〉 также {%необузданный%}. {#manas#} <ls>TS. 3,1,1,2</ls>.
-- `[PWKVN·3]` {#abadDa#}¦ 3〉 {%ещё не проявившийся, ещё отсутствующий%} <ls>RAGH. 18,47</ls>.
+- `[PWKVN·3]` {#abadDa#}¦ 3〉 {%еще не проявившийся, еще отсутствующий%} <ls>RAGH. 18,47</ls>.
 - `[PWKVN·I.1.2]` {#a/badDa#}¦ I. 1. 2.
 - `[NWS·1]` {#abaddhamukha#} [Gen , unsp] Adj mfn сквернословящий, бранливый. Lex(MW) . MW : 59 (s.v. abaddha )
 
@@ -59,11 +59,11 @@ Per dimension (A/B/tie): correctness: A · completeness: A · register: tie · g
 - `[1]` {#abadDa#}¦ (3. {#a + badDa#}) <lex>adj.</lex> {%несвязный, нескладный, бессмысленный%} <ls>AK. 1,1,5,21.</ls> <ls>H. 267.</ls> {#bahvabadDapralApinaH#} <ls>N. 26,16.</ls>
 - `[PW-1]` {#abadDa#}¦ <lex>Adj.</lex> <div n="1">— 1〉 {%несвязанный, — непривязанный%} <ls>KULL. zu M. 8,342</ls>. <div n="1">— 2〉 {%нескладный, бессмысленный%}.
 - `[PW-Nachtrag-1]` {#a/badDa#}¦ 1〉 также {%необузданный%}. {#manas#} <ls>TS. 3,1,1,2</ls>.<info n="sup_1"/>
-- `[PW-Nachtrag-3]` {#abadDa#}¦ 3〉 {%ещё не проявившийся, ещё отсутствующий%} <ls>RAGH. 18,47</ls>.<info n="sup_2"/>
+- `[PW-Nachtrag-3]` {#abadDa#}¦ 3〉 {%еще не проявившийся, еще отсутствующий%} <ls>RAGH. 18,47</ls>.<info n="sup_2"/>
 - `[PW-ref]` {#a/badDa#}¦ I. 1. 2.<info n="sup_7"/>
-- `[SCH-1]` {%ábaddha%}¦ 1. также: необузданный. {%manas%} <ls>TS. 3,1,1,2.</ls> — 3. ещё не проявившийся, ещё отсутствующий, <ls>Ragh. 18,47.</ls> {part=,seq=3949,type=,n=4}
+- `[SCH-1]` {%ábaddha%}¦ 1. также: необузданный. {%manas%} <ls>TS. 3,1,1,2.</ls> — 3. еще не проявившийся, еще отсутствующий, <ls>Ragh. 18,47.</ls> {part=,seq=3949,type=,n=4}
 - `[PWKVN-1]` {#a/badDa#}¦ 1〉 также {%необузданный%}. {#manas#} <ls>TS. 3,1,1,2</ls>.
-- `[PWKVN-3]` {#abadDa#}¦ 3〉 {%ещё не проявившийся, ещё отсутствующий%} <ls>RAGH. 18,47</ls>.
+- `[PWKVN-3]` {#abadDa#}¦ 3〉 {%еще не проявившийся, еще отсутствующий%} <ls>RAGH. 18,47</ls>.
 - `[PWKVN-ref]` {#a/badDa#}¦ I. 1. 2.
 - `[NWS-1]` {#abaddhamukha#} [Gen , unsp] Adj mfn сквернословящий, непристойно говорящий. Lex(MW) . MW : 59 (s.v. abaddha )
 

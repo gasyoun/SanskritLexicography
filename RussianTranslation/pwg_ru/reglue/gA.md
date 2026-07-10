@@ -25,7 +25,7 @@
   — [NWS·nws_at_sense] идти, уходить; приходить в движение, приходить; достигать. ṚV 10,108,9 , ṚV 1,2,3 , ṚV 3,31,1
   — [PW·restate] — 3〉 преследовать, следовать за <ls>ṚV. 4,3,13. 10,18,4</ls>.
 
-**4)** <div n="1">— 4) дознаться, получить знание о чём-либо: {#yo hyAtmamAyAviBavaM sma paryagAdyaTA naBaH svAntamaTApare kutaH#}
+**4)** <div n="1">— 4) дознаться, получить знание о чем-либо: {#yo hyAtmamAyAviBavaM sma paryagAdyaTA naBaH svAntamaTApare kutaH#}
 <ls>BHĀG. P. 2,6,35.</ls> <ls>BURNOUF</ls> : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
   — [NWS·nws_at_sense] идти. AV(P) 9.10,10
   — [PW·restate] — 4〉 приходить к кому-л. (<ab>Dat.</ab>), так <ab>v. a.</ab> — появляться при <ls>ṚV. 8,45,32</ls>. доставаться кому-л. (<ab>Acc.</ab>) (об имени).
@@ -46,7 +46,7 @@
 
 **note)** <div n="v">— <ab>Vgl.</ab> {#i#} с {#aDi#} .
 
-**pra)** <div n="p">— {#pra#} {%выступать вперёд, уходить, идти, приходить в движение%}: {#f\zvA te\ pAdA\ pra yajjigA^si#}
+**pra)** <div n="p">— {#pra#} {%выступать вперед, уходить, идти, приходить в движение%}: {#f\zvA te\ pAdA\ pra yajjigA^si#}
 <ls>ṚV. 10,73,3.</ls> {#mA pra gA^ma pa\To va\yam#}
 <ls n="ṚV. 10,">57,1.</ls> {#sU\ryAyA^ vaha\tuH prAgA^t#}
 <ls n="ṚV. 10,">85,13.</ls> {#pra dIDi^tirjigAti#}
@@ -114,7 +114,7 @@
 
 **+)** [NWS·nws_at_sense → *new] {#+ pári : 1) herumwandeln; 2) etwas (Akk) umwandeln, umkreisen; 3) hindurchwandern zu (Lok); 4) vorübergehen; 5) vermeiden (Akk).#} + pári ā́: заниматься каким-л. делом (Akk).
 
-**+)** [NWS·nws_at_sense → *new] {#+ pra : vorschreiten. ṚV 1,85,6 .#} [Ved , unsp] – продвигаться вперёд, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
+**+)** [NWS·nws_at_sense → *new] {#+ pra : vorschreiten. ṚV 1,85,6 .#} [Ved , unsp] – продвигаться вперед, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
 
 **+)** [NWS·nws_at_sense → *new] {#+ prá : 1) vorschreiten; 2) schreiten zu (Akk); 3) vor sich gehen, vorschreiten (von Handlungen); 4) fortgehen von (Abl).#} [Ved , unsp] + prá áccha : направляться к (Akk). Ved , unsp
 
@@ -252,7 +252,7 @@
 
 **+)** [PW·restate → *new] — С {#ud#} — 1〉 восходить (о светилах).
 
-**+)** [PW·restate → *new] — 2〉 выдвигаться или получать подъём.
+**+)** [PW·restate → *new] — 2〉 выдвигаться или получать подъем.
 
 **+)** [PW·restate → *new] — С {#aByud#}: восходить над или впереди (<ab>Acc.</ab>).
 
@@ -288,7 +288,7 @@
 
 **+)** [PW·restate → *new] — С {#vipari#}: падать, опрокидываться.
 
-**+)** [PW·restate → *new] — С {#pra#} — 1〉 идти вперёд, продвигаться, приходить в движение, шагать к (<ab>Acc.</ab>).
+**+)** [PW·restate → *new] — С {#pra#} — 1〉 идти вперед, продвигаться, приходить в движение, шагать к (<ab>Acc.</ab>).
 
 **+)** [PW·restate → *new] — 2〉 уходить, убираться от (<ab>Abl.</ab>) <ls n="Chr.">17,10. fgg.</ls> (<ab>Conj.</ab>).
 
@@ -306,7 +306,7 @@
 
 **+)** [PW·restate → *new] — 2〉 идти к (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <hom>3.</hom> √{#gA#}¦ {#gA/yati, ˚te#} (редко), {#gAti#} и *{#jigAti#} <ls>DHĀTUP. 25,25</ls>. {%петь, говорить нараспев, воспевать кому-л.%} (<ab>Dat.</ab>), {%возвещать в стихах, воспевать%} (с <ab>Acc.</ab>), {%петь перед кем-л.%} (<ab>Acc.</ab>), {%исполнять нараспев%}. <ab>Pass.</ab> также {%называться, именоваться%}. {#gIta#} {%спетый, возвещённый в стихах, воспетый%}.
+**+)** [PW·restate → *new] <hom>3.</hom> √{#gA#}¦ {#gA/yati, ˚te#} (редко), {#gAti#} и *{#jigAti#} <ls>DHĀTUP. 25,25</ls>. {%петь, говорить нараспев, воспевать кому-л.%} (<ab>Dat.</ab>), {%возвещать в стихах, воспевать%} (с <ab>Acc.</ab>), {%петь перед кем-л.%} (<ab>Acc.</ab>), {%исполнять нараспев%}. <ab>Pass.</ab> также {%называться, именоваться%}. {#gIta#} {%спетый, возвещенный в стихах, воспетый%}.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#gApayati#} {%заставлять петь —, заставлять воспевать%}.
 
@@ -326,7 +326,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {%петь что-л. перед кем-л.%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%петь, воспевать; высказываться о чём-л.%} (<ab>Acc.</ab>) (о древних мудрецах).
+**+)** [PW·restate → *new] <div n="1">— 3〉 {%петь, воспевать; высказываться о чем-л.%} (<ab>Acc.</ab>) (о древних мудрецах).
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {%заставлять петь вслед%} <ls>GOBH. 3,2,31. 34. 36</ls>.
 
@@ -384,7 +384,7 @@
 
 **+)** [PW·restate → *new] <div n="1">— 1〉 {%начинать петь, — начинать воспевать, воспевать%}. {#pragIta#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%произнесённый нараспев, спетый%}.
+**+)** [PW·restate → *new] <div n="2">— a〉 {%произнесенный нараспев, спетый%}.
 
 **+)** [PW·restate → *new] <div n="2">— b〉 {%наполненный пением%} <ls>LA. 60,6</ls>.
 
@@ -394,7 +394,7 @@
 
 **+)** [PW·restate → *new] <div n="p">— С {#aBipra#} {%начинать воспевать кого-л.%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#vipra#}, {#˚gIta#} {%о чём мнения расходятся%} <ls>Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)</ls>.
+**+)** [PW·restate → *new] <div n="p">— С {#vipra#}, {#˚gIta#} {%о чем мнения расходятся%} <ls>Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)</ls>.
 
 **+)** [PW·restate → *new] <div n="p">— С {#saMpra#} {%начинать петь, петь, произносить нараспев%}.
 
@@ -491,7 +491,7 @@
 
 **3))** <div n="1">— 3) петь: {#raTaMtaraM sAmagAScopagAnti#}
 <ls>MBH. 12,10299.</ls> {#jihvAsatI — na yopagAyatyurugAyagATAH#}
-<ls>BHĀG. P. 2,3,20.</ls> {#tasyedamupagAyanti#} о нём поют следующее
+<ls>BHĀG. P. 2,3,20.</ls> {#tasyedamupagAyanti#} о нем поют следующее
 <ls n="BHĀG. P.">5,14,41.</ls>
 
 **A 1))** <div n="p">— {#A#}
@@ -504,7 +504,7 @@
 
 **A tail)** <div n="v">— <ab>Vgl.</ab> {#AgAtar, AgAna#} .
 
-**PPP 1): gesungen)** <div n="1"> 1) <lex>adj.</lex> {%пропетый, возвещённый в стихах, воспетый%}
+**PPP 1): gesungen)** <div n="1"> 1) <lex>adj.</lex> {%пропетый, возвещенный в стихах, воспетый%}
 <ls>TRIK. 3,3,155.</ls>
 <ls>H. an. 2,166.</ls>
 <ls>MED. t. 16.</ls> {#sADu gItam#} {%красиво спетый%}
@@ -516,7 +516,7 @@
 <ls>ŚĀK. 47.</ls>
 
 **PPP 2a): Lehre)** <div n="1">— 2) <lex>f.</lex> {#A#}
-<div n="2"> a) (<ab>sc.</ab> {#upanizad#}) {%учение, возвещённое вдохновлённым мудрецом в стихах%}, <ab>s.</ab> {#agastya˚, Bagavad˚, rAma˚, Siva˚#}.
+<div n="2"> a) (<ab>sc.</ab> {#upanizad#}) {%учение, возвещенное вдохновленным мудрецом в стихах%}, <ab>s.</ab> {#agastya˚, Bagavad˚, rAma˚, Siva˚#}.
 Под {#gItA#} подразумевается {#BagavadgItA#}.
 
 **PPP 2b): Metrum)** <div n="2">— b) <ab>N.</ab> названия метра (4 раза ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
@@ -586,7 +586,7 @@
 <ls>VOP. 8,85.</ls> {#gItvA, ˚gAya#}
 <ls>P. 6,4,69.</ls>
 <ls>VOP. 26,212.</ls>; {#gIyate#}
-<ls>P. 6,4,66</ls>; {#gIta#}; редко <ab>med.</ab> {%петь, говорить нараспев%} (<ab>z. B.</ab> о речи существ, не наделённых даром слова, таких как земля, изображения богов <ab>u. s. w.</ab>); {%возвещать в стихах; воспевать%}: {#gA\ya\traM tvo^ gAyati#}
+<ls>P. 6,4,66</ls>; {#gIta#}; редко <ab>med.</ab> {%петь, говорить нараспев%} (<ab>z. B.</ab> о речи существ, не наделенных даром слова, таких как земля, изображения богов <ab>u. s. w.</ab>); {%возвещать в стихах; воспевать%}: {#gA\ya\traM tvo^ gAyati#}
 <ls>ṚV. 10,71,11.</ls> <ls n="ṚV.">1,10,1.</ls> <ls n="ṚV. 1,">21,2.</ls> <ls n="ṚV. 1,">38,14.</ls>
 <ls>CHĀND. UP. 1,11,7.</ls> {#indrA^ya gAyata#}
 <ls>ṚV. 1,4,10.</ls> {#pA\hi gAyAnDa^so\ mada\ indrA^ya#}
@@ -692,7 +692,7 @@
 
 ## h6
 
-**1)** 3. {#gA#}¦ <ab>vgl.</ab> ещё {#tamogA#} .
+**1)** 3. {#gA#}¦ <ab>vgl.</ab> еще {#tamogA#} .
 
 ## h5
 
@@ -748,7 +748,7 @@
 **prefix_ud.3)** <div n="1">— 3) {#yaToktamfziRA pUrvaM sarvaM tatropagAyatAm#}
 <ls>R. 7,94,1.</ls>
 
-**prefix_ud_sam_ppp)** <div n="p">— {#pra#}, {#pragIta#} произнесённый нараспев, воспетый: {#vEdikASca (mantrAH) dviviDAH pragItA apragItASca . tatra pragItAH sAmAni . apragItASca dviviDAH#} (а именно {#fcaH#} и {#yajUMzi)#}
+**prefix_ud_sam_ppp)** <div n="p">— {#pra#}, {#pragIta#} произнесенный нараспев, воспетый: {#vEdikASca (mantrAH) dviviDAH pragItA apragItASca . tatra pragItAH sAmAni . apragItASca dviviDAH#} (а именно {#fcaH#} и {#yajUMzi)#}
 <ls>SARVADARŚANAS. 169,17. fg.</ls> поя, нараспев
 <ls>KATHĀS. 121,130.</ls>
 
@@ -764,13 +764,13 @@
 <ls>Spr. 5231.</ls>
 
 **prefix_anu.1)** <div n="p">— {#aBi#}
-<div n="1"> 1) {#rAjA hfzwastamaByagAt#} шёл ему навстречу
+<div n="1"> 1) {#rAjA hfzwastamaByagAt#} шел ему навстречу
 <ls>KATHĀS. 51,176.</ls>
 
 **prefix_anu.2)** <div n="1">— 2) в конце, также <ls>ed. Bomb.</ls> {#aByagAt#} .
 
 **prefix_pari.4)** <div n="p">— {#pari#}
-<div n="1"> 4) читай «обходить» так <ab>v. a.</ab> не достичь цели, не уразуметь, не получить познания о чём-л. {#pariSabdo nizeDe#}
+<div n="1"> 4) читай «обходить» так <ab>v. a.</ab> не достичь цели, не уразуметь, не получить познания о чем-л. {#pariSabdo nizeDe#}
 <ab>Schol.</ab>
 
 **prefix_vi.umfallen)** <div n="p">— {#vipari#} падать, опрокидываться: {#kaTaM svayaM vE SakawaM viparyagAt#}

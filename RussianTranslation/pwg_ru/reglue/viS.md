@@ -4,7 +4,7 @@
 
 **1)** <div n="p">— {#upasam#} <div n="1"> 1) «ложиться рядом с» (<ab>acc.</ab>): {#mahizyaSvam#} <ls>KĀTY. ŚR. 20,6,14.</ls>
   — [PW·restate] <hom>1.</hom> √{#viS#}¦, {#viSa/ti#}, {#te#} (в более позднем языке большей частью в метрических текстах)
-  — [PW·restate] <div n="1">— 1〉 {%поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с%} (<ab>Loc.</ab> или <ab>Acc.</ab>); также с добавлением {#antar#} (<ls n="Chr.">299,26</ls>). {#agnim#} <ab>u. s. w.</ab> {%всходить на погребальный костёр%}. В <ab>Astr.</ab> {%вступать в соединение с%} (<ab>Acc.</ab>). Без дополнения {%входить в дом%} <ab>u. s. w.</ab>, {%выступать на сцене, появляться%}.
+  — [PW·restate] <div n="1">— 1〉 {%поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с%} (<ab>Loc.</ab> или <ab>Acc.</ab>); также с добавлением {#antar#} (<ls n="Chr.">299,26</ls>). {#agnim#} <ab>u. s. w.</ab> {%всходить на погребальный костер%}. В <ab>Astr.</ab> {%вступать в соединение с%} (<ab>Acc.</ab>). Без дополнения {%входить в дом%} <ab>u. s. w.</ab>, {%выступать на сцене, появляться%}.
   — [PW·restate] <div n="p">— С {#punar#} или {#BUyas#} {%возвращаться, идти обратно, — в%} (<ab>Acc.</ab>).
   — [PW·restate] <div n="1">— 1〉 живущий в <ab>Comp.</ab> (предшествующем).
   — [PWKVN·a2a] <hom>1.</hom> {#viS#} ¦ с {#pra#} <ab>Caus.</ab> VI. {#ahaM dArakaM praveSitA#} так <ab>v. a.</ab> {%я беременна мальчиком%} <ls>DIVYĀVAD. 541,28</ls>. — С {#manas#} {%направлять свои мысли на%} (<ab>Loc.</ab>) <ls>R. ed. Bomb. 3,68,38</ls>.
@@ -61,7 +61,7 @@
 <ls>R. 5,74,25.</ls> <ls n="R.">6,7,20.</ls>
 <ls>KATHĀS. 59,75.</ls>
 
-**2b)** <div n="2">— b) {%покоящийся в —, заключённый в —, содержащийся в%} {#aNguzWamAtraH puruzo 'ntarAtmA sadA janAnAM hfdaye saMnivizwaH#}
+**2b)** <div n="2">— b) {%покоящийся в —, заключенный в —, содержащийся в%} {#aNguzWamAtraH puruzo 'ntarAtmA sadA janAnAM hfdaye saMnivizwaH#}
 <ls>KAṬHOP. 6,17.</ls>
 <ls>ŚVETĀŚV. UP. 3,13. 4,17.</ls>
 <ls>BHAG. 15,15.</ls>
@@ -77,7 +77,7 @@
 <ls>HARIV. 891.</ls> {#saMnivizwodgama#} как описание {#utTAna#}
 <ls>AK. 3,4,18,120.</ls>
 
-**2d)** <div n="2">— d) {%воткнутый в —, прикреплённый к, прицепленный%}: {#˚karRika#}
+**2d)** <div n="2">— d) {%воткнутый в —, прикрепленный к, прицепленный%}: {#˚karRika#}
 <ls>SUŚR. 2,196,17. 297,4.</ls>
 
 **2e)** <div n="2">— e) {%находящийся на%}: {#satpaTe#}
@@ -115,12 +115,12 @@
 <ls>Spr. 2414.</ls>
 
 **3c)** <div n="2">— c) «пронизанный чем-либо, охваченный, занятый»: {#manoraTenABinivizwacetasaH#}
-<ls>BHĀG. P. 10,1,41.</ls> {#guruBirlokapAlAnuBAvEH#} «щедро наделённый»
+<ls>BHĀG. P. 10,1,41.</ls> {#guruBirlokapAlAnuBAvEH#} «щедро наделенный»
 <ls>RAGH. 2,75.</ls>
 
 **4)** <div n="1">— 4) «сожительствовать (половым образом)»: {#saMviSedArtave striyam#} <ls>M. 3,48.</ls> <ls>YĀJÑ. 1,79.</ls> <ls>MĀRK. P. 34,81.</ls>
   — [PW·restate] <div n="1">— 4〉 {%отправляться%} куда-либо ({#agratas#}, {#agre#} или <ab>Acc.</ab>).
-  — [PW·restate] <div n="1">— 4〉 нанесённый на (<ab>Loc.</ab>, о знаках).
+  — [PW·restate] <div n="1">— 4〉 нанесенный на (<ab>Loc.</ab>, о знаках).
 
 **4) hinuntersinken)** <div n="1">— 4) {%опускаться вниз%}: {#adrIRAM niviSatAM BArEH#}
 <ls>BHĀG. P. 8,11,34.</ls> приблизит. {%погружаться%}
@@ -162,7 +162,7 @@
 <ls n="ŚAT. BR. 1,1,">4,14.</ls> {#pravizwaH sarvaBUtAni yaTA carati mArutaH#}
 <ls>Spr. 1869.</ls> {#yaTA mahAnti BUtAni BUtezUccAvacezu . pravizwAnyapravizwAni#}
 <ls>BHĀG. P. 2,9,34.</ls> <ls n="BHĀG. P.">7,12,15.</ls> {#paScArDena pravizwaH BUyasA pUrvakAyam#}
-<ls>ŚĀK. 7.</ls> {#maDye tamaH pravizwam#} так <ab>v. a.</ab> {%тёмная часть находится посередине%}
+<ls>ŚĀK. 7.</ls> {#maDye tamaH pravizwam#} так <ab>v. a.</ab> {%темная часть находится посередине%}
 <ls>VARĀH. BṚH. S. 5,51.</ls> {#CAyAmivAdarSatalaM pravizwAm#}
 <ls>RAGH. 16,6.</ls> {#SezendriyavfttirAsAM sarvAtmanA cakzuriva pravizwA#}
 <ls n="RAGH.">7,12.</ls> {#lolaM manaH pravizwAm#}
@@ -171,8 +171,8 @@
 <ls>KATHĀS. 18,230.</ls> {#evaM maDyapravizwena mUrKaH prAjYena vaYcyate#} так <ab>v. a.</ab> {%тот, кто снискал его доверие%}
 <ls n="KATHĀS.">62,162.</ls> {#vAyu˚#} {%вошедший в%}
 <ls>KAUṢ. UP. 2,14.</ls> {#rAjye#} так <ab>v. a.</ab> {%вступивший во власть%}
-<ls>BHĀG. P. 9,18,2.</ls> {#vAsudevapravizwaDI#} так <ab>v. a.</ab> {%погружённый в%}
-<ls n="BHĀG. P.">3,33,29.</ls> {#pravizwAH smaH pArameSvaraM sidDAntam#} так <ab>v. a.</ab> {%введённый —, посвящённый в%}
+<ls>BHĀG. P. 9,18,2.</ls> {#vAsudevapravizwaDI#} так <ab>v. a.</ab> {%погруженный в%}
+<ls n="BHĀG. P.">3,33,29.</ls> {#pravizwAH smaH pArameSvaraM sidDAntam#} так <ab>v. a.</ab> {%введенный —, посвященный в%}
 <ls>PRAB. 57,14.</ls> {#karmodaye budDimatipravizwAm#}
 <ls>MBH. 3,12735.</ls> {#viduzAM mate#} так <ab>v. a.</ab> {%согласующийся с%}
 <ls n="MBH.">12,6677.</ls> Без дополнения {%вступивший%} (<ab>sc.</ab> в дом <ab>u. s. w.</ab>) о лицах
@@ -189,7 +189,7 @@
 <ls>RĀJA-TAR. 4,58.</ls>
 
 **5b-α)** <div n="2">— b) в <ab>pass.</ab> <ab>Bed.</ab>
-<div n="3"> α) {%в который вошли, посещённый%}: {#pravizwaM te mayA vaktram#}
+<div n="3"> α) {%в который вошли, посещенный%}: {#pravizwaM te mayA vaktram#}
 <ls>R. 5,56,28.</ls> {#apravizwavizayasya — antakasya#}
 <ls>RAGH. 11,18.</ls>
 
@@ -201,7 +201,7 @@
 
 **6)** <div n="1">— 6) «заниматься чем-л.» (<ab>acc.</ab>): {#dfzwaM SrutamasadbudDvA nAnuDyAyenna saMviSet (= upaBuYjIta#} <ab>Comm.</ab>) <ls>BHĀG. P. 9,19,20.</ls>
   — [PW·restate] <div n="1">— 6〉 {%приходить, притекать, являться%} к кому-либо (<ab>Acc.</ab>) (о мысли <ls n="Chr.">95,4</ls>), {%доставаться, постигать кого-либо%}.
-  — [PW·restate] <div n="1">— 6〉 распределённый, каждый раз иной <ls>Comm. zu LĀṬY. 9,4,34. 5,4</ls>.
+  — [PW·restate] <div n="1">— 6〉 распределенный, каждый раз иной <ls>Comm. zu LĀṬY. 9,4,34. 5,4</ls>.
 
 **6) gegründet werden)** <div n="1">— 6) {%основываться, быть основанным%}: {#dvAravatyAM niviSantyAm#}
 <ls>MBH. 13,3544.</ls> <ls n="MBH. 13,">3453</ls> ({#nirviSa˚#} <ls>ed. Calc.</ls> {#nivi˚#} <ls>ed. Bomb.</ls>).
@@ -261,7 +261,7 @@
 
 **10b) hineingegangen, eingedrungen; ruhend in, auf, steckend an, in; gerichtet auf)** <div n="2">— b) {%вошедший, проникший%}
 <ls>ĀŚV. GṚHY. 1,14,7.</ls>
-<ls>BHĀG. P. 5,11,14.</ls> {%покоящийся в, на; заключённый в, на%}: {#tasya^ me ta\nvo^ bahu\DA nivi^zwAH#}
+<ls>BHĀG. P. 5,11,14.</ls> {%покоящийся в, на; заключенный в, на%}: {#tasya^ me ta\nvo^ bahu\DA nivi^zwAH#}
 <ls>ṚV. 10,51,4.</ls>
 <ls>AV. 9,1,2.</ls> {#dakziRApANganivizwamuzwi#}
 <ls>KUMĀRAS. 3,70.</ls> {#mUla˚#}
@@ -338,7 +338,7 @@
 <ls>R. 5,37,5.</ls> {#suvarRareKeva kaze niveSitA#}
 <ls>MṚCCH. 48,12.</ls> {#caraRAntaniveSitAM rAgaleKAm#}
 <ls>MĀLAV. 46.</ls> {#SAsanaM pawwe sUkzmAkzaraniveSitam#}
-<ls>MĀRK. P. 36,8.</ls> {#nAma svahastena#} «собственноручно подписывать своё имя»
+<ls>MĀRK. P. 36,8.</ls> {#nAma svahastena#} «собственноручно подписывать свое имя»
 <ls>YĀJÑ. 2,86.</ls> {#citre#} т. е. <ab>v. a.</ab> «рисовать, изображать»
 <ls>ŚĀK. 42.</ls>
   — [PW·restate] <div n="1">— 10〉 {%заниматься, иметь дело с%} (<ab>Instr.</ab>).
@@ -362,7 +362,7 @@
 <ls>MBH. 1,6297.</ls>
   — [PW·restate] <div n="1">— 11〉 {#vizwa/#}
   — [PW·restate] <div n="2">— a〉 {%вошедший в —, содержащийся в%} (<ab>Acc.</ab> или <ab>Loc.</ab>).
-  — [PW·restate] <div n="2">— b〉 {%исполненный —, соединённый с%} (<ab>Instr.</ab>) <ls>TS. 4,4,5,1.</ls> <ls n="TS. 4,4,5,">2</ls>. <ls>NYĀYAS. 3,1,68</ls>. — Вместо непонятного {#te viSantaM mudA yuktAH#} <ls>MBH. 7,1551</ls> (<ls>ed. Vardh. 7,35,13</ls>) <ls>ed. Bomb. 7,36,13</ls> читает {#te viMSatipade (!) yattAH#}.
+  — [PW·restate] <div n="2">— b〉 {%исполненный —, соединенный с%} (<ab>Instr.</ab>) <ls>TS. 4,4,5,1.</ls> <ls n="TS. 4,4,5,">2</ls>. <ls>NYĀYAS. 3,1,68</ls>. — Вместо непонятного {#te viSantaM mudA yuktAH#} <ls>MBH. 7,1551</ls> (<ls>ed. Vardh. 7,35,13</ls>) <ls>ed. Bomb. 7,36,13</ls> читает {#te viMSatipade (!) yattAH#}.
 
 **12)** <div n="1">— 12) «вверять кому-либо что-либо, возлагать на кого-либо»: {#aDikAraM sacivezu#}
 <ls>RAGH. 19,4.</ls> {#DUrjagataH sacivezu niveSitA#}
@@ -399,7 +399,7 @@
 <ls>ŚĀṄKH. ŚR. 12,24,6.</ls> {#Urje^ pu\zwaM vasu^#}
 <ls>AV. 7,79,3.</ls> {#tasmi\nnA ve^SayA\ gira^H#}
 <ls>ṚV. 1,176,2.</ls>
-<ls>TS. 4,4,12,2.</ls> — {#dvAHsTenAveSitaH#} {%введённый%}
+<ls>TS. 4,4,12,2.</ls> — {#dvAHsTenAveSitaH#} {%введенный%}
 <ls>RĀJA-TAR. 8,2130.</ls> {#AdityaScandramA vAyuH#} <ab>u. s. w.</ab> {#sarve brAhmaRamAveSya sadAnnamupaBuYjate#} {%впускать в дом%} так <ab>v. a.</ab> {%угощать%}
 <ls>MBH. 13,2115. fg.</ls> {#yo 'nyasmin SarIre yogayuktitaH . antaHkaraRamAveSya#} (так следует читать <ab>st.</ab> {#AviSya#}) {#praviSedindriyARi ca#} (оба <ab>acc.</ab> зависят от {#AveSya#}) {%заставлять вселяться%}
 <ls>KATHĀS. 45,60.</ls> {#BruvormaDye prARamAveSya#}
@@ -459,7 +459,7 @@
 <ls n="MBH.">4,779.</ls> {#bfhadvakzastAM satrapAM praveSayanniva#}
 <ls>RĀJA-TAR. 4,435.</ls> {#arDaM (niDeH) koSe#}
 <ls>M. 8,38.</ls> {#praveSitaSca tEH sarpEH sa kfzRo BogabanDanam#}
-<ls>HARIV. 3664.</ls> {#rAmezuBirdIrGanidrAM praveSitaH#} {%переведённый в%}
+<ls>HARIV. 3664.</ls> {#rAmezuBirdIrGanidrAM praveSitaH#} {%переведенный в%}
 <ls>RAGH. 12,81.</ls> {#praveSaya mAM pArameSvarIM dIkzAm#} {%вводить —, посвящать в%}
 <ls>RAGH. 57,15.</ls> {#etasminguRaM ko hi praveSayet#} так <ab>v. a.</ab> {%прививать, внушать%}
 <ls>KATHĀS. 40,11.</ls> Без указания места {%вводить кого-либо%} (в дом
@@ -473,7 +473,7 @@
 <ls>MṚCCH. 48,14.</ls> {#praveSaya tO#}
 <ls>ŚĀK. 27,14.</ls> <ls n="ŚĀK.">29,14.</ls> <ls n="ŚĀK.">61,12.</ls>
 <ls>MĀLAV. 10,20.</ls> <ls n="MĀLAV.">65,16.</ls> <ls n="MĀLAV. 65,">18.</ls>
-<ls>DHŪRTAS. 89,7.</ls> {#praveSita#} {%введённый в своё достоинство —, в свою должность%}
+<ls>DHŪRTAS. 89,7.</ls> {#praveSita#} {%введенный в свое достоинство —, в свою должность%}
 <ls>BHĀG. P. 5,24,18.</ls>
 
 **caus-2)** <div n="1">— 2) {%вводить в свой дом%} так <ab>v. a.</ab> {%жениться%} (о мужчине)
@@ -537,7 +537,7 @@
 <ls n="MBH.">13,3401.</ls> {#satye#}
 <ls>HARIV. 9635.</ls> {#mantrahite#}
 <ls>R. 1,7,18.</ls> {#guRe#}
-<ls n="R. 1,">20,24</ls> ({#guREH#} «снабжённый»
+<ls n="R. 1,">20,24</ls> ({#guREH#} «снабженный»
 GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 <ls>HARIV. 5171</ls> более новое <ab>Ausg.</ab> читает {#vicitraM#} . <ab>Vgl.</ab> {#aniviSamAna, nivizwi, niveSa, niveSana, niveSin, nivezwavya#} . — <ab>caus.</ab>
 
@@ -566,7 +566,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 <div n="1"> 1) {%общаться, поддерживать общение с%}: {#yAdfSEH saMniviSate#}
 <ls>Spr. 4874</ls>, <ab>v. l.</ab>
 
-**sich gegen Jmd setzen … nicht von seiner Seite weichen … Jmd entgegentreten, Opposition machen)** <div n="p">— {#pratyupa#} {%садиться напротив кого-л.%} (<ab>acc.</ab>) {%и не отходить от него, принуждая его к уступчивости%} (так <ab>v. a.</ab>); {%тот, кто хочет вырвать у другого что-л., и тот, кто даёт к тому повод%}, {#pratyupavizwo yaSca pratyupaveSayate tAvantaM kAlam#}; <ls>ĀPAST. 1,19,1.</ls> <ab>caus.</ab> ({#˚veSya#}) также <ls>R. 5,80,7</ls> в знач. <ab>Bed.</ab> {%выступать против кого-л.%} (<ab>acc.</ab>), {%оппозиционировать.%}
+**sich gegen Jmd setzen … nicht von seiner Seite weichen … Jmd entgegentreten, Opposition machen)** <div n="p">— {#pratyupa#} {%садиться напротив кого-л.%} (<ab>acc.</ab>) {%и не отходить от него, принуждая его к уступчивости%} (так <ab>v. a.</ab>); {%тот, кто хочет вырвать у другого что-л., и тот, кто дает к тому повод%}, {#pratyupavizwo yaSca pratyupaveSayate tAvantaM kAlam#}; <ls>ĀPAST. 1,19,1.</ls> <ab>caus.</ab> ({#˚veSya#}) также <ls>R. 5,80,7</ls> в знач. <ab>Bed.</ab> {%выступать против кого-л.%} (<ab>acc.</ab>), {%оппозиционировать.%}
 <ls>MBH. 2,1156.</ls> <ls n="MBH.">10,589.</ls> {#AryaM pratyupavekzyAmi yAvanme na prasIdati#}
 <ls>R. 2,111,13</ls> (<ls n="GORR. 2,">120,13</ls> <ls>GORR.</ls>). {#kiM mAM kurvARaM pratyupavekzyase#}
 <ls n="R. 2,111,">16</ls> ({#˚vekzyasi#}
@@ -645,7 +645,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {%сажать на%} (<ab>Loc.</ab>)
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Desid.</ab> {#vivikzati#} {%намереваться войти —, вступить в%} (<ab>Acc.</ab>). {#agnim#} <ab>u. s. w.</ab> {%намереваться взойти на погребальный костёр%}.
+**+)** [PW·restate → *new] <div n="m">— <ab>Desid.</ab> {#vivikzati#} {%намереваться войти —, вступить в%} (<ab>Acc.</ab>). {#agnim#} <ab>u. s. w.</ab> {%намереваться взойти на погребальный костер%}.
 
 **+)** [PW·restate → *new] <div n="p">— С {#aDi#} <ab>Caus.</ab> {%намереваться сесть на%} (<ab>Acc.</ab>).
 
@@ -687,15 +687,15 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="3">— γ〉 {%прочно сидящий,%} так <ab>v. a.</ab> {%постоянный%}.
 
-**+)** [PW·restate → *new] <div n="3">— δ〉 *{%всецело погружённый во что-либо, всецело преданный делу%}.
+**+)** [PW·restate → *new] <div n="3">— δ〉 *{%всецело погруженный во что-либо, всецело преданный делу%}.
 
 **+)** [PW·restate → *new] <div n="2">— b〉 с <ab>pass.</ab> <ab>Bed.</ab>
 
-**+)** [PW·restate → *new] <div n="3">— α〉 {%населённый —, исполненный%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="3">— α〉 {%населенный —, исполненный%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
 
-**+)** [PW·restate → *new] <div n="3">— β〉 {%поражённый%} (стрелой, <ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="3">— β〉 {%пораженный%} (стрелой, <ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
 
-**+)** [PW·restate → *new] <div n="3">— γ〉 {%охваченный —, одержимый —, поражённый —, побеждённый —, находящийся во власти%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>), {%поражённый%}. {#rogAvizwa#} <ls>ĀPAST. 2,26,16</ls>. Без дополнения {%одержимый злым духом%}. — {#AviSya#} <ls>KATHĀS. 45,6</ls> ошибочно вместо {#AveSya#}.
+**+)** [PW·restate → *new] <div n="3">— γ〉 {%охваченный —, одержимый —, пораженный —, побежденный —, находящийся во власти%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>), {%пораженный%}. {#rogAvizwa#} <ls>ĀPAST. 2,26,16</ls>. Без дополнения {%одержимый злым духом%}. — {#AviSya#} <ls>KATHĀS. 45,6</ls> ошибочно вместо {#AveSya#}.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
 
@@ -755,9 +755,9 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 7〉 {#samAvizwa#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%охваченный —, побеждённый —, исполненный%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="2">— a〉 {%охваченный —, побежденный —, исполненный%} (<ab>Instr.</ab> или с предшествующим <ab>Comp.</ab>).
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {%снабжённый%} (с предшествующим <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="2">— b〉 {%снабженный%} (с предшествующим <ab>Comp.</ab>).
 
 **+)** [PW·restate → *new] <div n="2">— c〉 {%наставленный в%} (<ab>Instr.</ab>) {%кем-либо%} (<ab>Instr.</ab>).
 
@@ -797,7 +797,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="2">— a〉 {%севший, сидящий%}. Как {#upavizwavAn#}, также в качестве глагола <ab>fin.</ab>
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {#prAyam#}, {#prAya˚#} или {#anaSana˚#} {%обрёкший себя на смерть голодом, спокойно ожидая таким образом [Page6-121-a] смерти%}. Простое {#upavizwa#} в том же <ab>Bed.</ab> — {#upaviSya#} <ls>HARIV. 4568</ls> ошибочно вместо {#upaveSya#}.
+**+)** [PW·restate → *new] <div n="2">— b〉 {#prAyam#}, {#prAya˚#} или {#anaSana˚#} {%обрекший себя на смерть голодом, спокойно ожидая таким образом [Page6-121-a] смерти%}. Простое {#upavizwa#} в том же <ab>Bed.</ab> — {#upaviSya#} <ls>HARIV. 4568</ls> ошибочно вместо {#upaveSya#}.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
 
@@ -899,7 +899,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="2">— m〉 {%начатый%}.
 
-**+)** [PW·restate → *new] <div n="2">— n〉 {%снабжённый%} (<ab>Instr.</ab>).
+**+)** [PW·restate → *new] <div n="2">— n〉 {%снабженный%} (<ab>Instr.</ab>).
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
 
@@ -953,7 +953,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {%погружаться в, всецело предаваться;%} с <ab>Acc.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%упорно стоять на своём%} <ls>MBH. 5,77,17</ls>.
+**+)** [PW·restate → *new] <div n="1">— 3〉 {%упорно стоять на своем%} <ls>MBH. 5,77,17</ls>.
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 {%причитаться кому-л.%} (<ab>Loc.</ab>) (противоположность {%недоставать%}) <ls n="Chr.">224,23</ls>.
 
@@ -969,13 +969,13 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="3">— γ〉 {%проникнутый —, охваченный%} (<ab>Instr.</ab>).
 
-**+)** [PW·restate → *new] <div n="3">— δ〉 {%обильно снабжённый%} (<ab>Instr.</ab>).
+**+)** [PW·restate → *new] <div n="3">— δ〉 {%обильно снабженный%} (<ab>Instr.</ab>).
 
 **+)** [PW·restate → *new] <div n="2">— b〉 с <ab>act.</ab> <ab>Bed.</ab>
 
 **+)** [PW·restate → *new] <div n="3">— α〉 {%укрепившийся, обосновавшийся в каком-л. месте%}.
 
-**+)** [PW·restate → *new] <div n="3">— β〉 {%твёрдо устремлённый на одну точку, всецело занятый чем-л., имеющий перед глазами только одно, всецело помешанный на%} (<ab>Loc.</ab>, <ab>Acc.</ab> с {#prati#}, <ab>adv. Comp.</ab> с {#aDi#} или предшествующий <ab>Comp.</ab>). Без дополнения <ls>ŚIŚ. 16,43</ls>.
+**+)** [PW·restate → *new] <div n="3">— β〉 {%твердо устремленный на одну точку, всецело занятый чем-л., имеющий перед глазами только одно, всецело помешанный на%} (<ab>Loc.</ab>, <ab>Acc.</ab> с {#prati#}, <ab>adv. Comp.</ab> с {#aDi#} или предшествующий <ab>Comp.</ab>). Без дополнения <ls>ŚIŚ. 16,43</ls>.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
 
@@ -985,7 +985,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 3〉 {#manas#}, {#AtmAnam#} {%всецело устремлять дух —, мысли на%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%добиваться того, чтобы кто-л. обратил к чему-л. всё своё сердце, направлять всё чьё-л. желание на%} (<ab>Loc.</ab>).
+**+)** [PW·restate → *new] <div n="1">— 4〉 {%добиваться того, чтобы кто-л. обратил к чему-л. всё свое сердце, направлять всё чье-л. желание на%} (<ab>Loc.</ab>).
 
 **+)** [PW·restate → *new] <div n="p">— С {#upani#}, {#˚vizwa#}
 
@@ -1005,7 +1005,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="p">— С *{#praRi#}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pratini#}, {#˚vizwa#} {%всецело занятый чем-л., помышляющий только о%} (<ab>Loc.</ab>). Без дополнения {%упорствующий на своём, упрямый%}.
+**+)** [PW·restate → *new] <div n="p">— С {#pratini#}, {#˚vizwa#} {%всецело занятый чем-л., помышляющий только о%} (<ab>Loc.</ab>). Без дополнения {%упорствующий на своем, упрямый%}.
 
 **+)** [PW·restate → *new] <div n="p">— С {#vini#}, {#˚vizwa#}
 
@@ -1041,7 +1041,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="2">— a〉 расположившийся лагерем, сделавший привал.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 покоящийся, [Page6-122-a] находящийся, застрявший (<ls>PRASANNAR. 54,12</ls>), прикреплённый, привешенный, заключённый —, находящийся в (<ab>Loc.</ab> или в предшествующем <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="2">— b〉 покоящийся, [Page6-122-a] находящийся, застрявший (<ls>PRASANNAR. 54,12</ls>), прикрепленный, привешенный, заключенный —, находящийся в (<ab>Loc.</ab> или в предшествующем <ab>Comp.</ab>).
 
 **+)** [PW·restate → *new] <div n="2">— c〉 сидящий.
 
@@ -1073,7 +1073,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 11〉 направлять дух на (<ab>Loc.</ab>)
 
-**+)** [PW·restate → *new] <div n="p">— С {#aBisaMni#}, {#aBisaMnivizwa#} соединённый —, слитый с кем-л.
+**+)** [PW·restate → *new] <div n="p">— С {#aBisaMni#}, {#aBisaMnivizwa#} соединенный —, слитый с кем-л.
 
 **+)** [PW·restate → *new] <div n="p">— С {#nis#}
 
@@ -1093,7 +1093,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="2">— c〉 уплаченный, погашенный.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 испытанный, вкушённый.
+**+)** [PW·restate → *new] <div n="2">— d〉 испытанный, вкушенный.
 
 **+)** [PW·restate → *new] <div n="2">— e〉 добытый, заработанный <ls>GAUT.</ls> — {#nirviSantyAM#} <ls>MBH. 13,345</ls> ошибочно вместо {#nivi˚#}.
 
@@ -1105,7 +1105,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="p">— С {#pra#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 входить, вступать, проникать, прятаться, направляться к —, в или под, попадать в; дополнение в <ab>Acc.</ab> или <ab>Loc.</ab> {#agnim, agnO#}, {#maDyamagneH#}, {#citAyAm#} так <ab>v. a.</ab> восходить на костёр; {#karRayos#} доходить до слуха; {#Atmani#}, {#cittam#} <ab>u. s. w.</ab> проникать в сердце <ab>u. s. w.</ab>, овладевать им; без дополнения — входить (в дом <ab>u. s. w.</ab>); в драме устойчивое выражение для «выходить на сцену».
+**+)** [PW·restate → *new] <div n="1">— 1〉 входить, вступать, проникать, прятаться, направляться к —, в или под, попадать в; дополнение в <ab>Acc.</ab> или <ab>Loc.</ab> {#agnim, agnO#}, {#maDyamagneH#}, {#citAyAm#} так <ab>v. a.</ab> восходить на костер; {#karRayos#} доходить до слуха; {#Atmani#}, {#cittam#} <ab>u. s. w.</ab> проникать в сердце <ab>u. s. w.</ab>, овладевать им; без дополнения — входить (в дом <ab>u. s. w.</ab>); в драме устойчивое выражение для «выходить на сцену».
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 доходить до, достигать; с <ab>Acc.</ab>
 
@@ -1113,7 +1113,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 приступать к чему-л., заниматься —, предаваться чему-л.; с <ab>Acc.</ab>, реже <ab>Loc.</ab> (<ls>Spr. 77</ls>). {#piRqIm#}, {#tarpaRam#} так <ab>v. a.</ab> принимать, вкушать <ls n="Chr.">229,12</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 входить в кого-л. (<ab>Acc.</ab>), так <ab>v. a.</ab> растворяться в нём, исчезать перед ним, совершенно меркнуть в его тени.
+**+)** [PW·restate → *new] <div n="1">— 5〉 входить в кого-л. (<ab>Acc.</ab>), так <ab>v. a.</ab> растворяться в нем, исчезать перед ним, совершенно меркнуть в его тени.
 
 **+)** [PW·restate → *new] <div n="1">— 6〉 {#pra/vizwa#}
 
@@ -1127,11 +1127,11 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="3">— δ〉 наступивший (о веке, эпохе).
 
-**+)** [PW·restate → *new] <div n="3">— ε〉 направленный на —, погружённый в (в предшествующем <ab>Comp.</ab>).
+**+)** [PW·restate → *new] <div n="3">— ε〉 направленный на —, погруженный в (в предшествующем <ab>Comp.</ab>).
 
-**+)** [PW·restate → *new] <div n="3">— ζ〉 проникший в ({#maDya˚#}), так <ab>v. a.</ab> завоевавший чьё-л. доверие.
+**+)** [PW·restate → *new] <div n="3">— ζ〉 проникший в ({#maDya˚#}), так <ab>v. a.</ab> завоевавший чье-л. доверие.
 
-**+)** [PW·restate → *new] <div n="3">— η〉 проникший в, так <ab>v. a.</ab> посвящённый в (<ab>Acc.</ab>).
+**+)** [PW·restate → *new] <div n="3">— η〉 проникший в, так <ab>v. a.</ab> посвященный в (<ab>Acc.</ab>).
 
 **+)** [PW·restate → *new] <div n="3">— ϑ〉 тот, кто приступил к чему-л., взялся за что-л., занят чем-л. (<ab>Loc.</ab>). {#rAjye#} так <ab>v. a.</ab> вступивший во власть.
 
@@ -1139,7 +1139,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="2">— b〉 с <ab>pass.</ab> <ab>Bed.</ab>
 
-**+)** [PW·restate → *new] <div n="3">— α〉 то, во что вошли —, вступили; проторённый, пройденный.
+**+)** [PW·restate → *new] <div n="3">— α〉 то, во что вошли —, вступили; проторенный, пройденный.
 
 **+)** [PW·restate → *new] <div n="3">— β〉 используемый, тот, посредством чего ведут дела.
 
@@ -1163,7 +1163,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 9〉 расходовать, тратить.
 
-**+)** [PW·restate → *new] <div n="1">— 10〉 входить, вступать; быть внесённым, введённым.
+**+)** [PW·restate → *new] <div n="1">— 10〉 входить, вступать; быть внесенным, введенным.
 
 **+)** [PW·restate → *new] <div n="m">— <ab>Desid.</ab> {#pravivikzati#} пытающийся войти —, проникнуть; собирающийся войти в (<ab>Acc.</ab>) <ls>CARAKA. 5,12</ls>. Часто с дополнением {#senAm#}.
 
@@ -1189,7 +1189,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="p">— С {#saMpra#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 входить —, вступать —, направляться в (<ab>Acc.</ab>). {#hfdayam#} (с {#iva#} <ls>ŚIŚ. 10,48</ls>) проникать в чьё-л. сердце, {#mAnasam#}, {#DyAnam#} погружаться в мысли.
+**+)** [PW·restate → *new] <div n="1">— 1〉 входить —, вступать —, направляться в (<ab>Acc.</ab>). {#hfdayam#} (с {#iva#} <ls>ŚIŚ. 10,48</ls>) проникать в чье-л. сердце, {#mAnasam#}, {#DyAnam#} погружаться в мысли.
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 иметь половую близость (о мужчине), с <ab>Acc.</ab>
 
@@ -1215,7 +1215,7 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вместо {#nivizwaM#}
 
 **+)** [PW·restate → *new] <div n="1">— 4〉 {%раствориться, слиться воедино с%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%располагаться, — ложиться, — отходить ко сну%} (<ls n="Chr.">27,19</ls>), {%с%} или {%к%} своей женой (<ab>Instr.</ab>, <ab>Instr.</ab> с {#saha#} или с <ab>Dat.</ab> [следует читать <ls>KAUṢ. UP. 2,10</ls> {#saMvekzyan#}]) — {%на%} или {%в%} (<ab>Loc.</ab> или {#˚upari#}), {%спать с%} (<ab>Instr.</ab>), {%возлежать на%} (<ab>Acc.</ab>). {#saMvizwa#} {%возлёгший%} (<ls>Chr. 39,26</ls>), {%отошедший ко сну, спящий%}.
+**+)** [PW·restate → *new] <div n="1">— 5〉 {%располагаться, — ложиться, — отходить ко сну%} (<ls n="Chr.">27,19</ls>), {%с%} или {%к%} своей женой (<ab>Instr.</ab>, <ab>Instr.</ab> с {#saha#} или с <ab>Dat.</ab> [следует читать <ls>KAUṢ. UP. 2,10</ls> {#saMvekzyan#}]) — {%на%} или {%в%} (<ab>Loc.</ab> или {#˚upari#}), {%спать с%} (<ab>Instr.</ab>), {%возлежать на%} (<ab>Acc.</ab>). {#saMvizwa#} {%возлегший%} (<ls>Chr. 39,26</ls>), {%отошедший ко сну, спящий%}.
 
 **+)** [PW·restate → *new] <div n="1">— 6〉 {%возлечь с (в половом смысле),%} с <ab>Acc.</ab> супруги.
 
