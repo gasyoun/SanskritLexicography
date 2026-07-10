@@ -392,4 +392,20 @@ explicitly requeueable, `heal_agents_spent == max_heal_agents`, and
 The medium50 lane remains paused until a load-representative probe passes and one healthy
 `h317_w1b` canary measures the existing `>=6/12`, no-trip, zero-connection-error stop condition.
 
+## Update — 10-07-2026: split-pool canary launch pack prepared; live probe still external
+
+Fresh worktree `SanskritLexicography-h317-split-canary` on branch
+`codex/h317-w1b-split-canary` was created from merged master `e971a69`. All 24 ignored input
+files match the old harness metadata; the current TM sidecars were copied and hash-verified.
+The stale shared-58 harness was not reused. Regeneration from merged code produced 12 keys /
+8 batches / 16 expected calls with independent ceilings of 34 translate + 125 heal (159 total),
+413,188 bytes below the Workflow cap. Node syntax, the full window/budget selftests, 41 parity
+entries and 13 launch-ledger entries are green.
+
+`probe_log.py prompt` emits a 6,491-byte skeleton-shaped prompt. This Codex environment exposes
+no Claude Workflow `agent()` tool, so it cannot measure the required Sonnet-5 latency or connection
+errors. No probe row was appended, no GO/NO-GO verdict was invented, and the one-launch canary
+allowance remains unused. Continue from `FIX_PLAN_H442_2026-07-10.md` P1 in a Workflow-capable
+session; do not run the old main-checkout harness.
+
 _Dr. Mārcis Gasūns_
