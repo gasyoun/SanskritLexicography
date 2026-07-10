@@ -63,14 +63,15 @@ samskrte.ru.
 
 [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary)
 — словарь, отсортированный по **последней** букве слова (для рифм, окончаний
-стиха, суффиксов). Что полезно студенту грамматики:
+стиха, суффиксов). ⚠️ Сами файлы данных в публичный клон **не входят** (они
+локальные/gitignored) — обзор папки в
+[README](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/README.md).
+Что там полезно студенту грамматики:
 
-- [249-types-of-pratyayas-MW.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/249-types-of-pratyayas-MW.txt)
-  — частотность суффиксов по MW (`-ta` — 12 489 раз и далее вниз до редких).
-- [nounend.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/nounend.txt)
-  и
-  [verbend-dev.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/verbend-dev.txt)
-  — парадигмы именных и глагольных окончаний с пометами падежа/числа.
+- `249-types-of-pratyayas-MW.txt` — частотность суффиксов по MW (`-ta` — 12 489
+  раз и далее вниз до редких).
+- `nounend.txt` и `verbend-dev.txt` — парадигмы именных и глагольных окончаний
+  с пометами падежа/числа.
 
 Это «суффикс-ориентированный» взгляд на грамматику, которого не даёт обычный
 словарь по первой букве. Сам большой словарь пока **не издан** — это черновики к

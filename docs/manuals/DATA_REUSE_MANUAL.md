@@ -111,14 +111,17 @@ imports the TMX once the release clears.
   [boesp1](https://github.com/sanskrit-lexicon-scans/boesp1); `Spr. N` citation
   resolution is **already shipped** in csl-orig, do not rebuild it. Only
   `translation_de` exists (no RU/EN).
-- **Reverse dictionary master list** —
-  [ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt),
-  266,819 lines, tab-separated `SOURCE_ABBREV<TAB>word`, reverse-sorted. Column
+- **Reverse dictionary master list** — the 266,819-line master word list
+  (`ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt`, tab-separated
+  `SOURCE_ABBREV<TAB>word`, reverse-sorted) is **local-only / gitignored in the
+  public repo** — not in a clone. What *is* committed and reusable: its column
   semantics + source-code→bibliography table in
-  [ReverseDictionary/SCHEMA.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md).
-  Three headword counts (250,026 / 255,882 / 266,820) exist as compilation
-  stages — the 266,820 file is canonical (see
-  [ReverseDictionary/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md)).
+  [ReverseDictionary/SCHEMA.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md),
+  the canonical-version declaration in
+  [ReverseDictionary/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md)
+  (three counts 250,026 / 255,882 / 266,820 exist as compilation stages; the
+  266,820 file is canonical), and the full-folder inventory in
+  [ReverseDictionary/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/README.md).
 - **Catalan-Pujol spine** —
   [HeadwordLists/Catalan-Pujol/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/Catalan-Pujol),
   an external Sanskrit–Catalan lemma list (61,266 lines, accented IAST **with

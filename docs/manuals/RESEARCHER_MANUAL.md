@@ -84,7 +84,7 @@ working notes/reviews live in
 
 | Object | What it lets you study | Where |
 |---|---|---|
-| Petersburg layer model | How a PWG entry is assembled from up to 5 dictionary layers; ~36% of the headword union has *no* PWG record (PW-only is 24%, not an edge case) | [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md), [pwg-layers.md](https://github.com/gasyoun/SanskritLexicography/blob/master/pwg-layers.md) |
+| Petersburg layer model | How a PWG entry is assembled from up to 5 dictionary layers; ~36% of the headword union has *no* PWG record (PW-only is 24%, not an edge case) | [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) |
 | Cross-dictionary article study | Full microstructural comparison of one headword (agni, anya, akṣara, ananta) across dictionaries — verbatim / IAST / per-sense / corpus-RU views | [article-comparison/](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison) |
 | Headword union | 323,425 headwords across 15 csl-orig dicts with per-dict provenance + gender; feminines folded | [HeadwordLists/union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) |
 | Reverse dictionary | ~266,820-headword reverse index merging ~30 sources (1822–2005) — word-formation, verse endings, suffix study; a genuine Indological *desideratum* | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) |
