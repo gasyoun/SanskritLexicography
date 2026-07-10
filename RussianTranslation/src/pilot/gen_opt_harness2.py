@@ -228,25 +228,18 @@ PER_CARD_HEAL_FACTOR = 1.5   # --per-card-heal-factor=N: heal calls a single car
                              #  before declaring H442 fixed. e.g. 2 groups -> 6, 5 -> 11, 7 (yuvan) -> 14.
 PER_CARD_HEAL_HEADROOM = 3   # additive floor so a 1-2 group card whose group needs a bisection
                              #  (3 attempts + 2 halves) isn't capped below a legitimate heal.
-# --- kill-timeout bisection depth cap (H442, 2026-07-10) ---------------------------
+# --- kill-timeout no-bisect guard (H442, 2026-07-10) ------------------------------
 # healGroup bisects a group that fails, identically whether the failure was a MALFORMED
 # response (soft — a bigger group is genuinely harder, halves may parse) or a KILL-TIMEOUT
 # (the call ran past its wall-clock budget). The H442 w1b re-measure isolated that bisecting
 # on kill-timeout is often pure waste: when the CALLS are slow (transient infra), each
 # bisection just spawns SMALLER fragments that hit the same KILL_FLOOR (45s) and die again —
 # e.g. vicitra g1 -> g1/A,g1/B -> g1/A/A,g1/A/B,g1/B/A,g1/B/B, an 11-byte fragment killed at
-# 45s (58 of 61 w1b calls were kill-timeouts, 0 clean out of the 4 presplit cards). One split
-# CAN help a genuinely too-BIG group (the halves are meaningfully smaller and might fit the
-# budget), but a SECOND kill-timeout down the same branch means the calls are slow, not the
-# content big — halving further is futile and just burns the window budget. So kill-triggered
-# bisection is depth-capped: a killed group bisects at most KILL_BISECT_MAX_DEPTH level(s),
-# then a further kill routes its fragments straight to the (cheap) transient requeue instead
-# of splitting toward doomed tiny fragments. Soft-failure (malformed) bisection is UNCAPPED —
-# only kill-timeout-triggered recursion is bounded.
-KILL_BISECT_MAX_DEPTH = 1    # --kill-bisect-max-depth=N (0 = never bisect a kill-timeout; route
-                             #  it straight to requeue). 1 = allow ONE split of a killed group
-                             #  (rescues a genuinely-too-big group) but no deeper — a second
-                             #  kill-timeout on a half means slow calls, not big content.
+# 45s (58 of 61 w1b calls were kill-timeouts, 0 clean out of the 4 presplit cards). Therefore
+# the first kill-timeout on a heal group routes the unresolved fragments straight to the cheap
+# transient requeue instead of recursively spending more heal calls. Soft-failure (malformed)
+# bisection is still allowed — only kill-timeout-triggered recursion is blocked.
+KILL_TIMEOUT_NO_BISECT = True
 # --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
 # The emitted harness inlines every card that can reach agent() (TM-resolved and
 # degenerate-pass-through rows are self-contained), so its byte size scales with live
@@ -425,8 +418,6 @@ def parse_args(argv):
             globals()['PER_CARD_HEAL_FACTOR'] = float(a.split('=', 1)[1])
         elif a.startswith('--per-card-heal-headroom='):
             globals()['PER_CARD_HEAL_HEADROOM'] = int(a.split('=', 1)[1])
-        elif a.startswith('--kill-bisect-max-depth='):   # H442: cap kill-timeout bisection depth
-            globals()['KILL_BISECT_MAX_DEPTH'] = int(a.split('=', 1)[1])
         elif a == '--refuse-oversize':                    # H189: hard-error instead of warn when oversize
             globals()['REFUSE_OVERSIZE'] = True
         elif a.startswith('--max-harness-bytes='):
@@ -1219,9 +1210,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'per_card_heal_budget': (PER_CARD_HEAL_BUDGET and SELFHEAL),
         'per_card_heal_factor': PER_CARD_HEAL_FACTOR if (PER_CARD_HEAL_BUDGET and SELFHEAL) else None,
         'per_card_heal_headroom': PER_CARD_HEAL_HEADROOM if (PER_CARD_HEAL_BUDGET and SELFHEAL) else None,
-        # H442: kill-timeout-triggered bisection is depth-capped (soft/malformed bisection stays
-        # uncapped) so a slow-call cascade can't split toward doomed tiny fragments.
-        'kill_bisect_max_depth': KILL_BISECT_MAX_DEPTH if (KILL and SELFHEAL) else None,
+        # H442: kill-timeout-triggered bisection is blocked (soft/malformed bisection stays
+        # allowed) so a slow-call cascade can't split toward doomed tiny fragments.
+        'kill_timeout_no_bisect': bool(KILL_TIMEOUT_NO_BISECT and KILL and SELFHEAL),
         # H189 presplit-lane amortization budgets (fragments packed per agent() call).
         'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
         'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
@@ -1306,12 +1297,11 @@ const MAX_AGENTS = %(max_agents)s
 const PER_CARD_HEAL_BUDGET = %(per_card_heal_budget)s
 const PER_CARD_HEAL_FACTOR = %(per_card_heal_factor)s
 const PER_CARD_HEAL_HEADROOM = %(per_card_heal_headroom)s
-// H442: cap how deep a KILL-TIMEOUT may drive healGroup's bisection. A soft/malformed failure
-// still bisects uncapped (a bigger group is genuinely harder; halves may parse), but a killed
-// group splits at most KILL_BISECT_MAX_DEPTH level(s) — a second kill-timeout down the branch
-// means the calls are slow (infra), not the content big, so halving toward 11-byte fragments
-// that hit the same 45s floor is futile; route them straight to the cheap transient requeue.
-const KILL_BISECT_MAX_DEPTH = %(kill_bisect_max_depth)s
+// H442: a KILL-TIMEOUT must not drive healGroup's bisection. A soft/malformed failure
+// still bisects (a bigger group is genuinely harder; halves may parse), but a killed group
+// routes unresolved fragments straight to the cheap transient requeue instead of halving
+// toward tiny fragments that hit the same 45s floor.
+const KILL_TIMEOUT_NO_BISECT = %(kill_timeout_no_bisect)s
 // --tm: cards pre-resolved from the content-addressed translation memory (source-SHA hit).
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
@@ -1442,10 +1432,9 @@ const accept = (c, k) => {
 // back toward that safer granularity only when a group actually struggles, so the happy path
 // (group succeeds) keeps the full cost saving. Returns a {idx: card} map, or null if any
 // fragment never resolved even as a singleton.
-async function healGroup(k, idxs, grp, label, budget, killDepth) {
+async function healGroup(k, idxs, grp, label, budget) {
   const resolved = {}
   const fkey = fi => k + '_f' + fi
-  killDepth = killDepth || 0   // H442: how many kill-timeouts deep this bisection branch is
   // H442 per-card heal budget: `budget` is a shared mutable {spent,max} owned by the CARD
   // (selfHeal creates one and passes the same object into every group + every bisection
   // recursion). Once the card's own heal spend crosses budget.max, stop starting new calls
@@ -1484,8 +1473,8 @@ async function healGroup(k, idxs, grp, label, budget, killDepth) {
       if (!isKill(e)) throw e   // real hard failure — propagate (caught by selfHeal's per-group try)
       killedOut = true
       pending.forEach(fi => noteFail(fkey(fi), e.message))
-      log(label + ': ' + e.message + ' — abandoned (kill-timeout, depth ' + killDepth + ')')
-      break   // stop retrying this group; the kill-depth-capped bisection below decides next step
+      log(label + ': kill-timeout-no-bisect: ' + e.message + ' — abandoned, requeueing ' + pending.length + ' fragment(s)')
+      break   // stop retrying this group; kill-timeout fragments requeue instead of bisecting
     }
     if (res && Array.isArray(res.cards)) {
       const km = byKey1(res.cards)
@@ -1502,14 +1491,11 @@ async function healGroup(k, idxs, grp, label, budget, killDepth) {
     }
     pending = pending.filter(fi => !resolved[fi])
   }
-  // H442 kill-bisect depth cap: a group that ended on a kill-timeout may bisect at most
-  // KILL_BISECT_MAX_DEPTH level(s) — a deeper kill means the CALLS are slow (infra), not the
-  // content big, so halving toward tiny fragments that hit the same 45s floor is futile; leave
-  // them as `missing` for the cheap transient requeue. A soft/malformed exit (killedOut=false)
-  // still bisects uncapped — a bigger group is genuinely harder and its halves may parse.
-  const killBisectBlocked = killedOut && killDepth >= KILL_BISECT_MAX_DEPTH
+  // H442 kill-timeout no-bisect: a group that ended on a kill-timeout is treated as
+  // transiently slow, not too big. Leave unresolved fragments as `missing` for requeue.
+  const killBisectBlocked = killedOut && KILL_TIMEOUT_NO_BISECT
   if (killBisectBlocked && pending.length > 1) {
-    log(label + ': kill-timeout at depth ' + killDepth + ' >= max ' + KILL_BISECT_MAX_DEPTH + ' — not bisecting ' + pending.length + ' fragment(s), routing to transient requeue')
+    log(label + ': kill-timeout-no-bisect: not bisecting ' + pending.length + ' fragment(s), routing to transient requeue')
   }
   if (pending.length > 1 && !budgetExhausted() && !killBisectBlocked) {
     const mid = Math.ceil(pending.length / 2)
@@ -1519,11 +1505,9 @@ async function healGroup(k, idxs, grp, label, budget, killDepth) {
     // levels (PR #38/#40), recurring inside the bisection itself.
     // H442: the same `budget` object flows into both halves, so the card's ceiling bounds the
     // TOTAL bisection cascade (both halves share one counter), not each half independently.
-    // A kill-triggered split increments killDepth into both halves (soft splits keep it).
-    const nextKillDepth = killedOut ? killDepth + 1 : killDepth
     const [a, b] = await Promise.all([
-      healGroup(k, pending.slice(0, mid), grp, label + '/A', budget, nextKillDepth).catch(e => { pending.slice(0, mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
-      healGroup(k, pending.slice(mid), grp, label + '/B', budget, nextKillDepth).catch(e => { pending.slice(mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
+      healGroup(k, pending.slice(0, mid), grp, label + '/A', budget).catch(e => { pending.slice(0, mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
+      healGroup(k, pending.slice(mid), grp, label + '/B', budget).catch(e => { pending.slice(mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
     ])
     if (a) Object.assign(resolved, a.resolved)
     if (b) Object.assign(resolved, b.resolved)
@@ -1845,7 +1829,7 @@ return { meta: META, summary, results: out }
         'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(max_agents if KILL_SWITCH else None),
         'per_card_heal_budget': json.dumps(PER_CARD_HEAL_BUDGET and SELFHEAL),
         'per_card_heal_factor': json.dumps(PER_CARD_HEAL_FACTOR), 'per_card_heal_headroom': json.dumps(PER_CARD_HEAL_HEADROOM),
-        'kill_bisect_max_depth': json.dumps(KILL_BISECT_MAX_DEPTH),
+        'kill_timeout_no_bisect': json.dumps(bool(KILL_TIMEOUT_NO_BISECT and KILL and SELFHEAL)),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
