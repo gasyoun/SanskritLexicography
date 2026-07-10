@@ -191,6 +191,57 @@ def matrix_pilot_fixture():
                     f.write(old)
 
 
+@contextlib.contextmanager
+def no_pwg_dictionary_fixture():
+    """Provide a minimal isolated CDSL universe for no-PWG tests.
+
+    The real indexes live in an untracked sibling ``csl-orig`` checkout, which GitHub
+    runners do not have. Replace every local-data entry point used by these tests so
+    their result is identical with or without that sibling, then restore the process
+    caches and paths exactly as they were.
+    """
+    import corpus_gate as cg
+    import dict_merge as dm
+
+    def record(lid, key, body):
+        return ['<L>%s<pc>1<k1>%s<k2>%s<h>1<e>1' % (lid, key, key), body]
+
+    fixture_idx = {
+        'pwg': {
+            cg.form_key('agni'): [record('1', 'agni', '{#agni#}¦ {%Feuer%}.')],
+        },
+        'pw': {
+            cg.form_key('Bagavat'): [
+                record('2', 'Bagavat', '{#Bagavat#}¦ {%ehrwürdig, glückselig%}.'),
+            ],
+        },
+        'sch': {
+            cg.form_key('Akulita'): [
+                record('3', 'Akulita', '{#Akulita#}¦ {%nicht gekrümmt%}.'),
+            ],
+        },
+        'pwkvn': {},
+    }
+    old_idx = dm._IDX
+    old_ididx = dm._IDIDX
+    old_v02 = dm.V02
+    old_nws_dir = dm.NWS_DIR
+    with tempfile.TemporaryDirectory() as tmp:
+        try:
+            dm._IDX = fixture_idx
+            dm._IDIDX = {}
+            dm.V02 = os.path.join(tmp, 'v02')
+            dm.NWS_DIR = os.path.join(tmp, 'nws')
+            os.makedirs(dm.V02)
+            os.makedirs(dm.NWS_DIR)
+            yield
+        finally:
+            dm._IDX = old_idx
+            dm._IDIDX = old_ididx
+            dm.V02 = old_v02
+            dm.NWS_DIR = old_nws_dir
+
+
 def manifest_files(edition_dir):
     files = {}
     for dirpath, _dirs, names in os.walk(edition_dir):
@@ -395,33 +446,39 @@ def test_no_pwg_supplement_card_renders_without_pwg():
     import _pilot_gen_merged as pg
     import gen_opt_harness2 as gh
     import dict_merge as dm
-    pwg_idx = dm.index('pwg')
-    if pg.gen_no_pwg_card('agni', pwg_idx, verbose=False) is not None:
-        fail('gen_no_pwg_card must return None for a PWG-present key (agni)')
-    for key, want_layer in (('Bagavat', 'pw'), ('Akulita', 'sch')):
-        n = pg.gen_no_pwg_card(key, pwg_idx, verbose=False)
-        if not n:
-            fail('gen_no_pwg_card(%s) produced no sub-cards' % key)
-        sub = '%s~~h0_zz_%s' % (pg.safe_name(key), want_layer)
-        rp = os.path.join(pg.OUT, sub + '.raw.txt')
-        pp = os.path.join(pg.OUT, sub + '.portrait.json')
-        if not (os.path.exists(rp) and os.path.exists(pp)):
-            fail('expected no-PWG sub-card files for %s (%s)' % (key, sub))
-        raw = open(rp, encoding='utf-8').read()
-        port = open(pp, encoding='utf-8').read()
-        if '=== LAYER: PWG' in raw:
-            fail('%s no-PWG card must NOT contain a PWG layer' % key)
-        if '=== LAYER:' not in raw:
-            fail('%s no-PWG card missing a LAYER marker' % key)
-        p0 = json.loads(port)[0]
-        if p0.get('portrait_kind') != 'no_pwg_supplement_chain' or p0.get('key1') != key:
-            fail('%s portrait must be a no_pwg_supplement_chain sidecar keyed to the headword' % key)
-        if p0.get('senses') != []:
-            fail('%s no-PWG portrait must not fabricate a sense tree' % key)
-        if gh.card_source_profile(raw, port) != 'no_pwg_supplement_chain':
-            fail('%s sub-card must classify as no_pwg_supplement_chain' % key)
-        if dm.layer_of(sub) != want_layer:
-            fail('%s sub-card id must encode layer %s' % (key, want_layer))
+    old_out = pg.OUT
+    with no_pwg_dictionary_fixture(), tempfile.TemporaryDirectory() as tmp:
+        pg.OUT = tmp
+        try:
+            pwg_idx = dm.index('pwg')
+            if pg.gen_no_pwg_card('agni', pwg_idx, verbose=False) is not None:
+                fail('gen_no_pwg_card must return None for a PWG-present key (agni)')
+            for key, want_layer in (('Bagavat', 'pw'), ('Akulita', 'sch')):
+                n = pg.gen_no_pwg_card(key, pwg_idx, verbose=False)
+                if not n:
+                    fail('gen_no_pwg_card(%s) produced no sub-cards' % key)
+                sub = '%s~~h0_zz_%s' % (pg.safe_name(key), want_layer)
+                rp = os.path.join(pg.OUT, sub + '.raw.txt')
+                pp = os.path.join(pg.OUT, sub + '.portrait.json')
+                if not (os.path.exists(rp) and os.path.exists(pp)):
+                    fail('expected no-PWG sub-card files for %s (%s)' % (key, sub))
+                raw = open(rp, encoding='utf-8').read()
+                port = open(pp, encoding='utf-8').read()
+                if '=== LAYER: PWG' in raw:
+                    fail('%s no-PWG card must NOT contain a PWG layer' % key)
+                if '=== LAYER:' not in raw:
+                    fail('%s no-PWG card missing a LAYER marker' % key)
+                p0 = json.loads(port)[0]
+                if p0.get('portrait_kind') != 'no_pwg_supplement_chain' or p0.get('key1') != key:
+                    fail('%s portrait must be a no_pwg_supplement_chain sidecar keyed to the headword' % key)
+                if p0.get('senses') != []:
+                    fail('%s no-PWG portrait must not fabricate a sense tree' % key)
+                if gh.card_source_profile(raw, port) != 'no_pwg_supplement_chain':
+                    fail('%s sub-card must classify as no_pwg_supplement_chain' % key)
+                if dm.layer_of(sub) != want_layer:
+                    fail('%s sub-card id must encode layer %s' % (key, want_layer))
+        finally:
+            pg.OUT = old_out
 
 
 def test_no_pwg_worklist_runnable_lane():
@@ -429,7 +486,7 @@ def test_no_pwg_worklist_runnable_lane():
     NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
     PWG-rooted runnable count."""
     import nominals_worklist as nw
-    with tempfile.TemporaryDirectory() as tmp:
+    with no_pwg_dictionary_fixture(), tempfile.TemporaryDirectory() as tmp:
         path = os.path.join(tmp, 'sample.slp1.txt')
         manifest = os.path.join(tmp, 'scale_manifest.freq.json')
         store = os.path.join(tmp, 'store.jsonl')      # isolated empty store: the runnable/promoted
@@ -2364,15 +2421,15 @@ def test_generation_schema_carries_no_post_generation_field():
 
 
 def test_no_pwg_supplement_chain_cards_render():
-    """H214: PWG-missing lemmas with real PW/SCH/PWKVN/NWS records are runnable.
+    """H214: PWG-missing lemmas with PW/SCH/PWKVN/NWS records are runnable.
 
-    This uses real dictionary data but writes to a temp input directory, so it proves the
-    generator path without touching live pilot/input artifacts.
+    Synthetic indexes and a temp input directory prove the generator path without
+    requiring csl-orig or touching live pilot/input artifacts.
     """
     import _pilot_gen_merged as pg
     from safe_filename import safe_name
     old_out = pg.OUT
-    with tempfile.TemporaryDirectory() as tmp:
+    with no_pwg_dictionary_fixture(), tempfile.TemporaryDirectory() as tmp:
         pg.OUT = tmp
         try:
             bagavat_n = pg.gen_no_pwg_card('Bagavat', {}, verbose=False)
@@ -2408,7 +2465,7 @@ def test_no_pwg_supplement_chain_cards_render():
 
 def test_nominals_worklist_exposes_no_pwg_lane():
     import nominals_worklist as nw
-    with tempfile.TemporaryDirectory() as tmp:
+    with no_pwg_dictionary_fixture(), tempfile.TemporaryDirectory() as tmp:
         wordlist = os.path.join(tmp, 'sample.slp1.txt')
         manifest = os.path.join(tmp, 'scale_manifest.freq.json')
         store = os.path.join(tmp, 'store.jsonl')
