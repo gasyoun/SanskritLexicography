@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 10-07-2026_
+_Created: 08-07-2026 · Last updated: 11-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -123,6 +123,13 @@ Don't retry unless: you adjudicate the citation against **the vulgate itself**, 
 - **The 🔴 rows are 🔴 precisely because a naive re-attempt looks plausible and fails silently** — 38.6% precision that reads like success (§1), a class pass that writes 117 spurious rows before revert (§2), an NFD key that manufactures false matches with no error (§5), ids that drop tokens before anyone notices (§6). The expensive part is always the *silence*, not the failure.
 - **The standing escape hatch is a better witness or a better key, not more effort.** §1 wants a corpus inflected-form index (DCS); §2 wants a grammar/Zaliznyak cross-check; §5/§6 want a length-preserving `form_key` / a stable `LemmaId` — each dead end names the concrete different-signal condition that would reopen it.
 - **Where they point:** the abandoned keys are the mirror of [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (the paths that *do* reproduce), the violated premises live in [ASSUMPTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md), and §7's corpus-scale reversal is already a [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) row.
+
+### §8. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом
+🟠 ✍️ **Маршрут «OCR сканов комментариев через Gemini» (H370) для слоя комментаторского диалога — оставлен, не провален.**
+What was tried: план OCR-ингеста печатных изданий Тилаки/Бхушаны/Широмани для Фазы-2.
+Why abandoned: лицензированный цифровой источник (Gita Supersite, CC BY 4.0) закрыл потребность раньше и чище — H370 закрыт как superseded 08-07-2026, Opus 4.8 (`claude-opus-4-8`); диспозиция: [SUNDARA_OCR_PHASE2_SUPERSEDED.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/SUNDARA_OCR_PHASE2_SUPERSEDED.md).
+Lesson: перед OCR-проектом проверять существование лицензированного цифрового текста (частный случай /prior-art §4 «даже код/данные не мои»).
+> **Source:** ✍️ registered via /artifact-propagate epistemic pass 11-07-2026 (Fable 5 `claude-fable-5`).
 
 ---
 

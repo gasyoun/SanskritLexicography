@@ -1,6 +1,6 @@
 # ASSUMPTIONS — unverified premises the Sanskrit-data pipelines rely on
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 11-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS holds *measured, past-tense* facts. This file holds the act FINDINGS structurally cannot: **relying** on an unproven premise. An assumption is *depended-upon but unverified* — the moment its **Test** passes, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/ASSUMPTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/ASSUMPTIONS.md).
 
@@ -84,6 +84,13 @@ Test to confirm: re-verify every row against current `csl-orig` immediately befo
 - **The 🔴 blast-radius rows §1–§4 are the dangerous ones** — they sit under the frequency and translation pipelines, so a silent violation drops ~1/5 to ~1/3 of the data with no error.
 - **None has graduated yet** (all ⚠️ spot-checked, none ✅): each needs a *full* verification, not a sample, before it becomes a FINDINGS fact. §6 is the one that decays continuously — treat it as perishable.
 - **Where they point:** the assumptions feed forward into [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (how to check them), sideways into [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) and [DEAD_ENDS](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (what breaks when they fail), and their unmeasured residue into [GAPS](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md).
+
+### §7. «Рамаяна. Книга 5. Сундараканда 2026.html» — финальная редакция перевода
+🔴 ✍️ **Весь двухъярусный аппарат считает этот файл финальной редакцией перевода Леонова.**
+Relied on by: все 1058 якорей яруса-1, dedup 897 нот яруса-2, цель плотности ~37%, печатный мастер, kosha-манифест `sundarakanda-two-tier-apparatus` — при более свежей редакции якоря и dedup частично инвалидируются.
+Verified?: ❌ никогда — подтверждение запрошено у Леонова (задача 2 [issue №58](https://github.com/gasyoun/CommentaryStrategies/issues/58)), ждём с 10-07-2026.
+Test to confirm: одно письмо Леонова «да, финал» — или присланная новая редакция → diff по стихам → пере-якорение затронутых нот.
+> **Source:** ✍️ H497/H533, 10-07-2026; registered via /artifact-propagate epistemic pass 11-07-2026 (Fable 5 `claude-fable-5`).
 
 ---
 

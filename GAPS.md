@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 11-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -123,6 +123,13 @@ How to close: identify the preliminary caveat, finalise or document why it can't
 - **The 🟠 rows are the pipeline-unblockers.** §2 (error population), §3 (Heritage morphology), §6 (Cyrillic name keys), §10 (routing κ) each free a whole downstream — and Heritage as a third morphology witness (§3) is the single biggest unlock, gated only on a browser download + a licence @DECIDE.
 - **The ⚙️ auto-seeded §7–§11 are candidates, not confirmed gaps** — each is a manifest dataset with no FINDINGS row, awaiting a human confirm-or-delete. Several (§7, §8, §9) need only a statistics pass over data already in hand, not new acquisition.
 - **Where they point:** a measured gap graduates to a [FINDINGS](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) row; several here would also settle a live [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) row (§1→§1, §8→§2) or ride a method already sketched in [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md).
+
+### §12. Сундараканда: стихи песней 2 и 28 — пропуск оцифровки или воля переводчика?
+🔴 ✍️ **Мы НЕ знаем, почему в оцифрованном переводе Леонова песнь 2 содержит 55/58 стихов, а песнь 28 — 19/20.**
+Why it matters: блокирует полный печатный мастер тома ЛП ([BOOK_BUILD_REPORT.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/book/BOOK_BUILD_REPORT.md) флагует обе песни); от ответа зависит, чинить оцифровку или фиксировать лакуну в аппарате.
+Blocker: ответить может только М. Леонов — задача 1 его [issue №58](https://github.com/gasyoun/CommentaryStrategies/issues/58); руководство доставлено 10-07-2026, эскалация с 17-07-2026 (GTD @WAITING).
+How to close: письмо Леонова → либо влить присланные стихи (агентная сессия), либо пометить «сознательное решение» в аппарате — и строка градуирует в FINDINGS/BOOK_BUILD_REPORT.
+> **Source:** ✍️ H497 role-guide session, 10-07-2026 (Fable 5 `claude-fable-5`); registered via /artifact-propagate epistemic pass 11-07-2026.
 
 ---
 
