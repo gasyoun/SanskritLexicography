@@ -48,5 +48,7 @@ top-level `LICENSE`.
 > Böhtlingk–Roth), produced with corpus-attested sense harvesting.* Sanskrit
 > Lexicon / Cologne Digital Sanskrit Dictionaries. CC BY-SA 4.0.
 
-A machine-readable `CITATION.cff` is planned (see
-[METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md), rec 8).
+A machine-readable [CITATION.cff](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION.cff)
+sits beside this file and declares the same `CC-BY-SA-4.0` licence. It stays at
+`version: unreleased` until the immutable edition cut is archived and a DOI is
+registered against it — see [DOI_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DOI_PLAN.md).
