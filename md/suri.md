@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **1)** *suri* _adj._ s. *surai* .
 
-- **RU:** *suri* _adj._ см. s. *surai* .
+- **RU:** *suri* _adj._ см. *surai* .
   <sub>lexicographic</sub>
 
 **1 (PW))** **suri* _Adj._ _n._ zu *surai*.

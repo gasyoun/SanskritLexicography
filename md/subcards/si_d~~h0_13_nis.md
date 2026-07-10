@@ -10,7 +10,4 @@
 - **RU:** — *nis* прогонять, распугивать: *niṣkravyādaṃ sedha*
 [VS. 1,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,17)
 [ŚĀṄKH. ŚR. 16,18,20. fg.] Сюда же *puruniḥṣidh* отражающий многое, отгоняющий многих.
-- **EN:** — *nis* {to scare away}: *niṣkravyādaṃ sedha*
-[VS. 1,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,17)
-[ŚĀṄKH. ŚR. 16,18,20. fg.] Here belongs *puruniḥṣidh* {warding off much.}
   <sub>attested</sub>

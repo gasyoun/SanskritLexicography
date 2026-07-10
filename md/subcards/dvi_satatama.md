@@ -7,7 +7,7 @@
 [HARIV.] in der Unterschr. des Adhyāya.
 
 - **RU:** *dviśatatama* (как и предыдущее) _adj._ двухсотый
-[HARIV.] в Unterschr. Adhyāya.
+[HARIV.] в подпись Адхйайа.
   <sub>attested</sub>
 
 **PW)** *dviśatatama* _Adj._ der 200ste.

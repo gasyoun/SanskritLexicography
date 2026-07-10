@@ -18,15 +18,7 @@
 [MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330)
 [PAÑCAT. 47,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,18) *vātodgatareṇu*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
-[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942); vgl. *śālamiva pravṛddham*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703)
-- **EN:** — *ud*
- 1) to go up, to rise, to raise oneself, to shoot up; of heavenly bodies
-[VARĀH. BṚH. S. 7,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,19) [8,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,1) *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
-[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330)
-[PAÑCAT. 47,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,18) *vātodgatareṇu*
-[ṚT. 1,10], v. l. *śālapota ivodgataḥ*
-[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942); vgl. *śālamiva pravṛddham*
+[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942); ср. *śālamiva pravṛddham*
 [3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703)
   <sub>attested</sub>
 
@@ -52,28 +44,13 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [ṚT. 6,18.] *pakṣairudgataiḥ*
 [R. 4,63,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,2) *viśuṣkakaṇṭhodgataśīkarāmbhas*
 [ṚT. 1,15], v. l. *udgato romāñcaḥ*
-Sch. к [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
+схол. к [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [RAGH. 7,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,16)
 [VID. 94.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?94)
 [BHARTṚ. 2,29.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,29)
 [AMAR. 91.] *taddarśanodgatānprāṇān*
 [BHĀG. P. 4,22,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,3) *udgatānīva sattvāni babhūvuḥ*
 [R. 2,48,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,1) *udgata* вышедший изо рта, извергнутый рвотой
-[AK. 3,2,47.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,47)
-[H. 1495.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1495)
-- **EN:** — 2) to go out, to come forth, to break forth, to go forth: *udvayaṃ tamasaspari — sūryamaganma*
-[ṚV. 1,50,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.050.html#rv01.050.10) *acirodgatapallava*
-[VIKR. 107.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?107)
-[ṚT. 6,18.] *pakṣairudgataiḥ*
-[R. 4,63,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,2) *viśuṣkakaṇṭhodgataśīkarāmbhas*
-[ṚT. 1,15], v. l. *udgato romāñcaḥ*
-Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
-[RAGH. 7,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,16)
-[VID. 94.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?94)
-[BHARTṚ. 2,29.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,29)
-[AMAR. 91.] *taddarśanodgatānprāṇān*
-[BHĀG. P. 4,22,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,3) *udgatānīva sattvāni babhūvuḥ*
-[R. 2,48,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,1) *udgata* come forth from the mouth, vomited
 [AK. 3,2,47.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,47)
 [H. 1495.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1495)
   <sub>attested</sub>
@@ -83,12 +60,9 @@ Sch. to [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 
 - **RU:** — 3) распространяться, разноситься: *unnābha ityudgatanāmadheyaḥ*
 [RAGH. 18,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,19)
-- **EN:** — 3) to spread, to spread abroad: *unnābha ityudgatanāmadheyaḥ*
-[RAGH. 18,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,19)
   <sub>attested</sub>
 
-**note)** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata* .
+**4)** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata* .
 
-- **RU:** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata* .
-- **EN:** — Vgl. *udgata* fgg., *udgama* fg., *kulodgata*.
+- **RU:** — ср. *udgata* сл., *udgama* сл., *kulodgata* .
   <sub>attested</sub>

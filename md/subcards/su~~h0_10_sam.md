@@ -3,22 +3,13 @@
 `su~~h0_10_sam`
 
 
-**1)** — *sam* gleichzeitig (Soma) keltern: *yau dvau saṃsunutaḥ*
-[TBR. 1,4,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,1) *saṃsuta*
-[TS. 7,5,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,5,1)
-[KĀṬH. 34,4.]
-[PAÑCAV. BR. 9,4,1.]
-— Vgl. *saṃsava, saṃsutasoma* .
-- **EN:** — *sam* press simultaneously (Soma): *yau dvau saṃsunutaḥ* [TBR. 1,4,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,1) *saṃsuta* [TS. 7,5,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,5,1) [KĀṬH. 34,4.] [PAÑCAV. BR. 9,4,1.]
-— Vgl. *saṃsava, saṃsutasoma*.
-
 **sam+su (main sense))** — *sam* gleichzeitig (Soma) keltern: *yau dvau saṃsunutaḥ*
 [TBR. 1,4,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,1) *saṃsuta*
 [TS. 7,5,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,5,1)
 [KĀṬH. 34,4.]
 [PAÑCAV. BR. 9,4,1.]
 
-- **RU:** — *sam* одновременно (Soma) выжимать (сому): *yau dvau saṃsunutaḥ*
+- **RU:** — *sam* одновременно (Сома) выжимать (сому): *yau dvau saṃsunutaḥ*
 [TBR. 1,4,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,6,1) *saṃsuta*
 [TS. 7,5,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,5,1)
 [KĀṬH. 34,4.]
@@ -27,5 +18,5 @@
 
 **sam+su (addendum))** — Vgl. *saṃsava, saṃsutasoma* .
 
-- **RU:** — Vgl. *saṃsava, saṃsutasoma* .
+- **RU:** — ср. *saṃsava, saṃsutasoma* .
   <sub>attested</sub>

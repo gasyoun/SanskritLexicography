@@ -10,7 +10,7 @@
 
 **2)** — 2) med. sich gegenüber befinden: *sa etaṃ bhāgaṃ pratividāna (= jānan* Comm.) *āste yatprāśitram* sitzt gegenüber [ŚAT. BR. 1,7,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,18)
 
-- **RU:** — 2) med. находиться напротив, друг против друга: *sa etaṃ bhāgaṃ pratividāna (= jānan* Comm.) *āste yatprāśitram* сидит напротив [ŚAT. BR. 1,7,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,18)
+- **RU:** — 2) мед. находиться напротив, друг против друга: *sa etaṃ bhāgaṃ pratividāna (= jānan* коммент.) *āste yatprāśitram* сидит напротив [ŚAT. BR. 1,7,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,18)
   <sub>attested</sub>
 
 **3)** — 3) kennen lernen: *viśvāvasostu tanayādrītaṃ nṛtyaṃ ca sāma ca . vāditraṃ ca yathānyāyaṃ pratyavindadyathāvidhi ..* [MBH. 3,8420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8420) Etwas wissen von (acc.): *pāṇḍavānaprativindamānaḥ* [1,7169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7169)

@@ -19,7 +19,7 @@
 
 - **RU:** 1) trans. «полностью сжигать, испепелять, обращать в гибель»; act.: *dāvāgnisadṛśo me 'dya dandahīti śubhāṃ tanum*
 [HARIV. 8726.](https://sanskrit-lexicon-scans.github.io/hariv?8726) *dandagdhi* (2. imperat.) *dandagdhyarisainyamāśu kakṣaṃ yathā vātasakho hutāśaḥ*
-[BHĀG. P. 6,8,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,21) med.: *yattu dandahyate lokamado duḥkhākaroti mām*
+[BHĀG. P. 6,8,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,21) мед.: *yattu dandahyate lokamado duḥkhākaroti mām*
 [ŚIŚ. 2,11.]
   <sub>attested</sub>
 
@@ -29,7 +29,7 @@
 [HARIV. 7040.](https://sanskrit-lexicon-scans.github.io/hariv?7040) *rājaprayojanavināśamavalokya dandahyamānahṛdayaḥ*
 [PAÑCAT. 58,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?58,2)
 
-- **RU:** — 2) med. «полностью обращаться в огонь, исходить от жара»: *atho anantasya mukhānalena dandahyamānaṃ sa nirīkṣya viśvam*
+- **RU:** — 2) мед. «полностью обращаться в огонь, исходить от жара»: *atho anantasya mukhānalena dandahyamānaṃ sa nirīkṣya viśvam*
 [BHĀG. P. 2,2,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,26) *brahmatejasātidurviṣaheṇa dandahyamānena vapuṣā*
 [5,9,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,18) *dandahyamānā jvalanena vardhatā serṣyāsamutthena*
 [HARIV. 7040.](https://sanskrit-lexicon-scans.github.io/hariv?7040) *rājaprayojanavināśamavalokya dandahyamānahṛdayaḥ*

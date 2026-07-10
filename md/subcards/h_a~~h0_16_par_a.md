@@ -8,6 +8,4 @@
 
 - **RU:** — *parā* уклоняться в (acc.): *ajā parṇaṃ parājihīta*
 [TS. 5,4,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,3)
-- **EN:** *parā* to give way, swerve into (acc.): *ajā parṇaṃ parājihīta*
-[TS. 5,4,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,3,3)
   <sub>attested</sub>

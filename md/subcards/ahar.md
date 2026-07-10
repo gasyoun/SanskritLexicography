@@ -5,12 +5,12 @@
 
 **1)** *ahar* s. u. *ahan* .
 
-- **RU:** *ahar* s. u. *ahan* .
+- **RU:** *ahar* см. *ahan* .
   <sub>lexicographic</sub>
 
 **1 (PW))** *ahar* s. *ahan*.
 
-- **RU:** *ahar* s. *ahan*.
+- **RU:** *ahar* см. *ahan*.
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: Graßmann 1873 (1996) : 162 (s.v. áhan)] *áhar* [Ved, unsp] Subst n áhan .

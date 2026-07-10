@@ -8,6 +8,4 @@
 
 - **RU:** — *saṃprati* pass. сталкиваться: *vāyuḥ saṃpratihanyate*
 [CARAKA 10,7.]
-- **EN:** — *saṃprati* pass. "to knock against each other": *vāyuḥ saṃpratihanyate*
-[CARAKA 10,7.]
   <sub>attested</sub>

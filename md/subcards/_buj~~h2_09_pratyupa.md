@@ -8,12 +8,9 @@
 
 - **RU:** — *pratyupa* вкушать, поедать: *gṛheṣu balikarmāṇi pretāḥ samupabhuñjate*
 [R. 6,11,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,39)
-- **EN:** — *pratyupa* to enjoy, consume: *gṛheṣu balikarmāṇi pretāḥ samupabhuñjate*
-[R. 6,11,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,11,39)
   <sub>attested</sub>
 
-**2)** — Vgl. *pratyupabhoga* .
+**nachtr)** — Vgl. *pratyupabhoga* .
 
-- **RU:** — Vgl. *pratyupabhoga* .
-- **EN:** — Vgl. *pratyupabhoga* .
+- **RU:** — ср. *pratyupabhoga* .
   <sub>attested</sub>

@@ -9,19 +9,10 @@
 
 - **RU:** — *ā*, partic. *āsiddha* задержанный, арестованный
 [MIT. 2,3,a,4. 5.]
-— caus. велеть арестовать ebend. 3.
-- **EN:** — *ā*, partic. *āsiddha* {arrested, detained}
-[MIT. 2,3,a,4. 5.]
+— caus. велеть арестовать там же 3.
   <sub>attested</sub>
 
 **2)** — Vgl. *āseddhar* fg.
 
-- **RU:** — Vgl. *āseddhar* fg.
-- **EN:** — caus. {to have (someone) arrested} ebend. 3.
-  <sub>attested</sub>
-
-**3)** — Vgl. *āseddhar* fg.
-
-- **RU:** — Vgl. *āseddhar* fg.
-- **EN:** — Vgl. *āseddhar* fg.
+- **RU:** — ср. *āseddhar* сл.
   <sub>attested</sub>

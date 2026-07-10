@@ -8,6 +8,4 @@
 
 - **RU:** — *anuparyā* снова вернуться к: *vittaṃ nāvakṣarāṇyanuparyāguriti*
 [AIT. BR. 3,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,28)
-- **EN:** — *anuparyā* to come back again to: *vittaṃ nāvakṣarāṇyanuparyāguriti*
-[AIT. BR. 3,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,28)
   <sub>attested</sub>

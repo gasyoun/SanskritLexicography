@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **1)** *jarayu* (von *jara*) _adj._ alternd; s. *ajarayu* .
 
-- **RU:** *jarayu* (от *jara*) _adj._ стареющий; см. s. *ajarayu* .
+- **RU:** *jarayu* (от *jara*) _adj._ стареющий; см. *ajarayu* .
   <sub>lexicographic</sub>
 
 **PW)** *jarayu* _Adj._ alternd in *a˚*.

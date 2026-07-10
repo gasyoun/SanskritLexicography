@@ -8,6 +8,4 @@
 
 - **RU:** — *saṃpratyā* возвратиться: *ciroṣitaṃ cāpi saṃpratyāgatameva ca*
 [MBH. 13,2193.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2193)
-- **EN:** *saṃpratyā* to return: *ciroṣitaṃ cāpi saṃpratyāgatameva ca*
-[MBH. 13,2193.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2193)
   <sub>attested</sub>

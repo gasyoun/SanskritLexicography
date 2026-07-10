@@ -8,6 +8,4 @@
 
 - **RU:** — *dus* плохо обращаться с кем-либо (acc.), изменять мужу: *kāmavaktavyahṛdayā bhartāraṃ duścaranti yāḥ*
 [R. 3,2,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,25)
-- **EN:** — *dus* {to act badly toward someone} (acc.) {, to be unfaithful to one's husband}: *kāmavaktavyahṛdayā bhartāraṃ duścaranti yāḥ*
-[R. 3,2,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,25)
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *upā* (из metr. соображений вместо *upa*) поститься
 [WEBER, KṚṢṆAJ. 228.]
-- **EN:** — *upā* (out of metr. considerations, instead of *upa*) to fast
-[WEBER, KṚṢṆAJ. 228.]
   <sub>attested</sub>

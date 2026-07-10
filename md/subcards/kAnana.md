@@ -9,5 +9,5 @@
 
 - **RU:** *kanana* _adj._ одноглазый
 [H. 453.](https://sanskrit-lexicon-scans.github.io/abch2/app1?453)
-— Vgl. *kāṇa* .
+— ср. *kāṇa* .
   <sub>lexicographic</sub>

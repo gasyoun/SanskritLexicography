@@ -18,5 +18,5 @@
 
 **2 (Nachtrag/note))** — Vgl. *avadāgha, avadāha* .
 
-- **RU:** — Vgl. *avadāgha, avadāha* .
+- **RU:** — ср. *avadāgha, avadāha* .
   <sub>attested</sub>

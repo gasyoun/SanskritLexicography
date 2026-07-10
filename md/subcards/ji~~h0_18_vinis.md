@@ -14,11 +14,6 @@
 [MBH. 3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) *sa vinirjitya saṃgrāme himavantam*
 [2,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1037) *yuddhenāsmi vinirjitā*
 [R. 3,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,5) [5,59,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,13)
-- **EN:** — *vinis*
- 1) to win, gain by conquest, conquer: *ke lokā vai vinirjitāḥ*
-[MBH. 3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) *sa vinirjitya saṃgrāme himavantam*
-[2,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1037) *yuddhenāsmi vinirjitā*
-[R. 3,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,5) [5,59,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,13)
   <sub>attested</sub>
 
 **2)** — 2) besiegen, überwinden: *tāṃśca sarvānvinirjitya*
@@ -30,14 +25,9 @@
 [MBH. 3,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.466) [5,6085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6085)
 [BHĀG. P. 1,15,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,20) [8,12,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,31) *(brāhmaṇam) vivāde vā vinirjitya*
 [M. 11,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,205)
-- **EN:** — 2) to defeat, overcome: *tāṃśca sarvānvinirjitya*
-[MBH. 3,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.466) [5,6085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6085)
-[BHĀG. P. 1,15,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,20) [8,12,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,31) *(brāhmaṇam) vivāde vā vinirjitya*
-[M. 11,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,205)
   <sub>attested</sub>
 
-**3)** — Vgl. *vinirjaya* .
+**addenda)** — Vgl. *vinirjaya* .
 
-- **RU:** — Vgl. *vinirjaya* .
-- **EN:** — Vgl. *vinirjaya*.
+- **RU:** — ср. *vinirjaya* .
   <sub>attested</sub>

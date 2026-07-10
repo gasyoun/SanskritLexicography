@@ -11,9 +11,5 @@
 - **RU:** *bhuj* с *ni* сгибать, склонять: *nibhujati jānuśirasī*
 [PAT. a. a. O. 1,254,a.]
 
-— *pra* складывать, сворачивать: *prabhujati vāsasī* ebend.
-- **EN:** 1. *bhuj* with *ni* to bend, lower: *nibhujati jānuśirasī*
-[PAT. a. a. O. 1,254,a.]
-
-— *pra* to fold, fold together: *prabhujati vāsasī* ebend.
+— *pra* складывать, сворачивать: *prabhujati vāsasī* там же
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *anuparyā* раскладывать по кругу в определённом порядке, act.
 [AIT. BR. 7,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,2)
-- **EN:** — *anuparyā* to lay around in succession, act.
-[AIT. BR. 7,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,2)
   <sub>attested</sub>

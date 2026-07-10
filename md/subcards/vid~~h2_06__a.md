@@ -35,7 +35,7 @@
 - **RU:** — 3) pass. иметься: *uto hi vāṃ pūrvyā āvividre satyavācaḥ*
 [ṚV. 3,54,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.04) partic. примерно уверенный (наличествующий), в некой формуле, названный *āvidas*, *āvinna*
 [TBR. 1,7,6,6](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,6,6)
-(vgl. [TS. Comm. II,132]) и *āvitta*
+(ср. [TS. Comm. II,132]) и *āvitta*
 [VS. 10,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?10,9) по [MAH.] = *āvedita, jñāpita*, по
 [SĀY.] = *labdhavant*.
   <sub>attested</sub>

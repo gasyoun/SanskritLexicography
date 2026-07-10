@@ -8,6 +8,4 @@
 
 - **RU:** — *anupari* водить кругом, носить вокруг: *pradakṣiṇamagnimanupariṇīya*
 [KAUŚ. 54. 55. 65.]
-- **EN:** — *anupari* to lead all around, to carry all around: *pradakṣiṇamagnimanupariṇīya*
-[KAUŚ. 54. 55. 65.]
   <sub>attested</sub>

@@ -3,8 +3,7 @@
 `vas~~h2_05_upa`
 
 
-**1)** — *upa* s. *upavāsana* .
+**T4)** — *upa* s. *upavāsana* .
 
-- **RU:** — *upa* s. *upavāsana* .
-- **EN:** — *upa* s. *upavāsana*.
+- **RU:** — *upa* см. *upavāsana* .
   <sub>attested</sub>

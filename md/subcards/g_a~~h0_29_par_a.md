@@ -12,8 +12,4 @@
 [ṚV. 1,164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) *tiṣṭhā su kaṃ maghavanmā parā gāḥ*
 [3,53,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.02) *apānaḥ*
 [AV. 7,53,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.053.html#av07.053.04)
-- **EN:** — *parā* to go aside, go away, flee: *kaṃ svidardhaṃ parāgāt*
-[ṚV. 1,164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) *tiṣṭhā su kaṃ maghavanmā parā gāḥ*
-[3,53,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.02) *apānaḥ*
-[AV. 7,53,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.053.html#av07.053.04)
   <sub>attested</sub>

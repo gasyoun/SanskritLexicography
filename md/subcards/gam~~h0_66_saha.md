@@ -7,6 +7,4 @@
 
 - **RU:** — *saha* кого-л. (acc.) сопровождать в пути: *sahagacchanti gacchantaṃ niṣṭhanti ca mayi sthite*
 [R. 4,8,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,26)
-- **EN:** *saha* to accompany someone (acc.) on his way: *sahagacchanti gacchantaṃ niṣṭhanti ca mayi sthite*
-[R. 4,8,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,26)
   <sub>attested</sub>

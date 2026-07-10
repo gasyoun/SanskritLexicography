@@ -18,5 +18,5 @@
 
 - **RU:** — 2) передавать, вручать: *iyaṃ haivainaṃ badhāya pratipradadāvanayā haivainaṃ pratiprattaṃ jaghnuḥ*
 [ŚAT. BR. 2,5,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,7)
-— Vgl. *pratipradāna* .
+— ср. *pratipradāna* .
   <sub>attested</sub>

@@ -19,6 +19,6 @@
 **2)** — 2) anbieten: *ātmānam* so v. a. sich Jmd zur Verfügung stellen
 [R. 2,56,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,13),g.
 
-- **RU:** — 2) «предлагать»: *ātmānam* так v. a. «предоставлять себя в чьё-либо распоряжение»
+- **RU:** — 2) «предлагать»: *ātmānam* так преим. «предоставлять себя в чьё-либо распоряжение»
 [R. 2,56,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,13),g.
   <sub>attested</sub>

@@ -12,23 +12,16 @@
 [Sp. 602, Z. 1] добавь ещё
 [Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] добавь ещё: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* принимающий вред за пользу и пользу за вред
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
-- **EN:** 1. *paś*
-[Sp. 602, Z. 1] add further
-[Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] add further: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* taking loss for gain and gain for loss
-[Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
   <sub>attested</sub>
 
-**2)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
+**halten_für)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214)
 
 - **RU:** — *pra* считать за, принимать за: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214)
-- **EN:** — *pra* to take for, regard as: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
-[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214)
   <sub>attested</sub>
 
-**3)** — *prati* vgl. *pratispaśa, pratispāśana* .
+**addendum_tail)** — *prati* vgl. *pratispaśa, pratispāśana* .
 
-- **RU:** — *prati* vgl. *pratispaśa, pratispāśana* .
-- **EN:** — *prati* vgl. *pratispaśa, pratispāśana*.
+- **RU:** — *prati* ср. *pratispaśa, pratispāśana* .
   <sub>attested</sub>

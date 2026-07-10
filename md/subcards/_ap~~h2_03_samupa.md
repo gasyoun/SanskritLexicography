@@ -5,6 +5,5 @@
 
 **1)** — *samupa* desid. vgl. *samupepsu* .
 
-- **RU:** — *samupa* desid. vgl. *samupepsu* .
-- **EN:** — *samupa* desid. vgl. *samupepsu*.
+- **RU:** — *samupa* desid. ср. *samupepsu* .
   <sub>attested</sub>

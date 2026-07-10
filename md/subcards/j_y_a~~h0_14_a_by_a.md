@@ -5,6 +5,5 @@
 
 **1)** — *abhyā* s. *abhyājñāya* .
 
-- **RU:** — *abhyā* s. *abhyājñāya* .
-- **EN:** — *abhyā* s. *abhyājñāya* .
+- **RU:** — *abhyā* см. *abhyājñāya* .
   <sub>lexicographic</sub>

@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 7 sense(s) · RU 7/7 · EN 0/7_
 
 **1)** *nīlikā* _f._ s. u. *nīlaka* .
 
-- **RU:** *nīlikā* f. см. _f._ s. u. *nīlaka* .
+- **RU:** *nīlikā* f. см. _f._ см. *nīlaka* .
   <sub>lexicographic</sub>
 
 **SCH-1)** nīlikā ˚Schwärze, [S I,247,1.] {part=,seq=17522,type=,n=1}

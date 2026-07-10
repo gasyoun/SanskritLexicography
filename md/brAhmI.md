@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 
 **1)** *brāhmī* s. u. *brāhma* .
 
-- **RU:** *brāhmī* s. u. *brāhma* .
+- **RU:** *brāhmī* см. *brāhma* .
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: Renou 1954 (2) : 124] [brāhmī (dik)] zenith. Dalal 1934, S. 95, Z. 14 . [Kāv, unsp]

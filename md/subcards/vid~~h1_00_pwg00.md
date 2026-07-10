@@ -37,13 +37,13 @@
 [YĀJÑ. 1,199.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,199) *yoga˚*
 [BHAG. 12,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,1) *astra˚*
 [MBH. 1,5101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5101)
-[KĀM. NĪTIS. 9,78. 12,18.] [KATHĀS. 34,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,194) [BHĀG. P. 4,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,24) [7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) Vgl. 1. *aśvavid, evaṃ˚, kratu˚, kṣetra˚*,1. *jyotirvid, tadvid, deva˚, daiva˚, nimitta˚, nīthā˚, purā˚, purāṇa˚, pūrva˚, prakala˚, bahu˚, brahma˚, bhūta˚, bhṛgvaṅgiro˚, mati˚, mano˚, mantra˚, marma˚, mṛdu˚, yoga˚, vaco˚* u. s. w.
+[KĀM. NĪTIS. 9,78. 12,18.] [KATHĀS. 34,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,194) [BHĀG. P. 4,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,24) [7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) ср. 1. *aśvavid, evaṃ˚, kratu˚, kṣetra˚*,1. *jyotirvid, tadvid, deva˚, daiva˚, nimitta˚, nīthā˚, purā˚, purāṇa˚, pūrva˚, prakala˚, bahu˚, brahma˚, bhūta˚, bhṛgvaṅgiro˚, mati˚, mano˚, mantra˚, marma˚, mṛdu˚, yoga˚, vaco˚* и т.д.
   <sub>attested</sub>
 
 **2)** — 2) _m._ der Planet Mercur (vgl. *jña*)
 [VARĀH. BṚH. 2,2] ([Z. f. d. K. d. M. 4,318).]
 
-- **RU:** — 2) _m._ «планета Меркурий» (vgl. *jña*)
+- **RU:** — 2) _m._ «планета Меркурий» (ср. *jña*)
 [VARĀH. BṚH. 2,2] ([Z. f. d. K. d. M. 4,318).]
   <sub>lexicographic</sub>
 

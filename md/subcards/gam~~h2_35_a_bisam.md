@@ -8,6 +8,4 @@
 
 - **RU:** — *abhisam*, *āryamiśrābhisaṃgata* вместе с
 [BHĀG. P. 10,77,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,77,8)
-- **EN:** — *abhisam*, *āryamiśrābhisaṃgata* "in union with"
-[BHĀG. P. 10,77,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,77,8)
   <sub>attested</sub>

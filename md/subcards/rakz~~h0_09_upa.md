@@ -3,11 +3,9 @@
 `rakz~~h0_09_upa`
 
 
-**1)** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
+**upa+rakṣ)** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
 [VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
 
-- **RU:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
-[VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
-- **EN:** — *upa* s. *uparakṣaṇa; prani, ˚rakṣati*
+- **RU:** — *upa* см. *uparakṣaṇa; prani, ˚rakṣati*
 [VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
   <sub>attested</sub>

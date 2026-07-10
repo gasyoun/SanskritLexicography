@@ -3,11 +3,9 @@
 `pat~~h0_10_a_byava`
 
 
-**1)** — *abhyava* herabfliegen
+**main)** — *abhyava* herabfliegen
 [AIT. BR. 3,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,25)
 
 - **RU:** — *abhyava* слетать вниз
-[AIT. BR. 3,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,25)
-- **EN:** — *abhyava* to fly down
 [AIT. BR. 3,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,25)
   <sub>attested</sub>

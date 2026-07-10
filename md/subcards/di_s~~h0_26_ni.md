@@ -8,12 +8,9 @@
 
 - **RU:** — *ni*, partic. *nidiṣṭa*
 [PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) ошибочно вместо *nirdiṣṭa* .
-- **EN:** — *ni*, partic. *nidiṣṭa*
-[PAÑCAT. 235,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?235,21) erroneous for *nirdiṣṭa* .
   <sub>attested</sub>
 
-**final)** — Vgl. übrigens *nideśa* .
+**Nachtrag)** — Vgl. übrigens *nideśa* .
 
-- **RU:** — Vgl. впрочем *nideśa* .
-- **EN:** — Vgl. otherwise *nideśa* .
+- **RU:** — ср. впрочем *nideśa* .
   <sub>attested</sub>

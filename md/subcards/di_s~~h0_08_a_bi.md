@@ -8,6 +8,4 @@
 
 - **RU:** — *abhi* указывать на: *yāṃ yāmabhyadiśat sainamakāmayata*
 [PAÑCAV. BR. 12,11.]
-- **EN:** *abhi* to point to, refer to: *yāṃ yāmabhyadiśat sainamakāmayata*
-[PAÑCAV. BR. 12,11.]
   <sub>attested</sub>

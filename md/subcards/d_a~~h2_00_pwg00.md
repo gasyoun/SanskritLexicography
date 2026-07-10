@@ -62,9 +62,9 @@ Sch.
 [TBR. 1,6,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,8,6) *upamūlaṃ dināni*
 [ŚAT. BR. 2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) *svayaṃdinaṃ barhiḥ*
 [TS. 1,8,9,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,8,9,3) *lomāni keśā dīyante*
-Schol. к [RAGH. 3,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,33) *dātaṃ barhiḥ*
+схол. к [RAGH. 3,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,33) *dātaṃ barhiḥ*
 [P. 7,4,46](https://ashtadhyayi.com/sutraani/7/4/46), [Sch. 1,1,20],
-Sch.
+схол.
 *somaḥ kalā lebhe kṣaye ditāḥ* отпадающий
 [BHĀG. P. 6,6,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,23) partic. *dāta* усмотрел
 [LASSEN] в [DHŪRTAS. 67,3], однако там следует разложить: *dātā* (nom. от 1. *dātar) ava˚* . — desid. *ditsati*

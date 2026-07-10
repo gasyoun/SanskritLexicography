@@ -12,17 +12,17 @@
 
 **1a)** — a〉 verbrennen, durch Feuer verzehren, brennen (auch in medic. Sinne). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
 
-- **RU:** — a〉 сжигать, испепелять огнём, жечь (также в medic. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
+- **RU:** — a〉 сжигать, испепелять огнём, жечь (также в мед. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
   <sub>attested</sub>
 
 **1b)** — b〉 verbrennen, versengen, so v. a. vollständig vernichten. *adhākṣam* [{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
 
-- **RU:** — b〉 сжигать, опалять, отсюда v. a. полностью уничтожать. *adhākṣam* [{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
+- **RU:** — b〉 сжигать, опалять, отсюда преим. полностью уничтожать. *adhākṣam* [{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
   <sub>attested</sub>
 
 **1c)** — c〉 brennen, so v. a. in heftige Glut —, in Wallung versetzen, aufregen (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), am Herzen nagen.
 
-- **RU:** — c〉 жечь, отсюда v. a. приводить в сильный жар —, в возбуждение, волновать (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), грызть сердце.
+- **RU:** — c〉 жечь, отсюда преим. приводить в сильный жар —, в возбуждение, волновать (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), грызть сердце.
   <sub>attested</sub>
 
 **2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7)), verbrennen, brennen (auch von Wunden), in Flammen stehen.
@@ -32,7 +32,7 @@
 
 **2b)** — b〉 durch Feuer entfernt werden, getilgt werden, zu Nichte werden überh.
 
-- **RU:** — b〉 быть устраняемым огнём, изглаживаться, обращаться в ничто überh.
+- **RU:** — b〉 быть устраняемым огнём, изглаживаться, обращаться в ничто вообще
   <sub>attested</sub>
 
 **2c)** — c〉 von innerer Glut verzehrt werden, — vergehen, geplagt —, gequält werden, sich abhärmen.
@@ -56,7 +56,7 @@
 
 **d)** — d〉 verbrannt, so v. a. ohne Saft und Kraft.
 
-- **RU:** — d) сожжённый, отсюда v. a. без сока и силы.
+- **RU:** — d) сожжённый, отсюда преим. без сока и силы.
   <sub>attested</sub>
 
 **e)** — e〉 unheilvoll.
@@ -162,7 +162,7 @@
 — Mit *api* anbrennen.
 — Mit *abhi*
 
-- **RU:** — 2〉 подгорать, начинать гореть. v. l. *upadagdha* st. *apadagdha*.
+- **RU:** — 2〉 подгорать, начинать гореть. v. l. *upadagdha* вместо *apadagdha*.
 — С *api* подгорать.
 — С *abhi*
   <sub>attested</sub>
@@ -224,7 +224,7 @@
 
 **a)** — a〉 ausbrennen (eine Wunde u. s. w.).
 
-- **RU:** — a〉 выжигать (рану u. s. w.).
+- **RU:** — a〉 выжигать (рану и т.д.).
 
 **b)** — b〉 durch Brand beschädigen, anbrennen.
 
@@ -267,7 +267,7 @@
 
 **e)** — e〉 sich aufblähen, wichtig thun. *vikatthase* v. l. st. *vidahyase*.
 
-- **RU:** — д) важничать, кичиться. *vikatthase* v. l. st. *vidahyase*.
+- **RU:** — д) важничать, кичиться. *vikatthase* v. l. вместо *vidahyase*.
   <sub>attested</sub>
 
 **3)** — 3〉 Partic. *vidagdha*

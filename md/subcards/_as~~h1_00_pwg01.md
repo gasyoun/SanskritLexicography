@@ -17,20 +17,11 @@
 [M. 7,195.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,195) *tato rājā yāvaduttīrṇastāvacchavaṃ tatrāvalambyāste* «труп уже висит там»
 [VET. 5,11.] *tūṣṇīṃbhūya bhayādāsāṃ cakrire mṛgapakṣiṇaḥ* «застыли от страха совершенно неподвижно»
 [BHAṬṬ. 5,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,95) *godohamāste* «он занят доением коров»
-[P. 1,4,51](https://ashtadhyayi.com/sutraani/1/4/51), Vārtt. 1, Sch.
-*prāyamāsmahe* «мы медленно умираем» (s. *i* с *pra*) «мы обрекаем себя на голодную смерть»
+[P. 1,4,51](https://ashtadhyayi.com/sutraani/1/4/51), Вартт. 1, схол.
+*prāyamāsmahe* «мы медленно умираем» (см. *i* с *pra*) «мы обрекаем себя на голодную смерть»
 [R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
-[56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) Vgl. также u. *upa* и *prāyamupaviṣṭān*
-[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (s. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. ещё u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (vgl. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
-- **EN:** b) a gerund. upon *tvā* (*ya*) or *am: uparudhyārimāsīta* "he holds the enemy enclosed"
-[M. 7,195.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,195) *tato rājā yāvaduttīrṇastāvacchavaṃ tatrāvalambyāste* "the corpse already hangs there"
-[VET. 5,11.] *tūṣṇīṃbhūya bhayādāsāṃ cakrire mṛgapakṣiṇaḥ* "kept perfectly still out of fear"
-[BHAṬṬ. 5,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,95) *godohamāste* "he is occupied with milking the cows"
-[P. 1,4,51](https://ashtadhyayi.com/sutraani/1/4/51), Vārtt. 1, Sch.
-*prāyamāsmahe* "we are dying" (s. *i* with *pra*) "slowly away, we give ourselves up to death by starvation"
-[R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
-[56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) Vgl. also u. *upa* and *prāyamupaviṣṭān*
-[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) From this it follows that *prāyamāśiṣye, āśitum* and *upāśiṣye* (s. 1. *aś* with *ā* and *upa*) is merely a false spelling. On the confusion of *ās* and *aś* s. see also u. 6. Since *ās* also otherwise combines with a acc. (vgl. below at the partic. *āsita* the first example u. "c"), *doham* and *prāyam* may also be understood as genuine acc..
+[56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) ср. также u. *upa* и *prāyamupaviṣṭān*
+[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (см. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. ещё u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (ср. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
   <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
@@ -53,17 +44,7 @@
 [BHARTṚ. 2,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,49) *kimiti joṣamāsyate*
 [ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* («в этих обстоятельствах находится») *mahābhāgā sītā*
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) Сюда, по всей видимости, относится также: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
-[BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 и 64.
-- **EN:** c) a _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* ("he behaves quite calmly") *parjanyastatra kāraṇam ..*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
-[PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
-[HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* ("fare thee well") *ramasva ca*
-[R. 2,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,19) *sukhamāstāṃ bhavān*
-[VIKR. 65,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?65,17) *sukhamāsyate kaiḥ* "who is faring well?"
-[BHARTṚ. 2,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,49) *kimiti joṣamāsyate*
-[ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* ("finds himself in these circumstances") *mahābhāgā sītā*
-[R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) This is probably also to be referred here: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
-[BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 and 64.
+[BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); ср. 61 и 64.
   <sub>attested</sub>
 
 **4d)** — d) ein instr.: *hiraṇyako 'pi sahasramukhaviladurgaṃ praviṣṭaḥ sannakutobhayaḥ sukhenāste* befindet sich ganz wohl
@@ -77,19 +58,12 @@ ein Geschäft übertragen hat,
 
 какое-либо дело»,
 [I,106.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,106)
-- **EN:** d) a instr.: *hiraṇyako 'pi sahasramukhaviladurgaṃ praviṣṭaḥ sannakutobhayaḥ sukhenāste* "is quite well"
-[PAÑCAT. 107,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?107,2) *yasminkṛtyaṃ samāveśya nirviśaṅkena cetasā . āsyate* "with whom one feels at ease in one's heart, when one has"
-
-"entrusted him with a task",
-[I,106.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,106)
   <sub>attested</sub>
 
 **4e)** — e) ein dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* möge die gute Führung redlicher Leute wie eine Neuvermählte euerm Herzen zur Freude gereichen und zwar dauernd
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
 
 - **RU:** — e) dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* «да будет благонравие честных людей, подобно молодой супруге, радостью вашему сердцу — и притом неизменно»
-[HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
-- **EN:** e) a dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* "may the good conduct of honest people, like a newly-wed bride, bring joy to your heart, and that lastingly"
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
   <sub>attested</sub>
 
@@ -108,13 +82,6 @@ ein Geschäft übertragen hat,
 [DAŚAK. 185], ult. *āstāṃ mā maivam* «довольно! не так! не так!»
 [HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
 [127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
-- **EN:** 5) "to subside, come to an end": *tadāstāṃ tāvadvihaṃgamāmiṣalobho yāvatkuṭumbajīvanopāyabhūtaṃ jālamapi me naṣṭam*
-[PAÑCAT. 106,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?106,19) *āstāṃ tāvat* ("it is time to put an end" to the enumeration of women's vices) *kimanyena daurātmyeneha yoṣitām . vivṛtaṃ svodareṇāpi ghnanti putraṃ svakaṃ ruṣā ..*
-[IV,61.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,61) *āstāṃ jīvitahāriṇaḥ pravasanālāpasya kīrtanam*
-[AMAR. 97.]
-[DAŚAK. 185], ult. *āstāṃ mā maivam* "enough! not so! not so!"
-[HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
-[127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
   <sub>attested</sub>
 
 **6)** — 6) die Form *āsan*
@@ -126,50 +93,7 @@ ein Geschäft übertragen hat,
 [ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07) : *yebhiḥ sapitvaṃ pitaro na āsan* представляет собой unregelm. написание и относится к 1. *aś*; ср. выше u. 4, b и чередование форм *ās* и *aś* в
 [SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2] и соответствующих местах
 [ṚV.] — partic. *āsita*
-- **EN:** 6) the form *āsan*
-[ṚV. 1,109,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.109.html#rv01.109.07): *yebhiḥ sapitvaṃ pitaro na āsan* is a unregelm. spelling and is to be referred to 1. *aś*; compare vgl. above u. 4, "b" and the alternation between forms of *ās* and *aś* in
-[SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2] and the corresponding passages of the
-[ṚV.] — partic. *āsita*
   <sub>attested</sub>
-
-**pp.1a)** 1) _adj._
-a) der gesessen oder gewohnt hat: *āsitaḥ saḥ*
-[P. 3,4,76](https://ashtadhyayi.com/sutraani/3/4/76), Sch.
-- **EN:** 1) _adj._
-a) "who has sat" or "dwelt": *āsitaḥ saḥ*
-[P. 3,4,76](https://ashtadhyayi.com/sutraani/3/4/76), Sch.
-
-**pp.1b)** b) gesessen oder gewohnt worden: *āsitaṃ tena* ebend.
-- **EN:** b) "having been sat upon" or "dwelt in": *āsitaṃ tena* ebend.
-
-**pp.1c)** c) dem man obliegt: *anāsitakuṭumbāni kuṭumbibhavanāni*
-[R. 2,71,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,35) *rāmalakṣmaṇasītābhī rājñā daśarathena ca — .. āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam . tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati ..*
-[1,3,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,4)
-- **EN:** c) "that which one is occupied with": *anāsitakuṭumbāni kuṭumbibhavanāni*
-[R. 2,71,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,35) *rāmalakṣmaṇasītābhī rājñā daśarathena ca — .. āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam . tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati ..*
-[1,3,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,4)
-
-**verbal-noun2a)** 2) _n._
-a) das Sitzen, Sichsetzen: *jṛmbhāsitādikṛt (ālasyam)*
-[SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* schlechte, unschickliche Art zu sitzen
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669)
-- **EN:** 2) _n._
-a) "the sitting, the sitting down": *jṛmbhāsitādikṛt (ālasyam)*
-[SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* "a bad, unseemly manner of sitting"
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669)
-
-**verbal-noun2b)** b) der Ort, an dem man gesessen oder gewohnt hat: *idameṣāmāsitam*
-Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
-[R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* sitzen heissen: *devadattam*
-[P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), Sch.
-— desid. *āsisiṣate*
-[P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Sch.
-- **EN:** b) "the place where one has sat" or "dwelt": *idameṣāmāsitam*
-Sch. to [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
-[R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* "to bid sit": *devadattam*
-[P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), Sch.
-— desid. *āsisiṣate*
-[P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Sch.
 
 **PPP-1)** 1) _adj._
  a) der gesessen oder gewohnt hat: *āsitaḥ saḥ*
@@ -181,8 +105,8 @@ Sch. to [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 
 - **RU:** 1) _adj._
  a) «тот, кто сидел или обитал»: *āsitaḥ saḥ*
-[P. 3,4,76](https://ashtadhyayi.com/sutraani/3/4/76), Sch.
-— b) «место, где сидели или обитали» (пассивное значение): *āsitaṃ tena* ebend.
+[P. 3,4,76](https://ashtadhyayi.com/sutraani/3/4/76), схол.
+— b) «место, где сидели или обитали» (пассивное значение): *āsitaṃ tena* там же
 — c) «то, чем занимаются»: *anāsitakuṭumbāni kuṭumbibhavanāni*
 [R. 2,71,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,35) *rāmalakṣmaṇasītābhī rājñā daśarathena ca — .. āsitaṃ bhāṣitaṃ caiva mataṃ yaccāpyanuṣṭhitam . tatsarvaṃ dharmavīryeṇa yathāvatsaṃprapaśyati ..*
 [1,3,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,4)
@@ -204,9 +128,9 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* «дурная, неприличная манера сидеть»
 [MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669)
 — b) «место, где сидели или обитали»: *idameṣāmāsitam*
-Sch. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
+схол. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
 [R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* «велеть сесть»: *devadattam*
-[P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), Sch.
+[P. 1,3,88](https://ashtadhyayi.com/sutraani/1/3/88), схол.
 — desid. *āsisiṣate*
-[P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), Sch.
+[P. 1,3,62](https://ashtadhyayi.com/sutraani/1/3/62), схол.
   <sub>attested</sub>

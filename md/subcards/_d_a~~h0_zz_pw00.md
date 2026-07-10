@@ -3,302 +3,502 @@
 `_d_a~~h0_zz_pw00`
 
 
-**pres-stems)** **1.** *dhā*, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
-- **EN:** **1.** *dhā*, present stems: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) and *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) and *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) dubious) and *hita* (s. bes.).
+**intro)** **1.** *dhā*, Präsensstämme: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) und *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) und *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) verdächtig) und *hita* (s. bes.).
+
+- **RU:** **1.** *dhā*, основы настоящего времени: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) и *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) и *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) сомнительно) и *hita* (см. особ.).
+  <sub>attested</sub>
 
 **1)** — 1〉 setzen, legen, stellen, einfügen, einbringen, — in oder auf (Loc.). *daṇḍam* den Stock legen auf, so v. a. Strafe verhängen über (Loc. oder Gen.). *tatpadavyāṃ padam* den Fuss auf seinen Weg stellen, so v. a. es ihm nachthun, ihm gleichen [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Meist Act.
-- **EN:** — 1〉 to set, lay, place, insert, bring into — in or upon (Loc.). *daṇḍam* to lay the stick upon, hence v. a. to inflict punishment upon (Loc. or Gen.). *tatpadavyāṃ padam* to set one's foot in his path, hence v. a. to imitate him, to equal him [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Mostly Act.
+
+- **RU:** класть, полагать, ставить, вставлять, вносить — в или на (Loc.). *daṇḍam* возложить посох на, так преим. наложить наказание на (Loc. или Gen.). *tatpadavyāṃ padam* поставить ногу на его путь, так преим. следовать его примеру, уподобляться ему [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Большей частью Act.
+  <sub>attested</sub>
 
 **2)** — 2〉 hinbringen —, hinschaffen zu (Loc.) *āre* weit wegschaffen [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Meist Act.
-- **EN:** — 2〉 to bring to, convey to (Loc.); *āre* to remove far away [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Mostly Act.
+
+- **RU:** доставлять, переносить к (Loc.) *āre* уносить далеко прочь [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Большей частью Act.
+  <sub>attested</sub>
 
 **3)** — 3〉 Jmd an einen Ort oder in einen Zustand versetzen, verhelfen zu, bringen in oder zu (Loc. oder Dat.) [ṚV. 2,34,9. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09). Meist Act.
-- **EN:** — 3〉 to transfer someone to a place or a condition, to help to, to bring into or to (Loc. or Dat.) [ṚV. 2,34,9. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09). Mostly Act.
+
+- **RU:** переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (Loc. или Dat.) [ṚV. 2,34,9. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09). Большей частью Act.
+  <sub>attested</sub>
 
 **4)** — 4〉 richten auf (Dat. [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19), oder Loc.), nach oder an (Loc.). *cintāma, matim* oder *manas* seine Gedanken richten auf, denken an (Loc. oder Dat.), beschliessen (mit Dat., Loc., Acc. mit *prati*, Infin., oder directe Rede mit *iti*). Meist Med. *dhīyamāna* (v. l. *vartamāna*) und *dhita* (verdächtig) dessen Sinn gerichtet ist auf (Loc. oder Dat.).
-- **EN:** — 4〉 to direct upon (Dat. [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19), or Loc.), toward or at (Loc.). *cintāma, matim* or *manas* to direct one's thoughts upon, to think of (Loc. or Dat.), to resolve (with Dat., Loc., Acc. with *prati*, Infin., or direct speech with *iti*). Mostly Med. *dhīyamāna* (v. l. *vartamāna*) and *dhita* (dubious) whose mind is directed upon (Loc. or Dat.).
+
+- **RU:** направлять на (Dat. [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19), или Loc.), к или на (Loc.). *cintāma, matim* или *manas* направлять свои мысли на, думать о (Loc. или Dat.), решать (с Dat., Loc., Acc. с *prati*, Infin., или прямая речь с *iti*). Большей частью Med. *dhīyamāna* (v. l. *vartamāna*) и *dhita* (сомнительно) тот, чей ум направлен на (Loc. или Dat.).
+  <sub>attested</sub>
 
 **5)** — 5〉 Jmd (Dat., Loc. oder Gen.) Etwas bestimmen, verleihen, zutheilen, verschaffen, geben, schenken. Meist Act. Pass. verliehen werden u. s. w., so v. a. zufallen [ṚV. 1,81,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03).
-- **EN:** — 5〉 to assign something to someone (Dat., Loc. or Gen.), to bestow, allot, procure, give, present. Mostly Act. Pass. to be bestowed u. s. w., hence v. a. to fall to (as a share) [ṚV. 1,81,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03).
+
+- **RU:** предназначать, жаловать, уделять, доставлять, давать, дарить кому-либо (Dat., Loc. или Gen.) что-либо. Большей частью Act. Pass. быть пожалованным и т.д., так преим. выпадать на долю [ṚV. 1,81,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03).
+  <sub>attested</sub>
 
 **6)** — 6〉 festsetzen, feststellen, anordnen, constituere.
-- **EN:** — 6〉 to fix, establish, ordain, constituere.
+
+- **RU:** устанавливать, определять, предписывать, constituere.
+  <sub>attested</sub>
 
 **7)** — 7〉 einsetzen als, bestimmen —, machen zu, reddere; mit doppeltem Acc. [ṚV. 7,31,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12). [Spr. 1060](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1060).
-- **EN:** — 7〉 to appoint as, to designate, make into, reddere; with double Acc. [ṚV. 7,31,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12). [Spr. 1060](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1060).
+
+- **RU:** назначать кем-либо, определять —, делать кем-либо, reddere; с двойным Acc. [ṚV. 7,31,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12). [Spr. 1060](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1060).
+  <sub>attested</sub>
 
 **8)** — 8〉 machen, bewerkstelligen, unternehmen, bewirken, verursachen, schaffen, hervorbringen, erzeugen. *canas* Befriedigung gewähren, Jmd (Dat.) Etwas (Acc.) gewähren. Aor. mit *pūrayām, mantrayām, varayām* = *cakāra* [Ind. St. 14,144].
-- **EN:** — 8〉 to make, accomplish, undertake, effect, cause, create, produce, generate. *canas* to afford satisfaction, to grant someone (Dat.) something (Acc.). Aor. with *pūrayām, mantrayām, varayām* = *cakāra* [Ind. St. 14,144].
+
+- **RU:** делать, осуществлять, предпринимать, производить, вызывать, создавать, порождать, производить на свет. *canas* доставлять удовлетворение, предоставлять кому-либо (Dat.) что-либо (Acc.). Aor. с *pūrayām, mantrayām, varayām* = *cakāra* [Ind. St. 14,144].
+  <sub>attested</sub>
 
 **9)** — 9〉 halten (in der Hand), fassen, tragen, in sich tragen (eine Leibesfrucht).
-- **EN:** — 9〉 to hold (in the hand), grasp, carry, bear within oneself (a foetus).
+
+- **RU:** держать (в руке), схватывать, нести, носить в себе (плод чрева).
+  <sub>attested</sub>
 
 **10)** — 10〉 ein Kleid, einen Schmuck, Blüthe tragen.
-- **EN:** — 10〉 to wear a garment, ornament, or flower.
+
+- **RU:** носить одежду, украшение, цветок.
+  <sub>attested</sub>
 
 **11)** — 11〉 tragen, so v. a. erhalten, aufrechthalten.
-- **EN:** — 11〉 to bear, hence v. a. to sustain, uphold.
+
+- **RU:** нести, так преим. поддерживать, сохранять.
+  <sub>attested</sub>
 
 **12)** — 12〉 Med. an sich nehmen, empfangen, erlangen, erhalten [ṚV. 4,32,19. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19). insbes. eine Leibesfrucht empfangen, concipere. *antam* ein Ende finden [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* und *canas* Gefallen finden —, sich erfreuen an (Loc. oder Dat.).
-- **EN:** — 12〉 Med. to take to oneself, receive, obtain, acquire [ṚV. 4,32,19. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19). insbes. to conceive a foetus, concipere. *antam* to find an end [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* and *canas* to take pleasure in, to delight in (Loc. or Dat.).
+
+- **RU:** Med. принимать, воспринимать, получать, обретать [ṚV. 4,32,19. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19). особ. зачать плод, concipere. *antam* обретать конец [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* и *canas* находить удовольствие —, радоваться чему-либо (Loc. или Dat.).
+  <sub>attested</sub>
 
 **13)** — 13〉 sich zu eigen machen, annehmen, so v. a. an sich zur Erscheinung bringen, zeigen, sich zuziehen, inne haben, besitzen, behaupten.
-- **EN:** — 13〉 to make one's own, adopt, hence v. a. to bring to manifestation in oneself, display, incur, possess, maintain.
+
+- **RU:** присваивать себе, принимать, так преим. обнаруживать в себе, проявлять, навлекать на себя, иметь при себе, обладать, утверждать.
+  <sub>attested</sub>
 
 **14)** — 14〉 *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) fehlerhaft für *adhārayat*.
-- **EN:** — 14〉 *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) erroneously for *adhārayat*.
 
-**simplex-note)** — Caus. *dhāpayati* vom Simplex nicht zu belegen.
-- **EN:** — Caus. *dhāpayati* not attested for the simplex.
+- **RU:** *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) ошибочно вместо *adhārayat*.
+  <sub>attested</sub>
 
-**desid-header)** — Desid.
-- **EN:** — Desid.
+**simplex_note)** — Caus. *dhāpayati* vom Simplex nicht zu belegen.
 
-**desid-1)** — 1〉 *didhiṣati*
-- **EN:** — 1〉 *didhiṣati*
+- **RU:** Caus. *dhāpayati* для simplex не засвидетельствовано.
+  <sub>attested</sub>
 
-**desid-1a)** — a〉 geben —, verschaffen wollen. Med. sich verschaffen wollen, zu gewinnen suchen.
-- **EN:** — a〉 to wish to give, to wish to procure. Med. to wish to procure for oneself, to seek to obtain.
+**desid_intro)** — Desid.
 
-**desid-1b)** — b〉 belegen —, beschenken wollen.
-- **EN:** — b〉 to wish to impose upon, to wish to present with.
+- **RU:** Desid.
+  <sub>attested</sub>
 
-**desid-1c)** — c〉 Med. aufbringen wollen.
-- **EN:** — c〉 Med. to wish to excite, to wish to arouse.
+**desid_1)** — 1〉 *didhiṣati*
 
-**desid-2)** — 2〉 *dhitsati* setzen —, legen wollen auf (Loc.)
-- **EN:** — 2〉 *dhitsati* to wish to set, to wish to lay upon (Loc.)
+- **RU:** *didhiṣati*
+  <sub>attested</sub>
 
-**desid-note)** — *Intens. *dedhīyate*.
-- **EN:** — *Intens. *dedhīyate*.
+**desid_1a)** — a〉 geben —, verschaffen wollen. Med. sich verschaffen wollen, zu gewinnen suchen.
 
-**preverb-apa)** — Mit *ati*, *atihita* beseitigt.
-- **EN:** — With *ati*, *atihita* removed, set aside.
+- **RU:** желать давать —, доставлять. Med. желать добыть себе, стремиться получить.
+  <sub>attested</sub>
 
-**preverb-abhi-header)** — Mit *adhi*
-- **EN:** — With *adhi*
+**desid_1b)** — b〉 belegen —, beschenken wollen.
 
-**preverb-abhi-1)** — 1〉 Act.
-- **EN:** — 1〉 Act.
+- **RU:** желать облагать —, одарять.
+  <sub>attested</sub>
 
-**preverb-abhi-1a)** — a〉 setzen, anlegen, aufsetzen (aufʼs Feuer).
-- **EN:** — a〉 to set, apply, place on (the fire).
+**desid_1c)** — c〉 Med. aufbringen wollen.
 
-**preverb-abhi-1b)** — b〉 auf Jmd legen, Jmd (Dat. oder Loc.) verleihen, zutheilen.
-- **EN:** — b〉 to lay upon someone, to bestow upon, to allot to someone (Dat. or Loc.).
+- **RU:** Med. желать собирать, поднимать.
+  <sub>attested</sub>
 
-**preverb-abhi-2)** — 2〉 Med. an sich nehmen, an sich zur Erscheinung bringen.
-- **EN:** — 2〉 Med. to take to oneself, to bring to manifestation in oneself.
+**desid_2)** — 2〉 *dhitsati* setzen —, legen wollen auf (Loc.)
 
-**preverb-adhi-header)** — Mit *anu* Med.
-- **EN:** — With *anu* Med.
+- **RU:** *dhitsati* желать класть —, полагать на (Loc.)
+  <sub>attested</sub>
 
-**preverb-adhi-1)** — 1〉 darauf hinzulegen.
-- **EN:** — 1〉 to lay additionally upon.
+**desid_note)** — *Intens. *dedhīyate*.
 
-**preverb-adhi-2)** — 2〉 veranlassen zu (Dat.).
-- **EN:** — 2〉 to prompt to, to occasion (Dat.).
+- **RU:** *Intens. *dedhīyate*.
+  <sub>attested</sub>
 
-**preverb-adhi-3)** — 3〉 zugestehen, überlassen [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] fehlerhaft für *˚dhyāsyati*.
-- **EN:** — 3〉 to concede, to leave to [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] erroneously for *˚dhyāsyati*.
+**preverb_apa)** — Mit *ati*, *atihita* beseitigt.
 
-**preverb-anu)** — Mit *vyanu* Med. entfalten, ausbreiten.
-- **EN:** — With *vyanu* Med. to unfold, to spread out.
+- **RU:** С *ati*, *atihita* устранённый.
+  <sub>attested</sub>
 
-**preverb-antar-header)** — Mit *antar*
-- **EN:** — With *antar*
+**preverb_abhi_intro)** — Mit *adhi*
 
-**preverb-antar-1)** — 1〉 Act. Med.
-- **EN:** — 1〉 Act. Med.
+- **RU:** С *adhi*
+  <sub>attested</sub>
 
-**preverb-antar-1a)** — a〉 hineinlegen in (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
-- **EN:** — a〉 to lay into (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
+**preverb_abhi_1)** — 1〉 Act.
 
-**preverb-antar-1b)** — b〉 dazwischen legen, — setzen.
-- **EN:** — b〉 to lay between, to place between.
+- **RU:** Act.
+  <sub>attested</sub>
 
-**preverb-antar-1c)** — c〉 abscheiden, absondern [ṚV. 3,38,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.03).
-- **EN:** — c〉 to separate off, to seclude [ṚV. 3,38,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.03).
+**preverb_abhi_1a)** — a〉 setzen, anlegen, aufsetzen (aufʼs Feuer).
 
-**preverb-antar-1d)** — d〉 ausschliessen, beseitigen.
-- **EN:** — d〉 to exclude, to remove.
+- **RU:** ставить, прикладывать, надевать, водружать (на огонь).
+  <sub>attested</sub>
 
-**preverb-antar-1e)** — e〉 zudecken, verhüllen, verbergen, — in (Loc.) [ṚV. 7,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.05). verschwinden —, unsichtbar machen, verdunkeln.
-- **EN:** — e〉 to cover, veil, conceal, hide — in (Loc.) [ṚV. 7,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.05). To cause to disappear, to render invisible, to obscure.
+**preverb_abhi_1b)** — b〉 auf Jmd legen, Jmd (Dat. oder Loc.) verleihen, zutheilen.
 
-**preverb-antar-2)** — 2〉 Act.
-- **EN:** — 2〉 Act.
+- **RU:** возлагать на кого-либо, жаловать кому-либо (Dat. или Loc.), наделять.
+  <sub>attested</sub>
 
-**preverb-antar-2a)** — a〉 in sich aufnehmen, — enthalten.
-- **EN:** — a〉 to take into oneself, to contain within oneself.
+**preverb_abhi_2)** — 2〉 Med. an sich nehmen, an sich zur Erscheinung bringen.
 
-**preverb-antar-2b)** — b〉 im Innern —, im Herzen zur Erscheinung bringen, — zeigen.
-- **EN:** — b〉 to bring to manifestation within, in the heart, to display inwardly.
+- **RU:** Med. принимать на себя, обнаруживать в себе.
+  <sub>attested</sub>
 
-**preverb-antar-2c)** — c〉 Jmd (Abl.) Etwas (Acc.) vorenthalten, entziehen.
-- **EN:** — c〉 to withhold something (Acc.) from someone (Abl.), to withdraw.
+**preverb_adhi_intro)** — Mit *anu* Med.
 
-**preverb-antar-3)** — 3〉 Pass. verdeckt —, verhüllt —, unsichtbar werden, verschwinden. mit *Abl. oder Gen. der Person sich vor Jmd verbergen, sich Jmds Augen entziehen.
-- **EN:** — 3〉 Pass. to become concealed, veiled, invisible, to disappear. With *Abl. or Gen. of the person, to hide oneself from someone, to withdraw from someone's sight.
+- **RU:** С *anu* Med.
+  <sub>attested</sub>
 
-**preverb-antar-4)** — 4〉 *antarhita*
-- **EN:** — 4〉 *antarhita*
+**preverb_adhi_1)** — 1〉 darauf hinzulegen.
 
-**preverb-antar-4a)** — a〉 getrennt.
-- **EN:** — a〉 separated.
+- **RU:** класть сверх, добавлять.
+  <sub>attested</sub>
 
-**preverb-antar-4b)** — b〉 bedeckt, — mit (im Comp. vorangehend).
-- **EN:** — b〉 covered, covered with (preceding in Comp.).
+**preverb_adhi_2)** — 2〉 veranlassen zu (Dat.).
 
-**preverb-antar-4c)** — c〉 verhüllt, verborgen, versteckt, unsichtbar gemacht, verschwunden, — in (Loc. oder im Comp. vorangehend). Mit Abl. der Person verborgen vor, Jmds Blicken entzogen.
-- **EN:** — c〉 veiled, hidden, concealed, rendered invisible, disappeared — in (Loc. or preceding in Comp.). With Abl. of the person, hidden from, withdrawn from someone's sight.
+- **RU:** побуждать к (Dat.).
+  <sub>attested</sub>
 
-**preverb-antar-caus)** — Caus. verschwinden machen.
-- **EN:** — Caus. to cause to disappear.
+**preverb_adhi_3)** — 3〉 zugestehen, überlassen [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] fehlerhaft für *˚dhyāsyati*.
 
-**preverb-ava)** — Mit *apa* Act. wegschaffen, wegnehmen, — von (Abl.), vertreiben [ṚV. 8,85,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.13).
-- **EN:** — With *apa* Act. to remove, take away — from (Abl.), to drive away [ṚV. 8,85,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.13).
+- **RU:** признавать, предоставлять [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] ошибочно вместо *˚dhyāsyati*.
+  <sub>attested</sub>
 
-**preverb-a-header)** — Mit *api* oder *pi* (von [MANU] an häufiger als *api*)
-- **EN:** — With *api* or *pi* (from [MANU] more frequent than *api*)
+**preverb_anu)** — Mit *vyanu* Med. entfalten, ausbreiten.
 
-**preverb-a-1)** — 1〉 hineinstecken, — in (Loc.).
-- **EN:** — 1〉 to insert, to thrust into (Loc.).
+- **RU:** С *vyanu* Med. развёртывать, распростирать.
+  <sub>attested</sub>
 
-**preverb-a-2)** — 2〉 Jmd (Dat.) darreichen, hingeben, Jmd (Loc.) verleihen [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
-- **EN:** — 2〉 to hand to someone (Dat.), to give up, to grant to someone (Loc.) [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
+**preverb_antar_intro)** — Mit *antar*
 
-**preverb-a-3)** — 3〉 zudecken, verstopfen, verschliessen, schliessen, einschliessen, verhüllen, bedecken, verdecken, verbergen. Pass. verhüllt werden, spurlos verschwinden in (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* und *pihita* zugedeckt u. s. w., unsichtbar gemacht, in seiner Thätigkeit gehemmt.
-- **EN:** — 3〉 to cover over, stop up, close, shut, enclose, veil, cover, conceal, hide. Pass. to be veiled, to disappear without trace into (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* and *pihita* covered over u. s. w., rendered invisible, impeded in its activity.
+- **RU:** С *antar*
+  <sub>attested</sub>
 
-**preverb-a-caus)** — Caus. zudecken lassen mit (Instr.), schliessen lassen (mit doppeltem Acc.).
-- **EN:** — Caus. to have covered with (Instr.), to have closed (with double Acc.).
+**preverb_antar_1)** — 1〉 Act. Med.
 
-**preverb-a-pari)** — Mit *samapi* ganz zudecken.
-- **EN:** — With *samapi* to cover completely.
+- **RU:** Act. Med.
+  <sub>attested</sub>
 
-**preverb-pari-header)** — Mit *abhi*
-- **EN:** — With *abhi*
+**preverb_antar_1a)** — a〉 hineinlegen in (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
 
-**preverb-pari-1)** — 1〉 Jmdm (Dat.) übergeben, dahingeben, überliefern.
-- **EN:** — 1〉 to hand over to someone (Dat.), to give up, to transmit.
+- **RU:** вкладывать в (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
+  <sub>attested</sub>
 
-**preverb-pari-2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
-- **EN:** — 2〉 to prepare, to make ready [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
+**preverb_antar_1b)** — b〉 dazwischen legen, — setzen.
 
-**preverb-pari-3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
-- **EN:** — 3〉 to enwrap, to put around (Instr.), to wind around, to bind. Usually Med. *abhihita* bound, harnessed, yoked.
+- **RU:** класть, ставить между, вставлять между.
+  <sub>attested</sub>
 
-**preverb-pari-4)** — 4〉 belegen, mit Truppen überziehen.
-- **EN:** — 4〉 to lay upon, to cover with troops.
+**preverb_antar_1c)** — c〉 abscheiden, absondern [ṚV. 3,38,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.03).
 
-**preverb-pari-5)** — 5〉 umfassen, so v. a. in Schutz nehmen.
-- **EN:** — 5〉 to embrace, hence v. a. to take under protection.
+- **RU:** отделять, обособлять [ṚV. 3,38,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.03).
+  <sub>attested</sub>
 
-**preverb-pari-6)** — 6〉 Med. in sich tragen, — bergen [BHĀG. P. 3,13,30](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30).
-- **EN:** — 6〉 Med. to bear within oneself, to shelter [BHĀG. P. 3,13,30](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30).
+**preverb_antar_1d)** — d〉 ausschliessen, beseitigen.
 
-**preverb-pari-7)** — 7〉 Med. sich verhalten zu (Acc.).
-- **EN:** — 7〉 Med. to comport oneself toward (Acc.).
+- **RU:** исключать, устранять.
+  <sub>attested</sub>
 
-**preverb-pari-8)** — 8〉 bezeichnen, benennen; Pass. bezeichnet —, benannt werden, heissen. *abhihita* bezeichnet, genannt, heissend.
-- **EN:** — 8〉 to denote, to name; Pass. to be denoted, named, called. *abhihita* denoted, named, called.
+**preverb_antar_1e)** — e〉 zudecken, verhüllen, verbergen, — in (Loc.) [ṚV. 7,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.05). verschwinden —, unsichtbar machen, verdunkeln.
 
-**preverb-pari-9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
-- **EN:** — 9〉 to indicate, to expound, to communicate, to speak about, to set forth, to say something, to speak, to utter. *abhihita* indicated, shown [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) communicated, adduced, set forth, spoken, that about which or about whom something has been spoken.
+- **RU:** покрывать, скрывать, прятать, — в (Loc.) [ṚV. 7,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.05). Делать исчезающим —, невидимым, затемнять.
+  <sub>attested</sub>
 
-**preverb-pari-10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
-- **EN:** — 10〉 to say something to someone, to speak to; with double Acc. *abhihita* he to whom something has been said [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
+**preverb_antar_2)** — 2〉 Act.
 
-**preverb-pari-caus)** — Caus. Med. nennen lassen.
-- **EN:** — Caus. Med. to have someone named.
+- **RU:** Act.
+  <sub>attested</sub>
 
-**preverb-pari-desid)** — Desid. (*˚dhitsate*) sich umhüllen wollen [ṚV. 10,85,30](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.30).
-- **EN:** — Desid. (*˚dhitsate*) to wish to wrap oneself [ṚV. 10,85,30](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.30).
+**preverb_antar_2a)** — a〉 in sich aufnehmen, — enthalten.
 
-**preverb-prati-header)** — Mit *pratyabhi*
-- **EN:** — With *pratyabhi*
+- **RU:** вбирать в себя, содержать в себе.
+  <sub>attested</sub>
 
-**preverb-prati-1)** — 1〉 wider an sich ziehen, — in sich zurückziehen.
-- **EN:** — 1〉 to draw back toward oneself, to withdraw into oneself.
+**preverb_antar_2b)** — b〉 im Innern —, im Herzen zur Erscheinung bringen, — zeigen.
 
-**preverb-prati-2)** — 2〉 erwiedern, antworten *pratyabhihita* dem geantwortet worden ist.
-- **EN:** — 2〉 to reply, to answer *pratyabhihita* he to whom a reply has been given.
+- **RU:** проявлять внутри —, в сердце, обнаруживать.
+  <sub>attested</sub>
 
-**preverb-prati-3)** — 3〉 seine Zustimmung geben.
-- **EN:** — 3〉 to give one's assent.
+**preverb_antar_2c)** — c〉 Jmd (Abl.) Etwas (Acc.) vorenthalten, entziehen.
 
-**preverb-sam-a)** — Mit *samabhi* zu Jmd (Acc.) sprechen.
-- **EN:** — With *samabhi* to speak to someone (Acc.).
+- **RU:** утаивать что-либо (Acc.) от кого-либо (Abl.), лишать.
+  <sub>attested</sub>
 
-**preverb-vi-header)** — Mit *ava*
-- **EN:** — With *ava*
+**preverb_antar_3)** — 3〉 Pass. verdeckt —, verhüllt —, unsichtbar werden, verschwinden. mit *Abl. oder Gen. der Person sich vor Jmd verbergen, sich Jmds Augen entziehen.
 
-**preverb-vi-1)** — 1〉 einlegen, einstecken, hineinstellen, einschieben, eintauchen, einschliessen, — in (Loc.). *avahita* steckend, — eingeschlossen in (Loc.); inʼs Wasser gefallen.
-- **EN:** — 1〉 to insert, to thrust in, to place into, to push in, to immerse, to enclose — in (Loc.). *avahita* inserted, enclosed in (Loc.); fallen into the water.
+- **RU:** Pass. становиться скрытым —, укрытым —, невидимым, исчезать. С *Abl. или Gen. лица — скрываться от кого-либо, ускользать от чьих-либо глаз.
+  <sub>attested</sub>
 
-**preverb-vi-2)** — 2〉 wegdrängen, eindrücken.
-- **EN:** — 2〉 to press away, to press in.
+**preverb_antar_4)** — 4〉 *antarhita*
 
-**preverb-vi-3)** — 3〉 sich versenken in (Loc.), aufmerken, Acht geben, die Aufmerksamkeit richten auf. Vom Verbum fin. nur *avadhīyatām* 3te Sg. Imperat. impers. *avahita* aufmerksam, Acht gebend, ganz bei einer Sache seiend.
-- **EN:** — 3〉 to immerse oneself in (Loc.), to attend, to pay heed, to direct one's attention upon. Of the verb fin. only *avadhīyatām* 3rd Sg. Imperat. impers. *avahita* attentive, heedful, wholly absorbed in a matter.
+- **RU:** *antarhita*
+  <sub>attested</sub>
 
-**preverb-vi-caus)** — Caus. einlegen —, einstecken lassen in (Loc.).
-- **EN:** — Caus. to have inserted, to have thrust into (Loc.).
+**preverb_antar_4a)** — a〉 getrennt.
 
-**preverb-vi-pra)** — Mit *anvava* der Reihe nach hineinstellen [ĀPAST. ŚR. 15,4,2].
-- **EN:** — With *anvava* to place in successively [ĀPAST. ŚR. 15,4,2].
+- **RU:** отделённый.
+  <sub>attested</sub>
 
-**preverb-ni)** — Mit *abhyava*, *˚hita* niedergeschlagen (Staub); nach dem Comm. aufgewirbelt.
-- **EN:** — With *abhyava*, *˚hita* laid low (dust); according to Comm. stirred up.
+**preverb_antar_4b)** — b〉 bedeckt, — mit (im Comp. vorangehend).
 
-**preverb-pra-ni)** — Mit *upāva*, *upāvahita* daneben gesteckt, — gelegt.
-- **EN:** — With *upāva*, *upāvahita* placed alongside, laid next to.
+- **RU:** покрытый, — чем-либо (в Comp. предшествующем).
+  <sub>attested</sub>
 
-**preverb-sam-header)** — Mit *paryava*
-- **EN:** — With *paryava*
+**preverb_antar_4c)** — c〉 verhüllt, verborgen, versteckt, unsichtbar gemacht, verschwunden, — in (Loc. oder im Comp. vorangehend). Mit Abl. der Person verborgen vor, Jmds Blicken entzogen.
 
-**preverb-sam-1)** — 1〉 in der Nähe aufbewahren [ĀPAST. 1,3,40].
-- **EN:** — 1〉 to keep in proximity [ĀPAST. 1,3,40].
+- **RU:** укрытый, скрытый, спрятанный, сделанный невидимым, исчезнувший, — в (Loc. или в Comp. предшествующем). С Abl. лица — скрытый от кого-либо, изъятый из чьих-либо взоров.
+  <sub>attested</sub>
 
-**preverb-sam-2)** — 2〉 zu sich nehmen, geniessen [ĀPAST. 1,10,28].
-- **EN:** — 2〉 to take to oneself, to partake of [ĀPAST. 1,10,28].
+**preverb_antar_caus)** — Caus. verschwinden machen.
 
-**preverb-puna)** — Mit *pratyava* wieder hineinlegen, -stecken.
-- **EN:** — With *pratyava* to put back in, to thrust back in.
+- **RU:** Caus. заставлять исчезнуть.
+  <sub>attested</sub>
 
-**preverb-vi2-header)** — Mit *vyava*
-- **EN:** — With *vyava*
+**preverb_ava)** — Mit *apa* Act. wegschaffen, wegnehmen, — von (Abl.), vertreiben [ṚV. 8,85,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.13).
 
-**preverb-vi2-1)** — 1〉 hier und dort hinlegen.
-- **EN:** — 1〉 to lay here and there.
+- **RU:** С *apa* Act. убирать, отнимать, — от (Abl.), изгонять [ṚV. 8,85,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.13).
+  <sub>attested</sub>
 
-**preverb-vi2-2)** — 2〉 dazwischenstellen.
-- **EN:** — 2〉 to place between.
+**preverb_aa_intro)** — Mit *api* oder *pi* (von [MANU] an häufiger als *api*)
 
-**preverb-vi2-3)** — 3〉 Pass. getrennt werden. *˚dhīyatām* impers. man trenne sich von (Abl.). *˚hita* getrennt, geschieden, — durch (im Comp. vorangehend).
-- **EN:** — 3〉 Pass. to become separated. *˚dhīyatām* impers. one should part from (Abl.). *˚hita* separated, divided — by (preceding in Comp.).
+- **RU:** С *api* или *pi* (начиная с [MANU] чаще, чем *api*)
+  <sub>attested</sub>
 
-**preverb-vi2-4)** — 4〉 unterbrechen. Pass. eine Unterbrechung erleiden *˚hita* unterbrochen, gehemmt.
-- **EN:** — 4〉 to interrupt. Pass. to suffer an interruption *˚hita* interrupted, impeded.
+**preverb_aa_1)** — 1〉 hineinstecken, — in (Loc.).
 
-**preverb-vi2-5)** — 5〉 weglassen.
-- **EN:** — 5〉 to omit, to leave out.
+- **RU:** вставлять, втыкать, — в (Loc.).
+  <sub>attested</sub>
 
-**preverb-vi2-6)** — 6〉 *vyavahita*
-- **EN:** — 6〉 *vyavahita*
+**preverb_aa_2)** — 2〉 Jmd (Dat.) darreichen, hingeben, Jmd (Loc.) verleihen [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
 
-**preverb-vi2-6a)** — a〉 entfernt, in der Ferne befindlich [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
-- **EN:** — a〉 remote, situated at a distance [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
+- **RU:** подносить, вручать кому-либо (Dat.), жаловать кому-либо (Loc.) [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
+  <sub>attested</sub>
 
-**preverb-vi2-6b)** — b〉 durch etwas Dazwischenliegendes getrennt, so v. a. versteckt, der Wahrnehmung entzogen, — durch (im Comp. vorangehend).
-- **EN:** — b〉 separated by something lying between, hence v. a. hidden, withdrawn from perception — by (preceding in Comp.).
+**preverb_aa_3)** — 3〉 zudecken, verstopfen, verschliessen, schliessen, einschliessen, verhüllen, bedecken, verdecken, verbergen. Pass. verhüllt werden, spurlos verschwinden in (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* und *pihita* zugedeckt u. s. w., unsichtbar gemacht, in seiner Thätigkeit gehemmt.
 
-**preverb-vi2-6c)** — c〉 von Etwas entfernt, so v. a. zu Etwas nur in Beziehung stehend, nicht unmittelbar betroffen.
-- **EN:** — c〉 removed from something, hence v. a. standing only in relation to something, not immediately affected.
+- **RU:** покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стеснённый в своей деятельности.
+  <sub>attested</sub>
 
-**preverb-vi2-caus)** — Caus. trennen [NAIṢ. 4,109].
-- **EN:** — Caus. to separate [NAIṢ. 4,109].
+**preverb_aa_caus)** — Caus. zudecken lassen mit (Instr.), schliessen lassen (mit doppeltem Acc.).
 
-**preverb-final)** — Mit *saṃvyava* in *asaṃvyavahitam* ([Nachtr. 3]).
-- **EN:** — With *saṃvyava* in *asaṃvyavahitam* ([Nachtr. 3]).
+- **RU:** Caus. велеть покрывать чем-либо (Instr.), велеть закрывать (с двойным Acc.).
+  <sub>attested</sub>
+
+**preverb_samaa)** — Mit *samapi* ganz zudecken.
+
+- **RU:** С *samapi* покрывать полностью.
+  <sub>attested</sub>
+
+**preverb_pari_intro)** — Mit *abhi*
+
+- **RU:** С *abhi*
+  <sub>attested</sub>
+
+**preverb_pari_1)** — 1〉 Jmdm (Dat.) übergeben, dahingeben, überliefern.
+
+- **RU:** передавать кому-либо (Dat.), вручать, передавать по наследству.
+  <sub>attested</sub>
+
+**preverb_pari_2)** — 2〉 richten, zurichten [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
+
+- **RU:** снаряжать, приготовлять [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
+  <sub>attested</sub>
+
+**preverb_pari_3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
+
+- **RU:** обёртывать, облагать чем-либо (Instr.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряжённый.
+  <sub>attested</sub>
+
+**preverb_pari_4)** — 4〉 belegen, mit Truppen überziehen.
+
+- **RU:** занимать, покрывать войсками.
+  <sub>attested</sub>
+
+**preverb_pari_5)** — 5〉 umfassen, so v. a. in Schutz nehmen.
+
+- **RU:** охватывать, так преим. брать под защиту.
+  <sub>attested</sub>
+
+**preverb_pari_6)** — 6〉 Med. in sich tragen, — bergen [BHĀG. P. 3,13,30](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30).
+
+- **RU:** Med. носить в себе, — укрывать [BHĀG. P. 3,13,30](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30).
+  <sub>attested</sub>
+
+**preverb_pari_7)** — 7〉 Med. sich verhalten zu (Acc.).
+
+- **RU:** Med. относиться к (Acc.).
+  <sub>attested</sub>
+
+**preverb_pari_8)** — 8〉 bezeichnen, benennen; Pass. bezeichnet —, benannt werden, heissen. *abhihita* bezeichnet, genannt, heissend.
+
+- **RU:** обозначать, именовать; Pass. обозначаться —, именоваться, называться. *abhihita* обозначенный, названный, именуемый.
+  <sub>attested</sub>
+
+**preverb_pari_9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
+
+- **RU:** указывать, излагать, сообщать, говорить о, излагать, что-либо говорить, произносить. *abhihita* указанный, обозначенный [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) сообщённый, изложенный, представленный, произнесённый, о чём или о ком сказано.
+  <sub>attested</sub>
+
+**preverb_pari_10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
+
+- **RU:** говорить что-либо кому-либо, — обращаться к; с двойным Acc. *abhihita* тот, кому что-либо сказано [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
+  <sub>attested</sub>
+
+**preverb_pari_caus)** — Caus. Med. nennen lassen.
+
+- **RU:** Caus. Med. велеть именовать.
+  <sub>attested</sub>
+
+**preverb_pari_desid)** — Desid. (*˚dhitsate*) sich umhüllen wollen [ṚV. 10,85,30](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.30).
+
+- **RU:** Desid. (*˚dhitsate*) желать укутаться [ṚV. 10,85,30](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.30).
+  <sub>attested</sub>
+
+**preverb_prati_intro)** — Mit *pratyabhi*
+
+- **RU:** С *pratyabhi*
+  <sub>attested</sub>
+
+**preverb_prati_1)** — 1〉 wider an sich ziehen, — in sich zurückziehen.
+
+- **RU:** притягивать к себе обратно, — вбирать в себя.
+  <sub>attested</sub>
+
+**preverb_prati_2)** — 2〉 erwiedern, antworten *pratyabhihita* dem geantwortet worden ist.
+
+- **RU:** отвечать, давать ответ *pratyabhihita* тому, кому ответили.
+  <sub>attested</sub>
+
+**preverb_prati_3)** — 3〉 seine Zustimmung geben.
+
+- **RU:** давать своё согласие.
+  <sub>attested</sub>
+
+**preverb_prati_samaa)** — Mit *samabhi* zu Jmd (Acc.) sprechen.
+
+- **RU:** С *samabhi* говорить к кому-либо (Acc.).
+  <sub>attested</sub>
+
+**preverb_vi_intro)** — Mit *ava*
+
+- **RU:** С *ava*
+  <sub>attested</sub>
+
+**preverb_vi_1)** — 1〉 einlegen, einstecken, hineinstellen, einschieben, eintauchen, einschliessen, — in (Loc.). *avahita* steckend, — eingeschlossen in (Loc.); inʼs Wasser gefallen.
+
+- **RU:** вкладывать, вставлять, помещать, вдвигать, погружать, заключать, — в (Loc.). *avahita* вставленный, — заключённый в (Loc.); упавший в воду.
+  <sub>attested</sub>
+
+**preverb_vi_2)** — 2〉 wegdrängen, eindrücken.
+
+- **RU:** оттеснять, вдавливать.
+  <sub>attested</sub>
+
+**preverb_vi_3)** — 3〉 sich versenken in (Loc.), aufmerken, Acht geben, die Aufmerksamkeit richten auf. Vom Verbum fin. nur *avadhīyatām* 3te Sg. Imperat. impers. *avahita* aufmerksam, Acht gebend, ganz bei einer Sache seiend.
+
+- **RU:** погружаться в (Loc.), внимать, наблюдать, сосредотачивать внимание на. От глагола fin. только *avadhīyatām* 3-е Sg. Imperat. impers. *avahita* внимательный, наблюдательный, целиком поглощённый делом.
+  <sub>attested</sub>
+
+**preverb_vi_caus)** — Caus. einlegen —, einstecken lassen in (Loc.).
+
+- **RU:** Caus. велеть вкладывать —, вставлять в (Loc.).
+  <sub>attested</sub>
+
+**preverb_anuvidhaa)** — Mit *anvava* der Reihe nach hineinstellen [ĀPAST. ŚR. 15,4,2].
+
+- **RU:** С *anvava* расставлять по порядку [ĀPAST. ŚR. 15,4,2].
+  <sub>attested</sub>
+
+**preverb_ud)** — Mit *abhyava*, *˚hita* niedergeschlagen (Staub); nach dem Comm. aufgewirbelt.
+
+- **RU:** С *abhyava*, *˚hita* осевший вниз (пыль); по коммент. поднятый вихрем.
+  <sub>attested</sub>
+
+**preverb_upa)** — Mit *upāva*, *upāvahita* daneben gesteckt, — gelegt.
+
+- **RU:** С *upāva*, *upāvahita* вставленный рядом, — положенный рядом.
+  <sub>attested</sub>
+
+**preverb_sam_intro)** — Mit *paryava*
+
+- **RU:** С *paryava*
+  <sub>attested</sub>
+
+**preverb_sam_1)** — 1〉 in der Nähe aufbewahren [ĀPAST. 1,3,40].
+
+- **RU:** хранить поблизости [ĀPAST. 1,3,40].
+  <sub>attested</sub>
+
+**preverb_sam_2)** — 2〉 zu sich nehmen, geniessen [ĀPAST. 1,10,28].
+
+- **RU:** принимать, употреблять, вкушать [ĀPAST. 1,10,28].
+  <sub>attested</sub>
+
+**preverb_prativi)** — Mit *pratyava* wieder hineinlegen, -stecken.
+
+- **RU:** С *pratyava* вкладывать снова, вставлять обратно.
+  <sub>attested</sub>
+
+**preverb_vi2_intro)** — Mit *vyava*
+
+- **RU:** С *vyava*
+  <sub>attested</sub>
+
+**preverb_vi2_1)** — 1〉 hier und dort hinlegen.
+
+- **RU:** раскладывать тут и там.
+  <sub>attested</sub>
+
+**preverb_vi2_2)** — 2〉 dazwischenstellen.
+
+- **RU:** ставить между, вставлять.
+  <sub>attested</sub>
+
+**preverb_vi2_3)** — 3〉 Pass. getrennt werden. *˚dhīyatām* impers. man trenne sich von (Abl.). *˚hita* getrennt, geschieden, — durch (im Comp. vorangehend).
+
+- **RU:** Pass. разлучаться. *˚dhīyatām* impers. пусть разлучатся с (Abl.). *˚hita* разлучённый, разделённый, — посредством (в Comp. предшествующем).
+  <sub>attested</sub>
+
+**preverb_vi2_4)** — 4〉 unterbrechen. Pass. eine Unterbrechung erleiden *˚hita* unterbrochen, gehemmt.
+
+- **RU:** прерывать. Pass. подвергаться перерыву *˚hita* прерванный, заторможенный.
+  <sub>attested</sub>
+
+**preverb_vi2_5)** — 5〉 weglassen.
+
+- **RU:** опускать, оставлять.
+  <sub>attested</sub>
+
+**preverb_vi2_6)** — 6〉 *vyavahita*
+
+- **RU:** *vyavahita*
+  <sub>attested</sub>
+
+**preverb_vi2_6a)** — a〉 entfernt, in der Ferne befindlich [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
+
+- **RU:** удалённый, находящийся вдали [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
+  <sub>attested</sub>
+
+**preverb_vi2_6b)** — b〉 durch etwas Dazwischenliegendes getrennt, so v. a. versteckt, der Wahrnehmung entzogen, — durch (im Comp. vorangehend).
+
+- **RU:** разделённый чем-либо промежуточным, так преим. спрятанный, скрытый от восприятия, — посредством (в Comp. предшествующем).
+  <sub>attested</sub>
+
+**preverb_vi2_6c)** — c〉 von Etwas entfernt, so v. a. zu Etwas nur in Beziehung stehend, nicht unmittelbar betroffen.
+
+- **RU:** отстоящий от чего-либо, так преим. состоящий лишь в отношении к чему-либо, не непосредственно затронутый.
+  <sub>attested</sub>
+
+**preverb_vi2_caus)** — Caus. trennen [NAIṢ. 4,109].
+
+- **RU:** Caus. разлучать [NAIṢ. 4,109].
+  <sub>attested</sub>
+
+**preverb_final)** — Mit *saṃvyava* in *asaṃvyavahitam* ([Nachtr. 3]).
+
+- **RU:** С *saṃvyava* в *asaṃvyavahitam* ([Nachtr. 3]).
+  <sub>attested</sub>

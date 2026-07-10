@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 
 **PWG-1)** *nibarhaṇa* s. *nivarhaṇa* .
 
-- **RU:** *nibarhaṇa* см. (отсылка к другой статье) s. *nivarhaṇa* .
+- **RU:** *nibarhaṇa* см. (отсылка к другой статье) см. *nivarhaṇa* .
   <sub>lexicographic</sub>
 
 **PW-1)** *nibarhaṇa*

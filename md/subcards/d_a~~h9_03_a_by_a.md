@@ -9,7 +9,7 @@
 Schol. Th. 3, S. 371.
 
 - **RU:** — *abhyā*
- 1) к *na hīnataḥ paramabhyādadīta* vgl.
+ 1) к *na hīnataḥ paramabhyādadīta* ср.
 [Spr. 1554](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1554) и объяснения
-Schol. Th. 3, S. 371.
+схол. ч. 3, см. 371.
   <sub>attested</sub>

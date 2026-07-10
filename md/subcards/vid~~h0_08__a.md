@@ -7,7 +7,7 @@
 [ṚV. 10,114,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.09) Vgl. *āvid, āvidvaṃs* . — caus.
 
 - **RU:** — *ā* хорошо знать, точно ведать: *kaśchandasāṃ yogamā veda*
-[ṚV. 10,114,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.09) Vgl. *āvid, āvidvaṃs* . — caus.
+[ṚV. 10,114,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.114.html#rv10.114.09) ср. *āvid, āvidvaṃs* . — caus.
 
 **1)** 1) anreden, einladen; ankündigen
 [ṚV. 4,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.036.html#rv04.036.02) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.036.html#rv04.036.07) [10,151,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.01)
@@ -54,11 +54,11 @@
 [KATHĀS. 15,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,66) *āveditāpi sā pitrā na tenāttā mahībhṛtā*
 [33,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,63) [91,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,11)
 
-- **RU:** — 2) сообщать кому-л. о чём-л. так v. a. предлагать, преподносить: *tasyārghyamāsanaṃ caiva gāṃ cāvedya*
+- **RU:** — 2) сообщать кому-л. о чём-л. так преим. предлагать, преподносить: *tasyārghyamāsanaṃ caiva gāṃ cāvedya*
 [MBH. 3,16696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16696) *tanayeyamanāvedya rājño deyā kvacinna me*
 [KATHĀS. 15,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,66) *āveditāpi sā pitrā na tenāttā mahībhṛtā*
 [33,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,63) [91,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,11)
 
 **3)** — Vgl. *āvedaka* fgg.
 
-- **RU:** — Vgl. *āvedaka* fgg.
+- **RU:** — ср. *āvedaka* сл.

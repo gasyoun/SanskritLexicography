@@ -8,6 +8,4 @@
 
 - **RU:** — *nyava* проникать, вторгаться: *purūṇi babhro ni caranti māmava*
 [ṚV. 9,107,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.19)
-- **EN:** *nyava* to penetrate, to intrude: *purūṇi babhro ni caranti māmava*
-[ṚV. 9,107,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.19)
   <sub>attested</sub>

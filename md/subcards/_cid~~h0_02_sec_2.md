@@ -3,17 +3,13 @@
 `_cid~~h0_02_sec_2`
 
 
-**intens-head)** — intens. *cecchidīti*
+**intens-header)** — intens. *cecchidīti*
 [P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
 *cecchidyate*
 [83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
 
 - **RU:** — intens. *cecchidīti*
-[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
+[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), схол.
 *cecchidyate*
-[83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
-- **EN:** — intens. *cecchidīti*
-[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), Sch.
-*cecchidyate*
-[83](https://ashtadhyayi.com/sutraani/7/4/83), Vārtt. 2, Sch. ([ed. Calc.])
+[83](https://ashtadhyayi.com/sutraani/7/4/83), Вартт. 2, схол. ([ed. Calc.])
   <sub>attested</sub>

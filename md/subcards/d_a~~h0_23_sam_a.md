@@ -31,7 +31,7 @@
 [KATHĀS. 18,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,45)
 [BHAṬṬ. 5,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,95)
 
-- **RU:** — 2) med.
+- **RU:** — 2) мед.
  a) собирать воедино, брать вместе, брать с собой: *samādāya*
 [ŚAT. BR. 3,6,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,3,10) [14,3,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,3,1,1) *śiśurā datta saṃ rabhaḥ*
 [ṚV. 1,145,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.145.html#rv01.145.03) *yathā mahāntamadhvānameṣyanrathaṃ vā nāvaṃ vā samādadīta*
@@ -104,5 +104,5 @@
 
 - **RU:** — e) принимать близко к сердцу, принимать к сведению: *sā tadbhartuḥ samādāya vacaḥ*
 [BHĀG. P. 3,23,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,24)
-— Vgl. *samādāna, samādeya* .
+— ср. *samādāna, samādeya* .
   <sub>attested</sub>

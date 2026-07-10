@@ -5,12 +5,12 @@
 
 **1)** *urvī* _f._ s. u. *uru* .
 
-- **RU:** *urvī* _f._ см. s. u. *uru* .
+- **RU:** *urvī* _f._ см. *uru* .
   <sub>lexicographic</sub>
 
 **1 (PW))** *urvī* s. u. *uru*.
 
-- **RU:** *urvī* s. u. *uru*.
+- **RU:** *urvī* см. *uru*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *urvī́* [Ved] Subst f die Erde, als die weite, Du: die beiden Weiten, Erde und Himmel. mit ṣáṣ : die sechs Weiten, nāmlich der obere und untere Raum, der östliche, westliche, nördliche und südliche (oder die drei Himmel und die drei Erden).

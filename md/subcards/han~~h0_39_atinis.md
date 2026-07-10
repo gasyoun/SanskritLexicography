@@ -6,8 +6,6 @@
 **1)** — *atinis* übermässig auseinanderziehen: den Svarita
 [ṚV. PRĀT. 3,18.]
 
-- **RU:** — *atinis* чрезмерно растягивать: Svarita
-[ṚV. PRĀT. 3,18.]
-- **EN:** — *atinis* to draw apart excessively: the Svarita
+- **RU:** — *atinis* чрезмерно растягивать: Сварита
 [ṚV. PRĀT. 3,18.]
   <sub>attested</sub>

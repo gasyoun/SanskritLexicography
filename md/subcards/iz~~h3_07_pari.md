@@ -8,6 +8,4 @@
 
 - **RU:** — *pari* разыскивать повсюду, обыскивать в поисках: *bhagavantaṃ vā ahamebhiḥ sarvairārtvijyaiḥ paryaiśiṣam* (чит.: *paryaiṣiṣam*)
 [CHĀND. UP. 1,11,2.]
-- **EN:** — *pari* to search around for: *bhagavantaṃ vā ahamebhiḥ sarvairārtvijyaiḥ paryaiśiṣam* (read: *paryaiṣiṣam*)
-[CHĀND. UP. 1,11,2.]
   <sub>attested</sub>

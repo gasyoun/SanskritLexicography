@@ -6,6 +6,6 @@
 **1)** — *pari* ringsum beschneiden; *parītta* beschnitten, unvollständig, begrenzt, im Gegens. zu *apramāṇa*
 [BURN.] [Lot. de la b. l. 396. Intr. 611. 612.] [BURNOUF] führt die Form auf 1. *dā* zurück.
 
-- **RU:** — *pari* обрезать кругом; *parītta* обрезанный, неполный, ограниченный, в Gegens. к *apramāṇa*
+- **RU:** — *pari* обрезать кругом; *parītta* обрезанный, неполный, ограниченный, в противоп. к *apramāṇa*
 [BURN.] [Lot. de la b. l. 396. Intr. 611. 612.] [BURNOUF] возводит форму к 1. *dā*.
   <sub>attested</sub>

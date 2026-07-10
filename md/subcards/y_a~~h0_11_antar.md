@@ -5,6 +5,5 @@
 
 **1)** — *antar* s. *antaryāṇīya* .
 
-- **RU:** — *antar* s. *antaryāṇīya* .
-- **EN:** — *antar* s. *antaryāṇīya* .
+- **RU:** — *antar* см. *antaryāṇīya* .
   <sub>attested</sub>

@@ -30,10 +30,10 @@
 [ṚV. 2,33,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.05); vgl. *day* mit *ava* .
 
 - **RU:** — 2) отделываться от кого-л., отпускать кого-л.: *ava stomebhī rudraṃ diṣīya*
-[ṚV. 2,33,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.05); vgl. *day* с *ava* .
+[ṚV. 2,33,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.05); ср. *day* с *ava* .
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *avatta, caturavatta*, 1. *avadāna* .
 
-- **RU:** — Vgl. *avatta, caturavatta*, 1. *avadāna* .
+- **RU:** — ср. *avatta, caturavatta*, 1. *avadāna* .
   <sub>lexicographic</sub>

@@ -9,17 +9,12 @@ zu durchbrechen —, zu sprengen beabsichtigen: *anīkam*
 [MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624)
 
 - **RU:** — desid. *vibhitsati*
-[P. 1,2,10](https://ashtadhyayi.com/sutraani/1/2/10), Sch.,
+[P. 1,2,10](https://ashtadhyayi.com/sutraani/1/2/10), схол.,
 намереваться прорвать —, намереваться пробить: *anīkam*
 [MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624)
-- **EN:** — desid. *vibhitsati*
-[P. 1,2,10](https://ashtadhyayi.com/sutraani/1/2/10), Sch.
- to intend to break through, to intend to burst: *anīkam*
-[MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624)
-— Vgl. *bibhitsā* fg.
   <sub>attested</sub>
 
 **desid-2)** — Vgl. *bibhitsā* fg.
 
-- **RU:** — Vgl. *bibhitsā* fg.
+- **RU:** — ср. *bibhitsā* сл.
   <sub>attested</sub>

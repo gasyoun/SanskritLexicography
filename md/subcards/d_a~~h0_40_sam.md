@@ -31,7 +31,7 @@
 [ṚV. 4,44,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.044.html#rv04.044.05) *yaddha krāṇā vivasvati nābhā saṃdāyi navyasī*
 [1,139,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.01) ([SV.] v. l.).
 
-- **RU:** — 3) med. pass. собираться (?): *mā vāmanye ni yamandevayantaḥ saṃ yaddade nābhiḥ pūrvyā vām*
+- **RU:** — 3) мед. pass. собираться (?): *mā vāmanye ni yamandevayantaḥ saṃ yaddade nābhiḥ pūrvyā vām*
 [ṚV. 4,44,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.044.html#rv04.044.05) *yaddha krāṇā vivasvati nābhā saṃdāyi navyasī*
 [1,139,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.01) ([SV.] v. l.).
   <sub>attested</sub>

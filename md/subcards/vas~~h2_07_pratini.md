@@ -3,8 +3,7 @@
 `vas~~h2_07_pratini`
 
 
-**1)** — *pratini* s. *pratinivāsana* .
+**T4)** — *pratini* s. *pratinivāsana* .
 
-- **RU:** — *pratini* s. *pratinivāsana* .
-- **EN:** — *pratini* s. *pratinivāsana*.
+- **RU:** — *pratini* см. *pratinivāsana* .
   <sub>attested</sub>

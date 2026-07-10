@@ -5,7 +5,7 @@
 
 **PW 1)** **1.** *devī* _f._ s. u. **1.** *deva*.
 
-- **RU:** **1.** *devī* _f._ s. u. **1.** *deva*.
+- **RU:** **1.** *devī* _f._ см. **1.** *deva*.
   <sub>lexicographic</sub>
 
 **PW 2)** **2.** *devī* _Adv._ mit *bhū* zu einem Gotte werden [HEM. PAR. 2,415]. [419].

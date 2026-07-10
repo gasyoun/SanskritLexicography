@@ -8,6 +8,4 @@
 
 - **RU:** возникнуть: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
 [R. 1,39,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,24)
-- **EN:** — *samabhi* to arise: *tataḥ kālena mahatā matiḥ samabhijāyata . sagarasyāśvamedhena yajeyamiti*
-[R. 1,39,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,24)
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *pratyud* caus. возбуждать кого-либо
 [MBH. 8,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3553)
-- **EN:** — *pratyud* caus. to excite, stir up someone
-[MBH. 8,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3553)
   <sub>attested</sub>

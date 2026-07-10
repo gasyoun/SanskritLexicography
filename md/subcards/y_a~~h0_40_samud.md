@@ -10,7 +10,4 @@
 - **RU:** — *samud* подниматься против кого-л. (acc.)
 [MBH. 8,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1316) *yacca naḥ sahitānsarvānvirāṭanagare tadā . eka eva samudyātaḥ*
 [6,4456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4456)
-- **EN:** — *samud* to rise up against someone (acc.)
-[MBH. 8,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1316) *yacca naḥ sahitānsarvānvirāṭanagare tadā . eka eva samudyātaḥ*
-[6,4456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4456)
   <sub>attested</sub>

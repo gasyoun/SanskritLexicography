@@ -5,7 +5,7 @@
 
 **1)** *suri* _adj._ s. *surai* .
 
-- **RU:** *suri* _adj._ см. s. *surai* .
+- **RU:** *suri* _adj._ см. *surai* .
   <sub>lexicographic</sub>
 
 **1 (PW))** **suri* _Adj._ _n._ zu *surai*.

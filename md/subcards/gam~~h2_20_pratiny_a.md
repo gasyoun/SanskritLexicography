@@ -8,6 +8,4 @@
 
 - **RU:** — *pratinyā* «возвращаться»
 [KĀṬH. 27,9.]
-- **EN:** — *pratinyā* to return
-[KĀṬH. 27,9.]
   <sub>attested</sub>

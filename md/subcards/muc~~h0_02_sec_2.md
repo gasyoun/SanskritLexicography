@@ -14,16 +14,9 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 - **RU:** — desid.
  1) *mumukṣati, ˚te*
  a) act. намереваться освободить: *mumukṣati vatsaṃ kṛṣṇaḥ*
-[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
+[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), схол.
 намереваться отпустить — отказаться: *prāṇānkasmānmumukṣasi*
 [KATHĀS. 73,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,18) намереваться метнуть: *vajraṃ mumukṣanniva vajrapāṇiḥ*
-[RAGH. 2,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,42)
-- **EN:** — desid.
- 1) *mumukṣati, ˚te*
- a) act. "to be about to set free": *mumukṣati vatsaṃ kṛṣṇaḥ*
-[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
-"to be about to let go —, to give up": *prāṇānkasmānmumukṣasi*
-[KATHĀS. 73,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,18) "to be about to hurl": *vajraṃ mumukṣanniva vajrapāṇiḥ*
 [RAGH. 2,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,42)
   <sub>attested</sub>
 
@@ -34,14 +27,8 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
 [MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
 
-- **RU:** — b) med. быть готовым освободиться: *mumukṣate vatsaḥ*
-[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
-[VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mumukṣamāṇā uta yā mumucre*
-[ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
-[BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
-[MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
-- **EN:** — b) med. "to be willing to free oneself": *mumukṣate vatsaḥ*
-[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), Sch.
+- **RU:** — b) мед. быть готовым освободиться: *mumukṣate vatsaḥ*
+[P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), схол.
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mumukṣamāṇā uta yā mumucre*
 [ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
@@ -59,13 +46,7 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
  a) стремиться освободиться, — желать спастись, искать спасения
 [P. 7,4,57.](https://ashtadhyayi.com/sutraani/7/4/57)
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mokṣate vatsaḥ svayameva*
-[P.], Sch. *ta enaṃ baddhā mokṣamāṇā avagamayanti*
-[KĀṬH. 11,6.]
-- **EN:** — 2) *mokṣate*
- a) "to seek to free oneself —, to wish (it), to seek rescue"
-[P. 7,4,57.](https://ashtadhyayi.com/sutraani/7/4/57)
-[VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mokṣate vatsaḥ svayameva*
-[P.], Sch. *ta enaṃ baddhā mokṣamāṇā avagamayanti*
+[P.], схол. *ta enaṃ baddhā mokṣamāṇā avagamayanti*
 [KĀṬH. 11,6.]
   <sub>attested</sub>
 
@@ -73,7 +54,5 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
 
 - **RU:** — b) освобождаться от (acc.): *mokṣiṣye manaso jvaram*
-[MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
-- **EN:** — b) "to free oneself from" (acc.): *mokṣiṣye manaso jvaram*
 [MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
   <sub>attested</sub>

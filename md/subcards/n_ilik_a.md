@@ -5,7 +5,7 @@
 
 **1)** *nīlikā* _f._ s. u. *nīlaka* .
 
-- **RU:** *nīlikā* f. см. _f._ s. u. *nīlaka* .
+- **RU:** *nīlikā* f. см. _f._ см. *nīlaka* .
   <sub>lexicographic</sub>
 
 **SCH-1)** nīlikā ˚Schwärze, [S I,247,1.] {part=,seq=17522,type=,n=1}

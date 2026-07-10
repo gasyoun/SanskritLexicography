@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 
 **1)** *ucita* s. u. *uc* .
 
-- **RU:** *ucita* см. s. u. *uc* .
+- **RU:** *ucita* см. *uc* .
   <sub>lexicographic</sub>
 
 **NWS-1)** *ucita* [Buddh] Subst n merit. Karmav 26.23

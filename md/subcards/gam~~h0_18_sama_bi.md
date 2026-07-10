@@ -8,5 +8,4 @@
 
 - **RU:** — *samabhi* «подходить, приближаться»: *samabhigacchantaṃ prekṣya rāmam*
 [R. 3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16)
-- **EN:** *samabhi* to approach: *samabhigacchantaṃ prekṣya rāmam* [R. 3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16)
   <sub>attested</sub>

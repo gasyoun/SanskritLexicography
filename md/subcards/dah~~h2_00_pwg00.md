@@ -13,7 +13,7 @@ Z. 3 *dahiṣyati* auch
 [VṚDDHA-CĀṆ. 11,7.]
 
 - **RU:** 1. *dah*
-Z. 3 *dahiṣyati* тоже
+стк. 3 *dahiṣyati* тоже
 [PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
 
 * na me dahyati kiṃ ca na* у меня ничего не сгорает
@@ -62,6 +62,6 @@ Z. 3 *dahiṣyati* тоже
 **intensive/desiderative)** — *sam* verbrennen, versengen: *kugrāmavāsaḥ* u. s. w. *vināgninā saṃdahate śarīram*
 [Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
 
-- **RU:** — *sam* сжигать, опалять: *kugrāmavāsaḥ* u. s. w. *vināgninā saṃdahate śarīram*
+- **RU:** — *sam* сжигать, опалять: *kugrāmavāsaḥ* и т.д. *vināgninā saṃdahate śarīram*
 [Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
   <sub>attested</sub>

@@ -5,7 +5,7 @@
 
 **1)** *apta* (von 2. *ap*) _adj._ wässerig, s. *anapta* .
 
-- **RU:** *apta* (от 2. *ap*) _adj._ «водянистый», s. *anapta*.
+- **RU:** *apta* (от 2. *ap*) _adj._ «водянистый», см. *anapta*.
   <sub>attested</sub>
 
 **PW)** *apta* _Adj._ in *anapta*.

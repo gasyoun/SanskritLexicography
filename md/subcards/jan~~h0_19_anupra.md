@@ -14,11 +14,6 @@
 [TS. 1,5,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,3) [3,3,6,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,3,6,3) [5,4,11,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,11,2)
 [LĀṬY. 3,5,5.] *yadvai meto mahadevābhvaṃ nānuprajāyeta*
 [ŚAT. BR. 3,2,1,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,27)
-- **EN:** — *anupra*
- 1) to be born after something: *saṃvatsaraṃ prajāḥ paśavo 'nu prajāyante*
-[TS. 1,5,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,3) [3,3,6,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,3,6,3) [5,4,11,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,11,2)
-[LĀṬY. 3,5,5.] *yadvai meto mahadevābhvaṃ nānuprajāyeta*
-[ŚAT. BR. 3,2,1,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,27)
   <sub>attested</sub>
 
 **2)** — 2) fort und fort zeugen (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
@@ -27,8 +22,5 @@
 
 - **RU:** — 2) непрестанно рождать (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
 [BHĀG. P. 3,32,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,30) — caus. заставить родиться вслед за чем-л.: *idaṃ sarvamanuprajanayati*
-[ŚAT. BR. 2,3,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,8)
-- **EN:** — 2) to beget continually, one after another (?): *prajāmanuprajāyante śmaśānāntakriyākṛtaḥ*
-[BHĀG. P. 3,32,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,30) — caus. to cause to be born after something: *idaṃ sarvamanuprajanayati*
 [ŚAT. BR. 2,3,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,8)
   <sub>attested</sub>

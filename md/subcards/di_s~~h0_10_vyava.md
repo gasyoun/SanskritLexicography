@@ -5,6 +5,5 @@
 
 **1)** — *vyava* s. *vyavadeśa* .
 
-- **RU:** — *vyava* s. *vyavadeśa* .
-- **EN:** *vyava* s. *vyavadeśa* .
+- **RU:** — *vyava* см. *vyavadeśa* .
   <sub>attested</sub>

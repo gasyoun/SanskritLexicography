@@ -10,7 +10,4 @@
 - **RU:** — *nyā*, *nyāgan*
 [AV. 7,73,8](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.073.html#av07.073.08) v. l. вместо *abhyāgāt* в
 [ṚV.]
-- **EN:** *nyā*, *nyāgan*
-[AV. 7,73,8](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.073.html#av07.073.08) v. l. for *abhyāgāt* in
-[ṚV.]
   <sub>attested</sub>

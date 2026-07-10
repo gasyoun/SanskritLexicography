@@ -30,5 +30,5 @@
 - **RU:** — 2) от основы *dad* принимать на себя (как бремя): *sa devānsarvānurasyupadadya saṃpaśyanyāti bhuvanāni viśvā*
 [AV. 10,8,18.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.18) устанавливать, поддерживать: *tasya te śarmannupadadyamāne rāyā madema tanvā3 tanā ca*
 [ṚV. 6,49,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.13)
-— Vgl. *upadā, upadāna* .
+— ср. *upadā, upadāna* .
   <sub>attested</sub>

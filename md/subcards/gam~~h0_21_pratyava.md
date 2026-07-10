@@ -8,5 +8,4 @@
 
 - **RU:** — *pratyava* «распознавать по отдельности»
 [MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90)
-- **EN:** *pratyava* to recognise individually, discern one by one [MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90)
   <sub>attested</sub>

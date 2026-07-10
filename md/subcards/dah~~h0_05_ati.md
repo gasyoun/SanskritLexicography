@@ -21,5 +21,5 @@
 [ŚAT. BR. 1,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14) *anatidagdha* ebend.
 
 - **RU:** — 2) «перекидываться пламенем через»: *sa imā sarvā nadīratidadāha*
-[ŚAT. BR. 1,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14) *anatidagdha* ebend.
+[ŚAT. BR. 1,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14) *anatidagdha* там же
   <sub>attested</sub>

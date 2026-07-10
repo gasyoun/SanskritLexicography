@@ -8,7 +8,7 @@
 [R. 2,25,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,25)
 
 - **RU:** — *samupā*
- 1) viell. (als act.) передавать, вручать: *jvalanaṃ samupādāya brāhmaṇena mahātmanā . hāvayāmāsa*
+ 1) возможно (als act.) передавать, вручать: *jvalanaṃ samupādāya brāhmaṇena mahātmanā . hāvayāmāsa*
 [R. 2,25,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,25)
   <sub>attested</sub>
 
@@ -17,7 +17,7 @@
 [MĀRK. P. 21,95.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,95) *rakṣaṇaṃ samupāttānām*
 [MBH. 2,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1940)
 
-- **RU:** — 2) med.
+- **RU:** — 2) мед.
  a) приобретать, получать: *yaḥ pitrā samupāttāni dhanavīryayaśāṃsi vai . nyūnatāṃ nayati*
 [MĀRK. P. 21,95.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,95) *rakṣaṇaṃ samupāttānām*
 [MBH. 2,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1940)

@@ -3,8 +3,7 @@
 `si_d~~h0_10_samud`
 
 
-**1)** — *samud* s. *samutsedha* .
+**samud)** — *samud* s. *samutsedha* .
 
-- **RU:** — *samud* s. *samutsedha* .
-- **EN:** — *samud* s. *samutsedha* .
+- **RU:** — *samud* см. *samutsedha* .
   <sub>attested</sub>

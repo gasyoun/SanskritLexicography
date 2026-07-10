@@ -11,7 +11,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 [HARIV.] in der Unterschr. des Adhyāya.
 
 - **RU:** *dviśatatama* (как и предыдущее) _adj._ двухсотый
-[HARIV.] в Unterschr. Adhyāya.
+[HARIV.] в подпись Адхйайа.
   <sub>attested</sub>
 
 **PW)** *dviśatatama* _Adj._ der 200ste.

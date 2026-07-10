@@ -12,7 +12,7 @@
 
 **2)** — 2〉 in Jmd oder in Etwas Jmd oder Etwas erkennen, kennen als, auch so v. a. erklären für, nennen; mit doppeltem Acc. (statt des prädicativen Acc. auch Nomin. mit *iti*).
 
-- **RU:** — 2〉 узнавать в ком-либо или в чём-либо кого-либо или что-либо, знать как, также так v. a. объявлять кем-либо, называть; с двойным Acc. (вместо предикативного Acc. также Nomin. с *iti*).
+- **RU:** — 2〉 узнавать в ком-либо или в чём-либо кого-либо или что-либо, знать как, также так преим. объявлять кем-либо, называть; с двойным Acc. (вместо предикативного Acc. также Nomin. с *iti*).
   <sub>attested</sub>
 
 **3)** — 3〉 merken, beachten, achten auf; eingedenk sein; mit Gen. oder Acc.
@@ -79,12 +79,12 @@
 
 **3)** — 3〉 kund thun, so v. a. zeigen, anwenden.
 
-- **RU:** — 3〉 «делать известным», так v. a. «показывать, применять».
+- **RU:** — 3〉 «делать известным», так преим. «показывать, применять».
   <sub>attested</sub>
 
 **4)** — 4〉 kennen, — als, so v. a. dass ist (mit doppeltem Acc.), halten für (mit doppeltem Acc.).
 
-- **RU:** — 4〉 «знать — как», так v. a. «то есть» (с двойным Acc.), «принимать за, считать» (с двойным Acc.).
+- **RU:** — 4〉 «знать — как», так преим. «то есть» (с двойным Acc.), «принимать за, считать» (с двойным Acc.).
   <sub>attested</sub>
 
 **5)** — 5〉 erkennen, Wahrnehmen, erfahren —, dass ist. (mit doppeltem Acc.).
@@ -94,7 +94,7 @@
 
 **6)** — 6〉 fühlen, empfinden. Act. [NYĀYAS. 4,1,57]. Med. Comm. zu [3,1,1. 4,1,57].
 
-- **RU:** — 6) чувствовать, ощущать. Act. [NYĀYAS. 4,1,57]. Med. Comm. к [3,1,1. 4,1,57].
+- **RU:** — 6) чувствовать, ощущать. Act. [NYĀYAS. 4,1,57]. Med. коммент. к [3,1,1. 4,1,57].
   <sub>attested</sub>
 
 **7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) fehlerhaft für *ramayanti*.
@@ -174,7 +174,7 @@
 
 **6)** — 6〉 Jmd Etwas melden, so v. a. anbieten, darbringen.
 
-- **RU:** — 6) сообщать кому-либо что-либо, так v. a. предлагать, подносить.
+- **RU:** — 6) сообщать кому-либо что-либо, так преим. предлагать, подносить.
   <sub>attested</sub>
 
 **6)** — Mit *samā* Caus. kund thun, melden.
@@ -209,7 +209,7 @@
 
 **3)** — 3〉 Jmd Etwas anmelden, so v. a. anbieten, übergeben.
 
-- **RU:** — 3) докладывать кому-либо о чём-либо, так v. a. предлагать, передавать.
+- **RU:** — 3) докладывать кому-либо о чём-либо, так преим. предлагать, передавать.
   <sub>attested</sub>
 
 **4)** — 4〉 überantworten. *ātmānam* sich zu eigen geben, sich zur Verfügung stellen.
@@ -374,7 +374,7 @@
 
 **—2〉)** — 2〉 Act. empfinden, schmecken u. s. w.
 
-- **RU:** — 2〉 Act. ощущать, вкушать u. s. w.
+- **RU:** — 2〉 Act. ощущать, вкушать и т.д.
   <sub>attested</sub>
 
 **—3〉)** — 3〉 Act. Med. einverstanden sein mit (Acc.).

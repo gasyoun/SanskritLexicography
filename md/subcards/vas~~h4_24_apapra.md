@@ -5,6 +5,5 @@
 
 **1)** — *apapra* s. *apaproṣita* .
 
-- **RU:** — *apapra* s. *apaproṣita*.
-- **EN:** — *apapra* s. *apaproṣita* .
+- **RU:** — *apapra* см. *apaproṣita*.
   <sub>attested</sub>

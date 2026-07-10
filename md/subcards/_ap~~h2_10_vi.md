@@ -11,12 +11,7 @@
 
 - **RU:** — *vi*, partic. *vyāpta*
  1) «включённый, охваченный чем-либо другим»
-[BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam*, так v. a. «подпадает под понятие преходящести»
+[BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam*, так преим. «подпадает под понятие преходящести»
 [TARKAS. 41.] — caus. *vyāpita* «наполненный, исполненный»
-[Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
-- **EN:** — *vi*, partic. *vyāpta*
- 1) "included, comprised in something else"
-[BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam* so v. a. "falls under the concept of transience"
-[TARKAS. 41.] — caus. *vyāpita* "filled"
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
   <sub>attested</sub>

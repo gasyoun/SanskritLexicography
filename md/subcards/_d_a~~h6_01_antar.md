@@ -6,6 +6,8 @@
 **1)** — *antar*, partic. *antarhita*
  1) getrennt
 [ṚV. PRĀT. 3,9.]
-- **EN:** — *antar*, partic. *antarhita*
- 1) separated
+
+- **RU:** — *antar*, partic. *antarhita*
+ 1) скрытый, разлучённый
 [ṚV. PRĀT. 3,9.]
+  <sub>attested</sub>

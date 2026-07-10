@@ -30,7 +30,7 @@
 [MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) — caus. übergeben lassen: *(tam) paridāpya yudhiṣṭhire*
 [MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445)
 
-- **RU:** — *pari* act. med. (последнее реже) вручать, передавать, доверять; откладывать у или в; подавать кому-л. что-л.; с dat. gen. или loc. лица: *trite duḥṣvapnyaṃ sarvamāptye pari dadmasi*
+- **RU:** — *pari* act. мед. (последнее реже) вручать, передавать, доверять; откладывать у или в; подавать кому-л. что-л.; с dat. gen. или loc. лица: *trite duḥṣvapnyaṃ sarvamāptye pari dadmasi*
 [ṚV. 8,47,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.15) *(śvānau) tābhyāmenaṃ pari dehi*
 [10,14,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.11) *(ajam) pari dattātpitṛbhyaḥ*
 [16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.02) [17,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.03) [VS. 11,64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?11,64) [18,59.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?18,59) [AV. 1,30,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.030.html#av01.030.02) *jarāyai tvā pari dadāmi*
@@ -53,7 +53,7 @@
 [22,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,23) partic. *parītta*
 [P. 6,3,124.](https://ashtadhyayi.com/sutraani/6/3/124) *(javaḥ) śyene parīttaḥ*
 [VS. 9,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,9)
-[ŚĀṄKH. GṚHY. 2,12.] *parīta* ошибочно st. *parītta*
+[ŚĀṄKH. GṚHY. 2,12.] *parīta* ошибочно вместо *parītta*
 [MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) — caus. велеть передать: *(tam) paridāpya yudhiṣṭhire*
 [MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445)
   <sub>attested</sub>

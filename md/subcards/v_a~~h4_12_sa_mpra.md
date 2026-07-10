@@ -10,7 +10,4 @@
 - **RU:** — *saṃpra* переплетать: *praugau*
 [ŚĀṄKH. BR. 24,1.]
 [ŚR. 16,7,15. 14,4.]
-- **EN:** — *saṃpra* "to interweave": *praugau*
-[ŚĀṄKH. BR. 24,1.]
-[ŚR. 16,7,15. 14,4.]
   <sub>attested</sub>

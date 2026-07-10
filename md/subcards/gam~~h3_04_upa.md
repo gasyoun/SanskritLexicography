@@ -8,5 +8,3 @@
 
 - **RU:** — *upa*, *upagata* тот, кто предался чьему-либо покровительству
 [Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019)
-- **EN:** — *upa*, *upagata* "one who has placed himself under someone's protection"
-[Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019)

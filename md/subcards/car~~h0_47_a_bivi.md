@@ -3,10 +3,9 @@
 `car~~h0_47_a_bivi`
 
 
-**1)** — *abhivi* herbeikommen zu, med.: *abhī3maṃ yajñaṃ vi caranta pūrvīḥ*
+**sense 1)** — *abhivi* herbeikommen zu, med.: *abhī3maṃ yajñaṃ vi caranta pūrvīḥ*
 [ṚV. 3,4,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.05)
 
-- **RU:** — *abhivi* прийти к, приближаться к, med.: *abhī3maṃ yajñaṃ vi caranta pūrvīḥ*
+- **RU:** — *abhivi* прийти к, приближаться к, мед.: *abhī3maṃ yajñaṃ vi caranta pūrvīḥ*
 [ṚV. 3,4,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.05)
-- **EN:** *abhivi* "to come up to", med.: *abhī3maṃ yajñaṃ vi caranta pūrvīḥ* [ṚV. 3,4,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.05)
   <sub>attested</sub>

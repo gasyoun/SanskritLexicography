@@ -3,8 +3,7 @@
 `na_s~~h0_03_anu`
 
 
-**anu+naś)** — *anu* s. *anunāśa* .
+**anu-naś)** — *anu* s. *anunāśa* .
 
-- **RU:** — *anu* s. *anunāśa* .
-- **EN:** — *anu* s. *anunāśa* .
+- **RU:** — *anu* см. *anunāśa* .
   <sub>attested</sub>

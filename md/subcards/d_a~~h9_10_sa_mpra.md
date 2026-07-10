@@ -8,6 +8,6 @@ Z. 8. fg. streiche die Stelle
 [Verz. d. Oxf. H. 1,b,13](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?1), da hier *saṃpradāya* subst. ist.
 
 - **RU:** — *saṃpra*
-Z. 8. fg. следует вычеркнуть это место
+стк. 8. сл. следует вычеркнуть это место
 [Verz. d. Oxf. H. 1,b,13](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?1), так как здесь *saṃpradāya* subst. стоит.
   <sub>attested</sub>

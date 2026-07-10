@@ -12,8 +12,4 @@
 
 * . sa sukhaṃ prekṣate rājā*
 [MBH. 12,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5241)
-- **EN:** — *samupa* to devise, contrive, find out: *svayaṃ samupajānanhi paurajānapadārcanam *
-
-* . sa sukhaṃ prekṣate rājā*
-[MBH. 12,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5241)
   <sub>attested</sub>

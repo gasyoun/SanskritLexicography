@@ -8,5 +8,4 @@
 
 - **RU:** — *vyupa* приводить по одному, поочерёдно приводить, — жертвенных животных
 [ŚAT. BR. 3,9,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,22)
-- **EN:** — *vyupa* to bring individually, sacrificial animals [ŚAT. BR. 3,9,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,22)
   <sub>attested</sub>

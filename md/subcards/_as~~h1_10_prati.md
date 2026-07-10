@@ -8,6 +8,4 @@
 
 - **RU:** — *prati* садиться напротив чего-либо (acc.), обращаться лицом к чему-либо
 [ŚAT. BR. 3,6,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,20)
-- **EN:** — *prati* to set oneself against something (acc.)
-[ŚAT. BR. 3,6,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,20)
   <sub>attested</sub>

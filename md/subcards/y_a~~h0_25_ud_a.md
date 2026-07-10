@@ -8,6 +8,4 @@
 
 - **RU:** — *udā* подниматься, направляться вверх к: *sabhām*
 [KAUŚ. 17.]
-- **EN:** — *udā* "to betake oneself up to": *sabhām*
-[KAUŚ. 17.]
   <sub>attested</sub>

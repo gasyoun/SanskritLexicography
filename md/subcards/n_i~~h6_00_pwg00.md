@@ -8,16 +8,6 @@
 
 - **RU:** 1. *nī* с *abhi*, partic. *˚nīta* достижимый и *anabhinīta* недостижимый
 [PAT. a. a. O. 3,95,a.]
-- **EN:** 1. *nī* with *abhi*, partic. *˚nīta* attainable and *anabhinīta* unattainable
-[PAT. a. a. O. 3,95,a.]
-— *pari* to abduct, carry off
-[ṚV. 6,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.004.html#rv06.004.06)
-— *atipra*
-[ĀŚV. ŚR. 2,6,9. 19,1.]
-
-— *sam*
- sense 2) to be deleted and its examples combined with
- sense 1).
   <sub>attested</sub>
 
 **entführen)** — *pari* entführen

@@ -8,6 +8,4 @@
 
 - **RU:** — *anvā* «подражать, делать вслед за (кем-л.)»: *ko nu tatkarma rājarṣernābheranvācaret*
 [BHĀG. P. 5,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,6)
-- **EN:** *anvā* to do after, to imitate: *ko nu tatkarma rājarṣernābheranvācaret*
-[BHĀG. P. 5,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,6)
   <sub>attested</sub>

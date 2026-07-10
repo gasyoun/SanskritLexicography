@@ -35,7 +35,7 @@ geben wollen, zu geben bereit sein: *asmabhyaminna ditsasi*
 [R. GORR. 2,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,23) *sarvaṃ me ditsitaṃ tvayā*
 [MBH. 3,15631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15631) [8627. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8627) *tāṃ (kanyāṃ) cedahaṃ na ditseyam*
 [1,6159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6159) [13,106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.106) [DAŚAK.] в [BENF. Chr. 186,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *putrayorubhayoreva vadhvau te ditsite mayā*
-[R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Также *didāsati* в folg. месте: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
+[R. GORR. 1,70,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,13) [MBH. 1,4375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4375) Также *didāsati* в сл. месте: *priyaṃ śraddhe dadataḥ priyaṃ śraddhe didāsataḥ*
 [ṚV. 10,151,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.02) Ошибочна же следующая форма: *na mā martyaḥ kaścana dātumarhati viśvakarmanbhauvana māṃ didāsithā ni maṅkṣye 'haṃ salilasya madhye* (говорит земля)
 [AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21) Хотя
 [ŚĀṄKH. ŚR. 16,16,7] имеет то же чтение (лишь *˚tha*), однако из

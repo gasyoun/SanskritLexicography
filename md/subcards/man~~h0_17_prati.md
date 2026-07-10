@@ -10,10 +10,6 @@
 - **RU:** — *prati* отвечать, возражать кому-л. (acc.) что-л. (acc.): *etattvātra pratimanvāno asmi*
 [VS. 23,52.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,52) *tadu ha śaunakaḥ kāpeyaḥ pratimanvānaḥ (= manasālocayan*
 [ŚAṂK.]) *pratyeyāya*
-- **EN:** — *prati* to reply, to retort; to hold something (acc.) up against someone (acc.) in answer: *etattvātra pratimanvāno asmi*
-[VS. 23,52.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?23,52) *tadu ha śaunakaḥ kāpeyaḥ pratimanvānaḥ (= manasālocayan*
-[ŚAṂK.]) *pratyeyāya*
-[CHĀND. UP. 4,3,7.]
   <sub>attested</sub>
 
 **2)** [CHĀND. UP. 4,3,7.] — caus. Jmd ehren: *pratimānya dhanaṃjayam*
@@ -27,25 +23,15 @@
 [MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712)
 [R. 3,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,27)
 [Spr. 2230.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2230)
-[KĀM. NĪTIS. 17,31.] Inschr. в
+[KĀM. NĪTIS. 17,31.] надпись в
 [Journ. of the Am. Or. S. 6,543,10.] держать что-л. в почёте
-- **EN:** — caus. to honour someone: *pratimānya dhanaṃjayam*
-[MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712)
-[R. 3,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,27)
-[Spr. 2230.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2230)
-[KĀM. NĪTIS. 17,31.] Inschr. in
-[Journ. of the Am. Or. S. 6,543,10.] to hold something in honour
-[VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6)
   <sub>attested</sub>
 
 **3)** [VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6) gut —, mit Beifall aufnehmen: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* die neuere Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.](https://sanskrit-lexicon-scans.github.io/hariv?8467) *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
 [MBH. 1,8015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8015) *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
 
-- **RU:** [VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6) благосклонно принять, встречать одобрением: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* более новая Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
-[HARIV. 8467.](https://sanskrit-lexicon-scans.github.io/hariv?8467) *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
-[MBH. 1,8015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8015) *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
-- **EN:** to receive well, with approval: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* the later Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
+- **RU:** [VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6) благосклонно принять, встречать одобрением: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* более новая изд.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.](https://sanskrit-lexicon-scans.github.io/hariv?8467) *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
 [MBH. 1,8015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8015) *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
   <sub>attested</sub>
@@ -54,7 +40,5 @@
 [HARIV. 7310.](https://sanskrit-lexicon-scans.github.io/hariv?7310)
 
 - **RU:** [MṚCCH. 175,4.] принимать во внимание, учитывать: *na jyeṣṭhatā na rājatvaṃ devānāṃ pratimānitam*
-[HARIV. 7310.](https://sanskrit-lexicon-scans.github.io/hariv?7310)
-- **EN:** [MṚCCH. 175,4.] to take note of, to take into consideration: *na jyeṣṭhatā na rājatvaṃ devānāṃ pratimānitam*
 [HARIV. 7310.](https://sanskrit-lexicon-scans.github.io/hariv?7310)
   <sub>attested</sub>

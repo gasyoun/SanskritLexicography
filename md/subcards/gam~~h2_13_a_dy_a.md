@@ -8,9 +8,6 @@
 [4](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4)).
 
 - **RU:** — *adhyā*,
-[MBH. 6,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4538) имеет [ed. Bomb.] *nādhyagacchanta*; vgl. выше u. *adhi*
-[4](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4)).
-- **EN:** *adhyā*,
-[MBH. 6,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4538) has the [ed. Bomb.] *nādhyagacchanta*; vgl. above u. *adhi*
+[MBH. 6,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4538) имеет [ed. Bomb.] *nādhyagacchanta*; ср. выше u. *adhi*
 [4](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4)).
   <sub>attested</sub>

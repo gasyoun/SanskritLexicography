@@ -34,9 +34,10 @@ h2.root{font-size:26px;margin:0 0 2px}.meta{color:var(--mut);font-size:13px;marg
 .lbl{font-size:10px;letter-spacing:.05em;color:#fff;background:var(--mut);border-radius:3px;padding:0 5px;text-transform:uppercase;margin-right:6px;vertical-align:1px}
 i.sa{font-style:italic;color:var(--sa)}
 .ls{color:var(--mut);font-size:.92em}
+.ls[title]{cursor:help;border-bottom:1px dotted var(--mut)}
 a.ls{color:var(--accent);font-size:.92em;text-decoration:none;border-bottom:1px dotted var(--accent)}
 a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
-.ab{font-style:italic;color:var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
+.ab{font-style:italic;color:var(--mut);cursor:help;border-bottom:1px dotted var(--mut)}.lex{font-variant:small-caps;color:var(--mut)}
 .badges{margin-top:6px}.badge{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:0 7px;margin-right:5px}
 .na{color:var(--mut);font-style:italic}
 /* language switch: show German always as reference in ru/en; German-only in de mode */
@@ -68,7 +69,7 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
 .cw.empty:hover{background:none;color:var(--mut)}
 </style></head><body><div id="wrap">
-<nav id="side"><h1>PWG статьи</h1><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
+<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
 <script src="articles.js"></script>
 <script>

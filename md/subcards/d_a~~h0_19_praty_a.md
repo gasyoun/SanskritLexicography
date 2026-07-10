@@ -7,7 +7,7 @@
  1) wiederempfangen, — erhalten: *śubhāśubhaṃ karma kṛtaṃ yadanyattadeva pratyādadate svadehe*
 [MBH. 12,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7415)
 
-- **RU:** — *pratyā* med.
+- **RU:** — *pratyā* мед.
  1) получать обратно, снова получать: *śubhāśubhaṃ karma kṛtaṃ yadanyattadeva pratyādadate svadehe*
 [MBH. 12,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7415)
   <sub>attested</sub>
@@ -15,7 +15,7 @@
 **2)** — 2) zurücknehmen so v. a. widerrufen: *na cāhaṃ śaktaḥ śāpaṃ pratyādātum*
 [MBH. 1,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.785)
 
-- **RU:** — 2) брать назад, так v. a. отзывать, отменять: *na cāhaṃ śaktaḥ śāpaṃ pratyādātum*
+- **RU:** — 2) брать назад, так преим. отзывать, отменять: *na cāhaṃ śaktaḥ śāpaṃ pratyādātum*
 [MBH. 1,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.785)
   <sub>attested</sub>
 
@@ -36,5 +36,5 @@
 [ŚĀṄKH. ŚR. 7,25,6.]
 [ṚV. PRĀT. 10,1.] [8.] — Вместо *pratyādāya*
 [AV. 10,1,27](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.27) следует, по-видимому, читать *pratyādhāya*.
-— Vgl. *pratyādāna* .
+— ср. *pratyādāna* .
   <sub>attested</sub>

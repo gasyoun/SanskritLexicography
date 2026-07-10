@@ -3,14 +3,11 @@
 `di_s~~h0_32_pari`
 
 
-**1)** — *pari* anzeigen, angeben: *yatithīṃ tatsamāṃ paridideśa*
+**pari-1)** — *pari* anzeigen, angeben: *yatithīṃ tatsamāṃ paridideśa*
 [ŚAT. BR. 1,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,5) als vorhanden bezeichnen, annehmen: *tisro vai gatayo rājanparidiṣṭāḥ svakarmabhiḥ . mānuṣyaṃ svargavāsaśca tiryagyoniśca*
 [MBH. 3,12497.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12497)
 
 - **RU:** — *pari* указывать, обозначать: *yatithīṃ tatsamāṃ paridideśa*
 [ŚAT. BR. 1,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,5) признавать существующим, полагать: *tisro vai gatayo rājanparidiṣṭāḥ svakarmabhiḥ . mānuṣyaṃ svargavāsaśca tiryagyoniśca*
-[MBH. 3,12497.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12497)
-- **EN:** — *pari* to indicate, state: *yatithīṃ tatsamāṃ paridideśa*
-[ŚAT. BR. 1,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,5) to designate as existing, to assume: *tisro vai gatayo rājanparidiṣṭāḥ svakarmabhiḥ . mānuṣyaṃ svargavāsaśca tiryagyoniśca*
 [MBH. 3,12497.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12497)
   <sub>attested</sub>

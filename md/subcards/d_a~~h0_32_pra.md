@@ -79,7 +79,7 @@ Sch.
 [130,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,2) *pradattanayanotsava* eine Augenweide gewährend
 [KATHĀS. 15,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,128)
 
-- **RU:** — *pra* act., редко med. и лишь в более древнем языке (за исключением
+- **RU:** — *pra* act., редко мед. и лишь в более древнем языке (за исключением
 [NAIṢ. 6,95]).
  1) отдавать, давать, передавать, подносить, дарить, жаловать, даровать, жертвовать: *ojiṣṭhaṃ te madhyato meda udbhṛtaṃ pra te vayaṃ dadāmahe*
 [ṚV. 3,21,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.021.html#rv03.021.05) [58,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.04) *(havyāni) prādāḥ pitṛbhyaḥ*
@@ -90,7 +90,7 @@ Sch.
 [14,9,4,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,28) [ĀŚV. GṚHY. 3,8. 4,7.] *pradaduṣe*
 [AV. 12,4,35.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.35) [36.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.36) *pra vāṃ ghṛtasya nirṇijo dadīran*
 
-(с pass. Bed.)
+(с pass. знач.)
 [ṚV. 7,64,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.064.html#rv07.064.01) *pra vīrayā śucayo dadrire* (pass.) *vāmadhvaryubhirmadhumantaḥ sutāsaḥ*
 [90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) *yadbrahmabhyaḥ pradīyate (vaśā)*
 [AV. 12,4,33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.33) [40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.40)
@@ -120,9 +120,9 @@ Sch.
 [PAÑCAT. 252,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?252,19)
 [KATHĀS. 1,35.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,35)
 [RĀJA-TAR. 1,218.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,218) *svaṃ* (= *ātmānaṃ) prāgahaṃ prādiṣi nāmarāya kiṃ nāma tasmai manasā narāya* отдаться
-[NAIṢ. 6,95.] отдавать так v. a. продавать, с instr. цены: *ekaikena ca yatkrītaṃ tacchatena pradīyate*
+[NAIṢ. 6,95.] отдавать так преим. продавать, с instr. цены: *ekaikena ca yatkrītaṃ tacchatena pradīyate*
 [PAÑCAT. 1,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?1,17) *ṛṇam* уплатить долг
-[YĀJÑ. 2,90.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,90) *vidyām* u. s. w. сообщить u. s. w. кому-л. науку
+[YĀJÑ. 2,90.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,90) *vidyām* и т.д. сообщить и т.д. кому-л. науку
 [MBH. 1,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.103)
 [HARIV. 4908.](https://sanskrit-lexicon-scans.github.io/hariv?4908) *dhanurvedo mama — pradīyatām*
 [R. 1,55,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,16)
@@ -132,7 +132,7 @@ Sch.
 [MBH. 1,6306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6306) возместить, возвратить: *naṣṭaṃ vinaṣṭaṃ kṛmibhiḥ śvahataṃ viṣame mṛtam . hīnaṃ puruṣakāreṇa pradadyātpāla eva tu ..*
 [M. 8,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232) partic. *pratta*
 [P. 6,3,124](https://ashtadhyayi.com/sutraani/6/3/124), [Sch. 7,4,47],
-Sch.
+схол.
 [VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесённый, подаренный: *indrāya pradātre nirvapedyasmai prattamiva sanna pradīyeta*
 [TS. 2,2,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,4)
 [ŚAT. BR. 12,9,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,2,11) *araṇyoḥ prattayoḥ*
@@ -147,7 +147,7 @@ Sch.
 [NIR. 3,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,5)
 [YĀJÑ. 3,4.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,4)
 [KATHĀS. 26,276.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,276)
-[BHĀG. P. 3,22,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,24) *pradatta = pratta* Kār. zu [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
+[BHĀG. P. 3,22,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,24) *pradatta = pratta* Кар. zu [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
 [VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесённый, дарованный, подаренный, пожалованный
 [PAÑCAT. 25,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,4) [32,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?32,24) [49,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,3) *tena siṃhasyāmātyapadavī pradattā vyāghrasya ca śāyāpālatvam*
 [63,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,22) [KATHĀS. 25,198.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,198) [VID. 57.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?57) [334.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?334) [RĀJA-TAR. 4,5.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,5) *mayā tubhyamātmā pradatto 'yam*
@@ -178,7 +178,7 @@ Sch.
 [KULL.] zu [M. 8,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) zurückzugeben zwingen: *cauraṃ pradāpyāpahṛtam*
 [YĀJÑ. 2,270.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,270)
 
-- **RU:** — Vgl. *prada, pradadi, pradātar, pradātavya, pradāna, pradāya, pradāyaka, pradeya* . — caus.
+- **RU:** — ср. *prada, pradadi, pradātar, pradātavya, pradāna, pradāya, pradāyaka, pradeya* . — caus.
  1) понуждать давать
 [TS. 2,2,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,4) *vāyurvai vṛṣṭyai pradāpayitā . sa evāsmai vṛṣṭiṃ pradāpayati*
 [TBR. 1,7,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,1,1) *sa evāsmā imāṃ lokānviśaṃ pradāpayati*
@@ -200,6 +200,6 @@ Sch.
 **desid.)** — Vgl. *pradāpayitar* . — desid. med. zur Frau geben wollen
 [DAŚAK. 77,7.]
 
-- **RU:** — Vgl. *pradāpayitar* . — desid. med. желать выдать замуж
+- **RU:** — ср. *pradāpayitar* . — desid. мед. желать выдать замуж
 [DAŚAK. 77,7.]
   <sub>attested</sub>

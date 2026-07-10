@@ -8,6 +8,4 @@
 
 - **RU:** — *nirā*; partic. *nirādiṣṭa* выплачено
 [M. 8,162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,162)
-- **EN:** — *nirā*; partic. *nirādiṣṭa* paid out
-[M. 8,162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,162)
   <sub>attested</sub>

@@ -5,6 +5,5 @@
 
 **1)** — *puras* s. u. d. W.
 
-- **RU:** — *puras* s. u. d. W.
-- **EN:** *puras* s. u. d. W.
+- **RU:** — *puras* см. слово
   <sub>attested</sub>

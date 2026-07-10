@@ -5,7 +5,7 @@
 
 **1)** *patra* s. *pattra* .
 
-- **RU:** *patra* см. s. *pattra* .
+- **RU:** *patra* см. *pattra* .
   <sub>lexicographic</sub>
 
 **PW-1)** *patra* defective Schreibart für *pattra*.

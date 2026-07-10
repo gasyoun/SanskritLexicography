@@ -4,4 +4,6 @@
 
 
 **main)** — *prasam* vgl. *prasaṃdhāna* .
-- **EN:** — *prasam* vgl. *prasaṃdhāna* .
+
+- **RU:** — *prasam* ср. *prasaṃdhāna* .
+  <sub>attested</sub>

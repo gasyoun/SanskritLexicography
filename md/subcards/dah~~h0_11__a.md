@@ -8,7 +8,7 @@
 [YĀJÑ. 1,340](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,340) *prāṇānnādagdhvā* zu lesen. — caus. pass. sich verbrennen: *sa yathā tatra nādāhyeta*
 [CHĀND. UP. 6,16,3.] Man hätte *nādahyeta* erwartet.
 
-- **RU:** — *ā* s. *ādahana* . Вместо *prāṇānādagdhvā*
+- **RU:** — *ā* см. *ādahana* . Вместо *prāṇānādagdhvā*
 [PAÑCAT. I,392](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,392) следует читать
 [YĀJÑ. 1,340](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,340) *prāṇānnādagdhvā* . — caus. pass. «сжигаться, обжигаться»: *sa yathā tatra nādāhyeta*
 [CHĀND. UP. 6,16,3.] Ожидалось бы *nādahyeta*.

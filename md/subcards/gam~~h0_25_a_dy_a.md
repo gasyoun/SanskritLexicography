@@ -10,7 +10,4 @@
 - **RU:** — *adhyā* наткнуться на, обнаружить: *nādhyāgamacca mṛgayaṃstāṃ gām*
 [MBH. 1,3948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3948) *trātāraṃ nādhyagaccheran(!)*
 [6,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4538)
-- **EN:** to come upon, to discover, find: *nādhyāgamacca mṛgayaṃstāṃ gām*
-[MBH. 1,3948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3948) *trātāraṃ nādhyagaccheran(!)*
-[6,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4538)
   <sub>attested</sub>

@@ -8,5 +8,4 @@
 
 - **RU:** — *pratyava* отражать, давать сдачи: *prati śvasantamava* (лучше, вероятно, *pratiśvasantamava) dānavaṃ han*
 [ṚV. 5,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.04)
-- **EN:** — *pratyava* "to strike back": *prati śvasantamava* (better probably *pratiśvasantamava) dānavaṃ han* [ṚV. 5,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.04))
   <sub>attested</sub>

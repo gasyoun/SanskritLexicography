@@ -16,16 +16,9 @@
 [MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) *ājīvan* используя
 [YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *(dhenuḥ) ājīvyamānā jagatāṃ sākṣayā nāpacīyate*
 [MĀRK. P. 29,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,8)
-- **EN:** — *ā* to live by, to subsist through, to derive benefit from: *yamājīvanti puruṣaṃ *
-
-* sarvabhūtāni — pakvadrumamivāsādya tasya jīvitamarthavat*
-[MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) *ājīvan* making use of
-[YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *(dhenuḥ) ājīvyamānā jagatāṃ sākṣayā nāpacīyate*
-[MĀRK. P. 29,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,8)
   <sub>attested</sub>
 
-**2)** — Vgl. *ājīva* fgg.
+**caus)** — Vgl. *ājīva* fgg.
 
-- **RU:** Caus. Vgl. *ājīva* fgg.
-- **EN:** — Vgl. *ājīva* fgg.
+- **RU:** Caus. ср. *ājīva* сл.
   <sub>attested</sub>

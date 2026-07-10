@@ -8,6 +8,4 @@
 
 - **RU:** — *anusam* desid. «желающий последовать за, стремящийся сопровождать»
 [AIT. BR. 2,36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,36)
-- **EN:** — *anusam* desid. "wishing to follow after"
-[AIT. BR. 2,36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,36)
   <sub>attested</sub>

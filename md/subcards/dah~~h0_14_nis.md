@@ -67,6 +67,6 @@
 **2)** — Vgl. *nirdahana, nirdāha* . — caus. verbrennen lassen
 [RĀJA-TAR. 6,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,171)
 
-- **RU:** — Vgl. *nirdahana, nirdāha* . — caus. «давать сгореть, велеть сжечь»
+- **RU:** — ср. *nirdahana, nirdāha* . — caus. «давать сгореть, велеть сжечь»
 [RĀJA-TAR. 6,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,171)
   <sub>attested</sub>

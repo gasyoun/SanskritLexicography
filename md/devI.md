@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 
 **PW 1)** **1.** *devī* _f._ s. u. **1.** *deva*.
 
-- **RU:** **1.** *devī* _f._ s. u. **1.** *deva*.
+- **RU:** **1.** *devī* _f._ см. **1.** *deva*.
   <sub>lexicographic</sub>
 
 **PW 2)** **2.** *devī* _Adv._ mit *bhū* zu einem Gotte werden [HEM. PAR. 2,415]. [419].

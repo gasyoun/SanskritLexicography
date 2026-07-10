@@ -8,5 +8,4 @@
 
 - **RU:** — *pratiparā* возвращать, отводить обратно
 [ŚAT. BR. 2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
-- **EN:** — *pratiparā* to lead back [ŚAT. BR. 2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
   <sub>attested</sub>

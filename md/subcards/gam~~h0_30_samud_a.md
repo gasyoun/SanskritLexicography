@@ -8,12 +8,9 @@
 
 - **RU:** — *samudā* достичь полного знания о чём-л.(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
-- **EN:** — *samudā* to attain complete knowledge of something(?): *sarvabuddhadharmasamudāgata*
-[LALIT. Calc. 8,9.]
   <sub>attested</sub>
 
-**2 (cross-reference))** — Vgl. *samudāgama* .
+**tail)** — Vgl. *samudāgama* .
 
-- **RU:** — Vgl. *samudāgama* .
-- **EN:** — Vgl. *samudāgama* .
+- **RU:** — ср. *samudāgama* .
   <sub>attested</sub>

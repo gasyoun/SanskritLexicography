@@ -13,7 +13,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 - **RU:** *havyavaha* _m._ огонь
 [R. 5,89,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,19)
-— Vgl. *huta˚* .
+— ср. *huta˚* .
   <sub>attested</sub>
 
 **PW)** *havyavaha* _m._ Feuer.

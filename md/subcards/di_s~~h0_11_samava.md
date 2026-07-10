@@ -8,6 +8,4 @@
 
 - **RU:** — *samava* указывать, разъяснять что-л.: *rudraṃ vai devā yajñānnirabhajaṃste samavādiśan eṣa te mātari bhāga iti*
 [KĀṬH. 28,6.]
-- **EN:** — *samava* to point to, explain with regard to something: *rudraṃ vai devā yajñānnirabhajaṃste samavādiśan eṣa te mātari bhāga iti*
-[KĀṬH. 28,6.]
   <sub>attested</sub>

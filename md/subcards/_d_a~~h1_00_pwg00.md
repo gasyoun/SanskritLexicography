@@ -9,12 +9,16 @@
 [ŚKDR.] und [WILS.] statt *dvāraka* gelesen) und *brahman*; der nom. lautet hier *dhā* nicht *dhās* (wie
 [ŚKDR.] und [WILS.] richtig angeben). Nach
 [EKĀCṢARAK.] im [ŚKDR.] ist *dhā* auch ein Name Bṛhaspati's.
-- **EN:** 2. *dhā* (= 1. *dhā*)
- 1) _adj._ nom. ag. at the end of compp.; s. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* u. s. w. shortened *dha* in *adomadha, garbhadha*. According to
-[MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* is (so
-[ŚKDR.] and [WILS.] have read instead of *dvāraka*) and *brahman*; the nom. reads here *dhā* not *dhās* (as
-[ŚKDR.] and [WILS.] correctly indicate). According to
-[EKĀCṢARAK.] in [ŚKDR.], *dhā* is also a name Bṛhaspati's.
+
+- **RU:** 2. *dhā* (= 1. *dhā*)
+ 1) _adj._ nom. ag. в конце compp.; см. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* и т.д. Сокращённо *dha* в *adomadha, garbhadha* . По
+[MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* (так
+[ŚKDR.] и [WILS.] вместо *dvāraka*) и *brahman*; nom. звучит здесь *dhā*, а не *dhās* (как
+[ŚKDR.] и [WILS.] верно указывают). По
+[EKĀCṢARAK.] в [ŚKDR.] *dhā* также имя Брихаспатис.
+  <sub>lexicographic</sub>
 
 **2)** — 2) _f._ nom. act. in *tirodhā, durdhā, dvidha* . Das _adv._ suff. *dhā* nach Zahlwörtern (*dvidhā* u. s. w.) gehört gleichfalls hierher und ist als instr. aufzufassen; vgl. den Gebrauch von *dhātu* mit Zahlwörtern, und *kṛtvas* .
-- **EN:** — 2) _f._ nom. act. in *tirodhā, durdhā, dvidha*. The _adv._ suff. *dhā* after numerals (*dvidhā* u. s. w.) likewise belongs here and is to be understood as instr.; vgl. the use of *dhātu* with numerals, and *kṛtvas*.
+
+- **RU:** — 2) _f._ nom. act. в *tirodhā, durdhā, dvidha* . _adv._ suff. *dhā* после числительных (*dvidhā* и т.д.) также относится сюда и должно быть понято как instr.; ср. употребление *dhātu* с числительными, и *kṛtvas* .
+  <sub>lexicographic</sub>

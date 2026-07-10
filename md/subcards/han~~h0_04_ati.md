@@ -3,15 +3,12 @@
 `han~~h0_04_ati`
 
 
-**1)** — *ati*, partic. *˚hata*
+**ati-head)** — *ati*, partic. *˚hata*
  1) angesteckt, befestigt: *tasya hṛdaye pādāvatihatau*
 [ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13)
 
 - **RU:** — *ati*, partic. *˚hata*
 1) прикреплённый, закреплённый: *tasya hṛdaye pādāvatihatau*
-[ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13)
-- **EN:** — *ati*, partic. *˚hata*
- 1) fastened, affixed: *tasya hṛdaye pādāvatihatau*
 [ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13)
   <sub>attested</sub>
 
@@ -21,8 +18,5 @@
 
 - **RU:** 2) погублённый, уничтоженный: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. желать спастись
-[AIT. UP. 3,3.] возможно, следует читать *atyajigāṃsat* st. *atyajighāṃsat*.
-- **EN:** — 2) ruined, destroyed: *vyāyāmātihata*
-[CARAKA 10,9.] — desid. to wish to escape
-[AIT. UP. 3,3.] perhaps *atyajigāṃsat* st. *atyajighāṃsat* should be read.
+[AIT. UP. 3,3.] возможно, следует читать *atyajigāṃsat* вместо *atyajighāṃsat*.
   <sub>attested</sub>

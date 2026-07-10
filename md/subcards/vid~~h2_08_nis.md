@@ -16,7 +16,7 @@
 [ṚV. 1,120,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.12) mit acc.: *pāṇḍityaṃ nirvidya bālyena tiṣṭhāset* die Gelehrsamkeit von sich thuend
 [ŚAT. BR. 14,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,4,1)
 
-- **RU:** — 2) med. освобождаться (от чего-л.), избавляться, с gen.: *adha svapnasya nirvide 'bhuñjataśca revataḥ*
+- **RU:** — 2) мед. освобождаться (от чего-л.), избавляться, с gen.: *adha svapnasya nirvide 'bhuñjataśca revataḥ*
 [ṚV. 1,120,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.12) с acc.: *pāṇḍityaṃ nirvidya bālyena tiṣṭhāset* слагающий с себя учёность
 [ŚAT. BR. 14,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,4,1)
   <sub>attested</sub>
@@ -65,12 +65,12 @@
 [MBH. 3,14792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14792)
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11) [5,13,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,6) [7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25) [11,20,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,20,9) *nirvidya* absol.
 [1,4,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,12) [4,13,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,48) [MBH. 12,3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) [NAIṢ. 3,128.] partic. *nirviṇa* (иногда ошибочно пишется *nirvinna*)
-[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Vārtt.
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Вартт.
 [VOP. 26,88.fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) пресыщенный, уставший от чего-л., с abl.: *kṣatrabhāvāt*
 [MBH. 1,6692.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6692) *jīvitāt*
 [7,5575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5575) [KATHĀS. 86,108.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,108) [ŚAṂK.] к [BṚH. ĀR. UP. S. 196.] [BHĀG. P. 3,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,7) [4,13,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,18) [47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,47) с instr.: *dehenānena*
 [MBH. 6,5348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5348)
-[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Vārtt., Schol. [KATHĀS. 5,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,125) [PAÑCAT. ed. orn. 42,3.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?42,3) с gen.: *matsyamāṃsānām* (*matsyamāṃsādanena* [ed. Bomb.] [54,19](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,19))
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Вартт., схол. [KATHĀS. 5,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,125) [PAÑCAT. ed. orn. 42,3.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?42,3) с gen.: *matsyamāṃsānām* (*matsyamāṃsādanena* [ed. Bomb.] [54,19](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,19))
 [PAÑCAT. 51,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?51,25) [137,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?137,1) с loc. [KĀM. NĪTIS. 18,42.] [BHĀG. P. 11,20,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,20,27) дополнение предшествует в comp.
 [KATHĀS. 30,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,98) [40,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,27)
 [RĀJA-TAR. 3,503.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,503)
@@ -87,6 +87,6 @@
 **4 (Nachtrag))** — Vgl. *nirveda* . — caus. Jmd zur Verzweiflung bringen: *nirvedayitvā tu paraṃ hatvā vā*
 [MBH. 12,2658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2658)
 
-- **RU:** — Vgl. *nirveda* . — caus. приводить кого-л. в отчаяние: *nirvedayitvā tu paraṃ hatvā vā*
+- **RU:** — ср. *nirveda* . — caus. приводить кого-л. в отчаяние: *nirvedayitvā tu paraṃ hatvā vā*
 [MBH. 12,2658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2658)
   <sub>attested</sub>

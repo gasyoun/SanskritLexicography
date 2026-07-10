@@ -8,7 +8,7 @@
 [TS. 3,1,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,8,2) — caus.
 
 - **RU:** — *pra*
- 1) отдавать так v. a. упразднять: *viśo rājñaḥ pradātorīśvarāḥ*
+ 1) отдавать так преим. упразднять: *viśo rājñaḥ pradātorīśvarāḥ*
 [TS. 3,1,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,8,2) — caus.
   <sub>attested</sub>
 

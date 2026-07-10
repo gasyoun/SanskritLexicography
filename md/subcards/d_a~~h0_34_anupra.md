@@ -12,5 +12,5 @@
 
 **tail)** — Vgl. *anupradāna* .
 
-- **RU:** — Vgl. *anupradāna* .
+- **RU:** — ср. *anupradāna* .
   <sub>lexicographic</sub>

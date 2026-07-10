@@ -5,5 +5,5 @@
 
 **1)** — *upa* s. *upavid* .
 
-- **RU:** — *upa* s. *upavid* .
+- **RU:** — *upa* см. *upavid* .
   <sub>attested</sub>

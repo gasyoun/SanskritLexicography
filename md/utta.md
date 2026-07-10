@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 5 sense(s) · RU 5/5 · EN 0/5_
 
 **1)** *utta* partic. von 2. *ud*; s. d.
 
-- **RU:** *utta* partic. от 2. *ud*; s. d.
+- **RU:** *utta* partic. от 2. *ud*; см.
   <sub>lexicographic</sub>
 
 **1 (PW))** *utta* Partic. von *ud, unatti*.

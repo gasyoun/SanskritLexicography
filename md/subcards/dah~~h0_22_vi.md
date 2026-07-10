@@ -8,7 +8,7 @@
 [ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) verbrennen, durch Feuer vernichten: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
 
-- **RU:** — *vi* «выжигать» (рану u. s. w.)
+- **RU:** — *vi* «выжигать» (рану и т.д.)
 [SUŚR. 1,100,21.] «повредить огнём, обжигать»: *mainamagne vi daho mābhi śocaḥ*
 [ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) «сжигать, уничтожать огнём»: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
@@ -77,7 +77,7 @@
 [1,79,8.] *pitta*
 [78,18.] *āpo 'vidagdhāḥ*
 [20,13.] *bhuktaṃ chardayatyavidagdhamatisāryate vā*
-[118,15. 2,139,16.] Vgl. *pittavidagdhadṛṣṭi* .
+[118,15. 2,139,16.] ср. *pittavidagdhadṛṣṭi* .
   <sub>attested</sub>
 
 **pp-4)** — 4) zersetzt, verdorben: *doṣāḥ*
@@ -126,8 +126,8 @@
 [ŚIŚ. 7,44.]
 [SĀH. D. 21,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?21,4) *snigdhavidagdhamugdhamadhurairlolaiḥ kaṭākṣaiḥ*
 [BHARTṚ. 1,97.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,97) *vidagdha = paṇḍita*
-[ŚABDAR.] в [ŚKDR.] = *kuśala* u. s. w.
+[ŚABDAR.] в [ŚKDR.] = *kuśala* и т.д.
 [H. 343.](https://sanskrit-lexicon-scans.github.io/abch2/app1?343) = *nāgara*
 [TRIK. 3,1,5.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,5) *vidagdhā = vāṇinī*
-[3,248.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,248) Vgl. *durvidagdha, vidagdha* N. pr., *vidāha* .
+[3,248.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,248) ср. *durvidagdha, vidagdha* имя собств., *vidāha* .
   <sub>attested</sub>

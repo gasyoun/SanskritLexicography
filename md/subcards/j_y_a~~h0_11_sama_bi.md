@@ -8,6 +8,4 @@
 
 - **RU:** — *samabhi* познавать, узнавать: *indrasenāṃ saha bhrātrā samabhijñāya*
 [MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945)
-- **EN:** — *samabhi* to recognize: *indrasenāṃ saha bhrātrā samabhijñāya*
-[MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945)
   <sub>attested</sub>

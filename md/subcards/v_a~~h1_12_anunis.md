@@ -8,6 +8,4 @@
 
 - **RU:** — *anunis* угасать вслед за (acc.): *nirvāṇamanunirvāti tapanaṃ tapanopalaḥ*
 [Spr. 1611.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1611)
-- **EN:** — *anunis* to go out after (acc.): *nirvāṇamanunirvāti tapanaṃ tapanopalaḥ*
-[Spr. 1611.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1611)
   <sub>attested</sub>

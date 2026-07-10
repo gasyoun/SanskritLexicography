@@ -28,11 +28,11 @@
 [TBR. 2,3,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,7,1)
 [TS. 2,2,8,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,6) *īśvaraṃ vai vratamavisṛṣṭaṃ pradahaḥ*
 [1,7,6,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,6,6) *tattvā mā pradhākṣīriti* (после
-[ŚAṂK.] перестановки лиц; следует читать viell. *˚kṣīditi*)
+[ŚAṂK.] перестановки лиц; следует читать возможно *˚kṣīditi*)
 [CHĀND. UP. 4,1,2.] *prādahan śaraṇānyanye prajānāṃ jvalitolmukaiḥ*
 [BHĀG. P. 7,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,15) *na pāvakastvāṃ pradahiṣyati*
 [MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120) [8362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8362) *pāṇḍavāgnim — dīptaṃ pradahantamivāhitān*
-[4,1520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1520) *bhīmasenadavāgnestu mama putrāṃstṛṇopamān . pradhakṣyataḥ* (следует читать так: st. *pradhakṣataḥ*)
+[4,1520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1520) *bhīmasenadavāgnestu mama putrāṃstṛṇopamān . pradhakṣyataḥ* (следует читать так: вместо *pradhakṣataḥ*)
 [7,5277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5277) [1,1762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1762) [5,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.678) [7,6092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6092) [16,274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.274) *sarvāṇi mainyāni ca vāsudevaḥ pradhakṣyate sāyakavahnijālaiḥ*
 [3,10274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10274) — [HARIV. 11601.](https://sanskrit-lexicon-scans.github.io/hariv?11601) [13888.](https://sanskrit-lexicon-scans.github.io/hariv?13888) *māṃ śokāgniḥ — pradhakṣyati*
 [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [94,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,15)

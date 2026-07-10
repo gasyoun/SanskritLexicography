@@ -22,6 +22,6 @@
 **3)** — 3) zerschneiden so v. a. einer Sache ein Ende machen: *atiprasaṅgaṃ tu viditya kṛṣṇastānvārayāmāsa*
 [HARIV. 8435.](https://sanskrit-lexicon-scans.github.io/hariv?8435)
 
-- **RU:** — 3) разрезать, так v. a. положить конец чему-либо: *atiprasaṅgaṃ tu viditya kṛṣṇastānvārayāmāsa*
+- **RU:** — 3) разрезать, так преим. положить конец чему-либо: *atiprasaṅgaṃ tu viditya kṛṣṇastānvārayāmāsa*
 [HARIV. 8435.](https://sanskrit-lexicon-scans.github.io/hariv?8435)
   <sub>attested</sub>

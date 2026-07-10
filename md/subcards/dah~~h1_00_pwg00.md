@@ -7,5 +7,5 @@
 [VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
 
 - **RU:** *dah* (= 1. *dah*) _adj._ «пылающий, горящий», в конце comp.: *dakṣiṇadhak (˚sad*
-[VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
+[VS.]) [LĀṬY. 5,7,3]; ср. *uśadhak* .
   <sub>attested</sub>

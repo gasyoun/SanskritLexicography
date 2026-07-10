@@ -14,15 +14,9 @@
 [39.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.39) *bahiṣkanīnike nirādadhyuḥ*
 [KĀṬH. 34,8.]
 [PAÑCAV. BR. 17,12,2.]
-- **EN:** — *nirā* to take out, remove: *tamidhmaṃ kṛtvā yamasyāgniṃ nirādadhau*
-[AV. 12,2,54.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.54) *yaḥ kravyādaṃ nirādadhat*
-[39.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.39) *bahiṣkanīnike nirādadhyuḥ*
-[KĀṬH. 34,8.]
-[PAÑCAV. BR. 17,12,2.]
   <sub>attested</sub>
 
-**cross-ref)** — Vgl. *anirāhita* .
+**tail)** — Vgl. *anirāhita* .
 
-- **RU:** — Vgl. *anirāhita* .
-- **EN:** — Vgl. *anirāhita* .
+- **RU:** — ср. *anirāhita* .
   <sub>attested</sub>

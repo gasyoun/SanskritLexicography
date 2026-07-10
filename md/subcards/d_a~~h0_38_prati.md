@@ -39,6 +39,6 @@
 - **RU:** — 2) давать: *nivṛttaḥ pratidāsyāmi bhojanaṃ te*
 [MBH. 1,6721.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6721)
 [R. 5,68,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,29) *jayaṃ te pratidāsyāmi*
-[MBH. 7,6976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6976) Vgl. *apratītta, pratidāna* . — caus. позаботиться о том, чтобы нечто было возвращено: *satyaṃkārakṛtaṃ dravyaṃ dviguṇaṃ pratidāpayet*
+[MBH. 7,6976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6976) ср. *apratītta, pratidāna* . — caus. позаботиться о том, чтобы нечто было возвращено: *satyaṃkārakṛtaṃ dravyaṃ dviguṇaṃ pratidāpayet*
 [YĀJÑ. 2,61.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,61)
   <sub>attested</sub>

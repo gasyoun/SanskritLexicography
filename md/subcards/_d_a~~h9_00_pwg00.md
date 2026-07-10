@@ -4,4 +4,6 @@
 
 
 **main)** 4. *dhā* (= 3. *dhā)* _adj._ saugend in *payodhā* .
-- **EN:** 4. *dhā* (= 3. *dhā)* _adj._ sucking in *payodhā* .
+
+- **RU:** 4. *dhā* (= 3. *dhā)* _adj._ сосущий в *payodhā* .
+  <sub>attested</sub>

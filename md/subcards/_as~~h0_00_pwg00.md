@@ -36,23 +36,6 @@
 [ŚĀK. 44,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,12) [85,15](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?85,15), v. l. *ā vā˚*
 [PRAB. 111,15.] Лексикографы: *kopapīḍayoḥ*
 [AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
-[H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* и *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
-[MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
-- **EN:** *ās* _interj._ an interjection of joy and displeasure: *āḥ* before *ka, pa* and *sa*
-[MṚCCH. 67,3.]
-[PAÑCAT. 36,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,21) [46,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,2)
-[HIT. 12,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,20) [14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [17,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,16) [23,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,10)
-[ŚĀK. CH. 16,3.] [69,6.] [107,1.]
-[PRAB. 5,18. 22,11. 24,7. 31,10. 72,11. 111,16.]
-[VID. 105.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?105) before *ta*
-[ŚĀK. 94,1](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?94,1), v. l. before *da, ma* and *a*
-[MṚCCH. 63,12.]
-[PRAB. 29,9.]
-[MṚCCH. 126,2. 146,19.] Sometimes the following sound is taken into account in the spelling of the word, which is not to be approved: *āstiṣṭha*
-[MṚCCH. 132,5.] *ā a˚*
-[ŚĀK. 44,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?44,12) [85,15](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?85,15), v. l. *ā vā˚*
-[PRAB. 111,15.] The lexicographers: *kopapīḍayoḥ*
-[AK. 3,4,32,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,32,1) *saṃtāpaprakopayoḥ*
-[H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (vgl. *ā* and *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
+[H. an. 7,2.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,2) *smaraṇe* (ср. *ā* и *ām*) *'pākaraṇe kopasaṃtāpayoḥ*
 [MED. avy. 79.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,79)
   <sub>mixed</sub>

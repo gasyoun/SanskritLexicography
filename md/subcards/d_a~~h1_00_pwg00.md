@@ -12,6 +12,6 @@
 - **RU:** 2. *dā* (= 1. *dā*) _m._ даятель: *kratvā dā astu śreṣṭhaḥ*
 [ṚV. 6,16,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.26) Сюда же, по
 [SĀY.] der dat. *de*
-[5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) В конце comp. дающий, дарующий; s. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* u. s. w.
-— Vgl. 1. *da* .
+[5,41,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.01) В конце comp. дающий, дарующий; см. *anaśva˚, anāśīrdā, apāna˚, abhikṣa˚, aśva˚, ātma˚, āyurdā, ojo˚, go˚, cakṣurdā, jani˚, prāṇa˚, bala˚, vasu˚, havirdā* и т.д.
+— ср. 1. *da* .
   <sub>lexicographic</sub>

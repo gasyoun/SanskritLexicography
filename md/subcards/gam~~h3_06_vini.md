@@ -5,5 +5,4 @@
 
 **1)** — *vini* caus. s. *vinigamaka* .
 
-- **RU:** — *vini* caus. s. *vinigamaka* .
-- **EN:** — *vini* caus. s. *vinigamaka* .
+- **RU:** — *vini* caus. см. *vinigamaka* .

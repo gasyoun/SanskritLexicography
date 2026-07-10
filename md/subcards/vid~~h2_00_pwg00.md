@@ -18,7 +18,7 @@
 - **RU:** [DHĀTUP. 28,138](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) (*lābhe*).
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59) Ударение [SIDDH. K.] к [P. 6,1,186.](https://ashtadhyayi.com/sutraani/6/1/186) *avidam, vidat, vidas, vidās, vidāt, vidatam, vidan, avidāma, vidāsi, vidanti; vide* 3. sg. *vitse, vidanta; aves* параллельно с *avidas*
 [AIT. BR. 2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) *videyam*
-[VS. 7,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,46) Schol. к [P. 3,1,86.](https://ashtadhyayi.com/sutraani/3/1/86) *videma*
+[VS. 7,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,46) схол. к [P. 3,1,86.](https://ashtadhyayi.com/sutraani/3/1/86) *videma*
 [AV. 10,6,35.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.35) *videya*
 [VS. 4,23.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,23) *videṣṭa*
   <sub>lexicographic</sub>
@@ -33,8 +33,8 @@
 - **RU:** 3. sg. [AV. 2,36,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.036.html#av02.036.03) *avitsi* 1. sg. *viveda, viveditha, vividathus, vividus, vividat; vivide, vivitse, vividre, vividrire; vividvaṃs* и *vividivaṃs*
 [P. 7,2,68.](https://ashtadhyayi.com/sutraani/7/2/68)
 [VOP. 26,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,134) *vetsyati* и *˚teḥ vittvā, vettum, vettave*
-[AV. 2,36,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.036.html#av02.036.07) partic. *vitta* (s. bes.) и *vinna*
-[P. 8,2,58](https://ashtadhyayi.com/sutraani/8/2/58) (vgl. Kār.). [VOP. 26,98.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,98) Мнения грамматиков о присоединении соединительного гласного расходятся Kār.
+[AV. 2,36,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.036.html#av02.036.07) partic. *vitta* (см. особ.) и *vinna*
+[P. 8,2,58](https://ashtadhyayi.com/sutraani/8/2/58) (ср. Кар.). [VOP. 26,98.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,98) Мнения грамматиков о присоединении соединительного гласного расходятся Кар.
 3 из [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
   <sub>lexicographic</sub>
 
@@ -169,7 +169,7 @@
 
 **3)** [7072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7072) [5,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1383) [7079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7079) [7,8885](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) (*avindan* [ed. Bomb.] st. *avidan* der [ed. Calc.]). *śarma*
 
-- **RU:** [7072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7072) [5,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1383) [7079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7079) [7,8885](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) (*avindan* [ed. Bomb.] st. *avidan* [ed. Calc.]). *śarma*
+- **RU:** [7072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7072) [5,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1383) [7079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7079) [7,8885](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) (*avindan* [ed. Bomb.] вместо *avidan* [ed. Calc.]). *śarma*
   <sub>attested</sub>
 
 **3)** [R. GORR. 2,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,71,23) [5,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,14) [Spr. (II) 577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?577) [856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?856) [(I) 4169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4169) *imaṃ ca lokaṃ paramaṃ ca*
@@ -198,9 +198,9 @@
 [R. 3,62,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,38) [5,32,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,38)
 [Spr. 4944.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4944)
 
-- **RU:** [MĀRK. P. 33,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?33,15) *vindyāt* (vgl. u. 10)
-[MBH. 3,8123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8123) [8144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8144) [8153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8153) [13,5384](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5384) (*vidyāt* ошибочно [ed. Calc.]). med.: *tadavindata*
-[BHĀG. P. 3,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,19) [4,29,77.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,77) *na diśo 'vindata* так v. a. «не мог разобраться в странах света»
+- **RU:** [MĀRK. P. 33,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?33,15) *vindyāt* (ср. u. 10)
+[MBH. 3,8123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8123) [8144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8144) [8153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8153) [13,5384](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5384) (*vidyāt* ошибочно [ed. Calc.]). мед.: *tadavindata*
+[BHĀG. P. 3,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,19) [4,29,77.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,77) *na diśo 'vindata* так преим. «не мог разобраться в странах света»
 [MBH. 13,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.535) *rājyam*
 [Spr. 4261.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4261) *payaḥ*
 [4917.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4917) *phalam*
@@ -237,7 +237,7 @@
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an. 2,286.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,286)
 [MED. n. 20.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,20) найден(а/о)
-[YĀJÑ. 2,131.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,131) Vgl. *aviśva˚, kroṣṭuvinnā, matsya˚, śṛgāla˚*.* vidita (= labdha*
+[YĀJÑ. 2,131.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,131) ср. *aviśva˚, kroṣṭuvinnā, matsya˚, śṛgāla˚*.* vidita (= labdha*
 [NĪLAK.]) [MBH. 3,15621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15621)
   <sub>attested</sub>
 
@@ -270,7 +270,7 @@ sich zuwendend: das will ich thun u. s. w..
 [ŚAT. BR. 11,5,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,1) *devā vividānā* (зная
 [SĀY.]) *iva samutpatantyado 'haṃ kariṣye 'do 'haṃ gamiṣyāmīti* {%боги устремляются, к тому или иному
 
-обращаясь: это я сделаю u. s. w..
+обращаясь: это я сделаю и т.д..
 [AIT. BR. 5,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,28) *nakī revantaṃ sakhyāya vindase* ты выбираешь себе в друзья
 [ṚV. 8,21,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.021.html#rv08.021.14) *moghamannaṃ vindati* он тщетно ищет пищу
 [MBH. 5,387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.387) *rājānaṃ prathamaṃ vindettato bhāryāṃ tato dhanam*

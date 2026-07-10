@@ -11,20 +11,12 @@ Sch. als _n._ nom. act.
 
 - **RU:** — *adhi* обращаться к кому-либо, побуждать, просить: *adhīṣṭa*
 [P. 5,1,80.](https://ashtadhyayi.com/sutraani/5/1/80) *māsamadhīṣṭo māsiko 'dhyāpakaḥ*
-Sch. как _n._ nom. act.
+схол. как _n._ nom. act.
 [P. 3,3,161.](https://ashtadhyayi.com/sutraani/3/3/161) [166.](https://ashtadhyayi.com/sutraani/3/3/166) *adhīṣṭaḥ* (sic) *satkārapūrvako vyāpāraḥ*
-[161](https://ashtadhyayi.com/sutraani/3/3/161), Sch.
-- **EN:** *adhi* to approach someone, summon, request: *adhīṣṭa*
-[P. 5,1,80.](https://ashtadhyayi.com/sutraani/5/1/80) *māsamadhīṣṭo māsiko 'dhyāpakaḥ*
-Sch. as _n._ nom. act.
-[P. 3,3,161.](https://ashtadhyayi.com/sutraani/3/3/161) [166.](https://ashtadhyayi.com/sutraani/3/3/166) *adhīṣṭaḥ* (sic) *satkārapūrvako vyāpāraḥ*
-[161](https://ashtadhyayi.com/sutraani/3/3/161), Sch.
+[161](https://ashtadhyayi.com/sutraani/3/3/161), схол.
   <sub>attested</sub>
-
-**closing)** — Vgl. *adhyeṣaṇa* .
-- **EN:** — Vgl. *adhyeṣaṇa*.
 
 **cross-ref)** — Vgl. *adhyeṣaṇa* .
 
-- **RU:** — Vgl. *adhyeṣaṇa* .
+- **RU:** — ср. *adhyeṣaṇa* .
   <sub>attested</sub>

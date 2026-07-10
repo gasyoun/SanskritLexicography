@@ -5,7 +5,7 @@
 
 **PWG-1)** *nibarhaṇa* s. *nivarhaṇa* .
 
-- **RU:** *nibarhaṇa* см. (отсылка к другой статье) s. *nivarhaṇa* .
+- **RU:** *nibarhaṇa* см. (отсылка к другой статье) см. *nivarhaṇa* .
   <sub>lexicographic</sub>
 
 **PW-1)** *nibarhaṇa*

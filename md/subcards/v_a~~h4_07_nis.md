@@ -7,7 +7,5 @@
 [P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), Schol.
 
 - **RU:** — *nis*, *niruta*
-[P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), Schol.
-- **EN:** — *nis*, *niruta*
-[P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), Schol.
+[P. 6,4,2](https://ashtadhyayi.com/sutraani/6/4/2), схол.
   <sub>attested</sub>

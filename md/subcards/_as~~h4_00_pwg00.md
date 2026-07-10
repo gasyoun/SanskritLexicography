@@ -8,20 +8,6 @@
 - **RU:** 2. *ās* с *adhi*
   <sub>attested</sub>
 
-**intro)** *ās* mit *adhi*
- 4) *vivādādhyāsita*
-[SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
-- **EN:** *ās* with *adhi*
- 4) *vivādādhyāsita*
-[SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
-
-**9)** — *upa*
- 9) *iha prāyamupāsiṣye* (so [ed. Bomb.])
-[MBH. 3,10580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10580)
-- **EN:** — *upa*
- 9) *iha prāyamupāsiṣye* (so [ed. Bomb.])
-[MBH. 3,10580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10580)
-
 **4))** 4) *vivādādhyāsita*
 [SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.]
 

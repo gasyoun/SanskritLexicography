@@ -8,7 +8,7 @@
 v. l.) und seltener *vedayati* .
 
 - **RU:** — caus. *vedayate* (*cetanākhyānavivāseṣu*
-[DHĀTUP. 33,34.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) *vedana* st. *cetana* и *vivāsa, nivedana, parivādana* и *vāda* st. *vivāsa*
+[DHĀTUP. 33,34.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) *vedana* вместо *cetana* и *vivāsa, nivedana, parivādana* и *vāda* вместо *vivāsa*
 v. l.) и реже *vedayati* .
   <sub>attested</sub>
 
@@ -33,7 +33,7 @@ v. l.) и реже *vedayati* .
 [RĀJA-TAR. 3,351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,351) act. [YĀJÑ. 3,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,243) [MBH. 4,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1463) [HARIV. 10297.](https://sanskrit-lexicon-scans.github.io/hariv?10297) *upasthitaṃ bhayaṃ ghoraṃ pakṣiṇo vedayanti te*
 [R. GORR. 1,76,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,14) *tvayā guptau ca kākutsthau vedayantu nṛpāya te* докладывать, что
 [69,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,27) ([67,26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,26) [SCHL.]). *balaṃ sajjamavedayan*
-[R. SCHL. 2,82,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,25) *yaḥ sādhayantaṃ chandena vedayeddhanikaṃ nṛpe* так v. a. обвинять в том, что
+[R. SCHL. 2,82,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,25) *yaḥ sādhayantaṃ chandena vedayeddhanikaṃ nṛpe* так преим. обвинять в том, что
 [M. 8,176.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,176)
   <sub>attested</sub>
 
@@ -51,7 +51,7 @@ v. l.) и реже *vedayati* .
 **3)** — 3) kund thun so v. a. zeigen, anwenden: *vedayāmāsa māndhātā divyaṃ pāśupataṃ mahat . tadastram*
 [R. 7,23,3,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,3,52)
 
-- **RU:** — 3) давать знать, объявлять так v. a. показывать, применять: *vedayāmāsa māndhātā divyaṃ pāśupataṃ mahat . tadastram*
+- **RU:** — 3) давать знать, объявлять так преим. показывать, применять: *vedayāmāsa māndhātā divyaṃ pāśupataṃ mahat . tadastram*
 [R. 7,23,3,52.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,3,52)
   <sub>attested</sub>
 
@@ -72,7 +72,7 @@ v. l.) и реже *vedayati* .
 - **RU:** — 4) знать: *avedayāno naṣṭasya deśaṃ kālaṃ ca tattvataḥ . varṇaṃ rūpaṃ pramāṇaṃ ca*
 [M. 8,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,32)
 [MBH. 1,3626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3626) *hutaṃ ca hoṣyamāṇaṃ ca kāle vedayate sadā*
-[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) (vgl. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
+[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) (ср. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
 [R. 7,35,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,12) *nākṛtātmā vedayati dharmādharmaviniścayam*
 [MBH. 3,14048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14048) [4,1531.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1531)
 [HARIV. 11293.](https://sanskrit-lexicon-scans.github.io/hariv?11293) [12287.](https://sanskrit-lexicon-scans.github.io/hariv?12287) *nāsau veditavāndhanairvirahitaṃ viśrabdhasuptaṃ janam* не знал, что
@@ -81,7 +81,7 @@ v. l.) и реже *vedayati* .
 [13,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1886) *samupāgataṃ sutaṃ sumantrato vedya* после того как он узнал, что
 [R. GORR. 2,34,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,29) распознавать, воспринимать: *yadvedyate yena vedanena tattato na bhidyate yathā jñānenātmā vedyante taiśca nīlādayaḥ*
 [SARVADARŚANAS. 16,11.fg.] *parasya sukhaṃ vedayati*
-[P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), Schol.
+[P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), схол.
   <sub>attested</sub>
 
 **5)** — 5) fühlen, empfinden: *tvacā hi sparśānvedayate*
@@ -94,7 +94,7 @@ v. l.) и реже *vedayati* .
 - **RU:** — 5) чувствовать, ощущать: *tvacā hi sparśānvedayate*
 [ŚAT. BR. 14,6,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,9) *yena vedayate sarvaṃ sukhaṃ duḥkhaṃ ca janmasu*
 [M. 12,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,13) *sukham*
-[P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), Schol. *rujam*
+[P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), схол. *rujam*
 [MBH. 12,6912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6912) *vedaye na ca saṃyuktān śabdasparśarasānaham*
 [R. 2,64,67.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,67)
   <sub>attested</sub>

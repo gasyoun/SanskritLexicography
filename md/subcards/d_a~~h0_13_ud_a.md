@@ -12,5 +12,5 @@
 
 **2)** — Vgl. *udātta* .
 
-- **RU:** — Vgl. *udātta* .
+- **RU:** — ср. *udātta* .
   <sub>attested</sub>

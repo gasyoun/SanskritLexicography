@@ -10,7 +10,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 **1)** *sulin* _adj._ von *sula* gaṇa *balādi*
 zu [P. 5,2,136.](https://ashtadhyayi.com/sutraani/5/2/136)
 
-- **RU:** *sulin* _adj._ от *sula* gaṇa *balādi*
+- **RU:** *sulin* _adj._ от *sula* гана *balādi*
 к [P. 5,2,136.](https://ashtadhyayi.com/sutraani/5/2/136)
   <sub>lexicographic</sub>
 

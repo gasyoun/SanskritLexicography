@@ -9,8 +9,5 @@ Vgl. *adhimukti* .
 
 - **RU:** — *adhi*, partic. в *śraddhādhimukta* с полным доверием
 [BURN. Intr. 268, N. 1.]
-Vgl. *adhimukti* .
-- **EN:** — *adhi*, partic. in *śraddhādhimukta* "full of trust"
-[BURN. Intr. 268, N. 1.]
-Vgl. *adhimukti*.
+ср. *adhimukti* .
   <sub>attested</sub>

@@ -26,5 +26,5 @@
 
 **2 (Nachtrag/note))** — Vgl. *vinirdahana* .
 
-- **RU:** — Vgl. *vinirdahana* .
+- **RU:** — ср. *vinirdahana* .
   <sub>attested</sub>

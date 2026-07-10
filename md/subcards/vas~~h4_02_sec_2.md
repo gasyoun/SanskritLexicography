@@ -3,11 +3,9 @@
 `vas~~h4_02_sec_2`
 
 
-**1)** — desid. *vivatsati*
+**desid.)** — desid. *vivatsati*
 [P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
 
 - **RU:** — desid. *vivatsati*
-[P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
-- **EN:** — desid. *vivatsati*
-[P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), Schol.
+[P. 7,4,49](https://ashtadhyayi.com/sutraani/7/4/49), схол.
   <sub>attested</sub>

@@ -3,11 +3,9 @@
 `yaj~~h0_03_sec_3`
 
 
-**intens)** — intens. *yāyajyate, yāyajīti*
+**intens-main)** — intens. *yāyajyate, yāyajīti*
 Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
 
 - **RU:** — intens. *yāyajyate, yāyajīti*
-Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
-- **EN:** — intens. *yāyajyate, yāyajīti*
-Schol. to [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
+схол. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
   <sub>lexicographic</sub>

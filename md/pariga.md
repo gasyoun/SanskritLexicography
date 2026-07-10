@@ -11,7 +11,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 [P. 8,4,38](https://ashtadhyayi.com/sutraani/8/4/38), Sch.
 
 - **RU:** *pariga* (от *gam* с *pari*) _adj._ обходящий, ходящий кругом
-[P. 8,4,38](https://ashtadhyayi.com/sutraani/8/4/38), Sch.
+[P. 8,4,38](https://ashtadhyayi.com/sutraani/8/4/38), схол.
   <sub>lexicographic</sub>
 
 **PW-1)** **pariga* _Adj._ umhergehend.

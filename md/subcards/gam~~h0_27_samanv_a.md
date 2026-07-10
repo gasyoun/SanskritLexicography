@@ -14,8 +14,4 @@
 [BURN. Intr. 168, N. 2. 625.]
 
 [SADDH. P. 4,8,b. 9,a.]
-- **EN:** — *samanvā*, partic. *samanvāgata* at the end of a comp. accompanied by, provided with
-[BURN. Intr. 168, N. 2. 625.]
-
-[SADDH. P. 4,8,b. 9,a.]
   <sub>attested</sub>

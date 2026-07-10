@@ -8,6 +8,4 @@
 
 - **RU:** — *abhyupā*, *atisnehavaśāttvāṃ ca vayaṃ sarve 'bhyupāgatāḥ*
 [KATHĀS. 107,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,62)
-- **EN:** — *abhyupā*, *atisnehavaśāttvāṃ ca vayaṃ sarve 'bhyupāgatāḥ*
-[KATHĀS. 107,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,62)
   <sub>attested</sub>

@@ -10,6 +10,6 @@
 
 - **RU:** — *samā*
  2)
- f) извлекать так v. a. познавать: *tattvaṃ samādāya samācaranti svārtham*
+ f) извлекать так преим. познавать: *tattvaṃ samādāya samācaranti svārtham*
 [Spr. 4311.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4311)
   <sub>attested</sub>

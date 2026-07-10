@@ -5,7 +5,7 @@
 
 **1)** *utta* partic. von 2. *ud*; s. d.
 
-- **RU:** *utta* partic. от 2. *ud*; s. d.
+- **RU:** *utta* partic. от 2. *ud*; см.
   <sub>lexicographic</sub>
 
 **1 (PW))** *utta* Partic. von *ud, unatti*.

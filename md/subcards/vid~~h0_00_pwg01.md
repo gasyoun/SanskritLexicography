@@ -13,7 +13,7 @@
 [R. 1,61,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,17) [2,30,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,6) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,7) [3,41,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,3)
 [MEGH. 97.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?97)
 
-- **RU:** — 2) познавать, узнавать в ком-л. или в чём-л. (кого-л. или что-л.), или познавать что-л., признавать за что-л. (часто так v. a. толкуют, называют): *kathaṃ māṃ vetsi cāṇḍālam*
+- **RU:** — 2) познавать, узнавать в ком-л. или в чём-л. (кого-л. или что-л.), или познавать что-л., признавать за что-л. (часто так преим. толкуют, называют): *kathaṃ māṃ vetsi cāṇḍālam*
 [MBH. 13,1880. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1880) *tapodhanaṃ vetsi na māmupasthitam*
 [ŚĀK. 76.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?76) *atha tu vetsi śuci vratamātmanaḥ* чисто знать
 [123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *anantalokāptimatho pratiṣṭhāṃ viddhi tvamenaṃ nihitaṃ guhāyām* знай, что
@@ -64,13 +64,13 @@
 
 - **RU:** [TRIK. 2,1,2.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,1,2) [7,3.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,7,3) *yameva tu śuci vidyā niyataṃ brahmacāriṇam*
 [M. 2,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,115) *tamapīha guruṃ vidyāt*
-[149.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,149) [3,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,23) [4,104.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,104) Kār. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) *viveda*
+[149.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,149) [3,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,23) [4,104.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,104) Кар. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) *viveda*
 [RĀJA-TAR. 8,1835.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,1835) *na cainaṃ vividurdevaṃ kṛtakṣapaṇakākṛtim*
 [KATHĀS. 20,132.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,132) *etasmānmāṃ kuśalinamabhijñānadānādviditvā*
 [MEGH. 111.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?111)
-[RAGH. 3,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,43) med.: *vedate*
+[RAGH. 3,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,43) мед.: *vedate*
 [ŚVETĀŚV. UP. 5,6.] *vidmahe*
-[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) вместо второго acc. у nom. с *iti*, z. B. *śikhaṇḍīti *
+[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) вместо второго acc. у nom. с *iti*, напр. *śikhaṇḍīti *
 
 * ca tāṃ viduḥ*
 [MBH. 5,7407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7407)
@@ -94,7 +94,7 @@
 [5,60,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.06) *sanīnām*
 [8,5,37.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.37) [48,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.08) [7,72,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.072.html#rv07.072.02) [AV. 6,123,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.123.html#av06.123.08) [VS. 6,2.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,2) [ŚAT. BR. 4,3,3,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,3,3,19) *sa hi netramavettava*
 [AV. 10,10,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.010.html#av10.010.22)
-[AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *so 'vedindro vāyumudvai jayatīti* Indra заметил, что Vāyu будет победителем,
+[AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *so 'vedindro vāyumudvai jayatīti* Индра заметил, что Вайу будет победителем,
   <sub>attested</sub>
 
 **3)** [25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,25) [3,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,20) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [11,6,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,2,5) *na vetti vibhavaṃ svam* achtet nicht auf [Spr. (II) 585.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?585)
@@ -146,7 +146,7 @@
 [MBH. 4,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.21) *duḥkhaṃ vanavāsasya vetsyati*
 [R. 2,52,90](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,90) ([29](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,29) [GORR.]). *na viveda duḥkham*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *nāvidadbhayam*
-[BHĀG. P. 4,27,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,18) *taddīrghakālaṃ vettāsi* так v. a. об этом тебе долго придётся помнить
+[BHĀG. P. 4,27,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,18) *taddīrghakālaṃ vettāsi* так преим. об этом тебе долго придётся помнить
 [R. 7,36,34.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,34) *vetti na vedanām* не испытывает боли
 [YĀJÑ. 3,130.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,130) *gandharasān*
 [SUŚR. 2,369,11. 373,2.]
@@ -167,7 +167,7 @@
 - **RU:** — 6) *полагать, думать, считать, предполагать*: *mṛto 'yamiti na vetti*
 [VET. in LA. (III) 21,4.] *dārḍhyaṃ svayaśaso vidan*
 [RĀJA-TAR. 6,173.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,173) *viditveti* (= *iti vi˚)*
-[8,2003.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2003), с двумя дополнениями, так v. a. *считать кемчем-л.*: *ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam*
+[8,2003.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2003), с двумя дополнениями, так преим. *считать кемчем-л.*: *ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam*
 [BHAG. 2,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,19)
 [SUŚR. 1,113,12.]
 [Spr. (II) 519.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?519) [926.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?926) [(I) 4266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4266) *yaṃ māṃ vetsi*
@@ -182,13 +182,13 @@
 [MBH. 3,2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688)
 
 - **RU:** — 7) желать узнать, испытывать, проверять
-[ŚAT. BR. 12,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,3) [9,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,3,4) *tāṃ veda* (2. sg. imper.) так v. a. осведомись о ней
+[ŚAT. BR. 12,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,3) [9,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,3,4) *tāṃ veda* (2. sg. imper.) так преим. осведомись о ней
 [MBH. 3,2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688)
   <sub>attested</sub>
 
 **8)** — 8) *vidita* kennen gelernt, gekannt, bekannt als Kār. zu [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) *tava*
 
-- **RU:** — 8) *vidita* «узнанный, познанный, известный как» Kār. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) *tava*
+- **RU:** — 8) *vidita* «узнанный, познанный, известный как» Кар. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) *tava*
   <sub>attested</sub>
 
 **8)** [7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) [12,4297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4297) [R. 1,2,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,37) [68,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,6) [2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17) [R. GORR. 1,70,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,2) [3,35,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,38) [37,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,22) [4,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,66) [10,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,14) [5,18,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,31) *viditāgama*
@@ -231,9 +231,9 @@
 [R. 1,43,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,43,8) [2,58,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,13) [103,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,22) [4,18,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,18,19) *taccaikasyāḥ svabhāryāyāḥ sa cakre viditaṃ tadā*
 [KATHĀS. 19,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,34) *saumitrirmama viditaḥ pradhānamitram*
 [R. 2,107,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,19)
-[PAÑCAT. I,458.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,458) *rāmo no vidito yo 'yaṃ yathā ca vasudhāṃ gataḥ* «мы знаем о» Rāma
-[R. 3,30,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,22) *tretāyuge prasupto 'si vidito me 'si nāradāt* «я знаю через» Nārada «от тебя, что»
-[HARIV. 6483.](https://sanskrit-lexicon-scans.github.io/hariv?6483) *vidito manye na te 'haṃ rāghavaṃ* (*rāghave?*) *yathā* «ты не знаешь, как я к» Rāma «отношусь»,
+[PAÑCAT. I,458.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,458) *rāmo no vidito yo 'yaṃ yathā ca vasudhāṃ gataḥ* «мы знаем о» Рама
+[R. 3,30,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,22) *tretāyuge prasupto 'si vidito me 'si nāradāt* «я знаю через» Нарада «от тебя, что»
+[HARIV. 6483.](https://sanskrit-lexicon-scans.github.io/hariv?6483) *vidito manye na te 'haṃ rāghavaṃ* (*rāghave?*) *yathā* «ты не знаешь, как я к» Рама «отношусь»,
 [R. 2,73,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,73,11) *vidito bhavānāśramasadāmihasthaḥ* «узнали, что»
 [ŚĀK. 28,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,11) *viditaṃ bhavatāmetadyathā* «вам известно, что»
 [R. 2,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,2,3)
@@ -265,7 +265,7 @@
 
 **8)** [KATHĀS. 123,294.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,294) [158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) (wo *avidito* st. *avedito* zu lesen ist, wie schon das Metrum zeigt). *avidite pituḥ* ohne Wissen des Vaters
 
-- **RU:** [KATHĀS. 123,294.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,294) [158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) (где следует читать *avidito* st. *avedito*, как показывает уже размер стиха). *avidite pituḥ* без ведома отца
+- **RU:** [KATHĀS. 123,294.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,294) [158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) (где следует читать *avidito* вместо *avedito*, как показывает уже размер стиха). *avidite pituḥ* без ведома отца
 
 **8)** [MBH. 5,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5971) *tasmādaviditaṃ tasya gantavyaṃ krodhanasya naḥ* ohne sein Wissen
 
@@ -304,6 +304,6 @@
 [MED. t. 159.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,159) = *śruta*
 [H. an.] = *arthita*
 [MED.] = *pratijñāta*
-([COLEBR.] *saṃvidita* st. *vidita*)
-[AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58) Vgl. 1. *vitta*.
+([COLEBR.] *saṃvidita* вместо *vidita*)
+[AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58) ср. 1. *vitta*.
   <sub>attested</sub>

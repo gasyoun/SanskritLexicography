@@ -8,6 +8,4 @@
 
 - **RU:** — *pratisam* вставать перед кем-л.
 [GOP. BR. 1,2,4.]
-- **EN:** *pratisam* to rise up before someone
-[GOP. BR. 1,2,4.]
   <sub>attested</sub>

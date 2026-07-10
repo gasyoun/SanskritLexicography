@@ -6,6 +6,6 @@
 **1)** — *vi* austheilen, vertheilen: *dakṣiṇāṃ vyadadātteṣāṃ karmiṇāṃ tadanantaram . prācīṃ hotre dadau* u. s. w.
 [R. GORR. 1,13,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,39) *vidatta* Kār. zu [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
 
-- **RU:** — *vi* раздавать, распределять: *dakṣiṇāṃ vyadadātteṣāṃ karmiṇāṃ tadanantaram . prācīṃ hotre dadau* u. s. w.
-[R. GORR. 1,13,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,39) *vidatta* Kār. к [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
+- **RU:** — *vi* раздавать, распределять: *dakṣiṇāṃ vyadadātteṣāṃ karmiṇāṃ tadanantaram . prācīṃ hotre dadau* и т.д.
+[R. GORR. 1,13,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,39) *vidatta* Кар. к [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
   <sub>attested</sub>

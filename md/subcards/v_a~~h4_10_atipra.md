@@ -8,6 +8,4 @@
 
 - **RU:** — *atipra* продолжать нанизывать, добавлять к нанизанному
 [ŚĀṄKH. BR. 11,5.]
-- **EN:** — *atipra* "to set on further, to add further"
-[ŚĀṄKH. BR. 11,5.]
   <sub>attested</sub>

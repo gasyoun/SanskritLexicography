@@ -23,7 +23,7 @@
 [HIT. II,94.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,94)
 
 - **RU:** — b) с partic., иногда также с absolut. описательно; преимущественно о длящемся действии или состоянии: *te nākapālaścarati vicinvan = vicinoti*
-[AV. 10,8,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.12) *agnāvagniścarati praviṣṭaḥ* Agni содержится в огне, заключено в d. F.
+[AV. 10,8,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.12) *agnāvagniścarati praviṣṭaḥ* Агни содержится в огне, заключено в d. F.
 [4,39,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.039.html#av04.039.09) [3,10,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.04) [VS. 2,30.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,30) [TBR. 2,7,15,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,15,1) *ye dasyavaḥ pitṛṣu praviṣṭā jñātimukhā ahutādaścaranti*
 
 [AV. 18,2,28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.28) *eko vṛtrā carasi jighnamānaḥ*
@@ -34,25 +34,7 @@
 [1,6,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,3) [3,5,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,8) [5,1,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,1,1) *javo yaste vājinnihito guhā yaḥ śyene parītto acaracca vāte*
 [VS. 9,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,9)
 [ṚV. 3,38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.04) [48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.048.html#rv03.048.03) [54,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.02)
-[AV. 11,5,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.01) [12,4,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.37) *ime ta indra te vayaṃ ye tvārabhya carāmasi* мы те, Indra, Твои, кто неизменно держится Тебя,
-[ṚV. 1,57,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.057.html#rv01.057.04) *medhāyātmānamārabhya carati yo dīkṣitaḥ*
-[TS. 6,1,11,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,1,11,6) *ceraturvatsayūthāni cārayantau*
-[HARIV. 3548.](https://sanskrit-lexicon-scans.github.io/hariv?3548) *vihāya kāmānyaḥ sarvānpumāṃścarati niḥspṛhaḥ*
-[BHAG. 2,71.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,71) *sa svāminamavajñāya carecca niravagrahaḥ*
-[HIT. II,94.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,94)
-- **EN:** — b) periphrastically with a partic., sometimes also with a absolut.; mostly of a continuing activity or such a state: *te nākapālaścarati vicinvan = vicinoti*
-[AV. 10,8,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.12) *agnāvagniścarati praviṣṭaḥ* Agni is lodged in the fire, is contained in d. F.
-[4,39,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.039.html#av04.039.09) [3,10,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.04) [VS. 2,30.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,30) [TBR. 2,7,15,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,15,1) *ye dasyavaḥ pitṛṣu praviṣṭā jñātimukhā ahutādaścaranti*
-
-[AV. 18,2,28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.28) *eko vṛtrā carasi jighnamānaḥ*
-[ṚV. 3,30,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.04) ([TS. 2,4,13,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,4,13,1)) *āmā pakvaṃ carati bibhratī gauḥ = bibharti*
-[14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.14) *stomāṃścaranti sumatīriyānāḥ*
-[10,47,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.047.html#rv10.047.07) *bhiṣajyantau ceratuḥ*
-[ŚAT. BR. 4,1,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,5,8) *te 'rcantaḥ śrāmyantaśceruḥ*
-[1,6,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,3) [3,5,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,8) [5,1,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,1,1) *javo yaste vājinnihito guhā yaḥ śyene parītto acaracca vāte*
-[VS. 9,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,9)
-[ṚV. 3,38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.04) [48,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.048.html#rv03.048.03) [54,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.02)
-[AV. 11,5,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.01) [12,4,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.37) *ime ta indra te vayaṃ ye tvārabhya carāmasi* it is we, Indra, thine own, who ever cleave to thee,
+[AV. 11,5,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.01) [12,4,37.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.37) *ime ta indra te vayaṃ ye tvārabhya carāmasi* мы те, Индра, Твои, кто неизменно держится Тебя,
 [ṚV. 1,57,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.057.html#rv01.057.04) *medhāyātmānamārabhya carati yo dīkṣitaḥ*
 [TS. 6,1,11,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,1,11,6) *ceraturvatsayūthāni cārayantau*
 [HARIV. 3548.](https://sanskrit-lexicon-scans.github.io/hariv?3548) *vihāya kāmānyaḥ sarvānpumāṃścarati niḥspṛhaḥ*
@@ -84,18 +66,6 @@
 [3,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1736) *sukhaṃ carati loke 'smin*
 [M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) *svasti caranti*
 [BHĀG. P. 3,1,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,35) находиться, стоять, пребывать о светилах: *āśleṣāsu caran*
-[VARĀH. BṚH. S. 9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28) [10,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,15) [18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,18)
-- **EN:** — 4) to live, be, find oneself; used of a more lasting state and of a moving or living subject: *atha śuṣkāsyā cara*
-[AV. 6,139,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.139.html#av06.139.02) *agadaścara*
-[4,17,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.017.html#av04.017.08) *sahasrāyuḥ sukṛtaścareyam*
-[17,1,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av17.001.html#av17.001.27) *sa idbhojo yo gṛhave dadātyannakāmāya carate kṛśāya*
-[ṚV. 10,117,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.117.html#rv10.117.03) *jāyāṃ jijñāse manasā carantīm*
-[AV. 14,1,56.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.56) *eka eva carennityam*
-[M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42) *tasmāccarethaḥ satataṃ kṣamāśīlo jitendriyaḥ*
-[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) *svargaṃ prāptāścaranti sma devaiḥ saha gatavyathāḥ*
-[3,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1736) *sukhaṃ carati loke 'smin*
-[M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) *svasti caranti*
-[BHĀG. P. 3,1,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,35) to be situated, stand, be of stars: *āśleṣāsu caran*
 [VARĀH. BṚH. S. 9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28) [10,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,15) [18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,18)
   <sub>attested</sub>
 
@@ -183,57 +153,12 @@
 [2,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,40) *mṛgayām* охотиться
 [DRAUP. 6,9.]
 [R. 3,49,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,18) *cacāra samare mārgānvāṇaiḥ* прокладывать себе пути
-[34,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) *tithivṛddhyā caretpiṇḍān śukle* принимать пищу, поглощать (vgl. *cārin*)
+[34,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) *tithivṛddhyā caretpiṇḍān śukle* принимать пищу, поглощать (ср. *cārin*)
 [YĀJÑ. 3,324.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,324) *sa ca sukhena śasyaṃ carati* пастись
 [HIT. 81,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?81,15)
 [BHĀG. P. 5,8,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,14) *(uṣṭraḥ) ekastu punaḥ pṛṣṭhe krīḍāṃ kurvanvallarīścaranyāvattiṣṭhati*
 [PAÑCAT. 229,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?229,17) Вероятно, отсюда *car* есть
-[DHĀTUP. 15,51](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15), v. l.; vgl. однако u. *ā*. * tapasā indriyagrāmaṃ yaścaret* умерщвлять плоть, подвергать чувства аскезе
-[MBH. 14,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.544)
-- **EN:** — 5) to set about something, take something up, practise, drive, perform; to undertake a matter; (in acting) to observe; with the acc.: *yatkiṃ cedaṃ daivye jane 'bhidrohaṃ carāmasi*
-[ṚV. 7,89,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.089.html#rv07.089.05) [10,164,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.164.html#rv10.164.04) *yena dhanena prapaṇaṃ carāmi*
-[AV. 3,15,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.015.html#av03.015.05) *rājasūyam*
-[4,8,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.008.html#av04.008.01) *vratāni*
-[11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.011.html#av03.011.02) [VS. 1,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,5) [2,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,28) [ŚAT. BR. 2,4,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,6) [GOBH. 3,1,15.] [ĀŚV. GṚHY. 1,8. 22.] [M. 2,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,187) [4,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,198) *śirovrataṃ vidhivadyaistu cīrṇam*
-[MUṆḌ. UP. 3,2,10.]
-[YĀJÑ. 3,299.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,299)
-[MBH. 1,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1929) [3,7026.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7026) [8070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8070) *caritavrata*
-[R. 1,3,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,1) *brahmacaryaṃ car*
-[ŚĀṄKH. GṚHY. 1,17. 2,11.]
-[M. 2,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,249) *mantraśrutyam*
-[ṚV. 10,134,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.134.html#rv10.134.07) *duścaritam*
-[AV. 9,5,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.03) *girāmupaśrutim*
-[ṚV. 1,10,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.010.html#rv01.010.03) *bahu kṛcchrā carantam*
-[10,52,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.052.html#rv10.052.04) *āpo ha svameva vaśaṃ ceruḥ*
-[ŚAT. BR. 3,9,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,14) [13,5,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,22) *mithutam*
-[4,6,7,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,9) [KAUŚ. 141.] [ŚĀṄKH. ŚR. 15,17,16.] [CHĀND. UP. 3,17,3.] *dharmam*
-[ĀŚV. GṚHY. 1,6.]
-[TAITT. UP. 1,11. 1.] [M. 3,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,30) [YĀJÑ. 1,60.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,60) [MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) [R. 3,10,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,15) [PAÑCAT. III,178.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,178) *tapaḥ*
-[MBH. 3,8504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8504)
-[HARIV. 2321.](https://sanskrit-lexicon-scans.github.io/hariv?2321)
-[R. 1,57,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,2) *cirāccīrṇam — tapaḥ*
-[BHĀG. P. 5,6,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,3) *prakṛṣṭaṃ mayā putra puṇyaṃ cīrṇam*
-[MBH. 15,91.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.91) *yathā nāsatkṛtaṃ kiṃcinmanasāpi carāmyaham*
-[3,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *pāpam*
-[BHAG. 3,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,36) *tejovṛttam*
-[M. 9,303.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,303) *cīrṇavṛtta*
-[MBH. 13,1595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1595) *tvayā caritapūrvam — nīvārabalim*
-[ŚĀK. 96.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?96) *ko hi me bhoktukāmasya vighnaṃ carati* to put an obstacle in the way
-[HIḌ. 3,17.]
-[HARIV. 6790.](https://sanskrit-lexicon-scans.github.io/hariv?6790) *bhaikṣam* to beg alms
-[M. 2,48.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,48) [49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,49) [182.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,182) *brāhmaṇeṣu caredbhaikṣamanindyeṣu*
-[YĀJÑ. 1,29.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,29) [3,59.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,59)
-[R. 2,43,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,4) *vivādam* to wage a dispute
-[M. 8,8.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,8) *saṃbandhān* to enter into relations/alliances
-[2,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,40) *mṛgayām* to hunt
-[DRAUP. 6,9.]
-[R. 3,49,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,18) *cacāra samare mārgānvāṇaiḥ* to make a way for oneself
-[34,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) *tithivṛddhyā caretpiṇḍān śukle* to take in, consume (vgl. *cārin*)
-[YĀJÑ. 3,324.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,324) *sa ca sukhena śasyaṃ carati* to graze
-[HIT. 81,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?81,15)
-[BHĀG. P. 5,8,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,14) *(uṣṭraḥ) ekastu punaḥ pṛṣṭhe krīḍāṃ kurvanvallarīścaranyāvattiṣṭhati*
-[PAÑCAT. 229,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?229,17) Hence probably *car* to eat
-[DHĀTUP. 15,51](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15), v. l.; vgl. however u. *ā*.* tapasā indriyagrāmaṃ yaścaret* to subject the sense-organs to austerities, to mortify
+[DHĀTUP. 15,51](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15), v. l.; ср. однако u. *ā*. * tapasā indriyagrāmaṃ yaścaret* умерщвлять плоть, подвергать чувства аскезе
 [MBH. 14,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.544)
   <sub>attested</sub>
 
@@ -242,13 +167,9 @@
 [ŚAT. BR. 14,7,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,17) *yadanyasya satyanyena carati (strī)* wenn sie dem Einen gehört und mit einem Andern es thut
 [2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
 
-- **RU:** — 6) euphem. с опущением *mithuna* (s. u.
+- **RU:** — 6) euphem. с опущением *mithuna* (см.
 [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5)): иметь дело с, вступать в связь с: *ratvā caritvā*
 [ŚAT. BR. 14,7,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,17) *yadanyasya satyanyena carati (strī)* когда она принадлежит одному, а вступает в связь с другим
-[2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
-- **EN:** — 6) euphem. with omission of *mithuna* (s. u.
-[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5)): to have to do with: *ratvā caritvā*
-[ŚAT. BR. 14,7,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,17) *yadanyasya satyanyena carati (strī)* if she belongs to the one and has to do with another
 [2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
   <sub>attested</sub>
 
@@ -262,22 +183,14 @@ wir dahin wirken, dass der König seinem Worte getreu bleibe,
 
 добиться того, чтобы царь остался верен своему слову,
 [R. 2,107,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,19)
-[GORR. 2,115,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,115,19) читает *nṛpa karavāma* st. *bharata carāma*.
-- **EN:** — 7) to make someone (acc.) into something (acc.): *vayaṃ narendraṃ satyasthaṃ bharata carāma* we wish
-
-to work toward the king remaining true to his word,
-[R. 2,107,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,19)
-[GORR. 2,115,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,115,19) reads *nṛpa karavāma* st. *bharata carāma*.
+[GORR. 2,115,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,115,19) читает *nṛpa karavāma* вместо *bharata carāma*.
   <sub>attested</sub>
 
 **8)** — 8) auskundschaften (vgl. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
 [R. 6,6,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,6,16) *balam . sukhasuptaṃ samāsādya caritaṃ prathamaṃ caraiḥ*
 [7,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,21)
 
-- **RU:** — 8) разведывать, шпионить (vgl. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
-[R. 6,6,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,6,16) *balam . sukhasuptaṃ samāsādya caritaṃ prathamaṃ caraiḥ*
-[7,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,21)
-- **EN:** — 8) to spy out, reconnoitre (vgl. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
+- **RU:** — 8) разведывать, шпионить (ср. *cara): caritā bhavatā ke 'tra śūrāḥ ke 'tra plavaṃgamāḥ . kīdṛśāḥ kati vā sainye vānarā ye durāsadāḥ ..*
 [R. 6,6,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,6,16) *balam . sukhasuptaṃ samāsādya caritaṃ prathamaṃ caraiḥ*
 [7,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,21)
   <sub>attested</sub>

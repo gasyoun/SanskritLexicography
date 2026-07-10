@@ -8,6 +8,4 @@
 
 - **RU:** — *anuvi* продувать насквозь по порядку или вдоль: *diśaḥ*
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
-- **EN:** — *anuvi* to blow through in succession or lengthwise: *diśaḥ*
-[TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
   <sub>attested</sub>

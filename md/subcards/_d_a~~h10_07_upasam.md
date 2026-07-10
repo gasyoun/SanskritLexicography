@@ -3,10 +3,17 @@
 `_d_a~~h10_07_upasam`
 
 
-**intro)** — *upasam*
-- **EN:** — *upasam*
+— *upasam*
+
+- **RU:** — *upasam*
+  <sub>attested</sub>
 
 **4)** 4) *upasaṃhita* ergeben: *pariṣad*
-[CARAKA 3,8.]
-- **EN:** 4) *upasaṃhita* to yield, result in: *pariṣad*
-[CARAKA 3,8.]
+
+- **RU:** 4) *upasaṃhita* предаваться, отдаваться: *pariṣad*
+  <sub>attested</sub>
+
+**tail)** [CARAKA 3,8.]
+
+- **RU:** [CARAKA 3,8.]
+  <sub>attested</sub>

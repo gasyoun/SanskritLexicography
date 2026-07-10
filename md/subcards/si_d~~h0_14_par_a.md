@@ -5,6 +5,5 @@
 
 **1)** — *parā* s. *parāsedha* in den Nachträgen.
 
-- **RU:** — *parā* s. *parāsedha* в Nachträgen.
-- **EN:** — *parā* s. *parāsedha* in the addenda.
+- **RU:** — *parā* см. *parāsedha* в Nachträgen.
   <sub>attested</sub>

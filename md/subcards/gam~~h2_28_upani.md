@@ -8,6 +8,4 @@
 
 - **RU:** — *upani*
 [AIT. BR. 7,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,31)
-- **EN:** — *upani*
-[AIT. BR. 7,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,31)
   <sub>attested</sub>

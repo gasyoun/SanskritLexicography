@@ -3,8 +3,7 @@
 `car~~h1_24_parisam`
 
 
-**{T6})** — *parisam* vgl. *parisaṃcara; — pratisam* vgl. *pratisaṃcara* .
+**parisam_main)** — *parisam* vgl. *parisaṃcara; — pratisam* vgl. *pratisaṃcara* .
 
-- **RU:** — *parisam* vgl. *parisaṃcara; — pratisam* vgl. *pratisaṃcara* .
-- **EN:** — *parisam* vgl. *parisaṃcara; — pratisam* vgl. *pratisaṃcara* .
+- **RU:** — *parisam* ср. *parisaṃcara; — pratisam* ср. *pratisaṃcara* .
   <sub>attested</sub>

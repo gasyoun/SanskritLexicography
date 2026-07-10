@@ -24,5 +24,5 @@
 
 **2 (Nachtrag/note))** — Vgl. *paridahana, paridāhin* .
 
-- **RU:** — Vgl. *paridahana, paridāhin* .
+- **RU:** — ср. *paridahana, paridāhin* .
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *samabhi* соединяться (плотски) с: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
 [KATHĀS. 119,202.](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,202)
-- **EN:** *samabhi* to unite oneself (carnally) with: *na ca yujyate 'nyarūpo dehenānena samabhigantumayam*
-[KATHĀS. 119,202.](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,202)
   <sub>attested</sub>

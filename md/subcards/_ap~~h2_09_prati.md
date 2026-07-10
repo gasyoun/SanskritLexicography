@@ -8,6 +8,4 @@
 
 - **RU:** — *prati* desid. «свататься за» (девушку): *tvatsvāmyarthaṃ pratīpsa tām*
 [KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
-- **EN:** — *prati* desid. "to woo, court" (a girl): *tvatsvāmyarthaṃ pratīpsa tām*
-[KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
   <sub>attested</sub>

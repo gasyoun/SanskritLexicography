@@ -1,0 +1,72 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWG — словарь сокращений</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#6a6a6a;--line:#e4e4e4;--accent:#7a1f1f;--card:#fafafa}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--accent:#e6928a;--card:#1e1e1e}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+#wrap{max-width:1000px;margin:0 auto;padding:20px 24px 60px}
+a{color:var(--accent)}
+h1{font-size:24px;margin:4px 0 4px}
+.back{font-size:13px;color:var(--mut);text-decoration:none;margin-bottom:10px;display:inline-block}
+.summary{color:var(--mut);font-size:13px;margin:6px 0 16px;line-height:1.6}
+.summary b{color:var(--fg)}
+#q{width:100%;max-width:360px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0;background:var(--bg)}
+tr:hover td{background:var(--card)}
+.tok{font-family:ui-monospace,monospace;white-space:nowrap}
+.bucket{display:inline-block;font-size:10px;border-radius:9px;padding:1px 7px;letter-spacing:.02em}
+.bucket.translated{background:#1a7a3a;color:#fff}
+.bucket.latin{background:var(--mut);color:#fff}
+.bucket.unresolved{background:#a04000;color:#fff}
+.ru{color:var(--fg)}.ru.na{color:var(--mut);font-style:italic}
+.count{text-align:right;font-variant-numeric:tabular-nums}
+</style></head><body><div id="wrap">
+<a class="back" href="index.html">← к статьям</a>
+<h1>Словарь сокращений PWG</h1>
+<div class="summary" id="summary">Загрузка…</div>
+<input id="q" placeholder="фильтр по сокращению / расшифровке…">
+<table><thead><tr><th>Сокращение</th><th>×</th><th>Статей</th><th>DE</th><th>EN</th><th>RU (в тексте)</th><th>Статус</th></tr></thead>
+<tbody id="rows"></tbody></table>
+</div>
+<script src="abbreviations.js"></script>
+<script>
+var ROWS=window.AB_ROWS||[];
+var tbody=document.getElementById('rows'), q=document.getElementById('q');
+var BUCKET_LABEL={translated:'переведено на RU',latin:'международный (лат.)',unresolved:'не найдено в pwgab'};
+function esc(x){return x==null?'':(''+x);}
+function render(filter){
+ tbody.innerHTML='';
+ var f=(filter||'').toLowerCase();
+ ROWS.filter(function(r){
+  if(!f)return true;
+  return r.token.toLowerCase().indexOf(f)>=0||(r.de||'').toLowerCase().indexOf(f)>=0
+   ||(r.en||'').toLowerCase().indexOf(f)>=0||(r.ru_display||'').toLowerCase().indexOf(f)>=0;
+ }).forEach(function(r){
+  var tr=document.createElement('tr');
+  var ru = r.ru_display ? '<span class="ru">'+esc(r.ru_display)+'</span>' : '<span class="ru na">— (как в DE)</span>';
+  tr.innerHTML='<td class="tok">'+esc(r.token)+'</td>'
+   +'<td class="count">'+r.count+'</td>'
+   +'<td class="count">'+r.n_roots+'</td>'
+   +'<td>'+esc(r.de)+'</td>'
+   +'<td>'+esc(r.en)+'</td>'
+   +'<td>'+ru+'</td>'
+   +'<td><span class="bucket '+r.bucket+'">'+BUCKET_LABEL[r.bucket]+'</span></td>';
+  tbody.appendChild(tr);
+ });
+}
+var total=ROWS.reduce(function(a,r){return a+r.count;},0);
+var translated=ROWS.filter(function(r){return r.bucket==='translated';}).reduce(function(a,r){return a+r.count;},0);
+var latin=ROWS.filter(function(r){return r.bucket==='latin';}).reduce(function(a,r){return a+r.count;},0);
+var unresolved=ROWS.filter(function(r){return r.bucket==='unresolved';}).reduce(function(a,r){return a+r.count;},0);
+document.getElementById('summary').innerHTML=
+ '<b>'+ROWS.length+'</b> различных сокращений · <b>'+total+'</b> употреблений во всём корпусе PWG→RU.<br>'
+ +'В колонке RU: <b>'+translated+'</b> ('+Math.round(100*translated/total)+'%) переведены на русский (Bein.→эпит., s.u.→см. и т.п.); '
+ +'<b>'+latin+'</b> ('+Math.round(100*latin/total)+'%) — грамматические категории (падеж/наклонение/залог/часть речи), '
+ +'оставлены международным латинским сокращением по решению 10-07-2026 (только подсказка при наведении); '
+ +(unresolved?('<b>'+unresolved+'</b> ('+Math.round(100*unresolved/total)+'%) не найдены в таблице pwgab (791 запись) — редкие/нестандартные формы.'):'все распознаны таблицей pwgab.');
+q.oninput=function(){render(q.value);};
+render('');
+</script></body></html>

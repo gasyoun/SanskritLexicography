@@ -31,8 +31,8 @@
 [TBR. 3,12,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,12,2,2)
 [TS. 2,5,3,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,3,6) *tathā purākṛtaṃ karma kartāramanuvindati*
 [Spr. 2312.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2312) *bhadram*
-[BHĀG. P. 4,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,24) *anvavindata* med.
-[8,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,19) [10,8,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,47) [11,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,20) *śāradvatīṃ tato bhāryāṃ kṛpīṃ droṇo 'nvavindata* так v. a. взял в жёны
+[BHĀG. P. 4,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,24) *anvavindata* мед.
+[8,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,19) [10,8,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,47) [11,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,20) *śāradvatīṃ tato bhāryāṃ kṛpīṃ droṇo 'nvavindata* так преим. взял в жёны
 [MBH. 1,5114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5114) найти вслед за кем-л.
 [TS. 7,1,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,6,1) pass. иметься —, быть налицо: *sa ghā vide anvindro gaveṣaṇaḥ*
 [ṚV. 1,132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.03) *trayodaśo māso nānuvidyate*
@@ -43,7 +43,7 @@
 **2)** — 2) finden so v. a. halten für: *indukiraṇamanuvindati khedamadhīram*
 [GĪT. 4,2.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?4,2)
 
-- **RU:** — 2) найти, так v. a. счесть за: *indukiraṇamanuvindati khedamadhīram*
+- **RU:** — 2) найти, так преим. счесть за: *indukiraṇamanuvindati khedamadhīram*
 [GĪT. 4,2.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?4,2)
   <sub>attested</sub>
 
@@ -51,7 +51,7 @@
 [TBR. 3,12,2,8](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,12,2,8)). — desid. *anuvivitsati* aufsuchen wollen
 [TBR. 3,12,2,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,12,2,8)
 
-- **RU:** — Vgl. *anuvitti* (также
+- **RU:** — ср. *anuvitti* (также
 [TBR. 3,12,2,8](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,12,2,8)). — desid. *anuvivitsati* желать разыскать
 [TBR. 3,12,2,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,12,2,8)
   <sub>attested</sub>

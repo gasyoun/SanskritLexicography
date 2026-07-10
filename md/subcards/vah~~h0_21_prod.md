@@ -7,12 +7,9 @@
 [PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
 
 - **RU:** — *prod* выражать, проявлять: *bhūteṣu prodvahaṃścānukampām* [PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
-- **EN:** — *prod* "to express, manifest, display": *bhūteṣu prodvahaṃścānukampām*
-[PAÑCAR. 3,10,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,10,3)
   <sub>attested</sub>
 
-**2)** — Vgl. *prodvāha* .
+**desid)** — Vgl. *prodvāha* .
 
-- **RU:** — Vgl. *prodvāha* .
-- **EN:** — Vgl. *prodvāha*.
+- **RU:** — ср. *prodvāha* .
   <sub>attested</sub>

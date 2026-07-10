@@ -8,6 +8,4 @@
 
 - **RU:** — *abhyudā* = *udā* 1.
 [GOBH. 2,1,19.]
-- **EN:** — *abhyudā* = *udā* 1.
-[GOBH. 2,1,19.]
   <sub>attested</sub>

@@ -5,17 +5,17 @@
 
 **Präsensstämme)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
 
-- **RU:** **1.** √*dā*, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) и *˚tta*
+- **RU:** **1.** √*dā*, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25)) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (см. *vyā*) и *˚tta*
   <sub>attested</sub>
 
 **1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.
 
-- **RU:** — 1〉 давать, дарить, отдавать; с Acc. или партитивным Gen. предмета и Dat., Gen. или Loc. лица. *kanyām* отдать дочь кому-л. в жёны (*bhāryām*, что, однако, обычно опускается) дать. *datta* о сыне, так v. a. уступить другим родителям.
+- **RU:** — 1〉 давать, дарить, отдавать; с Acc. или партитивным Gen. предмета и Dat., Gen. или Loc. лица. *kanyām* отдать дочь кому-л. в жёны (*bhāryām*, что, однако, обычно опускается) дать. *datta* о сыне, так преим. уступить другим родителям.
   <sub>attested</sub>
 
 **2)** — 2〉 hergeben, abtreten (mit Instr. des Preises). *panthānam* oder *mārgam* Jmd den Weg abtreten, so v. a. freien Durchgang geben, aus dem Wege gehen.
 
-- **RU:** — 2〉 отдавать, уступать (с Instr. цены). *panthānam* или *mārgam* уступить кому-л. дорогу,| так v. a. дать свободный проход, посторониться.
+- **RU:** — 2〉 отдавать, уступать (с Instr. цены). *panthānam* или *mārgam* уступить кому-л. дорогу,| так преим. дать свободный проход, посторониться.
   <sub>attested</sub>
 
 **3)** — 3〉 fortgeben, verkaufen.
@@ -35,7 +35,7 @@
 
 **6)** — 6〉 darbringen (eine Spende, eine Opfer u. s. w.). *ātmānam* sich opfern. *ātmānaṃ khedāya* so v. a. sich der Betrübniss hingeben.
 
-- **RU:** — 6〉 приносить (дар, жертву u. s. w.). *ātmānam* приносить себя в жертву. *ātmānaṃ khedāya* так v. a. предаваться скорби.
+- **RU:** — 6〉 приносить (дар, жертву и т.д.). *ātmānam* приносить себя в жертву. *ātmānaṃ khedāya* так преим. предаваться скорби.
   <sub>attested</sub>
 
 **7)** — 7〉 zu wissen geben, mit theilen, lehren, hören —, sehen lassen, aussprechen.
@@ -45,17 +45,17 @@
 
 **8)** — 8〉 gewähren, bewilligen, gestatten. *prāṇān* oder *jīvitam* gestatten, dass Jmd am Leben bleibt. *darśanam* Jmd seinen Anblick gewähren, sich sehen lassen, sich zeigen. Jmd (Dat.) gestatten (vom Weibe gesagt) so v. a. den Beischlaf gestatten. Mit einem Infin. lassen, mit *na* und einem Infin. nicht gestatten zu.
 
-- **RU:** — 8〉 даровать, разрешать, позволять. *prāṇān* или *jīvitam* позволять кому-л. оставаться в живых. *darśanam* явить кому-л. свой облик, показаться, обнаружить себя. Позволить кому-л. (Dat.) (говорится о женщине), так v. a. допустить соитие. С Infin. позволять,| с *na* и Infin. не позволять.
+- **RU:** — 8〉 даровать, разрешать, позволять. *prāṇān* или *jīvitam* позволять кому-л. оставаться в живых. *darśanam* явить кому-л. свой облик, показаться, обнаружить себя. Позволить кому-л. (Dat.) (говорится о женщине), так преим. допустить соитие. С Infin. позволять,| с *na* и Infin. не позволять.
   <sub>attested</sub>
 
 **9)** — 9〉 geben, so v. a. reichen, zu halten geben, übergeben. *haste* einhändigen [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-- **RU:** — 9〉 давать,| так v. a. протягивать, давать держать, передавать. *haste* вручать [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
+- **RU:** — 9〉 давать,| так преим. протягивать, давать держать, передавать. *haste* вручать [109,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?109). [110,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
   <sub>attested</sub>
 
 **10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) oder Acc.!) Gift eingeben.
 
-- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в medic. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так v. a. подпереть W. рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так v. a. сжигать,| *śāram* так v. a. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
+- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в мед. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так преим. подпереть слово рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так преим. сжигать,| *śāram* так преим. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
   <sub>attested</sub>
 
 **11)** — 11〉 seine Schritte, sein Auge, sein Ohr, seine Gedanken richten auf (Loc.).
@@ -70,7 +70,7 @@
 
 **13)** — 13〉 thun, bewirken, verursachen, vollbringen, veranstalten, unternehmen, Etwas mit Etwas (Acc.) vornehmen. *upamām* so v. a. mit Jmd (Gen.) vergleichen, *paṭaham* so v. a. die Trommel rühren lassen, durch Trommelschlag ausrufen lassen, *anyo'nyasya* (*parasparaṃ*) *talān* (*talam*) so v. a. einander in die Hände klatschen.
 
-- **RU:** — 13〉 делать, производить, причинять, совершать, устраивать, предпринимать, что-л. с чем-л. (Acc.) предпринимать. *upamām* так v. a. сравнивать с кем-л. (Gen.), *paṭaham* так v. a. велеть бить в барабан, объявлять под бой барабана,| *anyo'nyasya* (*parasparaṃ*) *talān* (*talam*) так v. a. хлопать друг другу в ладони.
+- **RU:** — 13〉 делать, производить, причинять, совершать, устраивать, предпринимать, что-л. с чем-л. (Acc.) предпринимать. *upamām* так преим. сравнивать с кем-л. (Gen.), *paṭaham* так преим. велеть бить в барабан, объявлять под бой барабана,| *anyo'nyasya* (*parasparaṃ*) *talān* (*talam*) так преим. хлопать друг другу в ладони.
   <sub>attested</sub>
 
 **14)** — 14〉 Med.
@@ -95,7 +95,7 @@
 
 **15)** — 15〉 Partic. *datta* ausser gegeben u. s. w. auch *beschützt (vgl. **5.** *dā*) und *geehrt.
 
-- **RU:** — 15〉 Partic. *datta* кроме данный u. s. w. также *защищённый (vgl. **5.** *dā*) и *почтённый.
+- **RU:** — 15〉 Partic. *datta* кроме данный и т.д. также *защищённый (ср. **5.** *dā*) и *почтённый.
   <sub>attested</sub>
 
 **Kaus.)** — Caus. *dāpayati* mit doppeltem Acc. oder mit Weglassung des sich von selbst versehenden Acc. bewegen, zwingen, heissen, auffordern.
@@ -120,7 +120,7 @@
 
 **Kaus.4)** — 4〉 zurückzugeben, wiederzuverschaffen [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Auch so v. a. zurückfordern.
 
-- **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Также так v. a. требовать обратно.
+- **RU:** — 4〉 возвращать, восстанавливать [RĀJAT. 6,50](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,50). Также так преим. требовать обратно.
   <sub>attested</sub>
 
 **Kaus.5)** — 5〉 mitzutheilen, zu hören zu geben, auszusprechen, zu sprechen [216,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?216).
@@ -135,7 +135,7 @@
 
 **Kaus.7)** — 7〉 zu thun, zu vollbringen, auszuführen, zu veranstalten. Auch so v. a. Jmd (Gen.) Etwas (Acc.) auftragen und Etwas erzwingen.
 
-- **RU:** — 7〉 делать, совершать, выполнять, устраивать. Также так v. a. поручать кому-л. (Gen.) что-л. (Acc.) и вынуждать что-л..
+- **RU:** — 7〉 делать, совершать, выполнять, устраивать. Также так преим. поручать кому-л. (Gen.) что-л. (Acc.) и вынуждать что-л..
   <sub>attested</sub>
 
 **Desid.)** — Desid. *didāsati, ditsati* und **ditsate* geben wollen, zu geben bereit sein. *kanyām* eine Tochter zur Frau geben wollen. *didāsitha* Perf.
@@ -190,7 +190,7 @@
 
 **anu.5)** — 5〉 vielleicht Jmd (Acc.) nachträglich eins versetzen. v. l. *anuvrajāmi* st. *anudadāmi*.
 
-- **RU:** — 5〉 возможно нанести кому-л. (Acc.) удар вдогонку. v. l. *anuvrajāmi* st. *anudadāmi*.
+- **RU:** — 5〉 возможно нанести кому-л. (Acc.) удар вдогонку. v. l. *anuvrajāmi* вместо *anudadāmi*.
   <sub>attested</sub>
 
 **mit apa)** — Mit *abhi* geben.
@@ -255,7 +255,7 @@
 
 **ādā.9)** — 9〉 ergreifen, so v. a. erwählen. *mārgam* oder *paddhatim* einen Weg einschlagen.
 
-- **RU:** — 9〉 схватывать,| так v. a. избирать. *mārgam* или *paddhatim* избирать путь.
+- **RU:** — 9〉 схватывать,| так преим. избирать. *mārgam* или *paddhatim* избирать путь.
   <sub>attested</sub>
 
 **ādā.10)** — 10〉 mit den Sinnen fassen, gewahr werden, fühlen, empfinden.
@@ -275,12 +275,12 @@
 
 **ādā.13)** — 13〉 auf sich nehmen, unternehmen, sich einer Sache hingeben ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), sich an Etwas machen. *vacanam, vākyam* oder *vacas* das Wort ergreifen, zu reden beginnen. *āhutayaḥ* = *āhutīḥ* so v. a. darbringen.
 
-- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так v. a. приносить.
+- **RU:** — 13〉 брать на себя, предпринимать, отдаваться чему-л. ([290,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?290)), браться за что-л.. *vacanam, vākyam* или *vacas* взять слово, начать говорить. *āhutayaḥ* = *āhutīḥ* так преим. приносить.
   <sub>attested</sub>
 
 **ādā.14)** — 14〉 ansetzen, anheben (zu sprechen u. s. w.).
 
-- **RU:** — 14〉 начинать, приступать (к речи u. s. w.).
+- **RU:** — 14〉 начинать, приступать (к речи и т.д.).
   <sub>attested</sub>
 
 **ādā.Kaus.)** — Caus. nehmen lassen.
@@ -375,7 +375,7 @@
 
 **upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
-- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). черпать (воду). *śulāgre* так v. a. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+- **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22). [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). черпать (воду). *śulāgre* так преим. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
   <sub>attested</sub>
 
 **upādā.5)** — 5〉 anlegen, annehmen (einen Körper).
@@ -385,7 +385,7 @@
 
 **upādā.6)** — 6〉 ergreifen, so v. a. erwählen. *mārgam* einen Weg einschlagen.
 
-- **RU:** — 6〉 схватывать,| так v. a. избирать. *mārgam* избирать путь.
+- **RU:** — 6〉 схватывать,| так преим. избирать. *mārgam* избирать путь.
   <sub>attested</sub>
 
 **upādā.7)** — 7〉 sich anschliessen an (Acc.).
@@ -405,7 +405,7 @@
 
 **upādā.10)** — 10〉 hinzunehmen, einschliessen, einrechnen. *upādāya* mit Einschluss von, zugleich mit, ausser, nächst; mit Acc. [R. ed. Bomb. 1,5,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,5,1). [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* schon von dem Augenblicke an, dass man im Mutterleibe liegt. *nadīṃ nairañjanām* vom Flusse N. an [LALIT. 341,12]. Könnte also auch zu 12〉 gezogen werden.
 
-- **RU:** — 10〉 прибавлять, включать, учитывать в числе. *upādāya* включая, вместе с, помимо, рядом с; с Acc. [R. ed. Bomb. 1,5,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,5,1). [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* уже с того момента, как находишься в материнском чреве. *nadīṃ nairañjanām* от реки N. вплоть до [LALIT. 341,12]. Может быть поэтому также отнесено к 12〉.
+- **RU:** — 10〉 прибавлять, включать, учитывать в числе. *upādāya* включая, вместе с, помимо, рядом с; с Acc. [R. ed. Bomb. 1,5,1](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,5,1). [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8]. *garbhaśayyām* уже с того момента, как находишься в материнском чреве. *nadīṃ nairañjanām* от реки Н. вплоть до [LALIT. 341,12]. Может быть поэтому также отнесено к 12〉.
   <sub>attested</sub>
 
 **upādā.11)** — 11〉 in Anwendung bringen, verwenden, brauchen [ŚAṂK. zu BĀDAR. 2,1,18 (S. 461)]. *upādāya* mit Hülfe von, vermittelst; mit Acc.
@@ -415,7 +415,7 @@
 
 **upādā.12)** — 12〉 gehen —, sich machen an, beginnen. Mit einem Infin. anheben zu. *upādāya* von — an; vgl. u. 10〉.
 
-- **RU:** — 12〉 приступать, браться за, начинать. С Infin. начинать. *upādāya* начиная от —; vgl. u. 10〉.
+- **RU:** — 12〉 приступать, браться за, начинать. С Infin. начинать. *upādāya* начиная от —; ср. u. 10〉.
   <sub>attested</sub>
 
 **upādā.13)** — 13〉 sich einem Gefühl, einer Stimmung hingeben. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8)), *harṣam, anukampām*.
@@ -440,7 +440,7 @@
 
 **mit ud)** — Mit *abhyupā* auflesen. v. l. *tānyupādāya* st. *abhyupādāya*.
 
-- **RU:** — С *abhyupā* подбирать. v. l. *tānyupādāya* st. *abhyupādāya*.
+- **RU:** — С *abhyupā* подбирать. v. l. *tānyupādāya* вместо *abhyupādāya*.
   <sub>attested</sub>
 
 **mit sam)** — Mit *samupā* Med.

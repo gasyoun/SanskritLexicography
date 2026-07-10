@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 
 **PWG-1)** *nirbīja* (die richtigere Schreibart) s. *nirvīja* .
 
-- **RU:** *nirbīja* (более правильное написание) s. *nirvīja* .
+- **RU:** *nirbīja* (более правильное написание) см. *nirvīja* .
   <sub>lexicographic</sub>
 
 **PW-1)** *nirbīja*

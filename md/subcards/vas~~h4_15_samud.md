@@ -6,8 +6,6 @@
 **1)** — *samud* caus. dass.
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
 
-- **RU:** — *samud* caus. dass.
-[ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
-- **EN:** — *samud* caus. dass.
+- **RU:** — *samud* caus. то же
 [ŚAT. BR. 2,6,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,2,7)
   <sub>attested</sub>

@@ -5,7 +5,7 @@
 
 **1)** *salya* und *salyaka* s. *vi˚* .
 
-- **RU:** *salya* и *salyaka* s. *vi˚*.
+- **RU:** *salya* и *salyaka* см. *vi˚*.
   <sub>lexicographic</sub>
 
 **PW)** *salya* und *salyaka* in *visalya* und *visalyaka*.

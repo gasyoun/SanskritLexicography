@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 
 **1)** *utsaha* nom. act. von *sah* mit *ud* in *durutsaha* (s. d.)
 
-- **RU:** *utsaha* nom. act. от *sah* с *ud* в *durutsaha* (s. d.)
+- **RU:** *utsaha* nom. act. от *sah* с *ud* в *durutsaha* (см.)
   <sub>lexicographic</sub>
 
 **1 (PW))** *utsaha* in *durutsaha*.

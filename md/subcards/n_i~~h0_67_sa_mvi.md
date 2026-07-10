@@ -8,6 +8,4 @@
 
 - **RU:** — *saṃvi* отгонять, подавлять: *saṃvinīya madakrodhau mānamīrṣāṃ ca*
 [MBH. 12,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3176)
-- **EN:** — *saṃvi* to drive away, suppress: *saṃvinīya madakrodhau mānamīrṣāṃ ca*
-[MBH. 12,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3176)
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *pratipra* подпускать к (телёнка к матери)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
-- **EN:** — *pratipra* "to admit to" (the calf to its mother)
-[ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
   <sub>attested</sub>

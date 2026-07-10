@@ -8,6 +8,4 @@
 
 - **RU:** — *samanu* идти вслед, следовать сообща
 [MBH. 2,1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1606) [12,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1385)
-- **EN:** — *samanu* to follow after — , to follow together
-[MBH. 2,1606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1606) [12,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1385)
   <sub>attested</sub>

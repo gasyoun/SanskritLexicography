@@ -16,5 +16,5 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **PW)** **sravaka* _Adj._ fliessend u. s. w.
 
-- **RU:** **sravaka* _Adj._ «текущий» u. s. w.
+- **RU:** **sravaka* _Adj._ «текущий» и т.д.
   <sub>lexicographic</sub>

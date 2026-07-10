@@ -5,6 +5,5 @@
 
 **1)** 3. *paś*, *pāśayati* s. *pāśay* .
 
-- **RU:** 3. *paś*, *pāśayati* s. *pāśay* .
-- **EN:** 3. *paś*, *pāśayati* s. *pāśay*.
+- **RU:** 3. *paś*, *pāśayati* см. *pāśay* .
   <sub>lexicographic</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *ati* переходить, перепрыгивать; с acc.
 [ṚV. PRĀT. 11,1.] [12.]
-- **EN:** *ati* to pass over, to skip over; with acc.
-[ṚV. PRĀT. 11,1.] [12.]
   <sub>attested</sub>

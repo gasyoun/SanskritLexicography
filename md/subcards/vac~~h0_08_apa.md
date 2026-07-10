@@ -3,8 +3,7 @@
 `vac~~h0_08_apa`
 
 
-**1)** — *apa* s. *apavaktar, apavācana* .
+**apa+vac)** — *apa* s. *apavaktar, apavācana* .
 
-- **RU:** — *apa* s. *apavaktar, apavācana* .
-- **EN:** — *apa* s. *apavaktar, apavācana*.
+- **RU:** — *apa* см. *apavaktar, apavācana* .
   <sub>attested</sub>

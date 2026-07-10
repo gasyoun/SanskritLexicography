@@ -8,6 +8,4 @@
 
 - **RU:** — *anusam* овевать по порядку (совместно): *diśaḥ*
 [TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
-- **EN:** — *anusam* to blow upon in succession (together): *diśaḥ*
-[TBR. 2,3,9,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,6) [3,10,4,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,4,2)
   <sub>attested</sub>

@@ -5,12 +5,12 @@
 
 **1)** *yāvat* indecl. s. u. *yāvant* .
 
-- **RU:** *yāvat* см. indecl. s. u. *yāvant* .
+- **RU:** *yāvat* см. indecl. см. *yāvant* .
   <sub>lexicographic</sub>
 
 **1 (PW))** *yāvat* _Indecl._ s. u. *yāvant*.
 
-- **RU:** *yāvat* _Indecl._ s. u. *yāvant*.
+- **RU:** *yāvat* _Indecl._ см. *yāvant*.
   <sub>lexicographic</sub>
 
 **NWS-1)** *yāvat* [Gen]: cependant, assurément, jusqu'à ce que. + Präs = Fut. + na : tant que ne pas.

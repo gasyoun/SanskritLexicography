@@ -8,6 +8,4 @@
 
 - **RU:** — *pravi* знать в подробностях —, знать точно: *yaḥ snāyūḥ pravijānāti bāhyāścābhyantarāstathā*
 [SUŚR. 1,342,3.]
-- **EN:** — *pravi* to know in detail, to know precisely: *yaḥ snāyūḥ pravijānāti bāhyāścābhyantarāstathā*
-[SUŚR. 1,342,3.]
   <sub>attested</sub>

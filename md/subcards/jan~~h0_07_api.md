@@ -5,6 +5,5 @@
 
 **1)** — *api* s. *apija* .
 
-- **RU:** *api* s. *apija* .
-- **EN:** — *api* s. *apija* .
+- **RU:** *api* см. *apija* .
   <sub>attested</sub>

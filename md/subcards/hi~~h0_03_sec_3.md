@@ -5,6 +5,5 @@
 
 **intens)** — intens. *jeghīyate* ebend.
 
-- **RU:** — intens. *jeghīyate* ebend.
-- **EN:** — intens. *jeghīyate* ebend.
+- **RU:** — intens. *jeghīyate* там же
   <sub>attested</sub>

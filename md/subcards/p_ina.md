@@ -5,12 +5,12 @@
 
 **1)** *pīna* s. u. *pī* .
 
-- **RU:** *pīna* см. s. u. *pī* .
+- **RU:** *pīna* см. *pī* .
   <sub>lexicographic</sub>
 
 **PW-1)** *pīna* s. u. **2.** *pī*.
 
-- **RU:** *pīna* s. u. **2.** *pī*.
+- **RU:** *pīna* см. **2.** *pī*.
   <sub>lexicographic</sub>
 
 **NWS-1)** [NWS: MW : 630] *pīna* [Gen , unsp] Subst m (with sveda ) profuse perspiration. Suś

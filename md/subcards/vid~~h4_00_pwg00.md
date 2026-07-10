@@ -8,7 +8,7 @@
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
 
 - **RU:** 5. *vid*, *vintte (vicāraṇe)*
-[DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) не получает соединительного гласного *i* Kār. 3 из
+[DHĀTUP. 29,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) не получает соединительного гласного *i* Кар. 3 из
 [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10)
   <sub>mixed</sub>
 
@@ -22,7 +22,7 @@
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 
 - **RU:** считать за, принимать за: *na tṛṇehmīti loko 'yaṃ māṃ vintte niṣparākramam*
-[BHAṬṬ. 6,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,39) partic. *vinna* Kār. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56)
+[BHAṬṬ. 6,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,39) partic. *vinna* Кар. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56)
 = *vicārita*
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49)
 [H. 1475.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1475)

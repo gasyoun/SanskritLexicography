@@ -9,12 +9,12 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 
 **1)** *jambūdvīpa* s. *jambudvīpa* .
 
-- **RU:** *jambūdvīpa* см. s. *jambudvīpa* .
+- **RU:** *jambūdvīpa* см. *jambudvīpa* .
   <sub>lexicographic</sub>
 
 **PW)** *jambūdvīpa* _m._ dass. *˚prajñapti* _f._ Titel eines Jaina-Werkes [Ind. St. 9,448].
 
-- **RU:** *jambūdvīpa* _m._ dass. *˚prajñapti* _f._ название сочинения по Jaina [Ind. St. 9,448].
+- **RU:** *jambūdvīpa* _m._ то же *˚prajñapti* _f._ название сочинения по Джайна [Ind. St. 9,448].
   <sub>lexicographic</sub>
 
 **NWS-1)** *jambūdvīpa* [Buddh , Phil] the southern continent. AbhiK III, 53 . Bareau 1953 (1) : 59

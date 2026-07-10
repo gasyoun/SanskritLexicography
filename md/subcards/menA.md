@@ -5,7 +5,7 @@
 
 **1)** *mena* s. u. *menā* .
 
-- **RU:** *mena* см. s. u. *menā* .
+- **RU:** *mena* см. *menā* .
   <sub>lexicographic</sub>
 
 **PW-1)** *mena*
@@ -17,7 +17,7 @@
 
 **PW-1a)** — a〉 Bein. Vṛṣaṇaśvaʼs.
 
-- **RU:** — a〉 Bein. Vṛṣaṇaśvaа.
+- **RU:** — a〉 эпит. Вришанашва.
   <sub>lexicographic</sub>
 
 **PW-1b)** — b〉 fehlerhaft für *mīna*.
@@ -42,17 +42,17 @@
 
 **PW-2c)** — c〉 N. pr.
 
-- **RU:** — c〉 N. pr.
+- **RU:** — c〉 имя собств.
   <sub>lexicographic</sub>
 
 **PW-2c-alpha)** — α〉 der Tochter Vṛṣaṇaśvaʼs.
 
-- **RU:** — α〉 дочери Vṛṣaṇaśvaа.
+- **RU:** — α〉 дочери Вришанашва.
   <sub>lexicographic</sub>
 
 **PW-2c-beta)** — β〉 der Gattin des Himavant.
 
-- **RU:** — β〉 супруги Himavant.
+- **RU:** — β〉 супруги Химавант.
   <sub>lexicographic</sub>
 
 **PW-2c-gamma)** — γ〉 eines Flusses.

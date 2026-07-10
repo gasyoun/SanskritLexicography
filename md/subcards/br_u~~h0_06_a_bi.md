@@ -3,8 +3,7 @@
 `br_u~~h0_06_a_bi`
 
 
-**1)** — *abhi* s. u. *ati* .
+**main)** — *abhi* s. u. *ati* .
 
-- **RU:** — *abhi* s. u. *ati* .
-- **EN:** — *abhi* s. u. *ati* .
+- **RU:** — *abhi* см. *ati* .
   <sub>attested</sub>

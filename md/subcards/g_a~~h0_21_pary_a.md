@@ -8,6 +8,4 @@
 
 - **RU:** — *paryā* совершить круговой обход, обойти кругом: *kālastu paryāgāt*
 [MBH. 12,8157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8157)
-- **EN:** — *paryā* to complete a circuit, go around: *kālastu paryāgāt*
-[MBH. 12,8157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8157)
   <sub>attested</sub>

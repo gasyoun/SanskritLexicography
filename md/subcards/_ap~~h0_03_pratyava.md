@@ -8,6 +8,4 @@
 
 - **RU:** *pratyava* вновь обретать, вновь получать
 [ŚIŚUP. 5,40.]
-- **EN:** — *pratyava* to regain
-[ŚIŚUP. 5,40.]
   <sub>attested</sub>

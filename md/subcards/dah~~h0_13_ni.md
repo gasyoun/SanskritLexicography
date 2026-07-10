@@ -16,5 +16,5 @@
 
 **2 (Nachtrag/note))** — Vgl. *nidāgha* .
 
-- **RU:** — Vgl. *nidāgha* .
+- **RU:** — ср. *nidāgha* .
   <sub>attested</sub>

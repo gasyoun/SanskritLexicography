@@ -5,6 +5,5 @@
 
 **1)** — *upasam* s. *upasaṃvāda* .
 
-- **RU:** — *upasam* s. *upasaṃvāda* .
-- **EN:** — *upasam* s. *upasaṃvāda* .
+- **RU:** — *upasam* см. *upasaṃvāda* .
   <sub>attested</sub>

@@ -14,11 +14,6 @@
 [KĀTY. ŚR. 5,5,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,5,13) *(tam) pratinetumayodhyām*
 [R. 2,90,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,17) ([99,25](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,25) [GORR.]). [6,10,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,34) *(nau) gṛhāya pratineṣyati*
 [2,98,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,22)
-- **EN:** — *prati*
-1) to lead back
-[KĀTY. ŚR. 5,5,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,5,13) *(tam) pratinetumayodhyām*
-[R. 2,90,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,17) ([99,25](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,25) [GORR.]). [6,10,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,34) *(nau) gṛhāya pratineṣyati*
-[2,98,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,98,22)
   <sub>attested</sub>
 
 **2)** — 2) zuführen: *tebhya enānprati nayāmi baddhvā*
@@ -30,16 +25,11 @@
 [AV. 8,8,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.10) В месте *bhadra na sarvametadvittaṃ gṛhaṃ pratinetuṃ yujyate*
 [PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4) следует, как уже
 [BENFEY] сделал, отделить *prati* от *netuṃ* (вносить в дом).
-- **EN:** 2) to lead to, bring to: *tebhya enānprati nayāmi baddhvā*
-[AV. 8,8,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.10) In the passage *bhadra na sarvametadvittaṃ gṛhaṃ pratinetuṃ yujyate*
-[PAÑCAT. 96,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,4) it is, as [BENFEY] has already done, *prati* to be separated from *netuṃ* (to carry into the house).
   <sub>attested</sub>
 
 **3)** — 3) beimengen: *sthālīpāke ghṛtapiṇḍānpratinīyāśnāti*
 [KAUŚ. 52. 20. 35. 87.]
 
 - **RU:** — 3) примешивать, добавлять: *sthālīpāke ghṛtapiṇḍānpratinīyāśnāti*
-[KAUŚ. 52. 20. 35. 87.]
-- **EN:** 3) to admix, add in: *sthālīpāke ghṛtapiṇḍānpratinīyāśnāti*
 [KAUŚ. 52. 20. 35. 87.]
   <sub>attested</sub>

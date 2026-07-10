@@ -8,8 +8,8 @@
 Schol. zu [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?125,21)
 
 - **RU:** — *sam*
- 1) собирать, нарезая: *barhirdevasadanaṃ saṃdāmīti* Cit. при
-Schol. к [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?125,21)
+ 1) собирать, нарезая: *barhirdevasadanaṃ saṃdāmīti* цит. при
+схол. к [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?125,21)
   <sub>attested</sub>
 
 **2)** — 2) zusammenschneiden, zerkleinern: *śitipadī saṃ dyatu śaravye3yaṃ catuṣpadī*
@@ -21,5 +21,5 @@ Schol. к [KĀTY. ŚR. 125,21.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **3)** — Vgl. *saṃdāna* .
 
-- **RU:** — Vgl. *saṃdāna* .
+- **RU:** — ср. *saṃdāna* .
   <sub>attested</sub>

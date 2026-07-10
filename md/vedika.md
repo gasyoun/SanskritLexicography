@@ -9,12 +9,12 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 
 **1)** *vedika* s. u. 3. *vedikā* 3).
 
-- **RU:** *vedika* см. s. u. 3. *vedikā* 3).
+- **RU:** *vedika* см. 3. *vedikā* 3).
   <sub>lexicographic</sub>
 
 **1 (PW))** *vedika* _m._ s. u. **3.** *vedikā* 3〉.
 
-- **RU:** *vedika* _m._ s. u. **3.** *vedikā* 3〉.
+- **RU:** *vedika* _m._ см. **3.** *vedikā* 3〉.
   <sub>lexicographic</sub>
 
 **NWS-1)** *vedika* [Gen] Subst m a seat, bench. R , Hariv

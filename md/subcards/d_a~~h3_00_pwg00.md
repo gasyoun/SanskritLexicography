@@ -18,7 +18,7 @@
 
 **{T57})** — Vgl. 3. *da*, 4. *dāman, dāmā* .
 
-- **RU:** — Vgl. 3. *da*, 4. *dāman, dāmā* .
+- **RU:** — ср. 3. *da*, 4. *dāman, dāmā* .
   <sub>attested</sub>
 
 **{T58})** — *ā* binden, fesseln: *sā brahmajyaṃ devapīyuṃ brahmagavyādīyamānā . mṛtyoḥ paḍbīśa ā dyati*
@@ -30,12 +30,12 @@
 
 **{T59})** — Vgl. 2 *ādāna* .
 
-- **RU:** — Vgl. 2 *ādāna* .
+- **RU:** — ср. 2 *ādāna* .
   <sub>attested</sub>
 
 **{T60})** — *ud* s. *uddāna, uddita, udita* .
 
-- **RU:** — *ud* s. *uddāna, uddita, udita* .
+- **RU:** — *ud* см. *uddāna, uddita, udita* .
   <sub>attested</sub>
 
 **{T61})** — *ni* anbinden: *nidāya vatsam* im
@@ -51,7 +51,7 @@
 
 **{T62})** — *vi* s. u. 3. *dā* mit *vi* .
 
-- **RU:** — *vi* s. u. 3. *dā* с *vi* .
+- **RU:** — *vi* см. 3. *dā* с *vi* .
   <sub>attested</sub>
 
 **{T63})** — *sam* zusammenbinden, anbinden, fesseln: *vi mṛLīkāya te mano rathīraśvaṃ na saṃditam . gīrbhirvaruṇa sīmahi*
@@ -79,5 +79,5 @@
 
 **{T64})** — Vgl. *saṃdāna, asaṃdita, asaṃdina* .
 
-- **RU:** — Vgl. *saṃdāna, asaṃdita, asaṃdina* .
+- **RU:** — ср. *saṃdāna, asaṃdita, asaṃdina* .
   <sub>attested</sub>

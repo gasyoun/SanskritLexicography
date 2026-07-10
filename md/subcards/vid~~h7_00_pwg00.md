@@ -5,7 +5,7 @@
 
 **note)** 1. *vid* caus. Z. 2 am Ende zu lesen 123 st. 1, 23.
 
-- **RU:** 1. *vid* caus. Z. 2 в конце читать 123 st. 1, 23.
+- **RU:** 1. *vid* caus. стк. 2 в конце читать 123 вместо 1, 23.
   <sub>mixed</sub>
 
 **1a)** — *ni* caus. *doṣam* eine Schuld wälzen auf (dat.)

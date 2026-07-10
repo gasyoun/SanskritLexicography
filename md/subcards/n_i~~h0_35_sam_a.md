@@ -38,23 +38,6 @@
 [ŚAT. BR. 1,5,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,16) [8,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,17) [2,5,2,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,30)
 [KĀTY. ŚR. 3,5,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,5,13) [6,7,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,7,22) *kuṭambārthe samānītaṃ yatkiṃcitkāryameva tu . prātarutthāya tatsarvaṃ kārayāmi karomi ca ..* накопившиеся дела
 [MBH. 13,5872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5872)
-- **EN:** — *samā*
- 1) to bring many to one place, to assemble, unite, bring together, convoke
-[MBH. 2,1294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1294) *samāninyurmahīpatīn*
-[5,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.104) *vidruteṣu ca sainyeṣu samānīteṣu cāsakṛt*
-[9,127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.127) [HARIV. 8262.](https://sanskrit-lexicon-scans.github.io/hariv?8262) [R. 1,1,69.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,69) [12,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,19) ([18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,12,18) [GORR.]). *balaṃ caiva samānaya*
-[2,82,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,21) [R. GORR. 1,12,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,12,27) [4,49,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,49,2) [VET. in LA. 16,12.] *triṣu lokeṣu yatkiṃcidbhūtaṃ sthāvarajaṅgamam . samānayaddarśanīyaṃ tattadatra sa viśvavit*
-[MBH. 1,7691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7691) *samāninye ca tatsarvaṃ bhāṇḍaṃ vaivāhikaṃ nṛpaḥ*
-[3,16691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16691) *tilaṃ tilaṃ samānīya ratnānām*
-[1,7696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7696) *samānayaṃstulyaguṇaṃ vadhūvaraṃ prajāpatiḥ* bringing together
-[ŚĀK. 112.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?112) *samānīya — hastau* to bring the hands together, to place them against each other
-[RAGH. 2,64.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,64) to bring someone (acc.) together with someone (instr. or *saha* with instr.): *rāmeṇa māṃ samānaya*
-[R. 5,23,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,15) [6,8,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,30) [32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,32) *samānayasva vaidehyā rāmam*
-[5,56,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,37) [MBH. 5,366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.366) *samānayiṣyati hariḥ sītayā saha rāghavam*
-[R. 4,35,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,35,19) [21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,35,21) to bring liquids together, to pour together
-[ŚAT. BR. 1,5,3,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,16) [8,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,17) [2,5,2,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,30)
-[KĀTY. ŚR. 3,5,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,5,13) [6,7,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,7,22) *kuṭambārthe samānītaṃ yatkiṃcitkāryameva tu . prātarutthāya tatsarvaṃ kārayāmi karomi ca ..* accumulated affairs
-[MBH. 13,5872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5872)
   <sub>attested</sub>
 
 **2)** — 2) herbeiführen, herbeibringen: *samānayāmāsa sutām*
@@ -67,14 +50,6 @@
 [9,3664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3664) [GOBH. 2,1,8.] [R. 2,37,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,5) [89,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,11) [RAGH. 12,78.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,78) [PAÑCAT. 262,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,18)
 
 - **RU:** — 2) приводить, приносить: *samānayāmāsa sutām*
-[MBH. 1,7334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7334) [3,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2760) [2761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2761)
-[R. 1,70,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,6) [73,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,23)
-[PAÑCAT. 86,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?86,12) [237,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?237,24)
-[ŚUK. in LA. 44,18.] *kasmācca tvyā bhakṣyabhūto 'pi pṛṣṭhamāropyātra samānītaḥ*
-[PAÑCAT. 116,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?116,4) *samānīteṣu — varāsaneṣu*
-[MBH. 1,7717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7717) [14,1654. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1654) *śīghraṃ kalasaṃ jalapūrṇaṃ samānaya*
-[9,3664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3664) [GOBH. 2,1,8.] [R. 2,37,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,5) [89,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,11) [RAGH. 12,78.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,78) [PAÑCAT. 262,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,18)
-- **EN:** — 2) to bring near, to fetch: *samānayāmāsa sutām*
 [MBH. 1,7334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7334) [3,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2760) [2761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2761)
 [R. 1,70,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,6) [73,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,23)
 [PAÑCAT. 86,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?86,12) [237,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?237,24)
@@ -95,13 +70,7 @@
 [MBH. 2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) *samānayāmāsa tadā virāṭasya* (для V.) *dhanaṃ mahat*
 [4,2136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2136) *samānītau svamāśramam*
 [3,16863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16863) *tato no mātaramṛṣiḥ samānīya nijāśramam*
-[BHĀG. P. 7,7,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,12) *icchāmi tvāṃ samānetumadyaiva raghunandanam* к Rāma
-[R. 5,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,8)
-- **EN:** — 3) to lead home, to bring home: *hayānaṣṭau samānayat* (as tribute)
-[MBH. 2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) *samānayāmāsa tadā virāṭasya* (for V.) *dhanaṃ mahat*
-[4,2136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2136) *samānītau svamāśramam*
-[3,16863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16863) *tato no mātaramṛṣiḥ samānīya nijāśramam*
-[BHĀG. P. 7,7,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,12) *icchāmi tvāṃ samānetumadyaiva raghunandanam* to Rāma
+[BHĀG. P. 7,7,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,12) *icchāmi tvāṃ samānetumadyaiva raghunandanam* к Рама
 [R. 5,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,8)
   <sub>attested</sub>
 
@@ -110,11 +79,9 @@
 
 - **RU:** — 4) подносить, приносить (жертву): *puraskṛtyādya bhavataḥ samāneṣyāmahe makham*
 [MBH. 14,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.362) — caus.
-- **EN:** — 4) to offer (a sacrifice): *puraskṛtyādya bhavataḥ samāneṣyāmahe makham*
-[MBH. 14,362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.362) — caus.
   <sub>attested</sub>
 
-**caus-1)** 1) herbeiführen lassen, zusammenberufen: *tatastu prakṛtīḥ sarvāḥ samānāyya*
+**caus_1)** 1) herbeiführen lassen, zusammenberufen: *tatastu prakṛtīḥ sarvāḥ samānāyya*
 [MBH. 17,15.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.15)
 [HARIV. 4130.](https://sanskrit-lexicon-scans.github.io/hariv?4130) [6446.](https://sanskrit-lexicon-scans.github.io/hariv?6446)
 [R. 4,9,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,9) [38,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,38,37) zusammenbringen lassen: *kāṣṭhāni*
@@ -125,21 +92,13 @@
 [HARIV. 4130.](https://sanskrit-lexicon-scans.github.io/hariv?4130) [6446.](https://sanskrit-lexicon-scans.github.io/hariv?6446)
 [R. 4,9,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,9) [38,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,38,37) велеть собрать: *kāṣṭhāni*
 [R. 4,24,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,14)
-- **EN:** 1) to cause to be brought near, to summon together: *tatastu prakṛtīḥ sarvāḥ samānāyya*
-[MBH. 17,15.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.15)
-[HARIV. 4130.](https://sanskrit-lexicon-scans.github.io/hariv?4130) [6446.](https://sanskrit-lexicon-scans.github.io/hariv?6446)
-[R. 4,9,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,9) [38,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,38,37) to cause to be brought together: *kāṣṭhāni*
-[R. 4,24,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,14)
   <sub>attested</sub>
 
-**caus-2)** — 2) herbeikommen —, herbeibringen lassen: *śakraṃ samānāyya*
+**caus_2)** — 2) herbeikommen —, herbeibringen lassen: *śakraṃ samānāyya*
 [MBH. 13,4805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4805) *ghṛtakumbham*
 [1,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4538)
 
 - **RU:** — 2) велеть явиться —, велеть доставить: *śakraṃ samānāyya*
-[MBH. 13,4805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4805) *ghṛtakumbham*
-[1,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4538)
-- **EN:** — 2) to cause to come near, to have brought near: *śakraṃ samānāyya*
 [MBH. 13,4805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4805) *ghṛtakumbham*
 [1,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4538)
   <sub>attested</sub>

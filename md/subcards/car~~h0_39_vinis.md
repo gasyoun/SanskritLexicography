@@ -12,8 +12,4 @@
 [ŚAT. BR. 14,5,4,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,10)
 [MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
 [4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322)
-- **EN:** — *vinis* {to come forth in all directions}: *yathārdraidhāgnerabhyāhitasya . pṛthagdhūmā viniścaranti*
-[ŚAT. BR. 14,5,4,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,10)
-[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
-[4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322)
   <sub>attested</sub>

@@ -14,11 +14,6 @@
 [BHĀG. P. 10,48,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,19) *hrīśca krodhaśca bībhatsuṃ kṣaṇenānvāviveśa ha*
 [MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389) *mohaḥ*
 [7,1405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1405)
-- **EN:** — *anvā*
- 1) to enter into, pass into, take possession of (someone): *ātmasṛṣṭamidaṃ viśvamanvāviśya svaśaktibhiḥ*
-[BHĀG. P. 10,48,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,48,19) *hrīśca krodhaśca bībhatsuṃ kṣaṇenānvāviveśa ha*
-[MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389) *mohaḥ*
-[7,1405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1405)
   <sub>attested</sub>
 
 **2)** — 2) nachgehen, folgen, sich nach Etwas richten: *yathā hyeveha prajā anvāviśanti yathānuśāsanam*
@@ -26,9 +21,6 @@
 [MBH. 12,10800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10800)
 
 - **RU:** — 2) следовать за, идти вслед, руководствоваться чем-л.: *yathā hyeveha prajā anvāviśanti yathānuśāsanam*
-[CHĀND. UP. 8,1,5.] *taṃ dharmamasurāḥ — nāmṛṣyanta — vivardhamānāḥ kramaśastatra te 'nvāviśanprajāḥ*
-[MBH. 12,10800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10800)
-- **EN:** — 2) to go after, follow, conform oneself to (something): *yathā hyeveha prajā anvāviśanti yathānuśāsanam*
 [CHĀND. UP. 8,1,5.] *taṃ dharmamasurāḥ — nāmṛṣyanta — vivardhamānāḥ kramaśastatra te 'nvāviśanprajāḥ*
 [MBH. 12,10800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10800)
   <sub>attested</sub>

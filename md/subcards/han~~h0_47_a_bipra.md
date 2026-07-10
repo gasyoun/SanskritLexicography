@@ -14,9 +14,4 @@ v. l.).
 [ŚAT. BR. 14,7,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,12) partic. *˚hata* «поражённый, раненый»: дерево
 [SUŚR. 1,327,4] (*abhihata*
 v. l.).
-- **EN:** — *abhipra* "to overpower"
-[ṚV. 6,46,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.046.html#rv06.046.10) *svapnena śarīram*
-[ŚAT. BR. 14,7,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,12) partic. *˚hata* "wounded": tree
-[SUŚR. 1,327,4] (*abhihata*
-v. l.).
   <sub>attested</sub>

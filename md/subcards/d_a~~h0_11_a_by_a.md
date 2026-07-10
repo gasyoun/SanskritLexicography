@@ -8,7 +8,7 @@
 [MBH. 1,3558](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3558) = [12,10999](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10999) = [13,4985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4985) act.: *corayitvā dhanamidaṃ hariṣye 'bhyādadāmyaham*
 [HARIV. 14602.](https://sanskrit-lexicon-scans.github.io/hariv?14602)
 
-- **RU:** — *abhyā* med.
+- **RU:** — *abhyā* мед.
  1) присваивать, захватывать, уносить: *na hīnataḥ paramabhyādadīta*
 [MBH. 1,3558](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3558) = [12,10999](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10999) = [13,4985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4985) act.: *corayitvā dhanamidaṃ hariṣye 'bhyādadāmyaham*
 [HARIV. 14602.](https://sanskrit-lexicon-scans.github.io/hariv?14602)
@@ -31,11 +31,11 @@
 **4)** — 4) *abhyātta* mit act. Bed. umfassend
 [CHĀND. UP. 3,14,2]; nach [ŚAṂK.] von *at* .
 
-- **RU:** — 4) *abhyātta* с act. Bed. обнимая, охватывая
+- **RU:** — 4) *abhyātta* с act. знач. обнимая, охватывая
 [CHĀND. UP. 3,14,2]; по [ŚAṂK.] от *at* .
   <sub>attested</sub>
 
 **caus)** — Vgl. *abhyādāna* .
 
-- **RU:** — Vgl. *abhyādāna* .
+- **RU:** — ср. *abhyādāna* .
   <sub>attested</sub>

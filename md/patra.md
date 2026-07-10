@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 12 sense(s) · RU 12/12 · EN 0/12_
 
 **1)** *patra* s. *pattra* .
 
-- **RU:** *patra* см. s. *pattra* .
+- **RU:** *patra* см. *pattra* .
   <sub>lexicographic</sub>
 
 **PW-1)** *patra* defective Schreibart für *pattra*.

@@ -7,5 +7,5 @@
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 
 - **RU:** — *pariṇi*, *˚dadāti*
-[P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
+[P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), схол.
   <sub>attested</sub>

@@ -7,6 +7,5 @@
 [P. 8,3,65](https://ashtadhyayi.com/sutraani/8/3/65), Vārtt. 1, Schol.
 
 - **RU:** — *nis*, *niḥṣuṇoti*
-[P. 8,3,65](https://ashtadhyayi.com/sutraani/8/3/65), Vārtt. 1, Schol.
-- **EN:** — *nis*, *niḥṣuṇoti* [P. 8,3,65](https://ashtadhyayi.com/sutraani/8/3/65), Vārtt. 1, Schol.
+[P. 8,3,65](https://ashtadhyayi.com/sutraani/8/3/65), Вартт. 1, схол.
   <sub>attested</sub>

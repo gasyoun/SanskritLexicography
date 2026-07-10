@@ -5,6 +5,5 @@
 
 **1)** — *abhipra* vgl. *abhiprāpaṇa* .
 
-- **RU:** — *abhipra* vgl. *abhiprāpaṇa* .
-- **EN:** — *abhipra* vgl. *abhiprāpaṇa*.
+- **RU:** — *abhipra* ср. *abhiprāpaṇa* .
   <sub>attested</sub>

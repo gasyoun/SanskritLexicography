@@ -5,6 +5,5 @@
 
 **1)** — *nipra* s. *pṛśninipreṣita* .
 
-- **RU:** — *nipra* s. *pṛśninipreṣita* .
-- **EN:** — *nipra* s. *pṛśninipreṣita* .
+- **RU:** — *nipra* см. *pṛśninipreṣita* .
   <sub>attested</sub>

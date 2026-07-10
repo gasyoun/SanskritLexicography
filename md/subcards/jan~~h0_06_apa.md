@@ -5,6 +5,5 @@
 
 **1)** — *apa* s. *apajāta* .
 
-- **RU:** *apa* s. *apajāta* .
-- **EN:** — *apa* s. *apajāta* .
+- **RU:** *apa* см. *apajāta* .
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *vipari* pass. освободиться от *…*: *pāpādviparimucyate*
 [MBH. 12,5657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5657)
-- **EN:** — *vipari* pass. "to free oneself from": *pāpādviparimucyate*
-[MBH. 12,5657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5657)
   <sub>attested</sub>

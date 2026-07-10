@@ -5,6 +5,5 @@
 
 **1)** — *ni* desid. vgl. *nisusūs* .
 
-- **RU:** — *ni* desid. vgl. *nisusūs* .
-- **EN:** — *ni* desid. vgl. *nisusūs*.
+- **RU:** — *ni* desid. ср. *nisusūs* .
   <sub>attested</sub>

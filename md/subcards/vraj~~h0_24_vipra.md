@@ -8,12 +8,9 @@
 
 - **RU:** — *vipra* расходиться
 [KĀTY. ŚR. 24,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,13)
-- **EN:** — *vipra* to go apart, disperse
-[KĀTY. ŚR. 24,6,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,13)
   <sub>attested</sub>
 
-**2)** — Vgl. *vipravrājin* .
+**addendum)** — Vgl. *vipravrājin* .
 
-- **RU:** — Vgl. *vipravrājin* .
-- **EN:** — Vgl. *vipravrājin* .
+- **RU:** — ср. *vipravrājin* .
   <sub>attested</sub>

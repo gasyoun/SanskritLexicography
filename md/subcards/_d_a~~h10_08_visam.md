@@ -4,6 +4,11 @@
 
 
 **main)** — *visam* med. Jmd zu Grunde richten
-[MUIR, ST. (2te Aufl.) 1,509,9.]
-- **EN:** — *visam* med. to ruin someone, bring someone to ruin
-[MUIR, ST. (2te Aufl.) 1,509,9.]
+
+- **RU:** — *visam* мед. погубить кого-л., привести кого-л. к гибели
+  <sub>attested</sub>
+
+**tail)** [MUIR, ST. (2te Aufl.) 1,509,9.]
+
+- **RU:** [MUIR, ST. (2te Aufl.) 1,509,9.]
+  <sub>attested</sub>

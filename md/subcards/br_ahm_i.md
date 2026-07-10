@@ -5,7 +5,7 @@
 
 **1)** *brāhmī* s. u. *brāhma* .
 
-- **RU:** *brāhmī* s. u. *brāhma* .
+- **RU:** *brāhmī* см. *brāhma* .
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: Renou 1954 (2) : 124] [brāhmī (dik)] zenith. Dalal 1934, S. 95, Z. 14 . [Kāv, unsp]

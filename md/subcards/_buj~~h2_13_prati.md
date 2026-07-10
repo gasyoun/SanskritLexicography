@@ -8,12 +8,9 @@
 
 - **RU:** — *prati* вкушать: *asyāvahāsasya phalaṃ pratibhokṣyatha*
 [MBH. 9,1863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1863)
-- **EN:** — *prati* to enjoy: *asyāvahāsasya phalaṃ pratibhokṣyatha*
-[MBH. 9,1863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1863)
   <sub>attested</sub>
 
-**2)** — Vgl. *pratibhoga* .
+**nachtr)** — Vgl. *pratibhoga* .
 
-- **RU:** — Vgl. *pratibhoga* .
-- **EN:** — Vgl. *pratibhoga* .
+- **RU:** — ср. *pratibhoga* .
   <sub>attested</sub>

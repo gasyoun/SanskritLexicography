@@ -8,6 +8,4 @@
 
 - **RU:** — *pravi* проходить, исчезать: *pravigatagadadoṣa*
 [VARĀH. BṚH. S. 12,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,19)
-- **EN:** *pravi* to pass away, to fade: *pravigatagadadoṣa*
-[VARĀH. BṚH. S. 12,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,19)
   <sub>attested</sub>

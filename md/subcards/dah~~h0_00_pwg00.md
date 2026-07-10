@@ -54,11 +54,11 @@
 
 - **RU:** *dah*, *dahati*
 [DHĀTUP. 23,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) *dadāha; adhākṣīt* (
-[VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* относится к *dagh), dhakṣi*; partic. *dhakṣat* и *dakṣat* (vgl.
-[ṚV. PRĀT. 4,41]); *dhakṣyati* (Kār.
+[VOP. 8,80](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,80)), ved. *adhāk, dhāk (dhak* относится к *dagh), dhakṣi*; partic. *dhakṣat* и *dakṣat* (ср.
+[ṚV. PRĀT. 4,41]); *dhakṣyati* (Кар.
 [6] из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)), *dahiṣyati* эп.
 [MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120)
-[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также med.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнём, гореть*: *mā māmedho daśatayaścito dhāk*
+[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также мед.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнём, гореть*: *mā māmedho daśatayaścito dhāk*
 [ṚV. 1,158,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.158.html#rv01.158.04) [2,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.04) *tṛṇā dahan*
 [3,29,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.06) *dāru dhakṣat*
 [6,3,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.04) [10,91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) — [1,130,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.130.html#rv01.130.08) [4,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.04) [28,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.028.html#rv04.028.03) [7,1,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.07) *yadagnirāpo adahatpraviśya*
@@ -72,13 +72,13 @@
 [R. 1,1,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,53) [75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,75) *taṃ hatvā kāṣṭhairadahat*
 [54.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,54) [BHARTṚ. 2,47.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,47) [RAGH. 12,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,63) *anyaṃ kaṃcidadhākṣuśca — śavam*
 [KATHĀS. 15,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,99) *uṣṇo dahati cāṅgāraḥ śītaḥ kṛṣṇāyate karam*
-[HIT. I,74.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,74) *гореть* (medic.)
-[SUŚR. 1,32,5.] [2,48,1.] — med.: *dhakṣyate śāyakaiścemām — purīm*
+[HIT. I,74.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,74) *гореть* (мед.)
+[SUŚR. 1,32,5.] [2,48,1.] — мед.: *dhakṣyate śāyakaiścemām — purīm*
 [R. 5,33,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,38) [34,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,2)
 [MBH. 1,8159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8159) *daheta naḥ*
 [5788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5788) *tvamevānyāndahase jātavedaḥ*
 [14,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.245) *atandrito dahate jātavedāḥ*
-[5,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.818) *сжигать, опалять*, так v. a. *по образу огня совершенно уничтожать*: *ekameva dahatyagnirnaraṃ durupasarpiṇam . kulaṃ dahati rājāgniḥ*
+[5,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.818) *сжигать, опалять*, так преим. *по образу огня совершенно уничтожать*: *ekameva dahatyagnirnaraṃ durupasarpiṇam . kulaṃ dahati rājāgniḥ*
 [M. 7,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,9) *vṛkṣānaṅgārakārīva maināndhākṣīḥ samūlakān*
 [MBH. 2,2109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2109) [5,7016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7016) *adhakṣaṃ* (читай *adhakṣyaṃ) tānahaṃ krūrāṃstadā sarvān*
 [7,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2541) *dahat* (imperf.) *kṣatraṃ parasparam*
@@ -90,7 +90,7 @@
 [14,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.237) *jagāma campāṃ prati dhakṣyamāṇastamaṅgarājaṃ sapuraṃ rāṣṭram*
 [3,10084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10084) *tasya jñānāgninā pāpaṃ sarvaṃ dahati vedavit*
 [M. 11,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,246) [6,72.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,72) [12,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,101)
-[ŚĀNTIŚ. 3,13.] *гореть*, так v. a. *повергать в сильный жар —, приводить в возбуждение, волновать; терзать сердце*: *aṣṭau *
+[ŚĀNTIŚ. 3,13.] *гореть*, так преим. *повергать в сильный жар —, приводить в возбуждение, волновать; терзать сердце*: *aṣṭau *
 
 * yasyāgnayo hyete na dahante manaḥ sadā*
 [MBH. 14,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.112) *madanānalo dahati mama mānasam*

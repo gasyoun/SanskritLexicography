@@ -3,8 +3,7 @@
 `_sam~~h1_15_anupra`
 
 
-**anupra)** — *anupra* caus. s. *anupraśamana* .
+**main)** — *anupra* caus. s. *anupraśamana* .
 
-- **RU:** — *anupra* caus. s. *anupraśamana* .
-- **EN:** — *anupra* caus. s. *anupraśamana* .
+- **RU:** — *anupra* caus. см. *anupraśamana* .
   <sub>attested</sub>

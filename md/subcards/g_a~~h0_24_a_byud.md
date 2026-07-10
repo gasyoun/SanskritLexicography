@@ -10,7 +10,4 @@
 - **RU:** — *abhyud* восходить над, перед: *yadadya kacca vṛtrahannudagā abhi sūrya*
 [ṚV. 8,82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.04) *anuddhṛtamabhyudagāt*
 [ŚAT. BR. 12,4,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,7)
-- **EN:** — *abhyud* to rise over, rise before: *yadadya kacca vṛtrahannudagā abhi sūrya*
-[ṚV. 8,82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.04) *anuddhṛtamabhyudagāt*
-[ŚAT. BR. 12,4,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,7)
   <sub>attested</sub>

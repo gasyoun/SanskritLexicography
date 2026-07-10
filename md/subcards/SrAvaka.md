@@ -12,5 +12,5 @@
 
 **PW)** **sravaka* _Adj._ fliessend u. s. w.
 
-- **RU:** **sravaka* _Adj._ «текущий» u. s. w.
+- **RU:** **sravaka* _Adj._ «текущий» и т.д.
   <sub>lexicographic</sub>

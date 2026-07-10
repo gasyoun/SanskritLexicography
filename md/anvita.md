@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **1)** *anvita* s. *i* mit *anu* .
 
-- **RU:** *anvita* s. *i* с *anu* .
+- **RU:** *anvita* см. *i* с *anu* .
   <sub>lexicographic</sub>
 
 **NWS 1)** [NWS: ?] *i + anu ( anvita ): a) possessed oṛ, b) accompanied by, c) ṛull oṛ, d) ṛreḍuenting, living in. īs īndon 10, 2,2 , jhbhrahmāṇḍaph aid, ś. 137, Z. 23 , śthbh, ś. 59, Z. 9 , īs īndon 1, 1 .* [Reg, unsp (s.v. anvita)] i + anu (anvita): a) possessed of, b) accompanied by, c) full of, d) frequenting, living in.

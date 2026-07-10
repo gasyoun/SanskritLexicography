@@ -12,44 +12,43 @@
 - [asru](asru.md) — 3 senses
 - [atura](atura.md) — 2 senses
 - [aśokadatta](aSokadatta.md) — 2 senses
-- [bandh](banD.md) — 254 senses, EN 220
+- [bandh](banD.md) — 137 senses
 - [bara](bara.md) — 6 senses
 - [bhagavat](Bagavat.md) — 3 senses
-- [bhid](Bid.md) — 215 senses, EN 189
-- [bhuj](Buj.md) — 156 senses, EN 144
+- [bhid](Bid.md) — 205 senses
+- [bhuj](Buj.md) — 104 senses
 - [brāhmī](brAhmI.md) — 6 senses
-- [brū](brU.md) — 153 senses, EN 119
+- [brū](brU.md) — 110 senses
 - [bālacandrikā](bAlacandrikA.md) — 2 senses
-- [car](car.md) — 537 senses, EN 501
+- [car](car.md) — 257 senses
 - [catur](catur.md) — 21 senses
-- [chid](Cid.md) — 217 senses, EN 197
-- [d_a](d_a.md) — 367 senses, EN 367
+- [chid](Cid.md) — 154 senses
 - [dah](dah.md) — 139 senses
 - [devī](devI.md) — 3 senses
 - [dhmāna](DmAna.md) — 2 senses
-- [dhā](DA.md) — 898 senses, EN 837
-- [diś](diS.md) — 375 senses, EN 314
+- [dhā](DA.md) — 803 senses
+- [diś](diS.md) — 317 senses
 - [duṣkṛta](duzkfta.md) — 3 senses
 - [dviśatatama](dviSatatama.md) — 2 senses
-- [dā](dA.md) — 992 senses, EN 647
-- [gam](gam.md) — 807 senses, EN 621
+- [dā](dA.md) — 345 senses
+- [gam](gam.md) — 673 senses
 - [gaṭa](gawa.md) — 1 senses
 - [goṣa](goza.md) — 1 senses
 - [guhacandra](guhacandra.md) — 2 senses
-- [gā](gA.md) — 413 senses, EN 297
-- [han](han.md) — 749 senses, EN 629
+- [gā](gA.md) — 319 senses
+- [han](han.md) — 597 senses
 - [havyavaha](havyavaha.md) — 2 senses
-- [hi](hi.md) — 111 senses, EN 62
+- [hi](hi.md) — 101 senses
 - [huti](huti.md) — 2 senses
-- [hā](hA.md) — 412 senses, EN 341
-- [iṣ](iz.md) — 191 senses, EN 161
+- [hā](hA.md) — 247 senses
+- [iṣ](iz.md) — 92 senses
 - [jambūdvīpa](jambUdvIpa.md) — 4 senses
-- [jan](jan.md) — 257 senses, EN 213
+- [jan](jan.md) — 230 senses
 - [jarayu](jarayu.md) — 2 senses
-- [ji](ji.md) — 287 senses, EN 256
-- [jñā](jYA.md) — 355 senses, EN 311
+- [ji](ji.md) — 87 senses
+- [jñā](jYA.md) — 218 senses
 - [jātī](jAtI.md) — 2 senses
-- [jīv](jIv.md) — 103 senses, EN 84
+- [jīv](jIv.md) — 78 senses
 - [jūrti](jUrti.md) — 2 senses
 - [kalasa](kalasa.md) — 2 senses
 - [kanana](kanana.md) — 1 senses
@@ -57,40 +56,39 @@
 - [khāpara](KApara.md) — 2 senses
 - [kāṇabhūti](kARaBUti.md) — 2 senses
 - [kṣuda](kzuda.md) — 2 senses
-- [labh](laB.md) — 174 senses, EN 169
-- [mad](mad.md) — 144 senses, EN 102
+- [labh](laB.md) — 71 senses
+- [mad](mad.md) — 129 senses
 - [mahāvyāhṛti](mahAvyAhfti.md) — 2 senses
 - [majja](majja.md) — 3 senses
 - [maka](maka.md) — 2 senses
-- [man](man.md) — 209 senses, EN 169
-- [man_heal](man_heal.md) — 0 senses, EN 0
+- [man](man.md) — 111 senses
 - [manorata](manorata.md) — 1 senses
 - [maṣa](maza.md) — 1 senses
 - [mena](mena.md) — 13 senses
-- [muc](muc.md) — 313 senses, EN 290
-- [mā](mA.md) — 406 senses, EN 267
+- [muc](muc.md) — 264 senses
+- [mā](mA.md) — 271 senses
 - [mṛṇmaya](mfRmaya.md) — 2 senses
-- [naś](naS.md) — 163 senses, EN 120
+- [naś](naS.md) — 65 senses
 - [nibarhaṇa](nibarhaRa.md) — 4 senses
 - [nila](nila.md) — 1 senses
 - [nirbīja](nirbIja.md) — 4 senses
 - [nārī](nArI.md) — 8 senses
-- [nī](nI.md) — 517 senses, EN 447
+- [nī](nI.md) — 410 senses
 - [nīlikā](nIlikA.md) — 7 senses
 - [paka](paka.md) — 4 senses
 - [pariga](pariga.md) — 2 senses
 - [parihara](parihara.md) — 2 senses
-- [pat](pat.md) — 413 senses, EN 367
+- [pat](pat.md) — 381 senses
 - [patin](patin.md) — 2 senses
 - [patra](patra.md) — 12 senses
-- [paś](paS.md) — 185 senses, EN 155
+- [paś](paS.md) — 130 senses
 - [pramara](pramara.md) — 2 senses
 - [prasna](prasna.md) — 2 senses
 - [prota](prota.md) — 4 senses
-- [pā](pA.md) — 185 senses, EN 151
+- [pā](pA.md) — 149 senses
 - [pīna](pIna.md) — 6 senses
 - [pṛthvī](pfTvI.md) — 6 senses
-- [rakṣ](rakz.md) — 82 senses, EN 67
+- [rakṣ](rakz.md) — 67 senses
 - [ramaṭa](ramawa.md) — 2 senses
 - [rājavāhana](rAjavAhana.md) — 2 senses
 - [salya](salya.md) — 2 senses
@@ -101,10 +99,10 @@
 - [sattvaka](sattvaka.md) — 2 senses
 - [savas](savas.md) — 2 senses
 - [saṃkalikā](saMkalikA.md) — 3 senses
-- [sidh](siD.md) — 292 senses, EN 243
+- [sidh](siD.md) — 187 senses
 - [soṣa](soza.md) — 2 senses
 - [sravaka](sravaka.md) — 2 senses
-- [su](su.md) — 131 senses, EN 87
+- [su](su.md) — 94 senses
 - [sula](sula.md) — 2 senses
 - [sulin](sulin.md) — 2 senses
 - [suri](suri.md) — 2 senses
@@ -115,10 +113,10 @@
 - [utsaha](utsaha.md) — 3 senses
 - [utta](utta.md) — 5 senses
 - [uttapana](uttapana.md) — 2 senses
-- [vac](vac.md) — 177 senses, EN 165
-- [vad](vad.md) — 329 senses, EN 271
-- [vah](vah.md) — 419 senses, EN 372
-- [vas](vas.md) — 495 senses, EN 418
+- [vac](vac.md) — 74 senses
+- [vad](vad.md) — 297 senses
+- [vah](vah.md) — 360 senses
+- [vas](vas.md) — 407 senses
 - [vasa](vasa.md) — 20 senses
 - [vasin](vasin.md) — 4 senses
 - [vasya](vasya.md) — 2 senses
@@ -129,23 +127,23 @@
 - [visala](visala.md) — 2 senses
 - [vitana](vitana.md) — 2 senses
 - [vittama](vittama.md) — 2 senses
-- [viś](viS.md) — 613 senses, EN 499
+- [viś](viS.md) — 537 senses
 - [viḍu](viqu.md) — 2 senses
-- [vraj](vraj.md) — 137 senses, EN 123
+- [vraj](vraj.md) — 128 senses
 - [vrīḍā](vrIqA.md) — 2 senses
-- [vā](vA.md) — 238 senses, EN 205
-- [yaj](yaj.md) — 153 senses, EN 91
-- [yat](yat.md) — 206 senses, EN 166
+- [vā](vA.md) — 157 senses
+- [yaj](yaj.md) — 100 senses
+- [yat](yat.md) — 159 senses
 - [yatu](yatu.md) — 2 senses
 - [yuvan](yuvan.md) — 11 senses
-- [yā](yA.md) — 416 senses, EN 403
+- [yā](yA.md) — 316 senses
 - [yāvat](yAvat.md) — 4 senses
 - [ādika](Adika.md) — 5 senses
 - [āmarśa](AmarSa.md) — 4 senses
-- [āp](Ap.md) — 296 senses, EN 277
-- [ās](As.md) — 204 senses, EN 193
-- [śam](Sam.md) — 223 senses, EN 170
-- [śru](Sru.md) — 131 senses, EN 118
+- [āp](Ap.md) — 152 senses
+- [ās](As.md) — 90 senses
+- [śam](Sam.md) — 172 senses
+- [śru](Sru.md) — 80 senses
 - [śulva](Sulva.md) — 2 senses
 - [śākhā](SAKA.md) — 13 senses
 - [ṛtvij](ftvij.md) — 3 senses

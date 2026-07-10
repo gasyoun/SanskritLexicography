@@ -13,16 +13,9 @@ Sch.
 
 - **RU:** — intens. *bebhidīti*
 [P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), [Sch. 6,4,49],
-Sch.
+схол.
 *bebhetti*
 [VOP. 20,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,22) многократно раскалывать —, рубить: *bhūyastaṃ bebhidāṃ cakre nakhatuṇḍāyudhaḥ khagaḥ*
-[BHAṬṬ. 5,105.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,105) *tasyāpyabebhidiṣṭāsau mūrdhānaṃ muṣṭināṅgadaḥ*
-[15,116.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,116)
-- **EN:** — intens. *bebhidīti*
-[P. 7,4,65](https://ashtadhyayi.com/sutraani/7/4/65), [Sch. 6,4,49],
-Sch.
-*bebhetti*
-[VOP. 20,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,22) to split, to hew into repeatedly: *bhūyastaṃ bebhidāṃ cakre nakhatuṇḍāyudhaḥ khagaḥ*
 [BHAṬṬ. 5,105.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,105) *tasyāpyabebhidiṣṭāsau mūrdhānaṃ muṣṭināṅgadaḥ*
 [15,116.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,116)
   <sub>attested</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *saṃpari* охватывать, сосредоточивать: *saṃparyāpya mūlāni ca prāntāni ca*
 [KAUŚ. 90.]
-- **EN:** — *saṃpari* to sum up, to take together: *saṃparyāpya mūlāni ca prāntāni ca*
-[KAUŚ. 90.]
   <sub>attested</sub>

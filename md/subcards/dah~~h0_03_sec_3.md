@@ -21,6 +21,6 @@
 **desid. 2)** — Vgl. *didhakṣā, didhakṣu* . — caus. vom desid. Jmd antreiben, dass er zum Verbrennen sich anschicke: *taṃ susthayantaḥ sacivā narendraṃ didhakṣayantaḥ*
 [BHAṬṬ. 3,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,33)
 
-- **RU:** — Vgl. *didhakṣā, didhakṣu* . — caus. от desid. «побуждать кого-л. к тому, чтобы он собрался сжечь»: *taṃ susthayantaḥ sacivā narendraṃ didhakṣayantaḥ*
+- **RU:** — ср. *didhakṣā, didhakṣu* . — caus. от desid. «побуждать кого-л. к тому, чтобы он собрался сжечь»: *taṃ susthayantaḥ sacivā narendraṃ didhakṣayantaḥ*
 [BHAṬṬ. 3,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,33)
   <sub>attested</sub>

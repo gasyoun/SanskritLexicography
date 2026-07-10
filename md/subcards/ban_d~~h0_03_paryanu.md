@@ -5,6 +5,5 @@
 
 **1)** — *paryanu* s. *paryanubandha* .
 
-- **RU:** — *paryanu* s. *paryanubandha*.
-- **EN:** — *paryanu* s. *paryanubandha*.
+- **RU:** — *paryanu* см. *paryanubandha*.
   <sub>attested</sub>

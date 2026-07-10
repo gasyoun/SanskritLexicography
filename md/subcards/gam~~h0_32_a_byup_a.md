@@ -8,6 +8,4 @@
 
 - **RU:** — *abhyupā* прийти к, в: *antikamabhyupāgatāḥ*
 [LALIT. Calc. 7,11.]
-- **EN:** — *abhyupā* to come to, into: *antikamabhyupāgatāḥ*
-[LALIT. Calc. 7,11.]
   <sub>attested</sub>

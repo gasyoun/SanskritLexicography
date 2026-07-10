@@ -3,8 +3,7 @@
 `vac~~h0_11_ud`
 
 
-**1)** — *ud* s. *udvācana* .
+**ud+vac)** — *ud* s. *udvācana* .
 
-- **RU:** — *ud* s. *udvācana* .
-- **EN:** — *ud* s. *udvācana*.
+- **RU:** — *ud* см. *udvācana* .
   <sub>attested</sub>

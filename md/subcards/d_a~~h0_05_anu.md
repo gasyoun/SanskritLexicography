@@ -43,13 +43,13 @@
 **4)** — 4) viell. Jmd (acc.) nachträglich eins versetzen: *agrato lakṣaye yāntaṃ puruṣaṃ pāvakaprabham .. — .. tena bhagnānarīnsarvānmadbhagnānmanyate janaḥ . tena bhagnāni sainyāni pṛṣṭhato 'nudadāmyaham ..*
 [MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499)
 
-- **RU:** 4) viell. нанести кому-л. (acc.) удар вдогонку, ударить вослед: *agrato lakṣaye yāntaṃ puruṣaṃ pāvakaprabham .. — .. tena bhagnānarīnsarvānmadbhagnānmanyate janaḥ . tena bhagnāni sainyāni pṛṣṭhato 'nudadāmyaham ..*
+- **RU:** 4) возможно нанести кому-л. (acc.) удар вдогонку, ударить вослед: *agrato lakṣaye yāntaṃ puruṣaṃ pāvakaprabham .. — .. tena bhagnānarīnsarvānmadbhagnānmanyate janaḥ . tena bhagnāni sainyāni pṛṣṭhato 'nudadāmyaham ..*
 [MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499)
   <sub>attested</sub>
 
 **comp.)** — Vgl. *anānuda, anudeyī* (viell. Mitgabe
 [ṚV. 10,85,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.06)).
 
-- **RU:** Vgl. *anānuda, anudeyī* (viell. приданое
+- **RU:** ср. *anānuda, anudeyī* (возможно приданое
 [ṚV. 10,85,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.06)).
   <sub>lexicographic</sub>

@@ -8,6 +8,4 @@
 
 - **RU:** — *vinis*, partic. *vinirhata* «уничтоженный»
 [AV. 7,52,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.052.html#av07.052.02)
-- **EN:** — *vinis*, partic. *vinirhata* "destroyed, annihilated"
-[AV. 7,52,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.052.html#av07.052.02)
   <sub>attested</sub>

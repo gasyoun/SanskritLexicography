@@ -8,6 +8,4 @@
 
 - **RU:** — *vyāpa* по всей видимости
 [MBH. 3,775](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.775), однако с [ed. Bomb.] следует читать *vyapāyāt*.
-- **EN:** — *vyāpa* apparently
-[MBH. 3,775](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.775), where however *vyapāyāt* is to be read with the [ed. Bomb.].
   <sub>attested</sub>

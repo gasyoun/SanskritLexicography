@@ -16,7 +16,7 @@
 Z. 5 ein *tasya* zu streichen.
 
 - **RU:** — *adhi*
-Z. 5 вычеркнуть *tasya*.
+стк. 5 вычеркнуть *tasya*.
   <sub>mixed</sub>
 
 **8)** — *pra* intens. theilhaftig werden, mit acc.: *sumatim*

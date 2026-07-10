@@ -8,6 +8,4 @@
 
 - **RU:** — *nis* выходить, подниматься вверх: *nirjihānaṃ dadarśa saḥ . dhūpadhūmaṃ vanapluṣṭātkālāguruvanāt*
 [RĀJA-TAR. 4,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,171)
-- **EN:** — *nis* {to shoot out, rise up}: *nirjihānaṃ dadarśa saḥ . dhūpadhūmaṃ vanapluṣṭātkālāguruvanāt*
-[RĀJA-TAR. 4,171.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,171)
   <sub>attested</sub>

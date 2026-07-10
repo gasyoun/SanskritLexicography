@@ -12,5 +12,4 @@
 [R. 3,76,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,76,30) *(himācalam) abhinirmitaṃ pratinidhiṃ jagatāmiva śaṃbhunā*
 [KIR. 5,3.] *prabodhacandrodayaṃ nāma nāṭakamabhinirmāya* составлять
 [PRAB. 2,18], v. l.
-- **EN:** — *abhinis* to form, to fashion, to build, to create: *caityaḥ pūrvakālābhinirmitaḥ* [R. 3,76,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,76,30) *(himācalam) abhinirmitaṃ pratinidhiṃ jagatāmiva śaṃbhunā* [KIR. 5,3.] *prabodhacandrodayaṃ nāma nāṭakamabhinirmāya* to compose [PRAB. 2,18], v. l.
   <sub>attested</sub>

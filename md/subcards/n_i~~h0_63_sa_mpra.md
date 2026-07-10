@@ -12,18 +12,12 @@
  1) собирать воедино, сбирать: *yaśo rakṣasva vidura saṃpraṇītam*
 [MBH. 2,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2126) *dayāvānapramattaśca karānsaṃpraṇayenmṛdūn* взимать дань
 [12,3300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3300)
-- **EN:** — *saṃpra*
-1) to collect together, gather in: *yaśo rakṣasva vidura saṃpraṇītam*
-[MBH. 2,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2126) *dayāvānapramattaśca karānsaṃpraṇayenmṛdūn* to levy tribute
-[12,3300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3300)
   <sub>attested</sub>
 
 **2)** — 2) *daṇḍam* den Stock führen, Strafe verhängen: *(daṇḍam) yathārhataḥ saṃpraṇayennareṣvanyāyavartiṣu*
 [M. 7,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,16)
 
 - **RU:** — 2) *daṇḍam* налагать наказание, карать: *(daṇḍam) yathārhataḥ saṃpraṇayennareṣvanyāyavartiṣu*
-[M. 7,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,16)
-- **EN:** 2) *daṇḍam* to wield the rod, inflict punishment: *(daṇḍam) yathārhataḥ saṃpraṇayennareṣvanyāyavartiṣu*
 [M. 7,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,16)
   <sub>attested</sub>
 
@@ -32,12 +26,9 @@
 
 - **RU:** — 3) составлять, сочинять: *trīṇi ślokasahasrāṇi — muninā saṃpraṇītāni*
 [MBH. 1,561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.561)
-- **EN:** 3) to compose, draft: *trīṇi ślokasahasrāṇi — muninā saṃpraṇītāni*
-[MBH. 1,561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.561)
-— Vgl. *saṃpraṇetar* .
   <sub>attested</sub>
 
 **addendum)** — Vgl. *saṃpraṇetar* .
 
-- **RU:** — Vgl. *saṃpraṇetar* .
+- **RU:** — ср. *saṃpraṇetar* .
   <sub>attested</sub>

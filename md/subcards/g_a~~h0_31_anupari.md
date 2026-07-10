@@ -8,6 +8,4 @@
 
 - **RU:** — *anupari* проходить насквозь, обходить, странствовать по: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
 [MBH. 12,8081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8081)
-- **EN:** — *anupari* to pass through, traverse: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
-[MBH. 12,8081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8081)
   <sub>attested</sub>

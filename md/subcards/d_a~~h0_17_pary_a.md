@@ -7,7 +7,7 @@
  1) sich aneignen, lernen: *prajñāṃ paryādadīta*
 [MBH. 12,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3256)
 
-- **RU:** — *paryā* med.
+- **RU:** — *paryā* мед.
  1) усваивать, учиться: *prajñāṃ paryādadīta*
 [MBH. 12,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3256)
   <sub>attested</sub>

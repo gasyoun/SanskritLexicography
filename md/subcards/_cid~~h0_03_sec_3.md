@@ -3,8 +3,7 @@
 `_cid~~h0_03_sec_3`
 
 
-**desid)** — desid. s. *cicchitsu* .
+**desid-header)** — desid. s. *cicchitsu* .
 
-- **RU:** — desid. s. *cicchitsu* .
-- **EN:** — desid. s. *cicchitsu* .
+- **RU:** — desid. см. *cicchitsu* .
   <sub>attested</sub>

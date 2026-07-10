@@ -7,13 +7,10 @@
 [BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* Schol.
 
 - **RU:** — *parisam* pass. «достигать конца, приходить к конечной цели»
-[BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* Schol.
-- **EN:** — *parisam* pass. "to come to a conclusion, to reach the final goal"
-[BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* Schol.
+[BHĀG. P. 11,16,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,16,44) = *kṛtakṛtyo bhū* схол.
   <sub>attested</sub>
 
 **2)** — Vgl. *parisamāpti* .
 
-- **RU:** — Vgl. *parisamāpti* .
-- **EN:** — Vgl. *parisamāpti*.
+- **RU:** — ср. *parisamāpti* .
   <sub>attested</sub>

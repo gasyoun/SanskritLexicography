@@ -7,7 +7,5 @@
 [P. 8,1,70](https://ashtadhyayi.com/sutraani/8/1/70), Sch.
 
 - **RU:** — *samudā*, *˚nayati*
-[P. 8,1,70](https://ashtadhyayi.com/sutraani/8/1/70), Sch.
-- **EN:** — *samudā*, *˚nayati*
-[P. 8,1,70](https://ashtadhyayi.com/sutraani/8/1/70), Sch.
+[P. 8,1,70](https://ashtadhyayi.com/sutraani/8/1/70), схол.
   <sub>attested</sub>

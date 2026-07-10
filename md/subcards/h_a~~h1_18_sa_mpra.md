@@ -8,6 +8,4 @@
 
 - **RU:** *saṃpra* покидать: *saṃprahāya śayanam*
 [MBH. 4,517.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.517)
-- **EN:** — *saṃpra* to abandon: *saṃprahāya śayanam*
-[MBH. 4,517.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.517)
   <sub>attested</sub>

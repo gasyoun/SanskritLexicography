@@ -7,7 +7,5 @@
 [P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), Sch.
 
 - **RU:** — intens. *jejīyate*
-[P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), Sch.
-- **EN:** — intens. *jejīyate*
-[P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), Sch.
+[P. 7,3,57](https://ashtadhyayi.com/sutraani/7/3/57), схол.
   <sub>attested</sub>

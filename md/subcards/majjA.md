@@ -5,7 +5,7 @@
 
 **1 (PWG))** *majja* (von *majj)* _adj._ untertauchend; s. *uda˚* .
 
-- **RU:** *majja* (от *majj)* _adj._ погружающийся; s. *uda˚* .
+- **RU:** *majja* (от *majj)* _adj._ погружающийся; см. *uda˚* .
   <sub>lexicographic</sub>
 
 **1 (PW))** *˚majja* _Adj._ untertauchend in *udamajja*.

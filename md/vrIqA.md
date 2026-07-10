@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **1)** *vrīḍā* s. u. *vrīḍa* .
 
-- **RU:** *vrīḍā* см. s. u. *vrīḍa* .
+- **RU:** *vrīḍā* см. *vrīḍa* .
   <sub>lexicographic</sub>
 
 **NWS-1)** *vrīḍā* [Gen] Subst f shame, modesty, bashfulness. vrīḍāṃ √ kṛ : to feel shame. Mbh , Kāvya(MW) .

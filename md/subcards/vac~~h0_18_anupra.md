@@ -5,6 +5,5 @@
 
 **1)** — *anupra* s. *anupravacana* .
 
-- **RU:** — *anupra* s. *anupravacana* .
-- **EN:** — *anupra* s. *anupravacana*.
+- **RU:** — *anupra* см. *anupravacana* .
   <sub>attested</sub>

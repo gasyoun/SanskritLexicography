@@ -11,7 +11,7 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 [P. 3,3,58](https://ashtadhyayi.com/sutraani/3/3/58), Vārtt. 4, Sch.
 
 - **RU:** *prasna* (от *snā* с *pra*) _m._ купальня, бассейн для купания
-[P. 3,3,58](https://ashtadhyayi.com/sutraani/3/3/58), Vārtt. 4, Sch.
+[P. 3,3,58](https://ashtadhyayi.com/sutraani/3/3/58), Вартт. 4, схол.
   <sub>lexicographic</sub>
 
 **1 (PW))** **prasna* _m._ Badebehälter.

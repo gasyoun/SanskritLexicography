@@ -8,6 +8,4 @@
 
 - **RU:** — *apā* отделять, снимать: *netprāṇebhya ātmānamapādadhāni*
 [ŚĀṄKH. BR. 17,7. 25,12.]
-- **EN:** — *apā* to detach, remove: *netprāṇebhya ātmānamapādadhāni*
-[ŚĀṄKH. BR. 17,7. 25,12.]
   <sub>attested</sub>

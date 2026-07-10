@@ -8,10 +8,7 @@
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
 
 - **RU:** 1. *mā*
- 1) *mā bhūdāgataḥ* так v. a. неужели он, пожалуй, пришёл?
-[Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
-- **EN:** *mā*
- 1) *mā bhūdāgataḥ* so v. a. "should he perhaps not have come?"
+ 1) *mā bhūdāgataḥ* так преим. неужели он, пожалуй, пришёл?
 [Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
   <sub>attested</sub>
 
@@ -19,16 +16,12 @@
 Z. 8 lies 7, 59, 12.
 
 - **RU:** — 3)
-Z. 8 читай 7, 59, 12.
-- **EN:** — 3)
-Z. 8 read 7, 59, 12.
+стк. 8 читай 7, 59, 12.
   <sub>attested</sub>
 
 **4)** — 4)
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
 
 - **RU:** — 4)
-[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
-- **EN:** — 4)
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688)
   <sub>attested</sub>

@@ -20,17 +20,8 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
 [R. 2,84,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,4)
 [KATHĀS. 49,105.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,105)
 [RĀJA-TAR. 6,330.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,330) *śatena bandhitaḥ* «долг в сто [единиц] посадил его в тюрьму»
-[P. 2,3,24](https://ashtadhyayi.com/sutraani/2/3/24), Sch.
-Согласно [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32), *bandhayati* и *bādhayati* означают «связывать вместе»; vgl. *bandhayitar*.
-- **EN:** — caus. *bandhayati*
- 1) to have (someone) bound —, have (someone) put in captivity: *gām*
-[KAUŚ. 69.] *aśvam*
-[ŚAT. BR. 13,5,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,4) *bandhayiṣyati vā pāśairatha vāsmānvadhiṣyati*
-[R. 2,84,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,4)
-[KATHĀS. 49,105.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,105)
-[RĀJA-TAR. 6,330.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,330) *śatena bandhitaḥ* "a debt of a hundred has brought him into prison"
-[P. 2,3,24](https://ashtadhyayi.com/sutraani/2/3/24), Sch.
-According to [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32), *bandhayati* and *bādhayati* mean "to bind together"; vgl. *bandhayitar*.
+[P. 2,3,24](https://ashtadhyayi.com/sutraani/2/3/24), схол.
+Согласно [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32), *bandhayati* и *bādhayati* означают «связывать вместе»; ср. *bandhayitar*.
   <sub>attested</sub>
 
 **2)** — 2) zusammenfügen —, bauen lassen: *sa setuṃ bandhayāmāsa *
@@ -45,11 +36,5 @@ According to [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/cs
 * plavagairlavaṇāmbhasi*
 [RAGH. 12,70.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,70)
 [RĀJA-TAR. 1,156.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,156) «велеть запрудить»: *vitastāmekataḥ sthānātkarmakṛdbhirabandhayat*
-[5,90.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,90)
-- **EN:** — 2) to have (something) joined together —, have (it) built: *sa setuṃ bandhayāmāsa *
-
-* plavagairlavaṇāmbhasi*
-[RAGH. 12,70.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,70)
-[RĀJA-TAR. 1,156.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,156) to have (a river) dammed up: *vitastāmekataḥ sthānātkarmakṛdbhirabandhayat*
 [5,90.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,90)
   <sub>attested</sub>

@@ -7,10 +7,10 @@
 [P. 7,4,40](https://ashtadhyayi.com/sutraani/7/4/40), Sch.
 
 - **RU:** — *nis*, partic. *nirdita*
-[P. 7,4,40](https://ashtadhyayi.com/sutraani/7/4/40), Sch.
+[P. 7,4,40](https://ashtadhyayi.com/sutraani/7/4/40), схол.
   <sub>attested</sub>
 
 **2)** — Vgl. *nirdātar* .
 
-- **RU:** — Vgl. *nirdātar* .
+- **RU:** — ср. *nirdātar* .
   <sub>attested</sub>

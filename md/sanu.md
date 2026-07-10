@@ -9,7 +9,7 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 
 **1)** *sanu* in 2. *sanutar* fgg.
 
-- **RU:** *sanu* в 2. *sanutar* fgg.
+- **RU:** *sanu* в 2. *sanutar* сл.
   <sub>lexicographic</sub>
 
 **NWS-1)** *sánu* [Ved]: gewinnend

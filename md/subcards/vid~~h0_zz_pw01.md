@@ -7,7 +7,7 @@
 — 1〉 finden, habhaft werden, antreffen, sich aneignen, erwerben, gewinnen, theilhaftig werden; besitzen. *diśaḥ* so v. a. sich in den Weltgegenden zurechtfinden.
 
 - **RU:** **3.** √*vid*, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
-— 1) *найти*, *завладеть, застать, овладеть чем-либо*; *приобрести, добыть*, *стать причастным чему-либо*; *обладать*. *diśaḥ*, так v. a. *ориентироваться в странах света*.
+— 1) *найти*, *завладеть, застать, овладеть чем-либо*; *приобрести, добыть*, *стать причастным чему-либо*; *обладать*. *diśaḥ*, так преим. *ориентироваться в странах света*.
   <sub>attested</sub>
 
 **PW-3-2)** — 2〉 Jmd (Dat.) Etwas verschaffen.
@@ -47,7 +47,7 @@
 
 **PW-3-8a)** — a〉 mit und ohne *bhāryam* u. s. w. ein Weib —, zum Weibe nehmen.
 
-- **RU:** — a) с *bhāryam* и без него u. s. w. *взять жену, жениться*.
+- **RU:** — a) с *bhāryam* и без него и т.д. *взять жену, жениться*.
   <sub>attested</sub>
 
 **PW-3-8b)** — b〉 einen Mann finden, heirathen (vom Weibe gesagt).
@@ -62,7 +62,7 @@
 
 **PW-3-9)** — 9〉 Pass. Med. gefunden werden, vorhanden —, da sein, bestehen. *vidyate* (metrisch auch *vidyati*) es giebt, ist da, es besteht; insbes. mit einer Negation. *yathā* *vide* wie es geht, wie es so ist, so v. a. wie gewöhnlich und so gut als möglich. **vidyate* *bhoktum* es ist Etwas da zum Essen. **vidyate* mit folgendem Fut. ist es möglich, dass? *vidyamāna* da seiend, vorhanden.
 
-- **RU:** — 9) Pass. Med. *быть найденным, иметься в наличии —, существовать, иметься*. *vidyate* (метрически также *vidyati*) *имеется, есть, существует*; insbes. с отрицанием. *yathā* *vide* *как обстоит дело, как это бывает*, так v. a. *как обычно* и *как можно лучше*. **vidyate* *bhoktum* *есть что-нибудь поесть*. **vidyate* со следующим Fut. *возможно ли, что...?* *vidyamāna* *имеющийся в наличии, существующий*.
+- **RU:** — 9) Pass. Med. *быть найденным, иметься в наличии —, существовать, иметься*. *vidyate* (метрически также *vidyati*) *имеется, есть, существует*; особ. с отрицанием. *yathā* *vide* *как обстоит дело, как это бывает*, так преим. *как обычно* и *как можно лучше*. **vidyate* *bhoktum* *есть что-нибудь поесть*. **vidyate* со следующим Fut. *возможно ли, что...?* *vidyamāna* *имеющийся в наличии, существующий*.
   <sub>attested</sub>
 
 **10)** — 10〉 *vidāna* und *vidāna*
@@ -127,7 +127,7 @@
 
 **13)** — 13〉 *vindati* auch = *vetti* ([Text zu Lot. de la b. l. 77]) und *vindyāt* sehr oft st. *vidyāt*, wie die v. l. häufig hat.
 
-- **RU:** — 13〉 *vindati* тоже = *vetti* ([Text zu Lot. de la b. l. 77]) и *vindyāt* очень часто st. *vidyāt*, как это часто бывает у v. l..
+- **RU:** — 13〉 *vindati* тоже = *vetti* ([Text zu Lot. de la b. l. 77]) и *vindyāt* очень часто вместо *vidyāt*, как это часто бывает у v. l..
   <sub>attested</sub>
 
 **13)** — Desid. *vivitsita* was man zu finden wünscht.
@@ -152,7 +152,7 @@
 
 **2)** — 2〉 die erste (frühere) Frau (Frauen) hintansetzen (von einer neuen Frau gesagt), so v. a. als Nebenbuhlerin auftreten von (Acc.).
 
-- **RU:** — 2〉 *оттеснять на второй план* первую (прежнюю) жену (жён) (говорится о новой жене), так v. a. *выступать соперницей* (Acc.).
+- **RU:** — 2〉 *оттеснять на второй план* первую (прежнюю) жену (жён) (говорится о новой жене), так преим. *выступать соперницей* (Acc.).
   <sub>attested</sub>
 
 **3)** — 3〉 *adhivinnā* und *adhivinnastrī* eine durch eine Nebenbuhlerin hintangesetzte Frau.
@@ -182,7 +182,7 @@
 
 **4)** — 4〉 finden, so v. a. halten für; mit doppeltem Acc.
 
-- **RU:** — 4〉 *находить,* т.е. v. a. *считать за, принимать за*; с двойным Acc.
+- **RU:** — 4〉 *находить,* т.е. преим. *считать за, принимать за*; с двойным Acc.
   <sub>attested</sub>
 
 **5)** — 5〉 Pass. vorhanden —, da sein.
@@ -277,7 +277,7 @@
 — Mit *pra*
 
 - **RU:** — 3〉 *parivitta* обнимать, охватывать.
-— Vgl. *parivitta* и след.
+— ср. *parivitta* и след.
 — С *pra*
   <sub>attested</sub>
 
@@ -348,7 +348,7 @@
 
 **3)** — 3〉 Pass. sich finden, da sein, geben (impers.), esse alicui (Gen.); insbes. in der Frage oder mit *na* [VAJRACCH. 38,12. fgg.] [KĀRAṆḌ. 43,21. 45,15. 52,20. 53,18].
 
-- **RU:** — 3〉 Pass. {находиться, иметься, существовать} (impers.), esse alicui (Gen.); insbes. в вопросе или с *na* [VAJRACCH. 38,12. fgg.] [KĀRAṆḌ. 43,21. 45,15. 52,20. 53,18].
+- **RU:** — 3〉 Pass. {находиться, иметься, существовать} (impers.), esse alicui (Gen.); особ. в вопросе или с *na* [VAJRACCH. 38,12. fgg.] [KĀRAṆḌ. 43,21. 45,15. 52,20. 53,18].
   <sub>attested</sub>
 
 **3)** — Intens. (*sam — vevidānaḥ*) vereint mit (Instr.).

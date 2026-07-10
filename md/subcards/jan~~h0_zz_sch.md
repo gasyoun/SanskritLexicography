@@ -3,13 +3,6 @@
 `jan~~h0_zz_sch`
 
 
-**main)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.] — Mit ava, ˚jāta = apajāta, mißraten, [Divyāvad. 2,13.] — Mit pratyā [Kauṣ. Up. 1,2.] — Mit nis, nirjāta entstanden aus (Abl.), [Vajracch. 25,]
-
- 4. 6. — nirjāta (mit niryāta verwechselt) bedeutet vollkommen vertraut mit, steht also richtig nach. — Mit pra, prajāta qui semen inmisit, [Kāty. Śr. 20,3,20.] — Mit parivi in der Fortpflanzung übertreffen, mit Akk. [Maitr. S. 2,5,1] (46,15). {part=,seq=13866,type=,n=14}
-- **EN:** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān revived, came to life again, [MBh. 8,33,31.] — With ava, °jāta = apajāta, turned out badly, [Divyāvad. 2,13.] — With pratyā [Kauṣ. Up. 1,2.] — With nis, nirjāta arisen from (Abl.), [Vajracch. 25,]
-
-4. 6. — nirjāta (confused with niryāta) means thoroughly familiar with, and so rightly stands after. — With pra, prajāta "qui semen inmisit" (one who has emitted semen), [Kāty. Śr. 20,3,20.] — With parivi to surpass in propagation, with Acc. [Maitr. S. 2,5,1] (46,15). {part=,seq=13866,type=,n=14}
-
 **jajānat)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.]
 
 - **RU:** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān жил снова, ожил, [MBh. 8,33,31.]

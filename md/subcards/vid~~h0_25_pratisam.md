@@ -5,5 +5,5 @@
 
 **1)** — *pratisam* s. *pratisaṃvid* fgg.
 
-- **RU:** — *pratisam* s. *pratisaṃvid* fgg.
+- **RU:** — *pratisam* см. *pratisaṃvid* сл.
   <sub>attested</sub>

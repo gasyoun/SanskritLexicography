@@ -5,7 +5,7 @@
 
 **1)** *utsaha* nom. act. von *sah* mit *ud* in *durutsaha* (s. d.)
 
-- **RU:** *utsaha* nom. act. от *sah* с *ud* в *durutsaha* (s. d.)
+- **RU:** *utsaha* nom. act. от *sah* с *ud* в *durutsaha* (см.)
   <sub>lexicographic</sub>
 
 **1 (PW))** *utsaha* in *durutsaha*.

@@ -1,4 +1,4 @@
-## dhā
+## apidhā
 
 `_d_a~~h6_02_api`
 
@@ -8,8 +8,10 @@
 [BHĀG. P. 10,30,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,22) *pidadhati śrotre*
 [LA. (II) 87,1.] *kṣudrākṣeṇeva jālena jhaṣāvapihitāvubhau* so v. a. steckend in
 [Spr. 3999.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3999)
-- **EN:** — *api*
+
+- **RU:** — *api*
  2) *cakṣūṃṣyāśvapidadhvam*
 [BHĀG. P. 10,30,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,22) *pidadhati śrotre*
-[LA. (II) 87,1.] *kṣudrākṣeṇeva jālena jhaṣāvapihitāvubhau* so v. a. inserted in, stuck in
+[LA. (II) 87,1.] *kṣudrākṣeṇeva jālena jhaṣāvapihitāvubhau* так преим. торчащий в, вонзённый в
 [Spr. 3999.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3999)
+  <sub>attested</sub>

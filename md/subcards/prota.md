@@ -5,14 +5,14 @@
 
 **PWG-1)** *prota* s. u. *vā, vayati* mit *pra* .
 
-- **RU:** *prota* см. под глаголом s. u. *vā, vayati* с *pra* .
+- **RU:** *prota* см. под глаголом см. *vā, vayati* с *pra* .
   <sub>lexicographic</sub>
 
 **PW-1)** *prota*
 — 1〉 _Adj._ s. u. **5.** *vā* mit *pra*.
 
 - **RU:** *prota*
-— 1〉 _Adj._ s. u. **5.** *vā* с *pra*.
+— 1〉 _Adj._ см. **5.** *vā* с *pra*.
   <sub>attested</sub>
 
 **PW-2)** — 2〉 *_m._ _n._ gewebtes Zeug, ein gewebtes Gewand.

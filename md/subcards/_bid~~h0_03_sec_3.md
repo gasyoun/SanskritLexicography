@@ -3,8 +3,7 @@
 `_bid~~h0_03_sec_3`
 
 
-**desid-nom)** — desid. vom caus. s. *bibhedayiṣu* .
+**desid-3)** — desid. vom caus. s. *bibhedayiṣu* .
 
-- **RU:** — desid. от caus. s. *bibhedayiṣu* .
-- **EN:** — desid. from caus. s. *bibhedayiṣu*.
+- **RU:** — desid. от caus. см. *bibhedayiṣu* .
   <sub>lexicographic</sub>

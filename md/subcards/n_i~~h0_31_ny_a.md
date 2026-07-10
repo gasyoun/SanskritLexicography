@@ -8,6 +8,4 @@
 
 - **RU:** — *nyā* возвращать, приводить обратно: *iyaṃ ha mahyaṃ tvāmoṣadhirbaddhveva nyānayet*
 [AV. 7,38,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.038.html#av07.038.05)
-- **EN:** — *nyā* to bring back: *iyaṃ ha mahyaṃ tvāmoṣadhirbaddhveva nyānayet*
-[AV. 7,38,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.038.html#av07.038.05)
   <sub>attested</sub>

@@ -10,11 +10,11 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 **1)** *kāṇabhūti* (*kā˚ + bhū˚*) _m._ N. pr. eines Yakṣa
 [KATHĀS. 1,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,59)
 
-- **RU:** *kāṇabhūti* (*kā˚ + bhū˚*) _m._ N. pr. одного Yakṣa
+- **RU:** *kāṇabhūti* (*kā˚ + bhū˚*) _m._ имя собств. одного Йакша
 [KATHĀS. 1,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,59)
   <sub>attested</sub>
 
 **PW)** *kāṇabhūti* _m._ N. pr. eines Yakṣa.
 
-- **RU:** *kāṇabhūti* _m._ N. pr. одного Yakṣa.
+- **RU:** *kāṇabhūti* _m._ имя собств. одного Йакша.
   <sub>attested</sub>

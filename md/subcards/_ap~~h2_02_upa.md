@@ -5,6 +5,5 @@
 
 **1)** — *upa* vgl. *upāpa, upāpti, upepsā* .
 
-- **RU:** — *upa* vgl. *upāpa, upāpti, upepsā* .
-- **EN:** — *upa* vgl. *upāpa, upāpti, upepsā*.
+- **RU:** — *upa* ср. *upāpa, upāpti, upepsā* .
   <sub>attested</sub>

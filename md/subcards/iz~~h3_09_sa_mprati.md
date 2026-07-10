@@ -3,11 +3,6 @@
 `iz~~h3_09_sa_mprati`
 
 
-**1)** — *saṃprati* beistimmen, zusagen: *saṃpratīccha me*
-[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
-- **EN:** — *saṃprati* to assent, to consent: *saṃpratīccha me*
-[R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
-
 **1))** — *saṃprati* beistimmen, zusagen: *saṃpratīccha me*
 [R. 1,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,13)
 

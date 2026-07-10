@@ -8,6 +8,4 @@
 
 - **RU:** — *vyava* снимать с себя, скидывать: *pāduke vyavamucya*
 [R. 2,112,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,22)
-- **EN:** — *vyava* "to detach from oneself, lay aside": *pāduke vyavamucya*
-[R. 2,112,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,22)
   <sub>attested</sub>

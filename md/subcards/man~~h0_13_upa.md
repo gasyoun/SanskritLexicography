@@ -5,6 +5,5 @@
 
 **1)** — *upa* s. *upamāti* und *upamīmāṃsā* .
 
-- **RU:** — *upa* s. *upamāti* и *upamīmāṃsā* .
-- **EN:** — *upa* s. *upamāti* and *upamīmāṃsā* .
+- **RU:** — *upa* см. *upamāti* и *upamīmāṃsā* .
   <sub>attested</sub>

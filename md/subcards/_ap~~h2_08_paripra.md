@@ -5,6 +5,5 @@
 
 **1)** — *paripra* vgl. *pariprāpti, pariprepsu* .
 
-- **RU:** — *paripra* vgl. *pariprāpti, pariprepsu* .
-- **EN:** — *paripra* vgl. *pariprāpti, pariprepsu*.
+- **RU:** — *paripra* ср. *pariprāpti, pariprepsu* .
   <sub>attested</sub>

@@ -5,7 +5,7 @@
 
 **PWG-1)** *nirbīja* (die richtigere Schreibart) s. *nirvīja* .
 
-- **RU:** *nirbīja* (более правильное написание) s. *nirvīja* .
+- **RU:** *nirbīja* (более правильное написание) см. *nirvīja* .
   <sub>lexicographic</sub>
 
 **PW-1)** *nirbīja*

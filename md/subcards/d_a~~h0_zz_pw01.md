@@ -25,7 +25,7 @@
 
 **mit_T8_2)** — 2〉 zurücknehmen, so v. a. widerrufen.
 
-- **RU:** — 2〉 брать обратно, так v. a. отзывать, отменять.
+- **RU:** — 2〉 брать обратно, так преим. отзывать, отменять.
   <sub>attested</sub>
 
 **mit_T8_3)** — 3〉 hervorziehen aus (Abl.).
@@ -40,7 +40,7 @@
 
 **mit_T13)** — Mit *vyā* Act. Med. mit und ohne *mukham* den Mund auseinanderthun, aufsperren, öffnen. Act. auch *eine Oeffnung bewirken in, öffnen überh. Med. *den Mund eines Andern öffnen, bewirken, dass Jmd den Mund öffnet. *vyātta* und *vyāditā* geöffnet (Mund).
 
-- **RU:** — С *vyā* Act. Med. с и без *mukham* раскрывать, разевать, открывать рот. Act. также *производить отверстие в, открывать überh. Med. *открывать рот другого, побуждать кого-либо открыть рот. *vyātta* и *vyāditā* открытый (рот).
+- **RU:** — С *vyā* Act. Med. с и без *mukham* раскрывать, разевать, открывать рот. Act. также *производить отверстие в, открывать вообще Med. *открывать рот другого, побуждать кого-либо открыть рот. *vyātta* и *vyāditā* открытый (рот).
   <sub>attested</sub>
 
 **mit_T22)** — Mit *apavyā* öffnen. Nur *˚dāya*. Nur
@@ -170,7 +170,7 @@
 
 **mit_T50_3)** — 3〉 Etwas preisgeben, so v. a. zu Grunde gehen lassen.
 
-- **RU:** — 3〉 отдавать что-либо на произвол, так v. a. давать погибнуть, доводить до гибели.
+- **RU:** — 3〉 отдавать что-либо на произвол, так преим. давать погибнуть, доводить до гибели.
   <sub>attested</sub>
 
 **mit_T50_4)** — 4〉 hingeben für (Dat.), umtauschen.
@@ -225,7 +225,7 @@
 
 **mit_T64_4)** — 4〉 weggeben, so v. a. verkaufen, mit Instr. des Preises.
 
-- **RU:** — 4〉 отдавать, так v. a. продавать, с Instr. цены.
+- **RU:** — 4〉 отдавать, так преим. продавать, с Instr. цены.
   <sub>attested</sub>
 
 **mit_T64_5)** — 5〉 wiedererstatten.
@@ -235,7 +235,7 @@
 
 **mit_T64_6)** — 6〉 hingeben, so v. a. abschaffen.
 
-- **RU:** — 6〉 отдавать, так v. a. упразднять, отменять.
+- **RU:** — 6〉 отдавать, так преим. упразднять, отменять.
   <sub>attested</sub>
 
 **mit_T64_7)** — 7〉 Etwas mittheilen, lehren, zu wissen geben, bekannt machen. *prativacaḥ* Jmd eine Antwort ertheilen.
@@ -300,12 +300,12 @@
 
 **mit_T95_1)** — 1〉 übergeben, überlassen, geben, schenken (buddh.) [KĀRAṆḌ. 27,19. 33,15. 57,23].
 
-- **RU:** — 1〉 передавать, уступать, давать, дарить (buddh.) [KĀRAṆḌ. 27,19. 33,15. 57,23].
+- **RU:** — 1〉 передавать, уступать, давать, дарить (будд.) [KĀRAṆḌ. 27,19. 33,15. 57,23].
   <sub>attested</sub>
 
 **mit_T95_2)** — 2〉 hinzufügen [TAITT. PRĀT. Comm.]
 
-- **RU:** — 2〉 добавлять, присоединять [TAITT. PRĀT. Comm.]
+- **RU:** — 2〉 добавлять, присоединять [TAITT. PRĀT. коммент.]
   <sub>attested</sub>
 
 **mit_T99)** — Mit *upapra* = *anupra* 1〉.
