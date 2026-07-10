@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 10-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -43,6 +43,14 @@ Evidence: `pwg_preverb1.txt` join measured in `subcard_portrait()` / FREQ_TEST_R
 Don't retry unless: a different corpus that keeps prefixed surface forms is available; otherwise defer to the dictionary's own gloss for the ~80%.
 ↔ Interlinks: [ASSUMPTIONS §2](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (one transliteration keys all DCS files) is the join premise this attestation walk sat on · [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (homonym token frequency) is a neighbouring corpus-coverage gap · [GLOSSARY "headword vs lemma"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) frames why the corpus lemmatizes prefixed verbs away.
 > **Source:** [FINDINGS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#5-the-parallel-corpus-rarely-attests-prefixed-verb-forms) · [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
+
+### §8. Verifying Petersburg citations against the DCS corpus (shared-*erroneous*-citation test) — abandoned for this candidate set
+🔴 ✍️ **Resolving PWG/PW `<ls>` verse citations to a DCS passage locus to check the cited lemma is present there (the "airtight shared-error" upgrade for A10, MW←Böhtlingk).**
+Failed because: the candidate pool is 96% Harivaṃśa cited by the Petersburg **Calcutta-vulgate** continuous śloka number (to 16 291), while DCS carries the **critical** edition (118 chapters, ~6 073 verses, per-chapter numbering). 298 refs provably exceed the entire DCS Harivaṃśa; the rest have no vulgate↔critical concordance to map a continuous number onto a (chapter, verse) locus. Of 587 candidates only **1** resolved — a Caurapañcaśikā recension artifact, not an editor-independent wrong locus. Net: **0 adjudicated shared errors; A10 not upgraded** (stays 3/5; F1 apparatus + F5 order remain its evidence).
+Evidence: `VisualDCS/src/DCS-data-2026/dcs_shared_citation_errors.py` + reports (H203, 10-07-2026); verdict `reports/F4_DCS_SHARED_CITATION_ERRORS_VERDICT.md`; csl-atlas A10 §6 ([PR #235](https://github.com/sanskrit-lexicon/csl-atlas/pull/235)).
+Don't retry unless: a digital **vulgate** Harivaṃśa (the edition Böhtlingk cited), token-lemmatized to its own continuous numbering, OR a vulgate↔critical Harivaṃśa verse concordance, exists — otherwise the citation number can never be mapped to a DCS locus.
+↔ Interlinks: [§6](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (DCS `OccId`/`sent_id` not a key) and [FINDINGS §45](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) (siglum-prefix families bundle distinct works) are the adjacent "DCS keys don't line up with dictionary refs" cases.
+> **Source:** [H203](https://github.com/gasyoun/Uprava/blob/main/handoffs/H203-Opus_VisualDCS_dcs_shared_citation_errors_05.07.26.md) · [VisualDCS](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/F4_DCS_SHARED_CITATION_ERRORS_VERDICT.md) · [csl-atlas A10 §6](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md) · 10-07-2026 · `claude-opus-4-8`
 
 ---
 
