@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 08-07-2026_
+_Created: 06-07-2026 · Last updated: 10-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -365,6 +365,14 @@ Still open:
   length/figures/timeline, comparables, rights disclosure, author open items.
 - ✅ **M01 reconciled** in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
   to the true 15-article source set (was "from A01–A06").
+
+**Done 10-07-2026 (H505 execution, Fable 5 `claude-fable-5`):**
+- ✅ **Literature crosswalk + quality-bar audit** against the 37-work manuals library →
+  [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
+  (grounding map per chapter, gap analysis, competing-works positioning for the proposal,
+  comparative part-bridge recommendation, chapter-by-chapter abandonment audit — no cuts;
+  Ch. 2/3/12/13/14 need named reframes, Ch. 7 merge question parked as `@DECIDE`). Library
+  index: [LEXICOGRAPHY_MANUALS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/LEXICOGRAPHY_MANUALS.meta.md).
 
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
