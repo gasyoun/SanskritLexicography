@@ -1361,17 +1361,35 @@ const killBudgetForCur = cur => (cur.length === 1 && !hasFallback(cur[0])) ? KIL
 class BudgetExceeded extends Error {}
 let AGENTS_SPENT = 0
 let BUDGET_TRIPPED = false
+// H462 telemetry: COUNTERS ONLY, no behavioural change. The two decisive numbers of every
+// launch post-mortem — the kill-timeout count and the 'Connection closed mid-response'
+// count — previously existed only as console.log strings and were hand-counted from
+// transcripts into LAUNCH_FUCKUPS.md ('58 of 61 kill-timeouts', '3 conn-errors'). Returned
+// in `summary` so the orchestrator and classify_run.py read them mechanically instead.
+// CONN_ERRORS counts THROWN transport errors; agent() can also RETURN NULL on a terminal
+// API error after retries — those stay visible as agent-returned-null in summary.failures,
+// so a zero here is 'no thrown transport error', not 'network provably healthy'.
+let KILL_TIMEOUTS = 0
+let CONN_ERRORS = 0
+let HEAL_CALLS = 0
+let KILL_BISECT_BLOCKED = 0
+const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   if (KILL_SWITCH && MAX_AGENTS != null && AGENTS_SPENT >= MAX_AGENTS) {
     BUDGET_TRIPPED = true
     throw new BudgetExceeded('budget-kill-switch: window hit MAX_AGENTS=' + MAX_AGENTS + ' agent() calls; remaining cards requeued')
   }
   AGENTS_SPENT++
-  if (!KILL) return agent(prompt, opts)
+  // heal-lane spend: every healGroup label starts 'heal:' (bisection halves inherit the
+  // prefix), so this counts real heal agent() calls against the whole window — the
+  // per-card view stays on selfHeal's cardBudget.spent.
+  if (opts && opts.label && /^heal:/.test(String(opts.label))) HEAL_CALLS++
+  if (!KILL) return agent(prompt, opts)   // kill gate off = counters best-effort (never in production)
   const ms = (budgetMsOverride != null) ? budgetMsOverride : killBudgetMs(skelBytes)
   let timer
   const guard = new Promise((_, rej) => { timer = setTimeout(() => rej(new KillTimeout('kill-timeout ' + Math.round(ms / 1000) + 's @ skelBytes=' + skelBytes)), ms) })
   try { return await Promise.race([agent(prompt, opts), guard]) }
+  catch (e) { if (isKill(e)) KILL_TIMEOUTS++; else if (isConn(e)) CONN_ERRORS++; throw e }
   finally { clearTimeout(timer) }
 }
 // Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
@@ -1472,6 +1490,7 @@ async function healGroup(k, idxs, grp, label, budget) {
     } catch (e) {
       if (!isKill(e)) throw e   // real hard failure — propagate (caught by selfHeal's per-group try)
       killedOut = true
+      if (KILL_TIMEOUT_NO_BISECT) KILL_BISECT_BLOCKED++   // H462: telemetry only
       pending.forEach(fi => noteFail(fkey(fi), e.message))
       log(label + ': kill-timeout-no-bisect: ' + e.message + ' — abandoned, requeueing ' + pending.length + ' fragment(s)')
       break   // stop retrying this group; kill-timeout fragments requeue instead of bisecting
@@ -1801,6 +1820,11 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   // null_keys must be requeued (they were not translated, not defective).
                   agents_spent: AGENTS_SPENT, max_agents: (KILL_SWITCH ? MAX_AGENTS : null),
                   budget_kill_switch_tripped: BUDGET_TRIPPED,
+                  // H462: returned telemetry (previously log-only, hand-counted from
+                  // transcripts). kill_bisect_blocked counts heal groups whose kill-timeout
+                  // was routed to requeue instead of bisection (KILL_TIMEOUT_NO_BISECT).
+                  kill_timeouts: KILL_TIMEOUTS, conn_errors: CONN_ERRORS,
+                  heal_calls: HEAL_CALLS, kill_bisect_blocked: KILL_BISECT_BLOCKED,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
