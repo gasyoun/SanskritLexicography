@@ -69,6 +69,14 @@ def classify(summary):
     kill_ceiling = max(INFRA_KILL_MIN, int(math.ceil(INFRA_KILL_FRAC * agents)))
     signals = {
         'agents_spent': agents,
+        # H462 payloads predate the split-pool refactor, so these remain optional.
+        # Echo them when present without making historical payloads unclassifiable.
+        'translate_agents_spent': summary.get('translate_agents_spent'),
+        'max_translate_agents': summary.get('max_translate_agents'),
+        'translate_budget_tripped': summary.get('translate_budget_tripped'),
+        'heal_agents_spent': summary.get('heal_agents_spent'),
+        'max_heal_agents': summary.get('max_heal_agents'),
+        'heal_budget_tripped': summary.get('heal_budget_tripped'),
         'kill_timeouts': kills,
         'conn_errors': conns,
         'heal_calls': summary.get('heal_calls'),

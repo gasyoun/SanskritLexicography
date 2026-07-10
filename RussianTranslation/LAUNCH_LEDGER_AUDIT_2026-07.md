@@ -134,6 +134,14 @@ bind on all-heal windows â€” uncoupling the heal pool from the translate pool â€
 behavioural, and therefore **out of H462's counters-only scope**; it stays recorded in
 entry 13's `residual_risk` as the next structural move.
 
+> **Follow-up implemented offline 10-07-2026 (Codex/GPT-5):** the current refactor removes
+> that shared-counter design. `agent_budget.py` derives independent translate and heal
+> ceilings; `agentKill` charges by lane; the heal ceiling is the sum of per-card caps; and
+> summary/meta return both pools' spend and trip state. A generated-JS Node test with two
+> all-heal, always-null cards reaches both per-card caps without tripping the window heal
+> pool. The historical finding above remains the correct reading of H437/H442 artifacts;
+> the new behavior is not production-validated until a healthy `h317_w1b` canary runs.
+
 **Ruling on the handoff's open question 2 (per-card vs per-window `heal_calls`):**
 per-window. The summary's new `heal_calls` counts heal-lane `agent()` calls window-wide
 (labels `heal:*`); the per-card view already exists inside the run as `cardBudget.spent`
