@@ -16,7 +16,7 @@ then **cut a new version every time the changelog is updated** (promote
   [router README](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md).
   Linked from the root README documentation map. Language follows audience
   (student = Russian; the rest English). Built under
-  [Uprava H529](https://github.com/gasyoun/Uprava/blob/main/handoffs/H529-Opus_SanskritLexicography_audience-manuals-quartet_10.07.26.md).
+  [Uprava H535](https://github.com/gasyoun/Uprava/blob/main/handoffs/H535-Opus_SanskritLexicography_audience-manuals-quartet_10.07.26.md).
 
 ## [1.1.5] - 2026-07-03
 
