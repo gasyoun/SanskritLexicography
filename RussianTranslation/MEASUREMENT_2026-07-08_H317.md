@@ -245,7 +245,7 @@ Tuned to `factor 1.5 / headroom 3` after the w1b caps at `3.0/4` summed to ~198 
 |---|---:|---:|---:|---:|:--:|---:|---:|---:|---:|---:|---:|
 | H437 w1b (clean env) | 12 | 61/61 | 3 | **1** (`yuvan`) | yes | 0 | 1 | n/a | n/a | 2.90M | 7.96 min |
 | H442 w1b run-1 (per-card cap) | 12 | 61/61 | 3 | **0** | yes | 3 | 58 | 0 | n/a | 2.22M | 9.27 min |
-| H442 w1b run-2 (+ kill-bisect cap 1) | 12 | 61/61 | 3 | **0** | yes | 3 | 76 | 0 | **19** | 2.17M | 10.49 min |
+| H442 w1b run-2 (+ kill-no-bisect, depth-1 precursor) | 12 | 61/61 | 3 | **0** | yes | 3 | 76 | 0 | **19** | 2.17M | 10.49 min |
 
 Both H442 runs returned 3 raw cards, all `requeue_defect` → **audit-clean 0/12** (vs H437's 1
 promoted). Neither met the stop condition (≥6/12 clean AND no trip), and **both were confounded
@@ -266,11 +266,17 @@ by a persistently degraded generation environment** — not the heal lane:
    bisected a kill-timeout the same as a malformed response, but bisection only helps a too-**big**
    group; under slow calls each split just spawns smaller fragments that hit the **same 45 s
    floor** (run-1: `heal:vicitra#g1/A/B: kill-timeout 45s @ skelBytes=11`, an 11-byte fragment
-   killed at 45 s). Run-2 added `KILL_BISECT_MAX_DEPTH=1` — a killed group splits at most once,
-   then requeues. It **fired 19 times** in run-2 (19 kill-timeouts routed to requeue instead of
-   re-split), confirming the mechanism works. But it cannot make *slow calls* fast: run-2 had
-   **76 kill-timeouts** (up from 58) and the **same 3 connection errors**, so the window still
-   tripped and 0 cards cleared audit.
+   killed at 45 s). Run-2's harness was generated with a depth-capped precursor
+   (`KILL_BISECT_MAX_DEPTH=1` — split a killed group once, then requeue), which **fired 19 times**
+   (19 second-level kill-timeouts routed to requeue instead of re-split), confirming the mechanism
+   works. **The version that shipped to `master` is the stricter, simpler `KILL_TIMEOUT_NO_BISECT`
+   (default on): the *first* kill-timeout on a heal group routes its fragments straight to the
+   transient requeue — no kill-triggered bisection at all** (soft/malformed bisection stays
+   uncapped). It was reconciled to that form during the PR #301 merge (see "reconciliation" note
+   below); the depth-1 precursor and the shipped no-bisect reach the same conclusion here because
+   the confound is *slow calls*, which neither can make fast: run-2 had **76 kill-timeouts** (up
+   from 58) and the **same 3 connection errors**, so the window still tripped and 0 cards cleared
+   audit.
 
 **Both runs were in a degraded generation environment** (3 `Connection closed` errors each;
 58 then 76 kill-timeouts, many on trivially small fragments). H437's clean env (0 connection
@@ -282,10 +288,19 @@ degradation.
 
 **Disposition (documented decision, per the H442 goal's alternative outcome):**
 - **Landed + kept** ([PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)): the
-  per-card heal budget and the kill-bisect depth cap are both sound guardrails — the per-card
-  cap is a no-op when it doesn't bind (no regression) and *will* bound a single-pathological-card
-  window; the kill-bisect cap demonstrably eliminates the re-split waste (19 fires). Neither
-  harms a healthy run.
+  per-card heal budget (`PER_CARD_HEAL_BUDGET`) and the kill-timeout no-bisect guard
+  (`KILL_TIMEOUT_NO_BISECT`) are both sound guardrails — the per-card cap is a no-op when it
+  doesn't bind (no regression) and *will* bound a single-pathological-card window; the no-bisect
+  guard eliminates the re-split waste entirely (the depth-1 precursor's 19 fires demonstrated the
+  mechanism; the shipped form is stricter — no kill-triggered bisection at all). Neither harms a
+  healthy run.
+- **Reconciliation note (concurrent-session merge):** a Codex/GPT-5 session worked H442 in the
+  same worktree in parallel and reconciled the two kill-timeout variants *before* the PR #301
+  auto-merge fired — keeping this session's `PER_CARD_HEAL_BUDGET` and replacing its depth-1
+  `KILL_BISECT_MAX_DEPTH` with the simpler boolean `KILL_TIMEOUT_NO_BISECT` (== `depth 0`). Both
+  LANG_PARITY entries (`per_card_heal_budget_h442`, `heal_kill_timeout_no_bisect_h442`) landed
+  SHARED; `window_selftest.py` asserts the no-bisect form and bans the depth-cap constant, and
+  CI's "RussianTranslation gates" is green. Master is internally consistent; nothing was lost.
 - **Paused, not failed:** the medium50 lane's ≥6/no-trip validation is **blocked on a healthy
   generation environment**, not on more code. Re-measure w1b once when the API is clean (0
   connection errors on a warm-up call) before spending the 3rd launch.
