@@ -643,6 +643,12 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
 .cw.self{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 .cw.empty{color:var(--mut);font-style:italic;border:0;cursor:default}
 .cw.empty:hover{background:none;color:var(--mut)}
+/* PERF: skip layout/paint of off-screen blocks. A big article (e.g. chid: 32
+   subcards, 154 senses, ~57000px tall) otherwise blocks the main thread for
+   seconds while the whole subtree is laid out at once. content-visibility:auto
+   lays out only what's near the viewport; contain-intrinsic-size keeps the
+   scrollbar stable. Measured on chid: reflow ~9700ms -> ~10ms. */
+.sub,.sense,.leaf{content-visibility:auto;contain-intrinsic-size:auto 320px}
 </style></head><body><div id="wrap">
 <nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
@@ -652,10 +658,17 @@ var A=window.ARTICLES||{roots:[]}, lang='ru', cur=null;
 var list=document.getElementById('list'), q=document.getElementById('q');
 var arthead=document.getElementById('arthead'), artbody=document.getElementById('artbody');
 function esc(x){return x==null?'':(''+x);}
+// PERF: warm a root's data file on hover, so the click->render step has it in
+// HTTP cache already (the ~350ms fetch happens while the cursor travels to the
+// click). renderRoot() guards on window.ROOT[root] and won't double-render.
+var _pf={};
+function prefetchRoot(r){ if(_pf[r.safe]||(window.ROOT||{})[r.root])return; _pf[r.safe]=1;
+ var sc=document.createElement('script'); sc.src='roots/'+r.safe+'.js'; document.head.appendChild(sc); }
 function renderList(f){list.innerHTML='';A.roots.filter(function(r){return !f||r.iast.toLowerCase().indexOf(f)>=0||r.root.toLowerCase().indexOf(f)>=0;}).forEach(function(r){
  var d=document.createElement('div');d.className='rlink'+(cur===r.root?' active':'');
  var ruf=r.n_senses?Math.round(100*r.n_ru_senses/r.n_senses):0;
  d.innerHTML='<span class="iast">'+r.iast+'</span><span class="en" title="senses; RU / EN coverage">'+r.n_senses+' <span class="cov'+(ruf<100?' low':'')+'">RU'+ruf+'%</span></span>';
+ d.onmouseenter=function(){prefetchRoot(r);};
  d.onclick=function(){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);};list.appendChild(d);});}
 // Language is a CSS class on #artbody (lang-de|lang-ru|lang-en). All three blocks
 // are always in the DOM; the class shows/hides them, so switching cannot silently no-op.
