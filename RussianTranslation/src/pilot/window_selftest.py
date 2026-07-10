@@ -3096,6 +3096,77 @@ def test_budget_kill_switch_wired():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_per_card_heal_budget_wired():
+    """H442: the window MAX_AGENTS switch is a SHARED pool — it cannot stop ONE dense card
+    from spending the whole window budget before the other cards run (H437 medium50: 3-4
+    dense band-4 nominal singletons cascaded through heal bisection to 61/61 agents, leaving
+    ~9 cards nulled `budget-kill-switch` UN-ATTEMPTED). The fix is a PER-CARD heal-call ceiling
+    threaded through healGroup's recursion: once a card's own heal spend crosses
+    ceil(nGroups*factor)+headroom, healGroup stops retrying/bisecting and returns a PARTIAL
+    card so the dense card fails fast + cheap instead of draining the shared pool. This pins
+    the wiring so a future edit can't silently drop the per-card ceiling back to unbounded."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n'
+           '<div n="1">— 1〉 {%verlassen%} <ls>Y. 2</ls>.\n')
+    key = 'zz~~synthetic_percard'
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved_ip = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        try:
+            js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            # 1) the ceiling must be threaded THROUGH healGroup (5th arg) and its bisection
+            #    recursion — a per-group check alone would let one group's deep bisect run away.
+            for tok in ('async function healGroup(k, idxs, grp, label, budget)',
+                        'const budgetExhausted =',
+                        "label + '/A', budget)", "label + '/B', budget)",
+                        'const PER_CARD_HEAL_BUDGET = true',
+                        'per-card-heal-budget:'):
+                if tok not in js:
+                    fail('per-card heal budget token %r missing from the harness' % tok)
+            # 2) selfHeal must build one shared {spent,max} per CARD (sized off its group count)
+            #    and pass THAT object into every group's healGroup call.
+            if 'const cardBudget' not in js or 'groups.length * PER_CARD_HEAL_FACTOR' not in js:
+                fail('selfHeal must derive a per-card budget from the card group count')
+            if "grp, 'heal:' + k + '#g' + (gi + 1), cardBudget)" not in js:
+                fail('selfHeal must pass the per-card budget into healGroup')
+            # 3) the bisection recursion must be gated on the budget, not fire unconditionally.
+            if 'pending.length > 1 && !budgetExhausted()' not in js:
+                fail('bisection must be skipped once the per-card heal budget is exhausted')
+            # 4) META surfaces the calibrated knobs for run observability.
+            meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
+            if meta.get('per_card_heal_budget') is not True:
+                fail('meta.per_card_heal_budget must be true when selfheal is on')
+            if meta.get('per_card_heal_factor') != gh.PER_CARD_HEAL_FACTOR:
+                fail('meta.per_card_heal_factor must echo the configured factor')
+            if meta.get('per_card_heal_headroom') != gh.PER_CARD_HEAL_HEADROOM:
+                fail('meta.per_card_heal_headroom must echo the configured headroom')
+            # 5) --no-per-card-heal-budget restores the old unbounded per-card heal (max:null).
+            saved_flag = gh.PER_CARD_HEAL_BUDGET
+            try:
+                gh.PER_CARD_HEAL_BUDGET = False
+                js_off, _b2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+            finally:
+                gh.PER_CARD_HEAL_BUDGET = saved_flag
+            if 'const PER_CARD_HEAL_BUDGET = false' not in js_off:
+                fail('--no-per-card-heal-budget must emit PER_CARD_HEAL_BUDGET = false')
+            meta_off = json.loads(_re.search(r'^const META = (\{.*\})\n', js_off, _re.M).group(1))
+            if meta_off.get('per_card_heal_budget') is not False:
+                fail('meta.per_card_heal_budget must be false when disabled')
+        finally:
+            gh.input_paths = saved_ip
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_harness_size_guard():
     """H189 / F-harness-size-limit: the generator must surface an oversize harness at
     generation with a concrete key-disjoint split, so the Workflow scriptPath cap is not
@@ -3818,6 +3889,7 @@ def main():
         test_fri_xref_resolution,
         test_audit_window_tag_routing,
         test_denylist_torn_line_fails_loud,
+        test_per_card_heal_budget_wired,
     ]
     for test in tests:
         test()

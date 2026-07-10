@@ -200,6 +200,31 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  small/medium words (they never legitimately approach 40, so the
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing the derivation
+# --- per-card heal budget (H442, 2026-07-10) --------------------------------------
+# The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
+# cannot stop ONE dense card from spending the WHOLE window budget before the other cards
+# ever run. On dense band-4 nominal singletons (the medium50 test, H317/H389/H437) this is
+# the dominant failure: a card whose heal group keeps failing bisects 3-attempts-then-halve
+# recursively (a single 12-fragment group can spawn ~45 agent() calls: 3 + 2*3 + 4*3 + ...),
+# and because selfHeal cards run in one shared parallel() pool against one shared AGENTS_SPENT
+# counter, 3-4 such cards exhaust MAX_AGENTS between them and the remaining ~9 cards are nulled
+# `budget-kill-switch` UN-ATTEMPTED and requeued (H437: w1b 61/61 agents, 1 clean, 9 transient
+# -null). Measured cost profile: ~2 M tokens per window buys ~1 clean card. The fix is a PER-CARD
+# ceiling on heal agent() calls, threaded through healGroup's recursion: once a single card's
+# own heal spend crosses its budget, healGroup stops retrying/bisecting and returns a PARTIAL
+# card (resolved fragments kept, the rest recorded as missing_fragments for a targeted requeue)
+# instead of consuming the shared window budget. A dense card thus FAILS FAST + CHEAP to partial,
+# leaving the window budget for the cards that can heal cleanly. Sized off the card's own group
+# count (its happy-path is ~1 call/group), mirroring the window MAX_AGENTS_FACTOR philosophy one
+# level down: perCardMax = ceil(nGroups * PER_CARD_HEAL_FACTOR) + PER_CARD_HEAL_HEADROOM.
+PER_CARD_HEAL_BUDGET = True  # --no-per-card-heal-budget disables (restores the unbounded per-card heal)
+PER_CARD_HEAL_FACTOR = 3.0   # --per-card-heal-factor=N: heal calls a single card may spend =
+                             #  ceil(its group count * this) + headroom. 3x a group's one happy-path
+                             #  call leaves room for the 3-attempt retry loop OR one bisection level
+                             #  per group, while capping the deep-bisection cascade that monopolizes
+                             #  the window. e.g. 1 group -> 7, 2 -> 10, 4 -> 16 (with headroom 4).
+PER_CARD_HEAL_HEADROOM = 4   # additive floor so a 1-group card whose single group needs a bisection
+                             #  (3 attempts + 2 halves) isn't capped below a legitimate heal.
 # --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
 # The emitted harness inlines every card that can reach agent() (TM-resolved and
 # degenerate-pass-through rows are self-contained), so its byte size scales with live
@@ -370,6 +395,14 @@ def parse_args(argv):
             globals()['KILL_SWITCH'] = True               # default; kept for documented runbooks
         elif a.startswith('--max-agents='):               # H189: absolute agent()-count ceiling override
             globals()['MAX_AGENTS_OVERRIDE'] = int(a.split('=', 1)[1])
+        elif a == '--no-per-card-heal-budget':            # H442: disable the per-card heal ceiling
+            globals()['PER_CARD_HEAL_BUDGET'] = False
+        elif a == '--per-card-heal-budget':
+            globals()['PER_CARD_HEAL_BUDGET'] = True       # default; kept for documented runbooks
+        elif a.startswith('--per-card-heal-factor='):      # H442: tune the per-card heal-call multiple
+            globals()['PER_CARD_HEAL_FACTOR'] = float(a.split('=', 1)[1])
+        elif a.startswith('--per-card-heal-headroom='):
+            globals()['PER_CARD_HEAL_HEADROOM'] = int(a.split('=', 1)[1])
         elif a == '--refuse-oversize':                    # H189: hard-error instead of warn when oversize
             globals()['REFUSE_OVERSIZE'] = True
         elif a.startswith('--max-harness-bytes='):
@@ -1157,6 +1190,11 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'max_agents': max_agents if KILL_SWITCH else None,
         'max_agents_factor': MAX_AGENTS_FACTOR,
         'max_agents_headroom': MAX_AGENTS_HEADROOM,
+        # H442 per-card heal budget: caps the heal agent() calls ONE card may spend so a dense
+        # card fails fast to partial instead of monopolizing the shared window MAX_AGENTS pool.
+        'per_card_heal_budget': (PER_CARD_HEAL_BUDGET and SELFHEAL),
+        'per_card_heal_factor': PER_CARD_HEAL_FACTOR if (PER_CARD_HEAL_BUDGET and SELFHEAL) else None,
+        'per_card_heal_headroom': PER_CARD_HEAL_HEADROOM if (PER_CARD_HEAL_BUDGET and SELFHEAL) else None,
         # H189 presplit-lane amortization budgets (fragments packed per agent() call).
         'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
         'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
@@ -1231,6 +1269,16 @@ const KILL_CEIL_MS = %(kill_ceil_ms)s
 // and requeued by the normal audit path — nothing is silently dropped.
 const KILL_SWITCH = %(kill_switch)s
 const MAX_AGENTS = %(max_agents)s
+// H442 per-card heal budget: a per-card ceiling on heal agent() calls, threaded through
+// healGroup's bisection recursion. Unlike MAX_AGENTS (a shared window pool), this stops ONE
+// dense card from spending the whole window budget: once a card's own heal spend crosses
+// ceil(nGroups * PER_CARD_HEAL_FACTOR) + PER_CARD_HEAL_HEADROOM, healGroup stops retrying/
+// bisecting and returns the resolved fragments as a PARTIAL card (rest -> missing_fragments,
+// targeted-requeue-able). A dense card thus fails fast + cheap, leaving budget for cards that
+// can heal cleanly (H437: 3-4 dense cards were exhausting 61/61 agents, starving ~9 others).
+const PER_CARD_HEAL_BUDGET = %(per_card_heal_budget)s
+const PER_CARD_HEAL_FACTOR = %(per_card_heal_factor)s
+const PER_CARD_HEAL_HEADROOM = %(per_card_heal_headroom)s
 // --tm: cards pre-resolved from the content-addressed translation memory (source-SHA hit).
 // Emitted verbatim as canonical rows with tm:true and NO agent() call — their markup is
 // already restored (they come from the promoted store), so they bypass restore/accept.
@@ -1361,9 +1409,16 @@ const accept = (c, k) => {
 // back toward that safer granularity only when a group actually struggles, so the happy path
 // (group succeeds) keeps the full cost saving. Returns a {idx: card} map, or null if any
 // fragment never resolved even as a singleton.
-async function healGroup(k, idxs, grp, label) {
+async function healGroup(k, idxs, grp, label, budget) {
   const resolved = {}
   const fkey = fi => k + '_f' + fi
+  // H442 per-card heal budget: `budget` is a shared mutable {spent,max} owned by the CARD
+  // (selfHeal creates one and passes the same object into every group + every bisection
+  // recursion). Once the card's own heal spend crosses budget.max, stop starting new calls
+  // and return the resolved fragments as partial — the card's remaining fragments requeue,
+  // but it never keeps consuming the shared window MAX_AGENTS pool. budget==null (or
+  // --no-per-card-heal-budget) restores the old unbounded behavior.
+  const budgetExhausted = () => budget && budget.max != null && budget.spent >= budget.max
   // Accept a returned fragment only if its masked-token multiset matches the fragment's
   // skeleton — the heal path previously accepted fragments UNCHECKED (the main path's
   // accept() fidelity guard had no heal-side sibling), so a misaligned/mangled fragment
@@ -1379,6 +1434,11 @@ async function healGroup(k, idxs, grp, label) {
   }
   let pending = idxs.slice()
   for (let att = 0; att < 3 && pending.length; att++) {
+    if (budgetExhausted()) {
+      pending.forEach(fi => noteFail(fkey(fi), 'per-card-heal-budget: card ' + k + ' hit ' + budget.max + ' heal calls — partial, requeue remaining'))
+      break   // fail fast to partial; the card stops consuming the shared window budget
+    }
+    if (budget) budget.spent++   // account this call against the card's own ceiling
     const blocks = pending.map(i => '\\n\\n=== CARD ' + fkey(i) + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
     const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
     const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
@@ -1406,15 +1466,17 @@ async function healGroup(k, idxs, grp, label) {
     }
     pending = pending.filter(fi => !resolved[fi])
   }
-  if (pending.length > 1) {
+  if (pending.length > 1 && !budgetExhausted()) {
     const mid = Math.ceil(pending.length / 2)
     // Guard each half independently: an unguarded Promise.all rejects wholesale when one
     // half hard-throws, discarding the OTHER half's already-resolved fragments — the same
     // one-late-failure-wipes-earlier-work class fixed at the selfHeal and translateBatch
     // levels (PR #38/#40), recurring inside the bisection itself.
+    // H442: the same `budget` object flows into both halves, so the card's ceiling bounds the
+    // TOTAL bisection cascade (both halves share one counter), not each half independently.
     const [a, b] = await Promise.all([
-      healGroup(k, pending.slice(0, mid), grp, label + '/A').catch(e => { pending.slice(0, mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
-      healGroup(k, pending.slice(mid), grp, label + '/B').catch(e => { pending.slice(mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
+      healGroup(k, pending.slice(0, mid), grp, label + '/A', budget).catch(e => { pending.slice(0, mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
+      healGroup(k, pending.slice(mid), grp, label + '/B', budget).catch(e => { pending.slice(mid).forEach(fi => noteFail(fkey(fi), 'heal-hard-failure: ' + (e && e.message || e))); return null }),
     ])
     if (a) Object.assign(resolved, a.resolved)
     if (b) Object.assign(resolved, b.resolved)
@@ -1447,6 +1509,14 @@ async function selfHeal(k) {
   // reason with the generic 'no-selfheal-fallback' — the overwrite hid a kill-gate mass-kill
   // behind a misleading message for a whole session. Only set it when nothing failed yet.
   const groups = FRAGS[k]; if (!groups || !groups.length) { if (!FAIL[k]) noteFail(k, 'no-selfheal-fallback (card did not split or a fragment mask was lossy)'); return null }
+  // H442 per-card heal budget: one shared {spent,max} for THIS card, threaded into every group's
+  // healGroup and its bisection recursion. max scales off the card's own group count (happy path
+  // is ~1 call/group), so a dense card that keeps bisecting fails fast to partial at its ceiling
+  // instead of draining the shared window MAX_AGENTS pool and starving the other cards. Disabled
+  // (max:null) restores the old unbounded per-card heal.
+  const cardBudget = PER_CARD_HEAL_BUDGET
+    ? { spent: 0, max: Math.ceil(groups.length * PER_CARD_HEAL_FACTOR) + PER_CARD_HEAL_HEADROOM }
+    : { spent: 0, max: null }
   const ftm = FRAG_TM[k] || []            // --tm: per-group cached-senses-or-null, mirrors FRAGS[k]
   const senses = []
   const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
@@ -1484,7 +1554,7 @@ async function selfHeal(k) {
     // selfHeal could return anything).
     let r = { resolved: {}, missing: [] }
     if (uncached.length) {
-      try { r = await healGroup(k, uncached, grp, 'heal:' + k + '#g' + (gi + 1)) }
+      try { r = await healGroup(k, uncached, grp, 'heal:' + k + '#g' + (gi + 1), cardBudget) }
       catch (e) { r = { resolved: {}, missing: uncached }; noteFail(k, 'heal-group-hard-failure g' + (gi + 1) + ': ' + (e && e.message || e)) }
     }
     for (const fi of (r.missing || [])) missingFragments.push('g' + (gi + 1) + ':f' + fi)
@@ -1726,6 +1796,8 @@ return { meta: META, summary, results: out }
         'kill_base_ms': json.dumps(KILL_BASE_MS), 'kill_slope_ms': json.dumps(KILL_SLOPE_MS),
         'kill_floor_ms': json.dumps(KILL_FLOOR_MS), 'kill_ceil_ms': json.dumps(KILL_CEIL_MS),
         'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(max_agents if KILL_SWITCH else None),
+        'per_card_heal_budget': json.dumps(PER_CARD_HEAL_BUDGET and SELFHEAL),
+        'per_card_heal_factor': json.dumps(PER_CARD_HEAL_FACTOR), 'per_card_heal_headroom': json.dumps(PER_CARD_HEAL_HEADROOM),
         'tm_resolved': json.dumps(tm_resolved, ensure_ascii=True),
         'degenerate_resolved': json.dumps(degenerate_resolved, ensure_ascii=True),
         'frag_tm': json.dumps(frag_tm, ensure_ascii=True),
