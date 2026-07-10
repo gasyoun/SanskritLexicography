@@ -18,6 +18,14 @@ then **cut a new version every time the changelog is updated** (promote
   (student = Russian; the rest English). Built under
   [Uprava H535](https://github.com/gasyoun/Uprava/blob/main/handoffs/H535-Opus_SanskritLexicography_audience-manuals-quartet_10.07.26.md).
 
+### Changed — CLAUDE.md reflects the repo is now hybrid (data + code)
+- Corrected the stale "no source code (no `.py`…)" and "Python/JS lint jobs …
+  never fire because no such files exist" claims in
+  [`CLAUDE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md):
+  the repo now carries substantial Python (263 tracked `.py`, a root
+  `requirements.txt`) and CI's Python lint + RussianTranslation gates do fire.
+  Follow-up flagged under H535 (already noted in the maintainer manual).
+
 ## [1.1.5] - 2026-07-03
 
 ### Added — Indische Sprüche dataset

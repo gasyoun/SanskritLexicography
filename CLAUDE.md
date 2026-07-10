@@ -9,18 +9,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-A **data and research workspace** — not a software project. There is no source
-code (no `.py`, `.js`, `.sh`, `package.json`, or `requirements.txt`). The
-content is exported headword lists, large reference HTML/PDF documents, an
-AI-produced Russian translation of Monier-Williams, and Russian-language
-teaching material on Sanskrit syntax. "Working in the codebase" here means
-inspecting, comparing, and transforming text data, plus authoring Markdown.
+Primarily a **data and research workspace** — most of the tree is exported
+headword lists, large reference HTML/PDF documents, AI-produced Russian
+translations of Monier-Williams and the Petersburg Dictionary, and
+Russian-language teaching material on Sanskrit syntax. But it is **no longer
+code-free** (the earlier "no `.py`" framing is stale): several subprojects now
+carry substantial Python tooling — the two translation pipelines under
+[`RussianTranslation/src/`](RussianTranslation/src), the headword tooling in
+[`HeadwordLists/`](HeadwordLists), the site builder
+[`docs_site/build_site.py`](docs_site/build_site.py), the two dashboard
+generators ([`epistemic_dashboard/`](epistemic_dashboard),
+[`findings_dashboard/`](findings_dashboard)) — plus a root
+[`requirements.txt`](requirements.txt). Treat the repo as **hybrid**: a
+data/docs workspace with live tooling embedded in the active subprojects, so
+"working in the codebase" spans inspecting/transforming text data, authoring
+Markdown, **and** the pipeline/tooling code. For orientation by audience, see
+[`docs/manuals/`](docs/manuals).
 
-There is no build or test suite. CI ([`.github/workflows/ci.yml`](.github/workflows/ci.yml))
-runs Markdown lint, Markdown link-check, and YAML lint only; the Python/JS lint
-jobs are conditional and never fire because no such files exist. The active
-pre-commit hooks ([`.pre-commit-config.yaml`](.pre-commit-config.yaml)) are
-`check-yaml`, `end-of-file-fixer`, `trailing-whitespace` (markdown-aware), and
+There is no single top-level build, but there **are** tests/selftests (e.g.
+[`docs_site/test_docs_site.py`](docs_site/test_docs_site.py) and the
+RussianTranslation gate selftests) and CI exercises them. CI
+([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) runs Markdown lint,
+Markdown link-check, YAML lint, a **Python lint job that now fires** (`.py`
+files exist — the earlier "never fire because no such files exist" is stale), a
+conditional JS lint, and a **RussianTranslation gates** job that compiles the
+pipeline scripts and runs their fixture selftests. The active pre-commit hooks
+([`.pre-commit-config.yaml`](.pre-commit-config.yaml)) are `check-yaml`,
+`end-of-file-fixer`, `trailing-whitespace` (markdown-aware), and
 `check-merge-conflict`. Match these when editing: no trailing whitespace,
 newline at EOF, valid YAML.
 
