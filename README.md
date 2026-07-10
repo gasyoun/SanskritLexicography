@@ -36,6 +36,20 @@ Where to read what.
   plan, FAIR/standards gaps.
 - [changelog.md](changelog.md) — what changed, by dated snapshot.
 
+**Manuals (by audience)** — deep, standalone guides in
+[docs/manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals)
+([router](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md)):
+
+- [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md)
+  — operating/extending the repo (conventions, the pipelines, the epistemic
+  registries). English.
+- [RESEARCHER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md)
+  — the evidence-graded thesis, paper pipeline, what's citable. English.
+- [STUDENT_MANUAL_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/STUDENT_MANUAL_RU.md)
+  — teaching material and what's usable today. Русский.
+- [DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md)
+  — dataset formats, encodings, traps, rights. English.
+
 **Contributors & agents**
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) — how to contribute.
