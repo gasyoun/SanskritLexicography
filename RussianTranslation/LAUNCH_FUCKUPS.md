@@ -414,6 +414,32 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "residual_status": "open-paused",
   "residual_risk": "The H442 3-launch cap is exhausted with ZERO measurable clean-rate: all three launches were infra-confounded, so the heal-lane fix (PR #301) remains unvalidated in the field -- it is not known to be wrong, it is untested. Do NOT re-tune the heal budget on this evidence. Next moves, in order: (1) load-representative probe; (2) return kill_timeouts/conn_errors/heal_calls in the harness summary so they stop being hand-counted from transcripts (H462); (3) separate the heal pool from the translate pool, without which the per-card cap can never bind. The medium50 nominal lane stays paused; the H151 verb drain is unaffected.",
   "passes": 1
+ },
+ {
+  "id": "H255_NO_PWG_W02_DEGRADED_API_2026-07-10",
+  "handoff": "H255",
+  "date": "2026-07-10",
+  "title": "no-PWG lane window no_pwg_w02 (H255 scale drain, w1 still-null tail: 20 headwords -> 47 single-fragment supplement sub-cards): 16/47 clean promoted, 27/47 transient kill-timeouts, 4/47 defect -- PAUSED on the same degraded generation API as H442, per its don't-relaunch-blind guardrail",
+  "lane": "no-PWG supplement lane (w1 still-null tail), single-fragment sub-cards, no heal lane, output-budget=1",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Sonnet 5 (claude-sonnet-5) Claude Code session driving the Workflow tool; inputs regenerated via _pilot_gen_merged.py, harness gen_opt_harness2.py --nominal --output-budget=1, 38 batches; preflight GO at $0.47/card (under ceiling)",
+  "expected": {
+   "agents": "38 batches over 47 single-fragment sub-cards (cheap no-heal lane)",
+   "tokens": "RUN_LOG records the $ preflight ($0.47/card x 47 ~ $22, under ceiling) rather than a token budget; cheap single-fragment cards, so well under a typical ~2M-token window"
+  },
+  "actual": {
+   "agents": "38 batches ran to completion (no budget kill switch); 16/47 sub-cards clean",
+   "tokens": "not recorded in RUN_LOG for this window; degradation evidence logged instead to GENERATION_API_PROBE_LOG.md via probe_log.py append --kind launch",
+   "cards": "16/47 clean promoted (store 11,275 -> 11,317 rows, TM rebuilt to 2,316 cards); 27/47 transient; 4/47 defect (_s_a_k_a~~h0_zz_sch, g_ayatr_i~~h0_zz_pw/pwkvn/sch); gAyatrI lost all 4 sub-cards and stays null",
+   "errors": "27 kill-timeouts, mostly at the 180s KILL_CEIL on tiny 150-2,200-byte skeletons that cannot legitimately need that long; 57% transient rate on cards with no heal lane at all"
+  },
+  "symptoms": "The cheapest card shape in the pipeline (single-fragment, no-heal, output-budget=1) hit a 57% transient rate with kill-timeouts at the 180s CEILING on 150-2,200-byte skeletons -- the same signature as the H442 medium50 heal-lane runs (Connection closed mid-response, ceiling timeouts independent of payload size) already tracked in SERVER_OUTAGES.md. Secondary operator gotcha caught mid-promotion: promote_final_cards.py's default --glob wf_output*.json picked up 5 stray repo-root files from earlier sessions (harmless under --merge but surprising), and it does not consult the audit gate's defect/transient split -- the first pass promoted all 20 non-null cards including the 4 defects; caught by diffing audit_window.report.json's requeue_defect list, reverted from .premerge.*.bak, re-promoted 16 clean only.",
+  "classification": "concurrency/api",
+  "root_cause": "The same host-level generation-API degradation already ledgered for H442 (H442_MEDIUM50_LAUNCH3_INFRA_CONFOUNDED_2026-07-10) -- but this window BROADENS the known impact: it hit even cheap, single-fragment, no-heal-lane no-PWG cards at 57% transient, so the medium50/heal-lane-starvation theory is insufficient; it looks like host-level degradation, not heal-lane load. Zero bad Russian was emitted (transients produced nothing; the 4 defects are ordinary content failures filtered by the audit gate).",
+  "guardrail": "PAUSED per the H442 guardrail (don't relaunch blind into a degraded env): the 27 transient nulls were deliberately NOT requeued this session. Next no-PWG window is gated on a load-representative warm-up probe (probe_log.py gate, >=5KB skeleton, require 0 conn-errors + sub-30s) or host recovery / H462 telemetry. Operator guardrail from the promotion gotcha: always pass an explicit --glob pointing at your own window's output file, and filter requeue_defect keys before promoting.",
+  "residual_status": "open-paused",
+  "residual_risk": "27 transient keys of no_pwg_w02 sit unrequeued (requeue with --no-tm once the probe gates GO); gAyatrI is still fully null and the 4 defect sub-cards need regeneration; the 232-lemma no-PWG queue continues with no_pwg_scale_plan.py --window-size 20 --limit-windows 1 --start-index 3 only after the probe passes. promote_final_cards.py still promotes every non-null card without consulting the audit defect split -- the footgun remains for the next operator until it is wired to audit_window.report.json.",
+  "passes": 1
  }
 ]
 ```
