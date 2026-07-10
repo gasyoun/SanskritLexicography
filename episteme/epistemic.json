@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-08T14:54:09Z",
+ "generated_at": "2026-07-10T16:35:32Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 69,
+  "total": 75,
   "by_importance": {
-   "3": 13,
-   "2": 40,
+   "3": 14,
+   "2": 43,
    "1": 11
   },
   "by_origin": {
    "auto": 0,
-   "human": 69
+   "human": 75
   }
  },
  "layers": [
@@ -211,18 +211,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 7,
+   "total": 9,
    "by_importance": {
-    "3": 5,
+    "3": 7,
     "2": 2,
     "1": 0
    },
    "by_origin": {
     "auto": 1,
-    "human": 6
+    "human": 8
    },
-   "categories": 3,
-   "interlinks": 7,
+   "categories": 4,
+   "interlinks": 9,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -241,6 +241,12 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#3-sandhi-join-lookup-for-prefixed-verb-corpus-evidence--abandoned"
+    },
+    {
+     "title": "§8. Verifying Petersburg citations against the DCS corpus (shared-*erroneous*-citation test) — abandoned for this candidate set",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-verifying-petersburg-citations-against-the-dcs-corpus-shared-erroneous-citation-test--abandoned-for-this-candidate-set"
     },
     {
      "title": "§4. Bulk-respell of \"typo\" headword-correction lists — abandoned",
@@ -265,6 +271,12 @@
      "importance": 2,
      "origin": "auto",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#7-generalising-dictionary-level-sense-inheritance-direction-to-corpus-scale--refuted"
+    },
+    {
+     "title": "§8. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-resolving-pwgmw-hariv-citations-against-dcs-to-find-shared-erroneous-citations--abandoned"
     }
    ]
   },
@@ -441,19 +453,19 @@
   "unknown": 0
  },
  "totals": {
-  "rows": 113,
+  "rows": 115,
   "auto": 72,
-  "human": 41,
+  "human": 43,
   "by_importance": {
-   "3": 15,
+   "3": 17,
    "2": 24,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 47,
+  "entry_rows": 49,
   "candidates": 6,
-  "categories": 19,
-  "interlinks": 47,
-  "findings": 69
+  "categories": 20,
+  "interlinks": 49,
+  "findings": 75
  }
 }
