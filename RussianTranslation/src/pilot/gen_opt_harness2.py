@@ -218,12 +218,15 @@ MAX_AGENTS_OVERRIDE = None  # --max-agents=N: pin an absolute ceiling, bypassing
 # count (its happy-path is ~1 call/group), mirroring the window MAX_AGENTS_FACTOR philosophy one
 # level down: perCardMax = ceil(nGroups * PER_CARD_HEAL_FACTOR) + PER_CARD_HEAL_HEADROOM.
 PER_CARD_HEAL_BUDGET = True  # --no-per-card-heal-budget disables (restores the unbounded per-card heal)
-PER_CARD_HEAL_FACTOR = 3.0   # --per-card-heal-factor=N: heal calls a single card may spend =
-                             #  ceil(its group count * this) + headroom. 3x a group's one happy-path
-                             #  call leaves room for the 3-attempt retry loop OR one bisection level
-                             #  per group, while capping the deep-bisection cascade that monopolizes
-                             #  the window. e.g. 1 group -> 7, 2 -> 10, 4 -> 16 (with headroom 4).
-PER_CARD_HEAL_HEADROOM = 4   # additive floor so a 1-group card whose single group needs a bisection
+PER_CARD_HEAL_FACTOR = 1.5   # --per-card-heal-factor=N: heal calls a single card may spend =
+                             #  ceil(its group count * this) + headroom. Static h317_w1b budget sizing:
+                             #  at the initial conservative 3.0/4, the 12-card window's per-card caps
+                             #  summed far above its 61-agent window budget, so the cap redistributed
+                             #  spend but still let dense cards push the shared switch. 1.5/3 keeps caps
+                             #  near a card's happy-path group count (one call/group) plus one retry or
+                             #  bisection allowance; it must still be validated by a live h317_w1b run
+                             #  before declaring H442 fixed. e.g. 2 groups -> 6, 5 -> 11, 7 (yuvan) -> 14.
+PER_CARD_HEAL_HEADROOM = 3   # additive floor so a 1-2 group card whose group needs a bisection
                              #  (3 attempts + 2 halves) isn't capped below a legitimate heal.
 # --- harness-size guard (H189 / F-harness-size-limit) -----------------------------
 # The emitted harness inlines every card that can reach agent() (TM-resolved and
