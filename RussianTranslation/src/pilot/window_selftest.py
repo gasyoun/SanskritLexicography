@@ -3125,9 +3125,9 @@ def test_per_card_heal_budget_wired():
             js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
             # 1) the ceiling must be threaded THROUGH healGroup (5th arg) and its bisection
             #    recursion — a per-group check alone would let one group's deep bisect run away.
-            for tok in ('async function healGroup(k, idxs, grp, label, budget)',
+            for tok in ('async function healGroup(k, idxs, grp, label, budget, killDepth)',
                         'const budgetExhausted =',
-                        "label + '/A', budget)", "label + '/B', budget)",
+                        "label + '/A', budget, nextKillDepth)", "label + '/B', budget, nextKillDepth)",
                         'const PER_CARD_HEAL_BUDGET = true',
                         'per-card-heal-budget:'):
                 if tok not in js:
@@ -3141,6 +3141,17 @@ def test_per_card_heal_budget_wired():
             # 3) the bisection recursion must be gated on the budget, not fire unconditionally.
             if 'pending.length > 1 && !budgetExhausted()' not in js:
                 fail('bisection must be skipped once the per-card heal budget is exhausted')
+            # 3b) H442 kill-bisect depth cap: a KILL-TIMEOUT-triggered bisection must be
+            #     depth-capped (a slow-call cascade can't split toward doomed tiny fragments),
+            #     while a soft/malformed exit still bisects uncapped. killDepth must thread
+            #     through healGroup + only increment on a kill-triggered split.
+            for tok in ('async function healGroup(k, idxs, grp, label, budget, killDepth)',
+                        'const KILL_BISECT_MAX_DEPTH =',
+                        'killedOut', 'const killBisectBlocked =',
+                        'const nextKillDepth = killedOut ? killDepth + 1 : killDepth',
+                        ', budget, nextKillDepth)'):
+                if tok not in js:
+                    fail('kill-bisect depth-cap token %r missing from the harness' % tok)
             # 4) META surfaces the calibrated knobs for run observability.
             meta = json.loads(_re.search(r'^const META = (\{.*\})\n', js, _re.M).group(1))
             if meta.get('per_card_heal_budget') is not True:
@@ -3149,6 +3160,8 @@ def test_per_card_heal_budget_wired():
                 fail('meta.per_card_heal_factor must echo the configured factor')
             if meta.get('per_card_heal_headroom') != gh.PER_CARD_HEAL_HEADROOM:
                 fail('meta.per_card_heal_headroom must echo the configured headroom')
+            if meta.get('kill_bisect_max_depth') != gh.KILL_BISECT_MAX_DEPTH:
+                fail('meta.kill_bisect_max_depth must echo the configured kill-bisect cap')
             # 5) --no-per-card-heal-budget restores the old unbounded per-card heal (max:null).
             saved_flag = gh.PER_CARD_HEAL_BUDGET
             try:
