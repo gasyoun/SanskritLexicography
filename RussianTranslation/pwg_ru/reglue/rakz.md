@@ -87,10 +87,10 @@
 <ls>M. 9,10.</ls> {#apAnaM te parjanyaH parirakzatu#}
 <ls>SUŚR. 1,17,2.</ls> {#tadidaM parirakza vapuH#}
 <ls>KUMĀRAS. 4,44.</ls> {#AtmAnaM parirakzasva#}
-<ls>MBH. 1,6195.</ls> {#SakyastenAnumAnena paro 'pi parirakzitum#} быть сохранённым —, спасённым
+<ls>MBH. 1,6195.</ls> {#SakyastenAnumAnena paro 'pi parirakzitum#} быть сохраненным —, спасенным
 <ls>Spr. 2129.</ls> {#parirakza asmadIyaprARAn#}
 <ls>PAÑCAT. ed. orn. 58,12.</ls> {#AtmAnaM parirakzasva purIM cemAM sarAkzasAm#}
-<ls>R. 5,88,24.</ls> <ls n="R. 5,">23,17.</ls> {#sItA ca parirakzitA#} спасённый
+<ls>R. 5,88,24.</ls> <ls n="R. 5,">23,17.</ls> {#sItA ca parirakzitA#} спасенный
 <ls n="R. 5,">56,144.</ls> <ls>MṚCCH. 110,17.</ls> {#ayoDyAM parirakzati#} и потому <ab>v. a.</ab> подвластный, управляемый
 <ls>R. GORR. 2,109,49.</ls> <ls>HARIV. 733.</ls> <ls n="HARIV.">3714.</ls> <ls>Spr. 5063.</ls> <ls>BHĀG. P. 5,4,17.</ls> {#madBujaparirakzite 'sminvane#}
 <ls>PAÑCAT. 30,24.</ls> <ls n="PAÑCAT.">215,7.</ls> {#nahyeza rAGavasyArTe jIvitaM parirakzati#} щадит
@@ -178,12 +178,12 @@
 
 **+)** [NWS·nws_at_sense → *new] {#+ Abl: bewahren vor, erretten vor. ṚV 8,48,5 .#} [Ved , unsp] + abhi : брать под защиту, под опеку. ṚV 1,163,5 . Ved , unsp
 
-**+)** [NWS·nws_at_sense → *new] {#+ upa ( uparakṣita ): „kept in custody“. EI X, S. 213-224 (Index) .#} [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохранённый, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
+**+)** [NWS·nws_at_sense → *new] {#+ upa ( uparakṣita ): „kept in custody“. EI X, S. 213-224 (Index) .#} [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохраненный, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
 
 **+)** [NWS·nws_at_sense → *new] {#+ vratám : schützen, wachen über, überwachen, e. wachsames Auge haben auf, beobachten, einhalten. ṚV 1,62,10 .#} [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi опущено в результате гаплологии
 
 **+)** [PW·restate → *new] <hom>1.</hom> √{#rakz#}¦ {#ra/kzati, ˚te#} ({#rakzye#} <ab>Fut.</ab> <ls n="Chr.">89,28</ls>)
-<div n="1">— 1〉 {%стеречь, нести стражу, сохранять, защищать, охранять%} (в т.ч. скот), {%оберегать, блюсти, щадить, содержать, спасать, servare, — от%} (<ab>Abl.</ab>), {%хранить; тщательно следить за%} (<ab>Acc.</ab>, в виде исключения <ab>Loc.</ab>), {%соблюдать%} (закон <ab>u. s. w.</ab>). Страну —, царство {%защищать,%} т.е. <ab>v. a.</ab> {%управлять%}. {#ra/kzamARa#} <ls>AV. 13,4,70</ls>. с пассивным <ab>Bed.</ab> или ошибочно вместо {#rakzya/mARa#} {#rakzita/#} {%охраняемый%} <ab>u. s. w.</ab> {#rakzitam#} <lex>Adv.</lex> {%надёжно сохранённый%}.
+<div n="1">— 1〉 {%стеречь, нести стражу, сохранять, защищать, охранять%} (в т.ч. скот), {%оберегать, блюсти, щадить, содержать, спасать, servare, — от%} (<ab>Abl.</ab>), {%хранить; тщательно следить за%} (<ab>Acc.</ab>, в виде исключения <ab>Loc.</ab>), {%соблюдать%} (закон <ab>u. s. w.</ab>). Страну —, царство {%защищать,%} т.е. <ab>v. a.</ab> {%управлять%}. {#ra/kzamARa#} <ls>AV. 13,4,70</ls>. с пассивным <ab>Bed.</ab> или ошибочно вместо {#rakzya/mARa#} {#rakzita/#} {%охраняемый%} <ab>u. s. w.</ab> {#rakzitam#} <lex>Adv.</lex> {%надежно сохраненный%}.
 
 **+)** [PW·restate → *new] <div n="1">— 2〉 {%блюсти,%} т.е. <ab>v. a.</ab> {%не трогать%}.
 

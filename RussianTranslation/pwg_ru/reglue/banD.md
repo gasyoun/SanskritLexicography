@@ -16,7 +16,7 @@
 <ls>P. 6,2,32.</ls> {#tasyeha pawwabanDo viDIyatAm#}
 <ls>KATHĀS. 12,190.</ls> <ls n="KATHĀS.">14,33.</ls>
 <ls>RĀJA-TAR. 4,718.</ls> {#Uru˚#}
-<ls n="RĀJA-TAR. 4,">575.</ls> {#keSabanDaviSezAH#} {%различные способы завязывать волосы, — причёски%}
+<ls n="RĀJA-TAR. 4,">575.</ls> {#keSabanDaviSezAH#} {%различные способы завязывать волосы, — прически%}
 <ls>HALĀY. 2,375.</ls> {#brahmAstreRa ca banDo vE mAruteH#}
 <ls>R. GORR. 1,4,84.</ls> {#badDO tu SarabanDena BrAtarO raRamUrDani#}
 <ls n="R. GORR.">6,20,18.</ls> <ls n="R. GORR.">5,44,13.</ls> <ls n="R. GORR. 5,44,">15.</ls> <ls>MBH. 3,16466.</ls>
@@ -86,7 +86,7 @@
 
 **7)** <div n="1">— 7) {%обретение, проявление, выражение%}: {#adehabanDAya#} {%чтобы более не принимать тела%}
 <ls>RAGH. 18,6.</ls> {#BUyastanutyajAM nAsti SarIrabanDaH#}
-<ls n="RAGH.">13,58.</ls> {#dehabanDAnamAnuzAn#} вероятно {%наделённый телом%} (т.е. = {#dehabadDa)#}
+<ls n="RAGH.">13,58.</ls> {#dehabanDAnamAnuzAn#} вероятно {%наделенный телом%} (т.е. = {#dehabadDa)#}
 <ls>HARIV. 9030.</ls> {#rAgabanDa#} так <ab>v. a.</ab> {%привязанность%}
 <ls>MĀLAV. 29.</ls>
 <ls>RAGH. 18,51.</ls> {#aBilAza˚#}
@@ -168,12 +168,12 @@
 <ls>HARIV. 3449.</ls> {#SirasyetaM maRiM rAjA pratibaDnAtu#}
 <ls>MBH. 10,756.</ls> {#pItapratibadDavatsA#}
 <ls>RAGH. 2,1.</ls>
-<ls>SUŚR. 1,161,21.</ls> {#sTUlAntrapratibadDa#} прикреплённый к, висящий на
+<ls>SUŚR. 1,161,21.</ls> {#sTUlAntrapratibadDa#} прикрепленный к, висящий на
 <ls n="SUŚR.">258,10. 324,3.</ls> вставлять в оправу: {#yadi maRistrapuRi pratibaDyate#}
 <ls>Spr. 595.</ls> украшать, отделывать: {#bahalAnurAgakuruvindadalapratibadDamaDyamiva digvalayam#}
-<ls>ŚIŚ. 9,8.</ls> {#pratibadDa#} связанный, соединённый
+<ls>ŚIŚ. 9,8.</ls> {#pratibadDa#} связанный, соединенный
 <ls>KAP. 1,101.</ls> {#yo yena pratibadDaH syAt#}
-<ls>Spr. 2560.</ls> снабжённый, наделённый: {#dIptANgadayugapratibadDamahABuja#}
+<ls>Spr. 2560.</ls> снабженный, наделенный: {#dIptANgadayugapratibadDamahABuja#}
 <ls>MBH. 11,711.</ls> {#DarmArTapratibadDatA#}
 <ls>H. 69.</ls> {#paSuvatparatantratvena pratibadDaH#} так: зависимый
 <ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 253.</ls> {#mftyu˚#} подверженный смерти
@@ -228,7 +228,7 @@
 **+)** [PW·restate → *new] <div n="p">— Mit {#vi#}
 <div n="1">— 1〉 {%привязывать с разных сторон; распрягать, натягивать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%захватывать%} верёвками (<ab>Instr.</ab>).
+**+)** [PW·restate → *new] <div n="1">— 2〉 {%захватывать%} веревками (<ab>Instr.</ab>).
 
 **+)** [PW·restate → *new] <div n="1">— 3〉 {%приводить в застой%}. {#purIzam#} <ls>CARAKA. 5,10</ls>. {#vibadDa#} {%приходить в застой, закупориваться%}.
 
@@ -246,7 +246,7 @@
 
 **+)** [PW·restate → *new] <div n="p">Mit {#anusam#}. {#anusaMbadDa#} {%связанный с, сопровождаемый%} (в <ab>Comp.</ab> предшествующий).
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aBisam#} {%соединять с чем-либо,%} так <ab>v. a.</ab> {%подразумевать под этим%}. <ab>Pass.</ab> {%быть соединённым с,%} так <ab>v. a.</ab> {%принадлежать к%} (<ab>Instr.</ab>). {#pratyekam#} {%принадлежать к каждому, — быть подразумеваемым%} <ls n="Chr.">225,22</ls>. <ls n="Chr.">234,29</ls>.
+**+)** [PW·restate → *new] <div n="p">— Mit {#aBisam#} {%соединять с чем-либо,%} так <ab>v. a.</ab> {%подразумевать под этим%}. <ab>Pass.</ab> {%быть соединенным с,%} так <ab>v. a.</ab> {%принадлежать к%} (<ab>Instr.</ab>). {#pratyekam#} {%принадлежать к каждому, — быть подразумеваемым%} <ls n="Chr.">225,22</ls>. <ls n="Chr.">234,29</ls>.
 
 **+)** [PW·restate → *new] <div n="p">— Mit {#upasam#}, {#uapasa/MdDa#} {%привязанный к тому%}.
 
@@ -309,7 +309,7 @@
 **NW60-1)** <div n="1"> 1) {%сковывать%} в <ab>übertr.</ab> <ab>Bed.</ab>
 <ls>BHĀG. P. 10,47,42.</ls>
 
-**NW61-6)** <div n="1">— 6) {%продолжаться, продолжать своё действие%}
+**NW61-6)** <div n="1">— 6) {%продолжаться, продолжать свое действие%}
 <ls>UTTARARĀMAC. 64,10</ls>, где по новейшему <ab>Ausg.</ab>
 (<ls n="UTTARARĀMAC.">82,12</ls>) следует читать {#vipralamBaH#}; по <ab>Comm.</ab> {#anubaDnAti = mohayati#} .
 

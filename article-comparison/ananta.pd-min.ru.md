@@ -6,14 +6,14 @@ _Скелет значений Деканского энциклопедичес
 
 | Значение | English (PD) | Русский |
 |:--|:--|:--|
-| **1A** | having no limit (in space), limitless or boundless (in expanse or depth) | не имеющий предела (в пространстве), безграничный или беспредельный (по протяжённости или глубине) |
+| **1A** | having no limit (in space), limitless or boundless (in expanse or depth) | не имеющий предела (в пространстве), безграничный или беспредельный (по протяженности или глубине) |
 | **B** | having no limit (in time) (often implying limitless in space and matter), eternal, imperishable, long-lasting, continuous | не имеющий предела (во времени) (часто подразумевая безграничность в пространстве и материи), вечный, непреходящий, долговечный, непрерывный |
-| **C** | endless (in number), indefinitely or ex- ceedingly great, uncountable, innumerable, many (mainly observable entities) | бесконечный (по числу), неопределённо или чрезвычайно великий, бесчисленный, неисчислимый, многочисленный (преим. наблюдаемые сущности) |
+| **C** | endless (in number), indefinitely or ex- ceedingly great, uncountable, innumerable, many (mainly observable entities) | бесконечный (по числу), неопределенно или чрезвычайно великий, бесчисленный, неисчислимый, многочисленный (преим. наблюдаемые сущности) |
 | **D** | (entity) having no limit (in space, time and matter) (used often as noun in apposition with brahman along with satya and jñāna) | (сущность) не имеющая предела (в пространстве, времени и материи) (часто как сущ. в приложении к brahman вместе с satya и jñāna) |
-| **2A** | having no end or definite terminal point, large, huge, great, abundant, immeasurably great, of infinite degree (mainly abstract notions, quality, quantity, size | не имеющий конца или определённой конечной точки, большой, огромный, великий, обильный, неизмеримо великий, бесконечной степени (преим. абстрактные понятия: качество, количество, размер) |
+| **2A** | having no end or definite terminal point, large, huge, great, abundant, immeasurably great, of infinite degree (mainly abstract notions, quality, quantity, size | не имеющий конца или определенной конечной точки, большой, огромный, великий, обильный, неизмеримо великий, бесконечной степени (преим. абстрактные понятия: качество, количество, размер) |
 | **2B** | not final | не окончательный |
 | **3** | (Jain.) perfect, infinite (knowledge) | (джайн.) совершенное, бесконечное (знание) |
-| **1A** | infinite entity deified | обожествлённая бесконечная сущность |
+| **1A** | infinite entity deified | обожествленная бесконечная сущность |
 | **B** | the infinite or limitless one, the Supreme Being | Бесконечный или Беспредельный, Высшее Существо |
 | **2A** | eternal time | вечное время |
 | **B** | in- finity, eternality | бесконечность, вечность |
@@ -56,7 +56,7 @@ _Скелет значений Деканского энциклопедичес
 | **9** | name of a country | название страны |
 | **10** | name of a kind of incense (dhūpa) | название вида благовония (дхупа) |
 | **11** | name of a type of Śālagrāma | название вида шалаграмы |
-| **12** | a silken cord tied with the invoking of Ananta | шёлковый шнур, завязываемый с призыванием Ананты |
+| **12** | a silken cord tied with the invoking of Ananta | шелковый шнур, завязываемый с призыванием Ананты |
 | **13** | name of a part of a pent-roof | название части односкатной крыши |
 | **14** | name of the month of Pauṣa | название месяца пауша |
 | **15** | cloud | облако |
@@ -66,7 +66,7 @@ _Скелет значений Деканского энциклопедичес
 | **1A** | eternality, infinity | вечность, бесконечность |
 | **Bi** | the infinite or eternal entity, the Supreme Being | бесконечная или вечная сущность, Высшее Существо |
 | **ii** | the eternal Primordial Matter | вечная Первоматерия (пракрити) |
-| **2** | name of a Tāntric diagram or a part thereof | название тантрической диаграммы или её части |
+| **2** | name of a Tāntric diagram or a part thereof | название тантрической диаграммы или ее части |
 | **3** | name of a holy place | название святого места |
 | **4** | cipher | ноль (цифра) |
 | **5** | mica | слюда |
@@ -86,7 +86,7 @@ _Скелет значений Деканского энциклопедичес
 | **Bi** | name of Pārvatī | имя Парвати |
 | **ii** | name of the śakti related to Brahmā | имя шакти, связанной с Брахмой |
 | **iii** | name of the Buddhist goddess Tārā | имя буддийской богини Тары |
-| **iv** | one of the names of Cāmuṇḍā | одно из имён Чамунды |
+| **iv** | one of the names of Cāmuṇḍā | одно из имен Чамунды |
 | **Ci** | name or epithet of the river Gaṅgā | имя или эпитет реки Ганги |
 | **ii** | epithet of the river Aruṇā | эпитет реки Аруны |
 | **3** | name of various plants | название различных растений |
@@ -100,7 +100,7 @@ _Скелет значений Деканского энциклопедичес
 | **E** | various plants (which cannot be identified) | различные растения (неотождествимые) |
 | **4Ai** | name of one of the eight kalās of cidātman | имя одной из восьми кал чидатмана |
 | **ii** | name of one of the eight śaktis | имя одной из восьми шакти |
-| **iii** | name of one of the sixteen kalās produced from the nāda | имя одной из шестнадцати кал, произведённых из нады |
+| **iii** | name of one of the sixteen kalās produced from the nāda | имя одной из шестнадцати кал, произведенных из нады |
 | **iv** | name of a Tantric deity | имя тантрического божества |
 | **Bi** | name of the opposite of the first of the nine tuṣṭis (of the Sāṃkhyas) | имя противоположности первой из девяти тушти (санкхья) |
 | **ii** | name of Prakṛti | имя Пракрити |

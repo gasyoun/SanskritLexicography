@@ -146,7 +146,7 @@ assembly is fully deterministic and local.
 
   (The prompt's "пять словников" = 4 INDEP + KOW.)
 - **The stage-4 gate has never run.** `pwg_ru_prompts/4_korpus_proverka.txt`
-  says so explicitly («Запуск ещё НЕ выполнялся»); `build_card` has no caller
+  says so explicitly («Запуск еще НЕ выполнялся»); `build_card` has no caller
   outside corpus_gate's own CLI. The verdict schema
   (`correctness/matched_source/corroborated_by/…`) exists only in the prompt.
 - **0 of 11,261 store rows** carry `evidence`, `government`, `labels`, `renou`,
@@ -718,7 +718,7 @@ overlaps
 already computes. That is **wrong**, for two reasons:
 
 1. **No ground truth exists.** Stage 4 has *never been run* — its header says
-   *"Запуск ещё НЕ выполнялся"* and there are zero stage-4 verdict files on disk.
+   *"Запуск еще НЕ выполнялся"* and there are zero stage-4 verdict files on disk.
    So the requested "how often does `corpus_gate` agree with the Opus verdict?"
    has nothing to compare against.
 

@@ -921,7 +921,7 @@ proper-noun lookup table validated against a known Sanskrit onomasticon, not a c
 rule, and should be checked as its own artifact before any corpus_gate consumer trusts it.
 
 > **Source:** [`SanskritLexicography/RussianTranslation/REUSE_MAP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md)
-> + [`src/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md#специализированные-глоссарии-имён--build_glossariespy)
+> + [`src/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md#специализированные-глоссарии-имен--build_glossariespy)
 > ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
 > — SanskritLexicography/RussianTranslation · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
