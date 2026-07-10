@@ -312,4 +312,69 @@ degradation.
 Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
 `H442_MEDIUM50_KILLTIMEOUT_BISECTION_WASTE_2026-07-10`.
 
+
+## Update — 10-07-2026 (H442 launch 3 of 3): env re-probed GREEN, run still 0/12 — INFRA-CONFOUNDED
+
+The third and final allowed H442 launch. Fired only after the
+[`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md)
+warm-up gate returned **GO** (one Sonnet 5 `agent()` call, 3.3 s, 0 connection errors).
+Orchestrator Opus 4.8 (`claude-opus-4-8`); generation Sonnet 5 (`claude-sonnet-5`, harness-pinned).
+Harness **regenerated from the post-[PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)
+generator** (verified to carry `KILL_TIMEOUT_NO_BISECT` + `PER_CARD_HEAL_FACTOR` and *not* the
+depth-1 `KILL_BISECT_MAX_DEPTH` precursor); no old `run_pilot_wf.h317_w1b.js` was reused.
+
+| run | cards | agents | audit-clean | tripped | conn-err | kill-timeouts | per-card fires | tokens | wall |
+|---|---:|---:|---:|:--:|---:|---:|---:|---:|---:|
+| H437 w1b (clean env) | 12 | 61/61 | **1** (`yuvan`) | yes | 0 | 1 | n/a | 2.90M | 7.96 min |
+| H442 run-1 | 12 | 61/61 | **0** | yes | 3 | 58 | 0 | 2.22M | 9.27 min |
+| H442 run-2 | 12 | 61/61 | **0** | yes | 3 | 76 | 0 | 2.17M | 10.49 min |
+| **H442 run-3 (this)** | 12 | **58/58** | **0** | yes | **2** | **7** | **0** | **1.80M** | **11.90 min** |
+
+**Verdict: INFRA-CONFOUNDED, not a code failure** (per the H442 goal's rule: *if connection errors
+recur, abort the interpretation*). Evidence, in order of force:
+
+1. **`audit_window.py` classified all 12 requeues `transient`, 0 `defect`.** Not one content
+   failure. The window produced no bad Russian; it produced no Russian at all.
+2. **The kill-timeouts moved to the CEILING.** Runs 1–2 hung 11–135-byte fragments at the 45 s
+   `KILL_FLOOR`. This run hung whole 1.2–8.0 KB skeletons at the 180 s `KILL_CEIL`
+   (`_ac_arya` @ 7,977 B, `d_ikz_a` @ 7,607 B, `yuvan` @ 5,276 B). Larger payloads, same hang —
+   the calls are not slow *because* they are small or *because* they are big. They are slow.
+3. **2 × `Connection closed mid-response`** (`b4[2]`, `heal:r_azwra#g2[8]`).
+4. **The per-card heal cap still never bound** — `partial_keys` empty, `healed=0`, 0 per-card
+   fires — for the third consecutive run. This re-confirms H442 finding #1 *as a structural fact*,
+   not a tuning miss: `MAX_AGENTS` is derived from batch count and is the **same counter** the heal
+   lane spends, so when every card heals the window budget always binds first. The per-card ceiling
+   is unreachable by construction for this window shape.
+
+### The warm-up gate is necessary but NOT sufficient — the finding of this run
+
+A trivial `agent()` probe (a few hundred tokens, 3.3 s) returned **GO**, and the real window still
+degraded. A load-representative probe is required: the failures cluster on multi-KB skeletons, and
+a one-word prompt exercises none of that path. **Action:** the probe must send a skeleton-sized
+payload (≥5 KB) and assert sub-30 s, before it can be trusted to authorize a ~2 M-token launch.
+Recorded in the probe log; gate tightening tracked in
+[H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
+
+### Not token-comparable to runs 1–2
+
+This harness generated **8 batches / 16 expected agents** where runs 1–2 were 17 expected / 61
+agents, because the fragment-TM sidecar had grown to 217 cached fragments. The window still spent
+its **full 58-agent budget** (16 expected → 58 spent) purely on the heal cascade. Any cross-run
+token comparison in this table must be read with that in mind; see H462 Q3.
+
+### Disposition
+
+The 3-launch cap set by the H442 goal is now **exhausted**, and no launch produced a measurable
+clean-rate: three of three were confounded by the generation environment. Per the goal's
+alternative outcome, this is the **documented decision**: the medium50 nominal lane stays
+**paused**, and the next move is *not* another tuning pass on the heal budget. It is (a) the
+load-representative probe, (b) the returned-telemetry patch so the next run's kill-timeout and
+connection-error counts are machine-read rather than hand-counted (H462), and (c) a design change
+separating the heal pool from the translate pool — since finding #4 shows the per-card cap cannot
+bind while they share one counter.
+
+The FIX_PLAN's audit command is also wrong and was corrected in this pass: it says
+`--root nominal_h317_w1b`, but the harness root is `h317_w1b`; the stale-artifact guard correctly
+refused the mismatched run.
+
 _Dr. Mārcis Gasūns_
