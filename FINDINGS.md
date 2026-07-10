@@ -1736,6 +1736,47 @@ niche (suggestion generation against a validated, provenance-carrying lexicon) i
 > (H452, [PR #27](https://github.com/drdhaval2785/SanskritSpellCheck/pull/27), 3 parallel
 > research agents, every claim fetch-backed), Fable 5 `claude-fable-5` · 2026-07-10
 
+### §66. The DCS `QL` frequency workbook's `SLP1` and length columns are truncated at ṣṭh/ḍh clusters
+
+🔴 **[`VisualDCS/derived-data/QL/Распределение слов по длинне и частям речи.xlsx`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/QL/README.md)
+silently drops everything after a ṣṭh/ḍh cluster in its `SLP1` column — and the
+`Длинна в SLP1` column is computed from the truncated string.**
+Evidence: `śreṣṭha → SrezW` (length 5, true `SrezWa` = 6); `yudhiṣṭhira → yuDizW` (6, true
+`yuDizWira` = 9); `pṛṣṭhatas → pfzW` (4, true `pfzWatas` = 8); `āḍhya → AQ` (2, true `AQya`
+= 4). **1 622 of 90 929 rows (1.8 %)** disagree with canonical
+[`sanskrit_util.to_slp1`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py);
+length is **under**-stated in 1 455 of them (mean −2.5 chars, max −32). Only 56 affected rows
+have frequency ≥ 100, so corpus-wide statistics barely move — Spearman(len, freq) goes
+−0.295 → −0.301 — but any **per-lemma** use of those two columns is simply wrong for them.
+Implication: never read `SLP1` / `Длинна в SLP1` from this workbook directly; recompute from
+the `IAST` column with `to_slp1`. The `Частота`, `IAST` and `Грамм.` columns are sound.
+
+> **Source:** H457 · [`titov_length_recheck.py`](https://github.com/gasyoun/Uprava/blob/main/research/titov_length_recheck.py),
+> Opus 4.8 `claude-opus-4-8` · 2026-07-10
+
+### §67. In PWG, article size dwarfs every "parametric" statistic you can extract from the entry
+
+🟠 **Any statistic counted off a PWG entry body (senses, glosses, cited phrases) is first and
+foremost a measure of how long the article is — and article length tracks corpus frequency
+(Spearman +0.497).**
+Evidence: across 106 082 PWG headwords, mean entry size is **14 876 characters for the 394
+headwords of Leonchenko's stable corpus core vs 439 for the rest (33.9×)**; 379/394 core
+lemmas sit in the top decile of article size. Ranking the dictionary by raw entry size alone
+recovers the corpus core better (**35.5 %** at top-394, tie-aware) than any counted parameter
+(multiword citations 33.5 %, glosses 32.4 %, numbered senses 27.8 %, headword length 8.5 %;
+random 0.37 %). Normalising per character collapses them (27.8 % → 0.8 %). At size-matched
+comparison (caliper ±10 %, 372 pairs, ⟨chars⟩ 11 198 vs 11 197) sense counts **reverse sign**
+— core 10.31 vs matched non-core 11.57, Wilcoxon p = 0.038 (±5 %: p = 0.030) — and cited
+phrases stop discriminating altogether (p = 0.62).
+Implication: any claim that a per-entry count indexes lexico-semantic structure **must** carry
+an entry-size control. Without one you are measuring the lexicographer's attention, which is
+itself a function of corpus frequency.
+
+> **Source:** H457 · [`titov_control_entry_size.py`](https://github.com/gasyoun/Uprava/blob/main/research/titov_control_entry_size.py),
+> data [`VisualDCS/derived-parametric-core/`](https://github.com/gasyoun/VisualDCS/blob/main/derived-parametric-core/README.md),
+> full write-up in [`Uprava/research/slovar-kak-obekt-dissertacii.md`](https://github.com/gasyoun/Uprava/blob/main/research/slovar-kak-obekt-dissertacii.md) §4-quater,
+> Opus 4.8 `claude-opus-4-8` · 2026-07-10
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
