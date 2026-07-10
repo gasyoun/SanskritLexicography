@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWG→RU progress — SanskritLexicography</title>
+<style>
+  :root { --fg:#1f2328; --mut:#59636e; --bg:#fff; --card:#f6f8fa; --line:#d1d9e0;
+          --accent:#0969da; --done:#1a7f37; --run:#9a6700; --block:#d1242f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --mut:#9198a1; --bg:#0d1117; --card:#161b22; --line:#30363d;
+            --accent:#4493f8; --done:#3fb950; --run:#d29922; --block:#f85149; }
+  }
+  body { font: 15px/1.5 system-ui, sans-serif; color:var(--fg); background:var(--bg);
+         max-width: 1080px; margin: 0 auto; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; margin-bottom:.2rem; } h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  .mut { color: var(--mut); font-size: .85rem; }
+  a { color: var(--accent); }
+  .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+          padding: .7rem 1.1rem; min-width: 8.5rem; }
+  .card b { font-size: 1.7rem; display: block; line-height:1.1; }
+  .card .sub { color: var(--mut); font-size: .8rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--mut); font-weight: 600; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  /* funnel + bars */
+  .bar-wrap { background: var(--card); border:1px solid var(--line); border-radius:8px;
+              padding:.9rem 1.1rem; margin:.6rem 0; }
+  .bar-row { display:flex; align-items:center; gap:.7rem; margin:.35rem 0; }
+  .bar-row .lbl { flex: 0 0 12.5rem; }
+  .bar-row .lbl small { color:var(--mut); }
+  .track { flex:1; background:rgba(127,127,127,.14); border-radius:5px; height:1.5rem; position:relative; overflow:hidden; }
+  .fill { height:100%; border-radius:5px 0 0 5px; }
+  .bar-row .val { flex:0 0 8.5rem; text-align:right; font-variant-numeric:tabular-nums; }
+  .c-done{ background:var(--done);} .c-run{ background:var(--run);} .c-block{ background:var(--block);}
+  .c-att{ background:var(--accent);} .c-univ{ background:rgba(127,127,127,.45);}
+  .legend { font-size:.8rem; color:var(--mut); margin-top:.5rem; }
+  .legend span { margin-right:1rem; white-space:nowrap; }
+  .sw { display:inline-block; width:.7rem; height:.7rem; border-radius:2px; vertical-align:middle; margin-right:.25rem; }
+  .trust { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+           border-radius:6px; padding:.7rem 1rem; font-size:.83rem; color:var(--mut); margin:1rem 0; }
+  .trust b { color:var(--fg); }
+  .chart { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding:.6rem; }
+  .flags { font-size:.8rem; }
+  .est { color:var(--run); cursor:help; }
+  footer { margin-top:2.5rem; color:var(--mut); font-size:.8rem; }
+</style>
+</head>
+<body>
+<h1>PWG → Russian — translation progress</h1>
+<p class="mut">How the machine-assisted translation of the <b>Petersburg Dictionary</b>
+  (Böhtlingk–Roth, PWG) into Russian is progressing. The finished articles are browsable at the
+  <a id="sitelink" href="https://gasyoun.github.io/SanskritLexicography/">article site</a>;
+  this page is the <em>backlog-and-coverage</em> companion. <span id="stamp"></span></p>
+
+<div class="cards" id="cards"></div>
+
+<h2>Verb lane — the priority workstream (H151)</h2>
+<p class="mut">The dictionary is topped by verbal roots (<code>sTA</code> 379 senses, <code>i</code> 272,
+  <code>gam</code> 213…). They are translated root-by-root through the Claude Workflow harness. Funnel
+  from every vetted PWG verb root down to what is actually promoted:</p>
+<div class="bar-wrap" id="verbfunnel"></div>
+<div class="legend">
+  <span><i class="sw c-univ"></i>vetted universe</span>
+  <span><i class="sw c-att"></i>DCS-attested (in scope)</span>
+  <span><i class="sw c-done"></i>promoted</span>
+  <span><i class="sw c-run"></i>runnable now</span>
+  <span><i class="sw c-block"></i>blocked (needs rootmap)</span>
+</div>
+
+<h2>Store depth — what is translated so far</h2>
+<p class="mut">Sense-rows written into the RU spine (<code>pwg_ru_translated.jsonl</code>), and how many
+  have passed <em>human</em> review versus still carrying only the AI first pass.</p>
+<div class="bar-wrap" id="reviewbar"></div>
+
+<h2>Frequency coverage — how much of PWG is even in scope</h2>
+<p class="mut">Only DCS-attested headwords are targeted first (corpus-frequency route). This is the
+  ceiling the lanes above are working toward, not a translated count.</p>
+<div class="bar-wrap" id="covbar"></div>
+
+<h2>Nominal lane &amp; supporting assets</h2>
+<table id="misc"></table>
+
+<h2>Trend</h2>
+<p class="mut">One point per dashboard rebuild. A single point shows the current value; the line
+  appears once a second snapshot exists.</p>
+<div class="cards" id="charts"></div>
+
+<div class="trust" id="trust"></div>
+
+<footer>
+  Built by <code>progress_dashboard/build_progress_data.py</code> from local-only pipeline artifacts;
+  published to <code>/progress/</code> on gh-pages. Source:
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/">progress_dashboard/</a>.
+</footer>
+
+<script>
+'use strict';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = n => (n == null ? '—' : n.toLocaleString('en-US'));
+
+function barRow(label, sub, value, total, cls, valText) {
+  const pct = total ? Math.max(1.5, value / total * 100) : 0;
+  return `<div class="bar-row">
+    <div class="lbl">${esc(label)}${sub ? ` <small>${esc(sub)}</small>` : ''}</div>
+    <div class="track"><div class="fill ${cls}" style="width:${pct.toFixed(1)}%"></div></div>
+    <div class="val">${valText != null ? valText : fmt(value)}</div>
+  </div>`;
+}
+
+function line(el, series, label, suffix) {
+  suffix = suffix || '';
+  const last = series[series.length - 1];
+  if (series.length === 1) {
+    el.insertAdjacentHTML('beforeend',
+      `<div class="chart"><b>${esc(label)}</b>
+       <div style="font-size:2rem;font-weight:650;margin:.35rem 0 .1rem">${fmt(last[1])}${suffix}</div>
+       <span class="mut">first snapshot · ${esc(last[0])} — trend line appears next rebuild</span></div>`);
+    return;
+  }
+  const w = 300, h = 120, px = 44, py = 20;
+  const vals = series.map(p => p[1]);
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  const span = (hi - lo) || 1;
+  const x = i => px + i * (w - 2 * px) / (series.length - 1);
+  const y = v => h - py - (v - lo) / span * (h - 2 * py);
+  const pts = series.map((p, i) => `${x(i)},${y(p[1])}`).join(' ');
+  const dots = series.map((p, i) =>
+    `<circle cx="${x(i)}" cy="${y(p[1])}" r="2.6" fill="currentColor"><title>${esc(p[0])}: ${fmt(p[1])}${suffix}</title></circle>`).join('');
+  el.insertAdjacentHTML('beforeend',
+    `<div class="chart"><b>${esc(label)}</b> <span class="mut">${fmt(last[1])}${suffix} · ${esc(last[0])}</span><br>
+     <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}">
+       <text x="${px - 6}" y="${y(hi) + 4}" text-anchor="end" font-size="9" fill="currentColor" fill-opacity=".6">${fmt(hi)}</text>
+       <text x="${px - 6}" y="${y(lo) + 4}" text-anchor="end" font-size="9" fill="currentColor" fill-opacity=".6">${fmt(lo)}</text>
+       <polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.5"/>${dots}
+       <circle cx="${x(series.length - 1)}" cy="${y(last[1])}" r="4" fill="none" stroke="currentColor"/>
+     </svg></div>`);
+}
+
+async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : null; } catch { return null; } }
+
+(async () => {
+  const d = await j('progress_data.json');
+  if (!d) {
+    document.getElementById('cards').innerHTML = '<p class="bad">progress_data.json not found.</p>';
+    return;
+  }
+  const v = d.lanes.verb, nm = d.lanes.nominal, st = d.store, cov = d.coverage, cor = d.corpus;
+  document.getElementById('stamp').textContent = 'Snapshot ' + d.generated_at + '.';
+  if (d.site_url) document.getElementById('sitelink').href = d.site_url;
+
+  // headline cards
+  document.getElementById('cards').innerHTML = [
+    `<div class="card"><b>${fmt(st.senses)}</b><span class="sub">sense-rows translated (RU)</span></div>`,
+    `<div class="card"><b>${fmt(st.roots)}</b><span class="sub">roots with translations</span></div>`,
+    `<div class="card"><b>${fmt(v.promoted)}<span class="sub" style="display:inline;font-size:1rem"> / ${fmt(v.dcs_attested)}</span></b><span class="sub">verb roots promoted</span></div>`,
+    `<div class="card"><b>${cov.pct}%</b><span class="sub">of PWG is DCS-attested</span></div>`,
+  ].join('');
+
+  // verb funnel
+  const vf = document.getElementById('verbfunnel');
+  const U = v.universe || 0;
+  vf.innerHTML =
+    barRow('Vetted PWG verb roots', 'universe_verbs01', v.universe, U, 'c-univ') +
+    barRow('DCS-attested (in scope)', 'first-pass target', v.dcs_attested, U, 'c-att') +
+    barRow('Promoted', 'shipped to store', v.promoted, U, 'c-done',
+           `${fmt(v.promoted)} <span class="mut">(${(v.promoted / v.dcs_attested * 100).toFixed(1)}% of scope)</span>`) +
+    barRow('Runnable now', 'has rootmap', v.runnable, U, 'c-run') +
+    barRow('Blocked', 'missing rootmap', v.blocked, U, 'c-block');
+
+  // store review split
+  const rb = document.getElementById('reviewbar');
+  const human = st.human_reviewed || 0;
+  const ai = (st.senses || 0) - human;
+  rb.innerHTML =
+    barRow('AI first pass', 'awaiting human QA', ai, st.senses, 'c-run',
+           `${fmt(ai)} <span class="mut">(${(ai / st.senses * 100).toFixed(1)}%)</span>`) +
+    barRow('Human-reviewed', 'signed off', human, st.senses, 'c-done',
+           `${fmt(human)} <span class="mut">(${(human / st.senses * 100).toFixed(1)}%)</span>`);
+
+  // coverage bar
+  const cb = document.getElementById('covbar');
+  cb.innerHTML =
+    barRow('DCS-attested headwords', 'in first-pass scope', cov.dcs_attested_headwords, cov.total_headwords, 'c-att',
+           `${fmt(cov.dcs_attested_headwords)} <span class="mut">(${cov.pct}%)</span>`) +
+    barRow('Total PWG headwords', 'whole dictionary', cov.total_headwords, cov.total_headwords, 'c-univ');
+
+  // misc table
+  const est = t => `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
+  document.getElementById('misc').innerHTML =
+    '<tr><th>Item</th><th class="num">Value</th><th>Note</th></tr>' +
+    `<tr><td>Nominal lane — promoted</td><td class="num">${fmt(nm.promoted)} / ${fmt(nm.candidates)}</td><td class="mut">pril10 core nominal candidates</td></tr>` +
+    `<tr><td>Nominal medium-50 band</td><td class="num">${fmt(nm.medium50_promoted)} / ${fmt(nm.medium50_total)}</td><td class="mut">${esc(nm.medium50_status || '')}</td></tr>` +
+    `<tr><td>Corpus lexicon (TM source)</td><td class="num">${cor.pairs_measured ? fmt(cor.pairs) : est(fmt(cor.pairs))}</td><td class="mut">Sa→Ru alignment pairs</td></tr>` +
+    `<tr><td>Alignment recall</td><td class="num">${est(cor.recall_pct + '%')}</td><td class="mut">measured H309</td></tr>`;
+
+  // trend charts
+  const ts = await j('progress_timeseries.json');
+  if (ts && ts.snapshots && ts.snapshots.length) {
+    const el = document.getElementById('charts');
+    const pick = key => ts.snapshots.filter(s => s[key] != null).map(s => [s.date, s[key]]);
+    let s;
+    if ((s = pick('senses')).length) line(el, s, 'Sense-rows translated');
+    if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
+    if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
+  }
+
+  // trust block
+  const flag = ok => ok ? '<b style="color:var(--done)">measured live</b>' : '<span class="est">documented constant *</span>';
+  document.getElementById('trust').innerHTML =
+    `<b>Provenance.</b> Snapshot <b>${esc(d.generated_at)}</b>. ` +
+    `Verb/nominal lanes and store depth are counted live from the pipeline's own worklist + store files; ` +
+    `the frequency denominator (${fmt(cov.total_headwords)} headwords) and the ${cor.recall_pct}% recall are ` +
+    `documented constants (marked <span class="est">*</span>). ` +
+    `Store: ${flag(st.measured)}. Verb lane: ${flag(v.measured)}. Coverage numerator: ${flag(cov.measured)}. ` +
+    `“Promoted” = passed the mechanical + review gate and written to the shipped store, not merely generated.`;
+})();
+</script>
+</body>
+</html>
