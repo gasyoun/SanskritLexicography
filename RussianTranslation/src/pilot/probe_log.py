@@ -43,6 +43,15 @@ CONN_ERR_CEIL = 0
 # 6 at the 180s KILL_CEIL on 1.2-8.0KB skeletons). A warm-up may only authorize a launch
 # if its prompt carried a skeleton-sized payload; use `probe_log.py prompt` to get one.
 PAYLOAD_FLOOR_BYTES = 5 * 1024
+# H532: size-representative is still not LATENCY-representative — measured 10-07-2026,
+# a 24.5s GO on the bare 6.5KB prompt preceded 0/12 clean with all cards >= 146s: the
+# bare probe omits the CARDS_SCHEMA StructuredOutput + CONV_TR system prompt that add
+# most of the per-card latency. A warm-up may only authorize a launch if it carried the
+# REAL production shape (`probe_schema.py emit` → one agent() with schema+CONV_TR), and
+# its ceiling is per-card-budget-derived, not the generic 30s: one representative card
+# needing >= KILL_CEIL/2 (90s of the 180s per-card kill ceiling) leaves no headroom for
+# real 1-6-card batches, whose latency grows with output size. Safety factor 2.
+SCHEMA_LATENCY_CEIL_MS = 90_000
 
 KINDS = ('warmup', 'launch', 'abort')
 VERDICTS = ('GO', 'NO-GO')
@@ -69,23 +78,33 @@ def _append(row):
         fh.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
-def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None):
+def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None, schema_carrying=False):
     """The mechanical gate. Returns (verdict, reason)."""
     if conn_errors is not None and conn_errors > CONN_ERR_CEIL:
         return 'NO-GO', f'{conn_errors} connection error(s) > {CONN_ERR_CEIL}'
-    if latency_ms is not None and latency_ms > LATENCY_CEIL_MS:
-        return 'NO-GO', f'latency {latency_ms}ms > {LATENCY_CEIL_MS}ms'
+    # H532: a schema-carrying reading is judged against the per-card-budget ceiling;
+    # a bare reading keeps the generic 30s ceiling (still useful as an env sanity ping).
+    ceil = SCHEMA_LATENCY_CEIL_MS if schema_carrying else LATENCY_CEIL_MS
+    if latency_ms is not None and latency_ms > ceil:
+        return 'NO-GO', (f'latency {latency_ms}ms > {ceil}ms'
+                         + (' (schema-carrying ceiling = KILL_CEIL/2)' if schema_carrying else ''))
     # H462: only a load-representative warm-up may authorize a launch. A missing
     # payload size is treated as trivial — the burden of proof is on the probe.
     if kind == 'warmup' and (payload_bytes is None or payload_bytes < PAYLOAD_FLOOR_BYTES):
         return 'NO-GO', (f'probe not load-representative: payload '
                          f'{payload_bytes or 0}B < {PAYLOAD_FLOOR_BYTES}B '
                          f'(use `probe_log.py prompt`)')
-    return 'GO', 'within ceilings, load-representative' if kind == 'warmup' else 'within ceilings'
+    # H532: size alone proved insufficient — only a schema-carrying warm-up (real
+    # CONV_TR + CARDS_SCHEMA StructuredOutput, `probe_schema.py emit`) may authorize.
+    if kind == 'warmup' and not schema_carrying:
+        return 'NO-GO', ('probe not latency-representative: bare prompt without '
+                         'CARDS_SCHEMA/CONV_TR (use `probe_schema.py emit`, H532)')
+    return 'GO', 'within ceilings, schema-carrying' if kind == 'warmup' else 'within ceilings'
 
 
 def cmd_append(a):
-    auto, reason = verdict_for(a.latency_ms, a.conn_errors, a.payload_bytes, a.kind)
+    auto, reason = verdict_for(a.latency_ms, a.conn_errors, a.payload_bytes, a.kind,
+                               schema_carrying=a.schema_carrying)
     verdict = a.verdict or auto
     if a.verdict and a.verdict != auto and a.kind == 'warmup':
         print(f'WARN: stated verdict {a.verdict} disagrees with mechanical {auto} ({reason})',
@@ -103,6 +122,7 @@ def cmd_append(a):
             'latency_ms': a.latency_ms,
             'conn_errors': a.conn_errors,
             'payload_bytes': a.payload_bytes,
+            'schema_carrying': bool(a.schema_carrying),
             'agent_model': a.agent_model,
         },
         'orchestrator': a.orchestrator,
@@ -224,10 +244,17 @@ def cmd_render(a):
         'payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said GO on',
         '10-07-2026 and the window still degraded; payload size is now part of the verdict.',
         '',
+        f'H532 addendum: size-representative proved insufficient — a 24.5s GO on the bare 6.5KB',
+        f'prompt preceded 0/12 clean with every card >= 146s, because the bare probe omits the',
+        f'`CARDS_SCHEMA` StructuredOutput + `CONV_TR` system prompt that add most of the per-card',
+        f'latency. A warm-up now only authorizes a launch if it is **schema-carrying**',
+        f'(`python src/pilot/probe_schema.py emit` → one agent() with the real production shape),',
+        f'judged against a per-card-budget ceiling of {SCHEMA_LATENCY_CEIL_MS // 1000}s (= KILL_CEIL/2, safety factor 2).',
+        '',
         '## Readings',
         '',
-        '| ts (UTC) | kind | verdict | latency | conn-err | payload | window | H### | note |',
-        '|---|---|---|---:|---:|---:|---|---|---|',
+        '| ts (UTC) | kind | verdict | latency | conn-err | payload | schema | window | H### | note |',
+        '|---|---|---|---:|---:|---:|:--:|---|---|---|',
     ]
     for r in rows:
         if r.get('kind') == 'outcome':
@@ -235,11 +262,12 @@ def cmd_render(a):
         p = r.get('probe') or {}
         lat = p.get('latency_ms')
         pb = p.get('payload_bytes')
-        out.append('| {} | {} | {} | {} | {} | {} | {} | {} | {} |'.format(
+        out.append('| {} | {} | {} | {} | {} | {} | {} | {} | {} | {} |'.format(
             r['ts'], r['kind'], r['verdict'],
             f'{lat/1000:.1f}s' if isinstance(lat, int) else '—',
             _cell(p.get('conn_errors')),
             f'{pb}B' if isinstance(pb, int) else '—',
+            'yes' if p.get('schema_carrying') else 'no',
             _cell(r.get('window')),
             _cell(r.get('handoff')), _cell(r.get('note'))))
 
@@ -279,6 +307,12 @@ def main():
                    help='probe prompt size in bytes; a warmup below %d B (or without '
                         'this flag) is NO-GO — see `probe_log.py prompt` (H462)'
                         % PAYLOAD_FLOOR_BYTES)
+    p.add_argument('--schema-carrying', action='store_true',
+                   help='the probe carried the real production shape (CONV_TR + '
+                        'CARDS_SCHEMA StructuredOutput, `probe_schema.py emit`); '
+                        'a warmup WITHOUT this is NO-GO, and WITH it the latency '
+                        'ceiling is %dms (KILL_CEIL/2) instead of %dms (H532)'
+                        % (SCHEMA_LATENCY_CEIL_MS, LATENCY_CEIL_MS))
     p.add_argument('--agent-model', default='claude-sonnet-5')
     p.add_argument('--lane', default='nominal medium50 (band-4 singleton)')
     p.add_argument('--window')
