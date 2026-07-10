@@ -1,6 +1,6 @@
 # Generation-API probe log — pwg_ru Workflow launches
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 Append-only, machine-written. Source of truth is
 [`src/pilot/generation_api_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/generation_api_probe_log.jsonl);
@@ -38,6 +38,7 @@ judged against a per-card-budget ceiling of 90s (= KILL_CEIL/2, safety factor 2)
 | 2026-07-10T20:00:23Z | warmup | NO-GO | 27.1s | 0 | 6546B | no | h317_w1b | H532 | H532 env pre-gate, BARE shape (deliberately non-authorizing under the new rule): wall-clock of the whole 1-agent workflow, startup ~2-5s not subtracted; agent latency ~22-25s vs 3.3s healthy baseline = env still degraded |
 | 2026-07-10T20:00:24Z | abort | NO-GO | 27.1s | 0 | 6546B | no | h317_w1b | H532 | H532 pre-gate stop: bare probe still ~7x baseline (>10s recovery bar) - env NOT recovered; schema-carrying gate built+wired (probe_schema.py, SCHEMA_LATENCY_CEIL_MS=90000) but no launch authorized; ~2.3M tokens saved |
 | 2026-07-10T20:43:43Z | warmup | GO | 45.9s | 0 | 13906B | yes | h317_w1b | H532 | H532 schema-carrying warm-up (probe_schema.py emit, real PREAMBLE+GRAMMAR+CONV_TR+CARDS_SCHEMA, 1 synth band-4 card): whole 1-agent workflow wall-clock 45.9s (startup ~2-5s not subtracted), 67727 subagent tokens, got_cards=1, 0 conn-errors. Under 90s KILL_CEIL/2 ceiling => GO. Note: ~46s for ONE card is ~14x the 3.3s healthy baseline; env slow but within the schema-representative headroom. |
+| 2026-07-10T20:59:24Z | launch | GO | — | — | — | no | h317_w1b | H532 | h317_w1b split-pool launch after H532 schema-carrying GO (warm-up 45.9s < 90s). KILL_SWITCH on: 34 translate + 125 heal pools, 180s kill ceiling. 12 keys / 8 batches / 3 presplit. Expected ~16 agents on a clean run. |
 
 ## Measured launch outcomes
 
@@ -45,5 +46,6 @@ judged against a per-card-budget ceiling of 90s (= KILL_CEIL/2, safety factor 2)
 |---|---|---:|---:|---:|---:|---:|:--:|
 | 2026-07-10T07:44:19Z | h317_w1b | 0/12 | 58 | 1.80M | 7 | 2 | yes |
 | 2026-07-10T17:03:28Z | h317_w1b | 0/12 | 66 | 2.28M | 66 | 0 | no |
+| 2026-07-10T21:22:37Z | h317_w1b | 0/12 | 59 | 4.17M | 54 | 0 | no |
 
 _Dr. Mārcis Gasūns_
