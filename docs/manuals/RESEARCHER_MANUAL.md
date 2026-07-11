@@ -14,7 +14,7 @@ to reuse the raw data programmatically, see the
 ## 1. The thesis: evidence-graded lexicography
 
 The programme's one sentence (from
-[ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md),
+[ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md),
 Part II):
 
 > A digital dictionary is not a text but a **layered evidence graph**. Every

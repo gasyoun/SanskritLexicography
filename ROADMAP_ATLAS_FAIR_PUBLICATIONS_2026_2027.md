@@ -1,7 +1,9 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-*Drafted 2026-06-12. Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, Lexikos, Dictionaries); book = English article-based monograph; student deliverable = frequency-graded learner's reading layer; review capacity = student/community review pool.*
+_Created: 12-06-2026 · Last updated: 11-07-2026_
+
+Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, Lexikos, Dictionaries); book = English article-based monograph; student deliverable = frequency-graded learner's reading layer; review capacity = student/community review pool.
 
 ---
 
@@ -131,3 +133,5 @@ What is genuinely new versus existing DH lexicography (ELEXIS, Lexonomy, TEI Lex
 | DCS adapter contract slips | Learner's layer v1 can ship with the 2026-03-05 release snapshot frequencies; live contract is an upgrade, not a dependency. |
 | Book proposal needs 2 published chapters | P1 submission Q3 2026 + P2 Q4 2026 makes "under review" true at proposal time; Q1 2027 submission is realistic. |
 | Burnout / bus factor 1 | The roadmap front-loads infrastructure (FAIR, pool, gold standard) precisely so Q1–Q2 2027 is mostly *writing*, not building. |
+
+_Dr. Mārcis Gasūns_

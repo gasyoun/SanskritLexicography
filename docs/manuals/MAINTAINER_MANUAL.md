@@ -21,7 +21,7 @@ graph where every claim carries source, evidence grade, corpus attestation, and
 review provenance (see the
 [Researcher Manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md)
 and
-[ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)).
+[ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)).
 
 **The hybrid framing.** The repo-level
 [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md)
@@ -49,8 +49,9 @@ live tooling embedded in the active subprojects.
 | [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) | Böhtlingk subhāṣita dataset (7,537 JSONL records) | Active (minimal) | data-reuser |
 | [article-comparison/](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison) | Cross-dictionary single-article study (4 finalists) | Complete | researcher |
 | [literature/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature) | Reference PDF/EPUB library + Markdown extractions + Lexicography-Manuals | Reference store | researcher |
-| [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static site built from research docs (zettelkasten), published to gasyoun.github.io | Active | maintainer |
+| [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static site built from research docs (zettelkasten); built and tested, **not deployed** (origin/gh-pages has no `research/` directory) — deploy is human-gated | Active | maintainer |
 | [epistemic_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/epistemic_dashboard) · [findings_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard) | Generated HTML dashboards over the governance registries below | Active | maintainer |
+| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | Generated HTML dashboard tracking PWG→RU translation progress (per-lane denominators), companion to the article site | Active | maintainer |
 
 ## 3. The governance / epistemic layer — the load-bearing part
 
@@ -83,9 +84,12 @@ each append-only:
 
 **Two dashboards render these** and are regenerated, not hand-edited:
 
-```powershell
-python epistemic_dashboard\build_epistemic_dashboard.py   # -> epistemic_dashboard/index.html
-python findings_dashboard\build_findings_data.py          # -> findings_dashboard/data.json + index.html
+```sh
+python epistemic_dashboard/build_epistemic_dashboard.py \
+  --dir . --side sanskrit \
+  --repo-url https://github.com/gasyoun/SanskritLexicography/blob/master \
+  --out epistemic_dashboard/epistemic.json   # all four flags are required
+python findings_dashboard/build_findings_data.py   # -> findings_dashboard/data.json + index.html
 ```
 
 The findings dashboard publishes to
@@ -220,9 +224,12 @@ Concurrent sessions (Claude *and* Codex) have collided in this exact tree before
 is a real static site built by
 [build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py)
 (via the `zettelkastenwiki` package, **not** Docusaurus/Observable) from
-[docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research);
-built output in `_site/` publishes to
-gasyoun.github.io/SanskritLexicography/research. Rebuild and test:
+[docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research).
+The site is **built and tested, not deployed**: origin/gh-pages has no
+`research/` directory, so nothing is live at
+gasyoun.github.io/SanskritLexicography/research — the deploy is human-gated
+(publish-safety pass below, then a human pushes the built `_site/` output).
+Rebuild and test:
 
 ```powershell
 python docs_site\build_site.py
@@ -244,7 +251,9 @@ material.
   [Uprava/PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md),
   and this repo's FINDINGS + FEATURES_INDEX before writing anything.
 - **"Who decides / what's next"** → [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
-- **Next-agent orientation for docs work** → [HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md).
+- **Next-agent orientation** → [docs/manuals/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md)
+  + the closest `.ai_state.md` ([HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md)
+  is retired, kept only as a pointer).
 - **Org-level conventions** (issue taxonomy, csl-orig workflow, `.ai_state.md`
   protocol) → the org
   [CLAUDE.md](https://github.com/gasyoun/github-spine/blob/main/CLAUDE.md), loaded

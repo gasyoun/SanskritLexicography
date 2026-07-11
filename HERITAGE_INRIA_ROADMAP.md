@@ -1,9 +1,10 @@
 # Sanskrit Heritage (INRIA) reuse roadmap
 
-_Created: 03-07-2026 · Last updated: 03-07-2026 (Phase 5 DICO gloss layer delivered — H106)_
+_Created: 03-07-2026 · Last updated: 11-07-2026_
 
 What of [sanskrit.inria.fr](https://sanskrit.inria.fr) (Gérard Huet's Sanskrit Heritage
-Platform) we already reuse, and the staged plan for the rest. Rulings by MG 03-07-2026
+Platform) we already reuse, and the staged plan for the rest. The Phase 5 DICO
+gloss layer was delivered on 03-07-2026 (H106). Rulings by MG 03-07-2026
 (interview in-session); authored by Fable 5 (`claude-fable-5`). Companion to
 [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md)
 — Heritage is the second mature external computational-Sanskrit stack after SCL.

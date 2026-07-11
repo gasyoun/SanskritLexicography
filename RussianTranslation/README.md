@@ -1,6 +1,6 @@
 # RussianTranslation — Sanskrit dictionaries into Russian, at scale
 
-_Created: 28-06-2026 · Last updated: 07-07-2026_
+_Created: 28-06-2026 · Last updated: 11-07-2026_
 
 This directory holds two independent machine-translation efforts that bring the
 great 19th-century Sanskrit dictionaries to Russian readers, plus the
@@ -198,9 +198,11 @@ inlines this; nominal windows run grammar **OFF** by default. Open extension
   refuses stale workflow artifacts before collect/gates/glue, preserves
   existing requeue files on stale refusal, and writes status/ledger artifacts
   for the dashboard.
-- [`src/pilot/nws_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nws_split.py)
-  audits NWS owner attribution with root-split sub-card filename handling;
-  missing raw/card files requeue, while cards with no NWS layer stay neutral.
+- [`src/pilot/nws_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/48ac903b4c5f1076fda86a22030e7cf65e5915e5/RussianTranslation/src/pilot/nws_split.py)
+  (retired in [PR #67](https://github.com/gasyoun/SanskritLexicography/pull/67);
+  link pinned to the last pre-retirement commit) audited NWS owner attribution
+  with root-split sub-card filename handling; missing raw/card files requeued,
+  while cards with no NWS layer stayed neutral.
 - [`src/synth_dispatch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_dispatch.py)
   is the only sanctioned way to run a multi-agent fan-out: ≤4 concurrency,
   10-minute output-file kill-guard, single-owner sealed outputs, watcher-safe

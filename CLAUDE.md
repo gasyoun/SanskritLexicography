@@ -17,9 +17,10 @@ code-free** (the earlier "no `.py`" framing is stale): several subprojects now
 carry substantial Python tooling — the two translation pipelines under
 [`RussianTranslation/src/`](RussianTranslation/src), the headword tooling in
 [`HeadwordLists/`](HeadwordLists), the site builder
-[`docs_site/build_site.py`](docs_site/build_site.py), the two dashboard
+[`docs_site/build_site.py`](docs_site/build_site.py), the three dashboard
 generators ([`epistemic_dashboard/`](epistemic_dashboard),
-[`findings_dashboard/`](findings_dashboard)) — plus a root
+[`findings_dashboard/`](findings_dashboard),
+[`progress_dashboard/`](progress_dashboard)) — plus a root
 [`requirements.txt`](requirements.txt). Treat the repo as **hybrid**: a
 data/docs workspace with live tooling embedded in the active subprojects, so
 "working in the codebase" spans inspecting/transforming text data, authoring
@@ -32,22 +33,28 @@ RussianTranslation gate selftests) and CI exercises them. CI
 ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) runs Markdown lint,
 Markdown link-check, YAML lint, a **Python lint job that now fires** (`.py`
 files exist — the earlier "never fire because no such files exist" is stale), a
-conditional JS lint, and a **RussianTranslation gates** job that compiles the
-pipeline scripts and runs their fixture selftests. The active pre-commit hooks
+conditional JS lint, a **RussianTranslation gates** job that compiles the
+pipeline scripts and runs their fixture selftests, and a **docs-site pytest**
+job that runs `docs_site/test_docs_site.py`. The active pre-commit hooks
 ([`.pre-commit-config.yaml`](.pre-commit-config.yaml)) are `check-yaml`,
 `end-of-file-fixer`, `trailing-whitespace` (markdown-aware), and
-`check-merge-conflict`. Match these when editing: no trailing whitespace,
-newline at EOF, valid YAML.
+`check-merge-conflict`, plus the local
+`russian-translation-review-changelog` guard
+(`review_changelog_guard.py --staged`). Match these when editing: no trailing
+whitespace, newline at EOF, valid YAML.
 
 ## HeadwordLists/ — naming and key semantics
 
-This is the analytical heart of the repo. Filenames encode source, key type,
-and count: `{DICT}-unique-{key1|key2}-{N}.txt`, where `N` is the entry count
-(also the line count). Other patterns: `{DICT}-fehlerhaft-{N}.txt` (German
-"erroneous" — flagged problem entries, e.g. [`HeadwordLists/PWG-fehlerhaft-1661.txt`](HeadwordLists/PWG-fehlerhaft-1661.txt),
+This is the analytical heart of the repo. The exports are split by era:
+[`HeadwordLists/then-2014/`](HeadwordLists/then-2014) is the frozen 2014-era
+snapshot, [`HeadwordLists/now-2026/`](HeadwordLists/now-2026) holds the current
+regenerated exports (slightly different counts). Filenames encode source, key
+type, and count: `{DICT}-unique-{key1|key2}-{N}.txt`, where `N` is the entry
+count (also the line count). Other patterns: `{DICT}-fehlerhaft-{N}.txt` (German
+"erroneous" — flagged problem entries, e.g. [`HeadwordLists/then-2014/PWG-fehlerhaft-1661.txt`](HeadwordLists/then-2014/PWG-fehlerhaft-1661.txt),
 which contain full XML records, not bare headwords), `SCH-accents-IAST-{N}.txt`
 (accented IAST forms), and cross-dictionary join files like
-[`HeadwordLists/mw-apte-mcdonell-hk.txt`](HeadwordLists/mw-apte-mcdonell-hk.txt)
+[`HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt`](HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt)
 (Harvard-Kyoto, sorted).
 
 **key1 vs key2 — choose deliberately:**
@@ -65,7 +72,7 @@ table in [`../CLAUDE.md`](../CLAUDE.md)).
 
 The org rule is "csl-orig files never have BOMs," but **that does not hold here**.
 These are exports from many sources: some have a UTF-8 BOM, some do not (e.g.
-[`HeadwordLists/MW-unique-key1-193978.txt`](HeadwordLists/MW-unique-key1-193978.txt)
+[`HeadwordLists/then-2014/MW-unique-key1-193978.txt`](HeadwordLists/then-2014/MW-unique-key1-193978.txt)
 **has** a BOM `EF BB BF`; the key2 sibling does **not**). Before transforming a
 file, check `head -c 3 file | xxd`, preserve the file's existing BOM state on
 write, and never silently add or strip one. All files are UTF-8.
@@ -117,7 +124,7 @@ editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
   `mw_ru` docs). Keep it lint-clean and link-check-clean (see CI above).
 - [`changelog.md`](changelog.md) uses dated maintenance snapshots; keep upcoming
   work under `[Unreleased]` until it gets a dated entry.
-- [`ROADMAP_2026_2027.md`](ROADMAP_2026_2027.md) frames the research direction
+- [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research direction
   (evidence-graded lexicography, csl-atlas review, paper pipeline P1–P6) and is
   the orientation document for how this repo connects to the broader project.
 - Per the global rule, render every path/URL as a clickable Markdown link in

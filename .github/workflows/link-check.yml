@@ -1,0 +1,30 @@
+name: Link check
+
+# Markdown link check, moved out of ci.yml (where it consumed ~47 min on every
+# push/PR with continue-on-error, i.e. zero per-push enforcement). Runs weekly
+# plus on manual dispatch; stays advisory (continue-on-error).
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  link-check:
+    name: Markdown link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: "yes"
+          use-verbose-mode: "yes"
+          config-file: ".github/mlc_config.json"
+        continue-on-error: true

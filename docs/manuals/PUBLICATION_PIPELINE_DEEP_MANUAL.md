@@ -125,7 +125,7 @@ pipeline data in `RussianTranslation/` — don't relocate them into `papers/`.
 
 Three different documents use "P1–P6" for **different things**:
 
-- [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)
+- [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
   Part III's paper table (P1 block economy · P2 sense inheritance · P3
   citation registers · P4 indigenous microstructure · P5 50k corrections ·
   P6 learner layer);

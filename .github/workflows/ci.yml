@@ -14,6 +14,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   markdown-lint:
     name: Markdown lint
@@ -28,17 +32,9 @@ jobs:
       - name: Lint markdown (warnings only)
         run: markdownlint-cli2 "**/*.md" "#node_modules" "#RussianTranslation/glossary/md" || echo "::warning::Markdown lint issues found"
 
-  link-check:
-    name: Markdown link check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: "yes"
-          use-verbose-mode: "yes"
-          config-file: ".github/mlc_config.json"
-        continue-on-error: true
+  # Markdown link check moved to .github/workflows/link-check.yml (weekly
+  # schedule + manual dispatch): it burned ~47 min on every push/PR while
+  # continue-on-error made it advisory-only — zero enforcement value per run.
 
   yaml-lint:
     name: YAML lint
@@ -216,6 +212,17 @@ jobs:
           python src/preflight_remaining_gates.py --release-dir "$RUNNER_TEMP/interop_fixture" --readiness-out "$RUNNER_TEMP/preflight_readiness_report.md" --skip-local-human-artifacts
           python src/make_edition_cut.py edition_fixture --cards src/fixtures/assembled_card.fixture.jsonl --release-root "$RUNNER_TEMP/release_fixture" --source-release "$RUNNER_TEMP/release_fixture/source"
           python src/validate_release.py "$RUNNER_TEMP/release_fixture/edition_fixture"
+
+  docs-site:
+    name: docs_site build test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: pytest docs_site/test_docs_site.py -q
 
   # Conditional JS lint
   js-lint:

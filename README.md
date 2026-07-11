@@ -1,6 +1,6 @@
 # SanskritLexicography
 
-_Created: 09-07-2026 · Last updated: 11-07-2026_
+_Created: 14-06-2026 · Last updated: 11-07-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -27,7 +27,17 @@ see [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/mas
 | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two independent AI translation pipelines: `mw_ru` (Monier-Williams → Russian) and `pwg_ru` (PWG/Böhtlingk-Roth → Russian/English), plus their prompts, audits, and reference-shelf harvests. See the pipeline pointers below. |
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](https://github.com/gasyoun/SanskritLexicography/blob/master/Syntax-Lectures/sanskrit_particles_explorer.html). |
 | [literature/md/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md) | Full-text markdown extractions of the research literature collection. See [literature/md/INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) for the cross-repo relevance map (sources tagged by which dictionary repo, corpus pipeline, or paper they serve). PDFs are not versioned; only the markdown index is tracked. |
-| [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md) | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes, referee reviews, and supporting CSV data for the A33–A43 manuscripts. |
+| [data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data) | Derived cross-dictionary datasets (headword-overlap matrix, csl-orig markup-tag census) with the generator scripts that produced them. |
+| [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static research-site builder (`build_site.py`, zettelkastenwiki) over [docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research), plus its pytest suite. Built and tested; not deployed. |
+| [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Draft of the English article-based monograph (book plan, Brill proposal, rights table, early chapters). |
+| [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary of Sanskrit (sorted by word ending; ~266,820 headwords). |
+| [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) | Böhtlingk *Indische Sprüche* subhāṣita dataset (7,537 JSONL records) with pointers to the canonical editions elsewhere. |
+| [article-comparison/](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison) | Single-headword comparison of dictionary articles across the CDSL corpus (verbatim, gloss-review, per-sense, and table views per word). |
+| [epistemic_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/epistemic_dashboard) | Generated HTML dashboard over the seven epistemic sibling registries (ASSUMPTIONS … GLOSSARY). Regenerated, not hand-edited. |
+| [findings_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard) | Generated HTML dashboard over [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (importance/staleness breakdowns, platform-liveness board), refreshed monthly. |
+| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | Generated HTML dashboard tracking PWG→RU translation progress (honest per-lane denominators), companion to the article site. |
+| [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) | Research roadmap covering csl-atlas review, publication plans, FAIR gaps, standards exports, and learner-layer work. |
 | [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md) | Provenance (source, date, producer, size) for the large reference assets — `CDSL-2025.pdf`, `DCS_statistical_evaluation.htm`, `DCS-Moniers-roots-w-references.html`, `helpmorphids.html`, `gasuns_cologne-zograf_2019.pdf`, and others. |
 
 ## Documentation map
@@ -37,7 +47,7 @@ Where to read what.
 **Orientation**
 
 - [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) — this file: overview and entry points.
-- [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md) — research direction, publication plan, FAIR/standards gaps.
+- [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) — research direction, publication plan, FAIR/standards gaps.
 - [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) — capability inventory (what exists across the ecosystem, with stable IDs).
 - [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) — what changed, by dated snapshot.
 
@@ -54,12 +64,24 @@ Where to read what.
   — teaching material and what's usable today. Русский.
 - [DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md)
   — dataset formats, encodings, traps, rights. English.
+- [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)
+  — subsystem deep manual for the two translation pipelines (`mw_ru`, `pwg_ru`). English.
+- [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md)
+  — subsystem deep manual for the headword exports, union, and comparison tooling. English.
+- [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md)
+  — subsystem deep manual for the paper pipeline (A-IDs, readiness, venues). English.
+
+Two thin root sheets index the manual set without duplicating it:
+[MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md)
+(for agents, English) and
+[MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md)
+(for humans, Русский).
 
 **Contributors & agents**
 
 - [CONTRIBUTING.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRIBUTING.md) — how to contribute.
 - [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md) — repo conventions for Claude Code (key1/key2, BOM caveat, external-refs-as-plain-text); defers ecosystem/taxonomy to the org-level CLAUDE.md one directory up.
-- [HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md) — orientation for the next agent continuing documentation work: conventions, link-sweep recipes, open gaps.
+- [HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md) — retired pre-H### orientation note, kept as a pointer to the current manuals and the session journal.
 - [CODE_OF_CONDUCT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CODE_OF_CONDUCT.md) — community expectations.
 
 **Epistemic registries** — the acts a FINDINGS log can't hold (relying,
@@ -89,10 +111,18 @@ disagreeing, not-yet-knowing, abandoning, reproducing, decaying, defining):
 
 The files in [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)
 are named to show both the dictionary/source and the kind of key exported. For
-example: `MW-unique-key1-193978.txt`, `MW-unique-key2-198220.txt`,
-`PWK-unique-key2-133741.txt`, `SCH-accents-IAST-20247.txt`,
-`mw-apte-mcdonell-hk.txt`, `sanhw1.xlsx`. The trailing number usually records
-the entry count in that export.
+example, in the frozen 2014-era snapshot
+[HeadwordLists/then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014):
+[MW-unique-key1-193978.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key1-193978.txt),
+[MW-unique-key2-198220.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key2-198220.txt),
+[PWK-unique-key2-133741.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PWK-unique-key2-133741.txt),
+[SCH-accents-IAST-20247.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/SCH-accents-IAST-20247.txt),
+[mw-apte-mcdonell-hk.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt).
+The trailing number usually records the entry count in that export. Current
+exports live in
+[HeadwordLists/now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026)
+with slightly different counts (e.g.
+[MW-unique-key1-194084.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/MW-unique-key1-194084.txt)).
 
 ### key1 and key2
 
@@ -134,7 +164,7 @@ The current roadmap frames the work around evidence-graded digital lexicography:
 - learner-facing tools should connect dictionary evidence with corpus frequency
   and grammatical information.
 
-See [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)
+See [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
 for the publication plan, FAIR/standards gaps, and proposed learner-layer work.
 
 ## Working with the data
@@ -148,11 +178,11 @@ preserve the existing state on write.
 
 Suggested entry points:
 
-1. `HeadwordLists/*unique-key1*.txt` for normalized matching tasks.
-2. `HeadwordLists/*unique-key2*.txt` for print-form and display tasks.
-3. [HeadwordLists/mw-apte-mcdonell-hk.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw-apte-mcdonell-hk.txt) for a ready-made comparison across major Sanskrit dictionary traditions.
+1. `HeadwordLists/now-2026/*unique-key1*.txt` for normalized matching tasks.
+2. `HeadwordLists/now-2026/*unique-key2*.txt` for print-form and display tasks.
+3. [HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt) for a ready-made comparison across major Sanskrit dictionary traditions.
 4. [Syntax-Lectures/sanskrit_particles_lectures.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Syntax-Lectures/sanskrit_particles_lectures.md) as the main teaching note for the particles material, and [Syntax-Lectures/sanskrit_particles_explorer.html](https://github.com/gasyoun/SanskritLexicography/blob/master/Syntax-Lectures/sanskrit_particles_explorer.html) in a browser for the interactive, student-facing version.
-5. [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md) to understand how this repository connects with csl-atlas, VisualDCS, csl-standards, and publication work.
+5. [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) to understand how this repository connects with csl-atlas, VisualDCS, csl-standards, and publication work.
 
 ## Contributing
 

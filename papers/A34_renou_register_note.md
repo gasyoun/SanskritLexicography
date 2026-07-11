@@ -7,6 +7,7 @@
 > Tagging built, audited, and reproducible across eight dictionaries; still needs the
 > EI/CII external validation pass on the épigraphique sample and a venue decision
 > (Lexikos / IJL / eLex) before submission.
+> **Verification companion:** [A34_corpus_absent_verification.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_corpus_absent_verification.md) — the 484 / 68.3 % corpus-absent headline reproduces exactly from the committed indices.
 
 ## Abstract
 

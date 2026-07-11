@@ -8,7 +8,7 @@ ranked optimizations, the decision taken, and the failures hit along the way.
 
 > Companion to [`PILOT_COST.md`](PILOT_COST.md) (the $/quota model) and
 > [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md) (the run loop).
-> Cross-reference: [`H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md`](H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md).
+> Cross-reference: [`H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md).
 
 ---
 
@@ -231,7 +231,7 @@ Finding-7 output (8 dups), PASSes the fixed output.
 - `pwg07` tagged `caus. 1/2/3`; glue → `tyaj.NESTED.md`, no duplicated senses.
 
 **Status: head lane LOCKED.** Production generator promoted to
-[`src/pilot/gen_opt_harness.py`](src/pilot/gen_opt_harness.py) (portable path).
+[`src/pilot/gen_opt_harness.py`](src/pilot/gen_opt_harness2.py) (portable path; retired — target is the successor `gen_opt_harness2.py`).
 Next: wire `audit_sense_dupes.py` into the run loop, then the real frequency-
 queue run with run-to-cap instrumentation.
 

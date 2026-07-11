@@ -1,5 +1,7 @@
 # Reusing & interlinking DSG (*Dictionary of Sanskrit Grammar*)
 
+_Created: 24-06-2026 · Last updated: 11-07-2026_
+
 **DSG** = K. V. Abhyankar, *A Dictionary of Sanskrit Grammar* (Gaekwad's Oriental Series 134,
 Baroda 1961) — **~4,000 technical grammatical terms**: every kṛt/taddhita **pratyaya**
 (`ghañ`, `ṇvul`, `kta`, `tal`, `matup`…), augment, substitute, Pāṇinian term, and grammarian /
@@ -8,7 +10,7 @@ Vākyapadīya, Aṣṭādhyāyī, Prātiśākhyas. Browsable at
 [samskrtam.ru/sanskrit-lexicon/dsg/](https://samskrtam.ru/sanskrit-lexicon/dsg/).
 
 It is the natural companion to the affix tooling here: those 27 affixes ARE DSG headwords, so a
-learner clicking `ghañ` in the [affix explorer](RussianTranslation/research/affix_explorer.html)
+learner clicking `ghañ` in the [affix explorer](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/affix_explorer.html)
 should land on its full Pāṇinian definition.
 
 ## Decisions (user, 2026-06-24)
@@ -38,12 +40,13 @@ Why SLP1 (`<k1>`) as the anchor key:
 
 Alternatives considered: per-term files `…/dsg/GaY.html` (more files, same effect — fine if you
 prefer it); a `?q=` search endpoint (needs a backend, links are less stable). The anchor scheme is
-the lowest-maintenance and is what [`build_dsg.py`](RussianTranslation/research/build_dsg.py) emits.
+the lowest-maintenance and is what [`build_dsg.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_dsg.py) emits.
 
-## Pipeline — [`build_dsg.py`](RussianTranslation/research/build_dsg.py)
+## Pipeline — [`build_dsg.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_dsg.py)
 
 1. **You drop** the CDSL DSG digitization (`<L>/<k1>/<k2>` `.txt`, like
-   [`pd.txt`](SanskritLexicography/../SanskritSpellCheck/external_src/pd/pd.txt)) under
+   `SanskritSpellCheck/external_src/pd/pd.txt` — a local, gitignored download in
+   the sibling clone of drdhaval2785/SanskritSpellCheck, not on GitHub) under
    `RussianTranslation/research/external/dsg.txt` (gitignored).
 2. `python build_dsg.py ingest external/dsg.txt` →
    - `dsg.json` — structured `{k1(slp1), term_iast, term_deva, body, slug}` per entry.
@@ -51,7 +54,7 @@ the lowest-maintenance and is what [`build_dsg.py`](RussianTranslation/research/
      deploy at `samskrtam.ru/sanskrit-lexicon/dsg/` (the "remake with stable links").
    - `dsg_affix_crosswalk.tsv` — affix pratyaya → DSG entry, **verified present**.
 3. Already shipped (no source needed): `python build_dsg.py anchors` →
-   [`affix_dsg_anchors.tsv`](RussianTranslation/research/affix_dsg_anchors.tsv) — the 27 affix
+   [`affix_dsg_anchors.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/affix_dsg_anchors.tsv) — the 27 affix
    pratyayas → their SLP1 anchor + DSG URL (the crosswalk seed; verified against `dsg.json` at ingest).
 
 ## Interlinking the four surfaces
@@ -97,3 +100,5 @@ Interlink wired (affix side): `affix_pedagogy.json` now carries `dsg_url` per ma
 the **affix explorer / flashcards** + the **WhitneyRoots affix view** ([PR #21](https://github.com/gasyoun/WhitneyRoots/pull/21)) render a
 `📖 DSG entry` deep-link. Remaining: resolve `kan`/`valac` variants; wire the reader + pwg_ru
 grammar-term tokens to `dsg.json`; deploy `dsg_anchored.html`.
+
+_Dr. Mārcis Gasūns_

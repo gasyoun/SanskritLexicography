@@ -44,8 +44,8 @@ Conventions to keep when touching data:
   indexes; the root README and CLAUDE.md are English.
 - **Refer to files in other repos as plain text, not links** — a link to a file
   that isn't in this repo fails CI link-check. Note it as external instead.
-- **Run the link sweep** before opening the PR (recipe in
-  [HANDOFF.md](HANDOFF.md)); fix any broken relative link.
+- **Run a link check** before opening the PR (CI runs a Markdown link-check
+  job too); fix any broken relative link.
 - Add a `changelog.md` `[Unreleased]` entry for anything notable.
 
 ## Hygiene
@@ -58,5 +58,5 @@ Conventions to keep when touching data:
 ## See also
 
 - [CLAUDE.md](CLAUDE.md) — repo conventions (key1/key2, BOM, external-refs rule).
-- [HANDOFF.md](HANDOFF.md) — documentation-development orientation and verification recipes.
+- [HANDOFF.md](HANDOFF.md) — retired orientation note, now a pointer to the current manuals.
 - [README.md](README.md) — the Documentation map (where to read what).

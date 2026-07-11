@@ -1,6 +1,6 @@
 # pwg_ru — Russian reuse-source map
 
-_Created: 05-07-2026 · Last updated: 06-07-2026_
+_Created: 05-07-2026 · Last updated: 11-07-2026_
 
 Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_ru`
 (PWG→RU) pipeline, and how to consume each — written so no future session
@@ -27,8 +27,15 @@ via `corpus_gate.lookup()` / `INDEP` + `REF`:
 | `kow` | Коссович (1854), WIL-seeded | REF (secondary reference) | 13 488 |
 
 Rights: koch/smirnov/fri approved-modern (copyright approval on file);
-kna/kow public-domain. Printed sources mirrored 1:1 at
-[`src/printed-dictionaries/`](src/printed-dictionaries/) (`KCH`, `KNA`, `KOW`).
+kna/kow public-domain. The digitized records for all five live in the sibling
+SamudraManthanam repo as `web/corpus_builder/jsonl/` files (`kochergina`,
+`kossovich`, `knauer`, `frish`, `slovar-smirnova` — verified 11-07-2026),
+consumed here via [`src/build_src.py`](src/build_src.py). An earlier claim that
+the printed sources were "mirrored 1:1 at `src/printed-dictionaries/` (KCH,
+KNA, KOW)" was wrong for this repo: no such directory exists (not tracked, not
+on disk, not gitignored), and no printed-page (scan) mirror was located in
+SamudraManthanam either — the printed-page mirror location is currently
+unverified/local-only.
 
 ## 2. Specialist name-glossaries → `src/corpus_gate.py` (SPECIALIST tier)
 
