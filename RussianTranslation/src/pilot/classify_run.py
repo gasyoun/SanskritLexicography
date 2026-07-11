@@ -11,7 +11,7 @@ hand-counted from transcript log lines. Since H462 the harness summary RETURNS
 kill_timeouts / conn_errors / heal_calls / kill_bisect_blocked, so the whole adjudication
 is computable from the payload:
 
-  clean            null_keys empty AND budget_kill_switch not tripped.
+  clean            null_keys and partial_keys empty AND budget_kill_switch not tripped.
   infra-confounded conn_errors >= 1, OR kill_timeouts >= max(3, 25%% of agents_spent) —
                    the recurring-transport / mass-kill-timeout signature of a degraded
                    generation environment (H442 launches 1-3). An infra-confounded window
@@ -65,6 +65,7 @@ def classify(summary):
     nulls = summary.get('null_keys')
     if nulls is None:
         nulls = [None] * (summary.get('null') or 0)
+    partials = summary.get('partial_keys') or []
     tripped = bool(summary.get('budget_kill_switch_tripped'))
     kill_ceiling = max(INFRA_KILL_MIN, int(math.ceil(INFRA_KILL_FRAC * agents)))
     signals = {
@@ -82,11 +83,13 @@ def classify(summary):
         'heal_calls': summary.get('heal_calls'),
         'kill_bisect_blocked': summary.get('kill_bisect_blocked'),
         'null_cards': len(nulls),
+        'partial_cards': len(partials),
+        'partial_keys': list(partials),
         'budget_kill_switch_tripped': tripped,
         'infra_kill_threshold': kill_ceiling,
     }
     reasons = []
-    if not nulls and not tripped:
+    if not nulls and not partials and not tripped:
         reasons.append('all cards returned, budget switch untripped')
         if conns or kills:
             reasons.append('non-blocking infra noise: %d conn-error(s), %d kill-timeout(s)'
@@ -103,8 +106,9 @@ def classify(summary):
         reasons.append('degraded generation environment — result says nothing about the '
                        'harness code; do not tune budgets on this run (H442 rule)')
         return 'infra-confounded', reasons, signals
-    reasons.append('%d null card(s), tripped=%s, with NO infra signal (%d conn-errors, '
-                   '%d kill-timeouts < %d)' % (len(nulls), tripped, conns, kills, kill_ceiling))
+    reasons.append('%d null card(s), %d partial card(s), tripped=%s, with NO infra signal '
+                   '(%d conn-errors, %d kill-timeouts < %d)' %
+                   (len(nulls), len(partials), tripped, conns, kills, kill_ceiling))
     reasons.append('suspect the harness itself: kill gate, heal budget, schema, or key matching')
     return 'code-failure', reasons, signals
 
