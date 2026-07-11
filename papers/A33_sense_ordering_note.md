@@ -50,7 +50,12 @@ largely settled on frequency/salience-first ordering for learner-facing works (A
 Rundell 2008) — exactly the split our Vedic-density discriminator recovers empirically
 between the philological and the pedagogical camps. The microstructure vocabulary is
 Hausmann and Wiegand's (1989); the Sanskrit lexicographic tradition the European
-dictionaries drew on is surveyed by Vogel (1979). That PWG and MW behave as "the same
+dictionaries drew on is surveyed by Vogel (1979). Field-lexicography practice converges
+on the same discipline from the other end: the SIL manual insists that sense structure —
+above all the homonymy-vs-polysemy split that governs how senses are grouped — be decided
+empirically from a natural-text corpus rather than by introspection (Coward & Grimes 2000,
+§6.3), the stance this note operationalizes at corpus scale for the ordering question.
+That PWG and MW behave as "the same
 animal" (§3.1) is expected rather than surprising: MW's dependence on the Petersburg
 lexicon is philologically established (Zgusta 1988; re-examined by Hanneder 2020), so
 their shared ordering regime is one more inherited convention — measured here for the
@@ -200,6 +205,9 @@ Apte, Vaman Shivram. 1890. *The Practical Sanskrit-English Dictionary.* Poona. �
 
 Atkins, B. T. Sue, and Michael Rundell. 2008. *The Oxford Guide to Practical
 Lexicography.* Oxford: Oxford University Press.
+
+Coward, David F., and Charles E. Grimes. 2000. *Making Dictionaries: A Guide to
+Lexicography and the Multi-Dictionary Formatter.* Waxhaw, NC: SIL International.
 
 Hanneder, Jürgen. 2020. "Woher hat er das? Zum Charakter des *Sanskrit-English
 Dictionary* von Monier-Williams." *Zeitschrift der Deutschen Morgenländischen

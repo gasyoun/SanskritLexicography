@@ -125,7 +125,9 @@ testbed; the evidence-graph thesis stated; roadmap of the book. (~15–20 pp.)
 
 **Part II — Macrostructure: the shape of the dictionary**
 - Ch. 3 ← **A40** — coverage and growth of the headword inventory; the corpus-grounding
-  bridge (dictionary ↔ DCS).
+  bridge (dictionary ↔ DCS). _Documentary-lexicography baseline for the root- vs
+  lexeme-oriented headword contrast: Coward & Grimes 2000 §4.6/§6.1 (already wired into
+  A40 §1) — carry the citation into the chapter at conversion._
 - Ch. 4 ← **A06** — *Order is the dictionary*: the kośa macrostructural type — the book's
   most original European/indigenous contrast.
 
@@ -137,7 +139,9 @@ testbed; the evidence-graph thesis stated; roadmap of the book. (~15–20 pp.)
   sense-*ordering* material (genetic vs historical, PWG/MW vs Apte/Kochergina — reframed per
   the crosswalk as an empirical test of Apresjan's ordering principle against the European
   Sanskrit family, not a restatement of it) as the second half, "senses: inheritance and
-  order." Collapses the book to **14 chapters** — see §4/§9 below.
+  order." Collapses the book to **14 chapters** — see §4/§9 below. _Documentary-lexicography
+  baseline for the homonymy-vs-polysemy / sense-grouping contrast: Coward & Grimes 2000 §6.3
+  (already wired into A33 §1) — carry the citation into the chapter at conversion._
 - Ch. 7 ← **A04** — the indigenous entry: recovering the kośa/Pāṇinian apparatus on its own
   terms (the "zero means nothing" doctrine).
 - Ch. 8 ← **A35** — comparative derivation: Pāṇinian *vyutpatti* across ten lexica.
