@@ -9,6 +9,55 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-07-11
+
+### Added — publication-pipeline deep manual (H608)
+- New [`docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md):
+  subsystem deep manual for the publication layer —
+  [`papers/`](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
+  lifecycle (stable A-IDs, readiness scale, the scaffold→referee→author-pass
+  skill chain), the M01 Brill/De Gruyter book build (article→chapter recipe,
+  rights-table trigger rule, FAIR/DOI critical path as of 11-07-2026), and
+  [`docs_site/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site)
+  build/test/deploy state (built + tested, **not yet deployed** — no
+  `research/` on `gh-pages`). Router row added, PROFILE deep-manual queue row
+  flipped, metadoc revision logged. Third item of the H604 queue; per
+  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
+
+## [1.5.2] - 2026-07-11
+
+### Added — RussianTranslation deep manual (H606)
+- New [`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md):
+  first subsystem deep manual per the
+  [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
+  queue — mw_ru covered as a finished-pipeline post-mortem, pwg_ru as the live
+  operator procedure (production window step-by-step with traps inline, lanes +
+  medium50 pause state, kill-gate mechanics, RU/EN parity contract, 216-script
+  census with destructive-on-rerun table, data-assets/rights boundary).
+  Fact-checked against sources; router row, PROFILE queue flip, and metadoc
+  revision row in the same change. Fable 5 (`claude-fable-5`), 11-07-2026.
+
+## [1.5.1] - 2026-07-11
+
+### Fixed — FINDINGS.md duplicate section keys (H616)
+- Repaired the seven accidentally duplicated `§N` citation keys found by the
+  H604 fact-check: the later twin of each pair renumbered to a fresh key with a
+  one-line tombstone under the renamed heading — §60→§70 (pwg_ru TM composite
+  grade), §62→§71 (PWG case-government census), §63→§72 (VedaWeb `id_gra` =
+  GRA `<L>`), §64→§73 (VedaWeb license fields), §65→§74 (ls-graph degeneracy
+  for MW), §69→§75 (Devībhāgavata not on GRETIL). The second "§56" was a
+  verbatim double-append of §68 (spellchecker landscape, PRs #305/#307) and was
+  removed with a tombstone under §68. Header max-number marker corrected
+  (§65→§75); stale citations of the renamed twins repointed in
+  [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md),
+  [`ROADMAP_VEDAWEB_REUSE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md),
+  [`RussianTranslation/PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md),
+  [`RussianTranslation/USE_CASES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/USE_CASES.md)
+  and `RussianTranslation/.ai_state.md`; duplication caveats dropped from
+  [`docs/manuals/MAINTAINER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) §3
+  and [`docs/manuals/RESEARCHER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md) §5;
+  metadoc backlog item 4 closed.
+
 ## [1.5.0] - 2026-07-11
 
 ### Added — audience manuals

@@ -27,20 +27,24 @@ index/hard-rules at root.
 
 ## Improvement backlog (ranked)
 
-1. ⬜ Subsystem deep manuals per the
+1. ✅ Subsystem deep manuals per the
    [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
-   queue — H606 (RussianTranslation), H608 (papers/book/docs_site) remain;
-   ✅ H607 (HeadwordLists) shipped 11-07-2026 as
-   [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md).
+   queue — all three shipped 11-07-2026: H606
+   ([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)),
+   H607
+   ([HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md)),
+   H608
+   ([PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md)).
 2. ⬜ Refresh the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) on the next
    monthly pass — they are staleness-prone by design; verify against
    `.ai_state.md` first.
 3. ⬜ Consider an external-contributor manual (how to submit corrections
    upstream) once the Cologne batched-PR cadence stabilizes.
-4. ⬜ FINDINGS.md carries seven accidentally duplicated `§N` pairs
-   (§56, §60, §62–65, §69 — H604 fact-check, 11-07-2026): repair by renaming
-   the *later* twin of each pair to a fresh number and leaving a tombstone
-   note, then drop the caveat lines from MAINTAINER §3 / RESEARCHER §5.
+4. ✅ FINDINGS.md carried seven accidentally duplicated `§N` pairs
+   (§56, §60, §62–65, §69 — H604 fact-check, 11-07-2026). Repaired 11-07-2026
+   (H616): later twins renumbered §70–§75 with tombstone notes (the later
+   "§56" was a verbatim copy of §68 and was removed), stale citations
+   repointed, caveat lines dropped from MAINTAINER §3 / RESEARCHER §5.
 
 ## Known limitations
 
@@ -55,6 +59,9 @@ index/hard-rules at root.
 |---|---|---|
 | 10-07-2026 | Set created (4 manuals + router + root pair) | H479/H535 |
 | 11-07-2026 | H604 consolidation (see Provenance) | H604 |
-| 11-07-2026 | First subsystem deep manual added (HEADWORDLISTS_DEEP_MANUAL.md, EN; router gains a "Subsystem deep manuals" table; PROFILE H607 row flipped done) — Fable 5 `claude-fable-5` | H607 |
+| 11-07-2026 | FINDINGS duplicate-§N caveat dropped from MAINTAINER §3 / RESEARCHER §5 after the H616 key repair; backlog item 4 closed | H616 |
+| 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
+| 11-07-2026 | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) added (papers · M01 book · docs_site) + router row + PROFILE queue flip — Fable 5 (`claude-fable-5`) | H608 |
+| 11-07-2026 | HEADWORDLISTS_DEEP_MANUAL.md added (queue complete); router gains a "Subsystem deep manuals" table; PROFILE H607 row flipped done; backlog item 1 closed — Fable 5 `claude-fable-5` | H607 |
 
 _Dr. Mārcis Gasūns_
