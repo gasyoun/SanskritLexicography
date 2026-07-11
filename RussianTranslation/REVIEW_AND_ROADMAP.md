@@ -1,5 +1,7 @@
 # pwg_ru — full review and roadmap (2026-06-16)
 
+_Created: 09-07-2026 · Last updated: 09-07-2026_
+
 A candid retrospective of the corpus-first build and a phased plan forward.
 Companion docs: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (5-lens external
 review), [APRESJAN.md](APRESJAN.md) (theory), [HARVEST.md](HARVEST.md) (the harvest
@@ -150,3 +152,5 @@ machine; frequency-first is how the bulk should actually run.
 Then per card: **harvest → translate (Sonnet) → F12 gate + Opus judge → collect +
 provenance-stamp → review queue**, drawing from the freq manifest. Review the core
 tranche together; decide the tail strategy at the reassess checkpoint.
+
+_Dr. Mārcis Gasūns_
