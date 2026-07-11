@@ -108,9 +108,10 @@ def chunked(seq, n):
 def existing_subcards(head):
     prefix = safe_name(head) + '~~h0_zz_'
     keys = []
-    if not os.path.isdir(OUT):
+    gen_dir = os.path.join(SRC, 'pilot', 'input')  # _pilot_gen_merged.py's OUT, not this module's
+    if not os.path.isdir(gen_dir):
         return keys
-    for name in sorted(os.listdir(OUT)):
+    for name in sorted(os.listdir(gen_dir)):
         if name.startswith(prefix) and name.endswith('.raw.txt'):
             keys.append(name[:-len('.raw.txt')])
     return keys
