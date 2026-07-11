@@ -23,7 +23,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 38 data assets · 14 tools · 4 external stacks.
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 39 data assets · 14 tools · 4 external stacks.
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -104,6 +104,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | 🟢 E32 | `correction_events_release.csv` | Correction event log: 50,953 events × 43 dicts × 210 correctors, 2014–2026 | ~52k · 58.7 MB | `1a1bd21d909e0bb0, 2014-03-18, form, apes, pain, ghad → ghaṭ` | 06/26 | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
 | 🟡 E38 | `<ls>` citation-frequency graph | Which classical texts each dict quotes via `<ls>`, canonicalized to shared nodes across 11 dicts; 828,505 resolved citations, 912 texts. MW non-text markers filtered | 912 texts · 1,707 edges · ~150 KB | `pwg   Mahābhārata   39130` (edge) · `Mahābhārata   56818   8   MAHĀBHĀRATA; MBh; …` (node) | 07/26 | [csl-atlas/data/citations](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations) |
 | ⚪ E39 | markup-tag census | Markup-tag frequency census over all 44 csl-orig/v02 dicts: tag × dict counts + per-1,000-entry rates, 96 distinct tags, 17.5M tag hits, with under-marking verdicts ([report](https://github.com/gasyoun/SanskritLexicography/blob/master/data/MARKUP_TAG_CENSUS_CSLORIG_2026.md)) | 671 rows · 18 KB | `sch   29125   <ab>   2   0.07` (an abbreviation-tagging start that never happened) | 07/26 | [data/markup_tag_census.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv) |
+| ⚪ E40 | headword overlap matrix + unique counts | Pairwise headword overlap over the 15-dict union (C13): 105 dict pairs with shared/union/Jaccard + per-dict unique inventories ([findings](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md); MW∩PWG=94,753 — the figure once mislabeled as "the union"; BHS 58.7% unique, CCS 0.6%) | 105 pairs + 15 dicts · 3 KB | `CAE   CCS   27008   40211   0.6717` (the max-Jaccard pair) | 07/26 | [data/headword_overlap_matrix.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv) |
 
 ### F · Text collections & other
 
@@ -296,6 +297,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **E40** — headword pairwise-overlap matrix + unique counts over the 15-dict union (H684): 105 pairs, Jaccard, per-dict unique inventories; resolves the stale "union 94,753" figure (= MW∩PWG). |
 | 07/26 | **E39** — markup-tag frequency census over all 44 csl-orig/v02 dicts (H683): 96 distinct tags, per-1,000-entry rates, under-marking verdicts ([TSV](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv) + [report](https://github.com/gasyoun/SanskritLexicography/blob/master/data/MARKUP_TAG_CENSUS_CSLORIG_2026.md)). |
 | 07/26 | **E38** — `<ls>` citation-frequency graph (csl-atlas, [PR #220](https://github.com/sanskrit-lexicon/csl-atlas/pull/220)): 828,505 canonicalized citations → 912 texts across 11 dicts. |
 | 07/26 | **Initial index** — 44 dictionaries · 20 interfaces (16 live) · 38 datasets · 14 tools + 4 external stacks catalogued, each with a real example, a severity tier, a first-introduced date and a stable per-section ID. |
