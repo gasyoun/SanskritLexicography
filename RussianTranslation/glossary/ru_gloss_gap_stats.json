@@ -1,0 +1,313 @@
+{
+  "corpus_rows": 1093391,
+  "corpus_distinct_keys": 191436,
+  "rows_empty_ru": 0,
+  "kinds": {
+    "translation": 992265,
+    "commentary": 101126
+  },
+  "hapax_keys": 112782,
+  "hapax_rate_pct": 58.91,
+  "surface_keys_with_ru": 191436,
+  "lemma_layer_keys": 40370,
+  "root_layer_keys": 2021,
+  "token_coverage_pct": {
+    "dcs_only": 79.12,
+    "plus_vidyut": 86.53,
+    "plus_marker": 87.07
+  },
+  "dcs_freq_lemmas_slp1": 90349,
+  "dcs_freq_meta": {
+    "source": "VisualDCS dcs_full.sqlite token table",
+    "total_tokens": 5688416,
+    "distinct_lemmas": 90349
+  },
+  "per_dict_coverage": {
+    "AP": {
+      "headwords": 88867,
+      "surface": 18727,
+      "lemma": 13359,
+      "root": 734,
+      "any": 21386,
+      "any_pct": 24.07
+    },
+    "GRA": {
+      "headwords": 11108,
+      "surface": 6620,
+      "lemma": 7931,
+      "root": 649,
+      "any": 8526,
+      "any_pct": 76.76
+    },
+    "MW": {
+      "headwords": 194084,
+      "surface": 35388,
+      "lemma": 36220,
+      "root": 897,
+      "any": 43287,
+      "any_pct": 22.3
+    },
+    "PWG": {
+      "headwords": 106082,
+      "surface": 23595,
+      "lemma": 24150,
+      "root": 886,
+      "any": 27780,
+      "any_pct": 26.19
+    },
+    "PWK": {
+      "headwords": 151349,
+      "surface": 27546,
+      "lemma": 27795,
+      "root": 928,
+      "any": 32430,
+      "any_pct": 21.43
+    },
+    "SKD": {
+      "headwords": 40817,
+      "surface": 6469,
+      "lemma": 2238,
+      "root": 140,
+      "any": 6713,
+      "any_pct": 16.45
+    },
+    "VCP": {
+      "headwords": 48636,
+      "surface": 13954,
+      "lemma": 12892,
+      "root": 190,
+      "any": 15313,
+      "any_pct": 31.48
+    },
+    "VEI": {
+      "headwords": 3704,
+      "surface": 2130,
+      "lemma": 2214,
+      "root": 29,
+      "any": 2346,
+      "any_pct": 63.34
+    }
+  },
+  "gap_keys_total": 242726,
+  "gap_keys_in_dcs": 36974,
+  "gap_list_file": "glossary/ru_gloss_gaps.tsv",
+  "gap_head_top20": [
+    {
+      "key": "tEla",
+      "dicts": [
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 2109
+    },
+    {
+      "key": "sEnya",
+      "dicts": [
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 1494
+    },
+    {
+      "key": "vESampAyana",
+      "dicts": [
+        "MW",
+        "VCP"
+      ],
+      "dcs_count": 1326
+    },
+    {
+      "key": "dEtya",
+      "dicts": [
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 1258
+    },
+    {
+      "key": "dEva",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 1226
+    },
+    {
+      "key": "ganDaka",
+      "dicts": [
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 1192
+    },
+    {
+      "key": "aNgula",
+      "dicts": [
+        "GRA",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 1054
+    },
+    {
+      "key": "SEla",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 1036
+    },
+    {
+      "key": "mUzA",
+      "dicts": [
+        "AP",
+        "MW",
+        "SKD"
+      ],
+      "dcs_count": 946
+    },
+    {
+      "key": "vESya",
+      "dicts": [
+        "GRA",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 931
+    },
+    {
+      "key": "ekEka",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 925
+    },
+    {
+      "key": "sEnDava",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 918
+    },
+    {
+      "key": "sOmya",
+      "dicts": [
+        "AP",
+        "GRA",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 917
+    },
+    {
+      "key": "OzaDa",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK"
+      ],
+      "dcs_count": 905
+    },
+    {
+      "key": "prajYApAramitA",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK"
+      ],
+      "dcs_count": 881
+    },
+    {
+      "key": "SanEs",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 837
+    },
+    {
+      "key": "Endra",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 818
+    },
+    {
+      "key": "mAkzika",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 793
+    },
+    {
+      "key": "vESvAnara",
+      "dicts": [
+        "AP",
+        "GRA",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP"
+      ],
+      "dcs_count": 783
+    },
+    {
+      "key": "kOrava",
+      "dicts": [
+        "AP",
+        "MW",
+        "PWG",
+        "PWK",
+        "VCP",
+        "VEI"
+      ],
+      "dcs_count": 736
+    }
+  ]
+}
