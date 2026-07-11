@@ -1,10 +1,10 @@
-# LEXICOGRAPHY_MANUALS.meta — metadoc for the 37-work manuals library
+# LEXICOGRAPHY_MANUALS.meta — metadoc for the 38-work manuals library
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 Directory-level metadoc (per the org metadoc convention) for
 [literature/md/Lexicography-Manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md/Lexicography-Manuals)
-— the 37-file library of lexicography, corpus-linguistics, and historical-linguistics
+— the 38-file library of lexicography, corpus-linguistics, and historical-linguistics
 manuals, handbooks, and papers in Markdown conversions.
 
 ## Purpose
@@ -51,6 +51,7 @@ carry no metadata — the identifications below are from internal evidence).
 | [The Bloomsbury Companion to Lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/The%20Bloomsbury%20Companion%20to%20Lexicography.md) | Jackson (ed.) 2013 | The field's research map: Kilgarriff on corpora, Lew on sense individuation, Piotrowski on theory-status, user research |
 | [internet lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/internet%20lexicography.md) | Klosa-Kückelhaus (ed.) 2024, **De Gruyter LSM 164**, OA | Same-series benchmark; graphs/RDF/versioning/crowdsourcing already standard — the direct stress test of M01's novelty claim |
 | [The Gentle Art of Lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/The%20Gentle%20Art%20of%20Lexicography.md) | Partridge 1963 (Deutsch) | Practitioner craft-memoir; alphabetical-order pathology (*set*), register scale, cognate-grouping fork |
+| [making-dictionaries-mdf-coward-grimes-2000.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/making-dictionaries-mdf-coward-grimes-2000.md) | Coward & Grimes 2000 (SIL International) | ⚠️ SIL all-rights-reserved — notes/paraphrase digest, not full-text; field-linguistics fieldwork methodology (root- vs. lexeme-orientation, homonymy/polysemy tests, lexical functions, folk taxonomy, parts-of-speech pitfalls) — independent non-Indological baseline, see [`SIL_MDF_ECOSYSTEM_CORRELATION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SIL_MDF_ECOSYSTEM_CORRELATION.md) for the CDSL crosswalk |
 
 ### Comparative lexicographical traditions (close-read)
 
