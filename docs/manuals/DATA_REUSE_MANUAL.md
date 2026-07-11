@@ -1,6 +1,6 @@
 # Data-Reuse Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 For the **programmer / data engineer / NLP researcher** who wants to *consume*
 the data here in scripts. This manual is about the committed, reusable datasets —
@@ -59,8 +59,8 @@ Naming: `{DICT}-unique-{key1|key2}-{N}.txt`, one headword per line, sorted.
   [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014);
   the current regeneration is in
   [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026).
-  They have **drifted** — e.g. AP 36,030 → 88,867 (+146.6%); across 9 comparable
-  lists 605,813 → 733,617 (+21.1%). See
+  They have **drifted** — e.g. AP key1 36,030 → 88,869 (+146.7%); across the 18
+  comparable lists 1,055,081 → 1,206,384 (+14.3%). See
   [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md).
   Compare **by set**, not raw line-diff; the 2014 key2 is legacy numeric
   transliteration (`am2s4a` = aṃśa), so key2 then-vs-now is a format migration.
@@ -111,7 +111,9 @@ imports the TMX once the release clears.
   [boesp1](https://github.com/sanskrit-lexicon-scans/boesp1); `Spr. N` citation
   resolution is **already shipped** in csl-orig, do not rebuild it. Only
   `translation_de` exists (no RU/EN).
-- **Reverse dictionary master list** — the 266,819-line master word list
+- **Reverse dictionary master list** — the 266,820-line master word list
+  (266,819 CRLF-terminated + 1 unterminated final line, per
+  [SCHEMA.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md))
   (`ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt`, tab-separated
   `SOURCE_ABBREV<TAB>word`, reverse-sorted) is **local-only / gitignored in the
   public repo** — not in a clone. What *is* committed and reusable: its column
@@ -124,15 +126,18 @@ imports the TMX once the release clears.
   [ReverseDictionary/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/README.md).
 - **Catalan-Pujol spine** —
   [HeadwordLists/Catalan-Pujol/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/Catalan-Pujol),
-  an external Sanskrit–Catalan lemma list (61,266 lines, accented IAST **with
-  BOM**, `√`-roots + udātta + compound hyphens) plus its CDSL/DCS coverage
+  an external Sanskrit–Catalan lemma list (61,267 lines — filename count; the
+  last line is unterminated, so `wc -l` undercounts by one — accented IAST
+  **with BOM**, `√`-roots + udātta + compound hyphens) plus its CDSL/DCS coverage
   analysis. **Normalize heavily before matching.**
 
 ## 5. What NOT to reuse (or reuse with care)
 
-- **The giant reference HTML/binary at the root** —
+- **The giant reference HTML/binary** —
   `DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
-  (~16 MB), `helpmorphids.html`, `sanhw1.xlsx` (41 MB): stream with CLI tools /
+  (~16 MB), `helpmorphids.html` at the root and
+  [HeadwordLists/sanhw1.xlsx](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/sanhw1.xlsx)
+  (41 MB): stream with CLI tools /
   a library; **never** open in an editor or the Read tool. Provenance is in
   [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md).
 - **The gitignored translation store / TM / dashboards** — regenerable, local-only,
