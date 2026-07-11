@@ -13,9 +13,10 @@ folder (the Brill/De Gruyter monograph M01), and
 (handoff H608). Audience: a maintainer or agent session doing paper/book/site
 work here. Orientation-level coverage of the same ground is in
 [RESEARCHER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md);
-the translation pipelines that *generate* much of the paper data are H606
-territory ([RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)),
-and the headword analytics are H607's
+the translation pipelines that *generate* much of the paper data have their
+own deep manual
+([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md),
+H606), and the headword analytics are H607's
 ([HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)).
 
 All counts and states below verified against the tree on **11-07-2026**.
@@ -372,9 +373,11 @@ Finishing any unit of publication work means updating the registries in the
 
 - [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) — repo-wide conventions, CI, registries upkeep.
 - [RESEARCHER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md) — the thesis, what's citable, orientation-level paper pipeline.
-- H606 deep manual (RussianTranslation pipelines) and H607 deep manual
-  (HeadwordLists analytics) — queued siblings per
+- [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)
+  (H606, done 11-07-2026) — the mw_ru/pwg_ru pipelines whose data the
+  A42/A43/A49/A51/A52 papers consume.
+- H607 deep manual (HeadwordLists analytics) — still queued per
   [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md);
-  they own the data-production side that this manual's papers consume.
+  will own the data-production side behind A40.
 
 _Dr. Mārcis Gasūns_
