@@ -36,10 +36,11 @@ index/hard-rules at root.
    `.ai_state.md` first.
 3. ⬜ Consider an external-contributor manual (how to submit corrections
    upstream) once the Cologne batched-PR cadence stabilizes.
-4. ⬜ FINDINGS.md carries seven accidentally duplicated `§N` pairs
-   (§56, §60, §62–65, §69 — H604 fact-check, 11-07-2026): repair by renaming
-   the *later* twin of each pair to a fresh number and leaving a tombstone
-   note, then drop the caveat lines from MAINTAINER §3 / RESEARCHER §5.
+4. ✅ FINDINGS.md carried seven accidentally duplicated `§N` pairs
+   (§56, §60, §62–65, §69 — H604 fact-check, 11-07-2026). Repaired 11-07-2026
+   (H616): later twins renumbered §70–§75 with tombstone notes (the later
+   "§56" was a verbatim copy of §68 and was removed), stale citations
+   repointed, caveat lines dropped from MAINTAINER §3 / RESEARCHER §5.
 
 ## Known limitations
 
@@ -54,5 +55,6 @@ index/hard-rules at root.
 |---|---|---|
 | 10-07-2026 | Set created (4 manuals + router + root pair) | H479/H535 |
 | 11-07-2026 | H604 consolidation (see Provenance) | H604 |
+| 11-07-2026 | FINDINGS duplicate-§N caveat dropped from MAINTAINER §3 / RESEARCHER §5 after the H616 key repair; backlog item 4 closed | H616 |
 
 _Dr. Mārcis Gasūns_

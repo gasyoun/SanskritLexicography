@@ -97,9 +97,7 @@ working notes/reviews live in
 
 The nine root registries are not bookkeeping — they *are* the reproducibility
 apparatus a DSH/lexicography reviewer asks for and rarely gets. Cite findings by
-their stable `§N` number (caveat: an 11-07-2026 audit found seven accidentally
-duplicated `§N` pairs pending repair — quote the claim text alongside the `§N`;
-the sections cited below are unique):
+their stable `§N` number:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — measured, evidence-backed facts (live dashboard at
