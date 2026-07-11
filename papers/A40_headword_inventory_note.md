@@ -73,8 +73,12 @@ A dictionary collection is usually described by a single number: "194,000 headwo
 "36,000 entries". That number is a snapshot of one edition at one moment, and it conflates
 two things a lexicographer actually cares about — how the inventory is *changing*, and how
 much of it is *grounded in attested language* rather than inherited from earlier lexica or
-generated as nonce compounds. The Cologne Digital Sanskrit Dictionaries are an unusually
-clean testbed for separating these. The same ~36 dictionaries are marked up in a uniform
+generated as nonce compounds. What even counts as a headword — whether a compound or
+derived form earns its own entry or is subordinated under a root — is itself a structural
+decision of documentary lexicography (Coward & Grimes 2000, §6.1 on headword-status
+criteria, §4.6 on root- vs lexeme-oriented database organization), and it silently
+conditions every inventory count compared here. The Cologne Digital Sanskrit Dictionaries
+are an unusually clean testbed for separating these. The same ~36 dictionaries are marked up in a uniform
 XML, each entry carrying a normalised computational key (`<k1>`) and a closer-to-print key
 (`<k2>`); and a frozen 2014 export of those keys has been preserved alongside the
 continuously-edited live source, giving a genuine twelve-year baseline rather than a
@@ -534,6 +538,10 @@ once minted.)*
 - Cologne Digital Sanskrit Dictionaries (CDSL), Universität zu Köln —
   [sanskrit-lexicon.uni-koeln.de](https://www.sanskrit-lexicon.uni-koeln.de/); source markup at
   [sanskrit-lexicon/csl-orig](https://github.com/sanskrit-lexicon/csl-orig).
+- Coward, D. F. & C. E. Grimes. 2000. *Making Dictionaries: A Guide to Lexicography and
+  the Multi-Dictionary Formatter.* Waxhaw, NC: SIL International.
+  ([sil.org/resources/archives/5741](https://www.sil.org/resources/archives/5741); §4.6
+  root- vs lexeme-oriented organization, §6.1 headword-status criteria.)
 - Hellwig, O. *Digital Corpus of Sanskrit (DCS)* — DCS-2021 attested-lemma list via
   [dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json)
   (CC BY); DCS-2026 release via the companion paper A38.
