@@ -9,6 +9,19 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.5.2] - 2026-07-11
+
+### Added — RussianTranslation deep manual (H606)
+- New [`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md):
+  first subsystem deep manual per the
+  [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
+  queue — mw_ru covered as a finished-pipeline post-mortem, pwg_ru as the live
+  operator procedure (production window step-by-step with traps inline, lanes +
+  medium50 pause state, kill-gate mechanics, RU/EN parity contract, 216-script
+  census with destructive-on-rerun table, data-assets/rights boundary).
+  Fact-checked against sources; router row, PROFILE queue flip, and metadoc
+  revision row in the same change. Fable 5 (`claude-fable-5`), 11-07-2026.
+
 ## [1.5.1] - 2026-07-11
 
 ### Fixed — FINDINGS.md duplicate section keys (H616)
