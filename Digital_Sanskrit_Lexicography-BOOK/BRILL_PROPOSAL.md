@@ -1,6 +1,6 @@
 # Book proposal — *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph*
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 10-07-2026_
 
 Draft proposal for the single-authored monograph **M01**, built to the
 [Brill Book Proposal Guidelines](https://brill.com/fileasset/downloads_products/brill_bookproposal_guidelines.pdf)
@@ -77,8 +77,9 @@ meta-lexicographers, and digital humanists first, and to Indologists second.
 
 ## 5. Table of contents & per-chapter summaries
 
-The 15 sole-authored articles are the chapters; the **glue** — Introduction, five part-opening
-bridges, Conclusion, a unified method appendix, and the index — is new writing. Each chapter's
+The 15 sole-authored articles map onto **14 chapters** (Ch. 6 merges two of them, per the
+10-07-2026 ruling below); the **glue** — Introduction, five part-opening bridges, Conclusion,
+a unified method appendix, and the index — is new writing. Each chapter's
 source article ID (from [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md))
 and current readiness are noted.
 
@@ -111,35 +112,39 @@ thesis stated; a roadmap of the book.
 - **Ch. 5 · The Block Economy of Monier-Williams** *(← A16, 5/5).* The European entry
   anatomized: 286,561 entries, a nine-type block typology, a hand-adjudicated gold benchmark
   (G5: P 0.86 / R 0.87 / F1 0.88, κ 0.82).
-- **Ch. 6 · Sense Inheritance** *(← A02, 4/5).* Condensation, not inflation: how senses
-  survive and compress across the 1822–1957 European family; the citation advantage.
-- **Ch. 7 · Genetic, Not Historical** *(← A33, 4/5).* What sense *ordering* encodes:
-  PWG/MW sense-1 = oldest 73.5% (chance floor 52.7%, τ 0.375) vs Apte/Kochergina; Vedic
-  density PWG 23.4% ≈ MW 24.8% ≫ AP90 2.3%.
-- **Ch. 8 · Grammar Without Tags** *(← A04, 4/5).* Recovering the indigenous verbal-root
+- **Ch. 6 · Senses: Inheritance and Order** *(← A02 + A33, 4/5; merged 10-07-2026 —
+  H505's literature crosswalk found the sense-*ordering* half's original framing
+  restated an already-solved problem in Apresjan's *Systematic Lexicography*, MG ruling:
+  fold into this chapter rather than stand alone).* First half (← A02): condensation, not
+  inflation — how senses survive and compress across the 1822–1957 European family; the
+  citation advantage. Second half (← A33, reframed as an empirical test of Apresjan's
+  genetic-ordering principle against the European Sanskrit family): PWG/MW sense-1 =
+  oldest 73.5% (chance floor 52.7%, τ 0.375) vs Apte/Kochergina; Vedic density PWG 23.4% ≈
+  MW 24.8% ≫ AP90 2.3%.
+- **Ch. 7 · Grammar Without Tags** *(← A04, 4/5).* Recovering the indigenous verbal-root
   *kośa* microstructure on its own terms — the "zero means nothing" doctrine.
-- **Ch. 9 · Pāṇinian Derivation Across Ten Lexica** *(← A35, 4/5).* Comparative *vyutpatti*:
+- **Ch. 8 · Pāṇinian Derivation Across Ten Lexica** *(← A35, 4/5).* Comparative *vyutpatti*:
   ~67k derivations, the tradition agreeing 90–100% on affixes, Wilson 1832 the disjoint
   outlier (a partly measurement-driven artifact, carefully separated).
 
 ### Part IV — Mediostructure & the citation apparatus
 
-- **Ch. 10 · Pointing Inward** *(← A05, 4/5; absorbs A03/A07).* Cross-reference graphs and
+- **Ch. 9 · Pointing Inward** *(← A05, 4/5; absorbs A03/A07).* Cross-reference graphs and
   descent — the stemmatics of the dictionary family.
-- **Ch. 11 · Two Citation Registers** *(← A08, 4/5).* European `<ls>` vs indigenous *iti*:
+- **Ch. 10 · Two Citation Registers** *(← A08, 4/5).* European `<ls>` vs indigenous *iti*:
   citation density and rank-order re-sort the 44 dictionaries entirely.
-- **Ch. 12 · What the Tradition Cites** *(← A50, data 4/5).* The `<ls>` citation-frequency
+- **Ch. 11 · What the Tradition Cites** *(← A50, data 4/5).* The `<ls>` citation-frequency
   graph: 828,505 citations across 11 dicts canonicalized to 912 shared text-nodes — the
   flagship network figure.
-- **Ch. 13 · Apparatus, Not Errors** *(← A10, 4/5).* Shared inheritance as a forensic signal:
+- **Ch. 12 · Apparatus, Not Errors** *(← A10, 4/5).* Shared inheritance as a forensic signal:
   shared-error ≈ 0%, citation-order agreement 0.811 — MW inherited the Petersburg lexicon.
 
 ### Part V — The living dictionary
 
-- **Ch. 14 · Renou's Registers** *(← A34, 4/5).* Register/usage labels as an axis orthogonal
+- **Ch. 13 · Renou's Registers** *(← A34, 4/5).* Register/usage labels as an axis orthogonal
   to the historical states; 68.3% of épigraphique headwords are corpus-absent — vocabulary
   invisible to corpus-only methods.
-- **Ch. 15 · Fifty Thousand Corrections** *(← A12, 4/5).* The error typology of twelve years
+- **Ch. 14 · Fifty Thousand Corrections** *(← A12, 4/5).* The error typology of twelve years
   of collaborative maintenance: 50,953 correction events × 43 dicts × 210 correctors — a
   field-unique dataset. **Sole-authored (confirmed 08-07-2026: byline is Gasūns; Funderburk
   and Patel appear as correctors within the dataset and as acknowledgees, not co-authors).**
@@ -160,8 +165,8 @@ crosswalk toward PROV-O / TEI `@cert`.
   manuscript stage.]
 - **Figures & tables:** ~30–40 (each anchored to a committed dataset; see
   [BOOK_PLAN.md §6](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)).
-  Flagship: the `<ls>` citation network (Ch. 12), the MW block-economy figures (Ch. 5), the
-  derivation-agreement figure (Ch. 9).
+  Flagship: the `<ls>` citation network (Ch. 11), the MW block-economy figures (Ch. 5), the
+  derivation-agreement figure (Ch. 8).
 - **Data availability:** every chapter's evidence is openly committed; datasets are being
   deposited to Zenodo with DOIs and CITATION.cff (the FAIR sprint — the book's true critical
   path, [BOOK_PLAN.md §9](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)).

@@ -7,6 +7,19 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Changed — 10-07-2026 (MG ruling on H505's Ch. 7 `@DECIDE`)
+
+- **Ch. 7 (A33) folded into Ch. 6 (A02) as its second half**, "Senses: Inheritance and
+  Order" — MG resolved H505's crosswalk fork as option (b). The book collapses from 15 to
+  **14 chapters**; every chapter after the old Ch. 6 renumbers down by one (old Ch. 8→7,
+  9→8, 10→9, 11→10, 12→11, 13→12, 14→13, 15→14). Updated:
+  [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
+  §0/§3/§4/§9, [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+  §5/§6, and the two written sample chapters' internal cross-references
+  ([ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)).
+  The standalone-corpus-methods-chapter fork ([LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md))
+  remains open and unaffected.
+
 ### Added — 10-07-2026 (H505 execution)
 
 - [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md):
