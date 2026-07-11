@@ -1,6 +1,6 @@
 # Researcher Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 For the **lexicographer, digital-humanities researcher, or historian of
 dictionaries** who wants to understand the intellectual programme here, cite its
@@ -97,7 +97,9 @@ working notes/reviews live in
 
 The nine root registries are not bookkeeping — they *are* the reproducibility
 apparatus a DSH/lexicography reviewer asks for and rarely gets. Cite findings by
-their stable `§N` number:
+their stable `§N` number (caveat: an 11-07-2026 audit found seven accidentally
+duplicated `§N` pairs pending repair — quote the claim text alongside the `§N`;
+the sections cited below are unique):
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — measured, evidence-backed facts (live dashboard at
