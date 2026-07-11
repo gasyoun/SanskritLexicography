@@ -9,6 +9,8 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-07-11
+
 ### Added — audience manuals
 - New [`docs/manuals/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals):
   four deep, standalone manuals for distinct audiences — maintainer, researcher,
@@ -25,6 +27,21 @@ then **cut a new version every time the changelog is updated** (promote
   the repo now carries substantial Python (263 tracked `.py`, a root
   `requirements.txt`) and CI's Python lint + RussianTranslation gates do fire.
   Follow-up flagged under H535 (already noted in the maintainer manual).
+
+### Added — other highlights since v1.4.0 (synthesized from git log)
+- Public PWG→RU translation **progress dashboard**
+  ([PR #315](https://github.com/gasyoun/SanskritLexicography/pull/315)).
+- pwg_ru article site: `<ab>`/`<ls>` tooltips + RU-column abbreviation purity per
+  [`RussianTranslation/ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)
+  ([PR #308](https://github.com/gasyoun/SanskritLexicography/pull/308)); multi-second
+  freeze on large articles fixed ([PR #320](https://github.com/gasyoun/SanskritLexicography/pull/320)).
+- M01 literature crosswalk + 37-manual library metadoc, H505
+  ([PR #319](https://github.com/gasyoun/SanskritLexicography/pull/319)).
+- FINDINGS §66–§69 (QL SLP1 truncation, PWG article-size confound, spellchecker
+  landscape, DBhP absence from GRETIL) and DEAD_ENDS/GAPS/ASSUMPTIONS episteme
+  entries for the Sundara apparatus and F4-DCS edition-mismatch dead ends.
+- Editorial rule applied repo-wide: drop `ё` (keep the всё/все distinction), H543
+  ([PR #324](https://github.com/gasyoun/SanskritLexicography/pull/324)).
 
 ## [1.1.5] - 2026-07-03
 
