@@ -401,7 +401,7 @@ Walked end to end on a single edition edge, the framework turns "these two dicti
 are similar" into three independent, separately-bounded, source-linked statements that
 happen to agree. That is the move the empirical chapters of this book — on kośa
 macrostructure (Ch. 4), the Monier-Williams entry (Ch. 5), sense inheritance (Ch. 6),
-indigenous grammar (Ch. 8), and cross-reference lineage (Ch. 10) — each rely on, and
+indigenous grammar (Ch. 7), and cross-reference lineage (Ch. 9) — each rely on, and
 which this chapter states once so that they can assume it.
 
 ## References
@@ -457,11 +457,12 @@ Indology and Tamil Studies, University of Cologne.
 
 **Sibling chapters (this book).** *Order Is the Dictionary* (Ch. 4, kośa macrostructure;
 instantiates §3.10); *The Block Economy of Monier-Williams* (Ch. 5, the European entry
-anatomized; §3.8's microstructural object at full depth); *Sense Inheritance* (Ch. 6;
-instantiates §3.3); *Grammar Without Tags* (Ch. 8, indigenous verbal-root microstructure;
-§3.9); *Pointing Inward* (Ch. 10, cross-reference lineage and descent; §3.1, §3.6, §3.8,
-whose headword-level corpus figures §3.2 anchors); *Two Citation Registers* (Ch. 11,
-citation registers; §3.4, likewise). Each instantiates one or more of the metrics in §3
+anatomized; §3.8's microstructural object at full depth); *Senses: Inheritance and Order*
+(Ch. 6, merges the former sense-inheritance and sense-ordering articles; instantiates §3.3);
+*Grammar Without Tags* (Ch. 7, indigenous verbal-root microstructure; §3.9); *Pointing
+Inward* (Ch. 9, cross-reference lineage and descent; §3.1, §3.6, §3.8, whose headword-level
+corpus figures §3.2 anchors); *Two Citation Registers* (Ch. 10, citation registers; §3.4,
+likewise). Each instantiates one or more of the metrics in §3
 under the discipline of §§4–5; where this chapter quotes a sibling's headline figure
 (§3.2, §3.4), the sibling chapter owns the full result and this chapter owns only the
 metric's definition.
