@@ -1,13 +1,16 @@
 # SanskritLexicography workspace manual — for agents
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 Human twin (Russian):
 [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md).
-Authored under H479 (Fable 5 `claude-fable-5`). This manual is an **index +
-hard-rules sheet**, not a replacement for the canonical docs it points at —
-when this file and a canonical doc disagree, the canonical doc wins; fix this
-file in the same pass.
+Authored under H479 (Fable 5 `claude-fable-5`); consolidated under H604. This
+manual is an **index + hard-rules sheet**, not a replacement for the canonical
+docs it points at — when this file and a canonical doc disagree, the canonical
+doc wins; fix this file in the same pass. The **canonical audience-manual set**
+lives in [docs/manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals)
+(router: [docs/manuals/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md)) —
+depth belongs there, this sheet stays thin.
 
 ## 1. Session entry protocol
 
@@ -80,9 +83,9 @@ file in the same pass.
 - Huge files (`DCS_statistical_evaluation.htm` ~75 MB, error lists) — stream,
   never Read whole.
 
-## 4. Current state snapshot (10-07-2026; verify against .ai_state before trusting)
+## 4. Current state snapshot (11-07-2026; verify against .ai_state before trusting)
 
-- Store `src/pwg_ru_translated.jsonl` (gitignored): **11,275 rows** vs
+- Store `src/pwg_ru_translated.jsonl` (gitignored): **11,317 rows** vs
   ~120,173 headword cards total. Engine audited **GO** (H188). Verb drain
   (H151) unaffected and runnable; nominal medium lane **paused** on
   H442/H462.
