@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
@@ -23,11 +23,11 @@ review provenance (see the
 and
 [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)).
 
-**Correction to the old framing.** The repo-level
+**The hybrid framing.** The repo-level
 [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md)
-still says "no source code (no `.py`…)". That is **stale**: the *root* is data +
-Markdown, but several subprojects now carry substantial Python — the two
-translation pipelines in
+says the same since 10-07-2026 (the older "no source code / no `.py`" wording
+is gone): the *root* is data + Markdown, but several subprojects carry
+substantial Python — the two translation pipelines in
 [RussianTranslation/src/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src),
 the headword tooling in
 [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists),
@@ -40,7 +40,7 @@ live tooling embedded in the active subprojects.
 
 | Directory | What | State | Primary reader |
 |---|---|---|---|
-| [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production**, ~106k headwords) + grammar/TM assets. ~271k files. | Active | maintainer + researcher |
+| [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production**, ~106k headwords) + grammar/TM assets. 591 tracked files (+ a large gitignored local store/TM not in a clone). | Active | maintainer + researcher |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) | Headword exports across ~16 CDSL dictionaries; key1/key2 semantics; comparison + union tooling | Active | data-reuser |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Brill book draft (2 of ~10 chapters + plan/proposal/rights) | Early | researcher |
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A33–A43) | Active | researcher |
@@ -60,7 +60,10 @@ each append-only:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — the empirical registry. **Schema per finding:** a `### §N` heading (the
-  number is the stable citation, never reused/shifted — append-only), the
+  number is the stable citation, never deliberately reused/shifted —
+  append-only; caveat: a 11-07-2026 audit found seven accidentally duplicated
+  §N pairs (§56/§60/§62–65/§69), pending repair — when citing, quote the claim
+  text alongside the §N), the
   **claim** in bold with a colour dot (🔴 important · 🟠 medium · 🟡 minor),
   then `Evidence:` (a number / file+line), `Implication:` (what to do), and a
   blockquoted `Source` line tagged `— repo · date`. **No HTML, ever** — use a
@@ -200,11 +203,16 @@ Concurrent sessions (Claude *and* Codex) have collided in this exact tree before
 ## 7. CI, pre-commit, releases
 
 - **CI** ([.github/workflows/ci.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)):
-  Markdown lint + Markdown link-check + YAML lint. (Python/JS lint jobs are
-  conditional; they may now fire given the added `.py` — keep tooling importable.)
+  Markdown lint + Markdown link-check + YAML lint + a Python lint job that
+  **does fire** (`.py` files exist) + a conditional JS lint + a
+  **RussianTranslation gates** job that compiles the pipeline scripts and runs
+  their fixture selftests — keep the tooling importable and the gate selftests
+  green.
 - **Pre-commit** ([.pre-commit-config.yaml](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)):
   `check-yaml`, `end-of-file-fixer`, `trailing-whitespace` (markdown-aware),
-  `check-merge-conflict`.
+  `check-merge-conflict`, plus the local
+  `russian-translation-review-changelog` guard
+  (`review_changelog_guard.py --staged`).
 - **Releases:** promote [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md)
   `[Unreleased]` → `[X.Y.Z] - DATE`, annotated tag `vX.Y.Z`, `gh release create`.
   Do **not** tag releases unprompted — a human drives release timing.
