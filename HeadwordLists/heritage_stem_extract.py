@@ -13,7 +13,6 @@ import sys, os, re, glob
 sys.stdout.reconfigure(encoding='utf-8'); sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 MIRROR_DICO = os.path.join(HERE, "heritage_mirror", "DICO")
-OUT = os.path.join(HERE, "then-2014", "..", "heritage_current_stems.txt")
 OUT = os.path.normpath(os.path.join(HERE, "heritage_current_stems.txt"))
 
 ANCHOR_RE = re.compile(r'<a class="navy" name="([^"]*)"')

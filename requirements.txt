@@ -4,3 +4,22 @@ zettelkastenwiki @ git+https://github.com/gasyoun/ZettelkastenWiki@481a3da
 
 # ACC x NCC works-catalogue P1 fuzzy crosswalk (Tier D edit-distance)
 rapidfuzz
+
+# Unconditional top-level imports across tracked scripts
+requests
+indic-transliteration
+rdflib
+numpy
+matplotlib
+scikit-learn
+vidyut
+pytest
+
+# Optional extras (guarded/lazy imports — install on demand):
+# pyshacl
+# pymorphy3
+# torch
+# transformers
+# unbabel-comet
+# xlrd
+# openpyxl

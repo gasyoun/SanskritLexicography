@@ -190,7 +190,7 @@ these sense(s), tag verbatim, invent nothing"* directive per head-part. Re-split
 yields collision-free canonical tags (`pwg00→1, pwg01→2, pwg07→9a, pwg08→9b, pwg09→9c,9d,
 pwg16→19a/b/c, pwg17→19d/e/f`) — the two `<div n="2">` letter-blocks are now sub-senses of 9
 and 19, never colliding. Added a `--keys=` re-queue filter to
-[`gen_opt_harness.py`](src/pilot/gen_opt_harness.py) and re-ran the 11 affected cards
+[`gen_opt_harness.py`](src/pilot/gen_opt_harness2.py) and re-ran the 11 affected cards
 (369,877 tok, 5 min, 0 dropouts). **sense-dupes gate → PASS**; `pwg01` no longer fabricates
 sub-letters; `pratyupa` coverage also recovered. The directive adds no run-time cost.
 

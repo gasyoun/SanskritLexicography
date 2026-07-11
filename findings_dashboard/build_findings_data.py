@@ -104,7 +104,7 @@ def rx(pattern, text):
 def collect_metrics():
     m = {}
     m['dcs_cdsl_linkage_pct'] = rx(
-        r'\(([\d.]+)%\) linked to CDSL',
+        r'\(([\d.]+)%\) linked to wf0',
         read_source('csl-apidev/simple-search/dcs_xref/readme.md',
                     'https://raw.githubusercontent.com/sanskrit-lexicon/csl-apidev/master/simple-search/dcs_xref/readme.md'))
     m['glossary_vidyut_coverage_pct'] = rx(

@@ -1,5 +1,7 @@
 # PD — *An Encyclopaedic Dictionary of Sanskrit on Historical Principles*
 
+_Created: 24-06-2026 · Last updated: 11-07-2026_
+
 **PD** (CDSL code) = the **Deccan College** *Encyclopaedic Dictionary of Sanskrit on
 Historical Principles* — not a bilingual gloss dictionary but a large historical
 thesaurus that arranges each word's senses **in chronological order of attestation**
@@ -23,7 +25,8 @@ thesaurus that arranges each word's senses **in chronological order of attestati
 ## Local copy — already downloaded, do NOT re-fetch from Cologne
 
 The CDSL PDScan text is **already on disk** (downloaded in another session):
-[`SanskritSpellCheck/external_src/pd/pd.txt`](../SanskritSpellCheck/external_src/pd/pd.txt)
+`SanskritSpellCheck/external_src/pd/pd.txt` — a local, gitignored download in
+the sibling clone of drdhaval2785/SanskritSpellCheck (not on GitHub)
 — 55 MB, **107,630 `<L>` records**, 879,172 lines, standard csl `<L>/<k1>/<k2>/<h>` markup
 (header: *DFG-Sanskrit-Projekt 2010, PD1-8_FINAL, 2011-10-14*). Use this copy; do not
 re-download from `sanskrit-lexicon.uni-koeln.de`. (The `SanskritSpellCheck/o_vs_O/output/PD.txt`
@@ -37,7 +40,7 @@ files are detector outputs, not the source.)
 - **CDSL = the usable feed today.** Standard `<L>` markup + downloadable XML means PDScan
   drops into the existing csl tooling (same as PWG/MW). If PD is ever wanted as a
   Sanskrit-side sense/chronology cross-check (its historical-principles sense ordering
-  is directly relevant to our [sense-ordering study](RussianTranslation/research/HANDOFF_sense_ordering.md)),
+  is directly relevant to our [sense-ordering study](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/HANDOFF_sense_ordering.md)),
   **start from PDScan/2020**.
 - **KoshaSHRI = the authority + recency check.** As the publisher's own edition it is the
   reference for resolving a doubtful PDScan reading and for picking up volumes digitized
@@ -48,6 +51,8 @@ files are detector outputs, not the source.)
 
 _Sources: [KoshaSHRI About](https://koshashri-dc.ac.in/about) · Deccan College Sanskrit &
 Lexicography dept · CDSL [PDScan/2020](https://sanskrit-lexicon.uni-koeln.de/scans/PDScan/2020/web/index.php).
-PD is **not** part of the Petersburg supplement chain ([DICTIONARY_CHAIN.md](RussianTranslation/DICTIONARY_CHAIN.md));
+PD is **not** part of the Petersburg supplement chain ([DICTIONARY_CHAIN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DICTIONARY_CHAIN.md));
 it is an independent Sanskrit historical dictionary tracked here for its sense-ordering
 evidence and as a future Sanskrit-side cross-check._
+
+_Dr. Mārcis Gasūns_

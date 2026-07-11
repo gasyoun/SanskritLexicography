@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 10-07-2026_
+_Created: 06-07-2026 · Last updated: 11-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -8,7 +8,7 @@ Mārcis Gasūns's докторская defense at the Institute of Linguistics, 
 supersedes the 1-line M01 stub in
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) and expands
 the 10-chapter sketch in
-[SanskritLexicography/ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)
+[SanskritLexicography/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
 Part III.
 
 ---
@@ -48,7 +48,7 @@ first, the language second.
 
 ## 1. The organizing thesis (the book's spine)
 
-From [ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md)
+From [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
 Part II, confirmed by MG:
 
 > A digital dictionary is not a text but a **layered evidence graph**. Every lexicographic

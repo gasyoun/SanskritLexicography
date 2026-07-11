@@ -22,10 +22,10 @@ from vidyut.kosha import Kosha
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 G = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
+# Default: the vidyut kosha data inside the sibling kosha repo
+# (GitHub/kosha/data/vidyut/kosha); override with argv[1].
 DEFAULT_KOSHA = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', '..', 'AppData', 'Local', 'Temp', 'claude',
-    'C--Users-user-Documents-GitHub',
-    'c939e6f9-2b2a-45d0-864d-09d57e9a0e34', 'scratchpad', 'vidyut_data', 'kosha'))
+    HERE, '..', '..', '..', 'kosha', 'data', 'vidyut', 'kosha'))
 
 def pos_of(entry):
     t = type(entry).__name__

@@ -71,7 +71,7 @@ Not in H321 scope (still open): the 🟠 broken-validator items, `supersedes` st
 
 - **Cross-builder Unicode key mismatch** — `build_dcs_freq*` (`norm_lemma`, no NFC) vs `build_corpus_lexicon` (`form_key`) vs `build_dcs_renou` (raw CoNLL-U lemma). Three "co-keyed" tables normalized three ways → the same lemma counts as two. *Fix: one shared normalizer + NFC pass.*
 - **Silent lemma loss on genre join-key miss** — [build_dcs_freq_dims.py:133](src/build_dcs_freq_dims.py). A text whose name doesn't normalize-match gets zero genre attribution, indistinguishable from the intended register-less tail. *Fix: log unmatched `text_id`s.*
-- **Homograph Ru-gloss attribution is winner-take-all + nondeterministic tie order** — [build_rollup_glossaries.py:60](research/… → src/build_rollup_glossaries.py) `most_common` sorts by count only; equal-count lemmas ordered by file order. *Fix: stable tiebreak; split near-tied distributions.*
+- **Homograph Ru-gloss attribution is winner-take-all + nondeterministic tie order** — [build_rollup_glossaries.py:60](src/build_rollup_glossaries.py) `most_common` sorts by count only; equal-count lemmas ordered by file order. *Fix: stable tiebreak; split near-tied distributions.*
 - **Citation index dedup semantics disagree across two code paths** — [build_citation_index.py:136](src/build_citation_index.py) vs `occurrence_stats()`; `CITATION_SOURCES.md` and `UNCOVERED_SOURCES.md` can disagree on coverage. *Fix: single source of truth for coverage.*
 - ✅ **`ls_resolver` Ṛgveda/Atharva disambiguation is substring-based** — [ls_resolver.py](src/ls_resolver.py). H321: fixed (anchored `_is_rv_prefix`; bare excepts now surface via `_warn_swallowed`) — see the H321 table above.
 

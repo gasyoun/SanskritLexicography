@@ -1,6 +1,6 @@
 # FL5 — what "text signal" means for an attested sense, and why the churn happened
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 11-07-2026_
 
 Companion to the S10 audit
 [`ARCHITECTURE_AUDIT_2026-07-02.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ARCHITECTURE_AUDIT_2026-07-02.md)
@@ -64,7 +64,7 @@ senses):
 | after this PR | **6** | every one a genuine `{%…%}` meaning gloss marked attested with **no** citation — the real review target |
 
 The requeue set is provably unchanged. Same-base before/after on
-[`wf_output.sc.pat.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/wf_output.sc.pat.json):
+`wf_output.sc.pat.json` (local-only, gitignored):
 suspicious fires **7 → 3**, review-queue keys **26 → 24**, requeue set **byte-identical**
 (12 keys). On `wf_output.sc.vas.json` (already clean of this flag) everything is identical.
 

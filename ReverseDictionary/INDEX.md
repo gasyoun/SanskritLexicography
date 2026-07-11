@@ -1,6 +1,6 @@
 # File Index — ReverseDictionary
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 11-07-2026_
 
 Full inventory of every file under this directory (413 files), classified by relevance to the reverse Sanskrit dictionary project. See [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/README.md) for the narrative overview, use cases, and the 2-volume book plan. `.mdx` column marks whether a converted Markdown/MDX sibling now exists next to the source (produced this session for CORE/RELATED files under 3MB; see README §Conversion for what was intentionally skipped and why).
 
@@ -165,7 +165,7 @@ Full inventory of every file under this directory (413 files), classified by rel
 | [Devanagari Sorting Process.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/Devanagari%20Sorting%20Process.txt) | 424B | .txt |  |
 | [Devanagari-Scheme.pdf](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/Devanagari-Scheme.pdf) | 63.5KB | .pdf | ✅ |
 | [EndrAbArhaspatya.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/EndrAbArhaspatya.txt) | 98.4KB | .txt |  |
-| [helpmorphids.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/helpmorphids.txt) | 523.6KB | .txt |  |
+| helpmorphids.txt — not in the repo (stale row; the related existing asset is the differently-formatted root [helpmorphids.html](https://github.com/gasyoun/SanskritLexicography/blob/master/helpmorphids.html)) | — | .txt |  |
 | [IAST-hyphenation_b7.xlsm](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/IAST-hyphenation_b7.xlsm) | 13.0MB | .xlsm |  |
 | [issue-246.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/issue-246.txt) | 118.8KB | .txt |  |
 | [kaka.PNG](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/kaka.PNG) | 61.9KB | .png |  |

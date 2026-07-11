@@ -51,10 +51,12 @@ mw-apte-mcdonell-hk.txt                no N; Harvard-Kyoto; MW ∪ Apte ∪ Macd
 
 - **`N` is the true entry count** — verified this pass on 7 files across all
   families (key1, key2, fehlerhaft, accents, both prefix-count externals):
-  Python line iteration equals `N` exactly in every case. `wc -l` reports
-  `N − 1` because the last line has no trailing newline — that off-by-one is
-  why prose in older docs sometimes cites one less (e.g. "61,266 lines" for
-  the 61,267-entry Catalan file). Trust the filename.
+  Python line iteration equals `N` exactly in every case. In the `then-2014/`
+  files `wc -l` reports `N − 1` because their last line has no trailing
+  newline — that off-by-one is why prose in older docs sometimes cites one
+  less (e.g. "61,266 lines" for the 61,267-entry Catalan file). All 23
+  `now-2026/` exports **do** end with a trailing newline, so `wc -l` = `N`
+  exactly there. Trust the filename.
 - **key1** = normalized machine key (raw `<k1>`, accent-stripped). Use for
   matching, dedup, joins. **key2** = print/citation form (keeps `/` udātta,
   `-`/`—` compound markers, `(...)`, `*`, `˚`). Use for editorial review,
@@ -210,7 +212,8 @@ its cause.
 [union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md):
 **323,425** headwords across all 15 csl-orig dicts (`slp1, iast, n_dicts,
 dicts, gender, fem_fold`), after auto-folding 237 gender-confirmed
-`-inī`→`-in` feminines; 180,989 headwords in ≥2 dicts, 142,673 singletons.
+`-inī`→`-in` feminines; post-fold, 180,804 headwords in ≥2 dicts and
+142,621 singletons (measured on the shipped `union_headwords.tsv`).
 The remaining editor worklists: 3,995 ranked `-ā/-ī` fold candidates (the 426
 low-confidence ones gloss-screened down to **7** to eyeball), plus per-dict
 alternate/variant candidates in `f_candidates/` (MW: 5,036 fem↔masc pairs,
@@ -316,7 +319,9 @@ Cologne). The uncovered residue is bucketed in
 
 ## 11. Traps checklist (the ones that actually bite)
 
-1. Filename `N` is the true count; `wc -l` = `N − 1` (§1).
+1. Filename `N` is the true count; in `then-2014/` files `wc -l` = `N − 1`
+   (no trailing newline), while all 23 `now-2026/` exports end with one, so
+   `wc -l` = `N` there (§1).
 2. BOM is inconsistent — 6 files have it; check + preserve (§4).
 3. key1 joins, key2 displays — never the reverse (§1, §5).
 4. 2014 key2 = mixed legacy conventions; set-compare only, never line-diff (§5).
