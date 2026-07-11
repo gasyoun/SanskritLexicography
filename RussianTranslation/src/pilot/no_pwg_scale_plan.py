@@ -27,7 +27,7 @@ RT = os.path.dirname(os.path.dirname(HERE))
 SRC = os.path.join(RT, 'src')
 OUT = os.path.join(HERE, 'output')
 QUEUE = os.path.join(HERE, 'lexical_cores', 'pwg_miss_backfill_queue.md')
-STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 STILL_NULL = os.path.join(OUT, 'no_pwg_w1.still_null.txt')
 
 if SRC not in sys.path:
