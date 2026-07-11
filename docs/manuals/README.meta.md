@@ -53,6 +53,40 @@ index/hard-rules at root.
 - STUDENT_MANUAL_RU §1 depends on gitignored ReverseDictionary data files a
   clone does not contain — flagged inline.
 
+## Intended use / known misuse
+
+**Intended use:** the entry point an agent or human reads at session start (or when
+onboarding a new contributor) to pick the right depth for their role — maintainer,
+researcher, student, data-reuser, or agent — before touching the ~12-subproject
+workspace; the four manuals + [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
+route deep-dives, the root pair stays thin/index-only.
+
+**Known misuse:**
+- Trusting the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) as currently accurate
+  without cross-checking `.ai_state.md` first — they are staleness-prone by design (see
+  Known limitations below and backlog item 2).
+- Using STUDENT_MANUAL_RU §1 without the gitignored ReverseDictionary data files present
+  in the clone — the section assumes data that a bare clone does not contain.
+- Treating a subsystem deep manual as a substitute for reading the actual subsystem code
+  or its own docs — the deep manuals summarize and post-mortem, they are not exhaustive
+  specs.
+- Using this set as an external-contributor "how to submit a correction upstream" guide —
+  that manual does not exist yet (backlog item 3); external submitters should be pointed
+  elsewhere until it ships.
+
+## Maintenance & sunset plan
+
+Regenerated via the [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)
+skill whenever a new subsystem deep manual is added or the router/PROFILE queue changes
+(as in H606/H607/H608 below). State snapshots (AGENTS §4, HUMAN_RU §3–4) are due a refresh
+on the next monthly pass against `.ai_state.md` (backlog item 2) — no automated staleness
+check exists yet. Owned by whichever session is actively driving workspace-manual work;
+no fixed cadence beyond "monthly-ish" for the snapshot refresh.
+
+## Deprecation status
+
+`active`
+
 ## Revision history
 
 | Date | Change | Session |
@@ -63,5 +97,6 @@ index/hard-rules at root.
 | 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
 | 11-07-2026 | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) added (papers · M01 book · docs_site) + router row + PROFILE queue flip — Fable 5 (`claude-fable-5`) | H608 |
 | 11-07-2026 | HEADWORDLISTS_DEEP_MANUAL.md added (queue complete); router gains a "Subsystem deep manuals" table; PROFILE H607 row flipped done; backlog item 1 closed — Fable 5 `claude-fable-5` | H607 |
+| 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (claude-sonnet-5) |
 
 _Dr. Mārcis Gasūns_
