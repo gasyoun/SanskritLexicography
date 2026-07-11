@@ -12,9 +12,25 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
-## [Unreleased]
+## [1.8.0] - 2026-07-11
 
-_(empty — next entries go here)_
+### Added — semdom ↔ Amarakosha crosswalk, Level A + Level B gold pilot (H742)
+- First crosswalk between SIL's 1,792 semantic domains and a classical
+  thesaurus: [`data/SEMDOM_AK_CROSSWALK_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md)
+  (README of record) + ID-pair tables — Level A varga map
+  ([`data/semdom_varga_crosswalk.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_varga_crosswalk.csv),
+  20 thematic vargas, hand-authored with evidence), Level B machine candidates
+  for all 5,590 synsets
+  ([`data/semdom_ak_candidates.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_candidates.tsv))
+  and a 200-synset adjudicated gold sample
+  ([`data/semdom_ak_gold.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_gold.tsv),
+  dual-annotated blind Fable 5 `claude-fable-5` × Opus 4.8 `claude-opus-4-8`,
+  exact κ 0.677 / level-2 κ 0.806). Key numbers: 96.4% synsets get ≥1
+  candidate, 0 NONE gold votes, structure agreement 67.0%, bridge top-1
+  precision 17.5% (candidate generator, not classifier). Results also in
+  [`papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md)
+  §7. Feeds the H721 MDF/LIFT `\sd` layer; paper A58. Per
+  [Uprava H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md).
 
 ## [1.7.0] - 2026-07-11
 

@@ -784,6 +784,24 @@ cost/time forecasts, not treated as a rare bonus layer.
 > **Source:** [`SanskritLexicography/PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md)
 > (direct `dict_merge.py` index tally + NWS `has_nws_extra` scan) — SanskritLexicography · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
+### §76. The MW→WordNet→semdom bridge is a candidate generator, not a classifier
+
+🟠 **Automatic semdom assignment for Amarakosha synsets via MW glosses + WordNet + the
+GWC-2023 bridge reaches only 17.5% top-1 exact precision (27.5% at level-2); even the full
+top-6 candidate list contains the gold label under half the time (45.0% exact / 58.5%
+level-2).** Measured on the 200-synset adjudicated gold sample of H742 (dual-annotated
+blind, Fable 5 `claude-fable-5` × Opus 4.8 `claude-opus-4-8`, exact κ 0.677). Failure mode:
+candidates key on incidental gloss words (mythological narrative, botanical Latin absent
+from WordNet, polysemous English glosses) rather than the synset's concept. Both annotators
+wrote in out-of-candidate codes for 42–56% of items, and voted NONE zero times — SIL's
+1,792 domains have no coverage hole for the 6th-century material; the bridge, not the
+taxonomy, is the weak link. Implication: never auto-assign `\sd` values from
+[`data/semdom_ak_candidates.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_candidates.tsv)
+without a review pass; treat it as a shortlist.
+
+> **Source:** [`data/SEMDOM_AK_CROSSWALK_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md)
+> (H742), Fable 5 `claude-fable-5` · 2026-07-11
+
 ## Etymology & derivation
 
 ### §33. Indigenous dictionaries agree on derivation; Wilson is the outlier

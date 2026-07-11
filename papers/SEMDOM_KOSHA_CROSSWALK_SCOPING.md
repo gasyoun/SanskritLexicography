@@ -160,4 +160,24 @@ Total to a submittable short paper: **~4 sessions**.
 - Feeds [H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)'s
   `\sd` field on delivery.
 
+## 7. Results (H742 build, 11-07-2026, Fable 5 `claude-fable-5`)
+
+The build landed same-day; full tables, method detail, and file inventory in
+[data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md).
+Headline numbers against §3's three measurable claims:
+
+| Claim (§3) | Result |
+|---|---|
+| Coverage: AK synsets assignable | 5,391 / 5,590 (96.4%) got ≥1 candidate; **0 NONE votes** in the 200-synset gold — no SIL coverage hole for the sampled material |
+| Coverage: semdom domains reached | 1,196 / 1,792 (66.7%) receive ≥1 candidate (noisy upper bound); 142 distinct domains in the gold |
+| Structure agreement | 134 / 200 (67.0%) of gold leaf domains fall inside their varga's Level A subtree set |
+| Bridge quality | top-1 17.5% exact / 27.5% level-2; gold-in-top-6 45.0% exact / 58.5% level-2 — a candidate generator, not a classifier |
+
+Gold: 200 synsets, stratified ≥5 per thematic varga, dual-annotated blind
+(Annotator A: Fable 5 `claude-fable-5`, Annotator B: Opus 4.8
+`claude-opus-4-8`), exact κ **0.677**, level-2 κ **0.806**, 64 disagreements
+adjudicated (60→A, 4→B, audit trail committed). §5's depth-mismatch risk
+resolved in favour of publishability: the synset-level pilot produced usable
+per-eid gold plus an honest negative result on the automatic bridge.
+
 _Dr. Mārcis Gasūns_
