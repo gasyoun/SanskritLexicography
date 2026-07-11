@@ -142,7 +142,7 @@ transformation's adequacy against it.
    **plus** implementation in the PWG translation pipeline + kosha, and an explicit
    account of how it changes dictionary treatment at Cologne (§4 above).
 2. **LIFT**: add now (not parked) — fourth serialization beside TEI/OntoLex/MDF.
-3. **Lexique Pro smoke test**: run it.
+3. **Lexique Pro smoke test**: run it. ✅ executed 12-07-2026 (H722, Fable 5 `claude-fable-5`): 250/250 records parsed, per-marker render table + 3 findings in [MDF_EXPORT_MAPPING.md](https://github.com/sanskrit-lexicon/csl-standards/blob/main/docs/MDF_EXPORT_MAPPING.md#real-consumer-smoke-test--lexique-pro-36-h722), [PR #109](https://github.com/sanskrit-lexicon/csl-standards/pull/109) merged.
 4. **SIL reach**: all four — semdom ↔ kosha crosswalk, Webonary channel, Dictionary App
    Builder, community outreach (drafts only; nothing auto-sends).
 
