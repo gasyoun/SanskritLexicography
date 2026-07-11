@@ -27,10 +27,11 @@ index/hard-rules at root.
 
 ## Improvement backlog (ranked)
 
-1. ⬜ Subsystem deep manuals per the
+1. 🟡 Subsystem deep manuals per the
    [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
-   queue — H606 (RussianTranslation), H607 (HeadwordLists), H608
-   (papers/book/docs_site).
+   queue — H606 (RussianTranslation) ✅ done 11-07-2026
+   ([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md));
+   H607 (HeadwordLists), H608 (papers/book/docs_site) still queued.
 2. ⬜ Refresh the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) on the next
    monthly pass — they are staleness-prone by design; verify against
    `.ai_state.md` first.
@@ -54,5 +55,6 @@ index/hard-rules at root.
 |---|---|---|
 | 10-07-2026 | Set created (4 manuals + router + root pair) | H479/H535 |
 | 11-07-2026 | H604 consolidation (see Provenance) | H604 |
+| 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
 
 _Dr. Mārcis Gasūns_

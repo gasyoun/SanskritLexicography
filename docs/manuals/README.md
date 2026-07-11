@@ -14,6 +14,7 @@ to read the others.
 | A **lexicographer / DH researcher / historian of dictionaries** — the evidence-graded thesis, the paper pipeline, what's citable | [RESEARCHER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md) | English |
 | A **Sanskrit student / learner** — the teaching material and what's usable today | [STUDENT_MANUAL_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/STUDENT_MANUAL_RU.md) | Русский |
 | A **programmer / data engineer / NLP researcher** reusing the data — formats, encodings, traps, rights | [DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md) | English |
+| **Operating the RussianTranslation pipelines** — mw_ru post-mortem, pwg_ru production windows, lanes/gates/kill mechanics, script census (subsystem depth, H606) | [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) | English |
 | An **agent session** (Claude/Codex) entering this shared tree — entry protocol, hard rules, canonical-doc index | [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root, thin) | English |
 | **The human owner** — repo map, monthly delta, human gates, account protocol | [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root, thin) | Русский |
 
