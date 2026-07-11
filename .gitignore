@@ -89,6 +89,11 @@ RussianTranslation/research/dsg.json
 literature/*
 !literature/md
 
+# H723: SIL-copyrighted PDF (all rights reserved, no redistribution grant beyond the
+# accompanying MDF software diskette) — local working copy only, never committed.
+# Digest lives at literature/md/Lexicography-Manuals/making-dictionaries-mdf-coward-grimes-2000.md
+papers/MDF_2000.pdf
+
 # Heritage/INRIA GitHub-mirror clone (LGPLLR, license composition pending —
 # H099/HERITAGE_INRIA_ROADMAP.md Phase 0 @DECIDE): raw data stays local-only,
 # only derived measurements/crosswalks are committed.
