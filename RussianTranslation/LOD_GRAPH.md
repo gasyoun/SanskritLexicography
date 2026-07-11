@@ -141,7 +141,9 @@ python src/lod_acceptance.py       # acceptance gate
 
 ## Boundary: who owns what
 
-Per the 2026-06-03 four-repo split (`ROADMAP_2026_2027.md` §4 / G2), OntoLex/LOD
+Per the 2026-06-03 four-repo split
+([`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
+§4 / G2), OntoLex/LOD
 **exports** live in [`csl-standards`](https://github.com/gasyoun/csl-standards),
 not here. The routing contract for this build:
 

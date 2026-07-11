@@ -1,6 +1,6 @@
 # Renou tagging — hypothesis-testing programme (H1–H7)
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 11-07-2026_
 
 Executable specification for testing seven hypotheses on the Renou state/register
 tagging system described in
@@ -112,8 +112,10 @@ splits "dcs over-tags" vs "ls under-cites"; if E is not ≈100 %, the sheet
 itself is miscalibrated and results are void. The error bounds feed H1's
 write-up and become finding F-next in RENOU_FINDINGS.md.
 
-**Deliverables:** `src/renou_pilot_sample.py`, `review/renou_pilot_sheet.html`
-(committed), sample JSONL (committed — it is small), then after votes
+**Deliverables:** `src/renou_pilot_sample.py`,
+`review/sanskritlexicography-renou-hypotheses_pilot_review.html` (committed;
+renamed from `renou_pilot_sheet.html`), sample JSONL (committed — it is small),
+then after votes
 `RENOU_VALIDATION.md`.
 
 ---

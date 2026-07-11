@@ -35,7 +35,7 @@ a genuine cross-dataset (federated-shape) join.
 Design notes and known modelling boundaries are in ``LOD_GRAPH.md``.  Ownership:
 the *generator* and its input data stay in ``RussianTranslation``; the *published*
 graph + SPARQL surface land in ``csl-standards`` per the 2026-06-03 boundary
-rules (see ``ROADMAP_2026_2027.md`` G2).
+rules (see ``ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`` G2).
 """
 import argparse
 import json

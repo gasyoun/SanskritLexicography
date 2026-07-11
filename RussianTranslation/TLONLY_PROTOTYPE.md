@@ -1,8 +1,16 @@
 # Translation-only harness — prototype + token A/B (2026-06-29)
 
+_Created: 29-06-2026 · Last updated: 11-07-2026_
+
 Prototype of the "Python owns ALL markup" redesign (see the design item in
 [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)).
 Goal: measure the real token cost vs the production echo harness, honestly.
+
+> Retirement note (11-07-2026): the prototype scripts measured here
+> (`gen_tlonly_harness.py`, `assemble_tlonly.py`, `gen_batched_harness.py`) were
+> retired in [PR #67](https://github.com/gasyoun/SanskritLexicography/pull/67)
+> ("retire dead prototypes + spent harnesses"); their links below are pinned to
+> the last pre-retirement commit so the measured code stays readable.
 
 ## What was built
 
@@ -11,11 +19,11 @@ Goal: measure the real token cost vs the production echo harness, honestly.
   per-card inputs use **attributed** tags (`<ls n="ṚV.">…</ls>`), so 37 of `anu`'s
   citations leaked their reference numbers into the model's view. Broadened the
   opening-tag patterns to `\b[^>]*>` (backward-compatible; helps stage-0 too).
-- [`src/pilot/gen_tlonly_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_tlonly_harness.py)
+- [`src/pilot/gen_tlonly_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/48ac903b4c5f1076fda86a22030e7cf65e5915e5/RussianTranslation/src/pilot/gen_tlonly_harness.py)
   — generates a translation-only harness: raw is masked (every `<ls>`/`<ab>`/`<is>`/
   `{#..#}` → `{Tn}`), model sees ONLY translatable German + `{Tn}` tokens, returns
   ONLY Russian-per-sense (no german echo). Reduced schema (no `german` field).
-- [`src/pilot/assemble_tlonly.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/assemble_tlonly.py)
+- [`src/pilot/assemble_tlonly.py`](https://github.com/gasyoun/SanskritLexicography/blob/48ac903b4c5f1076fda86a22030e7cf65e5915e5/RussianTranslation/src/pilot/assemble_tlonly.py)
   — restores `{Tn}` (lossless) and welds german back; emits a production-shape card.
 
 ## A/B — same 6 gam cards (2 dense: anu, upa; 4 small)
@@ -66,7 +74,7 @@ headline-token cut, combine masking with **batching** + a **gloss-only schema**.
 
 ## Batching A/B — the dominant lever (measured, with real $)
 
-Built [`src/pilot/gen_batched_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_batched_harness.py)
+Built [`src/pilot/gen_batched_harness.py`](https://github.com/gasyoun/SanskritLexicography/blob/48ac903b4c5f1076fda86a22030e7cf65e5915e5/RussianTranslation/src/pilot/gen_batched_harness.py)
 (masked cards, N per agent call) and a real cost parser
 [`src/pilot/parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
 that reads the per-agent transcript JSONL (`input` / `cache_create` / `cache_read`
@@ -183,3 +191,5 @@ risk; the extreme single-batch is not worth the reliability cost. We're near the
 — the 30k subagent system prompt is a framework constant; deeper cuts need a leaner `agentType`
 (framework-level, untested). Net: agent-count IS the lever, confirmed and quantified; the big
 win (−72%) was already captured by batching, and further gains are modest + risk-bounded.
+
+_Dr. Mārcis Gasūns_

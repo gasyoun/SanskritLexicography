@@ -1,8 +1,8 @@
 # PWG entry layer combinations
 
-_Created: 05-07-2026 · Last updated: 05-07-2026_
+_Created: 05-07-2026 · Last updated: 11-07-2026_
 
-Grounded in the actual merge code — [`RussianTranslation/src/dict_merge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/dict_merge.py) (the `LAYERS`/`NWS_LAYER` definitions and the `merged()` function) — and the working notes in [`pwg-layers.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/pwg-layers.md). Not a new design — this documents the existing pwg_ru merge rule and enumerates the subset combinations it implies, then **measures which actually occur** in the csl-orig data.
+Grounded in the actual merge code — [`RussianTranslation/src/dict_merge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/dict_merge.py) (the `LAYERS`/`NWS_LAYER` definitions and the `merged()` function) — and on working notes (`pwg-layers.md`) that were never committed to the repository. Not a new design — this documents the existing pwg_ru merge rule and enumerates the subset combinations it implies, then **measures which actually occur** in the csl-orig data.
 
 ## The 5 layers
 
@@ -14,7 +14,7 @@ Grounded in the actual merge code — [`RussianTranslation/src/dict_merge.py`](h
 | **PWKVN** | supplement | PWK variant supplement (Nachträge und Verbesserungen to the kürzere Fassung). | `csl-orig/v02/pwkvn/pwkvn.txt` | 14,995 |
 | **NWS** | external | *Nachtragswörterbuch* (Halle), cumulative addendum, ~2013. Folded in **only** when it is net-new beyond the four layers above (`has_nws_extra` flag) — never duplicated in. May itself contain outdated PWG/PW/SCH data, or partial French/Latin text. | scraped JSON, `RussianTranslation/src/pilot/nws/*.json` (167,991 files, provisional pending a data request) | **34,101 net-new (`has_nws_extra=true`), 20.3% of scraped files** — measured; per-combination breakdown (which of rows 9/16-18/21-23/25 below each falls into) not yet joined |
 
-**Related but NOT merged into a PWG entry:** CAE, CCS (medium dicts historically based on PWG/PW), MD, KCH (medium), LAN, KNA, FRI (small student dicts) — these track the same headwords as part of the wider "abridged tradition" comparison, but are separate dictionaries in their own right, not overlay layers of PWG. See `pwg-layers.md` lines 91–93.
+**Related but NOT merged into a PWG entry:** CAE, CCS (medium dicts historically based on PWG/PW), MD, KCH (medium), LAN, KNA, FRI (small student dicts) — these track the same headwords as part of the wider "abridged tradition" comparison, but are separate dictionaries in their own right, not overlay layers of PWG. (Stated in the uncommitted `pwg-layers.md` working notes, lines 91–93.)
 
 ## The mechanical rule
 

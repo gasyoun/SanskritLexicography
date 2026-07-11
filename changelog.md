@@ -7,7 +7,63 @@ then **cut a new version every time the changelog is updated** (promote
 [Unreleased] to the next `x.y.z` with today's date and start a fresh
 [Unreleased]).
 
+Historical note on the version sequence: 1.0.0–1.1.3 were cut mid-June 2026, the
+lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resuming
+at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
+not an error.
+
 ## [Unreleased]
+
+_(empty — next entries go here)_
+
+## [1.7.0] - 2026-07-11
+
+### Added
+- CodeQL SAST workflow for the repo's Python/JS tooling
+  ([PR #329](https://github.com/gasyoun/SanskritLexicography/pull/329)).
+- H607 HeadwordLists analytics deep manual —
+  [`docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md)
+  ([PR #339](https://github.com/gasyoun/SanskritLexicography/pull/339)).
+- SIL MDF ecosystem correlation map (Coward–Grimes 2000 vs the CDSL workbench;
+  MG rulings 11-07-2026; H721–H727 program) —
+  [`papers/SIL_MDF_ECOSYSTEM_CORRELATION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SIL_MDF_ECOSYSTEM_CORRELATION.md)
+  ([PR #342](https://github.com/gasyoun/SanskritLexicography/pull/342)).
+- DEAD_ENDS §8b: full MBH locus census blocked — no free vulgate e-text (H610)
+  ([PR #343](https://github.com/gasyoun/SanskritLexicography/pull/343)).
+- Markup-tag frequency census over all 44 Cologne v02 dictionaries (H683)
+  ([PR #345](https://github.com/gasyoun/SanskritLexicography/pull/345)).
+- [`DICTIONARY_REVIEWS_BIBLIOGRAPHY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/DICTIONARY_REVIEWS_BIBLIOGRAPHY.md)
+  — published reviews of the Sanskrit dictionaries (H731)
+  ([PR #346](https://github.com/gasyoun/SanskritLexicography/pull/346)).
+- Headword pairwise-overlap matrix over the 15-dict union (H684)
+  ([PR #347](https://github.com/gasyoun/SanskritLexicography/pull/347)).
+- E41/E42/F43 registered — correction-events trio, Kompozity `names.csv`,
+  `allngramtxt` n-gram oracle (H694)
+  ([PR #350](https://github.com/gasyoun/SanskritLexicography/pull/350)).
+- Coward & Grimes 2000 (MDF lexicography guide) digested into the literature
+  notes (H723)
+  ([PR #351](https://github.com/gasyoun/SanskritLexicography/pull/351)).
+
+### Changed
+- papers: A40 headword-inventory prose completed over locked data, readiness
+  3/5 → 4/5 (H675)
+  ([PR #348](https://github.com/gasyoun/SanskritLexicography/pull/348)).
+- pwg_ru H255 no_pwg_w03 drain: requeue of no_pwg_w02's 27 transient keys,
+  11/27 promoted
+  ([PR #344](https://github.com/gasyoun/SanskritLexicography/pull/344)).
+- pwg_ru H255: fresh 6-headword no_pwg_w03 window + rq1 requeue, 9 clean
+  promoted ([PR #352](https://github.com/gasyoun/SanskritLexicography/pull/352));
+  pre-launch warm-up probe logged (21.05 s, GO)
+  ([PR #353](https://github.com/gasyoun/SanskritLexicography/pull/353)).
+
+### Fixed
+- H255: [`RussianTranslation/src/pilot/no_pwg_scale_plan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_scale_plan.py)
+  STORE path — dedup was silently reading the wrong store
+  ([PR #349](https://github.com/gasyoun/SanskritLexicography/pull/349)).
+- Full-repo audit fix pass (H733): dead-link/doc-hygiene/CI/code fixes,
+  `ROADMAP_2026_2027.md` → `ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`
+  rename, `WSC2025_Reviews_7.pdf` rename — see
+  [Uprava H733](https://github.com/gasyoun/Uprava/blob/main/handoffs/H733-Fable_SanskritLexicography_full-repo-audit-fix-pass_11.07.26.md).
 
 ## [1.6.0] - 2026-07-11
 
@@ -77,7 +133,7 @@ then **cut a new version every time the changelog is updated** (promote
   `requirements.txt`) and CI's Python lint + RussianTranslation gates do fire.
   Follow-up flagged under H535 (already noted in the maintainer manual).
 
-### Added — other highlights since v1.4.0 (synthesized from git log)
+### Added — other highlights since v1.4.0 (synthesized from git log; the tagged pwg_ru releases v1.2.0–v1.4.0 themselves are backfilled as sections below)
 - Public PWG→RU translation **progress dashboard**
   ([PR #315](https://github.com/gasyoun/SanskritLexicography/pull/315)).
 - pwg_ru article site: `<ab>`/`<ls>` tooltips + RU-column abbreviation purity per
@@ -91,6 +147,108 @@ then **cut a new version every time the changelog is updated** (promote
   entries for the Sundara apparatus and F4-DCS edition-mismatch dead ends.
 - Editorial rule applied repo-wide: drop `ё` (keep the всё/все distinction), H543
   ([PR #324](https://github.com/gasyoun/SanskritLexicography/pull/324)).
+
+## [1.4.0] - 2026-07-06
+
+pwg_ru pipeline release (tagged "pwg_ru 1.4.0"); section backfilled 11-07-2026
+from the [GitHub release](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.4.0).
+Full detail in
+[`RussianTranslation/CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md).
+
+### Added — no-PWG supplement-chain lane (H214)
+- PWG-missing headwords with a PW/SCH/PWKVN/NWS record now render as standalone
+  supplement-chain sub-cards (`<key>~~h0_zz_<layer>`), no fabricated PWG base
+  portrait. Per-card `source_profile` (`no_pwg_supplement_chain` /
+  `pwg_with_supplements` / `pwg_only` / `pwg_supplement_subcard`) on every
+  promoted row; the 232 PWG-miss lemmas become a `no_pwg_runnable` lane. First
+  live run validated end-to-end, 5 verified-clean sub-cards promoted; residual
+  low single-card throughput tracked in H220.
+
+### Added — upstream-change watcher (H182)
+- [`RussianTranslation/src/pilot/watch_upstream.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/watch_upstream.py):
+  monthly Cologne + NWS drift detection → stale-worklist; flag-only, on a
+  scheduled workflow.
+
+### Fixed
+- `{{Lbody=NNNN}}` alternate-headword-pointer leak (`dict_merge.resolve_lbody()`)
+  and the nominal audit crash (`audit_window.py` now skips glue for no-rootmap
+  windows). PRs
+  [#174](https://github.com/gasyoun/SanskritLexicography/pull/174),
+  [#178](https://github.com/gasyoun/SanskritLexicography/pull/178),
+  [#183](https://github.com/gasyoun/SanskritLexicography/pull/183),
+  [#185](https://github.com/gasyoun/SanskritLexicography/pull/185).
+
+## [1.3.0] - 2026-07-05
+
+Section backfilled 11-07-2026 from the
+[GitHub release](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.3.0).
+
+### Changed — nominal-window guardrails (H191 verified, optimized, staged)
+- H189 `pril10_w1` post-mortem verified deterministically: the aborted
+  top-size nominal run reproduces to 42,316,604 tokens / ~$79.83, confirming
+  fragment-level `agent()` fan-out plus repeated cache writes caused the
+  blow-up.
+- Generated harness size reduced for cached/retry windows: non-agent cards
+  omitted from `INPUTS`/`PH`; TM-resolved and degenerate pass-through cards
+  stay self-contained in `TM_RESOLVED` / `DEGENERATE_RESOLVED`.
+- Monster handling hardened in two places: citation-dense single-line senses
+  split only at complete `<ls>...</ls>` spans, and `perf_preflight.py` emits
+  `cost_partition.run_now` / `cost_partition.defer_monster` grouped totals, so
+  mixed windows run their cheap cards while `kAla`-class cards route to a
+  human-budgeted lane.
+- First safe nominal follow-up staged:
+  [`RussianTranslation/src/pilot/NOMINAL_W1_100SMALL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/NOMINAL_W1_100SMALL.md)
+  — 100 small Приложение 5 heads, 95 live inputs, 5 degenerate pass-through
+  cards, 0 deferred monsters, 3 expected agents, ~745k tokens / ~$1.41
+  estimated; the downstream Sonnet/Max run delegated to Uprava H201.
+
+## [1.2.0] - 2026-07-04
+
+Section backfilled 11-07-2026 from the
+[GitHub release](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.2.0).
+
+### Added — production ramp planning (runnable work, not wishful work)
+- Live PWG→RU ramp planner `ramp_plan.py` (since retired) for the
+  100 → 1,000 → 10,000 card progression, pricing each runnable root with the
+  same preflight machinery used before Max spend; 10,000-card mode marked as a
+  root-by-root drain (default concurrency 1, hard ceiling 3).
+- H151 verb-root worklist made runnable-aware
+  ([`RussianTranslation/src/pilot/verb_worklist.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/verb_worklist.py)):
+  702 DCS-attested verb roots remained, 13 runnable, 689 blocked on rootmap
+  generation/recovery. First controlled ramp target locked to runnable roots
+  `tyaj`, `dah`, `kzip` (106 cards/sub-cards, 45 expected agents).
+
+### Changed — QA gates fail loud, then requeue
+- RU audit gate hardened: child auditors must emit strict `FLAGGED_JSON`;
+  missing/malformed verdict lines crash loud and requeue the whole window.
+- Real EN duplicate-sense hard gate added and gate-bug fixes ported across the
+  EN path (language parity); Latin/Greek cue-masking leak fixed
+  (`<ab>lat.</ab>` behind a placeholder is expanded for classification);
+  collection/store writes made safer (robust JSON-string parsing, one parsed
+  batch pass, coalesced appends).
+
+### Added — schema-validated translation-memory publication assets
+- Publication + terminology export commands for the TM lane: RU publication
+  feed checksum-locked and schema-validated under `release/translation_memory/`
+  (2,392 publication records pass validation); the `sa_ru_terminology` DOI lane
+  intentionally empty until curated term suggestions exist; fuzzy TM matches
+  advisory-only until validated.
+
+### Added — review discipline + pipeline versioning
+- Blocking
+  [`RussianTranslation/src/review_changelog_guard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_changelog_guard.py)
+  hook: major review/audit edits must update the changelog in the same diff (or
+  carry an auditable `Changelog: not applicable` marker); wired into pre-commit
+  and CI.
+- [`RussianTranslation/src/pipeline_version.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pipeline_version.py)
+  + manifest `src/pipeline_versions.json`: a semver per output-affecting
+  component family (prompt / glossary / script), orthogonal to the model
+  version, stamped into every stored row's `provenance.pipeline` by both store
+  producers — answers "which stored translations predate this tooling fix and
+  need a batch re-run?". Forgotten-bump guard (content-SHA freeze + `check`
+  warning), stale-row reporting, explicit-only backfill for legacy rows; store
+  at introduction: 10,794 rows bucketed unversioned-legacy (not falsely marked
+  stale), baseline frozen at v1.0.0.
 
 ## [1.1.5] - 2026-07-03
 
@@ -467,7 +625,8 @@ then **cut a new version every time the changelog is updated** (promote
 
 ### Added — `HeadwordLists/now/` current regeneration of the key1 snapshots
 - Regenerated the **key1** lists from the **current** csl-orig into
-  [`HeadwordLists/now/`](HeadwordLists/now/) (filename = now-count), Sanskrit-collated;
+  [`HeadwordLists/now/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026)
+  (renamed `now-2026/` in 0.0.16; filename = now-count), Sanskrit-collated;
   the parent THEN files are kept frozen so the two can be compared directly.
   `headword_diff.py now` produces them.
 - **key1 only, deliberately** — it's the genuinely comparable set (THEN and NOW both
@@ -880,7 +1039,8 @@ not previously recorded here.)_
 - `REFERENCES.md` — provenance (source, date, producer, size) for the root
   reference assets (`CDSL-2025.pdf`, the two DCS HTML exports,
   `helpmorphids.html`, `gasuns_cologne-zograf_2019.pdf`, and the previously
-  unlisted `WSC 2025 Reviews 7.pdf`), read from each file's own metadata with
+  unlisted `WSC 2025 Reviews 7.pdf`, since renamed `WSC2025_Reviews_7.pdf`),
+  read from each file's own metadata with
   inferred descriptions flagged; linked from the README Contents table.
 - `README.md` — new "Documentation map" section grouping every doc by purpose
   (Orientation; Contributors & agents; Material by area) with a one-line hook

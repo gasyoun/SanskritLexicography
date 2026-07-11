@@ -680,7 +680,7 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
 3. **Coverage gap for the modern reader.** A learner consulting PWG/SCH for *yabh*,
    *cunnus*-glossed kennings, or the Aśvamedha vocabulary meets a Latin wall. Any
    evidence-graded or learner-facing layer over these dictionaries (cf.
-   [`ROADMAP_2026_2027.md`](../ROADMAP_2026_2027.md) P6) should **resolve the Latin
+   [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) P6) should **resolve the Latin
    screen into the target language** — the CSV here is a ready de-veiling key.
 4. **A register signal, machine-readable.** The Latin gloss is a reliable flag for
    "sexual/scatological sense" across 2,104 senses in eleven dictionaries — usable for

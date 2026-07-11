@@ -50,14 +50,14 @@ dictionary, and a governance layer of nine append-only epistemic registries —
 unified by one thesis: **evidence-graded lexicography** (a dictionary as a
 layered evidence graph). Fuller orientation:
 [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) ·
-[ROADMAP_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_2026_2027.md).
+[ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md).
 
 ## Language convention
 
 Manuals follow the repo rule — **language matches the audience**: the student
 manual is in Russian (its readership); the maintainer, researcher, and
-data-reuse manuals are in English (their readership). See the
-[HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md)
-documentation conventions.
+data-reuse manuals are in English (their readership). See the documentation
+conventions in
+[CONTRIBUTING.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRIBUTING.md).
 
 _Dr. Mārcis Gasūns_
