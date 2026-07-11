@@ -1,6 +1,6 @@
 # Sanskrit → Russian glossary (surface · lemma · root)
 
-_Created: 01-07-2026 · Last updated: 01-07-2026_
+_Created: 01-07-2026 · Last updated: 11-07-2026_
 
 **🔎 Live searchable glossary + all data:** **[gasyoun/SanskritRussian](https://github.com/gasyoun/SanskritRussian)**
 → <https://gasyoun.github.io/SanskritRussian/> — type an SLP1 root/word (`gam`, `BU`) or a
@@ -95,6 +95,41 @@ are logged in `ambiguity_homographs.tsv`, never double-counted.
 
 Distinct-form hit rate is far below token coverage because the misses are the **rare long
 tail** — DCS/Vidyut resolve nearly every common form.
+
+### Per-dictionary RU-gloss coverage & the no-gloss gap-list (H685)
+
+[`../src/build_ru_gloss_gap_stats.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ru_gloss_gap_stats.py)
+joins each Cologne dictionary's `now-2026` key1 headword list against the three glossary
+layers (surface · lemma · root) over the live corpus and answers "where are the translation
+holes?" — the committed snapshot is
+[`ru_gloss_gap_stats.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/ru_gloss_gap_stats.json).
+Corpus at measurement: **1,093,391 rows · 191,436 distinct surface keys · hapax rate 58.9 %**
+(token coverage reconciles to 79.1 / 86.5 / 87.1 %, matching the table above within the
+append-only row growth).
+
+| Dict | headwords | any-layer RU gloss | coverage % |
+|---|--:|--:|--:|
+| GRA | 11,108 | 8,526 | **76.8 %** |
+| VEI | 3,704 | 2,346 | **63.3 %** |
+| VCP | 48,636 | 15,313 | 31.5 % |
+| PWG | 106,082 | 27,780 | 26.2 % |
+| AP | 88,867 | 21,386 | 24.1 % |
+| MW | 194,084 | 43,287 | 22.3 % |
+| PWK | 151,349 | 32,430 | 21.4 % |
+| SKD | 40,817 | 6,713 | 16.5 % |
+
+The **gap-list** — dictionary headwords with **no** RU gloss in any layer, ranked by DCS
+corpus frequency — is the direct feeder for the next paid translation window:
+**242,726 gap keys total, 36,974 DCS-attested**. The full list ships as the gitignored
+`ru_gloss_gaps.tsv` (regenerate locally); its highest-value head (top DCS-frequency
+no-gloss keys shared across the most dictionaries) is:
+
+> `tEla` (2109) · `sEnya` (1494) · `vESampAyana` (1326) · `dEtya` (1258) · `dEva` (1226)
+> · `ganDaka` (1192) · `aNgula` (1054) · `SEla` (1036) · `mUzA` (946) · `vESya` (931) …
+
+These are overwhelmingly **vṛddhi-initial derivatives** (`tEla`←taila, `dEtya`←daitya) and
+common realia — high-frequency forms the surface layer misses because the corpus attests
+inflected/sandhi variants, not the bare dictionary headword.
 
 ## Failure typology (78,842 unresolved forms · 140,667 tokens)
 
