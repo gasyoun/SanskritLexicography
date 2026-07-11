@@ -252,6 +252,40 @@ def emit_audit_event(event_type, level='info', root=None, state=None, summary=''
             pass
 
 
+def classify_harness_requeues(null_cards, partial_cards, gate_requeue, failure_reasons):
+    """Split incomplete harness output from independently gate-flagged defects."""
+    null_set = set(null_cards or [])
+    partial_set = set(partial_cards or [])
+    gate_set = set(gate_requeue or [])
+    fidelity_nulls = {
+        k for k, e in (failure_reasons or {}).items()
+        if e.startswith('fidelity-reject') or e.startswith('stitched-fidelity')
+    }
+    defect = (gate_set - null_set) | fidelity_nulls
+    transient = (null_set | partial_set) - defect
+    return transient, defect, fidelity_nulls
+
+
+def collect_harness_quality(results):
+    """Extract explicit partial-card and null-failure metadata from harness rows."""
+    partial_cards, failure_reasons = {}, {}
+    for row in results or []:
+        key = row.get('key')
+        if not key:
+            continue
+        card = row.get('card')
+        if card and (card.get('partial') or row.get('partial')):
+            partial_cards[key] = {
+                name: (card.get(name) if card.get(name) is not None else row.get(name))
+                for name in ('missing_fragments', 'missing_groups', 'total_groups',
+                             'missing_senses', 'total_senses')
+                if card.get(name) is not None or row.get(name) is not None
+            }
+        if not card and row.get('error'):
+            failure_reasons[key] = row['error']
+    return partial_cards, failure_reasons
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('wf_output')
@@ -481,19 +515,13 @@ def main():
     # Harness-side quality markers (post-#63/#64 wf files): per-row failure reasons on null
     # cards, and partial:true cards (usable but incomplete — selfheal/autosplit partial
     # credit). Older wf files carry neither; everything below degrades to empty.
-    partial_cards, failure_reasons = {}, {}
-    for r in results or []:
-        k = r.get('key')
-        if not k:
-            continue
-        c = r.get('card')
-        if c and (c.get('partial') or r.get('partial')):
-            partial_cards[k] = {m: (c.get(m) if c.get(m) is not None else r.get(m))
-                                for m in ('missing_fragments', 'missing_groups', 'total_groups',
-                                          'missing_senses', 'total_senses')
-                                if c.get(m) is not None or r.get(m) is not None}
-        if not c and r.get('error'):
-            failure_reasons[k] = r['error']
+    partial_cards, failure_reasons = collect_harness_quality(results)
+
+    # Partial output remains promotable as useful intermediate data, but it is never a clean
+    # window result. Requeue it for targeted top-up even when percentage gates miss a small
+    # omission.
+    partial_set = set(partial_cards)
+    requeue.update(partial_set)
 
     report = {'workflow': wf, 'root': args.root, 'keys': keys, 'null_cards': null_cards,
               'workflow_meta': wf_meta, 'stale_check': stale,
@@ -508,10 +536,10 @@ def main():
     # construction (the model answered; the deterministic guard refused it — observed live
     # as the Sam/Buj/naS 'stubborn null' loop) -> classify as defect, not transient, so the
     # cheap-re-run lane stops burning quota on it.
-    fidelity_nulls = {k for k, e in failure_reasons.items()
-                      if e.startswith('fidelity-reject') or e.startswith('stitched-fidelity')}
-    report['requeue_transient'] = sorted(set(null_cards) - fidelity_nulls)
-    report['requeue_defect'] = sorted((gate_requeue - set(null_cards)) | fidelity_nulls)
+    transient, defect, fidelity_nulls = classify_harness_requeues(
+        null_cards, partial_set, gate_requeue, failure_reasons)
+    report['requeue_transient'] = sorted(transient)
+    report['requeue_defect'] = sorted(defect)
     # H304 gate-outcome memory: the fragment TM is harvested from raw wf_output BEFORE any
     # gate runs, so a defect card's fragments would otherwise stay silently reusable
     # (frag_address keys on the input SHA, not on whether the output passed). Surface every

@@ -3302,6 +3302,37 @@ def test_run_telemetry_counters_returned():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_partial_cards_requeue_and_stay_out_of_clean_sample():
+    """Partial-only output is transient; an independent content defect wins."""
+    import audit_window as aw
+    import window_reports as wr
+
+    fixture = [
+        {'key': 'partial_only', 'card': {'partial': True,
+                                         'missing_fragments': ['g1:f9']}},
+        {'key': 'partial_defect', 'card': {'partial': True,
+                                           'missing_fragments': ['g2:f3']}},
+    ]
+    partial_cards, failure_reasons = aw.collect_harness_quality(fixture)
+    transient, defect, _ = aw.classify_harness_requeues(
+        [], partial_cards, {'partial_defect'}, failure_reasons)
+    if transient != {'partial_only'} or defect != {'partial_defect'}:
+        fail('partial requeue precedence drifted: transient=%r defect=%r' %
+             (transient, defect))
+
+    report = {'root': 'zz', 'keys': ['clean', 'partial_only', 'partial_defect'],
+              'null_cards': [], 'requeue': sorted(transient | defect)}
+    saved_merged_exists = wr.merged_exists
+    try:
+        wr.merged_exists = lambda key: True
+        sample = wr.build_judge_sample(report, rate=1.0, minimum=0, seed='partial-test')
+    finally:
+        wr.merged_exists = saved_merged_exists
+    if sample['clean_sample_keys'] != ['clean']:
+        fail('partial keys leaked into clean judge candidates: %r' %
+             sample['clean_sample_keys'])
+
+
 def test_classify_run_verdicts():
     """H462: classify_run.py mechanizes the code-vs-infra rule H442 applied by hand
     ('if connection errors recur, record as infra-confounded, not a code failure') from
@@ -3319,6 +3350,8 @@ def test_classify_run_verdicts():
     v, _, sig = cr.classify(dict(base))
     if v != 'clean':
         fail('all-ok summary must classify clean; got %r' % v)
+    if sig['partial_cards'] != 0 or sig['partial_keys']:
+        fail('historical summary without partial_keys must remain compatible')
     for field in ('translate_agents_spent', 'max_translate_agents',
                   'translate_budget_tripped', 'heal_agents_spent',
                   'max_heal_agents', 'heal_budget_tripped'):
@@ -3337,6 +3370,17 @@ def test_classify_run_verdicts():
     v, _, _ = cr.classify(code)
     if v != 'code-failure':
         fail('nulls with no infra signal must classify code-failure; got %r' % v)
+    partial = dict(base, partial_keys=['p1'])
+    v, reasons, sig = cr.classify(partial)
+    if v != 'code-failure' or sig['partial_cards'] != 1 or sig['partial_keys'] != ['p1']:
+        fail('partial-only output must classify code-failure with partial signals; got %r %r' %
+             (v, sig))
+    if '1 partial card(s)' not in ' '.join(reasons):
+        fail('partial-only code-failure reason must name the incomplete card count')
+    partial_infra = dict(base, partial_keys=['p1'], conn_errors=1)
+    v, _, _ = cr.classify(partial_infra)
+    if v != 'infra-confounded':
+        fail('partial output plus an infra signal must classify infra-confounded; got %r' % v)
     # kill-timeouts alone (no conn errors) past the 25%% ceiling are ALSO infra
     kills = dict(base, kill_timeouts=58, null_keys=['a'], budget_kill_switch_tripped=True)
     v, _, _ = cr.classify(kills)
@@ -4189,6 +4233,7 @@ def main():
         test_per_card_heal_budget_wired,
         test_heal_group_kill_timeout_does_not_bisect,
         test_run_telemetry_counters_returned,
+        test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
     ]
     for test in tests:
