@@ -538,7 +538,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (architecture audit FL7 / code review 2026-07-04 item #4). corpus_gate.py is the RU-only stage-4 correctness gate: it joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович) and the SamudraManthanam RU-aligned verse corpus. The EN pilot has no analogous corpus gate (no Sanskrit-English authority set is wired here), so this fix is inherently Russian-only — an INTENTIONAL-DIVERGENCE, not a GAP to port. The marker mechanism (SOURCES_PRESENT / evidence_status() / corpus_examples_with_status) would generalize if an EN correctness gate is ever built; revisit then. Pinned by test_corpus_gate_evidence_and_db_markers.",
     "tracking": "",
     "verified_sha256": {
-      "src/corpus_gate.py": "9ef1fd0e7c1d31760db187d16046b7dffbafa4fd6d11099ef61fb95094975b27",
+      "src/corpus_gate.py": "95797986db7c21210a55c8a13f324514d17110ba07d2f804d000a77a003d5bf3",
       "src/pilot/window_selftest.py": "8c45d8dc292d0eb2a8f70adcb80731b96d5369a9265354077bfaf9e0562f55ce"
     }
   },
