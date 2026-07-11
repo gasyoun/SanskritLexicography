@@ -30,6 +30,7 @@ classifications/method-maps so they never get stranded in an ephemeral handoff:
 | Doc | What it holds |
 |---|---|
 | [ACL_ANTHOLOGY_MONITOR.md](ACL_ANTHOLOGY_MONITOR.md) | Monthly ACL-Anthology / NLP-for-DH monitor mapped onto the pwg_ru subsystems (judge · TM · terminology · structured-output · Sanskrit-NLP · data-docs · **word/sentence alignment** · **speech-translation alignment**), each entry with an `Actionable for us?` verdict. Includes the **"three publication-grade TM gaps → NLP directions"** map (verse→word alignment, per-segment QE grading, retrieval-TM). Codex automation `monthly-acl-anthology-sanskrit-nlp-monitor` appends to it. |
+| [INTERVIEWS.md](INTERVIEWS.md) | Recorded conversations with researchers/practitioners relevant to this direction (video + transcript + `Actionable for us?` verdict) — the conversation-shaped twin of the paper-shaped ACL monitor above. |
 
 
 ## Spawned as handoff chats (2026-06-23)
