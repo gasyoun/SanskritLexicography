@@ -56,10 +56,7 @@ index/hard-rules at root.
 |---|---|---|
 | 10-07-2026 | Set created (4 manuals + router + root pair) | H479/H535 |
 | 11-07-2026 | H604 consolidation (see Provenance) | H604 |
-<<<<<<< HEAD
-| 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
-=======
 | 11-07-2026 | FINDINGS duplicate-§N caveat dropped from MAINTAINER §3 / RESEARCHER §5 after the H616 key repair; backlog item 4 closed | H616 |
->>>>>>> origin/master
+| 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
 
 _Dr. Mārcis Gasūns_

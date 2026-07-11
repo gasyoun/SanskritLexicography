@@ -9,9 +9,8 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
-## [1.5.1] - 2026-07-11
+## [1.5.2] - 2026-07-11
 
-<<<<<<< HEAD
 ### Added — RussianTranslation deep manual (H606)
 - New [`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md):
   first subsystem deep manual per the
@@ -22,7 +21,9 @@ then **cut a new version every time the changelog is updated** (promote
   census with destructive-on-rerun table, data-assets/rights boundary).
   Fact-checked against sources; router row, PROFILE queue flip, and metadoc
   revision row in the same change. Fable 5 (`claude-fable-5`), 11-07-2026.
-=======
+
+## [1.5.1] - 2026-07-11
+
 ### Fixed — FINDINGS.md duplicate section keys (H616)
 - Repaired the seven accidentally duplicated `§N` citation keys found by the
   H604 fact-check: the later twin of each pair renumbered to a fresh key with a
@@ -41,7 +42,6 @@ then **cut a new version every time the changelog is updated** (promote
   [`docs/manuals/MAINTAINER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) §3
   and [`docs/manuals/RESEARCHER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md) §5;
   metadoc backlog item 4 closed.
->>>>>>> origin/master
 
 ## [1.5.0] - 2026-07-11
 
