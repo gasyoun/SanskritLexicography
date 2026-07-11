@@ -31,7 +31,9 @@ index/hard-rules at root.
    [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
    queue — H606 (RussianTranslation) ✅ done 11-07-2026
    ([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md));
-   H607 (HeadwordLists), H608 (papers/book/docs_site) still queued.
+   H608 (papers/book/docs_site) ✅ done 11-07-2026
+   ([PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md));
+   H607 (HeadwordLists) still queued.
 2. ⬜ Refresh the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) on the next
    monthly pass — they are staleness-prone by design; verify against
    `.ai_state.md` first.
@@ -58,5 +60,6 @@ index/hard-rules at root.
 | 11-07-2026 | H604 consolidation (see Provenance) | H604 |
 | 11-07-2026 | FINDINGS duplicate-§N caveat dropped from MAINTAINER §3 / RESEARCHER §5 after the H616 key repair; backlog item 4 closed | H616 |
 | 11-07-2026 | RUSSIANTRANSLATION_DEEP_MANUAL.md added (first subsystem deep manual: mw_ru post-mortem + pwg_ru operator depth); router row + PROFILE queue flip | H606 |
+| 11-07-2026 | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) added (papers · M01 book · docs_site) + router row + PROFILE queue flip — Fable 5 (`claude-fable-5`) | H608 |
 
 _Dr. Mārcis Gasūns_

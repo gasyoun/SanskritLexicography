@@ -17,6 +17,7 @@ to read the others.
 | **Operating the RussianTranslation pipelines** — mw_ru post-mortem, pwg_ru production windows, lanes/gates/kill mechanics, script census (subsystem depth, H606) | [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) | English |
 | An **agent session** (Claude/Codex) entering this shared tree — entry protocol, hard rules, canonical-doc index | [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root, thin) | English |
 | **The human owner** — repo map, monthly delta, human gates, account protocol | [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root, thin) | Русский |
+| Doing **paper / book / docs_site work** — the publication pipeline in depth: paper lifecycle + skills, the M01 book build, rights, site build/deploy state | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (deep manual, H608) | English |
 
 Regeneration/refresh of this set is encoded in the
 [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)
