@@ -35,10 +35,10 @@ first, the language second.
 - **Series target for Book A (locked):** primary **de Gruyter *Lexicographica. Series
   Maior* (LSM)** — the field's flagship lexicography series (De Gruyter Brill imprint);
   fallback **Brill's Indological Library (BIL)**. (§7.)
-- **Readiness is unusually high.** ~13 of the proposed 15 chapters already exist as
-  journal-article drafts at **4–5/5**. The book is a *gluing + framing* job, not a
-  first-drafting job — which is exactly the "slightly reworked edition of the articles
-  glued together" MG asked for.
+- **Readiness is unusually high.** ~13 of the proposed 15 articles (now **14 chapters**
+  after the Ch. 6 merge, §3) already exist as journal-article drafts at **4–5/5**. The book
+  is a *gluing + framing* job, not a first-drafting job — which is exactly the "slightly
+  reworked edition of the articles glued together" MG asked for.
 - **The critical path is NOT writing — it is data-citability and rights.** (1) **No minted
   DOI exists anywhere** across the repos; (2) the correction dataset carries a *false* DOI;
   (3) a per-article **copyright/reuse table** is required because the book reworks the
@@ -108,9 +108,10 @@ chapter), **A37** (orthographic drift as a dater — a philology chapter).
 
 ---
 
-## 3. Book A — chapter architecture (5 parts)
+## 3. Book A — chapter architecture (5 parts, 14 chapters)
 
-The 15 articles are the chapters; the **glue** (Introduction, the Part-opening bridges,
+The 15 articles map onto **14 chapters** — 13 one-to-one, plus Ch. 6 merging A02+A33
+(ruling below) — the remaining **glue** (Introduction, the Part-opening bridges,
 Conclusion, a unified method appendix, the index) is the new writing.
 
 **Front matter / Introduction — *new*.** The two civilizations; why Sanskrit is the
@@ -130,22 +131,27 @@ testbed; the evidence-graph thesis stated; roadmap of the book. (~15–20 pp.)
 
 **Part III — Microstructure: inside the entry**
 - Ch. 5 ← **A16** — the block economy of Monier-Williams (the European entry, anatomized).
-- Ch. 6 ← **A02** — sense inheritance: condensation, survival, the citation advantage.
-- Ch. 7 ← **A33** — sense *ordering*: genetic vs historical (PWG/MW vs Apte/Kochergina).
-- Ch. 8 ← **A04** — the indigenous entry: recovering the kośa/Pāṇinian apparatus on its own
+- Ch. 6 ← **A02 + A33** — senses: inheritance and order. Merged 10-07-2026 (MG ruling on
+  H505's `@DECIDE`, [LITERATURE_CROSSWALK.md §5](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)):
+  A02's condensation/survival/citation-advantage material as the chapter's first half, A33's
+  sense-*ordering* material (genetic vs historical, PWG/MW vs Apte/Kochergina — reframed per
+  the crosswalk as an empirical test of Apresjan's ordering principle against the European
+  Sanskrit family, not a restatement of it) as the second half, "senses: inheritance and
+  order." Collapses the book to **14 chapters** — see §4/§9 below.
+- Ch. 7 ← **A04** — the indigenous entry: recovering the kośa/Pāṇinian apparatus on its own
   terms (the "zero means nothing" doctrine).
-- Ch. 9 ← **A35** — comparative derivation: Pāṇinian *vyutpatti* across ten lexica.
+- Ch. 8 ← **A35** — comparative derivation: Pāṇinian *vyutpatti* across ten lexica.
 
 **Part IV — Mediostructure & the citation apparatus**
-- Ch. 10 ← **A05** — cross-reference graphs and descent (stemmatics of the family).
-- Ch. 11 ← **A08** — two citation registers: `<ls>` (European) vs *iti* (indigenous).
-- Ch. 12 ← **A50** — what the tradition cites: the citation-frequency graph.
-- Ch. 13 ← **A10** — apparatus, not errors: shared inheritance as a forensic signal
+- Ch. 9 ← **A05** — cross-reference graphs and descent (stemmatics of the family).
+- Ch. 10 ← **A08** — two citation registers: `<ls>` (European) vs *iti* (indigenous).
+- Ch. 11 ← **A50** — what the tradition cites: the citation-frequency graph.
+- Ch. 12 ← **A10** — apparatus, not errors: shared inheritance as a forensic signal
   (MW inherited the Petersburg lexicon).
 
 **Part V — The living dictionary**
-- Ch. 14 ← **A34** — Renou's registers as an orthogonal axis (usage/register labels).
-- Ch. 15 ← **A12** — fifty thousand corrections: the error typology of twelve years of
+- Ch. 13 ← **A34** — Renou's registers as an orthogonal axis (usage/register labels).
+- Ch. 14 ← **A12** — fifty thousand corrections: the error typology of twelve years of
   collaborative maintenance — the field-unique dataset.
 
 **Conclusion — *new*.** The evidence graph as a general model; FAIR infrastructure; what
@@ -157,7 +163,7 @@ the two traditions teach lexicography at large. (~10–15 pp.)
 
 | Bucket | Content | Effort |
 |---|---|---|
-| **Already drafted (4–5/5)** | 13 of 15 chapters exist as referee-passed article drafts (all but A40 data-only and A50 prose-1/5) | *Convert* journal→book: strip article front/back matter, unify voice, de-duplicate shared method into Ch. 2 |
+| **Already drafted (4–5/5)** | 13 of 15 articles exist as referee-passed drafts (all but A40 data-only and A50 prose-1/5); Ch. 6 draws on two of them (A02+A33) | *Convert* journal→book: strip article front/back matter, unify voice, de-duplicate shared method into Ch. 2; Ch. 6 additionally needs the two articles' prose interleaved into one chapter, not just concatenated |
 | **Data-ready, prose-thin** | A40 (data 4/5), A50 (data 4/5) | Write ~1 chapter of prose each atop committed data |
 | **New writing from scratch** | Introduction, 5 Part-bridges, Conclusion, unified method appendix, index, cross-chapter connective tissue | The genuine drafting load |
 
@@ -165,7 +171,8 @@ the two traditions teach lexicography at large. (~10–15 pp.)
 the order of **~180–220 pp** of existing prose; after journal→book conversion (which *removes*
 duplicated method/lit-review) plus ~40–50 pp of new framing, a realistic target is
 **~320–380 pp**. Roughly **60–70% of the raw prose already exists** — the book is closer to
-done than a from-scratch monograph by a wide margin.
+done than a from-scratch monograph by a wide margin. The Ch. 6 merge does not change this
+estimate materially — it consolidates existing prose rather than adding or cutting content.
 
 ---
 
@@ -328,9 +335,10 @@ artifact to draft (open item, §11).
   mostly *gluing*, not building.
 - **P-numbering drift** — the ROADMAP's P1–P6 ≠ csl-atlas `PUBLICATIONS.md` P1–P6; always
   map chapters through the **A-IDs** here, not P-numbers.
-- **Anti-salami clusters** — Ch. 6/7 (A02↔A33), Ch. 8/9 (A04↔A35), Ch. 10 (A05↔A03↔A07),
-  Ch. 11/12 (A08↔A50) attack neighboring objects; inside one book they must be *sections
-  that cross-reference*, not chapters that re-derive each other.
+- **Anti-salami clusters** — Ch. 6 itself now merges A02↔A33 (10-07-2026 ruling, no longer
+  a cross-chapter risk); Ch. 7/8 (A04↔A35), Ch. 9 (A05↔A03↔A07), Ch. 10/11 (A08↔A50) still
+  attack neighboring objects; inside one book they must be *sections that cross-reference*,
+  not chapters that re-derive each other.
 - **M01 registry entry understates scope** — it says "from A01–A06"; the true source set is
   the 15 above (atlas + MWS + csl-orig + observatory + SanskritLexicography). Reconcile M01.
 
@@ -371,8 +379,14 @@ Still open:
   [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
   (grounding map per chapter, gap analysis, competing-works positioning for the proposal,
   comparative part-bridge recommendation, chapter-by-chapter abandonment audit — no cuts;
-  Ch. 2/3/12/13/14 need named reframes, Ch. 7 merge question parked as `@DECIDE`). Library
-  index: [LEXICOGRAPHY_MANUALS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/LEXICOGRAPHY_MANUALS.meta.md).
+  original Ch. 2/3/12/13/14 need named reframes [renumbered above], Ch. 7 merge question
+  parked as `@DECIDE`). Library index:
+  [LEXICOGRAPHY_MANUALS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/LEXICOGRAPHY_MANUALS.meta.md).
+
+**Ruled 10-07-2026 (MG):** the Ch. 7 `@DECIDE` above is resolved as **(b) — fold into
+Ch. 6** as its second half ("senses: inheritance and order"), collapsing the book to
+**14 chapters** (§3 chapter list updated above). The standalone-corpus-methods-chapter
+fork (crosswalk §4.2) remains open, unaffected by this ruling.
 
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
