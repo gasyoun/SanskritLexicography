@@ -106,6 +106,26 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§41. The Sanskrit dictionary-platform landscape, probed live](#41-the-sanskrit-dictionary-platform-landscape-probed-live) — michaelmeyer.fr = 41 dicts w/ per-sense scan links; Heritage Inria bot-walled; DCS HTTPS broken; VedaWeb → Tekst; Cologne license is BY-**SA**, not NC.
 - 🟠 [§47. Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it](#47-heritage-data-is-acquirable-despite-the-anubis-wall--via-a-github-mirror-the-morphology-xml-is-not-in-it) — gitlab.inria.fr walled too; mirror [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources) (03-2025, LGPLLR) has DICO + MW-aligned pages + freq TSVs; inflected-form XML only via install-time/walled page.
 - 🟡 [§59. Böhtlingk's Indische Sprüche (both editions) already fully digitized in sanskrit-lexicon-scans](#59-böhtlingks-indische-sprüche-both-editions-already-fully-digitized-in-sanskrit-lexicon-scans-not-just-sanskrit-lexicon) — check funderburkjim personal repos + sanskrit-lexicon-scans org before assuming a Cologne primary source isn't digitized yet.
+- 🟠 [§48. VedaWeb 2.0's resource export is an async task behind a pickup-key, not a direct GET — and the server went unresponsive mid-attempt](#48-vedaweb-20s-resource-export-is-an-async-task-behind-a-pickup-key-not-a-direct-get-and-the-server-went-unresponsive-mid-attempt)
+- 🟠 [§49. MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's "current" dictionary is a different-scope asset than the 2014 reader stem list](#49-mwheritage-coverage-highlighting-is-a-duplicate-anchor-pattern-not-a-css-class-and-the-mirrors-current-dictionary-is-a-different-scope-asset-than-the-2014-reader-stem-list)
+- 🟠 [§50. CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026](#50-cdsl-display-paths-are-not-uniformly-2020web-and-two-new-digitizations-landed-in-june-2026)
+- 🟠 [§51. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered](#51-huet-correspondence-predates-this-session-2021-the-morphology-xml-gate-was-already-resolved-in-writing-direct-download-urls-recovered)
+- 🟡 [§52. Heritage vs kosha forms diff: the small raw overlap is mostly convention + model difference, and "disagreements" are two-thirds lemmatization policy, not error](#52-heritage-vs-kosha-forms-diff-the-small-raw-overlap-is-mostly-convention-model-difference-and-disagreements-are-two-thirds-lemmatization-policy-not-error)
+- 🔴 [§53. The WIL etymology extraction's affix field is ~half noise — Wilson "outlier" figures are substantially a measurement artifact](#53-the-wil-etymology-extractions-affix-field-is-half-noise-wilson-outlier-figures-are-substantially-a-measurement-artifact)
+- 🟡 [§55. `gen_opt_harness2.py` output-budget: coarser wins on both knobs, in opposite directions](#55-gen_opt_harness2py-output-budget-coarser-wins-on-both-knobs-in-opposite-directions)
+- 🟡 [§56. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary](#56-dicos-entry-anchors-nest-three-structural-roles-under-one-html-class-only-one-is-a-true-entry-boundary)
+- 🟡 [§57. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent](#57-samskrtamruz-is-id-addressed-with-no-name-lookup-deep-linking-needs-a-scraped-rootid-table-8-primer-basic-roots-are-absent)
+- 🟡 [§58. PWG-RU promoted store has input-level provenance, but old RU rows lacked exact model versions](#58-pwg-ru-promoted-store-has-input-level-provenance-but-old-ru-rows-lacked-exact-model-versions)
+- 🟠 [§65. 6.6 % of the DeepSeek corpus word-alignments ground to nothing in their verse](#65-66-of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse)
+- 🔴 [§66. The DCS `QL` frequency workbook's `SLP1` and length columns are truncated at ṣṭh/ḍh clusters](#66-the-dcs-ql-frequency-workbooks-slp1-and-length-columns-are-truncated-at-ṣṭhḍh-clusters)
+- 🟠 [§67. In PWG, article size dwarfs every "parametric" statistic you can extract from the entry](#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry)
+- 🟠 [§68. The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant](#68-the-sanskrit-spellchecker-landscape-one-dormant-demo-one-license-unsettled-543k-wordlist-no-occupant)
+- 🟡 [§69. Hand-transcribed telemetry cannot adjudicate code-vs-infra — and a local-only ledger silently swaps your denominator](#69-hand-transcribed-telemetry-cannot-adjudicate-code-vs-infra-and-a-local-only-ledger-silently-swaps-your-denominator)
+- 🟡 [§70. pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense](#70-pwg_ru-tm-composite-grade-a-is-consensus-gated-57-and-a-reference-free-surface-qe-cannot-detect-wrong-sense)
+- 🟡 [§72. VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk](#72-vedawebs-id_gra-token-field-is-the-grassmann-l-entry-number-no-fuzzy-text-matching-needed-for-a-gravedaweb-crosswalk)
+- 🟠 [§73. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field](#73-vedaweb-20s-cc-by-40-for-everything-claim-is-not-machine-confirmed-only-236-catalog-resources-carry-an-explicit-license-field)
+- 🟡 [§75. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers](#75-the-full-devībhāgavata-purāṇa-sanskrit-is-not-on-gretil-only-the-devigita-fragment-the-complete-mūla-lives-on-sanskritdocumentsorg-without-dbhp_-markers)
+- 🟠 [§76. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered](#76-dcs-2026-sqlite-carries-531747-sense-annotated-tokens-m_wordsem-but-no-local-idgloss-inventory-gold-scored-wsd-against-mw-senses-is-blocked-until-the-inventory-is-recovered)
 
 ---
 
@@ -1197,12 +1217,12 @@ needed. Two key-normalisation traps found building the crosswalk: DICO prefixes 
 nouns with a bare `U` that MW's `H_` anchor lacks (`Uaadinaatha` vs `H_aadinaatha`), and
 MW's plain anchor drops the `#N` homonym-disambiguation suffix DICO always keeps
 (`a.mzaka` vs `a.mzaka#1`/`#2`) — both are worked around in
-[`heritage_mw_crosswalk.py`](HeadwordLists/heritage_mw_crosswalk.py), lifting anchor
+[`heritage_mw_crosswalk.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py), lifting anchor
 resolution from 92.5% to 97.6% of covered entries.
 
 **Separately:** the mirror's `DICO/` (current, 38,343 unique stem keys) is not a version
 bump of the 2014 reader-export stem list
-([`then-2014/21562-huet-velthius.txt`](HeadwordLists/then-2014/21562-huet-velthius.txt),
+([`then-2014/21562-huet-velthius.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/21562-huet-velthius.txt),
 21,055 keys) — it is the **full current dictionary**, a different-scope asset. Naively
 diffing the two and reporting "61% more stems since 2014" would be misleading: the 2014
 list is a *reader's* curated corpus-driven selection, and the fuller current dictionary
@@ -1211,9 +1231,9 @@ list's 86.2%/60.0%) simply because it includes more of the dictionary's grammati
 long tail (affix entries, comparative/superlative derived forms) that the reader's
 selection filtered out — not because the underlying lexicon regressed.
 
-Evidence: [HERITAGE_MIRROR_INVENTORY.md](HeadwordLists/HERITAGE_MIRROR_INVENTORY.md),
-[Huet-INRIA-Wordlist-vs-Cologne.md §6](HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md#6-current-mirror-vs-the-2014-export-03-07-2026),
-[mw_heritage_crosswalk.md](HeadwordLists/mw_heritage_crosswalk.md) — H099 Phases 0–2,
+Evidence: [HERITAGE_MIRROR_INVENTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/HERITAGE_MIRROR_INVENTORY.md),
+[Huet-INRIA-Wordlist-vs-Cologne.md §6](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md#6-current-mirror-vs-the-2014-export-03-07-2026),
+[mw_heritage_crosswalk.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.md) — H099 Phases 0–2,
 03-07-2026.
 
 Implication: any future MW↔Heritage alignment work should read coverage off the
