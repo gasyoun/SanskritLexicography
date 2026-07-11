@@ -1,16 +1,16 @@
 ---
 paper_id: A40
 title: "Twelve Years of Headwords: A Controlled 2014-vs-2026 Census of the Cologne Digital Sanskrit Dictionaries and Their Corpus Grounding"
-status: draft (skeleton, 3/5) — scaffolded 2026-06-26, advanced 2026-07-08 (H348)
-readiness: 3/5
+status: draft (full prose, 4/5) — scaffolded 2026-06-26, advanced 2026-07-08 (H348), prose completed 2026-07-11 (H675)
+readiness: 4/5
 venue: "IJL / eLex"
 author: "Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru"
-data_source: "HeadwordLists/NOW_VS_THEN.md (census complete; figures regenerate from headword_diff.py against pinned csl-orig) + VisualDCS/dcs_lemma_summary.json (DCS-2021 attested lemmas; draft tables) + A38 / VisualDCS DCS-2026 release (98,606 lemmas — submission denominator, recompute pending)"
+data_source: "HeadwordLists/NOW_VS_THEN.md (census complete; figures regenerate from headword_diff.py against pinned csl-orig) + VisualDCS/dcs_lemma_summary.json (DCS-2021 attested lemmas; draft tables) + A38 / VisualDCS DCS-2026 release (98,606 lemmas — submission denominator, recompute pending) + data/HEADWORD_OVERLAP_UNION15_2026.md (H684 pairwise-overlap matrix, cited not recomputed)"
 ---
 
 # Twelve Years of Headwords: A Controlled 2014-vs-2026 Census of the Cologne Digital Sanskrit Dictionaries and Their Corpus Grounding
 
-_Created: 26-06-2026 · Last updated: 08-07-2026_
+_Created: 26-06-2026 · Last updated: 11-07-2026_
 
 > **Draft status (2026-07-08, H348; scaffolded 2026-06-26).** Manuscript skeleton built
 > directly on the completed census in
@@ -28,12 +28,21 @@ _Created: 26-06-2026 · Last updated: 08-07-2026_
 > corpus-unattested ≠ ghost-word caveat and the lemmatizer-is-model-output caveat made
 > first-class (§3.4, §6); claim→artifact inventory (§8) and companion-paper scope block
 > (§9) added; the "eight format-migrated lists" miscount corrected to six.
+> **Prose completed 11-07-2026 (readiness 3/5 → 4/5, H675, Fable 5 `claude-fable-5`):**
+> the full 18-row comparable table pasted into §4.2 (source + n + date under every
+> table); §4.3 removals typology written from the committed 40-item samples; new §4.5
+> citing the H684 pairwise-overlap matrix
+> ([HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md))
+> instead of recomputing; the stale "union = 94,753" figure resolved (it is the MW∩PWG
+> intersection); discussion and claim inventory extended. Strictly prose over locked
+> data — no new derivations.
 > **Open before submission:** (1) pin a single csl-orig commit SHA and reconcile the
 > AP 88,869/88,867 live-drift discrepancy; (2) recompute the attestation table against
-> the DCS-2026 denominator (98,606) with a homograph control — until then the
-> per-dictionary rates in §4.4 are **illustrative upper bounds** (bare-lemma join,
-> DCS-2021); (3) venue + byline (a human decides); (4) add the A38 citation once its
-> DOI is minted.
+> the DCS-2026 denominator (98,606) with a homograph control and a frequency-band
+> breakdown — until then the per-dictionary rates in §4.4 are **illustrative upper
+> bounds** (bare-lemma join, DCS-2021); (3) adjudicate the full removal lists (§4.3
+> classifies the committed samples only); (4) venue + byline (a human decides); (5) add
+> the A38 citation once its DOI is minted.
 
 ## Abstract
 
@@ -210,6 +219,10 @@ conclusion. The cross-dict union behind this join —
 [`union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv), 323,425 headwords
 across 15 dictionaries with gender-confirmed feminine folding — is documented in
 [`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md).
+(One number to never re-propagate: older internal references described this union as
+"94,753" — that figure is actually the **MW∩PWG shared-headword count**, an intersection
+mislabeled as the union, resolved in
+[HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md).)
 
 > **TODO (homograph control).** Replace or supplement the bare-lemma join with a control that
 > bounds the homograph inflation (count distinct homograph senses, or intersect on a
@@ -233,7 +246,9 @@ The framing A39 applies to its root tables applies here unchanged.
 Across the comparable lists, the headword inventory grows from **1,055,081 (2014) to
 1,206,384 (2026)** — **+171,644 added, −20,341 removed, +14.3% net.** For scale, the grand
 total of all 26 snapshots' 2014 line counts (including the format-migrated lists, which must
-not be aggregated for growth) is **1,721,983**.
+not be aggregated for growth) is **1,721,983**. (Source:
+[NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)
+TOTAL row, n = 18 comparable lists, then = 2014-10-05 / now = 2026 extraction.)
 
 ### 4.2 Growth is additive but uneven
 The net growth is concentrated in a few actively-edited dictionaries; the canonical large
@@ -247,24 +262,78 @@ lexica are essentially frozen. Verified per-dictionary figures (comparable lists
 | PWK — Böhtlingk kl. (key2) | 133,741 | 155,688 | 23,265 | 1,318 | 99.0% | +16.4% |
 | PWK — Böhtlingk kl. (key1) | 131,918 | 151,349 | 19,617 | 186 | 99.9% | +14.7% |
 | GRA — Grassmann RV (key1) | 10,315 | 11,108 | 975 | 182 | 98.2% | +7.7% |
+| VCP — Vācaspatyam (key2) | 47,145 | 48,638 | 4,360 | 2,867 | 93.9% | +3.2% |
 | VCP — Vācaspatyam (key1) | 47,107 | 48,636 | 2,514 | 985 | 97.9% | +3.2% |
 | SKD — Śabdakalpadruma (key1) | 40,551 | 40,817 | 807 | 541 | 98.7% | +0.7% |
+| SKD — Śabdakalpadruma (key2) | 40,595 | 40,817 | 2,281 | 2,059 | 94.9% | +0.5% |
 | MW — Monier-Williams (key1) | 193,978 | 194,084 | 754 | 648 | 99.7% | **+0.1%** |
+| BUR — Burnouf (key2) | 19,238 | 19,251 | 297 | 284 | 98.5% | +0.1% |
+| CAE — Cappeller Eng. (key2) | 39,256 | 39,280 | 3,000 | 2,976 | 92.4% | +0.1% |
+| VEI — Vedic Index (key1) | 3,703 | 3,704 | 18 | 17 | 99.5% | +0.0% |
+| PWG — Petersburg gr. (key2) | 110,402 | 110,438 | 380 | 344 | 99.7% | +0.0% |
 | PWG — Petersburg gr. (key1) | 106,085 | 106,082 | 149 | 152 | 99.9% | **−0.0%** |
-| CCS — Cappeller (key2) | 29,317 | 29,233 | 3,328 | 3,412 | 88.4% | −0.3% |
+| MD — Macdonell (key2) | 20,108 | 20,107 | 44 | 45 | 99.8% | −0.0% |
+| INM — Sörensen Mbh. index (key2) | 9,466 | 9,454 | 89 | 101 | 98.9% | −0.1% |
+| CCS — Cappeller Germ. (key2) | 29,317 | 29,233 | 3,328 | 3,412 | 88.4% | −0.3% |
+| **TOTAL (18 comparable lists)** | **1,055,081** | **1,206,384** | **171,644** | **20,341** | — | **+14.3%** |
+
+*Source: [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)
+(n = 18 comparable lists of 26 snapshots; "then" = the 2014-10-05 frozen export, "now" =
+the 2026 re-extraction, csl-orig `4f342dc4` at scaffolding — SHA pinning gate open, §3.1).*
 
 The picture is clear: **Apte more than doubles** (+146.7%), **PWK adds ~20k headwords**
-(+14.7%), and **MW/PWG do not move** (+0.1% / −0.0%). The high-overlap-but-nonzero-churn rows
-(CCS −0.3% with 3,328 added *and* 3,412 removed) are mostly editorial re-keying rather than
-inventory change. *(TODO: paste the full comparable table from `NOW_VS_THEN.md`.)*
+(+14.7%), and **MW/PWG do not move** (+0.1% / −0.0%). Where a dictionary contributes both a
+key1 and a key2 list, the two rows agree on the direction and roughly on the magnitude —
+the key2 row always churns more (AP 3,321 vs 903 removed; SKD 2,059 vs 541) because the
+closer-to-print key also absorbs punctuation and variant-notation cleanup that the
+normalised key1 never sees. The high-overlap-but-nonzero-churn rows (CCS −0.3% with 3,328
+added *and* 3,412 removed; CAE +0.1% with ~3k in each direction) are mostly editorial
+re-keying rather than inventory change — the §4.3 typology makes this concrete. Below AP
+and PWK, genuine growth is modest and targeted: GRA +7.7%, VCP +3.2%, SKD +0.7%;
+everything else moves by well under one percent in either direction.
 
 ### 4.3 Removals as an audit signal
 The −20,341 removed headwords (present 2014, gone 2026) are merges, corrections, or accidental
 deletions; the full per-list lists are in `HeadwordLists/_diff/<list>.removed.txt`. The
 distribution is informative on its own: Apte's 903 key1 removals against +53,742 additions read
 as a thorough re-edit, whereas PWG's 152 removals against 149 additions read as targeted
-corrections. *(TODO: sample-classify a slice — e.g. AP's 903 key1 removals — into "genuine
-correction" vs "possible data loss" so the removal count reads as QA, not churn.)*
+corrections.
+
+A surface-shape reading of the committed 40-item samples (inline in
+[NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)
+§ "Genuine changes") shows that the bulk of the removals are **key hygiene, not lexical
+loss** — and that each dictionary's removals have a characteristic signature:
+
+- **Field leakage repaired.** Whole classes of removed "headwords" are visibly not
+  headwords: trailing commas baked into the key (AP key2 `ABicaraRika,`, CCS `ASrayaRa,`),
+  gender tags leaked from the article body (SKD key2 `AKuBuk [j] puM`, `ApaH [s] klI`),
+  truncated bracket fragments (MD `[Gu`, `[Kal`, `[paYc`), and degree-sign stubs of
+  compound members (MD `a°`, `dus°`; CAE `(°pAd)`, `(°zA/h)`).
+- **Legacy-encoding residue purged.** SKD key2's `AQ2akI`, `AkrIq2aH` carry the digit `2`
+  of the pre-SLP1 numeric transliteration inside an otherwise-migrated list; their removal
+  is completed format migration, not deletion.
+- **Variant-notation normalization.** VCP key2's parenthetical alternates (`A(a)kOSala`,
+  `ASA(qa)Q*a`) and PWK key2's asterisked reconstructions (`*hananIya`, `*jaMpatI`) encode
+  editorial apparatus in the key; the 2026 keys carry the apparatus elsewhere.
+- **Placeholder stubs dropped.** BUR's leading-asterisk entries (`*Bro`, `*Cz`, `*kalla` —
+  284 of them, against 297 additions) read as scaffolding of the digitization, removed
+  once the real entries landed.
+- **Misprint corrections.** MW's 648 removals are dominated by recognizable typos of known
+  lemmas (`AdipurAna`, `BinrArTa`, `DAtutaraMginI`), consistent with the targeted
+  correction traffic MW receives; the same shape recurs in PWG (`SUrya` misspellings,
+  `BaganarAyaM`) and SKD key1 (`AnupUrbbI`-type doubled-consonant orthography).
+- **The residue that matters.** Not every sampled removal is self-evidently malformed:
+  GRA's 182 (`Are`, `Dehi`, `Dya`) and INM's 101 (`ahas`, `akfti`, `apagA`) include
+  plain, well-formed lemmas. These two lists — precisely because their removals do *not*
+  look like hygiene — are where the audit reading earns its keep: each such removal is
+  either a deliberate merge or a candidate accidental loss, and only entry-level review
+  distinguishes the two.
+
+This classification covers the committed samples only; adjudicating the full 20,341-item
+lists (in particular the GRA/INM plain-lemma residue) is an open submission gate (see
+draft-status block). The point the samples already establish stands: a removal count is
+not churn but a **stratified QA signal**, and most of its mass is the digitization
+cleaning its own keys.
 
 ### 4.4 Corpus grounding separates the lexica
 Joining each dictionary's headwords against the **83,239 DCS-2021 attested lemmas** (bare-lemma,
@@ -281,14 +350,65 @@ Joining each dictionary's headwords against the **83,239 DCS-2021 attested lemma
 | AP — Apte | 88,867 | 19,338 | 21.8% |
 | SKD — Śabdakalpadruma | 40,817 | 5,741 | **14.1%** |
 
+*Denominator: DCS-2021, the 83,239 attested SLP1 lemmas of
+[dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json)
+(one denominator per table, §3.3); numerators = current 2026 key1 lists; bare-lemma join,
+upper bound (§3.4). Computed 2026-06-26–2026-07-08.*
+
 Union-wide, **61,340 of 323,425** headwords match a DCS-2021 attested key (**19.0%**, upper
-bound). The separation tracks each dictionary's *purpose*: the corpus-facing Vedic lexica
+bound; same denominator and join as the table above). The separation tracks each
+dictionary's *purpose*: the corpus-facing Vedic lexica
 (VEI 69.8%, GRA 68.1% — both built directly off a fixed corpus) sit at the top; the
 corpus-detached encyclopaedic-traditional lexica (SKD 14.1%) sit at the bottom; the general
 descriptive dictionaries (MW, PWG, PWK ~29–39%) sit in between. This ~5× spread is the central
-empirical result of the corpus-grounding analysis. *(TODO: recompute with the homograph control
-and add the freq-band breakdown — how much of each dict's attested share is hapax band-1 vs
-very-common band-5 — then state the controlled, not the ceiling, figures as the headline.)*
+empirical result of the corpus-grounding analysis. The submission-headline recompute —
+DCS-2026 denominator (98,606, A38), homograph control, and the frequency-band breakdown of
+each dictionary's attested share — is an open gate (§3.3–§3.4 and the draft-status block);
+the ranking claim, resting on a ~5× spread, is robust to it in a way the individual rates
+are not.
+
+### 4.5 The union's internal structure: what overlap adds to growth
+
+The census (§4.2) and the grounding rates (§4.4) treat each dictionary separately; the
+pairwise-overlap matrix over the same 15-dictionary union — computed once and committed as
+[HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md)
+(with machine-readable
+[headword_overlap_matrix.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv)
+and
+[headword_unique_counts.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_unique_counts.tsv))
+— supplies the cross-dictionary context the per-dictionary tables cannot. Three of its
+findings bear directly on how this paper's results should be read:
+
+1. **The collection has one lexicographic core.** The highest Jaccard overlaps are
+   CAE–CCS 0.672 (Cappeller's English and German editions of one dictionary), PWG–PWK
+   0.630 (Böhtlingk large vs small) and MW–PWK 0.597; MW∩PWG share **94,753** headwords.
+   The school-size dictionaries are almost fully subsumed in that Böhtlingk–Monier-Williams
+   lineage (CCS 0.6% unique, CAE 1.7%, MD 2.0% — and PWG itself only 2.4%, its inventory
+   surviving nearly whole in its own abridgements). A headline "sum of all headwords"
+   therefore counts the same lineage many times over; union-based figures (323,425
+   distinct keys, of which 142,673 = 44.1% occur in exactly one dictionary) are the
+   honest denominators.
+2. **Apte's growth is not copying.** The census's most dramatic mover (+146.7%, §4.2) is
+   also, after MW, the largest *unique* inventory in absolute terms — 35,762 headwords
+   (40.3% of AP) occur in no other dictionary of the union. The 2014–2026 re-edit did not
+   backfill Apte from the Böhtlingk–MW core; it added material the rest of the collection
+   does not have.
+3. **The isolates are isolated for different reasons.** BHS (58.7% unique — Buddhist
+   Hybrid Sanskrit), SKD (42.6% — the indigenous Sanskrit–Sanskrit encyclopaedia) and AP
+   (40.3%) are near-disjoint from the Vedic lexica (SKD–VEI Jaccard 0.008). Combined with
+   §4.4, the axes separate cleanly: SKD is both the least corpus-grounded *and* among the
+   most lexically isolated — a genuinely different lexicographic world, not a redundant
+   copy of the core.
+
+*Source: [HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md)
+(H684, computed 11-07-2026 over the committed
+[union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv),
+n = 323,425 keys, 15 dictionaries; exact SLP1 key1 equality, homographs collapsed,
+gender-confirmed feminine folds per
+[UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)).
+Cited, not recomputed. Note the matrix's per-dictionary totals sit marginally below §4.2's
+list counts (MW 193,852 vs 194,084) — the union key collapses homographs and folds 237
+feminines, so its totals are distinct-key counts, not list line counts.*
 
 ## 5. Discussion
 
@@ -305,9 +425,20 @@ most corpus-grounded, the large traditional Śabdakalpadruma the least, with the
 dictionaries in between. This is the kind of axis that a raw headword count actively hides — MW
 and SKD differ by ~5× in headwords *and* ~2× in grounding, in opposite directions.
 
-Read together, the two measurements argue that a dictionary collection is better described by a
-**growth profile** and a **grounding rate** than by a single inventory number; both are cheap to
-recompute and both expose structure a count cannot.
+The overlap structure (§4.5) qualifies both portraits. Because the school dictionaries are
+nearly subsumed in the Böhtlingk–Monier-Williams lineage, the collection's headline size
+overstates its lexical diversity by roughly the factor the union corrects (1.72M snapshot
+lines vs 323,425 distinct union keys); and because Apte's explosive growth lands mostly in
+its own 40.3%-unique inventory, the census's biggest mover is enriching the union, not
+duplicating the core. Growth, grounding and uniqueness are three independent axes — Apte
+is high-growth, low-grounding, high-uniqueness; GRA is low-growth, high-grounding,
+low-uniqueness; SKD is low-growth, low-grounding, high-uniqueness — and no single
+inventory number predicts any of them from the others.
+
+Read together, the measurements argue that a dictionary collection is better described by a
+**growth profile** and a **grounding rate** — read against the union's overlap structure —
+than by a single inventory number; all are cheap to recompute and all expose structure a
+count cannot.
 
 ## 6. Limitations
 
@@ -361,6 +492,8 @@ flagged as such):
 | 6 | Union-wide attestation 61,340 / 323,425 = 19.0% (upper bound) | §4.4 | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) + [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) | ✅ committed (same recompute pending) |
 | 7 | DCS-2026 denominator = 98,606 distinct attested lemmas | §3.3 | A38 / [VisualDCS CHANGELOG.md](https://github.com/gasyoun/VisualDCS/blob/main/CHANGELOG.md) + [m6_validation.md](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m6_validation.md) | ✅ committed; ⬜ cite A38 DOI when minted |
 | 8 | 2014 snapshot provenance (frozen export, first committed 2014-10-05, "Cologne headwords") | §3.1 | git history of [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | ✅ committed |
+| 9 | Union overlap structure: MW∩PWG 94,753; CAE–CCS Jaccard 0.672, PWG–PWK 0.630; AP 40.3% / BHS 58.7% / SKD 42.6% unique; 142,673 singletons (44.1%) | §4.5 | [HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md) + [headword_overlap_matrix.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv) + [headword_unique_counts.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_unique_counts.tsv) (H684) | ✅ committed |
+| 10 | Removals are dominated by key hygiene (field leakage, legacy encoding, variant notation, stubs, misprints), with a GRA/INM plain-lemma residue | §4.3 typology | 40-item samples inline in [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) § "Genuine changes" | ✅ committed samples; ⬜ full-list adjudication pending |
 
 ## 9. Scope versus companion papers (anti-salami)
 
@@ -384,7 +517,12 @@ The census, every figure, and the comparable-vs-format-migrated verdicts live in
 [`now-2026/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026)). Frozen 2014 snapshots are in
 [`then-2014/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014); the cross-dict union and DCS/Catalan/Huet coverage
 tags are in [`../HeadwordLists/union/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) (builder
-[`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py)). The corpus denominator is
+[`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py)). The pairwise-overlap
+matrix (§4.5) is
+[`../data/HEADWORD_OVERLAP_UNION15_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md)
+(generator
+[`headword_overlap_matrix.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.py)).
+The corpus denominator is
 [`../../VisualDCS/dcs_lemma_summary.json`](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json) (DCS-2021,
 83,239 attested SLP1 lemmas, CC BY). Reproduction requires pinning the csl-orig commit (TODO:
 SHA — `4f342dc4` at scaffolding) and stating the single DCS release used. The work is a census and
