@@ -19,6 +19,18 @@ to read the others.
 | **The human owner** — repo map, monthly delta, human gates, account protocol | [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root, thin) | Русский |
 | Doing **paper / book / docs_site work** — the publication pipeline in depth: paper lifecycle + skills, the M01 book build, rights, site build/deploy state | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (deep manual, H608) | English |
 
+## Subsystem deep manuals
+
+Below the audience layer, each major subsystem gets a dedicated deep manual
+(queue + status in
+[PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)):
+
+| Subsystem | Deep manual |
+|---|---|
+| [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) — mw_ru post-mortem, pwg_ru production operation | [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) |
+| [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) — cross-dict analytics, union, print-readiness | [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) + [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) + [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) — publication pipeline | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) |
+
 Regeneration/refresh of this set is encoded in the
 [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)
 skill; the per-repo overlay it reads is
