@@ -28,7 +28,7 @@ All counts and states below verified against the tree on **11-07-2026**.
 |---|---|---|
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Working directory for article manuscripts homed in *this* repo | 16 files: 13 `.md` (drafts, referee memos, cover letters, verification notes for A33/A34/A35/A36/A40/A42/A43) + 3 evidence `.csv` (A36) |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Build folder for the single-authored monograph **M01**, *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph* | [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) · [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) · [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) · [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) · [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) · [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) (2 sample chapters: ch02, ch05) |
-| [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | ZettelkastenWiki static-site builder publishing the pwg_ru research-conventions docs | [build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py) (103 lines) · [test_docs_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py) (4 tests) · [wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research) (10 docs, verbatim copies) |
+| [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | ZettelkastenWiki static-site builder publishing the pwg_ru research-conventions docs | [build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py) (103 lines) · [test_docs_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py) (4 tests) · [wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research) (10 docs, copies — sync caveats in §5.1) |
 
 One registry rules them all:
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
@@ -129,8 +129,8 @@ Three different documents use "P1–P6" for **different things**:
   citation registers · P4 indigenous microstructure · P5 50k corrections ·
   P6 learner layer);
 - csl-atlas's own `PUBLICATIONS.md` P-numbering (different assignment);
-- the ROADMAP's 10-chapter book sketch (superseded by BOOK_PLAN's 15-chapter
-  architecture).
+- the ROADMAP's 10-chapter book sketch (superseded by BOOK_PLAN's
+  15-article → 14-chapter architecture).
 
 The registry mapping as of 11-07-2026: **P1 ≈ A16, P2 ≈ A02, P3 ≈ A08,
 P4 = A30 (with csl-atlas A04 adjacent), P5 = A31 (with csl-observatory A12
@@ -148,16 +148,18 @@ map is BOOK_PLAN §2/§3.
 
 | Document | Role | Key locked decisions |
 |---|---|---|
-| [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) | the build plan: thesis, 15-chapter table, 5-part architecture, data→figure map, critical path | the 15 chapters approved (MG, 06-07-2026); series = **De Gruyter *Lexicographica. Series Maior*** primary, Brill's Indological Library fallback; **standard subscription, not OA**; A12 confirmed sole-authored (08-07-2026) |
-| [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) | draft proposal to the Brill guideline checklist (ToC + per-chapter summaries, comparables, counts, rights disclosure) | remaining `[VERIFY]` items are the author's: final title, submission date, editors-in-post check |
+| [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) | the build plan: thesis, the 15-article → **14-chapter** architecture (5 parts), data→figure map, critical path | the 15 source articles approved (MG, 06-07-2026); **Ch. 7 folded into Ch. 6** — "senses: inheritance and order", A02+A33 (MG ruling 10-07-2026, 15→14 chapters); series = **De Gruyter *Lexicographica. Series Maior*** primary, Brill's Indological Library fallback; **standard subscription, not OA**; A12 confirmed sole-authored (08-07-2026) |
+| [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) | draft proposal to the Brill guideline checklist (ToC + per-chapter summaries, comparables, counts, rights disclosure) | remaining `[VERIFY]` items are the author's: final title, submission date, editors-in-post check, word count at manuscript stage |
 | [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) | chapter → article → venue → publisher → copyright matrix | all 15 sources unpublished ⇒ copyright 100% author-held today; **no chapter rights-blocked** |
-| [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) | the 37-work manuals library read against the plan (grounding map, gap analysis, positioning) | no cuts; four mandatory reframes (Ch. 2/3/7/14); Ch. 7 keep-vs-merge parked as `@DECIDE`; top referee risk = corpus-absence induction |
+| [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) | the 37-work manuals library read against the plan (grounding map, gap analysis, positioning) | no cuts; mandatory reframes on the pre-merge Ch. 2/3/12/13/14 (BOOK_PLAN §11 wording — the crosswalk's own §0 says "2, 3, 7, 14"; the two lists never got reconciled, resolve against BOOK_PLAN §11 + the renumbered §3); the Ch. 7 keep-vs-merge fork it parked was **ruled 10-07-2026** (merged into Ch. 6); top referee risk = corpus-absence induction |
 | [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) | folder-local changelog | every book-folder change logs here under `[Unreleased]`, *in addition to* the repo-root [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) |
 | [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) | converted book-form chapters | ch02 (← A01) and ch05 (← A16) exist (H430, 09-07-2026) |
 
-The book is a **gluing job, not a drafting job**: ~13 of 15 chapters exist as
-article drafts at 4–5/5; the new writing is the Introduction, five
-part-bridges, the Conclusion, and a method appendix (BOOK_PLAN §4).
+The book is a **gluing job, not a drafting job**: the 15 approved articles
+map onto 14 chapters (13 one-to-one; Ch. 6 merges A02+A33), ~13 of the 15
+already exist as article drafts at 4–5/5; the new writing is the
+Introduction, five part-bridges, the Conclusion, and a method appendix
+(BOOK_PLAN §3/§4).
 
 ### 4.2 Article → chapter conversion procedure (the H430 recipe)
 
@@ -179,15 +181,19 @@ the next one:
 7. Log the conversion in the folder
    [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md).
 
-Housekeeping trap: the repo `.gitignore` tracks chapters only via an
-allowlist line (`!chapters/*.md`) — a new non-`.md` chapter asset needs its
-own allowlist entry or it will be silently ignored.
+Housekeeping trap: the book folder's **own**
+[.gitignore](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/.gitignore)
+ignores everything (`*`) and tracks chapters only via an allowlist line
+(`!chapters/*.md`) — a new non-`.md` chapter asset needs its own allowlist
+entry or it will be silently ignored. (The repo-root `.gitignore` has no
+chapters rule.)
 
-Anti-salami constraint (BOOK_PLAN §9): the chapter pairs A02↔A33, A04↔A35,
-A05↔A03/A07, A08↔A50 attack neighboring objects — inside the book they must
-*cross-reference*, not re-derive each other. The same discipline holds at
-article level (A51 vs A52; A42 vs A41 — each carries an explicit anti-salami
-scope block).
+Anti-salami constraint (BOOK_PLAN §9): A02↔A33 is now *inside* Ch. 6 (the
+10-07-2026 merge ruling retired it as a cross-chapter risk); the pairs still
+standing are Ch. 7/8 (A04↔A35), Ch. 9 (A05↔A03/A07), and Ch. 10/11
+(A08↔A50) — inside the book they must *cross-reference*, not re-derive each
+other. The same discipline holds at article level (A51 vs A52; A42 vs A41 —
+each carries an explicit anti-salami scope block).
 
 ### 4.3 What the rights table gates
 
@@ -211,7 +217,7 @@ From [BOOK_PLAN.md §9](https://github.com/gasyoun/SanskritLexicography/blob/mas
 updated against the registry:
 
 1. **FAIR/DOI sprint — still the top blocker.** No minted DOI exists across
-   the repos; the correction dataset (Ch. 15) carries a **false DOI**
+   the repos; the correction dataset (Ch. 14) carries a **false DOI**
    (`10.5281/zenodo.15834721` resolves to an unrelated preprint) that must be
    re-minted; `CITATION.cff` is still missing in kosha, SanskritLexicography,
    SanskritRussian. *Partial progress:* the DCS denominator's Hellwig CC-BY
@@ -226,8 +232,9 @@ updated against the registry:
    precedent.
 
 Open `@DECIDE` items for a human: Book B (handbook) home/timing; the
-автореферат question (BOOK_PLAN §10); the Ch. 7 merge fork
-(LITERATURE_CROSSWALK §5).
+автореферат question (BOOK_PLAN §10); the standalone corpus-methods-chapter
+fork (LITERATURE_CROSSWALK §4.2 — explicitly left open by the 10-07-2026
+Ch. 6 merge ruling).
 
 ---
 
@@ -248,13 +255,24 @@ repo-relative Markdown links.
 [RussianTranslation/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/research)** —
 the files under
 [docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research)
-are verbatim copies. Edit the originals, then re-copy:
+are copies. Edit the originals, then re-copy:
 
 ```
 python docs_site/build_site.py --sync
 ```
 
-Editing the wiki copy directly is a defect — the next `--sync` overwrites it.
+Editing a wiki copy directly is a defect — the next `--sync` overwrites it.
+Two sync caveats measured 11-07-2026:
+
+- **The copies drift between syncs.** Two of the ten were stale at
+  verification time: the source `README.md` gained a "Living monitors"
+  section and `sense_order_metrics.md` a 2026-07-03 reproducibility note
+  that the wiki copies lack. Run `--sync` (and re-commit) before any deploy.
+- **`merge_BU.md` has no committed source at all** — the root `.gitignore`
+  ignores `RussianTranslation/research/merge_*.md`, and `sync()` silently
+  skips missing sources, so the wiki copy is the *only* committed version of
+  that doc. For this one file the copy IS the original; `--sync` neither
+  refreshes nor overwrites it.
 
 ### 5.2 Build and test (both verified 11-07-2026)
 
@@ -335,7 +353,8 @@ Finishing any unit of publication work means updating the registries in the
   and [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md)
   before any publish action (§5.3).
 - **docs_site wiki files are generated copies** — edit
-  `RussianTranslation/research/`, then `--sync` (§5.1).
+  `RussianTranslation/research/`, then `--sync`; exception: `merge_BU.md`,
+  whose only committed version is the wiki copy (§5.1).
 - **CI does not run the docs_site tests**, and they self-skip without the
   package — verify locally (§5.2).
 - **Numbers in manuscripts are recomputed, never trusted** — the referee
