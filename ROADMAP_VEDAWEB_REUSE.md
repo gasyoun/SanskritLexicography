@@ -1,6 +1,6 @@
 # ROADMAP — VedaWeb 2.0 data reuse across the Sanskrit Lexicon repos
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 11-07-2026_
 
 Scope ruled by M.G. 03-07-2026 (4 decisions, elicited in-session): **full breadth**
 (validation + persistent feed + GRA crosswalk + meter/translation layers) · feed home =
@@ -79,7 +79,8 @@ Sonnet-tier chat in `GitHub\WhitneyRoots`.
   GRA entries (77.8%), 9,475/11,108 unique headwords (85.3%) attested ≥1× in RV. Issue open:
   [sanskrit-lexicon/GRA#52](https://github.com/sanskrit-lexicon/GRA/issues/52)
   (`content-enhancement`, Major Enhancements milestone). Finding logged:
-  [FINDINGS.md §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+  [FINDINGS.md §72](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  (renumbered from §63 on 11-07-2026).
   Handoff: [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
 
 ```
@@ -96,7 +97,8 @@ Sonnet-tier chat in `GitHub\VisualDCS`.
   finding: only 2/36 catalog resources carry an explicit `license` field** — the blanket
   "CC BY 4.0 for everything" framing above (Standing constraints) was an unverified
   assumption at triage time; see
-  [FINDINGS.md §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+  [FINDINGS.md §73](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  (renumbered from §64 on 11-07-2026).
   Triage originally parked all 4 meter/translation candidates DECIDE pending confirmation
   (Elizarenkova RU explicitly in-copyright to ~2078, Renou to ~2036). Full table + per-
   consumer effort estimates:

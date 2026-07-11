@@ -1,6 +1,6 @@
 # RussianTranslation Use Cases
 
-_Created: 28-06-2026 · Last updated: 07-07-2026_
+_Created: 28-06-2026 · Last updated: 11-07-2026_
 
 Operational scenarios for the PWG -> Russian production pipeline. The canonical
 runbook remains [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md); this
@@ -230,7 +230,7 @@ python src\build_tmx.py build --sample 1000       # small export for inspection
 ```
 
 Grades: A = strong direct-equivalence evidence · B = plausible gloss · C =
-usage/citation-only co-occurrence. Distribution is logged as FINDINGS §60.
+usage/citation-only co-occurrence. Distribution is logged as FINDINGS §70.
 Public release of the export waits on the H215 rights clearance.
 
 ---

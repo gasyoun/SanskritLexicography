@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 07-07-2026_
+_Created: 04-07-2026 · Last updated: 11-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -349,7 +349,7 @@ TM **publication-grade**: a TMX 1.4b exporter
 so the asset is consumable by standard CAT tooling, and a composite A/B/C
 quality grader ([`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py))
 so every TM row carries an evidence grade instead of implicit trust (grade
-distribution logged as FINDINGS §60). H215's remaining slices (L0 segment
+distribution logged as FINDINGS §70, renumbered from §60 on 11-07-2026). H215's remaining slices (L0 segment
 layer, oral-corpus ingest, FAIR release clearance) are open — the release
 clearance is the real blocker.
 

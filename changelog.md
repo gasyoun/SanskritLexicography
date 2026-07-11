@@ -9,6 +9,27 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-07-11
+
+### Fixed — FINDINGS.md duplicate section keys (H616)
+- Repaired the seven accidentally duplicated `§N` citation keys found by the
+  H604 fact-check: the later twin of each pair renumbered to a fresh key with a
+  one-line tombstone under the renamed heading — §60→§70 (pwg_ru TM composite
+  grade), §62→§71 (PWG case-government census), §63→§72 (VedaWeb `id_gra` =
+  GRA `<L>`), §64→§73 (VedaWeb license fields), §65→§74 (ls-graph degeneracy
+  for MW), §69→§75 (Devībhāgavata not on GRETIL). The second "§56" was a
+  verbatim double-append of §68 (spellchecker landscape, PRs #305/#307) and was
+  removed with a tombstone under §68. Header max-number marker corrected
+  (§65→§75); stale citations of the renamed twins repointed in
+  [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md),
+  [`ROADMAP_VEDAWEB_REUSE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md),
+  [`RussianTranslation/PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md),
+  [`RussianTranslation/USE_CASES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/USE_CASES.md)
+  and `RussianTranslation/.ai_state.md`; duplication caveats dropped from
+  [`docs/manuals/MAINTAINER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) §3
+  and [`docs/manuals/RESEARCHER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md) §5;
+  metadoc backlog item 4 closed.
+
 ## [1.5.0] - 2026-07-11
 
 ### Added — audience manuals
