@@ -562,3 +562,19 @@ Requeued `no_pwg_w02`'s 27 transient keys (pulled from `audit_window.report.json
 **Documented residual (not requeued further):** `_gawik_a~~h0_zz_nws00` (2× kill-timeout — infra, not content), `_kowa~~h0_zz_pw` (selfheal-nothing-resolved), plus the 10 content-defect-flagged sub-cards across both windows (`_b_azita~~h0_zz_nws00`, `_badr_a~~h0_zz_nws00`, `_badr_a~~h0_zz_sch`, `_dar_a~~h0_zz_sch`, `_gawik_a~~h0_zz_nws00`(defect+transient), `_kecar_i~~h0_zz_nws00`, `_kecar_i~~h0_zz_sch`, `_kowa~~h0_zz_nws00`, `_kowa~~h0_zz_pw`(defect+transient), `_s_alyodana~~h0_zz_nws00`) — all already promoted as `ai_translated` per the guardrail above, but flagged in `audit_window.report.json`/`window_status.json` for the G5 human review pass, not silently clean.
 
 **Next:** continue the 232-lemma queue via `no_pwg_scale_plan.py --window-size 20 --limit-windows 1 --start-index 5` (the planner's own "next window" hint after this run reused a stale `no_pwg_w02` name — a residual instance of the `w03` naming-collision gotcha noted above; always pass an explicit `--start-index` past every root already logged in this file, don't trust the hint blindly). Re-run `probe_log.py gate` before any future window.
+
+---
+
+## 2026-07-11 — no-PWG lane window `no_pwg_w05` (H255 scale drain, `no_pwg_scale_plan.py --start-index 5`) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Sonnet 5** (`claude-sonnet-5`) — 🟡 40/65 candidate sub-cards PROMOTED, residual documented
+
+Prepared cleanly with the `w04` OUT-path fix already live: 20 headwords / 44 sub-cards, cost gate GO (~$20.61 est., under the $25 ceiling).
+
+**Generation (`no_pwg_w05`, 44 cards/41 batches, `--output-budget=1`):** **Result: 23/44 non-null, 21 null** (18 kill-timeout, 3 `selfheal-nothing-resolved`). `audit_window.py` flagged 7 of the 23 non-null as content defects → **16/44 truly clean this pass.**
+
+**Requeue (`no_pwg_w05_rq1`, the one permitted requeue, `--no-tm`):** the 21 null keys only (not the 7 defects, per the drain-loop rule). **Result: 17/21 non-null, 4 null** (`_u_das~~h0_zz_pw`: SAME kill-timeout again, `_sibi~~h0_zz_pw`/`a_sud_da~~h0_zz_pw`/`aklizwa~~h0_zz_pw`: SAME `selfheal-nothing-resolved` again). `audit_window.py` flagged 4 of the 17 as content defects (one high-confidence: `ajagan_d_a~~h0_zz_pw` untranslated braced German gloss) → **13/21 truly clean this pass.**
+
+**Promotion:** same explicit-glob discipline as `w04` — `--glob "src/pilot/output/wf_output.no_pwg_w05*.json"` (real `*` wildcard). **Promoted 40 non-null sub-cards** (16 audit-clean + 7 defect-flagged from `w05`, 13 audit-clean + 4 defect-flagged from `w05_rq1`; 69 sense rows across 20 headwords). Store `src/pwg_ru_translated.jsonl`: 11,436 → **11,505 rows**. TM rebuilt (`translation_memory.ru.json build --lang ru`): 2,371 → **2,411 cards**. `no_pwg_scale_plan.py`'s own remaining-headword count (232-lemma queue): 190 → **170**.
+
+**Documented residual (not requeued further):** `_u_das~~h0_zz_pw` (2× kill-timeout — infra, not content), `_sibi~~h0_zz_pw`/`a_sud_da~~h0_zz_pw`/`aklizwa~~h0_zz_pw` (2× `selfheal-nothing-resolved` each), plus the 11 content-defect-flagged sub-cards across both windows (`a_smar_i~~h0_zz_nws00`, `_sy_am_a~~h0_zz_nws00`, `a_b_uta~~h0_zz_nws00`, `_sibi~~h0_zz_nws00`, `_su_r_w_i~~h0_zz_nws00`, `_su_r_w_i~~h0_zz_sch`, `_sy_am_a~~h0_zz_sch`, `a_sakta~~h0_zz_sch`, `ajagan_d_a~~h0_zz_pw`(high-confidence untranslated-gloss), `aklizwa~~h0_zz_sch`, `ambaz_w_a~~h0_zz_sch`) — all already promoted as `ai_translated` per the `w04` guardrail, flagged for the eventual G5 human review, not silently clean. `ajagan_d_a~~h0_zz_pw` in particular needs a manual German-gloss translation pass, not blind retry.
+
+**Next:** continue the 232-lemma queue via `no_pwg_scale_plan.py --window-size 20 --limit-windows 1 --start-index 6`. Re-run `probe_log.py gate` before any future window.
