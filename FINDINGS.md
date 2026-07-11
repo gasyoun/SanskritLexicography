@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 10-07-2026_
+_Created: 26-06-2026 · Last updated: 11-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §65) whatever its section, so existing numbers never shift; when a finding is later
+(currently §75) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -82,9 +82,9 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§44. Raw Latin-string tallies over gloss text include etymological false positives; Bopp lacks √yabh](#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh) — MW72's lone *cunnus* glosses a Lithuanian cognate, not a headword; BOP has no √*yabh* entry (all *futu-* hits are *futurum*); trust A36's curated CSV, not the raw sweep.
 - 🟠 [§45. Siglum prefix-families routinely bundle several distinct works; the diacritic-stripping fold has poisoned keys](#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys) — 26/50 top families mix 2–6 works (Bhag./BhP., Rajan./Rajat., 5 Śabda-kośas); `samk` fold merges Śaṃk°+Sāṃk°; ~120 pseudo-variants are just unstripped roman numerals; MW unknown-layer tail = only 6.5% of citation weight.
 - 🔴 [§61. The reverse dictionary's 30 sources split ~18 PD vs ~10 in-copyright — the merged headword list is not automatically publishable](#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable) — rights table + 3 decision options in the H265 analysis; ruling is a human @DECIDE.
-- 🟠 [§62. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate](#62-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) — 2,309 single-case parens + 40 variation groups + 1,504 mit-phrases; verbs only 417 of 1,476 marker-bearing entries; the store slot `government` is empty (0/11,261).
+- 🟠 [§71. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate](#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) — 2,309 single-case parens + 40 variation groups + 1,504 mit-phrases; verbs only 417 of 1,476 marker-bearing entries; the store slot `government` is empty (0/11,261).
 - 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
-- 🟠 [§65. The ls-graph citation matrix is degenerate for MW](#65-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
+- 🟠 [§74. The ls-graph citation matrix is degenerate for MW](#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
 
 **Etymology & derivation**
 
@@ -1518,7 +1518,9 @@ citation crosswalk must also run `gh repo list funderburkjim` and
 `gh repo list sanskrit-lexicon-scans`, and grep the actual `csl-orig` source
 text for existing `<ls>` markup, before assuming nothing exists.
 
-### §60. pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense
+### §70. pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense
+
+> _Was §60 until 11-07-2026, renumbered — duplicate key (§60 was already taken by the Russian-transcription finding)._
 
 🟡 **Grading the 1.09M-unit Sa→Ru translation memory
 ([`tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
@@ -1576,7 +1578,9 @@ A descriptive *paper* about the resource is NOT gated by the ruling — only the
 
 ---
 
-### §62. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate
+### §71. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate
+
+> _Was §62 until 11-07-2026, renumbered — duplicate key (§62 was already taken by the varga-distribution finding)._
 
 🟠 **Böhtlingk-Roth state case government (управление; the `snih` + loc. class) explicitly
 ≈3,853 times in the German sense text — 2,309 parenthesized single-case markers
@@ -1605,7 +1609,9 @@ build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/H338-S
 
 ---
 
-### §63. VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk
+### §72. VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk
+
+> _Was §63 until 11-07-2026, renumbered — duplicate key (§63 was already taken by the vidyut dhātupāṭha finding)._
 
 🟢 **VedaWeb 2.0's `lemmatization.json` export (H096) already carries a per-token
 `id_gra` array resolved via its own `kosh.uni-koeln.de/cdsd/gra/restful/ids` API — and
@@ -1636,7 +1642,9 @@ check the analogous `<L>`-number identity first rather than re-deriving a text m
 
 ---
 
-### §64. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field
+### §73. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field
+
+> _Was §64 until 11-07-2026, renumbered — duplicate key (§64 was already taken by the PW-only-headwords finding)._
 
 🟠 **Re-checking the VedaWeb 2.0 catalog's own `license`/`licenseUrl` fields (not the
 `ROADMAP_VEDAWEB_REUSE.md` summary) found `license: null` on 34 of 36 resources.** Only
@@ -1684,7 +1692,9 @@ assume, and here asking took one email and about a day's turnaround.
 
 ---
 
-### §65. The ls-graph citation matrix is degenerate for MW — its top abbreviations sit unresolved; use the citation-apparatus siglum matrix for cross-dict citation profiles
+### §74. The ls-graph citation matrix is degenerate for MW — its top abbreviations sit unresolved; use the citation-apparatus siglum matrix for cross-dict citation profiles
+
+> _Was §65 until 11-07-2026, renumbered — duplicate key (§65 was already taken by the DeepSeek word-alignment grounding finding)._
 
 **Claim.** [`csl-atlas/data/citations/ls_citation_edges.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv)
 (the H213 canonicalized dict×text citation graph) resolves **MW to only 5 texts**
@@ -1707,34 +1717,6 @@ MW72/BOP have none, so any per-edge citation statistic shrinks to n=5 edges. Ful
 
 > **Source:** H342 PH2 CITE-4AXIS ([csl-atlas PR #233](https://github.com/sanskrit-lexicon/csl-atlas/pull/233)),
 > Fable 5 `claude-fable-5` · 2026-07-08
-
-### §56. The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant
-
-🟠 **No maintained flag-and-suggest Sanskrit spellchecker exists (verified 10-07-2026), and the
-two nearest things both carry traps.** (1) The sanskrit-spellchecker.netlify.app demo M.G. named
-in the 02-07 interview is the online interface of **Prasanna S., "Spellchecker for Sanskrit: The
-Road Less Taken", ICON 2022** ([2022.icon-main.35](https://aclanthology.org/2022.icon-main.35/))
-— identified via the paper's own footnote 14; 37,058-entry Paninian word-and-paradigm Hunspell
-dictionary, **source never published, no license, dormant since ~2022** (all 117 of the author's
-public repos enumerated; the announced Firefox/LibreOffice add-ons never appeared). (2)
-**LibreOffice bundles a 543,758-entry `sa_IN` Hunspell pair since 10-01-2025**
-([LibreOffice/dictionaries `sa_IN/`](https://github.com/LibreOffice/dictionaries/tree/master/sa_IN),
-Shantanu Oak, wikipedia/wikisource-derived flat wordlist + `BREAK` stripping) whose **in-tree
-license is formally unsettled** — a GPL-2 `COPYING` was added 05-05-2025 and reverted three days
-later by a LibreOffice maintainer as contradicting per-file copyright; do NOT ingest that
-wordlist, use it only as an evaluation baseline. Also verified absent: any `sa` pack in
-wooorm/dictionaries or GNU aspell; any spellcheck component in sanscript/indic-transliteration
-(transliteration-only, MIT); any suggestion surface in SCL (its old analyser-based web
-spellchecker is defunct per the ICON paper) or the Heritage Platform (grey-rectangle flag only,
-LGPLLR databanks). A44's related-work citation "contextual spell-checker, ISCLS 2024" was a
-mis-attribution — that volume contains no spellchecking paper; corrected to Prasanna 2022.
-[COLOGNE #91](https://github.com/sanskrit-lexicon/COLOGNE/issues/91) ("Hunspell for Sanskrit?")
-has been open since 2016 — the demand signal for the planned SanskritSpellCheck web app, whose
-niche (suggestion generation against a validated, provenance-carrying lexicon) is unoccupied.
-
-> **Source:** [SanskritSpellCheck docs/PRIOR_ART.md](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/docs/PRIOR_ART.md)
-> (H452, [PR #27](https://github.com/drdhaval2785/SanskritSpellCheck/pull/27), 3 parallel
-> research agents, every claim fetch-backed), Fable 5 `claude-fable-5` · 2026-07-10
 
 ### §66. The DCS `QL` frequency workbook's `SLP1` and length columns are truncated at ṣṭh/ḍh clusters
 
@@ -1778,6 +1760,8 @@ itself a function of corpus frequency.
 > Opus 4.8 `claude-opus-4-8` · 2026-07-10
 
 ### §68. The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant
+
+> _A verbatim copy of this finding also sat earlier in the file under a duplicate "§56" heading until 11-07-2026 (double-appended by two 10-07 sessions, PRs #305/#307); the copy was removed — cite §68._
 
 🟠 **No maintained flag-and-suggest Sanskrit spellchecker exists (verified 10-07-2026), and the
 two nearest things both carry traps.** (1) The sanskrit-spellchecker.netlify.app demo M.G. named
@@ -1838,7 +1822,9 @@ the probe log's JSONL), never only in a worktree-local gitignored file.
 
 ---
 
-### §69. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers
+### §75. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers
+
+> _Was §69 until 11-07-2026, renumbered — duplicate key (§69 was already taken by the launch-telemetry finding)._
 
 Verified 2026-07-10 (H534, three-way check): GRETIL's own update history
 ([`hist.html`](http://gretil.sub.uni-goettingen.de/hist.html) #370) and TEI

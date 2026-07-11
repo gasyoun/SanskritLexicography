@@ -1,6 +1,6 @@
 # STALENESS — confidence-decay table over [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 11-07-2026_
 
 **⚙️ FULLY AUTO-GENERATED — do not hand-edit the table below.** Regenerate with [`sanskrit-util/tools/epistemic/derive_staleness.py`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/derive_staleness.py). This is the STALENESS epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Sanskrit-data side) — one of the seven registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). It answers the one question FINDINGS structurally cannot: *when was each fact last re-checked, and which are decaying?*
 
@@ -79,7 +79,7 @@ Every FINDINGS finding measures a fact **at a moment**. A count true in June may
 | [§54](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents) | 03-07-2026 | 05-07-2026 | 3d | 🟢 | RECIPES §TBD |
 | [§64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1--pwg-is-not-the-sole-spine-of-the-local-layer-universe) | 05-07-2026 | — | 3d | 🟢 | RECIPES §TBD |
 | [§60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration) | 05-07-2026 | — | 3d | 🟢 | RECIPES §TBD |
-| [§60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#60-pwgru-tm-composite-grade-a-is-consensus-gated-57-and-a-reference-free-surface-qe-cannot-detect-wrong-sense) | 03-07-2026 | 06-07-2026 | 2d | 🟢 | RECIPES §TBD |
+| [§70](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#70-pwg_ru-tm-composite-grade-a-is-consensus-gated-57-and-a-reference-free-surface-qe-cannot-detect-wrong-sense) | 03-07-2026 | 06-07-2026 | 2d | 🟢 | RECIPES §TBD |
 | [§63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) | 07-07-2026 | — | 1d | 🟢 | RECIPES §TBD |
 | [§62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) | 05-03-2026 | 07-07-2026 | 1d | 🟢 | RECIPES §TBD |
 | [§65](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#65-66--of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse) | 07-07-2026 | — | 1d | 🟢 | RECIPES §TBD |

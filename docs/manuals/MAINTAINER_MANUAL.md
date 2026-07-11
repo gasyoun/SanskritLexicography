@@ -60,10 +60,7 @@ each append-only:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — the empirical registry. **Schema per finding:** a `### §N` heading (the
-  number is the stable citation, never deliberately reused/shifted —
-  append-only; caveat: a 11-07-2026 audit found seven accidentally duplicated
-  §N pairs (§56/§60/§62–65/§69), pending repair — when citing, quote the claim
-  text alongside the §N), the
+  number is the stable citation, never reused/shifted — append-only), the
   **claim** in bold with a colour dot (🔴 important · 🟠 medium · 🟡 minor),
   then `Evidence:` (a number / file+line), `Implication:` (what to do), and a
   blockquoted `Source` line tagged `— repo · date`. **No HTML, ever** — use a
