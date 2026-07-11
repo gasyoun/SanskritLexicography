@@ -1875,6 +1875,21 @@ Skandha 1 (1181 verses, 429 comments) is ingested as
 
 > **Source:** H534, Opus 4.8 (`claude-opus-4-8`), [SamudraManthanam PR #31](https://github.com/gasyoun/SamudraManthanam/pull/31) · 2026-07-10
 
+### §76. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered
+
+Measured 11-07-2026 on `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (the only non-stub copy;
+the repo-root and `src/` `dcs_full.sqlite` files are 0 bytes): `token.m_wordsem` is populated
+on 531,747 of 5,688,416 tokens (9.3%) with bare numeric IDs (e.g. `śāstṛ`→`43017`), but the
+DB's 8 tables include no decode table for them; `lemma.meanings` holds only lemma-level
+`;`-separated gloss text, not the per-token sense inventory. Consequence: any
+sense-disambiguation eval over DCS attestations (e.g. the H730 gloss-grounded WSD track,
+[kosha docs/DEFGEN_MW_GLOSS_EVAL_PROTOCOL.md](https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_MW_GLOSS_EVAL_PROTOCOL.md))
+can measure inter-model agreement only — no accuracy. The unlock is recovering the DCS
+word-sense-ID inventory from the DCS CoNLL-U releases / upstream DB and mapping it onto MW
+sense divisions. Until then, do not claim WSD accuracy numbers from this dump.
+
+> Source: H730 defgen+WSD eval session · kosha/VisualDCS · 11-07-2026, Fable 5 (`claude-fable-5`).
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
