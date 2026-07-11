@@ -3,11 +3,19 @@
 _Created: 11-07-2026 · Last updated: 11-07-2026_
 
 Produced 11-07-2026 by Fable 5 (`claude-fable-5`) from a correlation analysis of
-`MDF_2000.pdf` (local copy in this folder, uncommitted pending a rights check — canonical
-source: [SIL Language & Culture Archives entry 90694](https://www.sil.org/resources/archives/90694))
+`MDF_2000.pdf` (local copy in `SanskritLexicography/papers/`, gitignored — canonical
+source: [SIL Language & Culture Archives entry 5741](https://www.sil.org/resources/archives/5741),
+not entry 90694 as originally cited here)
 against the existing CDSL standards/export/translation infrastructure, plus the
 [SIL Dictionaries & Lexicography hub](https://www.sil.org/dictionaries-lexicography).
 MG rulings of the same date are recorded in §5; the resulting program of work (H721–H727) in §6.
+
+**Rights check (H723, 11-07-2026):** the book's own copyright page (p. ii) reads "©1995,
+2000 by SIL International. ALL RIGHTS RESERVED," granting only the right to share the
+accompanying MDF software diskette non-commercially — not the text. `papers/MDF_2000.pdf`
+is therefore `.gitignore`d (local working copy only); the software-independent chapters
+4–10 + appendices are digested as notes/paraphrase, not full-text reproduction, at
+[`literature/md/Lexicography-Manuals/making-dictionaries-mdf-coward-grimes-2000.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/making-dictionaries-mdf-coward-grimes-2000.md).
 
 ## 1. What the book is
 
