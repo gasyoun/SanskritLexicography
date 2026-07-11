@@ -9,6 +9,21 @@ then **cut a new version every time the changelog is updated** (promote
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-07-11
+
+### Added — publication-pipeline deep manual (H608)
+- New [`docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md):
+  subsystem deep manual for the publication layer —
+  [`papers/`](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
+  lifecycle (stable A-IDs, readiness scale, the scaffold→referee→author-pass
+  skill chain), the M01 Brill/De Gruyter book build (article→chapter recipe,
+  rights-table trigger rule, FAIR/DOI critical path as of 11-07-2026), and
+  [`docs_site/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site)
+  build/test/deploy state (built + tested, **not yet deployed** — no
+  `research/` on `gh-pages`). Router row added, PROFILE deep-manual queue row
+  flipped, metadoc revision logged. Third item of the H604 queue; per
+  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
+
 ## [1.5.2] - 2026-07-11
 
 ### Added — RussianTranslation deep manual (H606)
