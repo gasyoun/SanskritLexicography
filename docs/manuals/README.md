@@ -17,6 +17,16 @@ to read the others.
 | An **agent session** (Claude/Codex) entering this shared tree — entry protocol, hard rules, canonical-doc index | [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root, thin) | English |
 | **The human owner** — repo map, monthly delta, human gates, account protocol | [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root, thin) | Русский |
 
+## Subsystem deep manuals
+
+Below the audience layer, each major subsystem gets a dedicated deep manual
+(queue + status in
+[PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)):
+
+| Subsystem | Deep manual |
+|---|---|
+| [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) — cross-dict analytics, union, print-readiness | [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) |
+
 Regeneration/refresh of this set is encoded in the
 [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)
 skill; the per-repo overlay it reads is
