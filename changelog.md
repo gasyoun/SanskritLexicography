@@ -12,7 +12,7 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
-## [Unreleased]
+## [1.8.0] - 2026-07-11
 
 ### Added — semdom ↔ Amarakosha crosswalk, Level A + Level B gold pilot (H742)
 - First crosswalk between SIL's 1,792 semantic domains and a classical

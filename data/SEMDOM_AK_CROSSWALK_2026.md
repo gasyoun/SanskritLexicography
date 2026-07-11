@@ -104,6 +104,25 @@ residual third is dominated by (a) AK's associative chaining (e.g. plants
 listed inside the human-body chapter as products/measures), and (b) SIL's
 artifact/activity splits cutting across AK's substance-first grouping.
 
+### The grammatical vargas and semdom's own Grammar annex
+
+The four excluded kāṇḍa-3 vargas (2,592 synsets, 46% of the kosha — adjectives,
+miscellany, homonyms, indeclinables) organize words by form and lexical
+relation, not meaning. The sharper version of that finding: **SIL did the same
+thing.** Semdom's top-level 9 "Grammar" (9.1 General words … 9.2 Part of
+speech) is a non-semantic annex bolted onto a semantic taxonomy for
+elicitation completeness — formally parallel to Amarakosha's kāṇḍa 3:
+avyayavargaḥ ≈ 9.2.2/9.2.5–9.2.7 (adverbs, conjunctions, particles,
+interjections); viśeṣyanighnavargaḥ ≈ 9.1.4/9.2.1 (adjectives). Both
+taxonomies, 1,500 years apart, needed a formal bucket the semantic scheme
+could not absorb. These informative parallels are documented here only and
+deliberately kept out of the Level A CSV, which stays purely semantic
+(top-level 9 therefore takes 0 pairs). A second asymmetry from the Level A
+totals: semdom top-level 7 "Physical actions" is touched by exactly one
+domain (7.2.4 Travel) — a noun thesaurus has almost no varga-level footprint
+in semdom's verb-oriented action subtree, while its social-world coverage
+(top-level 4: 22 distinct domains) is the densest of all.
+
 ### Gold-sample allocation per varga (200 total)
 
 | Varga | n | Varga | n |
