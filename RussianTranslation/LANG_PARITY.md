@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 07-07-2026_
+_Created: 04-07-2026 · Last updated: 11-07-2026_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -867,6 +867,23 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
       "src/pilot/window_selftest.py": "8c45d8dc292d0eb2a8f70adcb80731b96d5369a9265354077bfaf9e0562f55ce"
+    }
+  },
+  {
+    "id": "mdf_export",
+    "mechanism": "export_mdf_pwg_ru.py serializes promoted cards to MDF with \\de=RU national lane and \\ge=EN gloss lane in ONE code path (\\ge emitted only when promote_en.py attached en; never fabricated)",
+    "files": [
+      "src/pilot/export_mdf_pwg_ru.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "New mechanism 11-07-2026 (H727): both language lanes are handled by the same clean_prose/mdf_record path parameterized by lang; the RU <ab> Bucket-A display policy is the documented intentional per-language difference INSIDE the shared path (EN keeps the original token), per ABBREVIATIONS_RU.md. Design: docs/MDF_EXPORT_PWG_RU.md.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/export_mdf_pwg_ru.py": "1d32e10622d246295cc3b5f8300e166de76cb210e74719ca7d79ddc7170d2be4"
     }
   }
 ]
