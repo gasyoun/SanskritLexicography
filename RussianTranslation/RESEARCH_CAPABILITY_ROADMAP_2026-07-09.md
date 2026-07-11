@@ -1,6 +1,6 @@
 # PWG->RU research-grade capability roadmap: 30 additive layers
 
-_Created: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 09-07-2026_
 
 This roadmap turns the four H335 capability questions into a wider, ranked
 research programme for `pwg_ru`. It is additive: the baseline remains the
@@ -391,3 +391,4 @@ Each card has the same contract:
 - Use explicit `unknown`/`unmapped` outcomes. Do not collapse absent evidence
   into negative evidence.
 
+_Dr. Mārcis Gasūns_
