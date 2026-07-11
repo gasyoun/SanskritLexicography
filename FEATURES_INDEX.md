@@ -23,7 +23,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 42 data assets · 14 tools · 4 external stacks.
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks.
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -78,6 +78,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | ⚪ C16 | union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union · 711 KB | `5   nominal   enad   enad` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
 | 🟢 C17 | csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards · 43.0 MB | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
 | 🟢 C18 | csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set · 31.3 MB | the below-threshold subset of `alignment-confidence.json` (schema) | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
+| 🟢 C19 | semdom ↔ Amarakosha crosswalk | First SIL semantic-domains ↔ classical-thesaurus map (H742): Level A varga↔domain ID pairs (108, hand-authored) + top-6 machine candidates for all 5,590 AK synsets + 200-synset adjudicated gold (κ 0.677; bridge top-1 17.5% — a shortlist, not labels, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); CC BY-SA 4.0, feeds the H721 MDF/LIFT `\sd` layer | 108 + 5,590 + 200 rows · ~400 KB | `AK-1.4,kAlavargaH,…,8.4,…,Time,close` | 07/26 | [data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md) |
 
 ### D · Heritage & morphology oracles
 
@@ -300,6 +301,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **C19** — semdom ↔ Amarakosha crosswalk (H742): first SIL-semantic-domains ↔ classical-thesaurus map — Level A varga map (108 ID pairs) + 5,590-synset candidate table + 200-synset dual-annotated gold (κ 0.677); bridge measured as candidate-generator-only (top-1 17.5%, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). |
 | 07/26 | **E41 · E42 · F43** — the census-named tracked-but-uncounted trio registered (H694): csl-observatory correction-event log (52,498 × 3 views, 178 MB), Kompozity `names.csv` compound splits (168,880, 90.7 MB), CORRECTIONS `allngramtxt.txt` n-gram oracle (6,656,616, 82.3 MB). |
 | 07/26 | **E40** — headword pairwise-overlap matrix + unique counts over the 15-dict union (H684): 105 pairs, Jaccard, per-dict unique inventories; resolves the stale "union 94,753" figure (= MW∩PWG). |
 | 07/26 | **E39** — markup-tag frequency census over all 44 csl-orig/v02 dicts (H683): 96 distinct tags, per-1,000-entry rates, under-marking verdicts ([TSV](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv) + [report](https://github.com/gasyoun/SanskritLexicography/blob/master/data/MARKUP_TAG_CENSUS_CSLORIG_2026.md)). |
