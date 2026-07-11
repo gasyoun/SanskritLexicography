@@ -1,6 +1,6 @@
 # ASSUMPTIONS — unverified premises the Sanskrit-data pipelines rely on
 
-_Created: 08-07-2026 · Last updated: 11-07-2026_
+_Created: 08-07-2026 · Last updated: 12-07-2026_ (H702 cheap-test sweep: §1–§3 re-verified with full local evidence, §4–§7 annotated with concrete test costs; Fable 5 `claude-fable-5`)
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS holds *measured, past-tense* facts. This file holds the act FINDINGS structurally cannot: **relying** on an unproven premise. An assumption is *depended-upon but unverified* — the moment its **Test** passes, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/ASSUMPTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/ASSUMPTIONS.md).
 
@@ -21,7 +21,7 @@ Then the premise as a claim, `Relied on by:`, `Verified?:` (❌ never · ⚠️ 
 ### §1. DCS lemma == CDSL headword
 🔴 ✍️ **Any join that treats a DCS corpus lemma as if it has a matching CDSL dictionary headword.**
 Relied on by: `dcs_cdsl_xref.tsv` (kosha manifest `dcs-cdsl-xref`), `build_xref.py`, the kosha frequency LEFT-JOIN, Sa→Ru glossary form→lemma resolution.
-Verified?: ⚠️ spot-checked once (11-06-2026, n=15,902 lemmas) — 81.4% link, 18.6% (2,956 lemmas) have NO CDSL headword.
+Verified?: ✅ refuted as a universal, twice-measured — 11-06-2026 (n=15,902): 81.4% link; **re-verified 12-07-2026 (H702, full `in_cdsl` recount): 12,945/15,902 linked = 81.4%, 2,957 unlinked (18.6%)** — the bound is stable; the measured fact lives at FINDINGS §12, this row stays as the do-not-assume guard.
 Test to confirm: recount linked/total in [`dcs_cdsl_xref.tsv`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/dcs_cdsl_xref.tsv); any pipeline assuming 100% coverage silently drops ~1/5 of corpus vocabulary.
 ↔ Interlinks: [RECIPES §2](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) reproduces the 81.4% number that bounds this premise · [GLOSSARY "headword vs lemma"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the distinction this assumption blurs · the unlinked 18.6% is the frontier next to [GAPS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (Heritage as a third witness).
 > **Source:** [FINDINGS §12](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#12-a-fifth-of-dcs-lemmas-have-no-cdsl-headword) · [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -29,7 +29,7 @@ Test to confirm: recount linked/total in [`dcs_cdsl_xref.tsv`](https://github.co
 ### §2. One transliteration scheme keys all DCS files
 🔴 ✍️ **A frequency/lemma join can assume a single transliteration across the DCS-derived files.**
 Relied on by: `freq_route.py`, any join between `VisualDCS/dcs_lemma_summary.json` (SLP1) and `RussianTranslation/src/dcs_lemma_renou.json` (IAST).
-Verified?: ⚠️ spot-checked once (24-06-2026) — the two files are keyed in DIFFERENT schemes (SLP1 vs IAST).
+Verified?: ✅ refuted, re-verified 12-07-2026 (H702) — `dcs_lemma_summary.json` lemma map = SLP1 (83,239 keys, zero non-ASCII); `dcs_lemma_renou.json` = IAST (90,346 keys, e.g. `abadhyamāna`). Schemes still differ; transcode via `sanskrit-util` before any join.
 Test to confirm: diff a sample of keys across both files; a raw string join misses every non-ASCII-coincident lemma unless one side is transcoded via `sanskrit-util`.
 ↔ Interlinks: [GLOSSARY "SLP1 vs IAST"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) is the term this premise trips over · [DEAD_ENDS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) is the *wrong* way to bridge schemes (NFD+strip) · [RECIPES §2](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) shows the transcode-then-join done right.
 > **Source:** [FINDINGS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#7-dcs-lemma-data-is-keyed-in-two-transliterations) · [VisualDCS](https://github.com/gasyoun/VisualDCS)/[RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -42,7 +42,7 @@ Test to confirm: diff a sample of keys across both files; a raw string join miss
 ### §3. A dict's giant verb root lives at homonym index 0
 🔴 ✍️ **A per-record split can read `bufs[0]` and assume the first homonym record holds the verb root.**
 Relied on by: `gen_root_split()`, any PWG root-portrait/segmentation walk over homonym records.
-Verified?: ⚠️ spot-checked once (24-06-2026, top-50 freq roots) — 19 of 50 have a giant homonym at index > 0 (√i at 2, √mā at 2, √as at 1).
+Verified?: ✅ refuted, re-verified 12-07-2026 (H702) — `audit_root_split.py` re-run over 60 giant roots: non-zero-index giants persist (√gam [0,2,3], √kzip [0,2], √aS [0,1]); the split path now correctly iterates all homonym records. Original 24-06-2026 sample: 19/50 at index > 0.
 Test to confirm: re-run [`audit_root_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_root_split.py); iterate ALL homonym records, never `bufs[0]`.
 ↔ Interlinks: [GLOSSARY "homonym index"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the ordinal this premise mis-assumes · [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (homonym token frequency) is what stays unreachable while this holds.
 > **Source:** [FINDINGS §16](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#16-giant-verb-roots-sit-at-non-zero-homonym-indexes) · [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) (pwg)/[RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -50,7 +50,7 @@ Test to confirm: re-run [`audit_root_split.py`](https://github.com/gasyoun/Sansk
 ### §4. A worklist built by iterating PWG keys covers the local layer universe
 🔴 ✍️ **Enumerating "headwords" by walking PWG records reaches the whole pwg_ru merge universe.**
 Relied on by: the verb-root worklist (`verbs01`/PWG), any pwg_ru queue builder.
-Verified?: ⚠️ spot-checked once (05-07-2026, n=167,988 headwords) — ≈35,900 headwords (≈36%) carry ZERO PWG record; PW-only alone = 40,338 (24%).
+Verified?: ⚠️ spot-checked once (05-07-2026, n=167,988 headwords) — ≈35,900 headwords (≈36%) carry ZERO PWG record; PW-only alone = 40,338 (24%). _H702 (12-07-2026): premise already refuted by that full-universe tally (FINDINGS §64); re-run cost = one `dict_merge.py` pass (~minutes) — re-run only when the merge universe changes._
 Test to confirm: re-run the `dict_merge.py` index tally in [`PWG_LAYER_COMBINATIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md); PW/SCH/PWKVN-only entries need their own queue path.
 ↔ Interlinks: [RECIPES §5](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (union headword index) is the asset that *measures* the true universe this premise underestimates.
 > **Source:** [FINDINGS §64](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -63,7 +63,7 @@ Test to confirm: re-run the `dict_merge.py` index tally in [`PWG_LAYER_COMBINATI
 ### §5. A shared markup tag means the same thing across dicts
 🟠 ✍️ **The same `<ab>` / marker tag carries one meaning that can be counted dict-agnostically.**
 Relied on by: any cross-dict tag-count survey (etymology detectors, `<ls>` density rankers, marker-based structure detectors).
-Verified?: ⚠️ spot-checked once (26-06-2026) — `<ab>E.</ab>` = Etymology in WIL but "Epithet of" in CAE, "Epic" in MD; SKD/VCP score 0 on Western markers by construction, not for lack of content.
+Verified?: ⚠️ spot-checked once (26-06-2026) — `<ab>E.</ab>` = Etymology in WIL but "Epithet of" in CAE, "Epic" in MD; SKD/VCP score 0 on Western markers by construction, not for lack of content. _H702 (12-07-2026): not machine-testable — meaning-vs-marker needs per-dict reading; refutation stands on FINDINGS §34+§19; the rule is count meanings, not markers._
 Test to confirm: read entry contexts per dict before parsing; count the meaning, not the marker.
 ↔ Interlinks: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) is the same "tag effect is record-type-bound" trap at corpus scale · [GLOSSARY "`<ls>` / iti register"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) is the register confound this premise ignores.
 > **Source:** [FINDINGS §34](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#34-the-e-abbreviation-tag-is-polysemous-across-dicts) + [§19](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#19-skd-and-vcp-carry-essentially-zero-western-markup) · [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -71,7 +71,7 @@ Test to confirm: read entry contexts per dict before parsing; count the meaning,
 ### §6. A verified correction queue stays valid until filed
 🟠 ✍️ **A triaged correction stays applicable against live csl-orig between triage and filing.**
 Relied on by: the monthly csl-orig batch PR, the SanskritSpellCheck FILE-FIRST queue.
-Verified?: ⚠️ spot-checked once (02-07-2026, n=122) — ≈0.8%/week decay; 1 candidate already fixed upstream within ~1 week.
+Verified?: ⚠️ spot-checked once (02-07-2026, n=122) — ≈0.8%/week decay; 1 candidate already fixed upstream within ~1 week. _H702 (12-07-2026): perishable by design — a fresh decay recount only means anything at filing time, so it belongs to each `/cologne-batch-pr` window (which already mandates the pre-filing re-verify), not to a sweep._
 Test to confirm: re-verify every row against current `csl-orig` immediately before filing; a stale row reads as bot noise.
 ↔ Interlinks: this is the ASSUMPTIONS-layer restatement of the *decay* that [STALENESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md) makes generic across all findings · [DEAD_ENDS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (blind typo respell) is what happens when a stale queue is filed unchecked · [RECIPES §6](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (correction loci) is the census this queue feeds.
 > **Source:** [FINDINGS §25](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#25-a-verified-correction-queue-decays-against-live-csl-orig) · [SanskritSpellCheck](https://github.com/drdhaval2785/SanskritSpellCheck) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
@@ -82,13 +82,13 @@ Test to confirm: re-verify every row against current `csl-orig` immediately befo
 
 - **Every premise here is a keying or scope assumption, and every one has already been measured false at least once.** §1/§2 (join keys), §3/§4 (record reach), §5 (symbol meaning) — the recurring failure mode is *treating a machine key or a symbol as universal when it is scheme-, dict-, or record-type-bound*. The standing lesson: **transcode/normalize through [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util) and count meanings, not markers.**
 - **The 🔴 blast-radius rows §1–§4 are the dangerous ones** — they sit under the frequency and translation pipelines, so a silent violation drops ~1/5 to ~1/3 of the data with no error.
-- **None has graduated yet** (all ⚠️ spot-checked, none ✅): each needs a *full* verification, not a sample, before it becomes a FINDINGS fact. §6 is the one that decays continuously — treat it as perishable.
+- **Sweep state (H702, 12-07-2026, Fable 5 `claude-fable-5`):** §1–§3 are now ✅ refuted-with-fresh-full-evidence (xref recount, scheme check, root-split audit re-run) — their measured bounds live in FINDINGS (§12/§7/§16), the rows stay as guards; §4 stands refuted on the 05-07 full tally; §5 is not machine-testable; §6 decays by design and re-tests at each filing window; §7 waits on an external human. §6 is the one that decays continuously — treat it as perishable.
 - **Where they point:** the assumptions feed forward into [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (how to check them), sideways into [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) and [DEAD_ENDS](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (what breaks when they fail), and their unmeasured residue into [GAPS](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md).
 
 ### §7. «Рамаяна. Книга 5. Сундараканда 2026.html» — финальная редакция перевода
 🔴 ✍️ **Весь двухъярусный аппарат считает этот файл финальной редакцией перевода Леонова.**
 Relied on by: все 1058 якорей яруса-1, dedup 897 нот яруса-2, цель плотности ~37%, печатный мастер, kosha-манифест `sundarakanda-two-tier-apparatus` — при более свежей редакции якоря и dedup частично инвалидируются.
-Verified?: ❌ никогда — подтверждение запрошено у Леонова (задача 2 [issue №58](https://github.com/gasyoun/CommentaryStrategies/issues/58)), ждём с 10-07-2026.
+Verified?: ❌ никогда — подтверждение запрошено у Леонова (задача 2 [issue №58](https://github.com/gasyoun/CommentaryStrategies/issues/58)), ждем с 10-07-2026. _H702 (12-07-2026): локально не тестируется — цена = одно письмо-подтверждение, иначе diff по стихам + пере-якорение затронутых нот._
 Test to confirm: одно письмо Леонова «да, финал» — или присланная новая редакция → diff по стихам → пере-якорение затронутых нот.
 > **Source:** ✍️ H497/H533, 10-07-2026; registered via /artifact-propagate epistemic pass 11-07-2026 (Fable 5 `claude-fable-5`).
 
