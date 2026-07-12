@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H771 — RENOU `renou_dcs`/`renou_ls` divergence adjudicated: CORRECTION (old chain safe to delete)
+- [`RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md`](RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md)
+  settles the H692 `@DECIDE`: the 25‑06 canonical `{code}.renou.jsonl`
+  regeneration is a **correction, not a regression**, for all 7 codes
+  (ap/ap90/ben/bhs/mw/pw/sch). A positional (homonym‑exact) comparison of the
+  old underscore chain vs the canonical dot‑files finds **28,662 / 646,926 rows
+  (4.4 %) diverge in `renou_dcs`, 100 % of them `canon ⊂ old`** — pure removal,
+  zero additions, zero mutations, **zero KEPT‑ANOMALY**. Every removed state is
+  a documented DCS noise class: a thin single‑text `n=1, conf=low` tail
+  (min‑support pruning, introduced in `ecc7bb96` *after* the old chain was
+  built) or an Epic `III` date‑fallback attestation (index refresh; lemma‑absent
+  drops are **100 % single `["III"]`**). Mechanism identified in the script/index
+  diff, not timestamps: the old chain computed `dcs_states = dcs['renou']` **raw**
+  (unfiltered) against the pre‑refresh index. `renou_ls` shows **zero real
+  divergence** (positionally byte‑identical, all codes) — H692's sampled mw 22.8 %
+  was a homonym‑misalignment artifact of key1‑keyed sampling; the LS source maps
+  never changed (23‑06). **The ~379 MB old underscore chain is safe to delete**
+  (deletion stays a human `@DO`). Zero data files touched — read‑only, per
+  [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
+
 ### H777 — expand per-card stats (layer/markup/QA/xref + dcs_freq + grammar join), 3 grains
 - [`src/annotate_stats.py`](src/annotate_stats.py) extended from the H422 lemma block to the
   full accepted count menu (MG ruling 12-07-2026) at **three granularities** —
