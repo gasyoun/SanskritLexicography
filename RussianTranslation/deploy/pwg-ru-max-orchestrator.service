@@ -1,0 +1,14 @@
+[Unit]
+Description=PWG RU four-account Max dispatcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=pwg-factory
+WorkingDirectory=/opt/factory/SanskritLexicography/RussianTranslation
+ExecStart=/usr/bin/python3 src/pilot/max_account_orchestrator.py --db /var/lib/pwg-ru/max.sqlite recover
+ExecStart=/usr/bin/python3 src/pilot/max_account_orchestrator.py --db /var/lib/pwg-ru/max.sqlite run-once
+StandardOutput=append:/var/log/pwg-ru/orchestrator.log
+StandardError=append:/var/log/pwg-ru/orchestrator.log
+

@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 11-07-2026_
+_Created: 04-07-2026 · Last updated: 12-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,18 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H818 — four-account outer dispatch audit (12-07-2026)
+
+Codex/GPT-5 proved the development host NO-GO at the first access gate: the
+repository's ≥5 KB probe returned Claude CLI `401 Invalid authentication
+credentials` with zero tokens. The audit also made the execution-model gap
+explicit: `coordinator.py` prepares in-chat Workflow JavaScript, not a standalone
+program consumable by `claude -p`. A language-neutral SQLite outer scheduler,
+rate-limit parking, atomic output/recovery, self-test, and systemd deployment
+were added, but no translation was claimed. Scale remains gated on four
+owner-authenticated foreign-host profiles and a one-card proven adapter. See
+[`PIPELINE_AUDIT_2026-07_H818.md`](PIPELINE_AUDIT_2026-07_H818.md).
 
 ## The shape of the problem
 
