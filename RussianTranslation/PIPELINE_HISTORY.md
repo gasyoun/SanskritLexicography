@@ -13,12 +13,13 @@ for the current operating procedure.
 
 Codex/GPT-5 proved the development host NO-GO at the first access gate: the
 repository's ≥5 KB probe returned Claude CLI `401 Invalid authentication
-credentials` with zero tokens. The audit also made the execution-model gap
-explicit: `coordinator.py` prepares in-chat Workflow JavaScript, not a standalone
-program consumable by `claude -p`. A language-neutral SQLite outer scheduler,
-rate-limit parking, atomic output/recovery, self-test, and systemd deployment
-were added, but no translation was claimed. Scale remains gated on four
-owner-authenticated foreign-host profiles and a one-card proven adapter. See
+credentials` with zero tokens. The implementation now emits a canonical
+generation manifest alongside Workflow JS and runs eligible non-presplit cards
+through exact-model `claude -p --json-schema`. A coordinator-integrated SQLite
+outer scheduler adds per-profile isolation, immutable attempts/hashes,
+rate-limit parking, atomic output/recovery, and systemd deployment. No live
+translation is claimed: scale remains gated on four owner-authenticated
+foreign-host profiles, a one-card RU `no_pwg` canary, and the four-wide proof. See
 [`PIPELINE_AUDIT_2026-07_H818.md`](PIPELINE_AUDIT_2026-07_H818.md).
 
 ## The shape of the problem

@@ -10,7 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-- H818: add a restartable SQLite scheduler for four isolated Max profiles, conservative rate-limit parking, atomic output, crash recovery, systemd deployment files, and an audit/runbook. Real generation remains gated on authenticated profiles and a proven Workflow-to-headless adapter.
+- H818: add a canonical generation manifest, `claude -p --json-schema` worker, coordinator-imported SQLite scheduler for four isolated Max profiles, immutable attempt logs/hashes, rate-limit parking, crash recovery, systemd deployment, and an audit/runbook. Live proof remains gated on four owner-authenticated foreign-host profiles.
 
 ### H811 — ≤N-wide staggered dispatch (boundedParallel) for degraded-API requeues
 - [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) gains `--max-wide=N` +
