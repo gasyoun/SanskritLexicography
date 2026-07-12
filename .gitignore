@@ -102,3 +102,7 @@ HeadwordLists/heritage_mirror/
 # H264 review sheets (personal working artifacts, not repo deliverables) —
 # anchored to the repo root so the ACTIVE RussianTranslation/review/ stays tracked
 /review/
+
+# semdom.json fetch cache (semdom_varga_crosswalk.py / semdom_ak_annex_table.py) — CC BY-SA input, fetched on demand, never committed
+/data/semdom.json
+/data/wn-links-semdom-words-all.tsv
