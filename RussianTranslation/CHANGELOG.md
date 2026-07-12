@@ -28,7 +28,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   was a homonym‑misalignment artifact of key1‑keyed sampling; the LS source maps
   never changed (23‑06). **The ~379 MB old underscore chain is safe to delete**
   (deletion stays a human `@DO`). Zero data files touched — read‑only, per
-  [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
+  [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
 
 ### H805 — canonical shared store path so worktree drain windows don't silently drop promotions
 - New [`src/store_path.py`](src/store_path.py) `canonical_store()` resolves the ONE logical
