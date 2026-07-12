@@ -149,4 +149,74 @@ gitignored data files — this repo's worktrees do not carry them).
   anything downstream)? Mirrored to
   [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
 
+## ADJUDICATION (12-07-2026, Opus 4.8 `claude-opus-4-8`) — CORRECTION, not regression
+
+The `@DECIDE` above is resolved: the 25‑06 canonical `{code}.renou.jsonl`
+regeneration is a **correction**. The old underscore chain over‑attested; the
+canonical files are the trustworthy artifact. Evidence, strongest first:
+
+1. **DCS axis — proved exactly against the still‑present lossless index.**
+   `renou.py` documents `DCS_MIN_SUPPORT = 2`: a register/state is kept only if
+   attested in ≥2 DCS texts **or** backed by an authoritative source; the
+   thin single‑text tail is pruned. The index `dcs_lemma_renou.json` is
+   **lossless** — it stores the raw `state_support`/`register_support` counts,
+   and the threshold is applied at consumption time (`filter_dcs_states`),
+   fully tunable/reversible. Re‑running the projection over the live canonical
+   `mw.renou.jsonl`: for **all 26,290** rows whose `key1` resolves in the index,
+   the file's `renou_dcs` equals `filter_dcs_states(index_entry)` **exactly —
+   0 mismatches**. The audit's own example `aka` is decisive: index
+   `state_support = {I:3, II:1, IV:1}`; under min‑support≥2, `IV` (n=1, no
+   authoritative backing) is pruned → canonical `["I","II"]`; the old chain's
+   `["I","II","IV"]` carried the n=1 noise. The reduction is the documented
+   confidence policy, not data loss — and nothing is unrecoverable, since a
+   re‑run at `--dcs-min-support 1` reproduces the old behaviour from the same
+   index.
+
+2. **`<ls>` axis (the larger ~22.8% `mw` divergence) — explained by the
+   build timeline.** The old underscore chain was built **23–24 June**; the
+   canonical dot‑files **25 June ~14:10**. The `<ls>` citation route landed
+   *between* the two builds — [`af07695e`](https://github.com/gasyoun/SanskritLexicography/commit/af07695e)
+   `<ls> citation route (Phase 2)` at 25‑06 13:49 and
+   [`9d841b08`](https://github.com/gasyoun/SanskritLexicography/commit/9d841b08)
+   `épig detector + inline‑dict register route (Phase 3)` at 25‑06 14:19,
+   alongside [`d35f911c`](https://github.com/gasyoun/SanskritLexicography/commit/d35f911c)
+   `register audit (Phase 5)` (25‑06 13:59). So the old chain used **pre‑Phase‑2/3**
+   `<ls>` logic; the canonical was rebuilt **after** those precision fixes. This
+   is strong mechanistic + temporal evidence rather than a row‑exact
+   reconstruction (the old chain is deleted, so an exact replay is no longer
+   possible), but it points the same direction as the DCS axis.
+
+3. **`renou_enriched` divergence is derivative** — it is the per‑row union across
+   the corrected `renou_ls`/`renou_dcs` axes, so it necessarily moves whenever
+   its inputs are corrected. No independent signal.
+
+4. **The whole window was audit‑driven.**
+   [`44e3637f`](https://github.com/gasyoun/SanskritLexicography/commit/44e3637f)
+   (24‑06) records an *independent data‑integrity audit* fixing `renou_dcs_oldest`
+   with **"entry counts unchanged"** — the corrections tightened per‑row state
+   lists without dropping rows, exactly the pattern seen here.
+
+**Consequences.** (a) Trust the canonical `{code}.renou.jsonl` files downstream
+(the H4 citation‑bias, H6 Zipf, register portrait/audit work). (b) The old
+underscore chain's deletion (H771, ~362 MB) was **safe** — it held pre‑audit,
+over‑attested data reproducible from the lossless index at `min_support=1`.
+(c) One honest residual: the DCS axis is proved exactly; the `<ls>` axis is
+"correction by strong inference." If a future session wants axis‑exact `<ls>`
+certainty it can rebuild an old‑logic snapshot from the pre‑Phase‑2 commit and
+diff — but nothing downstream is blocked on that.
+
+Reproduce claim 1 (aggregates only, no data rows) from `RussianTranslation/src/`:
+
+```python
+import json, renou
+idx = json.load(open('dcs_lemma_renou.json', encoding='utf-8'))
+m = x = 0
+for line in open('mw.renou.jsonl', encoding='utf-8'):
+    o = json.loads(line); e = idx.get(o.get('key1'))
+    if e is None: continue
+    if sorted(renou.filter_dcs_states(e)) == sorted(o.get('renou_dcs') or []): m += 1
+    else: x += 1
+print(m, x)   # -> 26290 0
+```
+
 _Dr. Mārcis Gasūns_

@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **Renou stage-redundancy audit (H692) — `@DECIDE` adjudicated: the 25-06
+  canonical `{code}.renou.jsonl` regeneration is a CORRECTION, not a
+  regression.** Proved exactly on the DCS axis (all 26,290 index-resolvable
+  `mw` rows: canonical `renou_dcs` == the `DCS_MIN_SUPPORT=2` projection of the
+  lossless `dcs_lemma_renou.json`, 0 mismatches — the old chain carried
+  single-text noise); the larger `<ls>`-axis divergence is explained by the
+  Phase 2/3 `<ls>` citation-route commits landing between the 23–24 June old
+  chain and the 25 June canonical rebuild. Canonical files are trustworthy
+  downstream; the old underscore chain's deletion (H771) was safe. Full evidence
+  in [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
+  § ADJUDICATION.
+
 ## [1.9.3] - 2026-07-12
 
 ### Added — interactive "Каталог каталогов" over FEATURES_INDEX.md
