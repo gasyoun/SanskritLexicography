@@ -1974,6 +1974,59 @@ the 2026 master, never `DCS-data-2021/` (verdict registered in
 
 ---
 
+### §80. DCS `text_sandhied` is largely DE-sandhied pada text in the Rāmāyaṇa — and locus joins fail across editions; a text-keyed 3-tier match (exact / consonant-skeleton / fuzzy) recovers it
+
+Two traps for anyone crosswalking verse text onto the DCS corpus (hit in H759,
+the НКРЯ Wave-2 annotation comparison). **(1) Loci don't join across editions:**
+the Samudra Manthanam Rāmāyaṇa kāṇḍas are vulgate-numbered (77/119/75 sargas)
+vs DCS's critical edition (76/111/71) — MBh 3 happens to match (both critical,
+299 adhyāyas) but nothing guarantees it elsewhere. **(2) Even text matching
+breaks on sandhi:** DCS's `sentence.text_sandhied` is, for the Rāmāyaṇa at
+least, largely de-sandhied pada text (`sukhatantraḥ na ca alasaḥ`) where a
+printed edition surface is sandhied (`sukhatantro nacālasaḥ`) — plain
+normalization (strip spaces/punct) leaves exact-match rates as low as 11%
+(Ayodhyā: 1,019 exact of 9,093 lines). A **consonant-skeleton tier** (delete
+vowels + visarga + y/v, fold all nasals to m, guard with a ≥0.70 vowelled-string
+difflib floor) recovers the sandhi class wholesale: Ayodhyā 38%→54% coverage,
+MBh 3 98.3%→99.8%. The residue is then a genuine edition measurement — 795 of
+801 probed unmatched Ayodhyā lines are absent from the *entire* DCS Rāmāyaṇa
+(critical-edition excisions), so ~54–76% coverage on vulgate Rām kāṇḍas is the
+true ceiling, not a matcher defect. Also: the 2026 DCS sqlite import carries 13
+mojibake lemma strings (kḷp/ṝ-family, e.g. `kﾱp`) — filter and count them.
+
+> **Source:** H759 3-path annotation comparison
+> ([nkrya_annotate.py](https://github.com/gasyoun/SamudraManthanam/blob/main/web/corpus_builder/nkrya_annotate.py),
+> [ANNOTATION_3PATH_COMPARISON.md](https://github.com/gasyoun/SamudraManthanam/blob/main/nkrya-parallel/export/ANNOTATION_3PATH_COMPARISON.md),
+> [SamudraManthanam PR #43](https://github.com/gasyoun/SamudraManthanam/pull/43)) ·
+> SamudraManthanam × VisualDCS · 12-07-2026, Fable 5 (`claude-fable-5`).
+
+---
+
+### §81. vidyut-cheda 0.4 lemmatizes derivatives to the dhātu ROOT (rāmaḥ → ram) where DCS uses the nominal stem — and over-segments epic verse 1.44×
+
+Comparing vidyut output against DCS lemma annotation requires knowing two
+systematic properties (measured on 40,269 epic half-verses, H759).
+**(1) Lemma granularity:** vidyut's `Token.lemma` returns the dhātu root for
+every derivative (*rāmaḥ* → *ram*, *varam* → *vṛ*, *vāk* → *vac*) where DCS
+lemmatizes nominals to the stem (*rāma*, *vara*, *vāc*); for Basic
+(non-kṛdanta) prātipadikas the stem is recoverable from
+`Token.data.pratipadika_entry.pratipadika.text`, but kṛdantas keep the root —
+any B↔C agreement metric must state which level it compares, or it measures
+convention, not correctness. **(2) Segmentation quality on epic text:** vidyut
+0.4 produced 293,775 tokens against 203,623 surface tokens (1.44×), shattering
+long compounds and vṛddhi derivatives into short spurious roots
+(*dhārtarāṣṭraiḥ* → 5 fragments); 5.4% of tokens carry no lemma; unparseable
+input returns an **empty token list, not an error**. Net: B↔C lemma-set Jaccard
+is only 0.28–0.35 vs DCS on fully-covered verses — fresh auto-tagging with
+vidyut is not competitive with a DCS crosswalk on epic verse (per the standing
+"vidyut display-only" caveat, now quantified).
+
+> **Source:** H759 3-path annotation comparison
+> ([annotation_3path_metrics.json](https://github.com/gasyoun/SamudraManthanam/blob/main/nkrya-parallel/export/annotation_3path_metrics.json)) ·
+> SamudraManthanam · 12-07-2026, Fable 5 (`claude-fable-5`).
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
