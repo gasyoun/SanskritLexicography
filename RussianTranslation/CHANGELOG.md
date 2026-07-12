@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H811 — ≤N-wide staggered dispatch (boundedParallel) for degraded-API requeues
+- [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) gains `--max-wide=N` +
+  `--stagger-ms=M`: the emitted top-level dispatch now runs through a
+  `boundedParallel(thunks, width, staggerMs)` worker-pool (≤N units in flight, first N starts
+  staggered) instead of the runtime `parallel()`. **Default 0 = unbounded (no regression).**
+- Root of the H255 w07 finding: the Workflow runtime caps width at ~10, and on a degraded
+  generation API a tiny card that completes in **~54 s alone** is inflated past the **180 s
+  kill CEIL** at ~10-wide (w07: 32/36 kill-timeouts on 128–500 B skeletons). A `--max-wide=3`
+  requeue keeps each card near its isolated latency. Requeue recipe:
+  `gen_opt_harness2.py <root>_rq1 --nominal --keys=<null-keys> --output-budget=1 --no-tm
+  --max-wide=3 --stagger-ms=2000`.
+- Verified: new [`src/pilot/boundedparallel_test.js`](src/pilot/boundedparallel_test.js)
+  behavioral test (against the REAL emitted fn — caps concurrency, staggers, order-preserving,
+  null-on-throw) wired into `window_selftest.test_lowwide_staggered_dispatch`; full
+  `window_selftest.py` + `lang_parity_check.py` green; new `lowwide_staggered_dispatch_h811`
+  SHARED LANG_PARITY entry (the width control is language-independent, emitted identically for
+  RU/EN).
+
 ### H809 — PWG→RU scale-readiness census (12-07-2026): NOT ready for nonstop; blocker is infra
 - [`SCALE_READINESS_CENSUS_2026-07-12.md`](SCALE_READINESS_CENSUS_2026-07-12.md) — a
   read-only 8-agent workflow (Opus 4.8 `claude-opus-4-8`, ~1.0 M tokens) verified the
