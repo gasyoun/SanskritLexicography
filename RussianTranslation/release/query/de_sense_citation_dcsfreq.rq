@@ -1,0 +1,29 @@
+# Acceptance query (H772, PWG++): join a *German* PWG sense to (a) its per-sense
+# <ls> citation in the German enrichment graph and (b) the DCS corpus frequency of
+# its lemma in the separate DCS-FREQUENCY graph -- proving the derivable layers
+# enrich the German original, not only the Russian, over the SAME shared lemma IRI
+# spine. This is the German-side twin of sense_citation_dcsfreq.rq (which does the
+# Russian side); both join on the same lemma, so RU entry, DE entry and DCS
+# frequency are one federated star around the lemma-bank node.
+
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX pwglex: <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#>
+
+SELECT ?lemma ?senseNumber ?definition ?dcsCount ?sigla ?locus WHERE {
+  ?entry a ontolex:LexicalEntry ;
+         dct:language "de" ;
+         ontolex:canonicalForm ?lemma ;
+         ontolex:sense ?sense .
+  ?sense pwglex:senseNumber ?senseNumber ;
+         skos:definition ?definition ;
+         dct:references ?citation .
+  ?citation pwglex:sourceSigla ?sigla .
+  OPTIONAL { ?citation pwglex:locus ?locus }
+
+  # ---- cross-dataset join on the shared lemma IRI (the "federated" edge) ----
+  ?lemma pwglex:dcsCount ?dcsCount .
+}
+ORDER BY DESC(?dcsCount) ?senseNumber
+LIMIT 25

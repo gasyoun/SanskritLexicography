@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H772 — PWG++: glue the derivable layers onto the German original, not only the RU
+- New `de-lexicon` mode in
+  [`src/export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py)
+  emits a first-class German `ontolex:LexicalEntry` per PWG homograph
+  (`entry/<key1>[-N]/de`) into a **separate** graph (`pwg_de_lexicon.ttl`) that
+  federates on the **same** `lemma/<key1>` node as the RU lexical graph and the
+  DCS-frequency graph. German glosses, `<lex>` POS, `<ls>` citations, diasystem,
+  Renou strata and the shared dated `StratumAttestation` land on the German entry
+  with **zero translation**; DCS frequency reaches it via the shared lemma. The
+  German dictionary is sourced from the full ~120k `assembled_cards` (the German
+  source), so it is **decoupled from the ~11.5k translated subset**. Sense split
+  reuses `pwg_mask.restore` + `microstructure.split_senses/sense_node` (no
+  reinvention). RU + DCS output stays byte-identical.
+- [`src/lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py)
+  gains block **C** (three-way DE×citation×DCS-freq federated join, German
+  entry/sense invariants, RU+DE-share-one-lemma, source coverage, byte-stable
+  regen) + query
+  [`release/query/de_sense_citation_dcsfreq.rq`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/query/de_sense_citation_dcsfreq.rq).
+  Full gate **PASSED**. Design + layer inventory:
+  [`PWG_PLUS_GERMAN_ENRICHMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md).
+  ([H772](https://github.com/gasyoun/Uprava/blob/main/handoffs/H772-Opus_SanskritLexicography_pwg_plus_german_enrichment_lod_12.07.26.md), Opus 4.8 `claude-opus-4-8`)
+
 ### H692 — assembled_cards/renou stage-redundancy: verify + deletion PROPOSAL (no deletion)
 - [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
   verifies the two progressive-enrichment series the census flagged as
