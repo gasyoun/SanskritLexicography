@@ -146,6 +146,48 @@ carry no metadata — the identifications below are from internal evidence).
 7. **Systema-Sanscriticum teaching platform:** the applied/teaching shelf (DDL, learner
    corpora, young-learner pedagogy) if a corpus-informed Sanskrit teaching layer is built.
 
+## Intended use / known misuse
+
+**Intended use:** grounding literature for the M01 Brill/De Gruyter monograph and the
+A30/A31/A32 paper pipeline — consult the per-work tags table above to pick close-read vs.
+skim-only priority before citing, and read [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
+for the full grounding map. Also serves the "beyond M01" backlog above (A30–A32, pwg_ru
+evidence grading, A39, methods sections, Systema teaching platform).
+
+**Known misuse:**
+- Citing Ryan (ed.) 2019 *Handbook of Corpus Linguistics* as an authoritative source — it
+  is a flagged low-authority reprint anthology of unrelated CC papers; trace and cite the
+  original papers instead (defect 4).
+- Citing page numbers from these Markdown conversions without spot-verifying against the
+  original — most carry no front-matter metadata, so identities/pagination above are
+  reconstructed from internal evidence, not publisher metadata (defect 5).
+- Redistributing or republishing full-text copies of these works externally. This is a
+  private research library of scanned/borrowed book PDFs and OA papers with mixed and
+  largely unaudited rights status per work; `making-dictionaries-mdf-coward-grimes-2000.md`
+  is explicitly flagged SIL all-rights-reserved (digest/paraphrase only, not full text) —
+  treat every other file as unverified-rights unless separately cleared, not as
+  cite-and-republish-safe.
+- Citing both the PDF and EPUB conversions of *The Routledge Handbook of Applied
+  Linguistics* (2024, 2nd ed.) as if independent sources — they are the same work
+  (defect 2); cite one edition.
+- Citing `Hints to the Study of Sanskrit Compounds.md` for content — the file is an empty
+  scan (Google-boilerplate only, no OCR'd body; defect 1).
+
+## Maintenance & sunset plan
+
+No active accession pipeline — the library was assembled in one pass (committed
+07-07-2026) and is not routinely expanded; new works are added ad hoc alongside M01
+chapter drafting, not on a schedule. The hygiene backlog (empty scan, PDF/EPUB duplicate,
+mangled filename, low-authority volume, missing front-matter) is triaged opportunistically
+by whichever session next touches the affected file, not swept on a cadence. Owned by
+whoever is actively driving M01 or the A30–A32 papers; re-run the identification/tagging
+audit (the H505 pattern) if the M01 outline changes enough to add or drop works, or if a
+work's rights status needs re-checking before wider reuse.
+
+## Deprecation status
+
+`active`
+
 ## Related documents
 
 - [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) — the full M01 crosswalk this metadoc indexes for
@@ -157,5 +199,6 @@ carry no metadata — the identifications below are from internal evidence).
 | Date | Change | Session |
 |---|---|---|
 | 10-07-2026 | Metadoc created: provenance, 37 per-work tags, defects, beyond-M01 backlog | H505, Fable 5 (`claude-fable-5`) |
+| 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (claude-sonnet-5) |
 
 _Dr. Mārcis Gasūns_
