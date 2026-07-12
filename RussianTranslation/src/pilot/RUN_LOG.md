@@ -655,3 +655,24 @@ At ≤3-wide the cards actually RAN (**29 agents completed vs w07's 8**; 1.89 M 
 **Documented residual (14 null, not requeued again — the H442 requeue-once rule):** the **6 presplit-cohort** cards (`avy_ahata`/`avyagra`/`b_ahlika`/`apr_apta`/`as_a_dya`/`asa_mskfta`~~pw — `selfheal-nothing-resolved`, STRUCTURAL, need a harness fix not a retry) + **8 non-presplit** that still kill-timed-out even at ≤3-wide (residual API degradation: `arvant`/`anupapatti`~~pw, `ativizA`~~pw, `avaSya`~~pw+sch, `avidita`~~pw+pwkvn, `brAhmaRI`~~pw). A further ≤2-wide pass, an API recovery, or the presplit harness fix is the next lever.
 
 **Net H255 progress:** w07's 36 headwords-worth → **22 promoted (5 from w07 + 17 from rq1)**, 14 documented residual. `probe_log` outcome recorded for `wf_7e016611-b78`. **The `--max-wide` requeue mode is now the proven recovery path for a concurrency-degraded window.**
+
+---
+
+## 2026-07-12 — no-PWG lane `no_pwg_w07_rq2` (H255 drain — `--max-wide=2` pass on rq1's 8 residual kills) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+**Width sweep, final step.** Ran rq1's 8 non-presplit residual kills (all null at ≤3-wide) at `--max-wide=2 --stagger-ms=3000`: **5/8 recovered**, 3 kill/fidelity residual, 0 conn-errors. Each width reduction kept paying off on the same degraded API:
+
+| run | width | yield (of that batch) | kill-timeouts |
+|---|---|---|---|
+| `no_pwg_w07` | ~10-wide | 5/36 (14 %) | 32 |
+| `no_pwg_w07_rq1` | ≤3-wide | 17/31 (55 %) | 15 |
+| `no_pwg_w07_rq2` | **≤2-wide** | **5/8 (63 %)** | 3 |
+
+So the 8 residual kills were still **concurrency-sensitive down to 2-wide** — dropping from 3 to 2 concurrent recovered 5 of them. **Promoted 5 sub-cards** (12 rows across anupapatti/avaSya/avidita). Store `src/pwg_ru_translated.jsonl` (canonical main): **11,541 → 11,553**.
+
+**Final residual (3, distinct causes — not a width problem):**
+- `br_ahma_r_i~~h0_zz_pw` — kill-timeout at the **180 s CEIL** even at 2-wide: genuinely API-hard right now (needs API recovery or a ≤1-wide pass).
+- `arvant~~h0_zz_pw` — kill-timeout at **83 s**: it carries a self-heal fallback (`selfheal_cards`) so it gets the byte-scaled budget (83 s), not the no-fallback CEIL (180 s) — a **budget-classification** edge, worth a harness look.
+- `ativiz_a~~h0_zz_pw` — **fidelity-reject** (`{#…#}` markup 0/3 restored): a **content** failure, not concurrency — the model dropped the Sanskrit delimiters; needs a targeted rework, not a retry.
+
+**Net H255 over w07's 36 cards: 27 promoted** (5 w07 + 17 rq1 + 5 rq2), **9 residual** (6 structural presplit-cohort + these 3). `probe_log` outcome recorded for `wf_e670c54b-24b`. **Width-sweep conclusion: ≤2-wide is the effective floor for concurrency-recoverable cards on this degraded API; what's left is structural (presplit), API-hard (180 s CEIL), or content (fidelity) — none of which more width-tuning fixes.**
