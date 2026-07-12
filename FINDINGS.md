@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §75) whatever its section, so existing numbers never shift; when a finding is later
+(currently §79) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -85,6 +85,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§71. PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate](#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) — 2,309 single-case parens + 40 variation groups + 1,504 mit-phrases; verbs only 417 of 1,476 marker-bearing entries; the store slot `government` is empty (0/11,261).
 - 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
 - 🟠 [§74. The ls-graph citation matrix is degenerate for MW](#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
+- 🔴 [§77. Amarakosha and SIL semdom both bolt a formal annex onto a semantic taxonomy — and it is the same ~10% once polysemy is set aside](#77-amarakosha-and-sil-semdom-both-bolt-a-formal-annex-onto-a-semantic-taxonomy--and-it-is-the-same-10-once-polysemy-is-set-aside) — AK kāṇḍa 3 = 46.4% of synsets vs semdom top-9 = 9.4% of domains; minus nānārtha's polysemy register the form-class annexes converge (10.7% vs 9.4%); homonymy is the one annex bucket AK needed and SIL did not.
 
 **Etymology & derivation**
 
@@ -125,7 +126,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟡 [§72. VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk](#72-vedawebs-id_gra-token-field-is-the-grassmann-l-entry-number-no-fuzzy-text-matching-needed-for-a-gravedaweb-crosswalk)
 - 🟠 [§73. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field](#73-vedaweb-20s-cc-by-40-for-everything-claim-is-not-machine-confirmed-only-236-catalog-resources-carry-an-explicit-license-field)
 - 🟡 [§75. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers](#75-the-full-devībhāgavata-purāṇa-sanskrit-is-not-on-gretil-only-the-devigita-fragment-the-complete-mūla-lives-on-sanskritdocumentsorg-without-dbhp_-markers)
-- 🟠 [§76. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered](#76-dcs-2026-sqlite-carries-531747-sense-annotated-tokens-m_wordsem-but-no-local-idgloss-inventory-gold-scored-wsd-against-mw-senses-is-blocked-until-the-inventory-is-recovered)
+- 🟠 [§78. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered](#78-dcs-2026-sqlite-carries-531747-sense-annotated-tokens-m_wordsem-but-no-local-idgloss-inventory--gold-scored-wsd-against-mw-senses-is-blocked-until-the-inventory-is-recovered) _(was §76, renumbered 12-07-2026 — duplicate key)_
 
 ---
 
@@ -1901,7 +1902,9 @@ Skandha 1 (1181 verses, 429 comments) is ingested as
 
 > **Source:** H534, Opus 4.8 (`claude-opus-4-8`), [SamudraManthanam PR #31](https://github.com/gasyoun/SamudraManthanam/pull/31) · 2026-07-10
 
-### §76. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered
+### §78. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered
+
+> _Was §76 until 12-07-2026, renumbered — duplicate key (§76 was already taken by the MW→WordNet→semdom bridge finding, cited from FEATURES_INDEX C19; found during the H774 §77 append)._
 
 Measured 11-07-2026 on `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (the only non-stub copy;
 the repo-root and `src/` `dcs_full.sqlite` files are 0 bytes): `token.m_wordsem` is populated
@@ -1915,6 +1918,34 @@ word-sense-ID inventory from the DCS CoNLL-U releases / upstream DB and mapping 
 sense divisions. Until then, do not claim WSD accuracy numbers from this dump.
 
 > Source: H730 defgen+WSD eval session · kosha/VisualDCS · 11-07-2026, Fable 5 (`claude-fable-5`).
+
+### §77. Amarakosha and SIL semdom both bolt a formal annex onto a semantic taxonomy — and it is the same ~10% once polysemy is set aside
+
+🔴 **Two semantic taxonomies built 1,500 years apart — the Amarakosha (~6th c. CE) and
+SIL's semantic domains (semdom.org, field lexicography) — each needed a formal,
+non-semantic annex their organizing principle could not absorb, and once the polysemy
+register is set aside the annexes are the same relative size.**
+Evidence (every number derived live by
+[semdom_ak_annex_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py)
+from `amar.txt` + `semdom.json`; full table in
+[SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md)):
+AK kāṇḍa 3 (viśeṣyanighna 326 · saṅkīrṇa 168 · nānārtha 1,995 · avyaya 103) =
+2,592/5,590 synsets (46.4%); semdom top-level 9 "Grammar" = 168/1,792 domains (9.4%).
+Direct branch counterparts exist only for the form-class vargas (avyaya ≈ 9.2.2 +
+9.2.5–9.2.7, 8 domains; viśeṣyanighna ≈ 9.1.4 + 9.2.1, 2 domains). nānārtha (homonyms,
+35.7% of the kosha on its own) has **no** semdom counterpart — semdom absorbs polysemy
+structurally by listing a word under several domains — and with it set aside the
+form-class annex proper converges: **AK 597/5,590 (10.7%) vs semdom 168/1,792 (9.4%)**.
+Implication: for A58's §6 this is the paper's cleanest cross-epoch symmetry claim (state
+it counted, never as prose analogy), and homonymy-as-a-bucket vs
+homonymy-as-multiple-listing is the sharpest single design difference between a
+memorized verse thesaurus and an elicitation taxonomy. Keep top-level 9 out of the
+Level A crosswalk CSV — the annex parallel is a finding *about* the taxonomies, not a
+semantic mapping.
+
+> **Source:** H774 annex-table build (`data/semdom_ak_annex_table.py`, reusing
+> `semdom_varga_crosswalk.py` loaders) · SanskritLexicography · 12-07-2026,
+> Fable 5 (`claude-fable-5`).
 
 ---
 
