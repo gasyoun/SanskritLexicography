@@ -1,6 +1,6 @@
 # semdom ↔ Amarakosha crosswalk — Level A varga map + Level B synset gold pilot
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 12-07-2026_
 
 The first crosswalk between SIL's semantic domains
 ([semdom.org](https://semdom.org), 1,792 hierarchical domains, data CC BY-SA 4.0)
@@ -30,6 +30,7 @@ varga IDs ↔ AK `eid`s) — no AK/UoHyd prose content — released CC BY-SA 4.0
 | [semdom_ak_disagreements.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_disagreements.tsv) | The 64 A≠B items with both codes + notes — adjudication audit trail. |
 | [semdom_ak_bridge.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_bridge.py) | Candidate generator: AK lemmas → MW glosses → WordNet noun synsets → GWC-2023 semdom↔WordNet bridge → ranked codes; also emits the stratified gold packet. |
 | [semdom_ak_metrics.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_metrics.py) | Evaluation: Cohen's κ (`kappa` mode), bridge precision / coverage / structure agreement vs gold (`metrics` mode). |
+| [semdom_ak_annex_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py) | Grammatical-annex parallel counted (AK kāṇḍa 3 vs semdom top-level 9) — emits the annex table below; reuses the two loaders from `semdom_varga_crosswalk.py`. |
 
 **Inputs NOT committed** (fetch locally to reproduce): `data/semdom.json` from
 [sillsdev/LfMerge](https://github.com/sillsdev/LfMerge/blob/master/data/semantic-domains/semdom.json);
@@ -115,9 +116,27 @@ elicitation completeness — formally parallel to Amarakosha's kāṇḍa 3:
 avyayavargaḥ ≈ 9.2.2/9.2.5–9.2.7 (adverbs, conjunctions, particles,
 interjections); viśeṣyanighnavargaḥ ≈ 9.1.4/9.2.1 (adjectives). Both
 taxonomies, 1,500 years apart, needed a formal bucket the semantic scheme
-could not absorb. These informative parallels are documented here only and
-deliberately kept out of the Level A CSV, which stays purely semantic
-(top-level 9 therefore takes 0 pairs). A second asymmetry from the Level A
+could not absorb. Counted (12-07-2026, H774, every number derived live by
+[semdom_ak_annex_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py)):
+
+| AK grammatical varga | synsets | % of kosha | semdom 9.x counterpart (subtree) | domains | % of semdom |
+|---|---|---|---|---|---|
+| AK-3.1 viśeṣyanighnavargaḥ | 326 | 5.8% | 9.1.4 General adjectives + 9.2.1 Adjectives | 2 | 0.1% |
+| AK-3.2 saṅkīrṇavargaḥ | 168 | 3.0% | — (no counterpart: a miscellany tail, not a category) | 0 | 0% |
+| AK-3.3 nānārthavargaḥ | 1,995 | 35.7% | — (no counterpart: semdom handles polysemy by multiple listing, not a bucket) | 0 | 0% |
+| AK-3.4 avyayavargaḥ | 103 | 1.8% | 9.2.2 Adverbs + 9.2.5 Conjunctions + 9.2.6 Particles + 9.2.7 Interjections | 8 | 0.4% |
+| **kāṇḍa 3 total** | **2,592** | **46.4%** | **semdom top-level 9 (whole annex)** | **168** | **9.4%** |
+
+Two asymmetries in the table are findings, not gaps. Homonymy is the bucket AK
+needed and semdom did not: nānārtha alone is 1,995 synsets (35.7% of the
+kosha), while semdom absorbs polysemy structurally by listing a word under
+several domains. And with that polysemy register set aside, the **form-class
+annex proper is almost the same size in both taxonomies**: AK 597/5,590
+synsets (10.7%) vs semdom 168/1,792 domains (9.4%) — two semantic schemes,
+1,500 years apart, spending the same ~10% of their inventory on the formal
+residue their organizing principle could not absorb. These parallels are
+documented here and deliberately kept out of the Level A CSV, which stays
+purely semantic (top-level 9 therefore takes 0 pairs). A second asymmetry from the Level A
 totals: semdom top-level 7 "Physical actions" is touched by exactly one
 domain (7.2.4 Travel) — a noun thesaurus has almost no varga-level footprint
 in semdom's verb-oriented action subtree, while its social-world coverage
@@ -145,6 +164,7 @@ python data/semdom_varga_crosswalk.py          # validate Level A
 python data/semdom_ak_bridge.py                # candidates + gold packet
 python data/semdom_ak_metrics.py kappa         # A vs B agreement
 python data/semdom_ak_metrics.py metrics       # bridge/coverage/structure vs gold
+python data/semdom_ak_annex_table.py           # grammatical-annex parallel table
 ```
 
 _Dr. Mārcis Gasūns_

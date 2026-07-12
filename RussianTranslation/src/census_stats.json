@@ -1,0 +1,258 @@
+{
+  "schema": "pwg_ru.government_census.v1",
+  "generated": "12-07-2026",
+  "pipeline_version": "1.1.0",
+  "source": "pwg.txt",
+  "source_sha16": "430c910f8b0c9229",
+  "census": {
+    "n_entries": 123366,
+    "n_units": 288991,
+    "entries_with": 1476,
+    "units_with": 3222,
+    "kinds": {
+      "mit-phrase": 1504,
+      "paren-single": 2309,
+      "paren-nongov": 68,
+      "paren-variation": 40
+    },
+    "cases": {
+      "mit-phrase": {
+        "gen": 318,
+        "acc": 635,
+        "loc": 197,
+        "abl": 120,
+        "dat": 108,
+        "instr": 125,
+        "nom": 1
+      },
+      "paren-single": {
+        "acc": 1102,
+        "loc": 385,
+        "instr": 270,
+        "gen": 245,
+        "abl": 190,
+        "dat": 117
+      },
+      "paren-nongov": {
+        "voc": 47,
+        "nom": 21
+      },
+      "paren-variation": {
+        "gen+dat": 1,
+        "loc+acc": 4,
+        "dat+loc": 4,
+        "dat+gen": 1,
+        "acc+loc": 8,
+        "instr+gen": 3,
+        "acc+dat+gen": 1,
+        "acc+dat": 2,
+        "acc+gen": 1,
+        "loc+dat": 2,
+        "instr+acc": 1,
+        "nom+acc": 1,
+        "acc+instr": 1,
+        "abl+instr": 1,
+        "gen+instr": 1,
+        "gen+loc": 1,
+        "loc+gen": 2,
+        "instr+loc": 2,
+        "abl+gen": 1,
+        "instr+loc+abl": 1,
+        "loc+instr": 1
+      }
+    },
+    "pos_gov_entries": {
+      "unknown": 427,
+      "adj": 327,
+      "nominal": 241,
+      "indecl": 64,
+      "verb": 417
+    },
+    "pos_entries_all": {
+      "unknown": 29492,
+      "nominal": 62103,
+      "adj": 26918,
+      "verb": 2971,
+      "indecl": 1877,
+      "other(ind)": 5
+    },
+    "top_entries": [
+      [
+        [
+          "113928",
+          "sTA"
+        ],
+        113
+      ],
+      [
+        [
+          "82186",
+          "yuj"
+        ],
+        88
+      ],
+      [
+        [
+          "88503",
+          "vart"
+        ],
+        68
+      ],
+      [
+        [
+          "9940",
+          "i"
+        ],
+        58
+      ],
+      [
+        [
+          "21814",
+          "gam"
+        ],
+        42
+      ],
+      [
+        [
+          "55166",
+          "BU"
+        ],
+        42
+      ],
+      [
+        [
+          "93196",
+          "viS"
+        ],
+        39
+      ],
+      [
+        [
+          "15071",
+          "kar"
+        ],
+        38
+      ],
+      [
+        [
+          "42000",
+          "pad"
+        ],
+        37
+      ],
+      [
+        [
+          "81815",
+          "yA"
+        ],
+        34
+      ],
+      [
+        [
+          "27838",
+          "jYA"
+        ],
+        30
+      ],
+      [
+        [
+          "36484",
+          "DA"
+        ],
+        29
+      ],
+      [
+        [
+          "101574",
+          "Sri"
+        ],
+        29
+      ],
+      [
+        [
+          "114561",
+          "smar"
+        ],
+        28
+      ],
+      [
+        [
+          "104247",
+          "sad"
+        ],
+        27
+      ],
+      [
+        [
+          "103843",
+          "saYj"
+        ],
+        26
+      ],
+      [
+        [
+          "106410",
+          "sar"
+        ],
+        26
+      ],
+      [
+        [
+          "106569",
+          "sarj"
+        ],
+        26
+      ],
+      [
+        [
+          "24902",
+          "car"
+        ],
+        25
+      ],
+      [
+        [
+          "15749",
+          "kalp"
+        ],
+        24
+      ],
+      [
+        [
+          "19764",
+          "kram"
+        ],
+        22
+      ],
+      [
+        [
+          "57252",
+          "man"
+        ],
+        22
+      ],
+      [
+        [
+          "101797",
+          "Sru"
+        ],
+        22
+      ],
+      [
+        [
+          "32399",
+          "dA"
+        ],
+        21
+      ],
+      [
+        [
+          "54756",
+          "BAz"
+        ],
+        20
+      ]
+    ],
+    "n_hits": 3921
+  }
+}

@@ -1,0 +1,75 @@
+Which family should I optimize the 30-capability roadmap around first?
+Reasearch-grade - done?
+Production pipeline
+Reader features
+
+Handoff specs
+include capabilities that need new external data acquisition? ambitious
+https://github.com/tylergneill
+
++What about grammar markup? case-government backfill we now have, but dictionaries contain grammar, how do we store / markup / count it? What can we count in a card? Can we store the numbers, so they do not have to be recalculated later?
+C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation
+
++How to implement and scale C:\Users\user\Documents\GitHub\SamudraManthanam\nkrya-parallel for all of the C:\Users\user\Documents\GitHub\SamudraManthanam texts at https://samskrtam.ru/parallel-corpus/ and make it ready to become part of https://ruscorpora.ru - make a roadmap, ask me questions
+
++How far are we with citation verification in PWG?
+
++What are the cheap derivable research layers in parallel with translation C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation?
+Can we add those layer not only to the translation, but the original German files? Glue them together and add
+
++Can I see all the IDs of words that originally where on the same dictionary page together? on same column, a page is 2 columns togeter. similar work was done in KOSHA lately
+C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation
+
+for clean up the stray worktree what is the skill?
+
+KulikovVedic-YA-presents_Pass_-and-intrans_-inOIALSIE-19AmsterdamRodopi2012.pdf
+
+What mechanical tasks is an LLM doing where Python would be enough? Especially the frequent one. Scan repos
+No — there's still real Tier-A work left. Current state from C:\Users\user\Documents\GitHub\Uprava\SKILL_AUTOMATION_TIERS.md and C:\Users\user\Documents\GitHub\Uprava\AUTOMATION_LLM_ECONOMY_REPORT.md
+
+bug-hunt-handoff
+
+
+ПРОГРАММА КУРСА "СТРОЙ САНСКРИТА"
+
+Внедрение ВШЭ хорошо, а где программа МГУ? + Богатырева 2019 3 программы
+Догрузка 58.03.01 (задача 5)
+ВШЭ: прямые PDF программ с hse.ru больше не раздаются (увезены в закрытый LMS), но открытые страницы каталога сняты → [hse_online_harvest_2026.mdx](Uprava/dpo/DPO_58.03.01_src/ИКВИА ВШЭ/hse_online_harvest_2026.mdx) (каталог дисциплин 2025/26, параметры курса «Санскрит» по годам, оценивание).
+СПбГУ: обе nc.spbu.ru-шары из эталона мертвы (404, истекли) — залогировано в SERVER_OUTAGES.md с инструкцией rerun через живой браузер.
+
+санскритские разговорники
+
+=======================
+
++вписать в
+C:\Users\user\Documents\GitHub\SanskritGrammar\GasunsDhatu_2014\revision-2026\RWS_REPORT.md что среди
+
+одно редакционное решение: (а) принять конвенцию — при первом упоминании в каждой главе термин даётся в русской передаче + IAST в скобках, далее свободно; (б) один механический проход по книге (агентная сессия после визы конвенции); (в) для ведийский/классический — точечная проверка ~20 мест из приложения. До визы конвенции эти замечания в §5 сознательно задвинуты на второй план.
+
+выбран (а) принять конвенцию — при первом упоминании в каждой главе термин даётся в русской передаче + IAST в скобках, далее свободно, утверждено. Агент может продолжить?
+
+Честная маркировка: часть рецензентов требует того, чего требует их персона — panini-traditional хочет ссылку на сутру у каждого правила, lidova-commentary — комментаторскую рамку, elizarenkova-veda — привязку к гимну. Для диссертации это опционально (материал для будущего расширения книги), для C1 — нерелевантно. В §5 такие замечания показаны, но помечены стилем-источником; принимать их пакетно не нужно.
+
+elizarenkova-veda — привязку к гимну дать решительно невозможно, так как мы не работаем с гимнами Ригведы. panini-traditional хочет ссылку на сутру у каждого правила - мы плохо ориентируемся в этих правилах, разве что подобрать https://ashtadhyayi.com/sutraani - разработаешь такой скилл? lidova-commentary — комментаторскую рамку дать тут невозможно, разве что традиционных грамматических комментаторов, но мы их знаем недостаточно хорошо и это тогда уже скорее призма panini-traditional.
+
+C:\Users\user\Documents\GitHub\SanskritGrammar\GasunsDhatu_2014\revision-2026\RWS_REPORT.md ведет на
+https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/PROPOSALS.md но она 404
+
+Два варианта правки (на выбор автора): (а) минимальный — мостик-предложение вида «Полемика 1880-х не была первой попыткой Запада критически освоить дхатупатху: за сорок лет до неё…» + явный подзаголовок; (б) композиционный — перенести блок Вестергаард–Бётлинк (строки 641–667) ПЕРЕД полемику Уитни–Бюлера, восстановив хронологию обзора (1841 → 1885). Совет дополнительно отметил соседние абзацы этого блока — № 31, 33, 34 приложения А.
+
+одобрено:
+(б) композиционный — перенести блок Вестергаард–Бётлинк (строки 641–667) ПЕРЕД полемику Уитни–Бюлера, восстановив хронологию обзора (1841 → 1885)
+
+Предложение формулировки (не правилось): «Объект исследования — глагольные корни древнеиндийского языка в том виде, в каком они зафиксированы корнесловами индийской традиции (дхатупатхи) и европейской науки (Вестергаард, Уитни, Пальсуле и др.); предмет — системные отношения первичных и вторичных рядов корней и критерии их выделения». Если автор сознательно строит работу как историографическую (объект = теории), это допустимо, но тогда выбор нужно защитить одним предложением прямо в тексте — сейчас он выглядит случайным. Фразу «Делается попытка выделения морфемария санскрита» из абзаца про объект лучше перенести к задачам (это задача 4/6, строки 137–141).
+
+Пальсуле = итог индийской традиции (дхатупатхи), не европейской науки
+вместо и др. = Х. Верба
+
+Предложение правки одобряется, внедрить.
+Фразу «Делается попытка выделения морфемария санскрита» из абзаца про объект лучше перенести к задачам (это задача 4/6, строки 137–141) - согласен
+Правка: Добавить ссылки на конкретные сутры Панини или комментарии к ним, например: 'ср. Aṣṭādhyāyī 6.1.68', или на современное исследование, например, '(Cardona 1997: 123)'. - мы не знаем сутры наизусть. Нужен отдельный скилл, уже писал об этом выше.
+
+Правка: Разделить дефектность на: (а) парадигматические лакуны в системе Панини (например, корни, не образующие всех времён) и (б) историческую утрату финитных форм, засвидетельствованную в ведийском корпусе. - принимается целиком и полностью, изумительно точно кратко, гораздо лучше, чем было. Можно ли помимо zaliznyak-method после внедрения все остальных правок пройтись еще всеми остальными ипостасями zaliznyak из Ученого совета RWS?
+
+Правка: Добавить контекст: указать, в какой школе (например, Панинийская) формировалось это понятие, как комментарии (бхашьи, варттики) развивали или оспаривали взгляды на корни, какие авторитеты стояли за разными классификациями. - чтобы сделать это, поставь задачу - обучить скилл на  Kātyāyana's Vārttika-sūtra https://vedicheritage.gov.in/pdf/Vartikas_Prof_Bhagyalata_Pataskar.pdf + Махабхашья Franz, Kielhorn (1892–1909). The Vyākaraṇa-Mahābhāṣya of Patañjali (2 ed.) https://web.archive.org/web/20070610194203/http://hin.osaka-gaidai.ac.jp/cardona/mbhas/mbhas1s.txt + Cardona, George (1997). Pāṇini: A Survey of Research. + Staal, J.F. (ed.), 1985. A Reader on Sanskrit Grammarians + Scharfe, Hartmut, 1977. Grammatical Literature. Vol. V, Fasc. 2
+Вручную подобная задача неописильна.

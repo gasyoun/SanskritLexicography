@@ -1,11 +1,21 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 10-07-2026_
+_Created: 07-07-2026 · Last updated: 12-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 12-07-2026 (H782, A58 comparative-taxonomy aside)
+
+- **Ch. 2 §3.10** gains a one-paragraph comparative aside on the varga scaffold itself:
+  the A58 semdom ↔ Amarakosha crosswalk's structure agreement (67%) and the counted
+  grammatical-annex symmetry (AK kāṇḍa 3 46.4% of synsets vs semdom top-9 9.4% of
+  domains, converging 10.7% vs 9.4% without nānārtha —
+  [SL FINDINGS §77](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+  as validation that the indigenous taxonomy works as a cross-epoch measurement frame.
+  Citation-level only; A58 stays outside M01's 15-article glue list.
 
 ### Changed — 10-07-2026 (MG ruling on H505's Ch. 7 `@DECIDE`)
 

@@ -10,6 +10,84 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H777 — expand per-card stats (layer/markup/QA/xref + dcs_freq + grammar join), 3 grains
+- [`src/annotate_stats.py`](src/annotate_stats.py) extended from the H422 lemma block to the
+  full accepted count menu (MG ruling 12-07-2026) at **three granularities** —
+  `sense_stats` (per row), `record_stats` (per homonym), `stats` (per lemma): layer/5-merge
+  provenance (`n_layers`, `layers_present`, `n_senses_supplement`), markup density (`n_ls`,
+  `n_lex`, `n_ab`, `n_xref`, `n_labels`), translation/QA (`equivalence_types`, `source_types`,
+  `review_statuses`, `n_differentia`, `n_null`), frequency (`dcs_freq_max`, exact-iast DCS
+  join), and the **grammar-block join** (`grammar_join`, `n_whitney_homonyms`,
+  `n_irregularities`, `root_class`, `stem_final`).
+- **`n_irregularities` no longer stuck at 0** — joined from `whitney_grammar.grammar_for`
+  for single-Whitney-homonym roots (32/205 lemmas, 46 irregularities on the current store);
+  ambiguous-homonym roots (17) are left `null`, not guessed (hand PWG-h ↔ Whitney alignment
+  owed). `dcs_freq_max` is exact-iast-or-null (170/205 matched) — prefixed forms DCS doesn't
+  lemmatise stay null rather than force-matched (the Renou-classifier lesson).
+- Schema `stats` block + `sense_stats`/`record_stats` documented in
+  [`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json); every
+  grammar-join state validates. `pipeline_versions.json` `script` bumped 1.0.0 → 1.1.0
+  (re-froze SHA; `annotate_stats.py` added to the tracked set) so cached blocks
+  self-invalidate. Extended fixture selftest.
+
+### H778 — freeze the PWG government census to a committed sidecar (no re-scan)
+- [`src/government_census.py`](src/government_census.py) gains a `freeze` command +
+  `build_sidecar`/`load_sidecar`/`census_or_load`: the corpus-level marker census over the
+  whole raw `pwg.txt` is frozen to the committed [`src/census_stats.json`](src/census_stats.json)
+  (**3,853 markers over 123,366 entries**), validated by the source SHA — `government_census.py
+  census` now prints `census source: cached` and skips the end-to-end re-scan when `pwg.txt`
+  is unchanged. [`src/government_queries.py`](src/government_queries.py) gains `--summary` for
+  the store-free corpus answer. Per-row listing queries still stream the store (rows not
+  frozen). Sidecar round-trip covered by the selftest.
+- Both are language-neutral analysis layers (operate on `de`/store structure) — no
+  LANG_PARITY entry required. Store fields are materialised locally by re-running the
+  annotator chain; the store is gitignored, so the code + sidecar are what ship.
+
+### H772 — PWG++: glue the derivable layers onto the German original, not only the RU
+- New `de-lexicon` mode in
+  [`src/export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py)
+  emits a first-class German `ontolex:LexicalEntry` per PWG homograph
+  (`entry/<key1>[-N]/de`) into a **separate** graph (`pwg_de_lexicon.ttl`) that
+  federates on the **same** `lemma/<key1>` node as the RU lexical graph and the
+  DCS-frequency graph. German glosses, `<lex>` POS, `<ls>` citations, diasystem,
+  Renou strata and the shared dated `StratumAttestation` land on the German entry
+  with **zero translation**; DCS frequency reaches it via the shared lemma. The
+  German dictionary is sourced from the full ~120k `assembled_cards` (the German
+  source), so it is **decoupled from the ~11.5k translated subset**. Sense split
+  reuses `pwg_mask.restore` + `microstructure.split_senses/sense_node` (no
+  reinvention). RU + DCS output stays byte-identical.
+- [`src/lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py)
+  gains block **C** (three-way DE×citation×DCS-freq federated join, German
+  entry/sense invariants, RU+DE-share-one-lemma, source coverage, byte-stable
+  regen) + query
+  [`release/query/de_sense_citation_dcsfreq.rq`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/query/de_sense_citation_dcsfreq.rq).
+  Full gate **PASSED**. Design + layer inventory:
+  [`PWG_PLUS_GERMAN_ENRICHMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md).
+  ([H772](https://github.com/gasyoun/Uprava/blob/main/handoffs/H772-Opus_SanskritLexicography_pwg_plus_german_enrichment_lod_12.07.26.md), Opus 4.8 `claude-opus-4-8`)
+
+### H775 — capability roadmap cards 5 + 23: MFS baseline + government sidecar (local-only)
+- New [`src/mfs_baseline.py`](src/mfs_baseline.py) (roadmap card 5): groups the
+  store by `key1` and emits a deterministic most-frequent-sense candidate per
+  lemma — the WordNet first-sense heuristic (DCS frequency is per-lemma, so it
+  cannot rank senses), with an explicit `unknown` outcome when the lemma is
+  absent from DCS. Live coverage over the 11,505-row store: **205 lemmas, 179
+  polysemous, 169 MFS candidates, 36 unknown**. Reuses `annotate_dcs_freq.freq_block`.
+- New [`src/government_sidecar.py`](src/government_sidecar.py) (roadmap card 23):
+  applies `government_census.extract_government` to every row's German `de` and
+  emits a **collision-free per-subcard sidecar** (not an in-place store rewrite,
+  which would race the concurrent drain lanes). Live census: **508 rows carry
+  government, 614 markers, 48 distinct `key1`** (436 paren-single, 176 mit-phrase,
+  2 variation) — corroborates the H335 `government_census` "store backfill surface
+  ~510 rows". Reuses `extract_government`.
+- Both outputs are gitignored (derived from the local-only store); scripts +
+  fixture selftests committed and wired into CI. Observatory
+  ([`CAPABILITY_OBSERVATORY.md`](CAPABILITY_OBSERVATORY.md)) cards 5 + 23 bumped
+  `not-started → prototype` (prototype count 4 → 6). The **accuracy/precision
+  acceptance metrics for both cards are gold-gated** — documented in
+  [`GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md`](GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md).
+- Language-neutral analysis layers (operate on `de`/sense structure, no RU/EN
+  translation divergence) — no LANG_PARITY entry required.
+
 ### H692 — assembled_cards/renou stage-redundancy: verify + deletion PROPOSAL (no deletion)
 - [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
   verifies the two progressive-enrichment series the census flagged as
