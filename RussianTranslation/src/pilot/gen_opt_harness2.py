@@ -193,6 +193,16 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  small/medium words (they never legitimately approach 40, so the
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across both pools
+# --- low-width staggered dispatch (H255/H811, 2026-07-12) --------------------------
+# The top-level dispatch fans every batch into the Workflow runtime, which runs ~min(16,
+# cores-2) ~= 10 concurrently. H255 w07 proved that on a *degraded* generation API this
+# self-inflates: a tiny single-fragment card that completes in ~54s ALONE (measured, isolated
+# schema-carrying probe) blows past even the 180s kill CEIL at ~10-wide (32/36 kill-timeouts,
+# 128-500B skeletons). MAX_WIDE caps the concurrent dispatch units so a requeue keeps each
+# card near its isolated latency; STAGGER_MS spaces the first MAX_WIDE starts so the degraded
+# API isn't hit by a thundering herd. 0 = unbounded (default; uses the runtime parallel()).
+MAX_WIDE = 0                # --max-wide=N: at most N translateBatch/healOnly units in flight
+STAGGER_MS = 0              # --stagger-ms=M: delay between the first MAX_WIDE worker starts
 # --- per-card heal budget (H442, 2026-07-10) --------------------------------------
 # The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
 # cannot stop ONE dense card from spending the WHOLE window budget before the other cards
@@ -415,6 +425,10 @@ def parse_args(argv):
             globals()['REFUSE_OVERSIZE'] = True
         elif a.startswith('--max-harness-bytes='):
             globals()['MAX_HARNESS_BYTES'] = int(a.split('=', 1)[1])
+        elif a.startswith('--max-wide='):                 # H255/H811: cap concurrent dispatch units (<=N-wide) for the degraded-API requeue lane
+            globals()['MAX_WIDE'] = int(a.split('=', 1)[1])
+        elif a.startswith('--stagger-ms='):               # H255/H811: delay between the first MAX_WIDE worker starts (thundering-herd guard)
+            globals()['STAGGER_MS'] = int(a.split('=', 1)[1])
     if budget_explicit and not output_explicit:
         # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
         # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
@@ -1212,6 +1226,9 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'heal_budget_cards': budget_plan.heal_cards,
         'max_agents_factor': MAX_AGENTS_FACTOR,
         'max_agents_headroom': MAX_AGENTS_HEADROOM,
+        # H255/H811 low-width staggered dispatch: <=MAX_WIDE concurrent units (0 = unbounded).
+        'max_wide': MAX_WIDE,
+        'stagger_ms': STAGGER_MS,
         # H442 per-card heal budget: caps the heal agent() calls ONE card may spend so a dense
         # card fails fast to partial instead of monopolizing the shared window MAX_AGENTS pool.
         'per_card_heal_budget': (PER_CARD_HEAL_BUDGET and SELFHEAL),
@@ -1295,6 +1312,11 @@ const KILL_SWITCH = %(kill_switch)s
 const MAX_AGENTS = %(max_agents)s
 const MAX_TRANSLATE_AGENTS = %(max_translate_agents)s
 const MAX_HEAL_AGENTS = %(max_heal_agents)s
+// H255/H811 low-width staggered dispatch: cap the concurrent translateBatch/healOnly units so
+// a degraded generation API isn't hit ~10-wide (the Workflow runtime cap) — a tiny card that
+// takes ~54s ALONE is inflated past the 180s kill CEIL under contention. 0 = unbounded.
+const MAX_WIDE = %(max_wide)s
+const STAGGER_MS = %(stagger_ms)s
 // H442 per-card heal budget: a per-card ceiling on heal agent() calls, threaded through
 // healGroup's bisection recursion. Unlike MAX_AGENTS (a shared window pool), this stops ONE
 // dense card from spending the whole window budget: once a card's own heal spend crosses
@@ -1795,11 +1817,34 @@ async function healOnly(k) {
   if (!row.card && FAIL[k]) row.error = FAIL[k]
   return [row]
 }
+// H255/H811 low-width staggered dispatch. Runs `thunks` with at most `width` in flight,
+// spacing the first `width` starts by `staggerMs` so a degraded generation API isn't hit by
+// a thundering herd. On a degraded API a tiny card that completes in ~54s ALONE is inflated
+// past the 180s kill CEIL at ~10-wide (the Workflow runtime cap); at <=3-wide it keeps its
+// isolated latency. width<=0 or >=len falls back to the runtime parallel(); a thrown thunk
+// resolves to null (parallel() parity), and results stay index-aligned with `thunks`.
+async function boundedParallel(thunks, width, staggerMs) {
+  if (!width || width >= thunks.length) return parallel(thunks)
+  const results = new Array(thunks.length).fill(null)
+  let next = 0
+  const worker = async () => {
+    for (let idx = next++; idx < thunks.length; idx = next++) {
+      try { results[idx] = await thunks[idx]() } catch (e) { results[idx] = null }
+    }
+  }
+  const workers = []
+  for (let w = 0; w < width; w++) {
+    if (staggerMs && w > 0) await new Promise(r => setTimeout(r, staggerMs))
+    workers.push(worker())
+  }
+  await Promise.all(workers)
+  return results
+}
 // UNITS pairs each parallel slot with the exact keys it owes rows for, so the accounting
 // backfill below stays index-correct with the presplit lane appended after the batches.
 const UNITS = BATCHES.map((b, i) => ({ keys: b, run: () => translateBatch(b, i) }))
   .concat(PRESPLIT.map(k => ({ keys: [k], run: () => healOnly(k) })))
-const grouped = await parallel(UNITS.map(u => u.run))
+const grouped = await boundedParallel(UNITS.map(u => u.run), MAX_WIDE, STAGGER_MS)
 // TOTAL ACCOUNTING INVARIANT: every selected key appears in `results` exactly once, no
 // matter what failed above. parallel() resolves a thrown thunk to null — flat() would
 // carry that null into results (crashing the summary below and silently dropping the
@@ -1876,6 +1921,7 @@ return { meta: META, summary, results: out }
         'kill_switch': json.dumps(KILL_SWITCH), 'max_agents': json.dumps(budget_plan.max_agents),
         'max_translate_agents': json.dumps(budget_plan.max_translate_agents),
         'max_heal_agents': json.dumps(budget_plan.max_heal_agents),
+        'max_wide': json.dumps(MAX_WIDE), 'stagger_ms': json.dumps(STAGGER_MS),
         'per_card_heal_budget': json.dumps(PER_CARD_HEAL_BUDGET and SELFHEAL),
         'per_card_heal_factor': json.dumps(PER_CARD_HEAL_FACTOR), 'per_card_heal_headroom': json.dumps(PER_CARD_HEAL_HEADROOM),
         'kill_timeout_no_bisect': json.dumps(bool(KILL_TIMEOUT_NO_BISECT and KILL and SELFHEAL)),
