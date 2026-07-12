@@ -4,6 +4,28 @@ _Created: 09-07-2026 · Last updated: 12-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 12-07-2026 — E2 sense-genre vs DCS attestation (H833 / H350 backlog #3)
+
+Does per-sense citation-genre predict DCS corpus attestation better than the
+lemma's aggregate genre? Analysis Opus 4.8 (`claude-opus-4-8`);
+[`research/analyze_sense_genre_attestation.py`](research/analyze_sense_genre_attestation.py),
+full write-up [`research/SENSE_GENRE_ATTESTATION_FINDINGS.md`](research/SENSE_GENRE_ATTESTATION_FINDINGS.md).
+n = 1316 headword lemmas (grouped by normalised IAST, **not** `key1`=root),
+49.8% DCS-attested. 5-fold stratified CV AUC (out-of-fold):
+
+| Model | Features | AUC |
+|---|---|---:|
+| 0 | size only (n_senses, citation mass) | 0.700 |
+| A | 0 + lemma union coarse-genre | 0.716 |
+| B | 0 + sense-resolution genre | 0.710 |
+| A+B | 0 + both | 0.714 |
+
+ΔAUC(B−A) = **−0.006**, 95% bootstrap CI [−0.020, +0.009] → **thesis not
+supported**: sense-resolution adds no separable signal over the lemma aggregate
+at this scale. Attestation is driven by citation *volume* (genre adds ~+0.016);
+per-genre, a *pure* sense in kāvya/purāṇa/kośa/śāstra raises attestation odds
+(OR 2.2–3.5, CI>1) but Vedic-only senses do not (OR 1.06) — antiquarian signal.
+
 ## 09-07-2026 — pwg_ru medium50 relaunch (H437, post-classifier-unblock)
 
 Windows `h317_w1b`/`w2a`/`w2b` relaunched solo (1-wide) after
