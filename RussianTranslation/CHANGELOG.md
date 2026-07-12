@@ -10,6 +10,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H777 — expand per-card stats (layer/markup/QA/xref + dcs_freq + grammar join), 3 grains
+- [`src/annotate_stats.py`](src/annotate_stats.py) extended from the H422 lemma block to the
+  full accepted count menu (MG ruling 12-07-2026) at **three granularities** —
+  `sense_stats` (per row), `record_stats` (per homonym), `stats` (per lemma): layer/5-merge
+  provenance (`n_layers`, `layers_present`, `n_senses_supplement`), markup density (`n_ls`,
+  `n_lex`, `n_ab`, `n_xref`, `n_labels`), translation/QA (`equivalence_types`, `source_types`,
+  `review_statuses`, `n_differentia`, `n_null`), frequency (`dcs_freq_max`, exact-iast DCS
+  join), and the **grammar-block join** (`grammar_join`, `n_whitney_homonyms`,
+  `n_irregularities`, `root_class`, `stem_final`).
+- **`n_irregularities` no longer stuck at 0** — joined from `whitney_grammar.grammar_for`
+  for single-Whitney-homonym roots (32/205 lemmas, 46 irregularities on the current store);
+  ambiguous-homonym roots (17) are left `null`, not guessed (hand PWG-h ↔ Whitney alignment
+  owed). `dcs_freq_max` is exact-iast-or-null (170/205 matched) — prefixed forms DCS doesn't
+  lemmatise stay null rather than force-matched (the Renou-classifier lesson).
+- Schema `stats` block + `sense_stats`/`record_stats` documented in
+  [`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json); every
+  grammar-join state validates. `pipeline_versions.json` `script` bumped 1.0.0 → 1.1.0
+  (re-froze SHA; `annotate_stats.py` added to the tracked set) so cached blocks
+  self-invalidate. Extended fixture selftest.
+
+### H778 — freeze the PWG government census to a committed sidecar (no re-scan)
+- [`src/government_census.py`](src/government_census.py) gains a `freeze` command +
+  `build_sidecar`/`load_sidecar`/`census_or_load`: the corpus-level marker census over the
+  whole raw `pwg.txt` is frozen to the committed [`src/census_stats.json`](src/census_stats.json)
+  (**3,853 markers over 123,366 entries**), validated by the source SHA — `government_census.py
+  census` now prints `census source: cached` and skips the end-to-end re-scan when `pwg.txt`
+  is unchanged. [`src/government_queries.py`](src/government_queries.py) gains `--summary` for
+  the store-free corpus answer. Per-row listing queries still stream the store (rows not
+  frozen). Sidecar round-trip covered by the selftest.
+- Both are language-neutral analysis layers (operate on `de`/store structure) — no
+  LANG_PARITY entry required. Store fields are materialised locally by re-running the
+  annotator chain; the store is gitignored, so the code + sidecar are what ship.
+
 ### H772 — PWG++: glue the derivable layers onto the German original, not only the RU
 - New `de-lexicon` mode in
   [`src/export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py)

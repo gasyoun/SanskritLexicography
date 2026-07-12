@@ -1,6 +1,6 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 12-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
@@ -40,4 +40,47 @@ Script v1.0.0 · Sonnet 5 (claude-sonnet-5)
 | lemmas with case variation | 0 |
 | evidence: provides | 1734 |
 | evidence: supports | 1935 |
+
+## 12-07-2026 — pwg_ru card stats rollup (annotate_stats.py)
+
+Script v1.1.0 · Opus 4.8 (claude-opus-4-8)
+
+| metric | value |
+|---|---|
+| lemmas | 205 |
+| records (homonym groups) | 635 |
+| senses | 11505 |
+| government markers | 508 |
+| lemmas with case variation | 2 |
+| grammar-joined lemmas (single homonym) | 32 |
+| … whitney irregularities counted | 46 |
+| grammar ambiguous-homonym (alignment owed) | 17 |
+| dcs-matched lemmas | 170 |
+| <ls> citations (total) | 41031 |
+| evidence: provides | 1699 |
+| evidence: supports | 1893 |
+
+Numbers are over the current 205-lemma pwg_ru_translated store (the gitignored working
+copy); the fields (`government`, `stats`, `sense_stats`, `record_stats`) are materialised
+locally by re-running the annotator chain — the store itself is not committed. Contrast the
+09-07 v1.0.0 row above (0 government markers, no grammar counts) with this v1.1.0 row: H777
+joined the grammar block (`n_irregularities` no longer stuck at 0) and added the layer /
+markup / QA / frequency families.
+
+## 12-07-2026 — PWG case-government census, frozen (H778, government_census.py freeze)
+
+Script v1.1.0 · Opus 4.8 (`claude-opus-4-8`). Corpus-level marker census over the **whole
+raw** [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+(sha `430c910f8b0c9229`), frozen to the committed [`src/census_stats.json`](src/census_stats.json)
+sidecar so the scan is not re-run on every question. This is the corpus answer to "сколько
+таких помет в PWG"; the per-205-lemma store rollup above is the pwg_ru subset.
+
+| metric | value |
+|---|---|
+| PWG entries scanned | 123366 |
+| sense units scanned | 288991 |
+| government markers (total) | 3853 |
+| … paren-single / variation / mit-phrase | 2309 / 40 / 1504 |
+| entries with ≥1 marker | 1476 |
+| sense units with ≥1 marker | 3222 |
 

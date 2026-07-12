@@ -23,17 +23,18 @@
       "note": "domain vocab (kavya/bauddha/jaina/vedic/epigraphic) + de-ru translation aids"
     },
     "script": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "min_valid": "1.0.0",
-      "sha": "0ac4d57a230ec6f2",
+      "sha": "144e83f802c72828",
       "files": [
         "src/run_batch.py",
         "src/pwg_mask.py",
         "src/corpus_gate.py",
         "src/assemble.py",
-        "src/promote_final_cards.py"
+        "src/promote_final_cards.py",
+        "src/annotate_stats.py"
       ],
-      "note": "deterministic mask / harvest / restore / corpus-gate + card promotion"
+      "note": "deterministic mask / harvest / restore / corpus-gate + card promotion + derived-stats backfill (annotate_stats.py; 1.1.0 = H777 expanded stats block, forces stats recompute)"
     }
   }
 }
