@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.2] - 2026-07-12
+
+### Added — Kochergina okas/okya/guda/sphic attestation-verify review sheet (H779)
+- New [`RussianTranslation/review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html):
+  re-verification of the 2013 Nagari-list forum thread's 4 dictionary-correction
+  candidates (okas, okya, guda, sphic/sphigī/sphij) against RV attestation
+  (VedaWeb accented corpus) and MW/Apte/KEWA — okas/okya senses confirmed
+  unattested and flagged for change; guda's claimed gender defect **refuted**
+  (Kochergina already carries a correctly separated `gudā` f. entry); sphic
+  confirmed missing as a headword plus a newly found gloss error on `sphigī`.
+  Interactive approve/reject/defer sheet, registered in
+  [Uprava/REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md).
+
 ## [1.9.1] - 2026-07-12
 
 ### Added — Böhtlingk item-#1 shared-omission finding + Stache-Weiske notes (H796)
