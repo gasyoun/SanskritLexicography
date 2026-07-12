@@ -225,6 +225,90 @@ def run_census(source, tsv=None, top=10):
     }
 
 
+SIDECAR_SCHEMA = "pwg_ru.government_census.v1"
+DEFAULT_SIDECAR = os.path.join(HERE, "census_stats.json")
+
+
+def source_sha16(path):
+    """16-hex content hash of the raw source. The census is a pure function of this
+    file, so an unchanged SHA means the frozen sidecar is still valid."""
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()[:16]
+
+
+def _script_version():
+    """The pipeline_version.py manifest 'script' component version, or 'n/a' if the
+    manifest is unreadable (keeps the census standalone)."""
+    try:
+        import pipeline_version as pv
+        return pv.load_manifest()["components"]["script"]["version"]
+    except Exception:
+        return "n/a"
+
+
+def build_sidecar(source, top=25, generated=None):
+    """Run the census once and wrap it with provenance for freezing. `generated` is
+    an injectable date string (callers stamp it; no implicit clock in library code)."""
+    import datetime
+    census = run_census(source, top=top)
+    return {
+        "schema": SIDECAR_SCHEMA,
+        "generated": generated or datetime.date.today().strftime("%d-%m-%Y"),
+        "pipeline_version": _script_version(),
+        "source": os.path.basename(source),
+        "source_sha16": source_sha16(source),
+        "census": census,
+    }
+
+
+def write_sidecar(source, out_path=DEFAULT_SIDECAR, top=25, generated=None):
+    """Freeze the census to a committed JSON sidecar (H778) — the corpus-level rollup
+    is a committed artifact, not a live re-scan target (GRAMMAR_LAYER.md rule 2)."""
+    data = build_sidecar(source, top=top, generated=generated)
+    tmp = out_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        import json
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(tmp, out_path)
+    return data
+
+
+def load_sidecar(sidecar_path=DEFAULT_SIDECAR, source=DEFAULT_SOURCE):
+    """Return (census_dict, 'cached') when the frozen sidecar is still valid — i.e. the
+    raw source's SHA matches what was frozen — else (None, reason). Callers use this to
+    skip re-scanning pwg.txt end-to-end when nothing changed."""
+    import json
+    if not os.path.exists(sidecar_path):
+        return None, "no sidecar"
+    try:
+        data = json.load(open(sidecar_path, encoding="utf-8"))
+    except Exception as e:
+        return None, "unreadable sidecar (%s)" % e
+    if data.get("schema") != SIDECAR_SCHEMA:
+        return None, "schema mismatch"
+    if not os.path.exists(source):
+        # source gone (e.g. running where csl-orig isn't cloned): trust the frozen copy.
+        return data.get("census"), "cached (source absent — trusting frozen)"
+    if data.get("source_sha16") != source_sha16(source):
+        return None, "source changed since freeze"
+    return data.get("census"), "cached"
+
+
+def census_or_load(source=DEFAULT_SOURCE, sidecar=DEFAULT_SIDECAR, top=10, prefer_sidecar=True):
+    """The read path callers should use instead of run_census() directly: return the
+    frozen census if fresh, else scan the source live. Returns (census_dict, origin)."""
+    if prefer_sidecar:
+        census, why = load_sidecar(sidecar, source)
+        if census is not None:
+            return census, why
+    return run_census(source, top=top), "live scan"
+
+
 def print_report(r):
     gov_total = sum(n for k, n in r["kinds"].items() if k != "paren-nongov")
     print("# PWG case-government census (deterministic, raw source)")
@@ -301,6 +385,23 @@ def selftest():
         # sTA: no root sign, DHĀTUP head line, body <lex>adj.</lex> must NOT win
         assert r["pos_gov_entries"] == {"verb": 2}, r
         assert r["units_with"] == 3, r  # snih div2.s1 (both parens) + snih div3 (mit) + sTA div1.s1
+
+        # H778 sidecar round-trip: freeze -> fresh read -> stale on source change
+        sc = path + ".census.json"
+        data = write_sidecar(path, sc, generated="01-01-2026")
+        assert data["schema"] == SIDECAR_SCHEMA and data["source_sha16"] == source_sha16(path)
+        cached, why = load_sidecar(sc, path)
+        assert why == "cached" and cached["n_entries"] == 3, (why, cached)
+        got, origin = census_or_load(path, sc)
+        assert origin == "cached" and got["kinds"].get("mit-phrase") == 1, (origin, got)
+        # mutate the source -> SHA differs -> sidecar rejected, live scan instead
+        with open(path, "a", encoding="utf-8") as f:
+            f.write("\n<L>9<pc>9-9<k1>x\n{#x#} etwas.\n<LEND>\n")
+        none_c, why2 = load_sidecar(sc, path)
+        assert none_c is None and why2 == "source changed since freeze", why2
+        _, origin2 = census_or_load(path, sc)
+        assert origin2 == "live scan", origin2
+        os.unlink(sc)
         print("government_census selftest: OK")
     finally:
         os.unlink(path)
@@ -337,18 +438,41 @@ def selftest_extract_government():
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("cmd", nargs="?", default="census",
-                    choices=["census", "selftest"])
+                    choices=["census", "freeze", "selftest"],
+                    help="census = report (uses the frozen sidecar if fresh); "
+                         "freeze = (re)write the committed census_stats.json sidecar")
     ap.add_argument("--source", default=DEFAULT_SOURCE)
     ap.add_argument("--tsv", default=None,
                     help="write per-hit rows to this TSV (gitignored path)")
     ap.add_argument("--top", type=int, default=10)
+    ap.add_argument("--sidecar", default=DEFAULT_SIDECAR,
+                    help="frozen census JSON (H778); census reads it when fresh, freeze writes it")
+    ap.add_argument("--no-sidecar", action="store_true",
+                    help="ignore the frozen sidecar and scan the source live")
     args = ap.parse_args()
     if args.cmd == "selftest":
         selftest()
         return
-    if not os.path.exists(args.source):
-        sys.exit("source not found: %s" % args.source)
-    print_report(run_census(args.source, tsv=args.tsv, top=args.top))
+    if args.cmd == "freeze":
+        if not os.path.exists(args.source):
+            sys.exit("source not found: %s" % args.source)
+        data = write_sidecar(args.source, args.sidecar, top=max(args.top, 25))
+        print("froze census -> %s  (source %s sha=%s, %d markers, %d entries)"
+              % (args.sidecar, data["source"], data["source_sha16"],
+                 sum(n for k, n in data["census"]["kinds"].items() if k != "paren-nongov"),
+                 data["census"]["n_entries"]))
+        return
+    # census report — prefer the frozen sidecar unless it's stale or --no-sidecar
+    if args.tsv:
+        # a per-hit TSV needs the live per-entry scan; the sidecar holds only aggregates
+        if not os.path.exists(args.source):
+            sys.exit("source not found: %s" % args.source)
+        print_report(run_census(args.source, tsv=args.tsv, top=args.top))
+        return
+    census, origin = census_or_load(args.source, args.sidecar, top=args.top,
+                                    prefer_sidecar=not args.no_sidecar)
+    print("<!-- census source: %s -->" % origin)
+    print_report(census)
 
 
 if __name__ == "__main__":

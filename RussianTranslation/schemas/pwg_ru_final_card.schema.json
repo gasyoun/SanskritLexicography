@@ -296,7 +296,7 @@
     "stats": {
       "type": "object",
       "additionalProperties": false,
-      "description": "OPTIONAL. Derived, self-invalidating per-lemma counts (GRAMMAR_LAYER.md § 'Counting grammar', H422) — cached from fields already on the card so government_census.py / government_queries.py-style aggregation is not re-run on every question. Added by annotate_stats.py, run last in the annotator chain; attached identically to every flat store row sharing key1 (the flat store has no lemma object), mirroring evidence_summary.",
+      "description": "OPTIONAL. Derived, self-invalidating per-lemma counts (GRAMMAR_LAYER.md § 'Counting grammar', H422; expanded H777). Cached from fields already on the card so government_census.py / government_queries.py-style aggregation is not re-run on every question. Added by annotate_stats.py, run last in the annotator chain; attached identically to every flat store row sharing key1 (the flat store has no lemma object), mirroring evidence_summary. Finer-grained sibling blocks `record_stats` (per homonym group) and `sense_stats` (per row) carry the same families at their own grain — see annotate_stats.py.",
       "required": [
         "n_records",
         "n_senses",
@@ -331,10 +331,65 @@
           "type": "boolean",
           "description": "True when >=1 government marker lists more than one case."
         },
-        "n_irregularities": {
+        "n_layers": {
           "type": "integer",
           "minimum": 0,
-          "description": "Whitney-grammar exception count for this lemma. 0 until the grammar block (whitney_grammar.py) is joined onto card rows -- see GRAMMAR_LAYER.md."
+          "description": "Distinct source layers of the 5-layer merge (pwg/pw/sch/pwkvn/nws) contributing senses to this lemma."
+        },
+        "layers_present": {
+          "type": "array",
+          "items": { "enum": ["pwg", "pw", "sch", "pwkvn", "nws"] },
+          "uniqueItems": true,
+          "description": "Which merge layers contributed a sense (sorted)."
+        },
+        "n_senses_supplement": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Senses from a non-PWG supplement layer (layer != 'pwg'); PWG is the grammatical backbone."
+        },
+        "n_ls": { "type": "integer", "minimum": 0, "description": "Total <ls> citation markers across this lemma's German source (attestation density)." },
+        "n_lex": { "type": "integer", "minimum": 0, "description": "Total <lex> POS/gender markers across the German source." },
+        "n_ab": { "type": "integer", "minimum": 0, "description": "Total <ab> grammatical-abbreviation markers across the German source." },
+        "n_xref": { "type": "integer", "minimum": 0, "description": "Cross-reference markers (deterministic floor: 'vgl.'/vergleiche only; 's.'/siehe omitted as ambiguous)." },
+        "n_labels": { "type": "integer", "minimum": 0, "description": "Total Kochergina-style domain labels (грам./миф./бот. …) across senses." },
+        "equivalence_types": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 },
+          "description": "Distribution of `equivalence_type` across this lemma's senses (equivalent/explanatory/…)."
+        },
+        "source_types": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 },
+          "description": "Distribution of `source_type` across senses (attested/lexicographic/mixed)."
+        },
+        "review_statuses": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 },
+          "description": "Distribution of `review_status` across senses (ai_translated/reviewed/…)."
+        },
+        "n_differentia": { "type": "integer", "minimum": 0, "description": "Senses carrying a non-empty `differentia` note." },
+        "n_null": { "type": "integer", "minimum": 0, "description": "Senses with an empty Russian translation (untranslated)." },
+        "dcs_freq_max": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "iast": { "type": ["string", "null"] },
+            "count": { "type": "integer", "minimum": 0 },
+            "band": { "type": ["integer", "null"] }
+          },
+          "description": "DCS corpus attestation for this lemma's most-attested matched form (exact-iast join against dcs_freq.json by_lemma). null when no sense's form exact-matches DCS."
+        },
+        "grammar_join": {
+          "enum": ["single", "ambiguous-homonym", "none"],
+          "description": "whitney_grammar join status: 'single' = one Whitney homonym, fully joined; 'ambiguous-homonym' = >1 homonym, PWG-h↔Whitney alignment owed (counts null, not guessed); 'none' = not a Whitney root."
+        },
+        "n_whitney_homonyms": { "type": "integer", "minimum": 0, "description": "Number of Whitney homonym records for this SLP1 root (0 = not a Whitney root)." },
+        "root_class": { "type": ["string", "null"], "description": "Whitney gaṇa/class (e.g. 'I|II'); null unless grammar_join=='single'." },
+        "stem_final": { "type": ["string", "null"], "description": "Final SLP1 phoneme of key1 (coarse stem hint; correct-by-construction, not a declension-class claim)." },
+        "n_irregularities": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Whitney-grammar exception count for this lemma (irregularities[] length). Populated when grammar_join=='single'; null when 'ambiguous-homonym' (alignment owed) or 'none' (not a Whitney root). H777 joined the grammar block — no longer stuck at 0."
         },
         "strata_span": {
           "type": "array",

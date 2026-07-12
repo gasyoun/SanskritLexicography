@@ -1,6 +1,6 @@
 # Grammar layer — the 3rd axis (Whitney) for pwg_ru
 
-_Created: 07-07-2026 · Last updated: 09-07-2026 (H422)_
+_Created: 07-07-2026 · Last updated: 12-07-2026 (H777/H778)_
 
 pwg_ru already carries two evidence axes per headword: **lexicon** (corpus_lexicon Sa→Ru
 candidates) and **corpus** (parallel verse + Renou register). This adds the **grammar** axis,
@@ -136,27 +136,37 @@ per-case accent rules are already ingested (`whitney_sections.json` §§315–31
 
 ## Counting grammar — what's countable in a card, and caching the counts
 
-Case-government is now backfilled (`sense.government[]`, deterministically extracted by
-[`government_census.py`](src/government_census.py):`extract_government`, D4 ruling). But the
-**counts** derived from grammar are still recomputed on every question:
-[`government_census.py`](src/government_census.py) re-scans raw `pwg.txt` end-to-end each run,
-and [`government_queries.py`](src/government_queries.py) reloads the whole
-`pwg_ru_translated.jsonl` store and re-aggregates every query. Nothing on the card records
-"this lemma has N senses, M government markers, governs {loc, gen}, spans Renou I–IV." The
-census/query cost is paid again each time.
+Case-government is backfilled (`sense.government[]`, deterministically extracted by
+[`government_census.py`](src/government_census.py):`extract_government`, D4 ruling). The
+per-card counts are cached by [`annotate_stats.py`](src/annotate_stats.py) (H422, expanded
+H777) at three grains — `sense_stats` (per row), `record_stats` (per homonym), `stats` (per
+lemma) — and the corpus-level `pwg.txt` scan is frozen to the committed
+[`src/census_stats.json`](src/census_stats.json) sidecar (H778), so neither the census nor the
+per-card aggregation is recomputed on every question:
+[`government_census.py`](src/government_census.py) reads the sidecar when the source SHA is
+unchanged (`government_census.py census` prints `census source: cached`), and the corpus
+answer is available store-free via `government_queries.py --summary`. The per-row *listing*
+queries still stream the store (the individual rows are not frozen — only the aggregates).
 
 ### What is countable in a card
 
-All derivable from fields **already stored** — no new source parsing:
+All derivable from fields **already stored** — no new source parsing. Shipped families (H777),
+each computed at lemma / record / sense grain:
 
-| Scope | Countable |
+| Scope | Countable (shipped) |
 |---|---|
-| Structural | `n_records` (homonyms), `n_senses` (total + per record), max sense depth |
-| Grammar | `n_government` markers, `cases_governed` (union set), `has_variation`, `n_domain_labels`, stem-class present?, root class(es), `n_irregularities` |
-| Chronology (Renou) | `strata_span` (min–max), `n_strata`, oldest-sense index |
-| Evidence | `n_provides` / `n_supports` / `n_contradicts` / `n_silent`, `evidence_status` |
-| QA | `severity`, `n_issues`, `coverage_ok` |
-| Source markup | `n_ls` citations, `n_compound_members`, `has_accent` |
+| Structural | `n_records` (homonyms), `n_senses` |
+| Government | `n_government`, `cases_governed` (union), `has_variation` |
+| Layer / 5-merge | `n_layers`, `layers_present` ⊆ {pwg,pw,sch,pwkvn,nws}, `n_senses_supplement` |
+| Source markup | `n_ls` citations, `n_lex`, `n_ab`, `n_xref` (vgl.), `n_labels` |
+| Translation / QA | `equivalence_types`, `source_types`, `review_statuses`, `n_differentia`, `n_null` |
+| Frequency | `dcs_freq_max` {iast, count, band} (exact-iast DCS join) |
+| Grammar | `grammar_join`, `n_whitney_homonyms`, `n_irregularities`, `root_class`, `stem_final` |
+| Chronology (Renou) | `strata_span` (min–max), `n_strata` |
+| Evidence | `evidence.{provides,supports,contradicts,silent}` |
+
+Deferred (need a source not yet on the row): `n_compound_members`, `has_accent` (both live in
+the nominal-grammar / Zaliznyak blocks, not the flat store), max sense depth.
 
 ### Store them: a derived, self-invalidating `stats` block
 
@@ -175,19 +185,36 @@ card). Two rules keep a cached count safe rather than a stale-data trap:
    model tier (persist-tables reflex), so nobody re-scans `pwg.txt` to re-answer a settled
    count.
 
-Additive shape (`additionalProperties:false`-compatible, sits on `card`):
+Expanded lemma-block shape (H777 — all count families accepted 12-07-2026, finest grain):
 
 ```json
 "stats": {
   "n_records": 2, "n_senses": 7,
-  "n_government": 3, "cases_governed": ["loc","gen"], "has_variation": true,
-  "n_irregularities": 1, "strata_span": ["I","IV"], "n_strata": 3,
+  "n_government": 3, "cases_governed": ["gen","loc"], "has_variation": true,
+  "n_layers": 3, "layers_present": ["nws","pw","pwg"], "n_senses_supplement": 4,
+  "n_ls": 41, "n_lex": 3, "n_ab": 6, "n_xref": 2, "n_labels": 0,
+  "equivalence_types": {"equivalent": 5, "explanatory": 2},
+  "source_types": {"attested": 6, "mixed": 1}, "review_statuses": {"ai_translated": 7},
+  "n_differentia": 3, "n_null": 0,
+  "dcs_freq_max": {"iast": "prāp", "count": 6022, "band": 5},
+  "grammar_join": "single", "n_whitney_homonyms": 1, "n_irregularities": 1,
+  "root_class": "V", "stem_final": "p",
+  "strata_span": ["Vedic","Classical"], "n_strata": 3,
   "evidence": {"provides": 2, "supports": 4, "contradicts": 0, "silent": 3},
-  "computed_by": "annotate_stats.py", "pipeline_version": "…"
+  "computed_by": "annotate_stats.py", "pipeline_version": "1.1.0"
 }
 ```
 
-Status: **built** (H422, 09-07-2026) — [`src/annotate_stats.py`](src/annotate_stats.py) +
-the schema `stats` block ([`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json))
-are in place; validated against all 145 lemmas on the live store. `n_irregularities` stays 0
-until the grammar block is joined onto card rows (not yet a stored field).
+Status: **built + expanded** ([`src/annotate_stats.py`](src/annotate_stats.py), H422 →
+**H777**). The grammar block is now joined: `grammar_join` ∈ {`single`, `ambiguous-homonym`,
+`none`} — `n_irregularities`/`root_class` populate for single-Whitney-homonym roots (32 of
+205 lemmas, 46 irregularities on the current store), and are left `null` (not guessed) for
+the 17 ambiguous-homonym roots that still owe the hand PWG-h ↔ Whitney-homonym alignment. The
+`dcs_freq_max` join is exact-iast (170/205 matched); prefixed forms DCS doesn't lemmatise stay
+`null` rather than being force-matched. Schema `stats` block +
+`sense_stats`/`record_stats` siblings documented in
+[`schemas/pwg_ru_final_card.schema.json`](schemas/pwg_ru_final_card.schema.json); every
+grammar-join state validates. `script` component bumped 1.0.0 → 1.1.0 so cached blocks
+self-invalidate. **Local materialisation** (the store is gitignored): re-run
+`annotate_government.py` then `annotate_stats.py` on `pwg_ru_translated.jsonl` to write the
+fields onto the working copy — the code + census sidecar are what ship.
