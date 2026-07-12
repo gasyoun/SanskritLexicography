@@ -4,6 +4,29 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-12 — verb rootmap backfill (H809 W1) — gen **none (0-token, local)** / Opus 4.8 (`claude-opus-4-8`) — ✅ 687 rootmaps built, runnable 14→701
+
+Not a Max run — pure local `_pilot_gen_merged.py`, no Workflow/API. The verb drain was
+rootmap-gated: `verb_worklist.has_rootmap()` gates the runnable queue, and plain
+`--root-split` writes a rootmap only for GIANT roots (`MIN_SPLIT=8`), so 687 non-giant
+verb roots fell through to whole-card writes with **no** rootmap. Fix: force
+`ROOT_SPLIT_MIN=0` for the verb-root positional splat only (never with `--manifest freq`).
+
+```
+python src/pilot/verb_worklist.py                       # baseline: runnable 14 / missing rootmap 687
+$env:ROOT_SPLIT_MIN='0'
+$blocked = (Get-Content src/pilot/output/verb_batch_worklist.json -Raw | ConvertFrom-Json).blocked_missing_rootmap
+python src/_pilot_gen_merged.py --root-split @blocked    # 687 roots → 9274 sub-cards (+rootmap each), 0 SKIP
+Remove-Item Env:ROOT_SPLIT_MIN                           # CRITICAL footgun: reset immediately
+python src/pilot/verb_worklist.py                        # recount: runnable 701 / missing rootmap 0
+python src/verify_root_glue.py                           # ALL GATES PASS (A losslessness / B seg / C glue)
+```
+
+Result: **missing rootmap 687 → 0, runnable 701** (749 rootmaps on disk, all under gitignored
+`src/pilot/input/` — 0 tracked-file noise). `verify_root_glue.py` → **ALL GATES PASS**. This
+only unblocks the *runnable* queue; it launches no window (W0-probe NO-GO — generation API
+still degraded per SERVER_OUTAGES row 29, so no drain fired).
+
 ## 2026-07-06 — `dah` tail (H178 A-2) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Fable 5** (`claude-fable-5`) — ✅ 31/31 PROMOTED (1 documented 🟡 residual)
 
 Finished the two 04-07 held `dah` cards via three Workflow runs (TM-denylisted):

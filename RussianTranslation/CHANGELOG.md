@@ -10,6 +10,31 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H809 — PWG→RU scale-unblock (W1 rootmaps · W2 rate label · W3 window-index guard)
+- **W1 (done):** generated the 687 missing verb rootmaps via `ROOT_SPLIT_MIN=0` on the
+  positional verb-root splat (`_pilot_gen_merged.py --root-split @blocked`) — non-giant roots
+  now get a rootmap instead of falling through to a whole-card write. `verb_worklist.py`
+  runnable **14 → 701 / missing rootmap 687 → 0**; `verify_root_glue.py` **ALL GATES PASS**;
+  0 tracked-file noise (all under gitignored `src/pilot/input/`). See
+  [`src/pilot/RUN_LOG.md`](src/pilot/RUN_LOG.md) 2026-07-12.
+- **W2 (partial):** confirmed the Sonnet 5 (`claude-sonnet-5`) LIST rates via `/claude-api`
+  ($3/$15; cache-write 5m $3.75, cache-read $0.30) and relabeled
+  [`src/pilot/parse_workflow_cost.py`](src/pilot/parse_workflow_cost.py)'s `PRICE` comment.
+  The numbers were **already correct** (Sonnet 4.6 and Sonnet 5 share $3/$15 list pricing), so
+  the golden-window $79.83 / `PER_AGENT_USD=$0.347` are unchanged; a formula-pinning test lives
+  in [`src/pilot/h809_selftest.py`](src/pilot/h809_selftest.py). Refreshing the same label in
+  `perf_preflight.py` is **deferred** — it shares a `LANG_PARITY` key with H811's unresolved
+  `gen_opt_harness2.py` parity debt on `master`; its numbers are already Sonnet-5-correct.
+- **W3-code (done):** [`src/pilot/no_pwg_scale_plan.py`](src/pilot/no_pwg_scale_plan.py) gains
+  `used_window_indices()`/`next_free_index()` (scan `run_pilot_wf.<prefix>NN.js` +
+  `wf_output.<prefix>NN.json`, `_rqN` requeues count as their base index); `--start-index`
+  default → `None` (auto = max-used+1, min 2); new `--force-index`; an explicit colliding
+  `--start-index` now `SystemExit`s naming the next-free index (was a silent label knob whose
+  stale `.ai_state` value 4 collided with already-run w04/w05). `--plan-only` never blocks.
+- **W0/W4 (NO-GO):** the generation API is still degraded (SERVER_OUTAGES row 29, re-confirmed
+  H566 682,753 ms; paid probes banned this sprint week) — no fresh probe fired, no drain/canary
+  run. W1/W2/W3 are the not-API-gated subset, shipped standalone.
+
 ### H811 — ≤N-wide staggered dispatch (boundedParallel) for degraded-API requeues
 - [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) gains `--max-wide=N` +
   `--stagger-ms=M`: the emitted top-level dispatch now runs through a
