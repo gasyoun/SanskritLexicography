@@ -29,7 +29,28 @@ not an error.
   with a single-sheet print PDF; generator
   [`EntryAnatomy/build_entry_anatomy.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/build_entry_anatomy.py)
   re-typesets records straight from csl-orig v02. MW `<e>`-semantics finding
-  logged as FINDINGS §77. Fable 5 (`claude-fable-5`).
+  logged as FINDINGS §82. Fable 5 (`claude-fable-5`).
+
+## [1.8.1] - 2026-07-12
+
+### Added — A58 paper skeleton + grammatical-annex counted table (H767/H774)
+- A58 paper skeleton over the H742 crosswalk tables:
+  [`papers/A58_semdom_amarakosha_crosswalk_paper.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A58_semdom_amarakosha_crosswalk_paper.md)
+  — claim, 12-row claim→artifact data inventory, outline, verified comparanda.
+- Grammatical-annex parallel counted:
+  [`data/semdom_ak_annex_table.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py)
+  derives AK kāṇḍa 3 (2,592/5,590 synsets, 46.4%) vs semdom top-level 9
+  (168/1,792 domains, 9.4%), converging to 10.7% vs 9.4% with nānārtha's
+  polysemy register set aside; table embedded in
+  [`data/SEMDOM_AK_CROSSWALK_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md),
+  finding logged as FINDINGS §77.
+
+### Fixed
+- FINDINGS duplicate-§76 key: the DCS `m_wordsem` finding renumbered to §78
+  (renumber note in place; STALENESS link updated); §76 stays the
+  MW→WordNet→semdom bridge finding cited from FEATURES_INDEX C19.
+- `data/semdom.json` / `wn-links` fetch caches actually gitignored (the
+  docstrings already claimed they were).
 
 ## [1.8.0] - 2026-07-11
 

@@ -114,10 +114,30 @@ def main():
     ap.add_argument('--variation', action='store_true')
     ap.add_argument('--never-gen', action='store_true')
     ap.add_argument('--limit', type=int, default=15)
+    ap.add_argument('--summary', action='store_true',
+                    help='corpus-level marker totals from the frozen census sidecar '
+                         '(H778) — no store reload, no pwg.txt re-scan')
     ap.add_argument('--selftest', action='store_true')
     args = ap.parse_args()
     if args.selftest:
         return selftest()
+
+    if args.summary:
+        # The corpus-level "how many such markers in PWG" answer is a settled count —
+        # read it from the committed census_stats.json rather than re-scanning (H778).
+        import government_census as gc
+        census, origin = gc.census_or_load()
+        gov_total = sum(n for k, n in census['kinds'].items() if k != 'paren-nongov')
+        print('census source: %s' % origin)
+        print('government markers (total)       : %d' % gov_total)
+        print('  paren-single / variation / mit : %d / %d / %d' % (
+            census['kinds'].get('paren-single', 0),
+            census['kinds'].get('paren-variation', 0),
+            census['kinds'].get('mit-phrase', 0)))
+        print('entries with >=1 marker          : %d' % census['entries_with'])
+        print('sense units with >=1 marker      : %d' % census['units_with'])
+        print('(per-row listing queries still stream the store — the rows are not frozen)')
+        return
 
     rows = load_store(args.store)
     run_all = not (args.loc_required or args.variation or args.never_gen)

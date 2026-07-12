@@ -496,9 +496,203 @@ def export_dcs_freq(args):
     print('DCS frequency graph -> %s' % out)
 
 
+# --------------------------------------------------------------------------- #
+# German enrichment graph (PWG++)
+# --------------------------------------------------------------------------- #
+# A first-class ``ontolex:LexicalEntry`` **in German** per lemma, sourced from the
+# German source cards (``assembled_cards.jsonl``, the full ~120k headword set) via
+# the deterministic masker + microstructure reuse -- NO translation call. Emitted
+# as a SEPARATE graph that federates on the *same* ``lemma/<key1>`` IRI as the RU
+# lexical graph and the DCS-frequency graph (the shared-lemma spine). This is the
+# "glue the derivable layers onto the German original too" deliverable (H772): the
+# German entry is enriched by its own <ls> citations + Renou dated strata + the
+# shared-lemma DCS frequency, in parallel with and decoupled from the Russian tail.
+DE_GRADE = ('pwg-source', 'PWG source gloss (Boehtlingk-Roth), public domain', True)
+
+
+def de_card_senses(card):
+    """Yield German senses for a card straight from its source skeleton.
+
+    Reuses ``pwg_mask.restore`` (placeholder round-trip) + ``microstructure``
+    ``split_senses``/``sense_node`` -- the SAME deterministic parse the portrait
+    uses, so PWG sense structure is not re-implemented. Each yielded sense carries
+    the German equivalents, POS, <ls> citations and Renou strata."""
+    import pwg_mask as _pm
+    import microstructure as _ms
+    for ri, rec in enumerate(card.get('records') or []):
+        skel = rec.get('de_skeleton')
+        if not skel:
+            continue
+        try:
+            body = _pm.restore(skel, rec.get('placeholders') or [])
+        except Exception:
+            continue
+        for seg in _ms.split_senses(body):
+            node = _ms.sense_node(seg)
+            glosses = [g for g in (node.get('equivalents_de') or []) if g]
+            # n=='0' is the pre-sense head (grammar/general run before sense 1); keep
+            # it only when it actually carries a German equivalent, else it is header
+            # noise ("¦ m. 4,51") -- entry-level POS is preserved on the real senses.
+            if str(node.get('n')) == '0' and not glosses:
+                continue
+            definition = '; '.join(glosses) if glosses else (node.get('gloss_de') or '')
+            if not definition.strip():
+                continue
+            yield {
+                'record': ri, 'n': node.get('n'), 'sub': node.get('sub'),
+                'glosses': glosses, 'definition': definition,
+                'eqtype': node.get('equivalence_type'),
+                'grammar': list(dict.fromkeys(node.get('grammar') or [])),
+                'diasystem': node.get('diasystem') or [],
+                'strata': sorted(node.get('strata') or []),
+                'seg_text': seg.get('text') or '',
+            }
+
+
+def emit_de_vocab(f, R, args):
+    f.write('# --- German enrichment lexicon (PWG++) -----------------------\n')
+    f.write('%s a lime:Lexicon ;\n' % R('lexicon/pwg-de'))
+    f.write('  rdfs:label "PWG German lexicon (Petersburg Dictionary, enriched)"@en ;\n')
+    f.write('  dct:language "de" ; lime:language "de" ;\n')
+    f.write('  dct:source <https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/> ;\n')
+    f.write('  dct:license <https://creativecommons.org/publicdomain/mark/1.0/> ;\n')
+    f.write('  prov:wasGeneratedBy %s ;\n' % R('prov/export-lod-de'))
+    f.write('  dct:created "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    f.write('%s a prov:Activity ;\n' % R('prov/export-lod-de'))
+    f.write('  rdfs:label "PWG++ German enrichment export (export_lod.py de-lexicon)" ;\n')
+    f.write('  prov:endedAtTime "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    slug, label, citable = DE_GRADE
+    f.write('gr:%s a skos:Concept ; skos:inScheme %s ; skos:prefLabel "%s"@en ; pwglex:citable %s .\n\n'
+            % (slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
+
+
+def emit_de_card(f, R, card, suffix, lemma_seen, stratum, args):
+    """Emit the German LexicalEntry + its senses + citations + stratum for one
+    card. ``suffix`` disambiguates homograph cards sharing a key1 (mirrors the RU
+    graph's entry/<key1>-N). Returns the number of senses emitted (0 -> nothing)."""
+    key1 = card.get('key1')
+    senses = list(de_card_senses(card))
+    if not senses:
+        return 0
+    ekey = iri_local(key1) + suffix
+    lemma_iri = R('lemma/%s' % iri_local(key1))
+    entry_iri = R('entry/%s/de' % ekey)
+
+    if key1 not in lemma_seen:
+        lemma_seen.add(key1)
+        f.write('%s a ontolex:Form, lila:Lemma ;\n' % lemma_iri)
+        f.write('  ontolex:writtenRep %s ;\n' % lit(key1, lang='sa-Latn-x-slp1'))
+        if card.get('iast'):
+            f.write('  ontolex:writtenRep %s ;\n' % lit(card.get('iast'), lang='sa-Latn'))
+        f.write('  pwglex:slp1 %s ;\n' % lit(key1))
+        f.write('  rdfs:label %s .\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+
+    f.write('%s a ontolex:LexicalEntry ;\n' % entry_iri)
+    f.write('  rdfs:label %s ;\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+    f.write('  dct:language "de" ;\n')
+    f.write('  dct:isPartOf %s ;\n' % R('lexicon/pwg-de'))
+    f.write('  ontolex:canonicalForm %s ;\n' % lemma_iri)
+
+    sense_iris, cite_blocks, attest_used = [], {}, {}
+    key_strat = stratum.get(key1, {})
+    # leading running index si guarantees a unique sense IRI even when two source
+    # segments share (record, n, sub); n/sub stay queryable via senseNumber/senseSub.
+    for si, s in enumerate(senses, 1):
+        frag = 'de/%d/%s%s' % (si, iri_local(str(s['n'])),
+                               ('-' + iri_local(str(s['sub']))) if s['sub'] else '')
+        siri = R('sense/%s/%s' % (ekey, frag))
+        sense_iris.append((siri, s))
+        for raw, sigla, locus in extract_ls(s['seg_text']):
+            slug = cite_slug(raw)
+            if slug:
+                cite_blocks[slug] = (sigla, locus, raw)
+        if str(s['n']).isdigit():
+            se = key_strat.get(int(s['n']))
+            if se and se.get('stratum_label') and se.get('stratum_label') != '–':
+                attest_used[str(s['n'])] = se
+    f.write('  ontolex:sense %s .\n' % ', '.join(i for i, _ in sense_iris))
+
+    for siri, s in sense_iris:
+        f.write('%s a ontolex:LexicalSense ;\n' % siri)
+        f.write('  skos:definition %s ;\n' % lit(s['definition'], lang='de'))
+        for g in s['glosses']:
+            f.write('  pwglex:germanEquivalent %s ;\n' % lit(g, lang='de'))
+        f.write('  pwglex:senseNumber %s ;\n' % lit(str(s['n'])))
+        if s['sub']:
+            f.write('  pwglex:senseSub %s ;\n' % lit(str(s['sub'])))
+        f.write('  pwglex:equivalenceType %s ;\n' % lit(s['eqtype']))
+        for pos in s['grammar']:
+            f.write('  pwglex:grammar %s ;\n' % lit(pos))
+        for d in s['diasystem']:
+            f.write('  pwglex:diasystem %s ;\n' % lit(d))
+        for st in s['strata']:
+            f.write('  pwglex:renouStratum %s ;\n' % lit(st))
+        refs = sorted({R('citation/%s' % cite_slug(raw))
+                       for raw, _, _ in extract_ls(s['seg_text']) if cite_slug(raw)})
+        if refs:
+            f.write('  dct:references %s ;\n' % ', '.join(refs))
+        if str(s['n']) in attest_used:
+            f.write('  pwglex:attestation %s ;\n'
+                    % R('attestation/%s/%s' % (iri_local(key1), iri_local(str(s['n'])))))
+        f.write('  pwglex:evidenceGrade gr:%s .\n' % DE_GRADE[0])
+
+    for slug, (sigla, locus, raw) in cite_blocks.items():
+        f.write('%s a pwglex:Citation, prov:Entity ;\n' % R('citation/%s' % slug))
+        f.write('  rdfs:label %s ;\n' % lit(raw))
+        if sigla:
+            f.write('  pwglex:sourceSigla %s ;\n' % lit(sigla))
+        if locus:
+            f.write('  pwglex:locus %s ;\n' % lit(locus))
+        f.write('  pwglex:lsRaw %s .\n' % lit(raw))
+
+    for tag, se in attest_used.items():
+        airi = R('attestation/%s/%s' % (iri_local(key1), iri_local(tag)))
+        f.write('%s a pwglex:StratumAttestation, prov:Entity ;\n' % airi)
+        if se.get('stratum_label'):
+            f.write('  skos:prefLabel %s ;\n' % lit(se.get('stratum_label'), lang='ru'))
+        if se.get('renou_oldest'):
+            f.write('  pwglex:renouOldest %s ;\n' % lit(se.get('renou_oldest')))
+        if se.get('renou_youngest'):
+            f.write('  pwglex:renouYoungest %s ;\n' % lit(se.get('renou_youngest')))
+        if se.get('date_min') is not None:
+            f.write('  pwglex:dateMin %s ;\n' % lit(se.get('date_min'), dtype='xsd:integer'))
+        if se.get('date_max') is not None:
+            f.write('  pwglex:dateMax %s ;\n' % lit(se.get('date_max'), dtype='xsd:integer'))
+        f.write('  pwglex:datedCitations %s .\n' % lit(se.get('n_dated_citations') or 0, dtype='xsd:integer'))
+
+    f.write('\n')
+    return len(sense_iris)
+
+
+def export_de_lexicon(args):
+    os.makedirs(args.out_dir, exist_ok=True)
+    R = IRI(args.base)
+    sys.stderr.write('loading stratum sidecar...\n')
+    stratum = load_stratum(args.stratum)
+    out = os.path.join(args.out_dir, 'pwg_de_lexicon.ttl')
+    lemma_seen = set()
+    counts = {}
+    n_entry = n_sense = 0
+    with open(out, 'w', encoding='utf-8', newline='') as f:
+        f.write('# PWG++ German enrichment graph -- export_lod.py de-lexicon (H772)\n')
+        f.write('# base IRI: %s   generated: %s\n\n' % (args.base, args.generated_at))
+        f.write(prefixes(args.base))
+        emit_de_vocab(f, R, args)
+        for card in iter_cards(args):
+            key1 = card.get('key1')
+            counts[key1] = counts.get(key1, 0) + 1
+            suffix = '' if counts[key1] == 1 else '-%d' % counts[key1]
+            k = emit_de_card(f, R, card, suffix, lemma_seen, stratum, args)
+            if k:
+                n_entry += 1
+                n_sense += k
+    sys.stderr.write('de-lexicon graph: %d entries / %d senses -> %s\n' % (n_entry, n_sense, out))
+    print('PWG++ German enrichment graph -> %s' % out)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('mode', choices=['lexicon', 'dcs-freq', 'all'])
+    ap.add_argument('mode', choices=['lexicon', 'dcs-freq', 'de-lexicon', 'all'])
     ap.add_argument('--cards', default=DEFAULT_CARDS)
     ap.add_argument('--store', default=DEFAULT_STORE)
     ap.add_argument('--rel', default=DEFAULT_REL)
@@ -530,6 +724,8 @@ def main():
         export_lexicon(args)
     if args.mode in ('dcs-freq', 'all'):
         export_dcs_freq(args)
+    if args.mode in ('de-lexicon', 'all'):
+        export_de_lexicon(args)
 
 
 if __name__ == '__main__':

@@ -43,7 +43,7 @@ numbers are recomputable from the committed tables via
 | Bridge quality vs gold (top-1 17.5% / top-6 45.0% exact; 27.5% / 58.5% level-2) | [semdom_ak_bridge.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_bridge.py) + [semdom_ak_metrics.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_metrics.py) `metrics` | exists |
 | Structure agreement (134/200 = 67.0% inside the varga's Level A subtree) | [semdom_ak_metrics.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_metrics.py) `metrics` over gold + Level A CSV | exists |
 | Coverage (5,391/5,590 = 96.4% synsets with ≥1 candidate; 1,196/1,792 = 66.7% domains reached) | [semdom_ak_candidates.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_candidates.tsv) via [semdom_ak_bridge.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_bridge.py) | exists |
-| Grammatical-annex parallel (AK kāṇḍa 3 ≈ semdom top-level 9 "Grammar") | prose finding in [data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md) — needs a small counted table (varga sizes vs 9.x domain counts) for the paper figure | needs deriving |
+| Grammatical-annex parallel (AK kāṇḍa 3 ≈ semdom top-level 9 "Grammar"): 2,592/5,590 synsets (46.4%) vs 168/1,792 domains (9.4%); form-class annex proper (minus nānārtha's 1,995-synset polysemy register) 597 synsets = 10.7% ≈ semdom's 9.4% | counted table in [data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md), derived live by [semdom_ak_annex_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py) (H774) | exists |
 | Dataset citation of record (Zenodo DOI over the ID-pair tables) | kosha manifest row `semdom-amarakosha-crosswalk` in [datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) exists; DOI mint = `/data-release` | needs a `/data-release` |
 | CDSL consumption demo (`\sd` field in MDF/LIFT exports, H721) | shipped as [csl-standards PR #110](https://github.com/sanskrit-lexicon/csl-standards/pull/110) — cite as deployment evidence in §6 | exists |
 | Human validation of model-authored gold (MG spot-check via `/review-sheet`) | not started — the paper can ship with the model-annotator limitation stated, but a ~50-row human spot-check materially strengthens §7 | needs deriving |
@@ -73,7 +73,10 @@ numbers are recomputable from the committed tables via
 6. **Discussion** — the residual third of structure disagreement (AK's
    associative chaining vs SIL's artifact/activity splits); the
    grammatical-annex parallel (kāṇḍa 3 ≈ semdom top-level 9 — both taxonomies
-   needed a formal bucket the semantic scheme could not absorb); the
+   needed a formal bucket the semantic scheme could not absorb; counted:
+   46.4% of AK synsets vs 9.4% of semdom domains, converging to 10.7% vs 9.4%
+   once nānārtha's polysemy register is set aside — semdom absorbs homonymy
+   by multiple listing, the one annex bucket AK needed and SIL did not); the
    action-subtree asymmetry (one domain from top-level 7 vs 22 from top-level
    4); deployment: the `\sd` field in CDSL's MDF/LIFT exports.
 7. **Limitations** — model annotators only (no human gold yet); English-only

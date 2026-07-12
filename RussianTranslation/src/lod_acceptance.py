@@ -212,6 +212,76 @@ def test_deterministic(args, keys, fixture_dir):
     return ok
 
 
+def load_de_graph(fixture_dir):
+    """RU lexical + DCS frequency + German enrichment graphs, loaded together
+    (the three-graph federated view over the shared lemma spine)."""
+    g = load_graphs(fixture_dir)
+    g.parse(os.path.join(fixture_dir, 'pwg_de_lexicon.ttl'), format='turtle')
+    return g
+
+
+def test_de_enrichment(fixture_dir, query_path):
+    """PWG++ German enrichment (H772): the derivable layers glue onto the German
+    original too. Fixture-only (no gitignored source needed)."""
+    print('\nC. PWG++ German enrichment (glue the layers onto the German source)')
+    O = ONTO
+    g = load_de_graph(fixture_dir)
+    ok = True
+    # C1. three-way federated join: German sense -> its <ls> citation + the DCS
+    #     frequency of its SHARED lemma. Must return rows.
+    with open(query_path, encoding='utf-8') as f:
+        q = f.read()
+    rows = list(g.query(q))
+    ok = check('German sense x citation x DCS-freq join returns rows', len(rows) > 0,
+               '%d rows' % len(rows)) and ok
+    for r in rows[:4]:
+        d = r.asdict()
+        print('       lemma=%-40s de-sense=%-3s dcs=%-6s %s %s' % (
+            str(d.get('lemma')).rsplit('/', 1)[-1], d.get('senseNumber'),
+            d.get('dcsCount'), d.get('sigla'), d.get('locus') or ''))
+    # C2. every German entry is a real, language-tagged, lemma-anchored entry.
+    ok = check('every German entry has dct:language "de" + canonicalForm',
+               count(g, 'SELECT (COUNT(?e) AS ?n){?e a <%sLexicalEntry> ; <http://purl.org/dc/terms/language> "de" '
+                        'FILTER NOT EXISTS{?e <%scanonicalForm> ?l}}' % (O, O)) == 0) and ok
+    # C3. RU and DE entries sit on the SAME lemma (siblings on one spine).
+    shared = count(g, 'SELECT (COUNT(DISTINCT ?lemma) AS ?n){'
+                      '?de a <%sLexicalEntry> ; <http://purl.org/dc/terms/language> "de" ; <%scanonicalForm> ?lemma . '
+                      '?ru a <%sLexicalEntry> ; <%scanonicalForm> ?lemma . FILTER(?ru != ?de)}' % (O, O, O, O))
+    ok = check('lemmas carry >1 sibling entry (RU + DE on one lemma)', shared > 0, '%d lemmas' % shared) and ok
+    # C4. every German sense carries the PWG-source evidence grade.
+    ok = check('every German sense has evidenceGrade gr:pwg-source',
+               count(g, 'SELECT (COUNT(?s) AS ?n){?e <http://purl.org/dc/terms/language> "de" ; <%ssense> ?s '
+                        'FILTER NOT EXISTS{?s <%sevidenceGrade> <%spwg-source>}}' % (O, V, GR)) == 0) and ok
+    return ok
+
+
+def test_de_deterministic(args, keys, fixture_dir):
+    print('\nC5. German graph deterministic generation (byte-identical)')
+    with tempfile.TemporaryDirectory() as td:
+        cmd = [sys.executable, os.path.join(HERE, 'export_lod.py'), 'de-lexicon',
+               '--keys', ','.join(keys), '--generated-at', args.generated_at,
+               '--cards', args.cards, '--stratum', args.stratum, '--out-dir', td]
+        subprocess.run(cmd, check=True, capture_output=True)
+        with open(os.path.join(td, 'pwg_de_lexicon.ttl'), 'rb') as a, \
+             open(os.path.join(fixture_dir, 'pwg_de_lexicon.ttl'), 'rb') as b:
+            same = a.read() == b.read()
+    return check('pwg_de_lexicon.ttl regenerates byte-identical', same)
+
+
+def test_de_source_coverage(args, keys, fixture_dir):
+    print('\nC6. German source coverage (every source German sense survives)')
+    sys.path.insert(0, HERE)
+    import export_lod as X
+    keyset = set(keys)
+    exp = 0
+    for card in X.iter_jsonl(args.cards):
+        if card.get('key1') in keyset:
+            exp += len(list(X.de_card_senses(card)))
+    g = Graph(); g.parse(os.path.join(fixture_dir, 'pwg_de_lexicon.ttl'), format='turtle')
+    got = count(g, 'SELECT (COUNT(?s) AS ?n){?e <http://purl.org/dc/terms/language> "de" ; <%ssense> ?s}' % ONTO)
+    return check('German sense count matches source', got == exp, 'graph=%d source=%d' % (got, exp))
+
+
 def test_shacl(fixture_dir, shapes_path):
     print('\nSHACL conformance (optional -- needs pyshacl)')
     try:
@@ -230,6 +300,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--fixture', default=os.path.join(ROOT, 'release', 'fixture'))
     ap.add_argument('--query', default=os.path.join(ROOT, 'release', 'query', 'sense_citation_dcsfreq.rq'))
+    ap.add_argument('--de-query', default=os.path.join(ROOT, 'release', 'query', 'de_sense_citation_dcsfreq.rq'))
     ap.add_argument('--shapes', default=os.path.join(ROOT, 'release', 'shapes.ttl'))
     ap.add_argument('--cards', default=os.path.join(HERE, 'assembled_cards.jsonl'))
     ap.add_argument('--store', default=os.path.join(HERE, 'pwg_ru_translated.jsonl'))
@@ -249,9 +320,16 @@ def main():
     test_invariants(g)
     test_shacl(args.fixture, args.shapes)
 
+    de_present = os.path.exists(os.path.join(args.fixture, 'pwg_de_lexicon.ttl'))
+    if de_present:
+        test_de_enrichment(args.fixture, args.de_query)
+
     if os.path.exists(args.cards) and os.path.exists(args.store):
         test_source_coverage(g, args, keys)
         test_deterministic(args, keys, args.fixture)
+        if de_present:
+            test_de_source_coverage(args, keys, args.fixture)
+            test_de_deterministic(args, keys, args.fixture)
     else:
         print('\n[skip] B1+B3: source jsonl not reachable (gitignored) -- '
               'fixture-only checks ran. Point --cards/--store at the repo src to enable.')

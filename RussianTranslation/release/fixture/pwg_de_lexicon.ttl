@@ -1,0 +1,1126 @@
+# PWG++ German enrichment graph -- export_lod.py de-lexicon (H772)
+# base IRI: https://w3id.org/sanskrit-lexicon/pwg-ru/   generated: 2026-07-08
+
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix lime:     <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix lila:     <http://lila-erc.eu/ontologies/lila/> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+@prefix gr:       <https://w3id.org/sanskrit-lexicon/pwg-ru/grade/> .
+
+# --- German enrichment lexicon (PWG++) -----------------------
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> a lime:Lexicon ;
+  rdfs:label "PWG German lexicon (Petersburg Dictionary, enriched)"@en ;
+  dct:language "de" ; lime:language "de" ;
+  dct:source <https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/> ;
+  dct:license <https://creativecommons.org/publicdomain/mark/1.0/> ;
+  prov:wasGeneratedBy <https://w3id.org/sanskrit-lexicon/pwg-ru/prov/export-lod-de> ;
+  dct:created "2026-07-08"^^xsd:date .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/prov/export-lod-de> a prov:Activity ;
+  rdfs:label "PWG++ German enrichment export (export_lod.py de-lexicon)" ;
+  prov:endedAtTime "2026-07-08"^^xsd:date .
+
+gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/pwg-ru/grade/scheme> ; skos:prefLabel "PWG source gloss (Boehtlingk-Roth), public domain"@en ; pwglex:citable true .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "a"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "a"@sa-Latn ;
+  pwglex:slp1 "a" ;
+  rdfs:label "a"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/a/de> a ontolex:LexicalEntry ;
+  rdfs:label "a"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/1/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/2/1-a>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/3/1-b>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/4/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/5/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "1. ¦ Interj. (die beiden Vocale fliessen nicht in einander) P. 1,1,14 , Sch. ; vgl. gaṇa und VOP. 2,19. Drückt Mitleid aus ( ) MED. avy . 2"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MED_x2e__x2d__x3c_is_x3e_avy_x3c__x2f_is_x3e__x2e__x2d_2_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_1_x2c_1_x2c_14>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VOP_x2e__x2d_2_x2c_19_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/2/1-a> a ontolex:LexicalSense ;
+  skos:definition "der 1sten Person, enthalten in und im ved"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "a" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Vedic (Sanskrit)" ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/3/1-b> a ontolex:LexicalSense ;
+  skos:definition "der 3ten Person; f. . Davon folgende Casusformen: ( wird nach und im ṚV. nicht elidirt, P. 6,1,116. zwei Ausnahmen findet man schon ṚV. PRĀTIŚ. 2,19. 21 : und ), . In den Veden allein erscheinen überd"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "b" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:grammar "f." ;
+  pwglex:grammar "n." ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_6_x2c_1_x2c_116_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_PR_xc4__x80_TI_xc5__x9a__x2e__x2d_2_x2c_19_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_PR_xc4__x80_TI_xc5__x9a__x2e__x2d_2_x2c__x2d_21> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/4/1> a ontolex:LexicalSense ;
+  skos:definition "4. ¦ Augment beim Imperfect, Aorist und Conditionalis. Ist wohl auch auf den unter 2. erwähnten Pronominalstamm der 3ten Person zurückzuführen"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a/de/5/1> a ontolex:LexicalSense ;
+  skos:definition "5. ¦ m. Viṣṇu TRIK. 1,1,29. MED. avy . 2"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:grammar "m." ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MED_x2e__x2d__x3c_is_x3e_avy_x3c__x2f_is_x3e__x2e__x2d_2_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_1_x2c_1_x2c_29_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_1_x2c_1_x2c_14> a pwglex:Citation, prov:Entity ;
+  rdfs:label "P. 1,1,14" ;
+  pwglex:sourceSigla "P." ;
+  pwglex:locus "1,1,14" ;
+  pwglex:lsRaw "P. 1,1,14" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VOP_x2e__x2d_2_x2c_19_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VOP. 2,19." ;
+  pwglex:sourceSigla "VOP." ;
+  pwglex:locus "2,19." ;
+  pwglex:lsRaw "VOP. 2,19." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MED_x2e__x2d__x3c_is_x3e_avy_x3c__x2f_is_x3e__x2e__x2d_2_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MED. <is>avy</is>. 2." ;
+  pwglex:sourceSigla "MED. <is>avy</is>. 2." ;
+  pwglex:lsRaw "MED. <is>avy</is>. 2." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:lsRaw "ṚV." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_6_x2c_1_x2c_116_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "P. 6,1,116." ;
+  pwglex:sourceSigla "P." ;
+  pwglex:locus "6,1,116." ;
+  pwglex:lsRaw "P. 6,1,116." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_PR_xc4__x80_TI_xc5__x9a__x2e__x2d_2_x2c_19_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. PRĀTIŚ. 2,19." ;
+  pwglex:sourceSigla "ṚV. PRĀTIŚ." ;
+  pwglex:locus "2,19." ;
+  pwglex:lsRaw "ṚV. PRĀTIŚ. 2,19." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_PR_xc4__x80_TI_xc5__x9a__x2e__x2d_2_x2c__x2d_21> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. PRĀTIŚ. 2, 21" ;
+  pwglex:sourceSigla "ṚV. PRĀTIŚ. 2," ;
+  pwglex:locus "21" ;
+  pwglex:lsRaw "ṚV. PRĀTIŚ. 2, 21" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_1_x2c_1_x2c_29_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "TRIK. 1,1,29." ;
+  pwglex:sourceSigla "TRIK." ;
+  pwglex:locus "1,1,29." ;
+  pwglex:lsRaw "TRIK. 1,1,29." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-900"^^xsd:integer ;
+  pwglex:dateMax "1830"^^xsd:integer ;
+  pwglex:datedCitations "27"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "aMSa"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "aṃśa"@sa-Latn ;
+  pwglex:slp1 "aMSa" ;
+  rdfs:label "aṃśa"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSa/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśa"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/1/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/2/1-a>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/3/1-b>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/4/1-c>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/5/1-d>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/6/1-e>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/7/2>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/8/3>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/9/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "Theil"@de ;
+  pwglex:germanEquivalent "Theil"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_9_x2c_90_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_1434_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/2/1-a> a ontolex:LexicalSense ;
+  skos:definition "Theil, Abschnitt"@de ;
+  pwglex:germanEquivalent "Theil, Abschnitt"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "a" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_7_x2c_31_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_3_x2c_4_x2c_92_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BHAG_x2e__x2d_15_x2c_7_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_106_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_an_x2e__x2d_2_x2c_542_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_164_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/3/1-b> a ontolex:LexicalSense ;
+  skos:definition "ein Theil des Kaufpreises, Haftgeld"@de ;
+  pwglex:germanEquivalent "ein Theil des Kaufpreises, Haftgeld"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "b" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_3_x2c_45_x2c_4_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/4/1-c> a ontolex:LexicalSense ;
+  skos:definition "Antheil"@de ;
+  pwglex:germanEquivalent "Antheil"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "c" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Classical" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_1_x2c_5_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_8_x2c_408_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_201_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Y_xc4__x80_J_xc3__x91__x2e__x2d_2_x2c_115_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Y_xc4__x80_J_xc3__x91__x2e__x2d_2_x2c_140_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_10_x2c_31_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c_32_x2c_12_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/5/1-d> a ontolex:LexicalSense ;
+  skos:definition "Partei"@de ;
+  pwglex:germanEquivalent "Partei"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "d" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_102_x2c_4_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c__x2d_112_x2c_1_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/6/1-e> a ontolex:LexicalSense ;
+  skos:definition "Nenner eines Bruchs"@de ;
+  pwglex:germanEquivalent "Nenner eines Bruchs"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "e" ;
+  pwglex:equivalenceType "explanatory" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/COLEBR_x2e__x2d_Alg_x2e__x2d_13_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/7/2> a ontolex:LexicalSense ;
+  skos:definition "Theilung, Erbschaftstheilung"@de ;
+  pwglex:germanEquivalent "Theilung, Erbschaftstheilung"@de ;
+  pwglex:senseNumber "2" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_an_x2e__x2d_2_x2c_542_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_47_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc4__x80_V_x2e__x2d_2_x2c_26_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/2> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/8/3> a ontolex:LexicalSense ;
+  skos:definition "Theilnehmer, Vertheiler"@de ;
+  pwglex:germanEquivalent "Theilnehmer, Vertheiler"@de ;
+  pwglex:senseNumber "3" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Classical" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_17_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_6_x2c_2_x2c_5_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_12456_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_176_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_1_x2c_2523_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MIT_x2e__x2d_142_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/ROTH>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VP_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VS_x2e__x2d_10_x2c_5_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Z_x2e__x2d_d_x2e__x2d_d_x2e__x2d_m_x2e__x2d_G_x2e__x2d_VI_x2c_75_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c_1_x2c_4_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c__x2d_27_x2c_1_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_5_x2c_42_x2c_5_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/3> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa/de/9/1> a ontolex:LexicalSense ;
+  skos:definition "Schulter"@de ;
+  pwglex:germanEquivalent "Schulter"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:grammar "m." ;
+  pwglex:grammar "n." ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_6_x2c_2_x2c_29>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_1_x2c_1_x2c_11_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_9_x2c_90_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 2,9,90." ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "2,9,90." ;
+  pwglex:lsRaw "AK. 2,9,90." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_1434_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "H. 1434." ;
+  pwglex:sourceSigla "H." ;
+  pwglex:locus "1434." ;
+  pwglex:lsRaw "H. 1434." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_an_x2e__x2d_2_x2c_542_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "H. an. 2,542." ;
+  pwglex:sourceSigla "H. an. 2,542." ;
+  pwglex:lsRaw "H. an. 2,542." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/H_x2e__x2d_106_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "H. 106." ;
+  pwglex:sourceSigla "H." ;
+  pwglex:locus "106." ;
+  pwglex:lsRaw "H. 106." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_3_x2c_4_x2c_92_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 3,4,92." ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "3,4,92." ;
+  pwglex:lsRaw "AK. 3,4,92." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_7_x2c_31_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 2,7,31." ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "2,7,31." ;
+  pwglex:lsRaw "AK. 2,7,31." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_164_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 9,164." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "9,164." ;
+  pwglex:lsRaw "M. 9,164." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BHAG_x2e__x2d_15_x2c_7_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "BHAG. 15,7." ;
+  pwglex:sourceSigla "BHAG." ;
+  pwglex:locus "15,7." ;
+  pwglex:lsRaw "BHAG. 15,7." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_3_x2c_45_x2c_4_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 3,45,4." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "3,45,4." ;
+  pwglex:lsRaw "ṚV. 3,45,4." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c_32_x2c_12_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 7,32,12." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "7,32,12." ;
+  pwglex:lsRaw "ṚV. 7,32,12." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_10_x2c_31_x2c_3_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 10,31,3." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "10,31,3." ;
+  pwglex:lsRaw "ṚV. 10,31,3." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_1_x2c_5_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 11,1,5." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "11,1,5." ;
+  pwglex:lsRaw "AV. 11,1,5." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_8_x2c_408_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 8,408." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "8,408." ;
+  pwglex:lsRaw "M. 8,408." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_201_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 9,201." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "9,201." ;
+  pwglex:lsRaw "M. 9,201." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Y_xc4__x80_J_xc3__x91__x2e__x2d_2_x2c_140_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "YĀJÑ. 2,140." ;
+  pwglex:sourceSigla "YĀJÑ." ;
+  pwglex:locus "2,140." ;
+  pwglex:lsRaw "YĀJÑ. 2,140." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Y_xc4__x80_J_xc3__x91__x2e__x2d_2_x2c_115_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "YĀJÑ. 2,115." ;
+  pwglex:sourceSigla "YĀJÑ." ;
+  pwglex:locus "2,115." ;
+  pwglex:lsRaw "YĀJÑ. 2,115." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_102_x2c_4_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 1,102,4." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "1,102,4." ;
+  pwglex:lsRaw "ṚV. 1,102,4." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c__x2d_112_x2c_1_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 1, 112,1." ;
+  pwglex:sourceSigla "ṚV. 1," ;
+  pwglex:locus "112,1." ;
+  pwglex:lsRaw "ṚV. 1, 112,1." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/COLEBR_x2e__x2d_Alg_x2e__x2d_13_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "COLEBR. Alg. 13." ;
+  pwglex:sourceSigla "COLEBR. Alg. 13." ;
+  pwglex:lsRaw "COLEBR. Alg. 13." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_9_x2c_47_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 9,47." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "9,47." ;
+  pwglex:lsRaw "M. 9,47." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc4__x80_V_x2e__x2d_2_x2c_26_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "SĀV. 2,26." ;
+  pwglex:sourceSigla "SĀV." ;
+  pwglex:locus "2,26." ;
+  pwglex:lsRaw "SĀV. 2,26." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/ROTH> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ROTH" ;
+  pwglex:sourceSigla "ROTH" ;
+  pwglex:lsRaw "ROTH" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Z_x2e__x2d_d_x2e__x2d_d_x2e__x2d_m_x2e__x2d_G_x2e__x2d_VI_x2c_75_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Z. d. d. m. G. VI,75." ;
+  pwglex:sourceSigla "Z. d. d. m. G. VI,75." ;
+  pwglex:lsRaw "Z. d. d. m. G. VI,75." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c_1_x2c_4_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 2,1,4." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "2,1,4." ;
+  pwglex:lsRaw "ṚV. 2,1,4." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c__x2d_27_x2c_1_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 2, 27,1." ;
+  pwglex:sourceSigla "ṚV. 2," ;
+  pwglex:locus "27,1." ;
+  pwglex:lsRaw "ṚV. 2, 27,1." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/_xe1__xb9__x9a_V_x2e__x2d_5_x2c_42_x2c_5_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ṚV. 5,42,5." ;
+  pwglex:sourceSigla "ṚV." ;
+  pwglex:locus "5,42,5." ;
+  pwglex:lsRaw "ṚV. 5,42,5." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VS_x2e__x2d_10_x2c_5_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VS. 10,5." ;
+  pwglex:sourceSigla "VS." ;
+  pwglex:locus "10,5." ;
+  pwglex:lsRaw "VS. 10,5." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_6_x2c_2_x2c_5_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 6,2,5." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "6,2,5." ;
+  pwglex:lsRaw "AV. 6,2,5." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_17_x2c_2_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 11,17,2." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "11,17,2." ;
+  pwglex:lsRaw "AV. 11,17,2." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_1_x2c_2523_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 1,2523." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "1,2523." ;
+  pwglex:lsRaw "MBH. 1,2523." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_176_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "HARIV. 176." ;
+  pwglex:sourceSigla "HARIV." ;
+  pwglex:locus "176." ;
+  pwglex:lsRaw "HARIV. 176." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VP_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VP." ;
+  pwglex:sourceSigla "VP." ;
+  pwglex:lsRaw "VP." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MIT_x2e__x2d_142_x2c_3_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MIT. 142,3." ;
+  pwglex:sourceSigla "MIT." ;
+  pwglex:locus "142,3." ;
+  pwglex:lsRaw "MIT. 142,3." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_12456_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "HARIV. 12456." ;
+  pwglex:sourceSigla "HARIV." ;
+  pwglex:locus "12456." ;
+  pwglex:lsRaw "HARIV. 12456." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_6_x2c_2_x2c_29> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 2,6,2,29" ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "2,6,2,29" ;
+  pwglex:lsRaw "AK. 2,6,2,29" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_1_x2c_1_x2c_11_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 1,1,11." ;
+  pwglex:sourceSigla "R." ;
+  pwglex:locus "1,1,11." ;
+  pwglex:lsRaw "R. 1,1,11." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "18"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/2> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "эпический–классический"@ru ;
+  pwglex:renouOldest "III" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "150"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "2"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/3> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–эпический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "III" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "450"^^xsd:integer ;
+  pwglex:datedCitations "10"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "aMSaka"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "aṃśaka"@sa-Latn ;
+  pwglex:slp1 "aMSaka" ;
+  rdfs:label "aṃśaka"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSaka/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśaka"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/1/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/2/2>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/3/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/4/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "Theil"@de ;
+  pwglex:germanEquivalent "Theil"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_1_x2c_1_x2c_2_x2c_17_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/2/2> a ontolex:LexicalSense ;
+  skos:definition "Erbe (Antheil an der Erbschaft habend) P. 5,2,69. Verwandter TRIK. 2,6,9"@de ;
+  pwglex:senseNumber "2" ;
+  pwglex:equivalenceType "explanatory" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_5_x2c_2_x2c_69_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_2_x2c_6_x2c_9_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/2> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/3/1> a ontolex:LexicalSense ;
+  skos:definition "Tag"@de ;
+  pwglex:germanEquivalent "Tag"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:grammar "n." ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_7_x2c_31_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_1_x2c_1_x2c_104_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka/de/4/1> a ontolex:LexicalSense ;
+  skos:definition "3. ¦ f. am Ende eines adj. Compositums. S. u. 1"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:grammar "f." ;
+  pwglex:grammar "adj." ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_1_x2c_1_x2c_2_x2c_17_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 1,1,2,17." ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "1,1,2,17." ;
+  pwglex:lsRaw "AK. 1,1,2,17." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/P_x2e__x2d_5_x2c_2_x2c_69_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "P. 5,2,69." ;
+  pwglex:sourceSigla "P." ;
+  pwglex:locus "5,2,69." ;
+  pwglex:lsRaw "P. 5,2,69." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_2_x2c_6_x2c_9_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "TRIK. 2,6,9." ;
+  pwglex:sourceSigla "TRIK." ;
+  pwglex:locus "2,6,9." ;
+  pwglex:lsRaw "TRIK. 2,6,9." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TRIK_x2e__x2d_1_x2c_1_x2c_104_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "TRIK. 1,1,104." ;
+  pwglex:sourceSigla "TRIK." ;
+  pwglex:locus "1,1,104." ;
+  pwglex:lsRaw "TRIK. 1,1,104." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AK_x2e__x2d_2_x2c_7_x2c_31_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AK. 2,7,31." ;
+  pwglex:sourceSigla "AK." ;
+  pwglex:locus "2,7,31." ;
+  pwglex:lsRaw "AK. 2,7,31." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "классический"@ru ;
+  pwglex:renouOldest "IV" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "450"^^xsd:integer ;
+  pwglex:dateMax "450"^^xsd:integer ;
+  pwglex:datedCitations "1"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/2> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "паниниевский–классический"@ru ;
+  pwglex:renouOldest "II" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-400"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "2"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSa-2/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśa"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-2/de/1/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-2/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "1. ¦ [ vgl. [Page1-0003]] {6,2,5. 11,17,2}. = {6,4,2. 11,6,2}"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "18"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/a-2/de> a ontolex:LexicalEntry ;
+  rdfs:label "a"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-2/de/1/5>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-2/de/2/6> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-2/de/1/5> a ontolex:LexicalSense ;
+  skos:definition "R. 2,48,10. 111,6"@de ;
+  pwglex:senseNumber "5" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_2_x2c_48_x2c_10_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_2_x2c__x2d_111_x2c_6_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/5> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-2/de/2/6> a ontolex:LexicalSense ;
+  skos:definition "scheinbar in der Stelle AIT. BR. 7,6 , wo aber zu lesen ist"@de ;
+  pwglex:senseNumber "6" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AIT_x2e__x2d_BR_x2e__x2d_7_x2c_6> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/6> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_2_x2c_48_x2c_10_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 2,48,10." ;
+  pwglex:sourceSigla "R." ;
+  pwglex:locus "2,48,10." ;
+  pwglex:lsRaw "R. 2,48,10." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_2_x2c__x2d_111_x2c_6_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 2, 111,6." ;
+  pwglex:sourceSigla "R. 2," ;
+  pwglex:locus "111,6." ;
+  pwglex:lsRaw "R. 2, 111,6." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AIT_x2e__x2d_BR_x2e__x2d_7_x2c_6> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AIT. BR. 7,6" ;
+  pwglex:sourceSigla "AIT. BR." ;
+  pwglex:locus "7,6" ;
+  pwglex:lsRaw "AIT. BR. 7,6" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/5> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–паниниевский"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "II" ;
+  pwglex:dateMin "-940"^^xsd:integer ;
+  pwglex:dateMax "-400"^^xsd:integer ;
+  pwglex:datedCitations "6"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/6> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "паниниевский"@ru ;
+  pwglex:renouOldest "II" ;
+  pwglex:renouYoungest "II" ;
+  pwglex:dateMin "-400"^^xsd:integer ;
+  pwglex:dateMax "1250"^^xsd:integer ;
+  pwglex:datedCitations "4"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSa-3/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśa"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/1/0>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/2/1-c>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/3/3> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/1/0> a ontolex:LexicalSense ;
+  skos:definition "Grad"@de ;
+  pwglex:germanEquivalent "Grad"@de ;
+  pwglex:senseNumber "0" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Ind_x2e__x2d_St_x2e__x2d_2_x2c_279_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/LAGHUJ_x2e__x2d_1_x2c_10>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VAR_xc4__x80_H_x2e_> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/2/1-c> a ontolex:LexicalSense ;
+  skos:definition "TS. 7,1,6,2. PAÑCAV. BR. 21,1,2. (2. mit das Loos werfen 14,3,13. 25,13,3"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:senseSub "c" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PA_xc3__x91_CAV_x2e__x2d_BR_x2e__x2d_14_x2c_3_x2c_13_x2e__x2d_25_x2c_13_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PA_xc3__x91_CAV_x2e__x2d_BR_x2e__x2d_21_x2c_1_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TS_x2e__x2d_7_x2c_1_x2c_6_x2c_2_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-3/de/3/3> a ontolex:LexicalSense ;
+  skos:definition "* Z. 3 lies 6, 4, 2. 11, 6, 2 st. 6, 2, 5. 11, 17, 2"@de ;
+  pwglex:senseNumber "3" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/3> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VAR_xc4__x80_H_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VARĀH." ;
+  pwglex:sourceSigla "VARĀH." ;
+  pwglex:lsRaw "VARĀH." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/LAGHUJ_x2e__x2d_1_x2c_10> a pwglex:Citation, prov:Entity ;
+  rdfs:label "LAGHUJ. 1,10" ;
+  pwglex:sourceSigla "LAGHUJ." ;
+  pwglex:locus "1,10" ;
+  pwglex:lsRaw "LAGHUJ. 1,10" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Ind_x2e__x2d_St_x2e__x2d_2_x2c_279_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Ind. St. 2,279." ;
+  pwglex:sourceSigla "Ind. St. 2,279." ;
+  pwglex:lsRaw "Ind. St. 2,279." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/TS_x2e__x2d_7_x2c_1_x2c_6_x2c_2_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "TS. 7,1,6,2." ;
+  pwglex:sourceSigla "TS." ;
+  pwglex:locus "7,1,6,2." ;
+  pwglex:lsRaw "TS. 7,1,6,2." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PA_xc3__x91_CAV_x2e__x2d_BR_x2e__x2d_21_x2c_1_x2c_2_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "PAÑCAV. BR. 21,1,2." ;
+  pwglex:sourceSigla "PAÑCAV. BR." ;
+  pwglex:locus "21,1,2." ;
+  pwglex:lsRaw "PAÑCAV. BR. 21,1,2." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PA_xc3__x91_CAV_x2e__x2d_BR_x2e__x2d_14_x2c_3_x2c_13_x2e__x2d_25_x2c_13_x2c_3_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "PAÑCAV. BR. 14,3,13. 25,13,3." ;
+  pwglex:sourceSigla "PAÑCAV. BR." ;
+  pwglex:locus "14,3,13. 25,13,3." ;
+  pwglex:lsRaw "PAÑCAV. BR. 14,3,13. 25,13,3." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "18"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/3> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–эпический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "III" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "450"^^xsd:integer ;
+  pwglex:datedCitations "10"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSaka-2/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśaka"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka-2/de/1/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka-2/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "Grad"@de ;
+  pwglex:germanEquivalent "Grad"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/LAGHUJ_x2e__x2d_1_x2c_10_x2e__x2d_21_x2e__x2d_23_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VAR_xc4__x80_H_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VAR_xc4__x80_H_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VARĀH." ;
+  pwglex:sourceSigla "VARĀH." ;
+  pwglex:lsRaw "VARĀH." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/LAGHUJ_x2e__x2d_1_x2c_10_x2e__x2d_21_x2e__x2d_23_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "LAGHUJ. 1,10. 21. 23." ;
+  pwglex:sourceSigla "LAGHUJ." ;
+  pwglex:locus "1,10. 21. 23." ;
+  pwglex:lsRaw "LAGHUJ. 1,10. 21. 23." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "классический"@ru ;
+  pwglex:renouOldest "IV" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "450"^^xsd:integer ;
+  pwglex:dateMax "450"^^xsd:integer ;
+  pwglex:datedCitations "1"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "rakz"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "rakṣ"@sa-Latn ;
+  pwglex:slp1 "rakz" ;
+  rdfs:label "rakṣ"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/rakz/de> a ontolex:LexicalEntry ;
+  rdfs:label "rakṣ"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/1/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/2/2>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/3/1>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/4/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "behüten, beschützen"@de ;
+  pwglex:germanEquivalent "behüten, beschützen"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_10_x2c_8_x2c_36_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_12_x2c_3596_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_8_x2c_3542_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/ed_x2e__x2d_Bomb_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/2/2> a ontolex:LexicalSense ;
+  skos:definition "fürchten, sich retten vor"@de ;
+  pwglex:germanEquivalent "fürchten, sich retten vor"@de ;
+  pwglex:senseNumber "2" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Classical" ;
+  pwglex:diasystem "Epic / early-Classical" ;
+  pwglex:diasystem "Medieval" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Classical" ;
+  pwglex:renouStratum "Epic / early-Classical" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_10_x2c_6_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_5_x2c_17_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_13_x2c_2_x2c_41_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_8_x2c_8_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_5_x2c_9_x2c_14_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_9072_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_20_x2c_87_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_45_x2c_50_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_9_x2c_80_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/K_xc4__x80_M_x2e__x2d_N_xc4__xaa_TIS_x2e__x2d_11_x2c_53_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/K_xc4__x80_M_x2e__x2d_N_xc4__xaa_TIS_x2e__x2d_64_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_12_x2c_426_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_13_x2c_3080_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c_230_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c_4410_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c__x2d_6059_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c__x2d_7329_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_7_x2c_135_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_7_x2c_136_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_xe1__xb9__x9a_CCH_x2e__x2d_105_x2c_13_x2e__x2d_110_x2c_15_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/RAGH_x2e__x2d_13_x2c_65_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/RAGH_x2e__x2d_4_x2c_35_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_3_x2c_10_x2c_25_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_5_x2c_19_x2c_33_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_7_x2c_108_x2c_27_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_GORR_x2e__x2d_1_x2c_33_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_GORR_x2e__x2d_5_x2c_63_x2c_27_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_3_x2c_39_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_5_x2c_218_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_1828_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_3163_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_5030_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_530_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VS_x2e__x2d_8_x2c_24_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Verz_x2e__x2d_d_x2e__x2d_Oxf_x2e__x2d_H_x2e__x2d_257_x2c_a_x2c__x2d_N_x2e__x2d_3_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/ed_x2e__x2d_Bomb_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/2> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/3/1> a ontolex:LexicalSense ;
+  skos:definition "bewachend, hütend u. s. w"@de ;
+  pwglex:germanEquivalent "bewachend, hütend u. s. w"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:grammar "adj." ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VOP_x2e__x2d_3_x2c_136_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz/de/4/1> a ontolex:LexicalSense ;
+  skos:definition "beschädigen, verletzen"@de ;
+  pwglex:germanEquivalent "beschädigen, verletzen"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  pwglex:diasystem "Vedic" ;
+  pwglex:renouStratum "Vedic" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_5_x2c_7_x2c_1_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/ed_x2e__x2d_Bomb_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "ed. Bomb." ;
+  pwglex:sourceSigla "ed. Bomb." ;
+  pwglex:lsRaw "ed. Bomb." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_12_x2c_3596_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 12,3596." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "12,3596." ;
+  pwglex:lsRaw "MBH. 12,3596." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_10_x2c_8_x2c_36_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 10,8,36." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "10,8,36." ;
+  pwglex:lsRaw "AV. 10,8,36." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_8_x2c_3542_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 8,3542." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "8,3542." ;
+  pwglex:lsRaw "MBH. 8,3542." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VS_x2e__x2d_8_x2c_24_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VS. 8,24." ;
+  pwglex:sourceSigla "VS." ;
+  pwglex:locus "8,24." ;
+  pwglex:lsRaw "VS. 8,24." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_10_x2c_6_x2c_18_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 10,6,18." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "10,6,18." ;
+  pwglex:lsRaw "AV. 10,6,18." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_13_x2c_2_x2c_41_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 13,2,41." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "13,2,41." ;
+  pwglex:lsRaw "AV. 13,2,41." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_11_x2c_5_x2c_17_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 11,5,17." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "11,5,17." ;
+  pwglex:lsRaw "AV. 11,5,17." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c_4410_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 7,4410." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "7,4410." ;
+  pwglex:lsRaw "MBH. 7,4410." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c__x2d_7329_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 7, 7329." ;
+  pwglex:sourceSigla "MBH. 7," ;
+  pwglex:locus "7329." ;
+  pwglex:lsRaw "MBH. 7, 7329." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_3_x2c_10_x2c_25_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 3,10,25." ;
+  pwglex:sourceSigla "R." ;
+  pwglex:locus "3,10,25." ;
+  pwglex:lsRaw "R. 3,10,25." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_7_x2c_108_x2c_27_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 7,108,27." ;
+  pwglex:sourceSigla "R." ;
+  pwglex:locus "7,108,27." ;
+  pwglex:lsRaw "R. 7,108,27." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_1828_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. 1828." ;
+  pwglex:sourceSigla "Spr. 1828." ;
+  pwglex:lsRaw "Spr. 1828." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Verz_x2e__x2d_d_x2e__x2d_Oxf_x2e__x2d_H_x2e__x2d_257_x2c_a_x2c__x2d_N_x2e__x2d_3_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Verz. d. Oxf. H. 257,a, N. 3." ;
+  pwglex:sourceSigla "Verz. d. Oxf. H. 257,a, N. 3." ;
+  pwglex:lsRaw "Verz. d. Oxf. H. 257,a, N. 3." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_7_x2c_136_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 7,136." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "7,136." ;
+  pwglex:lsRaw "M. 7,136." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c_230_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 7,230." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "7,230." ;
+  pwglex:lsRaw "MBH. 7,230." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_7_x2c__x2d_6059_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 7, 6059." ;
+  pwglex:sourceSigla "MBH. 7," ;
+  pwglex:locus "6059." ;
+  pwglex:lsRaw "MBH. 7, 6059." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_5_x2c_19_x2c_33_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. 5,19,33." ;
+  pwglex:sourceSigla "R." ;
+  pwglex:locus "5,19,33." ;
+  pwglex:lsRaw "R. 5,19,33." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_20_x2c_87_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "KATHĀS. 20,87." ;
+  pwglex:sourceSigla "KATHĀS." ;
+  pwglex:locus "20,87." ;
+  pwglex:lsRaw "KATHĀS. 20,87." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_3_x2c_39_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "RĀJA-TAR. 3,39." ;
+  pwglex:sourceSigla "RĀJA-TAR." ;
+  pwglex:locus "3,39." ;
+  pwglex:lsRaw "RĀJA-TAR. 3,39." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/HARIV_x2e__x2d_9072_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "HARIV. 9072." ;
+  pwglex:sourceSigla "HARIV." ;
+  pwglex:locus "9072." ;
+  pwglex:lsRaw "HARIV. 9072." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_xe1__xb9__x9a_CCH_x2e__x2d_105_x2c_13_x2e__x2d_110_x2c_15_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MṚCCH. 105,13. 110,15." ;
+  pwglex:sourceSigla "MṚCCH." ;
+  pwglex:locus "105,13. 110,15." ;
+  pwglex:lsRaw "MṚCCH. 105,13. 110,15." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/RAGH_x2e__x2d_4_x2c_35_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "RAGH. 4,35." ;
+  pwglex:sourceSigla "RAGH." ;
+  pwglex:locus "4,35." ;
+  pwglex:lsRaw "RAGH. 4,35." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/RAGH_x2e__x2d_13_x2c_65_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "RAGH. 13,65." ;
+  pwglex:sourceSigla "RAGH." ;
+  pwglex:locus "13,65." ;
+  pwglex:lsRaw "RAGH. 13,65." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_9_x2c_80_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "KATHĀS. 9,80." ;
+  pwglex:sourceSigla "KATHĀS." ;
+  pwglex:locus "9,80." ;
+  pwglex:lsRaw "KATHĀS. 9,80." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/M_x2e__x2d_7_x2c_135_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "M. 7,135." ;
+  pwglex:sourceSigla "M." ;
+  pwglex:locus "7,135." ;
+  pwglex:lsRaw "M. 7,135." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_8_x2c_8_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "BHAṬṬ. 8,8." ;
+  pwglex:sourceSigla "BHAṬṬ." ;
+  pwglex:locus "8,8." ;
+  pwglex:lsRaw "BHAṬṬ. 8,8." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_5_x2c_9_x2c_14_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "BHĀG. P. 5,9,14." ;
+  pwglex:sourceSigla "BHĀG. P." ;
+  pwglex:locus "5,9,14." ;
+  pwglex:lsRaw "BHĀG. P. 5,9,14." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_3163_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. 3163." ;
+  pwglex:sourceSigla "Spr. 3163." ;
+  pwglex:lsRaw "Spr. 3163." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_5_x2c_218_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "RĀJA-TAR. 5,218." ;
+  pwglex:sourceSigla "RĀJA-TAR." ;
+  pwglex:locus "5,218." ;
+  pwglex:lsRaw "RĀJA-TAR. 5,218." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_GORR_x2e__x2d_1_x2c_33_x2c_6_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. GORR. 1,33,6." ;
+  pwglex:sourceSigla "R. GORR." ;
+  pwglex:locus "1,33,6." ;
+  pwglex:lsRaw "R. GORR. 1,33,6." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_GORR_x2e__x2d_5_x2c_63_x2c_27_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. GORR. 5,63,27." ;
+  pwglex:sourceSigla "R. GORR." ;
+  pwglex:locus "5,63,27." ;
+  pwglex:lsRaw "R. GORR. 5,63,27." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_12_x2c_426_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 12,426." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "12,426." ;
+  pwglex:lsRaw "MBH. 12,426." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_5030_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. 5030." ;
+  pwglex:sourceSigla "Spr. 5030." ;
+  pwglex:lsRaw "Spr. 5030." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/K_xc4__x80_M_x2e__x2d_N_xc4__xaa_TIS_x2e__x2d_11_x2c_53_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "KĀM. NĪTIS. 11,53." ;
+  pwglex:sourceSigla "KĀM. NĪTIS." ;
+  pwglex:locus "11,53." ;
+  pwglex:lsRaw "KĀM. NĪTIS. 11,53." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/K_xc4__x80_M_x2e__x2d_N_xc4__xaa_TIS_x2e__x2d_64_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "KĀM. NĪTIS. 64." ;
+  pwglex:sourceSigla "KĀM. NĪTIS." ;
+  pwglex:locus "64." ;
+  pwglex:lsRaw "KĀM. NĪTIS. 64." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_530_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. 530." ;
+  pwglex:sourceSigla "Spr. 530." ;
+  pwglex:lsRaw "Spr. 530." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MBH_x2e__x2d_13_x2c_3080_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MBH. 13,3080." ;
+  pwglex:sourceSigla "MBH." ;
+  pwglex:locus "13,3080." ;
+  pwglex:lsRaw "MBH. 13,3080." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/KATH_xc4__x80_S_x2e__x2d_45_x2c_50_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "KATHĀS. 45,50." ;
+  pwglex:sourceSigla "KATHĀS." ;
+  pwglex:locus "45,50." ;
+  pwglex:lsRaw "KATHĀS. 45,50." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/VOP_x2e__x2d_3_x2c_136_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "VOP. 3,136." ;
+  pwglex:sourceSigla "VOP." ;
+  pwglex:locus "3,136." ;
+  pwglex:lsRaw "VOP. 3,136." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/AV_x2e__x2d_5_x2c_7_x2c_1_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "AV. 5,7,1." ;
+  pwglex:sourceSigla "AV." ;
+  pwglex:locus "5,7,1." ;
+  pwglex:lsRaw "AV. 5,7,1." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–эпический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "III" ;
+  pwglex:dateMin "-940"^^xsd:integer ;
+  pwglex:dateMax "80"^^xsd:integer ;
+  pwglex:datedCitations "3"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/2> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-940"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "30"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/a-3/de> a ontolex:LexicalEntry ;
+  rdfs:label "a"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-3/de/1/6>, <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-3/de/2/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-3/de/1/6> a ontolex:LexicalSense ;
+  skos:definition "BHĀG. P. 3,25,37"@de ;
+  pwglex:senseNumber "6" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_3_x2c_25_x2c_37_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/6> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/a-3/de/2/1> a ontolex:LexicalSense ;
+  skos:definition "6. ¦ (angeblich von 1. ) m. N. pr. eines Mannes PAT. in MAHĀBH. lith. Ausg. 1,172,b. — Vgl. 5. weiter unten"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:grammar "m." ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MAH_xc4__x80_BH_x2e__x2d_lith_x2e__x2d_Ausg_x2e__x2d_1_x2c_172_x2c_b_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PAT_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_3_x2c_25_x2c_37_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "BHĀG. P. 3,25,37." ;
+  pwglex:sourceSigla "BHĀG. P." ;
+  pwglex:locus "3,25,37." ;
+  pwglex:lsRaw "BHĀG. P. 3,25,37." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/PAT_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "PAT." ;
+  pwglex:sourceSigla "PAT." ;
+  pwglex:lsRaw "PAT." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/MAH_xc4__x80_BH_x2e__x2d_lith_x2e__x2d_Ausg_x2e__x2d_1_x2c_172_x2c_b_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "MAHĀBH. lith. Ausg. 1,172,b." ;
+  pwglex:sourceSigla "MAHĀBH. lith. Ausg. 1,172,b." ;
+  pwglex:lsRaw "MAHĀBH. lith. Ausg. 1,172,b." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/6> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "паниниевский"@ru ;
+  pwglex:renouOldest "II" ;
+  pwglex:renouYoungest "II" ;
+  pwglex:dateMin "-400"^^xsd:integer ;
+  pwglex:dateMax "1250"^^xsd:integer ;
+  pwglex:datedCitations "4"^^xsd:integer .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/a/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-900"^^xsd:integer ;
+  pwglex:dateMax "1830"^^xsd:integer ;
+  pwglex:datedCitations "27"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSa-4/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśa"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-4/de/1/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSa-4/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "Theil"@de ;
+  pwglex:germanEquivalent "Theil"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_1_x2c_68_x2e__x2d_2_x2c_34_x2e__x2d_39_x2e__x2d_49_x2e__x2d_53_x2e__x2d_fgg_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_1_x2c_6_x2e__x2d_7_x2e__x2d_12_x2c_1_x2e__x2d_57_x2e__x2d_14_x2c_24_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_1_x2c_6_x2e__x2d_7_x2e__x2d_12_x2c_1_x2e__x2d_57_x2e__x2d_14_x2c_24_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "SŪRYAS. 1,6. 7. 12,1. 57. 14,24." ;
+  pwglex:sourceSigla "SŪRYAS." ;
+  pwglex:locus "1,6. 7. 12,1. 57. 14,24." ;
+  pwglex:lsRaw "SŪRYAS. 1,6. 7. 12,1. 57. 14,24." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_1_x2c_68_x2e__x2d_2_x2c_34_x2e__x2d_39_x2e__x2d_49_x2e__x2d_53_x2e__x2d_fgg_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "SŪRYAS. 1,68. 2,34. 39. 49. 53. fgg." ;
+  pwglex:sourceSigla "SŪRYAS." ;
+  pwglex:locus "1,68. 2,34. 39. 49. 53. fgg." ;
+  pwglex:lsRaw "SŪRYAS. 1,68. 2,34. 39. 49. 53. fgg." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSa/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–классический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "-1125"^^xsd:integer ;
+  pwglex:dateMax "1150"^^xsd:integer ;
+  pwglex:datedCitations "18"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/aMSaka-3/de> a ontolex:LexicalEntry ;
+  rdfs:label "aṃśaka"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka-3/de/1/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/aMSaka-3/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "Grad"@de ;
+  pwglex:germanEquivalent "Grad"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "equivalent" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_8_x2c_13_x2e__x2d_20_x2e__x2d_9_x2c_8_x2e__x2d_12_x2e__x2d_fg_x2e__x2d_12_x2c_44_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/S_xc5__xaa_RYAS_x2e__x2d_8_x2c_13_x2e__x2d_20_x2e__x2d_9_x2c_8_x2e__x2d_12_x2e__x2d_fg_x2e__x2d_12_x2c_44_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "SŪRYAS. 8,13. 20. 9,8. 12. fg. 12,44." ;
+  pwglex:sourceSigla "SŪRYAS." ;
+  pwglex:locus "8,13. 20. 9,8. 12. fg. 12,44." ;
+  pwglex:lsRaw "SŪRYAS. 8,13. 20. 9,8. 12. fg. 12,44." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/aMSaka/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "классический"@ru ;
+  pwglex:renouOldest "IV" ;
+  pwglex:renouYoungest "IV" ;
+  pwglex:dateMin "450"^^xsd:integer ;
+  pwglex:dateMax "450"^^xsd:integer ;
+  pwglex:datedCitations "1"^^xsd:integer .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/rakz-2/de> a ontolex:LexicalEntry ;
+  rdfs:label "rakṣ"@sa-Latn ;
+  dct:language "de" ;
+  dct:isPartOf <https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-de> ;
+  ontolex:canonicalForm <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz> ;
+  ontolex:sense <https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz-2/de/1/1> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/sense/rakz-2/de/1/1> a ontolex:LexicalSense ;
+  skos:definition "1. ¦ Sp. 215, Z. 2 v. u. lies Spr. 208 ( 567 der 2ten Aufl. ) st. 208. — caus. schützen vor ( abl. ) Spr. (II) 5221. — Jmd bewahren, behüten, beschützen R. ed. Bomb. 2,12,19. — , Spr. (II) 6634"@de ;
+  pwglex:senseNumber "1" ;
+  pwglex:equivalenceType "explanatory" ;
+  pwglex:diasystem "Classical" ;
+  dct:references <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_ed_x2e__x2d_Bomb_x2e__x2d_2_x2c_12_x2c_19_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Sp_x2e__x2d_215_x2c__x2d_Z_x2e__x2d_2>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_208>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_5221_x2e_>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_567>, <https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_6634_x2e_> ;
+  pwglex:attestation <https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> ;
+  pwglex:evidenceGrade gr:pwg-source .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Sp_x2e__x2d_215_x2c__x2d_Z_x2e__x2d_2> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Sp. 215, Z. 2" ;
+  pwglex:sourceSigla "Sp. 215, Z. 2" ;
+  pwglex:lsRaw "Sp. 215, Z. 2" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d_208> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. 208" ;
+  pwglex:sourceSigla "Spr. 208" ;
+  pwglex:lsRaw "Spr. 208" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_567> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. (II) 567" ;
+  pwglex:sourceSigla "Spr. (II)" ;
+  pwglex:locus "567" ;
+  pwglex:lsRaw "Spr. (II) 567" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_5221_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. (II) 5221." ;
+  pwglex:sourceSigla "Spr. (II) 5221." ;
+  pwglex:lsRaw "Spr. (II) 5221." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/R_x2e__x2d_ed_x2e__x2d_Bomb_x2e__x2d_2_x2c_12_x2c_19_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "R. ed. Bomb. 2,12,19." ;
+  pwglex:sourceSigla "R. ed. Bomb. 2,12,19." ;
+  pwglex:lsRaw "R. ed. Bomb. 2,12,19." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/citation/Spr_x2e__x2d__x28_II_x29__x2d_6634_x2e_> a pwglex:Citation, prov:Entity ;
+  rdfs:label "Spr. (II) 6634." ;
+  pwglex:sourceSigla "Spr. (II) 6634." ;
+  pwglex:lsRaw "Spr. (II) 6634." .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/attestation/rakz/1> a pwglex:StratumAttestation, prov:Entity ;
+  skos:prefLabel "ведийский–эпический"@ru ;
+  pwglex:renouOldest "I" ;
+  pwglex:renouYoungest "III" ;
+  pwglex:dateMin "-940"^^xsd:integer ;
+  pwglex:dateMax "80"^^xsd:integer ;
+  pwglex:datedCitations "3"^^xsd:integer .
+

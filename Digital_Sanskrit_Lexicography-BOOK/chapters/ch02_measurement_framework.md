@@ -1,6 +1,6 @@
 # Chapter 2 — The Measurement Framework: Measuring the Dictionary Family
 
-_Created: 09-07-2026 · Last updated: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 12-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Measuring the
 > Dictionary Family: A Traceable Measurement Framework for Computational Lexicography*
@@ -235,6 +235,21 @@ anchors from the committed data, not the chapters' full results.
   [`data/lexico/h4_semantic_field_review_packet.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/h4_semantic_field_review_packet.json).
 - **Limits.** Headword coverage is not sense, corpus, or citation coverage; rows need
   source review before topical claims.
+
+A comparative aside on the scaffold itself. Using the varga taxonomy as a measurement
+frame is not an antiquarian convenience: the first crosswalk of SIL's 1,792
+field-lexicography semantic domains to the Amarakośa
+([SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md);
+paper A58) finds the two organizations agreeing on 67% of synset placements at the
+section level — and, more telling for method, both taxonomies bolt a formal annex onto
+their semantic scheme for the words meaning cannot organize. The Amarakośa's kāṇḍa 3
+holds 46.4% of its synsets, but 35.7 points of that is nānārtha, a polysemy register
+SIL absorbs structurally by listing a word under several domains; the form-class
+residue proper is 10.7% against semdom's 9.4%
+([FINDINGS §77](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
+A sixth-century verse thesaurus and a twentieth-century elicitation taxonomy converge
+on both the semantic partition and the size of its formal remainder — which is
+precisely the property a cross-epoch measurement scaffold needs.
 
 The point of stating these together is that they are **independent estimators of
 relatedness and structure**, not facets of one similarity score. §6 shows why that
