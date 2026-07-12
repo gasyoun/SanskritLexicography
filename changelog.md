@@ -12,6 +12,25 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
+## [1.9.0] - 2026-07-12
+
+### Added — Duden-style entry-anatomy specimen pages for PWG, MW and the CDSL record (H780)
+- New [`EntryAnatomy/`](https://github.com/gasyoun/SanskritLexicography/tree/master/EntryAnatomy):
+  three annotated "how to read an entry" pages after the Duden
+  *Universalwörterbuch* specimen-spread model
+  ([`papers/duden_deutsches_universalworterbuch-page.pdf`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/duden_deutsches_universalworterbuch-page.pdf)) —
+  [`pwg-entry-anatomy.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/pwg-entry-anatomy.html)
+  (24 callouts, *heman* homograph cluster + √*cumb*),
+  [`mw-entry-anatomy.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/mw-entry-anatomy.html)
+  (21 callouts, same lemma family for cross-tradition comparison), and
+  [`cdsl-record-anatomy.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/cdsl-record-anatomy.html)
+  (the digital record layer: key1/key2, SLP1 accents, `<e>` levels, `<info>`).
+  Each self-contained (facsimile insets from the Cologne scan server embedded)
+  with a single-sheet print PDF; generator
+  [`EntryAnatomy/build_entry_anatomy.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/build_entry_anatomy.py)
+  re-typesets records straight from csl-orig v02. MW `<e>`-semantics finding
+  logged as FINDINGS §82. Fable 5 (`claude-fable-5`).
+
 ## [1.8.1] - 2026-07-12
 
 ### Added — A58 paper skeleton + grammatical-annex counted table (H767/H774)
