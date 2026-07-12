@@ -153,7 +153,18 @@ gitignored data files — this repo's worktrees do not carry them).
 
 The `@DECIDE` above is resolved: the 25‑06 canonical `{code}.renou.jsonl`
 regeneration is a **correction**. The old underscore chain over‑attested; the
-canonical files are the trustworthy artifact. Evidence, strongest first:
+canonical files are the trustworthy artifact.
+
+> **Authoritative verdict:** this question was adjudicated org‑wide by **H771**
+> (Opus 4.8, [SanskritLexicography PR #394](https://github.com/gasyoun/SanskritLexicography/pull/394))
+> in a dedicated companion doc,
+> [`RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md)
+> — CORRECTION for all 7 codes, **28,662/646,926 rows (4.4%)** divergent, every
+> one a pure removal of a low‑confidence DCS state (thin `n=1` tail or Epic/`III`
+> date‑fallback), **0 anomalies**; `renou_ls` **positionally byte‑identical**
+> across all codes. Read that doc first — it is the primary record; the section
+> below is an independent corroboration of the DCS axis from the audit doc where
+> the `@DECIDE` was posed. Evidence, strongest first:
 
 1. **DCS axis — proved exactly against the still‑present lossless index.**
    `renou.py` documents `DCS_MIN_SUPPORT = 2`: a register/state is kept only if
@@ -172,19 +183,13 @@ canonical files are the trustworthy artifact. Evidence, strongest first:
    re‑run at `--dcs-min-support 1` reproduces the old behaviour from the same
    index.
 
-2. **`<ls>` axis (the larger ~22.8% `mw` divergence) — explained by the
-   build timeline.** The old underscore chain was built **23–24 June**; the
-   canonical dot‑files **25 June ~14:10**. The `<ls>` citation route landed
-   *between* the two builds — [`af07695e`](https://github.com/gasyoun/SanskritLexicography/commit/af07695e)
-   `<ls> citation route (Phase 2)` at 25‑06 13:49 and
-   [`9d841b08`](https://github.com/gasyoun/SanskritLexicography/commit/9d841b08)
-   `épig detector + inline‑dict register route (Phase 3)` at 25‑06 14:19,
-   alongside [`d35f911c`](https://github.com/gasyoun/SanskritLexicography/commit/d35f911c)
-   `register audit (Phase 5)` (25‑06 13:59). So the old chain used **pre‑Phase‑2/3**
-   `<ls>` logic; the canonical was rebuilt **after** those precision fixes. This
-   is strong mechanistic + temporal evidence rather than a row‑exact
-   reconstruction (the old chain is deleted, so an exact replay is no longer
-   possible), but it points the same direction as the DCS axis.
+2. **`<ls>` axis — no real divergence (H771).** The audit's sampled ~22.8% `mw`
+   `renou_ls` figure was a **homonym‑misalignment artifact of `key1`‑keyed
+   sampling**, not a data change: H771's positional (row‑order) check found
+   `renou_ls` **byte‑identical** across all 7 codes. (My own earlier
+   build‑timeline hypothesis for this axis is therefore moot — there was nothing
+   to explain. The Phase 2/3 `<ls>`‑route commits refined the code but did not
+   change the emitted `renou_ls` values between the two builds.)
 
 3. **`renou_enriched` divergence is derivative** — it is the per‑row union across
    the corrected `renou_ls`/`renou_dcs` axes, so it necessarily moves whenever
@@ -200,10 +205,7 @@ canonical files are the trustworthy artifact. Evidence, strongest first:
 (the H4 citation‑bias, H6 Zipf, register portrait/audit work). (b) The old
 underscore chain's deletion (H771, ~362 MB) was **safe** — it held pre‑audit,
 over‑attested data reproducible from the lossless index at `min_support=1`.
-(c) One honest residual: the DCS axis is proved exactly; the `<ls>` axis is
-"correction by strong inference." If a future session wants axis‑exact `<ls>`
-certainty it can rebuild an old‑logic snapshot from the pre‑Phase‑2 commit and
-diff — but nothing downstream is blocked on that.
+(c) No fix or regeneration follow‑up is owed — there is no regression anywhere.
 
 Reproduce claim 1 (aggregates only, no data rows) from `RussianTranslation/src/`:
 
