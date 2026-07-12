@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H809 — PWG→RU scale-readiness census (12-07-2026): NOT ready for nonstop; blocker is infra
+- [`SCALE_READINESS_CENSUS_2026-07-12.md`](SCALE_READINESS_CENSUS_2026-07-12.md) — a
+  read-only 8-agent workflow (Opus 4.8 `claude-opus-4-8`, ~1.0 M tokens) verified the
+  three lanes against live state. Verdict: the *code* no longer "falls as before"
+  (H189/H220/H304 fixes hold, re-verified), but the **generation-API host is degraded**
+  (11-07 schema-carrying probe 682,753 ms → gate NO-GO), so every lane times out. Verb
+  drain cannot run at scale (**687 of 701 remaining roots lack rootmaps**, only 14
+  runnable); no-PWG lane ~27% drained; medium50 still blocked (split-pool #311
+  unvalidated under load). Audits are essentially finished (only H178 Part B open). Fixes
+  handed to Opus in
+  [H809](https://github.com/gasyoun/Uprava/blob/main/handoffs/H809-Opus_RussianTranslation_pwg-ru-scale-unblock-fixes_12.07.26.md).
+
 ### H771 — RENOU `renou_dcs`/`renou_ls` divergence adjudicated: CORRECTION (old chain safe to delete)
 - [`RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md`](RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md)
   settles the H692 `@DECIDE`: the 25‑06 canonical `{code}.renou.jsonl`
