@@ -3713,6 +3713,44 @@ def test_write_reports_emits_defect_fsha_file():
         fail('defect fsha file content mismatch: %r' % got)
 
 
+def test_ledger_stamps_gen_model():
+    """H390 Phase 1: the window ledger row carries `gen_model`, read from the run's
+    own workflow_meta (gen_opt_harness2 stamps meta.gen_model). Without this the
+    Fable-vs-Sonnet A/B question is uncomputable — the model that generated a window
+    is invisible to every per-window rate. Also pins that a run with no workflow_meta
+    degrades to gen_model=None rather than raising."""
+    from window_reports import write_reports
+    base = {'null_cards': [], 'requeue': [], 'crashed': [], 'gates': {},
+            'glue': None, 'collect': {}, 'requeue_transient': [], 'requeue_defect': [],
+            'judge_sample': {'keys': [], 'sample_count': 0, 'seed': None,
+                             'clean_key_count': 0}}
+
+    def ledger_row_for(report):
+        tmp = tempfile.mkdtemp()
+        write_reports(report, True, out_dir=tmp)
+        ledger = os.path.join(tmp, 'window_ledger.jsonl')
+        if not os.path.exists(ledger):
+            fail('window_ledger.jsonl not written by write_reports')
+        rows = [json.loads(ln) for ln in open(ledger, encoding='utf-8') if ln.strip()]
+        if len(rows) != 1:
+            fail('expected exactly one ledger row, got %d' % len(rows))
+        return rows[0]
+
+    stamped = dict(base, workflow='wf.json', root='h390stamped', keys=['k1'],
+                   workflow_meta={'gen_model': 'claude-fable-5'})
+    row = ledger_row_for(stamped)
+    if 'gen_model' not in row:
+        fail('ledger row missing gen_model key entirely')
+    if row['gen_model'] != 'claude-fable-5':
+        fail('ledger gen_model mismatch: %r' % row.get('gen_model'))
+
+    # No workflow_meta at all -> None, never a KeyError.
+    bare = dict(base, workflow='wf.json', root='h390bare', keys=['k1'])
+    row = ledger_row_for(bare)
+    if row.get('gen_model') is not None:
+        fail('bare-run ledger gen_model should be None, got %r' % row.get('gen_model'))
+
+
 def test_save_merge_better_attempt_wins():
     """H304: 'latest requeue wins' is WRONG — a requeue can regress a card (gam h0_63_sam_0
     went 2->3->7 missing fragments). --merge must keep the better prior attempt: complete
@@ -4214,6 +4252,7 @@ def main():
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
         test_write_reports_emits_defect_fsha_file,
+        test_ledger_stamps_gen_model,
         test_save_merge_better_attempt_wins,
         test_defer_monster_ledger_dedupes,
         test_coordinator_cost_gate_enforced,
