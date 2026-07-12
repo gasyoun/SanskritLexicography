@@ -3189,6 +3189,57 @@ def test_split_agent_pools_all_heal_runtime():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_lowwide_staggered_dispatch():
+    """H255/H811: --max-wide=N routes the top-level dispatch through boundedParallel (<=N units
+    in flight, first N starts staggered by --stagger-ms) so a degraded generation API isn't hit
+    ~10-wide; the default (0) falls back to the runtime parallel() with no regression. The
+    behavioral half runs the REAL emitted boundedParallel (see boundedparallel_test.js)."""
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    saved_wide, saved_stag = gh.MAX_WIDE, gh.STAGGER_MS
+    d = tempfile.mkdtemp()
+    try:
+        keys = ['kk1~~h0_zz_pw', 'kk2~~h0_zz_pw']
+        paths = {}
+        for k in keys:
+            rp = os.path.join(d, k + '.raw.txt')
+            pp = os.path.join(d, k + '.portrait.json')
+            with open(rp, 'w', encoding='utf-8') as f:
+                f.write('=== LAYER: PW ===\n\n{#kk#} <lex>Adj.</lex> {%probe gloss%} <ls>Ref. 1,1</ls>.')
+            with open(pp, 'w', encoding='utf-8') as f:
+                f.write('[]')
+            paths[k] = (rp, pp)
+        gh.input_paths = lambda k, input_dir=None: paths[k]
+        gh.KILL = False
+        gh.MAX_WIDE, gh.STAGGER_MS = 3, 1500
+        js, _ = gh.build('zz_lowwide', keys, None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        if 'const MAX_WIDE = 3' not in js or 'const STAGGER_MS = 1500' not in js:
+            fail('--max-wide/--stagger-ms did not emit the MAX_WIDE/STAGGER_MS constants')
+        if 'async function boundedParallel' not in js:
+            fail('boundedParallel helper not emitted')
+        if 'boundedParallel(UNITS.map(u => u.run), MAX_WIDE, STAGGER_MS)' not in js:
+            fail('top-level dispatch is not routed through boundedParallel')
+        gh.MAX_WIDE, gh.STAGGER_MS = 0, 0
+        js0, _ = gh.build('zz_default', keys, None, 12000,
+                          nominal=True, grammar_on=False, tm_path=None)
+        if 'const MAX_WIDE = 0' not in js0:
+            fail('default harness must emit MAX_WIDE=0 (unbounded, no regression)')
+        harness = os.path.join(d, 'lowwide_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'boundedparallel_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('boundedParallel behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+        gh.MAX_WIDE, gh.STAGGER_MS = saved_wide, saved_stag
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_budget_kill_switch_wired():
     """The generated Workflow must enforce independent translate/heal call ceilings."""
     import re as _re
@@ -4165,6 +4216,7 @@ def main():
         test_kill_gate_recalibrated_envelope,
         test_agent_budget_plan_separates_translate_and_heal_pools,
         test_split_agent_pools_all_heal_runtime,
+        test_lowwide_staggered_dispatch,
         test_budget_kill_switch_wired,
         test_harness_size_guard,
         test_perf_preflight_cost_gate,
