@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H834 — nominal key-echo tolerance also accepts the SLP1 headword + `~~<layer>` suffix
+- [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py): the H220 nominal re-key tolerance now
+  recovers a card when the model echoes the clean SLP1 headword **with the sub-card suffix kept**
+  (`avyAhata~~h0_zz_pw` for the stem `avy_ahata~~h0_zz_pw`), not only the bare SLP1 — still gated on
+  `META.nominal` + a single unambiguous rival (PWG-root strict matching untouched). Fixes the
+  `missing-or-mismatched-key` failure on the H255 `avy_ahata` content-hard card. Extended
+  `window_selftest.test_nominal_key_echo_tolerance_scoped`; suite + `lang_parity_check.py` green.
+- **Finding:** verify (`no_pwg_contentfix`) confirmed the key fix (avy_ahata now gets past the key)
+  and revealed that **both** H255 "content-hard" cards (`avy_ahata`, `avyagra`) share ONE remaining
+  root cause — the model drops **short embedded derived-form `{#…#}` spans** (`˚tva`, `˚m`,
+  single-letter forms). That placeholder-fidelity/omission issue needs a separate fix (deterministic
+  german-field anchoring or a prompt change), tracked as the precise residual.
+
 ### H833 / E2 (H350 backlog #3) — sense-genre vs DCS attestation: thesis NOT supported
 - New research analysis [`research/analyze_sense_genre_attestation.py`](research/analyze_sense_genre_attestation.py)
   tests memo §E2: does per-sense citation-genre predict DCS corpus attestation
