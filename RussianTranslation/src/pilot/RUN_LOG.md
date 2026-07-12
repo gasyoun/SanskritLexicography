@@ -614,3 +614,15 @@ A session opened to run the `--start-index 7` window instead found + fixed a **d
 **Probe (12-07, Sonnet 5, 6.5 KB load-representative):** 0 conn-errors, clean full-length RU output, 48.5 K tok — a recovering regime vs the 285–683 s degraded readings of 10–11 Jul, **but 31.6 s total trips the 30 s ceiling → recorded NO-GO** in [`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md). Wait for a clean sub-30 s reading before the next window.
 
 **Next:** resume the drain with `no_pwg_scale_plan.py --start-index 7` on a clean probe — its first window now correctly re-covers w06 (healing the loss) before advancing; the store is persistent from here.
+
+---
+
+## 2026-07-12 — no-PWG lane window `no_pwg_w07` (H255 scale drain, `--start-index 7`, post-H805) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+**Resume + infra state.** First live drain window since the H805 store-persistence fix, so promotions now persist to the canonical main-checkout store instead of a discarded worktree copy. Two **plain-text** warm-up probes fired this session, **both NO-GO**: 31.6 s (13:45 UTC) then **35.7 s (15:07 UTC)**, each with **0 conn-errors + clean full-length RU output**. This is an *elevated* regime, not the catastrophic one — but a **genuine ~50 % slowdown** vs the **21 s** GO readings the same ~6.5 KB load-representative probe gave on 11-07 (so NOT a ceiling-calibration artifact; the same payload passed at 21 s yesterday). Still nowhere near the 285–683 s hangs of 10–11 Jul. Both readings recorded in [`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md).
+
+**Refinement (MG):** a plain-text translation probe under-tests the real path — production generation forces a **StructuredOutput / schema** call, which is where the kill-timeout latency actually lives (single-fragment cards have no self-heal lane, so a slow StructuredOutput = a permanent null). So the legitimate way to clear (or confirm) the gate is a **schema-carrying warm-up** through the real harness path, then re-check the gate — not a blind override of a plain-probe NO-GO. Machinery already exists (harness + reachable `CARDS_SCHEMA`); this is a launch decision.
+
+**Window = w06 recovery + advance.** Because w06's 29 promotions were lost pre-H805, `--start-index 7` re-offers exactly w06's 20 headwords (the planner dedups against the store; `--start-index` only names the window, it never selects headwords). With the H805 fix, these promotions now land in the persistent store — healing the w06 loss. Cost gate: 36 sub-cards / 30 batches, `--output-budget=1`, **$16.86 est (verdict ok)**.
+
+**Schema-carrying warm-up + generation (`no_pwg_w07`, 36 cards / 30 batches, `--output-budget=1`):** _<results appended after the run>_
