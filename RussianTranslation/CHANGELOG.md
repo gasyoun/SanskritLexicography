@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H692 — assembled_cards/renou stage-redundancy: verify + deletion PROPOSAL (no deletion)
+- [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
+  verifies the two progressive-enrichment series the census flagged as
+  possibly dead (~1.4 GB, all gitignored/local-only/single-copy under
+  `src/`). **Series A** (`assembled_cards.jsonl` → `.renou` → `.renou.bhs` →
+  `.renou.bhs.wl`): every row verified clean — earlier stages are fully
+  content-contained in the final stage (only the monotonically-additive
+  `renou_provenance`/`renou_enriched` tracking fields change value) →
+  **PROPOSE DELETE** the first 3 stages (~607 MB). **Series B** (per-dict
+  `{code}_renou*` old chain vs canonical `{code}.renou.jsonl`, `.`-vs-`_`
+  naming drift across ap/ap90/ben/bhs/mw/pw/sch): NOT redundant — the
+  canonical dot-files, regenerated ~a day later against a refreshed DCS
+  index, diverge from the old chain by 3–23% of rows (field-dependent:
+  `renou_ls`/`renou_dcs`/`renou_enriched`) → **DO NOT DELETE**, `@DECIDE`
+  raised on whether that regeneration was a correction or a regression.
+  Zero data files touched this session — proposal only, per
+  [H692](https://github.com/gasyoun/Uprava/blob/main/handoffs/H692-Fable_RussianTranslation_assembled-cards-dedup-verify_11.07.26.md)'s
+  stop condition. Verification script:
+  [`src/renou_stage_redundancy_check.py`](src/renou_stage_redundancy_check.py).
+
 ### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
 - New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
   volume-column marker on every entry header in
