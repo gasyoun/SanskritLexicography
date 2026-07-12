@@ -12,8 +12,8 @@ Status board over the 30 additive research layers in [`RESEARCH_CAPABILITY_ROADM
 
 | Status | Cards |
 |---|---:|
-| 🟡 prototype | 4 |
-| ⚪ not-started | 26 |
+| 🟡 prototype | 6 |
+| ⚪ not-started | 24 |
 | **Total** | **30** |
 
 **Cheap-derivable (local, deterministic, no gold/external/GPU as the primary gate): 14 of 30 cards.**
@@ -32,17 +32,17 @@ Deterministic, local-only-buildable layers — no external text, no rights clear
 
 | Card | Layer | Status | Deps | Why cheap |
 |---:|---|---|---|---|
+| 5 | Most-frequent-sense baseline per lemma | 🟡 prototype | `local-only` | BUILT (H775): src/mfs_baseline.py groups the store by key1 and emits a deterministic first-listed-sense MFS candidate per lemma (WordNet first-sense heuristic; DCS freq is per-lemma so cannot rank senses), with explicit 'unknown' when the lemma is absent from DCS. |
 | 10 | Per-sense diachronic first/last attestation band | 🟡 prototype | `local-only` | sense_stratum.py + pwg_sense_stratum.jsonl (~23,461 senses) already give a Renou-state proxy per sense. |
 | 15 | Segment-level provenance for every TMX row | 🟡 prototype | `local-only`, `rights-gated` | build_tmx.py + tm_grade.py already emit source/method/grade fields; the deterministic gap is a validated provenance schema with 100% coverage and rights-gated exclusion. |
+| 23 | Morphosyntactic compatibility check (case-government) | 🟡 prototype | `local-only`, `cross-repo` | BUILT (H775): src/government_sidecar.py applies government_census.extract_government to every row's German 'de' and emits a collision-free per-subcard sidecar (not an in-place store rewrite, which would race the concurrent drain lanes). |
 | 29 | Capability observatory | 🟡 prototype | `local-only` | THIS ARTIFACT. |
 | 2 | Awesome-align/SimAlign agreement as a word-alignment confidence gate | ⚪ not-started | `local-only` | tm_align.py produces the DeepSeek alignment; no second independent aligner wired, no agreement-bucket precision computed. |
-| 5 | Most-frequent-sense baseline per lemma | ⚪ not-started | `local-only` | Deterministic: group store rows by key1, join DCS frequency, emit an MFS candidate + explicit 'unknown' when evidence absent. |
 | 6 | Multi-translator consensus score for grade-A TM candidates | ⚪ not-started | `local-only`, `rights-gated` | Multi-reference verse groups exist in corpus_lexicon; consensus rate vs adjudicated grade not computed. |
 | 12 | "Still alive" score for senses found in live/corpus usage | ⚪ not-started | `local-only`, `cross-repo` | DCS attestation + per-sense evidence give a computable score; 'unknown' must stay explicit for senses with no corpus route. |
 | 17 | Bad-reuse detector for stale/rejected fragment TM reuse | ⚪ not-started | `local-only` | Fragment TM sidecars, denylist, and window_selftest.py fixtures exist; the detector (catch seeded stale/rejected, zero FP on known-good) is not built. |
 | 20 | Rights-aware ingestion queue for candidate source texts | ⚪ not-started | `rights-gated` | Deterministic bookkeeping: every external-data capability must point to a queue item with a rights state. |
 | 21 | Parallel-passage finder by PWG lemma | ⚪ not-started | `local-only`, `cross-repo` | corpus_lexicon + SamudraManthanam corpus.db + PWG store give retrieval material; top-5 passages must be useful in >=80% of a reviewed sample. |
-| 23 | Morphosyntactic compatibility check (case-government) | ⚪ not-started | `local-only`, `cross-repo` | The sense schema already has a government field, but 0/11,261 rows populate it. |
 | 25 | Inter-annotator agreement dashboard for gold slices | ⚪ not-started | `local-only`, `needs gold sample` | /gold-adjudicate already sets up multi-annotator review; the dashboard (kappa/alpha + label distribution, blocks 'gold' status when agreement missing) is not built. |
 | 26 | Data Statement / Datasheet generator for releases | ⚪ not-started | `local-only`, `rights-gated` | DATASHEET.ru.md + release manifests + provenance fields exist; a generator covering knowable Bender/Friedman fields with explicit 'unknown' is not built. |
 | 30 | Research-paper matrix | ⚪ not-started | `local-only`, `cross-repo` | At least three coherent paper packages must emerge: one TM/QE paper, one sense/genre/WSD paper, one LOD/provenance data paper. |
@@ -84,14 +84,14 @@ Deterministic, local-only-buildable layers — no external text, no rights clear
 - **ACL anchor**: Glavas et al. 2019 (P19-1070)
 - **Related cards**: 2, 16
 
-#### ⚪ 5. Most-frequent-sense baseline per lemma
+#### 🟡 5. Most-frequent-sense baseline per lemma
 
-- **Status**: not-started (confidence: medium) · **cheap**
+- **Status**: prototype (confidence: high) · **cheap**
 - **Deps**: `local-only`
 - **Claim**: A simple MFS baseline is necessary to keep WSD and learner-ranking claims honest.
-- **State**: Deterministic: group store rows by key1, join DCS frequency, emit an MFS candidate + explicit 'unknown' when evidence absent. Highest downstream leverage (unblocks 4, 8, 11).
-- **Blocker**: None (local-only). First honesty floor.
-- **Owner**: RussianTranslation
+- **State**: BUILT (H775): src/mfs_baseline.py groups the store by key1 and emits a deterministic first-listed-sense MFS candidate per lemma (WordNet first-sense heuristic; DCS freq is per-lemma so cannot rank senses), with explicit 'unknown' when the lemma is absent from DCS. Live coverage over the 11,505-row store: 205 lemmas, 179 polysemous, 169 MFS candidates, 36 unknown (no DCS). Highest downstream leverage (unblocks 4, 8, 11). Reaches 'validated' once accuracy is measured against a frozen sense-labelled gold slice (does not exist yet).
+- **Blocker**: Baseline accuracy needs a frozen sense-labelled gold slice (GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md). The emitter + coverage are done and local-only.
+- **Owner**: RussianTranslation · code present: `src/mfs_baseline.py`
 - **ACL anchor**: MFS baseline convention (WSD lineage)
 - **Related cards**: 4, 8, 11, 12
 
@@ -171,14 +171,14 @@ Deterministic, local-only-buildable layers — no external text, no rights clear
 - **Owner**: RussianTranslation + VisualDCS
 - **Related cards**: 10, 4
 
-#### ⚪ 23. Morphosyntactic compatibility check (case-government)
+#### 🟡 23. Morphosyntactic compatibility check (case-government)
 
-- **Status**: not-started (confidence: medium) · **cheap**
+- **Status**: prototype (confidence: high) · **cheap**
 - **Deps**: `local-only`, `cross-repo`
 - **Claim**: Sanskrit case/government evidence can catch incompatible Russian renderings or missing government notes.
-- **State**: The sense schema already has a government field, but 0/11,261 rows populate it. The German marker is deterministic ((loc.), (loc. und gen.)) so a regex census + parser can backfill without an LLM. >=85% of high-severity mismatch flags must be real.
-- **Blocker**: None to build the census/backfill (local-only); mismatch-flag precision needs a review sample.
-- **Owner**: RussianTranslation
+- **State**: BUILT (H775): src/government_sidecar.py applies government_census.extract_government to every row's German 'de' and emits a collision-free per-subcard sidecar (not an in-place store rewrite, which would race the concurrent drain lanes). Live census over the 11,505-row store: 508 rows carry government, 614 markers, 48 distinct key1 (436 paren-single, 176 mit-phrase, 2 variation; top cases acc 340, loc 62, abl 58) — corroborates the H335 government_census 'store backfill surface ~510 rows'. The deterministic extraction is done; the RU-rendering MISMATCH detector + its >=85% precision are NOT built (need Russian morphology + a review sample).
+- **Blocker**: Deterministic government extraction shipped as a sidecar. Mismatch-flag precision (>=85% high-severity real) needs a human review sample (GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md). In-place store backfill via annotate_government.py deferred to a quiet drain window.
+- **Owner**: RussianTranslation · code present: `src/government_sidecar.py`, `src/government_census.py`
 - **Related cards**: 8, 28
 
 ### TM safety and release
