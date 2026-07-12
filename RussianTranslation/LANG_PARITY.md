@@ -572,10 +572,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated.",
+    "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated. Re-verified 12-07-2026 after H778 (#384) added a source_sha16-gated JSON sidecar freeze/cache layer (build_sidecar/write_sidecar/load_sidecar/census_or_load) plus a `freeze` CLI subcommand around the same run_census() function — still no --lang branch, verdict unchanged.",
     "tracking": "",
     "verified_sha256": {
-      "src/government_census.py": "501c21da829cf32555fa086274f5cd01578b7d8f88cd76f3402b5c16b124fd9b"
+      "src/government_census.py": "bf421d8fd743767c891ea1633f47e6526e88aef2c93d3a73437fc9ac749dafb1"
     }
   },
   {
