@@ -2,7 +2,7 @@
 
 _Created: 12-07-2026 · Last updated: 12-07-2026_
 
-**Handoff:** [H692](https://github.com/gasyoun/Uprava/blob/main/handoffs/H692-Fable_RussianTranslation_assembled-cards-dedup-verify_11.07.26.md).
+**Handoff:** [H692](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H692-Fable_RussianTranslation_assembled-cards-dedup-verify_11.07.26.md).
 **Model:** Sonnet 5 (`claude-sonnet-5`), continuing an in-flight Fable 5
 (`claude-fable-5`) session that had written but not yet run
 [`src/renou_stage_redundancy_check.py`](src/renou_stage_redundancy_check.py)
