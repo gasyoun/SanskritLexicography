@@ -49,6 +49,11 @@ if SRC not in sys.path:
 
 import corpus_gate as cg                                       # noqa: E402
 import dict_merge as dm                                        # noqa: E402
+from store_path import canonical_store                         # noqa: E402
+
+# One logical store shared across worktrees: the runnable/promoted counts must be read from the
+# SAME store a worktree drain promotes into (H255 w06 loss / H805).
+STORE = canonical_store(STORE)
 
 CASE = re.compile(r';; Case \d+: L=\d+, k1=(\S+), k2=\S+, code=\S+,')
 

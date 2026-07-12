@@ -34,6 +34,11 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 from safe_filename import decode_safe_name, safe_name  # noqa: E402
+from store_path import canonical_store  # noqa: E402
+
+# One logical store shared across worktrees: dedup must read the SAME store a worktree drain
+# promotes into, or the planner re-offers already-promoted headwords (H255 w06 loss / H805).
+STORE = canonical_store(STORE)
 
 
 def read_store_heads(path=STORE):

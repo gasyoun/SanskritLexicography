@@ -40,10 +40,14 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pipeline_version
 import dict_merge
 from promote_lock import PromoteClaim, ClaimBusy
+from store_path import canonical_store
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
-DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+# Resolve the PERSISTENT store, not this checkout's copy: a drain window run in an isolated
+# `git worktree` must promote into the MAIN checkout's store, or every promotion is discarded
+# with the worktree (the H255 w06 loss — 29 sub-cards gone). See store_path.canonical_store.
+DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 DEFAULT_GLOB = 'wf_output*.json'
 MODEL = 'sonnet'                                    # the harness pins model:'sonnet' (gen_opt_harness2)
 # Tier + VERSION must both be recorded (models change — a bare 'sonnet' is ambiguous later;
@@ -291,6 +295,13 @@ def main():
                     help='override the promotion claim staleness TTL (default: promote_lock.'
                          'DEFAULT_TTL_SECONDS = 30 min)')
     args = ap.parse_args()
+
+    # Provenance: make the resolved store path explicit — a worktree run promotes into the MAIN
+    # checkout's store (store_path.canonical_store), never a discarded worktree copy (H255 w06 / H805).
+    _local = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+    if os.path.normpath(args.store) != os.path.normpath(_local):
+        print("store: %s\n       (canonical/shared — not this checkout's %s)"
+              % (args.store, os.path.relpath(_local, ROOT)), file=sys.stderr)
 
     paths = sorted(glob.glob(os.path.join(ROOT, args.glob)))
     if not paths:
