@@ -334,6 +334,7 @@ def parse_args(argv):
     nominal, grammar_on = False, True
     keylist = None                     # ordered keys (nominal mode preserves order)
     out_path = None                    # --out=PATH overrides the default opt2.js (avoids the
+    manifest_path = None               # --manifest-out=PATH emits the canonical headless contract
     lang, mw_tm = 'ru', None           # --lang en + --mw-tm=PATH: PWG->English pilot (MG 2026-06-30)
     tm = '__auto__'                    # default auto: use translation_memory.<lang>.json if present;
                                        #  no sidecar = no-op with a loud summary. --no-tm disables.
@@ -350,6 +351,8 @@ def parse_args(argv):
             budget_explicit = True
         elif a.startswith('--out='):
             out_path = a.split('=', 1)[1]
+        elif a.startswith('--manifest-out='):
+            manifest_path = a.split('=', 1)[1]
         elif a.startswith('--lang='):
             lang = a.split('=', 1)[1].strip().lower()
         elif a.startswith('--mw-tm='):
@@ -445,7 +448,8 @@ def parse_args(argv):
         suggest_tm = os.path.join(os.path.dirname(INP), 'translation_memory.suggest.%s.jsonl' % lang)
     if suggest_profile not in ('semantic', 'german', 'sanskrit', 'balanced'):
         die('unknown --suggest-profile %r (semantic|german|sanskrit|balanced)' % suggest_profile)
-    return root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile
+    return (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,
+            out_path, manifest_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile)
 
 
 def extract_nws(tr):
@@ -863,7 +867,8 @@ def tm_senses_sane(senses, field):
 
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
           nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None,
-          tm_auto=False, suggest_tm_path=None, suggest_profile='semantic'):
+          tm_auto=False, suggest_tm_path=None, suggest_profile='semantic',
+          return_manifest=False):
     field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
     if lang == 'en':
@@ -1197,7 +1202,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # EN pins the exact version; RU keeps the historical 'sonnet' alias (see the
         # model-pin substitution below), so this records what was *requested*, which
         # is the honest thing to attribute.
-        'gen_model': ('claude-sonnet-5' if lang == 'en' else 'sonnet'),
+        'gen_model': 'claude-sonnet-5',
         'source_profile': source_profile,
         'source_profiles': source_profiles,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
@@ -1282,6 +1287,36 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
           % (meta['tm_cards'], len(meta['frag_tm_cards']),
              len(meta['degenerate_passthrough_keys']), meta['agent_expected_after_tm']))
+
+    execution_manifest = {
+        'schema': 'pwg.headless_execution_manifest.v1',
+        'meta': meta,
+        'field': field,
+        'model': 'claude-sonnet-5',
+        'prompt': {
+            'preamble': MASK_PREAMBLE.replace('`russian`', '`%s`' % field),
+            'grammar': single_grammar,
+            'grammars': grammars,
+            'translation': tr,
+            'nws_rule': nws_block,
+        },
+        'output_schema': batch_schema,
+        'batches': batches,
+        'inputs': runtime_inputs,
+        'placeholder_maps': runtime_phmaps,
+        'tm_resolved': tm_resolved,
+        'degenerate_resolved': degenerate_resolved,
+        'suggestions': runtime_suggest_tm,
+        'presplit_keys': presplit,
+        'budgets': {
+            'timeout_floor_ms': KILL_FLOOR_MS,
+            'timeout_ceil_ms': KILL_CEIL_MS,
+            'max_translate_agents': budget_plan.max_translate_agents,
+            'max_heal_agents': budget_plan.max_heal_agents,
+            'max_wide': MAX_WIDE,
+            'stagger_ms': STAGGER_MS,
+        },
+    }
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the
@@ -1913,7 +1948,7 @@ return { meta: META, summary, results: out }
         'name_prefix': 'pwgen' if lang == 'en' else 'pwgru',
         'tgt_lang': 'English' if lang == 'en' else 'Russian',
         'gen_label': 'Sonnet 5' if lang == 'en' else 'Sonnet',
-        'model': 'claude-sonnet-5' if lang == 'en' else 'sonnet',
+        'model': 'claude-sonnet-5',
         'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
@@ -1941,7 +1976,7 @@ return { meta: META, summary, results: out }
     for bad in ['readFileSync', 'fileURLToPath', 'import.meta']:
         if bad in js:
             die('residual node-ism: %s' % bad)
-    return js, batches
+    return (js, batches, execution_manifest) if return_manifest else (js, batches)
 
 
 def _even_chunks(seq, n):
@@ -2010,7 +2045,9 @@ def main():
                 lang = a.split('=', 1)[1].strip().lower()
         dump_schema(lang)
         return
-    root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on, out_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile = parse_args(sys.argv[1:])
+    (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,
+     out_path, manifest_path, lang, mw_tm, tm, tm_auto, suggest_tm,
+     suggest_profile) = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -2020,12 +2057,23 @@ def main():
         rootmap, keys = selected_keys(root, keyfilter)
         if keylist:
             keys = [k for k in keylist if k in set(keys)]
-    js, batches = build(root, keys, rootmap, budget, lean, nws_gate, nominal, grammar_on, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile)
+    js, batches, manifest = build(root, keys, rootmap, budget, lean, nws_gate,
+                                  nominal, grammar_on, lang, mw_tm, tm, tm_auto,
+                                  suggest_tm, suggest_profile, return_manifest=True)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
     # raw \r control chars, so a CRLF harness cannot be launched on Windows.
     with open(out, 'w', encoding='utf-8', newline='\n') as f:
         f.write(js)
+    if manifest_path:
+        manifest_out = os.path.abspath(manifest_path)
+        os.makedirs(os.path.dirname(manifest_out), exist_ok=True)
+        tmp = manifest_out + '.tmp'
+        with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=1)
+            f.write('\n')
+        os.replace(tmp, manifest_out)
+        print('wrote', manifest_out, '| execution manifest', manifest['schema'])
     mode = ('NOMINAL%s' % ('' if grammar_on else '/no-grammar')) if nominal else (
         'LEAN(rejected)' if lean else 'NWS-GATE' if nws_gate else 'full')
     print('wrote', out, len(js), 'bytes |', len(keys), 'cards in', len(batches), 'batches',

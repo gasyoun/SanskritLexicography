@@ -1,0 +1,11 @@
+[Unit]
+Description=Run PWG RU four-account dispatcher every 15 seconds
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=15
+AccuracySec=1
+Unit=pwg-ru-max-orchestrator.service
+
+[Install]
+WantedBy=timers.target

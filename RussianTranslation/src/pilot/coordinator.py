@@ -456,8 +456,9 @@ def prepare(args):
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
+            manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                     root, '--out=%s' % harness])
+                     root, '--out=%s' % harness, '--manifest-out=%s' % manifest])
         elif lease['kind'] == 'nominal':
             keys = lease.get('details', {}).get('run_keys') or lease.get('details', {}).get('keys') or []
             if not keys:
@@ -472,16 +473,19 @@ def prepare(args):
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
+            manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
                      root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
-                     '--out=%s' % harness])
+                     '--out=%s' % harness, '--manifest-out=%s' % manifest])
         else:
             raise SystemExit('prepare is only for verb/nominal translation leases')
         lease['state'] = 'prepared'
         lease['harness'] = harness
+        lease['execution_manifest'] = manifest
         lease['preflight_path'] = preflight_path
         save_state(state)
-        registry_event(lease, 'prepared', {'harness': harness, 'preflight': preflight_path})
+        registry_event(lease, 'prepared', {'harness': harness, 'manifest': manifest,
+                                           'preflight': preflight_path})
     print('harness: %s' % harness)
 
 
