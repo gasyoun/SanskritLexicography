@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H823 — presplit cite-trigger floor + single-card CEIL kill budget (no-PWG lane fix)
+- [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py): the CITATION presplit trigger now fires
+  only when `(1+<ls>) > max(OUTPUT_BUDGET, PRESPLIT_SOLO_CITE_FLOOR=40)` (new
+  `--presplit-solo-cite-floor=N`). Fixes a misfire under `--output-budget=1` (the no-PWG
+  single-card lane): there the batch budget is 1, so ANY citation-bearing card "exceeded" it and
+  was force-routed to the fragment heal lane, where its byte-scaled kill budgets (~60 s) died on a
+  slow host (the H255 presplit-cohort `selfheal-nothing-resolved` loss). Tiny cards translate whole
+  fine (`sam` is fine at 34 `<ls>`); only genuine 150-`<ls>` fail-solo giants presplit now. For
+  `OUTPUT_BUDGET ≥ 40` (default 90) it's a no-op.
+- `killBudgetForCur` now gives **ANY single-card batch** the CEIL kill budget (180 s), not just
+  no-fallback singles — a lone card has no batch-mates to starve and the heal lane is no better
+  budgeted on a slow host (clean H220 generalization).
+- Unit-tested (`window_selftest.test_presplit_cite_floor_and_single_ceil`); full suite +
+  `lang_parity_check.py` green (new `presplit_cite_floor_h823` SHARED entry). **Live verify
+  (`no_pwg_presplitfix`, 6 cards) recovered 0/6:** fix verified applied (presplit_keys emptied,
+  kills moved 60 s→180 s CEIL) but the cohort didn't recover on the *further-degraded* host today
+  (4 exceed even 180 s; 2 are genuine content-fidelity failures, tracked separately). Correct-by-
+  design; lands the cohort once the host returns to ~54 s.
+
 ### H818 — four-account Max headless orchestration
 - add a canonical generation manifest, `claude -p --json-schema` worker, coordinator-imported SQLite scheduler for four isolated Max profiles, immutable attempt logs/hashes, rate-limit parking, crash recovery, systemd deployment, and an audit/runbook. Live proof remains gated on four owner-authenticated foreign-host profiles.
 
