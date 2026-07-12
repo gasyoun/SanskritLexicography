@@ -115,7 +115,15 @@ jobs:
             RussianTranslation/src/release_readiness.py \
             RussianTranslation/src/preflight_remaining_gates.py \
             RussianTranslation/src/export_lod.py \
-            RussianTranslation/src/lod_acceptance.py
+            RussianTranslation/src/lod_acceptance.py \
+            RussianTranslation/src/mfs_baseline.py \
+            RussianTranslation/src/government_sidecar.py
+      - name: Validate research-layer sidecars (capability cards 5, 23)
+        working-directory: RussianTranslation
+        run: |
+          python src/mfs_baseline.py --selftest
+          python src/government_sidecar.py --selftest
+          python research/build_observatory.py --check
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
