@@ -35,6 +35,7 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-12T15:28:48Z | warmup | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | SCHEMA-CARRYING probe (real StructuredOutput CARDS_SCHEMA path on a live small w07 sub-card, anirvacanIya) — valid RU card in 53.9s, 0 conn-err. HEALTHY for a card call: baseline ~55-105s fixed StructuredOutput latency, kill ceiling 180s (H220). GO overrides the 30s plain-probe ceiling, which does NOT apply to schema/StructuredOutput calls. The plain probes (31.6/35.7s) over-stated degradation; the real generation path is fine. |
 | 2026-07-12T15:42:11Z | launch | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | w07 launch after the schema-carrying GO; isolated 1-wide probe was 54s but the ~10-wide window degraded |
 | 2026-07-12T16:34:14Z | warmup | GO | 26.0s | 0 | 6491B | h709-reprobe | H709 | H709 SERVER_OUTAGES re-probe: load-representative warm-up (6491B masked band-4 skeleton). GO by mechanical gate but latency ~26s vs 3.3s healthy baseline = marginal/degraded-recovering; expensive medium50 launch deliberately NOT fired (H709 cheapest-task-only rule + medium50 paused on code side). |
+| 2026-07-12T17:31:06Z | launch | GO | 0.0s | 0 | — | no_pwg_w07_rq1 | H255 | H811 --max-wide=3 --stagger-ms=2000 requeue of w07's 31 nulls (low-width validation); no pre-launch probe — the point was to test <=3-wide on a still-degraded API |
 
 ## Measured launch outcomes
 
@@ -43,5 +44,6 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-10T07:44:19Z | h317_w1b | 0/12 | 58 | 1.80M | 7 | 2 | yes |
 | 2026-07-11T12:37:49Z | no_pwg_w03 | 11/27 | 27 | 1.25M | 14 | 0 | no |
 | 2026-07-12T15:42:11Z | no_pwg_w07 | 5/36 | 38 | 0.53M | 32 | 0 | no |
+| 2026-07-12T17:31:06Z | no_pwg_w07_rq1 | 17/31 | 34 | 1.89M | 15 | 0 | no |
 
 _Dr. Mārcis Gasūns_

@@ -636,3 +636,22 @@ A session opened to run the `--start-index 7` window instead found + fixed a **d
 **Promoted the 5 non-null sub-cards** (12 sense rows across **anaDyAya + anupapatti** — 2 of w06's lost headwords, now permanently recovered). Store `src/pwg_ru_translated.jsonl` (canonical main): **11,505 → 11,517 rows**. **H805 fix validated end-to-end:** the promote ran *from the worktree* but wrote to the MAIN checkout's store — pre-fix these rows would have vanished. TM rebuild deferred (regenerable; `translation_memory.py` is another script still needing `canonical_store()` wiring — added to the H805 follow-up).
 
 **Next:** the lane is **infra-blocked at scale until a low-width requeue mode lands** — the generation API is ~1.5–2× degraded under concurrency today. Either implement the ≤3-wide staggered requeue, or wait for the API to recover (a plain warm-up back at ~21 s) before the next full window. w06's remaining ~17 headwords + w07's 31 nulls stay in the queue (planner re-offers them; store now persistent).
+
+---
+
+## 2026-07-12 — no-PWG lane `no_pwg_w07_rq1` (H255 drain — `--max-wide=3` requeue of w07's 31 nulls, low-width validation) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+**H811 low-width staggered dispatch VALIDATED in production.** Re-ran w07's exact 31 null keys through the new `--max-wide=3 --stagger-ms=2000` requeue mode ([`gen_opt_harness2` `boundedParallel`, PR #401](https://github.com/gasyoun/SanskritLexicography/pull/401)). Same cards, same degraded-API day, **only the concurrency width changed**:
+
+| run | width | yield | kill-timeouts | tokens | wall |
+|---|---|---|---|---|---|
+| `no_pwg_w07` | ~10-wide (runtime cap) | **5/36 (14 %)** | 32 | 533 K | 4.2 min |
+| `no_pwg_w07_rq1` | **≤3-wide, staggered 2 s** | **17/31 (55 %)** | 15 | 1.89 M | 23 min |
+
+At ≤3-wide the cards actually RAN (**29 agents completed vs w07's 8**; 1.89 M tokens vs 533 K — they *generated* instead of being killed fast) and the yield ~**quadrupled** (14 %→55 %) with kill-timeouts roughly halved, 0 conn-errors. This confirms the w07 root cause was **concurrency contention**, not per-card budget or content — dropping the fan-out from ~10 to ≤3 gave each tiny card back its isolated ~54 s latency.
+
+**Promoted 17 non-null sub-cards** (24 sense rows across 12 headwords: anirvacanIya/aparAjitA/aprApta/apratizeDa/arhaka/asADya/asteya/asvatantra/ativizA/avaSya/avidita/cAturjAta). Store `src/pwg_ru_translated.jsonl` (canonical main): **11,517 → 11,541 rows** (H805-persistent). TM rebuild deferred (regenerable).
+
+**Documented residual (14 null, not requeued again — the H442 requeue-once rule):** the **6 presplit-cohort** cards (`avy_ahata`/`avyagra`/`b_ahlika`/`apr_apta`/`as_a_dya`/`asa_mskfta`~~pw — `selfheal-nothing-resolved`, STRUCTURAL, need a harness fix not a retry) + **8 non-presplit** that still kill-timed-out even at ≤3-wide (residual API degradation: `arvant`/`anupapatti`~~pw, `ativizA`~~pw, `avaSya`~~pw+sch, `avidita`~~pw+pwkvn, `brAhmaRI`~~pw). A further ≤2-wide pass, an API recovery, or the presplit harness fix is the next lever.
+
+**Net H255 progress:** w07's 36 headwords-worth → **22 promoted (5 from w07 + 17 from rq1)**, 14 documented residual. `probe_log` outcome recorded for `wf_7e016611-b78`. **The `--max-wide` requeue mode is now the proven recovery path for a concurrency-degraded window.**
