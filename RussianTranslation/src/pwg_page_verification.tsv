@@ -1,0 +1,71 @@
+volume	derived_page	left_pc	left_hw_slp1	left_hw_iast	left_hw_deva	right_pc	right_hw_slp1	right_hw_iast	right_hw_deva	scan_leaf	cols_on_leaf	offset	paired_ok
+1	1	1-0001	a	a	अ	1-0002	(continuation / no new entry)						
+1	62	1-0123	adarSa	adarśa	अदर्श	1-0124	adas	adas	अदस्				
+1	123	1-0245	antarAMsa	antarāṃsa	अन्तरांस	1-0246	antarAyaRa	antarāyaṇa	अन्तरायण				
+1	185	1-0369	amantu	amantu	अमन्तु	1-0370	amaracandra	amaracandra	अमरचन्द्र				
+1	247	1-0493	avasAyin	avasāyin	अवसायिन्	1-0494	avasTa	avastha	अवस्थ				
+1	309	1-0617	Atapavarzya	ātapavarṣya	आतपवर्ष्य	1-0618	AtiTya	ātithya	आतिथ्य				
+1	375	1-0749	AhiMsi	āhiṃsi	आहिंसि	1-0750	AhutIvfD	āhutīvṛdh	आहुतीवृध्				
+1	451	1-0901	utpAtaka	utpātaka	उत्पातक	1-0902	utpizwa	utpiṣṭa	उत्पिष्ट				
+1	511	1-1021	UruBinna	ūrubhinna	ऊरुभिन्न	1-1022	Urjay	ūrjay	ऊर्जय्				
+1	574	1-1147	aMSa	aṃśa	अंश	1-1148	(continuation / no new entry)						
+2	1	2-0001	ka	ka	क	2-0002	(continuation / no new entry)						
+2	67	2-0133	kardama	kardama	कर्दम	2-0134	karparIka	karparīka	कर्परीक				
+2	128	2-0255	kAlaniryAsa	kālaniryāsa	कालनिर्यास	2-0256	kAlapeSI	kālapeśī	कालपेशी				
+2	183	2-0365	kuSacIra	kuśacīra	कुशचीर	2-0366	(continuation / no new entry)						
+2	239	2-0477	kranda	kranda	क्रन्द	2-0478	(continuation / no new entry)						
+2	300	2-0599	Kanana	khanana	खनन	2-0600	KaBrAnti	khabhrānti	खभ्रान्ति				
+2	368	2-0735	gAnDAraka	gāndhāraka	गान्धारक	2-0736	gAMmanya	gāṃmanya	गांमन्य				
+2	430	2-0859	grAmabAlajana	grāmabālajana	ग्रामबालजन	2-0860	grAmIRa	grāmīṇa	ग्रामीण				
+2	493	2-0985	cANgerI	cāṅgerī	चाङ्गेरी	2-0986	cARakyamUlaka	cāṇakyamūlaka	चाणक्यमूलक				
+2	552	2-1103	uttarIya	uttarīya	उत्तरीय	2-1104	(continuation / no new entry)						
+3	1	3-0001	ja	ja	ज	3-0002	jaMs	jaṃs	जंस्				
+3	55	3-0109	jImUta	jīmūta	जीमूत	3-0110	jIraka	jīraka	जीरक				
+3	112	3-0223	(continuation / no new entry)			3-0224	tanuka	tanuka	तनुक				
+3	169	3-0337	tilaka	tilaka	तिलक	3-0338	tilakaka	tilakaka	तिलकक				
+3	220	3-0439	triBajIvA	tribhajīvā	त्रिभजीवा	3-0440	trimantu	trimantu	त्रिमन्तु				
+3	273	3-0545	dalakomala	dalakomala	दलकोमल	3-0546	dalAQya	dalāḍhya	दलाढ्य				
+3	334	3-0667	dunduBika	dundubhika	दुन्दुभिक	3-0668	dura	dura	दुर				
+3	387	3-0773	dEvaka	daivaka	दैवक	3-0774	dEvatapati	daivatapati	दैवतपति				
+3	442	3-0883	(continuation / no new entry)			3-0884	Darmaka	dharmaka	धर्मक				
+3	508	3-1015	truw	truṭ	त्रुट्	3-1016	(continuation / no new entry)						
+4	1	4-0001	na	na	न	4-0002	(continuation / no new entry)						
+4	69	4-0137	nigadita	nigadita	निगदित	4-0138	nigalana	nigalana	निगलन				
+4	133	4-0265	nihnuti	nihnuti	निह्नुति	4-0266	(continuation / no new entry)						
+4	208	4-0415	pattraka	pattraka	पत्त्रक	4-0416	pattrapuzpaka	pattrapuṣpaka	पत्त्रपुष्पक				
+4	283	4-0565	paruzAkzara	paruṣākṣara	परुषाक्षर	4-0566	pare	pare	परे				
+4	349	4-0697	pASaka	pāśaka	पाशक	4-0698	pASI	pāśī	पाशी				
+4	415	4-0829	pUjaka	pūjaka	पूजक	4-0830	pUjanIya	pūjanīya	पूजनीय				
+4	479	4-0957	pratinava	pratinava	प्रतिनव	4-0958	pratinisarga	pratinisarga	प्रतिनिसर्ग				
+4	543	4-1085	praSaMsin	praśaṃsin	प्रशंसिन्	4-1086	praSasta	praśasta	प्रशस्त				
+4	610	4-1219	pad	pad	पद्	4-1220	(continuation / no new entry)						
+5	1	5-0001	ba	ba	ब	5-0002	baqapilA	baḍapilā	बडपिला				
+5	98	5-0195	Badraka	bhadraka	भद्रक	5-0196	BadrakarRikA	bhadrakarṇikā	भद्रकर्णिका				
+5	204	5-0407	BrAj	bhrāj	भ्राज्	5-0408	BrAjizRu	bhrājiṣṇu	भ्राजिष्णु				
+5	304	5-0607	masUraka	masūraka	मसूरक	5-0608	mastakajvara	mastakajvara	मस्तकज्वर				
+5	394	5-0787	miSralawakana	miśralaṭakana	मिश्रलटकन	5-0788	miz	miṣ	मिष्				
+5	489	5-0977	aDvanya	adhvanya	अध्वन्य	5-0978	anaNgapura	anaṅgapura	अनङ्गपुर				
+5	577	5-1153	uktapratyukta	uktapratyukta	उक्तप्रत्युक्त	5-1154	ugra	ugra	उग्र				
+5	664	5-1327	kesaramAlA	kesaramālā	केसरमाला	5-1328	kEvartIya	kaivartīya	कैवर्तीय				
+5	752	5-1503	durvaca	durvaca	दुर्वच	5-1504	duSCinna	duśchinna	दुश्छिन्न				
+5	839	5-1677	mokzay	mokṣay	मोक्षय्	5-1678	mOrva	maurva	मौर्व				
+6	1	6-0001	ya	ya	य	6-0002	(continuation / no new entry)						
+6	96	6-0191	yogAYjana	yogāñjana	योगाञ्जन	6-0192	yoginIjAlaSambara	yoginījālaśambara	योगिनीजालशम्बर				
+6	176	6-0351	rAvaRa	rāvaṇa	रावण	6-0352	rASaBa	rāśabha	राशभ				
+6	263	6-0525	lAkuca	lākuca	लाकुच	6-0526	lAG	lāgh	लाघ्				
+6	345	6-0689	vappawadevI	vappaṭadevī	वप्पटदेवी	6-0690	vama	vama	वम				
+6	452	6-0903	vAwIdIrGa	vāṭīdīrgha	वाटीदीर्घ	6-0904	vARa	vāṇa	वाण				
+6	527	6-1053	vidagDa	vidagdha	विदग्ध	6-1054	vidadaSva	vidadaśva	विददश्व				
+6	606	6-1211	viSArAdeman	viśārādeman	विशारादेमन्	6-1212	viSAlagrAma	viśālagrāma	विशालग्राम				
+6	678	6-1355	vetasa	vetasa	वेतस	6-1356	vetAlajananI	vetālajananī	वेतालजननी				
+6	756	6-1511	yaTAtaTam	yathātatham	यथातथम्	6-1512	(continuation / no new entry)						
+7	1	7-0001	Sa	śa	श	7-0002	(continuation / no new entry)						
+7	96	7-0191	Siras	śiras	शिरस्	7-0192	Sirasa	śirasa	शिरस				
+7	199	7-0397	Srotas	śrotas	श्रोतस्	7-0398	Srotravant	śrotravant	श्रोत्रवन्त्				
+7	296	7-0591	satsaNga	satsaṅga	सत्सङ्ग	7-0592	(continuation / no new entry)						
+7	402	7-0803	sarja	sarja	सर्ज	7-0804	sarjaniryAsaka	sarjaniryāsaka	सर्जनिर्यासक				
+7	499	7-0997	sidDikara	siddhikara	सिद्धिकर	7-0998	sidDiBUmi	siddhibhūmi	सिद्धिभूमि				
+7	593	7-1185	setuka	setuka	सेतुक	7-1186	setubanDana	setubandhana	सेतुबन्धन				
+7	704	7-1407	(continuation / no new entry)			7-1408	srukka	srukka	स्रुक्क				
+7	818	7-1635	(continuation / no new entry)			7-1636	hu	hu	हु				
+7	911	7-1821	sOna	sauna	सौन	7-1822	sPowaka	sphoṭaka	स्फोटक				
