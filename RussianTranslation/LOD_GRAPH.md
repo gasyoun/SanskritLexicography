@@ -1,6 +1,13 @@
 # PWG→RU LOD graph — OntoLex-Lemon + vartrans + PROV-O + LiLa lemma bank (E7 / H350)
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 12-07-2026 (H772)_
+
+> **Companion — the German side (PWG++, H772).** The same lemma-bank spine now
+> also carries a first-class **German** `ontolex:LexicalEntry` sibling per lemma,
+> so the derivable layers enrich the German original, not only the Russian. It is
+> emitted by `export_lod.py de-lexicon` into a separate `pwg_de_lexicon.ttl` that
+> joins on the shared `lemma/<key1>` node — see
+> [`PWG_PLUS_GERMAN_ENRICHMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md).
 
 The build record for backlog item **#1 / hypothesis E7** of the
 [epistemic-reach memo](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EPISTEMIC_REACH_MEMO.md):
