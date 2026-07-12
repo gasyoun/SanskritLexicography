@@ -12,7 +12,7 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
-## [1.9.1] - 2026-07-12
+## [1.9.2] - 2026-07-12
 
 ### Added — Kochergina okas/okya/guda/sphic attestation-verify review sheet (H779)
 - New [`RussianTranslation/review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html):
