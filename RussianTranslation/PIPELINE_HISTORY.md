@@ -22,6 +22,12 @@ translation is claimed: scale remains gated on four owner-authenticated
 foreign-host profiles, a one-card RU `no_pwg` canary, and the four-wide proof. See
 [`PIPELINE_AUDIT_2026-07_H818.md`](PIPELINE_AUDIT_2026-07_H818.md).
 
+Follow-up Windows readiness closes the presplit limitation: the headless worker
+now mirrors Workflow retry/split/heal/stitch guards, and the `no_pwg` planner
+prepares coordinator manifests directly. A real 100-headword dry-run measured
+120 subcards / 117 projected calls / 0 H823-corrected presplits across five
+windows. Live GO remains gated on one owner-authenticated Max profile.
+
 ## The shape of the problem
 
 Translate all of PWG (Böhtlingk-Roth, the "Petersburg Dictionary") from its

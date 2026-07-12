@@ -29,6 +29,7 @@ DASHBOARD_SCHEMA = 'pwg.sla_coordinator.dashboard.v1'
 REGISTRY_SCHEMA = 'pwg.sla_coordinator.artifact.v1'
 DAILY_SCHEMA = 'pwg.sla_coordinator.daily.v1'
 TRANSLATION_LIMIT = 3
+PREPARATION_LIMIT = 100
 LEASE_TTL_SECONDS = 6 * 60 * 60
 LOCK_TTL_SECONDS = 10 * 60
 
@@ -137,6 +138,7 @@ def default_state():
         'created_at': utc_now(),
         'updated_at': utc_now(),
         'translation_limit': TRANSLATION_LIMIT,
+        'preparation_limit': PREPARATION_LIMIT,
         'leases': [],
         'cap': {'weekly_cap_fired': False, 'weekly_cap_cumulative_tokens': None},
     }
@@ -153,6 +155,7 @@ def load_state():
     state.setdefault('schema', STATE_SCHEMA)
     state.setdefault('leases', [])
     state.setdefault('translation_limit', TRANSLATION_LIMIT)
+    state.setdefault('preparation_limit', PREPARATION_LIMIT)
     state.setdefault('cap', {})
     return state
 
@@ -356,8 +359,8 @@ def claim(args):
     p = ensure_dirs()
     with DirLock(p['lock']):
         state = load_state()
-        if translation_lease({'kind': args.kind}) and len(active_translation_leases(state)) >= state.get('translation_limit', TRANSLATION_LIMIT):
-            raise SystemExit('translation lease cap reached (%d)' % state.get('translation_limit', TRANSLATION_LIMIT))
+        if translation_lease({'kind': args.kind}) and len(active_translation_leases(state)) >= state.get('preparation_limit', PREPARATION_LIMIT):
+            raise SystemExit('translation preparation cap reached (%d)' % state.get('preparation_limit', PREPARATION_LIMIT))
         if args.kind == 'verb':
             candidates, worklist = verb_candidates(state)
             if not candidates:
@@ -406,6 +409,36 @@ def claim(args):
         save_state(state)
         registry_event(lease, 'claimed', details)
     print(json.dumps(lease, ensure_ascii=False, indent=1))
+
+
+def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_path,
+                            artifact_path=None, owner='no_pwg_scale_plan'):
+    """Register an already-generated deterministic nominal window without consuming a runtime slot."""
+    with DirLock(paths()['lock']):
+        state = load_state()
+        if any(lease.get('id') == lease_id for lease in state.get('leases', [])):
+            raise SystemExit('lease already exists: %s' % lease_id)
+        active = active_targets(state)
+        target = 'nominal:%s' % keys[0]
+        if target in active:
+            raise SystemExit('lease target already active: %s' % target)
+        run_keys = [safe_name(k) for k in keys]
+        lease = {
+            'id': lease_id, 'lane': lane, 'kind': 'nominal', 'owner': owner,
+            'target': target, 'state': 'prepared', 'claimed_at': utc_now(),
+            'prepared_at': utc_now(), 'artifact_dir': artifact_path or os.path.dirname(manifest),
+            'details': {'keys': keys, 'run_keys': run_keys,
+                        'keymap': dict(zip(run_keys, keys))},
+            'harness': os.path.abspath(harness),
+            'execution_manifest': os.path.abspath(manifest),
+            'preflight_path': os.path.abspath(preflight_path),
+        }
+        state['leases'].append(lease)
+        save_state(state)
+        registry_event(lease, 'prepared', {'harness': lease['harness'],
+                                           'manifest': lease['execution_manifest'],
+                                           'preflight': lease['preflight_path']})
+    return lease
 
 
 def enforce_cost_gate(preflight_path, target, allow_over_cost=False):
@@ -504,6 +537,17 @@ def normalize_workflow_result(src_path, dst_path):
     return result
 
 
+def clean_result_payload(result, rejected):
+    rejected = set(rejected or [])
+    rows = [row for row in (result.get('results') or [])
+            if row.get('card') and row.get('key') not in rejected]
+    payload = dict(result)
+    payload['results'] = rows
+    payload['summary'] = dict(result.get('summary') or {}, cards=len(rows), ok=len(rows),
+                              null=0, null_keys=[], failures={})
+    return payload
+
+
 def cost_from_transcript(path):
     if not path:
         return None
@@ -536,14 +580,29 @@ def record_output(args):
         status_path = os.path.join(adir, 'window_status.json')
         report_path = os.path.join(adir, 'audit_window.report.json')
         status = json.load(open(status_path, encoding='utf-8')) if os.path.exists(status_path) else {}
+        report = json.load(open(report_path, encoding='utf-8')) if os.path.exists(report_path) else {}
         state_name = status.get('state') or ('blocked' if audit.returncode not in (0, 1) else 'unknown')
+        rejected = set(report.get('requeue') or status.get('requeue_keys') or [])
+        clean_payload = clean_result_payload(result, rejected)
+        clean_rows = clean_payload['results']
+        clean_output = None
+        if clean_rows:
+            clean_output = os.path.join(adir, 'wf_output.clean.%s.json' % lease['id'])
+            with open(clean_output + '.tmp', 'w', encoding='utf-8') as f:
+                json.dump(clean_payload, f, ensure_ascii=False)
+            os.replace(clean_output + '.tmp', clean_output)
+        lease['audit_state'] = state_name
         if state_name == 'clean':
             lease['state'] = 'ready'
+        elif clean_rows:
+            lease['state'] = 'ready_partial'
         elif state_name in ('needs_requeue', 'transient_only'):
             lease['state'] = state_name
         else:
             lease['state'] = state_name
         lease['wf_output'] = wf
+        lease['clean_output'] = clean_output
+        lease['clean_count'] = len(clean_rows)
         lease['audit_report'] = report_path
         lease['status_path'] = status_path
         lease['recorded_at'] = utc_now()
@@ -600,19 +659,21 @@ def promote_ready(args):
         with DirLock(paths()['lock']):
             state = load_state()
             ready = [lease for lease in state.get('leases', [])
-                     if lease.get('state') == 'ready' and lease.get('wf_output')]
+                     if lease.get('state') in ('ready', 'ready_partial')
+                     and (lease.get('clean_output') or lease.get('wf_output'))]
             if not ready:
                 raise SystemExit('no ready leases to promote')
         for lease in ready:
-            rel_glob = os.path.relpath(
-                os.path.join(lease['artifact_dir'], 'wf_output*.json'), REPO)
+            source = lease.get('clean_output') or lease['wf_output']
+            rel_glob = os.path.relpath(source, REPO)
             run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
                      '--merge', '--glob', rel_glob,
                      '--gen-model-version', args.gen_model_version])
             with DirLock(paths()['lock']):
                 state = load_state()
                 fresh = lease_by_id(state, lease['id'])
-                fresh['state'] = 'promoted'
+                fresh['state'] = ('promoted_partial' if fresh.get('audit_state') != 'clean'
+                                  else 'promoted')
                 fresh['promoted_at'] = utc_now()
                 fresh['model_version'] = args.gen_model_version
                 save_state(state)

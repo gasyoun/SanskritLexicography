@@ -345,6 +345,120 @@ def cmd_status(args):
     db.close()
 
 
+def live_probe(config_dir, claude='claude', payload_bytes=6491):
+    env = os.environ.copy()
+    env['CLAUDE_CONFIG_DIR'] = config_dir
+    prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
+              ('x' * payload_bytes))
+    started = time.monotonic()
+    proc = subprocess.run(
+        [claude, '-p', '--output-format', 'json', '--json-schema',
+         '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
+         '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+        input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+    latency_ms = int((time.monotonic() - started) * 1000)
+    if proc.returncode:
+        raise SystemExit('load-representative profile probe failed: %s' %
+                         (((proc.stderr or '') + '\n' + (proc.stdout or ''))[-1000:]))
+    return latency_ms
+
+
+def cmd_staged_run(args):
+    plan = json.load(open(args.plan, encoding='utf-8'))
+    plan_lease_ids = [window['root'] for window in plan.get('windows', [])
+                      if window.get('headless')]
+    if args.lease_id and set(args.lease_id) != set(plan_lease_ids):
+        raise SystemExit('--lease-id set does not match the staged plan')
+    lease_ids = args.lease_id or plan_lease_ids
+    expected_windows = len(plan_lease_ids)
+    expected_headwords = int(plan.get('selected_headwords') or 0)
+    if not expected_windows or not expected_headwords:
+        raise SystemExit('staged plan has no prepared headless windows')
+    db = connect(args.db)
+    accounts = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
+    db.close()
+    if len(accounts) != 1:
+        raise SystemExit('Windows staged-run requires exactly one validated account')
+    latency_ms = live_probe(accounts[0]['config_dir'], args.claude_bin)
+    db = connect(args.db)
+    existing_jobs = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
+    db.close()
+    coord_state = json.load(open(os.path.join(os.path.abspath(args.coord_dir), 'state.json'),
+                                 encoding='utf-8'))
+    prepared_ids = {lease['id'] for lease in coord_state.get('leases', [])
+                    if lease.get('state') == 'prepared'}
+    to_import = [lease_id for lease_id in lease_ids
+                 if lease_id not in existing_jobs and lease_id in prepared_ids]
+    if to_import:
+        import_args = argparse.Namespace(db=args.db, coord_dir=args.coord_dir, cwd=args.cwd,
+                                         lease_id=to_import, max_attempts=2)
+        cmd_import_coordinator(import_args)
+    completed_before = 0
+    started = time.monotonic()
+    while True:
+        db = connect(args.db)
+        pending = db.execute("SELECT count(*) FROM jobs WHERE state='pending'").fetchone()[0]
+        done_unrecorded = db.execute("SELECT count(*) FROM jobs WHERE state='done' AND coordinator_recorded=0").fetchone()[0]
+        done = db.execute("SELECT count(*) FROM jobs WHERE state='done'").fetchone()[0]
+        failed = db.execute("SELECT count(*) FROM jobs WHERE state='failed'").fetchone()[0]
+        db.close()
+        if failed:
+            raise SystemExit('staged-run stopped: failed jobs=%d' % failed)
+        if not pending and not done_unrecorded:
+            break
+        if pending:
+            cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout))
+        cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
+                                           cwd=args.cwd))
+        promote = subprocess.run(
+            [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
+             '--gen-model-version', 'claude-sonnet-5'], cwd=os.path.abspath(args.cwd),
+            text=True, encoding='utf-8', capture_output=True)
+        if promote.returncode and 'no ready leases to promote' not in (promote.stderr + promote.stdout):
+            raise SystemExit('promotion failed: %s' % (promote.stderr or promote.stdout)[-1000:])
+        db = connect(args.db)
+        done_now = db.execute("SELECT count(*) FROM jobs WHERE state='done'").fetchone()[0]
+        db.close()
+        if done_now > completed_before:
+            completed_before = done_now
+            if args.stop_after and done_now >= args.stop_after:
+                print('restart checkpoint reached after %d window(s); rerun with --resume' % done_now)
+                return
+    db = connect(args.db)
+    jobs = list(db.execute('SELECT * FROM jobs ORDER BY id'))
+    db.close()
+    outputs = []
+    for job in jobs:
+        if job['output_path'] and os.path.exists(job['output_path']):
+            outputs.append(json.load(open(job['output_path'], encoding='utf-8')))
+    cards = sum((payload.get('summary') or {}).get('cards', 0) for payload in outputs)
+    clean = sum((payload.get('summary') or {}).get('ok', 0) for payload in outputs)
+    failures = {}
+    for payload in outputs:
+        failures.update((payload.get('summary') or {}).get('failures') or {})
+    fidelity = len([v for v in failures.values() if 'fidelity' in str(v)])
+    coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
+    coord_state = json.load(open(coord_state_path, encoding='utf-8'))
+    lease_ids = {job['external_id'] for job in jobs}
+    audited_clean = sum(int(lease.get('clean_count') or 0)
+                        for lease in coord_state.get('leases', [])
+                        if lease.get('id') in lease_ids)
+    report = {
+        'schema': 'pwg.windows100_readiness.v1', 'generated_at': now_iso(),
+        'probe_latency_ms': latency_ms, 'windows': len(outputs),
+        'headwords': expected_headwords, 'subcards': cards,
+        'model_nonnull': clean, 'audit_clean': audited_clean,
+        'residuals': cards - audited_clean,
+        'fidelity_rejects': fidelity, 'elapsed_seconds': int(time.monotonic() - started),
+        'go': bool(len(outputs) == expected_windows and cards and audited_clean / cards >= 0.80 and
+                   fidelity / cards < 0.05 and not failed),
+    }
+    atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=1) + '\n')
+    print(json.dumps(report, ensure_ascii=False, indent=1))
+    if not report['go']:
+        raise SystemExit(1)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--db', default='max_orchestrator.sqlite')
@@ -356,6 +470,13 @@ def main(argv=None):
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', required=True); p.add_argument('--cwd', required=True); p.set_defaults(func=cmd_record_done)
     p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
+    p = sub.add_parser('staged-run')
+    p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
+    p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
+    p.add_argument('--plan', required=True)
+    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
+    p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
+    p.add_argument('--report', required=True); p.set_defaults(func=cmd_staged_run)
     args = ap.parse_args(argv); args.func(args)
 
 
