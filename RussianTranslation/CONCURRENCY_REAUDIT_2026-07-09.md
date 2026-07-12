@@ -3,7 +3,7 @@
 _Created: 09-07-2026 · Last updated: 09-07-2026_
 
 **Model:** Opus 4.8 (`claude-opus-4-8`). Handoff:
-[H423](https://github.com/gasyoun/Uprava/blob/main/handoffs/H423-Opus_RussianTranslation_concurrency_append_artifact_reaudit_09.07.26.md).
+[H423](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H423-Opus_RussianTranslation_concurrency_append_artifact_reaudit_09.07.26.md).
 
 ## What this is
 

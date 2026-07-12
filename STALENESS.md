@@ -2,7 +2,7 @@
 
 _Created: 12-07-2026 · Last updated: 12-07-2026_
 
-**⚙️ FULLY AUTO-GENERATED — do not hand-edit the table below.** Regenerate with [`sanskrit-util/tools/epistemic/derive_staleness.py`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/derive_staleness.py). This is the STALENESS epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Sanskrit-data side) — one of the seven registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). It answers the one question FINDINGS structurally cannot: *when was each fact last re-checked, and which are decaying?*
+**⚙️ FULLY AUTO-GENERATED — do not hand-edit the table below.** Regenerate with [`sanskrit-util/tools/epistemic/derive_staleness.py`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/derive_staleness.py). This is the STALENESS epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Sanskrit-data side) — one of the seven registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). It answers the one question FINDINGS structurally cannot: *when was each fact last re-checked, and which are decaying?*
 
 Every FINDINGS finding measures a fact **at a moment**. A count true in June may be stale by December (`csl-orig` moved, a corpus was re-exported, a host came back). This table dates each finding's discovery, its most recent re-verification (if any), and flags the age.
 

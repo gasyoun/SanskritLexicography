@@ -26,7 +26,7 @@ model_version + pipeline stamps). Full memo:
 
 ## 2026-07-06 — `no_pwg_w1` (H214 no-PWG lane, FIRST run) — gen **Sonnet 5** / orchestration **Opus 4.8** — ⚠️ VALIDATED-NOT-PROMOTED
 
-First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
+First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
 **no-PWG supplement-chain lane** — 24 PWG-missing headwords (of the 232-lemma backfill queue) →
 **58 supplement sub-cards** (`<key>~~h0_zz_<layer>`, pw/sch/pwkvn/nws). Branch
 `pwg-ru/no-pwg-lane-drain-w1`. Preflight cost-gate: verdict `ok`, run-now-low, ~497 K tok / ~$0.94.
@@ -360,7 +360,7 @@ this nominal run: **~5.29 M tok/card** — ~145× worse. Extrapolation: 10 K ent
 ≈ $100 K, 50 K ≈ $500 K → not viable at scale. Kill gate (`KILL_CEIL_MS=480000`,
 8 min) far too loose vs the MG rule that a subcard > ~60 s is suspicious.
 
-Full post-mortem + fix mandate: [`Uprava/H189`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
+Full post-mortem + fix mandate: [`Uprava/H189`](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
 No Max windows to run until H189 §5 guardrails land. Post-mortem by **Opus 4.8
 (`claude-opus-4-8`)**.
 
@@ -515,7 +515,7 @@ Picked up [H255](https://github.com/gasyoun/Uprava/blob/main/handoffs/H255-Sonne
 
 ## 2026-07-11 — no-PWG lane window `no_pwg_w03` (H255 scale drain, requeue of `no_pwg_w02`'s 27 transient keys) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Sonnet 5** (`claude-sonnet-5`) — 🟡 11/27 PROMOTED, residual documented
 
-**Pre-flight per the H442/H462 guardrail:** ran a fresh load-representative warm-up probe (own 6,431-byte translated-lines prompt, matching `probe_log.py prompt`'s ≥5,120 B floor) via the Workflow tool — **21.18 s, 0 conn-errors → GO** (`probe_log.py gate` exit 0). This is a real recovery signal: the most recent prior reading, [H566](https://github.com/gasyoun/Uprava/blob/main/handoffs/H566-Opus_RussianTranslation_h317-w1b-real-card-recovery_11.07.26.md)'s real-card probe earlier the same day (11-07-2026), had measured **682,753 ms** (NO-GO, worse than the 284.8 s reading before it). Logged both the probe and its outcome to [`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md).
+**Pre-flight per the H442/H462 guardrail:** ran a fresh load-representative warm-up probe (own 6,431-byte translated-lines prompt, matching `probe_log.py prompt`'s ≥5,120 B floor) via the Workflow tool — **21.18 s, 0 conn-errors → GO** (`probe_log.py gate` exit 0). This is a real recovery signal: the most recent prior reading, [H566](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H566-Opus_RussianTranslation_h317-w1b-real-card-recovery_11.07.26.md)'s real-card probe earlier the same day (11-07-2026), had measured **682,753 ms** (NO-GO, worse than the 284.8 s reading before it). Logged both the probe and its outcome to [`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md).
 
 Requeued `no_pwg_w02`'s 27 transient keys (pulled from `audit_window.report.json`'s `requeue_transient`, since no `no_pwg_w02.requeue.keys.txt` had been persisted) via `gen_opt_harness2.py no_pwg_w03 --nominal --keys=<27 keys> --output-budget=1 --no-tm`, cost-gated ($0.47/card, 27 cards, under ceiling), ran through the Workflow tool.
 

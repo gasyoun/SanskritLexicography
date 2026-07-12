@@ -983,7 +983,7 @@ rule, and should be checked as its own artifact before any corpus_gate consumer 
 
 > **Source:** [`SanskritLexicography/RussianTranslation/REUSE_MAP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md)
 > + [`src/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md#специализированные-глоссарии-имен--build_glossariespy)
-> ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
+> ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
 > — SanskritLexicography/RussianTranslation · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
 ---
@@ -1524,7 +1524,7 @@ teaching material) should reuse that generator/table rather than re-derive it; n
 be linked at all until the site (or kosha P2 lemma cards, ruling D4) provides per-entry
 pages; and the 8 missing roots (esp. `yam`) are a samskrtam.ru data gap for MG.
 
-> **Source:** Bühler H101 session ([H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md)),
+> **Source:** Bühler H101 session ([H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H101-Fable_buhler-sanskrit-book_buhler_ux_features_03.07.26.md)),
 > Fable 5 `claude-fable-5` · 2026-07-03
 
 ---
@@ -1572,7 +1572,7 @@ citations distinguishing 1st-ed. (`Spr. N`) from 2nd-ed. (`Spr. (II) N`), and
 
 Implication: on 2026-07-03 (Sonnet 5, `claude-sonnet-5`) this was missed —
 `SanskritLexicography/IndischeSprueche/` was built as a fresh dataset
-extraction and [Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)
+extraction and [Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H143_pwg_pwk_indische_sprueche_crosswalk.md)
 scoped a "new" crosswalk, both corrected/retracted same-day once MG flagged
 it. Any future prior-art check touching a Cologne primary source, scan set, or
 citation crosswalk must also run `gh repo list funderburkjim` and
@@ -1663,7 +1663,7 @@ but is populated on **0 of 11,261** live store rows; 510 store rows carry a mark
 their `de` field (backfill must parse `de` — Russian preserves the markers in only
 375/510 rows). Full tables + wiring spec:
 [`RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md` §W3](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md);
-build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/H338-Sonnet_RussianTranslation_pwg-ru-government-backfill_08.07.26.md).
+build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H338-Sonnet_RussianTranslation_pwg-ru-government-backfill_08.07.26.md).
 
 > **Source:** H335 capability audit ([PR #227](https://github.com/gasyoun/SanskritLexicography/pull/227)),
 > Fable 5 `claude-fable-5` · 2026-07-08
@@ -1719,7 +1719,7 @@ anywhere on `/api/platform` (about/footer/privacy/site-notice); the only license
 present platform-wide is for the Tekst **software** (`AGPL-3.0-or-later`), unrelated to
 the hosted dictionary/translation/annotation data.
 
-This does not retroactively invalidate the four layers [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md)
+This does not retroactively invalidate the four layers [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md)
 already landed (Casaretto morphology, lemmatization, Scarlata & Widmer accented text,
 Lubotsky padapāṭha) — those are VedaWeb-team-authored derived scholarship, not
 third-party in-copyright translator prose, a materially different rights posture. But it
@@ -1734,7 +1734,7 @@ its own rights call before landing (bulk import), not an inherited blanket assum
 see [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md)
 for the full 36-layer table.
 
-**✅ Resolved 08-07-2026:** [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
+**✅ Resolved 08-07-2026:** [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
 outreach email to VedaWeb got an explicit written reply from Prof. Daniel Kölligan
 (writing also on behalf of Prof. Uta Reinöhl): the 4 candidate layers this finding flagged
 as DECIDE (Metrical Data 2024, Elizarenkova RU, Geldner de, Grassmann de) are confirmed
@@ -2098,7 +2098,7 @@ named).
 > ([`f9_shared_omission.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/f9_shared_omission.py),
 > [`SHARED_OMISSION_TEST.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/forensic/SHARED_OMISSION_TEST.md),
 > [csl-atlas PR #263](https://github.com/sanskrit-lexicon/csl-atlas/pull/263)) ·
-> [H796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H796-Opus_csl-atlas_boehtlingk_mw_shared_omission_test_12.07.26.md) ·
+> [H796](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H796-Opus_csl-atlas_boehtlingk_mw_shared_omission_test_12.07.26.md) ·
 > 12-07-2026, Opus 4.8 (`claude-opus-4-8`).
 > ↔ [ASSUMPTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (independence premise for tradition-agreement counts) · [DEAD_ENDS.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (shared-erroneous-citation null).
 

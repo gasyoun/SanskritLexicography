@@ -70,7 +70,7 @@ family.
 
 ### Follow-ups — IMPLEMENTED (2026-07-02, Opus 4.8 `claude-opus-4-8`; A/B generation Sonnet 5 `claude-sonnet-5`)
 
-All three recommendations are delivered (handoff [`H056-Opus_SanskritLexicography_pwg_s7_quality_gate_02.07.26.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H056-Opus_SanskritLexicography_pwg_s7_quality_gate_02.07.26.md)):
+All three recommendations are delivered (handoff [`H056-Opus_SanskritLexicography_pwg_s7_quality_gate_02.07.26.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H056-Opus_SanskritLexicography_pwg_s7_quality_gate_02.07.26.md)):
 
 1. **Prompt "translate, don't annotate"** — a HARD RULE added to BOTH the RU template
    (`run_pilot_wf.js` `TR`, rule 6) and [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt)

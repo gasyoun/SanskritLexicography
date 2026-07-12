@@ -11,7 +11,7 @@ _Created: 05-07-2026 · Last updated: 05-07-2026_
 > cache-write / cache-read); Sonnet 5 list rates may differ, so treat **$ as
 > order-of-magnitude**. The **token counts and the relative cost split are exact and
 > model-independent.** This doc is the verified counterpart to the
-> [H189 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
+> [H189 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H189-Opus_RussianTranslation_pwg_ru_nominal_cost_blowup_postmortem_05.07.26.md).
 
 ---
 

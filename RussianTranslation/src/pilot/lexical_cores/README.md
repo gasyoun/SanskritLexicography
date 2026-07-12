@@ -3,7 +3,7 @@
 _Created: 05-07-2026 · Last updated: 05-07-2026_
 
 The PWG→RU translation queue is ordered by **lexical priority**, not dictionary
-letter order ([H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md)).
+letter order ([H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md)).
 The nominal tiers come from V.V. Leonchenko's DCS corpus lexical-core appendices,
 which live in the sibling [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Lexical-Cores)
 repo as legacy Excel files. This directory holds the extracted, deduped SLP1

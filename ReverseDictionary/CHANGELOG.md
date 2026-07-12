@@ -4,7 +4,7 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
 
 Tracks version/canonicity decisions and applied-corrections for the reverse-dictionary
 dataset, per [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
-§4 steps 1–2 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)).
+§4 steps 1–2 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)).
 The master `.txt` itself is gitignored (personal-materials-dump folder policy — see
 [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/README.md)
 "Commit scope"); this file is the tracked record of what was declared/verified/changed

@@ -59,7 +59,7 @@ PWG→русский), исследовательские заметки и че
    все три запуска H442 инфраструктурно скомпрометированы, поэтому исправление
    ([PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)) «не
    проверено в поле, а не ошибочно». Владелец следующего шага —
-   [H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
+   [H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
    **Не перезапускать medium50 вслепую.**
 2. **Линия глагольных корней (H151) не затронута** — может капать и сейчас.
 3. Человеческие ворота G5/G6/G7 (см. §5) держат публикацию, но не генерацию.

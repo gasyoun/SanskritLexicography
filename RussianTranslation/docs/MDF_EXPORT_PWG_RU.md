@@ -7,7 +7,7 @@ the read-only exporter that turns already-promoted pwg_ru translation cards
 ([`src/pwg_ru_translated.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md),
 local-only store, 11,383 sense rows / 2,350 cards as of 11-07-2026) into
 SIL MDF standard-format records (Toolbox/FLEx lineage). Built for
-[H727](https://github.com/gasyoun/Uprava/blob/main/handoffs/H727-Fable_SanskritLexicography_pwg-kosha-mdf-integration_11.07.26.md)
+[H727](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H727-Fable_SanskritLexicography_pwg-kosha-mdf-integration_11.07.26.md)
 per the MG ruling of 11-07-2026 in the
 [SIL MDF ecosystem correlation map](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SIL_MDF_ECOSYSTEM_CORRELATION.md) §4–5.
 Written by Fable 5 (`claude-fable-5`).

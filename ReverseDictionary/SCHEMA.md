@@ -6,7 +6,7 @@ Documents the column semantics, source-code table, and encoding audit for the ca
 master list `.doc.pdf/266820-reverse-Gasuns.txt` (declared canonical in
 [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md)).
 Written per [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
-§4 step 3 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)).
+§4 step 3 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)).
 This documents the file's *actual* format, verified directly against the bytes, not a
 proposed or aspirational one — a bare TSV, honestly, per the DH-standards analysis's own
 recommendation not to force a premature TEI Lex-0 conversion.

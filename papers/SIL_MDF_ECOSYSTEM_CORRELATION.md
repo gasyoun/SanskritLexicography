@@ -150,12 +150,12 @@ transformation's adequacy against it.
 
 | Handoff | Stream | Executor | Depends on |
 |---|---|---|---|
-| [H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md) | MDF profile refinements from the book (App. B order, `\de` ruling, `\lf`) + LIFT fourth serialization | Sonnet | — |
-| [H722](https://github.com/gasyoun/Uprava/blob/main/handoffs/H722-Fable_csl-standards_lexique-pro-mdf-smoke-test_11.07.26.md) | Lexique Pro real-consumer smoke test of the MDF pilot | Fable | H721 helpful, not required |
-| [H723](https://github.com/gasyoun/Uprava/blob/main/handoffs/H723-Sonnet_SanskritLexicography_mdf-book-literature-digest_11.07.26.md) | Digest the book into literature/md + rights check on committing the PDF | Sonnet | — |
-| [H724](https://github.com/gasyoun/Uprava/blob/main/handoffs/H724-Opus_csl-standards_coward-grimes-citation-wiring_11.07.26.md) | Wire Coward & Grimes 2000 citations into csl-standards PAPER, atlas related-work, M01/A33/A40 | Opus | — |
-| [H725](https://github.com/gasyoun/Uprava/blob/main/handoffs/H725-Fable_SanskritLexicography_semdom-kosha-crosswalk-scoping_11.07.26.md) | Scope the semdom ↔ kosha crosswalk (paper-grade novelty check first) | Fable | — |
-| [H726](https://github.com/gasyoun/Uprava/blob/main/handoffs/H726-Opus_Uprava_sil-publishing-channels-outreach_11.07.26.md) | Webonary + Dictionary App Builder channels + SIL/MUDIDI outreach drafts | Opus | H721 (LIFT), H722; `/publish-safety-check` gate |
-| [H727](https://github.com/gasyoun/Uprava/blob/main/handoffs/H727-Fable_SanskritLexicography_pwg-kosha-mdf-integration_11.07.26.md) | MDF/LIFT lens on the PWG→RU pipeline + kosha data-hub registration | Fable | H721 |
+| [H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md) | MDF profile refinements from the book (App. B order, `\de` ruling, `\lf`) + LIFT fourth serialization | Sonnet | — |
+| [H722](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H722-Fable_csl-standards_lexique-pro-mdf-smoke-test_11.07.26.md) | Lexique Pro real-consumer smoke test of the MDF pilot | Fable | H721 helpful, not required |
+| [H723](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H723-Sonnet_SanskritLexicography_mdf-book-literature-digest_11.07.26.md) | Digest the book into literature/md + rights check on committing the PDF | Sonnet | — |
+| [H724](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H724-Opus_csl-standards_coward-grimes-citation-wiring_11.07.26.md) | Wire Coward & Grimes 2000 citations into csl-standards PAPER, atlas related-work, M01/A33/A40 | Opus | — |
+| [H725](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H725-Fable_SanskritLexicography_semdom-kosha-crosswalk-scoping_11.07.26.md) | Scope the semdom ↔ kosha crosswalk (paper-grade novelty check first) | Fable | — |
+| [H726](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H726-Opus_Uprava_sil-publishing-channels-outreach_11.07.26.md) | Webonary + Dictionary App Builder channels + SIL/MUDIDI outreach drafts | Opus | H721 (LIFT), H722; `/publish-safety-check` gate |
+| [H727](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H727-Fable_SanskritLexicography_pwg-kosha-mdf-integration_11.07.26.md) | MDF/LIFT lens on the PWG→RU pipeline + kosha data-hub registration | Fable | H721 |
 
 _Dr. Mārcis Gasūns_

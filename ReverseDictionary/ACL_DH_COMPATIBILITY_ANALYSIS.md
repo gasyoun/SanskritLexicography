@@ -3,7 +3,7 @@
 _Created: 07-07-2026 · Last updated: 07-07-2026_
 
 **What this is.** The deep analysis commissioned by
-[H265](https://github.com/gasyoun/Uprava/blob/main/handoffs/H265-Fable_SanskritLexicography_acl-anthology-dh-standards-reverse-dict_07.07.26.md):
+[H265](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H265-Fable_SanskritLexicography_acl-anthology-dh-standards-reverse-dict_07.07.26.md):
 what "make the reverse dictionary ACL-Anthology compatible" actually means, which real venues
 would take a paper about this resource, what those venues require, and which digital-humanities
 data-publication standards the resource currently misses. Analysis only — no data was changed.
@@ -221,7 +221,7 @@ as an `@DECIDE`. Nothing in this report pre-empts the ruling.
 
 ---
 
-## 5. Option (b)'s cost — measured 07-07-2026 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
+## 5. Option (b)'s cost — measured 07-07-2026 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
 
 **Method used, and why the originally-named source changed.** The plan was to cross
 `187992 headwords.txt` (described as "multi-source attestation tags") against the

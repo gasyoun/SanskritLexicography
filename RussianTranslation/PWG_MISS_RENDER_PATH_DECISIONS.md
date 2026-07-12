@@ -3,14 +3,14 @@
 _Created: 05-07-2026 · Last updated: 06-07-2026_
 
 This file records settled decisions for the PWG-less headword card-rendering gap
-found during [H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md).
+found during [H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md).
 Do not re-ask these as open planning questions unless the topic is explicitly reopened.
 
 ## ⚠️ SUPERSESSION — 06-07-2026 (H214, Opus 4.8 `claude-opus-4-8`)
 
 M.G. ruled the H206/H212 ambiguity explicitly, and it **supersedes decisions #2 and #4
 below on the portrait-design point**. The new, implemented ruling
-([H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)):
+([H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)):
 
 - **Do NOT invent or force a PWG-style base portrait / sense-tree** for a PWG-missing
   headword. Decision #2 ("extend `microstructure.portrait()` to a real structured
@@ -36,7 +36,7 @@ Decisions #1 and #3 (build it; sequencing) stand. Everything below is the **orig
 
 ## Context
 
-[H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md)
+[H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md)
 (PR [#168](https://github.com/gasyoun/SanskritLexicography/pull/168), merged 05-07-2026, Sonnet 5
 `claude-sonnet-5`) fixed [`src/pilot/nominals_worklist.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nominals_worklist.py)
 to stop silently dropping PWG-miss nominal candidates that DO have a real PW/SCH/PWKVN record —

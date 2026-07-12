@@ -5,7 +5,7 @@ _Created: 12-07-2026 · Last updated: 12-07-2026_
 Paper skeleton for **A58** in the
 [Uprava ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
 pipeline, scaffolded over the tables committed by
-[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
+[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
 ([PR #364](https://github.com/gasyoun/SanskritLexicography/pull/364)). The
 scoping memo with the GO verdict, verified prior-art sweep and licence route is
 [SEMDOM_KOSHA_CROSSWALK_SCOPING.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md)
@@ -110,7 +110,7 @@ at readiness 3+.
 ## Provenance
 
 Scaffolded 12-07-2026 by Fable 5 (`claude-fable-5`) under
-[H767](https://github.com/gasyoun/Uprava/blob/main/handoffs/H767-Fable_SanskritLexicography_a58-semdom-ak-paper-scaffold_12.07.26.md)
+[H767](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H767-Fable_SanskritLexicography_a58-semdom-ak-paper-scaffold_12.07.26.md)
 (`/paper-scaffold A58`). Data built 11-07-2026 by Fable 5 (`claude-fable-5`)
 under H742; gold annotators Fable 5 (`claude-fable-5`) and Opus 4.8
 (`claude-opus-4-8`).
