@@ -30,6 +30,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (deletion stays a human `@DO`). Zero data files touched — read‑only, per
   [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
 
+### H805 — canonical shared store path so worktree drain windows don't silently drop promotions
+- New [`src/store_path.py`](src/store_path.py) `canonical_store()` resolves the ONE logical
+  translated store (`$PWG_RU_STORE` override → the **MAIN checkout's** store when running inside a
+  linked `git worktree` → local default). Root-fixes a data-loss bug: the gitignored store was
+  resolved per-checkout, so `no_pwg_w06` (run in an isolated worktree, [PR #366](https://github.com/gasyoun/SanskritLexicography/pull/366))
+  promoted 11,505→11,558 into a worktree store that was **discarded with the worktree** — the live
+  store is still 11,505, and w06's 29 sub-cards / 53 sense rows are lost (regenerable only).
+- Wired into both promotion writers — [`src/promote_final_cards.py`](src/promote_final_cards.py) (RU)
+  and [`src/promote_en.py`](src/promote_en.py) (EN, same latent bug, fixed for parity) — with a
+  visible `store: … (canonical/shared)` provenance line; their existing `PromoteClaim` lock now
+  serialises concurrent promotions on the shared path. Also wired the no-PWG dedup readers
+  [`src/pilot/no_pwg_scale_plan.py`](src/pilot/no_pwg_scale_plan.py) +
+  [`src/pilot/nominals_worklist.py`](src/pilot/nominals_worklist.py).
+- New `canonical_store_path_h805` SHARED entry in [`LANG_PARITY.md`](LANG_PARITY.md); the 5
+  promotion-tracked parity entries re-verified (verdicts unchanged) + re-hashed. `store_path.py
+  --selftest`, `promote_final_cards.py --selftest`, full `window_selftest.py`, and
+  `lang_parity_check.py` (43 entries, no drift) all green. Follow-up: apply `canonical_store()` to
+  the `annotate_*.py` writers too (same latent bug, lower risk — they run post-promotion).
+
 ### H777 — expand per-card stats (layer/markup/QA/xref + dcs_freq + grammar join), 3 grains
 - [`src/annotate_stats.py`](src/annotate_stats.py) extended from the H422 lemma block to the
   full accepted count menu (MG ruling 12-07-2026) at **three granularities** —

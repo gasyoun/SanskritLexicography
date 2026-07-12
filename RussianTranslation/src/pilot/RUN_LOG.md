@@ -592,3 +592,25 @@ Ran from an isolated `git worktree` off `origin/master` (per the handoff's own g
 **Documented residual (not requeued further):** `arvant~~h0_zz_pw` (2× kill-timeout — infra, not content), `apr_apta~~h0_zz_pw`/`as_a_dya~~h0_zz_pw`/`asa_mskfta~~h0_zz_pw`/`avy_ahata~~h0_zz_pw`/`avyagra~~h0_zz_pw`/`b_ahlika~~h0_zz_pw` (2× `selfheal-nothing-resolved` each — all 6 are `presplit_keys`, i.e. cards whose `<ls>` count exceeded the output budget and got routed to direct fragment translation; worth investigating as a class in a future session rather than per-card), plus the 10 content-defect-flagged sub-cards across both windows (`anupapatti~~h0_zz_pw`, `anupapatti~~h0_zz_sch`, `apar_ajit_a~~h0_zz_sch`, `apratize_da~~h0_zz_pw`(high-confidence broken-markup), `arhaka~~h0_zz_pw`, `asteya~~h0_zz_pw`, `asvatantra~~h0_zz_pw`, `ativiz_a~~h0_zz_pw`(high-confidence untranslated-gloss), `ativiz_a~~h0_zz_pwkvn`(high-confidence untranslated-gloss), `ativiz_a~~h0_zz_sch`) — all already promoted as `ai_translated` per the guardrail above, flagged for the eventual G5 human review, not silently clean.
 
 **Next:** continue the 232-lemma queue via `no_pwg_scale_plan.py --window-size 20 --limit-windows 1 --start-index 7`. Re-run `probe_log.py gate` before any future window.
+
+---
+
+## 2026-07-12 — no-PWG lane: store-persistence root-fix (H805) — **no Max/Workflow generation run** — orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+A session opened to run the `--start-index 7` window instead found + fixed a **data-loss bug** and, per MG's call, ran no generation this pass.
+
+**Finding — w06's promotions are lost from the live store.** Reconciling against `origin/master`:
+
+| store on disk | rows | = end of | note |
+|---|---|---|---|
+| main checkout `src/pwg_ru_translated.jsonl` | **11,505** | w05 | the live/canonical store |
+| (nowhere) | 11,558 | w06 | RUN_LOG claims this, but no such store exists |
+| `SanskritLexicography-h338/…` (stale) | 11,261 | H178 | old worktree, unrelated |
+
+`no_pwg_w06` ran in an **isolated worktree** (this file's w06 block notes it), copied the 11,505 store in, promoted to 11,558 there — and that worktree + its store + its `wf_output.no_pwg_w06*.json` were removed after [PR #366](https://github.com/gasyoun/SanskritLexicography/pull/366) merged. **w06's 29 sub-cards / 53 sense rows are gone from every store on disk** (regenerable only). Because the planner dedups against the store, `--start-index 7` re-offered **w06's exact 20 headwords** (the `--start-index` flag only names the window; it never selects headwords — selection is always the first un-promoted `window_size`). So the "next window" was a re-run of w06's hardest cases, not fresh territory.
+
+**Root cause + fix (H805).** Every consumer resolved the gitignored store relative to its own directory, so a worktree promoted into a discarded copy. New [`src/store_path.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_path.py) `canonical_store()` resolves ONE logical store (`$PWG_RU_STORE` → MAIN-worktree store when in a linked worktree → local); wired into `promote_final_cards.py` (RU) + `promote_en.py` (EN, parity) + `no_pwg_scale_plan.py` + `nominals_worklist.py`. Redirect proven from a live worktree (planner `store_path` → `../../SanskritLexicography/RussianTranslation/src/…`; promote prints a `canonical/shared` provenance line). `window_selftest.py` green, `lang_parity_check.py` 43 entries no drift (new `canonical_store_path_h805` SHARED entry). Full account: [H805 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H805-Opus_SanskritLexicography_pwg_ru_worktree_store_persistence_fix_12.07.26.md).
+
+**Probe (12-07, Sonnet 5, 6.5 KB load-representative):** 0 conn-errors, clean full-length RU output, 48.5 K tok — a recovering regime vs the 285–683 s degraded readings of 10–11 Jul, **but 31.6 s total trips the 30 s ceiling → recorded NO-GO** in [`GENERATION_API_PROBE_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md). Wait for a clean sub-30 s reading before the next window.
+
+**Next:** resume the drain with `no_pwg_scale_plan.py --start-index 7` on a clean probe — its first window now correctly re-covers w06 (healing the loss) before advancing; the store is persistent from here.

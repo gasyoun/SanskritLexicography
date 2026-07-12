@@ -54,10 +54,14 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import pipeline_version
 from promote_lock import PromoteClaim, ClaimBusy
+from store_path import canonical_store
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+# Resolve the PERSISTENT store (parity with promote_final_cards.py): an EN-attach run in an
+# isolated `git worktree` must rewrite the MAIN checkout's store, not a discarded worktree copy
+# (the H255 w06 loss vector). See store_path.canonical_store.
+DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 DEFAULT_GLOB = 'wf_output.en.*.json'
 _KEEP = re.compile(r'[^0-9A-Za-z{}#%]')
 
