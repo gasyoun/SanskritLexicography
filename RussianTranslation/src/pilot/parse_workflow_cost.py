@@ -15,7 +15,16 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-# Claude Sonnet 4.x standard rates, $ per million tokens (cache-write = 5m TTL).
+# Claude Sonnet 5 (claude-sonnet-5) standard LIST rates, $ per million tokens
+# (cache-write = 5m TTL = 1.25x input; cache-read = 0.1x input). Confirmed 12-07-2026
+# via the /claude-api skill (H809 W2). NOTE: these are numerically identical to the
+# prior Sonnet 4.x list rates ($3/$15) — Sonnet 4.6 and Sonnet 5 share the same list
+# pricing — so the golden-window $ total (42,316,604 tokens -> $79.83) is UNCHANGED.
+# The Sonnet 5 introductory promo ($2.00 input / $10.00 output, through 2026-08-31)
+# is deliberately NOT applied here: this table is list-rate basis (the promo is a
+# time-boxed discount, not the standing rate). Apply the promo only for an as-run
+# reconciliation, and see COST_CEIL_* in perf_preflight.py — the promo would move
+# $/agent ~-33% (>20%), which is a FLAG-for-human event, not an auto-retune.
 PRICE = {'input': 3.00, 'output': 15.00, 'cache_write': 3.75, 'cache_read': 0.30}
 
 
