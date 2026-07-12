@@ -4,7 +4,7 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
-## 2026-07-12 — verb rootmap backfill (H809 W1) — gen **none (0-token, local)** / Opus 4.8 (`claude-opus-4-8`) — ✅ 687 rootmaps built, runnable 14→701
+## 2026-07-12 — verb rootmap backfill (H809 W1) — gen **none (0-token, local — no workflow)** / Opus 4.8 (`claude-opus-4-8`) — ✅ 687 rootmaps built, runnable 14→701
 
 Not a Max run — pure local `_pilot_gen_merged.py`, no Workflow/API. The verb drain was
 rootmap-gated: `verb_worklist.has_rootmap()` gates the runnable queue, and plain
@@ -699,3 +699,18 @@ So the 8 residual kills were still **concurrency-sensitive down to 2-wide** — 
 - `ativiz_a~~h0_zz_pw` — **fidelity-reject** (`{#…#}` markup 0/3 restored): a **content** failure, not concurrency — the model dropped the Sanskrit delimiters; needs a targeted rework, not a retry.
 
 **Net H255 over w07's 36 cards: 27 promoted** (5 w07 + 17 rq1 + 5 rq2), **9 residual** (6 structural presplit-cohort + these 3). `probe_log` outcome recorded for `wf_e670c54b-24b`. **Width-sweep conclusion: ≤2-wide is the effective floor for concurrency-recoverable cards on this degraded API; what's left is structural (presplit), API-hard (180 s CEIL), or content (fidelity) — none of which more width-tuning fixes.**
+
+---
+
+## 2026-07-12 — H823 presplit cite-floor + single-card CEIL harness fix (the H255 presplit-cohort); live verify 0/6 (host still degraded) — orchestration **Opus 4.8** (`claude-opus-4-8`)
+
+**The bug (root-caused from the fragments + the w07/rq1 logs).** The CITATION presplit trigger is `(1 + <ls>) > OUTPUT_BUDGET`, which correctly catches the 150-`<ls>` pwg00 heads at the default budget 90 — but **degenerates under `--output-budget=1`** (the no-PWG single-card lane): there the budget is 1, so ANY card with ≥1 citation "exceeds" it and is force-routed to the fragment heal lane. The H255 presplit cohort (`apr_apta`/`as_a_dya`/`asa_mskfta`/`avy_ahata`/`avyagra`/`b_ahlika`~~pw, 307–1131 B, 1–11 `<ls>`) are tiny cards that translate whole fine (`sam` is fine at 34 `<ls>`), yet got fragmented, and their heal groups' byte-scaled kill budgets (~60 s) died on the slow API → `selfheal-nothing-resolved`.
+
+**The fix (both changes, verified applied).**
+- **Cite floor** ([`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) `_presplit_hit`): the citation trigger fires only when `(1+<ls>) > max(OUTPUT_BUDGET, PRESPLIT_SOLO_CITE_FLOOR=40)` — a genuine fail-solo giant, not merely a 1-card batch. For `OUTPUT_BUDGET ≥ 40` (default 90) it's a no-op. New `--presplit-solo-cite-floor=N`. **Verified: the cohort's `presplit_keys` is now empty** (they route to whole-card).
+- **Single-card CEIL** (`killBudgetForCur`): ANY single-card batch gets the CEIL (180 s), not just no-fallback singles — a lone card has no batch-mates to starve, and the heal lane is no better budgeted on a slow API. Clean H220 generalization. **Verified: the cohort's kills moved from the heal lane's 60–123 s to the whole-card 180 s CEIL.**
+- Unit-tested by `window_selftest.test_presplit_cite_floor_and_single_ceil` (routes low-`<ls>` cards whole under `--output-budget=1`, floor=1 reproduces the misfire, single→CEIL); full suite + `lang_parity_check.py` green (new `presplit_cite_floor_h823` SHARED entry).
+
+**Live verification (`no_pwg_presplitfix`, 6 cards, ≤2-wide): 🔴 0/6 — the fix is applied but the cards did NOT recover, for reasons ORTHOGONAL to the routing bug.** `wf_bb00c8a2-c4e`: **4 hit the 180 s CEIL** (`apr_apta` 755 B, `as_a_dya` 699 B, `asa_mskfta` 298 B, `b_ahlika` 975 B) — the API degraded *further* today (a 298 B card taking >180 s vs the 54 s an isolated probe read ~3 h earlier) and a whole card is a bigger prompt than one fragment, so it's slower per call on a slow API; **2 are genuine content failures** (`avy_ahata` wrong key1 echoed, `avyagra` dropped 2/3 `{#…#}` Sanskrit spans) that no budget/routing fix touches. 0 conn-errors.
+
+**Verdict:** the presplit routing misfire is genuinely fixed (correct + unit-tested, applied in the field) and is right for a healthy API (no wasteful fragmentation of tiny cards) — but **it does not recover these 6 on the current severely-degraded API**. The cohort re-classifies: **4 API-hard** (need a healthier API — the whole-card CEIL will land them once the API returns to ~54 s) + **2 content-hard** (`avy_ahata`/`avyagra` need a prompt/content fix, tracked separately). Store unchanged (0 promoted). Shipped per MG (the fix is correct-by-design; non-recovery is external). H823.

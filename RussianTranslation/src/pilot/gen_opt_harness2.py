@@ -127,6 +127,18 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
                    #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
                    #  (sam translates fine at 34 <ls>), so this budget is intentionally much
                    #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
+PRESPLIT_SOLO_CITE_FLOOR = 40  # --presplit-solo-cite-floor=N. The CITATION presplit trigger
+                   #  compares (1 + <ls>) to the per-batch OUTPUT_BUDGET, which correctly catches
+                   #  the 150-<ls> pwg00 heads when the budget is the default 90 — but DEGENERATES
+                   #  under --output-budget=1 (the no-PWG single-card lane): there the budget is 1,
+                   #  so ANY card with >=1 citation "exceeds" it and is force-routed to the fragment
+                   #  heal lane. Those tiny cards (H255 presplit cohort: 1-11 <ls>, 307-1131 B) then
+                   #  die on the heal groups' byte-scaled kill budgets (~60 s) instead of getting a
+                   #  whole-card attempt — a misfire, since the SAME cards translate whole fine (sam
+                   #  is fine at 34 <ls>). So the cite trigger fires only when (1+<ls>) exceeds
+                   #  max(OUTPUT_BUDGET, this floor): a card genuinely fails-solo (>=40 citation-units,
+                   #  well above the whole-card-safe 34 and below the 150 giants), not merely because
+                   #  the batch holds one card. For OUTPUT_BUDGET >= 40 (default 90) nothing changes.
 # --- wall-clock kill gate (H155 follow-up, 2026-07-04) ----------------------------
 # The structural presplit triggers above catch the KNOWN whole-card failure drivers
 # (citation + sense density) BEFORE a run. The kill gate is the runtime BACKSTOP for
@@ -392,6 +404,8 @@ def parse_args(argv):
         elif a.startswith('--sense-presplit-budget='):
             v = a.split('=', 1)[1].strip().lower()
             globals()['SENSE_PRESPLIT_BUDGET'] = None if v in ('off', '0', 'none') else int(v)
+        elif a.startswith('--presplit-solo-cite-floor='):  # H255/H823: citation-presplit floor so --output-budget=1 doesn't force tiny cards into the heal lane
+            globals()['PRESPLIT_SOLO_CITE_FLOOR'] = int(a.split('=', 1)[1])
         elif a == '--no-kill':
             globals()['KILL'] = False
         elif a == '--kill':
@@ -506,7 +520,10 @@ def _presplit_hit(ls, nfrag, cite_budget):
     presplit-primary fragment lane? Returns (cite_hit, sense_hit). Kept in one place so
     the frags-loop grouping choice and the presplit-list construction can never drift
     (H189 — before this, the two sites replicated the condition independently)."""
-    cite_hit = cite_budget is not None and (1 + ls) > cite_budget
+    # Floor the citation trigger at PRESPLIT_SOLO_CITE_FLOOR so --output-budget=1 (no-PWG lane)
+    # doesn't force every citation-bearing card into the heal lane — only genuine fail-solo
+    # citation giants presplit. For OUTPUT_BUDGET >= the floor (default 90) this is a no-op.
+    cite_hit = cite_budget is not None and (1 + ls) > max(cite_budget, PRESPLIT_SOLO_CITE_FLOOR)
     sense_hit = SENSE_PRESPLIT_BUDGET is not None and nfrag > SENSE_PRESPLIT_BUDGET
     return cite_hit, sense_hit
 
@@ -1420,11 +1437,19 @@ const skelBytesOfKeys = keys => keys.reduce((n, k) => n + (INPUTS[k] ? INPUTS[k]
 // than a tiny skeleton's budget predicts: the fixed per-call StructuredOutput latency
 // (~55-105 s) dominates, independent of skeleton size. The no-PWG w1 run killed 6/6 nulls
 // this way (kill-timeout 53-104 s, all would have passed accept). Give a no-fallback single
-// the CEIL budget so it is only abandoned on a true >CEIL hang. Multi-card / splittable
-// batches keep the aggressive byte-scaled gate (there a kill routes to binary-split /
-// fragment heal — the gate's whole purpose). SHARED (keys on FRAGS, no RU/EN branching).
+// the CEIL budget so it is only abandoned on a true >CEIL hang.
+// H255/H823 extension: give ANY single-card batch the CEIL, not just no-fallback ones. The
+// original rule kept a SPLITTABLE single on the aggressive byte-scaled gate because "a kill
+// routes to fragment heal" — but the heal groups run on the SAME byte-scaled budgets, so on a
+// slow API BOTH the whole-card attempt AND the heal lane kill on the ~55-105 s fixed latency,
+// and the card is a permanent null anyway (the H255 presplit-cohort loss). A lone card has no
+// batch-mates to starve, so it should get the full CEIL on its ONE whole-card attempt (it
+// either lands within the fixed latency or genuinely hangs) instead of being abandoned into a
+// heal lane that is no better budgeted. Multi-card BATCHES keep the byte-scaled gate (there a
+// kill legitimately routes to binary-split, and one slow card must not hold up its mates).
+// SHARED (keys on FRAGS, no RU/EN branching).
 const hasFallback = k => Array.isArray(FRAGS[k]) && FRAGS[k].length > 0
-const killBudgetForCur = cur => (cur.length === 1 && !hasFallback(cur[0])) ? KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))
+const killBudgetForCur = cur => (cur.length === 1) ? KILL_CEIL_MS : killBudgetMs(skelBytesOfKeys(cur))
 // Split-pool budget state. Labels beginning `heal:` are recovery; every other call is primary
 // translation (including resolveGroup binary splits). BudgetExceeded is deliberately NOT an
 // isKill(): a kill routes to recovery, whereas a pool stop must issue zero more calls in that

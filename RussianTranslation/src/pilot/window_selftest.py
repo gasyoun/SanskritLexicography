@@ -2957,6 +2957,57 @@ def test_no_fallback_single_gets_ceil_kill_budget():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_presplit_cite_floor_and_single_ceil():
+    """H255/H823: the CITATION presplit trigger must not misfire under --output-budget=1.
+    With a 1-card batch budget, (1+<ls>) > budget fires on ANY citation-bearing card, force-
+    routing tiny cards into the fragment heal lane whose byte-scaled kill budgets die on a slow
+    API (the H255 presplit-cohort loss). PRESPLIT_SOLO_CITE_FLOOR gates the trigger so only
+    genuine fail-solo giants presplit; dropping the floor reproduces the misfire. Also: a
+    single-card batch now gets the CEIL kill budget regardless of a heal fallback (a lone card
+    has no batch-mates to starve, and the heal lane is no better budgeted on a slow API)."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '{#word#}¦ <lex>Adj.</lex>\n'
+           '— 1〉 {%Bedeutung eins%} <ls>Ref. 1</ls> <ls>Ref. 2</ls>.\n'
+           '— 2〉 {%Bedeutung zwei%} <ls>Ref. 3</ls> <ls>Ref. 4</ls>.\n'
+           '— 3〉 {%Bedeutung drei%} <ls>Ref. 5</ls>.\n')
+    key = 'zz~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    saved_ip, saved_ob = gh.input_paths, gh.OUTPUT_BUDGET
+    saved_floor = gh.PRESPLIT_SOLO_CITE_FLOOR
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        # no-PWG lane (--output-budget=1): with the default floor (40) a 5-<ls> card must NOT presplit.
+        gh.OUTPUT_BUDGET = 1
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 40
+        js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js, _re.M).group(1))
+        if key in presplit:
+            fail('under --output-budget=1 with the cite floor, a low-<ls> card must NOT presplit '
+                 '(it should translate whole); got PRESPLIT=%r' % presplit)
+        if '(cur.length === 1) ? KILL_CEIL_MS' not in js:
+            fail('killBudgetForCur must give ANY single-card batch the CEIL budget (H255/H823)')
+        # dropping the floor (=1) reproduces the pre-fix misfire: the citation-bearing card presplits.
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 1
+        js2, _b2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit2 = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js2, _re.M).group(1))
+        if key not in presplit2:
+            fail('with the floor disabled (=1), --output-budget=1 must presplit the citation-'
+                 'bearing card — proves the floor is load-bearing; got PRESPLIT=%r' % presplit2)
+    finally:
+        gh.input_paths = saved_ip
+        gh.OUTPUT_BUDGET = saved_ob
+        gh.PRESPLIT_SOLO_CITE_FLOOR = saved_floor
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_nominal_key_echo_tolerance_scoped():
     """H220: nominal / no-PWG windows must tolerate the model echoing the CLEAN SLP1 headword
     (nominal_keymap[stem], e.g. 'CAyA') instead of the mangled sub-card stem
@@ -4247,6 +4298,7 @@ def main():
         test_sense_dense_card_presplit,
         test_kill_gate_wired,
         test_no_fallback_single_gets_ceil_kill_budget,
+        test_presplit_cite_floor_and_single_ceil,
         test_nominal_key_echo_tolerance_scoped,
         test_selfheal_no_fallback_preserves_upstream_reason,
         test_group_by_budget_count_cap,
