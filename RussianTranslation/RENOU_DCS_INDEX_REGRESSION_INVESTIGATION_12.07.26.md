@@ -2,7 +2,7 @@
 
 _Created: 12-07-2026 · Last updated: 12-07-2026_
 
-**Handoff:** [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
+**Handoff:** [H771](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H771-Opus_RussianTranslation_renou-dcs-index-regression-investigation_12.07.26.md).
 **Model:** Opus 4.8 (`claude-opus-4-8`). Read-only against all data files
 (`.jsonl`, `dcs_lemma_renou.json`, `ls_source_map*.json`) — **zero files
 deleted, moved, renamed, or regenerated this session.** Adjudicates the
