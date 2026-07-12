@@ -927,6 +927,24 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
       "src/pilot/window_selftest.py": "503624233456ba24e6c0c7db663f94c8fd30b34d801651ac5fd5044d5992f078"
     }
+  },
+  {
+    "id": "gen_model_ledger_stamp_h390",
+    "mechanism": "H390 Phase 1 per-window model instrumentation. gen_opt_harness2 stamps the model pinned on the translate agent() calls into the run's own meta (meta.gen_model); window_reports.append_ledger records it on every window_ledger.jsonl row (read from workflow_meta); harvest_launch_stats surfaces a population-by-model slice plus a gen_model coverage count. Makes per-model rates (the Fable-vs-Sonnet A/B) computable straight off the ledger, which previously could not see which model generated a window.",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_reports.py",
+      "src/pilot/harvest_launch_stats.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H390 Phase 1 (12-07-2026, Opus 4.8 claude-opus-4-8). gen_model is written into the language-agnostic run meta and flows through the shared ledger writer and harvester identically for --lang ru/en. The only per-language difference is the model VALUE recorded ('claude-sonnet-5' for EN, the bare 'sonnet' alias for RU) — that is the pre-existing intentional divergence already tracked in sonnet5_explicit_model_pin_en; this entry records that value per window, it does not introduce a new divergence. Pinned by test_ledger_stamps_gen_model in window_selftest.py.",
+    "tracking": "",
+    "verified_sha256": {}
   }
 ]
 ```

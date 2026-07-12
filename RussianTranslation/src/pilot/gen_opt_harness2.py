@@ -1190,6 +1190,14 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'generated_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
         'root': root, 'safe_root': safe_name(root), 'lang': lang,
+        # H390 Phase 1: the model actually pinned on the translate agent() calls,
+        # recorded authoritatively in the run's own meta so the window ledger can
+        # stamp it per window (previously the model was invisible to the ledger —
+        # the blocker that made the Fable-vs-Sonnet A/B question uncomputable).
+        # EN pins the exact version; RU keeps the historical 'sonnet' alias (see the
+        # model-pin substitution below), so this records what was *requested*, which
+        # is the honest thing to attribute.
+        'gen_model': ('claude-sonnet-5' if lang == 'en' else 'sonnet'),
         'source_profile': source_profile,
         'source_profiles': source_profiles,
         'mode': 'nominal_masked' if nominal else 'batched_masked',
