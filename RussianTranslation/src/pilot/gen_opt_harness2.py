@@ -1806,7 +1806,17 @@ async function resolveGroup(pending, label) {
         if ((cand === undefined || cand === null) && NKM && NKM[k] && NKM[k] !== k) {
           const slp1 = NKM[k]
           const rivals = cur.filter(x => NKM[x] === slp1)
-          if (rivals.length === 1 && km[slp1] !== undefined && km[slp1] !== null) { cand = km[slp1]; cand.key1 = k }
+          if (rivals.length === 1) {
+            // The model may echo the CLEAN SLP1 headword alone (slp1), OR the SLP1 with the
+            // sub-card suffix kept — 'avyAhata~~h0_zz_pw' for the stem 'avy_ahata~~h0_zz_pw'
+            // (H255 avy_ahata: SLP1 headword, but the ~~<layer> suffix carried over). Both are
+            // unambiguous re-keys to the stem; still gated on META.nominal + rivals===1.
+            const sfx = k.includes('~~') ? k.slice(k.indexOf('~~')) : ''
+            const hit = (km[slp1] !== undefined && km[slp1] !== null) ? km[slp1]
+                      : (sfx && km[slp1 + sfx] !== undefined && km[slp1 + sfx] !== null) ? km[slp1 + sfx]
+                      : null
+            if (hit) { cand = hit; cand.key1 = k }
+          }
         }
         if (cand === undefined || cand === null) { noteFail(k, 'missing-or-mismatched-key'); return }
         const c = accept(cand, k)

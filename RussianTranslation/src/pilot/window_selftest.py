@@ -3042,6 +3042,11 @@ def test_nominal_key_echo_tolerance_scoped():
             fail('key-echo recovery must guard on an UNAMBIGUOUS SLP1->stem mapping within the batch')
         if 'rivals.length === 1' not in js or 'cand.key1 = k' not in js:
             fail('recovery must require exactly one rival stem and re-key the card to the stem')
+        # H255/H834: also accept the SLP1 headword with the sub-card suffix kept
+        # ('avyAhata~~h0_zz_pw' for the stem 'avy_ahata~~h0_zz_pw'), still gated + unambiguous.
+        if 'km[slp1 + sfx]' not in js:
+            fail('key-echo recovery must also accept the SLP1 headword carrying the ~~<layer> '
+                 'suffix (the H255 avy_ahata failure), not only the bare SLP1')
         # strict key lookup (km[k]) is still the FIRST attempt — tolerance is a fallback, not positional
         if 'let cand = km[k]' not in js:
             fail('strict key lookup km[k] must remain the primary match; tolerance is a fallback only')
