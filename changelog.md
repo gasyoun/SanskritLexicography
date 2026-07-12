@@ -15,17 +15,18 @@ not an error.
 ## [Unreleased]
 
 ### Changed
-- **Renou stage-redundancy audit (H692) — `@DECIDE` adjudicated: the 25-06
-  canonical `{code}.renou.jsonl` regeneration is a CORRECTION, not a
-  regression.** Proved exactly on the DCS axis (all 26,290 index-resolvable
-  `mw` rows: canonical `renou_dcs` == the `DCS_MIN_SUPPORT=2` projection of the
-  lossless `dcs_lemma_renou.json`, 0 mismatches — the old chain carried
-  single-text noise); the larger `<ls>`-axis divergence is explained by the
-  Phase 2/3 `<ls>` citation-route commits landing between the 23–24 June old
-  chain and the 25 June canonical rebuild. Canonical files are trustworthy
-  downstream; the old underscore chain's deletion (H771) was safe. Full evidence
-  in [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
-  § ADJUDICATION.
+- **Renou stage-redundancy audit (H692) `@DECIDE` — closed in the audit doc with
+  a pointer to the authoritative H771 verdict: the 25-06 canonical
+  `{code}.renou.jsonl` regeneration is a CORRECTION, not a regression.** The
+  primary org-wide adjudication is H771's
+  [`RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_DCS_INDEX_REGRESSION_INVESTIGATION_12.07.26.md)
+  ([PR #394](https://github.com/gasyoun/SanskritLexicography/pull/394): 28,662/646,926
+  rows = 4.4% divergent, all pure low-confidence DCS-noise removal, 0 anomalies;
+  `renou_ls` positionally byte-identical). The audit doc's § ADJUDICATION adds an
+  independent DCS-axis corroboration (all 26,290 index-resolvable `mw` rows:
+  canonical `renou_dcs` == the `DCS_MIN_SUPPORT=2` projection of the lossless
+  `dcs_lemma_renou.json`, 0 mismatches). Canonical files trustworthy downstream;
+  the old underscore chain's deletion (H771) was safe.
 
 ## [1.9.3] - 2026-07-12
 
