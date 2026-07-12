@@ -14,6 +14,20 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.3] - 2026-07-12
+
+### Added — interactive "Каталог каталогов" over FEATURES_INDEX.md
+- [`features_index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.html) —
+  a self-contained, filterable single-file HTML view of the capability inventory
+  (free-text search + category tabs Данные/Словари/Интерфейсы/Инструменты/Changelog
+  + status/size-tier/language filters), theme-aware, zero-dependency.
+- [`build_features_index_html.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/build_features_index_html.py) —
+  the generator that parses [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)
+  into that artifact, so the two never drift (edit the Markdown, re-run).
+- Closes the interactive-view item long marked "planned / not built yet" in
+  FEATURES_INDEX.md — and the «Каталог каталогов» deliverable of the 2004
+  AIOC-Varanasi programme manifesto.
+
 ## [1.9.2] - 2026-07-12
 
 ### Added — Kochergina okas/okya/guda/sphic attestation-verify review sheet (H779)
