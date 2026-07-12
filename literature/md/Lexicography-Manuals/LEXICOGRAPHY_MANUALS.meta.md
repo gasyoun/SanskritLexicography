@@ -33,7 +33,7 @@ new-chapter candidates, quality-bar audit) lives in
 - **Format:** Markdown conversions of scanned/borrowed book PDFs and OA papers; sizes
   3 KB–2.8 MB; quality varies (see defects below).
 - **First audit:** 10-07-2026, Fable 5 (`claude-fable-5`), handoff
-  [H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md)
+  [H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md)
   — 9 parallel read passes (close-reads of the 12 load-bearing works, skims of the rest).
 
 ## The 37 works — one-line relevance tags

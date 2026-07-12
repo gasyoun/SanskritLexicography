@@ -36,7 +36,7 @@ hub repo). Authored by Fable 5 (`claude-fable-5`).
 ### Phase 0 — on-ramp ✅ DONE
 
 Probe + rules + spec, as above. Handoff for the validation run exists:
-[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
+[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
 
 ### Phase 1 — bulk export → registered VisualDCS feed (unblocks everything) ✅ DONE 08-07-2026
 
@@ -46,7 +46,7 @@ Probe + rules + spec, as above. Handoff for the validation run exists:
   with provenance [README](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/README.md)
   (CC BY 4.0 attribution), registered in `non-derived/INDEX.md` + PROJECT_INTERLINKS.
   Handoff:
-  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
+  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md and execute it.
@@ -81,7 +81,7 @@ Sonnet-tier chat in `GitHub\WhitneyRoots`.
   (`content-enhancement`, Major Enhancements milestone). Finding logged:
   [FINDINGS.md §72](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   (renumbered from §63 on 11-07-2026).
-  Handoff: [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
+  Handoff: [H097](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md).
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H097-Sonnet_VisualDCS_gra_vedaweb_crosswalk_03.07.26.md and execute it.
@@ -103,16 +103,16 @@ Sonnet-tier chat in `GitHub\VisualDCS`.
   (Elizarenkova RU explicitly in-copyright to ~2078, Renou to ~2036). Full table + per-
   consumer effort estimates:
   [`VisualDCS/non-derived/vedaweb/LAYERS_TRIAGE.md`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/LAYERS_TRIAGE.md).
-  Handoff: [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
-- [x] **Rights confirmed same day** — [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
+  Handoff: [H098](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H098-Sonnet_VisualDCS_vedaweb_meter_translations_triage_03.07.26.md).
+- [x] **Rights confirmed same day** — [H359](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H359-Sonnet_Uprava_vedaweb_rights_outreach_send_08.07.26.md)'s
   outreach email to VedaWeb (Prof. Kölligan/Reinöhl) got an explicit written reply: all 4
   candidate layers (Metrical Data 2024, Elizarenkova RU, Geldner de, Grassmann de)
   confirmed **CC BY 4.0**, same terms as H096's already-landed layers — retroactively
   confirming H096's blanket claim too. VedaWeb also confirmed the 34-null-license gap is a
   metadata omission, not an absence of rights, and will backfill it. Consumer handoffs
-  minted: [H360](https://github.com/gasyoun/Uprava/blob/main/handoffs/H360-Sonnet_SanskritKaraoke_vedaweb_metrical_verse_seeds_08.07.26.md)
-  (SanskritKaraoke meter), [H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md)
-  (RussianTranslation RU witness), [H362](https://github.com/gasyoun/Uprava/blob/main/handoffs/H362-Sonnet_VisualDCS_vedaweb_geldner_grassmann_pwg_gloss_08.07.26.md)
+  minted: [H360](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H360-Sonnet_SanskritKaraoke_vedaweb_metrical_verse_seeds_08.07.26.md)
+  (SanskritKaraoke meter), [H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md)
+  (RussianTranslation RU witness), [H362](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H362-Sonnet_VisualDCS_vedaweb_geldner_grassmann_pwg_gloss_08.07.26.md)
   (PWG German gloss witness).
 
 ```

@@ -114,7 +114,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   [`release/query/de_sense_citation_dcsfreq.rq`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/query/de_sense_citation_dcsfreq.rq).
   Full gate **PASSED**. Design + layer inventory:
   [`PWG_PLUS_GERMAN_ENRICHMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md).
-  ([H772](https://github.com/gasyoun/Uprava/blob/main/handoffs/H772-Opus_SanskritLexicography_pwg_plus_german_enrichment_lod_12.07.26.md), Opus 4.8 `claude-opus-4-8`)
+  ([H772](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H772-Opus_SanskritLexicography_pwg_plus_german_enrichment_lod_12.07.26.md), Opus 4.8 `claude-opus-4-8`)
 
 ### H775 — capability roadmap cards 5 + 23: MFS baseline + government sidecar (local-only)
 - New [`src/mfs_baseline.py`](src/mfs_baseline.py) (roadmap card 5): groups the
@@ -179,7 +179,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ### H428 — opt2 generation schema slimmed to reachable-AND-model-generated fields, unblocking the classifier
 - The Workflow tool's `agent()` safety classifier was blocking 100% of opt2
-  translation calls (67/67 in [H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md),
+  translation calls (67/67 in [H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md),
   52/52 in H388's B-arm) with `output schema too large to classify safely`, at
   0 subagent tokens — the reachable `CARDS_SCHEMA` had grown to 10,940 chars
   after H335 (`government`)/H405 (`evidence`/`evidence_summary`)/H422 (`stats`)
@@ -432,7 +432,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Sanskrit + its Russian rendering into the `corpus_builder/<work>.jsonl` schema the
   L0 pipeline already consumes — tagged `modality=oral` with `t_start`/`t_end` time
   anchors, `source_media`, optional `asr_conf`, and a canonical `iast_to_slp1` key. No
-  ASR, no cleaning (that is [H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)'s
+  ASR, no cleaning (that is [H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)'s
   upstream stage — this is the Sa→Ru-alignment half). Parallel tracks pair by index;
   a cue-count mismatch is a hard error, never a silent `zip()` truncation.
 - **Lowered base grade for oral** in one place: shared `build_tmx.oral_cap()` forbids

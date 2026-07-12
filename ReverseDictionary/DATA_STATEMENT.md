@@ -7,7 +7,7 @@ following the current [schema v3 (2024)](https://techpolicylab.uw.edu/data-state
 (17 fine-grained elements from Curation Rationale through Dataset Maintenance, grouped
 below under their core headings). Written per
 [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
-§4 step 4 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)),
+§4 step 4 ([H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md)),
 which explicitly calls for honesty about undecided distribution status rather than
 waiting for the licensing ruling — several elements below are marked **undecided** on
 purpose, not left blank by oversight.

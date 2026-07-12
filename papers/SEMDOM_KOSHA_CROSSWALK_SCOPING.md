@@ -3,7 +3,7 @@
 _Created: 11-07-2026 · Last updated: 11-07-2026_
 
 Scoping deliverable of
-[H725](https://github.com/gasyoun/Uprava/blob/main/handoffs/H725-Fable_SanskritLexicography_semdom-kosha-crosswalk-scoping_11.07.26.md),
+[H725](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H725-Fable_SanskritLexicography_semdom-kosha-crosswalk-scoping_11.07.26.md),
 executing the MG ruling of 11-07-2026 recorded in
 [SIL_MDF_ECOSYSTEM_CORRELATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SIL_MDF_ECOSYSTEM_CORRELATION.md)
 §3 item 5 and §5 item 4. Researched and written by Fable 5 (`claude-fable-5`); web and
@@ -16,7 +16,7 @@ A crosswalk between SIL's ~1,800 semantic domains and the Amarakosha varga struc
 ID-pair table**. Recommended build shape: a two-level crosswalk (varga→domain structural
 map + a gold-standard synset-level pilot), bridged automatically through the existing
 semdom↔WordNet mapping, human-verified. Build handoff:
-[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
+[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
 (minted this pass); paper registered via `/articles-update`.
 
 ## 1. Novelty — confirmed
@@ -109,7 +109,7 @@ parse-rules evaluations.
 
 **What CDSL gains:** an `\sd` semantic-domain layer it currently lacks — emitted into the
 MDF/LIFT exports of
-[H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)
+[H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)
 (MDF §6.4 / App. C field), and a semantic-domain browse axis over MW/PWG via their AK
 citations. Also instantly localizable UI labels: FwLocalizations ships domain names in
 Russian and Hindi.
@@ -153,11 +153,11 @@ Total to a submittable short paper: **~4 sessions**.
 
 - GO verdict per §1–§3: assets exist, novelty confirmed, licence route clean.
 - Build handoff
-  [H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
+  [H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
   minted this pass (Level A + Level B pilot + kosha-manifest registration).
 - Paper registered in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
   via `/articles-update` (readiness 1→2 once H736 lands data).
-- Feeds [H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)'s
+- Feeds [H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)'s
   `\sd` field on delivery.
 
 ## 7. Results (H742 build, 11-07-2026, Fable 5 `claude-fable-5`)

@@ -7,7 +7,7 @@ Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_r
 re-investigates what a 05-07-2026 scout (Opus 4.8) already found: **~98% of the
 Russian sources MG brainstormed already exist and are wired**; the small gap
 (two specialist name-glossaries) was closed the same day by
-[H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md).
+[H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md).
 See also [`src/README.md`](src/README.md) for the per-source technical contract
 (schema, key hygiene, regeneration commands) — this file is the map of *what
 exists and where it plugs in*, not the extraction spec.
@@ -83,7 +83,7 @@ transcripts) stays a **read-only context lookup**, not a source of aligned
 Sa→Ru training pairs, for this map. **MG overrode that "skip" framing
 05-07-2026**: these prose sources ARE to be mined into a separate, lower-
 confidence `mined` TM layer — see
-[H186](https://github.com/gasyoun/Uprava/blob/main/handoffs/H186-Opus_RussianTranslation_pwg_ru_tm_corpus_mining_expansion_05.07.26.md)
+[H186](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H186-Opus_RussianTranslation_pwg_ru_tm_corpus_mining_expansion_05.07.26.md)
 Track B. H186 Track A additionally aligns ~12 not-yet-added parallel Sa-Ru
 texts. This map's "context only" framing applies to what `corpus_gate.py`
 currently does with these sources — H186 is the tracked plan to go further.

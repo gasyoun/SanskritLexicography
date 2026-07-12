@@ -5,7 +5,7 @@ _Created: 06-07-2026 · Last updated: 06-07-2026_
 **Verdict: 🟢 GO on both translation paths.** No blocker. One correctness finding
 (SHA-less autosplit provenance) was fixed by PR during this audit; the rest are 🟡 hygiene.
 
-> **Executor note (model provenance).** [H188](https://github.com/gasyoun/Uprava/blob/main/handoffs/H188-Codex_RussianTranslation_pwg_ru_full_pipeline_audit_05.07.26.md)
+> **Executor note (model provenance).** [H188](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H188-Codex_RussianTranslation_pwg_ru_full_pipeline_audit_05.07.26.md)
 > was written for **Codex/GPT-5**, but the `Read … and execute it.` line was pasted into a
 > **Claude Opus 4.8 (`claude-opus-4-8`)** session, which ran this audit. The audit mandate is
 > model-agnostic (deterministic selftests, gate replays over the promoted store, static
@@ -34,7 +34,7 @@ The handoff's seed findings were partly overtaken — the pipeline advanced from
 5. **Seed #5 — PR #119 gate fixes never swept over ~48 promoted roots** — the *fixes
    themselves* are confirmed present and pinned (Dimension 2). The *content* re-audit over
    already-promoted roots remains
-   [H178](https://github.com/gasyoun/Uprava/blob/main/handoffs/H178-Fable_RussianTranslation_pwg_ru_acl_verify_improve_05.07.26.md)
+   [H178](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H178-Fable_RussianTranslation_pwg_ru_acl_verify_improve_05.07.26.md)
    Part A-1's job — not duplicated here.
 
 ## Deterministic verification suite (evidence)
@@ -170,7 +170,7 @@ prevents the historical gam-RU wipe.
 | Path | Handoff | Verdict | Basis |
 |---|---|---|---|
 | **Verb drain** | [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md) | 🟢 **GO** | worklist sound (17 runnable now), dedup correct, TM trap closed, promote hardened |
-| **Nominal-core queue** | [H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md) | 🟢 **GO** | keymap landed + pinned, cumulative dedup sound, no-PWG lane separated, keys to true headword |
+| **Nominal-core queue** | [H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md) | 🟢 **GO** | keymap landed + pinned, cumulative dedup sound, no-PWG lane separated, keys to true headword |
 
 **The translation run can start at scale on both paths.** No run-stopper remains. F1 (the only
 store-affecting finding) is fixed forward; the residual 🟡 items are quality/cleanup, none
@@ -180,7 +180,7 @@ gating production.
 
 The ACL-Anthology-grade full methodological pass (evaluation protocol, data statement,
 reproducibility appendix, error taxonomy) is **not** in this audit. It is
-[H178](https://github.com/gasyoun/Uprava/blob/main/handoffs/H178-Fable_RussianTranslation_pwg_ru_acl_verify_improve_05.07.26.md)
+[H178](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H178-Fable_RussianTranslation_pwg_ru_acl_verify_improve_05.07.26.md)
 Part B's job and gets its own follow-on handoff — see the H188 wrap in
 [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md).
 

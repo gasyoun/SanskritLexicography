@@ -114,7 +114,7 @@ not an error.
   precision 17.5% (candidate generator, not classifier). Results also in
   [`papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md)
   §7. Feeds the H721 MDF/LIFT `\sd` layer; paper A58. Per
-  [Uprava H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md).
+  [Uprava H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md).
 
 ## [1.7.0] - 2026-07-11
 
@@ -178,7 +178,7 @@ not an error.
   build/test/deploy state (built + tested, **not yet deployed** — no
   `research/` on `gh-pages`). Router row added, PROFILE deep-manual queue row
   flipped, metadoc revision logged. Third item of the H604 queue; per
-  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
+  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
 
 ## [1.5.2] - 2026-07-11
 
@@ -223,7 +223,7 @@ not an error.
   [router README](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md).
   Linked from the root README documentation map. Language follows audience
   (student = Russian; the rest English). Built under
-  [Uprava H535](https://github.com/gasyoun/Uprava/blob/main/handoffs/H535-Opus_SanskritLexicography_audience-manuals-quartet_10.07.26.md).
+  [Uprava H535](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H535-Opus_SanskritLexicography_audience-manuals-quartet_10.07.26.md).
 
 ### Changed — CLAUDE.md reflects the repo is now hybrid (data + code)
 - Corrected the stale "no source code (no `.py`…)" and "Python/JS lint jobs …
@@ -361,7 +361,7 @@ Section backfilled 11-07-2026 from the
   PWG cites this collection 6,666 times and PWK 138 times as `Spr. N` — see
   [`IndischeSprueche/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/README.md)
   for provenance and the scoped PWG/PWK citation-crosswalk follow-on
-  ([Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)).
+  ([Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H143_pwg_pwk_indische_sprueche_crosswalk.md)).
 
 ## [1.1.4] - 2026-07-03
 

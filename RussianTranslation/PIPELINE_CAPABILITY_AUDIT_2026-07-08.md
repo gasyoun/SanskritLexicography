@@ -3,7 +3,7 @@
 _Created: 08-07-2026 · Last updated: 09-07-2026 (H425 re-verification)_
 
 Audit-only pass answering MG's four capability questions of 08-07-2026
-([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
+([H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)).
 No pipeline behavior changed; the one new file is the deterministic census script
 [`src/government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py)
 (selftest-gated, read-only over the source). Audited by Fable 5 (`claude-fable-5`);

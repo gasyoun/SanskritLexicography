@@ -18,7 +18,7 @@ PWG→RU translation; none is scheduled yet.
 - **W1–W4 audit specs (3-account concurrency, per-source evidence vector, case-government backfill, sense→genre attribution)** →
   [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md) and the H335 audit it launched.
 - **Nominal-core queue reorder (Приложение 5/10, tier ordering, Сборное ядро = 7,532)** →
-  [H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md).
+  [H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md).
 - **Addenda typology + content-aware glue + learner-retention layering** →
   [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).
 - **Zaliznyak IIL polemical article** → SanskritGrammar's `IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md` +

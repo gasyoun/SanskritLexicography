@@ -7,11 +7,11 @@ The first crosswalk between SIL's semantic domains
 and a classical thesaurus — the Amarakosha
 ([sanskrit-lexicon/AMAR amar.txt](https://github.com/sanskrit-lexicon/AMAR/blob/master/amar.txt),
 24 vargas, 5,590 `eid` synsets, ~6th c. CE). Built by
-[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
+[H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
 per the GO scoping memo
 [SEMDOM_KOSHA_CROSSWALK_SCOPING.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SEMDOM_KOSHA_CROSSWALK_SCOPING.md)
 (H725). Paper: A58 in the Uprava pipeline. Consumer:
-[H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)
+[H721](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H721-Sonnet_csl-standards_mdf-spec-refine-lift-export_11.07.26.md)
 (`\sd` field of the MDF/LIFT exports).
 
 **Licensing:** all committed tables are **ID pairs only** (semdom codes/GUIDs ↔

@@ -25,7 +25,7 @@ already generates the live hrefs. **The 1st edition is the one PWG actually
 cites**, per the issue title — do not assume `Spr. N` resolves against the
 2nd-edition data below.
 
-[Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H143_pwg_pwk_indische_sprueche_crosswalk.md)
+[Uprava H143](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H143_pwg_pwk_indische_sprueche_crosswalk.md)
 was minted to build this crosswalk from scratch and **retracted the same day**
 once the above was found — a genuine prior-art miss (the search that led here
 never checked `funderburkjim`'s personal repos or the `sanskrit-lexicon-scans`

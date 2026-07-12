@@ -2,7 +2,7 @@
 
 _Created: 08-07-2026 · Last updated: 08-07-2026_
 
-Measurement for [H317](https://github.com/gasyoun/Uprava/blob/main/handoffs/H317-Sonnet_RussianTranslation_pwg-ru-medium50-test_07.07.26.md):
+Measurement for [H317](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H317-Sonnet_RussianTranslation_pwg-ru-medium50-test_07.07.26.md):
 a controlled 50-headword test of the PWG→RU pipeline on **medium** words (DCS
 frequency band 4, nominal, 3–30 citations per entry — see
 [`src/pilot/select_medium50.py`](src/pilot/select_medium50.py) for the exact
@@ -99,7 +99,7 @@ no-fallback-singleton finding) rather than assuming transient infra again.
 
 ## Update — 09-07-2026 diagnostic (H389): the real blocker is the agent() schema classifier, not transient infra
 
-[H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md)
+[H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md)
 launched the single solo diagnostic window this measurement recommended
 (`h317_w1a`, 13 keys, no concurrency), on 09-07-2026, Opus 4.8
 (`claude-opus-4-8`) driving the Workflow tool; generation model unchanged
@@ -143,7 +143,7 @@ retrying is pointless.
 **Decision: STOP the H317/H389 window resume.** Do not launch `h317_w1b`,
 `h317_w2a`, or `h317_w2b` — they would each hit the same deterministic refusal.
 Escalated to
-[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md):
+[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md):
 slim the *generation* schema to reachable-AND-model-generated fields only (drop
 the post-generation-added `government`/`evidence`/`evidence_summary`/`labels`/
 `renou*`, trim descriptions, flatten `$defs`), pinned by a `window_selftest.py`
@@ -156,10 +156,10 @@ Classified in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) as
 
 ## Update — 09-07-2026 relaunch (H437): classifier IS unblocked, but the kill-gate cascade is now the isolated blocker
 
-[H437](https://github.com/gasyoun/Uprava/blob/main/handoffs/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md)
+[H437](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md)
 relaunched the three windows H389 could not (`h317_w1b`, `h317_w2a`,
 `h317_w2b`) now that
-[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md)
+[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md)
 slimmed the opt2 generation schema (10,940 → 1,698 chars; `--dump-schema`
 re-confirmed 1,698 at the start of this session). Opus 4.8 (`claude-opus-4-8`)
 drove the Workflow tool; generation model unchanged (Sonnet 5, hardcoded in the
@@ -228,7 +228,7 @@ bug-hunt handoff for the recalibration). Compact rollup row in
 
 ## Update — 10-07-2026 (H442): per-card heal budget landed; w1b re-measure CONFOUNDED by transient slowness
 
-[H442](https://github.com/gasyoun/Uprava/blob/main/handoffs/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md)
+[H442](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md)
 (Opus 4.8 `claude-opus-4-8` drove the Workflow; generation Sonnet 5, hardcoded) added a
 **per-card heal-call ceiling** (direction #1 of the handoff — fail fast, not
 heal-to-exhaustion): `selfHeal` derives one shared `{spent,max}` per card sized
@@ -353,7 +353,7 @@ degraded. A load-representative probe is required: the failures cluster on multi
 a one-word prompt exercises none of that path. **Action:** the probe must send a skeleton-sized
 payload (≥5 KB) and assert sub-30 s, before it can be trusted to authorize a ~2 M-token launch.
 Recorded in the probe log; gate tightening tracked in
-[H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
+[H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
 
 ### Not token-comparable to runs 1–2
 

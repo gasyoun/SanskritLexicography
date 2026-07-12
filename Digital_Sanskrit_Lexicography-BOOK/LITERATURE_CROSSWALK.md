@@ -3,7 +3,7 @@
 _Created: 10-07-2026 · Last updated: 10-07-2026_
 
 The book-scoped deliverable of handoff
-[H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md):
+[H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md):
 the 37-work lexicography / corpus-linguistics / historical-linguistics library at
 [literature/md/Lexicography-Manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md/Lexicography-Manuals)
 read against
