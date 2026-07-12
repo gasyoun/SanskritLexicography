@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H833 / E2 (H350 backlog #3) — sense-genre vs DCS attestation: thesis NOT supported
+- New research analysis [`research/analyze_sense_genre_attestation.py`](research/analyze_sense_genre_attestation.py)
+  tests memo §E2: does per-sense citation-genre predict DCS corpus attestation
+  *better* than the lemma's aggregate genre? Reuses `annotate_genres.genres_for_text`
+  (H339) for genre; no reimplementation, no DCS→feature leakage.
+- **Result (n=1316 headword lemmas, 49.8% DCS-attested):** sense-resolution genre
+  (Model B, AUC 0.710) shows **no advantage** over the lemma-union representation
+  (Model A, AUC 0.716); ΔAUC(B−A) = −0.006, 95% bootstrap CI [−0.020, +0.009]
+  (straddles 0). The W4 "per-sense granularity is the right unit" claim is **not
+  vindicated for corpus-attestation prediction** at current scale.
+- **Real signal that does hold:** attestation is dominated by citation *volume*
+  (size-only baseline AUC 0.700; genre adds only ~+0.016); and a *pure* sense in
+  kāvya/purāṇa/kośa/śāstra significantly raises attestation odds (OR 2.2–3.5, CI>1)
+  while Vedic-only senses do not (OR 1.06) — an antiquarian-vocabulary signal.
+- Committed: script + [`research/SENSE_GENRE_ATTESTATION_FINDINGS.md`](research/SENSE_GENRE_ATTESTATION_FINDINGS.md)
+  + `sense_genre_attestation_metrics.json` + `research/figures/sense_genre_attestation.png`;
+  inputs (store + `dcs_freq_dims.json`) stay gitignored. `--selftest` green.
+  Analysis by Opus 4.8 (`claude-opus-4-8`).
+
 ### H823 — presplit cite-trigger floor + single-card CEIL kill budget (no-PWG lane fix)
 - [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py): the CITATION presplit trigger now fires
   only when `(1+<ls>) > max(OUTPUT_BUDGET, PRESPLIT_SOLO_CITE_FLOOR=40)` (new
