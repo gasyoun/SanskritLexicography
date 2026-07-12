@@ -12,6 +12,23 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
+## [Unreleased]
+
+## [1.8.2] - 2026-07-12
+
+### Added — Böhtlingk item-#1 shared-omission finding + Stache-Weiske notes (H796)
+- [FINDINGS §82](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md):
+  MW and the Petersburg dictionaries are **not** independent witnesses on inventory/apparatus
+  (do not count their agreement as corroboration) — but no shared *error* has ever been found.
+  Grounded in the new csl-atlas shared-omission test (A10 §3.5 / F9,
+  [csl-atlas PR #263](https://github.com/sanskrit-lexicon/csl-atlas/pull/263)): on 6,941 real
+  indigenous-attested words, MW's omissions track PWG's ≈8× more than the independent Apte's, yet
+  MW independently supplies 54.6% of PWG's gaps.
+- Reading notes on the source paper:
+  [`papers/Stache-Weiske_Bö-MW.notes.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/Stache-Weiske_Bö-MW.notes.md)
+  — the itemised 1881–83 charge (omission/error/sense-order) mapped to each A10 test, with the
+  remaining open clause (sense-order) and the 35-Stellen gold-set flagged as actionable.
+
 ## [1.8.1] - 2026-07-12
 
 ### Added — A58 paper skeleton + grammatical-annex counted table (H767/H774)

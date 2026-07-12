@@ -2040,6 +2040,50 @@ vidyut is not competitive with a DCS crosswalk on epic verse (per the standing
 > ([annotation_3path_metrics.json](https://github.com/gasyoun/SamudraManthanam/blob/main/nkrya-parallel/export/annotation_3path_metrics.json)) ·
 > SamudraManthanam · 12-07-2026, Fable 5 (`claude-fable-5`).
 
+### §82. MW and the Petersburg dictionaries are NOT independent witnesses on inventory or apparatus — do not count their agreement as corroboration; but no shared *error* has ever been found
+
+Monier-Williams inherited Böhtlingk's **apparatus** — which words to enter, which
+texts to cite and in what order, how to divide homonyms — measured six ways in
+A10 ([`article_21_apparatus_not_errors.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md)).
+The new **shared-omission** cut (F9, A10 §3.5) settles the negative-space side:
+on 6,941 real words attested in both indigenous kośas (SKD ∩ VCP), whether MW
+enters a word is **≈8× more predicted by PWG's decision** than by an independent
+compiler's (gap-sensitivity 12.3× vs Apte 1.5×). **Consequence for any downstream
+analysis:** PWG/PW ↔ MW agreement — shared headwords, shared citations, shared
+sense structure, "the tradition agrees" tallies (cf. the etymology-extraction
+90–100% agreement, [`project_cologne_etymology_extraction`]) — is **inheritance,
+not independent confirmation.** When counting how many *independent* authorities
+back a reading, PWG, PW **and** MW collapse to roughly **one** European witness;
+the genuinely independent European-tradition control is **Apte**, and the indigenous
+kośas (SKD, VCP, Amarakośa) are the independent non-European anchor.
+
+The **positive counter-fact**, equally load-bearing: MW carries over **none** of
+Böhtlingk's mechanical errors (F4b Ahlborn ≈0%, F4a 0 shared print errors) and
+recomposed its English prose (F3/F6), and it independently supplies **54.6%** of the
+real indigenous words PWG omits — *more* than Apte. So the non-independence is of
+**scholarship/inventory**, not of typesetting or prose. Documentary basis: Böhtlingk's
+1883 *pw* preface (35 cited passages) and the Böhtlingk↔Max-Müller correspondence,
+Stache-Weiske 2015 ([`papers/Stache-Weiske_Bö-MW.notes.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/Stache-Weiske_Bö-MW.notes.md)).
+
+**On the shared-*erroneous-citation* avenue — a measured null, not a closed door.**
+The Lachmann-style airtight proof (a citation *wrong* against the text, present in
+both dicts) returned measured nulls on the corpora tested: 1/587 resolvable against
+DCS (edition-mismatch block), and 0 shared errors against the Kinjawadekar Harivaṃśa
+vulgate. That is a **recorded negative result on those candidate sets**, not evidence
+of independence and not proof the avenue is exhausted — a Nilakantha-**vulgate** full
+Mahābhārata e-text would reopen it (see [`DEAD_ENDS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) §8/§8b). The
+untested shared-error surfaces remain **shared headword/gloss misprints and copied
+sense-order** (F5 citation-order 0.811 is suggestive but not the meaning-order Müller
+named).
+
+> **Source:** csl-atlas A10 §3.5 / F9
+> ([`f9_shared_omission.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/f9_shared_omission.py),
+> [`SHARED_OMISSION_TEST.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/forensic/SHARED_OMISSION_TEST.md),
+> [csl-atlas PR #263](https://github.com/sanskrit-lexicon/csl-atlas/pull/263)) ·
+> [H796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H796-Opus_csl-atlas_boehtlingk_mw_shared_omission_test_12.07.26.md) ·
+> 12-07-2026, Opus 4.8 (`claude-opus-4-8`).
+> ↔ [ASSUMPTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (independence premise for tradition-agreement counts) · [DEAD_ENDS.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (shared-erroneous-citation null).
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
