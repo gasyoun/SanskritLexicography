@@ -143,7 +143,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `renou_ls`/`renou_dcs`/`renou_enriched`) → **DO NOT DELETE**, `@DECIDE`
   raised on whether that regeneration was a correction or a regression.
   Zero data files touched this session — proposal only, per
-  [H692](https://github.com/gasyoun/Uprava/blob/main/handoffs/H692-Fable_RussianTranslation_assembled-cards-dedup-verify_11.07.26.md)'s
+  [H692](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H692-Fable_RussianTranslation_assembled-cards-dedup-verify_11.07.26.md)'s
   stop condition. Verification script:
   [`src/renou_stage_redundancy_check.py`](src/renou_stage_redundancy_check.py).
 
