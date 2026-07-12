@@ -10,12 +10,13 @@ answers *"don't rebuild — consume this"*, this file answers *"what exists at a
 inventory a newcomer (or a fresh session) reads to see the shape of the whole. Every asset
 carries a **real example** and its **first-introduced month/year**.
 
-- **Interactive view:** planned — a filterable single-file HTML artifact (search + category
-  tabs + status/severity/language filters + clickable tags + a changelog) over this same
-  catalogue. **Not built yet** — no generator script or output file exists on disk as of
-  11-07-2026 (checked `SanskritLexicography/` and `Uprava/` for `*features*index*.html`
-  and a matching build script; none found). Until it exists, this Markdown table is the
-  only view — use Ctrl+F / your editor's table search, not a promised UI that isn't there.
+- **Interactive view:** **built** — [`features_index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.html),
+  a self-contained, filterable single-file HTML artifact (free-text search + category tabs
+  Данные/Словари/Интерфейсы/Инструменты/Changelog + status/size-tier/language filters),
+  theme-aware, no dependencies. It is **generated from this Markdown file** by
+  [`build_features_index_html.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/build_features_index_html.py)
+  (`python build_features_index_html.py`), so the two never drift — edit the Markdown,
+  re-run, never hand-edit the HTML. The Markdown table below remains the canonical source.
 - **Code-level "who owns this":** [`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md).
 - **Data-flow "who feeds whom":** [`PROJECT_INTERLINKS.md`](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md).
 
@@ -301,6 +302,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **Interactive view built** — the promised filterable single-file HTML artifact now exists: [`features_index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.html), generated from this Markdown by [`build_features_index_html.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/build_features_index_html.py) (search + category tabs + status/tier/language filters, theme-aware, zero-dependency). Closes the 2004-manifesto «Каталог каталогов» deliverable. |
 | 07/26 | **C19** — semdom ↔ Amarakosha crosswalk (H742): first SIL-semantic-domains ↔ classical-thesaurus map — Level A varga map (108 ID pairs) + 5,590-synset candidate table + 200-synset dual-annotated gold (κ 0.677); bridge measured as candidate-generator-only (top-1 17.5%, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). |
 | 07/26 | **E41 · E42 · F43** — the census-named tracked-but-uncounted trio registered (H694): csl-observatory correction-event log (52,498 × 3 views, 178 MB), Kompozity `names.csv` compound splits (168,880, 90.7 MB), CORRECTIONS `allngramtxt.txt` n-gram oracle (6,656,616, 82.3 MB). |
 | 07/26 | **E40** — headword pairwise-overlap matrix + unique counts over the 15-dict union (H684): 105 pairs, Jaccard, per-dict unique inventories; resolves the stale "union 94,753" figure (= MW∩PWG). |
