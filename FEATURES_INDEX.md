@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 11-07-2026_
+_Created: 04-07-2026 · Last updated: 12-07-2026_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -78,7 +78,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | ⚪ C16 | union `coverage_additions.tsv` | Headwords found beyond the core CDSL dictionaries | union · 711 KB | `5   nominal   enad   enad` | 06/26 | [HeadwordLists/union](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) |
 | 🟢 C17 | csl-atlas `alignment-confidence.json` | Per-pair cross-dict headword alignment confidence, sharded | 164 shards · 43.0 MB | `{ "code":"mw", "label":"MW", "grammarReliable": true }` | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
 | 🟢 C18 | csl-atlas low-confidence review set | Alignments flagged below threshold for a human pass | review set · 31.3 MB | the below-threshold subset of `alignment-confidence.json` (schema) | 05/26 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) |
-| 🟢 C19 | semdom ↔ Amarakosha crosswalk | First SIL semantic-domains ↔ classical-thesaurus map (H742): Level A varga↔domain ID pairs (108, hand-authored) + top-6 machine candidates for all 5,590 AK synsets + 200-synset adjudicated gold (κ 0.677; bridge top-1 17.5% — a shortlist, not labels, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); CC BY-SA 4.0, feeds the H721 MDF/LIFT `\sd` layer | 108 + 5,590 + 200 rows · ~400 KB | `AK-1.4,kAlavargaH,…,8.4,…,Time,close` | 07/26 | [data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md) |
+| 🟢 C19 | semdom ↔ Amarakosha crosswalk | First SIL semantic-domains ↔ classical-thesaurus map (H742): Level A varga↔domain ID pairs (108, hand-authored) + top-6 machine candidates for all 5,590 AK synsets + 200-synset adjudicated gold (κ 0.677; bridge top-1 17.5% — a shortlist, not labels, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); + the grammatical-annex symmetry counted by [semdom_ak_annex_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/semdom_ak_annex_table.py) (H774: AK kāṇḍa 3 46.4% of synsets vs semdom top-9 9.4% of domains, converging 10.7% vs 9.4% sans nānārtha, [FINDINGS §77](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); CC BY-SA 4.0, feeds the H721 MDF/LIFT `\sd` layer | 108 + 5,590 + 200 rows · ~400 KB | `AK-1.4,kAlavargaH,…,8.4,…,Time,close` | 07/26 | [data/SEMDOM_AK_CROSSWALK_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md) |
 
 ### D · Heritage & morphology oracles
 
