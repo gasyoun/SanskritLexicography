@@ -34,6 +34,7 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-12T15:07:27Z | warmup | NO-GO | 35.7s | 0 | 6542B | no_pwg_w07 | H255 | post-H805 2nd reading; 6577-char clean RU reply, 0 conn-err, 48.5K tok. latency=total workflow duration; WORSE than the 31.6s reading ~1h earlier — env not recovering. NO drain window fired. |
 | 2026-07-12T15:28:48Z | warmup | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | SCHEMA-CARRYING probe (real StructuredOutput CARDS_SCHEMA path on a live small w07 sub-card, anirvacanIya) — valid RU card in 53.9s, 0 conn-err. HEALTHY for a card call: baseline ~55-105s fixed StructuredOutput latency, kill ceiling 180s (H220). GO overrides the 30s plain-probe ceiling, which does NOT apply to schema/StructuredOutput calls. The plain probes (31.6/35.7s) over-stated degradation; the real generation path is fine. |
 | 2026-07-12T15:42:11Z | launch | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | w07 launch after the schema-carrying GO; isolated 1-wide probe was 54s but the ~10-wide window degraded |
+| 2026-07-12T16:34:14Z | warmup | GO | 26.0s | 0 | 6491B | h709-reprobe | H709 | H709 SERVER_OUTAGES re-probe: load-representative warm-up (6491B masked band-4 skeleton). GO by mechanical gate but latency ~26s vs 3.3s healthy baseline = marginal/degraded-recovering; expensive medium50 launch deliberately NOT fired (H709 cheapest-task-only rule + medium50 paused on code side). |
 
 ## Measured launch outcomes
 
