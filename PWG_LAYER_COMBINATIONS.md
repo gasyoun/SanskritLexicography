@@ -1,6 +1,6 @@
 # PWG entry layer combinations
 
-_Created: 05-07-2026 · Last updated: 11-07-2026_
+_Created: 05-07-2026 · Last updated: 12-07-2026_
 
 Grounded in the actual merge code — [`RussianTranslation/src/dict_merge.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/dict_merge.py) (the `LAYERS`/`NWS_LAYER` definitions and the `merged()` function) — and on working notes (`pwg-layers.md`) that were never committed to the repository. Not a new design — this documents the existing pwg_ru merge rule and enumerates the subset combinations it implies, then **measures which actually occur** in the csl-orig data.
 
@@ -34,12 +34,12 @@ Ran a direct tally over the 4 local layer indexes (`index('pwg')`, `index('pw')`
 | pwg (alone) | 6,453 | 3.8% |
 | **pw + sch + pwkvn** (no pwg) | **10,057** | **6.0%** |
 | **sch** (no pwg) | **9,990** | **5.9%** |
-| pwg + pw + pwkvn | 3,842 | 2.3% |
+| pwg + pw + sch + pwkvn | 3,842 | 2.3% |
 | pwg + pw + sch | 3,766 | 2.2% |
 | **pw + pwkvn** (no pwg) | **875** | **0.5%** |
 | **pw + sch** (no pwg) | **624** | **0.4%** |
 | pwg + sch | 174 | 0.1% |
-| pwg + pw + pwkvn (dup row, see below) | 199 | 0.1% |
+| pwg + pw + pwkvn | 199 | 0.1% |
 | **pwkvn** (no pwg) | **20** | **0.01%** |
 | **sch + pwkvn** (no pwg) | **2** | **0.001%** |
 
@@ -97,7 +97,7 @@ Every non-empty subset of the 5 layers, now labeled with **measured** counts whe
 
 ## What changed from the first draft
 
-The original version of this doc marked every no-PWG combination as "theoretical" — an unverified guess. The measurement flips that: no-PWG combinations account for **~35,900 headwords out of ~167,988 (≈36% of local headword coverage)**, dominated by PW-only. Only two of the seven measured no-PWG combinations are genuinely rare (`pwkvn`-only at 20, `sch+pwkvn` at 2) — the rest are substantial, real categories that any full pwg_ru pass will hit routinely.
+The original version of this doc marked every no-PWG combination as "theoretical" — an unverified guess. The measurement flips that: no-PWG combinations account for **61,906 headwords out of 167,988 (36.9% of local headword coverage)**, dominated by PW-only. (Until 12-07-2026 this line said "~35,900" — an arithmetic slip; the table's own no-PWG rows sum to 61,906. The tally was re-run under H702, Fable 5 `claude-fable-5`, and reproduced combo-for-combo; the same pass fixed the table row that labeled the 3,842-headword `pwg+pw+sch+pwkvn` combination as `pwg+pw+pwkvn`.) Only two of the seven measured no-PWG combinations are genuinely rare (`pwkvn`-only at 20, `sch+pwkvn` at 2) — the rest are substantial, real categories that any full pwg_ru pass will hit routinely.
 
 ## Remaining open question
 
