@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.4] - 2026-07-12
+
 ### Changed
 - **Renou stage-redundancy audit (H692) `@DECIDE` — closed in the audit doc with
   a pointer to the authoritative H771 verdict: the 25-06 canonical
