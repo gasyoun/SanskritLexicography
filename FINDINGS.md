@@ -1949,6 +1949,31 @@ semantic mapping.
 
 ---
 
+### §79. DCS 2021→2026 "lost lemma" counts are mostly lemmatization-policy drift — a-privatives now resolve to their bases
+
+**Naive 2021-vs-2026 DCS lemma comparisons overstate loss ~10×.** The 2026 CoNLL-U
+master shows 1,761 lemma IDs attested in the 2021 relational export but absent from
+the 2026 corpus (91,406 → 98,606 attested; H686). Those ids carry only **7,747 tokens
+(0.17% of the 2021 corpus)**, and the highest-frequency ones are almost all
+**a-privative adjectives/participles** — aprameya (284), anindita (227), avadhya
+(191), aprāpta (125), asakta (94)… — words that did not leave the corpus: the 2026
+lemmatization resolves privative/preverb compounds to their bases. The same policy
+change makes the lemma "a" (ind) jump +18.3 per 10k (rank 112 → 32) — treat that
+mover as segmentation drift, not usage drift. Genuine text loss is tiny: 4
+fragmentary only-2021 commentaries, 892 tokens total; only 10 of 240 matched texts
+shrank (max −873, Ṛgveda, −0.5%). Implication: any diachronic or coverage claim
+built on DCS lemma-ID presence/absence across snapshots must first split
+annotation-policy drift from content drift — and current statistics must come from
+the 2026 master, never `DCS-data-2021/` (verdict registered in
+[DRIFT_INTERPRETATION.md](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/DRIFT_INTERPRETATION.md)).
+
+> **Source:** H686 delta supplement
+> ([delta_supplement.py](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/delta_supplement.py),
+> exact LemmaId cross-walk, [VisualDCS PR #40](https://github.com/gasyoun/VisualDCS/pull/40)) ·
+> VisualDCS · 12-07-2026, Fable 5 (`claude-fable-5`).
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_
