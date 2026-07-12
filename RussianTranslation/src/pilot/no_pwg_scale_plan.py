@@ -212,14 +212,55 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     }
 
 
+def used_window_indices(prefix, here=HERE, out=OUT):
+    """Return the set of numeric window indices already used for `prefix`.
+
+    Scans HERE for `run_pilot_wf.<prefix>NN.js` harnesses and OUT for
+    `wf_output.<prefix>NN.json` outputs. A `_rq1`/`_rq2` requeue sibling counts as
+    its BASE index (the regex stops at the first run of digits after the prefix), so
+    `run_pilot_wf.no_pwg_w06_rq1.js` registers index 6 — a requeue is not a new window.
+    H809 W3: `--start-index` was a pure label knob whose stale `.ai_state` value (4)
+    silently collided with already-run w04/w05; deriving the used set from disk removes
+    the guesswork.
+    """
+    pat = re.compile(re.escape(prefix) + r'0*([0-9]+)')
+    used = set()
+    for base, prefix, suffix in (
+        (here, 'run_pilot_wf.', '.js'),
+        (out, 'wf_output.', '.json'),
+    ):
+        try:
+            names = os.listdir(base)
+        except OSError:
+            continue
+        for name in names:
+            if not (name.startswith(prefix) and name.endswith(suffix)):
+                continue
+            m = pat.search(name)
+            if m:
+                used.add(int(m.group(1)))
+    return used
+
+
+def next_free_index(prefix, minimum=2, here=HERE, out=OUT):
+    """Lowest unused index >= minimum for `prefix` (max(used)+1, floored at minimum)."""
+    used = used_window_indices(prefix, here, out)
+    return max([minimum - 1] + sorted(used)) + 1
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description='Plan/prepare H255 no-PWG scale windows.')
     ap.add_argument('--window-size', type=int, default=20,
                     help='headwords per prepared queue window (default %(default)s; keep <=30)')
     ap.add_argument('--prefix', default='no_pwg_w',
                     help='window root prefix (default %(default)s)')
-    ap.add_argument('--start-index', type=int, default=2,
-                    help='first numeric suffix; w1 was the pilot (default %(default)s)')
+    ap.add_argument('--start-index', type=int, default=None,
+                    help='first numeric suffix. Default: auto = max(used-on-disk)+1 '
+                         '(min 2; w1 was the pilot). An explicit value that collides with an '
+                         'index already used on disk is refused unless --force-index.')
+    ap.add_argument('--force-index', action='store_true',
+                    help='allow an explicit --start-index that reuses an index already on disk '
+                         '(the pre-H809 behaviour). Never needed for a normal forward drain.')
     ap.add_argument('--limit-windows', type=int, default=1,
                     help='prepare only this many windows now; 0 means plan all without preparing')
     ap.add_argument('--plan-only', action='store_true',
@@ -230,6 +271,22 @@ def main(argv=None):
 
     if args.window_size < 1 or args.window_size > 30:
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
+
+    # H809 W3: resolve the window index from disk unless the caller pins one.
+    # `--plan-only` prepares nothing, so a stale/colliding label is harmless there and
+    # never blocks a dry-run plan.
+    preparing = (not args.plan_only) and args.limit_windows > 0
+    if args.start_index is None:
+        args.start_index = next_free_index(args.prefix)
+    elif preparing and not args.force_index:
+        used = used_window_indices(args.prefix)
+        if args.start_index in used:
+            free = next_free_index(args.prefix)
+            raise SystemExit(
+                'FAIL: --start-index %d collides with an index already used on disk for '
+                'prefix %r (used: %s). Next free index is %d. Omit --start-index to '
+                'auto-select, or pass --force-index to reuse deliberately.'
+                % (args.start_index, args.prefix, sorted(used), free))
 
     queue = read_queue()
     promoted = read_store_heads()
