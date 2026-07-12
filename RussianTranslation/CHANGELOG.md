@@ -39,14 +39,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   runnable **14 → 701 / missing rootmap 687 → 0**; `verify_root_glue.py` **ALL GATES PASS**;
   0 tracked-file noise (all under gitignored `src/pilot/input/`). See
   [`src/pilot/RUN_LOG.md`](src/pilot/RUN_LOG.md) 2026-07-12.
-- **W2 (partial):** confirmed the Sonnet 5 (`claude-sonnet-5`) LIST rates via `/claude-api`
+- **W2 (done):** confirmed the Sonnet 5 (`claude-sonnet-5`) LIST rates via `/claude-api`
   ($3/$15; cache-write 5m $3.75, cache-read $0.30) and relabeled
   [`src/pilot/parse_workflow_cost.py`](src/pilot/parse_workflow_cost.py)'s `PRICE` comment.
   The numbers were **already correct** (Sonnet 4.6 and Sonnet 5 share $3/$15 list pricing), so
   the golden-window $79.83 / `PER_AGENT_USD=$0.347` are unchanged; a formula-pinning test lives
-  in [`src/pilot/h809_selftest.py`](src/pilot/h809_selftest.py). Refreshing the same label in
-  `perf_preflight.py` is **deferred** — it shares a `LANG_PARITY` key with H811's unresolved
-  `gen_opt_harness2.py` parity debt on `master`; its numbers are already Sonnet-5-correct.
+  in [`src/pilot/h809_selftest.py`](src/pilot/h809_selftest.py). Completing the previously
+  **deferred** half (H811's blocking parity debt was cleared the same day): the H189 cost-gate
+  comment and the live `rate_basis` string in
+  [`src/pilot/perf_preflight.py`](src/pilot/perf_preflight.py) are now Sonnet-5-labeled — **no
+  `Sonnet 4.x` remains in any live string** (only a historical as-run comment keeps it). The
+  relabel is a lang-agnostic label-only change (no RU/EN branching, no numeric value touched),
+  so its `LANG_PARITY` entry `presplit_lane_amortization_and_budget_guards_h189` was re-verified
+  **SHARED** and its `perf_preflight.py` hash refreshed; `lang_parity_check.py` (46 entries, no
+  drift) and `window_selftest.py` both green. W2 acceptance now fully met.
 - **W3-code (done):** [`src/pilot/no_pwg_scale_plan.py`](src/pilot/no_pwg_scale_plan.py) gains
   `used_window_indices()`/`next_free_index()` (scan `run_pilot_wf.<prefix>NN.js` +
   `wf_output.<prefix>NN.json`, `_rqN` requeues count as their base index); `--start-index`

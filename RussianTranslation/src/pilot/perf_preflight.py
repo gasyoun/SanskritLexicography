@@ -29,13 +29,16 @@ from window_common import INP, input_paths, read_text
 
 # --- H189 cost gate ----------------------------------------------------------------
 # Empirical per-agent figures from the pril10_w1 blow-up (parse_workflow_cost.py over the
-# three sub-window transcripts: 230 agents, 42,316,604 tokens, $79.83 at Sonnet 4.x rates):
-#   184,000 tokens/agent (mean), $0.347/agent.
+# three sub-window transcripts: 230 agents, 42,316,604 tokens, $79.83): 184,000 tokens/agent
+# (mean), $0.347/agent. That $79.83 was the pril10_w1 as-run cost at Sonnet 4.x rates; Sonnet 5
+# shares the identical standard list pricing ($3 in / $15 out, cache-write $3.75 / cache-read
+# $0.30 — confirmed 12-07-2026 via the /claude-api skill, H809 W2), so both figures are
+# UNCHANGED under Sonnet 5.
 # agent_expected_after_tm is an optimistic FLOOR (one call per batch/fragment-group, no
 # retries) — the real run spent 230 vs a 174 estimate (1.32x) — so a realism multiplier is
-# applied before pricing. The $ figures inherit parse_workflow_cost.py's Sonnet 4.x rates
-# (order-of-magnitude for Sonnet 5); the TOKEN estimate and the per-card RATIO are the
-# model-independent, load-bearing parts of the gate.
+# applied before pricing. The $ figures inherit parse_workflow_cost.py's Sonnet 5 list rates;
+# the TOKEN estimate and the per-card RATIO are the model-independent, load-bearing parts
+# of the gate.
 PER_AGENT_TOKENS = 184000
 PER_AGENT_USD = 0.347
 REALISM_FACTOR = 1.35
@@ -74,7 +77,7 @@ def cost_estimate(report, per_card_ceiling=COST_CEIL_PER_CARD_USD,
         'window_ceiling_usd': window_ceiling,
         'over_ceiling': bool(over_card or over_window),
         'verdict': 'OVER-CEILING' if (over_card or over_window) else 'ok',
-        'rate_basis': 'Sonnet 4.x rates (order-of-magnitude); token estimate is model-independent',
+        'rate_basis': 'Sonnet 5 list rates; token estimate is model-independent',
     }
 
 

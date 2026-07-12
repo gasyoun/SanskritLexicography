@@ -471,7 +471,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H189",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "6f4ce071ddf02c4f9e7448f53497e78b9a8f4c2e296e3c98ca859e43fab11c14",
-      "src/pilot/perf_preflight.py": "a73a536d6f24e398faadd5507520e106a5d96c94c28e310c0e30366397b7d174",
+      "src/pilot/perf_preflight.py": "56bd55032aa5d6db22d7ba2f59dc05adeca3be3227aecd14780728458bd0b1bb",
       "src/pilot/window_selftest.py": "22df5eca68b43c82ea7944f12e11c1f3fe941e872f1ebcdfad31a3686bebd8e1"
     }
   },
