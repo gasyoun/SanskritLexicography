@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H818 — four-account Max headless orchestration
+- add a canonical generation manifest, `claude -p --json-schema` worker, coordinator-imported SQLite scheduler for four isolated Max profiles, immutable attempt logs/hashes, rate-limit parking, crash recovery, systemd deployment, and an audit/runbook. Live proof remains gated on four owner-authenticated foreign-host profiles.
+
 ### H809 — PWG→RU scale-unblock (W1 rootmaps · W2 rate label · W3 window-index guard)
 - **W1 (done):** generated the 687 missing verb rootmaps via `ROOT_SPLIT_MIN=0` on the
   positional verb-root splat (`_pilot_gen_merged.py --root-split @blocked`) — non-giant roots
