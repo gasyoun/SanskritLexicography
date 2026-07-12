@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 11-07-2026_
+_Created: 04-07-2026 · Last updated: 12-07-2026_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -335,8 +335,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
-      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b"
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   },
   {
@@ -392,8 +392,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
-      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b"
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   },
   {
@@ -430,7 +430,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
       "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
@@ -450,7 +450,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "786bab98ce69837db2e44febaf5079e47ef34ca9cbd49f1f6c941507c54ace29",
-      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d"
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563"
     }
   },
   {
@@ -596,8 +596,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_lock.py": "dca26a006a32ba4a9eeb98453fa059585ccb8504ada8423f5e22d3fe1b25310f",
-      "src/promote_final_cards.py": "863b8e1a5ce294233dea1346dd3e139bac8c3f4d9b0a35f00102196f1b63369d",
-      "src/promote_en.py": "84b79476e9a82df2e6dc08b3be29a3b798eef04fce6416155afb3dd0e9fac81b",
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d",
       "src/pilot/window_selftest.py": "8c45d8dc292d0eb2a8f70adcb80731b96d5369a9265354077bfaf9e0562f55ce"
     }
   },
@@ -884,6 +884,27 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/export_mdf_pwg_ru.py": "1d32e10622d246295cc3b5f8300e166de76cb210e74719ca7d79ddc7170d2be4"
+    }
+  },
+  {
+    "id": "canonical_store_path_h805",
+    "mechanism": "Both promotion writers resolve the translated store via the identical store_path.canonical_store() helper (env PWG_RU_STORE -> MAIN-worktree store -> local default), so a drain window run in an isolated git worktree promotes into the persistent MAIN checkout store instead of a discarded worktree copy (the H255 no_pwg_w06 loss vector). Applied symmetrically to promote_final_cards.py (RU) and promote_en.py (EN).",
+    "files": [
+      "src/store_path.py",
+      "src/promote_final_cards.py",
+      "src/promote_en.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "New mechanism 12-07-2026 (H805, root-fix for the H255 w06 store loss). The resolver is language-independent; both promotion paths import the SAME store_path.canonical_store and default --store to its result, so neither RU nor EN can silently drop promotions into a discarded worktree store. Strengthens promotion_claim_file_h336: both paths now lock the SAME canonical store path across worktrees. Deterministic selftest: python src/store_path.py --selftest.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/store_path.py": "8b9d62c7c1fa463b9938c8b4a118b53a34bc4e0c22a146b487e88847fb7e583b",
+      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   }
 ]
