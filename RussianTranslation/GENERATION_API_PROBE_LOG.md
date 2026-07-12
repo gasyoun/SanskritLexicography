@@ -32,6 +32,8 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-11T14:01:42Z | warmup | GO | 21.1s | 0 | 6492B | no_pwg_w03 | H255 | H255 no_pwg_w03 (fresh 6-headword/13-subcard window, post-STORE-path-fix PR #349) pre-launch probe |
 | 2026-07-12T13:45:39Z | warmup | NO-GO | 31.6s | 0 | 6542B | no_pwg_w07 | H255 | Opus4.8-orchestrated Workflow, gen Sonnet5; 6453-char clean RU reply, placeholders intact, 0 conn-err, 48.5K tok. latency=total workflow duration (agent latency ~26-30s after orch overhead) — borderline vs 30s ceiling but a different regime from the 285-683s degraded readings of 10-11 Jul. |
 | 2026-07-12T15:07:27Z | warmup | NO-GO | 35.7s | 0 | 6542B | no_pwg_w07 | H255 | post-H805 2nd reading; 6577-char clean RU reply, 0 conn-err, 48.5K tok. latency=total workflow duration; WORSE than the 31.6s reading ~1h earlier — env not recovering. NO drain window fired. |
+| 2026-07-12T15:28:48Z | warmup | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | SCHEMA-CARRYING probe (real StructuredOutput CARDS_SCHEMA path on a live small w07 sub-card, anirvacanIya) — valid RU card in 53.9s, 0 conn-err. HEALTHY for a card call: baseline ~55-105s fixed StructuredOutput latency, kill ceiling 180s (H220). GO overrides the 30s plain-probe ceiling, which does NOT apply to schema/StructuredOutput calls. The plain probes (31.6/35.7s) over-stated degradation; the real generation path is fine. |
+| 2026-07-12T15:42:11Z | launch | GO | 54.0s | 0 | 6542B | no_pwg_w07 | H255 | w07 launch after the schema-carrying GO; isolated 1-wide probe was 54s but the ~10-wide window degraded |
 
 ## Measured launch outcomes
 
@@ -39,5 +41,6 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 |---|---|---:|---:|---:|---:|---:|:--:|
 | 2026-07-10T07:44:19Z | h317_w1b | 0/12 | 58 | 1.80M | 7 | 2 | yes |
 | 2026-07-11T12:37:49Z | no_pwg_w03 | 11/27 | 27 | 1.25M | 14 | 0 | no |
+| 2026-07-12T15:42:11Z | no_pwg_w07 | 5/36 | 38 | 0.53M | 32 | 0 | no |
 
 _Dr. Mārcis Gasūns_

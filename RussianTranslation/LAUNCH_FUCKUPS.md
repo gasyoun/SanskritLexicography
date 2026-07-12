@@ -440,6 +440,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "residual_status": "open-paused",
   "residual_risk": "27 transient keys of no_pwg_w02 sit unrequeued (requeue with --no-tm once the probe gates GO); gAyatrI is still fully null and the 4 defect sub-cards need regeneration; the 232-lemma no-PWG queue continues with no_pwg_scale_plan.py --window-size 20 --limit-windows 1 --start-index 3 only after the probe passes. promote_final_cards.py still promotes every non-null card without consulting the audit defect split -- the footgun remains for the next operator until it is wired to audit_window.report.json.",
   "passes": 1
+ },
+ {
+  "id": "H255_NO_PWG_W07_CONCURRENCY_UNDERPREDICTED_2026-07-12",
+  "handoff": "H255",
+  "date": "2026-07-12",
+  "title": "no-PWG lane window no_pwg_w07 (H255 scale drain, --start-index 7, post-H805 = w06 recovery): 5/36 non-null (3 clean + 2 defect), 31 null, 32 kill-timeouts -- DESPITE a GO schema-carrying warm-up (54s valid card, isolated 1-wide). Isolated probes under-predict concurrent-window degradation.",
+  "lane": "no-PWG supplement lane, single-fragment + presplit sub-cards, output-budget=1, nominal masked",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code session driving the Workflow tool; harness run_pilot_wf.no_pwg_w07.js (gen_opt_harness2 --nominal --output-budget=1, 30 batches). Gating: two plain warm-ups NO-GO (31.6/35.7s), then a schema-carrying warm-up GO (anirvacanIya, 54s valid StructuredOutput card) authorized the launch.",
+  "expected": {
+   "agents": "30 batches / 36 sub-cards, output-budget=1, ~$16.86 preflight (GO); schema warm-up predicted healthy (54s << 180s CEIL)",
+   "tokens": "~2M typical for a full window"
+  },
+  "actual": {
+   "agents": "38 agents spent (no budget-kill-switch trip), 32 kill-timeouts; 5/36 non-null",
+   "tokens": "533K (low -- most cards killed early, not fully generated)"
+  },
+  "symptoms": "5/36 non-null, 31 null (32 kill-timeouts, 0 conn-errors). Kills at 60/67/74/83/102/106/123s AND several at the 180s CEIL on TINY 128-500 byte skeletons (b5/b8/b9...); 6 presplit-cohort cards selfheal-nothing-resolved. The 1-wide schema warm-up read 54s (healthy) minutes earlier on this same card class; the ~10-wide window degraded them past even 180s.",
+  "classification": "concurrency/api",
+  "root_cause": "Two compounding: (1) the generation API is ~1.5-2x degraded today (plain warm-ups 31-36s vs 21s healthy on 11-07, same 6.5KB payload); (2) NO sub-runtime concurrency control exists -- the Workflow runtime caps width at ~min(16,cores-2)~10 and gen_opt_harness2 exposes only --max-agents (a TOTAL ceiling, not width), so tiny cards that take ~54s at 1-wide are inflated past the 180s CEIL under ~10-wide contention. KEY LESSON: an isolated (even schema-carrying) 1-wide warm-up is necessary but NOT concurrency-representative -- it cannot see the contention that actually kills the window. probe_log outcome wf_5ed6f8e0-b0b: GO -> 5/36.",
+  "guardrail": "Do NOT requeue at the same ~10-wide concurrency (H442 blind-relaunch) -- a standard requeue re-runs at the runtime cap and re-degrades. The lane needs a >=3-wide/staggered requeue mode (the synth_dispatch.py shape) so tiny cards get their isolated ~54s latency instead of contention-inflated >180s. The warm-up GATE must fire N concurrent schema probes (load-representative for width), not one. Until a low-width mode lands, wait for a plain warm-up back at ~21s before a full window.",
+  "residual_status": "open-paused",
+  "residual_risk": "31 w07 nulls + w06's remaining headwords stay in the 232-lemma queue (planner re-offers them; store now persistent post-H805, so no re-loss). No data lost this window -- 5 clean sub-cards promoted (canonical store 11,505->11,517; H805 fix validated: a worktree promote landed in the MAIN store). translation_memory.py still needs canonical_store() wiring (TM rebuild deferred, regenerable). Lane blocked at scale until the low-width requeue mode lands or the API recovers.",
+  "passes": 1
  }
 ]
 ```
