@@ -126,6 +126,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§73. VedaWeb 2.0's "CC BY 4.0 for everything" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field](#73-vedaweb-20s-cc-by-40-for-everything-claim-is-not-machine-confirmed-only-236-catalog-resources-carry-an-explicit-license-field)
 - 🟡 [§75. The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers](#75-the-full-devībhāgavata-purāṇa-sanskrit-is-not-on-gretil-only-the-devigita-fragment-the-complete-mūla-lives-on-sanskritdocumentsorg-without-dbhp_-markers)
 - 🟠 [§76. DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered](#76-dcs-2026-sqlite-carries-531747-sense-annotated-tokens-m_wordsem-but-no-local-idgloss-inventory-gold-scored-wsd-against-mw-senses-is-blocked-until-the-inventory-is-recovered)
+- 🟠 [§77. MW `<e>` encodes the 1899 print's headword typography (1 = Devanāgarī entry, 2 = roman-only, 3 = run-on compound; letter suffix = continuation record)](#77-mw-e-encodes-the-1899-prints-headword-typography-1--devanāgarī-entry-2--roman-only-3--run-on-compound-letter-suffix--continuation-record)
 
 ---
 
@@ -1915,6 +1916,23 @@ word-sense-ID inventory from the DCS CoNLL-U releases / upstream DB and mapping 
 sense divisions. Until then, do not claim WSD accuracy numbers from this dump.
 
 > Source: H730 defgen+WSD eval session · kosha/VisualDCS · 11-07-2026, Fable 5 (`claude-fable-5`).
+
+### §77. MW `<e>` encodes the 1899 print's headword typography (1 = Devanāgarī entry, 2 = roman-only, 3 = run-on compound; letter suffix = continuation record)
+
+🟠 **The `<e>` attribute on MW `<L>` lines is the print's typographic entry level, and its
+letter suffix marks body-continuation records of the same headword — one printed entry is
+often several digital records.** Evidence: verified against the MW 1899 scan p. 1304
+(Cologne MWScan `mw1304-hetumAtratA.pdf`) while building the EntryAnatomy specimen pages:
+`heman` hom. 3 'gold' (`<e>1`, L 264121) prints with a Devanāgarī headword; `hemán` hom. 1
+'impulse' (`<e>2`, L 264069) prints roman-only and capitalized; `hema—kakza` (`<e>3`,
+L 264127) prints as the run-on compound "— kaksha" with the first member elided; and
+L 264122–264125 (`<e>1A`) are ¦-initial continuation records the print joins to L 264121
+with semicolons. Implication: renderers must group records by k1 + adjacency + the `<e>`
+letter suffix to rebuild printed paragraphs (see `mw_paragraph()` in
+[EntryAnatomy/build_entry_anatomy.py](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/build_entry_anatomy.py)),
+and counting "MW entries" by raw `<L>` records overcounts printed entries.
+
+> Source: EntryAnatomy specimen-page build (H780) · SanskritLexicography · 12-07-2026, Fable 5 (`claude-fable-5`).
 
 ---
 
