@@ -394,6 +394,21 @@ frequency comparisons by text coverage.
 > **Source:** [`reports/coverage_diff.md`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/coverage_diff.md)
 > + `reports/m6_validation.md` — VisualDCS · 2026-06-06
 
+**Addendum (12-07-2026) — three annotation layers, and the semantic layer is NOT the Vedic wave.**
+A per-text census of all 270 CoNLL-U folders (VisualDCS
+[`delta_annotation_layers.py`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/delta_annotation_layers.py)
+→ [`annotation_layers_by_text.csv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/annotation_layers_by_text.csv))
+separates the three orthogonal annotation layers: **`WordSem`** (lexical semantic-concept IDs →
+Sanskrit WordNet) on **219/270** texts — *corpus-wide, NOT Vedic-selective*; **Vedic Treebank**
+(`HEAD`/`DEPREL`) on **74**; **`IsMantra`** (Bloomfield's Vedic Concordance) on **44** — the latter
+two are the Vedic-selective layers. Sharp result: **29 of the 30 only-2026 ("went Vedic") texts
+arrived with ZERO `WordSem`** — sole exception Atharvaveda (Paippalāda), 6,403 semantic tokens. So
+the +24 % Vedic wave added raw tokens *without* the semantic layer; the `WordSem` layer is an
+old-corpus asset. Implication: never assume the new Vedic tokens are WordNet-linked — they are not;
+filter on the `WordSem`/`IsMantra` MISC keys + `HEAD` column per text. Full interpretation:
+[`DRIFT_INTERPRETATION.md` §3b](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/DRIFT_INTERPRETATION.md)
+(H686 supplement, [PR #41](https://github.com/gasyoun/VisualDCS/pull/41)).
+
 ### §12. A fifth of DCS lemmas have no CDSL headword
 
 🟠 **18.6 % of DCS-2026 lemmas do not map to any CDSL headword — corpus vocabulary exceeds the
