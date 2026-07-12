@@ -178,6 +178,24 @@ fresh checkout's selftest aborts on missing `gam` data before reaching that test
 - **The $ rate basis is Sonnet 4.x.** Reconfirm `parse_workflow_cost.py`'s rate table and
   the cost-gate constants against Sonnet 5 list rates before trusting absolute $ (token
   counts and per-card ratios are already model-independent).
+  - **RESOLVED 12-07-2026 (H809 W2, Opus 4.8 `claude-opus-4-8`).** Sonnet 5 (`claude-sonnet-5`)
+    LIST rates looked up via the `/claude-api` skill are **$3.00 input / $15.00 output** per
+    MTok (cache-write 5m = 1.25× = $3.75; cache-read = 0.1× = $0.30). These are **numerically
+    identical** to the prior Sonnet 4.x list rates — Sonnet 4.6 and Sonnet 5 share the same
+    list pricing — so the golden-window total (42,316,604 tokens) stays **$79.83
+    (Sonnet 4.x, as-run)** and `perf_preflight.py`'s derived `PER_AGENT_USD = $79.83/230 =
+    $0.347` is **unchanged**. `parse_workflow_cost.py`'s `PRICE` comment is relabeled to
+    Sonnet 5; a formula-pinning test lives in [`h809_selftest.py`](h809_selftest.py). The
+    Sonnet 5 introductory promo ($2.00/$10.00 through 2026-08-31) is a time-boxed discount and
+    is **not** the list-rate basis; applying it would move $/agent ≈ −33 % (>20 %), a
+    FLAG-for-human event per the H189 ceiling rule, not an auto-retune.
+  - **Deferred (blocked):** refreshing the same label inside `perf_preflight.py` (the live
+    `'rate_basis': 'Sonnet 4.x …'` string at line ~77 + its header comment) is held back
+    because `perf_preflight.py` shares a `LANG_PARITY` ledger key
+    (`presplit_lane_amortization_and_budget_guards_h189`) with `gen_opt_harness2.py`, which
+    carries **unresolved pre-existing parity debt on origin/master (H811)**. Editing it would
+    force blessing another session's unverified SHARED verdict. The numbers there are already
+    Sonnet-5-correct ($0.347); only the cosmetic label waits on H811's parity ledger update.
 
 ---
 
