@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 11-07-2026_
+_Created: 26-06-2026 · Last updated: 12-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -501,7 +501,11 @@ Implication: a secondary-stem segmenter keys on the inline `<ab>` label
 🔴 **A headword's giant verb root often sits at a non-zero homonym index.**
 Evidence: √i has its 114-prefix verb root at homonym **2** (homonym 0 is the particle);
 √mā at index 2, √As at index 1; 19 of the top-50 freq roots have a giant homonym at
-index > 0 or more than one giant homonym.
+index > 0 or more than one giant homonym. Full-population census (H702 re-test, 12-07-2026,
+Fable 5 `claude-fable-5`, all 749 DCS-attested verb roots): 236 roots carry ≥1 giant homonym
+(≥8 prefix divisions); **55 of them (23.3%) hold a giant at index > 0**, and 23 have NO giant
+at index 0 at all — a bare `bufs[0]` read finds nothing there (e.g. As@[1], Sam@[1,3],
+iz@[1,3], DA@[0,6,10]).
 Implication: any per-record split / processing must iterate **all** homonym records, not
 `bufs[0]`, or it silently misses the verb (or drops extra giant homonyms).
 
@@ -786,8 +790,10 @@ PWG does not define the headword universe by itself — PW alone covers 40,338 h
 Evidence: unioned `index('pwg')`/`index('pw')`/`index('sch')`/`index('pwkvn')` from
 `RussianTranslation/src/dict_merge.py` over the full local layer set (167,988 headwords total).
 No-PWG combinations: `pw`-only 40,338 (24.0%), `sch`-only 9,990 (5.9%), `pw+sch+pwkvn` 10,057
-(6.0%), `pw+pwkvn` 875, `pw+sch` 624, `pwkvn`-only 20, `sch+pwkvn` 2 — **≈35,900 headwords
-(≈36% of the local union) carry zero PWG record.** PWG-only is 6,453 (3.8%); the dominant
+(6.0%), `pw+pwkvn` 875, `pw+sch` 624, `pwkvn`-only 20, `sch+pwkvn` 2 — **61,906 headwords
+(36.9% of the local union) carry zero PWG record** (the "≈35,900" stated here until
+12-07-2026 was an arithmetic slip: the listed combinations sum to 61,906; the tally was
+re-run and reproduced combo-for-combo under H702, Fable 5 `claude-fable-5`). PWG-only is 6,453 (3.8%); the dominant
 combination overall is `pwg+pw` at 91,648 (54.6%). Separately, of the 167,991 scraped NWS
 JSON fragments, 34,101 (20.3%) are net-new (`has_nws_extra`) beyond all four local layers —
 also far from a marginal contribution. Full breakdown + methodology:
