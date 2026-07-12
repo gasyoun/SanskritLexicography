@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H390 Phase 1 — per-window `gen_model` instrumentation (12-07-2026, Opus 4.8 `claude-opus-4-8`)
+- The window ledger now records **which model generated each window**. [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py)
+  stamps `meta.gen_model` (the model pinned on the translate `agent()` calls — `claude-sonnet-5`
+  for EN, the `sonnet` alias for RU, per the existing `sonnet5_explicit_model_pin_en` divergence);
+  [`window_reports.py`](src/pilot/window_reports.py) `append_ledger` writes it onto every
+  `window_ledger.jsonl` row; [`harvest_launch_stats.py`](src/pilot/harvest_launch_stats.py) adds a
+  **§1b population-by-model** table + a `gen_model` coverage line + a `gen_model` CSV column.
+- This is the "enabling phase" for the H390 Fable-vs-Sonnet A/B (Phase 3): per-model rates
+  (hard-fail %, clean %) are now computable straight off the ledger, which previously could not
+  see the generating model at all. Existing 458-window population is all `(unstamped)` (predates
+  the instrumentation), reported honestly as a coverage gap, never folded into a real model.
+- Pinned by `test_ledger_stamps_gen_model` in [`window_selftest.py`](src/pilot/window_selftest.py)
+  (asserts the ledger row carries `gen_model`, and that a run with no `workflow_meta` degrades to
+  `None` instead of raising). Classified **SHARED** in [`LANG_PARITY.md`](LANG_PARITY.md)
+  (`gen_model_ledger_stamp_h390`). Phases 2–4 remain: cost backfill is largely blocked (recent
+  launches' transcripts died with their worktrees, per the H462 ledger audit), the A/B itself is
+  blocked on a healthy generation API (12-07 census NO-GO), and the paper depends on both.
+
 ### H809 — PWG→RU scale-readiness census (12-07-2026): NOT ready for nonstop; blocker is infra
 - [`SCALE_READINESS_CENSUS_2026-07-12.md`](SCALE_READINESS_CENSUS_2026-07-12.md) — a
   read-only 8-agent workflow (Opus 4.8 `claude-opus-4-8`, ~1.0 M tokens) verified the

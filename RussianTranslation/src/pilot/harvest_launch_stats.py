@@ -116,6 +116,9 @@ def load_ledger(paths):
             'root': r.get('root'),
             'state': state,
             'outcome': STATE_OUTCOME.get(state, 'other'),
+            # H390 Phase 1: model that generated the window (None on pre-H390 rows,
+            # which the harness never stamped — reported as an explicit coverage gap).
+            'gen_model': r.get('gen_model'),
             'workflow_keys': wk,
             'root_subcards': subcards,
             'translated': translated,
@@ -184,6 +187,29 @@ def counter_table(rows, key):
     return sorted(c.items(), key=lambda kv: -kv[1])
 
 
+def per_model_breakdown(pop):
+    """H390 Phase 1: the population sliced by generating model — the axis the
+    Fable-vs-Sonnet A/B (Phase 3) reads. Windows with no `gen_model` (pre-H390
+    ledger rows the harness never stamped) are bucketed under `(unstamped)` so the
+    instrumentation gap is visible, never silently folded into a real model."""
+    by = collections.defaultdict(list)
+    for r in pop:
+        by[r.get('gen_model') or '(unstamped)'].append(r)
+    out = []
+    for model, rows in sorted(by.items(), key=lambda kv: -len(kv[1])):
+        n = len(rows)
+        oc = collections.Counter(r['outcome'] for r in rows)
+        hard = sum(v for k, v in oc.items() if k in HARD_FAIL_OUTCOMES)
+        out.append({
+            'gen_model': model,
+            'windows': n,
+            'clean_windows': oc.get('clean', 0),
+            'hard_fail_windows': hard,
+            'hard_fail_rate_pct': round(100.0 * hard / n, 2) if n else None,
+        })
+    return out
+
+
 def compute(pop, fuckups, content):
     n = len(pop)
     roots = {r['root'] for r in pop if r.get('root')}
@@ -193,6 +219,7 @@ def compute(pop, fuckups, content):
 
     have_minutes = sum(1 for r in pop if r.get('wall_clock_minutes'))
     have_tokens = sum(1 for r in pop if r.get('max_output_tokens'))
+    have_model = sum(1 for r in pop if r.get('gen_model'))
 
     req_rows = [r for r in pop if (r.get('requeue_count') or 0) > 0]
     mean_requeue = (sum(r['requeue_count'] for r in req_rows) / len(req_rows)) if req_rows else 0.0
@@ -212,8 +239,10 @@ def compute(pop, fuckups, content):
             'metric_coverage': {
                 'wall_clock_minutes': f'{have_minutes}/{n}',
                 'max_output_tokens': f'{have_tokens}/{n}',
+                'gen_model': f'{have_model}/{n}',
             },
         },
+        'per_model': per_model_breakdown(pop),
         'orchestration_taxonomy': {
             'curated_incidents': len(fuckups),
             'by_classification': counter_table(fuckups, 'classification'),
@@ -238,8 +267,8 @@ def compute(pop, fuckups, content):
 def write_csv(pop):
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, 'launch_stats.csv')
-    cols = ['date', 'recorded_at', 'root', 'state', 'outcome', 'workflow_keys',
-            'root_subcards', 'translated', 'pending', 'requeue_count',
+    cols = ['date', 'recorded_at', 'root', 'state', 'outcome', 'gen_model',
+            'workflow_keys', 'root_subcards', 'translated', 'pending', 'requeue_count',
             'requeue_transient', 'requeue_defect', 'completion_pct',
             'requeue_rate', 'crashed', 'wall_clock_minutes', 'max_output_tokens']
     with open(path, 'w', encoding='utf-8', newline='') as f:
@@ -253,6 +282,17 @@ def write_csv(pop):
 def _md_table(pairs, h1, h2):
     out = [f'| {h1} | {h2} |', '|---|---|']
     out += [f'| `{k}` | {v} |' for k, v in pairs]
+    return '\n'.join(out)
+
+
+def _md_model_table(per_model):
+    out = ['| gen_model | windows | clean | hard-fail | hard-fail % |',
+           '|---|---:|---:|---:|---:|']
+    for m in per_model:
+        out.append('| `%s` | %d | %d | %d | %s |' % (
+            m['gen_model'], m['windows'], m['clean_windows'],
+            m['hard_fail_windows'],
+            '—' if m['hard_fail_rate_pct'] is None else m['hard_fail_rate_pct']))
     return '\n'.join(out)
 
 
@@ -310,10 +350,21 @@ def write_md(stats):
         '',
         f'**Metric coverage (the instrumentation gap the paper must disclose):** '
         f'wall-clock recorded on {p["metric_coverage"]["wall_clock_minutes"]} windows, '
-        f'output-tokens on {p["metric_coverage"]["max_output_tokens"]}. Per-window '
+        f'output-tokens on {p["metric_coverage"]["max_output_tokens"]}, '
+        f'generating-model on {p["metric_coverage"]["gen_model"]} windows. Per-window '
         'cost/latency must be back-filled from transcript dirs '
         '(`parse_workflow_cost.py`) or captured going forward — it is not yet in the '
-        'ledger.',
+        'ledger. Per-window `gen_model` is stamped going forward (H390 Phase 1); rows '
+        'generated before that instrumentation carry none and appear under `(unstamped)` '
+        'below.',
+        '',
+        '## 1b. Population by generating model (H390 Phase 1 — the A/B axis)',
+        '',
+        'The Fable-vs-Sonnet A/B (H390 Phase 3) reads this slice. Until a matched A/B '
+        'run exists, expect a single real model plus `(unstamped)` legacy rows — that is '
+        'the instrumentation coming online, not a result.',
+        '',
+        _md_model_table(stats['per_model']),
         '',
         '## 2. Orchestration taxonomy — curated launch incidents',
         '',

@@ -141,6 +141,10 @@ def append_ledger(status, out_dir=None):
         'judge_sample_seed': status.get('judge_sample_seed'),
         'clean_key_count': status.get('clean_key_count'),
         'next_action': status.get('next_action'),
+        # H390 Phase 1: which model generated this window, read from the run's own
+        # workflow meta (gen_opt_harness2 stamps meta.gen_model). Makes per-model
+        # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
+        'gen_model': (status.get('workflow_meta') or {}).get('gen_model'),
         'production_metrics': status.get('production_metrics'),
         'crashed': status.get('crashed'),
         'rootmap_sha256': status.get('rootmap_sha256'),
