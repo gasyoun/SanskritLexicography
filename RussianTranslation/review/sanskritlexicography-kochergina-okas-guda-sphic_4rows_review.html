@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Кочергина: okas · okya · guda · sphic — 4 кандидата на правку</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #1a1d24; --panel2: #22262f; --text: #e8e8ea;
+    --muted: #9aa0ac; --accent: #6ea8fe; --green: #3fb950; --red: #f85149;
+    --amber: #d29922; --border: #30363d;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f1f4; --text:#1a1d24; --muted:#5b616e; --border:#d8dbe0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
+  header { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border); padding:14px 20px; }
+  header h1 { margin:0 0 4px; font-size:1.15rem; }
+  header .sub { color:var(--muted); font-size:0.85rem; }
+  .tally { display:flex; gap:14px; margin-top:10px; font-size:0.85rem; flex-wrap:wrap; }
+  .tally span { padding:3px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--border); }
+  .tally b { font-variant-numeric: tabular-nums; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px; }
+  .toolbar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center; }
+  button.dl { background:var(--accent); color:#0b0d10; border:none; border-radius:8px; padding:9px 16px; font-weight:600; cursor:pointer; }
+  button.dl:hover { opacity:0.9; }
+  .hint { color:var(--muted); font-size:0.8rem; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:18px; transition: border-color .15s; }
+  .card.voted-approve { border-color: var(--green); }
+  .card.voted-reject { border-color: var(--red); }
+  .card.voted-defer { border-color: var(--amber); }
+  .card.focused { outline: 2px solid var(--accent); }
+  .card h2 { margin:0 0 2px; font-size:1.05rem; }
+  .card .id { color:var(--muted); font-size:0.78rem; margin-bottom:10px; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin:12px 0; }
+  @media (max-width:720px) { .grid { grid-template-columns: 1fr; } }
+  .box { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.92rem; }
+  .box h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .box.asis h3 { color:var(--red); }
+  .box.proposed h3 { color:var(--green); }
+  .evidence { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.88rem; margin-top:10px; }
+  .evidence h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .evidence ul { margin:4px 0 0; padding-left:18px; }
+  .evidence li { margin-bottom:4px; }
+  .verdict-flag { display:inline-block; font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:10px; margin-left:8px; vertical-align:middle; }
+  .verdict-flag.change { background:rgba(63,185,80,.15); color:var(--green); border:1px solid var(--green); }
+  .verdict-flag.noaction { background:rgba(210,153,34,.15); color:var(--amber); border:1px solid var(--amber); }
+  .votebar { display:flex; gap:8px; margin-top:14px; align-items:center; flex-wrap:wrap; }
+  .votebar button { border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px; padding:8px 14px; cursor:pointer; font-size:0.88rem; }
+  .votebar button.approve.active { background:var(--green); color:#06210c; border-color:var(--green); }
+  .votebar button.reject.active { background:var(--red); color:#2b0705; border-color:var(--red); }
+  .votebar button.defer.active { background:var(--amber); color:#2b1c02; border-color:var(--amber); }
+  .votebar .key { opacity:.6; font-size:0.75rem; }
+  textarea.note { width:100%; margin-top:10px; min-height:46px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:0.88rem; resize:vertical; }
+  footer { text-align:center; color:var(--muted); font-size:0.78rem; padding:20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Кочергина (learnsanskrit.ru): okas · okya · guda · sphic — 4 кандидата на правку</h1>
+  <div class="sub">H779 · Nagari-list 2013 re-verification · сгенерировано 12-07-2026 (Sonnet 5, <code>claude-sonnet-5</code>) · sheet_id: <code>sanskritlexicography-kochergina-okas-guda-sphic_4rows</code></div>
+  <div class="tally" id="tally"></div>
+</header>
+<main>
+  <div class="toolbar">
+    <button class="dl" id="dlBtn">Download decisions.json</button>
+    <span class="hint">клавиши: a=approve · r=reject · d=defer · ↑/↓ = следующая карточка (кликните карточку, чтобы сфокусировать)</span>
+  </div>
+  <div id="items"></div>
+</main>
+<footer>Голоса сохраняются в localStorage браузера (ключ = sheet_id). Экспортируйте decisions.json после прохода.</footer>
+
+<script>
+const SHEET_ID = "sanskritlexicography-kochergina-okas-guda-sphic_4rows";
+const ITEMS = [
+  {
+    id: "okas",
+    title: "ओकस् okas (n.) — сомнительный смысл 3 «родина»",
+    flag: "change",
+    asis: "1) удовольствие 2) жилище-приют, убежище 3) родина",
+    proposed: "Снять/пометить смысл 3 «родина» как незасвидетельствованный. Оставить: 1) удовольствие (первично, только RV) 2) жилище/приют/убежище (вторично, Böhtlingk от √uc).",
+    evidence: [
+      "MW s.v. okas — «house, dwelling, place of abiding, abode, home, refuge, asylum {RV. AV. MBh. BhP.}» — смысла «родина/отчизна» нет ни в одной цитате.",
+      "Apte s.v. okas — «house, residence; asylum, refuge; resting place; pleasure, gratification» — тоже без «родины».",
+      "Ни один локус RV не даёт смысла «родина/отчизна»; предположительно смысл взят из последнего (самого широкого) значения у Grassmann и там переусложнён."
+    ]
+  },
+  {
+    id: "okya",
+    title: "ओक्य okya (mfn./n.) — логически невозможный дериват «связанный с родиной»",
+    flag: "change",
+    asis: "1. 1) родной 2) связанный с родиной  2. n. см. ओकस् 3)",
+    proposed: "Заменить на «домашний, благоприятный для дома/обитателей»; снять «связанный с родиной» (дериват не может нести смысл, которого нет у базы) и «родной» (не подтверждается).",
+    evidence: [
+      "MW s.v. okya — «fit for or belonging to a home {RV 9.86.45}».",
+      "Apte s.v. okya — «(1) Favourable to the house, i.e. to its inmates (2) Good for a house, kind to a household».",
+      "Все 8 вхождений в RV перепроверены напрямую в акцентуированном корпусе VedaWeb (Scarlata/Widmer/Lubotsky, VisualDCS/non-derived/vedaweb/accented_text_scarlata_widmer_lubotsky.json): 1.91.13 svá okyè · 1.132.5 índra okyàṃ didhiṣanta dhītáyaḥ · 3.42.8 túbhyéd indra svá okyè · 8.25.17 ánu pū́rvāṇy okyā̀ · 8.49.3 ánv okyàṃ sáraḥ · 8.72.14 svám okyàṃ · 9.86.45 rāyá okyàḥ · 10.44.9 astv okyàṃ — везде «приютное/благоприятное место», нигде «родина»."
+    ]
+  },
+  {
+    id: "guda",
+    title: "गुद guda / गुदा gudā — заявленный «гендерный дефект» ОПРОВЕРГНУТ",
+    flag: "noaction",
+    asis: "У Кочергиной УЖЕ ЕСТЬ два отдельных гнезда: guda m.pl. «1) кишечник 2) анат. задний проход» и gudā f.pl. «кишки» (проверено напрямую в Кочергина.no_tags, корпус SamudraManthanam).",
+    proposed: "БЕЗ ИЗМЕНЕНИЙ. Тезис ветки 2013 г. («у Кочергиной только m.pl., а в RV — f.pl., это дефект») не подтверждается текущим текстом словаря — раздельное f.-гнездо уже есть. Опционально — информационное примечание: масс. guda у MW цитируется только из VS/TS/ShBr/Kauś (яджурведийская проза), НЕ из RV; RV 10.163.3 даёт только женский род gudā.",
+    evidence: [
+      "Кочергина.no_tags, строка 8155: «गुद /guda/ m. pl. 1) кишечник 2) анат. задний проход».",
+      "Кочергина.no_tags, строка 8156 (сразу следом): «गुदा /gudā/ f. pl. кишки».",
+      "MW s.v. guda — «m. an intestine, entrail, rectum, anus {VS. TS. ShBr. Kauś.} (ifc. f. ā)».",
+      "RV 10.163.3 перепроверено напрямую в акцентуированном корпусе VedaWeb: «āntrébhyas te gúdābhyo vaniṣṭhór hŕ̥dayād ádhi» — gúdābhyaḥ = dat./abl.pl. жен. рода gudā, что соответствует уже имеющемуся отдельному f.-гнезду у Кочергиной.",
+      "Порядок смыслов (кишечник → задний проход) внутри guda m. уже вторичен для «ануса» — претензия ветки 2013 г. по порядку смыслов тоже не актуальна."
+    ]
+  },
+  {
+    id: "sphic",
+    title: "स्फिच् sphic / स्फिगी sphigī / स्फिज् sphij — отсутствует заглавное слово + перепутана ссылка",
+    flag: "change",
+    asis: "sphigī f. «бедро»; sphij f. «см. sphigī»; заглавного слова sphic НЕТ вообще.",
+    proposed: "(a) добавить недостающее заглавное слово sphic/sphik f. «ягодица, бедро (мн. ягодицы)» как первичную форму; (b) исправить глоссу sphigī с «бедро» на «ягодица, бедро» (текущая глосса — смысловая ошибка); (c) развернуть направление перекрёстной ссылки: sphij и sphigī → sphic (как у MW), а не наоборот.",
+    evidence: [
+      "MW s.v. sphic — «sphic or sphij f. (nom. sphik) a buttock, hip {ShāṅkhGṛ. Mn. MBh &c.}».",
+      "MW s.v. sphigī — «f. = sphic, a buttock {RV.}» — собственная ссылка MW идёт sphigī → sphic, ровно наоборот направлению у Кочергиной (sphij → sphigī).",
+      "Apte s.v. sphic — «f. Buttocks, hips».",
+      "KEWA III:542-543 трактует sphik/sphij/sphic как варианты одного этимона.",
+      "RV-аттестация перепроверена напрямую в акцентуированном корпусе VedaWeb: 3.32.11 «…yád anyáyā sphigyā̀ kṣā́m ávasthāḥ» и 8.4.8 «savyā́m ánu sphigyàṃ vāvase vŕ̥ṣā» — обе формы sphigī; голого sphic/sphij в RV нет (согласуется с MW, где эти формы цитируются из более поздних текстов: ShāṅkhGṛ./Manu/MBh)."
+    ]
+  }
+];
+
+const state = JSON.parse(localStorage.getItem("reviewsheet:" + SHEET_ID) || "{}");
+function save() { localStorage.setItem("reviewsheet:" + SHEET_ID, JSON.stringify(state)); renderTally(); }
+
+function renderTally() {
+  const counts = {approve:0, reject:0, defer:0, unvoted:0};
+  ITEMS.forEach(it => {
+    const d = state[it.id] && state[it.id].decision;
+    if (d === "approve") counts.approve++;
+    else if (d === "reject") counts.reject++;
+    else if (d === "defer") counts.defer++;
+    else counts.unvoted++;
+  });
+  document.getElementById("tally").innerHTML =
+    `<span>Всего: <b>${ITEMS.length}</b></span>` +
+    `<span>✅ Approve: <b>${counts.approve}</b></span>` +
+    `<span>❌ Reject: <b>${counts.reject}</b></span>` +
+    `<span>⏸ Defer: <b>${counts.defer}</b></span>` +
+    `<span>⬜ Не голосовано: <b>${counts.unvoted}</b></span>`;
+}
+
+function vote(id, decision) {
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  updateCard(id);
+}
+
+function noteChange(id, val) {
+  state[id] = state[id] || {};
+  state[id].note = val;
+  save();
+}
+
+function updateCard(id) {
+  const card = document.getElementById("card-" + id);
+  card.classList.remove("voted-approve", "voted-reject", "voted-defer");
+  const d = state[id] && state[id].decision;
+  if (d) card.classList.add("voted-" + d);
+  ["approve","reject","defer"].forEach(k => {
+    document.getElementById(`btn-${id}-${k}`).classList.toggle("active", d === k);
+  });
+}
+
+function render() {
+  const wrap = document.getElementById("items");
+  wrap.innerHTML = "";
+  ITEMS.forEach((it, idx) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.id = "card-" + it.id;
+    div.tabIndex = 0;
+    div.innerHTML = `
+      <h2>${it.title}<span class="verdict-flag ${it.flag}">${it.flag === 'change' ? 'нужна правка' : 'без изменений'}</span></h2>
+      <div class="id">#${idx+1} · id: ${it.id}</div>
+      <div class="grid">
+        <div class="box asis"><h3>Как сейчас (Кочергина)</h3>${it.asis}</div>
+        <div class="box proposed"><h3>Предлагается</h3>${it.proposed}</div>
+      </div>
+      <div class="evidence"><h3>Аттестация / источники</h3><ul>${it.evidence.map(e => `<li>${e}</li>`).join("")}</ul></div>
+      <div class="votebar">
+        <button class="approve" id="btn-${it.id}-approve" onclick="vote('${it.id}','approve')">✅ Approve <span class="key">(a)</span></button>
+        <button class="reject" id="btn-${it.id}-reject" onclick="vote('${it.id}','reject')">❌ Reject <span class="key">(r)</span></button>
+        <button class="defer" id="btn-${it.id}-defer" onclick="vote('${it.id}','defer')">⏸ Defer <span class="key">(d)</span></button>
+      </div>
+      <textarea class="note" placeholder="Заметка (необязательно)…" oninput="noteChange('${it.id}', this.value)">${(state[it.id] && state[it.id].note) || ""}</textarea>
+    `;
+    wrap.appendChild(div);
+    updateCard(it.id);
+  });
+}
+
+let focusedIdx = 0;
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  if (active && active.tagName === "TEXTAREA") return;
+  const cards = ITEMS.map(it => it.id);
+  if (e.key === "ArrowDown") { focusedIdx = Math.min(focusedIdx+1, cards.length-1); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (e.key === "ArrowUp") { focusedIdx = Math.max(focusedIdx-1, 0); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (["a","r","d"].includes(e.key)) {
+    const id = cards[focusedIdx];
+    const map = {a:"approve", r:"reject", d:"defer"};
+    vote(id, map[e.key]);
+  }
+});
+
+document.getElementById("dlBtn").addEventListener("click", () => {
+  const decided = ITEMS.filter(it => state[it.id] && state[it.id].decision).length;
+  const payload = {
+    sheet_id: SHEET_ID,
+    generated: "12-07-2026",
+    decided: decided,
+    items: ITEMS.map(it => ({
+      id: it.id,
+      decision: (state[it.id] && state[it.id].decision) || null,
+      note: (state[it.id] && state[it.id].note) || ""
+    }))
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "sanskritlexicography-kochergina-okas-guda-sphic_4rows_decisions.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+render();
+renderTally();
+</script>
+</body>
+</html>
