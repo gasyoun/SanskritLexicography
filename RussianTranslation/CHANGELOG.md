@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H775 — capability roadmap cards 5 + 23: MFS baseline + government sidecar (local-only)
+- New [`src/mfs_baseline.py`](src/mfs_baseline.py) (roadmap card 5): groups the
+  store by `key1` and emits a deterministic most-frequent-sense candidate per
+  lemma — the WordNet first-sense heuristic (DCS frequency is per-lemma, so it
+  cannot rank senses), with an explicit `unknown` outcome when the lemma is
+  absent from DCS. Live coverage over the 11,505-row store: **205 lemmas, 179
+  polysemous, 169 MFS candidates, 36 unknown**. Reuses `annotate_dcs_freq.freq_block`.
+- New [`src/government_sidecar.py`](src/government_sidecar.py) (roadmap card 23):
+  applies `government_census.extract_government` to every row's German `de` and
+  emits a **collision-free per-subcard sidecar** (not an in-place store rewrite,
+  which would race the concurrent drain lanes). Live census: **508 rows carry
+  government, 614 markers, 48 distinct `key1`** (436 paren-single, 176 mit-phrase,
+  2 variation) — corroborates the H335 `government_census` "store backfill surface
+  ~510 rows". Reuses `extract_government`.
+- Both outputs are gitignored (derived from the local-only store); scripts +
+  fixture selftests committed and wired into CI. Observatory
+  ([`CAPABILITY_OBSERVATORY.md`](CAPABILITY_OBSERVATORY.md)) cards 5 + 23 bumped
+  `not-started → prototype` (prototype count 4 → 6). The **accuracy/precision
+  acceptance metrics for both cards are gold-gated** — documented in
+  [`GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md`](GOLD_SLICE_NEEDS_CAPABILITY_ROADMAP.md).
+- Language-neutral analysis layers (operate on `de`/sense structure, no RU/EN
+  translation divergence) — no LANG_PARITY entry required.
+
 ### H692 — assembled_cards/renou stage-redundancy: verify + deletion PROPOSAL (no deletion)
 - [`RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md`](RENOU_STAGE_REDUNDANCY_AUDIT_12.07.26.md)
   verifies the two progressive-enrichment series the census flagged as
