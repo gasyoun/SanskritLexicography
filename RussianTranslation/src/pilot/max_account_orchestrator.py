@@ -18,6 +18,7 @@ import sys
 import time
 
 from run_observability import append_event, write_census
+from headless_worker import claude_argv_prefix
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -41,6 +42,20 @@ CREATE INDEX IF NOT EXISTS jobs_state_id ON jobs(state, id);
 """
 RATE_LIMIT = re.compile(r"rate.?limit|usage limit|too many requests|429", re.I)
 RESET_EPOCH = re.compile(r"(?:reset(?:s|_at)?|parked_until)[^0-9]{0,20}([0-9]{10})", re.I)
+
+
+def is_rate_limited(worker_status, stderr):
+    """True only for a genuine provider rate-limit (D-C fix).
+
+    The previous heuristic searched the worker's combined stdout, which prints the
+    ``manifest_sha256`` — a hash containing "429" falsely parked a healthy account for
+    5 h during the H818 Windows acceptance. Trust the worker's own classification
+    (``headless_worker`` exits 21 / classification ``rate_limit`` on a real 429), and
+    fall back only to the raw provider stderr. The status JSON / hash is never searched.
+    """
+    if (worker_status or {}).get('classification') == 'rate_limit':
+        return True
+    return bool(RATE_LIMIT.search(stderr or ''))
 
 
 def now_iso():
@@ -144,7 +159,8 @@ def park(db_path, account, until, error):
     db.close()
 
 
-def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, run_id=None):
+def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, run_id=None,
+                claude_bin='claude'):
     attempt = job['attempts']
     attempt_log = job['output_path'] + '.attempt%d.runner.json' % attempt
     status_path = job['output_path'] + '.attempt%d.status.json' % attempt
@@ -159,7 +175,8 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                                  'manifest_drift', attempt_log)
         argv = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
                 job['manifest_path'], '--output', job['output_path'],
-                '--status-out', status_path, '--timeout', str(timeout)]
+                '--status-out', status_path, '--timeout', str(timeout),
+                '--claude-bin', claude_bin]
     else:
         argv = json.loads(job['argv_json'])
     env = os.environ.copy()
@@ -185,9 +202,10 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                                  elapsed_ms=item.get('elapsed_ms'),
                                  classification=item.get('classification'), **event_base)
         failure_class = worker_status.get('classification')
-        if RATE_LIMIT.search(combined):
-            until = parse_reset(combined)
-            park(db_path, account, until, combined)
+        if is_rate_limited(worker_status, proc.stderr):
+            reset_text = (proc.stderr or '') + '\n' + (worker_status.get('error') or '')
+            until = parse_reset(reset_text)
+            park(db_path, account, until, reset_text)
             finish(db_path, job['id'], 'pending', proc.returncode,
                    'rate-limited; account parked', 'rate_limit',
                    attempt_log_path=attempt_log, reset_at=until)
@@ -226,7 +244,8 @@ def profile_status(config_dir, claude='claude'):
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     try:
-        proc = subprocess.run([claude, 'auth', 'status', '--json'], env=env, text=True,
+        proc = subprocess.run(claude_argv_prefix(claude) + ['auth', 'status', '--json'],
+                              env=env, text=True,
                               encoding='utf-8', capture_output=True, timeout=30)
     except (OSError, subprocess.TimeoutExpired) as exc:
         return False, str(exc)
@@ -237,7 +256,7 @@ def profile_status(config_dir, claude='claude'):
     if proc.returncode or not data.get('loggedIn'):
         return False, data.get('subscriptionType') or 'not logged in'
     probe = subprocess.run(
-        [claude, '-p', 'Return exactly OK.', '--output-format', 'json',
+        claude_argv_prefix(claude) + ['-p', 'Return exactly OK.', '--output-format', 'json',
          '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
         env=env, text=True, encoding='utf-8', capture_output=True, timeout=60)
     if probe.returncode:
@@ -356,9 +375,10 @@ def cmd_run_once(args):
     if not work:
         print('no runnable jobs')
         return
+    claude_bin = getattr(args, 'claude_bin', 'claude')
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(work)) as pool:
         futures = {pool.submit(run_claimed, args.db, acc['name'], acc['config_dir'], job, args.timeout,
-                               getattr(args, 'events', None), getattr(args, 'run_id', None)):
+                               getattr(args, 'events', None), getattr(args, 'run_id', None), claude_bin):
                    (acc['name'], job['external_id']) for acc, job in work}
         for future in concurrent.futures.as_completed(futures):
             acc, external_id = futures[future]
@@ -381,7 +401,7 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491):
               ('x' * payload_bytes))
     started = time.monotonic()
     proc = subprocess.run(
-        [claude, '-p', '--output-format', 'json', '--json-schema',
+        claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
          '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
          '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
         input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
@@ -438,8 +458,21 @@ def cmd_staged_run(args):
         if not pending and not done_unrecorded:
             break
         if pending:
+            now_ts = int(time.time())
+            db = connect(args.db)
+            runnable = db.execute("SELECT count(*) FROM accounts WHERE validated=1 AND parked_until<=?",
+                                  (now_ts,)).fetchone()[0]
+            earliest = db.execute("SELECT min(parked_until) FROM accounts WHERE validated=1").fetchone()[0]
+            db.close()
+            if not runnable:
+                # D-D: every account is parked while jobs remain pending. The old loop
+                # had no sleep/exit here and busy-spun indefinitely (H818 acceptance).
+                write_census(args.events, args.census)
+                raise SystemExit('staged-run halted: %d job(s) pending but all accounts parked '
+                                 'until %s; rerun with --resume after the reset' % (pending, earliest))
             cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout,
-                                            events=args.events, run_id=run_id))
+                                            events=args.events, run_id=run_id,
+                                            claude_bin=args.claude_bin))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
                                            cwd=args.cwd))
         promote = subprocess.run(
@@ -596,7 +629,7 @@ def main(argv=None):
     p = sub.add_parser('import-coordinator'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--lease-id', action='append'); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_import_coordinator)
     p = sub.add_parser('recover'); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', required=True); p.add_argument('--cwd', required=True); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)

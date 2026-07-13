@@ -138,6 +138,25 @@ def main():
         assert built['schema'] == 'pwg.headless_execution_manifest.v1'
         assert built['batches'] == batches and built['model'] == 'claude-sonnet-5'
         assert json.dumps(built['inputs'], ensure_ascii=True) in js
+
+    # D-A (H818 Windows acceptance): the launcher resolver must bypass the Windows .cmd
+    # batch shim (cmd.exe corrupts the --json-schema arg) and pass native/POSIX through.
+    _name, _which, _glob = h.os.name, h.shutil.which, h.glob.glob
+    try:
+        h.os.name = 'posix'
+        assert h.claude_argv_prefix('/usr/bin/claude') == ['/usr/bin/claude']
+        h.os.name = 'nt'
+        assert h.claude_argv_prefix(r'C:\p\claude.exe') == [r'C:\p\claude.exe']
+        h.shutil.which = lambda _n: r'C:\node.exe'
+        h.glob.glob = lambda pat: ([r'C:\p\node_modules\@anthropic-ai\claude-code\cli-wrapper.cjs']
+                                   if 'cli*.cjs' in pat else [])
+        assert h.claude_argv_prefix(r'C:\p\claude.cmd') == [
+            r'C:\node.exe', r'C:\p\node_modules\@anthropic-ai\claude-code\cli-wrapper.cjs']
+        h.shutil.which = lambda _n: None                    # no node -> fall back to the shim
+        assert h.claude_argv_prefix(r'C:\p\claude.cmd') == [r'C:\p\claude.cmd']
+    finally:
+        h.os.name, h.shutil.which, h.glob.glob = _name, _which, _glob
+    print('  D-A claude_argv_prefix: posix/.exe passthrough, .cmd->node-direct, no-node fallback OK')
     print('headless_worker_selftest: PASS')
 
 

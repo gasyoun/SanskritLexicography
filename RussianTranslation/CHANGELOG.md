@@ -10,6 +10,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H852 — H818 Windows headless-invocation defects fixed + verified live.**
+  `claude_argv_prefix()` (node-direct, bypasses the `.cmd`/cmd.exe `--json-schema`
+  corruption) in `headless_worker.call()`/`live_probe`/`profile_status`; `--claude-bin`
+  threaded through `staged-run → run_once → run_claimed`; `is_rate_limited()` ignores
+  the `manifest_sha256` (no false 429 park); `staged-run` parked-account halt (no
+  busy-loop). Re-run: presplit canary GO, generation `done`/`success`, no false park,
+  no livelock. Adds D-A/D-C unit tests; LANG_PARITY re-verified SHARED.
 - H818 Windows-100 readiness: headless Workflow-parity retry/split/heal/stitch,
   deterministic 5×20 preparation, credential-safe append-only run events and bug
   census, strict headword/subcard and positive store-delta GO gates, a non-promoting
