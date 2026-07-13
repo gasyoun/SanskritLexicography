@@ -4264,8 +4264,31 @@ def test_denylist_torn_line_fails_loud():
         fail('load_denylist must surface a DenylistError for a torn line, got:\n%s' % proc.stderr)
 
 
+def test_strip_mask_tokens_clears_notes_stranded_anchor():
+    # H858: the model sometimes MENTIONS a masking placeholder in its free-text
+    # `notes` ("Masked span {T1} is a citation reference…"). Rendered verbatim
+    # into the .merged.md blockquote, that mention made stage2_pregate misfire a
+    # STRANDED-ANCHOR on an otherwise-clean card (7/15 no_pwg_w09 false positives).
+    import _pilot_collect as pc
+    if pc.strip_mask_tokens('Masked span {T1} is a citation.') != 'Masked span is a citation.':
+        fail('strip_mask_tokens did not strip {T1} + tidy the gap')
+    if pc.strip_mask_tokens('echoed {Tn} literal') != 'echoed literal':
+        fail('strip_mask_tokens did not strip the literal {Tn} example token')
+    if pc.strip_mask_tokens('plain note, no tokens') != 'plain note, no tokens':
+        fail('strip_mask_tokens altered clean text')
+    # integration: notes mentioning {T1} must not leak a placeholder into the render
+    md = pc.render({'key': 'x~~h0_zz_pw', 'card': {
+        'key1': 'x', 'iast': 'x', 'notes': 'Masked span {T1} is a citation reference.',
+        'records': [{'h': '0', 'grammar': 'm.', 'senses': [
+            {'tag': '1', 'german': 'a', 'russian': 'b', 'equivalence_type': 'equivalent',
+             'source_type': 'lexicographic', 'stratum': '', 'differentia': ''}]}]}})
+    if '{T1}' in md or '{Tn}' in md:
+        fail('render() leaked a {Tn} masking token from notes into merged.md')
+
+
 def main():
     tests = [
+        test_strip_mask_tokens_clears_notes_stranded_anchor,
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
         test_tm_card_sane_rejects_zero_marker_drift,

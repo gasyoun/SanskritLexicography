@@ -3,7 +3,7 @@
 
   python _pilot_collect.py <workflow-output.json>
 """
-import json, os, sys
+import json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -49,6 +49,27 @@ def find_meta(o):
     return None
 
 
+# The `notes` field is free-text model commentary; it sometimes *mentions* a
+# masking placeholder ("Masked span {T1} is a citation reference…"). Rendered
+# verbatim into the `.merged.md` blockquote, that mention makes stage2_pregate's
+# stranded-anchor scan misfire STRANDED-ANCHOR on an otherwise-clean card (H858:
+# 7/15 no_pwg_w09 "defects" were this false positive). A {Tn} in prose notes is
+# always a masking artifact, never deliverable content — strip it.
+_MASK_TOKEN_RE = re.compile(r'\{T(?:\d+|n)\}')
+
+
+def strip_mask_tokens(text):
+    """Remove {T<n>}/{Tn} masking-artifact tokens from free-text (notes), tidying
+    the whitespace/punctuation the removal leaves behind. Deliverable fields
+    (german/russian) are never passed here — their {Tn} are real, restorable spans."""
+    if not text:
+        return text
+    out = _MASK_TOKEN_RE.sub('', text)
+    out = re.sub(r'  +', ' ', out)          # collapse the gap a removed token left
+    out = re.sub(r'\s+([.,;:])', r'\1', out)  # "span  is" / "span ." tidy
+    return out.strip()
+
+
 def render(res):
     lines = []
     c = res.get('card') or {}
@@ -66,7 +87,9 @@ def render(res):
                 lines.append('| | **διφ:** %s | | | | |' % s['differentia'].replace('|', '/')[:400])
         lines.append('')
     if c.get('notes'):
-        lines.append('> %s\n' % c['notes'])
+        note = strip_mask_tokens(c['notes'])
+        if note:
+            lines.append('> %s\n' % note)
     return '\n'.join(lines)
 
 
