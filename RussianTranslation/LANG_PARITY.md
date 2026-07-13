@@ -955,10 +955,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "815fe75a1bdc7467d46a846deb96ff2cf5625c98d6f52d6a61db439b33b20f88",
       "src/pilot/headless_worker.py": "344df79a75dcbc85a90d8ccea8e271a88bde0e433c90eb131eb04d9d4ccbaeb9",
-      "src/pilot/max_account_orchestrator.py": "0083954b60b332b0fe2cc9af5375a76ff2333e2d6963037f43c5f13d3a2c16a5",
+      "src/pilot/max_account_orchestrator.py": "c8cf0d9529e739445554d4f07860485b21e29f3ea5c300e3c73dd15c54f9fbe4",
       "src/pilot/coordinator.py": "3fc844fe372b7511528aefeefbc90dcd83653b9cc09e85fed837fd599eac15f8",
       "src/pilot/headless_worker_selftest.py": "a98c9e0380f9630f84ad3e8355b3d3db852765d0b7a0f36d6fa393e5fcdf9a02",
-      "src/pilot/max_account_orchestrator_selftest.py": "03120acd7ee64da66775d717e3fac1c34a0bb6de4eadcd09f767d858aeea92b5",
+      "src/pilot/max_account_orchestrator_selftest.py": "b617efaf6b2670e06f2d42dba7b6e532b629a4ac8c2025365374a0043373a8c4",
       "src/pilot/no_pwg_scale_plan.py": "ec654b580278361a6fe27c1cb93a04acd1c1a219f8db223f2fdea9c0a657a105",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "371d0197b39e217ef1754eb60d8b09f79823678f728d65e276f864eaeb8e0d72",
