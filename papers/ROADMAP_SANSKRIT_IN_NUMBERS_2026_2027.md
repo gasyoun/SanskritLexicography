@@ -2,7 +2,7 @@
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 13-07-2026_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -108,34 +108,49 @@ from DCS is unattested-in-our-corpus, not a ghost word.
 Each wave states what unblocks it. Waves 0–1 are agent-doable now; waves 2–4 gate on human/rights
 inputs.
 
-### Wave 0 — Assemble the "already-owned" modules (agent-doable, now)
+### Wave 0 — Assemble the "already-owned" modules (agent-doable, now) — ✅ DONE 13-07-2026
+
 *Unblocked by:* nothing — all inputs are committed.
 
 - Pull modules **2** (vocab size → A40 census + A55 union), **7** (POS distribution → A56
   grammar-token index), **1** (lemma/token → VisualDCS), and a first cut of **3/4** (frequency →
   `dcs_lemma_summary.json`) into a single **`papers/sanskrit_in_numbers/` data table**, RU-labelled.
-- Deliverable: [`papers/sanskrit_in_numbers/MODULES_OWNED.md`](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) — one row per module, each citing its source artifact with n + date (the house trust-block discipline).
+- Deliverable: [`papers/sanskrit_in_numbers/MODULES_OWNED.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/MODULES_OWNED.md) — one row per module, each citing its source artifact with n + date (the house trust-block discipline). Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-Sonnet_SanskritLexicography_sanskrit_in_numbers_wave1_new_modules_12.07.26.md) (Sonnet 5 `claude-sonnet-5`): Petersburg-family de-duplicated union 167,904 vs. naive sum 285,799 (+70.2% double-count inflation, the D2/D6 caveat now quantified); the new Zipf coverage curve shows DCS's top-100 lemmas cover 36.1% of the corpus (vs. Duden's ~50% for German).
 
-### Wave 1 — Build the five NEW modules (agent-doable, now — **the core measurement**)
+### Wave 1 — Build the five NEW modules (agent-doable, now — **the core measurement**) — ✅ DONE 13-07-2026
+
 *Unblocked by:* wave 0's basis lock; PWG/PWK/SCH markup already present in the org dict repos.
 
-A committed dataset + one figure per module, computed reproducibly from the family markup + DCS:
+A committed dataset + one figure per module, computed reproducibly from the family markup + DCS.
+Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-Sonnet_SanskritLexicography_sanskrit_in_numbers_wave1_new_modules_12.07.26.md) (Sonnet 5 `claude-sonnet-5`) — headline numbers + trust blocks in
+[`papers/sanskrit_in_numbers/WAVE1_SUMMARY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/WAVE1_SUMMARY.md):
 
 - **Module 5 — akṣara / phoneme frequency.** Phoneme histogram over family headwords (SLP1/key1)
   and over DCS tokens; report both *graphemic* (Devanagari akṣara) and *phonemic* counts, since
-  sandhi makes them diverge — the Sanskrit-specific twist on Duden's letter chart.
+  sandhi makes them diverge — the Sanskrit-specific twist on Duden's letter chart. Shipped:
+  family (285,950 headwords) + DCS corpus (5,688,416 tokens) histograms both computed; the two
+  layers genuinely diverge (e.g. phonemic `a` at 21–24% vs. no single akṣara exceeding 5.5%).
 - **Module 6 — longest compounds.** Longest samāsa in DCS (with a ≥5-occurrence honesty floor, as
-  Duden does), plus the length distribution; the show-stopper module.
+  Duden does), plus the length distribution; the show-stopper module. Shipped: 39-char/16-akṣara
+  record at the floor (*sāgaravaradharabuddhivikrīḍitābhijñasya*, n=5) vs. a 50-char hapax without
+  the floor — demonstrating why the floor matters.
 - **Module 8 — gender distribution.** m / f / n shares from family gender markers; the
-  multi-gender headword set (the analog of Duden's *der/die/das Joghurt*).
+  multi-gender headword set (the analog of Duden's *der/die/das Joghurt*). Shipped from the
+  already-released A56 zaliznyak-grammar-index `lex` column (98,639 headwords): masc 54.6% / neut
+  23.4% / fem 22.0% (of 64,488 gendered nouns); 482 multi-gender headwords.
 - **Module 10 — verb classes + voice.** gaṇa (10-class) distribution and
-  parasmaipada/ātmanepada/ubhayapada shares, from family `cl.`/`<ab>P.</ab>` markup joined to
-  [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) (85.5 % gaṇa agreement already measured);
-  the direct *haben/sein* analog.
+  parasmaipada/ātmanepada/ubhayapada shares, from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots)'
+  own digitized Whitney (1885) classification (857 roots) + vidyut-prakriya-generated paradigms
+  (419 roots corroborated) — not re-parsed from raw PWG prose, per the honest-method note in
+  WAVE1_SUMMARY.md; the direct *haben/sein* analog. Shipped: gaṇa I dominates at 72.0%; pada split
+  parasmaipada 61.1% / ātmanepada 20.5% / ubhayapada 18.4%.
 - **Module 9 — samāsa types (best-effort).** Distribution of tatpuruṣa / bahuvrīhi / dvandva /
   … over a DCS-segmented sample (vidyut / DCS analyses); flagged best-effort because full
   compound typing needs segmentation, not markup. The *Fugenzeichen* analog: sandhi transformation
-  at the juncture.
+  at the juncture. Shipped: DCS's own UD-style `compound:coord` tag gives a reliable dvandva count
+  (2,044 relations, 92.3% of tagged compound relations) — genuinely new, not heuristic; the
+  tatpuruṣa/bahuvrīhi split is explicitly NOT auto-classified (would risk fabricated percentages)
+  and is left as a flagged follow-up with a hand-typing sample included.
 
 ### Wave 2 — The RU portrait (gates on wave 1 + Manual home)
 *Unblocked by:* all 10 module datasets; confirmation of the Manual repo/build (see §8).
