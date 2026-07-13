@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H818 D-K — two-phase probe protocol (fixes the cold-start flap without lowering the
+  ceiling).** The single-sample D-F gate NO-GO'd on a transient cold reading (a 30151 ms
+  flap on an otherwise ~8–10 s warm profile). `live_probe` now runs a deterministic
+  sequence: **exactly one warm-up call** (same profile + exact model; its latency is
+  EXCLUDED from the acceptance gate — it only stabilizes the cold connection) then
+  **immediately exactly one measured ≥5 KB probe** that IS gated (rc 0, auth/model/
+  output-size checks, latency **≤30000 ms unchanged**). A warm-up failure
+  (auth/model/malformed/rate-limit/timeout) is an immediate STOP; a failed or over-ceiling
+  *measured* probe is an honest NO-GO with **no retry and no manual pre-warming**. Both calls
+  are recorded separately in telemetry (`purpose` warmup/measured, latency, model,
+  output_bytes, classification); `build_census` keeps probe calls distinguishable from
+  translation, excludes the warm-up from acceptance latency, but **still counts warm-up
+  rate-limits in total quota observations**. `output_bytes` is measured from encoded UTF-8
+  bytes, not character count. Both probe calls use the shared D-J tree-kill runner (now
+  extracted to `proc_tree.py`, used by both `headless_worker` and `max_account_orchestrator`),
+  so a hanging probe kills its whole parent→child→grandchild tree before generation begins.
+  Regression tests: exactly one warm-up + one measurement, 30000 passes / 30001 NO-GO,
+  warm-up failure STOPs before the measured call, encoded output_bytes, census
+  distinguishability + quota, and a real 3-level hanging-probe tree-kill. (13-07-2026, Opus
+  4.8 `claude-opus-4-8`, H818 lineage.)
 - **H818 D-J — Windows process-tree kill on timeout (bounded best-effort).** A timed-out
   generation call was killed with `subprocess.run(timeout=)`, whose Windows kill hits only
   the immediate `node cli-wrapper.cjs` process — **orphaning the `spawnSync`'d native claude
