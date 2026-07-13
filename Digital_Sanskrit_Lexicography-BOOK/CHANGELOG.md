@@ -7,6 +7,17 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H867, BOOK_PLAN metadoc)
+
+- **Companion metadoc created** →
+  [BOOK_PLAN.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.meta.md),
+  the sibling record for the plan of record — purpose/audience/provenance, a **Use cases**
+  section (who consults the plan + what the book, its 12 committed chapters as standalone
+  articles, and its datasets can be used for), a ranked improvement backlog (Ch. 3 / Ch. 11 /
+  ch02 corpus-section / DOI sprint / front-back matter, each with an owner or `parked` verdict),
+  known limitations (P-number trap, source-path staleness bugs, rights posture), intended-use /
+  known-misuse, and maintenance/sunset plan. `.gitignore` allowlist extended with `!*.meta.md`.
+
 ### Added — 13-07-2026 (H866, Ch. 6 merge)
 
 - **Ch. 6 written as a genuine MERGE of two articles** (A02 + A33), not a conversion →
