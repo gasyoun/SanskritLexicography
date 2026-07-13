@@ -405,8 +405,19 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   unified to the book's, the Ferri (Servius decorum) + Baalbaki (Arabic correctness-screen
   contrast) grounding and the Europe-specific honesty clause woven in per crosswalk §1/§4.1,
   cross-references remapped to sibling chapters (Ch. 2 method, Ch. 4/7 kośa contrast, Ch. 6
-  senses, Ch. 13 Renou); every count and table carried over unchanged. **3 of 14 chapters
-  now in book form** (ch01, ch02, ch05).
+  senses, Ch. 13 Renou); every count and table carried over unchanged.
+
+**Done 13-07-2026 (H851 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 4 converted journal→book** →
+  [chapters/ch04_kosha_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch04_kosha_macrostructure.md)
+  (from A06, *Order Is the Dictionary*, csl-atlas source). Abstract/keywords stripped, the
+  companion-paper "P-numbers" remapped to book chapters (P1→Ch. 2, P4→Ch. 7), the crosswalk
+  §1 grounding woven in (Vogel already primary; added Baalbaki's *mubawwab/muǧannas* + three
+  formal orders, Hartmann & James access structures, Jackson/Hüllen European onomasiological
+  tradition, Partridge, Dickey), the two draft "author to verify" placeholders resolved into
+  a clean footnote (Wilson-1819 descent kept as asserted lineage, not quantified). Every
+  count and table carried over unchanged. **4 of 14 chapters now in book form** (ch01, ch02,
+  ch04, ch05).
 
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI

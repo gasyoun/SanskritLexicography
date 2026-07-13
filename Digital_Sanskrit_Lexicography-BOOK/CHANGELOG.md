@@ -7,6 +7,25 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H851, Ch. 4 conversion)
+
+- **Ch. 4 converted journal→book** →
+  [chapters/ch04_kosha_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch04_kosha_macrostructure.md),
+  the book-form version of A06 *Order Is the Dictionary: A Macrostructural Model of the
+  Versified Synonymic Kośa* (csl-atlas source
+  [paper_kosha_macrostructure.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_kosha_macrostructure.md)).
+  Abstract + keywords stripped, provenance headnote added (A06 stays citable at IJL / WSC
+  2027), companion "P-numbers" remapped to book chapters (P1→Ch. 2 method, P4→Ch. 7
+  indigenous microstructure), the crosswalk §1 grounding woven in — Vogel (already primary),
+  **Baalbaki** (*mubawwab/muǧannas* + the three formal orders; the alphabet is not one
+  thing), **Hartmann & James** (access structures), **Jackson**/Hüllen (European
+  onomasiological tradition), **Partridge**, **Dickey** — and the two draft "author to
+  verify" placeholders resolved into one honest footnote (the Wilson-1819 kośa descent kept
+  as asserted lineage, quantification deferred to the sense-alignment study). Every count and
+  table (7,907 ARMH records / 860 verses / 9.2 syn-per-verse; 1,965 ABCH records / 4,619
+  lexemes; the 56-Viṣṇu peak; the gender apparatus) carried over unchanged. **4 of 14
+  chapters now in book form** (ch01, ch02, ch04, ch05).
+
 ### Added — 13-07-2026 (H846, Ch. 1 conversion)
 
 - **Ch. 1 converted journal→book** →
