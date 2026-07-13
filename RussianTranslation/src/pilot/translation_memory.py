@@ -81,8 +81,14 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 from window_common import append_jsonl_line  # noqa: E402
+from store_path import canonical_store  # noqa: E402
 
-DEFAULT_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
+# ONE logical store shared across worktrees (H818 D-E): resolve via canonical_store so a
+# git-worktree run's post-promotion TM rebuild targets the MAIN checkout store, exactly like
+# promote_final_cards.DEFAULT_STORE. Previously this was a worktree-local path that did not
+# exist under a linked worktree, so `promote_ready`'s `translation_memory.py build` (no --store)
+# failed "store not found" after a successful promotion, aborting the staged-run.
+DEFAULT_STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
 FIELD = {'ru': 'ru', 'en': 'en'}                    # store column holding the translation
 TRUST_REVIEWED = 'reviewed_exact'
 TRUST_MACHINE = 'machine_exact'
@@ -1327,6 +1333,37 @@ def selftest():
         _suggest_selftest()
         _validation_selftest()
         _publication_selftest()
+        # H818 D-E: DEFAULT_STORE resolves through store_path.canonical_store (same as
+        # promote_final_cards), so a git-worktree run's post-promotion `translation_memory.py
+        # build` (no --store) targets the MAIN checkout store instead of a vanishing worktree-local
+        # path. Prove: (a) DEFAULT_STORE == canonical_store(base); (b) explicit --store still wins;
+        # (c) both RU and EN build codepaths work from an explicit store.
+        os.environ.pop('PWG_RU_STORE', None)
+        assert DEFAULT_STORE == canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl')), DEFAULT_STORE
+        fd2, bstore = tempfile.mkstemp(suffix='.jsonl'); os.close(fd2)
+        fd3, ruout = tempfile.mkstemp(suffix='.json'); os.close(fd3)
+        fd4, enout = tempfile.mkstemp(suffix='.json'); os.close(fd4)
+        try:
+            with open(bstore, 'w', encoding='utf-8') as f:
+                f.write(json.dumps(
+                    {'subcard': 'b~~h0_1', 'key1': 'b', 'iast': 'ba', 'h': 'ba', 'sense_tag': '1',
+                     'ru': 'вода', 'en': 'water', 'de': 'Wasser', 'equivalence_type': 'equivalent',
+                     'source_type': 'attested', 'stratum': '', 'differentia': '',
+                     'provenance': {'input_raw_sha256': 'FFF', 'model': 'sonnet',
+                                    'model_version': 'claude-sonnet-5', 'root': 'b'}},
+                    ensure_ascii=False) + '\n')
+            _, nru, _ = build(bstore, 'ru', out=ruout)   # explicit --store (bstore) wins
+            _, nen, _ = build(bstore, 'en', out=enout)   # existing EN codepath unaffected
+            assert nru == 1 and nen == 1, (nru, nen)
+            assert lookup('ru', 'FFF', tm=ruout)['src_key'] == 'b~~h0_1'
+            assert lookup('en', 'FFF', tm=enout)['src_key'] == 'b~~h0_1'
+        finally:
+            for p in (bstore, ruout, enout):
+                try:
+                    os.unlink(p)
+                except OSError:
+                    pass
+        print('  D-E: DEFAULT_STORE via canonical_store; explicit --store wins; RU+EN build OK')
         print('translation_memory selftest OK')
     finally:
         for p in (store, out):

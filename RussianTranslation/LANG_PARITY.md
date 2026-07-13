@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 12-07-2026_
+_Created: 04-07-2026 · Last updated: 13-07-2026_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -207,7 +207,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "65b0cb16a8a1bd6ae5fde9c8e0b131a2ba9af8140ec954aa7c937f915ad8856c"
+      "src/pilot/translation_memory.py": "016851d38fd1e62f301c8ef41f5afce833d50b99c9dd1bacb6d5406579cc4670"
     }
   },
   {
@@ -521,7 +521,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #3b): the fragment sidecar is content-addressed on the fragment SOURCE and was harvested append-only first-seen-wins with NO fidelity check, so a hand-edited/corrupt wf_output*.json (blanked or malformed senses) permanently poisoned reuse and a later good harvest of the same fsha could never override it. frag_senses_sane(senses, lang) keys on the CARD-shaped translation field ('russian'/'english') and is applied at BOTH harvest (never cache garbage; a cached-corrupt fsha maps to False so a good row overrides it) and serve (load_frag_tm drops any corrupt historical row). Entirely lang-agnostic — lang is a first-class parameter of frag_address/frag_senses_sane/load_frag_tm/build_frags, no RU/EN branch. Pinned by test_frag_tm_fidelity_gate_and_override. Extends translation_memory_card_and_fragment.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "65b0cb16a8a1bd6ae5fde9c8e0b131a2ba9af8140ec954aa7c937f915ad8856c",
+      "src/pilot/translation_memory.py": "016851d38fd1e62f301c8ef41f5afce833d50b99c9dd1bacb6d5406579cc4670",
       "src/pilot/window_selftest.py": "89bc36e49e90a1b20e8a19798fb40bfcb0b0a17f49f34987e872fef29528bd37"
     }
   },
@@ -652,7 +652,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "2796a6b00232cb7a55e177e999a964633ea90026ddda754eee8f6b3922be0878",
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
-      "src/pilot/translation_memory.py": "65b0cb16a8a1bd6ae5fde9c8e0b131a2ba9af8140ec954aa7c937f915ad8856c",
+      "src/pilot/translation_memory.py": "016851d38fd1e62f301c8ef41f5afce833d50b99c9dd1bacb6d5406579cc4670",
       "src/pilot/window_selftest.py": "89bc36e49e90a1b20e8a19798fb40bfcb0b0a17f49f34987e872fef29528bd37"
     }
   },
@@ -903,7 +903,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H805, root-fix for the H255 w06 store loss). The resolver is language-independent; both promotion paths import the SAME store_path.canonical_store and default --store to its result, so neither RU nor EN can silently drop promotions into a discarded worktree store. Strengthens promotion_claim_file_h336: both paths now lock the SAME canonical store path across worktrees. Deterministic selftest: python src/store_path.py --selftest.",
     "tracking": "",
     "verified_sha256": {
-      "src/store_path.py": "8b9d62c7c1fa463b9938c8b4a118b53a34bc4e0c22a146b487e88847fb7e583b",
+      "src/store_path.py": "2b3be1415dc7a387717c60574abc36aec9600d7a5c138bf7ac85415aa1b1e152",
       "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
       "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
@@ -954,10 +954,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "815fe75a1bdc7467d46a846deb96ff2cf5625c98d6f52d6a61db439b33b20f88",
       "src/pilot/headless_worker.py": "95a43cf3c305db819b8006157cdbdead6bb282057dd1c5dd1481c6e6088f4b0b",
-      "src/pilot/max_account_orchestrator.py": "ee1a99f3def9b58623dc08f74b8c3d68a249e4591ae4b3fc208a17b0b911cd97",
+      "src/pilot/max_account_orchestrator.py": "6eef6e36d1b29fc1cfc8833f90576f2445d70a7151a62fbca2faa3a099d4cd66",
       "src/pilot/coordinator.py": "3fc844fe372b7511528aefeefbc90dcd83653b9cc09e85fed837fd599eac15f8",
       "src/pilot/headless_worker_selftest.py": "a5f6fb98e32b6e860848a5c2ed4f6871469ce1a576d2030b45485b9f460464ad",
-      "src/pilot/max_account_orchestrator_selftest.py": "5e35eab34ad0a8dcc88f70bee1fc3f021b808a276874432278f58def62625065",
+      "src/pilot/max_account_orchestrator_selftest.py": "8509edb75126b4ed16f93495fc368be64d14b044bb8d00e38027920ff827439a",
       "src/pilot/no_pwg_scale_plan.py": "ec654b580278361a6fe27c1cb93a04acd1c1a219f8db223f2fdea9c0a657a105",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "31ddb27ecc03e4096d4f699012ecce4ede1c8aea65ad30f3434cc25fa7a25129",
