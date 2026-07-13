@@ -18,7 +18,7 @@ import sys
 import time
 
 from run_observability import append_event, write_census
-from headless_worker import claude_argv_prefix
+from headless_worker import claude_argv_prefix, run_tree_kill
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -242,8 +242,8 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     try:
-        proc = subprocess.run(argv, cwd=job['cwd'], env=env, text=True, encoding='utf-8',
-                              capture_output=True, timeout=timeout)
+        proc = run_tree_kill(argv, cwd=job['cwd'], env=env, text=True, encoding='utf-8',
+                             capture_output=True, timeout=timeout)   # D-J: tree-kill on timeout
         payload = json.dumps({'argv': argv, 'returncode': proc.returncode,
                               'stdout': proc.stdout, 'stderr': proc.stderr}, ensure_ascii=False, indent=1)
         atomic_write(attempt_log, payload)
@@ -301,9 +301,9 @@ def profile_status(config_dir, claude='claude'):
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     try:
-        proc = subprocess.run(claude_argv_prefix(claude) + ['auth', 'status', '--json'],
-                              env=env, text=True,
-                              encoding='utf-8', capture_output=True, timeout=30)
+        proc = run_tree_kill(claude_argv_prefix(claude) + ['auth', 'status', '--json'],
+                             env=env, text=True,
+                             encoding='utf-8', capture_output=True, timeout=30)   # D-J: tree-kill
     except (OSError, subprocess.TimeoutExpired) as exc:
         return False, str(exc)
     try:
@@ -312,7 +312,7 @@ def profile_status(config_dir, claude='claude'):
         return False, (proc.stderr or proc.stdout)[-500:]
     if proc.returncode or not data.get('loggedIn'):
         return False, data.get('subscriptionType') or 'not logged in'
-    probe = subprocess.run(
+    probe = run_tree_kill(               # D-J: tree-kill on timeout
         claude_argv_prefix(claude) + ['-p', 'Return exactly OK.', '--output-format', 'json',
          '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
         env=env, text=True, encoding='utf-8', capture_output=True, timeout=60)
@@ -473,7 +473,7 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
               ('x' * payload_bytes))
     started = time.monotonic()
-    proc = subprocess.run(
+    proc = run_tree_kill(                # D-J: tree-kill on timeout
         claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
          '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
          '--model', model, '--permission-mode', 'plan'],
@@ -672,8 +672,8 @@ def cmd_presplit_canary(args):
            os.path.abspath(args.manifest), '--output', os.path.abspath(args.output),
            '--status-out', os.path.abspath(args.status), '--claude-bin', args.claude_bin,
            '--timeout', str(args.timeout)]
-    proc = subprocess.run(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
-                          timeout=args.timeout)
+    proc = run_tree_kill(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
+                         timeout=args.timeout)   # D-J: tree-kill on timeout (presplit canary worker)
     status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
     canary_base = {'run_id': run_id, 'account': accounts[0]['name'],
                    'manifest_hash': status.get('manifest_sha256')}
