@@ -480,6 +480,21 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   (register scales). Every count and table carried over unchanged. **9 of 14 chapters now in
   book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12, ch13).
 
+**Done 13-07-2026 (H863 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 14 converted journal→book** →
+  [chapters/ch14_error_typology.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch14_error_typology.md)
+  (from A12, *Surface, Not Substance*, csl-observatory source — the real path is
+  `paper-obs-t-error-typology.md`, superseding the stale `reports/obs_t_paper_draft.md` in §2's
+  table). Abstract/keywords stripped, snapshot noted as the current **52,498-event** cut
+  (superseding the 50,953 in §6's data table), the csl-atlas companions remapped to Ch. 10/6/7,
+  and the crosswalk grounding woven in (Abel & Meyer user-participation — Ch. 14 as a *case*;
+  Klosa-Kückelhaus & Tiberius error-handling process; Herold/Meyer/Wiegand + Brewer
+  versioned-dictionary/OED-Online precedent; Akasu + Hartmann & James
+  dictionary-criticism/error-as-evidence; Partridge pre-digital collaborative revision). Evidence
+  labels tied to Ch. 2's grade vocabulary; "corrected ≠ wrong" framed as the interpretive-bounds
+  discipline. Every count and table carried over unchanged. **10 of 14 chapters now in book
+  form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12, ch13, ch14).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical

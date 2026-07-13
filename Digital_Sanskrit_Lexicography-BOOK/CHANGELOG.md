@@ -7,6 +7,30 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H863, Ch. 14 conversion)
+
+- **Ch. 14 converted journal→book** →
+  [chapters/ch14_error_typology.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch14_error_typology.md),
+  the book-form version of A12 *Surface, Not Substance: A Two-Axis Error Typology of Twelve
+  Years of Correction* (csl-observatory source
+  [paper-obs-t-error-typology.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/paper-obs-t-error-typology.md)).
+  Abstract + keywords stripped, provenance headnote added (A12 stays citable at LREC-COLING /
+  IJL), snapshot noted as the current **52,498-event** cut (the book's data table listed an
+  earlier 50,953), the OBS-Q process companion kept as a companion finding and the csl-atlas
+  microstructure companions remapped to **Ch. 10 / Ch. 6 / Ch. 7**. Crosswalk grounding woven
+  in — **Abel & Meyer** (user-participation direct/indirect/accessory + quality-voting — Ch. 14
+  is a *case* of this literature), **Klosa-Kückelhaus & Tiberius** (error-handling in the
+  lexicographic process), **Herold/Meyer/Wiegand** + **Brewer** (versioning / per-entry revision
+  histories / OED-Online + OED revision layers — cite, don't reinvent), **Akasu** + **Hartmann &
+  James** (dictionary-criticism methodology / error analysis as evidence), **Partridge**
+  (pre-digital collaborative revision). The `observed`/`derived`/`inferred` evidence labels tied
+  explicitly to Ch. 2's grade vocabulary; "corrected ≠ wrong" framed as the book's
+  interpretive-bounds discipline. Every count and table (52,498 events / 43 dicts / 208
+  correctors, 2014–2026; 64.3% derived; sense 52.7% of located edits; minor-edit rate headword
+  85.6% / sense 38.2% / markup 5.2%; χ²=26,192.5, Cramér's V=0.432; headword 0.88→0.10, markup
+  0.00→0.17; b→v 341; median edit distance 2, 63% ≤2 chars) carried over unchanged. **10 of 14
+  chapters now in book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12, ch13, ch14).
+
 ### Added — 13-07-2026 (H861, Ch. 13 conversion)
 
 - **Ch. 13 converted journal→book** →
