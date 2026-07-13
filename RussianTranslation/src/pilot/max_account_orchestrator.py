@@ -18,7 +18,7 @@ import sys
 import time
 
 from run_observability import append_event, write_census
-from headless_worker import claude_argv_prefix, run_tree_kill
+from headless_worker import claude_argv_prefix, run_tree_kill, windows_hidden_flags
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -454,12 +454,26 @@ def cmd_status(args):
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+# (>=5 KB applies to the INPUT payload; the probe validates the OUTPUT by result-envelope structure,
+# not by size -- a valid success wrapper with the small {"ok":true} schema result is fine.)
+
+
+def _probe_err_class(text):
+    """Classify an error blob as 'auth' or 'rate_limit' if its text says so, else None. Used for
+    BOTH non-zero rc and rc=0 error wrappers — the CLI may report auth/rate-limit with rc=0."""
+    if re.search(r'401|authenticat|not logged in|invalid.*credential', text or '', re.I):
+        return 'auth'
+    if RATE_LIMIT.search(text or ''):
+        return 'rate_limit'
+    return None
 
 
 def _probe_call(config_dir, claude, payload_bytes, model):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
-    classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'process' | 'timeout'.
-    NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to STOP on."""
+    classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
+    'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
+    STOP on. rc 0 alone is NOT enough: the Claude CLI result envelope must indicate success AND
+    carry the structured schema result {"ok": true}."""
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
@@ -478,17 +492,35 @@ def _probe_call(config_dir, claude, payload_bytes, model):
     combined = out + '\n' + (proc.stderr or '')
     output_bytes = len(out.encode('utf-8'))
     if proc.returncode:
-        if re.search(r'401|authenticat|not logged in|invalid.*credential', combined, re.I):
-            return latency_ms, 'auth', output_bytes
-        if RATE_LIMIT.search(proc.stderr or ''):
-            return latency_ms, 'rate_limit', output_bytes
-        return latency_ms, 'process', output_bytes
-    try:                                 # output-size / validity check: a real {"ok":...} object
-        data = json.loads(out)
-        if not isinstance(data, dict) or 'ok' not in data:
-            return latency_ms, 'malformed', output_bytes
+        return latency_ms, (_probe_err_class(combined) or 'process'), output_bytes
+    # rc 0 is NOT sufficient. `claude -p --output-format json` returns the CLI result *envelope*
+    # ({"type":"result","subtype":"success","is_error":false,"result":..., "structured_output":...}).
+    # Validate it strictly and require the structured schema result {"ok": true}.
+    try:
+        wrapper = json.loads(out)
     except (ValueError, TypeError):
         return latency_ms, 'malformed', output_bytes
+    if not isinstance(wrapper, dict) or wrapper.get('type') != 'result':
+        return latency_ms, 'malformed', output_bytes            # not the CLI result envelope
+    if wrapper.get('subtype') != 'success' or wrapper.get('is_error'):
+        # a valid envelope reporting an ERROR (with rc 0) — it may still carry auth/rate-limit text
+        return latency_ms, (_probe_err_class(json.dumps(wrapper, ensure_ascii=False)) or 'process'), output_bytes
+    # extract the structured schema result: `structured_output`, else `result` when it is a JSON
+    # string (or already a dict).
+    payload = wrapper.get('structured_output')
+    if payload is None:
+        res = wrapper.get('result')
+        if isinstance(res, str):
+            try:
+                payload = json.loads(res)
+            except (ValueError, TypeError):
+                payload = None
+        elif isinstance(res, dict):
+            payload = res
+    if not isinstance(payload, dict) or 'ok' not in payload:
+        return latency_ms, 'malformed', output_bytes            # missing / invalid structured result
+    if payload.get('ok') is not True:
+        return latency_ms, 'content', output_bytes              # {"ok": false} -> content, never success
     return latency_ms, 'success', output_bytes
 
 
@@ -498,11 +530,13 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     """D-K deterministic two-phase probe protocol (ceiling unchanged at 30000 ms). Runs EXACTLY
     one warm-up call (same profile + exact model; its latency is EXCLUDED from the acceptance
     gate — it only stabilizes the cold connection), then IMMEDIATELY EXACTLY one measured >=5 KB
-    probe that IS gated. PASS only when the measured call has rc 0, passes auth/model/output-size
-    checks, and latency <= ceiling. A warm-up failure (auth/model/malformed/rate-limit/timeout) is
-    an immediate STOP; a failed or over-ceiling MEASURED probe is an honest NO-GO with NO retry and
-    no manual pre-warming. Both calls are recorded separately in telemetry (purpose warmup /
-    measured), and the warm-up latency never enters the census."""
+    (INPUT payload) probe that IS gated. PASS only when the measured call has rc 0, its Claude CLI
+    result envelope validates (type=result / subtype=success / not is_error) with the structured
+    schema result {"ok": true}, the model is exact, and latency <= ceiling. A warm-up failure
+    (auth/model/malformed/content/rate-limit/timeout) is an immediate STOP; a failed or over-ceiling
+    MEASURED probe is an honest NO-GO with NO retry and no manual pre-warming. Both calls are
+    recorded separately in telemetry (purpose warmup / measured), and the warm-up latency never
+    enters the census."""
     if payload_bytes < PROBE_MIN_PAYLOAD_BYTES:
         raise SystemExit('probe payload %d B < %d B repository floor' %
                          (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))

@@ -174,17 +174,45 @@ def main():
         m._probe_call = _pc
     print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 30000 pass / 30001 NO-GO; warm-up fail STOPs before measured')
 
-    # D-K output_bytes is measured from ENCODED UTF-8 bytes, not character count.
+    # D-K _probe_call: rc 0 is NOT enough. The Claude CLI result envelope must indicate success
+    # (type=result, subtype=success, not is_error) AND carry the structured schema result
+    # {"ok": true}. Six fixtures + edge cases. output_bytes is ENCODED UTF-8 bytes, not char count.
     assert len('да') == 2 and len('да'.encode('utf-8')) == 4
     _rtk = m.run_tree_kill
+
+    def _out(stdout='', rc=0, stderr=''):
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=rc, stdout=stdout, stderr=stderr)
+
+    def _cls(stdout='', rc=0, stderr=''):
+        _out(stdout, rc, stderr)
+        return m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1]
+
     try:
-        body = '{"ok":true,"n":"да"}'
-        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout=body, stderr='')
-        lat, cls, obytes = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
-        assert cls == 'success' and obytes == len(body.encode('utf-8')) and obytes > len(body)
+        # (1) observed successful result-STRING wrapper (result is a JSON string) + Cyrillic body
+        w1 = '{"type":"result","subtype":"success","is_error":false,"result":"{\\"ok\\":true}","usage":{"n":"да"}}'
+        _out(w1)
+        lat, cls, ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        assert cls == 'success', cls
+        assert ob == len(w1.encode('utf-8')) and ob > len(w1)     # encoded bytes, not char count
+        # (2) successful structured_output wrapper
+        assert _cls('{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}') == 'success'
+        # (3) rc=0 ERROR wrapper (subtype != success) -> process
+        assert _cls('{"type":"result","subtype":"error_during_execution","is_error":false}') == 'process'
+        # (4) is_error=true -> process (never success)
+        assert _cls('{"type":"result","subtype":"success","is_error":true,"result":"boom"}') == 'process'
+        # (5) {"ok": false} -> content (never success)
+        assert _cls('{"type":"result","subtype":"success","is_error":false,"result":"{\\"ok\\":false}"}') == 'content'
+        # (6) rate-limit / auth error wrapper reported with rc 0 -> detected inside
+        assert _cls('{"type":"result","subtype":"error","is_error":true,"result":"429 Too Many Requests rate limit"}') == 'rate_limit'
+        assert _cls('{"type":"result","subtype":"error","is_error":true,"result":"401 Invalid authentication credentials"}') == 'auth'
+        # edges: non-envelope / non-JSON / missing structured result -> malformed; 401 rc!=0 -> auth
+        assert _cls('<html>not json</html>') == 'malformed'
+        assert _cls('{"foo":"bar"}') == 'malformed'                       # type != result
+        assert _cls('{"type":"result","subtype":"success","is_error":false}') == 'malformed'  # no structured result
+        assert _cls('', rc=1, stderr='401 Invalid authentication credentials') == 'auth'
     finally:
         m.run_tree_kill = _rtk
-    print('  D-K output_bytes: encoded UTF-8 bytes, not character count')
+    print('  D-K _probe_call envelope: result-string + structured_output => success; error/is_error => process; {ok:false} => content; rc0 rate/auth wrapper detected; non-envelope => malformed')
 
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
@@ -218,7 +246,8 @@ def main():
         def _alive(pid):
             if os.name == 'nt':
                 out = subprocess.run(['tasklist', '/FI', 'PID eq %d' % pid, '/NH'],
-                                     capture_output=True, text=True).stdout or ''
+                                     capture_output=True, text=True,
+                                     creationflags=m.windows_hidden_flags()).stdout or ''   # no flicker
                 return str(pid) in out.split()
             try:
                 os.kill(pid, 0); return True
