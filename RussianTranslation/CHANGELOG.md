@@ -10,6 +10,21 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H818 D-J — Windows process-tree kill on timeout (bounded best-effort).** A timed-out
+  generation call was killed with `subprocess.run(timeout=)`, whose Windows kill hits only
+  the immediate `node cli-wrapper.cjs` process — **orphaning the `spawnSync`'d native claude
+  binary** (confirmed at the wrapper source) that keeps holding the API call. That is the
+  bounded-scope diagnosis (defect A) of the arvant multi-minute non-termination (a
+  content-specific problem B is not ruled out until a post-merge bounded retry). Fix: a
+  `run_tree_kill` (Popen + `communicate(timeout=)`) that on timeout performs **bounded
+  best-effort** whole-tree termination — `taskkill /PID <pid> /T /F` while the parent is
+  alive on Windows, `killpg` on POSIX — always falling back to `proc.kill()`, draining pipes
+  and reaping within the remaining kill budget, and recording cleanup trouble diagnostically
+  without changing the primary `timeout` classification. Applied at every claude-spawning
+  kill point (worker calls, the outer worker subprocess, `live_probe`, `profile_status`,
+  presplit-canary worker). Not race-free (tree enumeration still races exit/spawn) —
+  correctness is asserted by a **parent→child→grandchild** regression test that fails if any
+  descendant survives. (13-07-2026, Opus 4.8 `claude-opus-4-8`, H818 lineage.)
 - **H818 acceptance hardening (follow-up) — D-G real-concurrency race + D-I telemetry
   cardinality.** Two further acceptance defects, following the D-E…D-H batch. The D-G
   selftest was strengthened to a **real** concurrency race — two independent SQLite

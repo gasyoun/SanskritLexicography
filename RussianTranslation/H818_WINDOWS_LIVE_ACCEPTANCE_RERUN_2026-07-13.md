@@ -34,9 +34,11 @@ What the run nonetheless established, and what it produced:
   `model_version=claude-sonnet-5`): canonical store **11,577 → 11,579 (+2)**, lease
   `promoted`/`clean`, and the TM rebuilds+validates (2455 cards). The full pipeline
   `generate → audit → promote → store → TM` works end-to-end on Windows.
-- **Five defects (D-E…D-I) were harvested and fixed** — D-E…D-H in
-  [PR #438](https://github.com/gasyoun/SanskritLexicography/pull/438) (merged), and the
-  real-concurrency D-G race hardening + D-I telemetry-cardinality fix in a follow-up PR.
+- **Six defects (D-E…D-J) were harvested and fixed** — D-E…D-H in
+  [PR #438](https://github.com/gasyoun/SanskritLexicography/pull/438) (merged), the
+  real-concurrency D-G race hardening + D-I telemetry-cardinality fix in
+  [PR #441](https://github.com/gasyoun/SanskritLexicography/pull/441) (merged), and the
+  **D-J** Windows process-tree kill (below) in a further follow-up PR.
 
 ## Why the sequence is invalid
 
@@ -63,16 +65,21 @@ What the run nonetheless established, and what it produced:
 
 - **Content-defect rate.** The RU `no_pwg` supplement lane's audit-clean rate is
   ~60–65% (observed here: `darvI` dropped a sense, `gaRanA` `SAN-LOSS`, `durgA`
-  clean; the deterministic queue front `arvant…bAhlika` is the documented
-  presplit-cohort residual that hangs/rejects). A single-headword canary is
-  therefore a coin-flip, and a multi-card window's window-level `go` cannot clear
-  the acceptance's `audit_clean ≥ 0.80` bar. **This bar sits above the lane's real
-  clean rate** — a strict window-level GO is unreachable for `no_pwg` as calibrated;
-  the achievable proof is a positive store delta on the audit-clean subset (as
-  `durgA` gave).
+  clean). A single-headword canary is therefore a coin-flip, and a multi-card
+  window's window-level `go` cannot clear the acceptance's `audit_clean ≥ 0.80` bar.
+  **This bar sits above the lane's real clean rate** — a strict window-level GO is
+  unreachable for `no_pwg` as calibrated; the achievable proof is a positive store
+  delta on the audit-clean subset (as `durgA` gave).
+- **`arvant` multi-minute non-termination — cause not yet conclusive.** The
+  deterministic queue front `arvant…bAhlika` did not complete within bounded time.
+  This is **consistent with D-J** (the Windows process-tree termination failure:
+  the timeout kills the node wrapper but orphans the `spawnSync`'d native binary,
+  which keeps holding the API call). Whether a **content-specific** non-termination
+  (B) *also* exists is **not confirmed** — it can only be told apart by a single
+  bounded live retry *after* D-J lands. Do not call `arvant` content-poisoned yet.
 - **Cold-start latency.** Probes cold-start > 30 s and warm to ~10 s. With D-F now
-  enforced, a valid restart needs a **pre-warmed profile** (repeat the probe until a
-  ≤ 30 s reading) before the gated staged-run.
+  enforced, a valid restart needs a **pre-warmed profile** before the gated
+  staged-run (a genuine warm-up, not re-rolling the gated reading until convenient).
 
 ## Retained evidence (local, gitignored `src/pilot/output/h818_accept/`)
 
@@ -82,11 +89,35 @@ What the run nonetheless established, and what it produced:
 hashes · `durgA` report + coordinator artifacts · `max.sqlite`. `durgA`'s +2 store
 rows are retained (a valid clean promotion).
 
-## Next — a clean restart (gated)
+## Restart run (run2, on merged D-E…D-I) + the D-J diagnosis
 
-After PR #438 merges, restart from a **fresh deterministic unpromoted one-headword
-canary** on a warmed profile. **Do not begin the 10-word stage unless that
-one-headword staged-run reaches full GO** — audit clean, positive store delta, TM
-build+validate, report, and bug census all passing.
+After D-E…D-I merged, a clean isolated restart ran on the fixed code: auth **PASS**;
+a single honest gated probe **PASS** (9368 ms standalone / 29565 ms in the
+staged-run — both ≤ 30 s, no re-rolling); the deterministic next-unpromoted canary
+`arvant` then did **not** terminate within bounded time and was cut off by the
+harness wall-clock limit → **NO-GO**, no promotion, canonical store unchanged
+(11,579), account not falsely parked, telemetry clean. Per the gate: **STOP — no
+10-word stage.**
+
+Root-cause diagnosis (bounded scope): the uncontrolled non-termination is defect
+**D-J** — the worker killed a generation call with `subprocess.run(timeout=)`, whose
+Windows kill hits only the immediate `node cli-wrapper.cjs` process, **orphaning the
+`spawnSync`'d native binary** (confirmed at the wrapper source) that keeps holding
+the API call. Fixed by a **bounded best-effort process-tree kill** (`taskkill
+/PID … /T /F` while the parent is alive; POSIX `killpg`), applied at every
+claude-spawning kill point, with a parent→child→grandchild regression test proving
+no descendant survives. **D-J explains the uncontrolled hang; it does not yet rule
+out a content-specific problem (B)** — that is settled only by the single bounded
+`arvant` retry after D-J merges.
+
+## Next — bounded retry, then a clean canary (gated)
+
+After D-J merges: exactly **one bounded live `arvant` retry**. If it times out
+again (now controlled), classify it a **deterministic content failure**, preserve
+its immutable requeue artifact, move it to the **poison/dead-letter lane**
+(accounted-but-unpromoted, not cherry-picking), and select the next eligible
+headword by deterministic queue policy. **Do not begin the 10-word stage unless a
+fresh one-headword staged-run reaches full GO** — audit clean, positive store delta,
+TM build+validate, report, and bug census all passing.
 
 _Dr. Mārcis Gasūns_

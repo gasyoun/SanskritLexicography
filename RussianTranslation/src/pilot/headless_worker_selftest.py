@@ -157,6 +157,59 @@ def main():
     finally:
         h.os.name, h.shutil.which, h.glob.glob = _name, _which, _glob
     print('  D-A claude_argv_prefix: posix/.exe passthrough, .cmd->node-direct, no-node fallback OK')
+
+    # D-J: a timeout must terminate the ENTIRE process tree, not just the immediate child. The
+    # Windows claude launcher (node cli-wrapper.cjs) spawnSync's the native binary as a CHILD, so
+    # killing only the node process orphans it (the multi-minute 'hang'). Mirror the real
+    # python -> node(wrapper) -> native-binary depth with parent -> child -> GRANDCHILD: each level
+    # records its PID and writes a '.done<n>' marker ONLY if it survives its sleep. A correct
+    # tree-kill leaves NONE of the three PIDs alive and NONE of the three markers written.
+    import time as _time
+
+    def _alive(pid):
+        if os.name == 'nt':
+            out = subprocess.run(['tasklist', '/FI', 'PID eq %d' % pid, '/NH'],
+                                  capture_output=True, text=True).stdout or ''
+            return str(pid) in out.split()
+        try:
+            os.kill(pid, 0)
+            return True
+        except OSError:
+            return False
+
+    with tempfile.TemporaryDirectory() as td:
+        mk = os.path.join(td, 'm')
+        grand = ('import time,sys,os;'
+                 'open(sys.argv[1]+".pid3","w").write(str(os.getpid()));'
+                 'time.sleep(6);open(sys.argv[1]+".done3","w").write("1")')
+        child = ('import subprocess,sys,os,time;'
+                 'open(sys.argv[1]+".pid2","w").write(str(os.getpid()));'
+                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);'
+                 'time.sleep(30)') % grand
+        parent = ('import subprocess,sys,os,time;'
+                  'open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
+                  'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);'
+                  'time.sleep(30)') % child
+        t0 = _time.monotonic()
+        try:
+            h.run_tree_kill([sys.executable, '-c', parent, mk], timeout=3, capture_output=True)
+            assert False, 'expected TimeoutExpired'
+        except subprocess.TimeoutExpired:
+            pass
+        assert _time.monotonic() - t0 < 25, 'tree kill did not bound the timeout'
+        for _ in range(60):     # wait for the full 3-level tree to have recorded its PIDs
+            if all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)):
+                break
+            _time.sleep(0.1)
+        _time.sleep(5)          # > the grandchild's 6 s sleep offset: an orphan would have written .done3
+        for i in (1, 2, 3):
+            assert os.path.exists('%s.pid%d' % (mk, i)), 'level %d never started (test setup broken)' % i
+        pids = [int(open('%s.pid%d' % (mk, i)).read()) for i in (1, 2, 3)]
+        survived_marker = [i for i in (1, 2, 3) if os.path.exists('%s.done%d' % (mk, i))]
+        assert not survived_marker, 'level(s) %s SURVIVED the tree kill (orphaned)' % survived_marker
+        still_alive = [p for p in pids if _alive(p)]
+        assert not still_alive, 'tree PID(s) still alive after kill (orphaned): %s' % still_alive
+    print('  D-J tree-kill: parent->child->grandchild all gone (no orphan); timeout bounded + raised once')
     print('headless_worker_selftest: PASS')
 
 

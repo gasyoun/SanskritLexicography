@@ -123,9 +123,9 @@ def main():
         m.live_probe('cfg', model='claude-haiku-4-5'); assert False, 'exact-model gate missing'
     except SystemExit as e:
         assert 'exact generation model' in str(e)
-    _run, _mono = m.subprocess.run, m.time.monotonic
+    _run, _mono = m.run_tree_kill, m.time.monotonic   # live_probe spawns via run_tree_kill (D-J)
     try:
-        m.subprocess.run = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='{"ok":true}', stderr='')
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='{"ok":true}', stderr='')
         over = iter([1000.0, 1031.0])            # 31,000 ms elapsed -> over the 30 s ceiling
         m.time.monotonic = lambda: next(over)
         try:
@@ -136,7 +136,7 @@ def main():
         m.time.monotonic = lambda: next(good)
         assert m.live_probe('cfg') == 10000
     finally:
-        m.subprocess.run, m.time.monotonic = _run, _mono
+        m.run_tree_kill, m.time.monotonic = _run, _mono
     print('  D-F probe gate: <5KB/non-exact-model raise; >30s NO-GO; healthy <=30s passes')
 
     # D-G (H818 acceptance): one active job per account, atomic in the BEGIN IMMEDIATE claim.
