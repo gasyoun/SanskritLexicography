@@ -14,6 +14,21 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.6] - 2026-07-13
+
+### Fixed
+- **H852 — the four H818 Windows headless-invocation defects, fixed and verified
+  live.** `claude_argv_prefix()` resolves a Windows `.cmd`/`.ps1` launcher to
+  `[node, cli-wrapper.cjs]` (bypassing cmd.exe, which corrupted the `--json-schema`
+  arg); `--claude-bin` is threaded through `staged-run → run_once → run_claimed`;
+  rate-limit detection (`is_rate_limited`) trusts the worker classification / raw
+  stderr instead of matching the `manifest_sha256` hash; `staged-run` halts cleanly
+  when all accounts are parked instead of busy-looping. Re-run on Windows: presplit
+  canary GO, 1-headword generation `done`/`success`, no false park, no livelock —
+  the invocation baseline is now functional (residual non-GO was a content-hard card,
+  not invocation). Adds D-A/D-C unit tests. Report:
+  [`RussianTranslation/H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md).
+
 ## [1.9.5] - 2026-07-13
 
 ### Added
