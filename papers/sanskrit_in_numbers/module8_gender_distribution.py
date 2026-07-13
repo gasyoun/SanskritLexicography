@@ -145,8 +145,10 @@ def main():
 
     print(f"n_total rows: {n_total}")
     print(f"lex counts: {lex_counts.most_common(20)}")
-    print(f"n_gendered_simple: {n_gendered_simple}, shares: {simple_shares}")
-    print(f"n_multi_gender: {n_multi}, breakdown: {dict(gendered)}")
+    # lgtm[py/clear-text-logging-sensitive-data] -- false positive: "gender" here is
+    # grammatical gender (PWG dictionary m./f./n. classification), not personal data.
+    print(f"n_gendered_simple: {n_gendered_simple}, shares: {simple_shares}")  # lgtm[py/clear-text-logging-sensitive-data]
+    print(f"n_multi_gender: {n_multi}, breakdown: {dict(gendered)}")  # lgtm[py/clear-text-logging-sensitive-data]
     print(f"unmapped: {dict(unmapped)}")
     print(f"wrote {out_path}")
 
