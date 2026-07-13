@@ -1,6 +1,6 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 13-07-2026_
 
 **What this is.** The *measurement* counterpart to the two existing hubs. Where
 [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)
@@ -46,7 +46,7 @@ re-measure; re-verify before a large change.
 | `<ls>` citation-frequency graph | **828,505 citations → 912 texts** (11 dicts) ✅ (E38) | [csl-atlas `data/citations/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations) |
 | Correction-event log | **52,498 events · 43 dicts · 210 correctors · 2014–2026** ✅ (E41) | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
 | n-gram membership oracle | **6,656,616 n-grams** ✅ (F43) | [CORRECTIONS/ngram](https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram) |
-| Sense-count / polysemy distribution per dict | ○ not started | — |
+| Sense-count / polysemy distribution per dict | ◐ partial (11/44 general lexica; A02 paper, mirrored H817 — FEATURES_INDEX E45) | [csl-observatory sense_polysemy_per_dict.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/sense_polysemy_per_dict.md) |
 | Diachronic first-attestation (which dict coins a headword) | ◐ partial (A40 growth curve only) | ARTICLES A40 |
 | Definition typology (synonym vs equivalent vs encyclopedic) | ○ not started (ATLAS_FAIR micro-gap) | — |
 | Per-dict editorial fingerprint (citation × markup × error) | ○ not started | — |
@@ -59,7 +59,7 @@ re-measure; re-verify before a large change.
 | DCS lemmas / forms | **180,176 lemmas · 408 k form→lemma rows** ✅ | [SanskritRussian `dcs_form2lemma.tsv`](https://github.com/gasyoun/SanskritRussian) |
 | Heritage form oracle + DICO gloss | **24.5 k DICO lemmas · form-alignment oracle** ✅ (D19–D24) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
 | vidyut FST fallback | **28,500 forms** ✅ (E29) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| Paradigm-cell coverage (which cells attested per root) | ◐ partial (VisualDCS browser, not quantified org-wide) | VisualDCS |
+| Paradigm-cell coverage (which cells attested per root) | ✅ (H817 — FEATURES_INDEX E46, 8,054/11,096 roots, 171 distinct finite cells) | [csl-observatory paradigm_cell_coverage.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/paradigm_cell_coverage.md) |
 | Form→lemma ambiguity rate (how polysemous is a surface form) | ○ not started | — |
 
 ### L3 · Corpus & usage (DCS · SamudraManthanam)
@@ -71,7 +71,7 @@ re-measure; re-verify before a large change.
 | Stop-word parallels | **40,573,260** ✅ | [VisualDCS M9](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m9_archive_ingest.md) |
 | Frequency layer (per-period vectors) | **83,277 lemmas** ✅ (E26) | [kosha `lemma_frequency.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
 | 2021→2026 corpus delta | ✅ (H686) | [Corpus-Delta report](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/REPORT.md) |
-| POS distribution per text | ○ not started | — |
+| POS distribution per text | ✅ (H817 — FEATURES_INDEX E44, 270/270 texts, 5,688,416 tokens) | [csl-observatory pos_distribution_per_text.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pos_distribution_per_text.md) |
 | Lemma/root frequency bands **per text** (not just whole-corpus) | ◐ partial (whole-corpus done in E26) | kosha |
 | Meter / prosody statistics | ○ not started | SanskritKaraoke |
 | Vedic accent coverage | ○ not started (VedaWeb reuse pending) | VedaWeb M13 |
@@ -106,9 +106,9 @@ re-measure; re-verify before a large change.
 | Correction typology | ✅ (empirical error taxonomy) | csl-observatory |
 | Bus-factor census | ✅ (**65/76 repos bus-factor-1**) | csl-observatory |
 | Data footprint | **~27.5 GB · 1,343 large files · 70 % local-only** ✅ | this census §1 |
-| Code-duplication census (transcoder ×62, digentry ×170) | ○ **not started — flagship gap** (measures the sanskrit-util payoff) | csl-observatory |
+| Code-duplication census (transcoder ×62, digentry ×170) | ✅ **already done before this roadmap was authored** — H688 (11-07-2026, csl-observatory PR #85), register was stale; re-registered H817 as FEATURES_INDEX E43 | [csl-observatory code_duplication_census.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/code_duplication_census.md) |
 | Publication-pipeline health (readiness, handoff aging) | ◐ partial (dashboard exists, not time-series) | Uprava dashboard |
-| LOC & language mix per repo | ○ not started | — |
+| LOC & language mix per repo | ✅ **already done before this roadmap was authored** — H688 §4, register was stale; re-registered H817 as FEATURES_INDEX E43 | [csl-observatory code_duplication_census.md §4](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/code_duplication_census.md) |
 
 ### L7 · Product & funnel
 
@@ -120,8 +120,14 @@ re-measure; re-verify before a large change.
 | samskrte.ru marketing funnel | ○ not started | — |
 | Course engagement / retention | ○ not started | — |
 
-**Scoreboard:** ~28 statistics ✅ computed · ~6 ◐ partial · ~14 ○ not started. The
-descriptive base is strong; the open surface is overwhelmingly **analytical, product, and
+**Scoreboard (updated 13-07-2026, H817 WS1.2):** ~32 statistics ✅ computed · ~6 ◐ partial ·
+~10 ○ not started. Of this pass's 5 targeted descriptive rows, 2 (code-duplication census,
+LOC & language mix) turned out **already done** before this roadmap was authored — H688,
+11-07-2026 — the register simply hadn't caught up; 2 more (POS-per-text, paradigm-cell
+coverage) are newly closed; 1 (sense/polysemy per dict) is ◐ partial — done for the 11/44
+general lexica where a sense-marking convention exists, genuinely blocked for the other 33
+(no structural sense markers; the `<L>` decimal-suffix shortcut was tried and confirmed
+invalid). The open surface is overwhelmingly **analytical, product, and
 process** — which is exactly what the four quarters below target.
 
 ---
