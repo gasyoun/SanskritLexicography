@@ -34,11 +34,10 @@ What the run nonetheless established, and what it produced:
   `model_version=claude-sonnet-5`): canonical store **11,577 → 11,579 (+2)**, lease
   `promoted`/`clean`, and the TM rebuilds+validates (2455 cards). The full pipeline
   `generate → audit → promote → store → TM` works end-to-end on Windows.
-- **Six defects (D-E…D-J) were harvested and fixed** — D-E…D-H in
-  [PR #438](https://github.com/gasyoun/SanskritLexicography/pull/438) (merged), the
-  real-concurrency D-G race hardening + D-I telemetry-cardinality fix in
-  [PR #441](https://github.com/gasyoun/SanskritLexicography/pull/441) (merged), and the
-  **D-J** Windows process-tree kill (below) in a further follow-up PR.
+- **Seven defects (D-E…D-K) were harvested and fixed + merged** — see the Final
+  verdict section below for the full PR list. In short: D-E…D-H (#438), D-G real-race
+  + D-I (#441), D-J Windows process-tree kill (#444), D-K two-phase probe (#445), and
+  the D-K result-envelope validation + console-flicker fixes (#446). Offline gates 17/17.
 
 ## Why the sequence is invalid
 
@@ -110,14 +109,57 @@ no descendant survives. **D-J explains the uncontrolled hang; it does not yet ru
 out a content-specific problem (B)** — that is settled only by the single bounded
 `arvant` retry after D-J merges.
 
-## Next — bounded retry, then a clean canary (gated)
+## Final verdict for this session — interim NO-GO (latency-blocked)
 
-After D-J merges: exactly **one bounded live `arvant` retry**. If it times out
-again (now controlled), classify it a **deterministic content failure**, preserve
-its immutable requeue artifact, move it to the **poison/dead-letter lane**
-(accounted-but-unpromoted, not cherry-picking), and select the next eligible
-headword by deterministic queue policy. **Do not begin the 10-word stage unless a
-fresh one-headword staged-run reaches full GO** — audit clean, positive store delta,
-TM build+validate, report, and bug census all passing.
+**H818 remains OPEN.** All code paths are fixed and validated offline; the live run
+is blocked only by current profile latency. Linux provisioning and all A/B handoffs
+(H841/H842/H843) remain **NO-GO** and unstarted.
+
+**Seven defects harvested + fixed + merged** (each with regression tests, CI green):
+D-E…D-H [PR #438](https://github.com/gasyoun/SanskritLexicography/pull/438) · D-G
+real-race + D-I [PR #441](https://github.com/gasyoun/SanskritLexicography/pull/441)
+· D-J [PR #444](https://github.com/gasyoun/SanskritLexicography/pull/444) · D-K
+two-phase probe [PR #445](https://github.com/gasyoun/SanskritLexicography/pull/445)
+· D-K envelope-validation + flicker fixes
+[PR #446](https://github.com/gasyoun/SanskritLexicography/pull/446). **Offline gates:
+17/17** on merged master.
+
+**Live attempts (clean isolated envs, exact model `claude-sonnet-5`):**
+
+| Run | run_id | Outcome |
+|---|---|---|
+| run2/run3 | h818-run2/run3 | probe PASS; `arvant` uncontrolled hang → root-caused as **D-J** |
+| run4 | h818-run4-arvant | warm-up **`malformed` 26344 ms** → exposed the D-K output check demanding bare `{"ok":true}` (fixed by strict CLI **result-envelope** validation) |
+| **run5** | **h818-run5-arvant** | **warm-up 24773 ms `success`; measured 40925 ms `success` but > 30000 ms → honest NO-GO, no re-roll** |
+
+**run5 (final) precise record** — model `claude-sonnet-5`; run_id `h818-run5-arvant`;
+event log `src/pilot/output/h818_accept_run5/run_events.jsonl` (+ `operator_events.jsonl`,
+`bug_census.json`), all gitignored/local:
+
+- **auth succeeded** (`init` PASS), but **no job was imported or claimed** and
+  **`arvant` never ran** — the two-phase probe STOPped at the measured gate before
+  claim/import/execution.
+- warm-up call **24773 ms**, classification `success` (latency excluded from the gate);
+  measured call **40925 ms**, classification `success`, but **40925 ms > 30000 ms**
+  ceiling → honest NO-GO (no retry, no re-warm, ceiling unchanged).
+- **canonical store and TM unchanged** during this attempt (11,579 rows, as before).
+- **A-vs-B remains UNRESOLVED**: `arvant`'s Windows process-tree hang is fixed (D-J),
+  but whether a content-specific non-termination (B) also exists is untested — arvant
+  never generated.
+- The latency degraded from ~9 s (early session) to ~25–41 s. **"Transient throttling"
+  is an inference consistent with the observations, NOT a proven cause.**
+
+The earlier **`durgA` +2 clean promotion** (this same session, healthy profile)
+already demonstrated the full pipeline end-to-end; it is retained in the store.
+
+## Next live session (after genuine account/quota recovery)
+
+Perform **exactly one** fresh staged-run using the integrated warm-up+measured probe
+protocol — **no manual preliminary probes**. If the measured reading is ≤ 30 s, run
+the single bounded `arvant` retry (deterministic content-failure disposition +
+dead-letter lane if it times out again). **If it remains > 30 s, stop again and open
+a separate evidence-based latency-policy investigation — do NOT weaken the 30 s
+threshold.** Do not begin the 10-word stage until a fresh one-headword staged-run
+reaches full GO (audit clean, positive store delta, TM build+validate, report, census).
 
 _Dr. Mārcis Gasūns_

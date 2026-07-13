@@ -4,6 +4,17 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-13 — H818 Windows acceptance re-run — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8`) — 🟡 interim NO-GO (latency-blocked); **7 defects D-E…D-K fixed + merged**
+
+Re-ran the H818 Windows live acceptance on the H852-fixed code; the acceptance surfaced and fixed **seven** further defects, each via its own PR with regression tests + green CI, offline gates **17/17** throughout:
+
+- **D-E** `translation_memory.py` now uses `store_path.canonical_store` (worktree post-promotion TM rebuild), **D-F** probe gate (≥5 KB, exact model, ≤30000 ms), **D-G** atomic one-job-per-account + real barrier-synced race test, **D-H** promotion telemetry (`success`/`not_attempted`/`conflict`) — [PR #438](https://github.com/gasyoun/SanskritLexicography/pull/438).
+- **D-I** telemetry cardinality (one call-level event/call, dedup by `call_id`, conflict flag) — [PR #441](https://github.com/gasyoun/SanskritLexicography/pull/441).
+- **D-J** bounded best-effort Windows process-tree kill (`taskkill /T /F`/`killpg`; the `node cli-wrapper.cjs` → spawnSync'd native binary was orphaned by `subprocess.run(timeout=)`), extracted to `proc_tree.py`; parent→child→grandchild regression test — [PR #444](https://github.com/gasyoun/SanskritLexicography/pull/444).
+- **D-K** two-phase probe (one warm-up excluded + one measured gated ≤30000 ms), strict Claude CLI **result-envelope** validation (`type=result`/`subtype=success`/structured `{"ok":true}`), telemetry (warmup/measured, encoded output_bytes), console-flicker suppression (`CREATE_NO_WINDOW`) — [PR #445](https://github.com/gasyoun/SanskritLexicography/pull/445) + [#446](https://github.com/gasyoun/SanskritLexicography/pull/446).
+
+**Live proof + block.** A clean **`durgA` +2 promotion** demonstrated the full pipeline end-to-end (generate→audit→promote→store→TM) on a healthy profile. The final run5 (run_id `h818-run5-arvant`) STOPped honestly at the measured probe: warm-up **24773 ms `success`**, measured **40925 ms `success` but > 30000 ms** → NO-GO, no re-roll; auth OK but **no job claimed, `arvant` never ran**, store/TM unchanged (11,579). **A-vs-B (D-J vs a content-specific non-termination) is UNRESOLVED.** Profile latency degraded ~9 s → ~25–41 s ("transient throttling" is an inference, not proven). **H818 remains OPEN; Linux + H841/H842/H843 NO-GO.** Report: [`H818_WINDOWS_LIVE_ACCEPTANCE_RERUN_2026-07-13.md`](../../H818_WINDOWS_LIVE_ACCEPTANCE_RERUN_2026-07-13.md). **Next live session (after quota recovery):** one fresh staged-run via the integrated warm-up+measured probe (no manual pre-probes); arvant retry only if measured ≤30 s; if still >30 s, open a latency-policy investigation — do not weaken the threshold.
+
 ## 2026-07-13 — H852 Windows headless-invocation fixes — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8`) — ✅ 4 defects fixed + VERIFIED live; invocation baseline now GO-capable
 
 Landed the four H818-acceptance fixes and re-ran the acceptance from step 2:
