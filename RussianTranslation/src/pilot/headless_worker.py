@@ -17,7 +17,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from proc_tree import run_tree_kill, terminate_tree  # noqa: E402  (shared D-J tree-kill runner)
+from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
 RATE_RE = re.compile(r'429|rate.?limit|usage limit|too many requests', re.I)

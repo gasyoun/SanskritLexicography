@@ -18,7 +18,7 @@ import sys
 import time
 
 from run_observability import append_event, write_census
-from headless_worker import claude_argv_prefix, run_tree_kill
+from headless_worker import claude_argv_prefix, run_tree_kill, windows_hidden_flags
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -530,11 +530,13 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     """D-K deterministic two-phase probe protocol (ceiling unchanged at 30000 ms). Runs EXACTLY
     one warm-up call (same profile + exact model; its latency is EXCLUDED from the acceptance
     gate — it only stabilizes the cold connection), then IMMEDIATELY EXACTLY one measured >=5 KB
-    probe that IS gated. PASS only when the measured call has rc 0, passes auth/model/output-size
-    checks, and latency <= ceiling. A warm-up failure (auth/model/malformed/rate-limit/timeout) is
-    an immediate STOP; a failed or over-ceiling MEASURED probe is an honest NO-GO with NO retry and
-    no manual pre-warming. Both calls are recorded separately in telemetry (purpose warmup /
-    measured), and the warm-up latency never enters the census."""
+    (INPUT payload) probe that IS gated. PASS only when the measured call has rc 0, its Claude CLI
+    result envelope validates (type=result / subtype=success / not is_error) with the structured
+    schema result {"ok": true}, the model is exact, and latency <= ceiling. A warm-up failure
+    (auth/model/malformed/content/rate-limit/timeout) is an immediate STOP; a failed or over-ceiling
+    MEASURED probe is an honest NO-GO with NO retry and no manual pre-warming. Both calls are
+    recorded separately in telemetry (purpose warmup / measured), and the warm-up latency never
+    enters the census."""
     if payload_bytes < PROBE_MIN_PAYLOAD_BYTES:
         raise SystemExit('probe payload %d B < %d B repository floor' %
                          (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))

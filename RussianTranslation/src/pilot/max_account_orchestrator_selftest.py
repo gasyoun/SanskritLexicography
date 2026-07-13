@@ -246,7 +246,8 @@ def main():
         def _alive(pid):
             if os.name == 'nt':
                 out = subprocess.run(['tasklist', '/FI', 'PID eq %d' % pid, '/NH'],
-                                     capture_output=True, text=True).stdout or ''
+                                     capture_output=True, text=True,
+                                     creationflags=m.windows_hidden_flags()).stdout or ''   # no flicker
                 return str(pid) in out.split()
             try:
                 os.kill(pid, 0); return True

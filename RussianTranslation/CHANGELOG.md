@@ -27,6 +27,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   extracted to `proc_tree.py`, used by both `headless_worker` and `max_account_orchestrator`),
   so a hanging probe kills its whole parent→child→grandchild tree before generation begins.
     **Fix (same day):** `_probe_call` now validates the `claude -p --output-format json` result *envelope* strictly instead of demanding a bare top-level `{"ok":true}` (which flagged every real wrapper `malformed`): rc 0 is not enough — `type==result`, `subtype==success`, not `is_error`, and the structured schema result (`structured_output`, or `result` parsed as a JSON string) must be `{"ok":true}`. A non-success subtype / `is_error` => `process`, `{"ok":false}` => `content`, a missing/non-envelope result => `malformed`, and auth/rate-limit text is detected even inside an rc-0 error wrapper. Six result-envelope fixtures cover it.
+  Also: `taskkill`/`tasklist` now launch with `CREATE_NO_WINDOW` (Windows-only) via a shared `proc_tree.windows_hidden_flags()` used by all three sites, so tree-kill/liveness checks no longer flash a console window.
   Regression tests: exactly one warm-up + one measurement, 30000 passes / 30001 NO-GO,
   warm-up failure STOPs before the measured call, encoded output_bytes, census
   distinguishability + quota, and a real 3-level hanging-probe tree-kill. (13-07-2026, Opus
