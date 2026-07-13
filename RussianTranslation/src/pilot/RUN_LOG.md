@@ -4,6 +4,34 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-13 — H818 Windows live acceptance — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8`) — 🔴 NO-GO (4 Windows defects), store UNCHANGED
+
+First Windows acceptance to get **past** the prior `401`. Ran from a worktree off
+`origin/master` (H818 pilot code byte-identical to PR #416 tip). Single Max account
+(the session's own authenticated profile — no dedicated `C:\pwg-factory\max1` existed),
+strictly sequential.
+
+**Passed:** all offline gates (compile + every selftest); `init` auth status +
+minimal `claude -p --model claude-sonnet-5`; ≥5 KB `live_probe` (latencies
+31951→23585→9583 ms, warm < 30 s ceiling); preconditions (store 11,562; 149
+net-additive unpromoted headwords).
+
+**Failed at generation (NO-GO), no promotion, store 11,562 → 11,562:**
+- **D-A** presplit canary (`taru`, `presplit_keys=['taru']`): `headless_worker.call()`
+  invokes `claude` via the `claude.cmd` batch shim; cmd.exe corrupts the `--json-schema`
+  argv (schema has `<`×4/`>`×4 redirection metachars; 8191 ceiling for larger). 5
+  `process` `model_call` failures. Fix verified: `node cli-wrapper.cjs` direct → rc 0.
+- **D-B** step-4 window (`arvant`): `run_claimed` omits `--claude-bin` → bare `claude`
+  → `[WinError 2]` (configuration, exit 2).
+- **D-C** that config error was mis-parked as `rate_limit` because `RATE_LIMIT`'s `429`
+  matched the `manifest_sha256` (`…80179429d4f8…`) → false 5 h park (real account fine).
+- **D-D** `staged-run` then busy-looped ~6 min (no sleep / no all-parked exit) until killed.
+
+Report: [`H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md`](../../H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md).
+Fix handoff: [H852](https://github.com/gasyoun/Uprava/blob/main/handoffs/H852-Opus_SanskritLexicography_h818-windows-headless-invocation-fix_13.07.26.md).
+Evidence: `output/h818_accept/` (run_events.jsonl, bug_census.json, statuses, manifests, SQLite).
+H841/H842/H843 remain gated (Windows baseline not GO).
+
 ## 2026-07-12 — verb rootmap backfill (H809 W1) — gen **none (0-token, local — no workflow)** / Opus 4.8 (`claude-opus-4-8`) — ✅ 687 rootmaps built, runnable 14→701
 
 Not a Max run — pure local `_pilot_gen_merged.py`, no Workflow/API. The verb drain was
