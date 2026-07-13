@@ -23,6 +23,13 @@ not an error.
   third-party-rights-uncertain scan PDFs a full archive would sweep in. The
   Zenodo upload itself is parked `@DO` (account/token gate).
 
+### Changed
+- **H817 WS1.2** — `FEATURES_INDEX.md` registers E43–E46 (code-duplication census +
+  LOC/language mix, already done pre-roadmap via H688 but unregistered; POS-per-text,
+  sense/polysemy per dict, paradigm-cell coverage, both new via H817); flips 5 rows in
+  `ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md` Part 0 from ○/◐ to ✅/◐ and bumps its
+  `Last updated`.
+
 ## [1.9.7] - 2026-07-13
 
 ### Added
