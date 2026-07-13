@@ -495,6 +495,20 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   discipline. Every count and table carried over unchanged. **10 of 14 chapters now in book
   form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12, ch13, ch14).
 
+**Done 13-07-2026 (H865 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 7 converted journal→book** →
+  [chapters/ch07_indigenous_microstructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch07_indigenous_microstructure.md)
+  (from A04, *Grammar Without Tags*, csl-atlas source) — the last straight one-to-one
+  conversion. Abstract/keywords stripped, P-numbers remapped (root-parser-agreement metric →
+  Ch. 2 §3.9, sense-inheritance/citation companions → Ch. 6 / Ch. 10, derivation sibling A35 →
+  Ch. 8), and the crosswalk grounding woven in (Apresjan's integrated grammar–dictionary
+  description — the entry presupposes the grammar; Baalbaki's *jaḏr/wazn* root-and-pattern as
+  the Arabic structural analogue of *dhātu* organisation; Lowe on the participle/root
+  lemmatization boundary; Gerow on transmission), tying the zero-means-nothing doctrine to its
+  macrostructure twin Ch. 4. Every count and table carried over unchanged. **11 of 14 chapters
+  now in book form** (all except the three special cases: Ch. 3 / Ch. 11 prose-thin, Ch. 6
+  interleave).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical

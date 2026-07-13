@@ -7,6 +7,27 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H865, Ch. 7 conversion)
+
+- **Ch. 7 converted journal→book** →
+  [chapters/ch07_indigenous_microstructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch07_indigenous_microstructure.md),
+  the book-form version of A04 *Grammar Without Tags: The Verbal-Root Microstructure of the
+  Indigenous Sanskrit Kośa* (csl-atlas source
+  [paper_indigenous_microstructure.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_indigenous_microstructure.md))
+  — the last straight one-to-one conversion. Abstract + keywords stripped, provenance headnote
+  added (A04 stays citable at IJL / WSC 2027), companion "P-numbers" remapped (root-parser
+  agreement → **Ch. 2 §3.9**, sense/citation companions → **Ch. 6 / Ch. 10**, derivation sibling
+  → **Ch. 8**), and the crosswalk grounding woven in — **Apresjan** (integrated
+  grammar–dictionary description: the entry presupposes the grammar), **Baalbaki** (Arabic
+  *jaḏr/wazn* root-and-pattern as the structural analogue of *dhātu* organisation), **Lowe** (the
+  participle/root lemmatization boundary), **Gerow** (transmission of the indigenous apparatus),
+  atop the already-cited **Vogel**. The zero-means-nothing doctrine tied to its macrostructure
+  twin (Ch. 4). Every count and table (SKD 2,544 roots / VCP 2,230 / KRM 1,757 / YAT 1,643 /
+  SHS 463 vs ≤8 in every European dict; anubandha resolves gaṇa 1,737 / pada 1,498; 85.5% gaṇa
+  agreement across 1,526 roots, SKD–VCP 92.8%, SKD–KRM 95.0%, pada 75.3%, transitivity 81.4%)
+  carried over unchanged. **11 of 14 chapters now in book form** (all but Ch. 3 / Ch. 11
+  prose-thin and Ch. 6 interleave).
+
 ### Added — 13-07-2026 (H863, Ch. 14 conversion)
 
 - **Ch. 14 converted journal→book** →
