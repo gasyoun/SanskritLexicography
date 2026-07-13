@@ -7,6 +7,28 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H861, Ch. 13 conversion)
+
+- **Ch. 13 converted journal→book** →
+  [chapters/ch13_renou_registers.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch13_renou_registers.md),
+  the book-form version of A34 *Register, Not Just Period: Renou's Subsections as an Orthogonal
+  Axis* (local papers source
+  [A34_renou_register_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md)).
+  Abstract + status apparatus stripped, provenance headnote added (A34 stays citable at Lexikos
+  / IJL / eLex), the A08 citation-register companion remapped to **Ch. 10**. **Mandatory
+  crosswalk reframe applied:** the headline "68.3% corpus-absent" recast as an explicit
+  statement about **DCS-corpus coverage** (the DCS is a literary corpus containing no
+  inscriptions), under the **McEnery & Brezina** corpus-absence caveat — not a claim of absence
+  from the language. Further grounding woven in — **Ferri/Maltby** (Servius' three-register
+  *grandiloquus/medius/humilis* system, tying back to Ch. 1's decorum), **Dickey** (Atticist
+  normative register-marking), **Geyken & Lemnitzer** (diasystematic labelling from corpus
+  metadata as current practice), **Partridge** (graded register scales). Every count and table
+  (770,292 entries / 8 dicts; 709 épigraphique / 484 = 68.3% corpus-absent, strict 518/73.1%;
+  bhāṣya 14,498 / kāvya 26,973 / bauddha 25,740 / jaina 286 at 0%; cross-axis slices 6,895 /
+  20,758 / 25,220; finite-verb density 14.4%→6.7%, bhāṣya 6.25% vs kāvya 7.48%) carried over
+  unchanged. **9 of 14 chapters now in book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10,
+  ch12, ch13).
+
 ### Added — 13-07-2026 (H860, Ch. 12 conversion)
 
 - **Ch. 12 converted journal→book** →
