@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H879 — fix the German (PWG++) sense-splitter's missing `〉` glyph handling (~50%
+  under-count, org-wide).** `microstructure.py`'s `MARK` regex only ever matched ASCII `)`
+  as a closing sense-marker, never `〉` (U+3009 RIGHT ANGLE BRACKET) — PWG's own standard
+  notation ("1〉", "a〉"), used 87,680 times in `csl-orig/v02/pwg/pwg.txt`. Surfaced as a
+  4-key `pwg_de_lexicon.ttl` fixture drift (committed fixture claimed 34 senses, a fresh
+  rebuild yielded 22); root-caused, fixed, and reverified — the correct 4-key count is
+  **47**, and a 2500-card `_audit_micro.py` before/after shows senses-per-card rising from
+  a flat 1.0 to 1.5 with zero new anomalies (citation/abbreviation resolution unchanged or
+  improved). `pwg_de_lexicon.ttl` and `grammar.ttl` fixtures regenerated (the grammar
+  layer's nominal branch derives `<lex>` POS tags from the same sense split, surfacing one
+  genuinely new irregularity for lemma `a`); full `lod_acceptance.py` gate (A/B/C/C5/C6/D/
+  D2/D3) PASSES. Scope: only `export_lod.py`'s DE-lexicon export and `scale_route.py`'s
+  sense-count routing heuristic call the fixed function — the core RU translation
+  prompt-building path is unaffected, no pinned test broke. Full writeup:
+  [`FINDINGS.md` §447](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense).
+
 - **H818 D-K — two-phase probe protocol (fixes the cold-start flap without lowering the
   ceiling).** The single-sample D-F gate NO-GO'd on a transient cold reading (a 30151 ms
   flap on an otherwise ~8–10 s warm profile). `live_probe` now runs a deterministic

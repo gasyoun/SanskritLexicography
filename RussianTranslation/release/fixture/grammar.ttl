@@ -64,8 +64,8 @@ gr:grammar-derived a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lex
 <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa>
   pwglex:grammarBranch "nominal" ;
   pwglex:stemClass "a-stem" ;
-  lexinfo:gender lexinfo:masculine ;
-  pwglex:zaliznyakIndex "m·1a" ;
+  pwglex:irregularity "m_n_common" ;
+  pwglex:zaliznyakIndex "mn·1a" ;
   pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/declension>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/paradigm>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/derivation> ;
   pwglex:evidenceGrade gr:grammar-derived .
 
@@ -90,8 +90,8 @@ gr:grammar-derived a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lex
 <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka>
   pwglex:grammarBranch "nominal" ;
   pwglex:stemClass "a-stem" ;
-  lexinfo:gender lexinfo:masculine ;
-  pwglex:zaliznyakIndex "m·1" ;
+  lexinfo:gender lexinfo:feminine ;
+  pwglex:zaliznyakIndex "f·1" ;
   pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/declension>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/paradigm>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/derivation> ;
   pwglex:evidenceGrade gr:grammar-derived .
 
