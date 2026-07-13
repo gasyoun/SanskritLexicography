@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H858 no-PWG sense-fidelity: fixed a STRANDED-ANCHOR false positive; reclaimed 7
+  cards, zero regeneration.** `_pilot_collect.render()` rendered the model's free-text
+  `notes` verbatim, so a `notes` mention of a masking token (*"Masked span {T1} is a
+  citation…"*) tripped `stage2_pregate`'s stranded-anchor scan on otherwise-clean
+  cards. New `_pilot_collect.strip_mask_tokens()` strips `{T<n>}`/`{Tn}` from the notes
+  render (deliverable german/russian untouched); pinned by a `window_selftest` case.
+  Re-audit clean counts rose w08 1→2, rq1 6→11, w09 3→9; 7 distinct cards promoted
+  (store 11,567 → 11,577). Two real residual bugs documented for follow-up (grammar-field
+  stranding; `{#…#}`-span drops needing german-field source-anchoring). See
+  [`src/pilot/RUN_LOG.md`](src/pilot/RUN_LOG.md) 2026-07-13 H858 block.
 - **H852 — H818 Windows headless-invocation defects fixed + verified live.**
   `claude_argv_prefix()` (node-direct, bypasses the `.cmd`/cmd.exe `--json-schema`
   corruption) in `headless_worker.call()`/`live_probe`/`profile_status`; `--claude-bin`
