@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- H818 Windows-100 readiness: headless Workflow-parity retry/split/heal/stitch,
+  deterministic 5×20 preparation, credential-safe append-only run events and bug
+  census, strict headword/subcard and positive store-delta GO gates, a non-promoting
+  live presplit canary, and scheduler/promotion fault injection.
+
 ### H834 — nominal key-echo tolerance also accepts the SLP1 headword + `~~<layer>` suffix
 - [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py): the H220 nominal re-key tolerance now
   recovers a card when the model echoes the clean SLP1 headword **with the sub-card suffix kept**

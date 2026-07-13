@@ -119,7 +119,10 @@ jobs:
             RussianTranslation/src/mfs_baseline.py \
             RussianTranslation/src/government_sidecar.py \
             RussianTranslation/src/pilot/headless_worker.py \
-            RussianTranslation/src/pilot/max_account_orchestrator.py
+            RussianTranslation/src/pilot/max_account_orchestrator.py \
+            RussianTranslation/src/pilot/windows100_selftest.py \
+            RussianTranslation/src/pilot/run_observability.py \
+            RussianTranslation/src/pilot/run_observability_selftest.py
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
@@ -137,6 +140,8 @@ jobs:
           python src/pilot/agent_budget.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
+          python src/pilot/windows100_selftest.py
+          python src/pilot/run_observability_selftest.py
           python src/pilot/window_selftest.py
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05

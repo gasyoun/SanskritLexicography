@@ -13,6 +13,7 @@ Workflow generation locally. Instead it:
   follow without hand-picking stale lists.
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -32,13 +33,39 @@ STILL_NULL = os.path.join(OUT, 'no_pwg_w1.still_null.txt')
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
 
 from safe_filename import decode_safe_name, safe_name  # noqa: E402
 from store_path import canonical_store  # noqa: E402
+import coordinator  # noqa: E402
 
 # One logical store shared across worktrees: dedup must read the SAME store a worktree drain
 # promotes into, or the planner re-offers already-promoted headwords (H255 w06 loss / H805).
 STORE = canonical_store(STORE)
+
+
+def sha256_path(path):
+    h = hashlib.sha256()
+    with open(path, 'rb') as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def read_store_keys(path=STORE):
+    keys = set()
+    if not os.path.exists(path):
+        return keys
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            try:
+                key = json.loads(line).get('key1') if line.strip() else None
+            except json.JSONDecodeError:
+                key = None
+            if key:
+                keys.add(key)
+    return keys
 
 
 def read_store_heads(path=STORE):
@@ -178,10 +205,24 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
             subcards.extend(existing_subcards(head))
 
     subcards = [k for i, k in enumerate(subcards) if k and k not in set(subcards[:i])]
+    promoted_keys = read_store_keys()
+    subcards = [k for k in subcards if k not in promoted_keys]
     if not subcards:
         raise SystemExit('FAIL: %s produced no no-PWG subcards' % root)
 
-    harness = os.path.join(HERE, 'run_pilot_wf.%s.js' % root)
+    if args.headless or args.dry_run:
+        base = (os.path.join(os.path.abspath(args.coordinator_dir), 'artifacts', root)
+                if args.headless else os.path.join(OUT, 'headless_dryrun', root))
+        os.makedirs(base, exist_ok=True)
+        harness = os.path.join(base, 'run_pilot_wf.%s.js' % root)
+        execution_manifest = os.path.join(base, 'execution_manifest.%s.json' % root)
+        preflight_path = os.path.join(base, 'preflight.json')
+        if os.path.exists(execution_manifest) and not args.force_index:
+            raise SystemExit('FAIL: headless window id already exists: %s' % root)
+    else:
+        harness = os.path.join(HERE, 'run_pilot_wf.%s.js' % root)
+        execution_manifest = None
+        preflight_path = None
     gen_cmd = [
         sys.executable, 'src/pilot/gen_opt_harness2.py', root,
         '--nominal',
@@ -190,8 +231,31 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
         '--out=' + harness,
         '--refuse-oversize',
     ]
+    if execution_manifest:
+        gen_cmd.append('--manifest-out=' + execution_manifest)
     run_cmd(gen_cmd)
     preflight = preflight_json(root, subcards)
+    if preflight_path:
+        with open(preflight_path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(preflight, f, ensure_ascii=False, indent=1)
+            f.write('\n')
+    headless_meta = None
+    if execution_manifest:
+        with open(execution_manifest, encoding='utf-8') as f:
+            execution = json.load(f)
+        if execution.get('meta', {}).get('selected_keys') != subcards:
+            raise SystemExit('FAIL: %s manifest key drift' % root)
+        headless_meta = {
+            'execution_manifest': os.path.relpath(execution_manifest, RT).replace('\\', '/'),
+            'manifest_sha256': sha256_path(execution_manifest),
+            'harness_sha256': sha256_path(harness),
+            'presplit_keys': execution.get('presplit_keys') or [],
+            'projected_calls': preflight.get('agent_expected_after_tm'),
+        }
+        if args.headless:
+            coordinator.register_prepared_lease(
+                root, 'no_pwg_windows100', subcards, harness, execution_manifest,
+                preflight_path, artifact_path=os.path.dirname(execution_manifest))
     wf_out = os.path.join(OUT, 'wf_output.%s.json' % root)
     return {
         'root': root,
@@ -209,6 +273,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
             'cost_gate': preflight.get('cost_gate'),
             'warnings': preflight.get('warnings') or [],
         },
+        'headless': headless_meta,
     }
 
 
@@ -267,7 +332,18 @@ def main(argv=None):
                     help='write the manifest without generating sidecars/harnesses')
     ap.add_argument('--manifest', default=os.path.join(OUT, 'no_pwg_scale_plan.json'),
                     help='manifest output path')
+    ap.add_argument('--headwords', type=int, default=0,
+                    help='limit the deterministic queue to N headwords (100 for H818)')
+    ap.add_argument('--headless', action='store_true',
+                    help='generate execution manifests and register prepared coordinator leases')
+    ap.add_argument('--dry-run', action='store_true',
+                    help='generate headless artifacts/report without registering leases or calling Claude')
+    ap.add_argument('--coordinator-dir', default=coordinator.DEFAULT_COORD_DIR,
+                    help='coordinator state/artifact directory for --headless')
     args = ap.parse_args(argv)
+
+    if args.headless:
+        os.environ['PWG_COORDINATOR_DIR'] = os.path.abspath(args.coordinator_dir)
 
     if args.window_size < 1 or args.window_size > 30:
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
@@ -292,6 +368,9 @@ def main(argv=None):
     promoted = read_store_heads()
     still_null = read_still_null()
     ordered, tail_heads = build_order(queue, promoted, still_null)
+    if args.headwords:
+        ordered = ordered[:args.headwords]
+        tail_heads = [head for head in tail_heads if head in set(ordered)]
     windows = []
     tail_set = set(tail_heads)
     tail_order = [h for h in ordered if h in tail_set]
@@ -299,11 +378,17 @@ def main(argv=None):
     window_heads = list(chunked(tail_order, args.window_size)) + list(chunked(rest_order, args.window_size))
 
     to_prepare = 0 if args.plan_only else args.limit_windows
+    seen_subcards = set()
     for offset, heads in enumerate(window_heads):
         idx = args.start_index + offset
         tail_mode = all(h in tail_set for h in heads)
         if to_prepare and offset < to_prepare:
-            windows.append(prepare_window(args, idx, heads, still_null, tail_mode))
+            window = prepare_window(args, idx, heads, still_null, tail_mode)
+            overlap = seen_subcards & set(window['subcards'])
+            if overlap:
+                raise SystemExit('FAIL: duplicate subcards across windows: %s' % ','.join(sorted(overlap)))
+            seen_subcards.update(window['subcards'])
+            windows.append(window)
         else:
             windows.append({
                 'root': '%s%02d' % (args.prefix, idx),
@@ -326,6 +411,10 @@ def main(argv=None):
         'tail_headwords_first': tail_heads,
         'window_size': args.window_size,
         'prepared_windows': len([w for w in windows if w.get('harness')]),
+        'selected_headwords': sum(len(w['headwords']) for w in windows),
+        'selected_subcards': sum(len(w.get('subcards') or []) for w in windows),
+        'presplit_subcards': sum(len((w.get('headless') or {}).get('presplit_keys') or []) for w in windows),
+        'projected_calls': sum(((w.get('headless') or {}).get('projected_calls') or 0) for w in windows),
         'windows': windows,
     }
     os.makedirs(os.path.dirname(args.manifest), exist_ok=True)

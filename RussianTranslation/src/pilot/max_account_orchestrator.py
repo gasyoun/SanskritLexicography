@@ -17,6 +17,8 @@ import subprocess
 import sys
 import time
 
+from run_observability import append_event, write_census
+
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -142,10 +144,15 @@ def park(db_path, account, until, error):
     db.close()
 
 
-def run_claimed(db_path, account, config_dir, job, timeout):
+def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, run_id=None):
     attempt = job['attempts']
     attempt_log = job['output_path'] + '.attempt%d.runner.json' % attempt
     status_path = job['output_path'] + '.attempt%d.status.json' % attempt
+    event_base = {'run_id': run_id, 'lease_id': job['external_id'],
+                  'window_id': job['external_id'], 'attempt': attempt,
+                  'account': account, 'manifest_hash': job['manifest_sha256']}
+    if events_path:
+        append_event(events_path, stage='dispatch', event='attempt_start', **event_base)
     if job['manifest_path']:
         if sha256_path(job['manifest_path']) != job['manifest_sha256']:
             return fail_or_retry(db_path, job['id'], 2, 'manifest hash changed',
@@ -170,6 +177,13 @@ def run_claimed(db_path, account, config_dir, job, timeout):
                 worker_status = json.load(open(status_path, encoding='utf-8'))
             except (OSError, json.JSONDecodeError):
                 worker_status = {}
+        if events_path:
+            for item in worker_status.get('attempts') or []:
+                keys = item.get('keys') or [None]
+                for key in keys:
+                    append_event(events_path, stage='worker', event='model_call', key=key,
+                                 elapsed_ms=item.get('elapsed_ms'),
+                                 classification=item.get('classification'), **event_base)
         failure_class = worker_status.get('classification')
         if RATE_LIMIT.search(combined):
             until = parse_reset(combined)
@@ -177,17 +191,31 @@ def run_claimed(db_path, account, config_dir, job, timeout):
             finish(db_path, job['id'], 'pending', proc.returncode,
                    'rate-limited; account parked', 'rate_limit',
                    attempt_log_path=attempt_log, reset_at=until)
+            if events_path:
+                append_event(events_path, stage='dispatch', event='attempt_end',
+                             classification='rate_limit', reset_at=until, **event_base)
             return 'parked'
         if proc.returncode == 0:
             result_hash = sha256_path(job['output_path']) if os.path.exists(job['output_path']) else None
             finish(db_path, job['id'], 'done', 0, failure_class='success',
                    result_sha256=result_hash, attempt_log_path=attempt_log)
+            if events_path:
+                append_event(events_path, stage='dispatch', event='attempt_end',
+                             classification='success', result_hash=result_hash, **event_base)
             return 'done'
-        return fail_or_retry(db_path, job['id'], proc.returncode, combined[-2000:],
-                             failure_class or 'process', attempt_log)
-    except subprocess.TimeoutExpired as exc:
-        return fail_or_retry(db_path, job['id'], 124, 'timeout after %ss' % timeout,
-                             'timeout', attempt_log)
+        state = fail_or_retry(db_path, job['id'], proc.returncode, combined[-2000:],
+                              failure_class or 'process', attempt_log)
+        if events_path:
+            append_event(events_path, stage='dispatch', event='attempt_end',
+                         classification=failure_class or 'process', **event_base)
+        return state
+    except subprocess.TimeoutExpired:
+        state = fail_or_retry(db_path, job['id'], 124, 'timeout after %ss' % timeout,
+                              'timeout', attempt_log)
+        if events_path:
+            append_event(events_path, stage='dispatch', event='attempt_end',
+                         classification='timeout', **event_base)
+        return state
     except OSError as exc:
         return fail_or_retry(db_path, job['id'], 127, str(exc), 'process', attempt_log)
 
@@ -329,7 +357,8 @@ def cmd_run_once(args):
         print('no runnable jobs')
         return
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(work)) as pool:
-        futures = {pool.submit(run_claimed, args.db, acc['name'], acc['config_dir'], job, args.timeout):
+        futures = {pool.submit(run_claimed, args.db, acc['name'], acc['config_dir'], job, args.timeout,
+                               getattr(args, 'events', None), getattr(args, 'run_id', None)):
                    (acc['name'], job['external_id']) for acc, job in work}
         for future in concurrent.futures.as_completed(futures):
             acc, external_id = futures[future]
@@ -345,6 +374,219 @@ def cmd_status(args):
     db.close()
 
 
+def live_probe(config_dir, claude='claude', payload_bytes=6491):
+    env = os.environ.copy()
+    env['CLAUDE_CONFIG_DIR'] = config_dir
+    prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
+              ('x' * payload_bytes))
+    started = time.monotonic()
+    proc = subprocess.run(
+        [claude, '-p', '--output-format', 'json', '--json-schema',
+         '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
+         '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+        input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+    latency_ms = int((time.monotonic() - started) * 1000)
+    if proc.returncode:
+        raise SystemExit('load-representative profile probe failed: %s' %
+                         (((proc.stderr or '') + '\n' + (proc.stdout or ''))[-1000:]))
+    return latency_ms
+
+
+def cmd_staged_run(args):
+    plan = json.load(open(args.plan, encoding='utf-8'))
+    plan_lease_ids = [window['root'] for window in plan.get('windows', [])
+                      if window.get('headless')]
+    if args.lease_id and set(args.lease_id) != set(plan_lease_ids):
+        raise SystemExit('--lease-id set does not match the staged plan')
+    lease_ids = args.lease_id or plan_lease_ids
+    expected_windows = len(plan_lease_ids)
+    expected_headwords = int(plan.get('selected_headwords') or 0)
+    if not expected_windows or not expected_headwords:
+        raise SystemExit('staged plan has no prepared headless windows')
+    db = connect(args.db)
+    accounts = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
+    db.close()
+    if len(accounts) != 1:
+        raise SystemExit('Windows staged-run requires exactly one validated account')
+    run_id = args.run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
+    latency_ms = live_probe(accounts[0]['config_dir'], args.claude_bin)
+    append_event(args.events, run_id=run_id, account=accounts[0]['name'], stage='probe',
+                 event='probe_end', classification='success', elapsed_ms=latency_ms)
+    db = connect(args.db)
+    existing_jobs = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
+    db.close()
+    coord_state = json.load(open(os.path.join(os.path.abspath(args.coord_dir), 'state.json'),
+                                 encoding='utf-8'))
+    prepared_ids = {lease['id'] for lease in coord_state.get('leases', [])
+                    if lease.get('state') == 'prepared'}
+    to_import = [lease_id for lease_id in lease_ids
+                 if lease_id not in existing_jobs and lease_id in prepared_ids]
+    if to_import:
+        import_args = argparse.Namespace(db=args.db, coord_dir=args.coord_dir, cwd=args.cwd,
+                                         lease_id=to_import, max_attempts=2)
+        cmd_import_coordinator(import_args)
+    completed_before = 0
+    started = time.monotonic()
+    while True:
+        db = connect(args.db)
+        pending = db.execute("SELECT count(*) FROM jobs WHERE state='pending'").fetchone()[0]
+        done_unrecorded = db.execute("SELECT count(*) FROM jobs WHERE state='done' AND coordinator_recorded=0").fetchone()[0]
+        failed = db.execute("SELECT count(*) FROM jobs WHERE state='failed'").fetchone()[0]
+        db.close()
+        if failed:
+            raise SystemExit('staged-run stopped: failed jobs=%d' % failed)
+        if not pending and not done_unrecorded:
+            break
+        if pending:
+            cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout,
+                                            events=args.events, run_id=run_id))
+        cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
+                                           cwd=args.cwd))
+        promote = subprocess.run(
+            [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
+             '--gen-model-version', 'claude-sonnet-5'], cwd=os.path.abspath(args.cwd),
+            text=True, encoding='utf-8', capture_output=True)
+        if promote.returncode and 'no ready leases to promote' not in (promote.stderr + promote.stdout):
+            raise SystemExit('promotion failed: %s' % (promote.stderr or promote.stdout)[-1000:])
+        db = connect(args.db)
+        done_now = db.execute("SELECT count(*) FROM jobs WHERE state='done'").fetchone()[0]
+        db.close()
+        if done_now > completed_before:
+            completed_before = done_now
+            if args.stop_after and done_now >= args.stop_after:
+                print('restart checkpoint reached after %d window(s); rerun with --resume' % done_now)
+                return
+    db = connect(args.db)
+    jobs = list(db.execute('SELECT * FROM jobs ORDER BY id'))
+    db.close()
+    outputs = []
+    for job in jobs:
+        if job['output_path'] and os.path.exists(job['output_path']):
+            outputs.append(json.load(open(job['output_path'], encoding='utf-8')))
+    cards = sum((payload.get('summary') or {}).get('cards', 0) for payload in outputs)
+    clean = sum((payload.get('summary') or {}).get('ok', 0) for payload in outputs)
+    failures = {}
+    for payload in outputs:
+        failures.update((payload.get('summary') or {}).get('failures') or {})
+    fidelity = len([v for v in failures.values() if 'fidelity' in str(v)])
+    coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
+    coord_state = json.load(open(coord_state_path, encoding='utf-8'))
+    lease_ids = {job['external_id'] for job in jobs}
+    audited_clean = sum(int(lease.get('clean_count') or 0)
+                        for lease in coord_state.get('leases', [])
+                        if lease.get('id') in lease_ids)
+    relevant_leases = [lease for lease in coord_state.get('leases', [])
+                       if lease.get('id') in lease_ids]
+    promotion_deltas = {lease['id']: lease.get('store_delta') for lease in relevant_leases}
+    bad_deltas = sorted(lease_id for lease_id, delta in promotion_deltas.items()
+                        if delta is None or delta <= 0)
+    for lease in relevant_leases:
+        append_event(args.events, run_id=run_id, lease_id=lease['id'],
+                     window_id=lease['id'], stage='audit', event='audit_end',
+                     classification=lease.get('audit_state'), cards=lease.get('workflow_result_count'),
+                     clean=lease.get('clean_count'))
+        append_event(args.events, run_id=run_id, lease_id=lease['id'],
+                     window_id=lease['id'], stage='promotion', event='promotion_end',
+                     classification='success' if lease.get('store_delta', 0) > 0 else 'conflict',
+                     store_before=lease.get('store_before'), store_after=lease.get('store_after'))
+    selected_keys = []
+    headwords = set()
+    for job in jobs:
+        if job['manifest_path']:
+            meta = json.load(open(job['manifest_path'], encoding='utf-8'))['meta']
+            selected_keys.extend(meta['selected_keys'])
+            keymap = meta.get('nominal_keymap') or {}
+            headwords.update(keymap.get(key, key.split('~~', 1)[0]) for key in meta['selected_keys'])
+    unique_keys = set(selected_keys)
+    result_keys = [row.get('key') for payload in outputs for row in payload.get('results', [])]
+    duplicate_results = len(result_keys) - len(set(result_keys))
+    unaccounted = sorted(unique_keys - set(result_keys))
+    hard_classes = {'authentication', 'manifest_drift', 'malformed_output', 'rate_limit'}
+    hard_failures = sorted({job['failure_class'] for job in jobs if job['failure_class'] in hard_classes})
+    for value in failures.values():
+        text_value = str(value).lower()
+        for classification in hard_classes:
+            if classification in text_value or (classification == 'malformed_output' and 'malformed' in text_value):
+                hard_failures.append(classification)
+    hard_failures = sorted(set(hard_failures))
+    model_calls = sum((p.get('summary') or {}).get('translate_agents_spent', 0) +
+                      (p.get('summary') or {}).get('heal_agents_spent', 0) for p in outputs)
+    model_retries = sum(sum('.retry' in str(item.get('label') or '')
+                            for item in ((p.get('summary') or {}).get('headless_attempts') or []))
+                        for p in outputs)
+    report = {
+        'schema': 'pwg.windows100_readiness.v1', 'generated_at': now_iso(),
+        'probe_latency_ms': latency_ms, 'windows': len(outputs),
+        'headwords': expected_headwords, 'actual_unique_headwords': len(headwords),
+        'subcards': cards, 'expected_subcards': len(selected_keys),
+        'model_nonnull': clean, 'audit_clean': audited_clean,
+        'residuals': cards - audited_clean,
+        'fidelity_rejects': fidelity, 'duplicate_results': duplicate_results,
+        'unaccounted_keys': unaccounted, 'hard_failures': hard_failures,
+        'model_calls': model_calls, 'model_retries': model_retries,
+        'promotion_deltas': promotion_deltas, 'invalid_promotion_deltas': bad_deltas,
+        'elapsed_seconds': int(time.monotonic() - started),
+        'go': bool(len(outputs) == expected_windows and len(headwords) == expected_headwords and
+                   len(unique_keys) == len(selected_keys) and
+                   cards == len(selected_keys) and not duplicate_results and not unaccounted and
+                   not hard_failures and not bad_deltas and audited_clean / cards >= 0.80 and
+                   fidelity / cards < 0.05 and not failed),
+    }
+    append_event(args.events, run_id=run_id, stage='acceptance', event='run_summary',
+                 classification='success' if report['go'] else 'no_go', cards=cards,
+                 clean=audited_clean, calls=model_calls, retries=model_retries,
+                 fidelity_rejects=fidelity, unaccounted_keys=unaccounted)
+    atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=1) + '\n')
+    write_census(args.events, args.census)
+    print(json.dumps(report, ensure_ascii=False, indent=1))
+    if not report['go']:
+        raise SystemExit(1)
+
+
+def cmd_presplit_canary(args):
+    manifest = json.load(open(args.manifest, encoding='utf-8'))
+    presplit = manifest.get('presplit_keys') or []
+    if not presplit:
+        raise SystemExit('presplit canary manifest has no presplit_keys')
+    db = connect(args.db)
+    accounts = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
+    db.close()
+    if len(accounts) != 1:
+        raise SystemExit('presplit canary requires exactly one validated account')
+    run_id = args.run_id or ('presplit-' + now_iso().replace(':', '').replace('-', ''))
+    latency = live_probe(accounts[0]['config_dir'], args.claude_bin)
+    append_event(args.events, run_id=run_id, account=accounts[0]['name'], stage='probe',
+                 event='probe_end', classification='success', elapsed_ms=latency)
+    env = os.environ.copy()
+    env['CLAUDE_CONFIG_DIR'] = accounts[0]['config_dir']
+    cmd = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
+           os.path.abspath(args.manifest), '--output', os.path.abspath(args.output),
+           '--status-out', os.path.abspath(args.status), '--claude-bin', args.claude_bin,
+           '--timeout', str(args.timeout)]
+    proc = subprocess.run(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
+                          timeout=args.timeout)
+    status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
+    for item in status.get('attempts') or []:
+        for key in item.get('keys') or [None]:
+            append_event(args.events, run_id=run_id, account=accounts[0]['name'],
+                         manifest_hash=status.get('manifest_sha256'), key=key,
+                         stage='worker', event='model_call',
+                         classification=item.get('classification'),
+                         elapsed_ms=item.get('elapsed_ms'))
+    if proc.returncode or status.get('classification') != 'success':
+        raise SystemExit('presplit canary NO-GO: %s' %
+                         (status.get('classification') or (proc.stderr or proc.stdout)[-500:]))
+    payload = json.load(open(args.output, encoding='utf-8'))
+    failures = (payload.get('summary') or {}).get('failures') or {}
+    if failures or (payload.get('summary') or {}).get('presplit', 0) < 1:
+        raise SystemExit('presplit canary NO-GO: residuals or route not exercised')
+    append_event(args.events, run_id=run_id, stage='canary', event='run_summary',
+                 classification='success', cards=(payload.get('summary') or {}).get('cards'),
+                 clean=(payload.get('summary') or {}).get('ok'), calls=
+                 (payload.get('summary') or {}).get('heal_agents_spent'))
+    print('presplit canary GO: %d key(s)' % len(presplit))
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--db', default='max_orchestrator.sqlite')
@@ -356,6 +598,20 @@ def main(argv=None):
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', required=True); p.add_argument('--cwd', required=True); p.set_defaults(func=cmd_record_done)
     p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
+    p = sub.add_parser('staged-run')
+    p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
+    p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
+    p.add_argument('--plan', required=True)
+    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
+    p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
+    p.add_argument('--report', required=True)
+    p.add_argument('--events', required=True); p.add_argument('--census', required=True)
+    p.add_argument('--run-id'); p.set_defaults(func=cmd_staged_run)
+    p = sub.add_parser('presplit-canary')
+    p.add_argument('--manifest', required=True); p.add_argument('--output', required=True)
+    p.add_argument('--status', required=True); p.add_argument('--events', required=True)
+    p.add_argument('--run-id'); p.add_argument('--claude-bin', default='claude')
+    p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_presplit_canary)
     args = ap.parse_args(argv); args.func(args)
 
 
