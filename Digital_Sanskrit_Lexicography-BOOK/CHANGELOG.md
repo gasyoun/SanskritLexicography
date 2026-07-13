@@ -1,11 +1,38 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 12-07-2026_
+_Created: 07-07-2026 · Last updated: 13-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 13-07-2026 (H846, Ch. 1 conversion)
+
+- **Ch. 1 converted journal→book** →
+  [chapters/ch01_latin_discretion_screen.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch01_latin_discretion_screen.md),
+  the book-form version of the A36 Latin discretion-screen note
+  ([papers/A36_latin_obscena_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_latin_obscena_note.md)).
+  Abstract + venue/status apparatus stripped, register unified to the book's first-person,
+  a provenance headnote added, the crosswalk §1/§4.1 grounding woven in (Ferri on Servius'
+  decorum-hierarchy as the Greco-Roman genealogy; Baalbaki on the Arabic *laḥn al-ʿāmma*
+  correctness-screen as the contrast case; the "phenomenon is Europe-specific" honesty
+  clause), and cross-references remapped to sibling chapters (Ch. 2 method, Ch. 4/7 kośa
+  contrast, Ch. 6 senses, Ch. 13 Renou registers). Every count and table (2,104 senses;
+  875 in the Petersburg core; the vulgar-veil list of 79 senses; the diachronic and
+  corpus-wide sweeps) carried over unchanged. **3 of 14 chapters now in book form** (ch01,
+  ch02, ch05).
+
+### Changed — 13-07-2026 (MG ruling on H505's corpus-methods `@DECIDE`)
+
+- **Standalone corpus-methods chapter fork resolved as option (b)** — a marked section
+  inside Ch. 2 ("The corpus as a bounded witness", ~6–8 pp.), *not* a standalone chapter.
+  The 14-chapter/15-article architecture is unchanged; the DCS-disclosure +
+  statistical-practice + absence-inference material is written into Ch. 2 at its next
+  revision. Both H505 `@DECIDE` forks are now closed. Updated
+  [LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
+  and [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
+  §11.
 
 ### Added — 12-07-2026 (H782, A58 comparative-taxonomy aside)
 

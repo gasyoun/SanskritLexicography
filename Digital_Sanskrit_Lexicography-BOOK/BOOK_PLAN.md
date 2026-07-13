@@ -389,8 +389,24 @@ Still open:
 
 **Ruled 10-07-2026 (MG):** the Ch. 7 `@DECIDE` above is resolved as **(b) — fold into
 Ch. 6** as its second half ("senses: inheritance and order"), collapsing the book to
-**14 chapters** (§3 chapter list updated above). The standalone-corpus-methods-chapter
-fork (crosswalk §4.2) remains open, unaffected by this ruling.
+**14 chapters** (§3 chapter list updated above).
+
+**Ruled 13-07-2026 (MG):** the standalone-corpus-methods-chapter fork
+([LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md))
+is resolved as **(b) — a marked section inside Ch. 2** ("The corpus as a bounded witness",
+~6–8 pp.), *not* a standalone chapter. The 14-chapter/15-article architecture is unchanged;
+the DCS-disclosure + statistical-practice + absence-inference material is written into Ch. 2
+at its next revision. Both `@DECIDE` forks from H505 are now closed.
+
+**Done 13-07-2026 (H846 execution, Opus 4.8 `claude-opus-4-8`):**
+- ✅ **Ch. 1 converted journal→book** →
+  [chapters/ch01_latin_discretion_screen.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch01_latin_discretion_screen.md)
+  (from A36, the Latin discretion-screen note). Abstract/venue apparatus stripped, register
+  unified to the book's, the Ferri (Servius decorum) + Baalbaki (Arabic correctness-screen
+  contrast) grounding and the Europe-specific honesty clause woven in per crosswalk §1/§4.1,
+  cross-references remapped to sibling chapters (Ch. 2 method, Ch. 4/7 kośa contrast, Ch. 6
+  senses, Ch. 13 Renou); every count and table carried over unchanged. **3 of 14 chapters
+  now in book form** (ch01, ch02, ch05).
 
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI

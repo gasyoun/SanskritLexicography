@@ -245,11 +245,15 @@ analysis. Two honest options:
   witness"): preserves the architecture; risks burying the single caveat most likely to
   draw fire, inside the chapter a referee is least likely to re-read.
 
-Because MG locked the 15 on 06-07-2026, this is a human call → parked as `@DECIDE` in
-[Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
-Recommendation if asked: **(b)** — the book's identity is the article spine; a disciplined
-Ch. 2 section with a page of DCS disclosure satisfies the same referee at lower structural
-cost.
+Because MG locked the 15 on 06-07-2026, this was a human call.
+**✅ Ruled 13-07-2026 (MG): option (b) — fold into Ch. 2 as a marked section**
+(~6–8 pp., "The corpus as a bounded witness"), preserving the 15-article/14-chapter
+architecture rather than adding a chapter. The DCS disclosure, the statistical-practice
+contract, and the absence-inference rule become a disciplined Ch. 2 section cited once by
+Ch. 3/5/12/14; the risk noted under (b) (a caveat buried where a referee is least likely to
+re-read) is mitigated by keeping the section clearly marked and cross-referenced from every
+chapter that leans on it. This section is written when Ch. 2 is next revised; it does not
+alter the locked spine.
 
 ### 4.3 Rejected candidates (considered, not recommended)
 
