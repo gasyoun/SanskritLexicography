@@ -4,7 +4,6 @@ import os
 import sqlite3
 import sys
 import tempfile
-import time
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -36,6 +35,15 @@ def main():
         assert m.parse_reset('rate limit reset_at=1999999999', now=1) == 1999999999
         assert m.parse_reset('429 too many requests', now=100) == 18100
 
+        timeout_out = os.path.join(td, 'timeout.json')
+        m.main(['--db', db, 'enqueue', '--external-id', 'timeout', '--argv-json',
+                json.dumps([sys.executable, '-c', 'import time;time.sleep(2)']),
+                '--cwd', td, '--output', timeout_out, '--max-attempts', '1'])
+        m.main(['--db', db, 'run-once', '--timeout', '1'])
+        con = sqlite3.connect(db)
+        assert con.execute("select state,failure_class from jobs where external_id='timeout'").fetchone() == ('failed', 'timeout')
+        con.close()
+
         fail_out = os.path.join(td, 'fail.json')
         m.main(['--db', db, 'enqueue', '--external-id', 'retry', '--argv-json',
                 json.dumps([sys.executable, '-c', 'raise SystemExit(7)']),
@@ -45,6 +53,18 @@ def main():
         con = sqlite3.connect(db)
         state, attempts = con.execute("select state,attempts from jobs where external_id='retry'").fetchone()
         assert (state, attempts) == ('failed', 2)
+        con.close()
+
+        crash_out = os.path.join(td, 'crash-after-output.json')
+        code = ('import pathlib,sys;pathlib.Path(sys.argv[1]).write_text("{}",encoding="utf-8");'
+                'raise SystemExit(7)')
+        m.main(['--db', db, 'enqueue', '--external-id', 'crash-after-output', '--argv-json',
+                json.dumps([sys.executable, '-c', code, crash_out]), '--cwd', td,
+                '--output', crash_out, '--max-attempts', '1'])
+        m.main(['--db', db, 'run-once', '--timeout', '10'])
+        assert os.path.exists(crash_out)
+        con = sqlite3.connect(db)
+        assert con.execute("select state from jobs where external_id='crash-after-output'").fetchone()[0] == 'failed'
         con.close()
 
         rate_out = os.path.join(td, 'rate.json')

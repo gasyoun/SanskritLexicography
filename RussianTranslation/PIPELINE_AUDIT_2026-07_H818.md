@@ -37,7 +37,7 @@ Observed: `api_error_status: 401`, `Failed to authenticate`, `total_cost_usd: 0`
 
 The scheduler **wraps, rather than replaces, `coordinator.py`**. SQLite owns cross-account dispatch only; coordinator leases own targets and the single promotion lock. This prevents four workers from racing on store/TM writes.
 
-The generator now emits one versioned manifest beside the legacy Workflow JS. The headless worker consumes the same prompts, masked inputs, placeholder maps, output schema, key metadata, and exact model, then returns the existing `{meta, summary, results}` contract. It refuses presplit manifests in v1: those still require the Workflow heal/bisection runtime, and silently treating them as ordinary whole-card calls would be false parity.
+The generator now emits one versioned manifest beside the legacy Workflow JS. The headless worker consumes the same prompts, masked inputs, placeholder maps, fragment groups/TM, output schema, budgets, key metadata, and exact model, then returns the existing `{meta, summary, results}` contract. Headless v2 ports bounded whole-card retry/binary split and fragment heal/bisection/partial stitching, including the timeout-no-bisect and per-card budget guards.
 
 ## Silent-failure census
 
@@ -61,6 +61,15 @@ Use RU-only `no_pwg` first: it is partially drained and avoids the verb lane's b
 - scheduler self-test: passed.
 - Real promoted translation: **blocked** by authenticated profiles/foreign host.
 - Four-account batch: **blocked** by the same external host gate.
+
+Windows 100-word dry-run (post-H823): **100 headwords → 120 subcards in five 20-headword windows; 0 presplit under the corrected cite floor; 117 projected calls; no duplicate/store-hit/manifest drift; all five preflight cost gates OK.** The real Max run remains authentication-gated.
+
+Post-audit hardening adds a credential-safe `pwg.run_event.v1` JSONL stream and
+derived `pwg.bug_census.v1`, strict unique-headword/subcard accounting, per-window
+positive store-delta verification, promotion-conflict refusal, and fault-injection
+coverage for timeout, malformed output, rate-limit parking/reset, restart recovery,
+and crash-after-output. Because the real 100-word slice has zero presplits, a
+separate non-promoting live presplit canary is mandatory before its GO verdict.
 
 Not audited: real server networking, quota/reset payloads, live Workflow transcript, or real store delta. These require H818's owner-supplied external inputs.
 

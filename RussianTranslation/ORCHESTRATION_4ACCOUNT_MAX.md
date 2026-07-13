@@ -44,9 +44,66 @@ Install `deploy/pwg-ru-max-orchestrator.{service,timer}` for recurring dispatch.
 ## Acceptance
 
 1. Four profile probes succeed.
-2. One RU `no_pwg` card with no presplit requirement passes the headless worker, audit, and promotion with a store delta. Headless v1 refuses presplit cards instead of bypassing Workflow self-heal.
+2. One RU `no_pwg` card passes the headless worker, audit, and promotion with a store delta. Headless v2 implements Workflow-parity batch retry/split plus presplit fragment heal/stitch semantics.
 3. Four disjoint jobs run concurrently.
 4. Kill a dispatch pass, recover, and verify no duplicate promotion.
 5. Record logs, reset behavior, exact model, clean rate, and store delta in the H818 audit.
+
+## Windows 100-headword gate
+
+The owner first creates and logs in a dedicated Max profile (the agent never
+handles the login URL, code, cookie, or token):
+
+```powershell
+$env:CLAUDE_CONFIG_DIR = 'C:\pwg-factory\max1'
+claude /login
+python src/pilot/max_account_orchestrator.py --db C:\pwg-factory\max.sqlite init `
+  --account max1=C:\pwg-factory\max1
+```
+
+Prepare the deterministic next 100 headwords without calling Claude:
+
+```powershell
+python src/pilot/no_pwg_scale_plan.py --headwords 100 --window-size 20 `
+  --limit-windows 5 --dry-run --prefix h818_win100_w --start-index 1 `
+  --manifest src/pilot/output/h818_windows100_plan.json
+```
+
+After the owner logs one Max account into a dedicated profile, repeat with
+`--headless --coordinator-dir <dir>`, initialize exactly that profile, and run:
+
+```powershell
+python src/pilot/max_account_orchestrator.py --db <db> staged-run `
+  --coord-dir <dir> --cwd <RussianTranslation> `
+  --coordinator src/pilot/coordinator.py --plan <prepared-plan.json> --stop-after 2 `
+  --report src/pilot/output/windows100_readiness.json `
+  --events src/pilot/output/run_events.jsonl `
+  --census src/pilot/output/bug_census.json --run-id h818-win100
+# restart boundary: rerun the same command with --resume and without --stop-after
+```
+
+The command refuses unauthenticated profiles, runs a ≥5 KB exact-model probe,
+records/audits each window, promotes only its audit-clean subset under the global
+promotion lock, and emits a GO only when the exact headword/subcard census is
+accounted, every window has a positive canonical-store delta, no hard failure or
+duplicate exists, ≥80% of cards are audit-clean, and fidelity rejects stay <5%.
+`run_events.jsonl` is the credential-safe append-only join across probe, model
+attempts, audit and promotion; `bug_census.json` is regenerated from it.
+
+The deterministic 100-word slice currently contains no presplit card. Before the
+100-word run, build a manifest for a known heavy fixture and exercise fragment
+recovery without promotion:
+
+```powershell
+python src/pilot/max_account_orchestrator.py --db <db> presplit-canary `
+  --manifest <heavy-presplit-manifest.json> --output <canary-output.json> `
+  --status <canary-status.json> --events src/pilot/output/run_events.jsonl `
+  --run-id h818-presplit-canary
+```
+
+The command refuses a manifest without `presplit_keys`, requires exactly one
+validated Max profile and a successful ≥5 KB probe, and returns GO only when the
+presplit route completes with no residual. Canary output is never imported or
+promoted.
 
 _Dr. Mārcis Gasūns_

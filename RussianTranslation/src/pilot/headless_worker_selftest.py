@@ -25,6 +25,11 @@ def manifest():
         'inputs': {'agni': {'skeleton': '{T1} Feuer', 'portrait': '{}',
                             'ls': 1, 'sk': 0, 'nws': 0}},
         'placeholder_maps': {'agni': ['<ls>RV.</ls>']},
+        'fragment_groups': {}, 'fragment_placeholder_maps': {}, 'fragment_tm': {},
+        'runtime': {'binary_split': True, 'per_card_heal_budget': True,
+                    'per_card_heal_factor': 1.5, 'per_card_heal_headroom': 3,
+                    'kill_timeout_no_bisect': True, 'whole_attempts': 2,
+                    'fragment_attempts': 3},
         'tm_resolved': {}, 'degenerate_resolved': {}, 'suggestions': {},
         'presplit_keys': [],
     }
@@ -58,24 +63,62 @@ def main():
 
     def malformed_runner(argv, **kwargs):
         return proc(stdout='not json')
-    assert h.execute(manifest(), runner=malformed_runner)[2] == h.EXIT_MALFORMED
+    payload, status, code = h.execute(manifest(), runner=malformed_runner)
+    assert code == 0 and status['classification'] == 'completed_with_residuals'
 
     def missing_runner(argv, **kwargs):
         return proc(stdout=json.dumps({'structured_output': {'cards': []}}))
     payload, status, code = h.execute(manifest(), runner=missing_runner)
-    assert code == h.EXIT_CONTENT and payload['summary']['null_keys'] == ['agni']
+    assert code == 0 and payload['summary']['null_keys'] == ['agni']
 
     def timeout_runner(argv, **kwargs):
         raise subprocess.TimeoutExpired(argv, 1)
-    assert h.execute(manifest(), runner=timeout_runner)[2] == h.EXIT_TIMEOUT
+    payload, status, code = h.execute(manifest(), runner=timeout_runner)
+    assert code == 0 and payload['summary']['kill_timeouts'] == 1
 
-    bad = manifest(); bad['presplit_keys'] = ['agni']
-    try:
-        h.execute(bad, runner=success_runner)
-    except ValueError as exc:
-        assert 'presplit' in str(exc)
-    else:
-        raise AssertionError('presplit manifest was not refused')
+    presplit = manifest()
+    presplit['batches'] = []
+    presplit['presplit_keys'] = ['agni']
+    presplit['inputs']['agni'].update({'skeleton': '{T1}{T2}', 'ls': 2})
+    presplit['fragment_groups'] = {'agni': [[
+        {'skeleton': '{T1}', 'ls': 1, 'sk': 0, 'fsha': 'a', 'si': 1},
+        {'skeleton': '{T1}', 'ls': 1, 'sk': 0, 'fsha': 'b', 'si': 2},
+    ]]}
+    presplit['fragment_placeholder_maps'] = {
+        'agni': [[['<ls>A</ls>'], ['<ls>B</ls>']]]}
+    presplit['placeholder_maps']['agni'] = ['<ls>A</ls>', '<ls>B</ls>']
+
+    def fragment_runner(argv, **kwargs):
+        cards = []
+        for index in (0, 1):
+            key = 'agni_f%d' % index
+            if key in kwargs['input']:
+                cards.append({'key1': key, 'records': [{'senses': [{
+                    'tag': str(index + 1), 'german': '{T1}',
+                    'russian': '{T1}'}]}]})
+        return proc(stdout=json.dumps({'structured_output': {'cards': cards}}))
+
+    payload, status, code = h.execute(presplit, runner=fragment_runner)
+    assert code == 0 and status['classification'] == 'success'
+    card = payload['results'][0]['card']
+    assert payload['summary']['presplit'] == 1 and payload['summary']['healed'] == 1
+    assert not card.get('partial') and len(card['records'][0]['senses']) == 2
+
+    calls = {'n': 0}
+    def partial_runner(argv, **kwargs):
+        calls['n'] += 1
+        card = {'key1': 'agni_f0', 'records': [{'senses': [
+            {'tag': '1', 'german': '{T1}', 'russian': '{T1}'}]}]}
+        return proc(stdout=json.dumps({'structured_output': {'cards': [card]}}))
+    payload, _status, code = h.execute(presplit, runner=partial_runner)
+    assert code == 0 and payload['results'][0]['card']['partial']
+    assert payload['results'][0]['card']['missing_fragments']
+
+    def fragment_timeout(argv, **kwargs):
+        raise subprocess.TimeoutExpired(argv, 1)
+    payload, _status, code = h.execute(presplit, runner=fragment_timeout)
+    assert code == 0 and payload['summary']['null'] == 1
+    assert payload['summary']['heal_agents_spent'] == 1  # timeout-no-bisect
 
     with tempfile.TemporaryDirectory() as td:
         raw = os.path.join(td, 'fixture.raw.txt')
