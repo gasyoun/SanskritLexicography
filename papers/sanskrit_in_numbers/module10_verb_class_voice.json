@@ -1,0 +1,115 @@
+{
+  "module": 10,
+  "title": "verb classes (gana) + voice (parasmaipada/atmanepada/ubhayapada)",
+  "trust_block": {
+    "source": "WhitneyRoots Whitney_roots_class-PP.txt (938 roots, Whitney 1885 digitized classification) for gana; WhitneyRoots src/paradigms.json (vidyut-prakriya 0.4.0 generated, 454/938 roots corroborated) for pada",
+    "n": {
+      "roots_total_whitney": 857,
+      "roots_gana_classified": 689,
+      "roots_gana_unclassified": 168,
+      "roots_multi_class": 244,
+      "roots_pada_corroborated": 419
+    },
+    "date": "2026-07-13",
+    "model": "Sonnet 5 (claude-sonnet-5)"
+  },
+  "gana_primary_pct": {
+    "I": {
+      "n": 496,
+      "pct": 71.99
+    },
+    "II": {
+      "n": 49,
+      "pct": 7.11
+    },
+    "III": {
+      "n": 9,
+      "pct": 1.31
+    },
+    "IV": {
+      "n": 61,
+      "pct": 8.85
+    },
+    "V": {
+      "n": 13,
+      "pct": 1.89
+    },
+    "VI": {
+      "n": 45,
+      "pct": 6.53
+    },
+    "VII": {
+      "n": 5,
+      "pct": 0.73
+    },
+    "VIII": {
+      "n": 2,
+      "pct": 0.29
+    },
+    "IX": {
+      "n": 5,
+      "pct": 0.73
+    },
+    "X": {
+      "n": 0,
+      "pct": 0.0
+    }
+  },
+  "gana_membership_pct": {
+    "I": {
+      "n": 496,
+      "pct": 71.99
+    },
+    "II": {
+      "n": 120,
+      "pct": 17.42
+    },
+    "III": {
+      "n": 44,
+      "pct": 6.39
+    },
+    "IV": {
+      "n": 133,
+      "pct": 19.3
+    },
+    "V": {
+      "n": 44,
+      "pct": 6.39
+    },
+    "VI": {
+      "n": 121,
+      "pct": 17.56
+    },
+    "VII": {
+      "n": 28,
+      "pct": 4.06
+    },
+    "VIII": {
+      "n": 7,
+      "pct": 1.02
+    },
+    "IX": {
+      "n": 49,
+      "pct": 7.11
+    },
+    "X": {
+      "n": 0,
+      "pct": 0.0
+    }
+  },
+  "pada_pct": {
+    "parasmaipada": {
+      "n": 256,
+      "pct": 61.1
+    },
+    "ubhayapada": {
+      "n": 77,
+      "pct": 18.38
+    },
+    "atmanepada": {
+      "n": 86,
+      "pct": 20.53
+    }
+  },
+  "note": "gana 'primary' = first-listed class per root (the dictionary/grammar's own citation order); 'membership' = every class a multi-class root belongs to, so membership percentages sum to >100%. Voice (pada) is reported only over the 454-root vidyut-corroborated subset, NOT extrapolated to all 938 -- the smaller, cleaner denominator is stated explicitly rather than silently assumed representative of the full root inventory. Cross-reference: WhitneyRoots' own corpus-vs-Whitney gana agreement measurement (857 DCS-attested roots, 85.5%) is cited, not re-run, here (see corpus_verdict_summary.txt in that repo)."
+}

@@ -58,6 +58,22 @@ def is_rate_limited(worker_status, stderr):
     return bool(RATE_LIMIT.search(stderr or ''))
 
 
+def promotion_classification(lease):
+    """Promotion telemetry (D-H). Three distinct outcomes, never conflated:
+    * ``success``       -- a positive canonical-store delta.
+    * ``not_attempted`` -- nothing was eligible to promote (audit ``needs_requeue`` / zero clean
+      cards): the promoter was never invoked for this lease, so it is NOT a conflict.
+    * ``conflict``      -- clean cards existed and promotion ran, but produced no positive delta
+      (a genuine lock/store/promotion conflict).
+    Previously any non-positive delta was reported as ``conflict``, mislabelling the common
+    zero-clean requeue case as a conflict and poisoning the census."""
+    if (lease.get('store_delta') or 0) > 0:
+        return 'success'
+    if int(lease.get('clean_count') or 0) == 0:
+        return 'not_attempted'
+    return 'conflict'
+
+
 def now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
 
@@ -110,6 +126,15 @@ def claim(db_path, account, now=None):
         db.execute('BEGIN IMMEDIATE')
         acc = db.execute('SELECT * FROM accounts WHERE name=?', (account,)).fetchone()
         if not acc or not acc['validated'] or acc['parked_until'] > now:
+            db.rollback()
+            return None
+        # D-G: one active job per account. Inside this BEGIN IMMEDIATE transaction (which holds a
+        # write lock, serializing concurrent claimers), refuse the account if it already owns an
+        # in_progress job. Two independent claimers racing for the same validated account => only
+        # one obtains a job; the other sees the in_progress row (or is blocked until commit) and
+        # backs off. Enforces the "one account, strictly sequential" contract atomically.
+        if db.execute("SELECT 1 FROM jobs WHERE state='in_progress' AND assigned_acc=? LIMIT 1",
+                      (account,)).fetchone():
             db.rollback()
             return None
         job = db.execute("SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts ORDER BY id LIMIT 1").fetchone()
@@ -394,7 +419,23 @@ def cmd_status(args):
     db.close()
 
 
-def live_probe(config_dir, claude='claude', payload_bytes=6491):
+EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
+PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
+PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+
+
+def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
+               latency_ceiling_ms=PROBE_LATENCY_CEILING_MS):
+    """Repository probe gate (D-F). A GO reading requires ALL of: payload >= 5 KB, exact model
+    ``claude-sonnet-5``, return code 0, AND latency <= 30000 ms. Any violation raises SystemExit
+    so the caller (``staged-run``/``presplit-canary``) STOPS before claim/import/execution — a
+    30,001 ms reading is a NO-GO (the H818 acceptance's 50,991 ms / 36,684 ms probes should have
+    stopped the run, not proceeded)."""
+    if payload_bytes < PROBE_MIN_PAYLOAD_BYTES:
+        raise SystemExit('probe payload %d B < %d B repository floor' %
+                         (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))
+    if model != EXACT_GEN_MODEL:
+        raise SystemExit('probe model %r is not the exact generation model %r' % (model, EXACT_GEN_MODEL))
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
@@ -403,12 +444,15 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491):
     proc = subprocess.run(
         claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
          '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
-         '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+         '--model', model, '--permission-mode', 'plan'],
         input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
     latency_ms = int((time.monotonic() - started) * 1000)
     if proc.returncode:
         raise SystemExit('load-representative profile probe failed: %s' %
                          (((proc.stderr or '') + '\n' + (proc.stdout or ''))[-1000:]))
+    if latency_ms > latency_ceiling_ms:
+        raise SystemExit('probe latency %d ms exceeds %d ms health ceiling — NO-GO; stop before '
+                         'claim/import/execution (unhealthy profile)' % (latency_ms, latency_ceiling_ms))
     return latency_ms
 
 
@@ -520,7 +564,7 @@ def cmd_staged_run(args):
                      clean=lease.get('clean_count'))
         append_event(args.events, run_id=run_id, lease_id=lease['id'],
                      window_id=lease['id'], stage='promotion', event='promotion_end',
-                     classification='success' if lease.get('store_delta', 0) > 0 else 'conflict',
+                     classification=promotion_classification(lease),
                      store_before=lease.get('store_before'), store_after=lease.get('store_after'))
     selected_keys = []
     headwords = set()

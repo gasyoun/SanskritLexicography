@@ -93,7 +93,26 @@ def selftest():
         lp = os.path.join(d, 'pwg_ru_translated.jsonl')
         assert canonical_store(lp) == lp, canonical_store(lp)
         assert main_worktree_root(d) is None
-    print('store_path selftest: PASS (env-override wins, non-git falls back to local)')
+    # 3. inside a LINKED worktree -> resolve to the MAIN checkout store (H818 D-E: this is the
+    # resolution translation_memory.DEFAULT_STORE now shares with promote_final_cards, so a
+    # worktree run's post-promotion TM rebuild targets the MAIN store, not a vanishing local one).
+    os.environ.pop('PWG_RU_STORE', None)
+    _orig = globals()['main_worktree_root']
+    try:
+        globals()['main_worktree_root'] = lambda start: os.path.join('MAIN', 'checkout')
+        got = canonical_store(os.path.join('WT', 'linked', 'pwg_ru_translated.jsonl'))
+        assert got == os.path.join('MAIN', 'checkout', *STORE_REL.split('/')), got
+    finally:
+        globals()['main_worktree_root'] = _orig
+    # 4. env override still beats the worktree resolution (explicit pin wins over everything)
+    os.environ['PWG_RU_STORE'] = os.path.join('scratch', 's.jsonl')
+    try:
+        globals()['main_worktree_root'] = lambda start: os.path.join('MAIN', 'checkout')
+        assert canonical_store(os.path.join('WT', 'x.jsonl')) == os.path.join('scratch', 's.jsonl')
+    finally:
+        globals()['main_worktree_root'] = _orig
+        del os.environ['PWG_RU_STORE']
+    print('store_path selftest: PASS (env-override wins, worktree->main, non-git falls back to local)')
     return True
 
 

@@ -106,3 +106,7 @@ HeadwordLists/heritage_mirror/
 # semdom.json fetch cache (semdom_varga_crosswalk.py / semdom_ak_annex_table.py) — CC BY-SA input, fetched on demand, never committed
 /data/semdom.json
 /data/wn-links-semdom-words-all.tsv
+
+# H813 Sanskrit-in-Numbers module8 fetch cache (zaliznyak-grammar-index TSV,
+# already published as a kosha release asset — fetched on demand, never committed)
+papers/sanskrit_in_numbers/.cache/
