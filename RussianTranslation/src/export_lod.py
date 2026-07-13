@@ -845,7 +845,10 @@ def emit_grammar_card(f, R, card, lemma_seen, seen_keys, args):
             lines.append('  pwglex:sectionRef %s ;' % ', '.join(s[0] for s in sections))
         lines.append('  pwglex:evidenceGrade gr:%s .' % GRAMMAR_GRADE[0])
         f.write('%s\n' % lemma_iri)
-        f.write('\n'.join(lines) + '\n\n')
+        # CodeQL's generic PII-named-field heuristic matches nominal_grammar.py's
+        # 'gender' dict key; the value is Sanskrit grammatical gender (m./f./n. via
+        # lexinfo:gender), not personal data.
+        f.write('\n'.join(lines) + '\n\n')  # lgtm[py/clear-text-storage-sensitive-data]
 
     for sec_iri, label, cat, rng in sections:
         f.write('%s a pwglex:GrammarSection ;\n' % sec_iri)
