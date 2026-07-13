@@ -444,6 +444,18 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   the Ch. 4/7 "zero means instrument" doctrine. Every count and table carried over unchanged.
   **6 of 14 chapters now in book form** (ch01, ch02, ch04, ch05, ch09, ch10).
 
+**Done 13-07-2026 (H857 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 8 converted journal→book** →
+  [chapters/ch08_paninian_derivation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch08_paninian_derivation.md)
+  (from A35, *Cross-Dictionary Consistency of Pāṇinian Derivation*, csl-orig source). The two
+  internal planning memos (submission-readiness, technique-adoption) stripped; abstract folded
+  into the opening; the A04 companion remapped to **Ch. 7**; the crosswalk §1 grounding woven
+  in (Baalbaki *al-ištiqāq* / ʿAyn∥Sībawayhi "lexicography as grammar's twin"; Bowern & Evans
+  / Koch / Mailhammer comparative-method frame; Ferri/Pieroni *caution* that Latin
+  etymologizing ≠ rule-governed vyutpatti; Partridge's Skeat–Weekley design fork). Every count
+  and table carried over unchanged. **7 of 14 chapters now in book form** (ch01, ch02, ch04,
+  ch05, ch08, ch09, ch10).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
