@@ -726,3 +726,29 @@ So the 8 residual kills were still **concurrency-sensitive down to 2-wide** — 
 **Verify (`no_pwg_contentfix`, 2 cards, `wf_8e09120e-dbd`): the key fix WORKS, and it unmasks the real shared root cause.** `avy_ahata` **no longer fails on the key** — it now fails on **fidelity** (`{# 1/2`, dropping `{#˚tva#}`), exactly the same class as `avyagra`. (`avyagra` kill-timed-out at 180 s this run — host.) So **both "content-hard" cards are really ONE issue: the model drops SHORT embedded derived-form `{#…#}` spans** (`˚tva`, `˚m`, single-letter `A` — the `˚`-abbreviated derivations + inline grammatical forms), whether by omitting them or expanding the headword literally. That is a **placeholder-fidelity / omission** problem, distinct from the key symptom H834 fixed and from budget/routing.
 
 **Net:** H834 is a real, general improvement (the SLP1+`~~suffix` key-echo now recovers — helps every nominal card, verified on `avy_ahata`). The remaining recovery of these 2 cards needs a **derived-form-token fidelity fix** — deterministic german-field anchoring from the source, or a prompt change — a larger, distinct piece not safely verifiable on the current degraded host. Documented as the precise residual (never a silent drop). Store unchanged (0 promoted). H834.
+
+---
+
+## 2026-07-13 — no-PWG lane window `no_pwg_w08` (H255 scale drain, fresh queue-mode window, `no_pwg_scale_plan.py --start-index 8`) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`) — 🟡 1/21 PROMOTED, concurrency-degraded, requeue owed
+
+**Setup.** Fresh 20-headword / 21-subcard window (`arvant asaMskfta avyAhata avyagra bAhlika brAhmaRI cUlikA cakrikA capalA caturguRa cavya cezwA dUtI darvI dayitA dolAyantra durgA dvAdaSAnta dyAvApfTivI gaRanA`), `--start-index 8` (bumps past every root logged, incl. the 12-07 w06/w07 roots). Pre-flight warm-up probe `wf_dae18f98-34a` = **GO at 18.7 s** (0 conn-errors, 6.5 KB load-representative payload) — *faster* than the two prior GO warmups (21.2/21.1 s). Ran off `origin/master` in worktree `h255-no-pwg-w08` (promotions persist to the canonical main store via H805 `store_path`).
+
+**Result (`wf_811e50e7-2b2`, ~10-wide, 1.84 M tok, 8.6 min): 🟡 2 non-null / 21, of which 1 clean + 1 defect → 1 PROMOTED.** Store `src/pwg_ru_translated.jsonl` (canonical main): **11,553 → 11,555** (`cUlikA` `c_ulik_a~~h0_zz_sch`, 2 sense rows, `ai_translated`).
+
+**The GO probe UNDER-PREDICTED the concurrent window — textbook H811.** 19 nulls, **every one a 180 s-CEIL kill-timeout on a 126–975 B skeleton**, 27 kill-timeouts total, **0 conn-errors**, budget **not** tripped. An isolated 1-wide 18.7 s probe cannot see the ~10-wide contention that inflates a tiny single-fragment card past even the CEIL (the [[pwg-ru-lowwide-requeue]] finding: the plain warm-up latency, not the isolated probe verdict, is the truer degradation signal). No second ~10-wide pass — the fix is a low-width requeue (below).
+
+**Residual (20), NOT all requeue-recoverable — cross-checked against the 12-07 history:**
+- **1 defect** — `cakrikA` `cakrik_a~~h0_zz_pw` (`missing_required_sense_field`); needs rework, not a retry.
+- **2 content-hard (known H834 residual, re-offered because never promoted)** — `avyAhata`/`avyagra` `~~h0_zz_pw`: the derived-form `{#…#}` omission class; a `--max-wide` requeue will NOT fix these (they need the derived-form-token fidelity fix, see the H834 entry above).
+- **4 prior-residual re-offers** — `arvant`/`brAhmaRI`/`asaMskfta`/`bAhlika` `~~h0_zz_pw` were already w07-residual / presplit-cohort (API-hard at the CEIL); may land at low width once the API is healthy.
+- **~13 genuinely fresh concurrency-kills** — the requeue target.
+
+**Next (requeue owed, the one permitted `--no-tm` pass):**
+```
+python src/pilot/gen_opt_harness2.py no_pwg_w08_rq1 --nominal \
+    --keys=<19 null keys, or drop avy_ahata/avyagra as content-hard> \
+    --output-budget=1 --no-tm --max-wide=3 --stagger-ms=2000
+```
+then Workflow → `audit_window.py` → `promote_final_cards.py --merge`. `no_pwg_runnable` unchanged pending the requeue. `probe_log` launch+outcome recorded for `wf_811e50e7-2b2`.
+
+**Tooling note (stale-branch trap, cost this session ~0 data but a detour):** the orchestrating session's *main checkout* was 65 commits behind on a docs branch (`docs/metadoc-template-v2-backfill-h663`) that predates H805/H811/H823/H834 — its `no_pwg_scale_plan.py` still had the pre-fix `existing_subcards` scanning `output/` (empty) instead of `input/`, so queue-mode prepare FAILed there. Master already carries the fix (`gen_dir = .../pilot/input`); running from an `origin/master` worktree sidestepped it entirely. No code change shipped from this window.
