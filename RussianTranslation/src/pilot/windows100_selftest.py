@@ -56,6 +56,18 @@ def main():
     clean = coordinator.clean_result_payload(source, {'defect'})
     assert [row['key'] for row in clean['results']] == ['clean']
     assert clean['summary']['cards'] == 1 and clean['summary']['null'] == 0
+    with tempfile.TemporaryDirectory() as td:
+        lock_path = os.path.join(td, '.promotion.lock')
+        os.mkdir(lock_path)
+        with open(os.path.join(lock_path, 'owner.json'), 'w', encoding='utf-8') as f:
+            json.dump({'pid': os.getpid(), 'created_at': coordinator.utc_now()}, f)
+        try:
+            with coordinator.DirLock(lock_path, wait_seconds=0):
+                pass
+        except SystemExit as exc:
+            assert 'lock busy' in str(exc)
+        else:
+            raise AssertionError('live promotion conflict was not refused')
     print('windows100_selftest: PASS')
 
 

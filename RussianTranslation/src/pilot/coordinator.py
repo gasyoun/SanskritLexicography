@@ -50,6 +50,13 @@ def utc_now():
         timespec='seconds').replace('+00:00', 'Z')
 
 
+def nonempty_line_count(path):
+    if not os.path.exists(path):
+        return 0
+    with open(path, encoding='utf-8') as f:
+        return sum(bool(line.strip()) for line in f)
+
+
 def parse_ts(value):
     if not value:
         return None
@@ -92,12 +99,13 @@ def pid_alive(pid):
 
 
 class DirLock:
-    def __init__(self, path, ttl_seconds=LOCK_TTL_SECONDS):
+    def __init__(self, path, ttl_seconds=LOCK_TTL_SECONDS, wait_seconds=30):
         self.path = path
         self.ttl_seconds = ttl_seconds
+        self.wait_seconds = wait_seconds
 
     def __enter__(self):
-        deadline = time.time() + 30
+        deadline = time.time() + self.wait_seconds
         while True:
             try:
                 os.makedirs(os.path.dirname(self.path), exist_ok=True)
@@ -666,9 +674,13 @@ def promote_ready(args):
         for lease in ready:
             source = lease.get('clean_output') or lease['wf_output']
             rel_glob = os.path.relpath(source, REPO)
+            store_before = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
             run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
                      '--merge', '--glob', rel_glob,
                      '--gen-model-version', args.gen_model_version])
+            store_after = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
+            if lease.get('clean_count') and store_after <= store_before:
+                raise SystemExit('%s: promotion produced no positive canonical-store delta' % lease['id'])
             with DirLock(paths()['lock']):
                 state = load_state()
                 fresh = lease_by_id(state, lease['id'])
@@ -676,8 +688,14 @@ def promote_ready(args):
                                   else 'promoted')
                 fresh['promoted_at'] = utc_now()
                 fresh['model_version'] = args.gen_model_version
+                fresh['store_before'] = store_before
+                fresh['store_after'] = store_after
+                fresh['store_delta'] = store_after - store_before
                 save_state(state)
-                registry_event(fresh, 'promoted', {'glob': rel_glob})
+                registry_event(fresh, 'promoted', {'glob': rel_glob,
+                                                   'store_before': store_before,
+                                                   'store_after': store_after,
+                                                   'store_delta': store_after - store_before})
         run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
         if any('"frag_prov"' in open(fp, encoding='utf-8').read()
                for fp in glob.glob(os.path.join(paths()['artifacts'], '*', 'wf_output*.json'))):

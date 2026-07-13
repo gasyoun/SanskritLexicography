@@ -64,6 +64,13 @@ Use RU-only `no_pwg` first: it is partially drained and avoids the verb lane's b
 
 Windows 100-word dry-run (post-H823): **100 headwords → 120 subcards in five 20-headword windows; 0 presplit under the corrected cite floor; 117 projected calls; no duplicate/store-hit/manifest drift; all five preflight cost gates OK.** The real Max run remains authentication-gated.
 
+Post-audit hardening adds a credential-safe `pwg.run_event.v1` JSONL stream and
+derived `pwg.bug_census.v1`, strict unique-headword/subcard accounting, per-window
+positive store-delta verification, promotion-conflict refusal, and fault-injection
+coverage for timeout, malformed output, rate-limit parking/reset, restart recovery,
+and crash-after-output. Because the real 100-word slice has zero presplits, a
+separate non-promoting live presplit canary is mandatory before its GO verdict.
+
 Not audited: real server networking, quota/reset payloads, live Workflow transcript, or real store delta. These require H818's owner-supplied external inputs.
 
 _Dr. Mārcis Gasūns_

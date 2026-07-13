@@ -76,13 +76,34 @@ After the owner logs one Max account into a dedicated profile, repeat with
 python src/pilot/max_account_orchestrator.py --db <db> staged-run `
   --coord-dir <dir> --cwd <RussianTranslation> `
   --coordinator src/pilot/coordinator.py --plan <prepared-plan.json> --stop-after 2 `
-  --report src/pilot/output/windows100_readiness.json
+  --report src/pilot/output/windows100_readiness.json `
+  --events src/pilot/output/run_events.jsonl `
+  --census src/pilot/output/bug_census.json --run-id h818-win100
 # restart boundary: rerun the same command with --resume and without --stop-after
 ```
 
 The command refuses unauthenticated profiles, runs a ≥5 KB exact-model probe,
 records/audits each window, promotes only its audit-clean subset under the global
-promotion lock, and emits a GO only for five windows with ≥80% audit-clean cards
-and <5% fidelity rejects.
+promotion lock, and emits a GO only when the exact headword/subcard census is
+accounted, every window has a positive canonical-store delta, no hard failure or
+duplicate exists, ≥80% of cards are audit-clean, and fidelity rejects stay <5%.
+`run_events.jsonl` is the credential-safe append-only join across probe, model
+attempts, audit and promotion; `bug_census.json` is regenerated from it.
+
+The deterministic 100-word slice currently contains no presplit card. Before the
+100-word run, build a manifest for a known heavy fixture and exercise fragment
+recovery without promotion:
+
+```powershell
+python src/pilot/max_account_orchestrator.py --db <db> presplit-canary `
+  --manifest <heavy-presplit-manifest.json> --output <canary-output.json> `
+  --status <canary-status.json> --events src/pilot/output/run_events.jsonl `
+  --run-id h818-presplit-canary
+```
+
+The command refuses a manifest without `presplit_keys`, requires exactly one
+validated Max profile and a successful ≥5 KB probe, and returns GO only when the
+presplit route completes with no residual. Canary output is never imported or
+promoted.
 
 _Dr. Mārcis Gasūns_
