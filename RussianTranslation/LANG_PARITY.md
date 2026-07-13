@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 13-07-2026 (D-J re-verify)_
+_Created: 04-07-2026 · Last updated: 13-07-2026 (D-K re-verify)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -942,7 +942,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/no_pwg_scale_plan.py",
       "src/pilot/windows100_selftest.py",
       "src/pilot/run_observability.py",
-      "src/pilot/run_observability_selftest.py"
+      "src/pilot/run_observability_selftest.py",
+      "src/pilot/proc_tree.py"
     ],
     "languages": [
       "ru",
@@ -953,15 +954,16 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "815fe75a1bdc7467d46a846deb96ff2cf5625c98d6f52d6a61db439b33b20f88",
-      "src/pilot/headless_worker.py": "769bbab47460bcc6c5fdd1c5307836a98143d74631d5c042987c0057a69cac6e",
-      "src/pilot/max_account_orchestrator.py": "cfcb91c489584d88cf164bf569bfbc1c91491eca9426fb9f0ae3706f6f075811",
+      "src/pilot/headless_worker.py": "344df79a75dcbc85a90d8ccea8e271a88bde0e433c90eb131eb04d9d4ccbaeb9",
+      "src/pilot/max_account_orchestrator.py": "0cdaa47b88ae1713b259245f0ef5382d396d4fb4604fef71d33faec3bf7248d0",
       "src/pilot/coordinator.py": "3fc844fe372b7511528aefeefbc90dcd83653b9cc09e85fed837fd599eac15f8",
       "src/pilot/headless_worker_selftest.py": "a98c9e0380f9630f84ad3e8355b3d3db852765d0b7a0f36d6fa393e5fcdf9a02",
-      "src/pilot/max_account_orchestrator_selftest.py": "1e33e48c04fce36f4668d74b5d18031cb761544026cf5695f012a606b038fb7c",
+      "src/pilot/max_account_orchestrator_selftest.py": "403a2225141abb7f1e87fada9a276c6459b52986a94eedefbcfc9f70f35ad0a3",
       "src/pilot/no_pwg_scale_plan.py": "ec654b580278361a6fe27c1cb93a04acd1c1a219f8db223f2fdea9c0a657a105",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
-      "src/pilot/run_observability.py": "c634d46b8267418b0fe6e8dbf248c98b5fa8435bac7715cd6c4c453b1dc1fbb5",
-      "src/pilot/run_observability_selftest.py": "75bc960a35080a0c84ca9b5ee62b63134a9e0bde334c5531d564b13019187b60"
+      "src/pilot/run_observability.py": "371d0197b39e217ef1754eb60d8b09f79823678f728d65e276f864eaeb8e0d72",
+      "src/pilot/run_observability_selftest.py": "75bc960a35080a0c84ca9b5ee62b63134a9e0bde334c5531d564b13019187b60",
+      "src/pilot/proc_tree.py": "52ef9b80fb3f29187f8501ffb83be3d4bf0098757058373a84cb10be92d51e1e"
     }
   },
   {

@@ -2,6 +2,7 @@
 import json
 import os
 import sqlite3
+import subprocess
 import sys
 import tempfile
 import threading
@@ -112,9 +113,9 @@ def main():
     assert m.is_rate_limited({}, '') is False
     print('  D-C is_rate_limited: hash-429 ignored; worker-class / real-429 detected')
 
-    # D-F (H818 acceptance): the repository probe gate. payload<5KB and a non-exact model raise
-    # before any subprocess call; a latency over the 30 s ceiling is a NO-GO (the observed
-    # 50,991 ms / 36,684 ms probes must stop the run). A healthy <=30 s rc-0 reading returns.
+    # D-F/D-K: the two-phase probe protocol. payload<5KB / non-exact model raise before any call.
+    # Then EXACTLY one warm-up call (latency excluded) + one measured call (gated): 30000 passes,
+    # 30001 is an honest NO-GO, and a warm-up failure STOPs before the measured call ever starts.
     try:
         m.live_probe('cfg', payload_bytes=100); assert False, 'payload floor not enforced'
     except SystemExit as e:
@@ -123,21 +124,122 @@ def main():
         m.live_probe('cfg', model='claude-haiku-4-5'); assert False, 'exact-model gate missing'
     except SystemExit as e:
         assert 'exact generation model' in str(e)
-    _run, _mono = m.run_tree_kill, m.time.monotonic   # live_probe spawns via run_tree_kill (D-J)
+    _pc = m._probe_call
     try:
-        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='{"ok":true}', stderr='')
-        over = iter([1000.0, 1031.0])            # 31,000 ms elapsed -> over the 30 s ceiling
-        m.time.monotonic = lambda: next(over)
+        seen = []
+
+        def fake(seq):
+            it = iter(seq)
+
+            def _mock(config_dir, claude, payload_bytes, model):
+                v = next(it)
+                seen.append(v)
+                return v
+            return _mock
+
+        # warm-up 99999 ms (EXCLUDED) + measured exactly 30000 ms -> PASS (ceiling inclusive)
+        seen.clear(); m._probe_call = fake([(99999, 'success', 120), (30000, 'success', 120)])
+        with tempfile.TemporaryDirectory() as td:
+            ev = os.path.join(td, 'e.jsonl')
+            assert m.live_probe('cfg', events_path=ev, run_id='r', account='a') == 30000
+            rows = ro.read_events(ev)
+            assert len([r for r in rows if r.get('purpose') == 'warmup']) == 1
+            assert len([r for r in rows if r.get('purpose') == 'measured']) == 1
+            assert len(seen) == 2                       # exactly one warm-up + one measured
+            cen = ro.build_census(rows)
+            assert cen['latency_ms']['max'] == 30000    # the 99999 warm-up is NOT in the latency census
+            assert len(cen['probe']['warmup']) == 1 and len(cen['probe']['measured']) == 1
+        # measured 30001 -> honest NO-GO (no retry)
+        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (30001, 'success', 120)])
         try:
-            m.live_probe('cfg'); assert False, 'latency ceiling not enforced'
+            m.live_probe('cfg'); assert False, '30001 ms measured must NO-GO'
         except SystemExit as e:
             assert 'health ceiling' in str(e)
-        good = iter([1000.0, 1010.0])            # 10,000 ms -> healthy
-        m.time.monotonic = lambda: next(good)
-        assert m.live_probe('cfg') == 10000
+        assert len(seen) == 2
+        # warm-up auth failure -> immediate STOP, measured NEVER starts
+        seen.clear(); m._probe_call = fake([(9000, 'auth', 0)])
+        try:
+            m.live_probe('cfg'); assert False, 'warm-up auth must STOP'
+        except SystemExit as e:
+            assert 'warm-up' in str(e)
+        assert len(seen) == 1                           # measured never started
+        # measured malformed (output-size/validity) -> honest NO-GO
+        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (9000, 'malformed', 3)])
+        try:
+            m.live_probe('cfg'); assert False, 'malformed measured must NO-GO'
+        except SystemExit:
+            pass
+        assert len(seen) == 2
     finally:
-        m.run_tree_kill, m.time.monotonic = _run, _mono
-    print('  D-F probe gate: <5KB/non-exact-model raise; >30s NO-GO; healthy <=30s passes')
+        m._probe_call = _pc
+    print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 30000 pass / 30001 NO-GO; warm-up fail STOPs before measured')
+
+    # D-K output_bytes is measured from ENCODED UTF-8 bytes, not character count.
+    assert len('да') == 2 and len('да'.encode('utf-8')) == 4
+    _rtk = m.run_tree_kill
+    try:
+        body = '{"ok":true,"n":"да"}'
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout=body, stderr='')
+        lat, cls, obytes = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        assert cls == 'success' and obytes == len(body.encode('utf-8')) and obytes > len(body)
+    finally:
+        m.run_tree_kill = _rtk
+    print('  D-K output_bytes: encoded UTF-8 bytes, not character count')
+
+    # D-K census: probe events distinguishable from translation calls; warm-up excluded from
+    # latency, but a rate-limit warm-up is STILL counted in total quota observations.
+    with tempfile.TemporaryDirectory() as td:
+        ev = os.path.join(td, 'e.jsonl')
+        ro.append_event(ev, stage='probe', event='probe_call', purpose='warmup', elapsed_ms=99999,
+                        classification='rate_limit', model=m.EXACT_GEN_MODEL, output_bytes=0, run_id='r')
+        ro.append_event(ev, stage='probe', event='probe_call', purpose='measured', elapsed_ms=8000,
+                        classification='success', model=m.EXACT_GEN_MODEL, output_bytes=120, run_id='r')
+        m.emit_call_events(ev, {'keys': ['k'], 'elapsed_ms': 5000, 'classification': 'success', 'label': 'c'},
+                           0, 'mh', {'run_id': 'r', 'account': 'a'})
+        cen = ro.build_census(ro.read_events(ev))
+        assert cen['latency_ms']['max'] == 8000, cen['latency_ms']      # warm-up 99999 excluded
+        assert len(cen['probe']['warmup']) == 1 and len(cen['probe']['measured']) == 1
+        assert cen['quota_observations'] == 1 and cen['quota_incidents'] == 1   # warm-up rate-limit counted
+    print('  D-K census: probe distinguishable; warm-up excluded from latency but counted in quota')
+
+    # D-K integration: a hanging probe call kills its parent->child->grandchild tree (via the shared
+    # run_tree_kill) and returns 'timeout' -- so live_probe stops and the measured/generation phase
+    # never starts. Proves the probe path inherits the D-J tree-kill (not just subprocess.run).
+    import time as _time
+    with tempfile.TemporaryDirectory() as td:
+        mk = os.path.join(td, 'm')
+        grand = ('import time,sys,os;open(sys.argv[1]+".pid3","w").write(str(os.getpid()));'
+                 'time.sleep(6);open(sys.argv[1]+".done3","w").write("1")')
+        child = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid2","w").write(str(os.getpid()));'
+                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % grand
+        parent = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
+                  'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % child
+
+        def _alive(pid):
+            if os.name == 'nt':
+                out = subprocess.run(['tasklist', '/FI', 'PID eq %d' % pid, '/NH'],
+                                     capture_output=True, text=True).stdout or ''
+                return str(pid) in out.split()
+            try:
+                os.kill(pid, 0); return True
+            except OSError:
+                return False
+
+        try:
+            m.run_tree_kill([sys.executable, '-c', parent, mk], timeout=3, capture_output=True)
+            assert False, 'expected the hanging probe tree to TimeoutExpired'
+        except subprocess.TimeoutExpired:
+            pass
+        for _ in range(60):
+            if all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)):
+                break
+            _time.sleep(0.1)
+        _time.sleep(5)
+        assert all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)), 'probe tree never reached depth 3'
+        assert not any(os.path.exists('%s.done%d' % (mk, i)) for i in (1, 2, 3)), 'a probe-tree level survived'
+        pids = [int(open('%s.pid%d' % (mk, i)).read()) for i in (1, 2, 3)]
+        assert not any(_alive(p) for p in pids), 'a hanging-probe tree PID survived: %s' % [p for p in pids if _alive(p)]
+    print('  D-K hanging-probe: parent->child->grandchild all gone; the next phase never starts')
 
     # D-G (H818 acceptance): one active job per account, atomic in the BEGIN IMMEDIATE claim.
     # Two claimers racing the same validated account -> only one obtains a job.

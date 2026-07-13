@@ -15,6 +15,10 @@ import time
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from proc_tree import run_tree_kill, terminate_tree  # noqa: E402  (shared D-J tree-kill runner)
+
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
 RATE_RE = re.compile(r'429|rate.?limit|usage limit|too many requests', re.I)
 CONN_RE = re.compile(r'connection closed|econnreset|socket hang up|network error', re.I)
@@ -215,79 +219,7 @@ def card_token_multiset(card):
     return collections.Counter(tokens)
 
 
-def _terminate_tree(proc, deadline):
-    """**Bounded best-effort** tree termination — NOT race-free (tree enumeration still races
-    process exit/spawn; correctness is what the parent->child->grandchild regression test asserts).
-    Invoked WHILE ``proc`` is still alive so the tree is enumerable. The Windows claude launcher is
-    ``node cli-wrapper.cjs``, which ``spawnSync``'s the native binary as a CHILD; the stdlib timeout
-    kill (``TerminateProcess`` on the node process) leaves that binary orphaned (H818 defect D-J).
-    ``taskkill /PID <pid> /T /F`` reaps the live tree on Windows (acceptable for this known-stable
-    wrapper tree); ``killpg`` the session group on POSIX. Always falls back to ``proc.kill()`` if
-    the parent is still alive. Returns a short diagnostic string on cleanup trouble, else None —
-    the caller keeps the primary ``timeout`` classification regardless."""
-    if proc.poll() is not None:
-        return None
-    trouble = None
-    if os.name == 'nt':
-        budget = max(1.0, deadline - time.monotonic())
-        try:
-            subprocess.run(['taskkill', '/PID', str(proc.pid), '/T', '/F'],
-                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget)
-        except (subprocess.TimeoutExpired, FileNotFoundError, OSError) as exc:
-            trouble = 'taskkill:%s' % type(exc).__name__
-    else:
-        import signal as _signal
-        try:
-            os.killpg(os.getpgid(proc.pid), _signal.SIGKILL)
-        except (ProcessLookupError, PermissionError, OSError) as exc:
-            trouble = 'killpg:%s' % type(exc).__name__
-    if proc.poll() is None:                            # always fall back if the parent still lives
-        try:
-            proc.kill()
-        except OSError as exc:
-            trouble = (trouble or '') + ';proc.kill:%s' % type(exc).__name__
-    return trouble
-
-
-def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
-                  capture_output=False, cwd=None, env=None, **_ignored):
-    """Drop-in for ``subprocess.run`` (Popen + ``communicate(timeout=)``) that, on timeout,
-    performs bounded best-effort termination of the ENTIRE process tree instead of just the
-    immediate child — so a killed generation call is bounded and no orphaned native binary keeps
-    holding the API call (H818 defect D-J). Terminates the tree while the parent is still alive,
-    then drains the pipes and reaps the parent using the REMAINING kill budget to an absolute
-    deadline (a small grace beyond the call budget, not an independent fixed window). Cleanup
-    trouble is attached diagnostically to the raised ``subprocess.TimeoutExpired`` — the caller's
-    handling still records exactly one ``timeout`` event."""
-    pipe = subprocess.PIPE if capture_output else None
-    popen_kw = dict(stdin=subprocess.PIPE, stdout=pipe, stderr=pipe,
-                    text=text, encoding=encoding, cwd=cwd, env=env)
-    if os.name == 'nt':
-        popen_kw['creationflags'] = getattr(subprocess, 'CREATE_NEW_PROCESS_GROUP', 0)
-    else:
-        popen_kw['start_new_session'] = True          # own process group -> killpg reaches children
-    proc = subprocess.Popen(argv, **popen_kw)
-    start = time.monotonic()
-    try:
-        out, err = proc.communicate(input=input, timeout=timeout)
-    except subprocess.TimeoutExpired as exc:
-        grace = min(10.0, (timeout or 0) * 0.1 + 2.0)  # small, proportional, capped cleanup grace
-        deadline = start + (timeout or 0) + grace
-        trouble = _terminate_tree(proc, deadline)
-        try:
-            remaining = max(0.5, deadline - time.monotonic())
-            out, err = proc.communicate(timeout=remaining)     # drain pipes + reap within budget
-        except subprocess.TimeoutExpired:
-            trouble = (trouble or '') + ';reap-timeout'
-            try:
-                proc.kill()
-                proc.communicate(timeout=2)
-            except (OSError, subprocess.TimeoutExpired):
-                pass
-        if trouble:
-            exc.cleanup_trouble = trouble              # diagnostic only; classification stays 'timeout'
-        raise
-    return subprocess.CompletedProcess(argv, proc.returncode, out, err)
+# run_tree_kill / terminate_tree moved to proc_tree (shared D-J runner); imported above.
 
 
 class HeadlessEngine:

@@ -456,36 +456,78 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
 
 
-def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
-               latency_ceiling_ms=PROBE_LATENCY_CEILING_MS):
-    """Repository probe gate (D-F). A GO reading requires ALL of: payload >= 5 KB, exact model
-    ``claude-sonnet-5``, return code 0, AND latency <= 30000 ms. Any violation raises SystemExit
-    so the caller (``staged-run``/``presplit-canary``) STOPS before claim/import/execution — a
-    30,001 ms reading is a NO-GO (the H818 acceptance's 50,991 ms / 36,684 ms probes should have
-    stopped the run, not proceeded)."""
-    if payload_bytes < PROBE_MIN_PAYLOAD_BYTES:
-        raise SystemExit('probe payload %d B < %d B repository floor' %
-                         (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))
-    if model != EXACT_GEN_MODEL:
-        raise SystemExit('probe model %r is not the exact generation model %r' % (model, EXACT_GEN_MODEL))
+def _probe_call(config_dir, claude, payload_bytes, model):
+    """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
+    classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'process' | 'timeout'.
+    NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to STOP on."""
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
     prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
               ('x' * payload_bytes))
     started = time.monotonic()
-    proc = run_tree_kill(                # D-J: tree-kill on timeout
-        claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
-         '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
-         '--model', model, '--permission-mode', 'plan'],
-        input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+    try:
+        proc = run_tree_kill(            # D-J: tree-kill on timeout
+            claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
+             '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
+             '--model', model, '--permission-mode', 'plan'],
+            input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+    except subprocess.TimeoutExpired:
+        return int((time.monotonic() - started) * 1000), 'timeout', 0
     latency_ms = int((time.monotonic() - started) * 1000)
+    out = proc.stdout or ''
+    combined = out + '\n' + (proc.stderr or '')
+    output_bytes = len(out.encode('utf-8'))
     if proc.returncode:
-        raise SystemExit('load-representative profile probe failed: %s' %
-                         (((proc.stderr or '') + '\n' + (proc.stdout or ''))[-1000:]))
-    if latency_ms > latency_ceiling_ms:
-        raise SystemExit('probe latency %d ms exceeds %d ms health ceiling — NO-GO; stop before '
-                         'claim/import/execution (unhealthy profile)' % (latency_ms, latency_ceiling_ms))
-    return latency_ms
+        if re.search(r'401|authenticat|not logged in|invalid.*credential', combined, re.I):
+            return latency_ms, 'auth', output_bytes
+        if RATE_LIMIT.search(proc.stderr or ''):
+            return latency_ms, 'rate_limit', output_bytes
+        return latency_ms, 'process', output_bytes
+    try:                                 # output-size / validity check: a real {"ok":...} object
+        data = json.loads(out)
+        if not isinstance(data, dict) or 'ok' not in data:
+            return latency_ms, 'malformed', output_bytes
+    except (ValueError, TypeError):
+        return latency_ms, 'malformed', output_bytes
+    return latency_ms, 'success', output_bytes
+
+
+def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
+               latency_ceiling_ms=PROBE_LATENCY_CEILING_MS, events_path=None, run_id=None,
+               account=None):
+    """D-K deterministic two-phase probe protocol (ceiling unchanged at 30000 ms). Runs EXACTLY
+    one warm-up call (same profile + exact model; its latency is EXCLUDED from the acceptance
+    gate — it only stabilizes the cold connection), then IMMEDIATELY EXACTLY one measured >=5 KB
+    probe that IS gated. PASS only when the measured call has rc 0, passes auth/model/output-size
+    checks, and latency <= ceiling. A warm-up failure (auth/model/malformed/rate-limit/timeout) is
+    an immediate STOP; a failed or over-ceiling MEASURED probe is an honest NO-GO with NO retry and
+    no manual pre-warming. Both calls are recorded separately in telemetry (purpose warmup /
+    measured), and the warm-up latency never enters the census."""
+    if payload_bytes < PROBE_MIN_PAYLOAD_BYTES:
+        raise SystemExit('probe payload %d B < %d B repository floor' %
+                         (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))
+    if model != EXACT_GEN_MODEL:
+        raise SystemExit('probe model %r is not the exact generation model %r' % (model, EXACT_GEN_MODEL))
+
+    def _emit(purpose, latency, cls, obytes):
+        if events_path:
+            append_event(events_path, run_id=run_id, account=account, stage='probe',
+                         event='probe_call', purpose=purpose, elapsed_ms=latency,
+                         model=model, output_bytes=obytes, classification=cls)
+
+    warm_ms, warm_cls, warm_bytes = _probe_call(config_dir, claude, payload_bytes, model)
+    _emit('warmup', warm_ms, warm_cls, warm_bytes)     # excluded from the acceptance latency census
+    if warm_cls != 'success':
+        raise SystemExit('warm-up probe %s -> STOP (auth/model/output/rate-limit/timeout)' % warm_cls)
+
+    meas_ms, meas_cls, meas_bytes = _probe_call(config_dir, claude, payload_bytes, model)
+    _emit('measured', meas_ms, meas_cls, meas_bytes)   # the one gated acceptance reading
+    if meas_cls != 'success':
+        raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
+    if meas_ms > latency_ceiling_ms:
+        raise SystemExit('measured probe latency %d ms exceeds %d ms health ceiling — honest NO-GO '
+                         '(warm-up already done; no re-roll)' % (meas_ms, latency_ceiling_ms))
+    return meas_ms
 
 
 def cmd_staged_run(args):
@@ -505,9 +547,8 @@ def cmd_staged_run(args):
     if len(accounts) != 1:
         raise SystemExit('Windows staged-run requires exactly one validated account')
     run_id = args.run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
-    latency_ms = live_probe(accounts[0]['config_dir'], args.claude_bin)
-    append_event(args.events, run_id=run_id, account=accounts[0]['name'], stage='probe',
-                 event='probe_end', classification='success', elapsed_ms=latency_ms)
+    latency_ms = live_probe(accounts[0]['config_dir'], args.claude_bin,   # D-K: warmup+measured
+                            events_path=args.events, run_id=run_id, account=accounts[0]['name'])
     db = connect(args.db)
     existing_jobs = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
     db.close()
@@ -663,9 +704,8 @@ def cmd_presplit_canary(args):
     if len(accounts) != 1:
         raise SystemExit('presplit canary requires exactly one validated account')
     run_id = args.run_id or ('presplit-' + now_iso().replace(':', '').replace('-', ''))
-    latency = live_probe(accounts[0]['config_dir'], args.claude_bin)
-    append_event(args.events, run_id=run_id, account=accounts[0]['name'], stage='probe',
-                 event='probe_end', classification='success', elapsed_ms=latency)
+    latency = live_probe(accounts[0]['config_dir'], args.claude_bin,   # D-K: warmup+measured
+                         events_path=args.events, run_id=run_id, account=accounts[0]['name'])
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = accounts[0]['config_dir']
     cmd = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
