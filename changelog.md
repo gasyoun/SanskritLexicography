@@ -555,8 +555,20 @@ Section backfilled 11-07-2026 from the
   gloss-language ortho-drift ∝ reform type (RU 358/1k ≫ DE 10.3 ≫ FR/EN ≤ 0.5 ≫ LA 0);
   body-text headword mining dead end (38.6 % precision — negative result rescued from a
   deleted review artifact).
-- Note: tag `v0.0.34` exists (kosha triage, 2026-07-02) without a changelog entry — left as-is;
-  this release is numbered past it.
+## [0.0.34] - 2026-07-02
+
+### Changed — kosha planning-corpus triage (audit, 4 locked meta-decisions, scaffold removed)
+- `KOSHA_FOLDER_SETUP.md` rewritten as an honest status doc (was "Setup Complete" over empty
+  directories); `KOSHA_DECISIONS_NEEDED.md` blanks filled with real decisions (M1–M4;
+  cadence/etymology left OPEN).
+- Triage banners + inline fixes: real `<pc>` formats (MW page/column single-volume; PWG
+  volume-page hyphen; AP90 page-column-letter), real Heritage/Cologne endpoints, current
+  headword counts, VedaWeb/Lexonomy URLs, `union_headwords` marked already-built.
+- `KOSHA_DEPLOYMENT.md` added: salvage of `kosha/DEPLOYMENT.md` + README API contract with
+  4 config defects fixed (`Type=notify`, missing `proxy_pass`, `WorkingDirectory`,
+  force-push advice).
+- The `kosha/` scaffold in this repo deleted until code is real (M2: dedicated `kosha` repo;
+  M4: own Pages). (Fable 5 `claude-fable-5`.)
 
 ## [0.0.33] - 2026-06-29
 
