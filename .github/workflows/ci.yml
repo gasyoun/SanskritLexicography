@@ -118,6 +118,7 @@ jobs:
             RussianTranslation/src/lod_acceptance.py \
             RussianTranslation/src/mfs_baseline.py \
             RussianTranslation/src/government_sidecar.py \
+            RussianTranslation/src/pilot/proc_tree.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
             RussianTranslation/src/pilot/windows100_selftest.py \

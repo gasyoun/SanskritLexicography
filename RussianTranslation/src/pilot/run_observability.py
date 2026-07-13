@@ -19,11 +19,16 @@ ALLOWED = {
     # The per-key events carry no elapsed_ms and are excluded from the latency/classification
     # census, so a 5-key call yields exactly one latency sample and one classification count.
     'call_id', 'key_count',
+    # D-K: the two-phase probe records each call separately with its purpose (warmup / measured),
+    # model, and output_bytes. The warm-up latency is EXCLUDED from the acceptance census.
+    'purpose', 'output_bytes', 'model',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
 # NEVER counted as a latency sample or a classification tally (that is the call-level event's job).
 KEY_RELATION_EVENT = 'model_call_key'
+# D-K: a warm-up probe call is telemetry-only — its latency/classification never enter the census.
+WARMUP_PURPOSE = 'warmup'
 
 
 def utc_now():
@@ -74,10 +79,27 @@ def build_census(rows):
     # toward calls, latency, or classification — they feed only the per-key repeated-failure map.
     seen_calls = {}                 # call_id -> (elapsed_ms, classification) of the first event
     conflicting = set()
-    census_rows = []                # deduped call-level rows + every non-call, non-key-relation row
+    census_rows = []                # deduped call rows + measured probe + other (latency+classification)
+    probe = {'warmup': [], 'measured': []}   # D-K: probe calls broken out, distinguishable from translation
+    quota = []                      # rate-limit observations incl. the WARM-UP probe (total quota)
+    seen_quota_calls = set()
     for r in rows:
         ev = r.get('event')
         if ev == KEY_RELATION_EVENT:
+            continue                # key relations mirror the call -> never counted anywhere
+        purpose = r.get('purpose')
+        if purpose in ('warmup', 'measured'):          # D-K: record every probe call, distinguishably
+            probe[purpose].append({'latency_ms': r.get('elapsed_ms'), 'classification': r.get('classification'),
+                                   'output_bytes': r.get('output_bytes'), 'model': r.get('model')})
+        if r.get('classification') == 'rate_limit':    # total quota observations: warm-up INCLUDED
+            cid = r.get('call_id')
+            if ev == 'model_call' and cid is not None:
+                if cid not in seen_quota_calls:
+                    seen_quota_calls.add(cid)
+                    quota.append(r)
+            else:
+                quota.append(r)
+        if purpose == WARMUP_PURPOSE:                  # D-K: warm-up EXCLUDED from latency + classification
             continue
         if ev == 'model_call' and r.get('call_id') is not None:
             cid = r['call_id']
@@ -95,7 +117,7 @@ def build_census(rows):
     for row in rows:                # by_key scans ALL rows, incl. key-relation events (they carry key+class)
         if row.get('key') and row.get('classification') not in (None, 'success'):
             by_key[row['key']][row['classification']] += 1
-    # one latency sample per unique call (key-relation events have no elapsed_ms; dupes deduped)
+    # one latency sample per unique call (key-relation + warm-up excluded; dupes deduped)
     latencies = [int(r['elapsed_ms']) for r in census_rows if r.get('elapsed_ms') is not None]
     unaccounted = sorted({key for r in rows for key in (r.get('unaccounted_keys') or [])})
     calls = sum(int(r.get('calls') or 0) for r in rows)
@@ -104,11 +126,12 @@ def build_census(rows):
     cards = sum(int(r.get('cards') or 0) for r in rows if r.get('event') == 'run_summary')
     fidelity = sum(int(r.get('fidelity_rejects') or 0) for r in rows
                    if r.get('event') == 'run_summary')
-    quota = [r for r in census_rows if r.get('classification') == 'rate_limit']
     return {
         'schema': 'pwg.bug_census.v1', 'generated_at': utc_now(),
         'events': len(rows), 'classification_counts': dict(sorted(classes.items())),
         'model_calls': len(seen_calls), 'conflicting_call_ids': sorted(conflicting),
+        'probe': probe,                 # D-K: warm-up + measured probe calls, distinct from translation
+        'quota_observations': len(quota),   # total rate-limit observations incl. the warm-up probe
         'repeated_by_key': {k: dict(v) for k, v in sorted(by_key.items()) if sum(v.values()) > 1},
         'latency_ms': {'p50': percentile(latencies, .50), 'p95': percentile(latencies, .95),
                        'max': max(latencies) if latencies else None},
