@@ -419,6 +419,20 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   count and table carried over unchanged. **4 of 14 chapters now in book form** (ch01, ch02,
   ch04, ch05).
 
+**Done 13-07-2026 (H853 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 9 converted journal→book** →
+  [chapters/ch09_xref_lineage.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch09_xref_lineage.md)
+  (from A05, *Pointing Inward*, csl-atlas source). Abstract/keywords stripped, P-numbers
+  remapped (P1→Ch. 2 §3.6 metric, P2→Ch. 6, P4→Ch. 7, P6→Ch. 4), the A03 "three axes"
+  companion **absorbed** into the chapter's own content/convention/inheritance decomposition
+  (per §3 "absorbs A03/A07"), the crosswalk grounding woven in (Hartmann & James
+  mediostructure gap claimed as the chapter's warrant; the Routledge Historical-Linguistics
+  handbook phylogenetics vocabulary — Weiss/Hale/François/Dunn; Engelberg et al. linking
+  frame; Ferri's Verrius→Festus→Paul / Donatus→Servius descent chains as comparanda). One
+  correctness fix: the source's §3.2 swapped AP/AP90 edition labels — corrected against
+  Table 1 (AP90 = 1890, AP = 1957). Every count and table carried over unchanged. **5 of 14
+  chapters now in book form** (ch01, ch02, ch04, ch05, ch09).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
