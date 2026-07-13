@@ -2,10 +2,12 @@
 """Execute one PWG translation manifest through Claude Code headless mode."""
 import argparse
 import collections
+import glob
 import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -21,6 +23,31 @@ EXIT_RATE_LIMIT = 21
 EXIT_TIMEOUT = 22
 EXIT_MALFORMED = 23
 EXIT_CONTENT = 24
+
+
+def claude_argv_prefix(claude_bin):
+    """Return the argv prefix that invokes the Claude CLI directly (Windows-safe).
+
+    On Windows the npm launcher is a ``.cmd``/``.ps1`` batch shim; Python routes it
+    through cmd.exe, which reinterprets the ``<``/``>`` characters in a ``--json-schema``
+    argument as redirection and caps the command line near 8191 chars — so a real card
+    schema is corrupted and the call dies with "cannot find the file specified" (the
+    H818 Windows live-acceptance D-A defect). Resolve such a shim to
+    ``[node, <cli entry>.cjs]`` and invoke that directly, bypassing cmd.exe. A native
+    executable, or any POSIX launcher, is returned unchanged.
+    """
+    if os.name != 'nt':
+        return [claude_bin]
+    if os.path.splitext(claude_bin)[1].lower() in ('.exe', '.com'):
+        return [claude_bin]
+    node = shutil.which('node')
+    shim_dir = os.path.dirname(os.path.abspath(claude_bin)) or '.'
+    base = os.path.join(shim_dir, 'node_modules', '@anthropic-ai', 'claude-code')
+    entries = sorted(glob.glob(os.path.join(base, 'cli*.cjs')) +
+                     glob.glob(os.path.join(base, 'cli*.js')))
+    if node and entries:
+        return [node, entries[0]]
+    return [claude_bin]
 
 
 class HardFailure(Exception):
@@ -205,7 +232,8 @@ class HeadlessEngine:
         self.failures[key] = str(error)[:300]
 
     def call(self, prompt, label, keys, heal=False):
-        argv = [self.claude, '-p', '--output-format', 'json', '--json-schema',
+        argv = claude_argv_prefix(self.claude) + [
+                '-p', '--output-format', 'json', '--json-schema',
                 json.dumps(self.m['output_schema'], ensure_ascii=False, separators=(',', ':')),
                 '--model', self.m['model'], '--permission-mode', 'plan']
         started = time.monotonic()

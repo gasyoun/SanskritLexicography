@@ -97,6 +97,16 @@ def main():
         row = con.execute("select manifest_sha256,state from jobs where external_id='lease1'").fetchone()
         assert row == (m.sha256_path(manifest), 'pending')
         con.close()
+
+    # D-C (H818 Windows acceptance): a manifest_sha256 containing "429" must NOT be read
+    # as a rate-limit; only the worker's own classification or a real provider 429 in
+    # stderr must. This prevents the false 5 h account park observed on Windows.
+    assert m.is_rate_limited({'classification': 'configuration',
+                              'manifest_sha256': '80179429d4f8e6'}, '') is False
+    assert m.is_rate_limited({'classification': 'rate_limit'}, '') is True
+    assert m.is_rate_limited({}, 'HTTP 429 Too Many Requests') is True
+    assert m.is_rate_limited({}, '') is False
+    print('  D-C is_rate_limited: hash-429 ignored; worker-class / real-429 detected')
     print('max_account_orchestrator_selftest: PASS')
 
 
