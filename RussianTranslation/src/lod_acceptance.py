@@ -282,6 +282,104 @@ def test_de_source_coverage(args, keys, fixture_dir):
     return check('German sense count matches source', got == exp, 'graph=%d source=%d' % (got, exp))
 
 
+# --------------------------------------------------------------------------- #
+# D. Grammar layer (Whitney root / nominal) -- H781
+# --------------------------------------------------------------------------- #
+def load_grammar_graph(fixture_dir):
+    """RU lexical + DCS frequency + grammar-layer graphs, loaded together (the
+    root/nominal join spine, mirroring load_de_graph)."""
+    g = load_graphs(fixture_dir)
+    g.parse(os.path.join(fixture_dir, 'grammar.ttl'), format='turtle')
+    return g
+
+
+def test_grammar_layer(fixture_dir, query_path):
+    """H781: the grammar layer glues onto the shared lemma spine too. A federated
+    join (grammar block x lemma's RU/DE entry x DCS freq) must return rows for
+    BOTH the root branch (Whitney class/ppp) and the nominal branch (stem class/
+    Zaliznyak index) -- proving the UNION join shape, not just one side."""
+    print('\nD. Grammar layer (Whitney root / nominal) x lemma entry x DCS freq (H781)')
+    g = load_grammar_graph(fixture_dir)
+    ok = True
+    with open(query_path, encoding='utf-8') as f:
+        q = f.read()
+    rows = list(g.query(q))
+    ok = check('grammar x entry x DCS-freq join returns rows', len(rows) > 0, '%d rows' % len(rows)) and ok
+    branches = {str(r.asdict().get('branch')) for r in rows if r.asdict().get('branch')}
+    ok = check('join covers both root and nominal branches', {'root', 'nominal'} <= branches,
+               'branches=%s' % sorted(branches)) and ok
+    for r in rows[:6]:
+        d = r.asdict()
+        print('       lemma=%-30s branch=%-8s info=%-10s dcs=%s' % (
+            str(d.get('lemma')).rsplit('/', 1)[-1], d.get('branch'), d.get('grammarInfo'), d.get('dcsCount')))
+    ok = check('every entity with stemClass also carries zaliznyakIndex',
+               count(g, 'SELECT (COUNT(?e) AS ?n){?e <%sstemClass> ?sc FILTER NOT EXISTS{?e <%szaliznyakIndex> ?z}}'
+                     % (V, V)) == 0) and ok
+    ok = check('every GrammarSection resource has a label',
+               count(g, 'SELECT (COUNT(?s) AS ?n){?s a <%sGrammarSection> '
+                        'FILTER NOT EXISTS{?s <http://www.w3.org/2000/01/rdf-schema#label> ?l}}' % V) == 0) and ok
+    ok = check('no lemma is both root and root-ambiguous/nominal at once',
+               count(g, 'SELECT (COUNT(?e) AS ?n){?e <%swhitneyClass> ?c . '
+                        '{?e <%sstemClass> ?sc} UNION {?e <%shomonymAmbiguous> ?a}}' % (V, V, V)) == 0) and ok
+    return ok
+
+
+def test_grammar_deterministic(args, keys, fixture_dir):
+    print('\nD2. Grammar graph deterministic generation (byte-identical)')
+    with tempfile.TemporaryDirectory() as td:
+        cmd = [sys.executable, os.path.join(HERE, 'export_lod.py'), 'grammar',
+               '--keys', ','.join(keys), '--generated-at', args.generated_at,
+               '--cards', args.cards, '--out-dir', td]
+        subprocess.run(cmd, check=True, capture_output=True)
+        with open(os.path.join(td, 'grammar.ttl'), 'rb') as a, \
+             open(os.path.join(fixture_dir, 'grammar.ttl'), 'rb') as b:
+            same = a.read() == b.read()
+    return check('grammar.ttl regenerates byte-identical', same)
+
+
+def test_grammar_source_coverage(args, keys, fixture_dir):
+    print('\nD3. Grammar source coverage (every grammar_for/nominal_grammar_for fact survives)')
+    sys.path.insert(0, HERE)
+    import export_lod as X
+    import whitney_grammar as WG
+    import nominal_grammar as NG
+    keyset = set(keys)
+    exp_sections = exp_irregularities = exp_zaliznyak = 0
+    done = set()
+    for card in X.iter_jsonl(args.cards):
+        key1 = card.get('key1')
+        if key1 not in keyset or key1 in done:
+            continue
+        done.add(key1)
+        wg_recs = WG.grammar_for(key1)
+        if len(wg_recs) == 1:
+            rec = wg_recs[0]
+            exp_sections += len(rec.get('section_refs') or {})
+            exp_irregularities += len(rec.get('irregularities') or [])
+        elif len(wg_recs) == 0:
+            senses = list(X.de_card_senses(card))
+            lex = X._aggregate_lex(senses)
+            ng = NG.nominal_grammar_for(key1, lex, accented=card.get('key2'))
+            for k in ('declension_sections', 'paradigm_section', 'compound_sections', 'derivation_sections'):
+                if ng.get(k):
+                    exp_sections += 1
+            exp_irregularities += len(ng.get('irregularities') or [])
+            exp_zaliznyak += 1
+        # >1 records: homonym-ambiguous -- no sections/irregularities/zaliznyak emitted
+    g = Graph(); g.parse(os.path.join(fixture_dir, 'grammar.ttl'), format='turtle')
+    ok = True
+    got_sections = count(g, 'SELECT (COUNT(?s) AS ?n){?s a <%sGrammarSection>}' % V)
+    ok = check('GrammarSection resource count matches source', got_sections == exp_sections,
+               'graph=%d source=%d' % (got_sections, exp_sections)) and ok
+    got_irr = count(g, 'SELECT (COUNT(*) AS ?n){?e <%sirregularity> ?i}' % V)
+    ok = check('irregularity triple count matches source', got_irr == exp_irregularities,
+               'graph=%d source=%d' % (got_irr, exp_irregularities)) and ok
+    got_zal = count(g, 'SELECT (COUNT(?e) AS ?n){?e <%szaliznyakIndex> ?z}' % V)
+    ok = check('zaliznyakIndex-carrying entity count matches source', got_zal == exp_zaliznyak,
+               'graph=%d source=%d' % (got_zal, exp_zaliznyak)) and ok
+    return ok
+
+
 def test_shacl(fixture_dir, shapes_path):
     print('\nSHACL conformance (optional -- needs pyshacl)')
     try:
@@ -301,6 +399,7 @@ def main():
     ap.add_argument('--fixture', default=os.path.join(ROOT, 'release', 'fixture'))
     ap.add_argument('--query', default=os.path.join(ROOT, 'release', 'query', 'sense_citation_dcsfreq.rq'))
     ap.add_argument('--de-query', default=os.path.join(ROOT, 'release', 'query', 'de_sense_citation_dcsfreq.rq'))
+    ap.add_argument('--grammar-query', default=os.path.join(ROOT, 'release', 'query', 'grammar_lemma_dcsfreq.rq'))
     ap.add_argument('--shapes', default=os.path.join(ROOT, 'release', 'shapes.ttl'))
     ap.add_argument('--cards', default=os.path.join(HERE, 'assembled_cards.jsonl'))
     ap.add_argument('--store', default=os.path.join(HERE, 'pwg_ru_translated.jsonl'))
@@ -324,12 +423,19 @@ def main():
     if de_present:
         test_de_enrichment(args.fixture, args.de_query)
 
+    grammar_present = os.path.exists(os.path.join(args.fixture, 'grammar.ttl'))
+    if grammar_present:
+        test_grammar_layer(args.fixture, args.grammar_query)
+
     if os.path.exists(args.cards) and os.path.exists(args.store):
         test_source_coverage(g, args, keys)
         test_deterministic(args, keys, args.fixture)
         if de_present:
             test_de_source_coverage(args, keys, args.fixture)
             test_de_deterministic(args, keys, args.fixture)
+        if grammar_present:
+            test_grammar_source_coverage(args, keys, args.fixture)
+            test_grammar_deterministic(args, keys, args.fixture)
     else:
         print('\n[skip] B1+B3: source jsonl not reachable (gitignored) -- '
               'fixture-only checks ran. Point --cards/--store at the repo src to enable.')
