@@ -1,6 +1,6 @@
 ## PWG++ — gluing the derivable research layers onto the German original (H772)
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 13-07-2026_
 
 **The question this answers.** Which research layers are *cheap and derivable* in
 parallel with the Russian translation, and can they be attached not only to the
@@ -81,15 +81,22 @@ entry is language-tagged and lemma-anchored; RU and DE entries provably sit on t
 same lemma; German sense count matches source; and the German graph regenerates
 byte-identical. The RU + DCS graphs remain byte-identical (existing B1 unchanged).
 
-### Verified (fixture, Opus 4.8 `claude-opus-4-8`, 12-07-2026)
+### Verified (fixture, Opus 4.8 `claude-opus-4-8`, 12-07-2026; corrected 13-07-2026 — see below)
 
 | Check | Result |
 |---|---|
-| German entries / senses (4 fixture headwords, homographs split) | 12 entries / 34 senses |
+| German entries / senses (4 fixture headwords, homographs split) | 12 entries / 47 senses |
 | Three-way join (DE entry × citation × DCS freq on shared lemma) | 25 rows, 4/4 headwords |
 | Lemmas carrying RU + DE sibling entries | 4/4 |
-| German sense count vs source | 34 = 34 |
-| Robustness (first 2000 source cards) | 1999 entries / 3146 senses, valid Turtle (109,887 triples) |
+| German sense count vs source | 47 = 47 |
+| Robustness (first 2000 source cards) | pending re-verification post-fix; the original 1999/3146 figure predates the H879 sense-splitter fix below and should not be relied on |
+
+**Corrected 13-07-2026 (H879, Sonnet 5 `claude-sonnet-5`).** The `34` figure above was a
+fixture-drift red herring, not a data change: `microstructure.py`'s sense-splitter never
+recognized `〉` (U+3009), PWG's own closing sub-sense-marker glyph (87,680 occurrences in
+`csl-orig/v02/pwg/pwg.txt`) — only ASCII `)`. Fixed; the correct 4-key count is **47**, and
+a 2500-card audit shows senses-per-card rising from a suspiciously flat 1.0 to 1.5 org-wide
+with zero new anomalies. Full writeup: [`FINDINGS.md` §447](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense).
 
 ### Backlog
 

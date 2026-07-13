@@ -36,7 +36,11 @@ PCT = re.compile(r'\{%(.*?)%\}', re.S)
 # protect full citation/italic-Sanskrit spans too — a sense marker must never be
 # found inside <ls>…</ls> (e.g. 'Lebensb. 233 (3).' is not a sense '3)').
 PROT = re.compile(r'<ls\b[^>]*>.*?</ls>|<is\b[^>]*>.*?</is>|<[^>]+>|\{#.*?#\}|\{%.*?%\}', re.S)
-MARK = re.compile(r'(?<![^\s—])(\d{1,2}|[a-z])\)')   # preceded by space/—/start (NOT '(': that's citation-internal)
+MARK = re.compile(r'(?<![^\s—])(\d{1,2}|[a-z])[)〉]')   # preceded by space/—/start (NOT '(': that's citation-internal)
+# '〉' (RIGHT ANGLE BRACKET, "〉") is PWG's own closing sense-marker glyph --
+# 87,680 occurrences in v02/pwg/pwg.txt (H879), overwhelmingly "digit〉"/"letter〉"
+# (e.g. "1〉", "a〉"). ASCII ')' was the only variant ever matched here; senses
+# marked with the angle form fell through to a single un-split segment.
 
 
 def header(buf):

@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 12-07-2026_
+_Created: 26-06-2026 · Last updated: 13-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §79) whatever its section, so existing numbers never shift; when a finding is later
+(currently §448) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -86,6 +86,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🔴 [§64. PW-only headwords outnumber PWG-only ones 6-to-1 — PWG is not the sole spine of the local layer universe](#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1-pwg-is-not-the-sole-spine-of-the-local-layer-universe) — 40,338 headwords (24%) exist in PW/SCH/PWKVN with no PWG record at all; any worklist built by iterating PWG keys silently drops ~36% of the local-layer universe; NWS adds net-new content to 20.3% of headwords.
 - 🟠 [§74. The ls-graph citation matrix is degenerate for MW](#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
 - 🔴 [§77. Amarakosha and SIL semdom both bolt a formal annex onto a semantic taxonomy — and it is the same ~10% once polysemy is set aside](#77-amarakosha-and-sil-semdom-both-bolt-a-formal-annex-onto-a-semantic-taxonomy--and-it-is-the-same-10-once-polysemy-is-set-aside) — AK kāṇḍa 3 = 46.4% of synsets vs semdom top-9 = 9.4% of domains; minus nānārtha's polysemy register the form-class annexes converge (10.7% vs 9.4%); homonymy is the one annex bucket AK needed and SIL did not.
+- 🔴 [§447. PWG's own closing sense-marker glyph "〉" was never recognized by the sense-splitter — ~50% of German senses were silently merged into their first sub-sense](#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense) — `microstructure.py`'s `MARK` regex only ever matched ASCII `)`, never `〉` (87,680 occurrences in `csl-orig/v02/pwg/pwg.txt`); fixed, verified 2500-card audit 2500→3738 senses (1.0→1.5/card), zero new anomalies.
 
 **Etymology & derivation**
 
@@ -844,6 +845,47 @@ without a review pass; treat it as a shortlist.
 
 > **Source:** [`data/SEMDOM_AK_CROSSWALK_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md)
 > (H742), Fable 5 `claude-fable-5` · 2026-07-11
+
+### §447. PWG's own closing sense-marker glyph "〉" was never recognized by the sense-splitter — ~50% of German senses were silently merged into their first sub-sense
+
+🔴 **`microstructure.py`'s `MARK` regex has never, in any git-history revision, recognized
+`〉` (U+3009 RIGHT ANGLE BRACKET) as a sense-number/letter closing delimiter — only ASCII
+`)` — even though `〉` is PWG's own standard notation for closing an inline sub-sense marker
+("1〉", "a〉"), used **87,680 times** across `csl-orig/v02/pwg/pwg.txt`.** Every PWG record
+whose sub-senses are marked this way therefore fell through `split_senses()` as a single
+un-split segment.
+Evidence: `_audit_micro.py` over the first 2500 PWG records — before the fix, senses
+parsed = 2500 (exactly 1.0/card, every card capped at one sense); after adding `〉` to
+`MARK`, senses parsed = 3738 (1.5/card), zero new anomalies (`cards with no real sense` and
+`senses with no gloss+no cite` both stay 0), `<ls>` citation resolution 98.7% → 98.8%,
+`<ab>` resolution unchanged at 100%. Surfaced via H879 (a 4-key `pwg_de_lexicon.ttl`
+fixture drift: the committed fixture claimed 34 German senses at H772 merge time,
+12-07-2026; a fresh rebuild the next day yielded only 22). The true, correct count for
+those same 4 keys is **47** — `aMSa`/`aMSaka`/`rakz` match the 12-07 fixture exactly
+(14/6/5); only lemma `a` (Sanskrit's single most grammatically overloaded lexeme —
+interjection, negative prefix, augment, proper noun) jumps from the fixture's 9 to 22, all
+independently verified as genuine distinct German glosses (e.g. `haarlos` "hairless" /
+`mit wenig Haar versehen` "having little hair" / `nicht durch schönes Haar ausgezeichnet`
+"not distinguished by beautiful hair" as three separate compound-sense entries), not split
+artifacts.
+Implication: the German PWG lexicon layer (`pwg_de_lexicon.ttl`, H772/H781) under-counted
+senses by roughly a third across the entire ~120k-card corpus, not just these 4 keys.
+`scale_route.py`'s `n_senses`-based complexity-routing heuristic (the only other caller of
+`split_senses`/`sense_node`) was correspondingly under-informed and will now see generally
+higher, more accurate counts — a quality improvement, not a regression; no pinned test
+asserted the old counts. The core RU translation prompt-building path does **not** call
+`split_senses`/`sense_node` and is unaffected. How the original H772 fixture reported
+"34 = 34" as a passing live check against this pre-existing, unchanged-since-inception bug
+is **unresolved** — most likely that verification ran against a differently-generated
+`assembled_cards.jsonl` snapshot that can no longer be reconstructed — but the fix and its
+correctness stand independently of that open question (audit tool, clean before/after,
+zero anomalies, full `lod_acceptance.py` A/B/C/C5/C6/D/D2/D3 gate PASS).
+
+> **Source:** [`microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py)
+> `MARK` fix + [`_audit_micro.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_audit_micro.py)
+> before/after · [`lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py)
+> full gate PASS. — RussianTranslation (pwg_ru / PWG++ German enrichment) · H879 · Sonnet 5
+> (`claude-sonnet-5`) · 13-07-2026
 
 ## Etymology & derivation
 
