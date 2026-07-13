@@ -4,6 +4,7 @@ import os
 import sqlite3
 import sys
 import tempfile
+import types
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -107,6 +108,59 @@ def main():
     assert m.is_rate_limited({}, 'HTTP 429 Too Many Requests') is True
     assert m.is_rate_limited({}, '') is False
     print('  D-C is_rate_limited: hash-429 ignored; worker-class / real-429 detected')
+
+    # D-F (H818 acceptance): the repository probe gate. payload<5KB and a non-exact model raise
+    # before any subprocess call; a latency over the 30 s ceiling is a NO-GO (the observed
+    # 50,991 ms / 36,684 ms probes must stop the run). A healthy <=30 s rc-0 reading returns.
+    try:
+        m.live_probe('cfg', payload_bytes=100); assert False, 'payload floor not enforced'
+    except SystemExit as e:
+        assert 'floor' in str(e)
+    try:
+        m.live_probe('cfg', model='claude-haiku-4-5'); assert False, 'exact-model gate missing'
+    except SystemExit as e:
+        assert 'exact generation model' in str(e)
+    _run, _mono = m.subprocess.run, m.time.monotonic
+    try:
+        m.subprocess.run = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='{"ok":true}', stderr='')
+        over = iter([1000.0, 1031.0])            # 31,000 ms elapsed -> over the 30 s ceiling
+        m.time.monotonic = lambda: next(over)
+        try:
+            m.live_probe('cfg'); assert False, 'latency ceiling not enforced'
+        except SystemExit as e:
+            assert 'health ceiling' in str(e)
+        good = iter([1000.0, 1010.0])            # 10,000 ms -> healthy
+        m.time.monotonic = lambda: next(good)
+        assert m.live_probe('cfg') == 10000
+    finally:
+        m.subprocess.run, m.time.monotonic = _run, _mono
+    print('  D-F probe gate: <5KB/non-exact-model raise; >30s NO-GO; healthy <=30s passes')
+
+    # D-G (H818 acceptance): one active job per account, atomic in the BEGIN IMMEDIATE claim.
+    # Two claimers racing the same validated account -> only one obtains a job.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'g.sqlite')
+        m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
+        for n in range(2):
+            m.main(['--db', db, 'enqueue', '--external-id', 'g%d' % n,
+                    '--argv-json', json.dumps(['x']), '--cwd', td,
+                    '--output', os.path.join(td, 'g%d.json' % n)])
+        j1 = m.claim(db, 'acc1')
+        assert j1 is not None                                   # acc1 claims one job
+        assert m.claim(db, 'acc1') is None                      # acc1 already busy -> refused (D-G)
+        j2 = m.claim(db, 'acc2')
+        assert j2 is not None and j2['id'] != j1['id']          # acc2 (free) claims the other job
+    print('  D-G one-active-job-per-account: busy acc1 second claim refused; free acc2 claims')
+
+    # D-H (H818 acceptance): promotion telemetry. Zero-clean/needs_requeue is NOT a conflict.
+    assert m.promotion_classification({'store_delta': 2}) == 'success'
+    assert m.promotion_classification({'store_delta': 0, 'clean_count': 0}) == 'not_attempted'
+    assert m.promotion_classification({'store_delta': None, 'clean_count': 0}) == 'not_attempted'
+    assert m.promotion_classification({'store_delta': 0, 'clean_count': 3}) == 'conflict'
+    assert m.promotion_classification({'store_delta': None, 'clean_count': 1}) == 'conflict'
+    print('  D-H promotion telemetry: success / not_attempted / conflict distinguished')
+
     print('max_account_orchestrator_selftest: PASS')
 
 
