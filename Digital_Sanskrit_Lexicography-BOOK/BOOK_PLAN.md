@@ -433,6 +433,17 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   Table 1 (AP90 = 1890, AP = 1957). Every count and table carried over unchanged. **5 of 14
   chapters now in book form** (ch01, ch02, ch04, ch05, ch09).
 
+**Done 13-07-2026 (H854 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 10 converted journal→book** →
+  [chapters/ch10_citation_registers.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch10_citation_registers.md)
+  (from A08, *Two Citation Registers*, csl-atlas source). Abstract/keywords stripped,
+  P-numbers remapped (metrics → Ch. 2 §3.4/§3.5, P2 → Ch. 6), the crosswalk grounding woven
+  in (Baalbaki's *šawāhid*/*ʿuṣūr al-iḥtiǧāǧ* as a doctrinally-theorized third witness system;
+  Ferri/Gatti's Nonius *auctores* canon + Lindsay's law; Hartmann & James "source code";
+  Jackson's OED reader-slip method), and the SKD `<ls>`-last/*iti*-2nd rank inversion tied to
+  the Ch. 4/7 "zero means instrument" doctrine. Every count and table carried over unchanged.
+  **6 of 14 chapters now in book form** (ch01, ch02, ch04, ch05, ch09, ch10).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical

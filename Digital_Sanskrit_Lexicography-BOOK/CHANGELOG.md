@@ -7,6 +7,26 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H854, Ch. 10 conversion)
+
+- **Ch. 10 converted journal→book** →
+  [chapters/ch10_citation_registers.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch10_citation_registers.md),
+  the book-form version of A08 *Two Citation Registers and the Dictionary-to-Book Gap*
+  (csl-atlas source
+  [paper_citation_registers.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md)).
+  Abstract + keywords stripped, provenance headnote added (A08 stays citable at IJL),
+  companion "P-numbers" remapped (resolvability/register metrics → Ch. 2 §3.4/§3.5, P2 →
+  Ch. 6), and the crosswalk grounding woven in — **Baalbaki** (the *šawāhid* + *ʿuṣūr
+  al-iḥtiǧāǧ* epochs-of-sound-usage + Bedouin-informant screening as a doctrinally-theorized
+  third witness system), **Ferri/Gatti** (Nonius' *auctores* canon + Lindsay's law as the
+  European antecedent of the bounded citation list), **Hartmann & James** ("source code"),
+  **Jackson** (Murray's OED reader-slip method). The SKD rank inversion (`<ls>`-last vs
+  *iti*-2nd of 44) tied explicitly to the Ch. 4/7 "zero means instrument, not absence"
+  doctrine. Every count and table (1,245,644 `<ls>` citations; 59.3% locator-bearing;
+  ~507,000 bare / ~41% dictionary-to-book gap; 2,166 sources ≥10×; SKD 80,164 / VCP 15,619 /
+  KRM 12,359 *iti*) carried over unchanged. **6 of 14 chapters now in book form** (ch01,
+  ch02, ch04, ch05, ch09, ch10).
+
 ### Added — 13-07-2026 (H853, Ch. 9 conversion)
 
 - **Ch. 9 converted journal→book** →
