@@ -26,6 +26,18 @@ which was blocked at `401` authentication and never exercised generation. Here
 authentication and the exact-model probe **passed**, so the run reached the
 headless generation layer and surfaced the real Windows portability defects.
 
+## Resolution — H852 (13-07-2026): all four defects fixed + verified
+
+The four defects below were fixed in
+[H852](https://github.com/gasyoun/Uprava/blob/main/handoffs/H852-Opus_SanskritLexicography_h818-windows-headless-invocation-fix_13.07.26.md)
+and re-verified on this Windows host: **presplit canary GO** (classification
+`success`, was `process`); the 1-headword `staged-run` job returned `done`/`success`
+(worker generated via node-direct, was `[WinError 2]`); the account was **not
+falsely parked** (`quota_incidents=0`); `staged-run` finished in 562 s (was a 6-min
+busy-loop). Offline D-A/D-C unit tests were added. The Windows headless **invocation**
+baseline is now functional; the one residual non-GO in the re-run was `arvant`
+audit-rejected on **content** (the H255/H834 content-hard class), not invocation.
+
 ## What passed (gates cleared before the failure)
 
 | Gate | Result | Evidence |

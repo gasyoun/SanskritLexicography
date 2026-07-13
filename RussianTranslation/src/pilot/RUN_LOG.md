@@ -4,6 +4,16 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-13 — H852 Windows headless-invocation fixes — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8`) — ✅ 4 defects fixed + VERIFIED live; invocation baseline now GO-capable
+
+Landed the four H818-acceptance fixes and re-ran the acceptance from step 2:
+- **D-A** — `claude_argv_prefix()` resolves a Windows `.cmd`/`.ps1` shim to `[node, cli-wrapper.cjs]` (bypasses cmd.exe), used in `headless_worker.call()`, `live_probe`, `profile_status`.
+- **D-B** — `--claude-bin` threaded `staged-run → cmd_run_once → run_claimed →` the worker argv.
+- **D-C** — `is_rate_limited(worker_status, stderr)`: trust the worker's classification / raw stderr, never the stdout status JSON (which prints the `manifest_sha256`).
+- **D-D** — `staged-run` parked-account guard: halt with a clear message instead of busy-looping.
+
+Offline: all gates green incl. new D-A/D-C unit tests; LANG_PARITY `headless_execution_manifest_h818` re-verified SHARED + hash updated. **Live verification** (`output/h852_verify/`): `init` OK; **presplit canary GO** (`taru`, classification `success` — was `process`); 1-headword `staged-run` ran the full cycle — job `done`/`success` (worker generated via node-direct, was WinError 2), **account NOT parked** (`quota_incidents=0`, was a false 5 h park), staged-run finished in **562 s** (was a 6-min busy-loop). The lone non-GO was `arvant~~h0_zz_pw` **audit-rejected on content** (`needs_requeue`) — the H255/H834 content-hard class, orthogonal to the invocation fixes. Store net-unchanged by these runs (11,577; concurrent H255 drain owns the delta). Handoff: [H852](https://github.com/gasyoun/Uprava/blob/main/handoffs/H852-Opus_SanskritLexicography_h818-windows-headless-invocation-fix_13.07.26.md).
+
 ## 2026-07-13 — H818 Windows live acceptance — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8`) — 🔴 NO-GO (4 Windows defects), store UNCHANGED
 
 First Windows acceptance to get **past** the prior `401`. Ran from a worktree off
