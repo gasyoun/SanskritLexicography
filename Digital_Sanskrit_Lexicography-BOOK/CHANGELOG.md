@@ -7,6 +7,26 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H857, Ch. 8 conversion)
+
+- **Ch. 8 converted journal→book** →
+  [chapters/ch08_paninian_derivation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch08_paninian_derivation.md),
+  the book-form version of A35 *Cross-Dictionary Consistency of Pāṇinian Derivation in the
+  Cologne Lexica* (csl-orig source
+  [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)).
+  Two internal planning memos (submission-readiness, technique-adoption assessment) stripped,
+  abstract folded into the opening, provenance headnote added (A35 stays citable at IJL /
+  Lexicographica / ISCLS), the A04 microstructure companion remapped to **Ch. 7**, and the
+  crosswalk §1 grounding woven in — **Baalbaki** (*al-ištiqāq* + the *ʿAyn* ∥ Sībawayhi
+  "lexicography born as grammar's twin"), **Bowern & Evans** / Koch / Mailhammer (the
+  comparative-method / morphological-reconstruction frame), **Ferri/Pieroni** (the *caution*
+  that Latin etymologizing is associative, not rule-governed like *vyutpatti*), **Partridge**
+  (the Skeat–Weekley cognate-grouping-vs-cross-referencing design fork). Every count and table
+  (68,510 derivational statements over 10 dicts; affix agreement 91.7–100%; kāraka 89–100%;
+  WIL 50.1% canonical, WIL↔SKD 22.9%→66.7% filtered; 30/48 same-surface, 4/48 genuinely
+  different; MW↔PWG root 64.2%) carried over unchanged. **7 of 14 chapters now in book form**
+  (ch01, ch02, ch04, ch05, ch08, ch09, ch10).
+
 ### Added — 13-07-2026 (H854, Ch. 10 conversion)
 
 - **Ch. 10 converted journal→book** →
