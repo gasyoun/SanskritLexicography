@@ -10,6 +10,49 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### H781 — grammar layer (Whitney root / nominal) as its own LOD graph on the shared lemma spine
+- New `grammar` mode in
+  [`src/export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py)
+  emits the **third** derivable layer onto the shared `lemma/<key1>` spine (after
+  `dcs-freq` and H772's `de-lexicon`): one grammar block per `key1` into a
+  **separate** graph (`grammar.ttl`). Sources reused, not recomputed —
+  [`whitney_grammar.grammar_for()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/whitney_grammar.py)
+  for verb roots (`class`, `ppp`, `section_refs`, `irregularities`) and
+  [`nominal_grammar.nominal_grammar_for()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nominal_grammar.py)
+  for non-root headwords (`stem_class`, declension/paradigm/compound/derivation
+  §§, `zaliznyak_index`), with a single aggregated `<lex>` tag per non-root card
+  (dedupe across all PWG senses, then the same concrete-noun-gender priority pick
+  `enrich_portrait_nominal_grammar.py` already uses). Whitney §§ land as
+  first-class `pwglex:GrammarSection` resources (mirrors the `pwglex:Citation`
+  pattern); gender maps to `lexinfo:gender`/`lexinfo:masculine` etc. where clean;
+  gaṇa class doubles as `lexinfo:conjugationClass`. **Homonym-safety guardrail
+  (§5 of the handoff):** a key1 with >1 Whitney homonym record gets ONLY a
+  `pwglex:homonymAmbiguous true` marker — never a guessed class/ppp/irregularity
+  from the wrong homonym (does not occur in the 4-key fixture; `rakz` is
+  single-homonym, verified `whitney_no 613, class I, ppp rakṣitá`). RU/DCS/DE
+  emitters and their fixtures untouched — `pwg_ru_lod.ttl`/`dcs_freq.ttl` regen
+  byte-identical, verified against a full ~120k `assemble.py build`.
+- [`src/lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py)
+  gains block **D** (grammar × lemma's RU/DE entry × DCS-freq federated join,
+  covering BOTH the root and nominal branches via `UNION`; `stemClass` ⇒
+  `zaliznyakIndex` and `GrammarSection`-has-a-label structural invariants;
+  byte-stable regen; source-coverage recompute against
+  `whitney_grammar.grammar_for`/`nominal_grammar.nominal_grammar_for`) + query
+  [`release/query/grammar_lemma_dcsfreq.rq`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/query/grammar_lemma_dcsfreq.rq).
+  Block D **PASSED** on every attempt (3/3 full-gate runs). **Pre-existing,
+  out-of-scope gap surfaced, NOT introduced by this change:** blocks C5/C6
+  (H772 German-enrichment byte-regen/source-coverage) fail against a freshly
+  rebuilt `assembled_cards.jsonl` — confirmed via a stash test running
+  *pristine* origin/master `export_lod.py`/`lod_acceptance.py` (no H781 code)
+  against the same full-corpus rebuild, same two failures. The `pwg_de_lexicon.ttl`
+  fixture (H772, committed 2026-07-12) no longer matches a from-source regen;
+  root cause not yet isolated (`csl-orig/pwg.txt` unchanged since 2026-06-27,
+  `pwg_mask.py`/`microstructure.py`/`assemble.py` unchanged in git history — data
+  or environment drift, needs its own follow-up). Per this handoff's explicit
+  guardrail ("do NOT alter the lexicon/dcs-freq/de-lexicon emitters"), left
+  untouched here.
+  ([H781](https://github.com/gasyoun/Uprava/blob/main/handoffs/H781-Sonnet_SanskritLexicography_grammar_layer_lod_graph_12.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 - **H858 no-PWG sense-fidelity: fixed a STRANDED-ANCHOR false positive; reclaimed 7
   cards, zero regeneration.** `_pilot_collect.render()` rendered the model's free-text
   `notes` verbatim, so a `notes` mention of a masking token (*"Masked span {T1} is a

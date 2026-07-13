@@ -690,9 +690,193 @@ def export_de_lexicon(args):
     print('PWG++ German enrichment graph -> %s' % out)
 
 
+# --------------------------------------------------------------------------- #
+# Grammar layer graph (Whitney root / nominal) -- H781
+# --------------------------------------------------------------------------- #
+# The THIRD derivable layer glued onto the shared lemma/<key1> spine (after
+# dcs-freq and de-lexicon): the Whitney root grammar (class/ppp/§§/exceptions,
+# whitney_grammar.py) or, for non-root headwords, the nominal-grammar block
+# (stem class/§§/paradigm/compounds/Zaliznyak index, nominal_grammar.py). One
+# block per key1 -- NOT per homonym entry, since both source functions are
+# already keyed purely on the SLP1 string. Emitted as its own SEPARATE graph
+# (grammar.ttl) so lexicon/dcs-freq/de-lexicon stay byte-identical.
+GRAMMAR_GRADE = ('grammar-derived',
+                  'derived from the WhitneyRoots crosswalk + nominal_grammar.py '
+                  'concordance (structured data, not a translation)', True)
+
+# Mirrors pilot/enrich_portrait_nominal_grammar.py's _GENDER_PRIORITY -- prefer a
+# concrete noun gender over an adj./adv. use when a card's senses carry several
+# <lex> tags, so the stem-class/Zaliznyak-index join reflects the substantive.
+_GENDER_PRIORITY = ('m.', 'f.', 'n.', 'm.n.', 'm.f.', 'f.n.', 'm.f.n.')
+
+_LEXINFO_GENDER = {'m.': 'lexinfo:masculine', 'f.': 'lexinfo:feminine', 'n.': 'lexinfo:neuter'}
+
+
+def _aggregate_lex(senses):
+    """One <lex> tag for a non-root card: dedupe grammar tags across ALL its
+    PWG senses (first-seen order, via de_card_senses' deterministic parse),
+    then apply the concrete-noun-gender priority pick."""
+    tags, seen = [], set()
+    for s in senses:
+        for t in (s.get('grammar') or []):
+            if t not in seen:
+                seen.add(t)
+                tags.append(t)
+    for g in _GENDER_PRIORITY:
+        if g in tags:
+            return g
+    return tags[0] if tags else ''
+
+
+def emit_grammar_vocab(f, R, args):
+    f.write('# --- Grammar layer (Whitney root / nominal concordance) -------\n')
+    f.write('%s a lime:Lexicon ;\n' % R('lexicon/pwg-grammar'))
+    f.write('  rdfs:label "PWG grammar layer (Whitney root + nominal concordance)"@en ;\n')
+    f.write('  dct:source <https://github.com/gasyoun/WhitneyRoots> ;\n')
+    f.write('  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;\n')
+    f.write('  prov:wasGeneratedBy %s ;\n' % R('prov/export-lod-grammar'))
+    f.write('  dct:created "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    f.write('%s a prov:Activity ;\n' % R('prov/export-lod-grammar'))
+    f.write('  rdfs:label "Grammar layer export (export_lod.py grammar, H781)" ;\n')
+    f.write('  prov:endedAtTime "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    slug, label, citable = GRAMMAR_GRADE
+    f.write('gr:%s a skos:Concept ; skos:inScheme %s ; skos:prefLabel "%s"@en ; pwglex:citable %s .\n\n'
+            % (slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
+
+
+def _emit_lemma_node(f, R, card, lemma_seen):
+    """Idempotent shared lemma node -- byte-identical to emit_card's/emit_de_card's
+    block, reused verbatim so the lemma serialization never diverges."""
+    key1 = card.get('key1')
+    lemma_iri = R('lemma/%s' % iri_local(key1))
+    if key1 not in lemma_seen:
+        lemma_seen.add(key1)
+        f.write('%s a ontolex:Form, lila:Lemma ;\n' % lemma_iri)
+        f.write('  ontolex:writtenRep %s ;\n' % lit(key1, lang='sa-Latn-x-slp1'))
+        if card.get('iast'):
+            f.write('  ontolex:writtenRep %s ;\n' % lit(card.get('iast'), lang='sa-Latn'))
+        f.write('  pwglex:slp1 %s ;\n' % lit(key1))
+        f.write('  rdfs:label %s .\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+    return lemma_iri
+
+
+def emit_grammar_card(f, R, card, lemma_seen, seen_keys, args):
+    """Emit the grammar block for one lemma (key1). Three cases:
+
+    1. exactly one Whitney root record  -> the ROOT branch (class/ppp/§§/
+       irregularities), an unambiguous PWG-homonym<->Whitney-homonym join.
+    2. >1 Whitney root record (as/i/vid-style homonym-keyed roots)          -> a
+       ``pwglex:homonymAmbiguous`` marker ONLY -- never guess which homonym's
+       class/ppp to attach (GRAMMAR_LAYER.md's homonym-alignment guardrail).
+    3. no Whitney root record          -> the NOMINAL branch (stem class/§§/
+       paradigm/compounds/Zaliznyak index), sourced via nominal_grammar_for()
+       with a single aggregated <lex> tag (see _aggregate_lex).
+
+    Grammar facts are a function of key1 alone, so this fires ONCE per key1
+    regardless of how many homonym sub-cards share it (``seen_keys``) --
+    distinct from ``lemma_seen``, which only guards the shared lemma NODE.
+    """
+    import whitney_grammar as WG
+    import nominal_grammar as NG
+
+    key1 = card.get('key1')
+    if key1 in seen_keys:
+        return 0
+    seen_keys.add(key1)
+
+    lemma_iri = _emit_lemma_node(f, R, card, lemma_seen)
+    wg_recs = WG.grammar_for(key1)
+    sections = []   # (sec_iri, label, category, range) -> pwglex:GrammarSection resources
+
+    if len(wg_recs) == 1:
+        rec = wg_recs[0]
+        for cat, rng in sorted((rec.get('section_refs') or {}).items()):
+            sec_iri = R('section/%s/%s' % (iri_local(key1), iri_local(cat)))
+            sections.append((sec_iri, '%s §%s' % (cat, rng), cat, rng))
+        lines = ['  pwglex:grammarBranch "root" ;']
+        if rec.get('class'):
+            lines.append('  pwglex:whitneyClass %s ;' % lit(rec.get('class')))
+            lines.append('  lexinfo:conjugationClass %s ;' % lit(rec.get('class')))
+        if rec.get('ppp'):
+            lines.append('  pwglex:ppp %s ;' % lit(rec.get('ppp')))
+        if sections:
+            lines.append('  pwglex:sectionRef %s ;' % ', '.join(s[0] for s in sections))
+        for irr in rec.get('irregularities') or []:
+            lines.append('  pwglex:irregularity %s ;' % lit(irr))
+        lines.append('  pwglex:evidenceGrade gr:%s .' % GRAMMAR_GRADE[0])
+        f.write('%s\n' % lemma_iri)
+        f.write('\n'.join(lines) + '\n\n')
+    elif len(wg_recs) > 1:
+        # Homonym-keyed root (as/i/vid...): the PWG-homonym<->Whitney-homonym
+        # alignment is unresolved -- flag, don't guess (GRAMMAR_LAYER.md).
+        f.write('%s pwglex:grammarBranch "root-ambiguous" ;\n' % lemma_iri)
+        f.write('  pwglex:homonymAmbiguous true ;\n')
+        f.write('  rdfs:comment %s ;\n' % lit(
+            '%d Whitney homonyms for this SLP1 root -- PWG<->Whitney homonym '
+            'alignment not resolved, no class/ppp attached' % len(wg_recs)))
+        f.write('  pwglex:evidenceGrade gr:%s .\n\n' % GRAMMAR_GRADE[0])
+    else:
+        senses = list(de_card_senses(card))
+        lex = _aggregate_lex(senses)
+        ng = NG.nominal_grammar_for(key1, lex, accented=card.get('key2'))
+        if ng.get('declension_sections'):
+            sections.append((R('section/%s/declension' % iri_local(key1)),
+                             'declension %s' % ng['declension_sections'], 'declension', ng['declension_sections']))
+        if ng.get('paradigm_section'):
+            sections.append((R('section/%s/paradigm' % iri_local(key1)),
+                             'paradigm %s' % ng['paradigm_section'], 'paradigm', ng['paradigm_section']))
+        if ng.get('compound_sections'):
+            sections.append((R('section/%s/compound' % iri_local(key1)),
+                             'compound %s' % ng['compound_sections'], 'compound', ng['compound_sections']))
+        if ng.get('derivation_sections'):
+            sections.append((R('section/%s/derivation' % iri_local(key1)),
+                             'derivation %s' % ng['derivation_sections'], 'derivation', ng['derivation_sections']))
+        lines = ['  pwglex:grammarBranch "nominal" ;']
+        lines.append('  pwglex:stemClass %s ;' % lit(ng['stem_class']))
+        gender_iri = _LEXINFO_GENDER.get(ng.get('gender'))
+        if gender_iri:
+            lines.append('  lexinfo:gender %s ;' % gender_iri)
+        for member in ng.get('compound_members') or []:
+            lines.append('  pwglex:compoundMember %s ;' % lit(member))
+        for irr in ng.get('irregularities') or []:
+            lines.append('  pwglex:irregularity %s ;' % lit(irr))
+        lines.append('  pwglex:zaliznyakIndex %s ;' % lit(ng['zaliznyak_index']))
+        if sections:
+            lines.append('  pwglex:sectionRef %s ;' % ', '.join(s[0] for s in sections))
+        lines.append('  pwglex:evidenceGrade gr:%s .' % GRAMMAR_GRADE[0])
+        f.write('%s\n' % lemma_iri)
+        f.write('\n'.join(lines) + '\n\n')
+
+    for sec_iri, label, cat, rng in sections:
+        f.write('%s a pwglex:GrammarSection ;\n' % sec_iri)
+        f.write('  rdfs:label %s ;\n' % lit(label))
+        f.write('  pwglex:sectionCategory %s ;\n' % lit(cat))
+        f.write('  pwglex:sectionRange %s .\n' % lit(rng))
+    if sections:
+        f.write('\n')
+    return 1
+
+
+def export_grammar(args):
+    os.makedirs(args.out_dir, exist_ok=True)
+    R = IRI(args.base)
+    out = os.path.join(args.out_dir, 'grammar.ttl')
+    lemma_seen, seen_keys = set(), set()
+    n = 0
+    with open(out, 'w', encoding='utf-8', newline='') as f:
+        f.write('# Grammar layer graph -- export_lod.py grammar (H781)\n')
+        f.write('# base IRI: %s   generated: %s\n\n' % (args.base, args.generated_at))
+        f.write(prefixes(args.base))
+        emit_grammar_vocab(f, R, args)
+        for card in iter_cards(args):
+            n += emit_grammar_card(f, R, card, lemma_seen, seen_keys, args)
+    sys.stderr.write('grammar graph: %d lemmas -> %s\n' % (n, out))
+    print('Grammar layer LOD graph -> %s' % out)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('mode', choices=['lexicon', 'dcs-freq', 'de-lexicon', 'all'])
+    ap.add_argument('mode', choices=['lexicon', 'dcs-freq', 'de-lexicon', 'grammar', 'all'])
     ap.add_argument('--cards', default=DEFAULT_CARDS)
     ap.add_argument('--store', default=DEFAULT_STORE)
     ap.add_argument('--rel', default=DEFAULT_REL)
@@ -726,6 +910,8 @@ def main():
         export_dcs_freq(args)
     if args.mode in ('de-lexicon', 'all'):
         export_de_lexicon(args)
+    if args.mode in ('grammar', 'all'):
+        export_grammar(args)
 
 
 if __name__ == '__main__':
