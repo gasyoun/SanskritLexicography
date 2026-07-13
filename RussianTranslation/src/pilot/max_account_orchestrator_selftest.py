@@ -174,17 +174,27 @@ def main():
         m._probe_call = _pc
     print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 30000 pass / 30001 NO-GO; warm-up fail STOPs before measured')
 
-    # D-K output_bytes is measured from ENCODED UTF-8 bytes, not character count.
+    # D-K _probe_call output check: the REAL `claude -p --output-format json` output is the CLI
+    # wrapper ({"type":"result","result":...}), NOT a bare {"ok":true} — so the check must accept a
+    # non-truncated, valid-JSON wrapper without demanding a specific top-level field. output_bytes
+    # is measured from ENCODED UTF-8 bytes, not character count.
     assert len('да') == 2 and len('да'.encode('utf-8')) == 4
     _rtk = m.run_tree_kill
     try:
-        body = '{"ok":true,"n":"да"}'
-        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout=body, stderr='')
+        wrapper = '{"type":"result","subtype":"success","result":"{\\"ok\\":true}","usage":{"n":"да"}}'
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout=wrapper, stderr='')
         lat, cls, obytes = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
-        assert cls == 'success' and obytes == len(body.encode('utf-8')) and obytes > len(body)
+        assert cls == 'success', 'real CLI wrapper (no top-level ok) must be success, got %s' % cls
+        assert obytes == len(wrapper.encode('utf-8')) and obytes > len(wrapper)   # encoded bytes
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='{}', stderr='')
+        assert m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1] == 'malformed'   # too small (output-size)
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=0, stdout='<html>error page, not json at all</html>', stderr='')
+        assert m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1] == 'malformed'   # not JSON
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(returncode=1, stdout='', stderr='401 Invalid authentication credentials')
+        assert m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1] == 'auth'
     finally:
         m.run_tree_kill = _rtk
-    print('  D-K output_bytes: encoded UTF-8 bytes, not character count')
+    print('  D-K _probe_call: real CLI wrapper -> success; too-small/non-JSON -> malformed; 401 -> auth; encoded output_bytes')
 
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.

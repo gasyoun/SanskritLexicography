@@ -454,6 +454,7 @@ def cmd_status(args):
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+PROBE_MIN_OUTPUT_BYTES = 20              # D-K: output-size floor — a real, non-truncated response
 
 
 def _probe_call(config_dir, claude, payload_bytes, model):
@@ -483,10 +484,14 @@ def _probe_call(config_dir, claude, payload_bytes, model):
         if RATE_LIMIT.search(proc.stderr or ''):
             return latency_ms, 'rate_limit', output_bytes
         return latency_ms, 'process', output_bytes
-    try:                                 # output-size / validity check: a real {"ok":...} object
-        data = json.loads(out)
-        if not isinstance(data, dict) or 'ok' not in data:
-            return latency_ms, 'malformed', output_bytes
+    # output-size + validity check: `claude -p --output-format json` returns the CLI *wrapper*
+    # JSON ({"type":"result","result":...,"usage":...}), NOT a bare {"ok":true}. So require a
+    # real, non-truncated response (>= floor) that parses as JSON — do NOT demand a specific
+    # top-level field (that wrongly flagged every real wrapper as malformed).
+    if output_bytes < PROBE_MIN_OUTPUT_BYTES:
+        return latency_ms, 'malformed', output_bytes
+    try:
+        json.loads(out)
     except (ValueError, TypeError):
         return latency_ms, 'malformed', output_bytes
     return latency_ms, 'success', output_bytes

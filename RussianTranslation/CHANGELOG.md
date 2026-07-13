@@ -26,6 +26,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   bytes, not character count. Both probe calls use the shared D-J tree-kill runner (now
   extracted to `proc_tree.py`, used by both `headless_worker` and `max_account_orchestrator`),
   so a hanging probe kills its whole parent→child→grandchild tree before generation begins.
+    **Fix (same day):** the measured/warm-up output check accepted the real `claude -p --output-format json` CLI *wrapper* (`{"type":"result","result":…}`) via an output-size + valid-JSON test, instead of wrongly demanding a bare top-level `{"ok":true}` (which flagged every real response `malformed`); a regression test now exercises `_probe_call` against a realistic wrapper.
   Regression tests: exactly one warm-up + one measurement, 30000 passes / 30001 NO-GO,
   warm-up failure STOPs before the measured call, encoded output_bytes, census
   distinguishability + quota, and a real 3-level hanging-probe tree-kill. (13-07-2026, Opus
