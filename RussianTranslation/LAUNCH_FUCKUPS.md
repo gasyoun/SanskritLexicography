@@ -464,6 +464,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "residual_status": "open-paused",
   "residual_risk": "31 w07 nulls + w06's remaining headwords stay in the 232-lemma queue (planner re-offers them; store now persistent post-H805, so no re-loss). No data lost this window -- 5 clean sub-cards promoted (canonical store 11,505->11,517; H805 fix validated: a worktree promote landed in the MAIN store). translation_memory.py still needs canonical_store() wiring (TM rebuild deferred, regenerable). Lane blocked at scale until the low-width requeue mode lands or the API recovers.",
   "passes": 1
+ },
+ {
+  "id": "H818_ACCEPTANCE_LATENCY_BLOCKED_2026-07-13",
+  "handoff": "H818",
+  "date": "2026-07-13",
+  "title": "H818 Windows acceptance re-run: 7 defects D-E..D-K fixed+merged; final run5 measured >=5KB probe 40925ms > 30000ms ceiling -> honest NO-GO, arvant never ran (A-vs-B unresolved).",
+  "lane": "no-PWG supplement lane (RU), 1-headword canary (arvant~~h0_zz_pw), exact model claude-sonnet-5, Windows",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8) Claude Code driving max_account_orchestrator staged-run (headless, single Max account, --timeout 480); D-K two-phase probe (warm-up excluded + measured gated <=30000ms).",
+  "expected": {
+   "agents": "1 headword (arvant), ~1-5 calls once the probe passes",
+   "tokens": "not recorded"
+  },
+  "actual": {
+   "agents": "0 -- no job claimed; the measured probe NO-GO'd before import/claim",
+   "tokens": "two probe calls only (warm-up + measured)"
+  },
+  "symptoms": "run5 (run_id h818-run5-arvant): warm-up 24773ms success, measured 40925ms success but > 30000ms -> honest NO-GO (no re-roll). auth OK, no job imported/claimed, arvant never generated, store/TM unchanged (11,579). Earlier durgA +2 clean promotion demonstrated the full pipeline on a healthy profile.",
+  "classification": "concurrency/api",
+  "root_cause": "Genuine profile API latency degradation over the session (~9s early -> ~25-41s at run5) pushed the measured exact-model probe past the 30s health ceiling. 'Transient throttling' is an inference consistent with the observations (accumulated calls this session), NOT a proven cause. The D-K two-phase probe correctly refused to run generation on a slow profile.",
+  "guardrail": "Do NOT weaken the 30s threshold or re-roll the probe until convenient. Next live session (after genuine quota/latency recovery): exactly ONE fresh staged-run via the integrated warm-up+measured probe (no manual pre-probes); arvant retry only if measured <=30s; if still >30s open a separate evidence-based latency-policy investigation. See H818_WINDOWS_LIVE_ACCEPTANCE_RERUN_2026-07-13.md + handoff H895.",
+  "residual_status": "open-paused",
+  "residual_risk": "arvant's Windows process-tree hang is fixed (D-J), but a content-specific non-termination (B) is UNTESTED (arvant never ran) -- A-vs-B unresolved. H818 stays OPEN; Linux + H841/H842/H843 remain NO-GO. All 7 code fixes (D-E..D-K) merged + validated (offline gates 17/17); the block is infrastructure latency, not code.",
+  "passes": 1
  }
 ]
 ```
