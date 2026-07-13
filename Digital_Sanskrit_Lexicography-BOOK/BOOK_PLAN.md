@@ -509,6 +509,23 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   now in book form** (all except the three special cases: Ch. 3 / Ch. 11 prose-thin, Ch. 6
   interleave).
 
+**Done 13-07-2026 (H866 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 6 written as a genuine MERGE of A02 + A33** (not a conversion) →
+  [chapters/ch06_senses_inheritance_and_order.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch06_senses_inheritance_and_order.md).
+  Per the §3 merge ruling: **Part I — Inheritance** (A02 *Condensation, Not Inflation*: H1
+  granularity is a family trait not time-inflation r=0.036; H2 citation co-varies with survival
+  but not independently 0.768 vs 0.661 z=1.80 p=0.07; H3 descendants copy/condense never expand;
+  the indigenous *iti* sense/citation fusion) and **Part II — Order** (A33 *Genetic, Not
+  Historical*: PWG 73.5% lead-sense-oldest / τ=0.375, MW 69.4%; the śāstra pocket; Apte/Kochergina
+  salience-ordered, Vedic density 2.3%/0% vs 23–25%; the digital-re-edition consequence). Both
+  halves **reframed against Apresjan** (regular polysemy as the propagation mechanism; the
+  synchronic-derivational/genetic ordering principle as the theory the 73.5% result *tests*), per
+  the crosswalk mandate — plus Lew (sense individuation before senses become graph nodes),
+  Considine (weakly/strongly historical), Walter (frequency ordering), Jackson §14.5 + Kipfer
+  (sense-order indeterminacy), Partridge. Both source articles' counts and tables carried over
+  unchanged. **12 of 14 chapters now in book form** (all except the two prose-thin data chapters
+  Ch. 3 / Ch. 11).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical

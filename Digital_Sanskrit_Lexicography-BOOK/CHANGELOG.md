@@ -7,6 +7,29 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H866, Ch. 6 merge)
+
+- **Ch. 6 written as a genuine MERGE of two articles** (A02 + A33), not a conversion →
+  [chapters/ch06_senses_inheritance_and_order.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch06_senses_inheritance_and_order.md).
+  Per the [BOOK_PLAN §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
+  merge ruling: **Part I — Inheritance** = A02 *Condensation, Not Inflation* (csl-atlas
+  [paper_sense_inheritance.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md));
+  **Part II — Order** = A33 *Genetic, Not Historical* (local
+  [papers/A33_sense_ordering_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md)).
+  Both halves reframed against **Apresjan** (regular polysemy as the sense-propagation mechanism;
+  the synchronic-derivational/genetic ordering principle as the theory the 73.5% lead-sense-oldest
+  result *tests* — the crosswalk mandate), plus **Lew** (sense individuation before senses become
+  graph nodes — Hanks/Sinclair), **Considine** (weakly/strongly historical dictionaries),
+  **Walter** (frequency ordering / corpus-unattested senses), **Jackson §14.5 + Kipfer**
+  (sense-order indeterminacy), **Partridge** (intra-entry order as editorial choice). Provenance
+  headnote flags the dual sourcing; both articles stay independently citable. Every count and
+  table from both (H1 r=0.036 flat, family means 1.00–2.42; H2 0.762 vs 0.705 overall / 0.768 vs
+  0.661 within-edge z=1.80 p=0.07, 82/84 cited on one edge; H3 Wilson→Śabda-Sāgara 0.906 copy /
+  Wilson→Yates 9→5.7 / Apte 10.8→7.8; SKD 53.3% / VCP 77.6% fusion; PWG 73.5% lead-oldest τ=0.375,
+  MW 69.4%; Vedic density 23.4/24.8/2.3/0.0%; 26.5% lead-sense change on re-sort) carried over
+  unchanged. **12 of 14 chapters now in book form** (all but the two prose-thin data chapters
+  Ch. 3 / Ch. 11).
+
 ### Added — 13-07-2026 (H865, Ch. 7 conversion)
 
 - **Ch. 7 converted journal→book** →
