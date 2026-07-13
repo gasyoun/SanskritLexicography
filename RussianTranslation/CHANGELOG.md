@@ -14,6 +14,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   deterministic 5×20 preparation, credential-safe append-only run events and bug
   census, strict headword/subcard and positive store-delta GO gates, a non-promoting
   live presplit canary, and scheduler/promotion fault injection.
+- **H818 Windows live acceptance (13-07-2026): NO-GO — auth resolved, headless
+  generation non-functional on Windows.** `init` + ≥5 KB `live_probe` passed, all
+  offline gates green, store present (11,562), but the presplit canary and step-4
+  window failed before any promotion (store unchanged). Four defects: `.cmd`-shim
+  cmd.exe corruption of the `--json-schema` argv (fix = `node cli-wrapper.cjs`
+  direct, verified); `run_claimed` not forwarding `--claude-bin`; `RATE_LIMIT`
+  regex matching the `manifest_sha256`; `staged-run` parked-account livelock.
+  Report: [H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md](H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md);
+  fixes: [H852](https://github.com/gasyoun/Uprava/blob/main/handoffs/H852-Opus_SanskritLexicography_h818-windows-headless-invocation-fix_13.07.26.md).
 
 ### H834 — nominal key-echo tolerance also accepts the SLP1 headword + `~~<layer>` suffix
 - [`gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py): the H220 nominal re-key tolerance now

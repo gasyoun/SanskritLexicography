@@ -14,6 +14,24 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.5] - 2026-07-13
+
+### Added
+- **H818 Windows live acceptance — NO-GO on four Windows/robustness defects
+  (auth now resolved).** First live Windows run to get past the prior `401`:
+  `init` (auth + minimal `claude -p --model claude-sonnet-5`) and the ≥5 KB
+  `live_probe` passed, all offline gates green, canonical store present (11,562
+  rows), 149 net-additive unpromoted headwords. Headless generation is
+  non-functional on Windows — presplit canary and the first promoting window
+  failed before any promotion; store unchanged, real Max account healthy.
+  Defects: `claude.cmd` batch-shim cmd.exe corruption of the `--json-schema`
+  argv; `run_claimed` not forwarding `--claude-bin`; `RATE_LIMIT` regex matching
+  the `manifest_sha256` hash; `staged-run` parked-account livelock. Report:
+  [`RussianTranslation/H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md);
+  fixes tracked in
+  [H852](https://github.com/gasyoun/Uprava/blob/main/handoffs/H852-Opus_SanskritLexicography_h818-windows-headless-invocation-fix_13.07.26.md).
+  H841/H842/H843 remain gated on a Windows-baseline GO.
+
 ## [1.9.4] - 2026-07-12
 
 ### Changed

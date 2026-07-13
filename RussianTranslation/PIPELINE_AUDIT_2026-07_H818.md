@@ -2,9 +2,34 @@
 
 <!-- markdownlint-disable MD013 MD036 MD060 -->
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 13-07-2026_
 
 Model: Codex / GPT-5. Audit host: Windows development checkout, not the required foreign Linux server.
+
+## Windows live acceptance — 13-07-2026 (Opus 4.8, `claude-opus-4-8`)
+
+The 401 that blocked this audit is **resolved**: with an authenticated Max profile
+present, `init` (auth status + minimal `claude -p --model claude-sonnet-5` call) and
+the ≥5 KB exact-model `live_probe` all **passed**, so a full live acceptance reached
+the headless generation layer for the first time. Verdict: **still NO-GO**, now on
+four Windows/robustness defects rather than auth. The canonical store was untouched
+(11,562 rows; zero promotions). Full report + evidence:
+[`H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/H818_WINDOWS_LIVE_ACCEPTANCE_2026-07-13.md).
+
+- **D-A** `headless_worker.call()` invokes `claude` via the npm `claude.cmd` batch
+  shim; cmd.exe corrupts the `--json-schema` argv (`<`/`>` redirection metachars;
+  8191-char ceiling for larger schemas). Presplit canary NO-GO. Fix verified: invoke
+  `node cli-wrapper.cjs` directly.
+- **D-B** `run_claimed` never forwards `--claude-bin`, so the window runner falls
+  back to bare `claude` → `[WinError 2]` on Windows (probe/canary work only because
+  they pass it explicitly).
+- **D-C** `RATE_LIMIT` regex (`429`) matches the printed `manifest_sha256` hash
+  substring → a config error was misclassified as a rate-limit and the account was
+  falsely parked 5 h (real account never rate-limited).
+- **D-D** `staged-run` livelocks (no sleep / no all-parked exit) when a job is
+  pending and all accounts are parked.
+
+Not started (gated on GO): promotion of any window, PR ready-flag, H841/H842/H843.
 
 ## Verdict
 
