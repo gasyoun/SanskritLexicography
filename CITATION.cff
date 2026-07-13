@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+type: software
+title: SanskritLexicography
+message: >
+  If you use code or tooling from this repository, cite using the metadata
+  below. For a specific derived dataset (e.g. the FAIR Release #1 stat
+  datasets), cite its own Zenodo DOI once minted — see
+  data/FAIR_RELEASE_1.md.
+license: MIT
+repository-code: https://github.com/gasyoun/SanskritLexicography
+version: 1.9.7
+date-released: "2026-07-13"
+abstract: >
+  A data and research workspace for the Sanskrit Lexicon project: exported
+  headword lists, AI-produced Russian translations of Monier-Williams and
+  the Petersburg Dictionary, research roadmaps, and the tooling that
+  supports them. Repository code: MIT. Derived statistics datasets
+  released under FAIR Release #1 (markup-tag census, headword-overlap
+  matrix): CC-BY-4.0 — see data/FAIR_RELEASE_1.md and DATA_LICENSE.md.
+authors:
+  - family-names: "Gasūns"
+    given-names: "Mārcis"
+    orcid: "https://orcid.org/0000-0003-4513-884X"
+    affiliation: "Independent scholar"
+keywords:
+  - sanskrit
+  - lexicography
+  - cdsl
+  - digital humanities
+  - russian translation
+  - statistics census
