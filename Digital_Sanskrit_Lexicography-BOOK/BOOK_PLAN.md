@@ -468,6 +468,18 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   fingerprinting). Every count and table carried over unchanged. **8 of 14 chapters now in
   book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12).
 
+**Done 13-07-2026 (H861 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 13 converted journal→book** →
+  [chapters/ch13_renou_registers.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch13_renou_registers.md)
+  (from A34, *Register, Not Just Period*, local papers source). Abstract/status stripped, the
+  A08 companion remapped to **Ch. 10**, and — the **mandatory crosswalk reframe applied** — the
+  "68.3% corpus-absent" headline recast as an explicit **DCS-corpus-coverage** statement under
+  the McEnery & Brezina corpus-absence caveat (not an absolute absence claim). Grounding woven
+  in: Ferri/Maltby (Servius' three-register system, tying back to Ch. 1), Dickey (Atticist
+  register-marking), Geyken & Lemnitzer (diasystematic labelling as current practice), Partridge
+  (register scales). Every count and table carried over unchanged. **9 of 14 chapters now in
+  book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12, ch13).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
