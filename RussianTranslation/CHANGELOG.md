@@ -10,6 +10,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H818 acceptance hardening (follow-up) — D-G real-concurrency race + D-I telemetry
+  cardinality.** Two further acceptance defects, following the D-E…D-H batch. The D-G
+  selftest was strengthened to a **real** concurrency race — two independent SQLite
+  connections opened *before* a barrier fire the claim transaction (`_claim_tx`) at the
+  same instant, repeated ×8 — proving exactly one winner + one still-pending job with no
+  `SQLITE_BUSY`; plus an explicit `connect()` busy_timeout. **D-I** fixed a
+  telemetry-cardinality bug where one model call was logged once *per key*, inflating
+  latency p50/p95 and classification counts on batches: each real call now emits one
+  call-level `model_call` event (stable `call_id` covering the retry/split path,
+  `key_count`, preserving `lease/window/attempt/account/manifest`), per-key relations go to
+  `model_call_key` events excluded from the latency/classification census, and
+  `build_census` dedups by `call_id` (crash/restart re-appends are idempotent) and surfaces
+  conflicting duplicates. Regression tests in `max_account_orchestrator_selftest.py`.
+  (13-07-2026, Opus 4.8 `claude-opus-4-8`, H818 lineage.)
 - **H818 Windows acceptance hardening — four defects (D-E…D-H) fixed + regression-tested.**
   A live Windows re-acceptance of the H852-fixed headless pipeline surfaced four defects
   beyond the D-A…D-D invocation fixes: **D-E** `translation_memory.py` hardcoded a

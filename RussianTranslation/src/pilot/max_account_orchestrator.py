@@ -79,8 +79,13 @@ def now_iso():
 
 
 def connect(path):
+    # D-G: a real busy_timeout so concurrent claimers (independent connections racing the same
+    # BEGIN IMMEDIATE write lock) WAIT for the lock instead of failing with SQLITE_BUSY / "database
+    # is locked". `timeout=` sets it at the driver level; the explicit PRAGMA documents + enforces
+    # it on the connection so the one-active-job-per-account guard is genuinely serialized.
     db = sqlite3.connect(path, timeout=30)
     db.row_factory = sqlite3.Row
+    db.execute('PRAGMA busy_timeout=30000')
     db.executescript(SCHEMA)
     existing = {row[1] for row in db.execute('PRAGMA table_info(jobs)')}
     for name, declaration in (
@@ -119,36 +124,43 @@ def parse_reset(text, now=None):
     return int(match.group(1)) if match else now + 5 * 60 * 60
 
 
+def _claim_tx(db, account, now):
+    """The atomic claim transaction on an ALREADY-OPEN connection. Split out from ``claim`` so the
+    concurrency race test can open independent connections BEFORE a barrier and fire both
+    transactions at the same instant; production ``claim`` owns its own connection."""
+    db.execute('BEGIN IMMEDIATE')
+    acc = db.execute('SELECT * FROM accounts WHERE name=?', (account,)).fetchone()
+    if not acc or not acc['validated'] or acc['parked_until'] > now:
+        db.rollback()
+        return None
+    # D-G: one active job per account. Inside this BEGIN IMMEDIATE transaction (which holds a
+    # write lock, serializing concurrent claimers), refuse the account if it already owns an
+    # in_progress job. Two independent claimers racing for the same validated account => only
+    # one obtains a job; the other sees the in_progress row (or is blocked until commit) and
+    # backs off. Enforces the "one account, strictly sequential" contract atomically.
+    if db.execute("SELECT 1 FROM jobs WHERE state='in_progress' AND assigned_acc=? LIMIT 1",
+                  (account,)).fetchone():
+        db.rollback()
+        return None
+    job = db.execute("SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts ORDER BY id LIMIT 1").fetchone()
+    if not job:
+        db.rollback()
+        return None
+    changed = db.execute(
+        "UPDATE jobs SET state='in_progress', assigned_acc=?, attempts=attempts+1, started_at=?, error=NULL WHERE id=? AND state='pending'",
+        (account, now_iso(), job['id']))
+    if changed.rowcount != 1:
+        db.rollback()
+        return None
+    db.commit()
+    return db.execute('SELECT * FROM jobs WHERE id=?', (job['id'],)).fetchone()
+
+
 def claim(db_path, account, now=None):
     now = int(now or time.time())
     db = connect(db_path)
     try:
-        db.execute('BEGIN IMMEDIATE')
-        acc = db.execute('SELECT * FROM accounts WHERE name=?', (account,)).fetchone()
-        if not acc or not acc['validated'] or acc['parked_until'] > now:
-            db.rollback()
-            return None
-        # D-G: one active job per account. Inside this BEGIN IMMEDIATE transaction (which holds a
-        # write lock, serializing concurrent claimers), refuse the account if it already owns an
-        # in_progress job. Two independent claimers racing for the same validated account => only
-        # one obtains a job; the other sees the in_progress row (or is blocked until commit) and
-        # backs off. Enforces the "one account, strictly sequential" contract atomically.
-        if db.execute("SELECT 1 FROM jobs WHERE state='in_progress' AND assigned_acc=? LIMIT 1",
-                      (account,)).fetchone():
-            db.rollback()
-            return None
-        job = db.execute("SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts ORDER BY id LIMIT 1").fetchone()
-        if not job:
-            db.rollback()
-            return None
-        changed = db.execute(
-            "UPDATE jobs SET state='in_progress', assigned_acc=?, attempts=attempts+1, started_at=?, error=NULL WHERE id=? AND state='pending'",
-            (account, now_iso(), job['id']))
-        if changed.rowcount != 1:
-            db.rollback()
-            return None
-        db.commit()
-        return db.execute('SELECT * FROM jobs WHERE id=?', (job['id'],)).fetchone()
+        return _claim_tx(db, account, now)
     finally:
         db.close()
 
@@ -182,6 +194,29 @@ def park(db_path, account, until, error):
         db.execute('UPDATE accounts SET parked_until=?, last_error=?, updated_at=? WHERE name=?',
                    (until, error[-2000:], now_iso(), account))
     db.close()
+
+
+def emit_call_events(events_path, item, idx, manifest_sha256, base):
+    """D-I: telemetry for ONE real model call. Emit exactly one call-level 'model_call' event
+    (the single latency sample + classification tally for this call, with a stable call_id and
+    key_count), then one 'model_call_key' relation event per key. The per-key events carry no
+    elapsed_ms and are excluded from the latency/classification census, so a 5-key call yields
+    exactly one latency sample and one classification count (previously it was one per key,
+    inflating p50/p95 and the classification totals on large batches)."""
+    keys = [k for k in (item.get('keys') or []) if k is not None]
+    mhash = (item.get('manifest_sha256') or manifest_sha256 or 'call')[:12]
+    # call_id identifies the ACTUAL invocation: manifest # dispatch-attempt # worker label. The
+    # worker's label encodes the retry/split path (`.retry1`, per-fragment labels), and the
+    # dispatch attempt increments on a recover/re-run — so a genuine re-run gets a NEW call_id,
+    # while a crash that re-appends the SAME event to the append-only log reproduces the SAME
+    # call_id (the census dedups those and flags any conflicting-data duplicate).
+    call_id = '%s#a%s#%s' % (mhash, base.get('attempt', '0'), item.get('label') or idx)
+    append_event(events_path, stage='worker', event='model_call', call_id=call_id,
+                 key_count=len(keys), elapsed_ms=item.get('elapsed_ms'),
+                 classification=item.get('classification'), **base)
+    for key in keys:
+        append_event(events_path, stage='worker', event='model_call_key', call_id=call_id,
+                     key=key, classification=item.get('classification'), **base)
 
 
 def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, run_id=None,
@@ -220,12 +255,9 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
             except (OSError, json.JSONDecodeError):
                 worker_status = {}
         if events_path:
-            for item in worker_status.get('attempts') or []:
-                keys = item.get('keys') or [None]
-                for key in keys:
-                    append_event(events_path, stage='worker', event='model_call', key=key,
-                                 elapsed_ms=item.get('elapsed_ms'),
-                                 classification=item.get('classification'), **event_base)
+            for idx, item in enumerate(worker_status.get('attempts') or []):
+                emit_call_events(events_path, item, idx,
+                                 worker_status.get('manifest_sha256'), event_base)
         failure_class = worker_status.get('classification')
         if is_rate_limited(worker_status, proc.stderr):
             reset_text = (proc.stderr or '') + '\n' + (worker_status.get('error') or '')
@@ -643,13 +675,10 @@ def cmd_presplit_canary(args):
     proc = subprocess.run(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
                           timeout=args.timeout)
     status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
-    for item in status.get('attempts') or []:
-        for key in item.get('keys') or [None]:
-            append_event(args.events, run_id=run_id, account=accounts[0]['name'],
-                         manifest_hash=status.get('manifest_sha256'), key=key,
-                         stage='worker', event='model_call',
-                         classification=item.get('classification'),
-                         elapsed_ms=item.get('elapsed_ms'))
+    canary_base = {'run_id': run_id, 'account': accounts[0]['name'],
+                   'manifest_hash': status.get('manifest_sha256')}
+    for idx, item in enumerate(status.get('attempts') or []):
+        emit_call_events(args.events, item, idx, status.get('manifest_sha256'), canary_base)
     if proc.returncode or status.get('classification') != 'success':
         raise SystemExit('presplit canary NO-GO: %s' %
                          (status.get('classification') or (proc.stderr or proc.stdout)[-500:]))
