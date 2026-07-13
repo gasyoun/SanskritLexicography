@@ -752,3 +752,24 @@ python src/pilot/gen_opt_harness2.py no_pwg_w08_rq1 --nominal \
 then Workflow → `audit_window.py` → `promote_final_cards.py --merge`. `no_pwg_runnable` unchanged pending the requeue. `probe_log` launch+outcome recorded for `wf_811e50e7-2b2`.
 
 **Tooling note (stale-branch trap, cost this session ~0 data but a detour):** the orchestrating session's *main checkout* was 65 commits behind on a docs branch (`docs/metadoc-template-v2-backfill-h663`) that predates H805/H811/H823/H834 — its `no_pwg_scale_plan.py` still had the pre-fix `existing_subcards` scanning `output/` (empty) instead of `input/`, so queue-mode prepare FAILed there. Master already carries the fix (`gen_dir = .../pilot/input`); running from an `origin/master` worktree sidestepped it entirely. No code change shipped from this window.
+
+---
+
+## 2026-07-13 — no-PWG lane `no_pwg_w08_rq1` (H255 drain — `--max-wide=3 --stagger-ms=2000` requeue of w08's nulls) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`) — 🟡 6 PROMOTED, low-width concurrency recovery
+
+**The requeue (`wf_8d3bea69-5dd`, ≤3-wide, 1.77 M tok, 14.4 min).** 18 keys = w08's 19 transient nulls + the `cakrikA~~pw` defect for a retry, **minus** the 2 content-hard (`avyAhata`/`avyagra~~pw`, H834 class). Bounded dispatch (`boundedParallel`, ≤3 in flight, 2 s stagger) caps below the runtime's ~10-wide.
+
+**Throughput vs the full window — the H811 effect, reproduced again:**
+
+| run | width | non-null | kill-timeouts |
+|---|---|---|---|
+| `no_pwg_w08` | ~10-wide | **2 / 21** | 27 |
+| `no_pwg_w08_rq1` | **≤3-wide** | **14 / 18** | 7 |
+
+Dropping to ≤3-wide took non-null from ~10 % to ~78 % — the *generation* recovered exactly as [[pwg-ru-lowwide-requeue]] predicts. **0 conn-errors, budget not tripped.**
+
+**But content quality on these hard headwords was low.** Of the 14 non-null, the audit flagged **8 as content-defects** (`cavya`/`brāhmaṇī`/`cakrikā`×2/`dayitā`/`dolāyantra`/`durgā`/`gaṇanā` — `missing_senses`, `likely_circular_gloss`, `missing_required_sense_field`) → **6 clean promoted** (`capalā caturguṇa ceṣṭā dūtī dvādaśānta dyāvāpṛthivī`, 7 sense rows). Store `src/pwg_ru_translated.jsonl` (canonical main): **11,555 → 11,562**. (`caturguṇa` carried a low-confidence `markup_wrapper_dropped` semantic advisory — manually verified a **false positive**: all `{#…#}` spans intact, `vierfach`→`четырёхкратный` correct — promoted.)
+
+**4 null (2 fidelity-reject + 2 kill-timeout `arvant`/`bāhlika~~pw`).** Net residual for w08's 20 headwords after both passes: **7 promoted** (1 window + 6 requeue), 13 unresolved = 2 content-hard (`avyāhata`/`avyagra`) + 8 requeue-exposed content-defects + 2 fidelity-reject + 2 API-hard kill-timeouts + 1 defect (`cakrikā~~pw` still failing). The requeue proved the concurrency lever again; the residual is now **content/fidelity**, not concurrency — a further ~10-wide or ~3-wide pass won't move it. `probe_log` launch+outcome recorded for `wf_8d3bea69-5dd`.
+
+**Contention note:** the rq1 worktree + branch were deleted mid-run by a concurrent session's cleanup (a new `SanskritLexicography-h818accept` worktree appeared). No data lost — the generation result lives in the Workflow task output, the store is canonical (H805), so audit+promote re-ran cleanly from a fresh `origin/master` worktree after regenerating the deterministic input cards to satisfy the stale-hash guard.
