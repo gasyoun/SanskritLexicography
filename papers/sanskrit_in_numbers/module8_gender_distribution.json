@@ -1,0 +1,187 @@
+{
+  "module": 8,
+  "title": "gender distribution",
+  "trust_block": {
+    "source": "zaliznyak-grammar-index (A56, kosha release https://github.com/gasyoun/kosha/releases/tag/data-v0.1.0), `lex` column over all PWG headwords",
+    "n": 98639,
+    "date": "2026-07-13",
+    "model": "Sonnet 5 (claude-sonnet-5)"
+  },
+  "gender_shares_simple_pct": {
+    "feminine": {
+      "n": 14192,
+      "pct": 22.01
+    },
+    "masculine": {
+      "n": 35184,
+      "pct": 54.56
+    },
+    "neuter": {
+      "n": 15112,
+      "pct": 23.43
+    }
+  },
+  "n_gendered_simple": 64488,
+  "n_multi_gender": 482,
+  "multi_gender_breakdown": {
+    "multi: m./n.": 459,
+    "multi: m./f./n. (tri-gender)": 12,
+    "multi: m./f.": 7,
+    "multi: f./n.": 4
+  },
+  "n_non_gendered_categories": 33669,
+  "n_unmapped_lex_values": {},
+  "multi_gender_sample": [
+    {
+      "k1": "aMSa",
+      "hom": "2",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aMsa",
+      "hom": "2",
+      "lex": "m.n."
+    },
+    {
+      "k1": "agaru",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aGamarzaRa",
+      "hom": "",
+      "lex": "m.f.n."
+    },
+    {
+      "k1": "aNkuSa",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aNkUza",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aNgAra",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aNgurIya",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aNgurIyaka",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aNgulIya",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aRi",
+      "hom": "",
+      "lex": "m.f."
+    },
+    {
+      "k1": "anUka",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "anDakAra",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "anvaya",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aBiDAna",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "amftaPala",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "ayuta",
+      "hom": "2",
+      "lex": "m.n."
+    },
+    {
+      "k1": "araRya",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "arari",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "arcis",
+      "hom": "",
+      "lex": "f.n."
+    },
+    {
+      "k1": "arRavaja",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "arDarca",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "arbuda",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "arma",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "alaka",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "avataMsa",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "avAra",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "avityaja",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "aSmIra",
+      "hom": "",
+      "lex": "m.n."
+    },
+    {
+      "k1": "azWIvant",
+      "hom": "",
+      "lex": "m.n."
+    }
+  ],
+  "note": "Shares computed over gendered NOUN headwords only (m./f./n. and their multi-gender combinations); adj./adv./indecl./interj. are excluded from the percentage base since Sanskrit adjectives take the gender of the noun they modify rather than carrying a fixed dictionary gender -- the direct structural reason Sanskrit's 'multi-gender' set is a distinct, much smaller class from German's (where any noun can in principle be multi-gender, e.g. der/die/das Joghurt): in Sanskrit the tri-gender class is dominated by adjectives used substantively, not ordinary nouns."
+}
