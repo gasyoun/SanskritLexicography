@@ -1,6 +1,6 @@
 # Headword pairwise-overlap matrix — 15-dict union, 2026
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 13-07-2026_
 
 **What this is.** The "headword union & pairwise overlap" row of the
 statistics-to-compute table in
@@ -101,5 +101,12 @@ feminine folds and homograph collapse).
   PWG's headword list survives nearly whole in its own abridgements.
 - **Provenance recap** (from UNION.md): 142,673 singletons (44.1% of the
   union) vs 180,752 shared headwords.
+
+## FAIR release
+
+This dataset (E40) is bundled into
+[FAIR Release #1](FAIR_RELEASE_1.md) (H817 WS1.4) alongside the markup-tag
+census and (cross-linked) the csl-atlas citation graph — CC-BY-4.0, Zenodo
+deposit metadata prepared, deposit itself parked as `@DO`.
 
 _Dr. Mārcis Gasūns_
