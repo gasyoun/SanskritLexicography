@@ -1,0 +1,200 @@
+# Grammar layer graph -- export_lod.py grammar (H781)
+# base IRI: https://w3id.org/sanskrit-lexicon/pwg-ru/   generated: 2026-07-08
+
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix lime:     <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix lila:     <http://lila-erc.eu/ontologies/lila/> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+@prefix gr:       <https://w3id.org/sanskrit-lexicon/pwg-ru/grade/> .
+
+# --- Grammar layer (Whitney root / nominal concordance) -------
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lexicon/pwg-grammar> a lime:Lexicon ;
+  rdfs:label "PWG grammar layer (Whitney root + nominal concordance)"@en ;
+  dct:source <https://github.com/gasyoun/WhitneyRoots> ;
+  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  prov:wasGeneratedBy <https://w3id.org/sanskrit-lexicon/pwg-ru/prov/export-lod-grammar> ;
+  dct:created "2026-07-08"^^xsd:date .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/prov/export-lod-grammar> a prov:Activity ;
+  rdfs:label "Grammar layer export (export_lod.py grammar, H781)" ;
+  prov:endedAtTime "2026-07-08"^^xsd:date .
+
+gr:grammar-derived a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/pwg-ru/grade/scheme> ; skos:prefLabel "derived from the WhitneyRoots crosswalk + nominal_grammar.py concordance (structured data, not a translation)"@en ; pwglex:citable true .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "a"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "a"@sa-Latn ;
+  pwglex:slp1 "a" ;
+  rdfs:label "a"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/a>
+  pwglex:grammarBranch "nominal" ;
+  pwglex:stemClass "a-stem" ;
+  lexinfo:gender lexinfo:masculine ;
+  pwglex:zaliznyakIndex "m·1" ;
+  pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/declension>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/paradigm>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/derivation> ;
+  pwglex:evidenceGrade gr:grammar-derived .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/declension> a pwglex:GrammarSection ;
+  rdfs:label "declension §§326–334" ;
+  pwglex:sectionCategory "declension" ;
+  pwglex:sectionRange "§§326–334" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/paradigm> a pwglex:GrammarSection ;
+  rdfs:label "paradigm §330" ;
+  pwglex:sectionCategory "paradigm" ;
+  pwglex:sectionRange "§330" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/a/derivation> a pwglex:GrammarSection ;
+  rdfs:label "derivation §§1136–1245" ;
+  pwglex:sectionCategory "derivation" ;
+  pwglex:sectionRange "§§1136–1245" .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "aMSa"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "aṃśa"@sa-Latn ;
+  pwglex:slp1 "aMSa" ;
+  rdfs:label "aṃśa"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSa>
+  pwglex:grammarBranch "nominal" ;
+  pwglex:stemClass "a-stem" ;
+  lexinfo:gender lexinfo:masculine ;
+  pwglex:zaliznyakIndex "m·1a" ;
+  pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/declension>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/paradigm>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/derivation> ;
+  pwglex:evidenceGrade gr:grammar-derived .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/declension> a pwglex:GrammarSection ;
+  rdfs:label "declension §§326–334" ;
+  pwglex:sectionCategory "declension" ;
+  pwglex:sectionRange "§§326–334" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/paradigm> a pwglex:GrammarSection ;
+  rdfs:label "paradigm §330" ;
+  pwglex:sectionCategory "paradigm" ;
+  pwglex:sectionRange "§330" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSa/derivation> a pwglex:GrammarSection ;
+  rdfs:label "derivation §§1136–1245" ;
+  pwglex:sectionCategory "derivation" ;
+  pwglex:sectionRange "§§1136–1245" .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "aMSaka"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "aṃśaka"@sa-Latn ;
+  pwglex:slp1 "aMSaka" ;
+  rdfs:label "aṃśaka"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aMSaka>
+  pwglex:grammarBranch "nominal" ;
+  pwglex:stemClass "a-stem" ;
+  lexinfo:gender lexinfo:masculine ;
+  pwglex:zaliznyakIndex "m·1" ;
+  pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/declension>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/paradigm>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/derivation> ;
+  pwglex:evidenceGrade gr:grammar-derived .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/declension> a pwglex:GrammarSection ;
+  rdfs:label "declension §§326–334" ;
+  pwglex:sectionCategory "declension" ;
+  pwglex:sectionRange "§§326–334" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/paradigm> a pwglex:GrammarSection ;
+  rdfs:label "paradigm §330" ;
+  pwglex:sectionCategory "paradigm" ;
+  pwglex:sectionRange "§330" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/aMSaka/derivation> a pwglex:GrammarSection ;
+  rdfs:label "derivation §§1136–1245" ;
+  pwglex:sectionCategory "derivation" ;
+  pwglex:sectionRange "§§1136–1245" .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz> a ontolex:Form, lila:Lemma ;
+  ontolex:writtenRep "rakz"@sa-Latn-x-slp1 ;
+  ontolex:writtenRep "rakṣ"@sa-Latn ;
+  pwglex:slp1 "rakz" ;
+  rdfs:label "rakṣ"@sa-Latn .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/rakz>
+  pwglex:grammarBranch "root" ;
+  pwglex:whitneyClass "I" ;
+  lexinfo:conjugationClass "I" ;
+  pwglex:ppp "rakṣitá" ;
+  pwglex:sectionRef <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_class>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_redup>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_root>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_s>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/causative>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/desiderative>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/future_x5f_participle>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/gerund>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/infinitive>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/intensive>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/passive_x5f_present>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/past_x5f_active_x5f_participle>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/perfect>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/perfect_x5f_participle>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/periphrastic_x5f_future>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/ppp>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/present_x5f_a>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/present_x5f_participle>, <https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/s_x5f_future> ;
+  pwglex:evidenceGrade gr:grammar-derived .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_class> a pwglex:GrammarSection ;
+  rdfs:label "aor_class §824-827" ;
+  pwglex:sectionCategory "aor_class" ;
+  pwglex:sectionRange "824-827" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_redup> a pwglex:GrammarSection ;
+  rdfs:label "aor_redup §856-873" ;
+  pwglex:sectionCategory "aor_redup" ;
+  pwglex:sectionRange "856-873" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_root> a pwglex:GrammarSection ;
+  rdfs:label "aor_root §828-846" ;
+  pwglex:sectionCategory "aor_root" ;
+  pwglex:sectionRange "828-846" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/aor_x5f_s> a pwglex:GrammarSection ;
+  rdfs:label "aor_s §878-897" ;
+  pwglex:sectionCategory "aor_s" ;
+  pwglex:sectionRange "878-897" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/causative> a pwglex:GrammarSection ;
+  rdfs:label "causative §1041-1052" ;
+  pwglex:sectionCategory "causative" ;
+  pwglex:sectionRange "1041-1052" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/desiderative> a pwglex:GrammarSection ;
+  rdfs:label "desiderative §1026-1040" ;
+  pwglex:sectionCategory "desiderative" ;
+  pwglex:sectionRange "1026-1040" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/future_x5f_participle> a pwglex:GrammarSection ;
+  rdfs:label "future_participle §939-939" ;
+  pwglex:sectionCategory "future_participle" ;
+  pwglex:sectionRange "939-939" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/gerund> a pwglex:GrammarSection ;
+  rdfs:label "gerund §989-994" ;
+  pwglex:sectionCategory "gerund" ;
+  pwglex:sectionRange "989-994" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/infinitive> a pwglex:GrammarSection ;
+  rdfs:label "infinitive §968-979" ;
+  pwglex:sectionCategory "infinitive" ;
+  pwglex:sectionRange "968-979" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/intensive> a pwglex:GrammarSection ;
+  rdfs:label "intensive §1000-1025" ;
+  pwglex:sectionCategory "intensive" ;
+  pwglex:sectionRange "1000-1025" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/passive_x5f_present> a pwglex:GrammarSection ;
+  rdfs:label "passive_present §768-774" ;
+  pwglex:sectionCategory "passive_present" ;
+  pwglex:sectionRange "768-774" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/past_x5f_active_x5f_participle> a pwglex:GrammarSection ;
+  rdfs:label "past_active_participle §959-960" ;
+  pwglex:sectionCategory "past_active_participle" ;
+  pwglex:sectionRange "959-960" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/perfect> a pwglex:GrammarSection ;
+  rdfs:label "perfect §781-823" ;
+  pwglex:sectionCategory "perfect" ;
+  pwglex:sectionRange "781-823" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/perfect_x5f_participle> a pwglex:GrammarSection ;
+  rdfs:label "perfect_participle §802-806" ;
+  pwglex:sectionCategory "perfect_participle" ;
+  pwglex:sectionRange "802-806" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/periphrastic_x5f_future> a pwglex:GrammarSection ;
+  rdfs:label "periphrastic_future §942-949" ;
+  pwglex:sectionCategory "periphrastic_future" ;
+  pwglex:sectionRange "942-949" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/ppp> a pwglex:GrammarSection ;
+  rdfs:label "ppp §952-958" ;
+  pwglex:sectionCategory "ppp" ;
+  pwglex:sectionRange "952-958" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/present_x5f_a> a pwglex:GrammarSection ;
+  rdfs:label "present_a §733-750" ;
+  pwglex:sectionCategory "present_a" ;
+  pwglex:sectionRange "733-750" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/present_x5f_participle> a pwglex:GrammarSection ;
+  rdfs:label "present_participle §583-584" ;
+  pwglex:sectionCategory "present_participle" ;
+  pwglex:sectionRange "583-584" .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/section/rakz/s_x5f_future> a pwglex:GrammarSection ;
+  rdfs:label "s_future §931-940" ;
+  pwglex:sectionCategory "s_future" ;
+  pwglex:sectionRange "931-940" .
+

@@ -1,0 +1,27 @@
+# Acceptance query (H781): join the GRAMMAR layer (Whitney root class/ppp OR
+# nominal stem-class/Zaliznyak-index -- whichever branch a lemma resolved to,
+# via UNION) to (a) that same lemma's RU or DE ontolex:LexicalEntry and (b) the
+# DCS corpus frequency of the lemma in the separate DCS-FREQUENCY graph. Three
+# datasets (grammar.ttl, pwg_ru_lod.ttl/pwg_de_lexicon.ttl, dcs_freq.ttl), one
+# federated star around the shared lemma/<key1> IRI -- the third derivable
+# layer proving the same join shape as sense_citation_dcsfreq.rq (H350) and
+# de_sense_citation_dcsfreq.rq (H772). Root and nominal predicates differ, so
+# the grammar half is a UNION; it must return rows for BOTH branches.
+
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX pwglex: <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#>
+
+SELECT ?lemma ?entry ?branch ?grammarInfo ?dcsCount WHERE {
+  ?entry a ontolex:LexicalEntry ;
+         ontolex:canonicalForm ?lemma .
+
+  { ?lemma pwglex:whitneyClass ?grammarInfo . BIND("root" AS ?branch) }
+  UNION
+  { ?lemma pwglex:stemClass ?grammarInfo . BIND("nominal" AS ?branch) }
+
+  # ---- cross-dataset join on the shared lemma IRI (the "federated" edge) ----
+  ?lemma pwglex:dcsCount ?dcsCount .
+}
+ORDER BY DESC(?dcsCount) ?branch ?entry
+LIMIT 25

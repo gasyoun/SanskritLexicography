@@ -1,6 +1,6 @@
 # PWG→RU LOD graph — OntoLex-Lemon + vartrans + PROV-O + LiLa lemma bank (E7 / H350)
 
-_Created: 08-07-2026 · Last updated: 12-07-2026 (H772)_
+_Created: 08-07-2026 · Last updated: 13-07-2026 (H781)_
 
 > **Companion — the German side (PWG++, H772).** The same lemma-bank spine now
 > also carries a first-class **German** `ontolex:LexicalEntry` sibling per lemma,
@@ -8,6 +8,18 @@ _Created: 08-07-2026 · Last updated: 12-07-2026 (H772)_
 > emitted by `export_lod.py de-lexicon` into a separate `pwg_de_lexicon.ttl` that
 > joins on the shared `lemma/<key1>` node — see
 > [`PWG_PLUS_GERMAN_ENRICHMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md).
+
+> **Companion — the grammar layer (H781).** The same lemma-bank spine now also
+> carries the Whitney root / nominal grammar block per lemma: `class`/`ppp`/§§
+> for verb roots ([`whitney_grammar.py`](src/whitney_grammar.py)), stem
+> class/§§/paradigm/compounds/Zaliznyak index for everything else
+> ([`nominal_grammar.py`](src/nominal_grammar.py)). Emitted by
+> `export_lod.py grammar` into a separate `grammar.ttl` that joins on the shared
+> `lemma/<key1>` node — a federated `grammar × lemma's RU/DE entry × DCS freq`
+> query returns rows for both the root and nominal branches. Homonym-keyed roots
+> (as/i/vid…) get a `pwglex:homonymAmbiguous` marker, never a guessed class/ppp
+> from the wrong Whitney homonym — see
+> [`GRAMMAR_LAYER.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GRAMMAR_LAYER.md).
 
 The build record for backlog item **#1 / hypothesis E7** of the
 [epistemic-reach memo](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EPISTEMIC_REACH_MEMO.md):
