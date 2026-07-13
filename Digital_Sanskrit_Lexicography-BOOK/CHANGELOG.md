@@ -7,6 +7,28 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H853, Ch. 9 conversion)
+
+- **Ch. 9 converted journal→book** →
+  [chapters/ch09_xref_lineage.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch09_xref_lineage.md),
+  the book-form version of A05 *Pointing Inward: Cross-Reference Graphs as a Signal of
+  Dictionary Descent* (csl-atlas source
+  [paper_xref_lineage.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_xref_lineage.md)).
+  Abstract + keywords stripped, provenance headnote added (A05 stays citable at a DH /
+  metalexicography venue / WSC 2027), companion "P-numbers" remapped to book chapters
+  (P1→Ch. 2 §3.6 metric, P2→Ch. 6, P4→Ch. 7, P6→Ch. 4), the A03 "three axes of descent"
+  companion **absorbed** into the chapter's own content/convention/inheritance decomposition
+  (BOOK_PLAN §3 "Ch. 9 absorbs A03/A07"), and the crosswalk grounding woven in — **Hartmann &
+  James** (mediostructure "a framework … still to be developed" claimed as the chapter's
+  warrant), the **Routledge Historical Linguistics handbook** phylogenetics vocabulary
+  (Weiss/Hale/François/Dunn), **Engelberg et al.** (linking/access-structure frame), **Ferri**
+  (Verrius→Festus→Paul / Donatus→Servius as documented descent-chain comparanda). **Correctness
+  fix:** the source's §3.2 swapped the AP/AP90 edition labels — corrected against Table 1 and
+  the referee note (AP90 = 1890, AP = 1957 revision). Every count and table (PWG 22,937 edges;
+  MW 7,637; the AP×AP90 85.5% positive control at J=0.74; MW×PWG 641 shared edges / 21.8% at
+  J=0.069; the prefix-hub *a°* 320 / *mahā°* 254; Benfey's zero) carried over unchanged. **5
+  of 14 chapters now in book form** (ch01, ch02, ch04, ch05, ch09).
+
 ### Added — 13-07-2026 (H851, Ch. 4 conversion)
 
 - **Ch. 4 converted journal→book** →
