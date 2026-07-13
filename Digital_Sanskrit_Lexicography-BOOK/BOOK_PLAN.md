@@ -456,6 +456,18 @@ at its next revision. Both `@DECIDE` forks from H505 are now closed.
   and table carried over unchanged. **7 of 14 chapters now in book form** (ch01, ch02, ch04,
   ch05, ch08, ch09, ch10).
 
+**Done 13-07-2026 (H860 execution, Opus 4.8 `claude-opus-4-8[1m]`):**
+- ✅ **Ch. 12 converted journal→book** →
+  [chapters/ch12_apparatus_not_errors.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch12_apparatus_not_errors.md)
+  (from A10, *Apparatus, Not Errors*, csl-atlas source). Abstract folded into the opening, the
+  companion redundancy/L0 material remapped to Ch. 9 + the Ch. 2 §3.1 containment-floor rule,
+  the crosswalk grounding woven in (Hartmann & James "dictionary archaeology"; Zgusta 1988
+  copying-in-lexicography carried from Ch. 2; Jackson/Landau inheritance-truism → M01's delta
+  is quantification-at-scale; Baalbaki's Ibn Manẓūr concealed borrowing; Dickey's
+  Viermännerkommentar; Ferri/Furno Calepino→Estienne; O'Keeffe & McCarthy forensic
+  fingerprinting). Every count and table carried over unchanged. **8 of 14 chapters now in
+  book form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12).
+
 **Still to do:**
 1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
    + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
