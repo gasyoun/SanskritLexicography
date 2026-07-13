@@ -1,6 +1,6 @@
 # Grammar layer — the 3rd axis (Whitney) for pwg_ru
 
-_Created: 07-07-2026 · Last updated: 12-07-2026 (H777/H778)_
+_Created: 07-07-2026 · Last updated: 13-07-2026 (H781)_
 
 pwg_ru already carries two evidence axes per headword: **lexicon** (corpus_lexicon Sa→Ru
 candidates) and **corpus** (parallel verse + Renou register). This adds the **grammar** axis,
@@ -20,6 +20,19 @@ reusing the existing [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) cro
 > | Declension display (vidyut table) | `nominal_grammar.py --table`, `reverse_index.py --show` |
 > | Should grammar go INTO translation? **No.** | [`NOMINAL_GRAMMAR_AB.md`](NOMINAL_GRAMMAR_AB.md) + [`NOMINAL_GRAMMAR_AB_DETAIL.md`](NOMINAL_GRAMMAR_AB_DETAIL.md) |
 > | Accent a–f axis (unblocked, not built) | `ZALIZNYAK_INDEX.md` §"Vedic accent mobility" + [VedaWeb](https://vedaweb.uni-koeln.de) |
+> | LOD export (grammar.ttl, 3rd derivable layer on the shared lemma spine) | `src/export_lod.py grammar` mode (H781) → [`LOD_GRAPH.md`](LOD_GRAPH.md) companion callout |
+
+**LOD export (H781).** The root/nominal grammar block for every `key1` is also emitted
+as its own graph, `grammar.ttl` (`python src/export_lod.py grammar`), joining on the
+*same* `lemma/<key1>` node as the RU lexical graph, the DCS-frequency graph, and H772's
+German enrichment graph — a federated `grammar × lemma's RU/DE entry × DCS freq` query
+(`release/query/grammar_lemma_dcsfreq.rq`) returns rows for both branches. Whitney §§
+become first-class `pwglex:GrammarSection` resources; the Zaliznyak index is a direct,
+queryable `pwglex:zaliznyakIndex` literal. The homonym-alignment guardrail below is
+enforced in the emitter: a `key1` with >1 Whitney homonym record gets a
+`pwglex:homonymAmbiguous true` marker only — no guessed class/ppp is ever attached.
+`lod_acceptance.py` block **D** locks the join + byte-stable regen + source coverage.
+Full design: [`LOD_GRAPH.md`](LOD_GRAPH.md).
 
 ## What it is
 
