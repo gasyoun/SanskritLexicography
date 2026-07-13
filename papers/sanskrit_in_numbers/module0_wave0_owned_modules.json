@@ -1,0 +1,215 @@
+{
+  "wave": 0,
+  "generated": "2026-07-13",
+  "model": "Sonnet 5 (claude-sonnet-5)",
+  "modules_owned": {
+    "module_2_vocabulary_size": {
+      "owner": "A40 (headword census) + A55 (union index, kosha)",
+      "source": [
+        "papers/A40_headword_inventory_note.md",
+        "https://github.com/gasyoun/kosha/blob/main/papers/A55_UNION_HEADWORDS_DATA_PAPER_JOHD.md",
+        "data/HEADWORD_OVERLAP_UNION15_2026.md"
+      ],
+      "headline_n": {
+        "full_15_dict_union": 323425,
+        "petersburg_family_union_dedup": 167904,
+        "petersburg_family_naive_sum": 285799,
+        "petersburg_family_double_count_inflation_pct": 70.2,
+        "in_all_three_pwg_pwk_sch": 7605,
+        "pwg_headwords": 106054,
+        "pwk_headwords": 151314,
+        "sch_headwords": 28431
+      },
+      "caveat": "PWK abridges PWG, PW abridges further, SCH is addenda -- naive summing double-counts massively (D2/D6 caveat, roadmap SS2). The honest 'vocabulary size' number is the de-duplicated union, computed here by filtering the already-published 15-dict union (union_headwords.tsv) to the family, NOT recomputed from scratch."
+    },
+    "module_7_pos_distribution": {
+      "owner": "A56 (Zaliznyak grammar-token index, kosha)",
+      "source": "https://github.com/gasyoun/kosha/blob/main/papers/A56_ZALIZNYAK_GRAMMAR_INDEX_DATA_PAPER_JOHD.md",
+      "headline_n": {
+        "headwords_classified": 98639,
+        "paradigm_tokens": 335
+      },
+      "caveat": "Cited, not recomputed here."
+    },
+    "module_1_lemma_vs_token": {
+      "owner": "VisualDCS (DCS-2026 release)",
+      "source": "https://github.com/gasyoun/VisualDCS",
+      "headline_n": {
+        "texts": 270,
+        "tokens": 5688416,
+        "sentences": 754726,
+        "distinct_lemmas_attested": 90349
+      }
+    },
+    "module_3_4_frequency_and_zipf": {
+      "owner": "VisualDCS (DCS-2026 release); coverage curve NEW this wave",
+      "source": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite (real per-token lemma counts, not the coarse freqBand in dcs_lemma_summary.json)",
+      "coverage_curve": [
+        {
+          "top_n": 1,
+          "cumulative_tokens": 197087,
+          "pct_of_corpus": 3.46
+        },
+        {
+          "top_n": 10,
+          "cumulative_tokens": 852064,
+          "pct_of_corpus": 14.98
+        },
+        {
+          "top_n": 50,
+          "cumulative_tokens": 1673921,
+          "pct_of_corpus": 29.43
+        },
+        {
+          "top_n": 100,
+          "cumulative_tokens": 2054399,
+          "pct_of_corpus": 36.12
+        },
+        {
+          "top_n": 200,
+          "cumulative_tokens": 2485217,
+          "pct_of_corpus": 43.69
+        },
+        {
+          "top_n": 500,
+          "cumulative_tokens": 3190620,
+          "pct_of_corpus": 56.09
+        },
+        {
+          "top_n": 1000,
+          "cumulative_tokens": 3776049,
+          "pct_of_corpus": 66.38
+        },
+        {
+          "top_n": 2000,
+          "cumulative_tokens": 4361773,
+          "pct_of_corpus": 76.68
+        },
+        {
+          "top_n": 5000,
+          "cumulative_tokens": 5002905,
+          "pct_of_corpus": 87.95
+        },
+        {
+          "top_n": 10000,
+          "cumulative_tokens": 5333485,
+          "pct_of_corpus": 93.76
+        },
+        {
+          "top_n": 20000,
+          "cumulative_tokens": 5525765,
+          "pct_of_corpus": 97.14
+        },
+        {
+          "top_n": 50000,
+          "cumulative_tokens": 5645261,
+          "pct_of_corpus": 99.24
+        }
+      ],
+      "top20_lemmas": [
+        {
+          "lemma": "tad",
+          "n": 197087,
+          "pct": 3.465
+        },
+        {
+          "lemma": "ca",
+          "n": 174415,
+          "pct": 3.066
+        },
+        {
+          "lemma": "iti",
+          "n": 78511,
+          "pct": 1.38
+        },
+        {
+          "lemma": "eva",
+          "n": 65472,
+          "pct": 1.151
+        },
+        {
+          "lemma": "mad",
+          "n": 63834,
+          "pct": 1.122
+        },
+        {
+          "lemma": "na",
+          "n": 63741,
+          "pct": 1.121
+        },
+        {
+          "lemma": "yad",
+          "n": 62099,
+          "pct": 1.092
+        },
+        {
+          "lemma": "idam",
+          "n": 52529,
+          "pct": 0.923
+        },
+        {
+          "lemma": "tvad",
+          "n": 51156,
+          "pct": 0.899
+        },
+        {
+          "lemma": "bhū",
+          "n": 43220,
+          "pct": 0.76
+        },
+        {
+          "lemma": "etad",
+          "n": 41421,
+          "pct": 0.728
+        },
+        {
+          "lemma": "kṛ",
+          "n": 40808,
+          "pct": 0.717
+        },
+        {
+          "lemma": "api",
+          "n": 37474,
+          "pct": 0.659
+        },
+        {
+          "lemma": "sarva",
+          "n": 37191,
+          "pct": 0.654
+        },
+        {
+          "lemma": "tu",
+          "n": 37081,
+          "pct": 0.652
+        },
+        {
+          "lemma": "as",
+          "n": 35763,
+          "pct": 0.629
+        },
+        {
+          "lemma": "vac",
+          "n": 33950,
+          "pct": 0.597
+        },
+        {
+          "lemma": "mahat",
+          "n": 26986,
+          "pct": 0.474
+        },
+        {
+          "lemma": "vā",
+          "n": 25488,
+          "pct": 0.448
+        },
+        {
+          "lemma": "tathā",
+          "n": 24787,
+          "pct": 0.436
+        }
+      ],
+      "caveat": "Duden's own headline stat is '100 words cover ~half the text'; DCS's top-100 lemmas cover 36.12% of tokens -- see the curve for the full comparison. Scale caveat: DCS (5.7M tokens) is ~1000x smaller than the Dudenkorpus (5.2B); corpus-unattested does not mean non-existent (A40 caveat)."
+    }
+  },
+  "anti_salami_note": "This file CITES modules 2 and 7 (A40/A55/A56 own their novelty); it does not re-derive their headline results. The family-union figure above is a FILTER of already-published per-headword dict-membership data, not a new census. The Zipf coverage curve is genuinely new (module 3/4 was 'partial' in the roadmap), computed once here from the already-committed DCS-2026 corpus."
+}

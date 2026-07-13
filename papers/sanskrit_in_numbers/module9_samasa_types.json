@@ -1,0 +1,357 @@
+{
+  "module": 9,
+  "title": "samasa types (best-effort)",
+  "trust_block": {
+    "source": "VisualDCS DCS-data-2026/dcs_full.sqlite (DCS-2026 release), token.deprel Universal-Dependencies-style compound relations",
+    "n": {
+      "total_tokens": 5688416,
+      "total_compound_relations": 2214,
+      "compound": 119,
+      "compound:coord": 2044,
+      "compound:name": 51
+    },
+    "date": "2026-07-13",
+    "model": "Sonnet 5 (claude-sonnet-5)"
+  },
+  "counts": {
+    "compound": 119,
+    "compound:coord": 2044,
+    "compound:name": 51
+  },
+  "pct_of_compound_relations": {
+    "compound": 5.37,
+    "compound:coord": 92.32,
+    "compound:name": 2.3
+  },
+  "reliable_typed_bucket": {
+    "dvandva (compound:coord)": 2044,
+    "proper-name compound (compound:name)": 51
+  },
+  "undifferentiated_bucket": {
+    "tatpurusa/karmadharaya/bahuvrihi, undifferentiated (compound)": 119
+  },
+  "sample_for_manual_typing": {
+    "compound": [
+      {
+        "form": "abhimarśana",
+        "lemma": "abhimarśana",
+        "upos": "NOUN",
+        "sentence_id": 202134,
+        "head_id": 7
+      },
+      {
+        "form": "kākṣi",
+        "lemma": "kākṣi",
+        "upos": "NOUN",
+        "sentence_id": 11956,
+        "head_id": 5
+      },
+      {
+        "form": "araṇya",
+        "lemma": "araṇya",
+        "upos": "NOUN",
+        "sentence_id": 11571,
+        "head_id": 12
+      },
+      {
+        "form": "madhu",
+        "lemma": "madhu",
+        "upos": "NOUN",
+        "sentence_id": 495890,
+        "head_id": 12
+      },
+      {
+        "form": "śakuna",
+        "lemma": "śakuna",
+        "upos": "NOUN",
+        "sentence_id": 11989,
+        "head_id": 15
+      },
+      {
+        "form": "tinduka",
+        "lemma": "tinduka",
+        "upos": "NOUN",
+        "sentence_id": 11982,
+        "head_id": 3
+      },
+      {
+        "form": "mūla",
+        "lemma": "mūla",
+        "upos": "NOUN",
+        "sentence_id": 11974,
+        "head_id": 6
+      },
+      {
+        "form": "śirīṣa",
+        "lemma": "śirīṣa",
+        "upos": "NOUN",
+        "sentence_id": 11973,
+        "head_id": 4
+      },
+      {
+        "form": "elā",
+        "lemma": "elā",
+        "upos": "NOUN",
+        "sentence_id": 11956,
+        "head_id": 5
+      },
+      {
+        "form": "madhu",
+        "lemma": "madhu",
+        "upos": "NOUN",
+        "sentence_id": 208423,
+        "head_id": 5
+      },
+      {
+        "form": "ava",
+        "lemma": "ava",
+        "upos": "ADP",
+        "sentence_id": 731431,
+        "head_id": 14
+      },
+      {
+        "form": "udāna",
+        "lemma": "udāna",
+        "upos": "NOUN",
+        "sentence_id": 177601,
+        "head_id": 7
+      },
+      {
+        "form": "mūka",
+        "lemma": "mūka",
+        "upos": "ADJ",
+        "sentence_id": 11950,
+        "head_id": 10
+      },
+      {
+        "form": "vrīhi",
+        "lemma": "vrīhi",
+        "upos": "NOUN",
+        "sentence_id": 200959,
+        "head_id": 6
+      },
+      {
+        "form": "caturtha",
+        "lemma": "caturtha",
+        "upos": "ADJ",
+        "sentence_id": 56124,
+        "head_id": 2
+      }
+    ],
+    "compound:coord": [
+      {
+        "form": "aśva",
+        "lemma": "aśva",
+        "upos": "NOUN",
+        "sentence_id": 351120,
+        "head_id": 12
+      },
+      {
+        "form": "plavaka",
+        "lemma": "plavaka",
+        "upos": "NOUN",
+        "sentence_id": 11938,
+        "head_id": 3
+      },
+      {
+        "form": "brahma",
+        "lemma": "brahman",
+        "upos": "NOUN",
+        "sentence_id": 7296,
+        "head_id": 2
+      },
+      {
+        "form": "darśa",
+        "lemma": "darśa",
+        "upos": "NOUN",
+        "sentence_id": 634782,
+        "head_id": 10
+      },
+      {
+        "form": "kṣauma",
+        "lemma": "kṣauma",
+        "upos": "ADJ",
+        "sentence_id": 138085,
+        "head_id": 5
+      },
+      {
+        "form": "anāmikā",
+        "lemma": "anāmikā",
+        "upos": "NOUN",
+        "sentence_id": 95710,
+        "head_id": 2
+      },
+      {
+        "form": "aśva",
+        "lemma": "aśva",
+        "upos": "NOUN",
+        "sentence_id": 91279,
+        "head_id": 16
+      },
+      {
+        "form": "nakula",
+        "lemma": "nakula",
+        "upos": "NOUN",
+        "sentence_id": 11950,
+        "head_id": 4
+      },
+      {
+        "form": "svādhyāya",
+        "lemma": "svādhyāya",
+        "upos": "NOUN",
+        "sentence_id": 633888,
+        "head_id": 2
+      },
+      {
+        "form": "karavīra",
+        "lemma": "karavīra",
+        "upos": "NOUN",
+        "sentence_id": 11934,
+        "head_id": 7
+      },
+      {
+        "form": "śubha",
+        "lemma": "śubha",
+        "upos": "NOUN",
+        "sentence_id": 451386,
+        "head_id": 7
+      },
+      {
+        "form": "iṣu",
+        "lemma": "iṣu",
+        "upos": "NOUN",
+        "sentence_id": 634520,
+        "head_id": 3
+      },
+      {
+        "form": "iṣu",
+        "lemma": "iṣu",
+        "upos": "NOUN",
+        "sentence_id": 702784,
+        "head_id": 4
+      },
+      {
+        "form": "oṣadhi",
+        "lemma": "oṣadhi",
+        "upos": "NOUN",
+        "sentence_id": 208298,
+        "head_id": 8
+      },
+      {
+        "form": "paśu",
+        "lemma": "paśu",
+        "upos": "NOUN",
+        "sentence_id": 11583,
+        "head_id": 6
+      }
+    ],
+    "compound:name": [
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 714333,
+        "head_id": 21
+      },
+      {
+        "form": "gārhapatyaḥ",
+        "lemma": "gārhapatya",
+        "upos": "NOUN",
+        "sentence_id": 15278,
+        "head_id": 9
+      },
+      {
+        "form": "viśvaiḥ",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 13778,
+        "head_id": 9
+      },
+      {
+        "form": "lakṣmaṇyasya",
+        "lemma": "lakṣmaṇya",
+        "upos": "NOUN",
+        "sentence_id": 738722,
+        "head_id": 4
+      },
+      {
+        "form": "viśvāḥ",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 94254,
+        "head_id": 6
+      },
+      {
+        "form": "viśvebhyaḥ",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 25263,
+        "head_id": 11
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 25262,
+        "head_id": 10
+      },
+      {
+        "form": "devāḥ",
+        "lemma": "deva",
+        "upos": "NOUN",
+        "sentence_id": 15279,
+        "head_id": 10
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 14103,
+        "head_id": 12
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 670063,
+        "head_id": 3
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 14038,
+        "head_id": 11
+      },
+      {
+        "form": "viśvebhyaḥ",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 701396,
+        "head_id": 2
+      },
+      {
+        "form": "svāyambhuvasya",
+        "lemma": "svāyambhuva",
+        "upos": "NOUN",
+        "sentence_id": 446415,
+        "head_id": 3
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 13947,
+        "head_id": 3
+      },
+      {
+        "form": "viśve",
+        "lemma": "viśva",
+        "upos": "ADJ",
+        "sentence_id": 747340,
+        "head_id": 2
+      }
+    ]
+  },
+  "note": "BEST-EFFORT, per roadmap ROADMAP_SANSKRIT_IN_NUMBERS_2026_2027.md Wave 1 module 9 spec. DCS's own UD-style `deprel` tagging gives a reliable, corpus-native dvandva count (compound:coord) and a proper-name-compound count (compound:name) -- these are NOT heuristic. The much larger remaining question -- tatpurusa vs karmadharaya vs bahuvrihi -- is NOT auto-classified here: the UD compound relation used by DCS does not carry that distinction, and guessing it algorithmically without a real semantic/syntactic samasa parser would risk reporting fabricated percentages. A random 15-item sample per bucket is included for a human or a future dedicated-segmentation pass (vidyut cheda + hand adjudication) to type; that full typing pass is flagged as a follow-up, not delivered here. Absolute scale caveat: only 0.039% of all DCS tokens carry an explicit compound-member deprel at all -- most Sanskrit compounds in this corpus are NOT syntactically decomposed into member tokens (they remain single orthographic words, see Module 6); this module's counts describe the tagged MINORITY, not the full compound population."
+}

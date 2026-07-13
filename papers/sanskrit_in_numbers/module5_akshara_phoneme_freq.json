@@ -1,0 +1,843 @@
+{
+  "module": 5,
+  "title": "akshara / phoneme frequency",
+  "trust_block": {
+    "source": "Petersburg family (PWG+PWK+SCH) headwords, HeadwordLists/now-2026/ key1(key2 for SCH); DCS corpus tokens, VisualDCS DCS-data-2026/dcs_full.sqlite (DCS-2026 release)",
+    "n": {
+      "family_headwords": 285950,
+      "family_by_dict": {
+        "PWG": 106082,
+        "PWK": 151349,
+        "SCH": 28519
+      },
+      "dcs_tokens": 5688416
+    },
+    "date": "2026-07-13",
+    "model": "Sonnet 5 (claude-sonnet-5)"
+  },
+  "family": {
+    "phonemic": {
+      "total_phonemes": 2572557,
+      "top": [
+        {
+          "unit": "a",
+          "count": 622153,
+          "pct": 24.184
+        },
+        {
+          "unit": "r",
+          "count": 171579,
+          "pct": 6.67
+        },
+        {
+          "unit": "A",
+          "count": 165284,
+          "pct": 6.425
+        },
+        {
+          "unit": "i",
+          "count": 133184,
+          "pct": 5.177
+        },
+        {
+          "unit": "t",
+          "count": 126127,
+          "pct": 4.903
+        },
+        {
+          "unit": "n",
+          "count": 108908,
+          "pct": 4.233
+        },
+        {
+          "unit": "k",
+          "count": 106763,
+          "pct": 4.15
+        },
+        {
+          "unit": "v",
+          "count": 100650,
+          "pct": 3.912
+        },
+        {
+          "unit": "s",
+          "count": 79480,
+          "pct": 3.09
+        },
+        {
+          "unit": "p",
+          "count": 78340,
+          "pct": 3.045
+        },
+        {
+          "unit": "u",
+          "count": 75637,
+          "pct": 2.94
+        },
+        {
+          "unit": "m",
+          "count": 74472,
+          "pct": 2.895
+        },
+        {
+          "unit": "y",
+          "count": 73335,
+          "pct": 2.851
+        },
+        {
+          "unit": "d",
+          "count": 61369,
+          "pct": 2.386
+        },
+        {
+          "unit": "l",
+          "count": 48521,
+          "pct": 1.886
+        },
+        {
+          "unit": "S",
+          "count": 43503,
+          "pct": 1.691
+        },
+        {
+          "unit": "I",
+          "count": 39974,
+          "pct": 1.554
+        },
+        {
+          "unit": "z",
+          "count": 39619,
+          "pct": 1.54
+        },
+        {
+          "unit": "g",
+          "count": 35106,
+          "pct": 1.365
+        },
+        {
+          "unit": "R",
+          "count": 33908,
+          "pct": 1.318
+        },
+        {
+          "unit": "h",
+          "count": 32407,
+          "pct": 1.26
+        },
+        {
+          "unit": "D",
+          "count": 29231,
+          "pct": 1.136
+        },
+        {
+          "unit": "e",
+          "count": 28174,
+          "pct": 1.095
+        },
+        {
+          "unit": "j",
+          "count": 27700,
+          "pct": 1.077
+        },
+        {
+          "unit": "o",
+          "count": 25853,
+          "pct": 1.005
+        },
+        {
+          "unit": "B",
+          "count": 25730,
+          "pct": 1.0
+        },
+        {
+          "unit": "c",
+          "count": 23873,
+          "pct": 0.928
+        },
+        {
+          "unit": "f",
+          "count": 19643,
+          "pct": 0.764
+        },
+        {
+          "unit": "U",
+          "count": 19066,
+          "pct": 0.741
+        },
+        {
+          "unit": "w",
+          "count": 15874,
+          "pct": 0.617
+        },
+        {
+          "unit": "M",
+          "count": 15081,
+          "pct": 0.586
+        },
+        {
+          "unit": "b",
+          "count": 13584,
+          "pct": 0.528
+        },
+        {
+          "unit": "T",
+          "count": 12685,
+          "pct": 0.493
+        },
+        {
+          "unit": "q",
+          "count": 10051,
+          "pct": 0.391
+        },
+        {
+          "unit": "K",
+          "count": 7977,
+          "pct": 0.31
+        },
+        {
+          "unit": "N",
+          "count": 7873,
+          "pct": 0.306
+        },
+        {
+          "unit": "E",
+          "count": 6939,
+          "pct": 0.27
+        },
+        {
+          "unit": "Y",
+          "count": 6759,
+          "pct": 0.263
+        },
+        {
+          "unit": "O",
+          "count": 6629,
+          "pct": 0.258
+        },
+        {
+          "unit": "G",
+          "count": 5677,
+          "pct": 0.221
+        }
+      ]
+    },
+    "graphemic": {
+      "total_aksharas": 1187061,
+      "top": [
+        {
+          "unit": "न",
+          "count": 44801,
+          "pct": 3.774
+        },
+        {
+          "unit": "र",
+          "count": 42539,
+          "pct": 3.584
+        },
+        {
+          "unit": "क",
+          "count": 42221,
+          "pct": 3.557
+        },
+        {
+          "unit": "अ",
+          "count": 34762,
+          "pct": 2.928
+        },
+        {
+          "unit": "म",
+          "count": 31780,
+          "pct": 2.677
+        },
+        {
+          "unit": "व",
+          "count": 31722,
+          "pct": 2.672
+        },
+        {
+          "unit": "त",
+          "count": 30263,
+          "pct": 2.549
+        },
+        {
+          "unit": "प",
+          "count": 27472,
+          "pct": 2.314
+        },
+        {
+          "unit": "स",
+          "count": 25483,
+          "pct": 2.147
+        },
+        {
+          "unit": "य",
+          "count": 24962,
+          "pct": 2.103
+        },
+        {
+          "unit": "ल",
+          "count": 20719,
+          "pct": 1.745
+        },
+        {
+          "unit": "द",
+          "count": 16482,
+          "pct": 1.388
+        },
+        {
+          "unit": "वि",
+          "count": 16475,
+          "pct": 1.388
+        },
+        {
+          "unit": "का",
+          "count": 16036,
+          "pct": 1.351
+        },
+        {
+          "unit": "ति",
+          "count": 14463,
+          "pct": 1.218
+        },
+        {
+          "unit": "श",
+          "count": 14173,
+          "pct": 1.194
+        },
+        {
+          "unit": "ह",
+          "count": 13539,
+          "pct": 1.141
+        },
+        {
+          "unit": "प्र",
+          "count": 12391,
+          "pct": 1.044
+        },
+        {
+          "unit": "ण",
+          "count": 11971,
+          "pct": 1.008
+        },
+        {
+          "unit": "ज",
+          "count": 11606,
+          "pct": 0.978
+        },
+        {
+          "unit": "ग",
+          "count": 11458,
+          "pct": 0.965
+        },
+        {
+          "unit": "नि",
+          "count": 10048,
+          "pct": 0.846
+        },
+        {
+          "unit": "रा",
+          "count": 9898,
+          "pct": 0.834
+        },
+        {
+          "unit": "रि",
+          "count": 9817,
+          "pct": 0.827
+        },
+        {
+          "unit": "वा",
+          "count": 9665,
+          "pct": 0.814
+        },
+        {
+          "unit": "मा",
+          "count": 8902,
+          "pct": 0.75
+        },
+        {
+          "unit": "च",
+          "count": 8465,
+          "pct": 0.713
+        },
+        {
+          "unit": "न्त",
+          "count": 8246,
+          "pct": 0.695
+        },
+        {
+          "unit": "पा",
+          "count": 8174,
+          "pct": 0.689
+        },
+        {
+          "unit": "ता",
+          "count": 7941,
+          "pct": 0.669
+        },
+        {
+          "unit": "आ",
+          "count": 7926,
+          "pct": 0.668
+        },
+        {
+          "unit": "उ",
+          "count": 7830,
+          "pct": 0.66
+        },
+        {
+          "unit": "सु",
+          "count": 7654,
+          "pct": 0.645
+        },
+        {
+          "unit": "ष",
+          "count": 7087,
+          "pct": 0.597
+        },
+        {
+          "unit": "ना",
+          "count": 7009,
+          "pct": 0.59
+        },
+        {
+          "unit": "सं",
+          "count": 6985,
+          "pct": 0.588
+        },
+        {
+          "unit": "भ",
+          "count": 6429,
+          "pct": 0.542
+        },
+        {
+          "unit": "ध",
+          "count": 6171,
+          "pct": 0.52
+        },
+        {
+          "unit": "पु",
+          "count": 5929,
+          "pct": 0.499
+        },
+        {
+          "unit": "सा",
+          "count": 5890,
+          "pct": 0.496
+        }
+      ]
+    }
+  },
+  "dcs_corpus": {
+    "phonemic": {
+      "total_phonemes": 32067704,
+      "top": [
+        {
+          "unit": "a",
+          "count": 6804958,
+          "pct": 21.221
+        },
+        {
+          "unit": "A",
+          "count": 2304408,
+          "pct": 7.186
+        },
+        {
+          "unit": "t",
+          "count": 2232726,
+          "pct": 6.963
+        },
+        {
+          "unit": "r",
+          "count": 1701357,
+          "pct": 5.306
+        },
+        {
+          "unit": "i",
+          "count": 1601195,
+          "pct": 4.993
+        },
+        {
+          "unit": "m",
+          "count": 1384230,
+          "pct": 4.317
+        },
+        {
+          "unit": "v",
+          "count": 1316546,
+          "pct": 4.106
+        },
+        {
+          "unit": "n",
+          "count": 1278606,
+          "pct": 3.987
+        },
+        {
+          "unit": "y",
+          "count": 1267483,
+          "pct": 3.953
+        },
+        {
+          "unit": "s",
+          "count": 1065852,
+          "pct": 3.324
+        },
+        {
+          "unit": "e",
+          "count": 907307,
+          "pct": 2.829
+        },
+        {
+          "unit": "u",
+          "count": 869417,
+          "pct": 2.711
+        },
+        {
+          "unit": "p",
+          "count": 847829,
+          "pct": 2.644
+        },
+        {
+          "unit": "k",
+          "count": 743129,
+          "pct": 2.317
+        },
+        {
+          "unit": "d",
+          "count": 741926,
+          "pct": 2.314
+        },
+        {
+          "unit": "H",
+          "count": 701434,
+          "pct": 2.187
+        },
+        {
+          "unit": "M",
+          "count": 551429,
+          "pct": 1.72
+        },
+        {
+          "unit": "z",
+          "count": 465370,
+          "pct": 1.451
+        },
+        {
+          "unit": "S",
+          "count": 430612,
+          "pct": 1.343
+        },
+        {
+          "unit": "c",
+          "count": 419130,
+          "pct": 1.307
+        },
+        {
+          "unit": "h",
+          "count": 407770,
+          "pct": 1.272
+        },
+        {
+          "unit": "o",
+          "count": 391589,
+          "pct": 1.221
+        },
+        {
+          "unit": "B",
+          "count": 342157,
+          "pct": 1.067
+        },
+        {
+          "unit": "g",
+          "count": 319567,
+          "pct": 0.997
+        },
+        {
+          "unit": "R",
+          "count": 317378,
+          "pct": 0.99
+        },
+        {
+          "unit": "I",
+          "count": 311272,
+          "pct": 0.971
+        },
+        {
+          "unit": "j",
+          "count": 307884,
+          "pct": 0.96
+        },
+        {
+          "unit": "D",
+          "count": 304128,
+          "pct": 0.948
+        },
+        {
+          "unit": "l",
+          "count": 284383,
+          "pct": 0.887
+        },
+        {
+          "unit": "f",
+          "count": 247047,
+          "pct": 0.77
+        },
+        {
+          "unit": "T",
+          "count": 198824,
+          "pct": 0.62
+        },
+        {
+          "unit": "U",
+          "count": 178859,
+          "pct": 0.558
+        },
+        {
+          "unit": "E",
+          "count": 150494,
+          "pct": 0.469
+        },
+        {
+          "unit": "b",
+          "count": 136973,
+          "pct": 0.427
+        },
+        {
+          "unit": "w",
+          "count": 95456,
+          "pct": 0.298
+        },
+        {
+          "unit": "O",
+          "count": 79273,
+          "pct": 0.247
+        },
+        {
+          "unit": "Y",
+          "count": 71177,
+          "pct": 0.222
+        },
+        {
+          "unit": "K",
+          "count": 55508,
+          "pct": 0.173
+        },
+        {
+          "unit": "q",
+          "count": 46086,
+          "pct": 0.144
+        },
+        {
+          "unit": "N",
+          "count": 43486,
+          "pct": 0.136
+        }
+      ]
+    },
+    "graphemic": {
+      "total_aksharas": 15084217,
+      "top": [
+        {
+          "unit": "म",
+          "count": 828542,
+          "pct": 5.493
+        },
+        {
+          "unit": "त",
+          "count": 666101,
+          "pct": 4.416
+        },
+        {
+          "unit": "अ",
+          "count": 546056,
+          "pct": 3.62
+        },
+        {
+          "unit": "न",
+          "count": 451042,
+          "pct": 2.99
+        },
+        {
+          "unit": "व",
+          "count": 387866,
+          "pct": 2.571
+        },
+        {
+          "unit": "स",
+          "count": 343273,
+          "pct": 2.276
+        },
+        {
+          "unit": "र",
+          "count": 324743,
+          "pct": 2.153
+        },
+        {
+          "unit": "य",
+          "count": 293664,
+          "pct": 1.947
+        },
+        {
+          "unit": "च",
+          "count": 265186,
+          "pct": 1.758
+        },
+        {
+          "unit": "प",
+          "count": 249201,
+          "pct": 1.652
+        },
+        {
+          "unit": "द",
+          "count": 231965,
+          "pct": 1.538
+        },
+        {
+          "unit": "ति",
+          "count": 222663,
+          "pct": 1.476
+        },
+        {
+          "unit": "आ",
+          "count": 186602,
+          "pct": 1.237
+        },
+        {
+          "unit": "वि",
+          "count": 178147,
+          "pct": 1.181
+        },
+        {
+          "unit": "क",
+          "count": 175596,
+          "pct": 1.164
+        },
+        {
+          "unit": "इ",
+          "count": 165965,
+          "pct": 1.1
+        },
+        {
+          "unit": "ए",
+          "count": 162922,
+          "pct": 1.08
+        },
+        {
+          "unit": "उ",
+          "count": 153310,
+          "pct": 1.016
+        },
+        {
+          "unit": "वा",
+          "count": 145592,
+          "pct": 0.965
+        },
+        {
+          "unit": "ह",
+          "count": 141281,
+          "pct": 0.937
+        },
+        {
+          "unit": "श",
+          "count": 135836,
+          "pct": 0.901
+        },
+        {
+          "unit": "प्र",
+          "count": 134161,
+          "pct": 0.889
+        },
+        {
+          "unit": "ते",
+          "count": 132418,
+          "pct": 0.878
+        },
+        {
+          "unit": "नि",
+          "count": 121022,
+          "pct": 0.802
+        },
+        {
+          "unit": "ता",
+          "count": 118193,
+          "pct": 0.784
+        },
+        {
+          "unit": "मा",
+          "count": 116740,
+          "pct": 0.774
+        },
+        {
+          "unit": "ग",
+          "count": 108403,
+          "pct": 0.719
+        },
+        {
+          "unit": "रा",
+          "count": 108031,
+          "pct": 0.716
+        },
+        {
+          "unit": "ज",
+          "count": 106414,
+          "pct": 0.705
+        },
+        {
+          "unit": "ना",
+          "count": 103696,
+          "pct": 0.687
+        },
+        {
+          "unit": "स्य",
+          "count": 101662,
+          "pct": 0.674
+        },
+        {
+          "unit": "ल",
+          "count": 96805,
+          "pct": 0.642
+        },
+        {
+          "unit": "या",
+          "count": 96553,
+          "pct": 0.64
+        },
+        {
+          "unit": "भ",
+          "count": 91480,
+          "pct": 0.606
+        },
+        {
+          "unit": "का",
+          "count": 91466,
+          "pct": 0.606
+        },
+        {
+          "unit": "ण",
+          "count": 80430,
+          "pct": 0.533
+        },
+        {
+          "unit": "पा",
+          "count": 79589,
+          "pct": 0.528
+        },
+        {
+          "unit": "सं",
+          "count": 72560,
+          "pct": 0.481
+        },
+        {
+          "unit": "तु",
+          "count": 70785,
+          "pct": 0.469
+        },
+        {
+          "unit": "पु",
+          "count": 69907,
+          "pct": 0.463
+        }
+      ]
+    }
+  },
+  "note": "Phonemic = SLP1 character count (1 char = 1 phoneme, no digraphs). Graphemic = Devanagari akshara (orthographic syllable) count after SLP1/IAST -> Devanagari transliteration. The two diverge because of sandhi (e.g. a word-final consonant assimilating/eliding at a word boundary is a phonemic event with no single-word graphemic trace, and conversely visarga/anusvara alternations are graphemically stable but phonetically variable) -- this divergence has no German analog and is the module's main finding."
+}
