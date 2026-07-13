@@ -18,6 +18,16 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 
+def windows_hidden_flags():
+    """subprocess creationflags that suppress the transient console window ``taskkill``/``tasklist``
+    would otherwise flash on Windows (``CREATE_NO_WINDOW``). Returns 0 (no-op) on POSIX so the same
+    call is safe everywhere. Shared by proc_tree's taskkill and the selftests' tasklist so all three
+    sites behave consistently."""
+    if os.name == 'nt':
+        return getattr(subprocess, 'CREATE_NO_WINDOW', 0)
+    return 0
+
+
 def terminate_tree(proc, deadline):
     """**Bounded best-effort** tree termination — NOT race-free (tree enumeration still races
     process exit/spawn; correctness is what the parent->child->grandchild regression test asserts).
@@ -33,7 +43,8 @@ def terminate_tree(proc, deadline):
         budget = max(1.0, deadline - time.monotonic())
         try:
             subprocess.run(['taskkill', '/PID', str(proc.pid), '/T', '/F'],
-                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget)
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=budget,
+                           creationflags=windows_hidden_flags())   # no console-window flicker
         except (subprocess.TimeoutExpired, FileNotFoundError, OSError) as exc:
             trouble = 'taskkill:%s' % type(exc).__name__
     else:
