@@ -1,6 +1,6 @@
 # Markup-tag frequency census — csl-orig/v02, all 44 dictionaries
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 13-07-2026_
 
 **What this is.** The first computed row of the statistics-to-compute table in
 [DATA_LAYERS_CENSUS.md §3](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md):
@@ -152,5 +152,12 @@ The full list is computable from the TSV; the flagrant cases:
   6 and 3 inline `<L>` strays inside entry bodies worth a one-off look.
 - MW's `<i>` (×197), `<chg>`/`<old>`/`<new>` (×39/35) are editorial-apparatus
   tags at trace rates — apparatus, not under-marking.
+
+## FAIR release
+
+This dataset (E39) is bundled into
+[FAIR Release #1](FAIR_RELEASE_1.md) (H817 WS1.4) alongside the
+headword-overlap matrix and (cross-linked) the csl-atlas citation graph —
+CC-BY-4.0, Zenodo deposit metadata prepared, deposit itself parked as `@DO`.
 
 _Dr. Mārcis Gasūns_

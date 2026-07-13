@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **FAIR Release #1 metadata (H817 WS1.4)** — `CITATION.cff`, `DATA_LICENSE.md`,
+  and `data/FAIR_RELEASE_1.md` prepared for a curated Zenodo dataset deposit of
+  the markup-tag census (E39) and headword-overlap matrix (E40), cross-linked
+  to the csl-atlas citation graph (E38). Deliberately a file-level deposit,
+  not a whole-repo GitHub→Zenodo integration — this repo mixes in
+  third-party-rights-uncertain scan PDFs a full archive would sweep in. The
+  Zenodo upload itself is parked `@DO` (account/token gate).
+
 ### Changed
 - **H817 WS1.2** — `FEATURES_INDEX.md` registers E43–E46 (code-duplication census +
   LOC/language mix, already done pre-roadmap via H688 but unregistered; POS-per-text,

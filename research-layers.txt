@@ -1,3 +1,15 @@
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H792-Fable_claude-config_klammerdiagramm-skill-1to1_12.07.26.md and execute it.
+
+Next: запустить H792 (Fable) — довести Klammerdiagramm до 1:1 (встроенный Charis SIL) и оформить /klammerdiagramm 
+
+===
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md and execute it.
+
+Дал Кодексу Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H818-Codex_RussianTranslation_pwg-ru-full-pipeline-audit-4account-max-orchestration_12.07.26.md and execute it.
+
+====
+
+
 Which family should I optimize the 30-capability roadmap around first?
 Reasearch-grade - done?
 Production pipeline

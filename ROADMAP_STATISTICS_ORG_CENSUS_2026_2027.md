@@ -168,16 +168,34 @@ and gets one handoff at execution time.
   transcoder ×62, digentry ×170 → the sanskrit-util payoff baseline); POS distribution per
   text (L3); sense/polysemy distribution per dict (L1); paradigm-cell coverage (L2); LOC &
   language mix (L6). 📄 + 📊. Home: csl-observatory + SanskritLexicography.
-- **WS1.3 — Statistics dashboard skeleton.** One Observable page per layer in
-  [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory), seeded with the
-  ~28 already-computed stats, each figure carrying the house trust block (source artifact,
-  n, date) + a CSV-download data-table fallback (the `/viz-page` pattern). 📊.
-- **WS1.4 — FAIR release #1.** Zenodo concept DOI + `CITATION.cff` for the three shipped
-  stat datasets (citation graph, overlap matrix, markup census). Directly attacks
-  ATLAS_FAIR **G1** (no persistent identifiers). 📦.
+- **WS1.3 — Statistics dashboard skeleton. ✅ done 13-07-2026 (Sonnet 5 `claude-sonnet-5`,
+  H817).** 6 Observable pages shipped in
+  [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) (PR
+  [#89](https://github.com/sanskrit-lexicon/csl-observatory/pull/89), merged): a
+  census overview + one page per L1–L5 layer, seeded from a new
+  `stats_census_register.csv` feed (~60 rows across all 7 layers), each figure
+  carrying the house trust block (source artifact, n, date) + a filterable
+  data-table fallback + CSV download (the `/viz-page` pattern). L6 already has
+  extensive dedicated coverage (repo health, org shape, community pages); L7
+  is mostly ○ not started / gated, tracked in the register but no dedicated
+  page yet. 📊.
+- **WS1.4 — FAIR release #1. Metadata prepared 13-07-2026 (Sonnet 5
+  `claude-sonnet-5`, H817); deposit itself parked `@DO` (Zenodo account/token,
+  MG-gated).** `CITATION.cff` + `DATA_LICENSE.md` added to this repo;
+  [`data/FAIR_RELEASE_1.md`](data/FAIR_RELEASE_1.md) packages the markup-tag
+  census (E39) + headword-overlap matrix (E40) as one curated, file-level
+  Zenodo deposit (CC-BY-4.0, deposit-ready metadata JSON included) —
+  deliberately **not** a whole-repo GitHub→Zenodo integration, since this repo
+  mixes in third-party-rights-uncertain scan PDFs a full archive would sweep
+  in. The citation graph (E38, csl-atlas) is cross-linked, not duplicated;
+  csl-atlas already carries its own prepared `.zenodo.json` for a
+  repo-level integration there — enabling it + cutting a release is a
+  separate `@DO`. Directly attacks ATLAS_FAIR **G1** (no persistent
+  identifiers). 📦.
 
 **Q1 targets:** 100 % of *descriptive* rows → ✅; ≥1 single-copy giant backed up; ≥6
-observatory stat-pages live; FAIR release #1 minted.
+observatory stat-pages live ✅ (6 shipped, H817 WS1.3); FAIR release #1 metadata
+prepared, deposit `@DO` (Zenodo account gate, H817 WS1.4).
 
 ### Q2 · Oct–Dec 2026 — "The analytical layer"
 
