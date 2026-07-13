@@ -755,7 +755,7 @@ then Workflow → `audit_window.py` → `promote_final_cards.py --merge`. `no_pw
 
 ---
 
-## 2026-07-13 — no-PWG lane `no_pwg_w08_rq1` (H255 drain — `--max-wide=3 --stagger-ms=2000` requeue of w08's nulls) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`) — 🟡 6 PROMOTED, another H811 confirmation
+## 2026-07-13 — no-PWG lane `no_pwg_w08_rq1` (H255 drain — `--max-wide=3 --stagger-ms=2000` requeue of w08's nulls) — gen **Sonnet 5** (`claude-sonnet-5`) / orchestration **Opus 4.8** (`claude-opus-4-8`) — 🟡 6 PROMOTED, low-width concurrency recovery
 
 **The requeue (`wf_8d3bea69-5dd`, ≤3-wide, 1.77 M tok, 14.4 min).** 18 keys = w08's 19 transient nulls + the `cakrikA~~pw` defect for a retry, **minus** the 2 content-hard (`avyAhata`/`avyagra~~pw`, H834 class). Bounded dispatch (`boundedParallel`, ≤3 in flight, 2 s stagger) caps below the runtime's ~10-wide.
 
