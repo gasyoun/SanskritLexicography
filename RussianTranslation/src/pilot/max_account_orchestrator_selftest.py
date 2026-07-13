@@ -4,7 +4,10 @@ import os
 import sqlite3
 import sys
 import tempfile
+import threading
 import types
+
+import run_observability as ro
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -160,6 +163,88 @@ def main():
     assert m.promotion_classification({'store_delta': 0, 'clean_count': 3}) == 'conflict'
     assert m.promotion_classification({'store_delta': None, 'clean_count': 1}) == 'conflict'
     print('  D-H promotion telemetry: success / not_attempted / conflict distinguished')
+
+    # D-G REAL concurrency race (repeated to catch flakiness). Two INDEPENDENT connections are
+    # opened BEFORE the barrier; both threads then fire the real claim transaction (_claim_tx) at
+    # the same instant. BEGIN IMMEDIATE + busy_timeout serialize them: exactly one wins, the other
+    # is refused (never SQLITE_BUSY / "database is locked"), and exactly one job stays pending.
+    import time as _time
+    for _round in range(8):
+        with tempfile.TemporaryDirectory() as td:
+            db = os.path.join(td, 'race.sqlite')
+            m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'), '--skip-profile-check'])
+            for n in range(2):     # two pending jobs, one account -> only one may run at a time
+                m.main(['--db', db, 'enqueue', '--external-id', 'r%d' % n, '--argv-json', json.dumps(['x']),
+                        '--cwd', td, '--output', os.path.join(td, 'r%d.json' % n)])
+            barrier = threading.Barrier(2)
+            results = [None, None]
+            errors = []
+
+            def claimer(i, _db=db):
+                # each thread opens its OWN connection (SQLite objects are thread-affine), THEN
+                # waits at the barrier — so both connections are open before the barrier releases
+                # and both fire the claim transaction at the same instant.
+                conn = m.connect(_db)
+                try:
+                    barrier.wait()                               # barrier immediately before the claim tx
+                    results[i] = m._claim_tx(conn, 'acc1', int(_time.time()))
+                except Exception as exc:                         # noqa: BLE001 - collect; assert none below
+                    errors.append(repr(exc))
+                finally:
+                    conn.close()
+
+            ts = [threading.Thread(target=claimer, args=(i,)) for i in range(2)]
+            for t in ts:
+                t.start()
+            for t in ts:
+                t.join()
+            assert not errors, 'round %d claimers raised (SQLITE_BUSY?): %s' % (_round, errors)
+            winners = [r for r in results if r is not None]
+            assert len(winners) == 1, 'round %d: exactly one winner expected, got %d' % (_round, len(winners))
+            con = sqlite3.connect(db)
+            n_inprog = con.execute("select count(*) from jobs where state='in_progress' and assigned_acc='acc1'").fetchone()[0]
+            n_pending = con.execute("select count(*) from jobs where state='pending'").fetchone()[0]
+            con.close()
+            assert n_inprog == 1 and n_pending == 1, 'round %d: in_progress=%d pending=%d' % (_round, n_inprog, n_pending)
+    print('  D-G REAL race x8: independent conns, barrier-synced -> one winner + one still-pending, no SQLITE_BUSY')
+
+    # D-I telemetry exactly-once. (a) one 5-key call -> one latency sample + one classification,
+    # key relations excluded; (b) the call-level event preserves lease/window/attempt/account/
+    # manifest; (c) a retry (worker label '.retry1') is a DISTINCT invocation/call_id; (d) an exact
+    # crash-restart re-append dedups, while a conflicting re-append (same call_id, different data)
+    # is surfaced in conflicting_call_ids.
+    with tempfile.TemporaryDirectory() as td:
+        ev = os.path.join(td, 'events.jsonl')
+        base = {'run_id': 'r', 'lease_id': 'w01', 'window_id': 'w01', 'attempt': 1,
+                'account': 'acc1', 'manifest_hash': 'abc123def456ff'}
+        item = {'keys': ['k1', 'k2', 'k3', 'k4', 'k5'], 'elapsed_ms': 4200, 'classification': 'success',
+                'label': 'card_x', 'manifest_sha256': 'abc123def456ff'}
+        m.emit_call_events(ev, item, 0, 'abc123def456ff', base)
+        rows = ro.read_events(ev)
+        call_rows = [r for r in rows if r.get('event') == 'model_call']
+        key_rows = [r for r in rows if r.get('event') == 'model_call_key']
+        assert len(call_rows) == 1 and call_rows[0]['key_count'] == 5, call_rows
+        assert len(key_rows) == 5 and all('elapsed_ms' not in r for r in key_rows), key_rows
+        cl = call_rows[0]
+        assert all(cl.get(f) == base[f] for f in ('lease_id', 'window_id', 'attempt', 'account', 'manifest_hash')), cl
+        census = ro.build_census(rows)
+        assert census['latency_ms'] == {'p50': 4200, 'p95': 4200, 'max': 4200}, census['latency_ms']
+        assert census['classification_counts'] == {'success': 1} and census['model_calls'] == 1, census
+        assert census['conflicting_call_ids'] == [], census['conflicting_call_ids']
+        cid0 = cl['call_id']
+        # (c) a retry of the same card is a DISTINCT invocation (label '.retry1')
+        m.emit_call_events(ev, dict(item, label='card_x.retry1', elapsed_ms=5100), 1, 'abc123def456ff', base)
+        assert ro.build_census(ro.read_events(ev))['model_calls'] == 2, 'retry must be a distinct call'
+        # (d) an identical crash re-append of the first event dedups to one sample, no conflict
+        m.emit_call_events(ev, item, 0, 'abc123def456ff', base)
+        c2 = ro.build_census(ro.read_events(ev))
+        assert c2['model_calls'] == 2 and c2['conflicting_call_ids'] == [], c2
+        assert sorted(c2['latency_ms'].values()) == [4200, 5100, 5100], c2['latency_ms']
+        # a CONFLICTING re-append (same call_id, different latency) is surfaced, not silently merged
+        ro.append_event(ev, stage='worker', event='model_call', call_id=cid0, key_count=5,
+                        elapsed_ms=9999, classification='success', **base)
+        assert cid0 in ro.build_census(ro.read_events(ev))['conflicting_call_ids']
+    print('  D-I exactly-once: 5-key=1 sample; retry distinct; dupe dedup; conflict flagged; context preserved')
 
     print('max_account_orchestrator_selftest: PASS')
 

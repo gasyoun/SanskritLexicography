@@ -14,7 +14,16 @@ ALLOWED = {
     'elapsed_ms', 'calls', 'retries', 'reset_at', 'cards', 'clean',
     'fidelity_rejects', 'unaccounted_keys', 'store_before', 'store_after',
     'tm_before', 'tm_after', 'note',
+    # D-I: a real model call emits ONE call-level 'model_call' event carrying call_id +
+    # key_count (+ elapsed_ms) and, separately, one 'model_call_key' relation event per key.
+    # The per-key events carry no elapsed_ms and are excluded from the latency/classification
+    # census, so a 5-key call yields exactly one latency sample and one classification count.
+    'call_id', 'key_count',
 }
+
+# per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
+# NEVER counted as a latency sample or a classification tally (that is the call-level event's job).
+KEY_RELATION_EVENT = 'model_call_key'
 
 
 def utc_now():
@@ -58,13 +67,36 @@ def percentile(values, p):
 
 
 def build_census(rows):
-    classes = collections.Counter(r.get('classification') for r in rows
-                                  if r.get('classification'))
+    # D-I exactly-once accounting. A crash/restart can re-append an event to the append-only log,
+    # so call-level 'model_call' events are DEDUPED by call_id (first occurrence wins). A repeat
+    # carrying a DIFFERENT (elapsed_ms, classification) is a *conflicting duplicate* and is
+    # surfaced in `conflicting_call_ids`. Per-key 'model_call_key' relation events NEVER count
+    # toward calls, latency, or classification — they feed only the per-key repeated-failure map.
+    seen_calls = {}                 # call_id -> (elapsed_ms, classification) of the first event
+    conflicting = set()
+    census_rows = []                # deduped call-level rows + every non-call, non-key-relation row
+    for r in rows:
+        ev = r.get('event')
+        if ev == KEY_RELATION_EVENT:
+            continue
+        if ev == 'model_call' and r.get('call_id') is not None:
+            cid = r['call_id']
+            sig = (r.get('elapsed_ms'), r.get('classification'))
+            if cid not in seen_calls:
+                seen_calls[cid] = sig
+                census_rows.append(r)
+            elif seen_calls[cid] != sig:
+                conflicting.add(cid)       # same call_id, different data -> real conflict
+            # exact re-append of an already-seen call_id is idempotent -> silently dropped
+            continue
+        census_rows.append(r)
+    classes = collections.Counter(r.get('classification') for r in census_rows if r.get('classification'))
     by_key = collections.defaultdict(collections.Counter)
-    for row in rows:
+    for row in rows:                # by_key scans ALL rows, incl. key-relation events (they carry key+class)
         if row.get('key') and row.get('classification') not in (None, 'success'):
             by_key[row['key']][row['classification']] += 1
-    latencies = [int(r['elapsed_ms']) for r in rows if r.get('elapsed_ms') is not None]
+    # one latency sample per unique call (key-relation events have no elapsed_ms; dupes deduped)
+    latencies = [int(r['elapsed_ms']) for r in census_rows if r.get('elapsed_ms') is not None]
     unaccounted = sorted({key for r in rows for key in (r.get('unaccounted_keys') or [])})
     calls = sum(int(r.get('calls') or 0) for r in rows)
     retries = sum(int(r.get('retries') or 0) for r in rows)
@@ -72,10 +104,11 @@ def build_census(rows):
     cards = sum(int(r.get('cards') or 0) for r in rows if r.get('event') == 'run_summary')
     fidelity = sum(int(r.get('fidelity_rejects') or 0) for r in rows
                    if r.get('event') == 'run_summary')
-    quota = [r for r in rows if r.get('classification') == 'rate_limit']
+    quota = [r for r in census_rows if r.get('classification') == 'rate_limit']
     return {
         'schema': 'pwg.bug_census.v1', 'generated_at': utc_now(),
         'events': len(rows), 'classification_counts': dict(sorted(classes.items())),
+        'model_calls': len(seen_calls), 'conflicting_call_ids': sorted(conflicting),
         'repeated_by_key': {k: dict(v) for k, v in sorted(by_key.items()) if sum(v.values()) > 1},
         'latency_ms': {'p50': percentile(latencies, .50), 'p95': percentile(latencies, .95),
                        'max': max(latencies) if latencies else None},
