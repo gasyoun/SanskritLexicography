@@ -143,13 +143,15 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
+    # Console summary kept deliberately terse: CodeQL's clear-text-logging-sensitive-data
+    # query pattern-matches on the word "gender" and flags verbose dumps of the
+    # gender-labeled dicts as if they were personal data (they are grammatical-gender
+    # dictionary statistics, not PII) -- avoided here by printing only counts, with the
+    # full per-gender breakdown left to the committed JSON output instead.
     print(f"n_total rows: {n_total}")
-    print(f"lex counts: {lex_counts.most_common(20)}")
-    # lgtm[py/clear-text-logging-sensitive-data] -- false positive: "gender" here is
-    # grammatical gender (PWG dictionary m./f./n. classification), not personal data.
-    print(f"n_gendered_simple: {n_gendered_simple}, shares: {simple_shares}")  # lgtm[py/clear-text-logging-sensitive-data]
-    print(f"n_multi_gender: {n_multi}, breakdown: {dict(gendered)}")  # lgtm[py/clear-text-logging-sensitive-data]
-    print(f"unmapped: {dict(unmapped)}")
+    print(f"n_gendered_simple: {n_gendered_simple}")
+    print(f"n_multi_gender: {n_multi}")
+    print(f"n_unmapped_lex_values: {len(unmapped)}")
     print(f"wrote {out_path}")
 
 
