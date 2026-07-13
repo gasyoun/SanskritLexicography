@@ -1,6 +1,6 @@
 # Generation-API probe log — pwg_ru Workflow launches
 
-_Created: 10-07-2026 · Last updated: 12-07-2026_
+_Created: 10-07-2026 · Last updated: 14-07-2026_
 
 Append-only, machine-written. Source of truth is
 [`src/pilot/generation_api_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/generation_api_probe_log.jsonl);
@@ -37,6 +37,10 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-12T16:34:14Z | warmup | GO | 26.0s | 0 | 6491B | h709-reprobe | H709 | H709 SERVER_OUTAGES re-probe: load-representative warm-up (6491B masked band-4 skeleton). GO by mechanical gate but latency ~26s vs 3.3s healthy baseline = marginal/degraded-recovering; expensive medium50 launch deliberately NOT fired (H709 cheapest-task-only rule + medium50 paused on code side). |
 | 2026-07-12T17:31:06Z | launch | GO | 0.0s | 0 | — | no_pwg_w07_rq1 | H255 | H811 --max-wide=3 --stagger-ms=2000 requeue of w07's 31 nulls (low-width validation); no pre-launch probe — the point was to test <=3-wide on a still-degraded API |
 | 2026-07-12T17:57:40Z | launch | GO | 0.0s | 0 | — | no_pwg_w07_rq2 | H255 | H811 --max-wide=2 --stagger-ms=3000 pass on rq1's 8 residual non-presplit kills (width-sweep step) |
+| 2026-07-13T03:41:42Z | launch | GO | — | — | — | no_pwg_w08 | H255 | no_pwg_w08 fresh 20-headword/21-subcard window off origin/master (worktree h255-no-pwg-w08). GO probe (18.7s) UNDER-PREDICTED the ~10-wide concurrent window: 1 clean (cUlikA) / 1 defect (cakrikA) / 19 transient 180s-CEIL kill-timeouts on 126-975B skeletons, 0 conn-errors, budget not tripped. Classic H811 concurrency-degradation. Store 11553->11555. 19 transients -> --max-wide=3 requeue. |
+| 2026-07-13T04:14:27Z | launch | GO | — | — | — | no_pwg_w08_rq1 | H255 | H811 --max-wide=3 --stagger-ms=2000 requeue of w08's 18 non-content-hard nulls (dropped avy_ahata/avyagra). Throughput jumped 14/18 non-null (vs 1/21 at ~10-wide) confirming H811; but 8/14 returned content-defective on these hard headwords -> 6 clean promoted, store 11555->11562. 4 null (2 fidelity-reject + 2 kill-timeout arvant/b_ahlika). 0 conn-errors. |
+| 2026-07-13T05:58:08Z | launch | GO | — | — | — | no_pwg_w09 | H255 | no_pwg_w09 fresh queue window (--start-index 9), run bounded --max-wide=3 from the start given this session's demonstrated ~10-wide degradation. 12/21 non-null (vs w08's 2/21 at ~10-wide) — bounding fixed throughput — but 15/21 are content-defects (9 non-null defect + 6 fidelity-reject), only 3 clean promoted (brahmani/cakrika/hatya). Store 11562->11567. Bottleneck now content-fidelity not concurrency. 0 conn-errors. |
+| 2026-07-13T21:43:54Z | launch | GO | — | 0 | — | no_pwg_w10 | H255 | bounded --max-wide=3 --stagger-ms=2000 from launch, no isolated pre-probe (mitigation applied regardless, per w09 precedent); 11/18 non-null (9 real + 2 degenerate), 7 residual (6 fidelity-reject known-class incl. 2 newly-confirmed members arvant/jawAyus, 1 kill-timeout) |
 
 ## Measured launch outcomes
 
@@ -47,5 +51,9 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-12T15:42:11Z | no_pwg_w07 | 5/36 | 38 | 0.53M | 32 | 0 | no |
 | 2026-07-12T17:31:06Z | no_pwg_w07_rq1 | 17/31 | 34 | 1.89M | 15 | 0 | no |
 | 2026-07-12T17:57:41Z | no_pwg_w07_rq2 | 5/8 | 10 | 0.68M | 3 | 0 | no |
+| 2026-07-13T03:41:43Z | no_pwg_w08 | —/— | — | — | — | — | no |
+| 2026-07-13T04:14:28Z | no_pwg_w08_rq1 | —/— | — | — | — | — | no |
+| 2026-07-13T05:58:09Z | no_pwg_w09 | —/— | — | — | — | — | no |
+| 2026-07-13T21:43:54Z | no_pwg_w10 | 11/18 | 30 | 1.74M | 9 | 0 | no |
 
 _Dr. Mārcis Gasūns_
