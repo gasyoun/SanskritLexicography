@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H818 Windows acceptance hardening — four defects (D-E…D-H) fixed + regression-tested.**
+  A live Windows re-acceptance of the H852-fixed headless pipeline surfaced four defects
+  beyond the D-A…D-D invocation fixes: **D-E** `translation_memory.py` hardcoded a
+  worktree-local `DEFAULT_STORE` and did not use `store_path.canonical_store`, so
+  `coordinator.promote_ready`'s post-promotion `translation_memory.py build` failed
+  `store not found` under a git worktree (latent until the first successful worktree
+  promotion); **D-F** `live_probe` enforced only `rc 0`, not the repository probe gate,
+  so 50,991 ms / 36,684 ms readings proceeded instead of NO-GO — it now also requires
+  payload ≥ 5 KB, exact model `claude-sonnet-5`, and latency ≤ 30000 ms; **D-G** the
+  SQLite `claim` did not refuse an account already running an `in_progress` job, so the
+  "one account, strictly sequential" contract was not atomic — now enforced inside the
+  `BEGIN IMMEDIATE` transaction (race test added); **D-H** promotion telemetry reported
+  any non-positive delta as `conflict`, mislabelling the common audit-`needs_requeue`/
+  zero-clean case (which never attempts promotion) — now `success` / `not_attempted` /
+  `conflict` are distinguished. Regression tests land in
+  `max_account_orchestrator_selftest.py`, `store_path.py --selftest`, and
+  `translation_memory.py selftest` (RU+EN); CI runs the store_path + translation_memory
+  selftests; LANG_PARITY SHARED entries re-verified. (13-07-2026, Opus 4.8
+  `claude-opus-4-8`, H818/H852 lineage.)
+
 ### H781 — grammar layer (Whitney root / nominal) as its own LOD graph on the shared lemma spine
 - New `grammar` mode in
   [`src/export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py)
