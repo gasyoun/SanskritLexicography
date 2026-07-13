@@ -1,0 +1,427 @@
+{
+  "module": 6,
+  "title": "longest compounds (samasa)",
+  "trust_block": {
+    "source": "VisualDCS DCS-data-2026/dcs_full.sqlite (DCS-2026 release), token.form surface forms",
+    "n": {
+      "total_tokens": null,
+      "distinct_forms": 381413,
+      "distinct_forms_meeting_floor": 91726,
+      "occurrence_floor": 5
+    },
+    "date": "2026-07-13",
+    "model": "Sonnet 5 (claude-sonnet-5)"
+  },
+  "record_with_floor": {
+    "form": "sāgaravaradharabuddhivikrīḍitābhijñasya",
+    "occurrences": 5,
+    "char_length": 39,
+    "akshara_length": 16
+  },
+  "top50_with_floor": [
+    {
+      "form": "sāgaravaradharabuddhivikrīḍitābhijñasya",
+      "occurrences": 5,
+      "char_length": 39,
+      "akshara_length": 16
+    },
+    {
+      "form": "aniṣṭapratigrahādayo'bhipretāḥ",
+      "occurrences": 6,
+      "char_length": 30,
+      "akshara_length": 12
+    },
+    {
+      "form": "mahābhijñājñānābhibhuvaṃ",
+      "occurrences": 12,
+      "char_length": 24,
+      "akshara_length": 9
+    },
+    {
+      "form": "mahābhijñājñānābhibhūḥ",
+      "occurrences": 11,
+      "char_length": 22,
+      "akshara_length": 8
+    },
+    {
+      "form": "paranirmitavaśavartino",
+      "occurrences": 17,
+      "char_length": 22,
+      "akshara_length": 10
+    },
+    {
+      "form": "nirūḍhapaśubandhasya",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 8
+    },
+    {
+      "form": "pratisaṃskartṛsūtram",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 8
+    },
+    {
+      "form": "sahasrasaṃvatsarasya",
+      "occurrences": 9,
+      "char_length": 20,
+      "akshara_length": 8
+    },
+    {
+      "form": "satatasamitābhiyukta",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 9
+    },
+    {
+      "form": "vātavyādhicikitsitaṃ",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 8
+    },
+    {
+      "form": "yāvadābhūtasamplavam",
+      "occurrences": 7,
+      "char_length": 20,
+      "akshara_length": 9
+    },
+    {
+      "form": "śrīmālinīvijayottare",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 9
+    },
+    {
+      "form": "ūrdhvapātanayantreṇa",
+      "occurrences": 5,
+      "char_length": 20,
+      "akshara_length": 8
+    },
+    {
+      "form": "darśapūrṇamāsābhyām",
+      "occurrences": 5,
+      "char_length": 19,
+      "akshara_length": 8
+    },
+    {
+      "form": "mahāmaudgalyāyanena",
+      "occurrences": 5,
+      "char_length": 19,
+      "akshara_length": 8
+    },
+    {
+      "form": "saddharmapuṇḍarīkaṃ",
+      "occurrences": 19,
+      "char_length": 19,
+      "akshara_length": 7
+    },
+    {
+      "form": "sahasrasaṃvatsareṇa",
+      "occurrences": 7,
+      "char_length": 19,
+      "akshara_length": 8
+    },
+    {
+      "form": "siddhayogīśvarīmate",
+      "occurrences": 5,
+      "char_length": 19,
+      "akshara_length": 8
+    },
+    {
+      "form": "śuśumāragirīyakānāṃ",
+      "occurrences": 7,
+      "char_length": 19,
+      "akshara_length": 9
+    },
+    {
+      "form": "abhiśraddadhāsyasi",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "adhaḥpātanayantraṃ",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "aindrābārhaspatyam",
+      "occurrences": 10,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "aindrābārhaspatyaṃ",
+      "occurrences": 15,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "aṣṭottarasahasreṇa",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 8
+    },
+    {
+      "form": "brāhmaṇācchaṃsinam",
+      "occurrences": 6,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "brāhmaṇācchaṃsinaś",
+      "occurrences": 7,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "brāhmaṇācchaṃsinaḥ",
+      "occurrences": 24,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "kṛṣṇadvaipāyanasya",
+      "occurrences": 11,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "mahāmaudgalyāyanaḥ",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "naravāhanadattasya",
+      "occurrences": 17,
+      "char_length": 18,
+      "akshara_length": 8
+    },
+    {
+      "form": "pratiprasrabhyante",
+      "occurrences": 16,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "pratyabhighārayati",
+      "occurrences": 10,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "pratyanubhaviṣyati",
+      "occurrences": 25,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "pravartyamānābhyām",
+      "occurrences": 6,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "rasendracintāmaṇau",
+      "occurrences": 7,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "saddharmapuṇḍarīko",
+      "occurrences": 6,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "samyaksambuddhasya",
+      "occurrences": 38,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "samyaksaṃbuddhasya",
+      "occurrences": 45,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "samyaksaṃbuddhānām",
+      "occurrences": 22,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "samyaksaṃbuddhānāṃ",
+      "occurrences": 12,
+      "char_length": 18,
+      "akshara_length": 6
+    },
+    {
+      "form": "saṃpraharṣayiṣyati",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "saṃprakāśayitavyaḥ",
+      "occurrences": 6,
+      "char_length": 18,
+      "akshara_length": 7
+    },
+    {
+      "form": "upakaniṣṭhikābhyām",
+      "occurrences": 5,
+      "char_length": 18,
+      "akshara_length": 8
+    },
+    {
+      "form": "abhinirvartayanti",
+      "occurrences": 9,
+      "char_length": 17,
+      "akshara_length": 7
+    },
+    {
+      "form": "abhiniṣkramiṣyati",
+      "occurrences": 11,
+      "char_length": 17,
+      "akshara_length": 7
+    },
+    {
+      "form": "abhisaṃbhotsyante",
+      "occurrences": 11,
+      "char_length": 17,
+      "akshara_length": 6
+    },
+    {
+      "form": "abhisaṃprasthitāḥ",
+      "occurrences": 5,
+      "char_length": 17,
+      "akshara_length": 6
+    },
+    {
+      "form": "agnihotrahavaṇyām",
+      "occurrences": 6,
+      "char_length": 17,
+      "akshara_length": 8
+    },
+    {
+      "form": "agnihotrahavaṇyāṃ",
+      "occurrences": 5,
+      "char_length": 17,
+      "akshara_length": 7
+    },
+    {
+      "form": "aindrābārhaspatyā",
+      "occurrences": 6,
+      "char_length": 17,
+      "akshara_length": 6
+    }
+  ],
+  "record_no_floor": {
+    "form": "vyādhavākyopadeśakathanapūrvakadānādiphalavarṇanaṃ",
+    "occurrences": 1,
+    "char_length": 50
+  },
+  "length_distribution_char": [
+    [
+      1,
+      26
+    ],
+    [
+      2,
+      136
+    ],
+    [
+      3,
+      622
+    ],
+    [
+      4,
+      3063
+    ],
+    [
+      5,
+      7968
+    ],
+    [
+      6,
+      14055
+    ],
+    [
+      7,
+      17501
+    ],
+    [
+      8,
+      16473
+    ],
+    [
+      9,
+      13017
+    ],
+    [
+      10,
+      9007
+    ],
+    [
+      11,
+      5199
+    ],
+    [
+      12,
+      2512
+    ],
+    [
+      13,
+      1243
+    ],
+    [
+      14,
+      481
+    ],
+    [
+      15,
+      225
+    ],
+    [
+      16,
+      115
+    ],
+    [
+      17,
+      40
+    ],
+    [
+      18,
+      24
+    ],
+    [
+      19,
+      6
+    ],
+    [
+      20,
+      8
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      39,
+      1
+    ]
+  ],
+  "note": "'Compound' here means the longest attested single orthographic word in the DCS corpus (Duden's own unit for the Bandwurmwort record), not a formally verified samasa parse -- DCS does not corpus-wide segment every long noun into its samasa members, so a handful of top entries could in principle be non-compound single stems (rare at this length in Sanskrit) or proper-name/colophon strings. The record_no_floor entry shows why the floor matters: without it, a hapax colophon title sets an unrepresentative 'record', exactly the failure mode Duden's own floor avoids."
+}

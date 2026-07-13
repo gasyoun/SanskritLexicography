@@ -21,6 +21,21 @@ not an error.
   `ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md` Part 0 from ○/◐ to ✅/◐ and bumps its
   `Last updated`.
 
+## [1.9.7] - 2026-07-13
+
+### Added
+- **H813 — «Санскрит в цифрах» Wave 0 + Wave 1 (Sanskrit-in-Numbers, the Duden
+  *Sprache in Zahlen* analog).** New `papers/sanskrit_in_numbers/`: Wave 0 assembles
+  the already-owned modules (vocab size → A40/A55, POS → A56, lemma/token +
+  a new Zipf coverage curve → VisualDCS) into `MODULES_OWNED.md`; Wave 1 ships
+  the five NEW modules with reproducible generator scripts + committed JSON
+  datasets — akṣara/phoneme frequency (Module 5), longest compounds with a
+  ≥5-occurrence honesty floor (Module 6), gender distribution (Module 8),
+  samāsa types best-effort via DCS's UD-style `compound:coord` tag (Module 9,
+  explicitly flagged — no fabricated tatpuruṣa/bahuvrīhi split), and verb
+  classes + parasmaipada/ātmanepada/ubhayapada voice from WhitneyRoots (Module
+  10). See `WAVE1_SUMMARY.md` for headline numbers + trust blocks.
+
 ## [1.9.6] - 2026-07-13
 
 ### Fixed
