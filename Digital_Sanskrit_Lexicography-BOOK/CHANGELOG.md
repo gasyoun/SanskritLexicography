@@ -7,6 +7,27 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 13-07-2026 (H860, Ch. 12 conversion)
+
+- **Ch. 12 converted journal→book** →
+  [chapters/ch12_apparatus_not_errors.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch12_apparatus_not_errors.md),
+  the book-form version of A10 *Apparatus, Not Errors: How Monier-Williams Inherited the
+  Petersburg Lexicon* (csl-atlas source
+  [article_21_apparatus_not_errors.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md)).
+  Abstract folded into the opening, provenance headnote added (A10 stays citable at *Digital
+  Scholarship in the Humanities*), companion redundancy/L0 material remapped to **Ch. 9** + the
+  **Ch. 2 §3.1** containment-is-a-floor rule, and the crosswalk grounding woven in — **Hartmann
+  & James** ("dictionary archaeology"), **Zgusta 1988** (*Copying in Lexicography*, carried
+  from Ch. 2), **Jackson/Landau** (inheritance-is-a-truism → M01's delta is quantification at
+  corpus scale), **Baalbaki** (Ibn Manẓūr absorbing the *Nihāya* "without mentioning him"),
+  **Dickey** (the Homer-scholia *Viermännerkommentar* source-precedence), **Ferri/Furno**
+  (Calepino→Estienne accretion), **O'Keeffe & McCarthy** (forensic-linguistics fingerprinting).
+  Every count and table (41-dict calibration; rare-lemma containment PWG→MW 0.70/0.82; citation
+  source-Jaccard 0.16–0.19 vs 0.004–0.017 null; 587 rare shared refs, 41,552 compressions;
+  homonym 64–77%; citation-order 0.811 / 47.8% identical; Ahlborn 2/123≈0% shared error; 206/565
+  Harivaṃśa corroborated ≈75× null) carried over unchanged. **8 of 14 chapters now in book
+  form** (ch01, ch02, ch04, ch05, ch08, ch09, ch10, ch12).
+
 ### Added — 13-07-2026 (H857, Ch. 8 conversion)
 
 - **Ch. 8 converted journal→book** →
