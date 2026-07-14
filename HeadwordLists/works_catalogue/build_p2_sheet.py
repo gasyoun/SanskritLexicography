@@ -1,3 +1,13 @@
+# NOT ported to csl_pyutil.render_review_sheet() (H931, 14-07-2026, Sonnet 5
+# `claude-sonnet-5`) — deliberate skip, not an oversight. render_review_sheet()
+# pre-renders every card into one static server-side HTML blob; this sheet's
+# candidate set is 49,019 rows (Tier C 5,353 + Tier D 43,666, measured
+# 14-07-2026), so it instead virtualizes: only ~15-20 <div class="row"> nodes
+# ever exist in the DOM at once (absolute positioning + a scroll-driven
+# renderVisible() window), with the full dataset kept as an embedded JS array.
+# A full-DOM render at this scale would be a real regression (slow initial
+# paint, laggy scroll, high memory) for zero benefit — the emitter has no
+# virtualization support. Kept as its own hand-rolled shell.
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
