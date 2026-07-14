@@ -5,6 +5,9 @@ zettelkastenwiki @ git+https://github.com/gasyoun/ZettelkastenWiki@481a3da
 # ACC x NCC works-catalogue P1 fuzzy crosswalk (Tier D edit-distance)
 rapidfuzz
 
+# Shared review-sheet HTML emitter (H925) — RussianTranslation/src/build_renou_pilot_sheet.py
+csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@main
+
 # Unconditional top-level imports across tracked scripts
 requests
 indic-transliteration
