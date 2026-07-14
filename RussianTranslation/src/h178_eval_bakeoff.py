@@ -342,7 +342,7 @@ RUBRIC_JS = """
         }) };
       var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       var url = URL.createObjectURL(blob); var a = document.createElement('a');
-      a.href = url; a.download = 'decisions.json'; document.body.appendChild(a); a.click();
+      a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
       document.body.removeChild(a); URL.revokeObjectURL(url);
     });
   }
