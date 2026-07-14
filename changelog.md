@@ -14,6 +14,13 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.9] - 2026-07-14
+
+### Fixed
+- **PWG→Russian no-PWG promotion safety** — planner manifests now emit an explicit
+  single-window workflow glob and exact generation model id; merge promotions refuse the
+  implicit repo-root glob that repeatedly ingested unrelated stale workflow artifacts.
+
 ## [1.9.8] - 2026-07-14
 
 ### Added
