@@ -190,6 +190,16 @@ def preflight_json(root, keys):
     return json.loads(run_cmd(cmd, capture=True))
 
 
+def promotion_command(workflow_output, gen_model_version):
+    """Return the single-window, merge-safe promotion command for a plan row."""
+    if not gen_model_version or gen_model_version in ('sonnet', 'claude-sonnet'):
+        raise ValueError('an exact generation model id is required')
+    return (
+        'python src/promote_final_cards.py --merge --glob "%s" '
+        '--gen-model-version %s' % (workflow_output, gen_model_version)
+    )
+
+
 def prepare_window(args, index, heads, still_null_keys, tail_mode):
     root = '%s%02d' % (args.prefix, index)
     print('preparing %s: %d headword(s)%s' %
@@ -257,15 +267,16 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
                 root, 'no_pwg_windows100', subcards, harness, execution_manifest,
                 preflight_path, artifact_path=os.path.dirname(execution_manifest))
     wf_out = os.path.join(OUT, 'wf_output.%s.json' % root)
+    wf_out_rel = os.path.relpath(wf_out, RT).replace('\\', '/')
     return {
         'root': root,
         'mode': 'still_null_tail' if tail_mode else 'queue',
         'headwords': heads,
         'subcards': subcards,
         'harness': os.path.relpath(harness, RT).replace('\\', '/'),
-        'workflow_output': os.path.relpath(wf_out, RT).replace('\\', '/'),
+        'workflow_output': wf_out_rel,
         'audit_command': 'python src/pilot/audit_window.py %s' % root,
-        'promote_command': 'python src/promote_final_cards.py --merge',
+        'promote_command': promotion_command(wf_out_rel, args.gen_model_version),
         'preflight': {
             'selected_keys': len(preflight.get('selected_keys') or []),
             'batches': preflight.get('batch_count'),
@@ -340,6 +351,9 @@ def main(argv=None):
                     help='generate headless artifacts/report without registering leases or calling Claude')
     ap.add_argument('--coordinator-dir', default=coordinator.DEFAULT_COORD_DIR,
                     help='coordinator state/artifact directory for --headless')
+    ap.add_argument('--gen-model-version', default='claude-sonnet-5',
+                    help='exact generation model id written into the promotion command '
+                         '(default %(default)s)')
     args = ap.parse_args(argv)
 
     if args.headless:
@@ -347,6 +361,8 @@ def main(argv=None):
 
     if args.window_size < 1 or args.window_size > 30:
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
+    if args.gen_model_version in ('sonnet', 'claude-sonnet'):
+        raise SystemExit('FAIL: --gen-model-version must be an exact model id')
 
     # H809 W3: resolve the window index from disk unless the caller pins one.
     # `--plan-only` prepares nothing, so a stale/colliding label is harmless there and

@@ -10,6 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **No-PWG promotion command safety.** `no_pwg_scale_plan.py` now emits a directly
+  executable, single-window `promote_final_cards.py` command with an explicit output glob
+  and exact generation model id. `promote_final_cards.py --merge` now refuses its implicit
+  repo-root `wf_output*.json` glob, preventing the recurring ingestion of unrelated stale
+  workflow artifacts.
+
 - **H911 LOCAL-READINESS quality/economy gate — verdict `FAIL` (offline; Opus 4.8 executor-override
   of Fable 5).** Reconciled all recoverable H818 acceptance-canary + H255 no_pwg evidence into a
   denominator-honest [census](pwg_ru/h911/h911_quality_economy_census.json), ran a two-phase

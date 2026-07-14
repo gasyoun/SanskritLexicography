@@ -56,6 +56,11 @@ MODEL = 'sonnet'                                    # the harness pins model:'so
 SELFTEST_MODEL_VERSION = 'claude-sonnet-5'
 
 
+def explicit_glob_supplied(argv):
+    """Whether argv explicitly scopes promotion inputs with --glob."""
+    return any(arg == '--glob' or arg.startswith('--glob=') for arg in argv)
+
+
 def load_wf(path):
     with open(path, encoding='utf-8') as f:
         wrapper = json.load(f)
@@ -264,6 +269,9 @@ def selftest():
     assert got['meta'].get('lang') != 'en', 'EN wf file must be excluded from the RU bridge'
     assert list(rows_for('p_a~~h5_00_pwg00', got, 'ai_translated',
                          SELFTEST_MODEL_VERSION)), 'RU rows survive the EN sibling'
+    assert explicit_glob_supplied(['--merge', '--glob', 'src/pilot/output/wf_output.w01.json'])
+    assert explicit_glob_supplied(['--glob=src/pilot/output/wf_output.w01.json', '--merge'])
+    assert not explicit_glob_supplied(['--merge'])
     print('promote_final_cards selftest OK')
 
 
@@ -295,6 +303,10 @@ def main():
                     help='override the promotion claim staleness TTL (default: promote_lock.'
                          'DEFAULT_TTL_SECONDS = 30 min)')
     args = ap.parse_args()
+    if args.merge and not explicit_glob_supplied(sys.argv[1:]):
+        sys.exit(
+            'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
+            '(normally src/pilot/output/wf_output.<window>.json)' % DEFAULT_GLOB)
 
     # Provenance: make the resolved store path explicit — a worktree run promotes into the MAIN
     # checkout's store (store_path.canonical_store), never a discarded worktree copy (H255 w06 / H805).
