@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.10] - 2026-07-14
+
+### Added
+- **Methodology lineage — Apresyan's systematic lexicography ↔ ACL computational lexicography**
+  (H942): new Part II subsection in
+  [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
+  with an Apresyan-concept → ACL-resource crosswalk and a 9-item verified ACL Anthology reading
+  list (WordNet, FrameNet, PropBank, VerbNet, Kilgarriff, WSD eval, lexical functions, definition
+  modelling, LLM definitions). Gives the "system, not a list" thesis its genealogy and seeds the
+  monograph's evidence-graded-method framing chapter.
+
 ## [1.9.9] - 2026-07-14
 
 ### Fixed
