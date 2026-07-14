@@ -221,20 +221,22 @@ resolves the `node_modules/@anthropic-ai/claude-code/cli-wrapper.cjs` entry rela
 shim's own directory, so a bare `claude` abspath's to the CWD and dies with `[WinError 2]`
 before the D-A rewrite can help.
 
-## Method step 2 — foreign-route comparison runbook (PREPARED 14-07-2026, Opus 4.8 `claude-opus-4-8[1m]`; owner-gated, NOT yet run)
+## Method step 2 — foreign-route comparison runbook (PREPARED + REFINED 14-07-2026 per sol.md #1–#5, Opus 4.8 `claude-opus-4-8[1m]`; owner-gated, NOT yet run)
 
 Prepared per the H895 STOP-branch close-out: this is the sanctioned **diagnostic-only** exception
 for foreign-route probing. It is **NOT** Linux production — **Linux production and H841/H842/H843
-stay blocked** until the route is confirmed *and* a new acceptance handoff is minted (last step
-below). The comparison must reuse the exact same probe the home sweep used, so prompt, payload,
-schema, and model are **byte-identical on both hosts by construction** (they are hard-coded in
-`max_account_orchestrator._probe_call` and driven by the same
+stay blocked** until the route is confirmed *and* a new acceptance handoff is minted (Step D). The
+comparison reuses the exact same probe the home sweep used, so model, prompt, payload, schema and
+output constraint are **byte-identical on both hosts by construction** (hard-coded in
+`max_account_orchestrator._probe_call`, driven by the same
 [`latency_payload_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/latency_payload_sweep.py)
 off the **same merged commit**):
 
 - **model** `claude-sonnet-5` (hard-coded `EXACT_GEN_MODEL` — cannot drift)
-- **prompt/payload** `Return JSON {"ok":true}. Preserve this padding as inert input.\n` + `x`×**6491** ⇒ **6551 B** total input (the D-K measured-probe size; `--mode diurnal` uses exactly this)
+- **prompt** `Return JSON {"ok":true}. Preserve this padding as inert input.\n` (the `PREFIX`, **63 B**) + `x`×`padding_bytes`
+- **bytes — do NOT conflate (sol.md #4):** `padding_bytes` is the `--ladder`/`MEASURED_SIZE` argument (the `x` count); the **actual encoded prompt** = 63 + `padding_bytes`. The D-K measured size is **`padding_bytes = 6491` ⇒ `actual_prompt_bytes = 6554`** — *not* 6491. `--mode diurnal` uses exactly this size, and the telemetry records **both** `padding_bytes` and `actual_prompt_bytes`.
 - **schema** `{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}`, call `-p --output-format json --json-schema … --model claude-sonnet-5 --permission-mode plan`
+- **output constraint** tiny `{"ok":true}`; only the output **byte count** is recorded, never its content.
 - **30 000 ms ceiling unchanged.**
 
 ### Guardrails (probe-only — do NOT cross these)
@@ -244,12 +246,20 @@ off the **same merged commit**):
   `promote_final_cards.py`, `audit_window.py`, or `translation_memory.py build`. **No jobs, no
   translations, no promotions, no canonical-store or TM writes.** `--permission-mode plan` already
   bars the model from any tool use / file write.
-- **Owner-only auth.** The **owner** authenticates the foreign Max profile interactively. The agent
-  **never** runs `/login` and **never** copies credentials — do **not** transfer
-  `D:\ClaudeTools\profiles\claude1\.claude` (or any token) from Windows to the foreign host. Each
-  route uses its own independently-authenticated profile.
-- **Same commit.** Pin both hosts to the identical merged commit under test: record
-  `git -C <repo> rev-parse origin/master` once and check that **same SHA** out on both hosts.
+- **Owner-only auth; hold the account constant, vary only the route.** The **owner** authenticates
+  the **same Max subscription/account** independently on each host (a separate device `/login` per
+  host) — this isolates *route* from *account*, and is **not** a credential copy. The agent **never**
+  runs `/login` and **never** copies credentials — do **not** transfer
+  `D:\ClaudeTools\profiles\claude1\.claude` (or any token) from Windows to the foreign host.
+- **Same commit + CLI.** Pin both hosts to the identical merged commit under test (record
+  `git -C <repo> rev-parse origin/master` once, check that **same SHA** out on both) and use the
+  **same `claude` CLI version** (the telemetry records `git_sha` and `cli_version` per call so drift
+  is auditable).
+- **Telemetry hygiene (sol.md #5).** Each JSONL row records host/`route` label, `window` ID,
+  `sample_index` (crossover position), `account_label` **pseudonym**, exact `model`, `git_sha`,
+  `cli_version`, `latency_ms`, `classification`, output **byte count**, and **both** `padding_bytes`
+  + `actual_prompt_bytes` — and **never** credentials or full outputs. Use an **identical warm-up
+  policy** on both hosts (`--warmups`, tagged `warmup` and **excluded** from measured statistics).
 
 ### Step A — provision + owner authentication (foreign Linux / non-Russian egress) — OWNER runs
 
@@ -258,61 +268,86 @@ off the **same merged commit**):
 sudo apt-get update && sudo apt-get install -y nodejs npm git python3   # or distro equivalent
 npm install -g @anthropic-ai/claude-code
 
-# Dedicated config dir — NEVER reuse or copy the Windows profile:
+# Dedicated config dir — authenticate the SAME Max account as home, independently (no copy):
 export CLAUDE_CONFIG_DIR="$HOME/.claude-max-foreign"
-claude /login            # OWNER does this interactively; choose the Max plan. Agent never runs it.
-claude auth status       # verify (prints status only, never the token)
-command -v claude        # record the shim path for --claude-bin below (e.g. /usr/bin/claude)
+claude /login            # OWNER, interactive; the SAME Max subscription/account as the home host.
+claude auth status       # verify (status only, never the token)
+claude --version ; command -v claude   # record CLI version + shim path (for --claude-bin)
 
-# Pin the same merged commit as the home route:
+# Pin the same merged commit as the home route (record SHA, use it on BOTH hosts):
+SHA="$(git ls-remote https://github.com/gasyoun/SanskritLexicography.git refs/heads/master | cut -f1)"
 git clone https://github.com/gasyoun/SanskritLexicography.git && cd SanskritLexicography
-git checkout "$(git rev-parse origin/master)"     # same SHA both hosts
+git checkout "$SHA"      # the SAME SHA on both hosts
 ```
 
-### Step B — paired 6.5 KB probes (run BOTH in the same UTC window; jitter is time-clustered)
+### Step B — paired **crossover** probes (A-B-B-A order, NOT all-foreign-then-all-home) — sol.md #2
 
-From `RussianTranslation/` on each host, `N ≥ 5` samples at the exact 6491-byte measured payload:
+The same account cannot be used on both hosts concurrently, and route-jitter is time-clustered, so
+sample **sequentially in a paired crossover**: alternate routes in a predetermined order
+(A-B-B-A, or a predetermined randomized order), one measured call per turn, recording sequence
+position (`--seq-start`) and UTC. This balances each route across time-of-call so a jitter spike
+can't land on only one route. Warm up **each host once** at window start (identical policy,
+excluded from stats), then run the measured crossover until **N ≥ 5 measured per route per window**.
+All calls: same account, exact model, CLI version, git SHA, prompt/schema/output constraint.
 
 ```bash
-# FOREIGN (Linux):
-python src/pilot/latency_payload_sweep.py --mode diurnal --samples 5 \
-  --config-dir "$HOME/.claude-max-foreign" \
-  --claude-bin "$(command -v claude)" \
-  --out foreign_route_6491.jsonl
+# From RussianTranslation/ on each host. A = foreign-linux, B = home-windows.
+FCFG="$HOME/.claude-max-foreign";  FBIN="$(command -v claude)"
+# Home host runs with: --config-dir "D:/ClaudeTools/profiles/claude1/.claude"
+#                      --claude-bin "C:/Users/user/AppData/Roaming/npm/claude"
+
+# --- WINDOW W1: warm up each host once (excluded from stats), --samples 0 --warmups 1 ---
+python src/pilot/latency_payload_sweep.py --mode diurnal --samples 0 --warmups 1 \
+  --route foreign-linux --window W1 --account-label acctA \
+  --config-dir "$FCFG" --claude-bin "$FBIN" --out foreign_W1.jsonl
+#   (same on the home host: --route home-windows … --out home_W1.jsonl)
+
+# --- measured crossover A-B-B-A, one sample per turn, --warmups 0 --samples 1 ---
+# turn 1  A foreign  --seq-start 1 --route foreign-linux --window W1 … --out foreign_W1.jsonl
+# turn 2  B home     --seq-start 2 --route home-windows  --window W1 … --out home_W1.jsonl
+# turn 3  B home     --seq-start 3 --route home-windows  --window W1 … --out home_W1.jsonl
+# turn 4  A foreign  --seq-start 4 --route foreign-linux --window W1 … --out foreign_W1.jsonl
+# …continue the A-B-B-A pattern until N ≥ 5 measured per route in W1.
 ```
 
-```powershell
-# HOME (Windows), same UTC window:
-python src/pilot/latency_payload_sweep.py --mode diurnal --samples 5 `
-  --config-dir "D:/ClaudeTools/profiles/claude1/.claude" `
-  --claude-bin "C:/Users/user/AppData/Roaming/npm/claude" `
-  --out home_route_6491.jsonl
+Repeat for **≥ 2 windows** (W1, W2, … at different times of day — the home data is a single
+~19-min window, not enough to rule out a diurnal artifact). Each row carries `route`/`window`/
+`sample_index`/UTC so the analyzer can reconstruct the crossover.
+
+### Step C — decision rule (EXACT; two SEPARATE conclusions — sol.md #1 + #3)
+
+Summarise with the analyzer's decision-rule mode (warm-ups auto-excluded, grouped by `route`+`window`):
+
+```bash
+python src/pilot/latency_sweep_analyze.py foreign_*.jsonl home_*.jsonl --decision-rule
 ```
-
-Repeat the pair across **≥ 2–3 UTC windows / times of day** (the home data is a single ~19-min
-window — one paired window is not enough to rule out a diurnal artifact). Summarise each file with
-[`src/pilot/latency_sweep_analyze.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/latency_sweep_analyze.py)
-(median, breach-rate).
-
-### Step C — decision rule (robust, not a single draw)
 
 The home route is a **wide, jitter-dominated** distribution (min 8.9 s · p50 25.8 s · max 59.2 s ·
-CoV 0.53; ~35 % over ceiling in-window), so a single fast foreign reading proves nothing. **Confirm
-the degraded-route hypothesis IFF**, per paired window with `N ≥ 5` across ≥ 2 windows:
+CoV 0.53; ~⅓ over ceiling in-window), so a single fast foreign reading proves nothing. Report **two
+conclusions independently — do not merge them**:
 
-- **Foreign:** median measured latency **≤ 30 000 ms AND** breach-rate (fraction > 30 000 ms)
-  **below a small bound** (≈ ≤ 10–20 %) — *consistently*, not one lucky draw; **AND**
-- **Home (Windows), same windows:** stays high (~40 s tail, p50 ≈ 26 s, ~⅓ breach).
+- **(A) Foreign operational readiness** — foreign *independently* satisfies the latency rule. **This
+  is the diagnostic PASS** (and *not yet a production GO*). PASS requires, with 5 samples/window
+  (the only per-window breach rates are 0 / 20 / 40 %, so state the rule exactly, not "≈ 10–20 %"):
+  - **per foreign window:** **median ≤ 30 000 ms** AND **at most 1/5 breaches** (breach = a call
+    > 30 000 ms; ≤ 1/5 ⇒ breach-rate ≤ 0.20), with **N ≥ 5**;
+  - **aggregate across ≥ 2 foreign windows:** **breaches / total ≤ 0.10**.
+- **(B) Route causality** — the foreign route is *consistently materially faster than the paired
+  home window*: **foreign median ≤ 0.70 × the same-window home median in every paired window**
+  (`--causality-ratio` is adjustable).
 
-If confirmed, the fix is the H818 foreign-server orchestration, **not** a threshold change (the
-30 000 ms ceiling stays). If the foreign route also breaches, the cause is **not** Russia→Anthropic
-egress and the investigation reopens (payload lever already ruled out above).
+Read (A) and (B) separately: if **both** routes are fast, causality is **inconclusive** but foreign
+**readiness (A) may still proceed** to Step D; if **both** are slow, **neither passes** — the cause
+is **not** Russia→Anthropic egress, so reopen the investigation (the payload-size lever is already
+ruled out above). Either way the **30 000 ms ceiling stays** and the fix, if (A) passes, is the H818
+foreign-server orchestration, not a threshold change.
 
-### Step D — ONLY on confirmation (separate step, NOT part of this diagnostic)
+### Step D — ONLY after a foreign-readiness (A) diagnostic PASS (separate step)
 
 Provision **four** Max profiles on the foreign route and **mint a new acceptance handoff** for the
 bounded `arvant` retry + the `1 → 10 → 20 → 100` sequence, gated by the **same 30 000 ms ceiling**
 (preferably the stricter N-probe median+breach-rate gate from the Gate-design implication above).
-Until that confirmation + handoff exist, Linux production and H841/H842/H843 remain **blocked**.
+**A diagnostic PASS is NOT this production GO.** Until (A) passes *and* that handoff exists, Linux
+production and H841/H842/H843 remain **blocked**.
 
 _Dr. Mārcis Gasūns_
