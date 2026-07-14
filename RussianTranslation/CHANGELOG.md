@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.9.9] - 2026-07-14
+
 - **No-PWG promotion command safety.** `no_pwg_scale_plan.py` now emits a directly
   executable, single-window `promote_final_cards.py` command with an explicit output glob
   and exact generation model id. `promote_final_cards.py --merge` now refuses its implicit
