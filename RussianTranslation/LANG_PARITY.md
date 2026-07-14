@@ -336,7 +336,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2",
       "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   },
@@ -393,7 +393,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2",
       "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   },
@@ -431,7 +431,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2",
       "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
@@ -451,7 +451,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "815fe75a1bdc7467d46a846deb96ff2cf5625c98d6f52d6a61db439b33b20f88",
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563"
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2"
     }
   },
   {
@@ -597,7 +597,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_lock.py": "dca26a006a32ba4a9eeb98453fa059585ccb8504ada8423f5e22d3fe1b25310f",
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2",
       "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d",
       "src/pilot/window_selftest.py": "89bc36e49e90a1b20e8a19798fb40bfcb0b0a17f49f34987e872fef29528bd37"
     }
@@ -904,7 +904,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/store_path.py": "2b3be1415dc7a387717c60574abc36aec9600d7a5c138bf7ac85415aa1b1e152",
-      "src/promote_final_cards.py": "f098ed7dc3009ec44aaf415b57d639a191ec0012ba53df776b34bf27efefd563",
+      "src/promote_final_cards.py": "693a77c5a40ba132daf1fbfcf5077b60739aa9d16be9078dab0e3e58f66665d2",
       "src/promote_en.py": "4c97e7543390c5f1f7652272e4b7ff49aa7b1df19d8a29aa4975d2aea337407d"
     }
   },
@@ -959,7 +959,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/coordinator.py": "3fc844fe372b7511528aefeefbc90dcd83653b9cc09e85fed837fd599eac15f8",
       "src/pilot/headless_worker_selftest.py": "192bfedf95d2d86bccf010c0e4f7f4ececc9f3941ab284f51e84bfba12f638a9",
       "src/pilot/max_account_orchestrator_selftest.py": "f95ea774e5e4923b616ed69da20ef09812519b78ea695e324deffe1b4c917e82",
-      "src/pilot/no_pwg_scale_plan.py": "ec654b580278361a6fe27c1cb93a04acd1c1a219f8db223f2fdea9c0a657a105",
+      "src/pilot/no_pwg_scale_plan.py": "e181edad1960cb75a765fb1f2bda0614080142c63fbc33b3346501de33892548",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "371d0197b39e217ef1754eb60d8b09f79823678f728d65e276f864eaeb8e0d72",
       "src/pilot/run_observability_selftest.py": "75bc960a35080a0c84ca9b5ee62b63134a9e0bde334c5531d564b13019187b60",
