@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **H937 follow-up — download-filename regression (14-07-2026, Sonnet 5 `claude-sonnet-5`)**:
+  H937's rubric-note-clobber fix cloned+replaced h178's Download button to strip the shared
+  `csl_pyutil` core template's stale-state listener, but the new listener's `a.download`
+  reverted to the literal `'decisions.json'` — reintroducing the exact generic-filename
+  collision [csl-pyutil#1](https://github.com/sanskrit-lexicon/csl-pyutil/issues/1)/H933 had
+  just fixed in the shared emitter (the two fixes shipped independently within the same hour
+  and didn't compose). Now `SHEET_ID + '_decisions.json'`, matching convention. Browser-verified
+  (synthetic 2-card sheet): vote-after-rubric-edit no longer clobbers a different card's note,
+  and the exported filename is correctly `<sheet_id>_decisions.json`.
+
 ## [1.9.10] - 2026-07-14
 
 ### Added
