@@ -190,7 +190,9 @@ def main():
     ap.add_argument('--foreign-route', default='foreign-linux')
     ap.add_argument('--home-route', default='home-windows')
     ap.add_argument('--causality-ratio', type=float, default=0.70,
-                    help='foreign median <= ratio x home median counts as "materially faster"')
+                    help='PRE-REGISTERED 0.70 (frozen 14-07-2026 before foreign data): foreign '
+                         'median <= ratio x home median = "materially faster". Do NOT override to '
+                         'flip a verdict post-hoc.')
     args = ap.parse_args()
     files = args.files or ['h898_sweep.jsonl', 'h898_interleaved.jsonl']
     rows = load(files)

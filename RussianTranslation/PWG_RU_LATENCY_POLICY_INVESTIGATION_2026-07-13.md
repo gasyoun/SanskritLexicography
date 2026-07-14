@@ -316,6 +316,24 @@ Repeat for **≥ 2 windows** (W1, W2, … at different times of day — the home
 
 ### Step C — decision rule (EXACT; two SEPARATE conclusions — sol.md #1 + #3)
 
+> **⚖️ PRE-REGISTERED — frozen 14-07-2026, BEFORE any foreign-route data is collected. Do NOT
+> tune post-hoc.** These thresholds are locked in advance so the verdict cannot be steered by the
+> data. Changing any of them *after* seeing foreign readings — to obtain a preferred PASS/FAIL — is
+> forbidden and voids the diagnostic. The commit that adds this block is the pre-registration
+> timestamp (git history is the tamper-evidence); the analyzer defaults encode these exactly.
+>
+> - **ceiling** = 30 000 ms (unchanged)
+> - **per foreign window:** median ≤ 30 000 ms **AND** breaches ≤ 1/5 (rate ≤ 0.20), **N ≥ 5**
+> - **aggregate (foreign):** breaches / total ≤ 0.10 across **≥ 2** windows
+> - **causality ratio = 0.70** (foreign median ≤ 0.70 × the paired-home median in **every** paired
+>   window) — conservative, and acceptable *because operational readiness (A) is judged
+>   independently of causality (B)*
+> - **warm-up policy:** identical on both hosts, ≥ 1 warm-up per host per window, excluded from stats
+>
+> Locked against `origin/master` as of this commit; run the analyzer with its **defaults**
+> (`--causality-ratio 0.70`, `--ceiling 30000`) — overriding them to flip a verdict is the exact
+> post-hoc tuning this pre-registration prohibits.
+
 Summarise with the analyzer's decision-rule mode (warm-ups auto-excluded, grouped by `route`+`window`):
 
 ```bash

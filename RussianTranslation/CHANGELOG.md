@@ -10,6 +10,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Latency-policy investigation — foreign-route decision rule PRE-REGISTERED (frozen before any
+  foreign data).** Locked the exact thresholds in *Method step 2* Step C — ceiling 30 000 ms;
+  per foreign window median ≤ 30 000 ms AND ≤ 1/5 breaches, N ≥ 5; aggregate breaches/total ≤ 0.10
+  across ≥ 2 windows; **causality ratio 0.70**; identical warm-up policy excluded from stats — with
+  an explicit "do NOT tune post-hoc to obtain a preferred verdict" clause (git history is the
+  tamper-evidence). Noted the lock in `latency_sweep_analyze.py`'s `--causality-ratio` help. No
+  behaviour change; diagnostic still owner-gated and NOT yet run.
 - **Latency-policy investigation — foreign-route runbook refined + probe telemetry extended
   (diagnostic-only; NOT yet run).** Tightened *Method step 2* per review: **exact** decision rule
   (per foreign window median ≤ 30 000 ms AND ≤ 1/5 breaches with N ≥ 5; aggregate breaches/total
