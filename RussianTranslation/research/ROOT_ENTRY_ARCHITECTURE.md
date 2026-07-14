@@ -49,7 +49,7 @@ paragraph)? This sets what SPLIT/NESTED must reproduce per source.
 **Dictionaries + sources (all present locally):**
 | Dict | Preface (OCR) | Entry file | Probe lemma (the root `bhū`/`kṛ`/`gam`) |
 |---|---|---|---|
-| PWG | [`PWG/prefaces/pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md) | `csl-orig/v02/pwg/pwg.txt` | `BU`, `kf`, `gam` |
+| PWG | [`PWG/prefaces/pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | `csl-orig/v02/pwg/pwg.txt` | `BU`, `kf`, `gam` |
 | PW (kürzere) | [`PWK/prefaces/pwpref_all.de.md`](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.de.md) | `csl-orig/v02/pw/pw.txt` | same |
 | MW | [`MWS/prefaces/mwpref_all.en.md`](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md) | `csl-orig/v02/mw/mw.txt` | same |
 | GRA (Grassmann RV) | [`GRA/prefaces/grapref_all.en.md`](https://github.com/sanskrit-lexicon/GRA/blob/master/prefaces/grapref_all.en.md) | `csl-orig/v02/gra/gra.txt` | `BU`, `kf` |
@@ -119,7 +119,7 @@ presence of a separate headword.
   > root**" ([`mwpref_all.en.md`](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md), §"Explanation of the Plan and Arrangement"). MW *niches nominals, splits the prefixed verb.*
 - **PWG/PW/GRA** — the prefaces give layout/transliteration policy (e.g. PWG banishes
   `ऋ ॠ ऌ` from verbal-root spellings, gives no class number since the 3 sg. pres. shows
-  it — [`pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md) §187–189) but make **no** explicit statement that overrides the
+  it — [`pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) §187–189) but make **no** explicit statement that overrides the
   realized structure; the entry markup above is the decisive evidence (all three nest).
 
 ### One-line segmenter rule per dict

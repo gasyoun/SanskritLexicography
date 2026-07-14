@@ -491,7 +491,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
 - New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
   volume-column marker on every entry header in
-  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
   (123,366 entries, 100% coverage) and emits three views:
   [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
   *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —
@@ -535,7 +535,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
 - New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
   volume-column marker on every entry header in
-  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
   (123,366 entries, 100% coverage) and emits three views:
   [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
   *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —

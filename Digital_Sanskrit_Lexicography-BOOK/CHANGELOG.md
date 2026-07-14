@@ -293,7 +293,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   and measured numbers unchanged.
 - [chapters/ch05_mw_block_economy.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch05_mw_block_economy.md):
   book-form sample chapter converted from the A16 journal draft
-  ([MWS papers/microanalysis/PAPER.md, `docs-pass`](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/PAPER.md))
+  ([MWS papers/microanalysis/PAPER.md, `docs-pass`](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/microanalysis/PAPER.md))
   — IJL submission header/abstract stripped, voice unified to first-person singular,
   relative repo links upgraded to full `docs-pass` URLs, re-anchored to Ch. 2's framework;
   all tables, figures, and measured numbers unchanged. Reference lists normalized to one

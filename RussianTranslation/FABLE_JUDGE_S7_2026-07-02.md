@@ -122,7 +122,7 @@ direction is unambiguous and nothing regressed. Ground truth: faithful-to-the-Ge
 | EN judge set (60-row seed-42 stratified draw + 8-row seed-7 naS/yaj supplement → 68 rows, all 16 pilot roots) | `src/gold_sample_en.jsonl` + `wf_output.en.{naS,yaj}.json` | deterministic, no model |
 | Batch adjudication (5 RU + 2 EN batches, ≤3-wide) | Agent subagents, session-model inheritance | **Fable 5 (`claude-fable-5`)**, ~455 k subagent tokens |
 | Adversarial verification of every unfaithful verdict, spot-check of 11 cards/rows, 4 documented overrides, batch-strictness reconciliation | main session | **Fable 5 (`claude-fable-5`)** |
-| Source-integrity check (store DE vs csl-orig) | `su~~h1_05_ud` vs [`pwg.txt` l. 532606](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) | PASS (only the known citation-period normalization differs) |
+| Source-integrity check (store DE vs csl-orig) | `su~~h1_05_ud` vs [`pwg.txt` l. 532606](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) | PASS (only the known citation-period normalization differs) |
 | Generation under judgment | RU Slice C+D: Sonnet 4.6 (`claude-sonnet-4-6`, alias `model:'sonnet'` at run time); EN pilot roots: Sonnet 4.6 (`claude-sonnet-4-6`) | — |
 
 Judge-consistency notes: (a) the batch-2 EN subagent scored dropped `{%..%}` markers leniently;

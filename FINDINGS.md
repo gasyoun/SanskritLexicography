@@ -422,7 +422,7 @@ are corpus-only (lemmatization targets, causatives, derived forms). Crosswalk bu
 Implication: dictionary-lookup pipelines need a lemmatization / sandhi-analysis fallback for
 roughly a fifth of corpus vocabulary — headword joins alone will not reach it.
 
-> **Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/readme.md)
+> **Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/readme.md)
 > + `.ai_state.md` §DCS-2026 frequency source — csl-apidev · 2026-06-11
 
 ### §13. Sa-Ru glossary token coverage plateaus at 86.6 percent

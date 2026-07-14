@@ -7,7 +7,7 @@ default (`--judge-model opus`) stays until the gate passes, then flips.
 
 > **IMPLEMENTED in the Max harness (2026-06-26).** The A/B gate is near-conclusive
 > (κ=1.0 over 474 cards; ~0.5 % disagreement), so the flip is done:
-> [`../src/pilot/run_pilot_wf.js`](../src/pilot/run_pilot_wf.js) now **judges every card with
+> [`../src/pilot/run_pilot_wf.js`](RussianTranslation/src/pilot/run_pilot_wf.js) now **judges every card with
 > Sonnet** and escalates to **Opus only on a reject** (`isHard` = `ok=false || severity>=3`);
 > the Opus verdict is final (becomes `judge`; Sonnet's original kept as `judge_sonnet`,
 > `escalated:true`). Publishable cards (sev 1–2) spend **no Opus tokens** — the weekly-quota

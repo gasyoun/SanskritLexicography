@@ -117,6 +117,6 @@ python src/pilot/build_article_site.py
 ```
 
 Full journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md).
-Prior handoff: [`H036-Opus_RussianTranslation_pwg_efficiency_selfheal_01.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/H036-Opus_RussianTranslation_pwg_efficiency_selfheal_01.07.26.md).
+Prior handoff: [`H036-Opus_RussianTranslation_pwg_efficiency_selfheal_01.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H036-Opus_RussianTranslation_pwg_efficiency_selfheal_01.07.26.md).
 
 _Dr. Mārcis Gasūns_

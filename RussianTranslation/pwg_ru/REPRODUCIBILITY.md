@@ -27,7 +27,7 @@ recorded in the run ledgers and handoff memos; nothing is new measurement.
 - **Per-row provenance:** every promoted store row carries `provenance.model_version`
   (11,261/11,261 = exact `claude-sonnet-5` as of 06-07-2026) and the H170
   `provenance.pipeline` stamp `1.0.0/1.0.0/1.0.0`, verified by
-  [audit_translation_provenance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_translation_provenance.py).
+  [audit_translation_provenance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_translation_provenance.py).
 
 ## 2. "Hyperparameters" — harness knobs
 

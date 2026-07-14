@@ -122,7 +122,7 @@ school, taken over from Greek and Roman textual scholarship (where *obscaena* we
 untranslated, or rendered into Latin in an otherwise vernacular apparatus). The screen is
 **linguistic, not typographic**: the word is printed in full, in the body of the entry,
 but in a language that filters its readership. Böhtlingk's √*yabh* is the textbook case
-([csl-orig `pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)):
+([csl-orig `pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)):
 
 > *yabh*, *yábhati* Dhātup. 23,11 … **futuere** (die entsprechende slavische Wurzel
 > verzeichnet bei Miklosich …): *yabha mām* "**futue me**" spricht ein Weib AV.
