@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H911 LOCAL-READINESS quality/economy gate — verdict `FAIL` (offline; Opus 4.8 executor-override
+  of Fable 5).** Reconciled all recoverable H818 acceptance-canary + H255 no_pwg evidence into a
+  denominator-honest [census](pwg_ru/h911/h911_quality_economy_census.json), ran a two-phase
+  **blind** review of 40 frozen Workflow subcards (v1 freeze invalidated for `prior_outcome_exposure`;
+  v2 re-frozen before scoring), and applied the locked gates. **Population audit-clean ~41–69%
+  (median ~62%, H818 report "~60–65%") < the 80% bar** and **recurring SAN-LOSS/`missing_senses`** →
+  hard-gate FAIL. Projected economy $58.09/100hw ≤ $75 PASS (projected only); **observed
+  calls/clean and $/clean INCONCLUSIVE** (tokens `not_recoverable`). Foreign generation, four-account
+  scale, and H841–H843 stay **blocked**; a narrow SAN-LOSS offline fix handoff was minted. Reviewer
+  `[NWS:]`/`{%…%}`-delimiter findings downgraded to stylistic concerns (audit passes them). Report:
+  [H911_LOCAL_READINESS_QUALITY_ECONOMY_GATE_2026-07-14.md](pwg_ru/h911/H911_LOCAL_READINESS_QUALITY_ECONOMY_GATE_2026-07-14.md).
 - **Latency-policy investigation — foreign-route decision rule PRE-REGISTERED (frozen before any
   foreign data).** Locked the exact thresholds in *Method step 2* Step C — ceiling 30 000 ms;
   per foreign window median ≤ 30 000 ms AND ≤ 1/5 breaches, N ≥ 5; aggregate breaches/total ≤ 0.10

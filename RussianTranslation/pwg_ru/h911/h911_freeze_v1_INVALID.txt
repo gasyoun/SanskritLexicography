@@ -1,0 +1,26 @@
+H911 blind-review sample — FREEZE v1 INVALIDATION NOTICE (append-only; git history preserved)
+
+Freeze v1 = git commit 564669fb (h911_blind_sample_manifest.json).
+Status: PRESERVED but INVALID FOR BLIND SCORING.
+
+Reason: prior_outcome_exposure.
+v1's 40-card sample included 3 Max acceptance-canary subcards
+(durg_a~~h0_zz_sch, darv_i~~h0_zz_pw, ga_ran_a~~h0_zz_sch) whose INDIVIDUAL audit
+verdicts had already been read (H818 acceptance report: durgA clean, darvI/gaRanA
+SAN-LOSS) before the sample was frozen. Blindness of those 3 cards is therefore
+void.
+
+Correction (append-only, does NOT rewrite/amend 564669fb):
+  freeze v2 = h911_blind_sample_manifest_v2.json.
+  - excludes the 3 Max canaries AND every other per-subcard verdict-exposed key
+    that was present as a complete pair (mahat~~h0_zz_pw, sa_m_dy_a~~h0_zz_sch,
+    and other individually-named defect keys) — reason prior_outcome_exposure;
+  - excluded-key verdicts are NOT recorded in the v2 manifest;
+  - backfilled deterministically from unexposed Workflow pairs, preserving strata;
+  - v2 contains 40 UNEXPOSED keys+hashes; only v2 is scored.
+
+Aggregate/headword-level population knowledge is acceptable; per-subcard verdict
+knowledge is not. Retained: mahat~~h0_zz_nws00 and sa_m_dy_a~~h0_zz_nws00 are
+DIFFERENT subcards than the verdict-exposed pw/sch ones.
+
+Executor: Opus 4.8 (claude-opus-4-8[1m]), owner-authorized override of minted Fable 5.

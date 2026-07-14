@@ -1,0 +1,270 @@
+{
+ "schema": "h911.quality_economy_census.v1",
+ "executor": "Opus 4.8 (claude-opus-4-8[1m]) — owner-authorized override of minted Fable 5 (offline gate)",
+ "evidence_boundary": "existing artifacts only; no generation/probe/login/store-mutation",
+ "not_recoverable_note": "tokens & API-equivalent cost per clean subcard are NOT recoverable for either family: run_events.jsonl has no token field; H818 dashboards carry cost:null. Reported as not_recoverable, never 0.",
+ "families": {
+  "H818_acceptance_canary": {
+   "label": "H818 acceptance-canary (Max-orchestrator path)",
+   "caveat": "NOT a demonstrated four-account production batch; orchestrator path existed. Single-subcard canaries. taru = non-promoting presplit canary, EXCLUDED from the production-canary clean-rate denominator.",
+   "gen_model": "claude-sonnet-5",
+   "production_canaries": {
+    "denominator_subcards": 3,
+    "members": {
+     "durgA (durg_a~~h0_zz_sch)": {
+      "audit": "clean",
+      "store_rows_delta": 2,
+      "note": "1 clean SUBCARD = +2 store ROWS (senses); store 11,577->11,579",
+      "calls": "1 (run_events model_call; dashboard workflow_result_count=1)"
+     },
+     "darvI (darv_i~~h0_zz_pw)": {
+      "audit": "reject: SAN-LOSS(2/3) dropped sense Loeffel/spoon",
+      "store_rows_delta": 0,
+      "calls": "5 (run_summary calls=5)"
+     },
+     "gaRanA (ga_ran_a~~h0_zz_sch)": {
+      "audit": "reject: SAN-LOSS / needs_requeue",
+      "store_rows_delta": 0,
+      "calls": "not_recoverable_exact (run_summary calls=7 conflates durgA+gaRanA+s10 segment; no call_id in run_events -> cannot dedup to real calls)"
+     }
+    },
+    "audit_clean_subcards": 1,
+    "audit_clean_rate": "1/3 = 33%",
+    "fidelity_reject_subcards": 2,
+    "fidelity_reject_rate": "2/3 = 67% (both SAN-LOSS)",
+    "calls_per_clean_subcard": "INCOMPLETE — durgA 1 call/1 clean recoverable exactly; darvI 5 calls/0 clean; gaRanA exact calls not_recoverable; family aggregate NOT published"
+   },
+   "presplit_canary": {
+    "taru": "2 calls, 1 clean, NON-PROMOTING presplit stitch canary (5 fragments healed+stitched); reported separately, not in the 3-card clean-rate denominator"
+   },
+   "economy": {
+    "tokens": "not_recoverable",
+    "api_equiv_cost": "not_recoverable",
+    "cost_per_clean": "not_recoverable (run_events has no token field; dashboard cost:null)"
+   }
+  },
+  "H255_no_pwg_workflow": {
+   "label": "H255 no_pwg supplement-chain (Workflow-tool drains)",
+   "gen_model": "claude-sonnet-5",
+   "schema_caveat": "wf_output.no_pwg_*.json files are per-run snapshots; requeues (w1/w1.rq/w1.rq2; w03/w03_rq1; w04/w04_rq1; w05/w05_rq1) re-attempt the SAME keys — do NOT pool naively across a window and its requeue.",
+   "generation_snapshots_immutable": [
+    {
+     "artifact": "wf_output.no_pwg_w02.json",
+     "root": "no_pwg_w02",
+     "cards": 47,
+     "ok": 20,
+     "null": 27,
+     "tm": 4,
+     "degenerate_passthrough": 3,
+     "healed": 0,
+     "presplit": 2,
+     "agents_spent": 42,
+     "max_agents": 130,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w03.json",
+     "root": "no_pwg_w03",
+     "cards": 13,
+     "ok": 11,
+     "null": 2,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 0,
+     "agents_spent": 13,
+     "max_agents": 49,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w03_rq1.json",
+     "root": "no_pwg_w03_rq1",
+     "cards": 2,
+     "ok": 1,
+     "null": 1,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 0,
+     "agents_spent": 2,
+     "max_agents": 16,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w04.json",
+     "root": "no_pwg_w04",
+     "cards": 35,
+     "ok": 22,
+     "null": 13,
+     "tm": 0,
+     "degenerate_passthrough": 1,
+     "healed": 0,
+     "presplit": 1,
+     "agents_spent": 34,
+     "max_agents": 119,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w04_rq1.json",
+     "root": "no_pwg_w04_rq1",
+     "cards": 13,
+     "ok": 11,
+     "null": 2,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 1,
+     "agents_spent": 13,
+     "max_agents": 51,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w05.json",
+     "root": "no_pwg_w05",
+     "cards": 44,
+     "ok": 23,
+     "null": 21,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 3,
+     "agents_spent": 47,
+     "max_agents": 153,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w05_rq1.json",
+     "root": "no_pwg_w05_rq1",
+     "cards": 21,
+     "ok": 17,
+     "null": 4,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 3,
+     "agents_spent": 24,
+     "max_agents": 84,
+     "budget_kill_switch_tripped": false
+    },
+    {
+     "artifact": "wf_output.no_pwg_w1.clean.json",
+     "root": "no_pwg_w1",
+     "cards": 5,
+     "ok": 5,
+     "null": 0,
+     "tm": null,
+     "degenerate_passthrough": null,
+     "healed": null,
+     "presplit": null,
+     "agents_spent": null,
+     "max_agents": null,
+     "budget_kill_switch_tripped": null
+    },
+    {
+     "artifact": "wf_output.no_pwg_w1.json",
+     "root": "no_pwg_w1",
+     "cards": 58,
+     "ok": 6,
+     "null": 52,
+     "tm": 0,
+     "degenerate_passthrough": 3,
+     "healed": 0,
+     "presplit": 0,
+     "agents_spent": 16,
+     "max_agents": 16,
+     "budget_kill_switch_tripped": true
+    },
+    {
+     "artifact": "wf_output.no_pwg_w1.rq.json",
+     "root": "no_pwg_w1",
+     "cards": 52,
+     "ok": 6,
+     "null": 46,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 0,
+     "agents_spent": 37,
+     "max_agents": 37,
+     "budget_kill_switch_tripped": true
+    },
+    {
+     "artifact": "wf_output.no_pwg_w1.rq2.json",
+     "root": "no_pwg_w1",
+     "cards": 46,
+     "ok": 9,
+     "null": 37,
+     "tm": 0,
+     "degenerate_passthrough": 0,
+     "healed": 0,
+     "presplit": 0,
+     "agents_spent": 48,
+     "max_agents": 148,
+     "budget_kill_switch_tripped": false
+    }
+   ],
+   "audit_clean_recoverable": {
+    "no_pwg_w05_rq1": {
+     "keys": 21,
+     "requeue_defect": [
+      "a_sakta~~h0_zz_pw",
+      "a_suci~~h0_zz_pw",
+      "ajagan_d_a~~h0_zz_pw",
+      "akftrima~~h0_zz_pw"
+     ],
+     "requeue_transient": [
+      "_sibi~~h0_zz_pw",
+      "_u_das~~h0_zz_pw",
+      "a_sud_da~~h0_zz_pw",
+      "aklizwa~~h0_zz_pw"
+     ],
+     "null_cards": [
+      "_u_das~~h0_zz_pw",
+      "_sibi~~h0_zz_pw",
+      "a_sud_da~~h0_zz_pw",
+      "aklizwa~~h0_zz_pw"
+     ],
+     "failure_reasons": {
+      "_u_das~~h0_zz_pw": "kill-timeout 84s @ skelBytes=485",
+      "_sibi~~h0_zz_pw": "selfheal-nothing-resolved",
+      "a_sud_da~~h0_zz_pw": "selfheal-nothing-resolved",
+      "aklizwa~~h0_zz_pw": "selfheal-nothing-resolved"
+     },
+     "audit_clean": 13,
+     "audit_clean_rate": "13/21 = 62% (REQUEUE window; content-defect=4, infra transient/null=4)"
+    },
+    "other_windows": "audit reports OVERWRITTEN (single local audit_window.report.json = w05_rq1); per-window audit-clean = not_recoverable from artifacts; RUN_LOG-sourced promoted counts below (cited)."
+   },
+   "audit_clean_run_log_sourced": {
+    "no_pwg_w1 (H214)": "5 clean / 24 headwords / 58 subcards (store 11,163->11,185, +22 rows); w1 first run infra-crippled (52/58 null)",
+    "no_pwg_w02 (requeue, 1207UTC)": "11/27 clean",
+    "no_pwg_w02 (rerun, 0405UTC)": "10/15 clean; audit flagged 3 (2 STRANDED-ANCHOR[{Tn}], 1 circular-gloss); store 11,590->11,605",
+    "no_pwg_w03": "9 clean / 13 (store 11,344->11,383)",
+    "no_pwg_w04 (1731UTC)": "33/48 clean (store 11,383->11,436)",
+    "no_pwg_w06 (1913UTC)": "29/54 clean; 7 nulls (1 kill-timeout + 6 selfheal-nothing) + 10 content-flagged; store 11,505->11,558",
+    "no_pwg_w10 (2109UTC)": "11/18 clean (9 real + 2 degenerate); H858 grammar-field-stranding on gokzuraka; store 11,579->11,590"
+   },
+   "population_audit_clean_rate": "per-window 41%-69% (median ~62%); EXCLUDES w1 infra-crippled first run (5/58=9%). Independently corroborated by the H818 acceptance report standing finding: no_pwg audit-clean ~60-65%, explicitly \"above the lane's real clean rate\", vs the 80% bar.",
+   "economy": {
+    "tokens": "not_recoverable per-window (Workflow journal.jsonl transient/gone; RUN_LOG cites isolated totals e.g. w1 ~3.4M, H442 ~1.8M/window)",
+    "api_equiv_cost": "not_recoverable observed",
+    "cost_per_clean": "not_recoverable",
+    "calls_per_clean": "not_recoverable per-window (no persistent per-call telemetry)"
+   }
+  }
+ },
+ "economy_projected": {
+  "source": "no_pwg_scale_plan.py -> perf_preflight.cost_estimate (offline, deterministic)",
+  "basis": "PER_AGENT_TOKENS=184000, PER_AGENT_USD=0.347 (Sonnet-4.x list rate inherited by parse_workflow_cost.py; comment claims Sonnet-5 shares $3/$15 list), REALISM_FACTOR=1.35",
+  "100_headword": {
+   "subcards": 124,
+   "initial_calls": 124,
+   "realism_adjusted_agents": 167.4,
+   "est_tokens": 30801600,
+   "est_cost_usd": 58.09,
+   "note": "H911 prose \"167.6\" is a rounding slip; deterministic value = 124*1.35 = 167.4; 167.4*184000 = 30,801,600 tok; 167.4*0.347 = $58.09. Reproduced offline, no live call."
+  },
+  "projected_gate": "$58.09 <= $75/100hw -> PASS on the PROJECTED-cost field only (optimistic one-call-per-batch FLOOR x 1.35). This is NOT observed economy.",
+  "observed_economy": "NOT MEASURABLE from recoverable evidence (tokens not_recoverable both families) -> observed calls/clean and observed $/clean are INCONCLUSIVE, NOT substituted by the projection."
+ }
+}
