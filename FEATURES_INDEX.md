@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 12-07-2026_
+_Created: 04-07-2026 · Last updated: 14-07-2026_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,11 +24,11 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks.
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
-`G`–`K` interfaces · `L`–`M` tools; dictionaries use their code). Datasets are graded by **size** (measured
+`G`–`K` interfaces · `L`–`M` tools · `P` drills; dictionaries use their code). Datasets are graded by **size** (measured
 on disk, so magnitudes are comparable — rows/entries alone are not): 🟢 **large** (&gt;10 MB) · 🟡 **medium**
 (1–10 MB) · ⚪ **small** (&lt;1 MB); the **Size** column carries the count and the exact MB. The **Intro** column is the asset's
 first-introduced month/year from git history; for the external stacks (M10–M14) it is instead the
@@ -279,6 +279,43 @@ across two sections. The interactive artifact makes that link a clickable `#vidy
 
 ---
 
+## V. Drills & practice content — learner-facing exercises
+
+Where sections I–IV catalogue the *research* assets, this section catalogues the **learner-facing
+drill content** — the practice sets a student actually works through. IDs use the `P` (pedagogy)
+prefix. **~900+ fixed** authored drill items live across **7 repos**, plus several **dynamically
+generated** drills (marked *dynamic*) and the 2,181-rule graded sandhi curriculum (P2) the kosha
+drills are cut from. The literal word "drill" is rare in the tree — this content lives under
+*exercises / quizzes / flashcards / karaoke / SRS*, which is why it went uncatalogued until now.
+Drill **generators** (the `sandhi-*` workflow skills) are tooling, not content, and are excluded.
+
+| ID | Drill (what it trains) | Count | Format | Status | Intro | Home |
+|---|---|---|---|---|---|---|
+| P1 | kosha **sandhi drills** — join / split / identify-class, graded over 10 lessons, corpus-attested with same-class distractors | **396** (132×3) + Anki | JSON·TSV·apkg·web | 🟢 Live | 07/26 | [sandhi_drills.json](https://github.com/gasyoun/kosha/blob/main/data/sandhi/sandhi_drills.json) |
+| P2 | kosha **graded sandhi curriculum** — the syllabus behind P1, rules ranked by reading-coverage | 2,181 rules · 10 lessons | TSV·HTML | 🟢 Live | 07/26 | [sandhi_curriculum.tsv](https://github.com/gasyoun/kosha/blob/main/data/sandhi/sandhi_curriculum.tsv) |
+| P3 | csl-guides **quiz suite** — sandhi · samāsa · devanāgarī · translit · MW-dictionary · which-dictionary · level-diagnostic · vocabulary | **208 Q** · 8 sets | JSON·React `<Quiz>` | 🟢 Live | 06/26 | [src/data/](https://github.com/sanskrit-lexicon/csl-guides/tree/main/src/data) |
+| P4 | Systema **grammar exercise widgets** — gender-sort (24) · noun→pronoun agreement (18) · verb-root match (11) · cloze verb-fill (11) + build-your-own generator | **64** fixed · 4 sets + tool | HTML/JS widgets | 🟢 Live | 07/26 | [public/exercises/](https://github.com/gasyoun/Systema-Sanscriticum/tree/main/public/exercises) |
+| P5 | Systema **SRS vocabulary decks** — spaced-repetition Sanskrit vocab (full FSRS engine) | 2 decks · *dynamic* cards | LMS feature | 🟢 Live | 07/26 | [SrsSanskritDeckSeeder.php](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/database/seeders/SrsSanskritDeckSeeder.php) |
+| P6 | Systema **Marathon diagnostic quizzes** — letters · vowel-length · real-word · IAST · frequency · sandhi | 14 steps | LMS config + Blade | 🟢 Live | 07/26 | [config/marathon.php](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/config/marathon.php) |
+| P7 | SanskritKaraoke **recitation & metre practice** — verse recitation + meter-ID / fill-syllable / beat-tap, with SM-2 verse recall | 13 verses + 3 quiz types (*generated*) | JSON · web player | 🟢 Live | 05/26 | [verses/data/](https://github.com/gasyoun/SanskritKaraoke/tree/main/verses/data) |
+| P8 | WhitneyRoots **root↔meaning quiz** — verb-root vocabulary, 4-option MC both directions | 10/round from 935-entry pool (*generated*) | JS web feature | 🟢 Live | 05/26 | [src/core/quiz.js](https://github.com/gasyoun/WhitneyRoots/blob/main/src/core/quiz.js) |
+| P9 | VisualDCS **verb-form flashcards** — surface form → root / meaning / tense-type, DCS-frequency ranked | 200 cards | Anki-compact JSON | 🟢 Live | 05/26 | [anki_compact.json](https://github.com/gasyoun/VisualDCS/blob/main/visual/anki_compact.json) |
+| P10 | SanskritGrammar **interactive widgets** — SandhiCollider (vowel-sandhi, 7×11 combos) + ablaut / reduplication / heteroclisis / seṭ sandboxes | 5 widgets | React (Docusaurus) | 🟢 Live | 07/26 | [components/talmud/](https://github.com/gasyoun/SanskritGrammar/tree/main/src/components/talmud) |
+| P11 | SanskritGrammar **Apte 1885 composition exercises** — Sanskrit composition/translation, digitized classic textbook (prose, not an interactive engine) | ~18 exercises + solved set | MDX textbook | ◐ Digitized | 07/26 | [Apte-Composition1885-final-lessons.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/src/01_Apte/Apte-Composition1885-final-lessons.mdx) |
+
+**Counts.** P1 (396), P3 (208), P9 (200), P4 (64), P6 (14 steps), P7 (13 verses), P11 (~18) are
+**fixed** authored items, verified by reading the files. Two are **dynamic**: P5's SRS cards derive
+from the runtime `DictionaryWord` table and P8 generates 10 questions/round from its 935-entry
+lexicon — neither has a fixed count in-repo. P11's "~18" is a lower bound (count of "exercise"
+markers in the MDX). Status: 🟢 live · ◐ digitized (not yet an interactive engine).
+
+**Not drills (out of scope).** The `sandhi-*` workflow skills *generate* drills but hold no content;
+inflection engines (csl-inflect, MWinflect, ScharfSandhi, SamudraManthanam `paradigms.py`) produce
+paradigms, not learner exercises; "which course suits you" quizzes (ORS-FAQ, the Systema shop) and
+BookIndex's Russian-linguistics quiz are not Sanskrit-language drills.
+
+---
+
 ## Contributing — add your dataset, tool or interface
 
 Anyone can propose an asset. Open an issue on
@@ -307,6 +344,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **P1–P11 · Section V** — learner-facing **drills & practice content** catalogued for the first time: 11 sets across 7 repos (~900+ fixed items), the largest being kosha's 396-item sandhi drill pack (P1), csl-guides' 208-question quiz suite (P3), and VisualDCS' 200-card verb-form deck (P9); introduces the `P` (pedagogy) ID prefix. Excludes the `sandhi-*` drill *generator* skills (tooling, not content). |
 | 07/26 | **E43–E46** — H817 WS1.2 closes 3 of 5 descriptive census rows in [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) Part 0 + registers 2 already-done rows the register hadn't caught up to: code-dup census + LOC/language-mix (E43, already done H688, register was stale), POS-per-text (E44, new), sense/polysemy per dict (E45, new, ◐ partial 11/44 — mirrors the A02 paper, the other 33 dicts lack a structural sense-marking convention), paradigm-cell coverage per root (E46, new, 8,054 roots). |
 | 07/26 | **Interactive view built** — the promised filterable single-file HTML artifact now exists: [`features_index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.html), generated from this Markdown by [`build_features_index_html.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/build_features_index_html.py) (search + category tabs + status/tier/language filters, theme-aware, zero-dependency). Closes the 2004-manifesto «Каталог каталогов» deliverable. |
 | 07/26 | **C19** — semdom ↔ Amarakosha crosswalk (H742): first SIL-semantic-domains ↔ classical-thesaurus map — Level A varga map (108 ID pairs) + 5,590-synset candidate table + 200-synset dual-annotated gold (κ 0.677); bridge measured as candidate-generator-only (top-1 17.5%, [FINDINGS §76](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). |
