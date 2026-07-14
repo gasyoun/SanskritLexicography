@@ -44,6 +44,12 @@ from prompt_rule_audit import (
 )
 from fix_german_connectives import fix_text as fix_german_text
 import audit_coverage
+from sense_count import (                                    # H920 SAN-LOSS guard
+    count_source_senses,
+    output_sense_count,
+    scan_sense_shortfall,
+    sense_shortfall,
+)
 
 
 def fail(message):
@@ -479,6 +485,149 @@ def test_no_pwg_supplement_card_renders_without_pwg():
                     fail('%s sub-card id must encode layer %s' % (key, want_layer))
         finally:
             pg.OUT = old_out
+
+
+def test_h920_sense_count_top_level_ordinals():
+    """H920: count_source_senses counts DISTINCT top-level source senses (N〉 close-glyph and
+    line-anchored N) markers), never citation numbers or lettered sub-senses. Calibrated on
+    the real darvI (3-sense PW source), aklizwa (single keyed supplement sense), and a_sakta
+    (unnumbered adjective) evidence."""
+    darvi = ('=== LAYER: PW ===\n\n{T1} und {T2}¦ {T3}\n'
+             '{T6}— 1〉 {%Löffel%}.\n{T7}— 2〉 {%die Haube einer Schlange%}.\n'
+             '{T8}— 3〉 {T4} {T5} eines Landes.')
+    cases = [
+        (darvi, 3),                                             # darvI: 3 top-level senses
+        ('{#aklizwa#}¦ 3〉 {%keine Pein verursachend%} <ls>KAP. 2,33</ls>.', 1),  # single keyed sense
+        ('{#aSakta#}¦ <lex>Adj.</lex> {%nicht könnend%} <ls n="Chr.">94,27</ls>.', 0),  # unnumbered
+        ('<ls>MBH. 5,163,4</ls>. 2,33 1,5', 0),                # citation numbers are NOT senses
+        ('1) a\n2) b\n3) c', 3),                               # line-anchored N) form
+        ('— 2〉 x\n— 2〉 x (batch repeat)', 1),                  # a repeated ordinal counts once
+    ]
+    for text, want in cases:
+        got = count_source_senses(text)
+        if got != want:
+            fail('count_source_senses(%r) = %d, expected %d' % (text[:40], got, want))
+
+
+def test_h920_sense_shortfall_gate_flags_dropped_sense():
+    """H920: the audit_window SAN-LOSS gate flags a card whose OUTPUT sense count falls short
+    of its input portrait's declared source_senses (the darvI 2/3 shape), passes a complete
+    card, and is CONSERVATIVE — it skips null cards and portraits that predate the source_senses
+    stamp (never a false positive)."""
+    import audit_window
+    with tempfile.TemporaryDirectory() as tmp:
+        def portrait(name, **extra):
+            json.dump([dict({'portrait_kind': 'no_pwg_supplement_chain', 'senses': []}, **extra)],
+                      open(os.path.join(tmp, name + '.portrait.json'), 'w', encoding='utf-8'),
+                      ensure_ascii=False)
+        portrait('darv_i~~h0_zz_pw', key1='darvI', source_senses=3)   # 3 source senses
+        portrait('ok~~h0_zz_pw', key1='ok', source_senses=2)          # complete
+        portrait('legacy~~h0_zz_pw', key1='legacy')                   # pre-H920, no count
+        results = [
+            {'key': 'darv_i~~h0_zz_pw',                               # 2 of 3 -> SAN-LOSS
+             'card': {'key1': 'darvI', 'records': [{'senses': [{'tag': '2'}, {'tag': '3'}]}]}},
+            {'key': 'ok~~h0_zz_pw',                                   # 2 of 2 -> clean
+             'card': {'records': [{'senses': [{'tag': '1'}, {'tag': '2'}]}]}},
+            {'key': 'legacy~~h0_zz_pw',                               # no expected count -> skipped
+             'card': {'records': [{'senses': [{'tag': '1'}]}]}},
+            {'key': 'null~~h0_zz_pw', 'card': None, 'error': 'kill-timeout'},  # null -> skipped
+        ]
+        # pure scan
+        short = scan_sense_shortfall(results, tmp)
+        if [s['key'] for s in short] != ['darv_i~~h0_zz_pw']:
+            fail('scan_sense_shortfall should flag ONLY darvI, got %r' % short)
+        if short[0]['expected'] != 3 or short[0]['actual'] != 2 or short[0]['dropped'] != 1:
+            fail('darvI shortfall math wrong: %r' % short[0])
+        # the wired audit gate
+        gate = audit_window.run_sense_shortfall_gate(results, tmp, set())
+        if gate['returncode'] != 1 or gate['requeue'] != ['darv_i~~h0_zz_pw']:
+            fail('SAN-LOSS gate must FAIL and requeue only darvI, got %r' % gate)
+        if 'SAN-LOSS' not in gate['stdout'] or 'dropped 1' not in gate['stdout']:
+            fail('SAN-LOSS gate stdout must report the drop: %r' % gate['stdout'])
+        # protected keys are never requeued
+        if audit_window.run_sense_shortfall_gate(results, tmp, {'darv_i~~h0_zz_pw'})['requeue']:
+            fail('a protected key must not be requeued by the SAN-LOSS gate')
+        # a fully-clean window passes
+        clean = audit_window.run_sense_shortfall_gate(results[1:], tmp, set())
+        if clean['returncode'] != 0 or clean['requeue']:
+            fail('SAN-LOSS gate must PASS a window with no shortfall, got %r' % clean)
+
+
+def test_h920_no_pwg_portrait_stamps_source_senses():
+    """H920: gen_no_pwg_card stamps a deterministic source_senses count into each sub-card's
+    portrait (matching count_source_senses on that sub-card's raw), while still fabricating NO
+    sense tree (senses stays []). A source with >=2 numbered senses also carries the explicit
+    sense-completeness rule so the model is told to render every sense."""
+    import _pilot_gen_merged as pg
+    import dict_merge as dm
+    # unit: the sense-completeness rule fires only for multi-sense sources and never inflates
+    # the deterministic count (the rule text carries no 〉 / leading-digit lines).
+    multi = '=== LAYER: PW ===\n\n{#x#}¦\n— 1〉 {%a%}.\n— 2〉 {%b%}.\n— 3〉 {%c%}.'
+    ruled = pg._with_sense_rule(multi, count_source_senses(multi))
+    if 'SENSE-COMPLETENESS RULE' not in ruled or 'all 3' not in ruled:
+        fail('multi-sense supplement must carry the H920 sense-completeness rule')
+    if count_source_senses(ruled) != 3:
+        fail('the sense-completeness rule must not inflate the deterministic count')
+    if pg._with_sense_rule('=== LAYER: PW ===\n\nsingle sense, no marker', 0) \
+            != '=== LAYER: PW ===\n\nsingle sense, no marker':
+        fail('a source with <2 senses must NOT get the sense-completeness rule')
+    # end-to-end: render a real no-PWG card and assert the portrait is enriched + consistent.
+    old_out = pg.OUT
+    with no_pwg_dictionary_fixture(), tempfile.TemporaryDirectory() as tmp:
+        pg.OUT = tmp
+        try:
+            pwg_idx = dm.index('pwg')
+            for key, layer in (('Bagavat', 'pw'), ('Akulita', 'sch')):
+                if not pg.gen_no_pwg_card(key, pwg_idx, verbose=False):
+                    fail('gen_no_pwg_card(%s) produced no sub-cards' % key)
+                sub = '%s~~h0_zz_%s' % (pg.safe_name(key), layer)
+                raw = open(os.path.join(pg.OUT, sub + '.raw.txt'), encoding='utf-8').read()
+                p0 = json.loads(open(os.path.join(pg.OUT, sub + '.portrait.json'), encoding='utf-8').read())[0]
+                if 'source_senses' not in p0:
+                    fail('%s portrait must carry the H920 source_senses count' % sub)
+                if p0['source_senses'] != count_source_senses(raw):
+                    fail('%s portrait source_senses (%r) must equal count_source_senses(raw) (%d)'
+                         % (sub, p0['source_senses'], count_source_senses(raw)))
+                if p0.get('senses') != []:
+                    fail('%s no-PWG portrait must still fabricate no sense tree' % sub)
+        finally:
+            pg.OUT = old_out
+
+
+def test_h920_en_missing_sense_hard_flag():
+    """H920: the EN auditor emits a HARD MISSING-SENSE flag when an output card falls short of
+    its portrait's source_senses (SHARED with the RU gate via sense_count.py), distinct from the
+    per-sense SAN-LOSS gloss-token flag; a complete card carries no such flag."""
+    import audit_window_en as en
+    with tempfile.TemporaryDirectory() as tmp:
+        json.dump([{'source_senses': 3}],
+                  open(os.path.join(tmp, 'darv_i~~h0_zz_pw.portrait.json'), 'w', encoding='utf-8'))
+        json.dump([{'source_senses': 2}],
+                  open(os.path.join(tmp, 'ok~~h0_zz_pw.portrait.json'), 'w', encoding='utf-8'))
+        old_dir = en.INPUT_DIR
+        en.INPUT_DIR = tmp
+        try:
+            short = en.audit_card(
+                {'key': 'darv_i~~h0_zz_pw',
+                 'card': {'records': [{'h': 'darvī', 'senses': [
+                     {'tag': '2', 'german': '2〉 x', 'english': 'the hood of a snake'},
+                     {'tag': '3', 'german': '3〉 y', 'english': 'name of a country'}]}]}},
+                None, False)
+            flags = [f for _, f in short['flags']]
+            if not any(f.startswith('MISSING-SENSE') for f in flags):
+                fail('EN auditor must emit MISSING-SENSE on a 2/3 card, got %r' % flags)
+            if not any(en.is_hard(f) for f in flags if f.startswith('MISSING-SENSE')):
+                fail('MISSING-SENSE must be a HARD flag')
+            ok = en.audit_card(
+                {'key': 'ok~~h0_zz_pw',
+                 'card': {'records': [{'h': 'ok', 'senses': [
+                     {'tag': '1', 'german': '1〉 a', 'english': 'first'},
+                     {'tag': '2', 'german': '2〉 b', 'english': 'second'}]}]}},
+                None, False)
+            if any(f.startswith('MISSING-SENSE') for _, f in ok['flags']):
+                fail('a complete 2/2 card must NOT get MISSING-SENSE')
+        finally:
+            en.INPUT_DIR = old_dir
 
 
 def test_no_pwg_worklist_runnable_lane():
@@ -4351,6 +4500,10 @@ def main():
         test_nominal_provenance_without_rootmap,
         test_no_pwg_card_source_profile_taxonomy,
         test_no_pwg_supplement_card_renders_without_pwg,
+        test_h920_sense_count_top_level_ordinals,
+        test_h920_sense_shortfall_gate_flags_dropped_sense,
+        test_h920_no_pwg_portrait_stamps_source_senses,
+        test_h920_en_missing_sense_hard_flag,
         test_no_pwg_worklist_runnable_lane,
         test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,
