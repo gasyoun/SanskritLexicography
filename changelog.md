@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.8] - 2026-07-14
+
 ### Added
 - **pwg_ru latency-policy investigation — payload-size sweep executed (H898)** —
   31 diagnostic `claude-sonnet-5` plain-probes (new
