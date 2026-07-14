@@ -38,6 +38,8 @@ Usage (in order):
 """
 import sys, os, io, json, html, random, re, time, argparse, collections, math
 
+from csl_pyutil import render_review_sheet
+
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -246,21 +248,9 @@ def cmd_judge():
 
 
 # ----------------------------------------------------------------------- sheets
-# Template derived from build_h180_review_sheets.py (same decisions.json contract)
-# with rubric widgets + vote timestamps added.
-SHEET_TMPL = None  # loaded lazily from the sibling generator to avoid drift
-
-
-def _load_tmpl():
-    """Reuse the H180 template/render machinery instead of forking the CSS/JS."""
-    import importlib.util
-    spec = importlib.util.spec_from_file_location(
-        "h180sheets", os.path.join(HERE, "build_h180_review_sheets.py"))
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return mod
-
-
+# Calls the shared csl_pyutil.render_review_sheet() emitter (H925/H931) instead
+# of hand-rolling the CSS/JS/TEMPLATE; the RUBRIC_JS widget script is spliced
+# onto the RETURNED html string (same decisions.json contract as before).
 RUBRIC_JS = """
 <script>
 (function () {
@@ -346,17 +336,16 @@ SHEETS = [
 
 def cmd_sheets():
     os.makedirs(REVIEW, exist_ok=True)
-    mod = _load_tmpl()
-    items = load_sample()
+    items_raw = load_sample()
     base = {json.loads(l)["id"]: json.loads(l) for l in io.open(BASELINE, encoding="utf-8")} \
         if os.path.exists(BASELINE) else {}
     rng = random.Random(SEED + 1)  # SAME stream as cmd_judge -> same blinding
     blinding = {}
-    for it in items:
+    for it in items_raw:
         blinding[it["id"]] = rng.random() < 0.5  # a_is_store
     for sheet_id, title, kind, question, alab, rlab in SHEETS:
-        cards = []
-        for it in items:
+        items = []
+        for it in items_raw:
             panels = [("German source (PWG 5-layer)", "<pre>%s</pre>" % esc(it["de"]))]
             if kind == "pairwise":
                 b = base.get(it["id"], {}).get("ru_baseline", "(baseline missing — run baseline)")
@@ -367,30 +356,25 @@ def cmd_sheets():
                 panels.append(("Candidate B", "<pre>%s</pre>" % esc(cb)))
             else:
                 panels.append(("Russian translation (promoted store)", "<pre>%s</pre>" % esc(it["ru"])))
-            card = {
+            items.append({
                 "id": it["id"], "filt": it["stratum"],
                 "title": "%s · %s" % (it["subcard"], it.get("sense_tag") or ""),
                 "badges": [it["stratum"], it.get("layer") or ""],
                 "question": esc(question) + _rubric_panel(kind, it, blinding),
                 "panels": panels,
                 "note_placeholder": "free-text note (H178 rubric line is auto-managed)",
-            }
-            cards.append(mod.render_card(card, alab, rlab))
-        filters = ('<button data-filter="all" class="active">all</button>'
-                   '<button data-filter="unvoted">unvoted</button>'
-                   '<button data-filter="flagged">flagged</button>'
-                   '<button data-filter="random">random</button>')
-        html_out = mod.TEMPLATE % {
-            "title": title, "n": len(items), "generated": GENERATED,
-            "sheet_id": sheet_id, "subtitle":
-                "H178 B-1 bake-off — one human channel (MG); DeepSeek is the model channel; "
-                "agreement is reported human×model, never human×human.",
-            "filters": filters, "cards": "\n".join(cards),
+            })
+        config = {
+            "sheet_id": sheet_id, "title": title, "generated": GENERATED,
+            "subtitle": "H178 B-1 bake-off — one human channel (MG); DeepSeek is the model channel; "
+                        "agreement is reported human×model, never human×human.",
             "footer": "Sheet %s of 4 — all four rubrics run on the SAME 30 glosses. " % sheet_id,
             "approve_label": alab, "reject_label": rlab,
-            "sheet_id_json": json.dumps(sheet_id), "ids_json": json.dumps([it["id"] for it in items]),
-            "generated_json": json.dumps(GENERATED),
+            # reproduces the original all/unvoted/flagged/random filter set; render_review_sheet
+            # always prepends "all" and appends "unvoted only" itself.
+            "filters": [("flagged", "flagged"), ("random", "random")],
         }
+        html_out = render_review_sheet(items, config, extras=True)
         html_out = html_out.replace("</body>", RUBRIC_JS % {"sheet_id_json": json.dumps(sheet_id)} + "</body>")
         out = os.path.join(REVIEW, sheet_id + "_sheet.html")
         io.open(out, "w", encoding="utf-8").write(html_out)
