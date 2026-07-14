@@ -90,7 +90,7 @@ verse the word-pairs hang off) and a **real** `alignment_confidence`.
 
 Where the corpus's L1 word-pairs came from is the **verse-aligned** Sanskrit↔Russian
 text bundled in
-[`SamudraManthanam/web/corpus_builder/jsonl/`](https://github.com/gasyoun/SamudraManthanam/tree/master/web/corpus_builder/jsonl)
+[`SamudraManthanam/web/corpus_builder/jsonl/`](https://github.com/gasyoun/SamudraManthanam/tree/main/web/corpus_builder/jsonl)
 — the same source DeepSeek word-aligned to *produce* L1. Each `group` there is one
 verse with `seg=sa` (Sanskrit), `seg=ru` (the Russian translation) and `seg=comm*`
 (Russian commentary notes). `build_l0.py` emits one L0 unit per verse-translation and

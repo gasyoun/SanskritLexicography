@@ -228,7 +228,7 @@ label applied without checking the earlier layer. This reads as scholarship but 
 unsourced inference — exactly what a printed dictionary must not carry.
 
 **Fix.** Two locked guards in
-[`6_merged_translate.md`](pwg_ru_prompts/6_merged_translate.md): (1) attribute facts to
+[`6_merged_translate.md`](RussianTranslation/pwg_ru_prompts/6_merged_translate.md): (1) attribute facts to
 layers, never narrate *why* a layer changed something; (2) never mark a sense "[new]"
 without confirming it is absent from the earlier layer, and never re-list it.
 

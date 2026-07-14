@@ -82,7 +82,7 @@ papers that belong to a **different** book (§5).
 | 2 | **A01** | The measurement framework — evidence-graded method | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_measurement_framework.md) | 4/5 | EN |
 | 3 | **A40** | The CDSL headword inventory — 12-yr growth + corpus-grounding | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) | data 4/5 | EN |
 | 4 | **A06** | Order is the dictionary — kośa macrostructure | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_kosha_macrostructure.md) | 4/5 | EN |
-| 5 | **A16** | The block economy of Monier-Williams — the European entry anatomized | [MWS](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/PAPER.md) | 5/5 | EN |
+| 5 | **A16** | The block economy of Monier-Williams — the European entry anatomized | [MWS](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/microanalysis/PAPER.md) | 5/5 | EN |
 | 6 | **A02** | Sense inheritance — condensation, not inflation | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md) | 4/5 | EN |
 | 7 | **A33** | Genetic, not historical — what sense order encodes | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md) | 4/5 | EN |
 | 8 | **A04** | Grammar without tags — indigenous verbal-root microstructure | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_indigenous_microstructure.md) | 4/5 | EN |

@@ -30,8 +30,8 @@ Opus 4.8, `claude-opus-4-8`). Home = SanskritLexicography per MG 03-07-2026
 
 Sources (consumed, not rebuilt):
 
-- **ACC** — [csl-orig `v02/acc/acc.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/acc/acc.txt)
-  (format in [acc-meta2.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/acc/acc-meta2.txt)):
+- **ACC** — [csl-orig `v02/acc/acc.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/acc/acc.txt)
+  (format in [acc-meta2.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/acc/acc-meta2.txt)):
   **49,833** entries, complete alphabet **A → Ha**, Cologne `<L>…<LEND>` records,
   SLP1 headwords (`k1`), `<pc>` scan refs to the 3-volume print. Terse (~164 B/entry).
 - **NCC** — [VisualDCS `non-derived/NCC/…/SktNewCatalogus_Catalogorum_combined.txt`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/NCC/files/src/SktNewCatalogus_Catalogorum_combined.txt)

@@ -97,7 +97,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 🟠 **Means:** the canonical listing form of a verbal root in the Pāṇinian root-catalogue, used as the normalization target (CANON) for root-recovery joins.
 **Not:** the same as vidyut's surface forms (which keep the thematic `-a` and must NOT seed CANON), nor a stem grab (`sada` for `sad`) — normalize to citation form before comparing; grep vidyut as `ancu`, not SLP1 `aYc`, and strip anubandha `~ \ ^` (§63).
 **Examples:** `sad` (root) not `sada` (stem grab) · vidyut surface `ancu` not SLP1 `aYc` · strip anubandha markers `~ \ ^`.
-**Canonical in:** [`mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw_roots.tsv) · [FINDINGS §35](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#35-root-recovery-tiers-err-on-root-form-not-identity).
+**Canonical in:** [`mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) · [FINDINGS §35](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#35-root-recovery-tiers-err-on-root-form-not-identity).
 ↔ Interlinks: [CONTRADICTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Krylov/vidyut) is where vidyut's surface forms diverge from CANON · [GAPS §11](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (verb-form frequency) is the layer these root joins feed.
 
 ---

@@ -25,7 +25,7 @@ The accent + stem-hyphen + `√` style is the **Petersburg / Monier-Williams** l
 ## 2. How it relates to the Cologne wordlists
 
 ### Method
-Each Catalan lemma was normalised to a comparable key — strip `√`, trailing digits, parentheticals, Vedic accents and all hyphens (so compounds join the way CDSL stores them), then transcode IAST→SLP1 with [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util) and strip SLP1 accent marks. The same accent-stripped key was extracted from the `<k1>` field of each Cologne dictionary in [`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02). Comparison is therefore **accent- and compound-insensitive** — a pure lemma-identity match.
+Each Catalan lemma was normalised to a comparable key — strip `√`, trailing digits, parentheticals, Vedic accents and all hyphens (so compounds join the way CDSL stores them), then transcode IAST→SLP1 with [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util) and strip SLP1 accent marks. The same accent-stripped key was extracted from the `<k1>` field of each Cologne dictionary in [`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02). Comparison is therefore **accent- and compound-insensitive** — a pure lemma-identity match.
 
 > ⚠️ Two transcoding traps were hit and fixed: (a) the file's apparent leading `1\t` numbers are added by the editor's line display — the real file has **no** numbers; (b) `ś` = `s`+U+0301 collides with the combining acute, so stripping accents *before* transcoding silently turned every `ś`→`s`. Both corrected → match rate rose 78 %→**89 %**.
 

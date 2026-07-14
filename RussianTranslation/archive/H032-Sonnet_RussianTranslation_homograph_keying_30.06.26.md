@@ -8,7 +8,7 @@ number. This handoff is to confirm it works on 2 real cases and, if so, scope th
 
 ## Background (1 paragraph)
 
-The print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py)) writes one store
+The print bridge ([`src/promote_final_cards.py`](RussianTranslation/src/promote_final_cards.py)) writes one store
 row per translated sense into `src/pwg_ru_translated.jsonl`, keyed on the **headword** `key1`
 (= `meta.root`). [`src/export_interop.py`](src/export_interop.py) joins those translations onto
 `src/assembled_cards.jsonl` by `key1` alone. **11.7 % of `key1` have >1 assembled entry**
