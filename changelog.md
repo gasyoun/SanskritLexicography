@@ -14,7 +14,21 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.11] - 2026-07-14
+
 ### Fixed
+- **H937 — H178 RUBRIC_JS note-clobber fix (14-07-2026, Sonnet 5 `claude-sonnet-5`)**: h178's
+  `RUBRIC_JS` widget script wrote rubric values (MQM severities, Likert, DA, pairwise) into
+  `localStorage` directly, bypassing the shared `csl_pyutil` core template's closure-private
+  `state` object — core's `vote()`/`save()` (any approve/reject/defer click, on ANY card)
+  unconditionally overwrote the entire stored record with stale in-memory `state`, wiping the
+  note field; a second, more severe variant clobbered a *different* card's already-written
+  note on any vote elsewhere on the sheet. Fixed entirely within `RUBRIC_JS` (core template
+  untouched): `rubricNote()` derives the note purely from a card's current DOM widget values,
+  `healAll()` re-merges every touched card's note into fresh `localStorage` on every vote
+  click, and the Download button is clone-and-replaced to export fresh from `localStorage`
+  instead of core's stale `state`. Browser-verified via Blob interception across same-card,
+  cross-card, textarea-edit-last, and rubric-less `pairwise` scenarios.
 - **H937 follow-up — download-filename regression (14-07-2026, Sonnet 5 `claude-sonnet-5`)**:
   H937's rubric-note-clobber fix cloned+replaced h178's Download button to strip the shared
   `csl_pyutil` core template's stale-state listener, but the new listener's `a.download`
