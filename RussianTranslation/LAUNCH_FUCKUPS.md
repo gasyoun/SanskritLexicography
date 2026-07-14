@@ -488,6 +488,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "residual_status": "open-paused",
   "residual_risk": "arvant's Windows process-tree hang is fixed (D-J), but a content-specific non-termination (B) is UNTESTED (arvant never ran) -- A-vs-B unresolved. H818 stays OPEN; Linux + H841/H842/H843 remain NO-GO. All 7 code fixes (D-E..D-K) merged + validated (offline gates 17/17); the block is infrastructure latency, not code.",
   "passes": 1
+ },
+ {
+  "id": "H895_RUN1_LATENCY_NOGO_2026-07-13",
+  "handoff": "H895",
+  "date": "2026-07-13",
+  "title": "H895 run1 (H818 acceptance resume): the single 'exactly one staged-run' allowance consumed -- integrated warm-up 41159ms + measured 40339ms both success but > 30000ms ceiling => second consecutive measured-probe honest NO-GO; no job claimed, arvant never ran; latency-policy investigation opened.",
+  "lane": "no-PWG supplement lane (RU), 1-headword canary (arvant), exact model claude-sonnet-5, Windows",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 4.8 (claude-opus-4-8[1m]) Claude Code driving the integrated warm-up+measured two-phase probe staged-run (run_id h895-run1-arvant) from a clean origin/master worktree; single Max account, no manual pre-probes.",
+  "expected": {
+   "agents": "1 headword (arvant), ~1-5 calls once the measured probe passes",
+   "tokens": "not recorded -- probe-only, no generation attempted"
+  },
+  "actual": {
+   "agents": "0 -- no job imported/claimed; the measured probe NO-GO'd before import/claim",
+   "tokens": "two probe calls only (warm-up + measured)"
+  },
+  "symptoms": "run_id h895-run1-arvant: warm-up 41159ms success; measured 40339ms success but > 30000ms -> honest NO-GO (no retry, no re-warm). auth OK, exact model + result-envelope valid, no job imported/claimed, arvant never ran, canonical store unchanged (11,579 rows). warm-up ~= measured (~40s) => the degraded latency is steady-state, not cold-start; the tiny init probe finished ~7s while every >=5KB probe took ~40s => latency may scale with payload size (hypothesis, not isolated).",
+  "classification": "concurrency/api",
+  "root_cause": "Sustained generation-API latency (~40s on >=5KB exact-model probes) held the measured reading above the 30s health ceiling -- the SECOND consecutive measured NO-GO after run5 (40925ms). The root cause of the sustained latency remains UNPROVEN (steady-state degradation, payload-size scaling, and accumulated-throttling are hypotheses, not isolated causes). Both calls classified success (auth/model/envelope valid) => pure latency, no regression in the D-E..D-K fixes.",
+  "guardrail": "The 30s threshold must NOT be weakened and the probe must NOT be re-rolled. H895's 'exactly one staged-run regardless of outcome' allowance is CONSUMED -- do NOT launch another Windows H895 acceptance rerun. Next work is the latency-policy investigation (PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md): payload-size sweep + foreign-route comparison; the standing fix is the H818 4-account foreign-server route, not the threshold.",
+  "residual_status": "open-paused",
+  "residual_risk": "A-vs-B (arvant D-J process-tree vs a content-specific non-termination) remains UNRESOLVED -- arvant never generated. H818 stays OPEN; Linux + H841/H842/H843 remain NO-GO. The block is infrastructure latency, not code (D-E..D-K merged + validated). NOTE: the later 11,590-row / 2,466-card canonical state belongs to H255 (its no_pwg_w10 drain, AFTER H895 run1) and is documented separately -- the store was 11,579 rows during this historical run and must not be retroactively substituted. EVIDENCE RESIDUAL: the raw run1 telemetry (src/pilot/output/h895_accept/run_events.jsonl, gitignored/local-only) was LOST when the h895 staged-run worktree was removed and was never archived; the surviving evidence is the committed RUN_LOG.md entry + PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md. The durable archive (Uprava H899 inventory) preserves the earlier H818 run5 + durgA evidence, NOT H895 run1. Do NOT rerun H895 to recreate the lost telemetry -- its one-run allowance is consumed.",
+  "passes": 1
  }
 ]
 ```

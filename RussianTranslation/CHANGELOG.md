@@ -20,6 +20,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   [PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md](PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md)
   (payload-size sweep + foreign-route method; the fix is the H818 4-account foreign-server route,
   not the ceiling). A-vs-B (`arvant` D-J vs content-specific) still unresolved; H818 OPEN.
+  Backfilled the required append-only `LAUNCH_FUCKUPS.md` ledger entry
+  (`H895_RUN1_LATENCY_NOGO_2026-07-13`) that CI's launch-ledger gate demanded. **The raw run1
+  telemetry (`src/pilot/output/h895_accept/run_events.jsonl`, gitignored/local-only) was LOST
+  when the `h895` staged-run worktree was removed and was never archived** — surviving run1
+  evidence is this RUN_LOG entry + the latency-policy doc; the Uprava H899 archive holds the
+  earlier run5 + `durgA` evidence, not run1. H895's one-run allowance is consumed — do not rerun.
 - **H879 — fix the German (PWG++) sense-splitter's missing `〉` glyph handling (~50%
   under-count, org-wide).** `microstructure.py`'s `MARK` regex only ever matched ASCII `)`
   as a closing sense-marker, never `〉` (U+3009 RIGHT ANGLE BRACKET) — PWG's own standard
