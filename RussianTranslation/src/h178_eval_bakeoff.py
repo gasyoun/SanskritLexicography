@@ -258,33 +258,94 @@ RUBRIC_JS = """
   var STORE_KEY = 'review-sheet:' + SHEET_ID;
   function st() { try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { return {}; } }
   function put(s) { localStorage.setItem(STORE_KEY, JSON.stringify(s)); }
-  // serialize rubric widgets into note as H178:{...} and stamp vote times
-  function syncNote(card) {
-    var id = card.getAttribute('data-id');
+  var cards = document.querySelectorAll('.card');
+  // ids the user has actually interacted with a rubric widget on — guards
+  // against synthesizing an H178 note from untouched widget defaults (e.g.
+  // mqm severities all "none") on a plain vote click.
+  var touched = {};
+  // Pure function of a card's CURRENT DOM widget values -> the H178:{...}
+  // note line, with any free text typed below it preserved. Never reads the
+  // shared core template's private `state` closure (unreachable from here) —
+  // localStorage, kept in sync by put() below, is this script's own source
+  // of truth for both decision and note.
+  function rubricNote(card, existingNote) {
     var data = {};
     card.querySelectorAll('[data-rubric]').forEach(function (el) {
       data[el.getAttribute('data-rubric')] = el.value;
       var out = card.querySelector('output[data-for="' + el.getAttribute('data-rubric') + '"]');
       if (out) out.textContent = el.value;
     });
-    var s = st(); s[id] = s[id] || {};
-    var free = (s[id].note || '').replace(/^H178:\\{[^\\n]*\\}\\n?/, '');
-    s[id].note = 'H178:' + JSON.stringify(data) + '\\n' + free;
-    var ta = card.querySelector('textarea.note'); if (ta) ta.value = s[id].note;
-    put(s);
+    if (!Object.keys(data).length) return existingNote || '';
+    var free = (existingNote || '').replace(/^H178:\\{[^\\n]*\\}\\n?/, '');
+    return 'H178:' + JSON.stringify(data) + '\\n' + free;
   }
-  document.querySelectorAll('.card').forEach(function (card) {
+  // Re-merge EVERY touched card's rubric note into FRESH localStorage. The
+  // core template's save() — triggered by a vote/note-textarea edit on ANY
+  // card — always writes its ENTIRE stale in-memory `state` object back,
+  // clobbering every id's note at once (not just the id just acted on). So
+  // every save()-triggering event must re-heal every previously-touched
+  // card, not only the current one, or an earlier card's note silently gets
+  // wiped by a later, unrelated vote elsewhere on the sheet.
+  function healAll() {
+    var s = st();
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-id');
+      if (!touched[id]) return;
+      s[id] = s[id] || {};
+      s[id].note = rubricNote(card, s[id].note);
+      var ta = card.querySelector('textarea.note'); if (ta) ta.value = s[id].note;
+    });
+    put(s);
+    return s;
+  }
+  cards.forEach(function (card) {
+    var id = card.getAttribute('data-id');
     card.querySelectorAll('[data-rubric]').forEach(function (el) {
-      el.addEventListener('change', function () { syncNote(card); });
-      el.addEventListener('input', function () { syncNote(card); });
+      el.addEventListener('change', function () { touched[id] = true; healAll(); });
+      el.addEventListener('input', function () { touched[id] = true; healAll(); });
     });
     card.querySelectorAll('button.vote').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var s = st(); var id = card.getAttribute('data-id');
+        // Runs AFTER the core template's own vote()/save() listener (this
+        // script is injected after core's <script>, so it registers second
+        // on the same buttons) — core's save() just overwrote localStorage
+        // wholesale with its stale in-memory `state`. Re-heal every touched
+        // card's note, then stamp this card's vote time.
+        var s = healAll();
         s[id] = s[id] || {}; s[id].t = Date.now(); put(s);
       });
     });
   });
+  // The core template's Download button reads its payload from that same
+  // stale in-memory `state`, so it would still export the pre-clobber note
+  // even with localStorage healed above. Strip its listener (clone-and-
+  // replace drops all previously attached listeners) and export fresh from
+  // localStorage instead. Re-run healAll() first as a final safety net: the
+  // free-text note textarea (core's own noteChange()/save()) triggers the
+  // same whole-state clobber as a vote click but isn't hooked above (healing
+  // on every keystroke there would fight the user's cursor), so a textarea
+  // edit could be the last action before Download with nothing left to heal
+  // it — covered here since export time is what actually has to be correct.
+  var oldBtn = document.getElementById('downloadBtn');
+  if (oldBtn) {
+    var newBtn = oldBtn.cloneNode(true);
+    oldBtn.parentNode.replaceChild(newBtn, oldBtn);
+    newBtn.addEventListener('click', function () {
+      var s = healAll();
+      var ids = Array.prototype.map.call(document.querySelectorAll('.card'),
+        function (c) { return c.getAttribute('data-id'); });
+      var decided = ids.filter(function (id) { return s[id] && s[id].decision; }).length;
+      var payload = { sheet_id: SHEET_ID, generated: %(generated_json)s, decided: decided,
+        items: ids.map(function (id) {
+          var rec = s[id] || {};
+          return { id: id, decision: rec.decision || null, note: rec.note || '' };
+        }) };
+      var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      var url = URL.createObjectURL(blob); var a = document.createElement('a');
+      a.href = url; a.download = 'decisions.json'; document.body.appendChild(a); a.click();
+      document.body.removeChild(a); URL.revokeObjectURL(url);
+    });
+  }
 })();
 </script>
 """
@@ -375,7 +436,9 @@ def cmd_sheets():
             "filters": [("flagged", "flagged"), ("random", "random")],
         }
         html_out = render_review_sheet(items, config, extras=True)
-        html_out = html_out.replace("</body>", RUBRIC_JS % {"sheet_id_json": json.dumps(sheet_id)} + "</body>")
+        html_out = html_out.replace("</body>", RUBRIC_JS % {
+            "sheet_id_json": json.dumps(sheet_id), "generated_json": json.dumps(GENERATED),
+        } + "</body>")
         out = os.path.join(REVIEW, sheet_id + "_sheet.html")
         io.open(out, "w", encoding="utf-8").write(html_out)
         print("sheet:", out, "(%d items)" % len(items))
