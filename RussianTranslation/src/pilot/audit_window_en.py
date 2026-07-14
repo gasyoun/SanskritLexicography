@@ -61,6 +61,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
+INPUT_DIR = os.path.join(HERE, 'input')                    # portrait sidecars (H920 source_senses)
 DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 
 if HERE not in sys.path:
@@ -69,6 +70,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 from foreign_literal_guards import FRENCH_CONTEXT_WORDS, AMBIGUOUS_DE_FR_WORDS
 import stage2_pregate   # H405: the shared mechanical pre-gate (RU + EN)
+from sense_count import portrait_source_senses, output_sense_count, sense_shortfall  # H920
 
 # Flag TYPES the pre-gate contributes to the EN path that this auditor's own
 # per-sense checks above do NOT already produce. LS/SAN/AB/LEX/LANG loss stay owned
@@ -242,6 +244,15 @@ def audit_card(result, tm, do_mw):
                 mw_words = set(content_words(mw))
                 if mw_words and not (mw_words & card_en_words):
                     flags.append(('%s/r%d' % (key, ri), 'MW-DIVERGE'))
+    # H920 SAN-LOSS (whole-dropped-sense) guard — SHARED with the RU auditor's sense_loss
+    # gate via sense_count.py. The per-sense SAN-LOSS flag above measures gloss token-loss
+    # WITHIN a surviving sense; this catches a whole numbered sense dropped from a no_pwg /
+    # supplement source (portrait source_senses vs output card sense count). A card whose
+    # portrait predates the H920 stamp is silently skipped (never a false positive).
+    expected = portrait_source_senses(INPUT_DIR, key)
+    dropped = sense_shortfall(card, expected) if expected is not None else 0
+    if dropped > 0:
+        flags.append((key, 'MISSING-SENSE(out %d<src %d)' % (output_sense_count(card), expected)))
     return {'key': key, 'null': False, 'flags': flags}
 
 
@@ -280,8 +291,8 @@ def run_sense_dupes(mod, path):
     return {'returncode': rc, 'summary': line.strip()}
 
 
-HARD = ('MISSING-EN', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS', 'STRANDED-ANCHOR',
-        'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP')
+HARD = ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS',
+        'STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP')
 
 
 def is_hard(flag):
