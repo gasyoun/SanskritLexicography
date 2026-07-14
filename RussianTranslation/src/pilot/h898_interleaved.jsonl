@@ -1,0 +1,15 @@
+{"ts_utc": "2026-07-14T03:28:16Z", "payload_bytes": 93, "total_input_bytes": 156, "latency_ms": 8860, "classification": "success", "output_bytes": 1476, "model": "claude-sonnet-5", "wall_s": 8.86}
+{"ts_utc": "2026-07-14T03:28:25Z", "payload_bytes": 1033, "total_input_bytes": 1096, "latency_ms": 13023, "classification": "success", "output_bytes": 1476, "model": "claude-sonnet-5", "wall_s": 13.02}
+{"ts_utc": "2026-07-14T03:28:38Z", "payload_bytes": 2533, "total_input_bytes": 2596, "latency_ms": 15382, "classification": "content", "output_bytes": 1488, "model": "claude-sonnet-5", "wall_s": 15.38}
+{"ts_utc": "2026-07-14T03:28:54Z", "payload_bytes": 5033, "total_input_bytes": 5096, "latency_ms": 17916, "classification": "content", "output_bytes": 1498, "model": "claude-sonnet-5", "wall_s": 17.92}
+{"ts_utc": "2026-07-14T03:29:11Z", "payload_bytes": 6554, "total_input_bytes": 6617, "latency_ms": 33310, "classification": "success", "output_bytes": 1482, "model": "claude-sonnet-5", "wall_s": 33.31}
+{"ts_utc": "2026-07-14T03:30:41Z", "payload_bytes": 93, "total_input_bytes": 156, "latency_ms": 9304, "classification": "success", "output_bytes": 1508, "model": "claude-sonnet-5", "wall_s": 9.3}
+{"ts_utc": "2026-07-14T03:30:51Z", "payload_bytes": 1033, "total_input_bytes": 1096, "latency_ms": 12950, "classification": "success", "output_bytes": 1485, "model": "claude-sonnet-5", "wall_s": 12.95}
+{"ts_utc": "2026-07-14T03:31:04Z", "payload_bytes": 2533, "total_input_bytes": 2596, "latency_ms": 52830, "classification": "content", "output_bytes": 1274, "model": "claude-sonnet-5", "wall_s": 52.83}
+{"ts_utc": "2026-07-14T03:31:56Z", "payload_bytes": 5033, "total_input_bytes": 5096, "latency_ms": 26249, "classification": "success", "output_bytes": 1502, "model": "claude-sonnet-5", "wall_s": 26.25}
+{"ts_utc": "2026-07-14T03:32:23Z", "payload_bytes": 6554, "total_input_bytes": 6617, "latency_ms": 20956, "classification": "success", "output_bytes": 1482, "model": "claude-sonnet-5", "wall_s": 20.96}
+{"ts_utc": "2026-07-14T03:32:44Z", "payload_bytes": 93, "total_input_bytes": 156, "latency_ms": 18576, "classification": "success", "output_bytes": 1495, "model": "claude-sonnet-5", "wall_s": 18.58}
+{"ts_utc": "2026-07-14T03:33:03Z", "payload_bytes": 1033, "total_input_bytes": 1096, "latency_ms": 27285, "classification": "success", "output_bytes": 1481, "model": "claude-sonnet-5", "wall_s": 27.29}
+{"ts_utc": "2026-07-14T03:33:30Z", "payload_bytes": 2533, "total_input_bytes": 2596, "latency_ms": 33876, "classification": "success", "output_bytes": 1482, "model": "claude-sonnet-5", "wall_s": 33.88}
+{"ts_utc": "2026-07-14T03:34:04Z", "payload_bytes": 5033, "total_input_bytes": 5096, "latency_ms": 54848, "classification": "success", "output_bytes": 1481, "model": "claude-sonnet-5", "wall_s": 54.85}
+{"ts_utc": "2026-07-14T03:34:59Z", "payload_bytes": 6554, "total_input_bytes": 6617, "latency_ms": 16040, "classification": "success", "output_bytes": 1479, "model": "claude-sonnet-5", "wall_s": 16.04}

@@ -15,6 +15,19 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **pwg_ru latency-policy investigation — payload-size sweep executed (H898)** —
+  31 diagnostic `claude-sonnet-5` plain-probes (new
+  `RussianTranslation/src/pilot/latency_payload_sweep.py` + `latency_sweep_analyze.py`,
+  reusing `max_account_orchestrator._probe_call`; raw JSONL committed as durable
+  evidence) settle the ~40 s measured-probe breach that NO-GO'd H818 acceptance
+  twice: it is **not** payload-size-driven (a 93 B call hit 52.8 s; all-data R²=0.02)
+  and **not** a flat ~40 s floor (range 8.9–59.2 s) — a modest input-size throughput
+  floor (~+1 ms/byte) superimposed on a dominant, size-independent, time-clustered
+  route jitter (CV 0.53) that spikes even tiny payloads over the ceiling (11/31
+  breaches in-window). Results + verdict in
+  `RussianTranslation/PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md`. Policy
+  unchanged (30 000 ms ceiling kept; fix is the H818 foreign-route, not smaller
+  payloads); step 3 (foreign-route comparison) stays human-gated.
 - **FAIR Release #1 metadata (H817 WS1.4)** — `CITATION.cff`, `DATA_LICENSE.md`,
   and `data/FAIR_RELEASE_1.md` prepared for a curated Zenodo dataset deposit of
   the markup-tag census (E39) and headword-overlap matrix (E40), cross-linked
