@@ -1,7 +1,7 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-_Created: 12-06-2026 · Last updated: 11-07-2026_
+_Created: 12-06-2026 · Last updated: 14-07-2026_
 
 Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, Lexikos, Dictionaries); book = English article-based monograph; student deliverable = frequency-graded learner's reading layer; review capacity = student/community review pool.
 
@@ -68,6 +68,57 @@ DCS lemmas + freq    ──┼──►  Lemma spine (SLP1 + homonym key)
 ```
 
 What is genuinely new versus existing DH lexicography (ELEXIS, Lexonomy, TEI Lex-0 projects): they standardize *encoding*; this programme standardizes *epistemics* — graded, reviewable, corpus-anchored evidence per statement, with the indigenous tradition as first-class data rather than exotic noise. The learner's reading layer is then just one *view* over the graph: filter by DCS frequency band, rank dictionary senses by survival evidence, surface the form's paradigm cell.
+
+### Methodological lineage: systematic lexicography (Apresyan) and its ACL counterpart
+
+_Added 14-07-2026 (H942). Gives the "system, not a list" thesis above its intellectual genealogy and seeds the monograph's evidence-graded-method framing chapter._
+
+The evidence-graded thesis has a lineage. The claim that **a dictionary is a system, not a list of isolated entries** was first made rigorous by Ju. D. Apresyan's *systematic lexicography* (системная лексикография) and the Moscow Semantic School's *integral description of language* (интегральное описание языка); the ACL / computational-linguistics tradition arrived at the same claim from corpus evidence. This programme sits at their intersection — Apresyan supplies the schema (typed, grammar-coordinated, decompositional description), ACL supplies the corpus-and-model instrument to populate and falsify it, and the two-civilization Sanskrit testbed is where both get exercised per claim.
+
+**Why Apresyan is the pivot.** Before him, lexicography was entry-craft: each article internally coherent, mutually inconsistent. He turned it into a reproducible formal model of the whole lexicon, coordinated with the grammar and engineered to run inside a machine (the ETAP MT system). The specific innovations:
+
+1. **Systematic lexicography / lexicographic types** (*лексикографические типы*) — words fall into classes sharing morphological, syntactic, semantic and combinatorial behaviour, and every member of a type is described on the same grid. The dictionary describes a system, not a heap of entries.
+2. **Integral description** (*интегральное описание*) — grammar and dictionary are two mutually tuned components of one model: the dictionary states exactly what the rules consume, and no rule presupposes data the dictionary omits.
+3. **Portrait ↔ type dialectic** — each lexeme gets an exhaustive individual *portrait* (*лексикографический портрет*), but the *type* fixes the axes so portraits stay comparable. Every word is at once an individual and a class member — the disciplined form of the lumping/splitting problem.
+4. **Reductive semantic metalanguage** — толкования built from a restricted set of primitives under strict rules (substitutability, no vicious circles, ordered components); meaning becomes decomposable and falsifiable rather than paraphrase-in-kind.
+5. **Lexical functions + the Explanatory Combinatorial Dictionary** (with Mel'čuk) — collocations formalised as ~60 universal functions (Magn, Oper, Func, Real…); the *active* (production-oriented) dictionary that tells a speaker how to *say* a meaning.
+6. **Pragmatics, connotation, communicative structure inside the entry** — categories earlier left to intuition, given systematic slots.
+7. **New Explanatory Dictionary of Synonyms of Russian** (Новый объяснительный словарь синонимов) — the flagship demonstration: synonym sets described on a fixed multi-dimensional grid, so synonymy becomes a matrix of explicit differential features rather than vague near-equivalence.
+
+**The ACL counterpart — same insight, opposite epistemology.** Where Apresyan is top-down, rationalist and introspective, the ACL tradition is bottom-up, empirical and distributional; both conclude that the lexicon is systematic. His concepts map onto standard computational resources:
+
+| Apresyan concept | ACL Anthology counterpart |
+|---|---|
+| лексикографический тип | Levin verb classes → **VerbNet**, classes defined by syntactic alternations and corpus-checkable ([L06-1280](https://aclanthology.org/L06-1280/)) |
+| интегральное описание / government (модель управления) | **FrameNet** ([P98-1013](https://aclanthology.org/P98-1013/)), **PropBank** ([J05-1004](https://aclanthology.org/J05-1004/)) — argument structure as the grammar↔lexicon join |
+| relational lexicon / sense inventory | **WordNet** ([H94-1111](https://aclanthology.org/H94-1111/)) |
+| лексикографический портрет | corpus **Word Sketches** (Sketch Engine; EURALEX 2004, not in the Anthology) — an automatically computed portrait of a word's grammar and collocation |
+| portrait ↔ type / discreteness of senses | Kilgarriff, *"I don't believe in word senses"* (CHum 1997; [arXiv cmp-lg/9712006](https://arxiv.org/abs/cmp-lg/9712006)), and the **WSD** evaluation frame ([E17-1010](https://aclanthology.org/E17-1010/)) |
+| лексические функции | collocation classification into an LF typology ([P19-1576](https://aclanthology.org/P19-1576/)) |
+| толкование / reductive metalanguage | **definition modelling** ([P18-2043](https://aclanthology.org/P18-2043/)); LLM-generated definitions as semantic representations ([2024.findings-acl.339](https://aclanthology.org/2024.findings-acl.339/)) |
+
+The payload is the tension and its resolution. Apresyan's method was always vulnerable at one joint — the reproducibility of introspective judgment. Corpus methods (Word Sketches, distributional and contextual embeddings) and now LLM definition generation turn that from a matter of authority into a matter of auditable evidence: the rationalist grid supplies the axes, the empirical model fills and checks them at scale.
+
+**Reading list — verified ACL Anthology anchors.**
+
+- **WordNet** — G. A. Miller, "WordNet: A Lexical Database for English," HLT 1994 — [H94-1111](https://aclanthology.org/H94-1111/). The relational lexicon.
+- **FrameNet** — C. Baker, C. Fillmore, J. Lowe, "The Berkeley FrameNet Project," COLING-ACL 1998 — [P98-1013](https://aclanthology.org/P98-1013/). Frame semantics as background/integral description.
+- **PropBank** — M. Palmer, D. Gildea, P. Kingsbury, "The Proposition Bank: An Annotated Corpus of Semantic Roles," *Computational Linguistics* 31(1), 2005 — [J05-1004](https://aclanthology.org/J05-1004/). Predicate-argument structure = government patterns.
+- **VerbNet** — K. Kipper, A. Korhonen, N. Ryant, M. Palmer, "Extending VerbNet with Novel Verb Classes," LREC 2006 — [L06-1280](https://aclanthology.org/L06-1280/). Levin classes as operationalised lexicographic types.
+- **Kilgarriff** — A. Kilgarriff, "I don't believe in word senses," *Computers and the Humanities* 31(2), 1997 — [arXiv cmp-lg/9712006](https://arxiv.org/abs/cmp-lg/9712006). The empirical challenge to the fixed portrait (hosted at CHum/arXiv, not the Anthology).
+- **WSD evaluation** — A. Raganato, J. Camacho-Collados, R. Navigli, "Word Sense Disambiguation: A Unified Evaluation Framework and Empirical Comparison," EACL 2017 — [E17-1010](https://aclanthology.org/E17-1010/). What sense discreteness costs, measured.
+- **Lexical functions** — L. Espinosa Anke, S. Schockaert, L. Wanner, "Collocation Classification with Unsupervised Relation Vectors," ACL 2019 — [P19-1576](https://aclanthology.org/P19-1576/). Automatic classification into a Mel'čuk/Apresyan LF typology.
+- **Definition modelling** — A. Gadetsky, I. Yakubovskiy, D. Vetrov, "Conditional Generators of Words Definitions," ACL 2018 — [P18-2043](https://aclanthology.org/P18-2043/). The толкование as a generatable object.
+- **LLM definitions** — "Definition generation for lexical semantic change detection," Findings of ACL 2024 — [2024.findings-acl.339](https://aclanthology.org/2024.findings-acl.339/). Generated definitions as auditable semantic representations.
+
+**How this feeds the programme.**
+
+- **Monograph framing chapter.** The planned history/method chapter gets its spine here: rationalist systematic lexicography → empirical computational lexicography → the evidence-graded synthesis of Part II.
+- **Lexicographic types → the Part I microstructure holes.** "Definition typology" and "lemmatization policy" (flagged unstudied above) are type-level questions: describe *all* causatives, deverbal nouns and root-derivatives on one grid rather than per-entry.
+- **Lexicographic portrait → P1.** A corpus Word Sketch over DCS is the automatic portrait that can seed and audit the P1 MW-microanalysis gold sample.
+- **Integral description = the existing spine.** The Whitney-roots + DCS + sense/grammar/citation/review layers diagrammed above *are* интегральное описание in miniature; naming them as such is free framing capital.
+- **Lexical functions** are a candidate collocation export layer once R2 sense alignment stabilises.
+- **@DECIDE seed.** Whether to adopt an explicit, controlled register of **Sanskrit lexicographic types** as a first-class layer of the evidence graph (parallel to the evidence-label vocabulary), or to leave typing implicit in the per-dictionary microstructure. A human should decide before P4 (indigenous microstructure) locks its schema.
 
 ---
 
