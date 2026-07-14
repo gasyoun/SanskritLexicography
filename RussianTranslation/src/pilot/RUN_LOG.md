@@ -4,6 +4,59 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-07-14 — H255 no-PWG lane, window `no_pwg_w02` — gen **`claude-sonnet-5`** / orch Sonnet 5 (`claude-sonnet-5`) — 🟡 10/15 clean, 5 documented residual (not requeued)
+
+Continued the 232-lemma no-PWG drain (H220 follow-on) from the prior session's `no_pwg_w10`
+(store 11,579→11,590, `no_pwg_runnable` 100→94). Ran in a fresh worktree
+`SanskritLexicography-h255w11` **inside `GitHub/`** (per the `no_pwg_w06`/H805 lesson — an
+outside-`GitHub/` worktree breaks `dict_merge.py`'s relative `csl-orig` path; `store_path.py`'s
+`canonical_store()` correctly resolved to the MAIN checkout's store throughout, confirmed via
+`--resolve`).
+
+**Planning:** `no_pwg_scale_plan.py --window-size 20 --limit-windows 1` auto-selected `no_pwg_w02`
+(20 headwords) — but 7 of those 20 (`arvant`/`asaMskfta`/`darvI`/`glAna`/`hasita`/`jawAyus`~~pw
++ `bAhlika`~~pw) are the **exact same 7 documented residual** from `no_pwg_w10`'s RUN_LOG entry
+(fidelity-reject deterministic class + a CEIL-hard kill-timeout, both diagnosed there as NOT
+fixable by a plain requeue — the planner has no skip-list for prior deterministic failures, it
+only excludes already-*promoted* keys). Regenerated the harness with an **explicit `--keys=`**
+restricted to the other 15 (13 new headwords, `kAlī`/`kAlikā` contributing 2 sub-cards each) to
+avoid re-burning cost reproducing a known-negative outcome — this filtering is a gap in
+`no_pwg_scale_plan.py` worth fixing (it should track a residual denylist, not just promoted keys).
+
+**Generation** (`gen_opt_harness2.py --nominal --output-budget=1 --max-wide=3 --stagger-ms=2000`,
+per H811's no-PWG-window degraded-API mitigation): cost gate GO ($6.56 est., 14 agent-calls,
+under the $25 ceiling). **Result: 13/15 clean, 2 null** — both **`avy_ahata~~h0_zz_pw` and
+`avyagra~~h0_zz_pw` failed with `fidelity-reject`** (`<ls>`/`{#…#}` span-drop), the SAME
+retry-resistant class as `no_pwg_w10`'s residual — **not requeued**, consistent with the
+H834/H858 diagnosis that a plain rerun reproduces the identical drop.
+
+**Audit** (`audit_window.py`) additionally flagged 3 of the 13 non-null cards as content
+defects: `k_antap_az_a_ra~~h0_zz_pw`/`kajjalik_a~~h0_zz_pw` (`STRANDED-ANCHOR` — a `{Tn}`
+placeholder never restored to its source markup, a genuine broken-text defect, not cosmetic) and
+`durg_a~~h0_zz_sch` (high-confidence `likely_circular_gloss` semantic flag). **10/15 truly
+clean this pass** (audit's own top-level verdict). Not requeued — same "needs rework, not blind
+retry" precedent as `no_pwg_w03`'s STRANDED-ANCHOR/circular-gloss residuals.
+
+**Promoted 10 clean sub-cards** (a filtered `wf_output.no_pwg_w02.clean.json`, explicit `--glob`
+per the recurring default-glob gotcha) across **8 distinct headwords**
+(`kāṅkṣī`/`kālī`/`kālikā`/`kūpikā`/`kaṅgurī`/`kakāra`/`kakṣyā`/`kalaśī`; 15 sense rows — `kālī`
+and `kālikā` each carry 2 sub-cards). Store `src/pwg_ru_translated.jsonl`: **11,590 → 11,605
+rows**. TM rebuilt (`translation_memory.ru.json build --lang ru`): 2,476 cards (worktree-local —
+regenerable, not ground truth; the STORE promotion is what's canonical-persisted per H805).
+232-lemma queue `no_pwg_scale_plan.py`'s own remaining-headword count: 140 → **122**.
+
+**Documented residual (5, not requeued — same two established deterministic classes as
+`w03`/`w10`):** `avy_ahata`/`avyagra`~~pw (fidelity-reject, span-drop — needs the unshipped
+Tier-1 german-field source-anchoring fix, a plain requeue reproduces it) +
+`k_antap_az_a_ra`/`kajjalik_a`~~pw (`STRANDED-ANCHOR` mask-restoration defect) + `durg_a`~~sch
+(circular-gloss, needs manual rework).
+
+**Next:** continue the queue via `no_pwg_scale_plan.py --window-size 20 --limit-windows 1`
+(auto `--start-index`, any label not colliding on disk). Consider filing a small fix for
+`no_pwg_scale_plan.py` to track a residual/skip list so a documented-deterministic-failure
+headword isn't re-selected into every future window's raw plan (this session worked around it
+by hand-filtering `--keys=`, twice now across two sessions).
+
 ## 2026-07-13 — H895 run1 (H818 acceptance resume) — gen **`claude-sonnet-5`** / orch Opus 4.8 (`claude-opus-4-8[1m]`) — 🟡 **second consecutive measured-probe NO-GO** (latency 40 339 ms); latency-policy investigation OPENED
 
 Executed [H895](https://github.com/gasyoun/Uprava/blob/main/handoffs/H895-Opus_SanskritLexicography_h818-acceptance-DE-DK-latency-blocked_13.07.26.md): **exactly one** fresh integrated warm-up+measured two-phase probe staged-run (run_id `h895-run1-arvant`), no manual pre-probes, from a clean `origin/master` worktree. **warm-up 41 159 ms `success`; measured 40 339 ms `success` but > 30 000 ms ceiling → honest NO-GO** (no retry, no re-warm). The staged-run STOPped at the probe **before importing/claiming any job** — jobs table empty, `arvant` never ran, canonical store unchanged (**11,579**). **A-vs-B (`arvant` D-J vs a content-specific non-termination) remains UNRESOLVED.** Both calls classified `success` (auth, exact model, result-envelope all valid) → **pure latency**, no regression in the D-E…D-K fixes. Two new signals: (1) warm-up ≈ measured (~40 s) → the degraded latency is **steady-state, not cold-start** (the D-K warm-up absorbed nothing); (2) the tiny `init` probe finished inside ~7 s while every ≥5 KB probe takes ~40 s → latency **may scale with payload size** (hypothesis, not isolated). Per the STOP directive, did **not** weaken the 30 s threshold; opened [`PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md`](../../PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md) (evidence across run5+run1, a payload-size sweep + foreign-route comparison method, and the standing policy: the fix is the H818 4-account foreign-server route, not the threshold). **H818 remains OPEN; Linux + H841/H842/H843 NO-GO.** Events: `src/pilot/output/h895_accept/run_events.jsonl` (gitignored, local) — **⚠️ this raw telemetry was LOST when the `h895` staged-run worktree was removed and was never archived; surviving run1 evidence = this RUN_LOG entry + [`PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md`](../../PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md). The Uprava H899 archive holds the earlier H818 run5 + `durgA` evidence, not run1.**
