@@ -9,7 +9,7 @@ layer** — kept strictly apart from the clean 1.09M verse-aligned
 [`corpus_lexicon.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py).
 
 Handoff:
-[H186](https://github.com/gasyoun/Uprava/blob/main/handoffs/H186-Opus_RussianTranslation_pwg_ru_tm_corpus_mining_expansion_05.07.26.md)
+[H186](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H186-Opus_RussianTranslation_pwg_ru_tm_corpus_mining_expansion_05.07.26.md)
 · map context:
 [REUSE_MAP.md §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md).
 Model: orchestration + this design = Opus 4.8 (`claude-opus-4-8`); extraction =

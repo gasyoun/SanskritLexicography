@@ -78,7 +78,7 @@ _(empty — next entries go here)_
   build/test/deploy state (built + tested, **not yet deployed** — no
   `research/` on `gh-pages`). Router row added, PROFILE deep-manual queue row
   flipped, metadoc revision logged. Third item of the H604 queue; per
-  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
+  [Uprava H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md).
 
 ## [1.5.2] - 2026-07-11
 

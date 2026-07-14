@@ -8,7 +8,7 @@
 >   table's "DA 0/145 — biggest loss" is stale. Only ~7 DA cards are marginal.
 > - **True remaining deficit ≈ 514 cards / 15 roots** (not 630/16), because DA drops out.
 > - **`jan`/`han` salvaged** to stable names `wf_output.sc.jan_full.json` / `wf_output.sc.han.json`.
-> - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](save_and_audit.py)
+> - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](RussianTranslation/save_and_audit.py)
 >   (overwrite-refusal + `--merge`). Do not re-add it.
 > - **DONE — ALL 15 roots re-run this session (Max, ≤3-wide).** First wave: `pat`(73),
 >   `gA`(65), `vad`(47). Remaining 12: `Sam`(38), `Buj`(39), `vraj`(34), `Bid`(35), `pA`(34),

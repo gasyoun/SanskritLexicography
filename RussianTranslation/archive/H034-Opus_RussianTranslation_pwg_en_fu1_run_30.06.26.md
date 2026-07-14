@@ -138,7 +138,7 @@ python src/annotate_dcs_freq.py     # re-attach dcs_freq (language-agnostic, ide
 ## Pointers
 
 - Plan + decisions: [`FU1_PLAN.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FU1_PLAN.md) · parent handoff:
-  [`H033-Opus_RussianTranslation_pwg_en_followups_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/H033-Opus_RussianTranslation_pwg_en_followups_30.06.26.md)
+  [`H033-Opus_RussianTranslation_pwg_en_followups_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H033-Opus_RussianTranslation_pwg_en_followups_30.06.26.md)
 - EN harness: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) (`--lang=en`) ·
   prompt [`src/pilot/tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt) · MW TM [`src/mw_en_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_en_tm.py)
 - EN audit gate: [`src/pilot/audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) ·

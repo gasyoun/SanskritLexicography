@@ -5,7 +5,7 @@ _Created: 06-07-2026 · Last updated: 06-07-2026_
 **Verdict: 🟢 GO on both translation paths.** No blocker. One correctness finding
 (SHA-less autosplit provenance) was fixed by PR during this audit; the rest are 🟡 hygiene.
 
-> **Executor note (model provenance).** [H188](https://github.com/gasyoun/Uprava/blob/main/handoffs/H188-Codex_RussianTranslation_pwg_ru_full_pipeline_audit_05.07.26.md)
+> **Executor note (model provenance).** [H188](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H188-Codex_RussianTranslation_pwg_ru_full_pipeline_audit_05.07.26.md)
 > was written for **Codex/GPT-5**, but the `Read … and execute it.` line was pasted into a
 > **Claude Opus 4.8 (`claude-opus-4-8`)** session, which ran this audit. The audit mandate is
 > model-agnostic (deterministic selftests, gate replays over the promoted store, static

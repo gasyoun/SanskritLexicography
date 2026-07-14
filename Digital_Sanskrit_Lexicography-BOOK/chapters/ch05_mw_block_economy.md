@@ -5,7 +5,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 > **Provenance.** This chapter is the book-form version of the article *The block economy
 > of Monier-Williams 1899: a data-grounded microstructure framework, triangulated against
 > three metalexicographic traditions* (source draft:
-> [PAPER.md](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/PAPER.md)),
+> [PAPER.md](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/microanalysis/PAPER.md)),
 > which is being published separately in a journal version (submitted to the
 > [*International Journal of Lexicography*](https://academic.oup.com/ijl)); where the
 > article must remain independently citable, cite that version. Every figure, table, and

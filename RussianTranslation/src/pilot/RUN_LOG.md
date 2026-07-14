@@ -26,7 +26,7 @@ model_version + pipeline stamps). Full memo:
 
 ## 2026-07-06 — `no_pwg_w1` (H214 no-PWG lane, FIRST run) — gen **Sonnet 5** / orchestration **Opus 4.8** — ⚠️ VALIDATED-NOT-PROMOTED
 
-First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
+First-ever translation run of the [H214](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H214-Opus_RussianTranslation_pwg_ru_no_pwg_supplement_cards_06.07.26.md)
 **no-PWG supplement-chain lane** — 24 PWG-missing headwords (of the 232-lemma backfill queue) →
 **58 supplement sub-cards** (`<key>~~h0_zz_<layer>`, pw/sch/pwkvn/nws). Branch
 `pwg-ru/no-pwg-lane-drain-w1`. Preflight cost-gate: verdict `ok`, run-now-low, ~497 K tok / ~$0.94.
@@ -253,7 +253,7 @@ hash maps), then a single `audit_window.py --root i`:
 
 ## 2026-06-29 — Stage A: sTA
 
-Operator: Claude Code Max. Handoff: [`../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`](../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
+Operator: Claude Code Max. Handoff: [`../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`](RussianTranslation/archive/H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
 
 ### Round 1 — full window (123 cards)
 

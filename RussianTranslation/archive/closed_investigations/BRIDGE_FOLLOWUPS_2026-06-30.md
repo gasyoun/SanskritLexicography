@@ -22,7 +22,7 @@ roots are re-run, re-run `promote_final_cards.py` (idempotent, supersede) to com
 ## 2. Homograph `(key1,h)` keying — blocked on a missing discriminator
 
 **Symptom.** In `--review-status ai_translated` preview, a promoted translation appears under
-*every* `assembled_cards` entry that shares its `key1`, because [`export_interop.py`](src/export_interop.py)
+*every* `assembled_cards` entry that shares its `key1`, because [`export_interop.py`](RussianTranslation/src/export_interop.py)
 joins translations to structural cards by `key1` alone, and 11.7 % of `key1` (12,373) have >1
 entry (homographs). The store rows are keyed on the headword `key1` (`meta.root`).
 

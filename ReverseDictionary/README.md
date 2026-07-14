@@ -213,7 +213,7 @@ proposed volume — reusable as a starting layout template, but the content spli
   comparison spreadsheet) was never turned into the comparison table the preface promises —
   worth doing before Volume 2's apparatus is drafted, not after.
 
-## Publication-prep documents (added 07-07-2026, [H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
+## Publication-prep documents (added 07-07-2026, [H270](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H270-Sonnet_SanskritLexicography_reverse-dict-publication-prep_07.07.26.md))
 
 - [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md) — venue landscape, DH data-standard gap analysis, and the licensing `@DECIDE` with per-source facts.
 - [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md) — canonical-version declaration (`266820-reverse-Gasuns.txt`) and the outstanding-errata investigation.

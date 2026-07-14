@@ -35,7 +35,7 @@ defects below (real `DUP` hard flag + RU-gate verdict-parse guard).
 
 ## ✅ Resolved in H321 (2026-07-07, Opus 4.8 `claude-opus-4-8`, [PR to master](https://github.com/gasyoun/SanskritLexicography/pulls))
 
-The [H321 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H321-Opus_RussianTranslation_pwg-ru-correctness-backlog_07.07.26.md) worked the open 🔴/🟡 items below. Several were already closed by intervening PRs (verified against current `master`); the rest were fixed or measured this pass. Each fix lands behind a `window_selftest.py` pin + a [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) ledger entry.
+The [H321 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H321-Opus_RussianTranslation_pwg-ru-correctness-backlog_07.07.26.md) worked the open 🔴/🟡 items below. Several were already closed by intervening PRs (verified against current `master`); the rest were fixed or measured this pass. Each fix lands behind a `window_selftest.py` pin + a [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) ledger entry.
 
 | Item | Disposition |
 |---|---|

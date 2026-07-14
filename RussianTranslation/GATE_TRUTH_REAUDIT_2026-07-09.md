@@ -4,7 +4,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 
 Adversarial re-verification of [FIX_PLAN_2026-07-09.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FIX_PLAN_2026-07-09.md)
 P0 items #1 (requeue/TM cache-bypass) and #2 (gate truthfulness), per handoff
-[H424](https://github.com/gasyoun/Uprava/blob/main/handoffs/H424-Opus_RussianTranslation_gate_truth_requeue_ledger_reaudit_09.07.26.md).
+[H424](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H424-Opus_RussianTranslation_gate_truth_requeue_ledger_reaudit_09.07.26.md).
 The premise attacked: `window_selftest.py` + `lang_parity_check.py` + `check_launch_ledger.py`
 passing proves the *fixtures* pass — not that a live child-gate crash can be swallowed as
 CLEAN, nor that a gate-rejected card/fragment can be re-served from cache. Method was

@@ -34,7 +34,7 @@ gloss layer was delivered on 03-07-2026 (H106). Rulings by MG 03-07-2026
   with attribution and share-alike-style terms for the *resources*; composition with
   our CC BY-SA derived-data rule needs an explicit ruling (Phase 0 @DECIDE).
   **✅ RESOLVED 03-07-2026: Gérard Huet approved the LGPLLR × BY-SA composition**
-  in reply to the [outreach email](https://github.com/gasyoun/Uprava/blob/main/handoffs/H121-Opus_SanskritLexicography_OUTREACH_2026-07-03_gerard_huet_heritage_03.07.26.md)
+  in reply to the [outreach email](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H121-Opus_SanskritLexicography_OUTREACH_2026-07-03_gerard_huet_heritage_03.07.26.md)
   (sent same day) — derived crosswalks/frequency joins embedding Heritage
   keys/anchors may ship alongside CC BY-SA Cologne-derived data. Exact wording of
   Huet's reply (attribution phrasing, any conditions) not transcribed into this

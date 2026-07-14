@@ -4,7 +4,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 
 Audit of the four pwg_ru launch ledgers against the code that (supposedly) produces their
 numbers, executed per
-[H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md)
+[H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md)
 by Fable 5 (`claude-fable-5`). Files audited:
 [`LAUNCH_FUCKUPS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md)
 (13 entries),

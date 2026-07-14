@@ -36,7 +36,7 @@ hub repo). Authored by Fable 5 (`claude-fable-5`).
 ### Phase 0 — on-ramp ✅ DONE
 
 Probe + rules + spec, as above. Handoff for the validation run exists:
-[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
+[H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md).
 
 ### Phase 1 — bulk export → registered VisualDCS feed (unblocks everything) ✅ DONE 08-07-2026
 

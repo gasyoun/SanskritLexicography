@@ -25,7 +25,7 @@ with `confidence: llm`; the human gold standard is a separate, later deliverable
 The per-sense translated store
 [`src/pwg_ru_translated.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ru_translated.jsonl)
 (10,857 sub-cards) already carries the fields this typology attaches to — the
-[H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md)
+[H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md)
 Step-1 `layer` field landed:
 
 | `layer` | sub-cards | role |

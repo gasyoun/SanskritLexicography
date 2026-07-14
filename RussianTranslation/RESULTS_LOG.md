@@ -7,7 +7,7 @@ Append-only, reverse-chronological. Each entry: date, context, model tier, table
 ## 09-07-2026 — pwg_ru medium50 relaunch (H437, post-classifier-unblock)
 
 Windows `h317_w1b`/`w2a`/`w2b` relaunched solo (1-wide) after
-[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md)
+[H428](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H428-Sonnet_RussianTranslation_opt2-schema-slim-classifier-unblock_09.07.26.md)
 slimmed the opt2 schema. Orchestrator Opus 4.8 (`claude-opus-4-8`); generation
 Sonnet 5 (`claude-sonnet-5`, harness-pinned). Full account +
 n=50 tally: [`MEASUREMENT_2026-07-08_H317.md`](MEASUREMENT_2026-07-08_H317.md)

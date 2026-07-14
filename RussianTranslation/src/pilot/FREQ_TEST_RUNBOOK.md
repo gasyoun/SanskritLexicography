@@ -97,7 +97,7 @@ On `man`: **3 of 18** prefixes get prefix-specific corpus evidence; the other 15
 to the labelled root hint. **Residual gap (the proper fix):** sandhi-changed and stacked
 prefixes (`sam+man`→saṃman, `abhi+sam+man`) miss the naïve `upasarga+root` concat and fall
 back — matching them needs the **sandhi-joined surface form** already computed in
-[`PWG/verbs01/pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt)
+[`PWG/verbs01/pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/pwg_preverb1.txt)
 (`join_prefix_verb`). Wiring that lookup raises prefix-specific coverage; the interim hint is
 safe in the meantime.
 

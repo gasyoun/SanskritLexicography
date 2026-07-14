@@ -81,7 +81,7 @@ alignment first; everything else is downstream.
 4. **Test-drive it** in `window_selftest.py` (pin: a card with 1 cached + 1 uncached fragment
    → only the uncached fragment reaches a translate lane; accounting still balances).
 5. **Live-validate** on a genuinely-partial giant card (e.g. `ka`'s 2 missing heal groups —
-   see [H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md))
+   see [H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H055-Opus_SanskritLexicography_pwg_audit_tail_02.07.26.md))
    with a **dated SAFE store backup first** and **`--merge` promotion only**.
 
 ## Guardrails (unchanged, non-negotiable)

@@ -7,7 +7,7 @@ statistics-to-compute table in
 [DATA_LAYERS_CENSUS.md §3](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md):
 which dictionaries share which headwords, and which headwords are unique to one
 dictionary. Handoff:
-[H684](https://github.com/gasyoun/Uprava/blob/main/handoffs/H684-Fable_SanskritLexicography_headword-pairwise-overlap-matrix_11.07.26.md)
+[H684](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H684-Fable_SanskritLexicography_headword-pairwise-overlap-matrix_11.07.26.md)
 (Lane B, Fable sprint). Computed 11-07-2026 by Fable 5 (`claude-fable-5`).
 
 ## Method — and the key normalization, documented

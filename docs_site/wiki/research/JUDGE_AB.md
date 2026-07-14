@@ -2,7 +2,7 @@
 
 **Question.** The scale-up's main path uses an **Opus** QA judge (per the pilot). A **Sonnet**
 judge would roughly halve the API-reference cost of the top-500 batch ($277 → $143, since the
-judges are ~$167 of the $277 — see [`PILOT_COST.md` §7](../PILOT_COST.md)). But cheaper is only
+judges are ~$167 of the $277 — see [`PILOT_COST.md` §7](RussianTranslation/PILOT_COST.md)). But cheaper is only
 acceptable if a Sonnet judge **agrees with Opus on real cards** and, critically, **catches the
 defects Opus catches**. This is that empirical test, run before committing the longer run.
 

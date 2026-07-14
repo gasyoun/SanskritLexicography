@@ -12,7 +12,7 @@ fresh worktree off `origin/master` (`knob-calibration-20260703` branch) per
 the handoff's branch-contention guardrail; all four runs SCRATCH only — never
 touched `src/pwg_ru_translated.jsonl`.
 
-Handoff: [`Uprava/handoffs/H066-Sonnet_SanskritLexicography_pwg_knob_calibration_02.07.26.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H066-Sonnet_SanskritLexicography_pwg_knob_calibration_02.07.26.md).
+Handoff: [`Uprava/handoffs/H066-Sonnet_SanskritLexicography_pwg_knob_calibration_02.07.26.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H066-Sonnet_SanskritLexicography_pwg_knob_calibration_02.07.26.md).
 Model: Sonnet 5 (`claude-sonnet-5`) throughout (generation + Workflow agents).
 
 ## 1. Giant-head split granularity — `AUTOSPLIT_LS_BUDGET` 18 (stock) vs 10 (finer)

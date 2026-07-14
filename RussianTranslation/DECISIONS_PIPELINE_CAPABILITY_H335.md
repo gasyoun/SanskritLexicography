@@ -5,7 +5,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 Records MG's rulings on the four `@DECIDE` forks parked in
 [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#forks-parked-for-mg-decide--with-recommendations)
 (H335 W2/W3/W4), unblocking
-[H337](https://github.com/gasyoun/Uprava/blob/main/handoffs/H337-Opus_RussianTranslation_pwg-ru-evidence-retrofit_08.07.26.md) ·
+[H337](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H337-Opus_RussianTranslation_pwg-ru-evidence-retrofit_08.07.26.md) ·
 [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/H338-Sonnet_RussianTranslation_pwg-ru-government-backfill_08.07.26.md) ·
 [H339](https://github.com/gasyoun/Uprava/blob/main/handoffs/H339-Sonnet_RussianTranslation_pwg-ru-sense-genres_08.07.26.md).
 Eliciting session: Sonnet 5 (`claude-sonnet-5`), via `/decision-record`.

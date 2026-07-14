@@ -2,7 +2,7 @@
 
 _Created: 08-07-2026 · Last updated: 08-07-2026_
 
-**Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS cites *a number*; this file holds the act it cannot: **reproducing** — the exact runnable path back to that number. One recipe per derived dataset or heavy FINDINGS row, so a fact can be re-checked rather than trusted. This is what [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md)'s "Re-check recipe" column points at. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/RECIPES.md`](https://github.com/gasyoun/Uprava/blob/main/RECIPES.md).
+**Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS cites *a number*; this file holds the act it cannot: **reproducing** — the exact runnable path back to that number. One recipe per derived dataset or heavy FINDINGS row, so a fact can be re-checked rather than trusted. This is what [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md)'s "Re-check recipe" column points at. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/RECIPES.md`](https://github.com/gasyoun/Uprava/blob/main/RECIPES.md).
 
 **How to read a row.** Every row opens with two glyphs:
 

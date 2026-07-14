@@ -1,7 +1,7 @@
 # Homograph keying — FIXED (supersedes the handoff)
 
 **Date:** 2026-06-30. The homograph multiplication in the bridge preview is **fixed**, verified
-on `dA` and `vah`. This supersedes [`H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md`](H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md)
+on `dA` and `vah`. This supersedes [`H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md`](RussianTranslation/archive/H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md)
 (no handoff needed) and corrects the "blocked, no discriminator" assessment in the bridge
 follow-up note.
 
