@@ -2146,6 +2146,36 @@ named).
 
 ---
 
+### §84. pwg_ru readiness audit: `[NWS:]` attribution and `{%…%}`-delimiter dropping are NOT audit-contract defects; observed token/cost economy is `not_recoverable`; store-membership ≠ audit-clean
+
+When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three reusable traps:
+
+1. **Do not flag `[NWS:]` prefixes or dropped `{%…%}` gloss delimiters as fidelity defects.** The
+   audit contract's STRANDED-ANCHOR class is specifically leftover `{Tn}` **mask** placeholders
+   ([`stage2_pregate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/stage2_pregate.py) `ANCHOR_RE`), **not** `[NWS:]` layer markers; the semantic gate flags the *opposite* of delimiter-dropping —
+   **`untranslated_braced_german_gloss`** (German left *inside* the braces). The surviving
+   `no_pwg_w05_rq1` audit passed cards with both `[NWS:]` and dropped-`{%…%}` clean. The real recurring
+   defect classes are **`missing_senses` (SAN-LOSS)**, `untranslated_braced_german_gloss`,
+   `likely_circular_gloss`, `possible_sense_compression`, and the infra pair
+   `kill-timeout`/`selfheal-nothing-resolved`.
+2. **Observed per-clean economy is `not_recoverable`, never $0.** `run_events.jsonl` records calls +
+   `elapsed_ms` but **no token field**; H818 dashboards carry `cost:null`. So observed calls/clean and
+   $/clean cannot be measured from existing evidence — the deterministic **projection** ($58.09/100hw)
+   is a separate, optimistic floor and must not be substituted for observed performance.
+3. **Current-store membership is not the audit verdict and not exact provenance.** Absence ≠ audit
+   rejection; presence ≠ *this* output passed. Keep reviewer quality, sealed audit verdict, and
+   promotion status as **three separate** measurements; an audit-to-promotion escape needs an exact
+   key + sense/card + RU-hash + promotion-provenance join to allege.
+
+> **Source:** H911 LOCAL-READINESS quality/economy gate
+> ([report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h911/H911_LOCAL_READINESS_QUALITY_ECONOMY_GATE_2026-07-14.md),
+> [census](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h911/h911_quality_economy_census.json),
+> [SanskritLexicography PR #460](https://github.com/gasyoun/SanskritLexicography/pull/460)) ·
+> [H911](https://github.com/gasyoun/Uprava/blob/main/handoffs/H911-Fable_SanskritLexicography_h818-local-quality-economy-readiness-gate_14.07.26.md) ·
+> 14-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`, owner-authorized executor-override of minted Fable 5).
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_

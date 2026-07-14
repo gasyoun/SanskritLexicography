@@ -1,0 +1,767 @@
+{
+ "schema": "h911.blind_review_results.v2",
+ "executor": "Opus 4.8 (claude-opus-4-8[1m]) single consistent audit pass; owner-authorized override of minted Fable 5",
+ "protocol": "sol.md two-phase; freeze v2 (2906bd23); v1 (564669fb) invalidated prior_outcome_exposure",
+ "three_separate_measurements": {
+  "M1_blind_reviewer_quality": {
+   "n": 40,
+   "pub5_fully_publishable": 27,
+   "pub4_light_touch": 9,
+   "pub_le3_needs_repair": 4,
+   "stylistic_concerns_NOT_fidelity_rejects": "[NWS:] verbose attribution (7/40) and {%..%}-delimiter dropping (8/40) are DOWNGRADED to reviewer stylistic concerns — the surviving audit passes cards with both patterns (V15/V20/V21/V37 audit_clean); NOT counted as fidelity rejects.",
+   "reviewer_flagged_pub_le3": [
+    "V20 aj_a~~h0_zz_nws00",
+    "V21 m_ay_a~~h0_zz_nws00",
+    "V32 _s_a_k_a~~h0_zz_nws00",
+    "V40 _badr_a~~h0_zz_pw"
+   ],
+   "V40_note": "V40 (_badr_a~~h0_zz_pw): reviewer concern only — «бреет {#kar#}» for \"mit kar rasiren\" looks like infinitive->finite + idiom mangle; sealed verdict UNKNOWN (root not recoverable); NOT asserted as a confirmed defect."
+  },
+  "M2_sealed_automated_audit": {
+   "judge_judge_sonnet": "null / unavailable for 40/40 cards",
+   "recoverable_n": 15,
+   "unknown_excluded_n": 25,
+   "note": "canonical audit verdict recoverable ONLY for roots no_pwg_w05_rq1 (audit report) and no_pwg_w1 (clean/requeue key files); w02/w03/w04/w04_rq1/w05 audit reports OVERWRITTEN -> unknown, EXCLUDED from denominator. Do NOT extrapolate the n=15 rate to all 40.",
+   "audit_clean_in_recoverable": 10,
+   "reviewer_pub_in_recoverable": 13,
+   "disagreements": [
+    {
+     "id": "V01",
+     "key": "dev_i~~h0_zz_pwkvn",
+     "sealed": "audit_requeue",
+     "pub": 5,
+     "note": "w1 first-run requeue (transient-heavy, not a quality reject)"
+    },
+    {
+     "id": "V02",
+     "key": "m_ay_a~~h0_zz_sch",
+     "sealed": "audit_requeue",
+     "pub": 5,
+     "note": "w1 first-run requeue (transient-heavy, not a quality reject)"
+    },
+    {
+     "id": "V10",
+     "key": "m_ay_a~~h0_zz_pwkvn",
+     "sealed": "audit_requeue",
+     "pub": 5,
+     "note": "w1 first-run requeue (transient-heavy, not a quality reject)"
+    },
+    {
+     "id": "V16",
+     "key": "a_suci~~h0_zz_pw",
+     "sealed": "audit_defect",
+     "pub": 5,
+     "note": "audit_defect via semantic-risk gate; specific risk NOT individually recoverable beyond requeue_defect membership; NOT attributed to {%..%}"
+    },
+    {
+     "id": "V18",
+     "key": "_c_ay_a~~h0_zz_sch",
+     "sealed": "audit_requeue",
+     "pub": 4,
+     "note": "w1 first-run requeue (transient-heavy, not a quality reject)"
+    },
+    {
+     "id": "V20",
+     "key": "aj_a~~h0_zz_nws00",
+     "sealed": "audit_clean",
+     "pub": 3,
+     "note": "reviewer over-call: [NWS:] stylistic, audit clean"
+    },
+    {
+     "id": "V21",
+     "key": "m_ay_a~~h0_zz_nws00",
+     "sealed": "audit_clean",
+     "pub": 3,
+     "note": "reviewer over-call: [NWS:] stylistic, audit clean"
+    }
+   ]
+  },
+  "M3_current_promotion_status": {
+   "note": "store membership is NOT exact provenance and NOT the audit verdict; present = \"similar current-store content exists\", requires exact key+sense/card+RU-hash+promotion-provenance to claim this exact output was promoted (NOT done here).",
+   "similar_content_exists": 33,
+   "absent": 7
+  }
+ },
+ "cards": [
+  {
+   "sample_id": "V01",
+   "key": "dev_i~~h0_zz_pwkvn",
+   "root": "no_pwg_w1",
+   "layer": "pwkvn",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "audit_requeue",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V02",
+   "key": "m_ay_a~~h0_zz_sch",
+   "root": "no_pwg_w1",
+   "layer": "sch",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "audit_requeue",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V03",
+   "key": "mahat~~h0_zz_nws00",
+   "root": "no_pwg_w03",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 5,
+    "concern": "added {#} lemma tokens (benign)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V04",
+   "key": "dev_i~~h0_zz_nws00",
+   "root": "no_pwg_w1",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 4,
+    "c": 5,
+    "p": 5,
+    "pub": 4,
+    "concern": "script-mix p??car?tr??? (Latin+Cyrillic in one word)"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V05",
+   "key": "putr_i~~h0_zz_pw",
+   "root": "no_pwg_w1",
+   "layer": "pw",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V06",
+   "key": "a_b_uta~~h0_zz_nws00",
+   "root": "no_pwg_w05",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean (backfill)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V07",
+   "key": "_bagavat~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 4,
+    "concern": "leaked [NWS:] anchor prefix"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V08",
+   "key": "ahi_pena~~h0_zz_pw",
+   "root": "no_pwg_w05_rq1",
+   "layer": "pw",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V09",
+   "key": "a_b_uta~~h0_zz_pwkvn",
+   "root": "no_pwg_w05",
+   "layer": "pwkvn",
+   "size": "S",
+   "reviewer": {
+    "m": 4,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 4,
+    "concern": "meaning drift 'nicht vorhanden'->??? ????????????"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V10",
+   "key": "m_ay_a~~h0_zz_pwkvn",
+   "root": "no_pwg_w1",
+   "layer": "pwkvn",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "audit_requeue",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V11",
+   "key": "a_b_uta~~h0_zz_pw",
+   "root": "no_pwg_w05",
+   "layer": "pw",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 3,
+    "pub": 4,
+    "concern": "dropped {%..%} delimiters"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V12",
+   "key": "_c_ay_a~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean (18 senses, thorough)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V13",
+   "key": "_sam_bu~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V14",
+   "key": "_saktip_ata~~h0_zz_sch",
+   "root": "no_pwg_w04_rq1",
+   "layer": "sch",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean; idiomatic"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V15",
+   "key": "aklizwa~~h0_zz_pwkvn",
+   "root": "no_pwg_w05_rq1",
+   "layer": "pwkvn",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 5,
+    "concern": "dropped {%..%}"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V16",
+   "key": "a_suci~~h0_zz_pw",
+   "root": "no_pwg_w05_rq1",
+   "layer": "pw",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 5,
+    "concern": "dropped {%..%}"
+   },
+   "sealed_audit": "audit_defect",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V17",
+   "key": "_badr_a~~h0_zz_sch",
+   "root": "no_pwg_w04",
+   "layer": "sch",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V18",
+   "key": "_c_ay_a~~h0_zz_sch",
+   "root": "no_pwg_w1",
+   "layer": "sch",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 3,
+    "pub": 4,
+    "concern": "inconsistent {%..%} (dropped on headword+avahel?)"
+   },
+   "sealed_audit": "audit_requeue",
+   "store_status": "similar_content_exists(jaccard~0.79; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V19",
+   "key": "_ga_rw_a~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean; thorough"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V20",
+   "key": "aj_a~~h0_zz_nws00",
+   "root": "no_pwg_w05_rq1",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 4,
+    "c": 5,
+    "p": 3,
+    "pub": 3,
+    "concern": "systematic leaked [NWS: <ref>] anchors (stranded-anchor)"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V21",
+   "key": "m_ay_a~~h0_zz_nws00",
+   "root": "no_pwg_w1",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 4,
+    "c": 5,
+    "p": 3,
+    "pub": 3,
+    "concern": "systematic leaked [NWS: <ref>] anchors + one garbled bracket fragment (backfill)"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V22",
+   "key": "_s_alyodana~~h0_zz_nws00",
+   "root": "no_pwg_w04_rq1",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean ([NWS:] genuinely in source)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V23",
+   "key": "duzkfta~~h0_zz_pw",
+   "root": "no_pwg_w02",
+   "layer": "pw",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 3,
+    "pub": 4,
+    "concern": "dropped {%..%}"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V24",
+   "key": "dayita~~h0_zz_pw",
+   "root": "no_pwg_w02",
+   "layer": "pw",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean (cross-ref)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V25",
+   "key": "_ber_i~~h0_zz_pw",
+   "root": "no_pwg_w04",
+   "layer": "pw",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 5,
+    "concern": "dropped {%..%} on Pauke"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V26",
+   "key": "akftrima~~h0_zz_nws00",
+   "root": "no_pwg_w05_rq1",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 4,
+    "concern": "leaked [NWS:] anchor prefix"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V27",
+   "key": "aklizwa~~h0_zz_nws00",
+   "root": "no_pwg_w05_rq1",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean (backfill)"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V28",
+   "key": "_s_a_k_a~~h0_zz_sch",
+   "root": "no_pwg_w02",
+   "layer": "sch",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "absent_from_current_store"
+  },
+  {
+   "sample_id": "V29",
+   "key": "_d_ara_r_a~~h0_zz_sch",
+   "root": "no_pwg_w04",
+   "layer": "sch",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V30",
+   "key": "ahi_pena~~h0_zz_pwkvn",
+   "root": "no_pwg_w05_rq1",
+   "layer": "pwkvn",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V31",
+   "key": "sa_m_dy_a~~h0_zz_nws00",
+   "root": "no_pwg_w03",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 4,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "minor idiomatic ????????? ???????"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V32",
+   "key": "_s_a_k_a~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "L",
+   "reviewer": {
+    "m": 5,
+    "i": 4,
+    "c": 5,
+    "p": 3,
+    "pub": 3,
+    "concern": "systematic leaked [NWS: <author>] anchors (stranded-anchor)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V33",
+   "key": "_b_azita~~h0_zz_nws00",
+   "root": "no_pwg_w04",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V34",
+   "key": "a_smar_i~~h0_zz_pw",
+   "root": "no_pwg_w05",
+   "layer": "pw",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V35",
+   "key": "_aragva_da~~h0_zz_pw",
+   "root": "no_pwg_w04",
+   "layer": "pw",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean; botanical preserved"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V36",
+   "key": "_sreyas~~h0_zz_nws00",
+   "root": "no_pwg_w02",
+   "layer": "nws",
+   "size": "M",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 5,
+    "pub": 5,
+    "concern": "clean ([NWS: MW] in source)"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V37",
+   "key": "aj_a~~h0_zz_pwkvn",
+   "root": "no_pwg_w05_rq1",
+   "layer": "pwkvn",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 5,
+    "concern": "dropped {%..%}"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V38",
+   "key": "_scandra~~h0_zz_nws00",
+   "root": "no_pwg_w04_rq1",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 4,
+    "concern": "leaked [NWS] anchor prefix"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V39",
+   "key": "ambaz_w_a~~h0_zz_nws00",
+   "root": "no_pwg_w05_rq1",
+   "layer": "nws",
+   "size": "S",
+   "reviewer": {
+    "m": 5,
+    "i": 5,
+    "c": 5,
+    "p": 4,
+    "pub": 4,
+    "concern": "leaked [NWS:] anchor + flat->numbered re-sense"
+   },
+   "sealed_audit": "audit_clean",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  },
+  {
+   "sample_id": "V40",
+   "key": "_badr_a~~h0_zz_pw",
+   "root": "no_pwg_w04",
+   "layer": "pw",
+   "size": "M",
+   "reviewer": {
+    "m": 3,
+    "i": 3,
+    "c": 4,
+    "p": 3,
+    "pub": 2,
+    "concern": "GARBLED: 'mit kar rasiren'->?????? {#kar#}? (meaning lost, ungrammatical); dropped {%..%}"
+   },
+   "sealed_audit": "unknown",
+   "store_status": "similar_content_exists(jaccard~1.00; NOT exact provenance)"
+  }
+ ]
+}
