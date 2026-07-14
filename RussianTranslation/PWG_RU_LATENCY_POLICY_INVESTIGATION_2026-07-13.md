@@ -221,4 +221,98 @@ resolves the `node_modules/@anthropic-ai/claude-code/cli-wrapper.cjs` entry rela
 shim's own directory, so a bare `claude` abspath's to the CWD and dies with `[WinError 2]`
 before the D-A rewrite can help.
 
+## Method step 2 — foreign-route comparison runbook (PREPARED 14-07-2026, Opus 4.8 `claude-opus-4-8[1m]`; owner-gated, NOT yet run)
+
+Prepared per the H895 STOP-branch close-out: this is the sanctioned **diagnostic-only** exception
+for foreign-route probing. It is **NOT** Linux production — **Linux production and H841/H842/H843
+stay blocked** until the route is confirmed *and* a new acceptance handoff is minted (last step
+below). The comparison must reuse the exact same probe the home sweep used, so prompt, payload,
+schema, and model are **byte-identical on both hosts by construction** (they are hard-coded in
+`max_account_orchestrator._probe_call` and driven by the same
+[`latency_payload_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/latency_payload_sweep.py)
+off the **same merged commit**):
+
+- **model** `claude-sonnet-5` (hard-coded `EXACT_GEN_MODEL` — cannot drift)
+- **prompt/payload** `Return JSON {"ok":true}. Preserve this padding as inert input.\n` + `x`×**6491** ⇒ **6551 B** total input (the D-K measured-probe size; `--mode diurnal` uses exactly this)
+- **schema** `{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}`, call `-p --output-format json --json-schema … --model claude-sonnet-5 --permission-mode plan`
+- **30 000 ms ceiling unchanged.**
+
+### Guardrails (probe-only — do NOT cross these)
+
+- **Probe-only.** Run only `latency_payload_sweep.py` (which calls `_probe_call`). Do **NOT** run
+  `max_account_orchestrator … staged-run`, `no_pwg_scale_plan.py --headless` (non-`--dry-run`),
+  `promote_final_cards.py`, `audit_window.py`, or `translation_memory.py build`. **No jobs, no
+  translations, no promotions, no canonical-store or TM writes.** `--permission-mode plan` already
+  bars the model from any tool use / file write.
+- **Owner-only auth.** The **owner** authenticates the foreign Max profile interactively. The agent
+  **never** runs `/login` and **never** copies credentials — do **not** transfer
+  `D:\ClaudeTools\profiles\claude1\.claude` (or any token) from Windows to the foreign host. Each
+  route uses its own independently-authenticated profile.
+- **Same commit.** Pin both hosts to the identical merged commit under test: record
+  `git -C <repo> rev-parse origin/master` once and check that **same SHA** out on both hosts.
+
+### Step A — provision + owner authentication (foreign Linux / non-Russian egress) — OWNER runs
+
+```bash
+# On the foreign Linux host (or a Linux box behind a non-Russian VPN egress):
+sudo apt-get update && sudo apt-get install -y nodejs npm git python3   # or distro equivalent
+npm install -g @anthropic-ai/claude-code
+
+# Dedicated config dir — NEVER reuse or copy the Windows profile:
+export CLAUDE_CONFIG_DIR="$HOME/.claude-max-foreign"
+claude /login            # OWNER does this interactively; choose the Max plan. Agent never runs it.
+claude auth status       # verify (prints status only, never the token)
+command -v claude        # record the shim path for --claude-bin below (e.g. /usr/bin/claude)
+
+# Pin the same merged commit as the home route:
+git clone https://github.com/gasyoun/SanskritLexicography.git && cd SanskritLexicography
+git checkout "$(git rev-parse origin/master)"     # same SHA both hosts
+```
+
+### Step B — paired 6.5 KB probes (run BOTH in the same UTC window; jitter is time-clustered)
+
+From `RussianTranslation/` on each host, `N ≥ 5` samples at the exact 6491-byte measured payload:
+
+```bash
+# FOREIGN (Linux):
+python src/pilot/latency_payload_sweep.py --mode diurnal --samples 5 \
+  --config-dir "$HOME/.claude-max-foreign" \
+  --claude-bin "$(command -v claude)" \
+  --out foreign_route_6491.jsonl
+```
+
+```powershell
+# HOME (Windows), same UTC window:
+python src/pilot/latency_payload_sweep.py --mode diurnal --samples 5 `
+  --config-dir "D:/ClaudeTools/profiles/claude1/.claude" `
+  --claude-bin "C:/Users/user/AppData/Roaming/npm/claude" `
+  --out home_route_6491.jsonl
+```
+
+Repeat the pair across **≥ 2–3 UTC windows / times of day** (the home data is a single ~19-min
+window — one paired window is not enough to rule out a diurnal artifact). Summarise each file with
+[`src/pilot/latency_sweep_analyze.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/latency_sweep_analyze.py)
+(median, breach-rate).
+
+### Step C — decision rule (robust, not a single draw)
+
+The home route is a **wide, jitter-dominated** distribution (min 8.9 s · p50 25.8 s · max 59.2 s ·
+CoV 0.53; ~35 % over ceiling in-window), so a single fast foreign reading proves nothing. **Confirm
+the degraded-route hypothesis IFF**, per paired window with `N ≥ 5` across ≥ 2 windows:
+
+- **Foreign:** median measured latency **≤ 30 000 ms AND** breach-rate (fraction > 30 000 ms)
+  **below a small bound** (≈ ≤ 10–20 %) — *consistently*, not one lucky draw; **AND**
+- **Home (Windows), same windows:** stays high (~40 s tail, p50 ≈ 26 s, ~⅓ breach).
+
+If confirmed, the fix is the H818 foreign-server orchestration, **not** a threshold change (the
+30 000 ms ceiling stays). If the foreign route also breaches, the cause is **not** Russia→Anthropic
+egress and the investigation reopens (payload lever already ruled out above).
+
+### Step D — ONLY on confirmation (separate step, NOT part of this diagnostic)
+
+Provision **four** Max profiles on the foreign route and **mint a new acceptance handoff** for the
+bounded `arvant` retry + the `1 → 10 → 20 → 100` sequence, gated by the **same 30 000 ms ceiling**
+(preferably the stricter N-probe median+breach-rate gate from the Gate-design implication above).
+Until that confirmation + handoff exist, Linux production and H841/H842/H843 remain **blocked**.
+
 _Dr. Mārcis Gasūns_
