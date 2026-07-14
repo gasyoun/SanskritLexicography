@@ -22,6 +22,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
+INPUT_DIR = os.path.join(HERE, 'input')                    # .../src/pilot/input (portrait sidecars)
 
 sys.path.insert(0, SRC)
 import nws_split
@@ -33,6 +34,7 @@ from prompt_rule_audit import (
     audit_cards as audit_semantic_cards,
     build_report as build_prompt_rule_report,
 )
+from sense_count import scan_sense_shortfall             # H920 SAN-LOSS sense-count guard
 from workflow_payload import workflow_payload
 from window_provenance import stale_check
 from window_reports import (
@@ -236,6 +238,38 @@ def run_prompt_semantic_audit(wf, protected, review_limit=25):
     }
 
 
+def run_sense_shortfall_gate(results, input_dir, protected):
+    """H920 deterministic SAN-LOSS guard: flag any translated card whose OUTPUT sense count
+    falls short of its input portrait's declared source_senses.
+
+    Closes the no_pwg / supplement whole-card gap the H911 gate surfaced: the harness
+    accept() gate is only an <ls>/{# token-count match, so a dropped citation-free sense
+    (e.g. darv_i~~h0_zz_pw: 3 source senses -> output 2, sense 1 "Löffel" dropped, ls 0==0 &
+    sk 3==3) passes clean and is never flagged partial/missing_senses. This gate compares the
+    portrait's deterministic source-sense count (stamped by _pilot_gen_merged.gen_no_pwg_card)
+    to the output card's sense count and requeues the shortfall as a content defect BEFORE
+    promotion. In-process, no model/network. A card whose portrait predates the H920 stamp
+    (source_senses absent) is silently skipped — never a false positive."""
+    t0 = time.perf_counter()
+    short = [s for s in scan_sense_shortfall(results, input_dir) if s['key'] not in protected]
+    lines = ['=== 7. SAN-LOSS sense-count guard (portrait source_senses vs output) ===']
+    if short:
+        for s in short:
+            lines.append('  %-30s SAN-LOSS: output %d < source %d (dropped %d sense(s))'
+                         % (s['key'], s['actual'], s['expected'], s['dropped']))
+        lines.append('')
+        lines.append('  GATE: FAIL — %d card(s) dropped a whole source sense: %s'
+                     % (len(short), ' '.join(s['key'] for s in short)))
+    else:
+        lines.append('  GATE: PASS — no output card falls short of its source sense count')
+    return {'argv': ['in-process', 'sense_count.scan_sense_shortfall'],
+            'returncode': 1 if short else 0,
+            'stdout': '\n'.join(lines) + '\n', 'stderr': '',
+            'requeue': sorted(s['key'] for s in short),
+            'sense_shortfall': short,
+            'seconds': round(time.perf_counter() - t0, 3)}
+
+
 def emit_audit_event(event_type, level='info', root=None, state=None, summary='', data=None):
     append_event('audit_window', event_type, level=level, root=root,
                  state=state, summary=summary, data=data or {})
@@ -423,6 +457,7 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
         futures[ex.submit(run_nws_gate, keys, protected)] = ('nws', None)
         futures[ex.submit(run_prompt_semantic_audit, wf, protected)] = ('prompt_semantic', None)
+        futures[ex.submit(run_sense_shortfall_gate, results, INPUT_DIR, protected)] = ('sense_loss', None)
         for name, cmd, parser in commands:
             futures[ex.submit(run_py, cmd)] = (name, parser)
         for fut in concurrent.futures.as_completed(futures):
@@ -441,7 +476,7 @@ def main():
                     res['requeue'] = parsed
             gates[name] = res
 
-    for name in ['nws', 'translation', 'stage2_mechanical', 'coverage', 'sense_dupes', 'prompt_semantic']:
+    for name in ['nws', 'translation', 'stage2_mechanical', 'coverage', 'sense_dupes', 'prompt_semantic', 'sense_loss']:
         res = gates[name]
         print('\n=== %s ===' % name)
         print(res['stdout'].rstrip())
@@ -553,6 +588,7 @@ def main():
          for fp in ((r.get('card') or {}).get('frag_prov') or []) if fp.get('fsha')})
     report['prompt_rules'] = gates.get('prompt_semantic', {}).get('prompt_rules')
     report['semantic_risks'] = gates.get('prompt_semantic', {}).get('card_risks')
+    report['sense_shortfall'] = gates.get('sense_loss', {}).get('sense_shortfall') or []
     report['judge_sample_rate'] = args.judge_sample_rate
     report['judge_sample_min'] = args.judge_sample_min
     report['judge_sample_seed'] = args.judge_sample_seed

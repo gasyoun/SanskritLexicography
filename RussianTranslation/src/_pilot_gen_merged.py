@@ -38,6 +38,9 @@ OUT = os.path.join(HERE, 'pilot', 'input')
 sys.path.insert(0, os.path.join(HERE, '..', 'research'))
 import root_segment_proto as RS                 # the lossless <div n="p"> root slicer
 
+sys.path.insert(0, os.path.join(HERE, 'pilot'))
+from sense_count import count_source_senses      # H920 deterministic source-sense counter
+
 # Only explode genuinely GIANT roots (the ones that kill a single-pass translation);
 # small records with 1-2 prefix divisions stay whole.
 MIN_SPLIT = int(os.environ.get('ROOT_SPLIT_MIN', '8'))
@@ -584,6 +587,31 @@ def gen_root_split(key, pwg_idx, verbose=True):
     return len(submap)
 
 
+# H920 SAN-LOSS mitigation (root-cause (a): the model omits a whole sense from a multi-
+# sense supplement source — measured on darv_i~~h0_zz_pw, which dropped sense 1 "Löffel").
+# A no-PWG supplement sub-card carries NO PWG sense-tree, so nothing told the translator how
+# many senses the source declares. When the source has >=2 numbered senses we prepend an
+# explicit enumeration rule so the model renders every one and never silently drops a gloss-
+# only sense (the exact loss the accept() <ls>/{# guard is blind to). Deterministic, offline,
+# language-neutral (the source is German either way). Keep it free of `〉`/leading-digit lines
+# so count_source_senses() over the finished blob still counts only the real source senses.
+_SENSE_RULE_MIN = 2
+
+
+def _with_sense_rule(body, n_senses):
+    """Prepend the H920 sense-completeness rule to a supplement sub-card blob when its
+    source declares >= _SENSE_RULE_MIN numbered senses; otherwise return it unchanged."""
+    if n_senses < _SENSE_RULE_MIN:
+        return body
+    rule = (
+        '=== SENSE-COMPLETENESS RULE (H920) ===\n\n'
+        'This source layer declares %d numbered senses. Render EXACTLY all %d: emit one '
+        'output sense per source sense, tag each with its source sense number, and never '
+        'drop, merge, or omit a numbered sense. Omitting a whole sense (even a short gloss-'
+        'only one with no citation) is a SAN-LOSS content defect.' % (n_senses, n_senses))
+    return '%s\n\n%s' % (rule, body)
+
+
 def no_pwg_parts(key):
     """H214 — the labeled sub-card parts for a PWG-MISSING headword, one per non-PWG layer.
 
@@ -606,9 +634,11 @@ def no_pwg_parts(key):
         groups = chunk_records(supp[code], HEAD_BUDGET)
         for i, grp in enumerate(groups):
             label = code if len(groups) == 1 else '%s%02d' % (code, i)
-            blob = '\n\n'.join('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r)
+            body = '\n\n'.join('=== LAYER: %s ===\n\n%s' % (ROLE.get(code, code.upper()), r)
                                for r in grp)
-            parts.append((label, blob))
+            # H920: enumerate the source senses for the translator (source counted on the raw
+            # records, before the rule/LAYER headers, so the count is the true source total).
+            parts.append((label, _with_sense_rule(body, count_source_senses('\n'.join(grp)))))
     if supp.get('nws'):
         blocks = ['=== LAYER: %s ===\n\n%s' % (ROLE['nws'], r) for r in supp['nws']]
         omap = nws_owner_map(key)                    # authoritative owner->gloss pairing (kills F12)
@@ -670,7 +700,12 @@ def gen_no_pwg_card(key, pwg_idx, verbose=True):
     for part, (label, blob) in enumerate(parts):
         sub = '%s~~h0_zz_%s' % (root, label)
         open(os.path.join(OUT, sub + '.raw.txt'), 'w', encoding='utf-8').write(blob)
-        json.dump(portrait, open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'),
+        # H920: stamp THIS sub-card's deterministic source-sense count into its portrait, so
+        # the audit SAN-LOSS guard has an expected count to compare the output against. The
+        # no-PWG portrait otherwise carries senses:[] and no count — the exact gap that let
+        # darv_i~~h0_zz_pw (3 source senses) promote with only 2 (sense 1 "Löffel" dropped).
+        sub_portrait = [dict(portrait[0], source_senses=count_source_senses(blob))]
+        json.dump(sub_portrait, open(os.path.join(OUT, sub + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
         submap.append({'subkey': sub, 'layer': dm.layer_of(sub), 'section': label})
     if verbose:

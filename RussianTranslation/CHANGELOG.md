@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **SAN-LOSS (whole-dropped-sense) guard — the H911 FAIL-branch #1 defect (H920, offline).**
+  Root-caused `missing_senses`/SAN-LOSS in the no_pwg / supplement lane to **model omission**, made
+  silent by three compounding facts: the no_pwg portrait declares `senses:[]` (no expected count), the
+  only whole-card guard is `accept()`'s `<ls>`/`{#` token match (blind to a dropped citation-free
+  sense), and `partial`/`missing_senses` are only set in the fragment-heal / autosplit lanes. Live
+  evidence: `darv_i~~h0_zz_pw` dropped source sense 1 ("Löffel"), output 2/3, passed **clean** — the
+  harness even computed `senses:3` and discarded it. Fix (SHARED, language-neutral): a new
+  [`sense_count.py`](src/pilot/sense_count.py) primitive (`count_source_senses` counts top-level
+  `N〉`/`N)` ordinals, `scan_sense_shortfall` compares to the output); `gen_no_pwg_card` stamps each
+  sub-card's `source_senses` into its portrait and prepends a **sense-completeness rule** to
+  ≥2-sense sources; a `sense_loss` gate in `audit_window.py` (→ requeue defect) and a `MISSING-SENSE`
+  HARD flag in `audit_window_en.py`. Conservative — a null card or a pre-H920 portrait is skipped
+  (never a false positive). Pinned by 4 `test_h920_*` selftests; LANG_PARITY entry
+  `sense_count_sanloss_guard_h920` (SHARED). No live generation — validated on fixtures + frozen
+  evidence; consuming `INPUT[k].senses` in the harness `accept()` is the deferred, live-gated deepest
+  fix. Root cause + guard:
+  [pwg_ru/h911/H920_NO_PWG_SANLOSS_ROOTCAUSE_AND_GUARD_2026-07-14.md](pwg_ru/h911/H920_NO_PWG_SANLOSS_ROOTCAUSE_AND_GUARD_2026-07-14.md).
+
 ## [1.9.9] - 2026-07-14
 
 - **No-PWG promotion command safety.** `no_pwg_scale_plan.py` now emits a directly
