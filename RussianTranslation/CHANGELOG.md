@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Latency-policy investigation — foreign-route comparison runbook prepared (diagnostic-only,
+  owner-gated; NOT yet run).** Appended *Method step 2* to
+  [PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md](PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md):
+  exact owner-authentication + paired 6.5 KB probe commands reusing
+  [`latency_payload_sweep.py`](src/pilot/latency_payload_sweep.py) / `_probe_call` (exact
+  `claude-sonnet-5`, byte-identical prompt/payload/schema off the same commit), guardrails
+  (probe-only — no jobs/translations/promotions/store or TM writes; owner-only `/login`, never
+  copy the Windows profile), a robust decision rule (foreign median ≤ 30 000 ms + low breach-rate
+  over N ≥ 5 across ≥ 2 windows while Windows stays ~40 s), and the on-confirmation next step
+  (4 profiles + a new acceptance handoff). Linux production + H841–H843 stay blocked; the
+  30 000 ms ceiling is unchanged.
 - **H895 — H818 acceptance resume: second consecutive measured-probe NO-GO; latency-policy
   investigation opened.** Ran exactly one integrated warm-up+measured two-phase probe staged-run
   (run_id `h895-run1-arvant`, gen `claude-sonnet-5`, orch Opus 4.8 `claude-opus-4-8[1m]`): warm-up
