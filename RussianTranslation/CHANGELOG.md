@@ -13,7 +13,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
 - New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
   volume-column marker on every entry header in
-  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
   (123,366 entries, 100% coverage) and emits three views:
   [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
   *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —
@@ -30,7 +30,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ### H428 — opt2 generation schema slimmed to reachable-AND-model-generated fields, unblocking the classifier
 - The Workflow tool's `agent()` safety classifier was blocking 100% of opt2
-  translation calls (67/67 in [H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md),
+  translation calls (67/67 in [H389](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H389-Sonnet_RussianTranslation_pwg-ru-medium50-resume_08.07.26.md),
   52/52 in H388's B-arm) with `output schema too large to classify safely`, at
   0 subagent tokens — the reachable `CARDS_SCHEMA` had grown to 10,940 chars
   after H335 (`government`)/H405 (`evidence`/`evidence_summary`)/H422 (`stats`)
@@ -57,7 +57,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
 - New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
   volume-column marker on every entry header in
-  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
   (123,366 entries, 100% coverage) and emits three views:
   [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
   *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —

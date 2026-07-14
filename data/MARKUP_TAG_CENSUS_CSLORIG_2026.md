@@ -6,7 +6,7 @@ _Created: 11-07-2026 · Last updated: 11-07-2026_
 [DATA_LAYERS_CENSUS.md §3](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md):
 a per-dictionary frequency census of every markup tag in the Cologne source texts,
 normalized per 1,000 entries, with under-marking / inconsistency verdicts.
-Handoff: [H683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H683-Fable_SanskritLexicography_markup-tag-census-43-dicts_11.07.26.md)
+Handoff: [H683](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H683-Fable_SanskritLexicography_markup-tag-census-43-dicts_11.07.26.md)
 (Lane B, Fable sprint). Computed 11-07-2026 by Fable 5 (`claude-fable-5`).
 
 ## Method

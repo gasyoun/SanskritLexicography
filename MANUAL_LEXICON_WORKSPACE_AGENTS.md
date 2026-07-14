@@ -53,7 +53,7 @@ depth belongs there, this sheet stays thin.
 - **Never relaunch the medium50 / dense band-4 nominal lane blind.** The
   kill-gate/self-heal cascade is reproduced 3× (~2M tokens/window for ~1
   card). Gated on H442 recalibration →
-  [H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
+  [H462](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md).
 - **≤3 concurrent translation lanes, GLOBAL across all accounts and
   sessions.** The Slice-D collapse (~18 concurrent root workflows) is a
   server-side cliff.

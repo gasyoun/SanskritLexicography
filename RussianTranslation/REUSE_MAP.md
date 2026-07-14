@@ -7,7 +7,7 @@ Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_r
 re-investigates what a 05-07-2026 scout (Opus 4.8) already found: **~98% of the
 Russian sources MG brainstormed already exist and are wired**; the small gap
 (two specialist name-glossaries) was closed the same day by
-[H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md).
+[H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md).
 See also [`src/README.md`](src/README.md) for the per-source technical contract
 (schema, key hygiene, regeneration commands) — this file is the map of *what
 exists and where it plugs in*, not the extraction spec.

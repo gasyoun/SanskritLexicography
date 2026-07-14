@@ -2,7 +2,7 @@
 
 _Created: 08-07-2026 · Last updated: 08-07-2026_
 
-Measurement for [H317](https://github.com/gasyoun/Uprava/blob/main/handoffs/H317-Sonnet_RussianTranslation_pwg-ru-medium50-test_07.07.26.md):
+Measurement for [H317](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H317-Sonnet_RussianTranslation_pwg-ru-medium50-test_07.07.26.md):
 a controlled 50-headword test of the PWG→RU pipeline on **medium** words (DCS
 frequency band 4, nominal, 3–30 citations per entry — see
 [`src/pilot/select_medium50.py`](src/pilot/select_medium50.py) for the exact

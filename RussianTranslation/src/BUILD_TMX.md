@@ -90,7 +90,7 @@ verse the word-pairs hang off) and a **real** `alignment_confidence`.
 
 Where the corpus's L1 word-pairs came from is the **verse-aligned** Sanskrit↔Russian
 text bundled in
-[`SamudraManthanam/web/corpus_builder/jsonl/`](https://github.com/gasyoun/SamudraManthanam/tree/master/web/corpus_builder/jsonl)
+[`SamudraManthanam/web/corpus_builder/jsonl/`](https://github.com/gasyoun/SamudraManthanam/tree/main/web/corpus_builder/jsonl)
 — the same source DeepSeek word-aligned to *produce* L1. Each `group` there is one
 verse with `seg=sa` (Sanskrit), `seg=ru` (the Russian translation) and `seg=comm*`
 (Russian commentary notes). `build_l0.py` emits one L0 unit per verse-translation and
@@ -198,7 +198,7 @@ Recorded/spoken Sanskrit with a Russian rendering flows through this same L0 →
 with `t_start`/`t_end` time anchors + `source_media`). See
 [`ORAL_INGEST.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ORAL_INGEST.md)
 for the shared schema (coordinated with
-[H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)),
+[H174](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md)),
 the grade policy, and the pilot results.
 
 Two touch-points here: `l0_tu_xml` emits `modality`/`t_start`/`t_end`/`source_media`/

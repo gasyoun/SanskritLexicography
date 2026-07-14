@@ -6,7 +6,7 @@ A **third independent witness** for Sanskrit inflected-form data, diffed against
 kosha's existing DCS + vidyut forms layer. This is a **comparison / oracle** — it
 never merges or overwrites either side. Phase 4 of
 [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md);
-handoff [H105](https://github.com/gasyoun/Uprava/blob/main/handoffs/H105-Opus_SanskritLexicography_heritage_phase4_morphology_forms_03.07.26.md).
+handoff [H105](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H105-Opus_SanskritLexicography_heritage_phase4_morphology_forms_03.07.26.md).
 
 ## The two witnesses
 

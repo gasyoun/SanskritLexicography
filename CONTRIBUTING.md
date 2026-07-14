@@ -1,6 +1,6 @@
 # Contributing to SanskritLexicography
 
-> Part of the [Sanskrit Lexicon](https://github.com/sanskrit-lexicon) project. Inherits the [org-wide contribution standard](https://github.com/sanskrit-lexicon/COLOGNE/blob/master/CONTRIBUTING.md).
+> Part of the [Sanskrit Lexicon](https://github.com/sanskrit-lexicon) project. Inherits the [org-wide contribution standard](https://github.com/sanskrit-lexicon/COLOGNE/blob/main/CONTRIBUTING.md).
 
 This is a **data and research workspace**, not a software project: most changes
 are data files, indexes, and documentation. The guidance below reflects that.

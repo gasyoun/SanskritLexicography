@@ -2,7 +2,7 @@
 
 _Created: 08-07-2026 · Last updated: 08-07-2026_
 
-The dictionary answers "what senses exist and where are they cited" superbly; it does **not** answer "which sense is live in this passage" or "how did the sense change over time" without an external model or dated corpus bolted on. This roadmap turns each honest ceiling item into either a build (with the bolt-on named), a partial (with the proxy named), or an explicit stays-out-of-scope. All eight forks were ruled by MG on 08-07-2026 (decision log at the bottom). Sequencing ruling: **[H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md) audit first → cheap derivables in parallel with translation → model/benchmark phases after ~50% translation coverage.**
+The dictionary answers "what senses exist and where are they cited" superbly; it does **not** answer "which sense is live in this passage" or "how did the sense change over time" without an external model or dated corpus bolted on. This roadmap turns each honest ceiling item into either a build (with the bolt-on named), a partial (with the proxy named), or an explicit stays-out-of-scope. All eight forks were ruled by MG on 08-07-2026 (decision log at the bottom). Sequencing ruling: **[H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md) audit first → cheap derivables in parallel with translation → model/benchmark phases after ~50% translation coverage.**
 
 ## The ceiling, item by item
 

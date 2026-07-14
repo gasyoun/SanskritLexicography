@@ -14,7 +14,7 @@ rendering) through the *same* L0 → grade → TMX pipeline, not a forked one.
 ## Coordination with H174 — one schema, two owners
 
 The spoken material itself is owned by
-[H174 · spoken-sanskrit-corpus](https://github.com/gasyoun/Uprava/blob/main/handoffs/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md):
+[H174 · spoken-sanskrit-corpus](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H174-Opus_spoken-sanskrit-corpus_spoken_sanskrit_corpus_scaffold_04.07.26.md):
 sourcing the recordings/subtitles and **ASR-transcript cleaning** (Data-Juicer:
 disfluency/filler removal, garbled-segment filtering, near-dup collapse). H174 is
 still 🟡 (repo not built yet), so this doc **defines the contract** it will produce

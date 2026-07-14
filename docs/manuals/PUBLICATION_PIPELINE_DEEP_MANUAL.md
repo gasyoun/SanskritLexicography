@@ -88,7 +88,7 @@ reproduces exactly
 a **review memo may live here for a manuscript homed elsewhere**
 ([A35_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A35_review_fable5.md)
 reviews the A35 draft in
-[csl-orig/v02/etymology_stats/PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)).
+[csl-orig/v02/etymology_stats/PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md)).
 Newer skeletons (A40, A42, A43) carry YAML frontmatter (`paper_id`, `title`,
 `status`, `readiness`, `venue`, `author`, `data_source`); older notes (A33,
 A34, A36) carry the same facts as a bold header line + status blockquote.

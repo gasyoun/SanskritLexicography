@@ -34,7 +34,7 @@ the real run. (See `Uprava/GTD_NEXT_ACTIONS.md` → SanskritLexicography.)
    **{1:24, 2:13, 3:1} → 37/38 publishable**; the lone sev-3 is the idam
    NWS-owner-row swap class that the deterministic owner gate is meant to catch.
 2. **Run the freq queue on Max with `--root-split`**, window by window, per
-   [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md): refresh/verify the
+   [`src/pilot/RUN_FREQ_MAX.md`](RussianTranslation/src/pilot/RUN_FREQ_MAX.md): refresh/verify the
    freq manifest, generate root-split inputs for the next slice, run
    `run_pilot_wf.js` on the interactive Max harness (`node:fs` required), then
    audit `wf_output.json` so rejects auto-re-queue. Top of queue = sthā/bhū/gam.

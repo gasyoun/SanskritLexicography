@@ -3,7 +3,7 @@
 Böhtlingk & Roth's *Sanskrit-Wörterbuch* (the "Großes Petersburger Wörterbuch",
 PWG) appeared in **7 volumes over 1855–1875**. The front matter is digitized and
 translated in the PWG repo:
-[prefaces/](https://github.com/sanskrit-lexicon/PWG/tree/master/prefaces) —
+[prefaces/](https://github.com/sanskrit-lexicon/PWG/tree/main/prefaces) —
 German original (`*.md`), English (`*.en.md`), **Russian (`*.ru.md`)**, plus the
 combined [pwgpref_all.de.md](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md)
 / `.en.md` / `.ru.md`. This note documents the dates and what the prefaces give

@@ -17,7 +17,7 @@ M.G. asked (05-07-2026):
 
 The watcher **only flags** — it never re-translates. Re-runs of the flagged headwords go
 through the normal drain discipline
-([H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md) /
+([H179](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H179-Opus_RussianTranslation_pwg_ru_nominal_core_queue_reorder_05.07.26.md) /
 [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md)): branch + PR,
 `--no-tm`, ≤3-wide, `--gen-model-version claude-sonnet-5`.
 

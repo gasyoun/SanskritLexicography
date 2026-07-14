@@ -15,7 +15,7 @@ one-line thesis of this whole pipeline: an **updatable, verified dictionary**.
 
 Petersburger Wörterbuch (PWG), sub-entry keyed `g_a~~h0_14_a_byastam`; attested
 in the Śatapatha Brāhmaṇa. Source line in
-[csl-orig `v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt).
+[csl-orig `v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt).
 
 ### 1. German source (what the dictionary actually says)
 

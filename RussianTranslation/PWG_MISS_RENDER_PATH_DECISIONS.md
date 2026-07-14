@@ -3,7 +3,7 @@
 _Created: 05-07-2026 · Last updated: 06-07-2026_
 
 This file records settled decisions for the PWG-less headword card-rendering gap
-found during [H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md).
+found during [H206](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H206-Sonnet_RussianTranslation_pwg_ru_nominal_worklist_pwg_miss_gap_05.07.26.md).
 Do not re-ask these as open planning questions unless the topic is explicitly reopened.
 
 ## ⚠️ SUPERSESSION — 06-07-2026 (H214, Opus 4.8 `claude-opus-4-8`)

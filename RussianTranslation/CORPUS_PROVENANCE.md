@@ -59,7 +59,7 @@ from the lexicon.
 ## RV citation witness (VedaWeb, CC BY 4.0 — distinct from the corpus above)
 
 [`src/vedaweb_ru_witness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/vedaweb_ru_witness.py)
-([H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md))
+([H361](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H361-Sonnet_SanskritLexicography_vedaweb_elizarenkova_ru_witness_08.07.26.md))
 looks up Elizarenkova's published Russian rendering by **RV location**
 (`mandala.hymn.stanza`), reading the committed
 [`VisualDCS/non-derived/vedaweb/elizarenkova_ru_1989_1999.json`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/elizarenkova_ru_1989_1999.json)

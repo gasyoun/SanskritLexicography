@@ -384,7 +384,7 @@ are corpus-only (lemmatization targets, causatives, derived forms). Crosswalk bu
 Implication: dictionary-lookup pipelines need a lemmatization / sandhi-analysis fallback for
 roughly a fifth of corpus vocabulary — headword joins alone will not reach it.
 
-> **Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/simple-search/dcs_xref/readme.md)
+> **Source:** [csl-apidev `simple-search/dcs_xref/readme.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/readme.md)
 > + `.ai_state.md` §DCS-2026 frequency source — csl-apidev · 2026-06-11
 
 ### §13. Sa-Ru glossary token coverage plateaus at 86.6 percent
@@ -922,7 +922,7 @@ rule, and should be checked as its own artifact before any corpus_gate consumer 
 
 > **Source:** [`SanskritLexicography/RussianTranslation/REUSE_MAP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md)
 > + [`src/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md#специализированные-глоссарии-имен--build_glossariespy)
-> ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
+> ([H184](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H184-Sonnet_RussianTranslation_pwg_ru_reuse_sources_wiring_05.07.26.md))
 > — SanskritLexicography/RussianTranslation · Sonnet 5 `claude-sonnet-5` · 2026-07-05
 
 ---
