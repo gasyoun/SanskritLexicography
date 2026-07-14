@@ -82,10 +82,30 @@ def test_no_pwg_window_index_autoselect():
         fail('next_free_index on empty dirs must floor at 2')
 
 
+def test_no_pwg_promotion_command_is_scoped_and_executable():
+    """A plan must never tell an operator to merge the repo-root default glob."""
+    import no_pwg_scale_plan as nps
+    cmd = nps.promotion_command(
+        'src/pilot/output/wf_output.no_pwg_w07.json', 'claude-sonnet-5')
+    expected = (
+        'python src/promote_final_cards.py --merge '
+        '--glob "src/pilot/output/wf_output.no_pwg_w07.json" '
+        '--gen-model-version claude-sonnet-5')
+    if cmd != expected:
+        fail('promotion command drifted: %r' % cmd)
+    try:
+        nps.promotion_command('wf_output.json', 'sonnet')
+    except ValueError:
+        pass
+    else:
+        fail('promotion command must refuse a non-exact model alias')
+
+
 def main():
     tests = [
         test_cost_rate_table_sonnet5_formula,
         test_no_pwg_window_index_autoselect,
+        test_no_pwg_promotion_command_is_scoped_and_executable,
     ]
     for t in tests:
         t()
