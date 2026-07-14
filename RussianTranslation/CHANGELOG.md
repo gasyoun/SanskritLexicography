@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Latency-policy investigation — foreign-route runbook refined + probe telemetry extended
+  (diagnostic-only; NOT yet run).** Tightened *Method step 2* per review: **exact** decision rule
+  (per foreign window median ≤ 30 000 ms AND ≤ 1/5 breaches with N ≥ 5; aggregate breaches/total
+  ≤ 0.10 across ≥ 2 windows — not "≈ 10–20 %"), **A-B-B-A paired crossover** order (same account
+  authenticated per host, exact model/CLI/SHA/prompt/schema; sequence position + UTC recorded),
+  **two separate conclusions** (route causality vs foreign operational readiness; diagnostic PASS
+  ≠ production GO), and the **byte correction** (`padding_bytes` 6491 ⇒ `actual_prompt_bytes`
+  **6554**, PREFIX 63 B). Extended [`latency_payload_sweep.py`](src/pilot/latency_payload_sweep.py)
+  with route/window/sample-index/account-pseudonym/git-SHA/CLI-version/warm-up telemetry (warm-ups
+  excluded from stats; never credentials or full outputs) and
+  [`latency_sweep_analyze.py`](src/pilot/latency_sweep_analyze.py) with a `--decision-rule` mode
+  that computes readiness + causality per route×window. 30 000 ms ceiling unchanged; Linux
+  production + H841–H843 stay blocked.
 - **Latency-policy investigation — foreign-route comparison runbook prepared (diagnostic-only,
   owner-gated; NOT yet run).** Appended *Method step 2* to
   [PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md](PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md):
