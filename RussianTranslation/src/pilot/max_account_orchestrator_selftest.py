@@ -377,6 +377,192 @@ def main():
         assert cid0 in ro.build_census(ro.read_events(ev))['conflicting_call_ids']
     print('  D-I exactly-once: 5-key=1 sample; retry distinct; dupe dedup; conflict flagged; context preserved')
 
+    # GAP #5 (four-profile core): probe_fleet fans the D-K two-phase probe across EACH validated
+    # account. (e) 4 mocked accounts -> a 4-entry name->ms map, census NOT inflated (4 measured
+    # samples, the 4 warm-ups excluded), and one NO-GO account STOPs the whole fleet by default;
+    # --drop-unhealthy is the explicit opt-in to proceed on the healthy subset. (f) N=1 is a pure
+    # pass-through identical to the old single-account live_probe(accounts[0]).
+    _pc = m._probe_call
+    try:
+        # live_probe calls _probe_call twice per account (warm-up then measured); each account's
+        # FIRST call is its warm-up. A distinct, large warm-up latency (99999) proves the warm-up is
+        # excluded from the acceptance census while the per-account measured latency is retained.
+        def healthy(measured_by_cfg, warm_ms=99999):
+            seen = set()
+
+            def _mock(config_dir, claude, payload_bytes, model):
+                if config_dir not in seen:
+                    seen.add(config_dir)
+                    return warm_ms, 'success', 120          # warm-up (EXCLUDED from latency census)
+                return measured_by_cfg[config_dir], 'success', 120   # measured (the one gated reading)
+            return _mock
+
+        def with_bad(measured_by_cfg, bad_cfg, warm_ms=99999):
+            seen = set()
+
+            def _mock(config_dir, claude, payload_bytes, model):
+                first = config_dir not in seen
+                seen.add(config_dir)
+                if config_dir == bad_cfg:
+                    return 9000, 'auth', 0                   # warm-up auth -> STOP (NO-GO account)
+                if first:
+                    return warm_ms, 'success', 120
+                return measured_by_cfg[config_dir], 'success', 120
+            return _mock
+
+        accts = [{'name': 'acc%d' % i, 'config_dir': 'c%d' % i} for i in range(1, 5)]
+        measured = {'c1': 1000, 'c2': 2000, 'c3': 3000, 'c4': 4000}
+
+        # (e1) four healthy accounts -> ordered name->measured_ms map; warm-ups excluded from census
+        m._probe_call = healthy(measured)
+        with tempfile.TemporaryDirectory() as td:
+            ev = os.path.join(td, 'fleet.jsonl')
+            latencies = m.probe_fleet(accts, events_path=ev, run_id='rf')
+            assert latencies == {'acc1': 1000, 'acc2': 2000, 'acc3': 3000, 'acc4': 4000}, latencies
+            rows = ro.read_events(ev)
+            assert len([r for r in rows if r.get('purpose') == 'warmup']) == 4, 'one warm-up per account'
+            assert len([r for r in rows if r.get('purpose') == 'measured']) == 4, 'one measured per account'
+            cen = ro.build_census(rows)
+            # census NOT inflated: exactly 4 measured latency samples, the four 99999 warm-ups excluded
+            assert cen['latency_ms']['max'] == 4000, cen['latency_ms']
+            assert len(cen['probe']['warmup']) == 4 and len(cen['probe']['measured']) == 4, cen['probe']
+
+        # (e2) one NO-GO account STOPs the fleet by DEFAULT (STOP-on-any-NO-GO)
+        m._probe_call = with_bad(measured, bad_cfg='c3')
+        try:
+            m.probe_fleet(accts)
+            assert False, 'a NO-GO account must STOP the fleet by default'
+        except SystemExit as exc:
+            assert 'acc3' in str(exc) and 'fleet probe' in str(exc), exc
+
+        # (e3) --drop-unhealthy opt-in: drop the NO-GO account, proceed on the healthy subset
+        m._probe_call = with_bad(measured, bad_cfg='c3')
+        survivors = m.probe_fleet(accts, drop_unhealthy=True)
+        assert survivors == {'acc1': 1000, 'acc2': 2000, 'acc4': 4000}, survivors
+
+        # (f) N=1 REGRESSION: probe_fleet over a 1-element list == the old single-account live_probe.
+        m._probe_call = lambda config_dir, claude, payload_bytes, model: (5555, 'success', 120)
+        solo = [{'name': 'max1', 'config_dir': 'c1'}]
+        assert m.probe_fleet(solo) == {'max1': 5555}, 'N=1 must be a pure pass-through'
+        assert m.live_probe('c1') == 5555                 # the pre-N-profile single-account reading
+        assert m.probe_fleet(solo)['max1'] == m.live_probe('c1')   # value report['probe_latency_ms'] carries
+    finally:
+        m._probe_call = _pc
+    print('  GAP5 probe_fleet: N=4 map + warm-ups excluded; NO-GO STOPs by default; --drop-unhealthy subset; N=1 == old live_probe')
+
+    # GAP #5 fair fan-out + all-done at N=4: 4 accounts claim 4 DISTINCT jobs in ONE run-once pass
+    # and every job reaches 'done' exactly once (echo jobs; --skip-profile-check; never credentials).
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'fanout.sqlite')
+        m.main(['--db', db, 'init',
+                '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'),
+                '--account', 'acc3=' + os.path.join(td, 'a3'),
+                '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
+        argv = [sys.executable, '-c', 'import os; print(os.environ["CLAUDE_CONFIG_DIR"])']
+        for n in range(4):
+            m.main(['--db', db, 'enqueue', '--external-id', 'fan%d' % n,
+                    '--argv-json', json.dumps(argv), '--cwd', td,
+                    '--output', os.path.join(td, 'fan%d.json' % n)])
+        m.main(['--db', db, 'run-once', '--timeout', '30'])
+        con = sqlite3.connect(db)
+        rows = con.execute("select external_id, assigned_acc, state from jobs order by id").fetchall()
+        con.close()
+        assert len(rows) == 4 and all(r[2] == 'done' for r in rows), rows       # all 4 done exactly once
+        assert len({r[1] for r in rows}) == 4, 'each of 4 jobs ran under a DISTINCT account: %s' % rows
+        assert len({r[0] for r in rows}) == 4, rows
+    print('  GAP5 fair fan-out N=4: 4 accounts claim 4 distinct jobs in one pass; all 4 reach done exactly once')
+
+    # GAP #5 only_accounts dispatch filter: cmd_run_once must dispatch ONLY to the allow-listed
+    # (probed) fleet. Without it, --max-accounts / --drop-unhealthy would cap only the PROBE set while
+    # dispatch (which re-selects every validated account) still claimed jobs for capped-out, UNPROBED
+    # accounts — bypassing the mandatory pre-dispatch health gate.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'onlyacc.sqlite')
+        m.main(['--db', db, 'init',
+                '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'),
+                '--account', 'acc3=' + os.path.join(td, 'a3'),
+                '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
+        argv = [sys.executable, '-c', 'import os; print(os.environ["CLAUDE_CONFIG_DIR"])']
+        for n in range(4):
+            m.main(['--db', db, 'enqueue', '--external-id', 'oa%d' % n,
+                    '--argv-json', json.dumps(argv), '--cwd', td,
+                    '--output', os.path.join(td, 'oa%d.json' % n)])
+        # dispatch restricted to the acc1/acc2 "probed" subset (acc3/acc4 == capped-out/unprobed).
+        m.cmd_run_once(m.argparse.Namespace(db=db, timeout=30, events=None, run_id=None,
+                                            claude_bin='claude', only_accounts={'acc1', 'acc2'}))
+        con = sqlite3.connect(db)
+        assigned = con.execute("select assigned_acc from jobs where assigned_acc is not null").fetchall()
+        pending = con.execute("select count(*) from jobs where state='pending'").fetchone()[0]
+        con.close()
+        owners = {a for (a,) in assigned}
+        assert owners <= {'acc1', 'acc2'}, 'only the allow-listed fleet may dispatch: %s' % owners
+        assert not (owners & {'acc3', 'acc4'}), 'a capped-out/unprobed account must get NO job: %s' % owners
+        assert len(assigned) == 2 and pending == 2, 'one job per allowed account; the rest stay pending'
+        # (the unfiltered / whole-fleet dispatch path is covered by the fair-fan-out test above, whose
+        # CLI run-once passes no only_accounts and reaches all 4 accounts.)
+    print('  GAP5 only_accounts dispatch filter: capped-out/unprobed accounts receive NO job')
+
+    # GAP #5 one-active-job-per-account at N=4: 8 jobs, 4 accounts. Round 1 claims 4 distinct jobs;
+    # each account's SECOND claim is refused while it still holds an active in_progress job.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'oneactive.sqlite')
+        m.main(['--db', db, 'init',
+                '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'),
+                '--account', 'acc3=' + os.path.join(td, 'a3'),
+                '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
+        for n in range(8):
+            m.main(['--db', db, 'enqueue', '--external-id', 'oa%d' % n,
+                    '--argv-json', json.dumps(['x']), '--cwd', td,
+                    '--output', os.path.join(td, 'oa%d.json' % n)])
+        claimed = [m.claim(db, 'acc%d' % i) for i in (1, 2, 3, 4)]
+        assert all(j is not None for j in claimed), 'each of 4 accounts claims a job'
+        assert len({j['id'] for j in claimed}) == 4, 'four DISTINCT jobs claimed in round 1'
+        for i in (1, 2, 3, 4):
+            assert m.claim(db, 'acc%d' % i) is None, 'acc%d already busy -> second claim refused' % i
+        con = sqlite3.connect(db)
+        assert con.execute("select count(*) from jobs where state='in_progress'").fetchone()[0] == 4
+        assert con.execute("select count(distinct assigned_acc) from jobs where state='in_progress'").fetchone()[0] == 4
+        con.close()
+    print('  GAP5 one-active-job-per-account N=4: 4 distinct claims; each 2nd claim refused; 4 distinct owners')
+
+    # GAP #5 recover exactly-once (N=4): two crash-stranded in_progress rows (distinct accounts) are
+    # returned to pending; a coordinator-recorded DONE job is UNTOUCHED (coordinator_recorded stays 1,
+    # no duplicate promotion), and no other row flips.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'recover.sqlite')
+        m.main(['--db', db, 'init',
+                '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'),
+                '--account', 'acc3=' + os.path.join(td, 'a3'),
+                '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
+        for n in range(4):
+            m.main(['--db', db, 'enqueue', '--external-id', 'rec%d' % n,
+                    '--argv-json', json.dumps(['x']), '--cwd', td,
+                    '--output', os.path.join(td, 'rec%d.json' % n)])
+        con = sqlite3.connect(db)
+        # rec0: a coordinator-recorded DONE job (recover must never touch it -> no dup promotion)
+        con.execute("update jobs set state='done', coordinator_recorded=1, assigned_acc='acc3' where external_id='rec0'")
+        # rec1/rec2: crash-stranded in_progress under two DISTINCT accounts
+        con.execute("update jobs set state='in_progress', assigned_acc='acc1' where external_id='rec1'")
+        con.execute("update jobs set state='in_progress', assigned_acc='acc2' where external_id='rec2'")
+        # rec3: stays pending
+        con.commit(); con.close()
+        m.main(['--db', db, 'recover'])
+        con = sqlite3.connect(db)
+        assert con.execute("select state,assigned_acc from jobs where external_id='rec1'").fetchone() == ('pending', None)
+        assert con.execute("select state,assigned_acc from jobs where external_id='rec2'").fetchone() == ('pending', None)
+        # the recorded DONE job is untouched: still done, coordinator_recorded still exactly 1
+        assert con.execute("select state,coordinator_recorded from jobs where external_id='rec0'").fetchone() == ('done', 1)
+        # exactly the two in_progress rows recovered; nothing else flipped
+        assert con.execute("select count(*) from jobs where state='in_progress'").fetchone()[0] == 0
+        assert con.execute("select count(*) from jobs where state='pending'").fetchone()[0] == 3      # rec1,rec2,rec3
+        assert con.execute("select count(*) from jobs where state='done'").fetchone()[0] == 1          # rec0 only
+        con.close()
+    print('  GAP5 recover exactly-once N=4: 2 in_progress -> pending; recorded-done untouched; coordinator_recorded stays 1')
+
     print('max_account_orchestrator_selftest: PASS')
 
 

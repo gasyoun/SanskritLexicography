@@ -44,6 +44,7 @@ from window_common import INP, REPO, SRC, input_paths, load_json, read_text, roo
 from agent_budget import derive_agent_budget
 import pwg_mask
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
+from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
 from whitney_grammar import grammar_for
@@ -952,6 +953,10 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                      'ls': raw.count('<ls'), 'sk': raw.count('{#'),
                      'senses': raw.count('〉'),  # '〉' sense-delimiter count — coarse
                                                      # output-complexity signal for the kill budget
+                     # H960: deterministic distinct top-level source-sense count (cross-reference
+                     # hardened; see sense_count._OPEN_PREFIX). Consumed by accept()'s SAN-LOSS
+                     # shortfall telemetry — distinct from the coarse 'senses' kill-budget signal.
+                     'source_senses': count_source_senses(raw),
                      'nws': 1 if 'NWS' in raw else 0}
         raws[k] = raw
         portraits[k] = portrait
@@ -1485,6 +1490,28 @@ let KILL_TIMEOUTS = 0
 let CONN_ERRORS = 0
 let HEAL_CALLS = 0
 let KILL_BISECT_BLOCKED = 0
+// H960 SAN-LOSS shortfall telemetry: TELEMETRY ONLY, no behavioural change (SOFT rollout).
+// accept() records — but does NOT reject on — a card whose emitted top-level sense count
+// falls short of the source's deterministic (cross-reference-hardened) source_senses. This
+// is the whole-dropped-sense signal the <ls>/{# fidelity guard is blind to (H920's deferred
+// deepest fix). It is soft-first so live traffic can measure the true drop-vs-false-flag
+// balance before the reject+requeue is armed; flipping SANLOSS_HARD_REJECT=true (owner-gated,
+// after the live measurement) turns each shortfall into the same deterministic requeue as an
+// ls/sk fidelity-reject. Counter + per-card details ride in `summary` for classify_run.py.
+const SANLOSS_HARD_REJECT = false
+let SANLOSS_SHORTFALLS = 0
+const SANLOSS_DETAIL = []
+// H960 grammar-{Tn} multiset telemetry: TELEMETRY ONLY, no behavioural change (SOFT rollout).
+// The main-path accept() <ls>/{# count check is blind to a dropped GRAMMAR <lex> {Tn} (or any
+// masked span carrying neither an <ls> nor a {#) — the exact gap the heal path's acceptFrag
+// already guards with a full {Tn}-multiset compare. accept() records — but does NOT reject on —
+// a card whose emitted {Tn} multiset differs from its source skeleton's. Soft-first so live
+// traffic can measure the drop-vs-self-expansion mix (a model that writes literal <ls>..</ls>
+// instead of {Tn} also trips this) before the reject is armed; flipping TNMASK_HARD_REJECT=true
+// (owner-gated) turns each mismatch into the same deterministic requeue as an ls/sk reject.
+const TNMASK_HARD_REJECT = false
+let TNMASK_MISMATCHES = 0
+const TNMASK_DETAIL = []
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
@@ -1551,6 +1578,20 @@ const cardBlock = k => (GRAMMARS[k] || '') + '\\n\\n=== CARD ' + k + ' ===\\n---
 
 const accept = (c, k) => {
   if (!c) return null
+  // H960 grammar-{Tn} multiset guard (soft). BEFORE restore (the {Tn} placeholders are gone
+  // after restoreCard): a dropped grammar <lex> {Tn} carries neither an <ls> nor a {#, so the
+  // count check below is blind to it — but the {Tn} multiset is not. This is the heal path's
+  // acceptFrag check (which has run in production without incident) brought to the main path.
+  // SOFT by default: record telemetry, do NOT reject; arming is TNMASK_HARD_REJECT (owner-gated).
+  {
+    const tok = cardTokens(c), want = tokensOf(INPUTS[k].skeleton)
+    if (tok !== want) {
+      TNMASK_MISMATCHES++
+      TNMASK_DETAIL.push({ key: k, got: tok, want: want })
+      if (TNMASK_HARD_REJECT) { noteFail(k, 'tnmask-reject: {Tn} multiset [' + tok + '] != [' + want + ']'); return null }
+      log('{Tn} multiset mismatch (soft): ' + k + ' — kept, telemetry only')
+    }
+  }
   c = restoreCard(c, k)
   // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
   // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
@@ -1558,6 +1599,26 @@ const accept = (c, k) => {
   if (ls !== INPUTS[k].ls || sk !== INPUTS[k].sk) {
     noteFail(k, 'fidelity-reject: <ls> ' + ls + '/' + INPUTS[k].ls + ', {# ' + sk + '/' + INPUTS[k].sk)
     return null
+  }
+  // H960 SAN-LOSS shortfall guard (H920's deferred deepest fix). The ls/sk fidelity check
+  // above is blind to a whole dropped sense that carries neither a citation nor a {#..#} span
+  // (darvI 2/3). Compare the emitted top-level sense count to the source's deterministic,
+  // cross-reference-hardened source_senses (stamped Python-side). exp<1 (unnumbered supplement)
+  // is skipped, and only a shortfall (emitted < exp) is flagged — a faithful split that yields
+  // MORE senses never trips it. SOFT by default: record telemetry, do NOT reject; arming the
+  // reject is SANLOSS_HARD_REJECT (owner-gated, after live measurement of the false-flag rate).
+  const exp = INPUTS[k].source_senses
+  if (exp > 0) {
+    const emitted = (c.records || []).reduce((n, rec) => n + ((rec.senses || []).length), 0)
+    if (emitted < exp) {
+      SANLOSS_SHORTFALLS++
+      SANLOSS_DETAIL.push({ key: k, expected: exp, emitted: emitted, dropped: exp - emitted })
+      if (SANLOSS_HARD_REJECT) {
+        noteFail(k, 'sanloss-reject: senses ' + emitted + '/' + exp)
+        return null
+      }
+      log('SAN-LOSS shortfall (soft): ' + k + ' senses ' + emitted + '/' + exp + ' — kept, telemetry only')
+    }
   }
   return c
 }
@@ -1983,6 +2044,14 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   // was routed to requeue instead of bisection (KILL_TIMEOUT_NO_BISECT).
                   kill_timeouts: KILL_TIMEOUTS, conn_errors: CONN_ERRORS,
                   heal_calls: HEAL_CALLS, kill_bisect_blocked: KILL_BISECT_BLOCKED,
+                  // H960 SAN-LOSS shortfall telemetry (SOFT — no reject unless
+                  // SANLOSS_HARD_REJECT). sanloss_shortfalls counts kept-but-short cards;
+                  // sanloss_detail lists {key,expected,emitted,dropped} for the audit join.
+                  sanloss_shortfalls: SANLOSS_SHORTFALLS, sanloss_hard_reject: SANLOSS_HARD_REJECT,
+                  sanloss_detail: SANLOSS_DETAIL,
+                  // H960 grammar-{Tn} multiset telemetry (SOFT — no reject unless TNMASK_HARD_REJECT).
+                  tnmask_mismatches: TNMASK_MISMATCHES, tnmask_hard_reject: TNMASK_HARD_REJECT,
+                  tnmask_detail: TNMASK_DETAIL,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
