@@ -1,0 +1,7 @@
+[
+  {
+    "key1": "dq_canary_puregloss",
+    "source_senses": 3,
+    "note": "D-Q silent-SAN-LOSS canary (H994). Three line-opening pure-gloss senses, ZERO <ls>/{#. Dropping ANY sense keeps the accept() ls/sk fidelity gate at 0==0 (passes) while source_senses stays 3, so the SAN-LOSS soft-guard is the only thing that can catch the loss. Synthetic control card, not a real headword."
+  }
+]
