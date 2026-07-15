@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
+  manifest as the immutable key universe and stores every pending retry key with the path
+  and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,
+  overlapping, foreign, or category-drifted retry sets; selecting one transient/defect lane
+  carries the other through promotion and later attempts. Attempt directories materialize
+  their exact key set and conservative defect-fragment hashes, while orphaned `rqNN-*`
+  directories are preserved, reported, and skipped by allocation.
+
 - **Requeue provenance and staged-scope follow-up.** Coordinator requeues now create an
   immutable attempt directory and execution manifest for the exact retry keys, retain the
   initial and prior manifest history, and read the next retry list from the latest audit.
