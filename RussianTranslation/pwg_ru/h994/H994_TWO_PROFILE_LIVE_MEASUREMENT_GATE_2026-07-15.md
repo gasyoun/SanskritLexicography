@@ -126,10 +126,13 @@ them so the next session does not re-derive:
    (no refusal, 1 483 B output). **Bonus correction:** the fix also exposed that the old `'x'`-padding gave
    *artificially fast* latency (few tokens after BPE) — under the fixed representative payload c4 is ~30–53 s
    (latency NO-GO), not the sub-30 s the first pass reported. See the Rung 2 UPDATE block above.
-2. **D-Q · canary-set selection (rung 3).** The named canaries (`darvI`/`gaRanA`) are poor choices for the
-   SAN-LOSS *soft-guard* measurement: `darvI` is a deterministic fidelity-reject (never reaches the
-   passing-card `accept()` path). The measurement needs a curated canary that *passes* fidelity while
-   dropping a sense. Curate it before the live rung.
+2. **D-Q · canary-set selection (rung 3) — ✅ RESOLVED 15-07-2026.** `darvI`/`gaRanA` are poor SAN-LOSS
+   soft-guard canaries (`darvI` carries `{#darvI#}` in sense 3, so dropping it `fidelity-reject`s instead
+   of silently losing a sense — non-deterministic). Curated a **deterministic** silent-SAN-LOSS canary
+   `dq_canary_puregloss~~h0_zz_pw` (three pure-gloss senses, zero `<ls>`/`{#` → any dropped sense passes
+   the `ls/sk` gate at `0==0` while `source_senses` stays 3, so SAN-LOSS is the only catch). Proven against
+   the real `accept()` (extended `accept_sensecount_test.js`, green via `test_h960_accept_sanloss_soft_gate`)
+   and build-checked offline. See the [D-Q canary curation](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/H994_DQ_SANLOSS_CANARY_CURATION_2026-07-15.md).
 
 ## What this moves
 
@@ -138,7 +141,7 @@ them so the next session does not re-derive:
 | four-profile auth | assumed c5/c6 out (H960 note) | **confirmed NO-GO** — c1/c4 Max, c5/c6 `loggedIn:false` (unchanged 15-07) |
 | home-route latency | ~40 s honest NO-GO ×2 (H818/H895) | ~~c4 sub-30 s~~ **CORRECTED: c4 ~30–53 s under a representative payload → latency NO-GO** (the sub-30 s pass was an `'x'`-padding artifact); consistent with H818/H895 |
 | acceptance-probe reliability | assumed sound | **defect found (D-P) AND ✅ fixed** ([v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)) — natural load-representative prompt; false-refusal gone; honest latency restored |
-| canary readiness | assumed runnable | **blocked** — c1 rate-limited + known-negative canary set + inputs absent (D-Q + prereqs) |
+| canary readiness | assumed runnable | **canary curated (D-Q ✅)** — deterministic `dq_canary_puregloss` ready + selftested; the live *run* still gates on the latency rung + a usable profile |
 | canonical store | 11,605 | **11,605 (untouched)** — no promotion, no mutation |
 
 ## Limitations
