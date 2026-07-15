@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD013 MD036 -->
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 15-07-2026_
 
 This dispatcher runs ordinary commands under four isolated profiles. It does not translate by itself or bypass coordinator/audit/promotion gates.
 
@@ -69,8 +69,14 @@ python src/pilot/no_pwg_scale_plan.py --headwords 100 --window-size 20 `
   --manifest src/pilot/output/h818_windows100_plan.json
 ```
 
-After the owner logs one Max account into a dedicated profile, repeat with
-`--headless --coordinator-dir <dir>`, initialize exactly that profile, and run:
+After the owner logs one or more Max accounts into dedicated profiles, repeat
+with `--headless --coordinator-dir <dir>`, initialize each of those profiles, and
+run. `staged-run` now fans across **N validated profiles** (one or more) instead
+of hard-capping at a single account: it probes every validated profile and
+dispatches disjoint jobs across the whole healthy fleet. `--max-accounts N` caps
+the fleet size; `--drop-unhealthy` is the explicit opt-in described below.
+Initializing exactly one profile (N=1) reproduces the original single-profile
+Windows-100 path byte-for-byte.
 
 ```powershell
 python src/pilot/max_account_orchestrator.py --db <db> staged-run `
@@ -82,7 +88,15 @@ python src/pilot/max_account_orchestrator.py --db <db> staged-run `
 # restart boundary: rerun the same command with --resume and without --stop-after
 ```
 
-The command refuses unauthenticated profiles, runs a ≥5 KB exact-model probe,
+The command refuses unauthenticated profiles and runs a ≥5 KB exact-model probe
+on **each** validated profile (the D-K two-phase warm-up + measured split per
+account, so the acceptance census carries exactly one measured latency sample per
+profile, never an inflated count). The default policy is **STOP-on-any-NO-GO**:
+the first profile whose probe fails or exceeds the health ceiling aborts the whole
+run (an honest fleet NO-GO), matching acceptance criterion #1. `--drop-unhealthy`
+is the explicit opt-in to instead drop the failing profile, park it, and proceed
+on the healthy subset (still requiring at least one healthy profile). `report`'s
+`probe_latency_ms` becomes a per-profile `name → measured_ms` map. The run then
 records/audits each window, promotes only its audit-clean subset under the global
 promotion lock, and emits a GO only when the exact headword/subcard census is
 accounted, every window has a positive canonical-store delta, no hard failure or
