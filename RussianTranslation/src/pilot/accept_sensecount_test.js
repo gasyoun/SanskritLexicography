@@ -128,5 +128,42 @@ r = accept(card([{ german: '{T1} {T3}' }]), 'gram')
 check('hard: dropped {Tn} REJECTED when armed', r === null && /tnmask-reject/.test(FAIL.gram || ''))
 TNMASK_HARD_REJECT = false
 
+// ---- D-Q (H994): a RELIABLE silent-SAN-LOSS canary — dropping ANY sense stays fidelity-clean ----
+// darvI is an UNRELIABLE canary (see the contrast below): only its pure-gloss senses are silently
+// droppable, and the model may instead drop its {#-carrying sense -> fidelity-REJECT, not a silent
+// loss. The reliable canary rung-3 needs has N pure-gloss senses and ZERO <ls>/{# (INPUTS ls:0 sk:0):
+// the ls/sk gate is 0==0 whichever sense is dropped, so the sense-count guard is the ONLY thing that
+// can catch the loss. Proven here against the REAL accept(): every drop is silent+counted, faithful
+// is clean, and (contrast) the darvI {#-drop rejects.
+INPUTS = { canary: { ls: 0, sk: 0, source_senses: 3 } }
+reset()
+r = accept(card([{ german: 'a' }, { german: 'b' }, { german: 'c' }]), 'canary')
+check('D-Q canary: faithful 3/3 is clean (no false SANLOSS)', r !== null && SANLOSS_SHORTFALLS === 0)
+for (const [label, senses] of [
+  ['drop 1st', [{ german: 'b' }, { german: 'c' }]],
+  ['drop middle', [{ german: 'a' }, { german: 'c' }]],
+  ['drop last', [{ german: 'a' }, { german: 'b' }]],
+]) {
+  reset()
+  r = accept(card(senses), 'canary')
+  check('D-Q canary: ' + label + ' sense -> KEPT, fidelity-clean, SANLOSS fires (dropped=1)',
+    r !== null && FAIL.canary === undefined && SANLOSS_SHORTFALLS === 1 &&
+    SANLOSS_DETAIL[0] && SANLOSS_DETAIL[0].dropped === 1, JSON.stringify(SANLOSS_DETAIL))
+}
+reset()
+r = accept(card([{ german: 'a' }]), 'canary')   // drop TWO of three
+check('D-Q canary: drop 2 senses -> KEPT, dropped=2',
+  r !== null && SANLOSS_SHORTFALLS === 1 && SANLOSS_DETAIL[0] && SANLOSS_DETAIL[0].dropped === 2)
+
+// contrast: darvI is UNRELIABLE. Its raw is ls:0 sk:1 (only sense 3 carries {#darvI#}),
+// source_senses:3. If the model drops the {#-bearing sense (not a gloss sense) the emitted {# count
+// is 0 != 1 -> fidelity-REJECT fires FIRST, so it is NOT a silent SAN-LOSS. darvI reproduces the
+// silent shape only on the specific gloss-sense drops -> exactly why it is a poor rung-3 canary.
+INPUTS = { darvIreal: { ls: 0, sk: 1, source_senses: 3 } }
+reset()
+r = accept(card([{ german: 'a' }, { german: 'b' }]), 'darvIreal')   // dropped the {#-bearing sense
+check('contrast: darvI dropping its {#-sense fidelity-REJECTS (not a silent loss)',
+  r === null && /fidelity-reject/.test(FAIL.darvIreal || '') && SANLOSS_SHORTFALLS === 0)
+
 if (failed) { console.error(failed + ' check(s) failed'); process.exit(1) }
 console.log('accept_sensecount_test: PASS')

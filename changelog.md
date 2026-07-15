@@ -14,6 +14,24 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.18] - 2026-07-15
+
+### Added
+- **D-Q (H994) — reliable silent-SAN-LOSS canary for the rung-3 measurement (15-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, Ultracode)**:
+  the rung-3 false-flag measurement needs a card that *passes* `accept()`'s `<ls>`/`{#` fidelity gate while
+  *dropping* a numbered source sense (the silent SAN-LOSS the H920/H960 sense-count soft-guard catches).
+  `darvI`/`gaRanA` are unreliable — `darvI` carries `{#darvI#}` in sense 3, so dropping it `fidelity-reject`s
+  instead of silently losing a sense. Curated a **deterministic** canary
+  `RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw` (three pure-gloss senses, **zero
+  `<ls>`, zero `{#`**): dropping *any* sense keeps the fidelity gate at `0==0` while `source_senses` stays 3,
+  so SAN-LOSS is the only catch. Extended `accept_sensecount_test.js` to prove it against the **real**
+  `accept()` (faithful clean; drop 1st/middle/last each → kept + fidelity-clean + `SANLOSS dropped=1`; drop
+  two → `dropped=2`; contrast: the `darvI` `{#`-sense drop `fidelity-reject`s) — green via
+  `test_h960_accept_sanloss_soft_gate`; offline harness build-check stamps `source_senses:3 / ls:0 / sk:0`.
+  Curation doc: `RussianTranslation/pwg_ru/h994/H994_DQ_SANLOSS_CANARY_CURATION_2026-07-15.md`. Both H994
+  probe/canary defects (D-P, D-Q) now closed; the live rung-3 gates only on the latency rung + a usable
+  profile. No live generation, no store mutation.
+
 ## [1.9.17] - 2026-07-15
 
 ### Fixed
