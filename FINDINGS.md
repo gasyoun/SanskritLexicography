@@ -1339,6 +1339,35 @@ catalog rows.
 
 ---
 
+### §80. The MWScan/2020 `servepdf.php` serves the 1872 FIRST edition — its page numbers collide with the 1899 `<pc>` loci of mw.txt
+
+🔴 **`/scans/MWScan/2020/web/webtc/servepdf.php?page=N` returns page N of the 1872
+first-edition scan, NOT the 1899 edition that `mw.txt` (CDSL dict `mw`) is keyed to —
+and because both editions print their own page numbers, the mismatch is silent.**
+Requesting `page=277` (the 1899 `<pc>` locus of *kāla*) returned a page whose corner
+really does say "277" but whose running heads are *khel./gaṅgāmbhas.* — which is
+`mw72.txt` pc `0277-a` exactly. The 1872-edition *kāla* sits at mw72 pc `0224–0225`.
+A facsimile auto-pull that maps `mw.txt` `<pc>` → this endpoint fetches a confidently
+wrong page every time.
+
+Evidence: browser fetch 15-07-2026 of `?page=277`/`?page=278` (served as
+`pg_0277.pdf`/`pg_0278.pdf`) vs. `mw72.txt` loci for `Kel` (`0277-a`) and `kAla`
+(`0224-b`/`0225-b`). The genuine 1899 per-page files are named
+`mw<page>-<first-headword>.pdf` (e.g. `mw0277-kArSNi.pdf`, `mw1304-hetumAtratA.pdf` from
+H780) — the headword suffix makes the URL unguessable from a page number alone, so no
+`{page}` template can fetch 1899 pages without a directory listing. Sibling of [[§50]]
+(display paths are not uniform either).
+
+Implication: `EntryAnatomy/build_entry_anatomy.py` ships with the `mw` scan-server
+auto-pull DISABLED (supply `--facsimile`); re-enable only after confirming an endpoint
+that demonstrably serves 1899 pagination (check the running heads, not the corner
+number). Applies to any future tool that wants "the MW print page for this record".
+
+> **Source:** H870 facsimile follow-up ([SanskritLexicography PR #473](https://github.com/gasyoun/SanskritLexicography/pull/473) + inset fix),
+> Fable 5 `claude-fable-5` · 15-07-2026
+
+---
+
 ### §51. Huet correspondence predates this session (2021) — the morphology-XML "gate" was already resolved in writing; direct download URLs recovered
 
 🟠 **MG already corresponded with Gérard Huet directly on 30-03-2021 about this exact
