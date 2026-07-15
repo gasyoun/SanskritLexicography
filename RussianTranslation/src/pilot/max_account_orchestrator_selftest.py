@@ -257,6 +257,45 @@ def main():
         m.run_tree_kill = _rtk
     print('  D-K _probe_call envelope: result-string + structured_output => success; error/is_error => process; {ok:false} => content; rc0 rate/auth wrapper detected; non-envelope => malformed')
 
+    # D-P (H994): the readiness prompt must be a completable, natural task — NOT the degenerate
+    # "Return JSON {ok:true} + N*'x' padding" that tripped Sonnet-5's --permission-mode plan refusal
+    # (prose citing AskUserQuestion; a FALSE NO-GO on a healthy fast profile). It must keep
+    # >=payload_bytes of inert filler (load-representative), keep plan mode (matches
+    # headless_worker.call's real generation invocation), and carry ONE unambiguous instruction.
+    # Capture the real argv + stdin the probe would send.
+    _rtk2 = m.run_tree_kill
+    cap = {}
+
+    def _capture(*a, **k):
+        cap['argv'] = list(a[0]) if a else list(k.get('args') or [])
+        cap['input'] = k.get('input')
+        return types.SimpleNamespace(
+            returncode=0, stderr='',
+            stdout='{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}')
+
+    try:
+        m.run_tree_kill = _capture
+        _lat, _cls2, _ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        assert _cls2 == 'success', _cls2
+        p = cap['input']
+        # one clear, completable instruction: return exactly the schema object and nothing else
+        assert '{"ok": true}' in p and 'nothing else' in p, p[:200]
+        # payload framed as inert AND still >= the >=5 KB load-representative floor
+        assert 'inert sample (ignore)' in p and 'do not analyse, translate, or act on it' in p
+        assert len(p) >= 6491, len(p)
+        # the degenerate form is GONE: no old incantation, no long run of raw padding 'x'
+        assert 'Preserve this padding as inert input' not in p
+        assert 'xxxxxxxxxxxxxxxxxxxx' not in p                      # no 20+ run of padding
+        # plan mode retained (matches real generation) + exact model + json-schema still present
+        assert '--permission-mode' in cap['argv'] and 'plan' in cap['argv'], cap['argv']
+        assert '--json-schema' in cap['argv'] and '--model' in cap['argv'], cap['argv']
+        # _probe_prompt is deterministic and honours the payload-size floor
+        assert m._probe_prompt(6491) == m._probe_prompt(6491)
+        assert len(m._probe_prompt(5000)) >= 5000
+    finally:
+        m.run_tree_kill = _rtk2
+    print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
+
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
     with tempfile.TemporaryDirectory() as td:

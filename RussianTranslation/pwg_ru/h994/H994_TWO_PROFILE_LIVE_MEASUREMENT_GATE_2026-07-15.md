@@ -65,9 +65,25 @@ But the two failures are different in kind, and one is a probe artifact:
     reports.
   - A **natural prompt** (`Reply with the JSON object {"ok": true} and nothing else.`) on the same profile
     returns `structured_output={'ok': True}` in **12 097 ms** — clean.
-  - **Conclusion:** c4's real latency is **~8–12 s, well under the 30 s ceiling** — the *first* sub-ceiling
-    pwg-ru probe reading in the whole saga (H818/H895 measured ~40 s honest NO-GO twice on the home route).
-    c4 is healthy and fast; its rung-2 NO-GO is entirely a probe-prompt artifact.
+  - **Conclusion (as recorded at first measurement — see the correction below):** c4's rung-2 NO-GO is a
+    probe-prompt artifact, not a refusal-vs-health question. The "~8–12 s sub-ceiling" gloss on that first
+    pass was itself wrong — corrected next.
+
+> **UPDATE 15-07-2026 — D-P FIXED, and the "sub-30 s c4" conclusion CORRECTED (Opus 4.8 `claude-opus-4-8[1m]`).**
+> The D-P probe-prompt defect is fixed in
+> [`max_account_orchestrator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator.py)
+> ([v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)): `_probe_call` now sends
+> a natural, load-representative task (one unambiguous "reply with exactly `{"ok": true}` and nothing else"
+> instruction + ≥5 KB of inert, domain-shaped filler) under the **same `--permission-mode plan` the real
+> generation path (`headless_worker.call`) uses**, with a `D-P readiness prompt` selftest. Re-probing c4
+> with the FIXED probe: warm-up **29 743 ms** / measured **52 815 ms**, both `success`, output 1 483 B (no
+> refusal, no over-generation). **This corrects the "~8–12 s, first sub-ceiling reading" claim above:** the
+> old `'x'`-padding BPE-compresses to few tokens (artificially fast ~8 s) and the 12 s figure came from a
+> *payload-free* diagnostic — neither is load-representative. Under a representative ≥5 KB payload c4 is
+> **~30–53 s (high variance, at/over the 30 s ceiling)** — consistent with H818/H895's ~40 s NO-GOs, **NOT**
+> sub-ceiling. So the D-P fix's value is twofold: it removes the false-*refusal* NO-GO **and** restores an
+> honest latency reading. The latency rung remains a genuine NO-GO (H818/H909 foreign-route territory),
+> independent of the c5/c6 logins.
 
 ## Rung 3 — canary false-flag measurement — NOT REACHED / additionally blocked
 
@@ -97,17 +113,19 @@ them so the next session does not re-derive:
   fidelity while dropping a source sense (the H818 fc1 `darv_i` "output 2/3 passed clean" shape that
   H920/H960 instrumented), **not** a deterministic fidelity-reject — and rebuild its input portrait.
 
-## Defects surfaced this session (actionable, not patched here — Option B was measurement-only)
+## Defects surfaced this session
 
-1. **D-P · acceptance-probe prompt fragility (rung 2).** `_probe_call`'s degenerate padding prompt
-   (`max_account_orchestrator.py`) trips Sonnet-5's plan-mode refusal, yielding a false
-   `content`/`timeout`/`malformed` NO-GO on a genuinely healthy, fast profile — and corrupting the latency
-   reading (the refusal is long, so it also breaches the ceiling). **Fix direction:** give the probe a
-   natural, task-shaped prompt that reliably returns the schema object (a card-shaped micro-task rather
-   than "return `{ok:true}` + N bytes of `x` padding under plan mode"), and/or classify a plan-mode-refusal
-   prose result distinctly from a slow-but-valid call. This is a change to the *acceptance gate* itself, so
-   it needs deliberate design (it affects comparability with prior latency evidence) — documented, not
-   hastily patched in a measurement session.
+1. **D-P · acceptance-probe prompt fragility (rung 2) — ✅ FIXED 15-07-2026 ([v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)).**
+   `_probe_call`'s degenerate padding prompt (`"Return JSON {ok:true}. Preserve this padding as inert
+   input." + N×'x'`) tripped Sonnet-5's `--permission-mode plan` refusal, yielding a false
+   `content`/`timeout`/`malformed` NO-GO on a healthy profile. **Fix:** `_probe_call` now sends a natural,
+   load-representative task via a new `_probe_prompt()` helper — one unambiguous "reply with exactly
+   `{"ok": true}` and nothing else" instruction + ≥5 KB of inert, domain-shaped filler — under the **same
+   `--permission-mode plan` the real generation path (`headless_worker.call`) uses**, with a `D-P readiness
+   prompt` selftest that captures the argv + stdin. Live-verified on c4: both probe phases return `success`
+   (no refusal, 1 483 B output). **Bonus correction:** the fix also exposed that the old `'x'`-padding gave
+   *artificially fast* latency (few tokens after BPE) — under the fixed representative payload c4 is ~30–53 s
+   (latency NO-GO), not the sub-30 s the first pass reported. See the Rung 2 UPDATE block above.
 2. **D-Q · canary-set selection (rung 3).** The named canaries (`darvI`/`gaRanA`) are poor choices for the
    SAN-LOSS *soft-guard* measurement: `darvI` is a deterministic fidelity-reject (never reaches the
    passing-card `accept()` path). The measurement needs a curated canary that *passes* fidelity while
@@ -118,8 +136,8 @@ them so the next session does not re-derive:
 | Gate | Before this session | After (measured live) |
 |---|---|---|
 | four-profile auth | assumed c5/c6 out (H960 note) | **confirmed NO-GO** — c1/c4 Max, c5/c6 `loggedIn:false` (unchanged 15-07) |
-| home-route latency | ~40 s honest NO-GO ×2 (H818/H895) | **c4 ~8–12 s — first sub-30 s reading**; route is fast now |
-| acceptance-probe reliability | assumed sound | **defect found** (D-P: plan-mode refusal → false NO-GO) |
+| home-route latency | ~40 s honest NO-GO ×2 (H818/H895) | ~~c4 sub-30 s~~ **CORRECTED: c4 ~30–53 s under a representative payload → latency NO-GO** (the sub-30 s pass was an `'x'`-padding artifact); consistent with H818/H895 |
+| acceptance-probe reliability | assumed sound | **defect found (D-P) AND ✅ fixed** ([v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)) — natural load-representative prompt; false-refusal gone; honest latency restored |
 | canary readiness | assumed runnable | **blocked** — c1 rate-limited + known-negative canary set + inputs absent (D-Q + prereqs) |
 | canonical store | 11,605 | **11,605 (untouched)** — no promotion, no mutation |
 
