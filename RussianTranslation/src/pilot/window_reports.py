@@ -7,7 +7,16 @@ import math
 import os
 import re
 
-from window_common import HERE, OUT, load_json, rootmap_for, exact_file_exists, append_jsonl_line
+from window_common import (
+    HERE,
+    OUT,
+    append_jsonl_line,
+    atomic_write_json,
+    atomic_write_text,
+    exact_file_exists,
+    load_json,
+    rootmap_for,
+)
 from window_provenance import harness_matches_current_root
 
 import sys
@@ -229,8 +238,7 @@ def write_window_status(report, out_dir=None):
     os.makedirs(out_dir, exist_ok=True)
     json_path = os.path.join(out_dir, 'window_status.json')
     md_path = os.path.join(out_dir, 'window_status.md')
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(status, f, ensure_ascii=False, indent=1)
+    atomic_write_json(json_path, status, indent=1)
     lines = [
         '# Window Status',
         '',
@@ -293,8 +301,7 @@ def write_window_status(report, out_dir=None):
     lines += report['requeue'] or ['(none)']
     lines += ['', '## Judge Sample Keys', '']
     lines += (judge_sample.get('keys') or ['(none)'])
-    with open(md_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines) + '\n')
+    atomic_write_text(md_path, '\n'.join(lines) + '\n')
     append_ledger(status, out_dir)
     return json_path, md_path
 
@@ -346,8 +353,7 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
     requeue_written = bool(write_requeue and write_requeue_file)
     report['requeue_file_written'] = requeue_written
     report.setdefault('requeue_file_preserved', bool(write_requeue and not write_requeue_file))
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(report, f, ensure_ascii=False, indent=1)
+    atomic_write_json(json_path, report, indent=1)
 
     lines = ['# Audit Window Report', '', 'State: `%s`' % (report.get('state') or 'audited'), '']
     sample = report.get('judge_sample') or {}
@@ -423,13 +429,14 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
     lines += sample.get('keys') or ['(none)']
     if report.get('glue'):
         lines += ['', '## Glue', '', report['glue']['summary']]
-    with open(md_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines) + '\n')
-    with open(judge_sample_path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(sample.get('keys') or []) + ('\n' if sample.get('keys') else ''))
+    atomic_write_text(md_path, '\n'.join(lines) + '\n')
+    atomic_write_text(
+        judge_sample_path,
+        '\n'.join(sample.get('keys') or []) + ('\n' if sample.get('keys') else ''))
     if requeue_written:
-        with open(requeue_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(report['requeue']) + ('\n' if report['requeue'] else ''))
+        atomic_write_text(
+            requeue_path,
+            '\n'.join(report['requeue']) + ('\n' if report['requeue'] else ''))
         # Split files so a cheap transient re-run never triggers expensive defect rework.
         # requeue.defect.fshas.txt (H304): the defect cards' frag_prov content addresses —
         # requeue_from_audit appends these to the TM denylist so the fragment sidecar can
@@ -439,8 +446,9 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
                              ('requeue.defect.fshas.txt', report.get('requeue_defect_fshas'))):
             if keys_ is None:
                 continue
-            with open(os.path.join(out_dir, fname), 'w', encoding='utf-8') as f:
-                f.write('\n'.join(keys_) + ('\n' if keys_ else ''))
+            atomic_write_text(
+                os.path.join(out_dir, fname),
+                '\n'.join(keys_) + ('\n' if keys_ else ''))
     status_json, status_md = write_window_status(report, out_dir)
     return (json_path, md_path,
             requeue_path if write_requeue and write_requeue_file else None,

@@ -30,6 +30,7 @@ OUT = os.path.join(HERE, 'output')
 QUEUE = os.path.join(HERE, 'lexical_cores', 'pwg_miss_backfill_queue.md')
 STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 STILL_NULL = os.path.join(OUT, 'no_pwg_w1.still_null.txt')
+RESIDUALS = os.path.join(HERE, 'no_pwg_residuals.jsonl')
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
@@ -39,6 +40,7 @@ if HERE not in sys.path:
 from safe_filename import decode_safe_name, safe_name  # noqa: E402
 from store_path import canonical_store  # noqa: E402
 import coordinator  # noqa: E402
+from window_common import atomic_write_json  # noqa: E402
 
 # One logical store shared across worktrees: dedup must read the SAME store a worktree drain
 # promotes into, or the planner re-offers already-promoted headwords (H255 w06 loss / H805).
@@ -132,6 +134,40 @@ def read_still_null(path=STILL_NULL):
     return out
 
 
+def read_residuals(path=RESIDUALS):
+    """Return the latest durable residual decision for each exact subcard key."""
+    latest = {}
+    if not path or not os.path.exists(path):
+        return latest
+    with open(path, encoding='utf-8') as f:
+        for lineno, line in enumerate(f, 1):
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError as e:
+                raise SystemExit('FAIL: malformed residual registry %s:%d: %s' %
+                                 (path, lineno, e))
+            if row.get('schema') != 'pwg.no_pwg_residual.v1':
+                raise SystemExit('FAIL: unsupported residual registry schema at %s:%d' %
+                                 (path, lineno))
+            if not row.get('key') or row.get('status') not in ('blocked', 'retry', 'resolved'):
+                raise SystemExit('FAIL: invalid residual row at %s:%d' % (path, lineno))
+            latest[row['key']] = row
+    return latest
+
+
+def residual_summary(rows):
+    return [{'key': row['key'], 'reason': row.get('reason'),
+             'source_window': row.get('source_window')}
+            for row in rows]
+
+
+def filter_residual_subcards(subcards, blocked):
+    skipped = [blocked[key] for key in subcards if key in blocked]
+    return [key for key in subcards if key not in blocked], skipped
+
+
 def chunked(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i + n]
@@ -200,6 +236,16 @@ def promotion_command(workflow_output, gen_model_version):
     )
 
 
+def audit_command(workflow_output, root, execution_manifest=None):
+    command = (
+        'python src/pilot/audit_window.py "%s" --root "%s" '
+        '--write-requeue --window-tag "%s"' % (workflow_output, root, root)
+    )
+    if execution_manifest:
+        command += ' --execution-manifest "%s"' % execution_manifest
+    return command
+
+
 def prepare_window(args, index, heads, still_null_keys, tail_mode):
     root = '%s%02d' % (args.prefix, index)
     print('preparing %s: %d headword(s)%s' %
@@ -217,7 +263,15 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     subcards = [k for i, k in enumerate(subcards) if k and k not in set(subcards[:i])]
     promoted_keys = read_store_keys()
     subcards = [k for k in subcards if k not in promoted_keys]
+    blocked = getattr(args, 'blocked_residuals', {})
+    subcards, skipped_rows = filter_residual_subcards(subcards, blocked)
     if not subcards:
+        if skipped_rows:
+            print('omitting %s: every unpromoted subcard is a blocked residual' % root)
+            return {
+                'omitted': True, 'root': root, 'headwords': heads,
+                'residual_skipped': residual_summary(skipped_rows),
+            }
         raise SystemExit('FAIL: %s produced no no-PWG subcards' % root)
 
     if args.headless or args.dry_run:
@@ -246,9 +300,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     run_cmd(gen_cmd)
     preflight = preflight_json(root, subcards)
     if preflight_path:
-        with open(preflight_path, 'w', encoding='utf-8', newline='\n') as f:
-            json.dump(preflight, f, ensure_ascii=False, indent=1)
-            f.write('\n')
+        atomic_write_json(preflight_path, preflight, indent=1)
     headless_meta = None
     if execution_manifest:
         with open(execution_manifest, encoding='utf-8') as f:
@@ -268,6 +320,8 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
                 preflight_path, artifact_path=os.path.dirname(execution_manifest))
     wf_out = os.path.join(OUT, 'wf_output.%s.json' % root)
     wf_out_rel = os.path.relpath(wf_out, RT).replace('\\', '/')
+    manifest_rel = (os.path.relpath(execution_manifest, RT).replace('\\', '/')
+                    if execution_manifest else None)
     return {
         'root': root,
         'mode': 'still_null_tail' if tail_mode else 'queue',
@@ -275,8 +329,9 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
         'subcards': subcards,
         'harness': os.path.relpath(harness, RT).replace('\\', '/'),
         'workflow_output': wf_out_rel,
-        'audit_command': 'python src/pilot/audit_window.py %s' % root,
+        'audit_command': audit_command(wf_out_rel, root, manifest_rel),
         'promote_command': promotion_command(wf_out_rel, args.gen_model_version),
+        'residual_skipped': residual_summary(skipped_rows),
         'preflight': {
             'selected_keys': len(preflight.get('selected_keys') or []),
             'batches': preflight.get('batch_count'),
@@ -354,6 +409,10 @@ def main(argv=None):
     ap.add_argument('--gen-model-version', default='claude-sonnet-5',
                     help='exact generation model id written into the promotion command '
                          '(default %(default)s)')
+    ap.add_argument('--residual-file', default=RESIDUALS,
+                    help='durable pwg.no_pwg_residual.v1 JSONL registry')
+    ap.add_argument('--include-residuals', action='store_true',
+                    help='explicitly retry keys whose latest residual status is blocked')
     args = ap.parse_args(argv)
 
     if args.headless:
@@ -383,11 +442,19 @@ def main(argv=None):
     queue = read_queue()
     promoted = read_store_heads()
     still_null = read_still_null()
-    ordered, tail_heads = build_order(queue, promoted, still_null)
+    residuals = read_residuals(args.residual_file)
+    args.blocked_residuals = ({
+        key: row for key, row in residuals.items() if row.get('status') == 'blocked'
+    } if not args.include_residuals else {})
+    initially_skipped = [args.blocked_residuals[key] for key in still_null
+                         if key in args.blocked_residuals]
+    eligible_still_null = [key for key in still_null if key not in args.blocked_residuals]
+    ordered, tail_heads = build_order(queue, promoted, eligible_still_null)
     if args.headwords:
         ordered = ordered[:args.headwords]
         tail_heads = [head for head in tail_heads if head in set(ordered)]
     windows = []
+    omitted = []
     tail_set = set(tail_heads)
     tail_order = [h for h in ordered if h in tail_set]
     rest_order = [h for h in ordered if h not in tail_set]
@@ -399,7 +466,10 @@ def main(argv=None):
         idx = args.start_index + offset
         tail_mode = all(h in tail_set for h in heads)
         if to_prepare and offset < to_prepare:
-            window = prepare_window(args, idx, heads, still_null, tail_mode)
+            window = prepare_window(args, idx, heads, eligible_still_null, tail_mode)
+            if window.get('omitted'):
+                omitted.append(window)
+                continue
             overlap = seen_subcards & set(window['subcards'])
             if overlap:
                 raise SystemExit('FAIL: duplicate subcards across windows: %s' % ','.join(sorted(overlap)))
@@ -423,6 +493,15 @@ def main(argv=None):
         'store_present': os.path.exists(STORE),
         'promoted_headwords_seen': len(promoted),
         'still_null_subcards_seen': len(still_null),
+        'residual_registry': os.path.relpath(args.residual_file, RT).replace('\\', '/'),
+        'include_residuals': args.include_residuals,
+        'residual_skipped': residual_summary({
+            row['key']: row for row in initially_skipped + [
+                residuals[item['key']] for window in windows + omitted
+                for item in (window.get('residual_skipped') or [])
+            ]
+        }.values()),
+        'omitted_windows': omitted,
         'remaining_headwords': len(ordered),
         'tail_headwords_first': tail_heads,
         'window_size': args.window_size,
@@ -434,9 +513,7 @@ def main(argv=None):
         'windows': windows,
     }
     os.makedirs(os.path.dirname(args.manifest), exist_ok=True)
-    with open(args.manifest, 'w', encoding='utf-8', newline='\n') as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-        f.write('\n')
+    atomic_write_json(args.manifest, payload, indent=2)
     print('wrote %s' % args.manifest)
     if not os.path.exists(STORE):
         print('WARNING: promoted store not found at %s; dedup will become exact when the '

@@ -324,6 +324,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('wf_output')
     ap.add_argument('--root')
+    ap.add_argument('--execution-manifest',
+                    help='prepared pwg.headless_execution_manifest.v1 contract for this output')
     ap.add_argument('--write-requeue', action='store_true')
     ap.add_argument('--allow-stale', action='store_true',
                     help='forensic mode: continue even if workflow/rootmap/input provenance is stale')
@@ -388,7 +390,14 @@ def main():
               'null_cards': len(null_cards),
               'has_meta': bool(wf_meta),
               'allow_stale': args.allow_stale})
-    stale = stale_check(args.root, wf_meta, keys)
+    execution_manifest = None
+    if args.execution_manifest:
+        try:
+            with open(args.execution_manifest, encoding='utf-8') as f:
+                execution_manifest = json.load(f)
+        except (OSError, json.JSONDecodeError) as e:
+            execution_manifest = {'_load_error': str(e)}
+    stale = stale_check(args.root, wf_meta, keys, execution_manifest=execution_manifest)
     if stale.get('stale') and not args.allow_stale:
         print('\n=== stale artifact check ===')
         for err in stale.get('errors') or []:

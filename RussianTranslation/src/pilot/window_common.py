@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
@@ -91,6 +92,33 @@ def append_jsonl_line(path, obj):
         os.close(fd)
 
 
+def atomic_write_text(path, content, encoding='utf-8'):
+    """Replace ``path`` only after a complete, durable same-directory write."""
+    directory = os.path.dirname(os.path.abspath(path))
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path),
+                               suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'w', encoding=encoding) as f:
+            fd = None
+            f.write(content)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, path)
+    except Exception:
+        if fd is not None:
+            os.close(fd)
+        try:
+            os.remove(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def atomic_write_json(path, payload, indent=1):
+    atomic_write_text(path, json.dumps(payload, ensure_ascii=False, indent=indent))
+
+
 def load_json(path):
     with open(path, encoding='utf-8') as f:
         return json.load(f)
@@ -106,8 +134,7 @@ def read_json(path, default=None):
 
 
 def write_json(path, payload, indent=1):
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(payload, f, ensure_ascii=False, indent=indent)
+    atomic_write_json(path, payload, indent=indent)
 
 
 def read_text(path):
@@ -116,8 +143,7 @@ def read_text(path):
 
 
 def write_text(path, content):
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write(content)
+    atomic_write_text(path, content)
 
 
 def read_lines_result(path, limit=None):
@@ -137,8 +163,7 @@ def read_lines(path, limit=None):
 
 
 def write_lines(path, lines):
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines) + ('\n' if lines else ''))
+    atomic_write_text(path, '\n'.join(lines) + ('\n' if lines else ''))
 
 
 def tail_jsonl(path, limit=40):

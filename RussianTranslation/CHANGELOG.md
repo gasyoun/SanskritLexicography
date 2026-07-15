@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Audit-bound promotion and restart safety.** Coordinator recording now fails closed:
+  only a provenance-valid `clean` audit becomes ready, and only explicit
+  `needs_requeue`/`transient_only` audits can expose a verified clean subset. Every
+  coordinator result is bound to its execution manifest with exact-one key coverage;
+  promotion revalidates the audit and clean-artifact hash. Control files use atomic
+  replacement, record-level grammar masks restore in Workflow/headless paths, staged
+  orchestration is plan-scoped, and the no-PWG planner skips durable known residuals.
+
 - **Four-profile production-readiness — verify H920 + earn every offline-earnable scale gap (H960, offline).**
   Verified H920 (every offline gate green) and closed the six load-bearing gaps blocking four-profile
   nonstop scale, each pinned by a selftest and each **SOFT / report-only by default** (telemetry, no
