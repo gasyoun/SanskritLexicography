@@ -125,6 +125,8 @@ def main():
                          'singleton, possibly not this one.')
     ap.add_argument('--out',
                     help='explicit generated harness path; default is src/pilot/run_pilot_wf.opt2.js')
+    ap.add_argument('--manifest-out',
+                    help='optional execution-manifest path bound to this exact requeue key set')
     ap.add_argument('--nominal', action='store_true',
                     help='resolve keys directly as nominal cards instead of requiring a rootmap')
     ap.add_argument('--no-grammar', action='store_true',
@@ -168,6 +170,8 @@ def main():
            root, '--keys=' + ','.join(resolved)]
     if args.out:
         cmd.append('--out=%s' % args.out)
+    if args.manifest_out:
+        cmd.append('--manifest-out=%s' % args.manifest_out)
     if args.nominal:
         cmd.append('--nominal')
     if args.no_grammar:
@@ -194,6 +198,8 @@ def main():
     if denied_frags:
         print('tm denylist       : +%d fragment fsha(s)' % denied_frags)
     print('generated harness : %s' % harness)
+    if args.manifest_out:
+        print('execution manifest: %s' % os.path.abspath(args.manifest_out))
     print('keys:')
     for k in resolved:
         print('  ' + k)

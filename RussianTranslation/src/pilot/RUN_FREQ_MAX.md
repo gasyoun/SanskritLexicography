@@ -381,10 +381,25 @@ not a substitute for it.
   Coordinator/headless runs additionally pass `--execution-manifest`: root, nominal mode,
   input hashes, and result keys must match that prepared contract, with every selected key
   present exactly once. A stale, duplicated, foreign, or unbound result is never promotable.
+- A coordinator retry is a new execution attempt on the same lease, not permission to reuse
+  the initial manifest. `prepare-requeue` accepts only `promoted_partial`, `needs_requeue`, or
+  `transient_only`; promote a `ready_partial` clean subset first. Each retry is preserved under
+  `artifacts/<lease>/requeue/rqNN-{transient|defect}/` with its own harness and execution
+  manifest. `record-output` writes and audits in that current attempt directory, and a later
+  retry reads the requeue list emitted by that latest audit. Do not copy a retry output back
+  over the lease's initial artifacts.
+- Standalone `requeue_from_audit.py` remains compatible with the commands below. For a manually
+  managed provenance-bound retry, add `--manifest-out <path>` and pass that exact manifest to
+  `audit_window.py --execution-manifest <path>` when recording the result.
 - `no_pwg_scale_plan.py` reads the tracked `no_pwg_residuals.jsonl` decision ledger and
   skips keys whose latest status is `blocked`. Append a later `retry` or `resolved` row to
   reopen one key, or use `--include-residuals` for a deliberate one-run override. Do not
   delete the history or repeatedly spend Max quota on a documented deterministic failure.
+  A fully blocked chunk is listed in `omitted_windows` and does not consume
+  `--limit-windows`; preparation advances to the next eligible deterministic index. Plan
+  manifests retain plan-wide `selected_headwords` and separately report
+  `prepared_headwords`. Staged acceptance uses only windows carrying prepared `headless`
+  metadata, so future plan rows cannot inflate its window or headword denominators.
 - DeepSeek corpus-lexicon API calls are append-only/resumable in `build_corpus_lexicon.py`.
   Use `DEEPSEEK_RETRIES`, `DEEPSEEK_CONNECT_TIMEOUT`, `DEEPSEEK_READ_TIMEOUT`, and
   `DEEPSEEK_BACKOFF_BASE` to tune retry behavior; failed API batches are logged locally and

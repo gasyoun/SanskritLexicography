@@ -640,15 +640,29 @@ def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_M
     return latencies
 
 
+def staged_plan_scope(plan, requested_lease_ids=None):
+    """Return the prepared headless windows that define one staged acceptance run."""
+    prepared = [window for window in plan.get('windows', []) if window.get('headless')]
+    prepared_ids = [window['root'] for window in prepared]
+    if requested_lease_ids and set(requested_lease_ids) != set(prepared_ids):
+        raise SystemExit('--lease-id set does not match the staged plan')
+    lease_ids = list(requested_lease_ids or prepared_ids)
+    lease_scope = set(lease_ids)
+    windows = [window for window in prepared if window['root'] in lease_scope]
+    return {
+        'lease_ids': lease_ids,
+        'windows': windows,
+        'expected_windows': len(windows),
+        'expected_headwords': sum(len(window.get('headwords') or []) for window in windows),
+    }
+
+
 def cmd_staged_run(args):
     plan = json.load(open(args.plan, encoding='utf-8'))
-    plan_lease_ids = [window['root'] for window in plan.get('windows', [])
-                      if window.get('headless')]
-    if args.lease_id and set(args.lease_id) != set(plan_lease_ids):
-        raise SystemExit('--lease-id set does not match the staged plan')
-    lease_ids = args.lease_id or plan_lease_ids
-    expected_windows = len(plan_lease_ids)
-    expected_headwords = int(plan.get('selected_headwords') or 0)
+    scope = staged_plan_scope(plan, args.lease_id)
+    lease_ids = scope['lease_ids']
+    expected_windows = scope['expected_windows']
+    expected_headwords = scope['expected_headwords']
     if not expected_windows or not expected_headwords:
         raise SystemExit('staged plan has no prepared headless windows')
     db = connect(args.db)

@@ -2627,6 +2627,79 @@ def test_no_pwg_residual_registry_and_audit_command():
             fail('a no-PWG head with only blocked residuals must be omitted')
 
 
+def test_no_pwg_preparation_advances_past_omitted_chunks():
+    import no_pwg_scale_plan as plan
+
+    def residual(key):
+        return {'schema': 'pwg.no_pwg_residual.v1', 'key': key,
+                'status': 'blocked', 'reason': 'repeat failure',
+                'source_window': 'old', 'updated_at': '2026-07-15T00:00:00Z'}
+
+    originals = {name: getattr(plan, name) for name in
+                 ('read_queue', 'read_store_heads', 'read_still_null',
+                  'read_residuals', 'prepare_window')}
+    with tempfile.TemporaryDirectory() as tmp:
+        registry = os.path.join(tmp, 'residuals.jsonl')
+        manifest = os.path.join(tmp, 'plan.json')
+        blocked = {'a~~x': residual('a~~x'), 'b~~x': residual('b~~x')}
+        plan.read_queue = lambda: [
+            {'key1': 'a'}, {'key1': 'b'}, {'key1': 'c'}]
+        plan.read_store_heads = lambda: set()
+        plan.read_still_null = lambda: []
+        plan.read_residuals = lambda _path: blocked
+
+        def prepare_some(args, index, heads, _still_null, _tail_mode):
+            head = heads[0]
+            if head == 'a':
+                return {'omitted': True, 'root': 'fixture_w%02d' % index,
+                        'headwords': heads,
+                        'residual_skipped': plan.residual_summary([blocked['a~~x']])}
+            return {'root': 'fixture_w%02d' % index, 'mode': 'queue',
+                    'headwords': heads, 'subcards': [head + '~~x'],
+                    'harness': 'run.js', 'workflow_output': 'wf.json',
+                    'preflight': {}, 'headless': {'projected_calls': 1},
+                    'residual_skipped': []}
+
+        try:
+            plan.prepare_window = prepare_some
+            plan.main(['--window-size', '1', '--limit-windows', '1',
+                       '--start-index', '900', '--force-index',
+                       '--prefix', 'fixture_w', '--manifest', manifest,
+                       '--residual-file', registry])
+            payload = json.load(open(manifest, encoding='utf-8'))
+            if payload['prepared_windows'] != 1 or payload['prepared_headwords'] != 1:
+                fail('an omitted chunk consumed the requested preparation quota')
+            if payload['windows'][0]['root'] != 'fixture_w901':
+                fail('planner did not advance to the first eligible deterministic index')
+            if [row['root'] for row in payload['omitted_windows']] != ['fixture_w900']:
+                fail('omitted chunk was not reported completely')
+            if payload['residual_skipped'][0]['reason'] != 'repeat failure':
+                fail('omitted residual reason was lost from the plan manifest')
+
+            def prepare_none(args, index, heads, _still_null, _tail_mode):
+                key = heads[0] + '~~x'
+                row = blocked.get(key) or residual(key)
+                blocked[key] = row
+                return {'omitted': True, 'root': 'blocked_w%02d' % index,
+                        'headwords': heads,
+                        'residual_skipped': plan.residual_summary([row])}
+
+            plan.prepare_window = prepare_none
+            blocked_manifest = os.path.join(tmp, 'blocked-plan.json')
+            plan.main(['--window-size', '1', '--limit-windows', '1',
+                       '--start-index', '910', '--force-index',
+                       '--prefix', 'blocked_w', '--manifest', blocked_manifest,
+                       '--residual-file', registry])
+            payload = json.load(open(blocked_manifest, encoding='utf-8'))
+            if payload['prepared_windows'] != 0 or payload['windows']:
+                fail('an entirely blocked queue must prepare zero windows')
+            if len(payload['omitted_windows']) != 3:
+                fail('an entirely blocked queue must report every omitted chunk')
+        finally:
+            for name, value in originals.items():
+                setattr(plan, name, value)
+
+
 def test_coordinator_expired_leases_release_cap():
     """A killed/offline pre-prepare claim must not hold one global translation lane
     forever, while an already-prepared harness remains a durable operator artifact."""
@@ -2707,6 +2780,7 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
         with open(rqfile, 'w', encoding='utf-8') as f:
             f.write('a\n')
         out = os.path.join(tmp, 'run_pilot_wf.requeue.js')
+        manifest_out = os.path.join(tmp, 'execution_manifest.requeue.json')
 
         captured = {}
 
@@ -2727,7 +2801,7 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
         rq.append_tm_denylist = lambda *_args, **_kwargs: (1, 0)
         sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--defect',
                     '--nominal', '--no-grammar', '--requeue-file=%s' % rqfile,
-                    '--out=%s' % out]
+                    '--out=%s' % out, '--manifest-out=%s' % manifest_out]
         try:
             rq.main()
         finally:
@@ -2742,6 +2816,137 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
             fail('nominal requeue flags must pass through')
         if '--out=%s' % out not in cmd:
             fail('coordinator requeue must use an explicit harness output path')
+        if '--manifest-out=%s' % manifest_out not in cmd:
+            fail('coordinator requeue must bind the harness to its exact manifest')
+
+
+def test_coordinator_requeue_attempt_manifests():
+    import coordinator
+    import window_provenance
+    from types import SimpleNamespace
+    from window_common import input_paths
+
+    old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    original_run = coordinator.run_cmd
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        artifacts = os.path.join(tmp, 'artifacts', 'lease')
+        os.makedirs(artifacts)
+        input_dir = os.path.join(tmp, 'input')
+        os.makedirs(input_dir)
+        input_hashes = {}
+        for key in ('a~~x', 'b~~x'):
+            raw_path, portrait_path = input_paths(key, input_dir=input_dir)
+            with open(raw_path, 'w', encoding='utf-8') as f:
+                f.write('raw ' + key)
+            with open(portrait_path, 'w', encoding='utf-8') as f:
+                json.dump({'key': key}, f)
+            input_hashes[key] = {
+                'raw_sha256': coordinator.sha256_file(raw_path),
+                'portrait_sha256': coordinator.sha256_file(portrait_path),
+            }
+        initial_manifest = os.path.join(artifacts, 'execution_manifest.lease.json')
+        original = {
+            'schema': 'pwg.headless_execution_manifest.v1',
+            'meta': {'root': 'no_pwg_fixture', 'nominal': True,
+                     'selected_keys': ['a~~x', 'b~~x'], 'input_hashes': input_hashes},
+        }
+        with open(initial_manifest, 'w', encoding='utf-8') as f:
+            json.dump(original, f)
+        original_bytes = open(initial_manifest, 'rb').read()
+        with open(os.path.join(artifacts, 'requeue.transient.keys.txt'),
+                  'w', encoding='utf-8') as f:
+            f.write('a~~x\n')
+        state = coordinator.default_state()
+        state['leases'] = [{
+            'id': 'lease', 'kind': 'nominal', 'target': 'a',
+            'state': 'promoted_partial', 'artifact_dir': artifacts,
+            'execution_manifest': initial_manifest,
+            'status_path': os.path.join(artifacts, 'window_status.json'),
+        }]
+        coordinator.save_state(state)
+
+        class FakeProc:
+            stdout = 'generated requeue harness\n'
+
+        def fake_run(cmd):
+            out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
+            manifest = next(arg.split('=', 1)[1] for arg in cmd
+                            if arg.startswith('--manifest-out='))
+            rqfile = next(arg.split('=', 1)[1] for arg in cmd
+                          if arg.startswith('--requeue-file='))
+            keys = [line.strip() for line in open(rqfile, encoding='utf-8') if line.strip()]
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            with open(out, 'w', encoding='utf-8') as f:
+                f.write('// generated\n')
+            with open(manifest, 'w', encoding='utf-8') as f:
+                json.dump({'schema': 'pwg.headless_execution_manifest.v1',
+                           'meta': {'root': 'no_pwg_fixture', 'nominal': True,
+                                    'selected_keys': keys,
+                                    'input_hashes': {key: input_hashes[key] for key in keys}}}, f)
+            return FakeProc()
+
+        coordinator.run_cmd = fake_run
+        try:
+            coordinator.prepare_requeue(SimpleNamespace(
+                lease_id='lease', transient=True, defect=False))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['requeue_attempt'] != 1 or 'rq01-transient' not in lease['current_artifact_dir']:
+                fail('first requeue attempt did not receive its own artifact directory')
+            if json.load(open(lease['execution_manifest'], encoding='utf-8'))[
+                    'meta']['selected_keys'] != ['a~~x']:
+                fail('requeue attempt manifest was not narrowed to its exact keys')
+            if open(initial_manifest, 'rb').read() != original_bytes:
+                fail('requeue preparation modified the original execution manifest')
+            if len(lease['execution_manifest_history']) != 2:
+                fail('initial and first-attempt manifests were not retained in history')
+            attempt_manifest = json.load(open(lease['execution_manifest'], encoding='utf-8'))
+            old_inp = window_provenance.INP
+            window_provenance.INP = input_dir
+            try:
+                if not window_provenance.stale_check(
+                        None, attempt_manifest['meta'], ['a~~x'],
+                        execution_manifest=attempt_manifest)['ok']:
+                    fail('one-key requeue did not validate against its attempt manifest')
+                if window_provenance.stale_check(
+                        None, attempt_manifest['meta'], ['a~~x'],
+                        execution_manifest=original)['ok']:
+                    fail('one-key requeue unexpectedly validated against the two-key original')
+            finally:
+                window_provenance.INP = old_inp
+
+            latest_dir = lease['current_artifact_dir']
+            with open(os.path.join(latest_dir, 'requeue.transient.keys.txt'),
+                      'w', encoding='utf-8') as f:
+                f.write('a~~x\n')
+            state = coordinator.load_state()
+            state['leases'][0]['state'] = 'transient_only'
+            state['leases'][0]['status_path'] = os.path.join(latest_dir, 'window_status.json')
+            coordinator.save_state(state)
+            coordinator.prepare_requeue(SimpleNamespace(
+                lease_id='lease', transient=True, defect=False))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['requeue_attempt'] != 2 or 'rq02-transient' not in lease['current_artifact_dir']:
+                fail('repeated requeue did not advance from the latest audit directory')
+            if len(lease['execution_manifest_history']) != 3:
+                fail('repeated requeue did not preserve every prior manifest')
+
+            state = coordinator.load_state()
+            state['leases'][0]['state'] = 'ready_partial'
+            coordinator.save_state(state)
+            try:
+                coordinator.prepare_requeue(SimpleNamespace(
+                    lease_id='lease', transient=True, defect=False))
+                fail('unpromoted ready_partial lease was allowed to prepare a requeue')
+            except SystemExit as exc:
+                if 'promote' not in str(exc):
+                    fail('ready_partial refusal did not explain the promotion prerequisite')
+        finally:
+            coordinator.run_cmd = original_run
+            if old_coord is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old_coord
 
 
 def test_promote_nominal_key1():
@@ -4732,6 +4937,7 @@ def main():
         test_coordinator_lock_replaces_stale_dead_owner,
         test_coordinator_lock_creates_parent_dir,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
+        test_coordinator_requeue_attempt_manifests,
         test_promote_nominal_key1,
         test_build_emits_nominal_keymap,
         test_generation_schema_carries_no_post_generation_field,
@@ -4772,6 +4978,7 @@ def main():
         test_nominal_provenance_without_rootmap,
         test_atomic_control_writes_preserve_previous_file,
         test_no_pwg_residual_registry_and_audit_command,
+        test_no_pwg_preparation_advances_past_omitted_chunks,
         test_no_pwg_card_source_profile_taxonomy,
         test_no_pwg_supplement_card_renders_without_pwg,
         test_h920_sense_count_top_level_ordinals,

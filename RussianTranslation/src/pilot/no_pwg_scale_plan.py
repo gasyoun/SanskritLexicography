@@ -461,11 +461,12 @@ def main(argv=None):
     window_heads = list(chunked(tail_order, args.window_size)) + list(chunked(rest_order, args.window_size))
 
     to_prepare = 0 if args.plan_only else args.limit_windows
+    prepared_count = 0
     seen_subcards = set()
     for offset, heads in enumerate(window_heads):
         idx = args.start_index + offset
         tail_mode = all(h in tail_set for h in heads)
-        if to_prepare and offset < to_prepare:
+        if to_prepare and prepared_count < to_prepare:
             window = prepare_window(args, idx, heads, eligible_still_null, tail_mode)
             if window.get('omitted'):
                 omitted.append(window)
@@ -475,6 +476,7 @@ def main(argv=None):
                 raise SystemExit('FAIL: duplicate subcards across windows: %s' % ','.join(sorted(overlap)))
             seen_subcards.update(window['subcards'])
             windows.append(window)
+            prepared_count += 1
         else:
             windows.append({
                 'root': '%s%02d' % (args.prefix, idx),
@@ -507,6 +509,7 @@ def main(argv=None):
         'window_size': args.window_size,
         'prepared_windows': len([w for w in windows if w.get('harness')]),
         'selected_headwords': sum(len(w['headwords']) for w in windows),
+        'prepared_headwords': sum(len(w['headwords']) for w in windows if w.get('harness')),
         'selected_subcards': sum(len(w.get('subcards') or []) for w in windows),
         'presplit_subcards': sum(len((w.get('headless') or {}).get('presplit_keys') or []) for w in windows),
         'projected_calls': sum(((w.get('headless') or {}).get('projected_calls') or 0) for w in windows),
@@ -520,9 +523,14 @@ def main(argv=None):
               'gitignored local store is restored/present' % os.path.relpath(STORE, RT))
     print('remaining headwords: %d | windows: %d | prepared: %d'
           % (payload['remaining_headwords'], len(windows), payload['prepared_windows']))
-    if windows:
+    prepared = [window for window in windows if window.get('harness')]
+    if prepared:
+        first = prepared[0]
+        print('next prepared window: %s (%s) %d headword(s)' %
+              (first['root'], first['mode'], len(first['headwords'])))
+    elif windows:
         first = windows[0]
-        print('next window: %s (%s) %d headword(s)' %
+        print('next planned window: %s (%s) %d headword(s)' %
               (first['root'], first['mode'], len(first['headwords'])))
 
 

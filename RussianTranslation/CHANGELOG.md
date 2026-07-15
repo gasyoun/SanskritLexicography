@@ -10,6 +10,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Requeue provenance and staged-scope follow-up.** Coordinator requeues now create an
+  immutable attempt directory and execution manifest for the exact retry keys, retain the
+  initial and prior manifest history, and read the next retry list from the latest audit.
+  An unpromoted `ready_partial` lease must promote its verified subset before retry preparation.
+  Staged acceptance counts only prepared headless windows, while residual-only planner chunks
+  are reported and skipped until the requested number of eligible windows is prepared.
+
 - **Audit-bound promotion and restart safety.** Coordinator recording now fails closed:
   only a provenance-valid `clean` audit becomes ready, and only explicit
   `needs_requeue`/`transient_only` audits can expose a verified clean subset. Every

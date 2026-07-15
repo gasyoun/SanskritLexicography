@@ -17,6 +17,27 @@ import max_account_orchestrator as m
 
 
 def main():
+    staged_plan = {
+        'selected_headwords': 2,
+        'prepared_headwords': 1,
+        'windows': [
+            {'root': 'prepared', 'headwords': ['a'], 'headless': {'manifest_sha256': 'x'}},
+            {'root': 'future', 'headwords': ['b'], 'headless': None},
+        ],
+    }
+    scope = m.staged_plan_scope(staged_plan)
+    assert scope['lease_ids'] == ['prepared']
+    assert scope['expected_windows'] == 1
+    assert scope['expected_headwords'] == 1
+    assert m.staged_plan_scope(staged_plan, ['prepared']) == scope
+    try:
+        m.staged_plan_scope(staged_plan, ['future'])
+        assert False, 'unprepared lease id must not enter staged acceptance'
+    except SystemExit as exc:
+        assert 'does not match' in str(exc)
+    assert scope['expected_windows'] == 1 and scope['expected_headwords'] == 1
+    print('  staged plan scope: prepared lease alone supplies the GO denominators')
+
     with tempfile.TemporaryDirectory() as td:
         scoped_db = os.path.join(td, 'scope.sqlite')
         m.main(['--db', scoped_db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
