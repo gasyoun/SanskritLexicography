@@ -1,6 +1,6 @@
 # pwg_ru live-acceptance latency-policy investigation (opened after the second consecutive NO-GO)
 
-_Created: 13-07-2026 · Last updated: 14-07-2026_
+_Created: 13-07-2026 · Last updated: 15-07-2026_
 
 Opened per the H818 acceptance STOP-branch directive and handoff
 [H895](https://github.com/gasyoun/Uprava/blob/main/handoffs/H895-Opus_SanskritLexicography_h818-acceptance-DE-DK-latency-blocked_13.07.26.md):
@@ -81,6 +81,10 @@ already honestly NO-GO'd; further probing is investigation, not gate re-rolling)
 
 ## Results — home-route payload-size sweep (executed 14-07-2026, Opus 4.8 `claude-opus-4-8[1m]`)
 
+> **⚠️ Old-probe caveat (see the 15-07 D-P note in Method step 2):** these numbers were measured with the
+> pre-v1.9.17 `'x'`-padding probe (artificially-fast-on-compliance / refusal-bimodal). Retained as history;
+> re-baseline with the v1.9.17+ probe before comparing to any fixed-probe data.
+
 Method step 1 executed on the same profile under test — Max account `max1`
 (`D:\ClaudeTools\profiles\claude1\.claude`), exact model `claude-sonnet-5`, plain-probe path
 (tiny `{"ok":boolean}` schema, output held ~constant at ~1.5 KB) via
@@ -148,6 +152,12 @@ R² = 0.02). Shrinking a card's prompt would trim ~1 s of the floor and do nothi
 tens-of-seconds jitter — **payload size is not the lever.**
 
 ## Results — intra-window latency variance (executed 14-07-2026, Opus 4.8 `claude-opus-4-8[1m]`)
+
+> **⚠️ Old-probe caveat (see the 15-07 D-P note in Method step 2):** measured with the pre-v1.9.17
+> `'x'`-padding probe. The huge spread here (**8.9 s → 59.2 s**) is now partly explained by the D-P
+> refuse/comply bimodality — fast compliance (`'x'` compresses to few tokens) vs a slow plan-mode refusal —
+> so this window's dispersion conflates route variance with a probe artifact. Re-measure with the v1.9.17+
+> probe before treating the variance as a route property.
 
 Method step 3, partial. Across all 31 calls in the ~19-min window: **min 8.9 s · p50 25.8 s ·
 p90 52.8 s · max 59.2 s · mean 27.5 s · stdev 14.5 s** — stdev is ≈ 0.53× the mean (coefficient
@@ -223,6 +233,19 @@ before the D-A rewrite can help.
 
 ## Method step 2 — foreign-route comparison runbook (PREPARED + REFINED 14-07-2026 per sol.md #1–#5, Opus 4.8 `claude-opus-4-8[1m]`; owner-gated, NOT yet run)
 
+> **⚠️ 15-07-2026 (H994) — the probe was FIXED (D-P); collect off v1.9.17+ and re-baseline.** The
+> home-route sweep + variance results **above**, and any foreign evidence gathered earlier, used the
+> **old** `_probe_call` prompt, which is unreliable in *both* directions: on compliance a long `'x'` run
+> BPE-compresses to a handful of tokens → **artificially fast**, and under `--permission-mode plan`
+> Sonnet-5 sometimes **refuses** it (prose citing the "end via AskUserQuestion" rule) → a spurious
+> slow/over-ceiling reading. Neither reflects real generation load, so the old probe conflates route
+> latency with a refuse/comply bimodality. [D-P / v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)
+> replaced it with a natural load-representative prompt; the first honest home reading is **c4 ~30–53 s**
+> (warm-up 29.7 s / measured 52.8 s, both `success`, high variance) — over the ceiling, consistent with
+> H818/H895. **Action:** collect the paired A-B-B-A evidence off a commit **≥ v1.9.17 on BOTH hosts**, and
+> **re-baseline the home route** with the fixed probe before drawing any route-causality conclusion. The
+> pre-v1.9.17 numbers below are kept as history but are **not comparable** to fixed-probe data.
+
 Prepared per the H895 STOP-branch close-out: this is the sanctioned **diagnostic-only** exception
 for foreign-route probing. It is **NOT** Linux production — **Linux production and H841/H842/H843
 stay blocked** until the route is confirmed *and* a new acceptance handoff is minted (Step D). The
@@ -233,8 +256,8 @@ output constraint are **byte-identical on both hosts by construction** (hard-cod
 off the **same merged commit**):
 
 - **model** `claude-sonnet-5` (hard-coded `EXACT_GEN_MODEL` — cannot drift)
-- **prompt** `Return JSON {"ok":true}. Preserve this padding as inert input.\n` (the `PREFIX`, **63 B**) + `x`×`padding_bytes`
-- **bytes — do NOT conflate (sol.md #4):** `padding_bytes` is the `--ladder`/`MEASURED_SIZE` argument (the `x` count); the **actual encoded prompt** = 63 + `padding_bytes`. The D-K measured size is **`padding_bytes = 6491` ⇒ `actual_prompt_bytes = 6554`** — *not* 6491. `--mode diurnal` uses exactly this size, and the telemetry records **both** `padding_bytes` and `actual_prompt_bytes`.
+- **prompt (v1.9.17+, D-P fix — REQUIRED, see the 15-07 note below)** the natural load-representative task `_probe_prompt(padding_bytes)` builds: one clear "reply with exactly `{"ok": true}` and nothing else" instruction + `padding_bytes` of inert, domain-shaped filler. **Do NOT use a pre-v1.9.17 probe** — its old `"Return JSON {ok:true}. Preserve this padding as inert input." + N×'x'` prompt tripped Sonnet-5's plan-mode refusal AND read artificially fast (a long `'x'` run BPE-compresses to few tokens), so it is neither refusal-free nor load-representative.
+- **bytes — do NOT conflate (sol.md #4):** `padding_bytes` is the `--ladder`/`MEASURED_SIZE` argument (the filler size); the **actual encoded prompt** is derived from the SAME `_probe_prompt` (single source of truth, can't drift). The D-K measured size is **`padding_bytes = 6491` ⇒ `actual_prompt_bytes = 6828`** (v1.9.17+; was 6554 under the old 63 B prefix). `--mode diurnal` uses exactly this size, and the telemetry records **both** `padding_bytes` and `actual_prompt_bytes`.
 - **schema** `{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}`, call `-p --output-format json --json-schema … --model claude-sonnet-5 --permission-mode plan`
 - **output constraint** tiny `{"ok":true}`; only the output **byte count** is recorded, never its content.
 - **30 000 ms ceiling unchanged.**
@@ -251,10 +274,13 @@ off the **same merged commit**):
   host) — this isolates *route* from *account*, and is **not** a credential copy. The agent **never**
   runs `/login` and **never** copies credentials — do **not** transfer
   `D:\ClaudeTools\profiles\claude1\.claude` (or any token) from Windows to the foreign host.
-- **Same commit + CLI.** Pin both hosts to the identical merged commit under test (record
-  `git -C <repo> rev-parse origin/master` once, check that **same SHA** out on both) and use the
+- **Same commit + CLI, and ≥ v1.9.17 (the D-P probe fix).** Pin both hosts to the identical merged
+  commit under test — **which MUST be ≥ [v1.9.17](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.9.17)**
+  so the probe is the D-P-fixed, load-representative prompt (a pre-fix commit re-introduces the
+  artificially-fast / refusal-bimodal probe and confounds the comparison). Record
+  `git -C <repo> rev-parse origin/master` once, check that **same SHA** out on both, and use the
   **same `claude` CLI version** (the telemetry records `git_sha` and `cli_version` per call so drift
-  is auditable).
+  is auditable — reject any sample whose commit predates v1.9.17).
 - **Telemetry hygiene (sol.md #5).** Each JSONL row records host/`route` label, `window` ID,
   `sample_index` (crossover position), `account_label` **pseudonym**, exact `model`, `git_sha`,
   `cli_version`, `latency_ms`, `classification`, output **byte count**, and **both** `padding_bytes`

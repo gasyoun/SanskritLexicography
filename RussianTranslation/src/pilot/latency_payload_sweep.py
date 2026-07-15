@@ -8,13 +8,17 @@ acceptance gate, does NOT weaken the 30000 ms ceiling, and never imports/claims 
 job, promotes a result, or writes the canonical store / translation memory. It
 only measures wall-clock latency.
 
-Each ``_probe_call`` sends a fixed tiny-output request whose INPUT is
-``PREFIX + padding_bytes*'x'``. Two byte counts are reported and must not be
-conflated (sol.md #4):
-  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (the 'x' count).
-  * ``actual_prompt_bytes`` -- the real encoded prompt = len(PREFIX) + padding_bytes
-                               (== ``total_input_bytes``; kept under both names).
-For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6554.
+Each ``_probe_call`` sends a fixed tiny-output request whose INPUT is the exact prompt
+``_probe_prompt(padding_bytes)`` builds. Post-D-P (H994, v1.9.17) that is a natural
+load-representative task (one clear ``{"ok": true}`` instruction + ``padding_bytes`` of inert,
+domain-shaped filler) under ``--permission-mode plan`` -- NOT the old 63 B ``PREFIX`` + N*'x'
+(that padding tripped Sonnet-5's plan-mode refusal, a false NO-GO). Two byte counts are reported
+and must not be conflated (sol.md #4):
+  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (the filler size).
+  * ``actual_prompt_bytes`` -- the TRUE encoded prompt size, derived from the SAME
+                               ``_probe_prompt`` the probe sends (single source of truth, cannot
+                               drift; == ``total_input_bytes``, kept under both names).
+For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6828 (v1.9.17+).
 Output is validated by result-envelope structure ({"ok": true}); only its BYTE
 COUNT is recorded -- never the output content, never credentials.
 
@@ -44,13 +48,18 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from max_account_orchestrator import _probe_call, EXACT_GEN_MODEL  # noqa: E402
+from max_account_orchestrator import _probe_call, _probe_prompt, EXACT_GEN_MODEL  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# Must match _probe_call's prompt prefix exactly to report true total input bytes.
-PREFIX = 'Return JSON {"ok":true}. Preserve this padding as inert input.\n'
-PREFIX_LEN = len(PREFIX.encode('utf-8'))  # 63 bytes
-MEASURED_SIZE = 6491  # padding_bytes of the D-K measured acceptance probe (-> 6554 actual)
+MEASURED_SIZE = 6491  # padding_bytes of the D-K measured acceptance probe (-> 6828 actual, v1.9.17+)
+
+
+def _actual_prompt_bytes(padding_bytes):
+    """True encoded size of the exact prompt ``_probe_call`` sends for this padding, derived from the
+    SAME ``_probe_prompt`` (single source of truth) so it can NEVER drift from the probe. Post-D-P
+    (H994) the prompt is a natural load-representative task, not a 63 B prefix + N*'x'; the old mirror
+    constant (PREFIX_LEN + padding_bytes) silently miscounted actual_prompt_bytes after the fix."""
+    return len(_probe_prompt(padding_bytes).encode('utf-8'))
 
 
 def _iso_utc():
@@ -80,6 +89,7 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
     t0 = time.monotonic()
     ts = _iso_utc()
     latency_ms, cls, output_bytes = _probe_call(config_dir, claude, padding_bytes, EXACT_GEN_MODEL)
+    actual_bytes = _actual_prompt_bytes(padding_bytes)   # from _probe_prompt -- cannot drift from the probe
     row = {
         'ts_utc': ts,
         'route': route,                          # host/route label (sol.md #5)
@@ -90,9 +100,9 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
         'model': EXACT_GEN_MODEL,                # exact generation model under test
         'git_sha': git_sha,
         'cli_version': cli_version,
-        'padding_bytes': padding_bytes,          # the 'x' padding argument
-        'actual_prompt_bytes': PREFIX_LEN + padding_bytes,  # real encoded prompt bytes
-        'total_input_bytes': PREFIX_LEN + padding_bytes,    # alias (analyzer key; == actual)
+        'padding_bytes': padding_bytes,          # the inert-filler size argument
+        'actual_prompt_bytes': actual_bytes,     # TRUE encoded prompt bytes (from _probe_prompt)
+        'total_input_bytes': actual_bytes,       # alias (analyzer key; == actual)
         'latency_ms': latency_ms,
         'classification': cls,
         'output_bytes': output_bytes,            # BYTE COUNT only -- never the output content
@@ -100,7 +110,7 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
     }
     tag = 'warmup' if warmup else 'seq=%s' % sample_index
     print('%s route=%s window=%s %s pad=%dB actual=%dB -> %d ms %s'
-          % (ts, route, window, tag, padding_bytes, PREFIX_LEN + padding_bytes,
+          % (ts, route, window, tag, padding_bytes, actual_bytes,
              latency_ms, cls), flush=True)
     return row
 
