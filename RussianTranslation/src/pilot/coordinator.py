@@ -42,7 +42,13 @@ import promote_final_cards  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
 import translation_memory  # noqa: E402
 import verb_worklist  # noqa: E402
-from window_common import append_jsonl_line, defer_monster  # noqa: E402
+from window_common import (  # noqa: E402
+    append_jsonl_line,
+    atomic_write_json,
+    atomic_write_text,
+    defer_monster,
+    sha256_file,
+)
 
 
 def utc_now():
@@ -172,10 +178,7 @@ def save_state(state):
     p = ensure_dirs()
     expire_stale_leases(state)
     state['updated_at'] = utc_now()
-    tmp = p['state'] + '.tmp'
-    with open(tmp, 'w', encoding='utf-8') as f:
-        json.dump(state, f, ensure_ascii=False, indent=1)
-    os.replace(tmp, p['state'])
+    atomic_write_json(p['state'], state, indent=1)
     write_dashboard(state)
 
 
@@ -492,8 +495,7 @@ def prepare(args):
             preflight_path = os.path.join(adir, 'preflight.json')
             p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
                          root, '--json'])
-            with open(preflight_path, 'w', encoding='utf-8') as f:
-                f.write(p.stdout)
+            atomic_write_text(preflight_path, p.stdout)
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
@@ -509,8 +511,7 @@ def prepare(args):
             key_arg = ','.join(keys)
             p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
                          root, '--nominal', '--no-grammar', '--keys=%s' % key_arg, '--json'])
-            with open(preflight_path, 'w', encoding='utf-8') as f:
-                f.write(p.stdout)
+            atomic_write_text(preflight_path, p.stdout)
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
@@ -540,8 +541,7 @@ def normalize_workflow_result(src_path, dst_path):
         result = wrapper
     if not isinstance(result, dict):
         raise SystemExit('workflow result is not an object')
-    with open(dst_path, 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False)
+    atomic_write_json(dst_path, result, indent=None)
     return result
 
 
@@ -566,6 +566,51 @@ def cost_from_transcript(path):
         return {'error': str(e)}
 
 
+PROMOTABLE_AUDIT_EXITS = {'clean': 0, 'needs_requeue': 1, 'transient_only': 1}
+
+
+def validate_promotable_audit(wf, status, report, state_name, returncode):
+    errors = []
+    expected_exit = PROMOTABLE_AUDIT_EXITS.get(state_name)
+    if expected_exit is None:
+        errors.append('audit state %r is not promotable' % state_name)
+    elif returncode != expected_exit:
+        errors.append('audit exit %r does not match %s' % (returncode, state_name))
+    if not isinstance(status, dict) or status.get('state') != state_name:
+        errors.append('window status is missing or disagrees with audit state')
+    if not isinstance(report, dict):
+        errors.append('audit report is missing or invalid')
+        return errors
+    report_wf = report.get('workflow')
+    if not report_wf or os.path.abspath(report_wf) != os.path.abspath(wf):
+        errors.append('audit report is not bound to the recorded workflow output')
+    if report.get('crashed'):
+        errors.append('audit report contains crashed gates')
+    if not (report.get('stale_check') or {}).get('ok'):
+        errors.append('audit provenance did not pass')
+    requeue = set(report.get('requeue') or [])
+    status_requeue = set(status.get('requeue_keys') or [])
+    if requeue != status_requeue:
+        errors.append('audit report and status requeue sets disagree')
+    if state_name == 'clean' and requeue:
+        errors.append('clean audit unexpectedly contains requeue keys')
+    if state_name in ('needs_requeue', 'transient_only') and not requeue:
+        errors.append('partial audit has no explicit requeue keys')
+    return errors
+
+
+def recorded_lease_state(state_name, audit_errors, clean_rows):
+    if state_name not in PROMOTABLE_AUDIT_EXITS:
+        return state_name, False
+    if audit_errors:
+        return 'blocked', False
+    if clean_rows:
+        return ('ready' if state_name == 'clean' else 'ready_partial'), True
+    if state_name in ('needs_requeue', 'transient_only'):
+        return state_name, False
+    return 'blocked', False
+
+
 def record_output(args):
     with DirLock(paths()['lock']):
         state = load_state()
@@ -576,10 +621,12 @@ def record_output(args):
         result = normalize_workflow_result(args.workflow_result, wf)
         if lease.get('kind') == 'nominal':
             result.setdefault('meta', {})['nominal_keymap'] = lease.get('details', {}).get('keymap') or {}
-            with open(wf, 'w', encoding='utf-8') as f:
-                json.dump(result, f, ensure_ascii=False)
+            atomic_write_json(wf, result, indent=None)
         cmd = [sys.executable, os.path.join(HERE, 'audit_window.py'), wf,
                '--write-requeue', '--out-dir', adir]
+        manifest = lease.get('execution_manifest') or os.path.join(
+            adir, '__missing_execution_manifest__.json')
+        cmd += ['--execution-manifest', manifest]
         if lease.get('kind') == 'verb':
             cmd += ['--root', lease['target']]
         if args.allow_stale:
@@ -587,32 +634,35 @@ def record_output(args):
         audit = run_cmd(cmd, check=False)
         status_path = os.path.join(adir, 'window_status.json')
         report_path = os.path.join(adir, 'audit_window.report.json')
-        status = json.load(open(status_path, encoding='utf-8')) if os.path.exists(status_path) else {}
-        report = json.load(open(report_path, encoding='utf-8')) if os.path.exists(report_path) else {}
+        try:
+            status = json.load(open(status_path, encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            status = {}
+        try:
+            report = json.load(open(report_path, encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            report = {}
         state_name = status.get('state') or ('blocked' if audit.returncode not in (0, 1) else 'unknown')
         rejected = set(report.get('requeue') or status.get('requeue_keys') or [])
         clean_payload = clean_result_payload(result, rejected)
         clean_rows = clean_payload['results']
+        audit_errors = validate_promotable_audit(
+            wf, status, report, state_name, audit.returncode)
+        lease_state, promotable = recorded_lease_state(state_name, audit_errors, clean_rows)
         clean_output = None
-        if clean_rows:
+        if promotable:
             clean_output = os.path.join(adir, 'wf_output.clean.%s.json' % lease['id'])
-            with open(clean_output + '.tmp', 'w', encoding='utf-8') as f:
-                json.dump(clean_payload, f, ensure_ascii=False)
-            os.replace(clean_output + '.tmp', clean_output)
+            atomic_write_json(clean_output, clean_payload, indent=None)
         lease['audit_state'] = state_name
-        if state_name == 'clean':
-            lease['state'] = 'ready'
-        elif clean_rows:
-            lease['state'] = 'ready_partial'
-        elif state_name in ('needs_requeue', 'transient_only'):
-            lease['state'] = state_name
-        else:
-            lease['state'] = state_name
+        lease['state'] = lease_state
         lease['wf_output'] = wf
         lease['clean_output'] = clean_output
-        lease['clean_count'] = len(clean_rows)
+        lease['clean_count'] = len(clean_rows) if promotable else 0
+        lease['clean_output_sha256'] = sha256_file(clean_output) if clean_output else None
         lease['audit_report'] = report_path
         lease['status_path'] = status_path
+        lease['audit_returncode'] = audit.returncode
+        lease['audit_errors'] = audit_errors
         lease['recorded_at'] = utc_now()
         lease['workflow_result_count'] = len(result.get('results') or [])
         lease['cost'] = cost_from_transcript(args.transcript_dir)
@@ -666,13 +716,38 @@ def promote_ready(args):
     with DirLock(paths()['promotion_lock']):
         with DirLock(paths()['lock']):
             state = load_state()
+            lease_scope = set(getattr(args, 'lease_id', None) or [])
             ready = [lease for lease in state.get('leases', [])
                      if lease.get('state') in ('ready', 'ready_partial')
-                     and (lease.get('clean_output') or lease.get('wf_output'))]
+                     and lease.get('clean_output')
+                     and (not lease_scope or lease.get('id') in lease_scope)]
             if not ready:
                 raise SystemExit('no ready leases to promote')
         for lease in ready:
-            source = lease.get('clean_output') or lease['wf_output']
+            source = lease['clean_output']
+            try:
+                status = json.load(open(lease['status_path'], encoding='utf-8'))
+                report = json.load(open(lease['audit_report'], encoding='utf-8'))
+                clean_payload = json.load(open(source, encoding='utf-8'))
+            except (KeyError, OSError, json.JSONDecodeError) as e:
+                raise SystemExit('%s: promotion artifacts are unreadable: %s' % (lease['id'], e))
+            errors = validate_promotable_audit(
+                lease['wf_output'], status, report, lease.get('audit_state'),
+                lease.get('audit_returncode'))
+            expected_lease_state = ('ready' if lease.get('audit_state') == 'clean'
+                                    else 'ready_partial')
+            if lease.get('state') != expected_lease_state:
+                errors.append('lease state does not match audited promotion class')
+            clean_rows = clean_payload.get('results') or []
+            if not clean_rows or any(not row.get('card') for row in clean_rows):
+                errors.append('clean output is empty or contains null cards')
+            if len(clean_rows) != lease.get('clean_count'):
+                errors.append('clean output count does not match lease')
+            if sha256_file(source) != lease.get('clean_output_sha256'):
+                errors.append('clean output hash does not match recorded artifact')
+            if errors:
+                raise SystemExit('%s: promotion refused: %s' %
+                                 (lease['id'], '; '.join(errors)))
             rel_glob = os.path.relpath(source, REPO)
             store_before = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
             run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
@@ -759,10 +834,7 @@ def write_dashboard(state, daily=None):
         'cap': state.get('cap') or {},
         'daily': daily,
     }
-    tmp = p['dashboard'] + '.tmp'
-    with open(tmp, 'w', encoding='utf-8') as f:
-        json.dump(payload, f, ensure_ascii=False, indent=1)
-    os.replace(tmp, p['dashboard'])
+    atomic_write_json(p['dashboard'], payload, indent=1)
 
 
 def status(args):
@@ -812,6 +884,8 @@ def main(argv=None):
     rq.set_defaults(func=prepare_requeue)
     pr = sub.add_parser('promote-ready')
     pr.add_argument('--gen-model-version', required=True)
+    pr.add_argument('--lease-id', action='append',
+                    help='promote only these ready lease IDs (repeatable)')
     pr.set_defaults(func=promote_ready)
     d = sub.add_parser('daily-close')
     d.set_defaults(func=daily_close)

@@ -2205,6 +2205,32 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
 
 ---
 
+### §85. A clean-looking subset is not promotable evidence when its audit or execution contract failed
+
+The pwg_ru coordinator previously built `clean_output` from every non-null card and mapped
+any such subset to `ready_partial`, regardless of whether `audit_window.py` had reported
+`stale_artifact`, a crashed/blocked gate, or another non-completed state. Nominal/no-PWG
+runs compounded this by omitting `--root`; the provenance checker treated that as a warning
+and skipped input/rootmap validation. A stale result could therefore contain plausible cards
+and cross the promotion boundary without a trustworthy completed audit.
+
+The reusable rule is **state-boundary evidence must fail closed**: partial promotion is
+allowed only from explicit completed partial states (`needs_requeue` or `transient_only`),
+the result must match its prepared execution manifest (root/mode/hashes), and selected keys
+must occur exactly once. Promotion must re-read the sealed audit/status artifacts and verify
+the clean-output hash instead of trusting mutable coordinator state alone. The same pass also
+made overwrite-style control artifacts atomic; a truncated JSON status/report must never be
+interpreted as an operational verdict.
+
+> **Source:** RussianTranslation audit-findings implementation
+> ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478))
+> ([`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
+> [`window_provenance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_provenance.py),
+> [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py)) ·
+> 15-07-2026, Codex/GPT-5.
+
+---
+
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**
 findings). Appended on a regular basis — add findings as they're discovered; this is the
 shared memory of "things we measured that aren't obvious from the code."_

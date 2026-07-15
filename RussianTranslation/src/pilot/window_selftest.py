@@ -411,6 +411,37 @@ def test_nominal_provenance_without_rootmap():
         check = stale_check('nominal_selftest', workflow_meta, list(reversed(keys)))
         if check['stale']:
             fail('nominal stale_check must not require a rootmap: %s' % check.get('errors'))
+        manifest = {'schema': 'pwg.headless_execution_manifest.v1',
+                    'meta': dict(workflow_meta)}
+        check = stale_check(None, workflow_meta, keys, execution_manifest=manifest)
+        if check['stale']:
+            fail('manifest-bound nominal provenance must pass without a rootmap: %s'
+                 % check.get('errors'))
+        duplicate = stale_check(
+            None, workflow_meta, keys + keys, execution_manifest=manifest)
+        if not duplicate['stale'] or duplicate.get('duplicate_keys') != {keys[0]: 2}:
+            fail('manifest provenance must reject duplicate result keys exactly')
+        missing = stale_check(None, workflow_meta, [], execution_manifest=manifest)
+        if not missing['stale'] or keys[0] not in (missing.get('missing_keys') or []):
+            fail('manifest provenance must reject missing result keys')
+        foreign = stale_check(
+            None, workflow_meta, keys + ['foreign'], execution_manifest=manifest)
+        if not foreign['stale'] or 'foreign' not in (foreign.get('unexpected_keys') or []):
+            fail('manifest provenance must reject foreign result keys')
+        wrong_root_meta = dict(workflow_meta, root='wrong')
+        wrong_root = stale_check(
+            None, wrong_root_meta, keys, execution_manifest=manifest)
+        if not wrong_root['stale'] or not any(
+                'execution manifest root' in err for err in wrong_root.get('errors') or []):
+            fail('manifest provenance must reject workflow root drift')
+        drifted_manifest = {'schema': manifest['schema'],
+                            'meta': json.loads(json.dumps(workflow_meta))}
+        drifted_manifest['meta']['input_hashes'][keys[0]]['raw_sha256'] = 'drift'
+        hash_drift = stale_check(
+            None, workflow_meta, keys, execution_manifest=drifted_manifest)
+        if not hash_drift['stale'] or not any(
+                'input hashes' in err for err in hash_drift.get('errors') or []):
+            fail('manifest provenance must reject input-hash drift')
     finally:
         for path, old in ((rp, old_raw), (pp, old_portrait)):
             if old is None:
@@ -2443,6 +2474,157 @@ def test_coordinator_state_dashboard_and_cap():
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old
+
+
+def test_coordinator_fail_closed_audit_states():
+    import coordinator
+    card = {'key': 'k', 'card': {'key1': 'k'}}
+    cases = {
+        'clean': ('ready', True),
+        'needs_requeue': ('ready_partial', True),
+        'transient_only': ('ready_partial', True),
+        'blocked': ('blocked', False),
+        'stale_artifact': ('stale_artifact', False),
+        'partial': ('partial', False),
+        'unknown': ('unknown', False),
+    }
+    for state_name, expected in cases.items():
+        got = coordinator.recorded_lease_state(state_name, [], [card])
+        if got != expected:
+            fail('coordinator audit state %s mapped to %r, expected %r' %
+                 (state_name, got, expected))
+    if coordinator.recorded_lease_state('clean', ['bad provenance'], [card]) != (
+            'blocked', False):
+        fail('a nominally clean audit with validation errors must fail closed')
+    if coordinator.recorded_lease_state('clean', [], []) != ('blocked', False):
+        fail('an empty clean audit must fail closed')
+    if coordinator.recorded_lease_state('needs_requeue', [], []) != (
+            'needs_requeue', False):
+        fail('an all-requeue audit must remain requeueable but non-promotable')
+
+
+def test_coordinator_promotion_revalidates_artifacts():
+    import coordinator
+    from types import SimpleNamespace
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            adir = os.path.join(tmp, 'artifacts', 'lease')
+            os.makedirs(adir)
+            wf = os.path.join(adir, 'wf.json')
+            clean = os.path.join(adir, 'clean.json')
+            status_path = os.path.join(adir, 'window_status.json')
+            report_path = os.path.join(adir, 'audit_window.report.json')
+            payload = {'results': [{'key': 'k', 'card': {'key1': 'k'}}]}
+            for path, value in ((wf, payload), (clean, payload),
+                                (status_path, {'state': 'clean', 'requeue_keys': []}),
+                                (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
+                                               'stale_check': {'ok': True}})):
+                with open(path, 'w', encoding='utf-8') as f:
+                    json.dump(value, f)
+            state = coordinator.default_state()
+            state['leases'] = [{
+                'id': 'lease', 'kind': 'nominal', 'target': 'n', 'state': 'ready',
+                'artifact_dir': adir, 'wf_output': wf, 'clean_output': clean,
+                'clean_output_sha256': 'tampered', 'clean_count': 1,
+                'audit_state': 'clean', 'audit_returncode': 0,
+                'status_path': status_path, 'audit_report': report_path,
+            }]
+            coordinator.save_state(state)
+            try:
+                coordinator.promote_ready(SimpleNamespace(
+                    gen_model_version='claude-sonnet-5'))
+                fail('promotion accepted a clean artifact whose hash was tampered')
+            except SystemExit as e:
+                if 'clean output hash' not in str(e):
+                    raise
+        finally:
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+
+
+def test_atomic_control_writes_preserve_previous_file():
+    import window_common
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, 'control.json')
+        window_common.atomic_write_json(path, {'version': 1})
+        original_replace = window_common.os.replace
+        window_common.os.replace = lambda *_args: (_ for _ in ()).throw(
+            OSError('injected replace failure'))
+        try:
+            try:
+                window_common.atomic_write_json(path, {'version': 2})
+                fail('atomic writer did not surface an injected replace failure')
+            except OSError:
+                pass
+        finally:
+            window_common.os.replace = original_replace
+        if json.load(open(path, encoding='utf-8')) != {'version': 1}:
+            fail('failed atomic replacement damaged the previous control artifact')
+        leftovers = [name for name in os.listdir(tmp) if name != 'control.json']
+        if leftovers:
+            fail('failed atomic replacement left temporary files: %r' % leftovers)
+        window_common.atomic_write_json(path, {'version': 2})
+        if json.load(open(path, encoding='utf-8')) != {'version': 2}:
+            fail('successful atomic replacement did not publish the new artifact')
+
+
+def test_no_pwg_residual_registry_and_audit_command():
+    import no_pwg_scale_plan as plan
+    from types import SimpleNamespace
+    with tempfile.TemporaryDirectory() as tmp:
+        registry = os.path.join(tmp, 'residuals.jsonl')
+        rows = [
+            {'schema': 'pwg.no_pwg_residual.v1', 'key': 'a~~h0_zz_pw',
+             'status': 'blocked', 'reason': 'repeat', 'source_window': 'w1',
+             'updated_at': '2026-07-15T00:00:00Z'},
+            {'schema': 'pwg.no_pwg_residual.v1', 'key': 'a~~h0_zz_pw',
+             'status': 'resolved', 'reason': 'fixed', 'source_window': 'w2',
+             'updated_at': '2026-07-15T01:00:00Z'},
+            {'schema': 'pwg.no_pwg_residual.v1', 'key': 'b~~h0_zz_pw',
+             'status': 'blocked', 'reason': 'repeat', 'source_window': 'w1',
+             'updated_at': '2026-07-15T00:00:00Z'},
+        ]
+        with open(registry, 'w', encoding='utf-8') as f:
+            for row in rows:
+                f.write(json.dumps(row) + '\n')
+        latest = plan.read_residuals(registry)
+        if latest['a~~h0_zz_pw']['status'] != 'resolved':
+            fail('latest residual registry row must win')
+        eligible, skipped = plan.filter_residual_subcards(
+            ['a~~h0_zz_pw', 'b~~h0_zz_pw'],
+            {'b~~h0_zz_pw': latest['b~~h0_zz_pw']})
+        if eligible != ['a~~h0_zz_pw'] or [r['key'] for r in skipped] != ['b~~h0_zz_pw']:
+            fail('blocked residual filtering or explicit retry eligibility is wrong')
+        command = plan.audit_command(
+            'src/pilot/output/wf_output.no_pwg_w11.json', 'no_pwg_w11',
+            'src/pilot/output/manifest.json')
+        required = ('wf_output.no_pwg_w11.json', '--root "no_pwg_w11"',
+                    '--write-requeue', '--window-tag "no_pwg_w11"',
+                    '--execution-manifest')
+        if any(piece not in command for piece in required):
+            fail('no-PWG audit command is incomplete: %s' % command)
+
+        original_run = plan.run_cmd
+        original_existing = plan.existing_subcards
+        original_store = plan.read_store_keys
+        plan.run_cmd = lambda *_args, **_kwargs: ''
+        plan.existing_subcards = lambda _head: ['b~~h0_zz_pw']
+        plan.read_store_keys = lambda: set()
+        try:
+            omitted = plan.prepare_window(
+                SimpleNamespace(prefix='fixture_w', blocked_residuals={
+                    'b~~h0_zz_pw': latest['b~~h0_zz_pw']}),
+                1, ['b'], [], False)
+        finally:
+            plan.run_cmd = original_run
+            plan.existing_subcards = original_existing
+            plan.read_store_keys = original_store
+        if not omitted.get('omitted') or omitted.get('subcards'):
+            fail('a no-PWG head with only blocked residuals must be omitted')
 
 
 def test_coordinator_expired_leases_release_cap():
@@ -4544,6 +4726,8 @@ def main():
         test_perf_preflight_partitions_mixed_monster_window,
         test_verb_worklist_excludes_missing_rootmaps,
         test_coordinator_state_dashboard_and_cap,
+        test_coordinator_fail_closed_audit_states,
+        test_coordinator_promotion_revalidates_artifacts,
         test_coordinator_expired_leases_release_cap,
         test_coordinator_lock_replaces_stale_dead_owner,
         test_coordinator_lock_creates_parent_dir,
@@ -4586,6 +4770,8 @@ def main():
         test_harness_scope_and_tools,
         test_stale_check_key_order_independent,
         test_nominal_provenance_without_rootmap,
+        test_atomic_control_writes_preserve_previous_file,
+        test_no_pwg_residual_registry_and_audit_command,
         test_no_pwg_card_source_profile_taxonomy,
         test_no_pwg_supplement_card_renders_without_pwg,
         test_h920_sense_count_top_level_ordinals,

@@ -378,6 +378,13 @@ not a substitute for it.
   transient nulls reports state `transient_only` — re-run just those at low concurrency.
 - The stale-provenance check is mandatory after any interrupted run. It prevents old
   `wf_output.json` files from being audited against newly regenerated rootmaps or inputs.
+  Coordinator/headless runs additionally pass `--execution-manifest`: root, nominal mode,
+  input hashes, and result keys must match that prepared contract, with every selected key
+  present exactly once. A stale, duplicated, foreign, or unbound result is never promotable.
+- `no_pwg_scale_plan.py` reads the tracked `no_pwg_residuals.jsonl` decision ledger and
+  skips keys whose latest status is `blocked`. Append a later `retry` or `resolved` row to
+  reopen one key, or use `--include-residuals` for a deliberate one-run override. Do not
+  delete the history or repeatedly spend Max quota on a documented deterministic failure.
 - DeepSeek corpus-lexicon API calls are append-only/resumable in `build_corpus_lexicon.py`.
   Use `DEEPSEEK_RETRIES`, `DEEPSEEK_CONNECT_TIMEOUT`, `DEEPSEEK_READ_TIMEOUT`, and
   `DEEPSEEK_BACKOFF_BASE` to tune retry behavior; failed API batches are logged locally and

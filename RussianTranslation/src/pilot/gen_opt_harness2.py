@@ -1542,7 +1542,7 @@ async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
 // Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
 // Two texts with equal token multisets restore to identical citation/markup content.
 const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
-const cardTokens = card => { let a = []; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) a = a.concat((s.german || '').match(/\\{T\\d+\\}/g) || []); return a.sort().join(' ') }
+const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { a = a.concat((rec.grammar || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) a = a.concat((s.german || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
 // positional-only matching silently misassigns every card after an omitted/reordered one.
@@ -1554,9 +1554,12 @@ const exactCard = (cards, km, expected, fallbackIndex) => {
 }
 function restoreCard(card, k) {
   const ph = PH[k] || []
-  for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
-    if (s.german !== undefined) s.german = restore(s.german, ph)
-    if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+  for (const rec of (card.records || [])) {
+    if (rec.grammar !== undefined) rec.grammar = restore(rec.grammar, ph)
+    for (const s of (rec.senses || [])) {
+      if (s.german !== undefined) s.german = restore(s.german, ph)
+      if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+    }
   }
   return card
 }

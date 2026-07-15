@@ -23,6 +23,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+PILOT = os.path.join(HERE, "src", "pilot")
+if PILOT not in sys.path:
+    sys.path.insert(0, PILOT)
+from window_common import atomic_write_json
 
 
 def main():
@@ -96,8 +100,7 @@ def main():
             sys.exit(f"REFUSED: {os.path.basename(out_path)} has {old_nn} non-null cards; new has "
                      f"only {new_nn}. Use --merge to fill nulls, or --force to overwrite.")
 
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False)
+    atomic_write_json(out_path, result, indent=None)
 
     cards = result.get("results", [])
     null_count = sum(1 for r in cards if not r.get("card"))

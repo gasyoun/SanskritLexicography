@@ -138,6 +138,8 @@ def restore_text(text, placeholders):
 
 def restore_card(card, field, placeholders):
     for record in card.get('records') or []:
+        if 'grammar' in record:
+            record['grammar'] = restore_text(record['grammar'], placeholders)
         for sense in record.get('senses') or []:
             if 'german' in sense:
                 sense['german'] = restore_text(sense['german'], placeholders)
