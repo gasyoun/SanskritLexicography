@@ -43,12 +43,13 @@ python build_entry_anatomy.py --image page.pdf --callouts spec.json --page 1
   continuation records into print paragraphs by `<e>` level; PWG typesets one
   paragraph per record). Without `--callouts` the build proposes a first-pass
   callout set from the entry structure, each label marked *"proposed — verify"* —
-  never presented as authoritative anatomy. The facsimile inset comes from
-  `--facsimile <img>`; for PWG it can also auto-pull from the Cologne scan
-  server (`servepdf.php`, soft fallback when the server throttles). For MW the
-  auto-pull is deliberately disabled: the `MWScan/2020` endpoint serves the
-  **1872 first edition**, whose page numbers silently collide with the 1899
-  `<pc>` loci of `mw.txt` — see
+  never presented as authoritative anatomy. The facsimile inset auto-pulls
+  from the Cologne scan server (`servepdf.php` with `dict=`, MW and PWG;
+  soft fallback when the server throttles) or comes from `--facsimile <img>`.
+  Caution when supplying MW pages by hand: the portal hosts BOTH editions
+  with colliding printed page numbers — 1899 per-page files are
+  `mw<page>-<headword>.pdf`, the 1872 first edition's are `pg_NNNN.pdf`;
+  check the running heads, see
   [FINDINGS §80](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
 - `--image <path>` embeds a picture (a PDF page is rasterized first, `--page`,
   `--dpi`) as the annotation surface; callout targets are `x,y,w,h` regions in

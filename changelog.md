@@ -14,6 +14,22 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.15] - 2026-07-15
+
+### Fixed
+- **H870 correction — FINDINGS §80 retracted-and-rewritten; MW facsimile auto-pull re-enabled (15-07-2026, Fable 5 `claude-fable-5`)**:
+  an `api=1` probe via an independent egress disproved v1.9.14's diagnosis — the
+  `MWScan/2020` `servepdf.php` endpoint correctly serves **1899** pages
+  (`page=277` → `MWScanpdf/mw0277-kArSNi.pdf`), with or without `dict=`. The wrong
+  1872 pages that prompted the diagnosis came from the portal's separate first-edition
+  browser (`pg_NNNN.pdf` files) — a manual-navigation hazard, not an endpoint bug.
+  [`EntryAnatomy/build_entry_anatomy.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/build_entry_anatomy.py)
+  MW auto-pull re-enabled (URLs now carry `dict=` like the endpoint's own nav links);
+  [FINDINGS §80](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  rewritten as the navigation-level cross-edition trap with an explicit retraction.
+  Verified downstream: kosha's `app/scan_resolver.py` links are correct as-is — no
+  change needed there.
+
 ## [1.9.14] - 2026-07-15
 
 ### Added
