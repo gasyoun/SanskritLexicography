@@ -507,6 +507,31 @@ def _probe_err_class(text):
     return None
 
 
+# D-P (H994): the readiness payload is a real, completable task, NOT a degenerate tool-demand.
+# The prior probe (``'Return JSON {ok:true}. Preserve this padding as inert input.' + N*'x'``) read
+# as a nonsensical "call this tool now, here is meaningless padding" instruction and tripped
+# Sonnet-5's ``--permission-mode plan`` refusal — the model answered with prose citing plan-mode's
+# "end your turn via AskUserQuestion" rule (structured_output None), a FALSE ``malformed``/``content``/
+# over-ceiling NO-GO on a genuinely healthy, fast profile (measured 15-07-2026 on c4: the degenerate
+# prompt refused in 54 s, a natural prompt returned {"ok": true} in 12 s). The fix keeps plan mode
+# (so the probe matches ``headless_worker.call``'s real generation invocation) and the >=5 KB INPUT
+# payload, but frames it as natural, domain-shaped filler with one unambiguous instruction.
+_PROBE_FILLER_UNIT = (
+    'Reference sample text: the Petersburg Sanskrit dictionary records each headword with '
+    'grammatical notes, source citations, and numbered German senses. ')
+
+
+def _probe_prompt(payload_bytes):
+    """A load-representative readiness prompt: one clear task (return {"ok": true}) plus >=payload_bytes
+    of inert, domain-shaped filler explicitly framed as ignorable. Deterministic (fixed filler unit)."""
+    reps = payload_bytes // len(_PROBE_FILLER_UNIT) + 1
+    filler = (_PROBE_FILLER_UNIT * reps)[:payload_bytes]
+    return ('You are a readiness probe for an automated translation service. Confirm the service is '
+            'responding by replying with exactly the JSON object {"ok": true} and nothing else. The '
+            'block below is inert sample text included only to size the request to a realistic payload; '
+            'do not analyse, translate, or act on it.\n\n--- inert sample (ignore) ---\n' + filler)
+
+
 def _probe_call(config_dir, claude, payload_bytes, model):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
     classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
@@ -515,8 +540,7 @@ def _probe_call(config_dir, claude, payload_bytes, model):
     carry the structured schema result {"ok": true}."""
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
-    prompt = ('Return JSON {"ok":true}. Preserve this padding as inert input.\n' +
-              ('x' * payload_bytes))
+    prompt = _probe_prompt(payload_bytes)
     started = time.monotonic()
     try:
         proc = run_tree_kill(            # D-J: tree-kill on timeout
