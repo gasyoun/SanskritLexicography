@@ -14,6 +14,27 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.12] - 2026-07-15
+
+### Added
+- **H870 — /entry-specimen visual engine (15-07-2026, Fable 5 `claude-fable-5`)**:
+  [`EntryAnatomy/build_entry_anatomy.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/build_entry_anatomy.py)
+  extended with the two /entry-specimen modes on top of the H780 callout/leader/`@page`
+  engine: `--markup <dict> <headword>` re-typesets ANY `<k1>` headword from csl-orig
+  (MW `<e>`-level paragraph grouping, PWG one-paragraph-per-record; auto-proposed
+  callout first pass marked "proposed — verify", or a `--callouts` JSON/TSV spec;
+  facsimile inset auto-pulled from the Cologne scan server with soft 429 fallback),
+  and `--image <path>` annotating a supplied picture or rasterized PDF page with
+  region-anchored (`{x,y,w,h}` fractions) callouts. One HTML source serves both
+  outputs: print-faithful single-sheet PDF (headless Chrome) and theme-aware
+  interactive web (hover/click callout↔target sync, leader reflow on resize,
+  light/dark via `prefers-color-scheme` + toggle). New committed exemplars:
+  [`mw-kAla-specimen`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/mw-kAla-specimen.html)
+  (39 records, 2 print paragraphs) and
+  [`duden-faser-image-specimen`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/duden-faser-image-specimen.html)
+  (the Duden *Faser* plate annotated in image mode, 13 regions located via the
+  PDF text layer).
+
 ## [1.9.11] - 2026-07-14
 
 ### Fixed

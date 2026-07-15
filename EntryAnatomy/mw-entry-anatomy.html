@@ -102,11 +102,13 @@ function layout() {
       c.style.top = y + 'px';
       cursor = y + c.offsetHeight + 10;
       const cy = y + c.offsetHeight / 2;
-      const x0 = side === 'left' ? 292 : bw - 292;
+      const gut = c.offsetWidth + 4;
+      const x0 = side === 'left' ? gut : bw - gut;
       const stub = side === 'left' ? x0 + 14 : x0 - 14;
       const x1 = side === 'left' ? c.tXl - 3 : c.tXr + 3;
       const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       p.setAttribute('d', `M ${x0} ${cy} L ${stub} ${cy} L ${x1} ${c.tY}`);
+      c._p = p;
       svg.appendChild(p);
     }
   }

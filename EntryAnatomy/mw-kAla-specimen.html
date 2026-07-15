@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to read an entry — Monier-Williams, A Sanskrit-English Dictionary (1899): kāla</title>
+<style>
+:root { --hl:#cdeaf6; --line:#333; --lab:#005a87; }
+* { box-sizing: border-box; }
+body { margin:0; background:#f4f1ea; font-family: Georgia, 'Times New Roman', serif;
+       color:#1a1a1a; }
+.sheet { position:relative; width:1720px; margin:0 auto; background:#fbf9f4;
+         padding:34px 30px 30px; }
+header { border-bottom:2.5px solid #005a87; padding-bottom:10px; margin-bottom:6px; }
+header h1 { font:700 25px/1.2 'Segoe UI', Arial, sans-serif; margin:0; color:#00344e; }
+header p.sub { font:13px/1.45 'Segoe UI', Arial, sans-serif; color:#444; margin:6px 0 0;
+               max-width:1100px; }
+.board { position:relative; display:grid;
+         grid-template-columns:300px 452px 452px 300px; column-gap:38px;
+         padding-top:18px; }
+.colwrap { position:relative; z-index:2; }
+.colcap { font:600 10.5px/1.3 'Segoe UI', Arial, sans-serif; color:#666;
+          letter-spacing:.06em; text-transform:uppercase; border-bottom:1px solid #bbb;
+          margin-bottom:7px; padding-bottom:3px; }
+.entry { font-size:13.6px; line-height:1.5; text-align:justify; margin:0 0 2px;
+         padding-left:14px; text-indent:-14px; hyphens:manual; }
+.sa { font-family:'Sanskrit Text','Adobe Devanagari','Nirmala UI',serif;
+      font-size:1.12em; }
+.hw { font-weight:bold; }
+.hw .sa, .hw-dev { font-weight:bold; }
+.siast { font-style:italic; }
+.hw .siast, .cpdhw .siast { font-weight:bold; font-style:normal; }
+.gloss { font-style:italic; }
+.bot { font-style:italic; }
+.hom { font-weight:bold; }
+.sense { font-weight:bold; }
+.lex, .ab { }
+.ls, .lscont { font-variant:small-caps; letter-spacing:.02em; }
+.is { letter-spacing:.13em; }
+.s1 { }
+.lang { font-style:italic; }
+.gk { font-family:'Palatino Linotype', Georgia, serif; }
+.more { color:#777; font-style:italic; font-size:12.5px; margin:6px 0 0; }
+.callout { position:absolute; width:288px; font:11.5px/1.38 'Segoe UI', Arial, sans-serif;
+           color:var(--lab); z-index:3; }
+.callout b { color:#00344e; }
+.callout.right { text-align:left; }
+.callout.left { text-align:right; }
+.hl { background:var(--hl); box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+svg.leaders { position:absolute; inset:0; width:100%; height:100%; z-index:1;
+              pointer-events:none; }
+svg.leaders path { stroke:var(--line); stroke-width:.8; fill:none; }
+.bottomrow { display:flex; gap:36px; margin-top:26px; align-items:flex-start; }
+.facsimile { width:520px; flex:none; }
+.facsimile img { width:100%; border:1px solid #b9b2a4; box-shadow:2px 3px 8px rgba(0,0,0,.18); }
+.facsimile .cap, .aboutbox { font:11.5px/1.5 'Segoe UI', Arial, sans-serif; color:#333; }
+.facsimile .cap { margin-top:6px; }
+.aboutbox { background:#e9f4fa; border-left:3px solid #005a87; padding:12px 16px;
+            max-width:640px; }
+.aboutbox h2 { font:700 13px/1.2 'Segoe UI', Arial, sans-serif; margin:0 0 6px;
+               color:#00344e; }
+footer { margin-top:22px; border-top:1px solid #bbb; padding-top:7px;
+         font:10.5px/1.5 'Segoe UI', Arial, sans-serif; color:#666; }
+a { color:#005a87; }
+@media print { body { background:#fbf9f4; } .sheet { margin:0; } }
+
+:root { 
+  --bg:#f4f1ea; --sheet:#fbf9f4; --ink:#1a1a1a; --accent:#005a87;
+  --accent2:#00344e; --hlv:#cdeaf6; --linev:#333; --labv:#005a87;
+  --muted:#555; --rule:#bbb; --box:#e9f4fa; --shadow:rgba(0,0,0,.18);
+ }
+:root[data-theme="dark"] { 
+  --bg:#14171c; --sheet:#1d222a; --ink:#e4e0d6; --accent:#71b8dc;
+  --accent2:#a8d4ec; --hlv:#29506a; --linev:#9aa4ae; --labv:#8ec7e4;
+  --muted:#98a0a8; --rule:#4a5058; --box:#232e38; --shadow:rgba(0,0,0,.5);
+ }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { 
+  --bg:#14171c; --sheet:#1d222a; --ink:#e4e0d6; --accent:#71b8dc;
+  --accent2:#a8d4ec; --hlv:#29506a; --linev:#9aa4ae; --labv:#8ec7e4;
+  --muted:#98a0a8; --rule:#4a5058; --box:#232e38; --shadow:rgba(0,0,0,.5);
+ }
+}
+body { background:var(--bg); color:var(--ink); }
+.sheet { background:var(--sheet); }
+header { border-bottom-color:var(--accent); }
+header h1 { color:var(--accent2); }
+header p.sub { color:var(--muted); }
+.colcap { color:var(--muted); border-bottom-color:var(--rule); }
+.callout { color:var(--labv); cursor:pointer; }
+.callout b { color:var(--accent2); }
+.callout .prop { color:var(--muted); }
+.hl { background:var(--hlv); }
+svg.leaders path { stroke:var(--linev); }
+svg.leaders path.on { stroke:var(--accent); stroke-width:1.9; }
+.hl.hl-active { outline:2px solid var(--accent); outline-offset:1px; }
+.facsimile img { border-color:var(--rule); box-shadow:2px 3px 8px var(--shadow); }
+.facsimile .cap, .aboutbox { color:var(--ink); }
+.aboutbox { background:var(--box); border-left-color:var(--accent); }
+.aboutbox h2 { color:var(--accent2); }
+footer { color:var(--muted); border-top-color:var(--rule); }
+a { color:var(--accent); }
+.board.spec-text { grid-template-columns:420px 720px 420px; column-gap:40px; }
+.spec-text .callout { width:400px; }
+.board.spec-image { grid-template-columns:280px 1020px 280px; column-gap:35px; }
+.spec-image .callout { width:268px; }
+.imgwrap { position:relative; }
+.imgwrap img { width:100%; display:block; border:1px solid var(--rule); }
+.region { position:absolute; }
+.region.hl { background:rgba(109,186,228,.26); outline:1.6px solid var(--labv);
+              outline-offset:1px; border-radius:2px; }
+.region.hl.hl-active { background:rgba(109,186,228,.45); }
+.themetoggle { position:fixed; top:14px; right:14px; z-index:9; width:38px;
+   height:38px; border-radius:50%; border:1px solid var(--rule);
+   background:var(--sheet); color:var(--ink); font-size:17px; cursor:pointer; }
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) { 
+  --bg:#f4f1ea; --sheet:#fbf9f4; --ink:#1a1a1a; --accent:#005a87;
+  --accent2:#00344e; --hlv:#cdeaf6; --linev:#333; --labv:#005a87;
+  --muted:#555; --rule:#bbb; --box:#e9f4fa; --shadow:rgba(0,0,0,.18);
+ }
+  .themetoggle { display:none; }
+}
+</style></head>
+<body>
+<button class="themetoggle" id="themebtn" title="light / dark / auto">◐</button>
+<div class="sheet">
+<header><h1>How to read an entry — Monier-Williams, A Sanskrit-English Dictionary (1899): kāla</h1><p class="sub">Entry specimen after the model of Duden’s <i>Deutsches Universalwörterbuch</i> spread: <i>kāla</i> re-typeset from the Cologne digital text (39 records, 2 print paragraphs), microstructural elements labelled. Interactive on screen (hover/click a label or a highlight; light/dark toggle); one single sheet in print.</p></header>
+<div class="board spec-text">
+<svg class="leaders"></svg>
+<div></div>
+<div class="colwrap"><div class="colcap">MW · 277,1</div><p class="entry"><span class="sa hw-dev">काल</span> <span class="hom">1.</span> <span class="hw"><span class="siast" data-slp="kAla">kāla</span></span> <span class="lex">mf(<span class="siast" data-slp="I">ī</span>, <span class="ls">Pāṇ. iv, 1, 42</span>)n.</span> (<span class="ab">fr.</span> √ <span class="hom">3.</span> <span class="siast" data-slp="kal">kal</span>?), black, of a dark colour, dark-blue, <span class="ls">MBh.</span>; <span class="ls">R.</span> &c.; <span class="lex">m.</span> a black or dark-blue colour, <span class="ls">L.</span>; the black part of the eye, <span class="ls">Suśr.</span>; the Indian cuckoo, <span class="ls">L.</span>; the poisonous serpent <span class="bot">Coluber Naga</span> (= <span class="siast" data-slp="kAlasarpa">kālasarpa</span>), <span class="ls">Vet.</span>; the plant <span class="bot">Cassia Sophora</span>, <span class="ls">L.</span>; a red kind of <span class="bot">Plumbago</span>, <span class="ls">L.</span>; the resin of the plant <span class="bot">Shorea robusta</span>, <span class="ls">L.</span>; the planet Saturn; <span class="ab">N.</span> of <span class="s1">Śiva</span>; of <span class="s1">Rudra</span>, <span class="ls">BhP. iii, 12, 12</span>; of a son of <span class="s1">Hrada</span>, <span class="ls">Hariv. 189</span>; of the prince <span class="s1">Kāla-yavana</span>, <span class="ls">BhP. iii, 3, 10</span>; of a brother of king <span class="s1">Prasena-jit</span>, <span class="ls">Buddh.</span>; of a future <span class="s1">Buddha</span>; of an author of <span class="s1">Mantra</span>s (= <span class="s1">Aśva-ghoṣa</span>), <span class="ls">Buddh.</span>; of a <span class="s1">Nāga-rāja</span>, <span class="ls">Buddh.</span>; of a <span class="s1">Rakṣas</span>, <span class="ls">R. vi, 69, 12</span>; of an enemy of <span class="s1">Śiva</span>, <span class="ls">L.</span>; of a mountain, <span class="ls">R. iv, 44, 21</span>; <span class="ls">Kāraṇḍ.</span>; of one of the nine treasures, <span class="ls">Jain.</span>; a mystical <span class="ab">N.</span> of the letter <span class="siast" data-slp="m">m</span>; <span class="lex">n.</span> a black kind of <span class="bot">Agallochum</span>, <span class="ls">L.</span>; a kind of perfume (<span class="siast" data-slp="kakkolaka">kakkolaka</span>), <span class="ls">L.</span>; iron, <span class="ls">L.</span></p><p class="entry"><span class="sa hw-dev">काल॑</span> <span class="hom">2.</span> <span class="hw"><span class="siast" data-slp="kAla/">kālá</span></span> <span class="siast" data-slp="as">as</span>, <span class="lex">m.</span> (√ <span class="hom">3.</span> <span class="siast" data-slp="kal">kal</span>, ‘to calculate or enumerate’), [<span class="ab">ifc.</span> <span class="lex">f(<span class="siast" data-slp="A">ā</span>). </span>, <span class="ls">RPrāt.</span>], a fixed or right point of time, a space of time, time (in general), <span class="ls">AV. xix, 53</span> & <span class="ls lscont" title="AV. xix,54">54</span>; <span class="ls">ŚBr.</span> &c.; the proper time or season for (<span class="ab">gen.</span> <span class="ab">dat.</span> <span class="ab">loc.</span>, in <span class="ab">comp.</span>, <span class="ab">inf.</span>, or <span class="ab">Pot.</span> with <span class="siast" data-slp="yad">yad</span>, <span class="ab">e.g.</span> <span class="siast" data-slp="kAlaH prasTAnasya">kālaḥ prasthānasya</span> or <span class="siast" data-slp="˚nAya">˚nāya</span> or <span class="siast" data-slp="˚ne">˚ne</span>, time for departure; <span class="siast" data-slp="kriyA-kAla">kriyā-kāla</span>, time for action, <span class="ls">Suśr.</span>; <span class="siast" data-slp="nAyaM kAlo vilambitum">nāyaṃ kālo vilambitum</span>, this is not the time to delay, <span class="ls">Nal.</span>; <span class="siast" data-slp="kAlo yad BuYjIta BavAn">kālo yad bhuñjīta bhavān</span>, it is time for you to eat, <span class="ls">Pāṇ. iii, 3, 168</span>, <span class="ls">Kāś.</span>), <span class="ls">ŚBr.</span>; <span class="ls">MBh.</span> &c.; occasion, circumstance, <span class="ls">MBh. xii, 2950</span>; <span class="ls">Mṛcch.</span>; season, <span class="ls">R.</span> &c.; meal-time (twice a day, hence <span class="siast" data-slp="uBO kAlO">ubhau kālau</span>, ‘in the morning and in the evening’, <span class="ls">MBh. i, 4623</span>; <span class="siast" data-slp="zazWe kAle">ṣaṣṭhe kāle</span>, ‘in the evening of the third day’, <span class="ls">MBh.</span>; <span class="siast" data-slp="zazWAnna-kAla">ṣaṣṭhānna-kāla</span>, ‘one who eats only at the sixth meal-time, <span class="ab">i.e.</span> who passes five meals without eating and has no meal till the evening of the third day’, <span class="ls">Mn. xi, 200</span>; or without <span class="siast" data-slp="anna">anna</span>, <span class="ab">e.g.</span> <span class="siast" data-slp="caturTa-kAlam">caturtha-kālam</span>, ‘at the fourth meal-time <span class="ab">i.e.</span> at the evening of the second day’, <span class="ls">Mn. xi, 109</span>); hour (hence <span class="siast" data-slp="zazWe kAle &#x27;hnaH">ṣaṣṭhe kāle 'hnaḥ</span>, ‘at the sixth hour of the day, <span class="ab">i.e.</span> at noon’, <span class="ls">Vikr.</span>); a period of time, time of the world (= <span class="siast" data-slp="yuga">yuga</span>), <span class="ls">Rājat.</span>; measure of time, prosody, <span class="ls">Prāt.</span>; <span class="ls">Pāṇ.</span>; a section, part, <span class="ls">VPrāt.</span>; the end, <span class="ls">ChUp.</span>; death by age, <span class="ls">Suśr.</span>; time (as leading to events, the causes of which are imperceptible to the mind of man), destiny, fate, <span class="ls">MBh.</span>; <span class="ls">R.</span> &c.; time (as destroying all things), death, time of death (often personified and represented with the attributes of <span class="s1">Yama</span>, regent of the dead, or even identified with him: hence <span class="siast" data-slp="kAlam-√ i">kālam-√ i</span> or <span class="siast" data-slp="kAlaM-√ kf">kālaṃ-√ kṛ</span>, ‘to die’, <span class="ls">MBh.</span> &c.; <span class="siast" data-slp="kAla">kāla</span> in this sense is frequently connected with <span class="siast" data-slp="antaka">antaka</span>, <span class="siast" data-slp="mftyu">mṛtyu</span>, <span class="ab">e.g.</span> <span class="siast" data-slp="aBy-aDAvata prajAH kAla ivAntakaH">abhy-adhāvata prajāḥ kāla ivāntakaḥ</span>, ‘he attacked the people like Time the destroyer’, <span class="ls">R. iii, 7, 9</span>; <span class="ab">cf.</span> <span class="siast" data-slp="kAlAntaka">kālāntaka</span>; <span class="siast" data-slp="kAla">kāla</span> personified is also a <span class="s1">Devarṣi</span> in <span class="s1">Indra</span>'s court, and a son of <span class="s1">Dhruva</span>, <span class="ls">MBh. i, 2585</span>; <span class="ls">Hariv.</span>; <span class="ls">VP.</span>); [<span class="ab">cf.</span> <span class="gk">κήρ</span>; <span class="lang">Lat.</span> <span class="gloss">calen-doe</span>: <span class="lang">Hib.</span> <span class="gloss">ceal</span>, ‘death and everything terrible’.]</p></div>
+<div></div>
+<div class="callout left" data-target=".colwrap .hom" data-nth="0"><b>Homograph number</b> — identically spelt but etymologically distinct words are numbered in sequence <i class="prop">(proposed — verify)</i></div><div class="callout right" data-target=".colwrap .hw-dev" data-nth="0"><b>Main headword in Devanāgarī</b> — the main-entry script of the print (typographic level 1 in the digital record) <i class="prop">(proposed — verify)</i></div><div class="callout left" data-target=".colwrap .hw .siast" data-nth="0"><b>Transliterated headword in bold</b> — an acute accent marks the Vedic udātta where the print carries one <i class="prop">(proposed — verify)</i></div><div class="callout right" data-target=".colwrap .lex" data-nth="0"><b>Grammatical label</b> — gender / part of speech as printed <i class="prop">(proposed — verify)</i></div><div class="callout left" data-target=".colwrap .ls" data-nth="0"><b>Citation</b> — literature source with locus; run-on citations abbreviate the repeated source (hover shows the expansion) <i class="prop">(proposed — verify)</i></div><div class="callout right" data-target=".colwrap .ab" data-nth="0"><b>Abbreviation of the print</b> (cl., N., comp., ifc. …) — hover shows the expansion where the digital record encodes one <i class="prop">(proposed — verify)</i></div><div class="callout left" data-target=".colwrap .gloss" data-nth="0"><b>Italics of the print</b> — definition / gloss text <i class="prop">(proposed — verify)</i></div><div class="callout right" data-target=".colwrap .bot" data-nth="0"><b>Botanical / zoological identification</b> — natural-history names resolved to Linnaean binomials <i class="prop">(proposed — verify)</i></div><div class="callout left" data-target=".colwrap .lang" data-nth="0"><b>Language label</b> — non-Sanskrit forms flagged by language <i class="prop">(proposed — verify)</i></div><div class="callout right" data-target=".colwrap .gk" data-nth="0"><b>Greek cognate</b> — comparative material in the etymological bracket <i class="prop">(proposed — verify)</i></div>
+</div>
+<div class="bottomrow"><div class="aboutbox"><h2>How to use this page</h2>The column re-typesets every record whose key1 equals the requested headword from csl-orig v02/mw; callout labels are wired by leader lines to highlighted elements. This callout set is a <b>first pass proposed by the build tool — verify against the print before treating it as authoritative anatomy</b>. Sigla and citations are reproduced verbatim from the digital record.</div></div>
+<footer>Typeset from csl-orig v02/mw (k1 = kAla, 39 records, print locus 277,1) &middot; built by build_entry_anatomy.py (/entry-specimen, H870) &middot; Fable 5 (claude-fable-5), 15-07-2026 &middot; callout set proposed by the build — verify before publishing &middot; Cologne Sanskrit-Lexicon: <a href="https://www.sanskrit-lexicon.uni-koeln.de/">sanskrit-lexicon.uni-koeln.de</a></footer>
+</div>
+<script>
+function layout() {
+  const board = document.querySelector('.board');
+  const svg = document.querySelector('svg.leaders');
+  svg.innerHTML = '';
+  const brect = board.getBoundingClientRect();
+  const sides = {left: [], right: []};
+  document.querySelectorAll('.callout').forEach(c => {
+    const sel = c.dataset.target, nth = +(c.dataset.nth || 0);
+    const els = document.querySelectorAll(sel);
+    const el = els[Math.min(nth, els.length - 1)];
+    if (!el) { c.style.display = 'none'; return; }
+    el.classList.add('hl');
+    const r = el.getBoundingClientRect();
+    c.tY = r.top - brect.top + r.height / 2;
+    c.tXl = r.left - brect.left; c.tXr = r.right - brect.left;
+    sides[c.classList.contains('left') ? 'left' : 'right'].push(c);
+  });
+  const bw = board.clientWidth;
+  for (const side of ['left', 'right']) {
+    const list = sides[side].sort((a, b) => a.tY - b.tY);
+    let cursor = 0;
+    for (const c of list) {
+      c.style.top = '0px'; c.style[side] = '0px';
+      let y = Math.max(c.tY - c.offsetHeight / 2, cursor);
+      c.style.top = y + 'px';
+      cursor = y + c.offsetHeight + 10;
+      const cy = y + c.offsetHeight / 2;
+      const gut = c.offsetWidth + 4;
+      const x0 = side === 'left' ? gut : bw - gut;
+      const stub = side === 'left' ? x0 + 14 : x0 - 14;
+      const x1 = side === 'left' ? c.tXl - 3 : c.tXr + 3;
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', `M ${x0} ${cy} L ${stub} ${cy} L ${x1} ${c.tY}`);
+      c._p = p;
+      svg.appendChild(p);
+    }
+  }
+  const sheet = document.querySelector('.sheet');
+  const need = Math.max(...[...document.querySelectorAll('.callout')]
+      .map(c => c.offsetTop + c.offsetHeight + 40), board.offsetHeight + 30);
+  board.style.minHeight = need + 'px';
+  const h = Math.max(sheet.offsetHeight,
+                     document.documentElement.scrollHeight) + 10;
+  const st = document.getElementById('pagesize') ||
+      Object.assign(document.createElement('style'), {id: 'pagesize'});
+  st.textContent = `@page { size: ${sheet.offsetWidth}px ${h}px; margin: 0; }`;
+  document.head.appendChild(st);
+}
+function run() {
+  document.querySelectorAll('.hl').forEach(e => e.classList.remove('hl'));
+  layout();
+  setTimeout(layout, 350);  // second pass once metrics are stable
+}
+if (document.fonts && document.fonts.ready)
+  document.fonts.ready.then(() => setTimeout(run, 60));
+else window.addEventListener('load', () => setTimeout(run, 120));
+
+function targetEl(c) {
+  const els = document.querySelectorAll(c.dataset.target);
+  return els[Math.min(+(c.dataset.nth || 0), els.length - 1)];
+}
+function wire() {
+  document.querySelectorAll('.callout').forEach(c => {
+    if (c._wired) return;
+    const el = targetEl(c);
+    if (!el) return;
+    c._wired = true;
+    const on = () => { c.classList.add('active'); el.classList.add('hl-active');
+                       if (c._p) c._p.classList.add('on'); };
+    const off = () => { if (c._pin) return;
+                        c.classList.remove('active');
+                        el.classList.remove('hl-active');
+                        if (c._p) c._p.classList.remove('on'); };
+    for (const n of [c, el]) {
+      n.addEventListener('mouseenter', on);
+      n.addEventListener('mouseleave', off);
+      n.addEventListener('click', ev => {
+        c._pin = !c._pin; c._pin ? on() : off(); ev.stopPropagation(); });
+    }
+  });
+}
+window.addEventListener('load', () => setTimeout(wire, 700));
+let _rsz = null;
+window.addEventListener('resize', () => {
+  clearTimeout(_rsz); _rsz = setTimeout(run, 180); });
+const _btn = document.getElementById('themebtn');
+if (_btn) _btn.addEventListener('click', () => {
+  const r = document.documentElement;
+  const cur = r.dataset.theme || 'auto';
+  const next = cur === 'auto' ? 'dark' : cur === 'dark' ? 'light' : 'auto';
+  if (next === 'auto') delete r.dataset.theme; else r.dataset.theme = next;
+  _btn.textContent = {auto: '\u25d0', dark: '\u25cf', light: '\u25cb'}[next];
+});
+</script>
+</body></html>
