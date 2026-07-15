@@ -1,6 +1,6 @@
 # EntryAnatomy — Duden-style "how to read an entry" specimen pages
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 15-07-2026_
 
 Annotated specimen pages for the Sanskrit dictionaries, after the model of the
 Duden *Deutsches Universalwörterbuch* entry-anatomy spread
@@ -21,6 +21,57 @@ Both dictionary pages use the **same lemma family** (the *heman*
 'impulse/winter/gold' homographs, plus a verbal root — √*cumb* for PWG, the
 three *gup* roots for MW), so the two lexicographic traditions can be compared
 on identical material.
+
+## The /entry-specimen modes (H870)
+
+The same engine now builds a specimen for **any headword of any CDSL
+dictionary** and can annotate **any supplied picture** — the two modes of the
+[/entry-specimen](https://github.com/gasyoun/claude-config/blob/main/commands/entry-specimen.md)
+skill. Every specimen is ONE self-contained HTML document that serves both
+outputs: a theme-aware interactive web page on screen (hover/click a callout
+highlights its target and vice versa, pin by click, leader lines reflow on
+resize, light/dark via `prefers-color-scheme` plus a toggle) and a
+print-faithful single sheet in print (the H780 `@page` auto-size path).
+
+```
+python build_entry_anatomy.py --markup mw kAla
+python build_entry_anatomy.py --image page.pdf --callouts spec.json --page 1
+```
+
+- `--markup <dict> <headword>` re-typesets every record whose `<k1>` equals
+  the SLP1 headword from `csl-orig/v02/<dict>/<dict>.txt` (MW groups
+  continuation records into print paragraphs by `<e>` level; PWG typesets one
+  paragraph per record). Without `--callouts` the build proposes a first-pass
+  callout set from the entry structure, each label marked *"proposed — verify"* —
+  never presented as authoritative anatomy. A facsimile inset is auto-pulled
+  from the Cologne scan server (`servepdf.php`; soft fallback when the server
+  throttles) or supplied via `--facsimile <img>`.
+- `--image <path>` embeds a picture (a PDF page is rasterized first, `--page`,
+  `--dpi`) as the annotation surface; callout targets are `x,y,w,h` regions in
+  fractions of the image.
+- `--callouts <json|tsv>` — rows of `side · target · note`; targets are CSS
+  selectors, literal anchor text (markup mode), or fraction regions (image
+  mode). `--pdf` / `--web` select outputs (default: both). `--out`, `--stem`,
+  `--title`, `--caption` control naming.
+
+Committed exemplars:
+[mw-kAla-specimen.html](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/mw-kAla-specimen.html)
+([PDF](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/mw-kAla-specimen.pdf))
+— the generalized markup mode on MW *kāla*, 39 records in 2 print paragraphs —
+and
+[duden-faser-image-specimen.html](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/duden-faser-image-specimen.html)
+([PDF](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/duden-faser-image-specimen.pdf))
+— the Duden *Faser* reference plate itself annotated in image mode, 13 regions
+located from the PDF text layer
+([spec](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/assets/duden_faser_plate_callouts.json)),
+each English label mirroring the plate's own printed German label so the
+annotation is verifiable against the original.
+
+A specimen embeds a facsimile scan — run
+[/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md)
+before any specimen goes onto a public page (Cologne scans are
+display-permitted; the Duden plate is © Dudenverlag and stays repo-internal
+as a methodological reference).
 
 ## Rebuilding
 
