@@ -1156,9 +1156,14 @@ def load_callout_spec(path):
     return rows
 
 
+# mw is deliberately ABSENT: scans/MWScan/2020/.../servepdf.php?page=N serves
+# the 1872 FIRST-edition scan, whose pagination collides with the 1899 <pc>
+# loci of mw.txt (verified 15-07-2026: page=277 returned khel/gangambhas =
+# mw72 pc 0277, not 1899 kAla). Until the 1899 per-page endpoint is confirmed
+# (its files are named mw<page>-<headword>.pdf, unguessable without a
+# listing), supply --facsimile for MW; a wrong-edition inset fetched silently
+# would be worse than none.
 SCAN_URL = {
-    "mw": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/"
-           "web/webtc/servepdf.php?page={page}"),
     "pwg": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/"
             "web/webtc/servepdf.php?page={page}"),
 }
@@ -1254,7 +1259,8 @@ def build_markup_specimen(dic, hw, callout_rows=None, facs_img=None,
             facs_cap = (f"<b>The page in the print</b>: {label}, "
                         f"{pc} — from the Cologne scan server.")
     else:
-        facs_cap = f"<b>The entry in the print</b>: {label}."
+        facs_cap = (f"<b>The entry in the print</b>: {label}, {pc} — "
+                    "supplied scan (Cologne Sanskrit-Lexicon scan archive).")
     facs_uri = png
 
     hw_disp = slp_iast(hw)

@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.14] - 2026-07-15
+
+### Added
+- **H870 follow-up — mw-kAla specimen gets its 1899 print inset; MW scan auto-pull disabled over a cross-edition trap (15-07-2026, Fable 5 `claude-fable-5`)**:
+  [`mw-kAla-specimen`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/mw-kAla-specimen.html)
+  rebuilt with the genuine 1899 p. 277 facsimile (owner-supplied scan, committed as
+  [`assets/mw_kala_p277.jpg`](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/assets/mw_kala_p277.jpg);
+  running heads *kārshṇi/kālikā-purāṇa* verified). The v1.9.12 scan-server auto-pull for
+  MW turned out to point at the **1872 first-edition** scan whose page numbers silently
+  collide with 1899 `<pc>` loci — `--markup` MW builds now require `--facsimile`, and the
+  trap is documented as [FINDINGS §80](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
 ## [1.9.13] - 2026-07-15
 
 ### Added
