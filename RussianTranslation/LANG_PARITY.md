@@ -1026,7 +1026,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H920 (14-07-2026, Opus 4.8 claude-opus-4-8[1m]): closes the no_pwg/supplement SAN-LOSS gap the H911 gate surfaced (darv_i~~h0_zz_pw dropped source sense 1 'Löffel', output 2/3, and the harness accept() <ls>/{# token match passed it clean because the dropped gloss-only sense carried neither a citation nor a masked Sanskrit span). Every part is language-neutral: sense_count.py counts SENSE OBJECTS and source 〉/N) markers (never gloss language); the portrait source_senses stamp + the sense-completeness prompt rule live in _pilot_gen_merged no_pwg generation, which is pre-lang (the source is German for RU and EN alike); the audit guard is the SAME sense_count.scan_sense_shortfall/sense_shortfall wired into BOTH audit_window.py (RU 'sense_loss' gate -> requeue defect) and audit_window_en.py (EN 'MISSING-SENSE' HARD flag) — one shared primitive, no RU/EN reimplementation. Conservative: a portrait without source_senses (pre-H920) or a null card is skipped, never a false positive. Pinned by test_h920_sense_count_top_level_ordinals, test_h920_sense_shortfall_gate_flags_dropped_sense, test_h920_no_pwg_portrait_stamps_source_senses, test_h920_en_missing_sense_hard_flag. H960 (15-07-2026) hardened count_source_senses to count only line-opening ordinals (skipping mid-prose cross-reference ordinals) — still SHARED / language-neutral, an FP reduction, not a behavior split; the harness accept()-side consumption of this count lands in accept_sanloss_soft_gate_h960.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/sense_count.py": "f884da16caf0ad172e37b4b97ca449ebbb7018b6761b3bf35a0d98fff11f9de7",
+      "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/_pilot_gen_merged.py": "1d2ab8504823b0e8bc07c391ffacada034d436da2fd8936484250e58c0672933",
       "src/pilot/audit_window.py": "a71003a7a266506f3a012257ab5717b572b3397d172309801509d9451e554d86",
       "src/pilot/audit_window_en.py": "81250501c83fae903783384f773641a9c9132d83e35f41bc915722002d3a2e48",
@@ -1051,7 +1051,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3fb21ae1456e48d655e5d40a9882d8da0abbd6a86cde75343eb6d2ff22783759",
-      "src/pilot/sense_count.py": "f884da16caf0ad172e37b4b97ca449ebbb7018b6761b3bf35a0d98fff11f9de7",
+      "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/pilot/window_selftest.py": "ea719e30f7a114f3e5f59d44a08e7c436bcd3b7ef6ae1555a903c7598c32d4b9",
       "src/pilot/accept_sensecount_test.js": "dd5061a719bace4f4927b71dfe931f4ee447be1c50f9476ef22c1ad3614015fe"
     }

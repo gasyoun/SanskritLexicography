@@ -48,20 +48,38 @@ import re
 # mis-flags a shortfall. Under-counting (a genuinely-numbered sense whose marker is not
 # line-opening) is the safe direction: it lowers the expected count, never a false shortfall.
 _ORD = re.compile(r'(\d+)\s*[\)〉]')
-_OPEN_PREFIX = re.compile(r'^[\s—–\-|¦]*(?:(?:\{T\d+\}|<[^>]*>|\{#[^#]*#\}¦?)[\s—–\-|¦]*)*$')
+# One unit of "opening" material a line-opening sense ordinal may follow: a {Tn} mask token, an
+# <...> structural tag, a {#..#} headword ref (optionally followed by the ¦ pipe), or a run of
+# separator chars (whitespace, dashes —/–/-, pipe |, broken bar ¦). Anchored alternatives with NO
+# nested quantifier, matched left-to-right by _is_open_prefix — a linear scan, so a prefix like
+# `{#a#}¦{#b#}¦…` cannot trigger the catastrophic backtracking a `(...[sep]*)*$` regex would (py/redos).
+_OPEN_TOKEN = re.compile(r'\{T\d+\}|<[^>]*>|\{#[^#]*#\}¦?|[\s—–\-|¦]+')
+
+
+def _is_open_prefix(prefix):
+    """True iff `prefix` is composed ENTIRELY of opening material (see _OPEN_TOKEN) — i.e. an ordinal
+    at its end opens a line rather than sitting mid-prose as a cross-reference. Linear-time: greedily
+    consume one leading opening token at a time; clean iff the whole prefix is consumed."""
+    i, n = 0, len(prefix)
+    while i < n:
+        m = _OPEN_TOKEN.match(prefix, i)
+        if m is None or m.end() == i:
+            return False
+        i = m.end()
+    return True
 
 
 def source_sense_ordinals(text):
     """The set of distinct TOP-LEVEL arabic sense ordinals a raw/masked source blob
-    declares. An ordinal is counted only when it OPENS its line (preceded solely by the
-    opening material in _OPEN_PREFIX); a mid-line ordinal is a cross-reference into another
+    declares. An ordinal is counted only when it OPENS its line (preceded solely by opening
+    material — see _is_open_prefix); a mid-line ordinal is a cross-reference into another
     entry's numbering and is skipped. Empty when the source carries no line-opening
     numbering (a single unnumbered supplement sense) — the caller treats an empty/singleton
     set as "nothing to compare"."""
     ords = set()
     for line in (text or '').split('\n'):
         m = _ORD.search(line)
-        if m and _OPEN_PREFIX.match(line[:m.start()]):
+        if m and _is_open_prefix(line[:m.start()]):
             ords.add(int(m.group(1)))
     return ords
 
