@@ -2238,7 +2238,8 @@ residual-only chunk must not consume the requested preparation quota. Scope acce
 prepared lease IDs and count successful preparations independently of deterministic indices.
 
 > **Source:** RussianTranslation audit-findings implementation
-> ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478))
+> ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
+> [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482))
 > ([`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
 > [`window_provenance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_provenance.py),
 > [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py),
