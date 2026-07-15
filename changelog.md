@@ -14,6 +14,25 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.17] - 2026-07-15
+
+### Fixed
+- **D-P (H994) — PWG-RU acceptance-probe prompt fragility (15-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, Ultracode)**:
+  `max_account_orchestrator._probe_call`'s degenerate readiness prompt (`"Return JSON {ok:true}. Preserve
+  this padding as inert input." + N×'x'`) tripped Sonnet-5's `--permission-mode plan` refusal (prose citing
+  the "end your turn via AskUserQuestion" rule, `structured_output=None`), producing a **false
+  `content`/`timeout`/`malformed` NO-GO on a genuinely responding profile**. Replaced with a new
+  `_probe_prompt()` helper: one unambiguous "reply with exactly `{"ok": true}` and nothing else" instruction
+  + ≥5 KB of inert, domain-shaped filler, under the **same `--permission-mode plan` the real generation path
+  (`headless_worker.call`) uses**. Added a `D-P readiness prompt` selftest (captures the real argv + stdin;
+  asserts the completable task, ≥5 KB payload, plan mode retained, degenerate `x`-padding gone). Live-verified
+  on c4: both probe phases now return `success` (no refusal, 1 483 B output).
+  **Correction it surfaced:** the old `'x'`-padding BPE-compresses to few tokens, giving *artificially fast*
+  latency (~8 s) — the H994 v1.9.16 "c4 sub-30 s, first sub-ceiling reading" was that artifact. Under the
+  fixed load-representative payload c4 measures **~30–53 s (latency NO-GO)**, consistent with H818/H895's
+  ~40 s NO-GOs; the latency rung remains a genuine blocker (H818/H909 foreign-route), independent of the
+  c5/c6 logins. No store mutation.
+
 ## [1.9.16] - 2026-07-15
 
 ### Added
