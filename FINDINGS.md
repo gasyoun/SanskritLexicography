@@ -2228,11 +2228,22 @@ the clean-output hash instead of trusting mutable coordinator state alone. The s
 made overwrite-style control artifacts atomic; a truncated JSON status/report must never be
 interpreted as an operational verdict.
 
+The review after PR #478 exposed the same rule at two later boundaries. First, narrowing a
+two-key run to a one-key requeue creates a **new provenance contract**: reusing the initial
+manifest makes the valid retry fail exact coverage, while dropping the manifest would reopen
+the bypass. Keep the retry on the same lease, but mint and retain an attempt-specific manifest
+and read subsequent retry files from the latest audit directory. Second, a staged plan is not
+an execution set: future unprepared rows must not enter acceptance denominators, and an omitted
+residual-only chunk must not consume the requested preparation quota. Scope acceptance to
+prepared lease IDs and count successful preparations independently of deterministic indices.
+
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478))
 > ([`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
 > [`window_provenance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_provenance.py),
-> [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py)) ·
+> [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py),
+> [`max_account_orchestrator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator.py),
+> [`no_pwg_scale_plan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_scale_plan.py)) ·
 > 15-07-2026, Codex/GPT-5.
 
 ---
