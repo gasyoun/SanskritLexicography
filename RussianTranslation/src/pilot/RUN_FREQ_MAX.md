@@ -381,13 +381,23 @@ not a substitute for it.
   Coordinator/headless runs additionally pass `--execution-manifest`: root, nominal mode,
   input hashes, and result keys must match that prepared contract, with every selected key
   present exactly once. A stale, duplicated, foreign, or unbound result is never promotable.
-- A coordinator retry is a new execution attempt on the same lease, not permission to reuse
-  the initial manifest. `prepare-requeue` accepts only `promoted_partial`, `needs_requeue`, or
-  `transient_only`; promote a `ready_partial` clean subset first. Each retry is preserved under
-  `artifacts/<lease>/requeue/rqNN-{transient|defect}/` with its own harness and execution
-  manifest. `record-output` writes and audits in that current attempt directory, and a later
-  retry reads the requeue list emitted by that latest audit. Do not copy a retry output back
-  over the lease's initial artifacts.
+- A coordinator retry is a new execution attempt on the same lease. The lease seals the
+  initial execution-manifest path and SHA-256 as its immutable key universe; every pending
+  transient/defect key is bound to the path and SHA-256 of the audit report that classified
+  it. `prepare-requeue` reads only this validated `pending_requeue` backlog, never a mutable
+  split-key file. Changed reports, foreign/duplicate keys, overlapping classifications, or
+  ambiguous legacy provenance fail closed.
+- `prepare-requeue` accepts only `promoted_partial`, `needs_requeue`, or `transient_only`;
+  promote a `ready_partial` clean subset first. Selecting one lane snapshots the other under
+  `current_attempt.remaining_pending`, so a transient retry cannot discard pending defects
+  (or vice versa). Clean rows with remaining work become `ready_partial`, promotion becomes
+  `promoted_partial`, and the lease reaches `promoted` only after the backlog is empty.
+- Each retry is preserved under `artifacts/<lease>/requeue/rqNN-{transient|defect}/` with its
+  exact key file, conservatively collected defect-fragment hashes, harness, and execution
+  manifest. Allocation advances past the highest state/history attempt and any existing
+  `rqNN-*` directory. Unreferenced directories from hard interruptions are recorded as
+  orphans and left untouched; only a newly created directory from a caught preparation
+  failure is removed. Never copy retry output over prior artifacts or adopt/delete an orphan.
 - Standalone `requeue_from_audit.py` remains compatible with the commands below. For a manually
   managed provenance-bound retry, add `--manifest-out <path>` and pass that exact manifest to
   `audit_window.py --execution-manifest <path>` when recording the result.

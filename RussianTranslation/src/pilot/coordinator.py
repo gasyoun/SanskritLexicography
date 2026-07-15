@@ -6,10 +6,12 @@ Max/Workflow surface; operators still run the generated harness from the coding
 session and feed the full result back through record-output.
 """
 import argparse
+from collections import Counter
 import datetime
 import glob
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -442,6 +444,8 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
                         'keymap': dict(zip(run_keys, keys))},
             'harness': os.path.abspath(harness),
             'execution_manifest': os.path.abspath(manifest),
+            'origin_execution_manifest': os.path.abspath(manifest),
+            'origin_execution_manifest_sha256': sha256_file(manifest),
             'preflight_path': os.path.abspath(preflight_path),
         }
         state['leases'].append(lease)
@@ -524,6 +528,8 @@ def prepare(args):
         lease['state'] = 'prepared'
         lease['harness'] = harness
         lease['execution_manifest'] = manifest
+        lease['origin_execution_manifest'] = os.path.abspath(manifest)
+        lease['origin_execution_manifest_sha256'] = sha256_file(manifest)
         lease['preflight_path'] = preflight_path
         save_state(state)
         registry_event(lease, 'prepared', {'harness': harness, 'manifest': manifest,
@@ -587,6 +593,188 @@ def manifest_history_entry(path, attempt, kind, artifact_path, prepared_at=None)
     }
 
 
+def ensure_origin_manifest(lease):
+    path = lease.get('origin_execution_manifest')
+    recorded_hash = lease.get('origin_execution_manifest_sha256')
+    if not path:
+        history = [row for row in (lease.get('execution_manifest_history') or [])
+                   if int(row.get('attempt') or 0) == 0 and row.get('path')]
+        if history:
+            path = history[0]['path']
+            recorded_hash = history[0].get('sha256')
+        elif int(lease.get('requeue_attempt') or 0) == 0:
+            path = lease.get('execution_manifest')
+        else:
+            raise SystemExit(
+                '%s: attempted legacy lease has no verifiable origin manifest' % lease['id'])
+    manifest = read_execution_manifest(path)
+    actual_hash = sha256_file(path)
+    if recorded_hash and actual_hash != recorded_hash:
+        raise SystemExit('%s: origin execution manifest hash changed' % lease['id'])
+    lease['origin_execution_manifest'] = os.path.abspath(path)
+    lease['origin_execution_manifest_sha256'] = actual_hash
+    return manifest
+
+
+def empty_pending_requeue():
+    return {'transient': [], 'defect': [], 'sources': {}, 'updated_at': utc_now()}
+
+
+def pending_key_set(pending):
+    pending = pending or {}
+    return set(pending.get('transient') or []) | set(pending.get('defect') or [])
+
+
+def report_requeue_parts(report, selected_keys):
+    if 'requeue_transient' not in report or 'requeue_defect' not in report:
+        raise SystemExit('audit report has no split requeue classification')
+    transient = report.get('requeue_transient')
+    defect = report.get('requeue_defect')
+    requeue = report.get('requeue')
+    if not all(isinstance(value, list) for value in (transient, defect, requeue)):
+        raise SystemExit('audit requeue fields must be lists')
+    for label, values in (('transient', transient), ('defect', defect), ('all', requeue)):
+        if any(not isinstance(key, str) or not key for key in values):
+            raise SystemExit('audit %s requeue contains an invalid key' % label)
+        if len(values) != len(set(values)):
+            raise SystemExit('audit %s requeue contains duplicate keys' % label)
+    if set(transient) & set(defect):
+        raise SystemExit('audit requeue classifications overlap')
+    if Counter(transient + defect) != Counter(requeue):
+        raise SystemExit('audit split requeue classifications do not equal the requeue set')
+    selected = Counter(selected_keys or [])
+    if any(count != 1 for count in selected.values()):
+        raise SystemExit('execution manifest selected keys are not unique')
+    foreign = list((Counter(requeue) - selected).elements())
+    if foreign:
+        raise SystemExit('audit requeue contains foreign keys: %s' % ','.join(sorted(foreign)))
+    return list(transient), list(defect)
+
+
+def pending_from_report(report, report_path, selected_keys):
+    transient, defect = report_requeue_parts(report, selected_keys)
+    report_path = os.path.abspath(report_path)
+    report_hash = sha256_file(report_path)
+    sources = {
+        key: {'kind': kind, 'audit_report': report_path,
+              'audit_report_sha256': report_hash}
+        for kind, keys in (('transient', transient), ('defect', defect))
+        for key in keys
+    }
+    return {'transient': transient, 'defect': defect, 'sources': sources,
+            'updated_at': utc_now()}
+
+
+def validate_pending_requeue(lease, pending, origin_manifest=None):
+    pending = pending or empty_pending_requeue()
+    transient = pending.get('transient')
+    defect = pending.get('defect')
+    sources = pending.get('sources')
+    if not isinstance(transient, list) or not isinstance(defect, list) or not isinstance(sources, dict):
+        raise SystemExit('%s: pending requeue structure is invalid' % lease['id'])
+    for label, values in (('transient', transient), ('defect', defect)):
+        if any(not isinstance(key, str) or not key for key in values):
+            raise SystemExit('%s: pending %s requeue contains an invalid key' %
+                             (lease['id'], label))
+        if len(values) != len(set(values)):
+            raise SystemExit('%s: pending %s requeue contains duplicate keys' %
+                             (lease['id'], label))
+    all_keys = transient + defect
+    if set(transient) & set(defect):
+        raise SystemExit('%s: pending requeue classifications overlap' % lease['id'])
+    if set(sources) != set(all_keys):
+        raise SystemExit('%s: pending requeue sources do not match keys' % lease['id'])
+    origin_manifest = origin_manifest or ensure_origin_manifest(lease)
+    origin_keys = origin_manifest['meta'].get('selected_keys') or []
+    if any(count != 1 for count in Counter(origin_keys).values()):
+        raise SystemExit('%s: origin execution manifest keys are not unique' % lease['id'])
+    foreign = list((Counter(all_keys) - Counter(origin_keys)).elements())
+    if foreign:
+        raise SystemExit('%s: pending requeue escapes origin manifest: %s' %
+                         (lease['id'], ','.join(sorted(foreign))))
+    reports = {}
+    for kind, keys in (('transient', transient), ('defect', defect)):
+        for key in keys:
+            source = sources.get(key) or {}
+            if source.get('kind') != kind:
+                raise SystemExit('%s: pending requeue source kind drift for %s' %
+                                 (lease['id'], key))
+            path = source.get('audit_report')
+            expected_hash = source.get('audit_report_sha256')
+            if not path or not expected_hash:
+                raise SystemExit('%s: pending requeue source is incomplete for %s' %
+                                 (lease['id'], key))
+            if path not in reports:
+                try:
+                    with open(path, encoding='utf-8') as f:
+                        report = json.load(f)
+                except (OSError, json.JSONDecodeError) as e:
+                    raise SystemExit('%s: pending audit report is unreadable: %s' %
+                                     (lease['id'], e))
+                if sha256_file(path) != expected_hash:
+                    raise SystemExit('%s: pending audit report hash changed' % lease['id'])
+                report_requeue_parts(report, report.get('keys') or [])
+                reports[path] = report
+            if key not in (reports[path].get('requeue_%s' % kind) or []):
+                raise SystemExit('%s: pending key %s is not bound to its source audit' %
+                                 (lease['id'], key))
+    return pending
+
+
+def pending_without_kind(pending, selected_kind):
+    remaining = empty_pending_requeue()
+    keep_kind = 'defect' if selected_kind == 'transient' else 'transient'
+    remaining[keep_kind] = list(pending.get(keep_kind) or [])
+    remaining['sources'] = {
+        key: dict((pending.get('sources') or {})[key]) for key in remaining[keep_kind]
+    }
+    return remaining
+
+
+def merge_pending_requeue(lease, carried, latest, origin_manifest):
+    carried = validate_pending_requeue(lease, carried, origin_manifest)
+    latest = validate_pending_requeue(lease, latest, origin_manifest)
+    if pending_key_set(carried) & pending_key_set(latest):
+        raise SystemExit('%s: carried and current requeue keys overlap' % lease['id'])
+    merged = empty_pending_requeue()
+    for kind in ('transient', 'defect'):
+        merged[kind] = sorted((carried.get(kind) or []) + (latest.get(kind) or []))
+    merged['sources'] = dict(carried.get('sources') or {})
+    merged['sources'].update(latest.get('sources') or {})
+    return validate_pending_requeue(lease, merged, origin_manifest)
+
+
+ATTEMPT_DIR_RE = re.compile(r'^rq([0-9]+)-(transient|defect)$')
+
+
+def next_requeue_attempt(lease, artifact_path):
+    root = os.path.join(artifact_path, 'requeue')
+    found = []
+    if os.path.isdir(root):
+        for name in os.listdir(root):
+            match = ATTEMPT_DIR_RE.match(name)
+            path = os.path.abspath(os.path.join(root, name))
+            if match and os.path.isdir(path):
+                found.append((int(match.group(1)), match.group(2), path))
+    referenced = {
+        os.path.abspath(row.get('artifact_dir'))
+        for row in (lease.get('execution_manifest_history') or []) if row.get('artifact_dir')
+    }
+    current = (lease.get('current_attempt') or {}).get('artifact_dir')
+    if current:
+        referenced.add(os.path.abspath(current))
+    orphans = [
+        {'number': number, 'kind': kind, 'artifact_dir': path,
+         'discovered_at': utc_now(), 'reason': 'unreferenced_attempt_directory'}
+        for number, kind, path in found if path not in referenced
+    ]
+    recorded = [int(row.get('attempt') or 0)
+                for row in (lease.get('execution_manifest_history') or [])]
+    highest = max([int(lease.get('requeue_attempt') or 0)] + recorded +
+                  [number for number, _kind, _path in found])
+    return highest + 1, orphans
+
+
 def cost_from_transcript(path):
     if not path:
         return None
@@ -630,15 +818,24 @@ def validate_promotable_audit(wf, status, report, state_name, returncode):
     return errors
 
 
-def recorded_lease_state(state_name, audit_errors, clean_rows):
+def recorded_lease_state(state_name, audit_errors, clean_rows, pending=None):
     if state_name not in PROMOTABLE_AUDIT_EXITS:
         return state_name, False
     if audit_errors:
         return 'blocked', False
+    if pending is None:
+        if clean_rows:
+            return ('ready' if state_name == 'clean' else 'ready_partial'), True
+        if state_name in ('needs_requeue', 'transient_only'):
+            return state_name, False
+        return 'blocked', False
+    has_pending = bool(pending_key_set(pending))
     if clean_rows:
-        return ('ready' if state_name == 'clean' else 'ready_partial'), True
-    if state_name in ('needs_requeue', 'transient_only'):
-        return state_name, False
+        return ('ready_partial' if has_pending else 'ready'), True
+    if pending.get('defect'):
+        return 'needs_requeue', False
+    if pending.get('transient'):
+        return 'transient_only', False
     return 'blocked', False
 
 
@@ -680,7 +877,25 @@ def record_output(args):
         clean_rows = clean_payload['results']
         audit_errors = validate_promotable_audit(
             wf, status, report, state_name, audit.returncode)
-        lease_state, promotable = recorded_lease_state(state_name, audit_errors, clean_rows)
+        pending = lease.get('pending_requeue') or empty_pending_requeue()
+        if not audit_errors:
+            try:
+                origin_manifest = ensure_origin_manifest(lease)
+                current_manifest = read_execution_manifest(manifest)
+                latest_pending = pending_from_report(
+                    report, report_path, current_manifest['meta'].get('selected_keys') or [])
+                carried = ((lease.get('current_attempt') or {}).get('remaining_pending') or
+                           empty_pending_requeue())
+                if pending_key_set(carried) & set(
+                        current_manifest['meta'].get('selected_keys') or []):
+                    raise SystemExit('%s: carried requeue overlaps the current attempt' % lease['id'])
+                pending = merge_pending_requeue(
+                    lease, carried, latest_pending, origin_manifest)
+                lease['pending_requeue'] = pending
+            except SystemExit as e:
+                audit_errors.append(str(e))
+        lease_state, promotable = recorded_lease_state(
+            state_name, audit_errors, clean_rows, pending)
         clean_output = None
         if promotable:
             clean_output = os.path.join(adir, 'wf_output.clean.%s.json' % lease['id'])
@@ -699,6 +914,11 @@ def record_output(args):
         lease['workflow_result_count'] = len(result.get('results') or [])
         lease['cost'] = cost_from_transcript(args.transcript_dir)
         lease['current_artifact_dir'] = adir
+        if lease.get('current_attempt'):
+            lease['current_attempt']['audit_report'] = report_path
+            lease['current_attempt']['audit_report_sha256'] = (
+                sha256_file(report_path) if os.path.exists(report_path) else None)
+            lease['current_attempt']['recorded_at'] = lease['recorded_at']
         save_state(state)
         registry_event(lease, 'recorded', {
             'wf_output': wf,
@@ -706,6 +926,10 @@ def record_output(args):
             'artifact_dir': adir,
             'status': state_name,
             'audit_returncode': audit.returncode,
+            'pending_requeue': {
+                'transient': list((pending or {}).get('transient') or []),
+                'defect': list((pending or {}).get('defect') or []),
+            },
             'cost': lease.get('cost'),
         })
     if audit.stdout.strip():
@@ -728,22 +952,8 @@ def prepare_requeue(args):
             raise SystemExit('%s: cannot prepare requeue from lease state %r' %
                              (lease['id'], lease_state))
         adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
-        source_dir = os.path.dirname(lease.get('status_path') or '') or adir
         which = 'transient' if args.transient else 'defect'
-        rq = os.path.join(source_dir, 'requeue.%s.keys.txt' % which)
-        legacy = os.path.join(source_dir, {
-            'transient': 'requeue.transient.keys.txt',
-            'defect': 'requeue.defect.keys.txt',
-        }[which])
-        if not os.path.exists(rq) and os.path.exists(legacy):
-            rq = legacy
-        if not os.path.exists(rq):
-            raise SystemExit('%s: requeue file is missing: %s' % (lease['id'], rq))
-        with open(rq, encoding='utf-8') as f:
-            requeue_keys = [line.strip() for line in f if line.strip()]
-        if not requeue_keys:
-            raise SystemExit('%s: requeue file is empty: %s' % (lease['id'], rq))
-
+        origin_manifest = ensure_origin_manifest(lease)
         current_manifest_path = lease.get('execution_manifest')
         current_manifest = read_execution_manifest(current_manifest_path)
         current_meta = current_manifest['meta']
@@ -751,21 +961,64 @@ def prepare_requeue(args):
         if not root:
             raise SystemExit('%s: execution manifest has no root' % lease['id'])
         nominal = bool(current_meta.get('nominal'))
-        attempt = int(lease.get('requeue_attempt') or 0) + 1
+
+        pending = lease.get('pending_requeue')
+        if not pending:
+            if int(lease.get('requeue_attempt') or 0):
+                raise SystemExit(
+                    '%s: attempted legacy lease has no provenance-bound pending backlog' %
+                    lease['id'])
+            try:
+                status = json.load(open(lease['status_path'], encoding='utf-8'))
+                report = json.load(open(lease['audit_report'], encoding='utf-8'))
+            except (KeyError, OSError, json.JSONDecodeError) as e:
+                raise SystemExit('%s: cannot hydrate pending requeue: %s' % (lease['id'], e))
+            errors = validate_promotable_audit(
+                lease['wf_output'], status, report, lease.get('audit_state'),
+                lease.get('audit_returncode'))
+            if errors:
+                raise SystemExit('%s: cannot hydrate pending requeue: %s' %
+                                 (lease['id'], '; '.join(errors)))
+            pending = pending_from_report(
+                report, lease['audit_report'], current_meta.get('selected_keys') or [])
+            lease['pending_requeue'] = pending
+        pending = validate_pending_requeue(lease, pending, origin_manifest)
+        requeue_keys = list(pending.get(which) or [])
+        if not requeue_keys:
+            raise SystemExit('%s: pending %s requeue is empty' % (lease['id'], which))
+        remaining_pending = pending_without_kind(pending, which)
+
+        attempt, orphans = next_requeue_attempt(lease, adir)
         attempt_tag = 'rq%02d-%s' % (attempt, which)
         attempt_dir = os.path.join(adir, 'requeue', attempt_tag)
-        os.makedirs(attempt_dir, exist_ok=False)
         harness = os.path.join(attempt_dir, 'run_pilot_wf.%s.%s.js' %
                                (lease['id'], attempt_tag))
         manifest = os.path.join(attempt_dir, 'execution_manifest.%s.%s.json' %
                                 (lease['id'], attempt_tag))
+        rq = os.path.join(attempt_dir, 'requeue.%s.keys.txt' % which)
         old_manifest_sha256 = sha256_file(current_manifest_path)
         cmd = [sys.executable, os.path.join(HERE, 'requeue_from_audit.py'),
                root, '--%s' % which, '--requeue-file=%s' % rq, '--out=%s' % harness,
                '--manifest-out=%s' % manifest]
         if nominal:
             cmd += ['--nominal', '--no-grammar']
+        created = False
         try:
+            os.makedirs(attempt_dir, exist_ok=False)
+            created = True
+            atomic_write_text(rq, '\n'.join(requeue_keys) + '\n')
+            if which == 'defect':
+                fshas = set()
+                source_paths = {
+                    pending['sources'][key]['audit_report'] for key in requeue_keys
+                }
+                for source_path in source_paths:
+                    with open(source_path, encoding='utf-8') as f:
+                        source_report = json.load(f)
+                    fshas.update(source_report.get('requeue_defect_fshas') or [])
+                atomic_write_text(
+                    os.path.join(attempt_dir, 'requeue.defect.fshas.txt'),
+                    '\n'.join(sorted(fshas)) + ('\n' if fshas else ''))
             p = run_cmd(cmd)
             if sha256_file(current_manifest_path) != old_manifest_sha256:
                 raise SystemExit(
@@ -775,9 +1028,16 @@ def prepare_requeue(args):
             if (prepared_manifest['meta'].get('selected_keys') or []) != requeue_keys:
                 raise SystemExit('%s: requeue execution manifest key drift' % lease['id'])
         except BaseException:
-            shutil.rmtree(attempt_dir, ignore_errors=True)
+            if created:
+                shutil.rmtree(attempt_dir, ignore_errors=True)
             raise
         history = lease.setdefault('execution_manifest_history', [])
+        origin_path = lease['origin_execution_manifest']
+        origin_abs = os.path.abspath(origin_path)
+        if not any(os.path.abspath(row.get('path') or '') == origin_abs for row in history):
+            history.append(manifest_history_entry(
+                origin_path, 0, 'initial', adir,
+                lease.get('prepared_at') or lease.get('recorded_at')))
         current_abs = os.path.abspath(current_manifest_path)
         if not any(os.path.abspath(row.get('path') or '') == current_abs for row in history):
             history.append(manifest_history_entry(
@@ -794,6 +1054,13 @@ def prepare_requeue(args):
         lease['requeue_attempt'] = attempt
         lease['execution_manifest'] = manifest
         lease['current_artifact_dir'] = attempt_dir
+        known_orphans = {
+            os.path.abspath(row.get('artifact_dir'))
+            for row in (lease.get('orphaned_requeue_attempts') or [])
+            if row.get('artifact_dir')
+        }
+        lease.setdefault('orphaned_requeue_attempts', []).extend(
+            row for row in orphans if os.path.abspath(row['artifact_dir']) not in known_orphans)
         lease['current_attempt'] = {
             'number': attempt,
             'kind': which,
@@ -802,6 +1069,7 @@ def prepare_requeue(args):
             'execution_manifest': manifest,
             'prepared_at': prepared_at,
             'selected_keys': requeue_keys,
+            'remaining_pending': remaining_pending,
         }
         save_state(state)
         registry_event(lease, 'requeue_prepared', {
@@ -838,8 +1106,14 @@ def promote_ready(args):
             errors = validate_promotable_audit(
                 lease['wf_output'], status, report, lease.get('audit_state'),
                 lease.get('audit_returncode'))
-            expected_lease_state = ('ready' if lease.get('audit_state') == 'clean'
-                                    else 'ready_partial')
+            pending = lease.get('pending_requeue') or empty_pending_requeue()
+            try:
+                origin_manifest = ensure_origin_manifest(lease)
+                pending = validate_pending_requeue(lease, pending, origin_manifest)
+            except SystemExit as e:
+                errors.append(str(e))
+            has_pending = bool(pending_key_set(pending))
+            expected_lease_state = 'ready_partial' if has_pending else 'ready'
             if lease.get('state') != expected_lease_state:
                 errors.append('lease state does not match audited promotion class')
             clean_rows = clean_payload.get('results') or []
@@ -863,8 +1137,7 @@ def promote_ready(args):
             with DirLock(paths()['lock']):
                 state = load_state()
                 fresh = lease_by_id(state, lease['id'])
-                fresh['state'] = ('promoted_partial' if fresh.get('audit_state') != 'clean'
-                                  else 'promoted')
+                fresh['state'] = 'promoted_partial' if has_pending else 'promoted'
                 fresh['promoted_at'] = utc_now()
                 fresh['model_version'] = args.gen_model_version
                 fresh['store_before'] = store_before

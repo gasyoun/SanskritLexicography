@@ -2237,9 +2237,22 @@ an execution set: future unprepared rows must not enter acceptance denominators,
 residual-only chunk must not consume the requested preparation quota. Scope acceptance to
 prepared lease IDs and count successful preparations independently of deterministic indices.
 
+The review after PR #482 exposed three more instances of the boundary problem. A coordinator
+could still reconstruct work from mutable split-key files without proving that the keys came
+from the lease's original manifest; selecting the transient lane could silently lose a pending
+defect lane (or the reverse); and a hard interruption after directory creation could make the
+state counter reuse an existing `rqNN-*` path. The resolution is a durable, additive backlog:
+seal the attempt-zero manifest path/hash as the lease key universe, bind every pending key to
+its classifying audit-report path/hash, and carry the unselected lane through the next audit and
+promotion. Allocate from the maximum of state, manifest history, and disk; preserve and report
+unreferenced attempt directories as orphans, never auto-adopt or delete them. Materialize the
+selected keys and conservative defect fragment hashes inside the new attempt before generation.
+This keeps retry cost policy split by lane without allowing one lane to erase the other.
+
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
-> [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482))
+> [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482),
+> [review-fix PR #483](https://github.com/gasyoun/SanskritLexicography/pull/483))
 > ([`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
 > [`window_provenance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_provenance.py),
 > [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py),
