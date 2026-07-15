@@ -556,6 +556,37 @@ def clean_result_payload(result, rejected):
     return payload
 
 
+def read_execution_manifest(path):
+    if not path:
+        raise SystemExit('execution manifest path is missing')
+    try:
+        with open(path, encoding='utf-8') as f:
+            manifest = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        raise SystemExit('execution manifest is unreadable: %s' % e)
+    if manifest.get('schema') != 'pwg.headless_execution_manifest.v1':
+        raise SystemExit('unsupported execution manifest schema: %r' % manifest.get('schema'))
+    if not isinstance(manifest.get('meta'), dict):
+        raise SystemExit('execution manifest meta is missing or invalid')
+    return manifest
+
+
+def manifest_history_entry(path, attempt, kind, artifact_path, prepared_at=None):
+    manifest = read_execution_manifest(path)
+    meta = manifest['meta']
+    return {
+        'attempt': int(attempt),
+        'kind': kind,
+        'path': os.path.abspath(path),
+        'sha256': sha256_file(path),
+        'artifact_dir': os.path.abspath(artifact_path),
+        'root': meta.get('root'),
+        'nominal': bool(meta.get('nominal')),
+        'selected_keys': list(meta.get('selected_keys') or []),
+        'prepared_at': prepared_at or utc_now(),
+    }
+
+
 def cost_from_transcript(path):
     if not path:
         return None
@@ -615,7 +646,8 @@ def record_output(args):
     with DirLock(paths()['lock']):
         state = load_state()
         lease = lease_by_id(state, args.lease_id)
-        adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
+        base_adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
+        adir = lease.get('current_artifact_dir') or base_adir
         os.makedirs(adir, exist_ok=True)
         wf = os.path.join(adir, 'wf_output.%s.json' % lease['id'])
         result = normalize_workflow_result(args.workflow_result, wf)
@@ -666,9 +698,12 @@ def record_output(args):
         lease['recorded_at'] = utc_now()
         lease['workflow_result_count'] = len(result.get('results') or [])
         lease['cost'] = cost_from_transcript(args.transcript_dir)
+        lease['current_artifact_dir'] = adir
         save_state(state)
         registry_event(lease, 'recorded', {
             'wf_output': wf,
+            'execution_manifest': manifest,
+            'artifact_dir': adir,
             'status': state_name,
             'audit_returncode': audit.returncode,
             'cost': lease.get('cost'),
@@ -684,27 +719,96 @@ def prepare_requeue(args):
     with DirLock(paths()['lock']):
         state = load_state()
         lease = lease_by_id(state, args.lease_id)
+        lease_state = lease.get('state')
+        if lease_state == 'ready_partial':
+            raise SystemExit(
+                '%s: promote the verified clean subset before preparing its requeue' % lease['id'])
+        allowed = ('promoted_partial', 'needs_requeue', 'transient_only')
+        if lease_state not in allowed:
+            raise SystemExit('%s: cannot prepare requeue from lease state %r' %
+                             (lease['id'], lease_state))
         adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
+        source_dir = os.path.dirname(lease.get('status_path') or '') or adir
         which = 'transient' if args.transient else 'defect'
-        rq = os.path.join(adir, 'requeue.%s.keys.txt' % which)
-        legacy = os.path.join(adir, {
+        rq = os.path.join(source_dir, 'requeue.%s.keys.txt' % which)
+        legacy = os.path.join(source_dir, {
             'transient': 'requeue.transient.keys.txt',
             'defect': 'requeue.defect.keys.txt',
         }[which])
         if not os.path.exists(rq) and os.path.exists(legacy):
             rq = legacy
-        harness = os.path.join(adir, 'run_pilot_wf.%s.requeue.%s.js' % (lease['id'], which))
-        root = 'nominal_%s' % lease['id'] if lease.get('kind') == 'nominal' else lease['target']
+        if not os.path.exists(rq):
+            raise SystemExit('%s: requeue file is missing: %s' % (lease['id'], rq))
+        with open(rq, encoding='utf-8') as f:
+            requeue_keys = [line.strip() for line in f if line.strip()]
+        if not requeue_keys:
+            raise SystemExit('%s: requeue file is empty: %s' % (lease['id'], rq))
+
+        current_manifest_path = lease.get('execution_manifest')
+        current_manifest = read_execution_manifest(current_manifest_path)
+        current_meta = current_manifest['meta']
+        root = current_meta.get('root')
+        if not root:
+            raise SystemExit('%s: execution manifest has no root' % lease['id'])
+        nominal = bool(current_meta.get('nominal'))
+        attempt = int(lease.get('requeue_attempt') or 0) + 1
+        attempt_tag = 'rq%02d-%s' % (attempt, which)
+        attempt_dir = os.path.join(adir, 'requeue', attempt_tag)
+        os.makedirs(attempt_dir, exist_ok=False)
+        harness = os.path.join(attempt_dir, 'run_pilot_wf.%s.%s.js' %
+                               (lease['id'], attempt_tag))
+        manifest = os.path.join(attempt_dir, 'execution_manifest.%s.%s.json' %
+                                (lease['id'], attempt_tag))
+        old_manifest_sha256 = sha256_file(current_manifest_path)
         cmd = [sys.executable, os.path.join(HERE, 'requeue_from_audit.py'),
-               root, '--%s' % which, '--requeue-file=%s' % rq, '--out=%s' % harness]
-        if lease.get('kind') == 'nominal':
+               root, '--%s' % which, '--requeue-file=%s' % rq, '--out=%s' % harness,
+               '--manifest-out=%s' % manifest]
+        if nominal:
             cmd += ['--nominal', '--no-grammar']
-        p = run_cmd(cmd)
+        try:
+            p = run_cmd(cmd)
+            if sha256_file(current_manifest_path) != old_manifest_sha256:
+                raise SystemExit(
+                    '%s: previous execution manifest changed during requeue preparation' %
+                    lease['id'])
+            prepared_manifest = read_execution_manifest(manifest)
+            if (prepared_manifest['meta'].get('selected_keys') or []) != requeue_keys:
+                raise SystemExit('%s: requeue execution manifest key drift' % lease['id'])
+        except BaseException:
+            shutil.rmtree(attempt_dir, ignore_errors=True)
+            raise
+        history = lease.setdefault('execution_manifest_history', [])
+        current_abs = os.path.abspath(current_manifest_path)
+        if not any(os.path.abspath(row.get('path') or '') == current_abs for row in history):
+            history.append(manifest_history_entry(
+                current_manifest_path, lease.get('requeue_attempt') or 0,
+                'initial' if not history else lease.get('requeue_kind') or 'requeue',
+                lease.get('current_artifact_dir') or adir,
+                lease.get('prepared_at') or lease.get('recorded_at')))
+        prepared_at = utc_now()
+        history.append(manifest_history_entry(
+            manifest, attempt, which, attempt_dir, prepared_at))
         lease['state'] = 'requeue_prepared'
         lease['requeue_harness'] = harness
         lease['requeue_kind'] = which
+        lease['requeue_attempt'] = attempt
+        lease['execution_manifest'] = manifest
+        lease['current_artifact_dir'] = attempt_dir
+        lease['current_attempt'] = {
+            'number': attempt,
+            'kind': which,
+            'artifact_dir': attempt_dir,
+            'harness': harness,
+            'execution_manifest': manifest,
+            'prepared_at': prepared_at,
+            'selected_keys': requeue_keys,
+        }
         save_state(state)
-        registry_event(lease, 'requeue_prepared', {'harness': harness, 'kind': which})
+        registry_event(lease, 'requeue_prepared', {
+            'attempt': attempt, 'artifact_dir': attempt_dir,
+            'harness': harness, 'manifest': manifest, 'kind': which,
+            'selected_keys': requeue_keys,
+        })
     if p.stdout.strip():
         print(p.stdout.rstrip())
     print('harness: %s' % harness)
