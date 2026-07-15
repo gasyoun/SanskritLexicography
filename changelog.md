@@ -14,6 +14,30 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.13] - 2026-07-15
+
+### Added
+- **H960 — four-profile PWG→Russian production-readiness (15-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, offline)**:
+  verified H920 (every offline gate green) and closed the six load-bearing gaps blocking four-profile
+  nonstop scale, each a **SOFT / report-only** guard pinned by a selftest and wired into CI (arming any
+  hard reject stays owner-gated — a silent pass → visible requeue changes throughput, measured on live
+  traffic first). (1) [`accept()` sense-count](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+  (H920's deferred deepest fix): stamps the hardened `source_senses`, records a `SANLOSS_SHORTFALLS`
+  shortfall (`SANLOSS_HARD_REJECT` owner-gated); [`sense_count.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/sense_count.py)'s
+  counter hardened to skip cross-reference ordinals (~4.78%-of-cards over-count). (2) grammar `{Tn}`
+  multiset check on the main `accept()` path (`TNMASK_MISMATCHES`), catching a dropped `<lex>` span the
+  `<ls>/{#` count misses. (3) [`dropped_sanskrit_span`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
+  — content-multiset German `{#..#}` source-vs-target diff, LOW/report-only, head-label FP class excluded.
+  (4) new [`economy_ledger.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/economy_ledger.py)
+  derives `agents_per_clean` + a bounded `$/clean` band from the frozen probe log. (5) four-profile
+  [`staged-run`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator.py):
+  guard relaxed to ≥1 account, `probe_fleet()` STOP-on-any-NO-GO, `only_accounts` dispatch filter. (6) new
+  [`bounded_supervisor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_supervisor.py)
+  injectable-seam nonstop loop with crash-resume. An adversarial correctness-review pass fixed 2 bugs +
+  a CodeQL ReDoS. Residual NO-GO = the owner-gated live ladder (auth→latency→canary→arm→10→20→multi-profile).
+  [PR #475](https://github.com/gasyoun/SanskritLexicography/pull/475); gate report:
+  [pwg_ru/h960/H960_FOUR_PROFILE_PRODUCTION_READINESS_GATE_2026-07-15.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h960/H960_FOUR_PROFILE_PRODUCTION_READINESS_GATE_2026-07-15.md).
+
 ## [1.9.12] - 2026-07-15
 
 ### Added
