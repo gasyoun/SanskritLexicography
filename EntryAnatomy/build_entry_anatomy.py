@@ -1156,16 +1156,18 @@ def load_callout_spec(path):
     return rows
 
 
-# mw is deliberately ABSENT: scans/MWScan/2020/.../servepdf.php?page=N serves
-# the 1872 FIRST-edition scan, whose pagination collides with the 1899 <pc>
-# loci of mw.txt (verified 15-07-2026: page=277 returned khel/gangambhas =
-# mw72 pc 0277, not 1899 kAla). Until the 1899 per-page endpoint is confirmed
-# (its files are named mw<page>-<headword>.pdf, unguessable without a
-# listing), supply --facsimile for MW; a wrong-edition inset fetched silently
-# would be worse than none.
+# dict= is carried explicitly (the endpoint's own nav links do the same).
+# MW re-enabled 15-07-2026 after an api=1 probe DISPROVED the earlier
+# "serves the 1872 edition" diagnosis: page=277 resolves to
+# MWScanpdf/mw0277-kArSNi.pdf, the correct 1899 page, with or without
+# dict=. The portal ALSO hosts the 1872 first-edition scan with colliding
+# printed page numbers under a different browser (pg_NNNN.pdf files) — a
+# hazard for manually-fetched pages, not for this endpoint. FINDINGS §80.
 SCAN_URL = {
+    "mw": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/"
+           "web/webtc/servepdf.php?dict=mw&page={page}"),
     "pwg": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/"
-            "web/webtc/servepdf.php?page={page}"),
+            "web/webtc/servepdf.php?dict=pwg&page={page}"),
 }
 
 

@@ -1339,31 +1339,37 @@ catalog rows.
 
 ---
 
-### §80. The MWScan/2020 `servepdf.php` serves the 1872 FIRST edition — its page numbers collide with the 1899 `<pc>` loci of mw.txt
+### §80. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers
 
-🔴 **`/scans/MWScan/2020/web/webtc/servepdf.php?page=N` returns page N of the 1872
-first-edition scan, NOT the 1899 edition that `mw.txt` (CDSL dict `mw`) is keyed to —
-and because both editions print their own page numbers, the mismatch is silent.**
-Requesting `page=277` (the 1899 `<pc>` locus of *kāla*) returned a page whose corner
-really does say "277" but whose running heads are *khel./gaṅgāmbhas.* — which is
-`mw72.txt` pc `0277-a` exactly. The 1872-edition *kāla* sits at mw72 pc `0224–0225`.
-A facsimile auto-pull that maps `mw.txt` `<pc>` → this endpoint fetches a confidently
-wrong page every time.
+🟠 **Corrected 15-07-2026 (same session-day as first written): the endpoint was never
+wrong.** An `api=1` probe of
+`/scans/MWScan/2020/web/webtc/servepdf.php?api=1&page=277` (with AND without
+`dict=mw`) resolves to `MWScanpdf/mw0277-kArSNi.pdf` — the correct **1899** page for
+the `mw.txt` `<pc>` locus `277,1` (*kāla*). The `page` param maps 1:1 onto 1899 print
+pages; the per-page files are named `mw<page>-<first-headword>.pdf` but the endpoint
+does that lookup itself, so a `{page}` URL template is fine. The endpoint's own nav
+links carry `dict=mw` — include it for canonical form.
 
-Evidence: browser fetch 15-07-2026 of `?page=277`/`?page=278` (served as
-`pg_0277.pdf`/`pg_0278.pdf`) vs. `mw72.txt` loci for `Kel` (`0277-a`) and `kAla`
-(`0224-b`/`0225-b`). The genuine 1899 per-page files are named
-`mw<page>-<first-headword>.pdf` (e.g. `mw0277-kArSNi.pdf`, `mw1304-hetumAtratA.pdf` from
-H780) — the headword suffix makes the URL unguessable from a page number alone, so no
-`{page}` template can fetch 1899 pages without a directory listing. Sibling of [[§50]]
-(display paths are not uniform either).
+**The real, surviving trap is portal-navigation-level:** Cologne ALSO hosts the
+**1872 first-edition** scan set, browsable with per-page files named `pg_NNNN.pdf`,
+and both editions print their own page numbers — a manually saved "page 277" can be
+either edition's 277 (1872's is *khel/gaṅgāmbhas* = `mw72.txt` pc `0277-a`; 1872
+*kāla* sits at `0224–0225`). That is exactly how the wrong pages entered this session:
+a browser download of `pg_0277.pdf`/`pg_0278.pdf` from the 1872 browser, initially
+misattributed to the servepdf endpoint (the endpoint itself was 429-throttled for the
+probing IP, so the misdiagnosis went unchecked for one release). **Identify a
+manually fetched MW page by its running heads and filename pattern
+(`mw<page>-<headword>.pdf` = 1899 · `pg_NNNN.pdf` = 1872), never by the corner
+number.** Sibling of [[§50]] (display paths are not uniform either).
 
-Implication: `EntryAnatomy/build_entry_anatomy.py` ships with the `mw` scan-server
-auto-pull DISABLED (supply `--facsimile`); re-enable only after confirming an endpoint
-that demonstrably serves 1899 pagination (check the running heads, not the corner
-number). Applies to any future tool that wants "the MW print page for this record".
+Implication: `EntryAnatomy/build_entry_anatomy.py`'s MW auto-pull is re-enabled
+(v1.9.15; it was disabled in v1.9.14 on the misdiagnosis); kosha's
+[`app/scan_resolver.py`](https://github.com/gasyoun/kosha/blob/main/app/scan_resolver.py)
+was verified correct as-is and needs no change. The original v1.9.14 wording of this
+section claimed the endpoint served 1872 — that claim is retracted.
 
-> **Source:** H870 facsimile follow-up ([SanskritLexicography PR #473](https://github.com/gasyoun/SanskritLexicography/pull/473) + inset fix),
+> **Source:** H870 correction pass — `api=1` probes via independent egress
+> ([SanskritLexicography PR #479](https://github.com/gasyoun/SanskritLexicography/pull/479) context),
 > Fable 5 `claude-fable-5` · 15-07-2026
 
 ---
