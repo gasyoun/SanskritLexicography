@@ -2251,7 +2251,8 @@ This keeps retry cost policy split by lane without allowing one lane to erase th
 
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
-> [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482))
+> [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482),
+> [review-fix PR #483](https://github.com/gasyoun/SanskritLexicography/pull/483))
 > ([`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
 > [`window_provenance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_provenance.py),
 > [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py),
