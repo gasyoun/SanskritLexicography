@@ -143,6 +143,9 @@ jobs:
           python src/pilot/max_account_orchestrator_selftest.py
           python src/pilot/windows100_selftest.py
           python src/pilot/run_observability_selftest.py
+          python src/pilot/economy_ledger_selftest.py
+          python src/pilot/bounded_supervisor_selftest.py
+          python src/pilot/sense_count.py
           python src/pilot/window_selftest.py
           python src/store_path.py --selftest
           python src/pilot/translation_memory.py selftest

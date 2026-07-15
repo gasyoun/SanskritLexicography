@@ -27,29 +27,59 @@ import json
 import os
 import re
 
-# A top-level source sense is marked by the PWG/PW sense-close glyph `N〉` (a digit
-# immediately followed by the U+3009 RIGHT ANGLE BRACKET). That glyph is used ONLY
-# for sense boundaries in the csl-orig markup, never inside a citation, so `\d+〉`
-# is a high-precision top-level-sense signal. `_LINE_SENSE` additionally catches the
-# line-anchored `N)` / `— N)` form used by the deterministic splitter
-# (autosplit_requeue._SENSE) for the presplit lane; the two are unioned so a source
-# in either notation is counted. Sub-senses (lettered a)/b), or `Nc`) are deliberately
-# NOT counted — only distinct top-level ARABIC ordinals, so a card that merges the
-# lettered sub-senses of one numbered sense is never mis-flagged as a shortfall.
-_SENSE_CLOSE = re.compile(r'(\d+)\s*〉')
-_LINE_SENSE = re.compile(r'^\s*(?:<div[^>]*>)?\s*(?:—\s*|-\s*)?(\d+)\s*[\)〉]')
+# A top-level source sense OPENS its line: the sense-ordinal `N〉` (PWG/PW sense-close
+# glyph, digit + U+3009 RIGHT ANGLE BRACKET) — or the line-anchored `N)` split notation
+# used by the deterministic splitter (autosplit_requeue._SENSE) — is the FIRST ordinal on
+# its line, preceded only by "opening" material: leading whitespace, a sense dash (— / – /
+# -), the headword pipe ¦, a structural tag (<div..>), a {Tn} mask token, or a masked/
+# unmasked headword ref {#..#}¦.
+#
+# H960 hardening (cross-reference false-positive fix). The pre-H960 counter did a naive
+# `\d+〉` findall over the whole blob, which counted every sense-ordinal glyph — including
+# CROSS-REFERENCES into ANOTHER entry's numbering ("pra 1〉 = {#sUd#} 3〉", "gehört zu 4〉",
+# "Nom. abstr. zu {#ASraya#} 1〉 und 6〉", "pari 5〉") — as if this card declared that many
+# senses. On a promoted-store corpus scan ~4.78% of cards carried such a mid-prose ordinal,
+# so the naive count over-stated `source_senses` and would spuriously flag a faithful card
+# as SAN-LOSS (H960 verify evidence: gam~~h2_31_pari 2->1, s_ud~~h0_05_pra 4->2,
+# _a_srayatva 2->0). A mid-line ordinal is never a sense of THIS card, so it is skipped;
+# only the FIRST ordinal per line can open a sense (any later N〉 on the same line is by
+# construction a cross-reference). Sub-senses (lettered a)/b), or `Nc`) remain uncounted —
+# only distinct top-level ARABIC ordinals, so merging one sense's lettered sub-senses never
+# mis-flags a shortfall. Under-counting (a genuinely-numbered sense whose marker is not
+# line-opening) is the safe direction: it lowers the expected count, never a false shortfall.
+_ORD = re.compile(r'(\d+)\s*[\)〉]')
+# One unit of "opening" material a line-opening sense ordinal may follow: a {Tn} mask token, an
+# <...> structural tag, a {#..#} headword ref (optionally followed by the ¦ pipe), or a run of
+# separator chars (whitespace, dashes —/–/-, pipe |, broken bar ¦). Anchored alternatives with NO
+# nested quantifier, matched left-to-right by _is_open_prefix — a linear scan, so a prefix like
+# `{#a#}¦{#b#}¦…` cannot trigger the catastrophic backtracking a `(...[sep]*)*$` regex would (py/redos).
+_OPEN_TOKEN = re.compile(r'\{T\d+\}|<[^>]*>|\{#[^#]*#\}¦?|[\s—–\-|¦]+')
+
+
+def _is_open_prefix(prefix):
+    """True iff `prefix` is composed ENTIRELY of opening material (see _OPEN_TOKEN) — i.e. an ordinal
+    at its end opens a line rather than sitting mid-prose as a cross-reference. Linear-time: greedily
+    consume one leading opening token at a time; clean iff the whole prefix is consumed."""
+    i, n = 0, len(prefix)
+    while i < n:
+        m = _OPEN_TOKEN.match(prefix, i)
+        if m is None or m.end() == i:
+            return False
+        i = m.end()
+    return True
 
 
 def source_sense_ordinals(text):
     """The set of distinct TOP-LEVEL arabic sense ordinals a raw/masked source blob
-    declares (via `N〉` close-glyphs or line-anchored `N)` markers). Empty when the
-    source carries no explicit top-level numbering (a single unnumbered supplement
-    sense) — the caller treats an empty/singleton set as "nothing to compare"."""
-    text = text or ''
-    ords = {int(m) for m in _SENSE_CLOSE.findall(text)}
-    for line in text.split('\n'):
-        m = _LINE_SENSE.match(line)
-        if m:
+    declares. An ordinal is counted only when it OPENS its line (preceded solely by opening
+    material — see _is_open_prefix); a mid-line ordinal is a cross-reference into another
+    entry's numbering and is skipped. Empty when the source carries no line-opening
+    numbering (a single unnumbered supplement sense) — the caller treats an empty/singleton
+    set as "nothing to compare"."""
+    ords = set()
+    for line in (text or '').split('\n'):
+        m = _ORD.search(line)
+        if m and _is_open_prefix(line[:m.start()]):
             ords.add(int(m.group(1)))
     return ords
 
@@ -57,10 +87,11 @@ def source_sense_ordinals(text):
 def count_source_senses(text):
     """Number of distinct top-level source senses (see source_sense_ordinals).
 
-    Deterministic and conservative: counts only explicitly-numbered top-level senses,
-    so it is a LOWER BOUND on the senses the model must emit — never an over-count
-    that could spuriously flag a faithfully-merged card. Matches the harness's own
-    `raw.count('〉')` coarse count on the darvI evidence (both == 3)."""
+    Deterministic and conservative: counts only line-opening top-level senses (never a
+    mid-prose cross-reference ordinal), so it is a LOWER BOUND on the senses the model
+    must emit — never an over-count that could spuriously flag a faithfully-merged card.
+    Equals 3 on the darvI evidence; unlike the harness's coarse `raw.count('〉')`, it does
+    NOT inflate on cross-reference ordinals (H960 hardening — see _OPEN_PREFIX)."""
     return len(source_sense_ordinals(text))
 
 
@@ -166,6 +197,17 @@ def _selftest():
     assert count_source_senses('<ls>MBH. 5,163,4</ls>. 2,33 1,5') == 0
     # line-anchored N) form (split_plan notation).
     assert count_source_senses('1) a\n2) b\n3) c') == 3
+    # H960 cross-reference FP regression (real promoted-store shapes, verify evidence):
+    # a mid-prose ordinal points into ANOTHER entry's numbering and must NOT be counted.
+    # gam~~h2_31_pari: one addendum sense whose prose cross-refs the base numbering -> 1.
+    assert count_source_senses('pari 5〉 {%...%}, gehört zu 4〉.') == 0, \
+        count_source_senses('pari 5〉 {%...%}, gehört zu 4〉.')
+    # s_ud~~h0_05_pra: two line-opening senses, each cross-referencing the base root -> 2.
+    assert count_source_senses('— 1〉 = {#sUd#} 3〉\n— 2〉 = {#sUd#} 4〉') == 2, \
+        count_source_senses('— 1〉 = {#sUd#} 3〉\n— 2〉 = {#sUd#} 4〉')
+    # _a_srayatva (main lane): one unnumbered abstract-noun sense that cross-refs 1〉/6〉 -> 0.
+    assert count_source_senses('Nom. abstr. zu {#ASraya#} 1〉 und 6〉.') == 0, \
+        count_source_senses('Nom. abstr. zu {#ASraya#} 1〉 und 6〉.')
     # shortfall math: darvI-shaped card (2 of 3 senses).
     card2 = {'records': [{'senses': [{'tag': '2'}, {'tag': '3'}]}]}
     assert sense_shortfall(card2, 3) == 1

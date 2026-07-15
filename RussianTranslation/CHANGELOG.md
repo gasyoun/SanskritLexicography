@@ -10,6 +10,35 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Four-profile production-readiness — verify H920 + earn every offline-earnable scale gap (H960, offline).**
+  Verified H920 (every offline gate green) and closed the six load-bearing gaps blocking four-profile
+  nonstop scale, each pinned by a selftest and each **SOFT / report-only by default** (telemetry, no
+  reject/requeue — arming a hard reject is a deliberate owner-gated step measured on live traffic).
+  (1) **`accept()` sense-count** — H920's deferred deepest fix: `gen_opt_harness2.py` stamps the hardened
+  `source_senses` and `accept()` records a `SANLOSS_SHORTFALLS` shortfall (`SANLOSS_HARD_REJECT` owner-gated);
+  [`sense_count.py`](src/pilot/sense_count.py)'s counter is hardened to skip cross-reference ordinals (the
+  ~4.78%-of-cards over-count the naive `\d+〉` findall carried: `gam~~h2_31_pari` 2→1, `s_ud~~h0_05_pra`
+  4→2, `_a_srayatva` 2→0). (2) **Grammar `{Tn}` multiset** — `accept()` now runs the heal path's `{Tn}`
+  multiset check on the main path (`TNMASK_MISMATCHES`, owner-gated), catching a dropped `<lex>` grammar
+  span the `<ls>/{#` count is blind to. (3) **German `{#..#}` span drop** (H911 backlog #3) —
+  [`prompt_rule_audit.py`](src/pilot/prompt_rule_audit.py) `dropped_sanskrit_span`, a content-multiset
+  source-vs-target diff, **LOW / report-only** (never requeues), excluding structural head-label spans (the
+  measured 95%-FP class). (4) **Economy telemetry** (H911 backlog #4) — new
+  [`economy_ledger.py`](src/pilot/economy_ledger.py) derives `agents_per_clean` + a bounded `$/clean` band
+  from the frozen probe log (metrics H911 called `not_recoverable` actually sit there), `gate()` on aggregate
+  breach. (5) **Four-profile `staged-run`** — [`max_account_orchestrator.py`](src/pilot/max_account_orchestrator.py)
+  guard relaxed from exactly-one to ≥1 account; `probe_fleet()` probes each profile, STOP-on-any-NO-GO
+  (`--drop-unhealthy` opt-in), `probe_latency_ms` rewired to a per-account map; the claim/dispatch/recover
+  substrate was already N-account-proven. (6) **Bounded supervisor** — new
+  [`bounded_supervisor.py`](src/pilot/bounded_supervisor.py): injectable `run_window` seam, bounds on
+  window-count / budget / clean-target / consecutive-empty, requeues partials, atomic checkpoint + crash
+  resume. New selftests: `test_h960_accept_sanloss_soft_gate` (node, extracts the real `accept()`),
+  `test_h960_dropped_sanskrit_span`, `economy_ledger_selftest.py`, `bounded_supervisor_selftest.py`,
+  +N=4 cases in `max_account_orchestrator_selftest.py`; all wired into CI. LANG_PARITY entry
+  `accept_sanloss_soft_gate_h960` (SHARED). No live generation — the residual NO-GO is exactly the
+  owner-gated live ladder (auth → latency → canary → arm → 10 → 20 → multi-profile). Gate report:
+  [pwg_ru/h960/H960_FOUR_PROFILE_PRODUCTION_READINESS_GATE_2026-07-15.md](pwg_ru/h960/H960_FOUR_PROFILE_PRODUCTION_READINESS_GATE_2026-07-15.md).
+
 - **SAN-LOSS (whole-dropped-sense) guard — the H911 FAIL-branch #1 defect (H920, offline).**
   Root-caused `missing_senses`/SAN-LOSS in the no_pwg / supplement lane to **model omission**, made
   silent by three compounding facts: the no_pwg portrait declares `senses:[]` (no expected count), the

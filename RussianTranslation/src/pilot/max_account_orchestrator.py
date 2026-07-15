@@ -424,6 +424,15 @@ def cmd_run_once(args):
     db = connect(args.db)
     accounts = list(db.execute('SELECT * FROM accounts ORDER BY name'))
     db.close()
+    # GAP #5 (four-profile): optional dispatch allow-list. cmd_staged_run passes the exact set of
+    # accounts that PASSED probe_fleet (set(probe_latencies)) so a --max-accounts-capped or
+    # --drop-unhealthy-dropped account — which was never health-probed — cannot receive a job. Without
+    # it, this re-select-all dispatch would claim jobs for every validated, unparked account,
+    # bypassing the mandatory pre-dispatch probe (the cap/drop would apply only to the probe set).
+    # Default (attribute absent / None) is unrestricted, so a standalone `run-once` is unchanged.
+    only = getattr(args, 'only_accounts', None)
+    if only is not None:
+        accounts = [a for a in accounts if a['name'] in only]
     work = []
     for acc in accounts:
         job = claim(args.db, acc['name'])
@@ -454,6 +463,10 @@ def cmd_status(args):
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+# GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
+# dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
+# Only the explicit opt-in ever parks this way; the default STOP-on-any-NO-GO path never drops.
+PARKED_FOREVER = 2147483647              # ~2038; a 10-digit epoch, safely "never" vs. any real reset
 # (>=5 KB applies to the INPUT payload; the probe validates the OUTPUT by result-envelope structure,
 # not by size -- a valid success wrapper with the small {"ok":true} schema result is fine.)
 
@@ -564,6 +577,43 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     return meas_ms
 
 
+def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
+                latency_ceiling_ms=PROBE_LATENCY_CEILING_MS, events_path=None, run_id=None,
+                drop_unhealthy=False):
+    """GAP #5 (four-profile): probe EACH validated account through the D-K two-phase ``live_probe``
+    (exactly one warm-up + one measured >=5 KB call per account, with each account's warm-up latency
+    EXCLUDED from the census — a 4-profile fleet therefore yields exactly 4 measured latency samples,
+    not 8, so the acceptance census is not inflated). Every call is emitted with ``purpose`` warmup /
+    measured and its own ``account`` label. Returns an ordered ``name -> measured_ms`` map for the
+    accounts that passed — this map is what ``report['probe_latency_ms']`` is rewired from.
+
+    DEFAULT policy is STOP-on-any-NO-GO: the first account whose probe fails (a warm-up STOP, a
+    measured NO-GO, or an over-ceiling reading) aborts the WHOLE fleet by propagating the
+    ``live_probe`` ``SystemExit`` — matching acceptance #1 ("four profile probes succeed") and the
+    existing honest-NO-GO stance. ``drop_unhealthy=True`` is the explicit opt-in to instead DROP a
+    failing account and continue on the healthy subset (still requiring >=1 healthy account); the
+    caller parks the dropped accounts so dispatch proceeds only on the survivors.
+
+    N==1 is a pure pass-through: ``probe_fleet([acc])`` returns ``{acc: live_probe(acc.config_dir,
+    ...)}`` and the single measured latency is identical to the pre-N-profile
+    ``live_probe(accounts[0])`` reading — the Windows-100 single-profile path is unchanged."""
+    latencies = {}
+    for acc in accounts:
+        name = acc['name']
+        try:
+            latencies[name] = live_probe(acc['config_dir'], claude, payload_bytes=payload_bytes,
+                                         model=model, latency_ceiling_ms=latency_ceiling_ms,
+                                         events_path=events_path, run_id=run_id, account=name)
+        except SystemExit as exc:
+            if not drop_unhealthy:
+                # STOP-on-any-NO-GO: one unhealthy profile fails the whole fleet (honest NO-GO).
+                raise SystemExit('fleet probe STOP on account %s: %s' % (name, exc))
+            # explicit opt-in: drop this account and proceed on the healthy subset.
+    if not latencies:
+        raise SystemExit('fleet probe: no healthy validated account (probed %d)' % len(accounts))
+    return latencies
+
+
 def cmd_staged_run(args):
     plan = json.load(open(args.plan, encoding='utf-8'))
     plan_lease_ids = [window['root'] for window in plan.get('windows', [])
@@ -578,11 +628,24 @@ def cmd_staged_run(args):
     db = connect(args.db)
     accounts = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
     db.close()
-    if len(accounts) != 1:
-        raise SystemExit('Windows staged-run requires exactly one validated account')
+    # GAP #5 (four-profile): the staged run now fans across N validated profiles instead of hard-
+    # capping at one. Require >=1 (a zero-account run has nothing to probe or dispatch); --max-
+    # accounts optionally caps the fleet. N==1 remains the exact single-profile Windows-100 path.
+    if not accounts:
+        raise SystemExit('Windows staged-run requires at least one validated account')
+    if getattr(args, 'max_accounts', 0):
+        accounts = accounts[:args.max_accounts]
     run_id = args.run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
-    latency_ms = live_probe(accounts[0]['config_dir'], args.claude_bin,   # D-K: warmup+measured
-                            events_path=args.events, run_id=run_id, account=accounts[0]['name'])
+    # Probe EVERY validated account (D-K warmup+measured per account; census not inflated). DEFAULT
+    # STOP-on-any-NO-GO; --drop-unhealthy opts into proceeding on the healthy subset, parking the
+    # dropped accounts so the dispatch loop below claims only survivors.
+    probe_latencies = probe_fleet(accounts, args.claude_bin, events_path=args.events,
+                                  run_id=run_id, drop_unhealthy=getattr(args, 'drop_unhealthy', False))
+    if getattr(args, 'drop_unhealthy', False):
+        for acc in accounts:
+            if acc['name'] not in probe_latencies:
+                park(args.db, acc['name'], PARKED_FOREVER,
+                     'dropped after probe NO-GO (--drop-unhealthy); healthy subset proceeds')
     db = connect(args.db)
     existing_jobs = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
     db.close()
@@ -623,7 +686,10 @@ def cmd_staged_run(args):
                                  'until %s; rerun with --resume after the reset' % (pending, earliest))
             cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout,
                                             events=args.events, run_id=run_id,
-                                            claude_bin=args.claude_bin))
+                                            claude_bin=args.claude_bin,
+                                            # dispatch ONLY to the probed, capped/healthy fleet —
+                                            # never to a capped-out or dropped (unprobed) account.
+                                            only_accounts=set(probe_latencies)))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
                                            cwd=args.cwd))
         promote = subprocess.run(
@@ -700,7 +766,7 @@ def cmd_staged_run(args):
                         for p in outputs)
     report = {
         'schema': 'pwg.windows100_readiness.v1', 'generated_at': now_iso(),
-        'probe_latency_ms': latency_ms, 'windows': len(outputs),
+        'probe_latency_ms': probe_latencies, 'windows': len(outputs),
         'headwords': expected_headwords, 'actual_unique_headwords': len(headwords),
         'subcards': cards, 'expected_subcards': len(selected_keys),
         'model_nonnull': clean, 'audit_clean': audited_clean,
@@ -784,6 +850,8 @@ def main(argv=None):
     p.add_argument('--plan', required=True)
     p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
     p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
+    p.add_argument('--max-accounts', type=int, default=0)          # GAP #5: cap the validated fleet
+    p.add_argument('--drop-unhealthy', action='store_true')        # GAP #5: proceed on healthy subset
     p.add_argument('--report', required=True)
     p.add_argument('--events', required=True); p.add_argument('--census', required=True)
     p.add_argument('--run-id'); p.set_defaults(func=cmd_staged_run)

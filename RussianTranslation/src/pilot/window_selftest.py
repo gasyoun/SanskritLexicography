@@ -630,6 +630,94 @@ def test_h920_en_missing_sense_hard_flag():
             en.INPUT_DIR = old_dir
 
 
+def test_h960_accept_sanloss_soft_gate():
+    """H960: the harness stamps the deterministic (cross-reference-hardened) source_senses into
+    each input, and accept() carries the SAN-LOSS shortfall guard — H920's deferred deepest fix.
+    SOFT by default (SANLOSS_HARD_REJECT=false): a whole-dropped sense is COUNTED as telemetry but
+    the card is kept; the owner-gated flip rejects+requeues it. The behavioral half runs the REAL
+    emitted accept()+countOf (see accept_sensecount_test.js), so it can't drift from the generator."""
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    d = tempfile.mkdtemp()
+    try:
+        # darv_i: 3 line-opening senses -> source_senses 3. xref: only cross-reference ordinals
+        # ("zu {#ASraya#} 1〉 und 6〉") -> hardened source_senses 0 (the FP-regression shape).
+        raws = {
+            'darv_i~~h0_zz_pw': '=== LAYER: PW ===\n\n{#darvI#}¦\n— 1〉 {%a%}.\n— 2〉 {%b%}.\n— 3〉 {%c%}.',
+            'xref~~h0_zz_pw': '=== LAYER: PW ===\n\nNom. abstr. zu {#ASraya#} 1〉 und 6〉.',
+        }
+        keys = list(raws)
+        paths = {}
+        for k, raw in raws.items():
+            rp = os.path.join(d, k + '.raw.txt')
+            pp = os.path.join(d, k + '.portrait.json')
+            with open(rp, 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(pp, 'w', encoding='utf-8') as f:
+                f.write('[]')
+            paths[k] = (rp, pp)
+        gh.input_paths = lambda k, input_dir=None: paths[k]
+        gh.KILL = False
+        js, _ = gh.build('zz_sanloss', keys, None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        # (1) the soft gates (sanloss + grammar-{Tn}) + owner-gated hard paths + telemetry are emitted
+        for needle in ('const SANLOSS_HARD_REJECT = false', 'SANLOSS_SHORTFALLS',
+                       'sanloss-reject', 'sanloss_shortfalls',
+                       'const TNMASK_HARD_REJECT = false', 'TNMASK_MISMATCHES',
+                       'tnmask-reject', 'tnmask_mismatches'):
+            if needle not in js:
+                fail('accept() SAN-LOSS / {Tn} soft gate not emitted (missing %r)' % needle)
+        # (2) the deterministic source_senses count is stamped into the runtime INPUTS
+        if '"source_senses": 3' not in js:
+            fail('darv_i source_senses (3) must be stamped into the emitted INPUTS')
+        if '"source_senses": 0' not in js:
+            fail('cross-reference xref source_senses must harden to 0 in the emitted INPUTS')
+        # (3) behavioral: the REAL accept() rejects/keeps a shortfall exactly as specified
+        harness = os.path.join(d, 'sanloss_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'accept_sensecount_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('accept() SAN-LOSS behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_h960_dropped_sanskrit_span():
+    """H960 (H911 backlog #3): a {#..#} Sanskrit span present in the German source but dropped from
+    the Russian translation is flagged (dropped_sanskrit_span). The harness/tm fidelity gates count
+    {#..#} only in the german echo, never the translation field, so an intra-sense span that
+    survives the echo but vanishes from the Russian passes clean. LOW / report-only (never in
+    HIGH_CONFIDENCE_RISKS -> never requeues). Structural HEAD labels (headword/preverb/root) are
+    excluded — the measured 95%-false-positive class — so only a genuine intra-sense drop fires."""
+    import prompt_rule_audit as pr
+    def ids(ru, de):
+        return [r['id'] for r in pr.markup_sigla_risks({}, ru, de, '', '3')]
+    # POSITIVE: a genuine mid-sense span drop fires.
+    if 'dropped_sanskrit_span' not in ids('делает что-то несмотря', 'делает что-то {#kar#} несмотря'):
+        fail('dropped_sanskrit_span must fire on a genuine mid-sense {#..#} drop')
+    # CONTROL: span retained -> silent.
+    if 'dropped_sanskrit_span' in ids('делает {#kar#} несмотря', 'делает {#kar#} несмотря'):
+        fail('dropped_sanskrit_span must NOT fire when the span is retained')
+    # CONTROL: a headword-label drop (the darvI FP class) is excluded.
+    if 'dropped_sanskrit_span' in ids('имя собственное страны', '{#darvI#} <ab>N. pr.</ab> eines Landes'):
+        fail('a headword-label {#..#} drop must be excluded (95% FP class)')
+    # CONTROL: a √-root label drop is excluded.
+    if 'dropped_sanskrit_span' in ids('мерить', '√{#mA#} messen'):
+        fail('a root-label {#..#} drop must be excluded')
+    # report-only: never high-confidence (never drives a requeue), and LOW severity.
+    if 'dropped_sanskrit_span' in pr.HIGH_CONFIDENCE_RISKS:
+        fail('dropped_sanskrit_span must stay out of HIGH_CONFIDENCE_RISKS (report-only)')
+    row = [r for r in pr.markup_sigla_risks({}, 'делает что-то несмотря', 'делает что-то {#kar#} несмотря', '', '3')
+           if r['id'] == 'dropped_sanskrit_span'][0]
+    if row['level'] != 'low' or row.get('high_confidence'):
+        fail('dropped_sanskrit_span must be LOW / non-high-confidence, got %r' % row)
+
+
 def test_no_pwg_worklist_runnable_lane():
     """H214: the worklist exposes a no_pwg_runnable lane for PW/SCH/PWKVN-only lemmas and does
     NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
@@ -4504,6 +4592,8 @@ def main():
         test_h920_sense_shortfall_gate_flags_dropped_sense,
         test_h920_no_pwg_portrait_stamps_source_senses,
         test_h920_en_missing_sense_hard_flag,
+        test_h960_accept_sanloss_soft_gate,
+        test_h960_dropped_sanskrit_span,
         test_no_pwg_worklist_runnable_lane,
         test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,

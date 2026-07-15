@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+from collections import Counter
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -106,6 +107,28 @@ IAST_DIACRITIC = re.compile(r'[āīūṛṝḷḹṅñṭḍṇśṣ]')
 RETAINED_SPAN = re.compile(r'\{%.*?%\}|\{#.*?#\}|<(?:ab|ls|is)\b[^>]*>.*?</(?:ab|ls|is)>'
                            r'|<(?:ab|ls|is)\b[^>]*>', re.S | re.I)
 SANSKRIT_SPAN = re.compile(r'\{#.*?#\}', re.S)
+# A leading structural-head span: a {#..#} that is a sub-entry preverb/root/headword LABEL, not
+# an intra-sense Sanskrit span. A faithful Russian translation may legitimately omit such a head
+# label (it is card-level metadata), so it must NOT count as a dropped translation span. H960
+# verify measured 21/22 dropped_sanskrit_span firings corpus-wide to be exactly this class
+# (√{#mA#}, <hom>4.</hom> {#mA/#}¦, <div n="p">— {#aBi#}); excluding it isolates the 1/22 that
+# is a genuine intra-sense drop. Head positions: before the first ¦ (headword pipe), preceded by
+# √, or at the very head of the german after only structural tags / dashes.
+_HEAD_SPAN_AT_START = re.compile(r'^(?:\s|—|–|-|<[^>]*>)*(\{#.*?#\})', re.S)
+_HEAD_SPAN_ROOT = re.compile(r'√\s*(\{#.*?#\})', re.S)
+
+
+def head_label_spans(german):
+    """The set of {#..#} span TEXTS in `german` that sit in a sub-entry head/label position
+    (see _HEAD_SPAN_* above). Compared by content so a head label the translation drops is not
+    mistaken for a lost intra-sense span."""
+    g = german or ''
+    labels = set(SANSKRIT_SPAN.findall(g.split('¦', 1)[0])) if '¦' in g else set()
+    m = _HEAD_SPAN_AT_START.match(g)
+    if m:
+        labels.add(m.group(1))
+    labels.update(_HEAD_SPAN_ROOT.findall(g))
+    return labels
 
 SENSE_REQUIRED = (
     'tag', 'german', 'russian', 'equivalence_type', 'source_type', 'stratum',
@@ -555,6 +578,26 @@ def markup_sigla_risks(sense, russian, german, grammar, tag):
         add_risk(risks, 'markup_wrapper_dropped',
                  'braced gloss wrapper {%%..%%} dropped: %d source vs %d target' % (sgloss, dgloss),
                  tag=tag)
+    # H960 (H911 backlog #3): a {#..#} Sanskrit span present in the German source but dropped from
+    # the Russian translation. The harness accept()/tm gates count {#..#} only in the german echo,
+    # never the translation field, so an intra-sense span that survives the echo but vanishes from
+    # the actual Russian passes clean. Content-multiset diff (not a bare count) so a legitimately
+    # kept-once/repeated span isn't mis-flagged; structural HEAD labels are excluded (the measured
+    # 95%-FP class — see head_label_spans). LOW / report-only: NOT in HIGH_CONFIDENCE_RISKS, so it
+    # never drives a requeue (a systematic preverb-head omission would otherwise arm an unclearable
+    # loop) — a review signal until the live false-flag rate is measured and it can be armed.
+    g_spans = Counter(SANSKRIT_SPAN.findall(german or ''))
+    r_spans = Counter(SANSKRIT_SPAN.findall(russian or ''))
+    dropped = g_spans - r_spans
+    if dropped:
+        heads = head_label_spans(german)
+        real_dropped = Counter({s: n for s, n in dropped.items() if s not in heads})
+        if real_dropped:
+            add_risk(risks, 'dropped_sanskrit_span',
+                     '{#..#} Sanskrit span dropped from translation: %d source vs %d target; non-head dropped: %s'
+                     % (sum(g_spans.values()), sum(r_spans.values()),
+                        ', '.join(sorted(real_dropped.elements()))[:120]),
+                     tag=tag)
     return risks
 
 
