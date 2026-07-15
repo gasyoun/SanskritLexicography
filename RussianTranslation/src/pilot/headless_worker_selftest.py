@@ -41,7 +41,7 @@ def proc(returncode=0, stdout='', stderr=''):
 
 def success_runner(argv, **kwargs):
     assert '--json-schema' in argv and '--model' in argv
-    card = {'key1': 'agni', 'records': [{'senses': [
+    card = {'key1': 'agni', 'records': [{'grammar': '{T1} m.', 'senses': [
         {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
     wrapper = {'structured_output': {'cards': [card]}}
     return proc(stdout=json.dumps(wrapper))
@@ -51,6 +51,7 @@ def main():
     payload, status, code = h.execute(manifest(), runner=success_runner)
     assert code == 0 and status['classification'] == 'success'
     assert payload['results'][0]['card']['records'][0]['senses'][0]['german'].startswith('<ls>')
+    assert payload['results'][0]['card']['records'][0]['grammar'].startswith('<ls>')
     assert payload['meta']['gen_model'] == 'claude-sonnet-5'
 
     def auth_runner(argv, **kwargs):
@@ -138,6 +139,22 @@ def main():
         assert built['schema'] == 'pwg.headless_execution_manifest.v1'
         assert built['batches'] == batches and built['model'] == 'claude-sonnet-5'
         assert json.dumps(built['inputs'], ensure_ascii=True) in js
+        start = js.index('function restoreCard(card, k)')
+        end = js.index('// Per-card grammar', start)
+        restore_card_js = js[start:end]
+        node_script = r"""
+const PH = {agni: ['<lex>m.</lex>']}
+const restore = (t, ph) => (t || '').replace(/\{T(\d+)\}/g, (_m, n) => ph[Number(n)-1])
+%s
+const card = {records: [{grammar: '{T1}', senses: [{german: '{T1}', russian: '{T1}'}]}]}
+console.log(JSON.stringify(restoreCard(card, 'agni')))
+""" % restore_card_js
+        node = subprocess.run(['node', '-e', node_script], capture_output=True,
+                              text=True, encoding='utf-8')
+        assert node.returncode == 0, node.stderr
+        restored = json.loads(node.stdout)
+        assert restored['records'][0]['grammar'] == '<lex>m.</lex>'
+        assert restored['records'][0]['senses'][0]['german'] == '<lex>m.</lex>'
 
     # D-A (H818 Windows acceptance): the launcher resolver must bypass the Windows .cmd
     # batch shim (cmd.exe corrupts the --json-schema arg) and pass native/POSIX through.

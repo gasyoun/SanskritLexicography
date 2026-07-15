@@ -19,6 +19,7 @@ import time
 
 from run_observability import append_event, write_census
 from headless_worker import claude_argv_prefix, run_tree_kill, windows_hidden_flags
+from window_common import atomic_write_text
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -111,11 +112,7 @@ def sha256_path(path):
 
 
 def atomic_write(path, text):
-    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-    tmp = path + '.tmp.%d' % os.getpid()
-    with open(tmp, 'w', encoding='utf-8') as f:
-        f.write(text)
-    os.replace(tmp, path)
+    atomic_write_text(path, text)
 
 
 def parse_reset(text, now=None):
@@ -124,7 +121,30 @@ def parse_reset(text, now=None):
     return int(match.group(1)) if match else now + 5 * 60 * 60
 
 
-def _claim_tx(db, account, now):
+def _scope_sql(only_external_ids):
+    if only_external_ids is None:
+        return '', ()
+    ids = tuple(sorted(set(only_external_ids)))
+    if not ids:
+        return ' AND 0', ()
+    return ' AND external_id IN (%s)' % ','.join('?' for _ in ids), ids
+
+
+def scoped_job_count(db, only_external_ids, predicate):
+    scope_sql, scope_args = _scope_sql(only_external_ids)
+    return db.execute(
+        'SELECT count(*) FROM jobs WHERE %s%s' % (predicate, scope_sql),
+        scope_args).fetchone()[0]
+
+
+def scoped_jobs(db, only_external_ids, predicate='1=1'):
+    scope_sql, scope_args = _scope_sql(only_external_ids)
+    return list(db.execute(
+        'SELECT * FROM jobs WHERE %s%s ORDER BY id' % (predicate, scope_sql),
+        scope_args))
+
+
+def _claim_tx(db, account, now, only_external_ids=None):
     """The atomic claim transaction on an ALREADY-OPEN connection. Split out from ``claim`` so the
     concurrency race test can open independent connections BEFORE a barrier and fire both
     transactions at the same instant; production ``claim`` owns its own connection."""
@@ -142,7 +162,10 @@ def _claim_tx(db, account, now):
                   (account,)).fetchone():
         db.rollback()
         return None
-    job = db.execute("SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts ORDER BY id LIMIT 1").fetchone()
+    scope_sql, scope_args = _scope_sql(only_external_ids)
+    job = db.execute(
+        "SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts%s "
+        "ORDER BY id LIMIT 1" % scope_sql, scope_args).fetchone()
     if not job:
         db.rollback()
         return None
@@ -156,11 +179,11 @@ def _claim_tx(db, account, now):
     return db.execute('SELECT * FROM jobs WHERE id=?', (job['id'],)).fetchone()
 
 
-def claim(db_path, account, now=None):
+def claim(db_path, account, now=None, only_external_ids=None):
     now = int(now or time.time())
     db = connect(db_path)
     try:
-        return _claim_tx(db, account, now)
+        return _claim_tx(db, account, now, only_external_ids=only_external_ids)
     finally:
         db.close()
 
@@ -397,7 +420,9 @@ def cmd_recover(args):
 
 def cmd_record_done(args):
     db = connect(args.db)
-    jobs = list(db.execute("SELECT * FROM jobs WHERE state='done' AND coordinator_recorded=0 ORDER BY id"))
+    jobs = scoped_jobs(
+        db, getattr(args, 'only_external_ids', None),
+        "state='done' AND coordinator_recorded=0")
     db.close()
     recorded = 0
     for job in jobs:
@@ -435,7 +460,8 @@ def cmd_run_once(args):
         accounts = [a for a in accounts if a['name'] in only]
     work = []
     for acc in accounts:
-        job = claim(args.db, acc['name'])
+        job = claim(args.db, acc['name'],
+                    only_external_ids=getattr(args, 'only_external_ids', None))
         if job:
             work.append((acc, job))
     if not work:
@@ -659,13 +685,17 @@ def cmd_staged_run(args):
         import_args = argparse.Namespace(db=args.db, coord_dir=args.coord_dir, cwd=args.cwd,
                                          lease_id=to_import, max_attempts=2)
         cmd_import_coordinator(import_args)
-    completed_before = 0
+    lease_scope = set(lease_ids)
+    db = connect(args.db)
+    completed_before = scoped_job_count(db, lease_scope, "state='done'")
+    db.close()
     started = time.monotonic()
     while True:
         db = connect(args.db)
-        pending = db.execute("SELECT count(*) FROM jobs WHERE state='pending'").fetchone()[0]
-        done_unrecorded = db.execute("SELECT count(*) FROM jobs WHERE state='done' AND coordinator_recorded=0").fetchone()[0]
-        failed = db.execute("SELECT count(*) FROM jobs WHERE state='failed'").fetchone()[0]
+        pending = scoped_job_count(db, lease_scope, "state='pending'")
+        done_unrecorded = scoped_job_count(
+            db, lease_scope, "state='done' AND coordinator_recorded=0")
+        failed = scoped_job_count(db, lease_scope, "state='failed'")
         db.close()
         if failed:
             raise SystemExit('staged-run stopped: failed jobs=%d' % failed)
@@ -689,17 +719,21 @@ def cmd_staged_run(args):
                                             claude_bin=args.claude_bin,
                                             # dispatch ONLY to the probed, capped/healthy fleet —
                                             # never to a capped-out or dropped (unprobed) account.
-                                            only_accounts=set(probe_latencies)))
+                                            only_accounts=set(probe_latencies),
+                                            only_external_ids=lease_scope))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
-                                           cwd=args.cwd))
+                                           cwd=args.cwd, only_external_ids=lease_scope))
+        promote_cmd = [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
+                       '--gen-model-version', 'claude-sonnet-5']
+        for lease_id in sorted(lease_scope):
+            promote_cmd += ['--lease-id', lease_id]
         promote = subprocess.run(
-            [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
-             '--gen-model-version', 'claude-sonnet-5'], cwd=os.path.abspath(args.cwd),
+            promote_cmd, cwd=os.path.abspath(args.cwd),
             text=True, encoding='utf-8', capture_output=True)
         if promote.returncode and 'no ready leases to promote' not in (promote.stderr + promote.stdout):
             raise SystemExit('promotion failed: %s' % (promote.stderr or promote.stdout)[-1000:])
         db = connect(args.db)
-        done_now = db.execute("SELECT count(*) FROM jobs WHERE state='done'").fetchone()[0]
+        done_now = scoped_job_count(db, lease_scope, "state='done'")
         db.close()
         if done_now > completed_before:
             completed_before = done_now
@@ -707,7 +741,7 @@ def cmd_staged_run(args):
                 print('restart checkpoint reached after %d window(s); rerun with --resume' % done_now)
                 return
     db = connect(args.db)
-    jobs = list(db.execute('SELECT * FROM jobs ORDER BY id'))
+    jobs = scoped_jobs(db, lease_scope)
     db.close()
     outputs = []
     for job in jobs:
@@ -721,7 +755,7 @@ def cmd_staged_run(args):
     fidelity = len([v for v in failures.values() if 'fidelity' in str(v)])
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = json.load(open(coord_state_path, encoding='utf-8'))
-    lease_ids = {job['external_id'] for job in jobs}
+    lease_ids = lease_scope
     audited_clean = sum(int(lease.get('clean_count') or 0)
                         for lease in coord_state.get('leases', [])
                         if lease.get('id') in lease_ids)

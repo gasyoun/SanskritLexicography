@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Rootmap/input provenance checks for optimized Max workflow output."""
+from collections import Counter
 import os
 
 from window_common import HERE, INP, sha256_file, load_json, rootmap_for, input_paths, harness_meta
@@ -76,11 +77,60 @@ def current_root_provenance(root, selected_keys=None, nominal=False):
     }
 
 
-def stale_check(root, workflow_meta, workflow_keys):
+def _key_coverage(check, workflow_keys, expected_keys, label):
+    got = Counter(workflow_keys)
+    expected = Counter(expected_keys)
+    duplicates = {key: count for key, count in got.items() if count > 1}
+    expected_duplicates = {key: count for key, count in expected.items() if count > 1}
+    if got == expected and not duplicates and not expected_duplicates:
+        return
+    missing = sorted((expected - got).elements())
+    unexpected = sorted((got - expected).elements())
+    check['errors'].append(
+        '%s keys do not match exactly once (workflow=%d expected=%d missing=%d '
+        'unexpected=%d duplicates=%d)' %
+        (label, len(workflow_keys), len(expected_keys), len(missing), len(unexpected),
+         len(duplicates)))
+    check['missing_keys'] = missing
+    check['unexpected_keys'] = unexpected
+    check['duplicate_keys'] = duplicates
+    check['expected_duplicate_keys'] = expected_duplicates
+
+
+def stale_check(root, workflow_meta, workflow_keys, execution_manifest=None):
+    requested_root = root
     check = {'ok': True, 'stale': False, 'warnings': [], 'errors': [],
-             'workflow_meta': workflow_meta or {}, 'current': None}
-    if not root:
-        check['warnings'].append('no --root supplied; rootmap/input staleness was not checked')
+             'workflow_meta': workflow_meta or {}, 'current': None,
+             'execution_manifest': None}
+    manifest_meta = None
+    if execution_manifest is not None:
+        if execution_manifest.get('_load_error'):
+            check['errors'].append('execution manifest could not be loaded: %s' %
+                                   execution_manifest['_load_error'])
+        elif execution_manifest.get('schema') != 'pwg.headless_execution_manifest.v1':
+            check['errors'].append('unsupported execution manifest schema: %r' %
+                                   execution_manifest.get('schema'))
+        elif not isinstance(execution_manifest.get('meta'), dict):
+            check['errors'].append('execution manifest meta is missing or invalid')
+        else:
+            manifest_meta = execution_manifest['meta']
+            check['execution_manifest'] = {
+                'schema': execution_manifest['schema'],
+                'root': manifest_meta.get('root'),
+                'nominal': bool(manifest_meta.get('nominal')),
+                'selected_keys': manifest_meta.get('selected_keys') or [],
+            }
+            if requested_root and requested_root != manifest_meta.get('root'):
+                check['errors'].append('requested root %r != execution manifest root %r' %
+                                       (requested_root, manifest_meta.get('root')))
+            root = root or manifest_meta.get('root')
+
+    if not root and manifest_meta is None:
+        if check['errors']:
+            check['ok'] = False
+            check['stale'] = True
+        else:
+            check['warnings'].append('no --root supplied; rootmap/input staleness was not checked')
         return check
     if not workflow_meta:
         check['ok'] = False
@@ -88,8 +138,29 @@ def stale_check(root, workflow_meta, workflow_keys):
         check['errors'].append('workflow meta missing from wf_output; fresh Max output is required')
         selected_keys = None
     else:
-        selected_keys = workflow_meta.get('selected_keys') or None
-    nominal = bool((workflow_meta or {}).get('nominal'))
+        selected_keys = ((manifest_meta or {}).get('selected_keys')
+                         or workflow_meta.get('selected_keys') or None)
+    nominal = bool((manifest_meta or workflow_meta or {}).get('nominal'))
+
+    if manifest_meta is not None and workflow_meta:
+        manifest_keys = manifest_meta.get('selected_keys') or []
+        workflow_selected = workflow_meta.get('selected_keys') or []
+        if Counter(workflow_selected) != Counter(manifest_keys):
+            check['errors'].append('workflow selected_keys do not match execution manifest')
+        if workflow_meta.get('root') != manifest_meta.get('root'):
+            check['errors'].append('workflow root %r != execution manifest root %r' %
+                                   (workflow_meta.get('root'), manifest_meta.get('root')))
+        if bool(workflow_meta.get('nominal')) != bool(manifest_meta.get('nominal')):
+            check['errors'].append('workflow nominal mode does not match execution manifest')
+        if workflow_meta.get('rootmap_sha256') != manifest_meta.get('rootmap_sha256'):
+            check['errors'].append('workflow rootmap hash does not match execution manifest')
+        if workflow_meta.get('input_hashes') != manifest_meta.get('input_hashes'):
+            check['errors'].append('workflow input hashes do not match execution manifest')
+
+    if manifest_meta is not None:
+        _key_coverage(check, workflow_keys, manifest_meta.get('selected_keys') or [],
+                      'execution manifest')
+
     current = current_root_provenance(root, selected_keys, nominal=nominal)
     check['current'] = current
     if not current.get('ok'):
@@ -105,16 +176,7 @@ def stale_check(root, workflow_meta, workflow_keys):
         if invalid:
             check['errors'].append('workflow selected keys not in current rootmap: %s' %
                                    ', '.join(invalid[:12]))
-    workflow_key_set = set(workflow_keys)
-    expected_key_set = set(expected_keys)
-    if workflow_key_set != expected_key_set:
-        missing = sorted(expected_key_set - workflow_key_set)
-        unexpected = sorted(workflow_key_set - expected_key_set)
-        check['errors'].append('workflow keys do not match current selected rootmap keys '
-                               '(workflow=%d expected=%d missing=%d unexpected=%d)' %
-                               (len(workflow_keys), len(expected_keys), len(missing), len(unexpected)))
-        check['missing_keys'] = missing
-        check['unexpected_keys'] = unexpected
+    _key_coverage(check, workflow_keys, expected_keys, 'current selected rootmap')
     if current['missing_inputs']:
         check['errors'].append('current raw/portrait inputs missing: %s' %
                                ', '.join(current['missing_inputs'][:12]))

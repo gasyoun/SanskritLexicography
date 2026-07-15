@@ -18,6 +18,28 @@ import max_account_orchestrator as m
 
 def main():
     with tempfile.TemporaryDirectory() as td:
+        scoped_db = os.path.join(td, 'scope.sqlite')
+        m.main(['--db', scoped_db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
+                '--skip-profile-check'])
+        for external_id in ('historic-failed', 'current'):
+            m.main(['--db', scoped_db, 'enqueue', '--external-id', external_id,
+                    '--argv-json', json.dumps([sys.executable, '-c', 'print(1)']), '--cwd', td,
+                    '--output', os.path.join(td, external_id + '.json')])
+        con = m.connect(scoped_db)
+        with con:
+            con.execute("UPDATE jobs SET state='failed' WHERE external_id='historic-failed'")
+        con.close()
+        claimed = m.claim(scoped_db, 'acc', only_external_ids={'current'})
+        assert claimed and claimed['external_id'] == 'current'
+        m.finish(scoped_db, claimed['id'], 'done', 0)
+        con = m.connect(scoped_db)
+        assert m.scoped_job_count(con, {'current'}, "state='failed'") == 0
+        assert [row['external_id'] for row in m.scoped_jobs(
+            con, {'current'}, "state='done' AND coordinator_recorded=0")] == ['current']
+        con.close()
+    print('  staged scope: unrelated failed/history jobs excluded from claims and counts')
+
+    with tempfile.TemporaryDirectory() as td:
         db = os.path.join(td, 'q.sqlite')
         m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'),
                 '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
