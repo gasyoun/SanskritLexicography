@@ -1,6 +1,9 @@
 # Literature Collection - Markdown Index
 
-This directory contains markdown reference files for all documents in the literature collection.
+This directory contains markdown files for the literature collection: some are full-text
+conversions of a source document, others are short paraphrase digests (citation + scope
+summary, no reproduced passages) that stand in for a source document per a per-work rights
+review. Each file's own header states which kind it is.
 
 ## Structure
 
@@ -11,13 +14,14 @@ Core reference works on Sanskrit composition and syntax:
 - **Speyer-Syntax1886.md** - J.S. Speyer's historical Sanskrit syntax reference (1886)
 - **Tubb-ScholasticSans-2007.md** - Gary Tubb's scholastic Sanskrit grammar (2007)
 
-### Lexicography-Manuals/ (37 files)
+### Lexicography-Manuals/ (38 content files + 1 metadoc)
 Comprehensive lexicography and corpus linguistics reference collection including:
 - Historical and modern lexicography manuals
 - Corpus linguistics methodologies
 - Grammar and syntax studies
 - Sanskrit-specific linguistic resources
 - Publications from Oxford, Routledge, Cambridge, and other academic presses
+- One paraphrase digest (`making-dictionaries-mdf-coward-grimes-2000.md`)
 
 ### Вспомогательное/ (15 files)
 Supporting materials including:
@@ -25,6 +29,7 @@ Supporting materials including:
 - Comparative syntax studies
 - Word formation analysis
 - Additional scholarly references
+- Four paraphrase digests (Zaliznyak & Paducheva 1975, Jakobson 1987, Mitrenina 2008/2010)
 
 ### На иностранных/ (3 files)
 Foreign language materials including:
@@ -37,6 +42,7 @@ General syntax materials covering:
 - Syntax encyclopedic references
 - Linguistic analysis frameworks
 - Educational materials on syntax
+- Five paraphrase digests (Entsiklopedicheskiy slovar 1984, Kibrik et al., Testelets, Lomov, Sintaksis-2009)
 
 ## File Format
 
@@ -47,11 +53,17 @@ Each markdown file contains:
 - **Modified:** Last modification date
 - **Link:** Reference to original file location
 
+Digest files instead carry a dated header, full citation, honest scope/argument summary, and
+a "why this project uses it" section — no reproduced passages of the source text.
+
 ## Usage
 
-These markdown files serve as an index and quick reference to the literature collection. For full content, refer to the original files linked in each markdown file.
+Full-text files are direct conversions of the source PDF/DOC and can be searched/quoted
+directly. Digest files summarize a source that is not redistributed in full here; consult the
+original (held outside this repo) for anything beyond what the digest's own citation and scope
+summary cover.
 
 ---
 
-Generated: 2026-06-26
-Total files referenced: 65
+Generated: 2026-06-26 · Digests added 15-07-2026
+Total files referenced: 67
