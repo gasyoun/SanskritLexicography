@@ -2854,20 +2854,33 @@ def test_coordinator_requeue_attempt_manifests():
         with open(initial_manifest, 'w', encoding='utf-8') as f:
             json.dump(original, f)
         original_bytes = open(initial_manifest, 'rb').read()
-        with open(os.path.join(artifacts, 'requeue.transient.keys.txt'),
-                  'w', encoding='utf-8') as f:
-            f.write('a~~x\n')
+        audit_report = os.path.join(artifacts, 'audit_window.report.json')
+        report = {
+            'keys': ['a~~x', 'b~~x'], 'requeue': ['a~~x', 'b~~x'],
+            'requeue_transient': ['a~~x'], 'requeue_defect': ['b~~x'],
+            'requeue_defect_fshas': ['frag-b'],
+        }
+        with open(audit_report, 'w', encoding='utf-8') as f:
+            json.dump(report, f)
+        pending = coordinator.pending_from_report(
+            report, audit_report, original['meta']['selected_keys'])
+        orphan = os.path.join(artifacts, 'requeue', 'rq01-defect')
+        os.makedirs(orphan)
         state = coordinator.default_state()
         state['leases'] = [{
             'id': 'lease', 'kind': 'nominal', 'target': 'a',
             'state': 'promoted_partial', 'artifact_dir': artifacts,
             'execution_manifest': initial_manifest,
-            'status_path': os.path.join(artifacts, 'window_status.json'),
+            'origin_execution_manifest': initial_manifest,
+            'origin_execution_manifest_sha256': coordinator.sha256_file(initial_manifest),
+            'pending_requeue': pending,
         }]
         coordinator.save_state(state)
 
         class FakeProc:
             stdout = 'generated requeue harness\n'
+
+        fail_once = [True]
 
         def fake_run(cmd):
             out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
@@ -2876,6 +2889,9 @@ def test_coordinator_requeue_attempt_manifests():
             rqfile = next(arg.split('=', 1)[1] for arg in cmd
                           if arg.startswith('--requeue-file='))
             keys = [line.strip() for line in open(rqfile, encoding='utf-8') if line.strip()]
+            if fail_once[0]:
+                fail_once[0] = False
+                raise SystemExit('synthetic generation failure')
             os.makedirs(os.path.dirname(out), exist_ok=True)
             with open(out, 'w', encoding='utf-8') as f:
                 f.write('// generated\n')
@@ -2888,11 +2904,27 @@ def test_coordinator_requeue_attempt_manifests():
 
         coordinator.run_cmd = fake_run
         try:
+            try:
+                coordinator.prepare_requeue(SimpleNamespace(
+                    lease_id='lease', transient=True, defect=False))
+                fail('synthetic requeue generation failure was not propagated')
+            except SystemExit as exc:
+                if 'synthetic' not in str(exc):
+                    raise
+            lease = coordinator.load_state()['leases'][0]
+            failed_dir = os.path.join(artifacts, 'requeue', 'rq02-transient')
+            if os.path.exists(failed_dir) or lease.get('requeue_attempt'):
+                fail('caught generation failure consumed an attempt or left its directory')
+            if set(coordinator.pending_key_set(lease['pending_requeue'])) != {'a~~x', 'b~~x'}:
+                fail('caught generation failure changed the pending backlog')
+
             coordinator.prepare_requeue(SimpleNamespace(
                 lease_id='lease', transient=True, defect=False))
             lease = coordinator.load_state()['leases'][0]
-            if lease['requeue_attempt'] != 1 or 'rq01-transient' not in lease['current_artifact_dir']:
-                fail('first requeue attempt did not receive its own artifact directory')
+            if lease['requeue_attempt'] != 2 or 'rq02-transient' not in lease['current_artifact_dir']:
+                fail('requeue did not advance past the preserved orphan directory')
+            if not os.path.isdir(orphan) or not lease.get('orphaned_requeue_attempts'):
+                fail('orphaned requeue attempt was deleted or not recorded')
             if json.load(open(lease['execution_manifest'], encoding='utf-8'))[
                     'meta']['selected_keys'] != ['a~~x']:
                 fail('requeue attempt manifest was not narrowed to its exact keys')
@@ -2900,6 +2932,9 @@ def test_coordinator_requeue_attempt_manifests():
                 fail('requeue preparation modified the original execution manifest')
             if len(lease['execution_manifest_history']) != 2:
                 fail('initial and first-attempt manifests were not retained in history')
+            remaining = lease['current_attempt']['remaining_pending']
+            if remaining['transient'] or remaining['defect'] != ['b~~x']:
+                fail('unselected defect lane was not carried into the attempt')
             attempt_manifest = json.load(open(lease['execution_manifest'], encoding='utf-8'))
             old_inp = window_provenance.INP
             window_provenance.INP = input_dir
@@ -2916,20 +2951,115 @@ def test_coordinator_requeue_attempt_manifests():
                 window_provenance.INP = old_inp
 
             latest_dir = lease['current_artifact_dir']
-            with open(os.path.join(latest_dir, 'requeue.transient.keys.txt'),
-                      'w', encoding='utf-8') as f:
-                f.write('a~~x\n')
+            latest_report_path = os.path.join(latest_dir, 'audit_window.report.json')
+            latest_report = {
+                'keys': ['a~~x'], 'requeue': [],
+                'requeue_transient': [], 'requeue_defect': [],
+                'requeue_defect_fshas': [],
+            }
+            with open(latest_report_path, 'w', encoding='utf-8') as f:
+                json.dump(latest_report, f)
+            latest_pending = coordinator.pending_from_report(
+                latest_report, latest_report_path, ['a~~x'])
+            carried = coordinator.merge_pending_requeue(
+                lease, remaining, latest_pending,
+                coordinator.ensure_origin_manifest(lease))
+            if coordinator.recorded_lease_state('clean', [], [{'card': {}}], carried) != (
+                    'ready_partial', True):
+                fail('a clean transient retry with carried defect work must stay ready_partial')
             state = coordinator.load_state()
-            state['leases'][0]['state'] = 'transient_only'
-            state['leases'][0]['status_path'] = os.path.join(latest_dir, 'window_status.json')
+            state['leases'][0]['state'] = 'promoted_partial'
+            state['leases'][0]['pending_requeue'] = carried
             coordinator.save_state(state)
             coordinator.prepare_requeue(SimpleNamespace(
-                lease_id='lease', transient=True, defect=False))
+                lease_id='lease', transient=False, defect=True))
             lease = coordinator.load_state()['leases'][0]
-            if lease['requeue_attempt'] != 2 or 'rq02-transient' not in lease['current_artifact_dir']:
-                fail('repeated requeue did not advance from the latest audit directory')
+            if lease['requeue_attempt'] != 3 or 'rq03-defect' not in lease['current_artifact_dir']:
+                fail('carried defect lane did not receive the next attempt')
+            if lease['current_attempt']['selected_keys'] != ['b~~x']:
+                fail('carried defect key was not selected after transient recovery')
+            if coordinator.pending_key_set(lease['current_attempt']['remaining_pending']):
+                fail('final defect attempt retained a phantom pending sibling')
+            fsha_path = os.path.join(lease['current_artifact_dir'],
+                                     'requeue.defect.fshas.txt')
+            if open(fsha_path, encoding='utf-8').read().strip() != 'frag-b':
+                fail('defect fragment denylist evidence was not materialized per attempt')
             if len(lease['execution_manifest_history']) != 3:
                 fail('repeated requeue did not preserve every prior manifest')
+
+            reverse = coordinator.pending_without_kind(pending, 'defect')
+            if reverse['transient'] != ['a~~x'] or reverse['defect']:
+                fail('defect-first recovery did not preserve the transient sibling')
+            unresolved_report_path = os.path.join(tmp, 'unresolved.json')
+            unresolved_report = {
+                'keys': ['a~~x'], 'requeue': ['a~~x'],
+                'requeue_transient': ['a~~x'], 'requeue_defect': [],
+            }
+            with open(unresolved_report_path, 'w', encoding='utf-8') as f:
+                json.dump(unresolved_report, f)
+            unresolved = coordinator.pending_from_report(
+                unresolved_report, unresolved_report_path, ['a~~x'])
+            mixed_unresolved = coordinator.merge_pending_requeue(
+                lease, remaining, unresolved, coordinator.ensure_origin_manifest(lease))
+            if coordinator.recorded_lease_state(
+                    'transient_only', [], [], mixed_unresolved) != ('needs_requeue', False):
+                fail('an unresolved transient retry hid its carried defect sibling')
+
+            foreign_report_path = os.path.join(tmp, 'foreign.json')
+            foreign_report = {
+                'keys': ['foreign'], 'requeue': ['foreign'],
+                'requeue_transient': ['foreign'], 'requeue_defect': [],
+            }
+            with open(foreign_report_path, 'w', encoding='utf-8') as f:
+                json.dump(foreign_report, f)
+            foreign = coordinator.pending_from_report(
+                foreign_report, foreign_report_path, ['foreign'])
+            try:
+                coordinator.validate_pending_requeue(
+                    lease, foreign, coordinator.ensure_origin_manifest(lease))
+                fail('foreign pending key escaped the origin manifest')
+            except SystemExit as exc:
+                if 'escapes origin' not in str(exc):
+                    raise
+
+            tampered_report_path = os.path.join(tmp, 'tampered.json')
+            with open(tampered_report_path, 'w', encoding='utf-8') as f:
+                json.dump(unresolved_report, f)
+            tampered = coordinator.pending_from_report(
+                unresolved_report, tampered_report_path, ['a~~x'])
+            with open(tampered_report_path, 'w', encoding='utf-8') as f:
+                json.dump(dict(unresolved_report, marker='changed'), f)
+            try:
+                coordinator.validate_pending_requeue(
+                    lease, tampered, coordinator.ensure_origin_manifest(lease))
+                fail('changed pending source report was accepted')
+            except SystemExit as exc:
+                if 'hash changed' not in str(exc):
+                    raise
+
+            invalid_reports = [
+                ({'keys': ['a~~x'], 'requeue': ['a~~x', 'a~~x'],
+                  'requeue_transient': ['a~~x', 'a~~x'], 'requeue_defect': []},
+                 'duplicate'),
+                ({'keys': ['a~~x'], 'requeue': ['a~~x'],
+                  'requeue_transient': ['a~~x'], 'requeue_defect': ['a~~x']},
+                 'overlap'),
+                ({'keys': ['a~~x', 'b~~x'], 'requeue': ['a~~x', 'b~~x'],
+                  'requeue_transient': ['a~~x'], 'requeue_defect': []},
+                 'do not equal'),
+            ]
+            for invalid, expected in invalid_reports:
+                try:
+                    coordinator.report_requeue_parts(invalid, invalid['keys'])
+                    fail('invalid split requeue report was accepted')
+                except SystemExit as exc:
+                    if expected not in str(exc):
+                        raise
+
+            history_only = {'execution_manifest_history': [
+                {'attempt': 7, 'artifact_dir': os.path.join(tmp, 'gone-rq07')}]}
+            if coordinator.next_requeue_attempt(history_only, os.path.join(tmp, 'empty'))[0] != 8:
+                fail('attempt allocation ignored the maximum recorded historical attempt')
 
             state = coordinator.load_state()
             state['leases'][0]['state'] = 'ready_partial'
@@ -2943,6 +3073,155 @@ def test_coordinator_requeue_attempt_manifests():
                     fail('ready_partial refusal did not explain the promotion prerequisite')
         finally:
             coordinator.run_cmd = original_run
+            if old_coord is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old_coord
+
+
+def test_coordinator_mixed_lane_public_state_sequence():
+    import coordinator
+    from types import SimpleNamespace
+
+    old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    original_run = coordinator.run_cmd
+    original_store = coordinator.promote_final_cards.DEFAULT_STORE
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        store = os.path.join(tmp, 'store.jsonl')
+        open(store, 'w', encoding='utf-8').close()
+        coordinator.promote_final_cards.DEFAULT_STORE = store
+        initial_dir = os.path.join(tmp, 'artifacts', 'lease')
+        os.makedirs(initial_dir)
+        origin_manifest = os.path.join(initial_dir, 'execution_manifest.lease.json')
+        origin = {
+            'schema': 'pwg.headless_execution_manifest.v1',
+            'meta': {'root': 'nominal_mixed', 'nominal': True,
+                     'selected_keys': ['a~~x', 'b~~x'], 'input_hashes': {}},
+        }
+        with open(origin_manifest, 'w', encoding='utf-8') as f:
+            json.dump(origin, f)
+        state = coordinator.default_state()
+        state['leases'] = [{
+            'id': 'lease', 'kind': 'nominal', 'target': 'mixed', 'state': 'prepared',
+            'artifact_dir': initial_dir, 'current_artifact_dir': initial_dir,
+            'execution_manifest': origin_manifest,
+            'origin_execution_manifest': origin_manifest,
+            'origin_execution_manifest_sha256': coordinator.sha256_file(origin_manifest),
+        }]
+        coordinator.save_state(state)
+
+        audit_specs = [{
+            'state': 'needs_requeue', 'returncode': 1,
+            'requeue': ['a~~x', 'b~~x'],
+            'transient': ['a~~x'], 'defect': ['b~~x'],
+        }, {
+            'state': 'clean', 'returncode': 0, 'requeue': [],
+            'transient': [], 'defect': [],
+        }, {
+            'state': 'clean', 'returncode': 0, 'requeue': [],
+            'transient': [], 'defect': [],
+        }]
+
+        def fake_run(cmd, check=True):
+            script = os.path.basename(cmd[1]) if len(cmd) > 1 else ''
+            if script == 'audit_window.py':
+                spec = audit_specs.pop(0)
+                wf = cmd[2]
+                adir = cmd[cmd.index('--out-dir') + 1]
+                status = {'state': spec['state'], 'requeue_keys': spec['requeue']}
+                report = {
+                    'workflow': wf, 'keys': json.load(open(
+                        cmd[cmd.index('--execution-manifest') + 1], encoding='utf-8'))[
+                            'meta']['selected_keys'],
+                    'requeue': spec['requeue'],
+                    'requeue_transient': spec['transient'],
+                    'requeue_defect': spec['defect'],
+                    'requeue_defect_fshas': ['frag-b'] if spec['defect'] else [],
+                    'crashed': [], 'stale_check': {'ok': True},
+                }
+                with open(os.path.join(adir, 'window_status.json'), 'w', encoding='utf-8') as f:
+                    json.dump(status, f)
+                with open(os.path.join(adir, 'audit_window.report.json'),
+                          'w', encoding='utf-8') as f:
+                    json.dump(report, f)
+                return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
+            if script == 'promote_final_cards.py':
+                with open(store, 'a', encoding='utf-8') as f:
+                    f.write(json.dumps({'promoted': True}) + '\n')
+            return SimpleNamespace(returncode=0, stdout='', stderr='')
+
+        def result_file(name, keys):
+            path = os.path.join(tmp, name)
+            payload = {'results': [
+                {'key': key, 'card': {'key1': key, 'records': []}} for key in keys]}
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(payload, f)
+            return path
+
+        def record(path):
+            coordinator.record_output(SimpleNamespace(
+                lease_id='lease', workflow_result=path, allow_stale=False,
+                transcript_dir=None))
+
+        def set_attempt(number, kind, key, remaining):
+            adir = os.path.join(initial_dir, 'requeue', 'rq%02d-%s' % (number, kind))
+            os.makedirs(adir)
+            manifest = os.path.join(adir, 'execution_manifest.json')
+            attempt = dict(origin)
+            attempt['meta'] = dict(origin['meta'], selected_keys=[key])
+            with open(manifest, 'w', encoding='utf-8') as f:
+                json.dump(attempt, f)
+            state = coordinator.load_state()
+            lease = state['leases'][0]
+            lease.update({
+                'state': 'requeue_prepared', 'current_artifact_dir': adir,
+                'execution_manifest': manifest, 'requeue_attempt': number,
+                'current_attempt': {
+                    'number': number, 'kind': kind, 'artifact_dir': adir,
+                    'execution_manifest': manifest, 'selected_keys': [key],
+                    'remaining_pending': remaining,
+                },
+            })
+            coordinator.save_state(state)
+
+        coordinator.run_cmd = fake_run
+        try:
+            record(result_file('initial.json', ['a~~x', 'b~~x']))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['state'] != 'needs_requeue':
+                fail('mixed initial audit did not enter needs_requeue')
+            pending = lease['pending_requeue']
+            if pending['transient'] != ['a~~x'] or pending['defect'] != ['b~~x']:
+                fail('record-output did not persist both provenance-bound retry lanes')
+
+            carried_b = coordinator.pending_without_kind(pending, 'transient')
+            set_attempt(1, 'transient', 'a~~x', carried_b)
+            record(result_file('retry-a.json', ['a~~x']))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['state'] != 'ready_partial' or lease['pending_requeue']['defect'] != ['b~~x']:
+                fail('clean transient retry did not retain the defect backlog')
+            coordinator.promote_ready(SimpleNamespace(
+                gen_model_version='claude-sonnet-5', lease_id=['lease']))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['state'] != 'promoted_partial':
+                fail('mixed backlog promotion did not remain promoted_partial')
+
+            set_attempt(2, 'defect', 'b~~x', coordinator.empty_pending_requeue())
+            record(result_file('retry-b.json', ['b~~x']))
+            lease = coordinator.load_state()['leases'][0]
+            if lease['state'] != 'ready' or coordinator.pending_key_set(
+                    lease['pending_requeue']):
+                fail('final clean defect retry did not drain the pending backlog')
+            coordinator.promote_ready(SimpleNamespace(
+                gen_model_version='claude-sonnet-5', lease_id=['lease']))
+            if coordinator.load_state()['leases'][0]['state'] != 'promoted':
+                fail('drained mixed retry sequence did not finish promoted')
+            if audit_specs:
+                fail('mixed-lane integration did not consume every planned audit')
+        finally:
+            coordinator.run_cmd = original_run
+            coordinator.promote_final_cards.DEFAULT_STORE = original_store
             if old_coord is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
@@ -4938,6 +5217,7 @@ def main():
         test_coordinator_lock_creates_parent_dir,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
         test_coordinator_requeue_attempt_manifests,
+        test_coordinator_mixed_lane_public_state_sequence,
         test_promote_nominal_key1,
         test_build_emits_nominal_keymap,
         test_generation_schema_carries_no_post_generation_field,
