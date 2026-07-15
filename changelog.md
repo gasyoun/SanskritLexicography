@@ -14,6 +14,22 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.16] - 2026-07-15
+
+### Added
+- **H994 (pre-named H963) — PWG-RU two-profile live-ladder measurement, owner Option B (15-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, Ultracode; measurement-only, no promotion — store unchanged at 11,605)**:
+  ran the owner-gated live ladder's rungs 1–2 on profiles c1/c4 (no canary generation, no store/TM
+  mutation). **Rung 1 auth:** c1/c4 ✅ Max, **c5/c6 ❌ `loggedIn:false`** → four-profile acceptance stays
+  **NO-GO** (owner must `claude auth login` c5/c6). **Rung 2 latency:** c1 `rate_limit` (parked); **c4
+  genuinely healthy at ~8–12 s — the first sub-30 s pwg-ru probe reading ever** (H818/H895 were ~40 s
+  NO-GO ×2). **Two defects surfaced:** **D-P** — the D-K acceptance probe's degenerate padding prompt
+  (`"Return JSON {ok:true}" + N×'x'` under `--permission-mode plan`) trips Sonnet-5's plan-mode refusal,
+  producing a *false* `content`/`timeout` NO-GO on a healthy fast profile; **D-Q** — `darvI`/`gaRanA` are
+  poor SAN-LOSS soft-guard canaries (`darvI` is a deterministic fidelity-reject), so a canary that *passes*
+  fidelity while dropping a sense must be curated before rung 3. Rung 3 canary **not reached**. Report:
+  [pwg_ru/h994/H994_TWO_PROFILE_LIVE_MEASUREMENT_GATE_2026-07-15.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/H994_TWO_PROFILE_LIVE_MEASUREMENT_GATE_2026-07-15.md).
+  No code shipped (measurement + docs only); H255 stays frozen until the four-profile ladder passes.
+
 ## [1.9.15] - 2026-07-15
 
 ### Fixed
