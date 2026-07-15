@@ -15,13 +15,22 @@ Outputs: pwg-entry-anatomy.html, mw-entry-anatomy.html,
          URIs; print CSS sizes one sheet to the content, so headless
          Chrome/Edge --print-to-pdf yields a single-page spread like Duden's).
 
-Usage  : python build_entry_anatomy.py
+Usage  : python build_entry_anatomy.py                       # the three H780 pages
+         python build_entry_anatomy.py --markup mw kAla      # any-headword specimen
+         python build_entry_anatomy.py --image page.pdf --callouts spec.json
+         (H870 modes; see --help. One HTML source serves a print-faithful
+         single-sheet PDF and a theme-aware interactive web page.)
 """
 
+import argparse
 import base64
+import datetime
 import html
 import io
+import json
 import re
+import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -133,6 +142,8 @@ def render_body(body, dic):
     s = re.sub(r"<is>(.*?)</is>", r'<span class="is">\1</span>', s)
     s = re.sub(r"<i>(.*?)</i>", r'<span class="gloss">\1</span>', s)
     s = re.sub(r"<bot>(.*?)</bot>", r'<span class="bot">\1</span>', s)
+    s = re.sub(r"<bio>(.*?)</bio>", r'<span class="bot">\1</span>', s)
+    s = re.sub(r"<etym>(.*?)</etym>", r'<span class="gloss">\1</span>', s)
     s = re.sub(r"<hom>(.*?)</hom>", r'<span class="hom">\1</span>', s)
 
     if dic == "mw":
@@ -342,11 +353,13 @@ function layout() {
       c.style.top = y + 'px';
       cursor = y + c.offsetHeight + 10;
       const cy = y + c.offsetHeight / 2;
-      const x0 = side === 'left' ? 292 : bw - 292;
+      const gut = c.offsetWidth + 4;
+      const x0 = side === 'left' ? gut : bw - gut;
       const stub = side === 'left' ? x0 + 14 : x0 - 14;
       const x1 = side === 'left' ? c.tXl - 3 : c.tXr + 3;
       const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       p.setAttribute('d', `M ${x0} ${cy} L ${stub} ${cy} L ${x1} ${c.tY}`);
+      c._p = p;
       svg.appendChild(p);
     }
   }
@@ -374,7 +387,9 @@ else window.addEventListener('load', () => setTimeout(run, 120));
 
 def data_uri(png_path, quality=82, max_w=1200):
     from PIL import Image
-    img = Image.open(png_path).convert("RGB")
+    src = (io.BytesIO(png_path) if isinstance(png_path, (bytes, bytearray))
+           else png_path)
+    img = Image.open(src).convert("RGB")
     if img.width > max_w:
         img = img.resize((max_w, int(img.height * max_w / img.width)),
                          Image.LANCZOS)
@@ -883,9 +898,483 @@ def build_generic(pwg, mw):
     return body_page.replace("</style>", GENERIC_EXTRA_CSS + "</style>")
 
 
+# ═══════════════════════════════════════════ H870 /entry-specimen engine ═══
+# Two modes on top of the H780 engine above: --markup <dict> <headword>
+# re-typesets any k1 headword from csl-orig; --image <path> annotates a
+# supplied picture/PDF page with region-anchored callouts. One HTML source
+# serves both the print-faithful single-sheet PDF (@media print) and a
+# theme-aware interactive web page (hover/click sync, resize reflow,
+# light/dark via prefers-color-scheme + toggle).
+
+LIGHT_VARS = """
+  --bg:#f4f1ea; --sheet:#fbf9f4; --ink:#1a1a1a; --accent:#005a87;
+  --accent2:#00344e; --hlv:#cdeaf6; --linev:#333; --labv:#005a87;
+  --muted:#555; --rule:#bbb; --box:#e9f4fa; --shadow:rgba(0,0,0,.18);
+"""
+
+DARK_VARS = """
+  --bg:#14171c; --sheet:#1d222a; --ink:#e4e0d6; --accent:#71b8dc;
+  --accent2:#a8d4ec; --hlv:#29506a; --linev:#9aa4ae; --labv:#8ec7e4;
+  --muted:#98a0a8; --rule:#4a5058; --box:#232e38; --shadow:rgba(0,0,0,.5);
+"""
+
+SPECIMEN_CSS = f"""
+:root {{ {LIGHT_VARS} }}
+:root[data-theme="dark"] {{ {DARK_VARS} }}
+@media (prefers-color-scheme: dark) {{
+  :root:not([data-theme="light"]) {{ {DARK_VARS} }}
+}}
+body {{ background:var(--bg); color:var(--ink); }}
+.sheet {{ background:var(--sheet); }}
+header {{ border-bottom-color:var(--accent); }}
+header h1 {{ color:var(--accent2); }}
+header p.sub {{ color:var(--muted); }}
+.colcap {{ color:var(--muted); border-bottom-color:var(--rule); }}
+.callout {{ color:var(--labv); cursor:pointer; }}
+.callout b {{ color:var(--accent2); }}
+.callout .prop {{ color:var(--muted); }}
+.hl {{ background:var(--hlv); }}
+svg.leaders path {{ stroke:var(--linev); }}
+svg.leaders path.on {{ stroke:var(--accent); stroke-width:1.9; }}
+.hl.hl-active {{ outline:2px solid var(--accent); outline-offset:1px; }}
+.facsimile img {{ border-color:var(--rule); box-shadow:2px 3px 8px var(--shadow); }}
+.facsimile .cap, .aboutbox {{ color:var(--ink); }}
+.aboutbox {{ background:var(--box); border-left-color:var(--accent); }}
+.aboutbox h2 {{ color:var(--accent2); }}
+footer {{ color:var(--muted); border-top-color:var(--rule); }}
+a {{ color:var(--accent); }}
+.board.spec-text {{ grid-template-columns:420px 720px 420px; column-gap:40px; }}
+.spec-text .callout {{ width:400px; }}
+.board.spec-image {{ grid-template-columns:280px 1020px 280px; column-gap:35px; }}
+.spec-image .callout {{ width:268px; }}
+.imgwrap {{ position:relative; }}
+.imgwrap img {{ width:100%; display:block; border:1px solid var(--rule); }}
+.region {{ position:absolute; }}
+.region.hl {{ background:rgba(109,186,228,.26); outline:1.6px solid var(--labv);
+              outline-offset:1px; border-radius:2px; }}
+.region.hl.hl-active {{ background:rgba(109,186,228,.45); }}
+.themetoggle {{ position:fixed; top:14px; right:14px; z-index:9; width:38px;
+   height:38px; border-radius:50%; border:1px solid var(--rule);
+   background:var(--sheet); color:var(--ink); font-size:17px; cursor:pointer; }}
+@media print {{
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {{ {LIGHT_VARS} }}
+  .themetoggle {{ display:none; }}
+}}
+"""
+
+SPEC_JS = """
+function targetEl(c) {
+  const els = document.querySelectorAll(c.dataset.target);
+  return els[Math.min(+(c.dataset.nth || 0), els.length - 1)];
+}
+function wire() {
+  document.querySelectorAll('.callout').forEach(c => {
+    if (c._wired) return;
+    const el = targetEl(c);
+    if (!el) return;
+    c._wired = true;
+    const on = () => { c.classList.add('active'); el.classList.add('hl-active');
+                       if (c._p) c._p.classList.add('on'); };
+    const off = () => { if (c._pin) return;
+                        c.classList.remove('active');
+                        el.classList.remove('hl-active');
+                        if (c._p) c._p.classList.remove('on'); };
+    for (const n of [c, el]) {
+      n.addEventListener('mouseenter', on);
+      n.addEventListener('mouseleave', off);
+      n.addEventListener('click', ev => {
+        c._pin = !c._pin; c._pin ? on() : off(); ev.stopPropagation(); });
+    }
+  });
+}
+window.addEventListener('load', () => setTimeout(wire, 700));
+let _rsz = null;
+window.addEventListener('resize', () => {
+  clearTimeout(_rsz); _rsz = setTimeout(run, 180); });
+const _btn = document.getElementById('themebtn');
+if (_btn) _btn.addEventListener('click', () => {
+  const r = document.documentElement;
+  const cur = r.dataset.theme || 'auto';
+  const next = cur === 'auto' ? 'dark' : cur === 'dark' ? 'light' : 'auto';
+  if (next === 'auto') delete r.dataset.theme; else r.dataset.theme = next;
+  _btn.textContent = {auto: '\\u25d0', dark: '\\u25cf', light: '\\u25cb'}[next];
+});
+"""
+
+
+def specimen_page(title, subtitle, center_cap, center_html, callouts, foot,
+                  mode, facs_uri=None, facs_cap="", about=""):
+    """One self-contained specimen page: interactive on screen, single sheet
+    in print. mode = 'text' | 'image'."""
+    cos = "".join(callout_html(*c) for c in callouts)
+    boardcls = "spec-image" if mode == "image" else "spec-text"
+    bottom = ""
+    if facs_uri or about:
+        f = (f'<div class="facsimile"><img src="{facs_uri}" alt="facsimile">'
+             f'<div class="cap">{facs_cap}</div></div>') if facs_uri else ""
+        a = f'<div class="aboutbox">{about}</div>' if about else ""
+        bottom = f'<div class="bottomrow">{f}{a}</div>'
+    return f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(title)}</title>
+<style>{PAGE_CSS}{SPECIMEN_CSS}</style></head>
+<body>
+<button class="themetoggle" id="themebtn" title="light / dark / auto">◐</button>
+<div class="sheet">
+<header><h1>{html.escape(title)}</h1><p class="sub">{subtitle}</p></header>
+<div class="board {boardcls}">
+<svg class="leaders"></svg>
+<div></div>
+<div class="colwrap"><div class="colcap">{center_cap}</div>{center_html}</div>
+<div></div>
+{cos}
+</div>
+{bottom}
+<footer>{foot}</footer>
+</div>
+<script>{CALLOUT_JS}{SPEC_JS}</script>
+</body></html>"""
+
+
+# ------------------------------------------------------- markup mode (text)
+
+DICT_LABEL = {
+    "mw": "Monier-Williams, A Sanskrit-English Dictionary (1899)",
+    "pwg": "Böhtlingk & Roth, Sanskrit-Wörterbuch (PWG, 1855–1875)",
+    "pw": "Böhtlingk, Sanskrit-Wörterbuch in kürzerer Fassung (pw, 1879–1889)",
+}
+
+
+def dialect(dic):
+    """Which render_body dialect a dictionary uses."""
+    return "pwg" if dic in ("pwg", "pw") else "mw"
+
+
+def load_dict_records(dic):
+    path = CSL / dic / f"{dic}.txt"
+    if not path.exists():
+        sys.exit(f"source not found: {path}")
+    return load_records(path)
+
+
+def select_groups(recs, hw, dic):
+    """All records with <k1> == hw, in L order, grouped into print
+    paragraphs (MW: a new <e>1 record opens a paragraph, continuations
+    join it; PWG and e-less dictionaries: one paragraph per record)."""
+    picks = []
+    for L, (hdr, _body) in recs.items():
+        d = parse_header(hdr)
+        if d.get("k1") == hw:
+            key = int(re.sub(r"\D", "", L) or 0)
+            picks.append((key, L, d))
+    picks.sort()
+    if not picks:
+        sys.exit(f"headword {hw!r} not found in {dic}")
+    groups = []
+    for _, L, d in picks:
+        e = d.get("e")
+        if e is None or e == "1" or not groups:
+            groups.append([])
+        groups[-1].append(L)
+    return groups
+
+
+def group_paragraph(recs, group, dic):
+    if dialect(dic) == "pwg":
+        return pwg_paragraph(recs, group[0])
+    return mw_paragraph(recs, group)
+
+
+# First-pass callout proposals: (css selector, class regex, label html).
+# Emitted only for classes present in the rendered column, marked
+# "proposed — verify" — never presented as authoritative anatomy.
+PROPOSED_CALLOUTS = [
+    (".colwrap .hom", r'class="hom"',
+     "<b>Homograph number</b> — identically spelt but etymologically "
+     "distinct words are numbered in sequence"),
+    (".colwrap .hw-dev", r"hw-dev",
+     "<b>Main headword in Devanāgarī</b> — the main-entry script of the "
+     "print (typographic level 1 in the digital record)"),
+    (".colwrap .hw .siast", r'class="hw"',
+     "<b>Transliterated headword in bold</b> — an acute accent marks the "
+     "Vedic udātta where the print carries one"),
+    (".colwrap .lex", r'class="lex"',
+     "<b>Grammatical label</b> — gender / part of speech as printed"),
+    (".colwrap .ls", r'class="ls',
+     "<b>Citation</b> — literature source with locus; run-on citations "
+     "abbreviate the repeated source (hover shows the expansion)"),
+    (".colwrap .ab", r'class="ab',
+     "<b>Abbreviation of the print</b> (cl., N., comp., ifc. …) — hover "
+     "shows the expansion where the digital record encodes one"),
+    (".colwrap .entry .sa", r'class="sa"',
+     "<b>Sanskrit in Devanāgarī</b> — rendered from the SLP1 of the "
+     "digital record; hover shows IAST"),
+    (".colwrap .gloss", r'class="gloss"',
+     "<b>Italics of the print</b> — definition / gloss text"),
+    (".colwrap .sense", r'class="sense"',
+     "<b>Sense numbering</b> — subdivisions inside one entry"),
+    (".colwrap .bot", r'class="bot"',
+     "<b>Botanical / zoological identification</b> — natural-history "
+     "names resolved to Linnaean binomials"),
+    (".colwrap .lang", r'class="lang"',
+     "<b>Language label</b> — non-Sanskrit forms flagged by language"),
+    (".colwrap .gk", r'class="gk"',
+     "<b>Greek cognate</b> — comparative material in the etymological "
+     "bracket"),
+    (".colwrap .is", r'class="is"',
+     "<b>Indian grammatical apparatus</b> — gaṇa membership and other "
+     "references to the native tradition"),
+]
+
+
+def propose_callouts(center_html):
+    out, side = [], "left"
+    for sel, pat, note in PROPOSED_CALLOUTS:
+        if re.search(pat, center_html):
+            out.append((side, sel, 0,
+                        note + ' <i class="prop">(proposed — verify)</i>'))
+            side = "right" if side == "left" else "left"
+    return out
+
+
+def load_callout_spec(path):
+    """--callouts spec: JSON list of {side, target, note[, nth]} or TSV
+    side<TAB>target<TAB>note. Targets: a CSS selector ('.hw', '#r3'),
+    literal anchor text to highlight (markup mode), or an x,y,w,h region
+    in fractions of the image (image mode)."""
+    p = Path(path)
+    if p.suffix.lower() == ".json":
+        return json.loads(p.read_text(encoding="utf-8"))
+    rows = []
+    for line in p.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        side, target, note = (line.split("\t") + ["", ""])[:3]
+        rows.append({"side": side.strip(), "target": target.strip(),
+                     "note": note.strip()})
+    return rows
+
+
+SCAN_URL = {
+    "mw": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/"
+           "web/webtc/servepdf.php?page={page}"),
+    "pwg": ("https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/"
+            "web/webtc/servepdf.php?page={page}"),
+}
+
+
+def fetch_facsimile(dic, pc):
+    """Auto-pull the print page from the Cologne scan server (H780 pattern);
+    returns PNG bytes or None. Failures (offline, 429 throttle) are soft —
+    the specimen just builds without the inset."""
+    tmpl = SCAN_URL.get(dic)
+    if not tmpl:
+        return None
+    page = pc.split(",")[0] if dic == "mw" else pc
+    url = tmpl.format(page=page)
+    import time
+    import urllib.request
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (EntryAnatomy specimen build)",
+        "Referer": "https://www.sanskrit-lexicon.uni-koeln.de/"})
+    for attempt in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = r.read()
+            if data[:4] == b"%PDF":
+                return rasterize_pdf_bytes(data)
+            return None
+        except Exception as exc:
+            if attempt == 1:
+                time.sleep(8)
+            else:
+                print(f"  facsimile fetch failed ({exc}); "
+                      "building without the print inset")
+    return None
+
+
+def rasterize_pdf_bytes(data, page_no=1, dpi=170):
+    import fitz
+    with fitz.open(stream=data, filetype="pdf") as doc:
+        return doc[page_no - 1].get_pixmap(dpi=dpi).tobytes("png")
+
+
+def rasterize(path, page_no=1, dpi=170):
+    """A picture file -> bytes as-is; a PDF -> PNG of the given page."""
+    path = Path(path)
+    if path.suffix.lower() == ".pdf":
+        return rasterize_pdf_bytes(path.read_bytes(), page_no, dpi)
+    return path.read_bytes()
+
+
+def today():
+    return datetime.date.today().strftime("%d-%m-%Y")
+
+
+def spec_foot(source_line, proposed):
+    prop = (" &middot; callout set proposed by the build — verify before "
+            "publishing" if proposed else "")
+    return (f"{source_line} &middot; built by build_entry_anatomy.py "
+            f"(/entry-specimen, H870) &middot; Fable 5 (claude-fable-5), "
+            f"{today()}{prop} &middot; Cologne Sanskrit-Lexicon: "
+            '<a href="https://www.sanskrit-lexicon.uni-koeln.de/">'
+            "sanskrit-lexicon.uni-koeln.de</a>")
+
+
+def build_markup_specimen(dic, hw, callout_rows=None, facs_img=None,
+                          title=None, out_dir=None, stem=None):
+    recs = load_dict_records(dic)
+    groups = select_groups(recs, hw, dic)
+    center = "".join(group_paragraph(recs, g, dic) for g in groups)
+    first = parse_header(recs[groups[0][0]][0])
+    pc = first.get("pc", "?")
+    label = DICT_LABEL.get(dic, dic.upper())
+
+    proposed = not callout_rows
+    if callout_rows:
+        callouts = []
+        for d in callout_rows:
+            t = d["target"]
+            if not re.match(r"^[.#\[]", t):      # literal text -> wrap + id
+                ident = f"anchor{len(callouts)}"
+                center = wrap_once(center, t, "anchor", ident)
+                t = f"#{ident}"
+            callouts.append((d.get("side", "left"), t,
+                             int(d.get("nth", 0)), d["note"]))
+    else:
+        callouts = propose_callouts(center)
+
+    facs_uri = facs_cap = None
+    png = data_uri(facs_img, max_w=900) if facs_img else None
+    if png is None:
+        fetched = fetch_facsimile(dic, pc)
+        if fetched:
+            png = data_uri(fetched, max_w=900)
+            facs_cap = (f"<b>The page in the print</b>: {label}, "
+                        f"{pc} — from the Cologne scan server.")
+    else:
+        facs_cap = f"<b>The entry in the print</b>: {label}."
+    facs_uri = png
+
+    hw_disp = slp_iast(hw)
+    title = title or f"How to read an entry — {label}: {hw_disp}"
+    n_recs = sum(len(g) for g in groups)
+    sub = (f"Entry specimen after the model of Duden’s <i>Deutsches "
+           f"Universalwörterbuch</i> spread: <i>{hw_disp}</i> re-typeset "
+           f"from the Cologne digital text ({n_recs} records, "
+           f"{len(groups)} print paragraph{'s' if len(groups) > 1 else ''}), "
+           f"microstructural elements labelled. Interactive on screen "
+           f"(hover/click a label or a highlight; light/dark toggle); one "
+           f"single sheet in print.")
+    about = ("<h2>How to use this page</h2>"
+             "The column re-typesets every record whose key1 equals the "
+             f"requested headword from csl-orig v02/{dic}; callout labels "
+             "are wired by leader lines to highlighted elements. "
+             + ("This callout set is a <b>first pass proposed by the build "
+                "tool — verify against the print before treating it as "
+                "authoritative anatomy</b>. " if proposed else "")
+             + "Sigla and citations are reproduced verbatim from the "
+               "digital record.")
+    foot = spec_foot(
+        f"Typeset from csl-orig v02/{dic} (k1 = {html.escape(hw)}, "
+        f"{n_recs} records, print locus {pc})", proposed)
+    page_html = specimen_page(title, sub, f"{dic.upper()} · {pc}", center,
+                              callouts, foot, "text", facs_uri,
+                              facs_cap or "", about)
+    stem = stem or f"{dic}-{hw}-specimen"
+    return write_specimen(page_html, stem, out_dir)
+
+
+# ------------------------------------------------------------- image mode
+
+def build_image_specimen(image_path, callout_rows, title=None, page_no=1,
+                         dpi=170, out_dir=None, stem=None, caption=None):
+    img_bytes = rasterize(image_path, page_no, dpi)
+    uri = data_uri(img_bytes, quality=88, max_w=2000)
+
+    regions, callouts = [], []
+    proposed = not callout_rows
+    if not callout_rows:
+        callout_rows = [{"side": "left", "target": "0.05,0.05,0.9,0.9",
+                         "note": "<b>Whole page</b> — supply --callouts "
+                                 "with x,y,w,h regions to annotate "
+                                 '<i class="prop">(proposed — verify)</i>'}]
+    for d in callout_rows:
+        t = d["target"]
+        if isinstance(t, str) and re.match(r"^[\d.]+\s*,", t):
+            t = [float(v) for v in t.split(",")]
+        if isinstance(t, dict):
+            t = [t["x"], t["y"], t["w"], t["h"]]
+        if isinstance(t, (list, tuple)):
+            rid = f"r{len(regions) + 1}"
+            regions.append(
+                f'<div class="region" id="{rid}" style="'
+                f"left:{t[0] * 100:.2f}%;top:{t[1] * 100:.2f}%;"
+                f"width:{t[2] * 100:.2f}%;height:{t[3] * 100:.2f}%" '"></div>')
+            t = f"#{rid}"
+        callouts.append((d.get("side", "right"), t,
+                         int(d.get("nth", 0)), d["note"]))
+
+    name = Path(image_path).name
+    center = f'<div class="imgwrap"><img src="{uri}" alt="{html.escape(name)}">' \
+             + "".join(regions) + "</div>"
+    title = title or f"Annotated specimen — {name}"
+    sub = ("Image-annotation specimen: callout labels wired by leader lines "
+           "to regions of the supplied page. Interactive on screen "
+           "(hover/click a label or a region; light/dark toggle); one "
+           "single sheet in print.")
+    foot = spec_foot(f"Annotation surface: {html.escape(name)}"
+                     + (f", page {page_no}" if
+                        str(image_path).lower().endswith(".pdf") else ""),
+                     proposed)
+    page_html = specimen_page(title, sub, caption or html.escape(name),
+                              center, callouts, foot, "image")
+    stem = stem or re.sub(r"[^A-Za-z0-9_-]+", "-", Path(image_path).stem) \
+        + "-specimen"
+    return write_specimen(page_html, stem, out_dir)
+
+
+# ------------------------------------------------------------ output layer
+
+def write_specimen(page_html, stem, out_dir=None):
+    out_dir = Path(out_dir) if out_dir else HERE
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / f"{stem}.html"
+    path.write_text(page_html, encoding="utf-8")
+    print(f"wrote {path.name} ({len(page_html) // 1024} KB)")
+    return path
+
+
+def find_browser():
+    for cand in (r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+                 r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+                 r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+                 "chrome", "msedge", "chromium", "google-chrome"):
+        exe = cand if Path(cand).exists() else shutil.which(cand)
+        if exe:
+            return exe
+    return None
+
+
+def export_pdf(html_path):
+    exe = find_browser()
+    if not exe:
+        print("  no Chrome/Edge found — skipped PDF export")
+        return None
+    pdf_path = html_path.with_suffix(".pdf")
+    subprocess.run(
+        [exe, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
+         "--virtual-time-budget=8000", f"--print-to-pdf={pdf_path}",
+         str(html_path)],
+        check=True, capture_output=True)
+    print(f"wrote {pdf_path.name} ({pdf_path.stat().st_size // 1024} KB)")
+    return pdf_path
+
+
 # ==================================================================== main
 
-def main():
+def build_legacy():
     pwg = load_records(PWG_TXT)
     mw = load_records(MW_TXT)
     out = {
@@ -896,6 +1385,55 @@ def main():
     for name, htm in out.items():
         (HERE / name).write_text(htm, encoding="utf-8")
         print(f"wrote {name} ({len(htm)//1024} KB)")
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Duden-style entry-anatomy specimen builder "
+                    "(H780 pages + H870 /entry-specimen modes)")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--markup", nargs=2, metavar=("DICT", "HEADWORD"),
+                      help="re-typeset a csl-orig headword (k1, SLP1)")
+    mode.add_argument("--image", metavar="PATH",
+                      help="annotate a picture or PDF page")
+    ap.add_argument("--callouts", metavar="SPEC",
+                    help="JSON/TSV callout spec (side, target, note)")
+    ap.add_argument("--facsimile", metavar="IMG",
+                    help="markup mode: print-inset image "
+                         "(default: auto-pull from the Cologne scan server)")
+    ap.add_argument("--page", type=int, default=1,
+                    help="image mode: PDF page number (default 1)")
+    ap.add_argument("--dpi", type=int, default=170,
+                    help="image mode: PDF rasterization DPI (default 170)")
+    ap.add_argument("--title", help="page title override")
+    ap.add_argument("--caption", help="column caption override")
+    ap.add_argument("--stem", help="output filename stem override")
+    ap.add_argument("--out", metavar="DIR", help="output directory")
+    ap.add_argument("--pdf", action="store_true",
+                    help="emit the print PDF (default: both outputs)")
+    ap.add_argument("--web", action="store_true",
+                    help="emit the interactive HTML (default: both outputs)")
+    args = ap.parse_args(argv)
+
+    if not args.markup and not args.image:
+        build_legacy()
+        return
+
+    rows = load_callout_spec(args.callouts) if args.callouts else None
+    if args.markup:
+        dic, hw = args.markup
+        html_path = build_markup_specimen(
+            dic, hw, rows, args.facsimile, args.title, args.out, args.stem)
+    else:
+        html_path = build_image_specimen(
+            args.image, rows, args.title, args.page, args.dpi,
+            args.out, args.stem, args.caption)
+
+    want_pdf = args.pdf or not args.web       # default: both
+    if want_pdf:
+        export_pdf(html_path)
+    if args.web and not args.pdf:
+        pass  # the HTML written above IS the web artifact
 
 
 if __name__ == "__main__":
