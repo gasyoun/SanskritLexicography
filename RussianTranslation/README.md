@@ -137,7 +137,7 @@ task-oriented flows for every operator situation are in
 python src\pilot\perf_preflight.py <root> --json     # cost gate first, always
 python src\pilot\root_window_status.py <root>        # pre-spend truth source
 python src\pilot\gen_opt_harness2.py <root>          # emit the optimized harness
-# run src\pilot\run_pilot_wf.opt.js in the Claude/Max Workflow, save wf_output.json
+# run src\pilot\run_pilot_wf.opt2.js in the Claude/Max Workflow, save wf_output.json
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
