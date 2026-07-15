@@ -85,7 +85,8 @@ RussianTranslation/research/dsg.json
 # large local-only reference sources (book scans/PDFs behind research citations,
 # e.g. literature/Tubb-ScholasticSans-2007.pdf for the Renou nominal-style note) —
 # never versioned; keep on the run machine only.
-# literature/md/ is tracked (lightweight markdown index); PDFs/EPUBs/DOCs are not.
+# literature/md/ is tracked (full-text conversions + paraphrase digests, see its own
+# README); PDFs/EPUBs/DOCs are not.
 literature/*
 !literature/md
 
