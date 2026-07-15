@@ -14,6 +14,22 @@ not an error.
 
 ## [Unreleased]
 
+## [1.9.19] - 2026-07-15
+
+### Fixed
+- **D-P follow-through — `latency_payload_sweep.py` `actual_prompt_bytes` + latency runbook hardened for the v1.9.17 probe (15-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, Ultracode)**:
+  the D-P fix (v1.9.17) changed `_probe_call`'s prompt but left `latency_payload_sweep.py` with a stale
+  mirror constant (`PREFIX_LEN + padding_bytes`) that **miscounted `actual_prompt_bytes`** (the field the
+  `latency_sweep_analyze.py` payload-size axis reads) — reporting 6554 when the real prompt is 6828 B.
+  Now derived from the SAME `_probe_prompt` (single source of truth, cannot drift):
+  `actual_prompt_bytes = len(_probe_prompt(padding_bytes))`. Also updated
+  `PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md` (the H909 owner runbook): Method step 2 now
+  **requires a probe ≥ v1.9.17** on both hosts (a pre-fix `'x'`-padding probe is artificially-fast on
+  compliance and refusal-bimodal under `--permission-mode plan`, confounding route latency), records the
+  first honest home reading (**c4 ~30–53 s**, over the 30 s ceiling), and caveats the prior home-route
+  sweep/variance results (the 8.9 s→59.2 s spread is partly that probe artifact) as needing a re-baseline.
+  No behaviour change to the probe itself; diagnostic-tooling + runbook correctness only.
+
 ## [1.9.18] - 2026-07-15
 
 ### Added
