@@ -39,6 +39,11 @@ def proc(returncode=0, stdout='', stderr=''):
     return SimpleNamespace(returncode=returncode, stdout=stdout, stderr=stderr)
 
 
+def execute(test_manifest, runner):
+    """Use a real, portable executable path while the runner fakes its output."""
+    return h.execute(test_manifest, claude=sys.executable, runner=runner)
+
+
 def success_runner(argv, **kwargs):
     assert '--json-schema' in argv and '--model' in argv
     card = {'key1': 'agni', 'records': [{'grammar': '{T1} m.', 'senses': [
@@ -48,7 +53,7 @@ def success_runner(argv, **kwargs):
 
 
 def main():
-    payload, status, code = h.execute(manifest(), runner=success_runner)
+    payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
     assert payload['results'][0]['card']['records'][0]['senses'][0]['german'].startswith('<ls>')
     assert payload['results'][0]['card']['records'][0]['grammar'].startswith('<ls>')
@@ -56,25 +61,25 @@ def main():
 
     def auth_runner(argv, **kwargs):
         return proc(1, stderr='API Error: 401 Invalid authentication credentials')
-    assert h.execute(manifest(), runner=auth_runner)[2] == h.EXIT_AUTH
+    assert execute(manifest(), auth_runner)[2] == h.EXIT_AUTH
 
     def rate_runner(argv, **kwargs):
         return proc(1, stderr='429 rate limit reset_at=1999999999')
-    assert h.execute(manifest(), runner=rate_runner)[2] == h.EXIT_RATE_LIMIT
+    assert execute(manifest(), rate_runner)[2] == h.EXIT_RATE_LIMIT
 
     def malformed_runner(argv, **kwargs):
         return proc(stdout='not json')
-    payload, status, code = h.execute(manifest(), runner=malformed_runner)
+    payload, status, code = execute(manifest(), malformed_runner)
     assert code == 0 and status['classification'] == 'completed_with_residuals'
 
     def missing_runner(argv, **kwargs):
         return proc(stdout=json.dumps({'structured_output': {'cards': []}}))
-    payload, status, code = h.execute(manifest(), runner=missing_runner)
+    payload, status, code = execute(manifest(), missing_runner)
     assert code == 0 and payload['summary']['null_keys'] == ['agni']
 
     def timeout_runner(argv, **kwargs):
         raise subprocess.TimeoutExpired(argv, 1)
-    payload, status, code = h.execute(manifest(), runner=timeout_runner)
+    payload, status, code = execute(manifest(), timeout_runner)
     assert code == 0 and payload['summary']['kill_timeouts'] == 1
 
     presplit = manifest()
@@ -99,7 +104,7 @@ def main():
                     'russian': '{T1}'}]}]})
         return proc(stdout=json.dumps({'structured_output': {'cards': cards}}))
 
-    payload, status, code = h.execute(presplit, runner=fragment_runner)
+    payload, status, code = execute(presplit, fragment_runner)
     assert code == 0 and status['classification'] == 'success'
     card = payload['results'][0]['card']
     assert payload['summary']['presplit'] == 1 and payload['summary']['healed'] == 1
@@ -111,13 +116,13 @@ def main():
         card = {'key1': 'agni_f0', 'records': [{'senses': [
             {'tag': '1', 'german': '{T1}', 'russian': '{T1}'}]}]}
         return proc(stdout=json.dumps({'structured_output': {'cards': [card]}}))
-    payload, _status, code = h.execute(presplit, runner=partial_runner)
+    payload, _status, code = execute(presplit, partial_runner)
     assert code == 0 and payload['results'][0]['card']['partial']
     assert payload['results'][0]['card']['missing_fragments']
 
     def fragment_timeout(argv, **kwargs):
         raise subprocess.TimeoutExpired(argv, 1)
-    payload, _status, code = h.execute(presplit, runner=fragment_timeout)
+    payload, _status, code = execute(presplit, fragment_timeout)
     assert code == 0 and payload['summary']['null'] == 1
     assert payload['summary']['heal_agents_spent'] == 1  # timeout-no-bisect
 
