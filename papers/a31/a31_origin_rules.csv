@@ -1,0 +1,10 @@
+origin_rule,origin_class,events
+c_typo,digitization,21718
+s_markup,conversion-markup,5902
+c_print_error,print-source,1991
+s_meta,conversion-markup,599
+c_markup,conversion-markup,362
+c_ocr,digitization,48
+c_scan,digitization,19
+c_print_missing,print-source,19
+c_coding,digitization,10
