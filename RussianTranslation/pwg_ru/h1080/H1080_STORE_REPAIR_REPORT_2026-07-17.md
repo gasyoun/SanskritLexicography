@@ -26,5 +26,8 @@ The backup remains uncommitted and byte-identical to the pre-repair store. The R
 memory was rebuilt exactly once from the clean store and validated. The publication and fragment
 TMs were not rebuilt because H1080 changed the canonical card store, not those independent sources.
 
-No fresh c4 health probe, quarantined-key retranslation, promotion, or paid window was run. Those
-remain gated on completion of the manifest-v2 and launch-control hardening stage.
+No fresh c4 health probe, quarantined-key retranslation, promotion, or paid window was run.
+Follow-up [PR #511](https://github.com/gasyoun/SanskritLexicography/pull/511) completed the offline
+manifest-v2/profile/global-call/probe-policy hardening and superseded closed PR #495. The next step
+is a separately authorized fresh c4 health probe; a `GO` permits only serial retranslation of the
+two quarantined keys before a tiny nominal window, while `NO-GO` keeps the quarantine and stops.
