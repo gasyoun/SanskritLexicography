@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Epistemic registries dashboard</title>
+<style>
+  /* DIRECTION — MODERN DARK DATA-APP (H563 family language: Uprava 04-dark / H568 / H575 /
+     H1061): deep charcoal-navy with two radial accent glows, glassy panels with a hairline
+     top-light, indigo/amber accent pair. CSS-only restyle of ../index.html — everything
+     outside this <style> block is byte-identical except the declared data-path prefixes
+     (see the H1063 handoff). */
+  :root { --fg:#e8ecf4; --mut:#8b94a7; --bg:#0b0e14;
+          --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
+          --auto:#b394ff; --human:#35d07f;
+  }
+  body { font: 15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
+         color:var(--fg);
+         background:radial-gradient(1200px 600px at 80% -10%,rgba(124,140,255,.14),transparent 60%),
+           radial-gradient(900px 500px at 0% 0%,rgba(77,214,193,.08),transparent 55%),var(--bg);
+         max-width: 1080px; margin: 0 auto; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; margin-bottom:.2rem; font-weight:700; letter-spacing:-.02em;
+       background:linear-gradient(90deg,#fff,#a9b4d6);
+       -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color:var(--mut);
+       text-transform:uppercase; letter-spacing:.05em; }
+  .mut { color: var(--mut); font-size: .85rem; }
+  .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  /* header stat cards: a fixed 6-wide grid so 12 cards fill exactly two rows */
+  #cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: .7rem; }
+  #cards .card { min-width: 0; padding: .6rem .7rem; }
+  @media (max-width: 760px) { #cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+          padding: .7rem 1.1rem; min-width: 7rem;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+  .card b { font-size: 1.5rem; display: block; font-weight:800;
+            font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--mut); font-weight: 600; font-size:.75rem;
+       text-transform:uppercase; letter-spacing:.05em; }
+  tr:hover td { background: rgba(124,140,255,.05); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  a { color: #7c8cff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .bar { display:flex; height:.5rem; border-radius:4px; overflow:hidden; min-width:6rem;
+         background:var(--line); }
+  .bar i { display:block; }
+  .auto { color: var(--auto); } .human { color: var(--human); }
+  .swatch { display:inline-block; width:.7rem; height:.7rem; border-radius:2px;
+            vertical-align:baseline; margin-right:.25rem; }
+  #core { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--human);
+          border-radius:14px; padding:.8rem 1rem; margin:1rem 0;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+  #core b.n { font-size:1.6rem; font-weight:800; }
+  tr.core td { background:rgba(53,208,127,.07); font-weight:600; }
+</style>
+</head>
+<body>
+<h1 id="title">Epistemic registries — dashboard</h1>
+<p class="mut" id="lede"></p>
+
+<div id="core"></div>
+<div class="cards" id="cards"></div>
+
+<h2>The core + its seven layers</h2>
+<p class="mut">The top row is <b>FINDINGS</b> — the settled, measured facts. Each row below it holds one epistemic act that <a id="findings-link" href="#">FINDINGS.md</a>
+(measured-fact-only) structurally can't. <span class="swatch" style="background:var(--auto)"></span><span class="auto">⚙️ auto</span> rows were emitted by a seed script and are <em>candidates</em> until a human confirms; <span class="swatch" style="background:var(--human)"></span><span class="human">✍️ human</span> rows were written by a session. Rows graduate into FINDINGS / CROSS_REPO_DECISIONS as they mature.</p>
+<table id="layers"></table>
+
+<h2>STALENESS — confidence decay</h2>
+<p class="mut">The fully-auto-generated layer. Flag = 🔴 &gt;6 mo since last re-verify · 🟡 3–6 mo · 🟢 fresh (&lt;3 mo) · ⬜ undated.</p>
+<div class="cards" id="stale"></div>
+
+<h2>Origin mix — how much is machine-seeded vs human-written</h2>
+<p class="mut">The registries are designed to be seeded automatically and confirmed by hand. A healthy layer trends from ⚙️ toward ✍️ over time as candidates are confirmed or deleted.</p>
+<table id="origin"></table>
+
+<h2>Conclusions</h2>
+<ul id="conclusions"></ul>
+<p class="mut"><b>FINDINGS is the core; the seven layers orbit it.</b> A fact starts as an <b>assumption</b>, a <b>gap</b>, or a <b>contradiction</b>; a <b>recipe</b> says how to settle it; once settled it <b>graduates into FINDINGS</b> (or a decision); a failed attempt is parked as a <b>dead end</b>; <b>staleness</b> tells you when a settled FINDINGS fact needs re-checking; and the <b>glossary</b> is the shared vocabulary they are all written in. That is why FINDINGS sits at the top here, not on a separate page. The exact confirm → promote → delete algorithm is <a href="https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/PROTOCOL.md">PROTOCOL.md</a>.</p>
+
+<script>
+'use strict';
+const DOT = {3:'🔴', 2:'🟠', 1:'🟡'};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function j(f){ try { const r = await fetch(f); return r.ok ? r.json() : null; } catch { return null; } }
+
+function bar(auto, human){
+  const t = auto + human || 1;
+  return `<span class="bar" title="⚙️ ${auto} auto · ✍️ ${human} human">
+    <i style="width:${100*auto/t}%;background:var(--auto)"></i>
+    <i style="width:${100*human/t}%;background:var(--human)"></i></span>`;
+}
+
+(async () => {
+  const d = await j('../epistemic.json');
+  if (!d) { document.getElementById('lede').textContent = 'epistemic.json not found.'; return; }
+  const isInfra = /infra/i.test(d.side);
+  document.getElementById('title').textContent =
+    `Epistemic registries — ${d.side} side`;
+  document.getElementById('lede').innerHTML =
+    `Seven sibling registries to <a href="${esc(d.repo_url)}/FINDINGS.md">FINDINGS.md</a>, ` +
+    `minted under <a href="https://github.com/gasyoun/Uprava/blob/main/handoffs/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md">H356</a>. ` +
+    (isInfra
+      ? 'This is the <b>infra / process</b> side — private, viewed locally (not published).'
+      : 'This is the <b>Sanskrit-data</b> side. Its infra twin lives in the private Uprava repo.');
+  document.getElementById('findings-link').href = d.repo_url + '/FINDINGS.md';
+
+  // FINDINGS — the settled-fact CORE the seven siblings orbit and graduate into.
+  const coreEl = document.getElementById('core');
+  if (d.core) {
+    const ci = d.core.by_importance || {};
+    const dash = isInfra
+      ? `<a href="${esc(d.repo_url.replace('/blob/main/FINDINGS.md','/tree/main/findings_dashboard'))}">local FINDINGS dashboard</a>`
+      : `<a href="https://gasyoun.github.io/SanskritLexicography/findings/">FINDINGS dashboard</a>`;
+    coreEl.innerHTML =
+      `<b class="n human">${d.core.total}</b> <b>settled findings</b> — the measured-fact ` +
+      `<b>core</b> in <a href="${esc(d.core.url)}">FINDINGS.md</a> that the seven sibling ` +
+      `registries below orbit: assumptions and gaps <b>graduate into</b> it, dead-ends and ` +
+      `recipes support it, staleness watches it decay, the glossary defines its terms ` +
+      `(${ci['3']||0} 🔴 · ${ci['2']||0} 🟠 · ${ci['1']||0} 🟡). Its own detail view: ${dash}.`;
+  } else {
+    coreEl.style.display = 'none';
+  }
+
+  const t = d.totals;
+  const s0 = d.staleness || {total:0,green:0};
+  const entry = t.entry_rows != null ? t.entry_rows : (t.rows - s0.total);
+  const cand = t.candidates != null ? t.candidates : (t.auto - s0.total);
+  const card = (v, label, cls) => `<div class="card"><b${cls ? ' class="'+cls+'"' : ''}>${v}</b>${label}</div>`;
+  document.getElementById('cards').innerHTML = [
+    card(t.rows, 'rows'),
+    card(t.layers, 'layers'),
+    card(entry, 'entry rows'),
+    card(cand, '⚙️ candidates', 'auto'),
+    card(t.human, '✍️ human', 'human'),
+    card(s0.total, '⚙️ auto table'),
+    card(t.by_importance[3]||0, '🔴'),
+    card(t.by_importance[2]||0, '🟠'),
+    card(t.by_importance[1]||0, '🟡'),
+    card(s0.green, '🟢 fresh'),
+    card(t.categories != null ? t.categories : '—', 'categories'),
+    card(t.interlinks != null ? t.interlinks : '—', '↔ interlinks'),
+  ].join('');
+
+  const layerRow = (L, cls) => {
+    const bi = L.by_importance || {};
+    const org = L.by_origin || {auto:0,human:0};
+    const n = k => bi[k] || '';
+    return `<tr${cls ? ' class="'+cls+'"' : ''}><td><a href="${esc(L.url)}"><b>${esc(L.key)}</b></a></td>` +
+      `<td class="mut">${esc(L.act)}</td>` +
+      `<td class="num">${L.total}</td>` +
+      `<td class="num">${n(3)}</td><td class="num">${n(2)}</td><td class="num">${n(1)}</td>` +
+      `<td>${org.auto || org.human ? bar(org.auto, org.human) : '<span class="mut">measured</span>'}</td></tr>`;
+  };
+  document.getElementById('layers').innerHTML =
+    '<tr><th>Layer</th><th>Epistemic act</th><th class="num">rows</th>' +
+    '<th class="num">🔴</th><th class="num">🟠</th><th class="num">🟡</th><th>origin</th></tr>' +
+    (d.core ? layerRow(d.core, 'core') : '') +
+    d.layers.map(L => layerRow(L)).join('');
+
+  const s = d.staleness || {total:0,red:0,yellow:0,green:0,unknown:0};
+  document.getElementById('stale').innerHTML =
+    `<div class="card"><b>${s.total}</b>findings dated</div>` +
+    `<div class="card"><b>${s.red}</b>🔴 &gt;6 mo</div>` +
+    `<div class="card"><b>${s.yellow}</b>🟡 3–6 mo</div>` +
+    `<div class="card"><b>${s.green}</b>🟢 fresh</div>` +
+    (s.unknown ? `<div class="card"><b>${s.unknown}</b>⬜ undated</div>` : '');
+
+  document.getElementById('origin').innerHTML =
+    '<tr><th>Layer</th><th class="num">⚙️ auto</th><th class="num">✍️ human</th><th>mix</th></tr>' +
+    d.layers.map(L => {
+      const o = L.by_origin || {auto:0,human:0};
+      return `<tr><td>${esc(L.key)}</td><td class="num auto">${o.auto}</td>` +
+        `<td class="num human">${o.human}</td><td>${bar(o.auto, o.human)}</td></tr>`;
+    }).join('') +
+    `<tr><td><b>total</b></td><td class="num auto"><b>${t.auto}</b></td>` +
+    `<td class="num human"><b>${t.human}</b></td><td>${bar(t.auto, t.human)}</td></tr>`;
+
+  // Computed conclusions — recomputed from the data each load, so they can't drift.
+  const entryLayers = d.layers.filter(L => L.key !== 'STALENESS');
+  const biggestHuman = entryLayers.slice().sort((a,b)=>(b.by_origin?.human||0)-(a.by_origin?.human||0))[0];
+  const mostRed = entryLayers.slice().sort((a,b)=>((b.by_importance?.['3']||0)-(a.by_importance?.['3']||0)))[0];
+  const autoPct = t.rows ? Math.round(100*t.auto/t.rows) : 0;
+  const candidates = entryLayers.reduce((n,L)=>n+(L.by_origin?.auto||0),0);
+  const staleTotal = s.red + s.yellow;
+  const cc = [];
+  if (d.core) cc.push(`<b>${d.core.total} settled findings</b> sit at the core; the seven sibling layers below hold <b>${t.rows} rows</b> of the acts around them — so for every settled fact there is roughly ${(t.rows/Math.max(d.core.total,1)).toFixed(1)}× as much structured "not-yet-settled" scaffolding pointing at it.`);
+  cc.push(`<b>${t.rows} rows across ${t.layers} layers</b> — ${t.by_importance[3]||0} 🔴 · ${t.by_importance[2]||0} 🟠 · ${t.by_importance[1]||0} 🟡. The registries now hold as much structured "what we don't yet know / can't yet trust" as FINDINGS holds settled fact.`);
+  cc.push(`<b>${autoPct}% of rows are machine-generated</b> (${t.auto} ⚙️ / ${t.human} ✍️), but almost all of that is the fully-auto STALENESS table; only <b>${candidates} entry rows are ⚙️ auto candidates</b> still awaiting a human confirm-or-delete — that is the actionable backlog to graduate.`);
+  cc.push(staleTotal === 0
+    ? `<b>Nothing is stale</b> — every dated finding is 🟢 fresh (&lt;3 mo). The decay clock only starts to matter after the next quarter; re-run the STALENESS generator monthly.`
+    : `<b>${staleTotal} findings are aging</b> (${s.red} 🔴 >6 mo · ${s.yellow} 🟡 3–6 mo) — re-verify these before citing.`);
+  if (biggestHuman) cc.push(`The most human-curated layer is <b>${esc(biggestHuman.key)}</b> (${biggestHuman.by_origin.human} ✍️ rows); the highest-stakes layer by 🔴 count is <b>${esc(mostRed.key)}</b> — start confirmations there.`);
+  cc.push(`Each row carries an <b>↔ Interlinks</b> line, so the seven docs read as one graph: an assumption points to the recipe that would settle it and the dead end that shows what breaks if it fails.`);
+  document.getElementById('conclusions').innerHTML = cc.map(x => `<li>${x}</li>`).join('');
+
+  // Footer — authored-doc dated header (date only; no machine timestamp).
+  const g = (d.generated_at || '').slice(0, 10);  // YYYY-MM-DD
+  document.getElementById('lastup').textContent = g ? `${g.slice(8,10)}-${g.slice(5,7)}-${g.slice(0,4)}` : '08-07-2026';
+})();
+</script>
+
+<footer style="margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem;text-align:right;font-style:italic;color:var(--mut);font-size:.85rem">
+  Created: 08-07-2026 · Last updated: <span id="lastup">08-07-2026</span> · Dr. Mārcis Gasūns
+</footer>
+</body>
+</html>

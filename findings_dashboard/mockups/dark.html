@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FINDINGS dashboard — SanskritLexicography</title>
+<style>
+  /* DIRECTION — MODERN DARK DATA-APP (H563 family language: Uprava 04-dark / H568 / H575 /
+     H1061): deep charcoal-navy with two radial accent glows, glassy panels with a hairline
+     top-light, indigo/amber accent pair. CSS-only restyle of ../index.html — everything
+     outside this <style> block is byte-identical except the declared data-path prefixes
+     (see the H1063 handoff). */
+  :root { --fg:#e8ecf4; --mut:#8b94a7; --bg:#0b0e14;
+          --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
+          --r3:#ff5f6d; --r2:#ffab5e; --r1:#e5c15a; }
+  body { font: 15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
+         color:var(--fg);
+         background:radial-gradient(1200px 600px at 80% -10%,rgba(124,140,255,.14),transparent 60%),
+           radial-gradient(900px 500px at 0% 0%,rgba(77,214,193,.08),transparent 55%),var(--bg);
+         max-width: 1080px; margin: 0 auto; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; font-weight:700; letter-spacing:-.02em;
+       background:linear-gradient(90deg,#fff,#a9b4d6);
+       -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color:var(--mut);
+       text-transform:uppercase; letter-spacing:.05em; }
+  .mut { color: var(--mut); font-size: .85rem; }
+  .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+          padding: .7rem 1.1rem; min-width: 8.5rem;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+  .card b { font-size: 1.5rem; display: block; font-weight:800;
+            font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--mut); font-weight: 600; font-size:.75rem;
+       text-transform:uppercase; letter-spacing:.05em; }
+  tr:hover td { background: rgba(124,140,255,.05); }
+  a { color: #7c8cff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .chart { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+           padding: .6rem; margin: .6rem 0;
+           box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+  .ok  { color: #35d07f; } .bad { color: #ff5f6d; } .warn { color: #ffab5e; }
+  .dot { font-size: .8rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .8rem; }
+</style>
+</head>
+<body>
+<h1>FINDINGS — registry dashboard</h1>
+<p class="mut">Companion to
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md">FINDINGS.md</a>
+  (Sanskrit-data registry only; the Uprava infra registry is private and not shown here).
+  Data refreshed monthly — registry + metric snapshots by GitHub Actions, platform probes from a
+  residential host. <span id="stamp"></span></p>
+
+<div class="cards" id="cards"></div>
+
+<h2>Findings by section × importance</h2>
+<table id="matrix"></table>
+
+<h2 id="staleh">Stale findings — evidence older than <span id="staled">180</span> days</h2>
+<p class="mut">Point-in-time measurements decay (registry §25 measured ~0.8 %/week on a
+correction queue). Re-verify these before relying on them; 🔴 first.</p>
+<table id="stale"></table>
+
+<h2>Tracked metrics</h2>
+<p class="mut">One snapshot per month; each number re-collected from its owning repo.</p>
+<div class="grid" id="charts"></div>
+
+<h2>Platform liveness (registry §41)</h2>
+<p class="mut" id="probemeta"></p>
+<table id="platforms"></table>
+
+<script>
+'use strict';
+const DOT = {3:'🔴', 2:'🟠', 1:'🟡'};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function line(el, series, label) {
+  // series: [[dateStr, number], …] — one snapshot per month.
+  const last = series[series.length - 1];
+  if (series.length === 1) {
+    // A one-point "chart" is just noise — show the value as a stat card until
+    // the second monthly snapshot gives a trend to draw.
+    el.insertAdjacentHTML('beforeend',
+      `<div class="chart"><b>${esc(label)}</b>
+       <div style="font-size:2.1rem;font-weight:650;margin:.35rem 0 .1rem">${last[1]}</div>
+       <span class="mut">first snapshot · ${esc(last[0])} — trend line appears with the next monthly refresh</span></div>`);
+    return;
+  }
+  const w = 300, h = 120, px = 40, py = 20;
+  const vals = series.map(p => p[1]);
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  const span = (hi - lo) || 1;
+  const x = i => px + i * (w - 2 * px) / (series.length - 1);
+  const y = v => h - py - (v - lo) / span * (h - 2 * py);
+  const pts = series.map((p, i) => `${x(i)},${y(p[1])}`).join(' ');
+  const dots = series.map((p, i) =>
+    `<circle cx="${x(i)}" cy="${y(p[1])}" r="2.6" fill="currentColor"><title>${esc(p[0])}: ${p[1]}</title></circle>`).join('');
+  el.insertAdjacentHTML('beforeend',
+    `<div class="chart"><b>${esc(label)}</b> <span class="mut">${last[1]} · ${esc(last[0])}</span><br>
+     <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}">
+       <line x1="${px}" y1="${y(lo)}" x2="${w - px}" y2="${y(lo)}" stroke="currentColor" stroke-opacity=".18"/>
+       <line x1="${px}" y1="${y(hi)}" x2="${w - px}" y2="${y(hi)}" stroke="currentColor" stroke-opacity=".18"/>
+       <text x="${px - 5}" y="${y(hi) + 4}" text-anchor="end" font-size="9" fill="currentColor" fill-opacity=".6">${hi}</text>
+       <text x="${px - 5}" y="${y(lo) + 4}" text-anchor="end" font-size="9" fill="currentColor" fill-opacity=".6">${lo}</text>
+       <text x="${px}" y="${h - 5}" font-size="9" fill="currentColor" fill-opacity=".6">${esc(series[0][0].slice(0, 7))}</text>
+       <text x="${w - px}" y="${h - 5}" text-anchor="end" font-size="9" fill="currentColor" fill-opacity=".6">${esc(last[0].slice(0, 7))}</text>
+       <polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="1.5"/>${dots}
+       <circle cx="${x(series.length - 1)}" cy="${y(last[1])}" r="4" fill="none" stroke="currentColor"/>
+     </svg></div>`);
+}
+
+async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : null; } catch { return null; } }
+
+(async () => {
+  const data = await j('../data.json');
+  if (data) {
+    document.getElementById('stamp').textContent = 'Generated ' + data.generated_at + '.';
+    document.getElementById('staled').textContent = data.stale_days_threshold;
+    const c = data.counts;
+    document.getElementById('cards').innerHTML =
+      `<div class="card"><b>${c.total}</b>findings</div>` +
+      [3,2,1].map(i => `<div class="card"><b>${c.by_importance[i] || 0}</b>${DOT[i]} importance ${i}</div>`).join('') +
+      `<div class="card"><b>${c.stale}</b>stale (&gt;${data.stale_days_threshold}d)</div>`;
+
+    const secs = [...new Set(data.findings.map(f => f.section))];
+    document.getElementById('matrix').innerHTML =
+      '<tr><th>Section</th><th>🔴 3</th><th>🟠 2</th><th>🟡 1</th><th>total</th></tr>' +
+      secs.map(s => {
+        const fs = data.findings.filter(f => f.section === s);
+        const n = i => fs.filter(f => f.importance === i).length || '';
+        return `<tr><td>${esc(s)}</td><td>${n(3)}</td><td>${n(2)}</td><td>${n(1)}</td><td>${fs.length}</td></tr>`;
+      }).join('');
+
+    const stale = data.findings.filter(f => (f.age_days || 0) > data.stale_days_threshold)
+      .sort((a, b) => (b.importance - a.importance) || (b.age_days - a.age_days));
+    document.getElementById('stale').innerHTML =
+      '<tr><th></th><th>§</th><th>finding</th><th>evidence</th><th>age</th></tr>' +
+      (stale.length ? stale.map(f =>
+        `<tr><td class="dot">${DOT[f.importance] || ''}</td><td>§${f.n}</td>
+         <td><a href="${esc(f.url)}">${esc(f.title)}</a></td>
+         <td>${esc(f.evidence_date || '?')}</td><td>${f.age_days} d</td></tr>`).join('')
+       : '<tr><td colspan="5" class="ok">none — the registry is fresh</td></tr>');
+  }
+
+  const ts = await j('../timeseries.json');
+  if (ts && ts.snapshots.length) {
+    const el = document.getElementById('charts');
+    const METRICS = [
+      ['dcs_cdsl_linkage_pct', '§12 DCS→CDSL linkage %'],
+      ['glossary_vidyut_coverage_pct', '§13 glossary token coverage %'],
+      ['pwg_citation_coverage_pct', '§21 PWG citation coverage %'],
+      ['queue_decay_pct', '§25 correction-queue decay %'],
+    ];
+    for (const [key, label] of METRICS) {
+      const s = ts.snapshots.filter(x => x.metrics && x.metrics[key] != null)
+        .map(x => [x.date, x.metrics[key]]);
+      if (s.length) line(el, s, label);
+    }
+    const reg = ts.snapshots.filter(x => x.registry)
+      .map(x => [x.date, x.registry.total]);
+    if (reg.length) line(el, reg, 'registry size (findings)');
+    const st = ts.snapshots.filter(x => x.registry)
+      .map(x => [x.date, x.registry.stale]);
+    if (st.length) line(el, st, 'stale findings');
+  }
+
+  const ps = await j('../platform_status.json');
+  if (ps) {
+    document.getElementById('probemeta').textContent =
+      `Probed ${ps.generated_at} from ${ps.probe_host} — a failure here can be a host-specific ` +
+      'block, not an outage (Uprava §1).';
+    const cls = v => v === 'ok' ? 'ok' : (v === 'moved' || v.startsWith('http-3')) ? 'warn' : 'bad';
+    const icon = v => v === 'ok' ? '✅' : (v === 'moved') ? '↪️' : '❌';
+    document.getElementById('platforms').innerHTML =
+      '<tr><th></th><th>platform</th><th>verdict</th><th>detail</th></tr>' +
+      ps.results.map(r =>
+        `<tr><td>${icon(r.verdict)}</td>
+         <td><a href="${esc(r.url)}">${esc(r.name)}</a></td>
+         <td class="${cls(r.verdict)}">${esc(r.verdict)}</td>
+         <td class="mut">${esc(r.http || '')} ${esc(r.final_url && r.verdict === 'moved' ? '→ ' + r.final_url : r.error || '')} ${r.ms ? r.ms + ' ms' : ''}</td></tr>`).join('');
+  }
+})();
+</script>
+</body>
+</html>
