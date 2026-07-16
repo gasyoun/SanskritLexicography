@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Manifest-v2 production launch contract.** New live manifests bind a logical profile slot,
+  canonical `CLAUDE_CONFIG_DIR` fingerprint, execution route/lane, exact model and validation
+  method, plus an exact per-key `real | synthetic_control` map. V1 remains readable for historical
+  audit but cannot be newly promoted. Synthetic controls are never promotable.
+- **Profile and concurrency enforcement.** Coordinator prepare/requeue accepts the profile binding;
+  orchestrator and bounded staged-run expose `--only-profile`, verify both roster slot and config
+  fingerprint, and every headless manifest holds one cross-process active-call claim keyed by that
+  fingerprint. Two c4 manifests therefore cannot call concurrently even across launch entry points;
+  `max-wide=1` remains an independent within-manifest limit.
+- **Windows CLI and probe policy fail closed.** Bare `claude` is resolved with `shutil.which`; a
+  Windows npm shim is invoked through its Node CLI entry or refused, never handed back unresolved.
+  Probe telemetry names its policy and lane, requires a representative schema-valid response, zero
+  connection errors, and latency strictly below 30 seconds; a supplied verdict that contradicts the
+  measured gate is refused.
+- **Bounded staged-run retained from PR #495.** The dry-run-default, opt-in execution adapter keeps
+  cumulative window/call/clean/cost ceilings, checkpoint restart, prepared-plan scope, and strict
+  unevaluable-cost failure. It is carried by the replacement launch-control branch rather than
+  merged independently.
+
 - **H963 correction-evidence reconciliation.** Reclassified the 2 h 10 min offline campaign
   honestly (108-agent subworkflow: 98 minutes): 87 provisional candidates resolve to 49 confirmed,
   9 plausible, 1 mixed, 19 merged, and 9 refuted/dropped. Withdrawn the unsupported
