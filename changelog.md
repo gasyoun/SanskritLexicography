@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.13.0] — 17-07-2026
+
 ### Added
 - **A31/P5 Lexikos draft — error-origin typology over the OBS-T correction corpus (17-07-2026,
   Fable 5 `claude-fable-5`, H1074)**: full draft
