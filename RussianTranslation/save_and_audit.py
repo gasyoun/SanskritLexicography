@@ -26,7 +26,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PILOT = os.path.join(HERE, "src", "pilot")
 if PILOT not in sys.path:
     sys.path.insert(0, PILOT)
+SRC = os.path.join(HERE, "src")
+if SRC not in sys.path:
+    sys.path.insert(0, SRC)
 from window_common import atomic_write_json
+import validate_final_card_schema          # C-04: the record contract, now on the LIVE path
 
 
 def main():
@@ -100,10 +104,48 @@ def main():
             sys.exit(f"REFUSED: {os.path.basename(out_path)} has {old_nn} non-null cards; new has "
                      f"only {new_nn}. Use --merge to fill nulls, or --force to overwrite.")
 
-    atomic_write_json(out_path, result, indent=None)
-
     cards = result.get("results", [])
     null_count = sum(1 for r in cards if not r.get("card"))
+
+    # C-04: enforce the record contract on LIVE output.
+    #
+    # `validate_final_card_schema` is the only component that encodes
+    # `record.required = {h, grammar, senses}`, and until now its single caller was a CI step
+    # running it against a hand-made PASSING fixture -- a green check certifying a contract no
+    # real card was ever measured against. That is why C-01 and C-02 accumulated in silence:
+    # 670 rows reached the canonical store with a raw {Tn}, and 468 with `h: null`, past a
+    # validator that would have refused every one of them.
+    #
+    # RECORD_REQUIRED is NOT relaxed to make this pass (nor is SENSE_REQUIRED "restored" --
+    # its relaxation was deliberate, matching the generation schema). A card that cannot state
+    # its own `h` is exactly what must not be saved.
+    violations = []
+    for r in cards:
+        card = r.get("card")
+        if not card:
+            continue                        # a null card is already counted above
+        try:
+            validate_final_card_schema.validate_card(card)
+        except ValueError as exc:
+            violations.append(f"  {r.get('key')}: {exc}")
+    if violations:
+        print(f"SCHEMA: {len(violations)} of {len(cards) - null_count} card(s) violate "
+              f"pwg_ru_final_card.schema.json:")
+        for v in violations[:20]:
+            print(v)
+        if "--allow-schema-violations" not in flags:
+            # Refuse BEFORE the write: a gate that reports "REFUSED" after already saving the
+            # file is not a gate.
+            sys.exit(
+                f"REFUSED: {len(violations)} card(s) violate the final-card record contract, "
+                f"nothing written. These would land in the canonical store unreadable by any "
+                f"consumer grouping on (key1, h). Fix the generator, or pass "
+                f"--allow-schema-violations to record the exception deliberately.")
+        print("SCHEMA: proceeding under --allow-schema-violations (violations recorded above)")
+    else:
+        print(f"SCHEMA: {len(cards) - null_count} card(s) satisfy the record contract")
+
+    atomic_write_json(out_path, result, indent=None)
     print(f"Saved {out_path}: {len(cards)} cards, {null_count} null")
 
     if "--no-audit" in flags:
