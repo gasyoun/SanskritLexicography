@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H963 c4 owner-override bounded pilot — GENERATED, NOT PROMOTED; the latency NO-GO has a
+  production consequence.** An explicit owner override of the 30 s launch prohibition, taken
+  after the Gate-0 NO-GO below, run as **two** attempt-specific manifests (the execution-manifest
+  schema has no synthetic/provenance discriminator, so synthetic-canary and real-nominal modes
+  were **not** forced into one manifest): 1 canary call + 1 real nominal call, `max_agents: 1`
+  each, **2 agents total**, no retry/requeue. **Canary passed clean** (3/3 pure-gloss senses,
+  `sanloss_shortfalls=0`, `tnmask_mismatches=0` — no false positive). **The real call died at the
+  180 s kill ceiling** (`kill-timeout 180s @ skelBytes=5606`); with `max_heal_agents: 0` both
+  cards went null → clean rate **0 % vs an 80 % floor → no promotion**. So a *trivial* probe takes
+  105 s on c4 and a *real* card cannot finish inside 180 s at all. Real heads came from the
+  **nominal-core** worklist (Tier-2 `pril10`), never no_pwg — **H255 stays frozen**; band-5
+  monster heads (`kAla`/`brahman`/`Atman`/`rasa`/`yoga`) were rejected on shape, rank being
+  scholarly priority and not cost order. **Rung 3 remains unmeasured** — one clean synthetic card
+  is not a false-flag *rate*. Canonical store verified byte-identical (11,605 rows, `cc1d544e…`)
+  before and after. Report:
+  [`pwg_ru/h963/H963_C4_OWNER_OVERRIDE_PILOT_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_OWNER_OVERRIDE_PILOT_2026-07-16.md).
+
 - **H963 Gate-0: fresh dated single-profile c4 health reading — NO-GO, ~2× worse than the
   15-07 baseline.** One D-K attempt (one warm-up, one measured, no reroll) on the ≥ v1.9.17
   natural schema-carrying prompt: warm-up **53 290 ms** / measured **104 870 ms**, both
