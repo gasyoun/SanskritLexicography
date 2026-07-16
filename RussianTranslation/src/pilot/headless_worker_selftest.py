@@ -185,15 +185,17 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
         h.os.name = 'posix'
         assert h.claude_argv_prefix('/usr/bin/claude') == ['/usr/bin/claude']
         h.os.name = 'nt'
-        assert h.claude_argv_prefix(r'C:\p\claude.exe') == [r'C:\p\claude.exe']
-        h.shutil.which = lambda _n: r'C:\node.exe'
-        h.glob.glob = lambda pat: ([r'C:\p\node_modules\@anthropic-ai\claude-code\cli-wrapper.cjs']
+        # Forward slashes are accepted by Windows and keep this simulated-nt branch
+        # meaningful when the selftest itself runs with POSIX os.path semantics in CI.
+        assert h.claude_argv_prefix('/p/claude.exe') == ['/p/claude.exe']
+        h.shutil.which = lambda _n: '/node.exe'
+        h.glob.glob = lambda pat: (['/p/node_modules/@anthropic-ai/claude-code/cli-wrapper.cjs']
                                    if 'cli*.cjs' in pat else [])
-        assert h.claude_argv_prefix(r'C:\p\claude.cmd') == [
-            r'C:\node.exe', r'C:\p\node_modules\@anthropic-ai\claude-code\cli-wrapper.cjs']
+        assert h.claude_argv_prefix('/p/claude.cmd') == [
+            '/node.exe', '/p/node_modules/@anthropic-ai/claude-code/cli-wrapper.cjs']
         h.shutil.which = lambda _n: None
         try:
-            h.claude_argv_prefix(r'C:\p\claude.cmd')
+            h.claude_argv_prefix('/p/claude.cmd')
         except FileNotFoundError:
             pass
         else:
