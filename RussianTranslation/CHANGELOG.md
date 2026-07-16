@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H1070 — PWG→EN Fable-tier gold adjudication vs the MW TM + scale-up go/no-go.** First
+  Fable-grade verdict on the FU1 (Sonnet 5) tranche and re-adjudication of the exact S7
+  frame with Monier-Williams quoted per entry as the adversary: 170 sense rows, combined
+  wrong-sense 4/170 = 2.35% Wilson [0.92%, 5.89%], FU1 3/102 = 2.94%, zero new
+  MW-TM contamination, zero register-mismatch. Verdict **GO (conditional)** with a standing
+  per-tranche decision rule (≤5% GO / >10% NO-GO / omission always blocks) and three named
+  guards (German polyseme judge line, `{#..#}`-in-footnote token check, DE-RESIDUE
+  cross-ref/NWS extension). Evidence + rulings: `pwg_ru/h1070/` (adjudication report,
+  go/no-go memo, 170-row gold JSONL, recomputable stats scripts). Adjudicator Fable 5
+  (`claude-fable-5`); generation under judgment Sonnet 4.6 (`claude-sonnet-4-6`, pilot) and
+  Sonnet 5 (`claude-sonnet-5`, FU1).
+
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path
   and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,
