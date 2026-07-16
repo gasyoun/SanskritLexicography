@@ -79,6 +79,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   placeholder maps. The complete evidence chain deterministically repairs **668/670** placeholder
   rows and all **468** null headwords; only two malformed `banD` rows require quarantine.
 
+- **Bounded staged-run integration (opt-in, default-off) — H963.** New standalone module
+  [`src/pilot/bounded_staged_run.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py)
+  drives the max-account staged-run path (`probe_fleet` → `cmd_run_once` → `cmd_record_done`
+  → coordinator `promote-ready`) under the `bounded_supervisor` control loop, one prepared
+  lease per window. Zero edits to `max_account_orchestrator.py` / `coordinator.py`; every
+  existing command and default is unchanged. The **default action is a dry-run planning view**
+  that makes ZERO generation calls (prints the scoped work, ceilings, account allocation,
+  checkpoint path and stop policy); a live drain requires the explicit `--execute` opt-in AND
+  a healthy fleet probe. Lease scoping (`only_external_ids={root}` + per-`--lease-id`
+  promotion) keeps transient/defect/pending/historical/unrelated-plan work out of the current
+  run; deterministic restart from the checkpoint re-runs no completed lease (exactly-once, on
+  both the loop's `completed_window_ids` and the coordinator's promoted-terminal idempotence).
+- **Bounded-supervisor ceilings + cost fail-closed — H963.**
+  [`bounded_supervisor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_supervisor.py)
+  gains opt-in `max_calls` (`STOP_CALL_COUNT`), `max_clean` (`STOP_CLEAN_QUOTA`) and a
+  `strict_cost_fn`; a window whose cost is UNEVALUABLE under an active cost ceiling now stops
+  the run closed with the distinct `STOP_COST_UNEVALUABLE` reason instead of the legacy
+  silent-zero. `calls_spent`/`clean_total` persist across the checkpoint. All new params are
+  `None`-default, so the existing behaviour and all prior tests are unchanged.
+- **Economy-ledger opt-in strict gate — H963.**
+  [`economy_ledger.gate(..., strict=False)`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/economy_ledger.py)
+  and a `--strict` CLI flag: legacy (default) still SKIPS a ceiling whose value is `None`
+  (unchanged for every existing caller); `strict=True` treats a requested-but-unevaluable
+  ceiling as a fail-closed breach (distinct `unevaluable` marker). Missing accounting data is
+  never treated as within-ceiling. Both modes are covered by tests.
+- **Tests + CI.** New
+  [`bounded_staged_run_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run_selftest.py)
+  (9 cases: plan scope, dry-run-makes-no-call, historical-jobs-excluded, clean completion,
+  restart/no-dup, ceiling exhaustion, cost fail-closed, consecutive-empty, audit seam), +5
+  bounded-supervisor cases, +1 economy-ledger both-modes case; wired into the CI gate block.
+  No translation prompt or semantic-policy change; no live generation, promotion, store write
+  or TM rebuild.
+
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path
   and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,
