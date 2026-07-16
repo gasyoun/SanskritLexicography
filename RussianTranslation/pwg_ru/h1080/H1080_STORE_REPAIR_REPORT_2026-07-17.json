@@ -1,0 +1,57 @@
+{
+  "schema": "pwg_ru.store_repair_report.v1",
+  "handoff": "H1080",
+  "created_at": "2026-07-17T02:08:16+03:00",
+  "mode": "atomic_in_place",
+  "production_generation_calls": 0,
+  "store": {
+    "before_rows": 11605,
+    "before_sha256": "cc1d544ed92d201ca8cbecde0b5e9a8191994dfd1baf20841da82f1f9ae7c805",
+    "after_rows": 11603,
+    "after_sha256": "f15caf7d1f65db0269498c50ecdcd6bf098572a543c12a055ae08c374377b2f9",
+    "raw_token_rows_after": 0,
+    "null_headword_rows_after": 0
+  },
+  "repair": {
+    "placeholder_rows_found": 670,
+    "placeholder_rows_repaired": 668,
+    "null_headword_rows_repaired": 468,
+    "quarantined_rows": 2,
+    "second_apply": "no_op_already_clean",
+    "key_subcard_multiset": "unchanged_except_two_quarantined_rows"
+  },
+  "backup": {
+    "filename": "pwg_ru_translated.jsonl.pre-h1080.cc1d544ed92d201c.20260716T230816Z.bak",
+    "sha256": "cc1d544ed92d201ca8cbecde0b5e9a8191994dfd1baf20841da82f1f9ae7c805",
+    "tracked": false
+  },
+  "quarantine": {
+    "filename": "pwg_ru_translated.jsonl.h1080_quarantine.jsonl",
+    "sha256": "dad87e89009bf0f3b292d41d6f67bcd225623b0cae184c567ee725d1b4472490",
+    "tracked": false,
+    "entries": [
+      {
+        "key": "banD",
+        "subcard": "ban_d~~h0_11_ni",
+        "original_row_sha256": "aeca869f7cea526193291b6756b3ec7638cd8c3b1495b30fb099d3872b01cbcc",
+        "input_raw_sha256": "afecdf60aaac961faca28c907aaffe16364875fe94a5edc6311f091522e403b9",
+        "reason": "de contains out-of-range {T196}; placeholder map has 195 entries"
+      },
+      {
+        "key": "banD",
+        "subcard": "ban_d~~h0_21_upasam_0",
+        "original_row_sha256": "ca34c515728e2c8ac51df4c2bc09f0dd0df60070361bd909767abc3773747186",
+        "input_raw_sha256": "fe1b164d4bfe0c477e209c295f7392d011d5f944b3f56accb60872e790bb206d",
+        "reason": "de contains out-of-range {T235}; placeholder map has 234 entries"
+      }
+    ]
+  },
+  "translation_memory": {
+    "before_sha256": "f2efc0e68d8dbb0e0858203d491a430a80d169ae3a5f2ec3c7c44d32ea0a79ef",
+    "after_sha256": "121d56fc9b6acb52c6bed81587953104a86b5ef83a607bbe8e2bd16d1db7b4ab",
+    "content_addressed_cards": 2476,
+    "validation_ok": 2476,
+    "rebuild_count": 1,
+    "tracked": false
+  }
+}

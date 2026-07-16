@@ -142,19 +142,36 @@ def main():
         start = js.index('function restoreCard(card, k)')
         end = js.index('// Per-card grammar', start)
         restore_card_js = js[start:end]
+        # RESTORE_SPEC is injected from the same constant the harness interpolates (C-01), not
+        # re-typed here: the whole point of the constant is that no second list exists. The
+        # slice above starts at `function restoreCard`, so the const declared above it is not
+        # carried in -- supply it exactly as the real harness would.
+        import card_fields
         node_script = r"""
 const PH = {agni: ['<lex>m.</lex>']}
 const restore = (t, ph) => (t || '').replace(/\{T(\d+)\}/g, (_m, n) => ph[Number(n)-1])
+const RESTORE_SPEC = %s
 %s
-const card = {records: [{grammar: '{T1}', senses: [{german: '{T1}', russian: '{T1}'}]}]}
+const card = {iast: '{T1}', records: [{h: '{T1}', grammar: '{T1}', senses: [
+  {tag: '{T1}', german: '{T1}', russian: '{T1}', differentia: '{T1}'}]}]}
 console.log(JSON.stringify(restoreCard(card, 'agni')))
-""" % restore_card_js
+""" % (card_fields.js_restore_spec('russian'), restore_card_js)
         node = subprocess.run(['node', '-e', node_script], capture_output=True,
                               text=True, encoding='utf-8')
         assert node.returncode == 0, node.stderr
         restored = json.loads(node.stdout)
-        assert restored['records'][0]['grammar'] == '<lex>m.</lex>'
-        assert restored['records'][0]['senses'][0]['german'] == '<lex>m.</lex>'
+        rec = restored['records'][0]
+        sense = rec['senses'][0]
+        assert rec['grammar'] == '<lex>m.</lex>'
+        assert sense['german'] == '<lex>m.</lex>'
+        # C-01: the JS lane must unmask EVERY field the promote path reads, not just three.
+        # card.iast / record.h / sense.tag / sense.differentia used to survive as raw {Tn} and
+        # were promoted verbatim -- 670 store rows, 223 of them a {Tn} headword.
+        for where, value in (('card.iast', restored['iast']), ('record.h', rec['h']),
+                             ('sense.tag', sense['tag']),
+                             ('sense.differentia', sense['differentia']),
+                             ('sense.russian', sense['russian'])):
+            assert value == '<lex>m.</lex>', '%s left unrestored by the JS lane: %r' % (where, value)
 
     # D-A (H818 Windows acceptance): the launcher resolver must bypass the Windows .cmd
     # batch shim (cmd.exe corrupts the --json-schema arg) and pass native/POSIX through.

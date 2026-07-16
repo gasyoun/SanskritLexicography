@@ -321,10 +321,16 @@ def topup_fragments(wf_file, lang):
             print('  ! %s: %d resolved fragment(s) not in frag_prov/frag-TM — cannot top up in '
                   'place (use full `gen`); skipping' % (orig, len(unresolvable)))
             continue
-        h = None
+        owners_by_tag, default_owner = {}, (None, None)
         for rec in card.get('records') or []:
-            h = h or rec.get('h')
-        cards.append({'orig': orig, 'iast': card.get('iast'), 'h': h,
+            owner = (rec.get('h'), rec.get('grammar'))
+            if default_owner == (None, None) and owner != (None, None):
+                default_owner = owner
+            for sense in rec.get('senses') or []:
+                if sense.get('tag') is not None:
+                    owners_by_tag.setdefault(sense.get('tag'), owner)
+        cards.append({'orig': orig, 'iast': card.get('iast'), 'notes': card.get('notes', ''),
+                      'owners_by_tag': owners_by_tag, 'default_owner': default_owner,
                       'plan': planrows, 'resolved': resolved, 'missing': missing})
     return cards
 
@@ -355,6 +361,18 @@ def _stitch_tree(tree, field):
     return senses, missing_si
 
 
+def _stitch_owned_senses(senses, owners):
+    """Rebuild records without throwing away each fragment sense's source owner."""
+    records = []
+    for sense, owner in zip(senses, owners):
+        h, grammar = owner or (None, None)
+        if (not records or records[-1]['h'] != h or
+                records[-1]['grammar'] != grammar):
+            records.append({'h': h, 'grammar': grammar, 'senses': []})
+        records[-1]['senses'].append(sense)
+    return records
+
+
 def stitch_topup(manifest_cards, got, field):
     """Reassemble each card from its resolved fragments (senses baked into the manifest) plus the
     freshly-recovered missing fragments (`got`: fk -> senses list, or None if still failed).
@@ -362,17 +380,40 @@ def stitch_topup(manifest_cards, got, field):
     results, still_missing = [], {}
     for c in manifest_cards:
         orig, resolved = c['orig'], c.get('resolved') or {}
-        tree, missing_fk = defaultdict(dict), []
+        tree, owner_tree, missing_fk = defaultdict(dict), defaultdict(dict), []
         for row in c['plan']:
             si, pi = row['s'], row['p']
             if row['missing']:
-                senses = got.get(row['fk'])
-                if senses is None:
+                fragment_card = got.get(row['fk'])
+                if isinstance(fragment_card, list):  # legacy direct-call shape
+                    senses = fragment_card
+                    owner = (c.get('h'), c.get('grammar'))
+                else:
+                    senses = ([s for rec in (fragment_card.get('records') or [])
+                               for s in (rec.get('senses') or [])]
+                              if fragment_card else None)
+                    owner = next(((rec.get('h'), rec.get('grammar'))
+                                  for rec in (fragment_card.get('records') or [])
+                                  if rec.get('senses')), (None, None)) if fragment_card else None
+                if fragment_card is None:
                     missing_fk.append(row['fk'])
                 tree[si][pi] = senses
+                owner_tree[si][pi] = owner
             else:
                 tree[si][pi] = resolved.get(row['fsha'])
+                tags = [s.get('tag') for s in (resolved.get(row['fsha']) or [])]
+                owner_tree[si][pi] = next(
+                    (tuple(c['owners_by_tag'][tag]) for tag in tags
+                     if tag in c.get('owners_by_tag', {})),
+                    tuple(c.get('default_owner') or (c.get('h'), c.get('grammar'))))
         senses, missing_si = _stitch_tree(tree, field)
+        owners = []
+        for si in sorted(tree):
+            if si in missing_si:
+                continue
+            owners.append(next((owner_tree[si][pi] for pi in sorted(owner_tree[si])
+                                if owner_tree[si][pi] not in (None, (None, None))),
+                               tuple(c.get('default_owner') or (c.get('h'), c.get('grammar')))))
         total_senses = len(tree)
         if not senses:
             still_missing[orig] = missing_fk
@@ -385,7 +426,8 @@ def stitch_topup(manifest_cards, got, field):
             still_missing[orig] = missing_fk
         results.append({'key': orig,
                         'card': {'key1': orig, 'iast': c.get('iast'),
-                                 'records': [{'h': c.get('h'), 'senses': senses}]},
+                                 'notes': c.get('notes', ''),
+                                 'records': _stitch_owned_senses(senses, owners)},
                         'partial': bool(missing_si),
                         'missing_senses': len(missing_si), 'total_senses': total_senses})
     return results, still_missing
@@ -418,7 +460,9 @@ def cmd_topup(root, lang, wf_file):
     # topup manifest: self-contained for merge (full plan + resolved senses baked in)
     man = {'root': root, 'lang': lang, 'mode': 'topup',
            'field': 'russian' if lang == 'ru' else 'english',
-           'cards': [{'orig': c['orig'], 'iast': c['iast'], 'h': c['h'],
+           'cards': [{'orig': c['orig'], 'iast': c['iast'], 'notes': c['notes'],
+                      'owners_by_tag': c['owners_by_tag'],
+                      'default_owner': c['default_owner'],
                       'plan': [{'s': r['s'], 'p': r['p'], 'fsha': r['fsha'],
                                 'fk': r['fk'], 'missing': r['missing']} for r in c['plan']],
                       'resolved': c['resolved']} for c in cards]}
@@ -456,8 +500,7 @@ def cmd_topup_merge(root, lang, task_file):
         if not r:
             continue
         c = r.get('card')
-        got[r['key']] = ([s for rec in (c.get('records') or []) for s in (rec.get('senses') or [])]
-                         if c else None)
+        got[r['key']] = c
     results, still_missing = stitch_topup(man['cards'], got, field)
     tag = 'en' if lang == 'en' else 'sc'
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))
@@ -550,19 +593,20 @@ def cmd_merge(root, lang, task_file):
         # Skip only the senses whose fragments are still missing; keep the rest as partial
         # credit, and persist the missing fragment keys for a targeted follow-up requeue
         # (not a from-scratch re-run of the whole card).
-        senses, iast, h, missing_si = [], None, None, []
+        senses, owners, iast, missing_si = [], [], None, []
         for si in sorted(senses_map):
             parts = senses_map[si]
             frs = [parts[pi] for pi in sorted(parts)]
             if any(got.get(fk) is None for fk in frs):
                 missing_si.append(si)
                 continue
-            g_txt, t_txt, tag, extra = [], [], None, {}
+            g_txt, t_txt, tag, extra, owner = [], [], None, {}, (None, None)
             for pi in sorted(parts):
                 card = got[parts[pi]]
                 iast = iast or card.get('iast')
                 for rec in card.get('records') or []:
-                    h = h or rec.get('h')
+                    if owner == (None, None) and rec.get('senses'):
+                        owner = (rec.get('h'), rec.get('grammar'))
                     for s in rec.get('senses') or []:
                         g_txt.append(s.get('german') or '')
                         t_txt.append(s.get(field) or '')
@@ -574,6 +618,7 @@ def cmd_merge(root, lang, task_file):
                       field: '\n'.join(x for x in t_txt if x)}
             merged.update({kk: vv for kk, vv in extra.items() if vv is not None})
             senses.append(merged)
+            owners.append(owner)
         if not senses:
             # nothing at all resolved — but do NOT let the card exit the recovery funnel
             # unrecorded: persist its fragment keys exactly like a partial's (previously
@@ -594,8 +639,8 @@ def cmd_merge(root, lang, task_file):
         drift = (not missing_si) and got_ls != src.count('<ls')
         if drift:
             print('  ! %s fidelity drift: <ls> %d vs source %d' % (orig, got_ls, src.count('<ls')))
-        row = {'key': orig, 'card': {'key1': orig, 'iast': iast,
-                                     'records': [{'h': h, 'senses': senses}]},
+        row = {'key': orig, 'card': {'key1': orig, 'iast': iast, 'notes': '',
+                                     'records': _stitch_owned_senses(senses, owners)},
                'partial': bool(missing_si),
                'missing_senses': len(missing_si), 'total_senses': len(senses_map)}
         if drift:

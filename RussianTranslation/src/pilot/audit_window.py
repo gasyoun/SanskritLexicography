@@ -26,6 +26,7 @@ INPUT_DIR = os.path.join(HERE, 'input')                    # .../src/pilot/input
 
 sys.path.insert(0, SRC)
 import nws_split
+import validate_final_card_schema
 from safe_filename import safe_name
 from dashboard_events import append_event
 from prompt_rule_audit import (
@@ -59,6 +60,32 @@ def _under_tempdir(path):
 COLLECT = os.path.join(SRC, '_pilot_collect.py')
 BATCH_FILE = os.path.join(OUT, '_realtest_batch.json')
 PROTECTED = {'aMSa', 'anna', 'ap'}
+
+
+def run_final_schema_gate(results):
+    """Audit every non-null card against the final record contract in-process."""
+    invalid = {}
+    checked = 0
+    for row in results or []:
+        if not isinstance(row, dict) or not row.get('card'):
+            continue
+        key = row.get('key') or (row['card'].get('key1') if isinstance(row['card'], dict) else '?')
+        checked += 1
+        try:
+            validate_final_card_schema.validate_card(row['card'])
+        except ValueError as exc:
+            invalid[key] = str(exc)
+    lines = ['final-card schema: %d checked, %d invalid' % (checked, len(invalid))]
+    lines.extend('  %s: %s' % item for item in sorted(invalid.items()))
+    return {
+        'argv': ['in-process', 'validate_final_card_schema.validate_card'],
+        'returncode': 1 if invalid else 0,
+        'stdout': '\n'.join(lines) + '\n',
+        'stderr': '',
+        'seconds': 0.0,
+        'requeue': sorted(invalid),
+        'schema_violations': invalid,
+    }
 
 
 def run_py(args, env=None):
@@ -448,7 +475,7 @@ def main():
         for err in stale.get('errors') or []:
             print('  ' + err)
     protected = load_protected()
-    gates = {}
+    gates = {'final_schema': run_final_schema_gate(results)}
 
     print('\n=== collect ===')
     collect = collect_cards(wf, protected)
@@ -485,7 +512,8 @@ def main():
                     res['requeue'] = parsed
             gates[name] = res
 
-    for name in ['nws', 'translation', 'stage2_mechanical', 'coverage', 'sense_dupes', 'prompt_semantic', 'sense_loss']:
+    for name in ['final_schema', 'nws', 'translation', 'stage2_mechanical', 'coverage',
+                 'sense_dupes', 'prompt_semantic', 'sense_loss']:
         res = gates[name]
         print('\n=== %s ===' % name)
         print(res['stdout'].rstrip())
