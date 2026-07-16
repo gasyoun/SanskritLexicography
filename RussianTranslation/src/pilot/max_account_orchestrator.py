@@ -20,6 +20,7 @@ import time
 from run_observability import append_event, write_census
 from headless_worker import claude_argv_prefix, run_tree_kill, windows_hidden_flags
 from window_common import atomic_write_text
+from execution_contract import validate_manifest, validate_profile
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -256,10 +257,15 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
         if sha256_path(job['manifest_path']) != job['manifest_sha256']:
             return fail_or_retry(db_path, job['id'], 2, 'manifest hash changed',
                                  'manifest_drift', attempt_log)
+        manifest = json.load(open(job['manifest_path'], encoding='utf-8'))
+        try:
+            validate_profile(manifest, config_dir, account)
+        except ValueError as exc:
+            return fail_or_retry(db_path, job['id'], 2, str(exc), 'configuration', attempt_log)
         argv = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
                 job['manifest_path'], '--output', job['output_path'],
                 '--status-out', status_path, '--timeout', str(timeout),
-                '--claude-bin', claude_bin]
+                '--claude-bin', claude_bin, '--only-profile', account]
     else:
         argv = json.loads(job['argv_json'])
     env = os.environ.copy()
@@ -393,6 +399,10 @@ def cmd_import_coordinator(args):
             if not manifest_path or not os.path.exists(manifest_path):
                 raise SystemExit('%s: execution manifest missing' % lease.get('id'))
             manifest = json.load(open(manifest_path, encoding='utf-8'))
+            try:
+                validate_manifest(manifest, require_v2=True)
+            except ValueError as exc:
+                raise SystemExit('%s: %s' % (lease['id'], exc))
             if manifest['meta'].get('lang') != 'ru':
                 raise SystemExit('%s: H818 production default is RU only' % lease['id'])
             keys = set(manifest['meta']['selected_keys'])
@@ -456,6 +466,9 @@ def cmd_run_once(args):
     # bypassing the mandatory pre-dispatch probe (the cap/drop would apply only to the probe set).
     # Default (attribute absent / None) is unrestricted, so a standalone `run-once` is unchanged.
     only = getattr(args, 'only_accounts', None)
+    if getattr(args, 'only_profile', None):
+        requested = {args.only_profile}
+        only = requested if only is None else set(only) & requested
     if only is not None:
         accounts = [a for a in accounts if a['name'] in only]
     work = []
@@ -489,6 +502,8 @@ def cmd_status(args):
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+PROBE_POLICY = 'production_v1'
+PROBE_LANE = 'claude-cli-headless/readiness-schema'
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
 # Only the explicit opt-in ever parks this way; the default STOP-on-any-NO-GO path never drops.
@@ -610,7 +625,9 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
         if events_path:
             append_event(events_path, run_id=run_id, account=account, stage='probe',
                          event='probe_call', purpose=purpose, elapsed_ms=latency,
-                         model=model, output_bytes=obytes, classification=cls)
+                         model=model, output_bytes=obytes, classification=cls,
+                         policy=PROBE_POLICY, executor_lane=PROBE_LANE,
+                         schema_valid=(cls == 'success'))
 
     warm_ms, warm_cls, warm_bytes = _probe_call(config_dir, claude, payload_bytes, model)
     _emit('warmup', warm_ms, warm_cls, warm_bytes)     # excluded from the acceptance latency census
@@ -621,8 +638,8 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     _emit('measured', meas_ms, meas_cls, meas_bytes)   # the one gated acceptance reading
     if meas_cls != 'success':
         raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
-    if meas_ms > latency_ceiling_ms:
-        raise SystemExit('measured probe latency %d ms exceeds %d ms health ceiling — honest NO-GO '
+    if meas_ms >= latency_ceiling_ms:
+        raise SystemExit('measured probe latency %d ms is not below %d ms health ceiling — honest NO-GO '
                          '(warm-up already done; no re-roll)' % (meas_ms, latency_ceiling_ms))
     return meas_ms
 
@@ -692,6 +709,10 @@ def cmd_staged_run(args):
     db = connect(args.db)
     accounts = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
     db.close()
+    if getattr(args, 'only_profile', None):
+        accounts = [account for account in accounts if account['name'] == args.only_profile]
+        if not accounts:
+            raise SystemExit('--only-profile is not a validated roster slot')
     # GAP #5 (four-profile): the staged run now fans across N validated profiles instead of hard-
     # capping at one. Require >=1 (a zero-account run has nothing to probe or dispatch); --max-
     # accounts optionally caps the fleet. N==1 remains the exact single-profile Windows-100 path.
@@ -758,6 +779,7 @@ def cmd_staged_run(args):
                                             # dispatch ONLY to the probed, capped/healthy fleet —
                                             # never to a capped-out or dropped (unprobed) account.
                                             only_accounts=set(probe_latencies),
+                                            only_profile=getattr(args, 'only_profile', None),
                                             only_external_ids=lease_scope))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
                                            cwd=args.cwd, only_external_ids=lease_scope))
@@ -914,7 +936,7 @@ def main(argv=None):
     p = sub.add_parser('import-coordinator'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--lease-id', action='append'); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_import_coordinator)
     p = sub.add_parser('recover'); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', required=True); p.add_argument('--cwd', required=True); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
@@ -923,6 +945,7 @@ def main(argv=None):
     p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
     p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
     p.add_argument('--max-accounts', type=int, default=0)          # GAP #5: cap the validated fleet
+    p.add_argument('--only-profile', help='enforce one logical profile slot and its bound directory')
     p.add_argument('--drop-unhealthy', action='store_true')        # GAP #5: proceed on healthy subset
     p.add_argument('--report', required=True)
     p.add_argument('--events', required=True); p.add_argument('--census', required=True)

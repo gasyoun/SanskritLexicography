@@ -14,6 +14,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import max_account_orchestrator as m
+from execution_contract import config_dir_fingerprint
 
 
 def main():
@@ -133,8 +134,17 @@ def main():
         os.makedirs(artifacts)
         manifest = os.path.join(artifacts, 'manifest.json')
         with open(manifest, 'w', encoding='utf-8') as f:
-            json.dump({'schema': 'pwg.headless_execution_manifest.v1',
-                       'meta': {'lang': 'ru', 'selected_keys': ['unique']}}, f)
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': ['unique']},
+                       'execution': {'profile_slot': 'acc1',
+                                     'config_dir_fingerprint': config_dir_fingerprint(
+                                         os.path.join(td, 'a1')),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {'unique': 'real'}}, f)
         with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
             json.dump({'leases': [{'id': 'lease1', 'state': 'prepared',
                                    'artifact_dir': artifacts,
@@ -157,8 +167,8 @@ def main():
     print('  D-C is_rate_limited: hash-429 ignored; worker-class / real-429 detected')
 
     # D-F/D-K: the two-phase probe protocol. payload<5KB / non-exact model raise before any call.
-    # Then EXACTLY one warm-up call (latency excluded) + one measured call (gated): 30000 passes,
-    # 30001 is an honest NO-GO, and a warm-up failure STOPs before the measured call ever starts.
+    # Then EXACTLY one warm-up call (latency excluded) + one measured call (gated): policy is
+    # strictly below 30000; 30000 is an honest NO-GO.
     try:
         m.live_probe('cfg', payload_bytes=100); assert False, 'payload floor not enforced'
     except SystemExit as e:
@@ -180,22 +190,22 @@ def main():
                 return v
             return _mock
 
-        # warm-up 99999 ms (EXCLUDED) + measured exactly 30000 ms -> PASS (ceiling inclusive)
-        seen.clear(); m._probe_call = fake([(99999, 'success', 120), (30000, 'success', 120)])
+        # warm-up 99999 ms (EXCLUDED) + measured 29999 ms -> PASS
+        seen.clear(); m._probe_call = fake([(99999, 'success', 120), (29999, 'success', 120)])
         with tempfile.TemporaryDirectory() as td:
             ev = os.path.join(td, 'e.jsonl')
-            assert m.live_probe('cfg', events_path=ev, run_id='r', account='a') == 30000
+            assert m.live_probe('cfg', events_path=ev, run_id='r', account='a') == 29999
             rows = ro.read_events(ev)
             assert len([r for r in rows if r.get('purpose') == 'warmup']) == 1
             assert len([r for r in rows if r.get('purpose') == 'measured']) == 1
             assert len(seen) == 2                       # exactly one warm-up + one measured
             cen = ro.build_census(rows)
-            assert cen['latency_ms']['max'] == 30000    # the 99999 warm-up is NOT in the latency census
+            assert cen['latency_ms']['max'] == 29999    # the 99999 warm-up is NOT in the latency census
             assert len(cen['probe']['warmup']) == 1 and len(cen['probe']['measured']) == 1
-        # measured 30001 -> honest NO-GO (no retry)
-        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (30001, 'success', 120)])
+        # measured 30000 -> honest NO-GO (no retry)
+        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (30000, 'success', 120)])
         try:
-            m.live_probe('cfg'); assert False, '30001 ms measured must NO-GO'
+            m.live_probe('cfg'); assert False, '30000 ms measured must NO-GO'
         except SystemExit as e:
             assert 'health ceiling' in str(e)
         assert len(seen) == 2
@@ -215,7 +225,7 @@ def main():
         assert len(seen) == 2
     finally:
         m._probe_call = _pc
-    print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 30000 pass / 30001 NO-GO; warm-up fail STOPs before measured')
+    print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 29999 pass / 30000 NO-GO; warm-up fail STOPs before measured')
 
     # D-K _probe_call: rc 0 is NOT enough. The Claude CLI result envelope must indicate success
     # (type=result, subtype=success, not is_error) AND carry the structured schema result
@@ -228,13 +238,13 @@ def main():
 
     def _cls(stdout='', rc=0, stderr=''):
         _out(stdout, rc, stderr)
-        return m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1]
+        return m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)[1]
 
     try:
         # (1) observed successful result-STRING wrapper (result is a JSON string) + Cyrillic body
         w1 = '{"type":"result","subtype":"success","is_error":false,"result":"{\\"ok\\":true}","usage":{"n":"да"}}'
         _out(w1)
-        lat, cls, ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        lat, cls, ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
         assert cls == 'success', cls
         assert ob == len(w1.encode('utf-8')) and ob > len(w1)     # encoded bytes, not char count
         # (2) successful structured_output wrapper
@@ -275,7 +285,7 @@ def main():
 
     try:
         m.run_tree_kill = _capture
-        _lat, _cls2, _ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        _lat, _cls2, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
         assert _cls2 == 'success', _cls2
         p = cap['input']
         # one clear, completable instruction: return exactly the schema object and nothing else

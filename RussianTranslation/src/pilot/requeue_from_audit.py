@@ -131,6 +131,9 @@ def main():
                     help='resolve keys directly as nominal cards instead of requiring a rootmap')
     ap.add_argument('--no-grammar', action='store_true',
                     help='pass --no-grammar through for nominal requeues')
+    ap.add_argument('--profile-slot')
+    ap.add_argument('--config-dir')
+    ap.add_argument('--executor-lane', default='serial-whole-card')
     args = ap.parse_args()
     which = 'transient' if args.transient else 'defect' if args.defect else 'all'
     lang = args.lang
@@ -172,6 +175,14 @@ def main():
         cmd.append('--out=%s' % args.out)
     if args.manifest_out:
         cmd.append('--manifest-out=%s' % args.manifest_out)
+    if bool(args.profile_slot) != bool(args.config_dir):
+        sys.exit('--profile-slot and --config-dir must be supplied together')
+    if args.profile_slot:
+        cmd += ['--profile-slot=%s' % args.profile_slot,
+                '--config-dir=%s' % args.config_dir,
+                '--execution-route=claude-cli-headless',
+                '--executor-lane=%s' % args.executor_lane,
+                '--validation-method=audit_window+final_schema']
     if args.nominal:
         cmd.append('--nominal')
     if args.no_grammar:

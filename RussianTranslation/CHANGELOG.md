@@ -10,6 +10,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **Manifest-v2 production launch contract.** New live manifests bind a logical profile slot,
+  canonical `CLAUDE_CONFIG_DIR` fingerprint, execution route/lane, exact model and validation
+  method, plus an exact per-key `real | synthetic_control` map. V1 remains readable for historical
+  audit but cannot be newly promoted. Synthetic controls are never promotable.
+- **Profile and concurrency enforcement.** Coordinator prepare/requeue accepts the profile binding;
+  orchestrator and bounded staged-run expose `--only-profile`, verify both roster slot and config
+  fingerprint, and every headless manifest holds one cross-process active-call claim keyed by that
+  fingerprint. Two c4 manifests therefore cannot call concurrently across admitted production entry
+  points; `max-wide=1` remains an independent within-manifest limit. Because Workflow cannot prove
+  its config directory or join that host lock, profile-bound v2 production is CLI/headless-only and
+  a bound generated Workflow template aborts before its first agent call.
+- **Windows CLI and probe policy fail closed.** Bare `claude` is resolved with `shutil.which`; a
+  Windows npm shim is invoked through its Node CLI entry or refused, never handed back unresolved.
+  Probe telemetry names its policy and lane, requires a representative schema-valid response, zero
+  connection errors, and latency strictly below 30 seconds; a supplied verdict that contradicts the
+  measured gate is refused.
+- **Bounded staged-run retained from PR #495.** The dry-run-default, opt-in execution adapter keeps
+  cumulative window/call/clean/cost ceilings, checkpoint restart, prepared-plan scope, and strict
+  unevaluable-cost failure. It is carried by the replacement launch-control branch rather than
+  merged independently.
+
 - **H963 correction-evidence reconciliation.** Reclassified the 2 h 10 min offline campaign
   honestly (108-agent subworkflow: 98 minutes): 87 provisional candidates resolve to 49 confirmed,
   9 plausible, 1 mixed, 19 merged, and 9 refuted/dropped. Withdrawn the unsupported
@@ -78,6 +99,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   — dry-run-first, source-hash-locked restoration from exact raw inputs or historical harness
   placeholder maps. The complete evidence chain deterministically repairs **668/670** placeholder
   rows and all **468** null headwords; only two malformed `banD` rows require quarantine.
+
+- **Bounded staged-run integration (opt-in, default-off) — H963.** New standalone module
+  [`src/pilot/bounded_staged_run.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py)
+  drives the max-account staged-run path (`probe_fleet` → `cmd_run_once` → `cmd_record_done`
+  → coordinator `promote-ready`) under the `bounded_supervisor` control loop, one prepared
+  lease per window. Zero edits to `max_account_orchestrator.py` / `coordinator.py`; every
+  existing command and default is unchanged. The **default action is a dry-run planning view**
+  that makes ZERO generation calls (prints the scoped work, ceilings, account allocation,
+  checkpoint path and stop policy); a live drain requires the explicit `--execute` opt-in AND
+  a healthy fleet probe. Lease scoping (`only_external_ids={root}` + per-`--lease-id`
+  promotion) keeps transient/defect/pending/historical/unrelated-plan work out of the current
+  run; deterministic restart from the checkpoint re-runs no completed lease (exactly-once, on
+  both the loop's `completed_window_ids` and the coordinator's promoted-terminal idempotence).
+- **Bounded-supervisor ceilings + cost fail-closed — H963.**
+  [`bounded_supervisor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_supervisor.py)
+  gains opt-in `max_calls` (`STOP_CALL_COUNT`), `max_clean` (`STOP_CLEAN_QUOTA`) and a
+  `strict_cost_fn`; a window whose cost is UNEVALUABLE under an active cost ceiling now stops
+  the run closed with the distinct `STOP_COST_UNEVALUABLE` reason instead of the legacy
+  silent-zero. `calls_spent`/`clean_total` persist across the checkpoint. All new params are
+  `None`-default, so the existing behaviour and all prior tests are unchanged.
+- **Economy-ledger opt-in strict gate — H963.**
+  [`economy_ledger.gate(..., strict=False)`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/economy_ledger.py)
+  and a `--strict` CLI flag: legacy (default) still SKIPS a ceiling whose value is `None`
+  (unchanged for every existing caller); `strict=True` treats a requested-but-unevaluable
+  ceiling as a fail-closed breach (distinct `unevaluable` marker). Missing accounting data is
+  never treated as within-ceiling. Both modes are covered by tests.
+- **Tests + CI.** New
+  [`bounded_staged_run_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run_selftest.py)
+  (9 cases: plan scope, dry-run-makes-no-call, historical-jobs-excluded, clean completion,
+  restart/no-dup, ceiling exhaustion, cost fail-closed, consecutive-empty, audit seam), +5
+  bounded-supervisor cases, +1 economy-ledger both-modes case; wired into the CI gate block.
+  No translation prompt or semantic-policy change; no live generation, promotion, store write
+  or TM rebuild.
 
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path

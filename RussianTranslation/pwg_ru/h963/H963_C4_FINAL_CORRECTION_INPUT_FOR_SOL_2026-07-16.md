@@ -2,6 +2,15 @@
 
 _Created: 16-07-2026 · Last updated: 17-07-2026_
 
+> **Implementation status (17-07-2026).** Evidence reconciliation landed in
+> [PR #498](https://github.com/gasyoun/SanskritLexicography/pull/498); the atomic H1080 store repair
+> and forward schema/promotion gates landed in
+> [PR #510](https://github.com/gasyoun/SanskritLexicography/pull/510); manifest-v2 profile binding,
+> global active-call serialization, typed probe policy, and bounded execution are delivered by
+> [PR #511](https://github.com/gasyoun/SanskritLexicography/pull/511). The historical campaign facts
+> below remain unchanged. No production call was made by those implementation stages; H963 still
+> requires a fresh serial c4 health probe before any paid translation.
+
 **This campaign fired ZERO live generation calls.** Nothing below was measured by running the
 model. Every claim is anchored to a file:line in the worktree
 [`SanskritLexicography-h963-c4-live`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)

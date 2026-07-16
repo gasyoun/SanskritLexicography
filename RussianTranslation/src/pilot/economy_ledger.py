@@ -313,25 +313,53 @@ def write_ledger(output_path, rows=None, source_log=None):
     return payload
 
 
-def gate(ledger, ceil_agents_per_clean=None, ceil_cost_per_clean=None):
+def gate(ledger, ceil_agents_per_clean=None, ceil_cost_per_clean=None, strict=False):
     """Return exit code 1 on an AGGREGATE breach (never per-card), else 0.
 
     Compares the headline `agents_per_clean_incl_requeues` and the in-band fresh-input
     `cost_per_clean_band.ceil_usd` against the supplied ceilings. Individual runs are
     NEVER gated — a single expensive/wasted window cannot flip the gate; only the pooled
     aggregate can.
+
+    ``strict`` (default False) selects the missing-data policy — the ONE behavioural
+    switch, added for the bounded-staged-run cost fail-closed contract (H963):
+
+      * strict=False (LEGACY, unchanged): a requested ceiling whose ledger value is
+        ``None`` — an all-wasted / all-nulled log yields ``None`` aggregates — is
+        SKIPPED, so the gate passes on unevaluable data. Every existing caller
+        (``main`` default, the standalone CLI, economy_ledger_selftest) keeps this
+        exact behaviour: DO NOT make ``None`` start failing for them.
+
+      * strict=True (OPT-IN, fail-closed): a requested ceiling that cannot be
+        evaluated (its ledger value is ``None``) is itself a breach — missing or
+        invalid accounting data is NEVER treated as within-ceiling. The breach text
+        carries the distinct ``unevaluable`` marker so callers/tests can tell a
+        fail-closed stop from an over-ceiling stop. A ceiling left at ``None`` (not
+        requested) is never a breach in either mode.
     """
     agg = ledger['aggregate']
     breaches = []
     apc = agg.get('agents_per_clean_incl_requeues')
     band = agg.get('cost_per_clean_band') or {}
     cost = band.get('ceil_usd')
-    if ceil_agents_per_clean is not None and apc is not None and apc > ceil_agents_per_clean:
-        breaches.append('agents_per_clean_incl_requeues %.4f > ceiling %.4f'
-                        % (apc, ceil_agents_per_clean))
-    if ceil_cost_per_clean is not None and cost is not None and cost > ceil_cost_per_clean:
-        breaches.append('cost_per_clean ceil $%.4f > ceiling $%.4f'
-                        % (cost, ceil_cost_per_clean))
+    if ceil_agents_per_clean is not None:
+        if apc is None:
+            if strict:
+                breaches.append('agents_per_clean unevaluable (no clean cards / incomplete '
+                                'accounting) but a ceiling of %.4f was requested — fail-closed'
+                                % ceil_agents_per_clean)
+        elif apc > ceil_agents_per_clean:
+            breaches.append('agents_per_clean_incl_requeues %.4f > ceiling %.4f'
+                            % (apc, ceil_agents_per_clean))
+    if ceil_cost_per_clean is not None:
+        if cost is None:
+            if strict:
+                breaches.append('cost_per_clean unevaluable (no priced clean cards / incomplete '
+                                'accounting) but a ceiling of $%.4f was requested — fail-closed'
+                                % ceil_cost_per_clean)
+        elif cost > ceil_cost_per_clean:
+            breaches.append('cost_per_clean ceil $%.4f > ceiling $%.4f'
+                            % (cost, ceil_cost_per_clean))
     for b in breaches:
         sys.stderr.write('ECONOMY GATE BREACH: %s\n' % b)
     return 1 if breaches else 0
@@ -371,6 +399,10 @@ def main():
     ap.add_argument('--write', metavar='PATH', help='also write the durable ledger JSON here')
     ap.add_argument('--ceil-agents-per-clean', type=float, default=None)
     ap.add_argument('--ceil-cost-per-clean', type=float, default=None)
+    ap.add_argument('--strict', action='store_true',
+                    help='fail closed: a requested ceiling that cannot be evaluated '
+                         '(unevaluable/None accounting) breaches the gate instead of '
+                         'being skipped. Default off = legacy standalone behaviour.')
     args = ap.parse_args()
 
     rows = read_rows(args.log)
@@ -382,7 +414,7 @@ def main():
     for line in summary_lines(ledger):
         print(line)
 
-    return gate(ledger, args.ceil_agents_per_clean, args.ceil_cost_per_clean)
+    return gate(ledger, args.ceil_agents_per_clean, args.ceil_cost_per_clean, strict=args.strict)
 
 
 if __name__ == '__main__':

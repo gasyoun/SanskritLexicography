@@ -22,6 +22,7 @@ if _SRC not in sys.path:
     sys.path.insert(0, _SRC)
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
+from execution_contract import ActiveCallClaim, SCHEMA_V1, SCHEMA_V2, validate_manifest, validate_profile  # noqa: E402
 
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
 RATE_RE = re.compile(r'429|rate.?limit|usage limit|too many requests', re.I)
@@ -44,18 +45,24 @@ def claude_argv_prefix(claude_bin):
     ``[node, <cli entry>.cjs]`` and invoke that directly, bypassing cmd.exe. A native
     executable, or any POSIX launcher, is returned unchanged.
     """
+    resolved = claude_bin
+    if not os.path.dirname(claude_bin):
+        resolved = shutil.which(claude_bin)
+        if not resolved:
+            raise FileNotFoundError('Claude CLI %r is not resolvable on PATH' % claude_bin)
     if os.name != 'nt':
-        return [claude_bin]
-    if os.path.splitext(claude_bin)[1].lower() in ('.exe', '.com'):
-        return [claude_bin]
+        return [resolved]
+    if os.path.splitext(resolved)[1].lower() in ('.exe', '.com'):
+        return [resolved]
     node = shutil.which('node')
-    shim_dir = os.path.dirname(os.path.abspath(claude_bin)) or '.'
+    shim_dir = os.path.dirname(os.path.abspath(resolved)) or '.'
     base = os.path.join(shim_dir, 'node_modules', '@anthropic-ai', 'claude-code')
     entries = sorted(glob.glob(os.path.join(base, 'cli*.cjs')) +
                      glob.glob(os.path.join(base, 'cli*.js')))
     if node and entries:
         return [node, entries[0]]
-    return [claude_bin]
+    raise FileNotFoundError('refusing unresolved Windows Claude shim %r; Node CLI entry missing'
+                            % resolved)
 
 
 class HardFailure(Exception):
@@ -552,8 +559,7 @@ class HeadlessEngine:
 
 
 def execute(manifest, claude='claude', timeout=7200, runner=None):
-    if manifest.get('schema') != 'pwg.headless_execution_manifest.v1':
-        raise ValueError('unsupported manifest schema')
+    validate_manifest(manifest, require_v2=False)
     engine = HeadlessEngine(manifest, claude, timeout, runner)
     try:
         results, healed, presplit = engine.run_all()
@@ -582,7 +588,11 @@ def execute(manifest, claude='claude', timeout=7200, runner=None):
                'heal_agents_spent': engine.heal_calls,
                'kill_timeouts': engine.kill_timeouts, 'conn_errors': engine.conn_errors,
                'headless_attempts': engine.attempts}
-    payload = {'meta': manifest['meta'], 'summary': summary, 'results': results}
+    output_meta = dict(manifest['meta'])
+    output_meta['execution_manifest_schema'] = manifest.get('schema')
+    output_meta['execution'] = manifest.get('execution')
+    output_meta['provenance_classes'] = manifest.get('key_provenance')
+    payload = {'meta': output_meta, 'summary': summary, 'results': results}
     status = {'classification': 'completed_with_residuals' if failures else 'success',
               'attempts': engine.attempts, 'null_keys': list(failures)}
     return payload, status, 0
@@ -594,14 +604,27 @@ def main(argv=None):
     ap.add_argument('--output', required=True)
     ap.add_argument('--status-out', required=True)
     ap.add_argument('--claude-bin', default='claude')
+    ap.add_argument('--only-profile', help='required profile-slot assertion for live v2 execution')
+    ap.add_argument('--allow-historical-v1', action='store_true',
+                    help='read-only/historical replay only; v1 is not a production contract')
     ap.add_argument('--timeout', type=int, default=7200)
     args = ap.parse_args(argv)
     manifest_hash = sha256_path(args.manifest)
     with open(args.manifest, encoding='utf-8') as f:
         manifest = json.load(f)
     try:
-        payload, status, code = execute(manifest, args.claude_bin, args.timeout)
-    except (OSError, ValueError) as exc:
+        if manifest.get('schema') == SCHEMA_V1:
+            if not args.allow_historical_v1:
+                raise ValueError('v1 manifest is historical-only; production requires %s' % SCHEMA_V2)
+            payload, status, code = execute(manifest, args.claude_bin, args.timeout)
+        else:
+            config_dir = os.environ.get('CLAUDE_CONFIG_DIR')
+            if not config_dir:
+                raise ValueError('CLAUDE_CONFIG_DIR is required for manifest v2')
+            validate_profile(manifest, config_dir, args.only_profile)
+            with ActiveCallClaim(manifest['execution']['config_dir_fingerprint']):
+                payload, status, code = execute(manifest, args.claude_bin, args.timeout)
+    except (OSError, RuntimeError, ValueError) as exc:
         payload, status, code = None, {'classification': 'configuration', 'error': str(exc)}, 2
     status['manifest_sha256'] = manifest_hash
     if payload is not None:

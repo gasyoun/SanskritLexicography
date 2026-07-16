@@ -289,6 +289,48 @@ def test_integration_real_frozen_log():
         fail('real log must yield no conflicting_run_ids, got %s' % led['conflicting_run_ids'])
 
 
+def test_gate_strict_vs_legacy_missing_data():
+    """H963 cost fail-closed: the opt-in ``strict`` mode is the ONLY behaviour switch;
+    legacy (default) None-skip is unchanged. Cover BOTH modes so a future edit that lets
+    ``None`` silently pass in strict mode — or breaks legacy None-skip — fails loudly."""
+    # (a) UNEVALUABLE aggregates (all-wasted log -> None apc / None cost band).
+    wasted = el.build_ledger([
+        outcome_row('w1', 'no_pwg_wA', agents_used=8, clean=0, tokens=500_000),
+        outcome_row('w2', 'no_pwg_wB', agents_used=6, clean=0, tokens=300_000),
+    ])
+    if wasted['aggregate']['agents_per_clean_incl_requeues'] is not None:
+        fail('precondition: all-wasted apc must be None')
+    # LEGACY: a requested ceiling on unevaluable data is SKIPPED -> passes (0). Unchanged.
+    if el.gate(wasted, ceil_agents_per_clean=1.0) != 0:
+        fail('legacy gate must SKIP an unevaluable agents ceiling (None-skip), got breach')
+    if el.gate(wasted, ceil_cost_per_clean=0.5) != 0:
+        fail('legacy gate must SKIP an unevaluable cost ceiling (None-skip), got breach')
+    if el.gate(wasted, ceil_agents_per_clean=1.0, ceil_cost_per_clean=0.5, strict=False) != 0:
+        fail('explicit strict=False must be identical to the legacy default')
+    # STRICT: the same requested ceiling on unevaluable data FAILS CLOSED (1).
+    if el.gate(wasted, ceil_agents_per_clean=1.0, strict=True) != 1:
+        fail('strict gate must FAIL CLOSED on an unevaluable agents ceiling')
+    if el.gate(wasted, ceil_cost_per_clean=0.5, strict=True) != 1:
+        fail('strict gate must FAIL CLOSED on an unevaluable cost ceiling')
+    # a ceiling NOT requested (None) is never a breach, even in strict mode.
+    if el.gate(wasted, strict=True) != 0:
+        fail('strict gate with NO ceiling requested must pass (nothing to evaluate)')
+
+    # (b) EVALUABLE aggregates: strict must not change the verdict vs legacy.
+    priced = el.build_ledger(
+        [outcome_row('r_full', 'no_pwg_wA', agents_used=10, clean=5, tokens=1_000_000)])
+    #   apc = 10/5 = 2.0 ; cost ceil band = 1e6*3/1e6/5 = $0.60
+    for strict in (False, True):
+        if el.gate(priced, ceil_agents_per_clean=5.0, strict=strict) != 0:
+            fail('within-ceiling agents must pass in %s mode' % ('strict' if strict else 'legacy'))
+        if el.gate(priced, ceil_agents_per_clean=1.0, strict=strict) != 1:
+            fail('over-ceiling agents must breach in %s mode' % ('strict' if strict else 'legacy'))
+        if el.gate(priced, ceil_cost_per_clean=0.0001, strict=strict) != 1:
+            fail('over-ceiling cost must breach in %s mode' % ('strict' if strict else 'legacy'))
+        if el.gate(priced, ceil_cost_per_clean=1e6, strict=strict) != 0:
+            fail('within-ceiling cost must pass in %s mode' % ('strict' if strict else 'legacy'))
+
+
 def test_all_wasted_summary_does_not_crash():
     # Every row clean=0 -> no outcome row enters the agents-per-clean set, so the aggregate
     # agents_per_clean / cost band are None. summary_lines() (the main() print path) must render the
@@ -316,6 +358,7 @@ def main():
         test_dedup_on_run_id_not_window,
         test_ledger_imports_price_not_duplicated,
         test_gate_is_aggregate_only,
+        test_gate_strict_vs_legacy_missing_data,
         test_write_ledger_roundtrip,
         test_integration_real_frozen_log,
         test_all_wasted_summary_does_not_crash,

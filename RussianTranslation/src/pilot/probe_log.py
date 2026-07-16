@@ -46,6 +46,11 @@ PAYLOAD_FLOOR_BYTES = 5 * 1024
 
 KINDS = ('warmup', 'launch', 'abort')
 VERDICTS = ('GO', 'NO-GO')
+POLICIES = {
+    'production_v1': {'latency_ceil_ms': 30_000, 'conn_error_ceil': 0,
+                      'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
+                      'require_schema_valid': True},
+}
 
 
 def _now():
@@ -69,32 +74,40 @@ def _append(row):
         fh.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
-def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None):
+def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None,
+                policy='production_v1', schema_valid=None):
     """The mechanical gate. Returns (verdict, reason)."""
-    if conn_errors is not None and conn_errors > CONN_ERR_CEIL:
-        return 'NO-GO', f'{conn_errors} connection error(s) > {CONN_ERR_CEIL}'
-    if latency_ms is not None and latency_ms > LATENCY_CEIL_MS:
-        return 'NO-GO', f'latency {latency_ms}ms > {LATENCY_CEIL_MS}ms'
+    if policy not in POLICIES:
+        raise ValueError('unknown probe policy %r' % policy)
+    spec = POLICIES[policy]
+    if conn_errors is not None and conn_errors > spec['conn_error_ceil']:
+        return 'NO-GO', f'{conn_errors} connection error(s) > {spec["conn_error_ceil"]}'
+    if latency_ms is None or latency_ms >= spec['latency_ceil_ms']:
+        return 'NO-GO', f'latency {latency_ms}ms is not < {spec["latency_ceil_ms"]}ms'
     # H462: only a load-representative warm-up may authorize a launch. A missing
     # payload size is treated as trivial — the burden of proof is on the probe.
-    if kind == 'warmup' and (payload_bytes is None or payload_bytes < PAYLOAD_FLOOR_BYTES):
+    if kind == 'warmup' and (payload_bytes is None or payload_bytes < spec['payload_floor_bytes']):
         return 'NO-GO', (f'probe not load-representative: payload '
-                         f'{payload_bytes or 0}B < {PAYLOAD_FLOOR_BYTES}B '
+                         f'{payload_bytes or 0}B < {spec["payload_floor_bytes"]}B '
                          f'(use `probe_log.py prompt`)')
-    return 'GO', 'within ceilings, load-representative' if kind == 'warmup' else 'within ceilings'
+    if kind == 'warmup' and spec['require_schema_valid'] and schema_valid is not True:
+        return 'NO-GO', 'representative schema payload did not validate'
+    return 'GO', '%s: within ceilings, load-representative schema payload' % policy
 
 
 def cmd_append(a):
-    auto, reason = verdict_for(a.latency_ms, a.conn_errors, a.payload_bytes, a.kind)
+    auto, reason = verdict_for(a.latency_ms, a.conn_errors, a.payload_bytes, a.kind,
+                               a.policy, a.schema_valid)
     verdict = a.verdict or auto
-    if a.verdict and a.verdict != auto and a.kind == 'warmup':
-        print(f'WARN: stated verdict {a.verdict} disagrees with mechanical {auto} ({reason})',
-              file=sys.stderr)
+    if a.verdict and a.verdict != auto:
+        raise SystemExit('REFUSED: stated verdict %s contradicts mechanical %s (%s)'
+                         % (a.verdict, auto, reason))
     row = {
         'ts': a.ts or _now(),
         'kind': a.kind,
         'verdict': verdict,
         'gate_reason': reason,
+        'policy': a.policy,
         'lane': a.lane,
         'window': a.window,
         'handoff': a.handoff,
@@ -104,6 +117,7 @@ def cmd_append(a):
             'conn_errors': a.conn_errors,
             'payload_bytes': a.payload_bytes,
             'agent_model': a.agent_model,
+            'schema_valid': a.schema_valid,
         },
         'orchestrator': a.orchestrator,
         # Comparability provenance: a TM sidecar that grew between runs silently
@@ -280,6 +294,9 @@ def main():
                         'this flag) is NO-GO — see `probe_log.py prompt` (H462)'
                         % PAYLOAD_FLOOR_BYTES)
     p.add_argument('--agent-model', default='claude-sonnet-5')
+    p.add_argument('--policy', choices=sorted(POLICIES), default='production_v1')
+    p.add_argument('--schema-valid', action='store_true', default=None,
+                   help='measured response passed the representative output schema')
     p.add_argument('--lane', default='nominal medium50 (band-4 singleton)')
     p.add_argument('--window')
     p.add_argument('--handoff')

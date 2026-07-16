@@ -22,6 +22,8 @@ ALLOWED = {
     # D-K: the two-phase probe records each call separately with its purpose (warmup / measured),
     # model, and output_bytes. The warm-up latency is EXCLUDED from the acceptance census.
     'purpose', 'output_bytes', 'model',
+    # H1080 launch-control follow-up: typed probe policy/lane and measured schema verdict.
+    'policy', 'executor_lane', 'schema_valid',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
