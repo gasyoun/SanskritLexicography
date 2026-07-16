@@ -2211,6 +2211,22 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
 
 ---
 
+### §87. A curated DCS text→period map EXISTS (consume, don't rebuild) — and the purāṇas carry a measured epic-imitative signature on two independent axes
+
+**Built 16-07-2026** (Fable 5 `claude-fable-5`, H1000): the `PERIOD_MAP` dict in
+[`period_style_gradient.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/period_style_gradient.py)
+assigns the 41 token-heaviest DCS texts (4.07M tokens = 71.6% of the pinned
+`dcs_full.sqlite`) to веды/эпос/классика with a dating basis per text, purāṇas as a
+separate bucket, and Buddhist-hybrid texts + lexica excluded as register-confounded.
+Any DCS-based diachronic study should IMPORT this map (the H1001
+[causative detector](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/causative_grade_detector.py)
+already does) rather than re-derive text datings. **Measured bonus, replicated on two
+independent axes:** the purāṇas land BETWEEN epic and classical — compound membership
+48.1% vs epic 40.5% / classical 57.3% (H1000), guṇa-causative share 26.3% vs epic
+25.9% / classical 20.8% (H1001) — i.e. their late verse measurably imitates epic
+LANGUAGE, not just epic genre. Treat 'puranic' as its own stratum in any period
+slicing; folding purāṇas into 'late classical' dilutes real diachronic signals.
+
 ### §86. DCS verbal-feature annotation density collapses for later texts — feats-based diachronic metrics measure ANNOTATION, not language
 
 **Measured 16-07-2026** (Fable 5 `claude-fable-5`, H1000, on the pinned `dcs_full.sqlite`,
