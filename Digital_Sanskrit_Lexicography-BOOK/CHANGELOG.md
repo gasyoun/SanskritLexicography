@@ -1,11 +1,36 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 13-07-2026_
+_Created: 07-07-2026 · Last updated: 17-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 17-07-2026 (H1078, ch02 corpus-methods section)
+
+- **Ch. 2 §6 *The corpus as a bounded witness* written** (~7 pp., book-only new writing —
+  the execution of MG's 13-07-2026 ruling (b) on the
+  [crosswalk §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
+  fork) →
+  [chapters/ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md).
+  Status-boxed as the book's single canonical corpus-epistemics statement: **§6.1** the DCS
+  disclosure (release 2026: 5,688,416 content tokens · 270 texts · 95,457 disambiguated
+  lemmas · 41.9 % hapax share, 42.3 % of hapaxes transparent samāsa — per the committed
+  [VisualDCS census](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/README.md);
+  size floor, no sampling frame); **§6.2** the absence-inference rule (bounded DCS-coverage
+  statements, never "non-existent" — McEnery & Brezina induction caveat; Ch. 13's 484-of-709
+  épigraphique vs 0 % jaina as the worked coverage-boundary case); **§6.3** the five-clause
+  statistical-practice contract (effect size first / dispersion / denominators / minimally
+  sufficient statistics / negative results visible — Kilgarriff 2005, Egbert-Larsson-Biber);
+  **§6.4** the binding map (Ch. 3/5/11/13 cite, never restate). Old §6–§9 renumbered
+  §7–§10; provenance headnote marks §6 as the one book-only exception to
+  "carried over unchanged"; 9 references added (McEnery & Brezina, Kilgarriff, Biber,
+  Reppen, Walter, O'Keeffe & McCarthy, Desagulier, Egbert-Larsson-Biber, Hellwig DCS).
+  Proposal ToC (Ch. 2 bullet), BOOK_PLAN §11, crosswalk §4.2 (with the 15→14-chapter
+  consumer-numbering mapping made explicit), and the BOOK_PLAN.meta backlog all ticked in
+  the same pass. **All new-writing owed to the 12 committed chapters is now done; only the
+  two data chapters (Ch. 3, Ch. 11) remain unwritten.**
 
 ### Added — 13-07-2026 (H867, BOOK_PLAN metadoc)
 
