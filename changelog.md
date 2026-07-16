@@ -21,6 +21,10 @@ not an error.
   browser PRs → Claude Code → independent contributor) with a beginner-safe first task
   (OCR/scan-quality error reporting, no deep lexical judgment required). Pointer added from
   `CONTRIBUTING.md`.
+  - **Follow-up (16-07-2026):** added "Вариант Б" for a **zero-Sanskrit** beginner —
+    proofreading the English/Latin side of entries (Apte/MW) against the scan, plus a
+    simplest fallback (flag illegible scans / dead cross-reference links). Makes the first
+    task reachable without reliable Devanagari.
 
 ## [1.9.19] - 2026-07-15
 
