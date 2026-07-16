@@ -2381,3 +2381,48 @@ claims to summarize.** Planning docs get written ahead of the evidence and are n
 when the evidence lands (or fails to land); a phantom κ that reached a Lexikos submission would
 have been a retraction-class defect. Same failure class as §52 (hand-copied queue drift), on the
 statistics axis.
+
+### §89. MW writes `<ls>` citations in TWO markup shapes and locates them in roman as well as arabic — a literal `<ls>` regex undercounts its apparatus by 28.6%, and case-folding the roman test erases the `L.` hedge
+
+**Measured 16-07-2026** (Fable 5 `claude-fable-5`, [H1076](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1076-Fable_MWS_a18-citation-registers-draft_16.07.26.md),
+over `csl-orig` `v02/mw/mw.txt`; script + artifacts:
+[MWS/papers/p3_citation_registers/register_census/](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/p3_citation_registers/register_census/register_census.py)).
+Three traps, all in *counting* MW's citation apparatus, all of which inflate how well-evidenced it looks:
+
+1. **Two tag shapes.** MW writes both `<ls>Pāṇ. vi, 2, 161</ls>` (siglum + locator in the content) and
+   `<ls n="RV.">vii, 96, 3</ls>` (siglum in `@n`, locator in the content) — and sometimes splits the
+   locator across both: `<ls n="RV. viii, 96,">15</ls>`. **8,668 citations (2.7%)** use the attributed
+   shape. A literal `<ls>` regex sees none of them, so MW's apparatus is **320,828**, not the widely
+   quoted 312,160. ⇒ the citation's full text is `@n + content`; swapping in `<ls[^>]*>` and parsing
+   the content alone is still wrong.
+2. **Roman locators.** `<ls>ŚBr. xiv</ls>` is located; **4,866** plain-shape citations carry a roman-only
+   locator. An arabic-digit rule (`re.compile(r"\d")`) scores every one as sourceless. Together with (1),
+   MW's locator-bearing count is **60,820 (18.96%)**, not 47,289 (15.15%) — a **28.6%** undercount.
+3. **The roman test MUST be case-sensitive.** MW's roman locators are lowercase. Fold case and the
+   hedge `L.` reads as roman 50, and capitalised sigla (`Vi.`, `Ci.`) read as roman numerals: in this
+   census's own first run that silently reclassified **~46,000** citations as attested and drove the
+   `L.` stratum to **zero**. It was caught only because `<ls>L.</ls>` = 40,212 was independently known.
+
+**Consequence.** [csl-atlas' `data/obs/citation_registers.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json)
+MW row carries (1) and (2) — its extractor is literal at
+[`parse_cslorig.py:41`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/parse_cslorig.py#L41).
+Its published figures (`ls: 312160`, `lsWithLocator: 47289`) **reproduce exactly** under its own rule, which
+localises the divergence to markup shape rather than a parser disagreement. Regeneration is queued as
+[H1086](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1086-Sonnet_csl-atlas_mw-row-regenerate-ls-shapes_17.07.26.md)
+(corpus-wide — the fix touches every `<ls>`-bearing dict). The atlas's direction and corpus-wide conclusion
+are **not** in dispute; MW stays a locator-poor Register-A dictionary.
+
+**Second-order consequence — the number that travelled.** MWS' `ROADMAP.md` + `SYNTHESIS.md` gave MW's
+apparatus as "22.3% meta + **40.2%** bare-locator", implying a ~37.5% text-linkable ceiling. The 40.2% was
+never an MW measurement: it is the **corpus-wide** CDSL bare share, imported from a since-superseded
+**43-dictionary** revision of `CITATION_REGISTERS.md` (an aggregate dominated by PWG at 4.61 `<ls>`/entry
+against MW's 1.09), and the two components were computed over different populations — so `22.3% + 40.2%`
+was never a valid subtraction from 100%. MW's real ceiling is **~19%**: a scan-link programme's prize is
+one citation in five, not two in five. Corrected in place 16-07-2026.
+
+**Reusable rule.** Any figure characterising a historical apparatus must state **which markup shapes it
+counted** and **what it treated as a locator**, in the same breath as the number — for MW those two
+decisions move the headline by 28.6% and the ceiling by ~2×. Same defect class as the atlas's own earlier
+`iti` fix (a space-or-quote rule undercounted KRM ~3× until a word-boundary rule replaced it): an
+assumption about markup shape, living in a regex, read downstream as a fact about the lexicographer.
+Never report a `<ls>`-derived count without the extraction rule beside it.
