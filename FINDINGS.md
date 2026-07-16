@@ -2197,6 +2197,13 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
    `elapsed_ms` but **no token field**; H818 dashboards carry `cost:null`. So observed calls/clean and
    $/clean cannot be measured from existing evidence — the deterministic **projection** ($58.09/100hw)
    is a separate, optimistic floor and must not be substituted for observed performance.
+   **Operationalized 16-07-2026 (H963):** because observed per-window cost is usually unrecoverable
+   (LAUNCH_STATS records output-tokens on 1/458 windows), the bounded staged runner treats a
+   requested cost/quota ceiling as **fail-closed** — a window whose cost is UNEVALUABLE stops the run
+   with `STOP_COST_UNEVALUABLE` rather than assuming $0 and continuing
+   ([`bounded_staged_run.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py)
+   + `bounded_supervisor.strict_cost_fn`; `economy_ledger.gate(strict=True)` is the opt-in ledger gate,
+   legacy None-skip unchanged).
 3. **Current-store membership is not the audit verdict and not exact provenance.** Absence ≠ audit
    rejection; presence ≠ *this* output passed. Keep reviewer quality, sealed audit verdict, and
    promotion status as **three separate** measurements; an audit-to-promotion escape needs an exact
