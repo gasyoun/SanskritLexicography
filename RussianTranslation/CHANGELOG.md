@@ -10,98 +10,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-### Added
+- **H963 correction-evidence reconciliation.** Reclassified the 2 h 10 min offline campaign
+  honestly (108-agent subworkflow: 98 minutes): 87 provisional candidates resolve to 49 confirmed,
+  9 plausible, 1 mixed, 19 merged, and 9 refuted/dropped. Withdrawn the unsupported
+  `SAFE` / `COIN-FLIP` / `DOOMED` and route-independent deliverability projections while preserving
+  raw pilot outputs and the append-only correction history. Regenerated the three evidence JSONLs
+  with explicit `null` withdrawal fields and a repo-relative artifact manifest. `window_selftest.py`
+  now executes and reports every defined test even when an earlier test fails. The three pre-existing
+  SHARED parity diffs were reviewed as language-neutral, and ledger hashes were updated only through
+  `lang_parity_check.py --update-hash`; parity is green.
 
-- **H963 c4 offline correction-evidence campaign — the 180 s kill ceiling is a route-independent
-  blocker, and it is the one nobody was looking at.** Opus 4.8 (`claude-opus-4-8[1m]`), Ultracode,
-  **zero live generation calls** (the brief's live matrix was refused: this session was not the c4
-  profile — `CLAUDE_CONFIG_DIR` unset, and Workflow subagents inherit session credentials, so
-  "c4 only" was unenforceable and every call would have been mis-attributed — *and* two of the
-  brief's own hard stops were already tripped by the pilot it was told to close first: a call
-  exceeded the 180 s ceiling, and calls were launched concurrently by mistake). Store unchanged
-  at **11,605** (`cc1d544e…c805`), TM sidecars unchanged, H255 frozen, H963 stays 🟡 WAITING ON
-  OWNER, the historical NO-GO and the pilot's concurrency deviation preserved. Packet:
-  [H1080](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1080-Opus_SanskritLexicography_pwg-ru-killgate-envelope-correction-packet_16.07.26.md).
-  - **C-01 (critical):** `KILL_CEIL_MS` was lowered **480 000 → 180 000** without re-deriving the
-    envelope, silently breaking the invariant the code itself still asserts
-    ([`gen_opt_harness2.py:164-166`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):
-    *"no legit call … is ever killed"*) for any skel > 3 556 B. **All three** constants drifted from
-    [`FAILURE_MODES_AND_KILL_GATE_2026-07-04.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md)
-    (BASE 30 000→20 000, FLOOR 120 000→45 000, CEIL 480 000→180 000) and the doc's worked envelope
-    table is now fiction — every size ≥ ~1 828 B gets a flat 180 s. **Mechanism:** the gate existed to
-    *discriminate* legit-slow from doomed-stall; at a flat 180 s it fires on both identically, so it
-    degraded from a stall detector into a blunt fixed timeout **below the work's own expected
-    duration**. Measured on the pilot: skel 5 606 B, expected 272 s, granted **180 s = 0.66×** → killed.
-    **Quantified over the real 114-head runnable nominal universe** (one card per call = the *most
-    generous* config): only **7–20 % reliably deliverable**, **46–66 % undeliverable on ANY route**, and
-    **band-5 ultra-core (n=82) is 4 % SAFE / 70 % DOOMED** (median raw 15 144 B vs band-4's 8 242 B) —
-    scholarly priority and deliverability are **anti-correlated**. **Therefore
-    [H909](https://github.com/gasyoun/Uprava/blob/main/handoffs/H909-Opus_SanskritLexicography_h818-foreign-route-paired-probe-analysis_14.07.26.md)
-    / the foreign route is necessary-but-nowhere-near-sufficient**: a perfect, instant route still
-    leaves ~70 % of band-5 dead. Carries an **`@DECIDE`** — the fix collides with MG's standing
-    *"NOTHING runs past 3 min"* rule.
-  - **C-02 (high):** the LANG_PARITY gate **hard-aborts** `window_selftest` (`:5192` runs a bare
-    `for test in (…): test()` with no per-test isolation), so **131 defined / 104 PASS / 27 never run
-    (20.6 %)** — and because the parity decision is deliberately human-gated, that fifth of the suite
-    is dark *indefinitely*. `.ai_state.md`'s recorded H971 "131 PASS" is no longer reachable.
-  - **C-03 (high):** **rung 3 was measurable offline all along.**
-    `node src/pilot/accept_sensecount_test.js <harness>` passes *against the pilot's own real harness*,
-    proving SANLOSS/TNMASK **true-positive sensitivity** (drop 1st/middle/last/2 senses) **and the
-    armed hard-reject path** at zero cost. The live canary is the wrong instrument — it only exercises
-    the detector if the model misbehaves, and the model didn't. What genuinely still needs live calls is
-    only the **FP rate on real output**, which C-01 currently prevents from existing.
-  - Evidence (machine-readable, in [`pwg_ru/h963/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h963)):
-    `campaign_journal.md` (append-only, 6 checkpoints) · `campaign_windows.jsonl` (10) ·
-    `campaign_cards.jsonl` (3) · `candidate_selection.jsonl` (114) · `artifact_manifest.sha256`.
-    All 4 pilot artifact SHA-256s re-verified and matched exactly.
-
-- **H963 c4 owner-override bounded pilot — GENERATED, NOT PROMOTED; the latency NO-GO has a
-  production consequence.** An explicit owner override of the 30 s launch prohibition, taken
-  after the Gate-0 NO-GO below, run as **two** attempt-specific manifests (the execution-manifest
-  schema has no synthetic/provenance discriminator, so synthetic-canary and real-nominal modes
-  were **not** forced into one manifest): 1 canary call + 1 real nominal call, `max_agents: 1`
-  each, **2 agents total**, no retry/requeue. **⚠️ Protocol deviation recorded: the two manifests
-  were launched concurrently, not serially** (`max_wide=1` caps dispatch *within* a manifest, not
-  across two launches) — so **these timings are not serial c4 throughput/economy evidence and this
-  pilot cannot justify widening concurrency**. **The real call died at the 180 s kill ceiling**
-  (`kill-timeout 180s @ skelBytes=5606`) **while the canary call was still in flight on the same
-  profile**; with `max_heal_agents: 0` both cards went null → clean rate **0 % vs an 80 % floor →
-  no promotion**. The honest reading: a real card did not finish inside 180 s *under concurrent
-  self-load*; serial c4 behaviour is **untested**. **Canary:** 0 false positives on one complete
-  3-sense output — but the model dropped no sense, so **SAN-LOSS true-positive sensitivity was
-  never exercised**, and it explicitly recognised the card as synthetic (representativeness bias).
-  **The detector is not validated.** Real heads came from the
-  **nominal-core** worklist (Tier-2 `pril10`), never no_pwg — **H255 stays frozen**; band-5
-  monster heads (`kAla`/`brahman`/`Atman`/`rasa`/`yoga`) were rejected on shape, rank being
-  scholarly priority and not cost order. **Rung 3 remains unmeasured** — one clean synthetic card
-  is not a false-flag *rate*. Canonical store verified byte-identical (11,605 rows, `cc1d544e…`)
-  before and after. Report:
-  [`pwg_ru/h963/H963_C4_OWNER_OVERRIDE_PILOT_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_OWNER_OVERRIDE_PILOT_2026-07-16.md).
-
-- **H963 Gate-0: fresh dated single-profile c4 health reading — NO-GO, ~2× worse than the
-  15-07 baseline.** One D-K attempt (one warm-up, one measured, no reroll) on the ≥ v1.9.17
-  natural schema-carrying prompt: warm-up **53 290 ms** / measured **104 870 ms**, both
-  `classification=success`, zero connection errors, actual prompt 6 828 B, exact model
-  `claude-sonnet-5`, 30 000 ms ceiling. A **pure-latency** NO-GO — not auth, not a connection
-  error, not the D-P refusal artifact. The 15-07 NO-GO (29 743 / 52 815 ms) stands unchanged;
-  this is a new dated reading, not a reroll. Canary not launched, rung 3 not entered, no
-  production translation, store unchanged at 11,605. Report:
-  [`pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md).
-  Recorded an anomaly for future investigation: the measured call ran ~2 ms after the warm-up
-  yet was 2× slower at identical output size — the inverse of a cold-start curve.
-
-- **D-R · `claude_argv_prefix` is defeated by its own bare default.** `shim_dir =
-  os.path.dirname(os.path.abspath(claude_bin))` resolves the bare default `'claude'` against the
-  **CWD**, so the `node_modules/@anthropic-ai/claude-code/cli*.cjs` lookup can never find the npm
-  shim and always falls back to `[claude_bin]`. Consequences: on Windows the fallback is
-  unlaunchable by `CreateProcess`; and — environment-independently — **the H818 D-A protection
-  (bypassing `cmd.exe` so a `--json-schema` argument's `<`/`>` are not read as redirection and the
-  ~8191-char cap does not truncate) is silently inactive for every caller taking the default**
-  (`live_probe`, `probe_fleet`, and the `--claude-bin` defaults of `init` / `run-once` /
-  `staged-run` / `presplit-canary`; the documented `ORCHESTRATION_4ACCOUNT_MAX.md` commands pass
-  no `--claude-bin`). Verified by an independent adversarial pass. **Not fixed here** — it touches
-  the live generation path and needs its own handoff + selftest; the Gate-0 probe works around it
-  locally and pre-flight-aborts if the prefix does not resolve to `[node, cli*.cjs]`.
+- **H1070 — PWG→EN Fable-tier gold adjudication vs the MW TM + scale-up go/no-go.** First
+  Fable-grade verdict on the FU1 (Sonnet 5) tranche and re-adjudication of the exact S7
+  frame with Monier-Williams quoted per entry as the adversary: 170 sense rows, combined
+  wrong-sense 4/170 = 2.35% Wilson [0.92%, 5.89%], FU1 3/102 = 2.94%, zero new
+  MW-TM contamination, zero register-mismatch. Verdict **GO (conditional)** with a standing
+  per-tranche decision rule (≤5% GO / >10% NO-GO / omission always blocks) and three named
+  guards (German polyseme judge line, `{#..#}`-in-footnote token check, DE-RESIDUE
+  cross-ref/NWS extension). Evidence + rulings: `pwg_ru/h1070/` (adjudication report,
+  go/no-go memo, 170-row gold JSONL, recomputable stats scripts). Adjudicator Fable 5
+  (`claude-fable-5`); generation under judgment Sonnet 4.6 (`claude-sonnet-4-6`, pilot) and
+  Sonnet 5 (`claude-sonnet-5`, FU1).
 
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path

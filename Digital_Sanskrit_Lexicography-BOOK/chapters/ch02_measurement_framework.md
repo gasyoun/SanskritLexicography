@@ -1,6 +1,6 @@
 # Chapter 2 — The Measurement Framework: Measuring the Dictionary Family
 
-_Created: 09-07-2026 · Last updated: 12-07-2026_
+_Created: 09-07-2026 · Last updated: 17-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Measuring the
 > Dictionary Family: A Traceable Measurement Framework for Computational Lexicography*
@@ -9,8 +9,13 @@ _Created: 09-07-2026 · Last updated: 12-07-2026_
 > which is being published separately in a journal version; where the article must remain
 > independently citable, cite that version. Every figure and measured number below is
 > carried over from the article unchanged; only the framing has been converted from
-> journal to book form. Section numbering is chapter-internal (§1–§9); the book-wide
-> renumbering and bibliography merge are a later production pass.
+> journal to book form — with one exception: **§6, *The corpus as a bounded witness*, is
+> book-only new writing** with no counterpart in the journal article, added 17-07-2026
+> under the corpus-methods ruling of 13-07-2026
+> ([LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md));
+> its figures are carried unchanged from the committed corpus artifacts cited in place.
+> Section numbering is chapter-internal (§1–§10); the book-wide renumbering and
+> bibliography merge are a later production pass.
 
 The Introduction stated this book's thesis: a digital dictionary is not a text but a
 **layered evidence graph**, in which every lexicographic statement — headword, sense,
@@ -49,8 +54,12 @@ makes each metric publishable and re-checkable (§4), and a routing discipline t
 claims falsifiable and inside their bounds (§5) — and one governing commitment, stated
 once here and assumed everywhere in this book: **every claim is a traceable
 `Claim → Evidence → Source` path, and an automated measurement only proposes; a human
-ratifies before anything is written back to the canonical text.** §6 walks a single
-inheritance edge through all three layers on real data.
+ratifies before anything is written back to the canonical text.** To the three layers
+this book adds one standing disclosure, stated once and thereafter cited rather than
+restated: §6, *The corpus as a bounded witness*, fixes what the reference corpus behind
+every attestation claim can and cannot testify to, and the statistical practice every
+quantitative chapter follows. §7 then walks a single inheritance edge through the three
+layers on real data.
 
 **This is not a measurement framework for the *project*.** A well-known and worthwhile
 programme — quantifying the *production* of a digital edition through repository-health
@@ -252,7 +261,7 @@ on both the semantic partition and the size of its formal remainder — which is
 precisely the property a cross-epoch measurement scaffold needs.
 
 The point of stating these together is that they are **independent estimators of
-relatedness and structure**, not facets of one similarity score. §6 shows why that
+relatedness and structure**, not facets of one similarity score. §7 shows why that
 independence matters.
 
 ## 4. The traceability layer
@@ -304,7 +313,168 @@ granularity-inflation hypothesis became its own refutation); and thresholds, pan
 proxies are reported as bounds, not point measurements. These are not editorial niceties —
 they are the difference between a measurement and an over-reading.
 
-## 6. A worked example: one edition edge, end to end
+## 6. The corpus as a bounded witness
+
+> **Status.** This section is the book's single, canonical statement of what its
+> reference corpus can and cannot witness, and of the statistical practice every
+> quantitative chapter observes. The corpus-facing chapters — the headword inventory
+> (Ch. 3), the Monier-Williams entry benchmark (Ch. 5), the citation-frequency graph
+> (Ch. 11), and the register study (Ch. 13) — cite this section instead of restating it,
+> and every other chapter that touches corpus attestation inherits it the same way. If a
+> passage anywhere in this book appears to claim more from a corpus figure than this
+> section licenses, this section wins.
+
+The metrics of §3 measure the dictionaries against each other. Several chapters go a
+step further and measure the dictionaries against **text**: whether a headword is
+attested in a corpus at all, how often, and in which registers. The moment the framework
+takes that step it acquires a fourth witness — not a dictionary but a corpus — and that
+witness must be examined under the same floor-and-ceiling discipline §3 imposes on every
+estimator: what it is, what it can testify to, and what no honest reading can extract
+from it. Corpus linguistics has stated this discipline for decades (McEnery and Brezina
+2022 is the current synthesis); this section fixes its consequences for this book once,
+so that no later chapter has to re-derive them — and no later chapter can quietly
+outrun them.
+
+### 6.1 The witness disclosed
+
+Every attestation figure in this book is computed against one corpus: the **Digital
+Corpus of Sanskrit** (DCS; Hellwig 2010–), release 2026 — the only large lemmatized,
+morphologically disambiguated corpus of Sanskrit in existence, and the de-facto
+substrate of computational Sanskrit studies. The committed snapshot used throughout
+holds **5,688,416 content tokens (punctuation excluded) across 270 texts**, with an
+attested vocabulary of **95,457 distinct disambiguated lemmas**. Within the evidence
+graph, this corpus supplies the attestation layer — the "corpus attestation where
+available" of the book's thesis statement — and every figure drawn from it is `derived`
+in the sense of §4: a deterministic count over a pinned snapshot, enveloped and walkable
+like every other artifact. Three properties of this witness bound everything it can say.
+
+**It is small — by lexicographic standards, very small.** The corpus-lexicography
+literature puts the working size for *sense-level* dictionary evidence at tens to
+hundreds of millions of words (Biber 1993; Reppen 2010; Walter 2010): a sense is
+captured only when a lemma is attested often enough for its uses to cluster into
+patterns, which is why the corpus-driven dictionaries of the COBUILD line were built on
+corpora three orders of magnitude larger than anything available for Sanskrit. DCS's
+5.7 million tokens sit one to two orders of magnitude below that floor. The consequence
+is not that the corpus is useless; it is that DCS can witness **attestation and
+distribution** — this lemma occurs, in these texts, this often — but cannot adjudicate
+**sense inventories**, and no chapter of this book asks it to. Where the graph records
+corpus attestation for a headword, the datum is a presence signal with a frequency,
+never a semantic verdict.
+
+**It has no sampling frame.** DCS is an opportunistic corpus: it grew over two decades
+by what had been digitized, philologically edited, and morphologically tagged, not by a
+design that samples the language's registers in known proportions — representativeness
+in Biber's (1993) sense is not claimed by its maker and cannot be claimed on its behalf.
+Epic and śāstric prose dominate; inscriptions are absent by construction, since DCS is a
+corpus of *literary* transmission; documentary, lyric, and technical registers enter
+only as far as tagging projects have reached them. An absence can therefore reflect the
+language, the archive, or merely the tagging queue — and nothing in the corpus itself
+says which.
+
+**Its own frequency structure guarantees absence.** In the committed hapax census of the
+2026 release, **39,987 of the 95,457 attested lemmas — 41.9 % — occur exactly once**,
+and 78.3 % occur fewer than ten times, while 0.8 % of lemmas carry most of the tokens:
+textbook Zipf. A vocabulary whose attested half is this rare is the visible edge of a
+much larger unseen mass — the next million tokens of tagged Sanskrit would, with
+certainty, surface thousands of lemmas the current corpus has never seen. Productive
+morphology sharpens the point: 42.3 % of those hapaxes are transparent nominal
+compounds, hapax only because samāsa formation mints new types on demand. Against such a
+distribution, the absence of any *particular* lemma is the expected continuation of the
+frequency curve, not a fact demanding a special explanation.
+
+### 6.2 The absence-inference rule
+
+The tempting move — the one a dictionary-versus-corpus comparison invites on every
+page — runs: *this headword is unattested in the corpus, therefore it is a
+lexicographers' phantom; that dictionary stratum is two-thirds unattested, therefore it
+records vocabulary that never existed.* McEnery and Brezina (2022) dissect this as the
+problem of induction writ large: a corpus is a finite sample of performance, and
+non-occurrence in a sample is not non-existence in the language. §6.1 gives the local
+reasons the inference fails here with unusual force: the corpus sits below the size
+floor (absence is under-powered), it has no sampling frame (absence may measure the
+archive), and its frequency structure makes absence the statistical default (absence is
+expected). In a 5.7-million-token corpus, a lemma that is merely *rare* and a lemma that
+is truly *absent from the language* are observationally indistinguishable — the mirror
+of the neologism caveat in corpus-based dictionary-making (Walter 2010). The inference
+would begin to bear weight only where the corpus could be shown to cover the relevant
+register at known depth — a condition met nowhere in this family today.
+
+This book therefore operates under one rule, stated here once:
+
+> **The absence-inference rule.** Every corpus-absence figure in this book is a bounded
+> statement about **DCS coverage** — never about the Sanskrit language, and never about
+> a dictionary's veracity. It travels with its denominator and its register or source
+> composition where known, and it is phrased as *unattested in DCS*, never as
+> *non-existent*.
+
+The rule has a positive half. Precisely because absence measures coverage,
+*differential* absence is informative — about the corpus and about the dictionaries, the
+two things actually in view. Chapter 13 supplies the worked case: of 709 headwords the
+Petersburg lexicographers tagged *épigraphique*, 484 (68.3 %) have no DCS attestation,
+against 0 % for the *jaina*-tagged stratum — and the contrast reads straight off the
+witness's own boundary, since DCS includes Jaina literary texts and, by construction, no
+inscriptions. The register label predicts the corpus hole; the absence rate maps the
+edge of the witness's competence; and that map is itself a publishable finding — an
+agenda for digitization, not a verdict on the lexicographers. Chapter 3 does the same
+corpus-wide: its per-dictionary absence rates (from 69.8 % for the Vedic index VEI down
+to 14.1 % for the Śabdakalpadruma) are read throughout as coverage geometry — which
+strata of the dictionary record the corpus can currently see — under exactly this rule.
+
+### 6.3 The statistical-practice contract
+
+The second discipline concerns not what a figure means but how it is reported. At corpus
+scale, classical significance testing stops discriminating: with N in the hundreds of
+thousands, any non-trivial difference "rejects" at any conventional threshold, because
+language is never random (Kilgarriff 2005). Chapter 11 operates on 828,505 citations;
+several estimators of §3 run over a million and a half entries. At these sizes a bare
+p-value is not evidence but decoration. Every quantitative chapter of this book
+therefore observes five clauses:
+
+1. **Effect size first, test second.** The claim is always a magnitude — a difference, a
+   ratio, a containment, an association strength — with an uncertainty interval where
+   the estimator admits one; a p-value may appear only beside its effect size and its N,
+   never alone (the "new statistics" of McEnery and Brezina 2022; Desagulier 2017 for
+   the working practice).
+2. **Dispersion before generalization.** A corpus-wide or family-wide rate whose signal
+   rides on one text, one edge, or one dictionary is reported as exactly that: §3.3's
+   sense-survival gap is stated as citation-concentrated — 82 of 84 cited senses sit on
+   a single edge — rather than as a family fact.
+3. **Denominators travel with figures.** No naked percentages: 68.3 % arrives as
+   484-of-709, granularity proxies arrive with their ±13 % validation bound, and
+   normalized rates state their base (per 1,000 entries, §3.8).
+4. **Minimally sufficient statistics.** The simplest statistic that answers the question
+   (Egbert, Larsson, and Biber 2020); fitted models appear only where a confound
+   genuinely requires a control — §3.3's cluster-robust refit — never as ornament.
+5. **Negative results stay visible.** The routing layer's anti-over-claim rule (§5)
+   applies to statistics too: a hypothesis that dies — the granularity-inflation reading
+   refuted in §3.3 — is reported as its own finding, not silently dropped.
+
+The book already contains the contract's instances: Chapter 5's benchmark reports κ and
+per-type precision with its definitional boundaries disclosed; Chapter 14 reports
+Cramér's V beside its χ² rather than the χ² alone; §3.3 above reports a two-sided
+p ≈ 0.07 as suggestive but not significant, *with* its concentration caveat. Chapter 11,
+drafted after this contract was fixed, is written to it from the first figure.
+
+### 6.4 Where the discipline binds
+
+Four chapters lean on this section by name and cite it rather than restating it:
+
+- **Chapter 3 — the headword inventory.** The corpus-grounding bridge: per-dictionary
+  DCS-absence rates read as coverage geometry under §6.2, never as phantom rates.
+- **Chapter 5 — the Monier-Williams entry benchmark.** Benchmark statistics (κ, per-type
+  precision and recall, gold-sample construction) reported under §6.3's
+  interval-and-disclosure clauses.
+- **Chapter 11 — the citation-frequency graph.** N = 828,505: effect sizes,
+  normalization, and dispersion in place of bare significance, per §6.3.
+- **Chapter 13 — Renou's registers.** The worked case of the absence-inference rule:
+  68.3 % as a coverage boundary, with the register labels supplying the map.
+
+Every other chapter that touches corpus attestation — and any future one that will —
+inherits the same two disciplines by citing this section. That is the sense in which the
+corpus is this framework's bounded witness: fully admitted, heard on everything it can
+see, and never asked to testify beyond it.
+
+## 7. A worked example: one edition edge, end to end
 
 Take the single inheritance edge from Apte's 1890 *Practical Sanskrit–English Dictionary*
 (AP90) to its 1957 revised expansion (AP) — a *documented* edition continuity, used here
@@ -340,11 +510,11 @@ very similar" but could neither separate the carried word list from the inherite
 from the revised senses, nor expose that the headword containment alone is
 size-confounded. The framework's value is exactly this refusal to average.
 
-## 7. Discussion
+## 8. Discussion
 
 **Why a framework, not a pile of metrics.** Any one estimator above is unremarkable.
 Their value is that they are *independent* and *traceable*: when three of them agree on
-an edge (§6), the agreement is evidence; when one contradicts the others, the
+an edge (§7), the agreement is evidence; when one contradicts the others, the
 contradiction is locatable. A single fused score destroys both properties. The framework
 is the commitment to keep the estimators separate and every number walkable to its
 source.
@@ -355,7 +525,11 @@ headword-overlap, citation-resolvability, cross-reference, and structural questi
 faces the same temptation to publish a number a reader cannot check. The envelope, the
 three evidence levels, the trust block, and the review gate are a low-ceremony
 alternative to ad-hoc data releases, implementable in any static-site or notebook
-pipeline.
+pipeline. The corpus discipline of §6 transfers just as directly, because its premise —
+a reference corpus one to two orders of magnitude below the lexicographic size floor —
+is the *normal* condition of historical languages, not a Sanskrit misfortune: only the
+facts of the disclosure change; the bounded-witness rule and the statistical contract
+port verbatim.
 
 **Relation to existing practice.** The questions behind the descent metrics are
 classical. That Monier-Williams depends on the Petersburg lexica has been established
@@ -385,7 +559,7 @@ function of the committed source (Peng 2011; Sandve et al. 2013). The contributi
 *granularity and the enforcement* — every artifact, every build — rather than a new
 principle.
 
-## 8. Limitations
+## 9. Limitations
 
 - **The catalog is the atlas's catalog.** Ten estimators cover the questions this project
   has asked; a different family might need others. The framework is the *discipline*, not
@@ -403,14 +577,21 @@ principle.
 - **`model-pending` is a promissory note.** The evidence-level discipline keeps neural
   cross-checks out of the build, but a cross-check that never reaches human review adds no
   evidence; the gate must actually be worked.
+- **The corpus disclosure maps known holes; it does not estimate bias.** §6 bounds what
+  an absence may claim and fixes statistical practice, but it does not quantify DCS's
+  sampling bias — there is no held-out digitization test. The coverage boundary is
+  visible only where a register or source label exposes it (Chapter 13's épigraphique
+  stratum is the worked case); unlabelled holes remain invisible by construction.
 
-## 9. Conclusion
+## 10. Conclusion
 
 A digital dictionary family is only as credible as the toolkit that measures it and the
 trail that leads from each published number back to a dictionary line. I have described
 that toolkit as three reusable layers — ten independent, operationally-defined
 estimators; a traceability discipline that envelopes, grades, and gates every datum; and
-a routing discipline that keeps each claim falsifiable and in its lane — under one rule:
+a routing discipline that keeps each claim falsifiable and in its lane — plus one
+standing disclosure (§6) that keeps every attestation reading inside what a
+5.7-million-token witness can actually testify to — under one rule:
 every claim is a `Claim → Evidence → Source` path, and the machine only ever proposes.
 Walked end to end on a single edition edge, the framework turns "these two dictionaries
 are similar" into three independent, separately-bounded, source-linked statements that
@@ -433,16 +614,42 @@ Bender, Emily M., and Batya Friedman. 2018. "Data Statements for Natural Languag
 Processing: Toward Mitigating System Bias and Enabling Better Science." *Transactions of
 the Association for Computational Linguistics* 6: 587–604.
 
+Biber, Douglas. 1993. "Representativeness in Corpus Design." *Literary and Linguistic
+Computing* 8 (4): 243–257.
+
+Desagulier, Guillaume. 2017. *Corpus Linguistics and Statistics with R: Introduction to
+Quantitative Methods in Linguistics.* Cham: Springer.
+
+Egbert, Jesse, Tove Larsson, and Douglas Biber. 2020. *Doing Linguistics with a Corpus:
+Methodological Considerations for the Everyday User.* (Elements in Corpus Linguistics.)
+Cambridge: Cambridge University Press.
+
 Hanneder, Jürgen. 2020. "Woher hat er das? Zum Charakter des *Sanskrit-English
 Dictionary* von Monier-Williams." *Zeitschrift der Deutschen Morgenländischen
 Gesellschaft* 170 (1): 107–117.
+
+Hellwig, Oliver. 2010–. *DCS — The Digital Corpus of Sanskrit.*
+[www.sanskrit-linguistics.org/dcs/](https://www.sanskrit-linguistics.org/dcs/) (release
+2026, CC BY-SA).
+
+Kilgarriff, Adam. 2005. "Language Is Never, Ever, Ever, Random." *Corpus Linguistics and
+Linguistic Theory* 1 (2): 263–276.
 
 Lebo, Timothy, Satya Sahoo, and Deborah McGuinness (eds.). 2013. *PROV-O: The PROV
 Ontology.* W3C Recommendation, 30 April 2013.
 [www.w3.org/TR/prov-o/](https://www.w3.org/TR/prov-o/).
 
+McEnery, Tony, and Vaclav Brezina. 2022. *Fundamental Principles of Corpus Linguistics.*
+Cambridge: Cambridge University Press.
+
+O'Keeffe, Anne, and Michael McCarthy (eds.). 2010. *The Routledge Handbook of Corpus
+Linguistics.* London and New York: Routledge.
+
 Peng, Roger D. 2011. "Reproducible Research in Computational Science." *Science* 334
 (6060): 1226–1227.
+
+Reppen, Randi. 2010. "Building a Corpus: What Are the Key Considerations?" In O'Keeffe
+and McCarthy 2010.
 
 Sandve, Geir Kjetil, Anton Nekrutenko, James Taylor, and Eivind Hovig. 2013. "Ten Simple
 Rules for Reproducible Computational Research." *PLOS Computational Biology* 9 (10):
@@ -451,6 +658,9 @@ e1003285.
 Setiawan, David, Temuulen Khishigsuren, Milind Agarwal, Pagnarith Pit, Aso Mahmudi, and
 Ekaterina Vylomova. 2026. "MUDIDI: A Two-Stage Framework for Multilingual Dictionary
 Digitization with Language Models." arXiv:2606.09435.
+
+Walter, Elizabeth. 2010. "Using Corpora to Write Dictionaries." In O'Keeffe and McCarthy
+2010.
 
 Wiegand, Herbert Ernst. 1989. "Der Begriff der Mikrostruktur: Geschichte, Probleme,
 Perspektiven." In Hausmann, Reichmann, Wiegand and Zgusta (eds.), *Wörterbücher /
@@ -480,7 +690,10 @@ corpus figures §3.2 anchors); *Two Citation Registers* (Ch. 10, citation regist
 likewise). Each instantiates one or more of the metrics in §3
 under the discipline of §§4–5; where this chapter quotes a sibling's headline figure
 (§3.2, §3.4), the sibling chapter owns the full result and this chapter owns only the
-metric's definition.
+metric's definition. The corpus-facing chapters — *The Headword Inventory* (Ch. 3),
+*The Block Economy of Monier-Williams* (Ch. 5), *What the Tradition Cites* (Ch. 11), and
+*Renou's Registers* (Ch. 13) — additionally cite §6's bounded-witness rule and
+statistical contract rather than restating them (§6.4).
 
 *[Data note, 2026-07-03: every §3 anchor is walkable to a committed enveloped artifact.
 §3.4's corpus figures are regenerated from
@@ -492,6 +705,16 @@ metric's definition.
 (generator
 [`scripts/obs/headword_multiplicity.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/obs/headword_multiplicity.py),
 now format-aware for the `<s>`-less nmmb kośa added to csl-orig in 2026-06; the
-previously doc-sourced 409,649 reflected the pre-nmmb corpus).]*
+previously doc-sourced 409,649 reflected the pre-nmmb corpus). §6's corpus figures are
+per the committed DCS 2026 snapshot and hapax census in the sibling VisualDCS
+repository: the 270-text snapshot import per the
+[VisualDCS CHANGELOG](https://github.com/gasyoun/VisualDCS/blob/main/CHANGELOG.md); the
+5,688,416 content tokens, the 95,457-lemma vocabulary, its frequency bands, and the
+39,987-hapax census (41.9 %, compound split 42.3 %) per
+[Gapaksy-DCS-2026](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/README.md)
+(generator
+[`gen_dcs_hapax.py`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/gen_dcs_hapax.py),
+deterministic, no network). Chapter 13's 484-of-709 épigraphique figure and Chapter 3's
+per-dictionary absence range are owned by those chapters and quoted here under §6.2.]*
 
 _Dr. Mārcis Gasūns_

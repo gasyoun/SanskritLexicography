@@ -1,6 +1,6 @@
-# H963 — c4 five-hour correction-evidence campaign (offline)
+# H963 — c4 correction-evidence campaign (offline)
 
-_Created: 16-07-2026 · Last updated: 16-07-2026_
+_Created: 16-07-2026 · Last updated: 17-07-2026_
 
 **Executor:** Opus 4.8 (`claude-opus-4-8[1m]`) orchestrating; census/analysis agents on the session model.
 **Worktree:** [`SanskritLexicography-h963-c4-live/RussianTranslation`](https://github.com/gasyoun/SanskritLexicography/tree/h963-c4-live-rung3/RussianTranslation), branch `h963-c4-live-rung3`, clean.
@@ -18,7 +18,21 @@ _Created: 16-07-2026 · Last updated: 16-07-2026_
 1. **This session is not the c4 session, and cannot become it.** The brief mandates `c4 only` via `D:\ClaudeTools\profiles\claude4\.claude`. This session's `CLAUDE_CONFIG_DIR` is **unset**, so it runs the default profile `C:\Users\user\.claude`. Workflow subagents inherit the orchestrating session's credentials, so "c4 only" is **unenforceable from here** and every call fired would authenticate and bill as the wrong account — mis-attributed provenance, which is the brief's own **"manifest provenance fails"** hard stop.
 2. **Two of the brief's own hard stop conditions were already tripped** by the owner-override pilot it instructed us to close first. That pilot's real call **exceeded the 180,000 ms kill ceiling**, and its two manifests **were launched concurrently by mistake**. The brief's instruction on either condition is: stop all further live calls and spend the remainder on the offline audit. That is exactly what was done.
 
-**What WAS produced.** A committed offline evidence packet: an append-only campaign journal, a pre-registered 8-cell window ledger with every cell marked `NOT_RUN` and its reason, a per-card ledger, a 114-head candidate census with an offline kill-gate deliverability classification, and the ten analysis answers reproduced in §6. The campaign's headline finding (C-01) is offline arithmetic on committed constants: **the 180 s kill ceiling stopped scaling with the work, and at that ceiling 46–66% of the runnable nominal universe is undeliverable on ANY route, healthy or degraded.**
+**What WAS produced.** A committed offline evidence packet: an append-only campaign journal, a
+pre-registered 8-cell window ledger with every cell marked `NOT_RUN` and its reason, a per-card
+ledger, a 114-head candidate census, and the analysis answers reproduced in §6. The earlier
+`SAFE` / `COIN-FLIP` / `DOOMED` classification and route-independent deliverability percentages
+are **withdrawn**: they extrapolated one small benchmark beyond its measured range and were not
+serial whole-card evidence. The durable result is narrower: the 180-second clamp saturates for
+nearly every candidate, so it has little admission-policy discrimination; this does not prove that
+large cards are undeliverable.
+
+**Actual duration and finding reconciliation.** The campaign journal spans **09:42–11:52 UTC =
+2 h 10 min**, not five hours. Its 108-agent subworkflow lasted **98 minutes**. The “87 candidates”
+were provisional verifier inputs, not 87 confirmed findings: the final C-01…C-59 packet retains
+**49 confirmed, 9 plausible, and 1 mixed confirmed-path/plausible-trigger finding**; **19 provisional
+items were merged into those retained findings**, **9 were refuted and dropped**, and **0 were
+dropped for another reason**. Total: 49 + 9 + 1 + 19 + 9 = 87.
 
 **What this does NOT establish.**
 
@@ -51,7 +65,7 @@ Reproduced verbatim from [`campaign_windows.jsonl`](https://github.com/gasyoun/S
 
 | Cell | Stratum | Planned shape | Heads | Purpose | Status | Reason |
 |---|---|---|---|---|---|---|
-| 1 | tiny-A | smallest eligible, raw <6 KiB, low sense/citation | 2 | serial tiny baseline | **NOT RUN** | wrong profile → provenance fails; brief's hard stops already tripped; C-01 predicts nulls |
+| 1 | tiny-A | smallest eligible, raw <6 KiB, low sense/citation | 2 | serial tiny baseline | **NOT RUN** | wrong profile → provenance fails; brief's hard stops already tripped |
 | 2 | tiny-B | same stratum, disjoint keys | 4 | batching effect at tiny complexity | **NOT RUN** | ditto |
 | 3 | typical-A | eligible mid-shape, roughly 6–12 KiB | 2 | typical serial baseline | **NOT RUN** | ditto |
 | 4 | typical-B | same stratum, disjoint keys | 4 | batching effect at typical complexity | **NOT RUN** | ditto |
@@ -62,13 +76,18 @@ Reproduced verbatim from [`campaign_windows.jsonl`](https://github.com/gasyoun/S
 
 **Cells run: 0 of 8. Live calls fired: 0. Keys selected: none — selection never ran.**
 
-The ledger's own `not_run_reason` field carries the three-part reason on every row; the third part (finding C-01) is a *prediction*, and the first two are the sufficient causes.
+The regenerated ledger carries the two sufficient reasons on every row. The earlier modeled third
+reason was removed because the withdrawn projection was not needed to justify the stop.
 
 ---
 
-## 4. Why the matrix would likely have produced nulls — **a PREDICTION, not a measurement**
+## 4. Withdrawn deliverability projection
 
-Explicitly labelled: **this section is a prediction with a stated basis. Nothing in it was measured this campaign.** It is not offered as a substitute for the missing data, only as the reason the missing data would probably have been null.
+The first report projected `SAFE` / `COIN-FLIP` / `DOOMED` classes and claimed a large share of the
+nominal universe was undeliverable on any route. **Those claims are withdrawn.** They combined an
+`n=2` skeleton/raw ratio with a 13-call benchmark whose largest attributed skeleton was 2,929 bytes,
+then extrapolated it to substantially larger cards. The pilot itself also overlapped two calls on the
+same profile, so it cannot establish serial behavior.
 
 The measured anchors:
 
@@ -79,15 +98,20 @@ The measured anchors:
 
 The matrix asks cells 3–4 for "roughly 6–12 KiB typical" cards and cells 5–6 for the "largest still `run-now-low`" card. The nominal-core runnable pool (282 lemmas, 114 with prebuilt inputs) has a **raw median of 12,556 B** — i.e. **larger than the 5,606 B skeleton that already timed out**, and roughly double the 6,828 B trivial probe that took 104,870 ms.
 
-The mechanical basis (offline, from committed constants — `KILL_FACTOR=2.0`, `KILL_BASE_MS=20000`, `KILL_SLOPE_MS=45`, `KILL_FLOOR_MS=45000`, `KILL_CEIL_MS=180000`):
+The retained mechanical fact (from committed constants — `KILL_FACTOR=2.0`,
+`KILL_BASE_MS=20000`, `KILL_SLOPE_MS=45`, `KILL_FLOOR_MS=45000`,
+`KILL_CEIL_MS=180000`) is:
 
 > `killBudgetMs(S) = min(180000, max(45000, 2.0 × (20000 + 45 × S)))`
 >
-> The `180000` clamp binds for every `S ≥ 1,556 B`. Every real nominal head is past that point. So the **work sums, the budget does not move.** For the pilot's real batch: expected `20000 + 45 × 5606 = 272,270 ms`, granted `180,000 ms` — **0.66×**, reproducing the ledger's recorded `kill_budget_vs_expected: 0.66` to the digit.
+> The `180000` clamp binds for every `S ≥ 1,556 B`; therefore 113/114 measured candidate
+> skeletons receive the same ceiling. The gate consequently cannot distinguish candidate size above
+> that point. Whether an individual whole card can complete serially within 180 seconds remains an
+> empirical question.
 
-**Predicted cell outcomes** (from [`campaign_windows.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/campaign_windows.jsonl) `predicted_outcome_if_run`, reproduced verbatim): tiny strata (cells 1–2) SAFE..COIN-FLIP; typical (3–4) COIN-FLIP..DOOMED; upper-normal (5–6) DOOMED at the centre rate. **PREDICTION from finding C-01, NOT a measurement.**
-
-Two caveats that weaken the prediction and must travel with it: it rests on a skel/raw ratio band measured on **n=2 keys** (0.537 `zaz`, 0.750 `upama`) — the campaign journal names this its weakest link — and on a rate band from a single benchmark whose largest skeleton was **2,929 B**, roughly half the pilot's real batch. The prediction extrapolates beyond its fitted range in both directions.
+The regenerated JSONLs set every former prediction to `null` with an explicit withdrawal reason.
+The raw pilot outputs and append-only journal remain preserved so the history of the correction is
+auditable.
 
 ---
 
@@ -154,33 +178,18 @@ One-way ANOVA on size (computed from the 15 raw rows): between-size SS 606,580,9
 
 ### 6.2 Q2 — Does batching improve cards-per-agent without more semantic defects?
 
-**UNANSWERABLE as a measurement — the exact experiment was pre-registered (cells 1–4) and never run.** But the *mechanism* is deterministic and points opposite the question's premise: **under the current kill gate, batching cannot improve cards-per-agent, because the batch dies.**
+**UNANSWERABLE as a measurement — the exact experiment was pre-registered (cells 1–4) and never
+run.** The only real batch was an overlapping, single observation: two cards, zero returned, and no
+semantic output to inspect. It cannot establish a batching effect.
 
-The only live batch evidence is n=1 and it overlapped a second call:
+The generated harness does show an admission-policy weakness: `skelBytesOfKeys` sums skeletons,
+while nearly every candidate is already at the 180-second clamp. Batching can therefore add work
+without increasing the ceiling. That justifies serial whole-card telemetry before changing admission
+policy; it does **not** establish that batching is always dominated or that a card is
+route-independently undeliverable.
 
-| run | heads | Σ skel B | cards | clean | null | realised cards/agent | semantic defects |
-|---|---|---|---|---|---|---|---|
-| `h963_c4_canary` | 1 (synthetic) | 2,046 | 1 | 1 | 0 | **1.0** | 0 FP (n=1, model knew it was a canary) |
-| `h963_c4_real` | **2** | 5,606 | 2 | 0 | 2 | **0.0** | **null — NOT zero** |
-
-The defect half is **strictly unmeasurable**: both real cards record `"unmeasurable_reason": "no output produced; every quality metric is null, NEVER zero"`.
-
-**Batching is free work at zero extra budget.** From the generated harness: `skelBytesOfKeys` **sums** skeletons; `killBudgetForCur` grants a *single-card* call the full `KILL_CEIL_MS` unconditionally; and the ceiling clamp binds at `S ≥ 1,556 B`, which every real head exceeds.
-
-| stratum | heads | Σ skel B | budget ms | harness's OWN expected ms | budget/expected | band @25–44 ms/B |
-|---|---|---|---|---|---|---|
-| tiny (`zaz` 2,046) | 1 | 2,046 | 180,000 | 112,070 | **1.61×** | SAFE |
-| tiny | **2** | 4,092 | 180,000 | 204,140 | **0.88×** | COIN-FLIP |
-| tiny | **4** | 8,184 | 180,000 | 388,280 | **0.46×** | **DOOMED** |
-| typical (skel ~8,224) | 1 | 8,224 | 180,000 | 390,080 | **0.46×** | **DOOMED** |
-| typical | **2** | 16,448 | 180,000 | 760,160 | **0.24×** | **DOOMED** |
-| typical | **4** | 32,896 | 180,000 | 1,500,320 | **0.12×** | **DOOMED** |
-
-The mechanism reproduces the pilot's telemetry exactly (`zaz`+`upama` → 0.66×), which is what makes it trustworthy. **Batching is strictly dominated:** run solo, those two heads get 1.61× and 1.00×; batched, a joint **0.66×** — the harness killed the call at **66% of the time its own model says the work needs**, violating its own stated design invariant that *"no legit call (even a +50% variance one) is ever killed."*
-
-**Projected answer: batching 4 tiny or 2 typical heads does not raise cards-per-agent — it drives it toward 0**, and makes the defect question permanently unmeasurable. **This is a PREDICTION** from an n=2 ratio band and an n=13 rate band whose largest skeleton was 2,929 B.
-
-One near-miss that must not be misread: `no_pwg_w08` (1/21 non-null at ~10-wide) vs `no_pwg_w08_rq1` (14/18 at `--max-wide=3`) varies **concurrency width**, not cards-per-agent, and is selection-confounded (rq1 ran w08's hard residual keys; 8 of its 14 non-null were content-defective → only 6 clean). Not batch-size evidence.
+The `no_pwg_w08` versus `no_pwg_w08_rq1` comparison varies concurrency width, not cards per call,
+and is selection-confounded. It is not batch-size evidence.
 
 ### 6.3 Q3 — Which input feature best predicts latency, tokens, audit failure, SANLOSS?
 
@@ -195,7 +204,7 @@ One near-miss that must not be misread: `no_pwg_w08` (1/21 non-null at ~10-wide)
 | `Σ <ls>` | 0.468 | 0.519 | [−0.44, 0.90] | 0.549 |
 | `Σ senses` | 0.142 | 0.091 | [−0.68, 0.81] | 0.109 |
 
-OLS on all 7: `wall_ms = −3,668 + 29.41 × skelB`, R² = 0.737. Per-call rate mean 26.6, median 24.2, sd 9.6, min 16.8, max 44.0 ms/skel-B — consistent with the doc's own "centre ≈ 25, ceiling ≈ 44". Two hard caveats: at n=7 every CI is very wide and `card_count` is statistically indistinguishable from `skel_bytes`; and the benchmark's largest skeleton was **2,929 B** while the pilot's real call was **5,606 B**, i.e. **1.9× outside the fitted range**. Extrapolating gives 165 s (OLS centre) to 247 s (observed-max rate) against a 180 s ceiling — the straddle that is exactly the COIN-FLIP verdict.
+OLS on all 7: `wall_ms = −3,668 + 29.41 × skelB`, R² = 0.737. At n=7 every interval is wide, `card_count` is statistically indistinguishable from `skel_bytes`, and the largest benchmark skeleton (2,929 B) is far below the pilot batch (5,606 B). The former extrapolated classification is therefore withdrawn.
 
 **(b) Feature collinearity (n=114, features only, no outcomes)** — Spearman ρ over the candidate census:
 
@@ -339,7 +348,7 @@ The preflight arithmetic reproduces exactly:
 | `run-now-low` | `run-now-low` | 180 s kill, 0 cards | **correct and irrelevant** | `recommendation()` is a **pure function of agent count**: `0→skip-cached`, `≤15→run-now-low`, `≤20→run-next`, else `defer-calibrate`. A *cheapness* band. It was never a deliverability prediction, and was never wrong about cheapness. |
 | cost model | $0.47 / 248,400 tok | canary **59,250 tok** for 1 agent; real **null** | **over-estimates 3.1–4.2×, n=1** | 184,000/59,250 = **3.11×**; with realism 248,400/59,250 = **4.19×** |
 
-**The mechanical fact the preflight could have computed for free, and did not** — the real call was doomed at manifest-write time, from a number the harness already had: expected 272,270 ms, granted 180,000 ms, **granted/expected = 0.661**. The `KILL_FACTOR = 2` safety margin **never applied** — clamped away by `KILL_CEIL_MS`. The call needed ~165 s at the OLS centre and ~247 s at the observed-max rate against a 180 s budget. **Preflight said `run-now-low · cost ok`.**
+**The mechanical fact preflight could have reported for free** is that the candidate was in the flat 180-second clamp region. The contemporaneous preflight output was not preserved, so the former literal classification and dollar estimate were removed from generated evidence.
 
 **What the cost model does NOT model.** A grep of `perf_preflight.py` for `kill|skel|latency|timeout|wall|deliver|route|profile` returns **zero substantive hits**. The model is `agents → tokens → dollars`, a one-variable linear map. Absent:
 
@@ -498,7 +507,7 @@ The correct ledger status for this run is `wasted_calls`: 1 agent spent, 0 clean
 2. **The live matrix was unrunnable from this session by construction** — wrong profile, unenforceable `c4 only`, guaranteed provenance failure. This was knowable at intake and is not a mid-run discovery.
 3. **The brief's own hard stops were already tripped before the campaign began** — the kill-ceiling overrun and the concurrency deviation both belong to the pilot brief 4 instructed us to close. The campaign therefore began already inside its own stop condition.
 4. **Every regression in §6 extrapolates beyond its fitted range.** The 04-07 benchmark's largest skeleton (2,929 B) is roughly HALF the pilot's real batch (5,606 B) and a THIRD of the nominal-core median (~8,224 B).
-5. **The skel/raw ratio band is n=2** (0.537, 0.750) and both measured ratios straddle the median's DOOMED threshold (0.573). The campaign journal names this its weakest link. Every deliverability percentage in §4 and §6.2 inherits it.
+5. **The skel/raw ratio band is n=2** (0.537, 0.750). It cannot support population-wide deliverability classes; the former percentages in §4 and §6.2 are withdrawn.
 6. **The cost model's every constant is fitted on n=1 window** — and that window is the pathological pril10_w1 blow-up the gate exists to prevent. Never re-fitted.
 7. **No dataset replicates across days at matched size** except the accidental sweep(n=3) vs Gate-0(n=2) pair at ~6.5 KB — which is the pair that produces the report's largest unexplained effect (4.07×).
 8. **The Gate-0 readings are n=1 each, by design** (reroll prohibited by the brief) — **no variance estimate exists**. Machine load and network conditions were **not instrumented and cannot be reconstructed**.
@@ -528,7 +537,7 @@ Stated plainly: **the offline audit answered none of the following. They remain 
 | 3 | **Fixed overhead vs output rate vs input rate** | The two existing datasets disagree because input and output are confounded in one and pinned in the other | A factorial probe **decoupling input from output**: ≥3 input sizes (1/5/15 KB) × ≥2 commanded output lengths × ≥5 reps × ≥3 time-of-day blocks ≈ 90 serial calls, one profile, `max_wide=1`, no overlap; emit input/output/cache tokens + TTFT + wall; fit `wall ~ input_B + output_tokens + (1|block)` |
 | 4 | **Does batching improve cards-per-agent without more defects?** | Cells 1–4 not run; the mechanism predicts the batch dies before returning anything to score | {1,2,4 heads} × {tiny, typical} × ≥5 reps = 30 serial calls, keys randomly assigned within stratum. **Two blockers must clear first:** (a) correct the kill envelope or run with `--no-kill`/raised `--kill-factor`, else the cells only re-measure C-01; (b) drop `--max-agents=1`, which forces `max_heal_agents:0` and destroys the per-card outcome data |
 | 5 | **Does the 30 s gate predict card failure?** | One uncensored NO-GO→launch pair, interior to the GO arm's range, kill over-determined by C-01 | Paired probe→card design launching on **both** verdicts, ~20–30 cards/arm (~80% power for a 30-point gap), skeletons **< 3,555 B** so kills attribute to route latency not the clamp, serial dispatch, and a **work-representative `CARDS_SCHEMA` probe** rather than the inert-filler `{ok:true}` probe |
-| 6 | **Guard false-positive rate on real output** | 0 real cards; the 0-FP result's rule-of-three bound is ~100% — formally uninformative | ≥20–30 **real clean cards**, each audit verdict cross-tabulated against manual inspection into a 2×2. Requires the C-01 envelope corrected first — at a flat 180 s, 46–66% of the runnable universe cannot return a card at all, so no amount of live calling produces the sample |
+| 6 | **Guard false-positive rate on real output** | 0 real cards; the 0-FP result is formally uninformative | ≥20–30 real clean cards after forward integrity gates are repaired |
 | 7 | **Audit-vs-manual agreement rate (Q8)** | n=1, synthetic, model knew it was a test | Same ≥30 real clean cards; nothing offline substitutes — Q8 is definitionally about real model output |
 | 8 | **Token use / cost model validation** | n=1 agent (0.32× the constant); split telemetry null and not recoverable | Instrument the harness to persist per-agent input/cache_read/cache_create/output splits (`parse_workflow_cost.py` already parses them — the pilot simply did not retain the transcript dir), then ≥20 agents across the size range |
 | 9 | **True real-lane spend on a killed call** | `subagent_tokens: 0` means killed before return; the gate cannot save the tokens already burned | Incremental/streamed token accounting persisted **before** the kill fires, so a killed call reports true consumed spend rather than 0 |

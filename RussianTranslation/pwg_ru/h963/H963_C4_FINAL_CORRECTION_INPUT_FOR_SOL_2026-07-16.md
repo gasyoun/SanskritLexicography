@@ -1,6 +1,6 @@
 # H963 — final correction input for Sol
 
-_Created: 16-07-2026 · Last updated: 16-07-2026_
+_Created: 16-07-2026 · Last updated: 17-07-2026_
 
 **This campaign fired ZERO live generation calls.** Nothing below was measured by running the
 model. Every claim is anchored to a file:line in the worktree
@@ -44,6 +44,13 @@ adversarial-verification agents: the session model. Every finding below survived
 verification pass; **CONFIRMED** and **PLAUSIBLE** verdicts are preserved distinctly — a PLAUSIBLE
 is a code path with no demonstrable trigger, and must not be read as a CONFIRMED. REFUTED
 candidates were dropped and are not resurrected.
+
+**Campaign accounting correction (17-07-2026).** The journal spans **2 h 10 min**; the 108-agent
+subworkflow lasted **98 minutes**. The 87 provisional candidates reconcile as **49 confirmed,
+9 plausible, 1 mixed confirmed-path/plausible-trigger, 19 merged into retained findings, 9 refuted
+and dropped, 0 otherwise dropped**. The final packet has 59 retained IDs; “59 confirmed” was not a
+valid verdict count. The old route-independent `SAFE` / `COIN-FLIP` / `DOOMED` projection is
+withdrawn; the retained kill-budget finding is saturation telemetry, not proof of undeliverability.
 
 **Path convention.** Every path is resolved once, as a clickable blob URL, in §3. Inside the ranked
 tables, anchors appear as bare `path:line` and resolve against §3 — the alternative is ~60 inlined

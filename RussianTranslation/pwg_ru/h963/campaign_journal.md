@@ -437,3 +437,25 @@ output**. The corruption is **already shipped**, and it outranks every forward-l
 - **Owner decision outstanding:** the ceiling `@DECIDE` in [GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — **measure first, it is free**.
 
 _Dr. Mārcis Gasūns_
+
+---
+
+## 17-07-2026 — checkpoint 8: evidence reconciliation after independent review
+
+This append-only correction supersedes the campaign-duration, finding-count, and deliverability
+summaries above without rewriting the historical checkpoints.
+
+- **Actual elapsed campaign:** 09:42–11:52 UTC = **2 h 10 min**, not five hours. The 108-agent
+  subworkflow lasted **98 minutes**.
+- **87 provisional candidates reconciled:** the final C-01…C-59 packet retains **49 confirmed,
+  9 plausible, and 1 mixed confirmed-path/plausible-trigger finding**; **19 provisional candidates
+  were merged** into retained findings; **9 were refuted and dropped**; **0 were dropped for another
+  reason**. Total = 87. The earlier “59 confirmed / 11 plausible / 9 refuted” line conflated retained
+  IDs with verdict classes and did not account for merged candidates.
+- **Withdrawn projection:** `SAFE` / `COIN-FLIP` / `DOOMED`, “7–20% deliverable,” and “46–66%
+  undeliverable on any route” are not supported by serial whole-card evidence. They combined an
+  `n=2` skeleton/raw ratio with a benchmark extrapolated beyond its measured range. The derived
+  JSONLs now carry `null` plus an explicit withdrawal reason. Raw pilot artifacts remain unchanged.
+- **Retained mechanical finding:** the 180-second clamp saturates for 113/114 current candidate
+  skeletons, so the current kill budget has little admission-policy discrimination above 1,556 bytes.
+  This is telemetry and policy input, not proof that large cards cannot be translated.

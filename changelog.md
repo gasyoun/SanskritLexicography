@@ -14,7 +14,63 @@ not an error.
 
 ## [Unreleased]
 
+## [1.14.0] — 17-07-2026
+
 ### Added
+- **M01 Ch. 2 §6 *The corpus as a bounded witness* — the monograph's canonical corpus-epistemics section (17-07-2026, Fable 5 `claude-fable-5`, H1078)**:
+  executes MG's 13-07-2026 ruling (b) on the corpus-methods fork
+  ([LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)).
+  ~7 pp. of book-only new writing in
+  [ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md):
+  the DCS 2026 disclosure (5,688,416 content tokens · 270 texts · 95,457 disambiguated
+  lemmas · 41.9 % hapax share, per the committed
+  [VisualDCS census](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/README.md)),
+  the absence-inference rule (bounded DCS-coverage statements, never "non-existent" —
+  McEnery & Brezina), the five-clause statistical-practice contract (effect sizes, not bare
+  p-values at corpus N — Kilgarriff 2005), and the Ch. 3/5/11/13 binding map; ch02's old
+  §6–§9 renumbered §7–§10, 9 references added. Proposal ToC (Ch. 2 bullet), BOOK_PLAN §11,
+  crosswalk §4.2 (15→14-chapter consumer numbering made explicit), BOOK_PLAN.meta backlog
+  #3 and the book CHANGELOG all ticked in the same pass.
+
+## [1.13.0] — 17-07-2026
+
+### Added
+- **A31/P5 Lexikos draft — error-origin typology over the OBS-T correction corpus (17-07-2026,
+  Fable 5 `claude-fable-5`, H1074)**: full draft
+  [papers/A31_fifty_thousand_corrections_error_origin_typology.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A31_fifty_thousand_corrections_error_origin_typology.md)
+  adds a third, origin axis (print-source / digitization / conversion-markup / undetermined,
+  never guessed) on top of OBS-T's location x edit-type design. Census computed by
+  [papers/a31_origin_census.py](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/a31_origin_census.py)
+  over the released 52,498-event snapshot: 58.4% classified, per-class precision 0.90-0.97
+  (micro 0.933) on a 120-row hand-checked stratified sample (single-annotator, kappa pending
+  the org's standing second-annotator recruit). Headline findings: form-era workflow preserved
+  origin testimony for 98.9% of its events vs 23.1% for the git era; digitization-era slips
+  outnumber inherited print errors >10:1; high per-dictionary print-error shares (BEN 46.9%,
+  PD 37.2%, BUR 32.6%) are single-collator campaign fingerprints (top corrector 94-100%).
+- **FINDINGS §87 — the roadmap's "OBS-T κ=0.42" was a phantom figure**: no measured agreement
+  exists for any OBS-T axis (gold second-annotator column blank, κ=0.0 over 4 incidental
+  pairs); both roadmap cells corrected, rule logged (re-derive statistics from committed
+  metrics files, never cite planning-doc cells into papers).
+
+## [1.12.0] — 17-07-2026
+
+### Added
+- **A30 full paper draft — "When Zero Means Nothing: Recovering the Indigenous Microstructure
+  of the *Śabdakalpadruma* and the *Vācaspatya*" (17-07-2026, Fable 5 `claude-fable-5`, H1073)**:
+  [`papers/A30_skd_vcp_microstructure_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_skd_vcp_microstructure_note.md)
+  — roadmap P4 taken from outline (2/5) to full IJL/WSC-2027 draft (3/5 proposed). Claims the
+  record-level indigenous microstructure (entry template, front-matter megastructure key, the
+  *iti*-unit, SKD-vs-VCP register contrast); every figure read from committed csl-atlas
+  artifacts, no new computation; scope coordinated against A04 (root grammar) / A35 (affixes)
+  / A02 (sense inheritance) / A08 (citation registers).
+- **FINDINGS §86 — samāsa-type frequency does not exist in any org corpus; the canonical
+  examples are corpus-ghosts (16-07-2026, Opus 4.8 `claude-opus-4-8`)**: measured while
+  scoping a frequency layer for the [samāsa-cakra wheel](https://gasyoun.github.io/SamasaChakram/).
+  Two walls, both measured: DCS has 841 052 compound members but no type label (EM4, per H989),
+  and VisualDCS's `категории композитов.ods` means *stem count* by "категория", not samāsa class;
+  the fallback of showing each leaf's example frequency dies at **8/58 attested** (max 147,
+  min 0). Records why an example-frequency layer is worse than none — it is a type-frequency
+  claim in disguise that inverts the truth on the most-taught subtypes.
 - **`ONBOARDING_NEW_CONTRIBUTOR_RU.md` — gentle Russian on-ramp for a non-technical Sanskrit contributor (16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, H1029)**:
   fills the gap between the git-assuming English `CONTRIBUTING.md` and the deep-project
   `MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md` — a 5-rung ladder (talk-to-Claude → GitHub issues →
