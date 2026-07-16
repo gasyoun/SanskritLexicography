@@ -16,7 +16,6 @@ import shutil
 import subprocess
 import sys
 import tempfile
-import traceback
 import xml.etree.ElementTree as ET
 
 sys.stdout.reconfigure(encoding='utf-8')
