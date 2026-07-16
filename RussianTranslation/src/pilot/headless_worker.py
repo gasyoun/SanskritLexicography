@@ -17,7 +17,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+_SRC = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
+import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
 
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
 RATE_RE = re.compile(r'429|rate.?limit|usage limit|too many requests', re.I)
@@ -129,26 +133,83 @@ def extract_structured(stdout):
     return value, wrapper
 
 
-def restore_text(text, placeholders):
+def restore_text(text, placeholders, unmapped=None):
+    """Unmask `{Tn}` against `placeholders`.
+
+    C-42: an index outside the map still returns the token verbatim (changing that is a
+    behaviour change this correction does not make), but it is now COUNTED into `unmapped`
+    when a caller supplies a sink. The silent pass-through is how a raw `{T196}` reached the
+    canonical store on a card that reported success: the article is masked WHOLE (235+
+    placeholders) but restored per-subcard against a subcard-local map, so a high global
+    index maps nothing. Counting is what lets `normalize_batch` gate on zero.
+    """
     def repl(match):
         idx = int(match.group(1)) - 1
-        return placeholders[idx] if 0 <= idx < len(placeholders) else match.group(0)
+        if 0 <= idx < len(placeholders):
+            return placeholders[idx]
+        if unmapped is not None:
+            unmapped.append(match.group(0))
+        return match.group(0)
     return re.sub(r'\{T(\d+)\}', repl, text or '')
 
 
-def restore_card(card, field, placeholders):
-    for record in card.get('records') or []:
-        if 'grammar' in record:
-            record['grammar'] = restore_text(record['grammar'], placeholders)
-        for sense in record.get('senses') or []:
-            if 'german' in sense:
-                sense['german'] = restore_text(sense['german'], placeholders)
-            if field in sense:
-                sense[field] = restore_text(sense[field], placeholders)
-    return card
+def restore_card(card, field, placeholders, unmapped=None):
+    """Unmask every field the promote path reads -- the set is `card_fields`, not a local list.
+
+    C-01: this used to restore three things (record.grammar, sense.german, sense.<field>)
+    while `promote_final_cards.rows_for` read six, so card.iast / record.h / sense.tag /
+    sense.differentia were promoted with their `{Tn}` intact -- 670 store rows, 223 of them
+    a raw `{Tn}` in the HEADWORD. The lists are now one constant, pinned by
+    `test_restore_covers_every_promoted_field`.
+
+    Deliberate delta from the old loop: a field is restored only when it is a `str`. The old
+    code tested key-presence and passed `text or ''`, silently rewriting a `None` grammar to
+    `''`. Extending that to `h` would have laundered the 468 known `h is None` rows into
+    empty strings -- destroying the very signal C-02 is diagnosed by. A non-str field is now
+    left exactly as found.
+    """
+    return card_fields.restore_card_fields(
+        card, field, lambda text: restore_text(text, placeholders, unmapped))
+
+
+def stitch_records(senses, owners):
+    """Rebuild `records[]` from healed senses, preserving each sense's `(h, grammar)` owner.
+
+    C-02: the stitch used to emit a single `{'senses': senses}` record -- no `h`, no
+    `grammar` -- which violates `schemas/pwg_ru_final_card.schema.json` (`record.required =
+    {h, grammar, senses}`) and made the promote path write `h: null`. It also collapsed real
+    homonyms: 79 sub-cards legitimately carry more than one distinct `h`, so one flat record
+    cannot represent them.
+
+    Consecutive senses sharing an owner stay in one record; a change of owner opens the next.
+    Order is preserved exactly, so the whole-card `<ls>`/`{#` fidelity counts are unchanged.
+    """
+    records = []
+    for sense, owner in zip(senses, owners):
+        if not records or records[-1]['_owner'] != owner:
+            rec_h, rec_grammar = owner
+            records.append({'_owner': owner, 'h': rec_h, 'grammar': rec_grammar, 'senses': []})
+        records[-1]['senses'].append(sense)
+    for record in records:
+        record.pop('_owner', None)
+    return records
 
 
 def count_card(card, needle):
+    """Count `needle` across the card's `german` senses.
+
+    DELIBERATELY still `german`-only. The C-02 boundary asks to "make count_card/countOf see
+    record-level fields", but that is wrong AT THIS SITE and its own fixture proves it: this
+    count is compared against `inp['ls']`/`inp['sk']`, which are SOURCE-occurrence counts
+    (`raw.count('<ls')`). One source token echoed into both `grammar` and `german` -- exactly
+    what `headless_worker_selftest.success_runner` builds, `{T1}` in both -- then counts 2
+    against a denominator of 1 and the card is rejected as a fidelity failure.
+
+    Adding record-level text belongs with the token-MULTISET guards (C-17, Step 6), whose
+    denominator really is the whole skeleton. Restoring `grammar` on the stitch lane (C-02)
+    leaves this count unchanged, because stitched cards previously carried no `grammar` term
+    at all -- so historical comparisons stay valid.
+    """
     return sum((sense.get('german') or '').count(needle)
                for record in card.get('records') or []
                for sense in record.get('senses') or [])
@@ -175,10 +236,16 @@ def normalize_batch(manifest, keys, structured):
         if card is None:
             error = 'missing-or-mismatched-key'
         else:
-            card = restore_card(card, manifest['field'], manifest['placeholder_maps'].get(key, []))
+            unmapped = []
+            card = restore_card(card, manifest['field'],
+                                manifest['placeholder_maps'].get(key, []), unmapped)
             inp = manifest['inputs'][key]
             if count_card(card, '<ls') != inp['ls'] or count_card(card, '{#') != inp['sk']:
                 error = 'fidelity-reject'
+                card = None
+            elif unmapped:
+                # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
+                error = 'unmapped-token-reject'
                 card = None
         row = {'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                'escalated': False}
@@ -381,6 +448,8 @@ class HeadlessEngine:
         cached_groups = self.m.get('fragment_tm', {}).get(key) or []
         ph_groups = self.m.get('fragment_placeholder_maps', {}).get(key) or []
         senses = []
+        owners = []          # C-02: parallel to `senses` -- the (h, grammar) each came from
+        unmapped = []        # C-42: {Tn} indices that map nothing, instead of a silent pass
         frag_prov = []
         missing = []
         sense_tags = {}
@@ -392,28 +461,43 @@ class HeadlessEngine:
                                                    'heal:%s#g%d' % (key, gi + 1), budget)
             missing.extend('g%d:f%d' % (gi + 1, i) for i in unresolved)
             for index, fragment in enumerate(group):
-                frag_senses = []
+                # C-02: keep each sense's OWNING record. The old comprehension here flattened
+                # `records -> senses` and dropped `record` itself, so the stitch below had no
+                # `h`/`grammar` left in scope to emit and every promoted row read `h: null`
+                # (468 rows / 20 sub-cards). `h` is free lexicographic text ("2. bhid",
+                # "PW 3 (с anu, отсылка к entry 5)"), so a dropped one cannot be reconstructed
+                # later -- it has to survive the flatten.
+                frag_records = []
                 if index < len(cached) and cached[index]:
-                    frag_senses = cached[index]
+                    # The fragment TM caches SENSES ONLY, with no record context, so a
+                    # TM-served fragment genuinely has no `h` to carry. Emit it under an
+                    # unknown owner rather than inventing one -- synthesising an `h` here is
+                    # what the C-02 boundary forbids. This is the residual null source and is
+                    # counted in the summary below.
+                    frag_records = [(None, None, cached[index])]
                 elif index in resolved:
                     card = restore_card(resolved[index], self.m['field'],
-                                        phs[index] if index < len(phs) else [])
-                    frag_senses = [sense for record in card.get('records') or []
-                                   for sense in record.get('senses') or []]
+                                        phs[index] if index < len(phs) else [], unmapped)
+                    frag_records = [(record.get('h'), record.get('grammar'),
+                                     record.get('senses') or [])
+                                    for record in card.get('records') or []]
+                    frag_senses = [sense for _, _, group in frag_records for sense in group]
                     if fragment.get('fsha') and frag_senses:
                         frag_prov.append({'fsha': fragment['fsha'], 'senses': frag_senses})
-                for sense in frag_senses:
-                    source_ord = fragment.get('si')
-                    if source_ord is not None:
-                        if source_ord in sense_tags:
-                            sense['tag'] = sense_tags[source_ord]
-                        else:
-                            sense_tags[source_ord] = sense.get('tag')
-                    senses.append(sense)
+                for rec_h, rec_grammar, group in frag_records:
+                    for sense in group:
+                        source_ord = fragment.get('si')
+                        if source_ord is not None:
+                            if source_ord in sense_tags:
+                                sense['tag'] = sense_tags[source_ord]
+                            else:
+                                sense_tags[source_ord] = sense.get('tag')
+                        senses.append(sense)
+                        owners.append((rec_h, rec_grammar))
         if not senses:
             self.note(key, 'selfheal-nothing-resolved')
             return None
-        card = {'key1': key, 'records': [{'senses': senses}]}
+        card = {'key1': key, 'records': stitch_records(senses, owners)}
         if frag_prov:
             card['frag_prov'] = frag_prov
         if missing:
@@ -427,6 +511,15 @@ class HeadlessEngine:
                 self.note(key, 'stitched-fidelity-reject: <ls> %d/%d, {# %d/%d' %
                           (ls_count, inp['ls'], sk_count, inp['sk']))
                 return None
+        # C-42: a {Tn} whose index maps nothing used to be written through verbatim on a card
+        # that reported success -- that is how `ban_d~~h0_11_ni` and `ban_d~~h0_21_upasam_0`
+        # reached the canonical store carrying a raw {T196}/{T235}. The token is unrecoverable
+        # by construction (the index addresses a whole-article map the sub-card never had), so
+        # refuse the card instead of promoting a known-corrupt one.
+        if unmapped:
+            self.note(key, 'unmapped-token-reject: %d out-of-range placeholder(s): %s'
+                      % (len(unmapped), ', '.join(sorted(set(unmapped))[:6])))
+            return None
         return card
 
     def run_all(self):

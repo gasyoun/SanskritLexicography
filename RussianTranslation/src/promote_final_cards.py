@@ -37,8 +37,10 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+import re
 import pipeline_version
 import dict_merge
+import card_fields
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
 
@@ -164,6 +166,29 @@ def provenance(entry, subkey, model_version):
     return prov
 
 
+TN_RE = re.compile(r'\{T\d+\}')
+
+
+class UnrestoredPlaceholder(Exception):
+    """A card reached the promote path still carrying a `{Tn}` mask placeholder (C-01)."""
+
+
+def tn_residue(card, rec, sense):
+    """Report every promoted field of this row that still holds a raw `{Tn}`.
+
+    The field list is `card_fields.PROMOTED_PAIRS`, NOT a local literal: a local literal here
+    that drifted from the restore side is precisely what put 670 placeholder rows into the
+    canonical store. Levels resolve against the three objects the caller already holds.
+    """
+    holder = {'card': card, 'record': rec, 'sense': sense}
+    found = []
+    for level, name in card_fields.PROMOTED_PAIRS:
+        value = holder[level].get(name)
+        if isinstance(value, str) and TN_RE.search(value):
+            found.append('%s.%s=%r' % (level, name, value[:60]))
+    return found
+
+
 def rows_for(subkey, entry, review_status, model_version):
     card = entry['card']
     meta = entry['meta']
@@ -182,6 +207,17 @@ def rows_for(subkey, entry, review_status, model_version):
             ru = sense.get('russian')
             if not ru:
                 continue
+            # C-01: refuse to promote a row that still carries a mask placeholder. Every field
+            # below is read straight into the canonical store, and four of them were never
+            # restored -- 670 rows landed with a raw {Tn}, 223 of them in the HEADWORD. The
+            # restore side is driven from `card_fields`; this is the promote side's own
+            # burden-of-proof check, so a future restore gap fails loudly HERE rather than
+            # accumulating silently in canonical data.
+            residue = tn_residue(card, rec, sense)
+            if residue:
+                raise UnrestoredPlaceholder(
+                    '%s: refusing to promote a card with unrestored placeholders: %s'
+                    % (subkey, '; '.join(residue)))
             yield {
                 'key1': key1,
                 'subcard': subkey,

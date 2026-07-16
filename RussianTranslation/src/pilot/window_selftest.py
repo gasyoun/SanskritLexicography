@@ -4779,7 +4779,13 @@ def test_save_merge_better_attempt_wins():
         p = os.path.join(tmp, name)
         with open(p, 'w', encoding='utf-8') as f:
             json.dump(wf(card), f)
-        run([sys.executable, save, root, p, tag, '--no-audit'] + list(extra), expect=0)
+        # `--allow-schema-violations`: this test's cards are deliberate STUBS carrying a
+        # `senses_marker` and nothing else -- it pins merge ORDERING (complete beats partial),
+        # not card content. Since C-04 armed the record contract on the live save path, a stub
+        # is correctly refused, so the exception is declared explicitly here rather than by
+        # relaxing the contract for everyone.
+        run([sys.executable, save, root, p, tag, '--no-audit', '--allow-schema-violations']
+            + list(extra), expect=0)
 
     try:
         complete = {'key1': 'k1', 'senses_marker': 'first-complete'}
@@ -5189,8 +5195,139 @@ def test_strip_mask_tokens_clears_notes_stranded_anchor():
         fail('render() leaked a {Tn} masking token from notes into merged.md')
 
 
+def test_restore_covers_every_promoted_field():
+    """C-01: restore's field set and promote's read set are ONE constant, not two lists.
+
+    The defect: `restore_card` unmasked 3 fields while `rows_for` promoted 6, so card.iast /
+    record.h / sense.tag / sense.differentia reached the canonical store with their {Tn}
+    intact -- 670 rows, 223 of them a raw {Tn} in the HEADWORD field. Two independently
+    hand-maintained lists could drift; one constant cannot.
+    """
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import card_fields
+    # Both language lanes: every field the promoter reads must have been unmasked first.
+    for field in ('russian', 'english'):
+        promoted = set(card_fields.promoted_pairs(field))
+        restored = set(card_fields.restored_pairs(field))
+        missing = promoted - restored
+        if missing:
+            fail('fields promoted but never restored (%s): %s' % (field, sorted(missing)))
+    # The JS lane cannot import Python, so its list is interpolated from the same constant.
+    spec = json.loads(card_fields.js_restore_spec('russian'))
+    if set(spec['record']) != set(card_fields.RECORD_MASKED):
+        fail('js_restore_spec record set drifted from RECORD_MASKED')
+    if 'h' not in spec['record']:
+        fail('the JS lane must restore record.h -- it is promoted verbatim')
+
+    # And the restore actually reaches those fields, end to end.
+    card = {'iast': '{T1}', 'records': [{'h': '{T1}', 'grammar': '{T1}', 'senses': [
+        {'tag': '{T1}', 'german': '{T1}', 'russian': '{T1}', 'differentia': '{T1}'}]}]}
+    card_fields.restore_card_fields(card, 'russian', lambda t: t.replace('{T1}', 'X'))
+    rec, sense = card['records'][0], card['records'][0]['senses'][0]
+    for where, value in (('card.iast', card['iast']), ('record.h', rec['h']),
+                         ('record.grammar', rec['grammar']), ('sense.tag', sense['tag']),
+                         ('sense.german', sense['german']), ('sense.russian', sense['russian']),
+                         ('sense.differentia', sense['differentia'])):
+        if value != 'X':
+            fail('%s was not restored (still %r)' % (where, value))
+
+
+def test_every_stitch_emits_record_required():
+    """C-02: the stitch must emit `h`/`grammar`, and must not collapse distinct homonyms.
+
+    The defect: both stitch lanes built `records: [{senses}]`, discarding record-level h and
+    grammar unconditionally, so promote wrote `h: null` -- 468 store rows over 20 sub-cards.
+    That also violates schemas/pwg_ru_final_card.schema.json (record.required =
+    {h, grammar, senses}), which nothing checked on live output (C-04).
+    """
+    import headless_worker as hw
+    senses = [{'tag': '1'}, {'tag': '2'}, {'tag': '3'}]
+    owners = [('1. bhid', 'm.'), ('1. bhid', 'm.'), ('2. bhid', 'f.')]
+    records = hw.stitch_records(senses, owners)
+    if len(records) != 2:
+        fail('two distinct owners must yield two records, got %d' % len(records))
+    if records[0]['h'] != '1. bhid' or records[1]['h'] != '2. bhid':
+        fail('stitch dropped or reordered the record-level h: %r' % records)
+    if records[0]['grammar'] != 'm.' or records[1]['grammar'] != 'f.':
+        fail('stitch dropped the record-level grammar: %r' % records)
+    for rec in records:
+        for key in ('h', 'grammar', 'senses'):
+            if key not in rec:
+                fail('stitched record missing schema-required %r' % key)
+    if [s['tag'] for r in records for s in r['senses']] != ['1', '2', '3']:
+        fail('stitch must preserve document order of senses')
+    # A single owner stays ONE record -- no gratuitous fragmentation.
+    if len(hw.stitch_records(senses, [('h', 'g')] * 3)) != 1:
+        fail('one owner must yield exactly one record')
+
+
+def test_unmapped_token_is_counted():
+    """C-42: an out-of-range {Tn} is counted, not silently passed through.
+
+    The defect: `restore_text` returned `match.group(0)` for an index the map does not
+    address, with no counter, no log and no reject -- so `ban_d~~h0_11_ni` and
+    `ban_d~~h0_21_upasam_0` reached the canonical store carrying a raw {T196}/{T235} on cards
+    that reported success. Cause is a masking-scope vs restore-scope index mismatch (article
+    masked whole, restored per sub-card), not model hallucination.
+    """
+    import headless_worker as hw
+    unmapped = []
+    out = hw.restore_text('a {T1} b {T99} c', ['<ls>x</ls>'], unmapped)
+    if '<ls>x</ls>' not in out:
+        fail('an in-range token must still restore')
+    if unmapped != ['{T99}']:
+        fail('an out-of-range token must be counted, got %r' % unmapped)
+    if '{T99}' not in out:
+        fail('behaviour change: the out-of-range token must still pass through verbatim')
+    clean = []
+    hw.restore_text('a {T1} b', ['x'], clean)
+    if clean:
+        fail('a fully-mapped text must report no unmapped tokens, got %r' % clean)
+
+
+def test_validator_has_a_live_caller():
+    """C-04 dead-validator canary: the record contract must run on LIVE output.
+
+    `validate_final_card_schema` is the ONLY component encoding record.required =
+    {h, grammar, senses}, and its only caller was a CI step feeding it a hand-made PASSING
+    fixture. A green check certified a contract no real card was measured against -- which is
+    precisely why C-01's 670 placeholder rows and C-02's 468 null-h rows accumulated with no
+    signal. This asserts the validator is reachable from the save chain, and that it still
+    refuses a record missing `h`.
+    """
+    from window_common import REPO as repo_root
+    save = os.path.join(repo_root, 'save_and_audit.py')
+    text = open(save, encoding='utf-8').read()
+    if 'validate_final_card_schema' not in text:
+        fail('save_and_audit.py has no reference to validate_final_card_schema -- the '
+             'validator is dead again (C-04)')
+    if 'validate_card(' not in text:
+        fail('save_and_audit.py imports the validator but never calls validate_card()')
+
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import validate_final_card_schema as v
+    if v.RECORD_REQUIRED != {'h', 'grammar', 'senses'}:
+        fail('RECORD_REQUIRED was relaxed: %r' % (v.RECORD_REQUIRED,))
+    # The contract must actually reject the shape C-02 was writing.
+    bad = {'key1': 'k', 'iast': 'k', 'notes': '', 'records': [{'senses': [
+        {'tag': '1', 'german': 'g', 'russian': 'r', 'equivalence_type': 'equivalent',
+         'source_type': 'attested', 'stratum': '', 'differentia': ''}]}]}
+    try:
+        v.validate_card(bad)
+    except ValueError:
+        pass
+    else:
+        fail('validate_card accepted a record with no h/grammar -- the C-02 shape')
+
+
 def main():
     tests = [
+        test_restore_covers_every_promoted_field,
+        test_every_stitch_emits_record_required,
+        test_unmapped_token_is_counted,
+        test_validator_has_a_live_caller,
         test_strip_mask_tokens_clears_notes_stranded_anchor,
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
@@ -5323,11 +5460,42 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
     ]
+    # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
+    # failure aborted the process and every later test silently never ran. That is not
+    # hypothetical: `test_lang_parity_ledger_complete` sits at position 105 of 131 and is
+    # RED BY DESIGN -- the parity verdicts need human reaffirmation, which is deliberately not
+    # something an agent does (`--update-hash` is a human's call). So the last 27 tests (20.6%)
+    # were dark INDEFINITELY, including `test_frag_groups_presplit_parity`, the whole
+    # `pwg_mask` pair and four heal-lane tests. A real regression hiding behind the known-red
+    # gate was indistinguishable from the gate itself.
+    #
+    # This isolates each test and reports ran/defined, so "the suite is green" can no longer
+    # mean "the suite stopped early". It does NOT touch the parity gate: that test still fails,
+    # loudly, and the run still exits non-zero. It just no longer takes the other 26 with it.
+    passed, failed = [], []
     for test in tests:
-        test()
-        print('PASS:', test.__name__)
+        try:
+            test()
+        except BaseException as exc:      # noqa: BLE001 -- a failing test must not hide the rest
+            failed.append(test.__name__)
+            print('FAIL: %s -- %s: %s' % (test.__name__, exc.__class__.__name__, exc))
+        else:
+            passed.append(test.__name__)
+            print('PASS:', test.__name__)
+
+    ran = len(passed) + len(failed)
+    print('window selftest: ran %d/%d defined -- %d passed, %d failed'
+          % (ran, len(tests), len(passed), len(failed)))
+    if ran != len(tests):
+        # Unreachable while every test is isolated; kept so that a future early-exit (an
+        # os._exit, a signal) is reported as darkness rather than read as success.
+        print('DARK: %d test(s) defined but never ran' % (len(tests) - ran))
+    if failed:
+        print('FAILED (%d): %s' % (len(failed), ', '.join(failed)))
+        return 1
     print('window selftest OK')
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
