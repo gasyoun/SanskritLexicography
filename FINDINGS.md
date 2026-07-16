@@ -2197,6 +2197,13 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
    `elapsed_ms` but **no token field**; H818 dashboards carry `cost:null`. So observed calls/clean and
    $/clean cannot be measured from existing evidence — the deterministic **projection** ($58.09/100hw)
    is a separate, optimistic floor and must not be substituted for observed performance.
+   **Operationalized 16-07-2026 (H963):** because observed per-window cost is usually unrecoverable
+   (LAUNCH_STATS records output-tokens on 1/458 windows), the bounded staged runner treats a
+   requested cost/quota ceiling as **fail-closed** — a window whose cost is UNEVALUABLE stops the run
+   with `STOP_COST_UNEVALUABLE` rather than assuming $0 and continuing
+   ([`bounded_staged_run.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py)
+   + `bounded_supervisor.strict_cost_fn`; `economy_ledger.gate(strict=True)` is the opt-in ledger gate,
+   legacy None-skip unchanged).
 3. **Current-store membership is not the audit verdict and not exact provenance.** Absence ≠ audit
    rejection; presence ≠ *this* output passed. Keep reviewer quality, sealed audit verdict, and
    promotion status as **three separate** measurements; an audit-to-promotion escape needs an exact
@@ -2317,6 +2324,19 @@ promotion validate the live card; autosplit/top-up retain record owners; promoti
 existing store by default and independently refuses synthetic, foreign, duplicate, or malformed
 inputs before a fsynced atomic replacement. The full repair evidence is tracked in
 `RussianTranslation/pwg_ru/h1080/H1080_STORE_REPAIR_REPORT_2026-07-17.md`.
+
+The launch-control follow-up closes the identity boundary as well. A friendly name such as `c4`
+does not prove which credential directory or billing identity a process will use, and per-manifest
+width caps do not prevent two independent manifests from spending through the same profile. New
+production work therefore uses manifest v2: slot + canonical config-directory fingerprint + route/
+lane/model/validation + per-key real/control class. The executor verifies the roster and sealed
+fingerprint and takes one global active-call claim keyed by that fingerprint. V1 stays readable as
+history but is non-promotable; controls are explicitly typed and rejected by promotion. On Windows,
+an unresolved npm `.cmd` shim is a configuration failure, not a fallback. Probe GO is likewise a
+derived typed verdict: named production policy, representative schema success, zero connection
+errors, and latency strictly below 30 seconds. A Workflow session cannot prove its config directory
+or participate in the host claim, so profile-bound v2 production is CLI/headless-only; a bound
+Workflow template must abort before its first agent call rather than mislabel its billing route.
 
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
