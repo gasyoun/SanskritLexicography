@@ -28,11 +28,14 @@ is a requeue subset (the full Slice-C originals were overwritten; re-run or reco
 re-run this script — it is idempotent and supersede-safe).
 """
 import argparse
+import collections
 import datetime
 import glob
 import json
 import os
+import shutil
 import sys
+import tempfile
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -41,6 +44,7 @@ import re
 import pipeline_version
 import dict_merge
 import card_fields
+import validate_final_card_schema
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
 
@@ -173,6 +177,104 @@ class UnrestoredPlaceholder(Exception):
     """A card reached the promote path still carrying a `{Tn}` mask placeholder (C-01)."""
 
 
+class PromotionContractError(Exception):
+    """The candidate cannot independently prove schema, provenance, and key scope."""
+
+
+HEX64_RE = re.compile(r'^[0-9a-f]{64}$')
+SYNTHETIC_KEY_RE = re.compile(r'^(?:dq_canary_|zz~~synthetic|synthetic[_~-])', re.I)
+
+
+def validate_promotion_entry(subkey, entry):
+    """Second-line promotion validation, independent of audit/coordinator state."""
+    card = entry.get('card') or {}
+    meta = entry.get('meta') or {}
+    try:
+        validate_final_card_schema.validate_card(card)
+    except ValueError as exc:
+        raise PromotionContractError('%s: final-card schema: %s' % (subkey, exc))
+
+    selected = meta.get('selected_keys')
+    if not isinstance(selected, list) or selected.count(subkey) != 1:
+        raise PromotionContractError(
+            '%s: selected_keys must contain this key exactly once' % subkey)
+    if len(selected) != len(set(selected)):
+        raise PromotionContractError('%s: execution selected_keys contains duplicates' % subkey)
+    hashes = (meta.get('input_hashes') or {}).get(subkey)
+    if not isinstance(hashes, dict):
+        raise PromotionContractError('%s: missing per-key input hashes' % subkey)
+    for name in ('raw_sha256', 'portrait_sha256'):
+        value = hashes.get(name)
+        if not isinstance(value, str) or not HEX64_RE.fullmatch(value.lower()):
+            raise PromotionContractError('%s: malformed %s' % (subkey, name))
+    for name in ('generator', 'schema_version', 'generated_at'):
+        if not isinstance(meta.get(name), str) or not meta[name].strip():
+            raise PromotionContractError('%s: missing provenance field meta.%s' % (subkey, name))
+
+    classes = meta.get('provenance_classes')
+    provenance_class = classes.get(subkey) if isinstance(classes, dict) else meta.get('provenance_class')
+    if provenance_class == 'synthetic_control' or SYNTHETIC_KEY_RE.search(subkey):
+        raise PromotionContractError('%s: synthetic controls are never promotable' % subkey)
+    if provenance_class not in (None, 'real'):
+        raise PromotionContractError('%s: unknown provenance_class %r'
+                                     % (subkey, provenance_class))
+
+    if meta.get('nominal'):
+        keymap = meta.get('nominal_keymap') or {}
+        mapped = keymap.get(subkey)
+        if mapped and card.get('key1') not in (mapped, subkey):
+            raise PromotionContractError(
+                '%s: nominal keymap/card mismatch (%r != %r)'
+                % (subkey, card.get('key1'), mapped))
+    elif not isinstance(meta.get('root'), str) or not meta['root']:
+        raise PromotionContractError('%s: root-backed result has no root' % subkey)
+
+
+def _atomic_write_rows(path, rows):
+    directory = os.path.dirname(os.path.abspath(path)) or '.'
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as fh:
+            for row in rows:
+                fh.write(json.dumps(row, ensure_ascii=False) + '\n')
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def _fsynced_backup(source, destination):
+    """Copy, never move, the live store so a later write failure leaves it in place."""
+    with open(source, 'rb') as src, open(destination, 'wb') as dst:
+        shutil.copyfileobj(src, dst, length=1024 * 1024)
+        dst.flush()
+        os.fsync(dst.fileno())
+
+
+def validate_store_target(path, init_store=False):
+    if not os.path.isfile(path) and not init_store:
+        raise PromotionContractError(
+            'canonical store is missing: %s. A missing/misresolved production store must not '
+            'disable merge, shrink, or backup guards; use --init-store only for a deliberate '
+            'first run.' % path)
+    if os.path.exists(path) and init_store:
+        raise PromotionContractError(
+            '--init-store is first-run only; store already exists: %s' % path)
+
+
+def merge_store_rows(existing_rows, promoted_rows):
+    """Replace exactly the promoted subcards; retain every unrelated row."""
+    promoted_subs = {row['subcard'] for row in promoted_rows}
+    kept = [row for row in existing_rows if row.get('subcard') not in promoted_subs]
+    return kept + promoted_rows
+
+
 def tn_residue(card, rec, sense):
     """Report every promoted field of this row that still holds a raw `{Tn}`.
 
@@ -224,6 +326,7 @@ def rows_for(subkey, entry, review_status, model_version):
                 'layer': layer,
                 'iast': card.get('iast'),
                 'h': rec.get('h'),
+                'grammar': rec.get('grammar'),
                 'sense_tag': sense.get('tag'),
                 'ru': ru,
                 'de': sense.get('german'),
@@ -241,9 +344,11 @@ def selftest():
     import tempfile
     meta = {'root': 'pA', 'safe_root': 'p_a', 'generator': 'gen_opt_harness2.batched-masked',
             'schema_version': 'v1', 'rootmap_sha256': 'abc', 'generated_at': '2026-06-29T00:00:00Z',
-            'input_hashes': {'p_a~~h5_00_pwg00': {'raw_sha256': 'r1', 'portrait_sha256': 'p1'}}}
-    entry = {'card': {'key1': 'p_a~~h5_00_pwg00', 'iast': 'pā', 'records': [
-        {'h': 'pā', 'senses': [
+            'selected_keys': ['p_a~~h5_00_pwg00'],
+            'input_hashes': {'p_a~~h5_00_pwg00': {
+                'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}}
+    entry = {'card': {'key1': 'p_a~~h5_00_pwg00', 'iast': 'pā', 'notes': '', 'records': [
+        {'h': 'pā', 'grammar': '', 'senses': [
             {'tag': '1', 'russian': 'пить', 'german': 'trinken', 'equivalence_type': 'equivalent',
              'source_type': 'attested', 'stratum': 'Vedic', 'differentia': ''},
             {'tag': '2', 'russian': '', 'german': 'x'},          # no russian -> skipped
@@ -261,13 +366,32 @@ def selftest():
     p = r['provenance']
     assert p['model'] == 'sonnet' and p['rootmap_sha256'] == 'abc'
     assert p['model_version'] == SELFTEST_MODEL_VERSION, 'model VERSION recorded, not just the tier alias'
-    assert p['input_raw_sha256'] == 'r1' and p['generated_at'], 'provenance must be complete'
+    assert p['input_raw_sha256'] == '1' * 64 and p['generated_at'], 'provenance must be complete'
+    validate_promotion_entry('p_a~~h5_00_pwg00', entry)
+    synthetic = {'card': entry['card'], 'wf_file': entry['wf_file'],
+                 'meta': dict(meta, provenance_classes={
+                     'p_a~~h5_00_pwg00': 'synthetic_control'})}
+    try:
+        validate_promotion_entry('p_a~~h5_00_pwg00', synthetic)
+    except PromotionContractError:
+        pass
+    else:
+        raise AssertionError('synthetic control passed promotion validation')
+    foreign = {'card': entry['card'], 'wf_file': entry['wf_file'],
+               'meta': dict(meta, selected_keys=['some_other_key'])}
+    try:
+        validate_promotion_entry('p_a~~h5_00_pwg00', foreign)
+    except PromotionContractError:
+        pass
+    else:
+        raise AssertionError('foreign key passed promotion validation')
     # NOMINAL mode: meta.root is a window LABEL; the row must key to the true SLP1 headword
     # recovered from nominal_keymap[stem], NOT to the label (regression guard, H179 drain).
     nmeta = {'root': 'pril10_w1', 'nominal': True, 'nominal_keymap': {'k_ala': 'kAla'},
              'input_hashes': {'k_ala': {'raw_sha256': 'r', 'portrait_sha256': 'p'}}}
-    ncard = {'key1': 'kAla', 'iast': 'kāla',
-             'records': [{'h': 'kāla', 'senses': [{'tag': '1', 'russian': 'время', 'german': 'Zeit'}]}]}
+    ncard = {'key1': 'kAla', 'iast': 'kāla', 'notes': '',
+             'records': [{'h': 'kāla', 'grammar': '',
+                          'senses': [{'tag': '1', 'russian': 'время', 'german': 'Zeit'}]}]}
     nrow = list(rows_for('k_ala', {'card': ncard, 'meta': nmeta, 'wf_file': 'wf_output.json'},
                          'ai_translated', SELFTEST_MODEL_VERSION))[0]
     assert nrow['key1'] == 'kAla', 'nominal card must key to true SLP1 headword, not the window label'
@@ -308,6 +432,46 @@ def selftest():
     assert explicit_glob_supplied(['--merge', '--glob', 'src/pilot/output/wf_output.w01.json'])
     assert explicit_glob_supplied(['--glob=src/pilot/output/wf_output.w01.json', '--merge'])
     assert not explicit_glob_supplied(['--merge'])
+    # Missing stores fail closed; explicit first-run init is accepted only while absent.
+    missing = os.path.join(d, 'missing-store.jsonl')
+    try:
+        validate_store_target(missing)
+    except PromotionContractError:
+        pass
+    else:
+        raise AssertionError('missing store passed without --init-store')
+    validate_store_target(missing, init_store=True)
+    with open(missing, 'w', encoding='utf-8') as f:
+        f.write('')
+    try:
+        validate_store_target(missing, init_store=True)
+    except PromotionContractError:
+        pass
+    else:
+        raise AssertionError('--init-store overwrote an existing store')
+    # Exact-subcard merge is idempotent; a second promotion replaces rather than duplicates.
+    old = [{'key1': 'x', 'subcard': 'x~~a'}, {'key1': 'y', 'subcard': 'y~~a'}]
+    new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new'}]
+    once = merge_store_rows(old, new)
+    twice = merge_store_rows(once, new)
+    assert once == twice and len(once) == 2
+    # Atomic failure leaves the old store intact and removes the temporary file.
+    atomic = os.path.join(d, 'atomic.jsonl')
+    with open(atomic, 'w', encoding='utf-8') as f:
+        f.write('old\n')
+    real_replace = os.replace
+    try:
+        os.replace = lambda _src, _dst: (_ for _ in ()).throw(OSError('synthetic crash'))
+        try:
+            _atomic_write_rows(atomic, new)
+        except OSError:
+            pass
+        else:
+            raise AssertionError('atomic replace failure was swallowed')
+    finally:
+        os.replace = real_replace
+    assert open(atomic, encoding='utf-8').read() == 'old\n'
+    assert not [n for n in os.listdir(d) if n.endswith('.tmp')]
     print('promote_final_cards selftest OK')
 
 
@@ -322,6 +486,8 @@ def main():
                     help='resolved model version recorded in provenance.model_version '
                          '(exact model id required; do not guess from the model alias)')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--init-store', action='store_true',
+                    help='explicitly initialize a missing store (first run only)')
     ap.add_argument('--no-backup', action='store_true')
     ap.add_argument('--force', action='store_true',
                     help='bypass the >50%%-shrink overwrite guard (only for a deliberate full rebuild)')
@@ -343,6 +509,10 @@ def main():
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
             '(normally src/pilot/output/wf_output.<window>.json)' % DEFAULT_GLOB)
+    try:
+        validate_store_target(args.store, args.init_store)
+    except PromotionContractError as exc:
+        sys.exit('REFUSED: %s' % exc)
 
     # Provenance: make the resolved store path explicit — a worktree run promotes into the MAIN
     # checkout's store (store_path.canonical_store), never a discarded worktree copy (H255 w06 / H805).
@@ -359,10 +529,17 @@ def main():
 
     rows, per_root = [], {}
     for subkey, entry in sorted(best.items()):
+        try:
+            validate_promotion_entry(subkey, entry)
+        except PromotionContractError as exc:
+            sys.exit('REFUSED: %s' % exc)
         n = 0
         for row in rows_for(subkey, entry, args.review_status, args.gen_model_version):
             rows.append(row)
             n += 1
+        if n == 0:
+            sys.exit('REFUSED: %s passed collection but yielded no promotable Russian rows'
+                     % subkey)
         root = entry['meta'].get('root')
         per_root.setdefault(root, {'cards': 0, 'rows': 0})
         per_root[root]['cards'] += 1
@@ -375,7 +552,8 @@ def main():
     print('distinct headwords      : %d' % len(per_root))
     print('null sub-cards skipped  : %d' % len(null_keys))
     if conflicts:
-        print('duplicate non-null keys : %d (kept first-seen)' % len(conflicts))
+        sys.exit('REFUSED: duplicate non-null workflow keys: %s'
+                 % ', '.join(sorted(set(conflicts))[:20]))
     thin = sorted(r for r, v in per_root.items() if v['cards'] <= 5)
     if thin:
         print('\n⚠ roots with <=5 promoted cards (likely a requeue-subset / partial file — the full')
@@ -405,21 +583,27 @@ def main():
             if args.merge and os.path.exists(args.store):
                 promoted_subs = {r['subcard'] for r in rows}
                 touched_roots = {r['key1'] for r in rows}
-                keep_rows = []
+                existing_rows = []
                 with open(args.store, encoding='utf-8') as f:
                     for line in f:
                         line = line.strip()
                         if not line:
                             continue
-                        e = json.loads(line)
-                        if e.get('subcard') not in promoted_subs:
-                            keep_rows.append(e)
-                kept = len(keep_rows)
+                        existing_rows.append(json.loads(line))
+                rows_to_write = merge_store_rows(existing_rows, rows)
+                kept = len(rows_to_write) - len(rows)
                 print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
                       % (len(promoted_subs), sorted(touched_roots), kept))
-                rows_to_write = keep_rows + rows
             else:
                 rows_to_write = rows
+
+            identities = [(r.get('key1'), r.get('subcard'), r.get('h'),
+                           r.get('sense_tag'), r.get('de')) for r in rows_to_write]
+            duplicates = [identity for identity, n in collections.Counter(identities).items()
+                          if n > 1]
+            if duplicates:
+                sys.exit('REFUSED: promotion would create %d duplicate sense identity/identities'
+                         % len(duplicates))
 
             # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current
             # size. A default (non-merge) run rebuilds the store from whatever wf_output files
@@ -445,16 +629,12 @@ def main():
                 stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
                 bak = args.store + ('.premerge.%s.bak' % stamp if args.merge
                                     else '.legacy.%s.bak' % stamp)
-                os.replace(args.store, bak)
+                _fsynced_backup(args.store, bak)
                 print('\nbacked up prior store -> %s' % os.path.basename(bak))
             # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write
             # can never leave the canonical store truncated (the store this project has lost
             # before). Matches the tmp+replace pattern in run_batch.apply_review.
-            tmp = args.store + '.tmp'
-            with open(tmp, 'w', encoding='utf-8') as f:
-                for row in rows_to_write:
-                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
-            os.replace(tmp, args.store)
+            _atomic_write_rows(args.store, rows_to_write)
             print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
                   % (args.store, len(rows_to_write), args.review_status))
             print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'

@@ -133,15 +133,12 @@ def main():
               f"pwg_ru_final_card.schema.json:")
         for v in violations[:20]:
             print(v)
-        if "--allow-schema-violations" not in flags:
-            # Refuse BEFORE the write: a gate that reports "REFUSED" after already saving the
-            # file is not a gate.
-            sys.exit(
-                f"REFUSED: {len(violations)} card(s) violate the final-card record contract, "
-                f"nothing written. These would land in the canonical store unreadable by any "
-                f"consumer grouping on (key1, h). Fix the generator, or pass "
-                f"--allow-schema-violations to record the exception deliberately.")
-        print("SCHEMA: proceeding under --allow-schema-violations (violations recorded above)")
+        # Refuse BEFORE the write: a gate that reports "REFUSED" after already saving the
+        # file is not a gate.  There is deliberately no production escape hatch.
+        sys.exit(
+            f"REFUSED: {len(violations)} card(s) violate the final-card record contract, "
+            f"nothing written. These would land in the canonical store unreadable by any "
+            f"consumer grouping on (key1, h). Fix the generator.")
     else:
         print(f"SCHEMA: {len(cards) - null_count} card(s) satisfy the record contract")
 

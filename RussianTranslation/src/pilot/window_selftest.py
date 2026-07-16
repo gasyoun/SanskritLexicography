@@ -4780,25 +4780,26 @@ def test_save_merge_better_attempt_wins():
         p = os.path.join(tmp, name)
         with open(p, 'w', encoding='utf-8') as f:
             json.dump(wf(card), f)
-        # `--allow-schema-violations`: this test's cards are deliberate STUBS carrying a
-        # `senses_marker` and nothing else -- it pins merge ORDERING (complete beats partial),
-        # not card content. Since C-04 armed the record contract on the live save path, a stub
-        # is correctly refused, so the exception is declared explicitly here rather than by
-        # relaxing the contract for everyone.
-        run([sys.executable, save, root, p, tag, '--no-audit', '--allow-schema-violations']
-            + list(extra), expect=0)
+        run([sys.executable, save, root, p, tag, '--no-audit'] + list(extra), expect=0)
+
+    def valid_card(marker, **extra):
+        card = {'key1': 'k1', 'iast': 'k1', 'notes': '', 'senses_marker': marker,
+                'records': [{'h': 'k1', 'grammar': '', 'senses': [
+                    {'tag': '1', 'german': 'Deutsch', 'russian': 'русский'}]}]}
+        card.update(extra)
+        return card
 
     try:
-        complete = {'key1': 'k1', 'senses_marker': 'first-complete'}
+        complete = valid_card('first-complete')
         save_run('a.json', complete)
-        worse = {'key1': 'k1', 'partial': True,
-                 'missing_fragments': ['g1:f0', 'g1:f1'], 'senses_marker': 'regression'}
+        worse = valid_card('regression', partial=True,
+                           missing_fragments=['g1:f0', 'g1:f1'])
         save_run('b.json', worse, '--merge')
         got = json.load(open(out_path, encoding='utf-8'))
         card = got['results'][0]['card']
         if card.get('partial') or card.get('senses_marker') != 'first-complete':
             fail('--merge let a partial attempt regress a complete card')
-        fresh = {'key1': 'k1', 'senses_marker': 'second-complete'}
+        fresh = valid_card('second-complete')
         save_run('c.json', fresh, '--merge')
         got = json.load(open(out_path, encoding='utf-8'))
         if got['results'][0]['card'].get('senses_marker') != 'second-complete':
@@ -5262,6 +5263,27 @@ def test_every_stitch_emits_record_required():
     if len(hw.stitch_records(senses, [('h', 'g')] * 3)) != 1:
         fail('one owner must yield exactly one record')
 
+    import autosplit_requeue as ar
+    split_records = ar._stitch_owned_senses(senses, owners)
+    if [(r['h'], r['grammar']) for r in split_records] != [
+            ('1. bhid', 'm.'), ('2. bhid', 'f.')]:
+        fail('autosplit stitch lost record owners: %r' % split_records)
+    topup_manifest = [{
+        'orig': 'bhid', 'iast': 'bhid', 'notes': '',
+        'owners_by_tag': {'1': ['1. bhid', 'm.'], '2': ['2. bhid', 'f.']},
+        'default_owner': ['1. bhid', 'm.'],
+        'plan': [
+            {'s': 0, 'p': 0, 'fsha': 'a', 'fk': 'old', 'missing': False},
+            {'s': 1, 'p': 0, 'fsha': 'b', 'fk': 'new', 'missing': True}],
+        'resolved': {'a': [{'tag': '1', 'german': 'g1', 'russian': 'r1'}]}}]
+    new_fragment = {'records': [{'h': '2. bhid', 'grammar': 'f.', 'senses': [
+        {'tag': '2', 'german': 'g2', 'russian': 'r2'}]}]}
+    rows, missing = ar.stitch_topup(topup_manifest, {'new': new_fragment}, 'russian')
+    recs = rows[0]['card']['records']
+    if missing or [(r['h'], r['grammar']) for r in recs] != [
+            ('1. bhid', 'm.'), ('2. bhid', 'f.')]:
+        fail('top-up stitch lost a record boundary/owner: %r %r' % (rows, missing))
+
 
 def test_unmapped_token_is_counted():
     """C-42: an out-of-range {Tn} is counted, not silently passed through.
@@ -5306,6 +5328,16 @@ def test_validator_has_a_live_caller():
     if 'validate_card(' not in text:
         fail('save_and_audit.py imports the validator but never calls validate_card()')
 
+    audit_path = os.path.join(SRC, 'pilot', 'audit_window.py')
+    audit_text = open(audit_path, encoding='utf-8').read()
+    if 'run_final_schema_gate' not in audit_text or 'validate_card(' not in audit_text:
+        fail('audit_window.py does not validate real workflow cards')
+
+    promote_path = os.path.join(SRC, 'promote_final_cards.py')
+    promote_text = open(promote_path, encoding='utf-8').read()
+    if 'validate_promotion_entry' not in promote_text or 'validate_card(' not in promote_text:
+        fail('promote_final_cards.py lacks independent final-schema validation')
+
     if SRC not in sys.path:
         sys.path.insert(0, SRC)
     import validate_final_card_schema as v
@@ -5321,6 +5353,19 @@ def test_validator_has_a_live_caller():
         pass
     else:
         fail('validate_card accepted a record with no h/grammar -- the C-02 shape')
+
+    import audit_window
+    good = {'key1': 'k', 'iast': 'k', 'notes': '', 'records': [{
+        'h': 'k', 'grammar': '', 'senses': [{
+            'tag': '1', 'german': 'g', 'russian': 'r',
+            'equivalence_type': 'equivalent', 'source_type': 'attested',
+            'stratum': '', 'differentia': ''}]}]}
+    ok_gate = audit_window.run_final_schema_gate([{'key': 'k', 'card': good}])
+    if ok_gate.get('returncode') != 0 or ok_gate.get('requeue'):
+        fail('audit final-schema gate rejected a valid card: %r' % ok_gate)
+    bad_gate = audit_window.run_final_schema_gate([{'key': 'k', 'card': bad}])
+    if bad_gate.get('returncode') != 1 or bad_gate.get('requeue') != ['k']:
+        fail('audit final-schema gate did not requeue an invalid live card: %r' % bad_gate)
 
 
 def main():
