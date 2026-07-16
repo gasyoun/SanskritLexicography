@@ -494,11 +494,13 @@ A concrete run, with real numbers, so the loop above isn't just abstract steps.
    `c4` is a roster slot, not evidence of billing identity. Later execution must repeat
    `--only-profile c4`; the orchestrator checks the slot and directory fingerprint against the
    sealed manifest. Old v1 manifests are historical-audit inputs only and cannot be promoted.
-3. **Run:** drive `run_pilot_wf.opt2.js` via the Workflow tool from the Claude Code
-   session (not a manual Max-surface save — see the H145 loss lesson above).
-   For the bounded CLI route, use its default dry-run first, then explicitly add `--execute
-   --only-profile c4`. All entry points share the global config-fingerprint call claim, so a
-   second c4 launch fails closed instead of spending concurrently.
+3. **Run:** the historical `vid` run drove `run_pilot_wf.opt2.js` via Workflow. Do not use that
+   route for a new profile-bound v2 attempt: Workflow cannot prove `CLAUDE_CONFIG_DIR` or join the
+   host-wide active-call claim, so a bound generated template now aborts before its first agent
+   call. Run the execution manifest through the CLI/headless route instead: use the bounded
+   command's default dry-run first, then explicitly add `--execute --only-profile c4`. Every
+   admitted production entry point holds the global config-fingerprint claim, so a second c4
+   launch fails closed instead of spending concurrently.
    Real result: **102 agents, 6,626,992 tokens, ~19 min wall-clock.**
 4. **Capture:** read the workflow task's `.result` from its output file (holds the
    full `{meta, summary, results}` payload uncapped) and write it to `wf_output.json`

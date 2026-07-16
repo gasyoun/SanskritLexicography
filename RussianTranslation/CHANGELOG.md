@@ -17,8 +17,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - **Profile and concurrency enforcement.** Coordinator prepare/requeue accepts the profile binding;
   orchestrator and bounded staged-run expose `--only-profile`, verify both roster slot and config
   fingerprint, and every headless manifest holds one cross-process active-call claim keyed by that
-  fingerprint. Two c4 manifests therefore cannot call concurrently even across launch entry points;
-  `max-wide=1` remains an independent within-manifest limit.
+  fingerprint. Two c4 manifests therefore cannot call concurrently across admitted production entry
+  points; `max-wide=1` remains an independent within-manifest limit. Because Workflow cannot prove
+  its config directory or join that host lock, profile-bound v2 production is CLI/headless-only and
+  a bound generated Workflow template aborts before its first agent call.
 - **Windows CLI and probe policy fail closed.** Bare `claude` is resolved with `shutil.which`; a
   Windows npm shim is invoked through its Node CLI entry or refused, never handed back unresolved.
   Probe telemetry names its policy and lane, requires a representative schema-valid response, zero

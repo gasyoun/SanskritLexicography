@@ -1333,6 +1333,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     bound = bool(profile_slot or config_dir)
     if bound and not (profile_slot and config_dir):
         raise ValueError('manifest v2 requires both profile_slot and config_dir')
+    if bound and (execution_route or 'claude-cli-headless') != 'claude-cli-headless':
+        raise ValueError('profile-bound manifest v2 production is CLI/headless-only')
     synthetic_keys = set(synthetic_keys or [])
     if synthetic_keys - set(keys):
         raise ValueError('synthetic keys are outside selected_keys')
@@ -2067,6 +2069,12 @@ async function boundedParallel(thunks, width, staggerMs) {
   }
   await Promise.all(workers)
   return results
+}
+// A Workflow session cannot prove which CLAUDE_CONFIG_DIR it billed or participate in
+// the host-wide active-call lock. A profile-bound v2 artifact is therefore executable
+// only through headless_worker.py; abort here before the first paid agent() call.
+if (META.execution_manifest_schema === 'pwg.headless_execution_manifest.v2') {
+  throw new Error('manifest-v2 production is CLI/headless-only; run the execution manifest')
 }
 // UNITS pairs each parallel slot with the exact keys it owes rows for, so the accounting
 // backfill below stays index-correct with the presplit lane appended after the batches.

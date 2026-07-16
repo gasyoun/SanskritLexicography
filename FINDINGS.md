@@ -2334,7 +2334,9 @@ fingerprint and takes one global active-call claim keyed by that fingerprint. V1
 history but is non-promotable; controls are explicitly typed and rejected by promotion. On Windows,
 an unresolved npm `.cmd` shim is a configuration failure, not a fallback. Probe GO is likewise a
 derived typed verdict: named production policy, representative schema success, zero connection
-errors, and latency strictly below 30 seconds.
+errors, and latency strictly below 30 seconds. A Workflow session cannot prove its config directory
+or participate in the host claim, so profile-bound v2 production is CLI/headless-only; a bound
+Workflow template must abort before its first agent call rather than mislabel its billing route.
 
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),

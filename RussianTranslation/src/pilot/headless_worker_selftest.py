@@ -139,11 +139,29 @@ def main():
             js, batches, built = generator.build(
                 'fixture', ['agni'], None, 12000, nominal=True, grammar_on=False,
                 tm_path=None, suggest_tm_path=None, return_manifest=True)
+            js_v2, _batches_v2, built_v2 = generator.build(
+                'fixture', ['agni'], None, 12000, nominal=True, grammar_on=False,
+                tm_path=None, suggest_tm_path=None, return_manifest=True,
+                profile_slot='c4', config_dir=td,
+                execution_route='claude-cli-headless')
+            try:
+                generator.build(
+                    'fixture', ['agni'], None, 12000, nominal=True, grammar_on=False,
+                    tm_path=None, suggest_tm_path=None, return_manifest=True,
+                    profile_slot='c4', config_dir=td,
+                    execution_route='claude-workflow')
+            except ValueError:
+                pass
+            else:
+                raise AssertionError('profile-bound Workflow route was admitted')
         finally:
             generator.input_paths = original
         assert built['schema'] == 'pwg.headless_execution_manifest.v1'
         assert built['batches'] == batches and built['model'] == 'claude-sonnet-5'
         assert json.dumps(built['inputs'], ensure_ascii=True) in js
+        assert built_v2['schema'] == 'pwg.headless_execution_manifest.v2'
+        assert built_v2['meta']['execution_manifest_schema'] == built_v2['schema']
+        assert "manifest-v2 production is CLI/headless-only" in js_v2
         start = js.index('function restoreCard(card, k)')
         end = js.index('// Per-card grammar', start)
         restore_card_js = js[start:end]
