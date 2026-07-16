@@ -1,50 +1,16 @@
 #!/usr/bin/env python
-r"""Offline re-derivation of the `{Tn}` placeholders leaked into the canonical store (C-01).
+r"""Repair the H1080 PWG->Russian store corruption without model calls.
 
-WHAT HAPPENED
--------------
-`restore_card` unmasked three fields while `promote_final_cards.rows_for` read six, so
-`card.iast` / `record.h` / `sense.tag` / `sense.differentia` were promoted with their mask
-placeholders intact. Measured against the 11,605-row store: **670 rows** carry a raw `{Tn}`
-(`sense_tag` 376, `h` 223, `differentia` 72, `ru` 2, `de` 2) -- including 223 rows whose
-HEADWORD field reads literally `{T104}`. The generator side is fixed (see `card_fields.py`);
-this repairs the rows already written.
+The repair is dry-run by default.  It restores raw ``{Tn}`` placeholders from an exact
+content-addressed raw source or from the exact ``PH`` map embedded in a historical generated
+harness.  A historical harness is accepted only when its ``META.input_hashes`` binds the key
+to the SHA-256 recorded on the store row.  It also reconstructs record ``h``/``iast`` from
+immutable card identity for rows whose stitch discarded the record owner.
 
-WHY IT IS RECOVERABLE AT ALL
-----------------------------
-Masking is deterministic and the source is content-addressed: every store row records
-`provenance.input_raw_sha256`, the SHA-256 of the exact `.raw.txt` it was generated from.
-`pwg_mask.mask(raw)` re-derives the identical placeholder list `ph`, and `{Tn}` indexes `ph`
-1-based. So the true value is `pwg_mask.restore(field, ph)` -- not a guess, a re-computation.
-
-The source is located BY CONTENT ADDRESS, never by filename: `translation_memory.py` is
-explicit that the address survives key renames, and it matters here -- `_ap~~h0_00_pwg01`
-has no file of that name any more, yet 596 rows still resolve. Two independent guards run
-before any row is touched: the recorded SHA must match a real file, and `mask/restore` must
-round-trip that file byte-for-byte (the same invariant `gen_opt_harness2.py:950` asserts).
-
-WHAT IT CANNOT DO -- MEASURED, NOT ASSUMED
-------------------------------------------
-* **74 of the 670 rows are NOT recoverable.** Their recorded `input_raw_sha256` addresses no
-  file on disk: the source drifted after translation, so no map can be re-derived. The packet
-  anticipated exactly this ("rows whose source drifted need re-translation, not
-  re-derivation"). They are reported, never guessed at. This includes the 2 C-42 rows
-  (`ban_d~~h0_11_ni`, `ban_d~~h0_21_upasam_0`), whose `{Tn}` is out-of-range by construction.
-* **The 468 `h is None` rows are out of scope and CANNOT be repaired by any offline means.**
-  That value was destroyed at the stitch, before it was ever persisted -- it is not in the
-  store, not in `wf_output` (already null there), not in the portraits (they carry no `h`),
-  and not in the TM (which is built FROM the store). `h` is free lexicographic text, not a
-  function of the key, so it cannot be synthesised. They need re-translation.
-
-USAGE
------
-    python src/backfill_tn_residue.py                 # dry run: report only, writes nothing
-    python src/backfill_tn_residue.py --apply         # rewrite the store (atomic, with .bak)
-    python src/backfill_tn_residue.py --json out.json # machine-readable per-row plan
-
-Dry run is the default and is READ-ONLY. `--apply` writes via tmp + `os.replace` and keeps a
-timestamped `.premerge.<stamp>.bak`, mirroring `promote_final_cards.py`'s existing convention
-rather than inventing a second one.
+Only the two measured C-42 ``banD`` rows are quarantined.  Any other unresolved token, hash
+drift, unexpected quarantine candidate, row-multiset drift, or source-store drift fails the
+repair closed.  ``--apply`` requires ``--expected-sha256`` and uses fsynced same-directory
+temporary files plus ``os.replace``.  The original store is retained as a hash-named backup.
 """
 import argparse
 import collections
@@ -54,214 +20,435 @@ import json
 import os
 import re
 import sys
+import tempfile
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-if HERE not in sys.path:
-    sys.path.insert(0, HERE)
-import pwg_mask
+PILOT = os.path.join(HERE, 'pilot')
+for path in (HERE, PILOT):
+    if path not in sys.path:
+        sys.path.insert(0, path)
+
 import card_fields
+import corpus_gate as cg
+import pwg_mask
+from safe_filename import decode_safe_name
 from store_path import canonical_store
 
-TN_RE = re.compile(r'\{T\d+\}')
+TN_RE = re.compile(r'\{T(\d+)\}')
+ROOT_CARD_RE = re.compile(r'^.+~~h\d+_\d+_(.+)$')
 LOCAL_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+QUARANTINE_SUBCARDS = {
+    'ban_d~~h0_11_ni',
+    'ban_d~~h0_21_upasam_0',
+}
 
-
-def default_input_dir(store_path):
-    """Resolve `pilot/input` ALONGSIDE the store being repaired, not beside this script.
-
-    Both the store and the `*.raw.txt` sources are gitignored, so they exist only in the MAIN
-    checkout: a linked worktree has the code but 0 of the 110,374 raw files. Defaulting to
-    `dirname(__file__)/pilot/input` therefore reads an EMPTY directory while
-    `canonical_store()` correctly resolves the store back to the main checkout -- every row
-    then reports "source gone" and the tool concludes, with total confidence, that nothing is
-    recoverable. That is C-19's defect class exactly ("--data-root defaults to its own
-    checkout ... a worktree run swaps the denominator"), and this tool reproduced it on its
-    first run. Deriving the path from the resolved store keeps the two halves in one place.
-    """
-    return os.path.join(os.path.dirname(os.path.abspath(store_path)), 'pilot', 'input')
-
-# The fields a store ROW carries, mapped to the card level they were promoted from. Derived
-# from card_fields so this tool cannot drift from the restore/promote sides.
-ROW_FIELDS = tuple(name for _level, name in card_fields.promoted_pairs('russian'))
-# `rows_for` renames two of them on the way into the store.
 ROW_ALIAS = {'tag': 'sense_tag', 'russian': 'ru', 'german': 'de'}
-STORE_FIELDS = tuple(ROW_ALIAS.get(n, n) for n in ROW_FIELDS)
+STORE_FIELDS = tuple(ROW_ALIAS.get(name, name)
+                     for _level, name in card_fields.promoted_pairs('russian'))
+
+
+class RepairRefusal(RuntimeError):
+    """The repair contract could not be proved; no production replacement is allowed."""
+
+
+def sha256_bytes(data):
+    return hashlib.sha256(data).hexdigest()
 
 
 def sha256_file(path):
     h = hashlib.sha256()
     with open(path, 'rb') as fh:
-        for chunk in iter(lambda: fh.read(65536), b''):
+        for chunk in iter(lambda: fh.read(1024 * 1024), b''):
             h.update(chunk)
     return h.hexdigest()
 
 
-def build_address_index(input_dir):
-    """sha256(raw bytes) -> path, over every `*.raw.txt`. The address IS the content."""
-    index = {}
-    for name in os.listdir(input_dir):
-        if name.endswith('.raw.txt'):
-            path = os.path.join(input_dir, name)
-            index.setdefault(sha256_file(path), path)
-    return index
+def default_input_dir(store_path):
+    return os.path.join(os.path.dirname(os.path.abspath(store_path)), 'pilot', 'input')
 
 
-def plan(store_path, input_dir):
-    """Return (rows, plan_entries, stats). Reads only."""
-    index = build_address_index(input_dir)
-    ph_cache = {}
-    rows, entries = [], []
-    stats = collections.Counter()
+def default_recovery_dir(store_path):
+    return os.path.join(os.path.dirname(os.path.abspath(store_path)), 'pilot', 'output',
+                        'h1080_recovery_sources')
 
-    with open(store_path, encoding='utf-8') as fh:
+
+def default_harness_dir(store_path):
+    # Both the frozen legacy archive and later coordinator attempt directories are ignored
+    # runtime evidence under this root.  The per-key META hash, not the directory name, is
+    # the authority.
+    return os.path.join(os.path.dirname(os.path.abspath(store_path)), 'pilot')
+
+
+def read_rows(path):
+    rows = []
+    with open(path, encoding='utf-8') as fh:
         for lineno, line in enumerate(fh, 1):
-            line = line.rstrip('\n')
             if not line.strip():
                 continue
-            row = json.loads(line)
-            rows.append(row)
-            hit = [f for f in STORE_FIELDS
-                   if isinstance(row.get(f), str) and TN_RE.search(row[f])]
-            if not hit:
-                continue
-            stats['corrupt_rows'] += 1
-            sha = (row.get('provenance') or {}).get('input_raw_sha256')
-            subcard = row.get('subcard')
-            if not sha:
-                entries.append({'line': lineno, 'subcard': subcard, 'status': 'no_sha',
-                                'reason': 'row records no provenance.input_raw_sha256'})
-                stats['no_sha'] += 1
-                continue
-            if sha not in index:
-                entries.append({'line': lineno, 'subcard': subcard, 'status': 'source_gone',
-                                'reason': 'no raw source at content address %s' % sha[:12]})
-                stats['source_gone'] += 1
-                continue
-            if sha not in ph_cache:
-                raw = open(index[sha], encoding='utf-8').read()
-                skel, ph, _ = pwg_mask.mask(raw)
-                ph_cache[sha] = ph if pwg_mask.restore(skel, ph) == raw else None
-            ph = ph_cache[sha]
-            if ph is None:
-                entries.append({'line': lineno, 'subcard': subcard, 'status': 'roundtrip_fail',
-                               'reason': 'mask/restore does not round-trip this source'})
-                stats['roundtrip_fail'] += 1
-                continue
-            bad = [t for f in hit for t in TN_RE.findall(row[f])
-                   if not (1 <= int(t[2:-1]) <= len(ph))]
-            if bad:
-                entries.append({'line': lineno, 'subcard': subcard, 'status': 'out_of_range',
-                                'reason': 'index past the map (%s); map has %d (C-42)'
-                                          % (', '.join(sorted(set(bad))), len(ph))})
-                stats['out_of_range'] += 1
-                continue
-            fixes = {f: pwg_mask.restore(row[f], ph) for f in hit}
-            entries.append({'line': lineno, 'subcard': subcard, 'status': 'recoverable',
-                            'source': os.path.basename(index[sha]),
-                            'fields': {f: {'before': row[f], 'after': v}
-                                       for f, v in fixes.items()}})
-            stats['recoverable'] += 1
-    return rows, entries, stats
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError as exc:
+                raise RepairRefusal('malformed store JSON at line %d: %s' % (lineno, exc))
+    return rows
 
 
-def apply_plan(store_path, rows, entries):
-    """Rewrite the store atomically, keeping a timestamped backup. Only called for --apply."""
-    by_line = {e['line']: e for e in entries if e['status'] == 'recoverable'}
-    changed = 0
-    for i, row in enumerate(rows, 1):
-        entry = by_line.get(i)
-        if not entry:
+def row_sha(row):
+    data = json.dumps(row, ensure_ascii=False, sort_keys=True,
+                      separators=(',', ':')).encode('utf-8')
+    return sha256_bytes(data)
+
+
+def row_address(row):
+    return (row.get('provenance') or {}).get('input_raw_sha256')
+
+
+def affected_fields(row):
+    return [field for field in STORE_FIELDS
+            if isinstance(row.get(field), str) and TN_RE.search(row[field])]
+
+
+def raw_maps(source_dirs, wanted):
+    """Return ``(key, sha) -> (ph, evidence)`` for exact named raw sources only.
+
+    H1080 has 86 affected cards and their key is retained on every row.  Looking up those
+    exact names is both faster and safer than hashing 110k unrelated inputs.  Renamed legacy
+    inputs are recovered from their generated harness instead.
+    """
+    found = {}
+    for key, sha in wanted:
+        if not key or not sha:
             continue
-        for field, delta in entry['fields'].items():
-            row[field] = delta['after']
-        changed += 1
+        for directory in source_dirs:
+            path = os.path.join(directory, key + '.raw.txt')
+            if not os.path.isfile(path) or sha256_file(path) != sha:
+                continue
+            with open(path, encoding='utf-8') as fh:
+                raw = fh.read()
+            skeleton, ph, _stats = pwg_mask.mask(raw)
+            if pwg_mask.restore(skeleton, ph) != raw:
+                raise RepairRefusal('mask round-trip failed for %s' % path)
+            found[(key, sha)] = (ph, {
+                'kind': 'exact_raw', 'path': os.path.abspath(path), 'sha256': sha,
+            })
+            break
+    return found
 
+
+def _json_constant(line, name):
+    prefix = 'const %s = ' % name
+    if not line.startswith(prefix):
+        return None
+    value = line[len(prefix):].rstrip('\r\n')
+    if value.endswith(';'):
+        value = value[:-1]
+    return json.loads(value)
+
+
+def harness_maps(harness_dirs, wanted):
+    """Index exact PH maps bound by generated-harness ``META.input_hashes``."""
+    wanted = set(wanted)
+    found = {}
+    for directory in harness_dirs:
+        if not os.path.isdir(directory):
+            continue
+        for root, _dirs, names in os.walk(directory):
+            for name in names:
+                if not name.endswith('.js'):
+                    continue
+                path = os.path.join(root, name)
+                phmaps = meta = None
+                try:
+                    with open(path, encoding='utf-8') as fh:
+                        for line in fh:
+                            if line.startswith('const PH = '):
+                                phmaps = _json_constant(line, 'PH')
+                            elif line.startswith('const META = '):
+                                meta = _json_constant(line, 'META')
+                except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+                    continue
+                if not isinstance(phmaps, dict) or not isinstance(meta, dict):
+                    continue
+                input_hashes = meta.get('input_hashes') or {}
+                for key, hashes in input_hashes.items():
+                    sha = (hashes or {}).get('raw_sha256')
+                    address = (key, sha)
+                    if address not in wanted or key not in phmaps:
+                        continue
+                    evidence = {
+                        'kind': 'generated_harness_phmap',
+                        'path': os.path.abspath(path),
+                        'sha256': sha256_file(path),
+                        'input_raw_sha256': sha,
+                        'generated_at': meta.get('generated_at'),
+                    }
+                    prior = found.get(address)
+                    candidate = (phmaps[key], evidence)
+                    if prior and prior[0] != candidate[0]:
+                        raise RepairRefusal('conflicting historical PH maps for %s @ %s'
+                                            % address)
+                    found[address] = candidate
+    return found
+
+
+def restore_text(value, ph, where):
+    unresolved = []
+
+    def repl(match):
+        index = int(match.group(1))
+        if not 1 <= index <= len(ph):
+            unresolved.append(match.group(0))
+            return match.group(0)
+        return ph[index - 1]
+
+    restored = TN_RE.sub(repl, value)
+    if unresolved or TN_RE.search(restored):
+        raise RepairRefusal('%s has unresolved/out-of-range token(s): %s (map has %d)'
+                            % (where, ', '.join(sorted(set(unresolved))), len(ph)))
+    return restored
+
+
+def slp1_iast(value):
+    return ''.join(cg._S2I.get(ch, ch) for ch in cg.form_key(value or ''))
+
+
+def canonical_record_head(row):
+    """Reconstruct a stable display head from immutable row/subcard identity.
+
+    Existing row ``iast`` is authoritative for nominal/no-PWG cards.  For root cards, the
+    suffix encodes the upasarga; head/secondary/supplement lanes deliberately fall back to
+    the root.  This avoids reusing another model-authored row as repair evidence.
+    """
+    current = row.get('iast')
+    if isinstance(current, str) and current.strip():
+        return current.strip()
+    root = row.get('key1') or ''
+    root_iast = slp1_iast(root)
+    subcard = row.get('subcard') or ''
+    match = ROOT_CARD_RE.match(subcard)
+    if not match:
+        return root_iast
+    suffix = match.group(1)
+    if (suffix.startswith(('pwg', 'sec_', 'zz_')) or suffix == 'head'):
+        return root_iast
+    suffix = re.sub(r'_(?:0|1)$', '', suffix)
+    try:
+        prefix = decode_safe_name(suffix)
+    except (TypeError, ValueError):
+        prefix = ''
+    if not prefix or prefix.startswith(('pwg', 'sec', 'zz')):
+        return root_iast
+    return slp1_iast(prefix + root)
+
+
+def plan_repair(store_path, source_dirs, harness_dirs):
+    rows = read_rows(store_path)
+    original_multiset = collections.Counter((r.get('key1'), r.get('subcard')) for r in rows)
+    corrupt = [r for r in rows if affected_fields(r)]
+    already_clean = not corrupt and not any(r.get('h') is None for r in rows)
+    wanted = {(r.get('subcard'), row_address(r)) for r in corrupt}
+    maps = raw_maps(source_dirs, wanted)
+    for address, value in harness_maps(harness_dirs, wanted).items():
+        maps.setdefault(address, value)
+
+    repaired = []
+    quarantine = []
+    entries = []
+    source_evidence = {}
+    stats = collections.Counter()
+
+    for lineno, original in enumerate(rows, 1):
+        row = json.loads(json.dumps(original, ensure_ascii=False))
+        fields = affected_fields(row)
+        address = (row.get('subcard'), row_address(row))
+        if fields:
+            stats['placeholder_rows'] += 1
+            source = maps.get(address)
+            if source is None:
+                raise RepairRefusal('no exact raw/PH-map provenance for line %d %s @ %s'
+                                    % (lineno, address[0], address[1]))
+            ph, evidence = source
+            try:
+                fixes = {field: restore_text(row[field], ph, '%s.%s' % (address[0], field))
+                         for field in fields}
+            except RepairRefusal as exc:
+                if address[0] not in QUARANTINE_SUBCARDS:
+                    raise
+                quarantine.append({
+                    'schema': 'pwg_ru.store_quarantine.v1',
+                    'key': row.get('key1'),
+                    'subcard': address[0],
+                    'reason': str(exc),
+                    'original_row_sha256': row_sha(original),
+                    'input_raw_sha256': address[1],
+                    'row': original,
+                })
+                stats['quarantined_rows'] += 1
+                entries.append({'line': lineno, 'subcard': address[0], 'status': 'quarantine'})
+                continue
+            if address[0] in QUARANTINE_SUBCARDS:
+                raise RepairRefusal('expected measured C-42 quarantine row unexpectedly became '
+                                    'restorable: %s' % address[0])
+            row.update(fixes)
+            stats['placeholder_repaired'] += 1
+            source_evidence[evidence['path']] = evidence
+            entries.append({'line': lineno, 'subcard': address[0], 'status': 'token_repaired',
+                            'fields': sorted(fixes), 'evidence': evidence})
+
+        if row.get('h') is None:
+            head = canonical_record_head(row)
+            if not head:
+                raise RepairRefusal('cannot reconstruct record h at line %d (%s)'
+                                    % (lineno, row.get('subcard')))
+            row['h'] = head
+            if row.get('iast') is None:
+                row['iast'] = head
+            if row.get('grammar') is None:
+                row['grammar'] = ''
+            stats['null_headword_repaired'] += 1
+            entries.append({'line': lineno, 'subcard': row.get('subcard'),
+                            'status': 'record_owner_repaired', 'h': head})
+        repaired.append(row)
+
+    if not already_clean and set(q['subcard'] for q in quarantine) != QUARANTINE_SUBCARDS:
+        raise RepairRefusal('quarantine set drift: expected %s, got %s'
+                            % (sorted(QUARANTINE_SUBCARDS),
+                               sorted(q['subcard'] for q in quarantine)))
+    if any(affected_fields(row) for row in repaired):
+        raise RepairRefusal('post-repair store still contains raw {Tn}')
+    if any(row.get('h') is None for row in repaired):
+        raise RepairRefusal('post-repair store still contains h == null')
+
+    expected_multiset = original_multiset.copy()
+    for q in quarantine:
+        key = (q['row'].get('key1'), q['subcard'])
+        expected_multiset[key] -= 1
+        if expected_multiset[key] == 0:
+            del expected_multiset[key]
+    repaired_multiset = collections.Counter((r.get('key1'), r.get('subcard')) for r in repaired)
+    if repaired_multiset != expected_multiset:
+        raise RepairRefusal('key/subcard multiplicity changed outside the quarantine delta')
+
+    stats['input_rows'] = len(rows)
+    stats['output_rows'] = len(repaired)
+    if already_clean:
+        stats['already_clean'] = 1
+    return {
+        'schema': 'pwg_ru.store_repair_plan.v1',
+        'store': os.path.abspath(store_path),
+        'store_before_sha256': sha256_file(store_path),
+        'stats': dict(stats),
+        'entries': entries,
+        'source_evidence': sorted(source_evidence.values(), key=lambda x: x['path']),
+        'quarantine': quarantine,
+    }, repaired
+
+
+def jsonl_bytes(rows):
+    return ''.join(json.dumps(row, ensure_ascii=False, separators=(',', ':')) + '\n'
+                   for row in rows).encode('utf-8')
+
+
+def atomic_write_bytes(path, data):
+    directory = os.path.dirname(os.path.abspath(path)) or '.'
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'wb') as fh:
+            fh.write(data)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def apply_repair(store_path, repaired, quarantine, expected_sha, quarantine_path):
+    actual = sha256_file(store_path)
+    if actual.lower() != expected_sha.lower():
+        raise RepairRefusal('source-hash drift: expected %s, got %s' % (expected_sha, actual))
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-    backup = '%s.premerge.%s.bak' % (store_path, stamp)
-    with open(store_path, 'rb') as src, open(backup, 'wb') as dst:
-        dst.write(src.read())
-    tmp = store_path + '.tmp'
-    with open(tmp, 'w', encoding='utf-8', newline='\n') as fh:
-        for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + '\n')
-    os.replace(tmp, store_path)
-    return changed, backup
+    backup = '%s.pre-h1080.%s.%s.bak' % (store_path, actual[:16], stamp)
+    with open(store_path, 'rb') as fh:
+        original = fh.read()
+    atomic_write_bytes(backup, original)
+    atomic_write_bytes(quarantine_path, jsonl_bytes(quarantine))
+    atomic_write_bytes(store_path, jsonl_bytes(repaired))
+    return backup, sha256_file(store_path), sha256_file(quarantine_path)
 
 
-def main():
+def write_report(path, report):
+    atomic_write_bytes(path, (json.dumps(report, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
+
+
+def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--store', default=None, help='store path (default: canonical_store())')
-    ap.add_argument('--input-dir', default=None,
-                    help='raw sources (default: pilot/input beside the RESOLVED store)')
-    ap.add_argument('--apply', action='store_true',
-                    help='rewrite the store (default is a read-only dry run)')
-    ap.add_argument('--json', dest='json_out', default=None, help='write the plan as JSON')
-    args = ap.parse_args()
+    ap.add_argument('--source-dir', action='append', default=[],
+                    help='exact raw source directory (repeatable)')
+    ap.add_argument('--harness-dir', action='append', default=[],
+                    help='historical generated-harness directory (repeatable)')
+    ap.add_argument('--apply', action='store_true', help='atomically replace the store')
+    ap.add_argument('--expected-sha256', default=None,
+                    help='required source-store lock for --apply')
+    ap.add_argument('--quarantine-out', default=None,
+                    help='uncommitted quarantine JSONL path')
+    ap.add_argument('--report', default=None, help='write machine-readable plan/result JSON')
+    args = ap.parse_args(argv)
 
     store_path = args.store or canonical_store(LOCAL_STORE)
-    input_dir = args.input_dir or default_input_dir(store_path)
-    if not os.path.isdir(input_dir):
-        sys.exit('REFUSED: source dir does not exist: %s' % input_dir)
-    n_raw = sum(1 for n in os.listdir(input_dir) if n.endswith('.raw.txt'))
-    if not n_raw:
-        # Fail loud rather than reporting a confident, wrong "nothing is recoverable".
-        sys.exit('REFUSED: %s holds no *.raw.txt. Refusing to report every row as '
-                 'unrecoverable off an empty source dir (C-19 class).' % input_dir)
-    args.input_dir = input_dir
-    print('store      : %s' % store_path)
-    print('sources    : %s (%d raw files)' % (input_dir, n_raw))
-    print('mode       : %s' % ('APPLY' if args.apply else 'dry run (read-only)'))
-    print()
-
-    rows, entries, stats = plan(store_path, args.input_dir)
-    print('store rows            : %d' % len(rows))
-    print('rows carrying a {Tn}  : %d' % stats['corrupt_rows'])
-    print('  recoverable offline : %d' % stats['recoverable'])
-    print('  source gone         : %d' % stats['source_gone'])
-    print('  out of range (C-42) : %d' % stats['out_of_range'])
-    print('  no sha recorded     : %d' % stats['no_sha'])
-    print('  round-trip failed   : %d' % stats['roundtrip_fail'])
-    print()
-
-    unrec = [e for e in entries if e['status'] != 'recoverable']
-    if unrec:
-        print('NOT RECOVERABLE -- these need RE-TRANSLATION, never a guess:')
-        for sub, group in sorted(collections.Counter(e['subcard'] for e in unrec).items()):
-            reason = next(e['reason'] for e in unrec if e['subcard'] == sub)
-            print('  %-34s %d row(s)  %s' % (sub, group, reason))
-        print()
-
-    sample = [e for e in entries if e['status'] == 'recoverable'][:3]
-    if sample:
-        print('SAMPLE of the re-derivation:')
-        for e in sample:
-            for f, d in e['fields'].items():
-                print('  line %-6d %s.%s' % (e['line'], e['subcard'], f))
-                print('    before: %r' % d['before'][:70])
-                print('    after : %r' % d['after'][:70])
-        print()
-
-    if args.json_out:
-        with open(args.json_out, 'w', encoding='utf-8') as fh:
-            json.dump({'store': store_path, 'stats': dict(stats), 'entries': entries},
-                      fh, ensure_ascii=False, indent=2)
-        print('plan written: %s' % args.json_out)
+    if not os.path.isfile(store_path):
+        raise RepairRefusal('canonical store does not exist: %s' % store_path)
+    source_dirs = args.source_dir or [default_input_dir(store_path),
+                                      default_recovery_dir(store_path)]
+    harness_dirs = args.harness_dir or [default_harness_dir(store_path)]
+    plan, repaired = plan_repair(store_path, source_dirs, harness_dirs)
+    plan['source_dirs'] = [os.path.abspath(p) for p in source_dirs]
+    plan['harness_dirs'] = [os.path.abspath(p) for p in harness_dirs]
+    plan['mode'] = 'apply' if args.apply else 'dry_run'
 
     if not args.apply:
-        print('DRY RUN -- nothing written. Re-run with --apply to rewrite the store.')
+        if args.report:
+            write_report(args.report, plan)
+        print(json.dumps(plan['stats'], ensure_ascii=False, sort_keys=True))
+        print('DRY RUN -- no store, backup, or quarantine file written')
         return 0
-
-    changed, backup = apply_plan(store_path, rows, entries)
-    print('APPLIED: %d row(s) re-derived' % changed)
-    print('backup : %s' % backup)
-    residue = sum(1 for r in rows for f in STORE_FIELDS
-                  if isinstance(r.get(f), str) and TN_RE.search(r[f]))
-    print('remaining {Tn} rows: %d (the unrecoverable set above)' % residue)
+    if not args.expected_sha256:
+        raise RepairRefusal('--apply requires --expected-sha256')
+    if sha256_file(store_path).lower() != args.expected_sha256.lower():
+        raise RepairRefusal('source-hash drift: expected %s, got %s'
+                            % (args.expected_sha256, sha256_file(store_path)))
+    if plan['stats'].get('already_clean'):
+        if args.report:
+            write_report(args.report, plan)
+        print(json.dumps(plan['stats'], ensure_ascii=False, sort_keys=True))
+        print('NO-OP: store already satisfies the H1080 repair invariants')
+        return 0
+    quarantine_path = args.quarantine_out or store_path + '.h1080_quarantine.jsonl'
+    backup, after_sha, quarantine_sha = apply_repair(
+        store_path, repaired, plan['quarantine'], args.expected_sha256, quarantine_path)
+    plan.update({
+        'store_after_sha256': after_sha,
+        'backup_path': os.path.abspath(backup),
+        'backup_sha256': sha256_file(backup),
+        'quarantine_path': os.path.abspath(quarantine_path),
+        'quarantine_sha256': quarantine_sha,
+    })
+    if args.report:
+        write_report(args.report, plan)
+    print(json.dumps(plan['stats'], ensure_ascii=False, sort_keys=True))
+    print('APPLIED: %s -> %s' % (plan['store_before_sha256'], after_sha))
     return 0
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except RepairRefusal as exc:
+        sys.exit('REFUSED: %s' % exc)
