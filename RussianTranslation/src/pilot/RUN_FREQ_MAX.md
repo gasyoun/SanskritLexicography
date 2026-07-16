@@ -502,7 +502,12 @@ A concrete run, with real numbers, so the loop above isn't just abstract steps.
    two rounds recovered most residuals, a stubborn few needed a manual resolution).
 8. **Promote + rebuild TM:** `promote_final_cards.py --gen-model-version claude-sonnet-5`,
    then `translation_memory.py build --lang ru` (+ `build-frags` if any heal emitted
-   `frag_prov`).
+   `frag_prov`). Promotion requires the canonical store to exist: a missing or misresolved path is
+   a hard refusal so backup/shrink/merge guards cannot be bypassed. `--init-store` is reserved for
+   an explicit first-ever initialization and itself refuses an existing store. Never use it to
+   recover a missing production path. Every candidate is revalidated for final-card schema,
+   exact manifest-key membership, real (non-synthetic) provenance, and unresolved `{Tn}` tokens
+   immediately before the atomic store replacement.
 9. **Close out the launch ledger:** if the run had nulls, retries, kills, stale-artifact
    refusals, or cost drift, update `LAUNCH_FUCKUPS.md` and run
    `python src\pilot\check_launch_ledger.py --handoff H151` (or the active handoff ID).

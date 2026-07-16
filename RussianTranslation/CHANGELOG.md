@@ -34,6 +34,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ### Fixed — H1080 / H963 packet Step 2 (C-01, C-02, C-42, C-04)
 
+- **Canonical store repaired and sealed.** A hash-locked dry run and atomic replacement repaired
+  668 placeholder rows and 468 null record owners, quarantined only the two irrecoverable `banD`
+  rows, and produced a clean 11,603-row store (zero raw `{Tn}`, zero null `h`). The original
+  11,605-row store and the two quarantine payloads remain uncommitted but hash-addressed; the
+  tracked `pwg_ru/h1080/` report records before/after, backup, quarantine, and one-time TM hashes.
+  A second repair invocation is a verified no-op.
+- **Promotion now fails closed independently.** `save_and_audit`, `audit_window`, autosplit/top-up,
+  and `promote_final_cards` preserve and validate record `h`/`grammar` plus homonym boundaries.
+  Promotion refuses invalid final schema, unresolved tokens, malformed or foreign provenance,
+  synthetic controls, duplicate results, and a missing store unless the operator explicitly uses
+  first-run-only `--init-store`. Backups are copied/fsynced and replacement is atomic.
+
 - **One field set for restore and promote ([`src/card_fields.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/card_fields.py), C-01).**
   `restore_card` and its JS twin unmasked 3 fields while `promote_final_cards.rows_for` read
   6, so `card.iast` / `record.h` / `sense.tag` / `sense.differentia` were promoted with their
