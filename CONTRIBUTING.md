@@ -55,6 +55,13 @@ Conventions to keep when touching data:
   [CI](.github/workflows/ci.yml) enforce this.
 - Don't commit large binaries or generated data casually — confirm intent first.
 
+## New here and not a programmer?
+
+If you know some Sanskrit but not git/GitHub/Claude yet, start with
+[ONBOARDING_NEW_CONTRIBUTOR_RU.md](ONBOARDING_NEW_CONTRIBUTOR_RU.md) (Russian) — a
+step-by-step ladder from a first error-report to full contributor, with a beginner-safe
+first task. This document above assumes you already know the basic PR flow.
+
 ## See also
 
 - [CLAUDE.md](CLAUDE.md) — repo conventions (key1/key2, BOM, external-refs rule).

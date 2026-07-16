@@ -14,6 +14,14 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **`ONBOARDING_NEW_CONTRIBUTOR_RU.md` — gentle Russian on-ramp for a non-technical Sanskrit contributor (16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, H1029)**:
+  fills the gap between the git-assuming English `CONTRIBUTING.md` and the deep-project
+  `MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md` — a 5-rung ladder (talk-to-Claude → GitHub issues →
+  browser PRs → Claude Code → independent contributor) with a beginner-safe first task
+  (OCR/scan-quality error reporting, no deep lexical judgment required). Pointer added from
+  `CONTRIBUTING.md`.
+
 ## [1.9.19] - 2026-07-15
 
 ### Fixed
