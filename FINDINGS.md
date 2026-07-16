@@ -2308,6 +2308,16 @@ exact live card rather than treating a fixture-only validator as evidence. A sec
 kill-budget saturation is admission telemetry, not proof of route-independent undeliverability;
 population claims require serial whole-card measurements, not an `n=2` ratio extrapolation.
 
+H1080 closed the measured damage without a model call. Exact historical harness maps and
+content-addressed raw inputs restored 668 placeholder rows and all 468 null owners; the two
+out-of-range `banD` rows were removed into a hash-sealed quarantine. The canonical store moved
+from 11,605 rows (`cc1d544e…`) to 11,603 (`f15caf7d…`) with zero raw tokens and zero null `h`, and
+the RU card TM was rebuilt once. The forward rule is now executable at every boundary: audit and
+promotion validate the live card; autosplit/top-up retain record owners; promotion requires an
+existing store by default and independently refuses synthetic, foreign, duplicate, or malformed
+inputs before a fsynced atomic replacement. The full repair evidence is tracked in
+`RussianTranslation/pwg_ru/h1080/H1080_STORE_REPAIR_REPORT_2026-07-17.md`.
+
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
 > [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482),

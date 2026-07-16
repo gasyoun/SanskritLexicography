@@ -32,6 +32,53 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (`claude-fable-5`); generation under judgment Sonnet 4.6 (`claude-sonnet-4-6`, pilot) and
   Sonnet 5 (`claude-sonnet-5`, FU1).
 
+### Fixed — H1080 / H963 packet Step 2 (C-01, C-02, C-42, C-04)
+
+- **Canonical store repaired and sealed.** A hash-locked dry run and atomic replacement repaired
+  668 placeholder rows and 468 null record owners, quarantined only the two irrecoverable `banD`
+  rows, and produced a clean 11,603-row store (zero raw `{Tn}`, zero null `h`). The original
+  11,605-row store and the two quarantine payloads remain uncommitted but hash-addressed; the
+  tracked `pwg_ru/h1080/` report records before/after, backup, quarantine, and one-time TM hashes.
+  A second repair invocation is a verified no-op.
+- **Promotion now fails closed independently.** `save_and_audit`, `audit_window`, autosplit/top-up,
+  and `promote_final_cards` preserve and validate record `h`/`grammar` plus homonym boundaries.
+  Promotion refuses invalid final schema, unresolved tokens, malformed or foreign provenance,
+  synthetic controls, duplicate results, and a missing store unless the operator explicitly uses
+  first-run-only `--init-store`. Backups are copied/fsynced and replacement is atomic.
+
+- **One field set for restore and promote ([`src/card_fields.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/card_fields.py), C-01).**
+  `restore_card` and its JS twin unmasked 3 fields while `promote_final_cards.rows_for` read
+  6, so `card.iast` / `record.h` / `sense.tag` / `sense.differentia` were promoted with their
+  `{Tn}` intact — **670 of 11,605 store rows carry a raw placeholder, 223 of them a headword
+  reading literally `{T104}`** (re-verified against the live store this pass). Both lanes and
+  the promoter are now driven from one constant; the JS list is interpolated, not re-typed.
+  `promote_final_cards` additionally refuses any row still holding a `{Tn}`.
+- **The stitch keeps record identity (C-02).** Both stitch lanes built `records: [{senses}]`,
+  dropping record-level `h`/`grammar` unconditionally and collapsing homonyms into one flat
+  record — hence **468 rows / 20 sub-cards with `h: null`** (403 `batched-masked` + 65
+  `topup`). The flatten now carries each sense's owning `(h, grammar)` and `stitch_records`
+  rebuilds one record per owner, preserving document order.
+- **Out-of-range `{Tn}` is counted and refused (C-42).** `restore_text` returned an unmapped
+  token verbatim with no counter, no log and no reject; both lanes now count it and refuse
+  the card rather than promote known-corrupt content.
+- **The record contract runs on live output (C-04).** `validate_final_card_schema` — the only
+  component encoding `record.required = {h, grammar, senses}` — had **no live caller**: its
+  sole invocation was a CI step against a hand-made *passing* fixture. It is now wired into
+  `save_and_audit` **before** the write and has no production escape hatch. Audit and promotion
+  independently run the same contract. `RECORD_REQUIRED` is not relaxed.
+- **`window_selftest` no longer stops at the first failure.** The runner was a bare
+  `for test in tests: test()`, and the human-gated language-parity gate sits at position 105
+  of 131 — so **27 tests (20.6%) were dark indefinitely**, including `pwg_mask` and four
+  heal-lane tests. Now isolated, reporting `ran/defined`: **135/135 run, 134 pass**, the lone
+  failure being the parity gate that is red by design.
+
+### Added
+
+- [`src/backfill_tn_residue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/backfill_tn_residue.py)
+  — dry-run-first, source-hash-locked restoration from exact raw inputs or historical harness
+  placeholder maps. The complete evidence chain deterministically repairs **668/670** placeholder
+  rows and all **468** null headwords; only two malformed `banD` rows require quarantine.
+
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path
   and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,
