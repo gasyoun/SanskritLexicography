@@ -69,10 +69,31 @@ if HERE not in sys.path:
 SCHEMA = 'pwg.bounded_supervisor.v1'
 
 # Stop reasons — the loop stops on the FIRST of these to fire.
-STOP_WINDOW_COUNT = 'window_count'          # ran the configured max number of windows
+STOP_WINDOW_COUNT = 'window_count'          # ran the configured max number of windows/calls attempted
 STOP_BUDGET = 'budget'                       # accumulated per-window cost crossed the cap
 STOP_CLEAN_TARGET = 'clean_target'           # plan queue AND requeue backlog both drained
 STOP_CONSECUTIVE_EMPTY = 'consecutive_empty'  # N consecutive zero-progress iterations
+STOP_CALL_COUNT = 'call_count'               # cumulative model calls crossed the max-calls ceiling
+STOP_CLEAN_QUOTA = 'clean_quota'             # cumulative clean rows reached the requested quota
+STOP_COST_UNEVALUABLE = 'cost_unevaluable'   # a cost ceiling is active but a window's cost could
+#                                              NOT be evaluated -> FAIL CLOSED (never treat missing
+#                                              cost as zero and keep spending). Distinct from
+#                                              STOP_BUDGET: this is a data-integrity stop, not an
+#                                              over-ceiling stop (H963 cost fail-closed contract).
+
+
+def strict_cost_fn(window, wf_output, report):
+    """A fail-closed per-window cost reader for use when a cost/quota ceiling is enforced.
+
+    Returns the report's numeric ``cost`` when present, else ``None`` — signalling the
+    supervisor that this window's spend is UNEVALUABLE. Paired with an active ``budget_cap``
+    the supervisor then stops with ``STOP_COST_UNEVALUABLE`` instead of silently treating the
+    missing figure as zero (the anti-pattern the default reader keeps for backward compat).
+    ``bool``/``str`` costs are rejected as invalid (None), not coerced."""
+    cost = (report or {}).get('cost')
+    if isinstance(cost, bool) or not isinstance(cost, (int, float)):
+        return None
+    return cost
 
 
 class BoundedSupervisor:
@@ -95,12 +116,27 @@ class BoundedSupervisor:
     max_windows : int, optional
         Window-count cap. ``None`` disables the bound.
     budget_cap : number, optional
-        Running-budget cap; the loop stops once accumulated cost is >= this. ``None``
-        disables the bound.
+        Running-budget (cost/quota) cap; the loop stops once accumulated cost is >= this.
+        ``None`` disables the bound. When a ``budget_cap`` is set AND ``cost_fn`` reports an
+        UNEVALUABLE cost (``None``) for a window, the loop FAILS CLOSED with
+        ``STOP_COST_UNEVALUABLE`` rather than treating the missing figure as zero — pair it
+        with ``strict_cost_fn`` (module-level) to get that fail-closed reader.
     empty_streak_cap : int, optional
-        Stop after this many consecutive zero-progress iterations. ``None`` disables it.
-    cost_fn : callable(window, wf_output_path, report) -> number, optional
-        Per-window cost. Defaults to ``report.get('cost', 0)``.
+        Stop after this many consecutive zero-progress (non-productive) iterations. ``None``
+        disables it.
+    max_calls : int, optional
+        Ceiling on cumulative model calls attempted (summed from ``report['calls']``). The
+        loop stops with ``STOP_CALL_COUNT`` once the running total is >= this. ``None``
+        disables the bound.
+    max_clean : int, optional
+        Clean-rows quota: stop with ``STOP_CLEAN_QUOTA`` once cumulative clean cards
+        (summed from ``report['clean_count']``) reach this many. ``None`` disables it.
+        Distinct from the clean-TARGET drain (queue+backlog empty) — this is an explicit
+        ceiling on how many clean rows to REQUEST before stopping.
+    cost_fn : callable(window, wf_output_path, report) -> number|None, optional
+        Per-window cost. Defaults to ``report.get('cost', 0)`` (missing -> 0, the legacy
+        silent-zero kept for backward compatibility). Pass ``strict_cost_fn`` to make a
+        missing cost ``None`` and engage the fail-closed policy above.
     input_dir : str, optional
         Portrait-sidecar dir for the default H920 auditor. When omitted a throwaway temp
         dir is used (so the default auditor stays hermetic — an empty dir yields no
@@ -111,7 +147,8 @@ class BoundedSupervisor:
 
     def __init__(self, plan, run_window, checkpoint_path,
                  audit=None, max_windows=None, budget_cap=None,
-                 empty_streak_cap=None, cost_fn=None, input_dir=None, resume=False):
+                 empty_streak_cap=None, cost_fn=None, input_dir=None, resume=False,
+                 max_calls=None, max_clean=None):
         if not callable(run_window):
             raise TypeError('run_window must be callable(window) -> wf_output_path')
         self.plan = [self._normalize_plan(w, i) for i, w in enumerate(plan or [])]
@@ -121,6 +158,8 @@ class BoundedSupervisor:
         self.max_windows = max_windows
         self.budget_cap = budget_cap
         self.empty_streak_cap = empty_streak_cap
+        self.max_calls = max_calls
+        self.max_clean = max_clean
         self.cost_fn = cost_fn or (lambda window, wf_output, report: report.get('cost', 0) or 0)
         self.input_dir = input_dir
         self._own_input_dir = None
@@ -128,6 +167,8 @@ class BoundedSupervisor:
         # Loop state (all persisted).
         self.windows_done = 0
         self.budget_spent = 0.0
+        self.calls_spent = 0
+        self.clean_total = 0
         self.requeue_backlog = []
         self.empty_streak = 0
         self.next_index = 0
@@ -227,8 +268,15 @@ class BoundedSupervisor:
                 # (3) AUDIT — injected report, or the H920 gate helper on a tmp dir.
                 report = self._run_audit(wf_output, item)
 
-                cost = self.cost_fn(item, wf_output, report) or 0
+                raw_cost = self.cost_fn(item, wf_output, report)
+                # A None cost means UNEVALUABLE — never coerce it to 0 for accounting. It
+                # only fails the run closed when a cost ceiling (budget_cap) is active
+                # (checked below); with no cost ceiling it is a harmless 0 contribution.
+                cost_unevaluable = raw_cost is None
+                cost = 0 if cost_unevaluable else (raw_cost or 0)
                 self.budget_spent += cost
+                calls = int(report.get('calls') or 0)
+                self.calls_spent += calls
                 self.windows_done += 1
                 self.completed_window_ids.append(item['id'])
 
@@ -240,6 +288,7 @@ class BoundedSupervisor:
                     self.requeue_backlog.append(self._make_requeue_item(item, requeue_keys))
 
                 clean = int(report.get('clean_count') or 0)
+                self.clean_total += clean
                 # (g) A satisfied (already-promoted, zero-store-delta) requeue key is
                 # progress, not a hard error: it drains the backlog and resets the streak.
                 made_progress = clean > 0 or bool(satisfied)
@@ -252,9 +301,13 @@ class BoundedSupervisor:
                     'window_id': item['id'],
                     'requeue': bool(item.get('requeue')),
                     'clean_count': clean,
+                    'clean_total': self.clean_total,
+                    'calls': calls,
+                    'calls_spent': self.calls_spent,
                     'requeued_keys': sorted(set(requeue_keys)),
                     'satisfied_keys': sorted(set(satisfied)),
-                    'cost': cost,
+                    'cost': None if cost_unevaluable else cost,
+                    'cost_unevaluable': cost_unevaluable,
                     'budget_spent': self.budget_spent,
                     'empty_streak': self.empty_streak,
                 })
@@ -262,13 +315,31 @@ class BoundedSupervisor:
                 # (6) PERSIST loop state atomically for crash resume.
                 self._write_checkpoint()
 
-                # (5b) running-budget bound — after accumulating this window's cost, so the
-                # window that crosses the cap runs, then the loop stops mid-queue.
+                # (5b0) COST FAIL-CLOSED — a cost ceiling is enforced but this window's spend
+                # could not be evaluated. Stop closed BEFORE any further work: never keep
+                # spending against a budget we can no longer enforce. Checked first so it
+                # pre-empts a would-be clean-target success on an unenforceable budget.
+                if cost_unevaluable and self.budget_cap is not None:
+                    self._finish(STOP_COST_UNEVALUABLE)
+                    break
+
+                # (5b) running-budget (cost/quota) bound — after accumulating this window's
+                # cost, so the window that crosses the cap runs, then the loop stops mid-queue.
                 if self.budget_cap is not None and self.budget_spent >= self.budget_cap:
                     self._finish(STOP_BUDGET)
                     break
 
-                # (5d) consecutive-empty bound.
+                # (5e) call-count bound — cumulative model calls attempted.
+                if self.max_calls is not None and self.calls_spent >= self.max_calls:
+                    self._finish(STOP_CALL_COUNT)
+                    break
+
+                # (5f) clean-rows quota — stop once the requested number of clean rows is met.
+                if self.max_clean is not None and self.clean_total >= self.max_clean:
+                    self._finish(STOP_CLEAN_QUOTA)
+                    break
+
+                # (5d) consecutive-empty (non-productive) bound.
                 if (self.empty_streak_cap is not None
                         and self.empty_streak >= self.empty_streak_cap):
                     self._finish(STOP_CONSECUTIVE_EMPTY)
@@ -332,6 +403,8 @@ class BoundedSupervisor:
             'schema': SCHEMA,
             'windows_done': self.windows_done,
             'budget_spent': self.budget_spent,
+            'calls_spent': self.calls_spent,
+            'clean_total': self.clean_total,
             'requeue_backlog': self.requeue_backlog,
             'empty_streak': self.empty_streak,
             'next_index': self.next_index,
@@ -342,6 +415,8 @@ class BoundedSupervisor:
                 'max_windows': self.max_windows,
                 'budget_cap': self.budget_cap,
                 'empty_streak_cap': self.empty_streak_cap,
+                'max_calls': self.max_calls,
+                'max_clean': self.max_clean,
             },
             'history': self.history,
         }
@@ -365,6 +440,8 @@ class BoundedSupervisor:
             raise ValueError('checkpoint schema mismatch: %r' % state.get('schema'))
         self.windows_done = int(state.get('windows_done') or 0)
         self.budget_spent = float(state.get('budget_spent') or 0)
+        self.calls_spent = int(state.get('calls_spent') or 0)
+        self.clean_total = int(state.get('clean_total') or 0)
         self.requeue_backlog = list(state.get('requeue_backlog') or [])
         self.empty_streak = int(state.get('empty_streak') or 0)
         self.next_index = int(state.get('next_index') or 0)
@@ -382,6 +459,8 @@ class BoundedSupervisor:
             'stop_reason': self.stop_reason,
             'windows_done': self.windows_done,
             'budget_spent': self.budget_spent,
+            'calls_spent': self.calls_spent,
+            'clean_total': self.clean_total,
             'requeue_backlog_len': len(self.requeue_backlog),
             'requeue_backlog_keys': sorted(
                 {k for item in self.requeue_backlog for k in (item.get('keys') or [])}),

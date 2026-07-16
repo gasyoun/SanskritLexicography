@@ -39,6 +39,10 @@ from bounded_supervisor import (
     STOP_BUDGET,
     STOP_CLEAN_TARGET,
     STOP_CONSECUTIVE_EMPTY,
+    STOP_CALL_COUNT,
+    STOP_CLEAN_QUOTA,
+    STOP_COST_UNEVALUABLE,
+    strict_cost_fn,
 )
 
 
@@ -279,6 +283,124 @@ def test_h_default_h920_auditor(td):
     print('  (h) default H920 auditor requeues a null card hermetically: PASS')
 
 
+def test_i_call_count(td):
+    # H963 ceiling: cumulative model calls attempted. Each window reports 2 calls; the
+    # loop stops once the running total is >= 5, i.e. after the 3rd window (2/4/6).
+    plan = make_plan(10)
+    runner = ScriptedRunner(td)
+
+    def audit(wf_output, window):
+        return {'requeue_keys': [], 'clean_count': 1, 'cost': 1, 'calls': 2,
+                'satisfied_keys': []}
+
+    cp = os.path.join(td, 'i.json')
+    sup = BoundedSupervisor(plan, runner, cp, audit=audit, max_calls=5)
+    summ = sup.run()
+    assert summ['stop_reason'] == STOP_CALL_COUNT, summ
+    assert summ['calls_spent'] == 6, summ                 # 3 windows * 2 calls, crossed 5
+    assert summ['windows_done'] == 3, summ
+    assert runner.run_order == ['w0', 'w1', 'w2'], runner.run_order
+    print('  (i) call-count bound stops once cumulative calls cross the ceiling: PASS')
+
+
+def test_j_clean_quota(td):
+    # H963 ceiling: clean-rows quota. Each window yields 2 clean rows; stop once the
+    # cumulative clean total reaches 5 -> after the 3rd window (2/4/6). Distinct from the
+    # clean-TARGET drain (queue emptied): here the queue still has windows left.
+    plan = make_plan(10)
+    runner = ScriptedRunner(td)
+
+    def audit(wf_output, window):
+        return {'requeue_keys': [], 'clean_count': 2, 'cost': 1, 'satisfied_keys': []}
+
+    cp = os.path.join(td, 'j.json')
+    sup = BoundedSupervisor(plan, runner, cp, audit=audit, max_clean=5)
+    summ = sup.run()
+    assert summ['stop_reason'] == STOP_CLEAN_QUOTA, summ
+    assert summ['clean_total'] == 6, summ
+    assert summ['windows_done'] == 3, summ
+    assert summ['next_index'] == 3 and summ['next_index'] < len(plan), summ  # stopped mid-queue
+    print('  (j) clean-rows quota stops once the requested clean count is met: PASS')
+
+
+def test_k_cost_fail_closed(td):
+    # H963 cost fail-closed: with a cost ceiling active, a window whose cost is UNEVALUABLE
+    # (strict_cost_fn returns None because the report carries no numeric cost) must stop the
+    # run CLOSED with the distinct STOP_COST_UNEVALUABLE reason — never treat missing cost as
+    # zero and keep spending. w0 prices fine (cost=1), w1 has no cost -> fail closed on w1.
+    plan = make_plan(5)
+    runner = ScriptedRunner(td)
+
+    def audit(wf_output, window):
+        if window['id'] == 'w1':
+            return {'requeue_keys': [], 'clean_count': 1, 'satisfied_keys': []}  # NO cost key
+        return {'requeue_keys': [], 'clean_count': 1, 'cost': 1, 'satisfied_keys': []}
+
+    cp = os.path.join(td, 'k.json')
+    sup = BoundedSupervisor(plan, runner, cp, audit=audit, budget_cap=100,
+                            cost_fn=strict_cost_fn)
+    summ = sup.run()
+    assert summ['stop_reason'] == STOP_COST_UNEVALUABLE, summ
+    assert summ['windows_done'] == 2, summ                # w0 (priced) + w1 (unevaluable) ran
+    assert runner.run_order == ['w0', 'w1'], runner.run_order
+    assert summ['budget_spent'] == 1, summ               # only w0's cost accrued; w1 NOT coerced to 0-and-continue
+    # The history records w1 as unevaluable, cost None (not 0).
+    assert sup.history[-1]['cost_unevaluable'] is True, sup.history[-1]
+    assert sup.history[-1]['cost'] is None, sup.history[-1]
+    print('  (k) cost fail-closed: unevaluable cost under an active ceiling stops closed: PASS')
+
+
+def test_l_cost_unevaluable_harmless_without_ceiling(td):
+    # The mirror of (k): with NO cost ceiling, an unevaluable (None) cost is harmless — it
+    # contributes 0 and the loop drains normally. Fail-closed engages ONLY when a cost
+    # ceiling (budget_cap) is actually being enforced, so the default path is unchanged.
+    plan = make_plan(2)
+    runner = ScriptedRunner(td)
+
+    def audit(wf_output, window):
+        return {'requeue_keys': [], 'clean_count': 1, 'satisfied_keys': []}   # never any cost
+
+    cp = os.path.join(td, 'l.json')
+    sup = BoundedSupervisor(plan, runner, cp, audit=audit, cost_fn=strict_cost_fn)  # no budget_cap
+    summ = sup.run()
+    assert summ['stop_reason'] == STOP_CLEAN_TARGET, summ
+    assert summ['windows_done'] == 2, summ
+    assert summ['budget_spent'] == 0, summ
+    print('  (l) unevaluable cost without a ceiling is harmless (drains normally): PASS')
+
+
+def test_m_calls_clean_survive_restart(td):
+    # The new call/clean counters must persist across a checkpoint resume exactly like
+    # windows_done/budget_spent do, so a resumed run enforces the SAME cumulative ceilings.
+    plan = make_plan(5)
+    cp = os.path.join(td, 'm.json')
+    runner_a = ScriptedRunner(td, raise_on_call=3)
+
+    def audit(wf_output, window):
+        return {'requeue_keys': [], 'clean_count': 2, 'cost': 1, 'calls': 3,
+                'satisfied_keys': []}
+
+    sup_a = BoundedSupervisor(plan, runner_a, cp, audit=audit)
+    crashed = False
+    try:
+        sup_a.run()
+    except RuntimeError:
+        crashed = True
+    assert crashed, 'expected a simulated crash on the 3rd window'
+    state = json.load(open(cp, encoding='utf-8'))
+    assert state['calls_spent'] == 6, state              # 2 windows * 3 calls
+    assert state['clean_total'] == 4, state              # 2 windows * 2 clean
+
+    runner_b = ScriptedRunner(td)
+    sup_b = BoundedSupervisor.from_checkpoint(cp, plan, runner_b, audit=audit)
+    assert sup_b.calls_spent == 6 and sup_b.clean_total == 4, (sup_b.calls_spent, sup_b.clean_total)
+    summ = sup_b.run()
+    assert runner_b.run_order == ['w2', 'w3', 'w4'], runner_b.run_order  # no completed window re-run
+    assert summ['calls_spent'] == 15, summ               # 6 carried + 3 * 3
+    assert summ['clean_total'] == 10, summ               # 4 carried + 3 * 2
+    print('  (m) call/clean counters persist across a checkpoint resume: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_window_count(td)
@@ -289,6 +411,11 @@ def main():
         test_f_crash_recovery(td)
         test_g_satisfied_zero_delta(td)
         test_h_default_h920_auditor(td)
+        test_i_call_count(td)
+        test_j_clean_quota(td)
+        test_k_cost_fail_closed(td)
+        test_l_cost_unevaluable_harmless_without_ceiling(td)
+        test_m_calls_clean_survive_restart(td)
     print('bounded_supervisor_selftest: PASS')
 
 
