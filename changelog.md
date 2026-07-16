@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.12.0] — 17-07-2026
+
 ### Added
 - **A30 full paper draft — "When Zero Means Nothing: Recovering the Indigenous Microstructure
   of the *Śabdakalpadruma* and the *Vācaspatya*" (17-07-2026, Fable 5 `claude-fable-5`, H1073)**:
