@@ -10,6 +10,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — H1080 / H963 packet Step 2 (C-01, C-02, C-42, C-04)
+
+- **One field set for restore and promote ([`src/card_fields.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/card_fields.py), C-01).**
+  `restore_card` and its JS twin unmasked 3 fields while `promote_final_cards.rows_for` read
+  6, so `card.iast` / `record.h` / `sense.tag` / `sense.differentia` were promoted with their
+  `{Tn}` intact — **670 of 11,605 store rows carry a raw placeholder, 223 of them a headword
+  reading literally `{T104}`** (re-verified against the live store this pass). Both lanes and
+  the promoter are now driven from one constant; the JS list is interpolated, not re-typed.
+  `promote_final_cards` additionally refuses any row still holding a `{Tn}`.
+- **The stitch keeps record identity (C-02).** Both stitch lanes built `records: [{senses}]`,
+  dropping record-level `h`/`grammar` unconditionally and collapsing homonyms into one flat
+  record — hence **468 rows / 20 sub-cards with `h: null`** (403 `batched-masked` + 65
+  `topup`). The flatten now carries each sense's owning `(h, grammar)` and `stitch_records`
+  rebuilds one record per owner, preserving document order.
+- **Out-of-range `{Tn}` is counted and refused (C-42).** `restore_text` returned an unmapped
+  token verbatim with no counter, no log and no reject; both lanes now count it and refuse
+  the card rather than promote known-corrupt content.
+- **The record contract runs on live output (C-04).** `validate_final_card_schema` — the only
+  component encoding `record.required = {h, grammar, senses}` — had **no live caller**: its
+  sole invocation was a CI step against a hand-made *passing* fixture. It is now wired into
+  `save_and_audit` **before** the write, with an explicit `--allow-schema-violations` escape
+  and a dead-validator canary. `RECORD_REQUIRED` is not relaxed.
+- **`window_selftest` no longer stops at the first failure.** The runner was a bare
+  `for test in tests: test()`, and the human-gated language-parity gate sits at position 105
+  of 131 — so **27 tests (20.6%) were dark indefinitely**, including `pwg_mask` and four
+  heal-lane tests. Now isolated, reporting `ran/defined`: **135/135 run, 134 pass**, the lone
+  failure being the parity gate that is red by design.
+
+### Added
+
+- [`src/backfill_tn_residue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/backfill_tn_residue.py)
+  — offline re-derivation of the leaked `{Tn}` rows via `pwg_mask.mask(raw)` keyed by
+  `provenance.input_raw_sha256`, guarded by a SHA match plus a mask/restore round-trip.
+  Dry-run by default. Measured: **596 of 670 rows recoverable; 74 are not** (their recorded
+  content address matches no source on disk — the source drifted, so they need
+  re-translation). Not yet applied — see the handoff's `@DECIDE`.
+
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path
   and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,

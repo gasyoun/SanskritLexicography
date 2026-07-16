@@ -43,6 +43,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
 from agent_budget import derive_agent_budget
 import pwg_mask
+import card_fields                                    # C-01: the one restore/promote field set
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
@@ -1552,13 +1553,35 @@ const exactCard = (cards, km, expected, fallbackIndex) => {
   const c = cards[fallbackIndex]
   return (c && c.key1 === expected) ? c : null
 }
+// C-01: which fields carry {Tn} and must be unmasked is NOT re-typed here -- it is injected
+// from card_fields.js_restore_spec(field), the same constant the Python lane restores from
+// and promote_final_cards refuses on. Hand-maintaining this list on each lane is exactly how
+// card.iast / rec.h / s.tag / s.differentia came to be promoted with their placeholders intact.
+const RESTORE_SPEC = %(restore_spec)s
+// C-02: rebuild records[] from healed senses, preserving each sense's [h, grammar] owner.
+// The stitch used to emit `records: [{ senses }]` — no h, no grammar — which violates
+// schemas/pwg_ru_final_card.schema.json (record.required = {h, grammar, senses}) and made the
+// promote path write h: null. It also collapsed real homonyms (79 sub-cards carry more than
+// one distinct h). Consecutive senses sharing an owner stay in one record; a change of owner
+// opens the next, so document order — and the whole-card fidelity counts — are unchanged.
+// The Python twin is headless_worker.stitch_records; keep them behaviourally identical.
+function stitchRecords(senses, owners) {
+  const out = []
+  for (let i = 0; i < senses.length; i++) {
+    const [h, grammar] = owners[i] || [null, null]
+    const last = out[out.length - 1]
+    if (!last || last.h !== h || last.grammar !== grammar) out.push({ h, grammar, senses: [senses[i]] })
+    else last.senses.push(senses[i])
+  }
+  return out
+}
 function restoreCard(card, k) {
   const ph = PH[k] || []
+  for (const f of RESTORE_SPEC.card) if (typeof card[f] === 'string') card[f] = restore(card[f], ph)
   for (const rec of (card.records || [])) {
-    if (rec.grammar !== undefined) rec.grammar = restore(rec.grammar, ph)
+    for (const f of RESTORE_SPEC.record) if (typeof rec[f] === 'string') rec[f] = restore(rec[f], ph)
     for (const s of (rec.senses || [])) {
-      if (s.german !== undefined) s.german = restore(s.german, ph)
-      if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
+      for (const f of RESTORE_SPEC.sense) if (typeof s[f] === 'string') s[f] = restore(s[f], ph)
     }
   }
   return card
@@ -1753,6 +1776,7 @@ async function selfHeal(k) {
     : { spent: 0, max: null }
   const ftm = FRAG_TM[k] || []            // --tm: per-group cached-senses-or-null, mirrors FRAGS[k]
   const senses = []
+  const owners = []             // C-02: parallel to `senses` — the [h, grammar] each came from
   const missingFragments = []   // 'g<gi+1>:f<fi>' identifiers — persisted on the card so a
                                 // targeted requeue of JUST the failed fragments is possible
                                 // from wf_output alone (the inline path previously recorded
@@ -1798,24 +1822,31 @@ async function selfHeal(k) {
         // slot them in at their document position — do NOT re-restore (no {Tn} remain). Tag
         // normalization still applies: an older cache entry harvested before this fix may carry
         // a fabricated tag.
-        for (const s of gtm[i]) { applyTag(grp[i].si, s); senses.push(s) }
+        // The fragment TM caches SENSES ONLY -- no record context survives it, so these carry
+        // no h/grammar owner. Recorded as unknown rather than invented (C-02 boundary).
+        for (const s of gtm[i]) { applyTag(grp[i].si, s); senses.push(s); owners.push([null, null]) }
         continue
       }
       const card = r.resolved[i]
       if (!card) continue   // an uncached fragment that never resolved — already in missingFragments
       const ph = gph[i] || []
       const fsenses = []
-      for (const rec of (card.records || [])) for (const s of (rec.senses || [])) {
-        if (s.german !== undefined) s.german = restore(s.german, ph)
-        if (s.%(field)s !== undefined) s.%(field)s = restore(s.%(field)s, ph)
-        applyTag(grp[i].si, s)
-        senses.push(s); fsenses.push(s)
+      for (const rec of (card.records || [])) {
+        for (const f of RESTORE_SPEC.record) if (typeof rec[f] === 'string') rec[f] = restore(rec[f], ph)
+        for (const s of (rec.senses || [])) {
+          for (const f of RESTORE_SPEC.sense) if (typeof s[f] === 'string') s[f] = restore(s[f], ph)
+          applyTag(grp[i].si, s)
+          // C-02: keep the OWNING record's (h, grammar) alongside the sense. This loop used to
+          // flatten records->senses and drop `rec`, so the stitch below had nothing left to
+          // emit and every promoted row read h: null (403 of the 468 came from this lane).
+          senses.push(s); owners.push([rec.h, rec.grammar]); fsenses.push(s)
+        }
       }
       if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses })
     }
   }
   if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
-  const stitched = { key1: k, records: [{ senses }] }
+  const stitched = { key1: k, records: stitchRecords(senses, owners) }
   if (fragProv.length) stitched.frag_prov = fragProv
   if (!missingFragments.length) {
     // fidelity check only meaningful on a COMPLETE heal — a partial result legitimately has
@@ -2061,6 +2092,11 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
 return { meta: META, summary, results: out }
 """ % {
         'root': root, 'field': field, 'tr': json.dumps(tr, ensure_ascii=True),
+        # C-01: the restore field set is INTERPOLATED from `card_fields`, never re-typed here.
+        # This lane and the Python lane each kept their own hand-written list of what to
+        # unmask; both listed three fields while promote read six, and 670 store rows landed
+        # with a raw {Tn}. The JS cannot import Python, so the constant is injected instead.
+        'restore_spec': card_fields.js_restore_spec(field),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.
