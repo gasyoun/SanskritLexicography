@@ -234,7 +234,7 @@ class RunContext:
 
     def __init__(self, db, coord_dir, coordinator, cwd, events, run_id, probe_latencies,
                  claude_bin='claude', timeout=7200, gen_model_version=DEFAULT_GEN_MODEL_VERSION,
-                 max_drain_iterations=1000):
+                 max_drain_iterations=1000, only_profile=None):
         self.db = db
         self.coord_dir = coord_dir
         self.coordinator = coordinator
@@ -246,6 +246,7 @@ class RunContext:
         self.timeout = timeout
         self.gen_model_version = gen_model_version
         self.max_drain_iterations = max_drain_iterations
+        self.only_profile = only_profile
 
     @property
     def coord_state_path(self):
@@ -311,6 +312,7 @@ def make_run_window(ctx):
                 mao.cmd_run_once(argparse.Namespace(
                     db=ctx.db, timeout=ctx.timeout, events=ctx.events, run_id=ctx.run_id,
                     claude_bin=ctx.claude_bin, only_accounts=set(ctx.probe_latencies),
+                    only_profile=ctx.only_profile,
                     only_external_ids=scope))
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, cwd=ctx.cwd, only_external_ids=scope))
@@ -462,6 +464,10 @@ def run(args):
     db = mao.connect(args.db)
     validated = list(db.execute('SELECT * FROM accounts WHERE validated=1 ORDER BY name'))
     db.close()
+    if args.only_profile:
+        validated = [account for account in validated if account['name'] == args.only_profile]
+        if not validated:
+            raise SystemExit('--only-profile is not a validated roster slot')
     if not validated:
         raise SystemExit('bounded_staged_run requires at least one validated account')
     if args.max_accounts:
@@ -480,7 +486,7 @@ def run(args):
         db=args.db, coord_dir=args.coord_dir, coordinator=args.coordinator, cwd=args.cwd,
         events=args.events, run_id=run_id, probe_latencies=probe_latencies,
         claude_bin=args.claude_bin, timeout=args.timeout,
-        gen_model_version=args.gen_model_version)
+        gen_model_version=args.gen_model_version, only_profile=args.only_profile)
     run_window = make_run_window(ctx)
 
     def audit(wf_output, window):
@@ -520,6 +526,7 @@ def main(argv=None):
                     help='max cumulative cost (USD). An UNEVALUABLE window cost fails closed.')
     ap.add_argument('--empty-streak', type=int, default=None)
     ap.add_argument('--max-accounts', type=int, default=0)
+    ap.add_argument('--only-profile', help='enforce one manifest-bound logical profile slot')
     ap.add_argument('--drop-unhealthy', action='store_true')
     ap.add_argument('--gen-model-version', default=DEFAULT_GEN_MODEL_VERSION)
     ap.add_argument('--timeout', type=int, default=7200)

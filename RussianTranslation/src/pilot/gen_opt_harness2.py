@@ -48,6 +48,7 @@ from autosplit_requeue import plan as split_plan     # deterministic per-card se
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
+from execution_contract import SCHEMA_V2, config_dir_fingerprint
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
@@ -354,6 +355,8 @@ def parse_args(argv):
                                        #  no sidecar = no-op with a loud summary. --no-tm disables.
     suggest_tm = '__auto__'            # suggestion memory: advisory prompt context only
     suggest_profile = 'semantic'       # MG prior: semantic-tag/register channel first
+    profile_slot = config_dir = execution_route = executor_lane = validation_method = None
+    synthetic_keys = set()
     tm_auto = True
     budget_explicit = output_explicit = False
     for a in argv[1:]:                 # gen->copy race when several chats generate at once)
@@ -367,6 +370,18 @@ def parse_args(argv):
             out_path = a.split('=', 1)[1]
         elif a.startswith('--manifest-out='):
             manifest_path = a.split('=', 1)[1]
+        elif a.startswith('--profile-slot='):
+            profile_slot = a.split('=', 1)[1]
+        elif a.startswith('--config-dir='):
+            config_dir = a.split('=', 1)[1]
+        elif a.startswith('--execution-route='):
+            execution_route = a.split('=', 1)[1]
+        elif a.startswith('--executor-lane='):
+            executor_lane = a.split('=', 1)[1]
+        elif a.startswith('--validation-method='):
+            validation_method = a.split('=', 1)[1]
+        elif a.startswith('--synthetic-keys='):
+            synthetic_keys = {k for k in a.split('=', 1)[1].split(',') if k}
         elif a.startswith('--lang='):
             lang = a.split('=', 1)[1].strip().lower()
         elif a.startswith('--mw-tm='):
@@ -465,7 +480,9 @@ def parse_args(argv):
     if suggest_profile not in ('semantic', 'german', 'sanskrit', 'balanced'):
         die('unknown --suggest-profile %r (semantic|german|sanskrit|balanced)' % suggest_profile)
     return (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,
-            out_path, manifest_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile)
+            out_path, manifest_path, lang, mw_tm, tm, tm_auto, suggest_tm, suggest_profile,
+            profile_slot, config_dir, execution_route, executor_lane, validation_method,
+            synthetic_keys)
 
 
 def extract_nws(tr):
@@ -887,7 +904,9 @@ def tm_senses_sane(senses, field):
 def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
           nominal=False, grammar_on=True, lang='ru', mw_tm_path=None, tm_path=None,
           tm_auto=False, suggest_tm_path=None, suggest_profile='semantic',
-          return_manifest=False):
+          return_manifest=False, profile_slot=None, config_dir=None,
+          execution_route=None, executor_lane=None, validation_method=None,
+          synthetic_keys=None):
     field = 'english' if lang == 'en' else 'russian'   # the per-sense translation field
     nws_block = ''
     if lang == 'en':
@@ -1311,11 +1330,27 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
           % (meta['tm_cards'], len(meta['frag_tm_cards']),
              len(meta['degenerate_passthrough_keys']), meta['agent_expected_after_tm']))
 
+    bound = bool(profile_slot or config_dir)
+    if bound and not (profile_slot and config_dir):
+        raise ValueError('manifest v2 requires both profile_slot and config_dir')
+    synthetic_keys = set(synthetic_keys or [])
+    if synthetic_keys - set(keys):
+        raise ValueError('synthetic keys are outside selected_keys')
     execution_manifest = {
-        'schema': 'pwg.headless_execution_manifest.v1',
+        'schema': SCHEMA_V2 if bound else 'pwg.headless_execution_manifest.v1',
         'meta': meta,
         'field': field,
         'model': 'claude-sonnet-5',
+        'execution': ({
+            'profile_slot': profile_slot,
+            'config_dir_fingerprint': config_dir_fingerprint(config_dir),
+            'execution_route': execution_route or 'claude-cli-headless',
+            'executor_lane': executor_lane or 'serial-whole-card',
+            'validation_method': validation_method or 'audit_window+final_schema',
+            'model_identifier': 'claude-sonnet-5',
+        } if bound else None),
+        'key_provenance': ({k: ('synthetic_control' if k in synthetic_keys else 'real')
+                           for k in keys} if bound else None),
         'prompt': {
             'preamble': MASK_PREAMBLE.replace('`russian`', '`%s`' % field),
             'grammar': single_grammar,
@@ -2202,7 +2237,8 @@ def main():
         return
     (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,
      out_path, manifest_path, lang, mw_tm, tm, tm_auto, suggest_tm,
-     suggest_profile) = parse_args(sys.argv[1:])
+     suggest_profile, profile_slot, config_dir, execution_route, executor_lane,
+     validation_method, synthetic_keys) = parse_args(sys.argv[1:])
     if nominal:
         # No rootmap: the headword keys ARE the cards, in the order given.
         if not keylist:
@@ -2214,7 +2250,11 @@ def main():
             keys = [k for k in keylist if k in set(keys)]
     js, batches, manifest = build(root, keys, rootmap, budget, lean, nws_gate,
                                   nominal, grammar_on, lang, mw_tm, tm, tm_auto,
-                                  suggest_tm, suggest_profile, return_manifest=True)
+                                  suggest_tm, suggest_profile, return_manifest=True,
+                                  profile_slot=profile_slot, config_dir=config_dir,
+                                  execution_route=execution_route, executor_lane=executor_lane,
+                                  validation_method=validation_method,
+                                  synthetic_keys=synthetic_keys)
     out = os.path.abspath(out_path) if out_path else os.path.join(REPO, 'src', 'pilot', 'run_pilot_wf.opt2.js')
     # Write LF (not CRLF): the Workflow-tool approval rejects scripts containing
     # raw \r control chars, so a CRLF harness cannot be launched on Windows.

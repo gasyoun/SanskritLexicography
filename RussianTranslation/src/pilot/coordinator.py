@@ -494,6 +494,15 @@ def prepare(args):
         lease = lease_by_id(state, args.lease_id)
         adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
         os.makedirs(adir, exist_ok=True)
+        binding = []
+        if bool(args.profile_slot) != bool(args.config_dir):
+            raise SystemExit('--profile-slot and --config-dir must be supplied together')
+        if args.profile_slot:
+            binding = ['--profile-slot=%s' % args.profile_slot,
+                       '--config-dir=%s' % os.path.abspath(args.config_dir),
+                       '--execution-route=claude-cli-headless',
+                       '--executor-lane=%s' % args.executor_lane,
+                       '--validation-method=audit_window+final_schema']
         if lease['kind'] == 'verb':
             root = lease['target']
             preflight_path = os.path.join(adir, 'preflight.json')
@@ -505,7 +514,7 @@ def prepare(args):
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
             manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                     root, '--out=%s' % harness, '--manifest-out=%s' % manifest])
+                     root, '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding)
         elif lease['kind'] == 'nominal':
             keys = lease.get('details', {}).get('run_keys') or lease.get('details', {}).get('keys') or []
             if not keys:
@@ -522,7 +531,7 @@ def prepare(args):
             manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
             run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
                      root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
-                     '--out=%s' % harness, '--manifest-out=%s' % manifest])
+                     '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding)
         else:
             raise SystemExit('prepare is only for verb/nominal translation leases')
         lease['state'] = 'prepared'
@@ -530,6 +539,9 @@ def prepare(args):
         lease['execution_manifest'] = manifest
         lease['origin_execution_manifest'] = os.path.abspath(manifest)
         lease['origin_execution_manifest_sha256'] = sha256_file(manifest)
+        lease['profile_slot'] = args.profile_slot
+        lease['config_dir'] = os.path.abspath(args.config_dir) if args.config_dir else None
+        lease['executor_lane'] = args.executor_lane
         lease['preflight_path'] = preflight_path
         save_state(state)
         registry_event(lease, 'prepared', {'harness': harness, 'manifest': manifest,
@@ -1000,6 +1012,10 @@ def prepare_requeue(args):
         cmd = [sys.executable, os.path.join(HERE, 'requeue_from_audit.py'),
                root, '--%s' % which, '--requeue-file=%s' % rq, '--out=%s' % harness,
                '--manifest-out=%s' % manifest]
+        if lease.get('profile_slot') and lease.get('config_dir'):
+            cmd += ['--profile-slot=%s' % lease['profile_slot'],
+                    '--config-dir=%s' % lease['config_dir'],
+                    '--executor-lane=%s' % (lease.get('executor_lane') or 'serial-whole-card')]
         if nominal:
             cmd += ['--nominal', '--no-grammar']
         created = False
@@ -1246,6 +1262,9 @@ def main(argv=None):
     p.add_argument('--allow-over-cost', action='store_true',
                    help='H304 cap-and-defer override: prepare a cost-gate-flagged window '
                         'anyway (dedicated human-budgeted monster session only)')
+    p.add_argument('--profile-slot', help='logical profile slot (for example c4; not billing proof)')
+    p.add_argument('--config-dir', help='canonical CLAUDE_CONFIG_DIR bound into manifest v2')
+    p.add_argument('--executor-lane', default='serial-whole-card')
     p.set_defaults(func=prepare)
     r = sub.add_parser('record-output')
     r.add_argument('lease_id')

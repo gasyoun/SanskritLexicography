@@ -189,6 +189,14 @@ def validate_promotion_entry(subkey, entry):
     """Second-line promotion validation, independent of audit/coordinator state."""
     card = entry.get('card') or {}
     meta = entry.get('meta') or {}
+    if meta.get('execution_manifest_schema') != 'pwg.headless_execution_manifest.v2':
+        raise PromotionContractError(
+            '%s: v1/unbound workflow output is historical-only and cannot be promoted' % subkey)
+    execution = meta.get('execution') or {}
+    for name in ('profile_slot', 'config_dir_fingerprint', 'execution_route',
+                 'executor_lane', 'validation_method', 'model_identifier'):
+        if not isinstance(execution.get(name), str) or not execution[name].strip():
+            raise PromotionContractError('%s: missing manifest-v2 execution.%s' % (subkey, name))
     try:
         validate_final_card_schema.validate_card(card)
     except ValueError as exc:
@@ -215,7 +223,7 @@ def validate_promotion_entry(subkey, entry):
     provenance_class = classes.get(subkey) if isinstance(classes, dict) else meta.get('provenance_class')
     if provenance_class == 'synthetic_control' or SYNTHETIC_KEY_RE.search(subkey):
         raise PromotionContractError('%s: synthetic controls are never promotable' % subkey)
-    if provenance_class not in (None, 'real'):
+    if provenance_class != 'real':
         raise PromotionContractError('%s: unknown provenance_class %r'
                                      % (subkey, provenance_class))
 
@@ -345,6 +353,13 @@ def selftest():
     meta = {'root': 'pA', 'safe_root': 'p_a', 'generator': 'gen_opt_harness2.batched-masked',
             'schema_version': 'v1', 'rootmap_sha256': 'abc', 'generated_at': '2026-06-29T00:00:00Z',
             'selected_keys': ['p_a~~h5_00_pwg00'],
+            'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+            'execution': {'profile_slot': 'c4', 'config_dir_fingerprint': 'f' * 64,
+                          'execution_route': 'claude-cli-headless',
+                          'executor_lane': 'serial-whole-card',
+                          'validation_method': 'audit_window+final_schema',
+                          'model_identifier': 'claude-sonnet-5'},
+            'provenance_classes': {'p_a~~h5_00_pwg00': 'real'},
             'input_hashes': {'p_a~~h5_00_pwg00': {
                 'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}}
     entry = {'card': {'key1': 'p_a~~h5_00_pwg00', 'iast': 'pā', 'notes': '', 'records': [
@@ -368,6 +383,15 @@ def selftest():
     assert p['model_version'] == SELFTEST_MODEL_VERSION, 'model VERSION recorded, not just the tier alias'
     assert p['input_raw_sha256'] == '1' * 64 and p['generated_at'], 'provenance must be complete'
     validate_promotion_entry('p_a~~h5_00_pwg00', entry)
+    historical = {'card': entry['card'], 'wf_file': entry['wf_file'],
+                  'meta': dict(meta, execution_manifest_schema=
+                               'pwg.headless_execution_manifest.v1')}
+    try:
+        validate_promotion_entry('p_a~~h5_00_pwg00', historical)
+    except PromotionContractError:
+        pass
+    else:
+        raise AssertionError('historical v1 output passed new production promotion')
     synthetic = {'card': entry['card'], 'wf_file': entry['wf_file'],
                  'meta': dict(meta, provenance_classes={
                      'p_a~~h5_00_pwg00': 'synthetic_control'})}
