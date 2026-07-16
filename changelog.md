@@ -15,6 +15,14 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **A30 full paper draft — "When Zero Means Nothing: Recovering the Indigenous Microstructure
+  of the *Śabdakalpadruma* and the *Vācaspatya*" (17-07-2026, Fable 5 `claude-fable-5`, H1073)**:
+  [`papers/A30_skd_vcp_microstructure_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_skd_vcp_microstructure_note.md)
+  — roadmap P4 taken from outline (2/5) to full IJL/WSC-2027 draft (3/5 proposed). Claims the
+  record-level indigenous microstructure (entry template, front-matter megastructure key, the
+  *iti*-unit, SKD-vs-VCP register contrast); every figure read from committed csl-atlas
+  artifacts, no new computation; scope coordinated against A04 (root grammar) / A35 (affixes)
+  / A02 (sense inheritance) / A08 (citation registers).
 - **FINDINGS §86 — samāsa-type frequency does not exist in any org corpus; the canonical
   examples are corpus-ghosts (16-07-2026, Opus 4.8 `claude-opus-4-8`)**: measured while
   scoping a frequency layer for the [samāsa-cakra wheel](https://gasyoun.github.io/SamasaChakram/).
