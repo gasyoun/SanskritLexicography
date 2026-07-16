@@ -1,0 +1,6 @@
+origin_class,sample_n,judged_correct,precision,annotator,date
+print-source,30,29,0.967,"Fable 5 (claude-fable-5), single-annotator",17-07-2026
+digitization,30,28,0.933,"Fable 5 (claude-fable-5), single-annotator",17-07-2026
+conversion-markup,30,27,0.900,"Fable 5 (claude-fable-5), single-annotator",17-07-2026
+ALL-CLASSIFIED (micro),90,84,0.933,"Fable 5 (claude-fable-5), single-annotator",17-07-2026
+undetermined (abstention correctness),30,21,0.700,"Fable 5 (claude-fable-5), single-annotator",17-07-2026

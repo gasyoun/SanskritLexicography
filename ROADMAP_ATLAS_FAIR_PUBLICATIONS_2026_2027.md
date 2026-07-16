@@ -1,7 +1,7 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-_Created: 12-06-2026 · Last updated: 14-07-2026_
+_Created: 12-06-2026 · Last updated: 17-07-2026_
 
 Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, Lexikos, Dictionaries); book = English article-based monograph; student deliverable = frequency-graded learner's reading layer; review capacity = student/community review pool.
 
@@ -24,7 +24,7 @@ Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, 
 | G1 | **No persistent identifiers anywhere**: no dataset DOIs, no CITATION.cff, 0/16 contributors with ORCID (observatory's own finding). The data is *findable on GitHub* but not *citable* in a journal's sense. | High | Zenodo deposit per data release + CITATION.cff in atlas/standards/VisualDCS + register ORCID; cite DOIs in every paper. |
 | G2 | **Standards exports are deferred, not delivered**: TEI Lex-0 / OntoLex-Lemon moved to csl-standards but no actual export exists; no ELEXIS linkage. Lexicography reviewers will ask "where is the TEI?" | High | One pilot: MW + one indigenous dict (SKD) → TEI Lex-0, validated against the Lex-0 schema; OntoLex later. |
 | G3 | **In-house evidence vocabulary is unmapped**: `observed/derived/inferred/reviewed` is excellent but private. | Medium | Publish a one-page crosswalk to W3C PROV-O / TEI `@cert`/`@resp`; costs a day, makes the labels citable. |
-| G4 | **Single-reviewer bottleneck = methodological weakness, not just a queue**: 10 R2 checkpoint rows, 105 H4 rows, 50 xref rows blocked on one person. With n=1 there is no inter-annotator agreement, so reviewed claims have unmeasurable reliability. | High | The community-review decision fixes this *if* every packet is double-keyed and κ is reported (OBS-T already demonstrated Fleiss κ=0.42 tooling). |
+| G4 | **Single-reviewer bottleneck = methodological weakness, not just a queue**: 10 R2 checkpoint rows, 105 H4 rows, 50 xref rows blocked on one person. With n=1 there is no inter-annotator agreement, so reviewed claims have unmeasurable reliability. | High | The community-review decision fixes this *if* every packet is double-keyed and κ is reported (OBS-T has the κ *tooling* staged — `validation/gold_sample.csv` + `obs_t_gold.py` — but no measured κ yet: the second-annotator column is empty; the earlier "κ=0.42" claim here was unsupported and is retracted, see [FINDINGS §87](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). |
 | G5 | **Regex-based structure detection has no gold standard**: MW block detection limits are documented (PAPER.md §9, DOUBTS.md) but never benchmarked against a hand-annotated sample. | Medium | 200-entry stratified gold sample, hand-annotated by 2 reviewers, report precision/recall per block type. One-time cost; armours every paper. |
 | G6 | **Licensing is repo-level, not dataset-level**; derived JSON inherits unclear rights from mixed-licence sources. | Medium | Per-dataset licence field in the envelope (most can be CC BY 4.0; flag exceptions). |
 | G7 | **No user-facing evaluation**: the atlas claims to serve readers but no usage study, no analytics, no student testing exists. Pedagogical-lexicography venues (Lexikos) will ask. | Medium | Fold into the learner's-layer track: small task-based study with the same students doing review-pool work. |
@@ -130,7 +130,7 @@ The payload is the tension and its resolution. Apresyan's method was always vuln
 | P2 | *Sense inheritance in the Sanskrit dictionary family: condensation, survival, and the citation advantage* | R2 H1/H2/H3R (r≈0 granularity trend; 0.762 vs 0.591 survival; drift indices) | **Lexicographica** | Q4 2026 |
 | P3 | *Two citation registers: European source apparatus and indigenous* iti *quotation in nine Sanskrit dictionaries* | CITATION_REGISTERS, citation-apparatus.json, siglum alias table | **Dictionaries** | Q1 2027 |
 | P4 | *When zero means nothing: recovering the indigenous microstructure of Śabdakalpadruma and Vācaspatya* | M4/M7, anubandha key, zero-meaning methodology, H6 register | **IJL** or WSC 2027 | Q1–Q2 2027 |
-| P5 | *Fifty thousand corrections: an error typology of twelve years of collaborative dictionary maintenance* | OBS-T (50,953 corrections, two-axis typology, κ=0.42) | **Lexikos** | Q2 2027 |
+| P5 | *Fifty thousand corrections: an error typology of twelve years of collaborative dictionary maintenance* | OBS-T (52,498 corrections released snapshot, two-axis typology; **κ pending** — the gold sample's second-annotator column is still empty, no measured agreement exists yet) + the [A31 origin-axis census](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A31_fifty_thousand_corrections_error_origin_typology.md) | **Lexikos** | Q2 2027 |
 | P6 | *A frequency-graded reading layer for Sanskrit learners: joining corpus, grammar, and seven dictionaries* | DCS bands + lemma dossier + Whitney + user study (G7) | **Lexikos** (pedagogical) or eLex 2027 | Q2 2027 |
 
 **Book** (proposal to de Gruyter *Lexicographica Series Maior* or Brill, ~Q1 2027 after P1–P2 are under review):

@@ -14,6 +14,24 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **A31/P5 Lexikos draft — error-origin typology over the OBS-T correction corpus (17-07-2026,
+  Fable 5 `claude-fable-5`, H1074)**: full draft
+  [papers/A31_fifty_thousand_corrections_error_origin_typology.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A31_fifty_thousand_corrections_error_origin_typology.md)
+  adds a third, origin axis (print-source / digitization / conversion-markup / undetermined,
+  never guessed) on top of OBS-T's location x edit-type design. Census computed by
+  [papers/a31_origin_census.py](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/a31_origin_census.py)
+  over the released 52,498-event snapshot: 58.4% classified, per-class precision 0.90-0.97
+  (micro 0.933) on a 120-row hand-checked stratified sample (single-annotator, kappa pending
+  the org's standing second-annotator recruit). Headline findings: form-era workflow preserved
+  origin testimony for 98.9% of its events vs 23.1% for the git era; digitization-era slips
+  outnumber inherited print errors >10:1; high per-dictionary print-error shares (BEN 46.9%,
+  PD 37.2%, BUR 32.6%) are single-collator campaign fingerprints (top corrector 94-100%).
+- **FINDINGS §87 — the roadmap's "OBS-T κ=0.42" was a phantom figure**: no measured agreement
+  exists for any OBS-T axis (gold second-annotator column blank, κ=0.0 over 4 incidental
+  pairs); both roadmap cells corrected, rule logged (re-derive statistics from committed
+  metrics files, never cite planning-doc cells into papers).
+
 ## [1.12.0] — 17-07-2026
 
 ### Added
