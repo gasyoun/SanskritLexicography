@@ -2211,6 +2211,19 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
 
 ---
 
+### §88. The DCS snapshot's UD dependency slice is real but VEDIC-SKEWED — syntax studies get counterexample hunts, not classical norms
+
+**Probed 16-07-2026** (Fable 5 `claude-fable-5`, H1008, pinned `dcs_full.sqlite`): 74 texts
+carry `has_dependencies=1`, totalling **223,751 dep-annotated tokens** across 71 UD relations,
+with subordination visible in volume (acl 5,842 · advcl 4,024 · ccomp 2,884 · mark 8,124 ·
+xcomp 1,392 · csubj 638). BUT every one of the top-12 dep-annotated texts is Vedic-sphere
+(RV 34.7k, AV ×2, brāhmaṇas, upaniṣads, śrautasūtras) — there is effectively no classical
+prose/kāvya dependency data in the snapshot. Consequence for any DCS-based syntax study:
+**counterexample hunts against universals are feasible now** (a violation found in 224k
+tokens refutes regardless of skew), while **classical word-order/subordination NORMS are
+data-blocked** — do not present Vedic-slice rates as "Sanskrit" rates. Companion facts:
+§86 (verbal-feature annotation collapse), §87 (the period map to slice by).
+
 ### §87. A curated DCS text→period map EXISTS (consume, don't rebuild) — and the purāṇas carry a measured epic-imitative signature on two independent axes
 
 **Built 16-07-2026** (Fable 5 `claude-fable-5`, H1000): the `PERIOD_MAP` dict in
