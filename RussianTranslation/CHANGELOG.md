@@ -10,6 +10,31 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H963 Gate-0: fresh dated single-profile c4 health reading — NO-GO, ~2× worse than the
+  15-07 baseline.** One D-K attempt (one warm-up, one measured, no reroll) on the ≥ v1.9.17
+  natural schema-carrying prompt: warm-up **53 290 ms** / measured **104 870 ms**, both
+  `classification=success`, zero connection errors, actual prompt 6 828 B, exact model
+  `claude-sonnet-5`, 30 000 ms ceiling. A **pure-latency** NO-GO — not auth, not a connection
+  error, not the D-P refusal artifact. The 15-07 NO-GO (29 743 / 52 815 ms) stands unchanged;
+  this is a new dated reading, not a reroll. Canary not launched, rung 3 not entered, no
+  production translation, store unchanged at 11,605. Report:
+  [`pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md).
+  Recorded an anomaly for future investigation: the measured call ran ~2 ms after the warm-up
+  yet was 2× slower at identical output size — the inverse of a cold-start curve.
+
+- **D-R · `claude_argv_prefix` is defeated by its own bare default.** `shim_dir =
+  os.path.dirname(os.path.abspath(claude_bin))` resolves the bare default `'claude'` against the
+  **CWD**, so the `node_modules/@anthropic-ai/claude-code/cli*.cjs` lookup can never find the npm
+  shim and always falls back to `[claude_bin]`. Consequences: on Windows the fallback is
+  unlaunchable by `CreateProcess`; and — environment-independently — **the H818 D-A protection
+  (bypassing `cmd.exe` so a `--json-schema` argument's `<`/`>` are not read as redirection and the
+  ~8191-char cap does not truncate) is silently inactive for every caller taking the default**
+  (`live_probe`, `probe_fleet`, and the `--claude-bin` defaults of `init` / `run-once` /
+  `staged-run` / `presplit-canary`; the documented `ORCHESTRATION_4ACCOUNT_MAX.md` commands pass
+  no `--claude-bin`). Verified by an independent adversarial pass. **Not fixed here** — it touches
+  the live generation path and needs its own handoff + selftest; the Gate-0 probe works around it
+  locally and pre-flight-aborts if the prefix does not resolve to `[node, cli*.cjs]`.
+
 - **Provenance-bound mixed-lane requeues.** Each lease now seals its initial execution
   manifest as the immutable key universe and stores every pending retry key with the path
   and SHA-256 of the audit report that classified it. `record-output` rejects duplicate,
