@@ -1,6 +1,6 @@
 # BOOK_PLAN.meta.md — metadoc for `BOOK_PLAN.md`
 
-_Created: 13-07-2026 · Last updated: 13-07-2026_
+_Created: 13-07-2026 · Last updated: 17-07-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md),
@@ -88,7 +88,7 @@ Who consults this document and for what — and what the book plus its committed
 |---|---|---|---|
 | 1 | **Ch. 3 ← A40** — write the CDSL-headword-inventory + corpus-grounding chapter from data | one of two chapters not yet in book form; A40 is data-only (no article prose to convert) — genuine first-drafting atop [HeadwordLists/NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) + union_headwords.tsv + dcs_cdsl_xref.tsv; **mandatory** McEnery & Brezina corpus-absence/representativeness reframe | queued — own focused session |
 | 2 | **Ch. 11 ← A50** — write the `<ls>` citation-frequency-graph chapter from data | A50 is a readiness-2/5 **skeleton** (prose 1/5); its §4 tradition-profiles rest on an **inferred map, 0/119 human-reviewed** that must NOT be asserted as fact yet; needs the review gate cleared or the section written as explicitly inferred; **mandatory** significance-at-N=828K (effect-sizes-not-p-values) reframe | queued (gated on human review of `tradition_tags.tsv`) |
-| 3 | **Ch. 2 corpus-methods section** — write the ~6–8 pp. "The corpus as a bounded witness" section into ch02 | MG ruled (b) on 13-07-2026 (fold, not a standalone chapter); the DCS-disclosure + statistical-practice + absence-inference material is owed at ch02's next revision | queued (H867 next-steps) |
+| 3 | **Ch. 2 corpus-methods section** — write the ~6–8 pp. "The corpus as a bounded witness" section into ch02 | MG ruled (b) on 13-07-2026 (fold, not a standalone chapter); the DCS-disclosure + statistical-practice + absence-inference material is owed at ch02's next revision | ✅ **done 17-07-2026** (H1078, Fable 5 `claude-fable-5`) — [ch02 §6](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md) |
 | 4 | **FAIR/DOI sprint** — Zenodo-deposit every cited dataset, re-mint the false correction-dataset DOI, get the DCS denominator DOI (Hellwig sign-off), add CITATION.cff to kosha/SanskritLexicography/SanskritRussian | the real critical path — nothing citable ships without it; the DOI *minting* is a human/credentials @DO | ⏸ **deferred by MG to ~09-08-2026** |
 | 5 | **Front/back matter** — Introduction, 5 Part-bridges, Conclusion, unified method appendix, index | the genuine remaining new-writing load once the 14 chapters exist (BOOK_PLAN §4); the comparative part-bridge is upgraded by the crosswalk §4.1 (Baalbaki/Ferri/Dickey) | queued |
 | 6 | **κ / second-annotator** — one recruitment fixes the "reviewed"-claim reliability gap | the evidence-graded thesis's own selling point has unmeasurable reliability at n=1 reviewer (BOOK_PLAN §6/§9) | parked — human/recruitment @DO |
@@ -149,5 +149,6 @@ Who consults this document and for what — and what the book plus its committed
 | Date | Event | Who (tier + version) |
 |---|---|---|
 | 13-07-2026 | Metadoc created; captures the 13-07-2026 conversion wave (2→12 chapters in book form, H846–H866), the two locked MG rulings, the use-cases inventory, and the ranked backlog (Ch. 3 / Ch. 11 / ch02-section / DOI / matter) | H867, Opus 4.8 `claude-opus-4-8[1m]` |
+| 17-07-2026 | Backlog #3 closed: ch02 §6 *The corpus as a bounded witness* written (~7 pp., DCS disclosure + absence-inference rule + statistical contract + Ch. 3/5/11/13 binding map); BOOK_PLAN §11 and the crosswalk §4.2 carry the ✍️-written notes with the 15→14-chapter consumer-numbering mapping | H1078, Fable 5 `claude-fable-5` |
 
 _Dr. Mārcis Gasūns_

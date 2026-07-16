@@ -14,6 +14,24 @@ not an error.
 
 ## [Unreleased]
 
+## [1.14.0] — 17-07-2026
+
+### Added
+- **M01 Ch. 2 §6 *The corpus as a bounded witness* — the monograph's canonical corpus-epistemics section (17-07-2026, Fable 5 `claude-fable-5`, H1078)**:
+  executes MG's 13-07-2026 ruling (b) on the corpus-methods fork
+  ([LITERATURE_CROSSWALK.md §4.2](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)).
+  ~7 pp. of book-only new writing in
+  [ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md):
+  the DCS 2026 disclosure (5,688,416 content tokens · 270 texts · 95,457 disambiguated
+  lemmas · 41.9 % hapax share, per the committed
+  [VisualDCS census](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/README.md)),
+  the absence-inference rule (bounded DCS-coverage statements, never "non-existent" —
+  McEnery & Brezina), the five-clause statistical-practice contract (effect sizes, not bare
+  p-values at corpus N — Kilgarriff 2005), and the Ch. 3/5/11/13 binding map; ch02's old
+  §6–§9 renumbered §7–§10, 9 references added. Proposal ToC (Ch. 2 bullet), BOOK_PLAN §11,
+  crosswalk §4.2 (15→14-chapter consumer numbering made explicit), BOOK_PLAN.meta backlog
+  #3 and the book CHANGELOG all ticked in the same pass.
+
 ## [1.13.0] — 17-07-2026
 
 ### Added

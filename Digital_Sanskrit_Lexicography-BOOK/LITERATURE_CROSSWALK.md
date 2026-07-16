@@ -1,6 +1,6 @@
 # M01 literature crosswalk — the 37-manual library against the book plan
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 17-07-2026_
 
 The book-scoped deliverable of handoff
 [H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md):
@@ -254,6 +254,14 @@ Ch. 3/5/12/14; the risk noted under (b) (a caveat buried where a referee is leas
 re-read) is mitigated by keeping the section clearly marked and cross-referenced from every
 chapter that leans on it. This section is written when Ch. 2 is next revised; it does not
 alter the locked spine.
+**✍️ Written 17-07-2026 (H1078, Fable 5 `claude-fable-5`):**
+[ch02 §6 *The corpus as a bounded witness*](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
+— a marked, status-boxed section carrying the DCS disclosure (§6.1), the absence-inference
+rule (§6.2), the five-clause statistical-practice contract (§6.3), and the binding map
+(§6.4). The consumers "Ch. 3/5/12/14" above are the 15-chapter-era numbers; in the
+post-merge 14-chapter spine they are **Ch. 3 (headword inventory), Ch. 5 (block economy),
+Ch. 11 (citation-frequency graph), Ch. 13 (Renou's registers)**, and the section names them
+by title so the mapping cannot drift again.
 
 ### 4.3 Rejected candidates (considered, not recommended)
 
