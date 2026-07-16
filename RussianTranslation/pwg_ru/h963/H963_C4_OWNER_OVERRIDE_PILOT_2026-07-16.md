@@ -20,16 +20,44 @@ gate, erase either historical NO-GO, or establish production readiness.
 exact model `claude-sonnet-5`. Clean worktree off `origin/master`
 [`9d7d00d0`](https://github.com/gasyoun/SanskritLexicography/commit/9d7d00d0).
 
-## Headline result — the latency NO-GO had a direct production consequence
+## ⚠️ PROTOCOL DEVIATION — the two manifests ran CONCURRENTLY, not serially
+
+**Manifest A and Manifest B were launched back-to-back without waiting for A to finish, so the two
+calls overlapped on the c4 profile. The owner brief required serial execution.** `max_wide=1` was
+honoured *within* each manifest (and is a within-manifest dispatch cap), but it does **not**
+serialise two separately-launched manifests — the executor's error, not a tooling failure.
+
+Consequences, stated plainly:
+
+- **These timings are NOT serial c4 throughput or economy evidence** and must not be quoted as such.
+- **This pilot cannot justify widening concurrency** in any direction.
+- **The real call's 180 s kill-timeout was measured under concurrent load from this pilot's own
+  canary call.** How much of the timeout is attributable to that self-contention versus c4's
+  baseline latency is **unresolved and unresolvable from this run** — settling it would need a
+  serial re-run, which is a prohibited reroll and was not performed.
+- This is the **same self-contention confound** flagged in the Gate-0 report, reintroduced at a
+  second level (pilot-call vs pilot-call, on top of session-vs-subprocess).
+
+The **NOT PROMOTED** verdict does not depend on this: 0 clean real rows is 0 clean real rows, and
+the promotion gate is a clean-rate floor, not a latency measurement.
+
+## Headline result — the latency NO-GO had a production consequence
 
 The Gate-0 NO-GO was not academic. A trivial 6 828 B `{"ok": true}` probe took **104 870 ms** on
 c4. A **real** card (masked skeleton 5 606 B) never returned: it was abandoned at the **180 000 ms
-kill ceiling**. The health gate predicted exactly this failure.
+kill ceiling**. The health gate anticipated this failure class.
+
+**Narrowed by the deviation above:** the honest claim is that a real card did **not** finish inside
+180 s **under concurrent load from a second in-flight call on the same profile**. This run does
+**not** establish that a real card cannot finish inside 180 s on a quiet, serially-driven c4 —
+that remains untested.
 
 | Run | agents | wall | cards | ok | null | kill-timeouts | conn errors |
 |---|---|---|---|---|---|---|---|
 | canary (`h963_c4_canary`) | 1 / 1 | ~118 s | 1 | **1** | 0 | 0 | 0 |
 | real (`h963_c4_real`) | 1 / 1 | ~206 s | 2 | **0** | **2** | **1** | 0 |
+
+_Wall-clock figures above are **overlapping**, not serial — see the deviation notice._
 
 ## Scope actually executed
 
@@ -78,15 +106,25 @@ exist, use fewer" applies. Selected shapes: `zaz` 3 813 B / 3 senses / 60 `<ls>`
 | `dropped_sanskrit_span` | **0** | n/a | canary carries no `{#…#}`/`<ls>` by construction |
 | clean-card yield | 1/1 (100 %) | **0/2 (0 %)** | floor 80 % |
 
-**The canary passed cleanly**: all three pure-gloss senses rendered (черепаха / мелкая рыба /
-водное растение), so the deterministic silent-SAN-LOSS trap did **not** fire and the SAN-LOSS
-soft guard produced **no false positive**. The model even self-identified the card as a synthetic
-control in its `notes`.
+**What the canary actually establishes — and what it does not.** All three pure-gloss senses
+rendered (черепаха / мелкая рыба / водное растение), so the SAN-LOSS soft guard produced **0 false
+positives on one complete three-sense output**. That is the entire claim. **Do not call the
+detector validated.** Specifically:
 
-**Important limitation:** this is a **single** canary observation with **zero** real clean cards.
-It is **not** a false-flag *rate* — one clean synthetic card cannot establish the SANLOSS/TNMASK
-false-positive rate on real output, which is what rung 3 actually needs. The real lane produced no
-cards to measure. **Rung 3 remains unmeasured.**
+- **SAN-LOSS true-positive sensitivity was NOT exercised.** The canary is a *trap*: it only fires
+  if the model drops a sense. The model dropped none, so the detector's ability to *catch* a silent
+  drop — the thing rung 3 exists to measure — was never tested. A guard that never fired on a card
+  where nothing was wrong tells us nothing about whether it fires when something is.
+- **n = 1, and possibly unrepresentative.** The model **explicitly recognised the card as a
+  synthetic canary** in its `notes` ("Synthetic D-Q silent-SAN-LOSS canary control card (H994), not
+  a real PWG headword"). A model that knows it is being tested may behave more conservatively than
+  on real production input — this biases representativeness in the direction that *flatters* the
+  result.
+- **Zero real clean cards.** One clean synthetic card cannot establish a SANLOSS/TNMASK false-flag
+  *rate on real output*, which is what rung 4's arming decision requires. The real lane returned no
+  cards to measure.
+
+**Rung 3 remains unmeasured.** Nothing here supports arming a hard reject.
 
 ## Costs and telemetry
 
@@ -157,17 +195,24 @@ Both harnesses passed `node --check`; neither was hand-edited after its manifest
 
 | Gate | Before | After this pilot |
 |---|---|---|
-| c4 home-route latency | NO-GO (53 290 / 104 870 ms) | **NO-GO confirmed with a production consequence** — a real card cannot finish inside the 180 s kill ceiling |
+| c4 home-route latency | NO-GO (53 290 / 104 870 ms) | **NO-GO unchanged** — a real card did not finish inside the 180 s ceiling *under concurrent self-load*; serial behaviour untested (protocol deviation) |
+| serial c4 throughput / economy | unmeasured | **still unmeasured** — the two calls overlapped; no serial evidence produced |
 | rung-3 guard false-flag rate | unmeasured | **still unmeasured** — 1 clean synthetic card is not a rate; 0 real cards returned |
-| SAN-LOSS soft guard | untested live | **1 clean live observation** — canary 3/3 senses, no false positive |
+| SAN-LOSS soft guard | untested live | **0 false positives on 1 complete 3-sense output** — true-positive sensitivity NOT exercised; not validated |
 | canonical store | 11,605 | **11,605 (verified unchanged)** |
 | four-profile readiness | NO-GO | **NO-GO, unchanged** — not addressed |
 
 ## Recommended next step (a human decides)
 
-The blocker is **latency, not authentication, and not the guards**. On this evidence the c4 home
-route cannot serve real card generation at all: the kill ceiling is 180 s and a small (5 606 B
-skeleton) card exceeded it. Logging in c5/c6 would not change this.
+The blocker is **latency, not authentication, and not the guards**. Logging in c5/c6 would not
+change it.
+
+**But this run cannot say how bad the home route is.** Because the two manifests overlapped
+(deviation above), the real call's kill-timeout conflates c4's baseline latency with
+self-contention from this pilot's own second call. The defensible statement is only: *a real
+5 606 B-skeleton card did not complete within 180 s while a second call was in flight on the same
+profile.* Whether a **serially-driven** c4 could complete it is **untested** — and testing it means
+a fresh, serial, owner-authorised attempt, not a reroll of this one.
 
 The open path remains the **foreign-route latency investigation**, currently 🟠 archived-deferred as
 [H909](https://github.com/gasyoun/Uprava/blob/main/handoffs/H909-Opus_SanskritLexicography_h818-foreign-route-paired-probe-analysis_14.07.26.md)

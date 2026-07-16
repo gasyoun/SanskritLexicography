@@ -15,11 +15,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   after the Gate-0 NO-GO below, run as **two** attempt-specific manifests (the execution-manifest
   schema has no synthetic/provenance discriminator, so synthetic-canary and real-nominal modes
   were **not** forced into one manifest): 1 canary call + 1 real nominal call, `max_agents: 1`
-  each, **2 agents total**, no retry/requeue. **Canary passed clean** (3/3 pure-gloss senses,
-  `sanloss_shortfalls=0`, `tnmask_mismatches=0` — no false positive). **The real call died at the
-  180 s kill ceiling** (`kill-timeout 180s @ skelBytes=5606`); with `max_heal_agents: 0` both
-  cards went null → clean rate **0 % vs an 80 % floor → no promotion**. So a *trivial* probe takes
-  105 s on c4 and a *real* card cannot finish inside 180 s at all. Real heads came from the
+  each, **2 agents total**, no retry/requeue. **⚠️ Protocol deviation recorded: the two manifests
+  were launched concurrently, not serially** (`max_wide=1` caps dispatch *within* a manifest, not
+  across two launches) — so **these timings are not serial c4 throughput/economy evidence and this
+  pilot cannot justify widening concurrency**. **The real call died at the 180 s kill ceiling**
+  (`kill-timeout 180s @ skelBytes=5606`) **while the canary call was still in flight on the same
+  profile**; with `max_heal_agents: 0` both cards went null → clean rate **0 % vs an 80 % floor →
+  no promotion**. The honest reading: a real card did not finish inside 180 s *under concurrent
+  self-load*; serial c4 behaviour is **untested**. **Canary:** 0 false positives on one complete
+  3-sense output — but the model dropped no sense, so **SAN-LOSS true-positive sensitivity was
+  never exercised**, and it explicitly recognised the card as synthetic (representativeness bias).
+  **The detector is not validated.** Real heads came from the
   **nominal-core** worklist (Tier-2 `pril10`), never no_pwg — **H255 stays frozen**; band-5
   monster heads (`kAla`/`brahman`/`Atman`/`rasa`/`yoga`) were rejected on shape, rank being
   scholarly priority and not cost order. **Rung 3 remains unmeasured** — one clean synthetic card
