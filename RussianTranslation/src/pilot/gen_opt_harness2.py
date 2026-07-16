@@ -48,7 +48,7 @@ from autosplit_requeue import plan as split_plan     # deterministic per-card se
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
-from execution_contract import SCHEMA_V2, config_dir_fingerprint
+from execution_contract import SCHEMA_V2, bind_output_meta, config_dir_fingerprint
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
@@ -1336,21 +1336,24 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     synthetic_keys = set(synthetic_keys or [])
     if synthetic_keys - set(keys):
         raise ValueError('synthetic keys are outside selected_keys')
+    execution = ({
+        'profile_slot': profile_slot,
+        'config_dir_fingerprint': config_dir_fingerprint(config_dir),
+        'execution_route': execution_route or 'claude-cli-headless',
+        'executor_lane': executor_lane or 'serial-whole-card',
+        'validation_method': validation_method or 'audit_window+final_schema',
+        'model_identifier': 'claude-sonnet-5',
+    } if bound else None)
+    key_provenance = ({
+        k: ('synthetic_control' if k in synthetic_keys else 'real') for k in keys
+    } if bound else None)
     execution_manifest = {
         'schema': SCHEMA_V2 if bound else 'pwg.headless_execution_manifest.v1',
         'meta': meta,
         'field': field,
         'model': 'claude-sonnet-5',
-        'execution': ({
-            'profile_slot': profile_slot,
-            'config_dir_fingerprint': config_dir_fingerprint(config_dir),
-            'execution_route': execution_route or 'claude-cli-headless',
-            'executor_lane': executor_lane or 'serial-whole-card',
-            'validation_method': validation_method or 'audit_window+final_schema',
-            'model_identifier': 'claude-sonnet-5',
-        } if bound else None),
-        'key_provenance': ({k: ('synthetic_control' if k in synthetic_keys else 'real')
-                           for k in keys} if bound else None),
+        'execution': execution,
+        'key_provenance': key_provenance,
         'prompt': {
             'preamble': MASK_PREAMBLE.replace('`russian`', '`%s`' % field),
             'grammar': single_grammar,
@@ -1387,6 +1390,11 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             'stagger_ms': STAGGER_MS,
         },
     }
+    # The workflow output must carry the same promotion contract as its execution
+    # manifest. Otherwise audit can verify the launch while promotion cannot
+    # independently distinguish a real card from a synthetic control.
+    if bound:
+        bind_output_meta(meta, execution_manifest)
 
     js = """// AUTO-DERIVED v2 (batched + masked, canonical output) from run_pilot_wf.js - root=%(root)s.
 // Several masked cards per agent call; {Tn} restored to source markup in-JS so the

@@ -6,8 +6,9 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from execution_contract import (ActiveCallClaim, SCHEMA_V2, config_dir_fingerprint,
-                                validate_manifest, validate_profile)
+from execution_contract import (ActiveCallClaim, SCHEMA_V2, bind_output_meta,
+                                config_dir_fingerprint, validate_manifest,
+                                validate_profile)
 from probe_log import verdict_for
 
 
@@ -34,6 +35,17 @@ def main():
         os.makedirs(cfg)
         manifest = fixture(cfg)
         validate_manifest(manifest, require_v2=True)
+        output_meta = {'selected_keys': ['real', 'canary']}
+        bind_output_meta(output_meta, manifest)
+        assert output_meta['execution'] == manifest['execution']
+        assert output_meta['provenance_classes'] == manifest['key_provenance']
+        assert output_meta['execution_manifest_schema'] == SCHEMA_V2
+        try:
+            bind_output_meta({'selected_keys': ['foreign']}, manifest)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('foreign workflow output keys were contract-bound')
         validate_profile(manifest, cfg, 'c4')
         try:
             validate_profile(manifest, cfg, 'c1')

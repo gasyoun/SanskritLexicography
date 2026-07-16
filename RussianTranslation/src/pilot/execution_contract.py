@@ -58,6 +58,18 @@ def validate_profile(manifest, config_dir, only_profile=None):
                          % execution['profile_slot'])
 
 
+def bind_output_meta(meta, manifest):
+    """Stamp a workflow result with the same v2 contract used to launch it."""
+    validate_manifest(manifest, require_v2=True)
+    if set(meta.get('selected_keys') or []) != set(
+            (manifest.get('meta') or {}).get('selected_keys') or []):
+        raise ValueError('workflow metadata keys disagree with execution manifest')
+    meta['execution_manifest_schema'] = SCHEMA_V2
+    meta['execution'] = dict(manifest['execution'])
+    meta['provenance_classes'] = dict(manifest['key_provenance'])
+    return meta
+
+
 class ActiveCallClaim:
     """Cross-process one-active-call claim keyed by credential-directory fingerprint."""
     def __init__(self, fingerprint, root=None):
