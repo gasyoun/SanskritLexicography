@@ -367,3 +367,73 @@ that it was not.
 **Blocker:** none for the offline audit.
 
 ---
+
+## 11:52 UTC — checkpoint 7 (FINAL): the campaign corrects itself twice
+
+**Phase:** close-out.
+**Live calls spent / remaining:** **0 / 0 — none fired, none owed.**
+**Store hash:** `cc1d544e…c805`, 11,605 rows — **verified unchanged at close**, byte-identical to the
+campaign base. TM sidecars unchanged.
+
+The 108-agent workflow completed (0 errors, ~11.0M subagent tokens, 98 min): 7 call-graph segments,
+12 census classes, ~79 adversarial verifiers, 12 analysis answers, 3 reports. **87 candidates → 59
+CONFIRMED · 11 PLAUSIBLE · 9 REFUTED.**
+
+### The real headline was not the kill gate
+
+Checkpoints 2–6 above were written before the census landed and they **buried the lede**. The census
+found — and this session **independently re-verified against the live store**, rather than taking the
+report's word:
+
+| Verified this session | Value |
+|---|---|
+| Rows carrying a raw `{Tn}` | **670 / 11,605 (5.77 %)** — `sense_tag` 376 · `h` 223 · `differentia` 72; example row `{"h": "{T104}"}` — a **headword literally reading `{T104}`** (**C-01**) |
+| Rows with `h == null` | **468** — exact match to the packet (**C-02**) |
+| Poisoned launch gate | probe JSONL lines 14–15: `verdict: GO` **+** `gate_reason: "latency 53956ms > 30000ms"` **+** `probe.latency_ms: 53956`, on the `no_pwg_w07`/H255 lane — **a real launch fired under it: 532,941 tokens, 5/36 clean, 32 kill-timeouts** (**C-07**) |
+
+**C-04** explains why none of it surfaced: `validate_final_card_schema.py`, the *only* component
+encoding `record.required`, runs **only in CI against a hand-made passing fixture, never on live
+output**. The corruption is **already shipped**, and it outranks every forward-looking finding here.
+
+### Two corrections against this campaign's own work
+
+1. **C-25 — self-inflicted, and it lands.** `build_campaign_evidence.py` recorded the killed 180 s call
+   as `subagent_tokens: 0`, defended in-file as *"0 is MEASURED, not missing"* — in the file whose own
+   docstring mandates null-not-zero. Verified: **neither `wf_output` carries any token field**, so
+   `59250` and `0` were **both hand-entered**. The call ran 180 s and certainly burned tokens nobody
+   captured. **The campaign committed the exact silent-failure class it was sent to census.** Corrected
+   in-place: `null` + reason; `59250` re-labelled second-hand; `skel_bytes` re-labelled
+   derived-by-extraction.
+2. **The kill-gate magnitude (checkpoints 2–3) was over-claimed.** The packet ranks it **C-15,
+   medium · telemetry-only**, and rules *"do not treat 44/25 ms/B as solid — one benchmark, 13 calls,
+   largest skeleton 2 929 B"*. **That is right.** The **mechanism** stands (clamp falsifies the
+   invariant; flat 180 s above skel > 1 555.6 B; the gate stopped discriminating legit-slow from
+   doomed-stall; the pilot's card was plausibly size-doomed — a third confound the pilot never named).
+   The **magnitude** — "7–20 % deliverable / 46–66 % doomed / band-5 70 % DOOMED" — is a **projection**
+   on that 13-call fit extrapolated ~3× beyond range **times** an n=2 skel/raw ratio band. **It is a
+   hypothesis worth testing, not a measurement**, and this journal stated it too confidently. H1080,
+   the GTD `@DECIDE` and the H909 re-scope were corrected to demand the two free offline measurements
+   *before* any ruling.
+
+### Protocol deviations introduced this session
+
+- **None affecting evidence.** No live calls, no store/TM mutation, no parity-hash update, no reroll.
+- **One near-miss worth recording.** The `Uprava-h1080` worktree was pruned by another actor
+  mid-session. Because `GitHub/` is itself a git repo, `git reset --hard origin/main` in that directory
+  then **silently retargeted from Uprava to github-spine**. No damage (github-spine was clean and
+  0 ahead; the reset was a fast-forward; `reset --hard` does not touch untracked files, so the ~85
+  sibling repos were untouched), and all pushed Uprava work was verified intact. But the failure mode is
+  general and sharp: **a broken worktree link silently falls through to the parent repo, and a
+  destructive command aimed at repo A executes against repo B.** Recovery: fresh worktree at an
+  absolute path, `.git`-is-a-file verified, `origin/main` confirmed to resolve to a *Uprava* commit.
+
+### Close-out state
+
+- **H963:** 🟡 WAITING ON OWNER — unchanged. **NOT PASS.** H255 frozen.
+- **Successor:** [H1080](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1080-Opus_SanskritLexicography_pwg-ru-killgate-envelope-correction-packet_16.07.26.md)
+  — registered on Uprava `origin/main`; defers to the packet's canonical C-01…C-59.
+- **Draft PR:** [#498](https://github.com/gasyoun/SanskritLexicography/pull/498) — converted to draft, **not merged**.
+- **Generalised lesson:** [Uprava FINDINGS §93](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+- **Owner decision outstanding:** the ceiling `@DECIDE` in [GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — **measure first, it is free**.
+
+_Dr. Mārcis Gasūns_
