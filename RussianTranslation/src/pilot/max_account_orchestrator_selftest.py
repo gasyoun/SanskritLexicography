@@ -238,13 +238,13 @@ def main():
 
     def _cls(stdout='', rc=0, stderr=''):
         _out(stdout, rc, stderr)
-        return m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)[1]
+        return m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)[1]
 
     try:
         # (1) observed successful result-STRING wrapper (result is a JSON string) + Cyrillic body
         w1 = '{"type":"result","subtype":"success","is_error":false,"result":"{\\"ok\\":true}","usage":{"n":"да"}}'
         _out(w1)
-        lat, cls, ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        lat, cls, ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
         assert cls == 'success', cls
         assert ob == len(w1.encode('utf-8')) and ob > len(w1)     # encoded bytes, not char count
         # (2) successful structured_output wrapper
@@ -285,7 +285,7 @@ def main():
 
     try:
         m.run_tree_kill = _capture
-        _lat, _cls2, _ob = m._probe_call('cfg', 'claude', 6491, m.EXACT_GEN_MODEL)
+        _lat, _cls2, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
         assert _cls2 == 'success', _cls2
         p = cap['input']
         # one clear, completable instruction: return exactly the schema object and nothing else

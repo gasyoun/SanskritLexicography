@@ -958,7 +958,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/max_account_orchestrator.py": "39e7a60c0dbd89b6d2d2a8554832c19489f228409aef558062a260844d824635",
       "src/pilot/coordinator.py": "ca41cb0055a98171e90031ba3a076ebac66306df0e283b609f4889291f158506",
       "src/pilot/headless_worker_selftest.py": "33a55b92d6122d5f387a9a2fd10b037b1f00e3490246474678d84216b66808cb",
-      "src/pilot/max_account_orchestrator_selftest.py": "d8562c4e2b2b9e6c50f3a2de02df1080bcc7f0a944f9770db306e2d3407653f9",
+      "src/pilot/max_account_orchestrator_selftest.py": "7380473e18a6523e0cdc4ec831aa745e15e0f608673c06aad8b5a7c8515a564c",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "eb21e08ba4f0e7ab7ab5dacf9db4e4d0d38234f2d63385157735ca8d7b8ced61",
