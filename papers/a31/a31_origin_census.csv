@@ -1,0 +1,13 @@
+scope,origin_class,events,share_pct
+all,print-source,2010,3.8
+all,digitization,21795,41.5
+all,conversion-markup,6863,13.1
+all,undetermined,21830,41.6
+form,print-source,2010,8.2
+form,digitization,21795,89.2
+form,conversion-markup,368,1.5
+form,undetermined,268,1.1
+git,print-source,0,0.0
+git,digitization,0,0.0
+git,conversion-markup,6495,23.1
+git,undetermined,21562,76.9

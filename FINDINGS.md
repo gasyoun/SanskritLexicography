@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-07-2026_
+_Created: 26-06-2026 · Last updated: 17-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -2361,3 +2361,23 @@ findings). Appended on a regular basis — add findings as they're discovered; t
 shared memory of "things we measured that aren't obvious from the code."_
 
 _Dr. Mārcis Gasūns_
+
+### §87. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis
+
+Found 17-07-2026 (Fable 5 `claude-fable-5`, H1074, while drafting A31). The P5 row and a G4 cell
+of [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
+claimed "OBS-T (50,953 corrections, two-axis typology, **κ=0.42**)" / "OBS-T already demonstrated
+Fleiss κ=0.42 tooling". Neither number survives contact with the evidence base:
+[`csl-observatory/validation/gold_metrics.json`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/validation/gold_metrics.json)
+records **Cohen κ = 0.0 over 4 incidental pairs** (the `gold_component_2` second-annotator column
+of [`gold_sample.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/validation/gold_sample.csv)
+is entirely blank), and both OBS-T paper drafts explicitly state "We report no κ here". The
+52,498-event released snapshot also supersedes the 50,953 cut the row still cited. Both cells
+corrected 17-07-2026 in the same pass that shipped the A31 draft.
+
+The reusable rule: **a roadmap/registry cell is not provenance — before citing any statistic
+from a planning doc into a paper, re-derive it from the committed dataset or metrics file it
+claims to summarize.** Planning docs get written ahead of the evidence and are not regenerated
+when the evidence lands (or fails to land); a phantom κ that reached a Lexikos submission would
+have been a retraction-class defect. Same failure class as §52 (hand-copied queue drift), on the
+statistics axis.
