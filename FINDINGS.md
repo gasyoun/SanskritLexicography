@@ -2297,6 +2297,17 @@ unreferenced attempt directories as orphans, never auto-adopt or delete them. Ma
 selected keys and conservative defect fragment hashes inside the new attempt before generation.
 This keeps retry cost policy split by lane without allowing one lane to erase the other.
 
+The H963 evidence review found the same boundary error inside the card payload itself. Promotion
+accepted fields that the restoration code did not cover, and the only schema validator ran in CI
+against a clean fixture rather than against audited/promoted output. On the 11,605-row store this
+left **668 normally recoverable rows with raw `{Tn}` placeholders, 468 rows with `h == null`, and two
+`banD` rows whose placeholder index is outside the source mask map**. The reusable rule extends from
+artifact state to payload shape: the restoration-field set must have one owner across generated JS
+and Python, every unresolved token must fail closed, and promotion must independently validate the
+exact live card rather than treating a fixture-only validator as evidence. A second evidence lesson:
+kill-budget saturation is admission telemetry, not proof of route-independent undeliverability;
+population claims require serial whole-card measurements, not an `n=2` ratio extrapolation.
+
 > **Source:** RussianTranslation audit-findings implementation
 > ([PR #478](https://github.com/gasyoun/SanskritLexicography/pull/478),
 > [follow-up PR #482](https://github.com/gasyoun/SanskritLexicography/pull/482),

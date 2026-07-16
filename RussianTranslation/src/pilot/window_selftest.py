@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import traceback
 import xml.etree.ElementTree as ET
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -5323,9 +5324,21 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
     ]
+    failures = []
     for test in tests:
-        test()
-        print('PASS:', test.__name__)
+        try:
+            test()
+        except Exception:
+            failures.append(test.__name__)
+            print('FAIL:', test.__name__, file=sys.stderr)
+            traceback.print_exc()
+        else:
+            print('PASS:', test.__name__)
+    print('window selftest: %d/%d run, %d passed, %d failed'
+          % (len(tests), len(tests), len(tests) - len(failures), len(failures)))
+    if failures:
+        print('FAILED TESTS: %s' % ', '.join(failures), file=sys.stderr)
+        raise SystemExit(1)
     print('window selftest OK')
 
 

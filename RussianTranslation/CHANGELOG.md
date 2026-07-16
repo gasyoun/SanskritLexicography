@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H963 correction-evidence reconciliation.** Reclassified the 2 h 10 min offline campaign
+  honestly (108-agent subworkflow: 98 minutes): 87 provisional candidates resolve to 49 confirmed,
+  9 plausible, 1 mixed, 19 merged, and 9 refuted/dropped. Withdrawn the unsupported
+  `SAFE` / `COIN-FLIP` / `DOOMED` and route-independent deliverability projections while preserving
+  raw pilot outputs and the append-only correction history. Regenerated the three evidence JSONLs
+  with explicit `null` withdrawal fields and a repo-relative artifact manifest. `window_selftest.py`
+  now executes and reports every defined test even when an earlier test fails. The three pre-existing
+  SHARED parity diffs were reviewed as language-neutral, and ledger hashes were updated only through
+  `lang_parity_check.py --update-hash`; parity is green.
+
 - **H1070 — PWG→EN Fable-tier gold adjudication vs the MW TM + scale-up go/no-go.** First
   Fable-grade verdict on the FU1 (Sonnet 5) tranche and re-adjudication of the exact S7
   frame with Monier-Williams quoted per entry as the adversary: 170 sense rows, combined
