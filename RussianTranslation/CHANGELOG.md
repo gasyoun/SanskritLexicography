@@ -10,6 +10,51 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+
+- **H963 c4 offline correction-evidence campaign — the 180 s kill ceiling is a route-independent
+  blocker, and it is the one nobody was looking at.** Opus 4.8 (`claude-opus-4-8[1m]`), Ultracode,
+  **zero live generation calls** (the brief's live matrix was refused: this session was not the c4
+  profile — `CLAUDE_CONFIG_DIR` unset, and Workflow subagents inherit session credentials, so
+  "c4 only" was unenforceable and every call would have been mis-attributed — *and* two of the
+  brief's own hard stops were already tripped by the pilot it was told to close first: a call
+  exceeded the 180 s ceiling, and calls were launched concurrently by mistake). Store unchanged
+  at **11,605** (`cc1d544e…c805`), TM sidecars unchanged, H255 frozen, H963 stays 🟡 WAITING ON
+  OWNER, the historical NO-GO and the pilot's concurrency deviation preserved. Packet:
+  [H1080](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1080-Opus_SanskritLexicography_pwg-ru-killgate-envelope-correction-packet_16.07.26.md).
+  - **C-01 (critical):** `KILL_CEIL_MS` was lowered **480 000 → 180 000** without re-deriving the
+    envelope, silently breaking the invariant the code itself still asserts
+    ([`gen_opt_harness2.py:164-166`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):
+    *"no legit call … is ever killed"*) for any skel > 3 556 B. **All three** constants drifted from
+    [`FAILURE_MODES_AND_KILL_GATE_2026-07-04.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md)
+    (BASE 30 000→20 000, FLOOR 120 000→45 000, CEIL 480 000→180 000) and the doc's worked envelope
+    table is now fiction — every size ≥ ~1 828 B gets a flat 180 s. **Mechanism:** the gate existed to
+    *discriminate* legit-slow from doomed-stall; at a flat 180 s it fires on both identically, so it
+    degraded from a stall detector into a blunt fixed timeout **below the work's own expected
+    duration**. Measured on the pilot: skel 5 606 B, expected 272 s, granted **180 s = 0.66×** → killed.
+    **Quantified over the real 114-head runnable nominal universe** (one card per call = the *most
+    generous* config): only **7–20 % reliably deliverable**, **46–66 % undeliverable on ANY route**, and
+    **band-5 ultra-core (n=82) is 4 % SAFE / 70 % DOOMED** (median raw 15 144 B vs band-4's 8 242 B) —
+    scholarly priority and deliverability are **anti-correlated**. **Therefore
+    [H909](https://github.com/gasyoun/Uprava/blob/main/handoffs/H909-Opus_SanskritLexicography_h818-foreign-route-paired-probe-analysis_14.07.26.md)
+    / the foreign route is necessary-but-nowhere-near-sufficient**: a perfect, instant route still
+    leaves ~70 % of band-5 dead. Carries an **`@DECIDE`** — the fix collides with MG's standing
+    *"NOTHING runs past 3 min"* rule.
+  - **C-02 (high):** the LANG_PARITY gate **hard-aborts** `window_selftest` (`:5192` runs a bare
+    `for test in (…): test()` with no per-test isolation), so **131 defined / 104 PASS / 27 never run
+    (20.6 %)** — and because the parity decision is deliberately human-gated, that fifth of the suite
+    is dark *indefinitely*. `.ai_state.md`'s recorded H971 "131 PASS" is no longer reachable.
+  - **C-03 (high):** **rung 3 was measurable offline all along.**
+    `node src/pilot/accept_sensecount_test.js <harness>` passes *against the pilot's own real harness*,
+    proving SANLOSS/TNMASK **true-positive sensitivity** (drop 1st/middle/last/2 senses) **and the
+    armed hard-reject path** at zero cost. The live canary is the wrong instrument — it only exercises
+    the detector if the model misbehaves, and the model didn't. What genuinely still needs live calls is
+    only the **FP rate on real output**, which C-01 currently prevents from existing.
+  - Evidence (machine-readable, in [`pwg_ru/h963/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h963)):
+    `campaign_journal.md` (append-only, 6 checkpoints) · `campaign_windows.jsonl` (10) ·
+    `campaign_cards.jsonl` (3) · `candidate_selection.jsonl` (114) · `artifact_manifest.sha256`.
+    All 4 pilot artifact SHA-256s re-verified and matched exactly.
+
 - **H963 c4 owner-override bounded pilot — GENERATED, NOT PROMOTED; the latency NO-GO has a
   production consequence.** An explicit owner override of the 30 s launch prohibition, taken
   after the Gate-0 NO-GO below, run as **two** attempt-specific manifests (the execution-manifest
