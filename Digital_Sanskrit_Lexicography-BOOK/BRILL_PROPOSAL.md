@@ -1,6 +1,6 @@
 # Book proposal — *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph*
 
-_Created: 08-07-2026 · Last updated: 10-07-2026_
+_Created: 08-07-2026 · Last updated: 17-07-2026_
 
 Draft proposal for the single-authored monograph **M01**, built to the
 [Brill Book Proposal Guidelines](https://brill.com/fileasset/downloads_products/brill_bookproposal_guidelines.pdf)
@@ -97,6 +97,10 @@ thesis stated; a roadmap of the book.
   "two metalanguages" motif.
 - **Ch. 2 · The Measurement Framework** *(← A01, 4/5).* The methodological spine: evidence
   grading, reproducibility, the graph model. The apparatus the later chapters lean on.
+  Carries the marked section *The corpus as a bounded witness* (~7 pp., book-only new
+  writing; ruled 13-07-2026, written 17-07-2026): the DCS corpus disclosure, the
+  absence-inference rule, and the statistical-practice contract that Ch. 3/5/11/13 cite
+  instead of restating.
 
 ### Part II — Macrostructure: the shape of the dictionary
 

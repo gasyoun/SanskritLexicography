@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 11-07-2026_
+_Created: 06-07-2026 · Last updated: 17-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -397,6 +397,12 @@ is resolved as **(b) — a marked section inside Ch. 2** ("The corpus as a bound
 ~6–8 pp.), *not* a standalone chapter. The 14-chapter/15-article architecture is unchanged;
 the DCS-disclosure + statistical-practice + absence-inference material is written into Ch. 2
 at its next revision. Both `@DECIDE` forks from H505 are now closed.
+**✍️ Written 17-07-2026** (H1078, Fable 5 `claude-fable-5`):
+[ch02 §6 *The corpus as a bounded witness*](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
+— §6.1 DCS disclosure (5,688,416 content tokens · 270 texts · 95,457 lemmas · 41.9 % hapax),
+§6.2 the absence-inference rule, §6.3 the five-clause statistical contract, §6.4 the binding
+map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" named in the
+15-chapter-era fork text); ch02's old §6–§9 renumbered §7–§10.
 
 **Done 13-07-2026 (H846 execution, Opus 4.8 `claude-opus-4-8`):**
 - ✅ **Ch. 1 converted journal→book** →
