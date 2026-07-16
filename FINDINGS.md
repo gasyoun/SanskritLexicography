@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 13-07-2026_
+_Created: 26-06-2026 · Last updated: 16-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -2210,6 +2210,25 @@ When auditing pwg_ru no_pwg output quality (H911 LOCAL-READINESS gate), three re
 > 14-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`, owner-authorized executor-override of minted Fable 5).
 
 ---
+
+### §86. DCS verbal-feature annotation density collapses for later texts — feats-based diachronic metrics measure ANNOTATION, not language
+
+**Measured 16-07-2026** (Fable 5 `claude-fable-5`, H1000, on the pinned `dcs_full.sqlite`,
+dcs-conllu 04e0778): tagged past participles (`feat_verbform=Part` + `feat_tense=Past`) fall
+Ṛgveda **1,874** → Mahābhārata 465 → Kathāsaritsāgara 14 → Daśakumāracarita **0** — in a
+7th-century prose text saturated with ta-participles. Person-annotation density falls in
+parallel (13.9% of tokens → 6.4%). Any cross-text metric built on DCS verbal FEATURES
+(finite-verb rates, participle rates, nominal-sentence detection via finiteness) therefore
+tracks the corpus's annotation coverage, not Sanskrit. **upos, by contrast, is 100% complete
+on every text probed**, and the mwt segmentation (surface-word spans) is likewise structural —
+diachronic/style comparisons must be built on those layers, with feats-based signals at most
+CONDITIONAL (internally normalized, e.g. voice share among annotated finite verbs) and never
+verdict-bearing. First consumer: SanskritGrammar's
+[`period_style_gradient.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/period_style_gradient.py)
+(H1000, §207 style-gradient measurement — the naive feats-based draft produced an inverted
+ta-participle "gradient" before this was caught; the shipped verdict rests on upos/mwt axes
+only). Related: §81 (vidyut-cheda lemmatization divergence — a different DCS-derived-layer
+trap in the same family).
 
 ### §85. A clean-looking subset is not promotable evidence when its audit or execution contract failed
 
