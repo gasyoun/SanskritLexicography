@@ -2308,6 +2308,52 @@ This keeps retry cost policy split by lane without allowing one lane to erase th
 > [`no_pwg_scale_plan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_scale_plan.py)) ·
 > 15-07-2026, Codex/GPT-5.
 
+### §86. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)
+
+Any plan to put a frequency layer on the samāsa taxonomy — the
+[SamasaChakram](https://github.com/gasyoun/SamasaChakram) wheel's 58 leaf subtypes, a
+distribution table, a "which compound type is commonest" claim — runs into two independent
+walls, both measured rather than assumed.
+
+**Wall 1 — no type label anywhere.** DCS carries `token.feat_case='Cpd'` on **841 052**
+compound members across 396 571 sentences, but **no samāsa-type annotation** (evidence limit
+EM4, confirmed hard in
+[H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md)).
+The VisualDCS compound archive does not rescue this: despite its name,
+[`derived-data/Kompozity/категории композитов.ods`](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Kompozity)
+(401 490 rows, columns `Композит · Состав · Основ · Частота · <per-text counts>`, 417 410
+compound tokens total) means by *категория* the **number of stems**, not the samāsa class —
+`rājendra; rājan indra; 2; 863; …`. Composition depth is fully populated; type is absent.
+
+**Wall 2 — the textbook examples are not corpus words.** The obvious fallback ("show each
+leaf's canonical example's corpus frequency") was measured against that 401k-row table: of
+the wheel's 58 canonical examples, **8 are attested at all** (14%), with frequencies of
+147 (`puruṣavyāghra`), 37 (`rājaputra`), 10, 8, 1, 1, 1, and **0** (`saputra`). The other 50
+— `grāmagata`, `kumbhakāra`, `yudhiṣṭhira`, `rājadanta`, `vanavāsa`, `śītoṣṇa` … — do not
+occur. Matching was stem-normalized (final `ḥ/ṃ/m/ṁ` stripped, brackets/hyphens removed);
+the failure is real, not an encoding artifact: 17/58 appear in the bare
+[`CompDic.csv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/CompDic.csv)
+headword list, which carries no counts.
+
+The reusable rule: **the vyākaraṇa example inventory is a pedagogical artifact, not a corpus
+sample** — these forms were minted to be minimal and memorable, and their rarity measures the
+grammarians' taste, not their type's productivity. `rājaputra`'s 37 tokens say nothing about
+how common ṣaṣṭhī-tatpuruṣa is (it is everywhere). So an example-frequency layer is worse
+than no layer: it is a *type*-frequency claim in disguise, and it inverts the truth on the
+most-taught subtypes. Frequency at the 4 coarse classes is reachable only via new annotation
+(H989's κ-gated n≈120 sample, or an external labeller such as Kulkarni's SCL compound-type
+identifier / the Krishna et al. 2016 labelled set — 4 classes, never 58); frequency at leaf
+granularity has no path from present data at all.
+
+> **Source:** measured 16-07-2026 while scoping a frequency layer for the
+> [samāsa-cakra wheel](https://gasyoun.github.io/SamasaChakram/) — stem-normalized lookup of
+> [`samasacakra-taxonomy.json`](https://github.com/gasyoun/SamasaChakram/blob/main/samasacakra/samasacakra-taxonomy.json)'s
+> 58 `ex` values against `категории композитов.ods` (streamed via `iterparse`) and
+> [`parts.csv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/parts.csv)
+> (2 663 rows, 0 hits — too small a slice to matter). Corpus counts for wall 1 quoted from
+> H989's scout against the pinned `dcs_full.sqlite` (`source_commit 04e0778`). Related: §66
+> (a different DCS frequency-workbook trap) · Opus 4.8 (`claude-opus-4-8`).
+
 ---
 
 _Started 2026-06-26 (relocated from `Uprava/FINDINGS.md`, which now holds **non-Sanskrit**

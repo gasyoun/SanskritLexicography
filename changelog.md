@@ -15,6 +15,14 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **FINDINGS §86 — samāsa-type frequency does not exist in any org corpus; the canonical
+  examples are corpus-ghosts (16-07-2026, Opus 4.8 `claude-opus-4-8`)**: measured while
+  scoping a frequency layer for the [samāsa-cakra wheel](https://gasyoun.github.io/SamasaChakram/).
+  Two walls, both measured: DCS has 841 052 compound members but no type label (EM4, per H989),
+  and VisualDCS's `категории композитов.ods` means *stem count* by "категория", not samāsa class;
+  the fallback of showing each leaf's example frequency dies at **8/58 attested** (max 147,
+  min 0). Records why an example-frequency layer is worse than none — it is a type-frequency
+  claim in disguise that inverts the truth on the most-taught subtypes.
 - **`ONBOARDING_NEW_CONTRIBUTOR_RU.md` — gentle Russian on-ramp for a non-technical Sanskrit contributor (16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, H1029)**:
   fills the gap between the git-assuming English `CONTRIBUTING.md` and the deep-project
   `MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md` — a 5-rung ladder (talk-to-Claude → GitHub issues →
