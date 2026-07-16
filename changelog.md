@@ -25,6 +25,12 @@ not an error.
     proofreading the English/Latin side of entries (Apte/MW) against the scan, plus a
     simplest fallback (flag illegible scans / dead cross-reference links). Makes the first
     task reachable without reliable Devanagari.
+  - **First-task redesign (16-07-2026):** replaced the open-ended "open 5–10 entries and
+    hunt for OCR errors" (unbounded, low-yield, unclear done) with a **bounded verification
+    task against the live `HeadwordLists/A_TYPO_QUEUE.md` worklist** — verify the 4
+    MW-flagged suspect headwords vs the scan (confirm → files a correction; refute → clears
+    a false positive), directly feeding print-readiness gate A. Both variant B and the
+    fallback rebounded to a page/column unit rather than "read the whole dictionary".
 
 ## [1.9.19] - 2026-07-15
 
