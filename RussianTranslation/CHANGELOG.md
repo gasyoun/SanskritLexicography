@@ -10,6 +10,35 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1151: behavioral pin for the grammar-`{Tn}` restore (premise found already fixed)
+
+- **The handoff's diagnosed defect no longer exists on master.** The 13-07-2026 H858 diagnosis
+  (RUN_LOG:909, live on `gokzuraka` — `"grammar": "{T2}"` promoted) predates the C-01
+  centralization ([H963](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/card_fields.py)/H1080):
+  both restore lanes (plain `restoreCard` and the heal/stitch path, which restores `rec.h`/`rec.grammar`
+  **before** `owners.push`) now read `RESTORE_SPEC = card_fields.js_restore_spec(field)`, whose record
+  level is `('h', 'grammar')`. Verified empirically, not by reading: a synthetic harness generated from
+  current master restores `record.grammar` `{T2}`→value in 8/8 behavioral checks. Stated per the
+  honest-close pattern — this release pins the fixed behaviour, it does not fix anything.
+- [`src/pilot/grammar_restore_test.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/grammar_restore_test.js)
+  — behavioral pin in the house pattern ([FINDINGS §82](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md):
+  extract the REAL emitted `restore()`/`restoreCard()`/`RESTORE_SPEC` from a generated harness, never a
+  hand-written copy). 8 checks: spec keeps `grammar`+`h` at record level; the gokzuraka shape (`{T2}` in
+  `record.grammar`) restores; card/sense fields unregressed; no `{Tn}` survives; out-of-range `{T9}`
+  stays literal (C-42: never synthesise). Wired into `window_selftest.py` as
+  `test_grammar_field_restore_behavioral` (synthetic-harness generation, zero paid calls) — suite now
+  **136/136 green**; a future edit that drops `grammar` (or `h`) from the record-level restore fails
+  the suite, not the store.
+- **Blast radius, report-only (store untouched):** the main-tree `pwg_ru_translated.jsonl`
+  (11,603 rows) carries **zero** `{Tn}` tokens in ANY field — the promoted store rows have no
+  `grammar` field at all (grammar is card-level, read by consumers from cards, not store rows), and
+  the historical `{Tn}` residue (670 rows incl. gokzuraka's class) was already repaired by
+  [PR #510](https://github.com/gasyoun/SanskritLexicography/pull/510)/[PR #517](https://github.com/gasyoun/SanskritLexicography/pull/517).
+  Nothing to repair; nothing was repaired. `node --check` on a fresh generated harness: OK.
+- LANG_PARITY ledger: 28 entries tracking `window_selftest.py` re-verified and re-hashed
+  (`--update-hash`); the added test is language-agnostic (RESTORE_SPEC is lang-parameterized;
+  the record level does not branch on `--lang`).
+
 ### Added — H1080 follow-up: the 468 reconstructed headwords are now marked (owner-authorised 17-07-2026)
 
 - **`provenance.h_reconstructed` on 468 rows** (+ `iast_reconstructed` 462, `grammar_defaulted_empty`
