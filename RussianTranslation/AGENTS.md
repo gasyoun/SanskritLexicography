@@ -19,8 +19,14 @@ pipeline, with article-comparison Russian review work as the secondary track.
 
 ## PWG → Russian Production Loop
 
-Use the optimized Max Workflow route. Do not run the committed template
-`src/pilot/run_pilot_wf.js` directly for production windows.
+The production route is the **headless CLI on manifest v2** — `headless_worker.py` under a
+profile-bound manifest v2 (`execution_route: claude-cli-headless`), driven by
+`bounded_staged_run.py` / the coordinator. H1110 replaced the former Max-Workflow-session execution;
+the Workflow harness lane (`run_pilot_wf.opt2.js`) is retained only for historical forensics, not
+production. Do not run the committed template `src/pilot/run_pilot_wf.js` directly for production
+windows. Per-profile call concurrency is serialized by the kernel-backed `ActiveCallClaim`, agent and
+timeout budgets are enforced in `headless_worker.py`, and a `--stop-before-promote` review checkpoint
+gates promotion.
 
 Immediate next operator action: read the live queue in
 [`.ai_state.md`](.ai_state.md) — do NOT take a hardcoded root list from this
@@ -48,8 +54,10 @@ Canonical loop from the repo root:
 ```powershell
 python src\pilot\root_window_status.py <root>
 python src\pilot\gen_opt_harness2.py <root>          # batched+masked, canonical (-72..-90% cost)
-# run src\pilot\run_pilot_wf.opt2.js in Claude/Max Workflow and save wf_output.json
-# (use --out=run_pilot_wf.<tag>_<root>.js when several chats generate at once)
+# HEADLESS route (H1110): execute the emitted manifest v2 via headless_worker.py with
+# CLAUDE_CONFIG_DIR bound to the profile, driven by bounded_staged_run.py / the coordinator,
+# saving wf_output.json. The legacy Max-Workflow lane (run_pilot_wf.opt2.js in a Workflow) is
+# retained for forensics only, not production.
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
