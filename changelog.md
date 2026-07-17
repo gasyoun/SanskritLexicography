@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H963 offline launch-readiness report recovered from an abandoned worktree (17-07-2026, Opus 4.8 `claude-opus-4-8`)**: [`RussianTranslation/pwg_ru/h963/H963_OFFLINE_LAUNCH_READINESS_REPORT_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_OFFLINE_LAUNCH_READINESS_REPORT_2026-07-16.md) — a read-only planning snapshot (cheapest safe first tranche, plus full-drain cost in calls and agents) found uncommitted in the `SanskritLexicography-h963-resume` worktree during an org-wide worktree sweep; the only at-risk artifact across 154 repos swept. Committed under its own brief's exception ("keep runtime reports uncommitted **unless repository policy explicitly tracks them**" — the six sibling `H963_C4_*.md` reports in the same directory are tracked and nothing there is gitignored), and its self-declared "UNCOMMITTED" status header rewritten to state this rather than ship a false claim. Makes no generation call, promotes nothing, writes to no store, and does **not** lift the launch NO-GO gate (`c5`/`c6` logged out; `c4` latency ~30–53 s against the ≤ 30 s ceiling — both owner-gated). Delivered via [PR #518](https://github.com/gasyoun/SanskritLexicography/pull/518).
+
 ## [1.14.1] — 17-07-2026
 
 ### Added
