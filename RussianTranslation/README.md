@@ -127,8 +127,10 @@ forced the change):
 
 ## Operating the pipeline (quickstart)
 
-The production route is the frequency-window Max workflow documented step by
-step in
+The production route is the **headless CLI on manifest v2** (`headless_worker.py`,
+`execution_route: claude-cli-headless`), driven by `bounded_staged_run.py` / the coordinator (H1110
+replaced the former Max-Workflow-session execution; the Workflow lane is retained for forensics
+only). The frequency-window operating steps are in
 [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md);
 task-oriented flows for every operator situation are in
 [`USE_CASES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/USE_CASES.md).
@@ -136,8 +138,10 @@ task-oriented flows for every operator situation are in
 ```powershell
 python src\pilot\perf_preflight.py <root> --json     # cost gate first, always
 python src\pilot\root_window_status.py <root>        # pre-spend truth source
-python src\pilot\gen_opt_harness2.py <root>          # emit the optimized harness
-# run src\pilot\run_pilot_wf.opt2.js in the Claude/Max Workflow, save wf_output.json
+python src\pilot\gen_opt_harness2.py <root>          # emit the optimized manifest v2 + harness
+# HEADLESS route (H1110): execute the emitted manifest v2 via headless_worker.py (profile-bound),
+# driven by bounded_staged_run.py / the coordinator, saving wf_output.json. The Max-Workflow lane
+# (run_pilot_wf.opt2.js) is retained for forensics only.
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
