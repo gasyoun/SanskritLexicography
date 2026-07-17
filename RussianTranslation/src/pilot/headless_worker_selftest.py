@@ -166,6 +166,35 @@ def test_cost_telemetry_survives():
     print('  R5 cost: usage/cost sum across calls; missing -> cost_evaluable False + counter; budget refusal adds nothing')
 
 
+def test_foreign_route_refused_before_any_call():
+    """P-3: in the execution flow (validate_profile gates execute), a v2 manifest declaring a
+    foreign route is refused BEFORE execute runs, so the injected model runner is NEVER invoked --
+    not merely that validate_profile() raises in isolation."""
+    import execution_contract as ec
+    called = {'n': 0}
+    def counting_runner(argv, **kwargs):
+        called['n'] += 1
+        return success_runner(argv, **kwargs)
+    with tempfile.TemporaryDirectory() as cfgroot:
+        cfg = os.path.join(cfgroot, 'p'); os.makedirs(cfg)
+        m = manifest()
+        m['schema'] = ec.SCHEMA_V2
+        m['execution'] = {'profile_slot': 'c4',
+                          'config_dir_fingerprint': ec.config_dir_fingerprint(cfg),
+                          'execution_route': 'workflow', 'executor_lane': 'serial',
+                          'validation_method': 'audit', 'model_identifier': m['model']}
+        m['key_provenance'] = {'agni': 'real'}
+        try:                       # replicate headless_worker.main()'s v2 order
+            ec.validate_profile(m, cfg)
+            h.execute(m, claude=sys.executable, runner=counting_runner)   # must NOT be reached
+        except ValueError as e:
+            assert 'execution_route' in str(e), e
+        else:
+            raise AssertionError('P-3: foreign route reached execute')
+    assert called['n'] == 0, 'P-3: runner was called despite a foreign route'
+    print('  P-3 route: foreign execution_route refused before any runner call (runner uncalled)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -393,6 +422,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_call_timeout_clamped()
     test_card_tokens_include_grammar()
     test_cost_telemetry_survives()
+    test_foreign_route_refused_before_any_call()
     print('headless_worker_selftest: PASS')
 
 
