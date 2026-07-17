@@ -88,6 +88,24 @@ def promoted_pairs(field='russian'):
 PROMOTED_PAIRS = promoted_pairs('russian')
 
 
+# C-17: the masked fields whose {Tn} tokens must MATCH the source skeleton for a card to pass the
+# fragment-fidelity guard. This is the SOURCE-mirror subset -- the model echoes the German
+# skeleton's placeholders back into `record.grammar` and `sense.german`; the output-only fields
+# (h/iast/tag/differentia) are not in the skeleton and must NOT enter the multiset. Python
+# `card_token_multiset` and JS `cardTokens` both derive from this one tuple, so they cannot drift
+# (the C-17 defect: Python omitted `grammar` while JS included it -> a grammar-{Tn} card was
+# fidelity-rejected on the Python/headless lane and accepted on JS).
+TOKEN_FIDELITY_FIELDS = (('record', 'grammar'), ('sense', 'german'))
+
+
+def js_token_fidelity_spec():
+    """`TOKEN_FIDELITY_FIELDS` as a JSON literal, for interpolation into the JS harness."""
+    return json.dumps({
+        'record': [n for lvl, n in TOKEN_FIDELITY_FIELDS if lvl == 'record'],
+        'sense': [n for lvl, n in TOKEN_FIDELITY_FIELDS if lvl == 'sense'],
+    })
+
+
 def sense_masked(field):
     """Sense-level masked fields for target-language field `field` (e.g. 'russian')."""
     out = list(SENSE_MASKED_COMMON)
