@@ -106,6 +106,66 @@ def test_card_tokens_include_grammar():
     print('  R2 tokens: card_token_multiset counts grammar+german via card_fields.TOKEN_FIDELITY_FIELDS')
 
 
+def test_cost_telemetry_survives():
+    """R5 (C-25): the CLI wrapper's usage/cost survive into summary['usage']:
+      * a resolving call surfaces its usage/cost (schema-valid card, record `h` present — the test
+        must not embed the C-02 missing-h defect);
+      * multiple calls (retry/split/heal) SUM, never overwrite by the last response;
+      * a measured call + a call missing usage -> known telemetry retained, cost_evaluable False,
+        missing_usage_calls incremented, observed_cost_usd authoritative (accumulated, not recomputed);
+      * a budget refusal (no subprocess) adds neither usage nor cost."""
+    U = {'input_tokens': 100, 'output_tokens': 50,
+         'cache_read_input_tokens': 10, 'cache_creation_input_tokens': 5}   # disjoint fields
+
+    def wrap(cards, usage=U, cost=0.01):
+        w = {'structured_output': {'cards': cards}}
+        if usage is not None:
+            w['usage'] = usage
+        if cost is not None:
+            w['total_cost_usd'] = cost
+        return proc(stdout=json.dumps(w))
+
+    def sequence(seq):
+        def runner(argv, **k):
+            runner.i += 1
+            return seq[min(runner.i - 1, len(seq) - 1)]
+        runner.i = 0
+        return runner
+
+    valid_card = {'key1': 'agni', 'iast': 'agni', 'notes': '',
+                  'records': [{'h': '', 'grammar': '{T1} m.', 'senses': [
+                      {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
+
+    # resolving call surfaces usage/cost (schema-valid card)
+    payload = execute(manifest(), lambda argv, **k: wrap([valid_card], U, 0.0123))[0]
+    assert payload['results'][0]['card'], 'schema-valid card should resolve'
+    u = payload['summary']['usage']
+    assert (u['input_tokens'], u['output_tokens'], u['cache_read_tokens'],
+            u['cache_creation_tokens']) == (100, 50, 10, 5), u
+    assert u['subagent_tokens'] == 165 and u['cost_evaluable'] is True and u['priced_calls'] == 1, u
+    assert abs(u['observed_cost_usd'] - 0.0123) < 1e-9, u
+
+    # (a) two calls SUM, not overwrite (empty cards -> retry to whole_attempts=2)
+    u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], U, 0.02)]))[0]['summary']['usage']
+    assert u['priced_calls'] == 2 and u['input_tokens'] == 200 and u['subagent_tokens'] == 330, u
+    assert abs(u['observed_cost_usd'] - 0.03) < 1e-9 and u['cost_evaluable'] is True, u
+
+    # (b) measured + missing-usage -> retain telemetry, cost_evaluable False, counter, authoritative cost
+    u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], usage=None, cost=None)]))[0]['summary']['usage']
+    assert u['input_tokens'] == 100 and u['subagent_tokens'] == 165, u
+    assert u['cost_evaluable'] is False and u['missing_usage_calls'] == 1, u
+    assert abs(u['observed_cost_usd'] - 0.01) < 1e-9, u
+
+    # (c) a budget refusal (no subprocess) adds neither usage nor cost
+    m = manifest(); m['budgets'] = {'max_translate_agents': 1}
+    r = sequence([wrap([], U, 0.05)])
+    u = execute(m, r)[0]['summary']['usage']
+    assert r.i == 1, 'budget should cap to 1 actual spawn, got %d' % r.i
+    assert u['priced_calls'] == 1 and u['input_tokens'] == 100, u
+    assert abs(u['observed_cost_usd'] - 0.05) < 1e-9, u
+    print('  R5 cost: usage/cost sum across calls; missing -> cost_evaluable False + counter; budget refusal adds nothing')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -332,6 +392,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_translate_budget_binds()
     test_call_timeout_clamped()
     test_card_tokens_include_grammar()
+    test_cost_telemetry_survives()
     print('headless_worker_selftest: PASS')
 
 
