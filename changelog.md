@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+## [1.14.1] — 17-07-2026
+
+### Added
+- **FINDINGS §91 — DCS `feat_formation` isolates the aorist from the perfect within `feat_tense='Past'` (17-07-2026, Sonnet 5 `claude-sonnet-5`)**:
+  harvested from [H1134](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1134-Opus_SanskritGrammar_whitney-aorist-per-text-tagger_17.07.26.md)
+  ([SanskritGrammar PR #357](https://github.com/gasyoun/SanskritGrammar/pull/357)) via the
+  registry-audit reference-harvest reflex, so the technique survives handoff archival. DCS has no
+  aorist tense code — `feat_tense='Past'` conflates aorist and perfect — but `feat_formation IN
+  {root, them, s, is, red, sa, sis}` cleanly isolates the seven aorist classes (12,054 finite
+  tokens / 1.2% of verbal forms), correcting the earlier form-set method's 2,452 / 0.31% undercount
+  (it missed the two largest classes). See [FINDINGS.md §91](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
 ## [1.14.0] — 17-07-2026
 
 ### Added
