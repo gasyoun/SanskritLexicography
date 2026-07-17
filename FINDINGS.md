@@ -2444,14 +2444,24 @@ Three traps, all in *counting* MW's citation apparatus, all of which inflate how
    census's own first run that silently reclassified **~46,000** citations as attested and drove the
    `L.` stratum to **zero**. It was caught only because `<ls>L.</ls>` = 40,212 was independently known.
 
-**Consequence.** [csl-atlas' `data/obs/citation_registers.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json)
-MW row carries (1) and (2) — its extractor is literal at
-[`parse_cslorig.py:41`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/parse_cslorig.py#L41).
-Its published figures (`ls: 312160`, `lsWithLocator: 47289`) **reproduce exactly** under its own rule, which
-localises the divergence to markup shape rather than a parser disagreement. Regeneration is queued as
-[H1086](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1086-Sonnet_csl-atlas_mw-row-regenerate-ls-shapes_17.07.26.md)
-(corpus-wide — the fix touches every `<ls>`-bearing dict). The atlas's direction and corpus-wide conclusion
-are **not** in dispute; MW stays a locator-poor Register-A dictionary.
+**Consequence — fixed 17-07-2026** ([H1086](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1086-Sonnet_csl-atlas_mw-row-regenerate-ls-shapes_17.07.26.md),
+Sonnet 5 `claude-sonnet-5`). [csl-atlas' `data/obs/citation_registers.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json)
+MW row carried (1) and (2) — its extractor was literal at
+[`parse_cslorig.py:41`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/parse_cslorig.py#L41)
+(now `<ls(?:\s+n="([^"]*)")?\s*>(.*?)</ls>`, `[^"]*` not `[^>]*` so an embedded literal `>` in one
+malformed mw.txt line — `<ls n=">Dhātup. iii,">4</ls>` — doesn't truncate the match), and its
+locator rule at `citation_register_gaps.py:49` was arabic-digit-only (now arabic OR lowercase
+roman, case-sensitive). Regenerated MW row: **ls=320,828** (exact match) / **lsWithLocator=60,822**
+(18.96%, exact match to 2dp) — 2 citations off the MWS `register_census.py` "attested" count of
+60,820 by design: `L. i` and `W. 1` carry an incidental locator-shaped token but MWS's stratification
+excludes them (siglum ∈ MW-specific HEDGE/AUTHORITY sets `{L.}`/`{W., MW., Cat.}`). Baking those
+MW-only sigla into csl-atlas' generic 44-dict rule would be exactly the kind of dictionary-specific
+overfit this defect class warns against — A08's `lsWithLocator` is deliberately "any locator token
+present" (an upper bound on resolvability), not MWS's stricter "genuinely a textual attestation".
+This is corpus-wide, not MW-only, and PWG (the largest `<ls>` citer) moved the most: 568,730 → 801,788
+(+41%), which shifts the corpus aggregate materially (~59%/41% locator split → ~67%/33%). csl-atlas
+PR: see `docs/CITATION_REGISTERS.md` for the full before/after table. The atlas's direction and
+corpus-wide conclusion are **not** in dispute; MW stays a locator-poor Register-A dictionary.
 
 **Second-order consequence — the number that travelled.** MWS' `ROADMAP.md` + `SYNTHESIS.md` gave MW's
 apparatus as "22.3% meta + **40.2%** bare-locator", implying a ~37.5% text-linkable ceiling. The 40.2% was
