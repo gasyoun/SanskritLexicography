@@ -107,6 +107,8 @@ def category_of(sec):
         return "interfaces"
     if h2.startswith("iv.") or h2.startswith("tools") or "tools" in h2:
         return "tools"
+    if h2.startswith("vi.") or "methods" in h2 or "algorithm" in h2:
+        return "methods"
     if h2.startswith("v.") or "drill" in h2:
         return "drills"
     if "changelog" in h2:
@@ -145,6 +147,7 @@ TABS = [
     ("interfaces", "Интерфейсы"),
     ("tools", "Инструменты"),
     ("drills", "Упражнения"),
+    ("methods", "Методы"),
     ("changelog", "Changelog"),
 ]
 
