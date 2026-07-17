@@ -8,7 +8,7 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
-## [Unreleased]
+## [1.16.0] - 2026-07-17
 
 ### Added — H1151: behavioral pin for the grammar-`{Tn}` restore (premise found already fixed)
 
