@@ -114,9 +114,12 @@ def main():
         else:
             raise AssertionError('P-3: foreign execution_route executed')
 
-        # R9: KERNEL-backed lock. A live SEPARATE process holding it refuses a second acquisition;
-        # forcibly terminating the holder releases the lock IMMEDIATELY (no TTL, no PID probe, no
-        # stale adoption). A leftover lock file may remain but must not represent ownership.
+        # R9 KERNEL-backed lock -- this is ALSO the P-2 pin ("two concurrent launches on one
+        # fingerprint serialise"): a live SEPARATE process holding it refuses a second acquisition,
+        # so cross-process concurrency on one profile is bounded to 1 regardless of the manifest's
+        # advisory max_wide/stagger. Forcibly terminating the holder releases the lock IMMEDIATELY
+        # (no TTL, no PID probe, no stale adoption). A leftover lock file may remain but must not
+        # represent ownership.
         srcdir = os.path.dirname(os.path.abspath(__file__))
         fp = manifest['execution']['config_dir_fingerprint']
         r9 = os.path.join(d, 'r9'); os.makedirs(r9)

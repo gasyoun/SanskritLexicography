@@ -1287,6 +1287,13 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'max_agents_factor': MAX_AGENTS_FACTOR,
         'max_agents_headroom': MAX_AGENTS_HEADROOM,
         # H255/H811 low-width staggered dispatch: <=MAX_WIDE concurrent units (0 = unbounded).
+        # P-2 (C-12): max_wide/stagger bound INTRA-process dispatch only -- the JS harness's
+        # boundedParallel honours them within one process, but they CANNOT bound cross-process
+        # concurrency (two node processes each max_wide=1 = 2 concurrent), and the serial headless
+        # executor ignores them entirely. The cross-process guarantee is the kernel-backed
+        # execution_contract.ActiveCallClaim (R9): one active model call per config_dir_fingerprint,
+        # so two launches on ONE profile serialise regardless of these hints. They are advisory
+        # dispatch hints, not a cross-process bound -- see execution_contract_selftest's R9/P-2 test.
         'max_wide': MAX_WIDE,
         'stagger_ms': STAGGER_MS,
         # H442 per-card heal budget: caps the heal agent() calls ONE card may spend so a dense
