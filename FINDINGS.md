@@ -42,6 +42,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§3. The Warnemyr scrape union-smears homonym classes](#3-the-warnemyr-scrape-union-smears-homonym-classes) — local Whitney class files merge homonyms' classes; derive from the live paradigm pages.
 - 🟡 [§4. PWG nominal grammar compresses into 335 paradigm tokens](#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens) — 98,639 of 123,366 entries carry a Zaliznyak-style token.
 - 🟡 [§63. vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute](#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) — five añc dhātus (4añc recoverable), no and, but ast IS Paninian; grep vidyut as `ancu`, not `aYc`.
+- 🟠 [§90. A spelling-keyed join onto Whitney's roots union-smears homonyms](#90-a-spelling-keyed-join-onto-whitneys-roots-union-smears-homonyms--one-authorial-entry-lands-on-every-homonym-of-that-spelling-and-the-rows-still-read-authorial) — §3's failure class, now on an *author's own* data: «2 iṣ» asserted of iṣ¹+iṣ²; abstain on unique-*resolution*, not non-contradiction; the legitimate «gam, gach» concordance looks identical. Aggregates stayed correct — only provenance broke.
 
 **Corpus & parallel-text data**
 
@@ -200,6 +201,10 @@ map; Warnemyr's `ROMAN ?` uncertainty is kept in a separate `class_uncertain` fi
 never in the asserted class.
 Implication: never read verb class from `Whitney_roots_class-PP.txt` / old `app_data.json`;
 treat any single-valued class on a homonym root as suspect union-smear and re-derive.
+**Recurred 17-07-2026 as [§90](#90-a-spelling-keyed-join-onto-whitneys-roots-union-smears-homonyms--one-authorial-entry-lands-on-every-homonym-of-that-spelling-and-the-rows-still-read-authorial)** —
+same class, different vector: not a scrape merging classes, but a *spelling-keyed join* smearing an
+author's own classification onto every homonym of that spelling. Whitney's homonym numbering defeats
+anything keyed on the citation form alone; that is the general lesson, and it is not scrape-specific.
 
 > **Source:** [WhitneyRoots `DESIGN.md` §5](https://github.com/gasyoun/WhitneyRoots/blob/main/DESIGN.md)
 > + `.ai_state.md` §Phase 0 — WhitneyRoots · 2026-06-13
@@ -2462,6 +2467,48 @@ This is corpus-wide, not MW-only, and PWG (the largest `<ls>` citer) moved the m
 (+41%), which shifts the corpus aggregate materially (~59%/41% locator split → ~67%/33%). csl-atlas
 PR: see `docs/CITATION_REGISTERS.md` for the full before/after table. The atlas's direction and
 corpus-wide conclusion are **not** in dispute; MW stays a locator-poor Register-A dictionary.
+
+### §90. A spelling-keyed join onto Whitney's roots union-smears homonyms — one authorial entry lands on every homonym of that spelling, and the rows still read `authorial`
+
+**Measured 17-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1065](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1065-Opus_WhitneyRoots_alternation-type-induction-nonpaninian_16.07.26.md);
+[WhitneyRoots PR #44](https://github.com/gasyoun/WhitneyRoots/pull/44), SanskritGrammar
+[#348](https://github.com/gasyoun/SanskritGrammar/pull/348) · [#352](https://github.com/gasyoun/SanskritGrammar/pull/352) ·
+[#353](https://github.com/gasyoun/SanskritGrammar/pull/353) · [#354](https://github.com/gasyoun/SanskritGrammar/pull/354)).
+Third independent instance of the failure class [§3](#3-the-warnemyr-scrape-union-smears-homonym-classes)
+already names — **a join keyed on the citation spelling cannot see Whitney's homonym numbering** — this
+time smearing an *author's own* classification rather than a scrape's:
+
+1. **Unique-spelling ≠ unique root.** Tolchelnikov's Приложение 1 indexes his entries against Whitney
+   («`2 iṣ`», «`1 stu`»). An ingest that binds whenever the *spelling* matches exactly one catalog entry
+   ignores that index, so **one entry lands on every homonym Whitney spells the same way**: his «2 iṣ»
+   was asserted of `iṣ¹` **and** `iṣ²`; his single «1 śṛ» of `śṛ¹`, `śṛ²` **and** `śṛ³`. In
+   `alternation_type.csv` v1.5.0: **15 entries → 31 records, 16 excess assertions**, each carrying
+   `derivation_method=talmud_appendix1`, `grade_confidence=authorial`. Frequency-weighted it bites the
+   common roots — `paś` (DCS rank 24), `pat` (38), `stu` (62), `vṛ` (65), `rudh` (184), `tan` (229).
+2. **The un-indexed case smears too, and is easy to miss.** Where the author gives *no* index («`vakṣ, ukṣ`»)
+   there is no number to contradict — so a homonym guard written only against the indexed case still binds
+   both `ukṣ¹` and `ukṣ²`. This bug survived one round of *this* work's own homonym guard and was caught
+   only by auditing the output for one-entry→many-homonym bindings. ⇒ the abstention rule must be
+   *unique-resolution*, not *non-contradiction*: bind only when the spelling resolves to a single record
+   (or a single homonym-less one).
+3. **The legitimate multi-spelling case looks identical and must NOT be suppressed.** The same catalog
+   row genuinely cross-references *several distinct citation forms* — «gam, gach», «yam, yach», «1 i, ī, ay»
+   — because col4 is the author's own concordance (his [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50)
+   ruling). **49 entries** are of this kind and are authorial data, not inference; the mirror-image bug is
+   dropping them, which left **57 roots** — `gach`, **DCS rank 5** — with no Тип at all. The test that
+   separates the two: *same spelling → several homonyms* = smear; *several spellings → one morpheme* = concordance.
+
+**Consequence.** Two independent joins over the same two files disagreed by exactly this defect (789 vs 794),
+with **0 tip-value disagreements** — the divergence was entirely *which roots may be spoken for*, which is
+why value-level diffing would have shown nothing. Resolved by one canonical join
+([`whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json))
+that abstains on homonym divergence and emits its own audit trail (`talmud_root`/`talmud_ref`/`talmud_match`),
+with the downstream feed **reading** it instead of repeating it. Final: **787/930 classified, 0 smears**;
+**19 roots are Whitney-vs-author homonym divergences parked for the author's ruling** (`pā³` vs his `pā¹`/`pā²`)
+— an editorial-numbering question no induction can settle. The exception rate was **10.5% before and after**,
+so the paper-level finding never depended on the defect: **only the per-root provenance did, and a
+provenance-only defect is invisible to aggregate checks.** ⇒ when a derived asset claims `authorial`, audit
+*one-source-entry→many-target-rows* explicitly; a correct aggregate is not evidence the binding is sound.
 
 **Second-order consequence — the number that travelled.** MWS' `ROADMAP.md` + `SYNTHESIS.md` gave MW's
 apparatus as "22.3% meta + **40.2%** bare-locator", implying a ~37.5% text-linkable ceiling. The 40.2% was
