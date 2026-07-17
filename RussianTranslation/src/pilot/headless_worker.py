@@ -652,8 +652,32 @@ class HeadlessEngine:
         return rows, healed, len(presplit)
 
 
+def _validate_fragment_tm(manifest):
+    """R6 execution-time gate: refuse a manifest whose fragment_tm carries any warm slot with
+    invalid/null owners, BEFORE any paid call. The generator's gview already drops v1 (ownerless) and
+    null-owner rows, but a DIRECT / hand-edited manifest bypasses the generator -- so validate here
+    that every non-empty slot is a v2 shape {senses, owners} whose owners are len(senses) [h, grammar]
+    pairs with BOTH members strings (no None). A bare/legacy (ownerless) slot or a null owner is
+    refused rather than stitched under a null owner."""
+    for key, groups in (manifest.get('fragment_tm') or {}).items():
+        for group in groups or []:
+            for slot in group or []:
+                if not slot:
+                    continue                     # None / empty slot = cache miss, fine
+                senses = slot.get('senses') if isinstance(slot, dict) else None
+                owners = slot.get('owners') if isinstance(slot, dict) else None
+                if not (isinstance(senses, list) and isinstance(owners, list)
+                        and len(owners) == len(senses)
+                        and all(isinstance(p, (list, tuple)) and len(p) == 2
+                                and all(isinstance(x, str) for x in p) for p in owners)):
+                    raise ValueError(
+                        'fragment_tm slot for %r has invalid/null owners (refused before any call): %r'
+                        % (key, owners))
+
+
 def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None):
     validate_manifest(manifest, require_v2=False)
+    _validate_fragment_tm(manifest)      # R6: refuse a null-owner fragment_tm slot BEFORE any call
     engine = HeadlessEngine(manifest, claude, timeout, runner, max_agents_override)
     try:
         results, healed, presplit = engine.run_all()

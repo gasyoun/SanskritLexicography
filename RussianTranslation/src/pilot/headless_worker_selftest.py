@@ -219,6 +219,40 @@ def test_frag_tm_stitch_retains_owner():
     print('  R6 frag-TM: a v2-served warm stitch retains each sense owner (h/grammar), zero calls')
 
 
+def test_null_owner_fragment_tm_refused_before_any_call():
+    """R6 execution-time gate: a DIRECT manifest whose fragment_tm slot carries a null owner
+    ([None,'m.'] / ['2. agni',None]) -- or is ownerless (legacy shape) -- is refused BEFORE any paid
+    call, with the runner PROVEN uncalled. The generator's gview drops such rows, but a hand-edited /
+    direct manifest bypasses it, so the executor validates every slot before stitching."""
+    def never_runner(argv, **kwargs):
+        raise AssertionError('runner was called despite a null/ownerless fragment_tm slot')
+    sense = {'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}
+
+    def _mk(owners_or_missing):
+        m = manifest()
+        key = 'agni'
+        slot = {'senses': [sense]}
+        if owners_or_missing is not None:
+            slot['owners'] = owners_or_missing
+        m['fragment_groups'] = {key: [[{'skeleton': 'Feuer', 'fsha': 'F', 'si': 0}]]}
+        m['fragment_placeholder_maps'] = {key: [[[]]]}
+        m['fragment_tm'] = {key: [[slot]]}
+        m['inputs'] = {key: {'skeleton': 'Feuer', 'portrait': '{}', 'ls': 0, 'sk': 0, 'nws': 0}}
+        m['batches'] = []
+        m['presplit_keys'] = [key]
+        return m
+
+    for bad in ([[None, 'm.']], [['2. agni', None]], None):   # null-h, null-grammar, ownerless
+        try:
+            execute(_mk(bad), never_runner)
+        except ValueError as e:
+            assert 'owner' in str(e).lower(), e
+        else:
+            raise AssertionError('a null/ownerless fragment_tm slot (%r) must be refused before any call' % bad)
+    print('  R6 exec-gate: a direct manifest with a null/ownerless fragment_tm slot is refused before '
+          'any call (runner uncalled)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -448,6 +482,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_cost_telemetry_survives()
     test_foreign_route_refused_before_any_call()
     test_frag_tm_stitch_retains_owner()
+    test_null_owner_fragment_tm_refused_before_any_call()
     print('headless_worker_selftest: PASS')
 
 
