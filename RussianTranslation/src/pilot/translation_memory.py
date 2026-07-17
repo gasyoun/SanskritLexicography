@@ -566,6 +566,7 @@ def build_frags(glob_pattern, lang, out=None):
                 continue
             for fpv in card.get('frag_prov') or []:
                 fsha, senses = fpv.get('fsha'), fpv.get('senses')
+                owners = fpv.get('owners')       # R6: per-sense [h, grammar]; absent for a v1 emit
                 if not fsha or not senses:
                     continue
                 if not frag_senses_sane(senses, lang):
@@ -588,11 +589,13 @@ def build_frags(glob_pattern, lang, out=None):
                     'schema': FRAG_SCHEMA, 'lang': lang, 'fsha': fsha,
                     'src_key': src_key, 'root': root, 'raw_sha256': raw_sha,
                     'n_senses': len(senses), 'senses': senses,
+                    'owners': owners,          # R6: per-sense [h, grammar] owner (frag-TM v2)
                     'wf_file': os.path.basename(fp), 'source_wf_file': os.path.basename(fp),
                     'fragment_address_formula': "sha256(lang + '\\x00frag\\x00' + fragment_source)",
                     'splitter_version': 'autosplit_requeue.plan.v1',
                     'trust_level': TRUST_MACHINE, 'gate_status': 'machine_gated',
-                    'gate_version': 'frag_prov_v1', 'review_status': 'ai_translated',
+                    'gate_version': 'frag_prov_v2' if owners else 'frag_prov_v1',
+                    'review_status': 'ai_translated',
                     'reuse_policy': 'auto_exact', 'source_kind': 'frag_prov',
                     'supersedes': None, 'harvested_at': _utc_now(),
                 })

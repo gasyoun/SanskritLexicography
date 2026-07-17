@@ -195,6 +195,30 @@ def test_foreign_route_refused_before_any_call():
     print('  P-3 route: foreign execution_route refused before any runner call (runner uncalled)')
 
 
+def test_frag_tm_stitch_retains_owner():
+    """R6 (C-02 residual): a warm frag-TM (v2) stitch restores each sense's (h, grammar) owner
+    instead of a null owner, and heals a fully-cached fragment with ZERO model calls."""
+    m = manifest()
+    key = 'agni'
+    sense = {'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}   # already restored, no {Tn}
+    m['fragment_groups'] = {key: [[{'skeleton': 'Feuer', 'fsha': 'FSHA0', 'si': 0}]]}
+    m['fragment_placeholder_maps'] = {key: [[[]]]}
+    m['fragment_tm'] = {key: [[{'senses': [sense], 'owners': [['2. agni', 'm.']]}]]}
+    m['inputs'] = {key: {'skeleton': 'Feuer', 'portrait': '{}', 'ls': 0, 'sk': 0, 'nws': 0}}
+    m['batches'] = []
+    m['presplit_keys'] = [key]
+
+    def never_runner(argv, **kwargs):
+        raise AssertionError('R6: a fully-cached fragment must NOT call the model')
+
+    payload, _status, _code = execute(m, never_runner)
+    card = payload['results'][0]['card']
+    assert card, 'a fully-cached fragment should stitch a card'
+    rec = card['records'][0]
+    assert rec.get('h') == '2. agni' and rec.get('grammar') == 'm.', rec   # owner restored, not null
+    print('  R6 frag-TM: a v2-served warm stitch retains each sense owner (h/grammar), zero calls')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -423,6 +447,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_card_tokens_include_grammar()
     test_cost_telemetry_survives()
     test_foreign_route_refused_before_any_call()
+    test_frag_tm_stitch_retains_owner()
     print('headless_worker_selftest: PASS')
 
 
