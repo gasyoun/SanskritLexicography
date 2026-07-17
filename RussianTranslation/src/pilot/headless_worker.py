@@ -33,6 +33,10 @@ EXIT_TIMEOUT = 22
 EXIT_MALFORMED = 23
 EXIT_CONTENT = 24
 
+# R4 (C-15): the hard per-call subprocess ceiling. "NOTHING runs past 3 min (MG)". The bare
+# operator default was 7200 s -- 40x this -- because `budgets.timeout_ceil_ms` was never read.
+HARD_TIMEOUT_MS = 180000
+
 
 def claude_argv_prefix(claude_bin):
     """Return the argv prefix that invokes the Claude CLI directly (Windows-safe).
@@ -288,10 +292,19 @@ def token_multiset(value):
 
 
 def card_token_multiset(card):
+    # C-17: collect {Tn} from EVERY source-mirror field (record.grammar + sense.german), driven
+    # by the one `card_fields.TOKEN_FIDELITY_FIELDS` tuple the JS `cardTokens` also uses. The old
+    # body read `sense.german` only, so a grammar-{Tn} card counted fewer tokens than its skeleton
+    # and was falsely `fragment-fidelity-reject`ed on this lane while JS accepted it.
+    record_fields = [n for lvl, n in card_fields.TOKEN_FIDELITY_FIELDS if lvl == 'record']
+    sense_fields = [n for lvl, n in card_fields.TOKEN_FIDELITY_FIELDS if lvl == 'sense']
     tokens = []
     for record in card.get('records') or []:
+        for name in record_fields:
+            tokens.extend(re.findall(r'\{T\d+\}', record.get(name) or ''))
         for sense in record.get('senses') or []:
-            tokens.extend(re.findall(r'\{T\d+\}', sense.get('german') or ''))
+            for name in sense_fields:
+                tokens.extend(re.findall(r'\{T\d+\}', sense.get(name) or ''))
     return collections.Counter(tokens)
 
 
@@ -299,10 +312,16 @@ def card_token_multiset(card):
 
 
 class HeadlessEngine:
-    def __init__(self, manifest, claude, timeout, runner):
+    def __init__(self, manifest, claude, timeout, runner, max_agents_override=None):
         self.m = manifest
         self.claude = claude
-        self.timeout = timeout
+        budgets = manifest.get('budgets') or {}
+        # R4 (C-15): clamp every subprocess to min(operator, budgets.timeout_ceil_ms, HARD).
+        eff_ms = min(int(timeout) * 1000, HARD_TIMEOUT_MS)
+        ceil_ms = budgets.get('timeout_ceil_ms')
+        if ceil_ms:
+            eff_ms = min(eff_ms, int(ceil_ms))
+        self.timeout = eff_ms / 1000.0
         self.run = runner or run_tree_kill
         self.attempts = []
         self.failures = {}
@@ -310,11 +329,36 @@ class HeadlessEngine:
         self.heal_calls = 0
         self.kill_timeouts = 0
         self.conn_errors = 0
+        # R3 (C-12/C-13): the manifest agent budgets were write-only -- emitted, validated-adjacent,
+        # never read by the executor. Enforce them here. None = unbounded (back-compat). The
+        # `--max-agents` override caps the TOTAL across both lanes and binds even without budgets.
+        self.max_translate_agents = budgets.get('max_translate_agents')
+        self.max_heal_agents = budgets.get('max_heal_agents')
+        self.max_total_agents = budgets.get('max_agents')
+        if max_agents_override is not None:
+            self.max_total_agents = (max_agents_override if self.max_total_agents is None
+                                     else min(self.max_total_agents, max_agents_override))
+        self.budget_stops = 0
 
     def note(self, key, error):
         self.failures[key] = str(error)[:300]
 
+    def _budget_ok(self, heal):
+        """R3: True while another spawn on this lane stays within the manifest agent budgets.
+        Checked BEFORE the counter increments and the subprocess spawns, so `translate_calls` /
+        `heal_calls` can never exceed their ceilings. None = unbounded (back-compat)."""
+        if (self.max_total_agents is not None and
+                self.translate_calls + self.heal_calls >= self.max_total_agents):
+            return False
+        if heal:
+            return self.max_heal_agents is None or self.heal_calls < self.max_heal_agents
+        return self.max_translate_agents is None or self.translate_calls < self.max_translate_agents
+
     def call(self, prompt, label, keys, heal=False):
+        if not self._budget_ok(heal):
+            # R3: a refused call consumes NO spawn and returns a typed stop reason.
+            self.budget_stops += 1
+            return None, 'budget_exceeded:%s' % ('heal' if heal else 'translate')
         argv = claude_argv_prefix(self.claude) + [
                 '-p', '--output-format', 'json', '--json-schema',
                 json.dumps(self.m['output_schema'], ensure_ascii=False, separators=(',', ':')),
@@ -372,6 +416,8 @@ class HeadlessEngine:
             if error:
                 for key in pending:
                     self.note(key, error)
+                if error.startswith('budget_exceeded'):
+                    break                    # R3: retrying/bisecting would only refuse again
                 timed_out = error == 'timeout'
                 if timed_out:
                     break
@@ -383,7 +429,8 @@ class HeadlessEngine:
                     self.note(row['key'], row.get('error', 'unresolved'))
             pending = [key for key in pending if key not in resolved]
         if (pending and len(pending) > 1 and
-                self.m.get('runtime', {}).get('binary_split', True)):
+                self.m.get('runtime', {}).get('binary_split', True) and
+                self._budget_ok(False)):
             mid = (len(pending) + 1) // 2
             for suffix, half in (('A', pending[:mid]), ('B', pending[mid:])):
                 child, _child_pending = self.resolve_group(half, label + '/' + suffix)
@@ -416,6 +463,8 @@ class HeadlessEngine:
             if error:
                 for index in pending:
                     self.note('%s_f%d' % (key, index), error)
+                if error.startswith('budget_exceeded'):
+                    break                    # R3: heal ceiling hit -- stop, do not bisect
                 timed_out = error == 'timeout'
                 if timed_out:
                     break
@@ -433,7 +482,8 @@ class HeadlessEngine:
                 resolved[index] = card
             pending = [index for index in pending if index not in resolved]
         no_bisect = timed_out and self.m.get('runtime', {}).get('kill_timeout_no_bisect', True)
-        if (len(pending) > 1 and not no_bisect and budget['spent'] < budget['max']):
+        if (len(pending) > 1 and not no_bisect and budget['spent'] < budget['max']
+                and self._budget_ok(True)):
             mid = (len(pending) + 1) // 2
             for suffix, half in (('A', pending[:mid]), ('B', pending[mid:])):
                 child, _ = self.heal_group(key, group, half, label + '/' + suffix, budget)
@@ -558,9 +608,9 @@ class HeadlessEngine:
         return rows, healed, len(presplit)
 
 
-def execute(manifest, claude='claude', timeout=7200, runner=None):
+def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None):
     validate_manifest(manifest, require_v2=False)
-    engine = HeadlessEngine(manifest, claude, timeout, runner)
+    engine = HeadlessEngine(manifest, claude, timeout, runner, max_agents_override)
     try:
         results, healed, presplit = engine.run_all()
     except HardFailure as exc:
@@ -586,6 +636,7 @@ def execute(manifest, claude='claude', timeout=7200, runner=None):
                'null_keys': list(failures), 'partial_keys': [], 'failures': failures,
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
+               'budget_stops': engine.budget_stops,
                'kill_timeouts': engine.kill_timeouts, 'conn_errors': engine.conn_errors,
                'headless_attempts': engine.attempts}
     output_meta = dict(manifest['meta'])
@@ -608,6 +659,9 @@ def main(argv=None):
     ap.add_argument('--allow-historical-v1', action='store_true',
                     help='read-only/historical replay only; v1 is not a production contract')
     ap.add_argument('--timeout', type=int, default=7200)
+    ap.add_argument('--max-agents', type=int, default=None,
+                    help='R3: hard cap on total model spawns (translate+heal); binds even when '
+                         'the manifest omits budgets, and caps the manifest budget when both set')
     args = ap.parse_args(argv)
     manifest_hash = sha256_path(args.manifest)
     with open(args.manifest, encoding='utf-8') as f:
@@ -616,14 +670,16 @@ def main(argv=None):
         if manifest.get('schema') == SCHEMA_V1:
             if not args.allow_historical_v1:
                 raise ValueError('v1 manifest is historical-only; production requires %s' % SCHEMA_V2)
-            payload, status, code = execute(manifest, args.claude_bin, args.timeout)
+            payload, status, code = execute(manifest, args.claude_bin, args.timeout,
+                                            max_agents_override=args.max_agents)
         else:
             config_dir = os.environ.get('CLAUDE_CONFIG_DIR')
             if not config_dir:
                 raise ValueError('CLAUDE_CONFIG_DIR is required for manifest v2')
             validate_profile(manifest, config_dir, args.only_profile)
             with ActiveCallClaim(manifest['execution']['config_dir_fingerprint']):
-                payload, status, code = execute(manifest, args.claude_bin, args.timeout)
+                payload, status, code = execute(manifest, args.claude_bin, args.timeout,
+                                            max_agents_override=args.max_agents)
     except (OSError, RuntimeError, ValueError) as exc:
         payload, status, code = None, {'classification': 'configuration', 'error': str(exc)}, 2
     status['manifest_sha256'] = manifest_hash

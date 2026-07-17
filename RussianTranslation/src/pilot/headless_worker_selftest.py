@@ -52,6 +52,60 @@ def success_runner(argv, **kwargs):
     return proc(stdout=json.dumps(wrapper))
 
 
+def _soft_nonresolve_runner():
+    """A runner that always returns a well-formed-but-empty result, so the engine keeps
+    trying to spawn (retries/bisect/heal) -- maximum spawn pressure, no HardFailure."""
+    def runner(argv, **kwargs):
+        runner.n += 1
+        return proc(stdout=json.dumps({'structured_output': {'cards': []}}))
+    runner.n = 0
+    return runner
+
+
+def test_translate_budget_binds():
+    """R3 (C-12/C-13): the manifest agent budget and the --max-agents override cap the ACTUAL
+    spawn count. The 1-key fixture would spawn `whole_attempts`=2 unbounded; a ceiling of 1
+    must cut it to 1, consuming no extra call."""
+    r = _soft_nonresolve_runner()
+    execute(manifest(), r)
+    assert r.n == 2, 'expected 2 unbounded spawns (whole_attempts), got %d' % r.n
+    r = _soft_nonresolve_runner()
+    m = manifest(); m['budgets'] = {'max_translate_agents': 1}
+    execute(m, r)
+    assert r.n == 1, 'manifest budget=1 did not bind: %d spawns' % r.n
+    r = _soft_nonresolve_runner()
+    h.execute(manifest(), claude=sys.executable, runner=r, max_agents_override=1)
+    assert r.n == 1, '--max-agents=1 did not bind: %d spawns' % r.n
+    print('  R3 budget: unbounded=2; manifest ceiling and --max-agents both cap actual spawns to 1')
+
+
+def test_call_timeout_clamped():
+    """R4 (C-15): the timeout handed to subprocess is min(operator, budgets.timeout_ceil_ms, HARD)."""
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+    execute(manifest(), capture_runner)   # operator default 7200 s -> clamp to HARD (180 s)
+    assert seen['timeout'] == h.HARD_TIMEOUT_MS / 1000.0, 'not clamped to HARD: %r' % seen['timeout']
+    seen.clear()
+    m = manifest(); m['budgets'] = {'timeout_ceil_ms': 45000}
+    execute(m, capture_runner)
+    assert seen['timeout'] == 45.0, 'timeout_ceil_ms not honoured: %r' % seen['timeout']
+    print('  R4 timeout: clamped to min(operator,ceil,180000ms) -> 180.0s then 45.0s')
+
+
+def test_card_tokens_include_grammar():
+    """R2/C-17: card_token_multiset counts {Tn} in record.grammar (not german-only), matching the
+    JS cardTokens, so a grammar-{Tn} card is not falsely fragment-fidelity-rejected. Driven by the
+    one card_fields.TOKEN_FIDELITY_FIELDS tuple the two twins share."""
+    import card_fields as cf
+    card = {'records': [{'grammar': '{T3} {T4}', 'senses': [{'german': '{T1} Feuer'}]}]}
+    ms = dict(h.card_token_multiset(card))
+    assert ms == {'{T1}': 1, '{T3}': 1, '{T4}': 1}, 'grammar tokens missing: %r' % ms
+    assert ('record', 'grammar') in cf.TOKEN_FIDELITY_FIELDS and ('sense', 'german') in cf.TOKEN_FIDELITY_FIELDS
+    print('  R2 tokens: card_token_multiset counts grammar+german via card_fields.TOKEN_FIDELITY_FIELDS')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -275,6 +329,9 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
         still_alive = [p for p in pids if _alive(p)]
         assert not still_alive, 'tree PID(s) still alive after kill (orphaned): %s' % still_alive
     print('  D-J tree-kill: parent->child->grandchild all gone (no orphan); timeout bounded + raised once')
+    test_translate_budget_binds()
+    test_call_timeout_clamped()
+    test_card_tokens_include_grammar()
     print('headless_worker_selftest: PASS')
 
 
