@@ -718,6 +718,40 @@ def test_h960_accept_sanloss_soft_gate():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_grammar_field_restore_behavioral():
+    """H1151 pin for the H858 grammar-{Tn} stranding class (live on gokzuraka, 13-07-2026).
+    The C-01 centralization (card_fields.js_restore_spec) already restores record.grammar in
+    both lanes; this behavioral test extracts the REAL restore()/restoreCard()/RESTORE_SPEC
+    from a freshly generated harness (grammar_restore_test.js) so a future edit that drops
+    `grammar` (or `h`) from the record-level restore fails HERE, not as silent store rows."""
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, 'gok~~h0_zz_pw.raw.txt')
+        pp = os.path.join(d, 'gok~~h0_zz_pw.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n{#gok#}¦ {%m%}\n— 1〉 {%a%}.')
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp)
+        gh.KILL = False
+        js, _ = gh.build('zz_grestore', ['gok~~h0_zz_pw'], None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        harness = os.path.join(d, 'grestore_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'grammar_restore_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('grammar-field restore behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_h960_dropped_sanskrit_span():
     """H960 (H911 backlog #3): a {#..#} Sanskrit span present in the German source but dropped from
     the Russian translation is flagged (dropped_sanskrit_span). The harness/tm fidelity gates count
@@ -5504,6 +5538,7 @@ def main():
         test_run_telemetry_counters_returned,
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
+        test_grammar_field_restore_behavioral,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
