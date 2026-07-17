@@ -560,12 +560,18 @@ class HeadlessEngine:
                 # later -- it has to survive the flatten.
                 frag_records = []
                 if index < len(cached) and cached[index]:
-                    # The fragment TM caches SENSES ONLY, with no record context, so a
-                    # TM-served fragment genuinely has no `h` to carry. Emit it under an
-                    # unknown owner rather than inventing one -- synthesising an `h` here is
-                    # what the C-02 boundary forbids. This is the residual null source and is
-                    # counted in the summary below.
-                    frag_records = [(None, None, cached[index])]
+                    # R6: a served frag-TM slot is v2 -- it carries the PER-SENSE owner harvested at
+                    # the fresh-resolve run. v1 (ownerless) rows are a serve-time cache MISS (the
+                    # gview build drops them), so a served slot restores each sense's real
+                    # (h, grammar) instead of the C-02 residual null owner that regenerated null-`h`
+                    # rows on every warm run.
+                    slot = cached[index]
+                    c_senses = slot.get('senses') or []
+                    c_owners = slot.get('owners') or []
+                    frag_records = [((c_owners[j] or [None, None])[0] if j < len(c_owners) else None,
+                                     (c_owners[j] or [None, None])[1] if j < len(c_owners) else None,
+                                     [c_senses[j]])
+                                    for j in range(len(c_senses))]
                 elif index in resolved:
                     card = restore_card(resolved[index], self.m['field'],
                                         phs[index] if index < len(phs) else [], unmapped)
@@ -573,8 +579,12 @@ class HeadlessEngine:
                                      record.get('senses') or [])
                                     for record in card.get('records') or []]
                     frag_senses = [sense for _, _, group in frag_records for sense in group]
+                    # R6: carry the PER-SENSE owner into frag_prov so a later warm-cache stitch of
+                    # this fragment restores each sense's (h, grammar) instead of a null owner.
+                    frag_owners = [[rh, rg] for rh, rg, group in frag_records for _ in group]
                     if fragment.get('fsha') and frag_senses:
-                        frag_prov.append({'fsha': fragment['fsha'], 'senses': frag_senses})
+                        frag_prov.append({'fsha': fragment['fsha'], 'senses': frag_senses,
+                                          'owners': frag_owners})
                 for rec_h, rec_grammar, group in frag_records:
                     for sense in group:
                         source_ord = fragment.get('si')

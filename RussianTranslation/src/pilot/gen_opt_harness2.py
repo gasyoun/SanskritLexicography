@@ -1096,7 +1096,12 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                 # own (see PIPELINE_HISTORY.md fragment-tag-collision entry).
                 fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
                            'ph': fph, 'fsha': fsha, 'si': si,
-                           'tm': cached.get('senses') if cached else None})
+                           # R6: serve a warm slot ONLY when the cached row carries per-sense owners
+                           # (frag-TM v2). A v1 (ownerless) row is a live cache MISS -- re-translated
+                           # rather than stitched under a null owner -- but stays readable for audit.
+                           'tm': ({'senses': cached['senses'], 'owners': cached['owners']}
+                                  if (cached and cached.get('owners') and cached.get('senses'))
+                                  else None)})
             if not fl:
                 continue
             frag_n[k] = len(pl)   # raw deterministic fragment count == sense-units the model
@@ -1907,15 +1912,25 @@ async function selfHeal(k) {
         // slot them in at their document position — do NOT re-restore (no {Tn} remain). Tag
         // normalization still applies: an older cache entry harvested before this fix may carry
         // a fabricated tag.
-        // The fragment TM caches SENSES ONLY -- no record context survives it, so these carry
-        // no h/grammar owner. Recorded as unknown rather than invented (C-02 boundary).
-        for (const s of gtm[i]) { applyTag(grp[i].si, s); senses.push(s); owners.push([null, null]) }
+        // R6: a served frag-TM slot is v2 -- it carries the PER-SENSE owner harvested at the fresh
+        // resolve. v1 (ownerless) rows are a serve-time cache MISS (the gview build drops them), so
+        // a served slot restores each sense's real (h, grammar) instead of a null owner.
+        {
+          const cs = (gtm[i] && gtm[i].senses) || []
+          const co = (gtm[i] && gtm[i].owners) || []
+          for (let j = 0; j < cs.length; j++) {
+            applyTag(grp[i].si, cs[j]); senses.push(cs[j])
+            const o = co[j] || [null, null]
+            owners.push([o[0] == null ? null : o[0], o[1] == null ? null : o[1]])
+          }
+        }
         continue
       }
       const card = r.resolved[i]
       if (!card) continue   // an uncached fragment that never resolved — already in missingFragments
       const ph = gph[i] || []
       const fsenses = []
+      const fowners = []
       for (const rec of (card.records || [])) {
         for (const f of RESTORE_SPEC.record) if (typeof rec[f] === 'string') rec[f] = restore(rec[f], ph)
         for (const s of (rec.senses || [])) {
@@ -1924,10 +1939,11 @@ async function selfHeal(k) {
           // C-02: keep the OWNING record's (h, grammar) alongside the sense. This loop used to
           // flatten records->senses and drop `rec`, so the stitch below had nothing left to
           // emit and every promoted row read h: null (403 of the 468 came from this lane).
-          senses.push(s); owners.push([rec.h, rec.grammar]); fsenses.push(s)
+          senses.push(s); owners.push([rec.h, rec.grammar]); fsenses.push(s); fowners.push([rec.h, rec.grammar])
         }
       }
-      if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses })
+      // R6: emit the PER-SENSE owner into frag_prov so a warm-cache stitch restores ownership.
+      if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses, owners: fowners })
     }
   }
   if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
