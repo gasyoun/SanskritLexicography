@@ -1,10 +1,42 @@
 #!/usr/bin/env python
 """Profile-bound manifest-v2 validation and global active-call serialization."""
+import collections
 import hashlib
-import json
 import os
 import tempfile
-import time
+
+# R9: a KERNEL-backed exclusive lock, released automatically by the OS on process death. POSIX uses
+# fcntl.flock; Windows uses an msvcrt byte-range lock. Both are held for as long as the file handle
+# is open and are dropped by the kernel when the holder dies -- no PID probing, TTL or stale
+# adoption. Non-blocking acquisition raises OSError on contention.
+if os.name == 'nt':
+    import msvcrt
+
+    def _os_lock_nb(fh):
+        fh.seek(0, os.SEEK_END)
+        if fh.tell() == 0:
+            fh.write(b'\0')          # msvcrt locks a byte range; guarantee byte 0 exists
+            fh.flush()
+        fh.seek(0)
+        msvcrt.locking(fh.fileno(), msvcrt.LK_NBLCK, 1)
+
+    def _os_unlock(fh):
+        try:
+            fh.seek(0)
+            msvcrt.locking(fh.fileno(), msvcrt.LK_UNLCK, 1)
+        except OSError:
+            pass
+else:
+    import fcntl
+
+    def _os_lock_nb(fh):
+        fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+    def _os_unlock(fh):
+        try:
+            fcntl.flock(fh.fileno(), fcntl.LOCK_UN)
+        except OSError:
+            pass
 
 SCHEMA_V1 = 'pwg.headless_execution_manifest.v1'
 SCHEMA_V2 = 'pwg.headless_execution_manifest.v2'
@@ -53,10 +85,10 @@ def validate_manifest(manifest, require_v2=False):
     if len(execution['config_dir_fingerprint']) != 64:
         raise ValueError('manifest v2 has malformed config-directory fingerprint')
     keys = list(selected)
-    # R8: reject duplicate selected_keys -- set(classes)==set(keys) admits a duplicated key (billed
-    # once, double-counted downstream), so compare lengths (multiset semantics) before launch.
-    if len(keys) != len(set(keys)):
-        dupes = sorted({k for k in keys if keys.count(k) > 1})
+    # R8: reject duplicate selected_keys with explicit multiset semantics -- set(classes)==set(keys)
+    # admitted a duplicated key (billed once, double-counted downstream). Counter, not keys.count().
+    dupes = sorted(k for k, n in collections.Counter(keys).items() if n > 1)
+    if dupes:
         raise ValueError('manifest v2 selected_keys has duplicate key(s): %s' % ', '.join(dupes))
     classes = manifest.get('key_provenance')
     if not isinstance(classes, dict) or set(classes) != set(keys):
@@ -99,97 +131,37 @@ def bind_output_meta(meta, manifest):
     return meta
 
 
-def _pid_alive(pid):
-    """Best-effort cross-platform liveness. POSIX: os.kill(pid, 0). Windows: OpenProcess +
-    GetExitCodeProcess -- os.kill on Windows can TerminateProcess, so it is never used here."""
-    try:
-        pid = int(pid)
-    except (TypeError, ValueError):
-        return False
-    if pid <= 0:
-        return False
-    if os.name == 'nt':
-        import ctypes
-        PROCESS_QUERY_LIMITED_INFORMATION, STILL_ACTIVE = 0x1000, 259
-        k32 = ctypes.windll.kernel32
-        handle = k32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
-        if not handle:
-            return False
-        try:
-            code = ctypes.c_ulong()
-            if k32.GetExitCodeProcess(handle, ctypes.byref(code)):
-                return code.value == STILL_ACTIVE
-            return True
-        finally:
-            k32.CloseHandle(handle)
-    try:
-        os.kill(pid, 0)
-    except ProcessLookupError:
-        return False
-    except PermissionError:
-        return True                       # exists, but no permission to signal
-    except OSError:
-        return False
-    return True
-
-
 class ActiveCallClaim:
-    """Cross-process one-active-call claim keyed by credential-directory fingerprint.
+    """R9: a KERNEL-backed one-active-call lock keyed by the config-directory fingerprint.
 
-    R9 (C-09/H818): a bare O_EXCL lock is NOT crash-safe. The orchestrator tree-kills the lock
-    holder on a call timeout (a routine path, not a rare crash), so `__exit__` never runs and the
-    lock would survive forever -- a permanent self-inflicted DoS on a credential profile. A
-    contended claim therefore reclaims a lock whose owner PID is dead, or (unreadable/legacy lock)
-    one older than STALE_SECS -- well past the 180 s call ceiling. It NEVER reclaims a live holder.
+    An exclusive OS advisory lock (fcntl.flock on POSIX, an msvcrt byte-range lock on Windows) is
+    held on an open file handle for the claim's lifetime. The KERNEL releases it automatically when
+    the holder dies -- a tree-kill on a call timeout, a crash -- so there is NO PID probe, TTL,
+    deletion or stale adoption (the permanent-DoS class the old bare O_EXCL created: __exit__ never
+    ran after a tree-kill, so the lock file survived forever, blocking the profile indefinitely).
+
+    The lock FILE is a diagnostic artifact; its existence never represents ownership -- only the
+    live OS lock does -- so a leftover file after a crash is harmless: the next process locks it
+    immediately. Non-blocking acquisition raises a typed RuntimeError on contention.
     """
-    STALE_SECS = 300
-
     def __init__(self, fingerprint, root=None):
         self.root = root or os.path.join(tempfile.gettempdir(), 'pwg-active-calls')
         self.path = os.path.join(self.root, fingerprint + '.lock')
-        self.owned = False
-
-    def _stale(self):
-        try:
-            info = json.load(open(self.path, encoding='utf-8'))
-        except (OSError, ValueError):
-            info = None
-        if isinstance(info, dict) and info.get('pid') is not None:
-            if not _pid_alive(info.get('pid')):
-                return True                                   # dead holder -> immediate reclaim
-            ts = info.get('ts')
-            return ts is not None and (time.time() - float(ts)) > self.STALE_SECS
-        # unreadable / legacy lock (no pid): fall back to file age
-        try:
-            return (time.time() - os.path.getmtime(self.path)) > self.STALE_SECS
-        except OSError:
-            return False
+        self._fh = None
 
     def __enter__(self):
         os.makedirs(self.root, exist_ok=True)
-        for _ in range(2):
-            try:
-                fd = os.open(self.path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-            except FileExistsError:
-                if self._stale():
-                    try:
-                        os.unlink(self.path)      # reclaim abandoned lock; retry the O_EXCL create
-                    except FileNotFoundError:
-                        pass
-                    continue
-                raise RuntimeError('profile already has an active model call')
-            with os.fdopen(fd, 'w', encoding='utf-8') as fh:
-                json.dump({'pid': os.getpid(), 'ts': time.time()}, fh)
-                fh.flush()
-                os.fsync(fh.fileno())
-            self.owned = True
-            return self
-        raise RuntimeError('profile already has an active model call')
+        fh = open(self.path, 'a+b')
+        try:
+            _os_lock_nb(fh)
+        except OSError:
+            fh.close()
+            raise RuntimeError('profile already has an active model call')
+        self._fh = fh
+        return self
 
     def __exit__(self, _typ, _value, _tb):
-        if self.owned:
-            try:
-                os.unlink(self.path)
-            except FileNotFoundError:
-                pass
-            self.owned = False
+        fh, self._fh = self._fh, None
+        if fh is not None:
+            _os_unlock(fh)
+            fh.close()

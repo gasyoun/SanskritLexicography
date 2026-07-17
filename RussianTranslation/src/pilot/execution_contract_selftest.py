@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import json
 import os
 import subprocess
 import sys
@@ -115,21 +114,36 @@ def main():
         else:
             raise AssertionError('P-3: foreign execution_route executed')
 
-        # R9: a crashed holder's lock (dead pid) is reclaimed; a live holder is NOT.
+        # R9: KERNEL-backed lock. A live SEPARATE process holding it refuses a second acquisition;
+        # forcibly terminating the holder releases the lock IMMEDIATELY (no TTL, no PID probe, no
+        # stale adoption). A leftover lock file may remain but must not represent ownership.
+        srcdir = os.path.dirname(os.path.abspath(__file__))
         fp = manifest['execution']['config_dir_fingerprint']
         r9 = os.path.join(d, 'r9'); os.makedirs(r9)
-        dead = subprocess.Popen([sys.executable, '-c', 'import sys; sys.exit(0)'])
-        dead.wait()                                     # dead.pid is now a dead PID
-        with open(os.path.join(r9, fp + '.lock'), 'w', encoding='utf-8') as fh:
-            json.dump({'pid': dead.pid, 'ts': time.time()}, fh)
-        with ActiveCallClaim(fp, r9):                   # reclaims the dead-holder lock, then holds it
+        ready = os.path.join(d, 'holder.ready')
+        holder_code = (
+            'import sys, os, time; sys.path.insert(0, %r);'
+            'from execution_contract import ActiveCallClaim;'
+            'c = ActiveCallClaim(%r, %r); c.__enter__();'
+            'open(%r, "w").close(); time.sleep(120)'
+        ) % (srcdir, fp, r9, ready)
+        holder = subprocess.Popen([sys.executable, '-c', holder_code])
+        try:
+            for _ in range(200):
+                if os.path.exists(ready):
+                    break
+                time.sleep(0.05)
+            assert os.path.exists(ready), 'R9: holder process never acquired the lock'
             try:
                 with ActiveCallClaim(fp, r9):
-                    pass
+                    raise AssertionError('R9: acquired a lock held by a live separate process')
             except RuntimeError:
                 pass
-            else:
-                raise AssertionError('R9: reclaimed a LIVE holder lock')
+        finally:
+            holder.kill()
+            holder.wait()
+        with ActiveCallClaim(fp, r9):        # kernel released it on death -> immediate reacquire
+            pass
     print('execution_contract_selftest: PASS')
 
 
