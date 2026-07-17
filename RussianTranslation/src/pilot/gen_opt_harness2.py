@@ -1119,11 +1119,15 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                 # own (see PIPELINE_HISTORY.md fragment-tag-collision entry).
                 fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
                            'ph': fph, 'fsha': fsha, 'si': si,
-                           # R6: serve a warm slot ONLY when the cached row carries per-sense owners
-                           # (frag-TM v2). A v1 (ownerless) row is a live cache MISS -- re-translated
-                           # rather than stitched under a null owner -- but stays readable for audit.
+                           # R6: serve a warm slot ONLY when the cached row is a valid frag-TM v2 --
+                           # per-sense owners[] whose members are ALL strings (_tm._valid_owners). A
+                           # v1 (ownerless) OR any null-owner row is a live cache MISS (re-translated,
+                           # never stitched under a null owner), but stays readable for audit. This is
+                           # the single boundary where the manifest fragment_tm is built, so it
+                           # guarantees BOTH the JS FRAG_TM and the headless slot carry no null owner.
                            'tm': ({'senses': cached['senses'], 'owners': cached['owners']}
-                                  if (cached and cached.get('owners') and cached.get('senses'))
+                                  if (cached and cached.get('senses')
+                                      and _tm._valid_owners(cached.get('senses'), cached.get('owners')))
                                   else None)})
             if not fl:
                 continue

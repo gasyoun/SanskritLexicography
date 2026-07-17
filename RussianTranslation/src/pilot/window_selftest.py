@@ -5611,7 +5611,26 @@ def test_frag_tm_v2_supersedes_v1():
     if not tm._valid_owners([sense], [['h', 'g']]) or tm._valid_owners([sense], [['h']]) \
             or tm._valid_owners([sense, sense], [['h', 'g']]):
         fail('_valid_owners count/shape validation is wrong')
-    print('  R6: frag-TM v2 supersedes an ownerless v1; v1 audit-readable, never live-served; owners validated')
+    # null-owner hardening: BOTH members must be strings ('' valid, None fails). A null-owner row is
+    # NOT live-served (so no warm stitch -- JS or headless -- can restore a null owner) but stays
+    # audit-readable, exactly like a v1 row.
+    if not tm._valid_owners([sense], [['', '']]):
+        fail('empty-string owner members must be valid')
+    if tm._valid_owners([sense], [[None, 'g']]) or tm._valid_owners([sense], [['h', None]]):
+        fail('a null owner member ([None,g] / [h,None]) must be rejected')
+    for pair in ([None, 'g'], ['h', None]):
+        npath = os.path.join(d, 'nullowner.frag.ru.jsonl')
+        with open(npath, 'w', encoding='utf-8') as f:
+            f.write(_json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'lang': 'ru', 'fsha': 'N',
+                                 'senses': [sense], 'owners': [pair],
+                                 'trust_level': tm.TRUST_MACHINE, 'gate_status': 'machine_gated',
+                                 'reuse_policy': 'auto_exact'}) + '\n')
+        if tm.load_frag_tm('ru', npath) != {}:
+            fail('a null-owner row %r must NOT be live-served' % pair)
+        if 'N' not in tm.load_frag_tm('ru', npath, live_only=False):
+            fail('a null-owner row %r must stay audit-readable' % pair)
+    print('  R6: frag-TM v2 supersedes v1; null-owner ([None,g]/[h,None]) rejected from live serve, '
+          'audit-readable; owners validated')
 
 
 def test_degenerate_source_identity():

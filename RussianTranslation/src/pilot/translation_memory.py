@@ -108,8 +108,10 @@ FRAG_SCHEMA_V2 = 'pwg.translation_memory.frag.v2'   # R6: adds a per-sense owner
 
 def _valid_owners(senses, owners):
     """R6: a v2 `owners[]` is a list parallel to `senses`, each element an `[h, grammar]` pair whose
-    members are str-or-None. Malformed/missing owners disqualify a row from live v2 reuse (it stays
-    a v1 row -- audit-readable, never served warm)."""
+    members are BOTH strings ('' is valid -- the proven-empty homonym head / defaulted grammar -- but
+    None is NOT: a null member is exactly the C-02 null owner this schema exists to keep out of a warm
+    stitch). Malformed/missing/null-member owners disqualify a row from live v2 reuse; the row stays
+    audit-readable (live_only=False) but is never served warm, so no stitch can restore a null owner."""
     if not isinstance(owners, list) or not isinstance(senses, list):
         return False
     if len(owners) != len(senses):
@@ -117,7 +119,7 @@ def _valid_owners(senses, owners):
     for pair in owners:
         if not (isinstance(pair, (list, tuple)) and len(pair) == 2):
             return False
-        if not all(x is None or isinstance(x, str) for x in pair):
+        if not all(isinstance(x, str) for x in pair):   # BOTH members must be str; None fails
             return False
     return True
 PUBLICATION_SCHEMA = 'pwg.translation_memory.publication.v1'
