@@ -1,7 +1,10 @@
 #!/usr/bin/env python
+import json
 import os
+import subprocess
 import sys
 import tempfile
+import time
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -74,6 +77,59 @@ def main():
         assert verdict_for(29999, 0, 6000, 'warmup', schema_valid=True)[0] == 'GO'
         assert verdict_for(30000, 0, 6000, 'warmup', schema_valid=True)[0] == 'NO-GO'
         assert verdict_for(1000, 0, 6000, 'warmup', schema_valid=None)[0] == 'NO-GO'
+
+        # --- Phase-2 pins (R8 dup keys, P-1 batches subset, P-3 route enforce, R9 stale lock) ---
+        # R8: duplicate selected_keys rejected (multiset), not silently deduped by set().
+        dup = fixture(cfg); dup['meta']['selected_keys'] = ['real', 'real', 'canary']
+        try:
+            validate_manifest(dup, require_v2=True)
+        except ValueError as e:
+            assert 'duplicate' in str(e), e
+        else:
+            raise AssertionError('R8: duplicate selected_keys admitted')
+
+        # P-1: a batch/presplit key outside selected_keys is refused before any spawn.
+        stray = fixture(cfg); stray['batches'] = [['real', 'ghost']]
+        try:
+            validate_manifest(stray, require_v2=True)
+        except ValueError as e:
+            assert 'selected_keys' in str(e) and 'ghost' in str(e), e
+        else:
+            raise AssertionError('P-1: batch key outside selected_keys admitted')
+        strayp = fixture(cfg); strayp['presplit_keys'] = ['ghost']
+        try:
+            validate_manifest(strayp, require_v2=True)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('P-1: presplit key outside selected_keys admitted')
+        okb = fixture(cfg); okb['batches'] = [['real', 'canary']]
+        validate_manifest(okb, require_v2=True)         # fully inside selected_keys -> valid
+
+        # P-3: a foreign execution_route is refused AT EXECUTION (validate_profile), not run.
+        foreign = fixture(cfg); foreign['execution']['execution_route'] = 'workflow'
+        try:
+            validate_profile(foreign, cfg, 'c4')
+        except ValueError as e:
+            assert 'execution_route' in str(e), e
+        else:
+            raise AssertionError('P-3: foreign execution_route executed')
+
+        # R9: a crashed holder's lock (dead pid) is reclaimed; a live holder is NOT.
+        fp = manifest['execution']['config_dir_fingerprint']
+        r9 = os.path.join(d, 'r9'); os.makedirs(r9)
+        dead = subprocess.Popen([sys.executable, '-c', 'import sys; sys.exit(0)'])
+        dead.wait()                                     # dead.pid is now a dead PID
+        with open(os.path.join(r9, fp + '.lock'), 'w', encoding='utf-8') as fh:
+            json.dump({'pid': dead.pid, 'ts': time.time()}, fh)
+        with ActiveCallClaim(fp, r9):                   # reclaims the dead-holder lock, then holds it
+            try:
+                with ActiveCallClaim(fp, r9):
+                    pass
+            except RuntimeError:
+                pass
+            else:
+                raise AssertionError('R9: reclaimed a LIVE holder lock')
     print('execution_contract_selftest: PASS')
 
 
