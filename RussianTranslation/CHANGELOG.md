@@ -8,6 +8,57 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 [failures/FAILURE_GALLERY.md](failures/FAILURE_GALLERY.md) (what went wrong and
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
+## [Unreleased]
+
+### Added — H1152: the EN lane's three offline guards named by H1070's conditional GO (scaffolding, not activation)
+
+- **Honest framing, stated once and not softened anywhere in this entry:** none of this
+  unblocks the EN lane. The store still carries **0 EN rows**; `promote_en.py` was not run
+  (`git diff origin/master --stat -- src/pilot/promote_en.py` is empty); no live judge call was
+  made. This is offline scaffolding so H1070's conditional GO is cashable the hour a
+  judge-tier profile frees — a human `@DO`, not something this session performed.
+- **Guard 2 (the only hard guard) — root cause, not a counter patch.** `accept()`'s
+  `<ls>`/`{#..#}` fidelity check (`countOf()` in
+  [`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py))
+  counted spans **only in `sense.german`**, the source-echo field the model reproduces
+  verbatim — never in the actual translation field (`sense.english`/`sense.russian`). Proven
+  against the live H1070 r102 row (`vac~~h0_00_pwg00`): `german` carried 33/33 expected
+  `{#..#}` spans (the pre-existing check passed clean) while `english` carried only 32/33 —
+  the `{#uc#}` inside a `<F>` footnote was dropped **only** from the field this guard never
+  inspected. Added `countOfField(card, field, re)` and a second hard check in `accept()`
+  running the identical count over the real target-language field (`TARGET_FIELD`, the same
+  `field` constant already used to build `RESTORE_SPEC`). Landed in the accept path (not the
+  `audit_window_en.py` HARD-flag fallback H1070 named) — SHARED code, both lanes get the
+  fix. Fixture: [`accept_sensecount_test.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/accept_sensecount_test.js)
+  reproduces the exact r102 shape, proven RED before this change (against the pre-fix
+  `accept()` via a `git stash` diff, the fixture is silently accepted) and GREEN after.
+- **Guard 1 (cheap):** a German-polyseme checklist under `term-mistranslation` in
+  [`gen_fidelity_judge_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_fidelity_judge_en.py)'s
+  judge RUBRIC (Vergleich, braut/Braut, gelten, Zug, anführen, …) and a matching HARD RULE 5
+  in [`tr_en.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/tr_en.txt):
+  pick the sense the Sanskrit lemma licenses, never the frequent German sense. Markup stays
+  intact and the English reads fluently for this error class (H1070 r155/r119) — no
+  deterministic gate can see it, so this is judge-rubric + prompt only.
+- **Guard 3 (cheap):** extended
+  [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py)'s
+  soft-flag machinery with `XREF-ONLY` (a sense whose German is nothing but a
+  cross-reference apparatus — "Vgl. {#foo#} fgg.") and `NWS-DE-LOCKED` (German prose trapped
+  inside a `{#..#}` span — an NWS masking miss that never reached the translator), so
+  coverage stats stop counting H1070's dominant residual class (12/170 FU1 rows) as
+  translated. Both SOFT — never `--strict`-blocking.
+- [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md):
+  3 new ledger rows (guard 2 `SHARED`; guards 1 and 3 `INTENTIONAL-DIVERGENCE`, each with its
+  EN-only rationale) plus 38 collateral hash refreshes (`--update-hash`, no logic touched —
+  pure same-file co-location drift from this session's purely-additive diff, individually
+  confirmed against the diff before refreshing). `lang_parity_check.py` clean at 53 entries
+  (baseline **50**, not the handoff-cited 49 — `origin/master` has moved since H1152 was
+  minted).
+- `window_selftest.py`: 2 new content-check tests
+  (`test_h1152_guard1_en_polyseme_checklist`, `test_h1152_guard3_xref_only_and_nws_de_locked`);
+  the existing `test_h960_accept_sanloss_soft_gate` now also exercises guard 2 via the
+  updated `accept_sensecount_test.js`. Full suite: **139/139 green** (baseline measured this
+  session: **137/137**, not the handoff-cited 135/135 — same staleness).
+
 ## [1.16.0] - 2026-07-17
 
 ### Added — H1151: behavioral pin for the grammar-`{Tn}` restore (premise found already fixed)

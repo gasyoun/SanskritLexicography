@@ -37,6 +37,17 @@ Gates (per non-null card -> record -> sense, comparing `german` vs `english`):
     MW-DIVERGE none of the MW gloss's content words appear in the card's english
                (soft cross-check against Monier-Williams, the gold MG chose)
 
+  H1152 guard 3 (H1070 finding #3, "nothing was really translated here"; SOFT, coverage
+  accounting only -- not a fidelity defect, markup/meaning stay intact):
+    XREF-ONLY     the german carries no gloss prose, only a cross-reference apparatus
+                  ("Vgl. {#foo#} fgg.", "s. {#bar#}") -- a faithful english can only
+                  reproduce the same apparatus, so counting it as translated prose inflates
+                  coverage stats
+    NWS-DE-LOCKED German prose from the NWS layer is trapped INSIDE a {#..#} span (a
+                  masking miss that made real German look like opaque Sanskrit) -- it never
+                  reached the translator, so it survives as German in `english` by
+                  construction, not as a translation failure
+
 Report-only by default (exit 0). `--strict` exits non-zero if any HARD gate
 (LS/SAN/AB/IS/STRANDED-ANCHOR/MISSING-EN/DUP) fires, if any card came back null (missing EN), or if the
 sense-dupe subgate crashed (a crash is NOT a clean pass); the soft semantic flags never
@@ -122,6 +133,44 @@ def content_words(text):
     return [w.lower() for w in WORD.findall(prose(text)) if w.lower() not in STOP]
 
 
+# H1152 guard 3 (H1070 finding #3, 12/170 rows in the FU1 gold sample): two DETERMINISTIC
+# "nothing was really translated here" shapes that coverage stats currently count as
+# ordinary translated prose. Both are SOFT (report-only, never --strict-blocking) -- the
+# markup/meaning is intact either way, so this is a coverage-accounting fix, not a fidelity
+# defect. Mirrors gen_opt_harness2.degenerate_passthrough_card's cross-reference vocabulary
+# (kept as an independent copy here -- audit_window_en must not import the generator module,
+# which pulls in the full pwg_mask/microstructure/corpus_gate stack for one word set).
+_XREF_WORDS = {'s', 'siehe', 's.', 'vgl', 'vgl.', 'vergl', 'vergl.', 'u', 'und',
+               'ff', 'fgg', 'fg', 'fg.', 'fgg.', 'nachtrage', 'nachträge'}
+_SPAN = re.compile(r'\{#(.*?)#\}', re.S)
+
+
+def xref_only(german):
+    """A sense whose German carries no translatable gloss prose at all -- only a
+    cross-reference apparatus ('Vgl. {#foo#} fgg.', 's. {#bar#}') -- so a faithful English
+    rendering can only reproduce the same apparatus, never add real gloss content. A {%..%}
+    gloss wrapper is the tell that real prose exists; its absence plus an all-cross-ref-word
+    residue (after stripping <ls>/{#..#}/tags) means this row was never a translation target
+    in the first place."""
+    g = german or ''
+    if GLOSS.search(g):                      # a {%..%} gloss wrapper -> real prose exists
+        return False
+    words = [w.lower().strip('.,;') for w in WORD.findall(prose(g))]
+    return bool(words) and all(w in _XREF_WORDS for w in words)
+
+
+def nws_de_locked(german):
+    """German prose accidentally trapped INSIDE a {#..#} span (an NWS-layer masking miss):
+    a {#..#} span is supposed to carry ONLY Sanskrit/IAST, so an umlaut/eszett or an
+    unambiguous German function word inside one means that German text rode along as an
+    opaque 'untranslatable' placeholder and NEVER REACHED THE TRANSLATOR -- it stays German
+    in the final english field by construction, not by a translation failure."""
+    for inner in _SPAN.findall(german or ''):
+        if DE_UML.search(inner) or DE_WORDS.search(inner):
+            return True
+    return False
+
+
 def find_results(o):
     if isinstance(o, dict):
         if isinstance(o.get('results'), list):
@@ -142,6 +191,13 @@ def audit_sense(german, english):
     """Return (hard_flags, soft_flags) for one sense's german->english pair."""
     hard, soft = [], []
     g, e = german or '', english or ''
+    # H1152 guard 3: flag the two "nothing was really translated here" shapes so a coverage
+    # consumer can stop counting them as ordinary translated prose. SOFT — the card itself is
+    # not defective (markup and meaning are intact either way).
+    if xref_only(g):
+        soft.append('XREF-ONLY')
+    if nws_de_locked(g):
+        soft.append('NWS-DE-LOCKED')
     has_gloss = '{%' in g or bool(prose(g).strip())
     if has_gloss and not e.strip():
         hard.append('MISSING-EN')
