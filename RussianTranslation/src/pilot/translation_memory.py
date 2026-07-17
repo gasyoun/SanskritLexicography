@@ -103,6 +103,23 @@ TRUST_RANK = {TRUST_REVIEWED: 30, TRUST_MACHINE: 20, 'legacy_promoted': 10,
 SUGGEST_SCHEMA = 'pwg.translation_memory.suggest.v1'
 CARD_SCHEMA = 'pwg.translation_memory.v1'
 FRAG_SCHEMA = 'pwg.translation_memory.frag.v1'
+FRAG_SCHEMA_V2 = 'pwg.translation_memory.frag.v2'   # R6: adds a per-sense owners[] array
+
+
+def _valid_owners(senses, owners):
+    """R6: a v2 `owners[]` is a list parallel to `senses`, each element an `[h, grammar]` pair whose
+    members are str-or-None. Malformed/missing owners disqualify a row from live v2 reuse (it stays
+    a v1 row -- audit-readable, never served warm)."""
+    if not isinstance(owners, list) or not isinstance(senses, list):
+        return False
+    if len(owners) != len(senses):
+        return False
+    for pair in owners:
+        if not (isinstance(pair, (list, tuple)) and len(pair) == 2):
+            return False
+        if not all(x is None or isinstance(x, str) for x in pair):
+            return False
+    return True
 PUBLICATION_SCHEMA = 'pwg.translation_memory.publication.v1'
 SCORE_FIELDS = ('score_de_fragment', 'score_sa_headword', 'score_semantic_tag')
 OPTIONAL_SUGGEST_FIELDS = (
@@ -492,9 +509,13 @@ def _normalize_frag_row(row):
     return row
 
 
-def load_frag_tm(lang, path=None, denylist=None):
-    """Return { fsha: {'senses': [...], 'src_key', 'root', ...} } for the fragment sidecar,
-    or {} if none exists. Best reusable row wins (reviewed > machine > legacy; blocked ignored)."""
+def load_frag_tm(lang, path=None, denylist=None, live_only=True):
+    """Return { fsha: {'senses': [...], 'owners': [...], ...} } for the fragment sidecar, or {} if
+    none exists. Best reusable row wins (reviewed > machine > legacy; blocked ignored). R6: by
+    default (`live_only`) only frag-TM v2 rows with a valid per-sense `owners[]` are served; a v1
+    (ownerless) row is readable for historical audit (`live_only=False`) but never live-reusable, so
+    a warm stitch can never regenerate a null-`h` row. A valid v2 row supersedes an ownerless v1 row
+    with the same fsha (it is the only served candidate)."""
     p = frag_tm_path(lang, path)
     out = {}
     if not os.path.exists(p):
@@ -513,9 +534,17 @@ def load_frag_tm(lang, path=None, denylist=None):
             fsha = row.get('fsha')
             # Serve-time fidelity filter: a corrupt/blanked historical row is
             # never handed to the harness, regardless of when it was harvested.
-            if (fsha and fsha not in deny['frags']
+            if not (fsha and fsha not in deny['frags']
                     and frag_senses_sane(row.get('senses'), lang)):
-                by_fsha[fsha].append(_normalize_frag_row(row))
+                continue
+            if live_only and not (row.get('schema') == FRAG_SCHEMA_V2
+                                  and _valid_owners(row.get('senses'), row.get('owners'))):
+                # R6: a v1 (ownerless) or malformed-owners row is readable for historical audit
+                # (live_only=False) but NEVER live-reusable -- a warm stitch must not regenerate a
+                # null-`h` row. A valid v2 row for the same fsha supersedes it here by being the only
+                # served candidate.
+                continue
+            by_fsha[fsha].append(_normalize_frag_row(row))
     for fsha, candidates in by_fsha.items():
         best = best_reusable(candidates)
         if best:
@@ -528,11 +557,27 @@ def build_frags(glob_pattern, lang, out=None):
     append-only fragment sidecar. Idempotent: a fragment already present (by fsha) is never
     duplicated. Returns (path, added, total)."""
     path = frag_tm_path(lang, out)
-    # seen[fsha] == True once a SANE row for that fsha is cached. A fsha whose only
-    # cached rows are corrupt maps to False, so a later good harvest can override it
-    # (previously first-seen-wins locked in the poisoned row). load_frag_tm already
-    # applies the serve-time fidelity filter, so its keys are exactly the sane fshas.
-    seen = {fsha: True for fsha in load_frag_tm(lang, path)}
+    # seen[fsha] = the highest schema version already cached for that fsha (2 = frag-TM v2 with valid
+    # owners, 1 = v1/ownerless). A harvest is skipped only when the cache already holds a version >=
+    # the new one, so a v2 harvest SUPERSEDES a cached v1 (R6) while a v1 re-harvest of a cached v1
+    # is still deduped. Corrupt/blank rows are absent from `seen`, so a later good harvest overrides.
+    seen = {}
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as _f:
+            for _line in _f:
+                _line = _line.strip()
+                if not _line:
+                    continue
+                try:
+                    _row = json.loads(_line)
+                except json.JSONDecodeError:
+                    continue
+                _fsha = _row.get('fsha')
+                if not _fsha or not frag_senses_sane(_row.get('senses'), lang) or not reusable(_row):
+                    continue      # defect/blocked/suggestion rows are not a real cache hit (overridable)
+                _ver = 2 if (_row.get('schema') == FRAG_SCHEMA_V2
+                             and _valid_owners(_row.get('senses'), _row.get('owners'))) else 1
+                seen[_fsha] = max(seen.get(_fsha, 0), _ver)
     files = sorted(_glob.glob(os.path.join(REPO, glob_pattern)))
     new_rows, added, refused = [], 0, 0
     for fp in files:
@@ -569,32 +614,33 @@ def build_frags(glob_pattern, lang, out=None):
                 owners = fpv.get('owners')       # R6: per-sense [h, grammar]; absent for a v1 emit
                 if not fsha or not senses:
                     continue
+                is_v2 = _valid_owners(senses, owners)   # R6: a valid owners[] promotes the row to v2
                 if not frag_senses_sane(senses, lang):
                     # Never cache a corrupt/blanked fragment (poison guard).
                     refused += 1
                     print('warning: refusing corrupt frag_prov %s (senses fail %s fidelity) in %s'
                           % (fsha[:12], lang, os.path.basename(fp)), file=sys.stderr)
                     continue
-                if seen.get(fsha):
-                    # A sane row is already cached — idempotent skip. (A previously
-                    # cached CORRUPT row maps to False here, so this good row falls
-                    # through and overrides it.)
+                if seen.get(fsha, 0) >= (2 if is_v2 else 1):
+                    # Already cached at a version >= this harvest: idempotent skip. A cached v1 does
+                    # NOT block a v2 harvest (2 > 1 -> supersede, R6); a cached CORRUPT row is absent
+                    # from `seen`, so a good row still overrides it.
                     continue
                 src_key = r.get('key')
                 raw_sha = ((input_hashes.get(src_key) or {}).get('raw_sha256')
                            if src_key else None)
-                seen[fsha] = True
+                seen[fsha] = 2 if is_v2 else 1
                 added += 1
                 new_rows.append({
-                    'schema': FRAG_SCHEMA, 'lang': lang, 'fsha': fsha,
+                    'schema': FRAG_SCHEMA_V2 if is_v2 else FRAG_SCHEMA, 'lang': lang, 'fsha': fsha,
                     'src_key': src_key, 'root': root, 'raw_sha256': raw_sha,
                     'n_senses': len(senses), 'senses': senses,
-                    'owners': owners,          # R6: per-sense [h, grammar] owner (frag-TM v2)
+                    'owners': owners if is_v2 else None,   # R6: v2 carries per-sense [h, grammar]
                     'wf_file': os.path.basename(fp), 'source_wf_file': os.path.basename(fp),
                     'fragment_address_formula': "sha256(lang + '\\x00frag\\x00' + fragment_source)",
                     'splitter_version': 'autosplit_requeue.plan.v1',
                     'trust_level': TRUST_MACHINE, 'gate_status': 'machine_gated',
-                    'gate_version': 'frag_prov_v2' if owners else 'frag_prov_v1',
+                    'gate_version': 'frag_prov_v2' if is_v2 else 'frag_prov_v1',
                     'review_status': 'ai_translated',
                     'reuse_policy': 'auto_exact', 'source_kind': 'frag_prov',
                     'supersedes': None, 'harvested_at': _utc_now(),
@@ -719,8 +765,10 @@ def validate_card_entry(address, row, lang=None):
 def validate_frag_entry(row, lang=None):
     if not isinstance(row, dict):
         return False, 'row is not an object'
-    if row.get('schema') != FRAG_SCHEMA:
+    if row.get('schema') not in (FRAG_SCHEMA, FRAG_SCHEMA_V2):
         return False, 'bad schema'
+    if row.get('schema') == FRAG_SCHEMA_V2 and not _valid_owners(row.get('senses'), row.get('owners')):
+        return False, 'v2 row with malformed owners'
     if lang and row.get('lang') != lang:
         return False, 'wrong lang'
     if not row.get('fsha'):
@@ -1390,7 +1438,8 @@ def _frag_selftest():
     senses = [{'tag': '1', 'german': 'foo <ls>ṚV.</ls>', 'russian': 'фу', 'source_type': 'attested'}]
     wf = {'meta': {'lang': 'ru', 'root': 'zz'}, 'results': [
         {'key': 'zz~~h0_00_pwg00', 'card': {'key1': 'zz', 'records': [{'senses': senses}],
-                                            'frag_prov': [{'fsha': fsha, 'senses': senses}]}},
+                                            'frag_prov': [{'fsha': fsha, 'senses': senses,
+                                                           'owners': [['zz', '']]}]}},
         {'key': 'zz~~h0_01', 'card': None},                       # null card: no frag_prov
     ]}
     en_wf = {'meta': {'lang': 'en', 'root': 'zz'}, 'results': [
@@ -1406,11 +1455,11 @@ def _frag_selftest():
             json.dump({'result': '{"broken"'}, f, ensure_ascii=False)
         sidecar = os.path.join(d, 'frag.ru.jsonl')
         with open(sidecar, 'w', encoding='utf-8') as f:
-            f.write(json.dumps({'schema': 'pwg.translation_memory.frag.v1', 'lang': 'ru',
+            f.write(json.dumps({'schema': FRAG_SCHEMA_V2, 'lang': 'ru', 'owners': [['zz', '']],
                                 'fsha': fsha, 'senses': [{'tag': 'old', 'russian': 'старое'}],
                                 'trust_level': TRUST_MACHINE, 'gate_status': 'legacy_promoted',
                                 'harvested_at': '2026-01-01T00:00:00Z'}, ensure_ascii=False) + '\n')
-            f.write(json.dumps({'schema': 'pwg.translation_memory.frag.v1', 'lang': 'ru',
+            f.write(json.dumps({'schema': FRAG_SCHEMA_V2, 'lang': 'ru', 'owners': [['zz', '']],
                                 'fsha': fsha, 'senses': [{'tag': 'new', 'russian': 'новое'}],
                                 'trust_level': TRUST_REVIEWED, 'gate_status': 'human_reviewed',
                                 'harvested_at': '2026-01-02T00:00:00Z'}, ensure_ascii=False) + '\n')
