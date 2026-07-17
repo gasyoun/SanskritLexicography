@@ -1,0 +1,52 @@
+{
+ "schema": "pwg_ru.cohort_clean_rates.v1",
+ "measured": "2026-07-17",
+ "store_path": "RussianTranslation/src/pwg_ru_translated.jsonl",
+ "store_rows": 11603,
+ "excluded": {
+  "h_reconstructed": 468,
+  "unassigned": 0
+ },
+ "unassigned_keys": [],
+ "bar": 0.8,
+ "cohorts": {
+  "no_pwg": {
+   "rows": 5696,
+   "rows_including_h_reconstructed": 6009,
+   "h_reconstructed_excluded": 313,
+   "clean_rate": 0.62,
+   "range": [
+    0.41,
+    0.69
+   ],
+   "n_windows": 10,
+   "verdict": "BELOW_BAR",
+   "evidence": "RussianTranslation/pwg_ru/h911/h911_quality_economy_census.json#families.H255_no_pwg_workflow.population_audit_clean_rate",
+   "evidence_statement": "per-window 41%-69% (median ~62%); EXCLUDES w1 infra-crippled first run (5/58=9%). Independently corroborated by the H818 acceptance report standing finding: no_pwg audit-clean ~60-65%, explicitly \"above the lane's real clean rate\", vs the 80% bar."
+  },
+  "root_upasarga": {
+   "rows": 5120,
+   "rows_including_h_reconstructed": 5274,
+   "h_reconstructed_excluded": 154,
+   "clean_rate": null,
+   "verdict": "INSUFFICIENT_EVIDENCE",
+   "evidence": "RussianTranslation/src/pilot/RUN_LOG.md#Stage-AB-summary-2026-06-29",
+   "evidence_sample": "401/484 = 82.8% (sTA, BU, as, i)",
+   "evidence_caveat": "Stage A+B's 4 roots (sTA, BU, as, i) are ABSENT from the current canonical store (verified 17-07-2026: zero rows under those key1 values, any layer) -- the 401/484 sample cannot be bound to the store's CURRENT 48-root root_upasarga population. No other RUN_LOG.md entry provides an audited clean-vs-reject split (as opposed to a raw promoted-count) for a root actually present in the store today (dah, gam, vid, ...)."
+  },
+  "nominal": {
+   "rows": 319,
+   "rows_including_h_reconstructed": 320,
+   "h_reconstructed_excluded": 1,
+   "clean_rate": null,
+   "verdict": "INSUFFICIENT_EVIDENCE",
+   "evidence": "RussianTranslation/src/pilot/RUN_LOG.md#nominal-window-nominal_w1_100small-2026-07-06",
+   "evidence_sample": "100/100 promoted (not an audit-clean count)",
+   "evidence_caveat": "100/100 PROMOTED is a generation-success count, not an audit-clean count -- the same RUN_LOG entry documents that audit_window.py's glue gates CRASH and missing_required_sense_field misfires on nominal (--allow-stale) windows, so no reliable clean-vs-reject split was ever produced for this cohort. `pril10_w1` (2026-07-05) aborted on cost, not quality -- no rate either."
+  }
+ },
+ "rows_plus_excluded_equals_store_rows": true,
+ "economy": "NOT_MEASURABLE",
+ "economy_note": "tokens & API-equivalent cost per clean subcard are NOT recoverable for either family: run_events.jsonl has no token field; H818 dashboards carry cost:null. Reported as not_recoverable, never 0.",
+ "drain_recommendation": "No cohort names a drainable lane at the 80% bar. no_pwg is MEASURED BELOW_BAR (~62% median, range 41%-69%, evidence: H911 census). root_upasarga and nominal both lack an audited clean-vs-reject split verifiably bound to their CURRENT store population (see each cohort's `evidence_caveat`) -- reported INSUFFICIENT_EVIDENCE, not assumed. This report names no cohort as ready to drain; whether/how to lower the bar or gather fresh audited evidence for root_upasarga/nominal is a human `@DECIDE`."
+}

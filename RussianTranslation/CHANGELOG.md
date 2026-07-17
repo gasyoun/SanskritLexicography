@@ -61,6 +61,47 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Measured cost of the derivation: 468 rows collapse onto **14** distinct heads, and
   `vid~~h0_00_pwg00`/`vid~~h2_00_pwg00` — different homonyms by their own keys — both derive to `'vid'`.
 
+### Added — H1149: per-cohort clean-rate report (W1-A) + the D-1 debt worklist + regression guard
+
+- **`src/pilot/cohort_clean_rates.py`** — stdlib-only, read-only per-cohort clean-rate report
+  (Ruling R3 of the [PWG_RU_UNFREEZE plan](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_UNFREEZE_2026H2.md):
+  narrow-and-measure before draining — **gates every pwg_ru drain in the repo, including H255's
+  no-PWG lane**). Partitions the 11,603-row store into `no_pwg` (layer ∈ {pw,sch,nws,pwkvn},
+  5,696 rows excl. debt) / `root_upasarga` (pwg-layer keys resolving into `verb_worklist`'s
+  verbs01 root universe, 5,120 rows) / `nominal` (pwg-layer, everything else, 319 rows) — 0
+  unassigned, `rows + 468 == store_rows`. `no_pwg`'s clean rate (**62% median, range 41–69%**) is
+  **consumed verbatim** from the H911 census, never recomputed; verdict **BELOW_BAR**.
+  `root_upasarga`/`nominal` are reported **INSUFFICIENT_EVIDENCE**: the one RUN_LOG.md sample for
+  each cohort (Stage A+B's 401/484 for 4 verb roots; `nominal_w1_100small`'s 100/100 promoted)
+  cannot be bound to the cohort's CURRENT store population — Stage A+B's specific roots
+  (`sTA`/`BU`/`as`/`i`) are verifiably absent from today's store, and the nominal window's own
+  RUN_LOG entry documents that `audit_window.py`'s glue gates crash on nominal windows, so
+  "promoted" there is a generation-success count, not an audit-clean count. **All-cohorts
+  non-CLEARS_BAR is a PASS of this deliverable** — the measurement is commissioned to be capable
+  of killing the 80% bar with data, not to reach a good number; whether/how to lower the bar is a
+  human `@DECIDE`. Outputs:
+  [`pwg_ru/h1112/cohort_clean_rates.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/cohort_clean_rates.json) +
+  [`pwg_ru/h1112/H1112_COHORT_CLEAN_RATES_2026-07-17.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/H1112_COHORT_CLEAN_RATES_2026-07-17.md).
+- **D-1 debt worklist, `pwg_ru/h1112/h_reconstructed_worklist.jsonl`** — 468 lines, one per
+  `provenance.h_reconstructed == true` row, collapsing onto the **14** distinct derived heads PR
+  #510/#517 already measured. The standing re-translation worklist; discharge requires an
+  authorized live run, not this read-only report.
+- **D-1 regression guard, `cohort_clean_rates.assert_h_reconstructed_regression`** — asserts the
+  store's `h_reconstructed` count stays exactly 468 unless an authorized re-translation manifest
+  (`pwg_ru.h_reconstructed_retranslation_manifest.v1`) documents the exact decrease. Guards the
+  precise failure class that already happened once: PR #510's underlying `h is None` count fell
+  468 → 0 and became invisible to the only query that could find it
+  ([Uprava FINDINGS §95](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)). Wired into
+  `window_selftest.py` as `test_h_reconstructed_regression_guard` (proven both directions against
+  a deterministic synthetic store: 467 markers → `AssertionError`, 468 → clean pass, a matching
+  authorized manifest → accepted); **live-proven against a scratch copy of the real canonical
+  store** (mutate to 467 → guard fails; restore → guard passes; the shared canonical store itself
+  was never written to). Suite now **137/137 green**; LANG_PARITY ledger: 28 stale entries
+  re-verified/re-hashed (pure `window_selftest.py` append, no logic they track changed) + 1 new
+  SHARED entry `h_reconstructed_regression_guard_h1149` — **50/50, no drift**.
+- **Read-only this wave:** the canonical store was never mutated (verified: 11,603 rows / 468
+  markers, unchanged before and after). `SANLOSS_HARD_REJECT`/`TNMASK_HARD_REJECT` remain `false`;
+  `promote_en.py` never ran (store still carries 0 EN rows).
 
 - **Manifest-v2 production launch contract.** New live manifests bind a logical profile slot,
   canonical `CLAUDE_CONFIG_DIR` fingerprint, execution route/lane, exact model and validation
