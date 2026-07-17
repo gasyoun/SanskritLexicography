@@ -1,6 +1,6 @@
 # Reverse Dictionary of Sanskrit — changelog
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 17-07-2026_
 
 Tracks version/canonicity decisions and applied-corrections for the reverse-dictionary
 dataset, per [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
@@ -11,6 +11,26 @@ The master `.txt` itself is gitignored (personal-materials-dump folder policy �
 against it.
 
 ## [Unreleased]
+
+### Added — rights ledger (W1-E) — 17-07-2026
+
+**[`RIGHTS_LEDGER.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/RIGHTS_LEDGER.md)** — every source dictionary sorted into
+exactly one of three buckets: **PD** (subtractable) · **in-copyright, marked** (`H`
+Edgerton 12,552 + `P` Vettam Mani 1,919 = **14,471 = 5.4%**) · **in-copyright, UNMARKED —
+cannot be isolated** (Stchoupak–Nitti–Renou, Turner, Mylius, Kochergina, Pujol — all five
+carry declared codes but never appear as a marked source-code in the canonical file). The
+**14,471 is stated as a LOWER BOUND**, not a total: because the five silent sources are
+unidentifiable in the single-letter-per-line data, a "PD-only" subset **cannot be
+certified** on available data. The ledger **builds** the rights position; it does not
+**resolve** it — the residue is unresolvable by any agent effort (it needs funded
+per-source headword lists + a human ruling). Also flags
+[`.doc.pdf/Reverse-Kochergina.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/)
+(in-copyright, on public `master`) as an **H734-class exposure** — flag only, removal is a
+human call — and escalates the still-missing canonical `266820-reverse-Gasuns.txt` as
+data loss, naming [H736](https://github.com/gasyoun/Uprava/blob/main/handoffs/H736-Fable_SanskritLexicography_reverse-dictionary-dataset-recovery_11.07.26.md)
+as the recovery owner (consumed, not duplicated). No data published, no file moved or
+deleted. Built by Opus 4.8 (`claude-opus-4-8[1m]`) under
+[H1153](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1153-Opus_SanskritLexicography_revdict-rights-ledger-unresolvable-residue_17.07.26.md).
 
 ### Canonical version declared — 07-07-2026
 
