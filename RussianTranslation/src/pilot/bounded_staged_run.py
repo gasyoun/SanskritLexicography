@@ -234,7 +234,8 @@ class RunContext:
 
     def __init__(self, db, coord_dir, coordinator, cwd, events, run_id, probe_latencies,
                  claude_bin='claude', timeout=7200, gen_model_version=DEFAULT_GEN_MODEL_VERSION,
-                 max_drain_iterations=1000, only_profile=None):
+                 max_drain_iterations=1000, only_profile=None, checkpoint=None,
+                 stop_before_promote=False):
         self.db = db
         self.coord_dir = coord_dir
         self.coordinator = coordinator
@@ -247,6 +248,8 @@ class RunContext:
         self.gen_model_version = gen_model_version
         self.max_drain_iterations = max_drain_iterations
         self.only_profile = only_profile
+        self.checkpoint = checkpoint
+        self.stop_before_promote = stop_before_promote     # R10
 
     @property
     def coord_state_path(self):
@@ -267,6 +270,100 @@ def _ensure_imported(ctx, lease_id):
         return  # not prepared (already advanced / unknown) -> nothing to import
     mao.cmd_import_coordinator(argparse.Namespace(
         db=ctx.db, coord_dir=ctx.coord_dir, cwd=ctx.cwd, lease_id=[lease_id], max_attempts=2))
+
+
+def _canonical_bytes(obj):
+    """Stable canonical JSON bytes for hashing (sorted keys, no whitespace, ASCII-escaped)."""
+    return json.dumps(obj, sort_keys=True, separators=(',', ':'), ensure_ascii=True).encode('utf-8')
+
+
+def _sha256_bytes(b):
+    import hashlib
+    return hashlib.sha256(b).hexdigest()
+
+
+def _audit_is_clean(report):
+    """R10: a window is eligible for AWAITING_REVIEW only if the audit did NOT reject it (no requeue
+    keys) AND it produced reviewable output (clean cards or satisfied keys)."""
+    report = report or {}
+    if report.get('requeue_keys'):
+        return False
+    return bool(report.get('clean_count') or report.get('satisfied_keys'))
+
+
+def awaiting_review_path(ctx, window_id):
+    return '%s.AWAITING_REVIEW.%s.json' % (
+        ctx.checkpoint or 'bounded_staged_run.checkpoint.json', window_id)
+
+
+def write_awaiting_review_checkpoint(ctx, window, wf_output_path, report):
+    """R10 (--stop-before-promote): write a durable, atomic, self-hashing AWAITING_REVIEW TERMINAL
+    checkpoint AFTER a clean audit. Binds, by sha256, the execution manifest + exact selected keys,
+    the lease/attempt, the audit report, the clean-candidate artifact, profile/route/exact model,
+    and the usage/cost summary + audit state; the canonical payload carries its own SHA-256. Touches
+    no store, no TM and never calls promote-ready. The caller writes this ONLY when the audit is
+    clean, so an audit-rejected window never becomes AWAITING_REVIEW."""
+    import time
+    wf = json.load(open(wf_output_path, encoding='utf-8'))
+    meta = wf.get('meta') or {}
+    execution = meta.get('execution') or {}
+    summary = wf.get('summary') or {}
+    selected = sorted(meta.get('selected_keys') or [])
+    with open(wf_output_path, 'rb') as f:
+        candidate_sha = _sha256_bytes(f.read())
+    bound = {
+        'lease_id': window.get('id'),
+        'attempt': window.get('attempt'),
+        'selected_keys': selected,
+        'execution': {k: execution.get(k) for k in
+                      ('profile_slot', 'execution_route', 'executor_lane',
+                       'validation_method', 'config_dir_fingerprint', 'model_identifier')},
+        'model': meta.get('gen_model') or execution.get('model_identifier'),
+        'usage': summary.get('usage'),
+        'audit_state': {'clean_count': report.get('clean_count'),
+                        'requeue_keys': sorted(report.get('requeue_keys') or []),
+                        'satisfied_keys': sorted(report.get('satisfied_keys') or []),
+                        'state': report.get('state') or report.get('classification')},
+    }
+    bound['hashes'] = {
+        'execution_manifest': _sha256_bytes(_canonical_bytes(
+            {'selected_keys': selected, 'execution': bound['execution']})),
+        'lease_attempt': _sha256_bytes(_canonical_bytes(
+            {'lease_id': bound['lease_id'], 'attempt': bound['attempt']})),
+        'audit_report': _sha256_bytes(_canonical_bytes(report)),
+        'clean_candidate': candidate_sha,
+        'profile_route_model': _sha256_bytes(_canonical_bytes(
+            {'execution': bound['execution'], 'model': bound['model']})),
+        'usage_audit_state': _sha256_bytes(_canonical_bytes(
+            {'usage': bound['usage'], 'audit_state': bound['audit_state']})),
+    }
+    payload = {'schema': 'pwg.awaiting_review.v1', 'status': 'AWAITING_REVIEW', 'run_id': ctx.run_id,
+               'wf_output': os.path.abspath(wf_output_path), 'ts': int(time.time()), 'bound': bound}
+    record = {'payload': payload, 'payload_sha256': _sha256_bytes(_canonical_bytes(payload))}
+    path = awaiting_review_path(ctx, window.get('id'))
+    mao.atomic_write(path, json.dumps(record, ensure_ascii=False, indent=1) + '\n')
+    return path, record
+
+
+def verify_awaiting_review_checkpoint(path):
+    """R10: True iff the checkpoint's canonical payload still hashes to its stored payload_sha256 AND
+    the bound clean-candidate artifact on disk still hashes to its recorded value. Tampering with any
+    bound field (self-hash) OR with the wf_output artifact invalidates the checkpoint."""
+    try:
+        rec = json.load(open(path, encoding='utf-8'))
+    except (OSError, ValueError):
+        return False
+    payload = rec.get('payload') or {}
+    if _sha256_bytes(_canonical_bytes(payload)) != rec.get('payload_sha256'):
+        return False
+    hashes = ((payload.get('bound') or {}).get('hashes') or {})
+    wf = payload.get('wf_output')
+    if not wf or not os.path.exists(wf):
+        return False
+    with open(wf, 'rb') as f:
+        if _sha256_bytes(f.read()) != hashes.get('clean_candidate'):
+            return False
+    return True
 
 
 def make_run_window(ctx):
@@ -316,6 +413,12 @@ def make_run_window(ctx):
                     only_external_ids=scope))
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, cwd=ctx.cwd, only_external_ids=scope))
+            if ctx.stop_before_promote:
+                # R10: skip promotion -- the window is recorded + auditable but NOT promoted, so the
+                # store and TM stay untouched. The durable AWAITING_REVIEW terminal checkpoint is
+                # written by the audit wrapper ONLY after a clean audit (an audit-rejected/requeued
+                # window never becomes AWAITING_REVIEW).
+                continue
             promote = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
@@ -486,11 +589,18 @@ def run(args):
         db=args.db, coord_dir=args.coord_dir, coordinator=args.coordinator, cwd=args.cwd,
         events=args.events, run_id=run_id, probe_latencies=probe_latencies,
         claude_bin=args.claude_bin, timeout=args.timeout,
-        gen_model_version=args.gen_model_version, only_profile=args.only_profile)
+        gen_model_version=args.gen_model_version, only_profile=args.only_profile,
+        checkpoint=args.checkpoint, stop_before_promote=args.stop_before_promote)
     run_window = make_run_window(ctx)
 
     def audit(wf_output, window):
-        return audit_from_coordinator(ctx.coord_state_path, wf_output, window)
+        report = audit_from_coordinator(ctx.coord_state_path, wf_output, window)
+        # R10: a durable, hash-bound AWAITING_REVIEW terminal checkpoint is written ONLY after a
+        # clean audit (never for a rejected/requeued window). Promotion was already skipped in
+        # run_window, so the store and TM are untouched.
+        if ctx.stop_before_promote and _audit_is_clean(report):
+            write_awaiting_review_checkpoint(ctx, window, wf_output, report)
+        return report
 
     sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
                            resume=args.resume)
@@ -518,6 +628,11 @@ def main(argv=None):
                          'view that makes ZERO generation calls.')
     ap.add_argument('--resume', action='store_true',
                     help='resume from --checkpoint (no completed lease re-run/re-promoted)')
+    ap.add_argument('--stop-before-promote', action='store_true',
+                    help='R10: dispatch+record+audit each lease but do NOT promote, mutate the '
+                         'store or rebuild TM; write a durable hash-bound AWAITING_REVIEW terminal '
+                         'checkpoint after a clean audit for human/Opus review (the bounded c4 '
+                         'ladder requires this).')
     # Ceilings (all optional / default-disabled).
     ap.add_argument('--max-windows', type=int, default=None)
     ap.add_argument('--max-calls', type=int, default=None)
