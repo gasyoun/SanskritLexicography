@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1080 follow-up: the 468 reconstructed headwords are now marked (owner-authorised 17-07-2026)
+
+- **`provenance.h_reconstructed` on 468 rows** (+ `iast_reconstructed` 462, `grammar_defaulted_empty`
+  468). [PR #510](https://github.com/gasyoun/SanskritLexicography/pull/510) repaired the store, and its
+  `{Tn}` half is evidence-based (668/670 restored from content-addressed sources; the 2 unrecoverable
+  `banD` rows quarantined rather than guessed). Its `h` half is not: `canonical_record_head()` *derives*
+  a head from the row's own key (`gam~~h0_45_upa` → `'upagam'`, every `vid~~*` → `'vid'`), because the
+  model-authored `h` was destroyed at the stitch before it was ever persisted and no offline source
+  exists ([Uprava FINDINGS §94](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)). The
+  derivation was unavoidable; being **silent** was not — provenance still read the original
+  `generator`/`generated_at`, so 468 derived values were indistinguishable from model-authored ones,
+  and `h is None` falling 468 → 0 cleared the only query that could find them (§95). **No `h` value was
+  changed**; the markers make them auditable, not correct. Query `provenance.h_reconstructed == true`
+  for the re-translation worklist.
+- [`src/mark_reconstructed_headwords.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mark_reconstructed_headwords.py)
+  — recovers the 468 by diffing PR #510's pre-repair backup (SHA-pinned to its report), aligning on
+  fields the repair never rewrote, and refusing to write unless every number matches that report.
+  Dry-run by default, idempotent. Report:
+  [`pwg_ru/h1080/H1080_RECONSTRUCTED_HEADWORD_MARKERS_2026-07-17.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1080/H1080_RECONSTRUCTED_HEADWORD_MARKERS_2026-07-17.md).
+  Measured cost of the derivation: 468 rows collapse onto **14** distinct heads, and
+  `vid~~h0_00_pwg00`/`vid~~h2_00_pwg00` — different homonyms by their own keys — both derive to `'vid'`.
+
+
 - **Manifest-v2 production launch contract.** New live manifests bind a logical profile slot,
   canonical `CLAUDE_CONFIG_DIR` fingerprint, execution route/lane, exact model and validation
   method, plus an exact per-key `real | synthetic_control` map. V1 remains readable for historical
