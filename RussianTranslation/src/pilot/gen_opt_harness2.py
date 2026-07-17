@@ -860,7 +860,12 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     return {
         'key1': key,
         'iast': _portrait_key_iast(portrait_text, key),
-        'records': [{'h': None, 'senses': [sense]}],
+        # R7 (C-07): a degenerate stub is a real cross-reference record with no gloss/grammar, NOT a
+        # null owner. Emit honest source-identity values -- h='' (the stub carries no homonym
+        # discriminator, like the 393 h=='' rows) and grammar='' (like the #517
+        # grammar_defaulted_empty population) -- so validate_final_card_schema passes and one xref
+        # stub can no longer make save_and_audit refuse the entire paid window.
+        'records': [{'h': '', 'grammar': '', 'senses': [sense]}],
         'notes': '',
         'degenerate_passthrough': True,
     }

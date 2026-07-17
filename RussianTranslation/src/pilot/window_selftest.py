@@ -2278,26 +2278,35 @@ def test_tm_publication_fixtures_validate():
 
 
 def test_degenerate_passthrough_accounted():
-    """A safely-degenerate cross-reference stub is emitted as an accounted no-LLM row and is
-    excluded from translation lanes; it is never a silent skip."""
+    """A safely-degenerate cross-reference stub is emitted as an accounted, SCHEMA-VALID no-LLM row
+    and is excluded from translation lanes. N-3/R7 (C-07): the card MUST pass
+    validate_final_card_schema (record h + grammar present, not null) so one xref stub can no longer
+    make save_and_audit refuse a whole paid window -- and this assertion must never silently skip on
+    an absent file fixture."""
     import re as _re
     import gen_opt_harness2 as gh
-    from window_common import input_paths, read_text
-    key = 'ab'
-    rp, pp = input_paths(key)
-    if not (os.path.exists(rp) and os.path.exists(pp)):
-        return
-    card = gh.degenerate_passthrough_card(key, read_text(rp), read_text(pp), 'russian')
+    import validate_final_card_schema as vs
+    # Inline stub -> no filesystem dependency, so the schema assertion below can never be skipped.
+    card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', '=== LAYER: PW ===\n\nvgl. {#agni#}',
+                                          '[]', 'russian')
     if not card or not card.get('degenerate_passthrough'):
-        fail('ab fixture should qualify for conservative degenerate pass-through')
-    js, batches = gh.build(key, [key], None, 12000, nominal=True, tm_path=None)
-    meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
-    if meta.get('degenerate_passthrough_keys') != [key]:
-        fail('META.degenerate_passthrough_keys must account for the stub key')
-    if batches or meta.get('presplit_keys'):
-        fail('a degenerate pass-through key must not also enter an agent translation lane')
-    if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
-        fail('generated harness must emit explicit degenerate pass-through rows')
+        fail('inline vgl.-stub should qualify for conservative degenerate pass-through')
+    vs.validate_card(card)                     # R7/C-07: raises on any schema violation
+    rec = card['records'][0]
+    if rec.get('h') is None or 'grammar' not in rec:
+        fail('degenerate record must carry a non-null h and a grammar field (RECORD_REQUIRED)')
+    # File-fixture-dependent accounting -- an EXPLICIT conditional, never a silent top-of-function return.
+    from window_common import input_paths, read_text
+    rp, pp = input_paths('ab')
+    if os.path.exists(rp) and os.path.exists(pp):
+        js, batches = gh.build('ab', ['ab'], None, 12000, nominal=True, tm_path=None)
+        meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+        if meta.get('degenerate_passthrough_keys') != ['ab']:
+            fail('META.degenerate_passthrough_keys must account for the stub key')
+        if batches or meta.get('presplit_keys'):
+            fail('a degenerate pass-through key must not also enter an agent translation lane')
+        if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
+            fail('generated harness must emit explicit degenerate pass-through rows')
 
 
 def test_degenerate_passthrough_rejects_glosses():

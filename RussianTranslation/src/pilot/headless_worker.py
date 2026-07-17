@@ -339,9 +339,42 @@ class HeadlessEngine:
             self.max_total_agents = (max_agents_override if self.max_total_agents is None
                                      else min(self.max_total_agents, max_agents_override))
         self.budget_stops = 0
+        # R5 (C-25): the CLI wrapper's usage/cost were parsed then dropped at the call site, so
+        # actual spend was unreconcilable and a priced run ended STOP_COST_UNEVALUABLE. Accumulate.
+        self.usage = {'input_tokens': 0, 'output_tokens': 0, 'cache_read_tokens': 0,
+                      'cache_creation_tokens': 0, 'subagent_tokens': 0,
+                      'observed_cost_usd': 0.0, 'cost_evaluable': True, 'priced_calls': 0,
+                      'missing_usage_calls': 0}
 
     def note(self, key, error):
         self.failures[key] = str(error)[:300]
+
+    def _accumulate_usage(self, wrapper):
+        """R5: fold one CLI wrapper's usage/cost into the running totals. A missing usage or cost
+        field flips `cost_evaluable` False (so a real call is never priced at $0) instead of being
+        silently dropped. `subagent_tokens` is the field the economy pricer reads."""
+        self.usage['priced_calls'] += 1
+        u = wrapper.get('usage') if isinstance(wrapper, dict) else None
+        if isinstance(u, dict):
+            # These are disjoint Claude usage fields; sum them, never overwrite. Prior calls'
+            # totals are retained even when a later call arrives with no usage.
+            self.usage['input_tokens'] += int(u.get('input_tokens') or 0)
+            self.usage['output_tokens'] += int(u.get('output_tokens') or 0)
+            self.usage['cache_read_tokens'] += int(u.get('cache_read_input_tokens') or 0)
+            self.usage['cache_creation_tokens'] += int(u.get('cache_creation_input_tokens') or 0)
+        else:
+            # Retain known telemetry; mark the whole run unpriceable and count the gap.
+            self.usage['cost_evaluable'] = False
+            self.usage['missing_usage_calls'] += 1
+        cost = wrapper.get('total_cost_usd') if isinstance(wrapper, dict) else None
+        if cost is None:
+            self.usage['cost_evaluable'] = False
+        else:
+            # observed_cost_usd stays authoritative (accumulated CLI cost), not recomputed from tokens.
+            self.usage['observed_cost_usd'] += float(cost)
+        self.usage['subagent_tokens'] = (
+            self.usage['input_tokens'] + self.usage['output_tokens']
+            + self.usage['cache_read_tokens'] + self.usage['cache_creation_tokens'])
 
     def _budget_ok(self, heal):
         """R3: True while another spawn on this lane stays within the manifest agent budgets.
@@ -390,11 +423,12 @@ class HeadlessEngine:
                                   'elapsed_ms': elapsed, 'classification': classification})
             raise HardFailure(classification, code, (proc.stderr or proc.stdout or '')[-2000:])
         try:
-            structured, _wrapper = extract_structured(proc.stdout)
+            structured, wrapper = extract_structured(proc.stdout)
         except ValueError as exc:
             self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
                                   'elapsed_ms': elapsed, 'classification': 'malformed_output'})
             return None, 'malformed_output:%s' % exc
+        self._accumulate_usage(wrapper)     # R5: capture spend instead of discarding it
         self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
                               'elapsed_ms': elapsed, 'classification': 'success'})
         return structured, None
@@ -637,6 +671,7 @@ def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_ove
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
                'budget_stops': engine.budget_stops,
+               'usage': engine.usage,
                'kill_timeouts': engine.kill_timeouts, 'conn_errors': engine.conn_errors,
                'headless_attempts': engine.attempts}
     output_meta = dict(manifest['meta'])
