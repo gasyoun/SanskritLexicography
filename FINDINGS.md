@@ -2524,3 +2524,30 @@ decisions move the headline by 28.6% and the ceiling by ~2×. Same defect class 
 `iti` fix (a space-or-quote rule undercounted KRM ~3× until a word-boundary rule replaced it): an
 assumption about markup shape, living in a regex, read downstream as a fact about the lexicographer.
 Never report a `<ls>`-derived count without the extraction rule beside it.
+
+---
+
+### §91. DCS has no aorist TENSE value — `feat_tense='Past'` lumps aorist with the perfect; `feat_formation` is what actually separates them
+
+Querying the DCS sqlite for aorist forms by `feat_tense` alone is a dead end: the aorist has no
+tense code of its own and is folded into `feat_tense='Past'` together with the perfect, so a
+naive tense filter either returns nothing or returns perfect forms mislabeled as aorist. An
+earlier form-set matching approach (a fixed list of known aorist forms) undercounted badly —
+e.g. zero hits for a text where Whitney's grammar records the aorist as attested.
+
+The reusable key: **within `feat_tense='Past'`, `feat_formation` cleanly splits the seven aorist
+classes from the perfect** —
+`feat_formation IN {root, them, s, is, red, sa, sis}` = aorist (root 5,690 · thematic 2,781 ·
+s 1,508 · iṣ 1,077 · reduplicated 833 · sa 124 · siṣ 41 = 12,054 finite tokens), vs.
+`peri` (periphrastic perfect, 4,046) and `None` (reduplicated perfect, 85,955) = not aorist. This
+raises the measured aorist frequency to **12,054 tokens / 1.2% of verbal forms** — about 5× the
+2,452 / 0.31% the older form-set method produced, because that method had missed the two largest
+classes (root and thematic aorists) entirely. The "classically infrequent" verdict for the aorist
+still holds either way, but any prior corpus count derived from the form-set/tense-code method
+should be treated as a ~5× undercount, not a ground truth.
+
+> **Source:** SanskritGrammar Whitney-register drain, `whitney_aorist_tagger.py`
+> ([PR #357](https://github.com/gasyoun/SanskritGrammar/pull/357),
+> [`WhitneyGrammar_1889/whitney_aorist_tagger.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_aorist_tagger.py)) ·
+> [H1134](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1134-Opus_SanskritGrammar_whitney-aorist-per-text-tagger_17.07.26.md) ·
+> 17-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
