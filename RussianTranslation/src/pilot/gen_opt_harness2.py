@@ -1474,6 +1474,14 @@ const META = %(meta)s
 
 const restore = (t, ph) => (t || '').replace(/\\{T(\\d+)\\}/g, (m, n) => (ph[+n - 1] !== undefined ? ph[+n - 1] : m))
 const countOf = (card, re) => { let n = 0; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) n += ((s.german || '').match(re) || []).length; return n }
+// H1152 guard 2: countOf() above ONLY ever reads the `german` SOURCE-echo field — it was
+// built to verify the model copied the masked German verbatim, never to verify the
+// TRANSLATION. countOfField lets accept() run the identical count over the actual
+// target-language field (`english`/`russian`) too, so a {Tn} that survives in `german`
+// but is silently dropped from the translation (H1070 r102: {#uc#} in a <F> footnote
+// survived `german` 33/33 but vanished from `english`, 32/33 -- invisible to countOf()
+// because it never looks at the translation field at all) is no longer invisible.
+const countOfField = (card, field, re) => { let n = 0; for (const rec of (card.records || [])) for (const s of (rec.senses || [])) n += ((s[field] || '').match(re) || []).length; return n }
 // Failure ledger: key -> last-known reason a card/fragment is unresolved. Every path that
 // nulls a card MUST leave a reason here — a bare null is indistinguishable downstream
 // between a hard agent() throw, a fidelity reject, and the model omitting the card,
@@ -1603,6 +1611,9 @@ const exactCard = (cards, km, expected, fallbackIndex) => {
 // and promote_final_cards refuses on. Hand-maintaining this list on each lane is exactly how
 // card.iast / rec.h / s.tag / s.differentia came to be promoted with their placeholders intact.
 const RESTORE_SPEC = %(restore_spec)s
+// H1152 guard 2: the per-sense target-language field name ('english'/'russian'), so accept()
+// can run countOfField over the actual translation, not just the `german` source echo.
+const TARGET_FIELD = '%(field)s'
 // C-02: rebuild records[] from healed senses, preserving each sense's [h, grammar] owner.
 // The stitch used to emit `records: [{ senses }]` — no h, no grammar — which violates
 // schemas/pwg_ru_final_card.schema.json (record.required = {h, grammar, senses}) and made the
@@ -1669,6 +1680,23 @@ const accept = (c, k) => {
   const ls = countOf(c, /<ls\\b/g), sk = countOf(c, /\\{#/g)
   if (ls !== INPUTS[k].ls || sk !== INPUTS[k].sk) {
     noteFail(k, 'fidelity-reject: <ls> ' + ls + '/' + INPUTS[k].ls + ', {# ' + sk + '/' + INPUTS[k].sk)
+    return null
+  }
+  // H1152 guard 2: the check above counts <ls>/{#..#} ONLY in the `german` source-echo
+  // field (countOf's hard-coded `s.german` read) -- it proves the model faithfully copied
+  // the masked German back out, never that the TRANSLATION preserved the same spans. A
+  // {Tn} can be dropped from the translation field alone with zero effect on the check
+  // above (this is the H960/H911 `dropped_sanskrit_span` gap, already known and detected
+  // as a LOW/report-only RU-side signal in prompt_rule_audit.markup_sigla_risks, but never
+  // wired as a HARD, blocking check on the generation path for either language). Root
+  // cause, confirmed against the live H1070 r102 row (vac~~h0_00_pwg00, {#uc#} inside a
+  // <F> footnote): `german` carried 33/33 expected {#..#} spans (this check passed clean)
+  // while `english` carried only 32/33 -- the drop happened ONLY in the field this guard
+  // never inspects. Run the identical count over the actual target-language field so a
+  // translation-only drop can no longer hide behind a clean source echo.
+  const lsT = countOfField(c, TARGET_FIELD, /<ls\\b/g), skT = countOfField(c, TARGET_FIELD, /\\{#/g)
+  if (lsT !== INPUTS[k].ls || skT !== INPUTS[k].sk) {
+    noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk)
     return null
   }
   // H960 SAN-LOSS shortfall guard (H920's deferred deepest fix). The ls/sk fidelity check

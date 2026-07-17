@@ -871,6 +871,27 @@ def test_prompt_rule_audit_missing_blocks():
         os.remove(path)
 
 
+def test_h1152_guard1_en_polyseme_checklist():
+    """H1152 guard 1 (H1070 finding #1: r155 'braut'->betroth, r119 'Vergleich'->comparison):
+    a German-homograph/polyseme checklist under term-mistranslation in the EN fidelity judge
+    rubric, plus a matching HARD RULE in tr_en.txt telling the generator to pick the sense the
+    Sanskrit lemma licenses, never the frequent German sense. Markup stays intact and the
+    English reads fluently for this error class, so no deterministic gate can catch it --
+    this guard is judge-rubric + generation-prompt only, pinned here as a content check."""
+    import gen_fidelity_judge_en as jen
+    for term in ('Vergleich', 'braut', 'Braut', 'gelten', 'Zug', 'anführen'):
+        if term not in jen.RUBRIC:
+            fail('EN judge RUBRIC missing German-polyseme checklist term %r' % term)
+    if 'term-mistranslation' not in jen.RUBRIC or 'polysem' not in jen.RUBRIC.lower():
+        fail('EN judge RUBRIC term-mistranslation line is missing the polyseme checklist')
+    tr = open(os.path.join(HERE, 'tr_en.txt'), encoding='utf-8').read()
+    if 'sense the sanskrit lemma licenses' not in tr.lower():
+        fail('tr_en.txt is missing the polyseme prompt rule (pick the sense the Sanskrit '
+             'lemma licenses, never the frequent sense)')
+    if 'polysemous german gloss' not in tr.lower():
+        fail('tr_en.txt is missing the POLYSEMOUS GERMAN GLOSSES hard rule')
+
+
 def test_semantic_risk_checker():
     clean_card = {
         'key': 'ap',
@@ -1729,6 +1750,34 @@ def test_en_de_residue_french_guard():
     _, soft_german = audit_sense('{%Todesangst%}', 'fear of des Todes')
     if not any(s.startswith('DE-RESIDUE') for s in soft_german):
         fail('DE-RESIDUE did not fire on genuine German residue ("des Todes")')
+
+
+def test_h1152_guard3_xref_only_and_nws_de_locked():
+    """H1152 guard 3 (H1070 finding #3, 12/170 FU1 rows): two deterministic "nothing was
+    really translated here" shapes, flagged SOFT so a coverage consumer stops counting them
+    as ordinary translated prose. Neither is a fidelity defect (markup/meaning stay intact),
+    so neither may ever become a HARD flag."""
+    from audit_window_en import audit_sense
+    # XREF-ONLY: no {%..%} gloss wrapper -> only the cross-reference apparatus survives.
+    hard_xref, soft_xref = audit_sense('Vgl. {#foo#} fgg.', 'Cf. {#foo#} and foll.')
+    if 'XREF-ONLY' not in soft_xref:
+        fail('XREF-ONLY did not fire on a pure cross-reference row (Vgl. ... fgg.)')
+    if hard_xref:
+        fail('a pure cross-reference row must never produce a HARD flag: %r' % hard_xref)
+    # CONTROL: a real {%..%} gloss beside a cross-ref word must NOT fire XREF-ONLY.
+    _, soft_real = audit_sense('{%to speak%} Vgl. {#foo#}', 'to speak; cf. {#foo#}')
+    if 'XREF-ONLY' in soft_real:
+        fail('XREF-ONLY wrongly fired on a row carrying real gloss prose')
+    # NWS-DE-LOCKED: German trapped inside a {#..#} span never reached the translator.
+    hard_locked, soft_locked = audit_sense('{#der Bote kommt#}', '{#der Bote kommt#}')
+    if 'NWS-DE-LOCKED' not in soft_locked:
+        fail('NWS-DE-LOCKED did not fire on German text trapped inside a {#..#} span')
+    if hard_locked:
+        fail('NWS-DE-LOCKED shape must never produce a HARD flag: %r' % hard_locked)
+    # CONTROL: genuine Sanskrit/IAST inside {#..#} must NOT fire NWS-DE-LOCKED.
+    _, soft_san = audit_sense('{%to speak%} {#vac#}', 'to speak {#vac#}')
+    if 'NWS-DE-LOCKED' in soft_san:
+        fail('NWS-DE-LOCKED wrongly fired on genuine Sanskrit inside a {#..#} span')
 
 
 def test_ru_coverage_denominator_not_silently_exempt():
@@ -5552,6 +5601,7 @@ def main():
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
         test_semantic_risk_checker,
+        test_h1152_guard1_en_polyseme_checklist,
         test_braced_gloss_audit,
         test_german_residue_keeps_retained_markup,
         test_german_connective_fix,
@@ -5567,6 +5617,7 @@ def main():
         test_markup_loss_soft_flag_ru,
         test_markup_loss_soft_flag_en,
         test_en_de_residue_french_guard,
+        test_h1152_guard3_xref_only_and_nws_de_locked,
         test_ru_coverage_denominator_not_silently_exempt,
         test_coverage_gate_multi_layer_and_presplit,
         test_en_residual_coverage_complete,
