@@ -24,11 +24,11 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11).
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
-`G`–`K` interfaces · `L`–`M` tools · `P` drills; dictionaries use their code). Datasets are graded by **size** (measured
+`G`–`K` interfaces · `L`–`M` tools · `P` drills · `Q` methods; dictionaries use their code). Datasets are graded by **size** (measured
 on disk, so magnitudes are comparable — rows/entries alone are not): 🟢 **large** (&gt;10 MB) · 🟡 **medium**
 (1–10 MB) · ⚪ **small** (&lt;1 MB); the **Size** column carries the count and the exact MB. The **Intro** column is the asset's
 first-introduced month/year from git history; for the external stacks (M10–M14) it is instead the
@@ -316,6 +316,89 @@ BookIndex's Russian-linguistics quiz are not Sanskrit-language drills.
 
 ---
 
+## VI. Methods & algorithms — the named procedures behind the assets
+
+Where sections I–V catalogue *what exists*, this section catalogues **how it was computed**: the
+named computational methods the project implements, adapts, or consumes — distinct from the *code
+files* they live in ([`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md)),
+the *datasets they output* (§I above · [`datasets.json`](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)),
+and the *reproduction recipes* ([`RECIPES.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md)).
+IDs use the **`Q`** prefix. **Origin:** **N** ours-novel / non-textbook · **S** ours, a standard
+method in an in-house implementation · **A** adapted from a named external source · **X** external,
+consumed not implemented. Rows collapse tight method-families; the exhaustive ~70-method sweep behind
+this section (every path verified) is recorded in
+[H1202](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1202-Opus_SanskritLexicography_features-index-methods-algorithms-section-q_17.07.26.md).
+Several rows pair with a tool/stack entry above — Q2 ↔ L1 (`sanskrit-util`), Q15–Q16 ↔ M14 (`vidyut`),
+Q5 ↔ Charles Li's helayo.
+
+### Transliteration & normalization keys
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q1 | Normalization-key family (`norm` / `nfold` / `form_key` / `slp1_norm` / `slp1_simplify`) | Split lookup / compare / fuzzy-fold keys, each trading reversibility vs length- vs case-sensitivity | N | [sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py) |
+| Q2 | FSM XML transcoder | Finite-state IAST/SLP1/Devanāgarī transcode driven by XML scheme tables (dict builds; 62+ copies) | A | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/simpleslp/transcoder.py) |
+| Q3 | Longest-match roman→SLP1 | Greedy longest-prefix scheme substitution | S | [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/wf1/build_wf_from_dcs.py) |
+
+### Alignment & witness collation (Sa↔Sa)
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q4 | Gotoh affine-gap alignment + Sanskrit near-equivalence substitution matrix | Optimal edit-path verse collation scoring ā~a, ṃ~m, ś~ṣ, n~ṇ as *near*, not mismatch | S·N | [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/spike_helayo_align.py) |
+| Q5 | Center-Star multiple-sequence alignment | Multi-witness consensus collation for critical editions | X | [helayo](https://github.com/chchch/sanskrit-alignment) |
+| Q6 | Critical-apparatus locus collapse | Aligned columns → readable `lemma ] variant` apparatus notation | N | [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/build_edition_apparatus.py) |
+| Q7 | difflib LCS + token-set Jaccard + asymmetric containment | Verse-similarity / parallel-recovery family (containment chosen over Jaccard for ṭīkā→verse) | S·N | [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/sa_align.py) |
+| Q8 | Char n-gram Jaccard + inverted index | Fuzzy MBH-census match of vulgate verses to App. I print apparatus | S | [CommentaryStrategies](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/verify_mbh_apparatus_against_print.py) |
+
+### Cross-language bitext alignment & translation-memory
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q9 | DeepSeek LLM word alignment | Verse-level Sa↔Ru content-word pairing (1.09 M pairs → A1) | X | [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) |
+| Q10 | SimAlign mutual-argmax (mBERT cosine) | Cross-lingual word alignment from subword embeddings | A | [tm_align.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_align.py) |
+| Q11 | Composite A/B/C TM grader (+ ref-free QE proxy · consensus · grounding proxy) | Bespoke QE/consensus stack scoring each unit → publication grade A/B/C | N | [tm_grade.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py) |
+
+### Morphology, roots, sandhi & grammar
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q12 | Flatten-all CoNLL-U morphology ingest | Dynamic-schema SQLite build; each FEATS/MISC key → its own column | N | [import_dcs_conllu.py](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py) |
+| Q13 | Three-way root triangulation | MW ↔ Whitney hub ↔ DCS join on the normalised root | N | [root_triangulation.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/root_triangulation.py) |
+| Q14 | Homonym disambiguation (gaṇa-overlap + DCS lemma_id token-split) | Attributes corpus counts to the correct homonym via class intersection / DCS's own split | N | [dict_align.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/dict_align.py) · [token_disambiguate.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/token_disambiguate.py) |
+| Q15 | vidyut it-lopa two-gate paradigm binding | Binds dhātu to homonym via it-lopa derivation history + gaṇa / present-stem corroboration gates | A·N | [vidyut_paradigms.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/vidyut_paradigms.py) |
+| Q16 | Preverb (upasarga) segmentation + MW cross-map | Segments a headword into preverb+root, matches MW preverbs | N | [PWG verbs01](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/preverb1.py) |
+| Q17 | `<ls>` citation-reference splitting + siglum→authority difflib matcher | Splits compound citations into per-part links; fuzzy-links unlinked sigla to canonical authorities | N·S | [link_expand.py](https://github.com/sanskrit-lexicon/MWS/blob/master/mwsissues/issue182/link_expand.py) · [link_candidates.py](https://github.com/sanskrit-lexicon/MWS/blob/master/mwauthorities/link_candidates/link_candidates.py) |
+| Q18 | Vowel-sandhi coalescence + ablaut-series calculators | savarṇa / guṇa / vṛddhi / yaṇ surface + grade→surface tables (Whitney/Zaliznyak) | S | [SandhiCollider.jsx](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/talmud/SandhiCollider.jsx) |
+
+### Classifiers, register, stylometry & phonostatistics
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q19 | DCS phono segmentation engine + varga×epoch Cramér's V | IAST→SLP1 akṣara/varṇa/ligature segmentation + diachronic association statistic | N·S | [dcs_phono_engine.py](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/regen-2026/dcs_phono_engine.py) · [varga_engine.py](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/varga-series-diachrony/varga_engine.py) |
+| Q20 | Quantifier metalanguage register "anchoredness" method | Tags gradation quantifiers ANCHORED/UNANCHORED; window-sweep + precision/recall on a hand-scored sample | N | [harvest_quantifiers.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/harvest_quantifiers.py) |
+| Q21 | Renou era (I–V) tagger + 20-code register classifier | Multi-label diachronic + genre-register tagging of senses. ⚠ **register classifier is defective** (unanchored `Insch?r` regex spuriously tags `épig`); era tagger has a homograph-collapse caveat | N | [renou.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou.py) · [renou_register.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_register.py) |
+| Q22 | Ortho-drift transform-and-check (5 langs) + drift→year dating | Spelling-reform drift detector (Latin = negative control); regresses drift-rate to a date | N·S | [ortho_drift.py](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/detectors/ortho_drift.py) |
+| Q23 | SpellCheck detector suite | Cross-lexicon error-mining over a Sanskrit confusion model: faultfinder · consensus/intra_dup/dict_vs_corpus vote · phonotactic · n-gram · noisy-channel · 3-way meter vote | N | [detectors/](https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/detectors) |
+| Q24 | Titov parametric core | Quantitative-lexicology core (∪ big-core / ∩ small-core of four parametric cores) | A | [titov_parametric_core.py](https://github.com/gasyoun/Uprava/blob/main/research/titov_parametric_core.py) |
+
+### Search, ranking, OCR & ingestion
+
+| ID | Method | What it does | Origin | Home |
+|---|---|---|---|---|
+| Q25 | Devanāgarī reverse-dictionary sort | Reverses akṣaras + phonological normalization, then last-letter-first collation | N | [reverse15.php](https://github.com/gasyoun/SanskritSorting/blob/master/reverse15.php) |
+| Q26 | Simple-search forgiving lookup | Recursive equivalence-class variant expansion + `ngramValidate` prefix pruning + wf ranking — a recall-first Sanskrit candidate generator | N | [simple_search.php](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/v1.1/simple_search.php) |
+| Q27 | Word-frequency ranking (wf0/wf1) + DCS↔CDSL xref | Orders candidates by DCS token counts; builds the DCS↔CDSL linkset (C15) | N | [build_wf_from_dcs.py](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/wf1/build_wf_from_dcs.py) · [build_xref.py](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/build_xref.py) |
+| Q28 | Vision-OCR pipelines (preface + commentary) | LLM vision-OCR of front-matter / translator commentaries → faithful Markdown + corpus (recognition external; orchestration + post-correction ours) | A | [CommentaryStrategies GEMINI.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/GEMINI.md) |
+| Q29 | PPV statistical hypothesis pipeline + L1/L2 scholar classification | chi²/Fisher/Kruskal/Spearman over the scholar DB; rule-based discipline classification with uncertainty gating | S·N | [work_ppv_hypotheses.py](https://github.com/gasyoun/IndologyScholars/blob/main/article/work_ppv_hypotheses.py) · [verification.py](https://github.com/gasyoun/IndologyScholars/blob/main/pipeline/verification.py) |
+| Q30 | Code-duplication census | Groups every `.py/.sh/.php` by basename + content hash to count copies / versions / drift org-wide | N | [code_duplication_census.py](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/code_duplication_census.py) |
+
+**Not catalogued here (out of scope).** Trivial glue (file I/O, config parsing, plain string concat);
+one-off Python-2 issue-forensics scripts (frozen 2015–2017 correction artifacts); and the *outputs*
+of these methods, which are the datasets in §I. The novelty grades are the compiling session's
+judgement, not a literature audit — treat **N** as "no off-the-shelf equivalent found," not a
+priority claim.
+
+---
+
 ## Contributing — add your dataset, tool or interface
 
 Anyone can propose an asset. Open an issue on
@@ -344,6 +427,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **Q1–Q30 · Section VI** — the project's **algorithms & methods** catalogued for the first time (H1202): 30 method-family rows across transliteration/keys, Sa↔Sa alignment & collation, bitext & translation-memory, morphology/roots/sandhi, classifiers/register/phonostatistics, and search/OCR/ingestion, each graded N/S/A/X (novel · standard · adapted · external) with its home file; introduces the `Q` (methods) ID prefix and flags the known-defective Renou register classifier (Q21). Answers "what methods do we use, which are novel, which are external" — previously tracked only obliquely via SHARED_CODE (code), datasets.json (outputs), and RECIPES (reproduction). |
 | 07/26 | **P1–P11 · Section V** — learner-facing **drills & practice content** catalogued for the first time: 11 sets across 7 repos (~900+ fixed items), the largest being kosha's 396-item sandhi drill pack (P1), csl-guides' 208-question quiz suite (P3), and VisualDCS' 200-card verb-form deck (P9); introduces the `P` (pedagogy) ID prefix. Excludes the `sandhi-*` drill *generator* skills (tooling, not content). |
 | 07/26 | **E43–E46** — H817 WS1.2 closes 3 of 5 descriptive census rows in [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) Part 0 + registers 2 already-done rows the register hadn't caught up to: code-dup census + LOC/language-mix (E43, already done H688, register was stale), POS-per-text (E44, new), sense/polysemy per dict (E45, new, ◐ partial 11/44 — mirrors the A02 paper, the other 33 dicts lack a structural sense-marking convention), paradigm-cell coverage per root (E46, new, 8,054 roots). |
 | 07/26 | **Interactive view built** — the promised filterable single-file HTML artifact now exists: [`features_index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.html), generated from this Markdown by [`build_features_index_html.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/build_features_index_html.py) (search + category tabs + status/tier/language filters, theme-aware, zero-dependency). Closes the 2004-manifesto «Каталог каталогов» deliverable. |
