@@ -819,6 +819,24 @@ def card_source_profile(raw, portrait_text=None):
     return None
 
 
+_HOMONYM_HEAD_RE = re.compile(r'<div\s+n=')
+
+
+def _degenerate_record_identity(key, raw):
+    """R7: the immutable source-record identity (h, grammar) for a degenerate cross-reference stub,
+    PROVEN from the source rather than defaulted. In this store the homonym head is the source's
+    `<div n="...">` markup (11,208 rows carry one); the 393 h=='' rows are records with NO homonym
+    head. A degenerate stub provably carries none -- the classifier rejects any raw containing
+    `<div` -- so its proven homonym head is '' (the same identity as those 393 rows). grammar is ''
+    (a cross-reference stub has no grammatical description). Returns None (REJECT the pass-through)
+    when the identity cannot be proven FROM THE SOURCE: a residual homonym-head marker means the
+    record is one of several homonyms and a bare xref cannot prove WHICH, so reject rather than
+    fabricate one."""
+    if _HOMONYM_HEAD_RE.search(raw):
+        return None
+    return '', ''
+
+
 def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     """Conservative no-LLM lane for cross-reference/supplement stubs.
 
@@ -848,6 +866,10 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     if len(words) > 8 or any((w not in _DEGENERATE_WORDS and n not in _DEGENERATE_WORDS)
                              for w, n in zip(words, norm)):
         return None
+    identity = _degenerate_record_identity(key, raw)
+    if identity is None:
+        return None       # R7: the source-record identity cannot be proven -> reject the pass-through
+    rec_h, rec_grammar = identity
     sense = {
         'tag': 'xref',
         'german': body,
@@ -860,12 +882,13 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     return {
         'key1': key,
         'iast': _portrait_key_iast(portrait_text, key),
-        # R7 (C-07): a degenerate stub is a real cross-reference record with no gloss/grammar, NOT a
-        # null owner. Emit honest source-identity values -- h='' (the stub carries no homonym
-        # discriminator, like the 393 h=='' rows) and grammar='' (like the #517
-        # grammar_defaulted_empty population) -- so validate_final_card_schema passes and one xref
-        # stub can no longer make save_and_audit refuse the entire paid window.
-        'records': [{'h': '', 'grammar': '', 'senses': [sense]}],
+        # R7 (C-07): a degenerate stub is a real cross-reference record. Its (h, grammar) is the
+        # PROVEN source-record identity from _degenerate_record_identity (h = the source homonym
+        # head, '' when the source has none as here; grammar '' for a no-grammar xref) -- NOT a
+        # schema-appeasing default; an unprovable identity was already rejected above. So
+        # validate_final_card_schema passes and one xref stub can no longer make save_and_audit
+        # refuse the entire paid window.
+        'records': [{'h': rec_h, 'grammar': rec_grammar, 'senses': [sense]}],
         'notes': '',
         'degenerate_passthrough': True,
     }
@@ -1613,7 +1636,12 @@ async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
 // Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
 // Two texts with equal token multisets restore to identical citation/markup content.
 const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
-const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { a = a.concat((rec.grammar || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) a = a.concat((s.german || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
+// C-17: which fields' {Tn} must MATCH the source skeleton for the fragment-fidelity guard is NOT
+// re-typed here -- it is injected from card_fields.js_token_fidelity_spec(), the SAME constant the
+// Python `card_token_multiset` collects from, so the two twins cannot drift (the C-17 defect was
+// the Python lane omitting `grammar` while this JS lane hard-coded rec.grammar + s.german).
+const TOKEN_FIDELITY_SPEC = %(token_fidelity_spec)s
+const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { for (const f of TOKEN_FIDELITY_SPEC.record) a = a.concat((rec[f] || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) for (const f of TOKEN_FIDELITY_SPEC.sense) a = a.concat((s[f] || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
 // positional-only matching silently misassigns every card after an omitted/reordered one.
@@ -2204,6 +2232,7 @@ return { meta: META, summary, results: out }
         # unmask; both listed three fields while promote read six, and 670 store rows landed
         # with a raw {Tn}. The JS cannot import Python, so the constant is injected instead.
         'restore_spec': card_fields.js_restore_spec(field),
+        'token_fidelity_spec': card_fields.js_token_fidelity_spec(),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.

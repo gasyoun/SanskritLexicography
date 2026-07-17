@@ -50,6 +50,7 @@ const countOf = eval('(' + one('countOf') + ')')
 const countOfField = eval('(' + one('countOfField') + ')')
 const TARGET_FIELD = eval(one('TARGET_FIELD'))
 const tokensOf = eval('(' + one('tokensOf') + ')')
+const TOKEN_FIDELITY_SPEC = eval('(' + one('TOKEN_FIDELITY_SPEC') + ')')   // R2/C-17: cardTokens is spec-driven now
 const cardTokens = eval('(' + one('cardTokens') + ')')
 const accept = eval('(' + am[0].replace(/^const accept = /, '') + ')')
 
