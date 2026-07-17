@@ -5401,6 +5401,70 @@ def test_validator_has_a_live_caller():
         fail('audit final-schema gate did not requeue an invalid live card: %r' % bad_gate)
 
 
+def test_h_reconstructed_regression_guard():
+    """D-1 (H1149): `cohort_clean_rates.assert_h_reconstructed_regression` must FAIL
+    LOUD the instant the store's `h_reconstructed` count silently drifts off 468, and
+    stay green at 468 -- the exact failure mode this guards against already happened
+    once (PR #510's underlying `h is None` count fell 468 -> 0 and became invisible to
+    the only query that could find it, Uprava FINDINGS §95). "A guard that passes on a
+    mutated store is not a guard" (H1149) -- so this test builds a SYNTHETIC store (not
+    the real gitignored canonical one, so it stays deterministic off-disk everywhere)
+    and proves both directions: 467 markers -> AssertionError; 468 -> clean pass; a
+    467-count WITH an authorized re-translation manifest documenting exactly that
+    decrease -> accepted.
+    """
+    import cohort_clean_rates as ccr
+
+    with tempfile.TemporaryDirectory() as tmp:
+        store = os.path.join(tmp, 'pwg_ru_translated.jsonl')
+
+        def write_store(n_marked, total=500):
+            with open(store, 'w', encoding='utf-8') as f:
+                for i in range(total):
+                    row = {
+                        'key1': 'k%d' % i, 'subcard': 'k%d~~h0_00_pwg00' % i, 'layer': 'pwg',
+                        'h': 'h%d' % (i % 14),
+                        'provenance': ({'h_reconstructed': True} if i < n_marked else {}),
+                    }
+                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+        write_store(468)
+        got = ccr.assert_h_reconstructed_regression(store, expected=468)
+        if got != 468:
+            fail('guard mis-measured a clean 468 store: got %r' % got)
+
+        write_store(467)  # simulate ONE silently dropped marker
+        try:
+            ccr.assert_h_reconstructed_regression(store, expected=468)
+        except AssertionError:
+            pass
+        else:
+            fail('h_reconstructed regression guard did NOT fail at 467 -- not a real guard')
+
+        write_store(468)  # restore
+        ccr.assert_h_reconstructed_regression(store, expected=468)
+
+        # An authorized re-translation manifest documenting the SAME decrease is accepted.
+        write_store(467)
+        manifest = os.path.join(tmp, 'retranslation_manifest.json')
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg_ru.h_reconstructed_retranslation_manifest.v1',
+                       'new_count': 467, 'note': 'selftest fixture'}, f)
+        got = ccr.assert_h_reconstructed_regression(store, expected=468, manifest_path=manifest)
+        if got != 467:
+            fail('guard did not accept an authorized documented decrease: got %r' % got)
+
+        # A manifest that does NOT match the actual count is NOT an excuse.
+        write_store(466)
+        try:
+            ccr.assert_h_reconstructed_regression(store, expected=468, manifest_path=manifest)
+        except AssertionError:
+            pass
+        else:
+            fail('guard accepted a manifest whose new_count does not match the actual '
+                 'measured count -- an unrelated manifest must not paper over a real drop')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -5539,6 +5603,7 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
+        test_h_reconstructed_regression_guard,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
