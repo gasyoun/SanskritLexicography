@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.18.0] — 18-07-2026
+
+### Fixed
+- **Findings/epistemic/progress dashboard refresh chain repaired end-to-end (18-07-2026, Fable 5 `claude-fable-5`, [H737](https://github.com/gasyoun/Uprava/blob/main/handoffs/H737-Fable_SanskritLexicography_findings-dashboard-refresh-repair_11.07.26.md))**: the three CONFIRMED breaks from the H733 audit are closed. **(a)** `dcs_cdsl_linkage_pct` — dead (null) in every snapshot since day one despite H733's regex fix — now records **81.4** in a fresh 18-07 snapshot, with the 11-07 snapshot kept as `source: "backfill"` recomputed from csl-apidev git history and the provenance documented in [`findings_dashboard/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/README.md) ([PR #532](https://github.com/gasyoun/SanskritLexicography/pull/532)). **(b)** the `SL findings dashboard refresh` scheduled task — which had NEVER completed a run (0xC000013A, Interactive-only, Temp log purged) — re-registered with `StartWhenAvailable`, explicit working directory, 2h cap and a durable gitignored log at `findings_dashboard/refresh.log`, then **proved one clean run** (Last Result 0, 7/12 platform probes ok, master + gh-pages pushed); the stored-credentials upgrade for logged-off runs is a GTD `@DO` ([PR #533](https://github.com/gasyoun/SanskritLexicography/pull/533)). **(c)** published gh-pages all re-serve fresh data — [`/findings/`](https://gasyoun.github.io/SanskritLexicography/findings/) + [`/episteme/`](https://gasyoun.github.io/SanskritLexicography/episteme/) `generated_at` 18-07 (DEAD_ENDS 11 = registry, post-H616 keys), [`/progress/`](https://gasyoun.github.io/SanskritLexicography/progress/) now a real 2-point series (senses 11,275→11,603, roots 147→254; [PR #535](https://github.com/gasyoun/SanskritLexicography/pull/535)). Refresh-cadence (monthly→weekly) and progress-nudge proposals filed as GTD `@DECIDE`, not applied.
+
 ## [1.17.0] — 18-07-2026
 
 ### Fixed
