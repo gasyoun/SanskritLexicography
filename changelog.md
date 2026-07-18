@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.18.1] — 18-07-2026
+
 ### Fixed
 - **RussianTranslation/src script hygiene — path anchoring, encoding, orphan triage, full CI compile gate (18-07-2026, Fable 5 `claude-fable-5`, [H738](https://github.com/gasyoun/Uprava/blob/main/handoffs/H738-Fable_RussianTranslation_src-script-hygiene-refactor_11.07.26.md))**: the 8 gitignored/untracked audit scripts (`audit2/3/4/5/7`, `audit_fidelity`, `inspect_ru`, `inspect_verse`) re-anchored the SamudraManthanam corpus path on `__file__` instead of `os.getcwd()` and got the `sys.stdout.reconfigure(encoding='utf-8')` preamble (edited in place in the shared checkout — outside the PR by nature); the org-mandated UTF-8 preamble added to tracked [promote_lock.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_lock.py), [roadmap_check.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/roadmap_check.py), [slp1_norm.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/slp1_norm.py); the only two absolute-path literals among ~170 top-level src scripts removed — [build_src.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_src.py) and [build_glossaries.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_glossaries.py) now derive `DEFAULT_SM` from `__file__` (argv override kept).
 
