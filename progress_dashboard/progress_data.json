@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10",
+  "generated_at": "2026-07-18",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "lanes": {
@@ -8,15 +8,15 @@
       "universe": 1882,
       "dcs_attested": 749,
       "promoted": 48,
-      "runnable": 11,
-      "blocked": 690
+      "runnable": 701,
+      "blocked": 0
     },
     "nominal": {
       "measured": true,
-      "candidates": 304,
-      "promoted": 3,
-      "runnable": 283,
-      "pwg_hits": 286,
+      "candidates": 5039,
+      "promoted": 41,
+      "runnable": 4251,
+      "pwg_hits": 4292,
       "medium50_promoted": 2,
       "medium50_total": 50,
       "medium50_status": "paused (kill-gate recalibration, H442/H462)"
@@ -24,10 +24,10 @@
   },
   "store": {
     "measured": true,
-    "senses": 11275,
-    "roots": 147,
+    "senses": 11603,
+    "roots": 254,
     "review": {
-      "ai_translated": 11275
+      "ai_translated": 11603
     },
     "human_reviewed": 0
   },
