@@ -10,9 +10,18 @@ branches mid-day):
   2. worktree off origin/gh-pages → copy dashboard files into findings/
      → commit → push
 
-Scheduled task (already registered; re-create with):
-  schtasks /Create /SC MONTHLY /D 3 /ST 09:30 /TN "SL findings dashboard refresh" ^
-    /TR "cmd /c python C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\findings_dashboard\\monthly_refresh.py >> C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\findings_dashboard\\refresh.log 2>&1"
+Scheduled task "SL findings dashboard refresh" (monthly, 3rd, 09:30 local).
+Repaired 18-07-2026 (H737) after the 03-07 run died with 0xC000013A and left no
+log: the definition now sets StartWhenAvailable (a missed 09:30 fires at next
+logon), an explicit WorkingDirectory, no battery blocks, a 2h execution cap,
+and logs to findings_dashboard\\refresh.log (gitignored). Re-create by
+re-registering the XML export, NOT the old /SC one-liner (which loses those
+settings):
+  schtasks /query /tn "SL findings dashboard refresh" /xml > task.xml
+  schtasks /Create /F /TN "SL findings dashboard refresh" /XML task.xml
+LogonType is still InteractiveToken — upgrading to "run whether user is logged
+on or not" requires stored credentials typed at the keyboard (GTD @DO):
+  schtasks /Change /TN "SL findings dashboard refresh" /RU WIN-NJTORH3267V\\user /RP *
 """
 
 import shutil
