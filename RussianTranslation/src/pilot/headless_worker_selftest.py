@@ -52,6 +52,207 @@ def success_runner(argv, **kwargs):
     return proc(stdout=json.dumps(wrapper))
 
 
+def _soft_nonresolve_runner():
+    """A runner that always returns a well-formed-but-empty result, so the engine keeps
+    trying to spawn (retries/bisect/heal) -- maximum spawn pressure, no HardFailure."""
+    def runner(argv, **kwargs):
+        runner.n += 1
+        return proc(stdout=json.dumps({'structured_output': {'cards': []}}))
+    runner.n = 0
+    return runner
+
+
+def test_translate_budget_binds():
+    """R3 (C-12/C-13): the manifest agent budget and the --max-agents override cap the ACTUAL
+    spawn count. The 1-key fixture would spawn `whole_attempts`=2 unbounded; a ceiling of 1
+    must cut it to 1, consuming no extra call."""
+    r = _soft_nonresolve_runner()
+    execute(manifest(), r)
+    assert r.n == 2, 'expected 2 unbounded spawns (whole_attempts), got %d' % r.n
+    r = _soft_nonresolve_runner()
+    m = manifest(); m['budgets'] = {'max_translate_agents': 1}
+    execute(m, r)
+    assert r.n == 1, 'manifest budget=1 did not bind: %d spawns' % r.n
+    r = _soft_nonresolve_runner()
+    h.execute(manifest(), claude=sys.executable, runner=r, max_agents_override=1)
+    assert r.n == 1, '--max-agents=1 did not bind: %d spawns' % r.n
+    print('  R3 budget: unbounded=2; manifest ceiling and --max-agents both cap actual spawns to 1')
+
+
+def test_call_timeout_clamped():
+    """R4 (C-15): the timeout handed to subprocess is min(operator, budgets.timeout_ceil_ms, HARD)."""
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+    execute(manifest(), capture_runner)   # operator default 7200 s -> clamp to HARD (180 s)
+    assert seen['timeout'] == h.HARD_TIMEOUT_MS / 1000.0, 'not clamped to HARD: %r' % seen['timeout']
+    seen.clear()
+    m = manifest(); m['budgets'] = {'timeout_ceil_ms': 45000}
+    execute(m, capture_runner)
+    assert seen['timeout'] == 45.0, 'timeout_ceil_ms not honoured: %r' % seen['timeout']
+    print('  R4 timeout: clamped to min(operator,ceil,180000ms) -> 180.0s then 45.0s')
+
+
+def test_card_tokens_include_grammar():
+    """R2/C-17: card_token_multiset counts {Tn} in record.grammar (not german-only), matching the
+    JS cardTokens, so a grammar-{Tn} card is not falsely fragment-fidelity-rejected. Driven by the
+    one card_fields.TOKEN_FIDELITY_FIELDS tuple the two twins share."""
+    import card_fields as cf
+    card = {'records': [{'grammar': '{T3} {T4}', 'senses': [{'german': '{T1} Feuer'}]}]}
+    ms = dict(h.card_token_multiset(card))
+    assert ms == {'{T1}': 1, '{T3}': 1, '{T4}': 1}, 'grammar tokens missing: %r' % ms
+    assert ('record', 'grammar') in cf.TOKEN_FIDELITY_FIELDS and ('sense', 'german') in cf.TOKEN_FIDELITY_FIELDS
+    print('  R2 tokens: card_token_multiset counts grammar+german via card_fields.TOKEN_FIDELITY_FIELDS')
+
+
+def test_cost_telemetry_survives():
+    """R5 (C-25): the CLI wrapper's usage/cost survive into summary['usage']:
+      * a resolving call surfaces its usage/cost (schema-valid card, record `h` present — the test
+        must not embed the C-02 missing-h defect);
+      * multiple calls (retry/split/heal) SUM, never overwrite by the last response;
+      * a measured call + a call missing usage -> known telemetry retained, cost_evaluable False,
+        missing_usage_calls incremented, observed_cost_usd authoritative (accumulated, not recomputed);
+      * a budget refusal (no subprocess) adds neither usage nor cost."""
+    U = {'input_tokens': 100, 'output_tokens': 50,
+         'cache_read_input_tokens': 10, 'cache_creation_input_tokens': 5}   # disjoint fields
+
+    def wrap(cards, usage=U, cost=0.01):
+        w = {'structured_output': {'cards': cards}}
+        if usage is not None:
+            w['usage'] = usage
+        if cost is not None:
+            w['total_cost_usd'] = cost
+        return proc(stdout=json.dumps(w))
+
+    def sequence(seq):
+        def runner(argv, **k):
+            runner.i += 1
+            return seq[min(runner.i - 1, len(seq) - 1)]
+        runner.i = 0
+        return runner
+
+    valid_card = {'key1': 'agni', 'iast': 'agni', 'notes': '',
+                  'records': [{'h': '', 'grammar': '{T1} m.', 'senses': [
+                      {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
+
+    # resolving call surfaces usage/cost (schema-valid card)
+    payload = execute(manifest(), lambda argv, **k: wrap([valid_card], U, 0.0123))[0]
+    assert payload['results'][0]['card'], 'schema-valid card should resolve'
+    u = payload['summary']['usage']
+    assert (u['input_tokens'], u['output_tokens'], u['cache_read_tokens'],
+            u['cache_creation_tokens']) == (100, 50, 10, 5), u
+    assert u['subagent_tokens'] == 165 and u['cost_evaluable'] is True and u['priced_calls'] == 1, u
+    assert abs(u['observed_cost_usd'] - 0.0123) < 1e-9, u
+
+    # (a) two calls SUM, not overwrite (empty cards -> retry to whole_attempts=2)
+    u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], U, 0.02)]))[0]['summary']['usage']
+    assert u['priced_calls'] == 2 and u['input_tokens'] == 200 and u['subagent_tokens'] == 330, u
+    assert abs(u['observed_cost_usd'] - 0.03) < 1e-9 and u['cost_evaluable'] is True, u
+
+    # (b) measured + missing-usage -> retain telemetry, cost_evaluable False, counter, authoritative cost
+    u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], usage=None, cost=None)]))[0]['summary']['usage']
+    assert u['input_tokens'] == 100 and u['subagent_tokens'] == 165, u
+    assert u['cost_evaluable'] is False and u['missing_usage_calls'] == 1, u
+    assert abs(u['observed_cost_usd'] - 0.01) < 1e-9, u
+
+    # (c) a budget refusal (no subprocess) adds neither usage nor cost
+    m = manifest(); m['budgets'] = {'max_translate_agents': 1}
+    r = sequence([wrap([], U, 0.05)])
+    u = execute(m, r)[0]['summary']['usage']
+    assert r.i == 1, 'budget should cap to 1 actual spawn, got %d' % r.i
+    assert u['priced_calls'] == 1 and u['input_tokens'] == 100, u
+    assert abs(u['observed_cost_usd'] - 0.05) < 1e-9, u
+    print('  R5 cost: usage/cost sum across calls; missing -> cost_evaluable False + counter; budget refusal adds nothing')
+
+
+def test_foreign_route_refused_before_any_call():
+    """P-3: in the execution flow (validate_profile gates execute), a v2 manifest declaring a
+    foreign route is refused BEFORE execute runs, so the injected model runner is NEVER invoked --
+    not merely that validate_profile() raises in isolation."""
+    import execution_contract as ec
+    called = {'n': 0}
+    def counting_runner(argv, **kwargs):
+        called['n'] += 1
+        return success_runner(argv, **kwargs)
+    with tempfile.TemporaryDirectory() as cfgroot:
+        cfg = os.path.join(cfgroot, 'p'); os.makedirs(cfg)
+        m = manifest()
+        m['schema'] = ec.SCHEMA_V2
+        m['execution'] = {'profile_slot': 'c4',
+                          'config_dir_fingerprint': ec.config_dir_fingerprint(cfg),
+                          'execution_route': 'workflow', 'executor_lane': 'serial',
+                          'validation_method': 'audit', 'model_identifier': m['model']}
+        m['key_provenance'] = {'agni': 'real'}
+        try:                       # replicate headless_worker.main()'s v2 order
+            ec.validate_profile(m, cfg)
+            h.execute(m, claude=sys.executable, runner=counting_runner)   # must NOT be reached
+        except ValueError as e:
+            assert 'execution_route' in str(e), e
+        else:
+            raise AssertionError('P-3: foreign route reached execute')
+    assert called['n'] == 0, 'P-3: runner was called despite a foreign route'
+    print('  P-3 route: foreign execution_route refused before any runner call (runner uncalled)')
+
+
+def test_frag_tm_stitch_retains_owner():
+    """R6 (C-02 residual): a warm frag-TM (v2) stitch restores each sense's (h, grammar) owner
+    instead of a null owner, and heals a fully-cached fragment with ZERO model calls."""
+    m = manifest()
+    key = 'agni'
+    sense = {'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}   # already restored, no {Tn}
+    m['fragment_groups'] = {key: [[{'skeleton': 'Feuer', 'fsha': 'FSHA0', 'si': 0}]]}
+    m['fragment_placeholder_maps'] = {key: [[[]]]}
+    m['fragment_tm'] = {key: [[{'senses': [sense], 'owners': [['2. agni', 'm.']]}]]}
+    m['inputs'] = {key: {'skeleton': 'Feuer', 'portrait': '{}', 'ls': 0, 'sk': 0, 'nws': 0}}
+    m['batches'] = []
+    m['presplit_keys'] = [key]
+
+    def never_runner(argv, **kwargs):
+        raise AssertionError('R6: a fully-cached fragment must NOT call the model')
+
+    payload, _status, _code = execute(m, never_runner)
+    card = payload['results'][0]['card']
+    assert card, 'a fully-cached fragment should stitch a card'
+    rec = card['records'][0]
+    assert rec.get('h') == '2. agni' and rec.get('grammar') == 'm.', rec   # owner restored, not null
+    print('  R6 frag-TM: a v2-served warm stitch retains each sense owner (h/grammar), zero calls')
+
+
+def test_null_owner_fragment_tm_refused_before_any_call():
+    """R6 execution-time gate: a DIRECT manifest whose fragment_tm slot carries a null owner
+    ([None,'m.'] / ['2. agni',None]) -- or is ownerless (legacy shape) -- is refused BEFORE any paid
+    call, with the runner PROVEN uncalled. The generator's gview drops such rows, but a hand-edited /
+    direct manifest bypasses it, so the executor validates every slot before stitching."""
+    def never_runner(argv, **kwargs):
+        raise AssertionError('runner was called despite a null/ownerless fragment_tm slot')
+    sense = {'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}
+
+    def _mk(owners_or_missing):
+        m = manifest()
+        key = 'agni'
+        slot = {'senses': [sense]}
+        if owners_or_missing is not None:
+            slot['owners'] = owners_or_missing
+        m['fragment_groups'] = {key: [[{'skeleton': 'Feuer', 'fsha': 'F', 'si': 0}]]}
+        m['fragment_placeholder_maps'] = {key: [[[]]]}
+        m['fragment_tm'] = {key: [[slot]]}
+        m['inputs'] = {key: {'skeleton': 'Feuer', 'portrait': '{}', 'ls': 0, 'sk': 0, 'nws': 0}}
+        m['batches'] = []
+        m['presplit_keys'] = [key]
+        return m
+
+    for bad in ([[None, 'm.']], [['2. agni', None]], None):   # null-h, null-grammar, ownerless
+        try:
+            execute(_mk(bad), never_runner)
+        except ValueError as e:
+            assert 'owner' in str(e).lower(), e
+        else:
+            raise AssertionError('a null/ownerless fragment_tm slot (%r) must be refused before any call' % bad)
+    print('  R6 exec-gate: a direct manifest with a null/ownerless fragment_tm slot is refused before '
+          'any call (runner uncalled)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -275,6 +476,13 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
         still_alive = [p for p in pids if _alive(p)]
         assert not still_alive, 'tree PID(s) still alive after kill (orphaned): %s' % still_alive
     print('  D-J tree-kill: parent->child->grandchild all gone (no orphan); timeout bounded + raised once')
+    test_translate_budget_binds()
+    test_call_timeout_clamped()
+    test_card_tokens_include_grammar()
+    test_cost_telemetry_survives()
+    test_foreign_route_refused_before_any_call()
+    test_frag_tm_stitch_retains_owner()
+    test_null_owner_fragment_tm_refused_before_any_call()
     print('headless_worker_selftest: PASS')
 
 

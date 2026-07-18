@@ -310,6 +310,104 @@ def test_i_audit_from_coordinator(td):
     print('  (i) audit_from_coordinator reads clean/requeue/satisfied/calls/cost from the lease: PASS')
 
 
+def test_j_stop_before_promote_awaiting_review(td):
+    from types import SimpleNamespace
+
+    def _wf(path, keys):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'meta': {'selected_keys': keys, 'gen_model': 'claude-sonnet-5',
+                                 'execution': {'profile_slot': 'c4',
+                                               'execution_route': 'claude-cli-headless',
+                                               'executor_lane': 'serial', 'validation_method': 'audit',
+                                               'config_dir_fingerprint': 'f' * 64,
+                                               'model_identifier': 'claude-sonnet-5'}},
+                       'summary': {'usage': {'input_tokens': 10, 'observed_cost_usd': 0.01,
+                                             'cost_evaluable': True}}, 'results': []}, f)
+        return path
+
+    # (1) gating — only a clean, productive audit is eligible; a rejected/empty one is not.
+    assert bsr._audit_is_clean({'clean_count': 2, 'requeue_keys': []})
+    assert bsr._audit_is_clean({'satisfied_keys': ['k'], 'requeue_keys': []})
+    assert not bsr._audit_is_clean({'clean_count': 1, 'requeue_keys': ['k']})   # audit-rejected
+    assert not bsr._audit_is_clean({'requeue_keys': [], 'clean_count': 0})       # nothing produced
+    assert not bsr._audit_is_clean({})
+
+    jdir = os.path.join(td, 'r10'); os.makedirs(jdir)
+    wf = _wf(os.path.join(jdir, 'wf.json'), ['b', 'a'])
+    ctx = SimpleNamespace(checkpoint=os.path.join(jdir, 'cp.json'), run_id='r10', stop_before_promote=True)
+    report = {'clean_count': 2, 'requeue_keys': [], 'satisfied_keys': [], 'state': 'clean', 'calls': 1}
+
+    # (2) a clean audit writes a durable, hash-bound, self-hashing checkpoint; store/TM untouched.
+    path, record = bsr.write_awaiting_review_checkpoint(ctx, {'id': 'lease1', 'attempt': 1}, wf, report)
+    assert bsr.verify_awaiting_review_checkpoint(path)
+    hs = record['payload']['bound']['hashes']
+    for k in ('execution_manifest', 'lease_attempt', 'audit_report', 'clean_candidate',
+              'profile_route_model', 'usage_audit_state'):
+        assert hs.get(k), (k, hs)
+    assert record['payload_sha256'] and record['payload']['status'] == 'AWAITING_REVIEW'
+    files = set(os.listdir(jdir))
+    assert 'wf.json' in files and os.path.basename(path) in files, files
+    assert not any('translated' in f or 'translation_memory' in f or f.endswith('.jsonl')
+                   for f in files), files                          # no store, no TM
+
+    # (3) tampering with the checkpoint payload OR the bound wf artifact invalidates it.
+    rec = json.load(open(path, encoding='utf-8'))
+    rec['payload']['bound']['selected_keys'] = ['tampered']
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(rec, f)
+    assert not bsr.verify_awaiting_review_checkpoint(path), 'tampered payload verified'
+    bsr.write_awaiting_review_checkpoint(ctx, {'id': 'lease1', 'attempt': 1}, wf, report)  # restore
+    assert bsr.verify_awaiting_review_checkpoint(path)
+    with open(wf, 'a', encoding='utf-8') as f:
+        f.write('\n#tampered')
+    assert not bsr.verify_awaiting_review_checkpoint(path), 'tampered artifact verified'
+
+    # (4) through the real supervisor: clean audit -> AWAITING_REVIEW per window; resume relaunches nothing.
+    class RichRunner:
+        def __init__(self, tdir):
+            self.tdir, self.order = tdir, []
+        def __call__(self, window):
+            self.order.append(window['id'])
+            return _wf(os.path.join(self.tdir, 'wf_%s.json' % window['id']), [window['id']])
+
+    plan = _plan(['no_pwg_w02', 'no_pwg_w03'])
+    windows, _ = bsr.scope_windows(plan)
+    cp2 = os.path.join(jdir, 'sup.json')
+    ctx2 = SimpleNamespace(checkpoint=cp2, run_id='sup', stop_before_promote=True)
+
+    def wrapped_audit(wf_output, window):
+        rep = {'requeue_keys': [], 'clean_count': 1, 'calls': 1, 'satisfied_keys': []}
+        if ctx2.stop_before_promote and bsr._audit_is_clean(rep):
+            bsr.write_awaiting_review_checkpoint(ctx2, window, wf_output, rep)
+        return rep
+
+    runner = RichRunner(jdir)
+    bsr.build_supervisor(windows, cp2, _ceilings(), runner, wrapped_audit).run()
+    assert runner.order == ['no_pwg_w02', 'no_pwg_w03'], runner.order
+    for w in ('no_pwg_w02', 'no_pwg_w03'):
+        cpath = bsr.awaiting_review_path(ctx2, w)
+        assert os.path.exists(cpath) and bsr.verify_awaiting_review_checkpoint(cpath), cpath
+    runner2 = RichRunner(jdir)
+    bsr.build_supervisor(windows, cp2, _ceilings(), runner2, wrapped_audit, resume=True).run()
+    assert runner2.order == [], runner2.order            # restart launches the model for NO window
+
+    # (5) backward compatible: default (flag absent) writes no AWAITING_REVIEW checkpoint.
+    off = os.path.join(jdir, 'off.json')
+    ctx_off = SimpleNamespace(checkpoint=off, run_id='off', stop_before_promote=False)
+    runner3 = RichRunner(jdir)
+
+    def audit_off(wf_output, window):
+        rep = {'requeue_keys': [], 'clean_count': 1, 'calls': 1, 'satisfied_keys': []}
+        if ctx_off.stop_before_promote and bsr._audit_is_clean(rep):
+            bsr.write_awaiting_review_checkpoint(ctx_off, window, wf_output, rep)
+        return rep
+
+    bsr.build_supervisor(windows, off, _ceilings(), runner3, audit_off).run()
+    assert not os.path.exists(bsr.awaiting_review_path(ctx_off, 'no_pwg_w02')), 'flag-off wrote a checkpoint'
+    print('  (j) --stop-before-promote: durable hash-bound AWAITING_REVIEW; clean-only; tamper-evident; '
+          'no relaunch; flag-off backward compatible: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -321,6 +419,7 @@ def main():
         test_g_cost_fail_closed(td)
         test_h_consecutive_empty(td)
         test_i_audit_from_coordinator(td)
+        test_j_stop_before_promote_awaiting_review(td)
     print('bounded_staged_run_selftest: PASS')
 
 

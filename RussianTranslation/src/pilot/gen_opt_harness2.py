@@ -819,6 +819,24 @@ def card_source_profile(raw, portrait_text=None):
     return None
 
 
+_HOMONYM_HEAD_RE = re.compile(r'<div\s+n=')
+
+
+def _degenerate_record_identity(key, raw):
+    """R7: the immutable source-record identity (h, grammar) for a degenerate cross-reference stub,
+    PROVEN from the source rather than defaulted. In this store the homonym head is the source's
+    `<div n="...">` markup (11,208 rows carry one); the 393 h=='' rows are records with NO homonym
+    head. A degenerate stub provably carries none -- the classifier rejects any raw containing
+    `<div` -- so its proven homonym head is '' (the same identity as those 393 rows). grammar is ''
+    (a cross-reference stub has no grammatical description). Returns None (REJECT the pass-through)
+    when the identity cannot be proven FROM THE SOURCE: a residual homonym-head marker means the
+    record is one of several homonyms and a bare xref cannot prove WHICH, so reject rather than
+    fabricate one."""
+    if _HOMONYM_HEAD_RE.search(raw):
+        return None
+    return '', ''
+
+
 def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     """Conservative no-LLM lane for cross-reference/supplement stubs.
 
@@ -848,6 +866,10 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     if len(words) > 8 or any((w not in _DEGENERATE_WORDS and n not in _DEGENERATE_WORDS)
                              for w, n in zip(words, norm)):
         return None
+    identity = _degenerate_record_identity(key, raw)
+    if identity is None:
+        return None       # R7: the source-record identity cannot be proven -> reject the pass-through
+    rec_h, rec_grammar = identity
     sense = {
         'tag': 'xref',
         'german': body,
@@ -860,7 +882,13 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     return {
         'key1': key,
         'iast': _portrait_key_iast(portrait_text, key),
-        'records': [{'h': None, 'senses': [sense]}],
+        # R7 (C-07): a degenerate stub is a real cross-reference record. Its (h, grammar) is the
+        # PROVEN source-record identity from _degenerate_record_identity (h = the source homonym
+        # head, '' when the source has none as here; grammar '' for a no-grammar xref) -- NOT a
+        # schema-appeasing default; an unprovable identity was already rejected above. So
+        # validate_final_card_schema passes and one xref stub can no longer make save_and_audit
+        # refuse the entire paid window.
+        'records': [{'h': rec_h, 'grammar': rec_grammar, 'senses': [sense]}],
         'notes': '',
         'degenerate_passthrough': True,
     }
@@ -1091,7 +1119,16 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                 # own (see PIPELINE_HISTORY.md fragment-tag-collision entry).
                 fl.append({'skeleton': fsk, 'ls': t.count('<ls'), 'sk': t.count('{#'),
                            'ph': fph, 'fsha': fsha, 'si': si,
-                           'tm': cached.get('senses') if cached else None})
+                           # R6: serve a warm slot ONLY when the cached row is a valid frag-TM v2 --
+                           # per-sense owners[] whose members are ALL strings (_tm._valid_owners). A
+                           # v1 (ownerless) OR any null-owner row is a live cache MISS (re-translated,
+                           # never stitched under a null owner), but stays readable for audit. This is
+                           # the single boundary where the manifest fragment_tm is built, so it
+                           # guarantees BOTH the JS FRAG_TM and the headless slot carry no null owner.
+                           'tm': ({'senses': cached['senses'], 'owners': cached['owners']}
+                                  if (cached and cached.get('senses')
+                                      and _tm._valid_owners(cached.get('senses'), cached.get('owners')))
+                                  else None)})
             if not fl:
                 continue
             frag_n[k] = len(pl)   # raw deterministic fragment count == sense-units the model
@@ -1282,6 +1319,13 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'max_agents_factor': MAX_AGENTS_FACTOR,
         'max_agents_headroom': MAX_AGENTS_HEADROOM,
         # H255/H811 low-width staggered dispatch: <=MAX_WIDE concurrent units (0 = unbounded).
+        # P-2 (C-12): max_wide/stagger bound INTRA-process dispatch only -- the JS harness's
+        # boundedParallel honours them within one process, but they CANNOT bound cross-process
+        # concurrency (two node processes each max_wide=1 = 2 concurrent), and the serial headless
+        # executor ignores them entirely. The cross-process guarantee is the kernel-backed
+        # execution_contract.ActiveCallClaim (R9): one active model call per config_dir_fingerprint,
+        # so two launches on ONE profile serialise regardless of these hints. They are advisory
+        # dispatch hints, not a cross-process bound -- see execution_contract_selftest's R9/P-2 test.
         'max_wide': MAX_WIDE,
         'stagger_ms': STAGGER_MS,
         # H442 per-card heal budget: caps the heal agent() calls ONE card may spend so a dense
@@ -1596,7 +1640,12 @@ async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
 // Masked-token multiset of a text: the {Tn} placeholders it carries, order-insensitive.
 // Two texts with equal token multisets restore to identical citation/markup content.
 const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
-const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { a = a.concat((rec.grammar || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) a = a.concat((s.german || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
+// C-17: which fields' {Tn} must MATCH the source skeleton for the fragment-fidelity guard is NOT
+// re-typed here -- it is injected from card_fields.js_token_fidelity_spec(), the SAME constant the
+// Python `card_token_multiset` collects from, so the two twins cannot drift (the C-17 defect was
+// the Python lane omitting `grammar` while this JS lane hard-coded rec.grammar + s.german).
+const TOKEN_FIDELITY_SPEC = %(token_fidelity_spec)s
+const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { for (const f of TOKEN_FIDELITY_SPEC.record) a = a.concat((rec[f] || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) for (const f of TOKEN_FIDELITY_SPEC.sense) a = a.concat((s[f] || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
 // positional-only matching silently misassigns every card after an omitted/reordered one.
@@ -1895,15 +1944,25 @@ async function selfHeal(k) {
         // slot them in at their document position — do NOT re-restore (no {Tn} remain). Tag
         // normalization still applies: an older cache entry harvested before this fix may carry
         // a fabricated tag.
-        // The fragment TM caches SENSES ONLY -- no record context survives it, so these carry
-        // no h/grammar owner. Recorded as unknown rather than invented (C-02 boundary).
-        for (const s of gtm[i]) { applyTag(grp[i].si, s); senses.push(s); owners.push([null, null]) }
+        // R6: a served frag-TM slot is v2 -- it carries the PER-SENSE owner harvested at the fresh
+        // resolve. v1 (ownerless) rows are a serve-time cache MISS (the gview build drops them), so
+        // a served slot restores each sense's real (h, grammar) instead of a null owner.
+        {
+          const cs = (gtm[i] && gtm[i].senses) || []
+          const co = (gtm[i] && gtm[i].owners) || []
+          for (let j = 0; j < cs.length; j++) {
+            applyTag(grp[i].si, cs[j]); senses.push(cs[j])
+            const o = co[j] || [null, null]
+            owners.push([o[0] == null ? null : o[0], o[1] == null ? null : o[1]])
+          }
+        }
         continue
       }
       const card = r.resolved[i]
       if (!card) continue   // an uncached fragment that never resolved — already in missingFragments
       const ph = gph[i] || []
       const fsenses = []
+      const fowners = []
       for (const rec of (card.records || [])) {
         for (const f of RESTORE_SPEC.record) if (typeof rec[f] === 'string') rec[f] = restore(rec[f], ph)
         for (const s of (rec.senses || [])) {
@@ -1912,10 +1971,11 @@ async function selfHeal(k) {
           // C-02: keep the OWNING record's (h, grammar) alongside the sense. This loop used to
           // flatten records->senses and drop `rec`, so the stitch below had nothing left to
           // emit and every promoted row read h: null (403 of the 468 came from this lane).
-          senses.push(s); owners.push([rec.h, rec.grammar]); fsenses.push(s)
+          senses.push(s); owners.push([rec.h, rec.grammar]); fsenses.push(s); fowners.push([rec.h, rec.grammar])
         }
       }
-      if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses })
+      // R6: emit the PER-SENSE owner into frag_prov so a warm-cache stitch restores ownership.
+      if (grp[i].fsha && fsenses.length) fragProv.push({ fsha: grp[i].fsha, senses: fsenses, owners: fowners })
     }
   }
   if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
@@ -2176,6 +2236,7 @@ return { meta: META, summary, results: out }
         # unmask; both listed three fields while promote read six, and 670 store rows landed
         # with a raw {Tn}. The JS cannot import Python, so the constant is injected instead.
         'restore_spec': card_fields.js_restore_spec(field),
+        'token_fidelity_spec': card_fields.js_token_fidelity_spec(),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.

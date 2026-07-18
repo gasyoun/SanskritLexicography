@@ -2278,26 +2278,35 @@ def test_tm_publication_fixtures_validate():
 
 
 def test_degenerate_passthrough_accounted():
-    """A safely-degenerate cross-reference stub is emitted as an accounted no-LLM row and is
-    excluded from translation lanes; it is never a silent skip."""
+    """A safely-degenerate cross-reference stub is emitted as an accounted, SCHEMA-VALID no-LLM row
+    and is excluded from translation lanes. N-3/R7 (C-07): the card MUST pass
+    validate_final_card_schema (record h + grammar present, not null) so one xref stub can no longer
+    make save_and_audit refuse a whole paid window -- and this assertion must never silently skip on
+    an absent file fixture."""
     import re as _re
     import gen_opt_harness2 as gh
-    from window_common import input_paths, read_text
-    key = 'ab'
-    rp, pp = input_paths(key)
-    if not (os.path.exists(rp) and os.path.exists(pp)):
-        return
-    card = gh.degenerate_passthrough_card(key, read_text(rp), read_text(pp), 'russian')
+    import validate_final_card_schema as vs
+    # Inline stub -> no filesystem dependency, so the schema assertion below can never be skipped.
+    card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', '=== LAYER: PW ===\n\nvgl. {#agni#}',
+                                          '[]', 'russian')
     if not card or not card.get('degenerate_passthrough'):
-        fail('ab fixture should qualify for conservative degenerate pass-through')
-    js, batches = gh.build(key, [key], None, 12000, nominal=True, tm_path=None)
-    meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
-    if meta.get('degenerate_passthrough_keys') != [key]:
-        fail('META.degenerate_passthrough_keys must account for the stub key')
-    if batches or meta.get('presplit_keys'):
-        fail('a degenerate pass-through key must not also enter an agent translation lane')
-    if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
-        fail('generated harness must emit explicit degenerate pass-through rows')
+        fail('inline vgl.-stub should qualify for conservative degenerate pass-through')
+    vs.validate_card(card)                     # R7/C-07: raises on any schema violation
+    rec = card['records'][0]
+    if rec.get('h') is None or 'grammar' not in rec:
+        fail('degenerate record must carry a non-null h and a grammar field (RECORD_REQUIRED)')
+    # File-fixture-dependent accounting -- an EXPLICIT conditional, never a silent top-of-function return.
+    from window_common import input_paths, read_text
+    rp, pp = input_paths('ab')
+    if os.path.exists(rp) and os.path.exists(pp):
+        js, batches = gh.build('ab', ['ab'], None, 12000, nominal=True, tm_path=None)
+        meta = json.loads(_re.search(r'const META = (\{.*?\})\n', js, _re.S).group(1))
+        if meta.get('degenerate_passthrough_keys') != ['ab']:
+            fail('META.degenerate_passthrough_keys must account for the stub key')
+        if batches or meta.get('presplit_keys'):
+            fail('a degenerate pass-through key must not also enter an agent translation lane')
+        if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
+            fail('generated harness must emit explicit degenerate pass-through rows')
 
 
 def test_degenerate_passthrough_rejects_glosses():
@@ -4773,7 +4782,8 @@ def test_defect_fragment_denylist_round_trip():
     sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
     with open(sidecar, 'w', encoding='utf-8') as f:
         for fsha in (fsha_good, fsha_bad):
-            f.write(json.dumps({'fsha': fsha, 'senses': senses}) + '\n')
+            f.write(json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'fsha': fsha, 'senses': senses,
+                                'owners': [['x', '']]}) + '\n')   # R6: v2 (live-reusable)
     cache = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
     if fsha_bad in cache:
         fail('denylisted fragment still served by load_frag_tm')
@@ -5076,8 +5086,10 @@ def test_frag_tm_fidelity_gate_and_override():
         blank_senses = [{'tag': '1', 'german': 'bar', 'russian': ''}]
         wf = {'meta': {'lang': 'ru', 'root': 'zz'}, 'results': [
             {'key': 'zz~~h0', 'card': {'key1': 'zz', 'records': [{'senses': good_senses}],
-                                       'frag_prov': [{'fsha': good_fsha, 'senses': good_senses},
-                                                     {'fsha': bad_fsha, 'senses': blank_senses}]}}]}
+                                       'frag_prov': [{'fsha': good_fsha, 'senses': good_senses,
+                                                      'owners': [['zz', '']]},   # R6: v2 (live-reusable)
+                                                     {'fsha': bad_fsha, 'senses': blank_senses,
+                                                      'owners': [['zz', '']]}]}}]}
         with open(os.path.join(d, 'wf_output.sc.zz.json'), 'w', encoding='utf-8') as f:
             json.dump(wf, f, ensure_ascii=False)
         sidecar = os.path.join(d, 'frag.ru.jsonl')
@@ -5514,6 +5526,133 @@ def test_h_reconstructed_regression_guard():
                  'measured count -- an unrelated manifest must not paper over a real drop')
 
 
+def test_card_tokens_twins_agree():
+    """R2/C-17 (closes N-4): the JS `cardTokens` fidelity collector is DRIVEN by the Python-owned
+    card_fields.js_token_fidelity_spec(), so the two twins cannot drift. Proven three ways: the
+    generated JS interpolates the exact spec; cardTokens iterates it (not a hard-coded field list);
+    and changing the Python-owned spec changes the generated JS collector."""
+    import re as _re
+    import gen_opt_harness2 as gh
+    import card_fields as cf
+
+    def _gen():
+        d = tempfile.mkdtemp()
+        rp = os.path.join(d, 'agni~~h0_zz_pw.raw.txt')
+        pp = os.path.join(d, 'agni~~h0_zz_pw.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n{#agni#}¦ m. {%a%}\n— 1〉 Feuer.')
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        saved = gh.input_paths
+        gh.input_paths = lambda k, input_dir=None: (rp, pp)
+        try:
+            js, _ = gh.build('zz', ['agni~~h0_zz_pw'], None, 12000, nominal=True,
+                             grammar_on=False, tm_path=None)
+        finally:
+            gh.input_paths = saved
+        return js
+
+    js = _gen()
+    m = _re.search(r'const TOKEN_FIDELITY_SPEC = (\{.*?\})\n', js)
+    if not m:
+        fail('generated JS does not interpolate TOKEN_FIDELITY_SPEC')
+    if m.group(1) != cf.js_token_fidelity_spec():
+        fail('JS TOKEN_FIDELITY_SPEC != card_fields.js_token_fidelity_spec(): %s' % m.group(1))
+    if 'TOKEN_FIDELITY_SPEC.record' not in js or 'TOKEN_FIDELITY_SPEC.sense' not in js:
+        fail('cardTokens is not driven by the interpolated TOKEN_FIDELITY_SPEC')
+    saved = cf.TOKEN_FIDELITY_FIELDS
+    cf.TOKEN_FIDELITY_FIELDS = (('record', 'grammar'), ('sense', 'german'), ('sense', 'tag'))
+    try:
+        m2 = _re.search(r'const TOKEN_FIDELITY_SPEC = (\{.*?\})\n', _gen())
+        if not m2 or '"tag"' not in m2.group(1) or m2.group(1) == m.group(1):
+            fail('JS collector did not follow the Python-owned spec change: %s' % (m2 and m2.group(1)))
+    finally:
+        cf.TOKEN_FIDELITY_FIELDS = saved
+    print('  R2/N-4: JS cardTokens is driven by card_fields.js_token_fidelity_spec() (twins cannot drift)')
+
+
+def test_frag_tm_v2_supersedes_v1():
+    """R6: fragment-TM v2 schema. A v1 (ownerless) row is readable for audit but NEVER live-reusable;
+    a valid v2 row with the same fsha supersedes it; and an existing v1 does NOT block a v2 harvest.
+    Owners count/shape are validated."""
+    import json as _json
+    import translation_memory as tm
+    d = tempfile.mkdtemp()
+    path = os.path.join(d, 'translation_memory.frag.ru.jsonl')
+    sense = {'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}
+    v1 = {'schema': tm.FRAG_SCHEMA, 'lang': 'ru', 'fsha': 'X', 'n_senses': 1, 'senses': [sense],
+          'trust_level': tm.TRUST_MACHINE, 'gate_status': 'machine_gated',
+          'reuse_policy': 'auto_exact', 'source_kind': 'frag_prov'}
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(_json.dumps(v1) + '\n')
+    if tm.load_frag_tm('ru', path) != {}:
+        fail('a v1 (ownerless) row must not be live-served')
+    if 'X' not in tm.load_frag_tm('ru', path, live_only=False):
+        fail('a v1 row must stay readable for historical audit (live_only=False)')
+    wf = os.path.join(d, 'wf_output.zz.json')
+    card = {'key1': 'agni', 'frag_prov': [{'fsha': 'X', 'senses': [sense],
+                                           'owners': [['2. agni', 'm.']]}]}
+    with open(wf, 'w', encoding='utf-8') as f:
+        _json.dump({'meta': {'lang': 'ru', 'root': 'zz'},
+                    'results': [{'key': 'agni', 'card': card}]}, f)
+    saved_repo = tm.REPO
+    tm.REPO = d
+    try:
+        _p, added, _total = tm.build_frags(os.path.basename(wf), 'ru', out=path)
+    finally:
+        tm.REPO = saved_repo
+    if added != 1:
+        fail('an existing v1 must NOT block a v2 harvest (added=%d)' % added)
+    served = tm.load_frag_tm('ru', path)
+    if 'X' not in served or served['X'].get('owners') != [['2. agni', 'm.']]:
+        fail('the v2 row must be live-served with its owners: %r' % served.get('X'))
+    if served['X'].get('schema') != tm.FRAG_SCHEMA_V2:
+        fail('served row must be v2')
+    if not tm._valid_owners([sense], [['h', 'g']]) or tm._valid_owners([sense], [['h']]) \
+            or tm._valid_owners([sense, sense], [['h', 'g']]):
+        fail('_valid_owners count/shape validation is wrong')
+    # null-owner hardening: BOTH members must be strings ('' valid, None fails). A null-owner row is
+    # NOT live-served (so no warm stitch -- JS or headless -- can restore a null owner) but stays
+    # audit-readable, exactly like a v1 row.
+    if not tm._valid_owners([sense], [['', '']]):
+        fail('empty-string owner members must be valid')
+    if tm._valid_owners([sense], [[None, 'g']]) or tm._valid_owners([sense], [['h', None]]):
+        fail('a null owner member ([None,g] / [h,None]) must be rejected')
+    for pair in ([None, 'g'], ['h', None]):
+        npath = os.path.join(d, 'nullowner.frag.ru.jsonl')
+        with open(npath, 'w', encoding='utf-8') as f:
+            f.write(_json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'lang': 'ru', 'fsha': 'N',
+                                 'senses': [sense], 'owners': [pair],
+                                 'trust_level': tm.TRUST_MACHINE, 'gate_status': 'machine_gated',
+                                 'reuse_policy': 'auto_exact'}) + '\n')
+        if tm.load_frag_tm('ru', npath) != {}:
+            fail('a null-owner row %r must NOT be live-served' % pair)
+        if 'N' not in tm.load_frag_tm('ru', npath, live_only=False):
+            fail('a null-owner row %r must stay audit-readable' % pair)
+    print('  R6: frag-TM v2 supersedes v1; null-owner ([None,g]/[h,None]) rejected from live serve, '
+          'audit-readable; owners validated')
+
+
+def test_degenerate_source_identity():
+    """R7: a degenerate card's (h, grammar) is the PROVEN source-record identity, not a schema
+    default; an unprovable identity is REJECTED rather than emitted with a fabricated h."""
+    import gen_opt_harness2 as gh
+    import validate_final_card_schema as vs
+    card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', '=== LAYER: PW ===\n\nvgl. {#agni#}',
+                                          '[]', 'russian')
+    if not card or card['records'][0].get('h') != '' or card['records'][0].get('grammar') != '':
+        fail('a clean single-head xref must prove h="" (no source homonym head): %r' % card)
+    vs.validate_card(card)
+    if gh.degenerate_passthrough_card('ab', '=== LAYER: PW ===\n\nvgl. {#agni#}',
+                                      '[]', 'russian') is None:
+        fail('a bare-root key with a clean stub is a provable identity -- must NOT be rejected')
+    if gh._degenerate_record_identity('ab~~h1_zz_pw', 'vgl. <div n="2"> agni') is not None:
+        fail('a residual homonym head must be rejected (ambiguous owning record)')
+    if gh._degenerate_record_identity('ab~~h0_zz_pw', 'vgl.') != ('', ''):
+        fail('a clean stub must prove ("","")')
+    print('  R7: degenerate (h,grammar) is proven source identity; unprovable identity is rejected')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -5555,6 +5694,9 @@ def main():
         test_no_pwg_source_profile_promotes,
         test_calibration_arm_set_conservative_emit_only,
         test_frag_tm_reuse,
+        test_card_tokens_twins_agree,
+        test_frag_tm_v2_supersedes_v1,
+        test_degenerate_source_identity,
         test_no_fallback_batch_isolation,
         test_cit_split_never_tears_open_span,
         test_cit_split_caps_single_line_monster_sense,
