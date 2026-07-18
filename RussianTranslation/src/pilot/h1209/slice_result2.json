@@ -1,0 +1,416 @@
+{
+ "slice": [
+  "nakzatra",
+  "sarvatra",
+  "sakft"
+ ],
+ "results": [
+  {
+   "key1": "nakzatra",
+   "attempts": 3,
+   "complexity_score": 16.43,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "SCH-запись об Ekādaśāṅgin непрозрачна (имя носителя и цитата {T133} замаскированы), стратум указан предположительно; структурный статус коротких блоков PW.add-a/b и PWKVN.add-a/b (отдельная лексема vs. дополнение к статье nakṣatra) не выводится однозначно из немаскированного остатка текста.",
+   "coverage": 1,
+   "det_issues": [],
+   "controller_calls": 1,
+   "controller_ok": true,
+   "controller_issues": [],
+   "final_status": "clean-controller-approved",
+   "would_promote": true
+  },
+  {
+   "key1": "sarvatra",
+   "attempts": 1,
+   "complexity_score": 16.93,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "Приписка после значения 2 в основной записи PWG (T111–T112) полностью замаскирована и не окружена переводимой немецкой прозой, поэтому её функция (кросс-ссылка vs. corrigendum) не поддаётся определению по видимому тексту.",
+   "coverage": 1,
+   "det_issues": [],
+   "controller_calls": 1,
+   "controller_ok": true,
+   "controller_issues": [],
+   "final_status": "clean-controller-approved",
+   "would_promote": true
+  },
+  {
+   "key1": "sakft",
+   "attempts": 1,
+   "complexity_score": 12.66,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "Heavy masking hides most connective German prose (only {%...%} spans and a few free words like 'so', 'auch', 'nach der Lesart der', 'mit der' survive); the exact referent of PW's 'mit der {T117} nie' (likely a feminine noun such as Negation) and the precise sense of the PWG sense-1/2 tail constructions ('so ... plötzlich', 'einmal so ... irgend ein Mal') are reconstructed from the parallel PW subsenses and portrait citations rather than read directly, since almost every content word beyond the bracketed glosses is a {Tn} token.",
+   "coverage": 1,
+   "det_issues": [],
+   "controller_calls": 1,
+   "controller_ok": true,
+   "controller_issues": [
+    "MINOR (sense tag \"0\", non-blocking): In the German etymology `({T119}2.{T120} {T2} + {T3})`, the homonym index \"2.\" (masked as {T119}2.{T120}) directly qualifies {T2} (= sa: 'from 2.sa + kṛt'). The Russian relocates it to a trailing parenthetical — 'образовано из {T2} + {T3} ({T119}2.{T120})' — detaching the index from {T2} and leaving its referent (sa vs. kṛt vs. the whole compound) ambiguous. Keep it adjacent to {T2}, e.g. 'образовано из {T119}2.{T120} {T2} + {T3}'.",
+    "MINOR (sense tag \"2\" / {T122}, non-blocking): the German page-break marker `[Page7-0508]` between {T43} and {T44} is dropped from the Russian. Not a gloss, but it is a dropped source element; preserve it for scholarly page reference."
+   ],
+   "final_status": "clean-controller-approved",
+   "would_promote": true
+  }
+ ],
+ "cards_out": [
+  {
+   "key1": "nakzatra",
+   "card": {
+    "key1": "nakzatra",
+    "iast": "nakṣatra",
+    "notes": "Карточка объединяет пять слоёв, все под одной леммой nakṣatra (ср. р., a-основа, Whitney §§326–334, парадигма §330; словообразование §§1136–1245): (1) основную статью PWG — значение «0» (этимологическая справка + грамматика), значения 1–3 и заключительное примечание без номера («{T143}— {T113} {T114}.»); (2) параллельное сжатое изложение PW («revision of PWG»), поданное как PW.0–PW.3; (3) два коротких дополнительных абзаца PW («…eines… {T131}.» и «III. 5.»), которые в немаскированном виде не привязаны ни к одному из пронумерованных значений PWG/PW и потому вынесены отдельными строками PW.add-a / PW.add-b; (4) их варианты по PWKVN, «keyed to PW sense numbers» (PWKVN.add-a / PWKVN.add-b); (5) Nachtrag SCH 1928, который не патчит ни одно из пронумерованных значений, а добавляет новое: Nakṣatra как имя собственное некоего Ekādaśāṅgin. Технический хвост «{part=,seq=16531,type=,n=2}» в конце блока SCH — нетекстовые метаданные (не немецкая проза и не {Tn}-плейсхолдер) и в поля german/russian не перенесён. Плейсхолдеры {T2}, {T116}, {T128}, {T135} — каждый ровно один раз, в своей исходной позиции (сенсы «0», «PW.0», «PW.add-a», «PWKVN.add-a» соответственно).",
+    "records": [
+     {
+      "h": "nakṣatra",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ {T2}. {T3}",
+        "russian": "{T1}¦ {T2}. {T3}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "{T140} 1〉 {%Gestirn%} {T4} (auch von der Sonne gebraucht) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%Sterne%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Diese fünf bilden bei den {T42} die Gruppe der {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Ein Mal {T58}: {T59} {T60}. {T61} {%aus einem Stern bestehend%} {T62}. {T63}. {T64}.",
+        "russian": "{T140} 1) {%светило%} {T4} (употребляется также о солнце) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%звёзды%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Эти пять образуют у {T42} группу {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Один раз {T58}: {T59} {T60}. {T61} {%состоящий из одной звезды%} {T62}. {T63}. {T64}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "«Светило» передаёт широкое {%Gestirn%} überh. (охватывает и звёзды, и — по особому употреблению — солнце); «звёзды» соответствует более узкому {%Sterne%}, вводимому далее по тексту при перечислении частных мест; выбор определяется тем, идёт ли речь о собирательном классе или о конкретных звёздах цитируемого пассажа."
+       },
+       {
+        "tag": "2",
+        "german": "{T141}— 2〉 im {T65} {%die Mondstationen%}; in der älteren Zeit (aber auch noch im {T66}) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter {T67}ʼs, augfefasst. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Die Namen derselben {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.",
+        "russian": "{T141}— 2) в {T65} {%лунные стоянки%}; в более древнюю эпоху (но ещё и в {T66}) числом 27, позднее 28. Впоследствии они же понимаются также как {%супруги Луны%}, как дочери {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Имена их {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "«Лунная стоянка» передаёт специальный термин {%die Mondstationen%} — исчислимый разряд из 27/28 делений эклиптики; отличается от значения 1) тем, что там речь о звёздах/светилах вообще, а здесь — об именованном и персонифицированном разряде (дочери [T67], супруги Луны)."
+       },
+       {
+        "tag": "3",
+        "german": "{T142}— 3〉 {%Perle%} {T94}_im_{T95} — Was die Etymologie betrifft, so lässt sich gegen die von {T96}_in_{T97} vorgebrachte ({T98} + {T99}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {T100} genannt wird. Die Gleichsetzung von {T101} mit {T102} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {T103} ({T104} {T105}. {T106}.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {T107} + {T108} findet sich {T109}. {T110}. {T111}. {T112}.",
+        "russian": "{T142}— 3) {%жемчужина%} {T94} _в_ {T95} — Что касается этимологии, то против предложенной {T96} _в_ {T97} ({T98} + {T99}) можно возразить, что {%страж ночи%} не подходит для солнца, которое в древнейших текстах называется по преимуществу {T100}. Отождествление {T101} с {T102} также вызывает сомнения. Скорее можно было бы думать о возведении к {T103} ({T104} {T105}. {T106}.), тогда светила были бы {%восходящими на небе%}. Игровое разложение на {T107} + {T108} встречается {T109}. {T110}. {T111}. {T112}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Vedic",
+        "differentia": "«Жемчужина» — самостоятельное значение, засвидетельствованное только лексикографически (RĀJAN. _в_ ŚKDR.); следующая за ним этимологическая дискуссия относится к слову nakṣatra в целом (значения 1–2), а не только к значению «жемчужина»."
+       },
+       {
+        "tag": "3-tail",
+        "german": "{T143}— {T113} {T114}.",
+        "russian": "{T143}— {T113} {T114}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.0",
+        "german": "{T115}¦ {T116}",
+        "russian": "{T115}¦ {T116}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.1",
+        "german": "{T144}— 1〉 {%Gestirn, Stern;%} {T117} {%die Sonne und die Sterne%} ({T118}) Einmal {T119} als Personification. Am Ende eines {T120} {T121} {T122}",
+        "russian": "{T144}— 1) {%светило, звезда;%} {T117} {%солнце и звёзды%} ({T118}). Один раз {T119} как олицетворение. В конце {T120} {T121} {T122}",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "PW сохраняет ту же кардинальность синонимов, что и немецкий оригинал: два соотнесённых через запятую существительных «светило, звезда» ({%Gestirn, Stern%}), затем через отдельную конструкцию — предметное расширение «солнце и звёзды»; ср. более развёрнутое соответствие в PWG-значении 1)."
+       },
+       {
+        "tag": "PW.2",
+        "german": "{T145}— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter {T123}ʼs und Gattinnen des Mondes.",
+        "russian": "{T145}— 2) {%лунный дом,%} которых в более древнюю эпоху принимается 27, позднее 28. Олицетворяются как дочери {T123} и супруги Луны.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "Сжатый эквивалент PWG-значения 2); «лунный дом» — то же понятие, что и «лунная стоянка» там, различие чисто в номенклатуре источника (PW vs PWG), не в значении."
+       },
+       {
+        "tag": "PW.3",
+        "german": "{T146}— 3〉 *{%Perle%} {T124}. {T125} {T126} 3〉.",
+        "russian": "{T146}— 3) *{%жемчужина%} {T124}. {T125} {T126} 3).",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.add-a",
+        "german": "{T127}¦ {T128} {T129} eines {T130} {T131}.{T147}",
+        "russian": "{T127}¦ {T128} {T129} одного {T130} {T131}.{T147}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.add-b",
+        "german": "{T132}¦ III. 5.{T148}",
+        "russian": "{T132}¦ III. 5.{T148}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PWKVN.add-a",
+        "german": "{T134}¦ {T135} {T136} eines {T137} {T138}.",
+        "russian": "{T134}¦ {T135} {T136} одного {T137} {T138}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PWKVN.add-b",
+        "german": "{T139}¦ III. 5.",
+        "russian": "{T139}¦ III. 5.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "SCH.Nachtrag",
+        "german": "{%Nakṣatra%}¦ m. N. pr. eines Ekādaśāṅgin, {T133}",
+        "russian": "{%Накшатра%}¦ m. N. pr. одного Ekādaśāṅgin, {T133}",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key1": "sarvatra",
+   "card": {
+    "key1": "sarvatra",
+    "iast": "sarvatra",
+    "notes": "Единая статья на одно слово, две слоя источника. Основная запись PWG: значение 1 — наречное «везде, всегда, во всех случаях, в любое время», атрибуция преимущественно ведийская (шраута-/грихья-сутры, пратишакхьи) с заходом в эпос/классику/Средневековье (Sarvadarśanasaṃgraha), с отрицательной конструкцией «ни в коем случае»; значение 2 — adj./subst. со значением всеобщей применимости, атрибуция эпико-классическая и медиевальная, с отрицательной идиомой «дерево, ни на что не годное». После значения 2 в основной записи идёт краткая, полностью замаскированная приписка (T111–T112) без окружающей немецкой прозы — её функцию (перекрёстная ссылка? corrigendum?) установить по видимому тексту невозможно. Сокращённая ревизия PW (Böhtlingk) повторяет оба значения компактнее: к значению 1 добавлена усиленная форма (T115–T119, вероятно sarvatraiva), к значению 2 — укороченная (без «Holz») формула отрицания «für Nichts» (T120–T121).",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adj., adv. (a-основа; трёхродовое прилагательное, Whitney §§326–334, парадигма §330)",
+      "senses": [
+       {
+        "tag": "0 (PWG)",
+        "german": "{T1}¦ (von {T2}) {T3} {T4}. {T5}.",
+        "russian": "{T1} (от {T2}) {T3} {T4}. {T5}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Этимолого-грамматическая шапка статьи (производное от {T2}, грамматическая помета, ссылки на грамматистов Pāṇini и Vopadeva) — не самостоятельное лексическое значение, а справочная преамбула; дискриминация синонимов здесь неприменима."
+       },
+       {
+        "tag": "1 (PWG)",
+        "german": "{T122} 1〉 {%überall, stets, in allen Fällen, jederzeit%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} {%in keinem Falle%} {T71}.",
+        "russian": "{T122} 1) везде, всегда, во всех случаях, в любое время {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} ни в коем случае {T71}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic (основной массив цитат); также Epic / early-Classical, Classical, Medieval",
+        "differentia": "Четыре наречия через запятую = взаимозаменяемые синонимы внутри одного значения (Apresjan): «везде» — пространственная всеобщность, «всегда»/«в любое время» — временная (второе усиливает первое), «во всех случаях» — обстоятельственная/казусная всеобщность; отрицательная конструкция «ни в коем случае» — тот же ряд под отрицанием."
+       },
+       {
+        "tag": "2 (PWG)",
+        "german": "{T123}— 2〉 = {T72} {T73} und {T74} {T75} {T76}. {T77} {T78} zu {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} {%Holz für Nichts gut%} {T110}.",
+        "russian": "{T123}— 2) = {T72} {T73} и {T74} {T75} {T76}. {T77} {T78} к {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} дерево, ни на что не годное {T110}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical; Medieval",
+        "differentia": "Базовое значение — «применимое ко всему, годное на всё» (adj./subst.), опирается на эпико-классические и медиевальные цитаты; отдельно, под отрицанием, тот же оборот даёт идиоматический сдвиг смысла — «дерево, ни на что не годное» (т.е. бесполезное, никчёмное), а не независимое третье значение."
+       },
+       {
+        "tag": "tail (PWG)",
+        "german": "{T124}— {T111} {T112}.",
+        "russian": "{T124}— {T111} {T112}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Краткая приписка после значения 2; вся замаскирована, окружающей немецкой прозы нет — функция (перекрёстная ссылка на другую статью или corrigendum) по видимому тексту не устанавливается."
+       },
+       {
+        "tag": "0 (PW)",
+        "german": "{T113}¦ {T114}",
+        "russian": "{T113} {T114}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Заголовок сокращённой статьи PW (headword + помета) — соответствует шапке PWG, самостоятельного значения не несёт."
+       },
+       {
+        "tag": "1 (PW)",
+        "german": "{T125}— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {T115} {T116} {T117} {T118} {T119}. Mit einer Negation {%in keinem Falle%}.",
+        "russian": "{T125}— 1) везде, всегда, во всех случаях, в любое время. Усиливается формами {T115} {T116} {T117} {T118} {T119}. С отрицанием — ни в коем случае.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic (основной массив цитат); также Epic / early-Classical, Classical, Medieval",
+        "differentia": "PW повторяет значение 1 PWG компактно и добавляет усиленную форму (вероятно с частицей -eva, T115–T119) со значением «именно/непременно везде»; отрицательная конструкция та же, что в PWG."
+       },
+       {
+        "tag": "2 (PW)",
+        "german": "{T126}— 2〉 = {T120} mit einer Negation {%für Nichts%} {T121}",
+        "russian": "{T126}— 2) = {T120}, с отрицанием — ни для чего {T121}",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical; Medieval",
+        "differentia": "PW сжимает отрицательную идиому значения 2 до голой формулы «ни для чего», без опорного существительного «Holz» («дерево»), которое в PWG делает идиому конкретным примером; по сути та же смысловая инверсия под отрицанием."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key1": "sakft",
+   "card": {
+    "key1": "sakft",
+    "iast": "sakṛt",
+    "notes": "Три отдельных record соответствуют трём слоям источника при одном заголовочном слове: (1) PWG — основная статья (Böhtlingk-Roth), значения 0 (этимологическая заметка) – 3, с примыкающей к значению 3 хвостовой заметкой «Vgl. …»; (2) PW — сокращённая переработка Бётлингка, перестраивающая тот же материал в значение 1 (новое: «gleichzeitig thätig») и значение 2 с подпунктами a–e; (3) SCH — Nachtrag Шмидта 1928 г., корригирующее замечание об ошибочном написании sakṛt вместо śakṛt (каламбур с asakṛt). corpus_synonyms в портрете отсутствует (null), поэтому выбор русских эквивалентов опирается только на немецкий текст словаря.",
+    "records": [
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ ({T119}2.{T120} {T2} + {T3}) {T4} {T5}.",
+        "russian": "{T1} — образовано из {T2} + {T3} ({T119}2.{T120}); {T4} {T5}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "{T121} 1〉 {%auf ein Mal, mit einem Male%}; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} {%mit einem Ruck abgetrennt%} {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. so {T31} {%plötzlich%} {T32}.",
+        "russian": "{T121} 1) разом, за один раз; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} отделённый одним рывком {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. так {T31} внезапно {T32}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical",
+        "differentia": "«разом»/«за один раз» передают совокупно-моментальный аспект (нем. auf ein Mal, mit einem Male); «отделённый одним рывком» и «внезапно» уточняют не количество, а образ действия (резкость отделения) и темп (неожиданность) в частных цитатах."
+       },
+       {
+        "tag": "2",
+        "german": "{T122}— 2〉 {%einmal, semel%} {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. [Page7-0508] {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. {%einmal%} so {T78} {%irgend ein Mal%} {T79}. {T80} so {T81} {%einst, ehemals%} {T82}. {T83} {%nie%} {T84}.",
+        "russian": "{T122}— 2) однажды, semel {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. однажды, так {T78} когда-нибудь / какой-нибудь раз {T79}. {T80} так {T81} некогда, прежде {T82}. {T83} никогда {T84}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "«однажды» (semel сохранено как латинский эквивалент самого автора) — простое счётное «один раз»; «когда-нибудь / какой-нибудь раз» — неопределённо-временной вариант того же слова в особой конструкции; при отрицании тот же оборот даёт «никогда»; «некогда, прежде» — сдвиг в прошедшее время, а не счёт повторений."
+       },
+       {
+        "tag": "3",
+        "german": "{T123}— 3〉 {%ein für allemal, für immer%}: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\n{T124}— {T95} {T96} (auch {T97}. {T98}. {T99}. {T100}. {T101} nach der Lesart der {T102}).",
+        "russian": "{T123}— 3) раз навсегда, навсегда: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\n{T124}— {T95} {T96} (также {T97}. {T98}. {T99}. {T100}. {T101} по чтению {T102}).",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T103}¦\n{T125}— 1〉 {T104} {%gleichzeitig thätig%} {T105}. {T106} {T107}",
+        "russian": "{T103}\n{T125}— 1) {T104} действующий одновременно {T105}. {T106} {T107}",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T126}— 2〉 {T108}",
+        "russian": "{T126}— 2) {T108}",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2a",
+        "german": "{T127}— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. {T109} {T110} {T111} {T112}.",
+        "russian": "{T127}— a) разом, за один раз, одним рывком, внезапно. {T109} {T110} {T111} {T112}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": "четыре синонима сохранены по числу немецких (запятая = взаимозаменимость внутри значения): «разом»/«за один раз» — совокупный аспект, «одним рывком» — образ действия, «внезапно» — темп."
+       },
+       {
+        "tag": "2b",
+        "german": "{T128}— b〉 {%einmal, semel%}. {T113} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {T114} (!) {T115}.",
+        "russian": "{T128}— b) однажды, semel. {T113} один раз в день. Повторяется всегда лишь однажды. {T114} (!) {T115}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2c",
+        "german": "{T129}— c〉 {%einmal,%} so {T116} {%irgend ein mal;%} mit der {T117} {%nie%}.",
+        "russian": "{T129}— c) однажды, так {T116} когда-нибудь; с {T117} никогда.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2d",
+        "german": "{T130}— d〉 {%einst, ehemals%}.",
+        "russian": "{T130}— d) некогда, прежде.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2e",
+        "german": "{T131}— e〉 {%ein für allemal, für immer%}.",
+        "russian": "{T131}— e) раз навсегда, навсегда.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sakṛt",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "SCH",
+        "german": "°{%sakṛt%}¦ {T118} wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "russian": "°sakṛt — {T118}: неверное написание, допущенное нашим автором вместо śakṛt (каламбур с asakṛt).",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

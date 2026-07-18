@@ -1,0 +1,515 @@
+{
+ "schema": "h1209.canonical_audit.v1",
+ "reports": [
+  {
+   "key1": "nakzatra",
+   "wf_would_promote": true,
+   "wf_coverage": 1,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 148,
+    "n_output": 148
+   },
+   "notes_parked": {
+    "tokens": [
+     "{T2}",
+     "{T113}",
+     "{T114}",
+     "{T116}",
+     "{T128}",
+     "{T131}",
+     "{T135}",
+     "{T143}"
+    ],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     79,
+     79
+    ],
+    "sk": [
+     34,
+     34
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     79,
+     79
+    ],
+    "sk": [
+     34,
+     34
+    ]
+   },
+   "sanloss": {
+    "emitted": 14,
+    "source_senses": 3,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "nakzatra",
+    "iast": "nakṣatra",
+    "notes": "Карточка объединяет пять слоёв, все под одной леммой nakṣatra (ср. р., a-основа, Whitney §§326–334, парадигма §330; словообразование §§1136–1245): (1) основную статью PWG — значение «0» (этимологическая справка + грамматика), значения 1–3 и заключительное примечание без номера («{T143}— {T113} {T114}.»); (2) параллельное сжатое изложение PW («revision of PWG»), поданное как PW.0–PW.3; (3) два коротких дополнительных абзаца PW («…eines… {T131}.» и «III. 5.»), которые в немаскированном виде не привязаны ни к одному из пронумерованных значений PWG/PW и потому вынесены отдельными строками PW.add-a / PW.add-b; (4) их варианты по PWKVN, «keyed to PW sense numbers» (PWKVN.add-a / PWKVN.add-b); (5) Nachtrag SCH 1928, который не патчит ни одно из пронумерованных значений, а добавляет новое: Nakṣatra как имя собственное некоего Ekādaśāṅgin. Технический хвост «{part=,seq=16531,type=,n=2}» в конце блока SCH — нетекстовые метаданные (не немецкая проза и не {Tn}-плейсхолдер) и в поля german/russian не перенесён. Плейсхолдеры {T2}, {T116}, {T128}, {T135} — каждый ровно один раз, в своей исходной позиции (сенсы «0», «PW.0», «PW.add-a», «PWKVN.add-a» соответственно).",
+    "records": [
+     {
+      "h": "nakṣatra",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#na/kzatra#}¦ <ls>UṆĀDIS. 3,105</ls>. <lex>n.</lex>",
+        "russian": "{#na/kzatra#}¦ <ls>UṆĀDIS. 3,105</ls>. <lex>n.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "<div n=\"1\"> 1〉 {%Gestirn%} <ab>überh.</ab> (auch von der Sonne gebraucht) <ls>AK. 1,1,2,22</ls>. <ls>H. 107</ls>. {#dvi\\tA nakza^traM#} (<ab>coll.</ab>) {#pa\\praTa^cca\\ BUma^#} <ls>ṚV. 7,86,1</ls>. {#udu\\sriyA^H sfjeta\\ sUrya\\H sacA^~ u\\dyannakza^tramarci\\vat#} <ls n=\"ṚV. 7,\">81,2</ls>. {#nakza^traM pra\\tnamami^naccari\\zRu#} <ls n=\"ṚV.\">10,88,13</ls>. <ls n=\"ṚV. 10,\">111,7</ls>. <ls n=\"ṚV. 10,\">156,4</ls>. {%Sterne%} <ls n=\"ṚV.\">1,50,2</ls>. <ls n=\"ṚV.\">3,54,19</ls>. {#a\\Bi nakza^treBiH pi\\taro\\ dyAma^piMSan#} <ls n=\"ṚV.\">10,68,11</ls>. {#nakza^trARAme\\zAmu\\pasTe\\ soma\\ Ahi^taH#} <ls n=\"ṚV. 10,\">85,2</ls>. <ls>AV. 6,128,1</ls>. <ls n=\"AV. 6,128,\">3</ls>. <ls n=\"AV.\">7,13,1</ls>. <ls n=\"AV.\">9,7,15</ls>. <ls n=\"AV.\">15,6,2</ls>. <ls>AIT. BR. 4,25</ls>. <ls>VS. 14,19</ls>. <ls n=\"VS.\">18,18</ls>. <ls n=\"VS.\">22,28</ls>. <ls>ĀŚV. GṚHY. 4,4</ls>. <ls>LĀṬY. 3,8,10</ls>. {#nakzatrARi grahAstaTA#} <ls>M. 1,24</ls>. {#vijYAya niSi panTAnaM nakzatragaRasUcitam#} <ls>HIḌ. 1,3</ls>. <ls>N. 5,6</ls>. {#candrAdityO grahanakzatratArAH#} <ls>MBH. 13,7386</ls>. <ls n=\"MBH.\">1,7677</ls>. Diese fünf bilden bei den <is>Jaina</is> die Gruppe der <is>Jyotiṣka</is> <ls>H. 92</ls>. {#puRye tiTO muhUrte vA nakzatre vA guRAnvite#} <ls>M. 2,30</ls>. {#nakzatrEryaSca jIvati#} <ls n=\"M.\">3,162</ls>. <ls>SUŚR. 1,17,8</ls>. <ls n=\"SUŚR. 1,\">114,4</ls>. <ls n=\"SUŚR. 1,\">103,2</ls>. {#dyOH sacandrArkanakzatrA#} <ls>MBH. 13,7070</ls>. <ls n=\"MBH.\">3,12549</ls>. <ls n=\"MBH. 3,\">16038</ls>. {#˚Sirasi#} <ls>HARIV. 12239</ls>. Ein Mal <ab>masc.</ab>: {#df\\|o nakza^tra u\\ta vi\\Svade^vo\\ BUmi\\mAtA\\ndyAM DA\\sinA\\yoH#} <ls>ṚV. 6,67,6</ls>. {#eka˚#} {%aus einem Stern bestehend%} <ls>ŚAT. BR. 13,8,1,3</ls>. <ls>KĀTY. ŚR. 21,3,3</ls>. <ls>ĀŚV. GṚHY. 4,5</ls>.",
+        "russian": "<div n=\"1\"> 1) {%светило%} <ab>überh.</ab> (употребляется также о солнце) <ls>AK. 1,1,2,22</ls>. <ls>H. 107</ls>. {#dvi\\tA nakza^traM#} (<ab>coll.</ab>) {#pa\\praTa^cca\\ BUma^#} <ls>ṚV. 7,86,1</ls>. {#udu\\sriyA^H sfjeta\\ sUrya\\H sacA^~ u\\dyannakza^tramarci\\vat#} <ls n=\"ṚV. 7,\">81,2</ls>. {#nakza^traM pra\\tnamami^naccari\\zRu#} <ls n=\"ṚV.\">10,88,13</ls>. <ls n=\"ṚV. 10,\">111,7</ls>. <ls n=\"ṚV. 10,\">156,4</ls>. {%звёзды%} <ls n=\"ṚV.\">1,50,2</ls>. <ls n=\"ṚV.\">3,54,19</ls>. {#a\\Bi nakza^treBiH pi\\taro\\ dyAma^piMSan#} <ls n=\"ṚV.\">10,68,11</ls>. {#nakza^trARAme\\zAmu\\pasTe\\ soma\\ Ahi^taH#} <ls n=\"ṚV. 10,\">85,2</ls>. <ls>AV. 6,128,1</ls>. <ls n=\"AV. 6,128,\">3</ls>. <ls n=\"AV.\">7,13,1</ls>. <ls n=\"AV.\">9,7,15</ls>. <ls n=\"AV.\">15,6,2</ls>. <ls>AIT. BR. 4,25</ls>. <ls>VS. 14,19</ls>. <ls n=\"VS.\">18,18</ls>. <ls n=\"VS.\">22,28</ls>. <ls>ĀŚV. GṚHY. 4,4</ls>. <ls>LĀṬY. 3,8,10</ls>. {#nakzatrARi grahAstaTA#} <ls>M. 1,24</ls>. {#vijYAya niSi panTAnaM nakzatragaRasUcitam#} <ls>HIḌ. 1,3</ls>. <ls>N. 5,6</ls>. {#candrAdityO grahanakzatratArAH#} <ls>MBH. 13,7386</ls>. <ls n=\"MBH.\">1,7677</ls>. Эти пять образуют у <is>Jaina</is> группу <is>Jyotiṣka</is> <ls>H. 92</ls>. {#puRye tiTO muhUrte vA nakzatre vA guRAnvite#} <ls>M. 2,30</ls>. {#nakzatrEryaSca jIvati#} <ls n=\"M.\">3,162</ls>. <ls>SUŚR. 1,17,8</ls>. <ls n=\"SUŚR. 1,\">114,4</ls>. <ls n=\"SUŚR. 1,\">103,2</ls>. {#dyOH sacandrArkanakzatrA#} <ls>MBH. 13,7070</ls>. <ls n=\"MBH.\">3,12549</ls>. <ls n=\"MBH. 3,\">16038</ls>. {#˚Sirasi#} <ls>HARIV. 12239</ls>. Один раз <ab>masc.</ab>: {#df\\|o nakza^tra u\\ta vi\\Svade^vo\\ BUmi\\mAtA\\ndyAM DA\\sinA\\yoH#} <ls>ṚV. 6,67,6</ls>. {#eka˚#} {%состоящий из одной звезды%} <ls>ŚAT. BR. 13,8,1,3</ls>. <ls>KĀTY. ŚR. 21,3,3</ls>. <ls>ĀŚV. GṚHY. 4,5</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "«Светило» передаёт широкое {%Gestirn%} überh. (охватывает и звёзды, и — по особому употреблению — солнце); «звёзды» соответствует более узкому {%Sterne%}, вводимому далее по тексту при перечислении частных мест; выбор определяется тем, идёт ли речь о собирательном классе или о конкретных звёздах цитируемого пассажа."
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 im <ab>Bes.</ab> {%die Mondstationen%}; in der älteren Zeit (aber auch noch im <ls>HARIV.</ls>) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter <is>Dakṣa</is>ʼs, augfefasst. <ls>AV. 19,8,1</ls>. <ls>VS. 18,40</ls>. <ls>TS. 2,3,5,1</ls>. <ls n=\"TS.\">3,4,7,1</ls>. <ls>TBR. 1,5,1,1</ls>. <ls n=\"TBR. 1,5,\">2,5</ls>. <ls n=\"TBR.\">2,7,18,13</ls>. <ls>ŚAT. BR. 6,5,4,8</ls>. <ls n=\"ŚAT. BR.\">9,4,1,9</ls>. <ls n=\"ŚAT. BR.\">10,5,4,17</ls>, <ls>P. 1,2,60</ls>. <ls>MBH. 13,3256. fgg.</ls> <ls n=\"MBH. 13,\">4255. fgg.</ls> {#SizwAH (kanyAH) somAya rAjYe 'Ta nakzatrAKyA dadO praBuH (dakzaH)#} <ls>HARIV. 104</ls>. <ls n=\"HARIV.\">1332</ls>. <ls n=\"HARIV.\">11522</ls>. <ls n=\"HARIV.\">11524</ls>. {#kfttikAdIni nakzatrARIndoH patnyastu#} <ls>BHĀG. P. 6,6,23</ls>. Die Namen derselben <ab>s.</ab> <ls>Ind. St. 1,89. fgg.</ls> <ab>Vgl.</ab> <ls>WARREN</ls>, <ls>KĀLAS. 372</ls>. <ls>WEBER</ls>, Die vedischen Nachrichten von den Nakshatra.",
+        "russian": "<div n=\"1\">— 2) в <ab>Bes.</ab> {%лунные стоянки%}; в более древнюю эпоху (но ещё и в <ls>HARIV.</ls>) числом 27, позднее 28. Впоследствии они же понимаются также как {%супруги Луны%}, как дочери <is>Dakṣa</is>. <ls>AV. 19,8,1</ls>. <ls>VS. 18,40</ls>. <ls>TS. 2,3,5,1</ls>. <ls n=\"TS.\">3,4,7,1</ls>. <ls>TBR. 1,5,1,1</ls>. <ls n=\"TBR. 1,5,\">2,5</ls>. <ls n=\"TBR.\">2,7,18,13</ls>. <ls>ŚAT. BR. 6,5,4,8</ls>. <ls n=\"ŚAT. BR.\">9,4,1,9</ls>. <ls n=\"ŚAT. BR.\">10,5,4,17</ls>, <ls>P. 1,2,60</ls>. <ls>MBH. 13,3256. fgg.</ls> <ls n=\"MBH. 13,\">4255. fgg.</ls> {#SizwAH (kanyAH) somAya rAjYe 'Ta nakzatrAKyA dadO praBuH (dakzaH)#} <ls>HARIV. 104</ls>. <ls n=\"HARIV.\">1332</ls>. <ls n=\"HARIV.\">11522</ls>. <ls n=\"HARIV.\">11524</ls>. {#kfttikAdIni nakzatrARIndoH patnyastu#} <ls>BHĀG. P. 6,6,23</ls>. Имена их <ab>s.</ab> <ls>Ind. St. 1,89. fgg.</ls> <ab>Vgl.</ab> <ls>WARREN</ls>, <ls>KĀLAS. 372</ls>. <ls>WEBER</ls>, Die vedischen Nachrichten von den Nakshatra.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "«Лунная стоянка» передаёт специальный термин {%die Mondstationen%} — исчислимый разряд из 27/28 делений эклиптики; отличается от значения 1) тем, что там речь о звёздах/светилах вообще, а здесь — об именованном и персонифицированном разряде (дочери [T67], супруги Луны)."
+       },
+       {
+        "tag": "3",
+        "german": "<div n=\"1\">— 3〉 {%Perle%} <ls>RĀJAN.</ls>_im_<ls>ŚKDR.</ls> — Was die Etymologie betrifft, so lässt sich gegen die von <ls>AUFRECHT</ls>_in_<ls>Z. f. vgl. Spr. 8,71</ls> vorgebrachte ({#nakza#} + {#tra#}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {#nakzatra#} genannt wird. Die Gleichsetzung von {#nakza#} mit {#nakta#} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {#nakz#} (<ab>vgl.</ab> <ls>NIR. 3,20</ls>. <ls>TBR. 1,5,2,5</ls>.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {#na#} + {#kzatra#} findet sich <ls>NIR. 3,20</ls>. <ls>ŚAT. BR. 2,1,2,18</ls>. <ls n=\"ŚAT. BR. 2,1,2,\">19</ls>. <ls>P. 6,3,75</ls>.",
+        "russian": "<div n=\"1\">— 3) {%жемчужина%} <ls>RĀJAN.</ls> _в_ <ls>ŚKDR.</ls> — Что касается этимологии, то против предложенной <ls>AUFRECHT</ls> _в_ <ls>Z. f. vgl. Spr. 8,71</ls> ({#nakza#} + {#tra#}) можно возразить, что {%страж ночи%} не подходит для солнца, которое в древнейших текстах называется по преимуществу {#nakzatra#}. Отождествление {#nakza#} с {#nakta#} также вызывает сомнения. Скорее можно было бы думать о возведении к {#nakz#} (<ab>vgl.</ab> <ls>NIR. 3,20</ls>. <ls>TBR. 1,5,2,5</ls>.), тогда светила были бы {%восходящими на небе%}. Игровое разложение на {#na#} + {#kzatra#} встречается <ls>NIR. 3,20</ls>. <ls>ŚAT. BR. 2,1,2,18</ls>. <ls n=\"ŚAT. BR. 2,1,2,\">19</ls>. <ls>P. 6,3,75</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Vedic",
+        "differentia": "«Жемчужина» — самостоятельное значение, засвидетельствованное только лексикографически (RĀJAN. _в_ ŚKDR.); следующая за ним этимологическая дискуссия относится к слову nakṣatra в целом (значения 1–2), а не только к значению «жемчужина»."
+       },
+       {
+        "tag": "3-tail",
+        "german": "<div n=\"v\">— <ab>Vgl.</ab> {#deva˚, yama˚#}.",
+        "russian": "<div n=\"v\">— <ab>Vgl.</ab> {#deva˚, yama˚#}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.0",
+        "german": "{#na/kzatra#}¦ <lex>n.</lex>",
+        "russian": "{#na/kzatra#}¦ <lex>n.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.1",
+        "german": "<div n=\"1\">— 1〉 {%Gestirn, Stern;%} <ab>Sg.</ab> {%die Sonne und die Sterne%} (<ab>coll.</ab>) Einmal <lex>m.</lex> als Personification. Am Ende eines <ab>adj. Comp.</ab> <lex>f.</lex> {#A#}",
+        "russian": "<div n=\"1\">— 1) {%светило, звезда;%} <ab>Sg.</ab> {%солнце и звёзды%} (<ab>coll.</ab>). Один раз <lex>m.</lex> как олицетворение. В конце <ab>adj. Comp.</ab> <lex>f.</lex> {#A#}",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "PW сохраняет ту же кардинальность синонимов, что и немецкий оригинал: два соотнесённых через запятую существительных «светило, звезда» ({%Gestirn, Stern%}), затем через отдельную конструкцию — предметное расширение «солнце и звёзды»; ср. более развёрнутое соответствие в PWG-значении 1)."
+       },
+       {
+        "tag": "PW.2",
+        "german": "<div n=\"1\">— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter <is>Dakṣa</is>ʼs und Gattinnen des Mondes.",
+        "russian": "<div n=\"1\">— 2) {%лунный дом,%} которых в более древнюю эпоху принимается 27, позднее 28. Олицетворяются как дочери <is>Dakṣa</is> и супруги Луны.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical",
+        "differentia": "Сжатый эквивалент PWG-значения 2); «лунный дом» — то же понятие, что и «лунная стоянка» там, различие чисто в номенклатуре источника (PW vs PWG), не в значении."
+       },
+       {
+        "tag": "PW.3",
+        "german": "<div n=\"1\">— 3〉 *{%Perle%} <ls>RĀJAN. 13,154</ls>. <ab>Vgl.</ab> {#nakzatramAlA#} 3〉.",
+        "russian": "<div n=\"1\">— 3) *{%жемчужина%} <ls>RĀJAN. 13,154</ls>. <ab>Vgl.</ab> {#nakzatramAlA#} 3).",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.add-a",
+        "german": "{#nakzatra#}¦ <lex>m.</lex> <ab>N. pr.</ab> eines <is>Ekādaśāṅgin</is> <ls>VARDHAMĀNAC. 1,48</ls>.<info n=\"sup_5\"/>",
+        "russian": "{#nakzatra#}¦ <lex>m.</lex> <ab>N. pr.</ab> одного <is>Ekādaśāṅgin</is> <ls>VARDHAMĀNAC. 1,48</ls>.<info n=\"sup_5\"/>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PW.add-b",
+        "german": "{#na/kzatra#}¦ III. 5.<info n=\"sup_7\"/>",
+        "russian": "{#na/kzatra#}¦ III. 5.<info n=\"sup_7\"/>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PWKVN.add-a",
+        "german": "{#nakzatra#}¦ <lex>m.</lex> <ab>N. pr.</ab> eines <is>Ekādaśāṅgin</is> <ls>VARDHAMĀNAC. 1,48</ls>.",
+        "russian": "{#nakzatra#}¦ <lex>m.</lex> <ab>N. pr.</ab> одного <is>Ekādaśāṅgin</is> <ls>VARDHAMĀNAC. 1,48</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "PWKVN.add-b",
+        "german": "{#na/kzatra#}¦ III. 5.",
+        "russian": "{#na/kzatra#}¦ III. 5.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "SCH.Nachtrag",
+        "german": "{%Nakṣatra%}¦ m. N. pr. eines Ekādaśāṅgin, <ls>Vardhamānac. 1,48.</ls>",
+        "russian": "{%Накшатра%}¦ m. N. pr. одного Ekādaśāṅgin, <ls>Vardhamānac. 1,48.</ls>",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key1": "sarvatra",
+   "wf_would_promote": true,
+   "wf_coverage": 1,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 126,
+    "n_output": 126
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     78,
+     78
+    ],
+    "sk": [
+     34,
+     34
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     78,
+     78
+    ],
+    "sk": [
+     34,
+     34
+    ]
+   },
+   "sanloss": {
+    "emitted": 7,
+    "source_senses": 2,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "sarvatra",
+    "iast": "sarvatra",
+    "notes": "Единая статья на одно слово, две слоя источника. Основная запись PWG: значение 1 — наречное «везде, всегда, во всех случаях, в любое время», атрибуция преимущественно ведийская (шраута-/грихья-сутры, пратишакхьи) с заходом в эпос/классику/Средневековье (Sarvadarśanasaṃgraha), с отрицательной конструкцией «ни в коем случае»; значение 2 — adj./subst. со значением всеобщей применимости, атрибуция эпико-классическая и медиевальная, с отрицательной идиомой «дерево, ни на что не годное». После значения 2 в основной записи идёт краткая, полностью замаскированная приписка (T111–T112) без окружающей немецкой прозы — её функцию (перекрёстная ссылка? corrigendum?) установить по видимому тексту невозможно. Сокращённая ревизия PW (Böhtlingk) повторяет оба значения компактнее: к значению 1 добавлена усиленная форма (T115–T119, вероятно sarvatraiva), к значению 2 — укороченная (без «Holz») формула отрицания «für Nichts» (T120–T121).",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adj., adv. (a-основа; трёхродовое прилагательное, Whitney §§326–334, парадигма §330)",
+      "senses": [
+       {
+        "tag": "0 (PWG)",
+        "german": "{#sarva/tra#}¦ (von {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "russian": "{#sarva/tra#} (от {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Этимолого-грамматическая шапка статьи (производное от {#sarva#}, грамматическая помета, ссылки на грамматистов Pāṇini и Vopadeva) — не самостоятельное лексическое значение, а справочная преамбула; дискриминация синонимов здесь неприменима."
+       },
+       {
+        "tag": "1 (PWG)",
+        "german": "<div n=\"1\"> 1〉 {%überall, stets, in allen Fällen, jederzeit%} <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>. <ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls> <ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>. <ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} {%in keinem Falle%} <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "russian": "<div n=\"1\"> 1) везде, всегда, во всех случаях, в любое время <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>. <ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls> <ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>. <ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} ни в коем случае <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic (основной массив цитат); также Epic / early-Classical, Classical, Medieval",
+        "differentia": "Четыре наречия через запятую = взаимозаменяемые синонимы внутри одного значения (Apresjan): «везде» — пространственная всеобщность, «всегда»/«в любое время» — временная (второе усиливает первое), «во всех случаях» — обстоятельственная/казусная всеобщность; отрицательная конструкция «ни в коем случае» — тот же ряд под отрицанием."
+       },
+       {
+        "tag": "2 (PWG)",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} <lex>adj.</lex> und <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> zu <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} {%Holz für Nichts gut%} <ls>VARĀH. BṚH. S. 79,37</ls>.",
+        "russian": "<div n=\"1\">— 2) = {#sarvasmin#} <lex>adj.</lex> и <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> к <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} дерево, ни на что не годное <ls>VARĀH. BṚH. S. 79,37</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical; Medieval",
+        "differentia": "Базовое значение — «применимое ко всему, годное на всё» (adj./subst.), опирается на эпико-классические и медиевальные цитаты; отдельно, под отрицанием, тот же оборот даёт идиоматический сдвиг смысла — «дерево, ни на что не годное» (т.е. бесполезное, никчёмное), а не независимое третье значение."
+       },
+       {
+        "tag": "tail (PWG)",
+        "german": "<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "russian": "<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Краткая приписка после значения 2; вся замаскирована, окружающей немецкой прозы нет — функция (перекрёстная ссылка на другую статью или corrigendum) по видимому тексту не устанавливается."
+       },
+       {
+        "tag": "0 (PW)",
+        "german": "{#sarva/tra#}¦ <lex>Adv.</lex>",
+        "russian": "{#sarva/tra#} <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Заголовок сокращённой статьи PW (headword + помета) — соответствует шапке PWG, самостоятельного значения не несёт."
+       },
+       {
+        "tag": "1 (PW)",
+        "german": "<div n=\"1\">— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. Mit einer Negation {%in keinem Falle%}.",
+        "russian": "<div n=\"1\">— 1) везде, всегда, во всех случаях, в любое время. Усиливается формами {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. С отрицанием — ни в коем случае.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic (основной массив цитат); также Epic / early-Classical, Classical, Medieval",
+        "differentia": "PW повторяет значение 1 PWG компактно и добавляет усиленную форму (вероятно с частицей -eva, T115–T119) со значением «именно/непременно везде»; отрицательная конструкция та же, что в PWG."
+       },
+       {
+        "tag": "2 (PW)",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} mit einer Negation {%für Nichts%} <ab>u. s. w.</ab>",
+        "russian": "<div n=\"1\">— 2) = {#sarvasmin#}, с отрицанием — ни для чего <ab>u. s. w.</ab>",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical; Medieval",
+        "differentia": "PW сжимает отрицательную идиому значения 2 до голой формулы «ни для чего», без опорного существительного «Holz» («дерево»), которое в PWG делает идиому конкретным примером; по сути та же смысловая инверсия под отрицанием."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key1": "sakft",
+   "wf_would_promote": true,
+   "wf_coverage": 1,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 131,
+    "n_output": 131
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     74,
+     74
+    ],
+    "sk": [
+     32,
+     32
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     74,
+     74
+    ],
+    "sk": [
+     32,
+     32
+    ]
+   },
+   "sanloss": {
+    "emitted": 12,
+    "source_senses": 3,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "sakft",
+    "iast": "sakṛt",
+    "notes": "Три отдельных record соответствуют трём слоям источника при одном заголовочном слове: (1) PWG — основная статья (Böhtlingk-Roth), значения 0 (этимологическая заметка) – 3, с примыкающей к значению 3 хвостовой заметкой «Vgl. …»; (2) PW — сокращённая переработка Бётлингка, перестраивающая тот же материал в значение 1 (новое: «gleichzeitig thätig») и значение 2 с подпунктами a–e; (3) SCH — Nachtrag Шмидта 1928 г., корригирующее замечание об ошибочном написании sakṛt вместо śakṛt (каламбур с asakṛt). corpus_synonyms в портрете отсутствует (null), поэтому выбор русских эквивалентов опирается только на немецкий текст словаря.",
+    "records": [
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#sakf/t#}¦ (<hom>2.</hom> {#sa#} + {#kft#}) <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "russian": "{#sakf/t#} — образовано из {#sa#} + {#kft#} (<hom>2.</hom>); <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "<div n=\"1\"> 1〉 {%auf ein Mal, mit einem Male%}; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} {%mit einem Ruck abgetrennt%} <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. so <ab>v. a.</ab> {%plötzlich%} <ls>MBH. 1,4418</ls>.",
+        "russian": "<div n=\"1\"> 1) разом, за один раз; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} отделённый одним рывком <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. так <ab>v. a.</ab> внезапно <ls>MBH. 1,4418</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical",
+        "differentia": "«разом»/«за один раз» передают совокупно-моментальный аспект (нем. auf ein Mal, mit einem Male); «отделённый одним рывком» и «внезапно» уточняют не количество, а образ действия (резкость отделения) и темп (неожиданность) в частных цитатах."
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 {%einmal, semel%} <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. [Page7-0508] {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>. <ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. {%einmal%} so <ab>v. a.</ab> {%irgend ein Mal%} <ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} so <ab>v. a.</ab> {%einst, ehemals%} <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} {%nie%} <ls>Spr. (II) 2304</ls>.",
+        "russian": "<div n=\"1\">— 2) однажды, semel <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>. <ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. однажды, так <ab>v. a.</ab> когда-нибудь / какой-нибудь раз <ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} так <ab>v. a.</ab> некогда, прежде <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} никогда <ls>Spr. (II) 2304</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "«однажды» (semel сохранено как латинский эквивалент самого автора) — простое счётное «один раз»; «когда-нибудь / какой-нибудь раз» — неопределённо-временной вариант того же слова в особой конструкции; при отрицании тот же оборот даёт «никогда»; «некогда, прежде» — сдвиг в прошедшее время, а не счёт повторений."
+       },
+       {
+        "tag": "3",
+        "german": "<div n=\"1\">— 3〉 {%ein für allemal, für immer%}: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls>_in_<ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#a˚#} (auch <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> nach der Lesart der <ls>ed. Bomb.</ls>).",
+        "russian": "<div n=\"1\">— 3) раз навсегда, навсегда: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls>_in_<ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#a˚#} (также <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> по чтению <ls>ed. Bomb.</ls>).",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical; Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#sakf/t#}¦\n<div n=\"1\">— 1〉 <lex>Adj.</lex> {%gleichzeitig thätig%} <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "russian": "{#sakf/t#}\n<div n=\"1\">— 1) <lex>Adj.</lex> действующий одновременно <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 <lex>Adv.</lex>",
+        "russian": "<div n=\"1\">— 2) <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2a",
+        "german": "<div n=\"2\">— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "russian": "<div n=\"2\">— a) разом, за один раз, одним рывком, внезапно. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": "четыре синонима сохранены по числу немецких (запятая = взаимозаменимость внутри значения): «разом»/«за один раз» — совокупный аспект, «одним рывком» — образ действия, «внезапно» — темп."
+       },
+       {
+        "tag": "2b",
+        "german": "<div n=\"2\">— b〉 {%einmal, semel%}. {#a/hnas#} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "russian": "<div n=\"2\">— b) однажды, semel. {#a/hnas#} один раз в день. Повторяется всегда лишь однажды. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2c",
+        "german": "<div n=\"2\">— c〉 {%einmal,%} so <ab>v. a.</ab> {%irgend ein mal;%} mit der <ab>Neg.</ab> {%nie%}.",
+        "russian": "<div n=\"2\">— c) однажды, так <ab>v. a.</ab> когда-нибудь; с <ab>Neg.</ab> никогда.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2d",
+        "german": "<div n=\"2\">— d〉 {%einst, ehemals%}.",
+        "russian": "<div n=\"2\">— d) некогда, прежде.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2e",
+        "german": "<div n=\"2\">— e〉 {%ein für allemal, für immer%}.",
+        "russian": "<div n=\"2\">— e) раз навсегда, навсегда.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sakṛt",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "SCH",
+        "german": "°{%sakṛt%}¦ <ls>Pūrṇabh. 56,12,</ls> wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "russian": "°sakṛt — <ls>Pūrṇabh. 56,12,</ls>: неверное написание, допущенное нашим автором вместо śakṛt (каламбур с asakṛt).",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

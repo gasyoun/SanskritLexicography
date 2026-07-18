@@ -512,6 +512,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "residual_status": "open-paused",
   "residual_risk": "A-vs-B (arvant D-J process-tree vs a content-specific non-termination) remains UNRESOLVED -- arvant never generated. H818 stays OPEN; Linux + H841/H842/H843 remain NO-GO. The block is infrastructure latency, not code (D-E..D-K merged + validated). NOTE: the later 11,590-row / 2,466-card canonical state belongs to H255 (its no_pwg_w10 drain, AFTER H895 run1) and is documented separately -- the store was 11,579 rows during this historical run and must not be retroactively substituted. EVIDENCE RESIDUAL: the raw run1 telemetry (src/pilot/output/h895_accept/run_events.jsonl, gitignored/local-only) was LOST when the h895 staged-run worktree was removed and was never archived; the surviving evidence is the committed RUN_LOG.md entry + PWG_RU_LATENCY_POLICY_INVESTIGATION_2026-07-13.md. The durable archive (Uprava H899 inventory) preserves the earlier H818 run5 + durgA evidence, NOT H895 run1. Do NOT rerun H895 to recreate the lost telemetry -- its one-run allowance is consumed.",
   "passes": 1
+ },
+ {
+  "id": "H1209_SLICE_V1_2026-07-18",
+  "handoff": "H1209",
+  "date": "2026-07-18",
+  "title": "Controller-worker slice v1: non-canonical equality sense gate displaced source spans into unrestorable card.notes",
+  "lane": "controller-worker canary, 3-card validation slice (promote-DRY)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Workflow",
+  "expected": {
+   "agents": "3-9 (worker per card, <=2 retries, controller review per surviving card)",
+   "tokens": "no prior baseline for this lane"
+  },
+  "actual": {
+   "agents": "9 (6 Sonnet workers + 3 Opus controller reviews), 0 errors, 39m24s",
+   "tokens": "645,849 subagent tokens"
+  },
+  "passes": 1,
+  "symptoms": "Workflow self-reported 3/3 would_promote (all clean-controller-approved, 2 attempts/card); placeholder coverage 0.90/1.00/0.88 was INFO-only. The canonical post-hoc audit (canonical_audit.py: card_fields restore + accept() battery + schema) REJECTED 2/3: nakzatra <ls> 76/79 {# 30/34, sakft <ls> 67/74 {# 28/32, identical deficits in BOTH sense.german and sense.russian. Every missing {Tn} sat in card.notes; the count deficits match the parked payloads exactly.",
+  "classification": "gate-bug",
+  "root_cause": "The v1 in-JS deterministicAudit HARD-gated sense-count EQUALITY against the manifest's naive `senses` glyph count (counts PW cross-reference ordinals: nakzatra 7 vs hardened source_senses 3) while span coverage stayed advisory. The retry feedback therefore steered workers to FIT the wrong count: attempt 2 moved PW/SCH supplement records into card.notes, which is not in card_fields.restored_pairs (C-01) and is mask-stripped at render (H858) - source content silently lost while every rig gate showed green. A non-canonical gate in a side harness is worse than no gate: it actively manufactures the defect it cannot see.",
+  "guardrail": "v2 gates direction-aligned with canonical accept(): HARD {Tn}-multiset fidelity over record.grammar+sense.german AND over the translation field (mask-level supersets of the two HARD accept() rejects), sense gate shortfall-only vs source_senses (SAN-LOSS direction; over-emission never flagged), retry feedback explicitly forbids notes-parking. canonical_audit.py is the authoritative promote-DRY verdict (independent adversarial review: 7/7 dimensions faithful to accept()). v2 rerun wf_e858f3cf-6af: 3/3 canonical PASS (79/79 34/34, 78/78 34/34, 74/74 32/32), self-report == canonical, 8 agents, 544,056 tokens.",
+  "residual_status": "fixed",
+  "residual_risk": "Any future side-harness gate authored from scratch can drift from accept() the same way; derive gate constants from card_fields/the manifest's hardened fields and re-run canonical_audit.py after every rig change before trusting a self-reported promote verdict."
  }
 ]
 ```
