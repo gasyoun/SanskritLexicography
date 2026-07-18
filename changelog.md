@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.22.0] — 18-07-2026
+
+### Added
+- **H968 — 11 metadocs backfilled for hook-flagged genre-named docs (18-07-2026, Sonnet 5 `claude-sonnet-5`)**: sibling `<name>.meta.md` companions authored for every currently-missing metadoc in scope — [FEATURES_INDEX.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.meta.md), [FINDINGS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.meta.md), [HERITAGE_INRIA_ROADMAP.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.meta.md), [ROADMAP_ACC_NCC.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ACC_NCC.meta.md), [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.meta.md), [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.meta.md), [ROADMAP_VEDAWEB_REUSE.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.meta.md), and three RussianTranslation roadmaps ([RESEARCH_CAPABILITY_ROADMAP_2026-07-09.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESEARCH_CAPABILITY_ROADMAP_2026-07-09.meta.md), [REVIEW_AND_ROADMAP.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REVIEW_AND_ROADMAP.meta.md), [research/ROADMAP_ACL_LESSONS_2026.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.meta.md), [research/ROADMAP_CEILING_2026.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.meta.md)). Each carries purpose/audience/format, a ranked improvement backlog with real owners (`H###` or `parked — <reason>`), known limitations read from the actual subject text, deprecation status, and related-doc links; two cross-doc overlaps were surfaced (BLI-evaluation work duplicated across `RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md` and `research/ROADMAP_ACL_LESSONS_2026.md`) as backlog items rather than silently resolved.
+
 ## [1.21.0] — 18-07-2026
 
 ### Changed
