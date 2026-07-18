@@ -36,7 +36,7 @@ QA/decision docs sit at the directory root:
 [A_TYPO_QUEUE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/A_TYPO_QUEUE.md) ·
 [COVERAGE_ADDITIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) ·
 [ALTERNATE_HEADWORDS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/ALTERNATE_HEADWORDS.md).
-One binary: `sanhw1.xlsx` (41,221,158 B — load with a library, never an editor).
+Binaries: `sanhw1.xlsx` (41,221,158 B — load with a library, never an editor) and the gzip `heritage_forms_oracle.tsv.gz` (538,102 B; a second, deeper one lives at `works_catalogue/crosswalk_candidates.jsonl.gz`).
 
 ## 1. Naming grammar, keys, and the count invariant
 
@@ -80,7 +80,7 @@ without transcoding (via [sanskrit-util](https://github.com/sanskrit-lexicon/san
 | Family | Scheme | Example |
 |---|---|---|
 | key1/key2 (2026, and 2014 key1) | SLP1 | `aMSa`, key2 `aMSu—ma/t` |
-| key2 (2014 snapshots) | **mixed legacy conventions** | BHS/SCH/VEI substantially legacy Cologne numeric (`am2s4a` = aṃśa); MW and most others are SLP1 with older markers (`--` where 2026 has `—`). Measured 11-07-2026: zero digit-keys in MW's 2014 key2 — NOW_VS_THEN's blanket "legacy numeric" verdict phrasing overstates it; the operative fact stands: then-vs-now key2 line-diffs are format migrations, not headword changes |
+| key2 (2014 snapshots) | **mixed legacy conventions** | BHS/SCH/VEI substantially legacy Cologne numeric (`am2s4a` = aṃśa); MW and most others are SLP1 with older markers (`--` where 2026 has `—`). Re-measured 18-07-2026: MW's 2014 key2 carries 575 digit-bearing keys, but these are homonym-index digits (`ati-dA1`, `saM-gF2`), NOT legacy-numeric transliteration — only 2 stray intra-word legacy cases exist. NOW_VS_THEN's blanket "legacy numeric" verdict phrasing overstates MW; the migration verdict genuinely applies to 6 of 15 key2 lists (BHS, GRA, MW×2, SCH, VEI per its own rows) while the other 9 were already SLP1-style, so their diffs are real headword signal |
 | SCH-accents / Catalan-Pujol | accented IAST | `ū́ḍhi` · `áṃśa-` |
 | mw-apte-mcdonell-hk.txt | Harvard-Kyoto | `aMza` (`z` = ś) |
 | 21562-huet-velthius.txt | Velthuis | `a.mza` (`.m` = ṃ, `z` = ś, `f` = ṅ) |
@@ -306,10 +306,10 @@ Cologne). The uncovered residue is bucketed in
   headword atlas (multiplicity, overlap cladogram) consumes the same space.
 - **In-repo:** `RussianTranslation/src/corpus_gate.py` pins
   `PWG-unique-key1-106085.txt` — its path predates the `then-2014/` move and
-  is **currently broken** (measured 11-07-2026; fix task spun off). The
+  was broken by the reorg but **fixed the same day** (H733, PR #357, 11-07-2026 — the pin now includes `then-2014/` and resolves; re-verified 18-07-2026). The
   lesson generalizes: the 2014→subdirectory reorganisation means any external
   pin to a flat `HeadwordLists/<file>` path must be re-checked.
-- **Registries:** dataset rows C13–C17 and D19–D24 in
+- **Registries:** dataset rows C13, C14, C16 and D19–D24 in
   [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md);
   reproduction recipe in
   [RECIPES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) §5;

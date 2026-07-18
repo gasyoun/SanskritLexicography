@@ -23,7 +23,7 @@ Two LLM dictionary-translation pipelines sharing one engine design:
 | Pipeline | Source → target | Status | Scale |
 |---|---|---|---|
 | `mw_ru` | Monier-Williams (English) → Russian | **finished** (May 2026); covered here as a post-mortem, §3 | 287,358 cards |
-| `pwg_ru` | PWG / Böhtlingk-Roth (German) → Russian (primary) + English (secondary) | **live production** | 106,082-headword universe; store 11,317 promoted rows as of 10-07-2026 |
+| `pwg_ru` | PWG / Böhtlingk-Roth (German) → Russian (primary) + English (secondary) | **production, environment-gated** (since 13-07 every live generation lane is NO-GO by environment — H1110 c4 probe 98.6 s vs the 30 s ceiling; the H1209 controller-worker Workflow lane measured GO 18-07) | 106,082-headword universe; store **11,603** rows as of 18-07-2026 (the 17-07 H1080 hash-locked repair restored 668 placeholder rows + 468 null owners and quarantined two `banD` rows, 11,605→11,603 — the store HAS needed one repair) |
 
 The intellectual problem is not per-headword translation difficulty — a
 38-unit judge test settled quality early (37/38 publishable). The whole
@@ -40,7 +40,7 @@ commit them, never paste bulk store content into public artifacts.
 
 ## 2. Document map — which file owns what
 
-The subsystem carries ~95 top-level Markdown docs (~200 across the whole
+The subsystem carries ~106 top-level Markdown docs (~244 across the whole
 tree); these are the load-bearing ones. Read
 in this order on first contact.
 
@@ -52,7 +52,7 @@ in this order on first contact.
 | Repo-local agent rules (audit/acceptance, markup policy, encoding) | [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AGENTS.md) |
 | What is queued / in flight / paused right now | [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) (subordinate to the repo-root journal) |
 | The per-launch incident register + failure typology | [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md) |
-| Quantitative launch denominators (450 windows) | [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md) (auto-generated — never hand-edit) |
+| Quantitative launch denominators (458 windows as of 18-07-2026) | [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md) (auto-generated — never hand-edit) |
 | RU/EN fix-parity policy + ledger | [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) |
 | Output-complexity taxonomy + kill-gate design | [FAILURE_MODES_AND_KILL_GATE_2026-07-04.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md) |
 | The finished mw_ru run, editor-facing | [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) |
@@ -149,10 +149,12 @@ decides).
 **Models and access paths — the standing constraint.** There is **no Claude
 API key**. Claude stages run through the **Claude Workflow tool** in a session
 that has it (tool availability is per-session, not per-tier — check the
-toolset at session start). Generation is **always Sonnet 5
-(`claude-sonnet-5`)**: the generated harness hardcodes `model:'sonnet'` on
-every `agent()` call (the EN path pins `claude-sonnet-5` explicitly — an
-INTENTIONAL-DIVERGENCE, §8). The bulk QA judge policy is **Sonnet judges,
+toolset at session start). Generation targets **Sonnet 5 (`claude-sonnet-5`)**, and since H818
+(12-07-2026) the generated harness pins `model: 'claude-sonnet-5'`
+**explicitly on every `agent()` call, both RU and EN** — the former
+RU-alias-vs-EN-pin divergence is closed as SHARED in LANG_PARITY (the bare
+`sonnet` alias once resolved to 4.6 on a real run, which is why the pin is
+explicit). The bulk QA judge policy is **Sonnet judges,
 Opus 4.8 (`claude-opus-4-8`) adjudicates only rejects** (`ok=false ||
 severity>=3`, Opus verdict final) — decided on a 474-card A/B with κ=1.0, see
 [research/JUDGE_POLICY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md);
@@ -272,7 +274,7 @@ Runs the four free deterministic gates over the whole key set (§7), writes
 `window_ledger.jsonl`, `requeue.keys.txt`, `judge_sample.keys.txt` under
 `src\pilot\output`. Record token/time economics on the same command
 (`--wall-clock-minutes`, `--max-*-tokens`, `--weekly-cap-fired`) — metric
-coverage is the standing instrumentation gap (wall-clock on 11/450 windows as
+coverage is the standing instrumentation gap (wall-clock on 12/458 windows as
 of 10-07-2026). Stale output (meta/key/hash mismatch) is **refused** before
 gates and does not overwrite an existing `requeue.keys.txt`; `--allow-stale`
 is forensic-only. One `wf_output.json` per root — never combine roots.
@@ -306,11 +308,24 @@ python src\pilot\translation_memory.py build --lang ru
 python src\pilot\translation_memory.py build-frags --lang ru   # if a heal emitted frag_prov
 ```
 
-Two live footguns (H255, 10-07-2026, both still guarded only by operator
-discipline): the default `--glob wf_output*.json` picks up stray repo-root
-files — **always pass an explicit `--glob`**; and the promoter takes every
-non-null card without consulting the audit's defect split — **filter
-`requeue_defect` keys before promoting**. Under multi-account operation only
+⚠️ **Since H1080 Stage 3 (PR #511, 17-07-2026) promotion hard-refuses any
+workflow output not bound to a manifest-v2 execution** — `promote_final_cards.py`
+raises `PromotionContractError` on anything without
+`execution_manifest_schema = pwg.headless_execution_manifest.v2` (profile slot,
+config-dir fingerprint, model identifier all mandatory), and RUN_FREQ_MAX now
+routes new attempts through `coordinator.py prepare ... --profile-slot c4` on
+the CLI/headless path, NOT the legacy Workflow route (a bound generated
+template aborts before its first agent call on the old route). The Workflow-run
+framing in steps 4-7 above describes the historical lane; follow RUN_FREQ_MAX's
+current manifest-v2 procedure for any new attempt.
+
+The two H255 footguns are now **mechanically guarded** (same hardening wave):
+`--merge` with the implicit broad glob is refused outright — an explicit
+`--glob` is mandatory — and `validate_promotion_entry()` revalidates every
+candidate (final-card schema, exact `selected_keys` membership, per-key input
+hashes, non-synthetic provenance, `{Tn}` residue) independent of
+audit/coordinator state. Still filter `requeue_defect` keys yourself — the
+audit's defect split remains the operator's responsibility. Under multi-account operation only
 ONE account promotes per catch-up (single-promoter rule,
 [src/promote_lock.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_lock.py)).
 Promotion merges at **sub-card level** — the root-level merge that would have
@@ -359,11 +374,12 @@ FIXED by H428's schema slim) → H437 isolated heal/kill-budget starvation
 guardrails (`PER_CARD_HEAL_BUDGET`, `KILL_TIMEOUT_NO_BISECT`,
 [PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)) that are
 **untested in the field, not wrong** — every validation window since has been
-infra-confounded. Two structural findings block a re-tune: the per-card heal
-cap cannot bind by construction (`MAX_AGENTS` derives from batch count and is
-the same counter the heal lane spends — an offline refactor with independent
-translate/heal pools exists on `codex/pwg-runtime-refactor`, unvalidated under
-load), and the trivial probe gate is necessary-but-insufficient (hence the
+infra-confounded. One of the two structural findings is FIXED on master: the split
+translate/heal budget pools landed 10-07-2026 (`src/pilot/agent_budget.py`,
+PR #311 — the heal ceiling now equals the sum of per-card heal ceilings, so
+the window pool cannot fire before the per-card guards; LANG_PARITY
+`split_agent_budget_pools_20260710`, SHARED). Still true: the trivial probe
+gate is necessary-but-insufficient (hence the
 ≥5 KB load-representative probe, step 1). Preconditions to resume: a healthy
 ≥5 KB GO probe, then the `h317_w1b` canary — and do NOT re-tune heal budgets
 on infra-confounded evidence.
@@ -400,7 +416,7 @@ presplit trigger — the discipline that produced the H155 sense-count trigger.
 
 **Selftests.**
 [window_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_selftest.py)
-— **114 tests, all passing as verified 11-07-2026 in this worktree** — pins
+— **142 tests, all passing as verified 18-07-2026 (H1110 Phase 2)** — pins
 every historical bug class (stale-refusal preserving the requeue list, schema
 size ceiling, kill-gate wiring, `sense_ord` threading, parity-ledger
 completeness, telemetry counters…). Run it plus
@@ -423,14 +439,15 @@ GAP fails the gate). The ledger is a machine-readable JSON block; the gate
 sha-drift of any tracked file — re-affirm with `--update-hash <entry-id>`
 after verifying your edit didn't change the described behavior.
 
-State as of 11-07-2026: **41 entries — 34 SHARED, 6 INTENTIONAL-DIVERGENCE,
+State as of 18-07-2026: **53 entries — 45 SHARED, 7 INTENTIONAL-DIVERGENCE,
 1 GAP** (`defect_fragment_denylist_h304`: the EN auditor doesn't emit the
-defect-fragment denylist yet). The six divergences that must NOT be "fixed":
-EN pins `claude-sonnet-5` explicitly while RU keeps the `sonnet` alias;
-promotion stays two scripts (different store schemas); and four RU-only
-mechanisms with no EN counterpart (corpus_gate evidence markers, evidence
-retrofit annotators, koch `см.` cross-reference resolution, fri Latin-apparatus
-resolution). Root cause of the founding failure: `audit_window_en.py`
+defect-fragment denylist yet). The seven divergences that must NOT be "fixed":
+promotion stays two scripts (different store schemas); four RU-only mechanisms
+with no EN counterpart (corpus_gate evidence markers, evidence retrofit
+annotators, koch `см.` cross-reference resolution, fri Latin-apparatus
+resolution); and two H1152 EN-judge guards (`en_polyseme_judge_guard_h1152`,
+`en_de_residue_soft_class_h1152`). The former model-pin divergence left the
+list — H818 closed it as SHARED (both languages pin `claude-sonnet-5`). Root cause of the founding failure: `audit_window_en.py`
 reimplements its gates instead of sharing RU's — assume any RU gate fix needs
 an explicit EN parity verdict.
 
@@ -438,7 +455,7 @@ an explicit EN parity verdict.
 
 | Asset | Where | Status |
 |---|---|---|
-| RU store `src/pwg_ru_translated.jsonl` (+ EN store) | gitignored, local-only | 11,317 rows as of 10-07-2026; per-sense provenance |
+| RU store `src/pwg_ru_translated.jsonl` (+ EN store) | gitignored, local-only | 11,603 rows as of 18-07-2026 (post-H1080 repair); per-sense provenance |
 | 5 harvested Sa→Ru dicts (`koch/kow/kna/fri/smirnov.jsonl`) | gitignored | in-copyright sources; rebuild via `build_src.py` |
 | `corpus_lexicon.jsonl` (1,091,528 pairs) + `mined` tier (10,132 pairs, 97%-precision-gated) + SPECIALIST glossaries (663 entries) | gitignored | mined tier quarantined — never merged into the clean lexicon |
 | TM sidecars `translation_memory.*` | gitignored | rebuild after every promotion; regenerable |
@@ -454,7 +471,7 @@ outputs outside the repo and land atomically.
 
 ## 10. Script census (as of 11-07-2026)
 
-**216 Python files**: 161 at `src/` top level, 54 under `src/pilot/`
+**252 Python files** as of 18-07-2026: 170 at `src/` top level, 81 under `src/pilot/` (+ root `save_and_audit.py`)
 (including `archive/`, `dashboard/`, `eval/`), plus the repo-root
 [save_and_audit.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py).
 All tracked; the data they read/write is gitignored (§9). Three tracked `.js`
@@ -499,10 +516,10 @@ but self-marked superseded); `scale_route.py` (superseded by `freq_route.py`).
 
 Condensed from
 [PIPELINE_HISTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md)
-and the 14-entry ledger in
+and the 17-entry ledger in
 [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md)
-(against a 450-window / 55-root population, 27-06→06-07-2026, honest hard-fail
-rate 25.11% — `needs_requeue` is the normal iterative state, NOT a failure;
+(against a 458-window / 62-root population as of 18-07-2026, honest hard-fail
+rate 24.67% — `needs_requeue` is the normal iterative state, NOT a failure;
 see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md)):
 
 1. **Wide concurrency collapses the run** — 429 waves, transient nulls.
@@ -552,5 +569,57 @@ see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/maste
    micro-commit `ai-wip:`; deliverables via worktree + PR.
 7. Tables/findings worth keeping → the right hub (FINDINGS / RESULTS_LOG /
    PROJECT_INTERLINKS), not chat.
+
+## 13. Multi-account bulk protocol (3→4 accounts)
+
+Canonical home of the protocol the root AGENTS sheet §5 used to restate
+(folded here 18-07-2026, H1245; designed in
+[PIPELINE_CAPABILITY_AUDIT_2026-07-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md)
+§W1, hardened by H336 / [PR #254](https://github.com/gasyoun/SanskritLexicography/pull/254):
+promotion claim files, per-window namespacing, append hygiene):
+
+1. **One worktree/clone per account** — state paths are repo-relative, so
+   per-clone runs are disk-isolated for free.
+2. **Shard by root via the worklist before starting** — disjoint slices;
+   root-sharding guarantees disjoint rootmaps, inputs, TM card keys, requeue
+   sets. Fragment-TM cross-duplication is benign iff sidecars are rebuilt by
+   the single promoter.
+3. **Single-promoter rule** — one owner runs `promote_final_cards.py --merge`
+   + TM rebuilds per convergence cycle
+   ([src/promote_lock.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_lock.py));
+   non-promoter accounts stop at "audited clean, `wf_output.<window>.json`
+   saved + RUN_LOG pointer".
+4. **Global ≤3 translation lanes** regardless of account count: 4 accounts ×
+   1 root each, max 3 in flight (the Slice-D collapse at ~18 concurrent
+   workflows was a server-side cliff — it does not care which account sent
+   the load).
+5. **Cloud/web sessions (claude.ai/code) return outputs via git**, since
+   locks never span machines: commit `wf_output.<window>.json` +
+   `audit_window.report.json` onto the session branch under
+   `RussianTranslation/incoming/<account>/<window>/` (a tracked landing
+   directory — create on first use), PR it, and the promoter promotes from
+   `incoming/` then deletes the landed files in the same PR. The store itself
+   is gitignored and NEVER travels through git — only `wf_output` payloads do.
+   ⚠️ Any promotion from `incoming/` still passes the manifest-v2 binding
+   gate (§5 step 8) — unbound payloads are refused.
+
+## 14. Interactive sessions vs workflow fan-outs — two different limits
+
+Folded from the root HUMAN_RU sheet §8 (18-07-2026, H1245) — the distinction
+matters when planning account load:
+
+- **Interactive Claude Code sessions**: there is no concurrency limit that
+  surfaces as API errors — sessions share the account's 5-hour rolling window
+  and weekly quota; exhaustion reads as a clean "limit reached", not an error.
+  2–3 concurrent Opus-tier sessions per account is comfortable; more just
+  burns the window faster.
+- **Workflow fan-outs are what actually fall over**: measured
+  `Connection closed mid-response` and kill-timeouts appear under high agent
+  concurrency (the Slice-D collapse ≈18 concurrent root workflows) — hence
+  the global ≤3-lane rule above. This is server-side load-shedding; the
+  account of origin is irrelevant.
+
+Safe per-account shape: **1 generation lane + 1–2 light sessions** (audit,
+promotion, docs).
 
 _Dr. Mārcis Gasūns_
