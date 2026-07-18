@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD013 MD036 -->
 
-_Created: 12-07-2026 · Last updated: 15-07-2026_
+_Created: 12-07-2026 · Last updated: 18-07-2026_
 
 This dispatcher runs ordinary commands under four isolated profiles. It does not translate by itself or bypass coordinator/audit/promotion gates.
 
@@ -39,6 +39,20 @@ python3 src/pilot/max_account_orchestrator.py --db /var/lib/pwg-ru/max.sqlite re
 python3 src/pilot/max_account_orchestrator.py --db /var/lib/pwg-ru/max.sqlite status
 ```
 
+`run-once` calls coordinator `begin-run` atomically before any manifest-backed worker starts;
+ordinary invocations claim at most three runtime slots. `record-done` is the only successful path
+back through coordinator `record-output` → `auditing`. A retryable or failed worker is returned to
+its previous prepared state with a recorded `release-run --confirm-dead` attempt. If an operator
+must recover manually, first confirm the worker process tree is dead, then use:
+
+```sh
+python3 src/pilot/coordinator.py release-run LEASE_ID --confirm-dead --reason "host restart"
+python3 src/pilot/coordinator.py recover-operation LEASE_ID --confirm-dead
+```
+
+The second command is only for stale `preparing` or `auditing` operation tokens. Late completions
+carry the old operation ID and cannot overwrite the recovered lease.
+
 Install `deploy/pwg-ru-max-orchestrator.{service,timer}` for recurring dispatch. Startup refuses missing or unauthenticated profiles. A rate limit returns the job to pending and parks the account until the parsed epoch, or five hours if no reset is machine-readable. Every attempt gets immutable runner/status logs plus manifest/result hashes. `recover` returns crash-stranded jobs to pending. Promotion remains serialized through `coordinator.py promote-ready --gen-model-version claude-sonnet-5`.
 
 ## Acceptance
@@ -48,6 +62,10 @@ Install `deploy/pwg-ru-max-orchestrator.{service,timer}` for recurring dispatch.
 3. Four disjoint jobs run concurrently.
 4. Kill a dispatch pass, recover, and verify no duplicate promotion.
 5. Record logs, reset behavior, exact model, clean rate, and store delta in the H818 audit.
+
+After both safety PRs merge, the owner-gated H963/H1110 ladder remains the final production test:
+probe → canary → 10 → 20 → four-profile 20. Do not weaken its exactly-once, restart-recovery,
+promotion, audit, or concurrency verdicts to compensate for environmental failures.
 
 ## Windows 100-headword gate
 
@@ -96,7 +114,12 @@ the first profile whose probe fails or exceeds the health ceiling aborts the who
 run (an honest fleet NO-GO), matching acceptance criterion #1. `--drop-unhealthy`
 is the explicit opt-in to instead drop the failing profile, park it, and proceed
 on the healthy subset (still requiring at least one healthy profile). `report`'s
-`probe_latency_ms` becomes a per-profile `name → measured_ms` map. The run then
+`probe_latency_ms` becomes a per-profile `name → measured_ms` map. A successful fleet probe writes
+`probe_receipts/probe_receipt.<run-id>.json` with the run ID, admitted lease IDs, healthy profiles,
+measured latencies, and timestamp. Every dispatch batch presents that receipt to coordinator
+`begin-run`; only this staged path can raise the global runtime ceiling from three to four. A
+missing, failed, stale, future-dated, run-mismatched, lease-mismatched, or incomplete receipt is a
+hard refusal, and a fifth runtime lease is refused in every mode. The run then
 records/audits each window, promotes only its audit-clean subset under the global
 promotion lock, and emits a GO only when the exact headword/subcard census is
 accounted, every window has a positive canonical-store delta, no hard failure or

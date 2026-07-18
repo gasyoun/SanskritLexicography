@@ -28,6 +28,16 @@ windows. Per-profile call concurrency is serialized by the kernel-backed `Active
 timeout budgets are enforced in `headless_worker.py`, and a `--stop-before-promote` review checkpoint
 gates promotion.
 
+Coordinator state is deliberately split: `claimed`/`prepared`/`requeue_prepared` reserve work but
+consume no model runtime; `begin-run` is the only transition to `running`, and `record-output` moves
+that reservation through `auditing` before releasing it. Ordinary/manual execution is globally
+capped at three running leases. Four is available only inside `max_account_orchestrator.py
+staged-run` after its exact per-profile probe writes a fresh matching receipt; missing, stale,
+failed, or mismatched evidence is a hard refusal, and five is never allowed. Do not call
+`record-output` directly on a merely prepared lease. A dead worker must be returned with
+`release-run --confirm-dead --reason ...`; recover stale `preparing`/`auditing` tokens only with
+`recover-operation --confirm-dead` after confirming the subprocess is gone.
+
 Immediate next operator action: read the live queue in
 [`.ai_state.md`](.ai_state.md) — do NOT take a hardcoded root list from this
 file (an earlier version pinned `sTA` -> `BU` here long after both completed;

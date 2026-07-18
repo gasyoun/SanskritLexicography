@@ -36,6 +36,7 @@ import os
 import shutil
 import sys
 import tempfile
+import uuid
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -79,7 +80,7 @@ def load_wf(path):
 
 
 def collect_cards(paths):
-    """sub-card key -> {card, meta, wf_file}. Non-null wins; both-non-null keeps first + logs.
+    """sub-card key -> {card, meta, wf_file}. Non-null wins; exact duplicates collapse.
 
     EN wf files are EXCLUDED: this is the RU bridge (rows_for reads sense['russian']), but
     DEFAULT_GLOB 'wf_output*.json' also matches wf_output.en.* — and those sort BEFORE the
@@ -105,15 +106,25 @@ def collect_cards(paths):
             if not card:
                 null_keys.add(key)
                 continue
-            if key in best:
-                conflicts.append(key)
-                continue                            # keep first-seen non-null
             entry = {'card': card, 'meta': meta, 'wf_file': os.path.basename(path)}
             # carry result-ROW level partial/drift markers (autosplit merge puts them on the
             # row, the selfheal inline path on the card) so provenance can record them
             for m in ('partial', 'missing_senses', 'total_senses', 'fidelity_drift'):
                 if r.get(m):
                     entry[m] = r[m]
+            if key in best:
+                # Recovered/copied workflow artifacts can contain the exact same successful
+                # card.  Collapse those safely, but never choose arbitrarily between different
+                # translations, generation metadata, or partial/drift markers.  wf_file is an
+                # artifact location rather than generation provenance, so it is deliberately
+                # excluded from the equivalence payload.
+                fields = ('card', 'meta', 'partial', 'missing_senses',
+                          'total_senses', 'fidelity_drift')
+                prior = {name: best[key].get(name) for name in fields}
+                current = {name: entry.get(name) for name in fields}
+                if prior != current:
+                    conflicts.append(key)
+                continue
             best[key] = entry
     if en_skipped:
         print('  skipped %d EN wf file(s) (promote_en.py attaches those)' % en_skipped)
@@ -258,11 +269,30 @@ def _atomic_write_rows(path, rows):
 
 
 def _fsynced_backup(source, destination):
-    """Copy, never move, the live store so a later write failure leaves it in place."""
-    with open(source, 'rb') as src, open(destination, 'wb') as dst:
-        shutil.copyfileobj(src, dst, length=1024 * 1024)
-        dst.flush()
-        os.fsync(dst.fileno())
+    """Exclusively copy the live store; never overwrite a prior recovery artifact."""
+    fd = os.open(destination, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    try:
+        with open(source, 'rb') as src, os.fdopen(fd, 'wb') as dst:
+            fd = None
+            shutil.copyfileobj(src, dst, length=1024 * 1024)
+            dst.flush()
+            os.fsync(dst.fileno())
+    except BaseException:
+        if fd is not None:
+            os.close(fd)
+        try:
+            os.unlink(destination)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def _backup_path(store, merge):
+    """Return a collision-resistant backup path without weakening O_EXCL protection."""
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    kind = 'premerge' if merge else 'legacy'
+    return '%s.%s.%s.p%d.%s.bak' % (
+        store, kind, stamp, os.getpid(), uuid.uuid4().hex[:12])
 
 
 def validate_store_target(path, init_store=False):
@@ -440,6 +470,23 @@ def selftest():
     best, _conf, nulls = collect_cards([nullf, fullf])
     assert 'p_a~~h5_00_pwg00' in best, 'non-null must win over null for the same key'
     assert nulls == [], 'a key non-null in any file is not a null'
+    # Byte-equivalent recovered artifacts collapse; divergent cards/provenance fail closed.
+    dupf = os.path.join(d, 'wf_output.duplicate.x.json')
+    with open(dupf, 'w', encoding='utf-8') as f:
+        json.dump({'meta': meta, 'results': [
+            {'key': 'p_a~~h5_00_pwg00', 'card': entry['card']}]}, f)
+    best, duplicate_conflicts, _nulls = collect_cards([fullf, dupf])
+    assert len(best) == 1 and duplicate_conflicts == [], \
+        'byte-equivalent workflow cards must deduplicate without a conflict'
+    divergent = os.path.join(d, 'wf_output.divergent.x.json')
+    changed_card = json.loads(json.dumps(entry['card']))
+    changed_card['records'][0]['senses'][0]['russian'] = 'выпить'
+    with open(divergent, 'w', encoding='utf-8') as f:
+        json.dump({'meta': meta, 'results': [
+            {'key': 'p_a~~h5_00_pwg00', 'card': changed_card}]}, f)
+    _best, divergent_conflicts, _nulls = collect_cards([fullf, divergent])
+    assert divergent_conflicts == ['p_a~~h5_00_pwg00'], \
+        'different non-null translations for one key must conflict'
     # EN wf files must NOT shadow RU cards: 'wf_output.en.*' sorts before 'wf_output.sc.*',
     # and its cards carry 'english' not 'russian' -> zero rows -> silent RU loss on rebuild.
     enf = os.path.join(d, 'wf_output.en.x.json')
@@ -496,6 +543,36 @@ def selftest():
         os.replace = real_replace
     assert open(atomic, encoding='utf-8').read() == 'old\n'
     assert not [n for n in os.listdir(d) if n.endswith('.tmp')]
+    # Backups are exclusive, collision-resistant copies. A failed copy leaves both the live
+    # store and any earlier backup untouched and removes its incomplete destination.
+    backup1 = _backup_path(atomic, True)
+    backup2 = _backup_path(atomic, True)
+    assert backup1 != backup2, 'two promotions must never share a backup name'
+    _fsynced_backup(atomic, backup1)
+    _fsynced_backup(atomic, backup2)
+    assert open(backup1, encoding='utf-8').read() == 'old\n'
+    assert open(backup2, encoding='utf-8').read() == 'old\n'
+    try:
+        _fsynced_backup(atomic, backup1)
+    except FileExistsError:
+        pass
+    else:
+        raise AssertionError('backup creation overwrote an existing recovery artifact')
+    real_copyfileobj = shutil.copyfileobj
+    failed_backup = _backup_path(atomic, False)
+    try:
+        shutil.copyfileobj = lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            OSError('synthetic backup failure'))
+        try:
+            _fsynced_backup(atomic, failed_backup)
+        except OSError:
+            pass
+        else:
+            raise AssertionError('backup copy failure was swallowed')
+    finally:
+        shutil.copyfileobj = real_copyfileobj
+    assert open(atomic, encoding='utf-8').read() == 'old\n'
+    assert not os.path.exists(failed_backup), 'partial backup survived a failed copy'
     print('promote_final_cards selftest OK')
 
 
@@ -650,9 +727,7 @@ def main():
                 # meant a second concurrent promote (even serialized seconds apart by this same
                 # claim) would overwrite the first run's only recovery copy of the pre-merge
                 # store. Each promote now keeps its own backup.
-                stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-                bak = args.store + ('.premerge.%s.bak' % stamp if args.merge
-                                    else '.legacy.%s.bak' % stamp)
+                bak = _backup_path(args.store, args.merge)
                 _fsynced_backup(args.store, bak)
                 print('\nbacked up prior store -> %s' % os.path.basename(bak))
             # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write

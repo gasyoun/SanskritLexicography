@@ -10,6 +10,33 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — enforceable coordinator runtime state machine
+
+- Prepared translation leases are now reservations, not runtime. `begin-run` atomically moves a
+  batch to `running`; `record-output` requires that reservation and releases it through `auditing`.
+  Ordinary execution is capped globally at three. A fourth slot exists only for `staged-run` with
+  a fresh, run- and lease-scoped four-profile probe receipt; a fifth lease always fails closed.
+- `release-run --confirm-dead --reason ...` records abandoned attempts and restores their prior
+  prepared state. `recover-operation --confirm-dead` recovers stale preparation/audit tokens, while
+  compare-and-swap completion checks prevent an old subprocess from overwriting newer lease state.
+- Preflight, harness generation, normalization, requeue generation, and audit now run outside the
+  coordinator state lock with explicit 10-minute preparation and 30-minute audit timeouts.
+  Dashboards distinguish reserved and running leases and retain `active_translation_leases` as a
+  one-cycle deprecated alias of the running count.
+- The four-profile orchestrator writes a credential-safe probe receipt, reserves every dispatch
+  batch before workers start, releases retryable/failed workers, and routes successful workers
+  through the required audit transition. Real contention tests also closed the mkdir/`owner.json`
+  lock-creation race that could previously admit two simultaneous claimers.
+
+### Fixed — canonical-store backup and nominal lease collision safety
+
+- Promotion backups now use exclusive, collision-resistant names and never move or overwrite
+  the live canonical store. Identical recovered workflow cards deduplicate, while divergent
+  translations or generation provenance fail closed before promotion.
+- Nominal coordinator leases persist every canonical input key in `reserved_keys`. Legacy
+  active leases are migrated from claim details or execution manifests; an unresolved active
+  reservation blocks new nominal work instead of permitting an overlapping paid run.
+
 ### Added — H1150 W1-B: offline false-flag rate for `SANLOSS_*`/`TNMASK_*`, with a per-guard arming recommendation
 
 - **Measures; does not arm.** `SANLOSS_HARD_REJECT` and `TNMASK_HARD_REJECT` in
