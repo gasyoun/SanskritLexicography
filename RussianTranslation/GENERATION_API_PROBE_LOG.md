@@ -1,6 +1,6 @@
 # Generation-API probe log — pwg_ru Workflow launches
 
-_Created: 10-07-2026 · Last updated: 16-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 Append-only, machine-written. Source of truth is
 [`src/pilot/generation_api_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/generation_api_probe_log.jsonl);
@@ -43,6 +43,7 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-13T05:58:08Z | launch | GO | — | — | — | no_pwg_w09 | H255 | no_pwg_w09 fresh queue window (--start-index 9), run bounded --max-wide=3 from the start given this session's demonstrated ~10-wide degradation. 12/21 non-null (vs w08's 2/21 at ~10-wide) — bounding fixed throughput — but 15/21 are content-defects (9 non-null defect + 6 fidelity-reject), only 3 clean promoted (brahmani/cakrika/hatya). Store 11562->11567. Bottleneck now content-fidelity not concurrency. 0 conn-errors. |
 | 2026-07-13T21:43:54Z | launch | GO | — | 0 | — | no_pwg_w10 | H255 | bounded --max-wide=3 --stagger-ms=2000 from launch, no isolated pre-probe (mitigation applied regardless, per w09 precedent); 11/18 non-null (9 real + 2 degenerate), 7 residual (6 fidelity-reject known-class incl. 2 newly-confirmed members arvant/jawAyus, 1 kill-timeout) |
 | 2026-07-16T07:59:44Z | warmup | NO-GO | 104.9s | 0 | 6828B | — | H963 | H963 Gate-0 single-profile c4 D-K health attempt (one fresh dated reading, no reroll): warm-up 53290ms / measured 104870ms, BOTH classification=success (no auth/conn/malformed failure), output 1488B/1487B, actual prompt 6828B, exact model claude-sonnet-5, ceiling 30000ms. Pure-latency NO-GO, ~2x WORSE than the 15-07 baseline (29743/52815). Canary NOT launched; store unchanged 11605. Probe tooling >= v1.9.17 natural schema-carrying prompt. |
+| 2026-07-18T08:37:19Z | warmup | GO | 15.7s | 0 | 6491B | medium50_canary | H1209 | H1209 step 0a controller-worker LANE probe (Workflow agent(), NOT c4 headless). Single generation call 15.74s (08:32:01.559->17.302), StructuredOutput emit 14.37s, full 2-call schema round-trip 30.15s; 0 conn-errors, schema valid, 30/30 lines, no kill-timeout. Sharp contrast to same-day c4 headless NO-GO (H1110 18-07 98625ms / H963 16-07 104870ms): the direct Workflow-agent() API path is healthy while the profile/headless transport is degraded. subagent_tokens=59291. |
 
 ## Measured launch outcomes
 
