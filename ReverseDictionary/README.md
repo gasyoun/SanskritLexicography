@@ -1,6 +1,6 @@
 # Reverse Dictionary of Sanskrit — working materials
 
-_Created: 06-07-2026 · Last updated: 07-07-2026_
+_Created: 06-07-2026 · Last updated: 18-07-2026_
 
 ## What this is
 
@@ -14,7 +14,8 @@ project as unprecedented in scale for Indology — merging **~30 source dictiona
 1822–2005** (Böhtlingk & Roth's *Petersburger Wörterbuch*, PWK, Monier-Williams, Apte, Macdonell,
 Turner, Schmidt's *Nachträge*, Kochergina, Grassmann, Vachaspatyam, Śabdakalpadruma, and others —
 full list in [`Словари-источники.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8.mdx)) into a single reverse index of
-**≈266,820 headwords** ([`.doc.pdf/266820-reverse-Gasuns.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt)),
+**≈266,820 headwords** (`.doc.pdf/266820-reverse-Gasuns.txt` — deliberately local-only and
+gitignored, so it has no GitHub URL; see "Data location, integrity & backups" below),
 roughly double the size of its main predecessor (Wolfgang Schwarz's 1974 German reverse
 dictionary, ~130,000 words, 14 years in the making).
 
@@ -55,10 +56,10 @@ folder.
 
 | File | What it is |
 |---|---|
-| [`.doc.pdf/266820-reverse-Gasuns.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt) | **The current master word list** — 266,819 lines, tab-separated `SOURCE_ABBREV<TAB>word`, sorted for reverse lookup. This is the working canonical dataset; the `.doc`/`.pdf` variants elsewhere are earlier milestones (250,026 / 255,882 headwords) kept as historical snapshots, not alternate editions. |
-| [`.doc.pdf/153593-reverse-Stiehl.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/153593-reverse-Stiehl.txt) | Ulrich Stiehl's 2004 reverse-dictionary compilation (153,593 words, from the Cologne Monier-Williams digitization) — reference/comparison corpus. |
-| [`.doc.pdf/29008-reverse-Koch.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/29008-reverse-Koch.txt) | Kochergina's reverse list (29,008 words) — reference/comparison corpus. |
-| [`187992 headwords.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/187992%20headwords.txt) | Headwords attested in 2+ source dictionaries, each tagged with its source abbreviations (`aMSagaRa:IEG,PD` format). |
+| `.doc.pdf/266820-reverse-Gasuns.txt` *(local-only, gitignored — no GitHub URL; see "Data location, integrity & backups" below)* | **The current master word list** — 266,820 data lines (266,819 CRLF-terminated + 1 unterminated final line, per [`SCHEMA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md)), tab-separated `SOURCE_ABBREV<TAB>word`, sorted for reverse lookup. This is the working canonical dataset; the `.doc`/`.pdf` variants elsewhere are earlier milestones (250,026 / 255,882 headwords) kept as historical snapshots, not alternate editions. |
+| `.doc.pdf/153593-reverse-Stiehl.txt` *(local-only, gitignored)* | Ulrich Stiehl's 2004 reverse-dictionary compilation (153,593 words, from the Cologne Monier-Williams digitization) — reference/comparison corpus. |
+| `.doc.pdf/29008-reverse-Koch.txt` *(local-only, gitignored)* | Kochergina's reverse list (29,008 words) — reference/comparison corpus. |
+| `187992 headwords.txt` *(local-only, gitignored)* | Headwords attested in 2+ source dictionaries, each tagged with its source abbreviations (`aMSagaRa:IEG,PD` format). |
 | [`Словари-источники.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8.mdx) / preface §"Аббревиатуры" | The 30-source bibliography with single-letter codes (A–Z, Ā, Ś, Ü, ß) used throughout the corpus. |
 | [`Состав и строй словаря.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/%D0%A1%D0%BE%D1%81%D1%82%D0%B0%D0%B2%20%D0%B8%20%D1%81%D1%82%D1%80%D0%BE%D0%B9%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F.mdx) | The editorial rulebook (§1–§10): sort order (by final letter, then penultimate, etc.), what's excluded (inflected forms, pronoun case forms, comparative/superlative degrees unless independently lexicalized...), homonym handling, accent-mark sourcing. |
 | [`reverse15.php`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/reverse15.php) | Dhaval Patel's Devanagari reverse-sort algorithm (2013) — the actual sorting engine referenced in the preface. |
@@ -128,8 +129,9 @@ below), 38 Core/Related `.doc`/`.docx`/`.pdf` files under 3MB were converted to 
 
 **Sanskrit poets and composers** — the primary classical use of a reverse dictionary: finding
 words that end in a given syllable/suffix for verse composition (rhyme, alliteration, meeting a
-metrical foot). The master list ([`.doc.pdf/266820-reverse-Gasuns.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt))
-is already reverse-sorted; a poet composing in a fixed meter can scan a suffix block directly.
+metrical foot). The master list (`.doc.pdf/266820-reverse-Gasuns.txt`, local-only — see
+"Data location, integrity & backups") is already reverse-sorted; a poet composing in a
+fixed meter can scan a suffix block directly.
 
 **Linguists and lexicographers** — the editorial apparatus itself is a research object: the
 30-source merge methodology, homonym/part-of-speech disambiguation rules, and the frequency
@@ -219,6 +221,37 @@ proposed volume — reusable as a starting layout template, but the content spli
 - [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md) — canonical-version declaration (`266820-reverse-Gasuns.txt`) and the outstanding-errata investigation.
 - [`SCHEMA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md) — TSV column semantics, source-code→bibliography-key table, encoding audit.
 - [`DATA_STATEMENT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/DATA_STATEMENT.md) / [`CITATION.cff`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CITATION.cff) — Bender & Friedman data statement + citation metadata (distribution tier honestly marked undecided pending the licensing ruling).
+
+## Data location, integrity & backups
+
+The canonical dataset and its sibling data files are **deliberately never committed**
+(personal-materials-dump folder policy — the `.gitignore` here whitelists only the `.mdx`
+conversions and docs). Blob URLs to them can never work; this section is the authoritative
+pointer instead. State as of 18-07-2026, recovered and verified under
+[H736](https://github.com/gasyoun/Uprava/blob/main/handoffs/H736-Fable_SanskritLexicography_reverse-dictionary-dataset-recovery_11.07.26.md)
+after the 07-07-2026 fast-forward had silently moved the whole untracked tree out of the
+clone (see [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/CHANGELOG.md)):
+
+- **Working copy (canonical):** `ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt`
+  in the canonical local clone (`C:\Users\user\Documents\GitHub\SanskritLexicography`).
+- **Backup 1 (full dump, drive C):**
+  `C:\Users\user\Documents\GitHub\ReverseDictionary.untracked-backup.20260707T093250\` —
+  the complete pre-conversion folder (470 files, 1.7 GB) including all `.doc`/`.pdf`
+  milestones (250,026 / 255,882) and reference corpora.
+- **Backup 2 (full dump, drive D):**
+  `D:\ReverseDictionary.untracked-backup.20260707T093250\` — robocopy mirror of Backup 1,
+  made 18-07-2026, 470/470 files verified.
+- **Integrity anchor:** `266820-reverse-Gasuns.txt` = 4,135,335 bytes, 266,820 data lines,
+  UTF-8 with BOM, SHA-256
+  `925e696f533d5a9607ea90fb71fae2d2e51d2cc3cb21f332c81cc43e150b9970` (identical in all
+  three copies).
+- **Off-machine backup:** still an open @DO — the Yandex Disk WebDAV path in
+  [`Uprava/BACKUPS.md`](https://github.com/gasyoun/Uprava/blob/main/BACKUPS.md) needs its
+  app-password env vars set before `backup_census_priority.py` can carry this file.
+- **Distribution tier:** undecided — publication of the full list is gated by the rights
+  ruling in [`RIGHTS_LEDGER.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/RIGHTS_LEDGER.md)
+  (a "PD-only" subset cannot be certified on available data), so no public release asset
+  exists yet by design.
 
 ## See also
 

@@ -1,6 +1,6 @@
 # Data-Reuse Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 For the **programmer / data engineer / NLP researcher** who wants to *consume*
 the data here in scripts. This manual is about the committed, reusable datasets —
@@ -116,7 +116,13 @@ imports the TMX once the release clears.
   [SCHEMA.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md))
   (`ReverseDictionary/.doc.pdf/266820-reverse-Gasuns.txt`, tab-separated
   `SOURCE_ABBREV<TAB>word`, reverse-sorted) is **local-only / gitignored in the
-  public repo** — not in a clone. What *is* committed and reusable: its column
+  public repo** — never on GitHub, but present in the canonical local clone at
+  that path (restored 18-07-2026 under
+  [H736](https://github.com/gasyoun/Uprava/blob/main/handoffs/H736-Fable_SanskritLexicography_reverse-dictionary-dataset-recovery_11.07.26.md))
+  plus two full-dump local backups (drives C and D, SHA-256
+  `925e696f533d5a9607ea90fb71fae2d2e51d2cc3cb21f332c81cc43e150b9970`, 4,135,335
+  bytes) — see the README's "Data location, integrity & backups" section for the
+  authoritative pointers. What *is* committed and reusable: its column
   semantics + source-code→bibliography table in
   [ReverseDictionary/SCHEMA.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md),
   the canonical-version declaration in
