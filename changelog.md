@@ -17,6 +17,30 @@ not an error.
 ### Added
 - **H1209 controller-worker canary — rig built and VALIDATED on the 3-card promote-DRY slice (18-07-2026, orchestration Fable 5 `claude-fable-5` resuming an Opus 4.8 `claude-opus-4-8[1m]` session; workers Sonnet 5 `claude-sonnet-5`, controller agents Opus 4.8 `claude-opus-4-8`, [PR #553](https://github.com/gasyoun/SanskritLexicography/pull/553))**: first measured probe of the «инжиниринг контроля» concept ([H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md)) — Workflow rig under [`RussianTranslation/src/pilot/h1209/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1209/canonical_audit.py) reusing the production prompt invariants verbatim (manifest-driven), with FREE deterministic retry gates and Opus review only for surviving cards. The v1 slice exposed a **`gate-bug`**: a non-canonical EQUALITY sense gate (naive `senses` glyph count) made workers displace source `{Tn}` spans into unrestorable `card.notes` — workflow self-report 3/3 vs **canonical audit 1/3** (incident `H1209_SLICE_V1_2026-07-18` in [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md)). v2 gates are direction-aligned with `accept()` (HARD `{Tn}`-multiset fidelity german+russian, shortfall-only vs `source_senses`); v2 rerun `wf_e858f3cf-6af`: **canonical 3/3 PASS, self-report == canonical** (8 agents, 544,056 tok). `canonical_audit.py` (card_fields C-01 restore + `accept()` battery + schema) is the authoritative promote-DRY verdict, independently adversarially reviewed 7/7 faithful. `window_selftest` 142/142, `lang_parity_check` 0 drift (GAP `h1209_controller_worker_rig`), `check_launch_ledger` clean. Promote-DRY only; medium50 RU + mini-EN deferred. Full narrative: [RUN_LOG.md 2026-07-18](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_LOG.md).
 
+## [1.23.0] — 18-07-2026
+
+### Changed
+- **H1245 big-manuals estate refresh (18-07-2026, Fable 5 `claude-fable-5`)** — all 10 manual
+  files refreshed against the 221-commit drift window, one adversarial `fact-check-against-source`
+  agent per manual, **every confirmed finding fixed** (39 across the seven manuals: manifest-v2
+  promotion refusal + mechanized H255 guards + H818 model-pin closure + 53-entry parity in the
+  RussianTranslation deep manual; docs-site CI job, A30/A31/A58, 12/14 chapters, closed
+  corpus-methods `@DECIDE`, the flagged Zenodo-DOI conflict → [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  in the publication manual; per-list key2 verdicts + era-split `wc -l` rule + RIGHTS_LEDGER
+  gate in data-reuse; release-stance + CI + FINDINGS-§N-breach warning in maintainer; book/venue/
+  registries in researcher; MW-key2 measurement + same-day corpus_gate fix in headwordlists;
+  post-incident ReverseDictionary reality in the student manual). Root sheets **re-thinned**:
+  AGENTS §4 → live-pointer rule, §5 + HUMAN_RU §8 folded into the deep manual as §13–§14;
+  phantom A51 and stale "draft PR #264" framing corrected. **9 per-manual `.meta.md` metadocs
+  created**, each with a `LAST_VERIFIED` block (spot-run counts recorded); set-level
+  [README.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.meta.md)
+  narrowed; router gains the H1029 onboarding row.
+
+### Added
+- [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  §6: the `10.5281/zenodo.15834721` mint-status conflict (BOOK_PLAN vs FAIR_RELEASE_1) —
+  unresolved, needs one online Zenodo check.
+
 ## [1.22.0] — 18-07-2026
 
 ### Added

@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
@@ -33,17 +33,17 @@ the headword tooling in
 [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists),
 the site builder in
 [docs_site/build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py),
-and the two dashboards. Treat the repo as **hybrid**: a data/docs workspace with
+and the three dashboard generators. Treat the repo as **hybrid**: a data/docs workspace with
 live tooling embedded in the active subprojects.
 
 ## 2. The subprojects — one map
 
 | Directory | What | State | Primary reader |
 |---|---|---|---|
-| [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production**, ~106k headwords) + grammar/TM assets. 591 tracked files (+ a large gitignored local store/TM not in a clone). | Active | maintainer + researcher |
+| [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production**, ~106k headwords) + grammar/TM assets. 714 tracked files as of 18-07-2026 (+ a large gitignored local store/TM not in a clone). | Active | maintainer + researcher |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) | Headword exports across ~16 CDSL dictionaries; key1/key2 semantics; comparison + union tooling | Active | data-reuser |
-| [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Brill book draft (2 of ~10 chapters + plan/proposal/rights) | Early | researcher |
-| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A33–A43) | Active | researcher |
+| [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Book draft — 12 of the ~14 planned chapters drafted as of 18-07-2026, plus BOOK_PLAN / BRILL_PROPOSAL / RIGHTS_TABLE / LITERATURE_CROSSWALK and its own CHANGELOG (venue: de Gruyter primary since the M01 ruling) | Active | researcher |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A30–A58 as of 18-07-2026: A30, A31, A33–A43, A58) | Active | researcher |
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Russian particle-syntax lectures + interactive HTML explorer | Active | **student** |
 | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary (~266,820 headwords) | Active | researcher/student |
 | [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) | Böhtlingk subhāṣita dataset (7,537 JSONL records) | Active (minimal) | data-reuser |
@@ -61,7 +61,7 @@ each append-only:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — the empirical registry. **Schema per finding:** a `### §N` heading (the
-  number is the stable citation, never reused/shifted — append-only), the
+  number is the stable citation, never reused/shifted — append-only; **a norm with known breaches**: H616 renumbered seven duplicate pairs to §70–§75 on 11-07-2026, and fresh duplicates exist again as of 18-07-2026 — §80, §86, §87 each carry two findings, repair queued — so cite by number **plus date/title** until renumbered), the
   **claim** in bold with a colour dot (🔴 important · 🟠 medium · 🟡 minor),
   then `Evidence:` (a number / file+line), `Implication:` (what to do), and a
   blockquoted `Source` line tagged `— repo · date`. **No HTML, ever** — use a
@@ -89,7 +89,7 @@ python epistemic_dashboard/build_epistemic_dashboard.py \
   --dir . --side sanskrit \
   --repo-url https://github.com/gasyoun/SanskritLexicography/blob/master \
   --out epistemic_dashboard/epistemic.json   # all four flags are required
-python findings_dashboard/build_findings_data.py   # -> findings_dashboard/data.json + index.html
+python findings_dashboard/build_findings_data.py   # -> findings_dashboard/data.json + timeseries.json (index.html is a static viewer, never touched)
 ```
 
 The findings dashboard publishes to
@@ -199,16 +199,21 @@ Concurrent sessions (Claude *and* Codex) have collided in this exact tree before
    for a `🔒 CLAIMED` tag on the row.
 4. **Never `git add -A`** — `git status` / `git diff --cached` right before
    committing so you commit only your own files, and reclaim finished worktrees
-   with [`/worktree-gc`](https://github.com/gasyoun/claude-config/blob/main/commands/worktree-gc.md).
+   the moment the PR lands — same pass, never deferred (org rule since 17-07-2026); [`/worktree-gc`](https://github.com/gasyoun/claude-config/blob/main/commands/worktree-gc.md) is only the periodic safety net for drift.
 
 ## 7. CI, pre-commit, releases
 
 - **CI** ([.github/workflows/ci.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)):
-  Markdown lint + Markdown link-check + YAML lint + a Python lint job that
+  Markdown lint + YAML lint + a Python lint job that
   **does fire** (`.py` files exist) + a conditional JS lint + a
   **RussianTranslation gates** job that compiles the pipeline scripts and runs
-  their fixture selftests — keep the tooling importable and the gate selftests
-  green.
+  their fixture selftests + a **docs-site pytest** job (`pytest
+  docs_site/test_docs_site.py` after `pip install -r requirements.txt` — a
+  `docs_site/` edit CAN break CI) — keep the tooling importable and the gate
+  selftests green. **Markdown link-check is no longer per-push**: it moved to
+  [.github/workflows/link-check.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/link-check.yml)
+  (weekly + manual dispatch) after burning ~47 min per push for zero
+  per-run enforcement value.
 - **Pre-commit** ([.pre-commit-config.yaml](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)):
   `check-yaml`, `end-of-file-fixer`, `trailing-whitespace` (markdown-aware),
   `check-merge-conflict`, plus the local
@@ -216,7 +221,7 @@ Concurrent sessions (Claude *and* Codex) have collided in this exact tree before
   (`review_changelog_guard.py --staged`).
 - **Releases:** promote [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md)
   `[Unreleased]` → `[X.Y.Z] - DATE`, annotated tag `vX.Y.Z`, `gh release create`.
-  Do **not** tag releases unprompted — a human drives release timing.
+  Release cadence follows the changelog's own rule: keep upcoming work under `[Unreleased]`, and **cut a new version every time the changelog is updated** — agent-cut releases are the norm (v1.20.0/v1.21.0 both agent-cut 18-07-2026). The old “never tag unprompted” stance is retired (see HANDOFF.md).
 
 ## 8. The docs site
 
