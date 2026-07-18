@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-10T16:35:32Z",
+ "generated_at": "2026-07-18T04:32:06Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 75,
+  "total": 95,
   "by_importance": {
-   "3": 14,
-   "2": 43,
+   "3": 16,
+   "2": 45,
    "1": 11
   },
   "by_origin": {
    "auto": 0,
-   "human": 75
+   "human": 95
   }
  },
  "layers": [
@@ -22,15 +22,15 @@
    "key": "ASSUMPTIONS",
    "act": "relying on an unproven premise",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md",
-   "total": 6,
+   "total": 7,
    "by_importance": {
-    "3": 4,
+    "3": 5,
     "2": 2,
     "1": 0
    },
    "by_origin": {
     "auto": 0,
-    "human": 6
+    "human": 7
    },
    "categories": 3,
    "interlinks": 6,
@@ -70,6 +70,12 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#6-a-verified-correction-queue-stays-valid-until-filed"
+    },
+    {
+     "title": "§7. «Рамаяна. Книга 5. Сундараканда 2026.html» — финальная редакция перевода",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#7-рамаяна-книга-5-сундараканда-2026html--финальная-редакция-перевода"
     }
    ]
   },
@@ -126,15 +132,15 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 11,
+   "total": 12,
    "by_importance": {
-    "3": 0,
+    "3": 1,
     "2": 4,
     "1": 7
    },
    "by_origin": {
     "auto": 5,
-    "human": 6
+    "human": 7
    },
    "categories": 3,
    "interlinks": 11,
@@ -204,6 +210,12 @@
      "importance": 1,
      "origin": "auto",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#11-dcs-verb-form-frequency-prelim-is-flagged-preliminary-never-finalised"
+    },
+    {
+     "title": "§12. Сундараканда: стихи песней 2 и 28 — пропуск оцифровки или воля переводчика?",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#12-сундараканда-стихи-песней-2-и-28--пропуск-оцифровки-или-воля-переводчика"
     }
    ]
   },
@@ -211,18 +223,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 9,
+   "total": 11,
    "by_importance": {
     "3": 7,
-    "2": 2,
+    "2": 3,
     "1": 0
    },
    "by_origin": {
     "auto": 1,
-    "human": 8
+    "human": 10
    },
    "categories": 4,
-   "interlinks": 9,
+   "interlinks": 10,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -247,6 +259,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-verifying-petersburg-citations-against-the-dcs-corpus-shared-erroneous-citation-test--abandoned-for-this-candidate-set"
+    },
+    {
+     "title": "§8b. Fitting a continuous locus index for the **full Mahābhārata** against any free bulk e-text — ✅ REOPENED & DONE for ALL 18 PARVANS (the \"no free vulgate\" premise was refuted, 12-07-2026)",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8b-fitting-a-continuous-locus-index-for-the-full-mahābhārata-against-any-free-bulk-e-text---reopened--done-for-all-18-parvans-the-no-free-vulgate-premise-was-refuted-12-07-2026"
     },
     {
      "title": "§4. Bulk-respell of \"typo\" headword-correction lists — abandoned",
@@ -277,6 +295,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-resolving-pwgmw-hariv-citations-against-dcs-to-find-shared-erroneous-citations--abandoned"
+    },
+    {
+     "title": "§8. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-gemini-ocr-санскритских-комментариев-сундараканды--вытеснен-скрейпом"
     }
    ]
   },
@@ -339,16 +363,16 @@
    "key": "STALENESS",
    "act": "decaying — confidence over time",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md",
-   "total": 66,
+   "total": 77,
    "by_importance": null,
    "by_origin": {
-    "auto": 66,
+    "auto": 77,
     "human": 0
    },
    "flags": {
     "red": 0,
     "yellow": 0,
-    "green": 66,
+    "green": 77,
     "unknown": 0
    },
    "entries": []
@@ -446,26 +470,26 @@
   }
  ],
  "staleness": {
-  "total": 66,
+  "total": 77,
   "red": 0,
   "yellow": 0,
-  "green": 66,
+  "green": 77,
   "unknown": 0
  },
  "totals": {
-  "rows": 115,
-  "auto": 72,
-  "human": 43,
+  "rows": 130,
+  "auto": 83,
+  "human": 47,
   "by_importance": {
-   "3": 17,
-   "2": 24,
+   "3": 19,
+   "2": 25,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 49,
+  "entry_rows": 53,
   "candidates": 6,
   "categories": 20,
-  "interlinks": 49,
-  "findings": 75
+  "interlinks": 50,
+  "findings": 95
  }
 }
