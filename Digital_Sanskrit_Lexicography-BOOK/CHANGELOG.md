@@ -7,6 +7,48 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 18-07-2026 (H1241, the glue: Introduction + 5 part-bridges + Conclusion)
+
+- **The book's connective tissue drafted — 7 new files in
+  [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters)**
+  (Fable 5 `claude-fable-5`, new writing, not conversions; the method appendix and index stay
+  gated on the chapter freeze per BOOK_PLAN §3):
+  - **Introduction** →
+    [ch00_introduction_two_civilizations.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch00_introduction_two_civilizations.md)
+    (~14 pp.): the two-civilizations opening; **"why Sanskrit is the testbed" seeded from
+    A61's serial-infrastructural-conversion argument** per the 18-07 ruling — chronicle,
+    names, testimony and quotations left entirely to the WSC paper, no A61 permission gate
+    touched, and no A61 citation (the ruled ordering: the book appears first, A61 cites it);
+    the thesis with the crosswalk §3 positioning (graph-is-not-the-news concession against
+    LSM 164; the per-statement-epistemics delta); the Piotrowski theory-question answered
+    narrowly; the Hausmann–Wiegand structural canon mapped to the five parts; four scoping
+    paragraphs (use-research, function theory, bilingual equivalence, project-vs-dictionaries);
+    the three reading rules; the 14-chapter roadmap; a conventions note.
+  - **Five part-bridges** →
+    [bridge_part1_two_traditions_one_method.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part1_two_traditions_one_method.md) ·
+    [bridge_part2_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part2_macrostructure.md) ·
+    [bridge_part3_microstructure_civilizations.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part3_microstructure_civilizations.md) ·
+    [bridge_part4_mediostructure_citation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part4_mediostructure_citation.md) ·
+    [bridge_part5_living_dictionary.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part5_living_dictionary.md),
+    written against the twelve committed chapters. **Part III carries the crosswalk §4.1
+    comparative upgrade** — "Sanskrit among the lexicographical civilizations" on Baalbaki's
+    order / witness / copying axes, Ferri cited essay-by-essay, Dickey as the Greek leg, with
+    the Europe-specific honesty clause on Ch. 1's screen. **Part II and IV describe the
+    H1240-pending Ch. 3 / Ch. 11 at plan altitude only**, each with a boxed ⚠️ obligation to
+    be revised against the chapters as merged.
+  - **Conclusion** →
+    [conclusion_evidence_graph.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/conclusion_evidence_graph.md)
+    (~11 pp.): the five recurring lessons; the graph generalised with explicit transfer
+    conditions; the FAIR infrastructure argument naming the DOI gap honestly; the two
+    traditions' lessons for lexicography at large (Baalbaki-Epilogue framing); the bounded
+    close (McEnery & Brezina; the n=1-reviewer κ gap named; Fuertes-Olivera/Nielsen futures).
+  - **Author gate** → every vetoable framing decision (12 rows: the opening vignette, the
+    chronicle boundary, the LSM-164 concession strength, motif reuse, lengths, closing
+    cadence …) is enumerated in
+    [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
+    (added to the folder's allowlist `.gitignore`) as an MG `@DO`; BOOK_PLAN §11,
+    BOOK_PLAN.meta backlog #5, and `.ai_state.md` ticked in the same pass.
+
 ### Changed — 18-07-2026 (MG rulings: A61, venue, dual use, work order)
 
 - **The A61 question is ruled** ([BOOK_PLAN.md §10](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md),

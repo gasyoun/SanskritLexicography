@@ -567,6 +567,35 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   unchanged. **12 of 14 chapters now in book form** (all except the two prose-thin data chapters
   Ch. 3 / Ch. 11).
 
+**Done 18-07-2026 (H1241 execution, Fable 5 `claude-fable-5`):**
+- ✅ **The glue drafted — Introduction + 5 Part-bridges + Conclusion** (the method appendix and
+  index stay post-freeze by design). The Introduction
+  ([chapters/ch00_introduction_two_civilizations.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch00_introduction_two_civilizations.md))
+  is seeded from **A61's argument per §10 ruling 1** — the serial-infrastructural-conversion
+  survival case as "why Sanskrit is the testbed" — with the chronicle, names and quotations
+  left entirely to the WSC paper (no A61 permission gate touched; the book does not cite A61,
+  per the ruled ordering). It states the thesis with the crosswalk §3 positioning (the
+  graph-is-not-the-news concession against LSM 164; the epistemics delta), the Piotrowski
+  theory-question answer, the Hausmann–Wiegand structural-canon mapping, the four scoping
+  paragraphs (use-research, function theory, bilingual-equivalence, project-vs-dictionaries),
+  the three reading rules, the 14-chapter roadmap, and a conventions note. The five bridges
+  ([bridge_part1_two_traditions_one_method.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part1_two_traditions_one_method.md) ·
+  [bridge_part2_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part2_macrostructure.md) ·
+  [bridge_part3_microstructure_civilizations.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part3_microstructure_civilizations.md) ·
+  [bridge_part4_mediostructure_citation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part4_mediostructure_citation.md) ·
+  [bridge_part5_living_dictionary.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part5_living_dictionary.md))
+  are written against the twelve committed chapters; **Part III carries the crosswalk §4.1
+  comparative upgrade** (Baalbaki order/witness/copying axes, Ferri essay-level, Dickey third
+  leg, with the Europe-specific honesty clause). The Conclusion
+  ([chapters/conclusion_evidence_graph.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/conclusion_evidence_graph.md))
+  argues the graph as a general model (transfer conditions), the FAIR infrastructure it
+  requires (naming the DOI gap honestly), the two traditions' lessons, and the bounded close.
+  **Voice gate:** every vetoable framing decision is enumerated in
+  [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
+  for the author's ruling. **Ch. 3 / Ch. 11 caveat:** the Part II/IV bridges describe the two
+  H1240 chapters only at plan altitude and carry boxed ⚠️ obligations to be revised against
+  the chapters as merged.
+
 **Still to do** (re-ordered 18-07-2026 per the §10 ruling 4; the old item 2 — "convert A16/A01
 as sample chapters" — was stale, both landed as
 [ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
@@ -576,10 +605,12 @@ in H430 on 09-07-2026):
 1. **Ch. 3 (← A40) + Ch. 11 (← A50) prose** — the last two of the 14 not yet in book form;
    both are data-complete and need chapter prose written atop committed datasets, not a
    journal→book conversion. → [H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md).
-2. **The glue** — Introduction (seeded from A61's argument per ruling 1), the 5 Part-bridges,
-   the Conclusion, the unified method appendix. This is the genuine drafting load and what
-   turns 14 converted articles into a monograph. →
-   [H1241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1241-Fable_SanskritLexicography_m01-introduction-part-bridges-conclusion-glue_18.07.26.md).
+   **Follow-on once merged:** revise the Part II/IV bridges' ⚠️ sections and the Introduction's
+   roadmap paragraph against the real chapters (see the H1241 done-entry above).
+2. **The author's voice pass over the glue** — rule on the framing calls in
+   [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
+   (MG `@DO`); the unified **method appendix + index** stay gated on the chapter freeze.
+
 3. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
    DCS sign-off) — deferred to its ~09-08-2026 window; gates *citability at submission*, not
    drafting. The DOI *minting* is a human/credentials `@DO`; the mechanical **CITATION.cff**
