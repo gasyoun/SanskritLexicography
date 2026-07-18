@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import threading
 import xml.etree.ElementTree as ET
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -2550,22 +2551,372 @@ def test_coordinator_state_dashboard_and_cap():
                 })
             coordinator.save_state(state)
             loaded = coordinator.load_state()
-            if len(coordinator.active_translation_leases(loaded)) != 3:
-                fail('coordinator must count exactly three active translation leases')
+            if len(coordinator.reserved_translation_leases(loaded)) != 3:
+                fail('coordinator must count exactly three reserved translation leases')
+            if coordinator.running_translation_leases(loaded):
+                fail('prepared leases must not consume runtime slots')
             dash = json.load(open(os.path.join(tmp, 'dashboard.json'), encoding='utf-8'))
             if dash.get('schema') != coordinator.DASHBOARD_SCHEMA:
                 fail('coordinator dashboard schema missing')
-            if dash.get('active_translation_leases') != 3 or dash.get('translation_limit') != 3:
-                fail('coordinator dashboard must expose cap state')
+            if (dash.get('reserved_translation_leases') != 3
+                    or dash.get('running_translation_leases') != 0
+                    or dash.get('active_translation_leases') != 0
+                    or dash.get('runtime_limit') != 3
+                    or dash.get('runtime_mode') != 'standard'):
+                fail('coordinator dashboard must distinguish reserved and running state')
+            coordinator.begin_run_leases(loaded, ['lease0', 'lease1', 'lease2'])
+            if len(coordinator.active_translation_leases(loaded)) != 3:
+                fail('deprecated active alias must equal the running count')
             state['leases'][0]['state'] = 'promoted'
             coordinator.save_state(state)
-            if len(coordinator.active_translation_leases(coordinator.load_state())) != 2:
-                fail('promoted leases must not count against the active LLM cap')
+            if len(coordinator.reserved_translation_leases(coordinator.load_state())) != 2:
+                fail('promoted leases must not count against reserved work')
         finally:
             if old is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old
+
+
+def test_coordinator_nominal_reservations():
+    """Nominal batches own every canonical key, including migrated legacy leases."""
+    import coordinator
+    old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    old_here = coordinator.HERE
+    old_store = coordinator.promote_final_cards.DEFAULT_STORE
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = os.path.join(tmp, 'coord')
+        coordinator.HERE = os.path.join(tmp, 'pilot')
+        os.makedirs(os.path.join(coordinator.HERE, 'input'))
+        store = os.path.join(tmp, 'store.jsonl')
+        open(store, 'w', encoding='utf-8').close()
+        coordinator.promote_final_cards.DEFAULT_STORE = store
+        manifest = os.path.join(tmp, 'manifest.json')
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v1',
+                       'meta': {'selected_keys': ['c_safe'],
+                                'nominal_keymap': {'c_safe': 'c'}}}, f)
+        try:
+            state = coordinator.default_state()
+            state['leases'] = [
+                {'id': 'details-legacy', 'kind': 'nominal', 'state': 'prepared',
+                 'details': {'keys': ['a', 'b']}},
+                {'id': 'manifest-legacy', 'kind': 'nominal', 'state': 'prepared',
+                 'execution_manifest': manifest},
+            ]
+            coordinator.save_state(state)
+            migrated = coordinator.load_state()
+            if migrated['leases'][0].get('reserved_keys') != ['a', 'b']:
+                fail('legacy details.keys reservation was not migrated')
+            if migrated['leases'][1].get('reserved_keys') != ['c']:
+                fail('legacy manifest nominal_keymap reservation was not migrated')
+            if coordinator.active_reserved_nominal_keys(migrated) != {'a', 'b', 'c'}:
+                fail('active nominal reservations did not include every batch key')
+
+            cards = os.path.join(tmp, 'cards.jsonl')
+            with open(cards, 'w', encoding='utf-8') as f:
+                for key in ('b', 'd'):
+                    f.write(json.dumps({'key1': key}) + '\n')
+                    stem = coordinator.safe_name(key)
+                    open(os.path.join(coordinator.HERE, 'input', stem + '.raw.txt'),
+                         'w', encoding='utf-8').close()
+                    open(os.path.join(coordinator.HERE, 'input', stem + '.portrait.json'),
+                         'w', encoding='utf-8').close()
+            if coordinator.nominal_candidates(migrated, batch_size=5, cards_path=cards) != ['d']:
+                fail('nominal candidate selection reused a non-first reserved batch key')
+
+            try:
+                coordinator.register_prepared_lease(
+                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, 'preflight.json')
+            except SystemExit as exc:
+                if 'already active' not in str(exc):
+                    raise
+            else:
+                fail('overlapping prepared nominal lease was accepted')
+
+            # An unresolved active legacy lease blocks every new nominal claim; terminal history
+            # is harmless and must not freeze the queue forever.
+            state = coordinator.load_state()
+            state['leases'].append({'id': 'unknown', 'kind': 'nominal', 'state': 'prepared'})
+            coordinator.save_state(state)
+            try:
+                coordinator.active_reserved_nominal_keys(coordinator.load_state())
+            except SystemExit as exc:
+                if 'unresolved reservations' not in str(exc):
+                    raise
+            else:
+                fail('unresolved active legacy lease did not fail closed')
+            state = coordinator.load_state()
+            state['leases'][-1]['state'] = 'blocked'
+            coordinator.save_state(state)
+            if coordinator.active_reserved_nominal_keys(coordinator.load_state()) != {'a', 'b', 'c'}:
+                fail('terminal unresolved legacy lease incorrectly blocked reservations')
+
+            barrier = threading.Barrier(2)
+            outcomes = []
+
+            def register_race(lease_id):
+                barrier.wait()
+                try:
+                    coordinator.register_prepared_lease(
+                        lease_id, 'test', ['e', 'f'], 'harness.js', manifest,
+                        'preflight.json')
+                    outcomes.append('accepted')
+                except SystemExit:
+                    outcomes.append('rejected')
+
+            racers = [threading.Thread(target=register_race, args=('race%d' % i,))
+                      for i in range(2)]
+            for racer in racers:
+                racer.start()
+            for racer in racers:
+                racer.join(5)
+            if sorted(outcomes) != ['accepted', 'rejected']:
+                fail('simultaneous overlapping nominal reservations were not serialized')
+        finally:
+            coordinator.HERE = old_here
+            coordinator.promote_final_cards.DEFAULT_STORE = old_store
+            if old_coord is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old_coord
+
+
+def test_coordinator_runtime_state_machine_and_cas():
+    """Runtime caps, probe authorization, lock responsiveness, and stale completions."""
+    import coordinator
+    from types import SimpleNamespace
+
+    old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    original_run = coordinator.run_cmd
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            state = coordinator.default_state()
+            for i in range(5):
+                state['leases'].append({
+                    'id': 'run%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
+                    'state': 'prepared', 'artifact_dir': os.path.join(tmp, 'a%d' % i),
+                })
+            coordinator.begin_run_leases(state, ['run0', 'run1', 'run2'])
+            try:
+                coordinator.begin_run_leases(state, ['run3'])
+            except SystemExit as exc:
+                if 'runtime cap' not in str(exc):
+                    raise
+            else:
+                fail('standard runtime accepted a fourth lease')
+
+            state = coordinator.default_state()
+            for i in range(5):
+                state['leases'].append({
+                    'id': 'stage%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
+                    'state': 'prepared', 'artifact_dir': os.path.join(tmp, 's%d' % i),
+                })
+            receipt = os.path.join(tmp, 'receipt.json')
+            with open(receipt, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'schema': coordinator.PROBE_RECEIPT_SCHEMA,
+                    'generated_at': coordinator.utc_now(), 'run_id': 'acceptance-1',
+                    'model': coordinator.PROBE_MODEL, 'policy': coordinator.PROBE_POLICY,
+                    'go': True, 'lease_ids': ['stage%d' % i for i in range(5)],
+                    'healthy_profiles': ['c1', 'c2', 'c3', 'c4'],
+                    'probe_latency_ms': {'c1': 10, 'c2': 11, 'c3': 12, 'c4': 13},
+                }, f)
+            coordinator.begin_run_leases(
+                state, ['stage0', 'stage1', 'stage2', 'stage3'], mode='staged',
+                run_id='acceptance-1', probe_receipt=receipt)
+            try:
+                coordinator.begin_run_leases(
+                    state, ['stage4'], mode='staged', run_id='acceptance-1',
+                    probe_receipt=receipt)
+            except SystemExit as exc:
+                if 'runtime cap' not in str(exc):
+                    raise
+            else:
+                fail('staged runtime accepted a fifth lease')
+            if len(coordinator.running_translation_leases(state)) != 4:
+                fail('fresh four-profile receipt did not authorize four runtime slots')
+            coordinator.save_state(state)
+            coordinator.release_run(SimpleNamespace(
+                lease_id='stage0', confirm_dead=True, reason='selftest worker died'))
+            released = coordinator.load_state()['leases'][0]
+            if released['state'] != 'prepared' or not released.get('run_attempts'):
+                fail('release-run did not restore and record the prepared lease')
+            stale_receipt = os.path.join(tmp, 'stale-receipt.json')
+            stale_payload = json.load(open(receipt, encoding='utf-8'))
+            stale_payload['generated_at'] = (
+                datetime.datetime.now(datetime.timezone.utc) -
+                datetime.timedelta(hours=7)).isoformat(
+                    timespec='seconds').replace('+00:00', 'Z')
+            with open(stale_receipt, 'w', encoding='utf-8') as f:
+                json.dump(stale_payload, f)
+            try:
+                coordinator.validate_probe_receipt(
+                    stale_receipt, ['stage0'], 'acceptance-1')
+            except SystemExit as exc:
+                if 'stale' not in str(exc):
+                    raise
+            else:
+                fail('stale staged probe evidence did not fail closed')
+
+            # Two independent dispatchers racing disjoint batches may both validate against an
+            # empty snapshot, but the state lock must serialize the commit and keep the cap <=3.
+            state = coordinator.default_state()
+            for i in range(5):
+                state['leases'].append({
+                    'id': 'race%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
+                    'state': 'prepared', 'artifact_dir': os.path.join(tmp, 'r%d' % i),
+                })
+            coordinator.save_state(state)
+            barrier = threading.Barrier(2)
+            race_results = []
+
+            def begin_race(lease_ids):
+                barrier.wait()
+                try:
+                    coordinator.begin_run(SimpleNamespace(
+                        lease_id=lease_ids, mode='standard', run_id=None,
+                        probe_receipt=None))
+                    race_results.append('accepted')
+                except SystemExit:
+                    race_results.append('rejected')
+
+            racers = [threading.Thread(target=begin_race, args=(['race0', 'race1', 'race2'],)),
+                      threading.Thread(target=begin_race, args=(['race3', 'race4'],))]
+            for racer in racers:
+                racer.start()
+            for racer in racers:
+                racer.join(5)
+            running = coordinator.running_translation_leases(coordinator.load_state())
+            if len(running) > 3 or sorted(race_results) != ['accepted', 'rejected']:
+                fail('simultaneous begin-run batches exceeded the standard runtime cap')
+
+            # A blocked preparation must not hold the coordinator lock. Recovering it while
+            # the fake subprocess is still alive makes its later completion stale; CAS must
+            # refuse that completion rather than overwrite the recovered lease.
+            state = coordinator.default_state()
+            state['leases'] = [{
+                'id': 'prep', 'kind': 'verb', 'target': 'gam', 'state': 'claimed',
+                'artifact_dir': os.path.join(tmp, 'prep'),
+            }]
+            coordinator.save_state(state)
+            entered = threading.Event()
+            release = threading.Event()
+            errors = []
+
+            def blocking_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
+                if not 0 < timeout <= coordinator.PREPARE_TIMEOUT_SECONDS:
+                    fail('prepare subprocess did not receive the explicit 10-minute timeout')
+                script = os.path.basename(cmd[1])
+                if script == 'perf_preflight.py':
+                    entered.set()
+                    release.wait(5)
+                    return SimpleNamespace(returncode=0, stdout='{}', stderr='')
+                harness = next(value.split('=', 1)[1] for value in cmd if value.startswith('--out='))
+                manifest = next(value.split('=', 1)[1] for value in cmd
+                                if value.startswith('--manifest-out='))
+                os.makedirs(os.path.dirname(harness), exist_ok=True)
+                open(harness, 'w', encoding='utf-8').close()
+                with open(manifest, 'w', encoding='utf-8') as f:
+                    json.dump({'schema': 'pwg.headless_execution_manifest.v1', 'meta': {}}, f)
+                return SimpleNamespace(returncode=0, stdout='', stderr='')
+
+            coordinator.run_cmd = blocking_run
+
+            def do_prepare():
+                try:
+                    coordinator.prepare(SimpleNamespace(
+                        lease_id='prep', allow_over_cost=False, profile_slot=None,
+                        config_dir=None, executor_lane='serial-whole-card'))
+                except BaseException as exc:
+                    errors.append(exc)
+
+            worker = threading.Thread(target=do_prepare)
+            worker.start()
+            if not entered.wait(5):
+                fail('blocking preparation fixture did not start')
+            with coordinator.DirLock(coordinator.paths()['lock'], wait_seconds=1):
+                if coordinator.load_state()['leases'][0]['state'] != 'preparing':
+                    fail('preparing operation token was not persisted before subprocess launch')
+            coordinator.recover_operation(SimpleNamespace(
+                lease_id='prep', confirm_dead=True))
+            release.set()
+            worker.join(5)
+            if worker.is_alive():
+                fail('blocking preparation fixture did not finish')
+            if not errors or 'stale preparing completion' not in str(errors[0]):
+                fail('stale preparation completion did not fail compare-and-swap')
+            if coordinator.load_state()['leases'][0]['state'] != 'claimed':
+                fail('stale preparation completion overwrote recovered lease state')
+
+            # The same lock/CAS contract applies to the 30-minute audit phase.
+            audit_dir = os.path.join(tmp, 'audit')
+            os.makedirs(audit_dir)
+            audit_manifest = os.path.join(audit_dir, 'manifest.json')
+            with open(audit_manifest, 'w', encoding='utf-8') as f:
+                json.dump({'schema': 'pwg.headless_execution_manifest.v1',
+                           'meta': {'selected_keys': ['k'], 'input_hashes': {}}}, f)
+            result_path = os.path.join(audit_dir, 'result.json')
+            with open(result_path, 'w', encoding='utf-8') as f:
+                json.dump({'results': [{'key': 'k', 'card': {'key1': 'k'}}]}, f)
+            state = coordinator.default_state()
+            state['leases'] = [{
+                'id': 'audit', 'kind': 'verb', 'target': 'gam', 'state': 'prepared',
+                'artifact_dir': audit_dir, 'execution_manifest': audit_manifest,
+            }]
+            coordinator.begin_run_leases(state, ['audit'])
+            coordinator.save_state(state)
+            audit_entered = threading.Event()
+            audit_release = threading.Event()
+            audit_errors = []
+
+            def blocking_audit(cmd, cwd=coordinator.REPO, check=True, timeout=None):
+                if timeout != coordinator.AUDIT_TIMEOUT_SECONDS:
+                    fail('audit subprocess did not receive the explicit 30-minute timeout')
+                adir = cmd[cmd.index('--out-dir') + 1]
+                audit_entered.set()
+                audit_release.wait(5)
+                with open(os.path.join(adir, 'window_status.json'), 'w', encoding='utf-8') as f:
+                    json.dump({'state': 'blocked'}, f)
+                with open(os.path.join(adir, 'audit_window.report.json'),
+                          'w', encoding='utf-8') as f:
+                    json.dump({}, f)
+                return SimpleNamespace(returncode=2, stdout='', stderr='')
+
+            coordinator.run_cmd = blocking_audit
+
+            def do_audit():
+                try:
+                    coordinator.record_output(SimpleNamespace(
+                        lease_id='audit', workflow_result=result_path,
+                        allow_stale=False, transcript_dir=None))
+                except BaseException as exc:
+                    audit_errors.append(exc)
+
+            audit_worker = threading.Thread(target=do_audit)
+            audit_worker.start()
+            if not audit_entered.wait(5):
+                fail('blocking audit fixture did not start')
+            with coordinator.DirLock(coordinator.paths()['lock'], wait_seconds=1):
+                if coordinator.load_state()['leases'][0]['state'] != 'auditing':
+                    fail('auditing operation token was not persisted before subprocess launch')
+            coordinator.recover_operation(SimpleNamespace(
+                lease_id='audit', confirm_dead=True))
+            audit_release.set()
+            audit_worker.join(5)
+            if audit_worker.is_alive():
+                fail('blocking audit fixture did not finish')
+            if not audit_errors or 'stale auditing completion' not in str(audit_errors[0]):
+                fail('stale audit completion did not fail compare-and-swap')
+            if coordinator.load_state()['leases'][0]['state'] != 'running':
+                fail('stale audit completion overwrote recovered runtime state')
+        finally:
+            coordinator.run_cmd = original_run
+            if old_coord is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old_coord
 
 
 def test_coordinator_fail_closed_audit_states():
@@ -2817,9 +3168,11 @@ def test_coordinator_expired_leases_release_cap():
             ]
             coordinator.save_state(state)
             loaded = coordinator.load_state()
-            active = coordinator.active_translation_leases(loaded)
-            if [l.get('id') for l in active] != ['old-prepared', 'live']:
-                fail('only expired pre-prepare coordinator claims must release the LLM cap')
+            reserved = coordinator.reserved_translation_leases(loaded)
+            if [l.get('id') for l in reserved] != ['old-prepared', 'live']:
+                fail('only expired pre-prepare coordinator claims must release reservations')
+            if coordinator.running_translation_leases(loaded):
+                fail('durable prepared leases must not consume runtime')
             if loaded['leases'][0].get('state') != 'expired':
                 fail('expired coordinator claim must be marked terminal')
             if loaded['leases'][1].get('state') != 'prepared':
@@ -2974,7 +3327,7 @@ def test_coordinator_requeue_attempt_manifests():
 
         fail_once = [True]
 
-        def fake_run(cmd):
+        def fake_run(cmd, **_kwargs):
             out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
             manifest = next(arg.split('=', 1)[1] for arg in cmd
                             if arg.startswith('--manifest-out='))
@@ -3007,8 +3360,18 @@ def test_coordinator_requeue_attempt_manifests():
             failed_dir = os.path.join(artifacts, 'requeue', 'rq02-transient')
             if os.path.exists(failed_dir) or lease.get('requeue_attempt'):
                 fail('caught generation failure consumed an attempt or left its directory')
+            if lease.get('state') != 'blocked' or 'synthetic generation failure' not in (
+                    lease.get('operation_error') or ''):
+                fail('unexpected requeue generation failure was not recorded as blocked')
             if set(coordinator.pending_key_set(lease['pending_requeue'])) != {'a~~x', 'b~~x'}:
                 fail('caught generation failure changed the pending backlog')
+
+            # Continue the artifact-sequencing half of this selftest from an explicit operator
+            # reset; production blocked states are never retried silently.
+            state = coordinator.load_state()
+            state['leases'][0]['state'] = 'promoted_partial'
+            state['leases'][0].pop('operation_error', None)
+            coordinator.save_state(state)
 
             coordinator.prepare_requeue(SimpleNamespace(
                 lease_id='lease', transient=True, defect=False))
@@ -3215,7 +3578,7 @@ def test_coordinator_mixed_lane_public_state_sequence():
             'transient': [], 'defect': [],
         }]
 
-        def fake_run(cmd, check=True):
+        def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
             script = os.path.basename(cmd[1]) if len(cmd) > 1 else ''
             if script == 'audit_window.py':
                 spec = audit_specs.pop(0)
@@ -3252,6 +3615,9 @@ def test_coordinator_mixed_lane_public_state_sequence():
             return path
 
         def record(path):
+            state = coordinator.load_state()
+            coordinator.begin_run_leases(state, ['lease'])
+            coordinator.save_state(state)
             coordinator.record_output(SimpleNamespace(
                 lease_id='lease', workflow_result=path, allow_stale=False,
                 transcript_dir=None))
@@ -5678,6 +6044,8 @@ def main():
         test_perf_preflight_partitions_mixed_monster_window,
         test_verb_worklist_excludes_missing_rootmaps,
         test_coordinator_state_dashboard_and_cap,
+        test_coordinator_nominal_reservations,
+        test_coordinator_runtime_state_machine_and_cas,
         test_coordinator_fail_closed_audit_states,
         test_coordinator_promotion_revalidates_artifacts,
         test_coordinator_expired_leases_release_cap,
