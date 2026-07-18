@@ -44,8 +44,28 @@
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
-    "glossary_vidyut_coverage_pct": null,
-    "pwg_citation_coverage_pct": 83.9
+    "glossary_vidyut_coverage_pct": 86.6,
+    "pwg_citation_coverage_pct": 83.9,
+    "queue_verdicts": {
+     "PASS": 92,
+     "DROP": 1,
+     "SCAN-FIRST": 17,
+     "EDITORIAL": 11,
+     "DNF": 1
+    },
+    "queue_pass_by_dict": {
+     "SHS": 29,
+     "YAT": 17,
+     "ACC": 17,
+     "PWG": 10,
+     "MCI": 10,
+     "SKD": 3,
+     "WIL": 3,
+     "PW": 1,
+     "VCP": 1,
+     "GST": 1
+    },
+    "queue_decay_pct": 0.82
    },
    "registry": {
     "total": 95,
