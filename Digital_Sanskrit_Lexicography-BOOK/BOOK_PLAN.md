@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 17-07-2026_
+_Created: 06-07-2026 · Last updated: 18-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -354,6 +354,41 @@ artifact to draft (open item, §11).
 LSM primary, BIL fallback** · ✅ **standard subscription** (not OA).
 **Resolved 08-07-2026:** ✅ **A12 authorship = sole-authored** (§2 note; Ch. 15 locks, no swap).
 
+**Resolved 18-07-2026 (MG) — the A61 question, and three riders.** Asked because
+[A61](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx)
+("How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)", 4/5, sole-authored, committed
+to WSC-2027 Mumbai) is the one ready draft in the project's orbit that is *not* among the 15
+and could plausibly have opened the book:
+
+1. ✅ **A61 feeds the Introduction; it does NOT become a chapter.** Its argument — serial
+   infrastructural conversion, why this dictionary family survived where comparable projects
+   did not — is mined as raw material for the new Introduction (§3 front matter), which had to
+   be written from scratch anyway and needs exactly that "why Sanskrit is the testbed, and what
+   infrastructure makes an evidence graph possible" framing. **The 15-article / 14-chapter
+   architecture is unchanged** — no 16th article, no swap, no casualty. What is *excluded* is
+   A61's institutional chronicle (dates, participants, funding history): that stays in the WSC
+   paper, since a project history opening reads parochially to an LSM/BIL readership whose
+   spine is method, not narrative. A61's unresolved permission gates (Malten correspondence,
+   quotation timestamps, Kapp–Malten locator) therefore **do not enter the book** — the
+   Introduction takes the *argument*, not the quoted testimony.
+2. ✅ **Venue ruling unchanged:** de Gruyter *Lexicographica. Series Maior* primary, Brill's
+   Indological Library fallback (re-affirming 06-07-2026). The file
+   [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+   is misleadingly named against this ruling — rename to a venue-neutral name at its next
+   substantive revision (tracked in §11).
+3. ✅ **Dual use with WSC-2027 permitted, with cross-citation.** The book (~Q1 2027) and the
+   conference paper (Mumbai, Dec 2027) may share substance provided each cites the other and
+   the shared prose is *reworked, not copy-pasted*. Note the ordering: the book appears
+   **first**, so A61 is the derivative work and must cite the monograph, not the reverse. A row
+   recording this is in
+   [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md).
+4. ✅ **Next work = both writing tracks in parallel, not the DOI sprint.** The two prose-thin
+   data chapters (Ch. 3 ← A40, Ch. 11 ← A50) and the glue (Introduction + 5 part-bridges +
+   Conclusion) proceed now; the FAIR/DOI sprint stays deferred to its ~09-08-2026 window
+   because it needs human credentials and a third party (Hellwig), and gates *citability at
+   submission*, not drafting. Handoffs minted: [H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md)
+   and [H1241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1241-Fable_SanskritLexicography_m01-introduction-part-bridges-conclusion-glue_18.07.26.md).
+
 Still open:
 1. **Book B (handbook):** confirm HdO Section 2 as its home, and its priority/timing
    relative to Book A.
@@ -532,12 +567,26 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   unchanged. **12 of 14 chapters now in book form** (all except the two prose-thin data chapters
   Ch. 3 / Ch. 11).
 
-**Still to do:**
-1. Run the **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI
-   + Hellwig DCS sign-off) — the DOI *minting* is a human/credentials @DO; the mechanical
-   **CITATION.cff** add to kosha / SanskritLexicography / SanskritRussian is a Fable/Sonnet
-   follow-on (those 3 lack a `.cff`; atlas/observatory/orig/MWS already have one).
-2. Convert the two most-mature chapters (A16, A01) to book form as sample chapters
-   (Fable/Sonnet-tier mechanical conversion).
+**Still to do** (re-ordered 18-07-2026 per the §10 ruling 4; the old item 2 — "convert A16/A01
+as sample chapters" — was stale, both landed as
+[ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
+and [ch05_mw_block_economy.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch05_mw_block_economy.md)
+in H430 on 09-07-2026):
+
+1. **Ch. 3 (← A40) + Ch. 11 (← A50) prose** — the last two of the 14 not yet in book form;
+   both are data-complete and need chapter prose written atop committed datasets, not a
+   journal→book conversion. → [H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md).
+2. **The glue** — Introduction (seeded from A61's argument per ruling 1), the 5 Part-bridges,
+   the Conclusion, the unified method appendix. This is the genuine drafting load and what
+   turns 14 converted articles into a monograph. →
+   [H1241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1241-Fable_SanskritLexicography_m01-introduction-part-bridges-conclusion-glue_18.07.26.md).
+3. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
+   DCS sign-off) — deferred to its ~09-08-2026 window; gates *citability at submission*, not
+   drafting. The DOI *minting* is a human/credentials `@DO`; the mechanical **CITATION.cff**
+   add to kosha / SanskritLexicography / SanskritRussian is a Fable/Sonnet follow-on (those 3
+   lack a `.cff`; atlas/observatory/orig/MWS already have one).
+4. **Rename [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)**
+   to a venue-neutral name at its next substantive revision — the filename contradicts the
+   standing de-Gruyter-primary ruling (§10 ruling 2).
 
 _Dr. Mārcis Gasūns_

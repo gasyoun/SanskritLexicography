@@ -1,11 +1,38 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 17-07-2026_
+_Created: 07-07-2026 · Last updated: 18-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Changed — 18-07-2026 (MG rulings: A61, venue, dual use, work order)
+
+- **The A61 question is ruled** ([BOOK_PLAN.md §10](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md),
+  four new resolutions). A61 — *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)*,
+  sole-authored, 4/5, committed to WSC-2027 Mumbai — **feeds the Introduction as argument
+  only and never becomes a chapter**. The 15-article / 14-chapter architecture is explicitly
+  not reopened: no 16th article, no swap, no casualty. A61's institutional chronicle and
+  quoted testimony stay in the WSC paper, which is why **none of A61's unresolved permission
+  gates** (Malten correspondence, quotation timestamps, Kapp–Malten locator, Jachertz page
+  locators) blocks the monograph.
+- **Venue ruling re-affirmed**: de Gruyter *Lexicographica. Series Maior* primary, Brill's
+  Indological Library fallback. [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+  is flagged for a venue-neutral rename at its next substantive revision — its filename
+  contradicts the standing ruling.
+- **Dual use with WSC-2027 permitted, with cross-citation**, recorded as a new non-chapter-reuse
+  section in [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md).
+  Ordering matters and is now written down: the book targets ~Q1 2027 and the conference is
+  Dec 2027, so the book appears **first** and A61 is the derivative work that must cite it.
+- **Work order set**: both writing tracks proceed now — Ch. 3 (← A40) + Ch. 11 (← A50) prose
+  ([H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md))
+  and the Introduction + 5 part-bridges + Conclusion glue
+  ([H1241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1241-Fable_SanskritLexicography_m01-introduction-part-bridges-conclusion-glue_18.07.26.md)).
+  The FAIR/DOI sprint stays deferred to its ~09-08-2026 window: it needs human credentials and
+  a third party (Hellwig), and gates *citability at submission*, not drafting.
+- **Stale item retired**: BOOK_PLAN §11's "convert A16/A01 as sample chapters" was still listed
+  as to-do though both landed in H430 on 09-07-2026.
 
 ### Added — 17-07-2026 (H1078, ch02 corpus-methods section)
 

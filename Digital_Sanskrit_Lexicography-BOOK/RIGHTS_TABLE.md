@@ -1,6 +1,6 @@
 # Rights table — *Digital Sanskrit Lexicography* (Book A / M01)
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 18-07-2026_
 
 Chapter → source article → target journal → publisher → copyright-holder →
 self-reuse status, for the single-authored Brill/De Gruyter monograph
@@ -99,6 +99,23 @@ chapter is 🔴 (blocked): there is no third-party-owned material anywhere in th
 
 Because publication and the book run in parallel, this is a rolling check, not a one-time
 gate — and for any article that publishes *after* the book, it never triggers at all.
+
+## Non-chapter reuse: A61 ⇄ the Introduction (ruled 18-07-2026)
+
+One source outside the 15 feeds the book, and it needs its own row because the usual
+"chapter ← article" logic does not describe it.
+
+| Source | Where it lands | Kind of reuse | Rights status | Standing obligation |
+|---|---|---|---|---|
+| **A61** — *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)*, sole-authored, [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx) | the **Introduction** (new writing), *not* a numbered chapter | argument only — the serial-infrastructural-conversion thesis, **reworked prose, never copy-pasted**; the institutional chronicle (dates, participants, funding) stays in the WSC paper | 🟢 author-held. Unpublished; conference venue is the **20th World Sanskrit Conference, Mumbai, Dec 2027** | **Cross-citation, and mind the order:** the book targets ~Q1 2027 and so appears *first* — A61 is the derivative and must cite the monograph. Re-check at WSC's CfP whether its rules constrain prior book publication of the same argument. |
+
+**Why the permission gates do not travel.** A61 carries unresolved human gates — quotation
+timestamps against the 27-06 recording, Malten-correspondence permission, the Kapp–Malten
+fair-dealing locator, Jachertz page locators, participant roles. Those attach to its *quoted
+testimony and archival chronicle*, none of which enters the book under this ruling. The
+Introduction takes the argument only, so **no A61 gate blocks the monograph**. If a later
+revision does pull quoted testimony into the Introduction, this row is void and every gate
+above must clear first.
 
 ## Proposal disclosure language (drop-in)
 
