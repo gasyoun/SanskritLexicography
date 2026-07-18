@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 17-07-2026 (H1149 D-1 h_reconstructed regression guard)_
+_Created: 04-07-2026 · Last updated: 18-07-2026 (H1209 controller-worker rig GAP entry)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1128,6 +1128,28 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "c3840034737640dd701d772b6f2c25f5b4358c9ca003de561e35c462e4ea03ed",
       "src/pilot/window_selftest.py": "fd4bfd46e4778bd7bb7d184e14fd59bd4bb7a2e89904645fae05bdee46724fba"
+    }
+  },
+  {
+    "id": "h1209_controller_worker_rig",
+    "mechanism": "H1209 controller-worker Workflow rig (Opus controller + Sonnet workers): prep/inject/build scripts, canonical-aligned deterministic in-JS gates (HARD {Tn} multiset fidelity on german+translation, shortfall-only sense gate vs source_senses), and the authoritative post-run canonical audit (restore + accept()-battery + schema)",
+    "files": [
+      "src/pilot/h1209/wf_template.js",
+      "src/pilot/h1209/prep_slice.py",
+      "src/pilot/h1209/build_args.py",
+      "src/pilot/h1209/canonical_audit.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "GAP",
+    "note": "Validated 18-07-2026 on the RU 3-card slice (v1 exposed the naive-senses equality-gate defect: workers displaced source {Tn} spans into unrestorable card.notes; v2 gates are direction-aligned with accept()). canonical_audit.py is already field-parameterized (reads manifest field, russian/english); wf_template.js still hardcodes the russian target field and a RU controller prompt. The EN variant is owed by the same handoff’s mini-EN step, which must also wire the H1070/H1152 EN guards + audit_window_en gates.",
+    "tracking": "H1209 (Uprava/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md), mini-EN step",
+    "verified_sha256": {
+      "src/pilot/h1209/wf_template.js": "2868e1e8cae600e335daa1091e1c34734f0ab7410f6844ff2fbc6653ae2620d1",
+      "src/pilot/h1209/prep_slice.py": "50ac0f204ffb7818fbf32954110ea7f85147ca2a8d6af2f0a795fafdfe1f1676",
+      "src/pilot/h1209/build_args.py": "6f245108c60ae7c777c66900c1da4a53670399e949fbc474b6556d6bd0ed3024",
+      "src/pilot/h1209/canonical_audit.py": "9ae794af290af809caf208caba3b71787bd188f7f3174ebc4af7912ca7ead6f3"
     }
   }
 ]
