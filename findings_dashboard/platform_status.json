@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-02T11:51:06Z",
+ "generated_at": "2026-07-18T04:29:24Z",
  "probe_host": "residential (local machine)",
  "results": [
   {
@@ -8,7 +8,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://michaelmeyer.fr/sanskrit",
-   "ms": 1610
+   "ms": 1221
   },
   {
    "name": "CDSL simple search",
@@ -16,7 +16,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/simple/",
-   "ms": 1532
+   "ms": 1758
   },
   {
    "name": "CDSL home",
@@ -24,7 +24,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/",
-   "ms": 693
+   "ms": 15405
   },
   {
    "name": "Heritage (Inria)",
@@ -32,7 +32,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.inria.fr/DICO/index.en.html",
-   "ms": 1268
+   "ms": 509
   },
   {
    "name": "Heritage mirror (UoHyd)",
@@ -40,7 +40,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.uohyd.ac.in/scl/",
-   "ms": 1556
+   "ms": 1042
   },
   {
    "name": "DCS (plain HTTP; cert broken)",
@@ -48,15 +48,14 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "http://www.sanskrit-linguistics.org/dcs/",
-   "ms": 935
+   "ms": 737
   },
   {
    "name": "VedaWeb (Tekst)",
    "url": "https://vedaweb.uni-koeln.de/",
-   "verdict": "ok",
-   "http": 200,
-   "final_url": "https://vedaweb.uni-koeln.de/",
-   "ms": 907
+   "verdict": "http-418",
+   "http": 418,
+   "ms": 590
   },
   {
    "name": "learnsanskrit.cc",
@@ -75,7 +74,7 @@
    "url": "https://learnsanskrit.org/dictionary",
    "verdict": "http-404",
    "http": 404,
-   "ms": 1218
+   "ms": 746
   },
   {
    "name": "Ambuda dictionaries",
@@ -83,14 +82,14 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://ambuda.org/tools/dictionaries/",
-   "ms": 2377
+   "ms": 1737
   },
   {
    "name": "sanskritdictionary.com",
    "url": "https://sanskritdictionary.com/",
    "verdict": "http-403",
    "http": 403,
-   "ms": 678
+   "ms": 491
   }
  ]
 }
