@@ -8,7 +8,7 @@ message: >
   data/FAIR_RELEASE_1.md.
 license: MIT
 repository-code: https://github.com/gasyoun/SanskritLexicography
-version: 1.19.0
+version: 1.20.0
 date-released: "2026-07-18"
 abstract: >
   A data and research workspace for the Sanskrit Lexicon project: exported

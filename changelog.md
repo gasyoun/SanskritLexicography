@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.20.0] — 18-07-2026
+
+### Added
+- **docs_site research wiki: publish-safety GO verdict recorded, deploy decision surfaced (18-07-2026, Fable 5 `claude-fable-5`, [H740](https://github.com/gasyoun/Uprava/blob/main/handoffs/H740-Fable_SanskritLexicography_docs-site-research-deploy_11.07.26.md))**: `/publish-safety-check` run over the 10 published research docs — **GO, no blocker** (all content already public on `master`; PD 19th-c. sources + citation-scale Kochergina probes; no personal data, secrets, or gitignored bulk in the `_site` bundle), with one anonymity-period caveat surfaced for the ruling; verdict recorded in [PUBLICATION_PIPELINE_DEEP_MANUAL.md § 5.3](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) ([PR #541](https://github.com/gasyoun/SanskritLexicography/pull/541)). The previously invisible deploy-or-don't decision + the 10-vs-16 scope fork now sit as `@DECIDE` rows in [Uprava GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md); the site stays undeployed pending the ruling. Also: 7 stale wiki copies re-synced (`--sync` — closes the audit's README "Living monitors" / sense_order_metrics staleness), 4/4 site tests green; documented that `merge_BU.md` never had a `research/` source (wiki-only doc, `--sync` skips it).
+
 ## [1.19.0] — 18-07-2026
 
 ### Added
