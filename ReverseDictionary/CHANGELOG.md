@@ -1,6 +1,6 @@
 # Reverse Dictionary of Sanskrit — changelog
 
-_Created: 07-07-2026 · Last updated: 17-07-2026_
+_Created: 07-07-2026 · Last updated: 18-07-2026_
 
 Tracks version/canonicity decisions and applied-corrections for the reverse-dictionary
 dataset, per [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
@@ -11,6 +11,32 @@ The master `.txt` itself is gitignored (personal-materials-dump folder policy �
 against it.
 
 ## [Unreleased]
+
+### Fixed — canonical dataset recovered from the fast-forward's untracked-backup — 18-07-2026
+
+**The "data loss" of `266820-reverse-Gasuns.txt` (H733 audit, 11-07-2026) is resolved: the
+file was never destroyed.** A Codex fast-forward session on 07-07-2026 09:32, updating the
+main clone to an `origin/master` that newly tracked `ReverseDictionary/`, moved the entire
+untracked personal-materials dump aside to
+`C:\Users\user\Documents\GitHub\ReverseDictionary.untracked-backup.20260707T093250\`
+(470 files, 1.7 GB) — announced in that session's own log but recorded in no repo doc, so
+the 11-07 audit and every later pass (H1153 included) saw only the clean checkout and
+declared the dataset unlocatable. Recovered and verified 18-07-2026 under
+[H736](https://github.com/gasyoun/Uprava/blob/main/handoffs/H736-Fable_SanskritLexicography_reverse-dictionary-dataset-recovery_11.07.26.md):
+4,135,335 bytes, 266,820 data lines (266,819 CRLF + 1 unterminated final), UTF-8 BOM
+intact, SHA-256 `925e696f533d5a9607ea90fb71fae2d2e51d2cc3cb21f332c81cc43e150b9970` —
+byte-size-identical to the 06-07-2026 listing in the conversion session's transcript.
+Actions taken: canonical `.txt` restored to `ReverseDictionary/.doc.pdf/` (still
+gitignored by design); full dump mirrored to
+`D:\ReverseDictionary.untracked-backup.20260707T093250\` (robocopy, 470/470 files, hash
+re-verified); README "Data location, integrity & backups" section added and the three dead
+blob links repointed; [`DATA_REUSE_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md)
+"not in a clone" claim corrected. The `.doc`/`.pdf` milestones (250,026 / 255,882) and
+reference corpora (Stiehl 153,593; Kochergina 29,008) are all present in both backup
+copies. Off-machine backup remains an open @DO (Yandex WebDAV creds,
+[`Uprava/BACKUPS.md`](https://github.com/gasyoun/Uprava/blob/main/BACKUPS.md)); the
+distribution-tier @DECIDE (rights ledger options i/ii/iii) is untouched by this recovery.
+Recovered by Fable 5 (`claude-fable-5`).
 
 ### Added — rights ledger (W1-E) — 17-07-2026
 
