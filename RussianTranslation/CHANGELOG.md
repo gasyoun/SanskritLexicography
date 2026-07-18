@@ -10,6 +10,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1150 W1-B: offline false-flag rate for `SANLOSS_*`/`TNMASK_*`, with a per-guard arming recommendation
+
+- **Measures; does not arm.** `SANLOSS_HARD_REJECT` and `TNMASK_HARD_REJECT` in
+  [`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+  both remain `= false`, byte-unchanged. Arming stays a human `@DECIDE`.
+- New committed measurement scripts: `src/pilot/softguard_falseflag_measure.py` (verifies
+  `pwg_ru/h963/artifact_manifest.sha256` against the git **blob** content first — the
+  Windows `core.autocrlf` checkout makes a raw `sha256sum -c` spuriously fail on every text
+  file — then recomputes SANLOSS `source_senses` via the real, imported
+  `sense_count.count_source_senses` over the promoted store) and
+  `src/pilot/softguard_falseflag_accept_run.js` (runs the **REAL** `accept()`, extracted
+  verbatim out of an offline-generated harness, the `accept_sensecount_test.js` technique —
+  never a hand-copied re-implementation, the [Uprava FINDINGS §82](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+  anti-pattern).
+- **SANLOSS: `FIX_COUNTER_FIRST`.** 8/8 flags found in the frozen promoted-store evidence
+  (865-card denominator) are false flags (0 true drops) — every one is a Nachtrag/corrigenda
+  card bundling correction points across multiple distinct sub-lemma blocks into one stored
+  sense; `count_source_senses` correctly finds each sub-block's own line-opening ordinal (a
+  class H960's mid-prose cross-reference hardening doesn't target), inflating the expected
+  count even though no content is missing. Fix suggestion recorded in the report.
+- **TNMASK: `DO_NOT_ARM`.** Zero usable frozen evidence: TNMASK's real check compares the
+  pre-restore candidate to the masked source skeleton, and the promoted store holds only
+  post-restore text — that pairing is not preserved for any real historical card. Zero
+  residual `{Tn}` tokens across all 11603 promoted rows (corroborating H1110 C-42) and zero
+  non-zero `tnmask_mismatches` readings anywhere in the tracked repo. Insufficient-evidence
+  verdict, not a verdict on the guard's expected quality.
+- Output: [`pwg_ru/h1112/softguard_falseflag_rate.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/softguard_falseflag_rate.json) +
+  [`H1150_SOFTGUARD_FALSEFLAG_RATE_2026-07-18.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/H1150_SOFTGUARD_FALSEFLAG_RATE_2026-07-18.md).
+  Honest limit stated in both: frozen evidence is one route under one payload regime — the
+  rate bounds the false-flag class, it does not prove the live rate. Regression gate
+  re-measured green: `window_selftest.py` 142/142, `lang_parity_check.py` clean, both
+  `HARD_REJECT` consts unchanged.
+
 ### Added — H1152: the EN lane's three offline guards named by H1070's conditional GO (scaffolding, not activation)
 
 - **Honest framing, stated once and not softened anywhere in this entry:** none of this
