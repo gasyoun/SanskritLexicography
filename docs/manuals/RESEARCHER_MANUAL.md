@@ -1,6 +1,6 @@
 # Researcher Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 For the **lexicographer, digital-humanities researcher, or historian of
 dictionaries** who wants to understand the intellectual programme here, cite its
@@ -69,13 +69,14 @@ English article-based monograph.
 | P5 | *Fifty thousand corrections: an error typology of twelve years of collaborative dictionary maintenance* | Lexikos | Q2 2027 |
 | P6 | *A frequency-graded reading layer for Sanskrit learners: joining corpus, grammar, and seven dictionaries* | Lexikos (pedagogical) / eLex 2027 | Q2 2027 |
 
-**Book** (de Gruyter *Lexicographica Series Maior* or Brill): *Sanskrit
-Lexicography in the Digital Age: Evidence, Inheritance, and Two Traditions* —
-draft plan + first chapters in
+**Book** (M01 — venue locked 06-07-2026: de Gruyter *Lexicographica. Series Maior*
+primary, Brill's Indological Library fallback): *Digital Sanskrit Lexicography* —
+a locked 14-chapter architecture with 12 chapters drafted as of 18-07-2026 (only
+the two data chapters, Ch. 3 and Ch. 11, remain unwritten) in
 [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK)
 ([BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md),
 [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md);
-2 chapters drafted so far). Cross-repo paper status is tracked in
+canonical plan = BOOK_PLAN.md, which supersedes the roadmap's older 10-chapter sketch). Cross-repo paper status is tracked in
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md);
 working notes/reviews live in
 [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers).
@@ -87,7 +88,7 @@ working notes/reviews live in
 | Petersburg layer model | How a PWG entry is assembled from up to 5 dictionary layers; ~36% of the headword union has *no* PWG record (PW-only is 24%, not an edge case) | [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) |
 | Cross-dictionary article study | Full microstructural comparison of one headword (agni, anya, akṣara, ananta) across dictionaries — verbatim / IAST / per-sense / corpus-RU views | [article-comparison/](https://github.com/gasyoun/SanskritLexicography/tree/master/article-comparison) |
 | Headword union | 323,425 headwords across 15 csl-orig dicts with per-dict provenance + gender; feminines folded | [HeadwordLists/union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) |
-| Reverse dictionary | ~266,820-headword reverse index merging ~30 sources (1822–2005) — word-formation, verse endings, suffix study; a genuine Indological *desideratum* | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) |
+| Reverse dictionary | ~266,820-headword reverse index merging ~30 sources (1822–2005) — word-formation, verse endings, suffix study; a genuine Indological *desideratum*. ⚠️ The 266k file itself is deliberately **local-only and gitignored** (no GitHub URL) and publication is rights-gated (`RIGHTS_LEDGER.md`) — cite the method, not a fetchable dataset, until the FAIR release | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) |
 | Indische Sprüche | 7,537 Böhtlingk gnomic verses (Deva + IAST + German + source attribution) — a clean Sa→De gnomic parallel corpus | [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) |
 | Sa→Ru translation memory | Graded (A/B/C) Sanskrit–Russian TM, TMX 1.4b exportable; FAIR release gated on rights | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/README.md) |
 | Particle syntax | Positional classification of 16 Sanskrit particles (Whitney–Speyer–Gonda–Apte line; Zaliznyak positional schema) | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) |
@@ -95,9 +96,13 @@ working notes/reviews live in
 
 ## 5. The epistemic registries as a research method
 
-The nine root registries are not bookkeeping — they *are* the reproducibility
+The eight root registries (FINDINGS + its seven epistemic siblings) are not bookkeeping — they *are* the reproducibility
 apparatus a DSH/lexicography reviewer asks for and rarely gets. Cite findings by
-their stable `§N` number:
+their stable `§N` number — **with the finding's date or title alongside**: the
+stability is a norm with known breaches (as of 18-07-2026 the registry carries
+fresh duplicate pairs at §80, §86 and §87, pending the same renumber repair
+H616 ran on §70–§75, and FINDINGS §92 itself measured ~65 wrong §-refs in a
+downstream register), so a bare number is not yet a safe citation key:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — measured, evidence-backed facts (live dashboard at
@@ -119,7 +124,7 @@ their stable `§N` number:
 
 For a reviewer or a co-author, DEAD_ENDS and CONTRADICTIONS are the most
 valuable: they record negative results (e.g. body/reverse-headword mining
-rejected at 38.6% precision; grammar-in-prompt does not improve DE→RU MT) so the
+rejected at 38.6% precision — DEAD_ENDS §1; the grammar-in-prompt A/B rejection lives in `RussianTranslation/NOMINAL_GRAMMAR_AB.md` + the RussianTranslation CHANGELOG, not in these registries) so the
 next study doesn't repeat them.
 
 ## 6. FAIR gaps — read before you cite

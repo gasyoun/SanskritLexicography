@@ -21,8 +21,13 @@ to operate the pipelines see the
   text. The TMX release is gated behind rights clearance.
 - Before redistributing anything from here, check
   [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md)
-  (asset provenance) and the per-dataset data statements (e.g.
-  [ReverseDictionary/DATA_STATEMENT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/DATA_STATEMENT.md)).
+  (asset provenance), the per-dataset data statements (e.g.
+  [ReverseDictionary/DATA_STATEMENT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/DATA_STATEMENT.md)),
+  and — for the reverse dictionary specifically — the **rights position of
+  record**, [ReverseDictionary/RIGHTS_LEDGER.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/RIGHTS_LEDGER.md)
+  (W1-E, 17-07-2026): the identifiable in-copyright contribution is 14,471 /
+  266,820 = 5.4% **as a LOWER BOUND**, and a "PD-only" subset **cannot be
+  certified** on available data — distribution stays gated.
 
 ## 1. Encoding rules — get these right or your joins are garbage
 
@@ -36,8 +41,10 @@ to operate the pipelines see the
   the file's existing BOM state if you write it back. The org "no BOM" rule does
   **not** hold here. All files are UTF-8.
 - **Filename counts are true counts, not `wc -l`.** In
-  `{DICT}-unique-{key}-{N}.txt`, `N` is the entry count; `wc -l` usually reports
-  `N − 1` because the last line has no trailing newline.
+  `{DICT}-unique-{key}-{N}.txt`, `N` is the entry count. Era matters for `wc -l`
+  (verified across every list 18-07-2026): all 30 `then-2014/` files end WITHOUT
+  a trailing newline (`wc -l` = `N − 1`); all 23 `now-2026/` files are
+  newline-terminated (`wc -l` = `N` exactly).
 - **Accented-IAST spines need normalizing before matching** — strip `√`,
   accents, and editorial hyphens and transcode IAST→SLP1 first. Use the org's
   canonical transcoder [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util),
@@ -59,11 +66,20 @@ Naming: `{DICT}-unique-{key1|key2}-{N}.txt`, one headword per line, sorted.
   [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014);
   the current regeneration is in
   [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026).
-  They have **drifted** — e.g. AP key1 36,030 → 88,869 (+146.7%); across the 18
-  comparable lists 1,055,081 → 1,206,384 (+14.3%). See
+  They have **drifted** — e.g. AP key1 36,030 → 88,867 (+146.6%; the shipped
+  file is `AP-unique-key1-88867.txt` — NOW_VS_THEN's table says 88,869 but its
+  own Use-cases section and the file agree on 88,867); across the 18 comparable
+  lists 1,055,081 → 1,206,381 (+14.3%, recomputed from the shipped files
+  18-07-2026; the table's 1,206,384 inherits the AP drift). See
   [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md).
-  Compare **by set**, not raw line-diff; the 2014 key2 is legacy numeric
-  transliteration (`am2s4a` = aṃśa), so key2 then-vs-now is a format migration.
+  Compare **by set**, not raw line-diff. On 6 of the 15 key2 lists (BHS, GRA,
+  MW×2, SCH, VEI) the 2014 key2 is legacy numeric transliteration (`am2s4a` =
+  aṃśa), so THEIR then-vs-now diff is a format migration — but the other 9
+  (AP, BUR, CAE, CCS, MD, PWG, PWK, SKD, VCP) were already SLP1-style in 2014,
+  and their diffs are genuine headword-change signal (per-row verdicts in
+  NOW_VS_THEN.md; nuance: its MW verdict overstates — MW's 2014 key2 digits are
+  homonym indexes, not legacy transliteration, per the HeadwordLists deep
+  manual's 18-07-2026 re-measurement).
 - **The union is the print target:**
   [union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)
   — 323,425 headwords across 15 dicts with per-dict provenance + gender.
@@ -141,10 +157,12 @@ imports the TMX once the release clears.
 
 - **The giant reference HTML/binary** —
   `DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
-  (~16 MB), `helpmorphids.html` at the root and
+  (~16 MB) and
   [HeadwordLists/sanhw1.xlsx](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/sanhw1.xlsx)
   (41 MB): stream with CLI tools /
-  a library; **never** open in an editor or the Read tool. Provenance is in
+  a library; **never** open in an editor or the Read tool. (Root
+  `helpmorphids.html`, ~0.75 MB, is fine to open — it was wrongly lumped in
+  here before 18-07-2026.) Provenance is in
   [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md).
 - **The gitignored translation store / TM / dashboards** — regenerable, local-only,
   and (for the translations) unpublished. Not in a clone.

@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 18-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -86,6 +86,17 @@ Blocks: any per-sense-normalized cross-dict metric that doesn't family-control.
 > **Source:** [FINDINGS §27](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ---
+
+### §6. The Ch. 14 correction-dataset DOI: false-and-unminted vs genuinely minted (BOOK_PLAN vs FAIR_RELEASE_1)
+🟠 ✍️ **Two committed docs give incompatible accounts of the same Zenodo DOI `10.5281/zenodo.15834721`.**
+Positions:
+| Source | Value | Evidence loc |
+|--------|-------|--------------|
+| [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) (+ pre-18-07 revisions of the publication deep manual) | a **false DOI** resolving to an unrelated preprint; must be re-minted | BOOK_PLAN §rights |
+| [data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md) (H817, 13-07-2026) | the same DOI is csl-observatory's **genuinely minted** OBS-T dataset DOI | FAIR_RELEASE_1 §csl-observatory |
+Status: 🔴 unresolved — needs one online Zenodo check; whichever doc is wrong gets corrected, then → tombstone.
+Blocks: the FAIR/DOI sprint's re-mint decision (re-minting a good DOI vs citing a bad one — both failure modes live until ruled).
+> **Source:** H1245 estate refresh, 18-07-2026, Fable 5 (`claude-fable-5`) — surfaced by the publication-manual fact-check.
 
 ## Conclusions
 

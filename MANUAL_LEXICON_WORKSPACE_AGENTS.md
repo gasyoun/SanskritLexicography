@@ -1,6 +1,6 @@
 # SanskritLexicography workspace manual — for agents
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 Human twin (Russian):
 [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md).
@@ -83,38 +83,26 @@ depth belongs there, this sheet stays thin.
 - Huge files (`DCS_statistical_evaluation.htm` ~75 MB, error lists) — stream,
   never Read whole.
 
-## 4. Current state snapshot (11-07-2026; verify against .ai_state before trusting)
+## 4. Current state — read it live, not from this sheet
 
-- Store `src/pwg_ru_translated.jsonl` (gitignored): **11,317 rows** vs
-  ~120,173 headword cards total. Engine audited **GO** (H188). Verb drain
-  (H151) unaffected and runnable; nominal medium lane **paused** on
-  H442/H462.
-- Human-gated: ACC×NCC P2 vote ([PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264)),
-  H178 bake-off sheets, H180 sheets, G5/G6/G7 publication gates.
+This sheet deliberately carries **no state snapshot** (the 11-07 one it used to
+carry aged wrong within a week — store rows, blocker chain and the P2 gate all
+moved). Read fresh, in this order:
+[RussianTranslation/.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
+(subsystem, takes priority) →
+[.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/.ai_state.md)
+(root) → [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+(human gates). One durable correction worth pinning: the ACC×NCC P2 gate is
+**MG's vote on the local 49,019-row sheet + `apply_p2_decisions.py`** —
+[PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264) itself
+merged 09-07-2026 and is not the gate.
 
-## 5. Multi-account bulk protocol (3→4 accounts, H335 §W1 + H336)
+## 5. Multi-account bulk protocol — moved
 
-Hardening is landed ([PR #254](https://github.com/gasyoun/SanskritLexicography/pull/254):
-promotion claim files, per-window namespacing, append hygiene). Protocol:
-
-1. **One worktree/clone per account** — state paths are repo-relative, so
-   per-clone runs are disk-isolated for free.
-2. **Shard by root via the worklist before starting** — 4 disjoint slices;
-   root-sharding guarantees disjoint rootmaps, inputs, TM card keys, requeue
-   sets. Fragment-TM cross-duplication is benign iff sidecars are rebuilt by
-   the single promoter.
-3. **Single-promoter rule** (see §3). Non-promoter accounts stop at "audited
-   clean, `wf_output.<window>.json` saved + RUN_LOG pointer".
-4. **Global ≤3 lanes** regardless of account count: 4 accounts × 1 root each,
-   max 3 in flight.
-5. **Cloud/web sessions (claude.ai/code) return outputs via git**, since
-   locks never span machines: commit `wf_output.<window>.json` +
-   `audit_window.report.json` onto the session branch under
-   `RussianTranslation/incoming/<account>/<window>/` (a tracked landing
-   directory; proposed convention of this manual — create on first use), PR
-   it, and the promoter promotes from `incoming/` then deletes the landed
-   files in the same PR. The store itself is gitignored and NEVER travels
-   through git — only `wf_output` payloads do.
+> Moved to [RUSSIANTRANSLATION_DEEP_MANUAL.md §13](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)
+> (18-07-2026, H1245) — kept here as a pointer so existing links resolve. The
+> one hard rule that stays on this sheet: **global ≤3 concurrent translation
+> lanes across ALL accounts and sessions** (see §3).
 
 ## 6. Where results go
 

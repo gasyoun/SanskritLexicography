@@ -14,6 +14,28 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **H1245 big-manuals estate refresh (18-07-2026, Fable 5 `claude-fable-5`)** — all 10 manual
+  files refreshed against the 221-commit drift window, one adversarial `fact-check-against-source`
+  agent per manual, **every confirmed finding fixed** (39 across the seven manuals: manifest-v2
+  promotion refusal + mechanized H255 guards + H818 model-pin closure + 53-entry parity in the
+  RussianTranslation deep manual; docs-site CI job, A30/A31/A58, 12/14 chapters, closed
+  corpus-methods `@DECIDE`, the flagged Zenodo-DOI conflict → [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  in the publication manual; per-list key2 verdicts + era-split `wc -l` rule + RIGHTS_LEDGER
+  gate in data-reuse; release-stance + CI + FINDINGS-§N-breach warning in maintainer; book/venue/
+  registries in researcher; MW-key2 measurement + same-day corpus_gate fix in headwordlists;
+  post-incident ReverseDictionary reality in the student manual). Root sheets **re-thinned**:
+  AGENTS §4 → live-pointer rule, §5 + HUMAN_RU §8 folded into the deep manual as §13–§14;
+  phantom A51 and stale "draft PR #264" framing corrected. **9 per-manual `.meta.md` metadocs
+  created**, each with a `LAST_VERIFIED` block (spot-run counts recorded); set-level
+  [README.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.meta.md)
+  narrowed; router gains the H1029 onboarding row.
+
+### Added
+- [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  §6: the `10.5281/zenodo.15834721` mint-status conflict (BOOK_PLAN vs FAIR_RELEASE_1) —
+  unresolved, needs one online Zenodo check.
+
 ## [1.22.0] — 18-07-2026
 
 ### Added
