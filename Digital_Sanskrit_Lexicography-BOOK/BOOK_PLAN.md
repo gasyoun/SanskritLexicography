@@ -596,27 +596,44 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   H1240 chapters only at plan altitude and carry boxed ⚠️ obligations to be revised against
   the chapters as merged.
 
+**Done 18-07-2026 (H1240 execution, Fable 5 `claude-fable-5`):**
+- ✅ **Ch. 3 + Ch. 11 written — all 14 chapters now in book form.** Both turned out to have
+  full article drafts (A40 4/5 per H675, A50 3/5 per H677), so each is a journal→book
+  conversion in the house pattern, counts carried unchanged, not blank-page drafting:
+  [chapters/ch03_headword_inventory.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md)
+  (from A40 — the 2014-vs-2026 census, the union's overlap structure, and the
+  corpus-grounding bridge, written under ch02 §6's bounded-witness rule with the
+  crosswalk grounding: Coward & Grimes headword-status criteria, Thorndike balancing via
+  Jackson, Szudarski counting standards, Inglese & Geupel *ādi*-boundary case, Kilgarriff
+  "never good enough", Hellwig 2010 measured inclusion-policy cost; the reverse DCS↔CDSL
+  crosswalk stated at its true scope — the 13-text pilot slice, wf0-floor semantics) and
+  [chapters/ch11_citation_frequency_graph.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch11_citation_frequency_graph.md)
+  (from A50 — the 828,505-citation frequency graph, written to ch02 §6.3's contract from
+  the first figure; the tradition map stated as **inferred, 0 of 119 rows human-reviewed**,
+  in running text and table alike; the Nonius closed-canon contrast per crosswalk; a
+  reconciliation note for the two committed `<ls>` extraction conventions — the register
+  census counts the bare tag, the graph builder also the attribute-bearing form).
+  The Part II/IV bridges' ⚠️ boxes are resolved against the real chapters in the same
+  pass, and two **semantics inversions** were caught and fixed: ch02 §6.2/§6.4 and
+  BRILL_PROPOSAL described VEI 69.8 % … SKD 14.1 % as *absence* rates — they are
+  **attestation** rates per A40 §4.4 (VEI 2,584-of-3,704 attested).
+
 **Still to do** (re-ordered 18-07-2026 per the §10 ruling 4; the old item 2 — "convert A16/A01
 as sample chapters" — was stale, both landed as
 [ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
 and [ch05_mw_block_economy.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch05_mw_block_economy.md)
-in H430 on 09-07-2026):
+in H430 on 09-07-2026; item 1 — the Ch. 3/Ch. 11 prose — closed 18-07-2026 via H1240, see
+the done-entry above):
 
-1. **Ch. 3 (← A40) + Ch. 11 (← A50) prose** — the last two of the 14 not yet in book form;
-   both are data-complete and need chapter prose written atop committed datasets, not a
-   journal→book conversion. → [H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md).
-   **Follow-on once merged:** revise the Part II/IV bridges' ⚠️ sections and the Introduction's
-   roadmap paragraph against the real chapters (see the H1241 done-entry above).
-2. **The author's voice pass over the glue** — rule on the framing calls in
+1. **The author's voice pass over the glue** — rule on the framing calls in
    [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
    (MG `@DO`); the unified **method appendix + index** stay gated on the chapter freeze.
-
-3. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
+2. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
    DCS sign-off) — deferred to its ~09-08-2026 window; gates *citability at submission*, not
    drafting. The DOI *minting* is a human/credentials `@DO`; the mechanical **CITATION.cff**
    add to kosha / SanskritLexicography / SanskritRussian is a Fable/Sonnet follow-on (those 3
    lack a `.cff`; atlas/observatory/orig/MWS already have one).
-4. **Rename [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)**
+3. **Rename [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)**
    to a venue-neutral name at its next substantive revision — the filename contradicts the
    standing de-Gruyter-primary ruling (§10 ruling 2).
 
