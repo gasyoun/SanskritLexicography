@@ -14,6 +14,14 @@ not an error.
 
 ## [Unreleased]
 
+## [1.21.0] — 18-07-2026
+
+### Changed
+- **H1110 Phase 6 — c4 bounded live-acceptance attempted, deferred at `HEALTH_NOGO_BY_ENVIRONMENT` (18-07-2026, Opus 4.8 `claude-opus-4-8[1m]`, [PR #534](https://github.com/gasyoun/SanskritLexicography/pull/534) · [#538](https://github.com/gasyoun/SanskritLexicography/pull/538) · [#545](https://github.com/gasyoun/SanskritLexicography/pull/545))**: the c4 profile was mechanically proven — a validated roster slot in `max_accounts.sqlite` bound to `config_dir_fingerprint e96ee464…`, `validate_profile` clean — and every offline gate is green (`window_selftest` **142/142**, headless/execution/bounded selftests PASS, `lang_parity_check` 0 drift). But the Anthropic host is degraded: a confirmation health probe read **98,625 ms (~98.6 s, 3.3× the 30 s ceiling)**, a success/pure-latency NO-GO unchanged from H963's 16-07 104,870 ms. The bounded paid ladder is therefore **deferred** — **1 confirmation c4 call, canary + batch unspent, no production translation** — with the terminal record + exact resume in [`pwg_ru/h1110/H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1110/H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md). (The H1110 Phase 1–5 code — headless CLI/manifest-v2 production route, R6 null-owner exec-gate, R9 kernel-backed active-call lock, R10 durable `AWAITING_REVIEW` checkpoint — shipped in v1.18.0–v1.20.0; this entry records the live-acceptance outcome.)
+
+### Added
+- **H1150 W1-B — offline false-flag rate for `SANLOSS_*`/`TNMASK_*` guards (measure, don't arm) (18-07-2026, [PR #544](https://github.com/gasyoun/SanskritLexicography/pull/544))**: measures the offline false-flag rate for the sense-count / TNMASK hard-reject guards with a per-guard arming recommendation. Both `SANLOSS_HARD_REJECT` and `TNMASK_HARD_REJECT` remain `= false` (byte-unchanged in `gen_opt_harness2.py`); arming stays a human `@DECIDE`.
+
 ## [1.20.0] — 18-07-2026
 
 ### Added
