@@ -2568,6 +2568,88 @@ def test_coordinator_state_dashboard_and_cap():
                 os.environ['PWG_COORDINATOR_DIR'] = old
 
 
+def test_coordinator_nominal_reservations():
+    """Nominal batches own every canonical key, including migrated legacy leases."""
+    import coordinator
+    old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    old_here = coordinator.HERE
+    old_store = coordinator.promote_final_cards.DEFAULT_STORE
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = os.path.join(tmp, 'coord')
+        coordinator.HERE = os.path.join(tmp, 'pilot')
+        os.makedirs(os.path.join(coordinator.HERE, 'input'))
+        store = os.path.join(tmp, 'store.jsonl')
+        open(store, 'w', encoding='utf-8').close()
+        coordinator.promote_final_cards.DEFAULT_STORE = store
+        manifest = os.path.join(tmp, 'manifest.json')
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v1',
+                       'meta': {'selected_keys': ['c_safe'],
+                                'nominal_keymap': {'c_safe': 'c'}}}, f)
+        try:
+            state = coordinator.default_state()
+            state['leases'] = [
+                {'id': 'details-legacy', 'kind': 'nominal', 'state': 'prepared',
+                 'details': {'keys': ['a', 'b']}},
+                {'id': 'manifest-legacy', 'kind': 'nominal', 'state': 'prepared',
+                 'execution_manifest': manifest},
+            ]
+            coordinator.save_state(state)
+            migrated = coordinator.load_state()
+            if migrated['leases'][0].get('reserved_keys') != ['a', 'b']:
+                fail('legacy details.keys reservation was not migrated')
+            if migrated['leases'][1].get('reserved_keys') != ['c']:
+                fail('legacy manifest nominal_keymap reservation was not migrated')
+            if coordinator.active_reserved_nominal_keys(migrated) != {'a', 'b', 'c'}:
+                fail('active nominal reservations did not include every batch key')
+
+            cards = os.path.join(tmp, 'cards.jsonl')
+            with open(cards, 'w', encoding='utf-8') as f:
+                for key in ('b', 'd'):
+                    f.write(json.dumps({'key1': key}) + '\n')
+                    stem = coordinator.safe_name(key)
+                    open(os.path.join(coordinator.HERE, 'input', stem + '.raw.txt'),
+                         'w', encoding='utf-8').close()
+                    open(os.path.join(coordinator.HERE, 'input', stem + '.portrait.json'),
+                         'w', encoding='utf-8').close()
+            if coordinator.nominal_candidates(migrated, batch_size=5, cards_path=cards) != ['d']:
+                fail('nominal candidate selection reused a non-first reserved batch key')
+
+            try:
+                coordinator.register_prepared_lease(
+                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, 'preflight.json')
+            except SystemExit as exc:
+                if 'already active' not in str(exc):
+                    raise
+            else:
+                fail('overlapping prepared nominal lease was accepted')
+
+            # An unresolved active legacy lease blocks every new nominal claim; terminal history
+            # is harmless and must not freeze the queue forever.
+            state = coordinator.load_state()
+            state['leases'].append({'id': 'unknown', 'kind': 'nominal', 'state': 'prepared'})
+            coordinator.save_state(state)
+            try:
+                coordinator.active_reserved_nominal_keys(coordinator.load_state())
+            except SystemExit as exc:
+                if 'unresolved reservations' not in str(exc):
+                    raise
+            else:
+                fail('unresolved active legacy lease did not fail closed')
+            state = coordinator.load_state()
+            state['leases'][-1]['state'] = 'blocked'
+            coordinator.save_state(state)
+            if coordinator.active_reserved_nominal_keys(coordinator.load_state()) != {'a', 'b', 'c'}:
+                fail('terminal unresolved legacy lease incorrectly blocked reservations')
+        finally:
+            coordinator.HERE = old_here
+            coordinator.promote_final_cards.DEFAULT_STORE = old_store
+            if old_coord is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old_coord
+
+
 def test_coordinator_fail_closed_audit_states():
     import coordinator
     card = {'key': 'k', 'card': {'key1': 'k'}}
@@ -5678,6 +5760,7 @@ def main():
         test_perf_preflight_partitions_mixed_monster_window,
         test_verb_worklist_excludes_missing_rootmaps,
         test_coordinator_state_dashboard_and_cap,
+        test_coordinator_nominal_reservations,
         test_coordinator_fail_closed_audit_states,
         test_coordinator_promotion_revalidates_artifacts,
         test_coordinator_expired_leases_release_cap,
