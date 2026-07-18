@@ -26,7 +26,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 from build_src import iast_to_slp1, bad_initial
 
-DEFAULT_SM = r"C:\Users\user\Documents\GitHub\SamudraManthanam"
+DEFAULT_SM = os.path.normpath(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'SamudraManthanam'))
 SM = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SM
 DATA = os.path.join(SM, "Index", "lib", "x86_64-win64", "Data")
 OUT = os.path.dirname(os.path.abspath(__file__))

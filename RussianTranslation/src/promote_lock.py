@@ -24,6 +24,9 @@ import os
 import socket
 import sys
 
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
 DEFAULT_TTL_SECONDS = 30 * 60          # a promote run is seconds; 30 min covers a hang
 
 

@@ -17,7 +17,8 @@ import json, os, sys, re, unicodedata
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-DEFAULT_SM = r"C:\Users\user\Documents\GitHub\SamudraManthanam"
+DEFAULT_SM = os.path.normpath(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'SamudraManthanam'))
 SM = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SM
 JSONL = os.path.join(SM, "web", "corpus_builder", "jsonl")
 OUT = os.path.dirname(os.path.abspath(__file__))

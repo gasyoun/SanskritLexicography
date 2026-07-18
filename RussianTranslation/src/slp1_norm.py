@@ -23,6 +23,10 @@ build_src.iast_to_slp1 / dev_to_slp1 first.
 """
 import re
 import unicodedata
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 
 _ACCENT = re.compile(r"[̀-ͯ॑-॔]")
 _PUNCT = re.compile(r"[/\\| ]")
