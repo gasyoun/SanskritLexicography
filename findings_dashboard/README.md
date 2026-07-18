@@ -30,6 +30,10 @@ is a private repo (network-topology findings) and is deliberately NOT rendered h
 - **This machine** (Task Scheduler, 3rd of month 09:30, task name `SL findings dashboard
   refresh`): the platform probes, which need residential egress; runs the full
   `monthly_refresh.py` pipeline, so it also doubles as a fallback if the Action fails.
+  Definition repaired 18-07-2026 (H737): `StartWhenAvailable` (a missed 09:30 fires at
+  next logon), explicit working directory, log at `findings_dashboard/refresh.log`
+  (gitignored). Still `InteractiveToken` — running while logged off awaits MG's stored
+  credentials (GTD @DO).
 
 A failed collector records `null` and the build continues — a chart simply skips that month.
 

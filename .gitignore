@@ -111,3 +111,6 @@ HeadwordLists/heritage_mirror/
 # H813 Sanskrit-in-Numbers module8 fetch cache (zaliznyak-grammar-index TSV,
 # already published as a kosha release asset — fetched on demand, never committed)
 papers/sanskrit_in_numbers/.cache/
+
+# H737: scheduled-task refresh log (written into the main checkout by Task Scheduler)
+findings_dashboard/refresh.log
