@@ -343,6 +343,22 @@ deterministic 10 % sample of clean translated keys. It is NOT the mechanical req
 
 ## Concurrency — run a throttled driver, not N parallel chats
 
+The coordinator enforces this distinction, rather than relying on operator arithmetic:
+
+- `prepared` and `requeue_prepared` leases are durable reserved work and consume zero runtime slots.
+- `coordinator.py begin-run --lease-id ...` atomically reserves runtime before dispatch. Standard
+  mode is globally capped at three; `record-output` is refused unless the lease is `running`.
+- `max_account_orchestrator.py staged-run` may use four only after every admitted profile passes
+  the exact-model probe and the orchestrator writes a fresh receipt scoped to that run and lease
+  set. Missing/failed/stale/mismatched evidence fails closed; no mode admits a fifth lease.
+- Failed/retryable workers use `release-run --confirm-dead --reason ...`. A stale preparation or
+  audit token uses `recover-operation --confirm-dead`; late subprocess completion is rejected by
+  operation ID instead of overwriting the recovered state.
+
+Preparation and audit subprocesses do not hold the global state lock. Their persisted
+`preparing`/`auditing` operation tokens keep `status` and unrelated claims responsive, with a
+10-minute preparation timeout and a 30-minute audit timeout.
+
 **Default to one Workflow window at a time; treat 3-wide as an upper bound, not a target.**
 Each generated harness internally fans out to ~8–14 agents, so N concurrent root-harnesses
 peak at N×~12 Sonnet agents on a single Max session. Slice D launched 18 at once →
