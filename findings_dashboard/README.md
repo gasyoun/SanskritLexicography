@@ -1,6 +1,6 @@
 # FINDINGS dashboard
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 18-07-2026_
 
 Recurring visualization of the
 [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
@@ -32,6 +32,13 @@ is a private repo (network-topology findings) and is deliberately NOT rendered h
   `monthly_refresh.py` pipeline, so it also doubles as a fallback if the Action fails.
 
 A failed collector records `null` and the build continues — a chart simply skips that month.
+
+**Backfill note (18-07-2026, H737):** every snapshot before 2026-07-18 recorded
+`dcs_cdsl_linkage_pct: null` because the §12 collector regex never matched its source
+(fixed by H733). The 2026-07-11 snapshot is kept as `source: "backfill"` with the value
+recomputed from the source's git history (81.4%, csl-apidev `ec56968`, unchanged
+2026-07-03→11); the superseded 2026-07-10 bot snapshot (`c91d62a`) had identical inputs.
+No earlier snapshots exist, so nothing else was recoverable.
 
 ## Staleness
 
