@@ -1,6 +1,6 @@
 # HeadwordLists deep manual — SanskritLexicography
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 18-07-2026_
 
 Subsystem depth for
 [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)

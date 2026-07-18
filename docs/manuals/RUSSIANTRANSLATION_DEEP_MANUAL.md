@@ -1,6 +1,6 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 18-07-2026_
 
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)

@@ -1,6 +1,6 @@
 # Researcher Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 For the **lexicographer, digital-humanities researcher, or historian of
 dictionaries** who wants to understand the intellectual programme here, cite its

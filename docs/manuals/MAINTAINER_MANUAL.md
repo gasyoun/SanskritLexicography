@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
