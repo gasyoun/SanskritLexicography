@@ -1,5 +1,7 @@
 # "a-" article comparison across CDSL dictionaries
 
+_Created: 09-07-2026 · Last updated: 18-07-2026_
+
 Single-headword comparison of one **non-samāsa** and one **a-samāsa (nañ-privative)** word, each present in the unfinished Deccan **PD** dictionary (the binding constraint) and near-universally across the CDSL corpus.
 
 Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article sizes from `csl-orig/v02`.
@@ -26,6 +28,7 @@ Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article 
 | **Per-sense corpus RU** | `<w>.persense-ru.md` | The deepened view: each attested Russian rendering hung under the **specific PD sense** it supports (Russian-lemma ↔ Russian-gloss match + synonym/phrase/name rules, then a Max-LLM pass over the residual, marked **°**). Coverage 97–100% of aligned occurrences. |
 | **Full verbatim** | `<w>.verbatim.md` | Faithful raw `csl-orig` entries, every dictionary, full Cologne markup. The full PD is here. |
 | **Full IAST** | `<w>.iast.md` | Same entries, SLP1→IAST transcoded, tags stripped. |
+| **Gloss review (voting sheet)** | `review/sanskritlexicography-article-comparison_<w>_review.html` (generated, gitignored) | Interactive HTML voting sheet over the hand-authored RU sense-glosses of `<w>.pd-min.ru.md` — the live voting surface for the M.G. accept/reject pass (the markdown ✓/✗ sheets were retired 18-07-2026, H739). Data: [gloss_review_items.json](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/gloss_review_items.json); generator: [_build_gloss_review_sheets.py](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/_build_gloss_review_sheets.py). See "Gloss review" below for the consumer path. |
 
 ### agni — fire (non-samāsa)
 
@@ -43,6 +46,32 @@ Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article 
 
 [table](ananta.table.md) · [pd-min](ananta.pd-min.md) · [**pd-min + RU**](ananta.pd-min.ru.md) · [corpus-ru](ananta.corpus-ru.md) · [**per-sense**](ananta.persense-ru.md) · [verbatim](ananta.verbatim.md) · [iast](ananta.iast.md)
 
+## Gloss review — voting workflow
+
+The hand-authored RU sense-glosses (layer 1 of the Russian, see Method below) carry the
+skeletons' standing caveat _«перевод глосс — черновой, требует сверки»_. The review that
+closes that loop lives in
+[gloss_review_items.json](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/gloss_review_items.json):
+32 candidate edits across the four finalists (agni 11 · akṣara 6 · ananta 9 · anya 6),
+each with the PD English, current RU, proposed RU, severity (H/M/L) and rationale, plus
+per-word FYI lists of source/extraction defects needing no RU action. agni/akṣara rows
+were ported from the retired markdown ✓/✗ sheets (Opus 4.8 `claude-opus-4-8` passes of
+25/26-06-2026); ananta/anya rows are a Fable 5 (`claude-fable-5`) pass of 18-07-2026
+(H739).
+
+Workflow: `python article-comparison/_build_gloss_review_sheets.py` regenerates the four
+interactive voting sheets into the gitignored `review/` folder
+(`review/sanskritlexicography-article-comparison_<w>_review.html`, shared
+[csl-pyutil](https://github.com/sanskrit-lexicon/csl-pyutil) emitter). Votes export as
+`sanskritlexicography-article-comparison_<w>_decisions.json` into `review/`; the Uprava
+review-decisions watcher picks the file up, and `/decisions-apply` applies accepted rows
+to `<w>.pd-min.ru.md` column 3 (then re-run
+[_build_persense_ru.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_build_persense_ru.py)
+/ the skeleton builder
+[_build_skeletons_ru.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_build_skeletons_ru.py)
+where the gloss feeds a generated view). Sheets are registered in
+[Uprava/REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md).
+
 ## Method
 
 - **PD** = Deccan College *Encyclopaedic Dictionary of Sanskrit on Historical Principles* (unfinished; "a" coverage stops ~`apaca-`). All candidates were filtered to fall inside PD's wordlist — that is the real constraint, since every other CDSL dictionary has a complete "a".
@@ -52,3 +81,5 @@ Frequency ranking from **DCS 2026** (`dcs_full.sqlite`, 5.69 M tokens); article 
 - The attested-rendering distributions are themselves a finding: `agni` splits Агни (theonym) vs огонь (common noun); `akṣara` splits слог (syllable) vs Непреходящее (Brahman); `ananta` splits бесконечный (adj.) vs Ананта (Śeṣa).
 - **Per-sense attribution** (`*.persense-ru.md`) hangs each attested rendering under the PD sense it supports. Because the sense-skeleton already carries a Russian gloss, the match is **Russian-lemma ↔ Russian-gloss** (lemmatized with `pymorphy3`, reusing `corpus_harvest.lemma_key`), plus three rules: synonym normalization (нетленный/неразрушимый → непреходящий), phrase matching (multi-word renderings), and name-routing (theonyms → the deity sense). The deterministic pass maps **97–99%** of aligned occurrences.
 - **Max-LLM residual pass (2026-06-25).** The harder synonym/paraphrase/pre-1918 tail the deterministic matcher missed was adjudicated by an Opus-4.8 pass against the full bilingual sense skeleton and routed to a specific PD sense (or left as honest "other"); LLM-assigned renderings carry a **°** marker. Coverage after the pass: **97–100%** (`agni` 100 %, `akṣara` 99 %, `anya`/`ananta` 97 %). The implementation is a reproducible `LLM_ASSIGN` override map in `_build_persense_ru.py` (surface form → sense ordinal), mirroring the `SYN`/`ROUTE` mechanism. What remains in the residual is genuine function-word / context / off-headword-name leakage with no PD sense to bind.
+
+_Dr. Mārcis Gasūns_

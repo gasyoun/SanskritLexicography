@@ -14,6 +14,28 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- **article-comparison gloss-review goes interactive (H739).** The four finalist words'
+  hand-authored RU sense-gloss reviews are now one committed dataset,
+  [article-comparison/gloss_review_items.json](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/gloss_review_items.json)
+  (32 votable edits: agni 11 · akṣara 6 · ananta 9 · anya 6, each with severity + rationale
+  + per-word FYI defect lists), rendered by
+  [article-comparison/_build_gloss_review_sheets.py](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/_build_gloss_review_sheets.py)
+  into four interactive HTML voting sheets (shared csl-pyutil emitter, gitignored
+  `review/`). The missing ananta/anya editorial passes were authored in the same pass —
+  Fable 5 (`claude-fable-5`); headline findings: ananta m. 17B «окончательно добавленный
+  аугмент» mistranslates the positional *finally added* (PD's own note: Pāṇini's
+  kit-āgama, P. 1.1.46), and anya 5Biii «противосложение» is a music-theory false friend
+  for *countersubject*.
+
+### Removed
+
+- **Markdown ✓/✗ gloss-review sheets retired (H739):** `article-comparison/agni.gloss-review.md`
+  and `aksara.gloss-review.md` deleted — checkbox sheets are banned for gating artifacts;
+  their proposals live on (rationales translated to Russian) in `gloss_review_items.json`
+  and the generated HTML sheets.
+
 ## [1.18.1] — 18-07-2026
 
 ### Fixed
