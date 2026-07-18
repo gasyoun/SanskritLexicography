@@ -1,6 +1,6 @@
 # Chapter 2 — The Measurement Framework: Measuring the Dictionary Family
 
-_Created: 09-07-2026 · Last updated: 17-07-2026_
+_Created: 09-07-2026 · Last updated: 18-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Measuring the
 > Dictionary Family: A Traceable Measurement Framework for Computational Lexicography*
@@ -416,8 +416,8 @@ witness's own boundary, since DCS includes Jaina literary texts and, by construc
 inscriptions. The register label predicts the corpus hole; the absence rate maps the
 edge of the witness's competence; and that map is itself a publishable finding — an
 agenda for digitization, not a verdict on the lexicographers. Chapter 3 does the same
-corpus-wide: its per-dictionary absence rates (from 69.8 % for the Vedic index VEI down
-to 14.1 % for the Śabdakalpadruma) are read throughout as coverage geometry — which
+corpus-wide: its per-dictionary attestation rates (from 69.8 % for the Vedic index VEI
+down to 14.1 % for the Śabdakalpadruma) are read throughout as coverage geometry — which
 strata of the dictionary record the corpus can currently see — under exactly this rule.
 
 ### 6.3 The statistical-practice contract
@@ -460,7 +460,7 @@ drafted after this contract was fixed, is written to it from the first figure.
 Four chapters lean on this section by name and cite it rather than restating it:
 
 - **Chapter 3 — the headword inventory.** The corpus-grounding bridge: per-dictionary
-  DCS-absence rates read as coverage geometry under §6.2, never as phantom rates.
+  DCS-attestation rates read as coverage geometry under §6.2, never as phantom rates.
 - **Chapter 5 — the Monier-Williams entry benchmark.** Benchmark statistics (κ, per-type
   precision and recall, gold-sample construction) reported under §6.3's
   interval-and-disclosure clauses.
@@ -715,6 +715,6 @@ repository: the 270-text snapshot import per the
 (generator
 [`gen_dcs_hapax.py`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Leksicheskie-issledovaniya/Gapaksy-DCS-2026/gen_dcs_hapax.py),
 deterministic, no network). Chapter 13's 484-of-709 épigraphique figure and Chapter 3's
-per-dictionary absence range are owned by those chapters and quoted here under §6.2.]*
+per-dictionary attestation range are owned by those chapters and quoted here under §6.2.]*
 
 _Dr. Mārcis Gasūns_

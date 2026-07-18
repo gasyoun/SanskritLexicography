@@ -6,12 +6,11 @@ _Created: 18-07-2026 · Last updated: 18-07-2026_
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
 > [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
-> Sets up Chapters 3–4.
->
-> ⚠️ **Editorial status.** Chapter 3 is being drafted in a parallel work stream
-> ([H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md));
-> this bridge describes it only at the altitude of the plan of record and **must be
-> revised against the chapter as merged** before the manuscript freezes.
+> Sets up Chapters 3–4. Chapter 3
+> ([ch03_headword_inventory.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md))
+> landed 18-07-2026 under
+> [H1240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1240-Fable_SanskritLexicography_m01-ch03-a40-ch11-a50-data-chapter-prose_18.07.26.md);
+> this bridge has been checked against the chapter as merged and describes it accurately.
 
 Before a dictionary says anything about any particular word, it has already made its
 largest single assertion: the list itself. Which words exist for this dictionary, in what
