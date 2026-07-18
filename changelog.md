@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.23.0] — 18-07-2026
+
 ### Changed
 - **H1245 big-manuals estate refresh (18-07-2026, Fable 5 `claude-fable-5`)** — all 10 manual
   files refreshed against the 221-commit drift window, one adversarial `fact-check-against-source`
