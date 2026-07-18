@@ -1,10 +1,10 @@
 {
  "snapshots": [
   {
-   "date": "2026-07-10",
-   "source": "build",
+   "date": "2026-07-11",
+   "source": "backfill",
    "metrics": {
-    "dcs_cdsl_linkage_pct": null,
+    "dcs_cdsl_linkage_pct": 81.4,
     "glossary_vidyut_coverage_pct": 86.6,
     "pwg_citation_coverage_pct": 83.9,
     "queue_verdicts": {
@@ -31,10 +31,29 @@
    "registry": {
     "total": 75,
     "by_importance": {
-     "2": 43,
-     "1": 11,
-     "None": 7,
+     "2": 39,
+     "1": 10,
+     "None": 12,
      "3": 14
+    },
+    "stale": 0
+   }
+  },
+  {
+   "date": "2026-07-18",
+   "source": "build",
+   "metrics": {
+    "dcs_cdsl_linkage_pct": 81.4,
+    "glossary_vidyut_coverage_pct": null,
+    "pwg_citation_coverage_pct": 83.9
+   },
+   "registry": {
+    "total": 95,
+    "by_importance": {
+     "2": 42,
+     "1": 10,
+     "None": 27,
+     "3": 16
     },
     "stale": 0
    }
