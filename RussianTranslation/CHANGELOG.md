@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1110 Phase 6 terminal record + Phase 3/7 residue closed
+
+- **Phase 6 bounded c4 ladder terminated at `HEALTH_NOGO_BY_ENVIRONMENT`** ([PR #534](https://github.com/gasyoun/SanskritLexicography/pull/534),
+  confirmation reading [PR #538](https://github.com/gasyoun/SanskritLexicography/pull/538)). The c4 profile is
+  mechanically proven bound (`config_dir_fingerprint e96ee464…`, validated roster slot) and every offline
+  gate is green, but the measured c4 health latency is **98,625 ms against the strict 30,000 ms ceiling** —
+  a `success`/pure-latency reading, not auth or connection, and essentially unchanged from the 16-07
+  reading of 104,870 ms. **1 paid confirmation call; canary and batch unspent; zero promotions, zero
+  canonical-store writes, zero TM rebuilds.** Resume is one health probe per demonstrated-recovery
+  window, never a reroll. Terminal record:
+  [H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1110/H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md).
+- **The production execution route is now the headless CLI (manifest v2)**; the Workflow-from-session
+  run route is retired and is forensics metadata only. Recorded as a standing section in
+  [PIPELINE_HISTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md)
+  so an older runbook's "run it as one `agent()` call from THIS session" no longer reads as current.
+- **FINDINGS §93 — declared, validated, and never enforced.** The audit's headline finding (the headless
+  executor read a manifest `budgets{}` block it did not obey, with every offline gate green) generalised
+  into the execution-route parity discipline: grep for the *enforcement* site, not the config key.
+
 ### Added — enforceable coordinator runtime state machine
 
 - Prepared translation leases are now reservations, not runtime. `begin-run` atomically moves a

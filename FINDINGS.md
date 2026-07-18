@@ -2576,3 +2576,34 @@ misses those sections; verify by passage content.
 > [v0.77.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.77.0)) ·
 > [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md) ·
 > 18-07-2026, Fable 5 (claude-fable-5).
+
+### §93. Declared, validated, and never enforced — the PWG headless executor read a manifest `budgets{}` block it did not obey, and every offline gate stayed green
+
+A spend bound that is *declared* in a manifest and *validated* at load can still be
+**enforced nowhere on the live call path** — and no amount of green selftests will say so,
+because the selftests exercise the declaration and the validation, not the spawn site. The
+H1110 post-H1080 audit's headline finding was exactly this: the PWG→RU headless executor
+parsed and validated the manifest's `budgets{}` block, then spawned model calls without ever
+checking a per-lane or total agent budget against it. The money-risk guardrail existed as
+text in a file that the code read and ignored.
+
+What surfaced it was not a test but a **three-column execution-route parity table** — for
+every manifest field, *where it is declared* · *where it is validated* · *where it is
+actually enforced* — across 17 fields of the real call graph. Two columns populated and a
+blank third is the whole defect class, and it is invisible to any check that never asks the
+third question. The same sweep found the CLI timeout able to exceed the manifest's own
+`timeout_ceil_ms=180000`, wrapper usage/cost telemetry discarded (so cost was silently
+*unevaluable* rather than over-budget), and manifest validation comparing key **sets**, which
+admits duplicate selected keys. All were declared-and-unenforced, none had a failing test.
+
+Generalisation for any pipeline with a spend/timeout/quota bound: **grep for the enforcement
+site, not the config key.** A bound whose only appearances are the schema and the loader is
+decorative. Reconciling 59 prior findings against changed code needs the same discipline —
+of the 59, only 8 were `fixed` and 38 still `open` once each was re-executed rather than
+re-read, and 2 were outright `refuted`; a finding's age is not evidence of its status.
+
+> **Source:** [H1110_POST_H1080_AUDIT_MEMO_2026-07-17.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1110/H1110_POST_H1080_AUDIT_MEMO_2026-07-17.md)
+> § 4 (parity table, 17 fields) + § 5 (C-01…C-59 ledger) · audit [PR #524](https://github.com/gasyoun/SanskritLexicography/pull/524) ·
+> enforcement landed in [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530) ·
+> [H1110](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1110-Opus_SanskritLexicography_pwg-ru-post-h1080-audit-fix-skills-c4-restart_17.07.26.md) ·
+> 18-07-2026, Opus 4.8 (`claude-opus-4-8`).
