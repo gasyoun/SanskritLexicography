@@ -1,0 +1,121 @@
+{
+ "schema": "pwg_ru.softguard_falseflag_rate.v1",
+ "measured": "2026-07-18",
+ "manifest_verification": {
+  "verified_ok": 3,
+  "missing_gitignored_not_consumed": [
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/candidate_scan.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/manifest.canary.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/manifest.real.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/pilot_measurement.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/run_pilot_wf.canary.js",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/run_pilot_wf.real.js",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/runtime_snapshot_manifest.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/wf_output.h963_c4_canary.json",
+   "RussianTranslation/src/pilot/output/h963_c4_pilot/wf_output.h963_c4_real.json",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/build_campaign_evidence.py",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/historical_timeouts.py",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/killbudget_saturation.py",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/killgate_envelope.py",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/nominal_deliverability.py",
+   "RussianTranslation/src/pilot/output/h963_c4_campaign/reconcile_report.py"
+  ],
+  "mismatch": []
+ },
+ "store": {
+  "path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
+  "rows": 11603,
+  "cards": 2489
+ },
+ "sanloss": {
+  "denominator": 865,
+  "denominator_note": "cards from the promoted store with a deterministic source_senses > 0 (accept()'s own exp>0 gate) whose reconstructed raw (concatenated stored-sense `de` text) re-passes the real <ls>/{# fidelity gate under this reconstruction (16 of 881 eligible cards rejected there and excluded -- see the memo's reconstruction-boundary caveat).",
+  "flagged": 8,
+  "true_drop": 0,
+  "false_flag": 8,
+  "flag_incidence_rate": 0.0092,
+  "false_flag_rate_of_flags": 1.0,
+  "examples": [
+   {
+    "key": "car~~h1_20_vi",
+    "verdict": "false_flag",
+    "rationale": "vi_main bundles source ordinals 4) and 6) into one stored sense (both content-complete in de/ru); count_source_senses correctly finds 5 distinct line-opening ordinals {1,3,4,6,11} across the 4 stored senses, but two of them (4,6) were bundled by the pipeline into vi_main rather than split. Nothing is missing from de/ru.",
+    "expected": 5,
+    "emitted": 4,
+    "dropped": 1
+   },
+   {
+    "key": "d_a~~h10_00_pwg00",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (tag \"3\") bundles a Nachtrag correction under {#ava#} sense 1) and another under {#vi#} sense 3) -- two different compound-verb sub-lemmas' corrections in one stored unit. Both point 1) and point 3) content are verbatim present in de/ru.",
+    "expected": 2,
+    "emitted": 1,
+    "dropped": 1
+   },
+   {
+    "key": "d_a~~h13_00_pwg00",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (tag \"1\") bundles corrections across {#dA#} (points 1, 2), {#aByA#} (point 1), {#upA#} and {#vyA#} (unnumbered prose) -- one stored unit spanning four sub-lemmas. All numbered content is verbatim present in de/ru.",
+    "expected": 2,
+    "emitted": 1,
+    "dropped": 1
+   },
+   {
+    "key": "iz~~h14_00_pwg00",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (tag \"I.3\") bundles a correction under the base entry (point 2) and another under {#prati#} (point 1). Both are verbatim present in de/ru; the guard counts 2 distinct ordinals from what the pipeline stored as one unit.",
+    "expected": 2,
+    "emitted": 1,
+    "dropped": 1
+   },
+   {
+    "key": "n_i~~h5_10_pari",
+    "verdict": "false_flag",
+    "rationale": "sense_tag \"3-corr-8\" is itself a single stored unit bundling ordinals 3) and 8) (\"3) read as 8) ...\", a corrigenda directive) -- both present verbatim. Combined with tags \"2\" and \"4-corr\", 4 distinct ordinals are found across 3 stored senses.",
+    "expected": 4,
+    "emitted": 3,
+    "dropped": 1
+   },
+   {
+    "key": "n_i~~h5_11_pra",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (\"root-subcard-pra\") bundles points 2) and 6) of the {#pra#} sub-lemma's corrigenda into one stored unit. Both present verbatim in de/ru.",
+    "expected": 2,
+    "emitted": 1,
+    "dropped": 1
+   },
+   {
+    "key": "vas~~h13_00_pwg00",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (tag \"5\") bundles corrections across {#vas#} itself (point 1), {#aDi#} (point 2), {#ni#} (point 1, a numeric duplicate), and {#vi#} (point 2, duplicate) -- one stored unit, four sub-lemma corrections. All present verbatim.",
+    "expected": 2,
+    "emitted": 1,
+    "dropped": 1
+   },
+   {
+    "key": "y_a~~h5_00_pwg00",
+    "verdict": "false_flag",
+    "rationale": "The single stored sense (tag \"1\") bundles FOUR sub-lemmas' corrections -- {#yA#} itself (point 10), {#samA#} (point 3), {#nis#} (point 1), {#vi#} (point 2) -- into one stored unit. This is the most extreme bundling case found; all four points' content is verbatim present and translated in de/ru. Nothing is missing.",
+    "expected": 4,
+    "emitted": 1,
+    "dropped": 3
+   }
+  ],
+  "mechanism": "Nachtrag/corrigenda cards where the pipeline stores textual-correction points from MULTIPLE distinct sub-lemma blocks (each opened by its own \"-- {#XX#}\" marker) as ONE translated sense. count_source_senses correctly finds each sub-block's own line-opening ordinal (by design -- H960 hardening only excludes MID-PROSE cross-references, not legitimately line-opening ordinals in a different sub-block), so the distinct-ordinal count exceeds the stored sense count even though no content is missing.",
+  "recommendation": "FIX_COUNTER_FIRST",
+  "fix_suggestion": "Partition count_source_senses' ordinal search by \"-- {#headword#}\" sub-lemma boundary (the same marker restoreCard/promote already key subcards on) before stamping source_senses for a card, or -- cheaper -- have accept() additionally check whether every \"extra\" ordinal's content is verbatim present somewhere in the emitted card before counting it as a shortfall. Either closes the observed class without weakening H960's existing cross-reference hardening."
+ },
+ "tnmask": {
+  "denominator": 1,
+  "denominator_note": "The ONLY frozen (source, pre-restore-emitted) evidence available for TNMASK is H994's dq_canary_puregloss synthetic control inside h963's campaign (1 non-null translated card; the other real h963 cards are null kill-timeouts, unmeasurable). The canary carries ZERO {Tn} spans by construction (\"pure-gloss ... zero <ls>, zero {#..#}\") so it cannot exercise a TNMASK multiset mismatch either way -- it proves nothing about the false-flag rate. TNMASK's check runs on the PRE-restore candidate vs the masked source skeleton; the promoted store holds only POST-restore text, so no real (non-synthetic) historical card retains that pairing. A repo-wide search found zero non-zero tnmask_mismatches readings anywhere and zero residual literal {Tn} tokens across all 11603 promoted rows (independently corroborating the H1110 C-42 finding).",
+  "flagged": 0,
+  "true_drop": 0,
+  "false_flag": 0,
+  "examples": [],
+  "mechanism": "not measurable from frozen evidence -- see denominator_note",
+  "recommendation": "DO_NOT_ARM",
+  "reason": "Insufficient evidence, not a favorable-looking guard: zero usable frozen (pre-restore-candidate, masked-skeleton) pairs exist to compute a false-flag rate from. Arming a guard with no measured false-flag rate is not defensible regardless of how the guard is expected to behave."
+ },
+ "limit": "Frozen evidence is a sample of ONE route (pwg PWG->RU headword translation) under ONE payload regime (the h963/current gen_opt_harness2.py masked-inline batching prompt). This rate BOUNDS the false-flag class observable in that frozen sample; it does NOT prove the live rate under other routes, payload shapes, or model behavior not represented in the 11603-row promoted store. A human decides whether that bound is enough to arm on -- this measurement recommends but never arms (SANLOSS_HARD_REJECT and TNMASK_HARD_REJECT are both left `= false`, unchanged, by this script).",
+ "arming_note": "This report MEASURES; it does not ARM. SANLOSS_HARD_REJECT and TNMASK_HARD_REJECT in gen_opt_harness2.py are both untouched by this script and remain `false`. Arming either is a human @DECIDE, owner-gated at the const, and pinned as a literal-needle assertion by window_selftest.py."
+}
