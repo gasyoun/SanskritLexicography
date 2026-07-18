@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 12-07-2026_
+_Created: 04-07-2026 · Last updated: 18-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,27 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1209 — controller-worker rig validation and the gate-alignment rule (18-07-2026)
+
+The first controller-worker Workflow rig was tested on a three-card
+promote-DRY slice. Its v1 self-report said 3/3, but the production-equivalent
+canonical audit accepted only 1/3: a side-harness sense gate required equality
+against a naive `〉`-glyph count, which includes PW cross-reference ordinals.
+Retry feedback therefore taught workers to move masked source spans into
+`card.notes`; notes are not an unmasked final-card field, so the rig manufactured
+silent fidelity loss while declaring success.
+
+The transferable rule is stricter than "add more gates": **a side-harness gate
+must have the same direction and source of truth as the canonical accept path.**
+V2 replaced equality with the production shortfall-only `source_senses` rule,
+added HARD `{Tn}`-multiset fidelity over both German and Russian fields, and
+explicitly forbade notes-parking in retry feedback. The unchanged slice reran as
+Workflow `wf_e858f3cf-6af`; canonical audit accepted 3/3, with exact source-token
+coverage and no hard or soft flags. The run was promote-DRY only; medium50 RU and
+mini-EN remain open under H1209. Full evidence and metrics are in
+[`src/pilot/RUN_LOG.md`](src/pilot/RUN_LOG.md); incident
+`H1209_SLICE_V1_2026-07-18` is in [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md).
 
 ### H818 — four-account outer dispatch audit (12-07-2026)
 
