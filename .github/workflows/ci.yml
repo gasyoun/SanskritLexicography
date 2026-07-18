@@ -94,30 +94,10 @@ jobs:
           node-version: "20"
       - name: Compile gate scripts
         run: |
+          # ALL tracked top-level src scripts (:(glob) keeps * non-recursive);
+          # pilot/ stays an explicit list — untracked scratch does not exist in CI
+          git ls-files ':(glob)RussianTranslation/src/*.py' | xargs python -m py_compile
           python -m py_compile \
-            RussianTranslation/src/roadmap_check.py \
-            RussianTranslation/src/validate_final_card_schema.py \
-            RussianTranslation/src/validate_assembled_export.py \
-            RussianTranslation/src/run_batch.py \
-            RussianTranslation/src/gold_validate.py \
-            RussianTranslation/src/gold_ingest.py \
-            RussianTranslation/src/gold_status.py \
-            RussianTranslation/src/gold_packet.py \
-            RussianTranslation/src/gold_packet_verify.py \
-            RussianTranslation/src/gold_double_review_queue.py \
-            RussianTranslation/src/gold_double_review_verify.py \
-            RussianTranslation/src/gold_ingest_double_review.py \
-            RussianTranslation/src/gold_agreement.py \
-            RussianTranslation/src/export_interop.py \
-            RussianTranslation/src/validate_interop.py \
-            RussianTranslation/src/make_edition_cut.py \
-            RussianTranslation/src/validate_release.py \
-            RussianTranslation/src/release_readiness.py \
-            RussianTranslation/src/preflight_remaining_gates.py \
-            RussianTranslation/src/export_lod.py \
-            RussianTranslation/src/lod_acceptance.py \
-            RussianTranslation/src/mfs_baseline.py \
-            RussianTranslation/src/government_sidecar.py \
             RussianTranslation/src/pilot/proc_tree.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
