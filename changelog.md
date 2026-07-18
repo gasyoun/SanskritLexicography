@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.19.0] — 18-07-2026
+
 ### Added
 
 - **article-comparison gloss-review goes interactive (H739).** The four finalist words'
