@@ -116,6 +116,62 @@ def atomic_write(path, text):
     atomic_write_text(path, text)
 
 
+def coordinator_command(args, command, check=True):
+    coordinator = os.path.abspath(getattr(
+        args, 'coordinator', os.path.join(os.path.dirname(__file__), 'coordinator.py')))
+    env = os.environ.copy()
+    coord_dir = getattr(args, 'coord_dir', None)
+    if coord_dir:
+        env['PWG_COORDINATOR_DIR'] = os.path.abspath(coord_dir)
+    proc = subprocess.run(
+        [sys.executable, coordinator] + list(command),
+        cwd=os.path.abspath(getattr(args, 'cwd', os.path.dirname(os.path.dirname(__file__)))),
+        env=env, text=True, encoding='utf-8', capture_output=True)
+    if check and proc.returncode:
+        raise SystemExit((proc.stderr or proc.stdout or 'coordinator command failed')[-2000:])
+    return proc
+
+
+def release_db_claims(db_path, jobs, error):
+    """Undo scheduler claims when the coordinator atomically rejects the dispatch batch."""
+    db = connect(db_path)
+    with db:
+        for job in jobs:
+            db.execute(
+                "UPDATE jobs SET state='pending', assigned_acc=NULL, attempts=max(attempts-1,0), "
+                "started_at=NULL, error=? WHERE id=? AND state='in_progress'",
+                (error[-2000:], job['id']))
+    db.close()
+
+
+def release_runtime(args, lease_id, reason):
+    return coordinator_command(
+        args, ['release-run', lease_id, '--confirm-dead', '--reason', reason], check=False)
+
+
+def safe_receipt_name(value):
+    return re.sub(r'[^A-Za-z0-9_.-]+', '_', value)[:120]
+
+
+def write_probe_receipt(coord_dir, run_id, lease_ids, probe_latencies):
+    receipt_dir = os.path.join(os.path.abspath(coord_dir), 'probe_receipts')
+    os.makedirs(receipt_dir, exist_ok=True)
+    path = os.path.join(receipt_dir, 'probe_receipt.%s.json' % safe_receipt_name(run_id))
+    payload = {
+        'schema': PROBE_RECEIPT_SCHEMA,
+        'generated_at': now_iso(),
+        'run_id': run_id,
+        'go': True,
+        'lease_ids': sorted(set(lease_ids)),
+        'healthy_profiles': sorted(probe_latencies),
+        'probe_latency_ms': dict(probe_latencies),
+        'model': EXACT_GEN_MODEL,
+        'policy': PROBE_POLICY,
+    }
+    atomic_write(path, json.dumps(payload, ensure_ascii=False, indent=1) + '\n')
+    return path
+
+
 def parse_reset(text, now=None):
     now = int(now or time.time())
     match = RESET_EPOCH.search(text or '')
@@ -422,8 +478,22 @@ def cmd_import_coordinator(args):
 
 def cmd_recover(args):
     db = connect(args.db)
+    abandoned = scoped_jobs(
+        db, getattr(args, 'only_external_ids', None),
+        "state='in_progress' AND manifest_path IS NOT NULL")
+    db.close()
+    for job in abandoned:
+        proc = release_runtime(args, job['external_id'], 'orchestrator restart recovery')
+        if proc.returncode and 'no runtime reservation to release' not in (proc.stderr + proc.stdout):
+            raise SystemExit('%s: coordinator recovery failed: %s' %
+                             (job['external_id'], proc.stderr or proc.stdout))
+    db = connect(args.db)
+    scope_sql, scope_args = _scope_sql(getattr(args, 'only_external_ids', None))
     with db:
-        changed = db.execute("UPDATE jobs SET state='pending', assigned_acc=NULL, error='recovered after restart' WHERE state='in_progress'").rowcount
+        changed = db.execute(
+            "UPDATE jobs SET state='pending', assigned_acc=NULL, "
+            "error='recovered after restart' WHERE state='in_progress'%s" % scope_sql,
+            scope_args).rowcount
     db.close()
     print('recovered=%d' % changed)
 
@@ -438,10 +508,8 @@ def cmd_record_done(args):
     for job in jobs:
         if not job['manifest_path'] or not os.path.exists(job['output_path']):
             raise SystemExit('%s: completed coordinator job has no result' % job['external_id'])
-        cmd = [sys.executable, os.path.abspath(args.coordinator), 'record-output',
-               job['external_id'], job['output_path']]
-        proc = subprocess.run(cmd, cwd=os.path.abspath(args.cwd), text=True, encoding='utf-8',
-                              capture_output=True)
+        proc = coordinator_command(
+            args, ['record-output', job['external_id'], job['output_path']], check=False)
         if proc.returncode:
             print(proc.stdout, end='')
             print(proc.stderr, end='', file=sys.stderr)
@@ -471,6 +539,16 @@ def cmd_run_once(args):
         only = requested if only is None else set(only) & requested
     if only is not None:
         accounts = [a for a in accounts if a['name'] in only]
+    runtime_mode = getattr(args, 'runtime_mode', 'standard')
+    db = connect(args.db)
+    manifest_pending = scoped_job_count(
+        db, getattr(args, 'only_external_ids', None),
+        "state='pending' AND manifest_path IS NOT NULL")
+    db.close()
+    if manifest_pending:
+        # Do not over-claim scheduler rows that the coordinator must reject. Generic jobs keep
+        # their historical account fan-out because they do not consume translation runtime.
+        accounts = accounts[:4 if runtime_mode == 'staged' else 3]
     work = []
     for acc in accounts:
         job = claim(args.db, acc['name'],
@@ -480,14 +558,40 @@ def cmd_run_once(args):
     if not work:
         print('no runnable jobs')
         return
+    runtime_jobs = [job for _account, job in work if job['manifest_path']]
+    if runtime_jobs:
+        begin = ['begin-run', '--mode', runtime_mode]
+        run_id = getattr(args, 'run_id', None)
+        receipt = getattr(args, 'probe_receipt', None)
+        if run_id:
+            begin += ['--run-id', run_id]
+        if receipt:
+            begin += ['--probe-receipt', receipt]
+        for job in runtime_jobs:
+            begin += ['--lease-id', job['external_id']]
+        try:
+            coordinator_command(args, begin)
+        except SystemExit as exc:
+            release_db_claims(args.db, [job for _account, job in work], str(exc))
+            raise
     claude_bin = getattr(args, 'claude_bin', 'claude')
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(work)) as pool:
         futures = {pool.submit(run_claimed, args.db, acc['name'], acc['config_dir'], job, args.timeout,
                                getattr(args, 'events', None), getattr(args, 'run_id', None), claude_bin):
-                   (acc['name'], job['external_id']) for acc, job in work}
+                   (acc['name'], job) for acc, job in work}
         for future in concurrent.futures.as_completed(futures):
-            acc, external_id = futures[future]
-            print('%s %s -> %s' % (acc, external_id, future.result()))
+            acc, job = futures[future]
+            try:
+                outcome = future.result()
+            except BaseException as exc:
+                outcome = fail_or_retry(args.db, job['id'], 1, str(exc), 'orchestrator')
+            if job['manifest_path'] and outcome != 'done':
+                release = release_runtime(
+                    args, job['external_id'], 'worker outcome %s on profile %s' % (outcome, acc))
+                if release.returncode:
+                    raise SystemExit('%s: runtime release failed: %s' %
+                                     (job['external_id'], release.stderr or release.stdout))
+            print('%s %s -> %s' % (acc, job['external_id'], outcome))
 
 
 def cmd_status(args):
@@ -504,6 +608,7 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
 PROBE_POLICY = 'production_v1'
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
+PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
 # Only the explicit opt-in ever parks this way; the default STOP-on-any-NO-GO path never drops.
@@ -721,11 +826,17 @@ def cmd_staged_run(args):
     if getattr(args, 'max_accounts', 0):
         accounts = accounts[:args.max_accounts]
     run_id = args.run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
+    if getattr(args, 'resume', False):
+        cmd_recover(argparse.Namespace(
+            db=args.db, coordinator=args.coordinator, coord_dir=args.coord_dir,
+            cwd=args.cwd, only_external_ids=set(lease_ids)))
     # Probe EVERY validated account (D-K warmup+measured per account; census not inflated). DEFAULT
     # STOP-on-any-NO-GO; --drop-unhealthy opts into proceeding on the healthy subset, parking the
     # dropped accounts so the dispatch loop below claims only survivors.
     probe_latencies = probe_fleet(accounts, args.claude_bin, events_path=args.events,
                                   run_id=run_id, drop_unhealthy=getattr(args, 'drop_unhealthy', False))
+    probe_receipt = write_probe_receipt(
+        args.coord_dir, run_id, lease_ids, probe_latencies)
     if getattr(args, 'drop_unhealthy', False):
         for acc in accounts:
             if acc['name'] not in probe_latencies:
@@ -774,22 +885,25 @@ def cmd_staged_run(args):
                 raise SystemExit('staged-run halted: %d job(s) pending but all accounts parked '
                                  'until %s; rerun with --resume after the reset' % (pending, earliest))
             cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout,
-                                            events=args.events, run_id=run_id,
-                                            claude_bin=args.claude_bin,
+                                             events=args.events, run_id=run_id,
+                                             claude_bin=args.claude_bin,
+                                             coordinator=args.coordinator,
+                                             coord_dir=args.coord_dir,
+                                             cwd=args.cwd,
+                                             runtime_mode='staged',
+                                             probe_receipt=probe_receipt,
                                             # dispatch ONLY to the probed, capped/healthy fleet —
                                             # never to a capped-out or dropped (unprobed) account.
                                             only_accounts=set(probe_latencies),
                                             only_profile=getattr(args, 'only_profile', None),
                                             only_external_ids=lease_scope))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
-                                           cwd=args.cwd, only_external_ids=lease_scope))
-        promote_cmd = [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
-                       '--gen-model-version', 'claude-sonnet-5']
+                                           coord_dir=args.coord_dir, cwd=args.cwd,
+                                           only_external_ids=lease_scope))
+        promote_cmd = ['promote-ready', '--gen-model-version', 'claude-sonnet-5']
         for lease_id in sorted(lease_scope):
             promote_cmd += ['--lease-id', lease_id]
-        promote = subprocess.run(
-            promote_cmd, cwd=os.path.abspath(args.cwd),
-            text=True, encoding='utf-8', capture_output=True)
+        promote = coordinator_command(args, promote_cmd, check=False)
         if promote.returncode and 'no ready leases to promote' not in (promote.stderr + promote.stdout):
             raise SystemExit('promotion failed: %s' % (promote.stderr or promote.stdout)[-1000:])
         db = connect(args.db)
@@ -929,14 +1043,17 @@ def cmd_presplit_canary(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
+    default_coordinator = os.path.join(os.path.dirname(__file__), 'coordinator.py')
+    default_coord_dir = os.path.join(os.path.dirname(__file__), 'output', 'coordinator')
+    default_cwd = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     ap.add_argument('--db', default='max_orchestrator.sqlite')
     sub = ap.add_subparsers(dest='cmd', required=True)
     p = sub.add_parser('init'); p.add_argument('--account', action='append', required=True); p.add_argument('--claude-bin', default='claude'); p.add_argument('--skip-profile-check', action='store_true', help=argparse.SUPPRESS); p.set_defaults(func=cmd_init)
     p = sub.add_parser('enqueue'); p.add_argument('--external-id', required=True); p.add_argument('--argv-json', required=True); p.add_argument('--cwd', required=True); p.add_argument('--output', required=True); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_enqueue)
     p = sub.add_parser('import-coordinator'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--lease-id', action='append'); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_import_coordinator)
-    p = sub.add_parser('recover'); p.set_defaults(func=cmd_recover)
-    p = sub.add_parser('record-done'); p.add_argument('--coordinator', required=True); p.add_argument('--cwd', required=True); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('recover'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_recover)
+    p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)

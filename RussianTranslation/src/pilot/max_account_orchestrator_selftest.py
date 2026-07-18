@@ -655,6 +655,60 @@ def main():
         con.close()
     print('  GAP5 recover exactly-once N=4: 2 in_progress -> pending; recorded-done untouched; coordinator_recorded stays 1')
 
+    # Runtime integration: a manifest-backed dispatch batch is reserved atomically before any
+    # worker starts, and a retryable worker explicitly releases its coordinator slot.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'runtime.sqlite')
+        m.main(['--db', db, 'init',
+                '--account', 'acc1=' + os.path.join(td, 'a1'),
+                '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
+        for n in range(2):
+            m.main(['--db', db, 'enqueue', '--external-id', 'runtime%d' % n,
+                    '--argv-json', json.dumps(['x']), '--cwd', td,
+                    '--output', os.path.join(td, 'runtime%d.json' % n)])
+        con = m.connect(db)
+        with con:
+            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture'")
+        con.close()
+        receipt = m.write_probe_receipt(
+            td, 'runtime-test', ['runtime0', 'runtime1'], {'acc1': 10, 'acc2': 11})
+        receipt_payload = json.load(open(receipt, encoding='utf-8'))
+        assert receipt_payload['schema'] == m.PROBE_RECEIPT_SCHEMA
+        assert receipt_payload['healthy_profiles'] == ['acc1', 'acc2']
+        original_command = m.coordinator_command
+        original_run_claimed = m.run_claimed
+        calls = []
+        reserved = threading.Event()
+
+        def fake_command(args, command, check=True):
+            calls.append(list(command))
+            if command[0] == 'begin-run':
+                reserved.set()
+            return types.SimpleNamespace(returncode=0, stdout='', stderr='')
+
+        def fake_worker(db_path, account, config_dir, job, timeout, events_path=None,
+                        run_id=None, claude_bin='claude'):
+            assert reserved.is_set(), 'worker started before atomic begin-run reservation'
+            outcome = 'done' if job['external_id'] == 'runtime0' else 'pending'
+            m.finish(db_path, job['id'], outcome, 0 if outcome == 'done' else 1)
+            return outcome
+
+        m.coordinator_command = fake_command
+        m.run_claimed = fake_worker
+        try:
+            m.cmd_run_once(m.argparse.Namespace(
+                db=db, timeout=30, events=None, run_id='runtime-test',
+                claude_bin='claude', runtime_mode='staged', probe_receipt=receipt,
+                coordinator='coordinator.py', coord_dir=td, cwd=td))
+        finally:
+            m.coordinator_command = original_command
+            m.run_claimed = original_run_claimed
+        begin_calls = [call for call in calls if call[0] == 'begin-run']
+        release_calls = [call for call in calls if call[0] == 'release-run']
+        assert len(begin_calls) == 1 and begin_calls[0].count('--lease-id') == 2
+        assert len(release_calls) == 1 and release_calls[0][1] == 'runtime1'
+    print('  runtime integration: reserve batch before workers; retryable worker releases slot')
+
     print('max_account_orchestrator_selftest: PASS')
 
 
