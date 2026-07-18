@@ -173,12 +173,14 @@ def load_state():
     state.setdefault('translation_limit', TRANSLATION_LIMIT)
     state.setdefault('preparation_limit', PREPARATION_LIMIT)
     state.setdefault('cap', {})
+    normalize_lease_reservations(state)
     return state
 
 
 def save_state(state):
     p = ensure_dirs()
     expire_stale_leases(state)
+    normalize_lease_reservations(state)
     state['updated_at'] = utc_now()
     atomic_write_json(p['state'], state, indent=1)
     write_dashboard(state)
@@ -221,6 +223,86 @@ def expire_stale_leases(state):
 
 def translation_lease(lease):
     return lease.get('kind') in ('verb', 'nominal')
+
+
+def _validate_reserved_keys(value):
+    if not isinstance(value, list) or not value:
+        return None, 'reserved_keys must be a non-empty list'
+    if any(not isinstance(key, str) or not key for key in value):
+        return None, 'reserved_keys contains an invalid key'
+    if len(value) != len(set(value)):
+        return None, 'reserved_keys contains duplicate keys'
+    return list(value), None
+
+
+def derive_lease_reserved_keys(lease):
+    """Return canonical nominal keys for new and legacy leases, or an explicit error.
+
+    Runtime/safe keys are not sufficient for collision detection because a later candidate is
+    selected by its canonical assembled-card key1. Prefer the persisted reservation, then the
+    claim details, and finally a prepared execution manifest's nominal keymap.
+    """
+    if lease.get('kind') != 'nominal':
+        return [], None
+    if 'reserved_keys' in lease:
+        return _validate_reserved_keys(lease.get('reserved_keys'))
+    details = lease.get('details') or {}
+    if details.get('keys') is not None:
+        return _validate_reserved_keys(details.get('keys'))
+    keymap = details.get('keymap')
+    if isinstance(keymap, dict) and keymap:
+        return _validate_reserved_keys(list(keymap.values()))
+    manifest_path = lease.get('execution_manifest') or lease.get('origin_execution_manifest')
+    if manifest_path:
+        try:
+            with open(manifest_path, encoding='utf-8') as f:
+                manifest = json.load(f)
+        except (OSError, json.JSONDecodeError) as exc:
+            return None, 'execution manifest is unreadable: %s' % exc
+        meta = manifest.get('meta') or {}
+        selected = meta.get('selected_keys')
+        keymap = meta.get('nominal_keymap')
+        if isinstance(selected, list) and isinstance(keymap, dict):
+            if any(key not in keymap for key in selected):
+                return None, 'execution manifest nominal_keymap does not cover selected_keys'
+            return _validate_reserved_keys([keymap[key] for key in selected])
+    return None, 'canonical nominal keys cannot be derived from lease details or manifest'
+
+
+def normalize_lease_reservations(state):
+    """Backfill additive reservation state without making read-only status unusable."""
+    for lease in state.get('leases', []):
+        if lease.get('kind') != 'nominal':
+            continue
+        keys, error = derive_lease_reserved_keys(lease)
+        if error:
+            lease['reservation_error'] = error
+        else:
+            lease['reserved_keys'] = keys
+            lease.pop('reservation_error', None)
+
+
+def active_reserved_nominal_keys(state, exclude_lease_id=None, strict=True):
+    """Canonical keys owned by nonterminal nominal leases.
+
+    A new claim must fail closed if any active legacy lease cannot prove its full reservation;
+    otherwise a partially-known batch could overlap silently.
+    """
+    expire_stale_leases(state)
+    normalize_lease_reservations(state)
+    reserved = set()
+    for lease in state.get('leases', []):
+        if (lease.get('kind') != 'nominal' or terminal_state(lease.get('state'))
+                or lease.get('id') == exclude_lease_id):
+            continue
+        error = lease.get('reservation_error')
+        if error:
+            if strict:
+                raise SystemExit('active nominal lease %s has unresolved reservations: %s'
+                                 % (lease.get('id'), error))
+            continue
+        reserved.update(lease.get('reserved_keys') or [])
+    return reserved
 
 
 def active_translation_leases(state):
@@ -339,7 +421,7 @@ def verb_candidates(state, limit=20):
 def nominal_candidates(state, batch_size=12, cards_path=None):
     cards_path = cards_path or os.path.join(SRC, 'assembled_cards.jsonl')
     done = load_store_key1s()
-    leased = active_targets(state)
+    leased = active_reserved_nominal_keys(state)
     keys = []
     if not os.path.exists(cards_path):
         return keys
@@ -350,8 +432,7 @@ def nominal_candidates(state, batch_size=12, cards_path=None):
             row = json.loads(line)
             key = row.get('key1')
             stem = safe_name(key) if key else ''
-            target = 'nominal:%s' % key
-            if (key and key not in done and target not in leased
+            if (key and key not in done and key not in leased
                     and not row.get('quarantined_records')
                     and os.path.exists(os.path.join(HERE, 'input', stem + '.raw.txt'))
                     and os.path.exists(os.path.join(HERE, 'input', stem + '.portrait.json'))):
@@ -417,6 +498,8 @@ def claim(args):
             'artifact_dir': adir,
             'details': details,
         }
+        if args.kind == 'nominal':
+            lease['reserved_keys'] = list(keys)
         os.makedirs(adir, exist_ok=True)
         state['leases'].append(lease)
         save_state(state)
@@ -431,15 +514,20 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
         state = load_state()
         if any(lease.get('id') == lease_id for lease in state.get('leases', [])):
             raise SystemExit('lease already exists: %s' % lease_id)
-        active = active_targets(state)
+        keys, key_error = _validate_reserved_keys(list(keys))
+        if key_error:
+            raise SystemExit('invalid nominal reservation: %s' % key_error)
+        active = active_reserved_nominal_keys(state)
         target = 'nominal:%s' % keys[0]
-        if target in active:
-            raise SystemExit('lease target already active: %s' % target)
+        overlap = sorted(set(keys) & active)
+        if overlap:
+            raise SystemExit('nominal lease keys already active: %s' % ','.join(overlap))
         run_keys = [safe_name(k) for k in keys]
         lease = {
             'id': lease_id, 'lane': lane, 'kind': 'nominal', 'owner': owner,
             'target': target, 'state': 'prepared', 'claimed_at': utc_now(),
             'prepared_at': utc_now(), 'artifact_dir': artifact_path or os.path.dirname(manifest),
+            'reserved_keys': list(keys),
             'details': {'keys': keys, 'run_keys': run_keys,
                         'keymap': dict(zip(run_keys, keys))},
             'harness': os.path.abspath(harness),

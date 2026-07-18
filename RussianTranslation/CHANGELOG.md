@@ -10,6 +10,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — canonical-store backup and nominal lease collision safety
+
+- Promotion backups now use exclusive, collision-resistant names and never move or overwrite
+  the live canonical store. Identical recovered workflow cards deduplicate, while divergent
+  translations or generation provenance fail closed before promotion.
+- Nominal coordinator leases persist every canonical input key in `reserved_keys`. Legacy
+  active leases are migrated from claim details or execution manifests; an unresolved active
+  reservation blocks new nominal work instead of permitting an overlapping paid run.
+
 ### Added — H1150 W1-B: offline false-flag rate for `SANLOSS_*`/`TNMASK_*`, with a per-guard arming recommendation
 
 - **Measures; does not arm.** `SANLOSS_HARD_REJECT` and `TNMASK_HARD_REJECT` in
