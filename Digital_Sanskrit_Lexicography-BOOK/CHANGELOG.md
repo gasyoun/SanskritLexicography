@@ -7,6 +7,47 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+### Added — 18-07-2026 (H1240, Ch. 3 + Ch. 11: the last two chapters — 14 of 14 in book form)
+
+- **Ch. 3 — The Headword Inventory** →
+  [ch03_headword_inventory.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md)
+  (from A40, Fable 5 `claude-fable-5`; a journal→book conversion — A40 had reached full
+  prose in H675, so the plan's "data-only" premise was stale). The 2014-vs-2026 controlled
+  census (+14.3 % over 18 comparable lists; Apte +146.7 %, MW/PWG frozen; removals as a
+  stratified QA signal), the 15-dictionary union (323,425 keys; 44.1 % singletons; the
+  Böhtlingk–Monier-Williams core) and the corpus-grounding bridge (attestation VEI
+  69.8 % … SKD 14.1 % on the DCS-2021 denominator, upper bound, read as coverage geometry
+  under ch02 §6.2). Crosswalk grounding woven in: Coward & Grimes headword-status criteria,
+  Thorndike's balancing via Jackson, Szudarski counting standards, Inglese & Geupel
+  *ādi*-boundary case, Kilgarriff "the corpus is never good enough", Hellwig 2010's
+  measured cost of MW's inclusion policy. The reverse DCS↔CDSL crosswalk stated at its
+  true scope — the **13-text pilot slice** (15,902 lemmas; 81.4 % linked is a **floor**
+  under wf0 semantics; 94.7 % token-weighted, recomputed from the committed TSV).
+- **Ch. 11 — What the Tradition Cites** →
+  [ch11_citation_frequency_graph.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch11_citation_frequency_graph.md)
+  (from A50, Fable 5 `claude-fable-5`; conversion of the H677 full draft). The
+  828,505-citation / 912-text frequency graph, written to ch02 §6.3's statistical contract
+  from the first figure (modularity stated as effect-over-null with z beside the
+  permutation p); the **tradition map stated as inferred — 0 of 119 rows human-reviewed —
+  in running text, table header, and data note** (the review gate stays open and stays
+  human); the Nonius closed-canon contrast (Ferri/Gatti) with the asymmetry flagged; a
+  reconciliation note for the two committed `<ls>` extraction conventions (ch10's census
+  counts the bare tag; the graph builder also the attribute-bearing `<ls n="…">` form —
+  568,730 vs 233,058 spans for PWG).
+
+### Fixed — 18-07-2026 (H1240 pass)
+
+- **Attestation/absence inversion** in
+  [ch02 §6.2/§6.4](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md)
+  and
+  [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md):
+  both described VEI 69.8 % … SKD 14.1 % as *absence* rates; they are **attestation**
+  rates per A40 §4.4 (VEI = 2,584-of-3,704 attested in DCS-2021).
+- **Part II/IV bridge ⚠️ boxes resolved** — both bridges checked against the merged
+  chapters and their pending-revision obligations closed
+  ([bridge_part2_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part2_macrostructure.md),
+  [bridge_part4_mediostructure_citation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/bridge_part4_mediostructure_citation.md)).
+
 ### Added — 18-07-2026 (H1241, the glue: Introduction + 5 part-bridges + Conclusion)
 
 - **The book's connective tissue drafted — 7 new files in

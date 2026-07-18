@@ -1,6 +1,6 @@
 # Book proposal — *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph*
 
-_Created: 08-07-2026 · Last updated: 17-07-2026_
+_Created: 08-07-2026 · Last updated: 18-07-2026_
 
 Draft proposal for the single-authored monograph **M01**, built to the
 [Brill Book Proposal Guidelines](https://brill.com/fileasset/downloads_products/brill_bookproposal_guidelines.pdf)
@@ -106,7 +106,7 @@ thesis stated; a roadmap of the book.
 
 - **Ch. 3 · The Headword Inventory** *(← A40, data 4/5).* Twelve-year growth of the CDSL
   headword inventory (+14.3%; Apte +146%, MW/PWG flat) and the corpus-grounding bridge
-  (dictionary ↔ DCS): which headwords the corpus never attests (VEI 69.8% … SKD 14.1%).
+  (dictionary ↔ DCS): how far each inventory is corpus-attested (VEI 69.8% … SKD 14.1%).
 - **Ch. 4 · Order Is the Dictionary** *(← A06, 4/5).* The *kośa* macrostructural type — the
   book's most original European/indigenous contrast; how ordering *is* the semantics in the
   indigenous tradition.
