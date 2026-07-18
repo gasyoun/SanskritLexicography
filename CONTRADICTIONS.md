@@ -43,6 +43,18 @@ Blocks: the GasunsDhatu 2026 §2.6 Table 5 / П9 correction (manifest `varga-ser
 ↔ Interlinks: [RECIPES §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (varga diachrony) is the reproducible pass whose χ² table the prose misread · [GAPS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the same epoch-stability question one layer down (collocations vs vargas) · [GLOSSARY "varga"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the unit in dispute.
 > **Source:** [FINDINGS §62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar)/[VisualDCS](https://github.com/gasyoun/VisualDCS) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
+### §6. Concordance-Q3 plan set: kosha generated side is `forms` or `inflections` (5× apart)
+🟠 ✍️ **The Concordance-Q3 plan set names two different kosha tables as the generated inflection side, off by 5×.**
+Positions:
+| Source | Value | Evidence loc |
+|--------|-------|--------------|
+| IMPLEMENTATION § W1b deliverable text | `forms` — 1,378,401 rows (426,410 non-heritage) | [morph build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md) |
+| ARCHITECTURE § 2 diagram ("6.9M generated") | `inflections` — 6,917,018 rows | same |
+Status: 🟡 provisional pick — A3 (W1b) built on `forms`, the only table with a `source` column, which the trust-ordering / `include_heritage` discipline requires; `inflections` does not distinguish heritage and was NOT folded in. Which table A4 measures is a human call.
+Blocks: the A4 derivation-capture (W2a) generated-side denominator; the architecture diagram's "6.9M" should be corrected to name `inflections`, not propagated forward.
+↔ Interlinks: [FINDINGS §94](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the circularity finding (93% DCS-derived generated side) from the same A3 build.
+> **Source:** [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) morphology attestation audit · [kosha](https://github.com/gasyoun/kosha) · [18-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-18&until=2026-07-19) · `claude-opus-4-8`
+
 ## B. A claim overturned (or split) by machine-scale evidence
 *A scholarly charge or a hand-picked exemplar checked against a full machine dataset — the count adjudicates.*
 

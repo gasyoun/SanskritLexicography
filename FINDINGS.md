@@ -2607,3 +2607,27 @@ re-read, and 2 were outright `refuted`; a finding's age is not evidence of its s
 > enforcement landed in [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530) ·
 > [H1110](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1110-Opus_SanskritLexicography_pwg-ru-post-h1080-audit-fix-skills-c4-restart_17.07.26.md) ·
 > 18-07-2026, Opus 4.8 (`claude-opus-4-8`).
+
+### §94. kosha's generated `forms` is 93% DCS-derived, so its attested-form join is a round-trip — only the vidyut-engine subtotal (12.4% attested) carries signal, and A¬G cannot measure engine gaps
+
+**Measured 18-07-2026** (Opus 4.8 `claude-opus-4-8`, H1262, A3 / Concordance-Q3 W1b): joining
+kosha.db `forms` (non-heritage: 426,410 rows) against DCS attested **surface** forms
+(`dcs_full.sqlite token.form`; 381,413 distinct) on `form_key()` equality — the length-preserving
+floor tier — gives AG 401,368 / G¬A 25,042 / **A¬G 2**. The AG looks like 94% coverage, but
+**93.30% of the non-heritage generated side is itself `source='dcs'`** (ingested DCS surface tokens,
+several still carrying `''`-avagraha sandhi markers), so its AG is a **99.99% round-trip**. The only
+research-meaningful subtotal is the **vidyut**-engine one: AG 3,550 / 28,567 = **12.43% attested**,
+25,017 over-generated. Two consequences no downstream wave may forget: (1) any "coverage" headline
+over the full generated side is circular — always split AG by generated-side `source` and quote
+vidyut, never the total; (2) **A¬G is degenerate (=2: `oṃ` plus one German OCR token) and CANNOT
+measure engine gaps from this join**, because the DCS-derived generated forms blanket the attested
+surface set — reported as the finding, not hidden (0 genuine engine gaps, nothing routed to the
+csl-inflect give-back H185). `tense_caveat` follows [§91](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+(DCS `Past` lumps aorist + perfect): 16,339 AG rows carry a `Past` attestation. The
+`forms`-vs-`inflections` generated-side table ambiguity is logged separately in
+[CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
+
+> **Source:** [morphology-attestation build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md)
+> + manifest row `morphology-attestation-audit` ([datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)) ·
+> [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) ·
+> [kosha](https://github.com/gasyoun/kosha) · 18-07-2026, Opus 4.8 (`claude-opus-4-8`).
