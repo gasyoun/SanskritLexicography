@@ -637,6 +637,44 @@ likely the SAME class, not a new bug:
   human-budgeted session. Closes the kAla-class monster-card `@DECIDE`
   (MG ruling 07-07-2026: cap-and-defer).
 
+## The execution route changed (H1110, 18-07-2026) — headless CLI, not Workflow-from-session
+
+The single most load-bearing map change since the timeline above: **the production
+execution route is the headless CLI driven by a manifest v2**
+(`execution_route: claude-cli-headless`). The old **Workflow-from-session** run route is
+**retired** — a Workflow session is now forensics metadata only, never a production
+translation path. Anything you read in an older runbook that says "run the harness as one
+`agent()` call from THIS session" is describing the retired route.
+
+Two consequences worth internalising before touching the lane:
+
+- **Degradation is measured per run, not asserted from a date.** The standing "since
+  ~10-07-2026 the generation host is degraded, paid windows are banned" assertion is gone.
+  [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+  fires one representative ≥5 KB health call plus one separate `dq_canary_puregloss`
+  synthetic control, and derives GO/NO-GO **mechanically from a named policy**
+  (`gate_reason`). A hand-asserted GO that contradicts `gate_reason` is a hard error, not an
+  override. Spend then goes through
+  [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
+  — one profile, `max-wide=1`, `--stop-before-promote`, no retry/requeue/replacement/widening.
+- **The bound must be enforced at the spawn site, not merely declared.** The audit found the
+  headless executor validating a manifest `budgets{}` block it never enforced (FINDINGS §93);
+  budget enforcement, the `min(operator_timeout, timeout_ceil_ms, 180 s)` clamp, duplicate
+  `selected_keys` rejection, an OS-released cross-process lock, owner-preserving fragment-TM
+  v2 and the `AWAITING_REVIEW` checkpoint all landed in
+  [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530).
+
+**Live status at the time of writing: the lane is code-ready and host-blocked.** Every
+offline gate is green (`window_selftest` 142/142, parity 53/53 no drift, ruff clean) and the
+c4 profile is mechanically proven bound, but the measured c4 health latency is
+**98,625 ms against a strict 30,000 ms ceiling** — a `success`/pure-latency reading, not an
+auth or connection failure, and essentially unchanged from the 16-07 reading of 104,870 ms.
+The bounded ladder therefore terminated at **`HEALTH_NOGO_BY_ENVIRONMENT`** with the canary
+and batch unspent, zero promotions, zero store writes and zero TM rebuilds. Resume is **one**
+health probe after the host demonstrably recovers — never a probe on a whim, never a reroll.
+Full terminal record:
+[H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1110/H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md).
+
 ## Where to go next
 
 - **Doing the actual drain right now?** → [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
