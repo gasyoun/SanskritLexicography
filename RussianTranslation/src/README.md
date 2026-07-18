@@ -217,3 +217,34 @@ II паниниевское · III эпическое · IV классическ
 (Кочергина, Фриш, Смирнов) под авторским правом; Коссович (1854) и Кнауэр (1908)
 — public domain. В репозитории — только [build_src.py](build_src.py) и этот файл
 (воспроизводимый контракт), а сами данные собираются локально / на сервере.
+
+## Служебные скрипты: общий помощник, хаб-цитируемые, архив
+
+**Общий помощник:** [safe_filename.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/safe_filename.py)
+— де-факто разделяемый модуль (импортируется 27 скриптами: 14 верхнего уровня + 13 в
+`pilot/`); зарегистрирован в орг-карте
+[SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md). Тот же
+паттерн «помощник без регистрации» повторяют
+[_ls_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_ls_extract.py),
+[gold_sample.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_sample.py) и
+[build_dcs_freq.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dcs_freq.py).
+
+**Цитируются в хабах Uprava** (держать, в репо-доках больше нигде не упомянуты):
+[a43_family_stats.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/a43_family_stats.py)
+(статья A43 в [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)) и
+[build_pwg_freq_order.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_pwg_freq_order.py)
+(PROJECT_INTERLINKS / реестр handoff'ов).
+
+**Архив — осиротевшие скрипты, оставлены с причиной** (аудит H738, 18-07-2026; ни один
+не менялся после графта клона 09-07-2026):
+
+- [_build_agni_ru.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_build_agni_ru.py) — рукописные RU-глоссы agni (Track B): несёт данные, не только код;
+- [_build_skeletons_ru.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_build_skeletons_ru.py) — на него ссылаются живые доки `article-comparison/*.gloss-review.md`;
+- [_nws_defect_scan.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_nws_defect_scan.py) — переиспользуемый QA-сканер дефектов NWS-корпуса;
+- [_purge_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_purge_lexicon.py) — одноразовое восстановление, упомянут в [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md);
+- [gold_aggregate.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_aggregate.py) — агрегатор gold-точности (семейство `gold_*` стоит в CI-гейте).
+
+Удалён как доказуемо мёртвый:
+[_nws_watch.py](https://github.com/gasyoun/SanskritLexicography/blob/5aaee0672e6465eca8a3debb082ce9cf15a20840/RussianTranslation/src/_nws_watch.py)
+— вотчер давно завершённого NWS-скрейпа, ноль ссылок во всём репозитории (ссылка — на
+последний коммит перед удалением).
