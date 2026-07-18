@@ -1,6 +1,6 @@
 # Manuals — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 18-07-2026_
 
 The audience-specific manual set for this repository — **this directory is the
 canonical set** (H604 ruling): depth lives here; the two root `MANUAL_*` sheets
@@ -18,6 +18,7 @@ to read the others.
 | An **agent session** (Claude/Codex) entering this shared tree — entry protocol, hard rules, canonical-doc index | [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root, thin) | English |
 | **The human owner** — repo map, monthly delta, human gates, account protocol | [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root, thin) | Русский |
 | Doing **paper / book / docs_site work** — the publication pipeline in depth: paper lifecycle + skills, the M01 book build, rights, site build/deploy state | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (deep manual, H608) | English |
+| A **new non-technical contributor** (Russian) — the onboarding ladder and a bounded first task | [ONBOARDING_NEW_CONTRIBUTOR_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ONBOARDING_NEW_CONTRIBUTOR_RU.md) (root, H1029) | Русский |
 
 ## Subsystem deep manuals
 
@@ -36,8 +37,10 @@ Regeneration/refresh of this set is encoded in the
 skill; the per-repo overlay it reads is
 [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
 (subsystem deep-manual queue, language overrides, traps that must survive every
-refresh). Set provenance + improvement backlog:
-[README.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.meta.md).
+refresh). Set-level provenance lives in
+[README.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.meta.md);
+since 18-07-2026 (H1245) **each manual also carries its own sibling `.meta.md`**
+with per-manual backlog + a `LAST_VERIFIED` verification block.
 
 ## What this repository is, in one paragraph
 

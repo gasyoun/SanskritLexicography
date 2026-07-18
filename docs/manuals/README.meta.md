@@ -1,12 +1,14 @@
 # Metadoc — the SanskritLexicography manual set
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 18-07-2026_
 
-Companion record for the audience-manual set in
-[docs/manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals)
-(the four manuals + [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md)
-router + [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md))
-and its two thin root sheets.
+Companion record for the manual **set as a whole** — the router
+[README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/README.md),
+[PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md),
+and set-level decisions. **Scope narrowed 18-07-2026 (H1245):** each of the
+nine manuals/sheets now owns its own sibling `.meta.md` (per-manual provenance,
+backlog, `LAST_VERIFIED` block live THERE); this file no longer tracks
+per-manual detail.
 
 ## Purpose & audience
 
@@ -35,11 +37,13 @@ index/hard-rules at root.
    ([HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md)),
    H608
    ([PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md)).
-2. ⬜ Refresh the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) on the next
-   monthly pass — they are staleness-prone by design; verify against
-   `.ai_state.md` first.
-3. ⬜ Consider an external-contributor manual (how to submit corrections
-   upstream) once the Cologne batched-PR cadence stabilizes.
+2. ✅ Refresh the dated state snapshots (AGENTS §4, HUMAN_RU §3–4) — resolved
+   structurally 18-07-2026 (H1245): both snapshots are GONE, replaced by
+   live-pointer rules; there is nothing left to refresh monthly.
+3. ⬜ External-contributor manual — **partially covered since 16-07-2026** by
+   [ONBOARDING_NEW_CONTRIBUTOR_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ONBOARDING_NEW_CONTRIBUTOR_RU.md)
+   (H1029, RU onboarding ladder + bounded first task); the upstream-submission
+   (Cologne batched-PR) half is still unwritten.
 4. ✅ FINDINGS.md carried seven accidentally duplicated `§N` pairs
    (§56, §60, §62–65, §69 — H604 fact-check, 11-07-2026). Repaired 11-07-2026
    (H616): later twins renumbered §70–§75 with tombstone notes (the later
@@ -98,5 +102,6 @@ no fixed cadence beyond "monthly-ish" for the snapshot refresh.
 | 11-07-2026 | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) added (papers · M01 book · docs_site) + router row + PROFILE queue flip — Fable 5 (`claude-fable-5`) | H608 |
 | 11-07-2026 | HEADWORDLISTS_DEEP_MANUAL.md added (queue complete); router gains a "Subsystem deep manuals" table; PROFILE H607 row flipped done; backlog item 1 closed — Fable 5 `claude-fable-5` | H607 |
 | 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (claude-sonnet-5) |
+| 18-07-2026 | H1245 estate refresh: per-manual metadocs created (9), this file's scope narrowed to set-level; backlog item 2 closed structurally, item 3 updated for the H1029 onboarding doc | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
