@@ -1,6 +1,6 @@
 # Publication pipeline — deep manual (papers · Brill book · docs_site)
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 18-07-2026_
 
 The subsystem deep manual for the **publication layer** of this workspace: the
 [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
@@ -297,11 +297,23 @@ python -m pytest docs_site/test_docs_site.py  # 4 tests
   a link to any *other* repo doc is **deliberately reduced to plain text**
   (it would 404 on the static site). Do not "fix" the dropped links.
 
-### 5.3 Publish state and procedure — NOT deployed
+### 5.3 Publish state and procedure — NOT deployed (safety-cleared, awaiting ruling)
 
 As of 11-07-2026 the research site is **built and tested but never
 deployed**: the `gh-pages` branch (which GitHub Pages serves from its root)
-has no `research/` directory. What `gh-pages` *does* carry — the findings
+has no `research/` directory.
+
+> **Safety-check verdict (18-07-2026, H737-sibling H740, Fable 5
+> `claude-fable-5`): GO — no blocker.** All five checks passed: the repo and
+> all ten docs are already public on `master`; quoted third-party material is
+> public-domain 19th-c. dictionaries plus a handful of short scholarly probes
+> from Kochergina (citation-right scale); no personal data beyond scholars in
+> scholarly context; no secrets; no gitignored bulk rides along in `_site`.
+> One caveat for the ruling: the sense-order figures feed a paper in the
+> pipeline — if its target venue enforces an anonymity period, a public
+> authored site naming those results could conflict. **The deploy itself
+> stays human-gated** — the decision row lives in
+> [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md). What `gh-pages` *does* carry — the findings
 dashboard, the epistemic-registries dashboard, the `md/` article site,
 `progress/`, `roots/`, and the abbreviations dashboard — is deployed by
 manual commits to that branch (`deploy: …` messages), plus a monthly
