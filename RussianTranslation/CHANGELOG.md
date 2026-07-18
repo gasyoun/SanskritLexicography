@@ -59,6 +59,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   updated `accept_sensecount_test.js`. Full suite: **139/139 green** (baseline measured this
   session: **137/137**, not the handoff-cited 135/135 — same staleness).
 
+### Added — H1110 Phase 2: enforce headless fidelity and spend bounds (12 live-route gaps)
+
+The post-H1080 audit ([PR #524](https://github.com/gasyoun/SanskritLexicography/pull/524)) ranked 12
+live-route gaps; this fix closes them, each behavior-pinned (assert the value at the executing
+boundary, not a constant):
+
+- **R3 agent-budget enforcement** — `headless_worker.py` enforces `manifest['budgets']`
+  (`max_translate_agents`/`max_heal_agents`/`max_agents`) + a `--max-agents` override at the `call()`
+  choke point; a refused call consumes no spawn. The budgets block was previously never read by the
+  executor.
+- **R4 timeout clamp** — every subprocess clamped to `min(operator, budgets.timeout_ceil_ms, 180000 ms)`.
+- **R5 cost telemetry** — the CLI wrapper's usage/cost survive into `summary['usage']` (summed across
+  calls, authoritative `observed_cost_usd`, `cost_evaluable`, `missing_usage_calls`) instead of being
+  discarded — no more silent `STOP_COST_UNEVALUABLE`.
+- **R2 grammar-token twin** — `card_token_multiset` counts `record.grammar` + `sense.german` via the
+  shared `card_fields.TOKEN_FIDELITY_FIELDS`, matching JS `cardTokens`.
+- **R6 fragment-TM v2** — per-sense `owners[]` flow harvest → sidecar → serve → stitch; a v1
+  (ownerless) row is a live cache miss (re-translated, still audit-readable), so a warm stitch no
+  longer regenerates null-`h` rows.
+- **R7 degenerate-card schema** — a degenerate stub emits `{h:'', grammar:''}` (honest source
+  identity), so `validate_final_card_schema` passes and one xref stub cannot refuse a whole paid window.
+- **R8 / P-1 manifest gates** — duplicate `selected_keys` rejected (multiset via `Counter`);
+  `batches`/`presplit` keys outside `selected_keys` refused before any spawn.
+- **R9 kernel-backed active-call lock** — `ActiveCallClaim` holds an OS lock (fcntl/msvcrt) the kernel
+  releases on process death (no PID/TTL/stale reclaim), so a tree-kill no longer strands a permanent
+  per-profile DoS. This is also the P-2 cross-process serialization ("two launches on one fingerprint
+  serialise"); `max_wide`/`stagger` are marked advisory intra-process hints.
+- **P-3 route enforcement** — a foreign `execution_route` is refused at execution, before any call.
+- **R10 `--stop-before-promote`** — skips promotion and writes a durable, self-hashing, hash-bound
+  `AWAITING_REVIEW` terminal checkpoint after a clean audit (store and TM untouched; audit-rejected
+  output never becomes AWAITING_REVIEW).
+
+### Changed
+
+- Operator docs (`AGENTS.md`, `README.md`) now name the **headless / manifest-v2** route as
+  production; the Max-Workflow lane (`run_pilot_wf.opt2.js`) is retained for forensics only.
+
 ## [1.16.0] - 2026-07-17
 
 ### Added — H1151: behavioral pin for the grammar-`{Tn}` restore (premise found already fixed)
