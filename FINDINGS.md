@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 17-07-2026_
+_Created: 26-06-2026 · Last updated: 18-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -2551,3 +2551,28 @@ should be treated as a ~5× undercount, not a ground truth.
 > [`WhitneyGrammar_1889/whitney_aorist_tagger.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_aorist_tagger.py)) ·
 > [H1134](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1134-Opus_SanskritGrammar_whitney-aorist-per-text-tagger_17.07.26.md) ·
 > 17-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
+
+---
+
+### §92. A verified claim register is not Whitney-proof — 3 of 229 erdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section
+
+The H1228 concordance audit adjudicated **all 432 grammatical claims** of the SanskritGrammar
+corpus sources against the actual text of Whitney 1889 (172 claims from 33 live Sangram
+articles + all 260 entries of KocherginaUchebnik_1998/claims.yml): **364 AGREE / 42 DISAGREE /
+26 WHITNEY-SILENT**. The non-obvious part is where the DISAGREEs sit: three register rows that
+already carried erdict_fact: TRUE from the corpus-verification passes are contradicted by
+Whitney on the systemic-fact axis — HK-31 (one-final-consonant phonotactics vs §150b urk/suhart,
+radical mute retained after r), HK-35 (samahara-dvandva «always plural» vs §1253.2d neuter
+singular), HK-174 (feminine of athematic present participles on the strong stem kurvanti vs
+§449h–i weak stem only). Corpus-TRUE and Whitney-TRUE are different axes: a claim can match
+DCS frequency reality and still misstate the grammar. Side catch of the same pass: ~65 §-refs
+in the register and articles were wrong or imprecise (wrong chapter, wrong sub-letter,
+neighboring-§ drift), and 7 §-anchors are missing/OCR-corrupted in the WhitneyGrammar_1889
+mdx itself (§218, §235, §339, §378, §387, §465, §1053) — grep-by-anchor alone silently
+misses those sections; verify by passage content.
+
+> **Source:** [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+> (fix queue § 3, digitization defects § 6; [PR #408](https://github.com/gasyoun/SanskritGrammar/pull/408),
+> [v0.77.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.77.0)) ·
+> [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md) ·
+> 18-07-2026, Fable 5 (claude-fable-5).
