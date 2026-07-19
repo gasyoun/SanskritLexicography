@@ -1,31 +1,31 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Build the PWG derivation layer for pwg_ru — join the three SanskritGrammar PWG
-data layers onto the pwg_ru headword index, keyed by headword (k1).
+"""Build the PWG derivation layer for pwg_ru — join the SanskritGrammar PWG data layers
+onto the pwg_ru headword index, HOMONYM-PRECISE via the PWG L_id↔(k1,hom) map.
 
 Consumes (canonical, read-only; the sibling SanskritGrammar repo — like the pipeline
 already reads csl-orig / WhitneyRoots):
+  - L_id↔hom map        : data/pwg_lid_hom_map/pwg_lid_hom_map.tsv   (L_id → k1, hom)
   - taddhita derivations : sangram/articles/taddhita-overview/data/pwg_taddhita_derivations.tsv
-                           (denominal base + suffix + class + <ls> citation)
   - Pāṇini crosswalk     : data/pwg_panini_crosswalk/pwg_panini_word2sutra.tsv
-                           (headword → licensing sūtra(s))
   - compound splits      : data/pwg_compound_split/pwg_compound_splits.tsv
-                           (headword → ordered members)
 
-Joins each onto RussianTranslation/src/headword_index.tsv on `k1` (SLP1 headword).
-Homonyms: the SanskritGrammar layers key on headword + PWG L_id, the index keys on
-k1 + hom; there is no committed L_id↔hom map, so a layer value is attached to every
-homonym row of that k1 and `homonym_ambiguous` is set when the k1 has >1 index row —
-the same attach-all-and-flag policy as enrich_portrait_grammar.py.
+Homonym alignment (upgraded from the k1-only attach-all-and-flag first version):
+  - **derivation** and **compound** carry a per-occurrence PWG `L_id`, so each is pinned to
+    the EXACT `(k1, hom)` its L_id maps to. `homonym_precise=1` marks such rows.
+  - **Pāṇini** `word2sutra` is headword-AGGREGATED (sūtras merged across a word's homonyms
+    into one row), so it stays k1-level — attached to every homonym of the k1, which is the
+    correct scope for aggregated data. `homonym_precise` does not apply to it.
+  A layer occurrence whose L_id is absent from the map falls back to k1-level (rare; the map
+  resolves 100 % of the index's (k1,hom) pairs).
 
-Compound is a CROSS-CHECK, not a primary field: the index already fills
-`compound_members` ~47%; this records whether PWG agrees / differs / fills a gap.
+Compound is a CROSS-CHECK, not a primary field: the index already fills `compound_members`
+~47%; this records whether PWG agrees / differs / fills a gap.
 
-Emits src/pwg_derivation_layer.tsv (committed, grammar-FAIR) + a coverage report to
-stderr. Deterministic; no LLM, no network. This sidecar is the input consumed by
-src/pilot/enrich_portrait_derivation.py (which bakes it into the local portraits).
+Emits src/pwg_derivation_layer.tsv (committed, grammar-FAIR) + a coverage report. The
+sidecar is consumed by src/pilot/enrich_portrait_derivation.py. Deterministic.
 
-    python src/pwg_derivation_layer.py                 # default paths
+    python src/pwg_derivation_layer.py
     python src/pwg_derivation_layer.py --sg-root ../../SanskritGrammar-data
 """
 import argparse
@@ -49,35 +49,49 @@ def read_tsv(path):
         yield from csv.DictReader(f, delimiter='\t')
 
 
-def load_taddhita(sg):
-    """k1(slp1) -> list of {base, suffix, class, citation}."""
-    p = os.path.join(sg, 'sangram', 'articles', 'taddhita-overview', 'data',
-                     'pwg_taddhita_derivations.tsv')
-    out = defaultdict(list)
+def load_lid_hom(sg):
+    """L_id -> (k1, hom)."""
+    p = os.path.join(sg, 'data', 'pwg_lid_hom_map', 'pwg_lid_hom_map.tsv')
+    out = {}
     for r in read_tsv(p):
-        out[r['headword_slp1']].append({
-            'base': r['base_slp1'], 'suffix': r['suffix'],
-            'class': r['suffix_class'],
-            'citation': (r.get('citations', '') or '').split(';')[0].strip(),
-        })
+        out[r['L_id']] = (r['k1'], r['hom'])
     return out
 
 
+def load_taddhita(sg, lid_hom):
+    """(k1, hom) -> {base, suffix, class, citation}; k1 -> same (k1-level fallback)."""
+    p = os.path.join(sg, 'sangram', 'articles', 'taddhita-overview', 'data',
+                     'pwg_taddhita_derivations.tsv')
+    precise, byk1 = {}, {}
+    for r in read_tsv(p):
+        rec = {'base': r['base_slp1'], 'suffix': r['suffix'], 'class': r['suffix_class'],
+               'citation': (r.get('citations', '') or '').split(';')[0].strip()}
+        kh = lid_hom.get(r.get('L_id', ''))
+        if kh:
+            precise.setdefault(kh, rec)
+        byk1.setdefault(r['headword_slp1'], rec)
+    return precise, byk1
+
+
+def load_compound(sg, lid_hom):
+    """(k1, hom) -> members; k1 -> members (fallback)."""
+    p = os.path.join(sg, 'data', 'pwg_compound_split', 'pwg_compound_splits.tsv')
+    precise, byk1 = {}, {}
+    for r in read_tsv(p):
+        members = [m.strip() for m in r['members_slp1'].split('+') if m.strip()]
+        kh = lid_hom.get(r.get('L_id', ''))
+        if kh:
+            precise.setdefault(kh, members)
+        byk1.setdefault(r['headword_slp1'], members)
+    return precise, byk1
+
+
 def load_panini(sg):
-    """k1(slp1) -> list of sūtra strings."""
+    """k1 -> sūtra list (headword-aggregated → k1-level by design)."""
     p = os.path.join(sg, 'data', 'pwg_panini_crosswalk', 'pwg_panini_word2sutra.tsv')
     out = {}
     for r in read_tsv(p):
         out[r['headword_slp1']] = [s.strip() for s in r['sutras'].split('|') if s.strip()]
-    return out
-
-
-def load_compound(sg):
-    """k1(slp1) -> members list (SLP1)."""
-    p = os.path.join(sg, 'data', 'pwg_compound_split', 'pwg_compound_splits.tsv')
-    out = {}
-    for r in read_tsv(p):
-        out[r['headword_slp1']] = [m.strip() for m in r['members_slp1'].split('+') if m.strip()]
     return out
 
 
@@ -86,7 +100,6 @@ def compound_status(pwg_members, index_members):
         return 'index-only' if index_members else ''
     if not index_members:
         return 'pwg-new-fill'
-    # normalise both to a comparable member-token set
     norm = lambda xs: [x.replace('˚', '').strip() for x in xs]
     return 'agrees' if norm(pwg_members) == norm(index_members) else 'differs'
 
@@ -102,30 +115,38 @@ def main():
             print('ERROR: %s not found: %s' % (lbl, p), file=sys.stderr)
             return 1
 
-    taddhita = load_taddhita(args.sg_root)
+    lid_hom = load_lid_hom(args.sg_root)
+    tad_precise, tad_k1 = load_taddhita(args.sg_root, lid_hom)
+    cmp_precise, cmp_k1 = load_compound(args.sg_root, lid_hom)
     panini = load_panini(args.sg_root)
-    compound = load_compound(args.sg_root)
 
-    # how many index rows share each k1 (for homonym-ambiguity flag)
-    k1_rows = Counter(r['k1'] for r in read_tsv(args.index))
-
-    cols = ['k1', 'hom', 'homonym_ambiguous', 'deriv_base', 'deriv_suffix', 'deriv_class',
+    cols = ['k1', 'hom', 'homonym_precise', 'deriv_base', 'deriv_suffix', 'deriv_class',
             'deriv_citation', 'panini_sutras', 'compound_members_pwg', 'compound_status']
     cov = Counter()
     comp_status_ctr = Counter()
-    n = 0
+    n = precise_rows = 0
     with open(args.out, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t')
         w.writerow(cols)
         for r in read_tsv(args.index):
-            k1 = r['k1']
-            tad = taddhita.get(k1, [])
-            sut = panini.get(k1, [])
-            cmp_pwg = compound.get(k1, [])
-            status = compound_status(cmp_pwg, [m for m in r.get('compound_members', '').split('+') if m.strip()])
+            k1, hom = r['k1'], r['hom']
+            kh = (k1, hom)
+            # derivation + compound: exact homonym via map, else k1-level fallback
+            tad = tad_precise.get(kh)
+            cmp_pwg = cmp_precise.get(kh)
+            pinned = tad is not None or cmp_pwg is not None
+            if tad is None:
+                tad = tad_k1.get(k1)
+            if cmp_pwg is None:
+                cmp_pwg = cmp_k1.get(k1)
+            sut = panini.get(k1, [])                     # k1-level (aggregated)
             if not (tad or sut or cmp_pwg):
                 continue
+            status = compound_status(cmp_pwg or [],
+                                     [m for m in r.get('compound_members', '').split('+') if m.strip()])
             n += 1
+            if pinned:
+                precise_rows += 1
             if tad:
                 cov['derivation'] += 1
             if sut:
@@ -133,20 +154,20 @@ def main():
             if cmp_pwg:
                 cov['compound'] += 1
             comp_status_ctr[status] += 1
-            first = tad[0] if tad else {}
+            tad = tad or {}
             w.writerow([
-                k1, r['hom'], '1' if k1_rows[k1] > 1 else '',
-                first.get('base', ''), first.get('suffix', ''), first.get('class', ''),
-                first.get('citation', ''),
+                k1, hom, '1' if pinned else '',
+                tad.get('base', ''), tad.get('suffix', ''), tad.get('class', ''),
+                tad.get('citation', ''),
                 '|'.join(sut),
-                ' + '.join(cmp_pwg),
+                ' + '.join(cmp_pwg or []),
                 status,
             ])
 
     print('wrote %s' % args.out, file=sys.stderr)
-    print('rows with >=1 PWG layer: %d' % n, file=sys.stderr)
+    print('rows with >=1 PWG layer: %d (homonym-pinned via map: %d)' % (n, precise_rows), file=sys.stderr)
     print('  derivation (taddhita) : %d' % cov['derivation'], file=sys.stderr)
-    print('  panini sutra          : %d' % cov['panini'], file=sys.stderr)
+    print('  panini sutra (k1-level): %d' % cov['panini'], file=sys.stderr)
     print('  compound (pwg)        : %d' % cov['compound'], file=sys.stderr)
     print('compound cross-check vs index: %s' % dict(comp_status_ctr.most_common()), file=sys.stderr)
     return 0
