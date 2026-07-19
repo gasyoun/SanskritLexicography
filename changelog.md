@@ -14,6 +14,24 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **LaukikaNyaya: index-cross-referenced recovery pass — 151 -> 300 of the >=400 target (19-07-2026, Sonnet 5 `claude-sonnet-5`, [H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md) resume)**:
+  [`LaukikaNyaya/tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)
+  now cross-references the raw OCR text's own back-matter "Alphabetical List of
+  Nyayas" (~458 entries) to recover headword occurrences the original strict
+  regex missed from stray OCR noise -- no new source, same committed
+  `raw/jacob_1907-1911_archiveorg_djvu.txt`. Also fixes a real
+  previously-shipped defect: an unanchored `.*` in the boilerplate-stripping
+  regex was silently truncating any explanation whose window contained a
+  mid-text digitization-credit line (lengthened 185/300 records' explanations,
+  some from the original 151). Headword text now preserves internal spaces
+  for phrase-type entries. One record excluded after a direct archive.org
+  page-image spot-check found cross-contaminated content; ~10 candidate
+  false positives rejected via a citation-guard. See
+  [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md)
+  for the full methodology and honest gap analysis (still short of >=400;
+  FEATURES_INDEX registration stays deferred).
+
 ## [1.30.0] — 19-07-2026
 
 ### Added
