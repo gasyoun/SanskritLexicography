@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.36.0] — 19-07-2026
+
 ### Added
 - **H803 dual-run reconciliation — LaukikaNyaya 240 + 300 records merged to 390 (`/dual-run-salvage`, Sonnet 5 `claude-sonnet-5`).** Two independent extraction passes ([PR #577](https://github.com/gasyoun/SanskritLexicography/pull/577), merged; [PR #576](https://github.com/gasyoun/SanskritLexicography/pull/576), open/conflicted) diverged from the same 151-record baseline unaware of each other. Reconciled as a union deduplicated on `nyaya_slp1` (150 records in common, 0 gloss-identity conflicts, 90+150 net-new) — the merged file is a manual reconciliation, not directly reproducible by a single [`tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py) run. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) for the full accounting.
 
