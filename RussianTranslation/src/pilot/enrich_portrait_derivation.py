@@ -9,6 +9,8 @@ enrich_portrait_grammar.py (Whitney root grammar). The block carries, per headwo
   - derivation : denominal base + suffix + class + <ls> citation (taddhita)
   - panini     : the Aṣṭādhyāyī sūtra(s) PWG cites for the form
   - compound   : PWG's member split + how it compares to the index's compound_members
+  - gana       : the Pāṇinian gaṇa(s) the word belongs to (external Gaṇapāṭha), + a
+                 `corroborated` flag when PWG cites the gaṇa's governing sūtra
 
 Source is the committed join sidecar src/pwg_derivation_layer.tsv (built by
 src/pwg_derivation_layer.py from the SanskritGrammar PWG layers + the L_id↔hom map).
@@ -57,6 +59,10 @@ def load_blocks(path=SIDECAR):
             if r.get('compound_members_pwg'):
                 b['compound'] = {'members': r['compound_members_pwg'],
                                  'vs_index': r['compound_status']}
+            if r.get('ganas'):
+                b['gana'] = {'ganas': r['ganas'].split('|'),
+                             'sutras': [s for s in r.get('gana_sutras', '').split('|') if s],
+                             'corroborated': bool(r.get('gana_corroborated'))}
             blocks_kh[(k1, hom)] = b
             blocks_k1.setdefault(k1, b)
     return blocks_kh, blocks_k1
@@ -112,7 +118,8 @@ def selftest():
     """Prove the attach + homonym-match logic on synthetic portraits (real store is local-only)."""
     block = {'source': 'x', 'homonym_precise': True,
              'derivation': {'base': 'aMSa', 'suffix': 'ka', 'class': 'уменьш.', 'citation': 'AK.'},
-             'panini': ['P.5.2.69'], 'compound': {'members': 'a + b', 'vs_index': 'agrees'}}
+             'panini': ['P.5.2.69'], 'compound': {'members': 'a + b', 'vs_index': 'agrees'},
+             'gana': {'ganas': ['saNkASAdiH'], 'sutras': ['4.2.80'], 'corroborated': True}}
     port = [{'key1': 'aMSaka', 'senses': []}, {'key1': 'aMSaka', 'senses': []}]
     with tempfile.TemporaryDirectory() as d:
         p = os.path.join(d, 'aMSaka~~h2_00_x.portrait.json')
