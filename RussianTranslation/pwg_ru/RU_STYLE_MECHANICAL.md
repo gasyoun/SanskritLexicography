@@ -40,8 +40,8 @@ local-only), as recorded in register §3:
 | id | rule | scope |
 |---|---|---|
 | **R1** | no letter ё anywhere in RU output — write е everywhere | whole `ru` field, whitelist below |
-| **R2** | «вместо» → «вм.» | editorial metalanguage (measured unrestricted, see below) |
-| **R3** | «в значении» → «в знач.» | editorial metalanguage (measured unrestricted, see below) |
+| **R2** | «вместо» → «вм.» | high-confidence editorial contexts only; ambiguous prose is unchanged |
+| **R3** | «в значении» → «в знач.» | high-confidence lexical-use contexts only; ambiguous prose is unchanged |
 | **R4** | `ed. Bomb.` → «Бомбейская ред.» | free prose ONLY, outside any `<ls>…</ls>` span |
 
 **R1 — no-ё whitelist.** Exactly the standalone token «всё»/«Всё» (regex `\bвсё\b`
@@ -54,30 +54,31 @@ preceded by a hyphen, so a hyphenated compound is never mistaken for the standal
 real per the ruling but had zero live instances to sweep); the regex still guards it
 defensively for future content.
 
-## False-positive measurement (BEFORE apply — the judgment call)
+## False-positive measurement (review-corrected full-population audit)
 
-Extracted every occurrence of «вместо», «в значении», and `ed. Bomb.` from the RU field of
-the canonical store (11,603 rows) and hand-classified metalanguage vs. quoted/translated
-prose, per the handoff's ≥50-sample / ≤2%-threshold instruction.
+The original H1305 decision sampled 60 of 291 «вместо» occurrences and reported no prose
+false positives. The review re-audited **all** pre-sweep R2/R3 occurrences and found that
+the sample had missed quoted, retained, narrative, and low-confidence apparatus contexts.
+The unrestricted claim is therefore withdrawn.
 
-| pattern | total occurrences | sample checked | prose (false-positive) | verdict |
+| pattern | pre-sweep population | hard/editorial | ambiguous, unchanged | verdict |
 |---|---:|---:|---:|---|
-| «вместо» | 291 | 60 (random, seed 1305) | **0/60 (0%)** | unrestricted sweep (R2) |
-| «в значении» | 24 | 24 (100%, small population) | **0/24 (0%)** | unrestricted sweep (R3) |
-| `ed. Bomb.` | 283 | 283 (100%, markup-classified) | see split below | prose-only sweep (R4) |
+| «вместо» | 291 | **279** | **12** | contextual R2 only |
+| «в значении» | 24 | **20** | **4** | contextual R3 only |
+| `ed. Bomb.` | 283 | 1 free-prose hit | 282 protected `<ls>` hits | prose-only R4 |
 
-**«вместо» (291 occurrences).** Every sampled hit is editorial apparatus — overwhelmingly
-the fixed pattern «ошибочно/неточно/вероятно вместо X» ("read X instead of Y is an error";
-42/60 carry an explicit error marker), plus other apparatus uses (case-government notes
-like «Вместо <ab>Dat.</ab> также <ab>Instr.</ab>», corrigenda «читать n. вместо m.»,
-variant-reading notes «<ab>v. l.</ab> вместо {#X#}») — **never** ordinary narrative prose
-describing real-world meaning. 0% measured false-positive rate is well under the handoff's
-~2% restriction threshold, so R2 applies to every occurrence unrestricted (no `{%…%}`
-context gating needed).
+R2 is hard only when its ±120-character context carries an explicit correction cue, its
+object begins with the specified markup/editorial qualifier, or its following context uses
+one of the specified reading/replacement formulae. R3 is hard only when its object is
+explicitly marked or its ±80-character context carries a lexical-use cue. An occurrence
+inside `«…»` or `{%…%}` is never abbreviated. The detailed cue lists live beside the shared
+classifier in `src/ru_style_sweep.py` and are pinned by tests.
 
-**«в значении» (24 occurrences, full population checked).** Every occurrence is the
-editorial sense-specification idiom («X в значении Y», "X in the sense of Y" / "X used to
-mean Y") — the exact pattern N12's vote targeted. 0% false positives; R3 applies unrestricted.
+All 16 ambiguous occurrences were reviewed. They include quoted prose («вместо того
+чтобы…»), retained `{%…%}` text, NWS technical narrative (`при māraṇa вместо abhra`), and
+apparatus whose punctuation or wording does not satisfy the high-confidence contract. Even
+where an editor might reasonably abbreviate the latter, the gate leaves it natural and
+non-blocking: precision takes priority over a false defect requeue.
 
 **`ed. Bomb.` (283 occurrences) — markup split, not a prose-vs-metalanguage split.**
 Every occurrence sits either standalone or embedded inside an `<ls>…</ls>` citation span,
@@ -110,7 +111,7 @@ PROPOSED follow-up (see below); it is NOT part of
 shipped scope (that handoff covers Panini/Spr./DHATUP link enrichment specifically, not
 `ed. Bomb.` display) — a future handoff should pick this up explicitly.
 
-## Sweep results (applied)
+## Sweep and review-repair results (applied)
 
 Ran [`src/ru_style_sweep.py --apply`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py)
 against the canonical store (backup verified row-count-match before apply, per the
@@ -119,17 +120,31 @@ handoff's prerequisite 2):
 | rule | substitutions | rows touched |
 |---|---:|---:|
 | R1 no-ё | 1,713 | (of 1,485 total touched rows) |
-| R2 «вместо»→«вм.» | 291 | |
-| R3 «в значении»→«в знач.» | 24 | |
+| R2 «вместо»→«вм.» | 291 initially; **279 retained after review** | |
+| R3 «в значении»→«в знач.» | 24 initially; **20 retained after review** | |
 | R4 `ed. Bomb.` (prose only) | 1 | |
-| **total substitutions** | **2,029** | **1,485 distinct rows** |
+| **total substitutions** | **2,029 initially; 2,013 retained after review** | **1,485 initial distinct rows** |
 
-**Store row count: 11,603 → 11,603 (unchanged, as required — content-only edit).**
-Re-running the auditor (`python src/ru_style_sweep.py`, dry-run) after `--apply` reports
-**0 residual violations** across all four rules — the sweep is idempotent (each
-substitution's output contains none of its own trigger pattern: «вм.» contains no
-«вместо», е-forms contain no ё, «Бомбейская ред.» sits outside `<ls>`, «в знач.» contains
-no «в значении»).
+The review repair reconciled the live store against the original H1305 backup by a stable
+row-content hash plus duplicate ordinal. It restored **16** ambiguous R2/R3 occurrences
+(12 + 4), preserved every later/current-only row, and found **0 conflicts**. Store row count
+remained **11,603 → 11,603**; the post-repair hash is
+`200cde941773a821c94ddc84a2976a645b1eea44b8e596cd954a6c81bac80bb7`.
+The final audit reports **0 hard violations** and the expected 12/4 diagnostic warnings.
+
+Every apply now creates an exclusive UTC-timestamped backup, verifies its SHA-256 and row
+count, and compares the live-store hash both after reading and immediately before atomic
+replacement. The first review-repair backup preserved the legacy-swept store at hash
+`c82a65c4c6159409867ceaa0f4aeb1d637925a0257ff62960c34332562c30488` (11,603 rows).
+The ignored JSON evidence report records before/after hashes, populations, rule counts, all
+16 restored values, ambiguous snippets, and conflicts. The derived RU card translation
+memory was rebuilt and validated after the repair.
+
+The `--wf` gate now parses workflow results and inspects only
+`card.records[].senses[].russian`; notes, differentia, German source text, rendered headings,
+and footer metadata cannot create a style defect. Ambiguous matches are printed under
+`WARNED_JSON` and are never included in `FLAGGED_JSON`. `scan_violations(text) -> list[str]`
+remains the compatibility surface used by existing callers.
 
 ## PROPOSED candidates (routed to H1306 / MG, NOT applied here)
 
