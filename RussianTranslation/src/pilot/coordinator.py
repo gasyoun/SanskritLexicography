@@ -109,13 +109,52 @@ def ensure_dirs():
     return p
 
 
-def pid_alive(pid):
-    if not pid:
-        return False
+def _win32_pid_alive(pid):
+    # A1 (H1283): os.kill(pid, 0) on win32 is GenerateConsoleCtrlEvent(CTRL_C_EVENT), NOT a
+    # liveness probe -- it reported a LIVE >600 s promotion-lock holder (whose TM rebuild
+    # legitimately runs >10 min) as dead, so DirLock.stale() reclaimed the lock into two
+    # concurrent state.json / canonical-store writers. Probe correctly via OpenProcess +
+    # GetExitCodeProcess == STILL_ACTIVE.
+    import ctypes
+    from ctypes import wintypes
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    STILL_ACTIVE = 259
+    ERROR_ACCESS_DENIED = 5
+    k32 = ctypes.WinDLL('kernel32', use_last_error=True)
+    k32.OpenProcess.restype = wintypes.HANDLE
+    k32.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
+    h = k32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
+    if not h:
+        # A live process we simply lack rights to open (ERROR_ACCESS_DENIED) is still ALIVE;
+        # ERROR_INVALID_PARAMETER (87) = no such pid -> dead. Lean 'alive' on anything else so
+        # a lock is never falsely reclaimed (the A1 failure direction we are closing).
+        return ctypes.get_last_error() == ERROR_ACCESS_DENIED
     try:
-        os.kill(int(pid), 0)
+        code = wintypes.DWORD()
+        k32.GetExitCodeProcess.argtypes = [wintypes.HANDLE, ctypes.POINTER(wintypes.DWORD)]
+        if not k32.GetExitCodeProcess(h, ctypes.byref(code)):
+            return True  # handle opened but exit code unreadable -> treat as alive
+        return code.value == STILL_ACTIVE
+    finally:
+        k32.CloseHandle(h)
+
+
+def pid_alive(pid):
+    try:
+        pid = int(pid)
+    except (TypeError, ValueError):
+        return False
+    if pid <= 0:
+        return False
+    if sys.platform == 'win32':
+        try:
+            return _win32_pid_alive(pid)
+        except Exception:
+            return True  # never falsely reclaim a lock on a probe error (A1 direction)
+    try:
+        os.kill(pid, 0)
         return True
-    except (OSError, ValueError):
+    except OSError:
         return False
 
 
@@ -142,6 +181,15 @@ class DirLock:
                 time.sleep(0.2)
 
     def __exit__(self, exc_type, exc, tb):
+        # A1 (H1283): only remove the lock if WE still own it. If this lock was reclaimed and
+        # re-created by another process (e.g. after a stale() ruling), its owner.json now
+        # carries a different pid; a blind rmtree here would destroy the NEW owner's live lock.
+        try:
+            meta = json.load(open(os.path.join(self.path, 'owner.json'), encoding='utf-8'))
+            if meta.get('pid') != os.getpid():
+                return
+        except (OSError, json.JSONDecodeError):
+            pass  # no readable owner.json -> our own incomplete lock dir; clean it up
         shutil.rmtree(self.path, ignore_errors=True)
 
     def write_meta(self):

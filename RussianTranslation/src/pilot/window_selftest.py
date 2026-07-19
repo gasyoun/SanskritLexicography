@@ -6019,6 +6019,53 @@ def test_degenerate_source_identity():
     print('  R7: degenerate (h,grammar) is proven source identity; unprovable identity is rejected')
 
 
+def test_h1283_a1_pid_alive_and_dirlock_owner():
+    """A1 (H1283): pid_alive is a real liveness probe (os.kill(pid,0) is broken on win32);
+    DirLock.__exit__ spares a lock that has been re-owned by another pid."""
+    import coordinator as coord
+    import json as _json
+    import tempfile as _tf
+    import shutil as _sh
+    if not coord.pid_alive(os.getpid()):
+        fail('A1: pid_alive(own pid) must be True')
+    if coord.pid_alive(2 ** 31 - 1):
+        fail('A1: pid_alive(impossible pid) must be False')
+    if coord.pid_alive(0) or coord.pid_alive(None) or coord.pid_alive('nope'):
+        fail('A1: pid_alive of 0/None/non-numeric must be False')
+    d = _tf.mkdtemp()
+    try:
+        lockpath = os.path.join(d, 'L')
+        with coord.DirLock(lockpath, ttl_seconds=9999, wait_seconds=1):
+            with open(os.path.join(lockpath, 'owner.json'), 'w', encoding='utf-8') as f:
+                _json.dump({'pid': os.getpid() + 1, 'created_at': coord.utc_now()}, f)
+        if not os.path.isdir(lockpath):
+            fail('A1: DirLock.__exit__ deleted a lock owned by a different pid')
+    finally:
+        _sh.rmtree(d, ignore_errors=True)
+    print('  A1: pid_alive is a real liveness probe; DirLock spares a foreign-owned lock')
+
+
+def test_h1283_a5_max_wide_default_bounded():
+    """A5 (H1283): bounded dispatch is the DEFAULT — the highest throughput-per-effort lever."""
+    import gen_opt_harness2 as gh
+    if gh.MAX_WIDE != 3:
+        fail('A5: gen_opt_harness2.MAX_WIDE default must be 3 (got %r)' % gh.MAX_WIDE)
+    if gh.STAGGER_MS != 2000:
+        fail('A5: gen_opt_harness2.STAGGER_MS default must be 2000 (got %r)' % gh.STAGGER_MS)
+    print('  A5: MAX_WIDE=3 / STAGGER_MS=2000 is the default (0 remains an explicit opt-out)')
+
+
+def test_h1283_a6_prep_slice_flattens_batches():
+    """A6 (H1283): prep_slice must take EVERY key of each batch, not only the first."""
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'h1209', 'prep_slice.py')
+    text = open(src, encoding='utf-8').read()
+    if '[b[0] for b in' in text:
+        fail('A6: prep_slice still takes only the first key of each batch ([b[0] for b in ...])')
+    if "for b in m['batches'] for k in b" not in text:
+        fail("A6: prep_slice must flatten all batch keys ([k for b in m['batches'] for k in b])")
+    print('  A6: prep_slice flattens every batch key')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -6165,6 +6212,9 @@ def main():
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
         test_h_reconstructed_regression_guard,
+        test_h1283_a1_pid_alive_and_dirlock_owner,
+        test_h1283_a5_max_wide_default_bounded,
+        test_h1283_a6_prep_slice_flattens_batches,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
