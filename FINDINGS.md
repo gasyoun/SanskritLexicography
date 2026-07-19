@@ -2731,3 +2731,35 @@ which sharpen — not overturn — the finding:
 > [SanskritGrammar PR #450](https://github.com/gasyoun/SanskritGrammar/pull/450) (supersedes
 > [#447](https://github.com/gasyoun/SanskritGrammar/pull/447)) · H1310 · 19-07-2026,
 > Opus 4.8 (`claude-opus-4-8[1m]`).
+
+---
+
+### §98. Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass
+
+The H1305 RU style gate originally scanned rendered `.merged.md` output and applied
+«вместо»→«вм.» / «в значении»→«в знач.» globally after a clean 60/291 R2 sample and a
+24/24 R3 census. Review exposed two independent false-positive paths. First, rendered
+output contains notes, differentia, source text, headings, and footer metadata that are not
+the translated sense; those fields can contain a trigger even when every Russian sense is
+clean. Second, the R2 sample missed rare quoted, retained, and narrative uses. A complete
+pre-sweep audit measured R2 **279 hard / 12 ambiguous** and R3 **20 hard / 4 ambiguous**.
+
+**Reusable rule.** A gate for a semantic output field must parse the producer's structured
+result and inspect that field directly (`card.records[].senses[].russian` here), aggregating
+back to the original work key only after field-level classification. Rendered documents are
+presentation artifacts, not an audit schema. For style substitutions that can also be
+ordinary prose, use an explicit high-precision cue classifier; surface ambiguous matches as
+warnings and keep them out of defect/requeue output. Before a store-wide apply, audit the
+whole trigger population when it is small enough—an apparently clean random sample does not
+establish absence of rare context classes.
+
+The repair also established the write-safety pattern: reconcile an old backup to the live
+store by a stable non-translation hash plus duplicate ordinal; recognize only original,
+legacy-transformed, or newly scoped values; refuse the whole apply on divergence; create a
+new exclusive timestamped backup on every apply; verify hash + row count; and re-hash the
+live store immediately before atomic replacement. This restored 16 H1305 over-abbreviations
+without overwriting later edits (11,603 rows, 0 conflicts).
+
+> **Source:** [`RussianTranslation/src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py) +
+> [`RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md) ·
+> 19-07-2026, Codex/GPT-5.
