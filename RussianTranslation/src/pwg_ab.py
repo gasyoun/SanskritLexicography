@@ -34,6 +34,15 @@ def table():
     global _AB
     if _AB is None:
         _AB = {}
+        if not os.path.exists(AB):
+            # The pwgab tooltip source lives in the sibling csl-pywork repo, which is
+            # not checked out in every environment (CI runs only this repo). A missing
+            # OPTIONAL tooltip table must degrade to "no expansion", never crash the
+            # site build (H1308): resolve() then returns None and <ab> tags render
+            # without a hover title. Warn once so a genuinely misconfigured local run
+            # stays visible.
+            sys.stderr.write('pwg_ab: table source not found (%s); <ab> tooltips disabled\n' % AB)
+            return _AB
         for line in open(AB, encoding='utf-8'):
             if '\t' not in line:
                 continue
