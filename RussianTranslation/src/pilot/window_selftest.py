@@ -1104,6 +1104,42 @@ def test_german_connective_fix():
         fail('connective fix wrongly altered an ambiguous German phrase')
 
 
+def test_h1302_german_prose_residue_scan():
+    # H1302: the store-wide German-prose-residue detector + deterministic --store fixer.
+    from german_residue_scan import scan_text
+    from fix_german_connectives import fix_ru_store
+
+    def classes(text):
+        return {(tok, cls) for tok, _ctx, cls in scan_text(text)}
+
+    # prose `zu` in a citation (Schol. zu <ls>) is flagged and deterministically fixable (class a)
+    zu = classes('5) {%извлекать%}: {#tApasA#}\n<ab>Schol.</ab> zu <ls>ŚĀK. 14.</ls>')
+    if ('zu', 'a') not in zu:
+        fail('H1302: citation `zu` not flagged as class-a residue')
+    # `mit Ergänzung von` outside markup is flagged class a
+    if not any('Erg' in t and c == 'a' for t, c in classes('{%примирить%} mit Ergänzung von {#saha grIveRa#})')):
+        fail('H1302: `mit Ergänzung von` not flagged as class-a residue')
+    # a protected German gloss {%…%} and a «…» verbatim quote are NEVER flagged
+    if classes('{%родственник, друг%} «nahe stehend» <ab>vgl.</ab> {#Api#}'):
+        fail('H1302: detector flagged a protected {%…%} / «…» span')
+    # grammatical German prose "mit dem <ab>acc.</ab>" is class-b (needs retranslation, not a sub)
+    if not any(c == 'b' for _, c in classes('{%думать о%}; mit dem <ab>acc.</ab>: {#aBi#}')):
+        fail('H1302: "mit dem <ab>acc.</ab>" not flagged as class-b retranslate')
+    # author proper names with German orthography are whitelisted (class c), never residue
+    if not any(c == 'c' for _, c in classes('Кауз.: оживлять. [NWS: Graßmann 1873 (1996) : 491]') or [(None, 'x')]):
+        # [NWS:…] is masked entirely; a bare "Böhtlingk 1840" still whitelists to c
+        if not any(c == 'c' for _, c in classes('первоначальном состоянии. Böhtlingk 1840 : 548')):
+            fail('H1302: proper-name author not whitelisted (class c)')
+    # the deterministic --store fixer repairs the two rejected-card patterns exactly
+    if fix_ru_store('<ab>Schol.</ab> zu <ls>ŚĀK. 14.</ls>')[0] != '<ab>Schol.</ab> к <ls>ŚĀK. 14.</ls>':
+        fail('H1302: --store fixer did not turn citation `zu` into «к»')
+    if fix_ru_store('{%примирить%} mit Ergänzung von {#saha#}')[0] != '{%примирить%} с восполнением {#saha#}':
+        fail('H1302: --store fixer did not turn `mit Ergänzung von` into «с восполнением»')
+    # the fixer NEVER touches a protected span
+    if fix_ru_store('{%mit und ohne%} «und»')[1]:
+        fail('H1302: --store fixer touched a protected {%…%} / «…» span')
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -6162,6 +6198,7 @@ def main():
         test_braced_gloss_audit,
         test_german_residue_keeps_retained_markup,
         test_german_connective_fix,
+        test_h1302_german_prose_residue_scan,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,

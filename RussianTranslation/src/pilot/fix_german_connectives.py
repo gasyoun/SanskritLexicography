@@ -15,6 +15,7 @@ German phrases (e.g. "aber nur in der Saṃhitā") are deliberately left for rev
   python src/pilot/fix_german_connectives.py wf_output.json [--dry-run]
 """
 import json
+import os
 import re
 import sys
 
@@ -36,6 +37,7 @@ CONNECTIVES = [
     (re.compile(r'\bmit\b'), 'с'),
     (re.compile(r'\bohne\b'), 'без'),
     (re.compile(r'\bauch\b'), 'также'),
+    (re.compile(r'\boder\b'), 'или'),
 ]
 
 
@@ -64,11 +66,121 @@ def _sub_segment(seg):
     return seg, n
 
 
+# ---------------------------------------------------------------------------
+# Store mode (H1302): apply the DETERMINISTIC German-prose-residue subs (class 'a')
+# directly to the RU field of every row in the canonical pwg_ru store. The
+# context-sensitive patterns (citation zu/bei, "Mit {#prefix#}" header, fixed
+# phrases) are imported from german_residue_scan so the detector and the fixer can
+# never drift; the lone connectives run in free text only (protected spans masked).
+# ---------------------------------------------------------------------------
+_HERE = os.path.dirname(os.path.abspath(__file__))
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
+_SRC = os.path.dirname(_HERE)
+if _SRC not in sys.path:
+    sys.path.insert(0, _SRC)
+
+# lone connectives with an unambiguous single Russian equivalent (bare "mit" is
+# deliberately EXCLUDED here -- store-wide it collides with grammatical "mit dem
+# <ab>acc.</ab>"; capital "Mit {#prefix#}" headers are handled by MIT_HEADER instead).
+LONE_STORE = [
+    (re.compile(r'\bund\b'), 'и'),
+    (re.compile(r'\boder\b'), 'или'),
+    (re.compile(r'\bohne\b'), 'без'),
+    (re.compile(r'\bauch\b'), 'также'),
+]
+
+
+def _sub_free_only(text, subs, protected):
+    """Apply (pattern, repl) subs ONLY to text outside protected spans."""
+    out, n, last = [], 0, 0
+    for m in protected.finditer(text):
+        seg = text[last:m.start()]
+        for pat, repl in subs:
+            seg, c = pat.subn(repl, seg)
+            n += c
+        out.append(seg)
+        out.append(m.group(0))
+        last = m.end()
+    seg = text[last:]
+    for pat, repl in subs:
+        seg, c = pat.subn(repl, seg)
+        n += c
+    out.append(seg)
+    return ''.join(out), n
+
+
+def fix_ru_store(text):
+    """Return (fixed_text, n_subs) applying the H1302 deterministic class-'a' residue subs."""
+    from german_residue_scan import (
+        CITATION_ZU, CITATION_BEI, MIT_HEADER, MIT_ERGAENZUNG, FEHLERHAFT_FUER,
+        PROTECTED as SCAN_PROTECTED)
+    if not text:
+        return text, 0
+    n = 0
+    # 1) context-sensitive subs on the FULL text (tags intact, needed by the patterns).
+    text, c = MIT_ERGAENZUNG.subn('с восполнением', text); n += c
+    text, c = FEHLERHAFT_FUER.subn('ошибочно вместо', text); n += c
+    text, c = CITATION_ZU.subn(r'\1к\2', text); n += c
+    text, c = CITATION_BEI.subn(r'у\1', text); n += c
+    text, c = MIT_HEADER.subn('С', text); n += c
+    # 2) lone connectives in free text only (protected spans masked).
+    text, c = _sub_free_only(text, LONE_STORE, SCAN_PROTECTED); n += c
+    return text, n
+
+
+def run_store(dry=False):
+    from store_path import canonical_store
+    default_local = os.path.join(_SRC, 'pwg_ru_translated.jsonl')
+    store = canonical_store(default_local)
+    if not os.path.exists(store):
+        sys.exit('STORE ABSENT: %s' % store)
+    rows = []
+    with open(store, encoding='utf-8') as f:
+        for line in f:
+            line = line.rstrip('\n')
+            if line:
+                rows.append(json.loads(line))
+    total, touched = 0, []
+    for r in rows:
+        new, n = fix_ru_store(r.get('ru', '') or '')
+        if n:
+            total += n
+            touched.append(('%s|%s|%s' % (r.get('key1'), r.get('subcard'), r.get('sense_tag')), n))
+            if not dry:
+                r['ru'] = new
+    print('STORE MODE %s' % ('(DRY RUN)' if dry else ''))
+    print('store           : %s' % store)
+    print('rows            : %d' % len(rows))
+    print('rows touched    : %d' % len(touched))
+    print('substitutions   : %d' % total)
+    for k, n in touched[:30]:
+        print('  %-40s %d' % (k, n))
+    if len(touched) > 30:
+        print('  … (%d more rows)' % (len(touched) - 30))
+    if not dry and total:
+        bak = store + '.h1302.bak'
+        if not os.path.exists(bak):
+            import shutil
+            shutil.copyfile(store, bak)
+            print('backup          : %s' % bak)
+        tmp = store + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+        os.replace(tmp, store)
+        print('wrote           : %s' % store)
+
+
 def main():
+    if '--store' in sys.argv:
+        run_store(dry='--dry-run' in sys.argv)
+        return
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     dry = '--dry-run' in sys.argv
     if not args:
-        sys.exit('usage: python src/pilot/fix_german_connectives.py wf_output.json [--dry-run]')
+        sys.exit('usage: python src/pilot/fix_german_connectives.py wf_output.json [--dry-run]\n'
+                 '   or: python src/pilot/fix_german_connectives.py --store [--dry-run]')
     path = args[0]
     data = json.load(open(path, encoding='utf-8'))
     total, touched = 0, []

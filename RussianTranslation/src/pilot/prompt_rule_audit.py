@@ -44,7 +44,11 @@ from government_census import extract_government
 GERMAN_RESIDUE = re.compile(
     r'\b(?:der|die|das|den|dem|des|und|oder|mit|ohne|von|für|nicht|eine|einer|'
     r'eines|einem|einen|auch|wohl|vielleicht|beim|bezeichnet|bedeutung|'
-    r'gewässer|wasser|gabe|geschenk|schulter|strahl|sonne)\b',
+    r'gewässer|wasser|gabe|geschenk|schulter|strahl|sonne|'
+    # H1302 German-prose-residue survivors (shared source:
+    # foreign_literal_guards.GERMAN_PROSE_RESIDUE; LANG_PARITY german_prose_residue_h1302)
+    r'zu|bei|nach|unter|statt|dessen|im|am|zum|zur|aus|gegen|so|als|noch|nur|'
+    r'aber|kein|keine|dieser|diese|dieses|ende|könnte|häufiger|später|ziehen)\b',
     re.I)
 CYR_WORD = re.compile(r'[А-Яа-яЁё]{2,}')
 TAG_TOKEN = re.compile(r'</?(?:ls|ab|lex|is)\b[^>]*>', re.I)
@@ -76,7 +80,11 @@ GERMAN_GLOSS_WORDS = re.compile(
     # colloquial questions ("wie kommst du darauf?") with no recognized German
     # marker at all, mis-tripping foreign_gloss_translated (gam~~h0_20_ava,
     # gam~~h0_38_sam_a).
-    r'Jmd|jmdm|jmdn|du|wie|woraus|dieses)\b',
+    r'Jmd|jmdm|jmdn|du|wie|woraus|dieses|'
+    # H1302 German-prose-residue survivors (shared source:
+    # foreign_literal_guards.GERMAN_PROSE_RESIDUE; LANG_PARITY german_prose_residue_h1302)
+    r'zu|bei|nach|unter|statt|dessen|im|am|zum|zur|aus|gegen|so|als|noch|nur|'
+    r'aber|kein|keine|dieser|diese|Ende|könnte|häufiger|später|ziehen)\b',
     re.I)
 TEXT_CITATION = re.compile(
     r'(?:<ls\b|ṚV|RV|Atharv|AV\.|MBH|Mahābh|Rām|R\.|M\.|BhP|ŚBr|TS\.|VS\.|'
