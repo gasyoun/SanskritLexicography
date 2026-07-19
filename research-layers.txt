@@ -85,3 +85,15 @@ https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/
 
 Правка: Добавить контекст: указать, в какой школе (например, Панинийская) формировалось это понятие, как комментарии (бхашьи, варттики) развивали или оспаривали взгляды на корни, какие авторитеты стояли за разными классификациями. - чтобы сделать это, поставь задачу - обучить скилл на  Kātyāyana's Vārttika-sūtra https://vedicheritage.gov.in/pdf/Vartikas_Prof_Bhagyalata_Pataskar.pdf + Махабхашья Franz, Kielhorn (1892–1909). The Vyākaraṇa-Mahābhāṣya of Patañjali (2 ed.) https://web.archive.org/web/20070610194203/http://hin.osaka-gaidai.ac.jp/cardona/mbhas/mbhas1s.txt + Cardona, George (1997). Pāṇini: A Survey of Research. + Staal, J.F. (ed.), 1985. A Reader on Sanskrit Grammarians + Scharfe, Hartmut, 1977. Grammatical Literature. Vol. V, Fasc. 2
 Вручную подобная задача неописильна.
+
+===
+
+PWG→RU LOD-graph IRI publication domain (08-07-2026, H350 backlog #1 / E7 ✅ delivered — PR #234). The graph generator export_lod.py ships a placeholder dereferenceable base IRI https://w3id.org/sanskrit-lexicon/pwg-ru/ and takes --base-iri; nothing hard-codes it. Decide the permanent domain — register a w3id.org PURL (recommended: community-standard, DNS-independent) vs a samskrte.ru/project domain — before any public RDF release. IRIs are permanent, so this is a human ruling, not a code default. Full graph-data publication is separately gated on G5 sense-approvals (store is 100% ai_translated). Design: LOD_GRAPH.md. Full publishing runbook (this + the two rulings below): csl-standards/docs/PUBLISHING_LOD.md §2.
+
+Can you do the needed at https://w3id.org/#new?
+
+
+====
+
++In H1310 VCP,SKD is good, but why we lack ARMH, ABCH, ACPH, ACSJ, NMMB? Amarukosha from https://sanskrit.uohyd.ac.in/scl/amarakosha/frame.html
+How can only Apte,PWK,PW,MW help us? MW itself has L., but does not tell nothing more about from which exactly kosha does the meaning come from.
