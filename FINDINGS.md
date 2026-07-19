@@ -99,6 +99,8 @@ refuted or superseded, strike it and say why — never reuse its number.
 
 - 🔴 [§36. IAST Unicode collides and normalises lossily](#36-iast-unicode-collides-and-normalises-lossily) — NFD + strip-Mn destroys length and retroflexion.
 - 🟠 [§37. BOM state is inconsistent across exports](#37-bom-state-is-inconsistent-across-exports) — check head -c 3; preserve on write.
+- 🔴 [§100. `nfold` fuses every nasal to `n`, manufacturing false quotation matches](#100-nfold-earns-sandhi-tolerant-recall-by-fusing-every-nasal-to-n-which-manufactures-false-quotation-matches-unless-every-hit-is-re-verified-on-norm) — nfold for recall, norm for the verdict.
+- 🔴 [§102. DCS `text_sandhied` is not reliably sandhied](#102-dcs-sentencetext_sandhied-is-not-reliably-sandhied-some-rows-store-analyzed-word-forms-which-silently-downgrades-verbatim-quotations-to-partial-matches) — some rows store analyzed word forms; cross-check a real-surface corpus.
 - 🟠 [§38. Injected BOMs crash the hw record parser](#38-injected-boms-crash-the-hw-record-parser) — "init_entries Error 2" is an encoding symptom, not a structure defect.
 - 🟡 [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - 🟠 [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
@@ -952,6 +954,70 @@ NFD-decompose-then-strip-Mn destroys vowel length (`ā`→`a`) and retroflex dot
 Implication: use a length-preserving `form_key`, not a blanket NFD+strip-combining.
 
 > **Source:** [`form_key` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util / shared · 2026-06
+
+### §100. `nfold` earns sandhi-tolerant recall by fusing every nasal to `n` — which manufactures false quotation matches unless every hit is re-verified on `norm`
+
+🔴 **`sanskrit_util.nfold` maps *every* nasal to `n`, stem-internally as well as at sandhi
+boundaries. That is exactly what makes it useful for corpus matching, and exactly what makes
+it unsafe as the key a verdict rests on.**
+
+Evidence (H1212, matching Bühler's exercise sentences against DCS 2026): `nfold` folds
+Bühler's `janānāṃ dhanaṃ` and the unrelated corpus string `yājamānaṃ dhānaṃjayyaḥ` close
+enough to register as a shared contiguous run. Re-verifying the same run on `norm` (which is
+diacritic-insensitive but keeps `m`/`n` distinct) removes it, along with its whole class:
+the `adapted` bucket fell from 28 rows to 16 — **43 % of that bucket was nasal-folding
+artefact**.
+
+Implication: use `nfold` for *recall* (generating candidates, absorbing anusvāra/ṃ/m/n
+sandhi variation that would otherwise hide a real quotation), then require every surviving
+candidate to match on `norm` before it counts as evidence. Two keys, two jobs. A pipeline
+that rules on `nfold` alone will report inflated attestation and will not look obviously
+wrong — the false hits are individually plausible.
+
+Related trap from the same pass, not specific to Sanskrit: **token-overlap scoring without
+an adjacency requirement is not evidence of quotation.** IDF-weighted containment scored
+`adya jīvāmaḥ` ("today we live") at 0.64 because both its tokens occur, scattered and
+unrelated, somewhere in a long Aṣṭāṅgahṛdaya sentence. Requiring a contiguous run instead
+halved that bucket again (56→28). For short sentences over a large corpus, co-occurrence of
+common vocabulary is the null hypothesis, not the signal.
+
+> **Source:** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py)
+> + [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md)
+> — SanskritGrammar / H1212, Opus 4.8 (`claude-opus-4-8`) · 2026-07
+
+### §102. DCS `sentence.text_sandhied` is not reliably sandhied — some rows store analyzed word forms, which silently downgrades verbatim quotations to partial matches
+
+🔴 **The DCS column named `text_sandhied` does not always hold the sandhied surface text.
+Some rows hold word-segmented, partly *un*-sandhied forms — so matching printed text
+against it under-reports verbatim quotation.**
+
+Evidence (H1344): Bühler's exercise `ācārādvicyuto vipro na vedaphalamaśnute` is a verbatim
+Manusmṛti quotation. DCS stores that line as
+`ācārāt vicyutaḥ vipraḥ na veda phalam aśnute` — `vicyutaḥ` not `vicyuto`, `vipraḥ` not
+`vipro`, `vedaphalam` split as `veda phalam`. Matched against DCS alone it scored as a
+*partial* run (verdict `invented`); matched against GRETIL's true surface text
+`ācārād vicyuto vipro na vedaphalam aśnute` it is an exact hit. The verdict crossed two
+buckets purely on which corpus held the same verse.
+
+Implication: whitespace-insensitive matching is not enough — the *segmental* forms differ,
+not just the word boundaries. A pipeline that treats `text_sandhied` as the printed surface
+will systematically under-count quotation. Cross-check against a corpus that stores real
+surface text (GRETIL plaintext) before reporting an attestation rate as final. Distinct from
+§36: nothing is lost in normalization here — DCS's stored string is simply a different
+string from the printed one.
+
+**Second, transferable trap from the same pass — grammatical metalanguage collides with
+commentarial metalanguage.** A sentence whose *purpose* is to display a grammatical pattern
+will match any text that uses that pattern, and that is not evidence of a source. Bühler's
+bahuvrīhi drill `udgataṃ mukhaṃ yasya saḥ` matched the Mugdhāvabodhinī's
+`dṛḍhaṃ mukhaṃ yasyāḥ sā`: both are the standard *vigraha* formula `X mukhaṃ yasya saḥ`,
+which recurs throughout commentary because it *is* the analytical formula. No similarity
+threshold fixes this — it is a category error about what the string is, and the only remedy
+is to classify metalanguage out of the input before matching.
+
+> **Source:** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py)
+> + [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md)
+> — SanskritGrammar / H1344, Opus 4.8 (`claude-opus-4-8`) · 2026-07
 
 ### §37. BOM state is inconsistent across exports
 
@@ -2855,3 +2921,47 @@ without overwriting later edits (11,603 rows, 0 conflicts).
 > **Source:** [`RussianTranslation/src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py) +
 > [`RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md) ·
 > 19-07-2026, Codex/GPT-5.
+
+---
+
+### §101. DCS's compound dictionary carries splits whose member **order** does not match the surface form — invisible to a type-drill, fatal to any head-first analysis
+
+Measured 19-07-2026 over
+[`VisualDCS/derived-data/Kompozity/names.csv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/names.csv)
+(168 880 attested compounds, schema `surface; split; nMembers; totalFreq; …`). The
+split field is **not** guaranteed to list members in the order they occur in the surface
+form. Four distinct defect shapes, all with real corpus frequencies attached:
+
+| surface | split as given | defect |
+|---|---|---|
+| `rājakule` | `kula rājan` | members reversed |
+| `dharmālokamukhaṁ` | `āloka mukha dharma` | rotated |
+| `gaur` | `go go` | member repeated beyond the surface |
+| `ūrdhvaṁ` | `daśan rātra` | split belongs to a different word entirely |
+
+**Why this went unnoticed until now.** Every prior consumer of this asset asked
+order-independent questions — how many members, which lemmas participate, compound-type
+frequency. Membership is correct in these rows; only sequence is wrong, so an
+order-independent consumer sees clean data. The defect surfaces the moment something
+depends on **which member is last** — i.e. any analysis using the standard rule that a
+determinative compound's syntactic head is its final member.
+
+**Mitigation that works despite sandhi.** A naive prefix check fails on correct rows,
+because compound members are reshaped at the right edge by stem loss (`rājan` → `rāja-`)
+and at the left edge by vowel sandhi (`indra` → `-endra`, in `rājendra`). Matching on the
+ordered **consonant skeleton** (drop vowels, anusvāra and visarga; require each member's
+first two consonants to occur in the surface skeleton in sequence) is blind to both edges
+by construction and still discriminates: it accepts `rājendra ← rājan indra` while
+rejecting all four rows above. At freq ≥ 5 and ≤ 4 members it rejects **209 of 6 287**
+rows (3.3%).
+
+**Rule:** any consumer of `names.csv`/`cmps.csv` that cares about member order must
+verify it against the surface form and count the rejects — never reorder silently, and
+never assume the last listed member is the head.
+
+> **Source:** [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md) ·
+> gate implemented as `order_ok()` in
+> [`sangram/data/samasa_ladder/build_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/samasa_ladder/build_samasa_ladder.py),
+> pinned by four regression tests in
+> [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py) ·
+> 19-07-2026, Opus 4.8 (`claude-opus-4-8`).

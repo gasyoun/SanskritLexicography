@@ -14,6 +14,21 @@ not an error.
 
 ## [Unreleased]
 
+## [1.38.0] — 19-07-2026
+
+### Added
+- **H803 clean-scan lane — LaukikaNyaya 302 → 377 records, real per-entry page citations for the first time (Sonnet 5 `claude-sonnet-5`).** Independently found and OCR'd a different, cleaner archive.org source — three University of California Libraries scans (`handfulofpopular01/02/03jacoiala`, one per Jacob "handful") — after re-confirming the primary `YKTn_...` item's image backend was still down; this alternate source's own OCR text layer is Devanagari-blind, but its IIIF backend worked (a different datanode), so all 378 page images were fetched and OCR'd locally with Tesseract's Sanskrit-aware `san+eng` model. Reconciled against the corrected 302-record file: 223 matched (193 body-upgraded, all gaining a real page citation), 78 genuinely new, 79 kept as-is, minus 3 pre-existing visarga-differing near-duplicate pairs in the 302-set exposed and resolved along the way → **377 records (94.25% of the ≥400 target, the closest yet)**. Also completed the real image-based 20-record-class spot-check the handoff's Definition of Done always asked for (blocked in every earlier pass by the outage), finding and disclosing 2 real OCR errors and fixing 2 real recall gaps (an invisible zero-width non-joiner silently broke the headword-line regex) live. FEATURES_INDEX registration correctly still withheld — target not yet met. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) "Clean-scan lane methodology" for the full writeup, including a caught-and-fixed false-positive in the reconciliation matcher itself.
+
+## [1.37.0] — 19-07-2026
+
+### Fixed
+- **H803 dedup + false-positive correction — LaukikaNyaya 390 → 302 records, `/dual-run-salvage`'s reconciliation had two verified defects (Sonnet 5 `claude-sonnet-5`).** The dual-run reconciliation directly below (240+300→390) turned out to contain 57 same-`_ocr_line` duplicate pairs (114 records for 57 physical occurrences, 0 content differences once whitespace is normalized — a dedup-by-`nyaya_slp1` miss caused by two lanes formatting headword whitespace differently) plus 31 further false-positive lines matching the same length-based false-positive signature already established for the unbounded `index-crossref-prefix` strategy. Every one of the 88 removed records is individually accounted for (57 duplicate, 31 false positive) — none dropped without a specific, checkable reason; 0 lines are unique to the corrected 302 that weren't already in the 390's set, i.e. this only ever removes, never misses relative coverage. The dataset is now produced by a single `python build_laukika_nyaya.py` invocation with no manual merge step. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) "19-07-2026 dedup + false-positive correction" for the full audit.
+
+## [1.36.0] — 19-07-2026
+
+### Added
+- **H803 dual-run reconciliation — LaukikaNyaya 240 + 300 records merged to 390 (`/dual-run-salvage`, Sonnet 5 `claude-sonnet-5`).** Two independent extraction passes ([PR #577](https://github.com/gasyoun/SanskritLexicography/pull/577), merged; [PR #576](https://github.com/gasyoun/SanskritLexicography/pull/576), open/conflicted) diverged from the same 151-record baseline unaware of each other. Reconciled as a union deduplicated on `nyaya_slp1` (150 records in common, 0 gloss-identity conflicts, 90+150 net-new) — the merged file is a manual reconciliation, not directly reproducible by a single [`tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py) run. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) for the full accounting.
+
 ## [1.35.0] — 19-07-2026
 
 ### Added
