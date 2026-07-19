@@ -58,6 +58,39 @@ BOILERPLATE = re.compile(
     r'|CC-0\.?\s*Prof\.?\s*Satya Vrat Shastri Collection\.?)',
     re.I,
 )
+# A line is a boilerplate-ONLY line (not just containing boilerplate amid
+# real text) if stripping the boilerplate pattern leaves nothing substantial.
+BOILERPLATE_LINE = re.compile(
+    r'^\s*(Digitized [Bb]y .*(eGangotri|Gyaan Kosha|Arya Samaj).*'
+    r'|;?\s*CC-0\.?\s*Prof\.?\s*Satya Vrat Shastri Collection\.?)\s*$',
+    re.I,
+)
+# Broader phrase-tier gloss-opener test (v2, H803 follow-up #3): the strict
+# literal "The maxim of" gate found only 4/199 non-nyaya candidates. Manual
+# read of all 113 candidates that survive is_true_headword() (see H803
+# handoff + README "Known limitations" for the audit) showed the true
+# positives are ordinary English topic sentences of many shapes ("Like a
+# decoration...", "A young fawn cannot...", "One's own body does not...",
+# "If Mithila should be...") while the false positives (Sanskrit couplet
+# restatements, OCR-garbled fragments, boilerplate) either have NO English
+# sentence following at all, or fail one of these three cheap checks.
+NON_GLOSS_OPEN = re.compile(
+    r'^(See |Cf\.|Professor .*(rendering|translat)|Prof\. )', re.I,
+)
+
+
+def looks_like_gloss_sentence(s):
+    """A candidate 'first English line after a phrase-tier headword' must:
+    look like real running English prose, not a citation/fragment/boilerplate.
+    """
+    if not s or BOILERPLATE_LINE.match(s) or NON_GLOSS_OPEN.match(s):
+        return False
+    if deva_ratio(s) > 0.15:
+        return False  # still mostly Devanagari -- a couplet, not a gloss
+    words = re.findall(r"[A-Za-z][A-Za-z'’-]*", s)
+    if len(words) < 4:
+        return False  # e.g. "Who git", "T. Lon" -- OCR fragments
+    return bool(re.match(r"^[\"'“‘`\[(]*[A-Z]", s))
 TITLE_FALSE_POSITIVES = {
     'लोकिकन्यायाञ्जलिः', 'लौकिकन्यायाञ्जलिः', 'ठोकिकन्यायाञ्ञलिः',
 }
@@ -111,11 +144,15 @@ def find_headword_indices(lines, skip_before=0):
     """Two tiers of candidate headword line:
     - 'named': pure-Devanagari line containing the word न्याय (the common
       "X-nyaya" coined-compound headword style).
-    - 'phrase': pure-Devanagari line WITHOUT न्याय, accepted only if
-      immediately (within 3 lines) followed by the literal English opening
-      "The maxim of ..." -- a stricter gate, since without the न्याय anchor
-      a short Devanagari line is otherwise indistinguishable from a
-      mid-explanation quote fragment.
+    - 'phrase': pure-Devanagari line WITHOUT न्याय, accepted only if the
+      first non-blank, non-boilerplate line after it (looked at within 4
+      lines, skipping digitization-credit boilerplate lines outright rather
+      than counting them as "checked") passes looks_like_gloss_sentence() --
+      real English topic-sentence prose, not a Sanskrit couplet restatement
+      or an OCR-garbled fragment. v2 (H803 follow-up #3): broadened from the
+      original literal "The maxim of" gate, which recovered only 4 of 199
+      non-nyaya candidates -- see looks_like_gloss_sentence()'s docstring
+      for the manual audit that justified the broadening.
     """
     idxs = []
     for i, line in enumerate(lines):
@@ -128,14 +165,18 @@ def find_headword_indices(lines, skip_before=0):
             idxs.append((i, 'named'))
         else:
             j, checked, hit = i + 1, 0, False
-            while j < len(lines) and checked < 3:
+            while j < len(lines) and checked < 4:
                 t = lines[j].strip()
-                if t:
-                    checked += 1
-                    if MAXIM_OPEN.match(t):
-                        hit = True
-                    break
-                j += 1
+                if not t:
+                    j += 1
+                    continue
+                if BOILERPLATE_LINE.match(t):
+                    j += 1
+                    continue  # skip digitization credit, don't count it
+                checked += 1
+                if looks_like_gloss_sentence(t):
+                    hit = True
+                break
             if hit:
                 idxs.append((i, 'phrase'))
     return idxs
@@ -191,7 +232,12 @@ def extract_entries(lines, start_after_idx=0):
         nxt = good_idx[pos + 1] if pos + 1 < len(good_idx) else min(idx + 400, len(lines))
         headword = re.sub(r'[^ऀ-ॿ]', '', lines[idx].strip()).replace('।', '').replace('॥', '').strip()
         body = clean_body(lines[idx + 1:nxt])
-        gloss_match = re.match(r'^(The maxim of[^.]*\.)', body)
+        # v2 (H803 follow-up #3): generalized from the original literal
+        # "The maxim of ..." match so phrase-tier entries recovered by the
+        # broadened gate (many different English openers -- "Like a
+        # decoration...", "A young fawn cannot...") also get a populated
+        # gloss_en instead of None.
+        gloss_match = re.match(r'^([A-Z"\'“‘`\[(][^.]*\.)', body)
         entries.append({
             'nyaya_deva': headword,
             'gloss_en': gloss_match.group(1).strip() if gloss_match else None,
