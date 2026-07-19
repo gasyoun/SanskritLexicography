@@ -992,7 +992,11 @@ def read_execution_manifest(path):
             manifest = json.load(f)
     except (OSError, json.JSONDecodeError) as e:
         raise SystemExit('execution manifest is unreadable: %s' % e)
-    if manifest.get('schema') != 'pwg.headless_execution_manifest.v1':
+    # B23 (H1339): accept BOTH manifest generations -- profile-bound production prepare
+    # emits v2 (execution_contract.SCHEMA_V2); v1-only here made every v2 lease's requeue
+    # hydration and prepare-requeue fail on the manifest the coordinator itself prepared.
+    if manifest.get('schema') not in ('pwg.headless_execution_manifest.v1',
+                                      'pwg.headless_execution_manifest.v2'):
         raise SystemExit('unsupported execution manifest schema: %r' % manifest.get('schema'))
     if not isinstance(manifest.get('meta'), dict):
         raise SystemExit('execution manifest meta is missing or invalid')
