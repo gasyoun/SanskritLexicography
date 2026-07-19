@@ -14,6 +14,34 @@ not an error.
 
 ## [Unreleased]
 
+## [1.32.0] — 19-07-2026
+
+### Added
+- **Mechanical RU style sweep — no-ё, terse editorial metalanguage (19-07-2026, Sonnet 5 `claude-sonnet-5`, [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md))**:
+  MG's DA-vote (N7/N12 + the terseness half of N4) ratified four deterministic RU style
+  rules, applied store-wide and wired for future generation. R1: no letter ё anywhere in
+  RU output (whitelist: standalone «всё»/«Всё» only; «всё-таки» defaults to е like every
+  other ё-word). R2/R3: «вместо»→«вм.» and «в значении»→«в знач.» in editorial
+  metalanguage — measured 0/60 and 0/24 false positives on the canonical store (well under
+  the 2% restriction threshold), so both apply unrestricted. R4: `ed. Bomb.` → «Бомбейская
+  ред.» in free prose ONLY — 282/283 occurrences sit inside `<ls>…</ls>` citation spans that
+  [`pwg_sources.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_sources.py)
+  keys against PWG's bibliography, so rewriting them would break source resolution; only
+  the store's 1 genuine free-prose occurrence was swept. Applied to the canonical store
+  (11,603 rows, unchanged): 2,029 substitutions across 1,485 rows, 0 residual violations
+  after apply. New
+  [`ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py)
+  (store sweep + shared violation detector, `--apply`/`--selftest`/`--wf`); new `ru_style`
+  gate in
+  [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py);
+  prompt HARD RULE 9 in
+  [`run_pilot_wf.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/run_pilot_wf.js)
+  (auto-inherited by every future generated harness), pinned in
+  [`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py).
+  RU-only by construction — `LANG_PARITY.md` `ru_style_mechanical_yo_terseness`
+  INTENTIONAL-DIVERGENCE. Full rule table + measurement:
+  [`RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md).
+
 ## [1.30.0] — 19-07-2026
 
 ### Added
