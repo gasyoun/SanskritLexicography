@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **LaukikaNyaya phrase-tier recall broadened — 151 → 240 records (19-07-2026, Sonnet 5 `claude-sonnet-5`, [H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md) continuation)**:
+  the non-`न्याय` phrase-tier headword gate in [`build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)
+  was broadened from a literal `"The maxim of"` opener match (4/199 candidates recovered) to
+  `looks_like_gloss_sentence()`, verified against all 113 surviving candidates and their 8
+  specific identified false positives — named-tier count unchanged (147) confirming the change
+  is scoped. `_page_numbers.json` sidecar fetched and found genuinely unusable (11/360 leaves
+  page-numbered, none in the body); image-level scan cross-check still blocked by an archive.org
+  image-server outage (logged in [Uprava/SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md)).
+  Still short of the ≥400 stop condition (240/400, 60%) — root cause is a source-availability
+  ceiling, not extraction effort; see [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md)
+  "19-07-2026 follow-up pass" for full detail. FEATURES_INDEX.md registration remains deferred.
+
 ## [1.32.0] — 19-07-2026
 
 ### Added
