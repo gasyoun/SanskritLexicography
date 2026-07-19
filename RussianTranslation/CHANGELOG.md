@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — scoped RU style gate and conflict-safe H1305 repair
+
+- The `ru_style` workflow gate now audits only structured
+  `card.records[].senses[].russian` values. Rendered Markdown notes, `differentia`, German
+  source text, headings, and footer metadata are excluded. Multiple violating senses still
+  aggregate to one original workflow key; ambiguous R2/R3 matches are diagnostic warnings,
+  never `FLAGGED_JSON` defects. The EN audit path is unchanged.
+- R2/R3 now share one high-precision contextual classifier between rewriting and auditing.
+  Matches inside `«…»` or `{%…%}` are protected; only the ratified correction,
+  replacement-object, and lexical-use cues are hard. A complete re-audit corrected H1305's
+  sampled false-positive claim: of 291 pre-sweep «вместо» occurrences, 279 are hard and 12
+  ambiguous; of 24 «в значении» occurrences, 20 are hard and 4 ambiguous.
+- Added dry-run-by-default `--repair-from` reconciliation against the original H1305 backup.
+  Stable row hashes exclude translation/review/provenance fields and use occurrence ordinals
+  for duplicates. Only original, legacy-swept, or newly scoped values are recognized;
+  divergent later edits fail the entire apply. The canonical repair restored all 16 reviewed
+  ambiguous occurrences with 0 conflicts and preserved the 11,603-row population. Final
+  store audit: 0 hard violations, 12 R2 + 4 R3 warnings.
+- Every apply now makes an exclusive UTC-timestamped backup, verifies its SHA-256 and row
+  count, re-hashes the live store immediately before atomic replacement, and writes an
+  ignored JSON evidence report. Consecutive applies were verified to create distinct backups.
+  The derived RU card translation memory was rebuilt and validated after repair.
+
 ### Added — mechanical RU style sweep: no-ё, terse editorial metalanguage (H1305)
 
 - **Four ratified, deterministic RU style rules applied store-wide and wired for future
@@ -17,11 +40,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   **R1** no letter ё anywhere in RU output — write е everywhere; the only exception is the
   standalone token «всё»/«Всё» (disambiguating все/всё); the edge case «всё-таки» defaults
   to е («все-таки») like every other ё-word, per the ruling. **R2** «вместо» → «вм.» and
-  **R3** «в значении» → «в знач.» in editorial metalanguage — measured **0/60** and
-  **0/24** false positives respectively on a hand-classification of the canonical store
-  (every «вместо»/«в значении» hit is editorial apparatus — variant readings, sense
-  specification — never narrative prose), well under the handoff's ~2% restriction
-  threshold, so both apply **unrestricted**. **R4** `ed. Bomb.` → «Бомбейская ред.» in
+  **R3** «в значении» → «в знач.» in editorial metalanguage. The original sampled
+  **0/60** and **0/24** false-positive claim and unrestricted application are superseded by
+  the review fix above: the full population contains 12 ambiguous R2 and 4 ambiguous R3
+  cases, all restored and now non-blocking. **R4** `ed. Bomb.` → «Бомбейская ред.» in
   **free prose only** — 282 of 283 occurrences (221 standalone `<ls>ed. Bomb.</ls>` + 61
   embedded in a longer citation, e.g. `<ls>R. ed. Bomb. 3,69,4</ls>`) sit inside
   `<ls>…</ls>` and were left **verbatim**: [`src/pwg_sources.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_sources.py)'s
@@ -31,10 +53,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   swept. The in-`<ls>` population (282 occurrences) is a render-time display concern,
   explicitly out of scope here and NOT covered by [H1307](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1307-Opus_RussianTranslation_pwg-ru-ls-link-enrichment-panini-spr-dhatup_19.07.26.md)
   either — handed off as a PROPOSED follow-up.
-- **Applied to the canonical store** (11,603 rows, row count unchanged — content-only
-  edit): **2,029 substitutions across 1,485 rows** (R1=1,713, R2=291, R3=24, R4=1). A
-  rescan after `--apply` shows **0 residual violations**; the sweep is idempotent (no
-  substitution's output contains its own trigger pattern).
+- **Initially applied to the canonical store** (11,603 rows, row count unchanged): 2,029
+  substitutions across 1,485 rows (R1=1,713, R2=291, R3=24, R4=1). The scoped repair above
+  restored 16 ambiguous R2/R3 values, leaving 2,013 ratified substitutions
+  (R1=1,713, R2=279, R3=20, R4=1) and 0 hard residual violations.
 - **New** [`src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py)
   (stdlib-only; dry-run default, `--apply`, `--selftest`, `--wf` for the window-gate mode) —
   resolves the store via `store_path.canonical_store` (prints the resolved path before

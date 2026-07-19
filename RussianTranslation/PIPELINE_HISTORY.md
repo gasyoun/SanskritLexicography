@@ -15,25 +15,32 @@ MG's DA-sheet vote (N7/N12 + the terseness half of N4) ratified four determinist
 style rules: no letter ё anywhere in output (whitelist: standalone «всё»/«Всё» only,
 disambiguating все/всё — «всё-таки» defaults to е like every other ё-word); «вместо»→«вм.»
 and «в значении»→«в знач.» in editorial metalanguage; `ed. Bomb.` → «Бомбейская ред.» in
-free prose only. The one judgment call was the false-positive measurement before applying
-R2/R3 broadly: sampled 60/291 «вместо» and all 24 «в значении» occurrences by hand — 0%
-false positives on both (every hit was editorial apparatus, never narrative prose), well
-under the handoff's 2% restriction threshold, so both apply unrestricted, no context
-gating needed. `ed. Bomb.` split differently: 282/283 occurrences sit inside `<ls>…</ls>`
+free prose only. H1305 initially sampled 60/291 «вместо» and all 24 «в значении» hits and
+therefore applied R2/R3 unrestricted. The subsequent review re-audited the complete
+population and corrected that claim: **279/291 R2 and 20/24 R3** satisfy the explicit
+high-confidence editorial cues; **12 R2 + 4 R3** are quoted, retained, narrative, or
+otherwise ambiguous and remain natural, diagnostic-only prose. `ed. Bomb.` split
+differently: 282/283 occurrences sit inside `<ls>…</ls>`
 citation spans that `src/pwg_sources.py`'s `source_key()`/`resolve()` key off the exact
 Latin text against PWG's bibliography — rewriting those to Cyrillic breaks source
 resolution outright, so only the 1 genuine free-prose occurrence was swept; the in-`<ls>`
 population is a render-time display concern, handed off (not H1307's shipped scope,
 which is Pāṇini/Spr./DHĀTUP. link enrichment specifically).
 
-Applied to the canonical store (11,603 rows, unchanged row count): 2,029 substitutions
-across 1,485 rows (R1=1,713, R2=291, R3=24, R4=1); a rescan after `--apply` shows 0
-residual violations. Wired for future generation via HARD RULE 9 in `run_pilot_wf.js`'s
+The initial store sweep made 2,029 substitutions across 1,485 rows. The review repair
+matched the original backup to the live 11,603-row store by stable content hash plus
+duplicate ordinal, restored the 16 ambiguous values without overwriting later edits, and
+found zero conflicts. The retained rule population is R1=1,713, R2=279, R3=20, R4=1;
+post-repair audit shows zero hard violations and the expected 12/4 warnings. Every apply
+now uses a distinct verified timestamped backup plus live-store hash checks around atomic
+replacement. Wired for future generation via HARD RULE 9 in `run_pilot_wf.js`'s
 `CONV`/`TR` (auto-inherited by every future `gen_opt_harness2.py`-generated harness, which
 extracts `TR` directly from this file by regex — no separate derivative to keep in sync),
-pinned in `prompt_rule_audit.py`, and enforced by a new `ru_style` gate in
-`audit_window.py` that reuses the sweep's own `scan_violations()` (one detector, two
-callers, can never drift). RU-only by construction (no EN counterpart — see
+pinned in `prompt_rule_audit.py`, and enforced by a `ru_style` gate in `audit_window.py`.
+The gate parses workflow cards and inspects only `records[].senses[].russian`; rendered
+notes/metadata are excluded, and ambiguous matches warn without entering `FLAGGED_JSON`.
+Rewriting and audit use the same classifier while retaining the public
+`scan_violations()` API. RU-only by construction (no EN counterpart — see
 `LANG_PARITY.md` `ru_style_mechanical_yo_terseness`). Full rule table + measurement:
 [`pwg_ru/RU_STYLE_MECHANICAL.md`](pwg_ru/RU_STYLE_MECHANICAL.md).
 
