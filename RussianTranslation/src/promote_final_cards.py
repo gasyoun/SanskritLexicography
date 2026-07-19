@@ -132,6 +132,19 @@ def collect_cards(paths):
     return best, conflicts, sorted(null_keys)
 
 
+def model_tier(model_version):
+    """The tier alias for a resolved model id: 'claude-sonnet-5' -> 'sonnet'.
+
+    B20 (H1339): provenance.model was hardcoded 'sonnet' regardless of the actual
+    generating model; derive it from the recorded exact version instead. Unknown shapes
+    fall back to the legacy constant rather than fabricating a tier."""
+    if isinstance(model_version, str) and model_version.startswith('claude-'):
+        parts = model_version.split('-')
+        if len(parts) >= 2 and parts[1]:
+            return parts[1]
+    return MODEL
+
+
 def provenance(entry, subkey, model_version):
     meta = entry['meta']
     hashes = (meta.get('input_hashes') or {}).get(subkey) or {}
@@ -142,7 +155,7 @@ def provenance(entry, subkey, model_version):
     source_profile = (profiles.get(subkey) if isinstance(profiles, dict)
                       else meta.get('source_profile'))
     prov = {
-        'model': MODEL,
+        'model': model_tier(model_version),
         'model_version': model_version,
         'generator': meta.get('generator'),
         'schema_version': meta.get('schema_version'),
@@ -318,11 +331,47 @@ def validate_store_target(path, init_store=False):
             '--init-store is first-run only; store already exists: %s' % path)
 
 
+def _attempt_quality(rows):
+    """Rank one subcard's row-set for better-attempt-wins: higher tuple = better attempt.
+
+    (complete, -missing): a complete card (no partial_card marker) beats any partial;
+    among partials, fewer missing fragments/groups beat more. Ties favour the INCOMING
+    attempt (deliberate retranslation replaces same-quality content)."""
+    prov = [row.get('provenance') or {} for row in rows]
+    partial = any(p.get('partial_card') for p in prov)
+    missing = 0
+    for p in prov:
+        mf = p.get('missing_fragments')
+        n = len(mf) if isinstance(mf, list) else int(p.get('missing_groups') or 0)
+        missing = max(missing, n)
+    return (0 if partial else 1, -missing)
+
+
 def merge_store_rows(existing_rows, promoted_rows):
-    """Replace exactly the promoted subcards; retain every unrelated row."""
-    promoted_subs = {row['subcard'] for row in promoted_rows}
-    kept = [row for row in existing_rows if row.get('subcard') not in promoted_subs]
-    return kept + promoted_rows
+    """Replace the promoted subcards BETTER-ATTEMPT-WINS; retain every unrelated row.
+
+    B08 (H1339): the merge used to be an unconditional replace-by-subcard, so promoting an
+    older/regressed artifact (a partial heal over a complete card) silently downgraded
+    complete store rows. This is the store-level port of H304 rule 3 (save_and_audit
+    --merge): complete beats partial, fewer missing fragments beat more, and only a tie or
+    an improvement lets the incoming rows land. Returns (merged_rows, downgraded_subcards)
+    where downgraded_subcards lists incoming subcards REFUSED because the store already
+    holds a strictly better attempt (their existing rows are kept untouched)."""
+    incoming = {}
+    for row in promoted_rows:
+        incoming.setdefault(row['subcard'], []).append(row)
+    existing_by_sub = {}
+    for row in existing_rows:
+        existing_by_sub.setdefault(row.get('subcard'), []).append(row)
+    downgraded = sorted(
+        sub for sub, rows in incoming.items()
+        if sub in existing_by_sub
+        and _attempt_quality(rows) < _attempt_quality(existing_by_sub[sub]))
+    blocked = set(downgraded)
+    replaced_subs = set(incoming) - blocked
+    kept = [row for row in existing_rows if row.get('subcard') not in replaced_subs]
+    landed = [row for row in promoted_rows if row['subcard'] not in blocked]
+    return kept + landed, downgraded
 
 
 def tn_residue(card, rec, sense):
@@ -547,9 +596,31 @@ def selftest():
     # Exact-subcard merge is idempotent; a second promotion replaces rather than duplicates.
     old = [{'key1': 'x', 'subcard': 'x~~a'}, {'key1': 'y', 'subcard': 'y~~a'}]
     new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new'}]
-    once = merge_store_rows(old, new)
-    twice = merge_store_rows(once, new)
-    assert once == twice and len(once) == 2
+    once, dg1 = merge_store_rows(old, new)
+    twice, dg2 = merge_store_rows(once, new)
+    assert once == twice and len(once) == 2 and dg1 == [] and dg2 == []
+    # B08 (H1339): the store merge is better-attempt-wins, the H304 rule ported to the
+    # store level. A partial incoming attempt must NOT downgrade complete existing rows;
+    # a complete incoming attempt replaces a partial; fewer missing fragments win among
+    # partials; equal quality -> incoming wins (deliberate retranslation).
+    complete_old = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'old-good', 'provenance': {}}]
+    partial_new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new-partial',
+                    'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
+    merged, downgraded = merge_store_rows(complete_old, partial_new)
+    assert merged == complete_old and downgraded == ['x~~a'], \
+        'a partial attempt silently downgraded a complete store row'
+    merged, downgraded = merge_store_rows(partial_new, complete_old)
+    assert merged == complete_old and downgraded == [], \
+        'a complete attempt must replace a partial store row'
+    worse = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p3',
+              'provenance': {'partial_card': True,
+                             'missing_fragments': ['g1:f0', 'g1:f1', 'g2:f0']}}]
+    better = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p1',
+               'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
+    merged, downgraded = merge_store_rows(worse, better)
+    assert merged == better and downgraded == [], 'fewer missing fragments must win'
+    merged, downgraded = merge_store_rows(better, worse)
+    assert merged == better and downgraded == ['x~~a'], 'more missing fragments must lose'
     # Atomic failure leaves the old store intact and removes the temporary file.
     atomic = os.path.join(d, 'atomic.jsonl')
     with open(atomic, 'w', encoding='utf-8') as f:
@@ -658,6 +729,14 @@ def main():
             validate_promotion_entry(subkey, entry)
         except PromotionContractError as exc:
             sys.exit('REFUSED: %s' % exc)
+        # B20 (H1339): the operator-typed --gen-model-version lands verbatim in permanent
+        # store provenance; cross-check it against the manifest's sealed execution model
+        # identity so a typo'd/wrong id can never masquerade as the generating model.
+        exec_model = ((entry.get('meta') or {}).get('execution') or {}).get('model_identifier')
+        if exec_model and exec_model != args.gen_model_version:
+            sys.exit('REFUSED: %s: --gen-model-version %r does not match the manifest '
+                     'execution.model_identifier %r' % (subkey, args.gen_model_version,
+                                                        exec_model))
         n = 0
         for row in rows_for(subkey, entry, args.review_status, args.gen_model_version):
             rows.append(row)
@@ -715,10 +794,19 @@ def main():
                         if not line:
                             continue
                         existing_rows.append(json.loads(line))
-                rows_to_write = merge_store_rows(existing_rows, rows)
-                kept = len(rows_to_write) - len(rows)
+                rows_to_write, downgraded = merge_store_rows(existing_rows, rows)
+                if downgraded:
+                    # B08: better-attempt-wins refused these incoming subcards -- the store
+                    # already holds a strictly better attempt (complete vs partial, or
+                    # fewer missing fragments). Loud, never silent; existing rows kept.
+                    print('\n⚠ better-attempt-wins: store keeps its BETTER existing rows for '
+                          '%d subcard(s); incoming (worse) attempt dropped: %s'
+                          % (len(downgraded), ', '.join(downgraded[:10])
+                             + (' …' if len(downgraded) > 10 else '')))
+                landed = len(rows) - sum(1 for r in rows if r['subcard'] in set(downgraded))
+                kept = len(rows_to_write) - landed
                 print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
-                      % (len(promoted_subs), sorted(touched_roots), kept))
+                      % (len(promoted_subs - set(downgraded)), sorted(touched_roots), kept))
             else:
                 rows_to_write = rows
 

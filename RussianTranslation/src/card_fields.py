@@ -64,6 +64,11 @@ SENSE_MASKED_COMMON = ('tag', 'german', 'differentia')
 PROMOTED_COMMON = (
     ('card', 'iast'),
     ('record', 'h'),
+    # `grammar` is store-written by rows_for AND is one of the two fields the design
+    # guarantees carries `{Tn}` pre-restore (TOKEN_FIDELITY_FIELDS) -- omitting it here
+    # (H1339 B21, the H1283 card_fields conflict) left tn_residue and backfill_tn_residue
+    # blind to a grammar restore gap: the exact C-01 silent-corruption class.
+    ('record', 'grammar'),
     ('sense', 'tag'),
     ('sense', 'german'),
     ('sense', 'differentia'),
