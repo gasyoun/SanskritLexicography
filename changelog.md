@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.30.0] — 19-07-2026
+
 ### Added
 - **`<ls>` link enrichment — Pāṇini deep/browse links + Spr. (II) full-text tooltips (19-07-2026, Opus 4.8 `claude-opus-4-8`, [H1307](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1307-Opus_RussianTranslation_pwg-ru-ls-link-enrichment-panini-spr-dhatup_19.07.26.md))**:
   MG's DA-vote (N14/N3(b)/N15) enrichment for three `<ls>` citation classes in the pwg_ru render
