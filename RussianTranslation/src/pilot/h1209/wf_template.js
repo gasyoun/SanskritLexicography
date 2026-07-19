@@ -90,10 +90,20 @@ function deterministicAudit(card, c) {
   return { issues, coverage }
 }
 
+// B07 (H1339): no agent() call may hang the strictly-serial batch forever. Race every call
+// against a relative wall-clock deadline (setTimeout only -- Date.now() is unavailable in
+// Workflow scripts); a timed-out call resolves null: the worker lane retries it, the
+// controller lane escalates (never auto-approves). The serial card loop itself is the
+// MG-locked canary architecture and stays.
+const AGENT_DEADLINE_MS = 300000
+const withDeadline = (p, ms) => Promise.race([p, new Promise(res => setTimeout(() => res(null), ms))])
+
 async function runWorker(c, feedback) {
   const prompt = c.prompt + (feedback
     ? '\n\n=== CONTROLLER FEEDBACK (fix ONLY these, keep everything else verbatim) ===\n' + feedback : '')
-  return await agent(prompt, { label: 'worker:' + c.key1, phase: 'Translate', model: 'sonnet', schema: WORKER_SCHEMA })
+  return await withDeadline(
+    agent(prompt, { label: 'worker:' + c.key1, phase: 'Translate', model: 'sonnet', schema: WORKER_SCHEMA }),
+    AGENT_DEADLINE_MS)
 }
 
 async function controllerReview(c, card) {
@@ -104,7 +114,9 @@ async function controllerReview(c, card) {
     + 'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
     + 'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
     + JSON.stringify(senses)
-  return await agent(prompt, { label: 'control:' + c.key1, phase: 'Control', model: 'opus', schema: VERDICT_SCHEMA })
+  return await withDeadline(
+    agent(prompt, { label: 'control:' + c.key1, phase: 'Control', model: 'opus', schema: VERDICT_SCHEMA }),
+    AGENT_DEADLINE_MS)
 }
 
 phase('Translate')
@@ -115,14 +127,21 @@ for (const c of CARDS) {
     det: null, controller: null, controller_calls: 0, final_status: null, card: null,
   }
   let feedback = null
+  let controllerRejected = false   // B06 (H1339): rejection memory across attempts
   for (let attempt = 1; attempt <= 3; attempt++) {
     rec.attempts = attempt
     const res = await runWorker(c, feedback)
-    if (!res) { rec.final_status = 'worker-null-death'; break }
+    // B05 (H1339): a null worker result consumes ONE attempt and RETRIES (was: break ->
+    // zero retries, one dead worker killed the card). 'worker-null-death' stands only
+    // when every remaining attempt also returns null; any later success overwrites it.
+    if (!res) { rec.final_status = 'worker-null-death'; continue }
     rec.self_report = res.self_report; rec.card = res.card
     const det = deterministicAudit(res.card, c); rec.det = det
     const flaggedUnsure = !!(res.self_report && res.self_report.unsure)
-    const needReview = det.issues.length > 0 || flaggedUnsure || c.complexity.complex
+    // B06 (H1339): a card the controller REJECTED can never exit 'clean-no-review' on a
+    // later attempt -- the rejection is sticky, so the replacement must pass the
+    // controller (or the deterministic gate escalates it), never slip out unreviewed.
+    const needReview = det.issues.length > 0 || flaggedUnsure || c.complexity.complex || controllerRejected
     if (!needReview) { rec.final_status = 'clean-no-review'; break }
     if (det.issues.length > 0) {                 // hard deterministic fail: retry, no Opus spend
       rec.controller = { ok: false, source: 'deterministic', issues: det.issues }
@@ -132,6 +151,7 @@ for (const c of CARDS) {
     }
     const v = await controllerReview(c, res.card); rec.controller_calls++; rec.controller = v
     if (v && v.ok) { rec.final_status = 'clean-controller-approved'; break }
+    controllerRejected = true                    // B06: sticky -- no later clean-no-review
     feedback = 'Controller found issues:\n- ' + ((v && v.issues) || ['unspecified']).join('\n- ')
     if (attempt === 3) rec.final_status = 'escalate-review-sheet'
   }
