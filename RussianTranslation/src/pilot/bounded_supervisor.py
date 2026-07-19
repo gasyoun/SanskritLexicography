@@ -265,6 +265,21 @@ class BoundedSupervisor:
                 # (2) RUN — injected; returns a wf_output handle/path.
                 wf_output = self.run_window(item)
 
+                # A4 (H1283): a requeue work-item's id (rq-NNN-<lease>) matches no coordinator
+                # lease and no sqlite job, so the injected UNATTENDED run_window no-ops and returns
+                # None — yet the loop below would checkpoint it COMPLETED with zero model calls,
+                # silently dropping the rejected keys forever (audit reports clean 0 / requeue []).
+                # Fail loudly: a requeue that produced no runnable window is a real defect, not
+                # progress. (The fuller fix is to materialise a real requeue lease/job for the
+                # keys; until then this refuses to mask the loss.)
+                if item.get('requeue') and wf_output is None:
+                    raise SystemExit(
+                        'bounded_supervisor: requeue item %s (keys=%s) produced no runnable '
+                        'window -- its rq- id maps to no coordinator lease / sqlite job, so the '
+                        'rejected keys would be silently dropped. Materialise a real requeue '
+                        'lease/job for these keys (or rerun attended) before resuming.'
+                        % (item.get('id'), item.get('keys')))
+
                 # (3) AUDIT — injected report, or the H920 gate helper on a tmp dir.
                 report = self._run_audit(wf_output, item)
 

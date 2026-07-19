@@ -410,9 +410,15 @@ def make_run_window(ctx):
                     db=ctx.db, timeout=ctx.timeout, events=ctx.events, run_id=ctx.run_id,
                     claude_bin=ctx.claude_bin, only_accounts=set(ctx.probe_latencies),
                     only_profile=ctx.only_profile,
+                    # A7 (H1283): plumb the run's coordinator/coord_dir/cwd. Without them
+                    # coordinator_command() falls back to the DEFAULT coordinator dir
+                    # (PWG_COORDINATOR_DIR unset), so the embedded begin-run/record calls hit
+                    # the wrong coordinator state instead of this run's.
+                    coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
                     only_external_ids=scope))
             mao.cmd_record_done(argparse.Namespace(
-                db=ctx.db, coordinator=ctx.coordinator, cwd=ctx.cwd, only_external_ids=scope))
+                db=ctx.db, coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
+                only_external_ids=scope))
             if ctx.stop_before_promote:
                 # R10: skip promotion -- the window is recorded + auditable but NOT promoted, so the
                 # store and TM stay untouched. The durable AWAITING_REVIEW terminal checkpoint is
@@ -427,6 +433,21 @@ def make_run_window(ctx):
                     promote.stderr + promote.stdout):
                 raise SystemExit('bounded_staged_run: lease %s promotion failed: %s'
                                  % (lease_id, (promote.stderr or promote.stdout)[-1000:]))
+        # A2 (H1283): the loop breaks the instant nothing is pending/unrecorded -- but a crash
+        # between cmd_record_done and the in-loop promote leaves the lease RECORDED-BUT-READY, so
+        # on --resume the loop breaks immediately and the in-loop promote never runs again: the N
+        # clean cards never reach the store while the audit still counts the window productive.
+        # One unconditional scoped promote here rescues that lease; it is a harmless no-op ("no
+        # ready leases to promote") whenever the in-loop promote already ran.
+        if not ctx.stop_before_promote:
+            rescue = subprocess.run(
+                [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
+                 '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
+                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+            if rescue.returncode and 'no ready leases to promote' not in (
+                    rescue.stderr + rescue.stdout):
+                raise SystemExit('bounded_staged_run: lease %s post-loop promotion failed: %s'
+                                 % (lease_id, (rescue.stderr or rescue.stdout)[-1000:]))
         # Return the lease's recorded output path (the wf_output the audit reads).
         db = mao.connect(ctx.db)
         rows = mao.scoped_jobs(db, scope)
@@ -601,6 +622,16 @@ def run(args):
         if ctx.stop_before_promote and _audit_is_clean(report):
             write_awaiting_review_checkpoint(ctx, window, wf_output, report)
         return report
+
+    if args.resume:
+        # A3 (H1283): --resume never recovered abandoned jobs (unlike cmd_staged_run). After a
+        # hard crash mid-dispatch a job stays 'in_progress' and its lease 'running'; the resumed
+        # drain loop then sees neither pending nor done-unrecorded and exits at once, stranding
+        # the lease forever. Reset in_progress jobs (scoped to this plan) back to pending before
+        # the supervisor drains.
+        mao.cmd_recover(argparse.Namespace(
+            db=args.db, only_external_ids=scope,
+            coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
     sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
                            resume=args.resume)

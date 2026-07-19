@@ -215,9 +215,12 @@ MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across 
 # schema-carrying probe) blows past even the 180s kill CEIL at ~10-wide (32/36 kill-timeouts,
 # 128-500B skeletons). MAX_WIDE caps the concurrent dispatch units so a requeue keeps each
 # card near its isolated latency; STAGGER_MS spaces the first MAX_WIDE starts so the degraded
-# API isn't hit by a thundering herd. 0 = unbounded (default; uses the runtime parallel()).
-MAX_WIDE = 0                # --max-wide=N: at most N translateBatch/healOnly units in flight
-STAGGER_MS = 0              # --stagger-ms=M: delay between the first MAX_WIDE worker starts
+# API isn't hit by a thundering herd. 0 = unbounded (uses the runtime parallel()).
+# A5 (H1283): bounded is now the DEFAULT — measured non-null 2/21 (~10-wide) -> 14/18 (<=3-wide),
+# ~10% -> ~78% on the degraded transport; the single highest throughput-per-effort change in the
+# audit. Set --max-wide=0 explicitly to opt back into unbounded on a healthy API.
+MAX_WIDE = 3                # --max-wide=N: at most N translateBatch/healOnly units in flight (0=unbounded)
+STAGGER_MS = 2000           # --stagger-ms=M: delay between the first MAX_WIDE worker starts
 # --- per-card heal budget (H442, 2026-07-10) --------------------------------------
 # The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
 # cannot stop ONE dense card from spending the WHOLE window budget before the other cards
