@@ -510,9 +510,29 @@ PWG_PATTERNS = [
     LsPattern(r'^(R[.]) *([0-9]+), *([0-9]+)',
               '($2 == "1" || $2 == "2") ? "https://sanskrit-lexicon-scans.github.io/ramayanaschl/?$2,$3,1" : "https://sanskrit-lexicon-scans.github.io/ramayanagorr/?$2,$3,1"',
               ['pw']),
-    # Panini - Ashtadhyayi
+    # Panini - Ashtadhyayi. Full form P. adhyaya,pada,sutra -> deep link to the
+    # sutra. Verified (H1307, 19-07-2026) against the site's own backing data repo
+    # github.com/ashtadhyayi-com/data (sutraani/data.txt: fields a=adhyaya, p=pada,
+    # n=number; e.g. 1.1.14 = 'nipAta ekAjanAG'); ashtadhyayi.com itself is a
+    # client-side SPA whose HTML cannot be scraped, so the URL *form* is what is
+    # verified, not a scraped render.
     LsPattern(r'^(P[.]) *([0-9]+), *([0-9]+), *([0-9]+)',
               'https://ashtadhyayi.com/sutraani/$2/$3/$4'),
+    # Panini chapter-level browse affordance (H1307, MG's N14 ask: "list of sutras
+    # by chapter and book"). A 2-param "P. adhyaya,pada" (no sutra) links to the
+    # pada's own sutra-list browse route /sutraani/{adhyaya}/{pada}; a 1-param
+    # "P. adhyaya" to the adhyaya list /sutraani/{adhyaya}. Both are the same
+    # verified route family as the 3-param deep link (reuse the site's own browse
+    # pages -- build no local sutra list). GUARDED to Panini's real coordinate
+    # ranges (adhyaya 1-8, pada 1-4) so ambiguous 2-number refs like "P. 1,23"
+    # (23 is no pada) do NOT mislink; the trailing (?![0-9]) rejects a pada that
+    # is really the head of a longer number. Placed AFTER the 3-param pattern so a
+    # full a,p,s ref (incl. the n="P. a,p," + visible "s." continuation form)
+    # always wins the deep link first.
+    LsPattern(r'^(P[.]) *([1-8]) *, *([1-4])(?![0-9])',
+              'https://ashtadhyayi.com/sutraani/$2/$3'),
+    LsPattern(r'^(P[.]) *([1-8])(?![0-9,])',
+              'https://ashtadhyayi.com/sutraani/$2'),
     # Rig Veda Pratisthana
     LsPattern(r'^(ṚV[.] PRĀTIŚ[.]) *([0-9]+), *([0-9]+)',
               'rvAvHymnUrl2'),

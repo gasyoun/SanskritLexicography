@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **`<ls>` link enrichment — Pāṇini deep/browse links + Spr. (II) full-text tooltips (19-07-2026, Opus 4.8 `claude-opus-4-8`, [H1307](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1307-Opus_RussianTranslation_pwg-ru-ls-link-enrichment-panini-spr-dhatup_19.07.26.md))**:
+  MG's DA-vote (N14/N3(b)/N15) enrichment for three `<ls>` citation classes in the pwg_ru render
+  layer. Pāṇini `P. a,p,s` deep links to [ashtadhyayi.com](https://ashtadhyayi.com) were already
+  100% (25,061/25,061); guarded 2-param/1-param patterns add the pāda/adhyāya browse routes
+  (`/sutraani/a/p`, `/sutraani/a`) — pada 1–4, adhyāya 1–8 guarded so page-refs like `P. II, S. 3`
+  never mislink. Every `Spr. (II) N` (8,684, 100% linked) gains an IAST+German hover tooltip from
+  [`indische_sprueche.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl)
+  (7,537 sayings) behind a 1st-edition guard (plain `Spr. N` never resolves against the 2nd-ed corpus).
+  URL forms verified against the ashtadhyayi.com backing data repo (the site is a client-side SPA) and
+  the boesp1/boesp2 viewer JS (bare `?N` is the only form working for both editions). `DHĀTUP.` → Palsule
+  exited as a committed acquisition spec (no machine-readable Palsule list exists org-wide; the Westergaard
+  gaṇa-level link stays). New [`spr_fulltext.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/spr_fulltext.py),
+  [`ls_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_coverage.py),
+  fixture selftest in CI; coverage table + spec in
+  [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md).
+
 ## [1.29.0] — 19-07-2026
 
 ### Changed

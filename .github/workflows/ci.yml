@@ -133,6 +133,9 @@ jobs:
           python src/pilot/translation_memory.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
+      - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
+        working-directory: RussianTranslation
+        run: python src/pilot/ls_enrichment_selftest.py
       - name: Validate roadmap
         working-directory: RussianTranslation
         run: python src/roadmap_check.py

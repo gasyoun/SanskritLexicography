@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 18-07-2026_
+_Created: 04-07-2026 · Last updated: 19-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,29 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1307 — `<ls>` link enrichment: Pāṇini, Spr. (II) full text, DHĀTUP. spec (19-07-2026)
+
+MG's DA-sheet vote (N14/N3(b)/N15) asked that Pāṇini citations link to
+ashtadhyayi.com with browsable chapter/book lists, `Spr. (II)` citations expose the
+recognized full text of *Indische Sprüche*, and `DHĀTUP.` cite the Palsule list. All
+three were done by extending the existing Cologne-port `ls_resolver.py` + `_render()`
+layer (no second resolver): the full-form `P. a,p,s` deep link was already 100%
+(25,061/25,061), and guarded 2-param/1-param patterns add the pāda/adhyāya browse routes
+(pada 1–4, adhyāya 1–8 guarded so page-refs like `P. II, S. 3` never mislink); every
+`Spr. (II) N` (8,684, 100% linked) gains an IAST+German hover tooltip from
+`indische_sprueche.jsonl` behind a 1st-ed edition guard.
+
+Two verification lessons: (1) **ashtadhyayi.com is a client-side SPA** — a live 200
+proves nothing (invalid `/9/9/9` also 200s), so the URL form was verified against the
+site's backing data repo `ashtadhyayi-com/data`, not scraped HTML. (2) The Spr. viewers'
+bare `?N` query is the *only* form that works for **both** editions (boesp1 rejects
+`?verse=N`), so the resolver was correctly left unchanged. `DHĀTUP.` → Palsule exited as
+a committed acquisition spec (no machine-readable Palsule list or Böhtlingk→Palsule
+concordance exists anywhere in the org; the existing Westergaard gaṇa-level link stays).
+Coverage table + spec in
+[`ABBREVIATIONS_RU.md`](ABBREVIATIONS_RU.md); fixture selftest
+`src/pilot/ls_enrichment_selftest.py` in CI.
 
 ### H1209 — controller-worker rig validation and the gate-alignment rule (18-07-2026)
 
