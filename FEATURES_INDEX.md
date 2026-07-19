@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 14-07-2026_
+_Created: 04-07-2026 · Last updated: 19-07-2026_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,7 +24,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 43 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
+**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 44 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -125,6 +125,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | 🟢 F36 | csl-santam Tamil SQLite | MW + Cappeller + Cologne Online Tamil Lexicon combined | 321,620 · 29.9 MB | `source(mwd·cap·otl) · headword · body` (schema; Harvard-Kyoto keys) | 06/15 | [csl-santam](https://github.com/sanskrit-lexicon/csl-santam) |
 | ⚪ F37 | OCR'd dictionary front-matter | Faithful Markdown + EN/RU editions of title pages, prefaces, abbreviations | multi-dict | per dict: title-page + preface + abbreviations as Markdown (schema) | 06/26 | [csl-guides](https://github.com/gasyoun/csl-guides) |
 | 🟢 F43 | `allngramtxt.txt` char-n-gram oracle | Every distinct character n-gram (all lengths, sorted by length) of the pan-CDSL headword list `sanhw1.txt` — the membership oracle of the n-gram spell-check method (a headword containing a chunk attested nowhere else is suspect; generator [listngrams.py](https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/ngram/listngrams.py)) | 6,656,616 n-grams · 82.3 MB | `aBisaMboD` (one SLP1 n-gram per line) | 06/26 | [CORRECTIONS/ngram](https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram) |
+| 🟢 F44 | INDOLOGY-L mailing-list archive atlas | Metadata-first atlas of the public INDOLOGY-L Pipermail archive (1990-2026): messages, threads, reply network, author normalization, Renou-axis topic tagging. Split out of IndologyScholars into its own citable repo 19-07-2026 (H460), full history preserved (`git filter-repo`) | 62,115 messages · 24,034 threads · ~200 MB | `data/processed/messages_clean.csv: normalized_author, author_id, primary_topic, thread_root_id, …` | 07/26 | [IndologyArchiveAtlas](https://github.com/gasyoun/IndologyArchiveAtlas) |
 
 ---
 
@@ -427,6 +428,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 07/26 | **F44** — INDOLOGY-L mailing-list archive atlas (62,115 messages, 24,034 threads) split out of IndologyScholars into its own citable repo, [`IndologyArchiveAtlas`](https://github.com/gasyoun/IndologyArchiveAtlas) (H460), full history preserved. |
 | 07/26 | **Q1–Q30 · Section VI** — the project's **algorithms & methods** catalogued for the first time (H1202): 30 method-family rows across transliteration/keys, Sa↔Sa alignment & collation, bitext & translation-memory, morphology/roots/sandhi, classifiers/register/phonostatistics, and search/OCR/ingestion, each graded N/S/A/X (novel · standard · adapted · external) with its home file; introduces the `Q` (methods) ID prefix and flags the known-defective Renou register classifier (Q21). Answers "what methods do we use, which are novel, which are external" — previously tracked only obliquely via SHARED_CODE (code), datasets.json (outputs), and RECIPES (reproduction). |
 | 07/26 | **P1–P11 · Section V** — learner-facing **drills & practice content** catalogued for the first time: 11 sets across 7 repos (~900+ fixed items), the largest being kosha's 396-item sandhi drill pack (P1), csl-guides' 208-question quiz suite (P3), and VisualDCS' 200-card verb-form deck (P9); introduces the `P` (pedagogy) ID prefix. Excludes the `sandhi-*` drill *generator* skills (tooling, not content). |
 | 07/26 | **E43–E46** — H817 WS1.2 closes 3 of 5 descriptive census rows in [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) Part 0 + registers 2 already-done rows the register hadn't caught up to: code-dup census + LOC/language-mix (E43, already done H688, register was stale), POS-per-text (E44, new), sense/polysemy per dict (E45, new, ◐ partial 11/44 — mirrors the A02 paper, the other 33 dicts lack a structural sense-marking convention), paradigm-cell coverage per root (E46, new, 8,054 roots). |
