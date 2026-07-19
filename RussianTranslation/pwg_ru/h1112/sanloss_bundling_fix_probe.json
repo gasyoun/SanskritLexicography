@@ -1,0 +1,175 @@
+{
+ "schema": "pwg_ru.sanloss_bundling_fix_probe.v1",
+ "measured": "2026-07-19",
+ "store": {
+  "path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
+  "cards": 2489
+ },
+ "hypothesis": "count_source_senses should cap its result to 1 whenever the raw/concatenated text carries >=2 distinct line-opening \"-- {#name#}\" sub-lemma markers (the memo's \"partition by sub-lemma boundary\" direction 1).",
+ "h1150_eight": [
+  {
+   "key": "car~~h1_20_vi",
+   "raw_count_source_senses": 5,
+   "emitted_rows": 4,
+   "distinct_sublemma_names": [
+    "vi"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": true,
+   "cap_to_1_value": 5
+  },
+  {
+   "key": "d_a~~h10_00_pwg00",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "ava",
+    "vi"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "d_a~~h13_00_pwg00",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "aByA",
+    "upA",
+    "vyA"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "iz~~h14_00_pwg00",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "A",
+    "prati"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "n_i~~h5_10_pari",
+   "raw_count_source_senses": 4,
+   "emitted_rows": 3,
+   "distinct_sublemma_names": [
+    "pari"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": true,
+   "cap_to_1_value": 4
+  },
+  {
+   "key": "n_i~~h5_11_pra",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "pra"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": true,
+   "cap_to_1_value": 2
+  },
+  {
+   "key": "vas~~h13_00_pwg00",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "aDi",
+    "ni",
+    "vi"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "y_a~~h5_00_pwg00",
+   "raw_count_source_senses": 4,
+   "emitted_rows": 1,
+   "distinct_sublemma_names": [
+    "nis",
+    "samA",
+    "vi"
+   ],
+   "flagged_before": true,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  }
+ ],
+ "fixed_count": 5,
+ "still_flagged_count": 3,
+ "fixed_keys": [
+  "d_a~~h10_00_pwg00",
+  "d_a~~h13_00_pwg00",
+  "iz~~h14_00_pwg00",
+  "vas~~h13_00_pwg00",
+  "y_a~~h5_00_pwg00"
+ ],
+ "still_flagged_keys": [
+  "car~~h1_20_vi",
+  "n_i~~h5_10_pari",
+  "n_i~~h5_11_pra"
+ ],
+ "counterexamples": [
+  {
+   "key": "_ap~~h3_00_pwg00",
+   "raw_count_source_senses": 3,
+   "emitted_rows": 7,
+   "distinct_sublemma_names": [
+    "ava",
+    "parisam",
+    "pra",
+    "saMparipra",
+    "sam"
+   ],
+   "flagged_before": false,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "vah~~h3_00_pwg00",
+   "raw_count_source_senses": 2,
+   "emitted_rows": 3,
+   "distinct_sublemma_names": [
+    "ati",
+    "saMpra",
+    "saMvi",
+    "ud",
+    "vi"
+   ],
+   "flagged_before": false,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  },
+  {
+   "key": "iz~~h8_00_pwg00",
+   "raw_count_source_senses": 3,
+   "emitted_rows": 10,
+   "distinct_sublemma_names": [
+    "anu",
+    "anupra",
+    "paripra",
+    "prADi",
+    "pra"
+   ],
+   "flagged_before": false,
+   "flagged_after_cap_to_1": false,
+   "cap_to_1_value": 1
+  }
+ ],
+ "counterexamples_collaterally_capped": [
+  "_ap~~h3_00_pwg00",
+  "vah~~h3_00_pwg00",
+  "iz~~h8_00_pwg00"
+ ],
+ "verdict": "DISPROVEN",
+ "reason": "The hypothesis fixes 5/8 flags but ALSO collapses source_senses to 1 for at least one real, currently-unflagged, genuinely multi-row Nachtrag card (_ap~~h3_00_pwg00, vah~~h3_00_pwg00, iz~~h8_00_pwg00) -- cards that legitimately store multiple real distinct-preverb correction rows today (see counterexamples[].emitted_rows). A future regeneration that dropped all but one of those rows would go completely undetected under the capped counter. No cap value between \"1\" (fixes 5/8, breaks these) and \"count of distinct sub-lemma names\" (breaks nothing, fixes 0/8) exists, because the fact that actually distinguishes a card that WILL be bundled into one stored row from one that WILL be split into several is the model's own generation-time decision -- unknowable when count_source_senses(raw) runs pre-generation."
+}
