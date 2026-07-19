@@ -137,6 +137,16 @@ def en_index(paths, gen_model_version=GEN_MODEL_VERSION):
                     # later bugfix can flag which EN rows predate it too (pipeline_version.py).
                     'pipeline': pipeline_version.stamp(model_version=gen_model_version),
                 }
+                # H1226: carry the pre-restore {Tn} pairing accept() stamped on the card (shared
+                # harness -> EN cards get it too), so a TNMASK expansion is measurable offline from
+                # an EN promoted row as well — parity with the RU lane (promote_final_cards.py). The
+                # generation-side stamping is SHARED across languages; consuming it in only one lane
+                # would be a real GAP. Additive, backward-compatible, carried only when well-formed.
+                tnmask = card.get('tnmask')
+                if (isinstance(tnmask, dict)
+                        and isinstance(tnmask.get('got'), str)
+                        and isinstance(tnmask.get('want'), str)):
+                    prov[sub]['tnmask'] = {'got': tnmask['got'], 'want': tnmask['want']}
     return idx, prov
 
 

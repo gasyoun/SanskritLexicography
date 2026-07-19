@@ -1719,6 +1719,17 @@ const accept = (c, k) => {
   // SOFT by default: record telemetry, do NOT reject; arming is TNMASK_HARD_REJECT (owner-gated).
   {
     const tok = cardTokens(c), want = tokensOf(INPUTS[k].skeleton)
+    // H1226: persist the pre-restore {Tn} pairing this check compares — candidate `got` vs
+    // masked-skeleton `want` — so a SOFT (un-rejected) expansion becomes MEASURABLE offline
+    // from the promoted row. The store keeps only post-restore text, dropping the very pairing
+    // TNMASK needs (H1150 returned DO_NOT_ARM, denominator 1, for exactly this reason). Set
+    // UNCONDITIONALLY: clean cards (got===want) are the measurement denominator. Braces stripped
+    // ('{T1} {T2}' -> 'T1 T2') so this provenance never reads as a raw {Tn} residue in the store
+    // (equality is preserved — same bijection on both sides). Survives restoreCard (RESTORE_SPEC
+    // lists only the text fields, never `tnmask`). Only accept() carries it: the heal path's
+    // acceptFrag hard-rejects fragment {Tn} mismatches, so no un-rejected expansion reaches a
+    // healed card (see pwg_ru/h1226 design note).
+    c.tnmask = { got: tok.replace(/[{}]/g, ''), want: want.replace(/[{}]/g, '') }
     if (tok !== want) {
       TNMASK_MISMATCHES++
       TNMASK_DETAIL.push({ key: k, got: tok, want: want })
