@@ -2,7 +2,16 @@
 
 _Created: 13-07-2026 · Last updated: 19-07-2026_
 
-## Status: partial ingest — 390 of the ≥400-record target, honestly short
+## Status: partial ingest — 302 of the ≥400-record target, honestly short
+
+**19-07-2026 dedup + false-positive correction (Sonnet 5 `claude-sonnet-5`, H803
+continuation):** the same day's `/dual-run-salvage` reconciliation immediately below
+(390 records) turned out to have two concrete, mechanically-verified defects, both
+caught before any further use of the dataset. See "19-07-2026 dedup +
+false-positive correction" below for the full audit; net result: **390 → 302**,
+now shipped from a single deterministic script run (no manual merge step) with
+every one of the 88 removed records individually accounted for as either a
+same-line duplicate or an established false-positive pattern, not a silent drop.
 
 **19-07-2026 reconciliation (Sonnet 5 `claude-sonnet-5`, `/dual-run-salvage`):** two
 independent H803 follow-up passes ran concurrently from the same 151-record baseline
@@ -15,10 +24,10 @@ Neither was a superset of the other (150 records in common, 0 gloss-identity con
 across the overlap; 90 records unique to the 240-set, 150 unique to the 300-set).
 Reconciled as a straight union — **390 records**, deduplicated by `nyaya_slp1`, each
 common entry keeping whichever lane's `explanation` field was longer/more complete (the
-300-lane's bug fix won 120/150 of those picks). This file is now a **manual merge of two
-independent extraction runs**, not directly reproducible by a single invocation of
-[`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py) — re-running it reproduces
-only one lane's subset. Full record-by-record accounting in the PR that landed this merge.
+300-lane's bug fix won 120/150 of those picks). This file was, at that point, a
+**manual merge of two independent extraction runs**, not directly reproducible by a
+single invocation of [`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py) --
+see the correction above for why that turned out to matter.
 
 **19-07-2026 update (Sonnet 5 `claude-sonnet-5`, H803 follow-up pass):** phrase-tier
 recall broadened 151 → **240** records (+89, 59%); the other two follow-ups were
@@ -47,11 +56,14 @@ enough to extract structured entries from — and it turned out, on inspection,
 to bind **all three** handfuls together, not just the first. The two other
 standalone archive.org uploads of the individual handfuls have OCR too
 degraded to use (see "Known limitations" below). The extraction script found
-**240 genuine entries** (up from 151 after the 19-07-2026 phrase-tier
-broadening below) across all three parts combined from this one source;
-reaching ≥400 requires either a better-OCR'd source for the same three parts
-or genuine page-image (vision) OCR of the scan — both flagged as follow-up,
-not attempted to fake by inflating the count.
+**302 genuine entries** (151 → 240 via the phrase-tier broadening, briefly
+390 via a same-day dual-run reconciliation that turned out to double-count
+57 entries and include 31 false positives, corrected back down to 302 --
+see "19-07-2026 dedup + false-positive correction" below) across all three
+parts combined from this one source; reaching ≥400 requires either a
+better-OCR'd source for the same three parts or genuine page-image (vision)
+OCR of the scan — both flagged as follow-up, not attempted to fake by
+inflating the count.
 
 ## Rights
 
@@ -71,7 +83,7 @@ archive.org item YKTn_a-handful-of-popular-maxims-vol-1-collected-by-colonel-g-a
     -> _djvu.txt OCR text derivative (downloaded 13-07-2026)
     -> raw/jacob_1907-1911_archiveorg_djvu.txt   (committed here verbatim, for audit trail)
     -> tools/build_laukika_nyaya.py              (extraction + IAST/SLP1 transcode via sanskrit-util)
-    -> data/laukika_nyaya.jsonl                  (this directory's output, 240 records)
+    -> data/laukika_nyaya.jsonl                  (this directory's output, 302 records)
 ```
 
 Regenerate with:
@@ -97,16 +109,16 @@ single item's OCR text contains three internal title pages
 were found by grepping the raw OCR text for these markers and are hard-coded
 in `build_laukika_nyaya.py`:
 
-| Part | OCR line range | Entries (v1, 13-07) | Entries (v2, 19-07) |
-|---|---:|---:|---:|
-| First Handful (2nd ed., 1907) | 807 – 3548 | 42 | 51 |
-| Second Handful (1909) | 3549 – 8664 | 57 | 88 |
-| Third Handful (1911) | 8665 – end | 52 | 101 |
-| **Total** | | **151** | **240** |
+| Part | OCR line range | v1 (13-07) | v2 phrase-tier (19-07) | v3 corrected combine (19-07) |
+|---|---:|---:|---:|---:|
+| First Handful (2nd ed., 1907) | 807 – 3548 | 42 | 51 | 62 |
+| Second Handful (1909) | 3549 – 8664 | 57 | 88 | 109 |
+| Third Handful (1911) | 8665 – end | 52 | 101 | 131 |
+| **Total** | | **151** | **240** | **302** |
 
 ## Data
 
-[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — 240 records, one per
+[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — 302 records, one per
 line, mirroring the IndischeSprueche field style:
 
 ```json
@@ -119,12 +131,13 @@ line, mirroring the IndischeSprueche field style:
   "explanation": "It is founded on some story of a goat's being suddenly killed by accidental contact with a sword ...",
   "source": "Jacob, A Handful of Popular Maxims, 2nd ed., Bombay (Tukaram Javaji / Nirnaya-Sagara Press), 1907 (First Handful)",
   "_ocr_line": 807,
-  "_headword_tier": "named"
+  "_headword_tier": "named",
+  "_match_method": "headword-regex"
 }
 ```
 
 - `nyaya_deva` / `nyaya_iast` / `nyaya_slp1` — the maxim's coined name (or,
-  for the 93 `"phrase"`-tier entries, its own quoted Sanskrit opening) in
+  for `"phrase"`-tier entries, its own quoted Sanskrit opening) in
   Devanāgarī, IAST, and SLP1.
 - `explanation` — Jacob's own note, lightly cleaned (de-hyphenated,
   digitization-credit boilerplate stripped) but **not otherwise rewritten**;
@@ -134,11 +147,18 @@ line, mirroring the IndischeSprueche field style:
 - `_ocr_line` — internal, non-citable: the line offset into
   `raw/jacob_1907-1911_archiveorg_djvu.txt` where the entry's headword was
   found, kept so a future correction pass can re-locate the exact source
-  text without re-running the whole extraction.
-- `_headword_tier` — `"named"` (147 records, headed by a coined "X-nyāya"
-  compound) or `"phrase"` (93 records, headed by the maxim's own quoted
+  text without re-running the whole extraction. Also now the dedup key
+  across recovery methods (see "dedup + false-positive correction" below).
+- `_headword_tier` — `"named"` (182 records, headed by a coined "X-nyāya"
+  compound) or `"phrase"` (120 records, headed by the maxim's own quoted
   Sanskrit line rather than a coined name — see "19-07-2026 follow-up pass"
-  below for how this tier grew from 4 to 93).
+  below for how this tier grew from 4 to 93, then "dedup + false-positive
+  correction" below for the further growth to 120).
+- `_match_method` — how the record was found: `"headword-regex"` (240,
+  the original regex pass, phrase-tier broadened per the 19-07 follow-up),
+  `"index-crossref-seqmatch"` (53) or `"index-crossref-prefix"` (9) — see
+  "dedup + false-positive correction" below for why this field exists and
+  what it caught.
 
 ## Known limitations / OCR fidelity (spot-check log)
 
@@ -148,11 +168,14 @@ extraction was fixed in the parser (not hand-patched in the data); every
 defect below is a genuine, left-as-found characteristic of the OCR text,
 disclosed rather than silently corrected:
 
-1. **Target count not met.** 240 of the ≥400 the handoff's stop condition
-   named (151 at the 13-07 pass, 240 after the 19-07 phrase-tier broadening —
-   see "19-07-2026 follow-up pass" below). Root cause is source availability
-   (only one of the three archive.org scans of this specific work has usable
-   OCR), not extraction effort.
+1. **Target count not met.** 302 of the ≥400 the handoff's stop condition
+   named (151 at the 13-07 pass, 240 after the 19-07 phrase-tier broadening,
+   briefly 390 after a same-day dual-run reconciliation that turned out to
+   contain 57 duplicate + 31 false-positive records, corrected back to 302 --
+   see "19-07-2026 follow-up pass" and "19-07-2026 dedup + false-positive
+   correction" below). Root cause is source availability (only one of the
+   three archive.org scans of this specific work has usable OCR), not
+   extraction effort.
 2. **Per-entry page citation dropped as unreliable, not shipped wrong.**
    An automatic per-entry printed-page number was attempted (nearest
    preceding isolated digit-only OCR line) but found contaminated by
@@ -279,6 +302,80 @@ sanskritdocuments.org/GRETIL/archive.org at last check) or vision-OCR of the
 page images directly (blocked this session per item 3 above) to recover
 entries whose text-layer OCR is too garbled to pattern-match at all.
 
+## 19-07-2026 dedup + false-positive correction (Sonnet 5 `claude-sonnet-5`, H803 continuation)
+
+Picked up H803 via `/next-task` after the `/dual-run-salvage` reconciliation
+above had already merged PR #576 + PR #577 to 390 records. Before treating
+390 as final, re-derived the same combination independently (combine PR
+#576's index-cross-reference technique onto the merged #577 baseline in a
+single deterministic script) and cross-checked the two results
+line-by-line against the shared, unchanged raw OCR text. Two concrete,
+mechanically-verified defects turned up in the 390:
+
+1. **57 same-`_ocr_line` duplicate pairs (114 records for 57 physical
+   headword occurrences), 0 content differences once whitespace is
+   normalized.** Root cause: PR #576's own index-crossref pass recorded
+   which OCR lines its **own** v1-narrow (pre-#577) regex pass had already
+   used, so it correctly avoided re-finding those -- but it had no way to
+   know about the **+89 phrase-tier lines #577's later broadened gate**
+   newly classified as headwords, since PR #576 branched before that
+   broadening existed. Several of those +89 lines were independently
+   re-discovered by PR #576's index-crossref pass under different
+   whitespace formatting (`format_headword()`'s space-preserving style vs.
+   the original all-whitespace-stripped style), so the union's `nyaya_slp1`
+   dedup key differed for what was actually the same entry and both
+   copies survived. Verified for all 57 pairs: identical Devanagari content
+   once whitespace is stripped for comparison (checked programmatically,
+   not sampled). **Fix:** the combined script now runs the index-crossref
+   pass with the CURRENT (already phrase-tier-broadened) used-line set,
+   so it can never rediscover a line the regex pass already claimed --
+   this dedup class cannot recur. `format_headword()` is also now applied
+   uniformly to every entry regardless of recovery method, closing the
+   whitespace-formatting mismatch at the source.
+2. **31 further false-positive lines in the 390's otherwise-unique set**
+   (checked as: line-level set difference between the corrected 302 and
+   the 390's 333 unique-line set). 30 of 31 exceed the same >25-codepoint
+   length threshold already established as the false-positive signature
+   for the unbounded `index-crossref-prefix` strategy (see the combine
+   pass this same session, further up the extraction pipeline's own git
+   history). The 31st, a 19-codepoint case that looked short enough to be
+   real, checked out on inspection of its raw OCR context (line 14565) as
+   `"The three verses immediately preceding the above will be found under
+   the हिरण्यनिधिदृष्टान्त."` -- a cross-reference SENTENCE naming another
+   entry's headword, not a fresh heading of its own. **Fix:** the tightened
+   `max_len=30` candidate cap from the combine pass (see git history) was
+   retained rather than loosened back up to recover these.
+3. **Net result: 390 → 302**, now produced by a single
+   `python build_laukika_nyaya.py` invocation with **zero** manual merge
+   step and **zero** duplicate `_ocr_line` or `nyaya_deva` values (checked
+   programmatically). Every one of the 88 removed records is accounted for
+   above as either a same-line duplicate (57) or an established
+   false-positive pattern (31) -- none were dropped without a specific,
+   checkable reason.
+4. **20-record spot-check re-confirmed** against the corrected 302 (see the
+   combine pass, same session): sampled across all three `_match_method`
+   values, all 20 checked out against the raw OCR context.
+5. **FEATURES_INDEX.md registration still deferred** -- 302/400 = 75.5% of
+   the stated target. Lower than the 390 briefly on `master`, but every
+   one of those 88 additional records was either a literal duplicate or a
+   non-headword false positive, not a genuine loss of coverage (verified:
+   0 lines are unique to the clean 302 that aren't also in the 390's set,
+   i.e. the correction only ever *removes*, never *misses*, relative to
+   what the 390 pass found).
+
+**A human should decide** whether 302/400 (75.5%), now the verified,
+regeneratable ceiling of both known extraction techniques against this one
+usable scan, is worth an explicit reduced-scope sign-off, or whether to
+wait for the vision-OCR follow-up (blocked on the archive.org image-server
+outage, see item 3 of the prior pass above) before deciding. Also worth a
+human's attention: [PR #576](https://github.com/gasyoun/SanskritLexicography/pull/576)
+should still be closed (superseded twice over now -- first by the #587
+reconciliation, now by this correction), and the #587 dual-run-salvage
+reconciliation should be flagged in whatever registry tracks that skill's
+past runs, since its per-record "0 duplicate headwords" claim relied on
+exact-string matching that a whitespace-formatting difference between the
+two source lanes could (and did) evade.
+
 ## Follow-up (concrete, not "someone should look into this")
 
 1. **Vision-OCR the page images once archive.org's image server recovers**
@@ -287,10 +384,11 @@ entries whose text-layer OCR is too garbled to pattern-match at all.
    literal 20-record image-based spot-check the Definition of Done asks for.
 2. **A genuinely OCR-garbled-text recovery pass** (vision-OCR or a
    Sanskrit-aware OCR re-run of the same scan) is now the only remaining
-   lever for further count growth from this source; the pattern-matching
-   extraction approach is exhausted (see "Residual gap" above).
+   lever for further count growth from this source; both the pattern-matching
+   and index-cross-reference extraction approaches are exhausted (see
+   "Residual gap" above and the dedup + false-positive correction above).
 3. **FEATURES_INDEX.md registration** — hold until either ≥400 or an
-   explicit reduced-scope sign-off (MG `@DECIDE`) accepting 240 (60%) as the
-   final count given the confirmed source ceiling.
+   explicit reduced-scope sign-off (MG `@DECIDE`) accepting 302 (75.5%) as
+   the final count given the confirmed source ceiling.
 
 _Dr. Mārcis Gasūns_
