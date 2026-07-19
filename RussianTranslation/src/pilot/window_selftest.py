@@ -2292,15 +2292,19 @@ def test_tm_card_sane_rejects_zero_marker_drift():
     """A cached card with zero citations/Sanskrit markers must not satisfy a cited source."""
     import gen_opt_harness2 as gh
     raw = '{#agni#}¦ Feuer <ls>RV. 1</ls>.'
-    card = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
-                                     'russian': 'огонь'}]}]}
+    # Fixtures are schema-complete (iast/notes/h/grammar) so the B03 completeness guard
+    # passes and the DRIFT check -- this test's actual claim -- is the one that refuses.
+    card = {'key1': 'agni', 'iast': 'agní', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': 'm.', 'senses': [{'tag': '1', 'german': 'Feuer',
+                                                   'russian': 'огонь'}]}]}
     ok, why = gh.tm_card_sane(card, 'ru', 'russian', raw)
     if ok or '<ls>' not in why:
         fail('zero-<ls> cached card must be refused for cited source, got ok=%r why=%r' %
              (ok, why))
     raw2 = '{#agni#}¦ Feuer.'
-    card2 = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
-                                      'russian': 'огонь'}]}]}
+    card2 = {'key1': 'agni', 'iast': 'agní', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': 'm.', 'senses': [{'tag': '1', 'german': 'Feuer',
+                                                   'russian': 'огонь'}]}]}
     ok2, why2 = gh.tm_card_sane(card2, 'ru', 'russian', raw2)
     if ok2 or '{#' not in why2:
         fail('zero-{# cached card must be refused for Sanskrit-marked source, got ok=%r why=%r' %
@@ -5869,6 +5873,128 @@ def test_restore_covers_every_promoted_field():
             fail('%s was not restored (still %r)' % (where, value))
 
 
+def test_h1339_b21_promoted_pairs_cover_store_write_set():
+    """H1339 B21 (the H1283 card_fields.py:64 conflict, resolved): every MASKED field
+    `rows_for` writes into a store row must be in PROMOTED_PAIRS, or `tn_residue` (the
+    promote-time loud-failure backstop) and `backfill_tn_residue` (the repair tool) are
+    blind to it. The defect: `record.grammar` is store-written (rows_for) and is BY DESIGN
+    a {Tn}-bearing field pre-restore (TOKEN_FIDELITY_FIELDS), yet PROMOTED_COMMON omitted
+    it -- so a future restore gap in grammar would promote raw {Tn} silently, exactly the
+    C-01 class the module exists to prevent (670 rows last time).
+    """
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import card_fields
+    import promote_final_cards as pfc
+    # Structural half: every masked field the store write-set contains is residue-checked.
+    # The store write-set of masked fields, stated here independently of PROMOTED_COMMON
+    # (comparing two separately-authored facts, per this module's own design rule):
+    # rows_for writes iast (card), h + grammar (record), tag/german/differentia/russian (sense).
+    store_written_masked = {('card', 'iast'), ('record', 'h'), ('record', 'grammar'),
+                            ('sense', 'tag'), ('sense', 'german'), ('sense', 'differentia'),
+                            ('sense', 'russian')}
+    missing = store_written_masked - set(card_fields.promoted_pairs('russian'))
+    if missing:
+        fail('store-written masked fields invisible to tn_residue/backfill: %s'
+             % sorted(missing))
+    # Behavioral half: a raw {Tn} in record.grammar must be reported as residue.
+    card = {'key1': 'x', 'iast': 'x', 'notes': '', 'records': [
+        {'h': 'x', 'grammar': 'm. {T9} du.', 'senses': [
+            {'tag': '1', 'german': 'a', 'russian': 'b'}]}]}
+    rec = card['records'][0]
+    residue = pfc.tn_residue(card, rec, rec['senses'][0])
+    if not any('grammar' in r for r in residue):
+        fail('tn_residue is blind to a raw {Tn} in record.grammar: %r' % (residue,))
+    # And the repair tool's store-field set sees the grammar column too.
+    import backfill_tn_residue as btr
+    if 'grammar' not in btr.STORE_FIELDS:
+        fail('backfill_tn_residue.STORE_FIELDS lacks grammar -- repair tool blind')
+
+
+def test_h1339_b02_stitched_card_schema_complete():
+    """H1339 B02: a heal/presplit STITCHED card must be schema-complete at construction.
+
+    The defect: both stitch twins built `{key1, records}` only, omitting CARD_REQUIRED
+    `iast`/`notes` (validate_final_card_schema:26) -- so any window containing a healed or
+    presplit card was refused WHOLE by the save gate (save_and_audit) or per-key by the
+    audit's final-schema gate + promotion contract, losing the window's paid agent calls.
+    """
+    import headless_worker as hw
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import validate_final_card_schema as vfs
+    senses = [{'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}]
+    owners = [('agni', 'm.')]
+    # Python twin: the construction helper itself must emit a schema-complete card.
+    card = hw.stitched_card('agni', 'agní', senses, owners)
+    try:
+        vfs.validate_card(card)
+    except ValueError as exc:
+        fail('Python stitched card is schema-incomplete: %s' % exc)
+    if card['iast'] != 'agní' or card['notes'] != '':
+        fail('stitched card iast/notes wrong: %r/%r' % (card['iast'], card['notes']))
+    if hw.stitched_card('k', None, senses, owners)['iast'] != 'k':
+        fail('a missing portrait iast must fall back to the key, not None')
+    # JS twin (static wiring): the template's stitched construction carries the same two
+    # fields, fed from the interpolated IASTS map (the JS cannot import Python).
+    src_text = open(os.path.join(HERE, 'gen_opt_harness2.py'), encoding='utf-8').read()
+    if 'const IASTS = %(iasts)s' not in src_text:
+        fail('JS template does not interpolate the IASTS map')
+    if "const stitched = { key1: k, iast: IASTS[k] || k, notes: '', records:" not in src_text:
+        fail('JS stitched construction does not carry schema-required iast/notes')
+
+
+def test_h1339_b03_tm_cards_schema_complete():
+    """H1339 B03 (P0): a TM-served whole card must be schema-complete, at BUILD and at SERVE.
+
+    The defect: `reconstruct_cards` emitted `{key1, iast, records:[{h, senses}]}` -- no
+    card.notes, no record.grammar, and sense-level optional fields present with None values
+    (all of which `validate_final_card_schema` refuses) -- so ONE TM hit poisoned the whole
+    window at the save gate. The serve-time guard `tm_card_sane` accepted such cards.
+    """
+    import tempfile
+    import translation_memory as tm
+    import gen_opt_harness2 as gh
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import validate_final_card_schema as vfs
+    prov = {'input_raw_sha256': 'a' * 64, 'model': 'sonnet', 'model_version': 'claude-sonnet-5'}
+    rows = [
+        {'key1': 'x', 'subcard': 'x~~h0_00_pwg00', 'iast': 'xā', 'h': 'x', 'grammar': 'm.',
+         'sense_tag': '1', 'ru': 'смысл', 'de': 'Sinn {T1}', 'equivalence_type': 'equivalent',
+         'source_type': None, 'stratum': None, 'differentia': None,
+         'review_status': 'ai_translated', 'provenance': prov},
+        {'key1': 'x', 'subcard': 'x~~h0_00_pwg00', 'iast': 'xā', 'h': 'x', 'grammar': 'm.',
+         'sense_tag': '2', 'ru': 'иной', 'de': 'ander', 'equivalence_type': None,
+         'source_type': None, 'stratum': None, 'differentia': None,
+         'review_status': 'ai_translated', 'provenance': prov},
+    ]
+    d = tempfile.mkdtemp()
+    store = os.path.join(d, 'store.jsonl')
+    with open(store, 'w', encoding='utf-8') as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    entries, skipped = tm.reconstruct_cards(store, 'ru')
+    if len(entries) != 1:
+        fail('expected 1 reconstructed TM card, got %d (skipped: %r)' % (len(entries), skipped))
+    card = next(iter(entries.values()))['card']
+    try:
+        vfs.validate_card(card)
+    except ValueError as exc:
+        fail('reconstructed TM card is schema-incomplete: %s' % exc)
+    # Serve-time guard: a legacy sidecar card (built pre-fix) must be REFUSED, not served.
+    legacy = {'key1': 'x', 'iast': 'xā', 'records': [
+        {'h': 'x', 'senses': [{'tag': '1', 'german': 'Sinn {T1}', 'russian': 'смысл'},
+                              {'tag': '2', 'german': 'ander', 'russian': 'иной'}]}]}
+    raw = 'Sinn {T1} ander'
+    ok, why = gh.tm_card_sane(legacy, 'ru', 'russian', raw)
+    if ok:
+        fail('tm_card_sane served a schema-incomplete legacy TM card')
+    ok, why = gh.tm_card_sane(card, 'ru', 'russian', raw)
+    if not ok:
+        fail('tm_card_sane refused a schema-complete reconstructed card: %s' % why)
+
+
 def test_every_stitch_emits_record_required():
     """C-02: the stitch must emit `h`/`grammar`, and must not collapse distinct homonyms.
 
@@ -6243,6 +6369,9 @@ def test_h1283_a6_prep_slice_flattens_batches():
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
+        test_h1339_b21_promoted_pairs_cover_store_write_set,
+        test_h1339_b02_stitched_card_schema_complete,
+        test_h1339_b03_tm_cards_schema_complete,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
         test_validator_has_a_live_caller,

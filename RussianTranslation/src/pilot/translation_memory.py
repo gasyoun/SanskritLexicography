@@ -332,26 +332,45 @@ def reconstruct_cards(store_path, lang):
         if any(not (r.get(field) or '').strip() for r in rows):
             skipped['incomplete-%s' % lang] += 1
             continue
+        # B03 (H1339, P0): a sense_tag the schema would refuse (None/empty) cannot be
+        # reconstructed into a servable card -- skip the sub-card rather than fabricate a
+        # tag; the serve-time guard refuses such a card anyway, so caching it only churns.
+        if any(not isinstance(r.get('sense_tag'), str) or not r.get('sense_tag')
+               for r in rows):
+            skipped['invalid-sense-tag'] += 1
+            continue
         # Rebuild records grouped by homonym head `h`, senses in stored order.
         recs = defaultdict(list)
         rec_order = []
+        rec_grammar = {}
         for r in rows:
             h = r.get('h')
             if h not in recs:
                 rec_order.append(h)
-            recs[h].append({
+                # first stored grammar of the h-group owns the record ('' when null)
+                rec_grammar[h] = r.get('grammar') or ''
+            sense = {
                 'tag': r.get('sense_tag'),
-                'german': r.get('de'),
+                'german': r.get('de') or '',
                 field if lang == 'en' else 'russian': r.get(field),
-                'equivalence_type': r.get('equivalence_type'),
-                'source_type': r.get('source_type'),
-                'stratum': r.get('stratum'),
-                'differentia': r.get('differentia'),
-            })
+            }
+            # B03: optional sense fields are validated WHEN PRESENT by the final-card
+            # schema (a present-but-None differentia/equivalence_type is a refusal), so a
+            # null store value must OMIT the key, never emit it as None.
+            for opt in ('equivalence_type', 'source_type', 'stratum', 'differentia'):
+                value = r.get(opt)
+                if value is not None:
+                    sense[opt] = value
+            recs[h].append(sense)
         card = {
             'key1': sub,
-            'iast': rows[0].get('iast'),
-            'records': [{'h': h, 'senses': recs[h]} for h in rec_order],
+            'iast': rows[0].get('iast') or sub,
+            # B03: notes (card) and h/grammar (record) are schema-REQUIRED -- a TM card
+            # missing them was refused by the save gate, poisoning the whole window on the
+            # first TM hit. h is coerced to str exactly as the C-07 degenerate stub does.
+            'notes': '',
+            'records': [{'h': (h or ''), 'grammar': rec_grammar[h], 'senses': recs[h]}
+                        for h in rec_order],
         }
         prov0 = rows[0].get('provenance') or {}
         address = '%s:%s' % (lang, raw_sha)

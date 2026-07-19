@@ -22,6 +22,7 @@ if _SRC not in sys.path:
     sys.path.insert(0, _SRC)
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
+from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
 from execution_contract import ActiveCallClaim, SCHEMA_V1, SCHEMA_V2, validate_manifest, validate_profile  # noqa: E402
 
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
@@ -204,6 +205,19 @@ def stitch_records(senses, owners):
     for record in records:
         record.pop('_owner', None)
     return records
+
+
+def stitched_card(key, iast, senses, owners):
+    """B02 (H1339): construct a heal-stitched card schema-complete.
+
+    `iast` and `notes` are CARD_REQUIRED (`validate_final_card_schema.CARD_REQUIRED`); a
+    stitched card missing them was refused WHOLE by save_and_audit's schema gate (or per-key
+    by the audit final-schema gate + promotion contract), losing every paid agent call in
+    the healed window. `iast` falls back to the key when the portrait carries none. The JS
+    twin is the `const stitched = { key1: k, iast: IASTS[k] || k, notes: '', ... }`
+    construction in gen_opt_harness2.py, fed from the same window_common.portrait_key_iast."""
+    return {'key1': key, 'iast': iast or key, 'notes': '',
+            'records': stitch_records(senses, owners)}
 
 
 def count_card(card, needle):
@@ -598,7 +612,10 @@ class HeadlessEngine:
         if not senses:
             self.note(key, 'selfheal-nothing-resolved')
             return None
-        card = {'key1': key, 'records': stitch_records(senses, owners)}
+        card = stitched_card(
+            key,
+            portrait_key_iast((self.m['inputs'].get(key) or {}).get('portrait') or '', key),
+            senses, owners)
         if frag_prov:
             card['frag_prov'] = frag_prov
         if missing:
