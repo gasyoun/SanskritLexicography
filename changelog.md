@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.36.0] — 19-07-2026
+
+### Changed
+- **H803 combine pass — LaukikaNyaya 240 → 302 records, merging two independently-continued PRs (Sonnet 5 `claude-sonnet-5`).** Two concurrent sessions had both continued H803 in the same minute: [PR #577](https://github.com/gasyoun/SanskritLexicography/pull/577) (merged, phrase-tier broadening 151→240) and [PR #576](https://github.com/gasyoun/SanskritLexicography/pull/576) (left open/conflicting, an independent index-cross-reference recovery technique reaching 151→300 plus a genuine bug fix). This pass rebased #576's technique onto the merged #577 baseline and combined both rather than picking one, reaching 302/400 (75.5%). QA (a length-by-recovery-method audit) caught a real false-positive class in a naive port of #576's prefix-matching strategy — 40 of 48 recovered candidates were mid-explanation citation fragments, not fresh headwords — before shipping; tightening the candidate-length cap dropped it to 9 genuine recoveries. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) "19-07-2026 combine pass" for the full audit + 20-record spot-check.
+
 ## [1.35.0] — 19-07-2026
 
 ### Added
