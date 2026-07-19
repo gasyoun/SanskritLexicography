@@ -1206,6 +1206,47 @@ def test_h1302_german_prose_residue_scan():
         fail('H1302: --store fixer touched a protected {%…%} / «…» span')
 
 
+def test_h1305_ru_style_mechanical():
+    # H1305: no-ё / terse editorial metalanguage («вм.», «в знач.») / in-<ls> `ed. Bomb.`
+    # left verbatim (source-resolution safety) -- the audit_window.py `ru_style` gate reuses
+    # ru_style_sweep.scan_violations exactly, so these fixtures pin BOTH the sweep and the gate.
+    from ru_style_sweep import scan_violations, sweep_text
+
+    # ё-word flagged (R1)
+    if 'R1_yo' not in scan_violations('пришёл поздно'):
+        fail('H1305: ё-carrying word not flagged R1_yo')
+    # standalone «всё» passes clean (whitelisted)
+    if scan_violations('всё хорошо, Всё в порядке'):
+        fail('H1305: whitelisted «всё»/«Всё» incorrectly flagged')
+    # the «всё-таки» edge case is NOT whitelisted -- defaults to е, so IS flagged
+    if 'R1_yo' not in scan_violations('он всё-таки пришёл'):
+        fail('H1305: «всё-таки» edge case incorrectly treated as whitelisted')
+    # metalanguage «вместо» flagged (R2)
+    if 'R2_vmesto' not in scan_violations('ошибочно вместо {#X#}'):
+        fail('H1305: metalanguage «вместо» not flagged R2_vmesto')
+    # metalanguage «в значении» flagged (R3)
+    if 'R3_vznach' not in scan_violations('употребляется в значении «зуб»'):
+        fail('H1305: metalanguage «в значении» not flagged R3_vznach')
+    # `ed. Bomb.` INSIDE <ls>...</ls> (standalone or embedded) is NEVER a violation --
+    # rewriting it would break src/pwg_sources.py's citation-key resolution.
+    if scan_violations('(так <ls>ed. Bomb.</ls>)'):
+        fail('H1305: in-<ls> standalone `ed. Bomb.` incorrectly flagged')
+    if scan_violations('<ls>R. ed. Bomb. 3,69,4</ls>'):
+        fail('H1305: in-<ls> embedded `ed. Bomb.` citation incorrectly flagged')
+    # a genuine free-prose `ed. Bomb.` OUTSIDE any <ls> tag IS flagged (R4)
+    if 'R4_bomb' not in scan_violations('<ls>Mālatīm.</ls> (ed. Bomb.) 304,1.'):
+        fail('H1305: free-prose `ed. Bomb.` not flagged R4_bomb')
+    # a clean row (no violations of any kind) scans empty
+    if scan_violations('обычный чистый русский текст без нарушений'):
+        fail('H1305: clean text incorrectly flagged')
+    # sweep_text actually applies the fix a flagged violation predicts
+    fixed, counts = sweep_text('ошибочно вместо {#X#}, читает <ls>ed. Bomb.</ls>')
+    if 'вм.' not in fixed or 'ed. Bomb.' not in fixed:
+        fail('H1305: sweep_text did not apply the terse form / kept in-<ls> siglum verbatim')
+    if counts.get('R2_vmesto') != 1 or counts.get('R4_bomb') != 0:
+        fail('H1305: sweep_text per-rule counts do not match the expected split')
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -6266,6 +6307,7 @@ def main():
         test_german_residue_keeps_retained_markup,
         test_german_connective_fix,
         test_h1302_german_prose_residue_scan,
+        test_h1305_ru_style_mechanical,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,
