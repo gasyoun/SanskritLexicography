@@ -1838,7 +1838,13 @@ async function healGroup(k, idxs, grp, label, budget) {
     }
     if (budget) budget.spent++   // account this call against the card's own ceiling
     const blocks = pending.map(i => '\\n\\n=== CARD ' + fkey(i) + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
+    // B01 (H1339): fragment/heal calls serve exactly ONE card k, so inject that card's own
+    // evidence -- per-card grammar (the ONLY grammar in nominal windows, where the shared
+    // GRAMMAR constant is empty) and the portrait (Sanskrit citation evidence), exactly as
+    // the whole-card batch lane's cardBlock does. Presplit giants -- the densest,
+    // highest-value cards -- were translated with ZERO evidence before this.
+    const prompt = PREAMBLE + GRAMMAR + (GRAMMARS[k] || '') + CONV_TR + blocks
+      + '\\n--- portrait (evidence) ---\\n' + (INPUTS[k] ? INPUTS[k].portrait : '')
     const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
     let res
     try {

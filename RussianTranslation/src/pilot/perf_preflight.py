@@ -41,6 +41,17 @@ from window_common import INP, input_paths, read_text
 # of the gate.
 PER_AGENT_TOKENS = 184000
 PER_AGENT_USD = 0.347
+# B14 (H1339): the pril10_w1 figures above are a MONSTER/presplit-lane calibration -- giant
+# fragment calls genuinely run ~184K tokens/agent -- but pricing HEALTHY batched lanes with
+# them over-estimates ~3.1x (H963 c4 canary: 59,250 tok for 1 agent, "cost model ...
+# over-estimates 3.1-4.2x"; nominal_w1_100small economics: 25.0K tok/clean card x ~2.4
+# cards/agent ~= 60K/agent -- two independent sources agree) and the H304 cap-and-defer
+# gate then refuses healthy windows on fiction. The estimate now prices per LANE: batched
+# agents at the healthy calibration, presplit fragment-group agents at the monster one.
+# The monster constants keep their names and values -- the kAla-class gate loses no teeth
+# (h809_selftest pins them).
+PER_AGENT_TOKENS_HEALTHY = 60000
+PER_AGENT_USD_HEALTHY = round(PER_AGENT_USD * 60000 / PER_AGENT_TOKENS, 3)   # 0.113
 REALISM_FACTOR = 1.35
 COST_CEIL_PER_CARD_USD = 2.00   # a window whose est cost per TRANSLATED card exceeds this is
                                 #  flagged: a healthy batched card is ~$0.07, but pril10_w1 was
@@ -56,9 +67,14 @@ def cost_estimate(report, per_card_ceiling=COST_CEIL_PER_CARD_USD,
     --refuse-over-cost) refuse to launch a window that would silently run into a
     $80 / 3-card outcome again."""
     agents = report.get('agent_expected_after_tm', 0) or 0
+    # B14: split the expected agents into lanes and price each at ITS calibration.
+    healthy_agents, monster_agents = _lane_split(
+        agents, report.get('batch_count'), bool(report.get('presplit_keys')))
     est_agents = agents * realism
-    est_tokens = int(round(est_agents * PER_AGENT_TOKENS))
-    est_cost = round(est_agents * PER_AGENT_USD, 2)
+    est_tokens = int(round((healthy_agents * PER_AGENT_TOKENS_HEALTHY
+                            + monster_agents * PER_AGENT_TOKENS) * realism))
+    est_cost = round((healthy_agents * PER_AGENT_USD_HEALTHY
+                      + monster_agents * PER_AGENT_USD) * realism, 2)
     # cards that actually cost an agent() call — exclude TM-resolved and degenerate stubs.
     cards_to_translate = max(0, len(report.get('selected_keys', []))
                              - int(report.get('tm_cards', 0) or 0)
@@ -81,12 +97,30 @@ def cost_estimate(report, per_card_ceiling=COST_CEIL_PER_CARD_USD,
     }
 
 
-def _cost_from_agents(agents, realism=REALISM_FACTOR):
+def _lane_split(agents, batch_count, has_presplit):
+    """B14: (healthy_agents, monster_agents). Fragment-group calls above the batched share
+    belong to the presplit/monster lane. A window with no presplit keys is all-healthy;
+    missing batch telemetry with presplit present falls conservatively to all-monster
+    (over-pricing keeps the gate's teeth, never removes them)."""
+    agents = agents or 0
+    if not has_presplit:
+        return agents, 0
+    if batch_count is None:
+        return 0, agents
+    batched = min(agents, batch_count or 0)
+    return batched, max(0, agents - batched)
+
+
+def _cost_from_agents(agents, realism=REALISM_FACTOR, monster=False):
+    """Price a single-key/aggregate agent count. `monster=True` uses the presplit-lane
+    calibration (B14) -- callers pass whether the key routed to the presplit lane."""
     est_agents = agents * realism
+    tok = PER_AGENT_TOKENS if monster else PER_AGENT_TOKENS_HEALTHY
+    usd = PER_AGENT_USD if monster else PER_AGENT_USD_HEALTHY
     return {
         'est_agents_with_realism': round(est_agents, 1),
-        'est_tokens': int(round(est_agents * PER_AGENT_TOKENS)),
-        'est_cost_usd': round(est_agents * PER_AGENT_USD, 2),
+        'est_tokens': int(round(est_agents * tok)),
+        'est_cost_usd': round(est_agents * usd, 2),
     }
 
 
@@ -110,7 +144,8 @@ def cost_partition(args, root, rootmap, keys, report):
                                         tm_auto=args.tm_auto)
             meta = const_json(js, 'META')
             agents = meta.get('agent_expected_after_tm', 0) or 0
-            cost = _cost_from_agents(agents)
+            # B14: a key that routed presplit prices at the monster calibration.
+            cost = _cost_from_agents(agents, monster=bool(meta.get('presplit_keys')))
         per = round(cost['est_cost_usd'], 2)
         row = {
             'key': key,
@@ -136,7 +171,16 @@ def cost_partition(args, root, rootmap, keys, report):
                                     lang=args.lang, tm_path=tm_path, tm_auto=args.tm_auto)
         meta = const_json(js, 'META')
         agents = meta.get('agent_expected_after_tm', 0) or 0
-        return {'agent_expected_after_tm': agents, **_cost_from_agents(agents)}
+        # B14: mixed subsets price per lane, exactly as cost_estimate does.
+        healthy, monster = _lane_split(agents, meta.get('batch_count'),
+                                       bool(meta.get('presplit_keys')))
+        healthy_cost = _cost_from_agents(healthy)
+        monster_cost = _cost_from_agents(monster, monster=True)
+        return {'agent_expected_after_tm': agents,
+                'est_agents_with_realism': round(agents * REALISM_FACTOR, 1),
+                'est_tokens': healthy_cost['est_tokens'] + monster_cost['est_tokens'],
+                'est_cost_usd': round(healthy_cost['est_cost_usd']
+                                      + monster_cost['est_cost_usd'], 2)}
 
     totals = {
         'run_now': grouped_total(run_now),

@@ -494,7 +494,15 @@ class HeadlessEngine:
                           '--- masked German (translatable only; {Tn}=masked span) ---\n%s'
                           % (frag_key, index + 1, len(group), group[index]['skeleton']))
         prompt = self.m['prompt']
-        return prompt['preamble'] + prompt.get('grammar', '') + prompt['translation'] + ''.join(blocks)
+        # B01 (H1339): a fragment/heal call serves exactly ONE card -- inject that card's
+        # own evidence (per-card grammar, the ONLY grammar in nominal windows; and the
+        # portrait), mirroring build_prompt's card_block and the JS healGroup twin.
+        # Presplit giants were translated with ZERO evidence before this.
+        card_grammar = (prompt.get('grammars') or {}).get(key, '')
+        portrait = (self.m.get('inputs', {}).get(key) or {}).get('portrait') or ''
+        return (prompt['preamble'] + prompt.get('grammar', '') + card_grammar
+                + prompt['translation'] + ''.join(blocks)
+                + '\n--- portrait (evidence) ---\n' + portrait)
 
     def heal_group(self, key, group, indices, label, budget):
         resolved = {}

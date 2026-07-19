@@ -186,6 +186,24 @@ def main():
     reports = []
     for entry in res['cards_out']:
         key = entry['key1']
+        # B05 (H1339): a worker-null-death card carries card=None -- audit_card crashed on
+        # it with a TypeError, killing the ENTIRE audit at batch scale. A null card is an
+        # honest non-promotable REJECT row, never an audit crash.
+        if not entry.get('card'):
+            inp = man['inputs'].get(key) or {}
+            want_ls, want_sk = int(inp.get('ls') or 0), int(inp.get('sk') or 0)
+            reports.append({
+                'key1': key,
+                'wf_would_promote': wf_rows.get(key, {}).get('would_promote'),
+                'wf_coverage': wf_rows.get(key, {}).get('coverage'),
+                'promote_dry': False, 'null_card': True,
+                'fidelity_german': {'ls': (0, want_ls), 'sk': (0, want_sk)},
+                'fidelity_translation': {'ls': (0, want_ls), 'sk': (0, want_sk)},
+                'schema': {'ok': False, 'errors': ['null card (worker-null-death)']},
+                'soft_flags': [], 'hard_fail': ['NULL-CARD: worker returned no card'],
+                'notes_parked': {'lost_content': []},
+            })
+            continue
         reports.append(audit_card(entry['card'], man['inputs'][key],
                                   man['placeholder_maps'][key], wf_rows.get(key, {}),
                                   field))
