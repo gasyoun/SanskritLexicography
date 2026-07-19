@@ -24,6 +24,22 @@ An audit of `RussianTranslation/src/pwg_ru_translated.jsonl` (11,275 rows,
 occurrences in the RU field (99.99%) were still verbatim German/Latin**, across
 265 distinct tokens.
 
+## Case government (Rektion) — owned by government.html, not this dashboard (H1308)
+
+MG's DA-vote row **N2** (19-07-2026, card `vas~~h0_zz_pw00|samava`) asked a
+different question of the same `<ab>` markup: given a sense carrying
+`(<ab>Instr.</ab>)`, *can I find every card with Instr. government in one click?*
+That is **card retrieval**, not token frequency — so it lives on its own page, the
+[government (Rektion) index](https://gasyoun.github.io/SanskritLexicography/government.html)
+(case chips Instr./Loc./Gen./Acc./Dat./Abl. → every card governing that case, with
+an honest floor-vs-ceiling coverage banner), NOT inside this abbreviations
+dashboard. Ruling: **two pages, cross-linked** — `abbreviations.html` stays
+token-frequency oriented, `government.html` is card-retrieval oriented; merging
+would bury N2's one-click ask. Extractor: `government_census.extract_government()`,
+now case-insensitive so the PW `zz_pw*` capitalized stratum (`(<ab>Instr.</ab>)`,
+1,116 rows previously invisible) is captured alongside the PWG lowercase one. See
+[H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md).
+
 ## Architecture decision: fix at RENDER TIME, not in the data store
 
 The translated JSONL store (`pwg_ru_translated.jsonl`) keeps the `<ab>`/`<is>`

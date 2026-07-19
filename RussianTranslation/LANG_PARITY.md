@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 18-07-2026 (H1209 controller-worker rig GAP entry)_
+_Created: 04-07-2026 · Last updated: 19-07-2026 (H1308 government-index page SHARED entry)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -589,10 +589,27 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated. Re-verified 12-07-2026 after H778 (#384) added a source_sha16-gated JSON sidecar freeze/cache layer (build_sidecar/write_sidecar/load_sidecar/census_or_load) plus a `freeze` CLI subcommand around the same run_census() function — still no --lang branch, verdict unchanged.",
+    "note": "H335 (08-07-2026). The census reads raw pwg.txt below any --lang branch and never touches RU/EN translation code; the government-marker regexes operate on the German source markup shared by both editions. Read-only over the source; selftest-gated. Re-verified 12-07-2026 after H778 (#384) added a source_sha16-gated JSON sidecar freeze/cache layer (build_sidecar/write_sidecar/load_sidecar/census_or_load) plus a `freeze` CLI subcommand around the same run_census() function — still no --lang branch, verdict unchanged. Re-verified 19-07-2026 (H1308, Opus 4.8 claude-opus-4-8): the PAREN/CASE/MIT/CONNECTOR regexes were made case-INSENSITIVE so the PW zz_pw* CAPITALIZED stratum ((<ab>Instr.</ab>)) extracts alongside the PWG lowercase one, matched case tokens normalised to lowercase via the new _cases() helper. Both extract_government() (store de fields) and run_census() (raw pwg.txt) share the change; the raw ceiling rose 3853->3905 markers (the +52 are sentence-initial 'Mit dem <ab>...</ab>' prose government the lowercase regex missed). Still operates only on the shared German source markup below any --lang branch; verdict unchanged.",
     "tracking": "",
     "verified_sha256": {
-      "src/government_census.py": "bf421d8fd743767c891ea1633f47e6526e88aef2c93d3a73437fc9ac749dafb1"
+      "src/government_census.py": "0a004740cc6ba9407c292fef015b07b60fcd62cd82b6252f08fc49a00de6d6d8"
+    }
+  },
+  {
+    "id": "government_index_page_h1308",
+    "mechanism": "H1308 one-click government (Rektion) retrieval page: government_index()/government_meta()/emit_government() in build_article_site.py apply government_census.extract_government() over each sense's DE source text to produce government.html (case chips Instr./Loc./Gen./Acc./Dat./Abl. + variation bucket -> every card governing that case), an honest floor-vs-ceiling coverage banner, and index.html #g=<safe> deep-links to the full entry.",
+    "files": [
+      "src/pilot/build_article_site.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government).",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/build_article_site.py": "09ce9d51e88bcfdebfb86ac74b86d57317faa6f182922041a212b96871b24987"
     }
   },
   {
@@ -1186,7 +1203,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
-      "src/pilot/build_article_site.py": "41c68f01652e49f66a908d89a16c43877923c92f4d0fb2d447d611aec2a399d7"
+      "src/pilot/build_article_site.py": "09ce9d51e88bcfdebfb86ac74b86d57317faa6f182922041a212b96871b24987"
     }
   },
   {
