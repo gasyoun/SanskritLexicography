@@ -97,6 +97,53 @@ def run_py(args, env=None):
             'seconds': round(time.perf_counter() - t0, 3)}
 
 
+def run_py_inproc(args):
+    """H1339 Phase 3 (route-neutral speed): run a child gate script IN-PROCESS via runpy
+    instead of a fresh interpreter -- the child's imports resolve from this process's
+    sys.modules cache, eliminating one interpreter+site+import startup per gate per window
+    (5 gates x every audited window). The EXECUTED CODE is byte-identical (runpy runs the
+    same script file top-level as __main__), stdout is captured verbatim so the strict
+    FLAGGED_JSON parsers see exactly what the subprocess form printed, and SystemExit
+    carries the same returncode semantics. Any crash returns rc=3 with the traceback in
+    stderr -- feeding the SAME unparseable-verdict fail-loud path as a crashed subprocess
+    (H169 defect 2). Callers must not run two of these concurrently (sys.argv/stdout are
+    process-global) -- the gate loop runs them sequentially."""
+    import contextlib
+    import io as _io
+    import runpy
+    import traceback
+
+    class _CapturedIO(_io.StringIO):
+        def reconfigure(self, **_kw):
+            # every org script opens with sys.stdout.reconfigure(encoding='utf-8');
+            # a captured buffer is already text -- the call is a harmless no-op here.
+            return None
+
+    script, argv = args[0], args[1:]
+    t0 = time.perf_counter()
+    out, err = _CapturedIO(), _CapturedIO()
+    old_argv, old_cwd = sys.argv, os.getcwd()
+    rc = 0
+    try:
+        sys.argv = [script] + list(argv)
+        os.chdir(SRC)
+        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+            try:
+                runpy.run_path(script, run_name='__main__')
+            except SystemExit as exc:
+                code = exc.code
+                rc = code if isinstance(code, int) else (0 if code is None else 1)
+            except BaseException:
+                err.write(traceback.format_exc())
+                rc = 3
+    finally:
+        sys.argv = old_argv
+        os.chdir(old_cwd)
+    return {'argv': ['in-process'] + list(args), 'returncode': rc,
+            'stdout': out.getvalue(), 'stderr': err.getvalue(),
+            'seconds': round(time.perf_counter() - t0, 3)}
+
+
 def parse_flagged_json(stdout):
     """Strict parse of a child auditor's machine-readable verdict line
     (`FLAGGED_JSON: [...]`, emitted by audit_translation.py / audit_coverage.py /
@@ -499,23 +546,28 @@ def main():
         futures[ex.submit(run_nws_gate, keys, protected)] = ('nws', None)
         futures[ex.submit(run_prompt_semantic_audit, wf, protected)] = ('prompt_semantic', None)
         futures[ex.submit(run_sense_shortfall_gate, results, INPUT_DIR, protected)] = ('sense_loss', None)
-        for name, cmd, parser in commands:
-            futures[ex.submit(run_py, cmd)] = (name, parser)
         for fut in concurrent.futures.as_completed(futures):
             name, parser = futures[fut]
             res = fut.result()
-            if parser:
-                parsed = parser(res['stdout'])
-                if parsed is None:
-                    # Unparseable child verdict (missing/malformed FLAGGED_JSON line): never
-                    # silently treat this as "no flags". Fail loud and requeue every card in
-                    # the window so a wording drift in the child auditor cannot silently drop
-                    # flagged cards (H169 defect 2).
-                    res['requeue'] = sorted(keys)
-                    res['unparseable_verdict'] = True
-                else:
-                    res['requeue'] = parsed
             gates[name] = res
+    # H1339 Phase 3: the five child-script gates run IN-PROCESS (runpy), sequentially --
+    # sys.argv/stdout are process-global, so they must not overlap; the thread pool above
+    # only existed to hide per-gate interpreter startup, which run_py_inproc eliminates.
+    # Same scripts, same stdout, same strict parsers, same fail-loud path.
+    for name, cmd, parser in commands:
+        res = run_py_inproc(cmd)
+        if parser:
+            parsed = parser(res['stdout'])
+            if parsed is None:
+                # Unparseable child verdict (missing/malformed FLAGGED_JSON line): never
+                # silently treat this as "no flags". Fail loud and requeue every card in
+                # the window so a wording drift in the child auditor cannot silently drop
+                # flagged cards (H169 defect 2).
+                res['requeue'] = sorted(keys)
+                res['unparseable_verdict'] = True
+            else:
+                res['requeue'] = parsed
+        gates[name] = res
 
     for name in ['final_schema', 'nws', 'translation', 'stage2_mechanical', 'coverage',
                  'sense_dupes', 'prompt_semantic', 'sense_loss', 'ru_style']:
