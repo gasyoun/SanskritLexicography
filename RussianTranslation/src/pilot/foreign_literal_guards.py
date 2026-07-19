@@ -40,3 +40,32 @@ AMBIGUOUS_DE_FR_WORDS = frozenset({'des'})
 FRENCH_CONTEXT_WORDS = re.compile(
     r"(?:\bl['’]|\b(?:une?|les?|aux?|plus|tr[eè]s|homme|femme|basse|"
     r"extraction|chose|terre|qui|dans|pour|avec|sans)\b)", re.I)
+
+# ---------------------------------------------------------------------------
+# H1302: German PROSE-residue function words that leaked untranslated into the OUTPUT
+# field (RU or EN) OUTSIDE protected markup -- citation "zu"/"bei", "mit dem <ab>acc.</ab>",
+# "so v. a.", grammatical connectives ("und", "oder", "mit"), "mit Ergänzung von". German
+# residue is a defect in BOTH output languages, so this list is the single shared source of
+# truth for the RU gate (prompt_rule_audit.GERMAN_RESIDUE / GERMAN_GLOSS_WORDS) and the EN gate
+# (audit_window_en.DE_WORDS). LANG_PARITY: SHARED (german_prose_residue_h1302).
+#
+# EN_SAFE excludes German/English homographs (so, als, aus, am, in, ein, kein, wie) that would
+# false-positive on ordinary English text -- the EN gate unions only these. The RU gate can use
+# the FULL set because none of them are legitimate Russian.
+GERMAN_PROSE_RESIDUE_TOKENS = (
+    'der die das den dem des dessen dieses diese dieser '
+    'und oder aber auch wohl vielleicht nicht noch nur so als '
+    'ein eine einer eines einem einen kein keine wie woraus du '
+    'mit ohne von für bei beim nach unter statt im am zum zur aus gegen '
+    'zu ziehen häufiger könnte später Ende Jmd jmdm jmdn'
+).split()
+# German-only tokens with no common English homograph -- safe to add to the EN residue gate.
+GERMAN_PROSE_RESIDUE_EN_SAFE = (
+    'und oder der des dem den dessen mit ohne von für bei beim nach unter statt '
+    'zum zur gegen zu ziehen häufiger könnte später vielleicht wohl'
+).split()
+
+GERMAN_PROSE_RESIDUE = re.compile(
+    r'\b(?:' + '|'.join(GERMAN_PROSE_RESIDUE_TOKENS) + r')\b', re.I)
+GERMAN_PROSE_RESIDUE_EN = re.compile(
+    r'\b(?:' + '|'.join(GERMAN_PROSE_RESIDUE_EN_SAFE) + r')\b', re.I)
