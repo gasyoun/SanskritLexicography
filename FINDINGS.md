@@ -2732,9 +2732,101 @@ which sharpen — not overturn — the finding:
 > [#447](https://github.com/gasyoun/SanskritGrammar/pull/447)) · H1310 · 19-07-2026,
 > Opus 4.8 (`claude-opus-4-8[1m]`).
 
+**Update (v3, [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459),
+H1326).** v2 flagged Amara/Rājanighaṇṭu/Trikāṇḍaśeṣa/Nighaṇṭu/Ratnamālā/Hārāvalī as the
+biggest remaining corpus-coverage gap. H1326 sourced **one** of these — Amarakośa (`amar`,
+9,788 SLP1 headwords, GNU GPL v3.0, from [`sanskrit-kosha/kosha`](https://github.com/sanskrit-kosha/kosha)
+— the same upstream project and `<syns>` annotation format already used for the existing
+`abch`/`acph`/`acsj`/`nmmb` koṣas) — and joined it as an 8th koṣa:
+- Of 32,690 lexicon-only entries: koṣa-corroborated **10,724 → 10,812** (+88), dict-lexical
+  **7,062 → 6,978** (−84), pwg-unique **2,298 → 2,294** (−4), text-attested unchanged (12,606).
+- **The gain is real but modest, and does not touch the hardest residue.** All 4
+  newly-resolved pwg-uniques came from the "present only in same-source PW" fringe
+  (1,510 → 1,506); the **788-word "absent from every dictionary" core is unchanged** — none
+  of those 788 happen to be Amara-cited. Amara alone does not meaningfully shrink the hardest
+  ghost-word residue, even though it is now methodologically joined rather than recorded as
+  a gap.
+- **Rājanighaṇṭu, Trikāṇḍaśeṣa, and generic Nighaṇṭu remain unsourced as bulk lemma-tagged
+  data — a negative result worth recording.** A scan of all 126 reachable dictionaries in
+  `sanskrit-kosha/kosha` found only 4 works have ever received `<syns>` synset annotation
+  (the 3 already in `csl-orig` + Amara, now added); Trikāṇḍaśeṣa/Nighaṇṭuśeṣa/Hārāvalī/
+  Medinīkośa exist there only as raw, unsegmented, sandhi-joined verse. The
+  `cltk/sanskrit_text_dcs` mirror of Digital Corpus of Sanskrit raw texts has a
+  `Rājanighaṇṭu.txt`, but it is a 232-byte fragment (opening invocation only); other
+  nighaṇṭus mirrored there in fuller form (Dhanvantari-, Madanapāla-, Kaiyadeva-,
+  Aṣṭāṅga-nighaṇṭu) are likewise raw unsegmented IAST verse. **Extracting individual
+  headwords from raw metrical verse needs a real Sanskrit sandhi-segmenter, not a bulk
+  download** — `sanskrit-kosha/kosha`'s own `<syns>` annotation is done by hand
+  (`kosha_annotator.py` + `annotation_accuracy_log.txt`), confirming this is a genuine
+  digitisation gap, not a licence or access issue.
+- **Reusable rule:** when a "digitise dictionary X" backlog item names a specific work,
+  check whether a *headword-tagged* (not just OCR'd/raw) digitisation exists before
+  estimating effort — the `sanskrit-kosha/kosha` project holds ~140 kosa digitisations but
+  has only manually lemma-annotated 5 of them; raw OCR of the other ~135 is not a substitute
+  and cannot be bulk-converted without a real segmenter.
+
+> **Source (v3):** [`data/pwg_lexicon_only_audit/kosa_extra/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit/kosa_extra)
+> (`amar.txt` + provenance/negative-result-audit `README.md`) ·
+> [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459) · H1326 ·
+> 19-07-2026, Sonnet 5 (`claude-sonnet-5`).
+
+### §98. PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically
+
+The Poona Dictionary ([PD](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/external_src/pd/pd.txt),
+55 MB, 107,630 `<L>` entries) has **no `<ls>` citation layer** — unlike the 8 Cologne
+dictionaries behind [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv),
+to which PD contributes zero edges. Its source sigla are inline in running prose, so any
+consumer must harvest them by pattern and then normalise spelling variants into families.
+A regex probe finds **5,231 distinct candidate tokens** across **416,767 occurrences**, with
+**99.2 % of entries carrying at least one citation** — against a plausible real works list of
+~800–1,500, i.e. roughly 3–4 tokens of noise or variance per genuine work. Variant collapsing
+is therefore unavoidable, and the obvious tool (prefix/similarity clustering, as used for
+[`siglum_family_candidates.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/siglum_family_candidates.csv))
+**merges the two highest-value sources in the dictionary into one node.**
+
+`MahāBhā.` (9,339 occurrences) and `MahāBh.` (1,940) differ by one character and are not
+variants of the same work. Verified against the actual citation contexts, not inferred from
+abbreviation convention:
+
+| | `MahāBhā.` | `MahāBh.` |
+|---|---|---|
+| Work | **Mahābhārata** | **Mahābhāṣya** (Patañjali, Kielhorn ed.) |
+| Locator | parvan.adhyāya.śloka — `i. 16. 9`, `iii. 3. 24`, `vii. 22. 33` | volume.page.line — `iii. 465. 17`, `i. 323. 19` |
+| Diagnostic tail | none; cross-refs to `BrahmP.`, quoted by `ŚabdKaDru.`/`Vāc.` | **`({%on%} …)`** naming the commented sūtra — `({%on%} P. viii. 4. 68)`, `({%on%} ŚivSū.(Gr.) 1)` |
+| Distinct locator shapes | **1,317** (wide, as an epic's citation space should be) | **72** (narrow, formulaic) |
+
+**The mechanical discriminator is the `({%on%} …)` tail, not the siglum spelling.** A
+Mahābhāṣya citation names the Pāṇini or Śivasūtra rule it comments on; a Mahābhārata citation
+never does. That test is robust to the spelling collision and should gate the merge decision.
+
+**Why this matters beyond one pair.** The failure is silent and directional: fusing them
+inflates a single node to 11,279 citations and destroys the ability to distinguish PD's
+largest *epic* source from its most important *grammatical* one — which is exactly the
+distinction any corpus-coverage or citation-weighting measurement depends on. When harvesting
+PD sigla, hand-review every merge in the top ~100 by frequency rather than trusting a
+similarity threshold; `Kāśi.`/`KāśiVṛ.` and `PadmP.`/`PadmaP.` in the same head are genuine
+merges, so a blanket "never merge" rule is equally wrong.
+
+Related noise classes in the same harvest, all needing classification rather than merging:
+structural tokens (`I.`, `II.`, `Ed.`, `App.`), language labels (`Skt.`, `Pr.`, `Sg.`), and
+**secondary scholarship** — `EI.` (Epigraphia Indica, 3,281), `POK.` (Pokorny), `TURN.`
+(Turner). The last class matters for any claim that PD's siglum list represents "works in
+Sanskrit": it mostly does, but not purely.
+
+**Standing caveat on any PD-derived denominator:** PD is published only from `a-` to about
+`apaca-` (6 of 37+ planned volumes, 104,959 lemmas — [`dictionary_inventory.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/dictionary_inventory.csv)).
+A harvested siglum list is *PD's canon as exercised under the letter a-*, not its full
+declared canon; the printed front-matter "List of Works and Abbreviations" is what would
+close that gap.
+
+> **Source:** measured probe over `external_src/pd/pd.txt` during the scoping of
+> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
+> (PD-abbreviation-list vs DCS corpus coverage) · 19-07-2026, Opus 4.8 (`claude-opus-4-8`).
+> Identification verified by citation-context inspection, not by convention.
+
 ---
 
-### §98. Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass
+### §99. Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass
 
 The H1305 RU style gate originally scanned rendered `.merged.md` output and applied
 «вместо»→«вм.» / «в значении»→«в знач.» globally after a clean 60/291 R2 sample and a

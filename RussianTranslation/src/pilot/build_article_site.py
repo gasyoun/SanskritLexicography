@@ -44,6 +44,7 @@ import pwg_ab_ru  # noqa: E402  (<ab> -> RU display text for the editorial/cross
 import pwg_sources as pwgsrc  # noqa: E402  (<ls> siglum -> full source title, for tooltips)
 import spr_fulltext as spr  # noqa: E402  (<ls> Spr. (II) N -> Indische Sprüche full text, for tooltips; H1307)
 import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
+import government_census as govc  # noqa: E402  (<ab> case-government extractor; powers government.html, H1308)
 
 RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 OUT_DIR = os.path.join(REPO, 'article_site')
@@ -319,6 +320,86 @@ def ab_frequency(model):
             'bucket': 'translated' if ru_vis else ('latin' if res else 'unresolved'),
         })
     return rows
+
+
+def _safe(s):
+    """URL-/filename-safe slug for a root (matches the roots/<safe>.js convention)."""
+    return re.sub(r'[^A-Za-z0-9_.~-]', '_', s or '')
+
+
+# Fixed case order for the government chips (retrieval oriented): the N2 ask is
+# "one click -> all Instr.-governing cards", so Instr. leads.
+GOV_CASE_ORDER = ('instr', 'loc', 'gen', 'acc', 'dat', 'abl')
+GOV_CASE_LABEL = {'instr': 'Instr.', 'loc': 'Loc.', 'gen': 'Gen.',
+                  'acc': 'Acc.', 'dat': 'Dat.', 'abl': 'Abl.'}
+
+
+def government_index(model):
+    """Per-sense case-government (Rektion) rows for the government.html retrieval
+    surface (H1308). Reuses ``government_census.extract_government`` over the DE
+    (source) sense text — the same authoritative reference set ``ab_frequency`` and
+    ``ls_stats`` read (RU/EN mirror the same government markers). One row per
+    (subcard, sense) that governs >=1 CORE case (acc/loc/instr/gen/dat/abl);
+    nom/voc-only citation-form notes are excluded by the extractor. Marker spans are
+    rendered through ``_render`` so the page shows the tooltip'd ``<span class=ab>``,
+    never raw ``<ab>`` markup. The extractor is case-insensitive, so BOTH the PWG
+    lowercase stratum (``(<ab>instr.</ab>)``) and the PW ``zz_pw*`` capitalized
+    stratum (``(<ab>Instr.</ab>)``) are captured (the N2 card vas~~h0_zz_pw00|samava
+    lives in the latter)."""
+    rows = []
+    for r in model:
+        for sc in r['subcards']:
+            for s in sc['senses']:
+                hits = govc.extract_government(s.get('de_raw'))
+                if not hits:
+                    continue
+                cases = sorted({c for h in hits for c in h['cases'] if c in govc.GOV_CASES})
+                if not cases:
+                    continue
+                markers = [{
+                    'cases': [c for c in h['cases'] if c in govc.GOV_CASES],
+                    'kind': h['kind'], 'variation': h['variation'],
+                    'span_html': _render(h['span'], 'html', 'de'),
+                } for h in hits]
+                rows.append({
+                    'root': r['root'], 'safe': _safe(r['root']), 'iast': r['iast'],
+                    'key': sc['key'], 'sub_iast': sc['iast'] or sc['h'] or sc['key'],
+                    'tag': str(s['tag']), 'sense_html': s['de_html'],
+                    'cases': cases, 'has_variation': any(h['variation'] for h in hits),
+                    'markers': markers,
+                })
+    return rows
+
+
+def government_meta(rows):
+    """Coverage numbers for the government.html banner — the FLOOR the extractor
+    reaches — plus the raw ``pwg.txt`` CEILING read from the frozen census sidecar
+    (H778 ``census_stats.json``), so the banner states floor-vs-ceiling honestly.
+    All numbers computed, never hand-typed."""
+    per_case = collections.Counter()
+    for row in rows:
+        for c in row['cases']:
+            per_case[c] += 1                 # one count per row governing that case
+    meta = {
+        'rows': len(rows),
+        'markers': sum(len(r['markers']) for r in rows),
+        'lemmas': len({r['root'] for r in rows}),
+        'variation_rows': sum(1 for r in rows if r['has_variation']),
+        'per_case': {c: per_case.get(c, 0) for c in GOV_CASE_ORDER},
+    }
+    # Raw pwg.txt ceiling + provenance from the frozen census sidecar.
+    try:
+        sc = json.load(open(os.path.join(SRC, 'census_stats.json'), encoding='utf-8'))
+        cen = sc.get('census', {})
+        kinds = cen.get('kinds', {})
+        meta['ceiling_markers'] = sum(n for k, n in kinds.items() if k != 'paren-nongov')
+        meta['ceiling_entries'] = cen.get('entries_with')
+        meta['ceiling_units'] = cen.get('units_with')
+        meta['census_generated'] = sc.get('generated')
+    except Exception:
+        meta['ceiling_markers'] = meta['ceiling_entries'] = None
+        meta['ceiling_units'] = meta['census_generated'] = None
+    return meta
 
 
 def _root_of(key1):
@@ -683,7 +764,7 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
    wait. contain-intrinsic-size keeps the scrollbar stable. */
 .sub,.sense,.leaf{content-visibility:auto;contain-intrinsic-size:auto 320px}
 </style></head><body><div id="wrap">
-<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
+<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 2px 6px">📖 словарь сокращений</a><a href="government.html" style="display:block;font-size:12px;color:var(--mut);margin:0 0 10px 6px">⚖ управление (Rektion)</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
 <script src="articles.js"></script>
 <script>
@@ -787,7 +868,19 @@ document.getElementById('main').addEventListener('click',function(e){
  var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
 });
 q.oninput=function(){renderList(q.value.toLowerCase());};
-renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
+// Deep-link: government.html / abbreviations.html open a full entry via
+// index.html#g=<safe> (H1308 V4 — clickable full-entry links). Fall back to the
+// first root when the hash is absent or names no known root.
+function rootByHash(){
+ var m=(location.hash||'').match(/^#g=(.+)$/); if(!m)return null;
+ var safe=decodeURIComponent(m[1]);
+ for(var i=0;i<A.roots.length;i++){if(A.roots[i].safe===safe||A.roots[i].root===safe)return A.roots[i];}
+ return null;
+}
+function openHash(){var r=rootByHash(); if(r){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);window.scrollTo(0,0);}}
+window.addEventListener('hashchange',openHash);
+renderList('');
+if(A.roots.length){var start=rootByHash()||A.roots[0];cur=start.root;renderList('');renderRoot(start);}
 </script></body></html>
 """
 
@@ -818,7 +911,7 @@ tr:hover td{background:var(--card)}
 .ru{color:var(--fg)}.ru.na{color:var(--mut);font-style:italic}
 .count{text-align:right;font-variant-numeric:tabular-nums}
 </style></head><body><div id="wrap">
-<a class="back" href="index.html">← к статьям</a>
+<a class="back" href="index.html">← к статьям</a> <a class="back" href="government.html" style="margin-left:14px">⚖ управление (Rektion)</a>
 <h1>Словарь сокращений PWG</h1>
 <div class="summary" id="summary">Загрузка…</div>
 <input id="q" placeholder="фильтр по сокращению / расшифровке…">
@@ -867,6 +960,113 @@ render('');
 """
 
 
+GOVERN_HTML = r"""<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PWG — управление (Rektion)</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#6a6a6a;--line:#e4e4e4;--accent:#7a1f1f;--card:#fafafa}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--line:#333;--accent:#e6928a;--card:#1e1e1e}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+#wrap{max-width:1040px;margin:0 auto;padding:20px 24px 60px}
+a{color:var(--accent)}
+h1{font-size:24px;margin:4px 0 4px}
+.nav{font-size:13px;color:var(--mut);margin-bottom:10px}
+.nav a{text-decoration:none;margin-right:14px}
+.summary{color:var(--mut);font-size:13px;margin:6px 0 12px;line-height:1.6}
+.summary b{color:var(--fg)}
+.caveat{font-size:12px;color:var(--mut);background:var(--card);border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;margin:10px 0 16px;line-height:1.55}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 8px}
+.chip{cursor:pointer;font-size:13px;padding:5px 12px;border:1px solid var(--line);border-radius:16px;background:var(--bg);color:var(--fg);user-select:none;white-space:nowrap}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip .n{font-variant-numeric:tabular-nums;opacity:.75;font-size:11px;margin-left:5px}
+#q{width:100%;max-width:360px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);margin:6px 0 12px}
+.count-line{font-size:12px;color:var(--mut);margin:2px 0 10px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em;position:sticky;top:0;background:var(--bg)}
+tr:hover td{background:var(--card)}
+.hw{white-space:nowrap;font-weight:600}
+.hw a{text-decoration:none}
+.hw a:hover{text-decoration:underline}
+.sub{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--mut);white-space:nowrap}
+.tag{display:inline-block;font-size:10px;color:var(--mut);border:1px solid var(--line);border-radius:8px;padding:0 6px;margin-right:5px}
+.sense{color:var(--fg);max-width:460px}
+.gov{white-space:nowrap}
+.casebadge{display:inline-block;font-size:10px;background:var(--accent);color:#fff;border-radius:8px;padding:1px 7px;margin:1px 2px 1px 0;letter-spacing:.02em}
+.casebadge.var{background:#a04000}
+.ab{border-bottom:1px dotted var(--mut)}
+.na{color:var(--mut);font-style:italic}
+</style></head><body><div id="wrap">
+<div class="nav"><a href="index.html">← к статьям</a><a href="abbreviations.html">📖 словарь сокращений</a></div>
+<h1>Управление (Rektion) в PWG</h1>
+<div class="summary" id="summary">Загрузка…</div>
+<div class="caveat" id="caveat"></div>
+<div class="chips" id="chips"></div>
+<input id="q" placeholder="фильтр по заголовку / значению / под-карте…">
+<div class="count-line" id="countline"></div>
+<table><thead><tr><th>Заголовок</th><th>Под-карта</th><th>Значение (DE)</th><th>Управление</th></tr></thead>
+<tbody id="rows"></tbody></table>
+</div>
+<script src="government.js"></script>
+<script>
+var ROWS=window.GOV_ROWS||[], META=window.GOV_META||{per_case:{}};
+var CASE_ORDER=['instr','loc','gen','acc','dat','abl'];
+var CASE_LABEL={instr:'Instr.',loc:'Loc.',gen:'Gen.',acc:'Acc.',dat:'Dat.',abl:'Abl.'};
+var tbody=document.getElementById('rows'), q=document.getElementById('q'), chipbox=document.getElementById('chips');
+var active=null; // active case chip ('instr'...), 'var', or null=all
+function esc(x){return x==null?'':(''+x);}
+function matchesCase(r){ if(active==null)return true; if(active==='var')return r.has_variation; return r.cases.indexOf(active)>=0; }
+function matchesText(r,f){ if(!f)return true;
+ return (r.iast||'').toLowerCase().indexOf(f)>=0||(r.sense_html||'').toLowerCase().indexOf(f)>=0
+  ||(r.key||'').toLowerCase().indexOf(f)>=0||(r.sub_iast||'').toLowerCase().indexOf(f)>=0; }
+function govHtml(r){
+ var seen={}, order=[]; r.cases.forEach(function(c){if(!seen[c]){seen[c]=1;order.push(c);}});
+ var badges=order.map(function(c){return '<span class="casebadge">'+esc(CASE_LABEL[c]||c)+'</span>';}).join('');
+ if(r.has_variation)badges+='<span class="casebadge var" title="вариативное управление (und/oder)">вар.</span>';
+ var spans=r.markers.map(function(m){return m.span_html;}).join(' ');
+ return '<div class="gov">'+badges+'</div><div style="margin-top:3px">'+spans+'</div>';
+}
+function render(){
+ var f=(q.value||'').toLowerCase(); tbody.innerHTML=''; var n=0;
+ ROWS.forEach(function(r){
+  if(!matchesCase(r)||!matchesText(r,f))return; n++;
+  var tr=document.createElement('tr');
+  // sense_html / span_html are this builder's own generated, escaped markup
+  // (via _render) -> injected as HTML; only plain-text fields go through esc().
+  tr.innerHTML='<td class="hw"><a href="index.html#g='+encodeURIComponent(r.safe)+'" title="открыть полную статью">'+esc(r.iast)+'</a></td>'
+   +'<td class="sub">'+esc(r.key)+'</td>'
+   +'<td class="sense"><span class="tag">'+esc(r.tag)+'</span>'+(r.sense_html||'<span class="na">—</span>')+'</td>'
+   +'<td>'+govHtml(r)+'</td>';
+  tbody.appendChild(tr);
+ });
+ document.getElementById('countline').innerHTML='Показано <b>'+n+'</b> из '+ROWS.length+' карточек с управлением'
+  +(active?(' · фильтр: <b>'+(active==='var'?'вариативное':CASE_LABEL[active])+'</b>'):'');
+}
+function buildChips(){
+ var pc=META.per_case||{}; var html='<span class="chip'+(active==null?' on':'')+'" data-c="">все<span class="n">'+ROWS.length+'</span></span>';
+ CASE_ORDER.forEach(function(c){ var n=pc[c]||0; if(!n)return;
+  html+='<span class="chip'+(active===c?' on':'')+'" data-c="'+c+'">'+CASE_LABEL[c]+'<span class="n">'+n+'</span></span>'; });
+ if(META.variation_rows)html+='<span class="chip'+(active==='var'?' on':'')+'" data-c="var">вариативное<span class="n">'+META.variation_rows+'</span></span>';
+ chipbox.innerHTML=html;
+ var chips=chipbox.querySelectorAll('.chip');
+ for(var i=0;i<chips.length;i++){chips[i].onclick=function(){var c=this.getAttribute('data-c');active=c===''?null:c;buildChips();render();};}
+}
+var ceil = META.ceiling_markers?(' Потолок сырого <i>pwg.txt</i> (только PWG-слой, без PW <i>zz_pw*</i>): <b>'+META.ceiling_markers+'</b> помет управления в <b>'+META.ceiling_entries+'</b> статьях (перепись '+esc(META.census_generated)+').'):'';
+document.getElementById('summary').innerHTML=
+ '<b>'+META.rows+'</b> карточек несут явную помету управления (<b>'+META.markers+'</b> помет, <b>'+META.lemmas+'</b> корней). '
+ +'Нажмите падеж ниже — получите <b>все</b> карточки с этим управлением в один клик.'+ceil;
+document.getElementById('caveat').innerHTML=
+ '⚠️ Это <b>нижняя граница</b>, а не «всё управление». Извлекаются только пометы, явно размеченные тегом <code>&lt;ab&gt;</code> '
+ +'(в круглых скобках <code>(&lt;ab&gt;Instr.&lt;/ab&gt;)</code> или в прозе <code>mit dem &lt;ab&gt;…&lt;/ab&gt;</code>), в обоих регистрах — '
+ +'строчном (слой PWG) и прописном (слой-добавление PW <code>zz_pw*</code>). Управление, выраженное только прозой без тега, '
+ +'и продолжения многопадежных <code>mit</code>-оборотов сюда не попадают — поэтому число занижено, но не завышено.';
+q.oninput=render;
+buildChips(); render();
+</script></body></html>
+"""
+
+
 def emit_abbreviations(model):
     """abbreviations.html + abbreviations.js — the site-wide abbreviation
     dashboard (per-article tooltips live inline in each root's rendered HTML;
@@ -881,6 +1081,25 @@ def emit_abbreviations(model):
     with open(os.path.join(OUT_DIR, 'abbreviations.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(ABBREV_HTML)
     return rows
+
+
+def emit_government(model):
+    """government.html + government.js — the one-click case-government (Rektion)
+    RETRIEVAL surface (H1308, DA-vote N2). Abbreviations.html is token-frequency
+    oriented; this page is card-retrieval oriented: click a case chip -> every card
+    governing that case. Rows/meta are computed from the DE source senses, so the
+    page carries an honest floor-vs-ceiling coverage banner (never 'all government')."""
+    rows = government_index(model)
+    meta = government_meta(rows)
+    with open(os.path.join(OUT_DIR, 'government.js'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write('window.GOV_ROWS=')
+        json.dump(rows, f, ensure_ascii=False)
+        f.write(';\nwindow.GOV_META=')
+        json.dump(meta, f, ensure_ascii=False)
+        f.write(';\n')
+    with open(os.path.join(OUT_DIR, 'government.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(GOVERN_HTML)
+    return rows, meta
 
 
 def emit(model):
@@ -935,13 +1154,56 @@ def emit(model):
     with open(os.path.join(OUT_DIR, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(INDEX_HTML)
     ab_rows = emit_abbreviations(model)
+    emit_government(model)
     return ab_rows
+
+
+def selftest_government():
+    """Fixture selftest for government_index / government_meta (H1308) — no store,
+    no network. Pins the N2 acceptance card and the floor-coverage arithmetic."""
+    model = [
+        {'root': 'vas', 'iast': 'vas', 'subcards': [
+            {'key': 'vas~~h0_zz_pw00', 'h': '0', 'iast': 'vas', 'senses': [
+                make_sense('samava',
+                           '<div n="m">— <ab>Caus.</ab> {#prativAsita#} {%gehüllt in%} '
+                           '[Page6-043-a] (<ab>Instr.</ab>).', None, None, None, ''),
+                make_sense('1', '{%plain gloss, no government%} <ls>MBH. 1,1</ls>.',
+                           None, None, None, ''),
+            ]}]},
+        {'root': 'snih', 'iast': 'snih', 'subcards': [
+            {'key': 'snih~~h0', 'h': '1', 'iast': 'snih', 'senses': [
+                make_sense('2', '{%sich heften auf%} (<ab>loc.</ab> und <ab>gen.</ab>): {#z#}',
+                           None, None, None, ''),
+            ]}]},
+    ]
+    rows = government_index(model)
+    # vas|samava (CAPITALIZED Instr.) + snih (loc.+gen. variation) = 2 rows; the
+    # plain-gloss vas sense governs nothing and is dropped.
+    assert len(rows) == 2, rows
+    by_key = {(r['key'], r['tag']): r for r in rows}
+    n2 = by_key[('vas~~h0_zz_pw00', 'samava')]                 # the N2 acceptance card
+    assert n2['cases'] == ['instr'], n2                         # capitalized Instr. captured
+    assert n2['safe'] == 'vas' and n2['iast'] == 'vas', n2
+    span = n2['markers'][0]['span_html']
+    assert 'class=ab' in span and '<ab>' not in span, span     # rendered via _render, not raw
+    sn = by_key[('snih~~h0', '2')]
+    assert sn['cases'] == ['gen', 'loc'] and sn['has_variation'] is True, sn
+    meta = government_meta(rows)
+    assert meta['rows'] == 2 and meta['lemmas'] == 2, meta
+    assert meta['per_case']['instr'] == 1 and meta['per_case']['loc'] == 1, meta
+    assert meta['per_case']['gen'] == 1 and meta['variation_rows'] == 1, meta
+    print('build_article_site government selftest: OK')
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--root', help='debug: print one root and exit')
+    ap.add_argument('--selftest', action='store_true',
+                    help='run the government_index/meta fixture selftest and exit')
     args = ap.parse_args()
+    if args.selftest:
+        selftest_government()
+        return
     model = build_model()
     if args.root:
         r = next((x for x in model if x['root'] == args.root), None)

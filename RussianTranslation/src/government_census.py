@@ -42,13 +42,27 @@ GOV_CASES = ("acc", "loc", "instr", "gen", "dat", "abl")
 NONGOV_CASES = ("nom", "voc")
 ALL_CASES = GOV_CASES + NONGOV_CASES
 
+# Case markers are matched case-INSENSITIVELY (H1308): the PWG stratum writes them
+# lowercase (``(<ab>instr.</ab>)``) while the PW ``zz_pw*`` supplement stratum writes
+# them CAPITALIZED (``(<ab>Instr.</ab>)``, ``(<ab>Loc.</ab>)`` …). Before this, the
+# lowercase-only regexes extracted 0 of the 1,116 store rows carrying a capitalized
+# marker (incl. the N2 acceptance card ``vas~~h0_zz_pw00|samava``). The matched case
+# token is normalised to lowercase everywhere it is compared or stored (see
+# ``_cases()``); the raw ``span`` preserves the source capitalisation for display.
 _AB = r"<ab>(?:%s)\.</ab>" % "|".join(ALL_CASES)
 PAREN_RE = re.compile(
-    r"\(\s*(" + _AB + r"(?:\s*(?:,|und|oder)\s*" + _AB + r")*)\s*\)"
+    r"\(\s*(" + _AB + r"(?:\s*(?:,|und|oder)\s*" + _AB + r")*)\s*\)",
+    re.IGNORECASE,
 )
-CASE_RE = re.compile(r"<ab>(%s)\.</ab>" % "|".join(ALL_CASES))
-CONNECTOR_RE = re.compile(r"\b(und|oder)\b")
-MIT_RE = re.compile(r"\bmit (?:dem |der )?(" + _AB + r")")
+CASE_RE = re.compile(r"<ab>(%s)\.</ab>" % "|".join(ALL_CASES), re.IGNORECASE)
+CONNECTOR_RE = re.compile(r"\b(und|oder)\b", re.IGNORECASE)
+MIT_RE = re.compile(r"\bmit (?:dem |der )?(" + _AB + r")", re.IGNORECASE)
+
+
+def _cases(group):
+    """Case tokens in a matched group, normalised to the lowercase canonical form so
+    ``Instr``/``instr`` collapse to one bucket downstream (H1308)."""
+    return [c.lower() for c in CASE_RE.findall(group)]
 LS_RE = re.compile(r"<ls\b[^>]*>.*?</ls>", re.S)
 LEX_RE = re.compile(r"<lex>([^<]+)</lex>")
 SENSE_SPLIT_RE = re.compile(r"\d+〉")
@@ -72,17 +86,17 @@ def extract_government(text):
     text_nols = LS_RE.sub("", text or "")
     hits = []
     for m in PAREN_RE.finditer(text_nols):
-        cases = CASE_RE.findall(m.group(1))
+        cases = _cases(m.group(1))
         if all(c in NONGOV_CASES for c in cases):
             continue
-        connectors = sorted(set(CONNECTOR_RE.findall(m.group(1))))
+        connectors = sorted(set(c.lower() for c in CONNECTOR_RE.findall(m.group(1))))
         kind = "paren-single" if len(cases) == 1 else "paren-variation"
         hits.append({
             "cases": cases, "variation": len(cases) > 1,
             "connector": "/".join(connectors), "kind": kind, "span": m.group(0),
         })
     for m in MIT_RE.finditer(text_nols):
-        cases = CASE_RE.findall(m.group(1))
+        cases = _cases(m.group(1))
         hits.append({
             "cases": cases, "variation": False, "connector": "",
             "kind": "mit-phrase", "span": m.group(0),
@@ -135,8 +149,8 @@ def scan_entry(header, entry_lines):
     for unit, text in sense_units(entry_lines):
         text_nols = LS_RE.sub("", text)
         for m in PAREN_RE.finditer(text_nols):
-            cases = CASE_RE.findall(m.group(1))
-            connectors = sorted(set(CONNECTOR_RE.findall(m.group(1))))
+            cases = _cases(m.group(1))
+            connectors = sorted(set(c.lower() for c in CONNECTOR_RE.findall(m.group(1))))
             kind = "paren-single" if len(cases) == 1 else "paren-variation"
             if all(c in NONGOV_CASES for c in cases):
                 kind = "paren-nongov"
@@ -148,7 +162,7 @@ def scan_entry(header, entry_lines):
                 "snippet": m.group(0),
             })
         for m in MIT_RE.finditer(text_nols):
-            cases = CASE_RE.findall(m.group(1))
+            cases = _cases(m.group(1))
             hits.append({
                 "L": header.get("L", ""), "k1": header.get("k1", ""),
                 "h": header.get("h", ""), "pos": pos, "unit": unit,
@@ -364,6 +378,10 @@ FIXTURE = """<L>1<pc>1-1<k1>snih<k2>snih<h>1
 <hom>1.</hom> {#sTA#}¦, {#ti/zWati#} <ls>DHĀTUP. 22,30</ls>.
 <div n="1"> 1〉 {%stehen bleiben bei%} (<ab>loc.</ab>): {#q#} <ls>MBH. 2,2</ls>. <lex>adj.</lex> {#sTita#}.
 <LEND>
+
+<L>4<pc>1-4<k1>vas<k2>vas<h>0
+<div n="m">— <ab>Caus.</ab> {#prativAsita#} {%gehüllt in%} (<ab>Instr.</ab>).
+<LEND>
 """
 
 
@@ -375,23 +393,27 @@ def selftest():
         path = tf.name
     try:
         r = run_census(path)
-        assert r["n_entries"] == 3, r
-        assert r["kinds"].get("paren-single") == 2, r          # snih (loc.) + sTA (loc.)
+        assert r["n_entries"] == 4, r
+        # snih (loc.) + sTA (loc.) + vas CAPITALIZED (Instr.) — H1308 case-insensitive
+        assert r["kinds"].get("paren-single") == 3, r
         assert r["kinds"].get("paren-variation") == 1, r       # (loc. und gen.)
         assert r["kinds"].get("mit-phrase") == 1, r            # mit dem instr.
         assert r["kinds"].get("paren-nongov") == 1, r          # (voc.); (pl.) never matches
         assert r["cases"]["paren-variation"] == {"loc+gen": 1}, r
-        assert r["entries_with"] == 2, r                       # snih + sTA; deva's voc is nongov
-        # sTA: no root sign, DHĀTUP head line, body <lex>adj.</lex> must NOT win
-        assert r["pos_gov_entries"] == {"verb": 2}, r
-        assert r["units_with"] == 3, r  # snih div2.s1 (both parens) + snih div3 (mit) + sTA div1.s1
+        # vas's capitalized (Instr.) is normalised to lowercase in the case bucket
+        assert r["cases"]["paren-single"].get("instr") == 1, r
+        assert r["entries_with"] == 3, r                       # snih + sTA + vas; deva's voc is nongov
+        # sTA: no root sign, DHĀTUP head line, body <lex>adj.</lex> must NOT win;
+        # vas card has no √/DHĀTUP/<lex> on its head line -> "unknown"
+        assert r["pos_gov_entries"] == {"verb": 2, "unknown": 1}, r
+        assert r["units_with"] == 4, r  # snih div2.s1 (both parens) + snih div3 (mit) + sTA div1.s1 + vas head
 
         # H778 sidecar round-trip: freeze -> fresh read -> stale on source change
         sc = path + ".census.json"
         data = write_sidecar(path, sc, generated="01-01-2026")
         assert data["schema"] == SIDECAR_SCHEMA and data["source_sha16"] == source_sha16(path)
         cached, why = load_sidecar(sc, path)
-        assert why == "cached" and cached["n_entries"] == 3, (why, cached)
+        assert why == "cached" and cached["n_entries"] == 4, (why, cached)
         got, origin = census_or_load(path, sc)
         assert origin == "cached" and got["kinds"].get("mit-phrase") == 1, (origin, got)
         # mutate the source -> SHA differs -> sidecar rejected, live scan instead
@@ -432,6 +454,28 @@ def selftest_extract_government():
     assert extract_government("{%Gott%} (<ab>pl.</ab>) <ls>ṚV. 1,1,1</ls>. (<ab>voc.</ab>) auch so.") == []
     # <ls> spans are stripped first -> a stray case token inside a siglum never matches.
     assert extract_government("<ls>loc. 1,1</ls> plain text") == []
+
+    # H1308: capitalized PW zz_pw* markers extract identically, case-normalised to lowercase.
+    cap = extract_government("{%etwas%} (<ab>Instr.</ab>): {#v#} <ls>MBH. 3,3</ls>.")
+    assert cap == [{"cases": ["instr"], "variation": False, "connector": "",
+                    "kind": "paren-single", "span": "(<ab>Instr.</ab>)"}], cap
+    # capitalized variation keeps the und/oder connector and lowercases both cases.
+    cap_var = extract_government("(<ab>Loc.</ab> und <ab>Gen.</ab>)")
+    assert cap_var[0]["cases"] == ["loc", "gen"] and cap_var[0]["variation"] is True, cap_var
+    assert cap_var[0]["connector"] == "und", cap_var
+    # capitalized (<ab>Voc.</ab>) is still non-government -> excluded.
+    assert extract_government("(<ab>Voc.</ab>) auch so.") == [], "cap voc must be nongov"
+    # capitalized mit-phrase (prose government).
+    cap_mit = extract_government("mit dem <ab>Instr.</ab> {#x#}")
+    assert cap_mit == [{"cases": ["instr"], "variation": False, "connector": "",
+                        "kind": "mit-phrase", "span": "mit dem <ab>Instr.</ab>"}], cap_mit
+    # N2 acceptance card (vas~~h0_zz_pw00|samava): the exact de must yield the Instr. hit,
+    # while the non-case <ab>Caus.</ab> earlier in the same sentence is ignored.
+    n2 = extract_government(
+        "<div n=\"m\">— <ab>Caus.</ab> {#prativAsita#} {%gehüllt in%} "
+        "[Page6-043-a] (<ab>Instr.</ab>).")
+    assert n2 == [{"cases": ["instr"], "variation": False, "connector": "",
+                   "kind": "paren-single", "span": "(<ab>Instr.</ab>)"}], n2
     print("extract_government selftest: OK")
 
 
