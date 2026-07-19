@@ -558,7 +558,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #5). ls_resolver resolves an <ls> citation to a scan/hymns URL independent of the translation language (it keys on the citation abbreviation + numbers, never on RU/EN prose), so both language editions' link-targets share it. The anchored _is_rv_prefix and the _warn_swallowed exception surfacing are pure link-resolution correctness, no lang branch. Pinned by test_ls_resolver_rv_av_anchored.",
     "tracking": "",
     "verified_sha256": {
-      "src/ls_resolver.py": "583d0251cfd68e74b3f56b639dd95110477e531e13aa0cc2a67c6d5a8b667480",
+      "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
       "src/pilot/window_selftest.py": "cc131795f8978d9bfb1e6223094eb594e14fe69934c91d520907e6de7940ba57"
     }
   },
@@ -1150,6 +1150,27 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1209/prep_slice.py": "acf9ddda5a76d19d769f4a794ea7f88b6db88a8ae688b44f7f778ac24ecde48d",
       "src/pilot/h1209/build_args.py": "6f245108c60ae7c777c66900c1da4a53670399e949fbc474b6556d6bd0ed3024",
       "src/pilot/h1209/canonical_audit.py": "9ae794af290af809caf208caba3b71787bd188f7f3174ebc4af7912ca7ead6f3"
+    }
+  },
+  {
+    "id": "ls_link_enrichment_panini_spr_h1307",
+    "mechanism": "H1307 <ls> link enrichment: Pāṇini P. gains guarded chapter/book browse patterns (2-param a,p -> /sutraani/a/p, 1-param a -> /sutraani/a; pada 1-4 / adhyaya 1-8 guarded so page-refs like 'P. II, S. 3' and bogus 'P. 1,23' never mislink); Spr. (II) N gains a full-text hover tooltip (IAST + German from the Indische Sprüche corpus) via spr_fulltext, with a 1st-ed edition guard (plain Spr. N never resolves against the 2nd-ed corpus); the shared _render()/_ls_tooltip layer carries both.",
+    "files": [
+      "src/ls_resolver.py",
+      "src/spr_fulltext.py",
+      "src/pilot/build_article_site.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1307 (19-07-2026). The enrichment is render-time and keys only on the citation abbreviation + numbers (P. adhyaya/pada/sutra, Spr. (II) saying number) — never on RU/EN translation prose — so both language editions' <ls> link-targets and tooltips share it with no --lang branch. The Spr. (II) saying text is identical across editions. Pinned by src/pilot/ls_enrichment_selftest.py.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
+      "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
+      "src/pilot/build_article_site.py": "41c68f01652e49f66a908d89a16c43877923c92f4d0fb2d447d611aec2a399d7"
     }
   }
 ]

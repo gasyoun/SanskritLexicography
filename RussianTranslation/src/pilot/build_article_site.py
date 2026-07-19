@@ -42,6 +42,7 @@ import ls_resolver as lsr  # noqa: E402  (<ls> citation -> Cologne scan URL; PWG
 import pwg_ab  # noqa: E402  (<ab> grammar/usage abbreviation -> DE/EN expansion, for tooltips)
 import pwg_ab_ru  # noqa: E402  (<ab> -> RU display text for the editorial/cross-ref bucket)
 import pwg_sources as pwgsrc  # noqa: E402  (<ls> siglum -> full source title, for tooltips)
+import spr_fulltext as spr  # noqa: E402  (<ls> Spr. (II) N -> Indische Sprüche full text, for tooltips; H1307)
 import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
 
 RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
@@ -85,6 +86,27 @@ def _ls_title(attrs, visible):
         if r:
             return r
     return None
+
+
+def _ls_tooltip(attrs, visible):
+    """Hover text for one <ls> citation. For a 2nd-edition `Spr. (II) N` citation
+    (H1307) this is the recognized full text of the saying — its IAST verse plus
+    the German translation from the Indische Sprüche corpus — which is far more
+    useful than the bare source title. For every other citation it falls back to
+    the pwgbib source expansion (`_ls_title`). The 1st-edition `Spr. N` form is
+    edition-guarded inside spr_fulltext and never reaches the 2nd-ed corpus.
+
+    Language-independent (the saying/source is the same in the DE/RU/EN editions),
+    so this shared helper is what the review-sheet emitter (H1301) reuses too."""
+    m = _N_ATTR.search(attrs or '')
+    n_attr = m.group(1) if m else None
+    vis = (visible or '').strip()
+    rich = spr.tooltip(n_attr, vis)
+    if rich:
+        return rich
+    return _ls_title(attrs, visible)
+
+
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
 _LEX = re.compile(r'<lex\b[^>]*>(.*?)</lex>', re.S)
 _IS = re.compile(r'<is\b[^>]*>(.*?)</is>', re.S)
@@ -192,7 +214,7 @@ def _render(text, mode, lang=None):
             # quote/space chars that would require quoting.
             vis = m.group(2).strip()
             url = _ls_href(m.group(1), vis)
-            title = _ls_title(m.group(1), vis)
+            title = _ls_tooltip(m.group(1), vis)
             tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
             if url:
                 # <a class=ls href=URL title=T target=_blank rel=noopener>VIS</a>
@@ -229,7 +251,15 @@ def _render(text, mode, lang=None):
         def _ls_md(m):
             vis = m.group(2).strip()
             url = _ls_href(m.group(1), vis)
-            return '[%s](%s)' % (vis, url) if url else '[%s]' % vis
+            if not url:
+                return '[%s]' % vis
+            # Carry the Spr. (II) full-text enrichment (H1307) into the md link
+            # title so the md surface has parity with the html tooltip; other
+            # citations stay a plain link to keep the md output unchanged.
+            rich = spr.tooltip(m.group(1), vis)
+            if rich:
+                return '[%s](%s "%s")' % (vis, url, rich.replace('"', "'"))
+            return '[%s](%s)' % (vis, url)
         t = _LS.sub(_ls_md, t)
         t = _AB.sub(lambda m: _ab_display(m.group(1), lang, m.string[:m.start()])[0], t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)
