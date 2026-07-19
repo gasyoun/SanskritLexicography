@@ -1571,6 +1571,13 @@ def promote_ready(args):
                      and (not lease_scope or lease.get('id') in lease_scope)]
             if not ready:
                 raise SystemExit('no ready leases to promote')
+        # H1339 Phase 3: validate every lease first (identical checks), then promote the
+        # WHOLE bundle in ONE store transaction (promote_final_cards --batch-manifest):
+        # one claim, one full-store read, one better-attempt merge, one backup, one atomic
+        # replacement -- instead of a full store read/copy/rewrite + interpreter startup
+        # PER LEASE. All-or-nothing: any diverging lease fails the bundle with the store
+        # byte-identical; per-lease attribution comes back in the batch report.
+        batch, lease_pending = [], {}
         for lease in ready:
             source = lease['clean_output']
             try:
@@ -1602,14 +1609,29 @@ def promote_ready(args):
             if errors:
                 raise SystemExit('%s: promotion refused: %s' %
                                  (lease['id'], '; '.join(errors)))
-            rel_glob = os.path.relpath(source, REPO)
-            store_before = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
-            run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
-                     '--merge', '--glob', rel_glob,
-                     '--gen-model-version', args.gen_model_version])
-            store_after = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
-            if lease.get('clean_count') and store_after <= store_before:
-                raise SystemExit('%s: promotion produced no positive canonical-store delta' % lease['id'])
+            lease_pending[lease['id']] = has_pending
+            batch.append({'lease_id': lease['id'],
+                          'glob': os.path.abspath(source),
+                          'expected_subcards': sorted({row.get('key') for row in clean_rows})})
+        store_before = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
+        batch_dir = ready[0].get('artifact_dir') or paths()['artifacts']
+        batch_manifest = os.path.join(batch_dir, 'batch_promotion.manifest.json')
+        batch_report = os.path.join(batch_dir, 'batch_promotion.report.json')
+        atomic_write_json(batch_manifest, batch, indent=1)
+        run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
+                 '--batch-manifest', batch_manifest, '--report', batch_report,
+                 '--gen-model-version', args.gen_model_version])
+        store_after = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
+        try:
+            landed = json.load(open(batch_report, encoding='utf-8'))['leases']
+        except (OSError, KeyError, json.JSONDecodeError) as e:
+            raise SystemExit('batch promotion report unreadable: %s' % e)
+        for lease in ready:
+            per = landed.get(lease['id']) or {}
+            if lease.get('clean_count') and not per.get('subcards'):
+                raise SystemExit('%s: batch promotion landed no subcards for the lease'
+                                 % lease['id'])
+            has_pending = lease_pending[lease['id']]
             with DirLock(paths()['lock']):
                 state = load_state()
                 fresh = lease_by_id(state, lease['id'])
@@ -1619,11 +1641,15 @@ def promote_ready(args):
                 fresh['store_before'] = store_before
                 fresh['store_after'] = store_after
                 fresh['store_delta'] = store_after - store_before
+                fresh['promoted_subcards'] = per.get('subcards')
+                fresh['promoted_rows'] = per.get('rows')
                 save_state(state)
-                registry_event(fresh, 'promoted', {'glob': rel_glob,
+                registry_event(fresh, 'promoted', {'glob': lease['clean_output'],
                                                    'store_before': store_before,
                                                    'store_after': store_after,
-                                                   'store_delta': store_after - store_before})
+                                                   'store_delta': store_after - store_before,
+                                                   'batch_subcards': per.get('subcards'),
+                                                   'batch_rows': per.get('rows')})
         run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
         if any('"frag_prov"' in open(fp, encoding='utf-8').read()
                for fp in glob.glob(os.path.join(paths()['artifacts'], '*', 'wf_output*.json'))):

@@ -256,10 +256,13 @@ def fake_cards_for(manifest, drop_sense_key=None, null_key=None):
 
 
 def store_semantic_hash(path):
-    """Content hash of the store with per-run volatile provenance (generated_at — freshly
-    stamped at every manifest generation) stripped; row order preserved (byte-stability of
-    everything non-volatile is part of the claim)."""
-    h = hashlib.sha256()
+    """Content hash of the store's TRANSLATION content: per-run volatile provenance
+    (generated_at, stamped at every manifest generation) and the tooling-identity
+    `pipeline` stamp (script/prompt shas — it correctly changes when promote tooling
+    changes) are stripped, and rows are hashed SORTED (merge order is an implementation
+    detail of the transaction, not semantics). Run-to-run determinism is still fully
+    checked — any content drift changes this hash."""
+    rows = []
     with open(path, encoding='utf-8') as f:
         for line in f:
             line = line.strip()
@@ -269,8 +272,12 @@ def store_semantic_hash(path):
             prov = row.get('provenance')
             if isinstance(prov, dict):
                 prov.pop('generated_at', None)
-            h.update(json.dumps(row, ensure_ascii=False, sort_keys=True).encode('utf-8'))
-            h.update(b'\n')
+                prov.pop('pipeline', None)
+            rows.append(json.dumps(row, ensure_ascii=False, sort_keys=True))
+    h = hashlib.sha256()
+    for row in sorted(rows):
+        h.update(row.encode('utf-8'))
+        h.update(b'\n')
     return h.hexdigest()
 
 
