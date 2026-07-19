@@ -139,7 +139,7 @@ The 10-07-2026 ruling in
 19-07-2026 vote notes (`Caus.` = `кауз.`, `Aor.` "нельзя не переводить", "only
 Latin by ratified unified list"). Logged as a 🔴 row in
 [`CONTRADICTIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
-(§ B — sources disagree across time); H1303's ratified list is the designated
+(§ A — the project's own policy disagrees with itself across time, row §7); H1303's ratified list is the designated
 resolution path, after which the row graduates to a `D##` decision record.
 
 _Dr. Mārcis Gasūns_
