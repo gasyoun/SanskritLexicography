@@ -220,6 +220,18 @@ negative result: a naive it-stripped join matched only 454/930 Whitney roots). N
 article **A39** ([Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
 **No fabricated links.**
 
+## Mechanical RU style rules (no-ё, terse metalanguage) — H1305
+
+A separate, purely mechanical style stream lives in its own doc, not here:
+[RU_STYLE_MECHANICAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md)
+— no letter ё anywhere in RU output (whitelist: standalone «всё»/«Всё» only), «вместо»→«вм.»,
+«в значении»→«в знач.» in editorial metalanguage, and `ed. Bomb.` → «Бомбейская ред.» in free
+prose only (never inside `<ls>…</ls>`, which this doc's `<ls>` tooltip/link-enrichment layer
+above still resolves against the verbatim Latin siglum). Distinct from the `<ab>`/`<is>`
+render-time abbreviation-translation policy documented above: R1–R4 are STORE-LEVEL fixed
+substitutions (swept once into `pwg_ru_translated.jsonl`, not a render-time transform), and
+purely orthographic/terseness, not a translation-of-record decision.
+
 ## Files touched
 
 * [`RussianTranslation/src/pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py) — new; the DE→RU editorial-abbreviation map + coverage CLI.
@@ -234,5 +246,13 @@ H1307 `<ls>` link enrichment (19-07-2026):
 * [`RussianTranslation/src/pilot/build_article_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_article_site.py) — `_ls_tooltip()` (Spr. (II) full text over source title), wired into the html tooltip + md link title.
 * [`RussianTranslation/src/ls_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_coverage.py) — new; per-class `<ls>` coverage counter (store, else pwg.txt).
 * [`RussianTranslation/src/pilot/ls_enrichment_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ls_enrichment_selftest.py) — new; fixture selftest, wired into the RussianTranslation CI gates.
+
+H1305 mechanical RU style sweep (19-07-2026):
+
+* [`RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md) — new; rules R1–R4, false-positive measurement, sweep counts.
+* [`RussianTranslation/src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py) — new; store sweep + shared violation detector (`--apply`/`--selftest`/`--wf`).
+* [`RussianTranslation/src/pilot/audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) — new `ru_style` RU-only gate.
+* [`RussianTranslation/src/pilot/run_pilot_wf.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/run_pilot_wf.js) — HARD RULE 9 (R1–R4) in the `CONV`/`TR` template.
+* [`RussianTranslation/src/pilot/prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py) — `ru_style_*` rule pins.
 
 _Dr. Mārcis Gasūns_

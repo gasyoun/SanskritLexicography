@@ -307,6 +307,24 @@ RULES = [
         'severity': 'required',
         'phrases': ['GOVERNMENT MARKERS VERBATIM', 'government'],
     },
+    {
+        'id': 'ru_style_no_yo',
+        'category': 'H1305',
+        'severity': 'required',
+        'phrases': ['NO LETTER Ё', '«всё»'],
+    },
+    {
+        'id': 'ru_style_terse_metalanguage',
+        'category': 'H1305',
+        'severity': 'required',
+        'phrases': ['«вм.»', '«в знач.»'],
+    },
+    {
+        'id': 'ru_style_ed_bomb_siglum',
+        'category': 'H1305',
+        'severity': 'required',
+        'phrases': ['ed. Bomb.', 'Бомбейская ред.'],
+    },
 ]
 
 

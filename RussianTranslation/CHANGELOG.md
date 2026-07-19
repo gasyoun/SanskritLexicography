@@ -10,6 +10,65 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — mechanical RU style sweep: no-ё, terse editorial metalanguage (H1305)
+
+- **Four ratified, deterministic RU style rules applied store-wide and wired for future
+  generation** (MG's DA-vote, register rows N7/N12 + the terseness half of N4):
+  **R1** no letter ё anywhere in RU output — write е everywhere; the only exception is the
+  standalone token «всё»/«Всё» (disambiguating все/всё); the edge case «всё-таки» defaults
+  to е («все-таки») like every other ё-word, per the ruling. **R2** «вместо» → «вм.» and
+  **R3** «в значении» → «в знач.» in editorial metalanguage — measured **0/60** and
+  **0/24** false positives respectively on a hand-classification of the canonical store
+  (every «вместо»/«в значении» hit is editorial apparatus — variant readings, sense
+  specification — never narrative prose), well under the handoff's ~2% restriction
+  threshold, so both apply **unrestricted**. **R4** `ed. Bomb.` → «Бомбейская ред.» in
+  **free prose only** — 282 of 283 occurrences (221 standalone `<ls>ed. Bomb.</ls>` + 61
+  embedded in a longer citation, e.g. `<ls>R. ed. Bomb. 3,69,4</ls>`) sit inside
+  `<ls>…</ls>` and were left **verbatim**: [`src/pwg_sources.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_sources.py)'s
+  `source_key()`/`resolve()` key the citation off that exact Latin text against PWG's own
+  bibliography (`pwgauth/pwgbib.txt`, all-Latin index) — rewriting to Cyrillic would break
+  source resolution outright; only the store's single genuine free-prose occurrence was
+  swept. The in-`<ls>` population (282 occurrences) is a render-time display concern,
+  explicitly out of scope here and NOT covered by [H1307](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1307-Opus_RussianTranslation_pwg-ru-ls-link-enrichment-panini-spr-dhatup_19.07.26.md)
+  either — handed off as a PROPOSED follow-up.
+- **Applied to the canonical store** (11,603 rows, row count unchanged — content-only
+  edit): **2,029 substitutions across 1,485 rows** (R1=1,713, R2=291, R3=24, R4=1). A
+  rescan after `--apply` shows **0 residual violations**; the sweep is idempotent (no
+  substitution's output contains its own trigger pattern).
+- **New** [`src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py)
+  (stdlib-only; dry-run default, `--apply`, `--selftest`, `--wf` for the window-gate mode) —
+  resolves the store via `store_path.canonical_store` (prints the resolved path before
+  writing, per the H805/w06 worktree-loss guard) and exposes `scan_violations()`, a
+  read-only detector reused verbatim by the new `ru_style` gate.
+- **New `ru_style` gate** in
+  [`src/pilot/audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py)'s
+  RU gate commands (same `.merged.md`-reading / `FLAGGED_JSON` shape as
+  `translation`/`stage2_mechanical`/`coverage`/`sense_dupes`) — RU-only, deliberately never
+  wired into `audit_window_en.py`. Tests in
+  [`src/pilot/window_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_selftest.py)
+  (`test_h1305_ru_style_mechanical`) cover ё-word flagging, the «всё»/«Всё» whitelist, the
+  «всё-таки» edge case, metalanguage «вместо»/«в значении» flagging, in-`<ls>` `ed. Bomb.`
+  (standalone AND embedded) staying unflagged, and a genuine free-prose `ed. Bomb.` hit —
+  150/150 green.
+- **Prompt HARD RULE 9** added to the `CONV`/`TR` template in
+  [`src/pilot/run_pilot_wf.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/run_pilot_wf.js)
+  states R1–R4 for the model; `gen_opt_harness2.py` extracts `TR` from this file by regex,
+  so every future-generated optimized harness inherits the rule automatically (verified by
+  direct extraction — no separate derivative file to keep in sync). Pinned in
+  [`src/pilot/prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)'s
+  `RULES` (`ru_style_no_yo` / `ru_style_terse_metalanguage` / `ru_style_ed_bomb_siglum`) so
+  a future template edit that drops the rule fails `--fail-on-missing`.
+- **LANG_PARITY** entry `ru_style_mechanical_yo_terseness` (INTENTIONAL-DIVERGENCE) — the
+  gate-wiring MECHANISM is SHARED-capable (a slot in `audit_window.py`'s existing commands
+  list), but the RULES THEMSELVES have no EN counterpart by construction (EN output carries
+  no Cyrillic, no ё, no «вместо»/«в значении» abbreviation question). `lang_parity_check.py`
+  green (59 entries, no drift after re-affirming 38 pre-existing entries whose tracked
+  files' sha256 drifted from this session's additive edits — none of those entries'
+  described behavior was touched).
+- Full rule table, false-positive measurement, and `ed. Bomb.` markup-placement analysis:
+  [`pwg_ru/RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md).
+  Provenance: [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md), Sonnet 5 `claude-sonnet-5`.
+
 ## [1.31.0] - 2026-07-19
 
 ### Investigated — SANLOSS Nachtrag/corrigenda counter fix ESCALATED, no safe fix found (H1225)

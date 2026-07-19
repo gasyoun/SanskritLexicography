@@ -488,6 +488,11 @@ def main():
         ('stage2_mechanical', [os.path.join(SRC, 'stage2_pregate.py'), '--wf', wf], parse_flagged_json),
         ('coverage', [os.path.join(SRC, 'audit_coverage.py'), wf], parse_coverage),
         ('sense_dupes', [os.path.join(SRC, 'audit_sense_dupes.py'), wf], parse_dupes),
+        # H1305: RU-only mechanical style gate (no-ё, terse editorial metalanguage «вм.»/
+        # «в знач.», in-<ls> `ed. Bomb.` left verbatim) -- reads the SAME .merged.md rendered
+        # output as translation/stage2_mechanical above. RU-only by construction (LANG_PARITY
+        # ru_style_mechanical_yo_terseness); never wired into audit_window_en.py.
+        ('ru_style', [os.path.join(SRC, 'ru_style_sweep.py'), '--wf', wf], parse_flagged_json),
     ]
     futures = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
@@ -513,7 +518,7 @@ def main():
             gates[name] = res
 
     for name in ['final_schema', 'nws', 'translation', 'stage2_mechanical', 'coverage',
-                 'sense_dupes', 'prompt_semantic', 'sense_loss']:
+                 'sense_dupes', 'prompt_semantic', 'sense_loss', 'ru_style']:
         res = gates[name]
         print('\n=== %s ===' % name)
         print(res['stdout'].rstrip())
