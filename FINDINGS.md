@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 18-07-2026_
+_Created: 26-06-2026 · Last updated: 19-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -2631,3 +2631,28 @@ csl-inflect give-back H185). `tense_caveat` follows [§91](https://github.com/ga
 > + manifest row `morphology-attestation-audit` ([datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)) ·
 > [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) ·
 > [kosha](https://github.com/gasyoun/kosha) · 18-07-2026, Opus 4.8 (`claude-opus-4-8`).
+
+### §95. DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display
+
+Building the H1279 beginner subhāṣita pack, per-chunk batched calls to the DharmaMitra
+tagging API (`mode: unsandhied`, batch 32 — the same contract as kosha
+`compare_sandhi_methods._dm_segment` and csl-atlas `dharmamitra_infer.py`) returned
+**garbage for a substantial share of short inputs**: single words echoed doubled
+(`ca` → `ca_ca`, `gavā` → `gavā_gavā`), tokens from *some other batch item* (`dadāti` →
+a 20-token segmentation of a different text), non-IAST junk (`na` → `R̤`), and tokens
+containing spaces — the classic batch-misalignment signature, not a modelling error.
+On full sentences (the H903/H908 method-C runs) this was never observed; the failure
+mode is specific to **short, context-free batch items**. Consequence for any DM consumer:
+**never trust a batched segmentation without a mechanical validity gate.** The gate that
+worked: a segmentation is accepted only if it (a) is IAST-charset-clean, (b) contains no
+1-char morphology shavings, and (c) **rebuilds its own surface** via corpus-attested
+junction rules / bare joins (DFS with pausa tail-drift tolerance) — everything else falls
+back to offline vidyut-cheda under the same gate, else displays honestly unsplit
+(56/1,263 chunks in the shipped pack). Poisoned entries persist in the response cache, so
+add the gate at READ time, not just at query time.
+
+> **Source:** [build_subhashita_pack.py](https://github.com/gasyoun/kosha/blob/main/scripts/build_subhashita_pack.py)
+> (`accept_seg` / `label_internal_seams`) + the committed cache
+> [dharmamitra_indische_sprueche.json](https://github.com/gasyoun/kosha/blob/main/data/sandhi/_cache/dharmamitra_indische_sprueche.json) ·
+> [H1279](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1279-Fable_kosha_pedagogy-wave-ru-subhashita-reader_19.07.26.md) ·
+> [kosha](https://github.com/gasyoun/kosha) · 19-07-2026, Fable 5 (`claude-fable-5`).
