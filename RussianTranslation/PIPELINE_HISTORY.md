@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 19-07-2026_
+_Created: 04-07-2026 · Last updated: 20-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,44 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1339 — Tier-B factory hardening + the first measured offline benchmark (20-07-2026)
+
+The H1283 audit's Tier-B backlog was adjudicated against current master by a 44-agent
+finder/adversarial-verifier pass: **21/21 substantive findings STILL REPRODUCED** (none
+were incidentally fixed by the intervening PRs), the three H1283 refutations stand, and
+the `card_fields.py` verifier conflict resolved (both prior verdicts held a true half —
+no corruption landed, but the promote residue backstop was void for `grammar`). Twenty
+were fixed test-first (`window_selftest` 150→157, 9 new `LANG_PARITY` entries); B17
+(6-hour probe-receipt expiry, direct `cmd_staged_run` lane only) was deferred with a
+recorded rationale — auto-refresh would fire an unattended paid probe. The A4 completion
+makes unattended requeues REAL: a supervisor rq item now materialises a coordinator
+`prepare-requeue` attempt + a `<lease>::rqNN-<kind>` orchestrator job (`import-requeue`),
+idempotent at every seam, loud when unmaterialisable; `reset-failed` is the audited exit
+from the terminal failed-job state. The "~10,199 remaining" inventory is formally dead:
+the hash-pinned rederivation counts **5,580 unique remaining headwords** (701 verb roots
++ 4,757 nominal PWG-rooted + 122 no-PWG), the three nominal cores being nested
+(6,772-lemma double-count).
+
+Two lessons worth keeping. First, **the hermetic benchmark found a P0 on its first
+end-to-end run** (B23): the audit chain accepted only manifest v1 while production
+profile-bound `prepare` emits v2 — every v2 lease audited `stale_artifact`, so the
+headless factory could never have passed its own audit live; unnoticed because the c4
+ladder NO-GO'd before any live `record-output` and every audit fixture was v1. An
+end-to-end fixture exercises seams no unit fixture reaches. Second, **the determinism
+signature caught a fake speedup**: the in-process gate conversion initially crashed all
+five gates on `sys.stdout.reconfigure` under captured stdout, and the "2× faster" run
+was everything failing fast — only the changed output signature exposed it.
+
+Measured speed (same-session, semantic store equality proven as row multisets):
+promotion batching (`--batch-manifest`, one claim/read/backup/atomic-write,
+all-or-nothing) cut the store-write stage **−49.8%**; in-process audit child gates cut
+the gate stack **3.05 s → 0.25 s** (audit stage −19.8%); frozen offline total
+**12.08 s → 9.30 s = −23.0%** against the ≥25% target — recorded as a measured PARTIAL,
+with the remaining dominant cost (per-lease `perf_preflight`/`gen` subprocess spawns in
+`prepare`, and the deliberately-kept audit subprocess with its 30-min operation-token
+timeout) named for the successor. Full matrix + benchmark:
+[`pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md).
 
 ### H1308 — one-click case-government (Rektion) index + PW capitalized-marker gap closed (19-07-2026)
 

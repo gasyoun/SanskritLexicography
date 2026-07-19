@@ -3786,8 +3786,23 @@ def test_coordinator_mixed_lane_public_state_sequence():
                     json.dump(report, f)
                 return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
             if script == 'promote_final_cards.py':
+                # H1339 Phase 3: promote-ready now invokes ONE batched transaction
+                # (--batch-manifest + --report) instead of one subprocess per lease; the
+                # fake must honour that contract (write the per-lease report + rows).
+                batch_arg = cmd[cmd.index('--batch-manifest') + 1]
+                report_arg = cmd[cmd.index('--report') + 1]
+                batch_spec = json.load(open(batch_arg, encoding='utf-8'))
+                leases_out = {}
                 with open(store, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({'promoted': True}) + '\n')
+                    for item in batch_spec:
+                        subs = item.get('expected_subcards') or []
+                        for sub in subs:
+                            f.write(json.dumps({'promoted': True, 'subcard': sub}) + '\n')
+                        leases_out[item['lease_id']] = {'subcards': len(subs),
+                                                        'rows': len(subs)}
+                with open(report_arg, 'w', encoding='utf-8') as f:
+                    json.dump({'schema': 'pwg.batch_promotion.v1',
+                               'leases': leases_out}, f)
             return SimpleNamespace(returncode=0, stdout='', stderr='')
 
         def result_file(name, keys):
