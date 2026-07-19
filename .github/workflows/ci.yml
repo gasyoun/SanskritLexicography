@@ -108,7 +108,9 @@ jobs:
         working-directory: RussianTranslation
         run: |
           python src/mfs_baseline.py --selftest
+          python src/government_census.py selftest
           python src/government_sidecar.py --selftest
+          python src/pilot/build_article_site.py --selftest
           python research/build_observatory.py --check
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
