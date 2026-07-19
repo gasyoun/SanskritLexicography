@@ -67,6 +67,22 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
 ```json lang_parity_ledger
 [
   {
+    "id": "citation_tm_ru_translation_of_record",
+    "mechanism": "citation_tm.lookup/consult_card reuses an existing Russian translation of record for a PWG <ls> source citation (R./MBH./RV./KATHAS. ...) instead of retranslating; wired into corpus_gate.build_card as an additive citation_reuse field",
+    "files": [
+      "src/citation_tm.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H1304: the citation translation-memory is RU-only by construction. The reuse assets are Russian translations of record (Elizarenkova RV, Leonov Ramayana, Ocean of Stories, ...); there is NO parallel English citation-TM corpus, so there is nothing to port to the EN path. If an EN citation-TM corpus is ever assembled, this becomes a GAP to port; until then RU-only is intended, not an oversight.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/citation_tm.py": "1916c6cc4c71cc560b1696babdc96c9182a27e246ec9343d4322e9d426cdc754"
+    }
+  },
+  {
     "id": "latin_cue_masking",
     "mechanism": "classify_pct recovers the Latin/Greek cue from masked {Tn} placeholders (expand + de-tag the preceding window) so a {%...%} cognate after <ab>lat.</ab> is masked as Latin, not leaked into the prompt as untranslated German",
     "files": [
@@ -539,7 +555,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (architecture audit FL7 / code review 2026-07-04 item #4). corpus_gate.py is the RU-only stage-4 correctness gate: it joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович) and the SamudraManthanam RU-aligned verse corpus. The EN pilot has no analogous corpus gate (no Sanskrit-English authority set is wired here), so this fix is inherently Russian-only — an INTENTIONAL-DIVERGENCE, not a GAP to port. The marker mechanism (SOURCES_PRESENT / evidence_status() / corpus_examples_with_status) would generalize if an EN correctness gate is ever built; revisit then. Pinned by test_corpus_gate_evidence_and_db_markers.",
     "tracking": "",
     "verified_sha256": {
-      "src/corpus_gate.py": "95797986db7c21210a55c8a13f324514d17110ba07d2f804d000a77a003d5bf3",
+      "src/corpus_gate.py": "65429923536739d8b0410092aa65a679ef7e8c69140ad0a3a95fa41ff0ec7a89",
       "src/pilot/window_selftest.py": "cc131795f8978d9bfb1e6223094eb594e14fe69934c91d520907e6de7940ba57"
     }
   },
