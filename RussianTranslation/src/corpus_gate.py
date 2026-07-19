@@ -422,10 +422,30 @@ def deterministic_precheck(pwg_ru, indep):
             'threshold': THRESHOLD, 'head_sense_only': HEAD_SENSE_ONLY,
             'note': note}
 
-def build_card(idx, key1, key2, pwg_ru):
+def _citation_reuse(*fields):
+    """Generation-time citation-TM consult (H1304): for each <ls> literary-source
+    citation in the passed text field(s) whose text already has a Russian
+    translation of record, surface that RU rendering so the translator model
+    REUSES it instead of retranslating (MG's H178 vote N1/N6/N9). Import-guarded
+    and additive: absent citation_tm, or no covered <ls>, yields []. The returned
+    `ru` is a metadata-only generation-time consult — never persisted to a
+    committed/public artifact (see citation_tm rights note)."""
+    try:
+        import citation_tm
+    except Exception:
+        return []
+    try:
+        return citation_tm.consult_card(*fields)
+    except Exception:
+        return []
+
+
+def build_card(idx, key1, key2, pwg_ru, de_text=None):
     indep, kow = lookup(idx, key1, key2)
     corpus_ex, corpus_stat = corpus_examples_with_status(key1)
     return {'key1': key1, 'key2': key2 or key1, 'pwg_ru': pwg_ru,
+            # citation TM: reuse existing RU translations of cited passages (H1304)
+            'citation_reuse': _citation_reuse(de_text, pwg_ru),
             'independent_glosses': [{'source': g['source'], 'code': g['code'],
                                      'gloss': g['gloss']} for g in indep],
             'kow_reference': kow,
