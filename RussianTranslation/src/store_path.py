@@ -81,6 +81,32 @@ def canonical_store(local_default, store_rel=STORE_REL):
     return local_default
 
 
+# sidecar directory relative to a checkout toplevel (the TM caches / denylist home)
+SIDECAR_REL = 'RussianTranslation/src/pilot'
+
+
+def canonical_sidecar(local_default, sidecar_rel=SIDECAR_REL):
+    """Resolve a gitignored `src/pilot` sidecar (TM caches, suggest TM, denylist) the same
+    way `canonical_store` resolves the store: env dir override -> main-worktree copy ->
+    local default.
+
+    H1339 B04: the sidecars are BUILT FROM the one canonical store, so there is exactly ONE
+    logical copy per checkout tree — but every resolver defaulted to its own checkout's
+    `src/pilot`, and the sidecars are gitignored, so the sanctioned fresh-worktree workflow
+    silently saw NO sidecars: 0 TM hits, full re-translation cost on every worktree run,
+    and a worktree promote's TM rebuild landed in a directory that vanished with the
+    worktree. `$PWG_RU_TM_DIR` pins a directory for tests/deliberately-isolated runs
+    (deliberately its own variable — `$PWG_RU_STORE` names the store FILE)."""
+    env = os.environ.get('PWG_RU_TM_DIR')
+    name = os.path.basename(local_default)
+    if env:
+        return os.path.join(env, name)
+    main = main_worktree_root(os.path.dirname(os.path.abspath(local_default)))
+    if main:
+        return os.path.join(main, *sidecar_rel.split('/'), name)
+    return local_default
+
+
 def selftest():
     import tempfile
     # 1. explicit env override always wins
@@ -112,7 +138,25 @@ def selftest():
     finally:
         globals()['main_worktree_root'] = _orig
         del os.environ['PWG_RU_STORE']
-    print('store_path selftest: PASS (env-override wins, worktree->main, non-git falls back to local)')
+    # 5. canonical_sidecar (H1339 B04): env dir override -> main-worktree src/pilot -> local.
+    os.environ.pop('PWG_RU_TM_DIR', None)
+    with tempfile.TemporaryDirectory() as d:
+        lp = os.path.join(d, 'translation_memory.ru.json')
+        assert canonical_sidecar(lp) == lp, 'non-git tree must fall back to the local sidecar'
+    try:
+        globals()['main_worktree_root'] = lambda start: os.path.join('MAIN', 'checkout')
+        got = canonical_sidecar(os.path.join('WT', 'src', 'pilot', 'translation_memory.ru.json'))
+        want = os.path.join('MAIN', 'checkout', *SIDECAR_REL.split('/'),
+                            'translation_memory.ru.json')
+        assert got == want, got
+        os.environ['PWG_RU_TM_DIR'] = os.path.join('scratch', 'tmdir')
+        got = canonical_sidecar(os.path.join('WT', 'src', 'pilot', 'x.jsonl'))
+        assert got == os.path.join('scratch', 'tmdir', 'x.jsonl'), got
+    finally:
+        globals()['main_worktree_root'] = _orig
+        del os.environ['PWG_RU_TM_DIR']
+    print('store_path selftest: PASS (env-override wins, worktree->main, non-git falls back '
+          'to local; sidecars H1339-B04 likewise)')
     return True
 
 

@@ -81,7 +81,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 from window_common import append_jsonl_line  # noqa: E402
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store, canonical_sidecar  # noqa: E402
 
 # ONE logical store shared across worktrees (H818 D-E): resolve via canonical_store so a
 # git-worktree run's post-promotion TM rebuild targets the MAIN checkout store, exactly like
@@ -141,16 +141,22 @@ class DenylistError(RuntimeError):
     """A TM denylist cannot be trusted."""
 
 
+# B04 (H1339): the four sidecar resolvers route through store_path.canonical_sidecar --
+# ONE logical sidecar set per checkout tree, shared with every linked worktree, exactly
+# like the store itself (an explicit `out`/`--out` still wins, as does $PWG_RU_TM_DIR).
+# Before this, a fresh-worktree run silently saw NO sidecars: 0 TM hits, full
+# re-translation cost, and its post-promotion TM rebuild vanished with the worktree.
 def tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.%s.json' % lang)
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.%s.json' % lang))
 
 
 def suggest_tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.suggest.%s.jsonl' % lang)
+    return out or canonical_sidecar(
+        os.path.join(HERE, 'translation_memory.suggest.%s.jsonl' % lang))
 
 
 def denylist_path(out=None):
-    return out or os.path.join(HERE, 'translation_memory.denylist.jsonl')
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.denylist.jsonl'))
 
 
 def _file_signature(path):
@@ -489,7 +495,8 @@ def frag_address(lang, frag_source):
 
 
 def frag_tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.frag.%s.jsonl' % lang)
+    # B04 (H1339): canonical-sidecar resolution, same as tm_path/suggest_tm_path/denylist_path.
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.frag.%s.jsonl' % lang))
 
 
 # frag_prov senses are CARD-shaped (harvested from wf_output cards), so the

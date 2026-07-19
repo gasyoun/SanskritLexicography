@@ -476,10 +476,16 @@ def parse_args(argv):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
         mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
-    if tm in ('__default__', '__auto__'):
-        tm = os.path.join(os.path.dirname(INP), 'translation_memory.%s.json' % lang)
-    if suggest_tm in ('__default__', '__auto__'):
-        suggest_tm = os.path.join(os.path.dirname(INP), 'translation_memory.suggest.%s.jsonl' % lang)
+    if tm in ('__default__', '__auto__') or suggest_tm in ('__default__', '__auto__'):
+        # B04 (H1339): resolve the default sidecars through translation_memory's canonical
+        # resolvers (main-worktree-aware), NOT this checkout's src/pilot -- the sidecars are
+        # gitignored, so a fresh-worktree run used to silently see none: 0 TM hits, full
+        # re-translation cost on the sanctioned worktree workflow.
+        import translation_memory as _tm
+        if tm in ('__default__', '__auto__'):
+            tm = _tm.tm_path(lang)
+        if suggest_tm in ('__default__', '__auto__'):
+            suggest_tm = _tm.suggest_tm_path(lang)
     if suggest_profile not in ('semantic', 'german', 'sanskrit', 'balanced'):
         die('unknown --suggest-profile %r (semantic|german|sanskrit|balanced)' % suggest_profile)
     return (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,

@@ -25,8 +25,22 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
-REPO = os.path.dirname(SRC)
-RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
+
+if SRC not in sys.path:
+    sys.path.insert(0, SRC)
+
+from store_path import canonical_store  # noqa: E402
+
+# B09 (H1339): resolve the ONE canonical store, exactly like promote_final_cards /
+# translation_memory — a fresh-worktree run (the sanctioned branch-contention pattern)
+# used to read the worktree-LOCAL path, so this anti-silent-partial gate silently
+# measured an EMPTY store and its verdicts were fiction.
+RU_STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
+# The EN denominator artifacts live beside the store's checkout, not this one's — derive
+# the repo root from the RESOLVED store so numerator and denominator come from the same
+# checkout (under a PWG_RU_STORE test override this points at the override's tree, which
+# is exactly what a hermetic test wants).
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(RU_STORE)))
 
 
 def ru_by_root():
