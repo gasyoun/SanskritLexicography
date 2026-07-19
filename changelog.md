@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.37.0] — 19-07-2026
+
+### Fixed
+- **H803 dedup + false-positive correction — LaukikaNyaya 390 → 302 records, `/dual-run-salvage`'s reconciliation had two verified defects (Sonnet 5 `claude-sonnet-5`).** The dual-run reconciliation directly below (240+300→390) turned out to contain 57 same-`_ocr_line` duplicate pairs (114 records for 57 physical occurrences, 0 content differences once whitespace is normalized — a dedup-by-`nyaya_slp1` miss caused by two lanes formatting headword whitespace differently) plus 31 further false-positive lines matching the same length-based false-positive signature already established for the unbounded `index-crossref-prefix` strategy. Every one of the 88 removed records is individually accounted for (57 duplicate, 31 false positive) — none dropped without a specific, checkable reason; 0 lines are unique to the corrected 302 that weren't already in the 390's set, i.e. this only ever removes, never misses relative coverage. The dataset is now produced by a single `python build_laukika_nyaya.py` invocation with no manual merge step. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) "19-07-2026 dedup + false-positive correction" for the full audit.
+
 ## [1.36.0] — 19-07-2026
 
 ### Added
