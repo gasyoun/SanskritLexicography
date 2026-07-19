@@ -5995,6 +5995,79 @@ def test_h1339_b03_tm_cards_schema_complete():
         fail('tm_card_sane refused a schema-complete reconstructed card: %s' % why)
 
 
+def test_h1339_b04_b09_worktree_safe_resolution():
+    """H1339 B04/B09: TM sidecars and the coverage gate resolve worktree-safely.
+
+    B04: the four TM sidecar resolvers defaulted to THIS checkout's src/pilot -- gitignored
+    files absent in every fresh worktree, so the sanctioned worktree workflow silently got
+    0 TM hits. B09: ru_coverage read the worktree-local store, so the anti-silent-partial
+    gate measured an EMPTY store. Both now route through store_path's canonical resolvers.
+    """
+    import translation_memory as tm
+    import ru_coverage as rc
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    from store_path import canonical_sidecar, canonical_store
+    here = os.path.dirname(os.path.abspath(tm.__file__))
+    for got, name in ((tm.tm_path('ru'), 'translation_memory.ru.json'),
+                      (tm.suggest_tm_path('ru'), 'translation_memory.suggest.ru.jsonl'),
+                      (tm.denylist_path(), 'translation_memory.denylist.jsonl'),
+                      (tm.frag_tm_path('ru'), 'translation_memory.frag.ru.jsonl')):
+        want = canonical_sidecar(os.path.join(here, name))
+        if got != want:
+            fail('%s resolves to %r, not the canonical sidecar %r' % (name, got, want))
+    explicit = os.path.join('explicit', 'x.json')
+    if tm.tm_path('ru', explicit) != explicit:
+        fail('an explicit tm path must always win over canonical resolution')
+    want_store = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
+    if os.path.normpath(rc.RU_STORE) != os.path.normpath(want_store):
+        fail('ru_coverage.RU_STORE is not the canonical store: %r' % rc.RU_STORE)
+    want_repo = os.path.dirname(os.path.dirname(os.path.abspath(rc.RU_STORE)))
+    if os.path.normpath(rc.REPO) != os.path.normpath(want_repo):
+        fail("ru_coverage.REPO must be the RESOLVED store's checkout (denominators beside "
+             'the numerator), got %r' % rc.REPO)
+
+
+def test_h1339_b10_b19_audit_chain_routing():
+    """H1339 B10 + B19: the factory audit chain routes its artifacts correctly.
+
+    B10: save_and_audit's audit invocation must pass --write-requeue, or the requeue
+    singletons silently describe the PREVIOUS window. B19: stage2_pregate/audit_translation
+    resolved merged output by a verbatim join while the collector writes safe_name(stem) --
+    safe_name is not idempotent ('k_ala' -> 'k~005fala'), so every already-safe nominal stem
+    was hard-flagged NO-OUTPUT: a translated card requeued at full paid cost.
+    """
+    import tempfile
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import audit_translation as at
+    from safe_filename import safe_name
+    # B19 behavioral: the double-encoded file is found; the verbatim file is found; absent -> None.
+    d = tempfile.mkdtemp()
+    stem = 'k_ala'
+    assert safe_name(stem) != stem, 'fixture stem must be non-idempotent under safe_name'
+    with open(os.path.join(d, safe_name(stem) + '.merged.md'), 'w', encoding='utf-8') as f:
+        f.write('перевод')
+    got = at.merged_output_path(stem, out_dir=d)
+    if not got or not got.endswith(safe_name(stem) + '.merged.md'):
+        fail('dual lookup missed the collector-written double-encoded output: %r' % got)
+    with open(os.path.join(d, 'mitra.merged.md'), 'w', encoding='utf-8') as f:
+        f.write('x')
+    if not at.merged_output_path('mitra', out_dir=d):
+        fail('dual lookup must still find the verbatim form')
+    if at.merged_output_path('absent', out_dir=d) is not None:
+        fail('a genuinely missing output must resolve to None')
+    # B19 wiring: both defect sites route through the shared resolver.
+    for fname in ('audit_translation.py', 'stage2_pregate.py'):
+        text = open(os.path.join(SRC, fname), encoding='utf-8').read()
+        if 'merged_output_path(' not in text:
+            fail('%s does not use the shared dual-lookup resolver' % fname)
+    # B10 wiring: the factory save path refreshes the requeue singletons.
+    sa = open(os.path.join(os.path.dirname(SRC), 'save_and_audit.py'), encoding='utf-8').read()
+    if '"--write-requeue"' not in sa and "'--write-requeue'" not in sa:
+        fail('save_and_audit audit invocation lacks --write-requeue (B10)')
+
+
 def test_every_stitch_emits_record_required():
     """C-02: the stitch must emit `h`/`grammar`, and must not collapse distinct homonyms.
 
@@ -6372,6 +6445,8 @@ def main():
         test_h1339_b21_promoted_pairs_cover_store_write_set,
         test_h1339_b02_stitched_card_schema_complete,
         test_h1339_b03_tm_cards_schema_complete,
+        test_h1339_b04_b09_worktree_safe_resolution,
+        test_h1339_b10_b19_audit_chain_routing,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
         test_validator_has_a_live_caller,
