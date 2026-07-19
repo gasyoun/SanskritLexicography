@@ -2885,3 +2885,47 @@ without overwriting later edits (11,603 rows, 0 conflicts).
 > **Source:** [`RussianTranslation/src/ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py) +
 > [`RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md) ·
 > 19-07-2026, Codex/GPT-5.
+
+---
+
+### §101. DCS's compound dictionary carries splits whose member **order** does not match the surface form — invisible to a type-drill, fatal to any head-first analysis
+
+Measured 19-07-2026 over
+[`VisualDCS/derived-data/Kompozity/names.csv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/names.csv)
+(168 880 attested compounds, schema `surface; split; nMembers; totalFreq; …`). The
+split field is **not** guaranteed to list members in the order they occur in the surface
+form. Four distinct defect shapes, all with real corpus frequencies attached:
+
+| surface | split as given | defect |
+|---|---|---|
+| `rājakule` | `kula rājan` | members reversed |
+| `dharmālokamukhaṁ` | `āloka mukha dharma` | rotated |
+| `gaur` | `go go` | member repeated beyond the surface |
+| `ūrdhvaṁ` | `daśan rātra` | split belongs to a different word entirely |
+
+**Why this went unnoticed until now.** Every prior consumer of this asset asked
+order-independent questions — how many members, which lemmas participate, compound-type
+frequency. Membership is correct in these rows; only sequence is wrong, so an
+order-independent consumer sees clean data. The defect surfaces the moment something
+depends on **which member is last** — i.e. any analysis using the standard rule that a
+determinative compound's syntactic head is its final member.
+
+**Mitigation that works despite sandhi.** A naive prefix check fails on correct rows,
+because compound members are reshaped at the right edge by stem loss (`rājan` → `rāja-`)
+and at the left edge by vowel sandhi (`indra` → `-endra`, in `rājendra`). Matching on the
+ordered **consonant skeleton** (drop vowels, anusvāra and visarga; require each member's
+first two consonants to occur in the surface skeleton in sequence) is blind to both edges
+by construction and still discriminates: it accepts `rājendra ← rājan indra` while
+rejecting all four rows above. At freq ≥ 5 and ≤ 4 members it rejects **209 of 6 287**
+rows (3.3%).
+
+**Rule:** any consumer of `names.csv`/`cmps.csv` that cares about member order must
+verify it against the surface form and count the rejects — never reorder silently, and
+never assume the last listed member is the head.
+
+> **Source:** [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md) ·
+> gate implemented as `order_ok()` in
+> [`sangram/data/samasa_ladder/build_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/samasa_ladder/build_samasa_ladder.py),
+> pinned by four regression tests in
+> [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py) ·
+> 19-07-2026, Opus 4.8 (`claude-opus-4-8`).
