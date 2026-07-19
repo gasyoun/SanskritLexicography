@@ -2680,3 +2680,32 @@ failure, later corpus gates remain unadjudicated rather than implicitly passing.
 > [manual corpus launcher](https://github.com/gasyoun/SamudraManthanam/blob/codex/audit-hardening/web/scripts/run_corpus_tests.py) ·
 > [SamudraManthanam PR #85](https://github.com/gasyoun/SamudraManthanam/pull/85) ·
 > 19-07-2026, Codex GPT-5.
+
+### §97. Cross-dictionary attestation via Monier-Williams overstates independence — MW was compiled *from* Böhtlingk-Roth (PW/PWG), so an MW-only hit is not evidence a PW/PWG word is independently text-attested
+
+H1310 audited PWG's 32,690 lexicon-only headwords (attested only in koṣas per PWG's own
+`<ls>` citations) against the other Cologne `csl-orig` digitisations by exact SLP1 `<k1>`
+set membership. The naïve join says **91.5 % appear in some text-based dictionary** — but
+**28,935 of those hits are Monier-Williams, and MW was compiled substantially FROM the
+Petersburg Dictionary itself** (a standard lexicographic fact). Counting an MW hit as
+independent text-attestation double-counts the same source: MW may simply have copied the word
+from PW.
+
+Separating MW into its own tier collapses the picture honestly: of 31,925 distinct lexicon-only
+words, only **7,331 (23.0 %)** appear in a genuinely independent text dictionary (Apte,
+Grassmann's RV, Edgerton's BHS); **21,874 (68.5 %)** are mw-only (weak); 101 kosa-only; and
+**2,619 (8.2 %) appear in no other digitised dictionary at all** — of which 974 are absent from
+even Böhtlingk's own kürzere Fassung (`pw`), the same-source abridgment that likewise cannot
+corroborate independence.
+
+**Reusable rule.** When measuring whether a word from dictionary X is attested "elsewhere", first
+exclude every other dictionary that was *derived from* X. For the Petersburg family the derived
+set is at least MW (⊃ PW) and PWK/`pw` (Böhtlingk's own abridgment); independent evidence is the
+corpus-based dictionaries (Apte, Grassmann, Edgerton) and non-PW koṣa digitisations. Exact SLP1
+match is a **lower bound on attestation** (variant spelling/accent misses a real hit), so treat
+the pwg-unique set as candidates, not confirmed ghost-words.
+
+> **Source:** [`scripts/pwg_lexicon_only_audit.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_lexicon_only_audit.py) +
+> [`data/pwg_lexicon_only_audit/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit) ·
+> [SanskritGrammar PR #447](https://github.com/gasyoun/SanskritGrammar/pull/447) · H1310 ·
+> 19-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
