@@ -156,6 +156,88 @@ def main():
         assert row == (m.sha256_path(manifest), 'pending')
         con.close()
 
+        # H1339 A4: import-requeue materialises a requeue_prepared attempt as the UNIQUE
+        # job '<lease>::rqNN-<kind>'; idempotent on re-run; loud on a wrong lease state.
+        rq_dir = os.path.join(artifacts, 'requeue', 'rq01-transient')
+        os.makedirs(rq_dir)
+        rq_manifest = os.path.join(rq_dir, 'execution_manifest.lease1.rq01-transient.json')
+        with open(rq_manifest, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': ['rqkey']},
+                       'execution': {'profile_slot': 'acc1',
+                                     'config_dir_fingerprint': config_dir_fingerprint(
+                                         os.path.join(td, 'a1')),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {'rqkey': 'real'}}, f)
+        with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+            json.dump({'leases': [{'id': 'lease1', 'state': 'requeue_prepared',
+                                   'artifact_dir': artifacts,
+                                   'requeue_attempt': 1, 'requeue_kind': 'transient',
+                                   'execution_manifest': rq_manifest,
+                                   'current_attempt': {'number': 1, 'kind': 'transient',
+                                                       'artifact_dir': rq_dir,
+                                                       'execution_manifest': rq_manifest}}]}, f)
+        ns = types.SimpleNamespace(db=db, coord_dir=coord, cwd=td,
+                                   lease_id='lease1', max_attempts=2)
+        rq_id = m.cmd_import_requeue(ns)
+        assert rq_id == 'lease1::rq01-transient', rq_id
+        assert m.coordinator_lease_id(rq_id) == 'lease1'
+        assert m.coordinator_lease_id('lease1') == 'lease1'
+        con = sqlite3.connect(db)
+        row = con.execute('select manifest_sha256,state,max_attempts from jobs '
+                          'where external_id=?', (rq_id,)).fetchone()
+        assert row == (m.sha256_path(rq_manifest), 'pending', 2), row
+        con.close()
+        assert m.cmd_import_requeue(ns) == rq_id            # idempotent re-import
+        con = sqlite3.connect(db)
+        assert con.execute('select count(*) from jobs where external_id=?',
+                           (rq_id,)).fetchone()[0] == 1
+        con.close()
+        with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+            json.dump({'leases': [{'id': 'lease1', 'state': 'promoted'}]}, f)
+        try:
+            m.cmd_import_requeue(ns)
+            raise AssertionError('import-requeue accepted a non-requeue_prepared lease')
+        except SystemExit as e:
+            assert 'requeue_prepared' in str(e)
+        print('  H1339 A4: import-requeue -> unique ::rqNN job, idempotent, fail-closed on state')
+
+        # H1339 B18: reset-failed is the ONLY (audited) exit from the terminal failed state.
+        con = sqlite3.connect(db)
+        con.execute("update jobs set state='failed', attempts=2, error='boom' "
+                    'where external_id=?', (rq_id,))
+        con.commit(); con.close()
+        try:
+            m.cmd_reset_failed(types.SimpleNamespace(db=db, lease_id=[rq_id], reason='  ',
+                                                     events=None))
+            raise AssertionError('reset-failed accepted an empty reason')
+        except SystemExit:
+            pass
+        ev = os.path.join(td, 'reset_events.jsonl')
+        n = m.cmd_reset_failed(types.SimpleNamespace(
+            db=db, lease_id=[rq_id], reason='operator verified transient outage', events=ev))
+        assert n == 1
+        con = sqlite3.connect(db)
+        state_, attempts_, err_ = con.execute(
+            'select state,attempts,error from jobs where external_id=?', (rq_id,)).fetchone()
+        con.close()
+        assert (state_, attempts_) == ('pending', 0) and 'reset-failed' in err_
+        assert 'reset_failed' in open(ev, encoding='utf-8').read()
+        try:
+            m.cmd_reset_failed(types.SimpleNamespace(db=db, lease_id=['absent'],
+                                                     reason='x', events=None))
+            raise AssertionError('reset-failed on an empty scope must be loud')
+        except SystemExit:
+            pass
+        con = sqlite3.connect(db)
+        con.execute('delete from jobs where external_id=?', (rq_id,))
+        con.commit(); con.close()
+        print('  H1339 B18: reset-failed audited (reason + events row), scoped, loud on empty scope')
+
     # D-C (H818 Windows acceptance): a manifest_sha256 containing "429" must NOT be read
     # as a rate-limit; only the worker's own classification or a real provider 429 in
     # stderr must. This prevents the false 5 h account park observed on Windows.

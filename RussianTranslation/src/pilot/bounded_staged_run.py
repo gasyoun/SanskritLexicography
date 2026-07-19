@@ -193,7 +193,9 @@ def audit_from_coordinator(coord_state_path, wf_output, window):
             coord_state = json.load(f)
     except (OSError, ValueError, TypeError):
         coord_state = {}
-    lease = _lease_by_id(coord_state, window['id']) or {}
+    # H1339 A4: a requeue work-item audits its ORIGIN lease -- the rq item's own id
+    # ('rq-NNN-<origin>') is a supervisor bookkeeping id, never a coordinator lease.
+    lease = _lease_by_id(coord_state, window.get('origin') or window['id']) or {}
     pending = lease.get('pending_requeue') or {}
     requeue_keys = [k for k in (list(pending.get('transient') or []) +
                                 list(pending.get('defect') or [])) if k]
@@ -366,19 +368,82 @@ def verify_awaiting_review_checkpoint(path):
     return True
 
 
+def materialize_requeue(ctx, origin_lease_id, run=None):
+    """H1339 A4 (the fuller fix): turn a supervisor requeue work-item into a REAL
+    coordinator requeue attempt + a runnable scoped job. Returns the rq job external_id.
+
+    Steps, each idempotent so a crash at any point resumes cleanly on --resume:
+      1. If the origin lease still holds a preparable backlog (promoted_partial /
+         needs_requeue / transient_only), run coordinator prepare-requeue for the first
+         non-empty lane -- transient before defect (cheap nulls first; the remaining lane
+         re-emerges as the next round's requeue keys, so both drain over successive
+         rounds with exactly-once semantics). A lease already requeue_prepared skips this
+         (crash between prepare and import).
+      2. Import the requeue_prepared attempt as job '<lease>::rqNN-<kind>' via
+         mao.cmd_import_requeue (no-op when the attempt job already exists).
+    An unmaterialisable backlog raises SystemExit LOUDLY -- with the supervisor's Tier-A
+    guard this means a requeue can either run for real or fail the run, never no-op into a
+    silently-completed checkpoint. A ready_partial origin is deliberately refused by the
+    coordinator ('promote the verified clean subset first'), which surfaces R10
+    --stop-before-promote runs where requeue work must not proceed either.
+
+    `run` is the subprocess runner, injectable for the hermetic selftest (production
+    always uses subprocess.run)."""
+    import subprocess
+    run = run or subprocess.run
+    with open(ctx.coord_state_path, encoding='utf-8') as f:
+        state = json.load(f)
+    lease = _lease_by_id(state, origin_lease_id)
+    if lease is None:
+        raise SystemExit('bounded_staged_run: requeue origin lease %r not found in %s'
+                         % (origin_lease_id, ctx.coord_state_path))
+    if lease.get('state') in ('promoted_partial', 'needs_requeue', 'transient_only'):
+        pending = lease.get('pending_requeue') or {}
+        kind = ('transient' if pending.get('transient')
+                else 'defect' if pending.get('defect') else None)
+        if kind is None:
+            raise SystemExit('bounded_staged_run: lease %s has no pending requeue backlog '
+                             'to materialise' % origin_lease_id)
+        prep = run(
+            [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
+             origin_lease_id, '--%s' % kind],
+            cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+        if prep.returncode:
+            raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
+                             % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
+        with open(ctx.coord_state_path, encoding='utf-8') as f:
+            state = json.load(f)
+        lease = _lease_by_id(state, origin_lease_id) or {}
+    if lease.get('state') != 'requeue_prepared':
+        raise SystemExit('bounded_staged_run: lease %s is %r after requeue materialisation '
+                         '(expected requeue_prepared) -- cannot run the rework'
+                         % (origin_lease_id, lease.get('state')))
+    return mao.cmd_import_requeue(argparse.Namespace(
+        db=ctx.db, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
+        lease_id=origin_lease_id, max_attempts=2))
+
+
 def make_run_window(ctx):
     """Return run_window(window) -> wf_output_path: drain exactly ONE lease scoped to its own
     external_id, reusing cmd_run_once / cmd_record_done / coordinator promote-ready. The scope
     (only_external_ids={lease_id}, --lease-id lease_id) guarantees no other plan's job is
-    dispatched, recorded or promoted (H963 objective 2/7). This is invoked ONLY on the live
+    dispatched, recorded or promoted (H963 objective 2/7). A requeue work-item (H1339 A4) is
+    first MATERIALISED into a real coordinator requeue attempt + job, then drained through
+    the identical loop scoped to the attempt job. This is invoked ONLY on the live
     (--execute) path; the dry-run and the self-test never call it."""
     import subprocess
     import time
 
     def run_window(window):
-        lease_id = window['id']
-        scope = {lease_id}
-        _ensure_imported(ctx, lease_id)
+        if window.get('requeue'):
+            lease_id = window.get('origin')
+            if not lease_id:
+                return None       # malformed rq item -> the supervisor's A4 guard fails loudly
+            scope = {materialize_requeue(ctx, lease_id)}
+        else:
+            lease_id = window['id']
+            scope = {lease_id}
+            _ensure_imported(ctx, lease_id)
         iterations = 0
         while True:
             iterations += 1

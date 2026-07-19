@@ -173,10 +173,13 @@ def matrix_pilot_fixture():
                     'entries': {
                         'ru:%s' % sha256(han_raw): {
                             'src_key': han_key,
+                            # Schema-complete TM card (B03/H1339): notes + record h/grammar
+                            # are required; the serve guard refuses legacy-shaped cards.
                             'card': {
                                 'key1': 'han',
                                 'iast': 'han',
-                                'records': [{'h': None, 'senses': [{
+                                'notes': '',
+                                'records': [{'h': '', 'grammar': '', 'senses': [{
                                     'tag': '1',
                                     'german': han_body,
                                     'russian': han_body,
