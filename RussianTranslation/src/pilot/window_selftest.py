@@ -719,6 +719,72 @@ def test_h960_accept_sanloss_soft_gate():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_tnmask_persist_and_offline_detect():
+    """H1226: accept() PERSISTS the pre-restore {Tn} pairing (candidate `got` vs masked-skeleton
+    `want`) on the accepted card, and promote carries it to the row's provenance, so a SOFT
+    (un-rejected) TNMASK expansion becomes MEASURABLE offline from a promoted row -- H1150 returned
+    DO_NOT_ARM (denominator 1) precisely because the store dropped this transient pairing.
+    Two-part pin: (1) the behavioral half runs the REAL emitted accept()+tokensOf+cardTokens
+    (tnmask_persist_test.js, extraction pattern -> cannot drift from the generator); (2) the
+    end-to-end half proves detection through the REAL promote_final_cards.rows_for + the offline
+    reader -- GREEN with the field, RED (not measurable) without it."""
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, 'tnp~~h0_zz_pw.raw.txt')
+        pp = os.path.join(d, 'tnp~~h0_zz_pw.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n{#tnp#}¦ {%m%}\n— 1〉 {%a%}.')
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp)
+        gh.KILL = False
+        js, _ = gh.build('zz_tnmask', ['tnp~~h0_zz_pw'], None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        # (1a) the persistence line is emitted into the real accept(), and the arming consts are
+        #      byte-unchanged (this handoff persists provenance; it never arms).
+        if 'c.tnmask = {' not in js:
+            fail('accept() must persist the pre-restore {Tn} pairing (c.tnmask) — H1226')
+        for needle in ('const TNMASK_HARD_REJECT = false', 'const SANLOSS_HARD_REJECT = false'):
+            if needle not in js:
+                fail('H1226 must leave the soft-guard arming consts unchanged (missing %r)' % needle)
+        # (1b) behavioral: the REAL accept() stamps got/want; an expansion is flagged, clean isn't.
+        harness = os.path.join(d, 'tnmask_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'tnmask_persist_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('tnmask persistence behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+    # (2) offline detection end-to-end through the REAL promote path (red/green).
+    import promote_final_cards as pfc
+    import tnmask_offline as tno
+    meta = {'root': 'tnp', 'nominal': True, 'nominal_keymap': {'tnp~~h0_zz_pw': 'tnp'},
+            'input_hashes': {'tnp~~h0_zz_pw': {'raw_sha256': 'r', 'portrait_sha256': 'p'}}}
+    base_card = {'key1': 'tnp', 'iast': 'tnp', 'notes': '',
+                 'records': [{'h': 'tnp', 'grammar': '',
+                              'senses': [{'tag': '1', 'russian': 'x', 'german': 'y'}]}]}
+    exp_card = dict(base_card, tnmask={'got': 'T1', 'want': 'T1 T2'})   # a soft expansion
+    row = list(pfc.rows_for('tnp~~h0_zz_pw',
+                            {'card': exp_card, 'meta': meta, 'wf_file': 'wf.json'},
+                            'ai_translated', pfc.SELFTEST_MODEL_VERSION))[0]
+    if not tno.tnmask_measurable(row):
+        fail('promoted row must carry the H1226 {Tn} pairing when the card has one')
+    if tno.tnmask_mismatch(row) is not True:
+        fail('GREEN: an expansion must be detectable offline from the promoted row')
+    stripped = json.loads(json.dumps(row))          # the SAME row, field removed = pre-H1226
+    stripped['provenance'].pop('tnmask', None)
+    if tno.tnmask_mismatch(stripped) is not None:
+        fail('RED: without the field the promoted row must be NOT MEASURABLE, never a silent clean')
+    tno.selftest()                                  # pin the reader itself (fail-loud, no I/O)
+
+
 def test_grammar_field_restore_behavioral():
     """H1151 pin for the H858 grammar-{Tn} stranding class (live on gokzuraka, 13-07-2026).
     The C-01 centralization (card_fields.js_restore_spec) already restores record.grammar in
@@ -6188,6 +6254,7 @@ def main():
         test_h920_no_pwg_portrait_stamps_source_senses,
         test_h920_en_missing_sense_hard_flag,
         test_h960_accept_sanloss_soft_gate,
+        test_tnmask_persist_and_offline_detect,
         test_h960_dropped_sanskrit_span,
         test_no_pwg_worklist_runnable_lane,
         test_no_pwg_layer_and_profile_survive_promotion,
