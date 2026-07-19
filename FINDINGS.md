@@ -2705,7 +2705,29 @@ corpus-based dictionaries (Apte, Grassmann, Edgerton) and non-PW koṣa digitisa
 match is a **lower bound on attestation** (variant spelling/accent misses a real hit), so treat
 the pwg-unique set as candidates, not confirmed ghost-words.
 
-> **Source:** [`scripts/pwg_lexicon_only_audit.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_lexicon_only_audit.py) +
-> [`data/pwg_lexicon_only_audit/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit) ·
-> [SanskritGrammar PR #447](https://github.com/gasyoun/SanskritGrammar/pull/447) · H1310 ·
-> 19-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
+**Update (v2, [SanskritGrammar PR #450](https://github.com/gasyoun/SanskritGrammar/pull/450), supersedes #447).**
+The independence rule above stands, but v1's comparison corpus was too thin (koṣa side =
+`skd` alone) and treated MW as an undifferentiated block. v2 adds two corrections, both of
+which sharpen — not overturn — the finding:
+- **Split MW's `L.` marker, don't just tier MW out.** `<ls>L.</ls>` ("lexicographers") is
+  MW's own flag for a koṣa-sourced sense with no text citation — **59,697 of MW's 194,084
+  headwords (30.8 %) are `L.`-only.** So genuine text attestation = a MW **non-`L.`** `<ls>`,
+  not bare MW membership.
+- **Join against the koṣas themselves** (7: armh/abch/acph/acsj/nmmb/vcp/skd), so "koṣa-
+  corroborated" becomes measurable (10,724) rather than the near-empty `skd`-only tier (101).
+- Of 32,690 lexicon-only entries: text-attested 12,606 (38.6 %) · koṣa-corroborated 10,724 ·
+  dict-lexical 7,062 · **pwg-unique 2,298** (1,510 only in same-source PW; **788 absent from
+  every dictionary**, ≈715 after normalisation).
+- **New substantive result:** hand-adjudication + a source-token breakdown of the 2,298
+  pwg-uniques shows a genuine OCR/segmentation-artifact rate of **≈0.05 %** — the rest trace to
+  **koṣas/nighaṇṭus PWG cites but that are not digitised** (Rājanighaṇṭu, Trikāṇḍaśeṣa, Amara,
+  Nighaṇṭu, Ratnamālā — 678 words), MS-catalogue proper nouns (*Verz. d. B. H.*, 768), and
+  scholarly/technical terms (834). **Most PWG "ghost-words" are corpus gaps, not ghosts** — the
+  highest-value next step is digitising those koṣas, not re-deriving the flag.
+
+> **Source (v2):** [`data/pwg_lexicon_only_audit/build_census.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_lexicon_only_audit/build_census.py) +
+> [`data/pwg_lexicon_only_audit/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit)
+> (README + `pwg_lexicon_only_audit.meta.md`) ·
+> [SanskritGrammar PR #450](https://github.com/gasyoun/SanskritGrammar/pull/450) (supersedes
+> [#447](https://github.com/gasyoun/SanskritGrammar/pull/447)) · H1310 · 19-07-2026,
+> Opus 4.8 (`claude-opus-4-8[1m]`).
