@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 19-07-2026 (H1308 government-index page SHARED entry)_
+_Created: 04-07-2026 · Last updated: 20-07-2026 (H1339 Tier-B hardening: 9 entries)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -98,7 +98,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "2c7697808e71e26fca3b9501f8effb68f9f3b2ad8d8880dcf78e6328ee659e9a",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -115,7 +115,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -133,8 +133,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 (2026-07-04): tyaj~~h0_zz_pw (a PW addenda card compressing a whole root article — base verb + Caus/Desid + every prefix combo) packs 35 senses into 11 <ls>, so 1+<ls>=12 ranked it as trivial while its real output surface was the heaviest of the root; it deterministically blew the whole-card StructuredOutput retry cap and stalled ~7 min retrying the identical call. The frag-count trigger is computed from split_plan() length (lang-agnostic; no RU/EN branching) and applies whenever SELFHEAL is on, independent of the citation trigger and of byte/citation batching mode — so it protects both language paths identically. Validated live: the [sam, zz_pw] pair that stalled now returns ok:2/null:0 with zz_pw healed complete via 4 fragment groups.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -152,8 +152,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 follow-up (2026-07-04): the runtime BACKSTOP for whole-card StructuredOutput stalls whose driver isn't yet a structural presplit trigger (gloss volume, masked-token count, multi-layer nesting, novel shapes). Entirely lang-agnostic — the budget keys on masked-skeleton bytes (INPUTS[k].skeleton.length) and setTimeout, no RU/EN branching; both paths get the same gate. Budget calibrated from a tyaj --no-tm timing benchmark (skeleton bytes are the best single time predictor since output ~= 2x skeleton). setTimeout is a relative timer (Date.now() is banned); AbortController is unavailable so a killed call keeps running in the background until its own cap, but the harness stops blocking. Default ON; --no-kill / --kill-factor=N tune it. See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -171,8 +171,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H220 (2026-07-06, Opus 4.8 claude-opus-4-8): root-caused the no-PWG lane's ~36% single-card yield to the wall-clock kill gate abandoning valid-but-slow single supplement cards. All three parts are entirely lang-agnostic — (A) keys on FRAGS emptiness + skeleton bytes + KILL_CEIL_MS (no RU/EN branch), (B) keys on META.nominal + nominal_keymap which both RU and EN builds emit identically, (C) is a FAIL[k] message-precedence guard. PWG root windows (nominal=False) keep strict key matching: the tolerance is gated on META.nominal so it is inert there (test_generated_harness_strict_key_matching still green). Pinned by test_no_fallback_single_gets_ceil_kill_budget, test_nominal_key_echo_tolerance_scoped, test_selfheal_no_fallback_preserves_upstream_reason. Extends wall_clock_kill_gate (the kill gate stays for multi-card/splittable batches).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -189,7 +189,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -206,7 +206,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -223,7 +223,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "958b069fc3a88e1032900f44498410fab88646409c9f0ca4e0952272a446cea1"
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee"
     }
   },
   {
@@ -240,7 +240,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang; _strip_post_generation_fields() runs before it and is called unconditionally in build() for both lang paths (no lang-specific field list).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -257,7 +257,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -274,7 +274,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H818 closes the former divergence: exact model provenance is required across four accounts, so both RU and EN now request and stamp claude-sonnet-5. This prevents account/profile alias resolution from making cross-window provenance incomparable.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
   },
   {
@@ -295,8 +295,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/audit_coverage.py": "d3e1966f0ec4cf914f85e3fb5d8336c9f2fc19662717f8300e2d4cab041f3d3f",
-      "src/pilot/prompt_rule_audit.py": "913e91862fe08bde42ba9f935533b3acb2fe3db38401a8f903bd7f01cbd4b435",
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
+      "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc"
     }
   },
@@ -315,9 +315,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
     "tracking": "Uprava/handoffs/archive/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
       "src/pilot/window_reports.py": "bebcc79826bc74d676be5861f961c8aac3aa2f793f41bbe757c4fc02f0eb8720",
-      "src/pilot/requeue_from_audit.py": "062733fd593b4cde4213fcfba2840e19c319da74d0fb5e2eff445bba60520cd6"
+      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2"
     }
   },
   {
@@ -334,7 +334,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 (commit 8cb84f7): the helper is lang-agnostic (takes a root, not a --lang flag; gen_opt_harness2.py resolves lang from the rootmap), so the fix applies to any language's requeue in one place. Was a both-paths gap before the fix, not an RU/EN divergence.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "062733fd593b4cde4213fcfba2840e19c319da74d0fb5e2eff445bba60520cd6"
+      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2"
     }
   },
   {
@@ -352,7 +352,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf"
     }
   },
@@ -371,8 +371,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -391,7 +391,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -409,7 +409,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf"
     }
   },
@@ -428,8 +428,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -447,7 +447,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
@@ -466,8 +466,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 3 pre-run fix. Before this, the nominal promote path (meta.get('nominal') + nominal_keymap) existed in promote_final_cards but the harness never emitted those fields, so a --nominal run's cards would all key to the label (e.g. pril10_w1) instead of kAla/rasa/rUpa. The keymap is built from each card's portrait key1 (_slp1_lex_for_key), which is lang-independent — the identical meta is emitted for RU and EN nominal runs. Pinned by a promote_final_cards.selftest nominal-keying assertion.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9"
     }
   },
   {
@@ -486,9 +486,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H189 (2026-07-05): fixes the pril10_w1 nominal-window cost blow-up (230 agents / 42.3M tokens / ~$80 / ~3 of 8 cards). Every mechanism keys on lang-agnostic signals — citation/sense counts, masked-skeleton bytes, agent-call count, harness bytes, token/$ estimates — with NO RU/EN branching, so RU and EN get identical behaviour; the presplit lane already ran both languages through the same grouping. Also guards _slp1_lex_for_key against an empty-list portrait ([]) crashing the nominal_keymap emission (the real tyaj~~h0_zz_pw / addenda shape). See POSTMORTEM_pril10_w1.md + H189.",
     "tracking": "H189",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/perf_preflight.py": "56bd55032aa5d6db22d7ba2f59dc05adeca3be3227aecd14780728458bd0b1bb",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/perf_preflight.py": "3dc1d44f0054da4278e7c6eb34f03477b697431e22bcf7ea0c201afad2009e13",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -516,10 +516,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/make_edition_cut.py": "5a24d8c96611f50f008689609f8140ef47b02731524dbc255438426b36d306fd",
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
-      "save_and_audit.py": "bd9626ca58ca67773ab157140a2b62afff46047ac2294a864783144f629a7d63",
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
+      "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
       "src/pilot/autosplit_requeue.py": "7ada6e0aa8dc8d0be15cf4be725e380929282974cc19fc950690c07b09511448",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -537,8 +537,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #3b): the fragment sidecar is content-addressed on the fragment SOURCE and was harvested append-only first-seen-wins with NO fidelity check, so a hand-edited/corrupt wf_output*.json (blanked or malformed senses) permanently poisoned reuse and a later good harvest of the same fsha could never override it. frag_senses_sane(senses, lang) keys on the CARD-shaped translation field ('russian'/'english') and is applied at BOTH harvest (never cache garbage; a cached-corrupt fsha maps to False so a good row overrides it) and serve (load_frag_tm drops any corrupt historical row). Entirely lang-agnostic — lang is a first-class parameter of frag_address/frag_senses_sane/load_frag_tm/build_frags, no RU/EN branch. Pinned by test_frag_tm_fidelity_gate_and_override. Extends translation_memory_card_and_fragment.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "958b069fc3a88e1032900f44498410fab88646409c9f0ca4e0952272a446cea1",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -556,7 +556,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "65429923536739d8b0410092aa65a679ef7e8c69140ad0a3a95fa41ff0ec7a89",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -575,7 +575,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -630,9 +630,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_lock.py": "dbbf4e77b39585dabdd3df122143cacc15fedb97ce6c3d12654061e8fe6c11b9",
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -653,11 +653,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). window_reports.write_reports/write_window_status already took an out_dir parameter (pre-existing --out-dir escape hatch); --window-tag is a thin, lang-agnostic sugar layer over that same parameter computed once in audit_window.py and threaded through unchanged to requeue_from_audit.py/root_window_status.py. Neither RU nor EN branch differently. Pinned by test_audit_window_tag_routing.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
-      "src/pilot/requeue_from_audit.py": "062733fd593b4cde4213fcfba2840e19c319da74d0fb5e2eff445bba60520cd6",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
+      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "bebcc79826bc74d676be5861f961c8aac3aa2f793f41bbe757c4fc02f0eb8720",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -680,13 +680,13 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). append_jsonl_line is a single shared primitive (window_common.py) used identically by every JSONL append site regardless of --lang; the TM denylist stores 'ru'/'en' addresses in the same file with no per-language code path. Pinned by test_denylist_torn_line_warns.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/window_common.py": "1535ba9e35a501d673f5c8e844f0b7916b055ba772d53159770e69b0b8f65e48",
+      "src/pilot/window_common.py": "083e9aa1a82df34a10561f7cbc93d86e09411f20b7f2120e8d0af9769fbfbec1",
       "src/pilot/window_reports.py": "bebcc79826bc74d676be5861f961c8aac3aa2f793f41bbe757c4fc02f0eb8720",
-      "src/pilot/requeue_from_audit.py": "062733fd593b4cde4213fcfba2840e19c319da74d0fb5e2eff445bba60520cd6",
+      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
-      "src/pilot/translation_memory.py": "958b069fc3a88e1032900f44498410fab88646409c9f0ca4e0952272a446cea1",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -706,7 +706,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -724,8 +724,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "09-07-2026 orchestration audit. The coordinator governs Workflow leases before language-specific promotion/audit branches; lease target/state handling and JSONL append hygiene are lang-agnostic. The expiry guard deliberately does NOT expire prepared harnesses, because H151-style prepared artifacts can wait days for Workflow capture. Pinned by test_coordinator_expired_leases_release_cap.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/coordinator.py": "717a828f7950cf3cac38223dc2b277281143a0536b1f6dca2bd4fb652da0a1aa",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/coordinator.py": "1b54827cee5d653c5bd42c9c90a22051e5cb93bbdae958cd919354bc54aefa9d",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -762,7 +762,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -780,8 +780,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring shipped first; the EN audit_window_en.py wiring followed same-day via an in-process per-sense adapter (see stage2_pregate_en_wiring_h405, now SHARED) — that edition audits in-process (audit_sense), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses for RU. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI).",
     "tracking": "",
     "verified_sha256": {
-      "src/stage2_pregate.py": "f801740067f981f66e480330a586e12d9e98f85f7f564e40520d7ff43af139e2",
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049"
+      "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f"
     }
   },
   {
@@ -800,7 +800,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc",
-      "src/stage2_pregate.py": "f801740067f981f66e480330a586e12d9e98f85f7f564e40520d7ff43af139e2"
+      "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945"
     }
   },
   {
@@ -820,7 +820,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -838,8 +838,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H442 (10-07-2026, Opus 4.8 claude-opus-4-8). The heal/kill budget is language-agnostic: healGroup/selfHeal run identically for the RU and EN lanes (the only per-language pin is the model alias, already tracked in sonnet5_explicit_model_pin_en), so a per-card ceiling that bounds the RU-observed medium50 cascade applies verbatim to EN. Sibling of the SHARED wall_clock_kill_gate and selfheal_binary_split entries. Pinned by test_per_card_heal_budget_wired in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -857,8 +857,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H442 P0 (10-07-2026). healGroup/selfHeal are language-agnostic generated harness logic shared by RU and EN; the guard keys on wall-clock kill-timeout behavior, not translation language. Pinned by test_heal_group_kill_timeout_does_not_bisect in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -877,8 +877,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H462 (10-07-2026, Fable 5 claude-fable-5). The counters live in the language-agnostic generated harness JS (agentKill/healGroup are shared by --lang ru/en; the only per-language pin is the model alias, tracked in sonnet5_explicit_model_pin_en), and classify_run.py reads summary fields that exist identically for both lanes. Pinned by test_run_telemetry_counters_returned and test_classify_run_verdicts in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523",
       "src/pilot/classify_run.py": "6061958062ef7ae4b673aa77b2f2c9823663d8d083a61a792fabfbefb732fb71"
     }
   },
@@ -899,8 +899,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -936,8 +936,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H805, root-fix for the H255 w06 store loss). The resolver is language-independent; both promotion paths import the SAME store_path.canonical_store and default --store to its result, so neither RU nor EN can silently drop promotions into a discarded worktree store. Strengthens promotion_claim_file_h336: both paths now lock the SAME canonical store path across worktrees. Deterministic selftest: python src/store_path.py --selftest.",
     "tracking": "",
     "verified_sha256": {
-      "src/store_path.py": "2b3be1415dc7a387717c60574abc36aec9600d7a5c138bf7ac85415aa1b1e152",
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/store_path.py": "3a89cce449987ef448939d9e9a326c02e46ffaf4ce346f55aefe3f388cc00590",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf"
     }
   },
@@ -957,9 +957,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H811, from the H255 w07 concurrency finding). The dispatch width control is language-INDEPENDENT: the same MAX_WIDE/STAGGER_MS constants + boundedParallel helper are emitted for every --lang (the harness is lang-parameterized; nothing here branches on language), so a RU or EN requeue uses --max-wide=3 identically. Behavioral test: node src/pilot/boundedparallel_test.js against the REAL emitted fn (caps concurrency, staggers, order-preserving, null-on-throw), wired into window_selftest.test_lowwide_staggered_dispatch.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -986,12 +986,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H818 Windows readiness uses one language-parameterized manifest and worker contract. Whole-card retries, binary split, fragment TM/restore/fidelity, per-card budgets, timeout-no-bisect, partial stitching, audit-clean subset promotion, staged dispatch, and credential-safe event/census telemetry do not branch on RU/EN. Production policy selects RU no_pwg for the first 100-headword proof; the mechanism preserves EN field/schema behavior.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/headless_worker.py": "5022695ffd42d6912bc8d1e2d24c130b744461990afaa89b0f5f13f6ebd57f91",
-      "src/pilot/max_account_orchestrator.py": "ae74c26b62997f783c395b427cec14e92be4705109bb7320e80a7f5787a22644",
-      "src/pilot/coordinator.py": "717a828f7950cf3cac38223dc2b277281143a0536b1f6dca2bd4fb652da0a1aa",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/headless_worker.py": "4e6fc8ab4bdb7fb32e66def36270635ff51f476905d4ca37827115fad3ca66d3",
+      "src/pilot/max_account_orchestrator.py": "83173d202fc366b958ce51046bad184476fa3b1b0fd5f93a48791a0a78255a8a",
+      "src/pilot/coordinator.py": "1b54827cee5d653c5bd42c9c90a22051e5cb93bbdae958cd919354bc54aefa9d",
       "src/pilot/headless_worker_selftest.py": "8adf980678db843100938045f4057c10d5fb7dc6c2cfe17f936028533e15654c",
-      "src/pilot/max_account_orchestrator_selftest.py": "df9ca93076dd187240573b043d9a10c9ae87ac94678afa8105ba47125c2fc872",
+      "src/pilot/max_account_orchestrator_selftest.py": "2eddccb237f0159456b5cab65b3282d7e81b8f4f00f7206c9926ee9430e60f6c",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "eb21e08ba4f0e7ab7ab5dacf9db4e4d0d38234f2d63385157735ca8d7b8ced61",
@@ -1016,10 +1016,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H390 Phase 1 (12-07-2026, Opus 4.8 claude-opus-4-8), extended by H818. gen_model is written into language-agnostic run meta and flows through the shared ledger writer and harvester identically for RU/EN; both paths now stamp exact claude-sonnet-5. Pinned by test_ledger_stamps_gen_model in window_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
       "src/pilot/window_reports.py": "bebcc79826bc74d676be5861f961c8aac3aa2f793f41bbe757c4fc02f0eb8720",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -1037,8 +1037,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H823, fixes the H255 presplit-cohort loss). Both the citation presplit trigger (_presplit_hit) and the single-card kill budget (killBudgetForCur) are language-independent — they key on <ls>/fragment counts and FRAGS, never on --lang; the same floor + CEIL apply to RU and EN identically. Extends no_fallback_single_kill_budget_and_nominal_key_echo (H220) from no-fallback singles to all singles. Pinned by test_presplit_cite_floor_and_single_ceil.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -1061,9 +1061,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/_pilot_gen_merged.py": "1d2ab8504823b0e8bc07c391ffacada034d436da2fd8936484250e58c0672933",
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -1083,9 +1083,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H960 (15-07-2026, Opus 4.8 claude-opus-4-8[1m]): closes H920's explicitly-deferred accept()-side sense-count consumption. Language-neutral: accept() counts SENSE OBJECTS (records[].senses[]), never a gloss language, and source_senses is sense_count.count_source_senses over the German source markers (identical for the RU and EN lanes — the source is German for both). SOFT by default (SANLOSS_HARD_REJECT=false): a shortfall is telemetry only (no reject/requeue), so live traffic can measure the true drop-vs-false-flag rate before the reject is armed (owner-gated ladder). The shared counter is hardened against the ~4.78%-of-cards cross-reference over-count the naive count carried (gam~~h2_31_pari 2->1, s_ud~~h0_05_pra 4->2, _a_srayatva 2->0); under-counting is the safe direction, never a false shortfall. Pinned by test_h960_accept_sanloss_soft_gate (builds the real harness, extracts the emitted accept()+countOf, asserts soft-keep / surplus-ok / FP-regression / ls-sk-first / armed-hard-reject via accept_sensecount_test.js) plus the 3 cross-reference fixtures in sense_count._selftest.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523",
       "src/pilot/accept_sensecount_test.js": "e3ef2b0fb016f6697bcf4c2d087c15b0f76d3422ee70193f064370ab34e3bad1"
     }
   },
@@ -1105,7 +1105,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -1123,7 +1123,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1152 guard 2 (17-07-2026, Sonnet 4.6 claude-sonnet-4-6), closing H1070's r102 finding (PWG->EN FU1 pilot, vac~~h0_00_pwg00: a {#uc#} span inside a <F> footnote survived the german echo 33/33 but was dropped from english 32/33 -- invisible to the pre-existing check because it never reads the translation field). accept() is lang-parameterized code shared by both lanes (field = 'russian' or 'english', same code path); the new check is symmetric and applies identically to RU and EN generation. Verified against the live RU regression suite: window_selftest.py full run stays green (137/137 baseline, +2 new content-check tests for guards 1/3), and the new/updated fixtures in accept_sensecount_test.js reproduce the exact r102 shape (RED before this change -- proven via git-stash against the pre-fix accept(), the fixture is silently ACCEPTED -- GREEN after). No RU store data touched; this only changes the generation-time accept-path gate for FUTURE generation, never re-validates the 11,605 already-promoted RU rows.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
       "src/pilot/accept_sensecount_test.js": "e3ef2b0fb016f6697bcf4c2d087c15b0f76d3422ee70193f064370ab34e3bad1"
     }
   },
@@ -1160,7 +1160,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496"
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523"
     }
   },
   {
@@ -1179,10 +1179,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Validated 18-07-2026 on the RU 3-card slice (v1 exposed the naive-senses equality-gate defect: workers displaced source {Tn} spans into unrestorable card.notes; v2 gates are direction-aligned with accept()). canonical_audit.py is already field-parameterized (reads manifest field, russian/english); wf_template.js still hardcodes the russian target field and a RU controller prompt. The EN variant is owed by the same handoff’s mini-EN step, which must also wire the H1070/H1152 EN guards + audit_window_en gates.",
     "tracking": "H1209 (Uprava/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md), mini-EN step",
     "verified_sha256": {
-      "src/pilot/h1209/wf_template.js": "2868e1e8cae600e335daa1091e1c34734f0ab7410f6844ff2fbc6653ae2620d1",
+      "src/pilot/h1209/wf_template.js": "3a82285017c5937d9deeab92d7a6ae539e8598287811458b6d3c8af64f486bd3",
       "src/pilot/h1209/prep_slice.py": "acf9ddda5a76d19d769f4a794ea7f88b6db88a8ae688b44f7f778ac24ecde48d",
       "src/pilot/h1209/build_args.py": "6f245108c60ae7c777c66900c1da4a53670399e949fbc474b6556d6bd0ed3024",
-      "src/pilot/h1209/canonical_audit.py": "9ae794af290af809caf208caba3b71787bd188f7f3174ebc4af7912ca7ead6f3"
+      "src/pilot/h1209/canonical_audit.py": "30dfb6ab88e692177416eb6d16cd3333dcc83f58c2b6312f096c2f324f85915f"
     }
   },
   {
@@ -1227,7 +1227,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/german_residue_scan.py": "95b23669fdf96759202a22a06512c6bdc2d9de6e8a1c73809bdead3a26e991db",
       "src/pilot/fix_german_connectives.py": "6a5cceb58cd7c989df819703dff777bb635ee979c7178c55ceccce199a3737a8",
       "src/pilot/foreign_literal_guards.py": "e7eaccfb846ff805b585b1c6413ec84b71970dd7fdddfc6abef90fcf04650b93",
-      "src/pilot/prompt_rule_audit.py": "913e91862fe08bde42ba9f935533b3acb2fe3db38401a8f903bd7f01cbd4b435",
+      "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338",
       "src/pilot/audit_window_en.py": "8dc563b46d590ee68d496f563cbc9b3df8b17d31c00e8cb3a6f2e7ca692b39fc"
     }
   },
@@ -1248,8 +1248,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1226: the {Tn} pairing is stamped in the SHARED accept() (runs for both languages) and BOTH promote lanes (promote_final_cards.py RU, promote_en.py EN) carry it to provenance.tnmask, so neither store silently drops the field accept() stamps. Only accept() stamps it: the heal path's acceptFrag hard-rejects fragment {Tn} mismatches, so no un-rejected expansion reaches a healed card. Makes the TNMASK false-flag rate MEASURABLE (H1150 DO_NOT_ARM, denominator 1); TNMASK_HARD_REJECT stays = false — arming is a human @DECIDE. Pinned by window_selftest.test_tnmask_persist_and_offline_detect + tnmask_offline.selftest.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "b3fc515249c1bc80b9c90608b3d74f0b30248d45da0a8a2b61910772ce24c744",
-      "src/promote_final_cards.py": "f01b9cb8f0b444e7d5be98670908991830eddbbdbe357b2f3e96aa50bce0d6f5",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
       "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf",
       "src/pilot/tnmask_offline.py": "c857fe425fadbe18c1cdf398892f53b590709048ca66faf94fd05e046730ffea"
     }
@@ -1272,10 +1272,188 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ru_style_sweep.py": "018aee3c3262405b493a5dac74f937684fcbac6f763923583d83604a4e5dcb93",
-      "src/pilot/audit_window.py": "408865512ccb28f338efb93078858076559978b2d875d8a49b50f2177c6a0049",
-      "src/pilot/window_selftest.py": "082112db2c0876d6cfe5ea2b3737af91c29dd030fb14235c7916e9abfb272496",
-      "src/pilot/prompt_rule_audit.py": "913e91862fe08bde42ba9f935533b3acb2fe3db38401a8f903bd7f01cbd4b435",
+      "src/pilot/audit_window.py": "fefcfe9abb293338f5a61492a025a31d763f01bdb52495db4a0bbae55356db6f",
+      "src/pilot/window_selftest.py": "df9cf73edfcf1e3842260105752840f6ebf8951e58f4fc360f92c90fcf556523",
+      "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
+    }
+  },
+  {
+    "id": "h1339_store_promote_hardening",
+    "mechanism": "H1339 B02/B03/B08/B20/B21: heal-stitched and TM-served cards are schema-complete at construction/serve (iast/notes + record h/grammar; legacy sidecar rows refused fail-closed); record.grammar joins PROMOTED_COMMON so tn_residue/backfill see the full store-written masked set; store --merge is better-attempt-wins (complete>partial, fewer missing fragments win); --gen-model-version cross-checked against manifest execution.model_identifier and prov.model derived from the version",
+    "files": [
+      "src/card_fields.py",
+      "src/promote_final_cards.py",
+      "src/pilot/translation_memory.py",
+      "src/pilot/headless_worker.py",
+      "src/pilot/gen_opt_harness2.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/headless_worker.py": "4e6fc8ab4bdb7fb32e66def36270635ff51f476905d4ca37827115fad3ca66d3",
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
+    }
+  },
+  {
+    "id": "h1339_en_promote_parity_gap",
+    "mechanism": "promote_en.py has NO {Tn}-residue gate, NO better-attempt-wins merge and NO model-identity cross-check — the EN twin of the B08/B20/B21 promote hardening classes",
+    "files": [
+      "src/promote_en.py"
+    ],
+    "languages": [
+      "en"
+    ],
+    "verdict": "GAP",
+    "note": "",
+    "tracking": "H1339 Tier-B report pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md — port before the first real promote_en run (EN store currently 0 rows; H1209 mini-EN is the first consumer)",
+    "verified_sha256": {
+      "src/promote_en.py": "09758e78d1789eeaed9dfd9ef6b6c3089c392e434165b06cd3950e5195a5c4cf"
+    }
+  },
+  {
+    "id": "h1339_worktree_canonical_sidecars",
+    "mechanism": "H1339 B04/B09: the four TM sidecars (card/suggest/denylist/frag) and the ru_coverage store/denominator resolve via store_path canonical resolvers — ONE logical sidecar set per checkout tree, worktree-safe (0-TM-hit worktree runs and empty-store coverage verdicts eliminated)",
+    "files": [
+      "src/store_path.py",
+      "src/pilot/translation_memory.py",
+      "src/pilot/ru_coverage.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/store_path.py": "3a89cce449987ef448939d9e9a326c02e46ffaf4ce346f55aefe3f388cc00590",
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/ru_coverage.py": "bf08bc3e79a80907dfc7df4e59cead0c026e04cf9cc621359630daecc98b46c3"
+    }
+  },
+  {
+    "id": "h1339_requeue_materialisation_unattended",
+    "mechanism": "H1339 A4/B16/B18: a supervisor requeue work-item materialises a REAL coordinator requeue attempt + ::rqNN-kind job (prepare-requeue -> import-requeue, idempotent, loud when unmaterialisable); cmd_run_once filters the roster to claim-eligible accounts BEFORE the concurrency slice; reset-failed is the audited scoped exit from the terminal failed state",
+    "files": [
+      "src/pilot/bounded_staged_run.py",
+      "src/pilot/bounded_supervisor.py",
+      "src/pilot/max_account_orchestrator.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/bounded_staged_run.py": "096cd639be7f864bc5fc6984c84674a50c13e81e12f6284fbce7185ab328c49c",
+      "src/pilot/bounded_supervisor.py": "01610c44d5383420d29f66cb0ef81ae2612c89bff30403cce31816ed6c8f603a",
+      "src/pilot/max_account_orchestrator.py": "83173d202fc366b958ce51046bad184476fa3b1b0fd5f93a48791a0a78255a8a"
+    }
+  },
+  {
+    "id": "h1339_fragment_prompt_evidence",
+    "mechanism": "H1339 B01: heal/presplit fragment prompts carry the card's own evidence (per-card grammar — the only grammar in nominal windows — and the portrait) on BOTH twins (JS healGroup and headless fragment_prompt), matching the whole-card batch lane",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/headless_worker.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
+      "src/pilot/headless_worker.py": "4e6fc8ab4bdb7fb32e66def36270635ff51f476905d4ca37827115fad3ca66d3"
+    }
+  },
+  {
+    "id": "h1339_requeue_blast_radius_guards",
+    "mechanism": "H1339 B11/B12: requeue_from_audit refuses a CRASHED audit's blast-radius requeue list; the TM denylist gains an unblock supersede lifecycle and promote_final_cards clears exactly the denials its landed replacements supersede",
+    "files": [
+      "src/pilot/requeue_from_audit.py",
+      "src/pilot/translation_memory.py",
+      "src/promote_final_cards.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
+      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9"
+    }
+  },
+  {
+    "id": "h1339_siglum_citation_precision",
+    "mechanism": "H1339 B13: translated_source_siglum fires only on citation-shaped Russian (spelled-out work name + numeric locator; манускрипт excluded), no longer on legitimate prose",
+    "files": [
+      "src/pilot/prompt_rule_audit.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "RU-prose-specific detector over Cyrillic work names; the EN lane's residue checks are audit_window_en's own classes — nothing portable here",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338"
+    }
+  },
+  {
+    "id": "h1339_measurement_integrity",
+    "mechanism": "H1339 B14/B15: perf_preflight prices per LANE (batched agents at the measured healthy 60K-tok calibration, presplit fragment agents at the pril10 184K monster calibration — healthy windows no longer refused on fiction, the kAla gate keeps its teeth); probe_log refuses all-null outcome rows, recovering figures from note key=int pairs first",
+    "files": [
+      "src/pilot/perf_preflight.py",
+      "src/pilot/probe_log.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/perf_preflight.py": "3dc1d44f0054da4278e7c6eb34f03477b697431e22bcf7ea0c201afad2009e13",
+      "src/pilot/probe_log.py": "6163c8a69bb8be34d14fa066ee4ee7a9f4e437b607f88b3dea25681aaf8edca5"
+    }
+  },
+  {
+    "id": "h1339_ru_audit_chain_routing",
+    "mechanism": "H1339 B10/B19: save_and_audit passes --write-requeue (requeue singletons refreshed in the factory save pass); stage2_pregate/audit_translation resolve merged.md with the dual safe_name lookup (double-encoded collector output no longer false-flags NO-OUTPUT)",
+    "files": [
+      "save_and_audit.py",
+      "src/stage2_pregate.py",
+      "src/audit_translation.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "the merged.md render chain and the requeue singleton files are RU-lane surfaces; audit_window_en has no requeue-singleton machinery (that asymmetry is the standing audit_window_en gap family, tracked by the existing en-lane entries)",
+    "tracking": "",
+    "verified_sha256": {
+      "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
+      "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945",
+      "src/audit_translation.py": "22581af60c24f2871cb372a06ef35c11ae195b8d051e890e81370702f9c6ca44"
     }
   }
 ]

@@ -203,7 +203,10 @@ class BoundedSupervisor:
         return {
             'id': 'rq-%03d-%s' % (self._rq_counter, origin.get('id')),
             'requeue': True,
-            'origin': origin.get('id'),
+            # H1339 A4: `origin` must always be the TRUE plan window (== coordinator lease
+            # id) -- a requeue OF a requeue item would otherwise carry the rq bookkeeping id
+            # ('rq-001-x') as its origin and the materialiser could never resolve the lease.
+            'origin': origin.get('origin') or origin.get('id'),
             'keys': sorted(set(keys)),
         }
 

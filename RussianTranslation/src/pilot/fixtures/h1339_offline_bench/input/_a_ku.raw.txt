@@ -1,0 +1,36 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#AKu/#}¦ (wie eben) <ls>Uṇ. 1,33</ls>. <lex>m.</lex>
+<div n="1"> 1〉 {%Maus, Ratze%} (<ls>AK. 2,5,12</ls>. <ls>H. 1300</ls>); {%Maulwurf%} <ls>ṚV. 9,67,30</ls>. (<ab>s. u.</ab> {#alAyya#}). <ls>VS. 3,57</ls>. <ls n="VS.">24,26</ls>. <ls n="VS. 24,">28</ls>. <ls>AV. 6,50,1</ls>. <ls>TS. 5,5,14,1</ls>. <ls>ŚAT. BR. 2,1,1,7</ls>. <ls n="ŚAT. BR. 2,">6,2,10</ls>. <ls>M. 4,126</ls>. <ls n="M.">11,159</ls>. <ls n="M.">12,62</ls>. <ls>MBH. 1,1816</ls>. <ls>PAÑCAT. I, 175</ls>. <ls n="PAÑCAT. I,">426</ls>. <ls n="PAÑCAT. I,">II, 1</ls>. <ls>KATHĀS. 24,132</ls>.
+<div n="1">— 2〉 <ab>N.</ab> eines Grases, <bot>Lipeocercis serrata Trin.</bot>, <ls>RATNAM.</ls>_im_<ls>ŚKDR.</ls> <ls>KAUŚ. 25</ls>. — Nach <ls>H. an. 4,4</ls> bedeutet das Wort noch
+<div n="1"> 3〉 {%Dieb%} und 4〉 {%Schwein%}; nach <ls>WILS.</ls> noch
+<div n="1"> 5〉 {%Gräber%} und 6〉 {%Spaten%}.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#AKu/#}¦ <lex>m.</lex> (*<lex>f.</lex> ebenso <ls>P. 4,1,44, <ab>Sch.</ab></ls>)
+<div n="1">— 1〉 {%Maulwurf%}.
+<div n="1">— 2〉 {%Maus%} <ls n="Chr.">180,14</ls>.
+<div n="1">— 3〉 *{%Schwein%}.
+<div n="1">— 4〉 *{%Dieb%}.
+<div n="1">— 5〉 *{%<bot>Lepeocercis serrata Trin.</bot>%}
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#AKu#}¦ 5〉, das Sternchen zu streichen.<info n="sup_5"/>
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#AKu/#}¦ I. 5.<info n="sup_7"/>
+
+=== LAYER: SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation) ===
+
+{%ākhu%}¦ 5., das Sternchen zu streichen. {part=,seq=6711,type=,n=1}
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#AKu#}¦ 5〉, das Sternchen zu streichen.
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#AKu/#}¦ I. 5.

@@ -173,10 +173,13 @@ def matrix_pilot_fixture():
                     'entries': {
                         'ru:%s' % sha256(han_raw): {
                             'src_key': han_key,
+                            # Schema-complete TM card (B03/H1339): notes + record h/grammar
+                            # are required; the serve guard refuses legacy-shaped cards.
                             'card': {
                                 'key1': 'han',
                                 'iast': 'han',
-                                'records': [{'h': None, 'senses': [{
+                                'notes': '',
+                                'records': [{'h': '', 'grammar': '', 'senses': [{
                                     'tag': '1',
                                     'german': han_body,
                                     'russian': han_body,
@@ -1289,8 +1292,11 @@ def test_semantic_review_prioritizer():
                 'grammar': 'm.',
                 'senses': [{
                     'tag': '1',
-                    'german': '<ls>ṚV.</ls> Feuer',
-                    'russian': 'мужской Ригведа {#agni',
+                    # B13 (H1339): the siglum-leak fixture is CITATION-SHAPED («Ригведа 1,1»
+                    # -- work name + numeric locator), matching the narrowed trigger; a bare
+                    # prose «Ригведа» with no locator is now legitimate prose, not a leak.
+                    'german': '<ls>ṚV.</ls> 1,1 Feuer',
+                    'russian': 'мужской Ригведа 1,1 {#agni',
                     'equivalence_type': 'equivalent',
                     'source_type': 'attested',
                     'stratum': 'Vedic',
@@ -2292,15 +2298,19 @@ def test_tm_card_sane_rejects_zero_marker_drift():
     """A cached card with zero citations/Sanskrit markers must not satisfy a cited source."""
     import gen_opt_harness2 as gh
     raw = '{#agni#}¦ Feuer <ls>RV. 1</ls>.'
-    card = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
-                                     'russian': 'огонь'}]}]}
+    # Fixtures are schema-complete (iast/notes/h/grammar) so the B03 completeness guard
+    # passes and the DRIFT check -- this test's actual claim -- is the one that refuses.
+    card = {'key1': 'agni', 'iast': 'agní', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': 'm.', 'senses': [{'tag': '1', 'german': 'Feuer',
+                                                   'russian': 'огонь'}]}]}
     ok, why = gh.tm_card_sane(card, 'ru', 'russian', raw)
     if ok or '<ls>' not in why:
         fail('zero-<ls> cached card must be refused for cited source, got ok=%r why=%r' %
              (ok, why))
     raw2 = '{#agni#}¦ Feuer.'
-    card2 = {'records': [{'senses': [{'tag': '1', 'german': 'Feuer',
-                                      'russian': 'огонь'}]}]}
+    card2 = {'key1': 'agni', 'iast': 'agní', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': 'm.', 'senses': [{'tag': '1', 'german': 'Feuer',
+                                                   'russian': 'огонь'}]}]}
     ok2, why2 = gh.tm_card_sane(card2, 'ru', 'russian', raw2)
     if ok2 or '{#' not in why2:
         fail('zero-{# cached card must be refused for Sanskrit-marked source, got ok=%r why=%r' %
@@ -3776,8 +3786,23 @@ def test_coordinator_mixed_lane_public_state_sequence():
                     json.dump(report, f)
                 return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
             if script == 'promote_final_cards.py':
+                # H1339 Phase 3: promote-ready now invokes ONE batched transaction
+                # (--batch-manifest + --report) instead of one subprocess per lease; the
+                # fake must honour that contract (write the per-lease report + rows).
+                batch_arg = cmd[cmd.index('--batch-manifest') + 1]
+                report_arg = cmd[cmd.index('--report') + 1]
+                batch_spec = json.load(open(batch_arg, encoding='utf-8'))
+                leases_out = {}
                 with open(store, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({'promoted': True}) + '\n')
+                    for item in batch_spec:
+                        subs = item.get('expected_subcards') or []
+                        for sub in subs:
+                            f.write(json.dumps({'promoted': True, 'subcard': sub}) + '\n')
+                        leases_out[item['lease_id']] = {'subcards': len(subs),
+                                                        'rows': len(subs)}
+                with open(report_arg, 'w', encoding='utf-8') as f:
+                    json.dump({'schema': 'pwg.batch_promotion.v1',
+                               'leases': leases_out}, f)
             return SimpleNamespace(returncode=0, stdout='', stderr='')
 
         def result_file(name, keys):
@@ -5177,12 +5202,22 @@ def test_perf_preflight_cost_gate():
     PASS a cheap high-card-count window (e.g. `as`: many cards, low per-card cost). The
     per-card ratio is the load-bearing, model-independent signal."""
     import perf_preflight as pp
-    # pril10_w1-shape: 8 cards, ~69 fragment-group agents (post-fix) -> ~$4/card >> ceiling
+    # pril10_w1-shape: 8 cards, ~69 fragment-group agents (post-fix) -> ~$4/card >> ceiling.
+    # B14 (H1339): a real monster window ALWAYS carries presplit telemetry (69 agents for 8
+    # cards IS fragment fan-out); the estimate prices presplit fragment agents at the
+    # pril10 monster calibration, so the gate keeps its teeth under lane-aware pricing.
     monster = {'agent_expected_after_tm': 69, 'selected_keys': ['k%d' % i for i in range(8)],
-               'tm_cards': 0, 'degenerate_passthrough_keys': []}
+               'tm_cards': 0, 'degenerate_passthrough_keys': [],
+               'presplit_keys': ['k%d' % i for i in range(8)], 'batch_count': 0}
     cg = pp.cost_estimate(monster)
     if not cg['over_ceiling'] or cg['est_cost_per_card_usd'] <= cg['per_card_ceiling_usd']:
         fail('a window of 8 monster cards costing ~$4/card must trip the cost gate; got %r' % cg)
+    # B14: missing batch telemetry with presplit present falls CONSERVATIVELY to all-monster
+    # pricing -- degraded telemetry can only over-price, never under-price, a monster.
+    no_batchcount = dict(monster)
+    no_batchcount.pop('batch_count')
+    if not pp.cost_estimate(no_batchcount)['over_ceiling']:
+        fail('missing batch telemetry must fall conservatively to monster pricing')
     # cheap high-count window: 98 cards, 24 agents -> pennies/card -> passes
     cheap = {'agent_expected_after_tm': 24, 'selected_keys': ['k%d' % i for i in range(98)],
              'tm_cards': 0, 'degenerate_passthrough_keys': []}
@@ -5869,6 +5904,311 @@ def test_restore_covers_every_promoted_field():
             fail('%s was not restored (still %r)' % (where, value))
 
 
+def test_h1339_b21_promoted_pairs_cover_store_write_set():
+    """H1339 B21 (the H1283 card_fields.py:64 conflict, resolved): every MASKED field
+    `rows_for` writes into a store row must be in PROMOTED_PAIRS, or `tn_residue` (the
+    promote-time loud-failure backstop) and `backfill_tn_residue` (the repair tool) are
+    blind to it. The defect: `record.grammar` is store-written (rows_for) and is BY DESIGN
+    a {Tn}-bearing field pre-restore (TOKEN_FIDELITY_FIELDS), yet PROMOTED_COMMON omitted
+    it -- so a future restore gap in grammar would promote raw {Tn} silently, exactly the
+    C-01 class the module exists to prevent (670 rows last time).
+    """
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import card_fields
+    import promote_final_cards as pfc
+    # Structural half: every masked field the store write-set contains is residue-checked.
+    # The store write-set of masked fields, stated here independently of PROMOTED_COMMON
+    # (comparing two separately-authored facts, per this module's own design rule):
+    # rows_for writes iast (card), h + grammar (record), tag/german/differentia/russian (sense).
+    store_written_masked = {('card', 'iast'), ('record', 'h'), ('record', 'grammar'),
+                            ('sense', 'tag'), ('sense', 'german'), ('sense', 'differentia'),
+                            ('sense', 'russian')}
+    missing = store_written_masked - set(card_fields.promoted_pairs('russian'))
+    if missing:
+        fail('store-written masked fields invisible to tn_residue/backfill: %s'
+             % sorted(missing))
+    # Behavioral half: a raw {Tn} in record.grammar must be reported as residue.
+    card = {'key1': 'x', 'iast': 'x', 'notes': '', 'records': [
+        {'h': 'x', 'grammar': 'm. {T9} du.', 'senses': [
+            {'tag': '1', 'german': 'a', 'russian': 'b'}]}]}
+    rec = card['records'][0]
+    residue = pfc.tn_residue(card, rec, rec['senses'][0])
+    if not any('grammar' in r for r in residue):
+        fail('tn_residue is blind to a raw {Tn} in record.grammar: %r' % (residue,))
+    # And the repair tool's store-field set sees the grammar column too.
+    import backfill_tn_residue as btr
+    if 'grammar' not in btr.STORE_FIELDS:
+        fail('backfill_tn_residue.STORE_FIELDS lacks grammar -- repair tool blind')
+
+
+def test_h1339_b02_stitched_card_schema_complete():
+    """H1339 B02: a heal/presplit STITCHED card must be schema-complete at construction.
+
+    The defect: both stitch twins built `{key1, records}` only, omitting CARD_REQUIRED
+    `iast`/`notes` (validate_final_card_schema:26) -- so any window containing a healed or
+    presplit card was refused WHOLE by the save gate (save_and_audit) or per-key by the
+    audit's final-schema gate + promotion contract, losing the window's paid agent calls.
+    """
+    import headless_worker as hw
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import validate_final_card_schema as vfs
+    senses = [{'tag': '1', 'german': 'Feuer', 'russian': 'огонь'}]
+    owners = [('agni', 'm.')]
+    # Python twin: the construction helper itself must emit a schema-complete card.
+    card = hw.stitched_card('agni', 'agní', senses, owners)
+    try:
+        vfs.validate_card(card)
+    except ValueError as exc:
+        fail('Python stitched card is schema-incomplete: %s' % exc)
+    if card['iast'] != 'agní' or card['notes'] != '':
+        fail('stitched card iast/notes wrong: %r/%r' % (card['iast'], card['notes']))
+    if hw.stitched_card('k', None, senses, owners)['iast'] != 'k':
+        fail('a missing portrait iast must fall back to the key, not None')
+    # JS twin (static wiring): the template's stitched construction carries the same two
+    # fields, fed from the interpolated IASTS map (the JS cannot import Python).
+    src_text = open(os.path.join(HERE, 'gen_opt_harness2.py'), encoding='utf-8').read()
+    if 'const IASTS = %(iasts)s' not in src_text:
+        fail('JS template does not interpolate the IASTS map')
+    if "const stitched = { key1: k, iast: IASTS[k] || k, notes: '', records:" not in src_text:
+        fail('JS stitched construction does not carry schema-required iast/notes')
+
+
+def test_h1339_b03_tm_cards_schema_complete():
+    """H1339 B03 (P0): a TM-served whole card must be schema-complete, at BUILD and at SERVE.
+
+    The defect: `reconstruct_cards` emitted `{key1, iast, records:[{h, senses}]}` -- no
+    card.notes, no record.grammar, and sense-level optional fields present with None values
+    (all of which `validate_final_card_schema` refuses) -- so ONE TM hit poisoned the whole
+    window at the save gate. The serve-time guard `tm_card_sane` accepted such cards.
+    """
+    import tempfile
+    import translation_memory as tm
+    import gen_opt_harness2 as gh
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import validate_final_card_schema as vfs
+    prov = {'input_raw_sha256': 'a' * 64, 'model': 'sonnet', 'model_version': 'claude-sonnet-5'}
+    rows = [
+        {'key1': 'x', 'subcard': 'x~~h0_00_pwg00', 'iast': 'xā', 'h': 'x', 'grammar': 'm.',
+         'sense_tag': '1', 'ru': 'смысл', 'de': 'Sinn {T1}', 'equivalence_type': 'equivalent',
+         'source_type': None, 'stratum': None, 'differentia': None,
+         'review_status': 'ai_translated', 'provenance': prov},
+        {'key1': 'x', 'subcard': 'x~~h0_00_pwg00', 'iast': 'xā', 'h': 'x', 'grammar': 'm.',
+         'sense_tag': '2', 'ru': 'иной', 'de': 'ander', 'equivalence_type': None,
+         'source_type': None, 'stratum': None, 'differentia': None,
+         'review_status': 'ai_translated', 'provenance': prov},
+    ]
+    d = tempfile.mkdtemp()
+    store = os.path.join(d, 'store.jsonl')
+    with open(store, 'w', encoding='utf-8') as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    entries, skipped = tm.reconstruct_cards(store, 'ru')
+    if len(entries) != 1:
+        fail('expected 1 reconstructed TM card, got %d (skipped: %r)' % (len(entries), skipped))
+    card = next(iter(entries.values()))['card']
+    try:
+        vfs.validate_card(card)
+    except ValueError as exc:
+        fail('reconstructed TM card is schema-incomplete: %s' % exc)
+    # Serve-time guard: a legacy sidecar card (built pre-fix) must be REFUSED, not served.
+    legacy = {'key1': 'x', 'iast': 'xā', 'records': [
+        {'h': 'x', 'senses': [{'tag': '1', 'german': 'Sinn {T1}', 'russian': 'смысл'},
+                              {'tag': '2', 'german': 'ander', 'russian': 'иной'}]}]}
+    raw = 'Sinn {T1} ander'
+    ok, why = gh.tm_card_sane(legacy, 'ru', 'russian', raw)
+    if ok:
+        fail('tm_card_sane served a schema-incomplete legacy TM card')
+    ok, why = gh.tm_card_sane(card, 'ru', 'russian', raw)
+    if not ok:
+        fail('tm_card_sane refused a schema-complete reconstructed card: %s' % why)
+
+
+def test_h1339_b04_b09_worktree_safe_resolution():
+    """H1339 B04/B09: TM sidecars and the coverage gate resolve worktree-safely.
+
+    B04: the four TM sidecar resolvers defaulted to THIS checkout's src/pilot -- gitignored
+    files absent in every fresh worktree, so the sanctioned worktree workflow silently got
+    0 TM hits. B09: ru_coverage read the worktree-local store, so the anti-silent-partial
+    gate measured an EMPTY store. Both now route through store_path's canonical resolvers.
+    """
+    import translation_memory as tm
+    import ru_coverage as rc
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    from store_path import canonical_sidecar, canonical_store
+    here = os.path.dirname(os.path.abspath(tm.__file__))
+    for got, name in ((tm.tm_path('ru'), 'translation_memory.ru.json'),
+                      (tm.suggest_tm_path('ru'), 'translation_memory.suggest.ru.jsonl'),
+                      (tm.denylist_path(), 'translation_memory.denylist.jsonl'),
+                      (tm.frag_tm_path('ru'), 'translation_memory.frag.ru.jsonl')):
+        want = canonical_sidecar(os.path.join(here, name))
+        if got != want:
+            fail('%s resolves to %r, not the canonical sidecar %r' % (name, got, want))
+    explicit = os.path.join('explicit', 'x.json')
+    if tm.tm_path('ru', explicit) != explicit:
+        fail('an explicit tm path must always win over canonical resolution')
+    want_store = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
+    if os.path.normpath(rc.RU_STORE) != os.path.normpath(want_store):
+        fail('ru_coverage.RU_STORE is not the canonical store: %r' % rc.RU_STORE)
+    want_repo = os.path.dirname(os.path.dirname(os.path.abspath(rc.RU_STORE)))
+    if os.path.normpath(rc.REPO) != os.path.normpath(want_repo):
+        fail("ru_coverage.REPO must be the RESOLVED store's checkout (denominators beside "
+             'the numerator), got %r' % rc.REPO)
+
+
+def test_h1339_b10_b19_audit_chain_routing():
+    """H1339 B10 + B19: the factory audit chain routes its artifacts correctly.
+
+    B10: save_and_audit's audit invocation must pass --write-requeue, or the requeue
+    singletons silently describe the PREVIOUS window. B19: stage2_pregate/audit_translation
+    resolved merged output by a verbatim join while the collector writes safe_name(stem) --
+    safe_name is not idempotent ('k_ala' -> 'k~005fala'), so every already-safe nominal stem
+    was hard-flagged NO-OUTPUT: a translated card requeued at full paid cost.
+    """
+    import tempfile
+    if SRC not in sys.path:
+        sys.path.insert(0, SRC)
+    import audit_translation as at
+    from safe_filename import safe_name
+    # B19 behavioral: the double-encoded file is found; the verbatim file is found; absent -> None.
+    d = tempfile.mkdtemp()
+    stem = 'k_ala'
+    assert safe_name(stem) != stem, 'fixture stem must be non-idempotent under safe_name'
+    with open(os.path.join(d, safe_name(stem) + '.merged.md'), 'w', encoding='utf-8') as f:
+        f.write('перевод')
+    got = at.merged_output_path(stem, out_dir=d)
+    if not got or not got.endswith(safe_name(stem) + '.merged.md'):
+        fail('dual lookup missed the collector-written double-encoded output: %r' % got)
+    with open(os.path.join(d, 'mitra.merged.md'), 'w', encoding='utf-8') as f:
+        f.write('x')
+    if not at.merged_output_path('mitra', out_dir=d):
+        fail('dual lookup must still find the verbatim form')
+    if at.merged_output_path('absent', out_dir=d) is not None:
+        fail('a genuinely missing output must resolve to None')
+    # B19 wiring: both defect sites route through the shared resolver.
+    for fname in ('audit_translation.py', 'stage2_pregate.py'):
+        text = open(os.path.join(SRC, fname), encoding='utf-8').read()
+        if 'merged_output_path(' not in text:
+            fail('%s does not use the shared dual-lookup resolver' % fname)
+    # B10 wiring: the factory save path refreshes the requeue singletons.
+    sa = open(os.path.join(os.path.dirname(SRC), 'save_and_audit.py'), encoding='utf-8').read()
+    if '"--write-requeue"' not in sa and "'--write-requeue'" not in sa:
+        fail('save_and_audit audit invocation lacks --write-requeue (B10)')
+
+
+def test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal():
+    """H1339 B11 + B12: the TM denylist gets a supersede lifecycle, and a crashed audit's
+    blast-radius requeue list is refused, never consumed mechanically.
+
+    B12: the denylist was append-forever and keyed on the INPUT address, so one defect
+    requeue disabled TM reuse of that card permanently even after a passing replacement
+    was promoted. B11: an unparseable child auditor requeues EVERY window key (fail-loud
+    artifact); requeue_from_audit consumed that list mechanically, denylisting the window.
+    """
+    import tempfile
+    import translation_memory as tm
+    import requeue_from_audit as rfa
+    import promote_final_cards as pfc
+    d = tempfile.mkdtemp()
+    dl = os.path.join(d, 'denylist.jsonl')
+    from window_common import append_jsonl_line
+    row = {'schema': 'pwg.translation_memory.denylist.v1', 'blocked_at': 'T'}
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:aaa'))
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:bbb'))
+    append_jsonl_line(dl, dict(row, kind='frag', fsha='f1'))
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:aaa', 'ru:bbb'} or denied['frags'] != {'f1'}:
+        fail('denylist seed did not load: %r' % denied)
+    # An unblock clears ONLY the exact match; a later re-denial re-blocks it.
+    tm.append_unblock(['ru:aaa'], ['f1'], reason='replaced_by_promotion', path=dl)
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:bbb'} or denied['frags'] != set():
+        fail('unblock did not clear exactly the matching denials: %r' % denied)
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:aaa'))
+    if 'ru:aaa' not in tm.load_denylist(dl)['addresses']:
+        fail('a re-denial after an unblock must re-block (append order is chronology)')
+    # Promote-side clearing: only LANDED subcards' currently-denied state is cleared.
+    append_jsonl_line(dl, dict(row, kind='frag', fsha='f2'))
+    best = {
+        'x~~a': {'meta': {'input_hashes': {'x~~a': {'raw_sha256': 'aaa'}}},
+                 'card': {'frag_prov': [{'fsha': 'f2'}]}},
+        'y~~a': {'meta': {'input_hashes': {'y~~a': {'raw_sha256': 'bbb'}}}, 'card': {}},
+        'z~~a': {'meta': {'input_hashes': {'z~~a': {'raw_sha256': 'zzz'}}}, 'card': {}},
+    }
+    addrs, frags = pfc.clear_denials_for_promotion(best, blocked_subs=['y~~a'], denylist=dl)
+    if addrs != ['ru:aaa'] or frags != ['f2']:
+        fail('promotion cleared the wrong denial set: %r %r' % (addrs, frags))
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:bbb'} or denied['frags'] != set():
+        fail('post-promotion denylist wrong (blocked subcard must stay denied): %r' % denied)
+    # B11: a crashed audit report beside the requeue files refuses the mechanical consume.
+    crash_dir = os.path.join(d, 'crash')
+    os.makedirs(crash_dir)
+    rq = os.path.join(crash_dir, 'requeue.keys.txt')
+    with open(rq, 'w', encoding='utf-8') as f:
+        f.write('k1\nk2\n')
+    with open(os.path.join(crash_dir, 'audit_window.report.json'), 'w', encoding='utf-8') as f:
+        json.dump({'crashed': ['sense_dupes-unparseable-verdict'], 'requeue': ['k1', 'k2']}, f)
+    try:
+        rfa.refuse_crashed_audit(rq, None)
+        fail('a crashed audit requeue list was not refused')
+    except SystemExit as e:
+        if 'CRASHED' not in str(e):
+            fail('crash refusal message wrong: %s' % e)
+    with open(os.path.join(crash_dir, 'audit_window.report.json'), 'w', encoding='utf-8') as f:
+        json.dump({'crashed': [], 'requeue': ['k1']}, f)
+    rfa.refuse_crashed_audit(rq, None)          # clean report -> no refusal
+
+
+def test_h1339_b13_b15_telemetry_and_siglum_precision():
+    """H1339 B13 + B15: the siglum trigger fires only on citation-shaped Russian, and an
+    outcome telemetry row can never be appended all-null.
+
+    B13: TRANSLATED_SOURCE_SIGLUM's open `ману\\w*` fired HIGH_CONFIDENCE on legitimate
+    prose («эпитет Ману», «манускрипт») -- unclearable requeue churn. B15: probe_log
+    cmd_outcome appended rows with every structured field null, corrupting scripted rate
+    math over the log.
+    """
+    import tempfile
+    from types import SimpleNamespace
+    import prompt_rule_audit as pra
+    import probe_log as pl
+    R = pra.TRANSLATED_SOURCE_SIGLUM
+    for prose in ('эпитет Ману', 'в манускрипте написано', 'манускрипт 4'):
+        if R.search(prose):
+            fail('siglum trigger fired on legitimate prose: %r' % prose)
+    for cite in ('Ману 4,126', 'Ригведа 9,67,30', 'Махабхарата 1,1816'):
+        if not R.search(cite):
+            fail('siglum trigger missed a genuinely translated citation: %r' % cite)
+    d = tempfile.mkdtemp()
+    old_jsonl = pl.JSONL
+    try:
+        pl.JSONL = os.path.join(d, 'probe.jsonl')
+        with open(pl.JSONL, 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'run_id': 'r1', 'kind': 'launch'}) + '\n')
+
+        def ns(**kw):
+            base = dict(run_id='r1', cards=None, clean=None, agents=None, tokens=None,
+                        kill_timeouts=None, conn_errors=None, tripped=None, note='')
+            base.update(kw)
+            return SimpleNamespace(**base)
+        try:
+            pl.cmd_outcome(ns(note='ran fine'))
+            fail('an all-null outcome row was appended')
+        except SystemExit as e:
+            if 'REFUSED' not in str(e):
+                fail('all-null outcome refusal message wrong: %s' % e)
+        pl.cmd_outcome(ns(note='ok=11 cards=20 tokens=123456'))
+        out = [json.loads(ln) for ln in open(pl.JSONL, encoding='utf-8')][-1]['outcome']
+        if (out['cards'], out['audit_clean'], out['subagent_tokens']) != (20, 11, 123456):
+            fail('note-kv recovery did not populate the structured fields: %r' % out)
+    finally:
+        pl.JSONL = old_jsonl
+
+
 def test_every_stitch_emits_record_required():
     """C-02: the stitch must emit `h`/`grammar`, and must not collapse distinct homonyms.
 
@@ -6243,6 +6583,13 @@ def test_h1283_a6_prep_slice_flattens_batches():
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
+        test_h1339_b21_promoted_pairs_cover_store_write_set,
+        test_h1339_b02_stitched_card_schema_complete,
+        test_h1339_b03_tm_cards_schema_complete,
+        test_h1339_b04_b09_worktree_safe_resolution,
+        test_h1339_b10_b19_audit_chain_routing,
+        test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal,
+        test_h1339_b13_b15_telemetry_and_siglum_precision,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
         test_validator_has_a_live_caller,

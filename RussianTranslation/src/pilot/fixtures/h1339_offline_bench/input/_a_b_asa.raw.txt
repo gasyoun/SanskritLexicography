@@ -1,0 +1,25 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ABAsa#}¦ (wie eben) <lex>m.</lex> {%Glanz, Licht, Farbe, Aussehen%}: {#(gadAM) BAskarABAsAm#} <ls>R. 6,77,17</ls>. {#naBaSca ruDirABAsam#} <ls n="R.">3,29,9</ls>. {#jAmbavABAsO#} ({#ozWO#}) <ls>SUŚR. 1,114,19</ls>. {#sarvendriyaguRABAsaM sarvendriyavivarjitam#} <ls>ŚVETĀŚV. UP. 3,17</ls> = <ls>BHAG. 13,14</ls>. {#cidABAsa#} <ls>BĀLAB. 33</ls>. <ls n="BĀLAB.">37</ls>. {#satyagajABAsa#} {%das Aussehen eines wirklichen Elephanten habend%} <ls>KATHĀS. 12,16</ls>. {%der blosse Schein, das blosse Abbild einer Sache, trügerische Erscheinung%}: {#hetvABAsa#} {%Scheingrund%} <ls>Z. d. d. m. G. 7,287</ls>. <ls>BHĀṢĀP. 70</ls>. <ls>MADHUS.</ls>_in_<ls>Ind. St. 1,18,4 v. u.</ls> {#BAvatadABAsAdayaH#} <ls>SĀH. D. 7,1</ls>. {#rasABAsaH#} <ls n="SĀH. D. 7,">13</ls>. {#yuktivAkyatadABAsasamASrayAH#} <ls>ŚAṂK.</ls>_in_<ls>WIND. Sancara 94</ls>. <ls>VEDĀNTAS.</ls>_in_<ls>BENF. Chr. 211,16</ls>. <ls n="BENF. Chr. 211,">17</ls>. <ls n="BENF. Chr.">215,19</ls>. <ls n="BENF. Chr.">219,11</ls>.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ABAsa#}¦ {%das Aussehen%}: {#SAliSUkaniBABAsa#} <ls>R. 7,35,21</ls>. {%das Erscheinen, zum-Vorschein-Kommen%} (= {#sfzwi#} <ab>Schol.</ab>; <ab>Gegens.</ab> {#niroDa#}) <ls>BHĀG. P. 2,10,7</ls>. {%blosser Schein%} <ls n="BHĀG. P.">7,12,10</ls>. <ls n="BHĀG. P. 7,">15,12</ls>. <ls>VARĀH. BṚH. S. 75,1</ls>. {#uttarABAsa#} {%Scheinantwort, eine ungenügende, unklare Antwort auf eine gerichtliche Klage%} <ls>VĪR. 25,b,15</ls>. <ls>MIT. II, 4,b,11</ls>. <ls>VYAVAHĀRAT. 18,12</ls> ({#uttarABAza#} <ab>gedr.</ab>). {#jYAnyABAsa#} <ls>KATHĀS. 121,176</ls>. {#ABAsatA#} <ls>SARVADARŚANAS. 18,9</ls>. <ls>SĀH. D. 121</ls>. <ls n="SĀH. D.">14</ls>. {#ABAsatva#} <ls n="SĀH. D.">270</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ABAsa#}¦ <lex>m.</lex> (<ab>adj. Comp.</ab> <lex>f.</lex> {#A#})
+<div n="1">— 1〉 {%Glanz, Licht%} <ls n="Chr.">282,11</ls>. {%Farbe, Aussehen%}.
+<div n="1">— 2〉 {%blosser Schein, Trugbild%} <ls n="Chr.">272,30</ls>. <ls n="Chr.">273,10</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ABAsa#}¦ I. = {#hetvABAsa#} <ls>ANIRUDDHA zu SĀṂKHYAS. 1,101</ls>.<info n="sup_7"/>
+
+=== LAYER: SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation) ===
+
+{%ābhāsa%}¦ = {%hetvābhāsa%}, Aniruddha zu <ls>Sāṃkhyas. 1,101.</ls> {part=,seq=7201,type=,n=2}
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#ABAsa#}¦ I. = {#hetvABAsa#} <ls>ANIRUDDHA</ls> zu <ls>SĀṂKHYAS. 1,101</ls>.

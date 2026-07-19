@@ -1,0 +1,124 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADmAna",
+  "key2": "ADmAna",
+  "h": "",
+  "iast": "ādhmāna",
+  "pos": [
+   "n."
+  ],
+  "diasystem": [
+   "Classical"
+  ],
+  "labels": [
+   "compare"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (von mit ) n",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "n."
+    ],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADmAna",
+     "DmA",
+     "A"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Aufblasen, Aufblähen, Sichaufblähen"
+    ],
+    "gloss_de": "1〉 das Aufblasen, Aufblähen, Sichaufblähen SUŚR. 1,97,5",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "SUŚR"
+    ],
+    "citations_resolved": {
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [
+     "mehrerer Krankheiten mit Blähungszuständen"
+    ],
+    "gloss_de": "2〉 Bezeichnung mehrerer Krankheiten mit Blähungszuständen SUŚR. 2,44,5 . 194,5 . 200,12 . 202,5 . 1,257,14 . 50,7 . 198,4 . 277,3 . — Vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "SUŚR"
+    ],
+    "citations_resolved": {
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADmAnamiti jAnIyAdGoraM vAtaniroDajam",
+     "pratyADmAna"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADmAna",
+  "key2": "ADmAna",
+  "h": "",
+  "iast": "ādhmāna",
+  "pos": [],
+  "diasystem": [],
+  "labels": [
+   "compare"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADmAna",
+     "udarADmAna"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

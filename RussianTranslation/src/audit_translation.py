@@ -25,6 +25,35 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 IN = os.path.join(HERE, 'pilot', 'input')
 OUT = os.path.join(HERE, 'pilot', 'output')
 
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+from safe_filename import safe_name  # noqa: E402
+
+
+def _exact_exists(directory, name):
+    """Case-exact existence (Windows os.path.exists is case-insensitive)."""
+    try:
+        return name in set(os.listdir(directory))
+    except OSError:
+        return False
+
+
+def merged_output_path(stem, out_dir=None):
+    """B19 (H1339): resolve a wf key's merged output with the DUAL lookup the rest of the
+    pipeline already uses (audit_window.quarantine / window_reports / run_real_test).
+
+    The collector writes non-subcard keys under `safe_name(k)` -- and safe_name is NOT
+    idempotent ('k_ala' -> 'k~005fala') -- while production nominal wf keys are ALREADY
+    safe stems, so a single verbatim join missed the double-encoded file and hard-flagged
+    a fully translated card NO-OUTPUT (false requeue, wasted paid re-translation).
+    Returns the resolved path, or None when neither form exists."""
+    out_dir = out_dir or OUT
+    for name in (safe_name(stem) + '.merged.md', stem + '.merged.md'):
+        if _exact_exists(out_dir, name):
+            return os.path.join(out_dir, name)
+    return None
+
 LS = re.compile(r'<ls\b')
 SAN = re.compile(r'\{#.*?#\}')
 GER = re.compile(r'\{%.*?%\}')
@@ -38,10 +67,11 @@ def body(t):
 
 
 def audit_unit(stem):
-    rawp, outp = os.path.join(IN, stem + '.raw.txt'), os.path.join(OUT, stem + '.merged.md')
+    rawp = os.path.join(IN, stem + '.raw.txt')
+    outp = merged_output_path(stem)          # B19: dual lookup, not a verbatim join
     if not os.path.exists(rawp):
         return stem, None, ['NO-RAW']
-    if not os.path.exists(outp):
+    if outp is None:
         return stem, None, ['NO-OUTPUT']
     rb = body(open(rawp, encoding='utf-8').read())
     out = open(outp, encoding='utf-8').read()

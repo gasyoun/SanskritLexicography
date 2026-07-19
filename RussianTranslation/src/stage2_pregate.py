@@ -247,8 +247,11 @@ def cmd_wf(args):
     rows = []
     for stem in stems:
         rawp = os.path.join(at.IN, stem + '.raw.txt')
-        outp = os.path.join(at.OUT, stem + '.merged.md')
-        if not os.path.exists(outp):
+        # B19 (H1339): dual lookup (safe_name(stem) first, verbatim second) -- the collector
+        # double-encodes already-safe nominal stems ('k_ala' -> 'k~005fala.merged.md'), so
+        # the verbatim join hard-flagged fully translated cards NO-OUTPUT (false requeue).
+        outp = at.merged_output_path(stem)
+        if outp is None:
             flagged.append(stem)                      # untranslated / missing output
             rows.append((stem, 'FAIL', ['NO-OUTPUT']))
             continue

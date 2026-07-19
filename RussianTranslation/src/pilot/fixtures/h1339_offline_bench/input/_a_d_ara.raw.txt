@@ -1,0 +1,32 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ADAra/#}¦ (von {#Dar#} mit {#A#}) <lex>m.</lex> <ls>P. 3,3,121, <is n="Vārttika">Vārtt.</is></ls>
+<div n="1"> 1〉 {%Stütze, Stützpunkt, Unterlage%} (auch bildlich) <ls>NIR. 1,13</ls>. <ls>MBH. 3,10053</ls>. <ls>SUŚR. 2,348,2</ls>. {#valaBI#} ({%Dachstuhl%}) {#CadirADAraH#} <ls>H. 1011</ls>. {#plavato hi mamADAraM na karizyati medinI#} <ls>R. 5,3,77</ls>. {#gacCa tvaM purARaM praBumavyayam . ADAraM sarvaBUtAnAm#} <ls n="R. 5,">89,39</ls>. <ls>HIT. I, 195</ls>. {#ADAraBUtA jagatastvam#} <ls>DEV. 11,3</ls>. <ls>ŚĀNTIŚ. 2,6</ls>. <lex>n.</lex> (!) <ls>KAIV. UP.</ls>_in_<ls>Ind. St. 2,12,9</ls>.
+<div n="1">— 2〉 {%Rückhalt%} (?): {#na kilbi^za\matra\ nADA\ro 'sti^#} <ls>AV. 12,3,48</ls>.
+<div n="1">— 3〉 {%Behälter, Behältniss%}: {#vartyADArasnehayogAdyaTA dIpasya saMsTitiH#} <ls>YĀJÑ. 3,165</ls>. {#tejasaScandra ivAdityasya sa (AmASayaH) caturviDasyAhArasyADAraH#} <ls>SUŚR. 1,78,18</ls>. {#apAmivADAramanuttaraMgam#} <ls>KUMĀRAS. 3,48</ls>. {#tizWantyApa#} [Page1-0638] {#ivADAre#} <ls>PAÑCAT. I, 77</ls>. {#carAcarARAM BUtAnAM kukzirADAratAM gataH#} <ls>KUMĀRAS. 6,67</ls>. {#jalADAra#} <ls>H. 1096</ls>. <ls>YĀJÑ. 3,144</ls>. {#toyADAra#} <ls>ŚĀK. 14</ls>. {#prasfte tu dravADAre#} <ls>H. 598</ls>. {#jIvAjIvADArakzetraM lokaH#} <ls n="H.">1365</ls>. {#kaliNgaH puruzo yuDyati . atra puruzakaliNgayorADAryADArasaMbanDaH#} <ls>SĀH. D. 13,8</ls>.
+<div n="1">— 4〉 {%Deich, Damm%} <ls>AK. 1,2,3,28</ls>. <ls>H. an. 3,521</ls>. <ls>MED. r. 114</ls>. {#ADArabanDa#} <ls>RAGH. 5,6</ls>.
+<div n="1">— 5〉 = {#AlabAla#} <ls>H. an. 3,522</ls>. <ls>MED.</ls> Aus der Verbindung zweier geschiedener, aber auf einander folgender Artikel im <ls>AK.</ls> entstanden.
+<div n="1">— 6〉 {#ADAro 'DikaraRam#} {%der Behälter%} (einer Handlung heisst) {#aDi˚#} ({%die Beziehung des Locativs%}) <ls>P. 1,4,45</ls>. Auf dieser Stelle beruht die Gleichsetzung von {#ADAra#} mit {#aDikaraRa#} <ls>H. an.</ls> <ls>MED.</ls> {#OpaSleziko vEzayiko 'BivyApakaScetyADArastriDA . kawa Aste . sTAlyAM pacati . mokza icCAsti . sarvasminnAtmAsti .#} <ls>SIDDH. K. 40,b</ls>. {#sAmIpyASlezavizayErvyAptyADAraScaturviDaH#} <ls>VOP. 5,30</ls>. {#jasADAre kArye#} {%in der auf die Endung des <ab>nom.</ab> <ab>pl.</ab> bezüglichen Operation%} <ls>P. 1,1,32</ls>, <ab>Sch.</ab> Hier ist {#ADAra#} schon ganz gleichbedeutend mit {#aDikaraRa#} {%Beziehung%}. Auf dieselbe Weise ist das Wort vielleicht in {#prARADAra#} <ls>H. an. 4,161</ls> aufzufassen.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADAra#}¦ 1〉 <ls>WEBER, RĀMAT. UP. 278</ls>. <ls n="WEBER, RĀMAT. UP.">321</ls>. <ls n="WEBER, RĀMAT. UP.">323</ls>. {#AtmAnamaKilADAram#} <ls>VEDĀNTAS. (Allah.) No. 2</ls>. {%Unterlage%} ({%worauf eine Erscheinung%} oder {%Thätigkeit beruht%}) <ls>KAP. 2,42</ls>. {%Boden —, Gebiet der Wirksamkeit%} <ls>TATTVAS. 45</ls>. {%Subject, von welchem ein Prädicat ausgesagt wird%} ({#ADeya#}), {%Träger einer Eigenschaft%} <ab>u. s. w.</ab> (wie {#ASraya#} und {#ASrayin#}) <ls>PRATĀPAR. 90,a,7</ls>. <ls n="PRATĀPAR. 90,">b,7</ls>; <ab>vgl.</ab> die letzte Stelle <ab>u.</ab> 3〉.
+<div n="1">— 3〉 <ls>HALĀY. 5,12</ls>.
+<div n="1">— 5〉 <ab>vgl.</ab> {#ADArarUpA#}.
+<div n="1">— 6〉 hierher kann <ls>ŚĀNTIŚ. 2,6</ls> (<ls>Spr. 2351</ls>), das unter 1〉 steht, gezogen werden: {#kimADAraH premA kimaDikaraRAH santu ca SucaH#} {%worauf soll die Liebe gerichtet und die Trauer bezogen werden?%}
+<div n="1">— 7〉 {%Teich%} <ls>HALĀY. 3,54</ls>. <ab>N. pr.</ab> eines {%Teiches%} <ls>WILSON, Sel. Works 2,23</ls>.
+<div n="1">— 8〉 <ab>N. pr.</ab> des Verfassers der <is>Ādhārakārikā</is> <ls>Verz. d. Oxf. H. 238,b, N. 1</ls>. <ls n="Verz. d. Oxf. H.">353,b,7</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADAra/#}¦ <lex>m.</lex>
+<div n="1">— 1〉 {%Stütze, Halt, Unterlage, Grundlage%} (<ab>eig.</ab> und <ab>übertr.</ab>).
+<div n="1">— 2〉 {%Behälter, Behältniss%}.
+<div n="1">— 3〉 *{%Wasserbehälter, Teich%}.
+<div n="1">— 4〉 *{%eine Vertiefung um die Wurzel eines Baumes, in die das für den Baum bestimmte Wasser gegossen wird%}.
+<div n="1">— 5〉 {%Deich, Damm%}.
+<div n="1">— 6〉 {%Boden —, Gebiet einer Wirksamkeit oder Thätigkeit%} <ls>P. 1,4,45</ls>. Am Ende eines <ab>adj. Comp.</ab> so <ab>v. a.</ab> {%sich beziehend auf, betreffend%}.
+<div n="1">— 7〉 {%Subject, Träger einer Eigenschaft%}.
+<div n="1">— 8〉 <ab>N. pr.</ab>
+<div n="2">— a〉 eines Teiches.
+<div n="2">— b〉 eines Autors.

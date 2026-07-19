@@ -107,7 +107,14 @@ def stale_check(root, workflow_meta, workflow_keys, execution_manifest=None):
         if execution_manifest.get('_load_error'):
             check['errors'].append('execution manifest could not be loaded: %s' %
                                    execution_manifest['_load_error'])
-        elif execution_manifest.get('schema') != 'pwg.headless_execution_manifest.v1':
+        elif execution_manifest.get('schema') not in (
+                'pwg.headless_execution_manifest.v1',
+                'pwg.headless_execution_manifest.v2'):
+            # B23 (H1339, found by the offline bench's first end-to-end run): production
+            # profile-bound prepare emits manifest v2, but this check accepted ONLY v1 --
+            # so every v2 lease audited as stale_artifact and the whole headless factory
+            # chain could never pass its own audit. v2 is a superset at the meta level
+            # (adds top-level execution/key_provenance, which the import gate validates).
             check['errors'].append('unsupported execution manifest schema: %r' %
                                    execution_manifest.get('schema'))
         elif not isinstance(execution_manifest.get('meta'), dict):

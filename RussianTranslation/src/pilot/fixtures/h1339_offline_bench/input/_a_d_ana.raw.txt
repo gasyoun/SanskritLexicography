@@ -1,0 +1,58 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ADA/na#}¦ (von {#DA, daDAti#} mit {#A#}) <lex>n.</lex>
+<div n="1"> 1〉 {%das Anlegen, Zulegen, Legen%} <ls>ŚAT. BR. 2,1,4,29</ls>. {#tulADAna#} <ls n="ŚAT. BR.">11,2,7,33</ls>. {#samidADAna#} <ls>KĀTY. ŚR. 5,5,35</ls>. <ls n="KĀTY. ŚR.">6,10,9</ls>. <ls n="KĀTY. ŚR.">4,10,15</ls>. <ls>M. 2,176</ls>. {#pUtidArvADAna#} <ls>KĀTY. ŚR. 4,11,1</ls>. <ls n="KĀTY. ŚR.">8,6,30</ls>. <ls n="KĀTY. ŚR.">10,8,6</ls>. <ab>Vgl.</ab> {#garBADAna#}.
+<div n="1">— 2〉 = {#agnyADAna#} (<ab>s. d.</ab>): {#BAryAyE pUrvamAriRyE dattvAgnInantyakarmaRi . punardArakriyAM punarADAnameva ca ..#} <ls>M. 5,168</ls> (<ls>KULL.</ls>: {#smArtAgnIn SrOtAgnInvA AdaDyAt#}). {#raTaM hareta cADvaryurbrahmADAne#} (<ls>RĀGHAV.</ls>: {#karmaRi#}, <ls>KULL.</ls>: {#kezAMcicCAKinAmADAne#}; gehört <ab>viell.</ab> zu 3.) {#ca vAjinam . hotA vApi haredaSvamudgAtA cApyanaH kraye ..#} <ls n="M.">8,209</ls>. {#ADAnapaSubanDezwimantrayajYatapaHkriyAH . tvatprasAdAdavApyante brahmakzatraviSAM gaREH#} (die Sonne wird angeredet) <ls>MBH. 3,184</ls>. {#tataH sa cakre BagavAnfzIRAM viDivattadA . sarvezAM punarADAnaM viDidfzwena karmaRA ..#} <ls n="MBH. 3,">8194</ls>. {#zaqADAne dakziRAmAhureke#} <ls n="MBH. 3,">10663</ls>.
+<div n="1">— 3〉 = {#garBADAna#} {%Empfängniss%} <ls>Verz. d. B. H. No. 858</ls> (<ls n="Verz. d. B. H.">III</ls>). <ls n="Verz. d. B. H. No.">862</ls> (<ls n="Verz. d. B. H.">258,17</ls>). <ls>Ind. St. 1,59,3 v. u. 2,287, N. 2</ls>. {#ketakADAnahetoH#} <ls>MEGH. 3</ls>.
+<div n="1">— 4〉 {%das Niederlegen als Pand, Verpfändung%} <ls>YĀJÑ. 2,238</ls>. {#ADAnaM vikrayaM vApi nayataH#} <ls n="YĀJÑ.">247</ls>. <ab>Vgl.</ab> <hom>1.</hom> {#ADi#}.
+<div n="1">— 5〉 {%das Beilegen, Zutheilen, Anwenden%}: {#guRo viSezADAnahetuH sidDo vastuDarmaH#} <ls>SĀH. D. 10,13</ls>. {#prajAnAM vinayADAnAt#} <ls>RAGH. 1,24</ls>. {#pratiyatno guRADAnam#} <ls>P. 1,3,32</ls>, <ab>Sch.</ab>
+<div n="1">— 6〉 {%der Ort, an welchen Etwas gelegt wird, in welchem Etwas ruht, sich befindet%} <ls>ŚAT. BR. 14,5,2,1</ls> = <ls>BṚH. ĀR. UP. 2,2,1</ls>. <ab>Vgl.</ab> {#pakvADAna, purIzADAna#}.
+<div n="1">— 7〉 {%Umfangung, Umfassung%}: {#tezA^mA\DAna\M parye^ti harya\tam#} <ls>ṚV. 10,94,8</ls>.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADAna#}¦ 1〉 {#utsannAgnerdAhArTaM mftADAnaprayogaH#} {%das Drauflegen des Todten%} <ls>Verz. d. Oxf. H. 294,b,18</ls>.
+<div n="1">— 2〉 <ls>Ind. St. 3,379</ls>.
+<div n="1">— 4〉 lies {%Pfand%} <ab>st.</ab> {%Pand%}.
+<div n="1">— 5〉 {#avaSyaM vinayADAnaM kAryamadya mayA tava#} {%das Beibringen%} <ls>MBH. 13,4633</ls>. {#AtmanIva priyADAnam#} {%das Erweisen eines Liebesdienstes%} <ls>MAHĀVĪRAC. 92,16</ls>. {#javADAnabala#} so <ab>v. a.</ab> {%Kraft mit Geschwindigkeit verbunden%} <ls>KATHĀS. 67,25</ls>.
+<div n="1">— 7〉 lies {%Zügel%} oder {%Pferdegeschirr%} <ab>überh.</ab> und füge <ls>TBR. 1,6,3,9</ls> hinzu.
+<div n="v">— <ab>Vgl.</ab> {#AvasaTyADAna, purIzADAna, BagADAna#}.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #2 — patches keyed to the main sense numbers; render in full ===
+
+{#ADAna#}¦ 1〉 {%das Hinzufügen%} <ls>VĀMANA 1,3,16</ls>.
+<div n="1">— 8〉 {%Zaum, Gebiss%}; <ab>s.</ab> {#nirADAna#} weiter unten.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADA/na#}¦ <lex>n.</lex>
+<div n="1">— 1〉 {%das Anlegen, Zulegen, Darauflegen%}.
+<div n="1">— 2〉 = {#AgnyADAna#} {%das Anlegen des heiligen Feuers%} <ls>ŚAT. BR. 2,1,4,29</ls>.
+<div n="1">— 3〉 = {#garBADAna#} {%Befruchtung, eine der Befruchtung vorangehende Ceremonie%}.
+<div n="1">— 4〉 {%das Mondhaus der Befruchtung%} <ls>AV. JYOT. 10,1. 11,2</ls>.
+<div n="1">— 5〉 {%das Hinzufügen%}.
+<div n="1">— 6〉 {%das Bewirken, Hervorbringen%} <ls>MBH. 13,96,5</ls>. <ls>MEGH. 3</ls>. <ls>RAGH. 1,24</ls>. <ls>MAHĀVĪRAC. 92,16</ls>. <ls>SĀH. D. 10,13</ls>. <ls>Chr. 235,26</ls>.
+<div n="1">— 7〉 {%Verpfändung%}.
+<div n="1">— 8〉 {%Behälter%}.
+<div n="1">— 9〉 {%Zaum, Gebiss%}.
+<div n="1">— 10〉 verwechselt mit {#ADAra#} <ls>KATHĀS. 67,25</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADAna#} <lex>n.</lex>, {#˚paYcaka#} <lex>n.</lex> und {#˚paYcakaprayoga#} <lex>m.</lex>¦ Titel von Werken <ls>OPP. Cat. 1</ls>.<info n="sup_2"/>
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADA/na#}¦ I. 2.<info n="sup_7"/>
+
+=== LAYER: SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation) ===
+
+{%Ādhāna%}¦ n., {%˚pañcaka%} n. und {%˚pañcakaprayoga%} m. Titel von Werken, <ls>Opp. Cat. 1.</ls> {part=,seq=7036,type=,n=3}
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#ADAna#} <lex>n.</lex>, {#˚paYcaka#} <lex>n.</lex> und {#˚paYcakaprayoga#} <lex>m.</lex>¦ Titel von Werken <ls>OPP. Cat. 1</ls>.
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#ADA/na#}¦ I. 2.

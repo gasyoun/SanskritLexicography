@@ -132,6 +132,54 @@ def collect_cards(paths):
     return best, conflicts, sorted(null_keys)
 
 
+def clear_denials_for_promotion(best, blocked_subs=(), lang='ru', denylist=None):
+    """B12 (H1339): a successful gate-passing promotion clears ONLY its matching temporary
+    TM denial state.
+
+    The denylist keys on the INPUT address (lang:raw_sha256) / fragment fsha, and used to be
+    append-forever -- one defect requeue disabled TM reuse of that card permanently, even
+    after the retranslation passed every gate and was promoted. For each subcard that
+    actually LANDED (never a better-attempt-refused downgrade), unblock its input address
+    and any frag_prov fragment SHAs -- but only those CURRENTLY denied, so no spurious
+    unblock rows are ever written. Returns (addresses_cleared, fshas_cleared)."""
+    pilot = os.path.join(HERE, 'pilot')
+    if pilot not in sys.path:
+        sys.path.insert(0, pilot)
+    import translation_memory as tm
+    denied = tm.load_denylist(denylist)
+    addresses, fshas = [], []
+    blocked = set(blocked_subs)
+    for subkey, entry in best.items():
+        if subkey in blocked:
+            continue
+        sha = ((entry.get('meta') or {}).get('input_hashes') or {}).get(subkey, {}).get('raw_sha256')
+        if sha:
+            address = '%s:%s' % (lang, sha)
+            if address in denied['addresses']:
+                addresses.append(address)
+        for fp in ((entry.get('card') or {}).get('frag_prov') or []):
+            fsha = fp.get('fsha')
+            if fsha and fsha in denied['frags']:
+                fshas.append(fsha)
+    if addresses or fshas:
+        tm.append_unblock(sorted(set(addresses)), sorted(set(fshas)),
+                          reason='replaced_by_promotion', path=denylist)
+    return sorted(set(addresses)), sorted(set(fshas))
+
+
+def model_tier(model_version):
+    """The tier alias for a resolved model id: 'claude-sonnet-5' -> 'sonnet'.
+
+    B20 (H1339): provenance.model was hardcoded 'sonnet' regardless of the actual
+    generating model; derive it from the recorded exact version instead. Unknown shapes
+    fall back to the legacy constant rather than fabricating a tier."""
+    if isinstance(model_version, str) and model_version.startswith('claude-'):
+        parts = model_version.split('-')
+        if len(parts) >= 2 and parts[1]:
+            return parts[1]
+    return MODEL
+
+
 def provenance(entry, subkey, model_version):
     meta = entry['meta']
     hashes = (meta.get('input_hashes') or {}).get(subkey) or {}
@@ -142,7 +190,7 @@ def provenance(entry, subkey, model_version):
     source_profile = (profiles.get(subkey) if isinstance(profiles, dict)
                       else meta.get('source_profile'))
     prov = {
-        'model': MODEL,
+        'model': model_tier(model_version),
         'model_version': model_version,
         'generator': meta.get('generator'),
         'schema_version': meta.get('schema_version'),
@@ -318,11 +366,47 @@ def validate_store_target(path, init_store=False):
             '--init-store is first-run only; store already exists: %s' % path)
 
 
+def _attempt_quality(rows):
+    """Rank one subcard's row-set for better-attempt-wins: higher tuple = better attempt.
+
+    (complete, -missing): a complete card (no partial_card marker) beats any partial;
+    among partials, fewer missing fragments/groups beat more. Ties favour the INCOMING
+    attempt (deliberate retranslation replaces same-quality content)."""
+    prov = [row.get('provenance') or {} for row in rows]
+    partial = any(p.get('partial_card') for p in prov)
+    missing = 0
+    for p in prov:
+        mf = p.get('missing_fragments')
+        n = len(mf) if isinstance(mf, list) else int(p.get('missing_groups') or 0)
+        missing = max(missing, n)
+    return (0 if partial else 1, -missing)
+
+
 def merge_store_rows(existing_rows, promoted_rows):
-    """Replace exactly the promoted subcards; retain every unrelated row."""
-    promoted_subs = {row['subcard'] for row in promoted_rows}
-    kept = [row for row in existing_rows if row.get('subcard') not in promoted_subs]
-    return kept + promoted_rows
+    """Replace the promoted subcards BETTER-ATTEMPT-WINS; retain every unrelated row.
+
+    B08 (H1339): the merge used to be an unconditional replace-by-subcard, so promoting an
+    older/regressed artifact (a partial heal over a complete card) silently downgraded
+    complete store rows. This is the store-level port of H304 rule 3 (save_and_audit
+    --merge): complete beats partial, fewer missing fragments beat more, and only a tie or
+    an improvement lets the incoming rows land. Returns (merged_rows, downgraded_subcards)
+    where downgraded_subcards lists incoming subcards REFUSED because the store already
+    holds a strictly better attempt (their existing rows are kept untouched)."""
+    incoming = {}
+    for row in promoted_rows:
+        incoming.setdefault(row['subcard'], []).append(row)
+    existing_by_sub = {}
+    for row in existing_rows:
+        existing_by_sub.setdefault(row.get('subcard'), []).append(row)
+    downgraded = sorted(
+        sub for sub, rows in incoming.items()
+        if sub in existing_by_sub
+        and _attempt_quality(rows) < _attempt_quality(existing_by_sub[sub]))
+    blocked = set(downgraded)
+    replaced_subs = set(incoming) - blocked
+    kept = [row for row in existing_rows if row.get('subcard') not in replaced_subs]
+    landed = [row for row in promoted_rows if row['subcard'] not in blocked]
+    return kept + landed, downgraded
 
 
 def tn_residue(card, rec, sense):
@@ -388,6 +472,156 @@ def rows_for(subkey, entry, review_status, model_version):
                 'reviewer': None,
                 'provenance': prov,
             }
+
+
+def collect_and_validate(paths, review_status, gen_model_version):
+    """Collect + fully validate one promotion source set -> (best, rows, per_root).
+
+    Factored out of main() so the batched multi-lease transaction (H1339 Phase 3) runs the
+    IDENTICAL per-entry validation chain: validate_promotion_entry, the B20 model-identity
+    cross-check, rows_for (with its C-01 residue refusal), and the zero-row refusal."""
+    best, conflicts, null_keys = collect_cards(paths)
+    if conflicts:
+        raise PromotionContractError('duplicate non-null workflow keys: %s'
+                                     % ', '.join(sorted(set(conflicts))[:20]))
+    rows, per_root = [], {}
+    for subkey, entry in sorted(best.items()):
+        validate_promotion_entry(subkey, entry)
+        exec_model = ((entry.get('meta') or {}).get('execution') or {}).get('model_identifier')
+        if exec_model and exec_model != gen_model_version:
+            raise PromotionContractError(
+                '%s: --gen-model-version %r does not match the manifest '
+                'execution.model_identifier %r' % (subkey, gen_model_version, exec_model))
+        n = 0
+        for row in rows_for(subkey, entry, review_status, gen_model_version):
+            rows.append(row)
+            n += 1
+        if n == 0:
+            raise PromotionContractError(
+                '%s: passed collection but yielded no promotable Russian rows' % subkey)
+        root = entry['meta'].get('root')
+        per_root.setdefault(root, {'cards': 0, 'rows': 0})
+        per_root[root]['cards'] += 1
+        per_root[root]['rows'] += n
+    return best, rows, null_keys, per_root
+
+
+def batch_promote(batch, store, review_status, gen_model_version,
+                  no_backup=False, steal_lock=False, lock_ttl_seconds=None,
+                  report_path=None):
+    """H1339 Phase 3: promote N leases' clean outputs in ONE store transaction.
+
+    Replaces the per-lease subprocess loop (N x [full store read + duplicate scan +
+    overwrite-guard re-read + full backup copy + full atomic rewrite] + interpreter
+    startups) with exactly ONE claim -> read -> merge -> guard -> backup -> write. The
+    contract, per the H1339 spec:
+
+      1. every lease is validated independently (the identical single-lease chain) and its
+         audit/provenance attribution is preserved per row (rows_for stamps per-card meta);
+      2. one exclusive backup, at most one atomic store replacement;
+      3. every lease's exact expected subcard set must LAND (a better-attempt refusal or a
+         cross-lease overlap FAILS THE BUNDLE -- promoting freshly-audited content that the
+         store already beats means something is operationally wrong; no current-row
+         regression is possible because the merge is still better-attempt-wins);
+      4. the card TM is NOT rebuilt here -- the caller (coordinator.promote_ready) rebuilds
+         it once after the transaction, exactly as before;
+      5. any failure before the atomic replace leaves the store byte-identical;
+      6. idempotent and byte-stable: a rerun with the same inputs writes the same rows.
+
+    `batch` is a list of {'lease_id', 'glob' (ABSOLUTE or repo-relative), 'expected_subcards'}.
+    Returns the per-lease report dict (also written to `report_path` when given)."""
+    validate_store_target(store)
+    lease_best, lease_rows = {}, {}
+    all_rows, seen_subs = [], {}
+    for item in batch:
+        lease_id = item['lease_id']
+        paths = sorted(glob.glob(item['glob'] if os.path.isabs(item['glob'])
+                                 else os.path.join(ROOT, item['glob'])))
+        if not paths:
+            raise PromotionContractError('%s: no clean output matched %r'
+                                         % (lease_id, item['glob']))
+        best, rows, _nulls, _per_root = collect_and_validate(
+            paths, review_status, gen_model_version)
+        expected = sorted(item.get('expected_subcards') or [])
+        got = sorted(best)
+        if expected and got != expected:
+            raise PromotionContractError(
+                '%s: clean output subcards %s do not match the lease expectation %s'
+                % (lease_id, got, expected))
+        for sub in best:
+            if sub in seen_subs:
+                raise PromotionContractError(
+                    'subcard %s appears in BOTH lease %s and lease %s -- divergent bundle'
+                    % (sub, seen_subs[sub], lease_id))
+            seen_subs[sub] = lease_id
+        lease_best[lease_id] = best
+        lease_rows[lease_id] = rows
+        all_rows.extend(rows)
+
+    ttl_kwargs = {'ttl_seconds': lock_ttl_seconds} if lock_ttl_seconds else {}
+    with PromoteClaim(store, steal=steal_lock, **ttl_kwargs):
+        existing_rows = []
+        if os.path.exists(store):
+            with open(store, encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        existing_rows.append(json.loads(line))
+        rows_to_write, downgraded = merge_store_rows(existing_rows, all_rows)
+        if downgraded:
+            raise PromotionContractError(
+                'bundle failed, store unchanged: the store already holds a strictly '
+                'better attempt for %d subcard(s) (%s) -- a freshly audited lease should '
+                'never lose better-attempt-wins; inspect before promoting'
+                % (len(downgraded), ', '.join(downgraded[:10])))
+        landed_subs = {r['subcard'] for r in rows_to_write}
+        for lease_id, best in lease_best.items():
+            missing = sorted(set(best) - landed_subs)
+            if missing:
+                raise PromotionContractError(
+                    '%s: expected subcard(s) did not land: %s' % (lease_id, missing))
+        identities = [(r.get('key1'), r.get('subcard'), r.get('h'),
+                       r.get('sense_tag'), r.get('de')) for r in rows_to_write]
+        duplicates = [i for i, n in collections.Counter(identities).items() if n > 1]
+        if duplicates:
+            raise PromotionContractError(
+                'promotion would create %d duplicate sense identity/identities'
+                % len(duplicates))
+        before = len(existing_rows)
+        if before and len(rows_to_write) < before * 0.5:
+            raise PromotionContractError(
+                'would shrink store %d -> %d rows (>50%% loss)' % (before, len(rows_to_write)))
+        if os.path.exists(store) and not no_backup:
+            bak = _backup_path(store, True)
+            _fsynced_backup(store, bak)
+            print('backed up prior store -> %s' % os.path.basename(bak))
+        _atomic_write_rows(store, rows_to_write)
+
+    report = {'schema': 'pwg.batch_promotion.v1',
+              'store_rows_before': before, 'store_rows_after': len(rows_to_write),
+              'leases': {lease_id: {'subcards': len(best),
+                                    'rows': len(lease_rows[lease_id])}
+                         for lease_id, best in lease_best.items()}}
+    print('BATCH PROMOTE: %d lease(s), %d subcard(s), %d sense rows; store %d -> %d rows'
+          % (len(batch), len(seen_subs), len(all_rows), before, len(rows_to_write)))
+    for lease_id in sorted(report['leases']):
+        row = report['leases'][lease_id]
+        print('  %s: %d subcard(s), %d row(s)' % (lease_id, row['subcards'], row['rows']))
+    # B12: landed replacements clear their matching temporary TM denials (fail-open, loud).
+    try:
+        union_best = {}
+        for best in lease_best.values():
+            union_best.update(best)
+        cleared_addr, cleared_frag = clear_denials_for_promotion(union_best)
+        if cleared_addr or cleared_frag:
+            print('TM denylist: cleared %d card address(es) + %d fragment sha(s)'
+                  % (len(cleared_addr), len(cleared_frag)))
+    except Exception as exc:  # noqa: BLE001 -- deliberate fail-open, loudly
+        print('⚠ TM denylist clearing skipped (%s) -- denials stay in place' % exc)
+    if report_path:
+        with open(report_path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(report, f, ensure_ascii=False, indent=1)
+    return report
 
 
 def selftest():
@@ -547,9 +781,31 @@ def selftest():
     # Exact-subcard merge is idempotent; a second promotion replaces rather than duplicates.
     old = [{'key1': 'x', 'subcard': 'x~~a'}, {'key1': 'y', 'subcard': 'y~~a'}]
     new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new'}]
-    once = merge_store_rows(old, new)
-    twice = merge_store_rows(once, new)
-    assert once == twice and len(once) == 2
+    once, dg1 = merge_store_rows(old, new)
+    twice, dg2 = merge_store_rows(once, new)
+    assert once == twice and len(once) == 2 and dg1 == [] and dg2 == []
+    # B08 (H1339): the store merge is better-attempt-wins, the H304 rule ported to the
+    # store level. A partial incoming attempt must NOT downgrade complete existing rows;
+    # a complete incoming attempt replaces a partial; fewer missing fragments win among
+    # partials; equal quality -> incoming wins (deliberate retranslation).
+    complete_old = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'old-good', 'provenance': {}}]
+    partial_new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new-partial',
+                    'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
+    merged, downgraded = merge_store_rows(complete_old, partial_new)
+    assert merged == complete_old and downgraded == ['x~~a'], \
+        'a partial attempt silently downgraded a complete store row'
+    merged, downgraded = merge_store_rows(partial_new, complete_old)
+    assert merged == complete_old and downgraded == [], \
+        'a complete attempt must replace a partial store row'
+    worse = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p3',
+              'provenance': {'partial_card': True,
+                             'missing_fragments': ['g1:f0', 'g1:f1', 'g2:f0']}}]
+    better = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p1',
+               'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
+    merged, downgraded = merge_store_rows(worse, better)
+    assert merged == better and downgraded == [], 'fewer missing fragments must win'
+    merged, downgraded = merge_store_rows(better, worse)
+    assert merged == better and downgraded == ['x~~a'], 'more missing fragments must lose'
     # Atomic failure leaves the old store intact and removes the temporary file.
     atomic = os.path.join(d, 'atomic.jsonl')
     with open(atomic, 'w', encoding='utf-8') as f:
@@ -597,6 +853,56 @@ def selftest():
         shutil.copyfileobj = real_copyfileobj
     assert open(atomic, encoding='utf-8').read() == 'old\n'
     assert not os.path.exists(failed_backup), 'partial backup survived a failed copy'
+    # H1339 Phase 3: the batched multi-lease transaction — one claim/read/backup/write,
+    # per-lease validation + attribution, all-or-nothing, idempotent, byte-stable.
+    bd = tempfile.mkdtemp()
+    bstore = os.path.join(bd, 'store.jsonl')
+    keep_row = {'key1': 'y', 'subcard': 'y~~keep', 'h': 'y', 'sense_tag': '1',
+                'de': 'x', 'ru': 'у', 'provenance': {}}
+    with open(bstore, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(keep_row, ensure_ascii=False) + '\n')
+    k2 = 'x~~h0_zz_pw01'
+    meta2 = dict(meta, selected_keys=[k2],
+                 provenance_classes={k2: 'real'},
+                 input_hashes={k2: {'raw_sha256': '3' * 64, 'portrait_sha256': '4' * 64}})
+    lease_files = {}
+    for lease_id, key, m in (('L1', 'p_a~~h5_00_pwg00', meta), ('L2', k2, meta2)):
+        d2 = os.path.join(bd, lease_id)
+        os.makedirs(d2)
+        fp = os.path.join(d2, 'wf_output.clean.%s.json' % lease_id)
+        with open(fp, 'w', encoding='utf-8') as f:
+            json.dump({'meta': m, 'results': [{'key': key, 'card': entry['card']}]}, f)
+        lease_files[lease_id] = (fp, key)
+    batch = [{'lease_id': lid, 'glob': fp, 'expected_subcards': [key]}
+             for lid, (fp, key) in lease_files.items()]
+    rep = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+    assert rep['leases']['L1']['subcards'] == 1 and rep['leases']['L2']['subcards'] == 1
+    bytes1 = open(bstore, 'rb').read()
+    assert b'y~~keep' in bytes1, 'unrelated store row must survive the batch'
+    rep2 = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+    assert open(bstore, 'rb').read() == bytes1, 'batch rerun must be byte-stable/idempotent'
+    # all-or-nothing: a lease whose clean output diverges from its expectation fails the
+    # WHOLE bundle with the store byte-identical.
+    bad = [dict(batch[0]), dict(batch[1], expected_subcards=['not~~this'])]
+    try:
+        batch_promote(bad, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+        raise AssertionError('divergent lease expectation did not fail the bundle')
+    except PromotionContractError:
+        pass
+    assert open(bstore, 'rb').read() == bytes1, 'failed bundle must leave the store unchanged'
+    # bundle-fails when the store already holds a strictly better attempt (a freshly
+    # audited lease should never lose better-attempt-wins).
+    partial_card = dict(entry['card'], partial=True, missing_fragments=['g1:f0'])
+    fp1, key1 = lease_files['L1']
+    with open(fp1, 'w', encoding='utf-8') as f:
+        json.dump({'meta': meta, 'results': [{'key': key1, 'card': partial_card}]}, f)
+    try:
+        batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+        raise AssertionError('a partial attempt over a complete store row did not fail the bundle')
+    except PromotionContractError as exc:
+        assert 'better attempt' in str(exc)
+    assert open(bstore, 'rb').read() == bytes1, 'downgrade bundle must leave the store unchanged'
+    print('batch promotion: 2-lease transaction, idempotent+byte-stable, all-or-nothing OK')
     print('promote_final_cards selftest OK')
 
 
@@ -629,7 +935,25 @@ def main():
     ap.add_argument('--lock-ttl-seconds', type=int, default=None,
                     help='override the promotion claim staleness TTL (default: promote_lock.'
                          'DEFAULT_TTL_SECONDS = 30 min)')
+    ap.add_argument('--batch-manifest',
+                    help='H1339 Phase 3: promote N leases in ONE store transaction. Path to '
+                         'a JSON list of {lease_id, glob, expected_subcards}; implies the '
+                         'same per-entry validation as single mode, better-attempt-wins, '
+                         'one backup, one atomic replace, all-or-nothing.')
+    ap.add_argument('--report', help='write the batch per-lease report JSON here')
     args = ap.parse_args()
+    if args.batch_manifest:
+        try:
+            batch = json.load(open(args.batch_manifest, encoding='utf-8'))
+            report = batch_promote(
+                batch, args.store, args.review_status, args.gen_model_version,
+                no_backup=args.no_backup, steal_lock=args.steal_lock,
+                lock_ttl_seconds=args.lock_ttl_seconds, report_path=args.report)
+        except (PromotionContractError, UnrestoredPlaceholder) as exc:
+            sys.exit('REFUSED: %s' % exc)
+        except ClaimBusy as e:
+            sys.exit(str(e))
+        return report
     if args.merge and not explicit_glob_supplied(sys.argv[1:]):
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
@@ -658,6 +982,14 @@ def main():
             validate_promotion_entry(subkey, entry)
         except PromotionContractError as exc:
             sys.exit('REFUSED: %s' % exc)
+        # B20 (H1339): the operator-typed --gen-model-version lands verbatim in permanent
+        # store provenance; cross-check it against the manifest's sealed execution model
+        # identity so a typo'd/wrong id can never masquerade as the generating model.
+        exec_model = ((entry.get('meta') or {}).get('execution') or {}).get('model_identifier')
+        if exec_model and exec_model != args.gen_model_version:
+            sys.exit('REFUSED: %s: --gen-model-version %r does not match the manifest '
+                     'execution.model_identifier %r' % (subkey, args.gen_model_version,
+                                                        exec_model))
         n = 0
         for row in rows_for(subkey, entry, args.review_status, args.gen_model_version):
             rows.append(row)
@@ -705,6 +1037,7 @@ def main():
             # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
             # Guards against the full-overwrite wipe when only a subset of wf_output is on disk.
             kept = 0
+            downgraded = []
             if args.merge and os.path.exists(args.store):
                 promoted_subs = {r['subcard'] for r in rows}
                 touched_roots = {r['key1'] for r in rows}
@@ -715,10 +1048,19 @@ def main():
                         if not line:
                             continue
                         existing_rows.append(json.loads(line))
-                rows_to_write = merge_store_rows(existing_rows, rows)
-                kept = len(rows_to_write) - len(rows)
+                rows_to_write, downgraded = merge_store_rows(existing_rows, rows)
+                if downgraded:
+                    # B08: better-attempt-wins refused these incoming subcards -- the store
+                    # already holds a strictly better attempt (complete vs partial, or
+                    # fewer missing fragments). Loud, never silent; existing rows kept.
+                    print('\n⚠ better-attempt-wins: store keeps its BETTER existing rows for '
+                          '%d subcard(s); incoming (worse) attempt dropped: %s'
+                          % (len(downgraded), ', '.join(downgraded[:10])
+                             + (' …' if len(downgraded) > 10 else '')))
+                landed = len(rows) - sum(1 for r in rows if r['subcard'] in set(downgraded))
+                kept = len(rows_to_write) - landed
                 print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
-                      % (len(promoted_subs), sorted(touched_roots), kept))
+                      % (len(promoted_subs - set(downgraded)), sorted(touched_roots), kept))
             else:
                 rows_to_write = rows
 
@@ -760,6 +1102,20 @@ def main():
             _atomic_write_rows(args.store, rows_to_write)
             print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
                   % (args.store, len(rows_to_write), args.review_status))
+            # B12 (H1339): the landed replacements clear their matching TEMPORARY TM
+            # denials (input address + frag_prov fshas), so a once-flagged card whose
+            # retranslation just passed every gate is TM-reusable again. Fail-open with a
+            # loud note: a missed unblock only costs future cache misses -- it must never
+            # fail a promotion that already committed.
+            try:
+                cleared_addr, cleared_frag = clear_denials_for_promotion(
+                    best, blocked_subs=downgraded)
+                if cleared_addr or cleared_frag:
+                    print('TM denylist: cleared %d card address(es) + %d fragment sha(s) '
+                          'superseded by this promotion' % (len(cleared_addr), len(cleared_frag)))
+            except Exception as exc:  # noqa: BLE001 -- deliberate fail-open, loudly
+                print('⚠ TM denylist clearing skipped (%s) -- denials stay in place; '
+                      'a future promotion or manual unblock can clear them' % exc)
             print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'
                   % args.review_status)
             print('      edition until G5 human review flips review_status to approved.')

@@ -1,0 +1,157 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "AKyA",
+  "key2": "AKyA",
+  "h": "",
+  "iast": "ākhyā",
+  "pos": [
+   "f."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval",
+   "Vedic"
+  ],
+  "labels": [
+   "adjectival compound"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Benennung, Name"
+    ],
+    "gloss_de": "¦ (von mit ) f. Benennung, Name AK. 1,1,5,8 . H. 260 . AV. PRĀT. 4,39 . P. 4,1,48 . ŚĀK. 105,7 . 192 . KATHĀS. 7,107 . sva , wenn damit nicht ein Verwandter oder Besitz benannt (gemeint) wird P. 3,3,2",
+    "equivalence_type": "equivalent",
+    "grammar": [
+     "f.",
+     "f."
+    ],
+    "ab_labels": [
+     "adjectival compound"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Medieval",
+     "Vedic"
+    ],
+    "citations": [
+     "AK",
+     "AV. PRĀT",
+     "H",
+     "HIT",
+     "KATHĀS",
+     "KĀTY. ŚR",
+     "M",
+     "P",
+     "SĀṂKHYAK",
+     "VID",
+     "ŚĀK"
+    ],
+    "citations_resolved": {
+     "AK": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+     "AV. PRĀT": "PRĀTIŚĀKHYA zum ATHARVAVEDA. Citirt nach Adhyāya und Sūtra. Hdschr. Siehe ROTH'S Einl. z. NIRUKTA, S. XLVII.",
+     "H": "HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.",
+     "HIT": "HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.",
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "KĀTY. ŚR": "KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "SĀṂKHYAK": "SĀṂKHYAKĀRIKĀ, ed. WILSON (GILD. Bibl. 271), mit Benutzung des Index in LASSEN'S Ausgabe (GILD. Bibl. 270).",
+     "VID": "Geschichte des VIDŪṢAKA in BÖHTLINGK'S Chrestomathie.",
+     "ŚĀK": "ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile."
+    },
+    "strata": {
+     "Epic / early-Classical": "Manusmṛti"
+    },
+    "examples_sa": [
+     "AKyA",
+     "KyA",
+     "A",
+     "kiM vA Sakuntaletyasya mAturAKyA"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "AKyA",
+  "key2": "AKyA",
+  "h": "",
+  "iast": "ākhyā",
+  "pos": [
+   "adj."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval"
+  ],
+  "labels": [
+   "above all, especially",
+   "adjectival compound",
+   "i.e. id est - that is",
+   "scholion",
+   "see"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ VS. PRĀT. 1,33 . KATHĀS. 59,22 . genannt so v. a. bestehend in, das ist BHĀG. P. 10,50,15 . adj. den Namen Asche führend so v. a. Nichts als Asche seiend Spr. 5023 . so v. a. Zahl, [Page5-1090] Anza",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "adj."
+    ],
+    "ab_labels": [
+     "above all, especially",
+     "adjectival compound",
+     "i.e. id est - that is",
+     "scholion",
+     "see"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "BHĀG. P",
+     "HARIV",
+     "KATHĀS",
+     "M",
+     "MBH",
+     "R",
+     "Spr",
+     "VS. PRĀT"
+    ],
+    "citations_resolved": {
+     "BHĀG. P": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden.",
+     "HARIV": "HARIVAṂŚA im 4ten Bande des MBH. Aus diesem Werke haben wir die Nomina propria mit Benutzung des Index in der LANGLOIS'- schen Uebersetzung (GILD. Bibl. 122) aufgenommen.",
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "Spr": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864.",
+     "VS. PRĀT": "PRĀTIŚĀKHYA zur VĀJASANEYISAM̃HITĀ, citirt nach Adhyāya und Sūtra. Hdschr. S. ROTH in der Einl. z. NIR. S. XLVI."
+    },
+    "strata": {
+     "Epic / early-Classical": "Rāmāyaṇa"
+    },
+    "examples_sa": [
+     "AKyA",
+     "baBUva kAYcanapurItyAKyayA nagarI purA",
+     "trayoviMSatyanIkAKyaM BUmerBAram",
+     "BasmAKya"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

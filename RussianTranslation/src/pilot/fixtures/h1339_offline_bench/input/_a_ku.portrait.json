@@ -1,0 +1,193 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "AKu",
+  "key2": "AKu/",
+  "h": "",
+  "iast": "ākhu",
+  "pos": [
+   "m."
+  ],
+  "diasystem": [
+   "Epic / early-Classical",
+   "Medieval",
+   "Vedic"
+  ],
+  "labels": [
+   "name",
+   "see under"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (wie eben) Uṇ. 1,33 . m",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "m."
+    ],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "Uṇ"
+    ],
+    "citations_resolved": {
+     "Uṇ": "Die Uṇādi-Affixe. Herausgegeben und mit Anmerkungen und verschiedenen Indices versehen von OTTO BÖHTLINGK. St. Petersburg 1844."
+    },
+    "strata": {},
+    "examples_sa": [
+     "AKu/"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Maus, Ratze"
+    ],
+    "gloss_de": "1〉 Maus, Ratze ( AK. 2,5,12 . H. 1300 ); Maulwurf ṚV. 9,67,30 . ( s. u. ). VS. 3,57 . 24,26 . 28 . AV. 6,50,1 . TS. 5,5,14,1 . ŚAT. BR. 2,1,1,7 . 6,2,10 . M. 4,126 . 11,159 . 12,62 . MBH. 1,1816 . PAÑ",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "see under"
+    ],
+    "diasystem": [
+     "Epic / early-Classical",
+     "Medieval",
+     "Vedic"
+    ],
+    "citations": [
+     "AK",
+     "AV",
+     "H",
+     "II,",
+     "KATHĀS",
+     "M",
+     "MBH",
+     "PAÑCAT. I,",
+     "TS",
+     "VS",
+     "ŚAT. BR",
+     "ṚV"
+    ],
+    "citations_resolved": {
+     "AK": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+     "AV": "ATHARVAVEDASAM̃HITĀ, herausg. von R. ROTH und W. D. WHITNEY. Berlin bei F. DÜMMLER. 1855. 8º. In den ersten Bogen des Wörter- buchs finden sich mehrere Citate, deren Zahlen mit der in der Aus- gabe angenommenen Zählung nicht ganz zusammentreffen. Man kann den Unterschied dadurch ausgleichen, dass man in den zusammen- gesetzten Liedern (Paryāyasūkta), welche in der Ausgabe als Ein- heiten gezählt sind, die Unterabtheilungen (Strophen) als besondere Lieder zählt.",
+     "H": "HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.",
+     "II,": null,
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "PAÑCAT. I,": "PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manuscriptis edidit, commentariis criticis auxit IO. GODOFR. LUDOV. KOSEGARTEN. Pars prima, textum sanscritum simpliciorem tenens. Bonnae ad Rhenum 1848. 8º. Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische -- die Seite; die zweite Zahl bezeichnet hier die Zeile, dort den Śloka.",
+     "TS": "TAITTIRĪYASAM̃HITĀ. 7 Kāṇḍa, eingetheilt in Praśna, Anuvāka und Kaṇḍikā. Die letzten bezeichnen nicht Satzabschnitte, sondern umfassen ye 50 Wörter. Hdschr.",
+     "VS": "VĀJASANEYISAM̃HITĀ. The VĀYASANEYI-SANHITĀ in the MĀDHYANDINA -- and the KĀṆVA-ŚĀKHĀ with the commentary of MAHĪDHARA, edited by Dr. ALBRECHT WEBER. Berlin Ferd. Dümmler's Verlagṣandlung. London Williams and Norgate. 1852. 4º.",
+     "ŚAT. BR": "The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849.",
+     "ṚV": "ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838."
+    },
+    "strata": {
+     "Vedic": "Atharvaveda",
+     "Epic / early-Classical": "Mahābhārata"
+    },
+    "examples_sa": [
+     "alAyya"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "2〉 N. eines Grases, Lipeocercis serrata Trin. , RATNAM. _im_ ŚKDR. KAUŚ. 25 . — Nach H. an. 4,4 bedeutet das Wort noch",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "name"
+    ],
+    "diasystem": [],
+    "citations": [
+     "H. an",
+     "KAUŚ",
+     "RATNAM",
+     "ŚKDR"
+    ],
+    "citations_resolved": {
+     "H. an": "HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).",
+     "KAUŚ": "KAUŚIKA'S SŪTRA zum ATHARVAVEDA. 14 Adhyāya. Die Kaṇ- ḍikā sind durchgezählt. Hdschr.",
+     "RATNAM": "RATNAMĀLĀ, ein Wörterbuch; nach Anführungen im ŚKDR.",
+     "ŚKDR": "ŚABDAKALPADRUMA (GILD. Bibl. 371)."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [
+     "Dieb"
+    ],
+    "gloss_de": "3〉 Dieb und",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "Schwein"
+    ],
+    "gloss_de": "4〉 Schwein; nach WILS. noch",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "WILS"
+    ],
+    "citations_resolved": {
+     "WILS": "WILSON'S Wörterbuch (GILD. Bibl. 37)."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [
+     "Gräber"
+    ],
+    "gloss_de": "5〉 Gräber und",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [
+     "Spaten"
+    ],
+    "gloss_de": "6〉 Spaten",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": []
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

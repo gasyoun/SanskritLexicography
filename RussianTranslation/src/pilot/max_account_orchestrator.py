@@ -144,9 +144,22 @@ def release_db_claims(db_path, jobs, error):
     db.close()
 
 
+# H1339 A4: a materialised requeue attempt is a NEW job (jobs.external_id is UNIQUE) on the
+# SAME coordinator lease -- its external_id is '<lease>::rqNN-<kind>'. Every coordinator
+# command that names a lease must map through coordinator_lease_id(); the sqlite layer keeps
+# the full external_id. '::' can never appear in a plain lease id (make_lease_id/plan roots).
+RQ_ID_SEP = '::rq'
+
+
+def coordinator_lease_id(external_id):
+    """The coordinator lease a job binds to (strips a requeue attempt's '::rqNN-kind')."""
+    return (external_id or '').split(RQ_ID_SEP, 1)[0]
+
+
 def release_runtime(args, lease_id, reason):
     return coordinator_command(
-        args, ['release-run', lease_id, '--confirm-dead', '--reason', reason], check=False)
+        args, ['release-run', coordinator_lease_id(lease_id), '--confirm-dead',
+               '--reason', reason], check=False)
 
 
 def safe_receipt_name(value):
@@ -476,6 +489,107 @@ def cmd_import_coordinator(args):
     print('imported=%d' % added)
 
 
+def cmd_import_requeue(args):
+    """H1339 A4 (the fuller fix): import ONE requeue_prepared lease attempt as a runnable job.
+
+    cmd_import_coordinator imports only state=='prepared' leases, so a coordinator requeue
+    attempt (prepare-requeue -> requeue_prepared) was INVISIBLE to the sqlite dispatch
+    layer: the unattended loop's rq work-items matched no lease and no job, run_window
+    no-op'd, and the rejected keys were silently dropped (checkpointed COMPLETED with zero
+    model calls) until the Tier-A fail-loud guard, which stopped the loss but not the work.
+    The imported job's external_id is '<lease>::rqNN-<kind>' (UNIQUE per attempt; the
+    coordinator commands map back via coordinator_lease_id). Idempotent: an already-present
+    attempt job imports nothing, so a crash between import and dispatch resumes cleanly.
+    Returns the attempt job's external_id."""
+    state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
+    with open(state_path, encoding='utf-8') as f:
+        state = json.load(f)
+    lease = next((l for l in state.get('leases', []) if l.get('id') == args.lease_id), None)
+    if lease is None:
+        raise SystemExit('%s: unknown coordinator lease' % args.lease_id)
+    if lease.get('state') != 'requeue_prepared':
+        raise SystemExit('%s: lease state %r is not requeue_prepared -- run '
+                         'coordinator prepare-requeue first' % (args.lease_id, lease.get('state')))
+    attempt = lease.get('current_attempt') or {}
+    number = int(attempt.get('number') or lease.get('requeue_attempt') or 0)
+    kind = attempt.get('kind') or lease.get('requeue_kind') or 'requeue'
+    manifest_path = attempt.get('execution_manifest') or lease.get('execution_manifest')
+    if not manifest_path or not os.path.exists(manifest_path):
+        raise SystemExit('%s: requeue execution manifest missing' % args.lease_id)
+    manifest = json.load(open(manifest_path, encoding='utf-8'))
+    try:
+        validate_manifest(manifest, require_v2=True)
+    except ValueError as exc:
+        raise SystemExit('%s: %s' % (args.lease_id, exc))
+    if manifest['meta'].get('lang') != 'ru':
+        raise SystemExit('%s: H818 production default is RU only' % args.lease_id)
+    external_id = '%s%s%02d-%s' % (args.lease_id, RQ_ID_SEP, number, kind)
+    db = connect(args.db)
+    existing = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
+    if external_id in existing:
+        db.close()
+        print('imported=0 (attempt job exists: %s)' % external_id)
+        return external_id
+    occupied = set()
+    for row in db.execute("SELECT manifest_path FROM jobs WHERE state IN ('pending','in_progress') AND manifest_path IS NOT NULL"):
+        try:
+            occupied.update(json.load(open(row['manifest_path'], encoding='utf-8'))['meta']['selected_keys'])
+        except (OSError, KeyError, json.JSONDecodeError):
+            pass
+    keys = set(manifest['meta']['selected_keys'])
+    overlap = keys & occupied
+    if overlap:
+        raise SystemExit('%s: requeue key overlap with a queued/running job: %s' %
+                         (args.lease_id, ','.join(sorted(overlap))))
+    adir = attempt.get('artifact_dir') or lease.get('artifact_dir')
+    # NOTE: the OUTPUT filename must stay Windows-legal -- never embed the '::' separator.
+    output = os.path.join(adir, 'workflow_result.headless.%s.rq%02d-%s.json'
+                          % (args.lease_id, number, kind))
+    with db:
+        db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,max_attempts) VALUES(?,?,?,?,?,?)',
+                   (external_id, os.path.abspath(args.cwd), output, manifest_path,
+                    sha256_path(manifest_path), args.max_attempts))
+    db.close()
+    print('imported=1 %s' % external_id)
+    return external_id
+
+
+def cmd_reset_failed(args):
+    """B18 (H1339, P0): the ONLY sanctioned exit from the terminal 'failed' job state.
+
+    A job failing max_attempts times is deliberately terminal and both drain loops fail
+    closed on it -- but there was NO recovery command at all, so one twice-failed job was a
+    permanent tombstone that fail-closed every future run of its plan. This is the explicit,
+    AUDITED recovery: scoped --lease-id (never a blanket reset), mandatory --reason recorded
+    on the row and in the events ledger, attempts rezeroed so the job is claimable again.
+    Never called automatically -- an unattended loop must stop loudly, a human decides."""
+    if not args.reason or not args.reason.strip():
+        raise SystemExit('reset-failed requires a non-empty --reason (audited recovery)')
+    scope = set(args.lease_id or [])
+    if not scope:
+        raise SystemExit('reset-failed requires an explicit --lease-id scope')
+    db = connect(args.db)
+    rows = scoped_jobs(db, scope, "state='failed'")
+    if not rows:
+        db.close()
+        raise SystemExit('no failed job in scope %s' % sorted(scope))
+    with db:
+        for job in rows:
+            db.execute(
+                "UPDATE jobs SET state='pending', assigned_acc=NULL, attempts=0, "
+                "started_at=NULL, error=? WHERE id=? AND state='failed'",
+                ('reset-failed: %s' % args.reason.strip()[:500], job['id']))
+    db.close()
+    events_path = getattr(args, 'events', None)
+    if events_path:
+        for job in rows:
+            append_event(events_path, stage='operator', event='reset_failed',
+                         lease_id=job['external_id'], window_id=job['external_id'],
+                         note=args.reason.strip()[:500])
+    print('reset=%d (%s)' % (len(rows), ', '.join(sorted(j['external_id'] for j in rows))))
+    return len(rows)
+
+
 def cmd_recover(args):
     db = connect(args.db)
     abandoned = scoped_jobs(
@@ -509,7 +623,8 @@ def cmd_record_done(args):
         if not job['manifest_path'] or not os.path.exists(job['output_path']):
             raise SystemExit('%s: completed coordinator job has no result' % job['external_id'])
         proc = coordinator_command(
-            args, ['record-output', job['external_id'], job['output_path']], check=False)
+            args, ['record-output', coordinator_lease_id(job['external_id']),
+                   job['output_path']], check=False)
         if proc.returncode:
             print(proc.stdout, end='')
             print(proc.stderr, end='', file=sys.stderr)
@@ -548,6 +663,14 @@ def cmd_run_once(args):
     if manifest_pending:
         # Do not over-claim scheduler rows that the coordinator must reject. Generic jobs keep
         # their historical account fan-out because they do not consume translation runtime.
+        # B16 (H1339): filter to CLAIM-ELIGIBLE accounts (validated + unparked -- the exact
+        # _claim_tx predicate) BEFORE the concurrency slice. Slicing the raw name-ordered
+        # roster starved dispatch whenever alphabetically-early accounts were parked: the
+        # sliced-in parked accounts could claim nothing while healthy later-named accounts
+        # were cut off, and the all-parked halt guard (which counts EVERY validated unparked
+        # account) never fired -- the bounded drain spun to its iteration ceiling instead.
+        now_ts = int(time.time())
+        accounts = [a for a in accounts if a['validated'] and a['parked_until'] <= now_ts]
         accounts = accounts[:4 if runtime_mode == 'staged' else 3]
     work = []
     for acc in accounts:
@@ -568,7 +691,7 @@ def cmd_run_once(args):
         if receipt:
             begin += ['--probe-receipt', receipt]
         for job in runtime_jobs:
-            begin += ['--lease-id', job['external_id']]
+            begin += ['--lease-id', coordinator_lease_id(job['external_id'])]
         try:
             coordinator_command(args, begin)
         except SystemExit as exc:
@@ -1051,6 +1174,8 @@ def main(argv=None):
     p = sub.add_parser('init'); p.add_argument('--account', action='append', required=True); p.add_argument('--claude-bin', default='claude'); p.add_argument('--skip-profile-check', action='store_true', help=argparse.SUPPRESS); p.set_defaults(func=cmd_init)
     p = sub.add_parser('enqueue'); p.add_argument('--external-id', required=True); p.add_argument('--argv-json', required=True); p.add_argument('--cwd', required=True); p.add_argument('--output', required=True); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_enqueue)
     p = sub.add_parser('import-coordinator'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--lease-id', action='append'); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_import_coordinator)
+    p = sub.add_parser('import-requeue', help='H1339 A4: import one requeue_prepared lease attempt as a runnable job'); p.add_argument('lease_id'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--max-attempts', type=int, default=2); p.set_defaults(func=cmd_import_requeue)
+    p = sub.add_parser('reset-failed', help='B18: audited scoped recovery of terminal failed jobs (requires --reason)'); p.add_argument('--lease-id', action='append', required=True); p.add_argument('--reason', required=True); p.add_argument('--events'); p.set_defaults(func=cmd_reset_failed)
     p = sub.add_parser('recover'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
     p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_run_once)

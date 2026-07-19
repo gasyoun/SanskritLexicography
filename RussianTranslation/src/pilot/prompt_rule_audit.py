@@ -56,8 +56,14 @@ BROKEN_TAG_TOKEN = re.compile(r'<(?:ls|ab|lex|is)\b[^>]*(?:$|<)', re.I)
 TRANSLATED_GRAMMAR_SIGLUM = re.compile(
     r'\b(?:мужской|женский|средний|множественное|двойственное|единственное)\b',
     re.I)
+# B13 (H1339): fire only on CITATION-SHAPED occurrences — the spelled-out Russian work
+# name followed (within a couple of punctuation chars) by a numeric locator. The old open
+# `\w*` form fired HIGH_CONFIDENCE on legitimate Russian prose: any mention of «Ману» as a
+# proper name («эпитет Ману»), and «манускрипт» via the ману- prefix — unclearable requeue
+# churn on correct translations. «Ману 4,126» (a truly translated citation) still fires;
+# ману(?!скрип) keeps codicological prose out even before a stray digit.
 TRANSLATED_SOURCE_SIGLUM = re.compile(
-    r'\b(?:ригвед|атхарвавед|махабхарат|рамаян|ману)\w*',
+    r'\b(?:ригвед|атхарвавед|махабхарат|рамаян|ману(?!скрип))[а-яё]*\W{0,3}\d',
     re.I)
 BRACED_GLOSS = re.compile(r'\{%(.*?)%\}', re.S)
 LATIN_FLAG_CONTEXT = re.compile(

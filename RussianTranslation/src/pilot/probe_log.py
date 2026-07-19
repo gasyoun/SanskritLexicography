@@ -145,6 +145,30 @@ def cmd_outcome(a):
             break
     else:
         raise SystemExit(f'no row with run_id={a.run_id!r}; append a launch row first')
+    # B15 (H1339): an outcome row whose EVERY structured field is null is unusable by any
+    # scripted rate/economy math (w08/w08_rq1/w09 rendered em-dashes and corrupted the rate
+    # tables). First try recovering the figures from the free-text note (the same key=int
+    # pairs economy_ledger.parse_note_kv reads); if nothing structured can be recovered
+    # either, REFUSE the row -- never append all-null telemetry that reads as measured.
+    structured = {'cards': a.cards, 'clean': a.clean, 'agents': a.agents, 'tokens': a.tokens,
+                  'kill_timeouts': a.kill_timeouts, 'conn_errors': a.conn_errors}
+    if all(v is None for v in structured.values()):
+        import economy_ledger
+        kv = economy_ledger.parse_note_kv(getattr(a, 'note', '') or '')
+        recovered = {'cards': kv.get('cards'), 'clean': kv.get('clean') or kv.get('ok'),
+                     'agents': kv.get('agents'), 'tokens': kv.get('tokens'),
+                     'kill_timeouts': kv.get('kill_timeouts'),
+                     'conn_errors': kv.get('conn_errors')}
+        if all(v is None for v in recovered.values()):
+            raise SystemExit(
+                'REFUSED: outcome for %r carries no structured field at all (and none '
+                'recoverable from the note). Pass at least one of --cards/--clean/--agents/'
+                '--tokens/--kill-timeouts/--conn-errors -- an all-null outcome row corrupts '
+                'every scripted rate computation over the log.' % a.run_id)
+        for name, value in recovered.items():
+            if getattr(a, name, None) is None and value is not None:
+                setattr(a, name, value)
+        print('note-kv recovery: %s' % {k: v for k, v in recovered.items() if v is not None})
     _append({
         'ts': _now(),
         'kind': 'outcome',
