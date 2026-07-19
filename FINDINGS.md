@@ -99,6 +99,8 @@ refuted or superseded, strike it and say why — never reuse its number.
 
 - 🔴 [§36. IAST Unicode collides and normalises lossily](#36-iast-unicode-collides-and-normalises-lossily) — NFD + strip-Mn destroys length and retroflexion.
 - 🟠 [§37. BOM state is inconsistent across exports](#37-bom-state-is-inconsistent-across-exports) — check head -c 3; preserve on write.
+- 🔴 [§100. `nfold` fuses every nasal to `n`, manufacturing false quotation matches](#100-nfold-earns-sandhi-tolerant-recall-by-fusing-every-nasal-to-n-which-manufactures-false-quotation-matches-unless-every-hit-is-re-verified-on-norm) — nfold for recall, norm for the verdict.
+- 🔴 [§102. DCS `text_sandhied` is not reliably sandhied](#102-dcs-sentencetext_sandhied-is-not-reliably-sandhied-some-rows-store-analyzed-word-forms-which-silently-downgrades-verbatim-quotations-to-partial-matches) — some rows store analyzed word forms; cross-check a real-surface corpus.
 - 🟠 [§38. Injected BOMs crash the hw record parser](#38-injected-boms-crash-the-hw-record-parser) — "init_entries Error 2" is an encoding symptom, not a structure defect.
 - 🟡 [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - 🟠 [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
@@ -982,6 +984,40 @@ common vocabulary is the null hypothesis, not the signal.
 > **Source:** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py)
 > + [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md)
 > — SanskritGrammar / H1212, Opus 4.8 (`claude-opus-4-8`) · 2026-07
+
+### §102. DCS `sentence.text_sandhied` is not reliably sandhied — some rows store analyzed word forms, which silently downgrades verbatim quotations to partial matches
+
+🔴 **The DCS column named `text_sandhied` does not always hold the sandhied surface text.
+Some rows hold word-segmented, partly *un*-sandhied forms — so matching printed text
+against it under-reports verbatim quotation.**
+
+Evidence (H1344): Bühler's exercise `ācārādvicyuto vipro na vedaphalamaśnute` is a verbatim
+Manusmṛti quotation. DCS stores that line as
+`ācārāt vicyutaḥ vipraḥ na veda phalam aśnute` — `vicyutaḥ` not `vicyuto`, `vipraḥ` not
+`vipro`, `vedaphalam` split as `veda phalam`. Matched against DCS alone it scored as a
+*partial* run (verdict `invented`); matched against GRETIL's true surface text
+`ācārād vicyuto vipro na vedaphalam aśnute` it is an exact hit. The verdict crossed two
+buckets purely on which corpus held the same verse.
+
+Implication: whitespace-insensitive matching is not enough — the *segmental* forms differ,
+not just the word boundaries. A pipeline that treats `text_sandhied` as the printed surface
+will systematically under-count quotation. Cross-check against a corpus that stores real
+surface text (GRETIL plaintext) before reporting an attestation rate as final. Distinct from
+§36: nothing is lost in normalization here — DCS's stored string is simply a different
+string from the printed one.
+
+**Second, transferable trap from the same pass — grammatical metalanguage collides with
+commentarial metalanguage.** A sentence whose *purpose* is to display a grammatical pattern
+will match any text that uses that pattern, and that is not evidence of a source. Bühler's
+bahuvrīhi drill `udgataṃ mukhaṃ yasya saḥ` matched the Mugdhāvabodhinī's
+`dṛḍhaṃ mukhaṃ yasyāḥ sā`: both are the standard *vigraha* formula `X mukhaṃ yasya saḥ`,
+which recurs throughout commentary because it *is* the analytical formula. No similarity
+threshold fixes this — it is a category error about what the string is, and the only remedy
+is to classify metalanguage out of the input before matching.
+
+> **Source:** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py)
+> + [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md)
+> — SanskritGrammar / H1344, Opus 4.8 (`claude-opus-4-8`) · 2026-07
 
 ### §37. BOM state is inconsistent across exports
 
