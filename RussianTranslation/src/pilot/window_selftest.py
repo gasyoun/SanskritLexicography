@@ -1292,8 +1292,11 @@ def test_semantic_review_prioritizer():
                 'grammar': 'm.',
                 'senses': [{
                     'tag': '1',
-                    'german': '<ls>ṚV.</ls> Feuer',
-                    'russian': 'мужской Ригведа {#agni',
+                    # B13 (H1339): the siglum-leak fixture is CITATION-SHAPED («Ригведа 1,1»
+                    # -- work name + numeric locator), matching the narrowed trigger; a bare
+                    # prose «Ригведа» with no locator is now legitimate prose, not a leak.
+                    'german': '<ls>ṚV.</ls> 1,1 Feuer',
+                    'russian': 'мужской Ригведа 1,1 {#agni',
                     'equivalence_type': 'equivalent',
                     'source_type': 'attested',
                     'stratum': 'Vedic',
@@ -5184,12 +5187,22 @@ def test_perf_preflight_cost_gate():
     PASS a cheap high-card-count window (e.g. `as`: many cards, low per-card cost). The
     per-card ratio is the load-bearing, model-independent signal."""
     import perf_preflight as pp
-    # pril10_w1-shape: 8 cards, ~69 fragment-group agents (post-fix) -> ~$4/card >> ceiling
+    # pril10_w1-shape: 8 cards, ~69 fragment-group agents (post-fix) -> ~$4/card >> ceiling.
+    # B14 (H1339): a real monster window ALWAYS carries presplit telemetry (69 agents for 8
+    # cards IS fragment fan-out); the estimate prices presplit fragment agents at the
+    # pril10 monster calibration, so the gate keeps its teeth under lane-aware pricing.
     monster = {'agent_expected_after_tm': 69, 'selected_keys': ['k%d' % i for i in range(8)],
-               'tm_cards': 0, 'degenerate_passthrough_keys': []}
+               'tm_cards': 0, 'degenerate_passthrough_keys': [],
+               'presplit_keys': ['k%d' % i for i in range(8)], 'batch_count': 0}
     cg = pp.cost_estimate(monster)
     if not cg['over_ceiling'] or cg['est_cost_per_card_usd'] <= cg['per_card_ceiling_usd']:
         fail('a window of 8 monster cards costing ~$4/card must trip the cost gate; got %r' % cg)
+    # B14: missing batch telemetry with presplit present falls CONSERVATIVELY to all-monster
+    # pricing -- degraded telemetry can only over-price, never under-price, a monster.
+    no_batchcount = dict(monster)
+    no_batchcount.pop('batch_count')
+    if not pp.cost_estimate(no_batchcount)['over_ceiling']:
+        fail('missing batch telemetry must fall conservatively to monster pricing')
     # cheap high-count window: 98 cards, 24 agents -> pennies/card -> passes
     cheap = {'agent_expected_after_tm': 24, 'selected_keys': ['k%d' % i for i in range(98)],
              'tm_cards': 0, 'degenerate_passthrough_keys': []}
