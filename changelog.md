@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.38.0] — 19-07-2026
+
+### Added
+- **H803 clean-scan lane — LaukikaNyaya 302 → 377 records, real per-entry page citations for the first time (Sonnet 5 `claude-sonnet-5`).** Independently found and OCR'd a different, cleaner archive.org source — three University of California Libraries scans (`handfulofpopular01/02/03jacoiala`, one per Jacob "handful") — after re-confirming the primary `YKTn_...` item's image backend was still down; this alternate source's own OCR text layer is Devanagari-blind, but its IIIF backend worked (a different datanode), so all 378 page images were fetched and OCR'd locally with Tesseract's Sanskrit-aware `san+eng` model. Reconciled against the corrected 302-record file: 223 matched (193 body-upgraded, all gaining a real page citation), 78 genuinely new, 79 kept as-is, minus 3 pre-existing visarga-differing near-duplicate pairs in the 302-set exposed and resolved along the way → **377 records (94.25% of the ≥400 target, the closest yet)**. Also completed the real image-based 20-record-class spot-check the handoff's Definition of Done always asked for (blocked in every earlier pass by the outage), finding and disclosing 2 real OCR errors and fixing 2 real recall gaps (an invisible zero-width non-joiner silently broke the headword-line regex) live. FEATURES_INDEX registration correctly still withheld — target not yet met. See [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md) "Clean-scan lane methodology" for the full writeup, including a caught-and-fixed false-positive in the reconciliation matcher itself.
+
 ## [1.37.0] — 19-07-2026
 
 ### Fixed

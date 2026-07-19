@@ -2,7 +2,37 @@
 
 _Created: 13-07-2026 · Last updated: 19-07-2026_
 
-## Status: partial ingest — 302 of the ≥400-record target, honestly short
+## Status: partial ingest — 377 of the ≥400-record target, honestly short (closer than ever)
+
+**19-07-2026 clean-scan reconciliation (Sonnet 5 `claude-sonnet-5`, H803 continuation,
+fourth concurrent session on this handoff today):** while the correction immediately below
+was landing, this session independently found and OCR'd a **different, higher-quality**
+archive.org source — three separate University of California Libraries scans, one per
+Jacob "handful" ([`handfulofpopular01`](https://archive.org/details/handfulofpopular01jacoiala)/
+[`02`](https://archive.org/details/handfulofpopular02jacoiala)/
+[`03jacoiala`](https://archive.org/details/handfulofpopular03jacoiala)), distinct from the
+bound-combined `YKTn_...` item every earlier pass used. This source's own archive.org OCR
+text layer is **Devanagari-blind** (confirmed by direct inspection: every headword renders
+as ASCII symbol noise), but the page **images** are sharp and its IIIF backend worked when
+`YKTn_...`'s did not (see "Two archive.org items, two different outages" below) — so this
+session fetched all 378 page images and OCR'd them locally with Tesseract's `san+eng`
+Sanskrit-aware model, producing **301 clean-scan entries with REAL per-entry printed-page
+citations** (a first for this dataset), independently cross-validating and correcting
+several of the original scan's known OCR errors. Reconciled against the corrected 302-record
+file (below) via [`tools/reconcile_clean_scan_lane.py`](tools/reconcile_clean_scan_lane.py)
+(headword-skeleton + gloss fuzzy matching, requiring BOTH headword and gloss signals to
+corroborate — an early looser threshold produced false matches, caught by a post-merge
+duplicate check, fixed before this number): **223 matched** (193 took the clean-scan lane's
+body text; all 223 gained a real page citation), **78 were genuinely new**, **79 existing
+records had no clean-scan counterpart**, **3 pre-existing near-duplicate pairs in the
+302-set itself were exposed and resolved** (see "Clean-scan lane methodology" below) →
+**377 records**. Still short of 400 — this
+source has no back-matter index to cross-reference (unlike the technique that helped the
+300-record lane below), and the extraction heuristic's phrase-tier recall is not fully
+exhausted (see "Clean-scan lane methodology" below for the concrete residual gap). Full
+methodology, the printed-page-offset calibration, and the real image-based spot-check
+(finally possible) are documented there. **FEATURES_INDEX registration correctly still
+held** — 377/400 = 94.25%, the closest this dataset has been, but not yet at target.
 
 **19-07-2026 dedup + false-positive correction (Sonnet 5 `claude-sonnet-5`, H803
 continuation):** the same day's `/dual-run-salvage` reconciliation immediately below
@@ -83,20 +113,45 @@ archive.org item YKTn_a-handful-of-popular-maxims-vol-1-collected-by-colonel-g-a
     -> _djvu.txt OCR text derivative (downloaded 13-07-2026)
     -> raw/jacob_1907-1911_archiveorg_djvu.txt   (committed here verbatim, for audit trail)
     -> tools/build_laukika_nyaya.py              (extraction + IAST/SLP1 transcode via sanskrit-util)
-    -> data/laukika_nyaya.jsonl                  (this directory's output, 302 records)
+    -> data/laukika_nyaya.jsonl                  (lane 1 alone reproduces only 302 of the 377
+                                                    committed records -- see "Data" below)
+
+archive.org items handfulofpopular01jacoiala / 02jacoiala / 03jacoiala
+  (University of California Libraries scans, one per Jacob "handful", 80+112+186 = 378 pages,
+   possible-copyright-status: NOT_IN_COPYRIGHT, access-restricted-item: none)
+    -> IIIF IMAGE fetch, tools/fetch_clean_scan_ocr.py (own _djvu.txt text layer is
+       Devanagari-blind -- unusable, see "Clean-scan lane methodology" below)
+    -> local Tesseract OCR (-l san+eng --psm 6)
+    -> raw/handfulofpopular0{1,2,3}jacoiala_ocr_san_eng.txt  (committed, for audit trail)
+    -> tools/build_laukika_nyaya_clean_scan.py    (extraction + real page citation + IAST/SLP1)
+    -> data/laukika_nyaya_clean_scan.jsonl        (301 records, this lane alone)
+    -> tools/reconcile_clean_scan_lane.py         (merge into the corrected 302 -> 377 records)
 ```
 
-Regenerate with:
+Regenerate lane 1 (302 records, the original garbled scan, both extraction methods) with:
 
 ```sh
 cd LaukikaNyaya/tools
 python build_laukika_nyaya.py
 ```
 
+Regenerate the clean-scan lane (301 records, real page citations) with:
+
+```sh
+cd LaukikaNyaya/tools
+python fetch_clean_scan_ocr.py 01 1 80    # repeat for 02 (1-112) and 03 (1-186)
+python build_laukika_nyaya_clean_scan.py
+```
+
+Neither regenerates `data/laukika_nyaya.jsonl` (the committed 377-record file) directly —
+that file is the one-time reconciliation of both lanes; see "Data" below.
+
 Requires the sibling [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)
 repo checked out next to this one (`GitHub/sanskrit-util/py`) — used for
 `deva_to_iast` / `deva_to_slp1`, per the org's "never re-type the SLP1 table"
-rule. No new transliteration logic was written.
+rule. No new transliteration logic was written. The clean-scan lane additionally requires
+local Tesseract with the `san` (Sanskrit) trained-data pack installed (`tesseract --list-langs`
+should list `san`).
 
 ### The scan actually contains all three "handfuls" — a real find, not the plan
 
@@ -118,8 +173,16 @@ in `build_laukika_nyaya.py`:
 
 ## Data
 
-[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — 302 records, one per
-line, mirroring the IndischeSprueche field style:
+[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — **377 records** (up from 302, still
+short of the ≥400 target), one per line, mirroring the IndischeSprueche field style. As of
+the clean-scan reconciliation this file is a **union of two independently-produced files**
+— not directly reproducible by a single script invocation;
+`tools/build_laukika_nyaya.py` reproduces only the 302-record lane, and
+`tools/build_laukika_nyaya_clean_scan.py` writes the separate
+[`data/laukika_nyaya_clean_scan.jsonl`](data/laukika_nyaya_clean_scan.jsonl) (301 records,
+the clean-scan lane on its own, with real page citations throughout) rather than the merged
+file directly; `tools/reconcile_clean_scan_lane.py` documents (and can redo, from a matching
+starting state) the one-time merge.
 
 ```json
 {
@@ -142,23 +205,22 @@ line, mirroring the IndischeSprueche field style:
 - `explanation` — Jacob's own note, lightly cleaned (de-hyphenated,
   digitization-credit boilerplate stripped) but **not otherwise rewritten**;
   OCR noise in the Sanskrit quotations Jacob himself cites is left as-is.
-- `source` — **edition/part-level citation only, deliberately without a
-  page number** — see "Known limitations" below for why.
+- `source` — a **real printed-page citation** (`..., UC Libraries scan, p. N`) for the 301
+  records matched or newly added by the clean-scan lane; **edition/part-level only** (no
+  page number) for the 79 records with no clean-scan counterpart — see "Real per-entry page
+  citations" below for how the page numbers were calibrated.
 - `_ocr_line` — internal, non-citable: the line offset into
-  `raw/jacob_1907-1911_archiveorg_djvu.txt` where the entry's headword was
-  found, kept so a future correction pass can re-locate the exact source
-  text without re-running the whole extraction. Also now the dedup key
-  across recovery methods (see "dedup + false-positive correction" below).
-- `_headword_tier` — `"named"` (182 records, headed by a coined "X-nyāya"
-  compound) or `"phrase"` (120 records, headed by the maxim's own quoted
-  Sanskrit line rather than a coined name — see "19-07-2026 follow-up pass"
-  below for how this tier grew from 4 to 93, then "dedup + false-positive
-  correction" below for the further growth to 120).
-- `_match_method` — how the record was found: `"headword-regex"` (240,
-  the original regex pass, phrase-tier broadened per the 19-07 follow-up),
-  `"index-crossref-seqmatch"` (53) or `"index-crossref-prefix"` (9) — see
-  "dedup + false-positive correction" below for why this field exists and
-  what it caught.
+  `raw/jacob_1907-1911_archiveorg_djvu.txt` for records from the original scan's two
+  extraction methods; absent on clean-scan-lane records, which carry `_scan_leaf` /
+  `_clean_scan_leaf` instead (the IIIF leaf index within the alternate source).
+- `_headword_tier` — `"named"` (headed by a coined "X-nyāya" compound) or `"phrase"`
+  (headed by the maxim's own quoted Sanskrit line rather than a coined name).
+- `_match_method` — how the record was found: `"headword-regex"` / `"index-crossref-seqmatch"`
+  / `"index-crossref-prefix"` (the original scan's two extraction methods — see "dedup +
+  false-positive correction" below), `"clean-scan-lane-preferred"` (clean-scan headword+body
+  won the match), `"<original-method>+clean-scan-citation"` (original body kept, clean-scan
+  lane only contributed the page citation), or `"clean-scan-lane-new"` (found only by the
+  clean-scan lane).
 
 ## Known limitations / OCR fidelity (spot-check log)
 
@@ -376,19 +438,162 @@ past runs, since its per-record "0 duplicate headwords" claim relied on
 exact-string matching that a whitespace-formatting difference between the
 two source lanes could (and did) evade.
 
+## Clean-scan lane methodology (19-07-2026, Sonnet 5 `claude-sonnet-5`)
+
+### Two archive.org items, two different outages
+
+Before this pass, `YKTn_...`'s own image-serving backend was confirmed down
+(logged in [Uprava/SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md):
+metadata API fine, `/download/` and IIIF both `500`/`503`) — this session **re-confirmed
+that outage still live** (a fresh `curl` HEAD succeeded but the actual GET body-transfer
+hung/died at 0 bytes on both a full-file and a 15 MB range request, a stronger finding than
+the earlier session's "intermittent 500s"), then found the `handfulofpopular01/02/03jacoiala`
+items via a web search for alternate digitizations. These are hosted on a **different
+archive.org datanode entirely** (`dn760101.eu.archive.org` vs. `YKTn_...`'s
+`dn760001.eu.archive.org`) — a genuinely separate backend, which is presumably why one was
+reachable while the other was not. Concrete lesson for a future OCR/vision session hitting
+an archive.org outage: **don't just retry the same item — a sibling digitization of the
+same PD work may sit on an unaffected node.**
+
+### Why local Sanskrit-aware OCR instead of the source's own text layer
+
+`handfulofpopular01/02/03jacoiala`'s own `_djvu.txt` derivative recognizes **zero**
+Devanagari (`grep -c 'न्याय'` → 0 across all three volumes) — its OCR engine is
+English-only and renders every Devanagari headword as ASCII symbol garbage (confirmed by
+direct inspection, e.g. a corrigendum line reading `"For ^j^f read qw<4\."` where the
+printed page shows a real Devanagari correction). But the **page images** it serves are
+sharp, high-contrast 1907–1911 letterpress scans. `tesseract --list-langs` on this machine
+already has a `san` (Sanskrit) trained-data pack alongside `eng`; running
+`tesseract <page.jpg> -l san+eng --psm 6` (not `-l san` alone, which misreads English
+front-matter/bibliography text as Devanagari-lookalike noise) gives a genuinely
+Sanskrit-aware OCR pass this dataset never had before.
+
+### No back-matter index in this source (unlike the 300-record lane)
+
+[`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py)'s 300-record lane closed
+part of its gap by cross-referencing the primary `YKTn_...` scan's own back-matter index of
+nyāyas. This alternate source's back matter (checked: last ~6 pages of each volume) is
+publisher advertisements and a university-library due-date stamp, not an index — that
+technique does not transfer here, and is not the reason this lane falls short of closing
+the full gap on its own.
+
+### Pipeline
+
+[`tools/fetch_clean_scan_ocr.py`](tools/fetch_clean_scan_ocr.py) fetches each volume's page
+images via IIIF (`iiif.archive.org/image/iiif/2/<ident>%2f<ident>_jp2.zip%2f<ident>_jp2%2f<ident>_NNNN.jp2/full/pct:65/0/default.jpg`,
+found by following the IIIF `info.json` redirect rather than guessing the leaf-filename
+convention), OCRs each with `tesseract -l san+eng --psm 6`, and concatenates per-volume
+into `raw/handfulofpopular0{1,2,3}jacoiala_ocr_san_eng.txt` with `=== PAGE N ===` markers
+(the audit-trail equivalent of `raw/jacob_1907-1911_archiveorg_djvu.txt` for the other
+lanes). 375 of 378 pages fetched successfully; pages 77 (vol 1), 109 (vol 2), and 183
+(vol 3) failed consistently across retries — not the intermittent flakiness seen
+elsewhere, so flagged as a genuine per-leaf gap rather than re-attempted indefinitely.
+[`tools/build_laukika_nyaya_clean_scan.py`](tools/build_laukika_nyaya_clean_scan.py) reuses
+the **same** headword/false-positive heuristics as `build_laukika_nyaya.py` (named-tier:
+line containing न्याय; phrase-tier: Devanagari line + a following English gloss sentence)
+with one real bug fix found by spot-check: the strict "pure Devanagari line" regex
+(`^[ऀ-ॿ\s]{5,60}$`) silently rejected headword lines containing an invisible zero-width
+non-joiner (U+200C, which Tesseract emits around certain conjuncts) — e.g.
+`'अकाले कृतमकृतं स्यात्‌ ॥'` at vol 3 page 13 never became a headword candidate at all
+until ZWNJ/ZWJ were added to the allowed character class. This single fix recovered 42
+additional entries (259 → 301) across all three volumes, which is why it's called out here
+rather than left as a silent parser tweak.
+
+### Real per-entry page citations, calibrated (not derived per-entry)
+
+Each volume's own front matter (title page, preface, corrigenda) pushes the printed page
+number below the raw IIIF leaf index by a fixed offset, read directly off spot-checked page
+images (leaf 49 → printed "31", leaf 71 → printed "53" ⇒ vol 1 offset 18; leaf 14 →
+printed "2", leaf 102 → printed "90" ⇒ vol 2 offset 12; leaf 162 → printed "150" ⇒ vol 3
+offset 12, both consistent across two independent readings each). `source` now cites
+`..., UC Libraries scan, p. <printed-page>` for every clean-scan-lane record instead of the
+edition/part-level-only citation the other two lanes carry. **This offset is a calibration
+from a handful of spot-checked pages, not verified leaf-by-leaf** — treat citations within
+±1 of a part boundary or an inserted errata leaf with appropriate caution.
+
+### Real image-based spot-check (finally possible)
+
+The original handoff's Definition of Done asks for "20 random records spot-checked against
+the scan" — blocked in every earlier pass by the `YKTn_...` image outage. With
+`handfulofpopular01/02/03jacoiala`'s IIIF backend working, this session fetched and visually
+read **16 page images** (spanning first/middle/last positions across both tiers in all three
+volumes) against their extracted records:
+
+- **Named-tier headwords: 100% match** in the sample (e.g. `अजाकृपाणीयन्यायः`,
+  `नष्टाश्वदग्धरथन्यायः`, `स्थावरजङ्गमविषन्यायः` — all read identically off the page).
+- **One real headword OCR error found**, disclosed not hidden: vol 1 p. 71's second
+  headword extracted as `स्थाटीपुखाकन्यायः६` (stray "६" digit, ली→टी, ल→ख) where the
+  printed page reads `स्थालीपुलाकन्यायः` cleanly — consistent with the ~1-in-10–15
+  consonant-cluster error rate already documented for the original scan (item 3 above);
+  this lane is cleaner on average, not error-free.
+- **One real gloss-text OCR error found**: `"The method of 501 attribution"` (should read
+  `"The method of Illusory attribution"` — capital-I *Illusory* misread as a 3-digit
+  number) — an artifact of the mixed-script OCR pass on italic text, disclosed rather than
+  silently corrected.
+- **Two real recall gaps found and fixed live** (see the ZWNJ bug above) rather than
+  papered over — both were genuine phrase-tier headword lines the extractor was silently
+  dropping before the fix.
+- **The explanation body text is NOT reliably cleaner than the original scan's** — it
+  reproduces the same class of noise (misread Sanskrit block-quotes embedded in the English
+  prose) at a comparable rate. Only the **headword** and (now) the **page citation** are the
+  clear, spot-check-confirmed wins of this lane; `tools/reconcile_clean_scan_lane.py`
+  therefore treats explanation length as a floor against a truncated body, not a quality
+  signal, when deciding which lane's body text to keep on a match.
+
+### Why 377, not ≥400: the concrete residual gap
+
+301 clean-scan entries against a 302-record corrected base reconciled to 377 (223 matched +
+78 new, 79 existing-only kept, minus 3 pre-existing near-duplicate pairs in the 302-set
+itself that the headword upgrade exposed and this pass resolved — see the note on the
+matcher below) — the count did **not** simply add, because most of what this lane found
+overlaps what the other two lanes already had (expected: same book). The honest remaining
+gap has two named causes, not "needs more effort" in the abstract:
+
+1. **No back-matter index in this source** (see above) — the technique that helped the
+   300-record lane close part of its gap does not transfer.
+2. **Phrase-tier recall is not fully exhausted.** The ZWNJ fix alone recovered 42 entries;
+   the same class of "real headword line silently rejected by an over-strict pattern" may
+   still have unrecovered instances — a systematic diff between all Devanagari-line
+   candidates and the currently-accepted set (rather than spot-check sampling) would find
+   them, but was not run this session given time already spent on the concurrent-session
+   collision recovery below.
+
+**A note on match-quality, since a matcher this important deserves it:** the first version
+of `tools/reconcile_clean_scan_lane.py`'s fuzzy matcher used a permissive OR of either
+signal crossing a low bar (skeleton ratio > 0.55 OR gloss ratio > 0.75), which produced a
+real false match — lane 3's unrelated `नर्तकन्यायः` ("the simile of a dancer") scored high
+enough against the existing `प्रपानकरसन्यायः` ("the simile of sherbet") purely from sharing
+the common `न्याय` suffix and the `"the simile of"` boilerplate opener. Caught by a
+post-merge `nyaya_slp1`-uniqueness check (never assume a fuzzy matcher is safe without one),
+root-caused, and fixed at the source: both signals now have the shared boilerplate stripped
+before comparison, and a match requires BOTH to corroborate (not either alone). The fix also
+surfaced 3 genuine pre-existing near-duplicate pairs in the 302-set itself (entries differing
+only by a trailing visarga — `araRyarodananyAya` vs `araRyarodananyAyaH` — that the org's own
+exact-`nyaya_slp1` dedup pass could not have caught, since the keys genuinely differ by one
+character); the script's post-merge dedup step resolves these too, logged not silently
+dropped.
+
 ## Follow-up (concrete, not "someone should look into this")
 
-1. **Vision-OCR the page images once archive.org's image server recovers**
-   (check [SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md)
-   first) — either the full 118 MB PDF or per-leaf IIIF fetches — and do the
-   literal 20-record image-based spot-check the Definition of Done asks for.
-2. **A genuinely OCR-garbled-text recovery pass** (vision-OCR or a
-   Sanskrit-aware OCR re-run of the same scan) is now the only remaining
-   lever for further count growth from this source; both the pattern-matching
-   and index-cross-reference extraction approaches are exhausted (see
-   "Residual gap" above and the dedup + false-positive correction above).
-3. **FEATURES_INDEX.md registration** — hold until either ≥400 or an
-   explicit reduced-scope sign-off (MG `@DECIDE`) accepting 302 (75.5%) as
-   the final count given the confirmed source ceiling.
+1. **Recover the 3 leaves that failed to fetch** (vol 1 p. 77, vol 2 p. 109, vol 3 p. 183 —
+   failed consistently across retries, not transient) — a handful of entries may sit only on
+   those pages.
+2. **Systematic phrase-tier recall audit** (see "Why 377, not ≥400" above) — diff all
+   Devanagari-line candidates against the currently-accepted set rather than relying on
+   spot-check sampling; the ZWNJ fix alone recovered 42 entries this session, so this class
+   of gap is real and likely not exhausted.
+3. **The 79 existing-only records** (no clean-scan counterpart matched) still carry only an
+   edition/part-level citation — either they fall in the 3 missing leaves above, or the
+   skeleton/gloss fuzzy-match in `tools/reconcile_clean_scan_lane.py` missed a real
+   correspondence (now that it requires stricter corroboration, it may under-match rather
+   than over-match — a middle-ground threshold could recover a few more without
+   reintroducing the false-positive class documented above).
+4. **Vision-OCR `YKTn_...`'s own page images once its image server recovers** (check
+   [SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md) first)
+   — superseded in practice by using the clean-scan source instead, but would let a future
+   session verify whether `YKTn_...` itself has entries neither alternate source recovered.
+5. **FEATURES_INDEX.md registration** — hold until either ≥400 (377/400 = 94.25%, the closest
+   yet) or an explicit reduced-scope sign-off (MG `@DECIDE`) accepting 377 as final given the
+   now twice-confirmed source ceiling.
 
 _Dr. Mārcis Gasūns_
