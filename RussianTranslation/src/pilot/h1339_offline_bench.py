@@ -255,6 +255,25 @@ def fake_cards_for(manifest, drop_sense_key=None, null_key=None):
     return results
 
 
+def store_semantic_hash(path):
+    """Content hash of the store with per-run volatile provenance (generated_at — freshly
+    stamped at every manifest generation) stripped; row order preserved (byte-stability of
+    everything non-volatile is part of the claim)."""
+    h = hashlib.sha256()
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
+            prov = row.get('provenance')
+            if isinstance(prov, dict):
+                prov.pop('generated_at', None)
+            h.update(json.dumps(row, ensure_ascii=False, sort_keys=True).encode('utf-8'))
+            h.update(b'\n')
+    return h.hexdigest()
+
+
 def semantic_hash(obj, volatile=('generated_at', 'ts', 'recorded_at', 'prepared_at',
                                  'promoted_at', 'claimed_at', 'expires_at', 'wf_file',
                                  'pipeline', 'cost', 'blocked_at', 'unblocked_at')):
@@ -401,6 +420,7 @@ def one_run(tag, keep=False):
                         + timings['store-write'])
 
     outputs['store_sha256'] = sha256_file(store)
+    outputs['store_semantic_sha256'] = store_semantic_hash(store)
     outputs['store_rows'] = sum(1 for ln in open(store, encoding='utf-8') if ln.strip())
     tm_path = os.path.join(tm_dir, 'translation_memory.ru.json')
     outputs['tm_sha256'] = (semantic_hash(json.load(open(tm_path, encoding='utf-8')))
@@ -409,7 +429,7 @@ def one_run(tag, keep=False):
     for lease in state['leases']:
         outputs['leases'][lease['id']]['final_state'] = lease.get('state')
     outputs['signature'] = semantic_hash({'leases': outputs['leases'],
-                                          'store': outputs['store_sha256'],
+                                          'store': outputs['store_semantic_sha256'],
                                           'rows': outputs['store_rows']})
     if not keep:
         shutil.rmtree(sandbox, ignore_errors=True)
