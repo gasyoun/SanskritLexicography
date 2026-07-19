@@ -1207,10 +1207,9 @@ def test_h1302_german_prose_residue_scan():
 
 
 def test_h1305_ru_style_mechanical():
-    # H1305: no-ё / terse editorial metalanguage («вм.», «в знач.») / in-<ls> `ed. Bomb.`
-    # left verbatim (source-resolution safety) -- the audit_window.py `ru_style` gate reuses
-    # ru_style_sweep.scan_violations exactly, so these fixtures pin BOTH the sweep and the gate.
-    from ru_style_sweep import scan_violations, sweep_text
+    # H1305 + review fix: hard style rules inspect structured Russian senses only;
+    # ambiguous narrative R2/R3 prose warns but never enters FLAGGED_JSON.
+    from ru_style_sweep import audit_workflow_results, scan_violations, style_diagnostics, sweep_text
 
     # ё-word flagged (R1)
     if 'R1_yo' not in scan_violations('пришёл поздно'):
@@ -1227,6 +1226,15 @@ def test_h1305_ru_style_mechanical():
     # metalanguage «в значении» flagged (R3)
     if 'R3_vznach' not in scan_violations('употребляется в значении «зуб»'):
         fail('H1305: metalanguage «в значении» not flagged R3_vznach')
+    # Ordinary prose stays natural and is diagnostic-only, not a hard violation.
+    for prose, rule in (
+            ('Он выступил вместо брата.', 'R2_vmesto'),
+            ('«в отдельные случаи [вместо того чтобы быть непрерывным]»', 'R2_vmesto'),
+            ('при māraṇa вместо abhra', 'R2_vmesto'),
+            ('Он понял знак в значении обещания.', 'R3_vznach')):
+        diagnostic = style_diagnostics(prose)
+        if rule in diagnostic['violations'] or rule not in diagnostic['ambiguous_rules']:
+            fail('H1305 review: narrative prose was not classified ambiguous: %s' % prose)
     # `ed. Bomb.` INSIDE <ls>...</ls> (standalone or embedded) is NEVER a violation --
     # rewriting it would break src/pwg_sources.py's citation-key resolution.
     if scan_violations('(так <ls>ed. Bomb.</ls>)'):
@@ -1245,6 +1253,29 @@ def test_h1305_ru_style_mechanical():
         fail('H1305: sweep_text did not apply the terse form / kept in-<ls> siglum verbatim')
     if counts.get('R2_vmesto') != 1 or counts.get('R4_bomb') != 0:
         fail('H1305: sweep_text per-rule counts do not match the expected split')
+
+    # The workflow gate consumes card.records[].senses[].russian directly. Notes,
+    # differentia and German text cannot false-flag an otherwise-clean translation.
+    results = [{
+        'key': 'clean-notes',
+        'card': {'notes': 'Переводчик пришёл.', 'records': [{'senses': [{
+            'german': 'вместо', 'russian': 'чистый текст', 'differentia': 'пришёл',
+        }]}]},
+    }, {
+        'key': 'multi-hard',
+        'card': {'records': [{'senses': [
+            {'russian': 'пришёл'},
+            {'russian': 'ошибочно вместо {#X#}'},
+        ]}]},
+    }, {
+        'key': 'narrative',
+        'card': {'records': [{'senses': [{'russian': 'Он выступил вместо брата.'}]}]},
+    }]
+    _, flagged, warned = audit_workflow_results(results)
+    if flagged != ['multi-hard']:
+        fail('H1305 review: structured workflow flags wrong keys: %r' % flagged)
+    if warned != ['narrative']:
+        fail('H1305 review: ambiguous workflow warning wrong keys: %r' % warned)
 
 
 def test_semantic_review_prioritizer():
