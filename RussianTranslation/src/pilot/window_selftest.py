@@ -6071,6 +6071,116 @@ def test_h1339_b10_b19_audit_chain_routing():
         fail('save_and_audit audit invocation lacks --write-requeue (B10)')
 
 
+def test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal():
+    """H1339 B11 + B12: the TM denylist gets a supersede lifecycle, and a crashed audit's
+    blast-radius requeue list is refused, never consumed mechanically.
+
+    B12: the denylist was append-forever and keyed on the INPUT address, so one defect
+    requeue disabled TM reuse of that card permanently even after a passing replacement
+    was promoted. B11: an unparseable child auditor requeues EVERY window key (fail-loud
+    artifact); requeue_from_audit consumed that list mechanically, denylisting the window.
+    """
+    import tempfile
+    import translation_memory as tm
+    import requeue_from_audit as rfa
+    import promote_final_cards as pfc
+    d = tempfile.mkdtemp()
+    dl = os.path.join(d, 'denylist.jsonl')
+    from window_common import append_jsonl_line
+    row = {'schema': 'pwg.translation_memory.denylist.v1', 'blocked_at': 'T'}
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:aaa'))
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:bbb'))
+    append_jsonl_line(dl, dict(row, kind='frag', fsha='f1'))
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:aaa', 'ru:bbb'} or denied['frags'] != {'f1'}:
+        fail('denylist seed did not load: %r' % denied)
+    # An unblock clears ONLY the exact match; a later re-denial re-blocks it.
+    tm.append_unblock(['ru:aaa'], ['f1'], reason='replaced_by_promotion', path=dl)
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:bbb'} or denied['frags'] != set():
+        fail('unblock did not clear exactly the matching denials: %r' % denied)
+    append_jsonl_line(dl, dict(row, kind='card', address='ru:aaa'))
+    if 'ru:aaa' not in tm.load_denylist(dl)['addresses']:
+        fail('a re-denial after an unblock must re-block (append order is chronology)')
+    # Promote-side clearing: only LANDED subcards' currently-denied state is cleared.
+    append_jsonl_line(dl, dict(row, kind='frag', fsha='f2'))
+    best = {
+        'x~~a': {'meta': {'input_hashes': {'x~~a': {'raw_sha256': 'aaa'}}},
+                 'card': {'frag_prov': [{'fsha': 'f2'}]}},
+        'y~~a': {'meta': {'input_hashes': {'y~~a': {'raw_sha256': 'bbb'}}}, 'card': {}},
+        'z~~a': {'meta': {'input_hashes': {'z~~a': {'raw_sha256': 'zzz'}}}, 'card': {}},
+    }
+    addrs, frags = pfc.clear_denials_for_promotion(best, blocked_subs=['y~~a'], denylist=dl)
+    if addrs != ['ru:aaa'] or frags != ['f2']:
+        fail('promotion cleared the wrong denial set: %r %r' % (addrs, frags))
+    denied = tm.load_denylist(dl)
+    if denied['addresses'] != {'ru:bbb'} or denied['frags'] != set():
+        fail('post-promotion denylist wrong (blocked subcard must stay denied): %r' % denied)
+    # B11: a crashed audit report beside the requeue files refuses the mechanical consume.
+    crash_dir = os.path.join(d, 'crash')
+    os.makedirs(crash_dir)
+    rq = os.path.join(crash_dir, 'requeue.keys.txt')
+    with open(rq, 'w', encoding='utf-8') as f:
+        f.write('k1\nk2\n')
+    with open(os.path.join(crash_dir, 'audit_window.report.json'), 'w', encoding='utf-8') as f:
+        json.dump({'crashed': ['sense_dupes-unparseable-verdict'], 'requeue': ['k1', 'k2']}, f)
+    try:
+        rfa.refuse_crashed_audit(rq, None)
+        fail('a crashed audit requeue list was not refused')
+    except SystemExit as e:
+        if 'CRASHED' not in str(e):
+            fail('crash refusal message wrong: %s' % e)
+    with open(os.path.join(crash_dir, 'audit_window.report.json'), 'w', encoding='utf-8') as f:
+        json.dump({'crashed': [], 'requeue': ['k1']}, f)
+    rfa.refuse_crashed_audit(rq, None)          # clean report -> no refusal
+
+
+def test_h1339_b13_b15_telemetry_and_siglum_precision():
+    """H1339 B13 + B15: the siglum trigger fires only on citation-shaped Russian, and an
+    outcome telemetry row can never be appended all-null.
+
+    B13: TRANSLATED_SOURCE_SIGLUM's open `ману\\w*` fired HIGH_CONFIDENCE on legitimate
+    prose («эпитет Ману», «манускрипт») -- unclearable requeue churn. B15: probe_log
+    cmd_outcome appended rows with every structured field null, corrupting scripted rate
+    math over the log.
+    """
+    import tempfile
+    from types import SimpleNamespace
+    import prompt_rule_audit as pra
+    import probe_log as pl
+    R = pra.TRANSLATED_SOURCE_SIGLUM
+    for prose in ('эпитет Ману', 'в манускрипте написано', 'манускрипт 4'):
+        if R.search(prose):
+            fail('siglum trigger fired on legitimate prose: %r' % prose)
+    for cite in ('Ману 4,126', 'Ригведа 9,67,30', 'Махабхарата 1,1816'):
+        if not R.search(cite):
+            fail('siglum trigger missed a genuinely translated citation: %r' % cite)
+    d = tempfile.mkdtemp()
+    old_jsonl = pl.JSONL
+    try:
+        pl.JSONL = os.path.join(d, 'probe.jsonl')
+        with open(pl.JSONL, 'w', encoding='utf-8') as f:
+            f.write(json.dumps({'run_id': 'r1', 'kind': 'launch'}) + '\n')
+
+        def ns(**kw):
+            base = dict(run_id='r1', cards=None, clean=None, agents=None, tokens=None,
+                        kill_timeouts=None, conn_errors=None, tripped=None, note='')
+            base.update(kw)
+            return SimpleNamespace(**base)
+        try:
+            pl.cmd_outcome(ns(note='ran fine'))
+            fail('an all-null outcome row was appended')
+        except SystemExit as e:
+            if 'REFUSED' not in str(e):
+                fail('all-null outcome refusal message wrong: %s' % e)
+        pl.cmd_outcome(ns(note='ok=11 cards=20 tokens=123456'))
+        out = [json.loads(ln) for ln in open(pl.JSONL, encoding='utf-8')][-1]['outcome']
+        if (out['cards'], out['audit_clean'], out['subagent_tokens']) != (20, 11, 123456):
+            fail('note-kv recovery did not populate the structured fields: %r' % out)
+    finally:
+        pl.JSONL = old_jsonl
+
+
 def test_every_stitch_emits_record_required():
     """C-02: the stitch must emit `h`/`grammar`, and must not collapse distinct homonyms.
 
@@ -6450,6 +6560,8 @@ def main():
         test_h1339_b03_tm_cards_schema_complete,
         test_h1339_b04_b09_worktree_safe_resolution,
         test_h1339_b10_b19_audit_chain_routing,
+        test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal,
+        test_h1339_b13_b15_telemetry_and_siglum_precision,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
         test_validator_has_a_live_caller,

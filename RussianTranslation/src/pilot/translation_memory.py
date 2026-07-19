@@ -275,7 +275,40 @@ def load_denylist(path=None):
                 out['addresses'].add(value)
             elif kind in ('fragment', 'frag', 'fsha') and value:
                 out['frags'].add(value)
+            elif kind == 'unblock':
+                # B12 (H1339): a denial is TEMPORARY -- once a gate-passing replacement is
+                # PROMOTED, an 'unblock' row supersedes the matching earlier denial(s). The
+                # file stays append-only; chronology == append order, so a later re-denial
+                # of the same address/fsha re-blocks it. Only exact matches clear.
+                if row.get('address'):
+                    out['addresses'].discard(row['address'])
+                if row.get('fsha'):
+                    out['frags'].discard(row['fsha'])
     return out
+
+
+def append_unblock(addresses=(), fshas=(), reason='', path=None):
+    """B12 (H1339): supersede matching denylist entries with 'unblock' rows.
+
+    Only for content DEMONSTRABLY replaced by a promotion that passed every gate -- the
+    caller (promote_final_cards) intersects against the live denylist first, so an unblock
+    row is only ever written for a currently-denied address/fsha. Same torn-line-safe
+    single-write append as the denial rows."""
+    p = denylist_path(path)
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec='seconds').replace('+00:00', 'Z')
+    n = 0
+    for address in addresses:
+        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
+                              'kind': 'unblock', 'address': address,
+                              'reason': reason, 'unblocked_at': now})
+        n += 1
+    for fsha in fshas:
+        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
+                              'kind': 'unblock', 'fsha': fsha,
+                              'reason': reason, 'unblocked_at': now})
+        n += 1
+    return n
 
 
 def _iter_store(store_path):
