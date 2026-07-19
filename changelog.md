@@ -14,6 +14,25 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **One-click case-government (Rektion) index + PW capitalized-marker gap closed (19-07-2026, Opus 4.8 `claude-opus-4-8`, [H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md))**:
+  answers DA-vote row N2 (card `vas~~h0_zz_pw00|samava`) — a searchable government surface plus
+  the fix for the PW `zz_pw*` supplement stratum, which writes case markers CAPITALIZED
+  (`(<ab>Instr.</ab>)`) that the lowercase-only extractor missed entirely (0 of 1,123 store
+  rows, incl. the N2 card). Made the marker regexes in
+  [`government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py)
+  case-insensitive (new `_cases()` lowercase-normaliser; one change serves both
+  `extract_government()` over the store and `run_census()` over raw `pwg.txt`). Store
+  government rows **508 → 1,756** (614 → 2,129 markers); raw `pwg.txt` ceiling **3,853 → 3,905**
+  (the +52 are sentence-initial "Mit dem `<ab>…</ab>`" prose government previously missed).
+  New `government.html`/`government.js` via `emit_government()` in
+  [`build_article_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_article_site.py):
+  case chips → every governing card (Instr. one-click returns 218 cards incl. vas/samava),
+  `index.html#g=<safe>` deep-links to the full entry, honest floor-vs-ceiling coverage banner;
+  cross-linked with the abbreviations dashboard. `census_stats.json` re-frozen; government
+  sidecar regenerated (local-only). SHARED in LANG_PARITY; census + site-builder selftests
+  wired into CI.
+
 ### Changed
 - **LaukikaNyaya phrase-tier recall broadened — 151 → 240 records (19-07-2026, Sonnet 5 `claude-sonnet-5`, [H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md) continuation)**:
   the non-`न्याय` phrase-tier headword gate in [`build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)
