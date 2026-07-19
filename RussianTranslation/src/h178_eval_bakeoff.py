@@ -6,7 +6,9 @@ Claude generation; the only generation is the cheap DeepSeek pairwise baseline).
 
 MG rulings baked in (H178, 05-07-2026 — do not re-litigate):
   * run ALL FOUR paradigms on the SAME sample: (a) MQM-adapted error annotation,
-    (b) adequacy/fluency Likert 1-5, (c) Direct Assessment 0-100, (d) pairwise
+    (b) adequacy/fluency Likert 1-5, (c) Direct Assessment (0-100 slider until
+    the 19-07-2026 h178_da vote; now clickable 1-5 per its V1 ruling — see
+    H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md section 5), (d) pairwise
     ranking (promoted Sonnet-5 card vs a DeepSeek baseline, blinded A/B);
   * score each rubric on reliability / discrimination / annotation cost /
     diagnostic value, then let the data pick the standing protocol;
@@ -17,10 +19,14 @@ MG rulings baked in (H178, 05-07-2026 — do not re-litigate):
     German -> modern-Russian dictionary glosses.
 
 Sheets follow the org /review-sheet convention (interactive HTML, never
-markdown checkboxes); the template is derived from build_h180_review_sheets.py
-with rubric widgets added, and the decisions.json export keeps the
-{sheet_id, generated, decided, items:[{id, decision, note}]} contract —
-rubric values are serialized as compact JSON inside `note` (prefix `H178:`),
+markdown checkboxes) plus the 19-07-2026 V1-V8 standard (visible id chips,
+IAST headword entry links, save-as banner, taller note box — merged in via
+review_sheet_standard.standard_config); the template is derived from
+build_h180_review_sheets.py with rubric widgets added, and the decisions.json
+export keeps the {sheet_id, generated, decided, items:[{id, decision, note,
+rating}]} contract — mqm/likert rubric values are serialized as compact JSON
+inside `note` (prefix `H178:`); the da sheet's 1-5 value rides the emitter's
+item-level `rating` field (legacy H178:{"da":0-100} note votes still compute),
 plus per-item vote timestamps `t` for the annotation-cost axis.
 
 PUBLISH SAFETY: the sample, the baseline, the DeepSeek channel and the sheets
@@ -38,7 +44,8 @@ Usage (in order):
 """
 import sys, os, io, json, html, random, re, time, argparse, collections, math
 
-from csl_pyutil import render_review_sheet
+from csl_pyutil import mark_cyrillic, render_review_sheet
+from review_sheet_standard import DA_RATING, pwg_entry_href, slp1_iast, standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -338,7 +345,11 @@ RUBRIC_JS = """
       var payload = { sheet_id: SHEET_ID, generated: %(generated_json)s, decided: decided,
         items: ids.map(function (id) {
           var rec = s[id] || {};
-          return { id: id, decision: rec.decision || null, note: rec.note || '' };
+          // rating passthrough: the clone above stripped the emitter's own
+          // (rating-aware) download listener, so the da sheet's 1-5 value
+          // must be re-attached here or it silently drops from the export.
+          return { id: id, decision: rec.decision || null, note: rec.note || '',
+                   rating: (rec.rating == null ? null : rec.rating) };
         }) };
       var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       var url = URL.createObjectURL(blob); var a = document.createElement('a');
@@ -368,10 +379,10 @@ def _rubric_panel(kind, it, blinded):
                 "adequacy (meaning preserved): %s &nbsp;&nbsp; fluency (natural scholarly Russian): %s"
                 "</div>" % (sel("adequacy"), sel("fluency_likert")))
     if kind == "da":
-        return ("<div class=\"panel\"><h4>Direct Assessment</h4>"
-                "0 (useless) … 100 (perfect): "
-                '<input type="range" min="0" max="100" value="50" data-rubric="da" style="width:60%%">'
-                ' <output data-for="da">50</output></div>')
+        # V1 (19-07-2026): the 0-100 slider is gone — the DA instrument is the
+        # emitter's clickable 1-5 rating row below the card (config["rating"]
+        # = DA_RATING), so the da sheet carries no data-rubric widget at all.
+        return ""
     if kind == "pairwise":
         return ("<div class=\"panel\"><h4>Pairwise</h4>"
                 "<div class=\"muted\">approve = A better · reject = B better · defer = tie. "
@@ -386,8 +397,9 @@ SHEETS = [
     ("h178_likert", "Adequacy/fluency Likert", "likert",
      "Rate adequacy and fluency 1–5, then approve (acceptable as-is) / reject (needs rework).",
      "Acceptable", "Needs rework"),
-    ("h178_da", "Direct Assessment 0–100", "da",
-     "Slide to the overall quality score; approve (>=70 in your judgment) / reject otherwise.",
+    ("h178_da", "Direct Assessment 1–5", "da",
+     "Click 1–5 below the card (5 = good, 3 = approval threshold); "
+     "Publishable auto-raises the rating to 4.",
      "Publishable", "Not publishable"),
     ("h178_pairwise", "Pairwise ranking (blinded)", "pairwise",
      "Which candidate is the better Russian rendering of the German source?",
@@ -408,23 +420,36 @@ def cmd_sheets():
         items = []
         for it in items_raw:
             panels = [("German source (PWG 5-layer)", "<pre>%s</pre>" % esc(it["de"]))]
+            # V7: highlight the Russian under judgment (mark_cyrillic AFTER
+            # esc); the German panel stays untouched. For pairwise BOTH
+            # blinded candidates get the identical treatment so no visual
+            # asymmetry leaks which one is the store card.
             if kind == "pairwise":
                 b = base.get(it["id"], {}).get("ru_baseline", "(baseline missing — run baseline)")
                 a_is_store = blinding[it["id"]]
                 ca = it["ru"] if a_is_store else b
                 cb = b if a_is_store else it["ru"]
-                panels.append(("Candidate A", "<pre>%s</pre>" % esc(ca)))
-                panels.append(("Candidate B", "<pre>%s</pre>" % esc(cb)))
+                panels.append(("Candidate A", "<pre>%s</pre>" % mark_cyrillic(esc(ca))))
+                panels.append(("Candidate B", "<pre>%s</pre>" % mark_cyrillic(esc(cb))))
             else:
-                panels.append(("Russian translation (promoted store)", "<pre>%s</pre>" % esc(it["ru"])))
-            items.append({
+                panels.append(("Russian translation (promoted store)",
+                               "<pre>%s</pre>" % mark_cyrillic(esc(it["ru"]))))
+            item = {
                 "id": it["id"], "filt": it["stratum"],
-                "title": "%s · %s" % (it["subcard"], it.get("sense_tag") or ""),
-                "badges": [it["stratum"], it.get("layer") or ""],
+                # V4: IAST headword as the card title (subcard · sense demoted
+                # to a badge; the full id stays citable via the V3 id chip).
+                "title": it.get("iast") or slp1_iast(it.get("root") or ""),
+                "badges": ["%s · %s" % (it["subcard"], it.get("sense_tag") or ""),
+                           it["stratum"], it.get("layer") or ""],
                 "question": esc(question) + _rubric_panel(kind, it, blinding),
                 "panels": panels,
-                "note_placeholder": "free-text note (H178 rubric line is auto-managed)",
-            })
+                "note_placeholder": ("free-text note" if kind == "da" else
+                                     "free-text note (H178 rubric line is auto-managed)"),
+            }
+            href = pwg_entry_href(it.get("root"))
+            if href:  # V4 entry deep link; omitted when the root has no column row
+                item["title_href"] = href
+            items.append(item)
         config = {
             "sheet_id": sheet_id, "title": title, "generated": GENERATED,
             "subtitle": "H178 B-1 bake-off — one human channel (MG); DeepSeek is the model channel; "
@@ -435,6 +460,12 @@ def cmd_sheets():
             # always prepends "all" and appends "unvoted only" itself.
             "filters": [("flagged", "flagged"), ("random", "random")],
         }
+        # 19-07-2026 standard: V3 id chips + V6 taller notes + V8 save-as
+        # banner (shared fragment), and V1/V5 DA 1-5 rating on the da sheet.
+        config.update(standard_config(
+            save_as="RussianTranslation\\pwg_ru\\eval\\%s.decisions.json" % sheet_id))
+        if kind == "da":
+            config["rating"] = DA_RATING
         html_out = render_review_sheet(items, config, extras=True)
         html_out = html_out.replace("</body>", RUBRIC_JS % {
             "sheet_id_json": json.dumps(sheet_id), "generated_json": json.dumps(GENERATED),
@@ -513,6 +544,27 @@ def _parse_h178_note(note):
         return {}
 
 
+def _da_vote_value(v):
+    """DA value for one exported vote item, across the V1 protocol change
+    (H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md section 5): the item-level
+    `rating` field (1-5 buttons, sheets regenerated after 19-07-2026) wins;
+    else the legacy H178:{"da":0-100} note line. Returns (value, scale) with
+    scale "1-5" or "0-100", or (None, None). Stored votes are never converted
+    — normalization onto the 1-5 grid happens at compute time only."""
+    if v.get("rating") is not None:
+        try:
+            return float(v["rating"]), "1-5"
+        except (TypeError, ValueError):
+            pass
+    da = _parse_h178_note(v.get("note")).get("da")
+    if da is not None:
+        try:
+            return float(da), "0-100"
+        except (TypeError, ValueError):
+            pass
+    return None, None
+
+
 def cmd_compute(args):
     """args.decisions: dir containing decisions.json files renamed h178_<rubric>.decisions.json"""
     ddir = args.decisions or EVAL_DIR
@@ -539,6 +591,7 @@ def cmd_compute(args):
         # sheet stamps s[id].t but export keeps only decision+note, so cost is
         # collected via MG's wall-clock note per sheet (see protocol doc).
         human_bin, model_bin, h_scores, m_scores, c_scores = [], [], [], [], []
+        da_scales = {}
         for iid, v in items.items():
             dj = (ds.get(iid) or {}).get("verdict") or {}
             rub = _parse_h178_note(v.get("note"))
@@ -554,10 +607,21 @@ def cmd_compute(args):
                 except Exception:
                     pass
             elif kind == "da":
-                try:
-                    h_scores.append(float(rub.get("da"))); m_scores.append(float(dj.get("da")))
-                except Exception:
-                    pass
+                hval, scale = _da_vote_value(v)
+                if hval is not None:
+                    # register section 5: normalize legacy 0-100 votes onto the
+                    # 1-5 grid at compute time (stored files stay unconverted),
+                    # recording per item which scale the vote was cast on.
+                    h15 = hval if scale == "1-5" else round(1 + 4 * hval / 100.0)
+                    da_scales[iid] = scale
+                    try:
+                        mval = float(dj.get("da"))
+                    except (TypeError, ValueError):
+                        mval = None
+                    if mval is not None:
+                        h_scores.append(h15); m_scores.append(mval)
+                    if iid in comet:
+                        c_scores.append((h15, comet[iid]))
             elif kind == "pairwise":
                 a_is_store = (ds.get(iid) or {}).get("a_is_store")
                 hmap = {"approve": "A", "reject": "B", "defer": "tie"}
@@ -565,9 +629,11 @@ def cmd_compute(args):
                 m = dj.get("pairwise")
                 if h and m:
                     human_bin.append(h); model_bin.append(m)
-            if iid in comet and kind == "da":
-                c_scores.append((float(rub.get("da", 0)), comet[iid]))
         entry = {"decided": len(items)}
+        if da_scales:
+            # register section 5 — per-item record of which DA scale each vote
+            # was cast on (mixed generations are expected mid-bake-off).
+            entry["da_scale_by_item"] = da_scales
         if human_bin:
             labels = sorted(set(human_bin) | set(model_bin))
             entry["kappa_human_x_model"] = round(_kappa(human_bin, model_bin, labels), 3)
@@ -590,6 +656,12 @@ def selftest():
     """Deterministic, no-network selftest: sample determinism + note parsing + stats."""
     assert _parse_h178_note('H178:{"da":"70"}\nfree text') == {"da": "70"}
     assert _parse_h178_note("no prefix") == {}
+    # V1 back-compat both directions: item-level rating (1-5) wins, legacy
+    # H178:{"da":0-100} note still parses, neither -> (None, None).
+    assert _da_vote_value({"rating": 4, "note": ""}) == (4.0, "1-5")
+    assert _da_vote_value({"note": 'H178:{"da":"70"}\nfree text'}) == (70.0, "0-100")
+    assert _da_vote_value({"rating": None, "note": 'H178:{"da":80}'}) == (80.0, "0-100")
+    assert _da_vote_value({"note": "no prefix"}) == (None, None)
     k = _kappa(["a", "b", "a", "a"], ["a", "b", "b", "a"], ["a", "b"])
     assert 0 < k < 1, k
     s = _spearman([1, 2, 3, 4], [10, 20, 30, 40])

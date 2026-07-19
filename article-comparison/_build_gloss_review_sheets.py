@@ -14,7 +14,7 @@ rows are applied to article-comparison/<word>.pd-min.ru.md col. 3 via
 where the gloss feeds a generated view.
 
 Usage:  python article-comparison/_build_gloss_review_sheets.py
-Needs:  pip install "csl-pyutil @ https://github.com/sanskrit-lexicon/csl-pyutil/archive/refs/tags/v0.2.0.zip"
+Needs:  pip install "csl-pyutil @ https://github.com/sanskrit-lexicon/csl-pyutil/archive/refs/tags/v0.3.0.zip"
 """
 
 import html
@@ -22,13 +22,20 @@ import json
 import sys
 from pathlib import Path
 
-from csl_pyutil import render_review_sheet
+from csl_pyutil import mark_cyrillic, render_review_sheet
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE.parent / "review"
+
+sys.path.append(str(HERE.parent / "RussianTranslation" / "src"))
+from review_sheet_standard import standard_config  # noqa: E402
+
+# V4 — the published per-word article page (the exact file the accepted votes
+# edit; publicly linked from article-comparison/README.md).
+ARTICLE_URL = "https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/{}"
 
 SEV_LABEL = {
     "H": "H — фактическая ошибка",
@@ -47,9 +54,9 @@ def build_question(it: dict) -> str:
     proposed_label = "Предлагается" if it["section"] == "A" else "Предлагаемая добавка"
     return (
         f'<div style="margin:2px 0"><b>EN (PD):</b> <i>{esc(it["en"])}</i></div>'
-        f'<div style="margin:2px 0"><b>{current_label}:</b> {esc(it["current_ru"])}</div>'
+        f'<div style="margin:2px 0"><b>{current_label}:</b> {mark_cyrillic(esc(it["current_ru"]))}</div>'
         f'<div style="margin:2px 0"><b>{proposed_label}:</b> '
-        f'<b>{esc(it["proposed_ru"])}</b></div>'
+        f'<b>{mark_cyrillic(esc(it["proposed_ru"]))}</b></div>'
         f'<div style="margin-top:6px"><b>Почему:</b> {it["why"]}</div>'
     )
 
@@ -86,6 +93,7 @@ def main() -> None:
                 "id": it["id"],
                 "filt": it["sev"],
                 "title": f'{it["sense"]} · {it["en"][:80]}',
+                "title_href": ARTICLE_URL.format(w["source_file"]),
                 "badges": [it["sev"], SECTION_LABEL[it["section"]]],
                 "question": build_question(it),
                 "panels": [],
@@ -95,6 +103,9 @@ def main() -> None:
         ]
         sheet_id = f"sanskritlexicography-article-comparison_{word}"
         config = {
+            **standard_config(
+                save_as=f"SanskritLexicography\\review\\{sheet_id}_decisions.json"
+            ),
             "sheet_id": sheet_id,
             "title": f'Глосс-ревью {w["headword_display"]} — правки ручных RU-глосс',
             "subtitle": (

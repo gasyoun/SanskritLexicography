@@ -1,242 +1,285 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Кочергина: okas · okya · guda · sphic — 4 кандидата на правку</title>
+<meta charset="utf-8">
+<title>Кочергина (learnsanskrit.ru): okas · okya · guda · sphic — 4 кандидата на правку — 4 items</title>
 <style>
-  :root {
-    --bg: #0f1115; --panel: #1a1d24; --panel2: #22262f; --text: #e8e8ea;
-    --muted: #9aa0ac; --accent: #6ea8fe; --green: #3fb950; --red: #f85149;
-    --amber: #d29922; --border: #30363d;
-  }
-  @media (prefers-color-scheme: light) {
-    :root { --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f1f4; --text:#1a1d24; --muted:#5b616e; --border:#d8dbe0; }
-  }
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
   * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
-  header { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border); padding:14px 20px; }
-  header h1 { margin:0 0 4px; font-size:1.15rem; }
-  header .sub { color:var(--muted); font-size:0.85rem; }
-  .tally { display:flex; gap:14px; margin-top:10px; font-size:0.85rem; flex-wrap:wrap; }
-  .tally span { padding:3px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--border); }
-  .tally b { font-variant-numeric: tabular-nums; }
-  main { max-width: 980px; margin: 0 auto; padding: 20px; }
-  .toolbar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center; }
-  button.dl { background:var(--accent); color:#0b0d10; border:none; border-radius:8px; padding:9px 16px; font-weight:600; cursor:pointer; }
-  button.dl:hover { opacity:0.9; }
-  .hint { color:var(--muted); font-size:0.8rem; }
-  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:18px; transition: border-color .15s; }
-  .card.voted-approve { border-color: var(--green); }
-  .card.voted-reject { border-color: var(--red); }
-  .card.voted-defer { border-color: var(--amber); }
-  .card.focused { outline: 2px solid var(--accent); }
-  .card h2 { margin:0 0 2px; font-size:1.05rem; }
-  .card .id { color:var(--muted); font-size:0.78rem; margin-bottom:10px; }
-  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin:12px 0; }
-  @media (max-width:720px) { .grid { grid-template-columns: 1fr; } }
-  .box { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.92rem; }
-  .box h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
-  .box.asis h3 { color:var(--red); }
-  .box.proposed h3 { color:var(--green); }
-  .evidence { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.88rem; margin-top:10px; }
-  .evidence h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
-  .evidence ul { margin:4px 0 0; padding-left:18px; }
-  .evidence li { margin-bottom:4px; }
-  .verdict-flag { display:inline-block; font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:10px; margin-left:8px; vertical-align:middle; }
-  .verdict-flag.change { background:rgba(63,185,80,.15); color:var(--green); border:1px solid var(--green); }
-  .verdict-flag.noaction { background:rgba(210,153,34,.15); color:var(--amber); border:1px solid var(--amber); }
-  .votebar { display:flex; gap:8px; margin-top:14px; align-items:center; flex-wrap:wrap; }
-  .votebar button { border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px; padding:8px 14px; cursor:pointer; font-size:0.88rem; }
-  .votebar button.approve.active { background:var(--green); color:#06210c; border-color:var(--green); }
-  .votebar button.reject.active { background:var(--red); color:#2b0705; border-color:var(--red); }
-  .votebar button.defer.active { background:var(--amber); color:#2b1c02; border-color:var(--amber); }
-  .votebar .key { opacity:.6; font-size:0.75rem; }
-  textarea.note { width:100%; margin-top:10px; min-height:46px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:0.88rem; resize:vertical; }
-  footer { text-align:center; color:var(--muted); font-size:0.78rem; padding:20px; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:88px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+  .idchip { font-family:ui-monospace,Consolas,monospace; font-size:11px; color:var(--muted);
+            background:var(--panel2); border:1px solid var(--border); padding:2px 7px;
+            border-radius:6px; user-select:all; }
+  .card header { gap:10px; }
+  .hw a.hwlink { color:inherit; text-decoration:underline dotted; text-underline-offset:3px; }
+  .hw a.hwlink:hover { color:var(--accent); }
+  mark.hl { background:#453407; color:#ffd75e; padding:0 2px; border-radius:3px; }
+  .savebanner { max-width:980px; margin:10px auto 0; padding:8px 20px; font-size:12.5px; }
+  .savebanner code { background:var(--panel2); border:1px solid var(--border); padding:1px 6px; border-radius:5px; }
+  .ratingrow { display:flex; align-items:center; gap:6px; margin-top:10px; flex-wrap:wrap; }
+  .ratinglabel { font-size:12px; color:var(--muted); margin-right:4px; }
+  button.rate { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                width:34px; padding:6px 0; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.rate.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  button.rate.active.below { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .rate-state { font-size:12px; color:var(--muted); margin-left:4px; }
 </style>
 </head>
 <body>
-<header>
-  <h1>Кочергина (learnsanskrit.ru): okas · okya · guda · sphic — 4 кандидата на правку</h1>
-  <div class="sub">H779 · Nagari-list 2013 re-verification · сгенерировано 12-07-2026 (Sonnet 5, <code>claude-sonnet-5</code>) · sheet_id: <code>sanskritlexicography-kochergina-okas-guda-sphic_4rows</code></div>
-  <div class="tally" id="tally"></div>
-</header>
-<main>
-  <div class="toolbar">
-    <button class="dl" id="dlBtn">Download decisions.json</button>
-    <span class="hint">клавиши: a=approve · r=reject · d=defer · ↑/↓ = следующая карточка (кликните карточку, чтобы сфокусировать)</span>
+<header class="top">
+  <div>
+    <h1>Кочергина (learnsanskrit.ru): okas · okya · guda · sphic — 4 кандидата на правку — 4 items</h1>
+    <div class="sub">Generated 19-07-2026 &middot; sheet_id <code>sanskritlexicography-kochergina-okas-guda-sphic_4rows</code> &middot; H779 · Nagari-list 2013 re-verification · перегенерировано по стандарту 19-07-2026 из ручного листа 12-07-2026 (Sonnet 5, claude-sonnet-5)</div>
   </div>
-  <div id="items"></div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">4</span></span>
+  </div>
+</header>
+<div class="savebanner">&#128229; Your export downloads as <code>sanskritlexicography-kochergina-okas-guda-sphic_4rows_decisions.json</code> &rarr; save it to <code>RussianTranslation\review\sanskritlexicography-kochergina-okas-guda-sphic_4rows_decisions.json</code> (the <code>sheet_id</code> inside the file is <code>sanskritlexicography-kochergina-okas-guda-sphic_4rows</code> — that is how a later session knows which sheet these decisions belong to).</div>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="change">нужна правка</button><button data-filter="noaction">без изменений</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="okas" data-filt="change">
+    <header><div class="hw">ओकस् okas (n.) — сомнительный смысл 3 «родина» <span class="badge">нужна правка</span></div><span class="idchip" title="card id — cite this id back when discussing this card">okas</span></header>
+    <div class="question"></div>
+    <div class="panel"><h4>Как сейчас (Кочергина)</h4>1) <mark class="hl">удовольствие</mark> 2) <mark class="hl">жилище-приют</mark>, <mark class="hl">убежище</mark> 3) <mark class="hl">родина</mark></div><div class="panel"><h4>Предлагается</h4><mark class="hl">Снять</mark>/<mark class="hl">пометить</mark> <mark class="hl">смысл</mark> 3 «<mark class="hl">родина</mark>» <mark class="hl">как</mark> <mark class="hl">незасвидетельствованный</mark>. <mark class="hl">Оставить</mark>: 1) <mark class="hl">удовольствие</mark> (<mark class="hl">первично</mark>, <mark class="hl">только</mark> RV) 2) <mark class="hl">жилище</mark>/<mark class="hl">приют</mark>/<mark class="hl">убежище</mark> (<mark class="hl">вторично</mark>, Böhtlingk <mark class="hl">от</mark> √uc).</div><div class="panel"><h4>Аттестация / источники</h4><ul><li>MW s.v. okas — «house, dwelling, place of abiding, abode, home, refuge, asylum {RV. AV. MBh. BhP.}» — смысла «родина/отчизна» нет ни в одной цитате.</li><li>Apte s.v. okas — «house, residence; asylum, refuge; resting place; pleasure, gratification» — тоже без «родины».</li><li>Ни один локус RV не даёт смысла «родина/отчизна»; предположительно смысл взят из последнего (самого широкого) значения у Grassmann и там переусложнён.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="okya" data-filt="change">
+    <header><div class="hw">ओक्य okya (mfn./n.) — логически невозможный дериват «связанный с родиной» <span class="badge">нужна правка</span></div><span class="idchip" title="card id — cite this id back when discussing this card">okya</span></header>
+    <div class="question"></div>
+    <div class="panel"><h4>Как сейчас (Кочергина)</h4>1. 1) <mark class="hl">родной</mark> 2) <mark class="hl">связанный</mark> <mark class="hl">с</mark> <mark class="hl">родиной</mark>  2. n. <mark class="hl">см</mark>. ओकस् 3)</div><div class="panel"><h4>Предлагается</h4><mark class="hl">Заменить</mark> <mark class="hl">на</mark> «<mark class="hl">домашний</mark>, <mark class="hl">благоприятный</mark> <mark class="hl">для</mark> <mark class="hl">дома</mark>/<mark class="hl">обитателей</mark>»; <mark class="hl">снять</mark> «<mark class="hl">связанный</mark> <mark class="hl">с</mark> <mark class="hl">родиной</mark>» (<mark class="hl">дериват</mark> <mark class="hl">не</mark> <mark class="hl">может</mark> <mark class="hl">нести</mark> <mark class="hl">смысл</mark>, <mark class="hl">которого</mark> <mark class="hl">нет</mark> <mark class="hl">у</mark> <mark class="hl">базы</mark>) <mark class="hl">и</mark> «<mark class="hl">родной</mark>» (<mark class="hl">не</mark> <mark class="hl">подтверждается</mark>).</div><div class="panel"><h4>Аттестация / источники</h4><ul><li>MW s.v. okya — «fit for or belonging to a home {RV 9.86.45}».</li><li>Apte s.v. okya — «(1) Favourable to the house, i.e. to its inmates (2) Good for a house, kind to a household».</li><li>Все 8 вхождений в RV перепроверены напрямую в акцентуированном корпусе VedaWeb (Scarlata/Widmer/Lubotsky, VisualDCS/non-derived/vedaweb/accented_text_scarlata_widmer_lubotsky.json): 1.91.13 svá okyè · 1.132.5 índra okyàṃ didhiṣanta dhītáyaḥ · 3.42.8 túbhyéd indra svá okyè · 8.25.17 ánu pū́rvāṇy okyā̀ · 8.49.3 ánv okyàṃ sáraḥ · 8.72.14 svám okyàṃ · 9.86.45 rāyá okyàḥ · 10.44.9 astv okyàṃ — везде «приютное/благоприятное место», нигде «родина».</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="guda" data-filt="noaction">
+    <header><div class="hw">गुद guda / गुदा gudā — заявленный «гендерный дефект» ОПРОВЕРГНУТ <span class="badge">без изменений</span></div><span class="idchip" title="card id — cite this id back when discussing this card">guda</span></header>
+    <div class="question"></div>
+    <div class="panel"><h4>Как сейчас (Кочергина)</h4><mark class="hl">У</mark> <mark class="hl">Кочергиной</mark> <mark class="hl">УЖЕ</mark> <mark class="hl">ЕСТЬ</mark> <mark class="hl">два</mark> <mark class="hl">отдельных</mark> <mark class="hl">гнезда</mark>: guda m.pl. «1) <mark class="hl">кишечник</mark> 2) <mark class="hl">анат</mark>. <mark class="hl">задний</mark> <mark class="hl">проход</mark>» <mark class="hl">и</mark> gudā f.pl. «<mark class="hl">кишки</mark>» (<mark class="hl">проверено</mark> <mark class="hl">напрямую</mark> <mark class="hl">в</mark> <mark class="hl">Кочергина</mark>.no_tags, <mark class="hl">корпус</mark> SamudraManthanam).</div><div class="panel"><h4>Предлагается</h4><mark class="hl">БЕЗ</mark> <mark class="hl">ИЗМЕНЕНИЙ</mark>. <mark class="hl">Тезис</mark> <mark class="hl">ветки</mark> 2013 <mark class="hl">г</mark>. («<mark class="hl">у</mark> <mark class="hl">Кочергиной</mark> <mark class="hl">только</mark> m.pl., <mark class="hl">а</mark> <mark class="hl">в</mark> RV — f.pl., <mark class="hl">это</mark> <mark class="hl">дефект</mark>») <mark class="hl">не</mark> <mark class="hl">подтверждается</mark> <mark class="hl">текущим</mark> <mark class="hl">текстом</mark> <mark class="hl">словаря</mark> — <mark class="hl">раздельное</mark> f.-<mark class="hl">гнездо</mark> <mark class="hl">уже</mark> <mark class="hl">есть</mark>. <mark class="hl">Опционально</mark> — <mark class="hl">информационное</mark> <mark class="hl">примечание</mark>: <mark class="hl">масс</mark>. guda <mark class="hl">у</mark> MW <mark class="hl">цитируется</mark> <mark class="hl">только</mark> <mark class="hl">из</mark> VS/TS/ShBr/Kauś (<mark class="hl">яджурведийская</mark> <mark class="hl">проза</mark>), <mark class="hl">НЕ</mark> <mark class="hl">из</mark> RV; RV 10.163.3 <mark class="hl">даёт</mark> <mark class="hl">только</mark> <mark class="hl">женский</mark> <mark class="hl">род</mark> gudā.</div><div class="panel"><h4>Аттестация / источники</h4><ul><li>Кочергина.no_tags, строка 8155: «गुद /guda/ m. pl. 1) кишечник 2) анат. задний проход».</li><li>Кочергина.no_tags, строка 8156 (сразу следом): «गुदा /gudā/ f. pl. кишки».</li><li>MW s.v. guda — «m. an intestine, entrail, rectum, anus {VS. TS. ShBr. Kauś.} (ifc. f. ā)».</li><li>RV 10.163.3 перепроверено напрямую в акцентуированном корпусе VedaWeb: «āntrébhyas te gúdābhyo vaniṣṭhór hŕ̥dayād ádhi» — gúdābhyaḥ = dat./abl.pl. жен. рода gudā, что соответствует уже имеющемуся отдельному f.-гнезду у Кочергиной.</li><li>Порядок смыслов (кишечник → задний проход) внутри guda m. уже вторичен для «ануса» — претензия ветки 2013 г. по порядку смыслов тоже не актуальна.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="sphic" data-filt="change">
+    <header><div class="hw">स्फिच् sphic / स्फिगी sphigī / स्फिज् sphij — отсутствует заглавное слово + перепутана ссылка <span class="badge">нужна правка</span></div><span class="idchip" title="card id — cite this id back when discussing this card">sphic</span></header>
+    <div class="question"></div>
+    <div class="panel"><h4>Как сейчас (Кочергина)</h4>sphigī f. «<mark class="hl">бедро</mark>»; sphij f. «<mark class="hl">см</mark>. sphigī»; <mark class="hl">заглавного</mark> <mark class="hl">слова</mark> sphic <mark class="hl">НЕТ</mark> <mark class="hl">вообще</mark>.</div><div class="panel"><h4>Предлагается</h4>(a) <mark class="hl">добавить</mark> <mark class="hl">недостающее</mark> <mark class="hl">заглавное</mark> <mark class="hl">слово</mark> sphic/sphik f. «<mark class="hl">ягодица</mark>, <mark class="hl">бедро</mark> (<mark class="hl">мн</mark>. <mark class="hl">ягодицы</mark>)» <mark class="hl">как</mark> <mark class="hl">первичную</mark> <mark class="hl">форму</mark>; (b) <mark class="hl">исправить</mark> <mark class="hl">глоссу</mark> sphigī <mark class="hl">с</mark> «<mark class="hl">бедро</mark>» <mark class="hl">на</mark> «<mark class="hl">ягодица</mark>, <mark class="hl">бедро</mark>» (<mark class="hl">текущая</mark> <mark class="hl">глосса</mark> — <mark class="hl">смысловая</mark> <mark class="hl">ошибка</mark>); (c) <mark class="hl">развернуть</mark> <mark class="hl">направление</mark> <mark class="hl">перекрёстной</mark> <mark class="hl">ссылки</mark>: sphij <mark class="hl">и</mark> sphigī → sphic (<mark class="hl">как</mark> <mark class="hl">у</mark> MW), <mark class="hl">а</mark> <mark class="hl">не</mark> <mark class="hl">наоборот</mark>.</div><div class="panel"><h4>Аттестация / источники</h4><ul><li>MW s.v. sphic — «sphic or sphij f. (nom. sphik) a buttock, hip {ShāṅkhGṛ. Mn. MBh &amp;c.}».</li><li>MW s.v. sphigī — «f. = sphic, a buttock {RV.}» — собственная ссылка MW идёт sphigī → sphic, ровно наоборот направлению у Кочергиной (sphij → sphigī).</li><li>Apte s.v. sphic — «f. Buttocks, hips».</li><li>KEWA III:542-543 трактует sphik/sphij/sphic как варианты одного этимона.</li><li>RV-аттестация перепроверена напрямую в акцентуированном корпусе VedaWeb: 3.32.11 «…yád anyáyā sphigyā̀ kṣā́m ávasthāḥ» и 8.4.8 «savyā́m ánu sphigyàṃ vāvase vŕ̥ṣā» — обе формы sphigī; голого sphic/sphij в RV нет (согласуется с MW, где эти формы цитируются из более поздних текстов: ShāṅkhGṛ./Manu/MBh).</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
 </main>
-<footer>Голоса сохраняются в localStorage браузера (ключ = sheet_id). Экспортируйте decisions.json после прохода.</footer>
-
+<footer class="hint">Кочергина re-verification (H779) — approve = принять вердикт карточки (правка или «без изменений»), reject = отклонить его. Keyboard: <kbd>a</kbd> Approve &middot; <kbd>r</kbd> Reject
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
 <script>
-const SHEET_ID = "sanskritlexicography-kochergina-okas-guda-sphic_4rows";
-const ITEMS = [
-  {
-    id: "okas",
-    title: "ओकस् okas (n.) — сомнительный смысл 3 «родина»",
-    flag: "change",
-    asis: "1) удовольствие 2) жилище-приют, убежище 3) родина",
-    proposed: "Снять/пометить смысл 3 «родина» как незасвидетельствованный. Оставить: 1) удовольствие (первично, только RV) 2) жилище/приют/убежище (вторично, Böhtlingk от √uc).",
-    evidence: [
-      "MW s.v. okas — «house, dwelling, place of abiding, abode, home, refuge, asylum {RV. AV. MBh. BhP.}» — смысла «родина/отчизна» нет ни в одной цитате.",
-      "Apte s.v. okas — «house, residence; asylum, refuge; resting place; pleasure, gratification» — тоже без «родины».",
-      "Ни один локус RV не даёт смысла «родина/отчизна»; предположительно смысл взят из последнего (самого широкого) значения у Grassmann и там переусложнён."
-    ]
-  },
-  {
-    id: "okya",
-    title: "ओक्य okya (mfn./n.) — логически невозможный дериват «связанный с родиной»",
-    flag: "change",
-    asis: "1. 1) родной 2) связанный с родиной  2. n. см. ओकस् 3)",
-    proposed: "Заменить на «домашний, благоприятный для дома/обитателей»; снять «связанный с родиной» (дериват не может нести смысл, которого нет у базы) и «родной» (не подтверждается).",
-    evidence: [
-      "MW s.v. okya — «fit for or belonging to a home {RV 9.86.45}».",
-      "Apte s.v. okya — «(1) Favourable to the house, i.e. to its inmates (2) Good for a house, kind to a household».",
-      "Все 8 вхождений в RV перепроверены напрямую в акцентуированном корпусе VedaWeb (Scarlata/Widmer/Lubotsky, VisualDCS/non-derived/vedaweb/accented_text_scarlata_widmer_lubotsky.json): 1.91.13 svá okyè · 1.132.5 índra okyàṃ didhiṣanta dhītáyaḥ · 3.42.8 túbhyéd indra svá okyè · 8.25.17 ánu pū́rvāṇy okyā̀ · 8.49.3 ánv okyàṃ sáraḥ · 8.72.14 svám okyàṃ · 9.86.45 rāyá okyàḥ · 10.44.9 astv okyàṃ — везде «приютное/благоприятное место», нигде «родина»."
-    ]
-  },
-  {
-    id: "guda",
-    title: "गुद guda / गुदा gudā — заявленный «гендерный дефект» ОПРОВЕРГНУТ",
-    flag: "noaction",
-    asis: "У Кочергиной УЖЕ ЕСТЬ два отдельных гнезда: guda m.pl. «1) кишечник 2) анат. задний проход» и gudā f.pl. «кишки» (проверено напрямую в Кочергина.no_tags, корпус SamudraManthanam).",
-    proposed: "БЕЗ ИЗМЕНЕНИЙ. Тезис ветки 2013 г. («у Кочергиной только m.pl., а в RV — f.pl., это дефект») не подтверждается текущим текстом словаря — раздельное f.-гнездо уже есть. Опционально — информационное примечание: масс. guda у MW цитируется только из VS/TS/ShBr/Kauś (яджурведийская проза), НЕ из RV; RV 10.163.3 даёт только женский род gudā.",
-    evidence: [
-      "Кочергина.no_tags, строка 8155: «गुद /guda/ m. pl. 1) кишечник 2) анат. задний проход».",
-      "Кочергина.no_tags, строка 8156 (сразу следом): «गुदा /gudā/ f. pl. кишки».",
-      "MW s.v. guda — «m. an intestine, entrail, rectum, anus {VS. TS. ShBr. Kauś.} (ifc. f. ā)».",
-      "RV 10.163.3 перепроверено напрямую в акцентуированном корпусе VedaWeb: «āntrébhyas te gúdābhyo vaniṣṭhór hŕ̥dayād ádhi» — gúdābhyaḥ = dat./abl.pl. жен. рода gudā, что соответствует уже имеющемуся отдельному f.-гнезду у Кочергиной.",
-      "Порядок смыслов (кишечник → задний проход) внутри guda m. уже вторичен для «ануса» — претензия ветки 2013 г. по порядку смыслов тоже не актуальна."
-    ]
-  },
-  {
-    id: "sphic",
-    title: "स्फिच् sphic / स्फिगी sphigī / स्फिज् sphij — отсутствует заглавное слово + перепутана ссылка",
-    flag: "change",
-    asis: "sphigī f. «бедро»; sphij f. «см. sphigī»; заглавного слова sphic НЕТ вообще.",
-    proposed: "(a) добавить недостающее заглавное слово sphic/sphik f. «ягодица, бедро (мн. ягодицы)» как первичную форму; (b) исправить глоссу sphigī с «бедро» на «ягодица, бедро» (текущая глосса — смысловая ошибка); (c) развернуть направление перекрёстной ссылки: sphij и sphigī → sphic (как у MW), а не наоборот.",
-    evidence: [
-      "MW s.v. sphic — «sphic or sphij f. (nom. sphik) a buttock, hip {ShāṅkhGṛ. Mn. MBh &c.}».",
-      "MW s.v. sphigī — «f. = sphic, a buttock {RV.}» — собственная ссылка MW идёт sphigī → sphic, ровно наоборот направлению у Кочергиной (sphij → sphigī).",
-      "Apte s.v. sphic — «f. Buttocks, hips».",
-      "KEWA III:542-543 трактует sphik/sphij/sphic как варианты одного этимона.",
-      "RV-аттестация перепроверена напрямую в акцентуированном корпусе VedaWeb: 3.32.11 «…yád anyáyā sphigyā̀ kṣā́m ávasthāḥ» и 8.4.8 «savyā́m ánu sphigyàṃ vāvase vŕ̥ṣā» — обе формы sphigī; голого sphic/sphij в RV нет (согласуется с MW, где эти формы цитируются из более поздних текстов: ShāṅkhGṛ./Manu/MBh)."
-    ]
+(function () {
+  var SHEET_ID = "sanskritlexicography-kochergina-okas-guda-sphic_4rows";
+  var NEW_KEY = 'review-sheet:' + SHEET_ID;  /* csl_pyutil emitter key */
+  var OLD_KEY = 'reviewsheet:' + SHEET_ID;   /* hand-authored 12-07-2026 page key */
+  try {
+    var newRaw = localStorage.getItem(NEW_KEY);
+    var oldRaw = localStorage.getItem(OLD_KEY);
+    if (oldRaw && (!newRaw || newRaw === '{}')) {
+      var old = JSON.parse(oldRaw) || {};
+      var migrated = {};
+      ["okas", "okya", "guda", "sphic"].forEach(function (id) {
+        var rec = old[id];
+        if (!rec) return;
+        var out = {};
+        if (rec.decision === 'approve' || rec.decision === 'reject' || rec.decision === 'defer') {
+          out.decision = rec.decision;
+        }
+        if (typeof rec.note === 'string' && rec.note) { out.note = rec.note; }
+        if (out.decision || out.note) { migrated[id] = out; }
+      });
+      if (Object.keys(migrated).length) {
+        localStorage.setItem(NEW_KEY, JSON.stringify(migrated));
+      }
+    }
+  } catch (e) { /* never block the sheet on migration */ }
+})();
+</script>
+<script>
+(function () {
+  var SHEET_ID = "sanskritlexicography-kochergina-okas-guda-sphic_4rows";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["okas", "okya", "guda", "sphic"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
   }
-];
-
-const state = JSON.parse(localStorage.getItem("reviewsheet:" + SHEET_ID) || "{}");
-function save() { localStorage.setItem("reviewsheet:" + SHEET_ID, JSON.stringify(state)); renderTally(); }
-
-function renderTally() {
-  const counts = {approve:0, reject:0, defer:0, unvoted:0};
-  ITEMS.forEach(it => {
-    const d = state[it.id] && state[it.id].decision;
-    if (d === "approve") counts.approve++;
-    else if (d === "reject") counts.reject++;
-    else if (d === "defer") counts.defer++;
-    else counts.unvoted++;
-  });
-  document.getElementById("tally").innerHTML =
-    `<span>Всего: <b>${ITEMS.length}</b></span>` +
-    `<span>✅ Approve: <b>${counts.approve}</b></span>` +
-    `<span>❌ Reject: <b>${counts.reject}</b></span>` +
-    `<span>⏸ Defer: <b>${counts.defer}</b></span>` +
-    `<span>⬜ Не голосовано: <b>${counts.unvoted}</b></span>`;
-}
-
-function vote(id, decision) {
-  state[id] = state[id] || {};
-  state[id].decision = (state[id].decision === decision) ? null : decision;
-  save();
-  updateCard(id);
-}
-
-function noteChange(id, val) {
-  state[id] = state[id] || {};
-  state[id].note = val;
-  save();
-}
-
-function updateCard(id) {
-  const card = document.getElementById("card-" + id);
-  card.classList.remove("voted-approve", "voted-reject", "voted-defer");
-  const d = state[id] && state[id].decision;
-  if (d) card.classList.add("voted-" + d);
-  ["approve","reject","defer"].forEach(k => {
-    document.getElementById(`btn-${id}-${k}`).classList.toggle("active", d === k);
-  });
-}
-
-function render() {
-  const wrap = document.getElementById("items");
-  wrap.innerHTML = "";
-  ITEMS.forEach((it, idx) => {
-    const div = document.createElement("div");
-    div.className = "card";
-    div.id = "card-" + it.id;
-    div.tabIndex = 0;
-    div.innerHTML = `
-      <h2>${it.title}<span class="verdict-flag ${it.flag}">${it.flag === 'change' ? 'нужна правка' : 'без изменений'}</span></h2>
-      <div class="id">#${idx+1} · id: ${it.id}</div>
-      <div class="grid">
-        <div class="box asis"><h3>Как сейчас (Кочергина)</h3>${it.asis}</div>
-        <div class="box proposed"><h3>Предлагается</h3>${it.proposed}</div>
-      </div>
-      <div class="evidence"><h3>Аттестация / источники</h3><ul>${it.evidence.map(e => `<li>${e}</li>`).join("")}</ul></div>
-      <div class="votebar">
-        <button class="approve" id="btn-${it.id}-approve" onclick="vote('${it.id}','approve')">✅ Approve <span class="key">(a)</span></button>
-        <button class="reject" id="btn-${it.id}-reject" onclick="vote('${it.id}','reject')">❌ Reject <span class="key">(r)</span></button>
-        <button class="defer" id="btn-${it.id}-defer" onclick="vote('${it.id}','defer')">⏸ Defer <span class="key">(d)</span></button>
-      </div>
-      <textarea class="note" placeholder="Заметка (необязательно)…" oninput="noteChange('${it.id}', this.value)">${(state[it.id] && state[it.id].note) || ""}</textarea>
-    `;
-    wrap.appendChild(div);
-    updateCard(it.id);
-  });
-}
-
-let focusedIdx = 0;
-document.addEventListener("keydown", (e) => {
-  const active = document.activeElement;
-  if (active && active.tagName === "TEXTAREA") return;
-  const cards = ITEMS.map(it => it.id);
-  if (e.key === "ArrowDown") { focusedIdx = Math.min(focusedIdx+1, cards.length-1); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
-  if (e.key === "ArrowUp") { focusedIdx = Math.max(focusedIdx-1, 0); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
-  if (["a","r","d"].includes(e.key)) {
-    const id = cards[focusedIdx];
-    const map = {a:"approve", r:"reject", d:"defer"};
-    vote(id, map[e.key]);
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
   }
-});
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "19-07-2026", decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
 
-document.getElementById("dlBtn").addEventListener("click", () => {
-  const decided = ITEMS.filter(it => state[it.id] && state[it.id].decision).length;
-  const payload = {
-    sheet_id: SHEET_ID,
-    generated: "12-07-2026",
-    decided: decided,
-    items: ITEMS.map(it => ({
-      id: it.id,
-      decision: (state[it.id] && state[it.id].decision) || null,
-      note: (state[it.id] && state[it.id].note) || ""
-    }))
-  };
-  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: "application/json"});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "sanskritlexicography-kochergina-okas-guda-sphic_4rows_decisions.json";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-});
-
-render();
-renderTally();
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+})();
 </script>
 </body>
 </html>

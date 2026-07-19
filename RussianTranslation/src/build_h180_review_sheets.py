@@ -4,11 +4,16 @@
 sheets, following the org /review-sheet convention (interactive HTML, never
 markdown checkboxes — [[feedback_interactive_review_not_checkboxes]]).
 
-Reuses the self-contained-HTML pattern of build_renou_pilot_sheet.py: one card
-per item, approve/reject/defer + free-text note, running tally, localStorage
-persistence, keyboard shortcuts, and a "Download decisions.json" export matching
-the {sheet_id, generated, decided, items:[{id, decision, note}]} contract that
-/decisions-apply consumes.
+Rendering is the shared csl_pyutil.render_review_sheet emitter (v0.3.0 — this
+script was its donor, so the item dicts already match its schema), extras on,
+plus the 19-07-2026 V1–V8 standard wiring from review_sheet_standard (visible
+id chips, IAST headword links into the kosha colocation viewer, taller note
+box, save-as banner, RU-run highlighting). The export matches the {sheet_id,
+generated, decided, items:[{id, decision, note}]} contract that
+/decisions-apply consumes; the download names itself <sheet_id>_decisions.json
+(the emitter's fix for the donor's bare 'decisions.json'). localStorage keys
+('review-sheet:' + sheet_id) and the sheet_ids are unchanged, so any votes
+already cast in a browser survive regeneration.
 
 Three sheets are built (the fourth — Arm-A-vs-B coherence — needs the deferred
 Arm-B model run, so it is intentionally skipped until synth output exists):
@@ -38,6 +43,9 @@ Run: python src/build_h180_review_sheets.py
 """
 import sys, os, io, json, html, re, collections
 
+from csl_pyutil import render_review_sheet, mark_cyrillic
+from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
+
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -57,188 +65,6 @@ def esc(s):
     return html.escape("" if s is None else str(s))
 
 
-# ----------------------------------------------------------------------------- template
-TEMPLATE = '''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>%(title)s — %(n)d items</title>
-<style>
-  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
-          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
-  * { box-sizing: border-box; }
-  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
-         margin:0; padding:0 0 120px 0; }
-  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
-               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
-  header.top h1 { font-size:16px; margin:0; }
-  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
-  .tally { display:flex; gap:14px; font-size:13px; }
-  .tally span.count { font-weight:700; }
-  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
-  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
-  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
-  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
-              cursor:pointer; font-size:13px; }
-  button.dl:hover { opacity:.9; }
-  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
-  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
-                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
-  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
-  main { max-width:980px; margin:0 auto; padding:10px 20px; }
-  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
-          margin-bottom:16px; }
-  .card.voted-approve { border-left:4px solid var(--ok); }
-  .card.voted-reject { border-left:4px solid var(--bad); }
-  .card.voted-defer { border-left:4px solid var(--defer); }
-  .card header { display:flex; justify-content:space-between; align-items:baseline; }
-  .card .hw { font-size:18px; font-weight:700; }
-  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
-           margin-left:8px; color:var(--muted); }
-  .question { margin:8px 0 12px; font-size:14px; }
-  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
-  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
-  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
-  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
-  .muted { color:var(--muted); font-style:italic; }
-  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
-  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
-                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
-  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
-  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
-  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
-  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
-  textarea.note { width:100%%; margin-top:10px; min-height:44px; background:#11141a; color:var(--text);
-                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
-                  font-family:inherit; resize:vertical; }
-  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
-  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
-</style>
-</head>
-<body>
-<header class="top">
-  <div>
-    <h1>%(title)s — %(n)d items</h1>
-    <div class="sub">Generated %(generated)s &middot; sheet_id <code>%(sheet_id)s</code> &middot; %(subtitle)s</div>
-  </div>
-  <div class="tally" id="tally">
-    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
-    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
-    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
-    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">%(n)d</span></span>
-  </div>
-</header>
-<div class="toolbar">
-  <button class="dl" id="downloadBtn">Download decisions.json</button>
-  <div class="filterbar" id="filterbar">%(filters)s</div>
-</div>
-<main id="cards">
-%(cards)s
-</main>
-<footer class="hint">%(footer)s Keyboard: <kbd>a</kbd> %(approve_label)s &middot; <kbd>r</kbd> %(reject_label)s
-  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
-  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
-  decision:null).</footer>
-<script>
-(function () {
-  var SHEET_ID = %(sheet_id_json)s;
-  var STORE_KEY = 'review-sheet:' + SHEET_ID;
-  var ids = %(ids_json)s;
-  var state = {};
-  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
-  function tally() {
-    var c = { approve:0, reject:0, defer:0 };
-    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
-    document.getElementById('c-approve').textContent = c.approve;
-    document.getElementById('c-reject').textContent = c.reject;
-    document.getElementById('c-defer').textContent = c.defer;
-    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
-  }
-  function applyCardUI(card) {
-    var id = card.getAttribute('data-id'); var rec = state[id] || {};
-    card.classList.remove('voted-approve','voted-reject','voted-defer');
-    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
-    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
-    if (rec.decision) card.classList.add('voted-' + rec.decision);
-    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
-  }
-  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
-  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
-  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
-  document.querySelectorAll('.card').forEach(function (card) {
-    var id = card.getAttribute('data-id'); applyCardUI(card);
-    card.querySelectorAll('button.vote').forEach(function (btn) {
-      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
-    });
-    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
-  });
-  tally();
-  document.getElementById('downloadBtn').addEventListener('click', function () {
-    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
-    var payload = { sheet_id: SHEET_ID, generated: %(generated_json)s, decided: decided,
-      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
-    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
-    var url = URL.createObjectURL(blob); var a = document.createElement('a');
-    a.href = url; a.download = 'decisions.json'; document.body.appendChild(a); a.click();
-    document.body.removeChild(a); URL.revokeObjectURL(url);
-  });
-  var filterbar = document.getElementById('filterbar');
-  filterbar.addEventListener('click', function (e) {
-    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
-    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
-    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
-    document.querySelectorAll('.card').forEach(function (card) {
-      var show = true;
-      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
-      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
-      card.style.display = show ? '' : 'none';
-    });
-  });
-  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
-  var activeIdx = 0;
-  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
-  document.addEventListener('keydown', function (e) {
-    if (e.target.tagName === 'TEXTAREA') return;
-    var vis = visibleCards(); if (!vis.length) return;
-    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
-    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
-    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
-    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
-    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
-    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
-    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
-    else return;
-    e.preventDefault();
-  });
-})();
-</script>
-</body>
-</html>
-'''
-
-
-def render_card(item, approve_label, reject_label):
-    panels = "".join(
-        '<div class="panel"><h4>%s</h4>%s</div>' % (esc(h4), body)
-        for h4, body in item["panels"])
-    badges = "".join('<span class="badge">%s</span>' % esc(b) for b in item.get("badges", []))
-    return '''
-  <section class="card" data-id="%s" data-filt="%s">
-    <header><div class="hw">%s %s</div></header>
-    <div class="question">%s</div>
-    %s
-    <div class="controls">
-      <button class="vote approve" data-vote="approve">&#9989; %s</button>
-      <button class="vote reject" data-vote="reject">&#10060; %s</button>
-      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
-      <span class="vote-state">unvoted</span>
-    </div>
-    <textarea class="note" placeholder="%s"></textarea>
-  </section>''' % (esc(item["id"]), esc(item["filt"]), esc(item["title"]), badges,
-                   item["question"], panels, esc(approve_label), esc(reject_label),
-                   esc(item.get("note_placeholder", "free-text note (optional)")))
-
-
 def write_sheet(slug, cfg, items):
     os.makedirs(REVIEW, exist_ok=True)
     # sample jsonl (audit trail of exactly what was shown)
@@ -247,19 +73,15 @@ def write_sheet(slug, cfg, items):
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title") if k in it},
                                 ensure_ascii=False) + "\n")
-    cards = "\n".join(render_card(it, cfg["approve_label"], cfg["reject_label"]) for it in items)
-    filters = ('<button data-filter="all" class="active">all</button>'
-               + "".join('<button data-filter="%s">%s</button>' % (esc(k), esc(l)) for k, l in cfg["filters"])
-               + '<button data-filter="unvoted">unvoted only</button>')
-    ids = [it["id"] for it in items]
-    doc = TEMPLATE % {
-        "title": cfg["title"], "subtitle": cfg["subtitle"], "footer": cfg["footer"],
-        "approve_label": cfg["approve_label"], "reject_label": cfg["reject_label"],
-        "n": len(items), "generated": GENERATED, "sheet_id": cfg["sheet_id"],
-        "cards": cards, "filters": filters,
-        "sheet_id_json": json.dumps(cfg["sheet_id"]), "ids_json": json.dumps(ids),
-        "generated_json": json.dumps(GENERATED),
-    }
+    # 19-07-2026 standard fragment (V3 show_ids, V6 note height, V8 save-as
+    # banner); the sheet's own keys win on collision. Rendering is the shared
+    # emitter — same localStorage key scheme as the hand-rolled donor template,
+    # so prior in-browser votes survive.
+    config = standard_config(
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_%s.decisions.json" % slug)
+    config.update(cfg)
+    config["generated"] = GENERATED
+    doc = render_review_sheet(items, config, extras=True)
     out = os.path.join(REVIEW, f"h180_{slug}_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
@@ -304,6 +126,9 @@ def build_typology(by_sub):
         rec = by_sub.get((r["subcard"], r["sense_tag"]), {})
         ru = esc(rec.get("ru", "(body not found)"))
         de = esc(rec.get("de", ""))
+        # V4: the store row's provenance.root is the real SLP1 root; the
+        # subcard prefix before '~~' is only the safe_root fallback.
+        root = (rec.get("provenance") or {}).get("root") or r["subcard"].split("~~", 1)[0]
         proposal = (
             f'<pre>subtype   : <b>{esc(rel["subtype"])}</b>\n'
             f'op/dir    : {esc(rel["op"])} / {esc(rel["direction"])}\n'
@@ -312,14 +137,15 @@ def build_typology(by_sub):
         items.append({
             "id": f'{r["subcard"]}::{r["sense_tag"]}',
             "filt": r["layer"],
-            "title": f'{esc(r["key1"])} · {esc(r["layer"])} · sense {esc(r["sense_tag"])}',
+            "title": f'{slp1_iast(r["key1"])} · {r["layer"]} · sense {r["sense_tag"]}',
+            "title_href": pwg_entry_href(root),
             "badges": [rel["subtype"], "5-layer" if r["key1"] in FIVE_LAYER else "tail"],
             "question": (f'Is the proposed subtype <b>«{esc(rel["subtype"])}»</b> correct '
                          f'for this sub-card? <span class="muted">(reject → write the correct '
                          f'subtype in the note, for κ)</span>'),
             "note_placeholder": "if reject: correct subtype + why (e.g. 'nws_at_sense, attaches to sense 2')",
             "panels": [("LLM proposal (confidence: llm)", proposal),
-                       ("Sub-card — Russian (ru)", f'<pre>{ru}</pre>'),
+                       ("Sub-card — Russian (ru)", f'<pre>{mark_cyrillic(ru)}</pre>'),
                        ("Sub-card — source (de)", f'<pre>{de}</pre>')],
         })
     return items
@@ -358,7 +184,8 @@ def build_learner():
             items.append({
                 "id": f'learner::{r["key1"]}',
                 "filt": band,
-                "title": esc(r["key1"]),
+                "title": slp1_iast(r["key1"]),
+                "title_href": pwg_entry_href(r["key1"]),
                 "badges": [band_label[band]],
                 "question": ('Does a Russian student need this headword? '
                              '<span class="muted">(approve = learner-core; reject = scholarly-only / skip)</span>'),
@@ -382,13 +209,14 @@ def build_reglue():
         items.append({
             "id": f"reglue::{key1}",
             "filt": f"{nlayers}L",
-            "title": esc(key1),
+            "title": slp1_iast(key1),
+            "title_href": pwg_entry_href(key1),
             "badges": [f"{nlayers}-layer"],
             "question": ('Is this re-glue well-formed? <span class="muted">(supplements land at '
                          'sensible senses · cancellations visible · foreign fragments shown with RU · '
                          'nothing broken)</span>'),
             "note_placeholder": "if reject: what is misplaced / broken",
-            "panels": [("rendered re-glue card", f'<pre>{esc(body)}</pre>')],
+            "panels": [("rendered re-glue card", f'<pre>{mark_cyrillic(esc(body))}</pre>')],
         })
     return items
 
