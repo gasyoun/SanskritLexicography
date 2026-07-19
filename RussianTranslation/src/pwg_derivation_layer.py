@@ -9,6 +9,7 @@ already reads csl-orig / WhitneyRoots):
   - taddhita derivations : sangram/articles/taddhita-overview/data/pwg_taddhita_derivations.tsv
   - Pāṇini crosswalk     : data/pwg_panini_crosswalk/pwg_panini_word2sutra.tsv
   - compound splits      : data/pwg_compound_split/pwg_compound_splits.tsv
+  - gaṇa membership      : data/pwg_gana_membership/pwg_gana_membership.tsv (external Gaṇapāṭha × crosswalk)
 
 Homonym alignment (upgraded from the k1-only attach-all-and-flag first version):
   - **derivation** and **compound** carry a per-occurrence PWG `L_id`, so each is pinned to
@@ -95,6 +96,19 @@ def load_panini(sg):
     return out
 
 
+def load_gana(sg):
+    """k1 -> {ganas, gana_sutras, corroborated} from the external Gaṇapāṭha join.
+    Only PWG-attested members; k1-level (gaṇa membership is lexical, not per-homonym)."""
+    p = os.path.join(sg, 'data', 'pwg_gana_membership', 'pwg_gana_membership.tsv')
+    out = {}
+    for r in read_tsv(p):
+        if r.get('attested_in_pwg') != '1':
+            continue
+        out[r['member_slp1']] = {'ganas': r['ganas'], 'gana_sutras': r['gana_sutras'],
+                                 'corroborated': r.get('corroborated', '')}
+    return out
+
+
 def compound_status(pwg_members, index_members):
     if not pwg_members:
         return 'index-only' if index_members else ''
@@ -119,9 +133,11 @@ def main():
     tad_precise, tad_k1 = load_taddhita(args.sg_root, lid_hom)
     cmp_precise, cmp_k1 = load_compound(args.sg_root, lid_hom)
     panini = load_panini(args.sg_root)
+    gana = load_gana(args.sg_root)
 
     cols = ['k1', 'hom', 'homonym_precise', 'deriv_base', 'deriv_suffix', 'deriv_class',
-            'deriv_citation', 'panini_sutras', 'compound_members_pwg', 'compound_status']
+            'deriv_citation', 'panini_sutras', 'compound_members_pwg', 'compound_status',
+            'ganas', 'gana_sutras', 'gana_corroborated']
     cov = Counter()
     comp_status_ctr = Counter()
     n = precise_rows = 0
@@ -140,7 +156,8 @@ def main():
             if cmp_pwg is None:
                 cmp_pwg = cmp_k1.get(k1)
             sut = panini.get(k1, [])                     # k1-level (aggregated)
-            if not (tad or sut or cmp_pwg):
+            gan = gana.get(k1)                            # k1-level (lexical membership)
+            if not (tad or sut or cmp_pwg or gan):
                 continue
             status = compound_status(cmp_pwg or [],
                                      [m for m in r.get('compound_members', '').split('+') if m.strip()])
@@ -153,8 +170,11 @@ def main():
                 cov['panini'] += 1
             if cmp_pwg:
                 cov['compound'] += 1
+            if gan:
+                cov['gana'] += 1
             comp_status_ctr[status] += 1
             tad = tad or {}
+            gan = gan or {}
             w.writerow([
                 k1, hom, '1' if pinned else '',
                 tad.get('base', ''), tad.get('suffix', ''), tad.get('class', ''),
@@ -162,6 +182,7 @@ def main():
                 '|'.join(sut),
                 ' + '.join(cmp_pwg or []),
                 status,
+                gan.get('ganas', ''), gan.get('gana_sutras', ''), gan.get('corroborated', ''),
             ])
 
     print('wrote %s' % args.out, file=sys.stderr)
@@ -169,6 +190,7 @@ def main():
     print('  derivation (taddhita) : %d' % cov['derivation'], file=sys.stderr)
     print('  panini sutra (k1-level): %d' % cov['panini'], file=sys.stderr)
     print('  compound (pwg)        : %d' % cov['compound'], file=sys.stderr)
+    print('  gaṇa membership       : %d' % cov['gana'], file=sys.stderr)
     print('compound cross-check vs index: %s' % dict(comp_status_ctr.most_common()), file=sys.stderr)
     return 0
 
