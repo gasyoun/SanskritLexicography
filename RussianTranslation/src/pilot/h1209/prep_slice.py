@@ -109,7 +109,11 @@ def main():
         sys.exit('usage: prep_slice.py <manifest.json> <out_payload.json>')
     manifest_path, out_path = sys.argv[1], sys.argv[2]
     m = json.load(open(manifest_path, encoding='utf-8'))
-    keys = [b[0] for b in m['batches']]  # slice is 1 card/batch
+    # A6 (H1283): flatten EVERY key of each batch. Taking only b[0] silently dropped all
+    # but the first card of every multi-card batch — invisible on the 1-card/batch canary
+    # slice, but on a production medium50 manifest (multi-card batches) every other card
+    # vanished with no error. Matches window_selftest's owed-key set ({k for b in batches for k}).
+    keys = [k for b in m['batches'] for k in b]
     cards = []
     for k in keys:
         prompt = reconstruct_prompt(m, k)
