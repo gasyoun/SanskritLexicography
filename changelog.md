@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.33.0] — 19-07-2026
+
 ### Added
 - **One-click case-government (Rektion) index + PW capitalized-marker gap closed (19-07-2026, Opus 4.8 `claude-opus-4-8`, [H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md))**:
   answers DA-vote row N2 (card `vas~~h0_zz_pw00|samava`) — a searchable government surface plus
