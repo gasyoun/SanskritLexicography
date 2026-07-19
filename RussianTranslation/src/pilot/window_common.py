@@ -223,6 +223,23 @@ def input_paths(key, input_dir=INP):
             os.path.join(input_dir, key + '.portrait.json'))
 
 
+def portrait_key_iast(portrait_text, key):
+    """The display IAST a card should carry, read from its portrait sidecar text.
+
+    ONE helper for both stitch twins (H1339 B02) and the degenerate pass-through lane --
+    two independently-authored derivations is the C-01 drift class. Falls back to the key
+    when the portrait is absent or unparseable; never raises."""
+    try:
+        p = json.loads(portrait_text)
+    except Exception:
+        return key
+    rows = p if isinstance(p, list) else [p]
+    for row in rows:
+        if isinstance(row, dict):
+            return row.get('iast') or row.get('key1') or key
+    return key
+
+
 def latest_status(out_dir=OUT):
     return read_json(os.path.join(out_dir, 'window_status.json'), default=None)
 

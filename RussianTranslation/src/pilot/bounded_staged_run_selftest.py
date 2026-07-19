@@ -408,6 +408,101 @@ def test_j_stop_before_promote_awaiting_review(td):
           'no relaunch; flag-off backward compatible: PASS')
 
 
+def test_k_requeue_materialisation(td):
+    """H1339 A4 (fuller fix): a supervisor requeue work-item becomes a REAL coordinator
+    requeue attempt + scoped job -- idempotent at every seam, loud when unmaterialisable."""
+    from execution_contract import config_dir_fingerprint
+    coord = os.path.join(td, 'k_coord')
+    adir = os.path.join(coord, 'artifacts', 'w1')
+    rq_dir = os.path.join(adir, 'requeue', 'rq01-transient')
+    os.makedirs(rq_dir)
+    rq_manifest = os.path.join(rq_dir, 'execution_manifest.w1.rq01-transient.json')
+    with open(rq_manifest, 'w', encoding='utf-8') as f:
+        json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                   'model': 'claude-sonnet-5',
+                   'meta': {'lang': 'ru', 'selected_keys': ['k~~h0_zz_pw']},
+                   'execution': {'profile_slot': 'c4',
+                                 'config_dir_fingerprint': config_dir_fingerprint(td),
+                                 'execution_route': 'claude-cli-headless',
+                                 'executor_lane': 'serial-whole-card',
+                                 'validation_method': 'audit_window+final_schema',
+                                 'model_identifier': 'claude-sonnet-5'},
+                   'key_provenance': {'k~~h0_zz_pw': 'real'}}, f)
+    state_path = os.path.join(coord, 'state.json')
+
+    def write_state(state_name, with_attempt):
+        lease = {'id': 'w1', 'state': state_name, 'artifact_dir': adir,
+                 'pending_requeue': {'transient': ['k~~h0_zz_pw'], 'defect': []}}
+        if with_attempt:
+            lease.update({'requeue_attempt': 1, 'requeue_kind': 'transient',
+                          'execution_manifest': rq_manifest,
+                          'current_attempt': {'number': 1, 'kind': 'transient',
+                                              'artifact_dir': rq_dir,
+                                              'execution_manifest': rq_manifest}})
+        with open(state_path, 'w', encoding='utf-8') as f:
+            json.dump({'leases': [lease]}, f)
+
+    db = os.path.join(td, 'k_jobs.sqlite')
+    mao.connect(db).close()
+    ctx = bsr.RunContext(db=db, coord_dir=coord,
+                         coordinator=os.path.join(HERE, 'coordinator.py'),
+                         cwd=td, events=None, run_id='k', probe_latencies={})
+    calls = []
+
+    def fake_prepare(argv, **kw):
+        calls.append(argv)
+        assert 'prepare-requeue' in argv and '--transient' in argv, argv
+        write_state('requeue_prepared', with_attempt=True)   # what the real command does
+        return argparse.Namespace(returncode=0, stdout='', stderr='')
+
+    # 1. needs_requeue + pending backlog -> prepare (transient first) + import: a REAL job.
+    write_state('needs_requeue', with_attempt=False)
+    rq_id = bsr.materialize_requeue(ctx, 'w1', run=fake_prepare)
+    assert rq_id == 'w1::rq01-transient', rq_id
+    assert len(calls) == 1
+    dbc = mao.connect(db)
+    row = dbc.execute('select manifest_path,max_attempts,state from jobs where external_id=?',
+                      (rq_id,)).fetchone()
+    dbc.close()
+    assert row and row['manifest_path'] == rq_manifest and row['max_attempts'] == 2         and row['state'] == 'pending', (dict(row) if row else row)
+
+    # 2. idempotent resume: lease already requeue_prepared (crash between prepare and
+    #    import) -> prepare NOT re-run; the existing attempt job reused, never duplicated.
+    def must_not_run(argv, **kw):
+        raise AssertionError('prepare-requeue re-run on an already-prepared lease')
+    assert bsr.materialize_requeue(ctx, 'w1', run=must_not_run) == rq_id
+    dbc = mao.connect(db)
+    assert dbc.execute('select count(*) from jobs where external_id=?',
+                       (rq_id,)).fetchone()[0] == 1
+    dbc.close()
+
+    # 3. unmaterialisable -> LOUD (blocked lease; unknown lease).
+    write_state('blocked', with_attempt=False)
+    for lease_name in ('w1', 'ghost'):
+        try:
+            bsr.materialize_requeue(ctx, lease_name, run=must_not_run)
+            raise AssertionError('unmaterialisable requeue did not fail loudly')
+        except SystemExit:
+            pass
+
+    # 4. the audit seam reads the ORIGIN lease for a requeue window.
+    write_state('promoted_partial', with_attempt=True)
+    wf = os.path.join(td, 'k_wf.json')
+    with open(wf, 'w', encoding='utf-8') as f:
+        json.dump({'summary': {'translate_agents_spent': 1, 'heal_agents_spent': 0}}, f)
+    rep = bsr.audit_from_coordinator(state_path, wf,
+                                     {'id': 'rq-001-w1', 'origin': 'w1', 'requeue': True})
+    assert rep['requeue_keys'] == ['k~~h0_zz_pw'], rep
+
+    # 5. a requeue OF a requeue keeps the TRUE origin (the coordinator lease id).
+    sup = bs.BoundedSupervisor([], lambda w: None, os.path.join(td, 'k_ckpt.json'))
+    first = sup._make_requeue_item({'id': 'w1'}, ['a'])
+    second = sup._make_requeue_item(first, ['b'])
+    assert first['origin'] == 'w1' and second['origin'] == 'w1', (first, second)
+    print('  (k) H1339 A4: requeue materialises to a real ::rq job; idempotent; loud when '
+          'unmaterialisable; audit reads the origin lease; rq-of-rq keeps the true origin: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -420,6 +515,7 @@ def main():
         test_h_consecutive_empty(td)
         test_i_audit_from_coordinator(td)
         test_j_stop_before_promote_awaiting_review(td)
+        test_k_requeue_materialisation(td)
     print('bounded_staged_run_selftest: PASS')
 
 

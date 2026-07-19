@@ -81,7 +81,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 from window_common import append_jsonl_line  # noqa: E402
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store, canonical_sidecar  # noqa: E402
 
 # ONE logical store shared across worktrees (H818 D-E): resolve via canonical_store so a
 # git-worktree run's post-promotion TM rebuild targets the MAIN checkout store, exactly like
@@ -141,16 +141,22 @@ class DenylistError(RuntimeError):
     """A TM denylist cannot be trusted."""
 
 
+# B04 (H1339): the four sidecar resolvers route through store_path.canonical_sidecar --
+# ONE logical sidecar set per checkout tree, shared with every linked worktree, exactly
+# like the store itself (an explicit `out`/`--out` still wins, as does $PWG_RU_TM_DIR).
+# Before this, a fresh-worktree run silently saw NO sidecars: 0 TM hits, full
+# re-translation cost, and its post-promotion TM rebuild vanished with the worktree.
 def tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.%s.json' % lang)
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.%s.json' % lang))
 
 
 def suggest_tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.suggest.%s.jsonl' % lang)
+    return out or canonical_sidecar(
+        os.path.join(HERE, 'translation_memory.suggest.%s.jsonl' % lang))
 
 
 def denylist_path(out=None):
-    return out or os.path.join(HERE, 'translation_memory.denylist.jsonl')
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.denylist.jsonl'))
 
 
 def _file_signature(path):
@@ -269,7 +275,40 @@ def load_denylist(path=None):
                 out['addresses'].add(value)
             elif kind in ('fragment', 'frag', 'fsha') and value:
                 out['frags'].add(value)
+            elif kind == 'unblock':
+                # B12 (H1339): a denial is TEMPORARY -- once a gate-passing replacement is
+                # PROMOTED, an 'unblock' row supersedes the matching earlier denial(s). The
+                # file stays append-only; chronology == append order, so a later re-denial
+                # of the same address/fsha re-blocks it. Only exact matches clear.
+                if row.get('address'):
+                    out['addresses'].discard(row['address'])
+                if row.get('fsha'):
+                    out['frags'].discard(row['fsha'])
     return out
+
+
+def append_unblock(addresses=(), fshas=(), reason='', path=None):
+    """B12 (H1339): supersede matching denylist entries with 'unblock' rows.
+
+    Only for content DEMONSTRABLY replaced by a promotion that passed every gate -- the
+    caller (promote_final_cards) intersects against the live denylist first, so an unblock
+    row is only ever written for a currently-denied address/fsha. Same torn-line-safe
+    single-write append as the denial rows."""
+    p = denylist_path(path)
+    now = datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec='seconds').replace('+00:00', 'Z')
+    n = 0
+    for address in addresses:
+        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
+                              'kind': 'unblock', 'address': address,
+                              'reason': reason, 'unblocked_at': now})
+        n += 1
+    for fsha in fshas:
+        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
+                              'kind': 'unblock', 'fsha': fsha,
+                              'reason': reason, 'unblocked_at': now})
+        n += 1
+    return n
 
 
 def _iter_store(store_path):
@@ -332,26 +371,45 @@ def reconstruct_cards(store_path, lang):
         if any(not (r.get(field) or '').strip() for r in rows):
             skipped['incomplete-%s' % lang] += 1
             continue
+        # B03 (H1339, P0): a sense_tag the schema would refuse (None/empty) cannot be
+        # reconstructed into a servable card -- skip the sub-card rather than fabricate a
+        # tag; the serve-time guard refuses such a card anyway, so caching it only churns.
+        if any(not isinstance(r.get('sense_tag'), str) or not r.get('sense_tag')
+               for r in rows):
+            skipped['invalid-sense-tag'] += 1
+            continue
         # Rebuild records grouped by homonym head `h`, senses in stored order.
         recs = defaultdict(list)
         rec_order = []
+        rec_grammar = {}
         for r in rows:
             h = r.get('h')
             if h not in recs:
                 rec_order.append(h)
-            recs[h].append({
+                # first stored grammar of the h-group owns the record ('' when null)
+                rec_grammar[h] = r.get('grammar') or ''
+            sense = {
                 'tag': r.get('sense_tag'),
-                'german': r.get('de'),
+                'german': r.get('de') or '',
                 field if lang == 'en' else 'russian': r.get(field),
-                'equivalence_type': r.get('equivalence_type'),
-                'source_type': r.get('source_type'),
-                'stratum': r.get('stratum'),
-                'differentia': r.get('differentia'),
-            })
+            }
+            # B03: optional sense fields are validated WHEN PRESENT by the final-card
+            # schema (a present-but-None differentia/equivalence_type is a refusal), so a
+            # null store value must OMIT the key, never emit it as None.
+            for opt in ('equivalence_type', 'source_type', 'stratum', 'differentia'):
+                value = r.get(opt)
+                if value is not None:
+                    sense[opt] = value
+            recs[h].append(sense)
         card = {
             'key1': sub,
-            'iast': rows[0].get('iast'),
-            'records': [{'h': h, 'senses': recs[h]} for h in rec_order],
+            'iast': rows[0].get('iast') or sub,
+            # B03: notes (card) and h/grammar (record) are schema-REQUIRED -- a TM card
+            # missing them was refused by the save gate, poisoning the whole window on the
+            # first TM hit. h is coerced to str exactly as the C-07 degenerate stub does.
+            'notes': '',
+            'records': [{'h': (h or ''), 'grammar': rec_grammar[h], 'senses': recs[h]}
+                        for h in rec_order],
         }
         prov0 = rows[0].get('provenance') or {}
         address = '%s:%s' % (lang, raw_sha)
@@ -470,7 +528,8 @@ def frag_address(lang, frag_source):
 
 
 def frag_tm_path(lang, out=None):
-    return out or os.path.join(HERE, 'translation_memory.frag.%s.jsonl' % lang)
+    # B04 (H1339): canonical-sidecar resolution, same as tm_path/suggest_tm_path/denylist_path.
+    return out or canonical_sidecar(os.path.join(HERE, 'translation_memory.frag.%s.jsonl' % lang))
 
 
 # frag_prov senses are CARD-shaped (harvested from wf_output cards), so the

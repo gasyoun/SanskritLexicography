@@ -1,0 +1,303 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "AGAta",
+  "key2": "AGAta",
+  "h": "",
+  "iast": "āghāta",
+  "pos": [
+   "m."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval",
+   "Vedic"
+  ],
+  "labels": [
+   "and so on, and so forth = etc.",
+   "compare",
+   "compound"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (von mit ) m",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "m."
+    ],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "AGAta",
+     "han",
+     "A"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Schläger"
+    ],
+    "gloss_de": "1〉 Schläger: Trommelschläger ŚAT. BR. 14,5,4,7 . 7,3,8 = BṚH. ĀR. UP. 2,4,7 . 4,5,8 . Vgl",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Vedic"
+    ],
+    "citations": [
+     "BṚH. ĀR. UP",
+     "ŚAT. BR"
+    ],
+    "citations_resolved": {
+     "BṚH. ĀR. UP": "BṚHADĀRAṆYAKOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica.",
+     "ŚAT. BR": "The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849."
+    },
+    "strata": {},
+    "examples_sa": [
+     "dunduByAGAta/",
+     "AqambarAGAta"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [
+     "Anschlag, Schlag, Verwundung"
+    ],
+    "gloss_de": "2〉 Anschlag, Schlag, Verwundung: (ein Elephant) ŚĀK. 32 . gewöhnlich in comp. mit dem, was den Schlag bewirkt oder wogegen der Schlag gerichtet ist: MBH. 2,912 . BHARTṚ. 2,83 . KATHĀS. 13,102 . 21,75 ",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare",
+     "compound"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "AMAR",
+     "BHARTṚ",
+     "KATHĀS",
+     "KUMĀRAS",
+     "MBH",
+     "MED. k",
+     "RĀJA-TAR",
+     "ŚĀK"
+    ],
+    "citations_resolved": {
+     "AMAR": "AMARUŚATAKA nach der Calc. Ausg. (GILD. Bibl. 162).",
+     "BHARTṚ": "BHARTṚHARI, Ausg. von BOHLEN (GILD. Bibl. 156), mit Berück- sichtigung des Werkchens; Variae lectiones ad Bohlenii editionem Bhartriharis sententiarum pertinentes, e codicibus extractae per A. SCHIEFNER et A. WEBER. Berolini 1850.",
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "KUMĀRAS": "KUMĀRASAM̃BHAVA, ed. STENZLER (GILD. Bibl. 136).",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "MED. k": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.",
+     "RĀJA-TAR": "RĀJATARAṄGIṆĪ, ed. TROYER (GILD. Bibl. 148) für die 6 ersten Taram̃ga's; für die folgenden die Calc. Ausg. (GILD. Bibl. 147).",
+     "ŚĀK": "ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile."
+    },
+    "strata": {
+     "Epic / early-Classical": "Mahābhārata",
+     "Classical": "Kumārasambhava"
+    },
+    "examples_sa": [
+     "tIvrAGAtapratihatataruskanDalagnEkadantaH",
+     "BujA˚",
+     "karA˚",
+     "pAdA˚"
+    ]
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [
+     "Tödtung"
+    ],
+    "gloss_de": "3〉 Tödtung: YĀJÑ. 3,275 . (so ist zu lesen) BHARTṚ. 2,60",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "BHARTṚ",
+     "YĀJÑ"
+    ],
+    "citations_resolved": {
+     "BHARTṚ": "BHARTṚHARI, Ausg. von BOHLEN (GILD. Bibl. 156), mit Berück- sichtigung des Werkchens; Variae lectiones ad Bohlenii editionem Bhartriharis sententiarum pertinentes, e codicibus extractae per A. SCHIEFNER et A. WEBER. Berolini 1850.",
+     "YĀJÑ": "YĀJÑAVALKYA'S Gesetzbuch. Sanskrit und Deutsch herausge- geben von Dr. ADOLPH FRIEDRICH STENZLER. Berlin und London 1849."
+    },
+    "strata": {},
+    "examples_sa": [
+     "sattvA˚",
+     "prARA˚"
+    ]
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "Verhaltung"
+    ],
+    "gloss_de": "4〉 Verhaltung (von Harn u. s. w. ) SUŚR. 2,192,5 . 194,19,529,6 . 8 . u. s. w. Vgl",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "and so on, and so forth = etc.",
+     "compare"
+    ],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "SUŚR"
+    ],
+    "citations_resolved": {
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368."
+    },
+    "strata": {},
+    "examples_sa": [
+     "mUtrAGAta"
+    ]
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [
+     "Trübsal, Leiden"
+    ],
+    "gloss_de": "5〉 Trübsal, Leiden VYUTP. 61",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "VYUTP"
+    ],
+    "citations_resolved": {
+     "VYUTP": "VYUTPATTI oder MAHĀVYUTPATTI (s. Mél. asiat. II, 382), ein sanskrit-tibetisches Wörterbuch aus dem TAÑJUR (Bd. 123 der Sūtra, S. 223--377). Die Mittheilungen aus diesem Werke nebst andern auf den Budhismus bezüglichen Notizen verdanken wir A. SCHIEFNER. [Pagè-b+ 32]"
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [
+     "Richtplatz, Schlachthaus"
+    ],
+    "gloss_de": "6〉 Richtplatz, Schlachthaus TRIK. 2,8,59 . MṚCCH. 161,11 . HIT. IV, 64",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "HIT. IV,",
+     "MṚCCH",
+     "TRIK"
+    ],
+    "citations_resolved": {
+     "HIT. IV,": "HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.",
+     "MṚCCH": "MṚCCHAKAṬIKĀ, ed. STENZLER (GILD. Bibl. 186).",
+     "TRIK": "TRIKĀṆḌAŚEṢA, ed. Calc. (GILD. Bibl. 258)."
+    },
+    "strata": {},
+    "examples_sa": [
+     "AGAtamadyAhamanuprayAmi SAmitramAlabDumivADvare 'jaH",
+     "AGAtaM nIyamAnasya vaDyasyeva"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "AGAta",
+  "key2": "AGAta",
+  "h": "",
+  "iast": "āghāta",
+  "pos": [],
+  "diasystem": [
+   "Classical",
+   "Medieval"
+  ],
+  "labels": [],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "AGAta"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [
+     "mit Stockschlägen"
+    ],
+    "gloss_de": "2〉 mit Stockschlägen KATHĀS. 54,203",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Medieval"
+    ],
+    "citations": [
+     "KATHĀS"
+    ],
+    "citations_resolved": {
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237)."
+    },
+    "strata": {},
+    "examples_sa": [
+     "tAndaRqAGAtEratAqayan"
+    ]
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "6〉 auch BHĀG. P. 11,20,20",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "BHĀG. P"
+    ],
+    "citations_resolved": {
+     "BHĀG. P": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden."
+    },
+    "strata": {},
+    "examples_sa": [
+     "AGAtaM nIyamAnasya vaDyasyeva"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

@@ -160,7 +160,11 @@ def main():
             cmd.append("--strict")
     else:
         audit = os.path.join(HERE, "src", "pilot", "audit_window.py")
-        cmd = [sys.executable, audit, out_path, "--root", root]
+        # B10 (H1339): --write-requeue, so the factory save path refreshes the requeue
+        # singletons (requeue.keys.txt / .transient / .defect / judge_sample) in the same
+        # pass as the report/status singletons this invocation already overwrites --
+        # without it the requeue files silently described the PREVIOUS window.
+        cmd = [sys.executable, audit, out_path, "--root", root, "--write-requeue"]
     if not os.path.exists(audit):
         print(f"({os.path.basename(audit)} not found — saved only)")
         return

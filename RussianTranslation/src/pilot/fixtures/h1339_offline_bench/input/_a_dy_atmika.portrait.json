@@ -1,0 +1,111 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADyAtmika",
+  "key2": "A/DyAtmika",
+  "h": "",
+  "iast": "ādhyātmika",
+  "pos": [
+   "adj.",
+   "f."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Vedic"
+  ],
+  "labels": [
+   "compare"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (von ) adj. f. ( YĀJÑ. 1,101 ) und ( SĀṂKHYAK. 50 ) auf das Selbst oder die Allseele bezüglich Kār. zu P. 4,3,60 . NIR. 7,1 . M. 2,117 . SUŚR. 1,89,5 . — Vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "adj.",
+     "f."
+    ],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Vedic"
+    ],
+    "citations": [
+     "M",
+     "NIR",
+     "P",
+     "SUŚR",
+     "SĀṂKHYAK",
+     "YĀJÑ"
+    ],
+    "citations_resolved": {
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "NIR": "YĀSKA'S NIRUKTA sammt den NIGHAṆṬAVA'S herausgegeben und erklärt von RUDOLPH ROTH. Göttingen 1852.",
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.",
+     "SĀṂKHYAK": "SĀṂKHYAKĀRIKĀ, ed. WILSON (GILD. Bibl. 271), mit Benutzung des Index in LASSEN'S Ausgabe (GILD. Bibl. 270).",
+     "YĀJÑ": "YĀJÑAVALKYA'S Gesetzbuch. Sanskrit und Deutsch herausge- geben von Dr. ADOLPH FRIEDRICH STENZLER. Berlin und London 1849."
+    },
+    "strata": {
+     "Epic / early-Classical": "Manusmṛti"
+    },
+    "examples_sa": [
+     "A/DyAtmika",
+     "aDyAtma",
+     "I",
+     "A"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADyAtmika",
+  "key2": "ADyAtmika",
+  "h": "",
+  "iast": "ādhyātmika",
+  "pos": [],
+  "diasystem": [],
+  "labels": [],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "zur Seele —, zum Subject in Beziehung stehend, subjectiv"
+    ],
+    "gloss_de": "¦ zur Seele —, zum Subject in Beziehung stehend, subjectiv TATTVAS. 41 . 50 . KAP. 3,43 . SARVADARŚANAS. 22,1 . Verz. d. Oxf. H. 230,b,16. fg. 27,a,20",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "KAP",
+     "SARVADARŚANAS",
+     "TATTVAS",
+     "Verz. d. Oxf. H"
+    ],
+    "citations_resolved": {
+     "KAP": "KAPILA (The Aphorisms of the Sánkhya Philosophy, of Kapila; with illustrative extracts from the commentaries. I. Allahabad 1852. II--IV. ebend. 1834. Auch in der Bibl. ind.).",
+     "SARVADARŚANAS": "? [Cologne Addition]",
+     "TATTVAS": "A Lecture on the Sánkhya Philosophy, embracing the text of the Tattwa Samása. Mirzapore 1850.",
+     "Verz. d. Oxf. H": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADyAtmika",
+     "arizwAni",
+     "˚yoga"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

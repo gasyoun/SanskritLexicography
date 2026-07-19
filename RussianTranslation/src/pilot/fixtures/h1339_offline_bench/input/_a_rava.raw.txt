@@ -1,0 +1,11 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ARava/#}¦ <lex>n.</lex> <ab>nom. abstr.</ab> von {#aRu#} 1. <is>gaṇa</is> {#pfTvAdi#} zu <ls>P. 5,1,122</ls>. <lex>adj.</lex> (!) {%überaus klein, fein%} <ls>TEJOV. UP.</ls>_in_<ls>Ind. St. 2,63, N. 1</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ARava#}¦
+<div n="1">— 1〉 <lex>Adj.</lex>
+<div n="2">— a〉 {%fein%}.
+<div n="2">— b〉 *{%mit <bot>Panicum miliaceum</bot> bestanden%} <ls>GAL.</ls>
+<div n="1">— 2〉 *<lex>n.</lex> {%Feinheit, Dünnheit%}.

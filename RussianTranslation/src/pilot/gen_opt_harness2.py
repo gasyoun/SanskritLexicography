@@ -476,10 +476,16 @@ def parse_args(argv):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
         mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
-    if tm in ('__default__', '__auto__'):
-        tm = os.path.join(os.path.dirname(INP), 'translation_memory.%s.json' % lang)
-    if suggest_tm in ('__default__', '__auto__'):
-        suggest_tm = os.path.join(os.path.dirname(INP), 'translation_memory.suggest.%s.jsonl' % lang)
+    if tm in ('__default__', '__auto__') or suggest_tm in ('__default__', '__auto__'):
+        # B04 (H1339): resolve the default sidecars through translation_memory's canonical
+        # resolvers (main-worktree-aware), NOT this checkout's src/pilot -- the sidecars are
+        # gitignored, so a fresh-worktree run used to silently see none: 0 TM hits, full
+        # re-translation cost on the sanctioned worktree workflow.
+        import translation_memory as _tm
+        if tm in ('__default__', '__auto__'):
+            tm = _tm.tm_path(lang)
+        if suggest_tm in ('__default__', '__auto__'):
+            suggest_tm = _tm.suggest_tm_path(lang)
     if suggest_profile not in ('semantic', 'german', 'sanskrit', 'balanced'):
         die('unknown --suggest-profile %r (semantic|german|sanskrit|balanced)' % suggest_profile)
     return (root, keyfilter, keylist, budget, lean, nws_gate, nominal, grammar_on,
@@ -762,16 +768,10 @@ _DEGENERATE_WORDS = {
 _DEGENERATE_CORRECTION_RE = re.compile(r'\b(lies|lesen|streichen)\b', re.I)
 
 
-def _portrait_key_iast(portrait_text, key):
-    try:
-        p = json.loads(portrait_text)
-    except Exception:
-        return key
-    rows = p if isinstance(p, list) else [p]
-    for row in rows:
-        if isinstance(row, dict):
-            return row.get('iast') or row.get('key1') or key
-    return key
+from window_common import portrait_key_iast as _portrait_key_iast  # noqa: E402
+# B02 (H1339): the iast derivation moved to window_common.portrait_key_iast so the
+# degenerate lane, the JS IASTS map below, and headless_worker's stitch all share ONE
+# helper (two independently-authored derivations is the C-01 drift class).
 
 
 def _portrait_source_profile(portrait_text):
@@ -904,10 +904,20 @@ def tm_card_sane(card, lang, field, raw):
         return False, 'card is not an object'
     if not card.get('records'):
         return False, 'card has no records'
+    # B03 (H1339, P0): the save gate refuses a card missing schema-required iast/notes
+    # (card) or h/grammar (record), so serving one poisons the WHOLE window. Legacy
+    # sidecar rows built before the reconstruct_cards fix are refused here fail-closed --
+    # a TM rebuild re-caches them schema-complete.
+    if not isinstance(card.get('iast'), str) or not isinstance(card.get('notes'), str):
+        return False, 'card missing schema-required iast/notes (legacy TM row -- rebuild TM)'
     n_senses = 0
     for rec in card.get('records') or []:
+        if not isinstance(rec.get('h'), str) or not isinstance(rec.get('grammar'), str):
+            return False, 'record missing schema-required h/grammar (legacy TM row -- rebuild TM)'
         for s in rec.get('senses') or []:
             n_senses += 1
+            if not isinstance(s.get('tag'), str) or not s.get('tag'):
+                return False, 'sense missing schema-required tag'
             if not (s.get(field) or '').strip():
                 return False, 'sense missing %s' % field
     if not n_senses:
@@ -1458,6 +1468,9 @@ const CONV_TR = %(tr)s
 const PREAMBLE = %(preamble)s
 const GRAMMAR = %(grammar)s
 const GRAMMARS = %(grammars)s
+// B02 (H1339): per-key display IAST (from the portrait sidecars, ONE Python helper) so the
+// heal-stitched card can be schema-complete at construction (iast/notes are CARD_REQUIRED).
+const IASTS = %(iasts)s
 const NWS_RULE = %(nws)s
 const CARDS_SCHEMA = %(schema)s
 const BATCHES = %(batches)s
@@ -1825,7 +1838,13 @@ async function healGroup(k, idxs, grp, label, budget) {
     }
     if (budget) budget.spent++   // account this call against the card's own ceiling
     const blocks = pending.map(i => '\\n\\n=== CARD ' + fkey(i) + ' (fragment ' + (i + 1) + '/' + grp.length + ') ===\\n--- masked German (translatable only; {Tn}=masked span) ---\\n' + grp[i].skeleton).join('')
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + blocks
+    // B01 (H1339): fragment/heal calls serve exactly ONE card k, so inject that card's own
+    // evidence -- per-card grammar (the ONLY grammar in nominal windows, where the shared
+    // GRAMMAR constant is empty) and the portrait (Sanskrit citation evidence), exactly as
+    // the whole-card batch lane's cardBlock does. Presplit giants -- the densest,
+    // highest-value cards -- were translated with ZERO evidence before this.
+    const prompt = PREAMBLE + GRAMMAR + (GRAMMARS[k] || '') + CONV_TR + blocks
+      + '\\n--- portrait (evidence) ---\\n' + (INPUTS[k] ? INPUTS[k].portrait : '')
     const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
     let res
     try {
@@ -1993,7 +2012,9 @@ async function selfHeal(k) {
     }
   }
   if (!senses.length) { if (!FAIL[k]) noteFail(k, 'selfheal-nothing-resolved'); return null }
-  const stitched = { key1: k, records: stitchRecords(senses, owners) }
+  // B02 (H1339): iast/notes are CARD_REQUIRED -- a stitched card missing them was refused
+  // by the save gate / final-schema audit gate, losing the whole healed window.
+  const stitched = { key1: k, iast: IASTS[k] || k, notes: '', records: stitchRecords(senses, owners) }
   if (fragProv.length) stitched.frag_prov = fragProv
   if (!missingFragments.length) {
     // fidelity check only meaningful on a COMPLETE heal — a partial result legitimately has
@@ -2261,6 +2282,8 @@ return { meta: META, summary, results: out }
         'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
+        'iasts': json.dumps({k: _portrait_key_iast((v.get('portrait') or ''), k)
+                             for k, v in runtime_inputs.items()}, ensure_ascii=True),
         'nws': json.dumps(nws_block, ensure_ascii=True),
         'schema': json.dumps(batch_schema, ensure_ascii=True),
         'batches': json.dumps(batches), 'inputs': json.dumps(runtime_inputs, ensure_ascii=True),
