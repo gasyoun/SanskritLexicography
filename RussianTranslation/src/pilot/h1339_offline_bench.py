@@ -391,10 +391,18 @@ def one_run(tag, keep=False):
 
     # --- audit: REAL begin-run + record-output per lease ------------------------------
     t0 = time.perf_counter()
-    for lid, _case, _keys in LEASES:
-        run_cli([os.path.join(HERE, 'coordinator.py'), 'begin-run', '--lease-id', lid], env)
-        run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid, wf_paths[lid]],
-                env, check=False)
+    # Production drain shape (cmd_run_once): begin-run the claimed batch in ONE
+    # coordinator call, at most 3 leases per iteration (the ordinary global runtime cap),
+    # then record each lease. record-output stays per lease (per-lease audit isolation).
+    for i in range(0, len(LEASES), 3):
+        group = LEASES[i:i + 3]
+        begin = [os.path.join(HERE, 'coordinator.py'), 'begin-run']
+        for lid, _case, _keys in group:
+            begin += ['--lease-id', lid]
+        run_cli(begin, env)
+        for lid, _case, _keys in group:
+            run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid,
+                     wf_paths[lid]], env, check=False)
     timings['audit'] = time.perf_counter() - t0
 
     state = json.load(open(os.path.join(coord_dir, 'state.json'), encoding='utf-8'))
