@@ -157,6 +157,7 @@ def make_item(item_id, stratum, code, rec, contested_state, blocks, dcs_index):
         'item_id': item_id,
         'stratum': stratum,
         'dict': code,
+        'key1': key1,
         'headword_iast': rec.get('iast'),
         'headword_key2': clean_hw(rec.get('key2')),
         'contested_state': contested_state,
