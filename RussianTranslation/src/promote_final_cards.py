@@ -178,6 +178,18 @@ def provenance(entry, subkey, model_version):
                 prov[m] = entry[m]
     if entry.get('fidelity_drift'):
         prov['fidelity_drift'] = True
+    # H1226: carry the pre-restore {Tn} pairing accept() stamped on the card — candidate `got`
+    # vs masked-skeleton `want`, brace-stripped — so the TNMASK false-flag rate is MEASURABLE
+    # offline from a promoted row (H1150 returned DO_NOT_ARM with denominator 1 precisely because
+    # the store dropped this transient pairing; only post-restore text survived). Additive +
+    # backward-compatible: absent on pre-H1226 wf_output and never back-filled; carried ONLY when
+    # well-formed (both `got` and `want` present as strings), never fabricated. The offline reader
+    # is src/pilot/tnmask_offline.py; full rationale in pwg_ru/h1226 design note.
+    tnmask = card.get('tnmask')
+    if (isinstance(tnmask, dict)
+            and isinstance(tnmask.get('got'), str)
+            and isinstance(tnmask.get('want'), str)):
+        prov['tnmask'] = {'got': tnmask['got'], 'want': tnmask['want']}
     return prov
 
 
@@ -459,6 +471,18 @@ def selftest():
                        SELFTEST_MODEL_VERSION))[0]['provenance']
     assert pr['partial_card'] is True and pr['missing_fragments'] == ['g2:f1'], \
         'partial cards must be distinguishable in the store'
+    # H1226: the pre-restore {Tn} pairing rides on provenance when the card carries it, is absent
+    # (never fabricated) for pre-H1226 cards, and a malformed pairing is dropped rather than stored.
+    assert 'tnmask' not in p, 'a card without tnmask must not fabricate one in provenance'
+    tnentry = dict(entry, card=dict(entry['card'], tnmask={'got': 'T1 T2', 'want': 'T1 T2 T3'}))
+    tp = list(rows_for('p_a~~h5_00_pwg00', tnentry, 'ai_translated',
+                       SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert tp['tnmask'] == {'got': 'T1 T2', 'want': 'T1 T2 T3'}, \
+        'the pre-restore {Tn} pairing must ride on the promoted row provenance'
+    badentry = dict(entry, card=dict(entry['card'], tnmask={'got': 'T1'}))   # missing `want`
+    bp = list(rows_for('p_a~~h5_00_pwg00', badentry, 'ai_translated',
+                       SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert 'tnmask' not in bp, 'a malformed tnmask pairing must not be promoted'
     # collect_cards: a non-null card wins over a null for the same sub-card key.
     d = tempfile.mkdtemp()
     nullf = os.path.join(d, 'wf_output.sc.x.json')
