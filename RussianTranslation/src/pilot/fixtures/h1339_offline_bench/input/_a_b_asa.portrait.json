@@ -1,0 +1,154 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ABAsa",
+  "key2": "ABAsa",
+  "h": "",
+  "iast": "ābhāsa",
+  "pos": [
+   "m."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval"
+  ],
+  "labels": [],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Glanz, Licht, Farbe, Aussehen"
+    ],
+    "gloss_de": "¦ (wie eben) m. Glanz, Licht, Farbe, Aussehen: R. 6,77,17 . 3,29,9 . ( ) SUŚR. 1,114,19 . ŚVETĀŚV. UP. 3,17 = BHAG. 13,14 . BĀLAB. 33 . 37 . das Aussehen eines wirklichen Elephanten habend KATHĀS. 12,",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "m."
+    ],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "BENF. Chr",
+     "BHAG",
+     "BHĀṢĀP",
+     "BĀLAB",
+     "Ind. St",
+     "KATHĀS",
+     "MADHUS",
+     "R",
+     "SUŚR",
+     "SĀH. D",
+     "VEDĀNTAS",
+     "WIND. Sancara",
+     "Z. d. d. m",
+     "ŚAṂK",
+     "ŚVETĀŚV. UP"
+    ],
+    "citations_resolved": {
+     "BENF. Chr": "BENFEY' Chrestomathie aus Sanskritwerken. Leipzig. 1853.",
+     "BHAG": "BHAGAVADGĪTĀ, Ausg. von SCHLEGEL (GILD. Bibl. 116).",
+     "BHĀṢĀP": "BHĀṢĀPARICCHEDA nach der Ausgabe von RÖER in der Bibliotheca indica.",
+     "BĀLAB": "BĀLABODHANĪ in WINDISCHMANN'S Sancara (GILD. Bibl. 275).",
+     "Ind. St": "WEBER'S Indische Studien.",
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "MADHUS": "MADHUSŪDANASARASVATĪ'S PRASTHĀNABHEDA in den Indischen Studien, I, S. 13--24.",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.",
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile.",
+     "VEDĀNTAS": "VEDĀNTASĀRA, ed. Calc. (Gild. Bibl. 279).",
+     "WIND. Sancara": "FRID. H. H. WINDISCHMANNI Sancara sive de theo- logumenis Vedanticorum. Bonnae 1833.",
+     "Z. d. d. m": "? [Cologne Addition]",
+     "ŚAṂK": "ŚAṂKARA (ein Scholiast des ŚĀKUNTALA) und ŚAM̃- KARĀCĀRYA.",
+     "ŚVETĀŚV. UP": "ŚVETĀŚVATAROPANIṢAD in der Bibliotheca indica."
+    },
+    "strata": {
+     "Epic / early-Classical": "Bhagavadgītā"
+    },
+    "examples_sa": [
+     "ABAsa",
+     "(gadAM) BAskarABAsAm",
+     "naBaSca ruDirABAsam",
+     "jAmbavABAsO"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ABAsa",
+  "key2": "ABAsa",
+  "h": "",
+  "iast": "ābhāsa",
+  "pos": [],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval"
+  ],
+  "labels": [
+   "contrast",
+   "printed",
+   "scholion"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Aussehen"
+    ],
+    "gloss_de": "¦ das Aussehen: R. 7,35,21 . das Erscheinen, zum-Vorschein-Kommen (= Schol. ; Gegens. ) BHĀG. P. 2,10,7 . blosser Schein 7,12,10 . 15,12 . VARĀH. BṚH. S. 75,1 . Scheinantwort, eine ungenügende, unklar",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "contrast",
+     "printed",
+     "scholion"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "BHĀG. P",
+     "KATHĀS",
+     "MIT. II,",
+     "R",
+     "SARVADARŚANAS",
+     "SĀH. D",
+     "VARĀH. BṚH. S",
+     "VYAVAHĀRAT",
+     "VĪR"
+    ],
+    "citations_resolved": {
+     "BHĀG. P": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden.",
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "MIT. II,": "MITĀKṢARĀ, ed. Calc. 1829 (GILD. Bibl. 314).",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "SARVADARŚANAS": "? [Cologne Addition]",
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile.",
+     "VARĀH. BṚH. S": "VARĀHAMIHIRA'S BṚHATSAM̃HITĀ.",
+     "VYAVAHĀRAT": "VYAVAHĀRATATTVA, ed. Calc. (GILD. Bibl. 342).",
+     "VĪR": "? [Cologne Addition]"
+    },
+    "strata": {
+     "Epic / early-Classical": "Rāmāyaṇa"
+    },
+    "examples_sa": [
+     "ABAsa",
+     "SAliSUkaniBABAsa",
+     "sfzwi",
+     "niroDa"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

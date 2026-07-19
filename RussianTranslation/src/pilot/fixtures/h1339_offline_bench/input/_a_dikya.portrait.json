@@ -1,0 +1,122 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADikya",
+  "key2": "ADikya",
+  "h": "",
+  "iast": "ādhikya",
+  "pos": [
+   "n."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical"
+  ],
+  "labels": [
+   "Scholiast or Commentator",
+   "ablative (case)",
+   "compare"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Ueberschuss, Ueberfluss, Uebermaass; grosses Maass, hoher Grad; Uebergewicht, Ueberlegenheit"
+    ],
+    "gloss_de": "¦ (von ) n. Ueberschuss, Ueberfluss, Uebermaass; grosses Maass, hoher Grad; Uebergewicht, Ueberlegenheit ( vgl. ): [Page1-0639] SUŚR. 1,132,17 . R. 5,90,24 . P. 2,1,6 , Sch. ŚĀK. 81 , Sch. M. 7,169 . ",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "n."
+    ],
+    "ab_labels": [
+     "Scholiast or Commentator",
+     "ablative (case)",
+     "compare"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "M",
+     "P",
+     "PRAB",
+     "R",
+     "SUŚR",
+     "ŚĀK"
+    ],
+    "citations_resolved": {
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "PRAB": "PRABODHACANDRODAYA, ed. BROCKHAUS (GILD. Bibl. 216).",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.",
+     "ŚĀK": "ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile."
+    },
+    "strata": {
+     "Epic / early-Classical": "Manusmṛti"
+    },
+    "examples_sa": [
+     "ADikya",
+     "aDika",
+     "aDika",
+     "evametadguRADikyaM"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADikya",
+  "key2": "ADikya",
+  "h": "",
+  "iast": "ādhikya",
+  "pos": [],
+  "diasystem": [
+   "Classical",
+   "Medieval"
+  ],
+  "labels": [
+   "above all, especially",
+   "contrast"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦, Gegens. SĀH. D. 700 . VEDĀNTAS. (Allah.) No. 42 . so v. a. was giebt es dort mehr? oder was hat Indra ʼs Stadt für einen Vorzug? Spr. 4817 . Ueberlegenheit, höhere Bedeutung 641",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "above all, especially",
+     "contrast"
+    ],
+    "diasystem": [
+     "Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "Spr",
+     "SĀH. D",
+     "VEDĀNTAS. (Allah.) No"
+    ],
+    "citations_resolved": {
+     "Spr": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864.",
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile.",
+     "VEDĀNTAS. (Allah.) No": "A Lecture on the Vedánta, embracing the text of the Vedánta-Sára. Allahabad 1850."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADikya",
+     "nyUnatA",
+     "jAqyADikya",
+     "suravaranagare kimADikyam"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

@@ -1,0 +1,468 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADAra",
+  "key2": "ADAra/",
+  "h": "",
+  "iast": "ādhāra",
+  "pos": [
+   "m.",
+   "n."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval",
+   "Vedic"
+  ],
+  "labels": [
+   "Scholiast or Commentator",
+   "nominative (case)",
+   "plural"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (von mit ) m. P. 3,3,121, Vārtt",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "m."
+    ],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "P"
+    ],
+    "citations_resolved": {
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244)."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADAra/",
+     "Dar",
+     "A"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "Stütze, Stützpunkt, Unterlage"
+    ],
+    "gloss_de": "1〉 Stütze, Stützpunkt, Unterlage (auch bildlich) NIR. 1,13 . MBH. 3,10053 . SUŚR. 2,348,2 . (Dachstuhl) H. 1011 . R. 5,3,77 . 89,39 . HIT. I, 195 . DEV. 11,3 . ŚĀNTIŚ. 2,6 . n. (!) KAIV. UP. _in_ Ind.",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "n."
+    ],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical",
+     "Vedic"
+    ],
+    "citations": [
+     "DEV",
+     "H",
+     "HIT. I,",
+     "Ind. St",
+     "KAIV. UP",
+     "MBH",
+     "NIR",
+     "R",
+     "SUŚR",
+     "ŚĀNTIŚ"
+    ],
+    "citations_resolved": {
+     "DEV": "DEVĪMĀHĀTMYA, ed. POLEY (GILD. Bibl. 130).",
+     "H": "HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.",
+     "HIT. I,": "HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.",
+     "Ind. St": "WEBER'S Indische Studien.",
+     "KAIV. UP": "KAIVALYOPANIṢAD.",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "NIR": "YĀSKA'S NIRUKTA sammt den NIGHAṆṬAVA'S herausgegeben und erklärt von RUDOLPH ROTH. Göttingen 1852.",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.",
+     "ŚĀNTIŚ": "ŚIHLANA'S ŚĀNTIŚATAKA in HAEBERLIN'S Anthology, S. 410. fgg."
+    },
+    "strata": {
+     "Epic / early-Classical": "Rāmāyaṇa"
+    },
+    "examples_sa": [
+     "valaBI",
+     "CadirADAraH",
+     "plavato hi mamADAraM na karizyati medinI",
+     "gacCa tvaM purARaM praBumavyayam . ADAraM sarvaBUtAnAm"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [
+     "Rückhalt"
+    ],
+    "gloss_de": "2〉 Rückhalt (?): AV. 12,3,48",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Vedic"
+    ],
+    "citations": [
+     "AV"
+    ],
+    "citations_resolved": {
+     "AV": "ATHARVAVEDASAM̃HITĀ, herausg. von R. ROTH und W. D. WHITNEY. Berlin bei F. DÜMMLER. 1855. 8º. In den ersten Bogen des Wörter- buchs finden sich mehrere Citate, deren Zahlen mit der in der Aus- gabe angenommenen Zählung nicht ganz zusammentreffen. Man kann den Unterschied dadurch ausgleichen, dass man in den zusammen- gesetzten Liedern (Paryāyasūkta), welche in der Ausgabe als Ein- heiten gezählt sind, die Unterabtheilungen (Strophen) als besondere Lieder zählt."
+    },
+    "strata": {
+     "Vedic": "Atharvaveda"
+    },
+    "examples_sa": [
+     "na kilbi^za\\matra\\ nADA\\ro 'sti^"
+    ]
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [
+     "Behälter, Behältniss"
+    ],
+    "gloss_de": "3〉 Behälter, Behältniss: YĀJÑ. 3,165 . SUŚR. 1,78,18 . KUMĀRAS. 3,48 . [Page1-0638] PAÑCAT. I, 77 . KUMĀRAS. 6,67 . H. 1096 . YĀJÑ. 3,144 . ŚĀK. 14 . H. 598 . 1365 . SĀH. D. 13,8",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "H",
+     "KUMĀRAS",
+     "PAÑCAT. I,",
+     "SUŚR",
+     "SĀH. D",
+     "YĀJÑ",
+     "ŚĀK"
+    ],
+    "citations_resolved": {
+     "H": "HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.",
+     "KUMĀRAS": "KUMĀRASAM̃BHAVA, ed. STENZLER (GILD. Bibl. 136).",
+     "PAÑCAT. I,": "PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manuscriptis edidit, commentariis criticis auxit IO. GODOFR. LUDOV. KOSEGARTEN. Pars prima, textum sanscritum simpliciorem tenens. Bonnae ad Rhenum 1848. 8º. Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische -- die Seite; die zweite Zahl bezeichnet hier die Zeile, dort den Śloka.",
+     "SUŚR": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.",
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile.",
+     "YĀJÑ": "YĀJÑAVALKYA'S Gesetzbuch. Sanskrit und Deutsch herausge- geben von Dr. ADOLPH FRIEDRICH STENZLER. Berlin und London 1849.",
+     "ŚĀK": "ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile."
+    },
+    "strata": {
+     "Classical": "Kumārasambhava"
+    },
+    "examples_sa": [
+     "vartyADArasnehayogAdyaTA dIpasya saMsTitiH",
+     "tejasaScandra ivAdityasya sa (AmASayaH) caturviDasyAhArasyADAraH",
+     "apAmivADAramanuttaraMgam",
+     "tizWantyApa"
+    ]
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "Deich, Damm"
+    ],
+    "gloss_de": "4〉 Deich, Damm AK. 1,2,3,28 . H. an. 3,521 . MED. r. 114 . RAGH. 5,6",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "AK",
+     "H. an",
+     "MED. r",
+     "RAGH"
+    ],
+    "citations_resolved": {
+     "AK": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+     "H. an": "HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).",
+     "MED. r": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.",
+     "RAGH": "RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134)."
+    },
+    "strata": {
+     "Classical": "Raghuvaṃśa"
+    },
+    "examples_sa": [
+     "ADArabanDa"
+    ]
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "5〉 = H. an. 3,522 . MED. Aus der Verbindung zweier geschiedener, aber auf einander folgender Artikel im AK. entstanden",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "AK",
+     "H. an",
+     "MED"
+    ],
+    "citations_resolved": {
+     "AK": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+     "H. an": "HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).",
+     "MED": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben."
+    },
+    "strata": {},
+    "examples_sa": [
+     "AlabAla"
+    ]
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [
+     "der Behälter"
+    ],
+    "gloss_de": "6〉 der Behälter (einer Handlung heisst) (die Beziehung des Locativs) P. 1,4,45 . Auf dieser Stelle beruht die Gleichsetzung von mit H. an. MED. SIDDH. K. 40,b . VOP. 5,30 . in der auf die Endung des n",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "Scholiast or Commentator",
+     "nominative (case)",
+     "plural"
+    ],
+    "diasystem": [],
+    "citations": [
+     "H. an",
+     "MED",
+     "P",
+     "SIDDH. K",
+     "VOP"
+    ],
+    "citations_resolved": {
+     "H. an": "HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).",
+     "MED": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.",
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "SIDDH. K": "SIDDHĀNTAKAUMUDĪ, die Calc. Ausg. in 4º (GILD. Bibl. 245).",
+     "VOP": "VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170)."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADAro 'DikaraRam",
+     "aDi˚",
+     "ADAra",
+     "aDikaraRa"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADAra",
+  "key2": "ADAra",
+  "h": "",
+  "iast": "ādhāra",
+  "pos": [],
+  "diasystem": [
+   "Classical"
+  ],
+  "labels": [
+   "and so on, and so forth = etc.",
+   "compare",
+   "proper noun",
+   "under"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADAra"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "1〉 WEBER, RĀMAT. UP. 278 . 321 . 323 . VEDĀNTAS. (Allah.) No. 2 . Unterlage (worauf eine Erscheinung oder Thätigkeit beruht) KAP. 2,42 . Boden —, Gebiet der Wirksamkeit TATTVAS. 45 . Subject, von welc",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "and so on, and so forth = etc.",
+     "compare",
+     "under"
+    ],
+    "diasystem": [],
+    "citations": [
+     "KAP",
+     "PRATĀPAR",
+     "TATTVAS",
+     "VEDĀNTAS. (Allah.) No",
+     "WEBER, RĀMAT. UP"
+    ],
+    "citations_resolved": {
+     "KAP": "KAPILA (The Aphorisms of the Sánkhya Philosophy, of Kapila; with illustrative extracts from the commentaries. I. Allahabad 1852. II--IV. ebend. 1834. Auch in der Bibl. ind.).",
+     "PRATĀPAR": "VIDYĀNĀTHA'S PRATĀPARUDRĪYAM ALAM̃KĀRAŚĀSTRAM. Lith. zu Pūnā, Śāka 1771.",
+     "TATTVAS": "A Lecture on the Sánkhya Philosophy, embracing the text of the Tattwa Samása. Mirzapore 1850.",
+     "VEDĀNTAS. (Allah.) No": "A Lecture on the Vedánta, embracing the text of the Vedánta-Sára. Allahabad 1850.",
+     "WEBER, RĀMAT. UP": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": [
+     "AtmAnamaKilADAram",
+     "ADeya",
+     "ASraya",
+     "ASrayin"
+    ]
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "3〉",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "3〉 HALĀY. 5,12",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "HALĀY"
+    ],
+    "citations_resolved": {
+     "HALĀY": "HALĀYUDHA, ein Lexicograph; nach Anführungen im ŚKDR."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "5〉 vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADArarUpA"
+    ]
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "6〉 hierher kann ŚĀNTIŚ. 2,6 ( Spr. 2351 ), das unter",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "Spr",
+     "ŚĀNTIŚ"
+    ],
+    "citations_resolved": {
+     "Spr": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864.",
+     "ŚĀNTIŚ": "ŚIHLANA'S ŚĀNTIŚATAKA in HAEBERLIN'S Anthology, S. 410. fgg."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "worauf soll die Liebe gerichtet und die Trauer bezogen werden?"
+    ],
+    "gloss_de": "1〉 steht, gezogen werden: worauf soll die Liebe gerichtet und die Trauer bezogen werden?",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "kimADAraH premA kimaDikaraRAH santu ca SucaH"
+    ]
+   },
+   {
+    "n": "7",
+    "sub": null,
+    "equivalents_de": [
+     "Teich"
+    ],
+    "gloss_de": "7〉 Teich HALĀY. 3,54 . N. pr. eines Teiches WILSON, Sel. Works 2,23",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "proper noun"
+    ],
+    "diasystem": [],
+    "citations": [
+     "HALĀY",
+     "WILSON, Sel. Works"
+    ],
+    "citations_resolved": {
+     "HALĀY": "HALĀYUDHA, ein Lexicograph; nach Anführungen im ŚKDR.",
+     "WILSON, Sel. Works": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "8",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "8〉 N. pr. des Verfassers der Ādhārakārikā Verz. d. Oxf. H. 238,b, N. 1 . 353,b,7",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "proper noun"
+    ],
+    "diasystem": [],
+    "citations": [
+     "Verz. d. Oxf. H"
+    ],
+    "citations_resolved": {
+     "Verz. d. Oxf. H": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": []
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

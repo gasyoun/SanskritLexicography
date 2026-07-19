@@ -1,0 +1,46 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ABIra#}¦ 1〉 <lex>m.</lex> <ab>N. pr.</ab> eines Volkes <ls>MBH. 2,1192</ls>. <ls n="MBH. 2,">1832</ls>. <ls n="MBH.">3,12840</ls>. <ls n="MBH.">14,832</ls>. <ls n="MBH.">16,223</ls>. <ls n="MBH. 16,">270</ls>. <ls>R. 4,43,5</ls>. <ls n="R. 4,43,">19</ls> <ls>VARĀH. BṚH. S. 14,12</ls>. <ls n="VARĀH. BṚH. S. 14,">18</ls>_in_<ls>Verz. d. B. H. 241</ls>. <ls>VP. 189</ls>. <ls n="VP.">195</ls>. <ls n="VP.">474</ls>. <ls n="VP.">481</ls>. <ls>PRAB. 88,1</ls>. {#ABIradeSe kila candrakAntaM triBirvarAwEH vipaRanti gopAH#} <ls>PAÑCAT. I, 88</ls>. <ab>Vgl.</ab> <ls>LIA. I, 539</ls>. <ls n="LIA. I,">799</ls>. <ls n="LIA. I,">II, 589. fgg.</ls>
+<div n="1">— 2〉 <lex>m.</lex> {%Kuhhirt%} <ls>AK. 2,9,57</ls>. <ls>H. 889</ls>. <ls>BURN. Intr. 150</ls>. <ls n="BURN. Intr.">424</ls>. Nach <ls>M. 10,15</ls> {%der Sohn eines Brahmanen von einem%} <is>Ambaṣṭha</is>-{%Mädchen%}. {#vESyaBeda eva ABIro gavAdyupajIvI#} <ls>H. 522</ls>, <ab>Sch.</ab> <lex>f.</lex> {#˚rI#} <ls>AK. 2,6,1,13</ls>. <ls>H. 522</ls>. <ls>VOP. 5,6</ls>.
+<div n="1">— 3〉 Name eines Metrums <ls>COLEBR. Misc. Ess. II, 156 (30)</ls>.
+<div n="1">— 4〉 {#˚rI#} (nämlich {#BAzA#}) {%die Sprache der%} <is>Ābhīra</is> <ls>COLEBR. Misc. Ess. II, 68</ls>.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ABIra#}¦ 1〉 <ls>MBH. 16,270</ls>. <ls>VARĀH. BṚH. S. 5,38</ls>. <ls n="VARĀH. BṚH. S. 5,">42</ls>. <ls n="VARĀH. BṚH. S.">16,31</ls>. <ls>DAŚAR. 2,42</ls>. <ls>BHĀG. P. 12,1,36</ls>. {#ABIragopAlapulindatApasAH#} <ls>Verz. d. Oxf. H. 333,b,15</ls>. <ls n="Verz. d. Oxf. H.">217,b,34</ls> (<ab>sg.</ab>). <ls n="Verz. d. Oxf. H.">338,b,35</ls>. <ls n="Verz. d. Oxf. H.">339,a,2 v. u. 339,b,13</ls>. <ls n="Verz. d. Oxf. H. 339,a,2 v. u. 339,b,">45</ls>. {#˚deSa#} <ls n="Verz. d. Oxf. H.">352,b,19</ls>. {#ABIrAdigiraH#} <ls n="Verz. d. Oxf. H.">204,a,8</ls>. {#ABIryaH striyaH#} <ls n="Verz. d. Oxf. H.">217,b,12</ls>. {#saptABIrAH#} ({#nfpAH#}) <ls>BHĀG. P. 12,1,27</ls>.
+<div n="1">— 2〉 {#ABIrakanyApriya#} ({#kfzRa#}) <ls>Spr. 4897</ls>. <ls>GĪT. 1,48</ls>.
+<div n="1">— 4〉 <ls>SĀH. D. 432</ls>.
+<div n="v">— <ab>Vgl.</ab> {#nfpABIra#}.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ABIra#}¦
+<div n="1">— 1〉 <lex>m.</lex>
+<div n="2">— a〉 <ab>Pl.</ab> <ab>N. pr.</ab> eines Volkes.
+<div n="2">— b〉 {%Kuhhirt%}. Im System {%der Sohn eines Brahmanen [Page1-179-a] von einer%} <is>Ambaṣṭha</is>-{%Frau%}.
+<div n="1">— 2〉 <lex>Adj.</lex> (<lex>f.</lex> {#I#}) {%zum Volk der%} <is>Ābhīra</is> {%gehörig, ihnen eigen%}.
+<div n="1">— 3〉 <lex>f.</lex> {#I#}
+<div n="2">— a〉 *{%zur Kaste der%} <is>Ābhīra</is> {%gehörig%} und auch {%die Frau eines solchen%} <is>Ābhīra</is>.
+<div n="2">— b〉 {%ein <ab>best.</ab> Metrum%}.
+<div n="2">— c〉 {%die Sprache der%} <is>Ābhīra</is>
+<div n="2">— d〉 {%eine <ab>best.</ab>%} <is>Rāgiṇī</is> <ls>S. S. S. 37</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ABIra#}¦ 3〉a〉 <ls>HEM. PAR. 7,120</ls>.<info n="sup_2"/>
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ABIra#}¦ I. 2.<info n="sup_7"/>
+
+=== LAYER: SCH — Schmidt Nachträge 1928 (pure addenda to PW; °=new vs pw, *=first attestation) ===
+
+{%ābhīra%}¦ 3. a) <ls>Hem. Par. 7,126.</ls> {part=,seq=7212,type=,n=1}
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#ABIra#}¦ 3〉a〉 <ls>HEM. PAR. 7,120</ls>.
+
+=== LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
+
+{#ABIra#}¦ I. 2.
