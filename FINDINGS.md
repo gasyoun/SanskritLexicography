@@ -953,6 +953,36 @@ Implication: use a length-preserving `form_key`, not a blanket NFD+strip-combini
 
 > **Source:** [`form_key` in sanskrit_util](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py). — sanskrit-util / shared · 2026-06
 
+### §100. `nfold` earns sandhi-tolerant recall by fusing every nasal to `n` — which manufactures false quotation matches unless every hit is re-verified on `norm`
+
+🔴 **`sanskrit_util.nfold` maps *every* nasal to `n`, stem-internally as well as at sandhi
+boundaries. That is exactly what makes it useful for corpus matching, and exactly what makes
+it unsafe as the key a verdict rests on.**
+
+Evidence (H1212, matching Bühler's exercise sentences against DCS 2026): `nfold` folds
+Bühler's `janānāṃ dhanaṃ` and the unrelated corpus string `yājamānaṃ dhānaṃjayyaḥ` close
+enough to register as a shared contiguous run. Re-verifying the same run on `norm` (which is
+diacritic-insensitive but keeps `m`/`n` distinct) removes it, along with its whole class:
+the `adapted` bucket fell from 28 rows to 16 — **43 % of that bucket was nasal-folding
+artefact**.
+
+Implication: use `nfold` for *recall* (generating candidates, absorbing anusvāra/ṃ/m/n
+sandhi variation that would otherwise hide a real quotation), then require every surviving
+candidate to match on `norm` before it counts as evidence. Two keys, two jobs. A pipeline
+that rules on `nfold` alone will report inflated attestation and will not look obviously
+wrong — the false hits are individually plausible.
+
+Related trap from the same pass, not specific to Sanskrit: **token-overlap scoring without
+an adjacency requirement is not evidence of quotation.** IDF-weighted containment scored
+`adya jīvāmaḥ` ("today we live") at 0.64 because both its tokens occur, scattered and
+unrelated, somewhere in a long Aṣṭāṅgahṛdaya sentence. Requiring a contiguous run instead
+halved that bucket again (56→28). For short sentences over a large corpus, co-occurrence of
+common vocabulary is the null hypothesis, not the signal.
+
+> **Source:** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py)
+> + [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md)
+> — SanskritGrammar / H1212, Opus 4.8 (`claude-opus-4-8`) · 2026-07
+
 ### §37. BOM state is inconsistent across exports
 
 🟠 **`csl-orig` files never carry a BOM; many exported HeadwordLists do.**
