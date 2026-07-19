@@ -1,0 +1,295 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ABIra",
+  "key2": "ABIra",
+  "h": "",
+  "iast": "ābhīra",
+  "pos": [
+   "f.",
+   "m."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical"
+  ],
+  "labels": [
+   "Scholiast or Commentator",
+   "compare",
+   "proper noun"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ABIra"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "1〉 m. N. pr. eines Volkes MBH. 2,1192 . 1832 . 3,12840 . 14,832 . 16,223 . 270 . R. 4,43,5 . 19 VARĀH. BṚH. S. 14,12 . 18 _in_ Verz. d. B. H. 241 . VP. 189 . 195 . 474 . 481 . PRAB. 88,1 . PAÑCAT. I, ",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "m."
+    ],
+    "ab_labels": [
+     "compare",
+     "proper noun"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "II,",
+     "LIA. I,",
+     "MBH",
+     "PAÑCAT. I,",
+     "PRAB",
+     "R",
+     "VARĀH. BṚH. S",
+     "VP",
+     "Verz. d. B. H"
+    ],
+    "citations_resolved": {
+     "II,": null,
+     "LIA. I,": "LASSEN'S Indische Alterthumskunde.",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "PAÑCAT. I,": "PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manuscriptis edidit, commentariis criticis auxit IO. GODOFR. LUDOV. KOSEGARTEN. Pars prima, textum sanscritum simpliciorem tenens. Bonnae ad Rhenum 1848. 8º. Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische -- die Seite; die zweite Zahl bezeichnet hier die Zeile, dort den Śloka.",
+     "PRAB": "PRABODHACANDRODAYA, ed. BROCKHAUS (GILD. Bibl. 216).",
+     "R": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.",
+     "VARĀH. BṚH. S": "VARĀHAMIHIRA'S BṚHATSAM̃HITĀ.",
+     "VP": "VIṢṆUPURĀṆA. Es wird die WILSON'sche Uebersetzung (GILD. Bibl. 133) citirt.",
+     "Verz. d. B. H": "WEBER'S Verzeichniss der Berliner Sanskrit-Hand- schriften. Bildet den ersten Band von: Die Handschriften-Verzeich- nisse der Königlichen Bibliothek, herausgegeben von dem König- lichen Oberbibliothekar, Geheimen Regierungsrath Dr. PERTZ. Berlin 1853. 8º."
+    },
+    "strata": {
+     "Epic / early-Classical": "Rāmāyaṇa",
+     "Classical": "Viṣṇu-Purāṇa"
+    },
+    "examples_sa": [
+     "ABIradeSe kila candrakAntaM triBirvarAwEH vipaRanti gopAH"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [
+     "Kuhhirt"
+    ],
+    "gloss_de": "2〉 m. Kuhhirt AK. 2,9,57 . H. 889 . BURN. Intr. 150 . 424 . Nach M. 10,15 der Sohn eines Brahmanen von einem Ambaṣṭha -Mädchen. H. 522 , Sch. f. AK. 2,6,1,13 . H. 522 . VOP. 5,6",
+    "equivalence_type": "equivalent",
+    "grammar": [
+     "m.",
+     "f."
+    ],
+    "ab_labels": [
+     "Scholiast or Commentator"
+    ],
+    "diasystem": [
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "AK",
+     "BURN. Intr",
+     "H",
+     "M",
+     "VOP"
+    ],
+    "citations_resolved": {
+     "AK": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+     "BURN. Intr": "BURNOUF, Introduction à l'histoire du Buddhisme indien. Tome premier. Paris 1844.",
+     "H": "HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "VOP": "VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170)."
+    },
+    "strata": {
+     "Epic / early-Classical": "Manusmṛti"
+    },
+    "examples_sa": [
+     "vESyaBeda eva ABIro gavAdyupajIvI",
+     "˚rI"
+    ]
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "3〉 Name eines Metrums COLEBR. Misc. Ess. II, 156 (",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "COLEBR. Misc. Ess. II,"
+    ],
+    "citations_resolved": {
+     "COLEBR. Misc. Ess. II,": "COLEBROOKE'S Miscellaneous Essays. 2 Bände. Lon- don 1837."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "die Sprache der"
+    ],
+    "gloss_de": "4〉 (nämlich ) die Sprache der Ābhīra COLEBR. Misc. Ess. II, 68",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "COLEBR. Misc. Ess. II,"
+    ],
+    "citations_resolved": {
+     "COLEBR. Misc. Ess. II,": "COLEBROOKE'S Miscellaneous Essays. 2 Bände. Lon- don 1837."
+    },
+    "strata": {},
+    "examples_sa": [
+     "˚rI",
+     "BAzA"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ABIra",
+  "key2": "ABIra",
+  "h": "",
+  "iast": "ābhīra",
+  "pos": [],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval"
+  ],
+  "labels": [
+   "compare",
+   "singular"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ABIra"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "1〉 MBH. 16,270 . VARĀH. BṚH. S. 5,38 . 42 . 16,31 . DAŚAR. 2,42 . BHĀG. P. 12,1,36 . Verz. d. Oxf. H. 333,b,15 . 217,b,34 ( sg. ). 338,b,35 . 339,a,2 v. u. 339,b,13 . 45 . 352,b,19 . 204,a,8 . 217,b,1",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "singular"
+    ],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "BHĀG. P",
+     "DAŚAR",
+     "MBH",
+     "VARĀH. BṚH. S",
+     "Verz. d. Oxf. H"
+    ],
+    "citations_resolved": {
+     "BHĀG. P": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden.",
+     "DAŚAR": "The Daśa-Rūpa, or Hindu Canons of Dramaturgy by Dhanan- jaya. Ed. by Fitz-Edward HALL. Calcutta, 1861.",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "VARĀH. BṚH. S": "VARĀHAMIHIRA'S BṚHATSAM̃HITĀ.",
+     "Verz. d. Oxf. H": "? [Cologne Addition]"
+    },
+    "strata": {
+     "Epic / early-Classical": "Mahābhārata"
+    },
+    "examples_sa": [
+     "ABIragopAlapulindatApasAH",
+     "˚deSa",
+     "ABIrAdigiraH",
+     "ABIryaH striyaH"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "2〉 ( ) Spr. 4897 . GĪT. 1,48",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical",
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "GĪT",
+     "Spr"
+    ],
+    "citations_resolved": {
+     "GĪT": "GĪTAGOVINDA, ed. LASSEN (GILD. Bibl. 168).",
+     "Spr": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864."
+    },
+    "strata": {
+     "Epic / early-Classical": "Bhagavadgītā"
+    },
+    "examples_sa": [
+     "ABIrakanyApriya",
+     "kfzRa"
+    ]
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "4〉 SĀH. D. 432 . — Vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Medieval"
+    ],
+    "citations": [
+     "SĀH. D"
+    ],
+    "citations_resolved": {
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile."
+    },
+    "strata": {},
+    "examples_sa": [
+     "nfpABIra"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

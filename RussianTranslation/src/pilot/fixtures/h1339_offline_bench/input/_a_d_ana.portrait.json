@@ -1,0 +1,496 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADAna",
+  "key2": "ADA/na",
+  "h": "",
+  "iast": "ādhāna",
+  "pos": [
+   "n."
+  ],
+  "diasystem": [
+   "Classical",
+   "Epic / early-Classical",
+   "Medieval",
+   "Vedic"
+  ],
+  "labels": [
+   "Scholiast or Commentator",
+   "compare",
+   "look there",
+   "perhaps"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ (von mit ) n",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "n."
+    ],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADA/na",
+     "DA, daDAti",
+     "A"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Anlegen, Zulegen, Legen"
+    ],
+    "gloss_de": "1〉 das Anlegen, Zulegen, Legen ŚAT. BR. 2,1,4,29 . 11,2,7,33 . KĀTY. ŚR. 5,5,35 . 6,10,9 . 4,10,15 . M. 2,176 . KĀTY. ŚR. 4,11,1 . 8,6,30 . 10,8,6 . Vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Epic / early-Classical",
+     "Vedic"
+    ],
+    "citations": [
+     "KĀTY. ŚR",
+     "M",
+     "ŚAT. BR"
+    ],
+    "citations_resolved": {
+     "KĀTY. ŚR": "KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "ŚAT. BR": "The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849."
+    },
+    "strata": {
+     "Epic / early-Classical": "Manusmṛti"
+    },
+    "examples_sa": [
+     "tulADAna",
+     "samidADAna",
+     "pUtidArvADAna",
+     "garBADAna"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "2〉 = ( s. d. ): M. 5,168 ( KULL. : ). ( RĀGHAV. : , KULL. : ; gehört viell. zu 3.) 8,209 . (die Sonne wird angeredet) MBH. 3,184 . 8194 . 10663",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "look there",
+     "perhaps"
+    ],
+    "diasystem": [
+     "Epic / early-Classical"
+    ],
+    "citations": [
+     "KULL",
+     "M",
+     "MBH",
+     "RĀGHAV"
+    ],
+    "citations_resolved": {
+     "KULL": "KULLŪKA, ein Scholiast des MANU, vollständig abgedruckt unter andern in der Calc. Ausg. von 1830 (GILD. Bibl. 288).",
+     "M": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.",
+     "RĀGHAV": "? [Cologne Addition]"
+    },
+    "strata": {
+     "Epic / early-Classical": "Mahābhārata"
+    },
+    "examples_sa": [
+     "agnyADAna",
+     "BAryAyE pUrvamAriRyE dattvAgnInantyakarmaRi . punardArakriyAM punarADAnameva ca ..",
+     "smArtAgnIn SrOtAgnInvA AdaDyAt",
+     "raTaM hareta cADvaryurbrahmADAne"
+    ]
+   },
+   {
+    "n": "3",
+    "sub": null,
+    "equivalents_de": [
+     "Empfängniss"
+    ],
+    "gloss_de": "3〉 = Empfängniss Verz. d. B. H. No. 858 ( III ). 862 ( 258,17 ). Ind. St. 1,59,3 v. u. 2,287, N. 2 . MEGH. 3",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "III",
+     "Ind. St",
+     "MEGH",
+     "Verz. d. B. H"
+    ],
+    "citations_resolved": {
+     "III": null,
+     "Ind. St": "WEBER'S Indische Studien.",
+     "MEGH": "MEGHADŪTA, ed. GILDEMEISTER (GILD. Bibl. 151).",
+     "Verz. d. B. H": "WEBER'S Verzeichniss der Berliner Sanskrit-Hand- schriften. Bildet den ersten Band von: Die Handschriften-Verzeich- nisse der Königlichen Bibliothek, herausgegeben von dem König- lichen Oberbibliothekar, Geheimen Regierungsrath Dr. PERTZ. Berlin 1853. 8º."
+    },
+    "strata": {
+     "Classical": "Meghadūta"
+    },
+    "examples_sa": [
+     "garBADAna",
+     "ketakADAnahetoH"
+    ]
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "das Niederlegen als Pand, Verpfändung"
+    ],
+    "gloss_de": "4〉 das Niederlegen als Pand, Verpfändung YĀJÑ. 2,238 . 247 . Vgl. 1",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Classical"
+    ],
+    "citations": [
+     "YĀJÑ"
+    ],
+    "citations_resolved": {
+     "YĀJÑ": "YĀJÑAVALKYA'S Gesetzbuch. Sanskrit und Deutsch herausge- geben von Dr. ADOLPH FRIEDRICH STENZLER. Berlin und London 1849."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ADAnaM vikrayaM vApi nayataH",
+     "ADi"
+    ]
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [
+     "das Beilegen, Zutheilen, Anwenden"
+    ],
+    "gloss_de": "5〉 das Beilegen, Zutheilen, Anwenden: SĀH. D. 10,13 . RAGH. 1,24 . P. 1,3,32 , Sch",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "Scholiast or Commentator"
+    ],
+    "diasystem": [
+     "Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "P",
+     "RAGH",
+     "SĀH. D"
+    ],
+    "citations_resolved": {
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "RAGH": "RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134).",
+     "SĀH. D": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile."
+    },
+    "strata": {
+     "Classical": "Raghuvaṃśa"
+    },
+    "examples_sa": [
+     "guRo viSezADAnahetuH sidDo vastuDarmaH",
+     "prajAnAM vinayADAnAt",
+     "pratiyatno guRADAnam"
+    ]
+   },
+   {
+    "n": "6",
+    "sub": null,
+    "equivalents_de": [
+     "der Ort, an welchen Etwas gelegt wird, in welchem Etwas ruht, sich befindet"
+    ],
+    "gloss_de": "6〉 der Ort, an welchen Etwas gelegt wird, in welchem Etwas ruht, sich befindet ŚAT. BR. 14,5,2,1 = BṚH. ĀR. UP. 2,2,1 . Vgl",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Vedic"
+    ],
+    "citations": [
+     "BṚH. ĀR. UP",
+     "ŚAT. BR"
+    ],
+    "citations_resolved": {
+     "BṚH. ĀR. UP": "BṚHADĀRAṆYAKOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica.",
+     "ŚAT. BR": "The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849."
+    },
+    "strata": {},
+    "examples_sa": [
+     "pakvADAna, purIzADAna"
+    ]
+   },
+   {
+    "n": "7",
+    "sub": null,
+    "equivalents_de": [
+     "Umfangung, Umfassung"
+    ],
+    "gloss_de": "7〉 Umfangung, Umfassung: ṚV. 10,94,8",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [
+     "Vedic"
+    ],
+    "citations": [
+     "ṚV"
+    ],
+    "citations_resolved": {
+     "ṚV": "ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838."
+    },
+    "strata": {
+     "Vedic": "Ṛgveda"
+    },
+    "examples_sa": [
+     "tezA^mA\\DAna\\M parye^ti harya\\tam"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADAna",
+  "key2": "ADAna",
+  "h": "",
+  "iast": "ādhāna",
+  "pos": [],
+  "diasystem": [
+   "Epic / early-Classical",
+   "Medieval"
+  ],
+  "labels": [
+   "above all, especially",
+   "compare",
+   "in general",
+   "instead of"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADAna"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Drauflegen des Todten"
+    ],
+    "gloss_de": "1〉 das Drauflegen des Todten Verz. d. Oxf. H. 294,b,18",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "Verz. d. Oxf. H"
+    ],
+    "citations_resolved": {
+     "Verz. d. Oxf. H": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": [
+     "utsannAgnerdAhArTaM mftADAnaprayogaH"
+    ]
+   },
+   {
+    "n": "2",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "2〉 Ind. St. 3,379",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "Ind. St"
+    ],
+    "citations_resolved": {
+     "Ind. St": "WEBER'S Indische Studien."
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "4",
+    "sub": null,
+    "equivalents_de": [
+     "Pfand",
+     "Pand"
+    ],
+    "gloss_de": "4〉 lies Pfand st. Pand",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "instead of"
+    ],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "5",
+    "sub": null,
+    "equivalents_de": [
+     "das Beibringen"
+    ],
+    "gloss_de": "5〉 das Beibringen MBH. 13,4633 . das Erweisen eines Liebesdienstes MAHĀVĪRAC. 92,16 . so v. a. Kraft mit Geschwindigkeit verbunden KATHĀS. 67,25",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "above all, especially"
+    ],
+    "diasystem": [
+     "Epic / early-Classical",
+     "Medieval"
+    ],
+    "citations": [
+     "KATHĀS",
+     "MAHĀVĪRAC",
+     "MBH"
+    ],
+    "citations_resolved": {
+     "KATHĀS": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+     "MAHĀVĪRAC": "? [Cologne Addition]",
+     "MBH": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden."
+    },
+    "strata": {
+     "Epic / early-Classical": "Mahābhārata"
+    },
+    "examples_sa": [
+     "avaSyaM vinayADAnaM kAryamadya mayA tava",
+     "AtmanIva priyADAnam",
+     "javADAnabala"
+    ]
+   },
+   {
+    "n": "7",
+    "sub": null,
+    "equivalents_de": [
+     "Zügel",
+     "Pferdegeschirr"
+    ],
+    "gloss_de": "7〉 lies Zügel oder Pferdegeschirr überh. und füge TBR. 1,6,3,9 hinzu. — Vgl",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "compare",
+     "in general"
+    ],
+    "diasystem": [],
+    "citations": [
+     "TBR"
+    ],
+    "citations_resolved": {
+     "TBR": "TAITTIRĪYABRĀHMAṆA."
+    },
+    "strata": {},
+    "examples_sa": [
+     "AvasaTyADAna, purIzADAna, BagADAna"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADAna",
+  "key2": "ADAna",
+  "h": "",
+  "iast": "ādhāna",
+  "pos": [],
+  "diasystem": [],
+  "labels": [
+   "see"
+  ],
+  "senses": [
+   {
+    "n": "0",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADAna"
+    ]
+   },
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Hinzufügen"
+    ],
+    "gloss_de": "1〉 das Hinzufügen VĀMANA 1,3,16",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [
+     "VĀMANA"
+    ],
+    "citations_resolved": {
+     "VĀMANA": "? [Cologne Addition]"
+    },
+    "strata": {},
+    "examples_sa": []
+   },
+   {
+    "n": "8",
+    "sub": null,
+    "equivalents_de": [
+     "Zaum, Gebiss"
+    ],
+    "gloss_de": "8〉 Zaum, Gebiss; s. weiter unten",
+    "equivalence_type": "equivalent",
+    "grammar": [],
+    "ab_labels": [
+     "see"
+    ],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "nirADAna"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

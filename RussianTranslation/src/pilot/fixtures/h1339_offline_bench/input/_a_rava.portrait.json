@@ -1,0 +1,51 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ARava",
+  "key2": "ARava/",
+  "h": "",
+  "iast": "āṇava",
+  "pos": [
+   "adj.",
+   "n."
+  ],
+  "diasystem": [],
+  "labels": [
+   "abstract noun"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ n. nom. abstr. von 1. gaṇa zu P. 5,1,122 . adj. (!) überaus klein, fein TEJOV. UP. _in_ Ind. St. 2,63, N. 1",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "n.",
+     "adj."
+    ],
+    "ab_labels": [
+     "abstract noun"
+    ],
+    "diasystem": [],
+    "citations": [
+     "Ind. St",
+     "P",
+     "TEJOV. UP"
+    ],
+    "citations_resolved": {
+     "Ind. St": "WEBER'S Indische Studien.",
+     "P": "PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).",
+     "TEJOV. UP": "TEJOVINDŪPANIṢAD."
+    },
+    "strata": {},
+    "examples_sa": [
+     "ARava/",
+     "aRu",
+     "pfTvAdi"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

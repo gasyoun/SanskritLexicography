@@ -1,0 +1,16 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ADI/#}¦ (von {#DyA, DyAyati#} mit {#A#}) <lex>f.</lex> {%das Sinnen, Sehnen, Sorge%}: {#vya^danti mA\Dya^H#} <ls>ṚV. 1,105,8</ls>. <ls n="ṚV. 1,105,">7</ls>. {#ca\kranna kra^ndadA\Dye^ Si\vAyE^#} <ls n="ṚV.">10,95,13</ls>. {#A\Dyo\3^\ ni ti^rAmi te#} <ls>AV. 6,131,1</ls>. <ls n="AV. 6,">132,1</ls>. <ls>ŚAT. BR. 11,5,1,4</ls>. {#nigIrya sarvA ADIH#} <ls>KĀTY. ŚR. 13,3,20</ls>.
+<div n="v">— <ab>Vgl.</ab> <hom>2.</hom> {#ADi, ADIparRa, durADI, dUraADI, svADI#}.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADI#}¦ = <hom>1.</hom> {#DI#} mit {#A#}.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+<hom>1.</hom> {#ADI/#}¦ <lex>f.</lex> {%Sehnsucht, Sorge%}.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+<hom>2.</hom> {#ADI#}¦ <lex>Adv.</lex> mit {#kara#} {%verpfänden%} <ls>MIT. zu YĀJÑ. 2,61</ls>.

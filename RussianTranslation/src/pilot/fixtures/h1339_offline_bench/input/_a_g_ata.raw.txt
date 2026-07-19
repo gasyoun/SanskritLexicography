@@ -1,0 +1,24 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#AGAta#}¦ (von {#han#} mit {#A#}) <lex>m.</lex>
+<div n="1"> 1〉 {%Schläger%}: {#dunduByAGAta/#} {%Trommelschläger%} <ls>ŚAT. BR. 14,5,4,7</ls>. <ls n="ŚAT. BR. 14,">7,3,8</ls> = <ls>BṚH. ĀR. UP. 2,4,7</ls>. <ls n="BṚH. ĀR. UP.">4,5,8</ls>. <ab>Vgl.</ab> {#AqambarAGAta#}.
+<div n="1">— 2〉 {%Anschlag, Schlag, Verwundung%}: {#tIvrAGAtapratihatataruskanDalagnEkadantaH#} (ein Elephant) <ls>ŚĀK. 32</ls>. gewöhnlich in <ab>comp.</ab> mit dem, was den Schlag bewirkt oder wogegen der Schlag gerichtet ist: {#BujA˚#} <ls>MBH. 2,912</ls>. {#karA˚#} <ls>BHARTṚ. 2,83</ls>. {#pAdA˚#} <ls>KATHĀS. 13,102</ls>. <ls n="KATHĀS.">21,75</ls>. {#KurA˚#} <ls n="KATHĀS.">14,12</ls>. {#izwakA˚#} <ls>RĀJA-TAR. 5,463</ls>. {#pavanAGAtapreritA nOH#} <ls n="RĀJA-TAR. 5,">330</ls>. {#naKarA˚#} <ls>MED. k. 224</ls>. {#kaWinakucatawA˚#} <ls>AMAR. 55</ls>. {#aByasyanti tawAGAtam#} (<ab>vgl.</ab> {#tawABiGAta#} <ls n="AMAR.">7,49</ls>) — {#dvijAH#} <ls>KUMĀRAS. 2,50</ls>. <ab>Vgl.</ab> {#pakzAGAta#}.
+<div n="1">— 3〉 {%Tödtung%}: {#sattvA˚#} <ls>YĀJÑ. 3,275</ls>. {#prARA˚#} (so ist zu lesen) <ls>BHARTṚ. 2,60</ls>.
+<div n="1">— 4〉 {%Verhaltung%} (von Harn <ab>u. s. w.</ab>) <ls>SUŚR. 2,192,5</ls>. <ls n="SUŚR.">194,19,529,6</ls>. <ls n="SUŚR. 2,192,">8</ls>. <ab>u. s. w.</ab> <ab>Vgl.</ab> {#mUtrAGAta#}.
+<div n="1">— 5〉 {%Trübsal, Leiden%} <ls>VYUTP. 61</ls>.
+<div n="1">— 6〉 {%Richtplatz, Schlachthaus%} <ls>TRIK. 2,8,59</ls>. {#AGAtamadyAhamanuprayAmi SAmitramAlabDumivADvare 'jaH#} <ls>MṚCCH. 161,11</ls>. {#AGAtaM nIyamAnasya vaDyasyeva#} <ls>HIT. IV, 64</ls>.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#AGAta#}¦ 2〉 {#tAndaRqAGAtEratAqayan#} {%mit Stockschlägen%} <ls>KATHĀS. 54,203</ls>.
+<div n="1">— 6〉 {#AGAtaM nIyamAnasya vaDyasyeva#} auch <ls>BHĀG. P. 11,20,20</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#AGAta#}¦ <lex>m.</lex>
+<div n="1">— 1〉 am Ende eines <ab>Comp.</ab> {%Schläger%}.
+<div n="1">— 2〉 {%Anschlag, Schlag mit oder auf%} (im <ab>Comp.</ab> vorangehend).
+<div n="1">— 3〉 {%Tödtung%}.
+<div n="1">— 4〉 {%Verhaltung%} (von Harn <ab>u. s. w.</ab>)
+<div n="1">— 5〉 *{%Trübsal, Leiden%}.
+<div n="1">— 6〉 {%Richtplatz, Schlachthaus%}.

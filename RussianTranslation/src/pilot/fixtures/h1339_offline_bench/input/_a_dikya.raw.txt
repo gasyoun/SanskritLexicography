@@ -1,0 +1,11 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ADikya#}¦ (von {#aDika#}) <lex>n.</lex> {%Ueberschuss, Ueberfluss, Uebermaass; grosses Maass, hoher Grad; Uebergewicht, Ueberlegenheit%} (<ab>vgl.</ab> {#aDika#}): {#evametadguRADikyaM#} [Page1-0639] {#dravye dravye viniScitam#} <ls>SUŚR. 1,132,17</ls>. {#na dAnAnna ca saMharzAnnADikyAnna ca kAmataH . vakzyAmi vacanam#} <ls>R. 5,90,24</ls>. {#fdDerADikyaM samfdDiH#} <ls>P. 2,1,6</ls>, <ab>Sch.</ab> <ls>ŚĀK. 81</ls>, <ab>Sch.</ab> {#yadAvagacCedAyAtyAmADikyaM DruvamAtmanaH#} <ls>M. 7,169</ls>. {#paraguRADikyena mAnaH KaRqitaH#} <ls>PRAB. 88,9</ls>. mit dem <ab>abl.</ab>: {#yasmAdADikyamucyate#} <ls>P. 2,3,9</ls>, <ab>Sch.</ab>
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADikya#}¦, <ab>Gegens.</ab> {#nyUnatA#} <ls>SĀH. D. 700</ls>. {#jAqyADikya#} <ls>VEDĀNTAS. (Allah.) No. 42</ls>. {#suravaranagare kimADikyam#} so <ab>v. a.</ab> {%was giebt es dort mehr?%} oder {%was hat%} <is>Indra</is>ʼs {%Stadt für einen Vorzug?%} <ls>Spr. 4817</ls>. {%Ueberlegenheit, höhere Bedeutung%} <ls n="Spr.">641</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADikya#}¦ <lex>n.</lex> {%Ueberschuss, Ueberfluss, Uebermaass, grosses Maass, hoher Grad, das Vorwalten, Uebergewicht, Ueberlegenheit, höhere Bedeutung%}.

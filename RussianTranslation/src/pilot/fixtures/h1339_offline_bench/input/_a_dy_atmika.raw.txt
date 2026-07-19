@@ -1,0 +1,14 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#A/DyAtmika#}¦ (von {#aDyAtma#}) <lex>adj.</lex> <lex>f.</lex> {#I#} (<ls>YĀJÑ. 1,101</ls>) und {#A#} (<ls>SĀṂKHYAK. 50</ls>) {%auf das Selbst%} oder {%die Allseele bezüglich%} <is n="Kārikā">Kār.</is> zu <ls>P. 4,3,60</ls>. <ls>NIR. 7,1</ls>. <ls>M. 2,117</ls>. <ls>SUŚR. 1,89,5</ls>.
+<div n="v">— <ab>Vgl.</ab> {#aDyAtmika#}.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADyAtmika#}¦ {%zur Seele —, zum Subject in Beziehung stehend, subjectiv%} <ls>TATTVAS. 41</ls>. <ls n="TATTVAS.">50</ls>. <ls>KAP. 3,43</ls>. <ls>SARVADARŚANAS. 22,1</ls>. {#arizwAni#} <ls>Verz. d. Oxf. H. 230,b,16. fg.</ls> {#˚yoga#} <ls n="Verz. d. Oxf. H.">27,a,20</ls>.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADyAtmika#}¦ <lex>Adj.</lex> (<lex>f.</lex> {#I#} und {#A#})
+<div n="1">— 1〉 {%zum Selbst —, zum Subject in Beziehung stehend, subjectiv%}.
+<div n="1">— 2〉 {%zur Allseele in Beziehung stehend%}.

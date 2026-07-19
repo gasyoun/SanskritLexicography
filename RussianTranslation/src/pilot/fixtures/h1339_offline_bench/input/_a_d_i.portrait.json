@@ -1,0 +1,91 @@
+[
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADI",
+  "key2": "ADI/",
+  "h": "",
+  "iast": "ādhī",
+  "pos": [
+   "f."
+  ],
+  "diasystem": [
+   "Vedic"
+  ],
+  "labels": [
+   "compare"
+  ],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [
+     "das Sinnen, Sehnen, Sorge"
+    ],
+    "gloss_de": "¦ (von mit ) f. das Sinnen, Sehnen, Sorge: ṚV. 1,105,8 . 7 . 10,95,13 . AV. 6,131,1 . 132,1 . ŚAT. BR. 11,5,1,4 . KĀTY. ŚR. 13,3,20 . — Vgl. 2",
+    "equivalence_type": "explanatory",
+    "grammar": [
+     "f."
+    ],
+    "ab_labels": [
+     "compare"
+    ],
+    "diasystem": [
+     "Vedic"
+    ],
+    "citations": [
+     "AV",
+     "KĀTY. ŚR",
+     "ŚAT. BR",
+     "ṚV"
+    ],
+    "citations_resolved": {
+     "AV": "ATHARVAVEDASAM̃HITĀ, herausg. von R. ROTH und W. D. WHITNEY. Berlin bei F. DÜMMLER. 1855. 8º. In den ersten Bogen des Wörter- buchs finden sich mehrere Citate, deren Zahlen mit der in der Aus- gabe angenommenen Zählung nicht ganz zusammentreffen. Man kann den Unterschied dadurch ausgleichen, dass man in den zusammen- gesetzten Liedern (Paryāyasūkta), welche in der Ausgabe als Ein- heiten gezählt sind, die Unterabtheilungen (Strophen) als besondere Lieder zählt.",
+     "KĀTY. ŚR": "KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.",
+     "ŚAT. BR": "The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849.",
+     "ṚV": "ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838."
+    },
+    "strata": {
+     "Vedic": "Atharvaveda"
+    },
+    "examples_sa": [
+     "ADI/",
+     "DyA, DyAyati",
+     "A",
+     "vya^danti mA\\Dya^H"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ },
+ {
+  "schema_version": "pwg_ru.lexicographic_portrait.v1",
+  "key1": "ADI",
+  "key2": "ADI",
+  "h": "",
+  "iast": "ādhī",
+  "pos": [],
+  "diasystem": [],
+  "labels": [],
+  "senses": [
+   {
+    "n": "1",
+    "sub": null,
+    "equivalents_de": [],
+    "gloss_de": "¦ = 1. mit",
+    "equivalence_type": "explanatory",
+    "grammar": [],
+    "ab_labels": [],
+    "diasystem": [],
+    "citations": [],
+    "citations_resolved": {},
+    "strata": {},
+    "examples_sa": [
+     "ADI",
+     "DI",
+     "A"
+    ]
+   }
+  ],
+  "corpus_synonyms": null
+ }
+]

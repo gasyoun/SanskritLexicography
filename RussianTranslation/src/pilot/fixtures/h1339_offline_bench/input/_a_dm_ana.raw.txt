@@ -1,0 +1,18 @@
+=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===
+
+{#ADmAna#}¦ (von {#DmA#} mit {#A#}) <lex>n.</lex>
+<div n="1"> 1〉 {%das Aufblasen, Aufblähen, Sichaufblähen%} <ls>SUŚR. 1,97,5</ls>.
+<div n="1">— 2〉 Bezeichnung {%mehrerer Krankheiten mit Blähungszuständen%} <ls>SUŚR. 2,44,5</ls>. <ls n="SUŚR. 2,">194,5</ls>. <ls n="SUŚR. 2,">200,12</ls>. <ls n="SUŚR. 2,">202,5</ls>. {#ADmAnamiti jAnIyAdGoraM vAtaniroDajam#} <ls n="SUŚR.">1,257,14</ls>. <ls n="SUŚR. 1,">50,7</ls>. <ls n="SUŚR. 1,">198,4</ls>. <ls n="SUŚR. 1,">277,3</ls>.
+<div n="v">— <ab>Vgl.</ab> {#pratyADmAna#}.
+
+=== LAYER: PWG — NACHTRÄGE/ADDENDA #1 — patches keyed to the main sense numbers; render in full ===
+
+{#ADmAna#}¦ <ab>vgl.</ab> {#udarADmAna#}.
+
+=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===
+
+{#ADmAna#}¦
+<div n="1">— 1〉 <lex>n.</lex>
+<div n="2">— a〉 {%das Sichaufblähen%}.
+<div n="2">— b〉 <ab>Bez.</ab> {%verschiedener Krankheiten mit Blähungszuständen%}.
+<div n="1">— 2〉 *<lex>f.</lex> {%eine <ab>best.</ab> wohlriechende Rinde%} <ls>RĀJAN. 12,163</ls>.
