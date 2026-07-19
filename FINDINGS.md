@@ -2656,3 +2656,27 @@ add the gate at READ time, not just at query time.
 > [dharmamitra_indische_sprueche.json](https://github.com/gasyoun/kosha/blob/main/data/sandhi/_cache/dharmamitra_indische_sprueche.json) ·
 > [H1279](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1279-Fable_kosha_pedagogy-wave-ru-subhashita-reader_19.07.26.md) ·
 > [kosha](https://github.com/gasyoun/kosha) · 19-07-2026, Fable 5 (`claude-fable-5`).
+
+---
+
+### §96. SamudraManthanam's generated full-corpus JSONL has 38,288 duplicate canonical-ID groups, concentrated in `devibhagavata-purana`
+
+The 19-07-2026 audit-hardening pass ran SamudraManthanam's manual corpus gate against the
+existing local corpus (668 tests collected; 66 corpus tests selected; 708.2 MiB `DB_PATH`).
+After 15 corpus checks passed, `test_gate4_all_ids_unique` stopped the run with
+`Duplicate IDs found (38288 groups)`. These are **duplicate groups**, not a count of duplicate
+rows, and the observed IDs were concentrated in the generated `devibhagavata-purana` records.
+The gate loads every record from the locally generated `web/corpus_builder/jsonl/*.jsonl`; this
+is therefore a canonical-JSONL defect, not evidence about the SQLite search index and not a
+rights-policy finding.
+
+**Reusable rule.** Do not report the full-corpus suite green merely because the hermetic tests
+pass. Run the manual launcher with `USE_REAL_CORPUS=1`; preserve `--maxfail=1` so the first named
+data invariant stays visible, and treat Gate 4 as release-blocking until the Devībhāgavata
+converter/regeneration path produces globally unique IDs. Because this run stopped on the first
+failure, later corpus gates remain unadjudicated rather than implicitly passing.
+
+> **Source:** [`test_gate4_all_ids_unique`](https://github.com/gasyoun/SamudraManthanam/blob/codex/audit-hardening/web/tests/test_converter.py#L294-L304) +
+> [manual corpus launcher](https://github.com/gasyoun/SamudraManthanam/blob/codex/audit-hardening/web/scripts/run_corpus_tests.py) ·
+> [SamudraManthanam PR #85](https://github.com/gasyoun/SamudraManthanam/pull/85) ·
+> 19-07-2026, Codex GPT-5.
