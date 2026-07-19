@@ -2,7 +2,23 @@
 
 _Created: 13-07-2026 · Last updated: 19-07-2026_
 
-## Status: partial ingest — 240 of the ≥400-record target, honestly short
+## Status: partial ingest — 390 of the ≥400-record target, honestly short
+
+**19-07-2026 reconciliation (Sonnet 5 `claude-sonnet-5`, `/dual-run-salvage`):** two
+independent H803 follow-up passes ran concurrently from the same 151-record baseline
+without seeing each other — [PR #577](https://github.com/gasyoun/SanskritLexicography/pull/577)
+(merged first) broadened the phrase-tier headword gate to 240 records; the parallel
+[PR #576](https://github.com/gasyoun/SanskritLexicography/pull/576) independently
+cross-referenced the source's own back-matter index to reach 300 records, using a
+different method entirely (and fixing a boilerplate-stripping regex bug along the way).
+Neither was a superset of the other (150 records in common, 0 gloss-identity conflicts
+across the overlap; 90 records unique to the 240-set, 150 unique to the 300-set).
+Reconciled as a straight union — **390 records**, deduplicated by `nyaya_slp1`, each
+common entry keeping whichever lane's `explanation` field was longer/more complete (the
+300-lane's bug fix won 120/150 of those picks). This file is now a **manual merge of two
+independent extraction runs**, not directly reproducible by a single invocation of
+[`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py) — re-running it reproduces
+only one lane's subset. Full record-by-record accounting in the PR that landed this merge.
 
 **19-07-2026 update (Sonnet 5 `claude-sonnet-5`, H803 follow-up pass):** phrase-tier
 recall broadened 151 → **240** records (+89, 59%); the other two follow-ups were
