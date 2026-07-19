@@ -67,6 +67,28 @@ def read_requeue(path):
     return keys
 
 
+def refuse_crashed_audit(requeue_file, tag):
+    """B11 (H1339): a crashed/unparseable child auditor deliberately requeues EVERY window
+    key (the H169 fail-loud artifact). Consuming that list mechanically would TM-denylist
+    and re-run the whole window off ONE gate crash — blast radius, not rework. Refuse to
+    build a rerun harness or denylist rows from a crashed audit; the audit must be re-run
+    first. When no report sits beside the key files (explicit --requeue-file workflows),
+    legacy behavior is kept — there is nothing bound to check against."""
+    d = (os.path.dirname(os.path.abspath(requeue_file)) if requeue_file
+         else tag_out_dir(tag))
+    report_path = os.path.join(d, 'audit_window.report.json')
+    try:
+        report = json.load(open(report_path, encoding='utf-8'))
+    except (OSError, json.JSONDecodeError):
+        return
+    crashed = report.get('crashed') or []
+    if crashed:
+        sys.exit('REFUSED: the audit that wrote this requeue list CRASHED (%s) — its '
+                 'requeue set is the fail-loud blast-radius artifact (every window key), '
+                 'not a work list. Re-run audit_window.py, then requeue from the fresh '
+                 'report.' % ', '.join(str(c) for c in crashed[:5]))
+
+
 def append_tm_denylist(root, keys, which, lang='ru', fsha_file=None):
     """Invalidate exact card-TM addresses for defect/all requeues. Append-only and local-only.
 
@@ -148,6 +170,7 @@ def main():
         rm = json.load(open(rp, encoding='utf-8'))
         declared = {s['subkey'] for s in rm.get('sub_cards', [])}
         suffixes = {k.split('~~')[-1]: k for k in declared}
+    refuse_crashed_audit(args.requeue_file, args.window_tag)     # B11: never consume a crash
     keys = read_requeue(args.requeue_file or requeue_file(which, tag=args.window_tag))
     resolved, invalid = [], []
     for k in keys:

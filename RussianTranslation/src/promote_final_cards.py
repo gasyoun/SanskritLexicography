@@ -132,6 +132,41 @@ def collect_cards(paths):
     return best, conflicts, sorted(null_keys)
 
 
+def clear_denials_for_promotion(best, blocked_subs=(), lang='ru', denylist=None):
+    """B12 (H1339): a successful gate-passing promotion clears ONLY its matching temporary
+    TM denial state.
+
+    The denylist keys on the INPUT address (lang:raw_sha256) / fragment fsha, and used to be
+    append-forever -- one defect requeue disabled TM reuse of that card permanently, even
+    after the retranslation passed every gate and was promoted. For each subcard that
+    actually LANDED (never a better-attempt-refused downgrade), unblock its input address
+    and any frag_prov fragment SHAs -- but only those CURRENTLY denied, so no spurious
+    unblock rows are ever written. Returns (addresses_cleared, fshas_cleared)."""
+    pilot = os.path.join(HERE, 'pilot')
+    if pilot not in sys.path:
+        sys.path.insert(0, pilot)
+    import translation_memory as tm
+    denied = tm.load_denylist(denylist)
+    addresses, fshas = [], []
+    blocked = set(blocked_subs)
+    for subkey, entry in best.items():
+        if subkey in blocked:
+            continue
+        sha = ((entry.get('meta') or {}).get('input_hashes') or {}).get(subkey, {}).get('raw_sha256')
+        if sha:
+            address = '%s:%s' % (lang, sha)
+            if address in denied['addresses']:
+                addresses.append(address)
+        for fp in ((entry.get('card') or {}).get('frag_prov') or []):
+            fsha = fp.get('fsha')
+            if fsha and fsha in denied['frags']:
+                fshas.append(fsha)
+    if addresses or fshas:
+        tm.append_unblock(sorted(set(addresses)), sorted(set(fshas)),
+                          reason='replaced_by_promotion', path=denylist)
+    return sorted(set(addresses)), sorted(set(fshas))
+
+
 def model_tier(model_version):
     """The tier alias for a resolved model id: 'claude-sonnet-5' -> 'sonnet'.
 
@@ -784,6 +819,7 @@ def main():
             # replace would delete the existing sub-cards (the exact gam-RU loss we are fixing).
             # Guards against the full-overwrite wipe when only a subset of wf_output is on disk.
             kept = 0
+            downgraded = []
             if args.merge and os.path.exists(args.store):
                 promoted_subs = {r['subcard'] for r in rows}
                 touched_roots = {r['key1'] for r in rows}
@@ -848,6 +884,20 @@ def main():
             _atomic_write_rows(args.store, rows_to_write)
             print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
                   % (args.store, len(rows_to_write), args.review_status))
+            # B12 (H1339): the landed replacements clear their matching TEMPORARY TM
+            # denials (input address + frag_prov fshas), so a once-flagged card whose
+            # retranslation just passed every gate is TM-reusable again. Fail-open with a
+            # loud note: a missed unblock only costs future cache misses -- it must never
+            # fail a promotion that already committed.
+            try:
+                cleared_addr, cleared_frag = clear_denials_for_promotion(
+                    best, blocked_subs=downgraded)
+                if cleared_addr or cleared_frag:
+                    print('TM denylist: cleared %d card address(es) + %d fragment sha(s) '
+                          'superseded by this promotion' % (len(cleared_addr), len(cleared_frag)))
+            except Exception as exc:  # noqa: BLE001 -- deliberate fail-open, loudly
+                print('⚠ TM denylist clearing skipped (%s) -- denials stay in place; '
+                      'a future promotion or manual unblock can clear them' % exc)
             print('NOTE: rows are %s, NOT approved — export_interop keeps them out of the citable'
                   % args.review_status)
             print('      edition until G5 human review flips review_status to approved.')
