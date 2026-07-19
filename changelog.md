@@ -14,6 +14,27 @@ not an error.
 
 ## [Unreleased]
 
+## [1.28.0] — 19-07-2026
+
+### Added
+- **H178 DA-sheet vote processed → 8-handoff work-stream fan-out H1301–H1308 (19-07-2026, Fable 5 `claude-fable-5`, [H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md))**:
+  MG's first bake-off vote (`h178_da`, 30 promoted pwg_ru glosses: 27 approve / 3 reject,
+  partial 15/30 DA numeric channel) filed to the
+  [H274](https://github.com/gasyoun/Uprava/blob/main/handoffs/H274-Fable_DO_RussianTranslation_pwg_ru_bakeoff_compute_07.07.26.md)
+  contract path (local-only `pwg_ru/eval/h178_da.decisions.json`; evidence copies under
+  `D:\ClaudeTools\evidence\`); all 8 sheet-system rulings (DA 1–5 buttons below card,
+  visible card IDs, IAST headword links, Publishable→DA≥4, RU-token highlighting,
+  sheet↔decisions binding standard) + 20 content issues (German residue in RU fields,
+  abbreviation policy, citation-translation reuse incl. Elizarenkova/KATHĀS./Leonov,
+  no-ё + terseness style, doublet policy per Apresyan, Pāṇini/Spr./DHĀTUP. link
+  enrichment, valency index) extracted into
+  [`RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md)
+  and fanned out into nine atomically-minted handoffs (H1300–H1308) with execution
+  gates (sheet regeneration only after the German-residue + mechanical-style sweeps
+  land). The 10-07 stay-Latin abbreviation ruling vs the 19-07 translate-them vote
+  notes logged as [CONTRADICTIONS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  (resolution path: H1303 ratification sheet).
+
 ## [1.27.0] — 19-07-2026
 
 ### Added

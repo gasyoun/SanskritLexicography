@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 18-07-2026_
+_Created: 08-07-2026 · Last updated: 19-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -54,6 +54,17 @@ Status: 🟡 provisional pick — A3 (W1b) built on `forms`, the only table with
 Blocks: the A4 derivation-capture (W2a) generated-side denominator; the architecture diagram's "6.9M" should be corrected to name `inflections`, not propagated forward.
 ↔ Interlinks: [FINDINGS §94](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the circularity finding (93% DCS-derived generated side) from the same A3 build.
 > **Source:** [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) morphology attestation audit · [kosha](https://github.com/gasyoun/kosha) · [18-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-18&until=2026-07-19) · `claude-opus-4-8`
+
+### §7. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)
+🔴 ✍️ **The project's own abbreviation policy gives incompatible answers eleven days apart.**
+Positions:
+| Source | Value | Evidence loc |
+|--------|-------|--------------|
+| [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) (MG ruling 10-07-2026) | grammatical-category abbreviations (`Caus.`, `Aor.`, …) stay international Latin, tooltip only; only editorial/cross-reference ones translate | ABBREVIATIONS_RU § "Decision: grammatical-category abbreviations stay Latin" |
+| h178_da vote notes (MG, 19-07-2026) | `Caus.` = `кауз.`, `Aor.` "нельзя не переводить"; only Latin abbreviations on a **ratified unified list** stay untranslated | [H178 DA-vote register §3 N5/N8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md) |
+Status: 🔴 unresolved — the 19-07 notes are later and more specific but explicitly delegate to a not-yet-existing ratified list; neither doc has been amended.
+Blocks: [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)'s store/prompt application, and the V2 regeneration gate of [H1301](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1301-Opus_RussianTranslation_pwg-ru-review-sheet-ux-standard-regen_19.07.26.md) benefits from the ruling landing first. Resolution path: H1303's inventory → per-token proposal → MG ratification sheet → graduate to a `D##`.
+> **Source:** [H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md) vote processing, 19-07-2026, Fable 5 (`claude-fable-5`).
 
 ## B. A claim overturned (or split) by machine-scale evidence
 *A scholarly charge or a hand-picked exemplar checked against a full machine dataset — the count adjudicates.*
