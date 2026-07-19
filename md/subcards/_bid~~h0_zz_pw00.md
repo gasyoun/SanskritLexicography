@@ -10,7 +10,7 @@
 
 **1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
-- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
+- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
   <sub>attested</sub>
 
 **2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
@@ -20,7 +20,7 @@
 
 **3)** — 3〉 spalten, so v. a. theilen; Pass. getheilt werden, sich theilen. *bhinna* getheilt auch so v. a. nicht ganz, weniger als ein.
 
-- **RU:** 3〉 расщеплять, то есть преим. делить; Pass. быть разделённым, делиться. *bhinna* разделённый, также в значении преим. неполный, меньше одного.
+- **RU:** 3〉 расщеплять, то есть преим. делить; Pass. быть разделенным, делиться. *bhinna* разделенный, также в знач. преим. неполный, меньше одного.
   <sub>attested</sub>
 
 **4)** — 4〉 spalten, so v. a. öffen; blühen machen; Pass. sich öffnen, freien Lauf haben (Wasser), sich ergiessen, über die Ufer treten. *bhinna* geöffnet, aufgeblüht. *˚karaṭa* oder *˚gaṇḍakaraṭa* _Adj._ von einem Elephanten, dessen Schläfen zur Brunstzeit sich geöffnet haben und fliessen; auch *bhinna* allein in derselben Bed.
@@ -60,17 +60,17 @@
 
 **11)** — 11〉 ändern, Pass. sich ändern. *bhinna* verändert, entstellt.
 
-- **RU:** 11〉 изменять; Pass. изменяться. *bhinna* изменённый, искажённый.
+- **RU:** 11〉 изменять; Pass. изменяться. *bhinna* измененный, искаженный.
   <sub>attested</sub>
 
 **12)** — 12〉 unterscheiden, einen Unterschied machen; Pass. verschieden sein, sich unterscheiden von (Abl.). *bhinna* verschieden, — von (Abl. oder im Comp. vorangehend); verschieden auch so v. a. vom Gewöhnlichen —, vom Normalen abweichend.
 
-- **RU:** 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в значении преим. отклоняющийся от обычного, от нормального.
+- **RU:** 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в знач. преим. отклоняющийся от обычного, от нормального.
   <sub>attested</sub>
 
 **13)** — 13〉 *bhinna* vermischt —, verbunden mit (Instr. oder im Comp. vorangehend), hängend —, haftend —, hängen geblieben an (Loc. oder im Comp. vorangehend).
 
-- **RU:** 13〉 *bhinna* смешанный, соединённый с (Instr. или в Comp. предшествующем), подвешенный, прикреплённый, застрявший на (Loc. или в Comp. предшествующем).
+- **RU:** 13〉 *bhinna* смешанный, соединенный с (Instr. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*
@@ -90,7 +90,7 @@
 
 **caus-3)** — 3〉 theilen. *ṣoḍaśabhedita* sechzehnfach getheilt, in 46 Arten zerfallend.
 
-- **RU:** 3〉 делить. *ṣoḍaśabhedita* разделённый на шестнадцать частей, распадающийся на 46 видов.
+- **RU:** 3〉 делить. *ṣoḍaśabhedita* разделенный на шестнадцать частей, распадающийся на 46 видов.
   <sub>attested</sub>
 
 **caus-4)** — 4〉 entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite herüberziehen, verführen.
@@ -130,7 +130,7 @@
 
 **pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) fehlerhaft für *ko nu bhi˚*.
 
-- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вместо *ko nu bhi˚*.
+- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вм. *ko nu bhi˚*.
   <sub>attested</sub>
 
 **pref-abhi)** — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
@@ -150,7 +150,7 @@
 
 **pref-ni)** — Mit *ava* zerspalten, durchbohren. *avabhinna* durchbohrt, zersprungen.
 
-- **RU:** С *ava* раскалывать, пронзать насквозь. *avabhinna* пронзённый, расколовшийся.
+- **RU:** С *ava* раскалывать, пронзать насквозь. *avabhinna* пронзенный, расколовшийся.
   <sub>attested</sub>
 
 **pref-pari)** — Mit *ā* zerschlitzen, zerreissen.
@@ -195,7 +195,7 @@
 
 **pref-pra-5b)** — b〉 versehen —, ausgestattet mit (im Comp. vorangehend) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
 
-- **RU:** b〉 снабжённый, наделённый (в Comp. предшествующем) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
+- **RU:** b〉 снабженный, наделенный (в Comp. предшествующем) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
   <sub>attested</sub>
 
 **pref-prati-pra)** — Mit *prod*, *prodbhinna* hervorgeschossen, hervorgebrochen.
@@ -285,7 +285,7 @@
 
 **pref-sam-2)** — 2〉 verändert, entstellt.
 
-- **RU:** 2〉 изменённый, искажённый.
+- **RU:** 2〉 измененный, искаженный.
   <sub>attested</sub>
 
 **pref-upa-header)** — Mit *pra*
@@ -330,7 +330,7 @@
 
 **pref-upa-4d)** — d〉 entstellt, verändert, verstimmt.
 
-- **RU:** d〉 искажённый, изменённый, расстроенный.
+- **RU:** d〉 искаженный, измененный, расстроенный.
   <sub>attested</sub>
 
 **pref-upa-note)** — *Caus. vom Intens. *prabebhidayya*.
@@ -365,7 +365,7 @@
 
 **pref-prati-3)** — 3〉 seinen Unwillen gegen Jmd (Acc.) an den Tag legen.
 
-- **RU:** 3〉 выражать своё неудовольствие в адрес кого-либо (Acc.).
+- **RU:** 3〉 выражать свое неудовольствие в адрес кого-либо (Acc.).
   <sub>attested</sub>
 
 **pref-aa2-header)** — Mit *vi*
@@ -375,12 +375,12 @@
 
 **pref-aa2-1)** — 1〉 durchbohren, zerspalten, zerbrechen; stechen (von einem Insecte). Einen Himmelskörper spalten, so v. a. durch ihn gehen. Pass. und ausnahmsweise Act. zerbrechen, auseinanderbersten. *vibhinna* durchbohrt u. s. w.
 
-- **RU:** 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть преим. проходить сквозь него. Pass. и в виде исключения Act. ломаться, разламываться. *vibhinna* пронзённый и т.д.
+- **RU:** 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть преим. проходить сквозь него. Pass. и в виде исключения Act. ломаться, разламываться. *vibhinna* пронзенный и т.д.
   <sub>attested</sub>
 
 **pref-aa2-2)** — 2〉 brechen, so v. a. zu Nichte machen. *vibhinna* zu N. gemacht.
 
-- **RU:** 2〉 нарушать, то есть преим. уничтожать. *vibhinna* превращённый в имя.
+- **RU:** 2〉 нарушать, то есть преим. уничтожать. *vibhinna* превращенный в имя.
   <sub>attested</sub>
 
 **pref-aa2-3)** — 3〉 lösen, auseinandermachen.
@@ -395,12 +395,12 @@
 
 **pref-aa2-5)** — 5〉 umstimmen, Pass. eine Umstimmung erfahren. *vibhinna* umgestimmt, untreu geworden.
 
-- **RU:** 5〉 переубеждать, переманивать; Pass. подвергаться переубеждению. *vibhinna* переубеждённый, ставший неверным.
+- **RU:** 5〉 переубеждать, переманивать; Pass. подвергаться переубеждению. *vibhinna* переубежденный, ставший неверным.
   <sub>attested</sub>
 
 **pref-aa2-6)** — 6〉 Pass. sich ändern, eine Veränderung erfahren. *vibhinna* verändert, entstellt.
 
-- **RU:** 6〉 Pass. изменяться, претерпевать изменение. *vibhinna* изменённый, искажённый.
+- **RU:** 6〉 Pass. изменяться, претерпевать изменение. *vibhinna* измененный, искаженный.
   <sub>attested</sub>
 
 **pref-aa2-7-header)** — 7〉 *vibhinna*
@@ -420,7 +420,7 @@
 
 **pref-aa2-7c)** — c〉 getrennt in *a˚* ([Nachtr. 4]).
 
-- **RU:** c〉 разделённый в *a˚* ([Nachtr. 4]).
+- **RU:** c〉 разделенный в *a˚* ([Nachtr. 4]).
   <sub>attested</sub>
 
 **pref-aa2-7d)** — d〉 uneins, in Uneinigkeit lebend.
@@ -480,7 +480,7 @@
 
 **pref-sam-3b)** — 3〉 zusammenbringen, in Berührung bringen, verbinden, vermengen. *saṃbhinna* zusammengezogen (die Glieder einer Schildkröte), in Berührung gekommen, verbunden, dicht anliegend, compact.
 
-- **RU:** 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. *saṃbhinna* сжатый (члены черепахи), соприкоснувшийся, соединённый, плотно прилегающий, компактный.
+- **RU:** 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. *saṃbhinna* сжатый (члены черепахи), соприкоснувшийся, соединенный, плотно прилегающий, компактный.
   <sub>attested</sub>
 
 **pref-sam-4b)** — 4〉 sich zu Jmd (Acc.) gesellen.

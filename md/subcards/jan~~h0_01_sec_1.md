@@ -12,8 +12,8 @@
 
 - **RU:** — desid. *jijaniṣati*
 [P. 6,4,42](https://ashtadhyayi.com/sutraani/6/4/42), схол.
-— intens. *jañjanyate* und *jājāyate*
+— intens. *jañjanyate* и *jājāyate*
 [P. 6,4,43.](https://ashtadhyayi.com/sutraani/6/4/43)
-[VOP. 20,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,8) *jañjantas* und *jājātas, jañjanati* und *jañjñati*
+[VOP. 20,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,8) *jañjantas* и *jājātas, jañjanati* и *jañjñati*
 [17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,17)
   <sub>attested</sub>

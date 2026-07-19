@@ -54,7 +54,7 @@ Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramas
 [MBH. 4,172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.172) *vartmāni saṃbadhyante* склеивать
 [SUŚR. 2,309,10.] *anyo'nyasaṃbaddha* связанный между собой
 [58,15.] *yathā chāyātapau nityaṃ susaṃbaddhau parasparam*
-[Spr. 2309.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2309) *yāyātsaṃbaddhasainyaughaḥ* со сплочённым войском
+[Spr. 2309.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2309) *yāyātsaṃbaddhasainyaughaḥ* со сплоченным войском
 [KĀM. NĪTIS. 18,47.] [KAP. 1,90.]
 
 *sā (gaṅgā) saṃbadhyamānārkaraśmisaṃgatipāvanī* соединяющийся
@@ -71,16 +71,16 @@ Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramas
 [3,56,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,31) *vedasaṃbaddhāḥ (kathāḥ)* находящийся в отношении к, имеющий отношение к
 [MBH. 13,1781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1781) *rāmasaṃbaddha (ākhyāna)*
 [R. GORR. 1,4,147.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,147) *devānāmeṣa vai jayaḥ — purāṇo vedasaṃbaddhaḥ* содержащийся в Веда, упоминаемый
-[HARIV. 12605.](https://sanskrit-lexicon-scans.github.io/hariv?12605) *saṃbaddha* прикреплённый так: присутствующий, наличный, находящийся: *kusumamiva lobhanīyaṃ yauvanamaṅgeṣu saṃbaddham* (v. l. вместо *saṃnaddham)*
+[HARIV. 12605.](https://sanskrit-lexicon-scans.github.io/hariv?12605) *saṃbaddha* прикрепленный так: присутствующий, наличный, находящийся: *kusumamiva lobhanīyaṃ yauvanamaṅgeṣu saṃbaddham* (v. l. вм. *saṃnaddham)*
 [ŚĀK. 20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?20) *(tapovanāni) saṃbaddhavaikhānasakanyakāni* (по схол. = *kṛtasakhya)*
 [RAGH. 14,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,28) *saṃbaddhadarpa* _adj._
 [MBH. 3,12380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12380) *karmāṇyakuhakārthāni yeṣāṃ vācaśca sūnṛtāḥ . yeṣāmarthāśca saṃbaddhā durgāṇyatitaranti te*
 [12,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4064) *padāntāditi saṃbaddhameṅgrahaṇamanuvartate*
 [PAT.] к [P. 6,1,115.](https://ashtadhyayi.com/sutraani/6/1/115) *samartha = saṃbaddhārtha*
-[AK. 3,4,15,89.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,15,89) pass. быть соединённым так: принадлежать к, подлежать восполнению: *uttarapadagrahaṇaṃ bhagaśabdenaiva saṃbadhyate na tu pratyekam*
+[AK. 3,4,15,89.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,15,89) pass. быть соединенным так: принадлежать к, подлежать восполнению: *uttarapadagrahaṇaṃ bhagaśabdenaiva saṃbadhyate na tu pratyekam*
 [KĀŚ.] к [P. 5,1,9.](https://ashtadhyayi.com/sutraani/5/1/9) схол. к [P. 2,4,25.](https://ashtadhyayi.com/sutraani/2/4/25) [4,2.](https://ashtadhyayi.com/sutraani/2/4/2) *vako dālbhya iti vakṣyamāṇena saṃbadhyate*
 [ŚAṂK.] к [CHĀND. UP. 1,2,10.] [SĀH. D. 19,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?19,15) *ita ārabhyāgrimeṣu sūtreṣu catvāro 'rthāḥ saṃbadhyante* схол. к [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70)
-*asaṃbaddha* не состоящий ни в каком близком отношении, далёкий, не имеющий ничего общего с кем-л. или чем-л.
+*asaṃbaddha* не состоящий ни в каком близком отношении, далекий, не имеющий ничего общего с кем-л. или чем-л.
 [MBH. 3,1297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1297) *asaṃbaddhakṛtaścaiva vyavahāraḥ*
 [M. 8,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,163)
 [YĀJÑ. 2,32.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,32)

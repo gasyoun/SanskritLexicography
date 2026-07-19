@@ -26,7 +26,7 @@
 [32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.32) [R. 6,5,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,5,15) [PAÑCAT. 29,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?29,21) *yuddhārthaṃ vinirgataḥ*
 [48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *vinirgatālohitajihva (mahiṣīkula)*
 [ṚT. 1,21.] *tvayā saha śrīśca vinirgatā mama* отступивший, ушедший
-[R. 4,22,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,22,39) удаляться (о звёздах)
+[R. 4,22,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,22,39) удаляться (о звездах)
 [VARĀH. BṚH. S. 4,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,26)
   <sub>attested</sub>
 

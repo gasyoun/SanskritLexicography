@@ -28,12 +28,12 @@
 
 **3)** — 3) pass. einen Wandel erfahren: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
 [MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) sich legen, vergehen: *utsāhaḥ parihanyate*
-[Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769), v. l. für *parihīyate* . — Statt *pari bādho jahī mṛdhaḥ*
+[Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769 "Spr. (II) 3769: nirviśeṣaṃ yadā svāmī samaṃ bhṛtyeṣu vartate | tadodyamasamarthānāmutsāhaḥ parihīyate || — (1612.) Wenn ein Herr ohne allen Unterschied auf gleiche Weise gegen seine Diener verfährt, dann vergeht den Arbeitsfähigen der Muth zum Schaffen."), v. l. für *parihīyate* . — Statt *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40) ist *paribādho* zu vermuthen.
 
 - **RU:** — 3) pass. «претерпевать изменение»: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
 [MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) «утихать, проходить»: *utsāhaḥ parihanyate*
-[Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769), v. l. для *parihīyate* . — Вместо *pari bādho jahī mṛdhaḥ*
+[Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769 "Spr. (II) 3769: nirviśeṣaṃ yadā svāmī samaṃ bhṛtyeṣu vartate | tadodyamasamarthānāmutsāhaḥ parihīyate || — (1612.) Wenn ein Herr ohne allen Unterschied auf gleiche Weise gegen seine Diener verfährt, dann vergeht den Arbeitsfähigen der Muth zum Schaffen."), v. l. для *parihīyate* . — Вм. *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40) следует предполагать *paribādho*.
   <sub>attested</sub>
 
@@ -44,7 +44,7 @@
 
 - **RU:** — 4) partic. *˚hata*
 [ŚĀK. 69,12](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,12) (v. l. *pratihata*) и
-[GĪT. 5,13](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,13) ошибочно вместо *˚hṛta* (так
+[GĪT. 5,13](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,13) ошибочно вм. *˚hṛta* (так
 [GĪT.] у [HAEB.]).
   <sub>attested</sub>
 

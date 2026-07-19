@@ -73,7 +73,7 @@
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) *gītvā, ˚gāya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
 [VOP. 26,212.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212); *gīyate*
-[P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *gīta*; редко мед. петь, говорить нараспев (напр. о речи существ, не наделённых даром слова, таких как земля, изображения богов и т.д.); возвещать в стихах; воспевать: *gāyatraṃ tvo gāyati*
+[P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *gīta*; редко мед. петь, говорить нараспев (напр. о речи существ, не наделенных даром слова, таких как земля, изображения богов и т.д.); возвещать в стихах; воспевать: *gāyatraṃ tvo gāyati*
 [ṚV. 10,71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [1,10,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.010.html#rv01.010.01) [21,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.021.html#rv01.021.02) [38,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.14)
 [CHĀND. UP. 1,11,7.] *indrāya gāyata*
 [ṚV. 1,4,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) *pāhi gāyāndhaso mada indrāya*
@@ -141,7 +141,7 @@
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
 [ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
 
-- **RU:** 1) _adj._ пропетый, возвещённый в стихах, воспетый
+- **RU:** 1) _adj._ пропетый, возвещенный в стихах, воспетый
 [TRIK. 3,3,155.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,155)
 [H. an. 2,166.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,166)
 [MED. t. 16.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,16) *sādhu gītam* красиво спетый
@@ -158,7 +158,7 @@
 [PRAB. 104,13. 17. 105,8] ist unter *gītā* die *bhagavadgītā* gemeint.
 
 - **RU:** — 2) _f._ *ā*
- a) (а именно *upaniṣad*) учение, возвещённое вдохновлённым мудрецом в стихах, см. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
+ a) (а именно *upaniṣad*) учение, возвещенное вдохновленным мудрецом в стихах, см. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
 Под *gītā* подразумевается *bhagavadgītā*.
   <sub>attested</sub>
 

@@ -38,7 +38,7 @@
 [AV. 3,1,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.06) [5,21,9](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.021.html#av05.021.09); vgl. u.
 [4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04)
 
-- **RU:** — 2) быть побеждённым, терпеть поражение: *ubhā jigyathurna parā jayethe*
+- **RU:** — 2) быть побежденным, терпеть поражение: *ubhā jigyathurna parā jayethe*
 [ṚV. 6,69,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.069.html#rv06.069.08)
 [AV. 4,22,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.022.html#av04.022.05) [6,98,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.098.html#av06.098.01) *parā jigyānāḥ*
 [TS. 2,3,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,1)
@@ -103,7 +103,7 @@ Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
 [MBH. 7,3004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3004) [1,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2303) [14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) *tato 'gnirditijān — parājayāmāsa*
 [HARIV. 13946.](https://sanskrit-lexicon-scans.github.io/hariv?13946) *kuntīsutamakṣavatyāṃ parājaiṣīt*
 [MBH. 3,223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.223) *tānglahe — parājayat*
-[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) *parājita* побеждённый, сломленный, подавленный (ср. u. 2)
+[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) *parājita* побежденный, сломленный, подавленный (ср. u. 2)
 [AK. 2,8,2,80.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,80)
 [H. 805.](https://sanskrit-lexicon-scans.github.io/abch2/app1?805)
 [MBH. 14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422)

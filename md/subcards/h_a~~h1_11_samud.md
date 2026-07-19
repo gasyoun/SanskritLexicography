@@ -7,5 +7,5 @@
 [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) fehlerhaft für *samujjahruḥ*, wie [ed. Bomb.] liest.
 
 - **RU:** — *samud*, *samujjahuḥ*
-[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вместо *samujjahruḥ*, как читает [ed. Bomb.].
+[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вм. *samujjahruḥ*, как читает [ed. Bomb.].
   <sub>attested</sub>

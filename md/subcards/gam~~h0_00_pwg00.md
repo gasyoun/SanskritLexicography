@@ -51,7 +51,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ṚV. 10,22,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.06); при этом ср. *adha gmantā nahuṣo havaṃ sūreḥ śrotā rājāno amṛtasya mandrāḥ*
 [1,122,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.11), где, однако,
 [ṚV. PRĀT. 8,15] и Падап. *gmanta* принимают,
-[SĀY.] *āgacchata* объясняет, невзирая на ударение. Место тёмное и, по-видимому, испорчено. мед. *aganmahi* . — III. *jaganti*
+[SĀY.] *āgacchata* объясняет, невзирая на ударение. Место темное и, по-видимому, испорчено. мед. *aganmahi* . — III. *jaganti*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) *jagamyām, ˚yāt, ˚yātam, ˚yus; ajagan, ajaganta, ajagantana* . — IV. *gacchati* (только эта форма в классической литературе)
 [DHĀTUP. 23,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23)
 [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77)
@@ -121,7 +121,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* wird kommen
 [MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312)
 
-- **RU:** — 1) идти, двигаться; отправляться туда; уходить, удаляться; приходить; о живых существах и неодушевлённых предметах, о непосредственном и опосредованном движении: *tena gaccha parastaram*
+- **RU:** — 1) идти, двигаться; отправляться туда; уходить, удаляться; приходить; о живых существах и неодушевленных предметах, о непосредственном и опосредованном движении: *tena gaccha parastaram*
 [ṚV. 10,155,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.03) *paraḥ*
 [AV. 3,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.008.html#av03.008.04) *śṛto gacchatu sukṛtāṃ yatra lokaḥ*
 [9,5,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.05) *adha gmantośanā pṛcchate vām*
@@ -167,7 +167,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
 [BHAṬṬ. 7,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,29) *gamyatām* пусть отправляются в путь
 [PAÑCAT. 45,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,1) [100,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?100,10) [232,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?232,10) *tadito gamyatāṃ tvayā*
-[VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* придёт
+[VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* придет
 [MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312)
   <sub>attested</sub>
 

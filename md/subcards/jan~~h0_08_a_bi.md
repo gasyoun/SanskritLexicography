@@ -53,7 +53,7 @@
 [MUṆḌ. UP. 1,1,8.] *tāmraṃ kārṣṇāyasaṃ cāpi taikṣṇyādevābhyajāyata*
 [R. 1,38,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,20) *kāmātkrodho 'bhijāyate*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *sarveṣāṃ tatra bhūtānāṃ lomaharṣo 'bhyajāyata*
-[MBH. 8,2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2927) *abhijāta* врождённый, унаследованный: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
+[MBH. 8,2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2927) *abhijāta* врожденный, унаследованный: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
 [5,1357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1357) _n._ рождение: *abhijātakovidāḥ* знатоки гороскопов
 [BHĀG. P. 1,16,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,1)
   <sub>attested</sub>

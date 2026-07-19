@@ -68,12 +68,12 @@
 [6,28,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.028.html#rv06.028.02) *iṣṭasya madhye aditirni dhātu naḥ*
 [10,11,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.011.html#rv10.011.02) *uraū loke ni dhīyasva* покойся в широком пространстве
 [AV. 18,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.20) *vaha pitṛbhyo yatrainānvettha nihitānparāke*
-[VS. 35,20.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?35,20) *ni te mano manasi dhāyyasme* твой ум да сольётся с моим умом
+[VS. 35,20.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?35,20) *ni te mano manasi dhāyyasme* твой ум да сольется с моим умом
 [ṚV. 10,10,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.03) — [ŚAT. BR. 1,7,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,12) [8,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,13) [5,2,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,5) *(yatrāsya puruṣasya mṛtasya) apsu lohitaṃ ca retaśca nidhīyate* переходить в, растворяться в
 [14,6,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,13) *udīcīnānasya pādo nidhattāt*
 [AIT. BR. 2,6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,6)
 [KĀTY. ŚR. 2,2,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,2,19) [3,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,3,1) *kṛtādi*
-[15,7,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,7,18) *aśvasya śiśnaṃ mahiṣyupasthe nidhatte* кладёт в её лоно
+[15,7,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,7,18) *aśvasya śiśnaṃ mahiṣyupasthe nidhatte* кладет в ее лоно
 [ŚAT. BR. 13,5,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,2,2) *uraḥsu pāṇīn*
 [LĀṬY. 2,11,20.] *tasmai tṛṇaṃ nidadhau* он положил перед ним травинку
 [KENOP 19.] *anidhāyaiva taddravyam*
@@ -200,7 +200,7 @@
 [HARIV. 1175.](https://sanskrit-lexicon-scans.github.io/hariv?1175) *mathurāvidiśe sūnvornidadhe* передавать
 [RAGH. 15,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,36) *rāghavo nidadhe vijayāśaṃsāṃ cāpe sītāṃ ca lakṣmaṇe*
 [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44) *ātmānaṃ prakṛtiṣvaddhā nidhāya śreya āpnuyāt* вверяться
-[BHĀG. P. 6,14,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,18) *hṛdayaṃ premapeśalam . nidhāya mayi* отдавать своё сердце
+[BHĀG. P. 6,14,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,18) *hṛdayaṃ premapeśalam . nidhāya mayi* отдавать свое сердце
 [KATHĀS. 22,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,74)
   <sub>attested</sub>
 

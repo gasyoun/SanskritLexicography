@@ -40,9 +40,9 @@
 [PAÑCAV. BR. 8,9,21.] *yena tamasā prāvṛto manyate*
 [AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19) [1,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,1) [2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *paṇḍitā* (так схолии) *manyamānāḥ*
 [KAṬHOP. 2,5.]
-[MUṆḌ. UP. 1,2,8] (по чтению схолий). *jātyandha iva manyeta* «пусть он выглядит как слепорождённый, притворяется слепым»,
+[MUṆḌ. UP. 1,2,8] (по чтению схолий). *jātyandha iva manyeta* «пусть он выглядит как слепорожденный, притворяется слепым»,
 [MBH. 4,102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.102) *yena svairapi manyante jīvanto 'pi mṛtāḥ* «считаться»
-[Spr. 1258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1258) Вместо nom. здесь и там также acc.: *hataścenmanyate hatam*
+[Spr. 1258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1258) Вм. nom. здесь и там также acc.: *hataścenmanyate hatam*
 [KAṬHOP. 2,19.] *paṇḍitaṃ manyamānāḥ*
 [5.] [MUṆḌ. UP. 1,2,8] (схолии в обоих местах *paṇḍitā)*.
 [MBH. 13,1543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1543)
@@ -90,7 +90,7 @@
 [R. 2,61,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,16) *śaṭhastu samayaṃ prāpya nopakāraṃ hi manyate* achtet für Nichts
 [Spr. 5051.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5051)
 
-- **RU:** 5) думать о, а именно преим. быть всей душой обращённым к кому-либо/чему-либо, чтить, ценить *(stu*
+- **RU:** 5) думать о, а именно преим. быть всей душой обращенным к кому-либо/чему-либо, чтить, ценить *(stu*
 [SĀY.]): *agniṃ taṃ manye yo vasuḥ*
 [ṚV. 5,6,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.006.html#rv05.006.01) [9,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.009.html#rv05.009.01) [1,127,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.01) *yastvā hṛdā kīriṇā manyamāno johavīmi*
 [5,4,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.004.html#rv05.004.10) *manye tvā yajñiyaṃ yajñiyānām*
@@ -219,7 +219,7 @@ davor ein fem.-suff. verkürzt
 - **RU:** a) представляющийся как, считающийся —, признаваемый за: *sa vai sparśaguṇo mataḥ*
 [M. 1,76.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,76) *indriyaṃ karaṇaṃ matam*
 [BHĀṢĀP. 57.] *ime 'niṭo matāḥ* Кар. 7 aus
-[KĀŚ.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) цит. beim схол. zu [ŚĀK. 98.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?98) *magadhāḥ kīkaṭā matāḥ*
+[KĀŚ.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) цит. beim схол. к [ŚĀK. 98.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?98) *magadhāḥ kīkaṭā matāḥ*
 [TRIK. 2,1,11.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,1,11) [8,20.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,20) [3,1,23.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,23) [3,194.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,194) *aṅgāritaṃ palāśānāṃ kalikodgamane matam*
 [2,2.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,2,2) [3,293.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,293) *evaṃ yogo yamādyaṅgairaṣṭabhiḥ sa mato 'ṣṭadhā*
 [H. 85.](https://sanskrit-lexicon-scans.github.io/abch2/app1?85)
@@ -227,7 +227,7 @@ davor ein fem.-suff. verkürzt
 [VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) [8,103.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,103) *yadi saudhapatirbhadre niyoktavyo matastava* «тебе представляется»
 [MBH. 5,6084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6084) *yajñagoptā sa me mataḥ*
 [R. 1,70,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,4) *ahiṃsyastava cenmato 'ham*
-[RAGH. 2,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,57) [14,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,40) Кар. zu [P. 5,2,45.](https://ashtadhyayi.com/sutraani/5/2/45) *tasmānme naiva doṣo matastava*
+[RAGH. 2,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,57) [14,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,40) Кар. к [P. 5,2,45.](https://ashtadhyayi.com/sutraani/5/2/45) *tasmānme naiva doṣo matastava*
 [MBH. 13,40.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.40) *na cānyadatrauṣadhamasti me matam* так преим. «по моему мнению, не существует»
 [4,380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.380) mit *śreṇi* и т.д. (als praed.) componirt гана *kṛtādi* zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 davor ein fem.-suff. verkürzt

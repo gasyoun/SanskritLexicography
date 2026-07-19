@@ -120,12 +120,12 @@
 [Spr. 5131](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5131) (ср. *na tamiha darśanāya labhate*
 [CHĀND. UP. 8,3,1.]). *bhoktum*
 [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), схол.
-*praveṣṭuṃ labhate* ему удаётся войти
+*praveṣṭuṃ labhate* ему удается войти
 [HARIV. 8249.](https://sanskrit-lexicon-scans.github.io/hariv?8249) *na cainaṃ kaścidāroḍhuṃ*
-(v. l. вместо *ārūḍhaṃ) labhate rājasattamam* так преим. никому не удаётся видеть, как царь поднимается
+(v. l. вм. *ārūḍhaṃ) labhate rājasattamam* так преим. никому не удается видеть, как царь поднимается
 [MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) *martumapi na labhyate* нельзя даже умереть
 [KATHĀS. 96,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?96,22) *nādharmo labhyate kartuṃ loke vaidyādhare* так преим. никакой несправедливости не может —, не должно быть совершено
-[106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашёл брахмана для совершения жертвоприношения
+[106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашел брахмана для совершения жертвоприношения
 [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)
   <sub>attested</sub>
 

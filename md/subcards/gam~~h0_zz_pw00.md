@@ -37,7 +37,7 @@
 
 **8)** — 8〉 gehen, sich bewegen, wandeln; einen Gang oder Weg (Acc.) gehen. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
-- **RU:** — 8) идти, двигаться, странствовать; идти каким-либо ходом или путём (Acc.). *jīvangacchati*, так преим. — остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+- **RU:** — 8) идти, двигаться, странствовать; идти каким-либо ходом или путем (Acc.). *jīvangacchati*, так преим. — остается в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 **9)** — 9〉 *manasā* in Gedanken sich begeben zu (Acc.); wahrnehmen.
 
@@ -69,7 +69,7 @@
 
 **Partic.1c)** — c〉 in einen Zustand, eine Lage, ein Verhältniss gerathen, sich darin befindend; die Ergänzung im Acc., Loc. (ausnahmsweise) oder im Comp. vorangehend.
 
-- **RU:** — в) впавший в некое состояние, положение, отношение, находящийся в нём; дополнение предшествует в Acc., Loc. (в виде исключения) или в Comp..
+- **RU:** — в) впавший в некое состояние, положение, отношение, находящийся в нем; дополнение предшествует в Acc., Loc. (в виде исключения) или в Comp..
 
 **Partic.1d)** — d〉 gehend —, gerichtet —, bezüglich auf; mit *prati* oder am Ende eines Comp.
 
@@ -81,11 +81,11 @@
 
 **Partic.1f)** — f〉 hingegangen, abgeschieden, dem Tode verfallen.
 
-- **RU:** — е) ушедший (в иной мир), скончавшийся, обречённый смерти.
+- **RU:** — е) ушедший (в иной мир), скончавшийся, обреченный смерти.
 
 **Partic.1g)** — g〉 verflossen, -gangen, -strichen.
 
-- **RU:** — ж) истёкший, прошедший, минувший.
+- **RU:** — ж) истекший, прошедший, минувший.
 
 **Partic.1h)** — h〉 verschwunden, gewichen, verloren, dahin seiend, nicht mehr vorhanden. *kariṇaḥ kiṃ gataṃ bhavet*. so v. a. was verlöre dabei der Elephant? [Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865). Ueberaus häufig am Anfange eines adj. Comp.
 
@@ -101,7 +101,7 @@
 
 **Partic.1l)** — l〉 verbreitet auf (Loc.), bekannt, — als, die Bedeutung habend von (Loc.).
 
-- **RU:** — л) распространённый на (Loc.), известный, — как, имеющий значение (Loc.).
+- **RU:** — л) распространенный на (Loc.), известный, — как, имеющий значение (Loc.).
 
 **Partic.2)** — 2〉 mit pass. Bed.
 
@@ -113,7 +113,7 @@
 
 **Partic.2b)** — b〉 erreicht, erlangt in *˚pāra, ˚śri, ˚śrī*.
 
-- **RU:** — б) достигнутый, обретённый в *˚pāra, ˚śri, ˚śrī*.
+- **RU:** — б) достигнутый, обретенный в *˚pāra, ˚śri, ˚śrī*.
 
 **Caus.header)** — Caus. *gamayati* ([ṚV. 5,5,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.005.html#rv05.005.10) *gā˚*, aber nur in der Saṃhitā), *gmayate*
 
@@ -201,11 +201,11 @@
 
 **apa115.1)** — 1〉 verfliessen, vergehen. *˚gata* verflossen.
 
-- **RU:** — 1) протекать, проходить. *˚gata* — истёкший.
+- **RU:** — 1) протекать, проходить. *˚gata* — истекший.
 
 **apa115.2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) fehlerhaft für *abhi*.
 
-- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вместо *abhi*.
+- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вм. *abhi*.
 
 **abhi120)** — Mit *upāti* gehen über (einen Fluss).
 
@@ -217,7 +217,7 @@
 
 **ati121.1)** — 1〉 verfliessen. *˚gata* verflossen vergangen (Zeit).
 
-- **RU:** — 1) протекать. *˚gata* — истёкший, минувший (время).
+- **RU:** — 1) протекать. *˚gata* — истекший, минувший (время).
 
 **ati121.2)** — 2〉 *gemeinsam passiren.
 
@@ -229,7 +229,7 @@
 
 **adhi123.1)** — 1〉 herankommen, kommen —, hingehen —, gelangen nach oder zu (Acc.). *˚gata* so v. a. umgeben —, umringt von (Instr.).
 
-- **RU:** — 1) приближаться, приходить —, направляться —, достигать чего-либо (Acc.). *˚gata*, так преим. — окружённый, обступленный (Instr.).
+- **RU:** — 1) приближаться, приходить —, направляться —, достигать чего-либо (Acc.). *˚gata*, так преим. — окруженный, обступленный (Instr.).
 
 **adhi123.2)** — 2〉 einem Weibe (Acc.) beiwohnen.
 
@@ -241,7 +241,7 @@
 
 **adhi123.4)** — 4〉 kommen zu, erlangen, erhalten, theilhaftig werden. *bartāram* zu einem Manne kommen, einen M. nehmen. *kanyām, dārān* zur Frau nehmen, heirathen. *˚gata* mit act. (!) und pass. Bed.
 
-- **RU:** — 4) приходить к чему-либо, обретать, получать, становиться причастным. *bartāram* — приходить к мужчине, брать в M.. *kanyām, dārān* — брать в жёны, жениться. *˚gata* с act. (!) и pass. знач.
+- **RU:** — 4) приходить к чему-либо, обретать, получать, становиться причастным. *bartāram* — приходить к мужчине, брать в M.. *kanyām, dārān* — брать в жены, жениться. *˚gata* с act. (!) и pass. знач.
 
 **adhi123.5)** — 5〉 treffen, stossen auf, auffinden.
 
@@ -333,7 +333,7 @@
 
 **anu149.6c)** — c〉 nachgeahmt [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
 
-- **RU:** — в) подражаемый, воспроизведённый [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
+- **RU:** — в) подражаемый, воспроизведенный [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
 
 **anu149.7)** — 7〉 eingehen —, enthalten sein in (Loc.).
 

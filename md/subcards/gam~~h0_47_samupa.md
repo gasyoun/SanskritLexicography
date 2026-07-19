@@ -22,5 +22,5 @@
 
 - **RU:** — 2) войти в некое состояние, в некое отношение: *pañcatvaṃ samupāgamat*
 [KATHĀS. 5,122](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,122)*. *grahaṇam*
-[R. 1,1,73](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,73).* — Места, отмеченные звёздочкой, могли бы относиться также к *samupā*.
+[R. 1,1,73](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,73).* — Места, отмеченные звездочкой, могли бы относиться также к *samupā*.
   <sub>attested</sub>

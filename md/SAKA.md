@@ -1,6 +1,6 @@
 # śākhā
 
-_PWG article — 2 sub-card(s), 13 sense(s) · RU 13/13 · EN 0/13_
+_PWG article — 3 sub-card(s), 14 sense(s) · RU 14/14 · EN 0/14_
 
 ## śākhā
 
@@ -59,7 +59,7 @@ _PWG article — 2 sub-card(s), 13 sense(s) · RU 13/13 · EN 0/13_
 
 **NWS11)** Epigr, unsp > lit., „a branch“; a Vedic school following any particular recension of the Vedas. CII 3 (Index). a section of the Jain community. EI X, S. 213-224 (Index). Sircar 1966 : 287
 
-- **RU:** [NWS: Sircar] букв. «ветвь»; ведийская школа, следующая определённой редакции Вед. CII 3 (Index). раздел джайнской общины. EI X, S. 213-224 (Index). Sircar 1966 : 287
+- **RU:** [NWS: Sircar] букв. «ветвь»; ведийская школа, следующая определенной редакции Вед. CII 3 (Index). раздел джайнской общины. EI X, S. 213-224 (Index). Sircar 1966 : 287
   <sub>attested</sub>
 
 **NWS12)** śākhāvāta Śā, Med > [Pl] nervous or rheumatic affections of a limb. Hoernle 1893-1912 (II) 42.322. Hoernle 1908 : 327 (s.v. śākhā)
@@ -70,6 +70,16 @@ _PWG article — 2 sub-card(s), 13 sense(s) · RU 13/13 · EN 0/13_
 ## śākhā
 
 `_s_a_k_a~~h0_zz_pw`
+
+
+**VI)** *śākhā* VI. Jahr [ŚRĪKAṆṬHAC. 1,42].
+
+- **RU:** *śākhā* VI. год [ŚRĪKAṆṬHAC. 1,42].
+  <sub>lexicographic</sub>
+
+## śākhā
+
+`_s_a_k_a~~h0_zz_pwkvn`
 
 
 **VI)** *śākhā* VI. Jahr [ŚRĪKAṆṬHAC. 1,42].

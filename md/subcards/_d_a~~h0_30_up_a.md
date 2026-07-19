@@ -32,7 +32,7 @@
 [GĪT. 10,8.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?10,8)
 
 - **RU:** — 2) делать чем-либо: *(mā) bhartāram — asaddharmamupādadhāḥ*
-[R. 2,35,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28) *upāhita* произведённый, созданный: *kopopāhitavāṣpa*
+[R. 2,35,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28) *upāhita* произведенный, созданный: *kopopāhitavāṣpa*
 [BHARTṚ. 3,80.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,80) *tadupāhitavikāra*
 [GĪT. 10,8.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?10,8)
   <sub>attested</sub>

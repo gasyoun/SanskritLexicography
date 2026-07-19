@@ -79,8 +79,8 @@ einer Wurzel *gī*)
 [VOP. 5,29.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,29) *agāyi bhavatā*
 [P. 2,4,45](https://ashtadhyayi.com/sutraani/2/4/45), схол.
 *agāsātāṃ grāmau devadattena*
-[77](https://ashtadhyayi.com/sutraani/2/4/77), схол. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* пришёл
-[BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* пришёл ко мне, так преим. пришёл мне
+[77](https://ashtadhyayi.com/sutraani/2/4/77), схол. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* пришел
+[BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* пришел ко мне, так преим. пришел мне
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73)
   <sub>attested</sub>
 

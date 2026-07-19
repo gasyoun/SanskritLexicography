@@ -10,7 +10,7 @@
 [SADDH. P. 4,8,b. 9,a.]
 
 - **RU:** — *samanvā*, partic.
-*samanvāgata* comp. в конце comp. сопровождаемый, снабжённый чем-л.
+*samanvāgata* comp. в конце comp. сопровождаемый, снабженный чем-л.
 [BURN. Intr. 168, N. 2. 625.]
 
 [SADDH. P. 4,8,b. 9,a.]

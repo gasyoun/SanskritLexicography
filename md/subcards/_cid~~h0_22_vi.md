@@ -58,7 +58,7 @@
 [BHAṬṬ. 3,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,52) *vicchinna = vibhakta*
 [TRIK. 3,3,362.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,362)
 [H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
-[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) разорванный, несвязный, разделённый; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) разорванный, несвязный, разделенный; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
 [R. 5,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,36) *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
 [ŚĀK. 9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?9) *kiraṇāḥ*
 [VARĀH. BṚH. S. 29,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,9) *rekhāḥ*
@@ -68,7 +68,7 @@
 [RAGH. 16,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,20) *karman*
 [BHARTṚ. 1,95.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,95) *timirapraveśavicchinnā (dṛṣṭiḥ)*
 [MṚCCH. 14,13.] *mahābhāṣya* отсутствующий, более не существующий
-[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяжённости,
+[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяженности,
 [AMAR. 74.] *avicchinna* непрерывный: *avicchinnāntaragṛhā (purī)*
 [R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) *camū, gaṅgā*
 [RĀJA-TAR. 4,514.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,514) *udakadhārā*
@@ -81,7 +81,7 @@
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
 [DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] с перерывами: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
-([BALL.]: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
+([BALL.]: «в отдельные случаи [вм. того чтобы быть непрерывным]»)
 [VEDĀNTAS. (Allah.) No. 134.]
   <sub>attested</sub>
 
@@ -104,7 +104,7 @@
 [H. an.]
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
 
-- **RU:** 4) *vicchinna = samālabdha* умащённый, намазанный
+- **RU:** 4) *vicchinna = samālabdha* умащенный, намазанный
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an.]
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)

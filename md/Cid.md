@@ -21,19 +21,19 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-- **RU:** *chid*, *chinatti* und *chintte*
+- **RU:** *chid*, *chinatti* и *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
-[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* и *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
-[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
+[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* и *acchaitsīt*
 [P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
 
 *chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
 [P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
-схол.; *ciccheda* und *cicchide, cicchidvaṃs*
+схол.; *ciccheda* и *cicchide, cicchidvaṃs*
 [P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), схол.;
 *chetsyati* Кар 3 aus
-[SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
+[SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
   <sub>attested</sub>
 
 **1)** 1) abschneiden, abhauen, abschlagen, abreissen, zerschneiden, zerhauen, zerreissen, spalten, durchbohren: *mā tantuśchedi vayato dhiyaṃ me*
@@ -219,7 +219,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 **5)** — 5) *chinna* heruntergekommen, entkräftet, ermüdet: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
 
-- **RU:** 5) *chinna* пришедший в упадок, обессиленный, утомлённый: *strī˚, bhāra˚, mārga˚*
+- **RU:** 5) *chinna* пришедший в упадок, обессиленный, утомленный: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
   <sub>attested</sub>
 
@@ -333,7 +333,7 @@ Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **RU:** — *apa* отщеплять, отделять: *śakalam*
 [ŚAT. BR. 3,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,11)
 [KĀTY. ŚR. 3,2,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,5) *antāpacchinna*
-схол. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,7,17) [8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,8,2) *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
+схол. к [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,7,17) [8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,8,2) *etasyai vā eṣāpacchidyaiṣaiva punarbhavani*
 [ŚAT. BR. 5,3,4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,4,9) *ājarasaṃ hāsmai vājinaṃ nāpacchidyate* не отнимается у него
 [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13)
   <sub>attested</sub>
@@ -421,7 +421,7 @@ Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) *viśaṃ kṣatrādvyavacchindyāt*
 [ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
 [13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
-[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличённый, различённый
+[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличенный, различенный
 [TARKASAM̃GR. 58.] = *bhinna*
 [TRIK. 3,1,18.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,18)
   <sub>attested</sub>
@@ -513,7 +513,7 @@ Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 - **RU:** — 3) отстранять, удалять: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
-[KULL.] zu [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
+[KULL.] к [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
   <sub>attested</sub>
 
 **A-4)** — 4) entreissen, wegnehmen, rauben: *kṛtāntena . ācchidya mama mandāyā nīyase*
@@ -540,7 +540,7 @@ Schol. zu [KĀTY. ŚR. 3,7,17.](https://sanskrit-lexicon-scans.github.io/katyasr
 [57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
 
 - **RU:** — 5) не обращать внимания, не считаться с чем-либо: *yattvāṃ saṃcodayati me vaca ācchidya*
-[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушёл,
+[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушел,
 [57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
   <sub>attested</sub>
 
@@ -632,7 +632,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [MBH. 1,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.930) *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
 [PAÑCAT. II,92.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,92) *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
 [M. 3,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,101) *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
-схол. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
+схол. к [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SĀH. D. 75,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?75,2)
   <sub>attested</sub>
 
@@ -690,7 +690,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 
 - **RU:** — *samud* разрывать и вместе с тем искоренять, уничтожать: *samucchinnavāsana *
 
-* (vāsana* одежда und *vāsanā = mithyājñāna*)
+* (vāsana* одежда и *vāsanā = mithyājñāna*)
   <sub>attested</sub>
 
 **2)** [PRAB. 50,12.] ausreissen und zugleich zu Grunde richten: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*
@@ -734,7 +734,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
 
 - **RU:** 3) отделять, обособлять: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
-[SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
+[SIDDH. K.] к [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
   <sub>attested</sub>
 
 **4)** — 4) nach allen Seiten abgrenzen, genau bestimmen, genau angeben, richtig abschätzen, sich Gewissheit über Etwas oder Jmd verschaffen
@@ -751,7 +751,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [KAP. 1,77.]
 Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
-- **RU:** 4) точно ограничивать со всех сторон, точно определять, точно указывать, правильно оценивать, удостоверяться в чём-либо или в ком-либо
+- **RU:** 4) точно ограничивать со всех сторон, точно определять, точно указывать, правильно оценивать, удостоверяться в чем-либо или в ком-либо
 [Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), схол. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
 [RAGH. 6,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,77)
 [RĀJA-TAR. 4,206.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,206) *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
@@ -761,9 +761,9 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [PAÑCAT. 161,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?161,24) *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
 [RAGH. 17,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,59) *(tam) śīrṣacchedyaṃ paricchidya* удостоверившись в том, что тот заслуживает казни,
 [15,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,51) *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
-[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: «предстаёт к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стеснённый: *paricchinnaṃ na sarvopādānam*
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: «предстает к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стесненный: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
-схол. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
+схол. к [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *paricchitti* u. s. w.
@@ -920,7 +920,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [BHAṬṬ. 3,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,52) *vicchinna = vibhakta*
 [TRIK. 3,3,362.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,362)
 [H. an. 3,416.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,416)
-[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) разорванный, несвязный, разделённый; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
+[MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132) разорванный, несвязный, разделенный; прерванный, нарушенный: *vicchinnamṛditasrajaḥ*
 [R. 5,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,13,36) *yadardhe vicchinnaṃ bhavati kṛtasaṃdhānamiva tat*
 [ŚĀK. 9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?9) *kiraṇāḥ*
 [VARĀH. BṚH. S. 29,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,9) *rekhāḥ*
@@ -930,7 +930,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [RAGH. 16,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,20) *karman*
 [BHARTṚ. 1,95.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,95) *timirapraveśavicchinnā (dṛṣṭiḥ)*
 [MṚCCH. 14,13.] *mahābhāṣya* отсутствующий, более не существующий
-[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяжённости,
+[RĀJA-TAR. 4,487.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,487) *vicchinneṣu pathiṣu* когда пути более не были непрерывны, не были видны глазу во всей своей протяженности,
 [AMAR. 74.] *avicchinna* непрерывный: *avicchinnāntaragṛhā (purī)*
 [R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) *camū, gaṅgā*
 [RĀJA-TAR. 4,514.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,514) *udakadhārā*
@@ -943,7 +943,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [7,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,13) *pāta*
 [DAŚAK.] in [BENF. Chr. 179,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179) *vicchidya* _adv._ отдельно от (abl.): *kāmādvicchidya kvacinnigūḍhaḥ pracarati*
 [PRAB. 33,10.] с перерывами: *tatrādvitīyavastuni vicchidya vicchidyāntarindriyavṛttipravāho dhyānam*
-([BALL.]: «в отдельные случаи [вместо того чтобы быть непрерывным]»)
+([BALL.]: «в отдельные случаи [вм. того чтобы быть непрерывным]»)
 [VEDĀNTAS. (Allah.) No. 134.]
   <sub>attested</sub>
 
@@ -966,7 +966,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [H. an.]
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
 
-- **RU:** 4) *vicchinna = samālabdha* умащённый, намазанный
+- **RU:** 4) *vicchinna = samālabdha* умащенный, намазанный
 [TRIK. 3,3,262.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262)
 [H. an.]
 [MED. n. 132.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,132)
@@ -1098,7 +1098,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **NWS-14)** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): various, diverse. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): cut or torn or split or cleft or broken asunder. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 
-- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщеплённый, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
+- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщепленный, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
   <sub>attested</sub>
 
 **NWS-15)** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): fixed; demarcated. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
@@ -1108,22 +1108,22 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **NWS-16)** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): cut off, extirpated, destroyed, interrupted, ceased. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 
-- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искоренённый, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
+- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искорененный, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
   <sub>attested</sub>
 
 **NWS-17)** [ chinná ] divided, torn, cut through, perforated. AV . opened (a wound). Suś . disturbed. Hariv 16258 , Mṛcch . kiṃ naś chinnam : 'what is there in this to disturb us?' there is nothing to care about. Amaru . ? . Suś . [ said of the belly of a leach. ] limited by (in comp.). Bhartṛ(MW) iii, 20 . taken away or out of. R ii, 56, 23 , Ragh xii, 80 . ifc: decaying or exhausted by. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
 
-- **RU:** [ chinná ] разделённый, разорванный, разрезанный, прободённый. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чём стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощённый, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
+- **RU:** [ chinná ] разделенный, разорванный, разрезанный, прободенный. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чем стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощенный, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
   <sub>attested</sub>
 
 **NWS-18)** [ chedita ] cut, divided. Lex(MW) . MW : 407 (s.v. chedita )
 
-- **RU:** [ chedita ] срезанный, разделённый. Lex(MW) . MW : 407 (s.v. chedita )
+- **RU:** [ chedita ] срезанный, разделенный. Lex(MW) . MW : 407 (s.v. chedita )
   <sub>lexicographic</sub>
 
 **NWS-19)** [Buddh , unsp] [ppp. chinna ] wearied. [ in strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
 
-- **RU:** [Buddh , unsp] [ppp. chinna ] утомлённый, изнурённый. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
+- **RU:** [Buddh , unsp] [ppp. chinna ] утомленный, изнуренный. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
   <sub>attested</sub>
 
 **NWS-20)** *chid* [Tan , unsp] [ chinna ] (śivait) coupé. [ défaut pouvant affecter un mantra. ŚāraTi 2.71 . ]
@@ -1140,7 +1140,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 1〉 abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren. *saṃdhim* ein Loch in die Mauer schlagen. Pass. zerbrechen, -reissen (intrans.). *chinna* abgeschnitten u. s. w.; aufgerissen, -schnitten; eingeschnitten, d. h. mit Einschnürungen versehen [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
 
 - **RU:** **1.** √*chid*, *chinatti, chintte* (*chindet* [KṢURIKOP. 14. 19])
-— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный и т.д.; разорванный, -резанный; надрезанный, т.е. снабжённый перетяжками [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
+— 1〉 срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать. *saṃdhim* пробить отверстие в стене. Pass. разломать, разорвать (intrans.). *chinna* отрезанный и т.д.; разорванный, -резанный; надрезанный, т.е. снабженный перетяжками [217,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?217).
   <sub>attested</sub>
 
 **2)** — 2〉 scheiden, trennen, — von (Abl., ausnahmsweise Instr.). *chinna* unterbrochen, nicht zusammenhängend. *˚chinna* auch begrenzt —, eingeschlossen von [Spr. 1229](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1229).
@@ -1170,7 +1170,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **7)** — 7〉 **chinna* am Ende eines Comp. herabgekommen —, entkräftet —, ermüdet durch oder von.
 
-- **RU:** — 7〉 **chinna* в конце Comp. павший —, обессиленный —, утомлённый от чего-л. или чем-л.
+- **RU:** — 7〉 **chinna* в конце Comp. павший —, обессиленный —, утомленный от чего-л. или чем-л.
   <sub>lexicographic</sub>
 
 **Kaus.)** — Caus. *chedayati*
@@ -1194,22 +1194,22 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **Mit ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
 
-- **RU:** — Mit *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
+- **RU:** — С *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15).
   <sub>attested</sub>
 
 **Mit ava)** — Mit *antar* abschneiden, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
-- **RU:** — Mit *antar* срезать, отрезать (intercludere) [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+- **RU:** — С *antar* срезать, отрезать (intercludere) [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
   <sub>attested</sub>
 
 **Mit ā)** — Mit *apa* abspalten, abtrennen.
 
-- **RU:** — Mit *apa* откалывать, отделять.
+- **RU:** — С *apa* откалывать, отделять.
   <sub>attested</sub>
 
 **Mit ud)** — Mit *samapa* abschneiden [ŚULBAS. 3,72].
 
-- **RU:** — Mit *samapa* срезать [ŚULBAS. 3,72].
+- **RU:** — С *samapa* срезать [ŚULBAS. 3,72].
   <sub>attested</sub>
 
 **Mit upa)** — Mit *ava* Jmd von sich weisen, zurückstossen [KĀD. 2,87,8]. Pass. getrennt —, geschieden werden von (Abl.). — *avacchinna*
@@ -1217,15 +1217,15 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 2〉 begrenzt —, eingeschlossen von (im Comp. vorangehend) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
 — 3〉 bestimmt, präcisirt, begrifflich definirt.
 
-- **RU:** — Mit *ava* отвергать кого-л., отталкивать [KĀD. 2,87,8]. Pass. быть отделённым —, отлучённым от (Abl.). — *avacchinna*
+- **RU:** — С *ava* отвергать кого-л., отталкивать [KĀD. 2,87,8]. Pass. быть отделенным —, отлученным от (Abl.). — *avacchinna*
 — 1〉 прерванный.
 — 2〉 ограниченный —, замкнутый (предшествующим в Comp.) [260,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260). [261,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?261).
-— 3〉 определённый, точно установленный, понятийно определённый.
+— 3〉 определенный, точно установленный, понятийно определенный.
   <sub>attested</sub>
 
 **Mit pari)** — Mit *paryava* rings abtrennen.
 
-- **RU:** — Mit *paryava* отделять со всех сторон.
+- **RU:** — С *paryava* отделять со всех сторон.
   <sub>attested</sub>
 
 **Mit pra)** — Mit *vyava*
@@ -1236,7 +1236,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 5〉 abgrenzen, genau bestimmen [BHĀG. P. 4,29,45](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,45).
 — 6〉 sich entscheiden zu (*prati*).
 
-- **RU:** — Mit *vyava*
+- **RU:** — С *vyava*
 — 1〉 срезать.
 — 2〉 срезать, отделять, разлучать, — от (Abl.).
 — 3〉 разрывать, вырывать из e..
@@ -1254,7 +1254,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 6〉 entfernen, zu Nichte machen.
 — 7〉 nicht beachten, keine Rücksicht nehmen auf.
 
-- **RU:** — Mit *ā*
+- **RU:** — С *ā*
 — 1〉 обрывать, -резать, разрезать, -ламывать.
 — 2〉 извлекать.
 — 3〉 срезать —, вычитать —, удалять —, исключать от (Abl.).
@@ -1266,17 +1266,17 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **Mit sam-ud)** — Mit *avā* entreissen aus (Abl.).
 
-- **RU:** — Mit *avā* вырывать из (Abl.).
+- **RU:** — С *avā* вырывать из (Abl.).
   <sub>attested</sub>
 
 **Mit ā + vi)** — Mit *upā* mit sich fortziehen, entreissen.
 
-- **RU:** — Mit *upā* увлекать за собой, вырывать.
+- **RU:** — С *upā* увлекать за собой, вырывать.
   <sub>attested</sub>
 
 **Mit sam)** — Mit *samā* dass.
 
-- **RU:** — Mit *samā* то же
+- **RU:** — С *samā* то же
   <sub>attested</sub>
 
 **Mit prati + vi / vi + prati)** — Mit *ud*
@@ -1284,7 +1284,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 2〉 ausrotten, zu Grunde richten, vernichten, Jmd den Untergang bereiten. *ucchinna* von einem Menschen so v. a. verloren, erbärmlich.
 — 3〉 störend in Etwas eingreifen, hemmen, unterbrechen. Pass. gehemmt —, unterbrochen werden, aufhören, ausgehen, mangeln.
 
-- **RU:** — Mit *ud*
+- **RU:** — С *ud*
 — 1〉 вырезать, срезать, — от (Abl.) [AV. PAIPP. 20,2,2].
 — 2〉 искоренять, губить, уничтожать, готовить кому-л. гибель. *ucchinna* о человеке — преим. погибший, жалкий.
 — 3〉 вмешиваться, нарушая что-л., препятствовать, прерывать. Pass. быть остановленным —, прерванным, прекращаться, иссякать, недоставать.
@@ -1297,14 +1297,14 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **Mit prati)** — Mit *vyud* Pass. mit den Personalendungen des Act. zu Nichte werden, eine Unterbrechung erleiden, aufhören. *vyucchinna* zu Ende gegangen.
 
-- **RU:** — Mit *vyud* Pass. с личными окончаниями Act. сводиться к нулю, подвергаться перерыву, прекращаться. *vyucchinna* завершившийся.
+- **RU:** — С *vyud* Pass. с личными окончаниями Act. сводиться к нулю, подвергаться перерыву, прекращаться. *vyucchinna* завершившийся.
   <sub>attested</sub>
 
 **Mit vi + pra)** — Mit *samud*
 — 1〉 ausreissen, zerreissen.
 — 2〉 ausrotten, vernichten, zu Nichte machen. *samucchinna* verloren gegangen.
 
-- **RU:** — Mit *samud*
+- **RU:** — С *samud*
 — 1〉 вырывать, разрывать.
 — 2〉 искоренять, уничтожать, сводить к нулю. *samucchinna* утраченный.
   <sub>attested</sub>
@@ -1314,15 +1314,15 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 2〉 nach allen Seiten abgrenzen, genau bestimmen, — angeben, richtig abschätzen, sich Gewissheit verschaffen über. *paricchinna* begrenzt.
 — 3〉 *paricchinna* zersplittert, so v. a. mannichfach erscheinend.
 
-- **RU:** — Mit *pari*
+- **RU:** — С *pari*
 — 1〉 обрезать с обеих сторон, подрезать; — злаки жать [KĀRAṆḌ. 71,7].
-— 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чём-л. *paricchinna* ограниченный.
-— 3〉 *paricchinna* расщеплённый, поэтому преим. многообразно являющийся.
+— 2〉 разграничивать со всех сторон, точно определять, — обозначать, верно оценивать, удостоверяться в чем-л. *paricchinna* ограниченный.
+— 3〉 *paricchinna* расщепленный, поэтому преим. многообразно являющийся.
   <sub>attested</sub>
 
 **Mit pari + sam)** — Mit *vipari* rings abschneiden, beschneiden, zerschneiden.
 
-- **RU:** — Mit *vipari* обрезать со всех сторон, подрезать, разрезать.
+- **RU:** — С *vipari* обрезать со всех сторон, подрезать, разрезать.
   <sub>attested</sub>
 
 **Mit pra + sam)** — Mit *pra*
@@ -1330,7 +1330,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — 2〉 entreissen, entziehen.
 — Caus. abschneiden lassen.
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
 — 1〉 обрывать, -резать, разрезать, -рубать, раскалывать, пробуравливать.
 — 2〉 вырывать, отнимать.
 — Caus. велеть срезать.
@@ -1343,14 +1343,14 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
 **Mit vi + sam)** — Mit *saṃpra* zerschneiden, -hauen, spalten.
 
-- **RU:** — Mit *saṃpra* разрезать, -рубать, раскалывать.
+- **RU:** — С *saṃpra* разрезать, -рубать, раскалывать.
   <sub>attested</sub>
 
 **Mit ud + sam)** — Mit *prati*
 — 1〉 abreissen, -schneiden.
 — 2〉 mit Zerhauen, Spalten u. s. w. Jmd (Acc.) antworten.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 обрывать, -резать.
 — 2〉 рубя, раскалывая и т.д. отвечать кому-л. (Acc.).
   <sub>attested</sub>
@@ -1365,22 +1365,22 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — a〉 *krumm.
 — b〉 *gesalbt (*samālabdha*).
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
 — 1〉 разрывать, -ламывать, раскалывать.
-— 2〉 разрывать, разлучать. *vicchidya* отделённый от (Abl.) Pass. отделяться [AV. PRĀYAŚC. 6,5]. *vicchinna* разорванный, разлучённый, несвязный.
+— 2〉 разрывать, разлучать. *vicchidya* отделенный от (Abl.) Pass. отделяться [AV. PRĀYAŚC. 6,5]. *vicchinna* разорванный, разлученный, несвязный.
 — 3〉 нарушать, прерывать. *vicchidya* с перебоями. *vicchinna* прерванный.
 — 4〉 губить, уничтожать. *vicchinna* более не существующий.
 — 5〉 раскалываться.
 — 6〉 *vicchinna*
 — a〉 *кривой.
-— b〉 *умащённый (*samālabdha*).
+— b〉 *умащенный (*samālabdha*).
   <sub>attested</sub>
 
 **Mit ā + vi + ud)** — Mit *sam*
 — 1〉 abschneiden, -hauen, zerschneiden, spalten, durchbohren. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* sich gegenseitig Glieder abhauend.
 — 2〉 lösen (einen Zweifel), erledigen (eine Frage).
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 срезать, -рубать, разрезать, раскалывать, пробуравливать. *saṃchidyantau* (v. l. *saṃchindantau*) *ca gātrāṇi* взаимно отрубая члены.
 — 2〉 разрешать (сомнение), решать (вопрос).
   <sub>attested</sub>
@@ -1430,7 +1430,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 — Mit *vipra* 4.
 
 - **RU:** **1.** √*chid* II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17).
-— Mit *vipra* 4.
+— С *vipra* 4.
   <sub>attested</sub>
 
 ## chid
@@ -1594,7 +1594,7 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
  1) und
 [VEDĀNTAS. (Allah.) No. 34] und [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) unter 2); *dikkālānavacchinna* dem Raum und der Zeit nicht angehörig, nicht unter die Kategorien von Raum und Zeit fallend.
 
-- **RU:** 3) *avacchinna* — «определённый, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
+- **RU:** 3) *avacchinna* — «определенный, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
 [TARKAS. 58.] *anavacchinna*
 [SARVADARŚANAS. 84,22.] *anavacchinnatva*

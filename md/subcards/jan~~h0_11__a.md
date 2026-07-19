@@ -23,7 +23,7 @@
 [7,3,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.003.html#rv07.003.09) [5,30,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.030.html#rv05.030.05) [1,83,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.05) [10,129,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.06) [ŚAT. BR. 12,1,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,1,2,3)
 
 - **RU:** — 2) intrans.
- a) «рождаться из — , из некоего места — , возникать»: *ataścidā janiṣīṣṭa pravṛddhaḥ* «этим путём он должен родиться на свет»
+ a) «рождаться из — , из некоего места — , возникать»: *ataścidā janiṣīṣṭa pravṛddhaḥ* «этим путем он должен родиться на свет»
 [ṚV. 4,18,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.01) *diva ājātā*
 [43,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.043.html#rv04.043.03) [1,179,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.04) *mātroḥ*
 [7,3,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.003.html#rv07.003.09) [5,30,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.030.html#rv05.030.05) [1,83,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.05) [10,129,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.06) [ŚAT. BR. 12,1,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,1,2,3)

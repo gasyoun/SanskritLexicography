@@ -69,7 +69,7 @@ _PWG article — 20 sub-card(s), 101 sense(s) · RU 101/101 · EN 0/101_
 [8,43,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.19) *nainaṃ hinvantyapi vājineṣu* вызывать на
 [10,71,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05) *āturam* побуждать
 [AV. 6,101,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.101.html#av06.101.02)
-[ŚAT. BR. 14,1,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,19) мед. приходить в движение, быть воодушевлённым и т.д., усердствовать: *tubhyaṃ hinvāno vasiṣṭa gā apaḥ*
+[ŚAT. BR. 14,1,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,19) мед. приходить в движение, быть воодушевленным и т.д., усердствовать: *tubhyaṃ hinvāno vasiṣṭa gā apaḥ*
 [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01) *na hinvānāsastitirusta indram* стремительно, яростно
 [1,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.08) *hinve arvā*
 [4,7,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.007.html#rv04.007.11) *hinvānaṃ na vājayum*
@@ -148,8 +148,8 @@ _PWG article — 20 sub-card(s), 101 sense(s) · RU 101/101 · EN 0/101_
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) zeigt. = *airśvasaṃgamayitāram* Comm.
 
 - **RU:** — 6) как необычная форма сюда мог бы относиться *hayantā* du. concitantes а именно equos
-[ṚV. 1,116,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.18) und *apāṃ napātamaśvinā hayantam (hayatam*, как читает наш рукоп., было бы погоняет)
-[TS. 1,6,12,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,12,4) однако текст ненадёжен, как
+[ṚV. 1,116,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.18) и *apāṃ napātamaśvinā hayantam (hayatam*, как читает наш рукоп., было бы погоняет)
+[TS. 1,6,12,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,12,4) однако текст ненадежен, как
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) показывает. = *airśvasaṃgamayitāram* коммент.
   <sub>attested</sub>
 
@@ -344,7 +344,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [KAUŚ. 75.]
 [KAUṢ. UP. 2,3.] *tasmātpraheṣyāmyadya tvāṃ (pṛthe) hīnaḥ prajananātsvayam . sadṛśācchreyaso vā tvaṃ viddhyapatyam* посылать (к другому мужу)
 [MBH. 1,4676.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4676) *dūtān*
-[2,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1244) [4,281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.281) *kuśalārthaṃ tava* послать кого-л., чтобы осведомиться о твоём здоровье
+[2,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1244) [4,281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.281) *kuśalārthaṃ tava* послать кого-л., чтобы осведомиться о твоем здоровье
 [R. 1,17,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,38) ([26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,26) [GORR.]). *cāram*
 [KATHĀS. 16,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,57) [17,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,55) [61.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,61) [41,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?41,20) [44,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,172) [48,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,103) [57,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,125) [120,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,98) *praheṣyāmyarcitāmimām* отпускать
 [122,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?122,50) [RĀJA-TAR. 5,56.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,56) [302.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,302) *prāhaiṣṭām*
@@ -395,10 +395,10 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
   <sub>attested</sub>
 
 **8)** — 8) = 2. *hā* mit *pra* verlassen, im Stich lassen: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
-[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151) ([BHĀG. P.]).
+[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151 "Spr. (II) 4151: puṣṇāti yānadharmeṇa svaṣuddhyā tamapaṇḍitam | te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ || — Den Unverständigen, der, in der Meinung, dass es die seinigen seien, Leben, Reichthümer, Söhne und Anderes auf unrechte Weise fördert, lassen diese im Stich, bevor er noch sein Ziel erreicht hat.") ([BHĀG. P.]).
 
 - **RU:** — 8) = 2. *hā* с *pra* оставлять, бросать: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
-[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151) ([BHĀG. P.]).
+[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151 "Spr. (II) 4151: puṣṇāti yānadharmeṇa svaṣuddhyā tamapaṇḍitam | te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ || — Den Unverständigen, der, in der Meinung, dass es die seinigen seien, Leben, Reichthümer, Söhne und Anderes auf unrechte Weise fördert, lassen diese im Stich, bevor er noch sein Ziel erreicht hat.") ([BHĀG. P.]).
   <sub>attested</sub>
 
 **9)** — 9) partic. *prahita*
@@ -411,7 +411,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [7,2,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,56) *daiva˚*
 [8,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,14) [9,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,29) [22,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,16)
 
-- **RU:** a) погнанный, воодушевлённый: *pārtha˚*
+- **RU:** a) погнанный, воодушевленный: *pārtha˚*
 [BHĀG. P. 3,1,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,9) *kāla˚*
 [7,2,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,56) *daiva˚*
 [8,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,14) [9,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,29) [22,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,16)
@@ -442,7 +442,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [MĀRK. P. 134,45.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,45)
 [BHĀG. P. 3,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,18) *sādhuṣu prahitaṃ tejaḥ prahartuḥ kurute 'śivam*
 [9,4,70.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,70) *vegena prahitaṃ bāhum* так преим. с силой вытянутый
-[MBH. 1,6000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6000) *prahitanakhareṣvaṅgakeṣu* так преим. вонзённый, вбитый
+[MBH. 1,6000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6000) *prahitanakhareṣvaṅgakeṣu* так преим. вонзенный, вбитый
 [SĀH. D. 71,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?71,1) брошенный, направленный о глазах, взглядах
 [MEGH. 72.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?72)
 [RAGH. 2,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,27) [13,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,42) [15,84.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,84)
@@ -500,7 +500,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 **pra-9e)** — e) hingeschickt zu (loc.) so v. a. mit der Sorge um — beauftragt: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69)
 
-- **RU:** — e) посланный к (loc.) так преим. облечённый заботой о — поручением: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
+- **RU:** — e) посланный к (loc.) так преим. облеченный заботой о — поручением: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69)
   <sub>attested</sub>
 
@@ -635,7 +635,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-1)** — 1〉 Act. Med. in Bewegung setzen, antreiben, anfeuern, reizen. Hierher wohl auch *hayant* Partic. Med. sich in Bewegung setzen, angefeuert werden u. s. w., sich beeifern, beeilen.
 
-- **RU:** — 1〉 Act. Med. приводить в движение, погонять, воодушевлять, побуждать. Сюда же, вероятно, *hayant* Partic. Med. приходить в движение, быть воодушевлённым и т.д., усердствовать, торопиться.
+- **RU:** — 1〉 Act. Med. приводить в движение, погонять, воодушевлять, побуждать. Сюда же, вероятно, *hayant* Partic. Med. приходить в движение, быть воодушевленным и т.д., усердствовать, торопиться.
   <sub>attested</sub>
 
 **PW-2)** — 2〉 veranlassen zu (Dat.).
@@ -680,7 +680,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-7a)** — a〉 getrieben, gespornt, im Lauf befindlich.
 
-- **RU:** — a〉 погнанный, подстёгнутый, несущийся.
+- **RU:** — a〉 погнанный, подстегнутый, несущийся.
   <sub>attested</sub>
 
 **PW-7b)** — b〉 angewiesen, aufgefordert.
@@ -705,27 +705,27 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-mit-apa)** — Mit *apa* abwerfen, sich befreien von (Acc.) [BHĀG. P.]
 
-- **RU:** — Mit *apa* сбрасывать, освобождаться от (Acc.) [BHĀG. P.]
+- **RU:** — С *apa* сбрасывать, освобождаться от (Acc.) [BHĀG. P.]
   <sub>attested</sub>
 
 **PW-mit-abhi)** — Mit *api* herausfordern zu (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
 
-- **RU:** — Mit *api* вызывать на (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
+- **RU:** — С *api* вызывать на (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
   <sub>attested</sub>
 
 **PW-mit-abhi2)** — Mit *ā* Med. herbeischaffen.
 
-- **RU:** — Mit *ā* Med. доставлять.
+- **RU:** — С *ā* Med. доставлять.
   <sub>attested</sub>
 
 **PW-mit-ati)** — Mit *pari*, *parihinomi* hinbefördern, verbringen.
 
-- **RU:** — Mit *pari*, *parihinomi* переправлять, переводить.
+- **RU:** — С *pari*, *parihinomi* переправлять, переводить.
   <sub>attested</sub>
 
 **PW-mit-pra)** — Mit *pra*, *prahiṇoti*
 
-- **RU:** — Mit *pra*, *prahiṇoti*
+- **RU:** — С *pra*, *prahiṇoti*
   <sub>attested</sub>
 
 **PW-pra-1)** — 1〉 antreiben, anregen.
@@ -740,12 +740,12 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-pra-3)** — 3〉 schleudern, — auf (Dat. oder Loc.), den Blick richten auf (Acc.) [KĀD. 31,24 (56,5)].
 
-- **RU:** — 3〉 метать, — на (Dat. oder Loc.), взгляд направлять на (Acc.) [KĀD. 31,24 (56,5)].
+- **RU:** — 3〉 метать, — на (Dat. или Loc.), взгляд направлять на (Acc.) [KĀD. 31,24 (56,5)].
   <sub>attested</sub>
 
 **PW-pra-4)** — 4〉 absenden (Boten), entsenden, entlassen, weg schicken, vertreiben, absenden u. s. w. zu Jmd (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* nach oder an einen Ort (Acc. oder Acc. mit *prati*) um zu (Dat. oder Infin.).
 
-- **RU:** — 4〉 отправлять (гонца), снаряжать, отпускать, прогонять, посылать и т.д. к кому-л. (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* в или к какому-л. месту (Acc. oder Acc. mit *prati*) чтобы (Dat. oder Infin.).
+- **RU:** — 4〉 отправлять (гонца), снаряжать, отпускать, прогонять, посылать и т.д. к кому-л. (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* или *pārśvam* в или к какому-л. месту (Acc. или Acc. mit *prati*) чтобы (Dat. или Infin.).
   <sub>attested</sub>
 
 **PW-pra-5)** — 5〉 herbei-, hinschaffen zu, liefern, Jmd (Dat.) Etwas zustellen, zukommen lassen.
@@ -765,7 +765,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-pra-8)** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) wohl fehlerhaft für *prajigāti* und *prajigātu*.
 
-- **RU:** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) вероятно ошибочно вместо *prajigāti* und *prajigātu*.
+- **RU:** — 8〉 *prajidhyati* и *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) вероятно ошибочно вм. *prajigāti* и *prajigātu*.
   <sub>attested</sub>
 
 **PW-pra-9)** — 9〉 *prahita*
@@ -775,7 +775,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-pra-9a)** — a〉 angetrieben, angefeuert.
 
-- **RU:** — a〉 погнанный, воодушевлённый.
+- **RU:** — a〉 погнанный, воодушевленный.
   <sub>attested</sub>
 
 **PW-pra-9b)** — b〉 geschleudert, — auf (Loc.).
@@ -795,7 +795,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-pra-9e)** — e〉 eingestossen, eingegraben (Fingernagel).
 
-- **RU:** — e〉 вонзённый, вбитый (ноготь).
+- **RU:** — e〉 вонзенный, вбитый (ноготь).
   <sub>attested</sub>
 
 **PW-pra-9f)** — f〉 hingeschafft, zugestellt, zugesandt (Sachen).
@@ -830,27 +830,27 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-mit-anu)** — Mit *anupra*, *˚hita* nachgesandt.
 
-- **RU:** — Mit *anupra*, *˚hita* посланный вслед.
+- **RU:** — С *anupra*, *˚hita* посланный вслед.
   <sub>attested</sub>
 
 **PW-mit-aa)** — Mit *abhipra*, *abhiprahita* hergeschickt.
 
-- **RU:** — Mit *abhipra*, *abhiprahita* присланный.
+- **RU:** — С *abhipra*, *abhiprahita* присланный.
   <sub>attested</sub>
 
 **PW-mit-ni)** — Mit *upapra* hinsenden zu Jmd (Acc. oder Dat.).
 
-- **RU:** — Mit *upapra* посылать к кому-л. (Acc. oder Dat.).
+- **RU:** — С *upapra* посылать к кому-л. (Acc. или Dat.).
   <sub>attested</sub>
 
 **PW-mit-vi)** — Mit *pratipra* zurücksenden, — jagen.
 
-- **RU:** — Mit *pratipra* отсылать обратно, — прогонять.
+- **RU:** — С *pratipra* отсылать обратно, — прогонять.
   <sub>attested</sub>
 
 **PW-mit-sam)** — Mit *saṃpra*
 
-- **RU:** — Mit *saṃpra*
+- **RU:** — С *saṃpra*
   <sub>attested</sub>
 
 **PW-sam-1)** — 1〉 schleudern. *˚hita* geschleudert.
@@ -865,7 +865,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW-mit-su)** — Mit *sam*
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
   <sub>attested</sub>
 
 **PW-su-1)** — 1〉 absenden.
@@ -895,7 +895,7 @@ u. s. w. [ṚV. 10,165,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv
 
 **PW2-3)** — 3〉 allerdings, jawohl, in der That. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) wohl — aber.
 
-- **RU:** — 3〉 конечно, да, в самом деле. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) правда — но.
+- **RU:** — 3〉 конечно, да, в самом деле. *hi — tu* или *hi — punar* ([BĀLAR. 296,4]) правда — но.
   <sub>attested</sub>
 
 **PW2-4)** — 4〉 häufig blosser Versfüller, insbes. zwischen zwei Vocalen zur Entfernung des Hiatus oder zur Gewinnung einer Länge. Erscheint in einem und demselben Satze sogar doppelt.
@@ -1012,7 +1012,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [MEGH. 5.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?5) [10.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?10) [20.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?20)
 [RAGH. 1,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,10) [18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,18) [69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,69) [72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,72)
 [ŚĀK. 5,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,14) [8,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,3)
-[Spr. (II) 1249.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1249) [1440.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1440) [3804.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3804) *satyaṃ satyaṃ hi nārada*
+[Spr. (II) 1249.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1249 "Spr. (II) 1249: udyamena hi sidhyanti kāryāṇi na manorathaiḥ | nahi suptasya siṃhasya praviśanti mukhe mṛgāḥ || — (470.) Durch Anstrengung kommen ja Werke zu Stande, nicht durch Wünsche: es laufen ja die Gazellen nicht in den Rachen eines schlafenden Löwen.") [1440.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1440) [3804.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3804) *satyaṃ satyaṃ hi nārada*
 [7135.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7135) [KATHĀS. 4,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,15) [28.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,28) [18,126.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,126) [HIT. 19,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?19,19) nach verschiedenen Demonstrativis: *sa hi*
 [M. 1,98.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,98) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) [186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,186) [10,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,81) [122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,122)
 [R. 1,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,66)
@@ -1033,9 +1033,9 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [PAÑCAT. 221,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,6)
 [HIT. 7,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?7,5) [12,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,11)
 [SARVADARŚANAS. 9,21. 163,11. 174,18.] *iti hi*
-[Spr. (II) 3053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3053) nach Relativis: *yo hi*
+[Spr. (II) 3053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3053 "Spr. (II) 3053: dhanavāniti hi madaste kiṃ gatavibhavo viṣādamupayāsi | karanihitakandukasamāḥ pātotpātā manuṣyāṇām || — (1292.) Du blähst dich ja auf, wenn du Geld hast") nach Relativis: *yo hi*
 [M. 3,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,212) [4,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,81) [5,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,75)
-[Spr. (II) 5656.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5656) -- [5678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5678) *yaddhi yat*
+[Spr. (II) 5656.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5656 "Spr. (II) 5656: yo hi kaściddvijaṃ hanyādgāṃ ca lokasya mātaram | śaraṇāgataṃ ca yo hanyāttulyaṃ teṣāṃ ca pātakam ||") -- [5678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5678) *yaddhi yat*
 [370.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?370) *yadyaddhi*
 [M. 2,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,4) *yaṃ yaṃ hi*
 [MBH. 3,2202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2202) *yathā hi*
@@ -1052,21 +1052,21 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [R. 1,73,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,15) *kathaṃ hi*
 [MBH. 3,2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) [2203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2203) *kiṃ kupito hyasi*
 [R. 2,64,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,29)
-[Spr. (II) 371.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?371) [5610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5610) nach *api*
+[Spr. (II) 371.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?371 "Spr. (II) 371: anyapratāpamāsādya yo dṛḍhatvaṃ na gacchati | jātuṣābharaṇasyeva rūpeṇāpi hi tasya kim || — (131.) Wer bei der Berührung mit einem andern Machtglanz nicht fest wird, dem nützt ja auch das Aussehen eben so wenig wie dem Schmuck aus Lack.") [5610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5610) nach *api*
 [M. 2,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,113) [3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) [9,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,100) [139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,139) [336.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,336) [10,129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,129)
 [MBH. 1,3346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3346)
 [R. 1,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,16) [24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,24)
-[Spr. (II) 3594.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3594) [3990.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3990) [7395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7395)
+[Spr. (II) 3594.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3594 "Spr. (II) 3594: nāpṛṣṭaḥ kasyavidbrūyānna cānyāyena pṛcchataḥ | jānannapi hi medhāvī jaḍavalloka ācaret ||") [3990.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3990) [7395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7395)
 [VARĀH. BṚH. S. 69,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,18) nach *eva*
 [M. 2,230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,230) [7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) [8,413.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,413) [11,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,84)
 [BHAG. 1,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,11)
 [R. 1,52,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,18) [53,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,23)
-[Spr. (II) 3703.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3703) [5276.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5276)
+[Spr. (II) 3703.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3703 "Spr. (II) 3703: nijasaukhyaṃ nirundhāno yo dhanārjanamicchati | parārthaṃ bhāravāhīva kleśasyaiva hi bhājanam || — (1576.) Wer auf Kosten seines eigenen Wohlbehagens Reichthümer zu erwerben trachtet, ist ja wie jener, der für Andere Lasten trägt, nur ein Gefäss für Leiden.") [5276.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5276)
 [SARVADARŚANAS. 7,16.] nach *caiva*
 [M. 2,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,105) [3,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,116) [207.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,207) [212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,212) [232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,232) [4,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,25) [5,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,9) [7,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,120) [11,184.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,184)
 [MBH. 3,2179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2179)
 [SARVADARŚANAS. 75,8. 14] (im Verse). nach *iva*
-[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706) [6896.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6896) nach einem verbum finitum am Ende eines Verses
+[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706 "Spr. (II) 706: avyavasāyinamalasaṃ daivaparaṃ sāhasācca parihīṇam | pramadeva hi vṛddhapatiṃ necchatyupagūhituṃ lakṣmīḥ || — (260.) Wie ja ein junges Weib einen alten Gatten nicht umarmen mag, so die Glücksgöttin nicht den, der Nichts unternimmt, träge, verhängnissgläubig und jeder kühnen That abgeneigt ist.") [6896.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6896) nach einem verbum finitum am Ende eines Verses
 [M. 6,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,89)
 [MBH. 2,808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.808) [3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273)
 [SARVADARŚANAS. 99,5. 14.] in zwei auf einander folgenden Sätzen: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
@@ -1103,7 +1103,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [MEGH. 5.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?5) [10.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?10) [20.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?20)
 [RAGH. 1,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,10) [18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,18) [69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,69) [72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,72)
 [ŚĀK. 5,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,14) [8,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,3)
-[Spr. (II) 1249.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1249) [1440.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1440) [3804.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3804) *satyaṃ satyaṃ hi nārada*
+[Spr. (II) 1249.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1249 "Spr. (II) 1249: udyamena hi sidhyanti kāryāṇi na manorathaiḥ | nahi suptasya siṃhasya praviśanti mukhe mṛgāḥ || — (470.) Durch Anstrengung kommen ja Werke zu Stande, nicht durch Wünsche: es laufen ja die Gazellen nicht in den Rachen eines schlafenden Löwen.") [1440.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1440) [3804.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3804) *satyaṃ satyaṃ hi nārada*
 [7135.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7135) [KATHĀS. 4,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,15) [28.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,28) [18,126.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,126) [HIT. 19,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?19,19) после различных указательных местоимений: *sa hi*
 [M. 1,98.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,98) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) [186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,186) [10,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,81) [122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,122)
 [R. 1,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,66)
@@ -1124,9 +1124,9 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [PAÑCAT. 221,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?221,6)
 [HIT. 7,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?7,5) [12,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,11)
 [SARVADARŚANAS. 9,21. 163,11. 174,18.] *iti hi*
-[Spr. (II) 3053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3053) после относительных местоимений: *yo hi*
+[Spr. (II) 3053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3053 "Spr. (II) 3053: dhanavāniti hi madaste kiṃ gatavibhavo viṣādamupayāsi | karanihitakandukasamāḥ pātotpātā manuṣyāṇām || — (1292.) Du blähst dich ja auf, wenn du Geld hast") после относительных местоимений: *yo hi*
 [M. 3,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,212) [4,81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,81) [5,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,75)
-[Spr. (II) 5656.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5656) -- [5678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5678) *yaddhi yat*
+[Spr. (II) 5656.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5656 "Spr. (II) 5656: yo hi kaściddvijaṃ hanyādgāṃ ca lokasya mātaram | śaraṇāgataṃ ca yo hanyāttulyaṃ teṣāṃ ca pātakam ||") -- [5678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5678) *yaddhi yat*
 [370.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?370) *yadyaddhi*
 [M. 2,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,4) *yaṃ yaṃ hi*
 [MBH. 3,2202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2202) *yathā hi*
@@ -1143,21 +1143,21 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [R. 1,73,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,15) *kathaṃ hi*
 [MBH. 3,2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) [2203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2203) *kiṃ kupito hyasi*
 [R. 2,64,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,29)
-[Spr. (II) 371.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?371) [5610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5610) после *api*
+[Spr. (II) 371.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?371 "Spr. (II) 371: anyapratāpamāsādya yo dṛḍhatvaṃ na gacchati | jātuṣābharaṇasyeva rūpeṇāpi hi tasya kim || — (131.) Wer bei der Berührung mit einem andern Machtglanz nicht fest wird, dem nützt ja auch das Aussehen eben so wenig wie dem Schmuck aus Lack.") [5610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5610) после *api*
 [M. 2,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,113) [3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) [9,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,100) [139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,139) [336.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,336) [10,129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,129)
 [MBH. 1,3346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3346)
 [R. 1,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,16) [24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,24)
-[Spr. (II) 3594.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3594) [3990.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3990) [7395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7395)
+[Spr. (II) 3594.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3594 "Spr. (II) 3594: nāpṛṣṭaḥ kasyavidbrūyānna cānyāyena pṛcchataḥ | jānannapi hi medhāvī jaḍavalloka ācaret ||") [3990.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3990) [7395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7395)
 [VARĀH. BṚH. S. 69,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,18) после *eva*
 [M. 2,230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,230) [7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) [8,413.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,413) [11,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,84)
 [BHAG. 1,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,11)
 [R. 1,52,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,18) [53,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,23)
-[Spr. (II) 3703.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3703) [5276.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5276)
+[Spr. (II) 3703.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3703 "Spr. (II) 3703: nijasaukhyaṃ nirundhāno yo dhanārjanamicchati | parārthaṃ bhāravāhīva kleśasyaiva hi bhājanam || — (1576.) Wer auf Kosten seines eigenen Wohlbehagens Reichthümer zu erwerben trachtet, ist ja wie jener, der für Andere Lasten trägt, nur ein Gefäss für Leiden.") [5276.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5276)
 [SARVADARŚANAS. 7,16.] после *caiva*
 [M. 2,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,105) [3,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,116) [207.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,207) [212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,212) [232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,232) [4,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,25) [5,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,9) [7,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,120) [11,184.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,184)
 [MBH. 3,2179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2179)
 [SARVADARŚANAS. 75,8. 14] (в стихе). после *iva*
-[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706) [6896.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6896) после verbum finitum в конце стиха
+[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706 "Spr. (II) 706: avyavasāyinamalasaṃ daivaparaṃ sāhasācca parihīṇam | pramadeva hi vṛddhapatiṃ necchatyupagūhituṃ lakṣmīḥ || — (260.) Wie ja ein junges Weib einen alten Gatten nicht umarmen mag, so die Glücksgöttin nicht den, der Nichts unternimmt, träge, verhängnissgläubig und jeder kühnen That abgeneigt ist.") [6896.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6896) после verbum finitum в конце стиха
 [M. 6,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,89)
 [MBH. 2,808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.808) [3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273)
 [SARVADARŚANAS. 99,5. 14.] в двух следующих друг за другом предложениях: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
@@ -1176,7 +1176,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [3,41,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.041.html#rv03.041.06) *taddhi darśaya*
 [R. 1,56,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,56,3) *mayyeva praharerhi*
 [MBH. 1,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5985) [3,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2891)
-[Spr. (II) 2513.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2513) *paśyāmo hi* wir wollen doch sehen
+[Spr. (II) 2513.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2513 "Spr. (II) 2513: taskarebhyo niyuktebhyaḥ śatrubhyo nṛpavallabhāt | nṛpatirnijalobhācca prajā rakṣetpiteva hi || — (109.) Ein Fürst schütze hier auf Erden wie ein Vater seine Unterthanen vor Dieben, vor Beamten, vor Feinden, vor seinem Liebling und vor seiner eigenen Habsucht.") *paśyāmo hi* wir wollen doch sehen
 [KATHĀS. 18,266.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,266)
 
 - **RU:** — 2) побудительное при императиве или потенциалисе — же, ну, давай: *yukṣvā hi keśinā harī*
@@ -1185,7 +1185,7 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [3,41,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.041.html#rv03.041.06) *taddhi darśaya*
 [R. 1,56,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,56,3) *mayyeva praharerhi*
 [MBH. 1,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5985) [3,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2891)
-[Spr. (II) 2513.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2513) *paśyāmo hi* давайте же посмотрим
+[Spr. (II) 2513.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2513 "Spr. (II) 2513: taskarebhyo niyuktebhyaḥ śatrubhyo nṛpavallabhāt | nṛpatirnijalobhācca prajā rakṣetpiteva hi || — (109.) Ein Fürst schütze hier auf Erden wie ein Vater seine Unterthanen vor Dieben, vor Beamten, vor Feinden, vor seinem Liebling und vor seiner eigenen Habsucht.") *paśyāmo hi* давайте же посмотрим
 [KATHĀS. 18,266.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,266)
   <sub>attested</sub>
 
@@ -1194,14 +1194,14 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [TS. 7,1,6,11.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,6,11)
 [ŚAT. BR. 3,8,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,4) [14,5,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,14)
 [P. 8,2,93.](https://ashtadhyayi.com/sutraani/8/2/93) *devīṃ vācamupāsate hi bahavaḥ sāraṃ tu* u. s. w. wohl — aber
-[Spr. (II) 2954.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2954)
+[Spr. (II) 2954.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2954 "Spr. (II) 2954: devīṃ vācmupāsate hi bahavaḥ sāraṃ tu sārasvataṃ jānīte nitarāmasau gurukulakliṣṭo murāriḥ kaviḥ | abdhirlaṅghita eva vānarabhaṭaiḥ kiṃ tvasya gambhīr… — (1239.) Viele huldigen wohl der Göttin der Rede, aber den Kern der Beredsamkeit kennt vor Allen jener Dichter Murāri, der im Hause des Lehrers sich abgequält hat: über das Meer hinübergesprungen sind wohl Affen. als Krie…")
 
 - **RU:** — 3) конечно, пожалуй, действительно: *yuvaṃ hi parṣatho ati dviṣaḥ*
 [ṚV. 8,26,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.05) *tāvabravīdastu me 'trāpītyastu hī3tyabrūtām*
 [TS. 7,1,6,11.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,6,11)
 [ŚAT. BR. 3,8,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,4) [14,5,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,14)
 [P. 8,2,93.](https://ashtadhyayi.com/sutraani/8/2/93) *devīṃ vācamupāsate hi bahavaḥ sāraṃ tu* и т.д. пожалуй — но
-[Spr. (II) 2954.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2954)
+[Spr. (II) 2954.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2954 "Spr. (II) 2954: devīṃ vācmupāsate hi bahavaḥ sāraṃ tu sārasvataṃ jānīte nitarāmasau gurukulakliṣṭo murāriḥ kaviḥ | abdhirlaṅghita eva vānarabhaṭaiḥ kiṃ tvasya gambhīr… — (1239.) Viele huldigen wohl der Göttin der Rede, aber den Kern der Beredsamkeit kennt vor Allen jener Dichter Murāri, der im Hause des Lehrers sich abgequält hat: über das Meer hinübergesprungen sind wohl Affen. als Krie…")
   <sub>attested</sub>
 
 **4) häufig blosser Versfüller)** — 4) häufig blosser Versfüller,
@@ -1215,7 +1215,7 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 [H. 57.](https://sanskrit-lexicon-scans.github.io/abch2/app1?57) erscheint im selben Satze sogar doppelt: *ātmā hyeko hi*
 [MBH. 1,6124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6124) *yogakṣemo hi rājño hi*
 [12,2808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2808) *anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit*
-[Spr. (II) 388.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?388) *bhāryā hi paramo hyarthaḥ*
+[Spr. (II) 388.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?388 "Spr. (II) 388: anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit | yattena kiñciddhi kṛtaṃ hi karma tadaśnute nāsti kṛtasya nāśaḥ || — (3511.) Kein Anderer geniesst die Frucht einer That, die in der Welt der Menschen von einem Menschen vollbracht wurde: die Frucht jeglicher That, die dieser vollbrachte, geniesst er und keine vollbrachte That geht ohne L…") *bhāryā hi paramo hyarthaḥ*
 [4577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4577) *guhyādguhyatarastvaṃ hi hyevamāha pitāmahaḥ*
 [R. 7,37,5,47.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,37,5,47) *svalpaṃ hi nahi naḥ sukham*
 [73,14.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,73,14)
@@ -1231,7 +1231,7 @@ z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [R
 [H. 57.](https://sanskrit-lexicon-scans.github.io/abch2/app1?57) встречается в одном и том же предложении даже дважды: *ātmā hyeko hi*
 [MBH. 1,6124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6124) *yogakṣemo hi rājño hi*
 [12,2808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2808) *anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit*
-[Spr. (II) 388.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?388) *bhāryā hi paramo hyarthaḥ*
+[Spr. (II) 388.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?388 "Spr. (II) 388: anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit | yattena kiñciddhi kṛtaṃ hi karma tadaśnute nāsti kṛtasya nāśaḥ || — (3511.) Kein Anderer geniesst die Frucht einer That, die in der Welt der Menschen von einem Menschen vollbracht wurde: die Frucht jeglicher That, die dieser vollbrachte, geniesst er und keine vollbrachte That geht ohne L…") *bhāryā hi paramo hyarthaḥ*
 [4577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4577) *guhyādguhyatarastvaṃ hi hyevamāha pitāmahaḥ*
 [R. 7,37,5,47.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,37,5,47) *svalpaṃ hi nahi naḥ sukham*
 [73,14.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,73,14)

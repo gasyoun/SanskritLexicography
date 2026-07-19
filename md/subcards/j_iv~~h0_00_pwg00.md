@@ -66,7 +66,7 @@
 [M. 2,235.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,235) *ucchvasanna sa jīvati*
 [3,72.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,72) *mṛtaḥ sa na tu jīvati*
 [7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143) *sa jīvaṃśca mṛtaścaiva na kvacitsukhamedhate*
-[5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* ещё при жизни
+[5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* еще при жизни
 [2,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,168) *jānīhi bhrātaram — yadi jīvati*
 [MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
 [344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) *te jīvanti sukhaṃ loke*
@@ -78,7 +78,7 @@
 [PAÑCAT. I,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,24) *kāladaṣṭā na jīvati kanyeyam* не останется в живых
 [VET. 16,13.] *saṃśayaṃ punarāruhya yadi jīvati paśyati* (*bhadrāṇi*) если он останется жив
 [HIT. I,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,6) *ciraṃ jīva*
-[ŚĀK. 109,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?109,18) *jīva* возглас, обращённый к чихнувшему
+[ŚĀK. 109,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?109,18) *jīva* возглас, обращенный к чихнувшему
 [CAURAP. 11.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?11) *taravaḥ kiṃ na jīvanti*
 [BHĀG. P. 2,3,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,18) *jīvedvaiśyasya jīvikām*
 [M. 10,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,82) [4,11.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,11)
@@ -189,7 +189,7 @@
 [HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
 [MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) *jahi śālvam — mainaṃ jīvaya*
 [3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
-[R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в значении преим. он убил его
+[R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в знач. преим. он убил его
 [BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) позволять кому-л. жить, а также преим. кормить, воспитывать: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
 [MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
 [13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) *eṣo 'smān jīvayet*

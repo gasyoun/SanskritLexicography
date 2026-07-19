@@ -19,9 +19,9 @@
 
 **second-prefix-section)** — *vi*
  7) *śrutayo vibhinnāḥ* sich widersprechend
-[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505)
+[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505 "Spr. (II) 2505: tarko 'pratiṣṭhaḥ śrutayo vibhinnā naiko muniryasya mataṃ pramāṇam | dharmasya tattvaṃ nihitaṃ guhāyāṃ mahājano yena gataḥ sa panthāḥ || — Der Speculation fehlt das Fundament, die heiligen Schriften widersprechen sich, keines einzigen Weisen Meinung gilt als Autorität, das wahre Wesen des Rechtes liegt im Herzen verborgen, der von der Menge betretene Weg is…")
 
 - **RU:** — *vi*
 7) *śrutayo vibhinnāḥ* противоречивый
-[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505)
+[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505 "Spr. (II) 2505: tarko 'pratiṣṭhaḥ śrutayo vibhinnā naiko muniryasya mataṃ pramāṇam | dharmasya tattvaṃ nihitaṃ guhāyāṃ mahājano yena gataḥ sa panthāḥ || — Der Speculation fehlt das Fundament, die heiligen Schriften widersprechen sich, keines einzigen Weisen Meinung gilt als Autorität, das wahre Wesen des Rechtes liegt im Herzen verborgen, der von der Menge betretene Weg is…")
   <sub>attested</sub>

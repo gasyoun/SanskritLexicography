@@ -84,7 +84,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [6,67,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.05) [1,51,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.11) [122,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.13) *asminno adya savane mandadhyai* .
 [4,16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.02) [VĀLAKH. 4,2. 8,7,14.]
 
-- **RU:** 1) act., редко мед. (от *mand* же только мед.) радоваться, быть весёлым, наслаждаться, предаваться чему-либо с упоением, чувствовать себя хорошо при чём-либо, угощаться чем-либо или в чём-либо (instr., gen., loc., редко acc.); упиваться чем-либо: *rayiṃ yena vayaṃ madema*
+- **RU:** 1) act., редко мед. (от *mand* же только мед.) радоваться, быть веселым, наслаждаться, предаваться чему-либо с упоением, чувствовать себя хорошо при чем-либо, угощаться чем-либо или в чем-либо (instr., gen., loc., редко acc.); упиваться чем-либо: *rayiṃ yena vayaṃ madema*
 [ṚV. 7,1,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.24) [4,42,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.042.html#rv04.042.10) *rāyā madema tanvā3 tanā ca*
 [6,49,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.13) *iṣā*
 [7,64,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.064.html#rv07.064.03) *anamīvāsa iLayā madantaḥ*
@@ -162,7 +162,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [Ind. St. 9,215.] *āpo devya ṛṣīṇāṃ viśvadhātryo divya madantyo yāḥ śaṃkarā dharmadhātryaḥ* (so die neuere Ausg.)
 [HARIV. 7794.](https://sanskrit-lexicon-scans.github.io/hariv?7794)
 
-- **RU:** — 3) волнение воды обозначается как веселье: *apāmūrmirmadanniva stoma indrājirāyate* весёлый, как водная волна
+- **RU:** — 3) волнение воды обозначается как веселье: *apāmūrmirmadanniva stoma indrājirāyate* веселый, как водная волна
 [ṚV. 8,14,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.014.html#rv08.014.10) *madantībhirmārjayante nirhyagniḥ śītena vāyati* кипящая вода
 [TS. 6,2,2,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,2,7) *madantyāpaḥ*
 [ŚAT. BR. 3,4,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,22) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,10) [11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,11)
@@ -237,9 +237,9 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [R. 1,6,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,6,24) [3,52,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,46)
 [Spr. 1233.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1233) [1638.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1638) [2091](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2091) — [2093.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2093) [RAGH. 12,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,93)
 
-- **RU:** — 6) partic. *matta* возбуждённый радостью, разгульный от радости
+- **RU:** — 6) partic. *matta* возбужденный радостью, разгульный от радости
 [AK. 3,2,52.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,52)
-[MBH. 8,2043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2043) опьянённый, пьяный (букв. и перен.)
+[MBH. 8,2043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2043) опьяненный, пьяный (букв. и перен.)
 [AK. 3,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,23) [3,4,18,114.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,18,114)
 [H. 436.](https://sanskrit-lexicon-scans.github.io/abch2/app1?436) [510.](https://sanskrit-lexicon-scans.github.io/abch2/app1?510)
 [HALĀY. 2,231. 334.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,231)
@@ -255,7 +255,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ŚĀK. 66,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,4) *artha˚*
 [DAŚAK.] в [BENF. Chr. 193,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193) *prabhā˚ (candra)*
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *vidyudbhrāntisamastakāntikalanāmattāstadā toyadāḥ*
-[VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) опьянённый, радостно возбуждённый (о животных всех видов в период течки), находящийся в течке: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
+[VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) опьяненный, радостно возбужденный (о животных всех видов в период течки), находящийся в течке: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
 [Spr. 4379.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4379) *krauñca*
 [R. 1,2,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,15) *barhiṇa*
 [MBH. 1,7588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7588) *kokila*

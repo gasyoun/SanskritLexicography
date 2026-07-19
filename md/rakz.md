@@ -157,7 +157,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *somam*
 [KĀTY. ŚR. 8,9,25.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?8,9,25) *māteva putrānrakṣasva*
 [PRAŚNOP. 2,13.] *tena tena (śarīreṇa) sa rakṣyate*
-[ŚVETĀŚV. UP. 5,10.] *tvayā rājangupitā rakṣamāṇāḥ* либо пассивная форма, либо ошибка вместо *rakṣyamāṇāḥ*
+[ŚVETĀŚV. UP. 5,10.] *tvayā rājangupitā rakṣamāṇāḥ* либо пассивная форма, либо ошибка вм. *rakṣyamāṇāḥ*
 [AV. 18,4,70.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.70) — *(rājñā) rakṣatā prajāḥ*
 [M. 7,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,36) [8,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,307) [10,118. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,118) [11,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,23)
 [Spr. 1830.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1830) [3204.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3204) [4926.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4926)
@@ -222,7 +222,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [MBH. 1,5573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5573)
 [RĀJA-TAR. 2,97.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,97) *śeṣaṃ kasyāpi rakṣasi*
 [Spr. 2384.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2384) *sunihitamapi cārthaṃ daivatai rakṣyamāṇam*
-[5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010) [5254.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5254) *rahasyaṃ cirarakṣitam* сохранён
+[5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010) [5254.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5254) *rahasyaṃ cirarakṣitam* сохранен
 [KATHĀS. 45,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,50) *bhavānimāṃ pratikṛtiṃ rakṣatu* сохрани
 [ŚĀK. 90,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?90,2) *api rakṣyate bhavatā rahasyanikṣepaḥ*
 [VIKR. 18,6.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?18,6) *etāvuraṇakau — nyāsau rakṣasva*
@@ -249,7 +249,7 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [ṚV. 10,68,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.068.html#rv10.068.01) возможно, прятать: *rakṣate śiraḥ*
 [9,68,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.068.html#rv09.068.04) — partic. *rakṣita* (*vartamāne*)
 Кар. к [P. 3,2,188.](https://ashtadhyayi.com/sutraani/3/2/188) = *trāta*
-и т.д. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,55) [H. 1497.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1497) защищённый, охраняемый, уберёгшийся, сохранённый; о лицах
+и т.д. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,55) [H. 1497.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1497) защищенный, охраняемый, уберегшийся, сохраненный; о лицах
 [M. 11,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,23)
 [MBH. 3,529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.529)
 [Spr. 2609.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2609) *rakṣitaṃ vyasanebhyaśca mitram*
@@ -263,8 +263,8 @@ u. s. w. [AK. 3,2,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [233. fgg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?233) *tān* (*prāṇān*) *nighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam*
 [1319.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1319) *tilagulmaṃ sadā siñcedyāvatpuṣpeddhi rakṣitaḥ* пасомый, лелеемый
 [HARIV. 7874.](https://sanskrit-lexicon-scans.github.io/hariv?7874) бережно хранимый
-[VET. in LA. (III) 14,3.] [HIT. 86,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?86,18) *gorakṣita* припасённый для
-[P. 2,1,36.](https://ashtadhyayi.com/sutraani/2/1/36) *rakṣitam* _adv._ хорошо сохранённый
+[VET. in LA. (III) 14,3.] [HIT. 86,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?86,18) *gorakṣita* припасенный для
+[P. 2,1,36.](https://ashtadhyayi.com/sutraani/2/1/36) *rakṣitam* _adv._ хорошо сохраненный
 [KATHĀS. 53,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,64) *dharma* соблюдаемый, поддерживаемый
 [Spr. 4247.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4247)
 [MĀRK. P. 72,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,2) [4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,4) *arakṣita* беспризорный
@@ -529,10 +529,10 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 [M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
 [SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
 [KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
-[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) *śakyastenānumānena paro 'pi parirakṣitum* быть сохранённым —, спасённым
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) *śakyastenānumānena paro 'pi parirakṣitum* быть сохраненным —, спасенным
 [Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
 [PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
-[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* спасённый
+[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* спасенный
 [56,144.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,144) [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* и потому преим. подвластный, управляемый
 [R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
 [PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* щадит
@@ -746,7 +746,7 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 
 **NWS-11)** *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): well guarded or preserved or kept. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
 
-- **RU:** *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохранённый, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
+- **RU:** *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохраненный, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
   <sub>attested</sub>
 
 **NWS-12)** *+ vratám : schütṣen, ṭachen über, überṭachen, e. ṭachsames āuge haben auṛ, beobachten, einhalten. ṚV 1,62,10 .* [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi dropped by haplology
@@ -763,7 +763,7 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 — 1〉 bewachen, Wache halten, bewahren, beschützen, hüten (auch das Vieh), behüten, in Acht nehmen, schonen, erhalten, erretten, servare, — vor (Abl.), verwahren; sorgfältig achten auf (Acc., ganz ausnahmsweise Loc.), beobachten (ein Gesetz u. s. w.). Das Land —, das Reich beschützen, so v. a. regieren. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). mit passiver Bed. oder fehlerhaft für *rakṣyamāṇa* *rakṣita* bewacht u. s. w. *rakṣitam* _Adv._ wohl verwahrt.
 
 - **RU:** **1.** √*rakṣ* *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
-— 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон и т.д.). Страну —, царство защищать, т.е. преим. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным знач. или ошибочно вместо *rakṣyamāṇa* *rakṣita* охраняемый и т.д. *rakṣitam* _Adv._ надёжно сохранённый.
+— 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон и т.д.). Страну —, царство защищать, т.е. преим. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным знач. или ошибочно вм. *rakṣyamāṇa* *rakṣita* охраняемый и т.д. *rakṣitam* _Adv._ надежно сохраненный.
   <sub>attested</sub>
 
 **PW 2〉)** — 2〉 in Acht nehmen, so v. a. nicht antasten.
@@ -803,48 +803,48 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 
 **PW mit abhi)** — Mit *adhi* bewachen, behüten. v. l. *hi rakṣati* st. *'dhirakṣati*.
 
-- **RU:** — Mit *adhi* охранять, оберегать. v. l. *hi rakṣati* вместо *'dhirakṣati*.
+- **RU:** — С *adhi* охранять, оберегать. v. l. *hi rakṣati* вместо *'dhirakṣati*.
   <sub>attested</sub>
 
 **PW mit anu2)** — Mit *anu* hütend nachgehen; behüten, beschützen.
 
-- **RU:** — Mit *anu* следовать охраняя; оберегать, защищать.
+- **RU:** — С *anu* следовать охраняя; оберегать, защищать.
   <sub>attested</sub>
 
 **PW mit sam)** — Mit *abhi* bewachen, behüten, beschützen, — vor (Abl.), hegen, pflegen, bewahre, beobachten (Gesetze u. s. w.) Ein Heer hüten, so v. a. befehligen.
 
-- **RU:** — Mit *abhi* стеречь, оберегать, защищать, — от (Abl.), лелеять, холить, сохранять, соблюдать (законы и т.д.) Войско охранять, т.е. преим. возглавлять.
+- **RU:** — С *abhi* стеречь, оберегать, защищать, — от (Abl.), лелеять, холить, сохранять, соблюдать (законы и т.д.) Войско охранять, т.е. преим. возглавлять.
   <sub>attested</sub>
 
 **PW mit vi)** — Mit *samabhi* bewahre, behüten, beschützen.
 
-- **RU:** — Mit *samabhi* сохранять, оберегать, защищать.
+- **RU:** — С *samabhi* сохранять, оберегать, защищать.
   <sub>attested</sub>
 
 **PW mit prati corr)** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
 
-- **RU:** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* вместо *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
+- **RU:** — С *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* вместо *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
   <sub>attested</sub>
 
 **PW mit sampari)** — Mit *ā* behüten, beschützen, bewahren, bewachen, — vor (Abl.)
 
-- **RU:** — Mit *ā* оберегать, защищать, сохранять, стеречь, — от (Abl.)
+- **RU:** — С *ā* оберегать, защищать, сохранять, стеречь, — от (Abl.)
   <sub>attested</sub>
 
 **PW mit samanu)** — Mit *upa* in *uparakṣaṇa*.
 
-- **RU:** — Mit *upa* in *uparakṣaṇa*.
+- **RU:** — С *upa* in *uparakṣaṇa*.
   <sub>attested</sub>
 
 **PW mit pra)** — Mit *prani*.
 
-- **RU:** — Mit *prani*.
+- **RU:** — С *prani*.
   <sub>attested</sub>
 
 **PW sam2 1〉)** — Mit *pari*
 — 1〉 bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare, — vor (Abl.) schonen, vor Berührung bewahren, aufbewahren, beobachten (ein Gesetz u. s. w.), bedacht sein auf. Eine Stadt u. s. w. hüten, so v. a. beherrschen.
 
-- **RU:** — Mit *pari*
+- **RU:** — С *pari*
 — 1〉 стеречь, сохранять, защищать, охранять, оберегать, блюсти, содержать, спасать, servare, — от (Abl.) щадить, уберегать от прикосновения, хранить, соблюдать (закон и т.д.), заботиться о. Город и т.д. охранять, т.е. преим. управлять.
   <sub>attested</sub>
 
@@ -855,31 +855,31 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 
 **PW mit pari)** — Mit *saṃpari* beschützen.
 
-- **RU:** — Mit *saṃpari* защищать.
+- **RU:** — С *saṃpari* защищать.
   <sub>attested</sub>
 
 **PW mit pra2)** — Mit *pra* bewahren, schützen vor (Abl.), erretten von (Abl.).
 
-- **RU:** — Mit *pra* сохранять, защищать от (Abl.), спасать от (Abl.).
+- **RU:** — С *pra* сохранять, защищать от (Abl.), спасать от (Abl.).
   <sub>attested</sub>
 
 **PW mit prati)** — Mit *prati*
 — 1〉 behüten, beschützen, treu halten (ein Versprechen).
 — 2〉 sich abwehrend verhalten gegen, fürchten.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 оберегать, защищать, соблюдать верно (обещание).
 — 2〉 защищаться от, бояться.
   <sub>attested</sub>
 
 **PW mit vi2)** — Mit *vi* behüten, beschützen, bewahren.
 
-- **RU:** — Mit *vi* оберегать, защищать, сохранять.
+- **RU:** — С *vi* оберегать, защищать, сохранять.
   <sub>attested</sub>
 
 **PW mit sam3)** — Mit *sam* bewachen, bewahren, beschützen, hüten, behüten, erhalten, verschonen, erretten, servare, — vor (Abl.). sichern, verwahren, aufbewahren.
 
-- **RU:** — Mit *sam* стеречь, сохранять, защищать, охранять, оберегать, содержать, щадить, спасать, servare, — от (Abl.). обеспечивать, хранить, беречь.
+- **RU:** — С *sam* стеречь, сохранять, защищать, охранять, оберегать, содержать, щадить, спасать, servare, — от (Abl.). обеспечивать, хранить, беречь.
   <sub>attested</sub>
 
 **PW hom2)** **2.** √*˚rakṣ* bewahrend, hütend in *gorakṣ*.
@@ -956,10 +956,10 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
   <sub>attested</sub>
 
 **schützen vor)** — caus. schützen vor (abl.)
-[Spr. (II) 5221.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5221)
+[Spr. (II) 5221.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5221 "Spr. (II) 5221: yadi nāmāsya kāyasya yadantastadbahirbhavet | daṇḍmādāya loko 'yaṃ śunaḥ kākācca rakṣayet ||")
 
 - **RU:** — caus. защищать от (abl.)
-[Spr. (II) 5221.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5221)
+[Spr. (II) 5221.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5221 "Spr. (II) 5221: yadi nāmāsya kāyasya yadantastadbahirbhavet | daṇḍmādāya loko 'yaṃ śunaḥ kākācca rakṣayet ||")
   <sub>attested</sub>
 
 **bewahren behüten beschützen)** — *samabhi* Jmd bewahren, behüten, beschützen
@@ -970,8 +970,8 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
   <sub>attested</sub>
 
 **cross-ref)** — *ā*, *ātmānamārakṣati sindhuvegāt*
-[Spr. (II) 6634.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6634)
+[Spr. (II) 6634.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6634 "Spr. (II) 6634: saṃsargato doṣaguṇā bhavantītyetanmṛṣā yena jalāśrayo 'pi | sthitvānukūlaṃ niculaścalantamātmānamārakṣati sindhuvegāt || — Der Ausspruch, dass Mängel und Fehler aus der Berührung hervorgehen, ist nicht wahr, da der Nicula, obgleich er sich dem Wasser angeschlossen hat, indem er am Ufer steht, bei seiner Beweglichkeit sich vor der heftigen St…")
 
 - **RU:** — *ā*, *ātmānamārakṣati sindhuvegāt*
-[Spr. (II) 6634.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6634)
+[Spr. (II) 6634.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6634 "Spr. (II) 6634: saṃsargato doṣaguṇā bhavantītyetanmṛṣā yena jalāśrayo 'pi | sthitvānukūlaṃ niculaścalantamātmānamārakṣati sindhuvegāt || — Der Ausspruch, dass Mängel und Fehler aus der Berührung hervorgehen, ist nicht wahr, da der Nicula, obgleich er sich dem Wasser angeschlossen hat, indem er am Ufer steht, bei seiner Beweglichkeit sich vor der heftigen St…")
   <sub>attested</sub>

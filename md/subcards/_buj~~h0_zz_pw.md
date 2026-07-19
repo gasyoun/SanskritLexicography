@@ -28,7 +28,7 @@
 
 **PW1-upa)** — Mit *ā* einbiegen. *paryaṅkamābhujya* die Beine beim Sitzen unterschlagend [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* gebogen, gekrümmt, zur Seite gedrängt.
 
-- **RU:** — С *ā* «сгибать, подгибать». *paryaṅkamābhujya* «со скрещёнными (подогнутыми) ногами в позе сидения» [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* «согнутый, изогнутый, отодвинутый в сторону».
+- **RU:** — С *ā* «сгибать, подгибать». *paryaṅkamābhujya* «со скрещенными (подогнутыми) ногами в позе сидения» [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* «согнутый, изогнутый, отодвинутый в сторону».
   <sub>attested</sub>
 
 **PW1-vi)** — Mit *vyā*, *˚bhugna* gebogen. _n._
@@ -73,7 +73,7 @@
 
 **PW1-api)** — Mit *sam* umwinden [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* zusammengebogen.
 
-- **RU:** — С *sam* «обвивать, обматывать» [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* «согнутый, свёрнутый вместе».
+- **RU:** — С *sam* «обвивать, обматывать» [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* «согнутый, свернутый вместе».
   <sub>attested</sub>
 
 **PW2)** **2.** *bhuj* in *tribhuj*.
@@ -88,7 +88,7 @@
 
 **PW3-1)** — 1〉 geniessen, Etwas zu geniessen haben, sowohl zu Nutzen haben, mit Nutzen besitzen, benutzen, sich dem Genuss von Etwas hingeben, als vom Genuss von Speisen; in der älteren Sprache mit Instr., in der späteren meistentheils mit Acc. ohne Object seine Mahlzeit halten und fressen (von Thieren); die Erde, ein Land, eine Stadt (Acc.) geniessen, den Nutzen von ihr haben, so v. a. beherrschen und sich in den Besitz setzen (von einem Fürsten gesagt); Jmd (Acc.) geniessen, so v. a. sich zu Nutzen machen, ausbeuten und geschlechtlich geniessen. In der späteren Sprache gewöhnlich Med.
 
-- **RU:** — 1〉 «наслаждаться, иметь нечто в пользование», как «извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо», так и применительно к «вкушению пищи»; в более древнем языке с Instr., в позднейшем по большей части с Acc. без дополнения — «принимать пищу и есть» (о животных: «поедать»); землю, страну, город (Acc.) «вкушать, извлекать из неё пользу», то есть преим. «властвовать» и «овладевать» (говорится о государе); кого-либо (Acc.) «вкушать», то есть преим. «использовать в своих целях, эксплуатировать» и «вкушать плотски». В позднейшем языке обычно Med.
+- **RU:** — 1〉 «наслаждаться, иметь нечто в пользование», как «извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо», так и применительно к «вкушению пищи»; в более древнем языке с Instr., в позднейшем по большей части с Acc. без дополнения — «принимать пищу и есть» (о животных: «поедать»); землю, страну, город (Acc.) «вкушать, извлекать из нее пользу», то есть преим. «властвовать» и «овладевать» (говорится о государе); кого-либо (Acc.) «вкушать», то есть преим. «использовать в своих целях, эксплуатировать» и «вкушать плотски». В позднейшем языке обычно Med.
   <sub>attested</sub>
 
 **PW3-2)** — 2〉 Etwas (Acc., ausnahmsweise Instr.) zu geniessen haben, so v. a. zu büssen haben bei Jmd. (Gen.) den Lohn für Etwas (Acc.) davontragen.
@@ -103,7 +103,7 @@
 
 **PW3-4)** — 4〉 in der Astr. durchlaufen, mit Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (zugleich geniessen, verzehren) Eine best. Zeit durchlaufen, so v. a. verleben, währen, erfüllen, dauern. — Wird mit *yuj* verwechselt.
 
-- **RU:** — 4〉 в астр. «проходить, протекать», с Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (одновременно «наслаждаться, расходовать») определённый определ. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
+- **RU:** — 4〉 в астр. «проходить, протекать», с Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (одновременно «наслаждаться, расходовать») определенный определ. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
   <sub>attested</sub>
 
 **PW3-caus-def)** — Caus. *bhojayati*. *˚te* (metrisch)
@@ -187,7 +187,7 @@
 — 3〉 Act. Jmd (Acc.) zu Nutzen sein, dienen.
 
 - **RU:** — С *upa*
-— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле преим. «пользоваться, применять, извлекать пользу из, жить за счёт, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле преим. «предаваться любви с» (вместо Acc. лица — также *śarīram*).
+— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле преим. «пользоваться, применять, извлекать пользу из, жить за счет, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле преим. «предаваться любви с» (вм. Acc. лица — также *śarīram*).
 — 2〉 «иметь вознаграждение за что-либо» (Acc.).
 — 3〉 Act. «быть полезным кому-либо» (Acc.), «служить».
   <sub>attested</sub>
@@ -212,7 +212,7 @@
 — 1〉 «есть заранее, есть прежде других».
 — 2〉 «обходить кого-либо» (Acc.) «при еде, оставлять без угощения».
 — 3〉 «поедать, съедать, пожирать, истреблять» [KĀD. 2,118,1]. ([145,6]).
-— 4〉 «наслаждаться, пользоваться, употреблять». — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) ошибочно вместо *˚bhṛjjyantam*. — *paribubhukṣita* см. особ. ([Nachtr. 4])
+— 4〉 «наслаждаться, пользоваться, употреблять». — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) ошибочно вм. *˚bhṛjjyantam*. — *paribubhukṣita* см. особ. ([Nachtr. 4])
   <sub>attested</sub>
 
 **PW3-pari)** — Mit *pra*
@@ -232,7 +232,7 @@
 - **RU:** — С *prati*
 — 1〉 «наслаждаться».
 — 2〉 «принимать пищу наряду с лечением» [CARAKA. 1,13]. *pratibhukta* «соблюдавший диету» [6,26]. «питавшийся во время лечения» (Instr.) [20].
-— Caus. *laghvannapratibhojita* «тот, кому при лечении давали принимать лёгкую пищу» [BHĀVAPR. 3,21,38].
+— Caus. *laghvannapratibhojita* «тот, кому при лечении давали принимать легкую пищу» [BHĀVAPR. 3,21,38].
   <sub>attested</sub>
 
 **PW3-api)** — Mit *vi* in **bhuktavibhukta*.

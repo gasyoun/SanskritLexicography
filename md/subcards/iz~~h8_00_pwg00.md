@@ -11,7 +11,7 @@ I. 1. *iṣ* *iṣita*
 **1))** 1) ausgesprochen, verkündet
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
 
-- **RU:** 1) произнесённый, провозглашённый
+- **RU:** 1) произнесенный, провозглашенный
 [BHĀG. P. 10,87,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,36) [11,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,28) [35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,11,35)
   <sub>attested</sub>
 
@@ -25,7 +25,7 @@ I. 1. *iṣ* *iṣita*
 **3))** — 3) *pariśrameṣita* so v. a. heimgesucht. gequält
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* Schol.
 
-- **RU:** — 3) *pariśrameṣita* в значении преим. поражённый, истерзанный
+- **RU:** — 3) *pariśrameṣita* в знач. преим. пораженный, истерзанный
 [BHĀG. P. 12,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,9,16) *iṣito gataḥ prāpta ityarthaḥ iṣu sarpaṇa ityasmāt* схол.
   <sub>attested</sub>
 

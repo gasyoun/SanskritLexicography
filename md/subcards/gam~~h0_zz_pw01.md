@@ -20,7 +20,7 @@
 
 **pw_196)** — Mit *vyapa* fortgehen, weichen, schwinden. *˚gata* fortgegangen, gewichen, geschwunden, verstrichen, gewichen von (Abl.).
 
-- **RU:** — С *vyapa* уходить, отступать, исчезать. *˚gata* ушедший, отступивший, исчезнувший, истёкший, отступивший от (Abl.).
+- **RU:** — С *vyapa* уходить, отступать, исчезать. *˚gata* ушедший, отступивший, исчезнувший, истекший, отступивший от (Abl.).
   <sub>attested</sub>
 
 **pw_197)** — Mit *api* und Acc.
@@ -55,7 +55,7 @@
 
 **pw_203_b)** — b〉 zu dem man gekommen ist, besucht.
 
-- **RU:** — b〉 к кому пришли, посещённый.
+- **RU:** — b〉 к кому пришли, посещенный.
   <sub>attested</sub>
 
 **pw_204_2)** — 2〉 heimkehren [GAUT.]
@@ -150,7 +150,7 @@
 
 **pw_222_6)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* mit act. und pass. Bed.
 
-- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), замечать, распознавать, угадывать, понимать, убеждаться в чём-л., быть убеждённым —, быть того мнения, знать (*avagacchant* сознательно [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* с act. и pass. знач.
+- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), замечать, распознавать, угадывать, понимать, убеждаться в чем-л., быть убежденным —, быть того мнения, знать (*avagacchant* сознательно [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* с act. и pass. знач.
   <sub>attested</sub>
 
 **pw_223_7)** — 7〉 erkennen für, halten, ansehen, wissen dass; mit zwei Acc. *na tathāsmi yathā māmavagacchasi* so v. a. ich bin nicht so, wie du glaubst. *avagata* mit act. Bed.
@@ -160,7 +160,7 @@
 
 **pw_224_8)** — 8〉 *avagata* [Ind. St. 10,318] fehlerhaft für *apagata*.
 
-- **RU:** — 8〉 *avagata* [Ind. St. 10,318] ошибочно вместо *apagata*.
+- **RU:** — 8〉 *avagata* [Ind. St. 10,318] ошибочно вм. *apagata*.
   <sub>attested</sub>
 
 **pw_225)** — Caus.
@@ -180,7 +180,7 @@
 
 **pw_228)** — Mit *adhyava*, *˚gata* [Ind. St. 10,318] fehlerhaft für *vyapagata*; vgl. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
 
-- **RU:** — С *adhyava*, *˚gata* [Ind. St. 10,318] ошибочно вместо *vyapagata*; ср. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
+- **RU:** — С *adhyava*, *˚gata* [Ind. St. 10,318] ошибочно вм. *vyapagata*; ср. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
   <sub>attested</sub>
 
 **pw_229)** — Mit *pratyava* genau kennen.
@@ -280,7 +280,7 @@
 
 **pw_248_i)** — i〉 durch Berechnung herausgekommen, berechnet.
 
-- **RU:** — i〉 вычисленный, полученный расчётом.
+- **RU:** — i〉 вычисленный, полученный расчетом.
   <sub>attested</sub>
 
 **pw_249_2)** — 2〉 mit pass. Bed. durchlaufen (Weg).
@@ -300,12 +300,12 @@
 
 **pw_252_2)** — 2〉 *in der Erzählung herbeikommen lassen, Jmds Ankunft erzählen.
 
-- **RU:** — 2〉 *вводить в рассказ, повествовать о чьём-л. прибытии.
+- **RU:** — 2〉 *вводить в рассказ, повествовать о чьем-л. прибытии.
   <sub>attested</sub>
 
 **pw_253_3)** — 3〉 Kunde von Etwas (Acc.) erhalten, — sich verschaffen [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 
-- **RU:** — 3〉 получать —, добывать себе весть о чём-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
+- **RU:** — 3〉 получать —, добывать себе весть о чем-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
   <sub>attested</sub>
 
 **pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
@@ -345,7 +345,7 @@
 
 **pw_261)** — Mit *samanvā*, *˚gata* (buddh.) begleitet von, versehen mit (instr. oder im Comp. vorangehend) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
 
-- **RU:** — С *samanvā*, *˚gata* (будд.) сопровождаемый —, снабжённый чем-л. (instr. или предшествующее в Comp.) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
+- **RU:** — С *samanvā*, *˚gata* (будд.) сопровождаемый —, снабженный чем-л. (instr. или предшествующее в Comp.) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
   <sub>attested</sub>
 
 **pw_262)** — Mit *abhyā*
@@ -460,7 +460,7 @@
 
 **pw_284_1)** — 1〉 den Kreislauf vollendet habend, abgelaufen.
 
-- **RU:** — 1〉 завершивший круговорот, истёкший.
+- **RU:** — 1〉 завершивший круговорот, истекший.
   <sub>attested</sub>
 
 **pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).

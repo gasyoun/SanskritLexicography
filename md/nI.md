@@ -199,7 +199,7 @@ _PWG article — 96 sub-card(s), 410 sense(s) · RU 410/410 · EN 0/410_
 [R. 1,61,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20) ([63,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,23) [GORR.]). [54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) [MBH. 1,679.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.679) [4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4000) [3,9907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9907) [HARIV. 6342.](https://sanskrit-lexicon-scans.github.io/hariv?6342) [7654.](https://sanskrit-lexicon-scans.github.io/hariv?7654) [R. 2,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,22) [31,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,8) [R. GORR. 2,30,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,33) *(māṃ yadi) nayeta svapurīṃ rāmaḥ*
 [5,35,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,47) *ārye satyameva nivartanam tanmāmapi netumarhasi*
 [VIKR. 82,20.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?82,20) *pustakāni nītvā pracalitāḥ*
-[PAÑCAT. 245,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,1) *tvaṃ hi bhīṣmeṇa nirjitya nītā prītimatī tadā* уведённая домой (как жена)
+[PAÑCAT. 245,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,1) *tvaṃ hi bhīṣmeṇa nirjitya nītā prītimatī tadā* уведенная домой (как жена)
 [MBH. 5,5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5982) [5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5990) [7054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7054) [7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7056)
 [DRAUP. 5,26.] В виде исключения act.: *atha māmevamavyagrāṃ vanaṃ na cennayiṣyasi*
 [R. 2,30,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,19) *naya mām*
@@ -367,7 +367,7 @@ Nach [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,2
 
 - **RU:** — 11) мед. давать наставление: *(saṃmānane): śāstre nayate = śāstrasthaṃ siddhāntaṃ śiṣyebhyaḥ prāpayati*
 [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), схол.
-По [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) *śāstre nayate* означает быть сведущим в чём-либо; *saṃmānana* понимает там же в знач. в значении почитать, поскольку *viṣṇuṃ nayate* приводится в качестве примера.
+По [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) *śāstre nayate* означает быть сведущим в чем-либо; *saṃmānana* понимает там же в знач. в знач. почитать, поскольку *viṣṇuṃ nayate* приводится в качестве примера.
   <sub>lexicographic</sub>
 
 **12)** — 12) Etwas herausbringen, hinter Etwas kommen, feststellen: *sīmāṃ prati samutpanne vivāde grāmayordvayoḥ . jyaiṣṭhe māsi nayetsīmāṃ suprakāśeṣu setuṣu ..*
@@ -530,7 +530,7 @@ Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 **3))** [ŚĀṄKH. ŚR. 13,6,1.] — intens. vorwärtsbringen: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
 [ṚV. 6,47,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.16)
 
-- **RU:** [ŚĀṄKH. ŚR. 13,6,1.] — intens. продвигать вперёд: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
+- **RU:** [ŚĀṄKH. ŚR. 13,6,1.] — intens. продвигать вперед: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
 [ṚV. 6,47,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.16)
   <sub>attested</sub>
 
@@ -633,9 +633,9 @@ Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [KATHĀS. 7,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,47)
 [BHĀG. P. 3,14,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,15) [4,7,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,1) [14,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,29) [6,6,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,1)
 [ŚUK. in LA. 45,8.] [PRAB. 24,3.] [99,1.] [DAŚAK.] in [BENF. Chr. 192,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) [BHAṬṬ. 5,46.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,46) [6,137.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,137) *śāpāntāyānunītaḥ* с просьбой о
-[R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* умиротворённый
+[R. 6,82,165.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,165) *saṃrambharukṣamiva sundari yadyadāsīttvatsaṃgamena mama tattadivānunītam* умиротворенный
 [VIKR. 61.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?61) мед.: *anuninye 'tha śanakairvīro 'nunayakovidaḥ*
-[BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. oder dat. der Person: *na tena te 'nunayāmi*
+[BHĀG. P. 4,26,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,20) mit dem gen. или dat. der Person: *na tena te 'nunayāmi*
 [GĪT. 3,7.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?3,7)
 — ср. *anunaya, ˚neya* .
   <sub>attested</sub>
@@ -670,7 +670,7 @@ Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [MBH. 1,787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.787) *etatpratyanunaye* dagegen lege ich Verwahrung ein
 [736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.736)
 
-- **RU:** — 2) высказываться против кого-л. или чего-л., не соглашаться с кем-л. или с чем-л.: *bhavatāhamannasyāśucibhāvamālakṣya pratyanunītaḥ* был уличён тобою во лжи
+- **RU:** — 2) высказываться против кого-л. или чего-л., не соглашаться с кем-л. или с чем-л.: *bhavatāhamannasyāśucibhāvamālakṣya pratyanunītaḥ* был уличен тобою во лжи
 [MBH. 1,787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.787) *etatpratyanunaye* против этого я заявляю протест
 [736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.736)
   <sub>attested</sub>
@@ -685,7 +685,7 @@ Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) m
 [SIDDH. K. 109,b,11] *antarbhavāṇi* .
 
 - **RU:** — *antar*, *antarṇayati*
-[SIDDH. K.] zu [P. 1,4,65](https://ashtadhyayi.com/sutraani/1/4/65) in der калькутт. изд.; statt dieses Beispiels hat aber die vollständige Ausgabe der
+[SIDDH. K.] к [P. 1,4,65](https://ashtadhyayi.com/sutraani/1/4/65) in der калькутт. изд.; statt dieses Beispiels hat aber die vollständige Ausgabe der
 [SIDDH. K. 109,b,11] *antarbhavāṇi* .
   <sub>attested</sub>
 
@@ -760,7 +760,7 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 [MBH. 5,7136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7136) *dhvajaṃ siṃhaṃ rathāttasmādapanīya*
 [4,1437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1437) [PAÑCAT. ed. orn. 52,19.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?52,19) *tailairlohāmlagandhaṃ śiraso 'panīya*
 [VARĀH. BṚH. S. 76,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?76,4) (im Сутра *śaścho 'ṭi) aṭītyapanīyāmīti vaktavyam*
-схол. zu [P. 8,4,63](https://ashtadhyayi.com/sutraani/8/4/63), Вартт. *darpaṃ tasya*
+схол. к [P. 8,4,63](https://ashtadhyayi.com/sutraani/8/4/63), Вартт. *darpaṃ tasya*
 [HARIV. 15078.](https://sanskrit-lexicon-scans.github.io/hariv?15078) *rāmaste sumahadduḥkhaṃ śokaṃ caivāpaneṣyati*
 [MBH. 5,6047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6047)
 [R. 2,83,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,9) [3,35,68.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,68) *ārtānāṃ bhayam*
@@ -768,12 +768,12 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 [BHĀG. P. 3,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,25) *ārtim*
 [6,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,31) *tṛṣṇām*
 [MṚCCH. 19,16.] *ajñānam*
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 10.] *bhrāntim*
-[KUMĀRILA] bei [MÜLLER, SL. 182, N.] *jalena kaḥ śītamapanayati*
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 10.] *bhrāntim*
+[KUMĀRILA] у [MÜLLER, SL. 182, N.] *jalena kaḥ śītamapanayati*
 [PAÑCAT. I,353.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,353) *me kṛtaghnatādoṣam*
 [214,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?214,5) *paśutvamanayoḥ*
 [PRAB. 59,11.] *śuklapaṭasya śauklyaṃ rāgeṇa*
-схол. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* выбросить что-л. из головы: *brahmahatyākṛtaṃ pāpaṃ hṛdayādapanīyatām* so преим. не думай, что ты взял на себя вину за убийство брахмана,
+схол. к [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* выбросить что-л. из головы: *brahmahatyākṛtaṃ pāpaṃ hṛdayādapanīyatām* so преим. не думай, что ты взял на себя вину за убийство брахмана,
 [DAŚ. 1,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,47)
   <sub>attested</sub>
 
@@ -812,7 +812,7 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 Schol. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
 
 - **RU:** — 5) извлекать, добывать из чего-л.: *tāpasā iṅgudībhyastailamapanayanti dīpārtham*
-схол. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
+схол. к [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
   <sub>attested</sub>
 
 **6))** — 6) läugnen, in Abrede stellen: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
@@ -820,21 +820,21 @@ Schol. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?
 zu [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
 
 - **RU:** — 6) отрицать, отвергать: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
-[KULL.] zu [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *yaḥ pratyarthī yatparimāṇadhanamapanayati* тот же
-zu [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
+[KULL.] к [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *yaḥ pratyarthī yatparimāṇadhanamapanayati* тот же
+к [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
   <sub>attested</sub>
 
 **7))** — 7) ausnehmen, ausschliessen (aus einer Regel)
 Schol. zu [ṚV. PRĀT. 11,4.]
 
 - **RU:** — 7) исключать (из правила)
-схол. zu [ṚV. PRĀT. 11,4.]
+схол. к [ṚV. PRĀT. 11,4.]
   <sub>attested</sub>
 
 **8))** — 8) *apanīta* abgeführt von so v. a. im Widerspruch stehend mit: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,40)
 
-- **RU:** — 8) *apanīta* отведённый от, так преим. находящийся в противоречии с: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
+- **RU:** — 8) *apanīta* отведенный от, так преим. находящийся в противоречии с: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,40)
   <sub>attested</sub>
 
@@ -855,7 +855,7 @@ Schol. zu [ṚV. PRĀT. 11,4.]
 
 - **RU:** — ср. *apanaya, ˚nayana* . — desid. желать удалить: *andhatamasamandhakāreṇāpaninīṣati*
 [PRAB. 108,18.] *imāṃ śaṅkāmapaninīṣan*
-[KULL.] zu [M. 1,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,27)
+[KULL.] к [M. 1,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,27)
   <sub>attested</sub>
 
 ## vyapa+nī
@@ -936,7 +936,7 @@ Schol. zu [ṚV. PRĀT. 11,4.]
 - **RU:** — *api* подводить к, направлять к: *vācaiva tadyajñaṃ panthāmapinayati*
 [AIT. BR. 1,8.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,8) *sa evainamapathātpanthāmapinayati*
 [TS. 2,2,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,2,1) *devalokaṃ yajamānamapinayati*
-[ŚAT. BR. 1,8,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,11) [20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,20) [12,4,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,1) [8,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,21) приведённый — так преим. близкий к смерти: *yadi ha vā apinīta iva yajamāno bhavati*
+[ŚAT. BR. 1,8,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,11) [20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,20) [12,4,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,4,1) [8,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,21) приведенный — так преим. близкий к смерти: *yadi ha vā apinīta iva yajamāno bhavati*
 [AIT. BR. 2,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,2) переносить в, вводить в: *gavāmevainaṃ nyāyamapinīya*
 [TS. 2,2,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,2)
   <sub>attested</sub>
@@ -966,8 +966,8 @@ Schol. in der Einl. zu [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* z
 [10,53,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.07) [AV. 6,47,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.047.html#av06.047.03) *sa naḥ svargamabhi neṣa lokam*
 [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) [17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.17) *sūto hi māmadhiratho dṛṣṭvaivābhyanayadgṛhān*
 [MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) *badhamabhinīyamānaścauraḥ*
-схол. в введ. к [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* доведённый до тетивы
-[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) *abhinītāni śastrāṇi* принесённый, доставленный
+схол. в введ. к [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* доведенный до тетивы
+[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) *abhinītāni śastrāṇi* принесенный, доставленный
 [12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691)
   <sub>attested</sub>
 
@@ -1028,7 +1028,7 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
 [R. 2,39,36](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,36) ([38,45](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,45) [GORR.]). Andere Bedeutungen geben die indischen Lexicographen dem partic.; s. u. *abhinīta* .
 
 - **RU:** — 4) *abhinīta* дрессированный, обученный: *abhinītāśca (gajāḥ) śikṣābhiḥ*
-[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) образованный, умный, смышлёный, о человеке
+[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) образованный, умный, смышленый, о человеке
 [R. 4,28,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,28,13) *abhinītataraṃ vākyam*
 [MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) *etāvadabhinītārthamuktvā*
 [R. 2,39,36](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,36) ([38,45](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,45) [GORR.]). Иные значения приписывают partic. индийские лексикографы; см. *abhinīta* .
@@ -1213,7 +1213,7 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
 [SĀV. 5,78.]
 [DAŚ. 2,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,6)
 [R. 1,2,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,9) [2,32,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,25) [55,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,30) *udakaṃ kāñcanairghaṭaiḥ — āninyuḥ*
-[65,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,8) [ŚĀK. 86,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?86,18) [VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [PAÑCAT. 36,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,1) [40,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,15) [76,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?76,17) [96,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,16) [VET. in LA. 18,5. 34,1.] [KULL.] zu [M. 11,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,70) *ānayita (ānāyita?)*
+[65,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,8) [ŚĀK. 86,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?86,18) [VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [PAÑCAT. 36,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,1) [40,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,15) [76,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?76,17) [96,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,16) [VET. in LA. 18,5. 34,1.] [KULL.] к [M. 11,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,70) *ānayita (ānāyita?)*
 [KATHĀS. 4,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,73) *pautraśca te tripathagāṃ tridivādānayiṣyati*
 [MBH. 3,9906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9906)
 [R. 3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52)
@@ -1230,14 +1230,14 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
 [MBH. 3,2946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2946) *mukham* подносить ко рту
 [4,639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.639) *vārṣṇeyamānayāmāsa* (= caus.) *puruṣairāptakāribhiḥ*
 [MBH. 3,2282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2282) *veśyābhirmunirūpābhirāneṣyata ṛṣeḥ sutam*
-[R. 1,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,23) [2,32,38.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,38) (*ānayāmāsa* ohne instr. aber in caus. знач.). *tena varāṅganābhiranāyi vidvān*
-[BHAṬṬ. 1,10.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,10) мед. [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) [2,1985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1985) [3,267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.267) [5,7441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7441) [14,61.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.61) [R. 1,8,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,19) [59,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,7) [61,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,8) [70,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,11) [RĀJA-TAR. 5,347.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,347) [BHĀG. P. 4,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,5) Mit *punar* возвращать, приводить обратно: *tamupādāya gaccheyam — punaścaivā nayiṣyāmi*
+[R. 1,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,23) [2,32,38.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,38) (*ānayāmāsa* без instr. aber in caus. знач.). *tena varāṅganābhiranāyi vidvān*
+[BHAṬṬ. 1,10.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,10) мед. [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) [2,1985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1985) [3,267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.267) [5,7441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7441) [14,61.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.61) [R. 1,8,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,19) [59,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,7) [61,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,8) [70,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,11) [RĀJA-TAR. 5,347.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,347) [BHĀG. P. 4,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,5) С *punar* возвращать, приводить обратно: *tamupādāya gaccheyam — punaścaivā nayiṣyāmi*
 [MBH. 1,6051.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6051)
-[RĀJA-TAR. 5,258.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,258) auch ohne *punar* in dieser знач.
+[RĀJA-TAR. 5,258.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,258) также без *punar* in dieser знач.
 [MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811)
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
-[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
+[DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) ошибочно вм. *anīye* .
   <sub>attested</sub>
 
 **2)** — 2) eingiessen, einmengen: *harirānītaḥ puruvāro apsu*
@@ -1297,7 +1297,7 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
 
 - **RU:** — 7) применять, употреблять, обнаруживать, проявлять: *bhavarase vairāgyamānīyatām*, так преим. *ādhīyatām* (как и v. l.; ср.
 [Spr.] *nanvātmātmanyavadhīyatām* и т.д.)
-[BHARTṚ.] bei [SCHIEFNER] und [WEBER S. 26, Z. 3.]
+[BHARTṚ.] у [SCHIEFNER] и [WEBER S. 26, Z. 3.]
   <sub>attested</sub>
 
 **8_addendum)** — Vgl. *ānaya* fgg., *˚nāya, ˚nāyya, ˚nīti, ˚netar*
@@ -1321,7 +1321,7 @@ med. [R. GORR. 2,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?
 [KATHĀS. 12,3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,3) [18,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,123) [197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,197) [200.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,200)
 [SOM. NAL. 92.] *tāmānāyyeha mañjūṣām*
 [UPAK. 73] (*tāmanayyeha* [KATHĀS. 4,75](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,75)).
-мед. [R. GORR. 2,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,82,10) *ānāpayitum* fehlerhaft für *ānāyayitum*
+мед. [R. GORR. 2,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,82,10) *ānāpayitum* ошибочно вм. *ānāyayitum*
 [R. SCHL. 2,14,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,14,21)
   <sub>attested</sub>
 
@@ -1371,8 +1371,8 @@ med. [R. GORR. 2,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?
 ([83,9]) hat st. dessen *hṛtā* .
 
 - **RU:** — *avā*, *avānītā*
-[ŚĀK. CH. 125,5] — вероятно, ошибочное чтение вместо *apanītā*; другая рецензия
-([83,9]) имеет вместо, вместо которого *hṛtā*.
+[ŚĀK. CH. 125,5] — вероятно, ошибочное чтение вм. *apanītā*; другая рецензия
+([83,9]) имеет вместо, вм. которого *hṛtā*.
   <sub>attested</sub>
 
 ## udānī
@@ -1784,20 +1784,20 @@ als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufge
 [12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* nach verschiedenen Seiten auseinandergeführt, getrennt
 [BHĀG. P. 7,2,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,21)
 
-- **RU:** — 3) уводить (телёнка от матери)
+- **RU:** — 3) уводить (теленка от матери)
 [TS. 1,6,11,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,3)
 [ŚĀṄKH. ŚR. 5,10,6.]
 [KĀTY. ŚR. 26,5,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?26,5,4) отводить кого-л. в сторону: *mantrayasvainamunnīya paravantaṃ viśeṣataḥ*
 [MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) *tata ekāntamunnīya pārāśaryo yudhiṣṭhiram . abravīt*
 [3,1438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1438) [10756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10756) *badhāyonnīyamāneṣu* уводить на смерть
-[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* разведённые в разные стороны, разлучённые
+[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* разведенные в разные стороны, разлученные
 [BHĀG. P. 7,2,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,21)
   <sub>attested</sub>
 
 **4)** — 4) auseinanderstreifen, schlichten: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
 
-- **RU:** — 4) расчёсывать (разбирая), приводить в порядок: *(darbhapiñjūlībhiḥ) trirunnayet*
+- **RU:** — 4) расчесывать (разбирая), приводить в порядок: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
   <sub>attested</sub>
 
@@ -1915,7 +1915,7 @@ Schol. zu [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638)
 
 - **RU:** — *samud*
- 1) поднимать, воздвигать (букв. und перен.): *parameṣṭhī tvapāṃ madhye tathāsannāmavekṣya gām . kathamenāṃ samunneṣya iti dadhyau dhiyā ciram ..*
+ 1) поднимать, воздвигать (букв. и перен.): *parameṣṭhī tvapāṃ madhye tathāsannāmavekṣya gām . kathamenāṃ samunneṣya iti dadhyau dhiyā ciram ..*
 [BHĀG. P. 3,13,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,16) *tasya (ripoḥ) saṃśamanāyāśu tatkulīnaṃ samunnayet*
 [KĀM. NĪTIS. 8,66. 9,70.] *samunnītā (mati)*
 [MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638)
@@ -2015,7 +2015,7 @@ Schol. zu [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [PRAŚNOP. 5,3.] *sauraṃ dhāmopanīyate*
 [YĀJÑ. 3,122.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,122) *loke vikuṇṭha upaneṣyati gokulaṃ sma*
 [BHĀG. P. 2,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,31) *enam — caṇḍikāgṛhamupaninyuḥ*
-[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведёт к, несёт нам
+[5,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,15) [ŚIŚ. 9,72.] [PAÑCAT. 191,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,2) [DAŚAK.] в [BENF. Chr. 188,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *lakṣmīvatīmupanayati striyaṃ ca saḥ* (Венера в 8-м доме) ведет к, несет нам
 [VARĀH. BṚH. S. 104,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,36) *krauñcanādopanītaḥ (kālaḥ)*
 [ṚT. 4,18.] *upanīya ca taṃ yuktaṃ ratham*
 [R. GORR. 2,38,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,12) [SOM. NAL. 137.] *upanīya tu tatsarvaṃ śanakaiḥ*
@@ -2114,7 +2114,7 @@ caus. заботиться о том, чтобы кто-л. (acc.) был при
 **1)** — *vyupa* einzeln herbeiführen, Opferthiere
 [ŚAT. BR. 3,9,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,22)
 
-- **RU:** — *vyupa* приводить по одному, поочерёдно приводить, — жертвенных животных
+- **RU:** — *vyupa* приводить по одному, поочередно приводить, — жертвенных животных
 [ŚAT. BR. 3,9,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,1,22)
   <sub>attested</sub>
 
@@ -2134,7 +2134,7 @@ caus. заботиться о том, чтобы кто-л. (acc.) был при
 [MBH. 2,1036.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1036)
 
 - **RU:** — *samupa* приводить, привлекать: *ṛṣīṃśca samupānayat*
-[MBH. 1,4319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4319) [2,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1237) *mantraṃ samupanītena suhṛdā* привлечённый к, присоединённый к
+[MBH. 1,4319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4319) [2,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1237) *mantraṃ samupanītena suhṛdā* привлеченный к, присоединенный к
 [R. 5,86,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,86,18) доставлять
 [MBH. 4,1320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1320) *anye pradhānavāsasī samupanīyetām*
 [MṚCCH. 88,8.] *(taṃ baddhvā) gautamyāḥ samupānayat*
@@ -2199,7 +2199,7 @@ caus. заботиться о том, чтобы кто-л. (acc.) был при
 
 **addendum)** — Vgl. *ninayana*, wo statt der 2ten Bed. das Vollführen, Vollbringen zu setzen ist.
 
-- **RU:** — ср. *ninayana*, где вместо второго знач. следует читать «совершение, выполнение».
+- **RU:** — ср. *ninayana*, где вм. второго знач. следует читать «совершение, выполнение».
   <sub>attested</sub>
 
 ## abhini+nī
@@ -2301,19 +2301,19 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11)
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
 
-- **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чём-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
+- **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чем-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
 [DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
 [RĀJA-TAR. 6,27.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,27) *nirṇayantaḥ*
-[KULL.] zu [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* выясненный, решённый, установленный, твёрдо определённый
+[KULL.] к [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* выясненный, решенный, установленный, твердо определенный
 [AK. 3,4,26,205.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,205) *nirṇītavedaśāstrārtha*
 [Verz. d. Oxf. H. 91,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *sunirṇītārthasaṃśaya*
 [MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735)
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11)
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 216.]
   <sub>attested</sub>
 
 **Nachträge)** — Vgl. *nirṇaya, nirṇayana, nirṇetar* fg.
@@ -2398,7 +2398,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [53,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.24) *sa sadma pariṇīyate*
 [4,9,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.009.html#rv04.009.03) [15,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.015.html#rv04.015.01) *jīvāṃ mṛtebhyaḥ pariṇīyamānām*
 [AV. 18,3,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.03) *parīme gāmaneṣata*
-[ṚV. 10,155,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.05) [165,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.165.html#rv10.165.05) *tenaivainamagraṃ devatānāṃ paryaṇayat* вывел вперёд, поставил во главе
+[ṚV. 10,155,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.05) [165,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.165.html#rv10.165.05) *tenaivainamagraṃ devatānāṃ paryaṇayat* вывел вперед, поставил во главе
 [TS. 2,3,4,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,4,3)
 [ŚAT. BR. 5,3,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,6) [7,3,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,3,2,18)
 [ŚĀṄKH. BR. 28,2.]
@@ -2440,7 +2440,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 **4)** — 4) *pariṇīta* wohl ausgeführt in der Stelle: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
 [MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739)
 
-- **RU:** — 4) *pariṇīta* вероятно совершённый, выполненный в данном месте: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
+- **RU:** — 4) *pariṇīta* вероятно совершенный, выполненный в данном месте: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
 [MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739)
   <sub>attested</sub>
 
@@ -2471,7 +2471,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 **1)** — *vipari*, partic. *˚ṇīta* dessen Platz mit dem eines andern vertauscht ist
 [ṢAḌV. BR. 3,7.] Der Comm. liesst *viparīta* .
 
-- **RU:** — *vipari*, partic. *˚ṇīta* тот, чьё место поменяно с местом другого.
+- **RU:** — *vipari*, partic. *˚ṇīta* тот, чье место поменяно с местом другого.
 [ṢAḌV. BR. 3,7.] коммент. читает *viparīta* .
   <sub>attested</sub>
 
@@ -2505,7 +2505,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [H. an.] [MED.]
 
 - **RU:** — *pra*
- 1) вести вперёд, провожать, способствовать: *asmānpra hi neṣi vasya ā*
+ 1) вести вперед, провожать, способствовать: *asmānpra hi neṣi vasya ā*
 [ṚV. 2,1,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.16) [6,47,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.07) *prācaṃ no yajñaṃ pra ṇayata sādhuyā*
 [10,66,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.066.html#rv10.066.12) *ya stuvantaṃ praṇeṣat*
 [2,30,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.030.html#rv02.030.03) [26,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.026.html#rv02.026.04) *yaṃ praṇināya mahate saubhagāya*
@@ -2514,7 +2514,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [6,7,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,19) *sākamaśvenokthāni praṇayet*
 [AIT. BR. 3,49.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,49) направлять, обращать к: *mayi sakapaṭaṃ kiṃcitkvāpi praṇītavilocane*
 [SĀH. D. 71,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?71,9) *bhagavatkathāyāṃ praṇīyamāno muniḥ*
-[BHĀG. P. 3,13,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,5) выводить вперёд, так преим. выставлять напоказ, показывать: *udyannādityaḥ sarvāṇi bhūtāni praṇayati*
+[BHĀG. P. 3,13,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,5) выводить вперед, так преим. выставлять напоказ, показывать: *udyannādityaḥ sarvāṇi bhūtāni praṇayati*
 [AIT. BR. 5,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,31) *tattadvapuḥ praṇayase sadanugrahāya*
 [BHĀG. P. 3,9,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,11) доставлять: *dagdhāṃ guhāṃ paśya ulūkapūrṇāṃ kākapraṇītena hutāśanena*
 [PAÑCAT. III,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,1) подносить, преподносить: *tasyārdhyaṃ praṇīya*
@@ -2525,7 +2525,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [ṚV. 1,117,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.17) *adya kuntyāḥ parikleśaṃ vanavāsaṃ ca kṛtsnaśaḥ . draupadyāśca parikleśaṃ praṇeṣyāmi hate tvayi ..*
 [MBH. 6,3453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3453) *putraḥ praṇītaḥ* вероятно, брошенный (подкинутый) сын
 [1,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4672) мед. привлекать к себе: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
-[ŚAT. BR. 12,9,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,1,14) *praṇīta = praveśita* введённый внутрь
+[ŚAT. BR. 12,9,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,1,14) *praṇīta = praveśita* введенный внутрь
 [H. an.] [MED.]
   <sub>attested</sub>
 
@@ -2568,7 +2568,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 1,3053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3053) [14,635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.635)
 [PRAŚNOP. 4,3.]
 [AK. 2,7,20.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,20) *tridhā praṇīto jvalano munibhirvedapāragaiḥ*
-[HARIV. 11863.](https://sanskrit-lexicon-scans.github.io/hariv?11863) *praṇītāḥ* (а именно *āpaḥ*) вода, принесённая утром для использования при жертвоприношении
+[HARIV. 11863.](https://sanskrit-lexicon-scans.github.io/hariv?11863) *praṇītāḥ* (а именно *āpaḥ*) вода, принесенная утром для использования при жертвоприношении
 [ŚAT. BR. 1,9,2,32.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,32) [11,2,6,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,2,6,1) [14,2,2,50.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,50)
 [KĀTY. ŚR. 2,2,8.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,2,8)
 [ŚĀṄKH. ŚR. 4,7,1.]
@@ -2591,7 +2591,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [BHĀG. P. 7,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,8) *vidhātrā — bhavānpraṇīto dṛgagocarāṃ daśām*
 [7,2,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,33)
 
-- **RU:** — 4) приводить к, повергать в (некое состояние): *yena vaśaṃ praṇītāḥ* подчинённый
+- **RU:** — 4) приводить к, повергать в (некое состояние): *yena vaśaṃ praṇītāḥ* подчиненный
 [BHĀG. P. 7,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,8) *vidhātrā — bhavānpraṇīto dṛgagocarāṃ daśām*
 [7,2,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,33)
   <sub>attested</sub>
@@ -2629,7 +2629,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 12,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3482) *na ca dharmaṃ praṇītaṃ te pathyamuktaṃ vicakṣaṇaiḥ*
 [R. 5,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,7) *tasmāttameva praṇayetsadaiva mantraṃ prajāsaṃgrahaṇe samartham*
 [MBH. 12,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3180) [3179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3179) *daṇḍanītyāṃ praṇītāyāṃ sarve sidhyantyupakramāḥ* применять
-[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) *praṇīta = kṛta, vihita* сделанный, совершённый
+[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) *praṇīta = kṛta, vihita* сделанный, совершенный
 [H. an.] [MED.] = *upasaṃpanna* приготовленный (о пище)
 [AK. 2,9,45.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,45)
 [H. 413.](https://sanskrit-lexicon-scans.github.io/abch2/app1?413)
@@ -2920,7 +2920,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [KĀTY. ŚR. 5,2,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,2,15)
 [PĀR. GṚHY. 1,15. 2,1.]
 
-- **RU:** — 3) расчёсывать на пробор: *keśān*
+- **RU:** — 3) расчесывать на пробор: *keśān*
 [KĀTY. ŚR. 5,2,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,2,15)
 [PĀR. GṚHY. 1,15. 2,1.]
   <sub>attested</sub>
@@ -2999,7 +2999,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 [VARĀH. BṚH. S. 2], Anf. Vgl. *durvinīta* .
 
 - **RU:** — 7) укрощать, дрессировать, выезжать: *vanyānvineṣyanniva duṣṭasattvān*
-[RAGH. 2,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,8) *vinīta* укрощённый, выдрессированный
+[RAGH. 2,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,8) *vinīta* укрощенный, выдрессированный
 [AK. 2,8,2,12.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,12)
 [H. 1235.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1235)
 [an. 3,299.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,299)
@@ -3255,7 +3255,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T4)** — Mit *samudā* in *samudānaya*; vgl. *samudānay*.
 
-- **RU:** — С *samudā* в значении *samudānaya*; ср. *samudānay*.
+- **RU:** — С *samudā* в знач. *samudānaya*; ср. *samudānay*.
   <sub>attested</sub>
 
 **PW-prefix-T8-1)** — Mit *upā*
@@ -3316,7 +3316,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T19-2)** — 2〉 wiedergewinnen.
 
-- **RU:** — 2〉 возвращать себе, отвоёвывать.
+- **RU:** — 2〉 возвращать себе, отвоевывать.
   <sub>attested</sub>
 
 **PW-prefix-T19-3)** — 3〉 wieder zugiessen, nachgiessen, auffüllen [GOP. BR. 1,3,11].
@@ -3377,7 +3377,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T33)** — Mit *pratisamā* vollständig zugiessen [ĀPAST. ŚR. 7,14,8].
 
-- **RU:** — С *pratisamā* доливать до краёв, наполнять до краёв [ĀPAST. ŚR. 7,14,8].
+- **RU:** — С *pratisamā* доливать до краев, наполнять до краев [ĀPAST. ŚR. 7,14,8].
   <sub>attested</sub>
 
 **PW-prefix-T35-1)** — Mit *ud*
@@ -3409,7 +3409,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T35-6)** — 6〉 wegführen (das Kalb von der Mutter), Jmd bei Seite führen. *vadhāya* zum Tode abführen. *unnita* _Adj._ Pl. nach verschiedenen Seite auseinander geführt, getrennt.
 
-- **RU:** — 6〉 уводить (телёнка от матери), отводить кого-либо в сторону. *vadhāya* уводить на смерть. *unnita* _Adj._ Pl. разведённые в разные стороны, разлучённые.
+- **RU:** — 6〉 уводить (теленка от матери), отводить кого-либо в сторону. *vadhāya* уводить на смерть. *unnita* _Adj._ Pl. разведенные в разные стороны, разлученные.
   <sub>attested</sub>
 
 **PW-prefix-T35-7)** — 7〉 auseinander streifen, schlichten.
@@ -3641,7 +3641,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T88-2)** — 2〉 aufʼs Reine bringen, Etwas herausbringen, hinter Etwas kommen, Etwas zur Entscheidung bringen, sich für Etwas entscheiden. *nirṇīta* aufʼs Reine gebracht, entschieden, ausgemacht, feststehend.
 
-- **RU:** — 2〉 выяснять, устанавливать, докапываться до сути, решать вопрос, принимать решение. *nirṇīta* выясненный, решённый, установленный, твёрдо определённый.
+- **RU:** — 2〉 выяснять, устанавливать, докапываться до сути, решать вопрос, принимать решение. *nirṇīta* выясненный, решенный, установленный, твердо определенный.
   <sub>attested</sub>
 
 **PW-prefix-T90)** — Mit *vinis* vollkommen aufʼs Reine bringen.
@@ -3673,7 +3673,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T95-2)** — 2〉 ein Paar oder eine Braut um das Feuer (Acc., auch mit Ergänzung dieses Acc.) herumführen (als Hochzeitsceremonie); daher ein Mädchen (Acc.) heirathen, sich mit einem Mädchen vermählen. *pariṇītā* verheirathet. *pariṇītabhartar* wohl der nur angetraute Gatte, der seine Frau noch nicht heimgeführt hat.
 
-- **RU:** — 2〉 обводить пару или невесту вокруг огня (Acc., также с дополнением Acc.) (как свадебный обряд); отсюда жениться на девушке (Acc.), вступать в брак с девушкой. *pariṇītā* состоящий в браке. *pariṇītabhartar* вероятно, супруг, лишь обручённый, ещё не приведший жену в дом.
+- **RU:** — 2〉 обводить пару или невесту вокруг огня (Acc., также с дополнением Acc.) (как свадебный обряд); отсюда жениться на девушке (Acc.), вступать в брак с девушкой. *pariṇītā* состоящий в браке. *pariṇītabhartar* вероятно, супруг, лишь обрученный, еще не приведший жену в дом.
   <sub>attested</sub>
 
 **PW-prefix-T95-3)** — 3〉 entführen.
@@ -3698,7 +3698,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **PW-prefix-T95-7)** — 7〉 *pariṇīta* ausgeführt.
 
-- **RU:** — 7〉 *pariṇīta* исполненный, осуществлённый.
+- **RU:** — 7〉 *pariṇīta* исполненный, осуществленный.
   <sub>attested</sub>
 
 ## nī
@@ -3723,7 +3723,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **vi-nī (PPP))** — Mit *vipari*, *˚ṇīta* dessen Platz mit dem eines Andern vertauscht ist.
 
-- **RU:** С *vipari*, *˚ṇīta* тот, чьё место поменяно с местом другого.
+- **RU:** С *vipari*, *˚ṇīta* тот, чье место поменяно с местом другого.
   <sub>attested</sub>
 
 **sam-nī)** — Mit *pra*
@@ -3733,7 +3733,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **1)** — 1〉 vorwärts geleiten, führen, anführen (ein Heer), fördern.
 
-- **RU:** 1〉 вести вперёд, руководить, предводительствовать (войском), способствовать.
+- **RU:** 1〉 вести вперед, руководить, предводительствовать (войском), способствовать.
   <sub>attested</sub>
 
 **2)** — 2〉 hintragen, hinbringen. Technischer Ausdruck für das Hintragen des Feuers auf seine Oerter am Altare und des zu den Handlungen nöthigen Wassers (auch des Soma).
@@ -3793,7 +3793,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **13)** — 13〉 seine Gewogenheit —, seine Freundschaft gegen Jmd (Acc.) an den Tag legen.
 
-- **RU:** 13〉 проявлять своё расположение —, свою дружбу к кому-л. (Acc.).
+- **RU:** 13〉 проявлять свое расположение —, свою дружбу к кому-л. (Acc.).
   <sub>attested</sub>
 
 **14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
@@ -3898,7 +3898,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **apa-nī 5)** — 5〉 scheiteln.
 
-- **RU:** 5〉 делать пробор (расчёсывать волосы).
+- **RU:** 5〉 делать пробор (расчесывать волосы).
   <sub>attested</sub>
 
 **apa-nī 6)** — 6〉 dehnen, ausbreiten.
@@ -3913,7 +3913,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **apa-nī 8)** — 8〉 zähmen, abrichten, dressiren. *vinīta* gezähmt, dressirt.
 
-- **RU:** 8〉 укрощать, выдрессировать, дрессировать. *vinīta* укрощённый, дрессированный.
+- **RU:** 8〉 укрощать, выдрессировать, дрессировать. *vinīta* укрощенный, дрессированный.
   <sub>attested</sub>
 
 **apa-nī 9)** — 9〉 züchtigen.
@@ -3923,7 +3923,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **apa-nī 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) fehlerhaft für *vinīta*.
 
-- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) ошибочно вместо *vinīta*.
+- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) ошибочно вм. *vinīta*.
   <sub>attested</sub>
 
 **apa-nī 11)** — 11〉 anleiten —, veranlassen zu (Dat. Infin.).
@@ -4381,7 +4381,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 - **RU:** — *anu*
  3) *anumīya*
-[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) ошибочно вместо *anunīya*, как читает [ed. Bomb.].
+[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) ошибочно вм. *anunīya*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 ## apanī
@@ -4451,7 +4451,7 @@ Schol. zu [KĀTY. ŚR. 17,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr
 Z. 3. fg. [NĪLAK.] zu [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .
 
 - **RU:** — 2)
-стк. 3. сл. [NĪLAK.] zu [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .
+стк. 3. сл. [NĪLAK.] к [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .
   <sub>attested</sub>
 
 ## pratyānī
@@ -4486,7 +4486,7 @@ Z. 3. fg. [NĪLAK.] zu [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mb
 
 - **RU:** — *ud*
  1) поднимать, воздвигать: *unnīya vaktram*
-[BHĀG. P. 10,83,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,83,29) поднять на своё плечо, мед.
+[BHĀG. P. 10,83,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,83,29) поднять на свое плечо, мед.
 [30,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,31) поднять вверх, так преим. возбуждать в высокой степени: *utsavaṃ dṛśīnāmunnayan*
 [35,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,35,23) [Sp. 274, Z. 5] lies *śayane* .
   <sub>attested</sub>
@@ -4561,7 +4561,7 @@ Schol. *pariṇītam* als nom. act. Heirath. —
 
 - **RU:** — *pari*
  2) *pariṇītabhartar*
-[VET. in LA. (II) 19,12. 21,16] по-видимому, обозначает мужа, лишь обручённого, но ещё не введшего жену в свой дом.
+[VET. in LA. (II) 19,12. 21,16] по-видимому, обозначает мужа, лишь обрученного, но еще не введшего жену в свой дом.
 [UTTARARĀMAC. 29,15 (39,3)] понимает
 схол. *pariṇītam* как nom. act. брак. —
 [Z. 15] статьи есть
@@ -4571,7 +4571,7 @@ Schol. *pariṇītam* als nom. act. Heirath. —
  8) zu lesen.
 
 - **RU:** 3) вместо
- вместо 8) следует читать.
+ вм. 8) следует читать.
   <sub>attested</sub>
 
 **4-corr)** — 4)
@@ -4602,7 +4602,7 @@ Schol. *pariṇītam* als nom. act. Heirath. —
 - **RU:** — *pra*
  2)
 [Sp. 278, Z. 6] добавить: *praṇītā āpo mantrasaṃskṛtā āhavanīyasyottarato nihitāḥ* коммент. к [ĀŚV. ŚR. 1,1,4.]
-*praṇīta* означает обряд, при котором не используется освящённая вода (*praṇītāḥ*),
+*praṇīta* означает обряд, при котором не используется освященная вода (*praṇītāḥ*),
 [ĀŚV. ŚR. 1,1,5.] стк. 8 читай 11,2,6,1 вместо 11,26,1.
 — 6) *na laṅghayati ko 'pi vidhipraṇītam* то, что предопределено судьбой
 [Spr. 3655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3655) *naitaddhi samyakkavibhiḥ praṇītam* преподано, высказано
@@ -4627,7 +4627,7 @@ Schol. *pariṇītam* als nom. act. Heirath. —
 
 **6))** 6) lenken und
 
-- **RU:** 6) направлять, управлять und
+- **RU:** 6) направлять, управлять и
   <sub>attested</sub>
 
 **7))** 7) unterrichten, unterweisen

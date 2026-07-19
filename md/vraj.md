@@ -62,13 +62,13 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [VOP. 5,19.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,19) *pure 'tra*
 [KATHĀS. 29,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,159) *khāṇḍavaprastham*
 [MBH. 1,2263](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2263) (med.). *gayām*
-[Spr. (II) 1474. fgg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1474)
+[Spr. (II) 1474. fgg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1474 "Spr. (II) 1474: eṣṭavyā bahavaḥ putrā guṇavanto bahuśrutāḥ | teṣāṃ vai samavetānāṃ yadi kaścidgayāṃ vrajet || — Man soll sich viele tugendhafte und gelehrte Söhne wünschen: vielleicht, dass Einer von allen diesen einst nach Gajā wallfahrtet.")
 [R. 2,21,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,61) [52,59.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,59) [4,14,28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,28) (med.). [BHĀG. P. 3,1,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,20) *pituryajñam*
 [4,19,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,22) *svargam*
 [HARIV. 751](https://sanskrit-lexicon-scans.github.io/hariv?751) (med.). *divam*
 [R. 1,60,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,14) *narakam*
 [M. 8,94.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,94) [307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,307)
-[Spr. (II) 957.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?957) *andhatāmisram*
+[Spr. (II) 957.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?957 "Spr. (II) 957: āpadaṃ prāpnuyātsvāmī yasya bhṛtyasya paśyataḥ | prāṇeṣu vidyamāneṣu sa bhṛtyo narakaṃ vrajet || — (354.) Derjenige Diener, welcher es zulässt, dass sein Herr, vor seinen Augen und so lange er noch athmet, ein Unglück erleidet, fährt zur Hölle.") *andhatāmisram*
 [VARĀH. BṚH. S. 2,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?2,18) *yamakṣayam*
 [R. 2,38,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17) *yoniṃ hiṃsrāṇāṃ sattvānām*
 [M. 12,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,56) *vaidyādharaṃ padam*
@@ -90,7 +90,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [7,5,2,41.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,5,2,41) [11,5,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,4) [6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,1,2) *grāmāntaram*
 [GOBH. 3,5,20.] *dūram*
 [LĀṬY. 1,1,22.] *gṛhān*
-[3,3,1.] *anyena cedbrahmā vrajitaḥ syāt* когда брахман прошёл по другому пути
+[3,3,1.] *anyena cedbrahmā vrajitaḥ syāt* когда брахман прошел по другому пути
 [5,9,7. 3,7,8.] *upānadbhyām*
 [9,1,24.] [ĀŚV. ŚR. 4,10,7.] [GṚHY. 3,4,6. 4,4,9.] [CHĀND. UP. 8,8,4.] — *aparājitaṃ vāsthāya vrajeddiśam*
 [M. 6,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,31) *tiṣṭhantīṣu, vrajantīṣu* (*goṣu*)
@@ -128,13 +128,13 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [VOP. 5,19.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,19) *pure 'tra*
 [KATHĀS. 29,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,159) *khāṇḍavaprastham*
 [MBH. 1,2263](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2263) (мед.). *gayām*
-[Spr. (II) 1474. fgg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1474)
+[Spr. (II) 1474. fgg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1474 "Spr. (II) 1474: eṣṭavyā bahavaḥ putrā guṇavanto bahuśrutāḥ | teṣāṃ vai samavetānāṃ yadi kaścidgayāṃ vrajet || — Man soll sich viele tugendhafte und gelehrte Söhne wünschen: vielleicht, dass Einer von allen diesen einst nach Gajā wallfahrtet.")
 [R. 2,21,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,61) [52,59.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,59) [4,14,28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,28) (мед.). [BHĀG. P. 3,1,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,20) *pituryajñam*
 [4,19,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,22) *svargam*
 [HARIV. 751](https://sanskrit-lexicon-scans.github.io/hariv?751) (мед.). *divam*
 [R. 1,60,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,14) *narakam*
 [M. 8,94.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,94) [307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,307)
-[Spr. (II) 957.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?957) *andhatāmisram*
+[Spr. (II) 957.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?957 "Spr. (II) 957: āpadaṃ prāpnuyātsvāmī yasya bhṛtyasya paśyataḥ | prāṇeṣu vidyamāneṣu sa bhṛtyo narakaṃ vrajet || — (354.) Derjenige Diener, welcher es zulässt, dass sein Herr, vor seinen Augen und so lange er noch athmet, ein Unglück erleidet, fährt zur Hölle.") *andhatāmisram*
 [VARĀH. BṚH. S. 2,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?2,18) *yamakṣayam*
 [R. 2,38,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17) *yoniṃ hiṃsrāṇāṃ sattvānām*
 [M. 12,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,56) *vaidyādharaṃ padam*
@@ -166,7 +166,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [HARIV. 8225.](https://sanskrit-lexicon-scans.github.io/hariv?8225) *yānaṃ yadi gacchenna vrajecca* sich vorwärts bewegen
 [VARĀH. BṚH. S. 46,60.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,60) *diśaḥ sarvāḥ (śailāḥ pakṣavantaḥ)*
 [R. 5,7,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,7,41) *vrajatyastaṃ raviḥ*
-[Spr. (II) 3731.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3731)
+[Spr. (II) 3731.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3731 "Spr. (II) 3731: nimīlanāya padmānāmudayāyālpatejasām | tamasāmavakāśāya vrajatyastamaho raviḥ || — (1588.) Damit die am Tage blühenden Wasserrosen ihren Blumenkelch schliessen, damit die kleinen Lichter aufgehen und damit die Finsterniss Platz greifen könne, geht, o Weh, die Sonne unter.")
 [VARĀH. BṚH. S. 26,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?26,3) *haritam* am Horizont erscheinen
 [5,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,17) *adhas* von einer Speise
 [M. 11,153.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,153)
@@ -179,13 +179,13 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [ṚT. 1,28.] *kāle vrajati*
 [KĀM. NĪTIS. 12,16.] ad [ŚĀK. 193.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?193) [Spr. 2924.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2924) [KATHĀS. 23,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,87) [PAÑCAT. 49,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,2) [117,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?117,9) [261,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,14)
 
-- **RU:** 3) о движении неодушевлённых и бестелесных вещей: о туче
+- **RU:** 3) о движении неодушевленных и бестелесных вещей: о туче
 [MEGH. 27.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?27) *kiṃcitpaścādvraja laghugatiḥ kiṃcidevottareṇa*
 [16.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?16) *na vrajanti vimānāni vihāyasi* (вместо следующего *prabhāṃ* следует читать по новейшему изд. *bhayāt*)
-[HARIV. 8225.](https://sanskrit-lexicon-scans.github.io/hariv?8225) *yānaṃ yadi gacchenna vrajecca* двигаться вперёд
+[HARIV. 8225.](https://sanskrit-lexicon-scans.github.io/hariv?8225) *yānaṃ yadi gacchenna vrajecca* двигаться вперед
 [VARĀH. BṚH. S. 46,60.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,60) *diśaḥ sarvāḥ (śailāḥ pakṣavantaḥ)*
 [R. 5,7,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,7,41) *vrajatyastaṃ raviḥ*
-[Spr. (II) 3731.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3731)
+[Spr. (II) 3731.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3731 "Spr. (II) 3731: nimīlanāya padmānāmudayāyālpatejasām | tamasāmavakāśāya vrajatyastamaho raviḥ || — (1588.) Damit die am Tage blühenden Wasserrosen ihren Blumenkelch schliessen, damit die kleinen Lichter aufgehen und damit die Finsterniss Platz greifen könne, geht, o Weh, die Sonne unter.")
 [VARĀH. BṚH. S. 26,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?26,3) *haritam* появляться на горизонте
 [5,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,17) *adhas* о пище
 [M. 11,153.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,153)
@@ -207,7 +207,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [M. 3,179.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,179) [4,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,71) [8,346.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,346) *nāśam*
 [VARĀH. BṚH. S. 5,68.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,68) *vilayam*
 [R. 5,56,117.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,117) *pradhvaṃsam*
-[Spr. (II) 3217.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3217) *dhvaṃsam*
+[Spr. (II) 3217.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3217 "Spr. (II) 3217: na gamyo mantrāṇāṃ na ca bhavati bhaiṣajyaviṣayo na cāpi pradhvaṃsaṃ vrajati vividhaiḥ śāntikaśataiḥ | bhramāveśādaṅge kimapi vidadhadbhavyasamaṃ smar… — (1365.) Diese vom Liebesgott herrührende Besessenheit kann nicht durch Zaubersprüche geheilt werden, ist kein günstiges Feld für Heilmittel und weicht auch nicht hundert verschiedenen Besänftigungsmitteln") *dhvaṃsam*
 [VARĀH. BṚH. S. 5,71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,71) *kṣayam*
 [9,40.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,40) [47,12.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,12) *udayam*
 [7,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,1) *darśanam*
@@ -235,11 +235,11 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [MBH. 3,16541](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16541) (мед.). *mṛtyum* умирать
 [MĀRK. P. 26,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,39) (мед.). *yadi vyāpāraṃ vrajasi me śarīre 'smin* приниматься за
 [VIKR. 58.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?58) *viśvāsaṃ strīṣu* доверять
-[KĀM. NĪTIS. 7,50.] [Spr. 1986](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1986) (*viśvāsam* Conj. вместо *viśvāse)*.* vināśam*
+[KĀM. NĪTIS. 7,50.] [Spr. 1986](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1986) (*viśvāsam* Conj. вм. *viśvāse)*.* vināśam*
 [M. 3,179.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,179) [4,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,71) [8,346.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,346) *nāśam*
 [VARĀH. BṚH. S. 5,68.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,68) *vilayam*
 [R. 5,56,117.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,117) *pradhvaṃsam*
-[Spr. (II) 3217.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3217) *dhvaṃsam*
+[Spr. (II) 3217.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3217 "Spr. (II) 3217: na gamyo mantrāṇāṃ na ca bhavati bhaiṣajyaviṣayo na cāpi pradhvaṃsaṃ vrajati vividhaiḥ śāntikaśataiḥ | bhramāveśādaṅge kimapi vidadhadbhavyasamaṃ smar… — (1365.) Diese vom Liebesgott herrührende Besessenheit kann nicht durch Zaubersprüche geheilt werden, ist kein günstiges Feld für Heilmittel und weicht auch nicht hundert verschiedenen Besänftigungsmitteln") *dhvaṃsam*
 [VARĀH. BṚH. S. 5,71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,71) *kṣayam*
 [9,40.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,40) [47,12.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,12) *udayam*
 [7,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,1) *darśanam*
@@ -280,7 +280,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [R. 4,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,36) *taṃ vinā ko vrajetsukham* so v. a. sich wohl fühlen
 [HARIV. 15815.](https://sanskrit-lexicon-scans.github.io/hariv?15815)
 
-- **RU:** — 6) о собственном движении в следующих сочетаниях речь уже не идёт: *yadi jīvanvrajeta saḥ* то есть преим. спастись живым
+- **RU:** — 6) о собственном движении в следующих сочетаниях речь уже не идет: *yadi jīvanvrajeta saḥ* то есть преим. спастись живым
 [R. 4,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,36) *taṃ vinā ko vrajetsukham* то есть преим. чувствовать себя хорошо
 [HARIV. 15815.](https://sanskrit-lexicon-scans.github.io/hariv?15815)
   <sub>attested</sub>
@@ -563,7 +563,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 **1)** — *udā* vorwärts schreiten: *anavekṣamāṇā grāmamudāvrajanti*
 [KAUŚ. 7. 18. fg.]
 
-- **RU:** — *udā* шагать вперёд: *anavekṣamāṇā grāmamudāvrajanti*
+- **RU:** — *udā* шагать вперед: *anavekṣamāṇā grāmamudāvrajanti*
 [KAUŚ. 7. 18. fg.]
   <sub>attested</sub>
 
@@ -762,7 +762,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [5,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2605) *puṇyādeva pravrajanti* (*pāpāni karmāṇi*) abziehen
 [3,13453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13453) *pravrajita* (s. auch bes.) ausgewandert, fortgezogen
 [R. 2,48,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,23) [51,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,12) [5,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,24,5) [6,19,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,52) *vanam*
-[2,39,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,25) [Spr. (II) 1562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1562) *dharmaḥ pravrajitaḥ*
+[2,39,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,25) [Spr. (II) 1562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1562 "Spr. (II) 1562: karmaṇo hi pradhānatvaṃ kiṃ kurvanti śubhā grahāḥ | vasiṣṭhadattalagno 'pi rāmaḥ pravrajito vanam || — Das Schicksal (die in einem früheren Leben vollbrachten Werke) ist ja mächtiger als alles Andere") *dharmaḥ pravrajitaḥ*
 [3092.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3092) *pravrajitāśva* _adj._ (so [ed. Bomb.]) davongelaufen
 [MBH. 6,3142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) Insbes. das Haus verlassen um als Asket zu wandern: *pravrajiṣyato 'yanam*
 [LĀṬY. 10,19,11.]
@@ -777,7 +777,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [BHĀG. P. 2,1,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,16) *vanam*
 [3,33,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,21)
 
-- **RU:** — *pra* шествовать вперёд, направляться; идти дальше, странствовать: *pra vā vrajati pra vā dhāvati* идёт или едет
+- **RU:** — *pra* шествовать вперед, направляться; идти дальше, странствовать: *pra vā vrajati pra vā dhāvati* идет или едет
 [ŚAT. BR. 2,4,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,6) [9,4,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,4,17) *tataḥ prāṅpravavrāja*
 [11,6,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,1,3) [14,7,2,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,25) [3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,3,2) [25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,3,25) *araṇyam*
 [ŚĀṄKH. ŚR. 16,16,4.]
@@ -794,7 +794,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [5,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2605) *puṇyādeva pravrajanti* (*pāpāni karmāṇi*) уходить
 [3,13453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13453) *pravrajita* (см. также особ.) эмигрировавший, ушедший
 [R. 2,48,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,23) [51,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,12) [5,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,24,5) [6,19,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,52) *vanam*
-[2,39,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,25) [Spr. (II) 1562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1562) *dharmaḥ pravrajitaḥ*
+[2,39,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,25) [Spr. (II) 1562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1562 "Spr. (II) 1562: karmaṇo hi pradhānatvaṃ kiṃ kurvanti śubhā grahāḥ | vasiṣṭhadattalagno 'pi rāmaḥ pravrajito vanam || — Das Schicksal (die in einem früheren Leben vollbrachten Werke) ist ja mächtiger als alles Andere") *dharmaḥ pravrajitaḥ*
 [3092.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3092) *pravrajitāśva* _adj._ (так [ed. Bomb.]) сбежавший
 [MBH. 6,3142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) Insbes. покинуть дом, чтобы странствовать как аскет: *pravrajiṣyato 'yanam*
 [LĀṬY. 10,19,11.]
@@ -857,7 +857,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) fehlerhaft für *pravrajita*, wie die [ed. Bomb.] liest.
 
 - **RU:** 3) *pravrājita*
-[MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вместо *pravrajita*, как читает [ed. Bomb.].
+[MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вм. *pravrajita*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 **pravraj-tail)** — Vgl. *pravrājana* . — desid. vom caus. s. *pravivrājayiṣu* .
@@ -887,7 +887,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 [KAUṢ. UP. 2,3. 4.]
 [TBR. Comm. 1,89,2] v. u.
 
-- **RU:** — *abhipra* идти вперёд в направлении к кому-либо
+- **RU:** — *abhipra* идти вперед в направлении к кому-либо
 [CHĀND. UP. 8,7,2.]
 [KAUṢ. UP. 2,3. 4.]
 [TBR. Comm. 1,89,2] снизу
@@ -971,7 +971,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **NWS-1)** *vraj* [Gen , unsp] ( vrájati I P ) to go, walk, proceed, travel, wander, move. ṚV . [ with or scil. padbhyām : 'to go on foot'; with upānadbhyām : id. lit. 'with shoes'; with dhūryais : 'to travel by means of beasts of burden'; with paramāṃ gatim : 'to attain supreme bliss'; with antam and gen: 'to come to the end of'; with anyena , anyatra or anyatas : 'to go another way or elsewhere'; with adhas : either 'to sink down [to hell]' or 'to be digested [as food]'. ] to go in order to, be going to (dat. inf. or an adj. ending in - aka [e.g. bhojako vrajati : 'he is going to eat']. Pāṇ ii, 3, 15; iii, 3, 10 . become. [ esp. with acc. of an abstract noun e.g. with vināśam : 'to go to destruction, become destroyed'; with chattratām : 'to become a pupil'; with nirvṛtim : 'to grow happy' [cf. √ gam , yā &]; with sukham : 'to feel well'; with jīvan : 'to escape alive'. Mbh , Kāvya(MW) . ] Caus or X P ( vrājayati ): to send, drive; to prepare, decorate. AĀr , DhātuPā(MW) . Intens ( vāvrajyate , vāvrakti ): to go crookedly. Pāṇ iii, 1, 23, Scholiast
 
-- **RU:** *vraj* [Gen , unsp] ( vrájati I P ) идти, ходить, двигаться, путешествовать, странствовать, перемещаться. ṚV . [с padbhyām или scil.: «идти пешком»; с upānadbhyām: то же, букв. «в обуви»; с dhūryais: «путешествовать с помощью вьючных животных»; с paramāṃ gatim: «достигать высшего блаженства»; с antam и gen.: «доходить до конца»; с anyena, anyatra или anyatas: «идти другим путём или в другое место»; с adhas: либо «опускаться [в ад]», либо «перевариваться [о пище]».] идти с целью, собираться (dat. inf. или прил. на -aka [напр. bhojako vrajati: «он собирается есть»]. Pāṇ ii, 3, 15; iii, 3, 10. становиться. [особ. с вин. пад. отвлечённого сущ., напр. с vināśam: «идти к гибели, погибать»; с chattratām: «становиться учеником»; с nirvṛtim: «становиться счастливым» [ср. √ gam, yā &]; с sukham: «чувствовать себя хорошо»; с jīvan: «спастись живым». Mbh, Kāvya(MW).] Caus. или X P (vrājayati): посылать, гнать; приготовлять, украшать. AĀr, DhātuPā(MW). Intens. (vāvrajyate, vāvrakti): идти криво. Pāṇ iii, 1, 23, Scholiast. MW : 1041
+- **RU:** *vraj* [Gen , unsp] ( vrájati I P ) идти, ходить, двигаться, путешествовать, странствовать, перемещаться. ṚV . [с padbhyām или scil.: «идти пешком»; с upānadbhyām: то же, букв. «в обуви»; с dhūryais: «путешествовать с помощью вьючных животных»; с paramāṃ gatim: «достигать высшего блаженства»; с antam и gen.: «доходить до конца»; с anyena, anyatra или anyatas: «идти другим путем или в другое место»; с adhas: либо «опускаться [в ад]», либо «перевариваться [о пище]».] идти с целью, собираться (dat. inf. или прил. на -aka [напр. bhojako vrajati: «он собирается есть»]. Pāṇ ii, 3, 15; iii, 3, 10. становиться. [особ. с вин. пад. отвлеченного сущ., напр. с vināśam: «идти к гибели, погибать»; с chattratām: «становиться учеником»; с nirvṛtim: «становиться счастливым» [ср. √ gam, yā &]; с sukham: «чувствовать себя хорошо»; с jīvan: «спастись живым». Mbh, Kāvya(MW).] Caus. или X P (vrājayati): посылать, гнать; приготовлять, украшать. AĀr, DhātuPā(MW). Intens. (vāvrajyate, vāvrakti): идти криво. Pāṇ iii, 1, 23, Scholiast. MW : 1041
   <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] gehen, wandern. hingehen zu (Akk)
@@ -1026,7 +1026,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-1)** — 1〉 schreiten, gehen, wandern ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — zu Fusse (auch mit *padbhyām*, *upānadbhyām* in Schuhen) oder mittelst eines Vehikels (*dhuryais*, *vṛṣasthitaḥ*), laufen (von Pferden), sich bewegen (von unbelebten Dingen), gehen einen Weg (Acc.), — eines Weges (Instr.), eine best. Strecke (Acc.) zurücklegen, hingehen zu oder nach (Acc., seltener Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), gelangen zu (Acc.). *śaraṇam* seine Zuflucht nehmen zu (Acc.), *mūrdhnā pādau* sich zu Jmds (Gen.) Füssen werfen, *antam* anʼs Ende von (Gen.) gelangen; *gehen nach Etwas (Dat.), so v. a. um dieses zu holen; *gehen um zu (Infin., Dat. eines Nom. act. oder ein verbales _Adj._ auf *aka*, wie *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* gegangen (*anyena* auf einem andern Wege).
 
-- **RU:** 1〉 шествовать, идти, странствовать ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — пешком (также с *padbhyām*, *upānadbhyām* в обуви) или при помощи средства передвижения (*dhuryais*, *vṛṣasthitaḥ*), бежать (о конях), двигаться (о неодушевлённых предметах), пройти путём (Acc.), — путём (Instr.), преодолеть определ. расстояние (Acc.), идти к или направляться в (Acc., реже Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), достигать (Acc.). *śaraṇam* прибегать к (Acc.), *mūrdhnā pādau* пасть к ногам кого-либо (Gen.), *antam* достигать конца (Gen.); *идти за чем-либо (Dat.), так преим. чтобы принести это; *идти чтобы (Infin., Dat. одного Nom. act. или отглагольного _Adj._ на *aka*, как *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* ушедший (*anyena* по другому пути).
+- **RU:** 1〉 шествовать, идти, странствовать ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — пешком (также с *padbhyām*, *upānadbhyām* в обуви) или при помощи средства передвижения (*dhuryais*, *vṛṣasthitaḥ*), бежать (о конях), двигаться (о неодушевленных предметах), пройти путем (Acc.), — путем (Instr.), преодолеть определ. расстояние (Acc.), идти к или направляться в (Acc., реже Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), достигать (Acc.). *śaraṇam* прибегать к (Acc.), *mūrdhnā pādau* пасть к ногам кого-либо (Gen.), *antam* достигать конца (Gen.); *идти за чем-либо (Dat.), так преим. чтобы принести это; *идти чтобы (Infin., Dat. одного Nom. act. или отглагольного _Adj._ на *aka*, как *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* ушедший (*anyena* по другому пути).
   <sub>attested</sub>
 
 **PW-2)** — 2〉 zu einem Weibe (Acc.) gehen, so v. a. ihr beiwohnen [CARAKA. 6,2].
@@ -1041,7 +1041,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-4)** — 4〉 fortgehen, — von (Abl.), — aus dem Lande, davongehen (auch von Unbelebtem), verstreichen (von der Zeit).
 
-- **RU:** 4〉 уходить, — от (Abl.), — из страны, удаляться (также о неодушевлённом), истекать (о времени).
+- **RU:** 4〉 уходить, — от (Abl.), — из страны, удаляться (также о неодушевленном), истекать (о времени).
   <sub>attested</sub>
 
 **PW-5)** — 5〉 mit *punar* in dieses Leben zurückkehren.
@@ -1061,7 +1061,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-caus)** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) treiben [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] und [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] fehlerhaft für *avratayat*.
 
-- **RU:** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) гнать [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] и [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] ошибочно вместо *avratayat*.
+- **RU:** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) гнать [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] и [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] ошибочно вм. *avratayat*.
   <sub>attested</sub>
 
 **PW-denom)** — *Intens. *vāvrajyate* = *kuṭilaṃ vrajati*.
@@ -1176,7 +1176,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-prati-head)** — Mit *udā* vorwärts schreiten.
 
-- **RU:** — С *udā* шествовать вперёд.
+- **RU:** — С *udā* шествовать вперед.
   <sub>attested</sub>
 
 **PW-vipra-head)** — Mit *pratyudā* nach der entgegengesetzten Richtung schreiten.
@@ -1266,7 +1266,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-pra-1)** — 1〉 vorwärts schreiten, weitergehen, fortgehen ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — von (Abl. [BAUDH. 1,12]), wandern, sich auf den Weg machen, — nach oder in (Acc., Loc. oder Dat.) abziehen (von Unbelebtem). *pravrajita* fortgegangen ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), davongelaufen (Pferde), ausgewandert, fortgezogen in (Acc.)
 
-- **RU:** 1〉 шествовать вперёд, идти дальше, уходить ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — от (Abl. [BAUDH. 1,12]), странствовать, отправляться в путь, — направляться в или к (Acc., Loc. или Dat.), удаляться (о неодушевлённом). *pravrajita* ушедший ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), сбежавший (кони), эмигрировавший, переселившийся в (Acc.)
+- **RU:** 1〉 шествовать вперед, идти дальше, уходить ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — от (Abl. [BAUDH. 1,12]), странствовать, отправляться в путь, — направляться в или к (Acc., Loc. или Dat.), удаляться (о неодушевленном). *pravrajita* ушедший ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), сбежавший (кони), эмигрировавший, переселившийся в (Acc.)
   <sub>attested</sub>
 
 **PW-pra-2)** — 2〉 das Haus verlassen um als Asket zu wandern [ĀPAST. 2,21,18. 19]. Auch mit Abl. des Ortes, den man verlässt, und Acc. des Ortes, an den man sich begiebt. Bei den Jaina so v. a. Mönch werden [HEM. PAR.] *pravrajita* der das Haus verlassen hat um als Asket zu leben [ĀPAST. 1,18,31]. [GAUT.] auch mit Hinzufügung von *vanam* [Chr. 213,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
@@ -1291,7 +1291,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) fehlerhaft für *pravrajita*.
 
-- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вместо *pravrajita*.
+- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вм. *pravrajita*.
   <sub>attested</sub>
 
 **PW-anupra-head)** — Mit *anupra* Jmd (Acc.) in die Verbannung folgen.
@@ -1301,7 +1301,7 @@ Schol. zu [P. 2,3,15.](https://ashtadhyayi.com/sutraani/2/3/15) [3,3,11.](https:
 
 **PW-prati-dir)** — Mit *abhipra* vorschreiten in der Richtung zu Jmd hin [ĀPAST. ŚR. 6,24,8].
 
-- **RU:** — С *abhipra* двигаться вперёд по направлению к кому-либо [ĀPAST. ŚR. 6,24,8].
+- **RU:** — С *abhipra* двигаться вперед по направлению к кому-либо [ĀPAST. ŚR. 6,24,8].
   <sub>attested</sub>
 
 **PW-vi-away)** — Mit *vipra* auseinandergehen, fortgehen von (Abl.) [ĀPAST. 1,29,9].

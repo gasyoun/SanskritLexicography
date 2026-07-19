@@ -31,7 +31,7 @@
 [VS. 15,55.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?15,55) *goṣu*
 [ṚV. 1,83,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.01) *gomati vraje*
 [8,46,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.09) *dharmaṇi*
-[3,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.02) *hṛdi yatte jaghnuṣo bhīragacchat* когда твоё сердце охватил страх
+[3,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.02) *hṛdi yatte jaghnuṣo bhīragacchat* когда твое сердце охватил страх
 [1,32,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.032.html#rv01.032.14) — *madrādiṣu gatvā*
 [P. 6,2,13](https://ashtadhyayi.com/sutraani/6/2/13), схол.
 *mama gṛhe gatvā*
@@ -203,7 +203,7 @@
 [ṚV. 3,38,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.06) С восполнением *manasā* воспринимать, распознавать, угадывать: *tāmasvasthāṃ tadākārāṃ sakhyastā jagmuriṅgitaiḥ*
 (v. l.: *jajñuḥ*)
 [MBH. 3,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2108) *asyedamiti saṃbandho hānau duḥkhena gamyate*
-(v. l. вместо *jāyate*)
+(v. l. вм. *jāyate*)
 [HIT. I,152.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,152) *purastādgamyata eva*
 [ŚĀK. CH. 20,7.] pass. быть понятым, подразумеваться: *yatrārtho gamyate na ca prayogaḥ*
 [P. 8,1,62](https://ashtadhyayi.com/sutraani/8/1/62), схол.

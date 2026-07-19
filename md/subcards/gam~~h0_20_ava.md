@@ -72,7 +72,7 @@
 [ŚĀK. 110,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,17) *na tathāsmi — yathā māmavagacchasi*
 [R. 6,101,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,101,7)
 
-- **RU:** — 4) доходить до чего-либо, нападать на мысль о чём-либо, замечать, распознавать, узнавать, убеждаться в чём-либо, быть убеждённым: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
+- **RU:** — 4) доходить до чего-либо, нападать на мысль о чем-либо, замечать, распознавать, узнавать, убеждаться в чем-либо, быть убежденным: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
 
 [KAUŚ. 123.] *asya saundaryamavagatya*
 [ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *na tvetadavagacchanti*
@@ -89,7 +89,7 @@
 [98,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?98,23) *avagacchādya yatkāryaṃ kartavyaṃ te* узнавать, разузнавать
 [R. 6,10,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,6) *avagantuṃ tvayā yuktaṃ buddhyā — mṛgo hemamayo naiṣaḥ* приходить к убеждению
 [3,49,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,19) [1,30,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,30,17) *saṃbhāvya ityavagatya*
-[ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) схол. к [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* я пришёл к убеждению
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) схол. к [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* я пришел к убеждению
 [ŚĀK. 111,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,4) *kathaṃ śāntamityabhihite śrānta ityavagacchati mūrkhaḥ* полагать, что подразумевается
 [MṚCCH. 13,11.] *yāvadbhiḥ śabdaiḥ so 'rtho 'vagamyate tāvantaḥ prayoktavyāḥ* сколько слов требует смысл для понимания
 [PAT.] к [P. 8,1,12.](https://ashtadhyayi.com/sutraani/8/1/12) *nāvagam* с одним infin. не понимать: *(tadbalaṃ) saṃkhyātuṃ nāvajagmatuḥ*

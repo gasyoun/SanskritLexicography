@@ -17,19 +17,19 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 *chetsyati* Kār 3 aus
 [SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
 
-- **RU:** *chid*, *chinatti* und *chintte*
+- **RU:** *chid*, *chinatti* и *chintte*
 [DHĀTUP. 29,3.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *chinddhi (chindhi)*
-[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* und *acchinas*
+[P. 6,4,101.](https://ashtadhyayi.com/sutraani/6/4/101) [2.](https://ashtadhyayi.com/sutraani/6/4/2) pl. imperf. *acchinad* и *acchinas*
 [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75); *chinadai* (ved.); *chindeta(!)*
-[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* und *acchaitsīt*
+[KṢURIKOPAN.] in [Ind. St. 2,172. fg.]; *acchidat* и *acchaitsīt*
 [P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57)
 
 *chedma* (ved.), *chitsi* (ved.), *acchitta, acchitthās (chitthās* ved.)
 [P. 3,1,57](https://ashtadhyayi.com/sutraani/3/1/57), [Sch. 8,2,26],
-схол.; *ciccheda* und *cicchide, cicchidvaṃs*
+схол.; *ciccheda* и *cicchide, cicchidvaṃs*
 [P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), схол.;
 *chetsyati* Кар 3 aus
-[SIDDH. K.] zu [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
+[SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10); *chittvā, chettum; acchedi, chinna* .
   <sub>attested</sub>
 
 **1)** 1) abschneiden, abhauen, abschlagen, abreissen, zerschneiden, zerhauen, zerreissen, spalten, durchbohren: *mā tantuśchedi vayato dhiyaṃ me*
@@ -215,7 +215,7 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 **5)** — 5) *chinna* heruntergekommen, entkräftet, ermüdet: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
 
-- **RU:** 5) *chinna* пришедший в упадок, обессиленный, утомлённый: *strī˚, bhāra˚, mārga˚*
+- **RU:** 5) *chinna* пришедший в упадок, обессиленный, утомленный: *strī˚, bhāra˚, mārga˚*
 [VYUTP. 209.]
   <sub>attested</sub>
 

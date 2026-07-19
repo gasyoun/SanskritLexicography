@@ -88,7 +88,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [6,67,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.05) [1,51,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.11) [122,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.13) *asminno adya savane mandadhyai* .
 [4,16,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.02) [VĀLAKH. 4,2. 8,7,14.]
 
-- **RU:** 1) act., редко мед. (от *mand* же только мед.) радоваться, быть весёлым, наслаждаться, предаваться чему-либо с упоением, чувствовать себя хорошо при чём-либо, угощаться чем-либо или в чём-либо (instr., gen., loc., редко acc.); упиваться чем-либо: *rayiṃ yena vayaṃ madema*
+- **RU:** 1) act., редко мед. (от *mand* же только мед.) радоваться, быть веселым, наслаждаться, предаваться чему-либо с упоением, чувствовать себя хорошо при чем-либо, угощаться чем-либо или в чем-либо (instr., gen., loc., редко acc.); упиваться чем-либо: *rayiṃ yena vayaṃ madema*
 [ṚV. 7,1,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.24) [4,42,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.042.html#rv04.042.10) *rāyā madema tanvā3 tanā ca*
 [6,49,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.13) *iṣā*
 [7,64,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.064.html#rv07.064.03) *anamīvāsa iLayā madantaḥ*
@@ -166,7 +166,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [Ind. St. 9,215.] *āpo devya ṛṣīṇāṃ viśvadhātryo divya madantyo yāḥ śaṃkarā dharmadhātryaḥ* (so die neuere Ausg.)
 [HARIV. 7794.](https://sanskrit-lexicon-scans.github.io/hariv?7794)
 
-- **RU:** — 3) волнение воды обозначается как веселье: *apāmūrmirmadanniva stoma indrājirāyate* весёлый, как водная волна
+- **RU:** — 3) волнение воды обозначается как веселье: *apāmūrmirmadanniva stoma indrājirāyate* веселый, как водная волна
 [ṚV. 8,14,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.014.html#rv08.014.10) *madantībhirmārjayante nirhyagniḥ śītena vāyati* кипящая вода
 [TS. 6,2,2,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,2,7) *madantyāpaḥ*
 [ŚAT. BR. 3,4,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,22) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,10) [11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,11)
@@ -241,9 +241,9 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [R. 1,6,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,6,24) [3,52,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,46)
 [Spr. 1233.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1233) [1638.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1638) [2091](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2091) — [2093.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2093) [RAGH. 12,93.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,93)
 
-- **RU:** — 6) partic. *matta* возбуждённый радостью, разгульный от радости
+- **RU:** — 6) partic. *matta* возбужденный радостью, разгульный от радости
 [AK. 3,2,52.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,52)
-[MBH. 8,2043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2043) опьянённый, пьяный (букв. и перен.)
+[MBH. 8,2043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2043) опьяненный, пьяный (букв. и перен.)
 [AK. 3,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,23) [3,4,18,114.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,18,114)
 [H. 436.](https://sanskrit-lexicon-scans.github.io/abch2/app1?436) [510.](https://sanskrit-lexicon-scans.github.io/abch2/app1?510)
 [HALĀY. 2,231. 334.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,231)
@@ -259,7 +259,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ŚĀK. 66,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,4) *artha˚*
 [DAŚAK.] в [BENF. Chr. 193,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193) *prabhā˚ (candra)*
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *vidyudbhrāntisamastakāntikalanāmattāstadā toyadāḥ*
-[VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) опьянённый, радостно возбуждённый (о животных всех видов в период течки), находящийся в течке: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
+[VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) опьяненный, радостно возбужденный (о животных всех видов в период течки), находящийся в течке: *nākālamattāḥ khagapannagāśca mṛgadvipāḥ śailamṛgāśca loke*
 [Spr. 4379.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4379) *krauñca*
 [R. 1,2,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,15) *barhiṇa*
 [MBH. 1,7588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7588) *kokila*
@@ -289,7 +289,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 - **RU:** — caus. *mādayati, mādayate (tṛptiyoge*
 [DHĀTUP. 33,31](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)), *madayati (harṣaglepanayoḥ*
 [DHĀTUP. 19,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) *garve glepane*
-[VOP.] *madayati* [опьянённый] *nīcaṃ saṃpattiḥ . madayati* [повергнутый в беду] *śatruṃ śūraḥ*
+[VOP.] *madayati* [опьяненный] *nīcaṃ saṃpattiḥ . madayati* [повергнутый в беду] *śatruṃ śūraḥ*
 [DURGĀD.] в [ŚKDR.]), *mandayati; amīmadanta, mādayadhyai*
 [ṚV. 1,167,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.01) [6,19,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.019.html#rv06.019.06) [22,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.022.html#rv06.022.03) [60,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.060.html#rv06.060.13)
   <sub>attested</sub>
@@ -345,7 +345,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [1,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.082.html#rv01.082.02) [VS. 2,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,31) [7,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,5) [20,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,46) [KAUŚ. 6. 73. 88.] *mano mādayate yasya śastrābhyāsarasāyanāt*
 [DURGĀD.] im [ŚKDR.]
 
-- **RU:** a) наслаждаться, быть весёлым, чувствовать себя хорошо, позволять себе приятное: *savane mādayasva*
+- **RU:** a) наслаждаться, быть веселым, чувствовать себя хорошо, позволять себе приятное: *savane mādayasva*
 [ṚV. 7,29,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.02) [38,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.038.html#rv07.038.08) [39,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.039.html#rv07.039.05) *tve viśve amṛtā mādayante*
 [1,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.059.html#rv01.059.01) [184,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) *mādayasva sute sacā*
 [81,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.08) *yajñe barhiṣi*
@@ -405,7 +405,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [VS. 6,20.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,20) [27,8.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,8)
 [ŚAT. BR. 2,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,6) [1,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,7) partic.: *viprānumadita*
 [TS. 2,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,9,1)
-[ĀŚV. ŚR. 1,3.] Вместо *anumatta*
+[ĀŚV. ŚR. 1,3.] Вм. *anumatta*
 [DAŚAK.] в [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) следует просто читать *anunmatta*.
   <sub>attested</sub>
 
@@ -428,7 +428,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [ṚV. 10,50,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.050.html#rv10.050.02) *abhimādyanniva hi surāṃ pītvā vadati*
 [ŚAT. BR. 1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) [5,5,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,5)
 
-- **RU:** 1) быть весёлым, радостным: *vṛtre vāpsva1dhi śūra mandase*
+- **RU:** 1) быть веселым, радостным: *vṛtre vāpsva1dhi śūra mandase*
 [ṚV. 10,50,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.050.html#rv10.050.02) *abhimādyanniva hi surāṃ pītvā vadati*
 [ŚAT. BR. 1,6,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,4) [5,5,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,4,5)
   <sub>attested</sub>
@@ -454,7 +454,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [KĀṬH. 25,7] in [Ind. St. 3,467,8] wohl fehlerhaft für *anumadan* .
 
 - **RU:** — *ava*, *avamadan*
-[KĀṬH. 25,7] в [Ind. St. 3,467,8] вероятно ошибочно вместо *anumadan*.
+[KĀṬH. 25,7] в [Ind. St. 3,467,8] вероятно ошибочно вм. *anumadan*.
   <sub>attested</sub>
 
 ## unmad
@@ -502,7 +502,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [H. an. 3,254.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,254)
 [MED. t. 101.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,101) [AIT. BR. 2,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,7) [M. 3,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,161) [8,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,67) [163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,163) [205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,205) [9,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,79) [201.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,201) [230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,230) [YĀJÑ. 2,32.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,32) [MBH. 3,2106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2106) [2272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2272) [2354.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2354) [2514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2514) [2578.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2578) [15416.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15416) [15419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15419) [16862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16862) [R. 2,75,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,30) [Spr. 476.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?476) [1117.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1117) [2900.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2900) [3534.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3534) [3795.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3795) [4681.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4681) [VARĀH. BṚH. S. 27,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,7) [46,97.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,97) [VID. 178.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?178) [KATHĀS. 12,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,51) [60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,60) [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) [DAŚAK.] в [BENF. Chr. 200,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) [CAURAP. 3.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?3) *unmattāṃ vilapantīṃ mām*
 [MBH. 3,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2422)
-[R. 3,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,8) пьяный, опьянённый, охваченный манией: *madironmatta, mohamadironmatta*
+[R. 3,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,8) пьяный, опьяненный, охваченный манией: *madironmatta, mohamadironmatta*
 [MAITRYUP. 4,2.] [Spr. 339.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?339) *mahāsurāḥ*
 [VP.] у [MUIR, ST. IV,218.] [Spr. 3246](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3246), v. l. *balonmatta*
 [R. 1,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) *siṃho madonmattaḥ*
@@ -510,7 +510,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [1224.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1224) *tvadāśrayonmattena samudreṇa*
 [PAÑCAT. 84,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?84,9) *unmattacaṇḍaśvāpadakulasaṃkulagirigahvarāṇi* неистовый
 [UTTARARĀMAC. 32,17.] *unmattā gaurivāndhā śrīḥ kvacidevāvatiṣṭhate*
-[MBH. 5,1511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1511) *yauvanonmattanayanāḥ (yoṣitaḥ)* возбуждённый
+[MBH. 5,1511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1511) *yauvanonmattanayanāḥ (yoṣitaḥ)* возбужденный
 [R. 1,9,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,7)
   <sub>attested</sub>
 
@@ -603,10 +603,10 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 
 - **RU:** 1) развлекаться, наслаждаться: *madhvo vo nāma mārutaṃ yajatrāḥ pra yajñeṣu śavamā madanti*
 [ṚV. 7,57,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.057.html#rv07.057.01) быть в радостном расположении духа, ликовать: *sa pra mamandattvāyā śatakrato*
-[8,50,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.050.html#rv08.050.09) *yāṃ tvā jano bhūmiriti pra mandate nirṛtiṃ tvāhaṃ pari veda* называет радостным (возможно, в значении 2 — ошибочно называет)
-[VS. 12,64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,64) *pramatta* возбуждённый, охваченный страстью: *vanagaja*
+[8,50,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.050.html#rv08.050.09) *yāṃ tvā jano bhūmiriti pra mandate nirṛtiṃ tvāhaṃ pari veda* называет радостным (возможно, в знач. 2 — ошибочно называет)
+[VS. 12,64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,64) *pramatta* возбужденный, охваченный страстью: *vanagaja*
 [PAÑCAT. 80,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?80,6) похотливый
-[M. 4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) опьянённый, пьяный: *kathāṃ pramattaḥ prathamaṃ kṛtāmiva (na smarati)*
+[M. 4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) опьяненный, пьяный: *kathāṃ pramattaḥ prathamaṃ kṛtāmiva (na smarati)*
 [ŚĀK. 76.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?76)
   <sub>attested</sub>
 
@@ -705,7 +705,7 @@ Schol. zu [P. 3,1,34.](https://ashtadhyayi.com/sutraani/3/1/34) [4,7.](https://a
 [MBH. 3,16201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16201) *pramattaḥ kāmabhogeṣu*
 [R. 3,37,2](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,2) ([33,2](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,33,2) [ed. Bomb.]).
 
-- **RU:** — 3) забывать о своём долге в отношении чего-либо (loc.), распускаться в чём-либо: *ato 'rthānna pramādyanti pramadāsu vipaścitaḥ*
+- **RU:** — 3) забывать о своем долге в отношении чего-либо (loc.), распускаться в чем-либо: *ato 'rthānna pramādyanti pramadāsu vipaścitaḥ*
 [M. 2,213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,213) *pānastrīdyūtagoṣṭhīṣu rājānam — pramādyantam*
 [Spr. 1767.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1767) *pramattaṃ grāmyadharmeṣu*
 [MBH. 3,16201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16201) *pramattaḥ kāmabhogeṣu*
@@ -802,7 +802,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 - **RU:** 1) охваченный страстью: *nāga*
 [HARIV. 4093.](https://sanskrit-lexicon-scans.github.io/hariv?4093) одержимый, помешанный на (inf.): *yatastvamakṣairdevituṃ saṃpramattaḥ*
-[MBH. 8,3509](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3509); возможно, лишь опечатка вместо *saṃpravṛttaḥ*, как читает [ed. Bomb.].
+[MBH. 8,3509](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3509); возможно, лишь опечатка вм. *saṃpravṛttaḥ*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 **2)** — 2) sorglos, achtlos
@@ -875,7 +875,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 [ṚV. 4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) *rāyaspoṣeṇa samiṣā madema*
 [VS. 4,1.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,1) мед.: *yadvā marutsu mandase samindubhiḥ*
 [ṚV. 8,12,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.012.html#rv08.012.16) *teṣāmiṣṭāni samiṣā madanti*
-[10,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.02) *saṃmatta* возбуждённый, увлечённый, опьянённый (в перен. знач.)
+[10,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.02) *saṃmatta* возбужденный, увлеченный, опьяненный (в перен. знач.)
 [MBH. 14,1760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1760) *tasya rūpeṇa*
 [1,7727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7727) [13,2263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2263) *kāma˚*
 [1,7722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7722) *akṣamada˚*
@@ -890,7 +890,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 [6,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,11)
 
 - **RU:** — ср. *saṃmada, saṃmāda* . — caus. вводить в радостное расположение духа; опьянять: *devikāśca devīścobhayīryajñe samamādayam*
-[AIT. BR. 3,48.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,48) мед. быть воодушевлённым или пьяным: *sameva tṛtīyasavane mādayante*
+[AIT. BR. 3,48.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,48) мед. быть воодушевленным или пьяным: *sameva tṛtīyasavane mādayante*
 [6,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,11)
   <sub>attested</sub>
 
@@ -908,7 +908,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 — a〉 sich freuen, fröhlich, heiter sein, frohlocken, sich ergötzen, schwelgen in, sich wohl befinden bei, sich gütlich thun an oder in (Instr., Gen., Loc., selten Acc.), sich in Etwas berauschen, berauscht (auch in übertragener Bed.) werden durch (Instr.). *mandamāna* freudig.
 
 - **RU:** — 1〉 intrans. Acc., редко Med.
-— a〉 радоваться, быть радостным, весёлым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чём-л., угощаться чем-л. или в чём-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Instr.). *mandamāna* радостно.
+— a〉 радоваться, быть радостным, веселым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чем-л., угощаться чем-л. или в чем-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Instr.). *mandamāna* радостно.
   <sub>attested</sub>
 
 **1b)** — b〉 selig sein (von Göttern und Seligen).
@@ -938,12 +938,12 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **3a)** — a〉 freudig erregt, ausgelassen vor Freude, berauscht, trunken (eig. und übertr.).
 
-- **RU:** — a〉 радостно возбуждённый, исступлённый от радости, опьянённый, хмельной (букв. und перен.).
+- **RU:** — a〉 радостно возбужденный, исступленный от радости, опьяненный, хмельной (букв. и перен.).
   <sub>attested</sub>
 
 **3b)** — b〉 berauscht, freudig erregt, so v. a. brünstig (von Thieren aller Art, insbes. aber vom Elephanten). — Die Lexicographen geben folgende Bedeutungen an: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* und *arcati*.
 
-- **RU:** — b〉 опьянённый, радостно возбуждённый, а также преим. находящийся в течке (о животных всякого рода, особ. — об слоне). — Лексикографы приводят следующие значения: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* и *arcati*.
+- **RU:** — b〉 опьяненный, радостно возбужденный, а также преим. находящийся в течке (о животных всякого рода, особ. — об слоне). — Лексикографы приводят следующие значения: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* и *arcati*.
   <sub>mixed</sub>
 
 **pra-root)** — Caus. *mādayati, ˚te, madayati, ˚te*. *mandayati*;
@@ -973,7 +973,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **pra-abhi)** — Mit *anu* mit Freudebezeugung empfangen oder begleiten, zujubeln, zujauchzen; mit Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) fehlerhaft für *anunmatta*.
 
-- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ошибочно вместо *anunmatta*.
+- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ошибочно вм. *anunmatta*.
   <sub>attested</sub>
 
 **anu-root)** — Mit *abhi*
@@ -983,17 +983,17 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **anu-1)** — 1〉 heiter —, lustig sein.
 
-- **RU:** — 1〉 быть весёлым, жизнерадостным.
+- **RU:** — 1〉 быть веселым, жизнерадостным.
   <sub>attested</sub>
 
 **anu-2)** — 2〉 ergötzen, erheitern. *abhimatta* berauscht.
 
-- **RU:** — 2〉 доставлять наслаждение, веселить. *abhimatta* опьянённый.
+- **RU:** — 2〉 доставлять наслаждение, веселить. *abhimatta* опьяненный.
   <sub>attested</sub>
 
 **ava-root)** — Mit *ava* [KĀṬH. 25,7] wohl fehlerhaft für *anu*.
 
-- **RU:** — С *ava* [KĀṬH. 25,7] — по всей видимости, ошибочно вместо *anu*.
+- **RU:** — С *ava* [KĀṬH. 25,7] — по всей видимости, ошибочно вм. *anu*.
   <sub>attested</sub>
 
 **vi-root)** — Mit *ud*
@@ -1003,7 +1003,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **vi-1)** — 1〉 von Sinnen kommen, verwirrt werden, den Verstand verlierend. *unmatta* von Sinnen seiend, gestört, verrückt, betrunken, berauscht, von einem Wahn ergriffen; wüthend (Thier); aufgeregt (Augen). Compar. *unmattatara*.
 
-- **RU:** — 1〉 лишаться рассудка, приходить в смятение, терять ум. *unmatta* лишившийся рассудка, расстроенный, безумный, пьяный, опьянённый, охваченный манией; неистовый (о животном); возбуждённый (о глазах). Compar. *unmattatara*.
+- **RU:** — 1〉 лишаться рассудка, приходить в смятение, терять ум. *unmatta* лишившийся рассудка, расстроенный, безумный, пьяный, опьяненный, охваченный манией; неистовый (о животном); возбужденный (о глазах). Compar. *unmattatara*.
   <sub>attested</sub>
 
 **vi-2)** — 2〉 erheitern, ergötzen.
@@ -1038,7 +1038,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **pra-mad-1)** — 1〉 sich ergötzen, heiter sein, frohlocken. *pramatta* berauscht, trunken; aufgeregt, brünstig, geil.
 
-- **RU:** — 1〉 наслаждаться, быть весёлым, ликовать. *pramatta* опьянённый, хмельной; возбуждённый, находящийся в течке, похотливый.
+- **RU:** — 1〉 наслаждаться, быть веселым, ликовать. *pramatta* опьяненный, хмельной; возбужденный, находящийся в течке, похотливый.
   <sub>attested</sub>
 
 **pra-mad-2)** — 2〉 achtlos sein, — in Bezug auf (Abl.), nicht achten auf (Loc.), sich eine Unachtsamkeit zu Schulden kommen lassen. *pramatta* sorglos, achtlos, fahrlässig, nicht achtend auf, vernachlässigend, — in Bezug auf (Abl. oder im Comp. vorangehend).
@@ -1048,12 +1048,12 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **pra-mad-3)** — 3〉 über Etwas (Loc.) seine Pflicht vergessen, sich in Bezug auf etwas gehen lassen. *pramatta* mit Loc.
 
-- **RU:** — 3〉 забывать о своём долге в отношении чего-л. (Loc.), распускаться в отношении чего-л. *pramatta* с Loc.
+- **RU:** — 3〉 забывать о своем долге в отношении чего-л. (Loc.), распускаться в отношении чего-л. *pramatta* с Loc.
   <sub>attested</sub>
 
 **pra-mad-4)** — 4〉 in Verwirrung gerathen (von Leblosem).
 
-- **RU:** — 4〉 приходить в беспорядок (о неодушевлённых предметах).
+- **RU:** — 4〉 приходить в беспорядок (о неодушевленных предметах).
   <sub>attested</sub>
 
 **apa-root)** — Caus.
@@ -1128,7 +1128,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **vi3-1)** — 1〉 lustig sein. *vimadant* lustig.
 
-- **RU:** — 1〉 быть весёлым. *vimadant* весёлый.
+- **RU:** — 1〉 быть веселым. *vimadant* веселый.
   <sub>attested</sub>
 
 **vi3-2)** — 2〉 verworren werden, aus der richtigen Verfassung kommen. *vimatta* aus d. r. V. gekommen.
@@ -1168,7 +1168,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **sam2-3)** — 3〉 aufgeregt, hingerissen, berauscht (in übertragener Bed.); brünstig (Elephant).
 
-- **RU:** — 3〉 возбуждённый, восхищённый, опьянённый (в переносном знач.); находящийся в течке (об слоне).
+- **RU:** — 3〉 возбужденный, восхищенный, опьяненный (в переносном знач.); находящийся в течке (об слоне).
   <sub>attested</sub>
 
 **abhi-root)** — Caus. *saṃmādayati* und *saṃmadayati*
@@ -1188,7 +1188,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **abhi-3)** — 3〉 Med. begeistert — oder betrunken sein.
 
-- **RU:** — 3〉 Med. быть воодушевлённым или хмельным.
+- **RU:** — 3〉 Med. быть воодушевленным или хмельным.
   <sub>attested</sub>
 
 **root-paradigm)** **2.** √*mad* (stark √*mād*) in *sadhamad*.
@@ -1208,7 +1208,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **star-note)** — *Caus. *nimādayati* deutlich aussprechen.
 
-- **RU:** — *Caus. *nimādayati* произносить отчётливо.
+- **RU:** — *Caus. *nimādayati* произносить отчетливо.
   <sub>lexicographic</sub>
 
 **ava-root)** — Mit *upani* zum Stillstehen bringen, zurückhalten.
@@ -1238,7 +1238,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **ud-unmadita)** 1. mad mit ud, unmādita trunken gemacht = ˚zum Aufblühen gebracht, [S I,35,2.]
 
-- **RU:** 1. mad с ud, unmādita — приведённый в опьянение = доведённый до расцвета, [S I,35,2.]
+- **RU:** 1. mad с ud, unmādita — приведенный в опьянение = доведенный до расцвета, [S I,35,2.]
   <sub>attested</sub>
 
 **anupra-lassig)** Mit ˚anupra (nach einem gegebenen Beispiele) gleichfalls lässig sein, [Kauṭ. 37,7.] {part=,seq=21278,type=,n=5}
@@ -1275,8 +1275,8 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 **gramm)** — *ni* s. *nimada* langsame und deutliche Aussprache. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
 [SĀY.] bei [WEST.]
 
-- **RU:** — *ni* см. *nimada* медленное и отчётливое произношение. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
-[SĀY.] bei [WEST.]
+- **RU:** — *ni* см. *nimada* медленное и отчетливое произношение. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
+[SĀY.] у [WEST.]
   <sub>lexicographic</sub>
 
 **caus)** — *upani* zum Stillstehen bringen, zurückhalten: *paśavo vasu tānetaddevā atiṣṭhamānāṃstvaṣṭāramabruvannupanimadeti yadāha deva tvaṣṭarvasu rameti*
@@ -1302,7 +1302,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 - **RU:** 1. *mad* с *abhi*
  2)
-[ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьянённый
+[ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьяненный
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
   <sub>attested</sub>
 
@@ -1338,7 +1338,7 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 **3-lustig)** 3) *vimadan* lustig
 [AV. 20,49,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.049.html#av20.049.03)
 
-- **RU:** 3) *vimadan* весёлый
+- **RU:** 3) *vimadan* веселый
 [AV. 20,49,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.049.html#av20.049.03)
   <sub>attested</sub>
 
@@ -1367,9 +1367,9 @@ vgl. 1. *pradiś*.* pra sumatiṃ savitarvāya ūtaye mahasvantaṃ matsaraṃ m
 
 **1)** 1. *mad*
  1) *mādyati yastena (jñānena)* wer sich berauschen lässt durch
-[Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454)
+[Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454 "Spr. (II) 2454: jñānaṃ madadarpaharaṃ mādyati yastena tasya ko vaidyaḥ | amṛtaṃ yasya viṣāyati tasya cikitsā kathaṃ kriyate || — Wissen verscheucht Dünkel und Hochmuth")
 
 - **RU:** 1. *mad*
  1) *mādyati yastena (jñānena)* тот, кто опьяняется
-[Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454)
+[Spr. (II) 2454.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2454 "Spr. (II) 2454: jñānaṃ madadarpaharaṃ mādyati yastena tasya ko vaidyaḥ | amṛtaṃ yasya viṣāyati tasya cikitsā kathaṃ kriyate || — Wissen verscheucht Dünkel und Hochmuth")
   <sub>attested</sub>

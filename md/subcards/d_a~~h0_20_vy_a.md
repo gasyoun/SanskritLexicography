@@ -39,7 +39,7 @@ in der Bed. auseinanderthun, ausweiten, öffnen auch in anderer Verb. als mit Mu
 [AV. 6,56,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.056.html#av06.056.01) [10,4,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.08) [5,42.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.005.html#av10.005.42)
 [VS. 31,22.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?31,22)
 [ŚAT. BR. 1,6,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,4,18) [2,2,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,4,4) [3,6,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,20) [10,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,4,1) [14,9,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,15) По схол. к [P. 1,3,20](https://ashtadhyayi.com/sutraani/1/3/20)
-в значении знач. разверзать, раздвигать, открывать также в ином Verb., нежели о рте: *nadīkūlaṃ vyādadāti, vipādikāṃ (= pādasphoṭaṃ*
+в знач. разверзать, раздвигать, открывать также в ином Verb., нежели о рте: *nadīkūlaṃ vyādadāti, vipādikāṃ (= pādasphoṭaṃ*
 [SIDDH. K.]) *vyā˚*; по
-[SIDDH. K. 163,b,4] мед. в значении знач. открывать рот другого (!): *vyādadate pipīlikāḥ pataṃgasya mukham* .
+[SIDDH. K. 163,b,4] мед. в знач. открывать рот другого (!): *vyādadate pipīlikāḥ pataṃgasya mukham* .
   <sub>attested</sub>

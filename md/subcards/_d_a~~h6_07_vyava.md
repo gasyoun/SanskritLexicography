@@ -13,6 +13,6 @@
 [3571.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3571)
 
 - **RU:** 3) *bandhubhyo vyavadhīyatām* отделяются от
-[Spr. 1412.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1412) *ghanāghanavyavahita (aṃśumant)* разделённый посредством
+[Spr. 1412.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1412) *ghanāghanavyavahita (aṃśumant)* разделенный посредством
 [3571.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3571)
   <sub>attested</sub>

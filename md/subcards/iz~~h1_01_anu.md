@@ -10,5 +10,5 @@
 
 **PPP-refs)** — Vgl. 2. 3. 4 und 5. *iṣ* mit *anu* .
 
-- **RU:** — ср. 2. 3. 4 und 5. *iṣ* mit *anu* .
+- **RU:** — ср. 2. 3. 4 и 5. *iṣ* mit *anu* .
   <sub>attested</sub>

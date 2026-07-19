@@ -36,7 +36,7 @@ _PWG article — 39 sub-card(s), 152 sense(s) · RU 152/152 · EN 0/152_
 **caus-1)** 1) erreichen lassen: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. für *āpipat*; in der Mādhy.-Rec.: *āpīpadat* von *pad*)
 [BṚH. ĀR. UP. 4,5,14.]
 
-- **RU:** 1) давать/заставлять достигнуть: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. вместо *āpipat*; в Мадхй.-Rec.: *āpīpadat* от *pad*)
+- **RU:** 1) давать/заставлять достигнуть: *atraiva mā bhagavānmohāntamāpīpipat* (ungramm. aor. вм. *āpipat*; в Мадхй.-Rec.: *āpīpadat* от *pad*)
 [BṚH. ĀR. UP. 4,5,14.]
   <sub>attested</sub>
 
@@ -270,7 +270,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [RAGH. 16,28](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,28) : *pīḍāmaparyāptavatīva soḍhum* . — desid.
 
 - **RU:** — 2) положить конец, дать насытиться: *bhīma paryāpnuhi*
-[MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) — part. *paryāpta* исполненный, завершённый, достигший полной меры, достигающий высокой меры, просторный, полный, достаточный, удовлетворительный: *kāmānyaḥ kāmayate manyamānaḥ *
+[MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) — part. *paryāpta* исполненный, завершенный, достигший полной меры, достигающий высокой меры, просторный, полный, достаточный, удовлетворительный: *kāmānyaḥ kāmayate manyamānaḥ *
 
 * sa kāmabhirjāyate tatra tatra . paryāptakāmasya* (тот, кто положил конец своим желаниям) *kṛtātmanastu ihaiva sarve pravilīyanti kāmāḥ ..*
 [MUṆḌ. UP. 3,2,2.] *śaśīva paryāptakalaḥ*
@@ -289,7 +289,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [R. 5,25,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,20) [81,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,81,24) [42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,81,42) [2,38,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,10) *paryāptaḥ parihāso 'yametāvat* не продолжай шутку далее
 [N. (BOPP) 11,8.] достаточный, mit dem dat.: *yasya traivarṣikaṃ bhaktaṃ paryāptaṃ bhṛtyavṛttaye*
 [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) Die Ergänzung geht im comp. voran: *mahendropakāraparyāptena vikramamahimnā*
-[VIKR. 11,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?11,11) действию (dat. oder loc. des nom. act. oder auch inf.) oder лицу (gen.) соответствующий, способный справиться: *tvaṃ hi tasya vināśāya paryāptaḥ*
+[VIKR. 11,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?11,11) действию (dat. или loc. des nom. act. или также inf.) или лицу (gen.) соответствующий, способный справиться: *tvaṃ hi tasya vināśāya paryāptaḥ*
 [MBH. 3,13541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13541) *tadātmabharaṇe — paryāptā madvidhānāṃ ca bharaṇāya*
 [R. 2,31,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,23) *ahamārya suparyāpto vadhāyāsya*
 [6,36,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,36,21) *tvamevaikaḥ kāryasya parisādhane . paryāptaḥ*
@@ -462,7 +462,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [8,355.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,355) *enaḥ*
 [11,261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,261) *daṇḍam*
 [8,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,225) [319.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,319) [354.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,354) [9,287.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,287) *jihvāyāśchedam*
-[8,270.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,270) — [N. 1,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,10) [10,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,12) [11,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,17) [28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,28) [24,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,47) [R. 1,1,85.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,85) [3,35,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,6) [VIŚV. 5,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,19) [14,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?14,19) [15,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,19) [RAGH. 12,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,37) [65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,65) [KATHĀS. 5,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,27) [13,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,64) [VID. 42.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?42) [59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [95.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?95) [PRAB. 84,15.] и т.д. — получить в мужья или в жёны: *devānprāpya*
+[8,270.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,270) — [N. 1,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,10) [10,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,12) [11,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,17) [28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,28) [24,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,47) [R. 1,1,85.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,85) [3,35,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,6) [VIŚV. 5,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?5,19) [14,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?14,19) [15,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?15,19) [RAGH. 12,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,37) [65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,65) [KATHĀS. 5,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,27) [13,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,64) [VID. 42.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?42) [59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [95.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?95) [PRAB. 84,15.] и т.д. — получить в мужья или в жены: *devānprāpya*
 [N. 4,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,8) *prāptumicchanti devāstvām*
 [3,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,6) — мед.
 [BHAG. 16,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,13)
@@ -477,7 +477,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [VOP. 2,25.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,25)
 
 - **RU:** — 3) gramm. переходить в форму, в звук (acc.): *nāsikāśabdaśca nasaṃ prāpnoti* и слово *nāsikā* переходит в *nasa*
-[SIDDH. K.] zu [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
+[SIDDH. K.] к [P. 5,4,118.](https://ashtadhyayi.com/sutraani/5/4/118) *sakāratavargau śakāreṇa cavargeṇa vā yoge śakāracavargau kramātprāpnutaḥ*
 [VOP. 2,25.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,25)
   <sub>attested</sub>
 
@@ -498,8 +498,8 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 
 - **RU:** — 5) встречаться, иметь место, наличествовать: *yatra prāpnoṣyoṣadhe*
 [AV. 4,19,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.02) in der грамм. получать силу вследствие правила, вытекать из правила: *sthānyāśrayaṃ kāryamādeśe na prāpnoti*
-[KĀŚ.] zu [P. 1,1,56.](https://ashtadhyayi.com/sutraani/1/1/56) *iko ye guṇavṛddhī prāpnutaste na bhavataḥ*
-[4](https://ashtadhyayi.com/sutraani/1/1/4), схол. In derselben знач. auch pass.: *prāpyamāṇānāṃ yaḥ sadṛśatamaḥ*
+[KĀŚ.] к [P. 1,1,56.](https://ashtadhyayi.com/sutraani/1/1/56) *iko ye guṇavṛddhī prāpnutaste na bhavataḥ*
+[4](https://ashtadhyayi.com/sutraani/1/1/4), схол. In derselben знач. также pass.: *prāpyamāṇānāṃ yaḥ sadṛśatamaḥ*
 [50](https://ashtadhyayi.com/sutraani/1/1/50), схол. — partic. *prāpta*
   <sub>attested</sub>
 
@@ -541,7 +541,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [P. 2,2,4](https://ashtadhyayi.com/sutraani/2/2/4) eine Umstellung der Glieder angenommen, weil *prāpta* activisch aufgefasst wird. Vgl.
 [AK. 3,6,43.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,43)
 
-- **RU:** — 2) обретённый, полученный, навлечённый на себя, взятый на себя
+- **RU:** — 2) обретенный, полученный, навлеченный на себя, взятый на себя
 [AK. 3,2,54.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,54)
 [TRIK. 3,3,172.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,172)
 [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490) *yatprāptaṃ caratā vane — rāmeṇa*
@@ -590,7 +590,7 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 [RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *prāpto 'si nagnaviṣayamimam*
 [VID. 246.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?246) *bhūmiprāpta* достигающий земли
 [KĀTY. ŚR. 17,4,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?17,4,18) *māṃsaprāpta*
-[SUŚR. 2,64,9. 10.] *hastaprāpta* oder *karaprāpta* попавший в руку, то, что совершенно надёжно и не может ускользнуть: *hastaprāptaṃ manye svargaṃ tava*
+[SUŚR. 2,64,9. 10.] *hastaprāpta* или *karaprāpta* попавший в руку, то, что совершенно надежно и не может ускользнуть: *hastaprāptaṃ manye svargaṃ tava*
 [VIŚV. 9,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,5) *saṃtuṣṭe karaprāpte 'pyarthe bhavati nādaraḥ*
 [HIT. I,139.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,139) ср. *tasya hastagato jayaḥ*
 [MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296)
@@ -603,22 +603,22 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 
 **4))** — 4) erlangt habend, sich zugezogen —, auf sich geladen —, erlitten — [ŚAT. BR. 2,4,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,4,6) *brāhmyaṃ prāptena saṃskāraṃ kṣatriyeṇa* [M. 7,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,2) — *utkarṣaṃ yoṣitaḥ prāptāḥ* [9,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,24) *putradārātyayaṃ prāptaḥ* [10,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,99) *parāmāpadam* [9,313.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,313) *nidhanam* [5,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,40) *prāptaḥ syāccaurakilviṣam* [8,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,198) [300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,300) [342.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,342) *āyudhavyasanaprāptam* (vgl. [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24)) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) — [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) [10887.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.10887) [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [13,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,47) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,47)
 
-- **RU:** — 4) приобретший, навлёкший на себя —, взявший на себя —, претерпевший — [ŚAT. BR. 2,4,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,4,6) *brāhmyaṃ prāptena saṃskāraṃ kṣatriyeṇa* [M. 7,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,2) — *utkarṣaṃ yoṣitaḥ prāptāḥ* [9,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,24) *putradārātyayaṃ prāptaḥ* [10,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,99) *parāmāpadam* [9,313.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,313) *nidhanam* [5,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,40) *prāptaḥ syāccaurakilviṣam* [8,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,198) [300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,300) [342.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,342) *āyudhavyasanaprāptam* (ср. [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24)) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) — [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) [10887.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.10887) [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [13,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,47) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,47)
+- **RU:** — 4) приобретший, навлекший на себя —, взявший на себя —, претерпевший — [ŚAT. BR. 2,4,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,4,6) *brāhmyaṃ prāptena saṃskāraṃ kṣatriyeṇa* [M. 7,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,2) — *utkarṣaṃ yoṣitaḥ prāptāḥ* [9,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,24) *putradārātyayaṃ prāptaḥ* [10,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,99) *parāmāpadam* [9,313.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,313) *nidhanam* [5,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,40) *prāptaḥ syāccaurakilviṣam* [8,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,198) [300.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,300) [342.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,342) *āyudhavyasanaprāptam* (ср. [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24)) [7,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,93) — [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) [10887.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.10887) [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [13,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,47) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,47)
   <sub>attested</sub>
 
 **5))** — 5) gekommen, angelangt, da seiend: *sabhāntaḥ sākṣiṇaḥ prāptān* [M. 8,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,79) *kāle prāptaḥ* [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) *prāpto 'syamaravat* [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) [N. 23,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,16) [26,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,31) [INDR. 1,12.] [VID. 43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177) [300.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?300) *ātyayike kārye prāpte* [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *māghaśuklasya vā prāpte pūrvāhṇe prathame 'hani* [4,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,96) *prāpte kāle* [9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) [MBH. 3,2191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2191) *prāpte tu ṣoḍaśe varṣe* [CĀṆ. 11.] Citat bei [MALLIN.] zu [RAGH. 3,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,28) *vayasi prāpte* [N. 1,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,11) *avasare prāpte* [VID. 233.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?233) *prāptāyāṃ rajanau* [77.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?77) *prāptakāla* _m._ und _adj._ [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) [13,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,17) [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [HIT. I,44.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,44) [22,1](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1), v. l. *prāptayauvanā* [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas* [BRĀHMAṆ. 1,28.] *kramaprāpta* [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
 
-- **RU:** — 5) пришедший, прибывший, находящийся здесь: *sabhāntaḥ sākṣiṇaḥ prāptān* [M. 8,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,79) *kāle prāptaḥ* [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) *prāpto 'syamaravat* [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) [N. 23,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,16) [26,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,31) [INDR. 1,12.] [VID. 43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177) [300.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?300) *ātyayike kārye prāpte* [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *māghaśuklasya vā prāpte pūrvāhṇe prathame 'hani* [4,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,96) *prāpte kāle* [9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) [MBH. 3,2191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2191) *prāpte tu ṣoḍaśe varṣe* [CĀṆ. 11.] Citat bei [MALLIN.] zu [RAGH. 3,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,28) *vayasi prāpte* [N. 1,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,11) *avasare prāpte* [VID. 233.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?233) *prāptāyāṃ rajanau* [77.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?77) *prāptakāla* _m._ und _adj._ [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) [13,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,17) [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [HIT. I,44.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,44) [22,1](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1), v. l. *prāptayauvanā* [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas* [BRĀHMAṆ. 1,28.] *kramaprāpta* [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
+- **RU:** — 5) пришедший, прибывший, находящийся здесь: *sabhāntaḥ sākṣiṇaḥ prāptān* [M. 8,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,79) *kāle prāptaḥ* [3,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,105) [112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) *prāpto 'syamaravat* [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) [N. 23,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,16) [26,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,31) [INDR. 1,12.] [VID. 43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?43) [143.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?143) [177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177) [300.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?300) *ātyayike kārye prāpte* [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *māghaśuklasya vā prāpte pūrvāhṇe prathame 'hani* [4,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,96) *prāpte kāle* [9,307.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,307) [MBH. 3,2191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2191) *prāpte tu ṣoḍaśe varṣe* [CĀṆ. 11.] Citat у [MALLIN.] к [RAGH. 3,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,28) *vayasi prāpte* [N. 1,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,11) *avasare prāpte* [VID. 233.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?233) *prāptāyāṃ rajanau* [77.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?77) *prāptakāla* _m._ и _adj._ [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [8,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,12) [13,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,17) [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [HIT. I,44.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,44) [22,1](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?22,1), v. l. *prāptayauvanā* [N. 2,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,7) *aprāptavayas* [BRĀHMAṆ. 1,28.] *kramaprāpta* [N. 12,36.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,36)
   <sub>attested</sub>
 
 **6))** — 6) zum Abschluss, zur Reife gelangt, fertig: *aprāptavyavahāra* dessen Process nicht beendigt ist [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* ein Mädchen, das noch nicht mannbar ist, [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
 
-- **RU:** — 6) достигший завершения, зрелости; готовый: *aprāptavyavahāra* тот, чей процесс не завершён [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* девушка, ещё не достигшая брачного возраста, [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
+- **RU:** — 6) достигший завершения, зрелости; готовый: *aprāptavyavahāra* тот, чей процесс не завершен [YĀJÑ. 2,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,243) *aprāptā kanyā* девушка, еще не достигшая брачного возраста, [M. 9,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,88)
   <sub>attested</sub>
 
 **7))** — 7) gramm. in Folge einer Regel Geltung habend: *gaṇapāṭhātsarvatra prāptā saṃjñā* [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), Sch. *prāptavibhāṣā* oder *prāpte vi˚* s. u. *vibhāṣā* . medic. indicirt: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate* [SUŚR. 2,7,2.] — Die Lexicographen kennen noch zwei Bedeutungen:
 
-- **RU:** — 7) gramm. имеющий силу вследствие правила: *gaṇapāṭhātsarvatra prāptā saṃjñā* [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), схол. *prāptavibhāṣā* oder *prāpte vi˚* см. *vibhāṣā* . мед. указывает: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate* [SUŚR. 2,7,2.] — Лексикографы знают ещё два значения:
+- **RU:** — 7) gramm. имеющий силу вследствие правила: *gaṇapāṭhātsarvatra prāptā saṃjñā* [P. 1,1,34](https://ashtadhyayi.com/sutraani/1/1/34), схол. *prāptavibhāṣā* или *prāpte vi˚* см. *vibhāṣā* . мед. указывает: *gatimatsu ca rogeṣu bhedanaṃ prāptamucyate* [SUŚR. 2,7,2.] — Лексикографы знают еще два значения:
   <sub>lexicographic</sub>
 
 **8))** 8) gestellt (*praṇihita*) [AK. 3,2,36.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,36)
@@ -628,12 +628,12 @@ Sch. zu [VARARUCI 10,2] in [LASSEN, Institutt. 7.] — desid. vom caus. zu errei
 
 **9))** — 9) schicklich [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* oder *prāpya* [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), Sch. [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
 
-- **RU:** — 9) подобающий, приличествующий [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* oder *prāpya* [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), схол. [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
+- **RU:** — 9) подобающий, приличествующий [H. 743.](https://sanskrit-lexicon-scans.github.io/abch2/app1?743) — caus. (gerund. *prāpayya* или *prāpya* [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57), схол. [VOP. 26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215))
   <sub>lexicographic</sub>
 
 **Kaus. 1))** 1) Jmd oder Etwas wohin (acc. oder Ortsadv.) gelangen lassen, treiben, führen, bringen, befördern; act.: *prāpaya na ācāryakulam* [CHĀND. UP. 4,5,1.] [MBH. 1,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.818) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1850) [2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2998) [4,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1664) [ARJ. 4,23.] [R. 2,40,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,11) [4,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,19) [PAÑCAT. 114,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,23) [115,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,3) [KATHĀS. 10,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,189) [22,179.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,179) [VID. 34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?34) [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), Sch. *prāpayainam — ito janapadātparam* [R. 2,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,10) [MBH. 3,13289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13289) — med. [ŚAT. BR. 1,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,16) [MBH. 4,1739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1739) [1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1748) *punargatvā pārthivaṃ taṃ sametya vākyaṃ madīyaṃ prāpayasvārthayuktam* [14,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.242) — pass.: *tayā — śmaśānaṃ prāpitaḥ so 'bhūt* [KATHĀS. 25,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,214) *sā mañjūṣā prāpitā bahubhirjanaiḥ* [4,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,76) *yaiḥ — paramaṃ mṛtyoḥ padaṃ prāpitaḥ* [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (eine Angelegenheit) [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
 
-- **RU:** 1) заставить кого-л. или что-л. (acc. oder Ortsadv.) достичь куда-л.; гнать, вести, приводить, доставлять; act.: *prāpaya na ācāryakulam* [CHĀND. UP. 4,5,1.] [MBH. 1,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.818) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1850) [2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2998) [4,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1664) [ARJ. 4,23.] [R. 2,40,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,11) [4,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,19) [PAÑCAT. 114,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,23) [115,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,3) [KATHĀS. 10,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,189) [22,179.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,179) [VID. 34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?34) [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), схол. *prāpayainam — ito janapadātparam* [R. 2,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,10) [MBH. 3,13289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13289) — мед. [ŚAT. BR. 1,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,16) [MBH. 4,1739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1739) [1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1748) *punargatvā pārthivaṃ taṃ sametya vākyaṃ madīyaṃ prāpayasvārthayuktam* [14,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.242) — pass.: *tayā — śmaśānaṃ prāpitaḥ so 'bhūt* [KATHĀS. 25,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,214) *sā mañjūṣā prāpitā bahubhirjanaiḥ* [4,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,76) *yaiḥ — paramaṃ mṛtyoḥ padaṃ prāpitaḥ* [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (дело) [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
+- **RU:** 1) заставить кого-л. или что-л. (acc. или Ortsadv.) достичь куда-л.; гнать, вести, приводить, доставлять; act.: *prāpaya na ācāryakulam* [CHĀND. UP. 4,5,1.] [MBH. 1,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.818) [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1850) [2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2998) [4,1664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1664) [ARJ. 4,23.] [R. 2,40,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,11) [4,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,19) [PAÑCAT. 114,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?114,23) [115,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,3) [KATHĀS. 10,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,189) [22,179.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,179) [VID. 34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?34) [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36), схол. *prāpayainam — ito janapadātparam* [R. 2,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,10) [MBH. 3,13289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13289) — мед. [ŚAT. BR. 1,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,16) [MBH. 4,1739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1739) [1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1748) *punargatvā pārthivaṃ taṃ sametya vākyaṃ madīyaṃ prāpayasvārthayuktam* [14,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.242) — pass.: *tayā — śmaśānaṃ prāpitaḥ so 'bhūt* [KATHĀS. 25,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,214) *sā mañjūṣā prāpitā bahubhirjanaiḥ* [4,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,76) *yaiḥ — paramaṃ mṛtyoḥ padaṃ prāpitaḥ* [PRAB. 18,7.] *śvaśrūjanaṃ sarvamanukrameṇa vijñāpaya prāpitamatpraṇāmaḥ* [RAGH. 14,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,60) *na ca prāpitamanyena grasedartham* (дело) [M. 8,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,43)
   <sub>attested</sub>
 
 **Kaus. 2))** — 2) Jmd (acc.) Etwas (acc.) erlangen lassen: *rājānam — prāpayenmahatīṃ śriyam* [MBH. 2,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.171) *vyākaraṇaṃ* (acc.) *loke pratiṣṭhāṃ prāpayiṣyati* [KATHĀS. 2,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,69) *harīṇāṃ prāpito rājyaṃ tvaṃ durātmā mahātmanā* [R. 4,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,25) *mayaiṣa śaṣpabhuksācivyaṃ prāpitaḥ* [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) *prāpito mukhyamantritām* [RĀJA-TAR. 5,424.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424)
@@ -933,7 +933,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 **PPP-3)** — 3) in Besitz gelangt, befriedigt: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
 
-- **RU:** — 3) вступивший во владение, удовлетворённый: *sa yo vyāpto gataśrīriva manyeta*
+- **RU:** — 3) вступивший во владение, удовлетворенный: *sa yo vyāpto gataśrīriva manyeta*
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4)
   <sub>attested</sub>
 
@@ -950,7 +950,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 - **RU:** — *abhivi* простираться до какого-л. предела: *abhivyāpya* до и включая: *bhrājabhāseti kvipamabhivyāpya*
 [P. 2,1,134](https://ashtadhyayi.com/sutraani/2/1/134), схол.
 *adhikāro 'yaṃ yūnastirityabhivyāpya*
-[SIDDH. K.] zu [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
+[SIDDH. K.] к [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
   <sub>attested</sub>
 
 **addendum)** — Vgl. *abhivyāpaka* fgg.
@@ -1016,7 +1016,7 @@ Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .
 [KĀTY. ŚR. 24,6,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,26)
 [KATHĀS. 22,234.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,234)
 
-- **RU:** 1) завершённый, оконченный, подошедший к концу
+- **RU:** 1) завершенный, оконченный, подошедший к концу
 [M. 5,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,88) [11,81](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,81) (*samāpte dvādaśe varṣe*).
 [R. 3,49,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,27)
 [RAGH. 3,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,65)
@@ -1125,10 +1125,10 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [PAT.] zu [P. 8,3,58.](https://ashtadhyayi.com/sutraani/8/3/58) *tasminparisamāpte tu rājñaḥ satre*
 [MBH. 1,8139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8139)
 
-- **RU:** — *parisam* pass. получать своё полное завершение: *sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate*
+- **RU:** — *parisam* pass. получать свое полное завершение: *sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate*
 [BHAG. 4,33.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,33) *tvayi tu parisamāptaṃ bandhukṛtyaṃ janānām*
 [ŚĀK. 105.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105) *pratyekaṃ vyavāyaśabdaḥ parisamāpyate*
-[PAT.] zu [P. 8,3,58.](https://ashtadhyayi.com/sutraani/8/3/58) *tasminparisamāpte tu rājñaḥ satre*
+[PAT.] к [P. 8,3,58.](https://ashtadhyayi.com/sutraani/8/3/58) *tasminparisamāpte tu rājñaḥ satre*
 [MBH. 1,8139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8139)
   <sub>attested</sub>
 
@@ -1154,7 +1154,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **mit_T5)** — Mit *anusaṃpra* erreichen, anlangen bei, in antreffen.
 
-- **RU:** — Mit *anusaṃpra* достигать, прибывать к, заставать в.
+- **RU:** — С *anusaṃpra* достигать, прибывать к, заставать в.
   <sub>attested</sub>
 
 **ppp_T6_1)** — Partic. *anusaṃprāpta*
@@ -1177,7 +1177,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 **mit_T10_1)** — Mit *abhisaṃpra*
 — 1〉 erreichen, gelangen zu.
 
-- **RU:** — Mit *abhisaṃpra*
+- **RU:** — С *abhisaṃpra*
 — 1〉 достигать, приходить к.
   <sub>attested</sub>
 
@@ -1200,14 +1200,14 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **mit_T14)** — Mit *upasaṃpra* gelangen zu.
 
-- **RU:** — Mit *upasaṃpra* достигать, приходить к.
+- **RU:** — С *upasaṃpra* достигать, приходить к.
   <sub>attested</sub>
 
 **ppp_T15_1)** — Partic. *upasaṃprāpta*
 — 1〉 sich zugezogen habend, gerathen in (Acc.).
 
 - **RU:** — Partic. *upasaṃprāpta*
-— 1〉 навлёкший на себя, попавший в (Acc.).
+— 1〉 навлекший на себя, попавший в (Acc.).
   <sub>attested</sub>
 
 **ppp_T15_2)** — 2〉 herangekommen.
@@ -1217,13 +1217,13 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **mit_T18)** — Mit *prati* Desid. werden um (ein Mädchen).
 
-- **RU:** — Mit *prati* Desid. добиваться (девушки).
+- **RU:** — С *prati* Desid. добиваться (девушки).
   <sub>attested</sub>
 
 **mit_T20_1)** — Mit *vi*
 — 1〉 hindurchreichen, durchdringen, erfüllen, ausfüllen.
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
 — 1〉 пронизывать, проникать, наполнять, заполнять.
   <sub>attested</sub>
 
@@ -1236,7 +1236,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 - **RU:** — Partic. *vyāpta*
-— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так преим. целиком освещённый [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
+— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так преим. целиком освещенный [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
   <sub>attested</sub>
 
 **ppp_T22_2)** — 2〉 eingenommen, in Besitz genommen.
@@ -1246,12 +1246,12 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **ppp_T22_3)** — 3〉 behaftet mit (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
 
-- **RU:** — 3〉 поражённый, страдающий (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
+- **RU:** — 3〉 пораженный, страдающий (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
   <sub>attested</sub>
 
 **ppp_T22_4)** — 4〉 in etwas Anderm eingeschlossen, — enthalten [BHĀṢĀP. 67].
 
-- **RU:** — 4〉 заключённый в чём-либо другом, — содержащийся [BHĀṢĀP. 67].
+- **RU:** — 4〉 заключенный в чем-либо другом, — содержащийся [BHĀṢĀP. 67].
   <sub>attested</sub>
 
 **ppp_T22_5)** — 5〉 wohlhabend [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
@@ -1266,13 +1266,13 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **mit_T36)** — Mit *abhivi* Absol. *˚vyāpya* bis — (Acc.) inclusive.
 
-- **RU:** — Mit *abhivi* Absol. *˚vyāpya* вплоть до — (Acc.) включительно.
+- **RU:** — С *abhivi* Absol. *˚vyāpya* вплоть до — (Acc.) включительно.
   <sub>attested</sub>
 
 **mit_T40_1)** — Mit *sam*
 — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 обретать, становиться причастным. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
   <sub>attested</sub>
 
@@ -1288,7 +1288,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
 
-- **RU:** — Partic. *samāpta* завершённый, оконченный, доведённый до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
+- **RU:** — Partic. *samāpta* завершенный, оконченный, доведенный до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) ошибочно вм. *mamāptaḥ*.
   <sub>attested</sub>
 
 **caus_T48_1)** — Caus.
@@ -1320,19 +1320,19 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **mit_T54)** — Mit *anusam* Caus. dazu vollenden, nachher zu Stande bringen.
 
-- **RU:** — Mit *anusam* Caus. дополнительно завершать, впоследствии осуществлять.
+- **RU:** — С *anusam* Caus. дополнительно завершать, впоследствии осуществлять.
   <sub>attested</sub>
 
 **mit_T56_1)** — Mit *parisam* Pass.
 — 1〉 enthalten sein in (Loc.).
 
-- **RU:** — Mit *parisam* Pass.
+- **RU:** — С *parisam* Pass.
 — 1〉 содержаться в (Loc.).
   <sub>attested</sub>
 
 **mit_T56_2)** — 2〉 sich erstrecken auf, gehören zu (Loc. oder *prati*).
 
-- **RU:** — 2〉 распространяться на, относиться к (Loc. oder *prati*).
+- **RU:** — 2〉 распространяться на, относиться к (Loc. или *prati*).
   <sub>attested</sub>
 
 **mit_T56_3)** — 3〉 das Endziel erreichen.
@@ -1344,12 +1344,12 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 — 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
 
 - **RU:** — Partic. *parisamāpta*
-— 1〉 полностью завершённый [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
+— 1〉 полностью завершенный [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
   <sub>attested</sub>
 
 **ppp_T61_2)** — 2〉 vollendet, so v. a. auf dem Höhepunkt stehend [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
 
-- **RU:** — 2〉 совершенный, завершённый, так преим. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
+- **RU:** — 2〉 совершенный, завершенный, так преим. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
   <sub>attested</sub>
 
 **caus_T66)** — Caus. vollenden [JĀBĀLOP. S. 444].
@@ -1372,13 +1372,13 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 — Mit *sam* 4〉 mit oder ohne *ātmānam* seinem Leben ein Ende machen [ĀPAST. 1,25,2]. [7].
 
 - **RU:** √*āp* mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11].
-— Mit *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17].
-— Mit *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
+— С *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17].
+— С *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
   <sub>attested</sub>
 
 **vi_4)** √*āp* mit *vi*, *vyāpta* 4〉 in Allem enthalten, überallhin verbreitet [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 
-- **RU:** √*āp* mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem коммент. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
+- **RU:** √*āp* mit *vi*, *vyāpta* 4〉 содержащийся во всем, распространенный повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem коммент. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* также = *khyāta*.
   <sub>attested</sub>
 
 **cross_refs)** √*āp* mit *anu* Desid. 3.
@@ -1388,10 +1388,10 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 — Mit *sam* I. 3.
 
 - **RU:** √*āp* mit *anu* Desid. 3.
-— Mit *ava* Caus. 1.
-— Mit *payarva* 3.
-— Mit *vi* I. 6.
-— Mit *sam* I. 3.
+— С *ava* Caus. 1.
+— С *payarva* 3.
+— С *vi* I. 6.
+— С *sam* I. 3.
   <sub>attested</sub>
 
 **pra_I)** √*āp* mit *pra*, *prāpta* I. passend, schicklich, rathsam [JĀTAKAM. 22].
@@ -1411,17 +1411,17 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **anu_verb)** *āp* mit *anu* Desid. einstimmen. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11]. — Mit *paryava* Etwas ganz in sich aufnehmen, sich ganz zu eigen machen [VAJRACCH. 28,14]. [30,17]. — Mit *sam* 4〉 mit oder ohne *ātmānam* seinem Leben ein Ende machen [ĀPAST. 1,25,2]. [7].
 
-- **RU:** *āp* mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11]. — Mit *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17]. — Mit *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
+- **RU:** *āp* mit *anu* Desid. соглашаться, одобрять. *indreṇa bāḍhamityevamanvīpsitam* (impers.) [VP. 4,2,11]. — С *paryava* целиком усваивать, полностью присваивать себе [VAJRACCH. 28,14]. [30,17]. — С *sam* 4〉 с *ātmānam* или без него положить конец своей жизни [ĀPAST. 1,25,2]. [7].
   <sub>attested</sub>
 
 **vi_4)** *āp* mit *vi*, *vyāpta* 4〉 in Allem enthalten, überallhin verbreitet [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem Comm. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
 
-- **RU:** *āp* mit *vi*, *vyāpta* 4〉 содержащийся во всём, распространённый повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem коммент. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* auch = *khyāta*.
+- **RU:** *āp* mit *vi*, *vyāpta* 4〉 содержащийся во всем, распространенный повсюду [Ind. St. 9,137]. Superl. *˚tama* [146]. *vyāptadeha* [ŚIŚ. 18,5] nach dem коммент. = *sarvāṅgīna*. Nach [MED. t. 57](https://sanskrit-lexicon-scans.github.io/medini/app1?t,57) ist *vyāpta* также = *khyāta*.
   <sub>attested</sub>
 
 **cross_refs)** *āp* mit *anu* Desid. 3. — Mit *ava* Caus. 1. — Mit *payarva* 3. — Mit *vi* I. 6. — Mit *sam* I. 3.
 
-- **RU:** *āp* mit *anu* Desid. 3. — Mit *ava* Caus. 1. — Mit *payarva* 3. — Mit *vi* I. 6. — Mit *sam* I. 3.
+- **RU:** *āp* mit *anu* Desid. 3. — С *ava* Caus. 1. — С *payarva* 3. — С *vi* I. 6. — С *sam* I. 3.
   <sub>attested</sub>
 
 **pra_I)** *āp* mit *pra*, *prāpta* I. passend, schicklich, rathsam [JĀTAKAM. 22].
@@ -1441,37 +1441,37 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 
 **ava_caus)** Mit ava [Kaus.] jemand (Akk.) etwas (Akk.) erlangen lassen, [Naiṣ. 8,89.]
 
-- **RU:** Mit ava [Kaus.] заставлять кого-л. (Акк.) достигать чего-л. (Акк.), [Naiṣ. 8,89.]
+- **RU:** С ava [Kaus.] заставлять кого-л. (Акк.) достигать чего-л. (Акк.), [Naiṣ. 8,89.]
   <sub>attested</sub>
 
 **paryava)** Mit paryava etwas ganz in sich aufnehmen, sich ganz zu eigen machen, [Vajracch. 28,14; 30,17.]
 
-- **RU:** Mit paryava целиком усваивать что-л., полностью присваивать себе, [Vajracch. 28,14; 30,17.]
+- **RU:** С paryava целиком усваивать что-л., полностью присваивать себе, [Vajracch. 28,14; 30,17.]
   <sub>attested</sub>
 
 **para)** Mit ˚para ausreichen, [H 29,47.]
 
-- **RU:** Mit ˚para быть достаточным, хватать, [H 29,47.]
+- **RU:** С ˚para быть достаточным, хватать, [H 29,47.]
   <sub>attested</sub>
 
 **pra_prapta)** Mit pra, prāpta passend, schicklich, ratsam, [Jātakam. 22.]
 
-- **RU:** Mit pra, prāpta подходящий, приличествующий, целесообразный, [Jātakam. 22.]
+- **RU:** С pra, prāpta подходящий, приличествующий, целесообразный, [Jātakam. 22.]
   <sub>attested</sub>
 
 **paripra)** Mit paripra, ˚pariprāpta = vijñapta, [S I,196,6.]
 
-- **RU:** Mit paripra, ˚pariprāpta = vijñapta, [S I,196,6.]
+- **RU:** С paripra, ˚pariprāpta = vijñapta, [S I,196,6.]
   <sub>attested</sub>
 
 **vi_vyapta_4)** Mit vi, vyāpta 4. in allem enthalten, überallhin verbreitet, [Ind. St. 9,137.] Superl. ˚tama 146. vyāptadeha [Śiś. 18,5] nach dem Komm. = sarvāṅgīna. Nach [Med. 1,57] ist vyāpta auch = khyāta.
 
-- **RU:** Mit vi, vyāpta 4. содержащийся во всём, распространённый повсюду, [Ind. St. 9,137.] Superl. ˚tama 146. vyāptadeha [Śiś. 18,5] nach dem Komm. = sarvāṅgīna. Nach [Med. 1,57] ist vyāpta auch = khyāta.
+- **RU:** С vi, vyāpta 4. содержащийся во всем, распространенный повсюду, [Ind. St. 9,137.] Superl. ˚tama 146. vyāptadeha [Śiś. 18,5] nach dem Komm. = sarvāṅgīna. Nach [Med. 1,57] ist vyāpta также = khyāta.
   <sub>attested</sub>
 
 **sam_4)** Mit sam 4. mit oder ohne ātmānam seinem Leben ein Ende machen, [Āpast. 1,25,2. 7.]
 
-- **RU:** Mit sam 4. с ātmānam или без него положить конец своей жизни, [Āpast. 1,25,2. 7.]
+- **RU:** С sam 4. с ātmānam или без него положить конец своей жизни, [Āpast. 1,25,2. 7.]
   <sub>attested</sub>
 
 **udava)** āp mit ˚udava, erreichen, überziehen, [Kir. IX,11.]
@@ -1516,7 +1516,7 @@ s. [P. 6,4,57](https://ashtadhyayi.com/sutraani/6/4/57)) *sā svastyayanam*
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. herbeiholen
 [PAÑCAV. BR. 20,3,2.] partic. *īpsita*
 
-- **RU:** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* принесённый
+- **RU:** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* принесенный
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. доставлять
 [PAÑCAV. BR. 20,3,2.] partic. *īpsita*
   <sub>attested</sub>
@@ -1626,7 +1626,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 **1)** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* wohl alle Flüssigkeiten sind schliesslich Wasser
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
 
-- **RU:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* «по всей видимости, все жидкости в конечном счёте суть вода»
+- **RU:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* «по всей видимости, все жидкости в конечном счете суть вода»
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
   <sub>attested</sub>
 
@@ -1674,7 +1674,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
 
 - **RU:** — *vi*, partic. *vyāpta*
- 1) «включённый, охваченный чем-либо другим»
+ 1) «включенный, охваченный чем-либо другим»
 [BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam*, так преим. «подпадает под понятие преходящести»
 [TARKAS. 41.] — caus. *vyāpita* «наполненный, исполненный»
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
@@ -1692,9 +1692,9 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [ṚV. PRĀT. 13,13.] — caus.
 
 - **RU:** — *sam*, partic. *samāpta*
- 1) *svātmanyeva samāptahemamahimā merurna me rocate* «так как великолепие золота в Меру уже завершилось само в себе» (т.е. «другим не достаётся), то не может он меня радовать»,
+ 1) *svātmanyeva samāptahemamahimā merurna me rocate* «так как великолепие золота в Меру уже завершилось само в себе» (т.е. «другим не достается), то не может он меня радовать»,
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *samāptavaradakṣiṇāḥ (kratavaḥ)* «полный, в полном составе»
-[523](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?523), v. l. *asamāpta* «на что-либо» (instr.) «неполный, в чём-либо недостающий»
+[523](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?523), v. l. *asamāpta* «на что-либо» (instr.) «неполный, в чем-либо недостающий»
 [ṚV. PRĀT. 13,13.] — caus.
   <sub>attested</sub>
 
@@ -1743,7 +1743,7 @@ Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) is
 
 - **RU:** *āp*
  2)
-стк. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделённый
+стк. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделенный
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
   <sub>attested</sub>
 
@@ -1756,17 +1756,17 @@ Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) is
 
 **3)** — *pra*
  2) mit infin. bekommen zu: *khādituṃ prāpyate yābat*
-[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) — partic. *prāpta*
+[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515 "Spr. (II) 7515: khādituṃ prāpyate yāvattāvadeva hi bāndhavāḥ | śiśire padminīṃ bhṛṅgaḥ kaṭākṣeṇāpi nekṣate || — Nur so lange, als sie Etwas zu essen bekommen, sind die Verwandten da: in der kühlen Jahreszeit würdigt eine Biene eine Lotuspflanze nicht einmal eines Seitenblickes.") — partic. *prāpta*
 
 - **RU:** — *pra*
  2) с infin. получать в качестве: *khādituṃ prāpyate yābat*
-[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) — partic. *prāpta*
+[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515 "Spr. (II) 7515: khādituṃ prāpyate yāvattāvadeva hi bāndhavāḥ | śiśire padminīṃ bhṛṅgaḥ kaṭākṣeṇāpi nekṣate || — Nur so lange, als sie Etwas zu essen bekommen, sind die Verwandten da: in der kühlen Jahreszeit würdigt eine Biene eine Lotuspflanze nicht einmal eines Seitenblickes.") — partic. *prāpta*
   <sub>attested</sub>
 
 **4)** 4) *tejaḥkṣamāyaśaḥ˚* so v. a. versehen mit
 [R. ed. Bomb. 1,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,7,8)
 
-- **RU:** 4) *tejaḥkṣamāyaśaḥ˚* так преим. снабжённый чем-л.
+- **RU:** 4) *tejaḥkṣamāyaśaḥ˚* так преим. снабженный чем-л.
 [R. ed. Bomb. 1,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,7,8)
   <sub>attested</sub>
 

@@ -80,7 +80,7 @@
 **3)** — 3) *prabhinna* entstellt, verändert, verstimmt: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.259)
 
-- **RU:** — 3) *prabhinna* искажённый, изменившийся, расстроенный: *na tvāṃ prabhinnaṃ (= parājitaṃ* схол.). *jānāmi*
+- **RU:** — 3) *prabhinna* искаженный, изменившийся, расстроенный: *na tvāṃ prabhinnaṃ (= parājitaṃ* схол.). *jānāmi*
 [MBH. 16,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.259)
   <sub>attested</sub>
 
@@ -88,7 +88,7 @@
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,8)
 
-- **RU:** — 4) *prabhinnāñjana* так преим. *bhinnāñjana* глазная мазь, растёртая с маслом
+- **RU:** — 4) *prabhinnāñjana* так преим. *bhinnāñjana* глазная мазь, растертая с маслом
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,8)
   <sub>attested</sub>

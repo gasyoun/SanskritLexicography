@@ -90,22 +90,22 @@
 
 **14c)** — c〉 aufgewirbelt, erregt (Staub).
 
-- **RU:** — c〉 взметённый, поднятый (пыль).
+- **RU:** — c〉 взметенный, поднятый (пыль).
   <sub>attested</sub>
 
 **14d)** — d〉 getroffen, — von (Instr. oder im Comp. vorangehend).
 
-- **RU:** — d〉 поражённый, — чем-л. (Instr. или в Comp. предшествующем).
+- **RU:** — d〉 пораженный, — чем-л. (Instr. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **14e)** — e〉 getroffen von, so v. a. heimgesucht —, gequält —, mitgenommen von, zu kämpfen habend mit (Instr. oder im Comp. vorangehend).
 
-- **RU:** — e〉 поражённый чем-л., а именно преим. постигнутый —, мучимый —, страдающий от, вынужденный бороться с (Instr. или в Comp. предшествующем).
+- **RU:** — e〉 пораженный чем-л., а именно преим. постигнутый —, мучимый —, страдающий от, вынужденный бороться с (Instr. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **14f)** — f〉 getödtet, erschlagen.
 
-- **RU:** — f〉 убитый, сражённый.
+- **RU:** — f〉 убитый, сраженный.
   <sub>attested</sub>
 
 **14g)** — g〉 in der Astronomie so v. a. berührt.
@@ -125,12 +125,12 @@
 
 **14k)** — k〉 vernichtet, zu Grunde gerichtet, dahin (insbes. am Anfange eines adj. Comp.); verloren von Personen, so v. a. an Allem verzweifelnd.
 
-- **RU:** — k〉 уничтоженный, погублённый, погибший (особ. в начале adj. Comp.); пропавший о людях, а именно преим. отчаявшийся во всём.
+- **RU:** — k〉 уничтоженный, погубленный, погибший (особ. в начале adj. Comp.); пропавший о людях, а именно преим. отчаявшийся во всем.
   <sub>attested</sub>
 
 **14l)** — l〉 so v. a. werthlos, von keinen Nutzen.
 
-- **RU:** — l〉 а именно преим. никчёмный, бесполезный.
+- **RU:** — l〉 а именно преим. никчемный, бесполезный.
   <sub>attested</sub>
 
 **14m)** — m〉 mangelhaft [SĀH. D. 200,15](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?200,15).
@@ -140,12 +140,12 @@
 
 **14n)** — n〉 nichtsnutzig, verwünscht [HARṢAC. 157,18]. **brāhmaṇihatā* (so!) eine nichtsnutzige Brahmanin.
 
-- **RU:** — n〉 негодный, проклятый [HARṢAC. 157,18]. **brāhmaṇihatā* (так!) никчёмная брахманка.
+- **RU:** — n〉 негодный, проклятый [HARṢAC. 157,18]. **brāhmaṇihatā* (так!) никчемная брахманка.
   <sub>attested</sub>
 
 **14o)** — o〉 betroffen, hintergangen [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
 
-- **RU:** — o〉 обманутый, введённый в заблуждение [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
+- **RU:** — o〉 обманутый, введенный в заблуждение [177,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?177).
   <sub>attested</sub>
 
 **14p)** — p〉 gekommen um (_Adv._ auf *tas*). *dṛṣṭi˚* dem Anblick entzogen.
@@ -210,17 +210,17 @@
 
 **prefix-anu-2a)** — a〉 angesteckt —, befestigt an (Loc.).
 
-- **RU:** — a〉 прикреплённый —, привязанный к (Loc.).
+- **RU:** — a〉 прикрепленный —, привязанный к (Loc.).
   <sub>attested</sub>
 
 **prefix-anu-2b)** — b〉 zu Grunde gerichtet.
 
-- **RU:** — b〉 погублённый, уничтоженный.
+- **RU:** — b〉 погубленный, уничтоженный.
   <sub>attested</sub>
 
 **prefix-anu-des)** — Desid. entkommen wollen. Vielleicht ist *atyajigāṃsat* statt *atyajighāṃsat* zu lesen.
 
-- **RU:** — Desid. желать вырваться, спастись бегством. Быть может, следует читать *atyajigāṃsat* вместо *atyajighāṃsat*.
+- **RU:** — Desid. желать вырваться, спастись бегством. Быть может, следует читать *atyajigāṃsat* вм. *atyajighāṃsat*.
   <sub>attested</sub>
 
 **prefix-prati-head)** — Mit *vyati*
@@ -275,7 +275,7 @@
 
 **prefix-apa-3)** — 3〉 fehlerhaft für *abhi* [UTTARAR. 90,19].
 
-- **RU:** — 3〉 ошибочно вместо *abhi* [UTTARAR. 90,19].
+- **RU:** — 3〉 ошибочно вм. *abhi* [UTTARAR. 90,19].
   <sub>attested</sub>
 
 **prefix-apa-4-head)** — 4〉 *apahata*
@@ -305,7 +305,7 @@
 
 **prefix-apa-4e)** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) fehlerhaft für *apahṛta*.
 
-- **RU:** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) ошибочно вместо *apahṛta*.
+- **RU:** — e〉 [KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) ошибочно вм. *apahṛta*.
   <sub>attested</sub>
 
 **prefix-apa-in-cpd)** — Desid. in *apajighāṃsu*.
@@ -370,7 +370,7 @@
 
 **prefix-abhi-5a)** — a〉 getroffen, geschlagen, gestossen. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
 
-- **RU:** — a〉 поражённый, ударенный, толчком сбитый. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
+- **RU:** — a〉 пораженный, ударенный, толчком сбитый. *kopamarudabhihata* [ŚIŚ. 15,84 (50)].
   <sub>attested</sub>
 
 **prefix-abhi-5b)** — b〉 angeschlagen (von einer Trommel und andern musikalischen Instrumenten).
@@ -400,7 +400,7 @@
 
 **prefix-abhi-5g)** — g〉 getroffen von, so v. a. heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend). Caus. s. u. *ghātay*.
 
-- **RU:** — g〉 поражённый чем-л., а именно преим. постигнутый, одержимый (Instr. или в Comp. предшествующем). Caus. см. *ghātay*.
+- **RU:** — g〉 пораженный чем-л., а именно преим. постигнутый, одержимый (Instr. или в Comp. предшествующем). Caus. см. *ghātay*.
   <sub>attested</sub>
 
 **prefix-abhi-des)** — Desid. treffen —, niederschlagen wollen.
@@ -430,7 +430,7 @@
 
 **prefix-ava-3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 
-- **RU:** — 3〉 бить по или о (Acc.). Вместо *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
+- **RU:** — 3〉 бить по или о (Acc.). Вм. *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
   <sub>attested</sub>
 
 **prefix-ava-4)** — 4〉 zurückschlagen, — stossen; verscheuchen, abwehren.

@@ -79,7 +79,7 @@ gebrauchend
 [MĀRK. P. 14,85.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,85)
 [HIT. 122,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,15) *ardhopabhuktena bisena*
 [KUMĀRAS. 3,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,37)
-[PAÑCAT. 104,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?104,6) *tvaṅgatturaṃgasaṃghātakhurāgrāṅkanakhakṣatā . pathi tasyābhavadbhūmirupabhukteva bhūyateḥ ..* как бы поглощённый
+[PAÑCAT. 104,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?104,6) *tvaṅgatturaṃgasaṃghātakhurāgrāṅkanakhakṣatā . pathi tasyābhavadbhūmirupabhukteva bhūyateḥ ..* как бы поглощенный
 [KATHĀS. 18,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,7) *āśayā saṃcitaṃ dravyaṃ kālenaivopabhujyate*
 [MBH. 13,7592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7592) *anupabhujyamānaśca niṣprayojana eva saḥ (arthaḥ)*
 [HIT. 46,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?46,8), v. l. *tapasāmupabhuñjānāḥ phalāni* вкушая

@@ -51,7 +51,7 @@ _PWG article — 34 sub-card(s), 94 sense(s) · RU 94/94 · EN 0/94_
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) [ŚAT. BR. 12,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,5) *pibasva somaṃ sutamadya taṃ mayā*
 [MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) *sute somasahasre*
 [1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) *sutam*
-[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694) wohl fehlerhaft für *hutam* . masc. sg. und pl. der Saft d. h. Soma
+[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694 "Spr. (II) 2694: dattamiṣṭaṃ tapastaptaṃ tīrthayātrā hutaṃ tathā | sarvābhayapradānasya kalāṃ nārhanti ṣoḍaśīm || — (196.) Spenden, Trankopfer vollbrachte Kasteiungen, Wallfahrten und Brandopfer sind nicht ein Sechszehntel von dem werth, was die Sicherstellung aller Geschöpfe vor jeglicher Unbill gilt.") wohl fehlerhaft für *hutam* . masc. sg. und pl. der Saft d. h. Soma
 [NAIGH. 2,7.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,7) *suṣvāṇaḥ pavate sutaḥ*
 [ṚV. 9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *parīto ṣiñcatā sutam*
 [107,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.01) [2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [1,135,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.01) [2,15,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.01) [4,32,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.11) *prātaḥ sutamapibaḥ*
@@ -66,7 +66,7 @@ _PWG article — 34 sub-card(s), 94 sense(s) · RU 94/94 · EN 0/94_
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
 [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta*
-[10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* und *sunvat*
+[10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* и *sunvat*
 [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; мед. *sunve*
 3. sg. [7,29,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.01) [9,88,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.088.html#rv09.088.01) *sunvire, sunudhvam, sunavai*
 [8,80,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.080.html#rv08.080.01) *suvāna* partic.; *suṣāva, suṣuma, suṣuviva* (
@@ -74,9 +74,9 @@ _PWG article — 34 sub-card(s), 94 sense(s) · RU 94/94 · EN 0/94_
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) *suṣvāṇa* мед.
 [4,29,2. 10,148,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.02) пассивно
 [9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *sota, sotana, suṣvati* 3. pl. (вероятно praes.)
-[2,16,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.05) *asāvīt, asoṣṭa* und *asāvīt*
+[2,16,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.05) *asāvīt, asoṣṭa* и *asāvīt*
 [P. 7,2,72.](https://ashtadhyayi.com/sutraani/7/2/72)
-[VOP. 11,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,1) [12], начало *soṣyati* und *saviṣyati*
+[VOP. 11,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,1) [12], начало *soṣyati* и *saviṣyati*
 [8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [12](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,12), начало *soṣyant*
 [KĀTY. ŚR. 16,6,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?16,6,10) *(abhi) saviṣyant*
 [ŚAT. BR. 9,5,1,66.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,66) infin. *sotave* (см. также *sotu*)
@@ -97,7 +97,7 @@ _PWG article — 34 sub-card(s), 94 sense(s) · RU 94/94 · EN 0/94_
 [MAITRYUP. 6,7.] *suṣāva ca vahūnsomānsomasaṃsthāstatāna ca*
 [MBH. 1,4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4695) *sarve sunvantaḥ*
 [P. 3,2,132](https://ashtadhyayi.com/sutraani/3/2/132), схол. *surāṃ sunoti* так преим. варит там же — *asunvan*
-[AIT. BR. 4,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,17) ошибочно вместо *asanvan:* см. 1. *san*.* — suta* partic.: *suto aśnaiḥ*
+[AIT. BR. 4,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,17) ошибочно вм. *asanvan:* см. 1. *san*.* — suta* partic.: *suto aśnaiḥ*
 [ṚV. 8,2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.02) [2,11,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.11) [4,18,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.03) *aṃśu*
 [25,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.025.html#rv04.025.03) *soma*
 [41,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.03) [6,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.040.html#rv06.040.01) *sutāsa indavaḥ*
@@ -105,7 +105,7 @@ _PWG article — 34 sub-card(s), 94 sense(s) · RU 94/94 · EN 0/94_
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) [ŚAT. BR. 12,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,5) *pibasva somaṃ sutamadya taṃ mayā*
 [MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) *sute somasahasre*
 [1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) *sutam*
-[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694) вероятно ошибочно вместо *hutam* . masc. sg. und pl. сок т.е. Сома
+[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694 "Spr. (II) 2694: dattamiṣṭaṃ tapastaptaṃ tīrthayātrā hutaṃ tathā | sarvābhayapradānasya kalāṃ nārhanti ṣoḍaśīm || — (196.) Spenden, Trankopfer vollbrachte Kasteiungen, Wallfahrten und Brandopfer sind nicht ein Sechszehntel von dem werth, was die Sicherstellung aller Geschöpfe vor jeglicher Unbill gilt.") вероятно ошибочно вм. *hutam* . masc. sg. и pl. сок т.е. Сома
 [NAIGH. 2,7.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,7) *suṣvāṇaḥ pavate sutaḥ*
 [ṚV. 9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *parīto ṣiñcatā sutam*
 [107,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.01) [2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [1,135,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.01) [2,15,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.01) [4,32,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.11) *prātaḥ sutamapibaḥ*
@@ -300,7 +300,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [NIDĀNAS. 5,11,3] bei [WEBER, Nakṣ. 2,284.]
 
 - **RU:** — ср. 1. *prasava, prasut* . — caus. непрерывно заставлять жать (выжимать): *prasāvayet*
-[NIDĀNAS. 5,11,3] bei [WEBER, Nakṣ. 2,284.]
+[NIDĀNAS. 5,11,3] у [WEBER, Nakṣ. 2,284.]
   <sub>attested</sub>
 
 ## su
@@ -312,7 +312,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [VOP. 8,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,45) [12], Anf. zerkeltern: *suṣvāṇāso vyadribhiḥ*
 [ṚV. 9,101,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.101.html#rv09.101.11)
 
-- **RU:** — *vi*, *vyaṣāvīt; visoṣyati* und *visaviṣyati*
+- **RU:** — *vi*, *vyaṣāvīt; visoṣyati* и *visaviṣyati*
 [VOP. 8,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,45) [12], начало выжимать до конца, дожимать: *suṣvāṇāso vyadribhiḥ*
 [ṚV. 9,101,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.101.html#rv09.101.11)
   <sub>attested</sub>
@@ -360,7 +360,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 **1_auspressen)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 auspressen, keltern (den Soma).
 
-- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* и *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 выжимать, прессовать (Сома).
   <sub>attested</sub>
 
@@ -450,7 +450,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 
 **main)** **2.** √*su* = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 
-- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побужденный, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
   <sub>attested</sub>
 
 **main)** **3.** *su* _Adj._ in *dāvasu*.
@@ -460,7 +460,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 
 **main)** **4.** √*su* = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
 
-- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
+- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын и *suṣuti*.
   <sub>attested</sub>
 
 **main)** **5.** *√*su*, *savati* (*gatau*).
@@ -539,20 +539,20 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [AV.] pass. : *sūyate, sūyai*; partic. *suta*
 [ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,14) *sūta* (= *īrita, prerita*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
-[MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72)) in *nṛṣūta*; см. auch unter *pari* und *pra* . (приводить в движение, побуждать, являть; даровать, посылать (о Савитарс воздействии); устанавливать, определять, посвящать для чего-л.; давать разрешение на что-л.; мед. посвящаться и т.д. быть допускаемым: *savitā suvāti*
+[MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72)) in *nṛṣūta*; см. также unter *pari* и *pra* . (приводить в движение, побуждать, являть; даровать, посылать (о Савитарс воздействии); устанавливать, определять, посвящать для чего-л.; давать разрешение на что-л.; мед. посвящаться и т.д. быть допускаемым: *savitā suvāti*
 [ṚV. 7,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.040.html#rv07.040.01) *śreṣṭhaṃ savaṃ savitā sāviṣannaḥ*
 [1,164,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.26) [AV. 6,1,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.001.html#av06.001.03) *devebhyo hi prathamamamṛtatvaṃ suvasi bhāgam*
 [ṚV. 4,54,2. fgg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.054.html#rv04.054.02) [5,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.03) [82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.04) *vāmamasmabhyaṃ sāvīḥ*
 [6,71,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.071.html#rv06.071.06) *yadadya sūra udite suvati savitā bhagaḥ*
 [7,66,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.066.html#rv07.066.04) [AV. 7,14,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.014.html#av07.014.03) [14,1,33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.33) [19,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.008.html#av19.008.04) *yathā sindhurnadīnāṃ sāmrājyaṃ suṣuve*
-[14,1,43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.43) *suṣuvāṇa* находящийся в процессе посвящения, посвящённый
+[14,1,43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.43) *suṣuvāṇa* находящийся в процессе посвящения, посвященный
 [TS. 2,1,9,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,9,1) ([P. 3,2,106](https://ashtadhyayi.com/sutraani/3/2/106), схол., wo *suṣuvāṇam* zu lesen ist).
 [5,6,3,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,4) [7,5,15,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,15,2) [TBR. 1,8,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,1,1) [ŚAT. BR. 5,4,3,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,23) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,8) [5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,2,1) [PAÑCAV. BR. 18,9,1. 10,1.] pass.: *yo vai somena sūyate (= niṣpadyate* коммент.)
 [TBR. 2,7,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,5,1) *sūyate ha vā asya kṣatram*
 [AIT. BR. 8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5)
 [ŚAT. BR. 5,3,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,1,3) [3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,11) [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,15) [9,3,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,6) *agnisavena suto bhavati* 9. *sarvaṃ vastatsutam* к всему этому вы уполномочены
 [13,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,17) *sūyate vā eṣa yo 'gniṃ cinute*
-[TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* коммент.) so преим. быть приведённым в действие
+[TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* коммент.) so преим. быть приведенным в действие
 [MAITRYUP. 6,16.] *mā na sāvīrmahāstrāṇi* so преим. мечи
 [BHAṬṬ. 9,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,50) — *prajāpateḥ sutaṃ rayiṣṭham* имя eines Саман
 [Ind. St. 3,225,a.]
@@ -656,7 +656,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 
 **ā+su (addendum))** — Vgl. 1. *āsava, āsavitar* und 1. *āsuti* .
 
-- **RU:** — ср. 1. *āsava, āsavitar* und 1. *āsuti* .
+- **RU:** — ср. 1. *āsava, āsavitar* и 1. *āsuti* .
   <sub>attested</sub>
 
 ## su
@@ -804,7 +804,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [ŚAT. BR. 4,1,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,4,3) — [AV. 3,1,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04) ist (vgl.
 [ṚV. 3,30,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.06)) zu verstehen *pra sū te* .
 
-- **RU:** — partic. *prasūta* побуждённый, посланный, призванный; которому дозволено, кому разрешено
+- **RU:** — partic. *prasūta* побужденный, посланный, призванный; которому дозволено, кому разрешено
 [ṚV. 1,113,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.01) *arṣantvāpastvayeha prasūtāḥ*
 [3,30,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.09) *dūta*
 [54,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.19) *janāḥ sūryeṇa prasūtāḥ*
@@ -847,7 +847,7 @@ Schol. zu [P. 8,3,63.](https://ashtadhyayi.com/sutraani/8/3/63) [65.](https://as
 [11,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,12)
 
 - **RU:** — *abhipra* гнать туда, к: *yadenāmabhiprasuvanti nadyaḥ*
-[NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26) *˚sūta* побуждённый, призванный
+[NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26) *˚sūta* побужденный, призванный
 [11,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,12)
   <sub>attested</sub>
 
@@ -945,7 +945,7 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **RU:** зачинать, рождать
 [ṚV. 1,135,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.08) [164,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.17) [168,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.09) *nārī naryaṃ susāva*
 [7,20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.020.html#rv07.020.05) *sūṣyantī*
-[5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) *asūta pūrvo vṛṣabhaḥ* был рождён
+[5,78,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.05) *asūta pūrvo vṛṣabhaḥ* был рожден
 [3,38,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.05) *yadīṃ suvāte uṣasā*
 [5,1,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.01) [2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.02) *starīryatsūta*
 [10,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.10) *suvānā putrān*
@@ -956,7 +956,7 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **поздняя речь — рождать (PPP))** — In der späteren Sprache meist in der Bed. gebären: *āyuṣmantaṃ sutaṃ sūte*
 [M. 3,263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,263) [9,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,9) [10,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,39)
-[Spr. (II) 1748.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1748)
+[Spr. (II) 1748.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1748 "Spr. (II) 1748: kiṃ tayā kriyate dhenvā yā na sūte na dugdhadā | ko 'rthaḥ putreṇa jātena yo na vidvānna bhaktimān || — (676.) Was nützt uns eine Kuh, wenn sie weder kalbt, noch Milch giebt? Was haben wir davon, wenn uns ein Sohn geboren wird, wenn er nicht klug und in Liebe uns zugethan ist?")
 [VARĀH. BṚH. S. 51,41.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,41) *suvāte*
 [R. 1,23,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,14) *asūta*
 [RAGH. 3,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,13) [15,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,13)
@@ -993,7 +993,7 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 [RAGH. 17,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,66) *payaḥ sūte 'dya medinī, ratnaṃ vaiḍūryabhūḥ*
 [RĀJA-TAR. 4,300.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,300) *sūṣyant*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *dhūmāt — payaḥ sūte ghanasyodgamaḥ*
-[Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162) *dharmaṃ sūyanti prajāḥ*
+[Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162 "Spr. (II) 3162: dhūmādgāḍhamalīmasācchuci payaḥ ghanasyodgamo lohasyātiśitasya jātiracalātkuṇṭhāśmamālāmayāt | kiṃ cātyantajaḍāllalāddyutimato jvālādhvajasyodbhavo ja… — (4267.) Das Aufziehen einer Wolke erzeugt aus überaus schmutzigem Rauche (dem sie ihren Ursprung verdankt) reines Wasser") *dharmaṃ sūyanti prajāḥ*
 [MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) — partic. *sūta* mit act. Bed. = *prasūta*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
 [MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72) *sūtā* gekalbt habend
@@ -1002,7 +1002,7 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 - **RU:** — В поздней речи преимущественно в знач. рождать: *āyuṣmantaṃ sutaṃ sūte*
 [M. 3,263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,263) [9,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,9) [10,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,39)
-[Spr. (II) 1748.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1748)
+[Spr. (II) 1748.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1748 "Spr. (II) 1748: kiṃ tayā kriyate dhenvā yā na sūte na dugdhadā | ko 'rthaḥ putreṇa jātena yo na vidvānna bhaktimān || — (676.) Was nützt uns eine Kuh, wenn sie weder kalbt, noch Milch giebt? Was haben wir davon, wenn uns ein Sohn geboren wird, wenn er nicht klug und in Liebe uns zugethan ist?")
 [VARĀH. BṚH. S. 51,41.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,41) *suvāte*
 [R. 1,23,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,14) *asūta*
 [RAGH. 3,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,13) [15,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,13)
@@ -1039,11 +1039,11 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 [RAGH. 17,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,66) *payaḥ sūte 'dya medinī, ratnaṃ vaiḍūryabhūḥ*
 [RĀJA-TAR. 4,300.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,300) *sūṣyant*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *dhūmāt — payaḥ sūte ghanasyodgamaḥ*
-[Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162) *dharmaṃ sūyanti prajāḥ*
+[Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162 "Spr. (II) 3162: dhūmādgāḍhamalīmasācchuci payaḥ ghanasyodgamo lohasyātiśitasya jātiracalātkuṇṭhāśmamālāmayāt | kiṃ cātyantajaḍāllalāddyutimato jvālādhvajasyodbhavo ja… — (4267.) Das Aufziehen einer Wolke erzeugt aus überaus schmutzigem Rauche (dem sie ihren Ursprung verdankt) reines Wasser") *dharmaṃ sūyanti prajāḥ*
 [MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) — partic. *sūta* с act. знач. = *prasūta*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
 [MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72) *sūtā* отелившаяся
-[M. 8,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,242) *vanye sattve sūte* когда дикий зверь принёс детёнышей
+[M. 8,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,242) *vanye sattve sūte* когда дикий зверь принес детенышей
 [VARĀH. BṚH. S. 91,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?91,3)
   <sub>attested</sub>
 
@@ -1070,7 +1070,7 @@ Schol. zu [KĀTY. ŚR. 6,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71)
 [ṢAḌV. BR. 5,11.]
 [SUŚR. 1,367,18.]
-[Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403)
+[Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403 "Spr. (II) 1403: ekā prasūyate mātā dvitīyā vākprasūyate | vāgjātamadhikaṃ procuḥ sodaryādapi bāndhavāt || — (542.) Einen Bruder gebiert uns die Mutter, einen andern die (freundliche) Rede")
 [VARĀH. BṚH. 5,8. 11. 16.]
 [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate*
 Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ*
@@ -1096,7 +1096,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71)
 [ṢAḌV. BR. 5,11.]
 [SUŚR. 1,367,18.]
-[Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403)
+[Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403 "Spr. (II) 1403: ekā prasūyate mātā dvitīyā vākprasūyate | vāgjātamadhikaṃ procuḥ sodaryādapi bāndhavāt || — (542.) Einen Bruder gebiert uns die Mutter, einen andern die (freundliche) Rede")
 [VARĀH. BṚH. 5,8. 11. 16.]
 [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate*
 схол. к [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ*
@@ -1118,34 +1118,34 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 **Nachtr.3-erzeugen)** [BHAṬṬ. 1,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,13) erzeugen: *prasūyate*
 [M. 10,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,27) [30. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,30) *anena prasaviṣyadhvam* Nachkommenschaft haben
 [BHAG. 3,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,10) erzeugen in uneig. Bed.: *(buddhiḥ) prasūte hi phalaṃ śrīmadaraṇīva hutāśanam*
-[KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062) *dhūmaṃ prasauti (agniḥ)*
+[KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062 "Spr. (II) 7062: sukṣetre nirupahate bījaṃ vidhinoptamalpakāle 'pi | vipulaṃ phalaṃ prasūte dānamapi tathaiva vijñeyam || — Same, der in gehöriger Weise auf einen guten Acker, der frei von Schaden bleibt, ausgesäet wird, bringt sogar in kurzer Zeit reichliche Frucht") *dhūmaṃ prasauti (agniḥ)*
 [RĀJA-TAR. 5,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,125) *aṣṭamāsadhṛtaṃ garbham — dyauḥ prasūyate*
 [R. 4,27,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,3) *prasūyate saṃgatiḥ śriyam*
 [PRAB. 86,18.] *(drumāḥ) śayanāni prasūyante citrāstaraṇavanti*
 [R. 4,44,99.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,99)
 [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate*
-[Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816) *taravaḥ prāsūyanta* trugen Früchte
+[Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816 "Spr. (II) 2816: dīpo bhakṣayate dhvāntaṃ kajjalaṃ ca prasūyate | yadannaṃ bhakṣayennityaṃ jāyate tādṛśī prajā || — (4186.) Eine Lampe verspeist Finsterniss und erzeugt Russ: welcherlei Speise man beständig geniesst, solche Nachkommenschaft wird erzeugt.") *taravaḥ prāsūyanta* trugen Früchte
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu*
 [MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) (*śāstraviṭapī*)
 
 *phalaṃ prasūya*
-[Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426)
+[Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426 "Spr. (II) 5426: yaḥ sarvakālambudhaiḥ parihasyamāno mūlāṅkurādyapi na jātu puraskaroti | vyāpatsu śāstaviṭapī sa phalaṃ prasūya puṃsaḥ kilaikapada eva lunātyalakṣmīm… — (4869.) Der Baum des Wissens, welcher, wenn Thoren seiner beständig spotten, niemals Wurzeln, junge Triebe und anderes Leben zeigt, erzeugt, wie bekannt, in der Noth eine Frucht, indem er mit einem Male eines Menschen Un…")
 
 - **RU:** [BHAṬṬ. 1,13.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,13) производить на свет: *prasūyate*
 [M. 10,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,27) [30. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,30) *anena prasaviṣyadhvam* иметь потомство
 [BHAG. 3,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,10) производить в неточно знач.: *(buddhiḥ) prasūte hi phalaṃ śrīmadaraṇīva hutāśanam*
-[KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062) *dhūmaṃ prasauti (agniḥ)*
+[KĀM. NĪTIS. 13,2.] [Spr. (II) 7062.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7062 "Spr. (II) 7062: sukṣetre nirupahate bījaṃ vidhinoptamalpakāle 'pi | vipulaṃ phalaṃ prasūte dānamapi tathaiva vijñeyam || — Same, der in gehöriger Weise auf einen guten Acker, der frei von Schaden bleibt, ausgesäet wird, bringt sogar in kurzer Zeit reichliche Frucht") *dhūmaṃ prasauti (agniḥ)*
 [RĀJA-TAR. 5,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,125) *aṣṭamāsadhṛtaṃ garbham — dyauḥ prasūyate*
 [R. 4,27,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,3) *prasūyate saṃgatiḥ śriyam*
 [PRAB. 86,18.] *(drumāḥ) śayanāni prasūyante citrāstaraṇavanti*
 [R. 4,44,99.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,99)
 [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate*
-[Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816) *taravaḥ prāsūyanta* приносили плоды
+[Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816 "Spr. (II) 2816: dīpo bhakṣayate dhvāntaṃ kajjalaṃ ca prasūyate | yadannaṃ bhakṣayennityaṃ jāyate tādṛśī prajā || — (4186.) Eine Lampe verspeist Finsterniss und erzeugt Russ: welcherlei Speise man beständig geniesst, solche Nachkommenschaft wird erzeugt.") *taravaḥ prāsūyanta* приносили плоды
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu*
 [MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) (*śāstraviṭapī*)
 
 *phalaṃ prasūya*
-[Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426)
+[Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426 "Spr. (II) 5426: yaḥ sarvakālambudhaiḥ parihasyamāno mūlāṅkurādyapi na jātu puraskaroti | vyāpatsu śāstaviṭapī sa phalaṃ prasūya puṃsaḥ kilaikapada eva lunātyalakṣmīm… — (4869.) Der Baum des Wissens, welcher, wenn Thoren seiner beständig spotten, niemals Wurzeln, junge Triebe und anderes Leben zeigt, erzeugt, wie bekannt, in der Noth eine Frucht, indem er mit einem Male eines Menschen Un…")
   <sub>attested</sub>
 
 ## su
@@ -1160,7 +1160,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [HARIV. 11053.](https://sanskrit-lexicon-scans.github.io/hariv?11053) *prasūyatas*
 2. du. [MBH. 13,2565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2565) *prasūyāmas*
 [HARIV. 173](https://sanskrit-lexicon-scans.github.io/hariv?173) = [VP. 1,15,128.] *sarveṇa khalu martavyaṃ martyaloke prasūyatā*
-[Spr. (II) 6949.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6949) *sindhoḥ prasūya kamalā*
+[Spr. (II) 6949.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6949 "Spr. (II) 6949: sarveṇa khalu martavyaṃ martyaloke prasūyatā | kṛtāntavihite mārge mṛtaṃ ko jīvayiṣyati || — (5203.) Jeder, der in der Welt der Sterblichen geboren wird, muss ja sterben") *sindhoḥ prasūya kamalā*
 [RĀJA-TAR. 6,317.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,317) *pra keśāḥ suvate*
 [TBR. 2,7,17,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,17,1) *śabdaḥ* u. s. w. *vedādeva prasūyante*
 [M. 12,98](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,98), v. l.
@@ -1172,7 +1172,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [HARIV. 11053.](https://sanskrit-lexicon-scans.github.io/hariv?11053) *prasūyatas*
 2. du. [MBH. 13,2565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2565) *prasūyāmas*
 [HARIV. 173](https://sanskrit-lexicon-scans.github.io/hariv?173) = [VP. 1,15,128.] *sarveṇa khalu martavyaṃ martyaloke prasūyatā*
-[Spr. (II) 6949.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6949) *sindhoḥ prasūya kamalā*
+[Spr. (II) 6949.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6949 "Spr. (II) 6949: sarveṇa khalu martavyaṃ martyaloke prasūyatā | kṛtāntavihite mārge mṛtaṃ ko jīvayiṣyati || — (5203.) Jeder, der in der Welt der Sterblichen geboren wird, muss ja sterben") *sindhoḥ prasūya kamalā*
 [RĀJA-TAR. 6,317.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,317) *pra keśāḥ suvate*
 [TBR. 2,7,17,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,17,1) *śabdaḥ* и т.д. *vedādeva prasūyante*
 [M. 12,98](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,98), v. l.
@@ -1190,21 +1190,21 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [R. 7,66,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,66,3)
 [UTTARAR. 38,7 (52,1).] [WEBER, KṚṢṆAJ. 249. 282. fg. 289.] [KATHĀS. 21,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,117) [29,137](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,137) (*śatapadī*).
 [MĀRK. P. 51,101.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,101) Schol. zu [P. 2,1,65.](https://ashtadhyayi.com/sutraani/2/1/65) [PAÑCAT. 218,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,21) [HIT. 72,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?72,14) *a˚*
-[Spr. (II) 2055.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2055) *pratyagra˚*
+[Spr. (II) 2055.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2055 "Spr. (II) 2055: gaṅgāhīno hato deśo vidyāhīnaṃ hataṃ kulam | aprasūtā hatā nārī hato yajñastvadakṣiṇaḥ || — (809.) Todt ist eine Gegend ohne Gaṅgā, todt eine Familie ohne Wissen, todt ein unfruchtbares Weib, todt ein Opfer, das nicht von Geschenken begleitet ist.") *pratyagra˚*
 Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,8) *jananī prasūtatanayā* deren Tochter niedergekommen ist
-[Spr. (II) 6033.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6033) *prasūtamātrā* eben niedergekommen
+[Spr. (II) 6033.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6033 "Spr. (II) 6033: vāṇijyena gataḥ sa me gṛhapatirvarttāpi na śrūyate prātastajjananī prasūtatanayā jāmātṛgehaṃ gatā | bālāhaṃ navayaivanā niśi kathaṃ sthātavyamasmadgṛh… — (1960.) Mein Gatte ist in Handelsgeschäften verreist und ich habe nicht ein Mal Nachrichten von ihm") *prasūtamātrā* eben niedergekommen
 [KATHĀS. 28,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,67)
 
-- **RU:** a) с act. знач. _f._ *ā* родившая, разрешившаяся от бремени (дополнение в acc.; местами вместо глагола в личной форме)
+- **RU:** a) с act. знач. _f._ *ā* родившая, разрешившаяся от бремени (дополнение в acc.; местами вм. глагола в личной форме)
 [AK. 2,6,1,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,16)
 [MED. t. 124.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,124) [HALĀY. 118. 285. 345.] [AV. 12,1,62.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.62) [YĀJÑ. 2,145.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,145) [SUŚR. 2,180,8.] *devasadṛśānputrān*
 [HARIV. 4625.](https://sanskrit-lexicon-scans.github.io/hariv?4625)
 [R. 7,66,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,66,3)
 [UTTARAR. 38,7 (52,1).] [WEBER, KṚṢṆAJ. 249. 282. fg. 289.] [KATHĀS. 21,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,117) [29,137](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,137) (*śatapadī*).
 [MĀRK. P. 51,101.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,101) схол. к [P. 2,1,65.](https://ashtadhyayi.com/sutraani/2/1/65) [PAÑCAT. 218,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,21) [HIT. 72,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?72,14) *a˚*
-[Spr. (II) 2055.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2055) *pratyagra˚*
+[Spr. (II) 2055.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2055 "Spr. (II) 2055: gaṅgāhīno hato deśo vidyāhīnaṃ hataṃ kulam | aprasūtā hatā nārī hato yajñastvadakṣiṇaḥ || — (809.) Todt ist eine Gegend ohne Gaṅgā, todt eine Familie ohne Wissen, todt ein unfruchtbares Weib, todt ein Opfer, das nicht von Geschenken begleitet ist.") *pratyagra˚*
 схол. к [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?24,6,8) *jananī prasūtatanayā* чья дочь разрешилась от бремени
-[Spr. (II) 6033.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6033) *prasūtamātrā* только что разрешившаяся
+[Spr. (II) 6033.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6033 "Spr. (II) 6033: vāṇijyena gataḥ sa me gṛhapatirvarttāpi na śrūyate prātastajjananī prasūtatanayā jāmātṛgehaṃ gatā | bālāhaṃ navayaivanā niśi kathaṃ sthātavyamasmadgṛh… — (1960.) Mein Gatte ist in Handelsgeschäften verreist und ich habe nicht ein Mal Nachrichten von ihm") *prasūtamātrā* только что разрешившаяся
 [KATHĀS. 28,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,67)
   <sub>attested</sub>
 
@@ -1219,14 +1219,14 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 1,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.35) *mama kāyāt*
 [R. 2,74,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,21) *tadanvaye*
 [RAGH. 1,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,12) *nīcakule*
-[Spr. (II) 6475.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6475) *yasya tasya*
-[5369.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5369) [MĀRK. P. 104,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,8) [R. 1,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,26) [ŚĀK. 178](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178), v. l. [Spr. (II) 1431.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1431) [VARĀH. BṚH. S. 48,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,11) [BṚH. 23,14.] [MĀRK. P. 76,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?76,17) [WEBER, KṚṢṆAJ. 266. 284.] *etaddeśa˚*
+[Spr. (II) 6475.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6475 "Spr. (II) 6475: śīlaṃ pradhānaṃ na kulaṃ pradhānaṃ kulena kiṃ śīlavivarjitena | dhanaṃ vinā nīcakule prasūtāḥ svargaṃ gatāḥ śīlamavāpya dhirāḥ || — Eine edle Gemüthsart ist das Vornehmste, nimmer aber Adel der Geburt") *yasya tasya*
+[5369.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5369) [MĀRK. P. 104,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,8) [R. 1,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,26) [ŚĀK. 178](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178), v. l. [Spr. (II) 1431.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1431 "Spr. (II) 1431: eko 'pi yaḥ sakalakāryavidhau samarthaḥ sattvādhiko bhavatu kiṃ bahubhiḥ prasūtaiḥ | candraḥ prakāśayati diṅmukhamaṇḍalāni tārāgaṇaḥ samudito 'pyasama… — Wenn ein einziger beherzter Sohn einer Sache vollkommen gewachsen ist, so reicht dieses hin") [VARĀH. BṚH. S. 48,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,11) [BṚH. 23,14.] [MĀRK. P. 76,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?76,17) [WEBER, KṚṢṆAJ. 266. 284.] *etaddeśa˚*
 [M. 2,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,20) *kālanemi˚*
 [ŚĀK. CH. 144,4.]
 [KATHĀS. 50,139.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,139)
 [BHĀG. P. 6,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,24) [9,6,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,3) *kula˚*
 [R. 2,82,31](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,31) (Pferde)
-[Spr. (II) 5970.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5970)
+[Spr. (II) 5970.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5970 "Spr. (II) 5970: varamiha vā sutamaraṇaṃ na tu mūrkhatvaṃ kulaprasūtasya | yena vibudhajanamadhye jāraja iva lajjate manujaḥ || — (2742.) Besser dass im Leben ein Sohn sogar stirbt, als dass einem in guter Familie Geborenen Dummheit zu Theil wird, dessen sich in Gesellschaft gebildeter Leute der Mensch wie eines Bastardes schämt.")
 [BHĀG. P. 9,3,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,21) *nandakula˚*
 [PAÑCAT. 45,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,2) *veda˚*
 [PRAB. 86,19.] *vindhyapāda˚ (nadī)*
@@ -1241,7 +1241,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [KUMĀRAS. 1,9.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,9) *prasūtaṃ tarhi saukhyaṃ naḥ*
 [Z. f. d. K. d. M. 2,426.]
 
-- **RU:** — b) рождённый, порождённый, происшедший, возникший
+- **RU:** — b) рожденный, порожденный, происшедший, возникший
 [H. an. 3,273.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,273)
 [MED.] с gen. или loc. (также abl.)
 [P. 2,3,39.](https://ashtadhyayi.com/sutraani/2/3/39)
@@ -1252,14 +1252,14 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [MBH. 1,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.35) *mama kāyāt*
 [R. 2,74,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,21) *tadanvaye*
 [RAGH. 1,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,12) *nīcakule*
-[Spr. (II) 6475.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6475) *yasya tasya*
-[5369.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5369) [MĀRK. P. 104,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,8) [R. 1,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,26) [ŚĀK. 178](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178), v. l. [Spr. (II) 1431.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1431) [VARĀH. BṚH. S. 48,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,11) [BṚH. 23,14.] [MĀRK. P. 76,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?76,17) [WEBER, KṚṢṆAJ. 266. 284.] *etaddeśa˚*
+[Spr. (II) 6475.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6475 "Spr. (II) 6475: śīlaṃ pradhānaṃ na kulaṃ pradhānaṃ kulena kiṃ śīlavivarjitena | dhanaṃ vinā nīcakule prasūtāḥ svargaṃ gatāḥ śīlamavāpya dhirāḥ || — Eine edle Gemüthsart ist das Vornehmste, nimmer aber Adel der Geburt") *yasya tasya*
+[5369.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5369) [MĀRK. P. 104,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,8) [R. 1,16,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,26) [ŚĀK. 178](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?178), v. l. [Spr. (II) 1431.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1431 "Spr. (II) 1431: eko 'pi yaḥ sakalakāryavidhau samarthaḥ sattvādhiko bhavatu kiṃ bahubhiḥ prasūtaiḥ | candraḥ prakāśayati diṅmukhamaṇḍalāni tārāgaṇaḥ samudito 'pyasama… — Wenn ein einziger beherzter Sohn einer Sache vollkommen gewachsen ist, so reicht dieses hin") [VARĀH. BṚH. S. 48,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,11) [BṚH. 23,14.] [MĀRK. P. 76,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?76,17) [WEBER, KṚṢṆAJ. 266. 284.] *etaddeśa˚*
 [M. 2,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,20) *kālanemi˚*
 [ŚĀK. CH. 144,4.]
 [KATHĀS. 50,139.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,139)
 [BHĀG. P. 6,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,24) [9,6,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,3) *kula˚*
 [R. 2,82,31](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,31) (лошади)
-[Spr. (II) 5970.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5970)
+[Spr. (II) 5970.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5970 "Spr. (II) 5970: varamiha vā sutamaraṇaṃ na tu mūrkhatvaṃ kulaprasūtasya | yena vibudhajanamadhye jāraja iva lajjate manujaḥ || — (2742.) Besser dass im Leben ein Sohn sogar stirbt, als dass einem in guter Familie Geborenen Dummheit zu Theil wird, dessen sich in Gesellschaft gebildeter Leute der Mensch wie eines Bastardes schämt.")
 [BHĀG. P. 9,3,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,21) *nandakula˚*
 [PAÑCAT. 45,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,2) *veda˚*
 [PRAB. 86,19.] *vindhyapāda˚ (nadī)*
@@ -1297,12 +1297,12 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
   <sub>attested</sub>
 
 **4b)** — b) _n._ Blüthe, Frucht; s. u. *prasūna* . In der Bed. Blüthe auch
-[Spr. (II) 7411](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7411), v. l.
+[Spr. (II) 7411](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7411 "Spr. (II) 7411: hṛṣyantyṛtumukhaṃ dṛṣṭvā navaṃ navamivāgatam | ṛtūnāṃ parivartena prāṇināṃ prāṇasaṅkṣayaḥ || — (5414.) Man freut sich jedes Mal, wenn man den Eintritt einer Jahreszeit erlebt, als wenn etwas Neues gekommen wäre"), v. l.
 [UTTARAR. 98,6 (129,12).] [MĀLATĪM. 57,13.] [BHĀG. P. 3,18,8](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,8) (engendré
 [BURNOUF]). [PAÑCAR. 1,7,50.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,50)
 
 - **RU:** — b) _n._ цветок, плод; см. *prasūna* . В знач. цветок также
-[Spr. (II) 7411](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7411), v. l.
+[Spr. (II) 7411](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7411 "Spr. (II) 7411: hṛṣyantyṛtumukhaṃ dṛṣṭvā navaṃ navamivāgatam | ṛtūnāṃ parivartena prāṇināṃ prāṇasaṅkṣayaḥ || — (5414.) Man freut sich jedes Mal, wenn man den Eintritt einer Jahreszeit erlebt, als wenn etwas Neues gekommen wäre"), v. l.
 [UTTARAR. 98,6 (129,12).] [MĀLATĪM. 57,13.] [BHĀG. P. 3,18,8](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,8) (engendré
 [BURNOUF]). [PAÑCAR. 1,7,50.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,50)
   <sub>mixed</sub>
@@ -1317,7 +1317,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **RU:** — ср. 3. *prasava, prasavana*, 2. *prasavitar*, 2. *prasavin, prasūta*, 2. *prasūti, prasūna, devaprasūta* (сюда или к 2. *su*).
 — *anupra*, partic. *˚sūta* возникший затем: *sṛṣṭistathaiveyamanuprasūtā*
 [MBH. 13,7361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7361)
-— *abhipra*, partic. *˚sūta* порождённый, рождённый: *mātuḥ pituḥ karmaṇābhiprasūtaḥ saṃvardhate vidhivadbhojanena*
+— *abhipra*, partic. *˚sūta* порожденный, рожденный: *mātuḥ pituḥ karmaṇābhiprasūtaḥ saṃvardhate vidhivadbhojanena*
 [MBH. 5,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.964)
 — *saṃpra*
   <sub>attested</sub>
@@ -1330,7 +1330,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **RU:** 1) порождать: *˚sūte*
 [MBH. 13,2582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2582) *˚sūyate*
 [M. 10,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,33) — *˚sūyate*
-[MBH. 13,5850](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5850) ошибочно вместо *˚ṇūyate*, как читает [ed. Bomb.].
+[MBH. 13,5850](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5850) ошибочно вм. *˚ṇūyate*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 **prefix_2_geboren_werden)** — 2) geboren werden: *tadāhaṃ saṃprasūyāmi gṛheṣu śubhakarmaṇām*
@@ -1347,7 +1347,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [R. 4,41,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,79) *māyā guṇasaṃprasūtā*
 [BHĀG. P. 11,10,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,10,13)
 
-- **RU:** — 3) partic. *˚sūta* порождённый, рождённый: *bahvīḥ prajāḥ puruṣāt*
+- **RU:** — 3) partic. *˚sūta* порожденный, рожденный: *bahvīḥ prajāḥ puruṣāt*
 [MUṆḌ. UP. 2,1,5.] *śarmiṣṭhayā*
 [MBH. 5,5044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5044) *brahmāsyatas, bāhubhyām*
 [12,11814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11814) [13,4426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4426) *guṇavipuleṣu kuleṣu*
@@ -1369,11 +1369,11 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **addendum_T218_erzeugen)** — *sam* dass.: *śāradvatasya* (so die neuere Ausg.) *dāyādamahalyā samasūyata*
 [HARIV. 1784.](https://sanskrit-lexicon-scans.github.io/hariv?1784) erzeugen in uneig. Bed.: *dattaṃ śreyāṃsi saṃsūte* (Conj.)
-[Spr. (II) 4252.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4252)
+[Spr. (II) 4252.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4252 "Spr. (II) 4252: pradattasya prabhuktasya dṛśyate mahadantaram | dattaṃ śreyāṃsi saṃsūte viṣṭhā bhavati bhakṣitam || — Zwischen dem, was gespendet und was verzehrt wird, besteht ein grosser Unterschied: das Gespendete erzeugt Segen, das Verzehrte wird zu Koth.")
 
 - **RU:** — *sam* то же: *śāradvatasya* (так в новейшем изд.) *dāyādamahalyā samasūyata*
 [HARIV. 1784.](https://sanskrit-lexicon-scans.github.io/hariv?1784) порождать в неточно знач.: *dattaṃ śreyāṃsi saṃsūte* (Conj.)
-[Spr. (II) 4252.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4252)
+[Spr. (II) 4252.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4252 "Spr. (II) 4252: pradattasya prabhuktasya dṛśyate mahadantaram | dattaṃ śreyāṃsi saṃsūte viṣṭhā bhavati bhakṣitam || — Zwischen dem, was gespendet und was verzehrt wird, besteht ein grosser Unterschied: das Gespendete erzeugt Segen, das Verzehrte wird zu Koth.")
   <sub>attested</sub>
 
 ## su
@@ -1389,7 +1389,7 @@ v. l. für *sru (gatau)*
 - **RU:** 5. *su*, *savati*
 v. l. для *sru (gatau)*
 [DHĀTUP. 22,42.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
-[VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* und *sotā* 96.
+[VOP. 8,95.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,95) *asāvīt, suṣavitha, suṣuviva, savitā* и *sotā* 96.
   <sub>lexicographic</sub>
 
 ## su
@@ -1466,7 +1466,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) *svanuyāsyanti*
 [8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) *su śakyante*
 [R. 2,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,4) *su samīkṣyatām*
-[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402) *su saṃdadhīta*
+[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402 "Spr. (II) 1402: ekānte sukhamāsyatāṃ paratare cetaḥ samādhīyatāṃ prāṇātmā susamīkṣyatāṃ jagadidaṃ tadvyāpitaṃ dṛśyatām | prākkarma pravilopyatāṃ citibalānnāpyuttare ś… — (3836.) Man fühle sich behaglich an einsamem Orte, richte seinen Geist auf das Höhere, denke fleissig an die Allseele, sehe diese Welt als von ihr erfüllt an, gebe durch die Macht des Geistes ein früheres Werk auf und kl…") *su saṃdadhīta*
 [1961](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1961), v. l. *su śobhante*
 [4157.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4157) *svanuṣṭhīyatām*
 [6275.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6275) *svaśikṣayat*
@@ -1474,7 +1474,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) (*so 'bhidrutya* st. *svabhidrutya* [ed. Bomb.]). *vicintya*
 [MṚCCH. 103,16.] *baddhvā*
 [176,1.] *cintya* und *vicārya*
-[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100) *snātvā*
+[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100 "Spr. (II) 7100: sujīrṇamannaṃ suvicakṣaṇaḥ sutaḥ suśāsitā strī nṛpatiḥ susevitaḥ | sucintya coktaṃ suvicārya yatkṛtaṃ sudīrghakāle 'pi na yāti vikriyām || — (3266.) Wohlverdaute Speise, ein wohlerfahrener Sohn, eine wohlgezogene Gattin, ein wohlbedienter Fürst, eine wohlbedachte Rede und eine wohlüberlegte Handlung halten wohl gar lange Stand.") *snātvā*
 [WEBER, KṚṢṆAJ. 291.]
 
 - **RU:** 1) самостоятельно; никогда в начале стиха; в
@@ -1521,15 +1521,15 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) *svanuyāsyanti*
 [8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) *su śakyante*
 [R. 2,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,4) *su samīkṣyatām*
-[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402) *su saṃdadhīta*
+[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402 "Spr. (II) 1402: ekānte sukhamāsyatāṃ paratare cetaḥ samādhīyatāṃ prāṇātmā susamīkṣyatāṃ jagadidaṃ tadvyāpitaṃ dṛśyatām | prākkarma pravilopyatāṃ citibalānnāpyuttare ś… — (3836.) Man fühle sich behaglich an einsamem Orte, richte seinen Geist auf das Höhere, denke fleissig an die Allseele, sehe diese Welt als von ihr erfüllt an, gebe durch die Macht des Geistes ein früheres Werk auf und kl…") *su saṃdadhīta*
 [1961](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1961), v. l. *su śobhante*
 [4157.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4157) *svanuṣṭhīyatām*
 [6275.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6275) *svaśikṣayat*
-[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) und [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) hat die [ed. Bomb.] *tu* und *hi* вместо *su* . Перед absol.
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) и [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) hat die [ed. Bomb.] *tu* и *hi* вместо *su* . Перед absol.
 [MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) (*so 'bhidrutya* вместо *svabhidrutya* [ed. Bomb.]). *vicintya*
 [MṚCCH. 103,16.] *baddhvā*
-[176,1.] *cintya* und *vicārya*
-[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100) *snātvā*
+[176,1.] *cintya* и *vicārya*
+[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100 "Spr. (II) 7100: sujīrṇamannaṃ suvicakṣaṇaḥ sutaḥ suśāsitā strī nṛpatiḥ susevitaḥ | sucintya coktaṃ suvicārya yatkṛtaṃ sudīrghakāle 'pi na yāti vikriyām || — (3266.) Wohlverdaute Speise, ein wohlerfahrener Sohn, eine wohlgezogene Gattin, ein wohlbedienter Fürst, eine wohlbedachte Rede und eine wohlüberlegte Handlung halten wohl gar lange Stand.") *snātvā*
 [WEBER, KṚṢṆAJ. 291.]
   <sub>attested</sub>
 
@@ -1550,7 +1550,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 [VARĀH. BṚH. S. 48,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,32) *suduṣkara* sehr schwer zu vollbringen
 [MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) *sunistriṃśa* ein schönes Schwert
 [MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) *subhakṣya* eine prächtige Speise
-[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113) *susahāya* einen guten Gefährten habend
+[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113 "Spr. (II) 7113: subhakṣyāṇi vicitrāṇi śithilāścaiva yoṣitaḥ | eko doṣo videśasya svajātiryadvirudhyate || — (3276.) Prächtige Speisen mannichfacher Art und geschmeidige Frauen") *susahāya* einen guten Gefährten habend
 [M. 7,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) *sulalāṭa* eine schöne Stirn habend
 [R. 1,1,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,12) *sukara* (s. d.) 
 leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d.) leicht zu befriedigen. — *su* verhält sich wohl zum demonstrativen *sa* wie *ku* zum interrogativen *ka* . Vgl. *sutarām* .
@@ -1572,7 +1572,7 @@ leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d
 [VARĀH. BṚH. S. 48,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,32) *suduṣkara* весьма трудно исполнимый
 [MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) *sunistriṃśa* прекрасный меч
 [MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) *subhakṣya* роскошное кушанье
-[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113) *susahāya* имеющий хорошего спутника
+[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113 "Spr. (II) 7113: subhakṣyāṇi vicitrāṇi śithilāścaiva yoṣitaḥ | eko doṣo videśasya svajātiryadvirudhyate || — (3276.) Prächtige Speisen mannichfacher Art und geschmeidige Frauen") *susahāya* имеющий хорошего спутника
 [M. 7,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) *sulalāṭa* имеющий красивый лоб
 [R. 1,1,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,12) *sukara* (см.) 
 легко выполнимый, *sulabha* (см.) легко достижимый, *susaṃtoṣa* (см.) легко удовлетворяемый. — *su* относится, по-видимому, к указательному *sa* так же, как *ku* к вопросительному *ka* . ср. *sutarām* .

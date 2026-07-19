@@ -61,17 +61,17 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [DHĀTUP. 25,10.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25)
 [P. 6,1,190.](https://ashtadhyayi.com/sutraani/6/1/190) *dhatthas, dhattas*
 [8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhmas, dadhmasi, dhattha, dadhati* (
-[P. 7,1,4.](https://ashtadhyayi.com/sutraani/7/1/4) [6,1,189](https://ashtadhyayi.com/sutraani/6/1/189)) und *dadhanti* (
+[P. 7,1,4.](https://ashtadhyayi.com/sutraani/7/1/4) [6,1,189](https://ashtadhyayi.com/sutraani/6/1/189)) и *dadhanti* (
 [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19)); *adadhāt, adhattam, adadhāta, adadhus (samādadhan*
 [MBH. 3,12706](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12706)); conj. *dadhas, dadhat* (
 [P. 7,3,70](https://ashtadhyayi.com/sutraani/7/3/70), схол.),
 *dadhāt* (
-[PAT.] zu [P. 7,3,70](https://ashtadhyayi.com/sutraani/7/3/70)), *dadhathas, dadhāma, dadhan; dhehi* (
+[PAT.] к [P. 7,3,70](https://ashtadhyayi.com/sutraani/7/3/70)), *dadhathas, dadhāma, dadhan; dhehi* (
 [P. 6,4,119.](https://ashtadhyayi.com/sutraani/6/4/119)
-[VOP. 10,10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,10) [12](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12)), *dhattām* 2. sg., *dadhātu, dhattam, dhattām, dhatta, dhattana* und *dadhāta, dadhātana* (
+[VOP. 10,10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,10) [12](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12)), *dhattām* 2. sg., *dadhātu, dhattam, dhattām, dhatta, dhattana* и *dadhāta, dadhātana* (
 [P. 7,1,45](https://ashtadhyayi.com/sutraani/7/1/45), схол.),
 *dadhatu* (
-[P. 7,1,4](https://ashtadhyayi.com/sutraani/7/1/4)) und *dadhantu* (
+[P. 7,1,4](https://ashtadhyayi.com/sutraani/7/1/4)) и *dadhantu* (
 [ṚV. 7,62,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.062.html#rv07.062.06)); *dadhyāt*; partic. *dadhat, dadhatī; dadhau, dadhātha, dadhima, dadha, dadhus, dadhyuṣī* (
 [R. 2,16,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,20)); aor. *adhāt* (
 [P. 2,4,77.](https://ashtadhyayi.com/sutraani/2/4/77)
@@ -84,30 +84,30 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 схол.; мед. *dadhe* 1. sg., *dhatse*
 ([P. 8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhase* conj.
 [P. 3,4,96](https://ashtadhyayi.com/sutraani/3/4/96), схол.),
-*dhatte* und *dadhe (dadhate), dadhāthe, dadhāte (dadhete)*.* dadhidhve, dadhate; adhatthās, adhatta; dadhiṣva* und *dhatsva* (
+*dhatte* и *dadhe (dadhate), dadhāthe, dadhāte (dadhete)*.* dadhidhve, dadhate; adhatthās, adhatta; dadhiṣva* и *dhatsva* (
 [P. 8,2,38](https://ashtadhyayi.com/sutraani/8/2/38)), *dhaddhvam* (
 [P. 8,2,38](https://ashtadhyayi.com/sutraani/8/2/38)), *dadhatām*
-3. pl.; *dadhīta* und *dadhīta, dadhīmahi*; aor. *adhithās, adhita* (
+3. pl.; *dadhīta* и *dadhīta, dadhīmahi*; aor. *adhithās, adhita* (
 [P. 1,2,17.](https://ashtadhyayi.com/sutraani/1/2/17)
 [VOP. 10,12](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?10,12)), *dhethe* (
 [ṚV. 1,158,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.158.html#rv01.158.02)), *dhaithe* (
 [6,67,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07)), *adhītām* (
 [10,4,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.004.html#rv10.004.06)), *adhīmahi, dhīmahi, dhāmahe, dhire*; imper. aor. *dhiṣva* (
 [P. 7,4,45](https://ashtadhyayi.com/sutraani/7/4/45)); pot. aor. *dhiṣīya* (
-[P. 7,4,45](https://ashtadhyayi.com/sutraani/7/4/45)); perf. *dadhe, dadhiṣe, dadhire* und *dadhre* (
+[P. 7,4,45](https://ashtadhyayi.com/sutraani/7/4/45)); perf. *dadhe, dadhiṣe, dadhire* и *dadhre* (
 [ṚV. 10,82,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.06)
 [P. 6,4,76](https://ashtadhyayi.com/sutraani/6/4/76), схол.);
 *dhiṣe* (
-[ṚV. 1,56,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.056.html#rv01.056.06) [70,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.070.html#rv01.070.05) [10,21,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.021.html#rv10.021.03)), *dhiṣva* und *dhire* könnte auch als perf. — формы с утраченной редупликацией рассматриваться; *dhāsye*; inf. *dhātum, dhātave, dhiyadhyai* (
+[ṚV. 1,56,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.056.html#rv01.056.06) [70,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.070.html#rv01.070.05) [10,21,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.021.html#rv10.021.03)), *dhiṣva* и *dhire* könnte также als perf. — формы с утраченной редупликацией рассматриваться; *dhāsye*; inf. *dhātum, dhātave, dhiyadhyai* (
 [ṚV. 7,34,24](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.034.html#rv07.034.24)), *pratidhām; dhitvā* (
-[ŚAT. BR.]) und *hitvā* (
+[ŚAT. BR.]) и *hitvā* (
 [P. 7,4,42](https://ashtadhyayi.com/sutraani/7/4/42)), *˚dhāya* (
 [P. 6,4,69](https://ashtadhyayi.com/sutraani/6/4/69)); pass. *dhīyate* (
 [P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66)), *adhāyi* (
 [P. 7,3,33](https://ashtadhyayi.com/sutraani/7/3/33), схол.),
-*dhāyi, adhāyiṣātām* und *adhiṣātām, dhāyiṣīṣṭa* und *dhāsīṣṭa*
+*dhāyi, adhāyiṣātām* и *adhiṣātām, dhāyiṣīṣṭa* и *dhāsīṣṭa*
 [P. 6,4,62.](https://ashtadhyayi.com/sutraani/6/4/62) [SIDDH. K. 168,b,4. 5]; partic. *dhita*
-([HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) und in *durdhita, nemadhita, mitra˚, vasu˚*) und später *hita* (см. особ.)
+([HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) и in *durdhita, nemadhita, mitra˚, vasu˚*) и später *hita* (см. особ.)
 [P. 7,4,42.](https://ashtadhyayi.com/sutraani/7/4/42)
 [VOP. 26,122](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,122);
   <sub>attested</sub>
@@ -168,7 +168,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [9,62,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.062.html#rv09.062.15) *eṣa stomo maha ugrāya vāhe dhurī3vātyo na vājayannadhāyi*
 [7,24,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.024.html#rv07.024.05) *na te antaḥ śavaso dhāyyasya*
 [6,29,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05) *dhṛṣṇave dhīyate dhanā*
-[1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* семя вносится сзади наперёд
+[1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* семя вносится сзади наперед
 [TS. 2,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,3) находиться в, содержаться в: *evaṃ sarvamahiṃsāyāṃ dharmārthamapi dhīyate*
 [MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933)
   <sub>attested</sub>

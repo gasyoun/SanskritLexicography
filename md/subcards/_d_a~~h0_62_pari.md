@@ -19,7 +19,7 @@
 [VS. 2,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,17)
 [ŚAT. BR. 1,3,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,4,2) *pari pūṣā hastaṃ dadhātu dakṣiṇam*
 [ṚV. 6,54,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.054.html#rv06.054.10) *yenendrāya bṛhaspatirvāsaḥ paryadhāt*
-[PĀR. GṚHY. 2,2.] мед.: *pari tvāgne puraṃ vayaṃ vipraṃ sahasya dhīmahi* мы кладём тебя как защиту (вал) вокруг нас
+[PĀR. GṚHY. 2,2.] мед.: *pari tvāgne puraṃ vayaṃ vipraṃ sahasya dhīmahi* мы кладем тебя как защиту (вал) вокруг нас
 [ṚV. 10,87,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.22) *śravāṃsi dadhire pari*
 [5,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.018.html#rv05.018.04) partic. praet. pass.: *śuṣṇasya citparihitaṃ yadojaḥ*
 [1,121,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.121.html#rv01.121.10) *parihitāḥ gāḍhaṃ rākṣasāḥ* расставленные в густой толпе вокруг, — стоящие вокруг

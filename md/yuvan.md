@@ -58,7 +58,7 @@ _PWG article — 1 sub-card(s), 11 sense(s) · RU 11/11 · EN 0/11_
 
 **SCH — Nachtrag к PW V.1〉)** yuvan 1. auch von Tieren gebraucht. bhallūka˚ ein junger Bär, [Mālatīm.] (ed. Bomb.) 304,1. {part=,seq=22581,type=,n=3}
 
-- **RU:** yuvan 1. также употребляется о животных. bhallūka˚ молодой медведь, [Mālatīm.] (ed. Bomb.) 304,1. {part=,seq=22581,type=,n=3}
+- **RU:** yuvan 1. также употребляется о животных. bhallūka˚ молодой медведь, [Mālatīm.] (Бомбейская ред.) 304,1. {part=,seq=22581,type=,n=3}
   <sub>attested</sub>
 
 **PWKVN V.1〉 (о животных))** *yuvan* V. 1〉 auch von Thieren. *bhallūka˚* ein junger Bär [MĀLATĪM. (ed. Bomb.) 304,1].

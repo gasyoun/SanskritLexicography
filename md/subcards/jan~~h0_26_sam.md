@@ -10,7 +10,7 @@
 [ŚVETĀŚV. UP. 2,6.]
 
 - **RU:** — *sam*
- 1) родиться (наделённым) чем-л.: *saṃ dakṣeṇa manasā jāyate kaviḥ*
+ 1) родиться (наделенным) чем-л.: *saṃ dakṣeṇa manasā jāyate kaviḥ*
 [ṚV. 9,68,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.068.html#rv09.068.05) появляться одновременно с чем-л.: *samuṣadbhirajāyathāḥ*
 [1,6,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.006.html#rv01.006.03) *agniryatrābhimathyate* и т.д. *tatra saṃjāyate manaḥ*
 [ŚVETĀŚV. UP. 2,6.]

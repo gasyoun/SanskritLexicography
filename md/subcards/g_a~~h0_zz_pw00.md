@@ -6,7 +6,7 @@
 **1)** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
 — 1〉 kommen.
 
-- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
+- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и **gāte* — 1〉 приходить.
   <sub>attested</sub>
 
 **2)** — 2〉 kommen —, hingehen zu oder nach, zugehen auf, sich hinwenden zu; mit Acc. oder Loc.
@@ -66,7 +66,7 @@
 
 **Mit T31-3)** — 3〉 vorübergehen, verstreichen (von der Zeit), — für (Acc.).
 
-- **RU:** — 3〉 проходить, истекать (о времени), — вместо (Acc.).
+- **RU:** — 3〉 проходить, истекать (о времени), — вм. (Acc.).
   <sub>attested</sub>
 
 **Mit T31-4)** — 4〉 hingehen, sterben.
@@ -171,7 +171,7 @@
 
 **Mit T69-3)** — 3〉 verstreichen (fehlerhaft für *ati*).
 
-- **RU:** — 3〉 истекать (ошибочно вместо *ati*).
+- **RU:** — 3〉 истекать (ошибочно вм. *ati*).
   <sub>attested</sub>
 
 **Mit T73-1)** — Mit *ava* — 1〉 weggehen, abhanden kommen.
@@ -276,7 +276,7 @@
 
 **Mit T107-2)** — 2〉 hervortreten oder einen Aufschwung nehmen.
 
-- **RU:** — 2〉 выдвигаться или получать подъём.
+- **RU:** — 2〉 выдвигаться или получать подъем.
   <sub>attested</sub>
 
 **Mit T108)** — Mit *abhyud* aufgehen über oder vor (Acc.).
@@ -366,7 +366,7 @@
 
 **Mit T135-1)** — Mit *pra* — 1〉 vorwärts gehen, vorschreiten, sich in Bewegung setzen, hinschreiten zu (Acc.).
 
-- **RU:** — С *pra* — 1〉 идти вперёд, продвигаться, приходить в движение, шагать к (Acc.).
+- **RU:** — С *pra* — 1〉 идти вперед, продвигаться, приходить в движение, шагать к (Acc.).
   <sub>attested</sub>
 
 **Mit T135-2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).

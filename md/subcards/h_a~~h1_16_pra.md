@@ -14,15 +14,15 @@
 [ŚAT. BR. 4,6,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,6) *jīvitam*
 [MBH. 1,4620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4620) *prāṇānprahāsiṣam*
 [4,432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.432) *dhanaṃ puruṣaḥ*
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) Jmd : *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") Jmd : *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
 [MBH. 2,2846.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2846) [6,2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2789) [8,4844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4844)
 [R. 2,42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30)
-[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471) mit einem unpersönlichen Subject: *mā māyuḥ prahāsīt*
+[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471 "Spr. (II) 1471: eṣa svabhāvo nārīṇāmanubhūya purā sukham | alpāmapyāpadaṃ prāpya duṣyanti prajahatyapi || — (3852.) Dies ist der Weiber angeborenes Wesen, dass sie, wenn sie auch zuvor Freuden gekostet haben, beim kleinsten Ungemach sich vergehen und sogar (den Gatten) verlassen.") mit einem unpersönlichen Subject: *mā māyuḥ prahāsīt*
 [TBR. 1,2,1,27.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,27)
 [TS. 7,3,13,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,13,1) *prāṇā hi prajahanti* (des Metrums wegen st. *prajahati*) *mām*
 [MBH. 1,6566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6566) *(tān) kṣamā lakṣmīśca dharmaśca nacirātprajahustataḥ*
 [3,8495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8495) *puruṣaṃ dhanam* (nom.)
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) *tamātmavantaṃ prajahatyanarthāḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") *tamātmavantaṃ prajahatyanarthāḥ*
 [4849.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4849) Etwas fahren lassen, aufgeben, entsagen: *ayodhyāṃ devalokaṃ vā*
 [R. 2,52,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,49) *karmabandham*
 [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) *kāmānsarvān*
@@ -30,11 +30,11 @@
 [3,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,41) *svadharmam*
 [SĀV. 5,31.] *dharmakāmau*
 [MBH. 5,752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.752) *kāmamanyū*
-[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002) *rāgadveṣau*
+[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002 "Spr. (II) 5002: yaḥ kāmamanyū prajahāti rājā pātre pratiṣṭhāpayate dhanaṃ ca | viśeṣavicchutavānkṣiprakārī taṃ sarvalokaḥ kurute pramāṇam || — (4755.) Einen Fürsten, der Liebe und Zorn aufgiebt, einem Würdigen Reichthümer zukommen lässt, Urtheilskraft besitzt, gelehrt ist und schnell zu Werke geht, nimmt Jedermann sich zur Richtschnur.") *rāgadveṣau*
 [6823.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823) *bhayam*
 [R. 4,4,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,9) *śokam*
 [5,69,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,28) *na vidyāṃ prajahet* (des Metrums wegen st. *prajahyāt*)
-[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118) *pratijñām* so v. a. nicht halten
+[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118 "Spr. (II) 5118: yathā pipāsāṃ jayate puruṣaḥ prāpya vai jalam | iṣṭārtho vidyayā hyevaṃ na vidyāṃ prajahennaraḥ || — Wenn mit Hilfe des Wissens das gewünschte Ziel erreicht würde, wie man den Durst stillt, wenn man Wasser bekommt, dann würde Niemand das Wissen vernachlässigen.") *pratijñām* so v. a. nicht halten
 [MBH. 13,6907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6907) med. des Metrums wegen:
 
 *mohametau prahāsyete* fahren lassen
@@ -46,15 +46,15 @@
 [ŚAT. BR. 4,6,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,6) *jīvitam*
 [MBH. 1,4620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4620) *prāṇānprahāsiṣam*
 [4,432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.432) *dhanaṃ puruṣaḥ*
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) кого-л.: *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") кого-л.: *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
 [MBH. 2,2846.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2846) [6,2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2789) [8,4844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4844)
 [R. 2,42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30)
-[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471) с безличным подлежащим: *mā māyuḥ prahāsīt*
+[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471 "Spr. (II) 1471: eṣa svabhāvo nārīṇāmanubhūya purā sukham | alpāmapyāpadaṃ prāpya duṣyanti prajahatyapi || — (3852.) Dies ist der Weiber angeborenes Wesen, dass sie, wenn sie auch zuvor Freuden gekostet haben, beim kleinsten Ungemach sich vergehen und sogar (den Gatten) verlassen.") с безличным подлежащим: *mā māyuḥ prahāsīt*
 [TBR. 1,2,1,27.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,27)
 [TS. 7,3,13,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,13,1) *prāṇā hi prajahanti* (ради метра вместо *prajahati*) *mām*
 [MBH. 1,6566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6566) *(tān) kṣamā lakṣmīśca dharmaśca nacirātprajahustataḥ*
 [3,8495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8495) *puruṣaṃ dhanam* (nom.)
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) *tamātmavantaṃ prajahatyanarthāḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") *tamātmavantaṃ prajahatyanarthāḥ*
 [4849.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4849) отпускать что-л., отказываться, отрекаться: *ayodhyāṃ devalokaṃ vā*
 [R. 2,52,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,49) *karmabandham*
 [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) *kāmānsarvān*
@@ -62,11 +62,11 @@
 [3,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,41) *svadharmam*
 [SĀV. 5,31.] *dharmakāmau*
 [MBH. 5,752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.752) *kāmamanyū*
-[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002) *rāgadveṣau*
+[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002 "Spr. (II) 5002: yaḥ kāmamanyū prajahāti rājā pātre pratiṣṭhāpayate dhanaṃ ca | viśeṣavicchutavānkṣiprakārī taṃ sarvalokaḥ kurute pramāṇam || — (4755.) Einen Fürsten, der Liebe und Zorn aufgiebt, einem Würdigen Reichthümer zukommen lässt, Urtheilskraft besitzt, gelehrt ist und schnell zu Werke geht, nimmt Jedermann sich zur Richtschnur.") *rāgadveṣau*
 [6823.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823) *bhayam*
 [R. 4,4,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,9) *śokam*
 [5,69,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,28) *na vidyāṃ prajahet* (ради метра вместо *prajahyāt*)
-[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118) *pratijñām* так преим. не соблюдать
+[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118 "Spr. (II) 5118: yathā pipāsāṃ jayate puruṣaḥ prāpya vai jalam | iṣṭārtho vidyayā hyevaṃ na vidyāṃ prajahennaraḥ || — Wenn mit Hilfe des Wissens das gewünschte Ziel erreicht würde, wie man den Durst stillt, wenn man Wasser bekommt, dann würde Niemand das Wissen vernachlässigen.") *pratijñām* так преим. не соблюдать
 [MBH. 13,6907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6907) мед. ради метра:
 
 *mohametau prahāsyete* отпустить
@@ -84,7 +84,7 @@
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
 [12,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1869)
 
-- **RU:** — 3) неточно вместо pass. уступать, исчезать: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* не противоречило бы метру)
+- **RU:** — 3) неточно вм. pass. уступать, исчезать: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* не противоречило бы метру)
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
 [12,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1869)
   <sub>attested</sub>
@@ -136,14 +136,14 @@
 **ppp.5a.beta)** — β) nicht zu Stande kommend mit Etwas (instr.): *sarvakarmabhiḥ*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
 
-- **RU:** — β) не достигающий успеха в чём-л. (instr.): *sarvakarmabhiḥ*
+- **RU:** — β) не достигающий успеха в чем-л. (instr.): *sarvakarmabhiḥ*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
   <sub>attested</sub>
 
 **ppp.5a.gamma)** — γ) ermangelnd, ohne — seiend: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
 
-- **RU:** — γ) лишённый, не имеющий: *jyotiḥ˚*
+- **RU:** — γ) лишенный, не имеющий: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
   <sub>attested</sub>
 

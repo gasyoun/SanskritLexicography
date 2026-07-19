@@ -57,32 +57,32 @@ u. s. w.
 
 **11a)** a) geschleudert: *vajra*
 [ṚV. 6,27,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.04) niedergeschlagen: *yugāntāgni˚ (meru)*
-[Spr. (II) 5197.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5197) *gadā*
+[Spr. (II) 5197.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5197 "Spr. (II) 5197: yadā meruḥ śrīmānnipatati yugantāgninihataḥ samudrāḥ śuṣpanti pracuramakaragrāhanilayāḥ | dharā gacchatpantaṃ dharaṇidharapādairapi dhṛtā śarīre kā vā… — (2355.) Wenn der metallreiche Meru, vom Feuer am Ende der Welt getroffen, zusammenstürzt") *gadā*
 [R. 3,35,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,51) *anilo 'nilena*
 [VARĀH. BṚH. S. 32,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,2) ein Planet von einem andern im Planetenkampfe
 [17,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,25) [BṚH. 15,2.] getroffen: *lakṣya*
 [MBH. 1,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7173) uneig.: *avaloka˚*
 [BHĀG. P. 1,11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) *śoka˚*
-[Spr. (II) 2781](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781), v. l. erschlagen, niedergemacht, geschlachtet
+[Spr. (II) 2781](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham"), v. l. erschlagen, niedergemacht, geschlachtet
 [MBH. 1,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1172) [5992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5992) [6038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6038) [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) [2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2544) [16904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16904) [5,7084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7084) [7225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7225)
 [R. 1,1,52.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,52) [2,63,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,31) [37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,37) [64,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,39) [44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,44) [51.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,51) [97,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,30)
-[Spr. (II) 499.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?499) [3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792) [4004.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4004) [4657](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4657), v. l.
+[Spr. (II) 499.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?499 "Spr. (II) 499: abhimukhanihatasya satastiṣṭhatu tāvajjayo 'tha vā svargaḥ | ubhayabalasādhuvādaḥ śravaṇasukhasyaiva tātparyam || — (190.) Wer in der Schlacht von vorn verwundet wird, fragt zunächst nicht Sieg oder Himmel: der Beifallsruf beider Heere ist das, was er vor Allem gern hört.") [3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792) [4004.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4004) [4657](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4657), v. l.
 [KATHĀS. 25,197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,197)
 [RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) [4,329.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,329) [5,335.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,335) [414.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,414) [434.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,434)
 [BHĀG. P. 1,15,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,7) [5,14,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,22) [7,10,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,25)
 
 - **RU:** a) сброшенный, низвергнутый: *vajra*
 [ṚV. 6,27,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.04) поверженный: *yugāntāgni˚ (meru)*
-[Spr. (II) 5197.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5197) *gadā*
+[Spr. (II) 5197.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5197 "Spr. (II) 5197: yadā meruḥ śrīmānnipatati yugantāgninihataḥ samudrāḥ śuṣpanti pracuramakaragrāhanilayāḥ | dharā gacchatpantaṃ dharaṇidharapādairapi dhṛtā śarīre kā vā… — (2355.) Wenn der metallreiche Meru, vom Feuer am Ende der Welt getroffen, zusammenstürzt") *gadā*
 [R. 3,35,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,51) *anilo 'nilena*
 [VARĀH. BṚH. S. 32,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,2) планета другой планетой в сражении планет
-[17,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,25) [BṚH. 15,2.] поражённый: *lakṣya*
+[17,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,25) [BṚH. 15,2.] пораженный: *lakṣya*
 [MBH. 1,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7173) неточно: *avaloka˚*
 [BHĀG. P. 1,11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) *śoka˚*
-[Spr. (II) 2781](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781), v. l. убитый, сражённый, заколотый
+[Spr. (II) 2781](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham"), v. l. убитый, сраженный, заколотый
 [MBH. 1,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1172) [5992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5992) [6038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6038) [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) [2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2544) [16904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16904) [5,7084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7084) [7225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7225)
 [R. 1,1,52.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,52) [2,63,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,31) [37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,37) [64,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,39) [44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,44) [51.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,51) [97,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,30)
-[Spr. (II) 499.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?499) [3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792) [4004.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4004) [4657](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4657), v. l.
+[Spr. (II) 499.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?499 "Spr. (II) 499: abhimukhanihatasya satastiṣṭhatu tāvajjayo 'tha vā svargaḥ | ubhayabalasādhuvādaḥ śravaṇasukhasyaiva tātparyam || — (190.) Wer in der Schlacht von vorn verwundet wird, fragt zunächst nicht Sieg oder Himmel: der Beifallsruf beider Heere ist das, was er vor Allem gern hört.") [3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792) [4004.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4004) [4657](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4657), v. l.
 [KATHĀS. 25,197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,197)
 [RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) [4,329.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,329) [5,335.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,335) [414.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,414) [434.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,434)
 [BHĀG. P. 1,15,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,7) [5,14,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,22) [7,10,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,25)
@@ -95,17 +95,17 @@ u. s. w.
 [R. 2,47,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,18) *āśā*
 [5,56,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,93) *māyā pratimāyayā*
 [KATHĀS. 50,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,66) *yogyatā*
-[Spr. (II) 6516.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6516) *pradoṣe panthāḥ* dahin so v. a. nicht mehr zu sehen
+[Spr. (II) 6516.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6516 "Spr. (II) 6516: śūrāśca matimantaśca vidyāvantaśca jantavaḥ | kāladairātmyataḥ paśya jātā nihatayogyatāḥ || — Heldenmüthige, kluge und gelehrte Männer büssen, o sieh, durch die Tyrannei der Zeit ihre Befähigung ein.") *pradoṣe panthāḥ* dahin so v. a. nicht mehr zu sehen
 [4254.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4254)
 
-- **RU:** — b) разрушенный, погублённый, уничтоженный: *tripura*
+- **RU:** — b) разрушенный, погубленный, уничтоженный: *tripura*
 [MBH. 3,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1703) *deśa*
 [VARĀH. BṚH. S. 11,62.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,62) *jagat*
 [PRAB. 70,12.] *ānanda*
 [R. 2,47,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,18) *āśā*
 [5,56,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,93) *māyā pratimāyayā*
 [KATHĀS. 50,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,66) *yogyatā*
-[Spr. (II) 6516.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6516) *pradoṣe panthāḥ* канувший так преим. более не видимый
+[Spr. (II) 6516.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6516 "Spr. (II) 6516: śūrāśca matimantaśca vidyāvantaśca jantavaḥ | kāladairātmyataḥ paśya jātā nihatayogyatāḥ || — Heldenmüthige, kluge und gelehrte Männer büssen, o sieh, durch die Tyrannei der Zeit ihre Befähigung ein.") *pradoṣe panthāḥ* канувший так преим. более не видимый
 [4254.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4254)
   <sub>attested</sub>
 
@@ -114,7 +114,7 @@ u. s. w.
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) Comm. zu [TS. PRĀT. 19,3.] *˚tva*
 _n._ [4.]
 
-- **RU:** — c) произнесённый с Анудатта
+- **RU:** — c) произнесенный с Анудатта
 [Ind. St. 4,366.] Кар. 1 из
 [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) коммент. к [TS. PRĀT. 19,3.] *˚tva*
 _n._ [4.]
@@ -130,10 +130,10 @@ lesen)
 [BHAṬṬ. 2,21.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,21) — intens. *nighanighnat* schleudernd
 [ṚV. 1,55,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.055.html#rv01.055.05)
 
-- **RU:** — d) ошибочно вместо *nihita*
+- **RU:** — d) ошибочно вм. *nihita*
 [R. 2,82,16](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,16) (*nihita* [ed. Bomb.]).
 [VARĀH. BṚH. S. 4,2](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,2) (*nihita* die рукоп.). напротив, *nihita*
-[KIR. 14,14] ошибочно вместо *nihata* . ср. *nighāta* сл., *nihan* сл. и *nihatārtha* в Nachträgen. — caus. убивать, умерщвлять: *spaśairnighātayetsarvān* (так следует
+[KIR. 14,14] ошибочно вм. *nihata* . ср. *nighāta* сл., *nihan* сл. и *nihatārtha* в Nachträgen. — caus. убивать, умерщвлять: *spaśairnighātayetsarvān* (так следует
 
 читать)
 [MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792) *nighātayiṣyanyudhi yātudhānān*

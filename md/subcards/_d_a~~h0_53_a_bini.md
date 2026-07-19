@@ -34,7 +34,7 @@ Schol. *leśenānabhi˚) vaktavyāḥ*; vgl. dazu *abhinidhāna*
 
 - **RU:** — 2) касаться, приближаться: *kṣureṇābhinidadhāti*
 [ŚAT. BR. 3,1,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,7) *asinā*
-[8,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,12) [13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,13) [4,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,1,22) [1,3,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,4,12) *dakṣiṇaṃ karṇamabhinidhāya vāgvāgiti triḥ* (уста) поднося близко к уху (ребёнка)
+[8,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,12) [13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,13) [4,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,1,22) [1,3,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,4,12) *dakṣiṇaṃ karṇamabhinidhāya vāgvāgiti triḥ* (уста) поднося близко к уху (ребенка)
 [14,9,4,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,25) *mūrdhannabhinidhāyāśrāvayati*
 [4,4,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,3,9) [KĀTY. ŚR. 2,8,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,8,2) [6,6,9.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,6,9) [GOBH. 2,9,11.] [KAUŚ. 53. 86.] partic. *abhinihita* прикасающийся: *abhinihita eva savyena pāṇinā bhavati*
 [ŚAT. BR. 1,3,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,4,12) *anabhinihito vai puruṣo 'nnena ca prāṇena ca* не соприкасающийся с

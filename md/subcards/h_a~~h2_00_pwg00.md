@@ -20,7 +20,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 
 *cākrandan*
 [MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) *hā janma nṛpayoṣitām*
-[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826) *hā hatāsmi*
+[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
 [MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364)
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
@@ -29,10 +29,10 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 [R. 6,93,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,11) *hānyeṣāṃ tena kā gatiḥ*
 [KATHĀS. 52,262.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,262) *hā na kaścinmāṃ vṛddhamanāthaṃ saṃbhāvayati*
 [PRAB. 89,15.] *hā hanta hanta*
-[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777) *hā dhik*
+[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777 "Spr. (II) 5777: rātrirgamiṣyati bhaviṣyati suprabhātaṃ bhāsvānudeṣyati hasiṣyati padmajālam | itthaṃ vicintayati kośagate dvirephe hā hanta hanta nalinīṃ gaja ujjahār… — (2625.) «Die Nacht wird vorübergehen, ein schönes Morgenroth anbrechen, die Sonne aufgehen und die Wasserrosen werden sich öffnen.» Während eine in einem Blumenkelch eingeschlossene Biene solchen Gedanken sich hingiebt,…") *hā dhik*
 [7383.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7383) [MĀLATĪM. 82,5.] [RĀJA-TAR. 1,212.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,212) *hā kaṣṭam*
 [SUŚR. 1,108,17.]
-[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316)
+[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316 "Spr. (II) 7316: svargadvārakapāṭapāṭanapaṭurdharmo na cīrṇo mayā hvāravekṣaṇadhūlidhūsaramukhā naivārthinastoṣitāḥ | kāmaṃ cāruvilāsinī madavaśātsvaone 'pi nāsvāditā… — Gute Werke, die geeignet sind die Flügel des Himmelsthores aufzureissen, habe ich nicht vollbracht")
 [HEM.]
 [YOGAŚ. 2,49.] *hākaṣṭaśabda*
 [KATHĀS. 56,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,123) *hā dhikkaṣṭam*
@@ -41,7 +41,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219)
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
-[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989) *hā hā tathāpi viṣayānna jahāti cetaḥ*
+[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
 [MṚCCH. 130,23.]
 [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7)
@@ -53,7 +53,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380)
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
-[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389) *hā hā muṣṭo 'smi*
+[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*
@@ -78,7 +78,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 *cākrandan*
 [MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) *hā janma nṛpayoṣitām*
-[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826) *hā hatāsmi*
+[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
 [MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364)
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
@@ -87,10 +87,10 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [R. 6,93,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,11) *hānyeṣāṃ tena kā gatiḥ*
 [KATHĀS. 52,262.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,262) *hā na kaścinmāṃ vṛddhamanāthaṃ saṃbhāvayati*
 [PRAB. 89,15.] *hā hanta hanta*
-[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777) *hā dhik*
+[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777 "Spr. (II) 5777: rātrirgamiṣyati bhaviṣyati suprabhātaṃ bhāsvānudeṣyati hasiṣyati padmajālam | itthaṃ vicintayati kośagate dvirephe hā hanta hanta nalinīṃ gaja ujjahār… — (2625.) «Die Nacht wird vorübergehen, ein schönes Morgenroth anbrechen, die Sonne aufgehen und die Wasserrosen werden sich öffnen.» Während eine in einem Blumenkelch eingeschlossene Biene solchen Gedanken sich hingiebt,…") *hā dhik*
 [7383.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7383) [MĀLATĪM. 82,5.] [RĀJA-TAR. 1,212.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,212) *hā kaṣṭam*
 [SUŚR. 1,108,17.]
-[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316)
+[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316 "Spr. (II) 7316: svargadvārakapāṭapāṭanapaṭurdharmo na cīrṇo mayā hvāravekṣaṇadhūlidhūsaramukhā naivārthinastoṣitāḥ | kāmaṃ cāruvilāsinī madavaśātsvaone 'pi nāsvāditā… — Gute Werke, die geeignet sind die Flügel des Himmelsthores aufzureissen, habe ich nicht vollbracht")
 [HEM.]
 [YOGAŚ. 2,49.] *hākaṣṭaśabda*
 [KATHĀS. 56,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,123) *hā dhikkaṣṭam*
@@ -99,7 +99,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219)
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
-[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989) *hā hā tathāpi viṣayānna jahāti cetaḥ*
+[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
 [MṚCCH. 130,23.]
 [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7)
@@ -111,7 +111,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380)
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
-[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389) *hā hā muṣṭo 'smi*
+[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*

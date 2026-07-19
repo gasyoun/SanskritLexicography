@@ -22,7 +22,7 @@
 [ĀŚV. GṚHY. 1,8.]
 [CHĀND. UP. 4,6,1.] *taṃ* (*aḍgāraṃ*) *tṛṇairupasamādhāya*
 [6,7,5.] *(kalā) annenopasamāhitā*
-[6.] устанавливать, водружать на своё место: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
+[6.] устанавливать, водружать на свое место: *upasamādhīyamānapariṇayopakaraṇa* (*bhavana*)
 [DAŚAK.] in [BENF. Chr. 201,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201)
   <sub>attested</sub>
 

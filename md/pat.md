@@ -38,7 +38,7 @@ _PWG article — 73 sub-card(s), 381 sense(s) · RU 381/381 · EN 0/381_
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [DHĀTUP. 20,15](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20); *papāta, paptima* ved., *petathus, paptus* ved., *petus, paptivaṃs* ved., *petuṣī; apaptat*
 [P. 7,4,19.](https://ashtadhyayi.com/sutraani/7/4/19)
-[VOP. 8,125](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,125); *patiṣyati, patitā*; ep. auch мед.; *patitvā, patitum; patita*
+[VOP. 8,125](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,125); *patiṣyati, patitā*; ep. также мед.; *patitvā, patitum; patita*
 [P. 7,2,15.](https://ashtadhyayi.com/sutraani/7/2/15)
 [VOP. 26,107.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,107)
  1) лететь, быстро двигаться в воздухе; мчаться
@@ -58,7 +58,7 @@ _PWG article — 73 sub-card(s), 381 sense(s) · RU 381/381 · EN 0/381_
 [ṚV. 1,29,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.029.html#rv01.029.06) *patanti mihaḥ*
 [79,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.079.html#rv01.079.08) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [4,1,2,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,2,26) *jihvāyā agraṃ patat*
 [ṚV. 3,39,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.039.html#rv03.039.03) *keneṣitaṃ patati preṣitaṃ manaḥ*
-[KENOP. 1.] *patita* _n._ полёт
+[KENOP. 1.] *patita* _n._ полет
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913)
   <sub>attested</sub>
 
@@ -275,7 +275,7 @@ u. s. w. [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490) [H
 [M. 11,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,172)
 
 - **RU:** — 5) нисходить в ад: *nejjihmā yantyo narakaṃ patāma*
-[NIR. 1,11](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) (ср. схол. zu [P. 3,4,8.](https://ashtadhyayi.com/sutraani/3/4/8) [8,1,30](https://ashtadhyayi.com/sutraani/8/1/30)). [R. GORR. 2,49,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,49,27) *narakaṃ patitaḥ, narakapatitaḥ*
+[NIR. 1,11](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) (ср. схол. к [P. 3,4,8.](https://ashtadhyayi.com/sutraani/3/4/8) [8,1,30](https://ashtadhyayi.com/sutraani/8/1/30)). [R. GORR. 2,49,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,49,27) *narakaṃ patitaḥ, narakapatitaḥ*
 [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24), схол.
 *patanti narake 'śucau*
 [BHAG. 16,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,16)
@@ -306,12 +306,12 @@ u. s. w. [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490) [H
 [M. 10,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,97) *steno hiraṇyasya surāṃ pibaṃśca gurostalpamāvasanbrahmahā caite patanti*
 [CHĀND. UP. 5,10,9.]
 [M. 3,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,16) [4,204.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,204) [5,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,19) [9,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,200) [10,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,92)
-[YĀJÑ. 1,38.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,38) *abhigamya paraṃ nārī patiṣyati* (könnte возможно auch bedeuten нисходит в ад) *na saṃśayaḥ*
+[YĀJÑ. 1,38.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,38) *abhigamya paraṃ nārī patiṣyati* (könnte возможно также bedeuten нисходит в ад) *na saṃśayaḥ*
 [MBH. 1,4203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4203) *puraṃdarāṇāṃ śataṃ śataṃ ca parameṣṭhināṃ patatu vā munīnāṃ śatam*
 [PRAB. 24,11.] *patita*
 [KAUŚ. 57.]
 [ĀŚV. GṚHY. 4,9.]
-[PĀR.] [GṚHY. 2,11.] [VS. PRĀT. 8,34.] [M. 3,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,92) [4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [5,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,85) [9,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,58) [63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,63) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,79) [118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,118) [144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,144) [YĀJÑ. 1,148.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,148) [SUŚR. 1,7,13. 108,10.] [KATHĀS. 7,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,48) [VP.] bei [MUIR, Sanscrit Texts I,147, Z. 8 u. 9 in der N.] *patitavṛtta*
+[PĀR.] [GṚHY. 2,11.] [VS. PRĀT. 8,34.] [M. 3,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,92) [4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [5,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,85) [9,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,58) [63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,63) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,79) [118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,118) [144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,144) [YĀJÑ. 1,148.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,148) [SUŚR. 1,7,13. 108,10.] [KATHĀS. 7,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,48) [VP.] у [MUIR, Sanscrit Texts I,147, Z. 8 u. 9 in der N.] *patitavṛtta*
 [HARIV. 4847.](https://sanskrit-lexicon-scans.github.io/hariv?4847) *apatita*
 [M. 8,389.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,389) *sāvitrīpatita* лишившийся Сав.
 [M. 2,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,39)
@@ -356,10 +356,10 @@ Schol. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [PAÑCAT. I,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,16) *viṣamapatitaḥ* (так следует, вероятно, читать)
 [III,237.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,237) *vicārapatita*
 [KATHĀS. 33,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,21) *ghorāyāṃ bhrūṇahatyāyāṃ patate* so преим. совершает этот грех
-[PARĀŚARA] bei [KULL.] zu [M. 3,45](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,45) (см. 193,1. сл.). *avaṃśapatita* so преим. происходящий из низкого рода
+[PARĀŚARA] у [KULL.] к [M. 3,45](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,45) (см. 193,1. сл.). *avaṃśapatita* so преим. происходящий из низкого рода
 [Spr. 240.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?240) *madhyapatita* so преим. находящийся посредине
 
-схол. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
+схол. к [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
   <sub>attested</sub>
 
 **9)** — 9) sich ereignen, eintreten: *tatra ca cirakālaṃ durbhikṣaṃ patitam*
@@ -463,19 +463,19 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [BHARTṚ. 2,12.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,12) einführen, in Gang bringen (?)
 [RĀJA-TAR. 5,173.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,173)
 
-- **RU:** — 2. caus. *pātayati* und *˚te*
+- **RU:** — 2. caus. *pātayati* и *˚te*
  1) заставлять летать, метать, бросать, повергать, сбрасывать вниз, отсекать, повергать ниц, опрокидывать, бросать в, на: *idaṃ yatkṛṣṇaḥ śakunirabhiniṣpatannapīpatat*
 [AV. 7,64,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.064.html#av07.064.01) *śaravyā asmadviṣūcīrindra pātaya*
 [1,19,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.019.html#av01.019.01) *vidyutam*
 [11,2,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.26) *mayyeva pātyatāṃ bāṇaḥ*
-[MĀRK. P. 66,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,13) [ARJ. 3,52.] [R. 2,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,22) *paraśuḥ* (остаётся в руке) — *pātitaḥ*
+[MĀRK. P. 66,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,13) [ARJ. 3,52.] [R. 2,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,22) *paraśuḥ* (остается в руке) — *pātitaḥ*
 [R. GORR. 2,114,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,32) *vidūṣakasyopari daṇḍakāṣṭhaṃ pātayati*
 [MĀLAV. 56,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?56,7) *daṇḍaṃ tasyāhamatulaṃ pātayiṣye*
 [MĀRK. P. 51,112.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,112) *daṇḍaṃ daṇḍyeṣu pātayet* налагать наказание
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so преим. он быстро проведёт нож
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so преим. он быстро проведет нож
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* шнур для измерения, натянутый Вет.
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (солнце)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* бросай кости
@@ -512,7 +512,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [5158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5158) [KATHĀS. 43,186.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,186) [BHĀG. P. 5,26,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,26) [RĀJA-TAR. 6,128.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,128) [VET. in LA. 22,5.] *(tam) pātayadhvaṃ vibhāvasau*
 [MBH. 1,2125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2125) бросать внутрь, класть в: *kṣāraṃ pātayitvā*
 [SUŚR. 1,33,18.] *sa pātayatyagham*
-[VP.] bei [MUIR, Sanscrit Texts I,22, N. 35, Śl. 15.] помещать что-либо внутрь чего-либо: *gūḍhaṃ nūpuraśabdamātramapi me kāntaṃ śrutau pātayet*
+[VP.] у [MUIR, Sanscrit Texts I,22, N. 35, Śl. 15.] помещать что-либо внутрь чего-либо: *gūḍhaṃ nūpuraśabdamātramapi me kāntaṃ śrutau pātayet*
 [VIKR. 56.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?56) *pāvakam* разводить огонь
 [PAÑCAT. III,166.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,166) — *śarīre ca pātayitvā śirodharām* давать осесть, заставлять оседать
 [R. 2,23,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,4) *cakṣuḥ, dṛṣṭim* бросать взгляд,
@@ -527,12 +527,12 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [R. GORR. 2,76,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,7) [99,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,22) *rāmamātā sapatnī me kathaṃ na vairaṃ pātayet*
 [7,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,31) *pitu rviyogajaṃ duḥkhaṃ sahasā pātitaṃ tvayā*
 [76,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,13) — *sthānāt* низвергать кого-л. с его места
-[R. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,5) низвергать кого-л., губить, ввергать в несчастье, ставить в тяжёлое положение: *(tvayā) vayamātmā ca pātitāḥ*
+[R. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,5) низвергать кого-л., губить, ввергать в несчастье, ставить в тяжелое положение: *(tvayā) vayamātmā ca pātitāḥ*
 [R. 6,94,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,19) *atha tānpātayiṣyāmi yathā yāsyanti na kṣayam*
 [MBH. 4,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.35) [610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.610) [13,4760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4760) *yenāyaṃ pātano 'rīṇāṃ vinā śastreṇa pātitaḥ*
 [MĀRK. P. 24,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?24,40) *brāhmaṇakulaṃ tamasi pātitam, atha vā ātmā pātitaḥ*
 [MṚCCH. 50,7. 8. 129,14.]
-[ŚĀK. 117.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?117) *arghatas* лишать вещь её цены, обесценивать: *maṇayo yairarghataḥ pātitāḥ*
+[ŚĀK. 117.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?117) *arghatas* лишать вещь ее цены, обесценивать: *maṇayo yairarghataḥ pātitāḥ*
 [BHARTṚ. 2,12.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,12) вводить, приводить в действие (?)
 [RĀJA-TAR. 5,173.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,173)
   <sub>attested</sub>
@@ -546,7 +546,7 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 Schol. zu [JYOT. 27.]
 
 - **RU:** — 2) вычитать
-схол. zu [JYOT. 27.]
+схол. к [JYOT. 27.]
   <sub>attested</sub>
 
 **caus.2.3)** — 3) sich stürzen: *tasyāḥ srotasyapātayat*
@@ -566,7 +566,7 @@ Schol. zu [JYOT. 27.]
 [VOP. 19,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,8) [9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,9) *kūlaṃ pipatiṣati* das Ufer ist im Begriff einzustürzen
 [P. 3,1,7](https://ashtadhyayi.com/sutraani/3/1/7), Vārtt. 1, Sch.
 
-- **RU:** — desid. *pipatiṣati* und *pitsati*
+- **RU:** — desid. *pipatiṣati* и *pitsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [2,49](https://ashtadhyayi.com/sutraani/7/2/49), Вартт.
 [VOP. 19,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,8) [9.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,9) *kūlaṃ pipatiṣati* берег вот-вот обрушится
 [P. 3,1,7](https://ashtadhyayi.com/sutraani/3/1/7), Вартт. 1, схол.
@@ -574,7 +574,7 @@ Schol. zu [JYOT. 27.]
 
 **intens.)** — Vgl. *pitsant, pitsu* und *pipatiṣant* .
 
-- **RU:** — ср. *pitsant, pitsu* und *pipatiṣant* .
+- **RU:** — ср. *pitsant, pitsu* и *pipatiṣant* .
   <sub>attested</sub>
 
 ## pat
@@ -620,7 +620,7 @@ Schol. zu [JYOT. 27.]
  1) пролетать мимо, пролетать над: *atha ha haṃsā niśāyāmatipetuḥ*
 [CHĀND. UP. 4,1,2.] *mā ta 'tipaptan*
 [LĀṬY. 3,10,9.] *ati sūryaṃ paraḥ śakunā iva paptima*
-?(схол. zu [P. 6,4,99](https://ashtadhyayi.com/sutraani/6/4/99)). [ṚV. 9,107,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.20) ср. u. *abhi* 2.
+?(схол. к [P. 6,4,99](https://ashtadhyayi.com/sutraani/6/4/99)). [ṚV. 9,107,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.20) ср. u. *abhi* 2.
   <sub>attested</sub>
 
 **2)** — 2) versäumen, vernachlässigen, vgl. *atipāta, atipātya* . — caus.
@@ -673,12 +673,12 @@ Schol. zu [JYOT. 27.]
 - **RU:** — *anu*
  1) прилетать к (acc.)
 [ĀŚV. GṚHY. 3,7.] *khamevānupatan* летя по воздуху
-[BHĀG. P. 3,11,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,5) лететь вслед, бежать следом, идти следом; следовать за, сопровождать (букв. und перен.): *muhuranupatati* (loc.) *syandane*
+[BHĀG. P. 3,11,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,5) лететь вслед, бежать следом, идти следом; следовать за, сопровождать (букв. и перен.): *muhuranupatati* (loc.) *syandane*
 [ŚĀK. 7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
 [KATHĀS. 39,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,136) *dharmamanvapataddrutam*
 [7,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,89) [28,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,57) [MBH. 7,1742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1742) [12,10449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10449) *cittaspanditakalpanāmanupatan*
 [PRAB. 16,16.] *(na jātu) anupatanti vinā te prāṇināṃ śucaḥ*
-[BHĀG. P. 1,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,8) [5,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,37) *anupātam* absol.: *gṛhānupātam* (ср. u. *anupra*) переходя из дома в дом, *latānupātam* bei
+[BHĀG. P. 1,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,8) [5,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,37) *anupātam* absol.: *gṛhānupātam* (ср. u. *anupra*) переходя из дома в дом, *latānupātam* у
 [GOLD.] словарь u. *anupātam* .
   <sub>attested</sub>
 
@@ -783,12 +783,12 @@ Schol. zu [JYOT. 27.]
 hinabwerfen: *sārathiṃ cābhyapātayat*
 [MBH. 6,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1684) [7,8768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8768) [1153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1153)
 
-- **RU:** — 2) перелетать через, обгонять в полёте: *ekenaiva śatasyaiṣa pātenābhipatiṣyati . haṃsasya patitaṃ kākaḥ*
+- **RU:** — 2) перелетать через, обгонять в полете: *ekenaiva śatasyaiṣa pātenābhipatiṣyati . haṃsasya patitaṃ kākaḥ*
 [MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) пробегать: *ekenābhipatatyahnā yojanāni caturdaśa*
 [5,3051.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3051) Вероятно, в обоих местах следует читать *ati* вместо *abhi*. — caus. бросать —, метать в: *bhūyaścainaṃ (parighaṃ) tadā bhrāmya varuṇāyābhyapātayat*
 [HARIV. 13902.](https://sanskrit-lexicon-scans.github.io/hariv?13902)
 [MBH. 3,8717](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8717) (где следует читать *abhipātyatāṃ*). бросать
-[SĀY.] zu [ṚV. 1,52,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.052.html#rv01.052.05) und in der введ. zu [1,105.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.001.html#rv01.001.105)
+[SĀY.] к [ṚV. 1,52,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.052.html#rv01.052.05) и in der введ. к [1,105.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.001.html#rv01.001.105)
 бросать вниз: *sārathiṃ cābhyapātayat*
 [MBH. 6,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1684) [7,8768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8768) [1153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1153)
   <sub>attested</sub>
@@ -957,8 +957,8 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 - **RU:** — ср. *āpatana, āpati* сл., *āpāta* сл. — 1. caus. (*patayati*) прилетать к: *venanti venāḥ patayantyā diśaḥ*
 [ṚV. 10,64,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.064.html#rv10.064.02) — 2. caus. (*pātayati*) заставлять падать, повергать: *(tam) ūra āpātya*
-[BHĀG. P. 7,8,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,29) *āpātitanarendrā sā rudhirārdrā raṇakṣitiḥ* сражённый, убитый
-[HARIV. 5598.](https://sanskrit-lexicon-scans.github.io/hariv?5598) *nāsramāpātayejjātu* проливать слёзы
+[BHĀG. P. 7,8,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,29) *āpātitanarendrā sā rudhirārdrā raṇakṣitiḥ* сраженный, убитый
+[HARIV. 5598.](https://sanskrit-lexicon-scans.github.io/hariv?5598) *nāsramāpātayejjātu* проливать слезы
 [M. 3,229.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,229) — intens. многократно прилетать: *avairahatyāyedamā papatyāt* (!)
 [AV. 6,29,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.029.html#av06.029.03)
   <sub>attested</sub>
@@ -1121,7 +1121,7 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [ṚT. 1,26.] *avidhyatpṛthivīm — utpapāta tato dhārā vāriṇaḥ* хлынуть, забить ключом
 [MBH. 6,5785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5785) кровь из раны
 [ŚAT. BR. 3,1,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,16) [8,2,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,14) *garbhādutpatite jantau* выйти из чрева матери
-[HIT. I,170.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,170) спастись, ускользнуть: *(mṛgaḥ) vyādhānāṃ śaragocarādatijavenotpatya* (v. l. вместо *utplulya*)
+[HIT. I,170.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,170) спастись, ускользнуть: *(mṛgaḥ) vyādhānāṃ śaragocarādatijavenotpatya* (v. l. вм. *utplulya*)
 [Spr. 923.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?923)
   <sub>attested</sub>
 
@@ -1395,7 +1395,7 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 **4)** — 4) sich einfügen, zu stehen kommen, seinen Platz erhalten: *nipātā uccāvaceṣvartheṣu nipatanti*
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4) [11.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) *sarvata evābhyarhitaṃ pūrvaṃ nipatati* zu [P. 2,2,34.](https://ashtadhyayi.com/sutraani/2/2/34)
 
-- **RU:** — 4) вставляться, помещаться, занимать своё место: *nipātā uccāvaceṣvartheṣu nipatanti*
+- **RU:** — 4) вставляться, помещаться, занимать свое место: *nipātā uccāvaceṣvartheṣu nipatanti*
 [NIR. 1,4.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,4) [11.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) *sarvata evābhyarhitaṃ pūrvaṃ nipatati* к [P. 2,2,34.](https://ashtadhyayi.com/sutraani/2/2/34)
   <sub>attested</sub>
 
@@ -1481,9 +1481,9 @@ v. a. schlagen
 [BHĀG. P. 2,7,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,14) *uparitalanipātiteṣṭaka (saṃdhi)*
 [MṚCCH. 51,18.] *mallam — nyapātayat*
 [KATHĀS. 25,124.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,124) *nipātayanti nadyo hi kūlāni kulāni nāryaḥ* приводить к падению (букв. и перен.)
-[PAÑCAT. I,227.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,227) *raktavindurnipātitaḥ* накапанный, нанесённый каплями
-[KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *vindavo jātarūpasya śataṃ yasmin (dhanuṣi) nipātitāḥ* нанесённый каплями на, т. е. преим. рельефно инкрустированный
-[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) выбрасывать, т. е. преим. выплёвывать: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
+[PAÑCAT. I,227.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,227) *raktavindurnipātitaḥ* накапанный, нанесенный каплями
+[KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *vindavo jātarūpasya śataṃ yasmin (dhanuṣi) nipātitāḥ* нанесенный каплями на, т. е. преим. рельефно инкрустированный
+[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) выбрасывать, т. е. преим. выплевывать: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
 [Spr. 438.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?438) (взгляд) опускать, направлять на: *yadyeṣa mayi susnigdhāṃ dṛṣṭimadya nipātayet*
 [MĀRK. P. 61,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,41)
   <sub>attested</sub>
@@ -1527,7 +1527,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 *ṇyadāyādeśa ityetāvupacāyye nipātitau* Кар.
 2. к [P. 3,1,123.](https://ashtadhyayi.com/sutraani/3/1/123) *nū itthā te dīrghatvaṃ nipātyate*
 схол. к [ṚV. PRĀT. 2,35.] схол. к [VS. PRĀT. 3,71] в [Ind. St. 4,192.] схол. к [P. 3,1,41.](https://ashtadhyayi.com/sutraani/3/1/41) [122.](https://ashtadhyayi.com/sutraani/3/1/122) *ityete (jyotsnā* и т.д.) *matvarthe saṃjñāyāṃ nipātyante*
-схол. к [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](https://ashtadhyayi.com/sutraani/2/1/72) [UJJVAL.] к [UṆĀDIS. 1,41. 42. 54. 58. 66. 148. 149,154] и т.д. [VOP. 2,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,13) — Вместо *nipātya*
+схол. к [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](https://ashtadhyayi.com/sutraani/2/1/72) [UJJVAL.] к [UṆĀDIS. 1,41. 42. 54. 58. 66. 148. 149,154] и т.д. [VOP. 2,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?2,13) — Вм. *nipātya*
 [ŚĀṄKH. ŚR. 4,14,2] лучше читать *nipādya* с
 [ŚAT. BR. 12,5,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,7)
   <sub>attested</sub>
@@ -1577,7 +1577,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 **Nachträge addendum)** — Vgl. *upanipāta* fg. — Für das caus.
 [ŚĀṄKH. ŚR. 16,3,33] und [ĀŚV. ŚR. 10,8] wird richtiger *pad* caus. gelesen.
 
-- **RU:** — ср. *upanipāta* сл. — Вместо caus.
+- **RU:** — ср. *upanipāta* сл. — Вм. caus.
 [ŚĀṄKH. ŚR. 16,3,33] и [ĀŚV. ŚR. 10,8] правильнее читать *pad* caus..
   <sub>attested</sub>
 
@@ -1723,7 +1723,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 [15,647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.647) [HARIV. 5830.](https://sanskrit-lexicon-scans.github.io/hariv?5830) [6351.](https://sanskrit-lexicon-scans.github.io/hariv?6351)
 
 - **RU:** — *saṃni*
- 1) опускаться в полёте, снижаться, падать вниз: *(śakunau) pṛthivyāṃ saṃnipetatuḥ*
+ 1) опускаться в полете, снижаться, падать вниз: *(śakunau) pṛthivyāṃ saṃnipetatuḥ*
 [MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462) *saṃnipatya mahābāhuḥ* опускаясь на землю
 [R. 5,62,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,62,10) *nirvindhyāyāḥ — rasābhyantaraṃ saṃnipatya (meghaḥ)*
 [MEGH. 29.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?29) *(bāṇāḥ) saṃnipeturakuṇṭhāgrā nāgeṣu ca hayeṣu ca*
@@ -2053,7 +2053,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 **act.)** — *vipari* zurückfliegen: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19)
 
-- **RU:** *vipari* лететь назад, возвращаться лётом: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
+- **RU:** *vipari* лететь назад, возвращаться летом: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19)
   <sub>attested</sub>
 
@@ -2374,7 +2374,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 **1〉)** **1.** √*pat*, *patati* (episch auch Med.)
 — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 
-- **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевлённых и неодушевлённых предметах), веять (о знамёнах), мчаться, убегать (о времени).
+- **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевленных и неодушевленных предметах), веять (о знаменах), мчаться, убегать (о времени).
   <sub>attested</sub>
 
 **2〉)** — 2〉 sich herablassen, sich niederlassen, sich senken (von der Sonne), sich niederwerfen, sich stürzen, sich werfen auf oder in (Loc. oder Acc.), — zu Jmdes Füssen (Loc., ausnahmsweise Acc.) *mūrdhnā* mit dem Kopfe sich Jmd (Gen.) zu Füssen werfen. *pādayoḥ patitaḥ* und *pādapatita* sich Jmd zu Füssen geworfen habend.
@@ -2429,7 +2429,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **caus. 2〉)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
 
-- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож и т.д., так преим. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так преим. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так преим. налагать наказание на (Loc.), *jalam* так преим. лить воду на землю, *jalaṃ netrāmbhyām* так преим. проливать слёзы, *aśrūṇi* так преим. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
+- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож и т.д., так преим. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так преим. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так преим. налагать наказание на (Loc.), *jalam* так преим. лить воду на землю, *jalaṃ netrāmbhyām* так преим. проливать слезы, *aśrūṇi* так преим. вызывать слезы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
   <sub>attested</sub>
 
 **caus. 3〉)** — 3〉 hinabwerfen, abschlagen (den Kopf), ausschlagen (Zähne), niederwerfen, niederhauen, umwerfen, werfen in (Acc. oder Loc.).
@@ -2629,7 +2629,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **abhipat- 2〉)** — 2〉 überfliegen, im Fliegen überholen.
 
-- **RU:** 2〉 перелетать, обгонять в полёте.
+- **RU:** 2〉 перелетать, обгонять в полете.
   <sub>attested</sub>
 
 **abhipat- 3〉)** — 3〉 durchlaufen, zurücklegen.
@@ -2729,7 +2729,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **sam- caus. 2〉)** — 2〉 *asram* Thränen vergiessen.
 
-- **RU:** 2〉 *asram* проливать слёзы.
+- **RU:** 2〉 *asram* проливать слезы.
   <sub>attested</sub>
 
 **samā- (caus.))** — Mit *abhyā* herbeieilen, hinstürzen zu, losstürzen auf (Acc. oder Acc. mit *prati*).
@@ -2739,7 +2739,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **vi-)** — Caus. hindehnen —, hinziehen (einen Strick) zu (Acc.) [ŚULBAS. 1,58].
 
-- **RU:** Caus. натягивать, протягивать (верёвку) к (Acc.) [ŚULBAS. 1,58].
+- **RU:** Caus. натягивать, протягивать (веревку) к (Acc.) [ŚULBAS. 1,58].
   <sub>attested</sub>
 
 **vi- (caus.))** — Mit *paryā* forteilen, davoneilen.
@@ -2829,7 +2829,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **ud- caus. 3〉)** — 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) fehlerhaft für *˚pāṭayat*.
 
-- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вместо *˚pāṭayat*.
+- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вм. *˚pāṭayat*.
   <sub>attested</sub>
 
 **ud- desid.)** — Desid. auffliegen wollen.
@@ -2899,17 +2899,17 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T1)** — Mit *upa* hinfliegen —, hineilen zu (Acc. oder Loc.).
 
-- **RU:** — Mit *upa* лететь к, спешить к (Acc. oder Loc.).
+- **RU:** — С *upa* лететь к, спешить к (Acc. или Loc.).
   <sub>attested</sub>
 
 **mit_T4)** — Mit *ā — upa* hinzufliegen zu (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
 
-- **RU:** — Mit *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
+- **RU:** — С *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
   <sub>attested</sub>
 
 **mit_T7_header)** — Mit *ni*
 
-- **RU:** — Mit *ni*
+- **RU:** — С *ni*
   <sub>attested</sub>
 
 **mit_T7_1)** — 1〉 herabfliegen, sich niederlassen, sich herabstürzen, sich herablassen, — auf (Loc.). *pādayoḥ* sich Jmd (Gen.) zu Füssen werfen. *nabhonipatita* vom Himmel herabgeflogen.
@@ -2919,7 +2919,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
-- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **RU:** — 2〉 бросаться на, нападать на (Acc. или Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
   <sub>attested</sub>
 
 **mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
@@ -2939,12 +2939,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T7_6)** — 6〉 sich einfügen, zu stehen kommen, seinen Platz erhalten.
 
-- **RU:** — 6〉 вписываться, занимать своё место.
+- **RU:** — 6〉 вписываться, занимать свое место.
   <sub>attested</sub>
 
 **mit_T7_7)** — 7〉 niederfallen, stürzen auf (Loc. oder Gen. mit *upari*) oder in (Acc. oder Loc.), umfallen, fallen. *nipatita* vom Busen so v. a. eingefallen.
 
-- **RU:** — 7〉 падать, рушиться на (Loc. oder Gen. mit *upari*) oder в (Acc. oder Loc.), опрокидываться, падать. *nipatita* от груди так преим. ввалившийся.
+- **RU:** — 7〉 падать, рушиться на (Loc. или Gen. mit *upari*) или в (Acc. или Loc.), опрокидываться, падать. *nipatita* от груди так преим. ввалившийся.
   <sub>attested</sub>
 
 **mit_T7_8)** — 8〉 fallen auf, so v. a. sich richten auf (Loc.).
@@ -2984,7 +2984,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **caus_3)** — 3〉 auswerfen, so v. a. ausspeien.
 
-- **RU:** — 3〉 выбрасывать, так преим. выплёвывать.
+- **RU:** — 3〉 выбрасывать, так преим. выплевывать.
   <sub>attested</sub>
 
 **caus_4)** — 4〉 herabfallen lassen, so v. a. tröpfeln.
@@ -3024,12 +3024,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T54)** — Mit *abhini* Caus. nieder-, hinunterwerfen.
 
-- **RU:** — Mit *abhini* Caus. низвергать, бросать вниз.
+- **RU:** — С *abhini* Caus. низвергать, бросать вниз.
   <sub>attested</sub>
 
 **mit_T56_header)** — Mit *upani*
 
-- **RU:** — Mit *upani*
+- **RU:** — С *upani*
   <sub>attested</sub>
 
 **mit_T56_1)** — 1〉 niederfliegen zu (Acc.).
@@ -3059,7 +3059,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T64)** — Mit *praṇi* sich niederwerfen, sich ehrfurchtsvoll verneigen vor (Acc., Dat. oder Loc.).
 
-- **RU:** — Mit *praṇi* простираться ниц, почтительно кланяться перед (Acc., Dat. oder Loc.).
+- **RU:** — С *praṇi* простираться ниц, почтительно кланяться перед (Acc., Dat. или Loc.).
   <sub>attested</sub>
 
 **mit_T64_caus)** — Caus. machen, dass Jmd sich niederwirft.
@@ -3069,12 +3069,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T69)** — Mit *pratini* in *˚pāta*.
 
-- **RU:** — Mit *pratini* in *˚pāta*.
+- **RU:** — С *pratini* in *˚pāta*.
   <sub>attested</sub>
 
 **mit_T71_header)** — Mit *vini*
 
-- **RU:** — Mit *vini*
+- **RU:** — С *vini*
   <sub>attested</sub>
 
 **mit_T71_1)** — 1〉 herabfliegen, sich herabstürzen, sich hinablassen auf (Loc.), sich niederwerfen zu (Loc.), herabstürzen, -fallen, hineinfallen in (Loc.).
@@ -3109,7 +3109,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T79_header)** — Mit *saṃni*
 
-- **RU:** — Mit *saṃni*
+- **RU:** — С *saṃni*
   <sub>attested</sub>
 
 **mit_T79_1)** — 1〉 herabfliegen, sich herablassen, — auf (Loc.), herabfallen auf (Loc.).
@@ -3124,7 +3124,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T84)** — Mit (Instr. oder Instr. mit *saha*), sich in einer Versammlung (Loc.) einstellen [VAJRACCH. 19,14]. *saṃnipatita* Pl. zusammengetroffen, versammelt [KĀRAṆḌ. 2,7. 15. 15,5].
 
-- **RU:** — Mit (Instr. oder Instr. mit *saha*), появляться на собрании (Loc.) [VAJRACCH. 19,14]. *saṃnipatita* Pl. собравшийся, сошедшийся [KĀRAṆḌ. 2,7. 15. 15,5].
+- **RU:** — Mit (Instr. или Instr. mit *saha*), появляться на собрании (Loc.) [VAJRACCH. 19,14]. *saṃnipatita* Pl. собравшийся, сошедшийся [KĀRAṆḌ. 2,7. 15. 15,5].
   <sub>attested</sub>
 
 **mit_T79_3)** — 3〉 sich darbieten.
@@ -3159,12 +3159,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T99_3)** — 3〉 hinziehen (einen Strick) zu (Loc.) [ŚULBAS. 1,56. 57].
 
-- **RU:** — 3〉 тянуть (верёвку) к (Loc.) [ŚULBAS. 1,56. 57].
+- **RU:** — 3〉 тянуть (веревку) к (Loc.) [ŚULBAS. 1,56. 57].
   <sub>attested</sub>
 
 **mit_T102_header)** — Mit *nis*
 
-- **RU:** — Mit *nis*
+- **RU:** — С *nis*
   <sub>attested</sub>
 
 **mit_T102_1)** — 1〉 hinausfliegen, -stürzen, hervorstürzen, hinausgehen, herauskommen, hervorschiessen, herausfallen.
@@ -3189,12 +3189,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T103_caus_2)** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
 
-- **RU:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
+- **RU:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) ошибочно вм. *niṣpādita*; *niryātita* [ed. Bomb.]
   <sub>attested</sub>
 
 **mit_T109_header)** — Mit *abhinis*
 
-- **RU:** — Mit *abhinis*
+- **RU:** — С *abhinis*
   <sub>attested</sub>
 
 **mit_T109_1)** — 1〉 ausfliegen zu (Acc.).
@@ -3209,7 +3209,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T111_header)** — Mit *vinis*
 
-- **RU:** — Mit *vinis*
+- **RU:** — С *vinis*
   <sub>attested</sub>
 
 **mit_T111_1)** — 1〉 herausfliegen, hervorfliegen, herausspringen, hervorstürzen, -kommen, -treten, herausfallen.
@@ -3224,7 +3224,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T112_header)** — Mit *parā*
 
-- **RU:** — Mit *parā*
+- **RU:** — С *parā*
   <sub>attested</sub>
 
 **mit_T112_1)** — 1〉 wegfliehen, entfliehen, fortziehen (von Wolken).
@@ -3264,17 +3264,17 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T117)** — Mit *anuparā* neben Jmd (Acc.) fliegen, — eilen.
 
-- **RU:** — Mit *anuparā* лететь рядом с кем-л. (Acc.), мчаться рядом.
+- **RU:** — С *anuparā* лететь рядом с кем-л. (Acc.), мчаться рядом.
   <sub>attested</sub>
 
 **mit_T119_header)** — Mit *pari*
 
-- **RU:** — Mit *pari*
+- **RU:** — С *pari*
   <sub>attested</sub>
 
 **mit_T119_1)** — 1〉 herumfliegen, umfliegen, herumlaufen, in die Kreuz und in die Quere laufen, sich tummeln, umlaufen, hinundherspringen (vom Winde); als Trans. mit Acc.
 
-- **RU:** — 1〉 летать кругом, облетать, бегать кругом, носиться взад и вперёд, кружиться, бегать по кругу, прыгать туда-сюда (о ветре); als Trans. mit Acc.
+- **RU:** — 1〉 летать кругом, облетать, бегать кругом, носиться взад и вперед, кружиться, бегать по кругу, прыгать туда-сюда (о ветре); als Trans. mit Acc.
   <sub>attested</sub>
 
 **mit_T119_2)** — 2〉 herunterspringen von (Abl.).
@@ -3309,12 +3309,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T128)** — Mit *vipari* umherfliegen [ŚAṂK. zu BĀDAR. 2,3,40].
 
-- **RU:** — Mit *vipari* летать кругом [ŚAṂK. zu BĀDAR. 2,3,40].
+- **RU:** — С *vipari* летать кругом [ŚAṂK. zu BĀDAR. 2,3,40].
   <sub>attested</sub>
 
 **mit_T130_header)** — Mit *pra*
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
   <sub>attested</sub>
 
 **mit_T130_1)** — 1〉 aus-, davonfliegen, hinfliegen, davon-, hineilen, — zu (Loc.).
@@ -3324,7 +3324,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T130_2)** — 2〉 hinabfliegen, -stürzen, fallen, — auf (Loc. oder Acc.) Stürzen, fallen.
 
-- **RU:** — 2〉 слетать вниз, низвергаться, падать, — на (Loc. oder Acc.) низвергаться, падать.
+- **RU:** — 2〉 слетать вниз, низвергаться, падать, — на (Loc. или Acc.) низвергаться, падать.
   <sub>attested</sub>
 
 **mit_T130_3)** — 3〉 gerathen in (Loc.).
@@ -3369,7 +3369,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T142)** — Mit *anupra* in **gehānuprapātam*.
 
-- **RU:** — Mit *anupra* in **gehānuprapātam*.
+- **RU:** — С *anupra* in **gehānuprapātam*.
   <sub>attested</sub>
 
 ## pat
@@ -3379,17 +3379,17 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T1_in_T2)** — Mit *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
 
-- **RU:** — Mit *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
+- **RU:** — С *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
   <sub>attested</sub>
 
 **mit_T5)** — Mit *prati* entgegenfliegen, -eilen; mit Acc.
 
-- **RU:** — Mit *prati* лететь навстречу, мчаться навстречу; mit Acc.
+- **RU:** — С *prati* лететь навстречу, мчаться навстречу; mit Acc.
   <sub>attested</sub>
 
 **mit_T7_header)** — Mit *vi*
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
   <sub>attested</sub>
 
 **mit_T7_1)** — 1〉 dahinfliegen [ṚV. 10,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.096.html#rv10.096.09). durchfliegen.
@@ -3424,7 +3424,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T10_header)** — Mit *sam*
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
   <sub>attested</sub>
 
 **mit_T10_1)** — 1〉 zusammenfliegen, -eilen, sich zusammenfinden, sich vereinigen bei oder auf (Acc.), zusammenkommen mit (Instr.), feindlich zusammenstossen *saṃpatitāḥ* zusammengeflossen, -geronnen.
@@ -3434,7 +3434,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T10_2)** — 2〉 hinfliegen, hineilen zu (Acc.), herbeigeflogen —, herbeigeeilt kommen, herankommen, hinzukommen, hingehen —, sich begeben —, kommen —, gelangen in oder zu (Acc. oder Loc.), daherfliegen, -kommen.
 
-- **RU:** — 2〉 лететь к, спешить к (Acc.), прилетать —, прибегать, подходить, присоединяться, идти —, направляться —, приходить —, достигать чего-л. или кого-л. (Acc. oder Loc.), лететь оттуда, прилетать.
+- **RU:** — 2〉 лететь к, спешить к (Acc.), прилетать —, прибегать, подходить, присоединяться, идти —, направляться —, приходить —, достигать чего-л. или кого-л. (Acc. или Loc.), лететь оттуда, прилетать.
   <sub>attested</sub>
 
 **mit_T10_3)** — 3〉 lustwandeln.
@@ -3484,7 +3484,7 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T12_1)** — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
 
-- **RU:** — Mit *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперёд.
+- **RU:** — С *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперед.
   <sub>attested</sub>
 
 **1_pat_mit_T15_IV)** **1.** √*pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
@@ -3494,22 +3494,22 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **mit_T22_IV)** — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26].
 
-- **RU:** — Mit *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26].
+- **RU:** — С *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26].
   <sub>attested</sub>
 
 **mit_T25_5)** — Mit *abhyud* Caus. 5.
 
-- **RU:** — Mit *abhyud* Caus. 5.
+- **RU:** — С *abhyud* Caus. 5.
   <sub>attested</sub>
 
 **mit_T27)** — Mit *abhini* herabfallen auf (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. fallenlassen, schleudern (Worte) [JĀTAKAM. 21,18].
 
-- **RU:** — Mit *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18].
+- **RU:** — С *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18].
   <sub>attested</sub>
 
 **mit_T32_5)** — Mit *abhisam* 5.
 
-- **RU:** — Mit *abhisam* 5.
+- **RU:** — С *abhisam* 5.
   <sub>attested</sub>
 
 **1_pat_mit_T34)** **1.** √*pat* mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
@@ -3524,12 +3524,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **1_pat_mit_T2)** **1.** *pat* mit *abhyud* Caus. auffliegen machen zu (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
 
-- **RU:** **1.** *pat* mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — Mit *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперёд.
+- **RU:** **1.** *pat* mit *abhyud* Caus. заставлять взлетать к (Acc.) [ŚAT. BR. 1,8,2,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,2,14). — С *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперед.
   <sub>attested</sub>
 
 **1_pat_mit_T9_IV)** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* herabfallen auf (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. fallenlassen, schleudern (Worte) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
 
-- **RU:** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. так преим. не заботясь о [JĀTAKAM. 2,26]. [28,13]. — Mit *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26]. — Mit *abhyud* Caus. 5. — Mit *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18]. — Mit *abhisam* 5.
+- **RU:** **1.** *pat* mit *ati* IV. *˚patya* Absol. mit Acc. так преим. не заботясь о [JĀTAKAM. 2,26]. [28,13]. — С *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26]. — С *abhyud* Caus. 5. — С *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18]. — С *abhisam* 5.
   <sub>attested</sub>
 
 **1_pat_mit_T28)** **1.** *pat* mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].
@@ -3549,27 +3549,27 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **vyati)** Mit vyati über etwas hinauskommen, Haravijaya 6,30. [46,43.]
 
-- **RU:** Mit vyati выходить за пределы чего-л., Haravijaya 6,30. [46,43.]
+- **RU:** С vyati выходить за пределы чего-л., Haravijaya 6,30. [46,43.]
   <sub>attested</sub>
 
 **sama_patita)** Mit samā, ˚patita unerwartet zum Vorschein gekommen, -x- sich eingestellt habend, [Jātakam. 26.]
 
-- **RU:** Mit samā, ˚patita неожиданно появившийся, объявившийся, [Jātakam. 26.]
+- **RU:** С samā, ˚patita неожиданно появившийся, объявившийся, [Jātakam. 26.]
   <sub>attested</sub>
 
 **abhyud)** Mit abhyud [Kaus.] auffliegen machen zu (Akk.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
 
-- **RU:** Mit abhyud [Kaus.] заставлять взлетать к (Akk.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
+- **RU:** С abhyud [Kaus.] заставлять взлетать к (Akk.), [Śat. Br. 1,8,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3)
   <sub>attested</sub>
 
 **prod)** Mit prod ˚sich (vom Sitze) erheben, [Yudh. 6,132.]
 
-- **RU:** Mit prod ˚подниматься (с места), [Yudh. 6,132.]
+- **RU:** С prod ˚подниматься (с места), [Yudh. 6,132.]
   <sub>attested</sub>
 
 **abhini)** Mit abhini herabfallen auf (Akk.), [Āpast. Gṛhy. 23,8.]
 
-- **RU:** Mit abhini падать на (Akk.), [Āpast. Gṛhy. 23,8.]
+- **RU:** С abhini падать на (Akk.), [Āpast. Gṛhy. 23,8.]
   <sub>attested</sub>
 
 **fallen_lassen)** [Kaus.] fallen lassen, 
@@ -3581,12 +3581,12 @@ Schol. zu [P. 5,2,114.](https://ashtadhyayi.com/sutraani/5/2/114) [2,1,72.](http
 
 **nis)** Mit nis ˚vor Gericht unterliegen, [Kauṭ. 149,2]/1 v.u.
 
-- **RU:** Mit nis ˚проигрывать судебный процесс, [Kauṭ. 149,2]/1 v.u.
+- **RU:** С nis ˚проигрывать судебный процесс, [Kauṭ. 149,2]/1 v.u.
   <sub>attested</sub>
 
 **abhisam)** Mit abhisam 1. hinfliegen, hineilen zu, stürzen auf (Akk.) — 2. einherfliegen. {part=,seq=17875,type=,n=18}
 
-- **RU:** Mit abhisam 1. лететь к, спешить к, бросаться на (Akk.) — 2. лететь вперёд. {part=,seq=17875,type=,n=18}
+- **RU:** С abhisam 1. лететь к, спешить к, бросаться на (Akk.) — 2. лететь вперед. {part=,seq=17875,type=,n=18}
   <sub>attested</sub>
 
 ## pat
@@ -3718,7 +3718,7 @@ Z. 4 stehende Stelle aus [R.];
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 
 - **RU:** 1. *pat*
- 1) летать, реять о знамёнах (*patākā*)
+ 1) летать, реять о знаменах (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) мчаться, бежать: *ahorātrāḥ patantīme*
 [MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Сюда же относится
 стк. место из [R.] (п. 4);
@@ -3858,7 +3858,7 @@ Z. 6 lies *patottiṣṭha* .
 [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) fehlerhaft für *udapāṭayat* .
 
 - **RU:** — ср. *utpitsu*.* udapātayat*
-[KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вместо *udapāṭayat* .
+[KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вм. *udapāṭayat* .
   <sub>attested</sub>
 
 ## abhyutpat

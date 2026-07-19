@@ -46,7 +46,7 @@
 **3)** — 3) aus sich hervorgehen: *sa yathorṇavābhistantunoccaret* wie die Spinne mittelst des Fadens ihren Inhalt aus sich entlässt
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
 
-- **RU:** — 3) исходить из себя самого: *sa yathorṇavābhistantunoccaret* подобно тому как паук посредством нити выпускает из себя своё содержимое
+- **RU:** — 3) исходить из себя самого: *sa yathorṇavābhistantunoccaret* подобно тому как паук посредством нити выпускает из себя свое содержимое
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
   <sub>attested</sub>
 

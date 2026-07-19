@@ -10,7 +10,7 @@
 [MBH. 5,770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.770) mit gen.
 [P. 2,3,56](https://ashtadhyayi.com/sutraani/2/3/56), Schol. *brahmadviṣaste praṇihanmi*
 [BHAṬṬ. 2,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,35) [8,121.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,121) unbestimmt ob gen. oder acc.
-[Spr. (II) 4680.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4680)
+[Spr. (II) 4680.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4680 "Spr. (II) 4680: madhurayaṃ madhurairapi kokilā- kalakalairmalayasya ca vāyubhiḥ | virahiṇaḥ praṇihanti śarīriṇo vipadi hunta sudhāpi viṣāyate || — (2099.) Dieser Frühling vernichtet sogar durch die süssen Töne der Kokila-Weibchen und durch die vom Malaja-Gebirge wehenden Winde Männer, die von ihren Geliebten getrennt sind: im Unglück wird, wie du siehst, selbst Nek…")
 
 - **RU:** — *praṇi*
 [P. 8,4,17.](https://ashtadhyayi.com/sutraani/8/4/17)
@@ -19,7 +19,7 @@
 [MBH. 5,770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.770) с gen.
 [P. 2,3,56](https://ashtadhyayi.com/sutraani/2/3/56), схол. *brahmadviṣaste praṇihanmi*
 [BHAṬṬ. 2,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,35) [8,121.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,121) неясно, gen. или acc.
-[Spr. (II) 4680.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4680)
+[Spr. (II) 4680.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4680 "Spr. (II) 4680: madhurayaṃ madhurairapi kokilā- kalakalairmalayasya ca vāyubhiḥ | virahiṇaḥ praṇihanti śarīriṇo vipadi hunta sudhāpi viṣāyate || — (2099.) Dieser Frühling vernichtet sogar durch die süssen Töne der Kokila-Weibchen und durch die vom Malaja-Gebirge wehenden Winde Männer, die von ihren Geliebten getrennt sind: im Unglück wird, wie du siehst, selbst Nek…")
   <sub>attested</sub>
 
 **2)** — 2) stärker senken: die Hand

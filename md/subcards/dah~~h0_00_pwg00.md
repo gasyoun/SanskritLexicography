@@ -58,7 +58,7 @@
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Кар.
 [6] из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)), *dahiṣyati* эп.
 [MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120)
-[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также мед.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнём, гореть*: *mā māmedho daśatayaścito dhāk*
+[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также мед.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнем, гореть*: *mā māmedho daśatayaścito dhāk*
 [ṚV. 1,158,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.158.html#rv01.158.04) [2,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.04) *tṛṇā dahan*
 [3,29,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.06) *dāru dhakṣat*
 [6,3,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.04) [10,91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) — [1,130,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.130.html#rv01.130.08) [4,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.04) [28,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.028.html#rv04.028.03) [7,1,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.07) *yadagnirāpo adahatpraviśya*

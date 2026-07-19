@@ -9,7 +9,7 @@
 
 - **RU:** — desid. *jijñāsate*
 [P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
-[VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) ep. auch act.
+[VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) ep. также act.
   <sub>attested</sub>
 
 **desid-sense-1)** 1) zu kennen —, zu wissen —, zu erkennen —, kennen zu lernen begehren; untersuchen, prüfen, auf die Probe stellen: *hāsaṃ te — jijñāsāmi* ich verlange zu wissen worüber du lachst
@@ -37,7 +37,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
 
-- **RU:** 1) желать познать, желать знать, желать узнать, желать ознакомиться; исследовать, испытывать, подвергать проверке: *hāsaṃ te — jijñāsāmi* я желаю знать, над чем ты смеёшься
+- **RU:** 1) желать познать, желать знать, желать узнать, желать ознакомиться; исследовать, испытывать, подвергать проверке: *hāsaṃ te — jijñāsāmi* я желаю знать, над чем ты смеешься
 [R. 2,35,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,19) *jijñāsantau parāṃ gatim*
 [4,60,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,60,6) *dharmaṃ jijñāsamānānām*
 [M. 2,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,13)

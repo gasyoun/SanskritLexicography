@@ -24,7 +24,7 @@ _PWG article — 1 sub-card(s), 5 sense(s) · RU 5/5 · EN 0/5_
 
 **NWS 2)** [NWS: Rivelex (1) : 733] [Ved, unsp] Subst n [ an jedem Tag, Tag für Tag (so AiGr). ] adv. ṚV 1,123,9 .
 
-- **RU:** [NWS: Rivelex (1) : 733] [Вед., неопр.] сущ. n [*день* за днём, каждый день (так AiGr).] нареч. ṚV 1,123,9 .
+- **RU:** [NWS: Rivelex (1) : 733] [Вед., неопр.] сущ. n [*день* за днем, каждый день (так AiGr).] нареч. ṚV 1,123,9 .
   <sub>attested</sub>
 
 **NWS 3)** [NWS: MW : 124 (s.v. ahar)] ahargaṇa Gen, unsp > Subst m any calculated term. Lex(MW) .

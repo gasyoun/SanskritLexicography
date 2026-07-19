@@ -7,11 +7,11 @@
  1) *bhukṣiṣīya*
 [PAÑCAV. BR. 1,1,1.] —
 Z. 4 lies *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* geniessen
-[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053 "Spr. (II) 4053: pāpaṭhīti sakalaṃ ca vāṅnayaṃ bobudhīti na ca kiñcidapyasau | ratnabharamiva gardabhaḥ sadā vāvahīti kila bobhujīti no || — Wer alle möglichen Schriftwerke liest und Nichts davon versteht, gleicht einem Esel, der beständig eine Last Juwelen trägt und diese, wie man weiss, nie geniesst.")
 
 - **RU:** *bhuj*
  1) *bhukṣiṣīya*
 [PAÑCAV. BR. 1,1,1.] —
 стк. 4 исправить на *bhujantā* вместо *bhuñjantā* . — intens. *bobhujīti* наслаждаться, вкушать
-[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053)
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053 "Spr. (II) 4053: pāpaṭhīti sakalaṃ ca vāṅnayaṃ bobudhīti na ca kiñcidapyasau | ratnabharamiva gardabhaḥ sadā vāvahīti kila bobhujīti no || — Wer alle möglichen Schriftwerke liest und Nichts davon versteht, gleicht einem Esel, der beständig eine Last Juwelen trägt und diese, wie man weiss, nie geniesst.")
   <sub>attested</sub>

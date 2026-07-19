@@ -1,4 +1,4 @@
-## gam~~h0_01_sec_1_0
+## gam
 
 `gam~~h0_01_sec_1_0`
 
@@ -147,7 +147,7 @@
 [8,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,95) *vāṇanikṛttāni śirāṃsi dviṣatām — sphurantyākuñcitoṣṭhāni gāṃ gatāni*
 [R. 3,31,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,21)
 [MBH. 2,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.458) *putrāṃstasya gato nṛpaḥ*
-[R. 1,57,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,13) *bhartāram* «доставшаяся в жёны / попавшая к мужу»
+[R. 1,57,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,13) *bhartāram* «доставшаяся в жены / попавшая к мужу»
 [ŚĀK. 88.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?88) *(ādityam) madhyaṃ nabhaso gatam*
 [M. 4,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,37) *śmaśrūṇi gatānyāsyam* «попавшие в рот волосы бороды»
 [5,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,141) *pañcāśataṃ gatā* «доросший» до 50 (Йоджана)
@@ -236,18 +236,18 @@
 [BHAG. 2,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,55)
 [ŚĀK. 59.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?59) *tadgatenaiva manasā* mit darauf gerichtetem Sinne
 
-- **RU:** [3,28,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,33) [34,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) (вместо *vāṇairatha gataḥ* читать: *vāṇai rathagataḥ) virādhāṅka˚*
+- **RU:** [3,28,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,33) [34,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) (вм. *vāṇairatha gataḥ* читать: *vāṇai rathagataḥ) virādhāṅka˚*
 [7,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,7,25) *pārśva˚*
 [31,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,10) *tūṇagataiḥ śaraiḥ*
 [2,100,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,20) *yatkiṃcijjagatīgatam* всё, что находится в мире
 [M. 1,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,100) *brahmacārigataṃ bhaikṣyam*
 [5,129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,129) *vahneḥ — yonigatasya*
 [ŚVETĀŚV. UP. 1,13.] *ādityagataṃ tejaḥ*
-[BHAG. 15,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,12) *ādya˚, turya˚, antya˚* стоящий на первом, четвёртом, последнем месте
-[ŚRUT. 12.] *veda˚* стоящий на четвёртом месте
+[BHAG. 15,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,12) *ādya˚, turya˚, antya˚* стоящий на первом, четвертом, последнем месте
+[ŚRUT. 12.] *veda˚* стоящий на четвертом месте
 [13.] *kāyagataṃ brahma*
 [M. 11,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,97) *gurugatāṃ vidyām*
-[2,218.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,218) *sarvagata (anāmaya)* распространённый повсюду
+[2,218.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,218) *sarvagata (anāmaya)* распространенный повсюду
 [N. 2,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,14) *hṛdgataścaiva bhāvaste*
 [R. 3,19,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,17) *kāmān — manogatān*
 [BHAG. 2,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,55)

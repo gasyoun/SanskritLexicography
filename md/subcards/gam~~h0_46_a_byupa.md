@@ -25,7 +25,7 @@
 [R. 3,18,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,24) *(bhartari) paralokamabhyupagate*
 [ŚIŚ. 9,13.] прийти кому-л. на помощь: *vayamabhyupagacchāmaḥ kṛṣṇeṇa tvāṃ pradharṣitam*
 [HARIV. 2095.](https://sanskrit-lexicon-scans.github.io/hariv?2095) приступить к чему-л.: *tasmādabhyupagantavyaṃ yuddhāya*
-[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) достичь определённого момента: *āṣāḍhīmabhyupagato bharataḥ*
+[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) достичь определенного момента: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,11) добыть, достигнуть: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,67,10)
   <sub>attested</sub>

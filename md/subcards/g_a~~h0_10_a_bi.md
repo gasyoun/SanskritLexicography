@@ -48,5 +48,5 @@
 - **RU:** — 2) достигать чего-либо, приобщаться к чему-либо: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
 [MBH. 3,16625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16625) — *tasya yauvanamabhyagāt*
-[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) ошибочное написание вместо *atyagāt* .
+[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) ошибочное написание вм. *atyagāt* .
   <sub>attested</sub>

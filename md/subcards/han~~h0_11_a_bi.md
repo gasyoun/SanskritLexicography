@@ -39,7 +39,7 @@
 [M. 11,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,206) *mahādrayaḥ parasparaṃ drutamabhihatya*
 [MBH. 1,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1183) *kenāpi puṃsā soṃ 'senāṃse 'bhyahanyata*
 [KATHĀS. 71,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,24) [Verz. d. Oxf. H. 51,b,33.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) [DAŚAK. 83,17.] *mudgaraiḥ*
-[Spr. (II) 6696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6696) *talānāmabhihanyatām* (= *abhihanyamānānām)*
+[Spr. (II) 6696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6696 "Spr. (II) 6696: satāṃ durjanasaṃsargānmānabhaṅgaḥ pade pade | pāvako lohasaṃsargānmudrarairabhihanyate || — (5118.) In Folge der Berührung mit Schlechten leidet die Ehre Guter auf Schritt und Tritt: ob der Berührung mit Eisen wird Feuer mit Hämmern geschlagen.") *talānāmabhihanyatām* (= *abhihanyamānānām)*
 [MBH. 6,2514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514) *abhyahanmṛgān* erlegte
 [3,14056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14056)
 
@@ -74,7 +74,7 @@
 [M. 11,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,206) *mahādrayaḥ parasparaṃ drutamabhihatya*
 [MBH. 1,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1183) *kenāpi puṃsā soṃ 'senāṃse 'bhyahanyata*
 [KATHĀS. 71,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,24) [Verz. d. Oxf. H. 51,b,33.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) [DAŚAK. 83,17.] *mudgaraiḥ*
-[Spr. (II) 6696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6696) *talānāmabhihanyatām* (= *abhihanyamānānām)*
+[Spr. (II) 6696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6696 "Spr. (II) 6696: satāṃ durjanasaṃsargānmānabhaṅgaḥ pade pade | pāvako lohasaṃsargānmudrarairabhihanyate || — (5118.) In Folge der Berührung mit Schlechten leidet die Ehre Guter auf Schritt und Tritt: ob der Berührung mit Eisen wird Feuer mit Hämmern geschlagen.") *talānāmabhihanyatām* (= *abhihanyamānānām)*
 [MBH. 6,2514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514) *abhyahanmṛgān* сразил
 [3,14056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14056)
   <sub>attested</sub>
@@ -121,12 +121,12 @@
 [R. GORR. 2,9,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,36) [4,48,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,48,22)
 [RAGH. 6,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,13) *dhārābhiḥ sarojam*
 [MĀLAV. 78.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?78)
-[Spr. (II) 2018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2018)
+[Spr. (II) 2018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2018 "Spr. (II) 2018: kṣipto hastāvalagnaḥ prasabhamabhihato 'pyādadanoṃ 'śukāntaṃ gṛhṇankeśeṣvapāstaścaraṇanipatito nekṣitaḥ saṃbhrameṇa | āliṅganyo 'vadhūtastripurayuvati… — (786.) Das Feuer der Pfeile Śiva's (welche Tripura zerstörten) möge eure Sünden versengen, jenes Feuer, das von Jungfrauen Tripura's wie ein Liebhaber, der sich eben verging, behandelt wurde: als sie es schmähten (fortst…")
 [VARĀH. BṚH. 25,1. 5.]
 [KATHĀS. 10,116.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,116) [20,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,92) [47,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,62)
 [MĀRK. P. 21,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,7)
 [PAÑCAT. ed. orn. 4,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?4,12) *bahūrmivegābhihatā nauḥ*
-[R. 2,52,75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,75) ([15](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,15) [GORR.]). [Spr. (II) 4442.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4442) *vātābhihatāḥ pādapāḥ*
+[R. 2,52,75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,75) ([15](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,15) [GORR.]). [Spr. (II) 4442.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4442 "Spr. (II) 4442: bāliśastu naro nityaṃ vaiklavyaṃ yo 'nuvartate | sa majjatyavaśaḥ śoke bhārākrānteva naurjale ||") *vātābhihatāḥ pādapāḥ*
 [R. 3,58,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,58,37) *pavanaḥ pavanābhihataḥ*
 [VARĀH. BṚH. S. 39,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?39,1) getroffen in der Astr. so v. a. berührt
 [13,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?13,9) [17,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,18) sich stossend an (loc.)
@@ -134,7 +134,7 @@
 [R. 1,34,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,30) *siṃhābhihata iva dvipaḥ*
 [5,4,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,4,8)
 
-- **RU:** α) поражённый, ударенный, толкнутый
+- **RU:** α) пораженный, ударенный, толкнутый
 [AV. 11,10,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.010.html#av11.010.22)
 [AIT. BR. 4,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,2)
 [SUŚR. 1,182,7.]
@@ -146,14 +146,14 @@
 [R. GORR. 2,9,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,36) [4,48,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,48,22)
 [RAGH. 6,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,13) *dhārābhiḥ sarojam*
 [MĀLAV. 78.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?78)
-[Spr. (II) 2018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2018)
+[Spr. (II) 2018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2018 "Spr. (II) 2018: kṣipto hastāvalagnaḥ prasabhamabhihato 'pyādadanoṃ 'śukāntaṃ gṛhṇankeśeṣvapāstaścaraṇanipatito nekṣitaḥ saṃbhrameṇa | āliṅganyo 'vadhūtastripurayuvati… — (786.) Das Feuer der Pfeile Śiva's (welche Tripura zerstörten) möge eure Sünden versengen, jenes Feuer, das von Jungfrauen Tripura's wie ein Liebhaber, der sich eben verging, behandelt wurde: als sie es schmähten (fortst…")
 [VARĀH. BṚH. 25,1. 5.]
 [KATHĀS. 10,116.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,116) [20,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,92) [47,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,62)
 [MĀRK. P. 21,7.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,7)
 [PAÑCAT. ed. orn. 4,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?4,12) *bahūrmivegābhihatā nauḥ*
-[R. 2,52,75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,75) ([15](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,15) [GORR.]). [Spr. (II) 4442.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4442) *vātābhihatāḥ pādapāḥ*
+[R. 2,52,75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,75) ([15](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,15) [GORR.]). [Spr. (II) 4442.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4442 "Spr. (II) 4442: bāliśastu naro nityaṃ vaiklavyaṃ yo 'nuvartate | sa majjatyavaśaḥ śoke bhārākrānteva naurjale ||") *vātābhihatāḥ pādapāḥ*
 [R. 3,58,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,58,37) *pavanaḥ pavanābhihataḥ*
-[VARĀH. BṚH. S. 39,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?39,1) поражённый в астрол. так преим. затронутый
+[VARĀH. BṚH. S. 39,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?39,1) пораженный в астрол. так преим. затронутый
 [13,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?13,9) [17,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,18) сталкивающийся с (loc.)
 [ŚIKṢĀ 11.] подверженный нападению
 [R. 1,34,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,30) *siṃhābhihata iva dvipaḥ*
@@ -175,12 +175,12 @@ u. s. w. [R. 2,81,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8
 [3,5,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,39) [11,19,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,9) [1,14,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,40) *kāmābhihatacetas*
 [MBH. 1,6562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6562) *duḥkhābhihatacetana*
 [R. 3,68,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,17)
-[Spr. (II) 4606](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606), v. l. *śokābhihata*
+[Spr. (II) 4606](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander."), v. l. *śokābhihata*
 [R. 5,65,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,65,1) *śokavegābhihata*
 [Spr. (II) 6885.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6885) = *abhibhūta*
 [COLEBR.] und [LOIS.] zu [AK. 3,1,40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,40)
 
-- **RU:** — γ) поражённый так преим. постигнутый, одержимый: *˚rogaśokādyaiḥ śarīram*
+- **RU:** — γ) пораженный так преим. постигнутый, одержимый: *˚rogaśokādyaiḥ śarīram*
 [MAITRYUP. 1,3.] *śāpena*
 [MBH. 3,2968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2968) *duḥkhena*
 [R. GORR. 2,9,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,35) *kṣuttṛḍbhyām*
@@ -188,16 +188,16 @@ u. s. w. [R. 2,81,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8
 [3,5,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,39) [11,19,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,9) [1,14,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,40) *kāmābhihatacetas*
 [MBH. 1,6562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6562) *duḥkhābhihatacetana*
 [R. 3,68,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,17)
-[Spr. (II) 4606](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606), v. l. *śokābhihata*
+[Spr. (II) 4606](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander."), v. l. *śokābhihata*
 [R. 5,65,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,65,1) *śokavegābhihata*
 [Spr. (II) 6885.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6885) = *abhibhūta*
-[COLEBR.] und [LOIS.] zu [AK. 3,1,40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,40)
+[COLEBR.] и [LOIS.] к [AK. 3,1,40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,40)
   <sub>attested</sub>
 
 **4b)** — b) *abhighāta* beschädigt: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
 
-- **RU:** — b) *abhighāta* повреждённый: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
+- **RU:** — b) *abhighāta* поврежденный: *manuṣyeṣvabhighāteṣu, goṣvabhighātāsu*
 [SĀMAVIDH. BR. 1,8,13.]
   <sub>attested</sub>
 
@@ -207,7 +207,7 @@ u. s. w. [R. 2,81,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8
 niederschlagen wollen
 [ṚV. 7,59,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.059.html#rv07.059.08)
 
-- **RU:** — ср. *abhighāta* сл. und *sarvāṅgābhihata* . — caus. partic. *˚ghātita* поражённый: *śarābhi˚*
+- **RU:** — ср. *abhighāta* сл. и *sarvāṅgābhihata* . — caus. partic. *˚ghātita* пораженный: *śarābhi˚*
 [MBH. 8,4319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4319) — desid. желать поразить —,
 
 сбить с ног

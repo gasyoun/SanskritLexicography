@@ -110,7 +110,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) fehlerhaft für *ālalambe* .
 
 - **RU:** — 6) *ālalambhe*
-[RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) ошибочно вместо *ālalambe* .
+[RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) ошибочно вм. *ālalambe* .
   <sub>attested</sub>
 
 **caus)** — Vgl. *ālabdhi* fgg. und *ālambha* fgg. — caus.

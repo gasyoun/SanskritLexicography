@@ -6,15 +6,15 @@
 **8c)** — c) abgelaufen: *tṛtīye* (sc. *saṃvatsare) vāpratihate*
 [PĀR. GṚHY. 2,1.]
 
-- **RU:** — c) истёкший: *tṛtīye* (а именно *saṃvatsare) vāpratihate*
+- **RU:** — c) истекший: *tṛtīye* (а именно *saṃvatsare) vāpratihate*
 [PĀR. GṚHY. 2,1.]
   <sub>attested</sub>
 
 **8d)** — d) beschränkt, dumm: *˚dhī* _adj._
-[Spr. (II) 2047.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2047)
+[Spr. (II) 2047.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2047 "Spr. (II) 2047: khalollāpāḥ śoḍhāḥ kathamapi tadārādhanaparai rnigṛhyāntarbāṣpaṃ hasitamapi śūnyena manasā | kṛtaścittastambhaḥ pratihatadhiyāmañjalirapi tvamāśe mogh… — (801.) Ich habe, so schwer es mir auch wurde, harte Worte von schlechten Menschen mir gefallen lassen, da ich nur darauf bedacht war sie zu gewinnen")
 
 - **RU:** — d) ограниченный, тупой: *˚dhī* _adj._
-[Spr. (II) 2047.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2047)
+[Spr. (II) 2047.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2047 "Spr. (II) 2047: khalollāpāḥ śoḍhāḥ kathamapi tadārādhanaparai rnigṛhyāntarbāṣpaṃ hasitamapi śūnyena manasā | kṛtaścittastambhaḥ pratihatadhiyāmañjalirapi tvamāśe mogh… — (801.) Ich habe, so schwer es mir auch wurde, harte Worte von schlechten Menschen mir gefallen lassen, da ich nur darauf bedacht war sie zu gewinnen")
   <sub>attested</sub>
 
 **8e)** — e) verhasst
@@ -40,7 +40,7 @@
 [P. 7,2,29](https://ashtadhyayi.com/sutraani/7/2/29), Vārtt. 2, Schol.
 
 - **RU:** — g) = *hṛṣṭa*
-[TRIK. 3,3,105.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,105) = *hṛṣita* о зубах т.е. притуплённый (от кислот)
+[TRIK. 3,3,105.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,105) = *hṛṣita* о зубах т.е. притупленный (от кислот)
 [P. 7,2,29](https://ashtadhyayi.com/sutraani/7/2/29), Вартт. 2, схол.
   <sub>attested</sub>
 

@@ -57,5 +57,5 @@ Vgl. *pratisaṃdhāna, ˚dhi, ˚dheya* und *pratisaṃdhita* u. *saṃdhay* mit
 схол. 2 : *pratisaṃdhatte*)
 [PRAB. 34,19.] —
 
-ср. *pratisaṃdhāna, ˚dhi, ˚dheya* und *pratisaṃdhita* u. *saṃdhay* mit *prati* .
+ср. *pratisaṃdhāna, ˚dhi, ˚dheya* и *pratisaṃdhita* u. *saṃdhay* mit *prati* .
   <sub>attested</sub>

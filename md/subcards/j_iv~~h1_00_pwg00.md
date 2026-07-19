@@ -11,7 +11,7 @@
 [124,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,113)
 
 - **RU:** *jīv*
- 1) *jīva jīva* да живёшь ты долго
+ 1) *jīva jīva* да живешь ты долго
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) поддерживать жизнь кого-л.
 [KATHĀS. 65,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,29) *jīva* звать

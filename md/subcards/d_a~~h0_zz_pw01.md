@@ -210,7 +210,7 @@
 
 **mit_T64_1)** — 1〉 hingeben, geben schenken, zur Frau (mit oder ohne *bhāryām*) geben. *pradadet* [HEMĀDRI 1,310,18].
 
-- **RU:** — 1〉 отдавать, давать, дарить, в жёны (с или без *bhāryām*) давать. *pradadet* [HEMĀDRI 1,310,18].
+- **RU:** — 1〉 отдавать, давать, дарить, в жены (с или без *bhāryām*) давать. *pradadet* [HEMĀDRI 1,310,18].
   <sub>attested</sub>
 
 **mit_T64_2)** — 2〉 übergeben, darbringen, darreichen, anbieten [68,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?68). *yuddham, dvaṃdvayuddham* Jmd (Dat.) einen Kampf, Zweikampf anbieten, mit — zu kämpfen sich bereit erklären.
@@ -285,7 +285,7 @@
 
 **mit_T64_desid)** — Desid. Med. zur Frau geben wollen.
 
-- **RU:** — Desid. Med. желать отдать в жёны.
+- **RU:** — Desid. Med. желать отдать в жены.
   <sub>attested</sub>
 
 **mit_T94)** — Mit *atipra* hinübergeben.

@@ -9,7 +9,7 @@
 
 - **RU:** — *samud* разрывать и вместе с тем искоренять, уничтожать: *samucchinnavāsana *
 
-* (vāsana* одежда und *vāsanā = mithyājñāna*)
+* (vāsana* одежда и *vāsanā = mithyājñāna*)
   <sub>attested</sub>
 
 **2)** [PRAB. 50,12.] ausreissen und zugleich zu Grunde richten: *saṃghātavānyathā veṇurniviḍo veṇubhirvṛtaḥ . na śakyaḥ sa samucchettuṃ durbalo 'pi tathā nṛpaḥ ..*

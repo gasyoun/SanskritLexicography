@@ -22,8 +22,8 @@
 **gramm)** — *ni* s. *nimada* langsame und deutliche Aussprache. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
 [SĀY.] bei [WEST.]
 
-- **RU:** — *ni* см. *nimada* медленное и отчётливое произношение. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
-[SĀY.] bei [WEST.]
+- **RU:** — *ni* см. *nimada* медленное и отчетливое произношение. — caus. *nimādayati = akṣaraṃ spaṣṭamuccārayati*
+[SĀY.] у [WEST.]
   <sub>lexicographic</sub>
 
 **caus)** — *upani* zum Stillstehen bringen, zurückhalten: *paśavo vasu tānetaddevā atiṣṭhamānāṃstvaṣṭāramabruvannupanimadeti yadāha deva tvaṣṭarvasu rameti*

@@ -6,7 +6,7 @@
 **1)** — *samudā* zur vollständigen Kenntniss von Etwas gelangen(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
 
-- **RU:** — *samudā* достичь полного знания о чём-л.(?): *sarvabuddhadharmasamudāgata*
+- **RU:** — *samudā* достичь полного знания о чем-л.(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
   <sub>attested</sub>
 

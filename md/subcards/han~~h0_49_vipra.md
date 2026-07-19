@@ -10,7 +10,7 @@
 [R. 1,26,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,12) Weg
 [3,74,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,4)
 
-- **RU:** — *vipra*, partic. *˚hata* «поражённый, сражённый, потрёпанный»: войско
+- **RU:** — *vipra*, partic. *˚hata* «пораженный, сраженный, потрепанный»: войско
 [MBH. 7,1581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1581) [8,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2386) *ambuvarṣeṇa gāvaḥ*
 [HARIV. 3913.](https://sanskrit-lexicon-scans.github.io/hariv?3913) *vāriviprahatānīva paṅkajāni*
 [5697.](https://sanskrit-lexicon-scans.github.io/hariv?5697) [MBH. 7,3236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3236) *a˚* «нехоженый»: лес

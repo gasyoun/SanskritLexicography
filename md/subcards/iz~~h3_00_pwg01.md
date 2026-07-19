@@ -56,7 +56,7 @@
 [PAÑCAT. III,84.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,84) *apakāriṣu yaḥ sādhuḥ sa sādhuḥ sadbhiriṣyate*
 [I,277.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,277) [SĀṂKHYAK. 28. 44.] [BHĀṢĀP. 84.] [AMṚTAV. UP.] в [Ind. St. 2,60. 61.] *sanantānna saniṣyate* после desider. суффикс desider. не употребляется
 [P. 3,1,7](https://ashtadhyayi.com/sutraani/3/1/7), Кар. *citā kāṣṭhamaṭhī caityaṃ citācūḍakamiṣyate . cittaṃ ca* (сплошь синонимы)
-[TRIK. 2,8,62.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,62) *jambho dante 'pi ceṣyate* джамбха употребляется также в значении «зуб»
+[TRIK. 2,8,62.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,62) *jambho dante 'pi ceṣyate* джамбха употребляется также в знач. «зуб»
 [3,3,286.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,286) [64.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,64) с окончанием act. без того, чтобы этого требовал метр: *yadi kāle tu doṣo 'sti yadi tatrāpi neṣyati*
 [MBH. 13,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.59)
   <sub>attested</sub>

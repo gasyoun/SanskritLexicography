@@ -15,5 +15,5 @@
 
 **3)** — 3) seine Zustimmung geben: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
 
-- **RU:** — 3) давать своё согласие: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
+- **RU:** — 3) давать свое согласие: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459)
   <sub>attested</sub>

@@ -25,7 +25,7 @@ Schol. zu [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/
 [1,3346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3346) *saṃpradāyaiva teṣām (karma)* уступать
 [5,793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.793) мед. передавать
 схол. к [KĀTY. ŚR. 263,9.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?263,9) [365,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?365,1) [800,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?800,3) передавать, передать по преданию (то, что усвоено от учителя): *praṇamya bhagavatpādān śrīdharādīṃśca sadgurūn . saṃpradāyānusāreṇa gītāvyākhyāṃ samārabhe ..*
-[Verz. d. Oxf. H. 1,b,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?1) *saṃpradatta* переданный, сообщённый: *astraśikṣā*
+[Verz. d. Oxf. H. 1,b,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?1) *saṃpradatta* переданный, сообщенный: *astraśikṣā*
 [MBH. 6,5535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5535) *asaṃpradattā* не отданная замуж
 [HARIV. 11006](https://sanskrit-lexicon-scans.github.io/hariv?11006) (p. 790). ср. *saṃpradātavya, saṃpradāna, saṃpradānīya, saṃpradāya* . — caus. приказать выдать: *tasya yānaṃ ca dāsīśca saumitre saṃpradāpaya*
 [R. 2,32,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,16) [21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,21) — desid. желать дать: *maruḍbhyaḥ saṃpraditsāṃ cakāra*

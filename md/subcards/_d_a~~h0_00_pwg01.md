@@ -39,7 +39,7 @@
 [4,8,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.008.html#rv04.008.06) *marutsu vo dadhīmahi stomaṃ yajñaṃ ca*
 [5,52,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.052.html#rv05.052.04) *marudgaṇe vṛjane manma dhīmahi*
 [10,66,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.066.html#rv10.066.02) *namastubhyaṃ bhagavate vāsudevāya dhīmahi*
-[BHĀG. P. 6,16,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,18) [5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,28) [1,5,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,37) *manas, matim* направить свой ум, свои мысли на кого-л. или что-л., решиться; act. und мед.: *dharme dadhyātsadā manaḥ*
+[BHĀG. P. 6,16,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,18) [5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,28) [1,5,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,37) *manas, matim* направить свой ум, свои мысли на кого-л. или что-л., решиться; act. и мед.: *dharme dadhyātsadā manaḥ*
 [M. 12,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,23) *rudrāya dadhire manaḥ*
 [MBH. 13,1379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1379) *dhāsye mano bhagavati śuddhaṃ tatkīrtanādibhiḥ*
 [BHĀG. P. 6,2,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,38) *niveśāya mano dadhuḥ*
@@ -52,8 +52,8 @@
 [R. 1,11,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,11,1) *śiśāvasminnetāḥ — dadhatyāśām* устремить надежду на
 [KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) *lakṣye samādhiṃ na dadhe* обратить внимание на
 [BHAṬṬ. 2,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,7) pass.: *kathaṃ tyaktuṃ guṇārāmaṃ rāmaṃ me dhīyate matiḥ* как я могу думать о том, чтобы
-[R. GORR. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,18) *na nāśamadhigaccheyuriti me dhīyate matiḥ* таково моё мнение
-[MBH. 4,920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.920) [3,8290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8290) [12402.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12402) *dhīyamāna* und *dhita* возможно тот, чей ум устремлён на что-л.: *adharme dhīyamānasya sadbhistatra nivāraṇam*
+[R. GORR. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,18) *na nāśamadhigaccheyuriti me dhīyate matiḥ* таково мое мнение
+[MBH. 4,920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.920) [3,8290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8290) [12402.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12402) *dhīyamāna* и *dhita* возможно тот, чей ум устремлен на что-л.: *adharme dhīyamānasya sadbhistatra nivāraṇam*
 [HARIV. 1854.](https://sanskrit-lexicon-scans.github.io/hariv?1854) *patibhaktyai dhitāḥ sma*
 [7799.](https://sanskrit-lexicon-scans.github.io/hariv?7799)
   <sub>attested</sub>
@@ -165,8 +165,8 @@ machen zu, festsetzen, constituere; act.: *yaṃ devāso havyavāhamadadhuradhva
 [TBR. 3,1,2,9](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,9) in [Z. f. d. K. d. M. 7,273.] *ya eko 'varṇo bahudhā śaktiyogādvarṇānanekānnihitārtho dadhāti*
 [ŚVETĀŚV. UP. 4,1.] *vindumatyāmadhānnṛpaḥ . kurukutsamambarīṣaṃ mucukundaṃ ca*
 [BHĀG. P. 9,6,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,38) *kuḍmalitānanena dadhatī vāyum*
-[AMAR. 70.] мед.: *iyaṃ visṛṣṭiryata ābabhūva yadi vā dadhe yadi vā na* создал ли он её или нет
-[ṚV. 10,129,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.07) *phalaṃ dhatte* влечёт за собой
+[AMAR. 70.] мед.: *iyaṃ visṛṣṭiryata ābabhūva yadi vā dadhe yadi vā na* создал ли он ее или нет
+[ṚV. 10,129,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.129.html#rv10.129.07) *phalaṃ dhatte* влечет за собой
 [VARĀH. BṚH. S. 11,40.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,40) [24,24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,24) *marakaṃ dhatte* (*āgastyaḥ*)
 [12,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,23) *pāṃśudhvastā* (*saṃdhyā*) *janapadanāśaṃ dhatte*
 [46,27 (28).](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,27) [52,88.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?52,88) *vāñchitārthaṃ dhatte* (*āgneyī chāyā*)

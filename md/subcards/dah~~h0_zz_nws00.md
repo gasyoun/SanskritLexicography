@@ -5,7 +5,7 @@
 
 **NWS-1)** *dah* [Ved , unsp] verbrennen (Akk), durch Feuer verzehren (Akk). [ oft bildlich, was aus den Objecten ersichtlich ist. ]
 
-- **RU:** *dah* [Ved , unsp] сжигать (Acc), уничтожать огнём (Acc). [ часто в переносном смысле, что явствует из объектов. ] Graßmann 1873 (1996) : 586
+- **RU:** *dah* [Ved , unsp] сжигать (Acc), уничтожать огнем (Acc). [ часто в переносном смысле, что явствует из объектов. ] Graßmann 1873 (1996) : 586
   <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] ( dáhati I ) brennen. Kaus: verbrennen lassen
@@ -75,7 +75,7 @@
 
 **NWS-15)** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) consumed; b) tawny or reddish brown (like impure blood). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
 
-- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожжённый, испепелённый; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
+- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожженный, испепеленный; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
   <sub>mixed</sub>
 
 **NWS-16)** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): is consumed, burnt away [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )

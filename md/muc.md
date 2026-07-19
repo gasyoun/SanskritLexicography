@@ -18,8 +18,8 @@ _PWG article — 38 sub-card(s), 264 sense(s) · RU 264/264 · EN 0/264_
 - **RU:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
-[VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
-[Ind. St. 5,340. 363.] *amucat* und *amukta*
+[VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* и *amugdhvam, muñcātu*
+[Ind. St. 5,340. 363.] *amucat* и *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
   <sub>attested</sub>
@@ -169,8 +169,8 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [Spr. 2840.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2840) *duḥkhaṃ mokṣye kadāham*
 
 - **RU:** 3. pl. *mokṣīs*
-[HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* und *˚te, moktā*
-[Кар. 2] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) ved. *mumoktu, mumugdhi, amumuktam, mumocata* 2. pl., *mumocati*
+[HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* и *˚te, moktā*
+[Кар. 2] aus [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) ved. *mumoktu, mumugdhi, amumuktam, mumocata* 2. pl., *mumocati*
 [ṚV. 8,18,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.018.html#rv08.018.12) *mumocatam*
 [75,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.075.html#rv08.075.01) [4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.075.html#rv08.075.04) освобождать, высвобождать, избавлять; отпускать, отпустить; мед. pass. освобождаться, спасаться
 [ṚV. 1,24,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.12) *avanīḥ*
@@ -240,7 +240,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [MĀRK. P. 15,76.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,76) *tasmānmuktā vayaṃ dāhāt*
 [MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) *śāpānmuktaḥ*
 [3,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2386) [ŚĀK. 111,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,7) *yadi dharmānna mucyate* когда он не лишается добродетели
-[Spr. 2988.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2988) Вместо abl. в instr.: *mucyate pātakaiḥ sarvaiḥ*
+[Spr. 2988.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2988) Вм. abl. в instr.: *mucyate pātakaiḥ sarvaiḥ*
 [M. 11,258. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,258)
 [Spr. 3223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3223) [4788. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4788)
 [KATHĀS. 49,228.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,228) *sa śastravarmaṇāmoci cittaṃ ghairyeṇa no puraḥ*
@@ -252,10 +252,10 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [3,4040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4040) *muktamidaṃ tamasā manaḥ*
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135)
 [RAGH. 4,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,15) *kleśādibhiḥ*
-схол. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишённый
-[Spr. 3125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3125) Вместо abl. в gen.: *nahi me mokṣyate jīvan* он не спасётся от меня живым
+схол. к [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишенный
+[Spr. 3125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3125) Вм. abl. в gen.: *nahi me mokṣyate jīvan* он не спасется от меня живым
 [MBH. 3,15757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15757) [16048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16048) *nahi te mucyedantako 'pyātatāyinaḥ*
-[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) *mukta* в конце comp. освобождённый от, лишённый
+[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) *mukta* в конце comp. освобожденный от, лишенный
 [P. 2,1,38.](https://ashtadhyayi.com/sutraani/2/1/38) *yoni˚*
 [ŚVETĀŚV. UP. 1,7.] *ghanamukta ivoḍurāṭ*
 [R. 5,76,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,20) *viveka˚*
@@ -265,7 +265,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [29,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,173) *rodha˚ (pravahaṇa)*
 [VID. 236.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?236) *kāṭhinya˚ (uras)*
 [ŚĀK. 58.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?58) *ubhayorhastayormuktaṃ yadannamupanīyeta* т. е. преим. кушанье, которое не держат обеими руками,
-[M. 3,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,225) pass. без ближайшего определения быть освобождённым — избавленным от греха, от оков мира: *rājā bhavatyanenāstu mucyante ca sabhāsadaḥ* свободны от всякого греха
+[M. 3,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,225) pass. без ближайшего определения быть освобожденным — избавленным от греха, от оков мира: *rājā bhavatyanenāstu mucyante ca sabhāsadaḥ* свободны от всякого греха
 [M. 8,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,19) *japitvā pauruṣaṃ sūktaṃ mucyate gurutalpagaḥ*
 [11,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,251) *yadahnā kurute pāpam — saṃdhyāṃ mucyati paścimām*
 [MBH. 1,656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.656) *tasmānna badhyate nāpi mucyate nāpi saṃsarati puruṣaḥ . saṃsarati badhyate mucyate ca nānāśrayā prakṛtiḥ ..*
@@ -274,7 +274,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [M. 6,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,44) *abhipūjitalābhaiśca yatirmukto 'pi badhyate*
 [58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,58) [BHAG. 5,28.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,28) [WEBER, RĀMAT. UP. 338. 345. 357. 359.] [Spr. 3350](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3350) (одновременно жемчуг); ср. *jīvanmukta* (также
 [PAÑCAR. 1,10,83](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,10,83)). покидать (место): *na muñcati ca taṃ deśaṃ nāyako yatra dṛśyate*
-[SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* цит. при схол. zu [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
+[SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* цит. при схол. к [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
 *palitaśāraśikhaṇḍabandhaspṛṣṭamuktabhūmi* _adj._
 [DAŚAK.] в [BENF. Chr. 180,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *muñca śayyām*
 [RAGH. 5,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,66) *ihaiva priyāparibhuktamukte latāvalaye*
@@ -700,7 +700,7 @@ Vgl. *adhimukti* .
 [HARIV. 2049.](https://sanskrit-lexicon-scans.github.io/hariv?2049)
 [R. 2,9,47](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,47) ([8,54](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,54) [GORR.]). [6,112,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,91)
 
-- **RU:** — *ava* снимать, отстёгивать
+- **RU:** — *ava* снимать, отстегивать
 [AV. 8,2,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.02) распрягать: *hayāṃstānavamucya*
 [MBH. 3,2870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2870) отпускать, давать волю
 [VARĀH. BṚH. S. 51,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,27) снимать, стаскивать (одежду): *citrānsaṃnāhānavamuñcantu caiṣāṃ vāsāṃsi divyāni ca bhānumanti*
@@ -769,7 +769,7 @@ Vgl. *adhimukti* .
 [MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) *āmucya kambūparihāṭake śubhe*
 [4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) *kavacāvyāmucya śarīreṣu*
 [1027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1027) [14,1687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1687) *āmucyātha varma*
-[HARIV. 13118.](https://sanskrit-lexicon-scans.github.io/hariv?13118) *āmumuce kirīṭaṃ mālāṃ ca* там же und
+[HARIV. 13118.](https://sanskrit-lexicon-scans.github.io/hariv?13118) *āmumuce kirīṭaṃ mālāṃ ca* там же и
 [13087.](https://sanskrit-lexicon-scans.github.io/hariv?13087) *āmuñcadvarma*
 [BHAṬṬ. 17,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,6) *āmukta* надетый
 [AK. 2,8,2,33.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,33)
@@ -784,7 +784,7 @@ Vgl. *adhimukti* .
 [KATHĀS. 45,152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,152) *anāmuktā (ratna)*
 [Spr. 94](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?94), v. l. одетый, украшенный чем-л.: *bhrājatkaustubhāmuktakaṃdhara*
 [BHĀG. P. 3,28,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,14) *āmuktamiva pāṣaṇḍam*
-[4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) согласно схол. облачённый в еретическое одеяние (то есть *āmukta* в transit. знач.).
+[4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) согласно схол. облаченный в еретическое одеяние (то есть *āmukta* в transit. знач.).
   <sub>attested</sub>
 
 **2)** — 2) ablegen (ein Kleidungsstück): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
@@ -879,13 +879,13 @@ Schol.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738)
 [R. 1,1,74.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,74) [6,84,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,26)
 [KATHĀS. 58,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,102) *bandhanāt*
 [PAÑCAT. 38,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,21) *pāśāt*
-[192,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,6) *svastyeva hotonmucyate* освобождается, спасён
+[192,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,6) *svastyeva hotonmucyate* освобождается, спасен
 [AIT. BR. 2,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,7) [3,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,14) покидать: *rathamunmucya*
 [KATHĀS. 52,197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,197)
 [HARIV.] [12023.](https://sanskrit-lexicon-scans.github.io/hariv?12023)(?) отпускать, испускать, извергать: *siddhānāṃ vadanonmuktāḥ — stutayaḥ*
 [HARIV. 11962.](https://sanskrit-lexicon-scans.github.io/hariv?11962) [12264.](https://sanskrit-lexicon-scans.github.io/hariv?12264) *ārtanādo hi yaḥ paurairunmuktaḥ*
 [R. 2,52,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) метать: *na cakramunmuñcati mānuṣe hariḥ*
-[Spr. 5266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5266) *unmukta* в конце comp. свободный от, лишённый: *mānonmukta*
+[Spr. 5266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5266) *unmukta* в конце comp. свободный от, лишенный: *mānonmukta*
 [VARĀH. BṚH. S. 15,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,21) *prabhañjanonmuktā saṃdhyā*
 [30,20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?30,20)
   <sub>attested</sub>
@@ -900,7 +900,7 @@ Schol.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738)
 [MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185)
 
 - **RU:** — ср. *unmuca, unmocana* . — caus. развязывать, распутывать: *unmocanīyā veṇī*
-[MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. снимать, отстёгивать: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
+[MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. снимать, отстегивать: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
 [KATHĀS. 13,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,190) освобождать кого-л.
 [MBH. 12,5664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5664)
 [R. GORR. 1,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,79)
@@ -1122,7 +1122,7 @@ den Banden der Welt)
 **1)** — *pratipra* zulassen zu (das Kalb zur Mutter)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
 
-- **RU:** — *pratipra* подпускать к (телёнка к матери)
+- **RU:** — *pratipra* подпускать к (теленка к матери)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
   <sub>attested</sub>
 
@@ -1253,9 +1253,9 @@ den Banden der Welt)
 [BHĀG. P. 3,18,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,10) *pratimucya kāñcanānakṣānsa kakṣe parigṛhya vāsasā*
 [MBH. 4,215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.215) мед.: *adya kīrtimayīṃ mālāṃ pratimokṣye tava*
 [MBH. 9,1922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1922) *nārācamālāṃ rāmasya lalāṭe pratyamuñcata*
-[R. 6,79,61.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,61) *pratimukta* надетый, прикреплённый и т.д.
+[R. 6,79,61.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,61) *pratimukta* надетый, прикрепленный и т.д.
 [AK. 2,8,2,33.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,33)
-[H. 765.](https://sanskrit-lexicon-scans.github.io/abch2/app1?765) *(añjanam) tadvilocaneṣu pratimuktamāsām* нанесённый (= *pratidattam* схол. в [ed. Calc.])
+[H. 765.](https://sanskrit-lexicon-scans.github.io/abch2/app1?765) *(añjanam) tadvilocaneṣu pratimuktamāsām* нанесенный (= *pratidattam* схол. в [ed. Calc.])
 [RAGH. 16,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,59) навязывать кому-л. что-л., так преим. причинять: *avartimevāsminpāpmānaṃ pratimuñcati*
 [TBR. 1,4,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,4,3,2)
 [AV. 9,2,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.02)
@@ -1503,7 +1503,7 @@ den Banden der Welt)
 [MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095)
 [R. 5,68,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,30) *tato vimuktvā saśaraṃ śarāsanaṃ mahendradattaṃ kavacaṃ ca kāñcanam*
 [6,95,65.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,95,65) *vimucya nāvam*
-[MBH. 3,10077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10077) *vimukte pravahaṇe* освобождённый — пущенный на волю
+[MBH. 3,10077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10077) *vimukte pravahaṇe* освобожденный — пущенный на волю
 [VID. 231.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?231) *maharṣīṃśca vimucya tān* освобождать
 [R. 3,39,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,34) *abadhyaḥ badhyatāṃ ko 'dya badhyaḥ ko vā vimucyatām* отпускать, давать волю
 [R. GORR. 2,9,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,11) [MBH. 3,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2623) [2851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2851) [KUMĀRAS. 4,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,31) [RAGH. ed. Calc. 2,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?2,45) [PAÑCAT. 41,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,22) *garbhaḥ sa prasavamāno vimucyate* отцепляется, отходит
@@ -1519,7 +1519,7 @@ den Banden der Welt)
 [4,312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.312) *vanāditaḥ* спастись, избежать
 [148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) *narakāt*
 [MĀRK. P. 15,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,6) *dhanatyāgāt* тот, кому не выпадает случая раздавать богатства
-[MBH. 12,6573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6573) вместо des abl. auch der instr.: *mahato 'pyenaso māsāttvacevāhirvimucyate*
+[MBH. 12,6573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6573) вместо des abl. также der instr.: *mahato 'pyenaso māsāttvacevāhirvimucyate*
 [M. 2,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,79) *pāśairvimuktaḥ*
 [MBH. 1,6750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6750) [3,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2618) [13,3728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3728)
 [R. 4,29,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,1)
@@ -1530,8 +1530,8 @@ den Banden der Welt)
 [ŚĀK. 150](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?150), v. l.
 [VIKR. 129.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?129)
 [Spr. 4711.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4711) *vimuktāṃ maṇibhirjātyairnavāṃ muktāvalīmiva*
-[R. GORR. 2,125,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,7) *na me jīvanvimokṣyase* ты не спасёшься от меня живым
-[MBH. 3,1580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1580) [15169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15169) *viṣavimuktātman* освобождённый от яда
+[R. GORR. 2,125,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,7) *na me jīvanvimokṣyase* ты не спасешься от меня живым
+[MBH. 3,1580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1580) [15169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15169) *viṣavimuktātman* освобожденный от яда
 [2839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2839) [RAGH. 2,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,59) [13,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,37) [Spr. 3540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3540) [VARĀH. BṚH. S. 38,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,8) [ŚAṂK.] к [BṚH. ĀR. UP. S. 301.] [BHĀG. P. 9,11,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,20) Без дополнения: *devakanyā mṛgī bhūtvā muniṃ sūya vimokṣyase* (а именно *mṛgībhāvāt)*
 [MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) а именно *pāpāt*
 [M. 11,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,80) [82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,82)
@@ -1573,7 +1573,7 @@ den Banden der Welt)
 [PAÑCAT. 75,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?75,9) *vimokṣyanti viṣaṃ kruddhāḥ kauraveyeṣu*
 [MBH. 3,313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.313) *na te krodhaṃ vimuñcanti*
 [R. 3,42,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,11) *ghoraṃ kopaṃ vimokṣyāmi sasainye tvayi*
-[6,1,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,1,35) извергать поглощённое (*grastam*) т.е. затемнённое небесное тело т.е. освобождать его от затмения
+[6,1,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,1,35) извергать поглощенное (*grastam*) т.е. затемненное небесное тело т.е. освобождать его от затмения
 [SŪRYAS. 6,18. 23.] *mūrtim* принимать облик
 [M. 1,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,56) *uṣṇamaśru vimuñcantaḥ*
 [R. 2,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,59,5)
@@ -1677,7 +1677,7 @@ den Banden der Welt)
 
 **1)** — 1〉 Jmd losmachen, freimachen, befreien, — von (Abl. oder _Adv._ auf *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. sich losmachen, sich befreien von (Abl., Instr. und ausnahmsweise Gen.), entrinnen. *mukta* freigelassen, befreit von (Abl. oder Instr.), — *durch (Abl. oder Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
 
-- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобождённый от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
+- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобожденный от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
   <sub>attested</sub>
 
 **2)** — 2〉 verschonen [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
@@ -1687,7 +1687,7 @@ den Banden der Welt)
 
 **3)** — 3〉 ablösen, abbinden, lösen. *kaṇṭham* die Kehle lösen, so v. a. seine Stimme erheben. *prāṇān* Jmds (Gen.) Lebensgeister lösen, so v. a. Jmd das Leben nehmen. *mukta* losgebunden; abgelöst, herabgefallen (Frucht); aufgelöst, so v. a. erschlafft (die Glieder des Körpers).
 
-- **RU:** — 3〉 отвязывать, развязывать, распускать. *kaṇṭham* освободить горло, т.е. преим. возвысить голос. *prāṇān* разрешить чьи-либо (Gen.) жизненные силы, т.е. преим. лишить кого-либо жизни. *mukta* развязанный; отделившийся, упавший (плод); расслабленный, расслаблённый, т.е. преим. ослабевший (члены тела).
+- **RU:** — 3〉 отвязывать, развязывать, распускать. *kaṇṭham* освободить горло, т.е. преим. возвысить голос. *prāṇān* разрешить чьи-либо (Gen.) жизненные силы, т.е. преим. лишить кого-либо жизни. *mukta* развязанный; отделившийся, упавший (плод); расслабленный, расслабленный, т.е. преим. ослабевший (члены тела).
   <sub>attested</sub>
 
 **4)** — 4〉 loslassen, freilassen ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), die Zügel schiessen lassen (Partic. *mukta*); entlassen, gehen lassen. *padātpadam* mit *na* den einen Fuss nicht vom andern lassen, so v. a. sich nicht von der Stelle bewegen. *ubhayorhastayormuktamannam* so v. a. Speise, die man nicht mit beiden Händen hält, [VASIṢṬHA 11,25].
@@ -1697,7 +1697,7 @@ den Banden der Welt)
 
 **5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
 
-- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незаграждённый ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
+- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незагражденный ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
   <sub>attested</sub>
 
 **6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
@@ -1707,7 +1707,7 @@ den Banden der Welt)
 
 **7)** — 7〉 aus sich entlassen, von sich geben, ausstossen, vergiessen (Thränen). *mukta* aus sich entlassen, von sich gegeben, ausgestossen, vergossen (Thränen).
 
-- **RU:** — 7〉 испускать, извергать из себя, проливать (слёзы). *mukta* испущенный, пролитый, извергнутый (слёзы).
+- **RU:** — 7〉 испускать, извергать из себя, проливать (слезы). *mukta* испущенный, пролитый, извергнутый (слезы).
   <sub>attested</sub>
 
 **8)** — 8〉 von sich geben, so v. a. verleihen; übergeben abgeben [CAMPAKA. 281].
@@ -1717,7 +1717,7 @@ den Banden der Welt)
 
 **9)** — 9〉 werfen, schleudern, abschiessen, — auf (Loc., Dat., Gen. oder Acc. mit *prati*). *ātmānam* sich stürzen von (Abl.). *mukta* hingeworfen ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), geschleudert, abgeschossen. *pādaprahāra* ein versetzter Fusstritt, *ātman* selbst sich gestürzt habend von (Abl.).
 
-- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесённый удар ногой, *ātman* сам бросившийся с (Abl.).
+- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесенный удар ногой, *ātman* сам бросившийся с (Abl.).
   <sub>attested</sub>
 
 **10)** — 10〉 schicken in (Loc.) *mukta* [CAMPAKA. 230].
@@ -1737,7 +1737,7 @@ den Banden der Welt)
 
 **12a)** — a〉 befreit —, erlöst werden von einer Sünde, — von den Sünden, — von den Banden der Welt. *muktvā* erlöst seiend [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* von einer Sünde befreit ([ĀPAST. 1,24,21]), erlöst von den Sünden, — von den Banden der Welt.
 
-- **RU:** — a〉 быть освобождённым — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобождённый от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
+- **RU:** — a〉 быть освобожденным — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобожденный от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
   <sub>attested</sub>
 
 **12b)** — b〉 lassen von (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
@@ -1752,7 +1752,7 @@ den Banden der Welt)
 
 **12d)** — d〉 ermangeln, mit Instr. *mukta* ermangelnd, die Ergänzung im Instr. oder im Comp. vorangehend.
 
-- **RU:** — d〉 не иметь, лишаться, с Instr. *mukta* лишённый, дополнение стоит в Instr. или в предшествующем Comp..
+- **RU:** — d〉 не иметь, лишаться, с Instr. *mukta* лишенный, дополнение стоит в Instr. или в предшествующем Comp..
   <sub>attested</sub>
 
 **13)** — 13〉 *muktvā* Absol. mit Ausnahme von, ausser; mit Acc.
@@ -1942,7 +1942,7 @@ den Banden der Welt)
 
 **preverb_pari_1c)** — c〉 gekleidet in (Acc.).
 
-- **RU:** — c〉 облачённый в (Acc.).
+- **RU:** — c〉 облаченный в (Acc.).
   <sub>attested</sub>
 
 **preverb_pari_2)** — 2〉 ablegen. Nur Partic. *āmukta* abgelegt (ein Kleidungsstück).
@@ -1957,7 +1957,7 @@ den Banden der Welt)
 
 **preverb_pari_4)** — 4〉 *āmukta* fehlerhaft für *āsakta*.
 
-- **RU:** — 4〉 *āmukta* ошибочно вместо *āsakta*.
+- **RU:** — 4〉 *āmukta* ошибочно вм. *āsakta*.
   <sub>attested</sub>
 
 **preverb_pari_apa)** — Mit *paryā* rund herum ablösen und abnehmen.
@@ -1977,7 +1977,7 @@ den Banden der Welt)
 
 **preverb_vi_1)** — 1〉 befreien, — von (Abl.); Pass. loskommen, gerettet sein. *˚unmukta* frei von, ermangelnd.
 
-- **RU:** — 1〉 освобождать, — от (Abl.); Pass. вырваться на свободу, быть спасённым. *˚unmukta* свободный от, лишённый.
+- **RU:** — 1〉 освобождать, — от (Abl.); Pass. вырваться на свободу, быть спасенным. *˚unmukta* свободный от, лишенный.
   <sub>attested</sub>
 
 **preverb_vi_2)** — 2〉 auflösen, losmachen; Med. auch sich losmachen.
@@ -2057,7 +2057,7 @@ den Banden der Welt)
 
 **preverb_pra_vi_1)** — 1〉 befreien, — von (Abl.); Pass. freigelassen werden ([SAṂHITOPAN. 8,8]), sich befreien von (Abl.) *nirmukta* befreit, Jmd (Instr.) entkommen, errettet von (Abl.), frei von (Abl. oder im Comp. vorangehend).
 
-- **RU:** — 1〉 освобождать, — от (Abl.); Pass. быть отпущенным на свободу ([SAṂHITOPAN. 8,8]), освобождаться от (Abl.) *nirmukta* освобождённый, спасшийся (Instr.), вырвавшийся из (Abl.), свободный от (Abl. или в предшествующем Comp.).
+- **RU:** — 1〉 освобождать, — от (Abl.); Pass. быть отпущенным на свободу ([SAṂHITOPAN. 8,8]), освобождаться от (Abl.) *nirmukta* освобожденный, спасшийся (Instr.), вырвавшийся из (Abl.), свободный от (Abl. или в предшествующем Comp.).
   <sub>attested</sub>
 
 **preverb_pra_vi_2)** — 2〉 lösen, aufbinden. *nirmukta* abgelöst.
@@ -2097,7 +2097,7 @@ den Banden der Welt)
 
 **preverb_pra_vi_5b)** — b〉 verlustig gehen, kommen um (Instr.). *˚nirmukta* ermangelnd. Ohne Ergänzung aller Habe entbehrend, Nichts besitzend. — *nirmukta* auch fehlerhaft für *nirmukta*.
 
-- **RU:** — b〉 лишаться, утрачивать (Instr.). *˚nirmukta* лишённый. Без дополнения лишённый всего имущества, ничего не имеющий. — *nirmukta* также ошибочно вместо *nirmukta*.
+- **RU:** — b〉 лишаться, утрачивать (Instr.). *˚nirmukta* лишенный. Без дополнения лишенный всего имущества, ничего не имеющий. — *nirmukta* также ошибочно вм. *nirmukta*.
   <sub>attested</sub>
 
 **preverb_caus_note)** — Caus. befreien von (Abl.) einlösen (ein Pfand) von Jmd (Abl.) [VIṢṆUS. 5,181] (zu lesen *tasmādani˚*).
@@ -2117,7 +2117,7 @@ den Banden der Welt)
 
 **preverb_corr_2)** — Mit *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) und sonst oft fehlerhaft für *abhinirmrukta*.
 
-- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вместо *abhinirmrukta*.
+- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вм. *abhinirmrukta*.
   <sub>attested</sub>
 
 **preverb_sam2)** — Mit *vinis*
@@ -2147,7 +2147,7 @@ den Banden der Welt)
 
 **preverb_anu_1)** — 1〉 befreien, — von (Abl.) Med. Pass. sich befreien —, sich losmachen von (Abl., Gen. oder Instr.). *parimukta* befreit, — von (im Comp. vorangehend).
 
-- **RU:** — 1〉 освобождать, — от (Abl.) Med. Pass. освобождаться, — вырываться от (Abl., Gen. или Instr.). *parimukta* освобождённый, — от (в предшествующем Comp.).
+- **RU:** — 1〉 освобождать, — от (Abl.) Med. Pass. освобождаться, — вырываться от (Abl., Gen. или Instr.). *parimukta* освобожденный, — от (в предшествующем Comp.).
   <sub>attested</sub>
 
 **preverb_anu_2)** — 2〉 lösen, ablösen, abnehmen. — *parimukta* abgegeben.
@@ -2177,7 +2177,7 @@ den Banden der Welt)
 
 **intro)** — Caus. *parimocita* errettet, erlöst [VAJRACCH. 42,9. fgg.] Desid. in *parimokṣa*.
 
-- **RU:** — Caus. *parimocita* спасённый, освобождённый [VAJRACCH. 42,9. fgg.] Desid. в *parimokṣa*.
+- **RU:** — Caus. *parimocita* спасенный, освобожденный [VAJRACCH. 42,9. fgg.] Desid. в *parimokṣa*.
   <sub>attested</sub>
 
 **mit-Präp-1)** — Mit *vipari* pass. sich befreien von (Abl.).
@@ -2192,7 +2192,7 @@ den Banden der Welt)
 
 **1)** — 1〉 freilassen, laufen lassen, befreien von (Abl.); Pass. sich befreien von (Abl. oder Instr.) [GAUT.] *pramucya* sich befreiend von (Abl.), *pramukta* befreit von (Abl. oder Instr.)
 
-- **RU:** — 1〉 отпускать на свободу, давать уйти, освобождать от (Abl.); Pass. освобождаться от (Abl. или Instr.) [GAUT.] *pramucya* освобождаясь от (Abl.), *pramukta* освобождённый от (Abl. или Instr.)
+- **RU:** — 1〉 отпускать на свободу, давать уйти, освобождать от (Abl.); Pass. освобождаться от (Abl. или Instr.) [GAUT.] *pramucya* освобождаясь от (Abl.), *pramukta* освобожденный от (Abl. или Instr.)
   <sub>attested</sub>
 
 **2)** — 2〉 auflösen, aufknüpfen, aufbinden, ablösen; Pass. sich auflösen, sich ablösen, abfallen (von Früchten), — von (Abl.).
@@ -2217,7 +2217,7 @@ den Banden der Welt)
 
 **6)** — 6〉 aus sich entlassen, von sich geben, ausstossen. *āśūṇi* Thränen vergiessen [KĀRAṆḌ. 70,4]. *pramukta* von sich gegeben, ausgestossen; vergossen (Thränen [KĀRAṆḌ. 70,2]).
 
-- **RU:** — 6〉 испускать, извергать, выбрасывать. *āśūṇi* проливать слёзы [KĀRAṆḌ. 70,4]. *pramukta* испущенный, выброшенный; пролитый (слёзы [KĀRAṆḌ. 70,2]).
+- **RU:** — 6〉 испускать, извергать, выбрасывать. *āśūṇi* проливать слезы [KĀRAṆḌ. 70,4]. *pramukta* испущенный, выброшенный; пролитый (слезы [KĀRAṆḌ. 70,2]).
   <sub>attested</sub>
 
 **7)** — 7〉 schleudern, abschiessen. *pramukta* geschleudert, abgeschossen.
@@ -2257,7 +2257,7 @@ den Banden der Welt)
 
 **mit-anupra)** — Mit *anupra* nach einander loslassen.
 
-- **RU:** — С *anupra* отпускать поочерёдно.
+- **RU:** — С *anupra* отпускать поочередно.
   <sub>attested</sub>
 
 **mit-nis)** — Mit *paripra* Med. sich losmachen von (Abl.).
@@ -2267,7 +2267,7 @@ den Banden der Welt)
 
 **mit-apa)** — Mit *pratipra* ein Kalb zulassen zur Mutter.
 
-- **RU:** — С *pratipra* подпускать телёнка к матери.
+- **RU:** — С *pratipra* подпускать теленка к матери.
   <sub>attested</sub>
 
 **mit-vi-intro)** — Mit *vipra*
@@ -2277,7 +2277,7 @@ den Banden der Welt)
 
 **mit-vi-1)** — 1〉 befreien; Pass. sich befreien von (Abl.) frei ausgehen, nicht bestraft werden [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* befreit —, frei von (Instr. oder im Comp. vorangehend.)
 
-- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобождённый —, свободный от (Instr. или в Comp. предшествующем.)
+- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобожденный —, свободный от (Instr. или в Comp. предшествующем.)
   <sub>attested</sub>
 
 **mit-vi-2)** — 2〉 ablösen, abnehmen.
@@ -2307,7 +2307,7 @@ den Banden der Welt)
 
 **mit-sam-1)** — 1〉 Jmdm (Dat., Loc. oder Gen.) Etwas anziehen, anlegen; Med. (später auch Act.) sich anziegen, anlegen; annehmen (eine Gestalt u. s. w.). sich (sibi) setzen auf (Loc.). *pratimukta* aufgetragen (Salbe) auf (Loc.).
 
-- **RU:** — 1〉 надевать, облачать кого-л. (Dat., Loc. или Gen.) во что-л.; Med. (позднее также Act.) надевать на себя, облачаться; принимать (облик и т.д.). садиться (sibi) на (Loc.). *pratimukta* нанесённый (мазь) на (Loc.).
+- **RU:** — 1〉 надевать, облачать кого-л. (Dat., Loc. или Gen.) во что-л.; Med. (позднее также Act.) надевать на себя, облачаться; принимать (облик и т.д.). садиться (sibi) на (Loc.). *pratimukta* нанесенный (мазь) на (Loc.).
   <sub>attested</sub>
 
 **mit-sam-2)** — 2〉 Jmd (Loc.) Etwas anhängen, so v. a. anthun.
@@ -2322,7 +2322,7 @@ den Banden der Welt)
 
 **mit-sam-4)** — 4〉 freilassen, entlassen; Pass. sich befreien von (Abl.) und gefreien (!) *pratimukta* freigelassen, befreit von (Abl.).
 
-- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от (Abl.) и быть освобождённым (!); *pratimukta* отпущенный на свободу, освобождённый от (Abl.).
+- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от (Abl.) и быть освобожденным (!); *pratimukta* отпущенный на свободу, освобожденный от (Abl.).
   <sub>attested</sub>
 
 **mit-sam-5)** — 5〉 Etwas fahren lassen, aufgeben. *pratimukta* aufgegeben.
@@ -2362,7 +2362,7 @@ den Banden der Welt)
 
 **mit-vi2-1)** — 1〉 ablösen, losbinden, abspannen; Med. an sich oder für sich ablösen. (z. B. die eigenen Pferde abspannen); Med. Pass. sich lösen (auch mit *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), abgehen (von einer Leibesfrucht). *vimukta* ledig, nicht angespannt; aufgebunden, aufgelöst (Haar).
 
-- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (напр. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряжённый; развязанный, распущенный (волосы).
+- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (напр. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряженный; развязанный, распущенный (волосы).
   <sub>attested</sub>
 
 **mit-vi2-2)** — 2〉 Act. Med. abspannen, so v. a. Halt machen, einkehren.
@@ -2377,7 +2377,7 @@ den Banden der Welt)
 
 **mit-vi2-4)** — 4〉 freigeben, laufen lassen, befreien; Pass. sich von Jmd (Abl.) befreien, sich Jmds Gewalt entziehen; Jmd (Gen.) entkommen; sich befreien —, befreit werden von (Abl., _Adv._ auf *tas* oder Instr.). Ohne Ergänzung frei kommen, erlöst werden, insbes. _n._ von den Banden der Welt. *vimukta* befreit —, frei von (Abl. Instr. oder im Comp. vorangehend), entkommen aus (Abl.). Ohne Ergänzung frei —, flott gemacht (Schiff); erlöst, insbes. von den Banden der Welt.
 
-- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от кого-л. (Abl.), избавляться от власти кого-л.; ускользать от кого-л. (Gen.); освобождаться —, быть освобождённым от (Abl., _Adv._ на *tas* или Instr.). Без дополнения: выходить на свободу, обретать спасение, особ. _n._ от уз мира. *vimukta* освобождённый —, свободный от (Abl. Instr. или в Comp. предшествующем), спасшийся из (Abl.). Без дополнения: освобождённый, снятый с мели (корабль); спасённый, особ. от уз мира.
+- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от кого-л. (Abl.), избавляться от власти кого-л.; ускользать от кого-л. (Gen.); освобождаться —, быть освобожденным от (Abl., _Adv._ на *tas* или Instr.). Без дополнения: выходить на свободу, обретать спасение, особ. _n._ от уз мира. *vimukta* освобожденный —, свободный от (Abl. Instr. или в Comp. предшествующем), спасшийся из (Abl.). Без дополнения: освобожденный, снятый с мели (корабль); спасенный, особ. от уз мира.
   <sub>attested</sub>
 
 **mit-vi2-5)** — 5〉 einen Ort verlassen.
@@ -2407,7 +2407,7 @@ den Banden der Welt)
 
 **mit-vi2-10)** — 10〉 aus sich entlassen, von sich geben, ausstossen (Laute u. s. w.). *grastam* einen verschluckten (verfinsterten) Himmelskörper wieder von sich geben, so v. a. von, so v. a. sich ergiessend aus (im Comp. vorangehend [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
 
-- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки и т.д.). *grastam* снова выпускать проглоченное (затемнённое) небесное тело, так преим. от, так преим. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
+- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки и т.д.). *grastam* снова выпускать проглоченное (затемненное) небесное тело, так преим. от, так преим. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
   <sub>attested</sub>
 
 **mit-vi2-11)** — 11〉 werfen, schleudern, abschiessen, — auf (Loc.). *ātmānam* sich stürzen in (Loc.). *vimukta* geworfen, geschleudert.
@@ -2507,7 +2507,7 @@ den Banden der Welt)
 
 **mit-abhi2)** — Mit *sam* aus sich entlassen, von sich geben, vergiessen (Thränen).
 
-- **RU:** — С *sam* испускать, извергать, проливать (слёзы).
+- **RU:** — С *sam* испускать, извергать, проливать (слезы).
   <sub>attested</sub>
 
 **mit-prati)** — Caus. befreien.
@@ -2572,7 +2572,7 @@ den Banden der Welt)
 
 **mit-pratisam)** — Mit *pratisam*, *˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
-- **RU:** — С *pratisam*, *˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
+- **RU:** — С *pratisam*, *˚saṃmukta* освобожденный, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
   <sub>attested</sub>
 
 ## muc
@@ -2597,7 +2597,7 @@ den Banden der Welt)
 
 **mit-pratisam)** Mit *pratisam, ˚saṃmukta* erlöst, von einem peinlichen Zustande befreit [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
 
-- **RU:** С *pratisam, ˚saṃmukta* освобождённый, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
+- **RU:** С *pratisam, ˚saṃmukta* освобожденный, избавленный от мучительного состояния [R. ed. Bomb. 4,59,5](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5).
   <sub>attested</sub>
 
 ## muc
@@ -2622,7 +2622,7 @@ den Banden der Welt)
 
 **mit-pratisam)** Mit pratisam, ˚saṃmukta erlöst, von einem peinlichen Zustande befreit, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5)
 
-- **RU:** С pratisam, ˚saṃmukta освобождённый, избавленный от мучительного состояния, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5)
+- **RU:** С pratisam, ˚saṃmukta освобожденный, избавленный от мучительного состояния, [R. ed. Bomb. 4,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,59,5)
   <sub>attested</sub>
 
 ## muc
@@ -2699,7 +2699,7 @@ den Banden der Welt)
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) fehlerhaft für *niryukta* .
 
 - **RU:** — *nis*, *nirmukta*
-[HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вместо *niryukta*.
+[HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вм. *niryukta*.
   <sub>lexicographic</sub>
 
 **Nachtrag T27)** — *prati*
@@ -2733,17 +2733,17 @@ den Banden der Welt)
 **1)** 1. *muc*
 [Sp. 810, Z. 8] v. u. das Beispiel
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) zu streichen, da hier *bhuktam* zu lesen ist; vgl.
-[Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
+[Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722 "Spr. (II) 2722: darśitāni kalatrāṇi gṛhe bhuktamaśaṅkitam | kathitāni rahasyāni sauhṛdaṃ kimataḥ param || — (4168.) Die Frauen im Hause gezeigt, ohne Misstrauen gespeist und Geheimnisse erzählt: welche Freundschaft geht wohl darüber?")
 
 - **RU:** 1. *muc*
 [Sp. 810, Z. 8] снизу пример
 [Spr. 4186](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4186) следует исключить, поскольку здесь надлежит читать *bhuktam*; ср.
-[Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722)
+[Spr. (II) 2722.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2722 "Spr. (II) 2722: darśitāni kalatrāṇi gṛhe bhuktamaśaṅkitam | kathitāni rahasyāni sauhṛdaṃ kimataḥ param || — (4168.) Die Frauen im Hause gezeigt, ohne Misstrauen gespeist und Geheimnisse erzählt: welche Freundschaft geht wohl darüber?")
   <sub>lexicographic</sub>
 
 **Nachtrag T11)** — *abhi* von sich geben, ausströmen: *tāpam*
-[Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
+[Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770 "Spr. (II) 6770: sadbhiḥ saṃsevyamāno 'pi śāntavākyairjalairiva | mṛṣṭapāsāṇavadduṣṭastāpamevābhimuñcati || — Ein Böser, würde ihm auch von Guten mit milden Worten freundlich zugeredet, giebt nur Gluth von sich wie ein Stein, den man mit Wasser abreibt.")
 
 - **RU:** — *abhi* испускать из себя, источать: *tāpam*
-[Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770)
+[Spr. (II) 6770.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6770 "Spr. (II) 6770: sadbhiḥ saṃsevyamāno 'pi śāntavākyairjalairiva | mṛṣṭapāsāṇavadduṣṭastāpamevābhimuñcati || — Ein Böser, würde ihm auch von Guten mit milden Worten freundlich zugeredet, giebt nur Gluth von sich wie ein Stein, den man mit Wasser abreibt.")
   <sub>attested</sub>

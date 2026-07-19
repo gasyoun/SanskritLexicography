@@ -30,7 +30,7 @@
 [4245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4245) *na vibrūyānnṛpo dharmam*
 [M. 8,390.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,390)
 
-- **RU:** [MBH. 1,3449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3449) высказываться о чём-либо (acc.), излагать своё мнение о чём-либо; разъяснять, толковать: *tadvākyaṃ vibrūta*
+- **RU:** [MBH. 1,3449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3449) высказываться о чем-либо (acc.), излагать свое мнение о чем-либо; разъяснять, толковать: *tadvākyaṃ vibrūta*
 [MBH. 2,2262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2262) *vyabravīdvayunā martyebhyo 'gnirvidvān*
 [ṚV. 1,145,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.145.html#rv01.145.05)
 [TS. 2,5,11,8.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,11,8) [7,3,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,1,3) *yāneva mā praśnānaprākṣī stāneva me vibrūhi*

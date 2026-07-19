@@ -8,6 +8,6 @@
 [Spr. 3705.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3705)
 
 - **RU:** — *prati*
-[KĀM. NĪTIS. 1,61] вероятно, ошибочно вместо *pravi*; ср.
+[KĀM. NĪTIS. 1,61] вероятно, ошибочно вм. *pravi*; ср.
 [Spr. 3705.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3705)
   <sub>attested</sub>

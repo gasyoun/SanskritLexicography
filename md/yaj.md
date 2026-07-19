@@ -32,10 +32,10 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 [DHĀTUP. 23,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*devapūjāsaṃgatikaraṇadāneṣu*).
 [VOP. 8,133](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) (*devārcādānasaṅgakṛtau*).* yajadhvainam = yajadhvamenam*
 [P. 7,1,43.](https://ashtadhyayi.com/sutraani/7/1/43) *iyāja, iyajitha, iyaṣṭha, yejitha, ījatus*
-схол. zu [P. 6,1,17.](https://ashtadhyayi.com/sutraani/6/1/17) [7,2,62. fg.](https://ashtadhyayi.com/sutraani/7/2/62) [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [133. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) *īje, ījire; yakṣyati, ˚te; ayakṣyata; yaṣṭā*
-схол. zu [P. 7,2,62.](https://ashtadhyayi.com/sutraani/7/2/62) [8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36) Кар. 2 aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *yaṣṭā smahe*
+схол. к [P. 6,1,17.](https://ashtadhyayi.com/sutraani/6/1/17) [7,2,62. fg.](https://ashtadhyayi.com/sutraani/7/2/62) [VOP. 8,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,124) [133. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,133) *īje, ījire; yakṣyati, ˚te; ayakṣyata; yaṣṭā*
+схол. к [P. 7,2,62.](https://ashtadhyayi.com/sutraani/7/2/62) [8,2,36.](https://ashtadhyayi.com/sutraani/8/2/36) Кар. 2 aus [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *yaṣṭā smahe*
 [TBR.] *ayaṣṭa*
-схол. zu [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) *yakṣi*
+схол. к [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) *yakṣi*
 2. sg., *yakṣat, yakṣatas*
 3. du., *yakṣatām*
 3. du., *yakṣi*
@@ -44,8 +44,8 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 2. sg. [10,61,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.21) *ayāṭ*
 3. sg. [VS. 7,15.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,15) [21,47.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?21,47) *ayākṣma; yajase*
 [ṚV. 8,25,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.025.html#rv08.025.01) wohl 1. sg., nach [SĀY. 2.] sg. *ijyāt, ijyāstām, ijyāsus, yakṣīṣṭa, yakṣīdhvam*
-схол. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [8,3,78.](https://ashtadhyayi.com/sutraani/8/3/78) pass. *ijyate, ijyant, yajyamāna* neben *ijyamāna*
-[PAT.] zu [P. 6,1,108.](https://ashtadhyayi.com/sutraani/6/1/108) *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
+схол. к [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [8,3,78.](https://ashtadhyayi.com/sutraani/8/3/78) pass. *ijyate, ijyant, yajyamāna* neben *ijyamāna*
+[PAT.] к [P. 6,1,108.](https://ashtadhyayi.com/sutraani/6/1/108) *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
 [MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
   <sub>attested</sub>
@@ -54,7 +54,7 @@ Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](http
 Schol. zu [P. 1,3,72.](https://ashtadhyayi.com/sutraani/1/3/72) [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58)). Ausnahmen sind jedoch häufig.
 
 - **RU:** 1) почитать бога, воздавать ему почесть, также с молитвой и подношением, отсюда посвящать, жертвовать. В древнем языке обычно act., когда действует Агни или иной посредник, и мед., когда человек чтит и приносит жертву сам для себя; позднее act. об жреце-совершителе, мед. об устроителе жертвоприношения (*yajanti yājakāḥ, yajamāno yajeta*
-схол. zu [P. 1,3,72.](https://ashtadhyayi.com/sutraani/1/3/72) [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58)). Исключения, однако, часты.
+схол. к [P. 1,3,72.](https://ashtadhyayi.com/sutraani/1/3/72) [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58)). Исключения, однако, часты.
   <sub>attested</sub>
 
 **1)a) — с dat./acc. бога, цели и instr. орудия)** a) mit acc. des Gottes, dat. der Person oder des Zweckes, für welchen, und instr. der Sache oder des Werkzeuges, womit die Handlung vollzogen wird. *agne vīhi haviṣā yakṣi devān*
@@ -188,7 +188,7 @@ Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāgh
 [ĀŚV. GṚHY. 1,7,13. 4,8,40.]
 [ŚĀṄKH. BR. 23,5.]
 [LĀṬY. 8,1,19. 27. 3,7. 13.] *yajant*
-[ṚV. 4,16,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.11) *yajamāna* (см. auch особ.)
+[ṚV. 4,16,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.11) *yajamāna* (см. также особ.)
 [ṚV. 1,51,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.08) [7,16,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.016.html#rv07.016.06) [8,86,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.086.html#rv08.086.02)
 [AV. 2,34,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.01) [2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.02) [4,14,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.014.html#av04.014.05)
 [VS. 6,6.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,6) *ījāna*
@@ -200,7 +200,7 @@ Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāgh
 [ṚV. 1,113,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.09) [125,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.04)
 [TS. 1,6,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,7,3)
 [KĀTY. ŚR. 23,4,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?23,4,4)
-[KAUṢ. UP. 1,1.] *iṣṭa* тот, которому было принесено жертвоприношение, и принесённый в жертву
+[KAUṢ. UP. 1,1.] *iṣṭa* тот, которому было принесено жертвоприношение, и принесенный в жертву
 [KĀTY. ŚR. 25,10,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,10,22)
 [ŚĀṄKH. ŚR. 4,9,7.] *jīvataiva paśuneṣṭaṃ bhavati*
 [ŚAT. BR. 13,2,8,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,8,2) *vahniṃ cakartha vidathe yajadhyai*
@@ -214,7 +214,7 @@ Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāgh
 [BHĀG. P. 1,12,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,35) [3,13,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,11) [10,70,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,41)
 [MĀRK. P. 16,39.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,39)
 [VARĀH. BṚH. S. 46,59.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,59) *paśunā rudraṃ yajate*
-схол. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Вартт. *surāghaṭasahasreṇa māṃsabhūtodanena ca . yakṣye tvām*
+схол. к [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Вартт. *surāghaṭasahasreṇa māṃsabhūtodanena ca . yakṣye tvām*
 [R. 2,52,83.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,83) [55,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,20)
 [M. 8,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,105) [11,118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,118) *yastilairyajate pitṝn*
 [MBH. 13,3317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3317)
@@ -374,7 +374,7 @@ Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāgh
 
 **отсылки)** — Vgl. 2. *aniṣṭa* und 2. *iṣṭa* .
 
-- **RU:** — ср. 2. *aniṣṭa* und 2. *iṣṭa* .
+- **RU:** — ср. 2. *aniṣṭa* и 2. *iṣṭa* .
   <sub>attested</sub>
 
 ## yaj
@@ -422,7 +422,7 @@ Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāgh
 [Ind. St. 3,461. 4,330.] *saṃvatsare 'sthīni yājayeyuḥ* они должны назначить Астхийаджна
 [KĀTY. ŚR. 25,13,36.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,13,36)
 [ŚĀṄKH. ŚR. 13,11,9.] *yajñairyajanti ye kecidyājayanti ca ye dvijāḥ*
-[MBH. 1,7664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7664) [4,1558](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) (act. und мед.).
+[MBH. 1,7664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7664) [4,1558](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) (act. и мед.).
 [12,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.234) *yājayanti ca ye pūgān*
 [M. 3,151.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,151) *vṛṣalam*
 [P. 3,3,145](https://ashtadhyayi.com/sutraani/3/3/145), схол.
@@ -448,7 +448,7 @@ Schol. zu [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasy
 [MBH. 2,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.59)
 
 - **RU:** — desid. *yiyakṣati* желать принести жертву
-схол. zu [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasya yiyakṣataḥ*
+схол. к [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasya yiyakṣataḥ*
 [R. GORR. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,61,14) *yiyakṣamāṇa*
 [MBH. 2,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.59)
   <sub>attested</sub>
@@ -462,7 +462,7 @@ Schol. zu [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasy
 Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
 
 - **RU:** — intens. *yāyajyate, yāyajīti*
-схол. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
+схол. к [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
   <sub>lexicographic</sub>
 
 ## yaj
@@ -487,7 +487,7 @@ Schol. zu [KĀTY. ŚR. 16,1,4](https://sanskrit-lexicon-scans.github.io/katyasr/
 [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) ist *tadanu yajecca* zu schreiben.
 
 - **RU:** — *anu* почитать впоследствии, чтить вслед: *tamagniṣṭomenānuyajati*
-схол. zu [KĀTY. ŚR. 16,1,4](https://sanskrit-lexicon-scans.github.io/katyasr/app1?16,1,4) (неизд.).
+схол. к [KĀTY. ŚR. 16,1,4](https://sanskrit-lexicon-scans.github.io/katyasr/app1?16,1,4) (неизд.).
 [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) следует писать *tadanu yajecca*.
   <sub>attested</sub>
 
@@ -589,13 +589,13 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 - **RU:** — *ā*
  1) подносить в почитании, посвящать: *yebhyo hotrāṃ prathamāmāyeje* (ср.
-zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
+к [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 [ṚV. 10,63,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.063.html#rv10.063.07) [61,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.11) [1,121,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.121.html#rv01.121.05) *āhutim*
 [AV. 19,4,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.01) Partic. *eṣṭa* . Места, приводимые ниже под 3. *iṣ* с *ā*, возможно, следует отнести сюда, поскольку *iṣ* иначе с этим Praep. не встречается; а именно:
 [ṚV. 1,184,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) так преим. почести (*anveṣṭārau*
-[SĀY.]), [AIT. BR. 1,26](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,26) и [VS. 5,7](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?5,7) так преим. добытый жертвоприношением, обретённый через почитание; см. ниже (3).
-[MAH.] zu [VS.] разделяет эту точку зрения, тогда как
-[SĀY.] zu [AIT. BR.] *eṣṭar* и *eṣṭā* принимает как nom. ag. zu *iṣ*, подобно также в коммент. zu [TS. 1,2,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,11,1)
+[SĀY.]), [AIT. BR. 1,26](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,26) и [VS. 5,7](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?5,7) так преим. добытый жертвоприношением, обретенный через почитание; см. ниже (3).
+[MAH.] к [VS.] разделяет эту точку зрения, тогда как
+[SĀY.] к [AIT. BR.] *eṣṭar* и *eṣṭā* принимает как nom. ag. zu *iṣ*, подобно также в коммент. к [TS. 1,2,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,11,1)
   <sub>attested</sub>
 
 **2) почитать)** — 2) verehren, mit acc.: *ā yaṃ hotā yajati viśvavāram*
@@ -640,7 +640,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **отсылки)** — Vgl. *āyaji* fgg. und *āyāga* .
 
-- **RU:** — ср. *āyaji* сл. und *āyāga* .
+- **RU:** — ср. *āyaji* сл. и *āyāga* .
   <sub>attested</sub>
 
 ## yaj
@@ -686,7 +686,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 **atyupa)** — *atyupa* weiter dazu opfern
 [ŚAT. BR. 3,8,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,4,18) [3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,1)
 
-- **RU:** — *atyupa* приносить жертву сверх того, жертвовать ещё дополнительно
+- **RU:** — *atyupa* приносить жертву сверх того, жертвовать еще дополнительно
 [ŚAT. BR. 3,8,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,4,18) [3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,1)
   <sub>attested</sub>
 
@@ -838,7 +838,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **NWS-1)** *yaj* [Gen , unsp] ( yájati, °te I P Ā ) Pass ( ijyate ): to be sacrificed or worshipped. Mbh , Kāvya(MW) . Desid ( yíyakṣati , ° te ): to desire to sacrifice or worship. Mbh , R
 
-- **RU:** *yaj* [Gen , unsp] ( yájati, °te I P Ā ) Pass ( ijyate ): быть принесённым в жертву или быть почитаемым. Mbh , Kāvya(MW) . Desid ( yíyakṣati , °te ): желать принести жертву или совершить поклонение. Mbh , R
+- **RU:** *yaj* [Gen , unsp] ( yájati, °te I P Ā ) Pass ( ijyate ): быть принесенным в жертву или быть почитаемым. Mbh , Kāvya(MW) . Desid ( yíyakṣati , °te ): желать принести жертву или совершить поклонение. Mbh , R
   <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] e. Gott (Akk) verehren (durch Gebet und Opfergabe), ihm huldigen, opfern. e. Gotte (Akk) durch Lied oder Opfergabe (Instr) huldigen. e. Gotte (Akk) für jemand (Dat) huldigen, opfern. e. Gott (Akk) durch Opfer wozu bewegen. e. Gotte (Akk) etwas (Akk oder partitiver Gen) darbringen, opfern. e. Gotte (Dat) etwas (Akk) darbringen, opfern. Lied oder Opfergabe (Akk) darbringen, opfern. opfern (ohne Obj). für jemand (Dat) opfern. etwas (Akk) heilig halten, heiligen, weihen. e. Gott (Akk) durch Opferwerk usw herbeischaffen (mit Lok oder ihá (hierher)). etwas (Akk) durch Opfer herbeischaffen, med: sich verschaffen. med: sich opfern lassen mit (Instr). [ oft von Agni (als dem opfernden, verehrenden) gebraucht. ] Des iyakṣ s. bes
@@ -903,7 +903,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **NWS-14)** [ījivaṃs Ep , unsp] Adj mfn [PtzPf] sacrificed. R I.44.6 . from yaj . Sen 1951 : 59 (s.v. yaj )
 
-- **RU:** [ījivaṃs Ep , unsp] Adj mfn [PtzPf] принесённый в жертву. R I.44.6 . from yaj . Sen 1951 : 59 (s.v. yaj )
+- **RU:** [ījivaṃs Ep , unsp] Adj mfn [PtzPf] принесенный в жертву. R I.44.6 . from yaj . Sen 1951 : 59 (s.v. yaj )
   <sub>attested</sub>
 
 ## yaj
@@ -920,12 +920,12 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **1a)** — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
 
-- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесённой жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
+- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесенной жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
   <sub>attested</sub>
 
 **1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* geopfert, dargebracht.
 
-- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* принесённый в жертву, поднесённый.
+- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* принесенный в жертву, поднесенный.
   <sub>attested</sub>
 
 **1c)** — c〉 mit Dat., Loc. oder Acc. mit *prati* der Person und Acc. der Sache.
@@ -967,13 +967,13 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **pref-anu)** — Mit *ati* Med. mit dem Opfer eine Gottheit (Acc.) übergehen.
 
-- **RU:** — Mit *ati* Med. обходить божество (Acc.) при жертвоприношении.
+- **RU:** — С *ati* Med. обходить божество (Acc.) при жертвоприношении.
   <sub>attested</sub>
 
 **pref-apa-1)** — Mit *anu*
 — 1〉 den Anuyāja darbringen [ĀPAST. ŚR. 8,3,10].
 
-- **RU:** — Mit *anu*
+- **RU:** — С *anu*
 — 1〉 совершать Ануйаджа [ĀPAST. ŚR. 8,3,10].
   <sub>attested</sub>
 
@@ -984,13 +984,13 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **pref-ava)** — Mit *apa* mit einem Opfer vertreiben, wegopfern; Med. durch ein Opfer abkaufen [MANTRABR. 1,2,5].
 
-- **RU:** — Mit *apa* изгонять жертвой, отвращать жертвой; Med. откупаться жертвой [MANTRABR. 1,2,5].
+- **RU:** — С *apa* изгонять жертвой, отвращать жертвой; Med. откупаться жертвой [MANTRABR. 1,2,5].
   <sub>attested</sub>
 
 **pref-a-1)** — Mit *abhi*
 — 1〉 mit Opfer ehren, den Göttern (Acc.) opfern [MAITR. S. 1,4,5].
 
-- **RU:** — Mit *abhi*
+- **RU:** — С *abhi*
 — 1〉 чтить жертвой, жертвовать богам (Acc.) [MAITR. S. 1,4,5].
   <sub>attested</sub>
 
@@ -1001,18 +1001,18 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **pref-nis)** — Mit *ava* durch Opfer oder Gebete abwenden, vertreiben, durch Gaben abfinden.
 
-- **RU:** — Mit *ava* отвращать, изгонять жертвами или молитвами, умиротворять дарами.
+- **RU:** — С *ava* отвращать, изгонять жертвами или молитвами, умиротворять дарами.
   <sub>attested</sub>
 
 **pref-prati)** — Mit *nirava* abfinden gegenüber von (Abl.).
 
-- **RU:** — Mit *nirava* умиротворять/откупаться по отношению к (Abl.).
+- **RU:** — С *nirava* умиротворять/откупаться по отношению к (Abl.).
   <sub>attested</sub>
 
 **pref-pra-1)** — Mit *ā*
 — 1〉 huldigend darbringen, weihen.
 
-- **RU:** — Mit *ā*
+- **RU:** — С *ā*
 — 1〉 подносить в знак почтения, посвящать.
   <sub>attested</sub>
 
@@ -1023,28 +1023,28 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **pref-pra-3)** — 3〉 eropfern, überh. verschaffen (den Menschen von den Göttern), zuwenden; Med. auch sich verschaffen. *eṣṭa* eropfert, durch Verehrung gewonnen.
 
-- **RU:** — 3〉 добывать жертвой, вообще доставлять (людям от богов), обращать; Med. также добывать для себя. *eṣṭa* добытый жертвой, обретённый через почитание.
+- **RU:** — 3〉 добывать жертвой, вообще доставлять (людям от богов), обращать; Med. также добывать для себя. *eṣṭa* добытый жертвой, обретенный через почитание.
   <sub>attested</sub>
 
 **pref-anu-pra)** — Mit *samā* verschaffen.
 
-- **RU:** — Mit *samā* доставлять, добывать.
+- **RU:** — С *samā* доставлять, добывать.
   <sub>attested</sub>
 
 **pref-upa-pra)** — Mit *upa* dazu opfern.
 
-- **RU:** — Mit *upa* жертвовать дополнительно.
+- **RU:** — С *upa* жертвовать дополнительно.
   <sub>attested</sub>
 
 **pref-pra-pra)** — Mit *atyupa* weiter dazu opfern.
 
-- **RU:** — Mit *atyupa* жертвовать сверх того.
+- **RU:** — С *atyupa* жертвовать сверх того.
   <sub>attested</sub>
 
 **pref-vi-1)** Mit *pari*
 — 1〉 eropfern, erlangen, verschaffen.
 
-- **RU:** Mit *pari*
+- **RU:** С *pari*
 — 1〉 добывать жертвой, обретать, доставлять.
   <sub>attested</sub>
 
@@ -1061,7 +1061,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 **pref-sam-1)** — Mit *pra*
 — 1〉 verehren, huldigen, Jmd (Acc.) Opfer darbringen.
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
 — 1〉 почитать, чтить, приносить жертву кому-либо (Acc.).
   <sub>attested</sub>
 
@@ -1073,7 +1073,7 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 **pref-prati-sam-1)** — Mit *prati*
 — 1〉 dagegen opfern.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 жертвовать в ответ.
   <sub>attested</sub>
 
@@ -1084,13 +1084,13 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **pref-abhi-sam)** — Mit *anupra* Med. verehren.
 
-- **RU:** — Mit *anupra* Med. почитать.
+- **RU:** — С *anupra* Med. почитать.
   <sub>attested</sub>
 
 **pref-sam-a-1)** — Mit *sam*
 — 1〉 zusammen (den Göttern) opfern, — huldigen; opfern; überh.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 совместно жертвовать (богам), — чтить; приносить жертву; вообще
   <sub>attested</sub>
 

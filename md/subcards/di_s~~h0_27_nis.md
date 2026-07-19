@@ -85,7 +85,7 @@
 [ŚRUT. 27.]
 [KULL.] к [M. 4,88.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,88) *parigaṇanayā nirdiśanto valākāḥ* определять числом
 [MEGH. 22.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?22) *nirdiṣṭāni daśaitāni śārīrāṇi maharṣiṇā*
-[SUŚR. 1,9,11. 10,9. 14,14.] *dharmasthaḥ kāraṇairetairhīnaṃ tamapi nirdiśet* пусть объявит того также побеждённым
+[SUŚR. 1,9,11. 10,9. 14,14.] *dharmasthaḥ kāraṇairetairhīnaṃ tamapi nirdiśet* пусть объявит того также побежденным
 [M. 8,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,57) *(tāni) sparśe medhyāni nirdiśet* считать, принимать за
 [5,133.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,133) [3,199.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,199) [VET. 16,16.]
   <sub>attested</sub>
@@ -103,7 +103,7 @@
 [VARĀH. BṚH. S. 5,34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,34) *(ulkā) nakṣatragrahaghāte tadbhaktīnāṃ kṣayāya nirdiṣṭā*
 [32,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,17)
 
-- **RU:** — 5) высказывать о чём-л. (acc.) применительно к чему-л. (dat.), утверждать о чём-л., что оно произведёт что-л.: *(daityaḥ samāgataḥ) paścātkarṣakasevakavījanāśāya nirdiṣṭaḥ*
+- **RU:** — 5) высказывать о чем-л. (acc.) применительно к чему-л. (dat.), утверждать о чем-л., что оно произведет что-л.: *(daityaḥ samāgataḥ) paścātkarṣakasevakavījanāśāya nirdiṣṭaḥ*
 [VARĀH. BṚH. S. 5,34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,34) *(ulkā) nakṣatragrahaghāte tadbhaktīnāṃ kṣayāya nirdiṣṭā*
 [32,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,17)
   <sub>attested</sub>

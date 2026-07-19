@@ -24,7 +24,7 @@
 [AV. 18,3,71.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.71)
 [KĀTY. ŚR. 25,7,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,7,5)
 [ŚAT. BR. 9,1,1,42.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,42) [11,1,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,5,8) [14,8,15,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,15,12) «уничтожать»: *rāmaṃ putraṃ na me bālaṃ rāma saṃdagdhumarhasi*
-[R. GORR. 1,77,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,12) — pass. «сгорать, быть сожжённым»: *abhijanaḥ saṃdahyatāṃ vahninā*
+[R. GORR. 1,77,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,12) — pass. «сгорать, быть сожженным»: *abhijanaḥ saṃdahyatāṃ vahninā*
 [BHARTṚ. 2,32.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,32) *saṃdagdhaṃ rakṣaḥ*
 [TS. 1,8,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,8,7,2) «гореть, пылать»: *saṃdahyamānasarvāṅga eṣāmudvahanādhinā*
 [BHĀG. P. 3,30,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,30,8) «изнывать, терзаться»: *pratyāgatāsuḥ samadahyatāntaḥ* (v. l. *samatapyata*)

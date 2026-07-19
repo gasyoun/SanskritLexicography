@@ -14,7 +14,7 @@
 
 - **RU:** 1) охваченный страстью: *nāga*
 [HARIV. 4093.](https://sanskrit-lexicon-scans.github.io/hariv?4093) одержимый, помешанный на (inf.): *yatastvamakṣairdevituṃ saṃpramattaḥ*
-[MBH. 8,3509](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3509); возможно, лишь опечатка вместо *saṃpravṛttaḥ*, как читает [ed. Bomb.].
+[MBH. 8,3509](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3509); возможно, лишь опечатка вм. *saṃpravṛttaḥ*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 **2)** — 2) sorglos, achtlos

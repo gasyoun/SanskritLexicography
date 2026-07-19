@@ -8,7 +8,7 @@
 [MBH. 13,1579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1579)
 
 - **RU:** — *pari*
- 1) съесть что-либо (acc.) наперёд, поесть первым: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
+ 1) съесть что-либо (acc.) наперед, поесть первым: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
 [MBH. 13,1579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1579)
   <sub>attested</sub>
 

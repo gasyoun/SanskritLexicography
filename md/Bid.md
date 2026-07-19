@@ -113,7 +113,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [H. 1488.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1488)
 [an. 2,277.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,277)
 
-- **RU:** 1) раскалывать, проламывать, пробивать отверстие в чём-либо, разбивать, разносить, разрывать, разрезать: *puraḥ*
+- **RU:** 1) раскалывать, проламывать, пробивать отверстие в чем-либо, разбивать, разносить, разрывать, разрезать: *puraḥ*
 [ṚV. 1,53,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.053.html#rv01.053.08) [2,14,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.014.html#rv02.014.06)
 [AIT. BR. 1,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,25) *adrim*
 [ṚV. 1,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.03) [4,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.11) *valam*
@@ -238,12 +238,12 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [9,281.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,281) *vāri bhidyamānam* бурлящая, ревущая вода, прорывающая берега
 [R. 1,26,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,6) *yugānte bhidyamānānāṃ sāgarāṇāmiva svanaḥ* прорывающийся, выходящий из берегов
 [HARIV. 5003.](https://sanskrit-lexicon-scans.github.io/hariv?5003) *sāgarasyeva bhidyataḥ*
-[R. GORR. 2,5,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) планета или комета прорывает звезду, когда проходит сквозь неё: *ketunā dhūmaketostu nakṣatrāṇi trayodaśa . bharaṇyādīni bhinnāni nānuyānti niśākaram ..*
+[R. GORR. 2,5,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) планета или комета прорывает звезду, когда проходит сквозь нее: *ketunā dhūmaketostu nakṣatrāṇi trayodaśa . bharaṇyādīni bhinnāni nānuyānti niśākaram ..*
 [HARIV. 4259.](https://sanskrit-lexicon-scans.github.io/hariv?4259)
 [SŪRYAS. 8,13.]
 [VARĀH. BṚH. S. 4,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,25) [26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,26) [6,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,9) [9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28)
 [Spr. 1886.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1886) [2354.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2354) [2649.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2649) *yadi bhintte sūryasuto rohiṇyāḥ śakaṭam*
-[2367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2367) *tamaḥ, timiraṃ bhid* прорвать тьму, — рассеять её
+[2367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2367) *tamaḥ, timiraṃ bhid* прорвать тьму, — рассеять ее
 [P. Einl. 2.] [ŚĀK. 181.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?181) [VID. 145.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?145) *yo na bhidyate (saṃgatasaṃdhiḥ)* союз, который не может быть нарушен,
 [Spr. 4880.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4880) *yaiśunyādbhidyate snehaḥ*
 [199.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?199) *saṃbandhibhinno 'pi gireḥ kulasya snehastadekāyatanaṃ jagāma*
@@ -288,7 +288,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [KUMĀRAS. 2,7.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,7)
 [RĀJA-TAR. 5,260.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,260)
 [P. 4,1,94](https://ashtadhyayi.com/sutraani/4/1/94), схол.
-*bhinnaḥ paṇaḥ* разделённый Пана, тем самым преим. неполный
+*bhinnaḥ paṇaḥ* разделенный Пана, тем самым преим. неполный
 P., менее одного
 P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,248) *bhinna* дробь, дробное число
 [COLEBR. Alg. 13.]
@@ -360,7 +360,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 - **RU:** — 5) прерывать, нарушать: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* прерывать добродетельный образ жизни, тем самым преим. отступать от него
-[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) ср. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым преим. стёрт, изглажен
+[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) ср. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым преим. стерт, изглажен
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
 [DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
@@ -433,7 +433,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 - **RU:** — 9) изменять; pass. изменяться: *na — bhindanti mandāṃ gatim*
 [KUMĀRAS. 1,11.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,11) *yathemā nadyaḥ syandamānāḥ samudrāyaṇāḥ samudraṃ prāpyāstaṃ gacchanti bhidyete tāsāṃ nāmarūpe*
 [PRAŚNOP. 6,5.] *śuṣkabhinnamukhasvarāḥ*
-[YĀJÑ. 2,267.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,267) *bhinnasvara* имеющий изменённый, искажённый голос
+[YĀJÑ. 2,267.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,267) *bhinnasvara* имеющий измененный, искаженный голос
 [SUŚR. 1,308,14.] [2,85,13.]
 [Spr. 2048.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2048)
 [ŚĀK. CH. 140,10.] *bhinnakaṇṭhadhvani*
@@ -489,7 +489,7 @@ Schol. zu [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://a
 схол. *jaganmitho bhinnamabhinnamīśvarāt*
 [PRAB. 53,10.] в сочетании с дополнением: *bhramabhinnaṃ tu jñānamatrocyate pramā* знание, отличное от заблуждения
 [BHĀṢĀP. 133,8.] *āṅbhinno nipātaḥ* частица, отличная от *āṅ*
-схол. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [4,6.](https://ashtadhyayi.com/sutraani/1/4/6) [NĪLAK. 160.] различный, тем самым преим. отклоняющийся от обычного, нормального: *bhinnavartman*, тем самым преим. тот, кто сошёл с верного пути
+схол. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [4,6.](https://ashtadhyayi.com/sutraani/1/4/6) [NĪLAK. 160.] различный, тем самым преим. отклоняющийся от обычного, нормального: *bhinnavartman*, тем самым преим. тот, кто сошел с верного пути
 [Spr. 1707.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1707) *bhinnacāritradarśana*
 [R. GORR. 2,118,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,118,7) ср. *nātibhinna* .
   <sub>attested</sub>
@@ -521,7 +521,7 @@ Schol.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32
 : *yauvanabhinnaśaiśava*
 [RAGH. 3,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,32) *puṣpoccayaḥ pallavabhaṅgabhinnaḥ*
 [KUMĀRAS. 3,61.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,61)
-[ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* v. l. вместо *bhagna)*, тем самым преим. застрявший, прилипший (= *lagna*
+[ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* v. l. вм. *bhagna)*, тем самым преим. застрявший, прилипший (= *lagna*
 схол.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* схол.) *kuṅkumaṃ kāpi kaṇṭhe* висящий на, прилипший
 [KUVALAY. 174,a,4.] ср. *bhinnāñjana* .
   <sub>attested</sub>
@@ -551,7 +551,7 @@ Schol.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32
 **caus-2)** — 2) theilen: *ṣoḍaśabheditāḥ* sechszehnfach getheilt, in 16 Arten zerfallend
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Könnte auch _adj._ von *ṣoḍaśa — bheda* sein.
 
-- **RU:** — 2) делить: *ṣoḍaśabheditāḥ* разделённый на шестнадцать частей, распадающийся на 16 видов
+- **RU:** — 2) делить: *ṣoḍaśabheditāḥ* разделенный на шестнадцать частей, распадающийся на 16 видов
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Могло бы также быть _adj._ от *ṣoḍaśa — bheda*.
   <sub>attested</sub>
 
@@ -642,7 +642,7 @@ Sch.
 - **RU:** — *anu* раскалывать в длину —, разрезать вдоль: *taṃ dvedhānvabhinat*
 [ŚAT. BR. 1,6,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,17) pass. раскрываться: *anvabhidyetāṃ* (v. l. *nyabhi˚) karṇau*
 [BHĀG. P. 3,26,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,55) — *baddhaṃ setuṃ ko 'nubhindyāt*
-[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вместо *ko nu bhi˚* .
+[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вм. *ko nu bhi˚* .
   <sub>attested</sub>
 
 ## bhid
@@ -781,7 +781,7 @@ Sch.
 **1)** — *ni* pass. sich öffnen: *nyabhidyetāṃ* (v. l. für *anubhi˚) karṇau*
 [BHĀG. P. 3,26,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,55)
 
-- **RU:** — *ni* pass. «раскрываться»: *nyabhidyetāṃ* (v. l. вместо *anubhi˚) karṇau*
+- **RU:** — *ni* pass. «раскрываться»: *nyabhidyetāṃ* (v. l. вм. *anubhi˚) karṇau*
 [BHĀG. P. 3,26,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,55)
   <sub>attested</sub>
 
@@ -1077,7 +1077,7 @@ Sch.
 **3)** — 3) *prabhinna* entstellt, verändert, verstimmt: *na tvāṃ prabhinnaṃ (= parājitaṃ* Schol.). *jānāmi*
 [MBH. 16,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.259)
 
-- **RU:** — 3) *prabhinna* искажённый, изменившийся, расстроенный: *na tvāṃ prabhinnaṃ (= parājitaṃ* схол.). *jānāmi*
+- **RU:** — 3) *prabhinna* искаженный, изменившийся, расстроенный: *na tvāṃ prabhinnaṃ (= parājitaṃ* схол.). *jānāmi*
 [MBH. 16,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.259)
   <sub>attested</sub>
 
@@ -1085,7 +1085,7 @@ Sch.
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,8)
 
-- **RU:** — 4) *prabhinnāñjana* так преим. *bhinnāñjana* глазная мазь, растёртая с маслом
+- **RU:** — 4) *prabhinnāñjana* так преим. *bhinnāñjana* глазная мазь, растертая с маслом
 [ṚT. 2,2.]
 [PAÑCAR. 4,6,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,8)
   <sub>attested</sub>
@@ -1144,7 +1144,7 @@ Sch.
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22)
 [ŚIŚ. 9,58. 10,35.]
 
-- **RU:** — 3) выражать своё недовольство кем-либо (acc.)
+- **RU:** — 3) выражать свое недовольство кем-либо (acc.)
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22)
 [ŚIŚ. 9,58. 10,35.]
   <sub>attested</sub>
@@ -1272,7 +1272,7 @@ Sch.
 
 - **RU:** — 5) переубеждать, склонять к перемене взглядов: *vibhetsyati manāṃsyeṣām*
 [MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
-[BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубеждённый, переменивший взгляды
+[BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубежденный, переменивший взгляды
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) ставший неверным, изменивший
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
   <sub>attested</sub>
@@ -1442,7 +1442,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
-- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чём-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь неё. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вместо *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
+- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
   <sub>attested</sub>
 
 **2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
@@ -1452,7 +1452,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **3)** — 3〉 spalten, so v. a. theilen; Pass. getheilt werden, sich theilen. *bhinna* getheilt auch so v. a. nicht ganz, weniger als ein.
 
-- **RU:** 3〉 расщеплять, то есть преим. делить; Pass. быть разделённым, делиться. *bhinna* разделённый, также в значении преим. неполный, меньше одного.
+- **RU:** 3〉 расщеплять, то есть преим. делить; Pass. быть разделенным, делиться. *bhinna* разделенный, также в знач. преим. неполный, меньше одного.
   <sub>attested</sub>
 
 **4)** — 4〉 spalten, so v. a. öffen; blühen machen; Pass. sich öffnen, freien Lauf haben (Wasser), sich ergiessen, über die Ufer treten. *bhinna* geöffnet, aufgeblüht. *˚karaṭa* oder *˚gaṇḍakaraṭa* _Adj._ von einem Elephanten, dessen Schläfen zur Brunstzeit sich geöffnet haben und fliessen; auch *bhinna* allein in derselben Bed.
@@ -1492,17 +1492,17 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **11)** — 11〉 ändern, Pass. sich ändern. *bhinna* verändert, entstellt.
 
-- **RU:** 11〉 изменять; Pass. изменяться. *bhinna* изменённый, искажённый.
+- **RU:** 11〉 изменять; Pass. изменяться. *bhinna* измененный, искаженный.
   <sub>attested</sub>
 
 **12)** — 12〉 unterscheiden, einen Unterschied machen; Pass. verschieden sein, sich unterscheiden von (Abl.). *bhinna* verschieden, — von (Abl. oder im Comp. vorangehend); verschieden auch so v. a. vom Gewöhnlichen —, vom Normalen abweichend.
 
-- **RU:** 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в значении преим. отклоняющийся от обычного, от нормального.
+- **RU:** 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в знач. преим. отклоняющийся от обычного, от нормального.
   <sub>attested</sub>
 
 **13)** — 13〉 *bhinna* vermischt —, verbunden mit (Instr. oder im Comp. vorangehend), hängend —, haftend —, hängen geblieben an (Loc. oder im Comp. vorangehend).
 
-- **RU:** 13〉 *bhinna* смешанный, соединённый с (Instr. или в Comp. предшествующем), подвешенный, прикреплённый, застрявший на (Loc. или в Comp. предшествующем).
+- **RU:** 13〉 *bhinna* смешанный, соединенный с (Instr. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*
@@ -1522,7 +1522,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **caus-3)** — 3〉 theilen. *ṣoḍaśabhedita* sechzehnfach getheilt, in 46 Arten zerfallend.
 
-- **RU:** 3〉 делить. *ṣoḍaśabhedita* разделённый на шестнадцать частей, распадающийся на 46 видов.
+- **RU:** 3〉 делить. *ṣoḍaśabhedita* разделенный на шестнадцать частей, распадающийся на 46 видов.
   <sub>attested</sub>
 
 **caus-4)** — 4〉 entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite herüberziehen, verführen.
@@ -1562,7 +1562,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) fehlerhaft für *ko nu bhi˚*.
 
-- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вместо *ko nu bhi˚*.
+- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вм. *ko nu bhi˚*.
   <sub>attested</sub>
 
 **pref-abhi)** — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
@@ -1582,7 +1582,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-ni)** — Mit *ava* zerspalten, durchbohren. *avabhinna* durchbohrt, zersprungen.
 
-- **RU:** С *ava* раскалывать, пронзать насквозь. *avabhinna* пронзённый, расколовшийся.
+- **RU:** С *ava* раскалывать, пронзать насквозь. *avabhinna* пронзенный, расколовшийся.
   <sub>attested</sub>
 
 **pref-pari)** — Mit *ā* zerschlitzen, zerreissen.
@@ -1627,7 +1627,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-pra-5b)** — b〉 versehen —, ausgestattet mit (im Comp. vorangehend) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
 
-- **RU:** b〉 снабжённый, наделённый (в Comp. предшествующем) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
+- **RU:** b〉 снабженный, наделенный (в Comp. предшествующем) [BHĀG. P. 3,2,5](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5). [PAÑCAR. 4,6,7](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7).
   <sub>attested</sub>
 
 **pref-prati-pra)** — Mit *prod*, *prodbhinna* hervorgeschossen, hervorgebrochen.
@@ -1717,7 +1717,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-sam-2)** — 2〉 verändert, entstellt.
 
-- **RU:** 2〉 изменённый, искажённый.
+- **RU:** 2〉 измененный, искаженный.
   <sub>attested</sub>
 
 **pref-upa-header)** — Mit *pra*
@@ -1762,7 +1762,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-upa-4d)** — d〉 entstellt, verändert, verstimmt.
 
-- **RU:** d〉 искажённый, изменённый, расстроенный.
+- **RU:** d〉 искаженный, измененный, расстроенный.
   <sub>attested</sub>
 
 **pref-upa-note)** — *Caus. vom Intens. *prabebhidayya*.
@@ -1797,7 +1797,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-prati-3)** — 3〉 seinen Unwillen gegen Jmd (Acc.) an den Tag legen.
 
-- **RU:** 3〉 выражать своё неудовольствие в адрес кого-либо (Acc.).
+- **RU:** 3〉 выражать свое неудовольствие в адрес кого-либо (Acc.).
   <sub>attested</sub>
 
 **pref-aa2-header)** — Mit *vi*
@@ -1807,12 +1807,12 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-aa2-1)** — 1〉 durchbohren, zerspalten, zerbrechen; stechen (von einem Insecte). Einen Himmelskörper spalten, so v. a. durch ihn gehen. Pass. und ausnahmsweise Act. zerbrechen, auseinanderbersten. *vibhinna* durchbohrt u. s. w.
 
-- **RU:** 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть преим. проходить сквозь него. Pass. и в виде исключения Act. ломаться, разламываться. *vibhinna* пронзённый и т.д.
+- **RU:** 1〉 пронзать, раскалывать, ломать; жалить (о насекомом). Небесное тело «раскалывать», то есть преим. проходить сквозь него. Pass. и в виде исключения Act. ломаться, разламываться. *vibhinna* пронзенный и т.д.
   <sub>attested</sub>
 
 **pref-aa2-2)** — 2〉 brechen, so v. a. zu Nichte machen. *vibhinna* zu N. gemacht.
 
-- **RU:** 2〉 нарушать, то есть преим. уничтожать. *vibhinna* превращённый в имя.
+- **RU:** 2〉 нарушать, то есть преим. уничтожать. *vibhinna* превращенный в имя.
   <sub>attested</sub>
 
 **pref-aa2-3)** — 3〉 lösen, auseinandermachen.
@@ -1827,12 +1827,12 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-aa2-5)** — 5〉 umstimmen, Pass. eine Umstimmung erfahren. *vibhinna* umgestimmt, untreu geworden.
 
-- **RU:** 5〉 переубеждать, переманивать; Pass. подвергаться переубеждению. *vibhinna* переубеждённый, ставший неверным.
+- **RU:** 5〉 переубеждать, переманивать; Pass. подвергаться переубеждению. *vibhinna* переубежденный, ставший неверным.
   <sub>attested</sub>
 
 **pref-aa2-6)** — 6〉 Pass. sich ändern, eine Veränderung erfahren. *vibhinna* verändert, entstellt.
 
-- **RU:** 6〉 Pass. изменяться, претерпевать изменение. *vibhinna* изменённый, искажённый.
+- **RU:** 6〉 Pass. изменяться, претерпевать изменение. *vibhinna* измененный, искаженный.
   <sub>attested</sub>
 
 **pref-aa2-7-header)** — 7〉 *vibhinna*
@@ -1852,7 +1852,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-aa2-7c)** — c〉 getrennt in *a˚* ([Nachtr. 4]).
 
-- **RU:** c〉 разделённый в *a˚* ([Nachtr. 4]).
+- **RU:** c〉 разделенный в *a˚* ([Nachtr. 4]).
   <sub>attested</sub>
 
 **pref-aa2-7d)** — d〉 uneins, in Uneinigkeit lebend.
@@ -1912,7 +1912,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **pref-sam-3b)** — 3〉 zusammenbringen, in Berührung bringen, verbinden, vermengen. *saṃbhinna* zusammengezogen (die Glieder einer Schildkröte), in Berührung gekommen, verbunden, dicht anliegend, compact.
 
-- **RU:** 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. *saṃbhinna* сжатый (члены черепахи), соприкоснувшийся, соединённый, плотно прилегающий, компактный.
+- **RU:** 3〉 сводить вместе, приводить в соприкосновение, соединять, смешивать. *saṃbhinna* сжатый (члены черепахи), соприкоснувшийся, соединенный, плотно прилегающий, компактный.
   <sub>attested</sub>
 
 **pref-sam-4b)** — 4〉 sich zu Jmd (Acc.) gesellen.
@@ -2051,7 +2051,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **sch-1-vini)** Mit ˚vini, vinibhinna [S II,267,18] Druckfehler für vinirbhinna.
 
-- **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вместо vinirbhinna.
+- **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вм. vinirbhinna.
   <sub>attested</sub>
 
 **sch-2-unterschied)** 2. bhid 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht.
@@ -2158,7 +2158,7 @@ Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
 [SARVADARŚANAS. 2,14.]
 
 - **RU:** — *sam*
-2) *saṃbhinna* соединённый; от этого nom. abstr. *˚tā* _f._
+2) *saṃbhinna* соединенный; от этого nom. abstr. *˚tā* _f._
 [SARVADARŚANAS. 2,14.]
   <sub>attested</sub>
 
@@ -2183,9 +2183,9 @@ Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
 
 **second-prefix-section)** — *vi*
  7) *śrutayo vibhinnāḥ* sich widersprechend
-[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505)
+[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505 "Spr. (II) 2505: tarko 'pratiṣṭhaḥ śrutayo vibhinnā naiko muniryasya mataṃ pramāṇam | dharmasya tattvaṃ nihitaṃ guhāyāṃ mahājano yena gataḥ sa panthāḥ || — Der Speculation fehlt das Fundament, die heiligen Schriften widersprechen sich, keines einzigen Weisen Meinung gilt als Autorität, das wahre Wesen des Rechtes liegt im Herzen verborgen, der von der Menge betretene Weg is…")
 
 - **RU:** — *vi*
 7) *śrutayo vibhinnāḥ* противоречивый
-[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505)
+[Spr. (II) 2505.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2505 "Spr. (II) 2505: tarko 'pratiṣṭhaḥ śrutayo vibhinnā naiko muniryasya mataṃ pramāṇam | dharmasya tattvaṃ nihitaṃ guhāyāṃ mahājano yena gataḥ sa panthāḥ || — Der Speculation fehlt das Fundament, die heiligen Schriften widersprechen sich, keines einzigen Weisen Meinung gilt als Autorität, das wahre Wesen des Rechtes liegt im Herzen verborgen, der von der Menge betretene Weg is…")
   <sub>attested</sub>

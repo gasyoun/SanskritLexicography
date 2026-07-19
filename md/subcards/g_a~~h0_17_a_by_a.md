@@ -12,7 +12,7 @@
 
 - **RU:** — *abhyā*
  1) прийти, приблизиться, прийти к: *vatsamicchantī manasābhyāgāt*
-[ṚV. 1,164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) *(tasya) pukkaso 'bhyāgāt* подошёл к нему
+[ṚV. 1,164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) *(tasya) pukkaso 'bhyāgāt* подошел к нему
 [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *kṛṣṇasya nārado 'bhyāgādāśramam*
 [1,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,32) постигнуть кого-либо, обрушиться на: *tvāṃ cedvyasanamabhyāgādidam*
 [MBH. 3,1120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1120)

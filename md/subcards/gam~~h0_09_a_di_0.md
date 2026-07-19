@@ -30,7 +30,7 @@
 [R. 4,51,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,36) *śokasya tasyāntaṃ nādhigacchati*
 [5,25,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,55) [PAÑCAT. II,195.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,195) pass.: *guṇālayo 'pyasanmantrī nṛpatirnādhigamyate*
 [I,428.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,428) *kaccinmitrāṇi bhajate mitrairvāpyadhigamyate*
-[R. 5,33,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,31) *adhigatamakhilasakhībhiridaṃ tava vapuḥ* окружённый, обступленный
+[R. 5,33,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,31) *adhigatamakhilasakhībhiridaṃ tava vapuḥ* окруженный, обступленный
 [GĪT. 11,7.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,7)
   <sub>attested</sub>
 
@@ -162,7 +162,7 @@ dazu gelangen: *saṃsāram*
 [GĪT. 11,26.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,26) *bhartāram* выйти замуж, взять себе мужа: *adīyamānā bhartāramadhigacchedyadi svayam*
 [M. 9,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,91)
 [MBH. 1,6427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6427)
-[BENF. Chr. 22,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) взять в жёны: *kulāttu tava — kanyāṃ so 'dhigamiṣyati*
+[BENF. Chr. 22,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) взять в жены: *kulāttu tava — kanyāṃ so 'dhigamiṣyati*
 [MBH. 13,2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2913) *yathāvidhyadhigamyainām*
 [M. 9,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,70) *kṛtadāro 'parāndārānbhikṣitvā yo 'dhigacchati*
 [11,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,5) стать причастным положению, состоянию, отношениюи т.д.,
@@ -217,7 +217,7 @@ dazu gelangen: *saṃsāram*
 - **RU:** — 7) учить, изучать, исследовать, читать (ср. *i* с *adhi): akṣarasamāmnāyamadhigamya maheśvarāt*
 [ŚIKṢĀ 57.] *tebhyo 'dhigacchedvinayam*
 [M. 7,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,39) *yadā kiṃcitkiṃcidbudhajanasakāśādadhigatam*
-[BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *adhijagmuryathā vedāṃstapasā brahma cāriṇaḥ . tathā sa tapasopetaḥ sarvāṇyastrāṇyavāpa ha* (то есть и здесь ещё не забыто основное значение urspr. знач. достигать, получать) ||
+[BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *adhijagmuryathā vedāṃstapasā brahma cāriṇaḥ . tathā sa tapasopetaḥ sarvāṇyastrāṇyavāpa ha* (то есть и здесь еще не забыто основное значение urspr. знач. достигать, получать) ||
 [MBH. 1,5074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5074) *vedārthānadhigacchecca śāstrāṇi vividhāni ca*
 [YĀJÑ. 1,99.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,99)
 [BHĀG. P. 1,15,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,30) *vaiśyairapi ca śrotavyo 'dhigamyaśca*

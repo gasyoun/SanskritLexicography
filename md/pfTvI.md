@@ -34,5 +34,5 @@ _PWG article — 1 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 
 **NWS-4)** *pṛthvīja* [Gen] Subst m ‘earth-born’, a tree. A(MW) . N of the planet Mars. A(MW) . n a species of salt. Lex(MW) ; gaḍalavaṇa . MW : 647 (s.v. pṛthvī )
 
-- **RU:** *pṛthvīja* [Gen] сущ. m. «земнорождённый», название дерева. A(MW) . название планеты Марс. A(MW) . n. вид соли. Lex(MW) ; gaḍalavaṇa . MW : 647 (s.v. pṛthvī )
+- **RU:** *pṛthvīja* [Gen] сущ. m. «земнорожденный», название дерева. A(MW) . название планеты Марс. A(MW) . n. вид соли. Lex(MW) ; gaḍalavaṇa . MW : 647 (s.v. pṛthvī )
   <sub>mixed</sub>

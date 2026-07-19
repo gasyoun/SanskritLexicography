@@ -31,7 +31,7 @@
 [2720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2720) [R. 1,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,20) *sādhyāyāṃ vai vyajāyata*
 [HARIV. 11540.](https://sanskrit-lexicon-scans.github.io/hariv?11540) *vijajñivān . hrasvo 'timātraḥ puruṣaḥ*
 [HARIV. 308.](https://sanskrit-lexicon-scans.github.io/hariv?308) *tasya — mūrghni dhūmo vyajāyata*
-[R. 1,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,8) *vijāta = jāta* рождённый
+[R. 1,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,8) *vijāta = jāta* рожденный
 [H. an. 3,301.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,301)
 [MBH. 12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) *duḥkhānmumūrṣā me vyajāyata*
 [2,1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1899) *mānātkrodho vyajāyata*

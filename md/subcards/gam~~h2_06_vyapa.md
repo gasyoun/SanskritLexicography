@@ -10,6 +10,6 @@
 
 - **RU:** — *vyapa*, *vyapagatalepa* отступивший, исчезнувший
 [SARVADARŚANAS. 40,19.] протекать, миновать (о времени): *tasminvyapagate 'hani*
-[KATHĀS. 109,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,59) стк. 5. сл. вычеркни «От звёзд» и т.д. до конца, так как в указанном месте (
+[KATHĀS. 109,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,59) стк. 5. сл. вычеркни «От звезд» и т.д. до конца, так как в указанном месте (
 [40,4](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,4)) верное чтение — *vyayagatayoḥ* .
   <sub>attested</sub>

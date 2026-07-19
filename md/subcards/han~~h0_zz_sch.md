@@ -10,26 +10,26 @@
 
 **mit-vyati)** — Mit vyati, *gegenseitig töten, [H 43,8.]
 
-- **RU:** — Mit vyati, *взаимно убивать, [H 43,8.]
+- **RU:** — С vyati, *взаимно убивать, [H 43,8.]
   <sub>attested</sub>
 
 **mit-samava)** — Mit *samava, aus dem Wege räumen, wegschaffen, [Mahāvy. 126.]
 
-- **RU:** — Mit *samava, устранять, убирать с дороги, [Mahāvy. 126.]
+- **RU:** — С *samava, устранять, убирать с дороги, [Mahāvy. 126.]
   <sub>attested</sub>
 
 **mit-ani)** — Mit ˚āni, vernichten, 
 
  [H 50,45.]
 
-- **RU:** — Mit ˚āni, уничтожать, 
+- **RU:** — С ˚āni, уничтожать, 
 
  [H 50,45.]
   <sub>attested</sub>
 
 **mit-nipra-1)** — Mit *nipra, abschlagen, [Śrīk. 18,27];
 
-- **RU:** — Mit *nipra, отбивать, [Śrīk. 18,27];
+- **RU:** — С *nipra, отбивать, [Śrīk. 18,27];
   <sub>attested</sub>
 
 **mit-nipra-2)** töten, [Uttarar. V,31]d ed. [Lakṣmaṇasūri]. {part=,seq=27776,type=,n=1}

@@ -42,7 +42,7 @@ Sch. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) Sch. zu [JAIM. 1
 
 - **RU:** — 4) выходить за пределы (acc.), удаляться от: *sahasrasaṃkhyām*
 [KIR. 5,34.] *anye 'pi kṛto 'bhidheyaṃ vyabhicaranti*
-схол. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) схол. zu [JAIM. 1,1,5.]
+схол. к [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) схол. к [JAIM. 1,1,5.]
   <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *vyabhicāra* u. s. w.

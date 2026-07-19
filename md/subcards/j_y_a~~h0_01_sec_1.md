@@ -7,7 +7,7 @@
 [P. 7,2,27.](https://ashtadhyayi.com/sutraani/7/2/27)
 [VOP. 26,114.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,114)
 
-- **RU:** — caus. *jñāpayati* und *jñapayati*; partic. *jñapta* und *jñapita*
+- **RU:** — caus. *jñāpayati* и *jñapayati*; partic. *jñapta* и *jñapita*
 [P. 7,2,27.](https://ashtadhyayi.com/sutraani/7/2/27)
 [VOP. 26,114.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,114)
   <sub>attested</sub>
@@ -34,13 +34,13 @@ P. verbrannt wären
 [MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) med. Jmd (acc.) angehen, bitten, zusprechen: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
 [3,8762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8762) *upamantrayate sa hiṃkāro jñapayate sa prastāvaḥ striyā saha śete sa udgīthaḥ*
 
-- **RU:** [ĀŚV. GṚHY. 4,7.] давать знать о чём-либо (acc.), сообщать, возвещать: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
+- **RU:** [ĀŚV. GṚHY. 4,7.] давать знать о чем-либо (acc.), сообщать, возвещать: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
 [MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) *parīkṣya jñāpayannarthānna paścātparitapyate*
 [12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) *utpātena jñāpyamāne*
 Вартт. 3 zu [P. 2,3,13.](https://ashtadhyayi.com/sutraani/2/3/13) учить чему-либо (acc.): *etajjñāpayatyācāryaḥ, kiṃ jñāpyate*
-[PAT.] zu [P. 2,4,66.](https://ashtadhyayi.com/sutraani/2/4/66) [4,1,133.](https://ashtadhyayi.com/sutraani/4/1/133)
+[PAT.] к [P. 2,4,66.](https://ashtadhyayi.com/sutraani/2/4/66) [4,1,133.](https://ashtadhyayi.com/sutraani/4/1/133)
 Вартт. 1 zu [P. 4,1,4.](https://ashtadhyayi.com/sutraani/4/1/4) *jñāpita*
-схол. zu [JAIM. 1,1,2.] знакомить кого-либо (acc.) с чем-либо (acc.): *śrāvitastvaṃ mayā guhyaṃ jñāpitaśca sanātanam . dharmam*
+схол. к [JAIM. 1,1,2.] знакомить кого-либо (acc.) с чем-либо (acc.): *śrāvitastvaṃ mayā guhyaṃ jñāpitaśca sanātanam . dharmam*
 [MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
 [HARIV. 10038.](https://sanskrit-lexicon-scans.github.io/hariv?10038) сообщать кому-либо (gen.) о ком-либо (acc.): *tataste jñāpayāmāsurdhṛtarāṣṭrasya nāgarāḥ . pāṇḍavānagninā dagdhān* они сообщили Дхрит., что P. сгорели
 [MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) мед. обращаться к кому-либо (acc.), просить, увещевать: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
@@ -56,7 +56,7 @@ P. verbrannt wären
 [P. 1,4,34.](https://ashtadhyayi.com/sutraani/1/4/34)
 
 - **RU:** [CHĀND. UP. 2,13,1.] По [DHĀTUP. 33,59](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) = *niyoga*, по
-[32,80.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32) [19,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) = *māraṇa, toṣaṇa* und *niśāna (niśāmana)*; ср. u. *ā* und *sam* . — desid. от caus. *jijñapayiṣati* und *jñīpsati*
+[32,80.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32) [19,50](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) = *māraṇa, toṣaṇa* и *niśāna (niśāmana)*; ср. u. *ā* и *sam* . — desid. от caus. *jijñapayiṣati* и *jñīpsati*
 [P. 7,2,49.](https://ashtadhyayi.com/sutraani/7/2/49) [4,55.](https://ashtadhyayi.com/sutraani/7/4/55) [VOP. 19,8—10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,8)
 *jijñāpayiṣati*
 [SIDDH. K. 155,a,9.]

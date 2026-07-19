@@ -10,7 +10,7 @@
 [MED. t. 226.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,226)
 
 - **RU:** — 9) мед. допускать, признавать что-либо: *na samādhatte* als пояснение von *nābhinandati*
-[KULL.] zu [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *samāhita = saṃśruta, pratijñāta*
+[KULL.] к [M. 8,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,54) *samāhita = saṃśruta, pratijñāta*
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 [H. an. 4,128.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?4,128)
 [MED. t. 226.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,226)

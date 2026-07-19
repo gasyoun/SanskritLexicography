@@ -33,7 +33,7 @@
 [R. 2,36,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,29)
 [BHĀG. P. 7,7,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,36)
 
-- **RU:** — *nis* «выжигать, сжигать, уничтожать/поедать огнём, полностью уничтожать»: *śītāḥ santo hṛdayaṃ nirdahanti*
+- **RU:** — *nis* «выжигать, сжигать, уничтожать/поедать огнем, полностью уничтожать»: *śītāḥ santo hṛdayaṃ nirdahanti*
 [ṚV. 10,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.09) *agniradbhyo niradahajjarūtham*
 [80,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.080.html#rv10.080.03) [103,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.103.html#rv10.103.12) [AV. 7,108,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.108.html#av07.108.02) [9,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.04) [5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.05) [31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.31) [TS. 2,2,5,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,5,2) *tasyākṣiṇī nirdadāha*
 [ŚAT. BR. 1,7,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,6) *idaṃ vā asāvāditya udyanneva yathāyamagnirnirdahedevamoṣadhīrannādyaṃ *

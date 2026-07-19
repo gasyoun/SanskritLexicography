@@ -90,7 +90,7 @@
 **3)** — 3) von Etwas (abl.) frei kommen, befreit werden von: *nirgato gadāt*
 [AK. 2,6,2,8.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,8)
 
-- **RU:** — 3) освободиться от чего-л. (abl.), быть освобождённым от: *nirgato gadāt*
+- **RU:** — 3) освободиться от чего-л. (abl.), быть освобожденным от: *nirgato gadāt*
 [AK. 2,6,2,8.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,8)
   <sub>attested</sub>
 

@@ -24,7 +24,7 @@
 **5)** — 5) *taṃ saṃgamya* nachdem er mit ihm zusammengekommen war
 [BHĀG. P. 10,68,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,19) — caus.
 
-- **RU:** — 5) *taṃ saṃgamya* после того как он сошёлся с ним
+- **RU:** — 5) *taṃ saṃgamya* после того как он сошелся с ним
 [BHĀG. P. 10,68,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,19) — caus.
 
 **1 (доп.))** 1) verbinden, construiren: *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*

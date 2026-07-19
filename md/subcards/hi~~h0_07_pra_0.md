@@ -117,7 +117,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [KAUŚ. 75.]
 [KAUṢ. UP. 2,3.] *tasmātpraheṣyāmyadya tvāṃ (pṛthe) hīnaḥ prajananātsvayam . sadṛśācchreyaso vā tvaṃ viddhyapatyam* посылать (к другому мужу)
 [MBH. 1,4676.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4676) *dūtān*
-[2,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1244) [4,281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.281) *kuśalārthaṃ tava* послать кого-л., чтобы осведомиться о твоём здоровье
+[2,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1244) [4,281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.281) *kuśalārthaṃ tava* послать кого-л., чтобы осведомиться о твоем здоровье
 [R. 1,17,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,38) ([26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,26) [GORR.]). *cāram*
 [KATHĀS. 16,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,57) [17,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,55) [61.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,61) [41,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?41,20) [44,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,172) [48,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,103) [57,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,125) [120,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,98) *praheṣyāmyarcitāmimām* отпускать
 [122,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?122,50) [RĀJA-TAR. 5,56.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,56) [302.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,302) *prāhaiṣṭām*
@@ -168,10 +168,10 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
   <sub>attested</sub>
 
 **8)** — 8) = 2. *hā* mit *pra* verlassen, im Stich lassen: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
-[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151) ([BHĀG. P.]).
+[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151 "Spr. (II) 4151: puṣṇāti yānadharmeṇa svaṣuddhyā tamapaṇḍitam | te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ || — Den Unverständigen, der, in der Meinung, dass es die seinigen seien, Leben, Reichthümer, Söhne und Anderes auf unrechte Weise fördert, lassen diese im Stich, bevor er noch sein Ziel erreicht hat.") ([BHĀG. P.]).
 
 - **RU:** — 8) = 2. *hā* с *pra* оставлять, бросать: *tamapaṇḍitam . te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ*
-[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151) ([BHĀG. P.]).
+[Spr. (II) 4151](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4151 "Spr. (II) 4151: puṣṇāti yānadharmeṇa svaṣuddhyā tamapaṇḍitam | te 'kṛtārthaṃ prahiṇvanti prāṇā rāyaḥ sutādayaḥ || — Den Unverständigen, der, in der Meinung, dass es die seinigen seien, Leben, Reichthümer, Söhne und Anderes auf unrechte Weise fördert, lassen diese im Stich, bevor er noch sein Ziel erreicht hat.") ([BHĀG. P.]).
   <sub>attested</sub>
 
 **9)** — 9) partic. *prahita*
@@ -184,7 +184,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [7,2,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,56) *daiva˚*
 [8,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,14) [9,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,29) [22,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,16)
 
-- **RU:** a) погнанный, воодушевлённый: *pārtha˚*
+- **RU:** a) погнанный, воодушевленный: *pārtha˚*
 [BHĀG. P. 3,1,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,9) *kāla˚*
 [7,2,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,56) *daiva˚*
 [8,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,14) [9,6,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,29) [22,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,16)
@@ -215,7 +215,7 @@ vertreiben, verjagen zu Jmd (dat.), zu — in Etwas (acc.): *kravyādam*
 [MĀRK. P. 134,45.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,45)
 [BHĀG. P. 3,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,18) *sādhuṣu prahitaṃ tejaḥ prahartuḥ kurute 'śivam*
 [9,4,70.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,70) *vegena prahitaṃ bāhum* так преим. с силой вытянутый
-[MBH. 1,6000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6000) *prahitanakhareṣvaṅgakeṣu* так преим. вонзённый, вбитый
+[MBH. 1,6000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6000) *prahitanakhareṣvaṅgakeṣu* так преим. вонзенный, вбитый
 [SĀH. D. 71,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?71,1) брошенный, направленный о глазах, взглядах
 [MEGH. 72.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?72)
 [RAGH. 2,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,27) [13,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,42) [15,84.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,84)

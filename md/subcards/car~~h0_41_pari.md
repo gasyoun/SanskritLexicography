@@ -53,7 +53,7 @@
 [YAJÑAD. 2,46] hat
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
 
-- **RU:** — 2) прислуживать кому-либо, служить, заботиться; всецело посвящать своё попечение кому-либо или чему-либо, всецело отдаваться кому-либо или чему-либо; с acc.: *(agnim) sujātāsaḥ pari caranti vīrāḥ*
+- **RU:** — 2) прислуживать кому-либо, служить, заботиться; всецело посвящать свое попечение кому-либо или чему-либо, всецело отдаваться кому-либо или чему-либо; с acc.: *(agnim) sujātāsaḥ pari caranti vīrāḥ*
 [ṚV. 7,1,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.15) [3,7,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.02) *adha smā te pari carantyajara śruṣṭīvāno na*
 [1,127,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.09) *vaivāhyamagnim*
 [ŚĀṄKH. GṚHY. 1,17.] *gṛhyam*
@@ -74,7 +74,7 @@
 [BHĀG. P. 4,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,20) *nityaṃ śastraṃ paricaran*
 [R. 3,13,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,19) *āmraṃ chittvā kuṭhāreṇa nimbaṃ paricarettu yaḥ*
 [2,35,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,14) *paricarya tathā vedam*
-[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) Вместо *bhavatoḥ paricarya*
+[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) Вм. *bhavatoḥ paricarya*
 [YAJÑAD. 2,46] имеет
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
   <sub>attested</sub>

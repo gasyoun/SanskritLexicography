@@ -28,7 +28,7 @@ III. *iṣ* _f._ im sg. in allen casus, im pl. nur im nom. acc. (*iṣas*, selte
 - **RU:** 1) напиток, услада, подкрепление
 [NAIGH. 1,7.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?1,7)
 [NIR. 6,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?6,26) [11,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,14) *iṣamūrjaṃ sukṣitiṃ sumnamaśyuḥ*
-[ṚV. 2,19,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.08) [10,20,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.10) В этом сочетании с *ūrj* слово употребляется особенно часто в значении напиток и пища, но одновременно сила и сок.
+[ṚV. 2,19,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.08) [10,20,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.10) В этом сочетании с *ūrj* слово употребляется особенно часто в знач. напиток и пища, но одновременно сила и сок.
 [NIR. 11,29.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,29)
 [VS. 1,1.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,1) [12,105.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,105)
 [AV. 4,39,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.039.html#av04.039.02) *vidādūrjaṃ śatakraturvidādiṣam*

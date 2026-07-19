@@ -10,7 +10,7 @@
 
 **PW-1)** — 1〉 Act. Med. in Bewegung setzen, antreiben, anfeuern, reizen. Hierher wohl auch *hayant* Partic. Med. sich in Bewegung setzen, angefeuert werden u. s. w., sich beeifern, beeilen.
 
-- **RU:** — 1〉 Act. Med. приводить в движение, погонять, воодушевлять, побуждать. Сюда же, вероятно, *hayant* Partic. Med. приходить в движение, быть воодушевлённым и т.д., усердствовать, торопиться.
+- **RU:** — 1〉 Act. Med. приводить в движение, погонять, воодушевлять, побуждать. Сюда же, вероятно, *hayant* Partic. Med. приходить в движение, быть воодушевленным и т.д., усердствовать, торопиться.
   <sub>attested</sub>
 
 **PW-2)** — 2〉 veranlassen zu (Dat.).
@@ -55,7 +55,7 @@
 
 **PW-7a)** — a〉 getrieben, gespornt, im Lauf befindlich.
 
-- **RU:** — a〉 погнанный, подстёгнутый, несущийся.
+- **RU:** — a〉 погнанный, подстегнутый, несущийся.
   <sub>attested</sub>
 
 **PW-7b)** — b〉 angewiesen, aufgefordert.
@@ -80,27 +80,27 @@
 
 **PW-mit-apa)** — Mit *apa* abwerfen, sich befreien von (Acc.) [BHĀG. P.]
 
-- **RU:** — Mit *apa* сбрасывать, освобождаться от (Acc.) [BHĀG. P.]
+- **RU:** — С *apa* сбрасывать, освобождаться от (Acc.) [BHĀG. P.]
   <sub>attested</sub>
 
 **PW-mit-abhi)** — Mit *api* herausfordern zu (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
 
-- **RU:** — Mit *api* вызывать на (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
+- **RU:** — С *api* вызывать на (Loc.) [ṚV. 10,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05).
   <sub>attested</sub>
 
 **PW-mit-abhi2)** — Mit *ā* Med. herbeischaffen.
 
-- **RU:** — Mit *ā* Med. доставлять.
+- **RU:** — С *ā* Med. доставлять.
   <sub>attested</sub>
 
 **PW-mit-ati)** — Mit *pari*, *parihinomi* hinbefördern, verbringen.
 
-- **RU:** — Mit *pari*, *parihinomi* переправлять, переводить.
+- **RU:** — С *pari*, *parihinomi* переправлять, переводить.
   <sub>attested</sub>
 
 **PW-mit-pra)** — Mit *pra*, *prahiṇoti*
 
-- **RU:** — Mit *pra*, *prahiṇoti*
+- **RU:** — С *pra*, *prahiṇoti*
   <sub>attested</sub>
 
 **PW-pra-1)** — 1〉 antreiben, anregen.
@@ -115,12 +115,12 @@
 
 **PW-pra-3)** — 3〉 schleudern, — auf (Dat. oder Loc.), den Blick richten auf (Acc.) [KĀD. 31,24 (56,5)].
 
-- **RU:** — 3〉 метать, — на (Dat. oder Loc.), взгляд направлять на (Acc.) [KĀD. 31,24 (56,5)].
+- **RU:** — 3〉 метать, — на (Dat. или Loc.), взгляд направлять на (Acc.) [KĀD. 31,24 (56,5)].
   <sub>attested</sub>
 
 **PW-pra-4)** — 4〉 absenden (Boten), entsenden, entlassen, weg schicken, vertreiben, absenden u. s. w. zu Jmd (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* nach oder an einen Ort (Acc. oder Acc. mit *prati*) um zu (Dat. oder Infin.).
 
-- **RU:** — 4〉 отправлять (гонца), снаряжать, отпускать, прогонять, посылать и т.д. к кому-л. (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* oder *pārśvam* в или к какому-л. месту (Acc. oder Acc. mit *prati*) чтобы (Dat. oder Infin.).
+- **RU:** — 4〉 отправлять (гонца), снаряжать, отпускать, прогонять, посылать и т.д. к кому-л. (Dat., Gen., Acc. mit *prati*) Gen. mit *antikam* или *pārśvam* в или к какому-л. месту (Acc. или Acc. mit *prati*) чтобы (Dat. или Infin.).
   <sub>attested</sub>
 
 **PW-pra-5)** — 5〉 herbei-, hinschaffen zu, liefern, Jmd (Dat.) Etwas zustellen, zukommen lassen.
@@ -140,7 +140,7 @@
 
 **PW-pra-8)** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) wohl fehlerhaft für *prajigāti* und *prajigātu*.
 
-- **RU:** — 8〉 *prajidhyati* und *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) вероятно ошибочно вместо *prajigāti* und *prajigātu*.
+- **RU:** — 8〉 *prajidhyati* и *prajighyatu* [AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) вероятно ошибочно вм. *prajigāti* и *prajigātu*.
   <sub>attested</sub>
 
 **PW-pra-9)** — 9〉 *prahita*
@@ -150,7 +150,7 @@
 
 **PW-pra-9a)** — a〉 angetrieben, angefeuert.
 
-- **RU:** — a〉 погнанный, воодушевлённый.
+- **RU:** — a〉 погнанный, воодушевленный.
   <sub>attested</sub>
 
 **PW-pra-9b)** — b〉 geschleudert, — auf (Loc.).
@@ -170,7 +170,7 @@
 
 **PW-pra-9e)** — e〉 eingestossen, eingegraben (Fingernagel).
 
-- **RU:** — e〉 вонзённый, вбитый (ноготь).
+- **RU:** — e〉 вонзенный, вбитый (ноготь).
   <sub>attested</sub>
 
 **PW-pra-9f)** — f〉 hingeschafft, zugestellt, zugesandt (Sachen).
@@ -205,27 +205,27 @@
 
 **PW-mit-anu)** — Mit *anupra*, *˚hita* nachgesandt.
 
-- **RU:** — Mit *anupra*, *˚hita* посланный вслед.
+- **RU:** — С *anupra*, *˚hita* посланный вслед.
   <sub>attested</sub>
 
 **PW-mit-aa)** — Mit *abhipra*, *abhiprahita* hergeschickt.
 
-- **RU:** — Mit *abhipra*, *abhiprahita* присланный.
+- **RU:** — С *abhipra*, *abhiprahita* присланный.
   <sub>attested</sub>
 
 **PW-mit-ni)** — Mit *upapra* hinsenden zu Jmd (Acc. oder Dat.).
 
-- **RU:** — Mit *upapra* посылать к кому-л. (Acc. oder Dat.).
+- **RU:** — С *upapra* посылать к кому-л. (Acc. или Dat.).
   <sub>attested</sub>
 
 **PW-mit-vi)** — Mit *pratipra* zurücksenden, — jagen.
 
-- **RU:** — Mit *pratipra* отсылать обратно, — прогонять.
+- **RU:** — С *pratipra* отсылать обратно, — прогонять.
   <sub>attested</sub>
 
 **PW-mit-sam)** — Mit *saṃpra*
 
-- **RU:** — Mit *saṃpra*
+- **RU:** — С *saṃpra*
   <sub>attested</sub>
 
 **PW-sam-1)** — 1〉 schleudern. *˚hita* geschleudert.
@@ -240,7 +240,7 @@
 
 **PW-mit-su)** — Mit *sam*
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
   <sub>attested</sub>
 
 **PW-su-1)** — 1〉 absenden.
@@ -270,7 +270,7 @@
 
 **PW2-3)** — 3〉 allerdings, jawohl, in der That. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) wohl — aber.
 
-- **RU:** — 3〉 конечно, да, в самом деле. *hi — tu* oder *hi — punar* ([BĀLAR. 296,4]) правда — но.
+- **RU:** — 3〉 конечно, да, в самом деле. *hi — tu* или *hi — punar* ([BĀLAR. 296,4]) правда — но.
   <sub>attested</sub>
 
 **PW2-4)** — 4〉 häufig blosser Versfüller, insbes. zwischen zwei Vocalen zur Entfernung des Hiatus oder zur Gewinnung einer Länge. Erscheint in einem und demselben Satze sogar doppelt.

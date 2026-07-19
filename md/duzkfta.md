@@ -1,6 +1,6 @@
 # duṣkṛta
 
-_PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
+_PWG article — 2 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 
 ## duṣkṛta
 
@@ -16,10 +16,30 @@ _PWG article — 1 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 
 **2)** — 2〉 übel angebracht.
 
-- **RU:** — 2〉 неуместно приложенный, дурно применённый.
+- **RU:** — 2〉 неуместно приложенный, дурно примененный.
   <sub>lexicographic</sub>
 
 **1)** **2.** *duṣkṛta* _n._ Uebelthat, Sünde.
 
 - **RU:** **2.** *duṣkṛta* _n._ злодеяние, грех.
   <sub>lexicographic</sub>
+
+## duṣkṛta
+
+`duzkfta~~h0_zz_nws00`
+
+
+**1. [NWS: Graßmann] duṣkṛtá, Ved.)** duṣkṛtá Ved , unsp > Adj mfn übel gethan. Subst n Uebelthat, Sünde. Graßmann 1873 (1996) : 619
+
+- **RU:** Adj. m.f.n. «дурно совершенный, дурно содеянный»; Subst. n. «злодеяние, грех». Graßmann 1873 (1996) : 619
+  <sub>lexicographic</sub>
+
+**2. [NWS: Hillebrandt] duṣkṛta, Ved.)** duṣkṛta Ved , unsp > misslungen. Hillebrandt 1885 : 94
+
+- **RU:** «неудавшийся». Hillebrandt 1885 : 94
+  <sub>lexicographic</sub>
+
+**3. [NWS: BHSD] duṣkṛtā, Buddh.)** duṣkṛtā Buddh , unsp > Subst f [rarely] misdeed, sin. MSV iii.109.21 ; duṣkṛta . BHSD : 267 (s.v. duṣkṛta )
+
+- **RU:** Subst. f. [редко] «злодеяние, грех». MSV iii.109.21 ; duṣkṛta . BHSD : 267 (s.v. duṣkṛta )
+  <sub>attested</sub>

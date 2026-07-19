@@ -17,7 +17,7 @@
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
 [BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (s. auch bes.), *cīrṇa* (s. auch bes.).
 
-- **RU:** *car*, *carati* (ep. auch мед.)
+- **RU:** *car*, *carati* (ep. также мед.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
@@ -29,7 +29,7 @@
 [R. 2,21,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,23)), *cartum*
 [MBH. 3,10069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10069) [13529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13529) [13,5612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5612)
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
-[BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (см. auch особ.), *cīrṇa* (см. auch особ.).
+[BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (см. также особ.), *cīrṇa* (см. также особ.).
   <sub>attested</sub>
 
 **1)** 1) sich regen, — bewegen, umherstreichen, gehen, fahren, wandern; von Menschen, Vieh, Wasser, Schiffen, Gestirnen u. s. w.: *ya āste yaśca carati*
@@ -171,7 +171,7 @@
 [MBH. 3,12927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12927)
 [HARIV. 4597.](https://sanskrit-lexicon-scans.github.io/hariv?4597) *śikhī carati bhacakram* пробегает всю эклиптику
 [VARĀH. BṚH. S. 46,15 (16).](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15) *tāṃ caransa nadīm* идя вдоль реки
-[HARIV. 3632.](https://sanskrit-lexicon-scans.github.io/hariv?3632) *padavīṃ caradhvam* идёт по пути, следует по следу
+[HARIV. 3632.](https://sanskrit-lexicon-scans.github.io/hariv?3632) *padavīṃ caradhvam* идет по пути, следует по следу
 [DRAUP. 6,19.] *rāgedvaṣaviyuktaistu viṣayānindriyaiścaran* следуя за объектами чувств
 [BHAG. 2,64.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,64)
   <sub>attested</sub>

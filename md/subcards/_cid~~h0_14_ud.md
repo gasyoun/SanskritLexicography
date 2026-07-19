@@ -50,7 +50,7 @@ Sch. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [MBH. 1,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.930) *arthena tu vihīnasya puruṣasyālpamedhasaḥ . ucchidyante kriyāḥ sarvā grīṣme kusarito yathā ..*
 [PAÑCAT. II,92.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,92) *tṛṇāni bhūmirudakaṃ vākcaturthī ca sūnṛtā . etānyapi satāṃ gehe nocchidyante kadā ca na ..*
 [M. 3,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,101) *aviveko yuktitaḥ śravaṇataśca na bādhyate nocchidyate*
-схол. zu [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
+схол. к [KAP. 1,60.] *anucchidyamānatayāvasthānāt*
 [SĀH. D. 75,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?75,2)
   <sub>attested</sub>
 

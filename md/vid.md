@@ -2,7 +2,7 @@
 
 _PWG article — 55 sub-card(s), 362 sense(s) · RU 362/362 · EN 0/362_
 
-## vid~~h0_00_pwg00
+## vid
 
 `vid~~h0_00_pwg00`
 
@@ -79,7 +79,7 @@ u. s. w. [VOP. 9,21.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?
 [ṚV. 5,30,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.030.html#rv05.030.03) *sa veda deva ānamaṃ devān*
 [4,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.008.html#rv04.008.03) [8,24,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.024.html#rv08.024.24) *veda vātasya vartanim*
 
-- **RU:** 1) познать что-либо или кого-либо, узнать, распознать; знать, постигать, разбираться в чём-либо, знать что-либо или кого-либо, иметь сведения о ком-либо (acc.); в более древнем языке с acc. и gen.: *vedadavidvān*
+- **RU:** 1) познать что-либо или кого-либо, узнать, распознать; знать, постигать, разбираться в чем-либо, знать что-либо или кого-либо, иметь сведения о ком-либо (acc.); в более древнем языке с acc. и gen.: *vedadavidvān*
 [ṚV. 5,30,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.030.html#rv05.030.03) *sa veda deva ānamaṃ devān*
 [4,8,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.008.html#rv04.008.03) [8,24,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.024.html#rv08.024.24) *veda vātasya vartanim*
   <sub>attested</sub>
@@ -161,7 +161,7 @@ u. s. w. [VOP. 9,21.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?
 **1)** [MBH. 3,1651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1651) [2246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2246) *ātmaiva hi nalaṃ veda* (st. dessen *vetti*
 [2904](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904)) *yā cāsya tadanantarā . nahi vai svāni liṅgāni nalaḥ śaṃsati karhicit ..*
 
-- **RU:** [MBH. 3,1651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1651) [2246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2246) *ātmaiva hi nalaṃ veda* (вместо чьё *vetti*
+- **RU:** [MBH. 3,1651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1651) [2246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2246) *ātmaiva hi nalaṃ veda* (вместо чье *vetti*
 [2904](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904)) *yā cāsya tadanantarā . nahi vai svāni liṅgāni nalaḥ śaṃsati karhicit ..*
   <sub>attested</sub>
 
@@ -170,10 +170,10 @@ u. s. w. [VOP. 9,21.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?
 - **RU:** [2905.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2905) [R. 4,10,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,36) (с знач. некоего perf.).
   <sub>attested</sub>
 
-**1)** [Spr. (II) 1319.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1319)
+**1)** [Spr. (II) 1319.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1319 "Spr. (II) 1319: uśanā veda yacchāstraṃ yacca veda bṛhaspatiḥ | strībuddhyā na tadviśiṣyeta tāstu rakṣyāḥ kathaṃ naraiḥ || — (502.) Die Lehre, welche Uśanas kennt, und die, welche Bṛhaspati kennt, stehen nicht höher als der Weiber Verstand: wie sollen nun diese von den Männern gehütet werden?")
 [RAGH. 2,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,43)
 
-- **RU:** [Spr. (II) 1319.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1319)
+- **RU:** [Spr. (II) 1319.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1319 "Spr. (II) 1319: uśanā veda yacchāstraṃ yacca veda bṛhaspatiḥ | strībuddhyā na tadviśiṣyeta tāstu rakṣyāḥ kathaṃ naraiḥ || — (502.) Die Lehre, welche Uśanas kennt, und die, welche Bṛhaspati kennt, stehen nicht höher als der Weiber Verstand: wie sollen nun diese von den Männern gehütet werden?")
 [RAGH. 2,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,43)
   <sub>attested</sub>
 
@@ -209,9 +209,9 @@ u. s. w. [VOP. 9,21.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?
 - **RU:** [Spr. 3016.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3016) *vidāṃ kurvantu*
   <sub>attested</sub>
 
-**1)** [Spr. (II) 1883.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1883) [SARVADARŚANAS. 118,22. fg.] [BHAṬṬ. 6,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,4) *vidyāt*
+**1)** [Spr. (II) 1883.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1883 "Spr. (II) 1883: kṛtvā karma yathādiṣṭaṃ pūrvakāryāvirodhi yaḥ | karotyabhyadhikaṃ kṛtyaṃ tamāhurdūtamuttamam || — Denjenigen Abgesandten, der nach Vollbringung des ihm aufgetragenen Geschältes noch ein anderes Geschäft, das dem ersten nicht widerstreitet, vollbringt, nennt man einen vorzüglichen Abgesandten.") [SARVADARŚANAS. 118,22. fg.] [BHAṬṬ. 6,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,4) *vidyāt*
 
-- **RU:** [Spr. (II) 1883.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1883) [SARVADARŚANAS. 118,22. fg.] [BHAṬṬ. 6,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,4) *vidyāt*
+- **RU:** [Spr. (II) 1883.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1883 "Spr. (II) 1883: kṛtvā karma yathādiṣṭaṃ pūrvakāryāvirodhi yaḥ | karotyabhyadhikaṃ kṛtyaṃ tamāhurdūtamuttamam || — Denjenigen Abgesandten, der nach Vollbringung des ihm aufgetragenen Geschältes noch ein anderes Geschäft, das dem ersten nicht widerstreitet, vollbringt, nennt man einen vorzüglichen Abgesandten.") [SARVADARŚANAS. 118,22. fg.] [BHAṬṬ. 6,4.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,4) *vidyāt*
   <sub>attested</sub>
 
 **1)** [M. 7,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,67) [8,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,56) [9,298.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,298) [332.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,332)
@@ -317,9 +317,9 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 - **RU:** [R. 2,105,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,8) с infin. понимать: *na vetti rāmaḥ paruṣāṇi bhāṣitum*
   <sub>attested</sub>
 
-**1)** [12,104.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,104) [RAGH. 6,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,30) [Spr. 1558.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1558) [Spr. (II) 1648.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1648) med.: *vidmahe*
+**1)** [12,104.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,104) [RAGH. 6,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,30) [Spr. 1558.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1558) [Spr. (II) 1648.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1648 "Spr. (II) 1648: kāmaṃ krodhaṃ ca lobhaṃ ca dambhaṃ darpaṃ ca bhūmipaḥ | samyagvijetuṃ yo veda sa mahīmabhijāyate || — (3904.) Der Fürst, der Liebe, Zorn, Gier, Heuchelei und Hochmuth vollkommen zu überwinden versteht, ist dazu bestimmt, die ganze Erde zu besitzen.") med.: *vidmahe*
 
-- **RU:** [12,104.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,104) [RAGH. 6,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,30) [Spr. 1558.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1558) [Spr. (II) 1648.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1648) мед.: *vidmahe*
+- **RU:** [12,104.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,104) [RAGH. 6,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,30) [Spr. 1558.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1558) [Spr. (II) 1648.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1648 "Spr. (II) 1648: kāmaṃ krodhaṃ ca lobhaṃ ca dambhaṃ darpaṃ ca bhūmipaḥ | samyagvijetuṃ yo veda sa mahīmabhijāyate || — (3904.) Der Fürst, der Liebe, Zorn, Gier, Heuchelei und Hochmuth vollkommen zu überwinden versteht, ist dazu bestimmt, die ganze Erde zu besitzen.") мед.: *vidmahe*
   <sub>attested</sub>
 
 **1)** [R. 1,57,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,5) [3,75,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,38) *vidante (vadantam* [ed. Bomb.])
@@ -341,7 +341,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [VET. in LA. (III) 31,10.]
   <sub>attested</sub>
 
-## vid~~h0_00_pwg01
+## vid
 
 `vid~~h0_00_pwg01`
 
@@ -356,7 +356,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [R. 1,61,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,17) [2,30,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,6) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,7) [3,41,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,3)
 [MEGH. 97.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?97)
 
-- **RU:** — 2) познавать, узнавать в ком-л. или в чём-л. (кого-л. или что-л.), или познавать что-л., признавать за что-л. (часто так преим. толкуют, называют): *kathaṃ māṃ vetsi cāṇḍālam*
+- **RU:** — 2) познавать, узнавать в ком-л. или в чем-л. (кого-л. или что-л.), или познавать что-л., признавать за что-л. (часто так преим. толкуют, называют): *kathaṃ māṃ vetsi cāṇḍālam*
 [MBH. 13,1880. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1880) *tapodhanaṃ vetsi na māmupasthitam*
 [ŚĀK. 76.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?76) *atha tu vetsi śuci vratamātmanaḥ* чисто знать
 [123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *anantalokāptimatho pratiṣṭhāṃ viddhi tvamenaṃ nihitaṃ guhāyām* знай, что
@@ -368,7 +368,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
   <sub>attested</sub>
 
 **2)** [RAGH. 1,79.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,79) [11,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,76)
-[Spr. (II) 1603.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1603) *anyathā māṃ mṛtaṃ viddhi*
+[Spr. (II) 1603.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1603 "Spr. (II) 1603: kastvaṃ bhoḥ kathayāmi daivahatakaṃ māṃ viddhi śākhoṭakaṃ vairāgyādiva vakṣi sādhu viditaṃ kasmādidaṃ kathyate | vāmenātra vaṭastamadhvagajanaḥ sarvāt… — (3890.) «Wer bist du, Freund» «Ich will es dir sagen: wisse, dass ich ein vom Schicksal geschlagener Śākhoṭaka bin» «Du sprichst, als hättest du der Welt entsagt.» «Du hast es gut getroffen.» «Woher diese deine Stimmung?…") *anyathā māṃ mṛtaṃ viddhi*
 [KATHĀS. 7,91.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,91) [49,202.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,202) *taṃ māṃ vittāsya sarvasya sraṣṭāram*
 [M. 1,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,33)
 [KUMĀRAS. 6,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,30) *vettha*
@@ -378,7 +378,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [Spr. 1392.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1392) [4162.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4162) [4659.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4659) [4675.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4675) *bhāratākhyaṃ tu varṣaṃ haimavataṃ viduḥ*
 
 - **RU:** [RAGH. 1,79.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,79) [11,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,76)
-[Spr. (II) 1603.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1603) *anyathā māṃ mṛtaṃ viddhi*
+[Spr. (II) 1603.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1603 "Spr. (II) 1603: kastvaṃ bhoḥ kathayāmi daivahatakaṃ māṃ viddhi śākhoṭakaṃ vairāgyādiva vakṣi sādhu viditaṃ kasmādidaṃ kathyate | vāmenātra vaṭastamadhvagajanaḥ sarvāt… — (3890.) «Wer bist du, Freund» «Ich will es dir sagen: wisse, dass ich ein vom Schicksal geschlagener Śākhoṭaka bin» «Du sprichst, als hättest du der Welt entsagt.» «Du hast es gut getroffen.» «Woher diese deine Stimmung?…") *anyathā māṃ mṛtaṃ viddhi*
 [KATHĀS. 7,91.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,91) [49,202.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,202) *taṃ māṃ vittāsya sarvasya sraṣṭāram*
 [M. 1,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,33)
 [KUMĀRAS. 6,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,30) *vettha*
@@ -413,13 +413,13 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [MEGH. 111.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?111)
 [RAGH. 3,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,43) мед.: *vedate*
 [ŚVETĀŚV. UP. 5,6.] *vidmahe*
-[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) вместо второго acc. у nom. с *iti*, напр. *śikhaṇḍīti *
+[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) вм. второго acc. у nom. с *iti*, напр. *śikhaṇḍīti *
 
 * ca tāṃ viduḥ*
 [MBH. 5,7407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7407)
 [R. 1,57,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,8) *stena ityeva taṃ viduḥ*
 [Spr. 4915.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4915)
-[VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *māṃ viditvā hṛteti* «когда он узнаёт, что»
+[VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *māṃ viditvā hṛteti* «когда он узнает, что»
 [R. 3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52)
   <sub>attested</sub>
 
@@ -440,9 +440,9 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *so 'vedindro vāyumudvai jayatīti* Индра заметил, что Вайу будет победителем,
   <sub>attested</sub>
 
-**3)** [25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,25) [3,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,20) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [11,6,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,2,5) *na vetti vibhavaṃ svam* achtet nicht auf [Spr. (II) 585.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?585)
+**3)** [25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,25) [3,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,20) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [11,6,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,2,5) *na vetti vibhavaṃ svam* achtet nicht auf [Spr. (II) 585.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?585 "Spr. (II) 585: arthaprāṇavināśasaṃśayakarīṃ prāpyāpadaṃ dustarāṃ pratyāsannabhayo na vetti vibhavaṃ svaṃ jīvitaṃ kāṅkṣati | uttīrṇastu tato dhanārthamaparāṃ bhūyo vi…")
 
-- **RU:** [25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,25) [3,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,20) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [11,6,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,2,5) *na vetti vibhavaṃ svam* не обращает внимания на [Spr. (II) 585.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?585)
+- **RU:** [25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,25) [3,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,20) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [11,6,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,2,5) *na vetti vibhavaṃ svam* не обращает внимания на [Spr. (II) 585.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?585 "Spr. (II) 585: arthaprāṇavināśasaṃśayakarīṃ prāpyāpadaṃ dustarāṃ pratyāsannabhayo na vetti vibhavaṃ svaṃ jīvitaṃ kāṅkṣati | uttīrṇastu tato dhanārthamaparāṃ bhūyo vi…")
   <sub>attested</sub>
 
 **4)** — 4) wahrnehmen, bemerken: *tasyāntaraṃ viditvā*
@@ -489,7 +489,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [MBH. 4,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.21) *duḥkhaṃ vanavāsasya vetsyati*
 [R. 2,52,90](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,90) ([29](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,29) [GORR.]). *na viveda duḥkham*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *nāvidadbhayam*
-[BHĀG. P. 4,27,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,18) *taddīrghakālaṃ vettāsi* так преим. об этом тебе долго придётся помнить
+[BHĀG. P. 4,27,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,18) *taddīrghakālaṃ vettāsi* так преим. об этом тебе долго придется помнить
 [R. 7,36,34.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,34) *vetti na vedanām* не испытывает боли
 [YĀJÑ. 3,130.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,130) *gandharasān*
 [SUŚR. 2,369,11. 373,2.]
@@ -501,7 +501,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [8,2003.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2003) mit einem zweiten acc. so v. a. halten für: *ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam*
 [BHAG. 2,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,19)
 [SUŚR. 1,113,12.]
-[Spr. (II) 519.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?519) [926.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?926) [(I) 4266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4266) *yaṃ māṃ vetsi*
+[Spr. (II) 519.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?519 "Spr. (II) 519: amitraṃ kurute mitraṃ mitraṃ dveṣṭi hinasti ca | śubhaṃ vettyaśubhaṃ pāpaṃ bhadraṃ daivahato naraḥ || — (195.) Ein vom Schicksal geschlagener Mann erwählt einen Feind sich zum Freunde, feindet einen Freund an und fügt ihm Schaden zu, hält Gutes für schlecht und Schlechtes für gut.") [926.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?926) [(I) 4266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4266) *yaṃ māṃ vetsi*
 [RĀJA-TAR. 1,135.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,135) *vidan*
 [3,150.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,150) *vidanti*
 [Spr. 2125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2125) *viveda*
@@ -513,7 +513,7 @@ u. s. w. [MBH. 2,1768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1768)
 [8,2003.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2003), с двумя дополнениями, так преим. *считать кемчем-л.*: *ya enaṃ vetti hantāraṃ yaścainaṃ manyate hatam*
 [BHAG. 2,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,19)
 [SUŚR. 1,113,12.]
-[Spr. (II) 519.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?519) [926.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?926) [(I) 4266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4266) *yaṃ māṃ vetsi*
+[Spr. (II) 519.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?519 "Spr. (II) 519: amitraṃ kurute mitraṃ mitraṃ dveṣṭi hinasti ca | śubhaṃ vettyaśubhaṃ pāpaṃ bhadraṃ daivahato naraḥ || — (195.) Ein vom Schicksal geschlagener Mann erwählt einen Feind sich zum Freunde, feindet einen Freund an und fügt ihm Schaden zu, hält Gutes für schlecht und Schlechtes für gut.") [926.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?926) [(I) 4266.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4266) *yaṃ māṃ vetsi*
 [RĀJA-TAR. 1,135.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,135) *vidan*
 [3,150.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,150) *vidanti*
 [Spr. 2125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2125) *viveda*
@@ -661,7 +661,7 @@ z. B. *nāvidandhṛtimātmanaḥ* (*nāvinda˚* [ed. Bomb.])
 [MBH. 7,8885.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) *vidyādbahusuvarṇakam (vindyā˚* [ed. Bomb.])
 [13,5384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5384)
 
-- **RU:** — 9) ошибочно вместо 3. *vid*, напр. *nāvidandhṛtimātmanaḥ* (*nāvinda˚* [ed. Bomb.]) [MBH. 7,8885.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) *vidyādbahusuvarṇakam (vindyā˚* [ed. Bomb.]) [13,5384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5384)
+- **RU:** — 9) ошибочно вм. 3. *vid*, напр. *nāvidandhṛtimātmanaḥ* (*nāvinda˚* [ed. Bomb.]) [MBH. 7,8885.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) *vidyādbahusuvarṇakam (vindyā˚* [ed. Bomb.]) [13,5384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5384)
   <sub>lexicographic</sub>
 
 ## vid
@@ -770,8 +770,8 @@ v. l.) и реже *vedayati* .
 [KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) fehlerhaft für *avidito*, wie auch das Metrum zeigt.
 
 - **RU:** — 6) *vedayanti*
-[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вместо *ramayanti*, как читает [ed. Bomb.]; *avedito*
-[KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) ошибочно вместо *avidito*, как показывает и метр.
+[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вм. *ramayanti*, как читает [ed. Bomb.]; *avedito*
+[KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) ошибочно вм. *avidito*, как показывает и метр.
   <sub>attested</sub>
 
 ## vid
@@ -793,7 +793,7 @@ v. l.) и реже *vedayati* .
 [P. 1,2,8.](https://ashtadhyayi.com/sutraani/1/2/8)
 [VOP. 19,16.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,16) желать знать, желать узнать —, хотеть познакомиться с
 [NIR. 2,8.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,8)
-[ŚAT. BR. 11,5,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,1) [14,7,2,25](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,25) (= [VEDĀNTAS. [Allah.] No. 8.] [KULL.] zu [M. 12,87](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,87)). [BHĀG. P. 2,9,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,41) [SARVADARŚANAS. 56,14.] *bhagavantaṃ vā ahaṃ vividiṣāṇi*
+[ŚAT. BR. 11,5,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,1) [14,7,2,25](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,25) (= [VEDĀNTAS. [Allah.] No. 8.] [KULL.] к [M. 12,87](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,87)). [BHĀG. P. 2,9,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,41) [SARVADARŚANAS. 56,14.] *bhagavantaṃ vā ahaṃ vividiṣāṇi*
 [CHĀND. UP. 1,11,1.] *vivitsatāṃ naḥ*
 [BHĀG. P. 10,64,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,64,8) *avāptavivitsita*
 [1,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,1) *yāvatsa karabhagrīvakoṭṭamārgaṃ vivitsati* осведомляться о
@@ -913,8 +913,8 @@ v. l.) и реже *vedayati* .
 [RAGH. 12,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,55)
 [ŚĀK. 112,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,15) *śayanagṛhamārgamāvedaya*
 (v. l. *ādeśaya*)
-[72,12](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?72,12), v. l. [94,2](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?94,2), v. l. [VIKR. 82,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?82,18) [MĀLAV. 10,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,7) [Spr. 1755.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1755) [VARĀH. BṚH. S. 12,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,15) [KATHĀS. 3,70.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,70) [18,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,76) [22,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,72) [25,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,69) [280.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,280) [26,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,50) [278.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,278) [29,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,29) [39,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,164) [52,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,5) [PRAB. 78,8.] [83,9.] [BHĀG. P. 1,13,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,12) [3,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,19) [7,8,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,2) [10,41,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,18) [HIT. 97,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?97,13) *ātmānam* заявлять о себе, называть своё имя
-[KATHĀS. 22,110.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,110) *purogāveditaścainamabhyagātsa purohitam* возвещённый
+[72,12](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?72,12), v. l. [94,2](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?94,2), v. l. [VIKR. 82,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?82,18) [MĀLAV. 10,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?10,7) [Spr. 1755.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1755) [VARĀH. BṚH. S. 12,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,15) [KATHĀS. 3,70.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,70) [18,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,76) [22,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,72) [25,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,69) [280.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,280) [26,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,50) [278.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,278) [29,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,29) [39,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,164) [52,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,5) [PRAB. 78,8.] [83,9.] [BHĀG. P. 1,13,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,12) [3,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,19) [7,8,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,2) [10,41,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,18) [HIT. 97,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?97,13) *ātmānam* заявлять о себе, называть свое имя
+[KATHĀS. 22,110.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,110) *purogāveditaścainamabhyagātsa purohitam* возвещенный
 [24,122.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,122) [50,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,164) [RĀJA-TAR. 3,116.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,116) [371.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,371) [5,450.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,450) *rājña āvedayadhvaṃ māṃ saṃprāptam* возвещает, что
 [R. 1,20,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,5) ([21,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,4) [GORR.]). [7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,7) [R. GORR. 2,3,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,18) [34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,28) [ŚĀK. 30,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,4) [BHAṬṬ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,49) *yāvadāvedyate rājñe hataḥ karṇo 'rjunena vai*
 [MBH. 8,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4992) кого-л. (acc.) уведомить: *āvedita*
@@ -926,7 +926,7 @@ v. l.) и реже *vedayati* .
 [KATHĀS. 15,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,66) *āveditāpi sā pitrā na tenāttā mahībhṛtā*
 [33,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,63) [91,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,11)
 
-- **RU:** — 2) сообщать кому-л. о чём-л. так преим. предлагать, преподносить: *tasyārghyamāsanaṃ caiva gāṃ cāvedya*
+- **RU:** — 2) сообщать кому-л. о чем-л. так преим. предлагать, преподносить: *tasyārghyamāsanaṃ caiva gāṃ cāvedya*
 [MBH. 3,16696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16696) *tanayeyamanāvedya rājño deyā kvacinna me*
 [KATHĀS. 15,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,66) *āveditāpi sā pitrā na tenāttā mahībhṛtā*
 [33,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,63) [91,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,11)
@@ -957,9 +957,9 @@ v. l.) и реже *vedayati* .
 [PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) vielleicht fehlerhaft für *abhini˚* .
 
 - **RU:** — *atini* caus. предлагать кому-л. что-л.
-[PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) возможно ошибочно вместо *abhini˚* .
+[PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) возможно ошибочно вм. *abhini˚* .
 
-## vid~~h0_12_vini
+## vinivid
 
 `vid~~h0_12_vini`
 
@@ -979,7 +979,7 @@ v. l.) и реже *vedayati* .
 - **RU:** 2) — предлагать, вручать кому-л. что-л. [ŚAṄKHA] у [KULL.] к [M. 3,236.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,236)
   <sub>attested</sub>
 
-## vid~~h0_13_sa_mni
+## saṃnivid
 
 `vid~~h0_13_sa_mni`
 
@@ -1000,7 +1000,7 @@ v. l.) и реже *vedayati* .
 **2)** — 2) anbieten: *ātmānam* so v. a. sich Jmd zur Verfügung stellen
 [R. 2,56,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,13),g.
 
-- **RU:** — 2) «предлагать»: *ātmānam* так преим. «предоставлять себя в чьё-либо распоряжение»
+- **RU:** — 2) «предлагать»: *ātmānam* так преим. «предоставлять себя в чье-либо распоряжение»
 [R. 2,56,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,13),g.
   <sub>attested</sub>
 
@@ -1022,7 +1022,7 @@ v. l.) и реже *vedayati* .
 
 **1)** — *pari* genau wissen, — kennen, πέρι οἶδε [HOM.] : *ya āhutiṃ pari vedā vaṣaṭkṛtim* [ṚV. 1,31,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.05) [6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *nirṛtiriti tvāhaṃ pari veda* [AV. 6,84,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.084.html#av06.084.01) Vgl. *pariveda* und 1. *parivedana* (st. dessen *padavedana* [ed. Bomb.]). — caus. med. [NIR. 14,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?14,22) Bisweilen fälschlich für *paridevay*, z. B. [MBH. 7,2615](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2615), wo die [ed. Bomb.] *paryadevayat* st. *parivedayan* der [ed. Calc.] liest; st. *parivedita* [R. 2,39,40](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,40) ([38,50](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,50) [GORR.]) hat die [ed. Bomb.] *paridevana*; vgl. 3. *parivedana* .
 
-- **RU:** — *pari* точно знать, — знать, πέρι οἶδε [HOM.] : *ya āhutiṃ pari vedā vaṣaṭkṛtim* [ṚV. 1,31,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.05) [6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *nirṛtiriti tvāhaṃ pari veda* [AV. 6,84,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.084.html#av06.084.01) ср. *pariveda* и 1. *parivedana* (вместо чей *padavedana* [ed. Bomb.]). — caus. мед. [NIR. 14,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?14,22) Иногда ошибочно вместо *paridevay*, напр. [MBH. 7,2615](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2615), где [ed. Bomb.] *paryadevayat* вместо *parivedayan* [ed. Calc.] читает; вместо *parivedita* [R. 2,39,40](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,40) ([38,50](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,50) [GORR.]) имеет [ed. Bomb.] *paridevana*; ср. 3. *parivedana* .
+- **RU:** — *pari* точно знать, — знать, πέρι οἶδε [HOM.] : *ya āhutiṃ pari vedā vaṣaṭkṛtim* [ṚV. 1,31,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.05) [6,1,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.001.html#rv06.001.09) *nirṛtiriti tvāhaṃ pari veda* [AV. 6,84,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.084.html#av06.084.01) ср. *pariveda* и 1. *parivedana* (вместо чей *padavedana* [ed. Bomb.]). — caus. мед. [NIR. 14,22.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?14,22) Иногда ошибочно вм. *paridevay*, напр. [MBH. 7,2615](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2615), где [ed. Bomb.] *paryadevayat* вместо *parivedayan* [ed. Calc.] читает; вместо *parivedita* [R. 2,39,40](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,40) ([38,50](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,50) [GORR.]) имеет [ed. Bomb.] *paridevana*; ср. 3. *parivedana* .
   <sub>attested</sub>
 
 ## pravid
@@ -1123,7 +1123,7 @@ v. l.) и реже *vedayati* .
 
 **1)** — *vi* unterscheiden, wissen [ṚV. 1,185,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.185.html#rv01.185.01) [10,12,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.05) — caus. *vivedayāmāsa* [INDR. 5,52] fehlerhaft für *nive˚* .
 
-- **RU:** — *vi* различать, знать [ṚV. 1,185,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.185.html#rv01.185.01) [10,12,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.05) — caus. *vivedayāmāsa* [INDR. 5,52] ошибочно вместо *nive˚* .
+- **RU:** — *vi* различать, знать [ṚV. 1,185,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.185.html#rv01.185.01) [10,12,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.05) — caus. *vivedayāmāsa* [INDR. 5,52] ошибочно вм. *nive˚* .
   <sub>attested</sub>
 
 ## samvid
@@ -1256,7 +1256,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** — *pratisam* см. *pratisaṃvid* сл.
   <sub>attested</sub>
 
-## vid~~h0_zz_pw00
+## vid
 
 `vid~~h0_zz_pw00`
 
@@ -1265,12 +1265,12 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 — 1〉 Etwas oder Jmd kennen lernen, erkennen; wissen, begreifen, sich auf Etwas verstehen, Etwas oder Jmd erkennen, wissen von Jmd, ein Bewusstsein von Etwas haben ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), eine richtige Vorstellung haben von; in der älteren Sprachen mit Acc. oder Gen., in der späteren mit Acc. Mit Infin. verstehen zu [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
 
 - **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
-— 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чём-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чём-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
+— 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чем-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чем-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
   <sub>attested</sub>
 
 **2)** — 2〉 in Jmd oder in Etwas Jmd oder Etwas erkennen, kennen als, auch so v. a. erklären für, nennen; mit doppeltem Acc. (statt des prädicativen Acc. auch Nomin. mit *iti*).
 
-- **RU:** — 2〉 узнавать в ком-либо или в чём-либо кого-либо или что-либо, знать как, также так преим. объявлять кем-либо, называть; с двойным Acc. (вместо предикативного Acc. также Nomin. с *iti*).
+- **RU:** — 2〉 узнавать в ком-либо или в чем-либо кого-либо или что-либо, знать как, также так преим. объявлять кем-либо, называть; с двойным Acc. (вм. предикативного Acc. также Nomin. с *iti*).
   <sub>attested</sub>
 
 **3)** — 3〉 merken, beachten, achten auf; eingedenk sein; mit Gen. oder Acc.
@@ -1285,7 +1285,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **5)** — 5〉 erfahren, zu geniessen haben, empfinden, an Etwas denken müssen; mit Acc. oder Gen.
 
-- **RU:** — 5〉 испытывать, вкушать, чувствовать, быть вынужденным думать о чём-либо; с Acc. или Gen.
+- **RU:** — 5〉 испытывать, вкушать, чувствовать, быть вынужденным думать о чем-либо; с Acc. или Gen.
   <sub>attested</sub>
 
 **6)** — 6〉 glauben, wähnen, annehmen, voraussetzen; halten für (mit doppeltem Acc.) [VIKRAMĀṄKAC. 17,11].
@@ -1321,7 +1321,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 **10)** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* und *vidyāt* auch fehlerhaft für *avindan* und *vindyāt* (zu **3.** *vid*).
 — Caus. *vedayate* und *vedayati* (seltener)
 
-- **RU:** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* и *vidyāt* также ошибочно вместо *avindan* и *vindyāt* (к **3.** *vid*).
+- **RU:** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* и *vidyāt* также ошибочно вм. *avindan* и *vindyāt* (к **3.** *vid*).
 — Caus. *vedayate* и *vedayati* (реже)
   <sub>attested</sub>
 
@@ -1357,7 +1357,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) fehlerhaft für *ramayanti*.
 
-- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вместо *ramayanti*.
+- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вм. *ramayanti*.
   <sub>attested</sub>
 
 **7)** — Desid. *vividiṣati* zu wissen wünschen, erkennen —, kennen lernen wollen, sich erkundigen nach (Acc.).
@@ -1417,7 +1417,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **3)** — 3〉 kund thun, mittheilen, melden (auch mit prädicativem Acc.) anzeigen. *ātmānam* sich anmelden, seinen Namen nennen. *āvedita* angemeldet.
 
-- **RU:** — 3) объявлять, сообщать, докладывать (также с предикативным Acc.) указывать, извещать. *ātmānam* представляться, называть своё имя. *āvedita* доложенный, объявленный.
+- **RU:** — 3) объявлять, сообщать, докладывать (также с предикативным Acc.) указывать, извещать. *ātmānam* представляться, называть свое имя. *āvedita* доложенный, объявленный.
   <sub>attested</sub>
 
 **4)** — 4〉 vorschreiben (vom Arzte gesagt) [Spr. 7623](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7623).
@@ -1457,7 +1457,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **1)** — 1〉 Jmd (Dat., Gen. oder Loc.) kund thun, melden, sagen, berichten, ankündigen, mittheilen, anzeigen, melden —, sagen dass ist (mit prädicativem Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), Jmd anmelden. *ātmānam* sich anmelden, indem man seinen Namen nennt.
 
-- **RU:** — 1) объявлять, сообщать, говорить, докладывать, возвещать, извещать, указывать, сообщать —, говорить что есть кому-либо (Dat., Gen. или Loc.) (с предикативным Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), докладывать о ком-либо. *ātmānam* представляться, называя своё имя.
+- **RU:** — 1) объявлять, сообщать, говорить, докладывать, возвещать, извещать, указывать, сообщать —, говорить что есть кому-либо (Dat., Gen. или Loc.) (с предикативным Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), докладывать о ком-либо. *ātmānam* представляться, называя свое имя.
   <sub>attested</sub>
 
 **2)** — 2〉 nennen, mit doppeltem Acc.
@@ -1467,12 +1467,12 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **3)** — 3〉 Jmd Etwas anmelden, so v. a. anbieten, übergeben.
 
-- **RU:** — 3) докладывать кому-либо о чём-либо, так преим. предлагать, передавать.
+- **RU:** — 3) докладывать кому-либо о чем-либо, так преим. предлагать, передавать.
   <sub>attested</sub>
 
 **4)** — 4〉 überantworten. *ātmānam* sich zu eigen geben, sich zur Verfügung stellen.
 
-- **RU:** — 4) передавать, вручать. *ātmānam* отдавать себя, предоставлять себя в чьё-либо распоряжение.
+- **RU:** — 4) передавать, вручать. *ātmānam* отдавать себя, предоставлять себя в чье-либо распоряжение.
   <sub>attested</sub>
 
 **5)** — 5〉 *doṣam* eine Schuld wälzen auf (Dat.).
@@ -1482,12 +1482,12 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **6)** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) fehlerhaft für *nyaveśayat*.
 
-- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) ошибочно вместо *nyaveśayat*.
+- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) ошибочно вм. *nyaveśayat*.
   <sub>attested</sub>
 
 **6)** — Mit *atini* Caus. Jmd Etwas anbieten. Vielleicht fehlerhaft für *abhini*.
 
-- **RU:** — С *atini* Caus. предлагать кому-либо что-либо. Может быть, ошибочно вместо *abhini*.
+- **RU:** — С *atini* Caus. предлагать кому-либо что-либо. Может быть, ошибочно вм. *abhini*.
   <sub>attested</sub>
 
 **6)** — Mit *vini* Caus.
@@ -1517,7 +1517,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **2)** — 2〉 anbieten. *ātmānam* sich Jmd zur Verfügung stellen.
 
-- **RU:** — 2〉 предлагать. *ātmānam* предоставлять себя в чьё-либо распоряжение.
+- **RU:** — 2〉 предлагать. *ātmānam* предоставлять себя в чье-либо распоряжение.
   <sub>attested</sub>
 
 **2)** — Mit *nis* Caus. in *anirvedita*.
@@ -1617,7 +1617,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **—2〉)** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) fehlerhaft für *vivadanti*.
 
-- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) ошибочно вместо *vivadanti*.
+- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) ошибочно вм. *vivadanti*.
   <sub>attested</sub>
 
 **—2〉)** — Mit *sam* angeblich stets Med.
@@ -1662,13 +1662,13 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **d)** — d〉 worüber man (Gen.) einverstanden ist. *˚m* im Einverständniss mit (Gen.).
 
-- **RU:** — d〉 то, в чём Gen. согласны. *˚m* в согласии с Gen..
+- **RU:** — d〉 то, в чем Gen. согласны. *˚m* в согласии с Gen..
   <sub>attested</sub>
 
 **e)** — e〉 ermahnt.
 — Caus.
 
-- **RU:** — e〉 увещёванный, наставленный.
+- **RU:** — e〉 увещеванный, наставленный.
 — Caus.
   <sub>attested</sub>
 
@@ -1714,7 +1714,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **1)** — 1〉 Nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner. Gewöhnlich in Comp. mit seinem Obj. Superl. *˚vittama*.
 
-- **RU:** — 1〉 Nom. ag. знающий, ведающий, разбирающийся в чём-либо, знаток чего-либо. Обычно в Comp. со своим Obj. Superl. *˚vittama*.
+- **RU:** — 1〉 Nom. ag. знающий, ведающий, разбирающийся в чем-либо, знаток чего-либо. Обычно в Comp. со своим Obj. Superl. *˚vittama*.
   <sub>attested</sub>
 
 **2)** — 2〉 _m._ der Planet Mercur.
@@ -1727,7 +1727,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** — 3〉 _f._ знание, познание. Pl. [BHĀM. V. 4,19].
   <sub>attested</sub>
 
-## vid~~h0_zz_pw01
+## vid
 
 `vid~~h0_zz_pw01`
 
@@ -1821,17 +1821,17 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **11a)** — a〉 erhalten, erworben.
 
-- **RU:** — a〉 полученный, приобретённый.
+- **RU:** — a〉 полученный, приобретенный.
   <sub>attested</sub>
 
 **11b)** — b〉 ergriffen —, getroffen —, befallen von (im Comp. vorangehend).
 
-- **RU:** — b〉 охваченный —, поражённый —, настигнутый чем-л. (в Comp. предшествующем).
+- **RU:** — b〉 охваченный —, пораженный —, настигнутый чем-л. (в Comp. предшествующем).
   <sub>attested</sub>
 
 **11c)** — c〉 _f._ *ā* genommen, geheirathet (ein Weib).
 
-- **RU:** — c〉 _f._ *ā* взятая, взятая в жёны (о женщине).
+- **RU:** — c〉 _f._ *ā* взятая, взятая в жены (о женщине).
   <sub>attested</sub>
 
 **12)** — 12〉 *vinna*
@@ -1881,12 +1881,12 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **2)** — 2〉 die erste (frühere) Frau (Frauen) hintansetzen (von einer neuen Frau gesagt), so v. a. als Nebenbuhlerin auftreten von (Acc.).
 
-- **RU:** — 2〉 *оттеснять на второй план* первую (прежнюю) жену (жён) (говорится о новой жене), так преим. *выступать соперницей* (Acc.).
+- **RU:** — 2〉 *оттеснять на второй план* первую (прежнюю) жену (жен) (говорится о новой жене), так преим. *выступать соперницей* (Acc.).
   <sub>attested</sub>
 
 **3)** — 3〉 *adhivinnā* und *adhivinnastrī* eine durch eine Nebenbuhlerin hintangesetzte Frau.
 
-- **RU:** — 3〉 *adhivinnā* и *adhivinnastrī* *жена, оттеснённая на второй план соперницей*.
+- **RU:** — 3〉 *adhivinnā* и *adhivinnastrī* *жена, оттесненная на второй план соперницей*.
   <sub>attested</sub>
 
 **3)** — Mit *anu*
@@ -1906,7 +1906,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **3)** — 3〉 Med. *bhāryām* zum Weibe nehmen.
 
-- **RU:** — 3〉 Med. *bhāryām* *брать в жёны*.
+- **RU:** — 3〉 Med. *bhāryām* *брать в жены*.
   <sub>attested</sub>
 
 **4)** — 4〉 finden, so v. a. halten für; mit doppeltem Acc.
@@ -1977,7 +1977,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **3)** — 3〉 Pass. überdrüssig werden, Nichts mehr wissen wollen von; die Ergänzung im Abl., Instr. und ausnahmsweise Acc.
 
-- **RU:** — 3〉 Pass. пресытиться, не желать более знать о чём-л.; дополнение в Abl., Instr. и в виде исключения Acc.
+- **RU:** — 3〉 Pass. пресытиться, не желать более знать о чем-л.; дополнение в Abl., Instr. и в виде исключения Acc.
   <sub>attested</sub>
 
 **4)** — 4〉 *nirviṇṇa* (*nirvinna* fehlerhaft) überdrüssig (die Ergänzung im Abl., Instr., Gen., Loc. oder im Comp. vorangehend). Ohne Ergänzung der Sache überdrüssig, von Nichts mehr Etwas wissen wollend, an Allem verzagend.
@@ -1985,9 +1985,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 — Mit *parinis*, *parinirviṇṇa* in hohem Grade überdrüssig (mit Loc.), an Allem verzagend.
 — Mit *pari*
 
-- **RU:** — 4〉 *nirviṇṇa* (*nirvinna* ошибочно) пресыщенный (дополнение в Abl., Instr., Gen., Loc. или предшествующем Comp.). Без дополнения пресыщенный делом, не желающий более ничего знать, отчаявшийся во всём.
+- **RU:** — 4〉 *nirviṇṇa* (*nirvinna* ошибочно) пресыщенный (дополнение в Abl., Instr., Gen., Loc. или предшествующем Comp.). Без дополнения пресыщенный делом, не желающий более ничего знать, отчаявшийся во всем.
 — Caus. *nirvedayati* довести кого-л. до отчаяния.
-— С *parinis*, *parinirviṇṇa* в высокой степени пресыщенный (с Loc.), отчаявшийся во всём.
+— С *parinis*, *parinirviṇṇa* в высокой степени пресыщенный (с Loc.), отчаявшийся во всем.
 — С *pari*
   <sub>attested</sub>
 
@@ -2017,7 +2017,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **2)** — 2〉 etwa vorwegnehmen.
 
-- **RU:** — 2) примерно предвосхищать, забегать вперёд.
+- **RU:** — 2) примерно предвосхищать, забегать вперед.
   <sub>attested</sub>
 
 **2)** — Intens. (*pra — vevidāma*) theilhaftig werden, mit Acc.
@@ -2072,7 +2072,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **2)** — 2〉 sich zusammenfinden mit (Instr.). *saṃvidāna* zusammen mit, zugleich, verbunden, vereint, — durch oder in (Instr.); einträchtig.
 
-- **RU:** — 2) сходиться, встречаться вместе с (Instr.). *saṃvidāna* вместе с, одновременно, соединённый, объединённый, — посредством или в (Instr.); согласно, в единодушии.
+- **RU:** — 2) сходиться, встречаться вместе с (Instr.). *saṃvidāna* вместе с, одновременно, соединенный, объединенный, — посредством или в (Instr.); согласно, в единодушии.
   <sub>attested</sub>
 
 **3)** — 3〉 Pass. sich finden, da sein, geben (impers.), esse alicui (Gen.); insbes. in der Frage oder mit *na* [VAJRACCH. 38,12. fgg.] [KĀRAṆḌ. 43,21. 45,15. 52,20. 53,18].
@@ -2082,7 +2082,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 
 **3)** — Intens. (*sam — vevidānaḥ*) vereint mit (Instr.).
 
-- **RU:** — Intens. (*sam — vevidānaḥ*) {соединённый с} (Instr.).
+- **RU:** — Intens. (*sam — vevidānaḥ*) {соединенный с} (Instr.).
   <sub>attested</sub>
 
 **3)** — Mit *abhisam* Med. zusammentreffen.
@@ -2136,7 +2136,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 [2,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,61) [245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,245) *sarvadharma˚*
 [8,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,63) *vedārtha˚*
 [3,186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,186) [MBH. 3,2074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2074) [2078.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2078) *gajayāna˚*
-[15733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15733) [R. 1,1,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,1) [15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,15) [65,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,22) [2,72,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,34) [ŚRUT. 5.] [RAGH. 1,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,94) [Spr. (II) 125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?125) [Spr. 3340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3340) [AK. 2,7,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,16) [VARĀH. BṚH. S. 69,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,21) [81,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,36) [BṚH. 14,4.] [KATHĀS. 48,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,29) [RĀJA-TAR. 4,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,245) [498.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,498) [5,380.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,380) [BHĀG. P. 2,2,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,27) [HIT. 15,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,13) superl.: *vedavittama*
+[15733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15733) [R. 1,1,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,1) [15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,15) [65,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,22) [2,72,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,34) [ŚRUT. 5.] [RAGH. 1,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,94) [Spr. (II) 125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?125 "Spr. (II) 125: atathyānyapi tathyāni darśayanti hi peśalāḥ | same nimnonnatānīva citrakarmavido janāḥ || — (48.) Gewandte Leute vermögen sogar Unwahres als wahr erscheinen zu lassen, wie geübte Maler Vertieftes und Erhabenes auf ebener Fläche.") [Spr. 3340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3340) [AK. 2,7,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,16) [VARĀH. BṚH. S. 69,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,21) [81,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,36) [BṚH. 14,4.] [KATHĀS. 48,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,29) [RĀJA-TAR. 4,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,245) [498.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,498) [5,380.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,380) [BHĀG. P. 2,2,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,27) [HIT. 15,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,13) superl.: *vedavittama*
 [M. 5,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,107) *adhyātma˚*
 [YĀJÑ. 1,199.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,199) *yoga˚*
 [BHAG. 12,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,1) *astra˚*
@@ -2144,7 +2144,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 [KĀM. NĪTIS. 9,78. 12,18.] [KATHĀS. 34,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,194) [BHĀG. P. 4,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,24) [7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) Vgl. 1. *aśvavid, evaṃ˚, kratu˚, kṣetra˚*,1. *jyotirvid, tadvid, deva˚, daiva˚, nimitta˚, nīthā˚, purā˚, purāṇa˚, pūrva˚, prakala˚, bahu˚, brahma˚, bhūta˚, bhṛgvaṅgiro˚, mati˚, mano˚, mantra˚, marma˚, mṛdu˚, yoga˚, vaco˚* u. s. w.
 
 - **RU:** 2. *vid* (= 1. *vid*)
- 1) nom. ag. «знающий, ведающий, разбирающийся в чём-л., сведущий в чём-л., знаток»: *evaṃ yo vit*
+ 1) nom. ag. «знающий, ведающий, разбирающийся в чем-л., сведущий в чем-л., знаток»: *evaṃ yo vit*
 [KAṬHOP. 6,18.] *vidāṃ varaḥ*
 [SARVADARŚANAS. 119,1.] [BHĀG. P. 1,5,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,40) [3,4,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,16) [11,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,16) [8,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,29) *a˚*
 [10,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,19) Чрезвычайно часто в comp. с obj.
@@ -2154,7 +2154,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 [2,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,61) [245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,245) *sarvadharma˚*
 [8,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,63) *vedārtha˚*
 [3,186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,186) [MBH. 3,2074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2074) [2078.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2078) *gajayāna˚*
-[15733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15733) [R. 1,1,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,1) [15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,15) [65,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,22) [2,72,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,34) [ŚRUT. 5.] [RAGH. 1,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,94) [Spr. (II) 125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?125) [Spr. 3340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3340) [AK. 2,7,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,16) [VARĀH. BṚH. S. 69,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,21) [81,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,36) [BṚH. 14,4.] [KATHĀS. 48,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,29) [RĀJA-TAR. 4,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,245) [498.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,498) [5,380.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,380) [BHĀG. P. 2,2,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,27) [HIT. 15,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,13) superl.: *vedavittama*
+[15733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15733) [R. 1,1,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,1) [15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,15) [65,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,22) [2,72,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,34) [ŚRUT. 5.] [RAGH. 1,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,94) [Spr. (II) 125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?125 "Spr. (II) 125: atathyānyapi tathyāni darśayanti hi peśalāḥ | same nimnonnatānīva citrakarmavido janāḥ || — (48.) Gewandte Leute vermögen sogar Unwahres als wahr erscheinen zu lassen, wie geübte Maler Vertieftes und Erhabenes auf ebener Fläche.") [Spr. 3340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3340) [AK. 2,7,16.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,16) [VARĀH. BṚH. S. 69,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,21) [81,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,36) [BṚH. 14,4.] [KATHĀS. 48,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,29) [RĀJA-TAR. 4,245.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,245) [498.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,498) [5,380.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,380) [BHĀG. P. 2,2,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,27) [HIT. 15,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,13) superl.: *vedavittama*
 [M. 5,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,107) *adhyātma˚*
 [YĀJÑ. 1,199.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,199) *yoga˚*
 [BHAG. 12,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,1) *astra˚*
@@ -2178,7 +2178,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 [KAUṢ. UP. 1,2.]
   <sub>attested</sub>
 
-## vid~~h2_00_pwg00
+## vid
 
 `vid~~h2_00_pwg00`
 
@@ -2352,9 +2352,9 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
 - **RU:** [7072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7072) [5,1383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1383) [7079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7079) [7,8885](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8885) (*avindan* [ed. Bomb.] вместо *avidan* [ed. Calc.]). *śarma*
   <sub>attested</sub>
 
-**3)** [R. GORR. 2,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,71,23) [5,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,14) [Spr. (II) 577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?577) [856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?856) [(I) 4169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4169) *imaṃ ca lokaṃ paramaṃ ca*
+**3)** [R. GORR. 2,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,71,23) [5,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,14) [Spr. (II) 577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?577 "Spr. (II) 577: aruṣyanruṣyamāṇasya sukṛtaṃ nāma vindati | duṣkṛtaṃ cātmano marṣī ruṣyatyevāpamārṣṭi vai || — (3586.) Der Nichtzürnende wird ja der guten Werke des Zürnenden theilhaftig und die eigenen bösen Werke streift der Langmüthige von sich ab, indem er sie dem Zürnenden übergiebt.") [856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?856) [(I) 4169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4169) *imaṃ ca lokaṃ paramaṃ ca*
 
-- **RU:** [R. GORR. 2,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,71,23) [5,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,14) [Spr. (II) 577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?577) [856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?856) [(I) 4169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4169) *imaṃ ca lokaṃ paramaṃ ca*
+- **RU:** [R. GORR. 2,71,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,71,23) [5,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,14) [Spr. (II) 577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?577 "Spr. (II) 577: aruṣyanruṣyamāṇasya sukṛtaṃ nāma vindati | duṣkṛtaṃ cātmano marṣī ruṣyatyevāpamārṣṭi vai || — (3586.) Der Nichtzürnende wird ja der guten Werke des Zürnenden theilhaftig und die eigenen bösen Werke streift der Langmüthige von sich ab, indem er sie dem Zürnenden übergiebt.") [856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?856) [(I) 4169.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4169) *imaṃ ca lokaṃ paramaṃ ca*
   <sub>attested</sub>
 
 **3)** [KĀM. NĪTIS. 3,37.] [SĀH. D. 5,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?5,7) *bhadrāṇi*
@@ -2462,9 +2462,9 @@ sich zuwendend: das will ich thun u. s. w..
 - **RU:** — 4) ощущать, чувствовать: *śītoṣṇaṃ ca na vindati* (*gardabhaḥ*)
   <sub>attested</sub>
 
-**4)** [Spr. (II) 694.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?694) halten für: *svādvatīvāmbu vindate*
+**4)** [Spr. (II) 694.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?694 "Spr. (II) 694: aviśrāmaṃ vahedbhāraṃ śītoṣṇaṃ ca na vindati | sasantoṣastathā nityaṃ trīṇi śikṣeta gardabhāt || — (255.) Ohne auszuruhen trägt er seine Last, empfindet weder Kälte noch Hitze und ist stets zufrieden: diese drei Dinge lerne man vom Esel.") halten für: *svādvatīvāmbu vindate*
 
-- **RU:** [Spr. (II) 694.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?694) считать за, принимать за: *svādvatīvāmbu vindate*
+- **RU:** [Spr. (II) 694.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?694 "Spr. (II) 694: aviśrāmaṃ vahedbhāraṃ śītoṣṇaṃ ca na vindati | sasantoṣastathā nityaṃ trīṇi śikṣeta gardabhāt || — (255.) Ohne auszuruhen trägt er seine Last, empfindet weder Kälte noch Hitze und ist stets zufrieden: diese drei Dinge lerne man vom Esel.") считать за, принимать за: *svādvatīvāmbu vindate*
   <sub>attested</sub>
 
 **4)** [(I) 2914.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2914)
@@ -2513,7 +2513,7 @@ sich zuwendend: das will ich thun u. s. w..
 [81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,81)
 
 - **RU:** *adhi* (букв. жениться поверх) ставить первую жену (acc.) позади второй жены (instr.): *kīrtiṃ śriyā praṇayinīṃ labdhayādhiviveda saḥ* (*samrāṭ*)
-[RĀJA-TAR. 5,135.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,135) ставить позади первую (прежнюю) жену (жён) (со стороны новой жены), так преим. выступать соперницей (acc.): *adhivividuramātyairāhṛtāstasya tasya yūnaḥ prathamaparigṛhīte śrībhuvau rājakanyāḥ*
+[RĀJA-TAR. 5,135.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,135) ставить позади первую (прежнюю) жену (жен) (со стороны новой жены), так преим. выступать соперницей (acc.): *adhivividuramātyairāhṛtāstasya tasya yūnaḥ prathamaparigṛhīte śrībhuvau rājakanyāḥ*
 [RAGH. 18,52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,52) *adhivinnā* жена, отставленная соперницей
 [AK. 2,6,1,7.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,7)
 [H. 527.](https://sanskrit-lexicon-scans.github.io/abch2/app1?527)
@@ -2558,7 +2558,7 @@ sich zuwendend: das will ich thun u. s. w..
 [TS. 2,5,3,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,3,6) *tathā purākṛtaṃ karma kartāramanuvindati*
 [Spr. 2312.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2312) *bhadram*
 [BHĀG. P. 4,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,24) *anvavindata* мед.
-[8,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,19) [10,8,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,47) [11,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,20) *śāradvatīṃ tato bhāryāṃ kṛpīṃ droṇo 'nvavindata* так преим. взял в жёны
+[8,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,19) [10,8,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,47) [11,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,20) *śāradvatīṃ tato bhāryāṃ kṛpīṃ droṇo 'nvavindata* так преим. взял в жены
 [MBH. 1,5114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5114) найти вслед за кем-л.
 [TS. 7,1,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,6,1) pass. иметься —, быть налицо: *sa ghā vide anvindro gaveṣaṇaḥ*
 [ṚV. 1,132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.03) *trayodaśo māso nānuvidyate*
@@ -2684,7 +2684,7 @@ sich zuwendend: das will ich thun u. s. w..
 [ŚAT. BR. 14,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,4,1)
 
 - **RU:** — 2) мед. освобождаться (от чего-л.), избавляться, с gen.: *adha svapnasya nirvide 'bhuñjataśca revataḥ*
-[ṚV. 1,120,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.12) с acc.: *pāṇḍityaṃ nirvidya bālyena tiṣṭhāset* слагающий с себя учёность
+[ṚV. 1,120,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.12) с acc.: *pāṇḍityaṃ nirvidya bālyena tiṣṭhāset* слагающий с себя ученость
 [ŚAT. BR. 14,6,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,4,1)
   <sub>attested</sub>
 
@@ -2695,7 +2695,7 @@ sich zuwendend: das will ich thun u. s. w..
 [3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) *nirvidya nirayādataḥ*
 [BHĀG. P. 4,30,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,30,18) mit instr.: *niravidyata jīvitena*
 [MBH. 6,5344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5344) *dāsyena*
-[Spr. (II) 1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) mit acc.: *nirvidyate tataḥ kṛtsnam*
+[Spr. (II) 1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373 "Spr. (II) 1373: ekaṃ bhūmipatiḥ karoti sacivaṃ rājye pradhānaṃ yadā taṃ mohācchrayate madaḥ sa ca madāddāsyena nirvidyate | nirviṇṇasya padaṃ karoti hṛdaye tasya svat… — (528.) Wenn ein Fürst Einen Minister an die Spitze der Regierung stellt, dann kommt über diesen in seiner Verblendung ein Taumel") mit acc.: *nirvidyate tataḥ kṛtsnam*
 [MBH. 14,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.530) ohne Ergänzung: *upasado nā canāgacchannirvidyeva*
 [ŚĀṄKH. BR. 9,1.] *sā ca nirvidyatāṃ punaḥ*
 [MBH. 3,14792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14792)
@@ -2711,22 +2711,22 @@ sich zuwendend: das will ich thun u. s. w..
 [KATHĀS. 30,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,98) [40,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,27)
 [RĀJA-TAR. 3,503.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,503)
 [PAÑCAR. 3,14,16.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,14,16) ohne Ergänzung der Sache überdrüssig, von Nichts mehr Etwas wissen wollend, an Allem verzagend
-[BHĀG. 6,23.] [Spr. (II) 86.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?86) [937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937) [1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) [(I) 1145.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1145) [RĀJA-TAR. 3,164.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,164) [6,262.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,262) [BHĀG. P. 5,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,7) [6,12,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,30) [7,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,2) [9,6,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,26) [19,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,1) [SARVADARŚANAS. 42,20.] [MĀRK. P. 74,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,6) [133,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,25) *ati˚*
+[BHĀG. 6,23.] [Spr. (II) 86.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?86 "Spr. (II) 86: aṅgulyagranakhena bāṣpasalilaṃ nikṣipya nikṣipya kiṃ tūṣṇīṃ rodiṣi kopane bahutaraṃ phūtkṛtya rodiṣyasi | yasyāste piśunopadeśavacanairmāne 'tibhūmiṃ… — (28.) Warum weinst du, o Zornige, still für dich hin und stossest beständig mit der Fingernagelspitze die Thränentropfen herab? Du wirst noch mehr und laut weinen, da dein Geliebter, überdrüssig deines Schmollens, das du…") [937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937) [1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) [(I) 1145.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1145) [RĀJA-TAR. 3,164.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,164) [6,262.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,262) [BHĀG. P. 5,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,7) [6,12,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,30) [7,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,2) [9,6,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,26) [19,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,1) [SARVADARŚANAS. 42,20.] [MĀRK. P. 74,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,6) [133,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,25) *ati˚*
 [20,47.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?20,47) *su˚*
 [123,22.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?123,22) [BHĀG. P. 8,7,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,7) *a˚* gutes Muths
-[Spr. (II) 301.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?301)
+[Spr. (II) 301.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?301 "Spr. (II) 301: anirvedaḥ śriyo mūlaṃ lābhasya ca śubhasya ca | mahānbhavatyanirviṇṇaḥ sukhaṃ cānantyamaśnute || — (3474.) Nicht verzagen ist des Glückes, des Gewinnes und der Wohlfahrt Wurzel")
 [R. 3,43,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,7)
 [KATHĀS. 82,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?82,52)
 [RĀJA-TAR. 3,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,159)
 
-- **RU:** — 3) pass. (находиться вне чего-л.) пресыщаться, не желать более ничего знать о чём-л.; с abl.: *nirvidyate 'rthāt*
+- **RU:** — 3) pass. (находиться вне чего-л.) пресыщаться, не желать более ничего знать о чем-л.; с abl.: *nirvidyate 'rthāt*
 [MBH. 12,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3888) [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) *gṛhāt*
 [BHĀG. P. 4,13,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,46) [6,5,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,41) *virvidyeyuśca laukikāt*
 [MBH. 12,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3889) *kāmāt*
 [3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) *nirvidya nirayādataḥ*
 [BHĀG. P. 4,30,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,30,18) с instr.: *niravidyata jīvitena*
 [MBH. 6,5344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5344) *dāsyena*
-[Spr. (II) 1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) с acc.: *nirvidyate tataḥ kṛtsnam*
+[Spr. (II) 1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373 "Spr. (II) 1373: ekaṃ bhūmipatiḥ karoti sacivaṃ rājye pradhānaṃ yadā taṃ mohācchrayate madaḥ sa ca madāddāsyena nirvidyate | nirviṇṇasya padaṃ karoti hṛdaye tasya svat… — (528.) Wenn ein Fürst Einen Minister an die Spitze der Regierung stellt, dann kommt über diesen in seiner Verblendung ein Taumel") с acc.: *nirvidyate tataḥ kṛtsnam*
 [MBH. 14,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.530) без дополнения: *upasado nā canāgacchannirvidyeva*
 [ŚĀṄKH. BR. 9,1.] *sā ca nirvidyatāṃ punaḥ*
 [MBH. 3,14792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14792)
@@ -2741,11 +2741,11 @@ sich zuwendend: das will ich thun u. s. w..
 [PAÑCAT. 51,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?51,25) [137,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?137,1) с loc. [KĀM. NĪTIS. 18,42.] [BHĀG. P. 11,20,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,20,27) дополнение предшествует в comp.
 [KATHĀS. 30,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,98) [40,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,27)
 [RĀJA-TAR. 3,503.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,503)
-[PAÑCAR. 3,14,16.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,14,16) без дополнения пресыщенный вещью, не желающий более ничего знать, во всём отчаявшийся
-[BHĀG. 6,23.] [Spr. (II) 86.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?86) [937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937) [1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) [(I) 1145.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1145) [RĀJA-TAR. 3,164.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,164) [6,262.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,262) [BHĀG. P. 5,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,7) [6,12,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,30) [7,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,2) [9,6,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,26) [19,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,1) [SARVADARŚANAS. 42,20.] [MĀRK. P. 74,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,6) [133,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,25) *ati˚*
+[PAÑCAR. 3,14,16.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,14,16) без дополнения пресыщенный вещью, не желающий более ничего знать, во всем отчаявшийся
+[BHĀG. 6,23.] [Spr. (II) 86.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?86 "Spr. (II) 86: aṅgulyagranakhena bāṣpasalilaṃ nikṣipya nikṣipya kiṃ tūṣṇīṃ rodiṣi kopane bahutaraṃ phūtkṛtya rodiṣyasi | yasyāste piśunopadeśavacanairmāne 'tibhūmiṃ… — (28.) Warum weinst du, o Zornige, still für dich hin und stossest beständig mit der Fingernagelspitze die Thränentropfen herab? Du wirst noch mehr und laut weinen, da dein Geliebter, überdrüssig deines Schmollens, das du…") [937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937) [1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373) [(I) 1145.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1145) [RĀJA-TAR. 3,164.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,164) [6,262.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,262) [BHĀG. P. 5,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,7) [6,12,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,30) [7,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,2) [9,6,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,26) [19,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,19,1) [SARVADARŚANAS. 42,20.] [MĀRK. P. 74,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,6) [133,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,25) *ati˚*
 [20,47.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?20,47) *su˚*
 [123,22.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?123,22) [BHĀG. P. 8,7,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,7) *a˚* доброй души, в хорошем настроении
-[Spr. (II) 301.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?301)
+[Spr. (II) 301.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?301 "Spr. (II) 301: anirvedaḥ śriyo mūlaṃ lābhasya ca śubhasya ca | mahānbhavatyanirviṇṇaḥ sukhaṃ cānantyamaśnute || — (3474.) Nicht verzagen ist des Glückes, des Gewinnes und der Wohlfahrt Wurzel")
 [R. 3,43,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,7)
 [KATHĀS. 82,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?82,52)
 [RĀJA-TAR. 3,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,159)
@@ -2765,7 +2765,7 @@ sich zuwendend: das will ich thun u. s. w..
 
 **1)** — *parinis*, partic. *˚rviṇṇa* in hohem Grade überdrüssig: *strībhāve* [MBH. 5,7375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7375) *˚cetas* an Allem verzagend [16,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.276)
 
-- **RU:** — *parinis*, partic. *˚rviṇṇa* в высшей степени пресыщенный: *strībhāve* [MBH. 5,7375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7375) *˚cetas* во всём отчаявшийся [16,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.276)
+- **RU:** — *parinis*, partic. *˚rviṇṇa* в высшей степени пресыщенный: *strībhāve* [MBH. 5,7375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7375) *˚cetas* во всем отчаявшийся [16,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.276)
   <sub>attested</sub>
 
 ## pari-vid
@@ -2817,7 +2817,7 @@ sich zuwendend: das will ich thun u. s. w..
 
 **1)** — *prati* 1) (dazu) finden: *sa deveṣu na pratyavindat* fand keinen zweiten unter den Göttern [AIT. BR. 4,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,5) *vāco mithunam* [PAÑCAV. BR. 21,13,2.]
 
-- **RU:** — *prati* 1) (при этом) находить *…*: *sa deveṣu na pratyavindat* не нашёл никого второго среди богов [AIT. BR. 4,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,5) *vāco mithunam* [PAÑCAV. BR. 21,13,2.]
+- **RU:** — *prati* 1) (при этом) находить *…*: *sa deveṣu na pratyavindat* не нашел никого второго среди богов [AIT. BR. 4,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,5) *vāco mithunam* [PAÑCAV. BR. 21,13,2.]
   <sub>attested</sub>
 
 **2)** — 2) med. sich gegenüber befinden: *sa etaṃ bhāgaṃ pratividāna (= jānan* Comm.) *āste yatprāśitram* sitzt gegenüber [ŚAT. BR. 1,7,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,18)
@@ -2861,7 +2861,7 @@ sich zuwendend: das will ich thun u. s. w..
 
 **2)** — 2) sich zusammenfinden mit (instr.): *saṃ vitsvāṅgaiḥ* [AV. 8,2,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.03) *saṃ taiḥ paśubhirvide* [4,36,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.05) *śarīramasya saṃ vidām* [5,30,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.030.html#av05.030.13) *samime prāṇā vidre* [AIT. BR. 1,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,17) [ŚAT. BR. 3,5,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,4,17) partic. *saṃvidāna* zusammen mit, zugleich; verbunden, vereint; einträchtig [ṚV. 7,44,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.044.html#rv07.044.04) *yamaḥ pitṛbhiḥ saṃvidānaḥ* [10,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.04) [30,13. fg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.030.html#rv10.030.13) [162,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.162.html#rv10.162.01) [8,48,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.13) *samānena kratunā saṃvidāne* vereinigt durch, — in [3,54,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.06) [AV. 2,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.028.html#av02.028.02) [4,15,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.015.html#av04.015.10) [12,1,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.48) [VS. 12,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,61) [ŚAT. BR. 3,8,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,12) [14,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,4) [KAUŚ. 99. 124.] *apa śatrūnvidhyataṃ saṃvidāne* [ṚV. 5,75,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.04) [AV. 11,2,14.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.14) *tāḥ sarvāḥ saṃvidānā idaṃ me prāvataṃ vacaḥ* ihr alle miteinander [ṚV. 10,97,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.14) [AV. 3,4,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.004.html#av03.004.07) *devaiḥ saha saṃ˚* [5,29,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.02) *a˚* [ŚAT. BR. 10,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,2) [CHĀND. UP. 8,7,2.] — intens. partic. dass.: *saṃ bhasmanā vāyunā vevidānaḥ* [ṚV. 5,19,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.05)
 
-- **RU:** — 2) сходиться, соединяться с (instr.): *saṃ vitsvāṅgaiḥ* [AV. 8,2,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.03) *saṃ taiḥ paśubhirvide* [4,36,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.05) *śarīramasya saṃ vidām* [5,30,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.030.html#av05.030.13) *samime prāṇā vidre* [AIT. BR. 1,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,17) [ŚAT. BR. 3,5,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,4,17) partic. *saṃvidāna* вместе с, одновременно; связанный, соединённый; в согласии [ṚV. 7,44,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.044.html#rv07.044.04) *yamaḥ pitṛbhiḥ saṃvidānaḥ* [10,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.04) [30,13. fg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.030.html#rv10.030.13) [162,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.162.html#rv10.162.01) [8,48,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.13) *samānena kratunā saṃvidāne* соединённый посредством, — в [3,54,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.06) [AV. 2,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.028.html#av02.028.02) [4,15,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.015.html#av04.015.10) [12,1,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.48) [VS. 12,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,61) [ŚAT. BR. 3,8,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,12) [14,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,4) [KAUŚ. 99. 124.] *apa śatrūnvidhyataṃ saṃvidāne* [ṚV. 5,75,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.04) [AV. 11,2,14.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.14) *tāḥ sarvāḥ saṃvidānā idaṃ me prāvataṃ vacaḥ* все вы вместе друг с другом [ṚV. 10,97,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.14) [AV. 3,4,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.004.html#av03.004.07) *devaiḥ saha saṃ˚* [5,29,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.02) *a˚* [ŚAT. BR. 10,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,2) [CHĀND. UP. 8,7,2.] — intens. partic. то же: *saṃ bhasmanā vāyunā vevidānaḥ* [ṚV. 5,19,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.05)
+- **RU:** — 2) сходиться, соединяться с (instr.): *saṃ vitsvāṅgaiḥ* [AV. 8,2,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.03) *saṃ taiḥ paśubhirvide* [4,36,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.036.html#av04.036.05) *śarīramasya saṃ vidām* [5,30,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.030.html#av05.030.13) *samime prāṇā vidre* [AIT. BR. 1,17.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,17) [ŚAT. BR. 3,5,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,4,17) partic. *saṃvidāna* вместе с, одновременно; связанный, соединенный; в согласии [ṚV. 7,44,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.044.html#rv07.044.04) *yamaḥ pitṛbhiḥ saṃvidānaḥ* [10,14,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.04) [30,13. fg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.030.html#rv10.030.13) [162,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.162.html#rv10.162.01) [8,48,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.13) *samānena kratunā saṃvidāne* соединенный посредством, — в [3,54,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.06) [AV. 2,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.028.html#av02.028.02) [4,15,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.015.html#av04.015.10) [12,1,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.48) [VS. 12,61.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,61) [ŚAT. BR. 3,8,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,12) [14,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,2,4) [KAUŚ. 99. 124.] *apa śatrūnvidhyataṃ saṃvidāne* [ṚV. 5,75,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.04) [AV. 11,2,14.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.14) *tāḥ sarvāḥ saṃvidānā idaṃ me prāvataṃ vacaḥ* все вы вместе друг с другом [ṚV. 10,97,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.14) [AV. 3,4,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.004.html#av03.004.07) *devaiḥ saha saṃ˚* [5,29,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.029.html#av05.029.02) *a˚* [ŚAT. BR. 10,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,2) [CHĀND. UP. 8,7,2.] — intens. partic. то же: *saṃ bhasmanā vāyunā vevidānaḥ* [ṚV. 5,19,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.019.html#rv05.019.05)
   <sub>attested</sub>
 
 ## abhisam-vid
@@ -2950,10 +2950,10 @@ sich zuwendend: das will ich thun u. s. w..
   <sub>mixed</sub>
 
 **1a)** — *ni* caus. *doṣam* eine Schuld wälzen auf (dat.)
-[Spr. (II) 2985.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2985)
+[Spr. (II) 2985.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2985 "Spr. (II) 2985: doṣamārto janaḥ kṛtsnaṃ pārthivāya nivedayet | yadā syāddoṣavānbhūpastadā kastaṃ niṣedhayet || — Ist das Volk in Noth, so wälzt es alle Schuld auf den Fürsten")
 
 - **RU:** — *ni* caus. *doṣam* перекладывать вину на (dat.)
-[Spr. (II) 2985.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2985)
+[Spr. (II) 2985.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2985 "Spr. (II) 2985: doṣamārto janaḥ kṛtsnaṃ pārthivāya nivedayet | yadā syāddoṣavānbhūpastadā kastaṃ niṣedhayet || — Ist das Volk in Noth, so wälzt es alle Schuld auf den Fürsten")
   <sub>attested</sub>
 
 ## vid
@@ -2984,7 +2984,7 @@ Z. 5 ein *tasya* zu streichen.
 [ṚV. 7,24,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.024.html#rv07.024.06)
   <sub>attested</sub>
 
-## vid~~h0_10_ni
+## nivid
 
 `vid~~h0_10_ni`
 
@@ -2999,7 +2999,7 @@ v. l.). Vgl. *nivid* . — caus.
 [YĀJÑ. 2,20.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,20) [172.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,172) [3,258.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,258)
 [MBH. 1,2371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2371) [3224](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3224) (med.). [5171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5171) [6476](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6476) (med.). [7685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7685) [2,1723. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1723) [3,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1869) [2103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2103) [2265. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2265) [2292.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2292) [2756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2756) [2920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2920) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [11994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11994) [16697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16697) [5,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5965) [6043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6043) [7339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7339) [7423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7423) [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) (*˚vedayitvā*) .
 [76](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,76) ([81](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,81) [GORR.]). [9,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,40) [39,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,1) [R. GORR. 1,80,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,80,26) (med.). [4,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,23) [5,15,37. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,37) [6,84,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,31) [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [2,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,68) [10,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,30) [15,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,65) [ŚĀK. 50,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?50,17) *ekamapyakṣaraṃ yastu guruḥ śiṣye nivedayet*
-[Spr. (II) 1367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1367) [Spr. 3287.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3287) [4083.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4083) [VARĀH. BṚH. S. 38,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,4) [54,105.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,105) [68,89.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,89) [86,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,5) [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) [71.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,71) [11,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,19) [14,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,7) [18,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,195) [241.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,241) [367.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,367) *evaṃ vijayadattena tena tatra nivedite*
+[Spr. (II) 1367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1367 "Spr. (II) 1367: ekamapyakṣaraṃ yastu guruḥ śiṣye nivedayet | pṛthivyāṃ nāsti taddravyaṃ yaddattvā so 'nṛṇī bhavet || — Wenn ein Lehrer einen Schüler auch nur eine einzige Silbe lehrt, so giebt es nicht Reichthümer genug auf Erden, durch deren Hingabe der Schüler seiner Schuld sich zu entledigen vermöchte.") [Spr. 3287.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3287) [4083.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4083) [VARĀH. BṚH. S. 38,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,4) [54,105.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,105) [68,89.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,89) [86,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,5) [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) [71.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,71) [11,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,19) [14,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,7) [18,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,195) [241.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,241) [367.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,367) *evaṃ vijayadattena tena tatra nivedite*
 [25,281.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,281) [MĀRK. P. 72,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,17) [KATHĀS. 27,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,194) [32,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,15) [RĀJA-TAR. 3,505.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,505) [4,273. fg.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,273) [PRAB. 64,16.] [83,8.] [BHĀG. P. 1,7,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,41) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [13,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,49) [MĀRK. P. 21,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,26) [PAÑCAT. 43,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,23) [68,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,22) [81,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?81,17) [96,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,21) [98,3](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,3) (*˚vedayāmāsa* [ed. Bomb.] st. *˚vedayitvā)* .
 [228,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?228,4) [HIT. 40,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,11) [VET. in LA. (III) 6,4.] *tanmamāgre nivedaya*
 [6,15. 7,15.] *nyavedayattāmasvasthām* meldete, dass
@@ -3027,7 +3027,7 @@ v. l.). ср. *nivid* . — caus.
 [YĀJÑ. 2,20.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,20) [172.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,172) [3,258.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,258)
 [MBH. 1,2371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2371) [3224](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3224) (мед.). [5171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5171) [6476](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6476) (мед.). [7685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7685) [2,1723. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1723) [3,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1869) [2103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2103) [2265. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2265) [2292.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2292) [2756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2756) [2920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2920) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [11994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11994) [16697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16697) [5,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5965) [6043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6043) [7339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7339) [7423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7423) [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) (*˚vedayitvā*).
 [76](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,76) ([81](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,81) [GORR.]). [9,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,40) [39,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,1) [R. GORR. 1,80,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,80,26) (мед.). [4,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,23) [5,15,37. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,37) [6,84,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,31) [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95) [2,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,68) [10,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,30) [15,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,65) [ŚĀK. 50,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?50,17) *ekamapyakṣaraṃ yastu guruḥ śiṣye nivedayet*
-[Spr. (II) 1367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1367) [Spr. 3287.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3287) [4083.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4083) [VARĀH. BṚH. S. 38,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,4) [54,105.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,105) [68,89.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,89) [86,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,5) [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) [71.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,71) [11,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,19) [14,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,7) [18,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,195) [241.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,241) [367.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,367) *evaṃ vijayadattena tena tatra nivedite*
+[Spr. (II) 1367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1367 "Spr. (II) 1367: ekamapyakṣaraṃ yastu guruḥ śiṣye nivedayet | pṛthivyāṃ nāsti taddravyaṃ yaddattvā so 'nṛṇī bhavet || — Wenn ein Lehrer einen Schüler auch nur eine einzige Silbe lehrt, so giebt es nicht Reichthümer genug auf Erden, durch deren Hingabe der Schüler seiner Schuld sich zu entledigen vermöchte.") [Spr. 3287.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3287) [4083.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4083) [VARĀH. BṚH. S. 38,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,4) [54,105.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,105) [68,89.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,89) [86,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,5) [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) [71.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,71) [11,19.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,19) [14,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,7) [18,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,195) [241.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,241) [367.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,367) *evaṃ vijayadattena tena tatra nivedite*
 [25,281.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,281) [MĀRK. P. 72,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,17) [KATHĀS. 27,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,194) [32,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,15) [RĀJA-TAR. 3,505.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,505) [4,273. fg.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,273) [PRAB. 64,16.] [83,8.] [BHĀG. P. 1,7,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,41) [4,6,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,2) [13,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,49) [MĀRK. P. 21,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,26) [PAÑCAT. 43,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,23) [68,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,22) [81,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?81,17) [96,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,21) [98,3](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,3) (*˚vedayāmāsa* [ed. Bomb.] вместо *˚vedayitvā)* .
 [228,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?228,4) [HIT. 40,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,11) [VET. in LA. (III) 6,4.] *tanmamāgre nivedaya*
 [6,15. 7,15.] *nyavedayattāmasvasthām* сообщил, что
@@ -3041,7 +3041,7 @@ v. l.). ср. *nivid* . — caus.
 [HARIV. 8843.](https://sanskrit-lexicon-scans.github.io/hariv?8843)
 [ŚĀK. 7,18](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,18), v. l. [101,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,11)
 [KATHĀS. 38,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,7) [45,365.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,365) *antaḥ praviṣṭo 'haṃ śiṣyairagre niveditaḥ*
-[6,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,66) *ātmānam* (заявлять о себе, называя своё имя)
+[6,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,66) *ātmānam* (заявлять о себе, называя свое имя)
 [R. 2,54,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,12) (мед. = [14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,54,14) [GORR.]). [KATHĀS. 26,151.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,151) [32,111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,111) *kathamidānīmātmānaṃ nivedayāmi . kathaṃ vātmāpahāraṃ karomi*
 [ŚĀK. 13,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?13,21)
   <sub>attested</sub>
@@ -3063,7 +3063,7 @@ v. l.). ср. *nivid* . — caus.
 [YĀJÑ. 1,166.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,166) *mama haste niveditā* (*sītā*) übergeben
 [R. 7,45,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,45,10)
 
-- **RU:** — 2) сообщить кому-либо о чём-либо, а также предложить, передать преим.
+- **RU:** — 2) сообщить кому-либо о чем-либо, а также предложить, передать преим.
 [AIT. BR. 3,9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,9)
 [ŚAT. BR. 3,3,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,4,17)
 [ĀŚV. GṚHY. 4,7,27.]
@@ -3072,7 +3072,7 @@ v. l.). ср. *nivid* . — caus.
 [11,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,116) [YĀJÑ. 1,27.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,27) [2,307.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,307) [MBH. 1,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.702) [2369.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2369) [3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) [12,6346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6346) *devebhyo 'nnam*
 [13,3369.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3369) [HARIV. 6302.](https://sanskrit-lexicon-scans.github.io/hariv?6302) [R. 1,25,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,25,19) [46,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,10) [2,84,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,16) [3,63,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,26) [7,1,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,1,13) [SUŚR. 1,240,7.] [RAGH. 15,70.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,70) [KATHĀS. 26,203.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,203) [75,174.](https://sanskrit-lexicon-scans.github.io/kss/index.html?75,174) [RĀJA-TAR. 5,52.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,52) [BHĀG. P. 4,22,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,44) [9,6,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,8) [10,38,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,38,38) [MĀRK. P. 97,15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?97,15) [WEBER, KṚṢṆAJ. 297. 309.] [PAÑCAR. 2,4,22. fg.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,4,22) [25.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,4,25) [28. fgg.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,4,28) [3,8,16.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,8,16) [DAŚAK. 76,14.] [PAÑCAT. 174,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?174,16) *rājñe dasyūn* так преим. передавать, вверять
 [MBH. 1,4315.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4315) [5,5436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5436)
-[R. 2,78,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,8) *ātmānam* отдавать себя, предоставлять себя в чьё-л. распоряжение
+[R. 2,78,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,8) *ātmānam* отдавать себя, предоставлять себя в чье-л. распоряжение
 [ŚAT. BR. 11,5,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,4,1)
 [M. 4,253. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,253)
 [YĀJÑ. 1,166.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,166) *mama haste niveditā* (*sītā*) передавать
@@ -3084,11 +3084,11 @@ v. l.). ср. *nivid* . — caus.
 — Vgl. *nivedaka* fg., *nivedin* fg.
 
 - **RU:** — 3) *nyavedayat*
-[MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) ошибочно вместо *nyaveśayat*, как читает [ed. Bomb.].
+[MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) ошибочно вм. *nyaveśayat*, как читает [ed. Bomb.].
 — ср. *nivedaka* сл., *nivedin* сл.
   <sub>attested</sub>
 
-## vid~~h2_00_pwg01
+## vid
 
 `vid~~h2_00_pwg01`
 
@@ -3123,7 +3123,7 @@ v. l.). ср. *nivid* . — caus.
 - **RU:** — 6) суметь осуществить, суметь сделать, достичь: *bhedasya cicchardhato vinda randhim*
 [ṚV. 7,18,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.018.html#rv07.018.18) *na śatrurantaṃ vividadyudhā te*
 [21,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.021.html#rv07.021.06) [8,46,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.11) [1,71,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.071.html#rv01.071.07) *avindethāmapacitiṃ vadhatraiḥ*
-[4,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.028.html#rv04.028.04) *uta śravo vivide śyeno atra* ему удалась быстрота (полёта)
+[4,28,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.028.html#rv04.028.04) *uta śravo vivide śyeno atra* ему удалась быстрота (полета)
 [26,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.026.html#rv04.026.05) *sarvairyajñairātmānaṃ saṃpannaṃ vide*
 [ŚAT. BR. 10,2,6,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,6,15) *vagnumiyarti yaṃ vide* который он может сделать
 [ṚV. 9,14,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.06) [8,51,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.051.html#rv08.051.09)
@@ -3147,7 +3147,7 @@ v. l.). ср. *nivid* . — caus.
 [136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,136) *havirdhānamavindata*
 [BHĀG. P. 4,24,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,5)
 
-- **RU:** — 7) взять женщину в жёны: *somaḥ prathamo vivide*
+- **RU:** — 7) взять женщину в жены: *somaḥ prathamo vivide*
 [ṚV. 10,85,40.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.40) *vindeta sutāṃ mamaitām*
 [MBH. 1,7192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7192) [13,2530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2530)
 [M. 9,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,69)
@@ -3183,8 +3183,8 @@ v. l.). ср. *nivid* . — caus.
 [7,8,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.02) *sa vidvānpravasanvide* (als Antwort auf die Frage *kiṃ svidvidvānpravasati*) er entfernt sich wirklich
 [ŚAT. BR. 11,3,1,6](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,6) (*lābhāya* Comm.). Die Redensart *yathā vide* wie es geht, wie es so ist d. h. wie gewöhnlich und so gut als möglich: *dṛ|ā cidasmā anu duryathā vide*
 [ṚV. 1,127,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.04) *ahannindro ya˚* [132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.03) *tantuṃ tanuṣva pūrvyaṃ ya˚* [8,13,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.013.html#rv08.013.14) [29.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.013.html#rv08.013.29) *indramarca ya˚* [58,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.058.html#rv08.058.04) [VĀLAKH. 1,1.] [ṚV. 9,86,32.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.32) *somo jaitrasya cetati ya˚* [106,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.106.html#rv09.106.02) [AV. 12,3,54.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.54) — *yaccānyadasmākaṃ vidyate dhanam* [MBH. 1,7070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7070) [3,3034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3034) *buddhyā samo yasya naro na vidyate* [15711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15711) [Spr. 1373.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1373) [1496.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1496) [1670.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1670) *vinipāto na vidyate* [M. 4,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,146) *mānuṣe vidyate kriyā*
-[7,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [8,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,183) [381.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,381) [9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) [BHAG. 2,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,16) [31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,31) [3,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,17) [4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) [16,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,7) [MBH. 1,6143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6143) [3,2571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2571) [15699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15699) [R. 2,22,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) [39,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,5) [R. GORR. 2,17,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,41) [4,37,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,28) [6,82,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,9) [Spr. (II) 404.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?404) [670.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?670) [1296.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1296) [(I) 1318.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1318) [1507.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1507) [4995.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4995) [KATHĀS. 25,243.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,243) [26,192.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,192) [MĀRK. P. 30,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?30,18) [LA. (III) 7,8. 17,16.] *vijñātameva bhagavanvidyate yaddhitāya naḥ*
-[86,11.] *vidyante* [Spr. 4996.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4996) *vidyeta* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [KATHĀS. 24,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,189) *svarge vidyasva* [BHAṬṬ. 20,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?20,33) *vidyati* [MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) *vidyanti* [R. 6,86,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,17) *vidyate bhoktum* es ist Etwas da zum Essen [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), Schol. *vidyate tatrabhavānvṛṣalaṃ yājayiṣyati* geschieht es wirklich —, ist es möglich, dass? [3,146](https://ashtadhyayi.com/sutraani/3/3/146), Schol. *vidyamāna* da seiend, vorhanden [P. 3,2,126](https://ashtadhyayi.com/sutraani/3/2/126), Vārtt. 4, Schol. [AK. 3,4,14,86.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,86) [Spr. (II) 427.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?427) [(I) 1102.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1102) [2793.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2793) *˚mati* _adj._ [3220.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3220) [P. 4,1,57](https://ashtadhyayi.com/sutraani/4/1/57), Schol. [1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Vārtt., Schol. *avidyamāna*
+[7,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [8,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,183) [381.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,381) [9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) [BHAG. 2,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,16) [31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,31) [3,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,17) [4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) [16,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,7) [MBH. 1,6143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6143) [3,2571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2571) [15699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15699) [R. 2,22,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) [39,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,5) [R. GORR. 2,17,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,41) [4,37,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,28) [6,82,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,9) [Spr. (II) 404.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?404 "Spr. (II) 404: aparādho na me 'stīti naitadviśvāsakāraṇam | vidyate hi nṛśaṃsebhyo bhayaṃ guṇavatāmapi || — (139.) Wenn Jemand zu sich sagen kann «ich habe Niemand Etwas zu Leide gethan», so ist dies für ihn noch kein Grund zum Vertrauen: auch Tugendhaften droht ja Gefahr von Bösen.") [670.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?670) [1296.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1296) [(I) 1318.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1318) [1507.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1507) [4995.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4995) [KATHĀS. 25,243.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,243) [26,192.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,192) [MĀRK. P. 30,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?30,18) [LA. (III) 7,8. 17,16.] *vijñātameva bhagavanvidyate yaddhitāya naḥ*
+[86,11.] *vidyante* [Spr. 4996.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4996) *vidyeta* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [KATHĀS. 24,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,189) *svarge vidyasva* [BHAṬṬ. 20,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?20,33) *vidyati* [MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) *vidyanti* [R. 6,86,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,17) *vidyate bhoktum* es ist Etwas da zum Essen [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), Schol. *vidyate tatrabhavānvṛṣalaṃ yājayiṣyati* geschieht es wirklich —, ist es möglich, dass? [3,146](https://ashtadhyayi.com/sutraani/3/3/146), Schol. *vidyamāna* da seiend, vorhanden [P. 3,2,126](https://ashtadhyayi.com/sutraani/3/2/126), Vārtt. 4, Schol. [AK. 3,4,14,86.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,86) [Spr. (II) 427.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?427 "Spr. (II) 427: api putraiḥ kalatrairvā prāṇānrakṣeta paṇḍitaḥ | vidyamānairyatastaiḥ syātsarvaṃ bhūyo 'pi dehinām || — (149.) Sogar um den Preis der Söhne oder auch der Weiber soll der Verständige sein Leben retten, da, wenn dieses bleibt, alles Andere den Menschen wieder zufallen kann.") [(I) 1102.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1102) [2793.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2793) *˚mati* _adj._ [3220.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3220) [P. 4,1,57](https://ashtadhyayi.com/sutraani/4/1/57), Schol. [1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Vārtt., Schol. *avidyamāna*
 [M. 2,248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,248) [11,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,116)
 [BHĀG. P. 4,29,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,35) *avidyamānavat* als wenn es nicht da wäre
 [P. 8,1,72.](https://ashtadhyayi.com/sutraani/8/1/72) [3,1,3](https://ashtadhyayi.com/sutraani/3/1/3), Vārtt. *vinna* Kār. zu [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56)
@@ -3196,7 +3196,7 @@ v. l.). ср. *nivid* . — caus.
 [DHĀTUP. 20,26](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=20)) редко в Веда (
 [ṚV. 5,44,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.09)
 [AV. 19,49,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.049.html#av19.049.07)
-[VS. 20,26](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,26)), позднее обычно в значении «имеется, есть, существует», особ. с отрицанием
+[VS. 20,26](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,26)), позднее обычно в знач. «имеется, есть, существует», особ. с отрицанием
 [LĀṬY. 8,5,16.] *yadyudumbaro na vidyate*
 [ŚĀṄKH. ŚR. 17,1,18.] *na tasya kāryaṃ karaṇaṃ ca vidyate*
 [ŚVETĀŚV. UP. 6,8.] *nahi vaḥ śatrurvivide*
@@ -3209,8 +3209,8 @@ v. l.). ср. *nivid* . — caus.
 [7,8,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.008.html#rv07.008.02) *sa vidvānpravasanvide* (в ответ на вопрос *kiṃ svidvidvānpravasati*) «он действительно удаляется»
 [ŚAT. BR. 11,3,1,6](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,6) (*lābhāya* коммент.). Оборот *yathā vide* «как обстоит дело, как оно вообще бывает» т.е. «как обычно» и «насколько возможно лучше»: *dṛ|ā cidasmā anu duryathā vide*
 [ṚV. 1,127,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.04) *ahannindro ya˚* [132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.03) *tantuṃ tanuṣva pūrvyaṃ ya˚* [8,13,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.013.html#rv08.013.14) [29.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.013.html#rv08.013.29) *indramarca ya˚* [58,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.058.html#rv08.058.04) [VĀLAKH. 1,1.] [ṚV. 9,86,32.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.32) *somo jaitrasya cetati ya˚* [106,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.106.html#rv09.106.02) [AV. 12,3,54.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.54) — *yaccānyadasmākaṃ vidyate dhanam* [MBH. 1,7070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7070) [3,3034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3034) *buddhyā samo yasya naro na vidyate* [15711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15711) [Spr. 1373.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1373) [1496.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1496) [1670.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1670) *vinipāto na vidyate* [M. 4,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,146) *mānuṣe vidyate kriyā*
-[7,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [8,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,183) [381.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,381) [9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) [BHAG. 2,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,16) [31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,31) [3,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,17) [4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) [16,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,7) [MBH. 1,6143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6143) [3,2571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2571) [15699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15699) [R. 2,22,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) [39,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,5) [R. GORR. 2,17,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,41) [4,37,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,28) [6,82,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,9) [Spr. (II) 404.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?404) [670.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?670) [1296.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1296) [(I) 1318.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1318) [1507.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1507) [4995.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4995) [KATHĀS. 25,243.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,243) [26,192.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,192) [MĀRK. P. 30,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?30,18) [LA. (III) 7,8. 17,16.] *vijñātameva bhagavanvidyate yaddhitāya naḥ*
-[86,11.] *vidyante* [Spr. 4996.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4996) *vidyeta* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [KATHĀS. 24,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,189) *svarge vidyasva* [BHAṬṬ. 20,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?20,33) *vidyati* [MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) *vidyanti* [R. 6,86,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,17) *vidyate bhoktum* есть нечто, что можно съесть [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), схол. *vidyate tatrabhavānvṛṣalaṃ yājayiṣyati* происходит ли это в действительности —, возможно ли , что? [3,146](https://ashtadhyayi.com/sutraani/3/3/146), схол. *vidyamāna* — сущий, имеющийся в наличии [P. 3,2,126](https://ashtadhyayi.com/sutraani/3/2/126), Вартт. 4, схол. [AK. 3,4,14,86.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,86) [Spr. (II) 427.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?427) [(I) 1102.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1102) [2793.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2793) *˚mati* _adj._ [3220.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3220) [P. 4,1,57](https://ashtadhyayi.com/sutraani/4/1/57), схол. [1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Вартт., схол. *avidyamāna*
+[7,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,205) [8,183.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,183) [381.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,381) [9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) [BHAG. 2,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,16) [31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,31) [3,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,17) [4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) [16,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,7) [MBH. 1,6143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6143) [3,2571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2571) [15699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15699) [R. 2,22,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) [39,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,5) [R. GORR. 2,17,41.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,41) [4,37,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,28) [6,82,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,9) [Spr. (II) 404.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?404 "Spr. (II) 404: aparādho na me 'stīti naitadviśvāsakāraṇam | vidyate hi nṛśaṃsebhyo bhayaṃ guṇavatāmapi || — (139.) Wenn Jemand zu sich sagen kann «ich habe Niemand Etwas zu Leide gethan», so ist dies für ihn noch kein Grund zum Vertrauen: auch Tugendhaften droht ja Gefahr von Bösen.") [670.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?670) [1296.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1296) [(I) 1318.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1318) [1507.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1507) [4995.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4995) [KATHĀS. 25,243.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,243) [26,192.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,192) [MĀRK. P. 30,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?30,18) [LA. (III) 7,8. 17,16.] *vijñātameva bhagavanvidyate yaddhitāya naḥ*
+[86,11.] *vidyante* [Spr. 4996.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4996) *vidyeta* [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) [KATHĀS. 24,189.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,189) *svarge vidyasva* [BHAṬṬ. 20,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?20,33) *vidyati* [MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) *vidyanti* [R. 6,86,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,17) *vidyate bhoktum* есть нечто, что можно съесть [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), схол. *vidyate tatrabhavānvṛṣalaṃ yājayiṣyati* происходит ли это в действительности —, возможно ли , что? [3,146](https://ashtadhyayi.com/sutraani/3/3/146), схол. *vidyamāna* — сущий, имеющийся в наличии [P. 3,2,126](https://ashtadhyayi.com/sutraani/3/2/126), Вартт. 4, схол. [AK. 3,4,14,86.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,86) [Spr. (II) 427.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?427 "Spr. (II) 427: api putraiḥ kalatrairvā prāṇānrakṣeta paṇḍitaḥ | vidyamānairyatastaiḥ syātsarvaṃ bhūyo 'pi dehinām || — (149.) Sogar um den Preis der Söhne oder auch der Weiber soll der Verständige sein Leben retten, da, wenn dieses bleibt, alles Andere den Menschen wieder zufallen kann.") [(I) 1102.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1102) [2793.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2793) *˚mati* _adj._ [3220.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3220) [P. 4,1,57](https://ashtadhyayi.com/sutraani/4/1/57), схол. [1,2,48](https://ashtadhyayi.com/sutraani/1/2/48), Вартт., схол. *avidyamāna*
 [M. 2,248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,248) [11,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,116)
 [BHĀG. P. 4,29,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,35) *avidyamānavat* «как если бы этого не было»
 [P. 8,1,72.](https://ashtadhyayi.com/sutraani/8/1/72) [3,1,3](https://ashtadhyayi.com/sutraani/3/1/3), Вартт. *vinna* Кар. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56)
@@ -3254,5 +3254,5 @@ v. l.). ср. *nivid* . — caus.
 
 **10)** — 10) *vindyāt* fehlerhaft für *vidyāt* (wie die v. l. häufig hat) von 1. *vid* [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) [5,71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,71) [83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,83) [8,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,7) [46,35.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,35) [41.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,41) [53,57.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,57) [58,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,1) [78,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,5) [86,78.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,78) [96,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?96,3) [BṚH. 1,18. 11. 9. 20]; vgl. noch v. l. zu [VARĀH. BṚH. S. 46,83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,83) [68,24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,24) Es ist hierbei jedoch zu bemerken, dass [MBH. 3,2874](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2874) auch *vindati* in der Bed. von *vetti* gebraucht wird.
 
-- **RU:** — 10) *vindyāt* ошибочно вместо *vidyāt* (как нередко бывает у v. l.) от 1. *vid* [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) [5,71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,71) [83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,83) [8,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,7) [46,35.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,35) [41.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,41) [53,57.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,57) [58,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,1) [78,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,5) [86,78.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,78) [96,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?96,3) [BṚH. 1,18. 11. 9. 20]; ср. ещё v. l. к [VARĀH. BṚH. S. 46,83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,83) [68,24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,24) При этом, однако, следует заметить, что [MBH. 3,2874](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2874) употребляется также *vindati* в значении знач. от *vetti*.
+- **RU:** — 10) *vindyāt* ошибочно вм. *vidyāt* (как нередко бывает у v. l.) от 1. *vid* [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) [5,71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,71) [83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,83) [8,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,7) [46,35.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,35) [41.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,41) [53,57.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,57) [58,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,1) [78,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,5) [86,78.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?86,78) [96,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?96,3) [BṚH. 1,18. 11. 9. 20]; ср. еще v. l. к [VARĀH. BṚH. S. 46,83.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,83) [68,24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,24) При этом, однако, следует заметить, что [MBH. 3,2874](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2874) употребляется также *vindati* в знач. от *vetti*.
   <sub>mixed</sub>

@@ -5,5 +5,5 @@
 
 **1)** 3. *gā* vgl. noch *tamogā* .
 
-- **RU:** 3. *gā* ср. ещё *tamogā* .
+- **RU:** 3. *gā* ср. еще *tamogā* .
   <sub>attested</sub>

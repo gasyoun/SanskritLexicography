@@ -20,7 +20,7 @@
 [BHĀG. P. 10,82,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,15) *anyo'nyaṃ nijaghnatuḥ* losschlagen auf
 [MBH. 1,7729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7729)
 [RAGH. 7,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,41) *hatamapi nihantyeva madanaḥ*
-[Spr. (II) 1895.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1895) *virāṭaputraṃ ca kare nijaghne* traf
+[Spr. (II) 1895.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1895 "Spr. (II) 1895: kṛśaḥ kāṇaḥ khañjaḥ śravaṇarahitaḥ pucchavikalo vraṇī pūyaklinnaḥ kṛmikulaśatairāvṛtatanuḥ | kṣudhākṣāmo jīrṇaḥ piṭharakakapālārditagalaḥ śunīmanveti… — (729.) Ein magerer, einäugiger, lahmer, ohrenloser, am Schwanze verstümmelter, räudiger, von Eiter feuchter, mit Hunderten von Würmern bedeckter, durch Hunger ausgemergelter, alter Hund, den eine Topfscherbe in der Kehle…") *virāṭaputraṃ ca kare nijaghne* traf
 [MBH. 4,1680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1680) *śirāṃsi viśikhairnyahanam*
 [3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) *nighnandviṣatāṃ manāṃsi*
 [15653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15653)
@@ -42,7 +42,7 @@
 [BHĀG. P. 10,82,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,82,15) *anyo'nyaṃ nijaghnatuḥ* наносить удар по
 [MBH. 1,7729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7729)
 [RAGH. 7,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,41) *hatamapi nihantyeva madanaḥ*
-[Spr. (II) 1895.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1895) *virāṭaputraṃ ca kare nijaghne* поразил
+[Spr. (II) 1895.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1895 "Spr. (II) 1895: kṛśaḥ kāṇaḥ khañjaḥ śravaṇarahitaḥ pucchavikalo vraṇī pūyaklinnaḥ kṛmikulaśatairāvṛtatanuḥ | kṣudhākṣāmo jīrṇaḥ piṭharakakapālārditagalaḥ śunīmanveti… — (729.) Ein magerer, einäugiger, lahmer, ohrenloser, am Schwanze verstümmelter, räudiger, von Eiter feuchter, mit Hunderten von Würmern bedeckter, durch Hunger ausgemergelter, alter Hund, den eine Topfscherbe in der Kehle…") *virāṭaputraṃ ca kare nijaghne* поразил
 [MBH. 4,1680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1680) *śirāṃsi viśikhairnyahanam*
 [3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) *nighnandviṣatāṃ manāṃsi*
 [15653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15653)
@@ -62,7 +62,7 @@
 [KĀTY. ŚR. 6,5,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,5,16) *idaṃ śarīram*
 [ŚAT. BR. 14,7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,4) *nihanti janaṃ kuvaidyaḥ*
 [SUŚR. 1,12,19.]
-[Spr. (II) 2573.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2573) [2874.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2874) [6437.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6437) [6631.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6631) [7322.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7322) *nihanmi*
+[Spr. (II) 2573.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2573 "Spr. (II) 2573: tīrthasthitaḥ svakulajāṃstimiratti bhuṅkte maunī bakastimimupetya vanāntavāsī | vyādho nihanti tu bakaṃ prabhavanti te te pātrāṇyuparyupari vañcanacañ… — (4131.) Der in heiligem Wasser lebende Raubfisch Timi verzehrt seine eigenen Geschlechtsgenossen, der dem Gelübde des Schweigens obliegende Reiher verschluckt den Timi, der im Walde wohnende Jäger aber schleicht sich her…") [2874.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2874) [6437.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6437) [6631.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6631) [7322.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7322) *nihanmi*
 [MBH. 1,5997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5997) [5,7443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7443)
 [R. 3,43,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,10) [49,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,13)
 [KATHĀS. 18,332.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,332) [32,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,33) *ātmānamātmanā*
@@ -70,11 +70,11 @@
 [BHAṬṬ. 2,34.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,34) *nihanma*
 [MBH. 3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273) *nighnanti*
 [R. 1,40,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,26) [4,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,16)
-[Spr. (II) 3304.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3304)
+[Spr. (II) 3304.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3304 "Spr. (II) 3304: na devāḥ śastramādāya nighnanti ripuvatkrudhā | yaṃ tu hiṃsitucchanti buddhyā viśleṣayanti tam || — Die Götter tödten nicht nach Art eines Feindes, indem sie etwa im Zorn einen Dolch ergreifen")
 [RĀJA-TAR. 1,68](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,68) (zu lesen *nighnanti sma patiṃvarām*).
 [BHĀG. P. 1,15,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,24) [5,26,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,24) *nighnant*
 [R. 2,36,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,6) *prāṇān*
-[Spr. (II) 3121.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3121)
+[Spr. (II) 3121.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3121 "Spr. (II) 3121: dharmārthakāmamokṣāṇāṃ prāṇāḥ saṃsthitihetavaḥ | tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam || — (1319.) Das Leben ist die Bedingung für das Bestehen des Guten, des Nützlichen, des Angenehmen und der Erlösung. Was hat der nicht vernichtet, der jenes vernichtet? Was hat der nicht bewahrt, der jenes bewahrt?")
 [VARĀH. BṚH. S. 7,5](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,5) (ein Planet den andern im Planetenkampf). *muṣṭibhiḥ*
 [BHĀG. P. 1,15,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,22) *nighnamāna*
 [MBH. 7,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1529) *nihata*
@@ -98,14 +98,14 @@ u. s. w. [MBH. 4,34.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.34) [Ś
 [MBH. 3,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.560) *nihaṃsyāvas*
 [7,3779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3779) *nihantum*
 [R. 3,32,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,8) [4,35,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,35,18)
-[Spr. (II) 5624.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624)
+[Spr. (II) 5624.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624 "Spr. (II) 5624: yo balapronnataṃ yāti nihantuṃ savalo 'pyarim | vimadaḥ sa nivarteta śīrṇadanto yathā gajaḥ || — (2547.) Wer, sei er auch mächtig, hingeht einen an Macht überlegenen Feind zu erlegen, der kehrt wie ein Elephant mit zerbrochenem Zahne, von seinem Wahne geheilt, zurück.")
 [KATHĀS. 9,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,15) [18,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,172)
 [RĀJA-TAR. 6,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,61) *nihatya*
 [MAITRYUP. 6,28.] [YĀJÑ. 3,262](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,262) (*nihanya* der Text, *nihatya*
-v. l.). [MBH. 3,2401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2401) [15682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15682) [5,7372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7372) [RAGH. 11,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,71) [Spr. (II) 7610](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610) (so v. a. züchtigen).
+v. l.). [MBH. 3,2401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2401) [15682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15682) [5,7372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7372) [RAGH. 11,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,71) [Spr. (II) 7610](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610 "Spr. (II) 7610: strīmudrāṃ jhaṣaketanasya vivṛtāṃ sarvārthasaṃpatkarīṃ ye mūḍhāḥ pravihāya yānti kudhiyo mithyāphalānveṣiṇaḥ | te tenaiva nihatya nirdayataraṃ nagnīkṛ… — (3305.) Die Thörichten, die das Weib, dieses offen zu Tage liegende, Alles gewährende Siegel des Liebesgottes nicht beachtend, in ihrer Dummheit eitlen Früchten nachgehen, werden von diesem Gotte auf das unbarmherzigste…") (so v. a. züchtigen).
 [MĀRK. P. 21,87.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,87) *daṇḍenaiva nihanyate*
 [M. 7,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,27)
-[Spr. (II) 3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792)
+[Spr. (II) 3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792 "Spr. (II) 3792: nihatasya paśeryajñe svargaprāptiryadīṣyate | svapitā yajamānena kiṃ na tasmānnihanyate || — (4477.) Wenn man annimmt, dass ein bei einem Opfer geschlachtetes Thier in den Himmel gelangt, warum schlachtet dann nicht der Opferer seinen Vater?")
 [H. 829.](https://sanskrit-lexicon-scans.github.io/abch2/app1?829) mit gen.
 [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) *caurasya nihanti*
 Schol. *nighnāna* niederzuschlagen im Stande
@@ -113,7 +113,7 @@ Schol. *nighnāna* niederzuschlagen im Stande
 [VOP. 26,140.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,140)
 [BHAṬṬ. 5,81.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,81) *stambo yena nihanyate* niedergehauen —, gemäht wird
 [AK. 3,3,35.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,35) *daivaṃ nihatya* so v. a. überwindend
-[Spr. (II) 1255.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1255)
+[Spr. (II) 1255.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1255 "Spr. (II) 1255: udyoginaṃ puruṣasiṃhamupaiti lakṣmīrdaivena deyamiti kāpuruṣā vadanti | daivaṃ nihatya kuru pauruṣamātmaśaktyā yatne kṛte na sidhyati ko 'tra doṣaḥ || — (471.) Das Glück kommt zum herzhaften Manne, der Mühe nicht scheut")
 
 - **RU:** — 4) повергать, поражать, убивать, умерщвлять
 [ṚV. 2,13,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.08) *vajreṇa śuṣṇam*
@@ -122,7 +122,7 @@ Schol. *nighnāna* niederzuschlagen im Stande
 [KĀTY. ŚR. 6,5,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,5,16) *idaṃ śarīram*
 [ŚAT. BR. 14,7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,4) *nihanti janaṃ kuvaidyaḥ*
 [SUŚR. 1,12,19.]
-[Spr. (II) 2573.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2573) [2874.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2874) [6437.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6437) [6631.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6631) [7322.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7322) *nihanmi*
+[Spr. (II) 2573.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2573 "Spr. (II) 2573: tīrthasthitaḥ svakulajāṃstimiratti bhuṅkte maunī bakastimimupetya vanāntavāsī | vyādho nihanti tu bakaṃ prabhavanti te te pātrāṇyuparyupari vañcanacañ… — (4131.) Der in heiligem Wasser lebende Raubfisch Timi verzehrt seine eigenen Geschlechtsgenossen, der dem Gelübde des Schweigens obliegende Reiher verschluckt den Timi, der im Walde wohnende Jäger aber schleicht sich her…") [2874.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2874) [6437.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6437) [6631.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6631) [7322.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7322) *nihanmi*
 [MBH. 1,5997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5997) [5,7443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7443)
 [R. 3,43,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,10) [49,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,13)
 [KATHĀS. 18,332.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,332) [32,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,33) *ātmānamātmanā*
@@ -130,11 +130,11 @@ Schol. *nighnāna* niederzuschlagen im Stande
 [BHAṬṬ. 2,34.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,34) *nihanma*
 [MBH. 3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273) *nighnanti*
 [R. 1,40,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,26) [4,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,16)
-[Spr. (II) 3304.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3304)
+[Spr. (II) 3304.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3304 "Spr. (II) 3304: na devāḥ śastramādāya nighnanti ripuvatkrudhā | yaṃ tu hiṃsitucchanti buddhyā viśleṣayanti tam || — Die Götter tödten nicht nach Art eines Feindes, indem sie etwa im Zorn einen Dolch ergreifen")
 [RĀJA-TAR. 1,68](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,68) (следует читать *nighnanti sma patiṃvarām*).
 [BHĀG. P. 1,15,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,24) [5,26,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,24) *nighnant*
 [R. 2,36,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,6) *prāṇān*
-[Spr. (II) 3121.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3121)
+[Spr. (II) 3121.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3121 "Spr. (II) 3121: dharmārthakāmamokṣāṇāṃ prāṇāḥ saṃsthitihetavaḥ | tānnighnatā kiṃ na hataṃ rakṣatā kiṃ na rakṣitam || — (1319.) Das Leben ist die Bedingung für das Bestehen des Guten, des Nützlichen, des Angenehmen und der Erlösung. Was hat der nicht vernichtet, der jenes vernichtet? Was hat der nicht bewahrt, der jenes bewahrt?")
 [VARĀH. BṚH. S. 7,5](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,5) (одна планета другую в сражении планет). *muṣṭibhiḥ*
 [BHĀG. P. 1,15,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,22) *nighnamāna*
 [MBH. 7,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1529) *nihata*
@@ -158,14 +158,14 @@ imper.
 [MBH. 3,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.560) *nihaṃsyāvas*
 [7,3779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3779) *nihantum*
 [R. 3,32,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,8) [4,35,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,35,18)
-[Spr. (II) 5624.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624)
+[Spr. (II) 5624.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624 "Spr. (II) 5624: yo balapronnataṃ yāti nihantuṃ savalo 'pyarim | vimadaḥ sa nivarteta śīrṇadanto yathā gajaḥ || — (2547.) Wer, sei er auch mächtig, hingeht einen an Macht überlegenen Feind zu erlegen, der kehrt wie ein Elephant mit zerbrochenem Zahne, von seinem Wahne geheilt, zurück.")
 [KATHĀS. 9,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,15) [18,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,172)
 [RĀJA-TAR. 6,61.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,61) *nihatya*
 [MAITRYUP. 6,28.] [YĀJÑ. 3,262](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,262) (*nihanya* текст, *nihatya*
-v. l.). [MBH. 3,2401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2401) [15682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15682) [5,7372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7372) [RAGH. 11,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,71) [Spr. (II) 7610](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610) (так преим. карать).
+v. l.). [MBH. 3,2401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2401) [15682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15682) [5,7372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7372) [RAGH. 11,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,71) [Spr. (II) 7610](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610 "Spr. (II) 7610: strīmudrāṃ jhaṣaketanasya vivṛtāṃ sarvārthasaṃpatkarīṃ ye mūḍhāḥ pravihāya yānti kudhiyo mithyāphalānveṣiṇaḥ | te tenaiva nihatya nirdayataraṃ nagnīkṛ… — (3305.) Die Thörichten, die das Weib, dieses offen zu Tage liegende, Alles gewährende Siegel des Liebesgottes nicht beachtend, in ihrer Dummheit eitlen Früchten nachgehen, werden von diesem Gotte auf das unbarmherzigste…") (так преим. карать).
 [MĀRK. P. 21,87.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,87) *daṇḍenaiva nihanyate*
 [M. 7,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,27)
-[Spr. (II) 3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792)
+[Spr. (II) 3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792 "Spr. (II) 3792: nihatasya paśeryajñe svargaprāptiryadīṣyate | svapitā yajamānena kiṃ na tasmānnihanyate || — (4477.) Wenn man annimmt, dass ein bei einem Opfer geschlachtetes Thier in den Himmel gelangt, warum schlachtet dann nicht der Opferer seinen Vater?")
 [H. 829.](https://sanskrit-lexicon-scans.github.io/abch2/app1?829) с gen.
 [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) *caurasya nihanti*
 схол. *nighnāna* способный поразить
@@ -173,7 +173,7 @@ v. l.). [MBH. 3,2401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2401) 
 [VOP. 26,140.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,140)
 [BHAṬṬ. 5,81.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,81) *stambo yena nihanyate* будет срублен —, скошен
 [AK. 3,3,35.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,35) *daivaṃ nihatya* так преим. побеждая
-[Spr. (II) 1255.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1255)
+[Spr. (II) 1255.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1255 "Spr. (II) 1255: udyoginaṃ puruṣasiṃhamupaiti lakṣmīrdaivena deyamiti kāpuruṣā vadanti | daivaṃ nihatya kuru pauruṣamātmaśaktyā yatne kṛte na sidhyati ko 'tra doṣaḥ || — (471.) Das Glück kommt zum herzhaften Manne, der Mühe nicht scheut")
   <sub>attested</sub>
 
 **5)** — 5) zerstören, zu Grunde richten, in's Verderben bringen, vernichten, vertreiben: *śaravarṣam*

@@ -20,6 +20,6 @@
 [9,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818)
 
 - **RU:** — 2) намереваться: *tapaḥ samabhisaṃdhāya vanamevānvapadyata*
-[MBH. 3,12714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12714) стремиться к: *yotsye 'haṃ mātulenādya kṣatradharmeṇa ṣārthivāḥ . svayaṃ samabhisaṃdhāya vijayāyetarāya ca ..* твёрдо решившись победить или пасть
+[MBH. 3,12714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12714) стремиться к: *yotsye 'haṃ mātulenādya kṣatradharmeṇa ṣārthivāḥ . svayaṃ samabhisaṃdhāya vijayāyetarāya ca ..* твердо решившись победить или пасть
 [9,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818)
   <sub>attested</sub>

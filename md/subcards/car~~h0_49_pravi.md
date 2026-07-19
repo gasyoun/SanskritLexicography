@@ -9,7 +9,7 @@
 [HIT. II,135.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,135)
 
 - **RU:** — *pravi*
- 1) продвигаться вперёд, идти вперёд: *mahābalāste kupitāḥ parasparaṃ niṣūdayantaḥ pravicerurojasā*
+ 1) продвигаться вперед, идти вперед: *mahābalāste kupitāḥ parasparaṃ niṣūdayantaḥ pravicerurojasā*
 [MBH. 7,1451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1451) *yatheṣṭaṃ svacchandaḥ pravicarati matto gaja iva*
 [HIT. II,135.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,135)
   <sub>attested</sub>

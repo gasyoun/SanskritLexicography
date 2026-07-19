@@ -35,7 +35,7 @@
 [13,5,4,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,23) *yadā yoṣā reto dhatte 'tha payo dhatte*
 [7,1,1,44.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,1,1,44) pass.: *garbhā dhīyante* плод зачинается
 [AIT. BR. 1,3.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,3) *prajā adhīyanta*
-[VS. 14,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,28) *amkannadhita prājanīti yadā vai skandatyatha dhīyate yadā dhīyate 'tha prajāyate* он излился, был зачат, рождён
+[VS. 14,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,28) *amkannadhita prājanīti yadā vai skandatyatha dhīyate yadā dhīyate 'tha prajāyate* он излился, был зачат, рожден
 [ŚAT. BR. 12,4,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,7) — *dhatte — hari viriñci hareti saṃjñāḥ* получает имена
 [BHĀG. P. 1,2,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,23) также act.: *rājetyadhānnāmadheyam*
 [4,22,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,56)
@@ -138,6 +138,6 @@ behaupten, halten; med.: *varṇaṃ dadhire*
 [ŚIŚ. 9,3.] *urojadvayam*
 [86.] *vapuḥ*
 [10.] [KIR. 5,5. 7.] *dvijihvavadanaṃ dhatte duṣṭo durjanapannagaḥ*
-[KĀM. NĪTIS. 3,20.] Вместо *adhāyata* «обладал» в месте: *(dhanuḥ) etadvarṣasahasraṃ tu brahmā pūrvamadhārayat . tato 'nantaramevātha prajāpatiradhāyata ..*
+[KĀM. NĪTIS. 3,20.] Вм. *adhāyata* «обладал» в месте: *(dhanuḥ) etadvarṣasahasraṃ tu brahmā pūrvamadhārayat . tato 'nantaramevātha prajāpatiradhāyata ..*
 [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) по всей вероятности следует читать *adhārayat*.
   <sub>attested</sub>

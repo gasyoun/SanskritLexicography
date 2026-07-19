@@ -10,5 +10,5 @@
 
 **1)** 1) an der angeführten Stelle einfach um Erlaubniss bitten (ohne obj.), da der acc. von *uddhṛtya* abhängt.
 
-- **RU:** 1) в приведённом месте просто просить разрешения (без obj.), так как acc. зависит от *uddhṛtya*.
+- **RU:** 1) в приведенном месте просто просить разрешения (без obj.), так как acc. зависит от *uddhṛtya*.
   <sub>attested</sub>

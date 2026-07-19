@@ -75,7 +75,7 @@
 
 **14)** — 14〉 *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) fehlerhaft für *adhārayat*.
 
-- **RU:** *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) ошибочно вместо *adhārayat*.
+- **RU:** *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) ошибочно вм. *adhārayat*.
   <sub>attested</sub>
 
 **simplex_note)** — Caus. *dhāpayati* vom Simplex nicht zu belegen.
@@ -120,7 +120,7 @@
 
 **preverb_apa)** — Mit *ati*, *atihita* beseitigt.
 
-- **RU:** С *ati*, *atihita* устранённый.
+- **RU:** С *ati*, *atihita* устраненный.
   <sub>attested</sub>
 
 **preverb_abhi_intro)** — Mit *adhi*
@@ -165,12 +165,12 @@
 
 **preverb_adhi_3)** — 3〉 zugestehen, überlassen [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] fehlerhaft für *˚dhyāsyati*.
 
-- **RU:** признавать, предоставлять [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] ошибочно вместо *˚dhyāsyati*.
+- **RU:** признавать, предоставлять [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] ошибочно вм. *˚dhyāsyati*.
   <sub>attested</sub>
 
 **preverb_anu)** — Mit *vyanu* Med. entfalten, ausbreiten.
 
-- **RU:** С *vyanu* Med. развёртывать, распростирать.
+- **RU:** С *vyanu* Med. развертывать, распростирать.
   <sub>attested</sub>
 
 **preverb_antar_intro)** — Mit *antar*
@@ -240,7 +240,7 @@
 
 **preverb_antar_4a)** — a〉 getrennt.
 
-- **RU:** отделённый.
+- **RU:** отделенный.
   <sub>attested</sub>
 
 **preverb_antar_4b)** — b〉 bedeckt, — mit (im Comp. vorangehend).
@@ -280,7 +280,7 @@
 
 **preverb_aa_3)** — 3〉 zudecken, verstopfen, verschliessen, schliessen, einschliessen, verhüllen, bedecken, verdecken, verbergen. Pass. verhüllt werden, spurlos verschwinden in (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* und *pihita* zugedeckt u. s. w., unsichtbar gemacht, in seiner Thätigkeit gehemmt.
 
-- **RU:** покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стеснённый в своей деятельности.
+- **RU:** покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
   <sub>attested</sub>
 
 **preverb_aa_caus)** — Caus. zudecken lassen mit (Instr.), schliessen lassen (mit doppeltem Acc.).
@@ -310,7 +310,7 @@
 
 **preverb_pari_3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
 
-- **RU:** обёртывать, облагать чем-либо (Instr.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряжённый.
+- **RU:** обертывать, облагать чем-либо (Instr.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряженный.
   <sub>attested</sub>
 
 **preverb_pari_4)** — 4〉 belegen, mit Truppen überziehen.
@@ -340,7 +340,7 @@
 
 **preverb_pari_9)** — 9〉 angeben, auseinandersetzen, mittheilen, sprechen über, vortragen, Etwas sagen, sprechen, aussprechen. *abhihita* angegeben, angezeigt [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) mitgetheilt, vorgebracht, vorgetragen, gesprochen, worüber oder über wen gesprochen worden ist.
 
-- **RU:** указывать, излагать, сообщать, говорить о, излагать, что-либо говорить, произносить. *abhihita* указанный, обозначенный [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) сообщённый, изложенный, представленный, произнесённый, о чём или о ком сказано.
+- **RU:** указывать, излагать, сообщать, говорить о, излагать, что-либо говорить, произносить. *abhihita* указанный, обозначенный [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) сообщенный, изложенный, представленный, произнесенный, о чем или о ком сказано.
   <sub>attested</sub>
 
 **preverb_pari_10)** — 10〉 zu Jmd Etwas sagen, — sprechen; mit doppeltem Acc. *abhihita* zu dem Etwas gesagt worden ist [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
@@ -375,7 +375,7 @@
 
 **preverb_prati_3)** — 3〉 seine Zustimmung geben.
 
-- **RU:** давать своё согласие.
+- **RU:** давать свое согласие.
   <sub>attested</sub>
 
 **preverb_prati_samaa)** — Mit *samabhi* zu Jmd (Acc.) sprechen.
@@ -390,7 +390,7 @@
 
 **preverb_vi_1)** — 1〉 einlegen, einstecken, hineinstellen, einschieben, eintauchen, einschliessen, — in (Loc.). *avahita* steckend, — eingeschlossen in (Loc.); inʼs Wasser gefallen.
 
-- **RU:** вкладывать, вставлять, помещать, вдвигать, погружать, заключать, — в (Loc.). *avahita* вставленный, — заключённый в (Loc.); упавший в воду.
+- **RU:** вкладывать, вставлять, помещать, вдвигать, погружать, заключать, — в (Loc.). *avahita* вставленный, — заключенный в (Loc.); упавший в воду.
   <sub>attested</sub>
 
 **preverb_vi_2)** — 2〉 wegdrängen, eindrücken.
@@ -400,7 +400,7 @@
 
 **preverb_vi_3)** — 3〉 sich versenken in (Loc.), aufmerken, Acht geben, die Aufmerksamkeit richten auf. Vom Verbum fin. nur *avadhīyatām* 3te Sg. Imperat. impers. *avahita* aufmerksam, Acht gebend, ganz bei einer Sache seiend.
 
-- **RU:** погружаться в (Loc.), внимать, наблюдать, сосредотачивать внимание на. От глагола fin. только *avadhīyatām* 3-е Sg. Imperat. impers. *avahita* внимательный, наблюдательный, целиком поглощённый делом.
+- **RU:** погружаться в (Loc.), внимать, наблюдать, сосредотачивать внимание на. От глагола fin. только *avadhīyatām* 3-е Sg. Imperat. impers. *avahita* внимательный, наблюдательный, целиком поглощенный делом.
   <sub>attested</sub>
 
 **preverb_vi_caus)** — Caus. einlegen —, einstecken lassen in (Loc.).
@@ -460,7 +460,7 @@
 
 **preverb_vi2_3)** — 3〉 Pass. getrennt werden. *˚dhīyatām* impers. man trenne sich von (Abl.). *˚hita* getrennt, geschieden, — durch (im Comp. vorangehend).
 
-- **RU:** Pass. разлучаться. *˚dhīyatām* impers. пусть разлучатся с (Abl.). *˚hita* разлучённый, разделённый, — посредством (в Comp. предшествующем).
+- **RU:** Pass. разлучаться. *˚dhīyatām* impers. пусть разлучатся с (Abl.). *˚hita* разлученный, разделенный, — посредством (в Comp. предшествующем).
   <sub>attested</sub>
 
 **preverb_vi2_4)** — 4〉 unterbrechen. Pass. eine Unterbrechung erleiden *˚hita* unterbrochen, gehemmt.
@@ -480,12 +480,12 @@
 
 **preverb_vi2_6a)** — a〉 entfernt, in der Ferne befindlich [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
 
-- **RU:** удалённый, находящийся вдали [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
+- **RU:** удаленный, находящийся вдали [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
   <sub>attested</sub>
 
 **preverb_vi2_6b)** — b〉 durch etwas Dazwischenliegendes getrennt, so v. a. versteckt, der Wahrnehmung entzogen, — durch (im Comp. vorangehend).
 
-- **RU:** разделённый чем-либо промежуточным, так преим. спрятанный, скрытый от восприятия, — посредством (в Comp. предшествующем).
+- **RU:** разделенный чем-либо промежуточным, так преим. спрятанный, скрытый от восприятия, — посредством (в Comp. предшествующем).
   <sub>attested</sub>
 
 **preverb_vi2_6c)** — c〉 von Etwas entfernt, so v. a. zu Etwas nur in Beziehung stehend, nicht unmittelbar betroffen.

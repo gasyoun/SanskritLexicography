@@ -24,5 +24,5 @@
 * tadyajamāno 'gnau pradadhāti*
 [TS. 2,3,2,9.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,9) *āyuḥ prajānāṃ pradadhyātpramāyukāḥ syuḥ*
 [KĀṬH. 28,1.] — Столь часто встречающееся partic. *prahita* посланный, выпущенный, направленный на без сомнения восходит к *hi*; desgl. *saṃprahita* . ср. *pradhāna* . — caus.: *(prabhagnā camūḥ) diśaścatasraḥ sahasā pradhāpitā*
-[MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074); вероятно, лишь ошибочно вместо *pradhāvitā* .
+[MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074); вероятно, лишь ошибочно вм. *pradhāvitā* .
   <sub>attested</sub>

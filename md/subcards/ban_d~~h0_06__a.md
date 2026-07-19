@@ -52,7 +52,7 @@
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* die hohlen Hände zusammengefügt habend
 [DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
-- **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вместо *vātābaddhā abhavan)* «сжатый в кулак»
+- **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вм. *vātābaddhā abhavan)* «сжатый в кулак»
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* «сложивший ладони лодочкой»
 [DAŚAK.] в [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>

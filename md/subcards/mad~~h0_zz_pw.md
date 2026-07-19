@@ -12,7 +12,7 @@
 — a〉 sich freuen, fröhlich, heiter sein, frohlocken, sich ergötzen, schwelgen in, sich wohl befinden bei, sich gütlich thun an oder in (Instr., Gen., Loc., selten Acc.), sich in Etwas berauschen, berauscht (auch in übertragener Bed.) werden durch (Instr.). *mandamāna* freudig.
 
 - **RU:** — 1〉 intrans. Acc., редко Med.
-— a〉 радоваться, быть радостным, весёлым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чём-л., угощаться чем-л. или в чём-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Instr.). *mandamāna* радостно.
+— a〉 радоваться, быть радостным, веселым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чем-л., угощаться чем-л. или в чем-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Instr.). *mandamāna* радостно.
   <sub>attested</sub>
 
 **1b)** — b〉 selig sein (von Göttern und Seligen).
@@ -42,12 +42,12 @@
 
 **3a)** — a〉 freudig erregt, ausgelassen vor Freude, berauscht, trunken (eig. und übertr.).
 
-- **RU:** — a〉 радостно возбуждённый, исступлённый от радости, опьянённый, хмельной (букв. und перен.).
+- **RU:** — a〉 радостно возбужденный, исступленный от радости, опьяненный, хмельной (букв. и перен.).
   <sub>attested</sub>
 
 **3b)** — b〉 berauscht, freudig erregt, so v. a. brünstig (von Thieren aller Art, insbes. aber vom Elephanten). — Die Lexicographen geben folgende Bedeutungen an: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* und *arcati*.
 
-- **RU:** — b〉 опьянённый, радостно возбуждённый, а также преим. находящийся в течке (о животных всякого рода, особ. — об слоне). — Лексикографы приводят следующие значения: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* и *arcati*.
+- **RU:** — b〉 опьяненный, радостно возбужденный, а также преим. находящийся в течке (о животных всякого рода, особ. — об слоне). — Лексикографы приводят следующие значения: *harṣe, stumodasvapragatiṣu, kānta, jāḍe*, = *'valati* и *arcati*.
   <sub>mixed</sub>
 
 **pra-root)** — Caus. *mādayati, ˚te, madayati, ˚te*. *mandayati*;
@@ -77,7 +77,7 @@
 
 **pra-abhi)** — Mit *anu* mit Freudebezeugung empfangen oder begleiten, zujubeln, zujauchzen; mit Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) fehlerhaft für *anunmatta*.
 
-- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ошибочно вместо *anunmatta*.
+- **RU:** — С *anu* встречать или провожать с выражением радости, ликовать, приветствовать возгласами; с Acc. *anumatta* [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) ошибочно вм. *anunmatta*.
   <sub>attested</sub>
 
 **anu-root)** — Mit *abhi*
@@ -87,17 +87,17 @@
 
 **anu-1)** — 1〉 heiter —, lustig sein.
 
-- **RU:** — 1〉 быть весёлым, жизнерадостным.
+- **RU:** — 1〉 быть веселым, жизнерадостным.
   <sub>attested</sub>
 
 **anu-2)** — 2〉 ergötzen, erheitern. *abhimatta* berauscht.
 
-- **RU:** — 2〉 доставлять наслаждение, веселить. *abhimatta* опьянённый.
+- **RU:** — 2〉 доставлять наслаждение, веселить. *abhimatta* опьяненный.
   <sub>attested</sub>
 
 **ava-root)** — Mit *ava* [KĀṬH. 25,7] wohl fehlerhaft für *anu*.
 
-- **RU:** — С *ava* [KĀṬH. 25,7] — по всей видимости, ошибочно вместо *anu*.
+- **RU:** — С *ava* [KĀṬH. 25,7] — по всей видимости, ошибочно вм. *anu*.
   <sub>attested</sub>
 
 **vi-root)** — Mit *ud*
@@ -107,7 +107,7 @@
 
 **vi-1)** — 1〉 von Sinnen kommen, verwirrt werden, den Verstand verlierend. *unmatta* von Sinnen seiend, gestört, verrückt, betrunken, berauscht, von einem Wahn ergriffen; wüthend (Thier); aufgeregt (Augen). Compar. *unmattatara*.
 
-- **RU:** — 1〉 лишаться рассудка, приходить в смятение, терять ум. *unmatta* лишившийся рассудка, расстроенный, безумный, пьяный, опьянённый, охваченный манией; неистовый (о животном); возбуждённый (о глазах). Compar. *unmattatara*.
+- **RU:** — 1〉 лишаться рассудка, приходить в смятение, терять ум. *unmatta* лишившийся рассудка, расстроенный, безумный, пьяный, опьяненный, охваченный манией; неистовый (о животном); возбужденный (о глазах). Compar. *unmattatara*.
   <sub>attested</sub>
 
 **vi-2)** — 2〉 erheitern, ergötzen.
@@ -142,7 +142,7 @@
 
 **pra-mad-1)** — 1〉 sich ergötzen, heiter sein, frohlocken. *pramatta* berauscht, trunken; aufgeregt, brünstig, geil.
 
-- **RU:** — 1〉 наслаждаться, быть весёлым, ликовать. *pramatta* опьянённый, хмельной; возбуждённый, находящийся в течке, похотливый.
+- **RU:** — 1〉 наслаждаться, быть веселым, ликовать. *pramatta* опьяненный, хмельной; возбужденный, находящийся в течке, похотливый.
   <sub>attested</sub>
 
 **pra-mad-2)** — 2〉 achtlos sein, — in Bezug auf (Abl.), nicht achten auf (Loc.), sich eine Unachtsamkeit zu Schulden kommen lassen. *pramatta* sorglos, achtlos, fahrlässig, nicht achtend auf, vernachlässigend, — in Bezug auf (Abl. oder im Comp. vorangehend).
@@ -152,12 +152,12 @@
 
 **pra-mad-3)** — 3〉 über Etwas (Loc.) seine Pflicht vergessen, sich in Bezug auf etwas gehen lassen. *pramatta* mit Loc.
 
-- **RU:** — 3〉 забывать о своём долге в отношении чего-л. (Loc.), распускаться в отношении чего-л. *pramatta* с Loc.
+- **RU:** — 3〉 забывать о своем долге в отношении чего-л. (Loc.), распускаться в отношении чего-л. *pramatta* с Loc.
   <sub>attested</sub>
 
 **pra-mad-4)** — 4〉 in Verwirrung gerathen (von Leblosem).
 
-- **RU:** — 4〉 приходить в беспорядок (о неодушевлённых предметах).
+- **RU:** — 4〉 приходить в беспорядок (о неодушевленных предметах).
   <sub>attested</sub>
 
 **apa-root)** — Caus.
@@ -232,7 +232,7 @@
 
 **vi3-1)** — 1〉 lustig sein. *vimadant* lustig.
 
-- **RU:** — 1〉 быть весёлым. *vimadant* весёлый.
+- **RU:** — 1〉 быть веселым. *vimadant* веселый.
   <sub>attested</sub>
 
 **vi3-2)** — 2〉 verworren werden, aus der richtigen Verfassung kommen. *vimatta* aus d. r. V. gekommen.
@@ -272,7 +272,7 @@
 
 **sam2-3)** — 3〉 aufgeregt, hingerissen, berauscht (in übertragener Bed.); brünstig (Elephant).
 
-- **RU:** — 3〉 возбуждённый, восхищённый, опьянённый (в переносном знач.); находящийся в течке (об слоне).
+- **RU:** — 3〉 возбужденный, восхищенный, опьяненный (в переносном знач.); находящийся в течке (об слоне).
   <sub>attested</sub>
 
 **abhi-root)** — Caus. *saṃmādayati* und *saṃmadayati*
@@ -292,7 +292,7 @@
 
 **abhi-3)** — 3〉 Med. begeistert — oder betrunken sein.
 
-- **RU:** — 3〉 Med. быть воодушевлённым или хмельным.
+- **RU:** — 3〉 Med. быть воодушевленным или хмельным.
   <sub>attested</sub>
 
 **root-paradigm)** **2.** √*mad* (stark √*mād*) in *sadhamad*.
@@ -312,7 +312,7 @@
 
 **star-note)** — *Caus. *nimādayati* deutlich aussprechen.
 
-- **RU:** — *Caus. *nimādayati* произносить отчётливо.
+- **RU:** — *Caus. *nimādayati* произносить отчетливо.
   <sub>lexicographic</sub>
 
 **ava-root)** — Mit *upani* zum Stillstehen bringen, zurückhalten.

@@ -20,7 +20,7 @@
 [ṚV. 6,27,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.07) *parā navavāstvamanudeyaṃ mahe pitre dadātha svaṃ napātam*
 [20,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.11) *mā no agne 'vīrate parā dāḥ*
 [7,1,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.19) [8,60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.060.html#rv08.060.07) *mā no badhī rudra mā parā dāḥ*
-[7,46,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.046.html#rv07.046.04) [8,59,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.14) *na gā indrastasya parā dadāti* не жертвует т.е. не даёт погибнуть (perdere)
+[7,46,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.046.html#rv07.046.04) [8,59,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.14) *na gā indrastasya parā dadāti* не жертвует т.е. не дает погибнуть (perdere)
 [10,160,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.160.html#rv10.160.03) [87,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.18) *mā no magheva niṣṣapī parā dāḥ*
 [1,104,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.104.html#rv01.104.05) *mā te asyāṃ pariṣṭāvaghāya bhūma parādai*
 [7,19,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.019.html#rv07.019.07) *parā dehi śāmulyaṃ brahmabhyo vi bhajā vasu*

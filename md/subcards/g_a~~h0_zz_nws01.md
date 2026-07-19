@@ -5,7 +5,7 @@
 
 **NWS:26)** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – vordringen, gelangen; sich aufmachen; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
 
-- **RU:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперёд, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
+- **RU:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперед, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
   <sub>attested</sub>
 
 **NWS:27)** *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá áccha : hingehen zu (Akk). Ved , unsp

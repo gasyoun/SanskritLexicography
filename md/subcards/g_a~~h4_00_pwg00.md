@@ -20,7 +20,7 @@
 [KATHĀS. 51,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,176)
 
 - **RU:** — *abhi*
- 1) *rājā hṛṣṭastamabhyagāt* шёл ему навстречу
+ 1) *rājā hṛṣṭastamabhyagāt* шел ему навстречу
 [KATHĀS. 51,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,176)
   <sub>attested</sub>
 
@@ -34,7 +34,7 @@
 Schol.
 
 - **RU:** — *pari*
- 4) читай «обходить» так преим. не достичь цели, не уразуметь, не получить познания о чём-л. *pariśabdo niṣedhe*
+ 4) читай «обходить» так преим. не достичь цели, не уразуметь, не получить познания о чем-л. *pariśabdo niṣedhe*
 схол.
   <sub>attested</sub>
 

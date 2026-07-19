@@ -59,11 +59,11 @@
 [ŚAT. BR. 2,5,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,3,1) [4,1,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,4,8) *jaghāna*
 [P. 7,3,55.](https://ashtadhyayi.com/sutraani/7/3/55) *jaghantha, jaghnatus, jaghnus*
 [6,4,98.](https://ashtadhyayi.com/sutraani/6/4/98) [VOP. 9,10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,10) *jaghanat*
-[ṚV. 9,23,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.023.html#rv09.023.07) *jaghanvaṃs* und *jaghnivaṃs*
+[ṚV. 9,23,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.023.html#rv09.023.07) *jaghanvaṃs* и *jaghnivaṃs*
 ([ŚAT. BR. 1,6,4,21](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,4,21)) [P. 6,2,68.](https://ashtadhyayi.com/sutraani/6/2/68) [VOP. 26,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,134) *haniṣyati*
 [P. 7,2,70.](https://ashtadhyayi.com/sutraani/7/2/70)
 [VOP. 8,90.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,90) [9,10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,10) *hantā* там же
-[BHAṬṬ. 6,51.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,51) *hantum, hantave* (auch
+[BHAṬṬ. 6,51.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,51) *hantum, hantave* (также
 [BHĀG. P. 4,19,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,15)), *hantavai*
 [ṚV. 5,2,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.10) [31,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.031.html#rv05.031.04) *hatvā, hatvī, hatvāya, ˚hatya*; absol. *ghātam*
 [P. 7,3,32.](https://ashtadhyayi.com/sutraani/7/3/32) [54.](https://ashtadhyayi.com/sutraani/7/3/54) *pāṇighātam, padaghātaṃ hanti bhūmim*
@@ -73,7 +73,7 @@
 3. pl. [AV. 8,10,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.010.html#av08.010.08) *ghnatām*
 3. pl. *hananta*
 [ṚV. 7,56,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.22) *jighnate, jighnamāna*
-[ṚV. 3,30,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.04) *jaghne, jaghnire, haniṣyate* . pass. *hanyate, aghāni, aghāniṣātām* und *ahasātām, ghānitā* und *hantā, ghāniṣyate* und *haniṣyate, aghāniṣyata* und *ahaniṣyata*
+[ṚV. 3,30,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.04) *jaghne, jaghnire, haniṣyate* . pass. *hanyate, aghāni, aghāniṣātām* и *ahasātām, ghānitā* и *hantā, ghāniṣyate* и *haniṣyate, aghāniṣyata* и *ahaniṣyata*
 [P. 6,4,62.](https://ashtadhyayi.com/sutraani/6/4/62)
 [VOP. 24,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,3) [5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,5)
 [BHAṬṬ. 1,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,22) [5,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,40) [15,17.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,17) [66.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,66) [16,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,9) *ghāniṣīṣṭa*
@@ -117,7 +117,7 @@
 [SĀH. D. 58,21.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?58,21) *kāntamamburuheṇa cakṣuṣā ca*
 [ŚIŚ. 7,56.] *mālatīpuṣpamaśmanā* so v. a. abschlagen
 [KATHĀS. 18,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,173) *ghnantyanyo'nyam* Böcke
-[Spr. (II) 7356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7356) *eṣa tvāṃ śārdūlaḥ paśumiva hanmi*
+[Spr. (II) 7356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7356 "Spr. (II) 7356: svairāhāroditagurumadāḥ śṛṅgakaṇḍūtiśāntyai durvārerṣyākaluṣamatayo yatra durmantrimeṣāḥ | ghnantyanyo 'nyaṃ bhavati gaṇitairvāsaraireva kaiści- nmadh… — Wenn erbärmliche Minister, wahre Böcke, denen von der nach Herzenslust ihnen gereichten Speise der Uebermuth schwoll und deren Herzen durch eine nicht zurückzuhaltende Eifersucht verureinigt werden, auf einander losfahre…") *eṣa tvāṃ śārdūlaḥ paśumiva hanmi*
 [ŚĀK. 154.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?154)
 
 *tīvreṇa daṇḍena*
@@ -134,7 +134,7 @@
 [BHAṬṬ. 8,99.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,99) *ghnata*
 [BHĀG. P. 9,16,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,5) *na kūṭairāyudhairhanyādripūn*
 [M. 7,90. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,90) *yāṃ prasahya vṛko hanyāt*
-[8,235. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,235) [350.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,350) [MBH. 5,5942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5942) [Spr. (II) 5171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5171) [R. 1,2,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,32) [2,78,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,22) [3,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,9) *ahan*
+[8,235. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,235) [350.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,350) [MBH. 5,5942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5942) [Spr. (II) 5171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5171 "Spr. (II) 5171: yathoddharati nirdātā kakṣaṃ dhānyaṃ ca rakṣati | tathā rakṣennṛpo rāṣṭraṃ hanyācca paripanthinaḥ || — (4803.) Wie ein Jäter das Unkraut ausreisst und das Korn in Acht nimmt, so nehme ein Fürst sein Reich in Acht und vernichte die Feinde.") [R. 1,2,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,32) [2,78,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,22) [3,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,9) *ahan*
 [BHĀG. P. 1,15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,9) [4,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,8) [7,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,31) *ahanat*
 [MBH. 1,6698.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6698) [3,14604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14604) [12,4276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4276)
 [BHĀG. P. 8,10,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,55) *ghnanripūn*
@@ -167,13 +167,13 @@
 [MBH. 1,5570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5570)
 [R. 2,97,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,18)
 [KATHĀS. 28,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,128)
-[Spr. (II) 2399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2399)
+[Spr. (II) 2399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2399 "Spr. (II) 2399: jānāti hantuṃ hantavyamāsannaṃ na tu dūragam | bhekaṃ bakaḥ paraṃ satyaṃ drohavṛttirmahīpatiḥ || — (4072.) Ein Reiher versteht es einen den Tod verdienenden Frosch zu tödten, wenn dieser in der Nähe, nicht aber, wenn er in der Ferne ist")
 [RĀJA-TAR. 6,170. fg.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,170)
 [VET. in LA. (III) 29,4.] *hatvā*
 [M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) [11,133.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,133)
 [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937)
 [R. 1,1,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,40) [2,52,99.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,99) [3,49,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,14) [51,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,22)
-[Spr. (II) 7364.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7364) pass.: *hanyate*
+[Spr. (II) 7364.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7364 "Spr. (II) 7364: hatvā vā harate śūraḥ śete vā nihataḥ śaraiḥ | taskarācarito mārgo naiva śūraniṣevitaḥ || — (5388.) Entweder beraubt ein Held einen Andern, nachdem er ihn erschlagen, oder er stürzt, von Pfeilen getroffen, zu Boden") pass.: *hanyate*
 [M. 7,94.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,94)
 [KATHĀS. 18,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,166) *hanyamāna*
 [RĀJA-TAR. 1,291.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,291) [4,328.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,328) *kāmaśaraiḥ*
@@ -185,9 +185,9 @@
 [BHĀG. P. 3,18,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,17) *yathā śvā bhaṣituṃ caiva hantuṃ caivāvasajjate* so v. a. beissen
 [MBH. 13,2198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2198) tödten so v. a. mit dem Tode bestrafen, hinrichten lassen
 [M. 8,380.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,380) [9,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,232) [248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,248) [269.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,269) [278.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,278) [280.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,280) *apsu śuddhavadhena vā*
-[279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216) — In der Astr. so v. a. berühren: *divasakaramulkāśanividyuto yadā hanyuḥ*
+[279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216 "Spr. (II) 3216: na gaṇasyāgrato gacchetsiddhe kārye samaṃ phalam | yadi kāryavipattiḥ syānmukharastatra hanyate || — (1364.) Man gehe nicht an der Spitze eines Haufens: gelingt die Sache, so ist der Lohn für Alle gleich") — In der Astr. so v. a. berühren: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) *manaḥ* das Herz verletzen
-[Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
+[Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277 "Spr. (II) 1277: upakāraḥ kṛtajñeṣu pratikāreṇa yujyate | akṛtajñe 'pratikṛtaṃ hanti sattvavatāṃ manaḥ || — (3798.) Ein Dienst, den man Dankbaren erweist, zieht einen Gegendienst nach sich") = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
 
 - **RU:** 1) ударять, поражать; сбивать с ног; смертельно ранить, убивать, сражать, поражать насмерть: *vajreṇa hatvā nirapaḥ sasarja*
 [ṚV. 1,103,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.103.html#rv01.103.02) *jahi rakṣāṃsi*
@@ -222,7 +222,7 @@
 [SĀH. D. 58,21.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?58,21) *kāntamamburuheṇa cakṣuṣā ca*
 [ŚIŚ. 7,56.] *mālatīpuṣpamaśmanā* так преим. отбивать
 [KATHĀS. 18,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,173) *ghnantyanyo'nyam* козлов
-[Spr. (II) 7356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7356) *eṣa tvāṃ śārdūlaḥ paśumiva hanmi*
+[Spr. (II) 7356.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7356 "Spr. (II) 7356: svairāhāroditagurumadāḥ śṛṅgakaṇḍūtiśāntyai durvārerṣyākaluṣamatayo yatra durmantrimeṣāḥ | ghnantyanyo 'nyaṃ bhavati gaṇitairvāsaraireva kaiści- nmadh… — Wenn erbärmliche Minister, wahre Böcke, denen von der nach Herzenslust ihnen gereichten Speise der Uebermuth schwoll und deren Herzen durch eine nicht zurückzuhaltende Eifersucht verureinigt werden, auf einander losfahre…") *eṣa tvāṃ śārdūlaḥ paśumiva hanmi*
 [ŚĀK. 154.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?154)
 
 *tīvreṇa daṇḍena*
@@ -239,7 +239,7 @@
 [BHAṬṬ. 8,99.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,99) *ghnata*
 [BHĀG. P. 9,16,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,5) *na kūṭairāyudhairhanyādripūn*
 [M. 7,90. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,90) *yāṃ prasahya vṛko hanyāt*
-[8,235. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,235) [350.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,350) [MBH. 5,5942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5942) [Spr. (II) 5171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5171) [R. 1,2,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,32) [2,78,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,22) [3,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,9) *ahan*
+[8,235. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,235) [350.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,350) [MBH. 5,5942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5942) [Spr. (II) 5171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5171 "Spr. (II) 5171: yathoddharati nirdātā kakṣaṃ dhānyaṃ ca rakṣati | tathā rakṣennṛpo rāṣṭraṃ hanyācca paripanthinaḥ || — (4803.) Wie ein Jäter das Unkraut ausreisst und das Korn in Acht nimmt, so nehme ein Fürst sein Reich in Acht und vernichte die Feinde.") [R. 1,2,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,32) [2,78,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,22) [3,55,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,9) *ahan*
 [BHĀG. P. 1,15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,9) [4,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,10,8) [7,8,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,31) *ahanat*
 [MBH. 1,6698.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6698) [3,14604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14604) [12,4276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4276)
 [BHĀG. P. 8,10,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,55) *ghnanripūn*
@@ -272,13 +272,13 @@
 [MBH. 1,5570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5570)
 [R. 2,97,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,18)
 [KATHĀS. 28,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,128)
-[Spr. (II) 2399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2399)
+[Spr. (II) 2399.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2399 "Spr. (II) 2399: jānāti hantuṃ hantavyamāsannaṃ na tu dūragam | bhekaṃ bakaḥ paraṃ satyaṃ drohavṛttirmahīpatiḥ || — (4072.) Ein Reiher versteht es einen den Tod verdienenden Frosch zu tödten, wenn dieser in der Nähe, nicht aber, wenn er in der Ferne ist")
 [RĀJA-TAR. 6,170. fg.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,170)
 [VET. in LA. (III) 29,4.] *hatvā*
 [M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) [11,133.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,133)
 [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937)
 [R. 1,1,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,40) [2,52,99.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,99) [3,49,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,14) [51,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,22)
-[Spr. (II) 7364.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7364) pass.: *hanyate*
+[Spr. (II) 7364.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7364 "Spr. (II) 7364: hatvā vā harate śūraḥ śete vā nihataḥ śaraiḥ | taskarācarito mārgo naiva śūraniṣevitaḥ || — (5388.) Entweder beraubt ein Held einen Andern, nachdem er ihn erschlagen, oder er stürzt, von Pfeilen getroffen, zu Boden") pass.: *hanyate*
 [M. 7,94.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,94)
 [KATHĀS. 18,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,166) *hanyamāna*
 [RĀJA-TAR. 1,291.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,291) [4,328.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,328) *kāmaśaraiḥ*
@@ -290,7 +290,7 @@
 [BHĀG. P. 3,18,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,17) *yathā śvā bhaṣituṃ caiva hantuṃ caivāvasajjate* так преим. кусать
 [MBH. 13,2198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2198) убивать так преим. карать смертью, предавать казни
 [M. 8,380.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,380) [9,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,232) [248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,248) [269.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,269) [278.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,278) [280.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,280) *apsu śuddhavadhena vā*
-[279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216) — В астр. так преим. касаться: *divasakaramulkāśanividyuto yadā hanyuḥ*
+[279.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,279) [Spr. (II) 3216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3216 "Spr. (II) 3216: na gaṇasyāgrato gacchetsiddhe kārye samaṃ phalam | yadi kāryavipattiḥ syānmukharastatra hanyate || — (1364.) Man gehe nicht an der Spitze eines Haufens: gelingt die Sache, so ist der Lohn für Alle gleich") — В астр. так преим. касаться: *divasakaramulkāśanividyuto yadā hanyuḥ*
 [VARĀH. BṚH. S. 3,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,33) *manaḥ* ранить сердце
-[Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277) = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
+[Spr. (II) 1277](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1277 "Spr. (II) 1277: upakāraḥ kṛtajñeṣu pratikāreṇa yujyate | akṛtajñe 'pratikṛtaṃ hanti sattvavatāṃ manaḥ || — (3798.) Ein Dienst, den man Dankbaren erweist, zieht einen Gegendienst nach sich") = [1282.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1282)
   <sub>attested</sub>

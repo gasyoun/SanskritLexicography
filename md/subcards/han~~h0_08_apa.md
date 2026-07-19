@@ -30,7 +30,7 @@
 [MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) *kṣudhām*
 [13,3013.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3013) *duritam*
 [ŚĀK. 83.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?83) *tamastīvram*
-[Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412) [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
+[Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412 "Spr. (II) 412: apahatya tamastīvraṃ yathā bhātyudaye raviḥ | tathāpahatya pāpmānaṃ bhāti gaṅgājalokṣitaḥ || — (3521.) Wie die Sonne beim Aufgange glänzt, indem sie die dichte Finsterniss verscheucht hat, so glänzt der im Wasser der Gaṅgā Gebadete, indem er die Sünden verscheucht hat.") [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
 [6066.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6066) *paritāpaṃ gātrebhyaḥ*
 [MĀRK. P. 15,49.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,49) [51,32.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,32) [108.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,108)
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 95.] — *apaghnantaḥ*
@@ -69,11 +69,11 @@
 [MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) *kṣudhām*
 [13,3013.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3013) *duritam*
 [ŚĀK. 83.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?83) *tamastīvram*
-[Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412) [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
+[Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412 "Spr. (II) 412: apahatya tamastīvraṃ yathā bhātyudaye raviḥ | tathāpahatya pāpmānaṃ bhāti gaṅgājalokṣitaḥ || — (3521.) Wie die Sonne beim Aufgange glänzt, indem sie die dichte Finsterniss verscheucht hat, so glänzt der im Wasser der Gaṅgā Gebadete, indem er die Sünden verscheucht hat.") [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
 [6066.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6066) *paritāpaṃ gātrebhyaḥ*
 [MĀRK. P. 15,49.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,49) [51,32.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,32) [108.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,108)
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 95.] — *apaghnantaḥ*
-[UTTARAR. 90,19] плохое чтение вместо *abhighnantaḥ* . partic. *apahata*
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 95.] — *apaghnantaḥ*
+[UTTARAR. 90,19] плохое чтение вм. *abhighnantaḥ* . partic. *apahata*
 [AIT. BR. 3,50.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,50) [4,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,25)
 [ŚAT. BR. 1,1,2,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,2,15) [4,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,21) [2,1,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,3,4) [6,2,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,19) [7,4,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,1,1) [14,7,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,22)
 [NIR. 12,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?12,12)
@@ -84,7 +84,7 @@
 [7,5,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,42) *kṛṣṇapadāpahataśīrṣakaḥ* отрублено
 [BHĀG. P. 10,44,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,44,27) *kāṣṭhakūṭāpahatacakṣus* выбито
 [PAÑCAT. 81,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?81,25) *˚cetana*
-[KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) вероятно, лишь ошибочное чтение вместо *apahṛta˚* .
+[KATHĀS. 84,8](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,8) вероятно, лишь ошибочное чтение вм. *apahṛta˚* .
   <sub>attested</sub>
 
 **2)** — 2) ausschlagen, aushülsen (Reis)
@@ -105,5 +105,5 @@
 
 **cross-ref)** — Vgl. *apaghana* fgg. und *apaha* fgg. — desid. s. *apajighāṃsu* .
 
-- **RU:** — ср. *apaghana* сл. und *apaha* сл. — desid. см. *apajighāṃsu* .
+- **RU:** — ср. *apaghana* сл. и *apaha* сл. — desid. см. *apajighāṃsu* .
   <sub>attested</sub>

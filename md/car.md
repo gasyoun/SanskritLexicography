@@ -21,7 +21,7 @@ _PWG article — 82 sub-card(s), 257 sense(s) · RU 257/257 · EN 0/257_
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
 [BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (s. auch bes.), *cīrṇa* (s. auch bes.).
 
-- **RU:** *car*, *carati* (ep. auch мед.)
+- **RU:** *car*, *carati* (ep. также мед.)
 [DHĀTUP. 15,51.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) *cacāra, cacartha* (
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
@@ -33,7 +33,7 @@ _PWG article — 82 sub-card(s), 257 sense(s) · RU 257/257 · EN 0/257_
 [R. 2,21,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,23)), *cartum*
 [MBH. 3,10069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10069) [13529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13529) [13,5612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5612)
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
-[BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (см. auch особ.), *cīrṇa* (см. auch особ.).
+[BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (см. также особ.), *cīrṇa* (см. также особ.).
   <sub>attested</sub>
 
 **1)** 1) sich regen, — bewegen, umherstreichen, gehen, fahren, wandern; von Menschen, Vieh, Wasser, Schiffen, Gestirnen u. s. w.: *ya āste yaśca carati*
@@ -175,7 +175,7 @@ _PWG article — 82 sub-card(s), 257 sense(s) · RU 257/257 · EN 0/257_
 [MBH. 3,12927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12927)
 [HARIV. 4597.](https://sanskrit-lexicon-scans.github.io/hariv?4597) *śikhī carati bhacakram* пробегает всю эклиптику
 [VARĀH. BṚH. S. 46,15 (16).](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15) *tāṃ caransa nadīm* идя вдоль реки
-[HARIV. 3632.](https://sanskrit-lexicon-scans.github.io/hariv?3632) *padavīṃ caradhvam* идёт по пути, следует по следу
+[HARIV. 3632.](https://sanskrit-lexicon-scans.github.io/hariv?3632) *padavīṃ caradhvam* идет по пути, следует по следу
 [DRAUP. 6,19.] *rāgedvaṣaviyuktaistu viṣayānindriyaiścaran* следуя за объектами чувств
 [BHAG. 2,64.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,64)
   <sub>attested</sub>
@@ -613,7 +613,7 @@ wir dahin wirken, dass der König seinem Worte getreu bleibe,
 
 **Nachtrag)** — Vgl. *aticāra* fg. und u. *abhi* .
 
-- **RU:** — ср. *aticāra* сл. und u. *abhi* .
+- **RU:** — ср. *aticāra* сл. и u. *abhi* .
   <sub>attested</sub>
 
 ## vyaticar
@@ -898,7 +898,7 @@ Sch. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) Sch. zu [JAIM. 1
 
 - **RU:** — 4) выходить за пределы (acc.), удаляться от: *sahasrasaṃkhyām*
 [KIR. 5,34.] *anye 'pi kṛto 'bhidheyaṃ vyabhicaranti*
-схол. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) схол. zu [JAIM. 1,1,5.]
+схол. к [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) схол. к [JAIM. 1,1,5.]
   <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *vyabhicāra* u. s. w.
@@ -920,7 +920,7 @@ Sch. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) Sch. zu [JAIM. 1
 - **RU:** — *ava* нисходить: *ava dvake ava trikā divaścaranti bheṣajā*
 [ṚV. 10,59,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.059.html#rv10.059.09) — caus. применять: *lepān*
 [SUŚR. 2,8,12. 48,20.] *śastram*
-[1,16,5.] *kaṣāyaṃ kāle 'vacāritam* применённый своевременно
+[1,16,5.] *kaṣāyaṃ kāle 'vacāritam* примененный своевременно
 [2,415,13. 367,5. 381,6.]
   <sub>attested</sub>
 
@@ -1259,7 +1259,7 @@ Sch. zu [P. 3,3,113.](https://ashtadhyayi.com/sutraani/3/3/113) Sch. zu [JAIM. 1
 **3)** — 3) aus sich hervorgehen: *sa yathorṇavābhistantunoccaret* wie die Spinne mittelst des Fadens ihren Inhalt aus sich entlässt
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
 
-- **RU:** — 3) исходить из себя самого: *sa yathorṇavābhistantunoccaret* подобно тому как паук посредством нити выпускает из себя своё содержимое
+- **RU:** — 3) исходить из себя самого: *sa yathorṇavābhistantunoccaret* подобно тому как паук посредством нити выпускает из себя свое содержимое
 [ŚAT. BR. 14,5,1,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,23)
   <sub>attested</sub>
 
@@ -1360,7 +1360,7 @@ Sch. zu [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
 [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3)
 
 - **RU:** — *prod* заставлять звучать: *proccaratpraṇavaṃ sadā*
-[HARIV. 14694.](https://sanskrit-lexicon-scans.github.io/hariv?14694) — caus. издавать звуки: *yāvannāsya proccāritasya dṛṣṭigocare gacchāmi* тот, кто издаёт эти звуки
+[HARIV. 14694.](https://sanskrit-lexicon-scans.github.io/hariv?14694) — caus. издавать звуки: *yāvannāsya proccāritasya dṛṣṭigocare gacchāmi* тот, кто издает эти звуки
 [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3)
   <sub>attested</sub>
 
@@ -1677,7 +1677,7 @@ Sch. zu [SĀṂKHYAK. 21 (S. 78). 62 (S. 177).] *vibhaktā bhrātara ityatra ca 
 [YAJÑAD. 2,46] hat
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
 
-- **RU:** — 2) прислуживать кому-либо, служить, заботиться; всецело посвящать своё попечение кому-либо или чему-либо, всецело отдаваться кому-либо или чему-либо; с acc.: *(agnim) sujātāsaḥ pari caranti vīrāḥ*
+- **RU:** — 2) прислуживать кому-либо, служить, заботиться; всецело посвящать свое попечение кому-либо или чему-либо, всецело отдаваться кому-либо или чему-либо; с acc.: *(agnim) sujātāsaḥ pari caranti vīrāḥ*
 [ṚV. 7,1,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.15) [3,7,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.02) *adha smā te pari carantyajara śruṣṭīvāno na*
 [1,127,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.09) *vaivāhyamagnim*
 [ŚĀṄKH. GṚHY. 1,17.] *gṛhyam*
@@ -1698,7 +1698,7 @@ Sch. zu [SĀṂKHYAK. 21 (S. 78). 62 (S. 177).] *vibhaktā bhrātara ityatra ca 
 [BHĀG. P. 4,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,20) *nityaṃ śastraṃ paricaran*
 [R. 3,13,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,19) *āmraṃ chittvā kuṭhāreṇa nimbaṃ paricarettu yaḥ*
 [2,35,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,14) *paricarya tathā vedam*
-[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) Вместо *bhavatoḥ paricarya*
+[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) Вм. *bhavatoḥ paricarya*
 [YAJÑAD. 2,46] имеет
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
   <sub>attested</sub>
@@ -1758,7 +1758,7 @@ med. sich lagern um: *paricārayante kaṇṭakā vṛkṣam* ebend.
 [ṚV. 9,82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.082.html#rv09.082.04) besuchen: *tasyāstīrthaṃ pracaritam*
 [R. 2,55,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,5)
 
-- **RU:** — 2) двигаться вперёд к, достигать (acc.): *avīrahā pra carā soma duryān*
+- **RU:** — 2) двигаться вперед к, достигать (acc.): *avīrahā pra carā soma duryān*
 [ṚV. 1,91,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.091.html#rv01.091.19) [7,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.10) *pra carā puṣṭimaccha*
 [8,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.06) *diva spaśaḥ pra carantīdamasya*
 [AV. 4,16,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.016.html#av04.016.04) *ye tīrthāni pracaranti sṛkāhastāḥ*
@@ -2193,7 +2193,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 [UPAL. 9,15.] *tatra daṇḍo 'vicāritaḥ* не подверженный никаким сомнениям
 [M. 8,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,295) *ityetadavicāritam*
 [MBH. 14,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1344) *na rāmagamane — vicārayitumarhasi*
-[R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* о чём долго колебаться?
+[R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* о чем долго колебаться?
 [HARIV. 3818.](https://sanskrit-lexicon-scans.github.io/hariv?3818) *na khalu kiṃcidvicāritamanayā*
 [MĀLAV. 49,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?49,9) *mā vicāraya* не колебайся долго
 [MBH. 1,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.763) [6668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6668)
@@ -2287,7 +2287,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 [HIT. II,135.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,135)
 
 - **RU:** — *pravi*
- 1) продвигаться вперёд, идти вперёд: *mahābalāste kupitāḥ parasparaṃ niṣūdayantaḥ pravicerurojasā*
+ 1) продвигаться вперед, идти вперед: *mahābalāste kupitāḥ parasparaṃ niṣūdayantaḥ pravicerurojasā*
 [MBH. 7,1451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1451) *yatheṣṭaṃ svacchandaḥ pravicarati matto gaja iva*
 [HIT. II,135.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,135)
   <sub>attested</sub>
@@ -2645,7 +2645,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 — 1〉 voranschreiten, vorwärts gehen.
 
 - **RU:** — С *pravi*
-— 1) продвигаться вперёд, идти вперёд.
+— 1) продвигаться вперед, идти вперед.
   <sub>attested</sub>
 
 **pw-mit-T8-2)** — 2〉 umhergehen, -streichen.
@@ -2905,7 +2905,7 @@ Z. 7 *caritavrata* auch
  f) und vgl. noch
 
 - **RU:** 2)
- f) и ср. ещё
+ f) и ср. еще
   <sub>attested</sub>
 
 **2-note)** [BHĀG. P. 3,18,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,19) *tṛṇaṃ car* so v. a. Gras fressen, weiden
@@ -2985,7 +2985,7 @@ Schol. zu [R. 2,107,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2
 
 **1)** — *adhi* vgl. noch *adhicara* .
 
-- **RU:** — *adhi* ср. ещё *adhicara* .
+- **RU:** — *adhi* ср. еще *adhicara* .
   <sub>attested</sub>
 
 ## abhi+car
@@ -3173,7 +3173,7 @@ Schol. zu [R. 2,107,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2
 [Spr. 3705.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3705)
 
 - **RU:** — *prati*
-[KĀM. NĪTIS. 1,61] вероятно, ошибочно вместо *pravi*; ср.
+[KĀM. NĪTIS. 1,61] вероятно, ошибочно вм. *pravi*; ср.
 [Spr. 3705.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3705)
   <sub>attested</sub>
 
@@ -3191,7 +3191,7 @@ vgl. u. 2. *mārga* 2) f).
 
 - **RU:** — *vi*
  4)
-[Sp. 962, Z. 1] снизу und [Sp. 963, Z. 1] [ARJ. 7,8. 10,37] относятся к (11);
+[Sp. 962, Z. 1] снизу и [Sp. 963, Z. 1] [ARJ. 7,8. 10,37] относятся к (11);
 ср. u. 2. *mārga* 2) f).
 — 6) *vicaratyasamunnaddho yaḥ*
 [Spr. 3591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3591)
@@ -3300,20 +3300,20 @@ Z. 4. fg. sich Wege bahnen falsch; vgl. u. 2. *mārga* 2) f). — caus.
 
 **h3_5_fressen)** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* fressen
-[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
+[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281 "Spr. (II) 5281: yadyapi na bhavati hāniḥ parakīyāṃ carati rāsabhe drākṣām | asamañjasaṃ ca dṛṣṭvā kasya na parikhidyate cetaḥ || — Obgleich es Einem auch keinen Schaden thut, wenn ein Esel fremden Wein verspeist, so wird doch Jedermanns Herz beim Anblick einer solchen Ungebührlichkeit mit Schmerz erfüllt.")
 
 - **RU:** *car*
  5) *parakīyāṃ carati rāsabhe drākṣām* пожирать
-[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281)
+[Spr. (II) 5281.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5281 "Spr. (II) 5281: yadyapi na bhavati hāniḥ parakīyāṃ carati rāsabhe drākṣām | asamañjasaṃ ca dṛṣṭvā kasya na parikhidyate cetaḥ || — Obgleich es Einem auch keinen Schaden thut, wenn ein Esel fremden Wein verspeist, so wird doch Jedermanns Herz beim Anblick einer solchen Ungebührlichkeit mit Schmerz erfüllt.")
   <sub>attested</sub>
 
 **h3_6_mit)** — *ā*
  6) mit infin.
-[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177)
+[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177 "Spr. (II) 7177: so 'yamarthaṃ parityajyajya sukhakāmasukhaidhitaḥ | pāpamācarate kartuṃ tadā doṣaḥ pravartate || — Wenn Jemand das Nützliche aufgiebt und Böses zu vollbringen sich anschickt, weil er nach Freuden Verlangen trägt und in Freuden gelebt hat, dann ist die Sünde da.")
 
 - **RU:** — *ā*
  6) с infin.
-[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177)
+[Spr. (II) 7177.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7177 "Spr. (II) 7177: so 'yamarthaṃ parityajyajya sukhakāmasukhaidhitaḥ | pāpamācarate kartuṃ tadā doṣaḥ pravartate || — Wenn Jemand das Nützliche aufgiebt und Böses zu vollbringen sich anschickt, weil er nach Freuden Verlangen trägt und in Freuden gelebt hat, dann ist die Sünde da.")
   <sub>attested</sub>
 
 **h3_nachtrag_a)** — *ud* caus.

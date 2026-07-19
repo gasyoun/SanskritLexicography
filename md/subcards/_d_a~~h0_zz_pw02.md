@@ -10,7 +10,7 @@
 
 **9a)** — a〉 herbeigeschafft, -geführt, zugeführt.
 
-- **RU:** — a〉 доставленный, приведённый, подведённый.
+- **RU:** — a〉 доставленный, приведенный, подведенный.
   <sub>attested</sub>
 
 **9b)** — b〉 unternommen [{{MBH. 13,61,40->MBH. 13,40,40||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
@@ -20,17 +20,17 @@
 
 **9c)** — c〉 verführt, verleitet oder angeführt.
 
-- **RU:** — c〉 соблазнённый, введённый в заблуждение или обманутый.
+- **RU:** — c〉 соблазненный, введенный в заблуждение или обманутый.
   <sub>attested</sub>
 
 **mit_T3)** — Mit *anūpa* hinterher anlegen, — auflegen.
 
-- **RU:** — Mit *anūpa* накладывать вслед, прикладывать следом.
+- **RU:** — С *anūpa* накладывать вслед, прикладывать следом.
   <sub>attested</sub>
 
 **mit_T4)** — Mit *abhyupa*
 
-- **RU:** — Mit *abhyupa*
+- **RU:** — С *abhyupa*
   <sub>attested</sub>
 
 **mit_T4_1)** — 1〉 hinzusetzen, hinzulegen.
@@ -50,17 +50,17 @@
 
 **mit_T6)** — Mit *pratyupa* belegen, bedecken.
 
-- **RU:** — Mit *pratyupa* покрывать, укрывать.
+- **RU:** — С *pratyupa* покрывать, укрывать.
   <sub>attested</sub>
 
 **mit_T7)** — Mit *tiras* s. u. d. W.
 
-- **RU:** — Mit *tiras* см. слово
+- **RU:** — С *tiras* см. слово
   <sub>attested</sub>
 
 **mit_T10)** — Mit *ni*
 
-- **RU:** — Mit *ni*
+- **RU:** — С *ni*
   <sub>attested</sub>
 
 **mit_T10_1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
@@ -90,7 +90,7 @@
 
 **mit_T10_6)** — 6〉 Jmdm (Dat. oder Loc.) übergeben, anvertrauen, schenken. *ātmānam* sich Jmd (Loc.) anvertrauen. *hṛdayam* Jmd (Loc.) sein Herz schenken.
 
-- **RU:** — 6〉 передавать, вверять, жертвовать кому-либо (Dat. или Loc.). *ātmānam* вверять себя кому-либо (Loc.). *hṛdayam* отдавать своё сердце кому-либо (Loc.).
+- **RU:** — 6〉 передавать, вверять, жертвовать кому-либо (Dat. или Loc.). *ātmānam* вверять себя кому-либо (Loc.). *hṛdayam* отдавать свое сердце кому-либо (Loc.).
   <sub>attested</sub>
 
 **mit_T10_7)** — 7〉 zurücklassen.
@@ -110,12 +110,12 @@
 
 **mit_T10_10)** — 10〉 *nihita* = *nihata* tief ausgesprochen.
 
-- **RU:** — 10〉 *nihita* = *nihata* произнесённый низким тоном.
+- **RU:** — 10〉 *nihita* = *nihata* произнесенный низким тоном.
   <sub>attested</sub>
 
 **mit_T10_11)** — 11〉 *nidhātum* [BHĀG. P. 7,8,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,18) fehlerhaft für *vidhātum*.
 
-- **RU:** — 11〉 *nidhātum* [BHĀG. P. 7,8,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,18) ошибочно вместо *vidhātum*.
+- **RU:** — 11〉 *nidhātum* [BHĀG. P. 7,8,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,18) ошибочно вм. *vidhātum*.
   <sub>attested</sub>
 
 **mit_T10_caus)** — Caus.
@@ -150,7 +150,7 @@
 
 **mit_T81)** — Mit *adhini*
 
-- **RU:** — Mit *adhini*
+- **RU:** — С *adhini*
   <sub>attested</sub>
 
 **mit_T81_1)** — 1〉 niederlegen —, auflegen auf (Loc.).
@@ -165,7 +165,7 @@
 
 **mit_T84)** — Mit *apani*
 
-- **RU:** — Mit *apani*
+- **RU:** — С *apani*
   <sub>attested</sub>
 
 **mit_T84_1)** — 1〉 bei Seite legen, auf die Seite schaffen, verbergen.
@@ -185,7 +185,7 @@
 
 **mit_T86)** — Mit *abhini*
 
-- **RU:** — Mit *abhini*
+- **RU:** — С *abhini*
   <sub>attested</sub>
 
 **mit_T86_1)** — 1〉 auflegen auf, hineinlegen in (Loc.). [Ind. St. 15,165] (*˚hita*). Med. sich Etwas auflegen.
@@ -200,17 +200,17 @@
 
 **mit_T86_3)** — 3〉 Pass. mit einander verschmelzen (von einem auslautenden *e* oder *o* mit einem anlautenden *a*, das elidirt wird). *abhinihita* heisst ein solcher Saṃdhi und der darauf ruhende Ton.
 
-- **RU:** — 3〉 Pass. сливаться друг с другом (об исходном *e* или *o* с начальным *a*, которое элидируется). *abhinihita* называется такое Самдхи и покоящийся на нём тон.
+- **RU:** — 3〉 Pass. сливаться друг с другом (об исходном *e* или *o* с начальным *a*, которое элидируется). *abhinihita* называется такое Самдхи и покоящийся на нем тон.
   <sub>attested</sub>
 
 **mit_T101)** — Mit *unni* in die Höhe —, aufgehoben halten.
 
-- **RU:** — Mit *unni* держать вверх —, держать в поднятом положении.
+- **RU:** — С *unni* держать вверх —, держать в поднятом положении.
   <sub>attested</sub>
 
 **mit_T102)** — Mit *upani*
 
-- **RU:** — Mit *upani*
+- **RU:** — С *upani*
   <sub>attested</sub>
 
 **mit_T102_1)** — 1〉 daneben setzen, — stellen, Jmd. (Dat.) Etwas vorsetzen.
@@ -245,17 +245,17 @@
 
 **mit_T108)** — Mit *parini* (**pariṇi*) herumlegen.
 
-- **RU:** — Mit *parini* (**pariṇi*) обёртывать, накладывать кругом.
+- **RU:** — С *parini* (**pariṇi*) обертывать, накладывать кругом.
   <sub>attested</sub>
 
 **mit_T110)** — Mit *praṇi*
 
-- **RU:** — Mit *praṇi*
+- **RU:** — С *praṇi*
   <sub>attested</sub>
 
 **mit_T110_1)** — 1〉 niederlegen, aufsetzen, auflegen, — auf (Loc.), ansetzen, anlegen (ein Messer u. s. w.), hineinstecken in, so v. a. einfassen in (Loc.). *praṇihita* niedergelegt u. s. w., aufgelegt auf (im Comp. vorangehend) [BĀLAR. 265,3]. *veda˚* im Veda enthalten, so v. a. gelehrt.
 
-- **RU:** — 1〉 класть, надевать, накладывать — на (Loc.), прикладывать, приставлять (нож и т.д.), вставлять в, отсюда преим. вправлять в (Loc.). *praṇihita* положенный и т.д., наложенный на (в Comp. предшествующем) [BĀLAR. 265,3]. *veda˚* содержащийся в Веда, отсюда преим. учёный, наставленный.
+- **RU:** — 1〉 класть, надевать, накладывать — на (Loc.), прикладывать, приставлять (нож и т.д.), вставлять в, отсюда преим. вправлять в (Loc.). *praṇihita* положенный и т.д., наложенный на (в Comp. предшествующем) [BĀLAR. 265,3]. *veda˚* содержащийся в Веда, отсюда преим. ученый, наставленный.
   <sub>attested</sub>
 
 **mit_T110_2)** — 2〉 ausstrecken [BHAG. 11,44](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,44). *praṇihita* ausgestreckt.
@@ -295,7 +295,7 @@
 
 **mit_T110_9)** — 9〉 alle seine Gedanken —, seine ganze Aufmerksamkeit auf Etwas richten, Etwas (Acc.) überlegen. Nur *praṇīdhāya* und *praṇihita* ganz in Etwas (Loc.) vertieft, ganz bei einer Sache seiend, in einem Gedanken ganz aufgehend (von Personen und vom Geist). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
 
-- **RU:** — 9〉 устремлять все свои мысли —, всё своё внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погружённый во что-либо (Loc.), целиком занятый одним делом, поглощённый одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
+- **RU:** — 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погруженный во что-либо (Loc.), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
   <sub>attested</sub>
 
 **mit_T110_10)** — 10〉 herausbringen, dahinterkommen, — dass ist; mit doppeltem Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21). *praṇihita* herausgebracht, anʼs Tageslicht gebracht.
@@ -305,7 +305,7 @@
 
 **mit_T154)** — Mit *saṃpraṇi* (nur *˚dhāya*)
 
-- **RU:** — Mit *saṃpraṇi* (только *˚dhāya*)
+- **RU:** — С *saṃpraṇi* (только *˚dhāya*)
   <sub>attested</sub>
 
 **mit_T154_1)** — 1〉 Jmd zurücklassen in (Loc.).
@@ -320,7 +320,7 @@
 
 **mit_T157)** — Mit *pratini*
 
-- **RU:** — Mit *pratini*
+- **RU:** — С *pratini*
   <sub>attested</sub>
 
 **mit_T157_1)** — 1〉 an die Stelle eines Andern setzen, unterschieden, substituiren.
@@ -335,7 +335,7 @@
 
 **mit_T158)** — Mit *vini*
 
-- **RU:** — Mit *vini*
+- **RU:** — С *vini*
   <sub>attested</sub>
 
 **mit_T158_1)** — 1〉 weglegen an verschiedene Orte, vertheilen.
@@ -370,12 +370,12 @@
 
 **mit_T158_7)** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) fehlerhaft für *vinihata*.
 
-- **RU:** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вместо *vinihata*.
+- **RU:** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вм. *vinihata*.
   <sub>attested</sub>
 
 **mit_T177)** — Mit *saṃni*
 
-- **RU:** — Mit *saṃni*
+- **RU:** — С *saṃni*
   <sub>attested</sub>
 
 **mit_T177_1)** — 1〉 zusammen niederlegen in oder bei (Loc.), niederlegen, aufheben [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). legen in (Loc.), aufspeichern, ansammeln. In der ältern Sprache Med. *hṛdayasaṃnihita* inʼs Herz gelegt, im Herzen wohnend.
@@ -405,7 +405,7 @@
 
 **mit_T177_6)** — 6〉 Pass. und Med. in der Nähe —, gegenwärtig sein, bevorstehen. *saṃnihita* in der Nähe befindlich, gegenwärtig —, da —, bei der Hand seiend, anwesend, nahe bevorstehend. Mit Dat. bereit —, gerüstet zu.
 
-- **RU:** — 6〉 Pass. и Med. быть вблизи —, присутствовать, предстоять. *saṃnihita* находящийся поблизости, присутствующий —, находящийся здесь —, находящийся под рукой, наличный, близко предстоящий. С Dat. готовый —, снаряжённый к.
+- **RU:** — 6〉 Pass. и Med. быть вблизи —, присутствовать, предстоять. *saṃnihita* находящийся поблизости, присутствующий —, находящийся здесь —, находящийся под рукой, наличный, близко предстоящий. С Dat. готовый —, снаряженный к.
   <sub>attested</sub>
 
 **mit_T177_caus)** — Caus.
@@ -425,17 +425,17 @@
 
 **mit_T199)** — Mit *nis* herausfinden.
 
-- **RU:** — Mit *nis* выяснять, обнаруживать.
+- **RU:** — С *nis* выяснять, обнаруживать.
   <sub>attested</sub>
 
 **mit_T200)** — Mit *vinis*, *vinirdhāya* [Ind. St. 9,32] fehlerhaft für *vinidhārya*.
 
-- **RU:** — Mit *vinis*, *vinirdhāya* [Ind. St. 9,32] ошибочно вместо *vinidhārya*.
+- **RU:** — С *vinis*, *vinirdhāya* [Ind. St. 9,32] ошибочно вм. *vinidhārya*.
   <sub>attested</sub>
 
 **mit_T204)** — Mit *pari*
 
-- **RU:** — Mit *pari*
+- **RU:** — С *pari*
   <sub>attested</sub>
 
 **mit_T204_1)** — 1〉 Act. Med. herumlegen, -setzen, umlegen. *parihita* herumgesetzt, -gestellt, -stehend.
@@ -450,7 +450,7 @@
 
 **mit_T204_3)** — 3〉 umlegen, umgeben, bekleiden, — mit (Instr.), umzingeln. Gewöhnlich Act. *parihita* umlegt, umgeben.
 
-- **RU:** — 3〉 обкладывать, окружать, облачать — с (Instr.), окружать со всех сторон. Обычно Act. *parihita* обложенный, окружённый.
+- **RU:** — 3〉 обкладывать, окружать, облачать — с (Instr.), окружать со всех сторон. Обычно Act. *parihita* обложенный, окруженный.
   <sub>attested</sub>
 
 **mit_T204_4)** — 4〉 Act. schliessen als Kunstausdruck für den Abschluss einer Recitation in der Liturgie.
@@ -460,7 +460,7 @@
 
 **mit_T204_5)** — 5〉 *paridadhe* [HARIV. 3743](https://sanskrit-lexicon-scans.github.io/hariv?3743) fehlerhaft für *praṇidadhe, paridadhyāt* [Ind. St. 5,335] fehlerhaft für *prati˚*. Bisweilen auch mit *paridā* verwechselt.
 
-- **RU:** — 5〉 *paridadhe* [HARIV. 3743](https://sanskrit-lexicon-scans.github.io/hariv?3743) ошибочно вместо *praṇidadhe, paridadhyāt*; [Ind. St. 5,335] ошибочно вместо *prati˚*. Порой также смешивается с *paridā*.
+- **RU:** — 5〉 *paridadhe* [HARIV. 3743](https://sanskrit-lexicon-scans.github.io/hariv?3743) ошибочно вм. *praṇidadhe, paridadhyāt*; [Ind. St. 5,335] ошибочно вм. *prati˚*. Порой также смешивается с *paridā*.
   <sub>attested</sub>
 
 **mit_T204_caus)** — Caus.
@@ -485,7 +485,7 @@
 
 **mit_T231)** — Mit *vipari* vertauschen, wechseln, insbes. ein Gewand. Mit Ergänzung von *vāsas* so v. a. sich umkleiden.
 
-- **RU:** — Mit *vipari* менять, заменять, особ. одежду. С дополнением *vāsas* отсюда преим. переодеваться.
+- **RU:** — С *vipari* менять, заменять, особ. одежду. С дополнением *vāsas* отсюда преим. переодеваться.
   <sub>attested</sub>
 
 **mit_T231_pass)** — Caus. umwenden (das Gesicht).
@@ -495,10 +495,10 @@
 
 **mit_T236)** — Mit *pi* s. u. *api*.
 
-- **RU:** — Mit *pi* см. *api*.
+- **RU:** — С *pi* см. *api*.
   <sub>attested</sub>
 
 **mit_T239)** — Mit *puras* s. u. d. W.
 
-- **RU:** — Mit *puras* см. слово
+- **RU:** — С *puras* см. слово
   <sub>attested</sub>

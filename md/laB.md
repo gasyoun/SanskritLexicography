@@ -138,7 +138,7 @@ v. l.) *labhate rājasattamam*
 [KUMĀRAS. 3,49.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,49) *avakāśam* найти место —, свободное пространство —, случай, проникнуть, оказаться на месте
 [MAITRYUP. 6,22.] *vāco vācyavivekaviklavadhiyāmīdṛgvidhā mādṛśāṃ lapsyante kva kilāvakāśam*
 [Verz. d. Oxf. H. 120,a,33. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?120) другие примеры см. *avakāśa* 2). *antaram* то же: *labdhāntara* _adj._ нашедший случай; отсюда *˚tva*
-_n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntaram* так преим. не произвёл на него впечатления
+_n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntaram* так преим. не произвел на него впечатления
 [KATHĀS. 40,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,55) *labdhāvasara* нашедший случай
 [KAUṢ. UP. Einl. 1,15. 2,13.] *padam* найти место букв. и перен. так преим. проникнуть
 [ŚĀK. 138.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?138)
@@ -438,12 +438,12 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [Spr. 5131](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5131) (ср. *na tamiha darśanāya labhate*
 [CHĀND. UP. 8,3,1.]). *bhoktum*
 [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), схол.
-*praveṣṭuṃ labhate* ему удаётся войти
+*praveṣṭuṃ labhate* ему удается войти
 [HARIV. 8249.](https://sanskrit-lexicon-scans.github.io/hariv?8249) *na cainaṃ kaścidāroḍhuṃ*
-(v. l. вместо *ārūḍhaṃ) labhate rājasattamam* так преим. никому не удаётся видеть, как царь поднимается
+(v. l. вм. *ārūḍhaṃ) labhate rājasattamam* так преим. никому не удается видеть, как царь поднимается
 [MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) *martumapi na labhyate* нельзя даже умереть
 [KATHĀS. 96,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?96,22) *nādharmo labhyate kartuṃ loke vaidyādhare* так преим. никакой несправедливости не может —, не должно быть совершено
-[106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашёл брахмана для совершения жертвоприношения
+[106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашел брахмана для совершения жертвоприношения
 [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)
   <sub>attested</sub>
 
@@ -505,14 +505,14 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) statt des acc. auch instr. der Sache: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
 [ŚIŚ. 1,25.]
 
-- **RU:** 1) добиться того, чтобы кто-л. получил, обрёл, удостоился чего-л.; с dopp. acc.: *āsanam*
+- **RU:** 1) добиться того, чтобы кто-л. получил, обрел, удостоился чего-л.; с dopp. acc.: *āsanam*
 [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām*
 [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8)
 [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa*
 [MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624)
 [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ*
 [MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068)
-[HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* даёт Вид. знак
+[HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* дает Вид. знак
 [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam*
 [ŚATR. 14,78.]
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ*
@@ -520,7 +520,7 @@ _n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntar
 [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ*
 [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ*
 [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha*
-[GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) вместо acc. также instr. вещи: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
+[GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) вм. acc. также instr. вещи: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
 [ŚIŚ. 1,25.]
   <sub>attested</sub>
 
@@ -645,7 +645,7 @@ Comm.)
 [BHĀG. P. 11,5,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,5,36) *avamānādīni janāt*
 [5,14,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,36) *mānam*
 [9,10,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,7) *yaṃ rukmiṇī bhagavatto 'bhilebhe* а именно в качестве сына
-[3,1,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,28) — desid. желать поймать —, получить: *vāsastadabhilipsatī* (то, что унёс ветер)
+[3,1,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,28) — desid. желать поймать —, получить: *vāsastadabhilipsatī* (то, что унес ветер)
 [MBH. 1,2940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2940) *vṛttyarthamabhilipsantaḥ*
 [VĀYU-P.] при [MUIR, ST. I,30, N. 55.]
   <sub>attested</sub>
@@ -762,7 +762,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) fehlerhaft für *ālalambe* .
 
 - **RU:** — 6) *ālalambhe*
-[RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) ошибочно вместо *ālalambe* .
+[RĀJA-TAR. 2,112](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,112) ошибочно вм. *ālalambe* .
   <sub>attested</sub>
 
 **caus)** — Vgl. *ālabdhi* fgg. und *ālambha* fgg. — caus.
@@ -851,7 +851,7 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [NIR. 1,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,14)
 [MBH. 1,4330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4330) [2,1337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1337) [3,16832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16832) [4,485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.485) [659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.659) [675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.675) [7,2536](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2536) (act.). [R. GORR. 2,61,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,61,27) [116,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,11) [MṚCCH. 83,14. fg. 91,20.] [RAGH. 7,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,41) [KUMĀRAS. 5,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,58) [ŚĀK. 59,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?59,15) [85,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?85,7) ad [54.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?54) [VIKR. 63,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?63,12) [Spr. 3670.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3670) [ŚIŚ. 9,60.] [KATHĀS. 17,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) [64,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,12) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,18) [BHĀG. P. 5,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,19) [7,4,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,45) [PRAB. 103,19.] [BHAṬṬ. 3,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,30) [6,125.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,125)
 
-- **RU:** — 3) порицать, делать упрёки; с acc. лица
+- **RU:** — 3) порицать, делать упреки; с acc. лица
 [CHĀND. UP. 2,22,3. 4.]
 [NIR. 1,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,14)
 [MBH. 1,4330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4330) [2,1337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1337) [3,16832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16832) [4,485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.485) [659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.659) [675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.675) [7,2536](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2536) (act.). [R. GORR. 2,61,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,61,27) [116,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,11) [MṚCCH. 83,14. fg. 91,20.] [RAGH. 7,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,41) [KUMĀRAS. 5,58.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,58) [ŚĀK. 59,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?59,15) [85,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?85,7) ad [54.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?54) [VIKR. 63,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?63,12) [Spr. 3670.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3670) [ŚIŚ. 9,60.] [KATHĀS. 17,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) [64,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,12) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,18) [BHĀG. P. 5,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,19) [7,4,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,45) [PRAB. 103,19.] [BHAṬṬ. 3,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,30) [6,125.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,125)
@@ -861,15 +861,15 @@ unternehmen (vgl. *rabh* mit *ā*): *vratam*
 [MBH. 7,3070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) [ŚĀK. CH. 14,13.] [BHĀG. P. 5,10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,1) [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) an den drei ersten Stellen hat die
 v. l. das Richtige.
 
-- **RU:** — 4) *upāla˚* ошибочно вместо *upala˚*
-[MBH. 7,3070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) [ŚĀK. CH. 14,13.] [BHĀG. P. 5,10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,1) [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) в трёх первых местах
+- **RU:** — 4) *upāla˚* ошибочно вм. *upala˚*
+[MBH. 7,3070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) [ŚĀK. CH. 14,13.] [BHĀG. P. 5,10,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,1) [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) в трех первых местах
 v. l. имеет правильное чтение.
   <sub>attested</sub>
 
 **desid)** — Vgl. *upālabhya* fgg. — caus. Jmd tadeln, Jmd Vorwürfe machen
 [PAÑCAT. 134,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?134,24)
 
-- **RU:** — ср. *upālabhya* сл. — caus. порицать кого-л., делать кому-л. упрёки
+- **RU:** — ср. *upālabhya* сл. — caus. порицать кого-л., делать кому-л. упреки
 [PAÑCAT. 134,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?134,24)
   <sub>attested</sub>
 
@@ -1108,7 +1108,7 @@ v. l. имеет правильное чтение.
 [R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) fehlerhaft für *upā˚* getadelt. wie die [ed. Bomb.] liest.
 
 - **RU:** — 5) *upalabdha*
-[R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) ошибочно вместо *upā˚* порицается. как читает [ed. Bomb.].
+[R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) ошибочно вм. *upā˚* порицается. как читает [ed. Bomb.].
   <sub>lexicographic</sub>
 
 **caus-intro)** — Vgl. *upalabdhavya* fgg., *upalabhya* fgg. — caus.
@@ -1174,7 +1174,7 @@ An beiden Stellen vielleicht auch in der Bed. 3).
 
 - **RU:** — *pra*, *prālambhi, pralambham* [P. 7,1,69](https://ashtadhyayi.com/sutraani/7/1/69), схол. [VOP. 24,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,7) 1) {%схватывать, хватать, овладевать кем-л.[MBH. 5,1551.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1551) *kāmamanyubhyāṃ pralabdhaḥ* [4320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4320)
 
-В обоих местах, возможно, также в значении знач. 3).
+В обоих местах, возможно, также в знач. 3).
   <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen
@@ -1425,9 +1425,9 @@ An beiden Stellen vielleicht auch in der Bed. 3).
 
 **3)** *labh* mit *samā*
  3) erlangen, gewinnen
-[Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
+[Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859 "Spr. (II) 4859: mitraṃ prāpnuta sajjanā janaparairlakṣmīḥ samālambyatāṃ bhūpālāḥ paripālayantu vasudhāṃ śaśvatsvabharme sthitāḥ | āstāṃ mānasatuṣṭaye sukṛtināṃ nītirn… — (4721.) Möget ihr als gute Menschen einen Freund gewinnen! Mögen die Länder des Segens theilhaftig werden! Mögen die Fürsten, stets bei ihrer Pflicht verharrend, die Erde hüten! Möge eure Klugheit, wie eine Neuvermählte,…"), v. l.
 
 - **RU:** *labh* с *samā*
  3) обретать, получать
-[Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859), v. l.
+[Spr. (II) 4859](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4859 "Spr. (II) 4859: mitraṃ prāpnuta sajjanā janaparairlakṣmīḥ samālambyatāṃ bhūpālāḥ paripālayantu vasudhāṃ śaśvatsvabharme sthitāḥ | āstāṃ mānasatuṣṭaye sukṛtināṃ nītirn… — (4721.) Möget ihr als gute Menschen einen Freund gewinnen! Mögen die Länder des Segens theilhaftig werden! Mögen die Fürsten, stets bei ihrer Pflicht verharrend, die Erde hüten! Möge eure Klugheit, wie eine Neuvermählte,…"), v. l.
   <sub>attested</sub>

@@ -70,7 +70,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [M. 2,235.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,235) *ucchvasanna sa jīvati*
 [3,72.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,72) *mṛtaḥ sa na tu jīvati*
 [7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143) *sa jīvaṃśca mṛtaścaiva na kvacitsukhamedhate*
-[5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* ещё при жизни
+[5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* еще при жизни
 [2,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,168) *jānīhi bhrātaram — yadi jīvati*
 [MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
 [344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) *te jīvanti sukhaṃ loke*
@@ -82,7 +82,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [PAÑCAT. I,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,24) *kāladaṣṭā na jīvati kanyeyam* не останется в живых
 [VET. 16,13.] *saṃśayaṃ punarāruhya yadi jīvati paśyati* (*bhadrāṇi*) если он останется жив
 [HIT. I,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,6) *ciraṃ jīva*
-[ŚĀK. 109,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?109,18) *jīva* возглас, обращённый к чихнувшему
+[ŚĀK. 109,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?109,18) *jīva* возглас, обращенный к чихнувшему
 [CAURAP. 11.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?11) *taravaḥ kiṃ na jīvanti*
 [BHĀG. P. 2,3,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,18) *jīvedvaiśyasya jīvikām*
 [M. 10,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,82) [4,11.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,11)
@@ -193,7 +193,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
 [MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) *jahi śālvam — mainaṃ jīvaya*
 [3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
-[R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в значении преим. он убил его
+[R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в знач. преим. он убил его
 [BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) позволять кому-л. жить, а также преим. кормить, воспитывать: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
 [MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
 [13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) *eṣo 'smān jīvayet*
@@ -284,7 +284,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [RAGH. 19,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,15)
 
 - **RU:** anu+*anu*
-1) жить вслед за кем-л., жить так, как живёт другой; с acc.: *imaṃ paścādanu jīvātha sarve*
+1) жить вслед за кем-л., жить так, как живет другой; с acc.: *imaṃ paścādanu jīvātha sarve*
 [TS. 5,7,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,4,4) *anvajīvadamarālakeśvarau*
 [RAGH. 19,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,15)
   <sub>attested</sub>
@@ -437,7 +437,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137)
 
 - **RU:** — *upa*
- 1) жить от, существовать благодаря, содержаться за счёт, извлекать пользу из; с acc.: *apāṃ ca khalu vā oṣadhīnāṃ ca rasamupajīvāmaḥ*
+ 1) жить от, существовать благодаря, содержаться за счет, извлекать пользу из; с acc.: *apāṃ ca khalu vā oṣadhīnāṃ ca rasamupajīvāmaḥ*
 [TS. 2,1,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,9,2) *paśūn*
 [7,3,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,5,1) [6,5,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,3,3) *ūrjam*
 [5,4,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,7,3) [6,2,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,10,3) *itaḥ pradānamupajīvanti devāḥ*
@@ -623,7 +623,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 — 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 - **RU:** √*jīv*, *jīvati* (метрически также Med.)
-— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так преим. остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живешь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, еще живой. *jīvangacchati* так преим. остается в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
   <sub>attested</sub>
 
 **2)** — 2〉 aufleben.
@@ -642,7 +642,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
 
 - **RU:** — Caus. *jīvayati* (в эпосе также Med.)
-— 1〉 оживлять, делать живым. *jīvita* оживлённый, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
+— 1〉 оживлять, делать живым. *jīvita* оживленный, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
   <sub>attested</sub>
 
 **caus. 2)** — 2〉 Jmd am Leben lassen, Jmds Leben erhalten, so v. a. Jmd nicht sterben lassen und Jmd nicht tödten.
@@ -707,7 +707,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **anu- 3)** — 3〉 leben von, bestehen durch, erhalten werden von; mit Acc.
 
-- **RU:** — 3〉 жить от, существовать благодаря, содержаться за счёт; с Acc.
+- **RU:** — 3〉 жить от, существовать благодаря, содержаться за счет; с Acc.
   <sub>attested</sub>
 
 **anu- 4)** — 4〉 sich in Etwas (Acc.) fügen, Jmd Etwas gönnen. v. l. *anujānīmas* st. *˚jīvāmas*.
@@ -749,7 +749,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — 1〉 seinen Lebensunterhalt haben [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
 - **RU:** — С *upa*
-— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
   <sub>attested</sub>
 
 **sam- 2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.
@@ -852,7 +852,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 [124,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,113)
 
 - **RU:** *jīv*
- 1) *jīva jīva* да живёшь ты долго
+ 1) *jīva jīva* да живешь ты долго
 [KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
  1) поддерживать жизнь кого-л.
 [KATHĀS. 65,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,29) *jīva* звать

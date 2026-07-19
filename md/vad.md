@@ -23,7 +23,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
 
-- **RU:** *vad*, *vadati* und *˚te*
+- **RU:** *vad*, *vadati* и *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
@@ -178,7 +178,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [21,58.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,58) [M. 8,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59) [ŚĀK. 125.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?125) *mṛṣā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) *yadi yathā vadati tathā tvamasi*
 [ŚĀK. 123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *sarvo jano vadiṣyati yat* что
-[PAÑCAT. 48,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,14) *kiṃ vadāmi yat* so преим. что мне ещё остаётся говорить? мне уже едва ли нужно говорить, что
+[PAÑCAT. 48,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,14) *kiṃ vadāmi yat* so преим. что мне еще остается говорить? мне уже едва ли нужно говорить, что
 [Spr. 2649.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2649) *vadata yadi* ли
 [Spr. 711.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?711) *kiṃ prayacchāmi tubhyaṃ droṇa vadāśu tat*
 [MBH. 1,5130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5130)
@@ -239,7 +239,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [KATHĀS. 7,39.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,39) _n._ das Gesprochene, Rede, Worte
 [H. ś. 81.](https://sanskrit-lexicon-scans.github.io/abch2/app2?81) [VARĀH. BṚH. S. 51,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,1) [BHĀG. P. 4,7,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,6)
 
-- **RU:** α) сказанный, произнесённый
+- **RU:** α) сказанный, произнесенный
 [AK. 3,2,57.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,57)
 [H. an. 3,252.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,252)
 [MED. t. 100.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,100) *ityudite* impers.
@@ -287,17 +287,17 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [HARIV. 11140.](https://sanskrit-lexicon-scans.github.io/hariv?11140)
 [VARĀH. BṚH. S. 54,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,1) *vadantī jāravṛttāntaṃ patyau*
 [Spr. 2712.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2712) *yo gotrādi vadati svayam*
-[H. 856.](https://sanskrit-lexicon-scans.github.io/abch2/app1?856) *jaṭāyuṣaṃ ko vadati prāṇairiṣṭataraṃ mama* давать отчёт о
+[H. 856.](https://sanskrit-lexicon-scans.github.io/abch2/app1?856) *jaṭāyuṣaṃ ko vadati prāṇairiṣṭataraṃ mama* давать отчет о
 [R. 4,56,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,21) *yadi na ca parapuruṣaṃ vadasi* говорить о
-[PAÑCAT. 37,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,24) *āścaryavadvadanti tathaiva cānyaḥ* (*enam*) говорит о нём как о чуде
+[PAÑCAT. 37,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,24) *āścaryavadvadanti tathaiva cānyaḥ* (*enam*) говорит о нем как о чуде
 [BHAG. 2,29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,29)
-[AIT. UP. 3,13] (вероятно, следует читать *vāvadiṣyaditi*). *udita* сообщённый, возвещённый, указанный: *niṣekādiśmaśānānto mantrairyasyodito vidhiḥ*
+[AIT. UP. 3,13] (вероятно, следует читать *vāvadiṣyaditi*). *udita* сообщенный, возвещенный, указанный: *niṣekādiśmaśānānto mantrairyasyodito vidhiḥ*
 [M. 2,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,16) [1,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,79) [4,259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,259) [8,214.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,214) [9,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,25) [31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,31) [96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,96) [250.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,250) [11,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,89) [12,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,113) *uttaraṃ sūtramabhyūhya svayameva mayoditam*
 [KATHĀS. 7,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,11) *mantro me guruṇoditaḥ*
 [49,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,239) [Verz. d. Oxf. H. 65,b,21.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?65) [RĀJA-TAR. 5,117.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,117) [BHĀG. P. 5,1,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,10) [26,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,37) [AK. 2,1,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,1,1) *taduditaṃ saṃketanam*
 [VET. in LA. (III) 20,14.] *śrutismṛtyuditaṃ dharmam*
 [M. 2,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,9) [4,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,14) [155.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,155) [11,203.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,203)
-[YĀJÑ. 1,154.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,154) учёный, традиционный so преим. принятый, правильный; compar. *uditatara* so преим. *iṣṭatara*
+[YĀJÑ. 1,154.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,154) ученый, традиционный so преим. принятый, правильный; compar. *uditatara* so преим. *iṣṭatara*
 [ŚĀṄKH. BR. 19,2.]
   <sub>attested</sub>
 
@@ -458,8 +458,8 @@ u. s. w.); tönen, schallen, klingen: *vayo vadantaḥ*
 [BHAṬṬ. 8,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,27)
 
 - **RU:** — d) *bhāsane*
-[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47) *jñāne* там же und
-[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) вероятно так преим. быть авторитетом, выделяться, отличаться: *śāstre vadate = bhāsamāno bravīti* oder *samyagbodhapūrvakaṃ vadati*
+[P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47) *jñāne* там же и
+[VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) вероятно так преим. быть авторитетом, выделяться, отличаться: *śāstre vadate = bhāsamāno bravīti* или *samyagbodhapūrvakaṃ vadati*
 [P.], схол. *pāṇinirvadate*
 [VOP.] *laṅkāṃ samāviśadrātrau vadamāno 'ridurgamām* so преим. торжествующий
 [BHAṬṬ. 8,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,27)
@@ -583,7 +583,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [GĪT. 5,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,9) *paṭahān*
 [MĀRK. P. 82,54.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?82,54) *ghaṇṭāṃ vādayānaḥ*
 [PAÑCAR. 3,8,10.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,8,10) *vādayāno nakhān*
-[HARIV. 10770.](https://sanskrit-lexicon-scans.github.io/hariv?10770) Вместо acc. исключительно loc.: *vīṇāyām*
+[HARIV. 10770.](https://sanskrit-lexicon-scans.github.io/hariv?10770) Вм. acc. исключительно loc.: *vīṇāyām*
 [KATHĀS. 106,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,12) Без дополнения — музицировать: *gāyannṛtyanvādayaṃśca*
 [MBH. 1,3206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3206) [4,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.305)
 [HARIV. 11029.](https://sanskrit-lexicon-scans.github.io/hariv?11029)
@@ -609,7 +609,7 @@ Schol. zu [P. 1,1,58](https://ashtadhyayi.com/sutraani/1/1/58), Vārtt. 2. [7,4,
 
 - **RU:** — 4) произносить, читать вслух: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.](https://sanskrit-lexicon-scans.github.io/hariv?8692) более новое изд. читает *nāndiṃ* и
-[NĪLAK.] трактует слово ошибочно в значении знач. музыкального инструмента.
+[NĪLAK.] трактует слово ошибочно в знач. музыкального инструмента.
   <sub>attested</sub>
 
 **caus. cross-ref)** — Vgl. *jalavādita* .
@@ -790,7 +790,7 @@ Sch.) [ṚV. 6,47,31.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.0
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] zu [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
 
 - **RU:** — 2) act. говорить снова, возвращаться к чему-либо, повторять что-либо (чтобы подчеркнуть его важность)
-[ŚAṂK.] zu [CHĀND. UP. S. 54.] коммент. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] zu [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
+[ŚAṂK.] к [CHĀND. UP. S. 54.] коммент. к [NYĀYAS. 1,1,1. 2,1,64.] к [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] к [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
   <sub>attested</sub>
 
 **3)** — 3) schmähen: *dakṣamanūdya*
@@ -855,7 +855,7 @@ Sch.) [ṚV. 6,47,31.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.0
 [TBR. 2,3,9,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,9,9)
 [ŚĀṄKH. ŚR. 13,16,1.] *nārto 'pyapavadedviprān*
 [M. 4,236.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,236)
-[MBH. 10,504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.504) *svaṃ putramapavadati* oder *˚te*
+[MBH. 10,504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.504) *svaṃ putramapavadati* или *˚te*
 [P. 1,3,77](https://ashtadhyayi.com/sutraani/1/3/77), схол.
 *nṛbhyo 'pavadamānasya* (так следует читать)
 [BHAṬṬ. 8,45.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,45)
@@ -964,7 +964,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [6,1.] *priyāṃ vācamabhivadantyaḥ*
 [MUṆḌ. UP. 1,2,6.]
 
-- **RU:** — 2) говорить о чём-л., упоминать, под одним словом (и т.д.) подразумевать: *tasmai pratnamiti pūrvaṃ karmābhivadati*
+- **RU:** — 2) говорить о чем-л., упоминать, под одним словом (и т.д.) подразумевать: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [AIT. BR. 1,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,4) *yatkarma kriyamāṇamṛgabhivadati* там же *tāndevo 'bhyavadata mama vā idam*
 [3,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,34) [5,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,2) [6,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,15) [8,26.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,26) [ŚĀṄKH. ŚR. 16,3,12.] *agnīnabhyūde* он говорил, указывая на огни
 [CHĀND. UP. 4,14,2.] высказывать, выражать: *vācā hi nāmānyabhivadati*
@@ -1029,7 +1029,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [P. 1,4,53](https://ashtadhyayi.com/sutraani/1/4/53), Vārtt.
 [VOP. 5,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5)
 
-- **RU:** — 2) мед. кого-л. (acc.) через кого-л. (acc. oder instr.) передать приветствие
+- **RU:** — 2) мед. кого-л. (acc.) через кого-л. (acc. или instr.) передать приветствие
 [P. 1,4,53](https://ashtadhyayi.com/sutraani/1/4/53), Вартт.
 [VOP. 5,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5)
   <sub>attested</sub>
@@ -1156,7 +1156,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ŚAT. BR. 1,1,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,18)
 [LĀṬY. 3,11,3. 4,2,3.]
 
-- **RU:** — *ā* обращаться с речью, говорить к; провозглашать, обнадёживать словом: *tavāhaṃ śūra rātibhiḥ pratyāyaṃ sindhumāvidan*
+- **RU:** — *ā* обращаться с речью, говорить к; провозглашать, обнадеживать словом: *tavāhaṃ śūra rātibhiḥ pratyāyaṃ sindhumāvidan*
 [ṚV. 1,11,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.011.html#rv01.011.06) [64,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.064.html#rv01.064.09) *vidatham*
 [117,25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.25) [10,85,26. fg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.26) *sarvato naḥ śakune bhadramā vada*
 [2,43,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.02) *varṣamā vada*
@@ -1255,7 +1255,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [P.], Sch. *kaṃcinnopāvadiṣṭāsau*
 [BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28)
 
-- **RU:** — 3) мед. уговаривать кого-л., стараться привлечь к себе (*upasaṃbhāṣāyām* und *upamantraṇe*)
+- **RU:** — 3) мед. уговаривать кого-л., стараться привлечь к себе (*upasaṃbhāṣāyām* и *upamantraṇe*)
 [P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47) (*pralobhe*)
 [VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *karmakarānupavadate = upasāntvayati, kulabhāryāmupavadate = upacchandayati*
 [P.], схол. *kaṃcinnopāvadiṣṭāsau*
@@ -1266,7 +1266,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) zieht
 [SĀY.] *upa* zu *hitam* .
 
-- **RU:** — 4) в тёмном месте *guhā hitamupa niṇigvadanti*
+- **RU:** — 4) в темном месте *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) относит
 [SĀY.] *upa* к *hitam* .
   <sub>attested</sub>
@@ -1701,7 +1701,7 @@ u. s. w.) meinen: *tasmai pratnamiti pūrvaṃ karmābhivadati*
 [MĀRK. P. 34,93.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,93) *vivaditāḥ* im Streite liegend: *rājyahetoḥ*
 [MBH. 13,556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.556)
 
-- **RU:** — 2) вступать с кем-либо в словесный спор о чём-либо (loc.); мед.
+- **RU:** — 2) вступать с кем-либо в словесный спор о чем-либо (loc.); мед.
 [P. 1,3,47](https://ashtadhyayi.com/sutraani/1/3/47), схол.
 [VOP. 23,41.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,41)
 [TBR. 2,3,5,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,3,5,5)
@@ -1788,7 +1788,7 @@ versuche nicht mit mir darüber zu reden
 [10,31,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.02) [AV. 6,109,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.02) [11,4,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.06) *sāvitre*
 [TBR. 3,10,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,5)
 [TS. 2,5,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,1,5) *indrāgnī u haivaitatsamūdāte*
-[ŚAT. BR. 5,2,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) [1,1,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,14) [3,1,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,1,10) [8,4,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,1,4) *kumāraṃ jātaṃ saṃvadanta upa vai śuśrūṣate* говорят друг другу о ребёнке: он подслушивает
+[ŚAT. BR. 5,2,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) [1,1,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,14) [3,1,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,1,10) [8,4,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,1,4) *kumāraṃ jātaṃ saṃvadanta upa vai śuśrūṣate* говорят друг другу о ребенке: он подслушивает
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
 [NIR. 11,25.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,25) *gṛhapaterevāraṇyoḥ saṃvadante*
 [ŚAT. BR. 4,6,8,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,13) [14,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,1) *mā maitasminsaṃvadiṣṭhāḥ*
@@ -1863,9 +1863,9 @@ versuche nicht mit mir darüber zu reden
 [50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* worüber man sich geeinigt hat
 [MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931)
 
-- **RU:** — 2) договариваться о чём-л., согласовывать: *saṃvādayanniva*
+- **RU:** — 2) договариваться о чем-л., согласовывать: *saṃvādayanniva*
 [KATHĀS. 107,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,79) *saṃvādyatāṃ tatsarveṣām*
-[50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* то, о чём договорились
+[50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* то, о чем договорились
 [MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931)
   <sub>attested</sub>
 
@@ -1943,7 +1943,7 @@ versuche nicht mit mir darüber zu reden
 [KULL.] zu [M. 12,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,110) *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,82)
 
-- **RU:** — *visam* act. нарушать своё обещание, изменять данному слову
+- **RU:** — *visam* act. нарушать свое обещание, изменять данному слову
 [M. 8,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,219) делать возражения, противоречить
 [KULL.] к [M. 12,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,110) *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,82)
@@ -1954,7 +1954,7 @@ versuche nicht mit mir darüber zu reden
 [R. 6,24,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,24,27)
 
 - **RU:** — ср. *visaṃvāda* . — caus.
- 1) вызывать чьё-л. недовольство: *lakṣmaṇena na visaṃvāditaḥ kaścit*
+ 1) вызывать чье-л. недовольство: *lakṣmaṇena na visaṃvāditaḥ kaścit*
 [R. 6,24,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,24,27)
   <sub>attested</sub>
 
@@ -1974,7 +1974,7 @@ versuche nicht mit mir darüber zu reden
 
 **root)** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
 
-- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
+- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вм. *˚vadata* и *˚vadeyus*)
   <sub>attested</sub>
 
 **1)** — 1〉 Act.
@@ -2004,7 +2004,7 @@ versuche nicht mit mir darüber zu reden
 
 **1e)** — e〉 ankündigen, voraussagen, anzeigen, verrathen (von einem leblosen Subject [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), besagen, bezeichnen.
 
-- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевлённом подлежащем [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), означать, обозначать.
+- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевленном подлежащем [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), означать, обозначать.
   <sub>attested</sub>
 
 **1f)** — f〉 behaupten, annehmen.
@@ -2024,7 +2024,7 @@ versuche nicht mit mir darüber zu reden
 
 **1i)** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) vielleicht fehlerhaft für *ava* *das* (von *dar*).
 
-- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) возможно, ошибочно вместо *ava* *das* (от *dar*).
+- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) возможно, ошибочно вм. *ava* *das* (от *dar*).
   <sub>attested</sub>
 
 **2)** — 2〉 Med.
@@ -2074,7 +2074,7 @@ versuche nicht mit mir darüber zu reden
 
 **3a)** — a〉 gesagt, gesprochen, — in Betreff von (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
 
-- **RU:** — a〉 сказанный, произнесённый, — касательно (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
+- **RU:** — a〉 сказанный, произнесенный, — касательно (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
   <sub>attested</sub>
 
 **3b)** — b〉 angeredet, angesprochen.
@@ -2084,7 +2084,7 @@ versuche nicht mit mir darüber zu reden
 
 **3c)** — c〉 mitgetheilt, verkündet, angegeben.
 
-- **RU:** — c〉 сообщённый, возвещённый, указанный.
+- **RU:** — c〉 сообщенный, возвещенный, указанный.
   <sub>attested</sub>
 
 **3d)** — d〉 gelehrt, so v. a. recipirt, richtig. Compar. *uditatara*.
@@ -2257,7 +2257,7 @@ versuche nicht mit mir darüber zu reden
 
 **vi2-1a)** — a〉 seinen Unmuth auslassen gegen Jmd, tadeln, schmähen; mit Gen. oder Acc.
 
-- **RU:** — a〉 выражать своё недовольство на кого-либо, порицать, поносить; с Gen. или Acc.
+- **RU:** — a〉 выражать свое недовольство на кого-либо, порицать, поносить; с Gen. или Acc.
   <sub>attested</sub>
 
 **vi2-1b)** — b〉 Jmd (Acc.) durch Reden zerstreuen.
@@ -2338,7 +2338,7 @@ versuche nicht mit mir darüber zu reden
 
 **abhi2-caus-3)** — 3〉 Med. Jmd (Dat.) seine Verehrung bezeigen [ŚĀṄKH. GṚHY. 4,12].
 
-- **RU:** — 3〉 Med. выражать кому-либо (Dat.) своё почтение [ŚĀṄKH. GṚHY. 4,12].
+- **RU:** — 3〉 Med. выражать кому-либо (Dat.) свое почтение [ŚĀṄKH. GṚHY. 4,12].
   <sub>attested</sub>
 
 **abhi2-caus-4)** — 4〉 Act. Etwas hersagen lassen.
@@ -2463,7 +2463,7 @@ versuche nicht mit mir darüber zu reden
 
 **abhi3-1d)** — d〉 in der dunkelen Stelle [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) zieht [SĀY.] *upa* zum Acc.
 
-- **RU:** — d〉 в тёмном месте [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) [SĀY.] *upa* относит к Acc.
+- **RU:** — d〉 в темном месте [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) [SĀY.] *upa* относит к Acc.
   <sub>attested</sub>
 
 ## vad
@@ -2508,7 +2508,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-ud2-3)** — 3〉 seinen Unmuth gegen Jmd (Acc.) auslassen, Jmd schmähen. Metrisch auch Med.
 
-- **RU:** 3〉 выражать своё недовольство против кого-либо (Acc.), поносить кого-либо. Метрич. также Med.
+- **RU:** 3〉 выражать свое недовольство против кого-либо (Acc.), поносить кого-либо. Метрич. также Med.
   <sub>attested</sub>
 
 **pref-abhi-nis)** — Mit *abhinis* Act. aussagen in Bezug auf (Acc.).
@@ -2553,7 +2553,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-ud3-1)** — 1〉 heraussagen, reden, sprechen, aussagen, ansagen, verkünden; sprechen zu Jmd (Acc. [BHAṬṬ.]) *prodita* gesprochen.
 
-- **RU:** 1〉 произносить, говорить, высказывать, возвещать, объявлять; говорить к кому-либо (Acc. [BHAṬṬ.]) *prodita* — произнесённый.
+- **RU:** 1〉 произносить, говорить, высказывать, возвещать, объявлять; говорить к кому-либо (Acc. [BHAṬṬ.]) *prodita* — произнесенный.
   <sub>attested</sub>
 
 **pref-ud3-2)** — 2〉 die Stimme ertönen lassen (von Thieren und Vögeln), rauschen (vom Wasser).
@@ -2733,7 +2733,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-sam2-4)** — 4〉 Act. Med. übereinstimmen, zustimmen, seine Zustimmung zu Etwas (Acc. [ŚIŚ. 13,3]) geben; zutreffen, so v. a. zusammen einen Sinn geben [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (im Prākrit). *samudita* allgemein angenommen, gebräuchlich geworden.
 
-- **RU:** 4〉 Act. Med. — соглашаться, давать своё согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так преим. — совместно составлять смысл [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
+- **RU:** 4〉 Act. Med. — соглашаться, давать свое согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так преим. — совместно составлять смысл [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
   <sub>attested</sub>
 
 **pref-sam2-5)** — 5〉 Act. Med. sprechen, sagen zu (Acc.) [NAIṢ. 5,12]. *samudita* angeredet.
@@ -2763,7 +2763,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-sam2-caus-3)** — 3〉 Act. sich über Etwas einigen (*saṃvādya* [GAUT.]), einstimmen. *saṃvādita* worüber man sich geeinigt hat.
 
-- **RU:** 3〉 Act. — договариваться о чём-либо (*saṃvādya* [GAUT.]), соглашаться. *saṃvādita* — то, о чём договорились.
+- **RU:** 3〉 Act. — договариваться о чем-либо (*saṃvādya* [GAUT.]), соглашаться. *saṃvādita* — то, о чем договорились.
   <sub>attested</sub>
 
 **pref-sam2-caus-4)** — 4〉 zutreffend angeben. Nur Absol.
@@ -2803,7 +2803,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-vi-sam-1)** — 1〉 seiner Zusage untreu werden.
 
-- **RU:** 1〉 нарушать своё обещание, изменять данному слову.
+- **RU:** 1〉 нарушать свое обещание, изменять данному слову.
   <sub>attested</sub>
 
 **pref-vi-sam-2)** — 2〉 Einwendungen machen, widersprechen.
@@ -2818,7 +2818,7 @@ versuche nicht mit mir darüber zu reden
 
 **pref-vi-sam-ppp-1)** — 1〉 dessen Unzufriedenheit erregt worden ist.
 
-- **RU:** 1〉 тот, чьё недовольство было вызвано.
+- **RU:** 1〉 тот, чье недовольство было вызвано.
   <sub>attested</sub>
 
 **pref-vi-sam-ppp-2)** — 2〉 woran man Etwas auszusetzen hat, nicht allgemein anerkannt.
@@ -2843,18 +2843,18 @@ versuche nicht mit mir darüber zu reden
 
 **2)** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* machen viel Lärm von sich
-[Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
+[Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882 "Spr. (II) 6882: saṃpūrṇakumbho na karoti śabdamardho ghaṭo ghoṣamupaiti samyak | vidvānnaro yo na karoti garvaṃ guṇairvihīnā bahu vādayanti || — Ein voller Topf macht keinen Lärm, ein halbvoller Krug bullert ganz gehörig: ein gelehrter Mann zeigt keinen Hochmuth")
 
 - **RU:** *vad* caus.
  2) *guṇairvihīnā bahu vādayanti* производить много шума
-[Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
+[Spr. (II) 6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882 "Spr. (II) 6882: saṃpūrṇakumbho na karoti śabdamardho ghaṭo ghoṣamupaiti samyak | vidvānnaro yo na karoti garvaṃ guṇairvihīnā bahu vādayanti || — Ein voller Topf macht keinen Lärm, ein halbvoller Krug bullert ganz gehörig: ein gelehrter Mann zeigt keinen Hochmuth")
   <sub>attested</sub>
 
 **caus-1)** — *pra*
  1) so v. a. anbieten, ausbieten zum Verkauf
-[Spr. (II) 3969](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3969), v. l.
+[Spr. (II) 3969](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3969 "Spr. (II) 3969: parīkṣakā yatra na santi deśe nārghangi ratnāni samudrajāni | ābhīraghoṣe kila candrakāntaṃ tribhirvarāṭairvipaṇanti gopāḥ || — (1721.) In einem Lande, wo es keine Kenner giebt, haben die meererzeugten Perlen keinen Werth: in einer Hirtenstation der Ābhīra verkaufen, wie man weiss, die Hirten einen Mondstein um drei Otterköpfchen."), v. l.
 
 - **RU:** — *pra*
  1) так преим. предлагать, выставлять на продажу
-[Spr. (II) 3969](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3969), v. l.
+[Spr. (II) 3969](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3969 "Spr. (II) 3969: parīkṣakā yatra na santi deśe nārghangi ratnāni samudrajāni | ābhīraghoṣe kila candrakāntaṃ tribhirvarāṭairvipaṇanti gopāḥ || — (1721.) In einem Lande, wo es keine Kenner giebt, haben die meererzeugten Perlen keinen Werth: in einer Hirtenstation der Ābhīra verkaufen, wie man weiss, die Hirten einen Mondstein um drei Otterköpfchen."), v. l.
   <sub>attested</sub>

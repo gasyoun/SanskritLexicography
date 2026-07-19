@@ -36,7 +36,7 @@
 [RAGH. 1,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,59) *bhujavijitavimāna*
 [12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104)
 
-- **RU:** 1) выигрывать, добывать победой, завоёвывать: *asapatnāṃ vijitiṃ vijayate*
+- **RU:** 1) выигрывать, добывать победой, завоевывать: *asapatnāṃ vijitiṃ vijayate*
 [AIT. BR. 1,24.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,24)
 [ŚAT. BR. 2,2,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,4,18) *pṛthivīm*
 [13,5,4,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,13) *lokaṃ vijayate param*
@@ -124,7 +124,7 @@
 [VID. 35.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?35) *vijitendriya*
 [M. 6,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,1)
 [R. 1,6,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,6,3) [63,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,63,21) *vijitātman* эпит. Шивас
-[ŚIV.] *vijitāsana* тот, кто преодолел привязанность к своему сиденью, кому безразлично, на чём сидеть
+[ŚIV.] *vijitāsana* тот, кто преодолел привязанность к своему сиденью, кому безразлично, на чем сидеть
 [BHĀG. P. 3,28,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,8)
   <sub>attested</sub>
 

@@ -1,4 +1,4 @@
-## gam~~h0_45_upa
+## upagam
 
 `gam~~h0_45_upa`
 
@@ -87,7 +87,7 @@
 [MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) *nivāsopagata*
 [3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) *jālakamukhopagatān*
 (схол.: = *praviṣṭān) indukiraṇān*
-[ŚIŚ. 9,39.] достичь определ. положения (о звёздах)
+[ŚIŚ. 9,39.] достичь определ. положения (о звездах)
 [VARĀH. BṚH. S. 9,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,26) *nīcopagatā*
 [32,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,15) [41 (40),3.] *tanayabhavanamupagataḥ*
   <sub>attested</sub>
@@ -176,7 +176,7 @@
 
 **7 (intro))** — 7) vom partic. *upagata* erwähnen wir noch folgende Bedeutungen, welche sich oben nicht bequem einfügen liessen:
 
-- **RU:** — 7) относительно partic. *upagata* упомянем ещё следующие значения, которые не удалось удобно включить выше:
+- **RU:** — 7) относительно partic. *upagata* упомянем еще следующие значения, которые не удалось удобно включить выше:
   <sub>lexicographic</sub>
 
 **7a)** a) angränzend, in der Nähe befindlich: *upagatā daśa yeṣām = upadaśāḥ* beinahe zehn
@@ -199,10 +199,10 @@
 [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); vgl. *upajigamiṣu* zu (acc.) — zu gehen wünschend
 [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
 
-- **RU:** — c) снабжённый, украшенный (чем-л.) (instr.): *hemnaivopagataṃ maṇim* — оправленный в золото; [MBH. 12,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1545) — caus., заставить подойти, призвать к себе: *enāmupagamayya*; [DAŚAK. 137,18.] — desid., желающий шествовать (пешком идти): *tasya mahānubhāvasyānupatham — kaḥ — upajigamiṣati*; [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); ср. *upajigamiṣu* к (acc.) — желающий пойти: [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
+- **RU:** — c) снабженный, украшенный (чем-л.) (instr.): *hemnaivopagataṃ maṇim* — оправленный в золото; [MBH. 12,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1545) — caus., заставить подойти, призвать к себе: *enāmupagamayya*; [DAŚAK. 137,18.] — desid., желающий шествовать (пешком идти): *tasya mahānubhāvasyānupatham — kaḥ — upajigamiṣati*; [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); ср. *upajigamiṣu* к (acc.) — желающий пойти: [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
   <sub>attested</sub>
 
 **этимологическое примечание)** — Vgl. *upaga, upagata* fgg., *upagāmin* und oben — *upā*, wohin die augmentirten Formen (durch * nach dem Citat bezeichnet) gleichfalls gestellt werden könnten, da z. B. *upāgamat* auch in *upa + ā + agamat* zerlegbar ist.
 
-- **RU:** — ср. *upaga, upagata* сл., *upagāmin* и выше — *upā*, куда могли бы быть отнесены также аугментированные формы (отмеченные звёздочкой * после цитаты), поскольку напр. *upāgamat* также разложимо на *upa + ā + agamat*.
+- **RU:** — ср. *upaga, upagata* сл., *upagāmin* и выше — *upā*, куда могли бы быть отнесены также аугментированные формы (отмеченные звездочкой * после цитаты), поскольку напр. *upāgamat* также разложимо на *upa + ā + agamat*.
   <sub>mixed</sub>

@@ -35,5 +35,5 @@
 
 **Nachtrag)** — Vgl. *aticāra* fg. und u. *abhi* .
 
-- **RU:** — ср. *aticāra* сл. und u. *abhi* .
+- **RU:** — ср. *aticāra* сл. и u. *abhi* .
   <sub>attested</sub>

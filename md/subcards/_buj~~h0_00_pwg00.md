@@ -34,7 +34,7 @@
 [12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) *bharabhugnavitatabāhu*
 [VĀSAVAD. 2,4.] *nyubjo bhugne rujā*
 [AK. 2,6,2,12.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,12) *pāṇiruha*
-[BHAṬṬ. 11,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,8) *bhruvau ca bhugnau* (masc.!) «бороздчатый, изборождённый»
+[BHAṬṬ. 11,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,8) *bhruvau ca bhugnau* (masc.!) «бороздчатый, изборожденный»
 [Spr. 4036.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4036) «отодвинутый в сторону»
 [777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?777) *˚netra* «вывернутые (закатившиеся) глаза»
 [Verz. d. Oxf. H. 319,a,8. b, No. 758](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?319) *(bhagnanetra* печ.). *bhugna* означает «Самдхи от *o* и *au* перед нелабиальными гласными»

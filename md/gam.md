@@ -55,7 +55,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ṚV. 10,22,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.06); при этом ср. *adha gmantā nahuṣo havaṃ sūreḥ śrotā rājāno amṛtasya mandrāḥ*
 [1,122,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.11), где, однако,
 [ṚV. PRĀT. 8,15] и Падап. *gmanta* принимают,
-[SĀY.] *āgacchata* объясняет, невзирая на ударение. Место тёмное и, по-видимому, испорчено. мед. *aganmahi* . — III. *jaganti*
+[SĀY.] *āgacchata* объясняет, невзирая на ударение. Место темное и, по-видимому, испорчено. мед. *aganmahi* . — III. *jaganti*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) *jagamyām, ˚yāt, ˚yātam, ˚yus; ajagan, ajaganta, ajagantana* . — IV. *gacchati* (только эта форма в классической литературе)
 [DHĀTUP. 23,13.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23)
 [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77)
@@ -125,7 +125,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* wird kommen
 [MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312)
 
-- **RU:** — 1) идти, двигаться; отправляться туда; уходить, удаляться; приходить; о живых существах и неодушевлённых предметах, о непосредственном и опосредованном движении: *tena gaccha parastaram*
+- **RU:** — 1) идти, двигаться; отправляться туда; уходить, удаляться; приходить; о живых существах и неодушевленных предметах, о непосредственном и опосредованном движении: *tena gaccha parastaram*
 [ṚV. 10,155,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.03) *paraḥ*
 [AV. 3,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.008.html#av03.008.04) *śṛto gacchatu sukṛtāṃ yatra lokaḥ*
 [9,5,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.05) *adha gmantośanā pṛcchate vām*
@@ -171,7 +171,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
 [BHAṬṬ. 7,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,29) *gamyatām* пусть отправляются в путь
 [PAÑCAT. 45,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,1) [100,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?100,10) [232,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?232,10) *tadito gamyatāṃ tvayā*
-[VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* придёт
+[VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* придет
 [MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312)
   <sub>attested</sub>
 
@@ -314,7 +314,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [VS. 15,55.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?15,55) *goṣu*
 [ṚV. 1,83,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.01) *gomati vraje*
 [8,46,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.09) *dharmaṇi*
-[3,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.02) *hṛdi yatte jaghnuṣo bhīragacchat* когда твоё сердце охватил страх
+[3,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.02) *hṛdi yatte jaghnuṣo bhīragacchat* когда твое сердце охватил страх
 [1,32,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.032.html#rv01.032.14) — *madrādiṣu gatvā*
 [P. 6,2,13](https://ashtadhyayi.com/sutraani/6/2/13), схол.
 *mama gṛhe gatvā*
@@ -486,7 +486,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ṚV. 3,38,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.06) С восполнением *manasā* воспринимать, распознавать, угадывать: *tāmasvasthāṃ tadākārāṃ sakhyastā jagmuriṅgitaiḥ*
 (v. l.: *jajñuḥ*)
 [MBH. 3,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2108) *asyedamiti saṃbandho hānau duḥkhena gamyate*
-(v. l. вместо *jāyate*)
+(v. l. вм. *jāyate*)
 [HIT. I,152.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,152) *purastādgamyata eva*
 [ŚĀK. CH. 20,7.] pass. быть понятым, подразумеваться: *yatrārtho gamyate na ca prayogaḥ*
 [P. 8,1,62](https://ashtadhyayi.com/sutraani/8/1/62), схол.
@@ -505,7 +505,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [R. 4,21,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,3)
   <sub>attested</sub>
 
-## gam~~h0_01_sec_1_0
+## gam
 
 `gam~~h0_01_sec_1_0`
 
@@ -654,7 +654,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [8,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,95) *vāṇanikṛttāni śirāṃsi dviṣatām — sphurantyākuñcitoṣṭhāni gāṃ gatāni*
 [R. 3,31,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,21)
 [MBH. 2,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.458) *putrāṃstasya gato nṛpaḥ*
-[R. 1,57,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,13) *bhartāram* «доставшаяся в жёны / попавшая к мужу»
+[R. 1,57,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,13) *bhartāram* «доставшаяся в жены / попавшая к мужу»
 [ŚĀK. 88.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?88) *(ādityam) madhyaṃ nabhaso gatam*
 [M. 4,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,37) *śmaśrūṇi gatānyāsyam* «попавшие в рот волосы бороды»
 [5,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,141) *pañcāśataṃ gatā* «доросший» до 50 (Йоджана)
@@ -743,18 +743,18 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [BHAG. 2,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,55)
 [ŚĀK. 59.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?59) *tadgatenaiva manasā* mit darauf gerichtetem Sinne
 
-- **RU:** [3,28,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,33) [34,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) (вместо *vāṇairatha gataḥ* читать: *vāṇai rathagataḥ) virādhāṅka˚*
+- **RU:** [3,28,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,33) [34,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,4) (вм. *vāṇairatha gataḥ* читать: *vāṇai rathagataḥ) virādhāṅka˚*
 [7,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,7,25) *pārśva˚*
 [31,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,10) *tūṇagataiḥ śaraiḥ*
 [2,100,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,20) *yatkiṃcijjagatīgatam* всё, что находится в мире
 [M. 1,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,100) *brahmacārigataṃ bhaikṣyam*
 [5,129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,129) *vahneḥ — yonigatasya*
 [ŚVETĀŚV. UP. 1,13.] *ādityagataṃ tejaḥ*
-[BHAG. 15,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,12) *ādya˚, turya˚, antya˚* стоящий на первом, четвёртом, последнем месте
-[ŚRUT. 12.] *veda˚* стоящий на четвёртом месте
+[BHAG. 15,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,12) *ādya˚, turya˚, antya˚* стоящий на первом, четвертом, последнем месте
+[ŚRUT. 12.] *veda˚* стоящий на четвертом месте
 [13.] *kāyagataṃ brahma*
 [M. 11,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,97) *gurugatāṃ vidyām*
-[2,218.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,218) *sarvagata (anāmaya)* распространённый повсюду
+[2,218.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,218) *sarvagata (anāmaya)* распространенный повсюду
 [N. 2,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,14) *hṛdgataścaiva bhāvaste*
 [R. 3,19,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,17) *kāmān — manogatān*
 [BHAG. 2,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,55)
@@ -803,7 +803,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ŚĀK. 59.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?59)
 [PAÑCAT. II,54.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,54)
 
-- **RU:** — h) впавший в некое состояние, положение, отношение, пребывающий в нём; восполнение
+- **RU:** — h) впавший в некое состояние, положение, отношение, пребывающий в нем; восполнение
  α) в acc.: *atha yo 'bhayaṃ gato bhavati*
 [TAITT. UP. 2,7.] *anayam*
 [M. 10,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,95) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,102) *saṃyogaṃ patitaiḥ*
@@ -866,7 +866,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [KUMĀRAS. 4,24.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,24) *gato grāmo devadattena*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), Sch.
 
-- **RU:** — k) посещённый, на который ступала нога: *bhartṛputragate pathi*
+- **RU:** — k) посещенный, на который ступала нога: *bhartṛputragate pathi*
 [R. 2,52,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,53) *suhṛdgatāṃ gatim*
 [KUMĀRAS. 4,24.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,24) *gato grāmo devadattena*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), схол.
@@ -877,9 +877,9 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* in der Bedeutung von... bekannt
 [H. an. 2,177.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,177)
 
-- **RU:** — l) распространённый, известный, = *vijñāta*
+- **RU:** — l) распространенный, известный, = *vijñāta*
 [MED. t. 15.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,15) *bhīmeti śabdo 'sya gataḥ pṛthivyām*
-[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в значении...
+[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в знач....
 [H. an. 2,177.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,177)
   <sub>attested</sub>
 
@@ -908,7 +908,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [P. 2,2,13](https://ashtadhyayi.com/sutraani/2/2/13), [Sch. 3,68],
 [Sch. 3,4,76], Sch.
 
-- **RU:** — b) место, куда кто-л. ушёл: *idameṣāṃ gatam*
+- **RU:** — b) место, куда кто-л. ушел: *idameṣāṃ gatam*
 [P. 2,2,13](https://ashtadhyayi.com/sutraani/2/2/13), [Sch. 3,68],
 [Sch. 3,4,76], схол.
   <sub>attested</sub>
@@ -916,7 +916,7 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 **2c)** — c) Verbreitung, Erstreckung, Bekanntsein: *yāvannāmno gatam*
 [CHĀND. UP. 7,1,5.]
 
-- **RU:** — c) распространение, протяжённость, известность: *yāvannāmno gatam*
+- **RU:** — c) распространение, протяженность, известность: *yāvannāmno gatam*
 [CHĀND. UP. 7,1,5.]
   <sub>attested</sub>
 
@@ -1151,7 +1151,7 @@ Begriff sein zu gehen, zu gelangen streben
 
 - **RU:** — *ati* протекать, проходить (о времени): *daśāhe 'tigate*
 [R. 2,77,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,1) *cintāmatijagāma*
-[MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вместо *adhijagāma* .
+[MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вм. *adhijagāma* .
   <sub>attested</sub>
 
 ## upātigam
@@ -1212,7 +1212,7 @@ Begriff sein zu gehen, zu gelangen streben
 [R. 4,51,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,36) *śokasya tasyāntaṃ nādhigacchati*
 [5,25,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,55) [PAÑCAT. II,195.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,195) pass.: *guṇālayo 'pyasanmantrī nṛpatirnādhigamyate*
 [I,428.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,428) *kaccinmitrāṇi bhajate mitrairvāpyadhigamyate*
-[R. 5,33,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,31) *adhigatamakhilasakhībhiridaṃ tava vapuḥ* окружённый, обступленный
+[R. 5,33,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,31) *adhigatamakhilasakhībhiridaṃ tava vapuḥ* окруженный, обступленный
 [GĪT. 11,7.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,7)
   <sub>attested</sub>
 
@@ -1344,7 +1344,7 @@ dazu gelangen: *saṃsāram*
 [GĪT. 11,26.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,26) *bhartāram* выйти замуж, взять себе мужа: *adīyamānā bhartāramadhigacchedyadi svayam*
 [M. 9,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,91)
 [MBH. 1,6427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6427)
-[BENF. Chr. 22,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) взять в жёны: *kulāttu tava — kanyāṃ so 'dhigamiṣyati*
+[BENF. Chr. 22,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) взять в жены: *kulāttu tava — kanyāṃ so 'dhigamiṣyati*
 [MBH. 13,2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2913) *yathāvidhyadhigamyainām*
 [M. 9,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,70) *kṛtadāro 'parāndārānbhikṣitvā yo 'dhigacchati*
 [11,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,5) стать причастным положению, состоянию, отношениюи т.д.,
@@ -1399,7 +1399,7 @@ dazu gelangen: *saṃsāram*
 - **RU:** — 7) учить, изучать, исследовать, читать (ср. *i* с *adhi): akṣarasamāmnāyamadhigamya maheśvarāt*
 [ŚIKṢĀ 57.] *tebhyo 'dhigacchedvinayam*
 [M. 7,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,39) *yadā kiṃcitkiṃcidbudhajanasakāśādadhigatam*
-[BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *adhijagmuryathā vedāṃstapasā brahma cāriṇaḥ . tathā sa tapasopetaḥ sarvāṇyastrāṇyavāpa ha* (то есть и здесь ещё не забыто основное значение urspr. знач. достигать, получать) ||
+[BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *adhijagmuryathā vedāṃstapasā brahma cāriṇaḥ . tathā sa tapasopetaḥ sarvāṇyastrāṇyavāpa ha* (то есть и здесь еще не забыто основное значение urspr. знач. достигать, получать) ||
 [MBH. 1,5074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5074) *vedārthānadhigacchecca śāstrāṇi vividhāni ca*
 [YĀJÑ. 1,99.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,99)
 [BHĀG. P. 1,15,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,30) *vaiśyairapi ca śrotavyo 'dhigamyaśca*
@@ -1706,7 +1706,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 (Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
 [VARĀH. BṚH. S. 39 (38),4.]
 
-- **RU:** [R. 4,17,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,50) О звёздах: «совершенно удалиться, отстоять на 12 созвездий»: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
+- **RU:** [R. 4,17,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,50) О звездах: «совершенно удалиться, отстоять на 12 созвездий»: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
 (схол.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
 [VARĀH. BṚH. S. 39 (38),4.]
   <sub>lexicographic</sub>
@@ -1802,7 +1802,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) [10,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,1)
 [MBH. 2,1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1994) *vanāni kramaśastāta sarvāṇyevābhyagacchata*
 [3,16656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16656) *abhigata* «пришедший к» (dat.): *viniścayenābhigato 'smi te*
-[MBH. 3,16700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16700) «посещённый»: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
+[MBH. 3,16700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16700) «посещенный»: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
 [R. 4,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,59,11)
   <sub>attested</sub>
 
@@ -1973,7 +1973,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 [ŚĀK. 110,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,17) *na tathāsmi — yathā māmavagacchasi*
 [R. 6,101,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,101,7)
 
-- **RU:** — 4) доходить до чего-либо, нападать на мысль о чём-либо, замечать, распознавать, узнавать, убеждаться в чём-либо, быть убеждённым: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
+- **RU:** — 4) доходить до чего-либо, нападать на мысль о чем-либо, замечать, распознавать, узнавать, убеждаться в чем-либо, быть убежденным: *yatraitadvapāṃ vā harvīṃṣi vā vayāṃsi dvipadacatuṣpadaṃ vābhimṛśyāvagaccheyuḥ*
 
 [KAUŚ. 123.] *asya saundaryamavagatya*
 [ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *na tvetadavagacchanti*
@@ -1990,7 +1990,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 [98,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?98,23) *avagacchādya yatkāryaṃ kartavyaṃ te* узнавать, разузнавать
 [R. 6,10,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,6) *avagantuṃ tvayā yuktaṃ buddhyā — mṛgo hemamayo naiṣaḥ* приходить к убеждению
 [3,49,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,19) [1,30,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,30,17) *saṃbhāvya ityavagatya*
-[ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) схол. к [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* я пришёл к убеждению
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) схол. к [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* я пришел к убеждению
 [ŚĀK. 111,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,4) *kathaṃ śāntamityabhihite śrānta ityavagacchati mūrkhaḥ* полагать, что подразумевается
 [MṚCCH. 13,11.] *yāvadbhiḥ śabdaiḥ so 'rtho 'vagamyate tāvantaḥ prayoktavyāḥ* сколько слов требует смысл для понимания
 [PAT.] к [P. 8,1,12.](https://ashtadhyayi.com/sutraani/8/1/12) *nāvagam* с одним infin. не понимать: *(tadbalaṃ) saṃkhyātuṃ nāvajagmatuḥ*
@@ -2318,7 +2318,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 
 - **RU:** 1) дать прийти, привести, доставить: *ā gamaya*
 [AV. 6,81,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.081.html#av06.081.02) *āgamitāpi vidūram*
-[GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3) в повествовании дать кому-л. прибыть, рассказать о чьём-л. прибытии: *rājānamāgamayati = rājāgamanamācaṣṭe*
+[GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3) в повествовании дать кому-л. прибыть, рассказать о чьем-л. прибытии: *rājānamāgamayati = rājāgamanamācaṣṭe*
 [P. 3,1,26](https://ashtadhyayi.com/sutraani/3/1/26), Вартт. 2, схол.
   <sub>attested</sub>
 
@@ -2339,7 +2339,7 @@ herankommen, sich einstellen: *kāle tvanugate*
 [VIKR. 57,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,18) *āgamita* gelesen
 [JAṬĀDH.] im [ŚKDR.]
 
-- **RU:** — 3) получить весть, известие о чём-л. (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
+- **RU:** — 3) получить весть, известие о чем-л. (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
 [MBH. 5,132.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.132) *tadapyāgamitaṃ mayā*
 [1,5434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5434) *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
 [VIKR. 57,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,18) *āgamita* читается
@@ -2433,7 +2433,7 @@ Sch. *āgamayate kālam*
 [SADDH. P. 4,8,b. 9,a.]
 
 - **RU:** — *samanvā*, partic.
-*samanvāgata* comp. в конце comp. сопровождаемый, снабжённый чем-л.
+*samanvāgata* comp. в конце comp. сопровождаемый, снабженный чем-л.
 [BURN. Intr. 168, N. 2. 625.]
 
 [SADDH. P. 4,8,b. 9,a.]
@@ -2542,7 +2542,7 @@ Sch. *āgamayate kālam*
 **1)** — *samudā* zur vollständigen Kenntniss von Etwas gelangen(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
 
-- **RU:** — *samudā* достичь полного знания о чём-л.(?): *sarvabuddhadharmasamudāgata*
+- **RU:** — *samudā* достичь полного знания о чем-л.(?): *sarvabuddhadharmasamudāgata*
 [LALIT. Calc. 8,9.]
   <sub>attested</sub>
 
@@ -2673,7 +2673,7 @@ Sch. *āgamayate kālam*
 [ṚV.]
 
 - **RU:** — *nyā*, *nyāgan*
-[AV. 7,73,8](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.073.html#av07.073.08) v. l. вместо *abhyāgāt* в
+[AV. 7,73,8](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.073.html#av07.073.08) v. l. вм. *abhyāgāt* в
 [ṚV.]
   <sub>attested</sub>
 
@@ -2696,10 +2696,10 @@ Sch. *āgamayate kālam*
 [MBH. 13,3496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) *paryāgataṃ mama kṛṣṇasya caiva yo manyate* welcher meint, dass es zwischen mir und Kṛṣṇa aus sei
 [5,1896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1896)
 
-- **RU:** 1) совершать обход, совершить круговорот; длиться (о своём времени), — прожить, достичь своего конца: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
+- **RU:** 1) совершать обход, совершить круговорот; длиться (о своем времени), — прожить, достичь своего конца: *kumāryaḥ samalaṃkṛtya paryāgacchantu me purāt*
 [MBH. 4,1146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1146) *saṃvatsare paryāgate*
 [TS. 1,6,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,10,3) *yugaparyāgate kāle*
-[R. 3,35,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,9) *aparyāgataṃ dhānyam* ещё не достигший года
+[R. 3,35,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,9) *aparyāgataṃ dhānyam* еще не достигший года
 [SUŚR. 1,199. 17.] *kaphārocakakāsaśvāsapāṇḍurogayakṣmasu paryāgateṣu* inveteratus
 [159,20.] *paryāgata* тот, кто завершил свой жизненный путь
 [MBH. 13,3496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) *paryāgataṃ mama kṛṣṇasya caiva yo manyate* который полагает, что между мной и Кришна всё кончено
@@ -3018,7 +3018,7 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 **1)** — *prod* hervorragen: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,9)
 
-- **RU:** — *prod* выступать, возвышаться над окружающим: *yadṛcchāprodgatodagrasapakṣagiri*
+- **RU:** — *prod* возвышаться: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,9)
   <sub>attested</sub>
 
@@ -3062,7 +3062,7 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [ṚT. 1,7.]
   <sub>attested</sub>
 
-## gam~~h0_45_upa
+## upagam
 
 `gam~~h0_45_upa`
 
@@ -3151,7 +3151,7 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) *nivāsopagata*
 [3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) *jālakamukhopagatān*
 (схол.: = *praviṣṭān) indukiraṇān*
-[ŚIŚ. 9,39.] достичь определ. положения (о звёздах)
+[ŚIŚ. 9,39.] достичь определ. положения (о звездах)
 [VARĀH. BṚH. S. 9,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,26) *nīcopagatā*
 [32,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,15) [41 (40),3.] *tanayabhavanamupagataḥ*
   <sub>attested</sub>
@@ -3240,7 +3240,7 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 
 **7 (intro))** — 7) vom partic. *upagata* erwähnen wir noch folgende Bedeutungen, welche sich oben nicht bequem einfügen liessen:
 
-- **RU:** — 7) относительно partic. *upagata* упомянем ещё следующие значения, которые не удалось удобно включить выше:
+- **RU:** — 7) относительно partic. *upagata* упомянем еще следующие значения, которые не удалось удобно включить выше:
   <sub>lexicographic</sub>
 
 **7a)** a) angränzend, in der Nähe befindlich: *upagatā daśa yeṣām = upadaśāḥ* beinahe zehn
@@ -3263,12 +3263,12 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); vgl. *upajigamiṣu* zu (acc.) — zu gehen wünschend
 [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
 
-- **RU:** — c) снабжённый, украшенный (чем-л.) (instr.): *hemnaivopagataṃ maṇim* — оправленный в золото; [MBH. 12,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1545) — caus., заставить подойти, призвать к себе: *enāmupagamayya*; [DAŚAK. 137,18.] — desid., желающий шествовать (пешком идти): *tasya mahānubhāvasyānupatham — kaḥ — upajigamiṣati*; [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); ср. *upajigamiṣu* к (acc.) — желающий пойти: [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
+- **RU:** — c) снабженный, украшенный (чем-л.) (instr.): *hemnaivopagataṃ maṇim* — оправленный в золото; [MBH. 12,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1545) — caus., заставить подойти, призвать к себе: *enāmupagamayya*; [DAŚAK. 137,18.] — desid., желающий шествовать (пешком идти): *tasya mahānubhāvasyānupatham — kaḥ — upajigamiṣati*; [BHĀG. P. 5,24,26](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,26); ср. *upajigamiṣu* к (acc.) — желающий пойти: [MEGH. 43.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?43)
   <sub>attested</sub>
 
 **этимологическое примечание)** — Vgl. *upaga, upagata* fgg., *upagāmin* und oben — *upā*, wohin die augmentirten Formen (durch * nach dem Citat bezeichnet) gleichfalls gestellt werden könnten, da z. B. *upāgamat* auch in *upa + ā + agamat* zerlegbar ist.
 
-- **RU:** — ср. *upaga, upagata* сл., *upagāmin* и выше — *upā*, куда могли бы быть отнесены также аугментированные формы (отмеченные звёздочкой * после цитаты), поскольку напр. *upāgamat* также разложимо на *upa + ā + agamat*.
+- **RU:** — ср. *upaga, upagata* сл., *upagāmin* и выше — *upā*, куда могли бы быть отнесены также аугментированные формы (отмеченные звездочкой * после цитаты), поскольку напр. *upāgamat* также разложимо на *upa + ā + agamat*.
   <sub>mixed</sub>
 
 ## abhyupagam
@@ -3298,7 +3298,7 @@ Sch. zu [AMAR. 36.] *udgatāḥ pauravadhūmukhebhyaḥ śṛṇvankathāḥ*
 [R. 3,18,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,24) *(bhartari) paralokamabhyupagate*
 [ŚIŚ. 9,13.] прийти кому-л. на помощь: *vayamabhyupagacchāmaḥ kṛṣṇeṇa tvāṃ pradharṣitam*
 [HARIV. 2095.](https://sanskrit-lexicon-scans.github.io/hariv?2095) приступить к чему-л.: *tasmādabhyupagantavyaṃ yuddhāya*
-[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) достичь определённого момента: *āṣāḍhīmabhyupagato bharataḥ*
+[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) достичь определенного момента: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,11) добыть, достигнуть: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,67,10)
   <sub>attested</sub>
@@ -3355,7 +3355,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 - **RU:** — 2) войти в некое состояние, в некое отношение: *pañcatvaṃ samupāgamat*
 [KATHĀS. 5,122](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,122)*. *grahaṇam*
-[R. 1,1,73](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,73).* — Места, отмеченные звёздочкой, могли бы относиться также к *samupā*.
+[R. 1,1,73](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,73).* — Места, отмеченные звездочкой, могли бы относиться также к *samupā*.
   <sub>attested</sub>
 
 ## nigam
@@ -3532,7 +3532,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 **3)** — 3) von Etwas (abl.) frei kommen, befreit werden von: *nirgato gadāt*
 [AK. 2,6,2,8.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,8)
 
-- **RU:** — 3) освободиться от чего-л. (abl.), быть освобождённым от: *nirgato gadāt*
+- **RU:** — 3) освободиться от чего-л. (abl.), быть освобожденным от: *nirgato gadāt*
 [AK. 2,6,2,8.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,8)
   <sub>attested</sub>
 
@@ -3585,7 +3585,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.32) [R. 6,5,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,5,15) [PAÑCAT. 29,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?29,21) *yuddhārthaṃ vinirgataḥ*
 [48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *vinirgatālohitajihva (mahiṣīkula)*
 [ṚT. 1,21.] *tvayā saha śrīśca vinirgatā mama* отступивший, ушедший
-[R. 4,22,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,22,39) удаляться (о звёздах)
+[R. 4,22,39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,22,39) удаляться (о звездах)
 [VARĀH. BṚH. S. 4,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,26)
   <sub>attested</sub>
 
@@ -3684,7 +3684,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [1,13,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,34) *meruṃ parigantum*
 [5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *yathā hi merurbhagavatā* (т.е. *sūryeṇa) nityaśaḥ parigamyate*
 [MBH. 3,8783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8783) *sarvaloko hyayaṃ manye buddhyā parigatastvayā*
-[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* окружённый войском
+[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* окруженный войском
 [RAGH. ed. Calc. 1,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,38) *latāparigatairdrumaiḥ*
 [R. 6,15,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,15,5) *valkadukūlakuthādibhiḥ parigataḥ*
 [BHAṬṬ. 10,1.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?10,1) *viśadaprabhāparigataḥ*
@@ -3737,7 +3737,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [MEGH. 17.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?17) *bhramaṇaparigataṃ bhaikṣam*
 [ŚĀNTIŚ. 4,7.]
 
-- **RU:** — 5) *parigata* (окружённый) исполненный, охваченный, отмеченный: *parigataḥ kṣudhā*
+- **RU:** — 5) *parigata* (окруженный) исполненный, охваченный, отмеченный: *parigataḥ kṣudhā*
 [PAÑCAT. I,55.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,55) *kṣudhāpari˚*
 [MBH. 14,2717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2717) *śvāsahikkā˚*
 [SUŚR. 2,501,9.] *cintā˚*
@@ -3767,9 +3767,9 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [RAGH. 8,91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,91)
 
 - **RU:** — 7) по
-[MED.] и [H. an.] *parigata* равнозначно также *ceṣṭita* совершённый, исполненный; по
+[MED.] и [H. an.] *parigata* равнозначно также *ceṣṭita* совершенный, исполненный; по
 [MED.] = *vismṛta* забытый; по
-[H. an.] = *lābha*, вместо чего следует читать возможно *labdha* (= *prāpta* обретённый). — caus. давать обойти кругом, (время) проводить: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
+[H. an.] = *lābha*, вм. чего следует читать возможно *labdha* (= *prāpta* обретенный). — caus. давать обойти кругом, (время) проводить: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
 [RAGH. 8,91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,91)
   <sub>lexicographic</sub>
 
@@ -3889,7 +3889,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [BENF. Chr. 66,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66) ist *mṛgaṃ prati gatāṃ spṛhām* zu lesen.
 
 - **RU:** — 3) *pratigata* изгладившийся из памяти, забытый: *tasya saṃdidihe buddhistāṃ dṛṣṭvā tadvinirṇaye .. adhītāṃ yogahīnasya vidyāṃ pratigatāmiva .*
-[R. 5,18,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,18) — Вместо *mṛgaṃ pratigatāṃ spṛhām*
+[R. 5,18,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,18) — Вм. *mṛgaṃ pratigatāṃ spṛhām*
 [R. 3,49,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12)
 [BENF. Chr. 66,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66) следует читать *mṛgaṃ prati gatāṃ spṛhām* .
   <sub>lexicographic</sub>
@@ -3967,7 +3967,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 **4)** — 4) *vigata* glanzlos
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49) [TRIK. 3,3,184.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,184) [H. an. 3,297.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,297)
 
-- **RU:** — 4) *vigata* «лишённый блеска, тусклый»
+- **RU:** — 4) *vigata* «лишенный блеска, тусклый»
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49) [TRIK. 3,3,184.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,184) [H. an. 3,297.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,297)
   <sub>attested</sub>
 
@@ -3992,7 +3992,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [VARĀH. BṚH. S. 12,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?12,19)
   <sub>attested</sub>
 
-## gam~~h0_63_sam_0
+## samgam
 
 `gam~~h0_63_sam_0`
 
@@ -4144,7 +4144,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 [MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
 [R. 3,25,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7)
 
-- **RU:** — 2) сжиматься, съёживаться: *balī saṃgatagātrastu durdarśo durbalaḥ *
+- **RU:** — 2) сжиматься, съеживаться: *balī saṃgatagātrastu durdarśo durbalaḥ *
 
 * kṛśaḥ*
 [MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
@@ -4340,7 +4340,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **8)** — 8〉 gehen, sich bewegen, wandeln; einen Gang oder Weg (Acc.) gehen. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
-- **RU:** — 8) идти, двигаться, странствовать; идти каким-либо ходом или путём (Acc.). *jīvangacchati*, так преим. — остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+- **RU:** — 8) идти, двигаться, странствовать; идти каким-либо ходом или путем (Acc.). *jīvangacchati*, так преим. — остается в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 **9)** — 9〉 *manasā* in Gedanken sich begeben zu (Acc.); wahrnehmen.
 
@@ -4372,7 +4372,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic.1c)** — c〉 in einen Zustand, eine Lage, ein Verhältniss gerathen, sich darin befindend; die Ergänzung im Acc., Loc. (ausnahmsweise) oder im Comp. vorangehend.
 
-- **RU:** — в) впавший в некое состояние, положение, отношение, находящийся в нём; дополнение предшествует в Acc., Loc. (в виде исключения) или в Comp..
+- **RU:** — в) впавший в некое состояние, положение, отношение, находящийся в нем; дополнение предшествует в Acc., Loc. (в виде исключения) или в Comp..
 
 **Partic.1d)** — d〉 gehend —, gerichtet —, bezüglich auf; mit *prati* oder am Ende eines Comp.
 
@@ -4384,11 +4384,11 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic.1f)** — f〉 hingegangen, abgeschieden, dem Tode verfallen.
 
-- **RU:** — е) ушедший (в иной мир), скончавшийся, обречённый смерти.
+- **RU:** — е) ушедший (в иной мир), скончавшийся, обреченный смерти.
 
 **Partic.1g)** — g〉 verflossen, -gangen, -strichen.
 
-- **RU:** — ж) истёкший, прошедший, минувший.
+- **RU:** — ж) истекший, прошедший, минувший.
 
 **Partic.1h)** — h〉 verschwunden, gewichen, verloren, dahin seiend, nicht mehr vorhanden. *kariṇaḥ kiṃ gataṃ bhavet*. so v. a. was verlöre dabei der Elephant? [Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865). Ueberaus häufig am Anfange eines adj. Comp.
 
@@ -4404,7 +4404,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic.1l)** — l〉 verbreitet auf (Loc.), bekannt, — als, die Bedeutung habend von (Loc.).
 
-- **RU:** — л) распространённый на (Loc.), известный, — как, имеющий значение (Loc.).
+- **RU:** — л) распространенный на (Loc.), известный, — как, имеющий значение (Loc.).
 
 **Partic.2)** — 2〉 mit pass. Bed.
 
@@ -4416,7 +4416,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic.2b)** — b〉 erreicht, erlangt in *˚pāra, ˚śri, ˚śrī*.
 
-- **RU:** — б) достигнутый, обретённый в *˚pāra, ˚śri, ˚śrī*.
+- **RU:** — б) достигнутый, обретенный в *˚pāra, ˚śri, ˚śrī*.
 
 **Caus.header)** — Caus. *gamayati* ([ṚV. 5,5,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.005.html#rv05.005.10) *gā˚*, aber nur in der Saṃhitā), *gmayate*
 
@@ -4504,11 +4504,11 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **apa115.1)** — 1〉 verfliessen, vergehen. *˚gata* verflossen.
 
-- **RU:** — 1) протекать, проходить. *˚gata* — истёкший.
+- **RU:** — 1) протекать, проходить. *˚gata* — истекший.
 
 **apa115.2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) fehlerhaft für *abhi*.
 
-- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вместо *abhi*.
+- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) ошибочно вм. *abhi*.
 
 **abhi120)** — Mit *upāti* gehen über (einen Fluss).
 
@@ -4520,7 +4520,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **ati121.1)** — 1〉 verfliessen. *˚gata* verflossen vergangen (Zeit).
 
-- **RU:** — 1) протекать. *˚gata* — истёкший, минувший (время).
+- **RU:** — 1) протекать. *˚gata* — истекший, минувший (время).
 
 **ati121.2)** — 2〉 *gemeinsam passiren.
 
@@ -4532,7 +4532,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **adhi123.1)** — 1〉 herankommen, kommen —, hingehen —, gelangen nach oder zu (Acc.). *˚gata* so v. a. umgeben —, umringt von (Instr.).
 
-- **RU:** — 1) приближаться, приходить —, направляться —, достигать чего-либо (Acc.). *˚gata*, так преим. — окружённый, обступленный (Instr.).
+- **RU:** — 1) приближаться, приходить —, направляться —, достигать чего-либо (Acc.). *˚gata*, так преим. — окруженный, обступленный (Instr.).
 
 **adhi123.2)** — 2〉 einem Weibe (Acc.) beiwohnen.
 
@@ -4544,7 +4544,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **adhi123.4)** — 4〉 kommen zu, erlangen, erhalten, theilhaftig werden. *bartāram* zu einem Manne kommen, einen M. nehmen. *kanyām, dārān* zur Frau nehmen, heirathen. *˚gata* mit act. (!) und pass. Bed.
 
-- **RU:** — 4) приходить к чему-либо, обретать, получать, становиться причастным. *bartāram* — приходить к мужчине, брать в M.. *kanyām, dārān* — брать в жёны, жениться. *˚gata* с act. (!) и pass. знач.
+- **RU:** — 4) приходить к чему-либо, обретать, получать, становиться причастным. *bartāram* — приходить к мужчине, брать в M.. *kanyām, dārān* — брать в жены, жениться. *˚gata* с act. (!) и pass. знач.
 
 **adhi123.5)** — 5〉 treffen, stossen auf, auffinden.
 
@@ -4636,7 +4636,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **anu149.6c)** — c〉 nachgeahmt [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
 
-- **RU:** — в) подражаемый, воспроизведённый [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
+- **RU:** — в) подражаемый, воспроизведенный [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
 
 **anu149.7)** — 7〉 eingehen —, enthalten sein in (Loc.).
 
@@ -4728,7 +4728,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_196)** — Mit *vyapa* fortgehen, weichen, schwinden. *˚gata* fortgegangen, gewichen, geschwunden, verstrichen, gewichen von (Abl.).
 
-- **RU:** — С *vyapa* уходить, отступать, исчезать. *˚gata* ушедший, отступивший, исчезнувший, истёкший, отступивший от (Abl.).
+- **RU:** — С *vyapa* уходить, отступать, исчезать. *˚gata* ушедший, отступивший, исчезнувший, истекший, отступивший от (Abl.).
   <sub>attested</sub>
 
 **pw_197)** — Mit *api* und Acc.
@@ -4763,7 +4763,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_203_b)** — b〉 zu dem man gekommen ist, besucht.
 
-- **RU:** — b〉 к кому пришли, посещённый.
+- **RU:** — b〉 к кому пришли, посещенный.
   <sub>attested</sub>
 
 **pw_204_2)** — 2〉 heimkehren [GAUT.]
@@ -4858,7 +4858,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_222_6)** — 6〉 auf Etwas kommen, — verfallen, in Erfahrung bringen, erfahren von (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), bemerken, erkennen, errathen, verstehen, sich von Etwas überzeugen, überzeugt —, der Meinung sein, wissen (*avagacchant* wissentlich [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* mit act. und pass. Bed.
 
-- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), замечать, распознавать, угадывать, понимать, убеждаться в чём-л., быть убеждённым —, быть того мнения, знать (*avagacchant* сознательно [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* с act. и pass. знач.
+- **RU:** — 6〉 доходить до чего-л., — приходить к, узнавать, разузнавать о (Abl. [323,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?323)), замечать, распознавать, угадывать, понимать, убеждаться в чем-л., быть убежденным —, быть того мнения, знать (*avagacchant* сознательно [107,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107)). *avagata* с act. и pass. знач.
   <sub>attested</sub>
 
 **pw_223_7)** — 7〉 erkennen für, halten, ansehen, wissen dass; mit zwei Acc. *na tathāsmi yathā māmavagacchasi* so v. a. ich bin nicht so, wie du glaubst. *avagata* mit act. Bed.
@@ -4868,7 +4868,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_224_8)** — 8〉 *avagata* [Ind. St. 10,318] fehlerhaft für *apagata*.
 
-- **RU:** — 8〉 *avagata* [Ind. St. 10,318] ошибочно вместо *apagata*.
+- **RU:** — 8〉 *avagata* [Ind. St. 10,318] ошибочно вм. *apagata*.
   <sub>attested</sub>
 
 **pw_225)** — Caus.
@@ -4888,7 +4888,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_228)** — Mit *adhyava*, *˚gata* [Ind. St. 10,318] fehlerhaft für *vyapagata*; vgl. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
 
-- **RU:** — С *adhyava*, *˚gata* [Ind. St. 10,318] ошибочно вместо *vyapagata*; ср. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
+- **RU:** — С *adhyava*, *˚gata* [Ind. St. 10,318] ошибочно вм. *vyapagata*; ср. [Comm. zu SŪRYAS. 7,20,b. 21,a.]
   <sub>attested</sub>
 
 **pw_229)** — Mit *pratyava* genau kennen.
@@ -4988,7 +4988,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_248_i)** — i〉 durch Berechnung herausgekommen, berechnet.
 
-- **RU:** — i〉 вычисленный, полученный расчётом.
+- **RU:** — i〉 вычисленный, полученный расчетом.
   <sub>attested</sub>
 
 **pw_249_2)** — 2〉 mit pass. Bed. durchlaufen (Weg).
@@ -5008,12 +5008,12 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_252_2)** — 2〉 *in der Erzählung herbeikommen lassen, Jmds Ankunft erzählen.
 
-- **RU:** — 2〉 *вводить в рассказ, повествовать о чьём-л. прибытии.
+- **RU:** — 2〉 *вводить в рассказ, повествовать о чьем-л. прибытии.
   <sub>attested</sub>
 
 **pw_253_3)** — 3〉 Kunde von Etwas (Acc.) erhalten, — sich verschaffen [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
 
-- **RU:** — 3〉 получать —, добывать себе весть о чём-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
+- **RU:** — 3〉 получать —, добывать себе весть о чем-л. (Acc.) [GOBH. 1,5,12]. (Med.). [CARAKA. 1,8].
   <sub>attested</sub>
 
 **pw_254_4)** — 4〉 Etwas (Acc.) von Jmd (Abl.) lernen [222,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?222). [RAGH. 10,72](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,72). [Spr. 4213](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4213). *āgamita* in Comp. mit dem Lehrer.
@@ -5053,7 +5053,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_261)** — Mit *samanvā*, *˚gata* (buddh.) begleitet von, versehen mit (instr. oder im Comp. vorangehend) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
 
-- **RU:** — С *samanvā*, *˚gata* (будд.) сопровождаемый —, снабжённый чем-л. (instr. или предшествующее в Comp.) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
+- **RU:** — С *samanvā*, *˚gata* (будд.) сопровождаемый —, снабженный чем-л. (instr. или предшествующее в Comp.) [LALIT. 10,10. 15,6. 184,6]. [KĀRAṆḌ. 41,24. 52,17].
   <sub>attested</sub>
 
 **pw_262)** — Mit *abhyā*
@@ -5168,7 +5168,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pw_284_1)** — 1〉 den Kreislauf vollendet habend, abgelaufen.
 
-- **RU:** — 1〉 завершивший круговорот, истёкший.
+- **RU:** — 1〉 завершивший круговорот, истекший.
   <sub>attested</sub>
 
 **pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89).
@@ -5218,7 +5218,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **1)** — 1〉 zusammenkommen, zusammentreffen, sich verbinden, zusammenkommen bei (Loc.), zusammenkommen —, zusammenstossen mit (*saha, sārdham* oder Instr. allein), sich geschlechtlich verbinden mit (Instr.); von Sternen so v. a. in eine solche Stellung kommen, dass der eine Stern den andern verdeckt. *saṃgamaṃ parasparam* eine Verbindung unter einander eingehen. *samāgata* zusammengekommen, versammelt, vereint, — mit (Instr.), zusammengestossen mit (Instr.), in Conjunction stehend mit (Instr.).
 
-- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звёздах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединённый — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
+- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звездах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединенный — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
   <sub>attested</sub>
 
 **2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
@@ -5272,7 +5272,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **ud-4)** — 4〉 sich ausbreiten, — verbreiten *udgata* weit verbreitet.
 
-- **RU:** — 4) распространяться, — расширяться *udgata* широко распространённый.
+- **RU:** — 4) распространяться, — расширяться *udgata* широко распространенный.
   <sub>attested</sub>
 
 **ud-5)** — 5〉 **udgata* vomirt.
@@ -5382,7 +5382,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **prati-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).
 
-- **RU:** — 6) достигать определ. положения (о звёздах).
+- **RU:** — 6) достигать определ. положения (о звездах).
   <sub>attested</sub>
 
 **prati-7)** — 7〉 an Etwas gehen, unternehmen.
@@ -5409,12 +5409,12 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **prati-ppp-2)** — 2〉 *heimgegangen, todt.
 
-- **RU:** — 2) *преставившийся, мёртвый.
+- **RU:** — 2) *преставившийся, мертвый.
   <sub>lexicographic</sub>
 
 **prati-ppp-3)** — 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
 
-- **RU:** — 3) снабжённый. *hemnā* так преим. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
+- **RU:** — 3) снабженный. *hemnā* так преим. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
   <sub>attested</sub>
 
 **prati-ppp-4)** — 4〉 eingeräumt, zugestanden, anerkannt.
@@ -5500,7 +5500,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **sam-a-4)** — 4〉 gerathen an oder in, gelangen zu, theilhaftig werden. Häufig *˚gacchati* und *˚gacchanti* herzustellen für *˚yacchati* und *˚yacchanti*.
 
-- **RU:** — 4) попадать в или к, достигать, становиться причастным. Часто *˚gacchati* и *˚gacchanti* следует восстанавливать вместо *˚yacchati* и *˚yacchanti*.
+- **RU:** — 4) попадать в или к, достигать, становиться причастным. Часто *˚gacchati* и *˚gacchanti* следует восстанавливать вм. *˚yacchati* и *˚yacchanti*.
   <sub>attested</sub>
 
 **sam-a-5)** — 5〉 eintreten, sich einfügen.
@@ -5586,7 +5586,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pra-nir-2)** — 2〉 sich entfernen (von Sternen), weichen.
 
-- **RU:** — 2) удаляться (о звёздах), отступать.
+- **RU:** — 2) удаляться (о звездах), отступать.
   <sub>attested</sub>
 
 **pra-nir-3)** — 3〉 sich losmachen —, sich befreien von (Abl.).
@@ -5642,12 +5642,12 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **pari-2)** — 2〉 umschliessen, umgeben. *˚gata* am Ende eines Comp. umschlossen —, umgeben von.
 
-- **RU:** — 2) окружать, обступать. *˚gata* в конце Comp. окружённый —, обступленный.
+- **RU:** — 2) окружать, обступать. *˚gata* в конце Comp. окруженный —, обступленный.
   <sub>attested</sub>
 
 **pari-3)** — 3〉 sich nach allen Seiten verbreiten *˚gata* weit verbreitet.
 
-- **RU:** — 3) распространяться во все стороны *˚gata* широко распространённый.
+- **RU:** — 3) распространяться во все стороны *˚gata* широко распространенный.
   <sub>attested</sub>
 
 **pari-4)** — 4〉 dahingehen, abscheiden. *˚gata* gestorben.
@@ -5672,7 +5672,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic.1)** — 1〉 (umgeben) erfüllt —, in Besitz genommen —, heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend).
 
-- **RU:** — 1) (окружённый) наполненный —, охваченный —, поражённый чем-либо, отмеченный чем-либо (Instr. или предшествующее в Comp.).
+- **RU:** — 1) (окруженный) наполненный —, охваченный —, пораженный чем-либо, отмеченный чем-либо (Instr. или предшествующее в Comp.).
 
 **Partic.2)** — 2〉 erfahren, erlebt [BĀLAR. 91,22].
 
@@ -5764,7 +5764,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **Partic2.2)** — 2〉 *glanzlos. Vgl. *vidūra vigata*
 
-- **RU:** — 2) *тусклый, лишённый блеска. ср. *vidūra vigata*
+- **RU:** — 2) *тусклый, лишенный блеска. ср. *vidūra vigata*
 
 **note2)** — Caus. verbringen (eine Zeit).
 
@@ -5828,7 +5828,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **sam33.3)** — 3〉 *samgata* eingeschrumpft. Statt *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) liest [ed. Bomb. 3,19,10] besser *samgatāḥ* zusammengekommen.
 
-- **RU:** — 3) *samgata* — сжавшийся, съёжившийся. Вместо *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* — сошедшийся.
+- **RU:** — 3) *samgata* — сжавшийся, съежившийся. Вм. *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* — сошедшийся.
 
 **samCaus.header)** — Caus.
 
@@ -5968,7 +5968,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 **SCH-Nachtr. mit ā, āgamya)** Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10.
 
-- **RU:** С ā, āgamya Absol. то есть в значении: для, ради; с Acc. [Divyāvad. 95,10]; с Gen. 405,10.
+- **RU:** С ā, āgamya Absol. то есть в знач.: для, ради; с Acc. [Divyāvad. 95,10]; с Gen. 405,10.
   <sub>lexicographic</sub>
 
 **SCH-Nachtr. mit ˚parā)** Mit ˚parā "die"? [Harṣac. 243,3; 252,9.]
@@ -6123,7 +6123,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 **1)** 1) *sūkṣmapadyā sopānālīmadhigatavatī* geht, führt zu
 [Spr. 2777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2777)
 
-- **RU:** 1) *sūkṣmapadyā sopānālīmadhigatavatī* — идёт, ведёт к
+- **RU:** 1) *sūkṣmapadyā sopānālīmadhigatavatī* — идет, ведет к
 [Spr. 2777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2777)
 
 **2)** — 2)
@@ -6183,7 +6183,7 @@ v. l.
 
 - **RU:** — *vyapa*, *vyapagatalepa* отступивший, исчезнувший
 [SARVADARŚANAS. 40,19.] протекать, миновать (о времени): *tasminvyapagate 'hani*
-[KATHĀS. 109,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,59) стк. 5. сл. вычеркни «От звёзд» и т.д. до конца, так как в указанном месте (
+[KATHĀS. 109,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,59) стк. 5. сл. вычеркни «От звезд» и т.д. до конца, так как в указанном месте (
 [40,4](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,4)) верное чтение — *vyayagatayoḥ* .
   <sub>attested</sub>
 
@@ -6300,7 +6300,7 @@ v. l.
 [P. 4,3,74.](https://ashtadhyayi.com/sutraani/4/3/74) Z. 2 lies *punaḥ — nayantu* st. *punaryantu* .
 
 - **RU:** — *ā* partic.
- 1) *yadā tvavaśyaṃ yātavyaṃ sarvairdehibhirāgataiḥ* пришедший так преим. явившийся на свет, рождённый
+ 1) *yadā tvavaśyaṃ yātavyaṃ sarvairdehibhirāgataiḥ* пришедший так преим. явившийся на свет, рожденный
 [Spr. 3027.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3027) *tata āgataḥ* происходящий оттуда, — родом оттуда
 [P. 4,3,74.](https://ashtadhyayi.com/sutraani/4/3/74) стк. 2 читай *punaḥ — nayantu* вместо *punaryantu* .
   <sub>attested</sub>
@@ -6589,8 +6589,8 @@ Z. 4 lies 9, 6 st. 9, 16.
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
 
 - **RU:** — *nis*
- 1) «выступать вперёд, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
-[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* «выступающий вперёд»
+ 1) «выступать вперед, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
+[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* «выступающий вперед»
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
   <sub>attested</sub>
 
@@ -6661,7 +6661,7 @@ Z. 4 lies 9, 6 st. 9, 16.
 **5)** — 5) *taṃ saṃgamya* nachdem er mit ihm zusammengekommen war
 [BHĀG. P. 10,68,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,19) — caus.
 
-- **RU:** — 5) *taṃ saṃgamya* после того как он сошёлся с ним
+- **RU:** — 5) *taṃ saṃgamya* после того как он сошелся с ним
 [BHĀG. P. 10,68,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,19) — caus.
 
 **1 (доп.))** 1) verbinden, construiren: *anyārthavantyapi padāni hṛdisthārthāgatyā arthāntare saṃgamayya*
@@ -6719,7 +6719,7 @@ Z. 4 lies 9, 6 st. 9, 16.
 [HARIV. 14787](https://sanskrit-lexicon-scans.github.io/hariv?14787) fehlerhaft für *mama gacchatu*, wie die neuere Ausg. liest.
 
 - **RU:** — *sama*, *samagacchatu*
-[HARIV. 14787](https://sanskrit-lexicon-scans.github.io/hariv?14787) ошибочно вместо *mama gacchatu*, как читает более новая изд..
+[HARIV. 14787](https://sanskrit-lexicon-scans.github.io/hariv?14787) ошибочно вм. *mama gacchatu*, как читает более новая изд..
   <sub>mixed</sub>
 
 **2)** — Vgl. *cud* mit *sama* .
@@ -6762,10 +6762,10 @@ Z. 4 lies 9, 6 st. 9, 16.
 
 
 **1)** — *upā*, *upāgata* der sich in Jmdes Schutz begeben hat
-[Spr. (II) 6019](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019), v. l.
+[Spr. (II) 6019](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019 "Spr. (II) 6019: vāksūnṛtā dayā dānaṃ dīnopagatarakṣaṇam | iti saṅgaḥ satāṃ sādhu hyetatsatpuruṣavratam || — (2768.) Ein freundliches und wahres Wort, Mitleid, Spenden, Schutz in Noth Befindlicher und um Schutz Bittender, dies ist, woran Edle hängen, dies ist ja die schöne Weise guter Menschen."), v. l.
 
 - **RU:** — *upā*, *upāgata* тот, кто вверил себя чьему-либо покровительству
-[Spr. (II) 6019](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019), v. l.
+[Spr. (II) 6019](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019 "Spr. (II) 6019: vāksūnṛtā dayā dānaṃ dīnopagatarakṣaṇam | iti saṅgaḥ satāṃ sādhu hyetatsatpuruṣavratam || — (2768.) Ein freundliches und wahres Wort, Mitleid, Spenden, Schutz in Noth Befindlicher und um Schutz Bittender, dies ist, woran Edle hängen, dies ist ja die schöne Weise guter Menschen."), v. l.
   <sub>attested</sub>
 
 ## gam
@@ -6786,10 +6786,10 @@ Z. 4 lies 9, 6 st. 9, 16.
 
 
 **1)** — *upa*, *upagata* der sich in Jmdes Schutz begeben hat
-[Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019)
+[Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019 "Spr. (II) 6019: vāksūnṛtā dayā dānaṃ dīnopagatarakṣaṇam | iti saṅgaḥ satāṃ sādhu hyetatsatpuruṣavratam || — (2768.) Ein freundliches und wahres Wort, Mitleid, Spenden, Schutz in Noth Befindlicher und um Schutz Bittender, dies ist, woran Edle hängen, dies ist ja die schöne Weise guter Menschen.")
 
 - **RU:** — *upa*, *upagata* тот, кто предался чьему-либо покровительству
-[Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019)
+[Spr. (II) 6019.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6019 "Spr. (II) 6019: vāksūnṛtā dayā dānaṃ dīnopagatarakṣaṇam | iti saṅgaḥ satāṃ sādhu hyetatsatpuruṣavratam || — (2768.) Ein freundliches und wahres Wort, Mitleid, Spenden, Schutz in Noth Befindlicher und um Schutz Bittender, dies ist, woran Edle hängen, dies ist ja die schöne Weise guter Menschen.")
 
 ## nigam
 

@@ -30,14 +30,14 @@
 [GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) statt des acc. auch instr. der Sache: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
 [ŚIŚ. 1,25.]
 
-- **RU:** 1) добиться того, чтобы кто-л. получил, обрёл, удостоился чего-л.; с dopp. acc.: *āsanam*
+- **RU:** 1) добиться того, чтобы кто-л. получил, обрел, удостоился чего-л.; с dopp. acc.: *āsanam*
 [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām*
 [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8)
 [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa*
 [MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624)
 [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ*
 [MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068)
-[HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* даёт Вид. знак
+[HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* дает Вид. знак
 [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam*
 [ŚATR. 14,78.]
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ*
@@ -45,7 +45,7 @@
 [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ*
 [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ*
 [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha*
-[GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) вместо acc. также instr. вещи: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
+[GĪT. 2,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,4) вм. acc. также instr. вещи: *sitaṃ sitimnā sutarāṃ munervaṣuḥ — lambhayan*
 [ŚIŚ. 1,25.]
   <sub>attested</sub>
 

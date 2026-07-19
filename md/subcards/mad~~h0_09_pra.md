@@ -18,10 +18,10 @@
 
 - **RU:** 1) развлекаться, наслаждаться: *madhvo vo nāma mārutaṃ yajatrāḥ pra yajñeṣu śavamā madanti*
 [ṚV. 7,57,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.057.html#rv07.057.01) быть в радостном расположении духа, ликовать: *sa pra mamandattvāyā śatakrato*
-[8,50,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.050.html#rv08.050.09) *yāṃ tvā jano bhūmiriti pra mandate nirṛtiṃ tvāhaṃ pari veda* называет радостным (возможно, в значении 2 — ошибочно называет)
-[VS. 12,64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,64) *pramatta* возбуждённый, охваченный страстью: *vanagaja*
+[8,50,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.050.html#rv08.050.09) *yāṃ tvā jano bhūmiriti pra mandate nirṛtiṃ tvāhaṃ pari veda* называет радостным (возможно, в знач. 2 — ошибочно называет)
+[VS. 12,64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,64) *pramatta* возбужденный, охваченный страстью: *vanagaja*
 [PAÑCAT. 80,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?80,6) похотливый
-[M. 4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) опьянённый, пьяный: *kathāṃ pramattaḥ prathamaṃ kṛtāmiva (na smarati)*
+[M. 4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) опьяненный, пьяный: *kathāṃ pramattaḥ prathamaṃ kṛtāmiva (na smarati)*
 [ŚĀK. 76.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?76)
   <sub>attested</sub>
 
@@ -120,7 +120,7 @@
 [MBH. 3,16201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16201) *pramattaḥ kāmabhogeṣu*
 [R. 3,37,2](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,2) ([33,2](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,33,2) [ed. Bomb.]).
 
-- **RU:** — 3) забывать о своём долге в отношении чего-либо (loc.), распускаться в чём-либо: *ato 'rthānna pramādyanti pramadāsu vipaścitaḥ*
+- **RU:** — 3) забывать о своем долге в отношении чего-либо (loc.), распускаться в чем-либо: *ato 'rthānna pramādyanti pramadāsu vipaścitaḥ*
 [M. 2,213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,213) *pānastrīdyūtagoṣṭhīṣu rājānam — pramādyantam*
 [Spr. 1767.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1767) *pramattaṃ grāmyadharmeṣu*
 [MBH. 3,16201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16201) *pramattaḥ kāmabhogeṣu*

@@ -23,7 +23,7 @@
 **caus-2)** — 2) theilen: *ṣoḍaśabheditāḥ* sechszehnfach getheilt, in 16 Arten zerfallend
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Könnte auch _adj._ von *ṣoḍaśa — bheda* sein.
 
-- **RU:** — 2) делить: *ṣoḍaśabheditāḥ* разделённый на шестнадцать частей, распадающийся на 16 видов
+- **RU:** — 2) делить: *ṣoḍaśabheditāḥ* разделенный на шестнадцать частей, распадающийся на 16 видов
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Могло бы также быть _adj._ от *ṣoḍaśa — bheda*.
   <sub>attested</sub>
 

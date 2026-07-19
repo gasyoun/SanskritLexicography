@@ -43,7 +43,7 @@
 [MED. dh. 28.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,28)
  a) «отбитый, отогнанный, прогнанный»: *payodā vāyuvegaparāhatāḥ*
 [MBH. 3,12889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12889) *daivaṃ matpauruṣaparāhatam*
-[R. GORR. 2,20,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,28) «отвращённый»: *kaṭākṣaparāhataṃ vadanapaṅkajam*
+[R. GORR. 2,20,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,28) «отвращенный»: *kaṭākṣaparāhataṃ vadanapaṅkajam*
 [MĀLATĪM. 140,15.]
 — b) «находящийся в противоречии»: *paraspara˚*
 [AK. 1,1,5,20.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,5,20)

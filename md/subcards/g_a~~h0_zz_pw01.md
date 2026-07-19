@@ -5,7 +5,7 @@
 
 **main)** **3.** √*gā* *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещенный в стихах, воспетый.
   <sub>attested</sub>
 
 **caus.)** — Caus. *gāpayati* singen —, besingen lassen.
@@ -55,7 +55,7 @@
 
 **anu- 3))** — 3〉 singen, besingen; sich über Etwas (Acc.) aussprechen (von alten Weisen).
 
-- **RU:** — 3〉 петь, воспевать; высказываться о чём-л. (Acc.) (о древних мудрецах).
+- **RU:** — 3〉 петь, воспевать; высказываться о чем-л. (Acc.) (о древних мудрецах).
   <sub>attested</sub>
 
 **anu-caus.)** — Caus. nachsingen lassen [GOBH. 3,2,31. 34. 36].
@@ -200,7 +200,7 @@
 
 **vi- 1a))** — a〉 singend hergesagt, gesungen.
 
-- **RU:** — a〉 произнесённый нараспев, спетый.
+- **RU:** — a〉 произнесенный нараспев, спетый.
   <sub>attested</sub>
 
 **vi- 1b))** — b〉 mit Gesang erfüllt [LA. 60,6].
@@ -225,7 +225,7 @@
 
 **vi+vi- / sam+vi-)** — Mit *vipra*, *˚gīta* worüber die Meinungen getheilt sind [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
 
-- **RU:** — С *vipra*, *˚gīta* о чём мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
+- **RU:** — С *vipra*, *˚gīta* о чем мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
   <sub>attested</sub>
 
 **sam+ud-)** — Mit *saṃpra* zu singen anfangen, singen, singend ausprechen.

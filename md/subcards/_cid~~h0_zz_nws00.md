@@ -70,7 +70,7 @@
 
 **NWS-14)** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): various, diverse. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): cut or torn or split or cleft or broken asunder. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 
-- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщеплённый, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
+- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщепленный, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
   <sub>attested</sub>
 
 **NWS-15)** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): fixed; demarcated. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
@@ -80,22 +80,22 @@
 
 **NWS-16)** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): cut off, extirpated, destroyed, interrupted, ceased. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 
-- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искоренённый, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
+- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искорененный, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
   <sub>attested</sub>
 
 **NWS-17)** [ chinná ] divided, torn, cut through, perforated. AV . opened (a wound). Suś . disturbed. Hariv 16258 , Mṛcch . kiṃ naś chinnam : 'what is there in this to disturb us?' there is nothing to care about. Amaru . ? . Suś . [ said of the belly of a leach. ] limited by (in comp.). Bhartṛ(MW) iii, 20 . taken away or out of. R ii, 56, 23 , Ragh xii, 80 . ifc: decaying or exhausted by. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
 
-- **RU:** [ chinná ] разделённый, разорванный, разрезанный, прободённый. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чём стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощённый, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
+- **RU:** [ chinná ] разделенный, разорванный, разрезанный, прободенный. AV . раскрытый (о ране). Suś . потревоженный, расстроенный. Hariv 16258 , Mṛcch . kiṃ naś chinnam : «что нам до этого?» — нет ничего, о чем стоит беспокоиться. Amaru . ? . Suś . [ говорится о брюхе пиявки. ] ограниченный чем-л. (в слож.). Bhartṛ(MW) iii, 20 . изъятый, отнятый. R ii, 56, 23 , Ragh xii, 80 . ifc: истощенный, подорванный чем-л. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )
   <sub>attested</sub>
 
 **NWS-18)** [ chedita ] cut, divided. Lex(MW) . MW : 407 (s.v. chedita )
 
-- **RU:** [ chedita ] срезанный, разделённый. Lex(MW) . MW : 407 (s.v. chedita )
+- **RU:** [ chedita ] срезанный, разделенный. Lex(MW) . MW : 407 (s.v. chedita )
   <sub>lexicographic</sub>
 
 **NWS-19)** [Buddh , unsp] [ppp. chinna ] wearied. [ in strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
 
-- **RU:** [Buddh , unsp] [ppp. chinna ] утомлённый, изнурённый. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
+- **RU:** [Buddh , unsp] [ppp. chinna ] утомленный, изнуренный. [ в strī -, bhāra -, mārga - chinna . Mvy 8793-5 , MSV iv.68.13-14 . ] BHSD : 236 (s.v. chinna )
   <sub>attested</sub>
 
 **NWS-20)** *chid* [Tan , unsp] [ chinna ] (śivait) coupé. [ défaut pouvant affecter un mantra. ŚāraTi 2.71 . ]

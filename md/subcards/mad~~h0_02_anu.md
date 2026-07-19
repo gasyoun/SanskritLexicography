@@ -28,7 +28,7 @@
 [VS. 6,20.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,20) [27,8.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,8)
 [ŚAT. BR. 2,5,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,4,6) [1,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,2,7) partic.: *viprānumadita*
 [TS. 2,5,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,9,1)
-[ĀŚV. ŚR. 1,3.] Вместо *anumatta*
+[ĀŚV. ŚR. 1,3.] Вм. *anumatta*
 [DAŚAK.] в [BENF. Chr. 200,14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) следует просто читать *anunmatta*.
   <sub>attested</sub>
 

@@ -6,6 +6,6 @@
 **1)** — *abhisamā*, partic. *abhisamāhita* verbunden, vereinigt mit (instr.)
 [R. 5,90,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,90,31)
 
-- **RU:** — *abhisamā*, partic. *abhisamāhita* связанный, соединённый с (instr.)
+- **RU:** — *abhisamā*, partic. *abhisamāhita* связанный, соединенный с (instr.)
 [R. 5,90,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,90,31)
   <sub>attested</sub>

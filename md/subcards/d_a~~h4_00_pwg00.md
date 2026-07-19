@@ -16,7 +16,7 @@
 [P. 7,4,54](https://ashtadhyayi.com/sutraani/7/4/54), схол.
   <sub>attested</sub>
 
-**{T24})** — *pariṇi*, *˚dayate*
+**<div n="p">)** — *pariṇi*, *˚dayate*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Sch.
 *praṇidayate* ebend. und
 Sch. zu [P. 1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)

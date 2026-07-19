@@ -87,7 +87,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 **Nachtrag: 7)(b), 1)** — Vgl. noch u. *atha*
  7) (b), 1. *ka*
 
-- **RU:** — ср. ещё u. *atha*
+- **RU:** — ср. еще u. *atha*
  7) (b), читать *ka*
   <sub>attested</sub>
 
@@ -132,7 +132,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 — 1〉 oder, nachfolgend, metrisch aber auch vorangehend. *na — vā* weder — noch, *vā — vā* entweder — oder (bei einer Disjunction zweier Sätze wird das Verbum des ersten, ausnahmsweise auch das des zweiten Satzes betont), *kiṃ* (Fragepartikel). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* weder — noch, *vā — na vā* entweder — oder nicht, vielleicht — vielleicht auch nicht ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), ob — oder nicht, *vā na — vā* entweder nicht — oder, *yadi vā — vā* ob — oder. Bei mehr als zwei Gliedern vom zweiten an wiederholt oder hier und da ausfallend; steht *vā* schon nach dem ersten Gliede, so ist es hier durch entweder oder weder (in einem negativem Satze) wiederzugeben. Eine Negation braucht an zweiter und folgender Stelle nicht wiederholt zu werden. Es wechselt *vā* auch mit *ca* und *api*. Statt des einfachen *vā* auch *api vā*, *api vā punaḥ* (an letzter Stelle), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (an letzter Stelle [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* oder auch nicht [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (an erster Stelle), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* ist das erste *vā* überschüssig.
 
 - **RU:** **1.** *vā* _Indecl._
-— 1〉 или, следует за предшествующим словом, но метрически также предшествует ему. *na — vā* ни — ни, *vā — vā* или — или (при дизъюнкции двух предложений ударение падает на глагол первого, в виде исключения также второго предложения), *kiṃ* (вопросительная частица). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* ни — ни, *vā — na vā* или — или нет, быть может — быть может и нет ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), или — или нет, *vā na — vā* или не — или, *yadi vā — vā* или — или. При более чем двух членах повторяется начиная со второго или местами опускается; если *vā* стоит уже после первого члена, то здесь оно передаётся через или либо ни (в отрицательном предложении). Отрицание не обязательно повторяется при втором и последующих членах. *vā* чередуется также с *ca* и *api*. Вместо простого *vā* также *api vā*, *api vā punaḥ* (на последнем месте), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (на последнем месте [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* или также нет [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (на первом месте), *vā gha*. В *yajñasya vā niśitiṃ voditiṃ vā* первое *vā* является излишним.
+— 1〉 или, следует за предшествующим словом, но метрически также предшествует ему. *na — vā* ни — ни, *vā — vā* или — или (при дизъюнкции двух предложений ударение падает на глагол первого, в виде исключения также второго предложения), *kiṃ* (вопросительная частица). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* ни — ни, *vā — na vā* или — или нет, быть может — быть может и нет ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), или — или нет, *vā na — vā* или не — или, *yadi vā — vā* или — или. При более чем двух членах повторяется начиная со второго или местами опускается; если *vā* стоит уже после первого члена, то здесь оно передается через или либо ни (в отрицательном предложении). Отрицание не обязательно повторяется при втором и последующих членах. *vā* чередуется также с *ca* и *api*. Вм. простого *vā* также *api vā*, *api vā punaḥ* (на последнем месте), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (на последнем месте [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* или также нет [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (на первом месте), *vā gha*. В *yajñasya vā niśitiṃ voditiṃ vā* первое *vā* является излишним.
   <sub>attested</sub>
 
 **2)** — 2〉 oder, so v. a. entweder oder auch nicht, beliebig, facultativ.
@@ -167,7 +167,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 **8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
 
-- **RU:** — 8〉 метрически вместо *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
+- **RU:** — 8〉 метрически вм. *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
   <sub>attested</sub>
 
 **9)** — 9〉 nach den Lexicographen auch blosser Lückenbüsser.
@@ -341,7 +341,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 - **RU:** — 4〉 *nirvāṇa*
 — a〉 угасший; о солнце так преим. зашедший [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
-— b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобождённый от уз существования.
+— b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобожденный от уз существования.
 — c〉 *неподвижный.
   <sub>mixed</sub>
 
@@ -423,7 +423,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 **mit_anu_sam)** — Mit *anusam* der Reihe nach (zusammen) anwehen.
 
-- **RU:** — С *anusam* поочерёдно (совместно) овевать.
+- **RU:** — С *anusam* поочередно (совместно) овевать.
   <sub>attested</sub>
 
 **1)** **3.** √*vā*, *vāyati*, *vāyate* (episch)
@@ -445,7 +445,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 **4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) fehlerhaft für *avārayat*.
 
-- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) ошибочно вместо *avārayat*.
+- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) ошибочно вм. *avārayat*.
   <sub>attested</sub>
 
 **5)** — 5〉 *vāna* trocken.
@@ -465,7 +465,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 **mit_upa_erschoepf)** — Mit *abhi*, *abhivāta* siech, krank. Statt dessen fehlerhaft *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
 
-- **RU:** — С *abhi*, *abhivāta* хворый, больной. Ошибочно вместо этого *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
+- **RU:** — С *abhi*, *abhivāta* хворый, больной. Ошибочно вм. этого *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
   <sub>attested</sub>
 
 **mit_pra_vi)** — Mit *ud* matt werden, hinsterben; vom Feuer in sich erlöschen.
@@ -497,7 +497,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 **mit_abhi_erschoepf_2)** — 2〉 *pravāta* erschöpft, müde [CARAKA. 1,7].
 
-- **RU:** — 2〉 *pravāta* изнурённый, усталый [CARAKA. 1,7].
+- **RU:** — 2〉 *pravāta* изнуренный, усталый [CARAKA. 1,7].
   <sub>attested</sub>
 
 **mit_sam_pra)** — Mit *atipra* heftig wehen.
@@ -705,7 +705,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 — Vgl. 3. *vā* mit *ud* .
 
 - **RU:** — *ud* гаснуть от дуновения ветра: *agnirvā udvānvāyumanupraviśati*
-[AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) ([ŚAṂK.] zu [BṚH. ĀR. UP. 321).] [KAUŚ. 72.]
+[AIT. BR. 8,28](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,28) ([ŚAṂK.] к [BṚH. ĀR. UP. 321).] [KAUŚ. 72.]
 — ср. 3. *vā* mit *ud* .
   <sub>attested</sub>
 
@@ -718,7 +718,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] zu [BṚH. ĀR. UP. S. 321).]
 
 - **RU:** — *anūd* развеваться на ветру (acc.): *yadā vā agniranugacchati vāyuṃ tarhyanūdvāti tasmādenamudavāsīdatyāhurvāyuṃ hyanūdvāti*
-[ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] zu [BṚH. ĀR. UP. S. 321).]
+[ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] к [BṚH. ĀR. UP. S. 321).]
   <sub>attested</sub>
 
 ## upa+vā
@@ -734,7 +734,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 - **RU:** — *upa* овевать, обдувать
 [ŚAT. BR. 13,3,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,8,6) дуть на (что-л.): *yūyaṃ tu me sacyupavāta*
 [4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7)
-— ср. *upavā* und 3. *vā* mit *upa* .
+— ср. *upavā* и 3. *vā* mit *upa* .
   <sub>attested</sub>
 
 ## pariṇi+vā
@@ -745,7 +745,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 **1)** — *pariṇi* und *praṇi˚*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Schol.
 
-- **RU:** — *pariṇi* und *praṇi˚*
+- **RU:** — *pariṇi* и *praṇi˚*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), схол.
   <sub>attested</sub>
 
@@ -901,7 +901,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 **nachtrag)** — Vgl. *pravā, pravāta* (auch
 [R. 5,26,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,1)), *pravāyya* .
 
-- **RU:** — ср. *pravā, pravāta* (auch
+- **RU:** — ср. *pravā, pravāta* (также
 [R. 5,26,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,1)), *pravāyya* .
   <sub>attested</sub>
 
@@ -987,14 +987,14 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* wird nicht müde zu verzehren
 [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
 
-- **RU:** — 1) слабеть, уставать, истощаться, падать духом: *na vāyanti subhvo devayuktāḥ* [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ* [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* не устаёт пожирать [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
+- **RU:** — 1) слабеть, уставать, истощаться, падать духом: *na vāyanti subhvo devayuktāḥ* [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ* [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* не устает пожирать [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
   <sub>attested</sub>
 
 **2)** — 2) = 2. *vā* wehen: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
 [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
 [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) Druckfehler für *avārayat* .
 
-- **RU:** — 2) = 2. *vā* веять: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ* [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat* [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) опечатка вместо *avārayat* .
+- **RU:** — 2) = 2. *vā* веять: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ* [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat* [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) опечатка вм. *avārayat* .
   <sub>attested</sub>
 
 ## vā
@@ -1273,7 +1273,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [MUṆḌ. UP. 3,1,9.]
 [MAITRYUP. 6,3.] *otaproto 'ham*
 [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789)
-— ср. *ṛgāvānam* und *nasyota* .
+— ср. *ṛgāvānam* и *nasyota* .
   <sub>attested</sub>
 
 ## samāvā
@@ -1346,7 +1346,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [10,87,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,27) *paryuta* eingefasst (mit Zierat): ein Wagen
 [ŚAT. BR. 13,2,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,7,8)
 
-- **RU:** — *pari* пронизывать тканьём: *yatra ha vittagrahaṃ pāpapuruṣaṃ dharmarājapuruṣā vāyakā iva sarvato 'ṅgeṣu sūtraiḥ parivayanti*
+- **RU:** — *pari* пронизывать тканьем: *yatra ha vittagrahaṃ pāpapuruṣaṃ dharmarājapuruṣā vāyakā iva sarvato 'ṅgeṣu sūtraiḥ parivayanti*
 [BHĀG. P. 5,26,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,36) опутывать, связывать: *parivayase paśūniva girā vibudhānapi*
 [10,87,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,87,27) *paryuta* украшенный (орнаментом): колесница
 [ŚAT. BR. 13,2,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,7,8)
@@ -1411,13 +1411,13 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [SUŚR. 1,230,15.] *śṛṅga˚*
 [HARIV. 15438.](https://sanskrit-lexicon-scans.github.io/hariv?15438) *śalya˚*
 [RAGH. 9,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,75) *prāsa˚*
-[KATHĀS. 21,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,15) схол. zu [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *hṛdaye protaḥ śaraḥ*
+[KATHĀS. 21,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,15) схол. к [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *hṛdaye protaḥ śaraḥ*
 [MBH. 5,852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.852) *raupyāṅkuramukhaprotamuktāsaṃtati*
 [KATHĀS. 18,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,47) *protaśūle śrute tasmin*
 [RĀJA-TAR. 2,80.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,80) *protaghane viṣāṇe*
 [KUMĀRAS. 7,49.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,49) *karān — śaśinastarucchidraprotān* торчащий в
 [Spr. 3866.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3866) *iṣīkātūlamagnau protam* воткнутый в
-[CHĀND. UP. 5,24,3.] *yasminsarvamidaṃ protaṃ brahma sthāvarajaṅgamam* заключённый в
+[CHĀND. UP. 5,24,3.] *yasminsarvamidaṃ protaṃ brahma sthāvarajaṅgamam* заключенный в
 [MṚTYUL. UP.] in [Ind. St. 9,20.] [ŚAT. BR. 14,6,6,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,6,1) [AṢṬĀV. 1,15.] [BHĀG. P. 3,15,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,6) *otaprotamidaṃ yasmiṃstantuṣvaṅga yathā paṭaḥ*
 [10,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,35) [9,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,7) [MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789) *etābhiḥ sarvamidamotaṃ protaṃ ca* пронизанный
 [MAITRYUP. 6,3.] [NṚS. TĀP. UP.] in [Ind. St. 9,158. fg.] *prota* тканая вещь, тканое одеяние, _m._
@@ -1449,7 +1449,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 **1)** — *anupra* daranheften: *śikhām*
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
 
-- **RU:** — *anupra* прикреплять, пристёгивать к: *śikhām*
+- **RU:** — *anupra* прикреплять, пристегивать к: *śikhām*
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
   <sub>attested</sub>
 
@@ -1481,7 +1481,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 [ṚV. 3,54,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.09)
 
 - **RU:** — *vi* плести
-[LĀṬY. 8,8,13.] *vyuta* сплетённый, сотканный: *atka*
+[LĀṬY. 8,8,13.] *vyuta* сплетенный, сотканный: *atka*
 [ṚV. 1,122,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.122.html#rv01.122.02) *rajjubhiḥ*
 [ŚAT. BR. 6,7,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,7,1,15) [14,1,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,3,11) *vardhra˚*
 [5,4,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,1) *urau pathi vyute (= vivikte*
@@ -1501,7 +1501,7 @@ _PWG article — 50 sub-card(s), 157 sense(s) · RU 157/157 · EN 0/157_
 
 - **RU:** — *sam* ткать по, с узорами и т.д.: *tantuṃ tataṃ peśasā saṃvayantī*
 [VS. 20,41.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,41)
-[ṚV. 2,3,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.06) *tardmasamuta* скреплённый колышками
+[ṚV. 2,3,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.06) *tardmasamuta* скрепленный колышками
 [ŚAT. BR. 3,2,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,2)
   <sub>attested</sub>
 

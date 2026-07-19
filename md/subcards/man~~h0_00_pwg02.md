@@ -77,7 +77,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [R. 1,72,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,9) *sagarasya mate sthitaḥ*
 [40,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,6) [73,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,32) *keṣāṃcittu mate*
 [RĀJA-TAR. 4,369.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,369)
-[SIDDH. K.] zu [P. 1,2,6.](https://ashtadhyayi.com/sutraani/1/2/6) [MĀRK. P. 18,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,33) *satāṃ matamatikramya yo 'satāṃ vartate mate* совет
+[SIDDH. K.] к [P. 1,2,6.](https://ashtadhyayi.com/sutraani/1/2/6) [MĀRK. P. 18,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,33) *satāṃ matamatikramya yo 'satāṃ vartate mate* совет
 [Spr. 3117.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3117) *matāni mantriṇām*
 [KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* учение
 [BHAG. 3,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,31) [18,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,6)
@@ -92,7 +92,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759)
 [BHĀG. P. 1,7,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,32)
 — ср. *amata (amata*
-[KĀM. NĪTIS. 13,67] fehlerhaft für *abhṛta*; ср.
+[KĀM. NĪTIS. 13,67] ошибочно вм. *abhṛta*; ср.
 [75]).
   <sub>attested</sub>
 

@@ -9,7 +9,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **NWS-1)** *śam (=pṭ śam 1)* [Ved , unsp] wirken, mit Eifer thätig sein, sich abmühen (mit dem Instr dessen, wodurch oder womit man thätig ist). beim Gottesdienst thätig sein (durch Opferbereiten), eifrig beten. e. Gotte (Dat) eifrig dienen (durch Gebet oder Opferbereitung). wirksam sichern vor ( purā́ m. Abl). Vgl śamāy und ścam
 
-- **RU:** *śam (=pṭ śam 1)* [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy und ścam. [NWS: Graßmann 1873 (1996) : 1378]
+- **RU:** *śam (=pṭ śam 1)* [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy и ścam. [NWS: Graßmann 1873 (1996) : 1378]
   <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] eifrig sein. AB 2,7,11 . [ = saṃjñapayata (Komm). ]
@@ -34,7 +34,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **NWS-6)** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) to become tired, finish, stop, come to an end, rest, be quiet or calm or satisfied or contented. TSaṃ , ŚB . to cease, be allayed or extinguished. Mbh , Kāvya(MW)
 
-- **RU:** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворённым, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
+- **RU:** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворенным, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
   <sub>attested</sub>
 
 **NWS-7)** [Śā , Med] ( śāmyati VI ) relieve, cure. Hoernle 1893-1912 (II) 39.260
@@ -64,7 +64,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **NWS-12)** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: quieted, calmed, allayed, appeased. Bbh 169.3 . Buddh , unsp ; BHSD : 519 (s.v. vyupaśānta )
 
-- **RU:** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворённый. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
+- **RU:** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворенный. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
   <sub>attested</sub>
 
 **NWS-13)** *– (° śamaya -): ṣur ṇuhe bringen, erledigen. ābhisdhh § 38.8.30bh3 .* [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : "déposer ensemble". Caland 1924, p. 166 . Ved , unsp
@@ -99,12 +99,12 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **NWS-19)** [Ved , unsp] Subst [nur śámi (Lok) = Indekl] Zurüstung, Vorbereitung, Opferveranstaltung, Aufwartung. ṚV 1,87,5 ; śámī . Indekl recht , zusagend, nach Wunsch, glückbringend, heilsam, zum Glück, zum Wohl. ṚV 10,97,18 . + as oder bhū : recht sein, zusagen, zuträglich sein, gut tun, Glück bringen, zum Wohl dienen; wohlbekommen, zuträglich sein. ṚV 1,5,7 , ṚV 8,48,4 . als Subst gebraucht: Wohlsein, Gesundheit, Heil, alles Gute. ṚV 7,86,8
 
-- **RU:** [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. ṚV 1,87,5 ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. ṚV 10,97,18 . + as oder bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. ṚV 1,5,7 , ṚV 8,48,4 . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. ṚV 7,86,8. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
+- **RU:** [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. ṚV 1,87,5 ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. ṚV 10,97,18 . + as или bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. ṚV 1,5,7 , ṚV 8,48,4 . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. ṚV 7,86,8. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
   <sub>attested</sub>
 
 **NWS-20)** *śam* [Ved , unsp] Subst n ursprünglich wol: Werk, heilsames Werk. Heil, Segen. mit as oder bhū : jemandem (Dat) zum Heile gereichen, ihm lieb, angenehm sein (ebenso ohne ausgedrücktes as oder bhū ). śám yós oder śám ca yós ca : Heil und Segen
 
-- **RU:** *śam* [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as oder bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as oder bhū ). śám yós oder śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
+- **RU:** *śam* [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as или bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as или bhū ). śám yós или śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
   <sub>attested</sub>
 
 **NWS-21)** [Reg , unsp] Indekl magic syllable. STB, S. 9, Z. 24
@@ -119,7 +119,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **NWS-23)** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . der seine Arbeit getan hat, fertig. ṚV 10,142,6 . insbes: der alle Vorbereitungen und Arbeiten für das Opfer richtig gemacht hat, gerüstet, vorbereitet, fertig, opferbereit. ṚV 5,29,12 . + Instr: aufwartend mit. ṚV 1,151,7 . pass: (zum Opfer) hergerichtet. AV 2,34,2 . fertig, bereit. ṚV 1,24,4 . Geldner 1907 : 177 (s.v. śam )
 
-- **RU:** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвёл все приготовления и работы для жертвы; снаряжённый, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
+- **RU:** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвел все приготовления и работы для жертвы; снаряженный, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
   <sub>attested</sub>
 
 **NWS-24)** *śámi* [Ved , unsp] Indekl śám . Geldner 1907 (N) : 236 (s.v. śám )
@@ -140,7 +140,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 **1)** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 
-- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] и *śamita*)
 — 1〉 стараться, усердно трудиться, работать; особ. о деятельности при богослужении.
   <sub>attested</sub>
 
@@ -157,8 +157,8 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 **1)** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 ruhig —, still werden, befriedigt sein.
 
-- **RU:** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
-— 1〉 успокаиваться, затихать, быть удовлетворённым.
+- **RU:** **2.** √*śam*, *śāmyati* (metrisch также Med. и *śamet*; *Pass. impers. *śamyate, aśami*)
+— 1〉 успокаиваться, затихать, быть удовлетворенным.
   <sub>attested</sub>
 
 **2)** — 2〉 aufhören, nachlassen, sich legen, erlöschen.
@@ -208,17 +208,17 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **3h)** — h〉 zur Ruhe gekommen, so v. a. zum Tode befördert, gestorben, ausgestorben.
 
-- **RU:** — h〉 обретший покой, so преим. умерщвлённый, умерший, вымерший.
+- **RU:** — h〉 обретший покой, so преим. умерщвленный, умерший, вымерший.
   <sub>attested</sub>
 
 **3i)** — i〉 *śāntaṃ pāpam* (auch wiederholt) abgewehrt sei das Uebel, ein Ausruf, mit den man ein Unheil, das ein ausgesprochenes Wort bewirken könnte, abwehren will. *dhik śāntam* so v. a. behüte Gott! bei Leibe nicht! *śāntam* allein = *śāntaṃ pāpam* und auch so v. a. so wahr mir Gott helfen möge!
 
-- **RU:** — i〉 *śāntaṃ pāpam* (auch wiederholt) да отвратится зло — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесённое слово. *dhik śāntam* so преим. упаси Бог! ни в коем случае! *śāntam* allein = *śāntaṃ pāpam* und auch so преим. да поможет мне Бог!
+- **RU:** — i〉 *śāntaṃ pāpam* (также wiederholt) да отвратится зло — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесенное слово. *dhik śāntam* so преим. упаси Бог! ни в коем случае! *śāntam* allein = *śāntaṃ pāpam* и также so преим. да поможет мне Бог!
   <sub>attested</sub>
 
 **caus-intro)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. wohl nur fehlerhaft)
 
-- **RU:** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] и т.д. wohl nur fehlerhaft)
+- **RU:** — Caus. *śamayati* (metrisch также *śāmayati*; Pass. *śāmyate* [также [VAITĀN. 10,18] и zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] и т.д. wohl nur fehlerhaft)
   <sub>attested</sub>
 
 **caus-1)** — 1〉 beruhigen, stillen, beschwichtigen.
@@ -258,33 +258,33 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **anu-prefix)** — Mit *anu* hinterher ruhig werden, — aufhören, — sich legen.
 
-- **RU:** — Mit *anu* следом успокаиваться, — прекращаться, — утихать.
+- **RU:** — С *anu* следом успокаиваться, — прекращаться, — утихать.
   <sub>attested</sub>
 
 **apa-prefix)** — Mit *abhi* aufhören, sich legen.
 
-- **RU:** — Mit *abhi* прекращаться, утихать.
+- **RU:** — С *abhi* прекращаться, утихать.
   <sub>attested</sub>
 
 **abhi-prefix)** — Mit *ava*, *avaśānta* erlöschen.
 
-- **RU:** — Mit *ava*, *avaśānta* угасать.
+- **RU:** — С *ava*, *avaśānta* угасать.
   <sub>attested</sub>
 
 **ava-prefix)** — Mit *vyava*, *vyavaśānta* dass. [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
 
-- **RU:** — Mit *vyava*, *vyavaśānta* то же [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
+- **RU:** — С *vyava*, *vyavaśānta* то же [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
   <sub>attested</sub>
 
 **ava-caus)** — Mit *samava* Caus. placare.
 
-- **RU:** — Mit *samava* Caus. placare.
+- **RU:** — С *samava* Caus. placare.
   <sub>attested</sub>
 
 **ud-prefix-1)** — Mit *upa* (Med. hier und da auch in ungebundener Rede) 
 — 1〉 ruhig —, still werden.
 
-- **RU:** — Mit *upa* (Med. hier und da auch in ungebundener Rede) 
+- **RU:** — С *upa* (Med. hier и da также in ungebundener Rede) 
 — 1〉 становиться тихим, спокойным.
   <sub>attested</sub>
 
@@ -344,13 +344,13 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **vyupa-ppp)** — Mit *abhyupa*, *˚śānta* gestillt, abgekühlt.
 
-- **RU:** — Mit *abhyupa*, *˚śānta* утолённый, охлаждённый.
+- **RU:** — С *abhyupa*, *˚śānta* утоленный, охлажденный.
   <sub>attested</sub>
 
 **ni-prefix-1)** — Mit *vyupa*
 — 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
 
-- **RU:** — Mit *vyupa*
+- **RU:** — С *vyupa*
 — 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
   <sub>attested</sub>
 
@@ -361,13 +361,13 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **pari-prefix)** — Mit *samupa* aufhören, sich legen [CARAKA. 6,10].
 
-- **RU:** — Mit *samupa* прекращаться, утихать [CARAKA. 6,10].
+- **RU:** — С *samupa* прекращаться, утихать [CARAKA. 6,10].
   <sub>attested</sub>
 
 **pra-prefix-1)** — Mit *ni*, *niśānta*
 — 1〉 *beruhigt, ruhig [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
 
-- **RU:** — Mit *ni*, *niśānta*
+- **RU:** — С *ni*, *niśānta*
 — 1〉 *успокоенный, тихий [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
   <sub>attested</sub>
 
@@ -390,18 +390,18 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **vi-prefix)** — Mit *praṇi* sich beruhigen [BHAṬṬ.]
 
-- **RU:** — Mit *praṇi* успокаиваться [BHAṬṬ.]
+- **RU:** — С *praṇi* успокаиваться [BHAṬṬ.]
   <sub>attested</sub>
 
 **vi-caus)** — Mit *pari* Caus. aufhören machen.
 
-- **RU:** — Mit *pari* Caus. заставлять прекращаться.
+- **RU:** — С *pari* Caus. заставлять прекращаться.
   <sub>attested</sub>
 
 **sam-prefix-1)** — Mit *pra*
 — 1〉 sich beruhigen, zur Ruhe kommen.
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
 — 1〉 успокаиваться, обретать покой.
   <sub>attested</sub>
 
@@ -422,7 +422,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **sam-prefix-4a)** — a〉 ruhig geworden, beruhigt, ruhig.
 
-- **RU:** — a〉 ставший спокойным, умиротворённый, тихий.
+- **RU:** — a〉 ставший спокойным, умиротворенный, тихий.
   <sub>attested</sub>
 
 **sam-prefix-4b)** — b〉 ruhig, so v. a. gleichgültig, fahrlässig.
@@ -442,7 +442,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **sam-prefix-4e)** — e〉 beseitigt, entfernt.
 
-- **RU:** — e〉 устранённый, удалённый.
+- **RU:** — e〉 устраненный, удаленный.
   <sub>attested</sub>
 
 **sam-prefix-4f)** — f〉 aufgehört —, sich gelegt habend, verschwunden, zu Ende gegangen, nicht da seiend, sich nicht sehen lassend.
@@ -452,12 +452,12 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **sam-prefix-4g)** — g〉 zu Schanden geworden.
 
-- **RU:** — g〉 посрамлённый, потерпевший неудачу.
+- **RU:** — g〉 посрамленный, потерпевший неудачу.
   <sub>attested</sub>
 
 **sam-prefix-4h)** — h〉 zur ewigen Ruhe eingegangen, gestorben, todt.
 
-- **RU:** — h〉 обретший вечный покой, умерший, мёртвый.
+- **RU:** — h〉 обретший вечный покой, умерший, мертвый.
   <sub>attested</sub>
 
 **sam-caus-intro)** — Caus. (hier und da mit Dehnung des Wurzelvocals auch ohne metrische Veranlassung)
@@ -487,23 +487,23 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **sam-caus-5)** — 5〉 sich (silbi) unterwerfen, wiedererobern.
 
-- **RU:** — 5〉 подчинять себе (sibi), отвоёвывать.
+- **RU:** — 5〉 подчинять себе (sibi), отвоевывать.
   <sub>attested</sub>
 
 **apani-prefix)** — Mit *anupra* in *anupraśaman*.
 
-- **RU:** — Mit *anupra* in *anupraśaman*.
+- **RU:** — С *anupra* in *anupraśaman*.
   <sub>attested</sub>
 
 **parini-ppp)** — Mit *saṃpra*, *saṃpraśānta* aufgehört, gewichen, geschwunden.
 
-- **RU:** — Mit *saṃpra*, *saṃpraśānta* прекратившийся, отступивший, исчезнувший.
+- **RU:** — С *saṃpra*, *saṃpraśānta* прекратившийся, отступивший, исчезнувший.
   <sub>attested</sub>
 
 **parini-2-1)** — Mit *prati*
 — 1〉 erlöschen.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 угасать.
   <sub>attested</sub>
 
@@ -514,19 +514,19 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **pratyava-caus)** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) wieder an seinen Platz bringen. Vgl. **1.** *śram* mit *pravi* Caus.
 
-- **RU:** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) снова ставить на своё место. ср. **1.** *śram* mit *pravi* Caus.
+- **RU:** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) и *˚śāmayitvā* ([MAHĀVASTU 56,2]) снова ставить на свое место. ср. **1.** *śram* mit *pravi* Caus.
   <sub>attested</sub>
 
 **visam-prefix-1)** — Mit *sam*
 — 1〉 vollständig zur Ruhe gelangen.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 полностью обретать покой.
   <sub>attested</sub>
 
 **visam-prefix-2)** — 2〉 mit Instr. der Person (mit und ohne *saha*) Frieden schliessen mit.
 
-- **RU:** — 2〉 mit Instr. der Person (mit und ohne *saha*) заключать мир с.
+- **RU:** — 2〉 mit Instr. der Person (mit и без *saha*) заключать мир с.
   <sub>attested</sub>
 
 **visam-prefix-3)** — 3〉 erlöschen.
@@ -571,7 +571,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 
 **visam-prefix-7d)** — d〉 gestorben, todt.
 
-- **RU:** — d〉 умерший, мёртвый.
+- **RU:** — d〉 умерший, мертвый.
   <sub>attested</sub>
 
 **visam-caus-intro)** — Caus.
@@ -724,7 +724,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ*
 [KUMĀRAS. 2,40.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,40) *samatsaro 'pi śaśāma tena kṣitipālalokaḥ*
 [RAGH. 7,3.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,3)
-[Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026) [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* beruhigt
+[Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026 "Spr. (II) 2026: kṣīreṇātmagatodakāya hi guṇā dattāḥ purā te 'khilāḥ kṣīre tāpamavekṣya tena payasā svātmā kṛśānau hutaḥ | gantuṃ pāvakamunmanastadabhavaddṛṣṭvā tu mit… — (790.) Die Milch giebt ja zuvörderst dem Wasser, das sich zu ihm gesellt hat, alle seine guten Eigenschaften") [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* beruhigt
 [MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651)
 [R. 4,44,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,45) *śāmyate*
 [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) *nahi te jātu śāmyerannṛte rājyena*
@@ -735,7 +735,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [KAUŚ. 85. 116.] *śūlam*
 [SUŚR. 2,347,1.] *ākranditadhvāna*
 [RĀJA-TAR. 3,17.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,17) *na jātu kāmaḥ kāmānāmupabhogena śāmyati*
-[Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241) [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
+[Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241 "Spr. (II) 3241: na jātu kāmaḥ kāmānāmupabhogena śāmyati | haviṣā kṛṣṇavartmeva bhūya evābhivardhate || — (1377.) Das Verlangen wird durch den Genuss der Dinge, nach denen man verlangt, nimmer gestillt: es wächst nur noch stärker an, wie Feuer durch Butter.") [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
 [KATHĀS. 56,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,96) *vairam*
 
 [MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) (med.). *pittaṃ śarkarayā*
@@ -753,7 +753,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) *agnimārutau*
 [HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (med.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* mit der neueren Ausg. zu lesen). *davāgniḥ*
 [RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ*
-[Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422) (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ*
+[Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422 "Spr. (II) 3422: na vittena na pāruṣyairna ca sāntvena vā śrutaiḥ | kopāgniḥ śāmyate rājaṃstoyāgniriva sāgare || — (4344.) Nicht durch Geld, nicht durch harte Worte, nicht durch Güte und nicht durch Unterweisung erlischt des Zornes Feuer, o König, eben so wenig wie das unter dem Wasser brennende Feuer im Meere.") (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ*
 [KATHĀS. 16,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,15) *dehadāhaḥ*
 [GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41)
 [BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
@@ -767,14 +767,14 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [VOP. 26,208.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,208) absol. *śamam* и *śāmam* (предположительно от caus.)
 [P. 6,4,93](https://ashtadhyayi.com/sutraani/6/4/93), схол. pass. impers. *śamyate, aśami*
 [P. 7,3,34.](https://ashtadhyayi.com/sutraani/7/3/34)
-[VOP. 24,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,6) partic. *śānta* см. особ. становиться спокойным, тихим; быть умиротворённым; прекращаться, утихать, угасать: *bhūtānyaśāmyan*
+[VOP. 24,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,6) partic. *śānta* см. особ. становиться спокойным, тихим; быть умиротворенным; прекращаться, утихать, угасать: *bhūtānyaśāmyan*
 [VS. 14,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,31) *imau lokāvaśāmyatām*
-[TS. 2,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,2) *no nvevātrāśamat* ещё не успокоилось
+[TS. 2,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,2) *no nvevātrāśamat* еще не успокоилось
 [ŚAT. BR. 1,7,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,7) *śāmya mā śucaḥ*
 [MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ*
 [KUMĀRAS. 2,40.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,40) *samatsaro 'pi śaśāma tena kṣitipālalokaḥ*
 [RAGH. 7,3.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,3)
-[Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026) [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* умиротворённый, успокоенный
+[Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026 "Spr. (II) 2026: kṣīreṇātmagatodakāya hi guṇā dattāḥ purā te 'khilāḥ kṣīre tāpamavekṣya tena payasā svātmā kṛśānau hutaḥ | gantuṃ pāvakamunmanastadabhavaddṛṣṭvā tu mit… — (790.) Die Milch giebt ja zuvörderst dem Wasser, das sich zu ihm gesellt hat, alle seine guten Eigenschaften") [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* умиротворенный, успокоенный
 [MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651)
 [R. 4,44,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,45) *śāmyate*
 [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) *nahi te jātu śāmyerannṛte rājyena*
@@ -785,7 +785,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [KAUŚ. 85. 116.] *śūlam*
 [SUŚR. 2,347,1.] *ākranditadhvāna*
 [RĀJA-TAR. 3,17.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,17) *na jātu kāmaḥ kāmānāmupabhogena śāmyati*
-[Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241) [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
+[Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241 "Spr. (II) 3241: na jātu kāmaḥ kāmānāmupabhogena śāmyati | haviṣā kṛṣṇavartmeva bhūya evābhivardhate || — (1377.) Das Verlangen wird durch den Genuss der Dinge, nach denen man verlangt, nimmer gestillt: es wächst nur noch stärker an, wie Feuer durch Butter.") [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
 [KATHĀS. 56,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,96) *vairam*
 
 [MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) (мед.). *pittaṃ śarkarayā*
@@ -803,7 +803,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) *agnimārutau*
 [HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (мед.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* с более новым чтением изд.). *davāgniḥ*
 [RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ*
-[Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422) (мед.). *śaśāma dahano na punaḥ kranditadhvaniḥ*
+[Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422 "Spr. (II) 3422: na vittena na pāruṣyairna ca sāntvena vā śrutaiḥ | kopāgniḥ śāmyate rājaṃstoyāgniriva sāgare || — (4344.) Nicht durch Geld, nicht durch harte Worte, nicht durch Güte und nicht durch Unterweisung erlischt des Zornes Feuer, o König, eben so wenig wie das unter dem Wasser brennende Feuer im Meere.") (мед.). *śaśāma dahano na punaḥ kranditadhvaniḥ*
 [KATHĀS. 16,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,15) *dehadāhaḥ*
 [GĪT. 7,41.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?7,41)
 [BHĀG. P. 9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12)
@@ -897,7 +897,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 10,89,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,4) *agnim*
 [MBH. 1,1136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1136) *dāvam*
 [8297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8297) [4,397](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.397) (med.).
-[5,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1880) [R. 5,87,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,87,10) [ṚT. 1,4.] [RAGH. 7,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,45) [MEGH. 54.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?54) ad [18.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?18) [Spr. (II) 2723.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2723) [(I) 2940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2940) [RĀJA-TAR. 4,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,125) [BHĀG. P. 7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25)Inschr. in [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* so v. a. nicht in Ordnung gehalten, vernachlässigt
+[5,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1880) [R. 5,87,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,87,10) [ṚT. 1,4.] [RAGH. 7,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,45) [MEGH. 54.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?54) ad [18.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?18) [Spr. (II) 2723.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2723 "Spr. (II) 2723: davahanādutpanno dhūmo ghanatāmavāpya varṣaistam | yacchamayati tadyuktaṃ so 'pi hi davameva nirdahati || — (1116.) Dass der aus dem Feuer eines Waldbrandes entstandene Rauch, wenn er zur Wolke geworden ist, als Regen das Feuer wieder löscht, ist ganz in der Ordnung, da es ja auch dieses ist, das den Wald verbrennt.") [(I) 2940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2940) [RĀJA-TAR. 4,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,125) [BHĀG. P. 7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25)Inschr. in [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* so v. a. nicht in Ordnung gehalten, vernachlässigt
 [MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. für *aniyamitanakha* .
 
 - **RU:** a) успокаивать, утолять, умиротворять; приводить в порядок вообще; загладить вину, placare: *rogam*
@@ -964,8 +964,8 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 10,89,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,89,4) *agnim*
 [MBH. 1,1136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1136) *dāvam*
 [8297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8297) [4,397](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.397) (мед.).
-[5,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1880) [R. 5,87,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,87,10) [ṚT. 1,4.] [RAGH. 7,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,45) [MEGH. 54.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?54) ad [18.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?18) [Spr. (II) 2723.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2723) [(I) 2940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2940) [RĀJA-TAR. 4,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,125) [BHĀG. P. 7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25)надпись в [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* так преим. не поддерживаемый в порядке, запущенный
-[MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. вместо *aniyamitanakha* .
+[5,1880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1880) [R. 5,87,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,87,10) [ṚT. 1,4.] [RAGH. 7,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,45) [MEGH. 54.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?54) ad [18.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?18) [Spr. (II) 2723.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2723 "Spr. (II) 2723: davahanādutpanno dhūmo ghanatāmavāpya varṣaistam | yacchamayati tadyuktaṃ so 'pi hi davameva nirdahati || — (1116.) Dass der aus dem Feuer eines Waldbrandes entstandene Rauch, wenn er zur Wolke geworden ist, als Regen das Feuer wieder löscht, ist ganz in der Ordnung, da es ja auch dieses ist, das den Wald verbrennt.") [(I) 2940.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2940) [RĀJA-TAR. 4,125.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,125) [BHĀG. P. 7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25)надпись в [Journ. of the Am. Or. S. 7,25, Śl. 3.] *aśamitanakha* так преим. не поддерживаемый в порядке, запущенный
+[MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. вм. *aniyamitanakha* .
   <sub>attested</sub>
 
 **1b)** — b) euphemistisch so v. a. zum Tode bringen; Jmd aus dem Wege räumen, unschädlich machen, vernichten: *prajāṃ paśūn*
@@ -974,7 +974,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 3,14620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14620)
 [HARIV. 8178](https://sanskrit-lexicon-scans.github.io/hariv?8178) (med.). *rākṣasān*
 [MBH. 9,2255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2255) [4,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1521) *saṃharantaṃ prajāḥ kālaṃ kālaḥ śamayate punaḥ*
-[Spr. (II) 1696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1696) Jmd bezwingen, überwinden: *śamayati gajānanyāngandhadvipaḥ kalabho 'pi san*
+[Spr. (II) 1696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1696 "Spr. (II) 1696: kālaḥ sṛjati bhūtāni kālaḥ saṃharate prajāḥ | saṃharantaṃ prajāḥ kālaṃ kālaḥ śamayate punaḥ || — (653.) Die Zeit schafft die Geschöpfe und rafft sie wieder hinweg, die Zeit bringt auch die Zeit, welche die Geschöpfe hinrafft, wieder zur Ruhe.") Jmd bezwingen, überwinden: *śamayati gajānanyāngandhadvipaḥ kalabho 'pi san*
 [(I) 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) *pakṣabalam*
 [RAGH. 9,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,12)
 
@@ -988,7 +988,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 3,14620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14620)
 [HARIV. 8178](https://sanskrit-lexicon-scans.github.io/hariv?8178) (мед.). *rākṣasān*
 [MBH. 9,2255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2255) [4,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1521) *saṃharantaṃ prajāḥ kālaṃ kālaḥ śamayate punaḥ*
-[Spr. (II) 1696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1696) покорить кого-л., одолеть: *śamayati gajānanyāngandhadvipaḥ kalabho 'pi san*
+[Spr. (II) 1696.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1696 "Spr. (II) 1696: kālaḥ sṛjati bhūtāni kālaḥ saṃharate prajāḥ | saṃharantaṃ prajāḥ kālaṃ kālaḥ śamayate punaḥ || — (653.) Die Zeit schafft die Geschöpfe und rafft sie wieder hinweg, die Zeit bringt auch die Zeit, welche die Geschöpfe hinrafft, wieder zur Ruhe.") покорить кого-л., одолеть: *śamayati gajānanyāngandhadvipaḥ kalabho 'pi san*
 [(I) 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) *pakṣabalam*
 [RAGH. 9,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,12)
 
@@ -1016,7 +1016,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 7,4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4000) *tasmiṃstamasi śāmite* (*nāśite* [ed. Bomb.])
 [9,633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.633) pass. *śāmyatām*
 [R. 5,41,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,41,4)
-[MĀRK. P. 114,33](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?114,33) в знач. да будет устранён, — обезврежен возможно ошибочно вместо *śamyatām* .
+[MĀRK. P. 114,33](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?114,33) в знач. да будет устранен, — обезврежен возможно ошибочно вм. *śamyatām* .
   <sub>attested</sub>
 
 ## śam
@@ -1144,14 +1144,14 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MAITRYUP. 6,34.] *upaśānta* успокоенный, о лицах
 [KATHĀS. 72,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,100)
 [BHĀG. P. 3,22,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,27) [5,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,13) [7,14,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,3) *upaśāntātman* _adj._
-[1,13,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,50) [4,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,7) прекративший(ся), улёгшийся: *˚vaira* _adj._
+[1,13,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,50) [4,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,7) прекративший(ся), улегшийся: *˚vaira* _adj._
 [VARĀH. BṚH. S. 8,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,30) угасший
 [PRAŚNOP. 3,9.]
 [R. 4,17,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,2) ср. *upaśama* сл. и *upaśānti* . — caus. успокаивать, унимать, умиротворять, заставлять прекратиться, placare
 [VARĀH. BṚH. S. 97,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?97,17)
-[DAŚAK. 67,18.] [Verz. d. Oxf. H. 145,b, No. 306, Z. 13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?145) с удлинённым корневым гласным (из метрических соображений): *puṣpāyudham — upaśāmaya*
-[MBH. 1,6577.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6577) *agastyenāpi vātāpiḥ kiṃmarthamupaśāmitaḥ* так преим. приведённый к вечному покою
-[3,8541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8541) [8645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8645) *mukhavātopaśāmita* охлаждённый путём обдувания (кушанье)
+[DAŚAK. 67,18.] [Verz. d. Oxf. H. 145,b, No. 306, Z. 13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?145) с удлиненным корневым гласным (из метрических соображений): *puṣpāyudham — upaśāmaya*
+[MBH. 1,6577.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6577) *agastyenāpi vātāpiḥ kiṃmarthamupaśāmitaḥ* так преим. приведенный к вечному покою
+[3,8541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8541) [8645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8645) *mukhavātopaśāmita* охлажденный путем обдувания (кушанье)
 [MĀRK. P. 50,45.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?50,45)
   <sub>attested</sub>
 
@@ -1168,7 +1168,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 **main)** — *abhyupa*, partic. *˚śānta* gestillt, abgekühlt: *˚manmatha*
 [ṚT. 1,1.]
 
-- **RU:** — *abhyupa*, partic. *˚śānta* утолённый, охлаждённый: *˚manmatha*
+- **RU:** — *abhyupa*, partic. *˚śānta* утоленный, охлажденный: *˚manmatha*
 [ṚT. 1,1.]
   <sub>attested</sub>
 
@@ -1181,13 +1181,13 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 6,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5812) *iyaṃ cintā me śaśvanna vyupaśāmyati*
 [5,2363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2363) *tattamo vyupaśaśāma*
 [7,9427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9427) *na cāpi vairaṃ vaireṇa vyupaśāmyati*
-[Spr. (II) 3233.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3233) Vgl. *vyupaśama* .
+[Spr. (II) 3233.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3233 "Spr. (II) 3233: na cāpi vairaṃ vaireṇa keśava vyupaśāmyati | haviṣagnirthā kṛṣṇa bhūya evābhivardhate || — Auch erlischt, o Kṛṣṇa, Feindschaft nimmer durch Feindschaft, flammt vielmehr noch heftiger auf, wie Feuer durch Butter.") Vgl. *vyupaśama* .
 
 - **RU:** — *vyupa* успокоиться, прекратиться, утихнуть: *tyaktvā manyuṃ vyupaśāmyasva* (так [ed. Bomb.])
 [MBH. 6,5812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5812) *iyaṃ cintā me śaśvanna vyupaśāmyati*
 [5,2363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2363) *tattamo vyupaśaśāma*
 [7,9427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9427) *na cāpi vairaṃ vaireṇa vyupaśāmyati*
-[Spr. (II) 3233.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3233) ср. *vyupaśama* .
+[Spr. (II) 3233.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3233 "Spr. (II) 3233: na cāpi vairaṃ vaireṇa keśava vyupaśāmyati | haviṣagnirthā kṛṣṇa bhūya evābhivardhate || — Auch erlischt, o Kṛṣṇa, Feindschaft nimmer durch Feindschaft, flammt vielmehr noch heftiger auf, wie Feuer durch Butter.") ср. *vyupaśama* .
   <sub>attested</sub>
 
 ## samupa+śam
@@ -1265,7 +1265,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [M. 4,186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,186)
 [BHĀG. P. 8,19,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,26) *praśānta* ruhig geworden, beruhigt, ruhig: *kṣatraroṣāt*
 [R. 1,75,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,6) *andhavatpaśya rūpāṇi śabdaṃ badhiravacchṛṇu . kāṣṭhavatpaśya te dehaṃ praśāntasyeti lakṣaṇam ..*
-[AMṚTAN. UP.] in [Ind. St. 9,28. 2,11.] [M. 12,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,27) [MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) [R. GORR. 1,77,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,8) [2,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,7) [3,70,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,12) [Spr. (II) 1916.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1916) [4479.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4479) *dhīra˚*
+[AMṚTAN. UP.] in [Ind. St. 9,28. 2,11.] [M. 12,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,27) [MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) [R. GORR. 1,77,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,8) [2,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,7) [3,70,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,12) [Spr. (II) 1916.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1916 "Spr. (II) 1916: keśāḥ saṃyaminaḥ śrutarepi paraṃ pāraṃ gate locane antarvaktramapi svabhāvaśucibhiḥ kīrṇaṃ dvijānāṃ gaṇaiḥ | muktānāṃ satatādhivāsaruciraṃ vakṣojakumb… — (736.) Die Haare sind aufgebunden (zügeln ihre Leidenschaften)") [4479.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4479) *dhīra˚*
 [SĀH. D. 65.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?65) [69.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?69)
 [BHĀG. P. 1,19,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,31) [2,7,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,47) [3,1,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,25) [15,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,32) [32,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,5) [5,5,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,2) [6,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,21) *˚citta*
 [VEDĀNTAS. (Allah.) No. 14.]
@@ -1276,18 +1276,18 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 2,6,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,40) [7,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,10) *praśāntāruṇalocana*
 [3,4,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,7) *˚mūrti*
 [VARĀH. BṚH. S. 58,45.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,45) *svānta*
-[Spr. (II) 1956.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1956) *˚vāhitā cetasaḥ*
+[Spr. (II) 1956.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1956 "Spr. (II) 1956: kaupīnaṃ śatakhaṇḍajarjarataraṃ kanthā punastādṛśī naiścintyaṃ sukhasādhyabhaikṣamaśanaṃ śayyā śmaśāne vane | svātantryeṇa niraṅkuśaṃ viharaṇaṃ svānta… — (757.) Was liegt uns an der Herrschaft über die Dreiwelt, wenn wir einen in hundert Fetzen herabhängenden Schurz und ein eben solches Gewand haben, wenn uns keine Sorgen drücken, wenn leicht zu erhaltende Almosen unsere…") *˚vāhitā cetasaḥ*
 [Verz. d. Oxf. H. 229,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?229) *pura*
 [MBH. 3,3063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3063) *rāṣṭra*
 [R. 1,7,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,7,15) ruhig so v. a. gleichgiltig, fahrlässig
-[Spr. (II) 2831](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2831), v. l. [4507.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4507) aufgehört, sich gelegt habend, verschwunden: *praśāntādhyāyasatkathā*
+[Spr. (II) 2831](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2831 "Spr. (II) 2831: duḥkhārteṣu pramatteṣu nāstikeṣvalaseṣu ca | na śrīrvasatyadānteṣu ye cotsāhavivarjitāḥ || — (4192.) Bei von Schmerz Geplagten, bei Fahrlässigen, bei Ungläubigen, bei Trägen, bei denen, die der Willenskraft ermangeln, weilt die Glücksgöttin nicht."), v. l. [4507.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4507) aufgehört, sich gelegt habend, verschwunden: *praśāntādhyāyasatkathā*
 [R. 2,48,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,27) *˚gītotsavanṛtyavādanā*
 [29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,29) *roṣa*
 [R. GORR. 1,77,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,7) *paruṣo vāyuḥ*
 [6,70,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,51) *bhaya*
 [7,71,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,71,8) *˚svara*
 [ŚĀK. 27,10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,10) *cāpala*
-[Spr. (II) 4279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4279) *vaira*
+[Spr. (II) 4279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4279 "Spr. (II) 4279: praśātaśāstrārthāvicāracāpalaṃ nivṛttanānārasakāvyakautukam | nirastanihśoṣavikalpaviplavaṃ prayattumanvicchati śūlinaṃ manaḥ || — (4591.) Mein Herz, dessen Unruhe bei dem Nachdenken über den Sinn der Lehrbücher sich gelegt hat, dessen Interesse an Dichtwerken jeglicher Gattung geschwunden und in dem die Drangsal aller Zweifel gehoben ist, sucht Zuf…") *vaira*
 [3451.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3451) *śoka*
 [KATHĀS. 14,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,18) *sā daśā mama*
 [25,279.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,279) *bhṛṅgasaṃpāta*
@@ -1326,7 +1326,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [M. 4,186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,186)
 [BHĀG. P. 8,19,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,26) *praśānta* ставший спокойным, успокоенный, тихий: *kṣatraroṣāt*
 [R. 1,75,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,6) *andhavatpaśya rūpāṇi śabdaṃ badhiravacchṛṇu . kāṣṭhavatpaśya te dehaṃ praśāntasyeti lakṣaṇam ..*
-[AMṚTAN. UP.] в [Ind. St. 9,28. 2,11.] [M. 12,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,27) [MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) [R. GORR. 1,77,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,8) [2,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,7) [3,70,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,12) [Spr. (II) 1916.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1916) [4479.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4479) *dhīra˚*
+[AMṚTAN. UP.] в [Ind. St. 9,28. 2,11.] [M. 12,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,27) [MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) [R. GORR. 1,77,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,8) [2,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,7) [3,70,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,12) [Spr. (II) 1916.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1916 "Spr. (II) 1916: keśāḥ saṃyaminaḥ śrutarepi paraṃ pāraṃ gate locane antarvaktramapi svabhāvaśucibhiḥ kīrṇaṃ dvijānāṃ gaṇaiḥ | muktānāṃ satatādhivāsaruciraṃ vakṣojakumb… — (736.) Die Haare sind aufgebunden (zügeln ihre Leidenschaften)") [4479.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4479) *dhīra˚*
 [SĀH. D. 65.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?65) [69.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?69)
 [BHĀG. P. 1,19,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,31) [2,7,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,47) [3,1,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,25) [15,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,32) [32,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,5) [5,5,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,2) [6,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,21) *˚citta*
 [VEDĀNTAS. (Allah.) No. 14.]
@@ -1337,18 +1337,18 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 2,6,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,40) [7,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,10) *praśāntāruṇalocana*
 [3,4,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,7) *˚mūrti*
 [VARĀH. BṚH. S. 58,45.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,45) *svānta*
-[Spr. (II) 1956.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1956) *˚vāhitā cetasaḥ*
+[Spr. (II) 1956.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1956 "Spr. (II) 1956: kaupīnaṃ śatakhaṇḍajarjarataraṃ kanthā punastādṛśī naiścintyaṃ sukhasādhyabhaikṣamaśanaṃ śayyā śmaśāne vane | svātantryeṇa niraṅkuśaṃ viharaṇaṃ svānta… — (757.) Was liegt uns an der Herrschaft über die Dreiwelt, wenn wir einen in hundert Fetzen herabhängenden Schurz und ein eben solches Gewand haben, wenn uns keine Sorgen drücken, wenn leicht zu erhaltende Almosen unsere…") *˚vāhitā cetasaḥ*
 [Verz. d. Oxf. H. 229,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?229) *pura*
 [MBH. 3,3063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3063) *rāṣṭra*
 [R. 1,7,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,7,15) тихий, спокойный, так преим. равнодушный, небрежный
-[Spr. (II) 2831](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2831), v. l. [4507.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4507) прекратившийся, улёгшийся, исчезнувший: *praśāntādhyāyasatkathā*
+[Spr. (II) 2831](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2831 "Spr. (II) 2831: duḥkhārteṣu pramatteṣu nāstikeṣvalaseṣu ca | na śrīrvasatyadānteṣu ye cotsāhavivarjitāḥ || — (4192.) Bei von Schmerz Geplagten, bei Fahrlässigen, bei Ungläubigen, bei Trägen, bei denen, die der Willenskraft ermangeln, weilt die Glücksgöttin nicht."), v. l. [4507.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4507) прекратившийся, улегшийся, исчезнувший: *praśāntādhyāyasatkathā*
 [R. 2,48,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,27) *˚gītotsavanṛtyavādanā*
 [29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,29) *roṣa*
 [R. GORR. 1,77,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,7) *paruṣo vāyuḥ*
 [6,70,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,70,51) *bhaya*
 [7,71,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,71,8) *˚svara*
 [ŚĀK. 27,10.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,10) *cāpala*
-[Spr. (II) 4279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4279) *vaira*
+[Spr. (II) 4279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4279 "Spr. (II) 4279: praśātaśāstrārthāvicāracāpalaṃ nivṛttanānārasakāvyakautukam | nirastanihśoṣavikalpaviplavaṃ prayattumanvicchati śūlinaṃ manaḥ || — (4591.) Mein Herz, dessen Unruhe bei dem Nachdenken über den Sinn der Lehrbücher sich gelegt hat, dessen Interesse an Dichtwerken jeglicher Gattung geschwunden und in dem die Drangsal aller Zweifel gehoben ist, sucht Zuf…") *vaira*
 [3451.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3451) *śoka*
 [KATHĀS. 14,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,18) *sā daśā mama*
 [25,279.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,279) *bhṛṅgasaṃpāta*
@@ -1356,14 +1356,14 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [PRAB. 96,11.] *˚kāma*
 [BHĀG. P. 7,4,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,33) [9,8,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,8,24) *rajanīcarāḥ* так преим. более не являющийся на свет
 [R. 3,17,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,17,21) *rātri* подошедший к концу
-[LALIT. ed. Calc. 4,14.] *praśāntabhūmipālābhūtkaticiddivasāni bhūḥ* так преим. лишённый царя
+[LALIT. ed. Calc. 4,14.] *praśāntabhūmipālābhūtkaticiddivasāni bhūḥ* так преим. лишенный царя
 [RĀJA-TAR. 2,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,81) *praśāntolmuka* угасший
 [VARĀH. BṚH. S. 89,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,1) *anala*
 [MĀRK. P. 99,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,17) *kopajvalana*
 [PRAB. 5,13.] *praśāntārcirivānalaḥ*
-[BHĀG. P. 4,13,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,10) *˚kalikāpalāśakusuma* потерпевший крах, посрамлённый
-[BHAṬṬ. 8,131.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,131) *astra* так преим. устранённый, удалённый
-[UTTARAR. 110,1 (148,16).] отошедший в вечный покой, умерший, мёртвый
+[BHĀG. P. 4,13,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,10) *˚kalikāpalāśakusuma* потерпевший крах, посрамленный
+[BHAṬṬ. 8,131.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,131) *astra* так преим. устраненный, удаленный
+[UTTARAR. 110,1 (148,16).] отошедший в вечный покой, умерший, мертвый
 [MBH. 7,56.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.56)
 [RĀJA-TAR. 1,95.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,95) [5,127.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,127) *praśāntārāti*
 [PRAB. 117,11.] в науке ауспиций = *śānta* не предвещающий ничего дурного, boni ominis: *diś*
@@ -1404,7 +1404,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 6,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,6) *śucaḥ*
 [1,6,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,21) *saptakṛtvaḥ praśamitaḥ khāṇḍave havyavāhanaḥ*
 [MBH. 1,8156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8156)
-[HARIV. 11939.](https://sanskrit-lexicon-scans.github.io/hariv?11939) *praśamita* приведённый в покой так преим. обезвреженный, уничтоженный
+[HARIV. 11939.](https://sanskrit-lexicon-scans.github.io/hariv?11939) *praśamita* приведенный в покой так преим. обезвреженный, уничтоженный
 [MBH. 3,2031.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2031) *praśamitaripu*
 [MṚCCH. 178,12.]
   <sub>attested</sub>
@@ -1423,7 +1423,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 7,9185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9185) *prakṛtivyasanaṃ yasmāttatpraśāmya*
 [KĀM. NĪTIS. 13,18.] *tejaḥ paraṃ tejasaiva tapasā ca tapastathā . praśāmyate*
 [MĀRK. P. 16,47.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,47) *praśāmya* (= *prakarṣeṇa ālocya*
-[NĪLAK.], таким образом, относится к 4. *śam*) *nagaram* подчиняться, отвоёвывать обратно
+[NĪLAK.], таким образом, относится к 4. *śam*) *nagaram* подчиняться, отвоевывать обратно
 [MBH. 3,12196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12196) *praśāmita*
 [HARIV. 11939.](https://sanskrit-lexicon-scans.github.io/hariv?11939) ср. *praśamana* .
   <sub>attested</sub>
@@ -1497,9 +1497,9 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [BHĀG. P. 1,8,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,15) *saṃśāmyatāṃ tāvanmamāpi balavāñchramaḥ* прекратиться, улечься
 [MBH. 15,262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.262) *saṃśānta* полностью успокоенный
 [MBH. 1,3299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3299) [3,17064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17064) [5,2873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2873)
-[BHĀG. P. 4,6,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,34) вполне улёгшийся, — прекратившийся: *jalasaṃśāntareṇu*
+[BHĀG. P. 4,6,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,34) вполне улегшийся, — прекратившийся: *jalasaṃśāntareṇu*
 [R. GORR. 1,5,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,5,4) [76,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,18) совершенно угасший: *agni*
-[2,68,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,68,1) ([66,1] [SCHL.]). [R. SCHL. 2,69,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,13) так преим. мёртвый
+[2,68,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,68,1) ([66,1] [SCHL.]). [R. SCHL. 2,69,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,13) так преим. мертвый
 [MBH. 9,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1789)
   <sub>attested</sub>
 
@@ -1518,7 +1518,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [R. GORR. 2,106,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,106,11) *prakopam*
 [KĀM. NĪTIS. 15,22.] *reṇum*
 [HARIV. 13757.](https://sanskrit-lexicon-scans.github.io/hariv?13757) *kāryāṇi* zu Ende bringen, vollbringen, beilegen
-[Spr. (II) 1682.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1682) *agnim* auslöschen
+[Spr. (II) 1682.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1682 "Spr. (II) 1682: kāryāṇyuttamadaṇḍasāhasaphalānyāyāsasādhyāni ye buddhyā saṃśamayanti nītikuśalāḥ sāmnaiva te mantriṇaḥ | niḥsārālpaphalāni ye tvavidhinā vāñchanti daṇ… — (3916.) Diejenigen, welche, der Staatsweisheit kundig, Angelegenheiten, die die höchsten Strafen in ihrem Gefolge haben und nur mit grösser Anstrengung in Ordnung zu bringen sind, mit ihrem Verstande in Güte beilegen, si…") *agnim* auslöschen
 [R. 2,97,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,15) *tvāmapi kālaḥ saṃśamayiṣyati* so v. a. zur ewigen Ruhe bringen
 [MBH. 12,8143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8143) *bhāratayuddhapṛṣṭham* den Garaus machen
 [5,5780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5780) Vgl. *saṃśamana* fg.
@@ -1531,7 +1531,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [R. GORR. 2,106,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,106,11) *prakopam*
 [KĀM. NĪTIS. 15,22.] *reṇum*
 [HARIV. 13757.](https://sanskrit-lexicon-scans.github.io/hariv?13757) *kāryāṇi* довести до конца, совершить, уладить
-[Spr. (II) 1682.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1682) *agnim* погасить
+[Spr. (II) 1682.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1682 "Spr. (II) 1682: kāryāṇyuttamadaṇḍasāhasaphalānyāyāsasādhyāni ye buddhyā saṃśamayanti nītikuśalāḥ sāmnaiva te mantriṇaḥ | niḥsārālpaphalāni ye tvavidhinā vāñchanti daṇ… — (3916.) Diejenigen, welche, der Staatsweisheit kundig, Angelegenheiten, die die höchsten Strafen in ihrem Gefolge haben und nur mit grösser Anstrengung in Ordnung zu bringen sind, mit ihrem Verstande in Güte beilegen, si…") *agnim* погасить
 [R. 2,97,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,15) *tvāmapi kālaḥ saṃśamayiṣyati* так преим. упокоить навеки
 [MBH. 12,8143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8143) *bhāratayuddhapṛṣṭham* уничтожить, покончить с
 [5,5780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5780) ср. *saṃśamana* сл.
@@ -1565,7 +1565,7 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 [MBH. 1,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1237) [4228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4228) *taṃ niśamya vṛtaṃ pāṇḍum* dass
 [4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (mit gen., *viśamya* fehlerhaft für *niśamya*).
 [RAGH. 2,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,41) [52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,52) [61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,61) [3,47.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,47) [4,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,2) [5,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,12)
-[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) [(I) 4930.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4930) [UTTARAR. 106 5 (144,3).] [KATHĀS. 17,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,170) [22,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,171) [28,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,83) [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) [MĀRK. P. 105,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?105,21) [DAŚAK. 65,12.] [LA. (III) 56,18. 89,21.] [BHĀG. P. 1,18,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,41) [2,3,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,13) [3,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,1) [25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,25) [20,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,8) [33,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,1) [4,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,32) [BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *niśamyate*
+[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991 "Spr. (II) 991: āyāto bhavataḥ piteti sahasā māturniśamyoditaṃ dhūlīdhūsarito vihāya śiśubhiḥ krīḍārasātprastutāt | dūrātsmeramukhaḥ prasārya lalitaṃ bāhudvayaṃ bālak… — Ein Knabe, der plötzlich die von der Mutter gesprochenen Worte «dein Vater ist heimgekehrt» vernimmt, steht, grau von Staub, vom Spiele ab, das die Kinder begonnen haben, streckt aus der Ferne mit lächelndem Munde die li…") [(I) 4930.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4930) [UTTARAR. 106 5 (144,3).] [KATHĀS. 17,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,170) [22,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,171) [28,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,83) [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) [MĀRK. P. 105,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?105,21) [DAŚAK. 65,12.] [LA. (III) 56,18. 89,21.] [BHĀG. P. 1,18,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,41) [2,3,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,13) [3,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,1) [25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,25) [20,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,8) [33,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,1) [4,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,32) [BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *niśamyate*
 [R. ed. Bomb. 1,8,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,8,20) [R. GORR. 2,125,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,19) *niśamyamāna*
 [KATHĀS. 103,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,239) *niśamyatām*
 [27,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,10) [46,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,162) [52,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,55) [68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,68) [54,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,97) [61,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,17) [188.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,188) [193.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,193) [RAGH. 11,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,41) *niśāmayant*
@@ -1588,9 +1588,9 @@ _PWG article — 37 sub-card(s), 172 sense(s) · RU 172/172 · EN 0/172_
 - **RU:** 4. *śam*, *śamayati* и *śāmayati* (ср.
 [DHĀTUP. 19,70.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) [33,22.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33) мед. не засвидетельствовано). С *ni* замечать, воспринимать, слышать, узнавать, познавать: *niśamya* absol.
 [MBH. 1,1237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1237) [4228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4228) *taṃ niśamya vṛtaṃ pāṇḍum* что
-[4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (с gen., *viśamya* ошибочно вместо *niśamya*).
+[4419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4419) [6181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6181) [6199. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6199) [2,1740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1740) [3,2212. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) [2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2280) [2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2927) [10671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10671) [12254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12254) [4,163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.163) [R. 1,2,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,17) [2,21,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,50) [40,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,49) [44,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,44,25) [52,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,4) [6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,6) [40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,40) [66,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,10) [R. GORR. 2,111,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,9) [4,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,13) [29,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,18) (с gen., *viśamya* ошибочно вм. *niśamya*).
 [RAGH. 2,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,41) [52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,52) [61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,61) [3,47.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,47) [4,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,2) [5,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,12)
-[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) [(I) 4930.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4930) [UTTARAR. 106 5 (144,3).] [KATHĀS. 17,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,170) [22,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,171) [28,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,83) [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) [MĀRK. P. 105,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?105,21) [DAŚAK. 65,12.] [LA. (III) 56,18. 89,21.] [BHĀG. P. 1,18,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,41) [2,3,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,13) [3,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,1) [25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,25) [20,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,8) [33,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,1) [4,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,32) [BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *niśamyate*
+[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991 "Spr. (II) 991: āyāto bhavataḥ piteti sahasā māturniśamyoditaṃ dhūlīdhūsarito vihāya śiśubhiḥ krīḍārasātprastutāt | dūrātsmeramukhaḥ prasārya lalitaṃ bāhudvayaṃ bālak… — Ein Knabe, der plötzlich die von der Mutter gesprochenen Worte «dein Vater ist heimgekehrt» vernimmt, steht, grau von Staub, vom Spiele ab, das die Kinder begonnen haben, streckt aus der Ferne mit lächelndem Munde die li…") [(I) 4930.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4930) [UTTARAR. 106 5 (144,3).] [KATHĀS. 17,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,170) [22,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,171) [28,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,83) [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) [MĀRK. P. 105,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?105,21) [DAŚAK. 65,12.] [LA. (III) 56,18. 89,21.] [BHĀG. P. 1,18,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,41) [2,3,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,13) [3,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,1) [25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,25) [20,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,8) [33,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,1) [4,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,32) [BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *niśamyate*
 [R. ed. Bomb. 1,8,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,8,20) [R. GORR. 2,125,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,19) *niśamyamāna*
 [KATHĀS. 103,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,239) *niśamyatām*
 [27,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,10) [46,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,162) [52,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,55) [68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,68) [54,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,97) [61,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,17) [188.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,188) [193.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,193) [RAGH. 11,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,41) *niśāmayant*

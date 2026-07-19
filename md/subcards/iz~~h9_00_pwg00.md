@@ -23,7 +23,7 @@ I. 3. *iṣ* *iṣ*
 
 - **RU:** — 3)
 [VARĀH. BṚH. S. 53,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,16)
-[SARVADARŚANAS. 141. 9.] Добавить ещё принимать.
+[SARVADARŚANAS. 141. 9.] Добавить еще принимать.
   <sub>attested</sub>
 
 **4b))** — 4)

@@ -95,7 +95,7 @@
 [VIKR. 11,16.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?11,16) *tato 'śītisahasrāṇi kiṃkarāṇāṃ samādiśat — vināśāya māruteḥ*
 [BHAṬṬ. 9,3.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,3) *maheśvareṇa — śaṣpāgrāṇi bhakṣayituṃ samādiṣṭaḥ*
 [PAÑCAT. 25,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,4) *prabho samādiśa* прикажи
-[63,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,21) Вместо простого acc. также *prati* с acc.: *sukhopaviṣṭaṃ kulaśīlavṛddhānsamādiśantaṃ prati mantrimukhyān*
+[63,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,21) Вм. простого acc. также *prati* с acc.: *sukhopaviṣṭaṃ kulaśīlavṛddhānsamādiśantaṃ prati mantrimukhyān*
 [R. 5,44,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,20)
   <sub>attested</sub>
 

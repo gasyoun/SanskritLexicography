@@ -92,7 +92,7 @@
 [VS. PRĀT. 1,34.] *pṛṣodarādīni yathopadiṣṭam*
 [P. 6,3,109.](https://ashtadhyayi.com/sutraani/6/3/109) *imāndaśaivopadiśantyaniḍvidhau gaṇeṣu ṣāntān* Кар. 8 из
 [KĀŚ.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) схол. к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *jambudvīpasya ca rājannupadvīpānaṣṭau haika upadiśanti*
-[BHĀG. P. 5,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,29) [21,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,7) *na dvitīyaśca sādhvīnāṃ kvacidbhartopadiśyate* нигде не говорится о втором муже у добродетельных жён
+[BHĀG. P. 5,19,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,29) [21,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,7) *na dvitīyaśca sādhvīnāṃ kvacidbhartopadiśyate* нигде не говорится о втором муже у добродетельных жен
 [M. 5,162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,162) [3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) *kiṃ kulenopadiṣṭena śīlamevātra kāraṇam* к чему говорить о роде, о происхождении?
 [MṚCCH. 126,12.]
   <sub>attested</sub>

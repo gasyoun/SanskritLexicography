@@ -28,7 +28,7 @@
 [SUŚR. 2,409,12.] закупоренный, закрытый
 [411,11.] — *vibaddha* в гана *ṛśyādi* к [P. 4,2,80.](https://ashtadhyayi.com/sutraani/4/2/80)
 *vibadhnanti* при
-[MÜLLER, SL. 178] ошибочно вместо *nibadhnanti* .
+[MÜLLER, SL. 178] ошибочно вм. *nibadhnanti* .
   <sub>attested</sub>
 
 **Nachtrag (T26))** — Vgl. *vibandha* .

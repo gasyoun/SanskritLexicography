@@ -54,7 +54,7 @@
 [2,4,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,4,14) [4,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,5) [GOBH. 1,7,4. 3,7,5.] [KAUŚ. 2. 61. 87.] [ĀŚV. ŚR. 2,6,7. 8.] [BHĀG. P. 11,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,9,6) [8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,9,8) [MADHUS.] in [Ind. St. 1,15,1.]
 
 - **RU:** — 3) вымолачивать, молотить
-[ṚV. 1,191,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.02) зёрна
+[ṚV. 1,191,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.191.html#rv01.191.02) зерна
 [TS. 1,6,9,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,9,3)
 [ŚAT. BR. 2,4,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,9) [6,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,8)
 [KĀTY. ŚR. 1,10,13](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) (partic. *avahata*).

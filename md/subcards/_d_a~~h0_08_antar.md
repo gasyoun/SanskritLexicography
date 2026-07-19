@@ -109,8 +109,8 @@ Sch. *antardhatsva raghuvyāghrāt*
 [5,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,5,3,5) *jātarūpa*
 [14,9,4,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,25)
 
-- **RU:** 1) разделённый, отделённый: *rātribhirantarhitau*
-[ŚAT. BR. 2,2,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,13) [13,8,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,20) *anantarhita* не разделённый никаким промежутком и т.д., непосредственно связанный. — следующий
+- **RU:** 1) разделенный, отделенный: *rātribhirantarhitau*
+[ŚAT. BR. 2,2,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,13) [13,8,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,20) *anantarhita* не разделенный никаким промежутком и т.д., непосредственно связанный. — следующий
 [ŚAT. BR. 1,6,3,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,27) [6,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,3,2) *prajā*
 [5,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,5,3,5) *jātarūpa*
 [14,9,4,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,25)
@@ -143,7 +143,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 [ŚĀṄKH. GṚHY. 4,12.]
 [LĀṬY. 9,8,4.] *anantarhitāṃ nābhimabhimṛśet*
 [GOBH. 2,10,23.] *pātreṣu darbhāntarhiteṣvapa āsicya* в сосуды, над которыми держат пучок травы,
-[ĀŚV. GṚHY. 4,7.] завёрнутый, скрытый, спрятанный, сделанный невидимым, исчезнувший, невидимый
+[ĀŚV. GṚHY. 4,7.] завернутый, скрытый, спрятанный, сделанный невидимым, исчезнувший, невидимый
 [H. 1477.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1477) *bhūteṣu *
 
 * cāntarhitaḥ*

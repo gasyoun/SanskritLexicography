@@ -56,7 +56,7 @@
 
 - **RU:** — 3) отстранять, удалять: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
 [MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
-[KULL.] zu [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
+[KULL.] к [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
   <sub>attested</sub>
 
 **A-4)** — 4) entreissen, wegnehmen, rauben: *kṛtāntena . ācchidya mama mandāyā nīyase*
@@ -83,6 +83,6 @@
 [57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
 
 - **RU:** — 5) не обращать внимания, не считаться с чем-либо: *yattvāṃ saṃcodayati me vaca ācchidya*
-[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушёл,
+[R. 2,24,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,33) *yathā ca manye durjīvamevaṃ na sukaraṃ dhruvam . ācchidya putre niryāte kauśalyā yatra jīvati ..* невзирая на то, что сын ушел,
 [57,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,20)
   <sub>attested</sub>

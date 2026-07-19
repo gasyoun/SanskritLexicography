@@ -12,7 +12,7 @@
 - **RU:** — *ava* нисходить: *ava dvake ava trikā divaścaranti bheṣajā*
 [ṚV. 10,59,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.059.html#rv10.059.09) — caus. применять: *lepān*
 [SUŚR. 2,8,12. 48,20.] *śastram*
-[1,16,5.] *kaṣāyaṃ kāle 'vacāritam* применённый своевременно
+[1,16,5.] *kaṣāyaṃ kāle 'vacāritam* примененный своевременно
 [2,415,13. 367,5. 381,6.]
   <sub>attested</sub>
 

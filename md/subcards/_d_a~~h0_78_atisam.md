@@ -26,5 +26,5 @@
 
 **Nachtrag)** — Vgl. *atisaṃdhāna* und *atisaṃdhita* u. *saṃdhay* mit *ati* .
 
-- **RU:** — ср. *atisaṃdhāna* und *atisaṃdhita* u. *saṃdhay* mit *ati* .
+- **RU:** — ср. *atisaṃdhāna* и *atisaṃdhita* u. *saṃdhay* mit *ati* .
   <sub>attested</sub>

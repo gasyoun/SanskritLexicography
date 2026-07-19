@@ -32,7 +32,7 @@
 [ṚV. 4,20,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.04) *rāyaspoṣeṇa samiṣā madema*
 [VS. 4,1.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?4,1) мед.: *yadvā marutsu mandase samindubhiḥ*
 [ṚV. 8,12,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.012.html#rv08.012.16) *teṣāmiṣṭāni samiṣā madanti*
-[10,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.02) *saṃmatta* возбуждённый, увлечённый, опьянённый (в перен. знач.)
+[10,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.02) *saṃmatta* возбужденный, увлеченный, опьяненный (в перен. знач.)
 [MBH. 14,1760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1760) *tasya rūpeṇa*
 [1,7727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7727) [13,2263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2263) *kāma˚*
 [1,7722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7722) *akṣamada˚*
@@ -47,6 +47,6 @@
 [6,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,11)
 
 - **RU:** — ср. *saṃmada, saṃmāda* . — caus. вводить в радостное расположение духа; опьянять: *devikāśca devīścobhayīryajñe samamādayam*
-[AIT. BR. 3,48.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,48) мед. быть воодушевлённым или пьяным: *sameva tṛtīyasavane mādayante*
+[AIT. BR. 3,48.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,48) мед. быть воодушевленным или пьяным: *sameva tṛtīyasavane mādayante*
 [6,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,11)
   <sub>attested</sub>

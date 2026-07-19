@@ -71,7 +71,7 @@
  1) und
 [VEDĀNTAS. (Allah.) No. 34] und [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) unter 2); *dikkālānavacchinna* dem Raum und der Zeit nicht angehörig, nicht unter die Kategorien von Raum und Zeit fallend.
 
-- **RU:** 3) *avacchinna* — «определённый, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
+- **RU:** 3) *avacchinna* — «определенный, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
 [TARKAS. 58.] *anavacchinna*
 [SARVADARŚANAS. 84,22.] *anavacchinnatva*

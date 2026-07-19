@@ -9,10 +9,10 @@
   <sub>attested</sub>
 
 **NW17-3)** 3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
-[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
+[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732 "Spr. (II) 5732: rāgī badhnāti kāryāṇi nindyaṃ karma karoti ca | bhogasyākāṅkṣapā tasmādihāmutra sa duḥkhabhāk || — Ein in der Gewalt der Leidenschaft Stehender unterlässt aus Genusssucht das, was er thun sollte, und begeht eine tadelnswerthe Handlung")
 
 - **RU:** 3) *rāgī badhnāti karmāṇi (kāryāṇi* предполагается) так преим. упускает, не делает
-[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
+[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732 "Spr. (II) 5732: rāgī badhnāti kāryāṇi nindyaṃ karma karoti ca | bhogasyākāṅkṣapā tasmādihāmutra sa duḥkhabhāk || — Ein in der Gewalt der Leidenschaft Stehender unterlässt aus Genusssucht das, was er thun sollte, und begeht eine tadelnswerthe Handlung")
   <sub>attested</sub>
 
 **NW18)** — *anu* pass. erfolgen

@@ -30,5 +30,5 @@
 
 **NWS 5)** [NWS: SJS 3 : 80] [Jin, unsp, 1349 A.D., Delhi] Subst f Sarasvatī, the Goddess of Learning. Rajaśekharasuri 1935, S. 13, Z. 21 .
 
-- **RU:** [NWS: SJS 3 : 80] [Джайн., неопр., 1349 г. н.э., Дели] сущ. f *Сарасвати*, богиня учёности. Rajaśekharasuri 1935, S. 13, Z. 21 .
+- **RU:** [NWS: SJS 3 : 80] [Джайн., неопр., 1349 г. н.э., Дели] сущ. f *Сарасвати*, богиня учености. Rajaśekharasuri 1935, S. 13, Z. 21 .
   <sub>attested</sub>

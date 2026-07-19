@@ -35,7 +35,7 @@
 [1,13,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,34) *meruṃ parigantum*
 [5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *yathā hi merurbhagavatā* (т.е. *sūryeṇa) nityaśaḥ parigamyate*
 [MBH. 3,8783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8783) *sarvaloko hyayaṃ manye buddhyā parigatastvayā*
-[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* окружённый войском
+[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* окруженный войском
 [RAGH. ed. Calc. 1,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,38) *latāparigatairdrumaiḥ*
 [R. 6,15,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,15,5) *valkadukūlakuthādibhiḥ parigataḥ*
 [BHAṬṬ. 10,1.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?10,1) *viśadaprabhāparigataḥ*
@@ -88,7 +88,7 @@
 [MEGH. 17.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?17) *bhramaṇaparigataṃ bhaikṣam*
 [ŚĀNTIŚ. 4,7.]
 
-- **RU:** — 5) *parigata* (окружённый) исполненный, охваченный, отмеченный: *parigataḥ kṣudhā*
+- **RU:** — 5) *parigata* (окруженный) исполненный, охваченный, отмеченный: *parigataḥ kṣudhā*
 [PAÑCAT. I,55.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,55) *kṣudhāpari˚*
 [MBH. 14,2717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2717) *śvāsahikkā˚*
 [SUŚR. 2,501,9.] *cintā˚*
@@ -118,8 +118,8 @@
 [RAGH. 8,91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,91)
 
 - **RU:** — 7) по
-[MED.] и [H. an.] *parigata* равнозначно также *ceṣṭita* совершённый, исполненный; по
+[MED.] и [H. an.] *parigata* равнозначно также *ceṣṭita* совершенный, исполненный; по
 [MED.] = *vismṛta* забытый; по
-[H. an.] = *lābha*, вместо чего следует читать возможно *labdha* (= *prāpta* обретённый). — caus. давать обойти кругом, (время) проводить: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
+[H. an.] = *lābha*, вм. чего следует читать возможно *labdha* (= *prāpta* обретенный). — caus. давать обойти кругом, (время) проводить: *tenāṣṭau parigamitāḥ samāḥ kathaṃcit*
 [RAGH. 8,91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,91)
   <sub>lexicographic</sub>

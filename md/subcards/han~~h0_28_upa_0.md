@@ -64,7 +64,7 @@
 [MĀRK. P. 51,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,23)
 [BHAṬṬ. 5,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,12) *laṅkā copahaniṣyate* (pass.)
 [16,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,12) *dharmārthāvupahanti*
-[Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851) *sarvaṃ tasyopahanyate*
+[Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851 "Spr. (II) 4851: mitraṃ vicārya bahuśo jñātadoṣaṃ parityajet | tyajannabhūtadoṣaṃ hi dharmārthāvupahanti saḥ || — (2196.) Er (der Fürst) prüfe den Freund auf vielfache Weise und verstosse ihn erst dann, wenn er seine Schuld erkannt hat, denn wer einen schuldlosen Freund verstösst, der macht ja Verdienst und Vortheil zu Nichte.") *sarvaṃ tasyopahanyate*
 [MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) *śrutiḥ*
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,41) *mama pratijñāmupahantum* zu Schanden machen
@@ -80,7 +80,7 @@
 [MĀRK. P. 51,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,23)
 [BHAṬṬ. 5,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,12) *laṅkā copahaniṣyate* (pass.)
 [16,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,12) *dharmārthāvupahanti*
-[Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851) *sarvaṃ tasyopahanyate*
+[Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851 "Spr. (II) 4851: mitraṃ vicārya bahuśo jñātadoṣaṃ parityajet | tyajannabhūtadoṣaṃ hi dharmārthāvupahanti saḥ || — (2196.) Er (der Fürst) prüfe den Freund auf vielfache Weise und verstosse ihn erst dann, wenn er seine Schuld erkannt hat, denn wer einen schuldlosen Freund verstösst, der macht ja Verdienst und Vortheil zu Nichte.") *sarvaṃ tasyopahanyate*
 [MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) *śrutiḥ*
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,41) *mama pratijñāmupahantum* посрамлять
@@ -119,7 +119,7 @@
 
 **6c)** — c) behaftet (mit einem Uebel), heimgesucht, hart mitgenommen, beschädigt, verdorben, besudelt: *rakṣāṃsi devaiḥ*
 [ŚAT. BR. 7,3,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,3,2,6) *grāmaścauraiḥ*
-[Spr. (II) 5466.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5466) *vastra*
+[Spr. (II) 5466.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5466 "Spr. (II) 5466: yāminyeṣā vahulajaladairbaddhabhīmāndhakārā nidrāṃ yāto mama patirasau kleśitaḥ karmaduḥkhauḥ | bālā cāhaṃ manasijabhayātprāptagaḍhaprakampā gramaścau… — (2475.) Diese Nacht ist durch dicke Wolken in ein fürchterliches Dunkel gehüllt") *vastra*
 [MĀRK. P. 34,55.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,55) [35,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?35,26) [97,27. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?97,27)
 [VARĀH. BṚH. S. 15,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,32) *svara*
 [SUŚR. 1,239,11.] *cakṣus*
@@ -133,7 +133,7 @@
 [R. GORR. 2,39,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,39,37) [40,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,40,11) [81,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,81,8) *malopahataprasāde darpaṇatale*
 [ŚĀK. 191.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?191)
 [KIR. 5,48.]
-[Spr. (II) 2103](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2103), v. l. *puṃstva*
+[Spr. (II) 2103](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2103 "Spr. (II) 2103: gātraṃ saṅkucitaṃ gatirvigalitā bhraṣṭā ca dantāvalī dṛṣṭirnaśyati vardhate badhiratā vaktraṃ ca lālāyate | vākyaṃ nādriyate na bāndhavajano bhāryā na… — (831.) Der Körper ist zusammengeschrumpft, der Gang unsicher, die Reihe der Zähne ausgefallen, das Gesicht schwindet, die Harthörigkeit nimmt zu, der Mund kann den Speichel nicht mehr halten, die Angehörigen achten nicht…"), v. l. *puṃstva*
 [VARĀH. BṚH. S. 16,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,32)
 [BHĀG. P. 5,6,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,11) [8,24,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,46) *tattvonmeṣopahatatamas*
 [PRAB. 118,4.] *bhūtopahatacittā*
@@ -153,11 +153,11 @@
 [R. 1,65,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,9) *timirādyupahatacakṣus*
 [SARVADARŚANAS. 17,3.] *bāṣpopahatā vāk*
 [R. 2,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,59,19) [60,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,60,4) [4,8,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,18) *asthairyeṇa vibhūtayaḥ*
-[Spr. (II) 855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?855) *kāmena tapaḥ*
+[Spr. (II) 855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?855 "Spr. (II) 855: ākrāntaṃ maraṇena janma jarasā yātyuttamaṃ yauvanaṃ santoṣo dhanalipsayā śamasukhaṃ prauḍhāṅganāvibhramaiḥ | lokairmatsaribhirguṇā vanabhuvo vyālairnṛ… — (311.) Auf der Geburt lastet der Tod, die schöne Jugend wird durch das Alter verscheucht, die Zufriedenheit durch die Gier nach Besitz, das Glück der inneren Ruhe durch die Buhlkünste frecher Dirnen, Tugenden werden von…") *kāmena tapaḥ*
 [SARVADARŚANAS. 172,3.] *śokena*
 [R. 5,21,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,7) *avidyayā*
 [BHĀG. P. 3,9,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,20) *abodhopahata*
-[Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488) *āśopahatātmavṛtti*
+[Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488 "Spr. (II) 4488: boddhāro matsaragrastāḥ prabhavaḥ smayadūṣitāḥ | abodhopahatāścānye jīrṇamaṅge subhāṣitam || — (1988.) Die Kenner werden von Neid verzehrt, die Gebieter sind mit Hochmuth befleckt, die Uebrigen mit Dummheit geschlagen: die schönen Worte habe ich im eigenen Leibe verdaut (so v. a. unterdrückt).") *āśopahatātmavṛtti*
 [KUMĀRAS. 5,76.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,76) *kāmopahata*
 [M. 9,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,67)
 [MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953)
@@ -166,13 +166,13 @@
 [MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) *dāridryopahata*
 [PAÑCAT. 95,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,13) [119,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?119,5) *duḥkhopahata*
 [R. 2,47,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) [3,79,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,50)
-[Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606) *durbhikṣopahata*
+[Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander.") *durbhikṣopahata*
 [RĀJA-TAR. 4,230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,230) [5,89.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,89) *madanopahata*
 [MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) *madāvalepopahata*
 [MĀRK. P. 21,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,3) *rogarāgopahata*
 [MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) *lobhopahata*
 [BHAG. 1,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,38) *vairūpyopahata*
-[Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341) *śāṭhyopahata*
+[Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341 "Spr. (II) 4341: prāyeṇātra kalānvitaṃ kukulajāḥ śrīvallabhaṃ durbhagā dātāraṃ kṛpaṇā ṛjūnanṛjavo vittānvitaṃ nirdhanāḥ | vairūpyopahatāśca kāntavapuṣaṃ dharmāśrayaṃ p… — (1912.) Gewöhnlich tadeln hier auf Erden niedrig Geborene einen hoch Geborenen, Unglückliche einen Günstling des Glücks, Geizige einen Freigebigen, Unredliche Redliche, Arme einen Reichen, Hässliche einen Schönen, Bösewi…") *śāṭhyopahata*
 [367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?367) *śokopahata*
 [MBH. 3,2267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2267)
 [R. 2,33,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,5) [47,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,1) [52,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,22) [63,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,1)
@@ -180,7 +180,7 @@
 [PRAB. 108,11.] [109,7.]
 [PAÑCAR. 4,3,186.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,186) *pramodopahata* überwältigt —, hingerissen von
 [BHĀG. P. 10,71,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,40) *viṭajalpitaiḥ kṣauṇībhujaḥ* verdorben, verführt
-[Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889) *apāyopahatāntarātman* so v. a. entmuthigt
+[Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889 "Spr. (II) 1889: kṛtvā śastravibhīṣikāṃ katipayagrāmeṣu dīnāḥ prajā mathnanto viṭajalpitairupahatāḥ kṣauṇībhujaste kila | vidvāṃso 'pi vayaṃ kila trijagatīsargasthitiv… — (726.) Wer, Schrecken verbreitend durch Waffen, in wenigen Dorfer armselige Unterthanen bedrückt, das sind, wie wir wissen, durch das Geschwätz Unterthanen bedrückt, das sind, wie wir wissen, durch huldigt, den Herrn übe…") *apāyopahatāntarātman* so v. a. entmuthigt
 [3485.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3485) *daivena* vom Schicksal geschlagen, — verfolgt
 [R. 2,47,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,14) [5,80,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,9) ohne *daivena* dass.
 [MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277)
@@ -188,9 +188,9 @@
 [KATHĀS. 114,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,100) *anupahatātmaka* wohlgemuth
 [27,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,130)
 
-- **RU:** — c) поражённый (недугом), постигнутый бедой, сильно пострадавший, повреждённый, испорченный, запятнанный: *rakṣāṃsi devaiḥ*
+- **RU:** — c) пораженный (недугом), постигнутый бедой, сильно пострадавший, поврежденный, испорченный, запятнанный: *rakṣāṃsi devaiḥ*
 [ŚAT. BR. 7,3,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,3,2,6) *grāmaścauraiḥ*
-[Spr. (II) 5466.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5466) *vastra*
+[Spr. (II) 5466.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5466 "Spr. (II) 5466: yāminyeṣā vahulajaladairbaddhabhīmāndhakārā nidrāṃ yāto mama patirasau kleśitaḥ karmaduḥkhauḥ | bālā cāhaṃ manasijabhayātprāptagaḍhaprakampā gramaścau… — (2475.) Diese Nacht ist durch dicke Wolken in ein fürchterliches Dunkel gehüllt") *vastra*
 [MĀRK. P. 34,55.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,55) [35,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?35,26) [97,27. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?97,27)
 [VARĀH. BṚH. S. 15,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,32) *svara*
 [SUŚR. 1,239,11.] *cakṣus*
@@ -204,7 +204,7 @@
 [R. GORR. 2,39,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,39,37) [40,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,40,11) [81,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,81,8) *malopahataprasāde darpaṇatale*
 [ŚĀK. 191.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?191)
 [KIR. 5,48.]
-[Spr. (II) 2103](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2103), v. l. *puṃstva*
+[Spr. (II) 2103](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2103 "Spr. (II) 2103: gātraṃ saṅkucitaṃ gatirvigalitā bhraṣṭā ca dantāvalī dṛṣṭirnaśyati vardhate badhiratā vaktraṃ ca lālāyate | vākyaṃ nādriyate na bāndhavajano bhāryā na… — (831.) Der Körper ist zusammengeschrumpft, der Gang unsicher, die Reihe der Zähne ausgefallen, das Gesicht schwindet, die Harthörigkeit nimmt zu, der Mund kann den Speichel nicht mehr halten, die Angehörigen achten nicht…"), v. l. *puṃstva*
 [VARĀH. BṚH. S. 16,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,32)
 [BHĀG. P. 5,6,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,11) [8,24,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,46) *tattvonmeṣopahatatamas*
 [PRAB. 118,4.] *bhūtopahatacittā*
@@ -224,11 +224,11 @@
 [R. 1,65,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,9) *timirādyupahatacakṣus*
 [SARVADARŚANAS. 17,3.] *bāṣpopahatā vāk*
 [R. 2,59,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,59,19) [60,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,60,4) [4,8,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,18) *asthairyeṇa vibhūtayaḥ*
-[Spr. (II) 855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?855) *kāmena tapaḥ*
+[Spr. (II) 855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?855 "Spr. (II) 855: ākrāntaṃ maraṇena janma jarasā yātyuttamaṃ yauvanaṃ santoṣo dhanalipsayā śamasukhaṃ prauḍhāṅganāvibhramaiḥ | lokairmatsaribhirguṇā vanabhuvo vyālairnṛ… — (311.) Auf der Geburt lastet der Tod, die schöne Jugend wird durch das Alter verscheucht, die Zufriedenheit durch die Gier nach Besitz, das Glück der inneren Ruhe durch die Buhlkünste frecher Dirnen, Tugenden werden von…") *kāmena tapaḥ*
 [SARVADARŚANAS. 172,3.] *śokena*
 [R. 5,21,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,7) *avidyayā*
 [BHĀG. P. 3,9,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,20) *abodhopahata*
-[Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488) *āśopahatātmavṛtti*
+[Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488 "Spr. (II) 4488: boddhāro matsaragrastāḥ prabhavaḥ smayadūṣitāḥ | abodhopahatāścānye jīrṇamaṅge subhāṣitam || — (1988.) Die Kenner werden von Neid verzehrt, die Gebieter sind mit Hochmuth befleckt, die Uebrigen mit Dummheit geschlagen: die schönen Worte habe ich im eigenen Leibe verdaut (so v. a. unterdrückt).") *āśopahatātmavṛtti*
 [KUMĀRAS. 5,76.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,76) *kāmopahata*
 [M. 9,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,67)
 [MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953)
@@ -237,22 +237,22 @@
 [MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) *dāridryopahata*
 [PAÑCAT. 95,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,13) [119,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?119,5) *duḥkhopahata*
 [R. 2,47,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) [3,79,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,50)
-[Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606) *durbhikṣopahata*
+[Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander.") *durbhikṣopahata*
 [RĀJA-TAR. 4,230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,230) [5,89.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,89) *madanopahata*
 [MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) *madāvalepopahata*
 [MĀRK. P. 21,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,3) *rogarāgopahata*
 [MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) *lobhopahata*
 [BHAG. 1,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,38) *vairūpyopahata*
-[Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341) *śāṭhyopahata*
+[Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341 "Spr. (II) 4341: prāyeṇātra kalānvitaṃ kukulajāḥ śrīvallabhaṃ durbhagā dātāraṃ kṛpaṇā ṛjūnanṛjavo vittānvitaṃ nirdhanāḥ | vairūpyopahatāśca kāntavapuṣaṃ dharmāśrayaṃ p… — (1912.) Gewöhnlich tadeln hier auf Erden niedrig Geborene einen hoch Geborenen, Unglückliche einen Günstling des Glücks, Geizige einen Freigebigen, Unredliche Redliche, Arme einen Reichen, Hässliche einen Schönen, Bösewi…") *śāṭhyopahata*
 [367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?367) *śokopahata*
 [MBH. 3,2267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2267)
 [R. 2,33,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,5) [47,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,1) [52,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,22) [63,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,1)
 [R. GORR. 2,101,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,101,22)
 [PRAB. 108,11.] [109,7.]
-[PAÑCAR. 4,3,186.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,186) *pramodopahata* побеждённый —, охваченный
-[BHĀG. P. 10,71,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,40) *viṭajalpitaiḥ kṣauṇībhujaḥ* испорченный, совращённый
-[Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889) *apāyopahatāntarātman* так преим. лишившийся мужества
-[3485.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3485) *daivena* сражённый судьбой, — преследуемый ею
+[PAÑCAR. 4,3,186.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,186) *pramodopahata* побежденный —, охваченный
+[BHĀG. P. 10,71,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,40) *viṭajalpitaiḥ kṣauṇībhujaḥ* испорченный, совращенный
+[Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889 "Spr. (II) 1889: kṛtvā śastravibhīṣikāṃ katipayagrāmeṣu dīnāḥ prajā mathnanto viṭajalpitairupahatāḥ kṣauṇībhujaste kila | vidvāṃso 'pi vayaṃ kila trijagatīsargasthitiv… — (726.) Wer, Schrecken verbreitend durch Waffen, in wenigen Dorfer armselige Unterthanen bedrückt, das sind, wie wir wissen, durch das Geschwätz Unterthanen bedrückt, das sind, wie wir wissen, durch huldigt, den Herrn übe…") *apāyopahatāntarātman* так преим. лишившийся мужества
+[3485.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3485) *daivena* сраженный судьбой, — преследуемый ею
 [R. 2,47,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,14) [5,80,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,9) без *daivena* то же
 [MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277)
 [VARĀH. BṚH. S. 16,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,37) *upahatātman* подавленный, опечаленный

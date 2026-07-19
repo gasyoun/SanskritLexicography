@@ -48,8 +48,8 @@
 [6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?4,6) хранить, накапливать: *madhugandhatailaghṛtaphāṇitāni vinidhāya dviguṇā dvitīyamāse labdhiḥ*
 [VARĀH. BṚH. S. 41 (40),5.] *dṛṣṭim, manaḥ* направить взор, ум на: *mayi vinihitadṛṣṭiḥ*
 [MṚCCH. 143,20.] *harivinihitamanasām*
-[GĪT. 11,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,9) *hṛdi* принять кого-л. в своё сердце: *hṛdi vinidhāya harim*
+[GĪT. 11,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,9) *hṛdi* принять кого-л. в свое сердце: *hṛdi vinidhāya harim*
 [31.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,31) вставить в: *yatrāhaṃ* (Индра говорит) *devānāmaindre vinihitaḥ pade*
 [HARIV. 3988](https://sanskrit-lexicon-scans.github.io/hariv?3988) — *vinihita*
-[MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вместо *vinihata* .
+[MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вм. *vinihata* .
   <sub>attested</sub>

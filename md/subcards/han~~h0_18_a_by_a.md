@@ -25,18 +25,18 @@
 [R. 1,44,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,26) beschädigt: Auge
 [SUŚR. 2,357,17.] getroffen so v. a. unangenehm berührt, heimgesucht: *mṛtyunā*
 [MBH. 12,6530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6530)
-[Spr. (II) 4953.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4953) *hṛdayaṃ kīrtiviparyayeṇa*
+[Spr. (II) 4953.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4953 "Spr. (II) 4953: mṛtyunābhyāhate loke jarayā paripīḍite | amodhāsu patantīṣu dharmapotena santara || — Da die Welt vom Tode heimgesucht und durch's Alter geplagt wird und da die Nächte nicht vergeblich dahineilen, so schiffe auf dem Nachen der Tugend hinüber.") *hṛdayaṃ kīrtiviparyayeṇa*
 [RAGH. 14,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,33) *timirābhyāhatā niśā* so v. a. stockfinster
 [R. 2,114,2](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,2) ([125,2](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,2) [GORR.]).
 
-- **RU:** 1) поражённый: *śaraiḥ*
+- **RU:** 1) пораженный: *śaraiḥ*
 [MBH. 1,8223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8223) [3,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.745) [5,7315.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7315) *śastraiḥ*
 [KATHĀS. 69,126.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,126) *mālayā* ударенный
 [66,24.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,24) *salilena salilam*
-[R. 1,44,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,26) повреждённый: глаз
-[SUŚR. 2,357,17.] поражённый так преим. неприятно затронутый, подвергшийся напасти: *mṛtyunā*
+[R. 1,44,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,26) поврежденный: глаз
+[SUŚR. 2,357,17.] пораженный так преим. неприятно затронутый, подвергшийся напасти: *mṛtyunā*
 [MBH. 12,6530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6530)
-[Spr. (II) 4953.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4953) *hṛdayaṃ kīrtiviparyayeṇa*
+[Spr. (II) 4953.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4953 "Spr. (II) 4953: mṛtyunābhyāhate loke jarayā paripīḍite | amodhāsu patantīṣu dharmapotena santara || — Da die Welt vom Tode heimgesucht und durch's Alter geplagt wird und da die Nächte nicht vergeblich dahineilen, so schiffe auf dem Nachen der Tugend hinüber.") *hṛdayaṃ kīrtiviparyayeṇa*
 [RAGH. 14,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,33) *timirābhyāhatā niśā* так преим. кромешная тьма
 [R. 2,114,2](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,2) ([125,2](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,2) [GORR.]).
   <sub>attested</sub>

@@ -15,7 +15,7 @@
 
 **3a)** — a〉 geschlagen, getroffen.
 
-- **RU:** — a〉 поражённый, задетый.
+- **RU:** — a〉 пораженный, задетый.
   <sub>attested</sub>
 
 **3b)** — b〉 angeschlagen (Trommel u. s. w.).
@@ -46,34 +46,34 @@
 **mit-T7-1)** — Mit *abhipra*
 — 1〉 überwältigen.
 
-- **RU:** — Mit *abhipra*
+- **RU:** — С *abhipra*
 — 1〉 одолевать, побеждать.
   <sub>attested</sub>
 
 **mit-T7-2)** — 2〉 *abhiprahata* verwundet (Baum).
 
-- **RU:** — 2〉 *abhiprahata* повреждённый (дерево).
+- **RU:** — 2〉 *abhiprahata* поврежденный (дерево).
   <sub>attested</sub>
 
 **mit-T9-T10-T11-T12)** — Mit *nipra* mit Gen. Vgl. *niṣpra*.
 
-- **RU:** — Mit *nipra* mit Gen. ср. *niṣpra*.
+- **RU:** — С *nipra* mit Gen. ср. *niṣpra*.
   <sub>attested</sub>
 
 **mit-T13-T14-T15)** — Mit *niṣpra* niederschlagen, tödten; mit Gen. [ŚIŚ. 14,82].
 
-- **RU:** — Mit *niṣpra* сражать, убивать; mit Gen. [ŚIŚ. 14,82].
+- **RU:** — С *niṣpra* сражать, убивать; mit Gen. [ŚIŚ. 14,82].
   <sub>attested</sub>
 
 **mit-T16-T17-T20)** — Mit *vipra*, *viprahata* geschlagen (ein Heer), getroffen, mitgenommen. Vgl. *aviprahata* [Nachtr. 2].
 
-- **RU:** — Mit *vipra*, *viprahata* разбитый (войско), поражённый, пострадавший. ср. *aviprahata* [Nachtr. 2].
+- **RU:** — С *vipra*, *viprahata* разбитый (войско), пораженный, пострадавший. ср. *aviprahata* [Nachtr. 2].
   <sub>attested</sub>
 
 **mit-T21-1)** — Mit *prati*
 — 1〉 schlagen gegen (Gen.), losfahren auf Jmd (Acc.).
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 бить в (Gen.), нападать на кого-л. (Acc.).
   <sub>attested</sub>
 
@@ -99,7 +99,7 @@
 
 **mit-T21-6)** — 6〉 Pass. mit Abl. fern gehalten werden von, verlustig gehen.
 
-- **RU:** — 6〉 Pass. mit Abl. быть отстранённым от, лишаться.
+- **RU:** — 6〉 Pass. mit Abl. быть отстраненным от, лишаться.
   <sub>attested</sub>
 
 **mit-T21-7)** — 7〉 Absol. *pratihatya* in entgegengesetzter Richtung.
@@ -124,12 +124,12 @@
 
 **mit-T21-8c)** — c〉 zurückgeschlagen, abgewehrt (〔105,8〕), zurückgewiesen, abgewiesen, gehemmt, aufgehalten, unterblieben.
 
-- **RU:** — c〉 отражённый, отбитый (〔105,8〕), отвергнутый, отклонённый, сдержанный, остановленный, не случившийся.
+- **RU:** — c〉 отраженный, отбитый (〔105,8〕), отвергнутый, отклоненный, сдержанный, остановленный, не случившийся.
   <sub>attested</sub>
 
 **mit-T21-8d)** — d〉 in seiner Function gehemmt, von den Augen so v. a. geblendet, von den Zähnen so v. a. stumpf (von Säuren).
 
-- **RU:** — d〉 нарушенный в своей функции,отказывающий; о глазах так преим. ослеплённый; о зубах так преим. притуплённый (от кислот).
+- **RU:** — d〉 нарушенный в своей функции,отказывающий; о глазах так преим. ослепленный; о зубах так преим. притупленный (от кислот).
   <sub>attested</sub>
 
 **mit-T21-8e)** — e〉 feindselig in *pratihatadhī*.
@@ -144,7 +144,7 @@
 
 **mit-T21-8g)** — g〉 schlechte Lesart für *prahita*. Vgl. *apratihata*.
 
-- **RU:** — g〉 ошибочное чтение вместо *prahita*. ср. *apratihata*.
+- **RU:** — g〉 ошибочное чтение вм. *prahita*. ср. *apratihata*.
   <sub>attested</sub>
 
 **mit-T21-T41-T43)** — Caus. s. u. *ghātay*.
@@ -154,13 +154,13 @@
 
 **mit-T44-T45)** — Mit *saṃprati* Pass. sich stossen.
 
-- **RU:** — Mit *saṃprati* Pass. сталкиваться.
+- **RU:** — С *saṃprati* Pass. сталкиваться.
   <sub>attested</sub>
 
 **mit-T46-1)** — Mit *vi*
 — 1〉 zerschlagen, zerbrechen, zerstören.
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
 — 1〉 разбивать, ломать, разрушать.
   <sub>attested</sub>
 
@@ -221,7 +221,7 @@
 
 **mit-T46-11)** — 11〉 häufig fehlerhaft für *nihan*.
 
-- **RU:** — 11〉 часто ошибочно вместо *nihan*.
+- **RU:** — 11〉 часто ошибочно вм. *nihan*.
   <sub>attested</sub>
 
 **mit-T46-12)** — 12〉 *vihata*
@@ -231,7 +231,7 @@
 
 **mit-T46-12a)** — a〉 aufgerissen, aufgewühlt.
 
-- **RU:** — a〉 взрытый, взбороздённый.
+- **RU:** — a〉 взрытый, взборозденный.
   <sub>attested</sub>
 
 **mit-T46-12b)** — b〉 herausgeschlagen aus (Abl.).
@@ -241,17 +241,17 @@
 
 **mit-T46-12c)** — c〉 getroffen, heimgesucht.
 
-- **RU:** — c〉 поражённый, постигнутый (бедой).
+- **RU:** — c〉 пораженный, постигнутый (бедой).
   <sub>attested</sub>
 
 **mit-T46-12d)** — d〉 zurückgewiesen, angewiesen (Person).
 
-- **RU:** — d〉 отклонённый, отосланный (о лице).
+- **RU:** — d〉 отклоненный, отосланный (о лице).
   <sub>attested</sub>
 
 **mit-T46-12e)** — e〉 abgeschlagen, abgewehrt.
 
-- **RU:** — e〉 отражённый, отбитый.
+- **RU:** — e〉 отраженный, отбитый.
   <sub>attested</sub>
 
 **mit-T46-12f)** — f〉 gestört, gehemmt.
@@ -276,39 +276,39 @@
 
 **mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) nach [KERN] fehlerhaft für *anuvahanti*.
 
-- **RU:** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) по [KERN] ошибочно вместо *anuvahanti*.
+- **RU:** — С *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) по [KERN] ошибочно вм. *anuvahanti*.
   <sub>attested</sub>
 
 **mit-T65-T66)** — Mit *āvi* (!) hauen auf (Acc.).
 
-- **RU:** — Mit *āvi* (!) рубить по (Acc.).
+- **RU:** — С *āvi* (!) рубить по (Acc.).
   <sub>attested</sub>
 
 **mit-T67-T68)** — Mit *pravi*, *pravihata* zurück-, in die Flucht geschlagen.
 
-- **RU:** — Mit *pravi*, *pravihata* отброшенный, обращённый в бегство.
+- **RU:** — С *pravi*, *pravihata* отброшенный, обращенный в бегство.
   <sub>attested</sub>
 
 **mit-T69-T70)** — Mit *prativi* in *prativighāta*.
 
-- **RU:** — Mit *prativi* в *prativighāta*.
+- **RU:** — С *prativi* в *prativighāta*.
   <sub>attested</sub>
 
 **mit-T71-1)** — Mit *sam*
 — 1〉 zuklappen, zusammenlegen, schliessen.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 захлопывать, складывать, закрывать.
   <sub>attested</sub>
 
 **mit-T71-2)** — 2〉 zusammenballen; Pass. sich ballen, fest —, consistent werden. *pṛthivyādibhāvena* zu Erde u. s. w. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* so v. a. dein Herz ist gleichsam aus Eisen zusammengehämmert.
 
-- **RU:** — 2〉 сжимать в комок, скатывать; Pass. сжиматься, становиться плотным, твердеть. *pṛthivyādibhāvena* на землю и т.д. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* так преим. твоё сердце словно выковано из железа.
+- **RU:** — 2〉 сжимать в комок, скатывать; Pass. сжиматься, становиться плотным, твердеть. *pṛthivyādibhāvena* на землю и т.д. [ŚAṂK. zu BĀDAR. 2,2,18]. *kṛṣṇāyasasyeva* *ca* *te* *saṃhatyā* *hṛdayaṃ* *kṛtam* так преим. твое сердце словно выковано из железа.
   <sub>attested</sub>
 
 **mit-T71-3)** — 3〉 zusammensetzen, -fügen. Pass. verbunden werden, sich verbinden.
 
-- **RU:** — 3〉 составлять, соединять. Pass. быть соединённым, соединяться.
+- **RU:** — 3〉 составлять, соединять. Pass. быть соединенным, соединяться.
   <sub>attested</sub>
 
 **mit-T71-4)** — 4〉 Med. aufeinanderstossen, zusammenstossen mit (Instr.) [ṚV. 9,14,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.04).
@@ -323,7 +323,7 @@
 
 **mit-T71-6)** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) sich zusammen thuend, in Gemeinschaft, vereint, zusammen, im Verein mit (Instr.).
 
-- **RU:** — 6〉 Absol. *saṃhatya* (auch mit *anyo'nyam*) действуя сообща, совместно, объединённо, вместе, в союзе с (Instr.).
+- **RU:** — 6〉 Absol. *saṃhatya* (также mit *anyo'nyam*) действуя сообща, совместно, объединенно, вместе, в союзе с (Instr.).
   <sub>attested</sub>
 
 **mit-T71-7)** — 7〉 *saṃhata*
@@ -333,12 +333,12 @@
 
 **mit-T71-7a)** — a〉 an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, an schliessend, eng verbunden, — mit (Instr.), zusammenhängend, zusammenhaltend, einen Haufen bildend.
 
-- **RU:** — a〉 наложенный друг на друга, соединённый, сомкнутый, соприкасающийся, примыкающий, тесно связанный, — с (Instr.), связный, нераздельный, образующий кучу.
+- **RU:** — a〉 наложенный друг на друга, соединенный, сомкнутый, соприкасающийся, примыкающий, тесно связанный, — с (Instr.), связный, нераздельный, образующий кучу.
   <sub>attested</sub>
 
 **mit-T71-7b)** — b〉 fest —, compact geworden, fest, hart, compact (〔73,12〕); von festem, compacten Gliederbau.
 
-- **RU:** — b〉 ставший плотным, твёрдый, жёсткий, компактный (〔73,12〕); крепкого, плотного телосложения.
+- **RU:** — b〉 ставший плотным, твердый, жесткий, компактный (〔73,12〕); крепкого, плотного телосложения.
   <sub>attested</sub>
 
 **mit-T71-7c)** — c〉 stark, intensiv.
@@ -359,8 +359,8 @@
 **mit-T97-1)** — Mit *abhisam*
 — 1〉 Absol. *abhisaṃhatya* sich zusammenthuend, in Gemeinschaft, vereint.
 
-- **RU:** — Mit *abhisam*
-— 1〉 Absol. *abhisaṃhatya* действуя сообща, совместно, объединённо.
+- **RU:** — С *abhisam*
+— 1〉 Absol. *abhisaṃhatya* действуя сообща, совместно, объединенно.
   <sub>attested</sub>
 
 **mit-T97-2)** — 2〉 *abhisaṃhata* angegriffen, befeindet.
@@ -370,10 +370,10 @@
 
 **mit-T101-T105)** — Mit *pratisam*, *anyo'nyapratisaṃhatau* mit einander verbunden. *pratisaṃhata* auch schlechte v. l. für *pratisaṃhṛta*.
 
-- **RU:** — Mit *pratisam*, *anyo'nyapratisaṃhatau* связанный друг с другом. *pratisaṃhata* также ошибочное v. l. вместо *pratisaṃhṛta*.
+- **RU:** — С *pratisam*, *anyo'nyapratisaṃhatau* связанный друг с другом. *pratisaṃhata* также ошибочное v. l. вм. *pratisaṃhṛta*.
   <sub>attested</sub>
 
 **mit-T106-T107)** — Mit *visam*, *visaṃhata* aus der festen Verbindung gebracht, gelockert.
 
-- **RU:** — Mit *visam*, *visaṃhata* выведенный из прочного соединения, ослабленный.
+- **RU:** — С *visam*, *visaṃhata* выведенный из прочного соединения, ослабленный.
   <sub>attested</sub>

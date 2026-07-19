@@ -140,7 +140,7 @@
 — 1〉 laut, deutlich, einzeln aussprechen.
 
 - **RU:** — С *nis*
-— 1〉 произносить громко, отчётливо, по отдельности.
+— 1〉 произносить громко, отчетливо, по отдельности.
   <sub>attested</sub>
 
 **Mit … erklären 2)** — 2〉 erklären.
@@ -189,7 +189,7 @@
 
 **Mit … anmelden 6)** — 6〉 Jmd (Dat.) Etwas anmelden, so v. a. anbieten, darreichen [ĀPAST. 1,3,31]; Vgl. **1.** *vid* mit *ni* Caus.
 
-- **RU:** — 6〉 объявлять кому-либо (Dat.) о чём-либо, так преим. предлагать, подносить [ĀPAST. 1,3,31]; ср. **1.** *vid* с *ni* Caus.
+- **RU:** — 6〉 объявлять кому-либо (Dat.) о чем-либо, так преим. предлагать, подносить [ĀPAST. 1,3,31]; ср. **1.** *vid* с *ni* Caus.
   <sub>attested</sub>
 
 **Mit … erwidern)** Mit *pratipra* erwidern.
@@ -223,7 +223,7 @@
 
 **Mit … über Etwas aussprechen 2)** — 2〉 sich über Etwas (Acc.) aussprechen, über Etwas seine Meinung sagen, eine Frage beantworten ([ĀPAST. 1,32,22]).
 
-- **RU:** — 2〉 высказываться о чём-либо (Acc.), излагать своё мнение о чём-либо, отвечать на вопрос ([ĀPAST. 1,32,22]).
+- **RU:** — 2〉 высказываться о чем-либо (Acc.), излагать свое мнение о чем-либо, отвечать на вопрос ([ĀPAST. 1,32,22]).
   <sub>attested</sub>
 
 **Mit … erläutern 3)** — 3〉 erläutern, auslegen.

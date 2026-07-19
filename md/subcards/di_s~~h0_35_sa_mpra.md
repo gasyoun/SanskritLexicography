@@ -18,7 +18,7 @@
 [MBH. 3,10666.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10666)
 
 - **RU:** — 2) указывать, обозначать, сообщать: *daivajñasaṃpradiṣṭe kāle*
-[VARĀH. BṚH. S. 59,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,15) с определённостью указывать, устанавливать: *yasmindeśe snigdhaniśchidrapattrāḥ saṃdṛśyante vṛkṣagulmalatāśca tasminvṛṣṭiḥ śobhanā saṃpradiṣṭā*
+[VARĀH. BṚH. S. 59,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,15) с определенностью указывать, устанавливать: *yasmindeśe snigdhaniśchidrapattrāḥ saṃdṛśyante vṛkṣagulmalatāśca tasminvṛṣṭiḥ śobhanā saṃpradiṣṭā*
 [28,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?28,14) обозначать как, pass. быть известным как: *navākṣarā bṛhatī saṃpradiṣṭā*
 [MBH. 3,10666.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10666)
   <sub>attested</sub>

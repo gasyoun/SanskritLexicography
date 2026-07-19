@@ -10,7 +10,7 @@
 **1)** 1) *sūkṣmapadyā sopānālīmadhigatavatī* geht, führt zu
 [Spr. 2777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2777)
 
-- **RU:** 1) *sūkṣmapadyā sopānālīmadhigatavatī* — идёт, ведёт к
+- **RU:** 1) *sūkṣmapadyā sopānālīmadhigatavatī* — идет, ведет к
 [Spr. 2777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2777)
 
 **2)** — 2)

@@ -46,7 +46,7 @@ _PWG article — 88 sub-card(s), 316 sense(s) · RU 316/316 · EN 0/316_
 [RĀJA-TAR. 1,52.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,52)
 [MĀRK. P. 110,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?110,30)
 [BHAṬṬ. 7,89.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,89) *yātaṃ vayaḥ*
-[Verz. d. Oxf. H. 130,b,6.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?130) *navamo 'ṅkaḥ* 9-й акт завершён
+[Verz. d. Oxf. H. 130,b,6.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?130) *navamo 'ṅkaḥ* 9-й акт завершен
 [143,b, No. 295.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?143)
 *yātamanāgataṃ ca* прошедшее и будущее
 [VARĀH. BṚH. S. 68,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,1)
@@ -169,7 +169,7 @@ kommen: *etattapasā na yāti na cejyayā nirvapaṇādgṛhādvā*
 [MEGH. 34.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?34)
 [Spr. 4406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4406) [4544.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4544)
 [KATHĀS. 18,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,80) [40,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,89) *tīrthāni*
-[52,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,239) [BHĀG. P. 5,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,1) [MĀRK. P. 109,30](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,30) (act. und мед.).
+[52,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,239) [BHĀG. P. 5,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,1) [MĀRK. P. 109,30](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,30) (act. и мед.).
 [PAÑCAR. 1,2,75.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,2,75) *dvārakāṃ yātāḥ*
 [HARIV. 8929.](https://sanskrit-lexicon-scans.github.io/hariv?8929)
 [Spr. 2462.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2462)
@@ -301,7 +301,7 @@ zum Verderben von
 
 - **RU:** — e) в infin.: *kṛṣṇaṃ draṣṭum*
 [VOP. 26,200.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,200) *vigāhituṃ yāmunamamvu*
-[BHAṬṬ. 3,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,39) наряду с ещё одним acc. места: *udyānāni — sāyāhne krīḍituṃ yānti kumāryaḥ*
+[BHAṬṬ. 3,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,39) наряду с еще одним acc. места: *udyānāni — sāyāhne krīḍituṃ yānti kumāryaḥ*
 [Spr. 4406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4406)
 [RĀJA-TAR. 5,48.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,48) [6,186.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,186)
 [BHAṬṬ. 7,53.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,53)
@@ -380,7 +380,7 @@ zum Verderben von
 [9,9,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,17) *utsavādutsavam* ein Fest nach dem andern erleben
 [KATHĀS. 39,218.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,218)
 
-- **RU:** — 7) приступать к занятию, вступать в состояние, положение, отношение, — оказываться в нём; становиться причастным к чему-либо, достигать; с acc.: *sargavyāpāram*
+- **RU:** — 7) приступать к занятию, вступать в состояние, положение, отношение, — оказываться в нем; становиться причастным к чему-либо, достигать; с acc.: *sargavyāpāram*
 [KUMĀRAS. 2,54.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,54) *mṛgayām*
 [R. 4,17,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,18)
 [BHĀG. P. 9,20,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,20,6) *antyāṃ daśām*
@@ -498,7 +498,7 @@ zum Verderben von
 **12)** — 12) *yāta* fehlerhaft für *jāta* in *yātamanyu*
 [MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) *jāta˚* [ed. Bomb.]
 
-- **RU:** — 12) *yāta* ошибочно вместо *jāta* в *yātamanyu*
+- **RU:** — 12) *yāta* ошибочно вм. *jāta* в *yātamanyu*
 [MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) *jāta˚* [ed. Bomb.]
   <sub>attested</sub>
 
@@ -530,7 +530,7 @@ zum Verderben von
 [BHĀG. P. 10,58,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,58,52) [84,68.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,84,68) побуждать к маршу
 [KĀM. NĪTIS. 11,25.] *dṛṣṭim* направлять взгляд: *dṛṣṭiṃ pathikaḥ kva yāpayatu*
 
-(v. l. вместо *pātayatu*)
+(v. l. вм. *pātayatu*)
 [Spr. 491.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?491) прогонять, отгонять: *madayāpitalajjā*
 [RAGH. 9,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,27) облегчать (болезнь)
 [SUŚR. 1,30,21.]
@@ -560,7 +560,7 @@ zum Verderben von
 [DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
 
 - **RU:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вм. *pāyitāyāḥ* (caus. от 1. *pā*).
   <sub>attested</sub>
 
 **caus-addendum)** — Vgl. *yāpaka* fgg.
@@ -890,7 +890,7 @@ zum Verderben von
 [BHĀG. P. 7,6,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,8)
 [MBH. 12,3470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3470) *na cāsya niyamādbuddhirapayāti mahātmanaḥ* не прекращает
 [9,2310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2310) *nāpayāti*
-[5,7486](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7486) ошибочно вместо *nopayāti*, как читает [ed. Bomb.].
+[5,7486](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7486) ошибочно вм. *nopayāti*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 **2)** — Vgl. *apayātavya* fg. — caus. entführen, rauben
@@ -971,7 +971,7 @@ GORR. [71,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,5)). *t
 [AV. 4,37,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.03) lesen die Hdschr. *api yāmi*, was keinen Sinn giebt (vgl. 3. *i* mit *api*); die Ausg. hat dafür *dyāmi* gesetzt.
 
 - **RU:** — *api*,
-[AV. 4,37,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.03) читают рукоп. *api yāmi*, что не даёт смысла (ср. 3. *i* с *api*); изд. вместо этого поставила *dyāmi*.
+[AV. 4,37,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.037.html#av04.037.03) читают рукоп. *api yāmi*, что не дает смысла (ср. 3. *i* с *api*); изд. вм. этого поставила *dyāmi*.
   <sub>attested</sub>
 
 ## abhiyā
@@ -1036,7 +1036,7 @@ GORR. [71,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,5)). *t
 [R. GORR. 1,21,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,1)
 [BHĀG. P. 1,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,37) [3,22,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,18) [8,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,13) [9,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,17) [8,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,8,10) *devavimānāni — abhiyātāni*
 [MBH. 3,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1763) предпринять нападение
-[KĀM. NĪTIS. 15,2. 13.] прийти, о времени: *kālo 'bhiyātastriṇavacaturyugavikalpitaḥ* (точнее было бы *atiyātaḥ* истёкший)
+[KĀM. NĪTIS. 15,2. 13.] прийти, о времени: *kālo 'bhiyātastriṇavacaturyugavikalpitaḥ* (точнее было бы *atiyātaḥ* истекший)
 [BHĀG. P. 9,3,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,33)
   <sub>attested</sub>
 
@@ -1240,7 +1240,7 @@ GORR. [71,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,5)). *t
 [SUŚR. 2,214,19.] *snehavastāvanāyāte*
 [20.] являться к кому-л. (acc.): *tena tasyāyayau nidrā*
 [KATHĀS. 29,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,167) *nidrāstrī — asya nāyayau*
-[45,183.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,183) приходить к кому-л. (acc.) в знач. преим. встречать кого-л., доставаться кому-л.: *tvāmāyānti śilīmukhāḥ* (пчёлы и стрелы) *smaradhanurmuktāstathā māmapi*
+[45,183.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,183) приходить к кому-л. (acc.) в знач. преим. встречать кого-л., доставаться кому-л.: *tvāmāyānti śilīmukhāḥ* (пчелы и стрелы) *smaradhanurmuktāstathā māmapi*
 [Spr. 2579.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2579) *anāryavṛttam* и т.д. *anarthāḥ kṣipramāyānti*
 [3466.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3466) *māmeva caitānyāyānti mahāratnāni*
 [KATHĀS. 53,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?53,63) входить в —, растворяться в (acc.)
@@ -1282,7 +1282,7 @@ GORR. [71,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,71,5)). *t
 [KATHĀS. 34,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,20) [41,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?41,12)
 [RĀJA-TAR. 5,376.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,376)
 
-- **RU:** — 2) впасть в какое-л. состояние, положение, отношение —, оказаться в нём; стать причастным к чему-л., обрести; с acc.: *vaśam*
+- **RU:** — 2) впасть в какое-л. состояние, положение, отношение —, оказаться в нем; стать причастным к чему-л., обрести; с acc.: *vaśam*
 [SUŚR. 1,149,14.] *bandhanam*
 [Spr. 844.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?844) *darśanam* становиться видимым
 [VARĀH. BṚH. S. 11,40.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,40) [48.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,48) *mṛtyum*
@@ -1606,7 +1606,7 @@ kommen; mit acc.: *tṛptim*
 [PAÑCAT. 34,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?34,17) [46,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,6)
 [HIT. 14,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,22) *kastvaṃ kutaḥ samāyātaḥ*
 [40,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,21) [83,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,2) [VET. in LA. (III) 7,11. 9,13.] [Verz. d. Oxf. H. 14,b,40.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?14)
-*kṛtvā nandasya mantritām . khinnaḥ samāyayau draṣṭuṃ kadācidvindhyavāsinīm* он пошёл
+*kṛtvā nandasya mantritām . khinnaḥ samāyayau draṣṭuṃ kadācidvindhyavāsinīm* он пошел
 [KATHĀS. 2,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,2) *vṛṣṇayaḥ sarva evaite svaṃ svaṃ sadma samāyayuḥ*
 [HARIV. 14494.](https://sanskrit-lexicon-scans.github.io/hariv?14494)
 [R. 2,71,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,10) [Verz. d. Oxf. H. 149,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?149) *tamuddeśaṃ samāyātaḥ* пришедший
@@ -2394,7 +2394,7 @@ wird zur Freude
 
 - **RU:** — ср. *pariyāṇa* сл. — caus. заставлять кого-л. обходить кругом, совершать обход: *purohitaṃ taṃ pariyāpya (= prasthāpya*
 [NĪLAK.]) [MBH. 1,7205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7205) — *pariyāpayamāṇa*
-[KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
+[KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
   <sub>attested</sub>
 
 ## anupari+yā
@@ -2504,7 +2504,7 @@ Schol. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyu
 [10,1,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.07) [8,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.008.html#rv10.008.01) [VS. 12,32.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,32) [28,14.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?28,14) [TBR. 3,7,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,1,1) [ŚAT. BR. 6,7,4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,7,4,9) [8,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,3) [5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,8,1,5) [MUṆḌ. UP. 1,2,11.] Der inf. *prayai* (ср.
 [P. 3,4,10](https://ashtadhyayi.com/sutraani/3/4/10)) findet sich
 [ṚV. 10,104,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.104.html#rv10.104.03) (in anderer Verbindung beim
-схол. zu [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyuktvā mātrā saha mahārathāḥ . prayayuḥ*
+схол. к [P.]), wo übrigens *prapai* zu vermuthen ist. *tataḥ sarve tathetyuktvā mātrā saha mahārathāḥ . prayayuḥ*
 [MBH. 1,6041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6041) [3,2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) [15690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15690) [16908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16908)
 [HARIV. 3525.](https://sanskrit-lexicon-scans.github.io/hariv?3525)
 [R. 1,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,5) [2,46,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,46,30)
@@ -2675,8 +2675,8 @@ Schol. zu [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) aufbrechen heiss
 [BHAṬṬ. 3,25.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,25)
 
 - **RU:** — ср. *prayā, prayāṇi* сл., *prayāman* сл., *prayiyu, gaṇeśabhujaṃgaprayāta, caṇḍavṛṣṭi˚, bhujaṃga˚* . — caus. *prayāpayamāṇa*
-[KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29) *prayāpyamāṇa* und *prayāpyamāna*
-схол. zu [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) велеть выступать в поход
+[KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29) *prayāpyamāṇa* и *prayāpyamāna*
+схол. к [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) велеть выступать в поход
 [ŚAT. BR. 11,8,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,1,3) ср. *prayāpaṇa* сл. — desid. желать отправиться в путь: *rājānaṃ prayiyāsantam*
 [ŚAT. BR. 14,7,1,44.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,44) — caus. vom desid.: побуждать кого-л. к тому, чтобы он хотел отправиться в путь: *prayiyāsayantaḥ*
 [BHAṬṬ. 3,25.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,25)
@@ -2780,7 +2780,7 @@ Schol. zu [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) aufbrechen heiss
 - **RU:** — *pratipra* возвращаться домой
 [ṚV. 1,169,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.169.html#rv01.169.06)
 [MBH. 3,10287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10287) *svagṛham*
-[ITIH.] bei [SĀY.] zu [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *pratiprayāta*
+[ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *pratiprayāta*
 [MBH. 12,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8330)
 [R. 3,1,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,1) [6,105,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,105,1) [7,64,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,64,18)
 [RAGH. 14,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,19) [Verz. d. Oxf. H. 117,a,5](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?117) (hier vielleicht *˚yāntaṃ* zu lesen). течь обратно
@@ -3035,7 +3035,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 [AK. 3,1,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,25)
 [H. 432.](https://sanskrit-lexicon-scans.github.io/abch2/app1?432)
 [HALĀY. 2,216.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,216) *virūpaṃ yātaṃ gamanaṃ ceṣṭanaṃ yasya sa viyāto 'vinītaḥ*
-[KAIY.] zu [P. 7,2,19.](https://ashtadhyayi.com/sutraani/7/2/19) urspr. wohl выродившийся; ср. *vaiyātya* . —
+[KAIY.] к [P. 7,2,19.](https://ashtadhyayi.com/sutraani/7/2/19) urspr. wohl выродившийся; ср. *vaiyātya* . —
 [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) scheint der Text entstellt zu sein.
   <sub>attested</sub>
 
@@ -3103,7 +3103,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 [MBH. 3,6013.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6013) *apāvṛtamṛtam*
 [BHĀG. P. 3,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,15)
 
-- **RU:** — 2) вступать в какое-либо состояние, положение, отношение; получать долю в чём-либо: *nirvāṇam*
+- **RU:** — 2) вступать в какое-либо состояние, положение, отношение; получать долю в чем-либо: *nirvāṇam*
 [BHĀG. P. 11,14,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,14,46) *ekatām*
 [R. 4,33,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,26) *pāpānsaṃsārān*
 [M. 12,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,52) *tathā śarīrāṇi vihāya jīrṇānyanyāni saṃyāti navāni dehī*
@@ -3118,7 +3118,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 - **RU:** — 3) руководствоваться, следовать (acc.): *gurumiva kṛtamagryaṃ karma* (acc.) *saṃyāti daivam* (nom.)
 [MBH. 13,341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.341) — *saṃyayuḥ*
-[HARIV. 15892](https://sanskrit-lexicon-scans.github.io/hariv?15892) ошибочно вместо *khaṃ yayuḥ*, как читает более новая изд..
+[HARIV. 15892](https://sanskrit-lexicon-scans.github.io/hariv?15892) ошибочно вм. *khaṃ yayuḥ*, как читает более новая изд..
   <sub>attested</sub>
 
 **addendum)** — Vgl. *saṃyāna* .
@@ -3139,7 +3139,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 [MBH. 1,3072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3072) *tīrthānyanyānyanusaṃyāhi*
 [3,10094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10094)
 
-- **RU:** — *anusam* ходить взад и вперёд: *rakṣiṇaścānusaṃyāntu pathi*
+- **RU:** — *anusam* ходить взад и вперед: *rakṣiṇaścānusaṃyāntu pathi*
 [R. 2,79,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,79,13) направляться к, идти к, посещать: *śakrastrailokyamanusaṃyayau*
 [MBH. 12,8222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8222) *ādityamanusaṃyātau*
 [R. 4,58,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,58,5) *mahendrasya kuberasya yamasya varuṇasya ca . bhavanānyanusaṃyāmi*
@@ -3189,7 +3189,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 **main)** — *pratisam* auf Jmd losgehen, Jmd angreifen: *so 'rjunaṃ pratisaṃyātaḥ* (*prati* könnte auch mit *arjunaṃ* verbunden werden)
 [MBH. 6,2697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2697) *so 'rjunapramukhe yāntam* [ed. Bomb.]
 
-- **RU:** — *pratisam* бросаться на кого-либо, нападать на кого-либо: *so 'rjunaṃ pratisaṃyātaḥ* (*prati* мог бы также быть соединён с *arjunaṃ*)
+- **RU:** — *pratisam* бросаться на кого-либо, нападать на кого-либо: *so 'rjunaṃ pratisaṃyātaḥ* (*prati* мог бы также быть соединен с *arjunaṃ*)
 [MBH. 6,2697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2697) *so 'rjunapramukhe yāntam* [ed. Bomb.]
   <sub>attested</sub>
 
@@ -3540,7 +3540,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T279—7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
 
-- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
+- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протекший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
   <sub>attested</sub>
 
 **T280—8)** — 8〉 in einen Zustand —, in eine Lage —, in ein Verhältniss kommen, — gerathen, theilhaftig werden; mit Acc.
@@ -3585,7 +3585,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T288—Mit T167)** — Mit *samanupra* seines Weges gehen [MAITR. S. 2,12,4 (148,1)].
 
-- **RU:** — С *samanupra* идти своим путём [MAITR. S. 2,12,4 (148,1)].
+- **RU:** — С *samanupra* идти своим путем [MAITR. S. 2,12,4 (148,1)].
   <sub>attested</sub>
 
 **T289—Mit T169)** — Mit *abhipra*
@@ -3735,7 +3735,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T52—1)** — 1〉 durchfahren, mit dem Wagen —, mit den Rädern durchschneiden [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
 
-- **RU:** — 1〉 проезжать насквозь, на колеснице —, колёсами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
+- **RU:** — 1〉 проезжать насквозь, на колеснице —, колесами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
   <sub>attested</sub>
 
 **T53—2)** — 2〉 durchlaufen, -schneiden, zwischen durch gehen, — fahren.
@@ -3755,7 +3755,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T56—5)** — 5〉 **viyāta* dreist, unverschämt, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) scheint der Text entstellt zu sein.
 
-- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) текст, по всей видимости, искажён.
+- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) текст, по всей видимости, искажен.
   <sub>attested</sub>
 
 **T57—Mit T15)** — Mit *abhivi* hinfahren zu (Acc.).
@@ -3800,7 +3800,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T65—7)** — 7〉 sich richten nach (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) fehlerhaft für *khaṃ* *yayuḥ*.
 
-- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) ошибочно вместо *khaṃ* *yayuḥ*.
+- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) ошибочно вм. *khaṃ* *yayuḥ*.
   <sub>attested</sub>
 
 **T66—Mit T29)** — Mit *anusam*
@@ -3810,7 +3810,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 
 **T67—1)** — 1〉 auf- und abgehen.
 
-- **RU:** — 1〉 ходить взад и вперёд.
+- **RU:** — 1〉 ходить взад и вперед.
   <sub>attested</sub>
 
 **T68—2)** — 2〉 hingehen zu oder nach, besuchen; mit Acc. *anusaṃyāta* mit act. Bed.
@@ -3868,32 +3868,32 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 - **RU:** **1.** √*yā* Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 
-**— Mit {T13})** — Mit *vyatī* V. *˚yāta* = *vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
+**— Mit {#vyatI#})** — Mit *vyatī* V. *˚yāta* = *vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
 
 - **RU:** — С *vyatī* V. *˚yāta* = *vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
   <sub>attested</sub>
 
-**— Mit {T17})** — Mit *abhi* V. fahren über (Acc.) [ĀPAST. GṚHY. 5,24].
+**— Mit {#aBi#})** — Mit *abhi* V. fahren über (Acc.) [ĀPAST. GṚHY. 5,24].
 
 - **RU:** — С *abhi* V. проезжать через (Acc.) [ĀPAST. GṚHY. 5,24].
   <sub>attested</sub>
 
-**— Mit {T20})** — Mit *ā* Caus. erziehen [DIVYĀVAD. 499,9].
+**— Mit {#A#})** — Mit *ā* Caus. erziehen [DIVYĀVAD. 499,9].
 
 - **RU:** — С *ā* Caus. воспитывать [DIVYĀVAD. 499,9].
   <sub>attested</sub>
 
-**— Mit {T23})** — Mit *pari* V. den Umlauf vollbringen [JĀTAKAM. 10,29].
+**— Mit {#pari#})** — Mit *pari* V. den Umlauf vollbringen [JĀTAKAM. 10,29].
 
 - **RU:** — С *pari* V. совершать круговой объезд [JĀTAKAM. 10,29].
   <sub>attested</sub>
 
-**— Mit {T25})** — Mit *pra* V. zu Werke gehen, verfahren [20,33].
+**— Mit {#pra#})** — Mit *pra* V. zu Werke gehen, verfahren [20,33].
 
 - **RU:** — С *pra* V. приступать к делу, действовать [20,33].
   <sub>attested</sub>
 
-**— Mit {T27})** — Mit *abhipra* V. aufbrechen —, eine Reise antreten von (Abl.) [24]. von einer Stelle zu einer anderen sich schwingen [27,10].
+**— Mit {#aBipra#})** — Mit *abhipra* V. aufbrechen —, eine Reise antreten von (Abl.) [24]. von einer Stelle zu einer anderen sich schwingen [27,10].
 
 - **RU:** — С *abhipra* V. отправляться в путь —, предпринимать путешествие от (Abl.) [24]. перемещаться с одного места на другое [27,10].
   <sub>attested</sub>
@@ -3908,32 +3908,32 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 - **RU:** **1.** *yā* Caus. содержать, воспитывать [DIVYĀVAD. 499,1]. пребывать в благополучии [93,6. 150,16. 196,18. 471,4].
   <sub>attested</sub>
 
-**— Mit {T5})** — Mit *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
+**— Mit {#vyatI#})** — Mit *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
 
 - **RU:** — С *vyatī* V. *˚yāta = vyatikramya gataḥ* [R. ed. Bomb. 3,69,4](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,69,4).
   <sub>attested</sub>
 
-**— Mit {T8})** — Mit *abhi* V. fahren über (Acc.) [ĀPAST. GṚHY. 5,24].
+**— Mit {#aBi#})** — Mit *abhi* V. fahren über (Acc.) [ĀPAST. GṚHY. 5,24].
 
 - **RU:** — С *abhi* V. проезжать через (Acc.) [ĀPAST. GṚHY. 5,24].
   <sub>attested</sub>
 
-**— Mit {T11})** — Mit *ā* Caus. erziehen [DIVYĀVAD. 499,9].
+**— Mit {#A#})** — Mit *ā* Caus. erziehen [DIVYĀVAD. 499,9].
 
 - **RU:** — С *ā* Caus. воспитывать [DIVYĀVAD. 499,9].
   <sub>attested</sub>
 
-**— Mit {T14})** — Mit *pari* V. den Umlauf vollbringen [JĀTAKAM. 10,29].
+**— Mit {#pari#})** — Mit *pari* V. den Umlauf vollbringen [JĀTAKAM. 10,29].
 
 - **RU:** — С *pari* V. совершать круговой объезд [JĀTAKAM. 10,29].
   <sub>attested</sub>
 
-**— Mit {T16})** — Mit *pra* V. zu Werke gehen, verfahren [20,33].
+**— Mit {#pra#})** — Mit *pra* V. zu Werke gehen, verfahren [20,33].
 
 - **RU:** — С *pra* V. приступать к делу, действовать [20,33].
   <sub>attested</sub>
 
-**— Mit {T18})** — Mit *abhipra* V. aufbrechen —, eine Reise antreten von (Abl.) [24]. von einer Stelle zu einer anderen sich schwingen [27,10].
+**— Mit {#aBipra#})** — Mit *abhipra* V. aufbrechen —, eine Reise antreten von (Abl.) [24]. von einer Stelle zu einer anderen sich schwingen [27,10].
 
 - **RU:** — С *abhipra* V. отправляться в путь —, предпринимать путешествие от (Abl.) [24]. перемещаться с одного места на другое [27,10].
   <sub>attested</sub>
@@ -4031,7 +4031,7 @@ GORR. ([2,120,14](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,1
 [KAIY.]
 — *samā*
  3) theilhaftig werden: *vastu*
-[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492)
+[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492 "Spr. (II) 2492: tapasālaṅkṛto jīvo yadyadvastu samīhate | tattadeva samāyāti bhuvanatritaye dhruvam || — Eine mit Kasteiungen geschmückte Seele wird sicher in den drei Welten alles dessen theilhaftig, was sie erstrebt.")
 — *nis*
  1) *cāpānniryāto bāṇavāraḥ*
 [PĀRŚVANĀTHAK. 4,141] nach [AUFRECHT], [HALĀY.] [Ind.] u. *vāra* .
@@ -4045,7 +4045,7 @@ Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 [KAIY.]
 — *samā*
  3) становиться причастным; приобщаться: *vastu*
-[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492)
+[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492 "Spr. (II) 2492: tapasālaṅkṛto jīvo yadyadvastu samīhate | tattadeva samāyāti bhuvanatritaye dhruvam || — Eine mit Kasteiungen geschmückte Seele wird sicher in den drei Welten alles dessen theilhaftig, was sie erstrebt.")
 — *nis*
  1) *cāpānniryāto bāṇavāraḥ*
 [PĀRŚVANĀTHAK. 4,141] nach [AUFRECHT], [HALĀY.] [Ind.] u. *vāra* .

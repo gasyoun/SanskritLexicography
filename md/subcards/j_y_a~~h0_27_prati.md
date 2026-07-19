@@ -22,7 +22,7 @@
 [ṚV. 3,45,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.045.html#rv03.045.04) *vāstoṣpate prati jānīhyasmān*
 [7,54,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.054.html#rv07.054.01) *prati tvā jānantu pitaraḥ paretam*
 [AV. 18,4,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.51) [52.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.52) *vācam*
-[19,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.04) *ādhānāpratijñāta* «чьё возжигание огня не было одобрено» т.е. «осталось безуспешным» (иначе пояснения в схолиях)
+[19,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.04) *ādhānāpratijñāta* «чье возжигание огня не было одобрено» т.е. «осталось безуспешным» (иначе пояснения в схолиях)
 [KĀTY. ŚR. 4,11,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,11,1) *kaccinna pāne dyūte vā krīḍāsu pramadāsu ca . pratijānanti pūrvāhṇe vyayaṃ vyasanajaṃ tava ..*
 [MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) *ṛṇe deye pratijñāte* «когда долг был признан» (противоп. *apahnava*)
 [M. 8,139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,139) *śataṃ pratijānīte*
@@ -153,7 +153,7 @@ Sch. bei [WILS.] [SĀṂKHYAK. S. 31.] *śabdaṃ nityamātiṣṭhate nityatven
 [P. 1,3,22](https://ashtadhyayi.com/sutraani/1/3/22), Vārtt.,
 Sch.
 
-- **RU:** — 5) «поднять что-либо (в разговоре), заговорить о чём-либо»: *tatparīkṣāṃ pratijānīte*
+- **RU:** — 5) «поднять что-либо (в разговоре), заговорить о чем-либо»: *tatparīkṣāṃ pratijānīte*
 схол. к [JAIM. 1,1,3.] *prathamaṃ tāvatsatkāryaṃ pratijānīte*
 схол. у [WILS.] [SĀṂKHYAK. S. 31.] *śabdaṃ nityamātiṣṭhate nityatvena pratijānīta ityarthaḥ*
 [P. 1,3,22](https://ashtadhyayi.com/sutraani/1/3/22), Вартт.,
@@ -182,7 +182,7 @@ Sch.
 
 - **RU:** — 7) «с грустью вспоминать о»; только в этом знач.
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
-[VOP. 23,37](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,37) признаётся act.. Для этого знач. у нас есть только одно место, а именно для мед.: *na cātītāni śocanti na caiva pratijānate*
+[VOP. 23,37](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,37) признается act.. Для этого знач. у нас есть только одно место, а именно для мед.: *na cātītāni śocanti na caiva pratijānate*
 [MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438)
   <sub>attested</sub>
 

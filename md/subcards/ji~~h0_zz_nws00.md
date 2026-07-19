@@ -20,12 +20,12 @@
 
 **NWS-4)** [Ved, unsp] siegen (ohne Obj), siegreich sein. [von den Waffen des Siegers.] im Spiele siegen, gewinnen. jemanden (Akk) besiegen, überwältigen. jemand (Akk) worin (Lok) besiegen, d. h. überflügeln, übertreffen. Schlachten gewinnen. etwas (Akk) ersiegen, erbeuten, erkämpfen, erobern. etwas (Akk) erlangen, gewinnen, ohne dass an einen eigentlichen Kampf zu denken ist. etwas (Akk) im Spiele gewinnen. Des: auf Beute ausgehen
 
-- **RU:** [Ved., без уточн.] побеждать (без объекта), быть победоносным. [об оружии победителя.] побеждать, выигрывать в игре. побеждать, одолевать кого-л. (Acc.). побеждать кого-л. (Acc.) в чём-л. (Loc.), т. е. превосходить, опережать. выигрывать битвы. добывать победой, захватывать, завоёвывать что-л. (Acc.). получать, обретать что-л. (Acc.), не имея в виду настоящей борьбы. выигрывать что-л. (Acc.) в игре. Дезид.: отправляться за добычей. [NWS: Graßmann 1873 (1996) : 486]
+- **RU:** [Ved., без уточн.] побеждать (без объекта), быть победоносным. [об оружии победителя.] побеждать, выигрывать в игре. побеждать, одолевать кого-л. (Acc.). побеждать кого-л. (Acc.) в чем-л. (Loc.), т. е. превосходить, опережать. выигрывать битвы. добывать победой, захватывать, завоевывать что-л. (Acc.). получать, обретать что-л. (Acc.), не имея в виду настоящей борьбы. выигрывать что-л. (Acc.) в игре. Дезид.: отправляться за добычей. [NWS: Graßmann 1873 (1996) : 486]
   <sub>attested</sub>
 
 **NWS-5)** [Ved, unsp] (I, II) siegen. ohne Obj: Sieger sein, gewinnen. ṚV 6,47,31. mit Obj: a) besiegen; b) erobern, erbeuten, gewinnen; c) die Schlacht gewinnen. ṚV 7,18,13, ṚV 1,32,12, ṚV 6,75,2. Des: in weiterem Sinn: sein Heil (Glück) versuchen, das Weite suchen. ṚV 10,4,3
 
-- **RU:** [Ved., без уточн.] (I, II) побеждать. без объекта: быть победителем, побеждать. ṚV 6,47,31. с объектом: a) побеждать; b) завоёвывать, захватывать, добывать; c) выигрывать битву. ṚV 7,18,13, ṚV 1,32,12, ṚV 6,75,2. Дезид.: в более широком смысле: испытывать свою удачу (счастье), спасаться бегством. ṚV 10,4,3. [NWS: Geldner 1907 : 66]
+- **RU:** [Ved., без уточн.] (I, II) побеждать. без объекта: быть победителем, побеждать. ṚV 6,47,31. с объектом: a) побеждать; b) завоевывать, захватывать, добывать; c) выигрывать битву. ṚV 7,18,13, ṚV 1,32,12, ṚV 6,75,2. Дезид.: в более широком смысле: испытывать свою удачу (счастье), спасаться бегством. ṚV 10,4,3. [NWS: Geldner 1907 : 66]
   <sub>attested</sub>
 
 **NWS-6)** [Ved, unsp] (jinoti) „faire perdre à qq'un qqch." (+ 2 Akk). JB
@@ -40,7 +40,7 @@
 
 **NWS-8)** *+ abhivi : overcome (diseases). ḥoernle 1893-1912 (ī) 4.34 .* [Śā, Med (s.v. abhivi-ji)] + ava (avajita): a) won by conquest; b) contemned. R iii, 54, 6, Lex(MW). Gen, unsp; MW : 98 (s.v. avajita)
 
-- **RU:** *+ abhivi : overcome (diseases). ḥoernle 1893-1912 (ī) 4.34 .* [Śā., Med (s.v. abhivi-ji)] + ava (avajita): a) добытое победой, завоёванное; b) презираемое. R iii, 54, 6, Lex(MW). Общ., без уточн. [NWS: MW : 98 (s.v. avajita)]
+- **RU:** *+ abhivi : overcome (diseases). ḥoernle 1893-1912 (ī) 4.34 .* [Śā., Med (s.v. abhivi-ji)] + ava (avajita): a) добытое победой, завоеванное; b) презираемое. R iii, 54, 6, Lex(MW). Общ., без уточн. [NWS: MW : 98 (s.v. avajita)]
   <sub>mixed</sub>
 
 **NWS-9)** *+ ā́ : erbeuten, durch khampṛ erṭerben; dhes: ṣu erlangen suchen.* [Ved, unsp] ā, Des: zu erobern-, gewinnen suchen. ṚV 1,163,7. Ved, unsp
@@ -60,7 +60,7 @@
 
 **NWS-12)** *– eṛṛacer. ṇenou 1997, ś. 673 .* [Gen, unsp (s.v. nir-ji)] – (nirjita): won, defeated. WiPa Ed, S. 86, Z. 31. Reg, unsp
 
-- **RU:** *– eṛṛacer. ṇenou 1997, ś. 673 .* [Общ., без уточн. (s.v. nir-ji)] – (nirjita): побеждённый, разгромленный. WiPa Ed, S. 86, Z. 31. Рег., без уточн. [NWS: Ensink 1964 : 101 (s.v. nirjita)]
+- **RU:** *– eṛṛacer. ṇenou 1997, ś. 673 .* [Общ., без уточн. (s.v. nir-ji)] – (nirjita): побежденный, разгромленный. WiPa Ed, S. 86, Z. 31. Рег., без уточн. [NWS: Ensink 1964 : 101 (s.v. nirjita)]
   <sub>attested</sub>
 
 **NWS-13)** *+ parā : a) be conḍuered, succumb; b) to submit to, be overcome by (abl.); c) to deṛeat in a laṭsuit. ṚV , phāṇ i, 4, 26 , ñ(ṃṭh) ii, 75 .* [Gen, unsp (s.v. parāji)] – vertreiben. Kāv, unsp, Kaschmir
@@ -70,7 +70,7 @@
 
 **NWS-14)** *– ( parājita ): davongejagt (?). ṃeyer 1926, ś. 27, Z. 25ṛṛ .* [Śā, Soc (s.v. parājita)] – (parājita): defeated. VyavaCin 206; ji (jita), bhaṅgin
 
-- **RU:** *– ( parājita ): davongejagt (?). ṃeyer 1926, ś. 27, Z. 25ṛṛ .* [Śā., Soc (s.v. parājita)] – (parājita): побеждённый, разбитый. VyavaCin 206; ji (jita), bhaṅgin. [NWS: Rocher 1956 : 410 (s.v. parājita)]
+- **RU:** *– ( parājita ): davongejagt (?). ṃeyer 1926, ś. 27, Z. 25ṛṛ .* [Śā., Soc (s.v. parājita)] – (parājita): побежденный, разбитый. VyavaCin 206; ji (jita), bhaṅgin. [NWS: Rocher 1956 : 410 (s.v. parājita)]
   <sub>attested</sub>
 
 **NWS-15)** *+ párā : 1) etṭas (ākk) verlieren; 2) besiegt ṭerden (med, pass).* [Ved, unsp] + vi: a) to be victorious or superior; b) (often in respectful salutation, e.g.) vijayasva rājan: 'be victorious' or 'hail to thee, O king!'. ṚV, AB. Gen, unsp
@@ -95,7 +95,7 @@
 
 **NWS-19)** [Reg, unsp] [jita] conquered. AgPa Ed, S. 377, Z. 15
 
-- **RU:** [Рег., без уточн.] [jita] побеждённый. AgPa Ed, S. 377, Z. 15. [NWS: Ensink 1964 : 70 (s.v. jita)]
+- **RU:** [Рег., без уточн.] [jita] побежденный. AgPa Ed, S. 377, Z. 15. [NWS: Ensink 1964 : 70 (s.v. jita)]
   <sub>attested</sub>
 
 **NWS-20)** *ji* [Śā, Ling] a technical term of Jainendra grammar, corresponding to saṃprasāraṇa of Pāṇini. JaineVyā 1.1.45
@@ -110,7 +110,7 @@
 
 **NWS-22)** *jinv* [Ved, unsp] (V) P: a) beleben, lebendig-, rege machen, in Bewegung, in raschen Gang bringen, beeilen, beschleunigen, fördern, rasch bringen; anspornen, feurig machen; b) wiederbeleben, erquicken; c) aufrichten, stärken, kräftigen, ermutigen, in frohe (gehobene) Stimmung versetzen; stärken an (Instr); d) wecken, erwecken; e) anregen, regsam machen, erwecken, beseelen, stärken, mit dem Nebensinn: erhören. ṚV 9,12,6, ṚV 1,118,2, ṚV 1,164,51, ṚV 1,112,6, ṚV 6,35,5, ṚV 3,3,7, ṚV 8,60,12, ṚV 7,104,6; jū. Ā: lebendig werden, sich regen, stark werden; sich in Bewegung setzen. ṚV 3,2,11, ṚV 4,21,8
 
-- **RU:** *jinv* [Ved., без уточн.] (V) Par.: a) оживлять, делать живым, подвижным, приводить в движение, в быстрый ход, торопить, ускорять, побуждать, быстро доставлять; подстёгивать, воспламенять; b) возвращать к жизни, освежать; c) поднимать, укреплять, придавать силу, ободрять, приводить в радостное (приподнятое) настроение; укреплять чем-л. (Instr.); d) будить, пробуждать; e) побуждать, оживлять, вдохновлять, укреплять, с оттенком значения: внимать (молитве). ṚV 9,12,6, ṚV 1,118,2, ṚV 1,164,51, ṚV 1,112,6, ṚV 6,35,5, ṚV 3,3,7, ṚV 8,60,12, ṚV 7,104,6; ср. jū. Ā.: оживать, приходить в движение, набираться сил; приходить в движение. ṚV 3,2,11, ṚV 4,21,8. [NWS: Geldner 1907 : 67 (s.v. ji)]
+- **RU:** *jinv* [Ved., без уточн.] (V) Par.: a) оживлять, делать живым, подвижным, приводить в движение, в быстрый ход, торопить, ускорять, побуждать, быстро доставлять; подстегивать, воспламенять; b) возвращать к жизни, освежать; c) поднимать, укреплять, придавать силу, ободрять, приводить в радостное (приподнятое) настроение; укреплять чем-л. (Instr.); d) будить, пробуждать; e) побуждать, оживлять, вдохновлять, укреплять, с оттенком значения: внимать (молитве). ṚV 9,12,6, ṚV 1,118,2, ṚV 1,164,51, ṚV 1,112,6, ṚV 6,35,5, ṚV 3,3,7, ṚV 8,60,12, ṚV 7,104,6; ср. jū. Ā.: оживать, приходить в движение, набираться сил; приходить в движение. ṚV 3,2,11, ṚV 4,21,8. [NWS: Geldner 1907 : 67 (s.v. ji)]
   <sub>attested</sub>
 
 **NWS-23)** *+ pra : beleben, erḍuicken, erṛrischen. ṚV 5,84,1 .* [Ved, unsp (s.v. ji)]

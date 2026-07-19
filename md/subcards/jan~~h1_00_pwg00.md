@@ -47,7 +47,7 @@
 [PAÑCAV. BR. 19,3,3.]
 [ĀŚV. ŚR. 11,4,7.]
 [WEBER, JYOT. 95.] *upajāta* вновь присоединившийся
-[AV. PRĀT. 4,10.] схол. zu [12. 46. 53.]
+[AV. PRĀT. 4,10.] схол. к [12. 46. 53.]
   <sub>attested</sub>
 
 **Nachtrag-vi-2)** — 2) *upajāyate* entsteht als Folge
@@ -66,6 +66,6 @@
 - **RU:** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* поэтому существует целомудрие у женщин
 [Spr. 3308.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3308) — caus. *prajāmevāsmā upajanayati*
 [PAÑCAV. BR. 19,3,3.] побудить
-[SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* так преим. пытается обнять её
+[SARVADARŚANAS. 140,10.] *saṃśleṣamupajanayati* так преим. пытается обнять ее
 [MĀLAV. 54,10.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?54,10)
   <sub>attested</sub>

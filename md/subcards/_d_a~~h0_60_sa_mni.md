@@ -89,7 +89,7 @@
 [32,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,19) [VIKR. 38,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?38,11) [PAÑCAT. 37,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,19) [BHĀG. P. 8,12,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,34) [SĀH. D. 20,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?20,14) *nityaṃ saṃnihitābhistu oṣadhībhiḥ phalaistathā . atithīnpūjayāmāsa*
 [MBH. 13,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.454) *vipatsaṃnihitā tasya*
 [HIT. I,68.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,68) *kāyaḥ saṃnihitāpāyaḥ*
-[202.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,202) *saṃnihitāstapovanasattvarakṣāyai bhavata*, так преим. готовый к, снаряжённый для
+[202.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,202) *saṃnihitāstapovanasattvarakṣāyai bhavata*, так преим. готовый к, снаряженный для
 [ŚĀK. 17,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?17,20)
   <sub>attested</sub>
 

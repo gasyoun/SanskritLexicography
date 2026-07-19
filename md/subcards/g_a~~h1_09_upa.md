@@ -68,7 +68,7 @@
 
 - **RU:** — 3) петь: *rathaṃtaraṃ sāmagāścopagānti*
 [MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
-[BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нём поют следующее
+[BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нем поют следующее
 [5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
   <sub>attested</sub>
 

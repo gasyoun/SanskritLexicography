@@ -28,7 +28,7 @@
 [ṚV. 9,82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.082.html#rv09.082.04) besuchen: *tasyāstīrthaṃ pracaritam*
 [R. 2,55,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,5)
 
-- **RU:** — 2) двигаться вперёд к, достигать (acc.): *avīrahā pra carā soma duryān*
+- **RU:** — 2) двигаться вперед к, достигать (acc.): *avīrahā pra carā soma duryān*
 [ṚV. 1,91,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.091.html#rv01.091.19) [7,31,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.10) *pra carā puṣṭimaccha*
 [8,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.06) *diva spaśaḥ pra carantīdamasya*
 [AV. 4,16,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.016.html#av04.016.04) *ye tīrthāni pracaranti sṛkāhastāḥ*

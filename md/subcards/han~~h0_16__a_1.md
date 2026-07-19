@@ -39,9 +39,9 @@
 [SĀH. D. 219,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?219,4) [17.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?219,17) — *chalāhata*
 [KATHĀS. 49,102](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,102) fehlerhaft für *chalādṛta* .
 
-- **RU:** — h) поражённым называется Висарга, когда он с предшествующим *a* стал *o*,
+- **RU:** — h) пораженным называется Висарга, когда он с предшествующим *a* стал *o*,
 [SĀH. D. 219,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?219,4) [17.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?219,17) — *chalāhata*
-[KATHĀS. 49,102](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,102) ошибочно вместо *chalādṛta* .
+[KATHĀS. 49,102](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,102) ошибочно вм. *chalādṛta* .
   <sub>attested</sub>
 
 **5)** — Vgl. *anāhata* (in der Bed. 2. auch

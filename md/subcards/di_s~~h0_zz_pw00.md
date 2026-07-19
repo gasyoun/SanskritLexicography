@@ -35,7 +35,7 @@
 
 **4b)** — b〉 angewiesen, zugewiesen, vorgezeichnet, festgesetzt, bestimmt.
 
-- **RU:** — b〉 указанный, назначенный, предписанный, установленный, определённый.
+- **RU:** — b〉 указанный, назначенный, предписанный, установленный, определенный.
   <sub>attested</sub>
 
 **4c)** — c〉 angewiesen, so v. a. der eine Anweisung erhalten hat.
@@ -172,7 +172,7 @@
 
 **prati-caus)** — Intens. *āva dediśam* Jmd Etwas berichten, mit doppelten Acc.
 
-- **RU:** — Intens. *āva dediśam* докладывать кому-либо о чём-либо, с двойным Acc.
+- **RU:** — Intens. *āva dediśam* докладывать кому-либо о чем-либо, с двойным Acc.
   <sub>attested</sub>
 
 **sam-prati)** — Mit *samava* hinweisen, in Bezug auf Etwas erklären.
@@ -194,7 +194,7 @@
 
 **vi-3)** — 3〉 Jmd (Dat.) Etwas (Acc.) anweisen, zuweisen. Statt. des Dat. auch Instr. [BHĀG. P.]
 
-- **RU:** — 3〉 кому-либо (Dat.) что-либо (Acc.) указывать, назначать. Вместо Dat. также Instr. [BHĀG. P.]
+- **RU:** — 3〉 кому-либо (Dat.) что-либо (Acc.) указывать, назначать. Вм. Dat. также Instr. [BHĀG. P.]
   <sub>attested</sub>
 
 **vi-4)** — 4〉 Etwas anzeigen, mittheilen, verkünden, lehren.
@@ -295,7 +295,7 @@
 
 **pari-2)** — 2〉 Jmd (Acc.) Etwas wiederberichten.
 
-- **RU:** — 2〉 кому-либо (Acc.) докладывать о чём-либо.
+- **RU:** — 2〉 кому-либо (Acc.) докладывать о чем-либо.
   <sub>attested</sub>
 
 **pari-3)** — 3〉 Jmd vorladen.
@@ -359,7 +359,7 @@
 
 **abhi-2)** — 2〉 Etwas aussagen, verkünden, Jmd (Dat. oder Gen.) zu wissen thun [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6). lehren.
 
-- **RU:** — 2〉 высказываться о чём-либо, возвещать, доводить до сведения кого-либо (Dat. или Gen.) [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6). обучать.
+- **RU:** — 2〉 высказываться о чем-либо, возвещать, доводить до сведения кого-либо (Dat. или Gen.) [PAÑCAT. 231,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?231,6). обучать.
   <sub>attested</sub>
 
 **abhi-3)** — 3〉 bestimmen, bezeichnen, nennen.
@@ -413,7 +413,7 @@
 
 **pra-4)** — 4〉 bezeichnen als, unter Etwas Etwas meinen; mit doppeltem Acc. *uddiṣṭa* bei den Lexicographen gemeint in der Bedeutung von (Loc.).
 
-- **RU:** — 4〉 обозначать как, подразумевать под чём-либо что-либо; с двойным Acc. *uddiṣṭa* у лексикографов подразумеваемый в значении (Loc.).
+- **RU:** — 4〉 обозначать как, подразумевать под чем-либо что-либо; с двойным Acc. *uddiṣṭa* у лексикографов подразумеваемый в знач. (Loc.).
   <sub>attested</sub>
 
 **pra-5)** — 5〉 von Jmd (Acc.) aussagen, verkünden, vorhersagen.
@@ -433,7 +433,7 @@
 
 **pra-8)** — 8〉 Absol. *uddiśya* mit Acc. mit Hinweisung auf, so v. a. (schleudern) gegen, auf (auch mit Hinzufügung von *lakṣyam* Ziel), (legen, setzen) auf, (sich begeben) nach, zu, (sprechen) zu, (die Rede richten) an, (Rede) von, (einladen) zu; für, wegen, in Rücksicht auf, in Anbetracht —, in Betreff —, im Namen von. *alaṃkārāngajān* u. s. w. *uddiśyoddiśya sarvebhyo dadau* so v. a. dem Einen dieses, dem Andern jenes.
 
-- **RU:** — 8〉 Absol. *uddiśya* с Acc. с указанием на, так преим. (метать) против, на (также с добавлением *lakṣyam* цель), (класть, ставить) на, (направляться) к, (говорить) кому-либо, (обращать речь) к, (речь) о, (приглашать) к; для, ради, с учётом —, принимая во внимание —, относительно —, от имени. *alaṃkārāngajān* и т.д. *uddiśyoddiśya sarvebhyo dadau*, так преим. одному это, другому то.
+- **RU:** — 8〉 Absol. *uddiśya* с Acc. с указанием на, так преим. (метать) против, на (также с добавлением *lakṣyam* цель), (класть, ставить) на, (направляться) к, (говорить) кому-либо, (обращать речь) к, (речь) о, (приглашать) к; для, ради, с учетом —, принимая во внимание —, относительно —, от имени. *alaṃkārāngajān* и т.д. *uddiśyoddiśya sarvebhyo dadau*, так преим. одному это, другому то.
   <sub>attested</sub>
 
 **upa-pra)** — Mit *abhyud* in Bezug auf Etwas hinaufzeigen [MĀN. GṚHY. 1,9. 17].

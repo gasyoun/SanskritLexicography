@@ -10,7 +10,7 @@
 [R. 3,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,5) [5,59,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,13)
 
 - **RU:** — *vinis*
- 1) выигрывать, добывать победой, завоёвывать: *ke lokā vai vinirjitāḥ*
+ 1) выигрывать, добывать победой, завоевывать: *ke lokā vai vinirjitāḥ*
 [MBH. 3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) *sa vinirjitya saṃgrāme himavantam*
 [2,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1037) *yuddhenāsmi vinirjitā*
 [R. 3,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,5) [5,59,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,13)

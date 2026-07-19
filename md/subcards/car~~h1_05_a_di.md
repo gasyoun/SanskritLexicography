@@ -5,5 +5,5 @@
 
 **1)** — *adhi* vgl. noch *adhicara* .
 
-- **RU:** — *adhi* ср. ещё *adhicara* .
+- **RU:** — *adhi* ср. еще *adhicara* .
   <sub>attested</sub>

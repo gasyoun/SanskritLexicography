@@ -13,7 +13,7 @@
 - **RU:** — caus. *mādayati, mādayate (tṛptiyoge*
 [DHĀTUP. 33,31](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=33)), *madayati (harṣaglepanayoḥ*
 [DHĀTUP. 19,54.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19) *garve glepane*
-[VOP.] *madayati* [опьянённый] *nīcaṃ saṃpattiḥ . madayati* [повергнутый в беду] *śatruṃ śūraḥ*
+[VOP.] *madayati* [опьяненный] *nīcaṃ saṃpattiḥ . madayati* [повергнутый в беду] *śatruṃ śūraḥ*
 [DURGĀD.] в [ŚKDR.]), *mandayati; amīmadanta, mādayadhyai*
 [ṚV. 1,167,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.01) [6,19,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.019.html#rv06.019.06) [22,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.022.html#rv06.022.03) [60,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.060.html#rv06.060.13)
   <sub>attested</sub>
@@ -69,7 +69,7 @@
 [1,82,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.082.html#rv01.082.02) [VS. 2,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,31) [7,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?7,5) [20,46.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,46) [KAUŚ. 6. 73. 88.] *mano mādayate yasya śastrābhyāsarasāyanāt*
 [DURGĀD.] im [ŚKDR.]
 
-- **RU:** a) наслаждаться, быть весёлым, чувствовать себя хорошо, позволять себе приятное: *savane mādayasva*
+- **RU:** a) наслаждаться, быть веселым, чувствовать себя хорошо, позволять себе приятное: *savane mādayasva*
 [ṚV. 7,29,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.02) [38,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.038.html#rv07.038.08) [39,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.039.html#rv07.039.05) *tve viśve amṛtā mādayante*
 [1,59,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.059.html#rv01.059.01) [184,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) *mādayasva sute sacā*
 [81,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.08) *yajñe barhiṣi*

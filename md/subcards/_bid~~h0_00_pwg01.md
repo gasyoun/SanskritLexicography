@@ -32,7 +32,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [KUMĀRAS. 2,7.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,7)
 [RĀJA-TAR. 5,260.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,260)
 [P. 4,1,94](https://ashtadhyayi.com/sutraani/4/1/94), схол.
-*bhinnaḥ paṇaḥ* разделённый Пана, тем самым преим. неполный
+*bhinnaḥ paṇaḥ* разделенный Пана, тем самым преим. неполный
 P., менее одного
 P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,248) *bhinna* дробь, дробное число
 [COLEBR. Alg. 13.]
@@ -104,7 +104,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 - **RU:** — 5) прерывать, нарушать: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* прерывать добродетельный образ жизни, тем самым преим. отступать от него
-[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) ср. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым преим. стёрт, изглажен
+[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) ср. *bhinnavṛtta*. * bhrūbhaṅgabhinnatilaka*, тем самым преим. стерт, изглажен
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
 [DAŚAK.] в [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
@@ -177,7 +177,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 - **RU:** — 9) изменять; pass. изменяться: *na — bhindanti mandāṃ gatim*
 [KUMĀRAS. 1,11.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,11) *yathemā nadyaḥ syandamānāḥ samudrāyaṇāḥ samudraṃ prāpyāstaṃ gacchanti bhidyete tāsāṃ nāmarūpe*
 [PRAŚNOP. 6,5.] *śuṣkabhinnamukhasvarāḥ*
-[YĀJÑ. 2,267.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,267) *bhinnasvara* имеющий изменённый, искажённый голос
+[YĀJÑ. 2,267.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,267) *bhinnasvara* имеющий измененный, искаженный голос
 [SUŚR. 1,308,14.] [2,85,13.]
 [Spr. 2048.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2048)
 [ŚĀK. CH. 140,10.] *bhinnakaṇṭhadhvani*
@@ -233,7 +233,7 @@ Schol. zu [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://a
 схол. *jaganmitho bhinnamabhinnamīśvarāt*
 [PRAB. 53,10.] в сочетании с дополнением: *bhramabhinnaṃ tu jñānamatrocyate pramā* знание, отличное от заблуждения
 [BHĀṢĀP. 133,8.] *āṅbhinno nipātaḥ* частица, отличная от *āṅ*
-схол. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [4,6.](https://ashtadhyayi.com/sutraani/1/4/6) [NĪLAK. 160.] различный, тем самым преим. отклоняющийся от обычного, нормального: *bhinnavartman*, тем самым преим. тот, кто сошёл с верного пути
+схол. к [P. 1,1,14.](https://ashtadhyayi.com/sutraani/1/1/14) [2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [4,6.](https://ashtadhyayi.com/sutraani/1/4/6) [NĪLAK. 160.] различный, тем самым преим. отклоняющийся от обычного, нормального: *bhinnavartman*, тем самым преим. тот, кто сошел с верного пути
 [Spr. 1707.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1707) *bhinnacāritradarśana*
 [R. GORR. 2,118,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,118,7) ср. *nātibhinna* .
   <sub>attested</sub>

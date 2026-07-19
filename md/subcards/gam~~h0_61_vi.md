@@ -71,7 +71,7 @@
 **4)** — 4) *vigata* glanzlos
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49) [TRIK. 3,3,184.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,184) [H. an. 3,297.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,297)
 
-- **RU:** — 4) *vigata* «лишённый блеска, тусклый»
+- **RU:** — 4) *vigata* «лишенный блеска, тусклый»
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49) [TRIK. 3,3,184.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,184) [H. an. 3,297.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,297)
   <sub>attested</sub>
 

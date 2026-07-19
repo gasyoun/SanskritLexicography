@@ -74,11 +74,11 @@
 [Spr. 2044.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2044) *sūcyā sūtraṃ yathā vastre saṃsārayati vāyakaḥ . tadvatsaṃsārasūtraṃ hi tṛṣṇāsūcyā nibadhyate ..*
 [MBH. 12,7878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7878) *ekanibaddhaveṇī* связанный вместе
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042) *dhanuṣī* привязываться
-[R. GORR. 2,31,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,31,28) [3,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,19) *dṛḍhataranibaddhamuṣṭi (kṛpāṇa)* прикреплённый
+[R. GORR. 2,31,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,31,28) [3,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,19) *dṛḍhataranibaddhamuṣṭi (kṛpāṇa)* прикрепленный
 [Spr. 1277.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1277) *saparivāro nibaddhaḥ* пойманный (в сеть)
 [PAÑCAT. 105,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?105,9) *arthairarthā nibadhyante gajairiva mahāgajāḥ*
 [Spr. 228.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?228) [2524.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2524) [3603.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3603)
-[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) *arthatastu nibadhyante mitrāṇi ripavastathā* — отсюда преим. польза создаёт нам друзей и врагов
+[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) *arthatastu nibadhyante mitrāṇi ripavastathā* — отсюда преим. польза создает нам друзей и врагов
 [Spr. 4274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4274) *ātmavantaṃ na karmāṇi nibadhnanti* оковывать, заковывать в цепи
 [BHAG. 4,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,41) [9,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,9) [14,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,7) *kṛtvāpi na nibadhyate*
 [4,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,22) [18,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,17) [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) [BHĀG. P. 4,26,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,8) [7,2,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,41) *yadyatpaśyāmi te gātram — tasmiṃstasmin — cakṣurmama nibadhyate*
@@ -124,11 +124,11 @@ furchen
 [KATHĀS. 34,203.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,203) *pāṣāṇacayanibaddhe kūpe* оправленный в камни
 [PAÑCAT. 211,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?211,5) *hemanibaddhacakra* инкрустированный золотом, — украшенный золотом
 [MBH. 12,1585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1585) [13,2785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2785) *mandaṃ prakhyāyamānena rūpeṇāpratimena tām . nibaddhāṃ (pinaddhāṃ*
-[R. 5,18,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,4)) *dhūmajālena prabhāmiva vibhāvasoḥ ..* завёрнутый в, покрытый
+[R. 5,18,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,4)) *dhūmajālena prabhāmiva vibhāvasoḥ ..* завернутый в, покрытый
 [3,2662.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,2662) *pañcadhātunibaddhā* составленный из
-[HARIV. 12030.](https://sanskrit-lexicon-scans.github.io/hariv?12030) *vicitrasadasatkarmanibaddhāḥ (jantavaḥ)* сопровождаемый, снабжённый
+[HARIV. 12030.](https://sanskrit-lexicon-scans.github.io/hariv?12030) *vicitrasadasatkarmanibaddhāḥ (jantavaḥ)* сопровождаемый, снабженный
 [KATHĀS. 27,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,77)
-[GAUḌAP.] к [SĀṂKHYAK. 59.] *nibaddha* заключённый, вставленный, содержащийся, находящийся на, — в: *dhārānibaddheva kalaṅkalekhā*
+[GAUḌAP.] к [SĀṂKHYAK. 59.] *nibaddha* заключенный, вставленный, содержащийся, находящийся на, — в: *dhārānibaddheva kalaṅkalekhā*
 [RAGH. 13,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,15) *aṣṭādaśasu mārgeṣu nibaddhāni (kāryāṇi)*
 [M. 8,3.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,3) *bhāṣyavārttikayornibaddhāni*
 [Verz. d. Oxf. H. No. 354.] *agrāhyamanibaddhaṃ ca vācā saṃparivarjayet* не выраженный в словах — отсюда преим. плохо выраженный
@@ -136,7 +136,7 @@ furchen
 [YĀJÑ. 3,135.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,135) соединять — отсюда преим. записывать, составлять, редактировать: *nibadhnīyāttathā sīmāṃ sarvāṃ stāṃścaiva nāmataḥ*
 [M. 8,255.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,255) *nibaddhaṃ puṇyamākhyānaṃ rāmāyaṇam*
 [R. GORR. 1,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,5,3) [VIKR. 36.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?36) [VARĀH. LAGHUJ. 1,2] в [Ind. St. 2,277.] [RĀJA-TAR. 1,8.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,8) [KATHĀS. 8,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,2) [5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,5) [HALL] во введении к [VĀSAVAD. 24.]
-[Verz. d. Oxf. H. 211,a,32.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?211) [261,a,28.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?261) *ādau nibadhnāti svāmyamityādinā* — отсюда преим. он начинает своё сочинение с *svāmyam* и т.д.
+[Verz. d. Oxf. H. 211,a,32.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?211) [261,a,28.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?261) *ādau nibadhnāti svāmyamityādinā* — отсюда преим. он начинает свое сочинение с *svāmyam* и т.д.
 [No. 602.] [KULL.] к [M. 8,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,142) *praṇītam = smṛtirūpeṇa nibaddham*
 [MALLIN.] к [KUMĀRAS. 6,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,31) рассуждать о: *svaśākhāvihitaiścāpi śākhāntaragatānvidhīn . kalpakārā vibadhnanti* (читай *niba˚) sarva eva vikalpitān ..*
 [KUMĀRILA] у [MÜLLER, SL. 178.]
@@ -190,9 +190,4 @@ furchen
 - **RU:** — 6) *nibaddha* относящийся к: *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.](https://sanskrit-lexicon-scans.github.io/hariv?2352) *kurukṣetranibaddhā (gāthā)*
 [MBH. 9,3029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3029)
-  <sub>attested</sub>
-
-**cross-ref)** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
-
-- **RU:** {T196}— ср. *nibanddhar* сл. und *anibaddha* .
   <sub>attested</sub>

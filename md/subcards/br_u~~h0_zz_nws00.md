@@ -10,7 +10,7 @@
 
 **NWS:2)** [Ved , unsp] jemandem (Dat) etwas (Akk) aussprechen. ohne Obj: reden, bes in dem Sinne: freundlich reden. zu jemandem (Dat) sagen, sprechen. [ mit wörtlich angeführter Rede und zwar so dass die Rede vorhergeht, und dann im Folgenden durch íti aufgenommen wird, oder so dass die Rede folgt, die dann bisweilen durch átha vorher angedeutet wird, oder so dass die Rede theilweise vorhergeht, theilweise folgt, oder es wird die Rede durch e. Pr z. B. káthā nur angedeutet, oder auch selbst diese Andeutung als sich von selbst verstehend ausgelassen, namentlich in Verbindungen wie ihá bravītu yás u tád cíketat „Wer dies weiss, der sage es hier". ] nennen, bezeichnen als (mit doppeltem Akk; im Pass mit doppeltem Nom), sagen dass dem besprochenen Gegenstand e. Eigenschaft oder e. Bez zukomme. jemand, etwas (Akk) lobend nennen, rühmend erwähnen
 
-- **RU:** высказывать кому-л. (Dat.) что-л. (Akk.); без объекта: говорить, в особ. в смысле: говорить ласково. говорить кому-л. (Dat.), сказать. [с буквально приводимой речью: либо речь предшествует и затем подхватывается словом íti, либо следует за основным высказыванием, иногда предвосхищённым словом átha, либо частично предшествует, частично следует; иногда речь лишь намечается формой, напр. káthā, или даже такое указание опускается как само собой разумеющееся, — особенно в оборотах типа ihá bravītu yás u tád cíketat «Кто это знает, тот пусть скажет здесь».] называть, обозначать как (с двойным Akk.; в Pass. с двойным Nom.), утверждать, что обсуждаемому предмету присуще какое-л. свойство или наименование. хвалебно называть кого-л., что-л. (Akk.), упоминать с похвалой
+- **RU:** высказывать кому-л. (Dat.) что-л. (Akk.); без объекта: говорить, в особ. в смысле: говорить ласково. говорить кому-л. (Dat.), сказать. [с буквально приводимой речью: либо речь предшествует и затем подхватывается словом íti, либо следует за основным высказыванием, иногда предвосхищенным словом átha, либо частично предшествует, частично следует; иногда речь лишь намечается формой, напр. káthā, или даже такое указание опускается как само собой разумеющееся, — особенно в оборотах типа ihá bravītu yás u tád cíketat «Кто это знает, тот пусть скажет здесь».] называть, обозначать как (с двойным Akk.; в Pass. с двойным Nom.), утверждать, что обсуждаемому предмету присуще какое-л. свойство или наименование. хвалебно называть кого-л., что-л. (Akk.), упоминать с похвалой
   <sub>attested</sub>
 
 **NWS:3)** [Ved , unsp] ( II U ) sagen, sprechen
@@ -65,7 +65,7 @@
 
 **NWS:13)** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* [Ved , unsp] + úpa : 1) jemand (Akk) anrufen; 2) jemand anrufen als, mit dopp. Akk oder bei der zweiten Pers auch mit dem Vok statt des zweiten Akk; 3) jemand (Akk) auffordern zu (Dat); 4) jemand (Akk) bitten um (Akk). Ved , unsp
 
-- **RU:** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* + úpa: 1) взывать к кому-л. (Akk.); 2) называть кого-л. (так-то), с двойным Akk. или, при 2-м лице, с Voc. вместо второго Akk.; 3) побуждать кого-л. (Akk.) к чему-л. (Dat.); 4) просить кого-л. (Akk.) о чём-л. (Akk.).
+- **RU:** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* + úpa: 1) взывать к кому-л. (Akk.); 2) называть кого-л. (так-то), с двойным Akk. или, при 2-м лице, с Voc. вм. второго Akk.; 3) побуждать кого-л. (Akk.) к чему-л. (Dat.); 4) просить кого-л. (Akk.) о чем-л. (Akk.).
   <sub>attested</sub>
 
 **NWS:14)** *– ( úpa bruvate ): they implore. ṚV ī,134,2 .* [Ved , unsp] + parā : „répliquer". JB . Ved , unsp

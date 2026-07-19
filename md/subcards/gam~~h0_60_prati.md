@@ -45,7 +45,7 @@
 [BENF. Chr. 66,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66) ist *mṛgaṃ prati gatāṃ spṛhām* zu lesen.
 
 - **RU:** — 3) *pratigata* изгладившийся из памяти, забытый: *tasya saṃdidihe buddhistāṃ dṛṣṭvā tadvinirṇaye .. adhītāṃ yogahīnasya vidyāṃ pratigatāmiva .*
-[R. 5,18,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,18) — Вместо *mṛgaṃ pratigatāṃ spṛhām*
+[R. 5,18,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,18) — Вм. *mṛgaṃ pratigatāṃ spṛhām*
 [R. 3,49,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,12)
 [BENF. Chr. 66,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?66) следует читать *mṛgaṃ prati gatāṃ spṛhām* .
   <sub>lexicographic</sub>

@@ -81,7 +81,7 @@
 [R. 3,13,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,18)
 [MBH. 3,2937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2937) *toyam* черпать воду
 [SUŚR. 1,70,6.]
-[MĀRK. P. 29,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,21) *yatra (girau) nityamupādatte vāsavaḥ paramaṃ jalam* (чтобы затем пролить дождём)
+[MĀRK. P. 29,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,21) *yatra (girau) nityamupādatte vāsavaḥ paramaṃ jalam* (чтобы затем пролить дождем)
 [MBH. 6,417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.417) *agnirupādīyamānaḥ, anupāttaḥ* улавливать
 [NIR. 7,23.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?7,23) *upādāya* схватив, удерживая так преим.: *aṣṭau siṃhānupādāya śūlāgre*
 [R. 3,7,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7) *deham, tanumupādā* принять облик, воплотиться
@@ -106,7 +106,7 @@
 Schol. zu [ṚV. PRĀT. 1,3,14.] *atra tailaśabdastilabhavasneharūpaṃ mukhyārthamupādāya sārṣapādisneheṣu vartate* ausser
 [SĀH. D. 14,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?14,6)
 
-- **RU:** — 6) присоединять, включать, принимать в расчёт; *upādāya* включая: *api preṣyānupādāya sarve sma susukhoṣitāḥ*
+- **RU:** — 6) присоединять, включать, принимать в расчет; *upādāya* включая: *api preṣyānupādāya sarve sma susukhoṣitāḥ*
 [R. 2,92,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,6) *cakāra na purā kaścinna kartā kariṣyati . upādāya surānsendrānidamanyatra rāghavāt ..*
 [5,95,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,95,32) [BHĀG. P. 3,14,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,17) *nāsikāmanu varṇo yo niṣpadyate svakīyasthānamupādāya* совместно с
 схол. к [ṚV. PRĀT. 1,3,14.] *atra tailaśabdastilabhavasneharūpaṃ mukhyārthamupādāya sārṣapādisneheṣu vartate* кроме

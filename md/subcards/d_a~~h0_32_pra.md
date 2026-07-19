@@ -133,7 +133,7 @@ Sch.
 [M. 8,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232) partic. *pratta*
 [P. 6,3,124](https://ashtadhyayi.com/sutraani/6/3/124), [Sch. 7,4,47],
 схол.
-[VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесённый, подаренный: *indrāya pradātre nirvapedyasmai prattamiva sanna pradīyeta*
+[VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесенный, подаренный: *indrāya pradātre nirvapedyasmai prattamiva sanna pradīyeta*
 [TS. 2,2,8,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,8,4)
 [ŚAT. BR. 12,9,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,2,11) *araṇyoḥ prattayoḥ*
 [LĀṬY. 4,9,15.]
@@ -141,14 +141,14 @@ Sch.
 [KAṬHOP. 1,25.]
 [BHĀG. P. 5,26,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,18) [6,16,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,3) [9,11,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,6)
 [BHAṬṬ. 3,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,50) *˚saṃdhyāmahābali*
-[KATHĀS. 25,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,135) *prattā* выданная замуж, обручённая
+[KATHĀS. 25,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,135) *prattā* выданная замуж, обрученная
 [ĀŚV. GṚHY. 4,4.]
 [PĀR. GṚHY. 3,10.]
 [NIR. 3,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,5)
 [YĀJÑ. 3,4.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,4)
 [KATHĀS. 26,276.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,276)
-[BHĀG. P. 3,22,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,24) *pradatta = pratta* Кар. zu [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
-[VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесённый, дарованный, подаренный, пожалованный
+[BHĀG. P. 3,22,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,24) *pradatta = pratta* Кар. к [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
+[VOP. 26,125.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,125) отданный, поднесенный, дарованный, подаренный, пожалованный
 [PAÑCAT. 25,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,4) [32,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?32,24) [49,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,3) *tena siṃhasyāmātyapadavī pradattā vyāghrasya ca śāyāpālatvam*
 [63,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,22) [KATHĀS. 25,198.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,198) [VID. 57.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?57) [334.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?334) [RĀJA-TAR. 4,5.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,5) *mayā tubhyamātmā pradatto 'yam*
 [PAÑCAT. 128,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,22) *pradattā* выданная замуж
@@ -186,7 +186,7 @@ Sch.
 [PAÑCAV. BR. 21,3.]
 [LĀṬY. 9,8,2.]
 [HARIV. 16198. fg.](https://sanskrit-lexicon-scans.github.io/hariv?16198) принуждать платить
-[KULL.] zu [M. 8,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) принуждать возвращать: *cauraṃ pradāpyāpahṛtam*
+[KULL.] к [M. 8,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,51) принуждать возвращать: *cauraṃ pradāpyāpahṛtam*
 [YĀJÑ. 2,270.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,270)
   <sub>attested</sub>
 

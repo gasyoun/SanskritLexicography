@@ -12,7 +12,7 @@ vgl. u. 2. *mārga* 2) f).
 
 - **RU:** — *vi*
  4)
-[Sp. 962, Z. 1] снизу und [Sp. 963, Z. 1] [ARJ. 7,8. 10,37] относятся к (11);
+[Sp. 962, Z. 1] снизу и [Sp. 963, Z. 1] [ARJ. 7,8. 10,37] относятся к (11);
 ср. u. 2. *mārga* 2) f).
 — 6) *vicaratyasamunnaddho yaḥ*
 [Spr. 3591.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3591)

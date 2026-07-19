@@ -29,12 +29,12 @@
 
 **caus-2)** — 2) es fehlen lassen an: *śaktiṃ na hāpayiṣyanti*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
-[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265) *svapauruṣamahāpayan*
+[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
 
 - **RU:** — 2) не проявлять, не давать чего-л., упускать: *śaktiṃ na hāpayiṣyanti*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
-[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265) *svapauruṣamahāpayan*
+[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
   <sub>attested</sub>
 
@@ -55,9 +55,9 @@
 [10,22,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,22)
 
 - **RU:** — 4) partic. *hāpita*
- a) повреждённый, пострадавший: залог
+ a) поврежденный, пострадавший: залог
 [YĀJÑ. 2,59.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,59)
-— b) лишённый (instr.). *asubhirindreṇa*
+— b) лишенный (instr.). *asubhirindreṇa*
 [BHĀG. P. 8,15,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,3) *trapayā*
 [10,22,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,22)
   <sub>attested</sub>

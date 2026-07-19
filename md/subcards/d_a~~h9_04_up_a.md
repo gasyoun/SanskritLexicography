@@ -15,7 +15,7 @@
 **6)** — 6) *garbhaśayyāmupādāya bhūjyate paurvadehikam* von dem Augenblicke an, dass man im Mutterleibe liegt,
 [Spr. 3692.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3692)
 
-- **RU:** — 6) *garbhaśayyāmupādāya bhūjyate paurvadehikam* с того момента, как [ребёнок] лежит во чреве матери,
+- **RU:** — 6) *garbhaśayyāmupādāya bhūjyate paurvadehikam* с того момента, как [ребенок] лежит во чреве матери,
 [Spr. 3692.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3692)
   <sub>attested</sub>
 

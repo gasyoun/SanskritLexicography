@@ -23,7 +23,7 @@
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22)
 [ŚIŚ. 9,58. 10,35.]
 
-- **RU:** — 3) выражать своё недовольство кем-либо (acc.)
+- **RU:** — 3) выражать свое недовольство кем-либо (acc.)
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22)
 [ŚIŚ. 9,58. 10,35.]
   <sub>attested</sub>

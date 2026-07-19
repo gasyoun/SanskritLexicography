@@ -27,7 +27,7 @@
 [MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) *viśaṃ kṣatrādvyavacchindyāt*
 [ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
 [13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
-[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличённый, различённый
+[6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* отличенный, различенный
 [TARKASAM̃GR. 58.] = *bhinna*
 [TRIK. 3,1,18.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,18)
   <sub>attested</sub>

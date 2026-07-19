@@ -32,7 +32,7 @@
 
 **ava_6_übertroffen)** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) bei Seite gelassen —, so v. a. übertroffen werden: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
 
-- **RU:** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) быть оставленным в стороне —, тем самым преим. быть превзойдённым: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
+- **RU:** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) быть оставленным в стороне —, тем самым преим. быть превзойденным: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
   <sub>attested</sub>
 
 **ava_7_kausativ)** [R. 5,2,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,11) — caus. zurückbleiben machen: *mā yāmādasmādapa jīhipo naḥ* so v. a. lass uns in diesem Lauf nicht dahintenbleiben

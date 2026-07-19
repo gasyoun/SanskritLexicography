@@ -30,7 +30,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
 [UPAL. 9,15.] *tatra daṇḍo 'vicāritaḥ* не подверженный никаким сомнениям
 [M. 8,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,295) *ityetadavicāritam*
 [MBH. 14,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1344) *na rāmagamane — vicārayitumarhasi*
-[R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* о чём долго колебаться?
+[R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* о чем долго колебаться?
 [HARIV. 3818.](https://sanskrit-lexicon-scans.github.io/hariv?3818) *na khalu kiṃcidvicāritamanayā*
 [MĀLAV. 49,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?49,9) *mā vicāraya* не колебайся долго
 [MBH. 1,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.763) [6668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6668)

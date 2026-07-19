@@ -65,7 +65,7 @@
 [8,43,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.19) *nainaṃ hinvantyapi vājineṣu* вызывать на
 [10,71,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.05) *āturam* побуждать
 [AV. 6,101,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.101.html#av06.101.02)
-[ŚAT. BR. 14,1,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,19) мед. приходить в движение, быть воодушевлённым и т.д., усердствовать: *tubhyaṃ hinvāno vasiṣṭa gā apaḥ*
+[ŚAT. BR. 14,1,2,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,19) мед. приходить в движение, быть воодушевленным и т.д., усердствовать: *tubhyaṃ hinvāno vasiṣṭa gā apaḥ*
 [ṚV. 2,36,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.036.html#rv02.036.01) *na hinvānāsastitirusta indram* стремительно, яростно
 [1,33,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.08) *hinve arvā*
 [4,7,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.007.html#rv04.007.11) *hinvānaṃ na vājayum*
@@ -144,7 +144,7 @@
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) zeigt. = *airśvasaṃgamayitāram* Comm.
 
 - **RU:** — 6) как необычная форма сюда мог бы относиться *hayantā* du. concitantes а именно equos
-[ṚV. 1,116,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.18) und *apāṃ napātamaśvinā hayantam (hayatam*, как читает наш рукоп., было бы погоняет)
-[TS. 1,6,12,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,12,4) однако текст ненадёжен, как
+[ṚV. 1,116,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.18) и *apāṃ napātamaśvinā hayantam (hayatam*, как читает наш рукоп., было бы погоняет)
+[TS. 1,6,12,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,12,4) однако текст ненадежен, как
 [AV. 19,42,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.042.html#av19.042.04) показывает. = *airśvasaṃgamayitāram* коммент.
   <sub>attested</sub>

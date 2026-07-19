@@ -20,7 +20,7 @@
 
 **6)** — 6〉 *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) fehlerhaft für *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) für *etānyo* *hanti*.
 
-- **RU:** — 6〉 *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) ошибочно вместо *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) вместо *etānyo* *hanti*.
+- **RU:** — 6〉 *āhatya* [KATHĀS. 119,17](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,17) ошибочно вм. *āhṛtya* *etānyāhanti* [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25) вм. *etānyo* *hanti*.
   <sub>lexicographic</sub>
 
 **7)** — 7〉 *āhata*
@@ -30,12 +30,12 @@
 
 **7a)** — a〉 geschlagen, gehämmert, gestossen, getroffen. *anilāhata* vom Winde getroffen, — bewegt; *jyotiṣkaṇāhata* von Funken getroffen, so v. a. angebrannt.
 
-- **RU:** — a〉 ударенный, прокованный, толчёный, поражённый. *anilāhata* поражённый ветром, — движимый ветром; *jyotiṣkaṇāhata* поражённый искрами, и потому преим. подожжённый.
+- **RU:** — a〉 ударенный, прокованный, толченый, пораженный. *anilāhata* пораженный ветром, — движимый ветром; *jyotiṣkaṇāhata* пораженный искрами, и потому преим. подожженный.
   <sub>attested</sub>
 
 **7b)** — b〉 angeschlagen (eine Trommel [ŚIŚ. 11,2]), in Bewegung gesetzt, zum Tönen gebracht (ein musikalisches Instrument).
 
-- **RU:** — b〉 ударенный (барабан [ŚIŚ. 11,2]), приведённый в движение, заставленный звучать (музыкальный инструмент).
+- **RU:** — b〉 ударенный (барабан [ŚIŚ. 11,2]), приведенный в движение, заставленный звучать (музыкальный инструмент).
   <sub>attested</sub>
 
 **7c)** — c〉 geschlagen, so v. a. geprägt oder gestempelt.
@@ -45,7 +45,7 @@
 
 **7d)** — d〉 verwundet, angerissen (Baum). *phālāhata* vom Pfluge angerissen, so v. a. gepflügt.
 
-- **RU:** — d〉 поранённый, надрезанный (дерево). *phālāhata* задетый плугом, и потому преим. вспаханный.
+- **RU:** — d〉 пораненный, надрезанный (дерево). *phālāhata* задетый плугом, и потому преим. вспаханный.
   <sub>attested</sub>
 
 **7e)** — e〉 aufgewirbelt (Staub) [ŚIŚ. 17,53].
@@ -55,12 +55,12 @@
 
 **7f)** — f〉 befestigt.
 
-- **RU:** — f〉 укреплённый.
+- **RU:** — f〉 укрепленный.
   <sub>attested</sub>
 
 **7g)** — g〉 getroffen, so v. a. zum Schaden berührt (in der Astronomie); überh. so v. a. heimgesucht, geschädigt.
 
-- **RU:** — g〉 поражённый, и потому преим. вредоносно затронутый (в астрономии); вообще и потому преим. поражённый бедствием, повреждённый.
+- **RU:** — g〉 пораженный, и потому преим. вредоносно затронутый (в астрономии); вообще и потому преим. пораженный бедствием, поврежденный.
   <sub>attested</sub>
 
 **7h)** — h〉 überzogen, — bestreut mit (im Comp. vorangehend) [VĀSAV. 165,4].
@@ -80,7 +80,7 @@
 
 **7l)** — l〉 getroffen heisst ein Visarga, wenn er mit einem vorangehenden *a* zu *o* geworden ist. Vgl. *upahata*.
 
-- **RU:** — l〉 «поражённым» называется Висарга, когда он с предшествующим *a* превратился в *o*. ср. *upahata*.
+- **RU:** — l〉 «пораженным» называется Висарга, когда он с предшествующим *a* превратился в *o*. ср. *upahata*.
   <sub>lexicographic</sub>
 
 **7m)** — m〉 ungereimt.
@@ -90,7 +90,7 @@
 
 **7n)** — n〉 *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) fehlerhaft für *chalādṛta*.
 
-- **RU:** — n〉 *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) ошибочно вместо *chalādṛta*.
+- **RU:** — n〉 *chalāhata* [KATHĀS. 49,10](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,10) ошибочно вм. *chalādṛta*.
   <sub>lexicographic</sub>
 
 **anu-han)** — Intens. schlagen auf.
@@ -117,17 +117,17 @@
 
 **abhi-han-2a)** — a〉 geschlagen, getroffen.
 
-- **RU:** — a〉 ударенный, поражённый.
+- **RU:** — a〉 ударенный, пораженный.
   <sub>attested</sub>
 
 **abhi-han-2b)** — b〉 beschädigt (Auge).
 
-- **RU:** — b〉 повреждённый (глаз).
+- **RU:** — b〉 поврежденный (глаз).
   <sub>attested</sub>
 
 **abhi-han-2c)** — c〉 getroffen, so v. a. unangenehm berührt, heimgesucht. *timirābhyāhatā* *niśā* so v. a. eine stockfinstere Nacht.
 
-- **RU:** — c〉 поражённый, и потому преим. неприятно задетый, поражённый бедствием. *timirābhyāhatā* *niśā* и потому преим. кромешная ночь.
+- **RU:** — c〉 пораженный, и потому преим. неприятно задетый, пораженный бедствием. *timirābhyāhatā* *niśā* и потому преим. кромешная ночь.
   <sub>attested</sub>
 
 **abhi-han-2d)** — d〉 gehemmt, gehindert.
@@ -147,7 +147,7 @@
 
 **a-han-corr)** — Mit *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] fehlerhaft für *niraghnan*.
 
-- **RU:** — С *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] ошибочно вместо *niraghnan*.
+- **RU:** — С *nirā*, *˚ghnan* [TĀṆḌYA-BR. 9,1,1] ошибочно вм. *niraghnan*.
   <sub>lexicographic</sub>
 
 **prati-han-1)** — Mit *pratyā*
@@ -164,12 +164,12 @@
 
 **prati-han-2a)** — a〉 abgewehrt, zurückgeschlagen.
 
-- **RU:** — a〉 отражённый, отбитый.
+- **RU:** — a〉 отраженный, отбитый.
   <sub>attested</sub>
 
 **prati-han-2b)** — b〉 von sich gewiesen, zurückgewiesen [JĀTAKAM. 28].
 
-- **RU:** — b〉 отвергнутый, отклонённый [JĀTAKAM. 28].
+- **RU:** — b〉 отвергнутый, отклоненный [JĀTAKAM. 28].
   <sub>attested</sub>
 
 **vi-han-1)** — Mit *vyā*
@@ -196,17 +196,17 @@
 
 **vi-han-4a)** — a〉 gestossen, getroffen.
 
-- **RU:** — a〉 толчёный, поражённый.
+- **RU:** — a〉 толченый, пораженный.
   <sub>attested</sub>
 
 **vi-han-4b)** — b〉 zurückgeschlagen.
 
-- **RU:** — b〉 отражённый.
+- **RU:** — b〉 отраженный.
   <sub>attested</sub>
 
 **vi-han-4c)** — c〉 zurückgewiesen.
 
-- **RU:** — c〉 отвергнутый, отклонённый.
+- **RU:** — c〉 отвергнутый, отклоненный.
   <sub>attested</sub>
 
 **vi-han-4d)** — d〉 gehemmt, gehindert [ŚIŚ. 16,83].
@@ -221,7 +221,7 @@
 
 **vi-han-4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) fehlerhaft für *vyāhṛta*.
 
-- **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) ошибочно вместо *vyāhṛta*.
+- **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) ошибочно вм. *vyāhṛta*.
   <sub>lexicographic</sub>
 
 **vi-han-note)** — Caus. s. u. *ghātay*.
@@ -273,12 +273,12 @@
 
 **sam-han-6b)** — b〉 zusammengefügt, verbunden.
 
-- **RU:** — b〉 соединённый, связанный.
+- **RU:** — b〉 соединенный, связанный.
   <sub>attested</sub>
 
 **sam-han-6c)** — c〉 geschlagen, getroffen,
 
-- **RU:** — c〉 ударенный, поражённый,
+- **RU:** — c〉 ударенный, пораженный,
   <sub>attested</sub>
 
 **sam-han-6d)** — d〉 angeschlagen (eine Trommel).
@@ -310,7 +310,7 @@
 
 **ud-han-5)** — 5〉 *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) fehlerhaft für *uddhṛtya*.
 
-- **RU:** — 5〉 *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) ошибочно вместо *uddhṛtya*.
+- **RU:** — 5〉 *uddhatya* [HARIV. 4408](https://sanskrit-lexicon-scans.github.io/hariv?4408) ошибочно вм. *uddhṛtya*.
   <sub>lexicographic</sub>
 
 **ud-han-6)** — 6〉 *uddhata*
@@ -365,12 +365,12 @@
 
 **ud-han-6k)** — k〉 in Bewegung versetzt, erregt. Richtiger *uddhuta* oder *uddhūta*.
 
-- **RU:** — k〉 приведённый в движение, возбуждённый. Правильнее *uddhuta* или *uddhūta*.
+- **RU:** — k〉 приведенный в движение, возбужденный. Правильнее *uddhuta* или *uddhūta*.
   <sub>attested</sub>
 
 **ud-han-6l)** — l〉 heraus gezogen, herausgeholt aus (Abl.). richtig v. l. *uddhṛta*.
 
-- **RU:** — l〉 извлечённый, вынутый из (Abl.). Правильно v. l. *uddhṛta*.
+- **RU:** — l〉 извлеченный, вынутый из (Abl.). Правильно v. l. *uddhṛta*.
   <sub>attested</sub>
 
 **ud-han-special)** — Mit *upod* in *upodghāta*.
@@ -417,12 +417,12 @@
 
 **udud-han-6)** — 6〉 in Bewegung versetzt, erregt. Richtiger wohl *samuddhuta*.
 
-- **RU:** — 6〉 приведённый в движение, возбуждённый. Правильнее, вероятно, *samuddhuta*.
+- **RU:** — 6〉 приведенный в движение, возбужденный. Правильнее, вероятно, *samuddhuta*.
   <sub>attested</sub>
 
 **udud-han-7)** — 7〉 herausgenommen, — aus (Abl.). Richtig *samuddhṛta*.
 
-- **RU:** — 7〉 вынутый, извлечённый из (Abl.). Правильно *samuddhṛta*.
+- **RU:** — 7〉 вынутый, извлеченный из (Abl.). Правильно *samuddhṛta*.
   <sub>attested</sub>
 
 **udud-han-8)** — 8〉 herbeigeschossen, herbeigeflogen [NĪLAK. zu MBH. 12,342,114]. Der Text *samuddhūta* v. l. *samudbhūta*.

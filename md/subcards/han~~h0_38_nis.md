@@ -26,10 +26,10 @@
 [19,50,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.01) [NIR. 12,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?12,14) зубы
 [ŚAT. BR. 1,7,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,7) [1,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,17) *garbham*
 [9,5,1,62.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,62) [14,9,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,22) [PAÑCAV. BR. 19,4,10. fg.] убивать: *kaṃsaṃ yo nirjaghāna*
-[CHANDOM. 160.] вместо *nirjaghnuḥ*
+[CHANDOM. 160.] вм. *nirjaghnuḥ*
 [MBH. 8,849.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.849)
 [BHĀG. P. 4,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,34) [6,9,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,18) бомбейские [рукописи] читают изд. правильнее *nijaghnus*.* nirhatya*
-[RĀJA-TAR. 5,432](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,432) вероятно, ошибочно вместо *nirhṛtya*.
+[RĀJA-TAR. 5,432](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,432) вероятно, ошибочно вм. *nirhṛtya*.
   <sub>attested</sub>
 
 **2)** — 2) loswerfen auf (mit gen. wie auch sonst bei Verbis des Zielens): *mahato *

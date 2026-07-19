@@ -35,7 +35,7 @@ vgl. u. II, 2 und unter — *vyati* .
 
 **1c)** — c) *jāyate* (vgl. u. simpl., *pra, vi* und *sam*), ep. auch *˚ti* .
 
-- **RU:** — c) *jāyate* (ср. u. simpl., *pra, vi* und *sam*), ep. также *˚ti*.
+- **RU:** — c) *jāyate* (ср. u. simpl., *pra, vi* и *sam*), ep. также *˚ti*.
   <sub>attested</sub>
 
 **2) allgemeine Formen)** — 2) allgemeine Formen: *jajāna, jajñatus, jajñus*
@@ -64,7 +64,7 @@ vgl. u. II, 2 und unter — *vyati* .
 
 - **RU:** — 3) caus. *janayati*
 [DHĀTUP. 19,63.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=19)
-[VOP. 18,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,22) *˚te; ajījanat, jījanam, ajījane, jījananta; janayāṃ cakāra* und *cakre; janayitavai*
+[VOP. 18,22.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,22) *˚te; ajījanat, jījanam, ajījane, jījananta; janayāṃ cakāra* и *cakre; janayitavai*
 ([ŚAT. BR. 14,9,4,13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,13)). По [P. 1,3,86](https://ashtadhyayi.com/sutraani/1/3/86) и [VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2) caus. всегда act., однако это относится лишь к позднейшей прозе.
   <sub>attested</sub>
 

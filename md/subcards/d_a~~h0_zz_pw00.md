@@ -10,7 +10,7 @@
 
 **1)** — 1〉 geben, schenken, hingeben; mit Acc. oder partitivem Gen. der Sache und Dat., Gen. oder Loc. der Person. *kanyām* eine Tochter Jmd zur Frau (*bhāryām*, das jedoch gewöhnlich fehlt) geben. *datta* von einem Sohne, so v. a. von andern Eltern, überlassen.
 
-- **RU:** — 1〉 давать, дарить, отдавать; с Acc. или партитивным Gen. предмета и Dat., Gen. или Loc. лица. *kanyām* отдать дочь кому-л. в жёны (*bhāryām*, что, однако, обычно опускается) дать. *datta* о сыне, так преим. уступить другим родителям.
+- **RU:** — 1〉 давать, дарить, отдавать; с Acc. или партитивным Gen. предмета и Dat., Gen. или Loc. лица. *kanyām* отдать дочь кому-л. в жены (*bhāryām*, что, однако, обычно опускается) дать. *datta* о сыне, так преим. уступить другим родителям.
   <sub>attested</sub>
 
 **2)** — 2〉 hergeben, abtreten (mit Instr. des Preises). *panthānam* oder *mārgam* Jmd den Weg abtreten, so v. a. freien Durchgang geben, aus dem Wege gehen.
@@ -55,7 +55,7 @@
 
 **10)** — 10〉 legen —, stellen —, setzen auf, an oder in (Loc.), anlegen (auch in medic. Sinne), anbringen [BHĀVAPR. 2,89]. beifügen (bei Ausführung eines Receptes) [ebend.] und [92]. *kare kapolam* die Wange auf die Hand legen, so v. a. die W. mit der H. stützen [KĀRAṆḌ. 64,1]. *argalam* einen Riegel vorschieben, *pāvakam* Feuer anlegen an (Loc.) *agnin* an Jmd (Loc.) das Feuer anlegen, so v. a. verbrennen, *śāram* so v. a. eine Figur (im Spiele) ziehen, *garam* oder *viṣam* Jmd (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) oder Acc.!) Gift eingeben.
 
-- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в мед. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щёку на руку,| так преим. подпереть слово рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так преим. сжигать,| *śāram* так преим. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
+- **RU:** — 10〉 класть —, ставить —, помещать на, к или в (Loc.), прикладывать (также в мед. смысле), прикреплять [BHĀVAPR. 2,89]. добавлять (при приготовлении снадобья) [ebend.] и [92]. *kare kapolam* положить щеку на руку,| так преим. подпереть слово рукою H. [KĀRAṆḌ. 64,1]. *argalam* задвинуть засов,| *pāvakam* поджечь (Loc.) *agnin* поджечь кого-л. (Loc.), так преим. сжигать,| *śāram* так преим. передвинуть фигуру (в игре), *garam* или *viṣam* дать кому-л. (Gen. [105,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105) или Acc.!) яд.
   <sub>attested</sub>
 
 **11)** — 11〉 seine Schritte, sein Auge, sein Ohr, seine Gedanken richten auf (Loc.).
@@ -95,7 +95,7 @@
 
 **15)** — 15〉 Partic. *datta* ausser gegeben u. s. w. auch *beschützt (vgl. **5.** *dā*) und *geehrt.
 
-- **RU:** — 15〉 Partic. *datta* кроме данный и т.д. также *защищённый (ср. **5.** *dā*) и *почтённый.
+- **RU:** — 15〉 Partic. *datta* кроме данный и т.д. также *защищенный (ср. **5.** *dā*) и *почтенный.
   <sub>attested</sub>
 
 **Kaus.)** — Caus. *dāpayati* mit doppeltem Acc. oder mit Weglassung des sich von selbst versehenden Acc. bewegen, zwingen, heissen, auffordern.
@@ -130,7 +130,7 @@
 
 **Kaus.6)** — 6〉 hinzustellen, vorzuschieben [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). aufzulegen —, aufzutragen auf (Loc.).
 
-- **RU:** — 6〉 ставить, выдвигать вперёд [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). накладывать —, наносить на (Loc.).
+- **RU:** — 6〉 ставить, выдвигать вперед [KATHĀS. 12,160](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,160). накладывать —, наносить на (Loc.).
   <sub>attested</sub>
 
 **Kaus.7)** — 7〉 zu thun, zu vollbringen, auszuführen, zu veranstalten. Auch so v. a. Jmd (Gen.) Etwas (Acc.) auftragen und Etwas erzwingen.
@@ -215,7 +215,7 @@
 
 **ādā.1)** — 1〉 in Empfang nehmen, erhalten, in Besitz nehmen, empfangen von (Loc., Instr. oder Abl.). *garbham* eine Leibesfrucht empfangen.
 
-- **RU:** — 1〉 принимать, получать, брать в своё владение, получать от (Loc., Instr. или Abl.). *garbham* принять плод во чрево, зачать.
+- **RU:** — 1〉 принимать, получать, брать в свое владение, получать от (Loc., Instr. или Abl.). *garbham* принять плод во чрево, зачать.
   <sub>attested</sub>
 
 **ādā.2)** — 2〉 nehmen, sich zueignen, an sich ziehen, Jmd (Abl.) wegnehmen, entziehen, entreissen, rauben.

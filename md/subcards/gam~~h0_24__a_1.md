@@ -22,7 +22,7 @@
 
 - **RU:** 1) дать прийти, привести, доставить: *ā gamaya*
 [AV. 6,81,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.081.html#av06.081.02) *āgamitāpi vidūram*
-[GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3) в повествовании дать кому-л. прибыть, рассказать о чьём-л. прибытии: *rājānamāgamayati = rājāgamanamācaṣṭe*
+[GĪT. 12,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,3) в повествовании дать кому-л. прибыть, рассказать о чьем-л. прибытии: *rājānamāgamayati = rājāgamanamācaṣṭe*
 [P. 3,1,26](https://ashtadhyayi.com/sutraani/3/1/26), Вартт. 2, схол.
   <sub>attested</sub>
 
@@ -43,7 +43,7 @@
 [VIKR. 57,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,18) *āgamita* gelesen
 [JAṬĀDH.] im [ŚKDR.]
 
-- **RU:** — 3) получить весть, известие о чём-л. (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
+- **RU:** — 3) получить весть, известие о чем-л. (acc.): *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
 [MBH. 5,132.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.132) *tadapyāgamitaṃ mayā*
 [1,5434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5434) *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
 [VIKR. 57,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,18) *āgamita* читается

@@ -10,10 +10,10 @@
 
 **1)** 1) vgl. noch *madhudhā, puṣpadha, bhāgadha* .
 
-- **RU:** 1) ср. ещё *madhudhā, puṣpadha, bhāgadha* .
+- **RU:** 1) ср. еще *madhudhā, puṣpadha, bhāgadha* .
   <sub>attested</sub>
 
 **2)** — 2) vgl. noch *purodhā* .
 
-- **RU:** — 2) ср. ещё *purodhā* .
+- **RU:** — 2) ср. еще *purodhā* .
   <sub>attested</sub>

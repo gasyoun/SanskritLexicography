@@ -157,12 +157,12 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) *yaccānyadapi kartavyaṃ tadvidhatsva*
 [2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
 [MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] схол. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
-схол. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] схол. к [KAP. 1,16. Einl.] к [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *svaśabdena yatra guṇavṛddhī vidhīyete*
+схол. к [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] к [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*
 [M. 9,157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,157) [119.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,119) *deśo vidhīyatām — yatra vatsyāmahe vayam*
-[R. 1,50,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,50,4) *ye dve* (Sonne und Mond) *kālaṃ vidhattaḥ*
+[R. 1,50,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,50,4) *ye dve* (Sonne и Mond) *kālaṃ vidhattaḥ*
 [ŚĀK. 1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?1) *saṃketakaṃ triyāmāyāṃ tṛtīye prahare vyadhāt*
 [KATHĀS. 4,39.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,39) *ekaḥ śarāvaḥ saktūnāmekaḥ pratyahamambhasaḥ . śakaṭālasya tatrāntaḥ — vyadhīyata*
 [KATHĀS. 4,122.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,122) *vṛttim* определять, устанавливать, обеспечивать кому-либо средства к существованию
@@ -291,7 +291,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [MBH. 3,2173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2173) [2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) *tathā vidhatsva kalyāṇi yathā śreyo hi no bhavet* устрой так, чтобы
 [2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2520) *yathā kālātyayo na syāttathā sādhu vidhīyatām*
 [R. 1,2,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,8)
-[RAGH. 3,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,66) *˚toyakṣudbhayāni vidadhāti* причинённый, произведённый
+[RAGH. 3,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,66) *˚toyakṣudbhayāni vidadhāti* причиненный, произведенный
 [VARĀH. BṚH. S. 7,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,18) *(śaśiputraḥ) sapramadaṃ śayanaṃ vidhatte*
 [104,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,23) *arjuno vidadhe mṛtyum*
 [R. 1,75,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,23) *sādhye siddhirvidhīyatām*

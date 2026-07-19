@@ -35,7 +35,7 @@
 [18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137)
 
 - **RU:** — *upa*
- 1) жить от, существовать благодаря, содержаться за счёт, извлекать пользу из; с acc.: *apāṃ ca khalu vā oṣadhīnāṃ ca rasamupajīvāmaḥ*
+ 1) жить от, существовать благодаря, содержаться за счет, извлекать пользу из; с acc.: *apāṃ ca khalu vā oṣadhīnāṃ ca rasamupajīvāmaḥ*
 [TS. 2,1,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,9,2) *paśūn*
 [7,3,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,5,1) [6,5,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,5,3,3) *ūrjam*
 [5,4,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,4,7,3) [6,2,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,10,3) *itaḥ pradānamupajīvanti devāḥ*

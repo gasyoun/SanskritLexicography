@@ -1,4 +1,4 @@
-## dah~~h0_zz_pw
+## dah
 
 `dah~~h0_zz_pw`
 
@@ -12,7 +12,7 @@
 
 **1a)** — a〉 verbrennen, durch Feuer verzehren, brennen (auch in medic. Sinne). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
 
-- **RU:** — a〉 сжигать, испепелять огнём, жечь (также в мед. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
+- **RU:** — a〉 сжигать, испепелять огнем, жечь (также в мед. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
   <sub>attested</sub>
 
 **1b)** — b〉 verbrennen, versengen, so v. a. vollständig vernichten. *adhākṣam* [{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
@@ -32,7 +32,7 @@
 
 **2b)** — b〉 durch Feuer entfernt werden, getilgt werden, zu Nichte werden überh.
 
-- **RU:** — b〉 быть устраняемым огнём, изглаживаться, обращаться в ничто вообще
+- **RU:** — b〉 быть устраняемым огнем, изглаживаться, обращаться в ничто вообще
   <sub>attested</sub>
 
 **2c)** — c〉 von innerer Glut verzehrt werden, — vergehen, geplagt —, gequält werden, sich abhärmen.
@@ -46,17 +46,17 @@
 
 **a)** — a〉 verbrannt, angebrannt.
 
-- **RU:** — a) сожжённый, обожжённый.
+- **RU:** — a) сожженный, обожженный.
   <sub>attested</sub>
 
 **b)** — b〉 in Glut versetzt, verzehrt, gemartert, gequält.
 
-- **RU:** — b〉 повергнутый в жар, испепелённый, измученный, истерзанный.
+- **RU:** — b〉 повергнутый в жар, испепеленный, измученный, истерзанный.
   <sub>attested</sub>
 
 **d)** — d〉 verbrannt, so v. a. ohne Saft und Kraft.
 
-- **RU:** — d) сожжённый, отсюда преим. без сока и силы.
+- **RU:** — d) сожженный, отсюда преим. без сока и силы.
   <sub>attested</sub>
 
 **e)** — e〉 unheilvoll.
@@ -192,15 +192,15 @@
 
 - **RU:** — 2〉 нагревать, накалять [ĀPAST. 1,17,10].
 — С *ava* сгорать, спекаться от огня. *avadagdha* также поврежденный огнем [CARAKA. 5,12].
-— С *ā* в *ādahana ādagdhvā* [PAÑCAT. 1,392](https://sanskrit-lexicon-scans.github.io/pantankose/app2?1,392) ошибочно вместо *adagdhvā*.
+— С *ā* в *ādahana ādagdhvā* [PAÑCAT. 1,392](https://sanskrit-lexicon-scans.github.io/pantankose/app2?1,392) ошибочно вм. *adagdhvā*.
 — Caus. Pass. обжигаться, сгорать.
 — С *abhyā* в *abhyādāhya* ([Nachtr. 2]).
 — С *upa* подпаливать, поджигать [{{MBH. 7,211,17->MBH. 12,211,17||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}]. поджигать, поднести огонь к (Acc.).
-— С *ni* сжигать дотла, испепелять огнём. Pass. быть сожжённым, сгорать.
-— С *nis* выгорать, сгорать, быть испепелённым огнём, уничтожаться полностью. Pass. также съёживаться, увядать. *tuṣāreṇa padminī* [VIKRAMĀṄKAC. 16,14].
+— С *ni* сжигать дотла, испепелять огнем. Pass. быть сожженным, сгорать.
+— С *nis* выгорать, сгорать, быть испепеленным огнем, уничтожаться полностью. Pass. также съеживаться, увядать. *tuṣāreṇa padminī* [VIKRAMĀṄKAC. 16,14].
 — Caus. давать сжечь, велеть сжечь.
 — С *anunis* сжигать один за другим, по очереди.
-— С *vinis* сжигать, испепелять огнём, уничтожать полностью.
+— С *vinis* сжигать, испепелять огнем, уничтожать полностью.
 — С *pari* обжигать вокруг, охватывать пламенем, сжигать. Pass. гореть, пылать.
 — С *saṃpari* Pass. (*˚dahyati*) сгорать, изнывать от зноя.
 — С *pra* сжигать, опалять, уничтожать. Pass. воспламеняться, гореть, сгорать. *pradagadha* сжигает, уничтожает.
@@ -228,11 +228,11 @@
 
 **b)** — b〉 durch Brand beschädigen, anbrennen.
 
-- **RU:** — b〉 повреждать огнём, подпаливать.
+- **RU:** — b〉 повреждать огнем, подпаливать.
 
 **c)** — c〉 verbrennen, versengen, durch Feuer vernichten.
 
-- **RU:** — в) жечь, спалять, уничтожать огнём.
+- **RU:** — в) жечь, спалять, уничтожать огнем.
   <sub>attested</sub>
 
 **d)** — d〉 zersetzen, verderben [CARAKA. 6,18].
@@ -277,12 +277,12 @@
 
 **a)** — a〉 verbrannt.
 
-- **RU:** — а) сожжённый.
+- **RU:** — а) сожженный.
   <sub>attested</sub>
 
 **b)** — b〉 entzündet.
 
-- **RU:** — б) воспалённый.
+- **RU:** — б) воспаленный.
   <sub>attested</sub>
 
 **c)** — c〉 von innerlichem Feuer, von der Galle, welche die Speisen im Magen kocht, verarbeitet, verdaut.
@@ -319,7 +319,7 @@
 
 **a)** — a〉 verbrannt werden.
 
-- **RU:** — a) быть сожжённым.
+- **RU:** — a) быть сожженным.
   <sub>attested</sub>
 
 **b)** — b〉 brennen, glühen.

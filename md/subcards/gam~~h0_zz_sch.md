@@ -10,7 +10,7 @@
 
 **SCH-Nachtr. mit ā, āgamya)** Mit ā, āgamya Absol. so v.a. für, behufs; mit Akk. [Divyāvad. 95,10]; mit Gen. 405,10.
 
-- **RU:** С ā, āgamya Absol. то есть в значении: для, ради; с Acc. [Divyāvad. 95,10]; с Gen. 405,10.
+- **RU:** С ā, āgamya Absol. то есть в знач.: для, ради; с Acc. [Divyāvad. 95,10]; с Gen. 405,10.
   <sub>lexicographic</sub>
 
 **SCH-Nachtr. mit ˚parā)** Mit ˚parā "die"? [Harṣac. 243,3; 252,9.]

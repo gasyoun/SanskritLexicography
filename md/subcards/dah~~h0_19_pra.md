@@ -54,7 +54,7 @@ vernichtet
 - **RU:** [PAÑCAT. I,191.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,191) — pass. «загораться, гореть, сгорать»: *vṛkṣasyeva pradahyataḥ*
 [MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *vastraṃ pradahyate*
 [VARĀH. BṚH. S. 72,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,6) *tasyāḥ kṛpaṇacakṣurbhyāṃ pradahyetāpi medinī*
-[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) *pradagdha* «сожжённый»
+[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) *pradagdha* «сожженный»
 [ŚAT. BR. 11,1,6,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,6,33)
 [R. 3,42,53.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,53)
 [VARĀH. BṚH. S. 72,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,2) *yena pūrvaṃ pradagdhāni śatrusainyāni*

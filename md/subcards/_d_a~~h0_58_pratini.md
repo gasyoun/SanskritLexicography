@@ -25,7 +25,7 @@
 [GAUḌAP.] zu [SĀṂKHYAK. 16] ist zu lesen *˚śeṣaṃ prati nidhāya* .
 
 - **RU:** — 2) распорядиться, приказать: *tathā pratinidhāya*
-[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) — Вместо *guṇāśrayaviśeṣaṃ pratinidhāya* у
+[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) — Вм. *guṇāśrayaviśeṣaṃ pratinidhāya* у
 [GAUḌAP.] к [SĀṂKHYAK. 16] следует читать *˚śeṣaṃ prati nidhāya* .
   <sub>attested</sub>
 

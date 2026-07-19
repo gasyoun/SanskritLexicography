@@ -8,7 +8,7 @@
 [ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13)
 
 - **RU:** — *ati*, partic. *˚hata*
-1) прикреплённый, закреплённый: *tasya hṛdaye pādāvatihatau*
+1) прикрепленный, закрепленный: *tasya hṛdaye pādāvatihatau*
 [ŚAT. BR. 10,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,13)
   <sub>attested</sub>
 
@@ -16,7 +16,7 @@
 [CARAKA 10,9.] — desid. entkommen wollen
 [AIT. UP. 3,3.] vielleicht ist *atyajigāṃsat* st. *atyajighāṃsat* zu lesen.
 
-- **RU:** 2) погублённый, уничтоженный: *vyāyāmātihata*
+- **RU:** 2) погубленный, уничтоженный: *vyāyāmātihata*
 [CARAKA 10,9.] — desid. желать спастись
 [AIT. UP. 3,3.] возможно, следует читать *atyajigāṃsat* вместо *atyajighāṃsat*.
   <sub>attested</sub>

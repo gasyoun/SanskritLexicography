@@ -9,8 +9,8 @@
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
 
 - **RU:** — *vi* «выжигать» (рану и т.д.)
-[SUŚR. 1,100,21.] «повредить огнём, обжигать»: *mainamagne vi daho mābhi śocaḥ*
-[ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) «сжигать, уничтожать огнём»: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
+[SUŚR. 1,100,21.] «повредить огнем, обжигать»: *mainamagne vi daho mābhi śocaḥ*
+[ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) «сжигать, уничтожать огнем»: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
   <sub>attested</sub>
 
@@ -41,7 +41,7 @@
 [R. SCHL. 2,7,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,7,14) — partic. *vidagdha*
 
 - **RU:** — 3) «раздуваться от важности, важничать»: *vṛthā saubhāgyamānena durbhage tvaṃ vidahyase . girinadyā iva srotastava saubhāgyamasthiram ..*
-[R. GORR. 2,6,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,12) Вместо этого: *saubhāgyena vikatthase*
+[R. GORR. 2,6,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,12) Вм. этого: *saubhāgyena vikatthase*
 [R. SCHL. 2,7,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,7,14) — partic. *vidagdha*
   <sub>attested</sub>
 
@@ -50,7 +50,7 @@
 [KAUŚ. 60. 83.]
 [NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26)
 
-- **RU:** 1) «сожжённый»: *tasyai ha (vṛkalāyai) vidagdhāyai sṛgālaḥ saṃbhavati*
+- **RU:** 1) «сожженный»: *tasyai ha (vṛkalāyai) vidagdhāyai sṛgālaḥ saṃbhavati*
 [ŚAT. BR. 12,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,5) *a˚*
 [KAUŚ. 60. 83.]
 [NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26)
@@ -59,7 +59,7 @@
 **pp-2)** — 2) entzündet: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
 [SUŚR. 2,5,21.]
 
-- **RU:** — 2) «воспалённый»: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
+- **RU:** — 2) «воспаленный»: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
 [SUŚR. 2,5,21.]
   <sub>attested</sub>
 
@@ -71,7 +71,7 @@
 [20,13.] *bhuktaṃ chardayatyavidagdhamatisāryate vā*
 [118,15. 2,139,16.] Vgl. *pittavidagdhadṛṣṭi* .
 
-- **RU:** — 3) «переработанный внутренним огнём, желчью, которая варит пищу в желудке; сваренный»: *˚bhukta*
+- **RU:** — 3) «переработанный внутренним огнем, желчью, которая варит пищу в желудке; сваренный»: *˚bhukta*
 [SUŚR. 2,110,14.] *rasa*
 [545,10.] *śleṣman*
 [1,79,8.] *pitta*
@@ -112,14 +112,14 @@
 [TRIK. 3,1,5.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,5) *vidagdhā = vāṇinī*
 [3,248.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,248) Vgl. *durvidagdha, vidagdha* N. pr., *vidāha* .
 
-- **RU:** — 5) (тот, кто однажды обжёгся, поумнел на опыте) «умный, разумный, искушённый»: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
+- **RU:** — 5) (тот, кто однажды обжегся, поумнел на опыте) «умный, разумный, искушенный»: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
 [MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) *˚pariṣad*
 [BHARTṚ. 3,42.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,42)
 [VIKR. 3,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,12) *nāvidagdhaḥ priyaṃ brūyāt*
 [PAÑCAT. I,180.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,180) [RĀJA-TAR. 5,79.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,79) *neyaṃ gaṇanā vidagdhasya puruṣasya*
 [DAŚAK.] в [BENF. Chr. 188,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *vidagdhālāpānām — kavīnām*
 [BHARTṚ. 1,52.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,52) *˚vacana*
-[PAÑCAT. 112,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?112,25) «хитрый, лукавый», о девушках, искушённых в любовных искусствах,
+[PAÑCAT. 112,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?112,25) «хитрый, лукавый», о девушках, искушенных в любовных искусствах,
 [BHĀG. P. 6,18,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,28)
 [BRAHMA-P. 55,15.]
 [DHŪRTAS. 78,4.]

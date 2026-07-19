@@ -11,7 +11,7 @@
 **2)** 2) *ye tvenamabhijānanti vṛttenābhijanena vā* die ihn anerkennen (Gegens. *nindanti)*
 [Spr. 4556.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4556)
 
-- **RU:** 2) *ye tvenamabhijānanti vṛttenābhijanena vā* те, кто его признаёт (противоп. *nindanti)*
+- **RU:** 2) *ye tvenamabhijānanti vṛttenābhijanena vā* те, кто его признает (противоп. *nindanti)*
 [Spr. 4556.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4556)
   <sub>attested</sub>
 

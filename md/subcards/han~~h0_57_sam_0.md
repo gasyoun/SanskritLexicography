@@ -33,7 +33,7 @@
 
 - **RU:** — 2) сгущаться, скатываться в шар: *saṃhantyapo divyā mārutaḥ* скатывается в шар, превращаясь в град
 [SUŚR. 1,264,18.] pass. сгущаться, становиться плотным —, плотным (consistent): *śaraḥ samahanyata*
-[ŚAT. BR. 10,6,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,2) *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam* так преим. твоё сердце как будто выковано из железа
+[ŚAT. BR. 10,6,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,2) *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam* так преим. твое сердце как будто выковано из железа
 [MBH. 5,4580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4580)
   <sub>attested</sub>
 
@@ -118,7 +118,7 @@ Schol. zu [KAP. 1,104.] [SĀH. D. 9,9.](https://sanskrit-lexicon-scans.github.io
 [69,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,15) *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān*
 [M. 7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) *ṛṣayaḥ*
 [ṚV. ANUKR. 9,66.] [Ind. St. 10,410.] [KAP. 1,67. 141.] [KĀM. NĪTIS. 4,65.] *ekaikaśaḥ saṃhatā vā*
-[6,9. 8,18. fg. 9,77. 17,40. 19,59.] [MṚCCH. 76,9.] [ṚT. 1,20.] [Spr. (II) 1171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1171) [1231.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1231) [3939](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3939), v. l. [4762](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4762), v. l. [6179.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6179) [VARĀH. BṚH. S. 46,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,67) [95,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?95,8) [AK. 2,10,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,10,5) [3,4,19,131.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,19,131) *saṃhatā nāsya sevakāḥ* zusammenhaltend
+[6,9. 8,18. fg. 9,77. 17,40. 19,59.] [MṚCCH. 76,9.] [ṚT. 1,20.] [Spr. (II) 1171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1171 "Spr. (II) 1171: utkhātānpratiropayankusumitāṃścinvaṁllaghūnvardhaya- nprottuṅgānnamayanpṛthūṃśca laghayanviśleṣayansaṃhatān | kṣudrānkaṇṭakino bahirviracayanmlānānmuh… — (440.) Lange währt die Freude eines Fürsten, wenn er, wie ein kunsterfahrener Gärtner, Entwurzelte wieder an ihre Stelle setzt, von Blühenden die Blüthen abliest, Schwache kräftigt, zu hoch Aufgeschossene niederbeugt, Ue…") [1231.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1231) [3939](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3939), v. l. [4762](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4762), v. l. [6179.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6179) [VARĀH. BṚH. S. 46,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,67) [95,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?95,8) [AK. 2,10,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,10,5) [3,4,19,131.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,19,131) *saṃhatā nāsya sevakāḥ* zusammenhaltend
 [RĀJA-TAR. 3,140.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,140) [4,325.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,325) [351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,351) [560.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,560) [5,254.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,254) [BHĀG. P. 3,20,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,11) [Verz. d. Oxf. H. 190,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?190) [SĀH. D. 330,14. fg.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?330,14) *ni pra ityetau saṃhatau* (d. i. *nipra) viparyastau* (d. i. *praṇi) vyastau* (d. i. *ni, pra) ca gṛhyete*
 Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS. 143,20.] *˚cārin*
 [HARIV. 10675.](https://sanskrit-lexicon-scans.github.io/hariv?10675) *saṃhatavākkalau* _adj._ so v. a. ein Duett singend
@@ -126,14 +126,14 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981)
 [HIT. IV,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,51) *a˚*
 [KĀM. NĪTIS. 19,41] (als _m._ Bez. einer best. Truppenaufstellung).
-[Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424)
+[Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424 "Spr. (II) 1424: ekodarāḥ pṛthaggrīvā anyo 'nyaphalabhakṣiṇaḥ | asaṃhatā vinaśyanti bhāraṇḍā iva pakṣiṇaḥ || — (556.) Uneinige gehen zu Grunde wie die Vogel Bhāraṇḍa, welche bei gemeinschaftlichem Magen, aber gesonderten Hälsen, Einer für den Andern Früchte verspeisen.")
 [BHĀG. P. 2,5,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,32) *saṃhatasya mitreṇa* verbunden mit
 [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *harayo golāṅgūlarkṣasaṃhatāḥ*
 [R. 4,23,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,23,4)
 [KĀM. NĪTIS. 13,88.] [KATHĀS. 34,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,195) [MĀRK. P. 102,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?102,2) [BHĀG. P. 11,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,27)
 
 - **RU:** — 7) partic. *saṃhata*
- a) наложенный друг на друга, соединённый, замкнутый, сталкивающийся, смежный, тесно связанный
+ a) наложенный друг на друга, соединенный, замкнутый, сталкивающийся, смежный, тесно связанный
 [AK. 3,4,12,47.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,12,47)
 [H. an. 3,307.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,307)
 [MED. t. 165.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,165)
@@ -156,7 +156,7 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [11187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11187) [VARĀH. BṚH. S. 61,10. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,10) *arā rathanābhau*
 [MUṆḌ. UP. 2,2,6.] *lekhā*
 [GOBH. 1,1,9.] *ayugma˚*
-[7,10.] *trīnpiṇḍānsaṃhatānnidadhāti* соединённый, образующий груду
+[7,10.] *trīnpiṇḍānsaṃhatānnidadhāti* соединенный, образующий груду
 [KAUŚ. 88.] *upalāḥ*
 [MBH. 3,1719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1719) *drumavalkaiḥ saṃhataiḥ*
 [R. 5,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,12)
@@ -169,7 +169,7 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [69,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,15) *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān*
 [M. 7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) *ṛṣayaḥ*
 [ṚV. ANUKR. 9,66.] [Ind. St. 10,410.] [KAP. 1,67. 141.] [KĀM. NĪTIS. 4,65.] *ekaikaśaḥ saṃhatā vā*
-[6,9. 8,18. fg. 9,77. 17,40. 19,59.] [MṚCCH. 76,9.] [ṚT. 1,20.] [Spr. (II) 1171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1171) [1231.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1231) [3939](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3939), v. l. [4762](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4762), v. l. [6179.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6179) [VARĀH. BṚH. S. 46,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,67) [95,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?95,8) [AK. 2,10,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,10,5) [3,4,19,131.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,19,131) *saṃhatā nāsya sevakāḥ* сплочённый
+[6,9. 8,18. fg. 9,77. 17,40. 19,59.] [MṚCCH. 76,9.] [ṚT. 1,20.] [Spr. (II) 1171.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1171 "Spr. (II) 1171: utkhātānpratiropayankusumitāṃścinvaṁllaghūnvardhaya- nprottuṅgānnamayanpṛthūṃśca laghayanviśleṣayansaṃhatān | kṣudrānkaṇṭakino bahirviracayanmlānānmuh… — (440.) Lange währt die Freude eines Fürsten, wenn er, wie ein kunsterfahrener Gärtner, Entwurzelte wieder an ihre Stelle setzt, von Blühenden die Blüthen abliest, Schwache kräftigt, zu hoch Aufgeschossene niederbeugt, Ue…") [1231.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1231) [3939](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3939), v. l. [4762](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4762), v. l. [6179.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6179) [VARĀH. BṚH. S. 46,67.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,67) [95,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?95,8) [AK. 2,10,5.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,10,5) [3,4,19,131.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,19,131) *saṃhatā nāsya sevakāḥ* сплоченный
 [RĀJA-TAR. 3,140.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,140) [4,325.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,325) [351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,351) [560.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,560) [5,254.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,254) [BHĀG. P. 3,20,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,11) [Verz. d. Oxf. H. 190,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?190) [SĀH. D. 330,14. fg.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?330,14) *ni pra ityetau saṃhatau* (т.е. *nipra) viparyastau* (т.е. *praṇi) vyastau* (т.е. *ni, pra) ca gṛhyete*
 схол. к [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS. 143,20.] *˚cārin*
 [HARIV. 10675.](https://sanskrit-lexicon-scans.github.io/hariv?10675) *saṃhatavākkalau* _adj._ так преим. поющий дуэтом
@@ -177,7 +177,7 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981)
 [HIT. IV,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,51) *a˚*
 [KĀM. NĪTIS. 19,41] (как _m._ обозн. построения определ. войск).
-[Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424)
+[Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424 "Spr. (II) 1424: ekodarāḥ pṛthaggrīvā anyo 'nyaphalabhakṣiṇaḥ | asaṃhatā vinaśyanti bhāraṇḍā iva pakṣiṇaḥ || — (556.) Uneinige gehen zu Grunde wie die Vogel Bhāraṇḍa, welche bei gemeinschaftlichem Magen, aber gesonderten Hälsen, Einer für den Andern Früchte verspeisen.")
 [BHĀG. P. 2,5,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,32) *saṃhatasya mitreṇa* связанный с
 [M. 7,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,165) *harayo golāṅgūlarkṣasaṃhatāḥ*
 [R. 4,23,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,23,4)
@@ -200,15 +200,15 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [H. 1472.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1472) *yūnaḥ paramasaṃhatān*
 [MBH. 3,14653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14653)
 
-- **RU:** — b) ставший твёрдым —, плотным (consistent): *vāyunāpastu saṃhatāḥ*
+- **RU:** — b) ставший твердым —, плотным (consistent): *vāyunāpastu saṃhatāḥ*
 [MĀRK. P. 47,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?47,12) *tejas*
-[HARIV. 590.](https://sanskrit-lexicon-scans.github.io/hariv?590) твёрдый, жёсткий, плотный; = *dṛḍha*
+[HARIV. 590.](https://sanskrit-lexicon-scans.github.io/hariv?590) твердый, жесткий, плотный; = *dṛḍha*
 [H. an.] [MED.] *etābhiriṣṭakābhiḥ saṃdhiḥ kriyatāṃ susaṃhataḥ*
 [MṚCCH. 55,22.] *samasusaṃhatopacitagātrasaṃdhi*
 [VARĀH. BṚH. S. 2, S. 3, Z. 10] снизу груди
 [R. 3,52,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,25) [35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,35) [5,18,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,25) [21,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,10)
 [KATHĀS. 47,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,107) *uras*
-[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) щёки
+[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) щеки
 [R. 3,52,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,29) плечи
 [5,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,17) *āyasaṃ hṛdayaṃ nūnaṃ rāmamātuḥ susaṃhatam*
 [2,39,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,29) крепкого, плотного телосложения; = *dṛḍhasaṃdhi*

@@ -54,7 +54,7 @@
 [BHĀG. P. 5,5,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,31) *hṛdi cainām (sarasvatīm) upadhātumarhasi* так преим. принять близко к сердцу
 [RAGH. 8,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,76) запрягать (коней): *upa tmani dadhāno dhuryā3śūn*
 [ṚV. 4,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.04) *upahitasūkṣmagranthinā skandhadeśe valkalena* так преим. приставленный
-[ŚĀK. 18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?18) возлагать на кого-л. так преим. передавать кому-л. заботу о чём-л.: *tadupahitakuṭumbaḥ*
+[ŚĀK. 18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?18) возлагать на кого-л. так преим. передавать кому-л. заботу о чем-л.: *tadupahitakuṭumbaḥ*
 [RAGH. 7,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,68) *kriyām* прилагать усилия к чему-л.: *kriyā hi vastūpahitā prasīdati*
 [3,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,29) поручить кому-л. так преим. учить: *mithaḥ strīṣu nṛtyamupadhāya*
 [19,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,36)
@@ -122,7 +122,7 @@
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135) *śabdopahitarūpa*
 [BHARTṚ.] в [SĀH. D. 32,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?32,4) *upahitaśobhā* (*ayodhyā*)
 [BHAṬṬ. 2,55.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,55) *paramasvāminā svayamupahitarājyābhiṣekaḥ* в одном надпись в
-[Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.] *upahita* так преим. готовый, завершённый: *niveśanaṃ ca kupyaṃ ca kṣetraṃ bhāryā suhṛjjanaḥ . etānyupahitānyāhuḥ sarvatra labhate pumān ..*
+[Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.] *upahita* так преим. готовый, завершенный: *niveśanaṃ ca kupyaṃ ca kṣetraṃ bhāryā suhṛjjanaḥ . etānyupahitānyāhuḥ sarvatra labhate pumān ..*
 [MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) *kratāvupahite nyastaṃ haviḥ*
 [13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286)
   <sub>attested</sub>

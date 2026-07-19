@@ -34,7 +34,7 @@
 
 - **RU:** — 4) повторять: *uttamaṃ pādaṃ pratyādāya*
 [ŚĀṄKH. ŚR. 7,25,6.]
-[ṚV. PRĀT. 10,1.] [8.] — Вместо *pratyādāya*
+[ṚV. PRĀT. 10,1.] [8.] — Вм. *pratyādāya*
 [AV. 10,1,27](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.27) следует, по-видимому, читать *pratyādhāya*.
 — ср. *pratyādāna* .
   <sub>attested</sub>

@@ -134,7 +134,7 @@ v. l.) *labhate rājasattamam*
 [KUMĀRAS. 3,49.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,49) *avakāśam* найти место —, свободное пространство —, случай, проникнуть, оказаться на месте
 [MAITRYUP. 6,22.] *vāco vācyavivekaviklavadhiyāmīdṛgvidhā mādṛśāṃ lapsyante kva kilāvakāśam*
 [Verz. d. Oxf. H. 120,a,33. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?120) другие примеры см. *avakāśa* 2). *antaram* то же: *labdhāntara* _adj._ нашедший случай; отсюда *˚tva*
-_n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntaram* так преим. не произвёл на него впечатления
+_n._ [ŚĀK. CH. 58,9.] *ityādi mantriṇāṃ vākyaṃ na lebhe tasya cāntaram* так преим. не произвел на него впечатления
 [KATHĀS. 40,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,55) *labdhāvasara* нашедший случай
 [KAUṢ. UP. Einl. 1,15. 2,13.] *padam* найти место букв. и перен. так преим. проникнуть
 [ŚĀK. 138.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?138)

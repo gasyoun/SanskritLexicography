@@ -1,4 +1,4 @@
-## gam~~h0_63_sam_0
+## samgam
 
 `gam~~h0_63_sam_0`
 
@@ -150,7 +150,7 @@
 [MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
 [R. 3,25,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7)
 
-- **RU:** — 2) сжиматься, съёживаться: *balī saṃgatagātrastu durdarśo durbalaḥ *
+- **RU:** — 2) сжиматься, съеживаться: *balī saṃgatagātrastu durdarśo durbalaḥ *
 
 * kṛśaḥ*
 [MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*

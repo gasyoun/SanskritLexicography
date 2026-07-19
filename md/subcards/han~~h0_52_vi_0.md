@@ -58,10 +58,10 @@
 [KIR. 5,17.] *kuladharmam*
 [R. 2,110,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,110,37) *rājyābhiṣecanam*
 [23,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,22) *karmāṇi*
-[Spr. (II) 4.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4) *kṛtyam*
+[Spr. (II) 4.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4 "Spr. (II) 4: akarmaṇāṃ vai bhūtānāṃ vṛttiḥ syānnahi kā ca na | tadevābhiprapadyeta na vihanyātkadā ca na || — Wenn die Geschöpfe der Thätigkeit entsagten, würden sie schlechterdings nicht leben können") *kṛtyam*
 [5362.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5362) [6465](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6465), v. l. *mama praṇayam*
 [RAGH. 2,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,58)
-[Spr. (II) 1158.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1158) *parahitam*
+[Spr. (II) 1158.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1158 "Spr. (II) 1158: ucitaḥ praṇayo varaṃ vihantuṃ bahavaḥ khaṇḍanahetavo hi dṛṣṭāḥ | upacāravidhirmanasvinīnāṃ na tu pūrvābhyadhiko 'pi bhāvaśūnyaḥ || — Es ist besser, die gewohnte Vertraulichkeit aufzuheben -- der Veranlassungen zum Bruch giebt es ja viele --, als verständigen Frauen noch grössere Höflichkeiten als zuvor, die aber der Zuneigung baar sind, zu bezeigen.") *parahitam*
 [1460.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1460) *kṛtam*
 [BHĀG. P. 5,1,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,12) *vratam*
 [6,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,18) *vikramam*
@@ -83,10 +83,10 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [KIR. 5,17.] *kuladharmam*
 [R. 2,110,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,110,37) *rājyābhiṣecanam*
 [23,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,22) *karmāṇi*
-[Spr. (II) 4.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4) *kṛtyam*
+[Spr. (II) 4.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4 "Spr. (II) 4: akarmaṇāṃ vai bhūtānāṃ vṛttiḥ syānnahi kā ca na | tadevābhiprapadyeta na vihanyātkadā ca na || — Wenn die Geschöpfe der Thätigkeit entsagten, würden sie schlechterdings nicht leben können") *kṛtyam*
 [5362.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5362) [6465](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6465), v. l. *mama praṇayam*
 [RAGH. 2,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,58)
-[Spr. (II) 1158.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1158) *parahitam*
+[Spr. (II) 1158.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1158 "Spr. (II) 1158: ucitaḥ praṇayo varaṃ vihantuṃ bahavaḥ khaṇḍanahetavo hi dṛṣṭāḥ | upacāravidhirmanasvinīnāṃ na tu pūrvābhyadhiko 'pi bhāvaśūnyaḥ || — Es ist besser, die gewohnte Vertraulichkeit aufzuheben -- der Veranlassungen zum Bruch giebt es ja viele --, als verständigen Frauen noch grössere Höflichkeiten als zuvor, die aber der Zuneigung baar sind, zu bezeigen.") *parahitam*
 [1460.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1460) *kṛtam*
 [BHĀG. P. 5,1,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,12) *vratam*
 [6,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,19,18) *vikramam*
@@ -134,7 +134,7 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [BHĀG. P. 3,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,3)
 
 - **RU:** — 6) partic. *vihata*
- a) взрытый, взрыхлённый: *varāhavihata* вепрем
+ a) взрытый, взрыхленный: *varāhavihata* вепрем
 [TBR. 1,1,3,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,3,7) [2,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,3)
 [ŚAT. BR. 14,1,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,1,2,11)
 [KAUŚ. 15.]
@@ -149,14 +149,14 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [BHĀG. P. 10,60,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,24) *daivena*
 [3,32,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,19) *māyayā*
 [11,29,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,29,3) *daiva˚* (Gegens. *rakṣita*)
-[Spr. (II) 3902.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3902) *cittamakāmavihatam*
+[Spr. (II) 3902.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3902 "Spr. (II) 3902: pathi cyutaṃ tiṣṭhati diṣṭarakṣitaṃ gṛhe sthitaṃ tadvihataṃ vinaśyati | jīvatyanātho 'pi tadīkṣito vane gṛhe 'pi gupto 'sya hato na jīvati || — (4496.) Auf die Strasse Gefallenes bleibt liegen, wenn das Schicksal es hütet") *cittamakāmavihatam*
 [BHĀG. P. 10,80,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,80,29)
 
-- **RU:** — b) поражённый, постигнутый: *rambheva vāyuvihatā*
+- **RU:** — b) пораженный, постигнутый: *rambheva vāyuvihatā*
 [BHĀG. P. 10,60,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,24) *daivena*
 [3,32,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,19) *māyayā*
 [11,29,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,29,3) *daiva˚* (противоп. *rakṣita*)
-[Spr. (II) 3902.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3902) *cittamakāmavihatam*
+[Spr. (II) 3902.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3902 "Spr. (II) 3902: pathi cyutaṃ tiṣṭhati diṣṭarakṣitaṃ gṛhe sthitaṃ tadvihataṃ vinaśyati | jīvatyanātho 'pi tadīkṣito vane gṛhe 'pi gupto 'sya hato na jīvati || — (4496.) Auf die Strasse Gefallenes bleibt liegen, wenn das Schicksal es hütet") *cittamakāmavihatam*
 [BHĀG. P. 10,80,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,80,29)
   <sub>attested</sub>
 
@@ -166,7 +166,7 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [HARIV. 12771.](https://sanskrit-lexicon-scans.github.io/hariv?12771) zurückgewiesen, abgewiesen: Person
 [BHAG.] [P. 6,3,1.](https://ashtadhyayi.com/sutraani/6/3/1) *a˚*
 [3,15,29.](https://ashtadhyayi.com/sutraani/3/15/29) gestört, gehemmt: *vighna˚*
-[Spr. (II) 4342.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4342)
+[Spr. (II) 4342.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4342 "Spr. (II) 4342: prārabhyate na khalu vighnabhayena nīcaiḥ prārabhya vighnavihatā viramanti madhyāḥ | vighnaiḥ punaḥ punarapi pratihanyamānāḥ prārabdhamuttamajanānā na… — (1913.) Leute vom niedrigsten Schlage lassen sich aus Furcht vor Hindernissen auf gar keine Unternehmung ein")
 [BHĀG. P. 5,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,5) *udyama*
 [HARIV. 12133.](https://sanskrit-lexicon-scans.github.io/hariv?12133) *śrī*
 [R. 2,36,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,30)
@@ -181,13 +181,13 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 [BHĀG. P. 2,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,20) *gati*
 [9,7,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,7,23) [MEGH. 10.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?10)
 
-- **RU:** — c) отражённый, отбитый: *astra*
+- **RU:** — c) отраженный, отбитый: *astra*
 [R. 5,44,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,14) *aśmavarṣa*
 [MBH. 3,12135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12135)
-[HARIV. 12771.](https://sanskrit-lexicon-scans.github.io/hariv?12771) отвергнутый, отклонённый: лицо
+[HARIV. 12771.](https://sanskrit-lexicon-scans.github.io/hariv?12771) отвергнутый, отклоненный: лицо
 [BHAG.] [P. 6,3,1.](https://ashtadhyayi.com/sutraani/6/3/1) *a˚*
 [3,15,29.](https://ashtadhyayi.com/sutraani/3/15/29) нарушенный, задержанный: *vighna˚*
-[Spr. (II) 4342.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4342)
+[Spr. (II) 4342.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4342 "Spr. (II) 4342: prārabhyate na khalu vighnabhayena nīcaiḥ prārabhya vighnavihatā viramanti madhyāḥ | vighnaiḥ punaḥ punarapi pratihanyamānāḥ prārabdhamuttamajanānā na… — (1913.) Leute vom niedrigsten Schlage lassen sich aus Furcht vor Hindernissen auf gar keine Unternehmung ein")
 [BHĀG. P. 5,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,5) *udyama*
 [HARIV. 12133.](https://sanskrit-lexicon-scans.github.io/hariv?12133) *śrī*
 [R. 2,36,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,30)
@@ -217,18 +217,18 @@ v. l. fast überall hat)
 [MBH. 1,570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.570)
 [ARJ. 10,23. 56] ([MBH. 3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) [12252](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12252) richtig).
 [R. 4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23)
-[Spr. (II) 2781.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781) [5624](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624), v. l. [5861.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5861)
+[Spr. (II) 2781.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham") [5624](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624), v. l. [5861.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5861)
 [PAÑCAT. 68,7](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,7) (*ghnanti* [ed. Bomb.]).
 [86,23](https://sanskrit-lexicon-scans.github.io/pantankose/app2?86,23) (*mṛta* [ed. Bomb.]). — caus.
  1) schlagen: *parasainyaṃ vighātayet (vināśayet*
 v. l.) [Spr. (II) 2822.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2822)
 
-- **RU:** — 7) *vi — han* ошибочное написание вместо *ni — han* (как
+- **RU:** — 7) *vi — han* ошибочное написание вм. *ni — han* (как
 v. l. почти повсюду)
 [MBH. 1,570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.570)
 [ARJ. 10,23. 56] ([MBH. 3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) [12252](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12252) правильно).
 [R. 4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23)
-[Spr. (II) 2781.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781) [5624](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624), v. l. [5861.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5861)
+[Spr. (II) 2781.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham") [5624](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624), v. l. [5861.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5861)
 [PAÑCAT. 68,7](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,7) (*ghnanti* [ed. Bomb.]).
 [86,23](https://sanskrit-lexicon-scans.github.io/pantankose/app2?86,23) (*mṛta* [ed. Bomb.]). — caus.
  1) бить: *parasainyaṃ vighātayet (vināśayet*

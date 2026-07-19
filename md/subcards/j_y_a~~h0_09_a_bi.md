@@ -42,7 +42,7 @@
 [MBH. 18,64.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.64) *prahārānnābhijānāti yo 'ṅgacchedamathāpi vā*
 [SUŚR. 1,113,3.] *tadabhijñāya*
 [BHĀG. P. 4,19,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,26) *asurebhyaḥ — bhayaṃ yo nābhijānāti*
-[R. 6,94,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,15) *mālyagandhānalaṃkārānvastrāṇi vividhāni ca . etānyevābhijānāti* разбираться в чём-л., смыслить в чём-л.
+[R. 6,94,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,15) *mālyagandhānalaṃkārānvastrāṇi vividhāni ca . etānyevābhijānāti* разбираться в чем-л., смыслить в чем-л.
 [MBH. 4,76.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.76) *utthānamabhijānanti sarvabhūtāni*
 [3,1207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1207) *bhavānimamindradyumnaṃ rājānamabhijānāti*
 [13339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13339) *buddhvābhijānāmi — na mādṛśī tvāmabhibhāṣṭumarhati*
@@ -51,7 +51,7 @@
 [HARIV. 9618.](https://sanskrit-lexicon-scans.github.io/hariv?9618) *bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ*
 [BHAG. 18,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,55) *iti māṃ yo 'bhijānāti*
 [4,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,14) *nābhijānāti māmebhyaḥ param*
-[7,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,13) *abhijñāya sudevaṃ tam* после того как он в нём Судева узнал (признал)
+[7,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,13) *abhijñāya sudevaṃ tam* после того как он в нем Судева узнал (признал)
 [MBH. 3,2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) *tatra no nābhijānīyurvasato manujāḥ kvacit*
 [17433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17433) *nābhijajñe sa nṛpatirduhitrarthe samāgatam*
 [2875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2875) *sa āgacchanneva svapatirityabhijñātaḥ*
@@ -75,7 +75,7 @@
 - **RU:** — 2) признавать, одобрять, допускать, соглашаться: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
 [MBH. 13,5871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5871) *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
 [R. 4,30,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,12) *evamuktastu rājā sa tathyamityabhijajñavān*
-[MBH. 1,3420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3420) *na putramabhijānāmi tvayi jātam* я не признаю рождённое тобою дитя своим сыном
+[MBH. 1,3420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3420) *na putramabhijānāmi tvayi jātam* я не признаю рожденное тобою дитя своим сыном
 [3060.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3060)
   <sub>attested</sub>
 

@@ -72,7 +72,7 @@ Schol. *āghnīya*
 [BHAṬṬ.] там же*gadayārātiṃ dakṣiṇasyāṃ bhruvi — ājaghne*
 [BHĀG. P. 3,18,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,17) intrans. или когда объектом является часть собственного тела
 [P. 1,3,28](https://ashtadhyayi.com/sutraani/1/3/28) вместе с Вартт.
-[VOP. 23,17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,17) *āhate śiraḥ* он бьёт себя по голове
+[VOP. 23,17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,17) *āhate śiraḥ* он бьет себя по голове
 схол. *āghnīya*
 [PAT.] к [P. 1,1,62.](https://ashtadhyayi.com/sutraani/1/1/62) *āhata* и *aghāniṣṭa, āhasatām, āhasata* схол. к [P. 1,2,14.](https://ashtadhyayi.com/sutraani/1/2/14)
 [2,4,44.](https://ashtadhyayi.com/sutraani/2/4/44) [VOP. 23,18.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,18) [24,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,12) *āghnāna* бьющий вокруг себя (птица)
@@ -102,10 +102,10 @@ für *etānyo hanti* .
 - **RU:** — 3) бить в барабан
 и т.д. [TS. 7,5,9,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,9,3) [ŚAT. BR. 5,1,5,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,7) [17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,1,5,17) [KAUŚ. 16.] [KATHĀS. 47,44.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,44) [BHAṬṬ. 1,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,27) [17,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,7) *ghaṇṭām*
 [KULL.] к [M. 10,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,33) — *dārūṇyāhatya*
-[KATHĀS. 119,176](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,176) ошибочно вместо *dārūṇyāhṛtya; etānyāhanti*
+[KATHĀS. 119,176](https://sanskrit-lexicon-scans.github.io/kss/index.html?119,176) ошибочно вм. *dārūṇyāhṛtya; etānyāhanti*
 [Verz. d. Oxf. H. 25,a, N. 2](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?25)
 
-вместо *etānyo hanti* .
+вм. *etānyo hanti* .
   <sub>attested</sub>
 
 **4a)** — 4) partic. *āhata*
@@ -118,13 +118,13 @@ für *etānyo hanti* .
 [3,50,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,20) [66,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,26) [69,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,24) *pādapaiḥ*
 [4,18,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,18,2) *vajrāhata*
 [48,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,48,22) [5,28,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,4) *jānubhiḥ*
-[63,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,19) [6,82,98.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,98) [RAGH. 4,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,23) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [KUMĀRAS. 4,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,25) [Spr. (II) 1625.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1625) [4041.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4041) [5206.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5206) [5855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5855) [6018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6018) [VARĀH. BṚH. S. 54,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,54) [BṚH. 25 (23),6.] [KATHĀS. 24,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,180) [54,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,204) [RĀJA-TAR. 4,639.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,639) [BHĀG. P. 3,13,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,27) [19,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,16) [26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,26) [6,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,15) [11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,11) [8,11,10. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,10) [9,15,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,27) [PAÑCAT. 48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *anyo'nyairāhatā ūrmayaḥ*
+[63,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,19) [6,82,98.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,98) [RAGH. 4,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,23) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [KUMĀRAS. 4,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,25) [Spr. (II) 1625.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1625 "Spr. (II) 1625: kāntaṃ vakti kapotikākulatayā nāthāntakālo 'dhunā vyādho 'dho dhṛtacāpaśānitaśaraḥ śyenaḥ paribhrāmyati | itthaṃ satyahinā sa daṣṭa iṣuṇā śyeno 'pi te… — (632.) In der Angst ihres Herzens spricht eine Taube zum Geliebten: «Gatte! Die Todesstunde ist jetzt gekommen: unten steht ein Jäger mit Bogen und geschärftem Pfeile in der Hand, hier kreist ein Falke.» So war es") [4041.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4041) [5206.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5206) [5855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5855) [6018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6018) [VARĀH. BṚH. S. 54,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,54) [BṚH. 25 (23),6.] [KATHĀS. 24,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,180) [54,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,204) [RĀJA-TAR. 4,639.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,639) [BHĀG. P. 3,13,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,27) [19,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,16) [26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,26) [6,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,15) [11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,11) [8,11,10. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,10) [9,15,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,27) [PAÑCAT. 48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *anyo'nyairāhatā ūrmayaḥ*
 [R. 5,74,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,36) *dhārā paraśoḥ* angeschlagen, angeprallt
-[Spr. (II) 5540.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5540) *phālāhataṃ kṣetram* vom Pfluge angerissen so v. a. gepflügt
+[Spr. (II) 5540.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5540 "Spr. (II) 5540: yenākhaṇḍaladantidantamusalānyākuñcitānyāhave dhārā yatra pitākapāṇiparaśorākuñcitā cāhatā | tanme varṣma nṛsiṃharājakarajairābhidyate sāṃprataṃ daive… — (2507.) Mein Leib, an dem die Zähne von Indra's Elephanten und des Gottes Keulen in der Schlacht zerbrachen (?) und die anprallende Schneide der Streitaxt Śiva's sich verbog, wird jetzt durch die Krallen des Mannlöwen (V…") *phālāhataṃ kṣetram* vom Pfluge angerissen so v. a. gepflügt
 [YĀJÑ. 2,158.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,158) *anilāhata* vom Winde getroffen, — bewegt
 [R. 5,21,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,1)
 [KUMĀRAS. 4,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,30)
-[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228)
+[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228 "Spr. (II) 4228: pratidivasaṃ yāti layaṃ vasantavātāhateva śiśiraśrīḥ | buddhirbumatāmapi kuṭumbabhārasya cintābhiḥ || — (1843.) Wie des Winters Pracht, die von den Winden des Frühlings getroffen wird, schwindet Tag für Tag auch der Verständigen Verstand durch die Sorgen um die Bürde des Hauswesens.")
 [KATHĀS. 18,121.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,121) [22,221.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,221)
 [MĀRK. P. 32,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?32,26) [99,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,8)
 [BHĀG. P. 1,5,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,14) [8,10,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,48)
@@ -139,7 +139,7 @@ für *etānyo hanti* .
 [BHĀG. P. 3,18,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,6)
 
 - **RU:** — 4) partic. *āhata*
- a) ударенный, толкнутый, поражённый
+ a) ударенный, толкнутый, пораженный
 [TRIK. 3,3,149.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,149)
 [H. an. 3,245. fg.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,245)
 [MED. t. 90.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,90) *astraṃ brahmadaṇḍāstrāhatam*
@@ -148,18 +148,18 @@ für *etānyo hanti* .
 [3,50,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,20) [66,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,26) [69,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,24) *pādapaiḥ*
 [4,18,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,18,2) *vajrāhata*
 [48,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,48,22) [5,28,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,4) *jānubhiḥ*
-[63,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,19) [6,82,98.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,98) [RAGH. 4,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,23) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [KUMĀRAS. 4,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,25) [Spr. (II) 1625.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1625) [4041.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4041) [5206.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5206) [5855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5855) [6018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6018) [VARĀH. BṚH. S. 54,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,54) [BṚH. 25 (23),6.] [KATHĀS. 24,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,180) [54,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,204) [RĀJA-TAR. 4,639.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,639) [BHĀG. P. 3,13,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,27) [19,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,16) [26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,26) [6,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,15) [11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,11) [8,11,10. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,10) [9,15,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,27) [PAÑCAT. 48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *anyo'nyairāhatā ūrmayaḥ*
+[63,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,19) [6,82,98.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,98) [RAGH. 4,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,23) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [KUMĀRAS. 4,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,25) [Spr. (II) 1625.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1625 "Spr. (II) 1625: kāntaṃ vakti kapotikākulatayā nāthāntakālo 'dhunā vyādho 'dho dhṛtacāpaśānitaśaraḥ śyenaḥ paribhrāmyati | itthaṃ satyahinā sa daṣṭa iṣuṇā śyeno 'pi te… — (632.) In der Angst ihres Herzens spricht eine Taube zum Geliebten: «Gatte! Die Todesstunde ist jetzt gekommen: unten steht ein Jäger mit Bogen und geschärftem Pfeile in der Hand, hier kreist ein Falke.» So war es") [4041.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4041) [5206.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5206) [5855.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5855) [6018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6018) [VARĀH. BṚH. S. 54,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,54) [BṚH. 25 (23),6.] [KATHĀS. 24,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,180) [54,204.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,204) [RĀJA-TAR. 4,639.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,639) [BHĀG. P. 3,13,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,27) [19,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,16) [26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,26) [6,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,15) [11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,11,11) [8,11,10. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,10) [9,15,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,27) [PAÑCAT. 48,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,13) *anyo'nyairāhatā ūrmayaḥ*
 [R. 5,74,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,36) *dhārā paraśoḥ* ударенный о, столкнувшийся
-[Spr. (II) 5540.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5540) *phālāhataṃ kṣetram* задетый плугом так преим. вспаханный
-[YĀJÑ. 2,158.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,158) *anilāhata* задетый ветром, — приведённый в движение ветром
+[Spr. (II) 5540.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5540 "Spr. (II) 5540: yenākhaṇḍaladantidantamusalānyākuñcitānyāhave dhārā yatra pitākapāṇiparaśorākuñcitā cāhatā | tanme varṣma nṛsiṃharājakarajairābhidyate sāṃprataṃ daive… — (2507.) Mein Leib, an dem die Zähne von Indra's Elephanten und des Gottes Keulen in der Schlacht zerbrachen (?) und die anprallende Schneide der Streitaxt Śiva's sich verbog, wird jetzt durch die Krallen des Mannlöwen (V…") *phālāhataṃ kṣetram* задетый плугом так преим. вспаханный
+[YĀJÑ. 2,158.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,158) *anilāhata* задетый ветром, — приведенный в движение ветром
 [R. 5,21,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,1)
 [KUMĀRAS. 4,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,30)
-[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228)
+[Spr. (II) 4228.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4228 "Spr. (II) 4228: pratidivasaṃ yāti layaṃ vasantavātāhateva śiśiraśrīḥ | buddhirbumatāmapi kuṭumbabhārasya cintābhiḥ || — (1843.) Wie des Winters Pracht, die von den Winden des Frühlings getroffen wird, schwindet Tag für Tag auch der Verständigen Verstand durch die Sorgen um die Bürde des Hauswesens.")
 [KATHĀS. 18,121.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,121) [22,221.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,221)
 [MĀRK. P. 32,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?32,26) [99,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,8)
 [BHĀG. P. 1,5,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,14) [8,10,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,48)
-[PRAB. 23,2.] *jyotiṣkaṇāhataśmaśru* поражённый искрами так преим. обожжённый (*āhata = dagdha*
-[H. an.]) [RAGH. 15,52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,52) поражённый так преим. затронутый к ущербу (в астр.); вообще так преим. подвергшийся напасти, повреждённый: *śṛṅge* (луны) *kujenāhate*
+[PRAB. 23,2.] *jyotiṣkaṇāhataśmaśru* пораженный искрами так преим. обожженный (*āhata = dagdha*
+[H. an.]) [RAGH. 15,52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,52) пораженный так преим. затронутый к ущербу (в астр.); вообще так преим. подвергшийся напасти, поврежденный: *śṛṅge* (луны) *kujenāhate*
 [VARĀH. BṚH. S. 4,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,21) *kṣititanayatrividhādbhutāhate bhe*
 [23,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?23,10) *hṛdi śokena*
 [MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) *yakṣmāhata*
@@ -174,7 +174,7 @@ für *etānyo hanti* .
 [AV. 1,11,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.04) *śaṅkavaḥ*
 [10,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.04)
 
-- **RU:** — b) прикреплённый, закреплённый: *akṣa*
+- **RU:** — b) прикрепленный, закрепленный: *akṣa*
 [ṚV. 10,85,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.12)
 [AV. 1,11,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.04) *śaṅkavaḥ*
 [10,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.04)
@@ -182,19 +182,19 @@ für *etānyo hanti* .
 
 **4c)** — c) angeschlagen, in Bewegung gesetzt. *anāhatā kampati me dhanurjyā*
 [MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) eine Trommel u. s. w.: *anāhatā dundubhayo vineduḥ*
-[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316) [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (eine Muschel)
+[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (eine Muschel)
 [SIDDH. K.] zu [P. 6,2,48.](https://ashtadhyayi.com/sutraani/6/2/48) _m._ = *ānaka* Trommel
 [MED.]
 
-- **RU:** — c) ударенный (о музыкальном инструменте), приведённый в движение. *anāhatā kampati me dhanurjyā*
+- **RU:** — c) ударенный (о музыкальном инструменте), приведенный в движение. *anāhatā kampati me dhanurjyā*
 [MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) барабан и т.д.: *anāhatā dundubhayo vineduḥ*
-[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316) [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (раковина)
+[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (раковина)
 [SIDDH. K.] к [P. 6,2,48.](https://ashtadhyayi.com/sutraani/6/2/48) _m._ = *ānaka* барабан
 [MED.]
   <sub>attested</sub>
 
 **4d)** — d) gehämmert: *ghanāhataṃ suvarṇam*
-[Spr. (II) 4074.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4074)
+[Spr. (II) 4074.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4074 "Spr. (II) 4074: pitṛbhistāḍitaḥ putraḥ śiṣyaśca guruśikṣitaḥ | ghanāhataṃ suvarṇaṃ ca jāyate janamaṇḍanam || — Ein Sohn, den der Vater züchtigt, ein Schüler, den der Lehrer unterrichtet, und Gold, das mit einem Hammer geschlagen wird, werden zum Schmuck der Leute.")
 [MBH. 2,2091](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2091) (*ahata*
 [NĪLAK.]). geprägt oder gestempelt
 [AK. 2,9,92.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,92)
@@ -204,7 +204,7 @@ für *etānyo hanti* .
 [RĀJA-TAR. 3,103.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,103)
 
 - **RU:** — d) кованый: *ghanāhataṃ suvarṇam*
-[Spr. (II) 4074.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4074)
+[Spr. (II) 4074.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4074 "Spr. (II) 4074: pitṛbhistāḍitaḥ putraḥ śiṣyaśca guruśikṣitaḥ | ghanāhataṃ suvarṇaṃ ca jāyate janamaṇḍanam || — Ein Sohn, den der Vater züchtigt, ein Schüler, den der Lehrer unterrichtet, und Gold, das mit einem Hammer geschlagen wird, werden zum Schmuck der Leute.")
 [MBH. 2,2091](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2091) (*ahata*
 [NĪLAK.]). чеканный или штампованный
 [AK. 2,9,92.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,92)
@@ -221,7 +221,7 @@ für *etānyo hanti* .
 [BHĀG. P. 3,9,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,10) *agnidhūmāhatavarcas*
 [8,7,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,14)
 
-- **RU:** — e) уничтоженный, расстроенный, сведённый на нет: *jyotsnābhirandhakāraḥ*
+- **RU:** — e) уничтоженный, расстроенный, сведенный на нет: *jyotsnābhirandhakāraḥ*
 [BHĀG. P. 3,28,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,21) *rājyābhiṣecanaṃ daivāt (= daivena)*
 [R. 2,23,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,20) *śāntibhiḥ*
 [VARĀH. BṚH. S. 46,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,5) *daivāhatārtharacana*

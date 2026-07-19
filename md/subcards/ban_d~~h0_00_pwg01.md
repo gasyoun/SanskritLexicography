@@ -76,10 +76,10 @@
 - **RU:** — 2) соединять, скреплять: *(kṛtvā) baddhaiḥ (kṛtvābaddhaiḥ*
 [TR.] и [BENFEY]) *śilābandhaiḥ setubandhamapāṭayan*
 [RĀJA-TAR. 5,92.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) *aṇavo* (атомы) *baddhāḥ*
-[LIṄGA-P.] при [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* соединённый по пяти —, по сто
+[LIṄGA-P.] при [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* соединенный по пяти —, по сто
 [HARIV. 3507.](https://sanskrit-lexicon-scans.github.io/hariv?3507) *rājānaḥ śreṇibaddhāḥ*
 [MBH. 2,568.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.568) *chāyābaddhakadambakaṃ mṛgakulam* образующий группы
-[ŚĀK. 39.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) *dehabaddha* соединённый с телом
+[ŚĀK. 39.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) *dehabaddha* соединенный с телом
 [RAGH. 11,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,35)
 [KUMĀRAS. 2,47.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,47) [5,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,30) *karmāṇi śīlena baddhāni*
 [Verz. d. Oxf. H. 56,a, N. 1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?56) *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate*, отсюда преим. приятный, сладостный для слуха
@@ -159,7 +159,7 @@
 [YĀJÑ. 3,292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,292) останавливать, подавлять: *baddhadhārāpravāhena — aśruṇā*
 [SOM. NALA 164.] *baddhavāc* _adj._
 [BHĀG. P. 1,15,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,43) *baddha* прерывисто в противоп., в сравнении с *drava* текущий
-[SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu*, отсюда преим. осушённый
+[SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu*, отсюда преим. осушенный
 [HARIV. 3841.](https://sanskrit-lexicon-scans.github.io/hariv?3841)
   <sub>attested</sub>
 
@@ -203,7 +203,7 @@
 [28,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,117) *baddhānandā divasāḥ*
 [23,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,94) производить, делать: *anyo'nyadāsabhāvaṃ ca paṇamatra babandhuḥ*, отсюда преим. условились
 [KATHĀS. 22,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,182) *kramaṃ babandha kramitum*
-[BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *ākāśe lakṣyaṃ (lakṣaṃ) bandh* обозначить себе цель в воздушном пространстве, отсюда преим. смотреть в определённом направлении в воздух
+[BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *ākāśe lakṣyaṃ (lakṣaṃ) bandh* обозначить себе цель в воздушном пространстве, отсюда преим. смотреть в определенном направлении в воздух
 [ŚĀK. 31,7](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?31,7), v. l.
 [MUDRĀR. 6,19. 31,3. 62,5.] *ākāśabaddhalakṣa*
 [VIKRAM. 54,4.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?54,4)

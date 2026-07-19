@@ -47,7 +47,7 @@
 [UTTARARĀMAC. 64,10], wo mit der neueren Ausg.
 ([82,12]) *vipralambhaḥ* zu lesen ist; nach dem Comm. *anubadhnāti = mohayati* .
 
-- **RU:** — 6) продолжаться, продолжать своё действие
+- **RU:** — 6) продолжаться, продолжать свое действие
 [UTTARARĀMAC. 64,10], где по новейшему изд.
 ([82,12]) следует читать *vipralambhaḥ*; по коммент. *anubadhnāti = mohayati* .
   <sub>attested</sub>
@@ -69,7 +69,7 @@
 [RĀJA-TAR. 5,92](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) ist mit der [ed. Calc.] *kṛtvā baddhaiḥ śi˚* zu schreiben.
 
 - **RU:** — 2) *anyo'nyābaddhabāhavaḥ*
-[BHĀG. P. 10,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,6) — Вместо *kṛtvābaddhaiḥ śilābandhaiḥ*
+[BHĀG. P. 10,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,6) — Вм. *kṛtvābaddhaiḥ śilābandhaiḥ*
 [RĀJA-TAR. 5,92](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) следует по [ed. Calc.] писать *kṛtvā baddhaiḥ śi˚*.
   <sub>attested</sub>
 

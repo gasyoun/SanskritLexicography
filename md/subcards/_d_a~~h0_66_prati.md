@@ -102,7 +102,7 @@
 - **RU:** — 7) мед. начинать, приступать: *prati stomaṃ dadhīmahi turāṇām*
 [ṚV. 7,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.040.html#rv07.040.01) [73,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.073.html#rv07.073.01) *prati vāṃ stomo adhāyi*
 [1,183,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.183.html#rv01.183.06) *ūrdhvā dhītiḥ pratyasya prayāmanyadhāyi*
-[119,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.119.html#rv01.119.02) pass.: *ahāni śaṃ bhavantu naḥ śaṃ rātrī prati dhīyatāṃ śamuṣā no vyucchatu* да наступит ночь, да придёт
+[119,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.119.html#rv01.119.02) pass.: *ahāni śaṃ bhavantu naḥ śaṃ rātrī prati dhīyatāṃ śamuṣā no vyucchatu* да наступит ночь, да придет
 [AV. 7,69,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.069.html#av07.069.01) (ср.
 [VS. 36,11](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?36,11), где читается *rātrīḥ*, что не следует рассматривать с
 [MAH.] как pl.). *sugrīṣmaḥ pratidhīyatāṃ*

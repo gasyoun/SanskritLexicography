@@ -78,7 +78,7 @@ a.ls:hover{text-decoration:underline;border-bottom-color:transparent}
    wait. contain-intrinsic-size keeps the scrollbar stable. */
 .sub,.sense,.leaf{content-visibility:auto;contain-intrinsic-size:auto 320px}
 </style></head><body><div id="wrap">
-<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 10px 6px">📖 словарь сокращений</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
+<nav id="side"><h1>PWG статьи</h1><a href="abbreviations.html" style="display:block;font-size:12px;color:var(--mut);margin:-4px 0 2px 6px">📖 словарь сокращений</a><a href="government.html" style="display:block;font-size:12px;color:var(--mut);margin:0 0 10px 6px">⚖ управление (Rektion)</a><input id="q" placeholder="фильтр корней…"><div id="list"></div></nav>
 <main id="main"><div id="arthead"></div><div id="artbody" class="lang-ru"><p class="na">Загрузка…</p></div></main></div>
 <script src="articles.js"></script>
 <script>
@@ -182,5 +182,17 @@ document.getElementById('main').addEventListener('click',function(e){
  var b=e.target.closest?e.target.closest('.tab'):null;if(!b)return;lang=b.getAttribute('data-lang');applyLang();
 });
 q.oninput=function(){renderList(q.value.toLowerCase());};
-renderList('');if(A.roots.length){renderList('');renderRoot(A.roots[0]);}
+// Deep-link: government.html / abbreviations.html open a full entry via
+// index.html#g=<safe> (H1308 V4 — clickable full-entry links). Fall back to the
+// first root when the hash is absent or names no known root.
+function rootByHash(){
+ var m=(location.hash||'').match(/^#g=(.+)$/); if(!m)return null;
+ var safe=decodeURIComponent(m[1]);
+ for(var i=0;i<A.roots.length;i++){if(A.roots[i].safe===safe||A.roots[i].root===safe)return A.roots[i];}
+ return null;
+}
+function openHash(){var r=rootByHash(); if(r){cur=r.root;renderList(q.value.toLowerCase());renderRoot(r);window.scrollTo(0,0);}}
+window.addEventListener('hashchange',openHash);
+renderList('');
+if(A.roots.length){var start=rootByHash()||A.roots[0];cur=start.root;renderList('');renderRoot(start);}
 </script></body></html>

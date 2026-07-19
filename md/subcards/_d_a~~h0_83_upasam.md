@@ -31,7 +31,7 @@
 - **RU:** — 2) соединять с: *padena padam*
 [ŚĀṄKH. ŚR. 18,1,13. 20,1.]
 [ṚV. PRĀT. 10,1.] соединять кого-либо с чем-либо so преим. наделять: *nyāyapravṛtto nṛpatirātmānamapi ca prajāḥ . trivargeṇopasaṃdhatte nihanti dhruvamanyathā ..*
-[KĀM. NĪTIS. 1,13.] *upasaṃhita* соединённый с, снабжённый, сопровождаемый —, окружённый: *prajñāsaṃbhāvito nūnamaprajñairupasaṃhitaḥ*
+[KĀM. NĪTIS. 1,13.] *upasaṃhita* соединенный с, снабженный, сопровождаемый —, окруженный: *prajñāsaṃbhāvito nūnamaprajñairupasaṃhitaḥ*
 [MBH. 13,5895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5895) *viraktaṃ śodhyate vastraṃ na tu kṛṣṇopasaṃhitam*
 [12,10732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10732) *brāhmaṇaścenna vidyeta śrutavṛttopasaṃhitaḥ*
 [13,5831.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5831) *sunṛśaṃsamidaṃ karma teṣāṃ krūropasaṃhitam*
@@ -57,5 +57,5 @@
 [MBH. 12,4105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4105) Viell. unter sich verbunden oder zugethan.
 
 - **RU:** — 4) не вполне ясно знач. von *upasaṃhita* в месте: *sahāyānanuraktāṃśca nayajñānupasaṃhitān . parasparamasaṃsṛṣṭānvijigīṣūnalolupān ..*
-[MBH. 12,4105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4105) возможно связанные между собою oder преданные.
+[MBH. 12,4105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4105) возможно связанные между собою или преданные.
   <sub>attested</sub>

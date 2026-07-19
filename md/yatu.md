@@ -14,5 +14,5 @@ _PWG article — 1 sub-card(s), 2 sense(s) · RU 2/2 · EN 0/2_
 
 **1 (PW))** *yatu* anzunehmen für *yatavya*.
 
-- **RU:** *yatu* следует принять вместо *yatavya*.
+- **RU:** *yatu* следует принять вм. *yatavya*.
   <sub>lexicographic</sub>

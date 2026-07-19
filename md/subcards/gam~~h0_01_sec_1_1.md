@@ -23,7 +23,7 @@
 [ŚĀK. 59.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?59)
 [PAÑCAT. II,54.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,54)
 
-- **RU:** — h) впавший в некое состояние, положение, отношение, пребывающий в нём; восполнение
+- **RU:** — h) впавший в некое состояние, положение, отношение, пребывающий в нем; восполнение
  α) в acc.: *atha yo 'bhayaṃ gato bhavati*
 [TAITT. UP. 2,7.] *anayam*
 [M. 10,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,95) [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,102) *saṃyogaṃ patitaiḥ*
@@ -86,7 +86,7 @@
 [KUMĀRAS. 4,24.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,24) *gato grāmo devadattena*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), Sch.
 
-- **RU:** — k) посещённый, на который ступала нога: *bhartṛputragate pathi*
+- **RU:** — k) посещенный, на который ступала нога: *bhartṛputragate pathi*
 [R. 2,52,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,53) *suhṛdgatāṃ gatim*
 [KUMĀRAS. 4,24.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,24) *gato grāmo devadattena*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), схол.
@@ -97,9 +97,9 @@
 [DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* in der Bedeutung von... bekannt
 [H. an. 2,177.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,177)
 
-- **RU:** — l) распространённый, известный, = *vijñāta*
+- **RU:** — l) распространенный, известный, = *vijñāta*
 [MED. t. 15.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,15) *bhīmeti śabdo 'sya gataḥ pṛthivyām*
-[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в значении...
+[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в знач....
 [H. an. 2,177.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,177)
   <sub>attested</sub>
 
@@ -128,7 +128,7 @@
 [P. 2,2,13](https://ashtadhyayi.com/sutraani/2/2/13), [Sch. 3,68],
 [Sch. 3,4,76], Sch.
 
-- **RU:** — b) место, куда кто-л. ушёл: *idameṣāṃ gatam*
+- **RU:** — b) место, куда кто-л. ушел: *idameṣāṃ gatam*
 [P. 2,2,13](https://ashtadhyayi.com/sutraani/2/2/13), [Sch. 3,68],
 [Sch. 3,4,76], схол.
   <sub>attested</sub>
@@ -136,7 +136,7 @@
 **2c)** — c) Verbreitung, Erstreckung, Bekanntsein: *yāvannāmno gatam*
 [CHĀND. UP. 7,1,5.]
 
-- **RU:** — c) распространение, протяжённость, известность: *yāvannāmno gatam*
+- **RU:** — c) распространение, протяженность, известность: *yāvannāmno gatam*
 [CHĀND. UP. 7,1,5.]
   <sub>attested</sub>
 

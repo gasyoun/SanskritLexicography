@@ -117,9 +117,9 @@
 [MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl mit Allem reichlich versehen
 [R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
 
-- **RU:** — 13) *vihita* снабжённый чем-либо, обладающий: *annapānaiḥ suvihitāḥ*
+- **RU:** — 13) *vihita* снабженный чем-либо, обладающий: *annapānaiḥ suvihitāḥ*
 [R. 1,13,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,16) *sarvakāmaiḥ suvihitā*
-[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделённый всем
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
 [R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
   <sub>attested</sub>
 
@@ -127,7 +127,7 @@
 [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20) fehlerhaft für *pidhāya* .
 
 - **RU:** — 14) *vidhāya buddhyā dvārāṇi*
-[MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20) fehlerhaft für *pidhāya* .
+[MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20) ошибочно вм. *pidhāya* .
   <sub>attested</sub>
 
 **caus)** — Vgl. *vidhā, ˚dhātar, ˚dhāna, ˚dhi, ˚dheya, ˚hiti* . — caus. legen lassen: *pādayoḥ śakaṭaṃ cakrurantarorābudūkhalam . vānaspatyāni cānyāni antare 'pi vyadhāpayan ..*
@@ -149,8 +149,8 @@
 [119.] *karma vakṣyamāṇamantrajapalakṣaṇaṃ vidhitsamānaṃ* (lies *˚dhitsyamānaṃ*) *tadetāni japediti*
 [66.]
 
-- **RU:** — 2) пытаться установить, стараться представить что-либо как решённое: *tathā pratiṣṭhāguṇaṃ vidhitsannāha*
-[ŚAṂK.] zu [BṚH. ĀR. UP. p. 118.] *evaṃ prāṇavijñānavato japakarma vidhitsyate*
+- **RU:** — 2) пытаться установить, стараться представить что-либо как решенное: *tathā pratiṣṭhāguṇaṃ vidhitsannāha*
+[ŚAṂK.] к [BṚH. ĀR. UP. p. 118.] *evaṃ prāṇavijñānavato japakarma vidhitsyate*
 [119.] *karma vakṣyamāṇamantrajapalakṣaṇaṃ vidhitsamānaṃ* (lies *˚dhitsyamānaṃ*) *tadetāni japediti*
 [66.]
   <sub>attested</sub>
@@ -170,7 +170,7 @@
 [HARIV. 1311.](https://sanskrit-lexicon-scans.github.io/hariv?1311) *vairasyāntaṃ vidhitsan*
 [6460.](https://sanskrit-lexicon-scans.github.io/hariv?6460) *bhagavāṃstadvidhitsati*
 [BHĀG. P. 3,16,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,35) *vidhitsita* _n._ намерение
-[1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* имеющий определённые намерения, преследующий определённые цели
+[1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* имеющий определенные намерения, преследующий определенные цели
 [MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
 [BHĀG. P. 4,6,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,7) *ātmānamapratidvandvamekarājaṃ vyadhitsata* он думал о том, чтобы стать единовластным правителем
 [7,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,1)

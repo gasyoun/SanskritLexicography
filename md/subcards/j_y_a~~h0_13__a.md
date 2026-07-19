@@ -47,7 +47,7 @@ Befehl des Bruders richtete
 
 приказу брата
 [3,51,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,8) — *ājajñatuḥ*
-[HARIV. 2929](https://sanskrit-lexicon-scans.github.io/hariv?2929) ошибочно вместо *ājagmatuḥ* .
+[HARIV. 2929](https://sanskrit-lexicon-scans.github.io/hariv?2929) ошибочно вм. *ājagmatuḥ* .
   <sub>attested</sub>
 
 **block-2-head)** — Vgl. *ājñā, ājñāta, ājñāna* fg., *ājñāyin, anājñāta* . — caus.

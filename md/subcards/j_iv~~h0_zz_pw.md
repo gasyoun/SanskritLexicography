@@ -7,7 +7,7 @@
 — 1〉 leben, am Leben sein, — bleiben. *jīva jīva* mögest du lange leben! Auch mit dem Acc. *jīvikām, jīvant* und *jīvita* (ausnahmsweise) lebend, lebendig, noch am Leben seiend. *jīvangacchati* so v. a. bleibt am Leben [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
 - **RU:** √*jīv*, *jīvati* (метрически также Med.)
-— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живёшь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, ещё живой. *jīvangacchati* так преим. остаётся в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
+— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живешь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, еще живой. *jīvangacchati* так преим. остается в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
   <sub>attested</sub>
 
 **2)** — 2〉 aufleben.
@@ -26,7 +26,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — 1〉 lebendig machen, beleben. *jīvita* belebt, lebendig gemacht [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
 
 - **RU:** — Caus. *jīvayati* (в эпосе также Med.)
-— 1〉 оживлять, делать живым. *jīvita* оживлённый, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
+— 1〉 оживлять, делать живым. *jīvita* оживленный, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
   <sub>attested</sub>
 
 **caus. 2)** — 2〉 Jmd am Leben lassen, Jmds Leben erhalten, so v. a. Jmd nicht sterben lassen und Jmd nicht tödten.
@@ -91,7 +91,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **anu- 3)** — 3〉 leben von, bestehen durch, erhalten werden von; mit Acc.
 
-- **RU:** — 3〉 жить от, существовать благодаря, содержаться за счёт; с Acc.
+- **RU:** — 3〉 жить от, существовать благодаря, содержаться за счет; с Acc.
   <sub>attested</sub>
 
 **anu- 4)** — 4〉 sich in Etwas (Acc.) fügen, Jmd Etwas gönnen. v. l. *anujānīmas* st. *˚jīvāmas*.
@@ -133,7 +133,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — 1〉 seinen Lebensunterhalt haben [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
 - **RU:** — С *upa*
-— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счёт, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
   <sub>attested</sub>
 
 **sam- 2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.

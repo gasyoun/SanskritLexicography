@@ -44,7 +44,7 @@
 — 1〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), entstehen, — aus (Abl.).
 
 - **RU:** — С *vi*
-— 1〉 рождаться, — от (Loc.), быть порождённым, — от (Abl.), возникать, — из (Abl.).
+— 1〉 рождаться, — от (Loc.), быть порожденным, — от (Abl.), возникать, — из (Abl.).
   <sub>attested</sub>
 
 **Mit T9 — 2〉)** — 2〉 sich verwandeln in, werden zu (Nom.).
@@ -59,7 +59,7 @@
 
 **Mit T9 — 4〉)** — 4〉 zeugen, gebären, — von (Abl.), Kinder-, Junge zur Welt bringen. *vijātā* die geboren hat.
 
-- **RU:** — 4〉 порождать, рожать, — от (Abl.), производить на свет детей, детёнышей. *vijātā* та, которая родила.
+- **RU:** — 4〉 порождать, рожать, — от (Abl.), производить на свет детей, детенышей. *vijātā* та, которая родила.
   <sub>attested</sub>
 
 **Mit T16 — 1〉)** — Mit *sam*
@@ -71,7 +71,7 @@
 
 **Mit T16 — 2〉)** — 2〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), wachsen, entstehen, — aus (Abl.), sich einstellen, zum Vorschein kommen, sich ereignen.
 
-- **RU:** — 2〉 рождаться, — от (Loc.), быть порождённым, — от (Abl.), расти, возникать, — из (Abl.), наступать, появляться, происходить.
+- **RU:** — 2〉 рождаться, — от (Loc.), быть порожденным, — от (Abl.), расти, возникать, — из (Abl.), наступать, появляться, происходить.
   <sub>attested</sub>
 
 **Mit T16 — 3〉)** — 3〉 werden; verfliessen (von der Zeit).

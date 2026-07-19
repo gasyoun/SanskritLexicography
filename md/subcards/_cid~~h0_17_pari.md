@@ -30,7 +30,7 @@
 [SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
 
 - **RU:** 3) отделять, обособлять: *śatena śatena vatsānpāyayati payaḥ . śatena paricchidyetyarthaḥ*
-[SIDDH. K.] zu [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
+[SIDDH. K.] к [P. 2,3,27.](https://ashtadhyayi.com/sutraani/2/3/27)
   <sub>attested</sub>
 
 **4)** — 4) nach allen Seiten abgrenzen, genau bestimmen, genau angeben, richtig abschätzen, sich Gewissheit über Etwas oder Jmd verschaffen
@@ -47,7 +47,7 @@
 [KAP. 1,77.]
 Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 
-- **RU:** 4) точно ограничивать со всех сторон, точно определять, точно указывать, правильно оценивать, удостоверяться в чём-либо или в ком-либо
+- **RU:** 4) точно ограничивать со всех сторон, точно определять, точно указывать, правильно оценивать, удостоверяться в чем-либо или в ком-либо
 [Z. d. d. m. G. 7,310, N. 1.] [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), схол. *yasya na cānubandhi yaśaḥ paricchettumiyattayālam*
 [RAGH. 6,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,77)
 [RĀJA-TAR. 4,206.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,206) *gatiḥ śakyā paricchettuṃ na hyadbhutavidhervidheḥ*
@@ -57,9 +57,9 @@ Sch. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
 [PAÑCAT. 161,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?161,24) *parātmanoḥ paricchidya śaktyādīnāṃ balābalam*
 [RAGH. 17,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,59) *(tam) śīrṣacchedyaṃ paricchidya* удостоверившись в том, что тот заслуживает казни,
 [15,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,51) *viśvaṃ vai brahmatanmātraṃ saṃsthitaṃ viṣṇumāyayā . īśvareṇa paricchinnaṃ kālenāvyaktamūrtinā ..*
-[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: «предстаёт к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стеснённый: *paricchinnaṃ na sarvopādānam*
+[BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) ([BURN.]: «предстает к существованию со своими делениями, по воле Высшего Существа»). *paricchinna* ограниченный, стесненный: *paricchinnaṃ na sarvopādānam*
 [KAP. 1,77.]
-схол. zu [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
+схол. к [KAP. 1,28. 49. 50.] [VEDĀNTAS. (Allah.) No. 36.]
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *paricchitti* u. s. w.

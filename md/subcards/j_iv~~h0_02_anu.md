@@ -9,7 +9,7 @@
 [RAGH. 19,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,15)
 
 - **RU:** anu+*anu*
-1) жить вслед за кем-л., жить так, как живёт другой; с acc.: *imaṃ paścādanu jīvātha sarve*
+1) жить вслед за кем-л., жить так, как живет другой; с acc.: *imaṃ paścādanu jīvātha sarve*
 [TS. 5,7,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,4,4) *anvajīvadamarālakeśvarau*
 [RAGH. 19,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,15)
   <sub>attested</sub>

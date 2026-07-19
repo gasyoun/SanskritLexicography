@@ -1,6 +1,6 @@
 # bandh
 
-_PWG article — 31 sub-card(s), 137 sense(s) · RU 137/137 · EN 0/137_
+_PWG article — 31 sub-card(s), 135 sense(s) · RU 135/135 · EN 0/135_
 
 ## bandh
 
@@ -231,7 +231,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [AK. 2,8,2,31.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,31)
 [DAŚAK.] в [BENF. Chr. 201,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
 [R. 2,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,29) pass. в этом знач.: *srajaṃ tadā badhyati*
-[HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* связанный, закованный в оковы, привязанный, прикреплённый; взятый в плен
+[HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* связанный, закованный в оковы, привязанный, прикрепленный; взятый в плен
 [AK. 3,1,42.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,42) [3,2,44.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,44) [3,4,14,83.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,83)
 [H. 438.](https://sanskrit-lexicon-scans.github.io/abch2/app1?438)
 [HALĀY. 2,185. 4,62.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,185) *grīvāyāṃ baddhaḥ*
@@ -241,7 +241,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [6,74,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.074.html#rv06.074.03) *pāśe*
 [AV. 2,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.012.html#av02.012.02) *ātmanhyaṅgāni baddhāni*
 [TBR. 1,2,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,6,4) *tantryaḥ*
-[LĀṬY. 4,1,2.] *gaurbaddhavatmā* у которой телёнок привязан (в стойле) стоит
+[LĀṬY. 4,1,2.] *gaurbaddhavatmā* у которой теленок привязан (в стойле) стоит
 [ŚAT. BR. 4,2,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,22) — [SŪRYAS. 12,73.] *uccairbaddhāni cīrāṇi lakṣmaṇena* высоко подвешенный
 [R. GORR. 2,108,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,108,8) *ekaveṇī* привязанный наверху
 [MEGH. 89.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89) *navabaddhasya dantinaḥ* недавно связанный, — пойманный
@@ -365,10 +365,10 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 - **RU:** — 2) соединять, скреплять: *(kṛtvā) baddhaiḥ (kṛtvābaddhaiḥ*
 [TR.] и [BENFEY]) *śilābandhaiḥ setubandhamapāṭayan*
 [RĀJA-TAR. 5,92.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) *aṇavo* (атомы) *baddhāḥ*
-[LIṄGA-P.] при [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* соединённый по пяти —, по сто
+[LIṄGA-P.] при [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* соединенный по пяти —, по сто
 [HARIV. 3507.](https://sanskrit-lexicon-scans.github.io/hariv?3507) *rājānaḥ śreṇibaddhāḥ*
 [MBH. 2,568.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.568) *chāyābaddhakadambakaṃ mṛgakulam* образующий группы
-[ŚĀK. 39.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) *dehabaddha* соединённый с телом
+[ŚĀK. 39.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) *dehabaddha* соединенный с телом
 [RAGH. 11,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,35)
 [KUMĀRAS. 2,47.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,47) [5,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,30) *karmāṇi śīlena baddhāni*
 [Verz. d. Oxf. H. 56,a, N. 1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?56) *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate*, отсюда преим. приятный, сладостный для слуха
@@ -448,7 +448,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [YĀJÑ. 3,292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,292) останавливать, подавлять: *baddhadhārāpravāhena — aśruṇā*
 [SOM. NALA 164.] *baddhavāc* _adj._
 [BHĀG. P. 1,15,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,43) *baddha* прерывисто в противоп., в сравнении с *drava* текущий
-[SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu*, отсюда преим. осушённый
+[SUŚR. 2,443,18.] *vanarājiṣu — baddhapaṅkavatīṣu*, отсюда преим. осушенный
 [HARIV. 3841.](https://sanskrit-lexicon-scans.github.io/hariv?3841)
   <sub>attested</sub>
 
@@ -492,7 +492,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [28,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,117) *baddhānandā divasāḥ*
 [23,94.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,94) производить, делать: *anyo'nyadāsabhāvaṃ ca paṇamatra babandhuḥ*, отсюда преим. условились
 [KATHĀS. 22,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,182) *kramaṃ babandha kramitum*
-[BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *ākāśe lakṣyaṃ (lakṣaṃ) bandh* обозначить себе цель в воздушном пространстве, отсюда преим. смотреть в определённом направлении в воздух
+[BHAṬṬ. 2,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,9) *ākāśe lakṣyaṃ (lakṣaṃ) bandh* обозначить себе цель в воздушном пространстве, отсюда преим. смотреть в определенном направлении в воздух
 [ŚĀK. 31,7](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?31,7), v. l.
 [MUDRĀR. 6,19. 31,3. 62,5.] *ākāśabaddhalakṣa*
 [VIKRAM. 54,4.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?54,4)
@@ -710,7 +710,7 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
 [4,27,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,10) *ubhayorapi rājendra saṃbandhenānubadhyatām . ikṣvākukulam* «приводить в связь»
 [R. 1,72,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,8) *anyo'nyānubaddha (trivarga)*
 [Verz. d. Oxf. H. 216,a,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?216) *anubaddhena hṛṃdā śṛṇvanhareḥ kathāḥ* «со скованным, полностью на [это] направленным сердцем»
-[BHĀG. P. 3,22,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,33) pass. «как» Анубандха «быть присоединённым»: *dviścakāro 'nubadhyate*
+[BHĀG. P. 3,22,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,33) pass. «как» Анубандха «быть присоединенным»: *dviścakāro 'nubadhyate*
 [P. 3,1,44](https://ashtadhyayi.com/sutraani/3/1/44), схол.
   <sub>attested</sub>
 
@@ -752,7 +752,7 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
 **5)** — 5) auf Etwas bestehen
 [KATHĀS. 49,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,47)
 
-- **RU:** — 5) «настаивать на чём-л.»
+- **RU:** — 5) «настаивать на чем-л.»
 [KATHĀS. 49,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,47)
   <sub>attested</sub>
 
@@ -888,7 +888,7 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* die hohlen Hände zusammengefügt habend
 [DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
-- **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вместо *vātābaddhā abhavan)* «сжатый в кулак»
+- **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вм. *vātābaddhā abhavan)* «сжатый в кулак»
 [MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* «сложивший ладони лодочкой»
 [DAŚAK.] в [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
@@ -966,7 +966,7 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
  1) привязывать т.е. привязывать вверх, подвешивать: *bhujaṃgamodbaddhajaṭākalāpa*
 [KUMĀRAS. 3,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,46) *udbaddhamukuṭa*
 [MBH. 13,899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.899) *udbaddhakeśa*
-[RAGH. 16,67](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,67) ошибочно вместо *udbandha˚* (т.е. с распущенными волосами, как
+[RAGH. 16,67](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,67) ошибочно вм. *udbandha˚* (т.е. с распущенными волосами, как
 [ST.] тоже переводит), как имеет [ed. Calc.]. *asminvṛkṣe kilodbaddhaṃ śarīram* подвешенный
 [MBH. 4,1312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1312) мед. повеситься
 [ŚAT. BR. 11,5,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,8) *galamudbadhya dṛḍhayā celacīrayā* затянуть себе горло
@@ -1094,11 +1094,11 @@ Nach [DHĀTUP. 32,14](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-wester
 [Spr. 2044.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2044) *sūcyā sūtraṃ yathā vastre saṃsārayati vāyakaḥ . tadvatsaṃsārasūtraṃ hi tṛṣṇāsūcyā nibadhyate ..*
 [MBH. 12,7878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7878) *ekanibaddhaveṇī* связанный вместе
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042) *dhanuṣī* привязываться
-[R. GORR. 2,31,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,31,28) [3,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,19) *dṛḍhataranibaddhamuṣṭi (kṛpāṇa)* прикреплённый
+[R. GORR. 2,31,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,31,28) [3,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,19) *dṛḍhataranibaddhamuṣṭi (kṛpāṇa)* прикрепленный
 [Spr. 1277.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1277) *saparivāro nibaddhaḥ* пойманный (в сеть)
 [PAÑCAT. 105,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?105,9) *arthairarthā nibadhyante gajairiva mahāgajāḥ*
 [Spr. 228.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?228) [2524.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2524) [3603.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3603)
-[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) *arthatastu nibadhyante mitrāṇi ripavastathā* — отсюда преим. польза создаёт нам друзей и врагов
+[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) *arthatastu nibadhyante mitrāṇi ripavastathā* — отсюда преим. польза создает нам друзей и врагов
 [Spr. 4274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4274) *ātmavantaṃ na karmāṇi nibadhnanti* оковывать, заковывать в цепи
 [BHAG. 4,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,41) [9,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,9) [14,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,7) *kṛtvāpi na nibadhyate*
 [4,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,22) [18,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,17) [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) [BHĀG. P. 4,26,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,8) [7,2,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,41) *yadyatpaśyāmi te gātram — tasmiṃstasmin — cakṣurmama nibadhyate*
@@ -1144,11 +1144,11 @@ furchen
 [KATHĀS. 34,203.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,203) *pāṣāṇacayanibaddhe kūpe* оправленный в камни
 [PAÑCAT. 211,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?211,5) *hemanibaddhacakra* инкрустированный золотом, — украшенный золотом
 [MBH. 12,1585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1585) [13,2785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2785) *mandaṃ prakhyāyamānena rūpeṇāpratimena tām . nibaddhāṃ (pinaddhāṃ*
-[R. 5,18,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,4)) *dhūmajālena prabhāmiva vibhāvasoḥ ..* завёрнутый в, покрытый
+[R. 5,18,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,4)) *dhūmajālena prabhāmiva vibhāvasoḥ ..* завернутый в, покрытый
 [3,2662.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,2662) *pañcadhātunibaddhā* составленный из
-[HARIV. 12030.](https://sanskrit-lexicon-scans.github.io/hariv?12030) *vicitrasadasatkarmanibaddhāḥ (jantavaḥ)* сопровождаемый, снабжённый
+[HARIV. 12030.](https://sanskrit-lexicon-scans.github.io/hariv?12030) *vicitrasadasatkarmanibaddhāḥ (jantavaḥ)* сопровождаемый, снабженный
 [KATHĀS. 27,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,77)
-[GAUḌAP.] к [SĀṂKHYAK. 59.] *nibaddha* заключённый, вставленный, содержащийся, находящийся на, — в: *dhārānibaddheva kalaṅkalekhā*
+[GAUḌAP.] к [SĀṂKHYAK. 59.] *nibaddha* заключенный, вставленный, содержащийся, находящийся на, — в: *dhārānibaddheva kalaṅkalekhā*
 [RAGH. 13,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,15) *aṣṭādaśasu mārgeṣu nibaddhāni (kāryāṇi)*
 [M. 8,3.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,3) *bhāṣyavārttikayornibaddhāni*
 [Verz. d. Oxf. H. No. 354.] *agrāhyamanibaddhaṃ ca vācā saṃparivarjayet* не выраженный в словах — отсюда преим. плохо выраженный
@@ -1156,7 +1156,7 @@ furchen
 [YĀJÑ. 3,135.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,135) соединять — отсюда преим. записывать, составлять, редактировать: *nibadhnīyāttathā sīmāṃ sarvāṃ stāṃścaiva nāmataḥ*
 [M. 8,255.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,255) *nibaddhaṃ puṇyamākhyānaṃ rāmāyaṇam*
 [R. GORR. 1,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,5,3) [VIKR. 36.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?36) [VARĀH. LAGHUJ. 1,2] в [Ind. St. 2,277.] [RĀJA-TAR. 1,8.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,8) [KATHĀS. 8,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,2) [5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,5) [HALL] во введении к [VĀSAVAD. 24.]
-[Verz. d. Oxf. H. 211,a,32.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?211) [261,a,28.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?261) *ādau nibadhnāti svāmyamityādinā* — отсюда преим. он начинает своё сочинение с *svāmyam* и т.д.
+[Verz. d. Oxf. H. 211,a,32.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?211) [261,a,28.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?261) *ādau nibadhnāti svāmyamityādinā* — отсюда преим. он начинает свое сочинение с *svāmyam* и т.д.
 [No. 602.] [KULL.] к [M. 8,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,142) *praṇītam = smṛtirūpeṇa nibaddham*
 [MALLIN.] к [KUMĀRAS. 6,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,31) рассуждать о: *svaśākhāvihitaiścāpi śākhāntaragatānvidhīn . kalpakārā vibadhnanti* (читай *niba˚) sarva eva vikalpitān ..*
 [KUMĀRILA] у [MÜLLER, SL. 178.]
@@ -1212,11 +1212,6 @@ furchen
 [MBH. 9,3029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3029)
   <sub>attested</sub>
 
-**cross-ref)** {T196}— Vgl. *nibanddhar* fgg. und *anibaddha* .
-
-- **RU:** {T196}— ср. *nibanddhar* сл. und *anibaddha* .
-  <sub>attested</sub>
-
 ## upani+bandh
 
 `ban_d~~h0_12_upani`
@@ -1247,7 +1242,7 @@ furchen
 [R. 2,48,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,25) besetzt mit: *krīḍāśca* (Spielplätze) *nānādrumasaṃnibaddhāḥ*
 [MBH. 3,12318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12318)
 
-- **RU:** — *saṃni*, partic. *saṃnibaddha* прикреплённый к, висящий на, зависящий от: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
+- **RU:** — *saṃni*, partic. *saṃnibaddha* прикрепленный к, висящий на, зависящий от: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
 [BRAHMAVAIV. P.] в [Verz. d. Oxf. H. 20,b,8.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?20) *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
 [R. 2,48,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,25) усеянный чем-л.: *krīḍāśca* (места для игр) *nānādrumasaṃnibaddhāḥ*
 [MBH. 3,12318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12318)
@@ -1388,12 +1383,12 @@ Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
 [HARIV. 3449.](https://sanskrit-lexicon-scans.github.io/hariv?3449) *śirasyetaṃ maṇiṃ rājā pratibadhnātu*
 [MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) *pītapratibaddhavatsā*
 [RAGH. 2,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,1)
-[SUŚR. 1,161,21.] *sthūlāntrapratibaddha* прикреплённый к, висящий на
+[SUŚR. 1,161,21.] *sthūlāntrapratibaddha* прикрепленный к, висящий на
 [258,10. 324,3.] вставлять в оправу: *yadi maṇistrapuṇi pratibadhyate*
 [Spr. 595.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?595) украшать, отделывать: *bahalānurāgakuruvindadalapratibaddhamadhyamiva digvalayam*
-[ŚIŚ. 9,8.] *pratibaddha* связанный, соединённый
+[ŚIŚ. 9,8.] *pratibaddha* связанный, соединенный
 [KAP. 1,101.] *yo yena pratibaddhaḥ syāt*
-[Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) снабжённый, наделённый: *dīptāṅgadayugapratibaddhamahābhuja*
+[Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) снабженный, наделенный: *dīptāṅgadayugapratibaddhamahābhuja*
 [MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) *dharmārthapratibaddhatā*
 [H. 69.](https://sanskrit-lexicon-scans.github.io/abch2/app1?69) *paśuvatparatantratvena pratibaddhaḥ* так: зависимый
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* подверженный смерти
@@ -1480,7 +1475,7 @@ Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
 [SUŚR. 2,409,12.] закупоренный, закрытый
 [411,11.] — *vibaddha* в гана *ṛśyādi* к [P. 4,2,80.](https://ashtadhyayi.com/sutraani/4/2/80)
 *vibadhnanti* при
-[MÜLLER, SL. 178] ошибочно вместо *nibadhnanti* .
+[MÜLLER, SL. 178] ошибочно вм. *nibadhnanti* .
   <sub>attested</sub>
 
 **Nachtrag (T26))** — Vgl. *vibandha* .
@@ -1544,7 +1539,7 @@ Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramas
 [MBH. 4,172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.172) *vartmāni saṃbadhyante* склеивать
 [SUŚR. 2,309,10.] *anyo'nyasaṃbaddha* связанный между собой
 [58,15.] *yathā chāyātapau nityaṃ susaṃbaddhau parasparam*
-[Spr. 2309.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2309) *yāyātsaṃbaddhasainyaughaḥ* со сплочённым войском
+[Spr. 2309.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2309) *yāyātsaṃbaddhasainyaughaḥ* со сплоченным войском
 [KĀM. NĪTIS. 18,47.] [KAP. 1,90.]
 
 *sā (gaṅgā) saṃbadhyamānārkaraśmisaṃgatipāvanī* соединяющийся
@@ -1561,16 +1556,16 @@ Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramas
 [3,56,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,31) *vedasaṃbaddhāḥ (kathāḥ)* находящийся в отношении к, имеющий отношение к
 [MBH. 13,1781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1781) *rāmasaṃbaddha (ākhyāna)*
 [R. GORR. 1,4,147.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,147) *devānāmeṣa vai jayaḥ — purāṇo vedasaṃbaddhaḥ* содержащийся в Веда, упоминаемый
-[HARIV. 12605.](https://sanskrit-lexicon-scans.github.io/hariv?12605) *saṃbaddha* прикреплённый так: присутствующий, наличный, находящийся: *kusumamiva lobhanīyaṃ yauvanamaṅgeṣu saṃbaddham* (v. l. вместо *saṃnaddham)*
+[HARIV. 12605.](https://sanskrit-lexicon-scans.github.io/hariv?12605) *saṃbaddha* прикрепленный так: присутствующий, наличный, находящийся: *kusumamiva lobhanīyaṃ yauvanamaṅgeṣu saṃbaddham* (v. l. вм. *saṃnaddham)*
 [ŚĀK. 20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?20) *(tapovanāni) saṃbaddhavaikhānasakanyakāni* (по схол. = *kṛtasakhya)*
 [RAGH. 14,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,28) *saṃbaddhadarpa* _adj._
 [MBH. 3,12380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12380) *karmāṇyakuhakārthāni yeṣāṃ vācaśca sūnṛtāḥ . yeṣāmarthāśca saṃbaddhā durgāṇyatitaranti te*
 [12,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4064) *padāntāditi saṃbaddhameṅgrahaṇamanuvartate*
 [PAT.] к [P. 6,1,115.](https://ashtadhyayi.com/sutraani/6/1/115) *samartha = saṃbaddhārtha*
-[AK. 3,4,15,89.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,15,89) pass. быть соединённым так: принадлежать к, подлежать восполнению: *uttarapadagrahaṇaṃ bhagaśabdenaiva saṃbadhyate na tu pratyekam*
+[AK. 3,4,15,89.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,15,89) pass. быть соединенным так: принадлежать к, подлежать восполнению: *uttarapadagrahaṇaṃ bhagaśabdenaiva saṃbadhyate na tu pratyekam*
 [KĀŚ.] к [P. 5,1,9.](https://ashtadhyayi.com/sutraani/5/1/9) схол. к [P. 2,4,25.](https://ashtadhyayi.com/sutraani/2/4/25) [4,2.](https://ashtadhyayi.com/sutraani/2/4/2) *vako dālbhya iti vakṣyamāṇena saṃbadhyate*
 [ŚAṂK.] к [CHĀND. UP. 1,2,10.] [SĀH. D. 19,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?19,15) *ita ārabhyāgrimeṣu sūtreṣu catvāro 'rthāḥ saṃbadhyante* схол. к [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70)
-*asaṃbaddha* не состоящий ни в каком близком отношении, далёкий, не имеющий ничего общего с кем-л. или чем-л.
+*asaṃbaddha* не состоящий ни в каком близком отношении, далекий, не имеющий ничего общего с кем-л. или чем-л.
 [MBH. 3,1297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1297) *asaṃbaddhakṛtaścaiva vyavahāraḥ*
 [M. 8,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,163)
 [YĀJÑ. 2,32.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,32)
@@ -1675,12 +1670,12 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 [H. 894.](https://sanskrit-lexicon-scans.github.io/abch2/app1?894) *īṣābandhaṃ cakrabandhaṃ rathabandhaṃ tathaiva ca . prāṇāśayadameyātmā*
 [MBH. 7,8776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8776) *cakra˚ = cakre bandhaḥ*
 [P. 2,1,41](https://ashtadhyayi.com/sutraani/2/1/41), схол.
-*hastebandha* und *hasta˚*
+*hastebandha* и *hasta˚*
 [6,3,13](https://ashtadhyayi.com/sutraani/6/3/13), схол. ударение таких Compp.
 [P. 6,2,32.](https://ashtadhyayi.com/sutraani/6/2/32) *tasyeha paṭṭabandho vidhīyatām*
 [KATHĀS. 12,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,190) [14,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,33)
 [RĀJA-TAR. 4,718.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,718) *ūru˚*
-[575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* различные способы завязывать волосы, — причёски
+[575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* различные способы завязывать волосы, — прически
 [HALĀY. 2,375.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,375) *brahmāstreṇa ca bandho vai māruteḥ*
 [R. GORR. 1,4,84.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,84) *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
 [6,20,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,20,18) [5,44,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,13) [15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,15) [MBH. 3,16466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16466)
@@ -1749,14 +1744,14 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 [AŚOKĀVAD. 32.] *prāsādavātāyanadṛśyabandhaiḥ — añjalibhiḥ* сложение полых ладоней
 [RAGH. 14,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,13) *bahubhrukuṭibandhena vadanena* хмурение бровей
 [RĀJA-TAR. 5,344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,344) *mallabandhāntara* одна из определ. поз борцов
-[MED. p. 17.](https://sanskrit-lexicon-scans.github.io/medini/app1?p,17) *mahābandha, mūlabandha* und *bandha* определ. положений рук и ног
-[Verz. d. Oxf. H. 235,a,21. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?235) *strīṇāṃ, rata˚, surata˚, strī˚* und *bandha* allein соединение (тел), поза при совокуплении
+[MED. p. 17.](https://sanskrit-lexicon-scans.github.io/medini/app1?p,17) *mahābandha, mūlabandha* и *bandha* определ. положений рук и ног
+[Verz. d. Oxf. H. 235,a,21. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?235) *strīṇāṃ, rata˚, surata˚, strī˚* и *bandha* allein соединение (тел), поза при совокуплении
 [TRIK. 3,3,121.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,121)
 [H. an. 2,5.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,5) [355.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,355) [3,484.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,484)
 [MED. k. 21.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,21) [CAURAP. 48.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?48) их насчитывается
-[16], [18.] und auch
+[16], [18.] и также
 [36]
-[RATIM.] und [SMARADĪP.] в [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* завязка повествования, так преим. введение
+[RATIM.] и [SMARADĪP.] в [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* завязка повествования, так преим. введение
 [MBH. 1,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.59) в подпись
   <sub>attested</sub>
 
@@ -1798,7 +1793,7 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 - **RU:** — 7) обретение, проявление, выражение: *adehabandhāya* чтобы более не принимать тела
 [RAGH. 18,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,6) *bhūyastanutyajāṃ nāsti śarīrabandhaḥ*
-[13,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,58) *dehabandhānamānuṣān* вероятно наделённый телом (т.е. = *dehabaddha)*
+[13,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,58) *dehabandhānamānuṣān* вероятно наделенный телом (т.е. = *dehabaddha)*
 [HARIV. 9030.](https://sanskrit-lexicon-scans.github.io/hariv?9030) *rāgabandha* так преим. привязанность
 [MĀLAV. 29.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?29)
 [RAGH. 18,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,51) *abhilāṣa˚*
@@ -1866,13 +1861,6 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 - **RU:** — 11) залог или точнее закладывание (ср. *bandhaka)*
 [H. an.] [MED.]
-  <sub>attested</sub>
-
-**12)** {T235}— 12) Körper
-[H. 564.](https://sanskrit-lexicon-scans.github.io/abch2/app1?564)
-
-- **RU:** {T235}— 12) тело
-[H. 564.](https://sanskrit-lexicon-scans.github.io/abch2/app1?564)
   <sub>attested</sub>
 
 ## bandh
@@ -1948,13 +1936,13 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 **mit-T5-1)** — Mit *vi*
 — 1〉 auf verschiedenen Seiten anbinden; ausspannen, spannen.
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
 — 1〉 привязывать с разных сторон; распрягать, натягивать.
   <sub>attested</sub>
 
 **mit-T5-2)** — 2〉 an Schnüren (Instr.) fassen.
 
-- **RU:** — 2〉 захватывать верёвками (Instr.).
+- **RU:** — 2〉 захватывать веревками (Instr.).
   <sub>attested</sub>
 
 **mit-T5-3)** — 3〉 inʼs Stocken bringen. *purīṣam* [CARAKA. 5,10]. *vibaddha* inʼs Stocken gerathen, verstopft.
@@ -1964,13 +1952,13 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 **mit-T5-4)** — 4〉 *vibadhnanti* [MÜLLER, SL. 178] fehlerhaft für *niba˚*.
 
-- **RU:** — 4〉 *vibadhnanti* [MÜLLER, SL. 178] ошибочно вместо *niba˚*.
+- **RU:** — 4〉 *vibadhnanti* [MÜLLER, SL. 178] ошибочно вм. *niba˚*.
   <sub>attested</sub>
 
 **mit-T13-1)** — Mit *sam*
 — 1〉 zusammenbinden, verknüpfen, anbinden. Pass. sich verbinden, zusammenkleben, verbunden werden mit, so v. a. gehören zu (Instr. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), zu ergänzen sein in (Loc.). *saṃbaddha* zusammengebunden; geschlossen; verbunden mit (Instr. oder im Comp. vorangehend [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), bedeckt mit (Instr.), erfüllt von (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), so v. a. enthaltend; verbunden, so v. a. da seiend, vorhanden, sich befindend. *saṃbaddham* _Adv._ dazu, überdies.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 связывать вместе, соединять, привязывать. Pass. соединяться, слипаться, быть связанным с, так преим. принадлежать к (Instr. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), быть подразумеваемым в (Loc.). *saṃbaddha* связанный вместе; закрытый; связанный с (Instr. или в Comp. предшествующий [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), покрытый (Instr.), наполненный (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), так преим. содержащий; связанный, так преим. находящийся здесь, наличный, пребывающий. *saṃbaddham* _Adv._ сверх того, к тому же.
   <sub>attested</sub>
 
@@ -1993,22 +1981,22 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 **mit-T36)** Mit *anusam*. *anusaṃbaddha* verbunden mit, begleitet von (im Comp. vorangehend).
 
-- **RU:** Mit *anusam*. *anusaṃbaddha* связанный с, сопровождаемый (в Comp. предшествующий).
+- **RU:** С *anusam*. *anusaṃbaddha* связанный с, сопровождаемый (в Comp. предшествующий).
   <sub>attested</sub>
 
 **mit-T39)** — Mit *abhisam* mit Etwas verbinden, so v. a. darunter verstehen. Pass. verbunden werden mit, so v. a. gehören zu (Instr.). *pratyekam* zu Jedem gehören, — zu ergänzen sein [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
 
-- **RU:** — Mit *abhisam* соединять с чем-либо, так преим. подразумевать под этим. Pass. быть соединённым с, так преим. принадлежать к (Instr.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
+- **RU:** — С *abhisam* соединять с чем-либо, так преим. подразумевать под этим. Pass. быть соединенным с, так преим. принадлежать к (Instr.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
   <sub>attested</sub>
 
 **mit-T47)** — Mit *upasam*, *uapasaṃddha* darangebunden.
 
-- **RU:** — Mit *upasam*, *uapasaṃddha* привязанный к тому.
+- **RU:** — С *upasam*, *uapasaṃddha* привязанный к тому.
   <sub>attested</sub>
 
 **mit-T49)** — Mit *pratisam*, *pratisaṃbaddha* zusammenhängend, in Zusammenhang stehend [CARAKA. 3,8].
 
-- **RU:** — Mit *pratisam*, *pratisaṃbaddha* связанный вместе, находящийся во взаимосвязи [CARAKA. 3,8].
+- **RU:** — С *pratisam*, *pratisaṃbaddha* связанный вместе, находящийся во взаимосвязи [CARAKA. 3,8].
   <sub>attested</sub>
 
 ## bandh
@@ -2023,12 +2011,12 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 **mit-T5-sich-erhaengen)** — Mit *ā* Med. sich erhängen [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
 
-- **RU:** — Mit *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
+- **RU:** — С *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
   <sub>attested</sub>
 
 **mit-T8-fesseln)** — Mit *vini* IV. fesseln [JĀTAKAM. 31]. — Caus. dass. [17,17].
 
-- **RU:** — Mit *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
+- **RU:** — С *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
   <sub>attested</sub>
 
 ## bandh
@@ -2043,12 +2031,12 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 **mit-T5-sich-erhaengen)** — Mit *ā* Med. sich erhängen [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
 
-- **RU:** — Mit *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
+- **RU:** — С *ā* Med. вешаться (самоповешение) [R. ed. Bomb. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
   <sub>attested</sub>
 
 **mit-T8-fesseln)** — Mit *vini* IV. fesseln [JĀTAKAM. 31]. — Caus. dass. [17,17].
 
-- **RU:** — Mit *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
+- **RU:** — С *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
   <sub>attested</sub>
 
 ## bandh
@@ -2063,12 +2051,12 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 
 **sch-mit-a-sich-erhaengen)** — Mit ā [Med.] sich erhängen, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
 
-- **RU:** — Mit ā [Med.] вешаться, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
+- **RU:** — С ā [Med.] вешаться, [R. ed. Bomb. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
   <sub>attested</sub>
 
 **sch-mit-vini-fesseln)** — Mit vini fesseln, [Jātakam. 31.]
 
-- **RU:** — Mit vini оковывать, связывать, [Jātakam. 31.]
+- **RU:** — С vini оковывать, связывать, [Jātakam. 31.]
   <sub>attested</sub>
 
 **sch-dass-17-17)** — [Kaus.] dass.,17,17.
@@ -2125,7 +2113,7 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 [UTTARARĀMAC. 64,10], wo mit der neueren Ausg.
 ([82,12]) *vipralambhaḥ* zu lesen ist; nach dem Comm. *anubadhnāti = mohayati* .
 
-- **RU:** — 6) продолжаться, продолжать своё действие
+- **RU:** — 6) продолжаться, продолжать свое действие
 [UTTARARĀMAC. 64,10], где по новейшему изд.
 ([82,12]) следует читать *vipralambhaḥ*; по коммент. *anubadhnāti = mohayati* .
   <sub>attested</sub>
@@ -2147,7 +2135,7 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
 [RĀJA-TAR. 5,92](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) ist mit der [ed. Calc.] *kṛtvā baddhaiḥ śi˚* zu schreiben.
 
 - **RU:** — 2) *anyo'nyābaddhabāhavaḥ*
-[BHĀG. P. 10,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,6) — Вместо *kṛtvābaddhaiḥ śilābandhaiḥ*
+[BHĀG. P. 10,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,6) — Вм. *kṛtvābaddhaiḥ śilābandhaiḥ*
 [RĀJA-TAR. 5,92](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) следует по [ed. Calc.] писать *kṛtvā baddhaiḥ śi˚*.
   <sub>attested</sub>
 
@@ -2218,10 +2206,10 @@ Schol. zu [P. 2,2,11.](https://ashtadhyayi.com/sutraani/2/2/11) [1,6.](https://a
   <sub>attested</sub>
 
 **NW17-3)** 3) *rāgī badhnāti karmāṇi (kāryāṇi* vermuthet) so v. a. unterlässt
-[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
+[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732 "Spr. (II) 5732: rāgī badhnāti kāryāṇi nindyaṃ karma karoti ca | bhogasyākāṅkṣapā tasmādihāmutra sa duḥkhabhāk || — Ein in der Gewalt der Leidenschaft Stehender unterlässt aus Genusssucht das, was er thun sollte, und begeht eine tadelnswerthe Handlung")
 
 - **RU:** 3) *rāgī badhnāti karmāṇi (kāryāṇi* предполагается) так преим. упускает, не делает
-[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732)
+[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732 "Spr. (II) 5732: rāgī badhnāti kāryāṇi nindyaṃ karma karoti ca | bhogasyākāṅkṣapā tasmādihāmutra sa duḥkhabhāk || — Ein in der Gewalt der Leidenschaft Stehender unterlässt aus Genusssucht das, was er thun sollte, und begeht eine tadelnswerthe Handlung")
   <sub>attested</sub>
 
 **NW18)** — *anu* pass. erfolgen

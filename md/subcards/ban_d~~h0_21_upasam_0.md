@@ -38,12 +38,12 @@
 [H. 894.](https://sanskrit-lexicon-scans.github.io/abch2/app1?894) *īṣābandhaṃ cakrabandhaṃ rathabandhaṃ tathaiva ca . prāṇāśayadameyātmā*
 [MBH. 7,8776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8776) *cakra˚ = cakre bandhaḥ*
 [P. 2,1,41](https://ashtadhyayi.com/sutraani/2/1/41), схол.
-*hastebandha* und *hasta˚*
+*hastebandha* и *hasta˚*
 [6,3,13](https://ashtadhyayi.com/sutraani/6/3/13), схол. ударение таких Compp.
 [P. 6,2,32.](https://ashtadhyayi.com/sutraani/6/2/32) *tasyeha paṭṭabandho vidhīyatām*
 [KATHĀS. 12,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,190) [14,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,33)
 [RĀJA-TAR. 4,718.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,718) *ūru˚*
-[575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* различные способы завязывать волосы, — причёски
+[575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* различные способы завязывать волосы, — прически
 [HALĀY. 2,375.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,375) *brahmāstreṇa ca bandho vai māruteḥ*
 [R. GORR. 1,4,84.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,84) *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
 [6,20,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,20,18) [5,44,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,13) [15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,15) [MBH. 3,16466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16466)
@@ -112,14 +112,14 @@
 [AŚOKĀVAD. 32.] *prāsādavātāyanadṛśyabandhaiḥ — añjalibhiḥ* сложение полых ладоней
 [RAGH. 14,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,13) *bahubhrukuṭibandhena vadanena* хмурение бровей
 [RĀJA-TAR. 5,344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,344) *mallabandhāntara* одна из определ. поз борцов
-[MED. p. 17.](https://sanskrit-lexicon-scans.github.io/medini/app1?p,17) *mahābandha, mūlabandha* und *bandha* определ. положений рук и ног
-[Verz. d. Oxf. H. 235,a,21. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?235) *strīṇāṃ, rata˚, surata˚, strī˚* und *bandha* allein соединение (тел), поза при совокуплении
+[MED. p. 17.](https://sanskrit-lexicon-scans.github.io/medini/app1?p,17) *mahābandha, mūlabandha* и *bandha* определ. положений рук и ног
+[Verz. d. Oxf. H. 235,a,21. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?235) *strīṇāṃ, rata˚, surata˚, strī˚* и *bandha* allein соединение (тел), поза при совокуплении
 [TRIK. 3,3,121.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,121)
 [H. an. 2,5.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,5) [355.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,355) [3,484.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,484)
 [MED. k. 21.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,21) [CAURAP. 48.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?48) их насчитывается
-[16], [18.] und auch
+[16], [18.] и также
 [36]
-[RATIM.] und [SMARADĪP.] в [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* завязка повествования, так преим. введение
+[RATIM.] и [SMARADĪP.] в [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* завязка повествования, так преим. введение
 [MBH. 1,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.59) в подпись
   <sub>attested</sub>
 
@@ -161,7 +161,7 @@
 
 - **RU:** — 7) обретение, проявление, выражение: *adehabandhāya* чтобы более не принимать тела
 [RAGH. 18,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,6) *bhūyastanutyajāṃ nāsti śarīrabandhaḥ*
-[13,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,58) *dehabandhānamānuṣān* вероятно наделённый телом (т.е. = *dehabaddha)*
+[13,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,58) *dehabandhānamānuṣān* вероятно наделенный телом (т.е. = *dehabaddha)*
 [HARIV. 9030.](https://sanskrit-lexicon-scans.github.io/hariv?9030) *rāgabandha* так преим. привязанность
 [MĀLAV. 29.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?29)
 [RAGH. 18,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,51) *abhilāṣa˚*
@@ -229,11 +229,4 @@
 
 - **RU:** — 11) залог или точнее закладывание (ср. *bandhaka)*
 [H. an.] [MED.]
-  <sub>attested</sub>
-
-**12)** {T235}— 12) Körper
-[H. 564.](https://sanskrit-lexicon-scans.github.io/abch2/app1?564)
-
-- **RU:** {T235}— 12) тело
-[H. 564.](https://sanskrit-lexicon-scans.github.io/abch2/app1?564)
   <sub>attested</sub>

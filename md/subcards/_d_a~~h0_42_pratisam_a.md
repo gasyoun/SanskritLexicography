@@ -16,7 +16,7 @@
 [DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* ebend.
 [182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
 
-- **RU:** — 2) ставить что-либо обратно на своё место, приводить в порядок, восстанавливать: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
+- **RU:** — 2) ставить что-либо обратно на свое место, приводить в порядок, восстанавливать: *karṇakuvalayaṃ srastamiti pratisamādadhatī*
 [DAŚAK.] in [BENF. Chr. 196,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?196) (*dharmaḥ*) *bādhito 'pi cālpāyāsapratisamāhitaḥ* там же
 [182,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182)
   <sub>attested</sub>

@@ -6,6 +6,6 @@
 **1)** — *prod* hervorragen: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,9)
 
-- **RU:** — *prod* выступать, возвышаться над окружающим: *yadṛcchāprodgatodagrasapakṣagiri*
+- **RU:** — *prod* возвышаться: *yadṛcchāprodgatodagrasapakṣagiri*
 [KATHĀS. 26,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,9)
   <sub>attested</sub>

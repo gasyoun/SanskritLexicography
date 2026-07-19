@@ -26,7 +26,7 @@ _PWG article — 1 sub-card(s), 13 sense(s) · RU 13/13 · EN 0/13_
 
 **PW-1b)** — b〉 fehlerhaft für *mīna*.
 
-- **RU:** — b〉 ошибочно вместо *mīna*.
+- **RU:** — b〉 ошибочно вм. *mīna*.
   <sub>lexicographic</sub>
 
 **PW-2)** — 2〉 _f._ *menā*

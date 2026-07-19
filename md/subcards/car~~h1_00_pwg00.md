@@ -47,7 +47,7 @@ Z. 7 *caritavrata* auch
  f) und vgl. noch
 
 - **RU:** 2)
- f) и ср. ещё
+ f) и ср. еще
   <sub>attested</sub>
 
 **2-note)** [BHĀG. P. 3,18,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,19) *tṛṇaṃ car* so v. a. Gras fressen, weiden

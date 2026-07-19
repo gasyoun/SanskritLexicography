@@ -25,8 +25,8 @@
 [MBH. 2,842](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842); *jānītāt, jānata*
 [MBH. 2,2397](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2397); *abhyanujānithāḥ*
 2. sg. imperf.
-[14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641); *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
-[P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
+[14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641); *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* и *jñeyāt*
+[P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* и *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
   <sub>attested</sub>
 
@@ -97,7 +97,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [MBH. 12,6409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6409) *jānīhi bhrātaraṃ viduraṃ mama . yadi jīvati*
 [3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *jānīhi saumyaināṃ kasya vātra kuto 'pi vā*
 
-- **RU:** 1) знать, ведать, иметь знание о чём-либо или о ком-либо; узнавать, замечать, осознавать, знакомиться, узнавать на опыте: *yathāmī anyo anyaṃ na jānan*
+- **RU:** 1) знать, ведать, иметь знание о чем-либо или о ком-либо; узнавать, замечать, осознавать, знакомиться, узнавать на опыте: *yathāmī anyo anyaṃ na jānan*
 [VS. 17,47.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,47) *nābhiṃ jānānāḥ śiśavaḥ samāyān*
 [AV. 12,3,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.40) *aṃśāṃ jānīdhvaṃ vi bhajāmi tānvaḥ*
 [11,1,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.05) *na jānīmo nayatā baddhametam*
@@ -145,7 +145,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [ŚṚṄGĀRAT. 4.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?4) *jānīṣe tvaṃ yathā rājā samyagvṛttaḥ sadā tvayi*
 [N. 8,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,13) mit einem infin. понимать
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
-схол. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
+схол. к [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
 [MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
 [DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
@@ -260,12 +260,12 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [RAGH. 12,99.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,99) *satataṃ jñātavinaṣṭāḥ payasāmiva budbudāḥ payasi*
 [PAÑCAT. V,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?5,7) *jñātāsvāda*
 [MEGH. 42.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?42) *˚vṛttānta*
-[VID. 276.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?276) *jñātamātre 'pi* даже если о нём лишь получена весть
+[VID. 276.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?276) *jñātamātre 'pi* даже если о нем лишь получена весть
 [N. 16,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,4) *ajñātavāsaṃ vas* жить неузнанным
 [25,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?25,8) [15,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,18) *ajñātam* без ведома
 [M. 11,155.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,155) *ajñātabhuktaśuddhyartham*
 [5,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,21) *viditaṃ vātha vājñātaṃ piturme* с ведома или без ведома моего отца
-[N. 24,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,4) *yā garbhiṇī saṃskriyate jñātājñātāpi vā satī* знают ли об этом от неё или нет
+[N. 24,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,4) *yā garbhiṇī saṃskriyate jñātājñātāpi vā satī* знают ли об этом от нее или нет
 [M. 9,173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,173) кому-либо (gen.) известный как: *yo lakṣmyāḥ kāmuko jñātaḥ satām*
 [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) принимаемый за: *pūrvameva mayā jñātaṃ pūrṇametāddha medasā*
 [PAÑCAT. I,123.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,123)

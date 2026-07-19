@@ -17,7 +17,7 @@
 [TBR. 2,4,3,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,4,3,2) pass. *jīyate, ajāyi, jāyiṣyate; jita* .
 [DHĀTUP. 15,53.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15) [22,48.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22)
 
-- **RU:** *ji*, *jayati* und *˚te* (особ. mit *parā* und *vi)ḥ (parā) jayyāt*
+- **RU:** *ji*, *jayati* и *˚te* (особ. mit *parā* и *vi)ḥ (parā) jayyāt*
 [MBH. 4,1604](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604); *ajaiṣīt*, ved. *jeṣas, jeṣat, jeṣma, jeṣma, jeṣāma, (sam) ajais, jes, jeṣi*
 2. sg. мед., *ajeṣṭa (parājaiṣṭa*
 [MBH. 1,6378](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378)), *ajījayat*
@@ -155,7 +155,7 @@
 [HARIV. 4544.](https://sanskrit-lexicon-scans.github.io/hariv?4544) *jitākṣara (lekhaka)* der mit Leichtigkeit liest
 [CĀṆ. 104.]
 
-- **RU:** — 2) победить кого-либо, одолеть, превзойти, превзойти во всём: *śatrūn*
+- **RU:** — 2) победить кого-либо, одолеть, превзойти, превзойти во всем: *śatrūn*
 [VS. 5,37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?5,37)
 [ṚV. 3,54,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.22) [5,45,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.045.html#rv05.045.06)
 [AV. 11,9,18.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.009.html#av11.009.18) *pūrum*
@@ -188,7 +188,7 @@
 [MBH. 10,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.555) победить в игре: *dyūtena tān jaya*
 [MBH. 3,299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.299) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258) *jayasvainam*
 [2,2058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2058) *jīyate*
-[3,2262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2262) [2271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2271) [2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2285) *strījita* побеждённый женщиной, находящийся во власти женщины
+[3,2262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2262) [2271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2271) [2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2285) *strījita* побежденный женщиной, находящийся во власти женщины
 [M. 4,217.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,217)
 [YĀJÑ. 1,163.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,163)
 [HARIV. 7308.](https://sanskrit-lexicon-scans.github.io/hariv?7308) *bhāryājita* то же
@@ -218,6 +218,6 @@
 [VOP. 25,16.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,16) *etena vai so 'bhiśastīrajayat*
 [KĀṬH. 19,12] в [Ind. St. 3,478.] *ebhirjitaiḥ (vivādaiḥ)* оставлено
 [M. 4,181.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,181) *bālāvapi jitaśramau* те, кто превозмогли упражнения, для кого упражнения уже не составляют труда
-[HARIV. 4544.](https://sanskrit-lexicon-scans.github.io/hariv?4544) *jitākṣara (lekhaka)* тот, кто читает с лёгкостью
+[HARIV. 4544.](https://sanskrit-lexicon-scans.github.io/hariv?4544) *jitākṣara (lekhaka)* тот, кто читает с легкостью
 [CĀṆ. 104.]
   <sub>attested</sub>

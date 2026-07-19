@@ -83,8 +83,8 @@ einer Wurzel *gī*)
 [VOP. 5,29.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,29) *agāyi bhavatā*
 [P. 2,4,45](https://ashtadhyayi.com/sutraani/2/4/45), схол.
 *agāsātāṃ grāmau devadattena*
-[77](https://ashtadhyayi.com/sutraani/2/4/77), схол. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* пришёл
-[BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* пришёл ко мне, так преим. пришёл мне
+[77](https://ashtadhyayi.com/sutraani/2/4/77), схол. *adhunaiṣo 'bhijinnāma yogo mauhūrtiko 'gāt* пришел
+[BHĀG. P. 3,18,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,27) *anyadā jagati rāma ityayaṃ śabda uccarita eva māmagāt* пришел ко мне, так преим. пришел мне
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73)
   <sub>attested</sub>
 
@@ -311,7 +311,7 @@ einer Wurzel *gī*)
 [ṚV. 10,12,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.03) *acchinnaṃ tantuṃ pṛthivyā anu geṣam*
 [TS. 1,2,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,3,3) идти следом, следовать: *gacchantaṃ pṛṣṭhato 'nvagāt*
 [MBH. 3,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2303) *damayantī tamanvagāt*
-[2307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2307) [14554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14554) [R. 1,44,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,16) [RAGH. 7,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,29) [8,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,49) [12,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,14) идти вдоль пути, следовать чьим-либо путём: *mā bālipathamanvagāḥ*
+[2307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2307) [14554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14554) [R. 1,44,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,16) [RAGH. 7,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,29) [8,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,49) [12,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,14) идти вдоль пути, следовать чьим-либо путем: *mā bālipathamanvagāḥ*
 [R. 4,30,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,21)
   <sub>attested</sub>
 
@@ -452,7 +452,7 @@ einer Wurzel *gī*)
 - **RU:** — 2) достигать чего-либо, приобщаться к чему-либо: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
 [MBH. 3,16625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16625) — *tasya yauvanamabhyagāt*
-[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) ошибочное написание вместо *atyagāt* .
+[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) ошибочное написание вм. *atyagāt* .
   <sub>attested</sub>
 
 ## avagā
@@ -574,7 +574,7 @@ einer Wurzel *gī*)
 
 - **RU:** — *abhyā*
  1) прийти, приблизиться, прийти к: *vatsamicchantī manasābhyāgāt*
-[ṚV. 1,164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) *(tasya) pukkaso 'bhyāgāt* подошёл к нему
+[ṚV. 1,164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) *(tasya) pukkaso 'bhyāgāt* подошел к нему
 [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *kṛṣṇasya nārado 'bhyāgādāśramam*
 [1,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,32) постигнуть кого-либо, обрушиться на: *tvāṃ cedvyasanamabhyāgādidam*
 [MBH. 3,1120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1120)
@@ -676,7 +676,7 @@ einer Wurzel *gī*)
 - **RU:** — *ud* восходить (о солнце, луне и т.д.): *udasau sūryo agāt*
 [ṚV. 10,159,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.159.html#rv10.159.01) [1,50,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.050.html#rv01.050.13) *citraṃ devānāmudagādanīkam*
 [115,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.115.html#rv01.115.01) [AV. 2,8,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.008.html#av02.008.01) [6,121.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.006.html#av02.006.121) [3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.006.html#av02.006.03) [TS. 3,2,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,2,4,4) [TBR. 3,1,1,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,2) [15.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,15) *unmadhyataḥ paurṇamāsī jigāya*
-[15.] выступить вперёд, положить начало (?): *udagātkaṭhakauthumam . pratyaṣṭhātkaṭhakālāpam*
+[15.] выступить вперед, положить начало (?): *udagātkaṭhakauthumam . pratyaṣṭhātkaṭhakālāpam*
 [P. 2,4,3](https://ashtadhyayi.com/sutraani/2/4/3), схол.
   <sub>attested</sub>
 
@@ -842,7 +842,7 @@ einer Wurzel *gī*)
 **4)** — 4) dahinterkommen, eine Kenntniss von Etwas erlangen: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
 
-- **RU:** — 4) дознаться, получить знание о чём-либо: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
+- **RU:** — 4) дознаться, получить знание о чем-либо: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
   <sub>attested</sub>
 
@@ -874,7 +874,7 @@ einer Wurzel *gī*)
 [SĀY.] zu [2.] *gā* zieht: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
 
-- **RU:** — *pra* выступать вперёд, уходить, идти, приходить в движение: *ṛṣvā te pādā pra yajjigāsi*
+- **RU:** — *pra* выступать вперед, уходить, идти, приходить в движение: *ṛṣvā te pādā pra yajjigāsi*
 [ṚV. 10,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.073.html#rv10.073.03) *mā pra gāma patho vayam*
 [57,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.057.html#rv10.057.01) *sūryāyā vahatuḥ prāgāt*
 [85,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.13) *pra dīdhitirjigāti*
@@ -1086,7 +1086,7 @@ einer Wurzel *gī*)
 
 **NWS:26)** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – vordringen, gelangen; sich aufmachen; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
 
-- **RU:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперёд, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
+- **RU:** *+ pra : vorschreiten. ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперед, достигать; отправляться; pra - gam . ṚV 8,48,2 , ṚV 7,104,17 . Ved , unsp
   <sub>attested</sub>
 
 **NWS:27)** *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá áccha : hingehen zu (Akk). Ved , unsp
@@ -1197,7 +1197,7 @@ einer Wurzel *gī*)
 **1)** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte*
 — 1〉 kommen.
 
-- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) und **gāte* — 1〉 приходить.
+- **RU:** **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и **gāte* — 1〉 приходить.
   <sub>attested</sub>
 
 **2)** — 2〉 kommen —, hingehen zu oder nach, zugehen auf, sich hinwenden zu; mit Acc. oder Loc.
@@ -1257,7 +1257,7 @@ einer Wurzel *gī*)
 
 **Mit T31-3)** — 3〉 vorübergehen, verstreichen (von der Zeit), — für (Acc.).
 
-- **RU:** — 3〉 проходить, истекать (о времени), — вместо (Acc.).
+- **RU:** — 3〉 проходить, истекать (о времени), — вм. (Acc.).
   <sub>attested</sub>
 
 **Mit T31-4)** — 4〉 hingehen, sterben.
@@ -1362,7 +1362,7 @@ einer Wurzel *gī*)
 
 **Mit T69-3)** — 3〉 verstreichen (fehlerhaft für *ati*).
 
-- **RU:** — 3〉 истекать (ошибочно вместо *ati*).
+- **RU:** — 3〉 истекать (ошибочно вм. *ati*).
   <sub>attested</sub>
 
 **Mit T73-1)** — Mit *ava* — 1〉 weggehen, abhanden kommen.
@@ -1467,7 +1467,7 @@ einer Wurzel *gī*)
 
 **Mit T107-2)** — 2〉 hervortreten oder einen Aufschwung nehmen.
 
-- **RU:** — 2〉 выдвигаться или получать подъём.
+- **RU:** — 2〉 выдвигаться или получать подъем.
   <sub>attested</sub>
 
 **Mit T108)** — Mit *abhyud* aufgehen über oder vor (Acc.).
@@ -1557,7 +1557,7 @@ einer Wurzel *gī*)
 
 **Mit T135-1)** — Mit *pra* — 1〉 vorwärts gehen, vorschreiten, sich in Bewegung setzen, hinschreiten zu (Acc.).
 
-- **RU:** — С *pra* — 1〉 идти вперёд, продвигаться, приходить в движение, шагать к (Acc.).
+- **RU:** — С *pra* — 1〉 идти вперед, продвигаться, приходить в движение, шагать к (Acc.).
   <sub>attested</sub>
 
 **Mit T135-2)** — 2〉 fortgehen, sich auf und davon machen von (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
@@ -1612,7 +1612,7 @@ einer Wurzel *gī*)
 
 **main)** **3.** √*gā* *gāyati, ˚te* (selten), *gāti* und **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). singen, in singendem Tone sprechen, Jmd (Dat.) zusingen, in gebundener Rede verkünden, besingen (mit Acc.), Jmd (Acc.) vorsingen, singend vortragen. Pass. auch genannt werden, heissen. *gīta* gesungen, in gebundener Rede verkündet, besungen.
 
-- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещённый в стихах, воспетый.
+- **RU:** **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещенный в стихах, воспетый.
   <sub>attested</sub>
 
 **caus.)** — Caus. *gāpayati* singen —, besingen lassen.
@@ -1662,7 +1662,7 @@ einer Wurzel *gī*)
 
 **anu- 3))** — 3〉 singen, besingen; sich über Etwas (Acc.) aussprechen (von alten Weisen).
 
-- **RU:** — 3〉 петь, воспевать; высказываться о чём-л. (Acc.) (о древних мудрецах).
+- **RU:** — 3〉 петь, воспевать; высказываться о чем-л. (Acc.) (о древних мудрецах).
   <sub>attested</sub>
 
 **anu-caus.)** — Caus. nachsingen lassen [GOBH. 3,2,31. 34. 36].
@@ -1807,7 +1807,7 @@ einer Wurzel *gī*)
 
 **vi- 1a))** — a〉 singend hergesagt, gesungen.
 
-- **RU:** — a〉 произнесённый нараспев, спетый.
+- **RU:** — a〉 произнесенный нараспев, спетый.
   <sub>attested</sub>
 
 **vi- 1b))** — b〉 mit Gesang erfüllt [LA. 60,6].
@@ -1832,7 +1832,7 @@ einer Wurzel *gī*)
 
 **vi+vi- / sam+vi-)** — Mit *vipra*, *˚gīta* worüber die Meinungen getheilt sind [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
 
-- **RU:** — С *vipra*, *˚gīta* о чём мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
+- **RU:** — С *vipra*, *˚gīta* о чем мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
   <sub>attested</sub>
 
 **sam+ud-)** — Mit *saṃpra* zu singen anfangen, singen, singend ausprechen.
@@ -2037,7 +2037,7 @@ einer Wurzel *gī*)
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) *gītvā, ˚gāya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
 [VOP. 26,212.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212); *gīyate*
-[P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *gīta*; редко мед. петь, говорить нараспев (напр. о речи существ, не наделённых даром слова, таких как земля, изображения богов и т.д.); возвещать в стихах; воспевать: *gāyatraṃ tvo gāyati*
+[P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *gīta*; редко мед. петь, говорить нараспев (напр. о речи существ, не наделенных даром слова, таких как земля, изображения богов и т.д.); возвещать в стихах; воспевать: *gāyatraṃ tvo gāyati*
 [ṚV. 10,71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [1,10,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.010.html#rv01.010.01) [21,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.021.html#rv01.021.02) [38,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.14)
 [CHĀND. UP. 1,11,7.] *indrāya gāyata*
 [ṚV. 1,4,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) *pāhi gāyāndhaso mada indrāya*
@@ -2105,7 +2105,7 @@ einer Wurzel *gī*)
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
 [ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
 
-- **RU:** 1) _adj._ пропетый, возвещённый в стихах, воспетый
+- **RU:** 1) _adj._ пропетый, возвещенный в стихах, воспетый
 [TRIK. 3,3,155.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,155)
 [H. an. 2,166.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,166)
 [MED. t. 16.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,16) *sādhu gītam* красиво спетый
@@ -2122,7 +2122,7 @@ einer Wurzel *gī*)
 [PRAB. 104,13. 17. 105,8] ist unter *gītā* die *bhagavadgītā* gemeint.
 
 - **RU:** — 2) _f._ *ā*
- a) (а именно *upaniṣad*) учение, возвещённое вдохновлённым мудрецом в стихах, см. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
+ a) (а именно *upaniṣad*) учение, возвещенное вдохновленным мудрецом в стихах, см. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
 Под *gītā* подразумевается *bhagavadgītā*.
   <sub>attested</sub>
 
@@ -2529,7 +2529,7 @@ einer Wurzel *gī*)
 
 - **RU:** — 3) петь: *rathaṃtaraṃ sāmagāścopagānti*
 [MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
-[BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нём поют следующее
+[BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нем поют следующее
 [5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
   <sub>attested</sub>
 
@@ -2809,7 +2809,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 [KATHĀS. 51,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,176)
 
 - **RU:** — *abhi*
- 1) *rājā hṛṣṭastamabhyagāt* шёл ему навстречу
+ 1) *rājā hṛṣṭastamabhyagāt* шел ему навстречу
 [KATHĀS. 51,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,176)
   <sub>attested</sub>
 
@@ -2823,7 +2823,7 @@ Sch.). singender Vortrag, ein Fehler der Recitation,
 Schol.
 
 - **RU:** — *pari*
- 4) читай «обходить» так преим. не достичь цели, не уразуметь, не получить познания о чём-л. *pariśabdo niṣedhe*
+ 4) читай «обходить» так преим. не достичь цели, не уразуметь, не получить познания о чем-л. *pariśabdo niṣedhe*
 схол.
   <sub>attested</sub>
 
@@ -2958,7 +2958,7 @@ Schol.
 [SARVADARŚANAS. 169,17. fg.] singend
 [KATHĀS. 121,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,130)
 
-- **RU:** — *pra*, *pragīta* произнесённый нараспев, воспетый: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (а именно *ṛcaḥ* и *yajūṃṣi)*
+- **RU:** — *pra*, *pragīta* произнесенный нараспев, воспетый: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (а именно *ṛcaḥ* и *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] поя, нараспев
 [KATHĀS. 121,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,130)
   <sub>attested</sub>
@@ -2977,5 +2977,5 @@ Schol.
 
 **1)** 3. *gā* vgl. noch *tamogā* .
 
-- **RU:** 3. *gā* ср. ещё *tamogā* .
+- **RU:** 3. *gā* ср. еще *tamogā* .
   <sub>attested</sub>

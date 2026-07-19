@@ -27,7 +27,7 @@
 — 1〉 voranschreiten, vorwärts gehen.
 
 - **RU:** — С *pravi*
-— 1) продвигаться вперёд, идти вперёд.
+— 1) продвигаться вперед, идти вперед.
   <sub>attested</sub>
 
 **pw-mit-T8-2)** — 2〉 umhergehen, -streichen.

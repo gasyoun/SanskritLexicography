@@ -9,7 +9,7 @@
 [BHĀG. P. 10,41,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,6) — desid. [TS. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,1)
 
 - **RU:** — *ā*
- 2) act.: *ādadyānna ca sādhubhyaḥ* пусть он ничего не берёт у добрых
+ 2) act.: *ādadyānna ca sādhubhyaḥ* пусть он ничего не берет у добрых
 [Spr. 3590.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3590) *dṛṣṭiṃ na cādaduḥ* так преим. не отводили взгляда (от него)
 [BHĀG. P. 10,41,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,6) — desid. [TS. 1,5,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,1,1)
   <sub>attested</sub>

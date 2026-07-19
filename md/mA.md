@@ -94,7 +94,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 [PRAŚNOP. 6,6.] *kathaṃ mā bhūt = kathaṃ na syāt*
 [KATHĀS. 42,114.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,114) *kathaṃ kamalanālasya mā bhūvanbhaṅgurā guṇāḥ*
 [Spr. 121](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?121) *(nābhūvan* худшее чтение). *māpagāḥ śaudrānnyāyāt*
-[ŚĀṄKH. ŚR. 15,24,10] ошибочно вместо *nāpāgāḥ*, как
+[ŚĀṄKH. ŚR. 15,24,10] ошибочно вм. *nāpāgāḥ*, как
 [AIT. BR. 7,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,17) имеет. С conj. imperf.: *mā cainamabhibhāṣathāḥ*
 [R. 2,9,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,19) Иногда с aor. indic.: *tanme mā vyanaśat*
 [KAUŚ. 56.] *mā vaḥ kṣetre parabījānyavāpsuḥ* ved. цитата у
@@ -130,7 +130,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 [6201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6201) [5,7115](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7115) (*mā mā*).
 [7292.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7292) [HARIV. 7909.](https://sanskrit-lexicon-scans.github.io/hariv?7909) [Spr. 990.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?990) [1112.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1112) [4707.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4707) [4716.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4716) [VET. in LA. (II) 18,7.] [ŚUK. ebend. 36,5.] *ripurayaṃ mā kasyacijjāyatām* да не восстанет сей враг ни на кого
 [Spr. 1789.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1789) *yuṣmākamastu taviṣī panīyasī mā martyasya māyinaḥ*
-[ṚV. 1,39,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.02) *gaccha vā mā vā nivṛtto 'smyadya yājanāt* пойдёшь ли ты или нет т.е. всё равно, идёшь ли ты или нет,
+[ṚV. 1,39,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.02) *gaccha vā mā vā nivṛtto 'smyadya yājanāt* пойдешь ли ты или нет т.е. всё равно, идешь ли ты или нет,
 [MBH. 14,127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.127) *viṣaṃ bhavatu mā vāstu*
 [Spr. 1613.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1613) *santu mā santu vā, dehi mā dehi vā, niryāntu mā yāntu vā*
 [5337.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5337)
@@ -302,7 +302,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **2〉)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
 
-- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* так преим. всё равно, идёшь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
+- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* так преим. всё равно, идешь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
   <sub>attested</sub>
 
 **3〉)** — 3〉 mit Potent.
@@ -322,7 +322,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **6〉)** — 6〉 mit dem Praes. von *arha* metrisch, aber auch ungenau für *na*.
 
-- **RU:** — 6〉 с Praes. от *arha* метрически, но также неточно вместо *na*.
+- **RU:** — 6〉 с Praes. от *arha* метрически, но также неточно вм. *na*.
   <sub>attested</sub>
 
 **7〉)** — 7〉 mit einem Partic. praes. *mā jīvan* der verdient nicht zu leben [ŚIŚ.]
@@ -507,22 +507,22 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **ava-2〉)** — 2〉 abmessen; Pass. gemessen —, bestimmt werden [ĀRYABH. 3,1].
 
-- **RU:** — 2〉 отмерять; Pass. быть измеренным —, определённым [ĀRYABH. 3,1].
+- **RU:** — 2〉 отмерять; Pass. быть измеренным —, определенным [ĀRYABH. 3,1].
   <sub>attested</sub>
 
 **ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
 
-- **RU:** — 3〉 составить себе представление о ком-либо или о чём-либо (Acc.), думать о чём-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чём составлено представление, что было мысленно представлено.
+- **RU:** — 3〉 составить себе представление о ком-либо или о чем-либо (Acc.), думать о чем-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чем составлено представление, что было мысленно представлено.
   <sub>attested</sub>
 
 **ava-4〉)** — 4〉 aus Etwas (Abl. oder Instr.) schliessen auf (Acc.), erschliessen, folgern, schliessen, dass ist (mit doppelten Acc.). Praes. nur in den reduplicirten Formen (*anumimīran* [Comm. zu JAIM. 1,3,2]) und *anuminoti* (s. u. **1.** *mi* mit *anu*). *anumita* geschlossen, gefolgert.
 
-- **RU:** — 4〉 из чего-либо (Abl. или Instr.) умозаключать о (Acc.), делать вывод, заключать, что является (с двойным Acc.). Praes. только в редуплицированных формах (*anumimīran* [Comm. zu JAIM. 1,3,2]) и *anuminoti* (см. **1.** *mi* с *anu*). *anumita* умозаключённый, выведенный.
+- **RU:** — 4〉 из чего-либо (Abl. или Instr.) умозаключать о (Acc.), делать вывод, заключать, что является (с двойным Acc.). Praes. только в редуплицированных формах (*anumimīran* [Comm. zu JAIM. 1,3,2]) и *anuminoti* (см. **1.** *mi* с *anu*). *anumita* умозаключенный, выведенный.
   <sub>attested</sub>
 
 **ava-caus)** — Caus. bewirken, dass man auf Etwas (Acc.) schliesst, — dass man Etwas folgert, beweisen [KĀD. 148,19].
 
-- **RU:** — Caus. заставлять умозаключать о чём-либо (Acc.), — заставлять делать вывод, доказывать [KĀD. 148,19].
+- **RU:** — Caus. заставлять умозаключать о чем-либо (Acc.), — заставлять делать вывод, доказывать [KĀD. 148,19].
   <sub>attested</sub>
 
 **a-head)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
@@ -582,7 +582,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **upa-2a〉)** — a〉 dem Maasse nach bestimmt, gemessen; vgl. *cakṣurnimita* und *durnimita*.
 
-- **RU:** — a〉 определённый по мере, измеренный; ср. *cakṣurnimita* и *durnimita*.
+- **RU:** — a〉 определенный по мере, измеренный; ср. *cakṣurnimita* и *durnimita*.
   <sub>attested</sub>
 
 **upa-2b〉)** — b〉 veranlasst durch (Instr.).
@@ -637,22 +637,22 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
 
-- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный вообще — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
+- **RU:** — a〉 изготовленный, сделанный, произведенный, возведенный, созданный, образованный вообще — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
   <sub>attested</sub>
 
 **ni-7b〉)** — b〉 bewirkt.
 
-- **RU:** — b〉 вызванный, произведённый.
+- **RU:** — b〉 вызванный, произведенный.
   <sub>attested</sub>
 
 **ni-7c〉)** — c〉 begangen, gefeiert.
 
-- **RU:** — c〉 совершённый, отпразднованный.
+- **RU:** — c〉 совершенный, отпразднованный.
   <sub>attested</sub>
 
 **ni-7d〉)** — d〉 festgesetzt, bestimmt, eingeführt, eingesetzt.
 
-- **RU:** — d〉 установленный, определённый, введённый, назначенный.
+- **RU:** — d〉 установленный, определенный, введенный, назначенный.
   <sub>attested</sub>
 
 **ni-7e〉)** — e〉 abgesondert, für sich stehend.
@@ -702,7 +702,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **pari-vi-3〉)** — 3〉 festgesetzt, bestimmt.
 
-- **RU:** — 3〉 установленный, определённый.
+- **RU:** — 3〉 установленный, определенный.
   <sub>attested</sub>
 
 **vi-head)** — Mit *vinis*
@@ -727,12 +727,12 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **vi-2b〉)** — b〉 bestimmt, festgesetzt, — als (Nomin.).
 
-- **RU:** — b〉 определённый, установленный, — как (Nomin.).
+- **RU:** — b〉 определенный, установленный, — как (Nomin.).
   <sub>attested</sub>
 
 **vi-2c〉)** — c〉 begangen, gefeiert.
 
-- **RU:** — c〉 совершённый, отпразднованный.
+- **RU:** — c〉 совершенный, отпразднованный.
   <sub>attested</sub>
 
 **sam-vi-head)** — Mit *pravinis*, *˚nmmirmita* verfertigt aus (im Comp. vorangehend) [Ind. St. 14,385].
@@ -767,7 +767,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **pari-3a〉)** — a〉 bemessen, umschrieben, begrenzt, dem Maasse oder der Zahl nach genau bestimmt.
 
-- **RU:** — a〉 обмеренный, ограниченный, точно определённый по мере или по числу.
+- **RU:** — a〉 обмеренный, ограниченный, точно определенный по мере или по числу.
   <sub>attested</sub>
 
 **pari-3b〉)** — b〉 beschränkt, so v. a. wenig.
@@ -802,7 +802,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **pra-mA-3〉)** — 3〉 sich eine richtige Vorstellung bilden über (Acc.). *pramita* worüber man sich eine r. V. gebildet hat.
 
-- **RU:** — 3〉 составить себе правильное представление о (Acc.). *pramita* о чём составлено r. V..
+- **RU:** — 3〉 составить себе правильное представление о (Acc.). *pramita* о чем составлено r. V..
   <sub>attested</sub>
 
 **prati-head)** — Mit *prati*
@@ -817,7 +817,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **prati-2〉)** — 2〉 *pratimita* wieder gespiegelt, sich abspiegelnd.
 
-- **RU:** — 2〉 *pratimita* отражённый, отображающийся.
+- **RU:** — 2〉 *pratimita* отраженный, отображающийся.
   <sub>attested</sub>
 
 **vi-mA-head)** — Mit *vi*
@@ -897,7 +897,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **7b〉)** — b〉 leichtgemacht, gleichkommend, gleich lang, — breit, — hoch, — weit, entsprechend, angemessen; aussehend wie, geltend für; die Ergänzung im Instr. (ausnahmsweise Gen.) oder im Comp. vorangehen.
 
-- **RU:** — b〉 лёгкий, равносильный, равной длины, — ширины, — высоты, — протяжённости, соответствующий, подходящий; имеющий вид как, считающийся за; дополнение в Instr. (в виде исключения Gen.) или в Comp. предшествующем.
+- **RU:** — b〉 легкий, равносильный, равной длины, — ширины, — высоты, — протяженности, соответствующий, подходящий; имеющий вид как, считающийся за; дополнение в Instr. (в виде исключения Gen.) или в Comp. предшествующем.
   <sub>attested</sub>
 
 **7c〉)** — c〉 vielleicht symmetrisch.
@@ -907,7 +907,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **7d〉)** — d〉 versehen mit, bestehend aus (Instr. oder im Comp. vorangehend).
 
-- **RU:** — d〉 снабжённый, состоящий из (Instr. или в Comp. предшествующем).
+- **RU:** — d〉 снабженный, состоящий из (Instr. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **7e〉)** — e〉 bestimmt zu (im Comp. vorangehend).
@@ -933,7 +933,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **2)** — 2〉 ein best. Metrum.
 
-- **RU:** 2〉 определённый определ. метр.
+- **RU:** 2〉 определенный определ. метр.
   <sub>lexicographic</sub>
 
 **cross-ref)** — Vgl. **2.** *ma* 2〉.
@@ -953,17 +953,17 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **mit T19)** — Mit *anu* blöken zu, — nach (Acc.).
 
-- **RU:** — Mit *anu* блеять в сторону кого-либо, к кому-либо (Acc.).
+- **RU:** — С *anu* блеять в сторону кого-либо, к кому-либо (Acc.).
   <sub>attested</sub>
 
 **mit T21)** — Mit *ā* anblöken.
 
-- **RU:** — Mit *ā* блеять на кого-либо.
+- **RU:** — С *ā* блеять на кого-либо.
   <sub>attested</sub>
 
 **mit T22/T23)** — Mit **pariṇi* und **praṇi*, *˚mimīte*.
 
-- **RU:** — Mit **pariṇi* und **praṇi*, *˚mimīte*.
+- **RU:** — Mit **pariṇi* и **praṇi*, *˚mimīte*.
   <sub>attested</sub>
 
 **main)** **6.** √*mā*, *mayate* lauschen. Simplex nicht zu belegen.
@@ -979,13 +979,13 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 **mit T29 — 1)** — Mit *apa*
 — 1〉 durch Tausch vergüten, heimgeben. Nur *apabhitya*.
 
-- **RU:** — Mit *apa*
+- **RU:** — С *apa*
 1〉 воздавать посредством обмена, возвращать. Только *apabhitya*.
   <sub>attested</sub>
 
 **mit T29 — 2)** — 2〉 *abwechseln. *apamitya* *yācate* oder *yācitvāpamayate* er bettelt abwechselnd [P. 3,4,19, Sch.](https://ashtadhyayi.com/sutraani/3/4/19)
 
-- **RU:** 2〉 *чередоваться. *apamitya* *yācate* или *yācitvāpamayate* он попрошайничает поочерёдно [P. 3,4,19, схол.](https://ashtadhyayi.com/sutraani/3/4/19)
+- **RU:** 2〉 *чередоваться. *apamitya* *yācate* или *yācitvāpamayate* он попрошайничает поочередно [P. 3,4,19, схол.](https://ashtadhyayi.com/sutraani/3/4/19)
   <sub>attested</sub>
 
 **Caus. mit T29)** — *Desid. *apamitsate*.
@@ -995,22 +995,22 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **mit T37)** — Mit *ni* vertauschen gegen (Instr.).
 
-- **RU:** — Mit *ni* обменивать на (Instr.).
+- **RU:** — С *ni* обменивать на (Instr.).
   <sub>attested</sub>
 
 **mit T39/T40)** — Mit **pariṇi* und **praṇi*, *˚mmayate*.
 
-- **RU:** — Mit **pariṇi* und **praṇi*, *˚mmayate*.
+- **RU:** — Mit **pariṇi* и **praṇi*, *˚mmayate*.
   <sub>attested</sub>
 
 **mit T42)** — Mit *vini* in *˚maya*.
 
-- **RU:** — Mit *vini* в *˚maya*.
+- **RU:** — С *vini* в *˚maya*.
   <sub>attested</sub>
 
 **mit T44)** — Mit *vi* Pl. etwa sich gegenseitig abwechseln [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
 
-- **RU:** — Mit *vi* Pl. приблизительно «чередоваться взаимно» [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
+- **RU:** — С *vi* Pl. приблизительно «чередоваться взаимно» [ṚV. 10,40,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.10). v. l. [AV.]
   <sub>attested</sub>
 
 **main)** **7.** *mā* in einigen Formen von **1.** *mi* und **1.** *mī*.
@@ -1030,7 +1030,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **mit T60 — 1)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
 
-- **RU:** — Mit *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
+- **RU:** — С *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
   <sub>attested</sub>
 
 **mit T60 — 2)** — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
@@ -1040,12 +1040,12 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **mit T63)** — Mit *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
-- **RU:** — Mit *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
+- **RU:** — С *sam*, *saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
 **main)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
-- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что преим. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* вместо *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что преим. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* вместо *na ga˚* метрически вм. [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>attested</sub>
 
 **V. 5)** **3.** √*mā* V. 5.
@@ -1055,17 +1055,17 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **mit T78)** — Mit *ā* 5.
 
-- **RU:** — Mit *ā* 5.
+- **RU:** — С *ā* 5.
   <sub>attested</sub>
 
 **mit T79 Desid.)** — Mit *pra* Desid. sich über Etwas (Acc.) eine richtige Vorstellung zu bilden wünschen [BHĀMATĪ 616,9].
 
-- **RU:** — Mit *pra* Desid. желать составить правильное представление о чём-либо (Acc.) [BHĀMATĪ 616,9].
+- **RU:** — С *pra* Desid. желать составить правильное представление о чем-либо (Acc.) [BHĀMATĪ 616,9].
   <sub>attested</sub>
 
 **mit T83)** — Mit *sam* V. 5.
 
-- **RU:** — Mit *sam* V. 5.
+- **RU:** — С *sam* V. 5.
   <sub>attested</sub>
 
 ## mā
@@ -1080,7 +1080,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **PWKVN-ā-1)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
 
-- **RU:** — Mit *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
+- **RU:** — С *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
   <sub>attested</sub>
 
 **PWKVN-ā-2)** — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
@@ -1090,12 +1090,12 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **PWKVN-mit-T8)** — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
-- **RU:** — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
+- **RU:** — С *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
 **PWKVN-1-main)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
 
-- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что преим. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* вместо *na ga˚* метрически вместо [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
+- **RU:** *mā* с Präs. чтобы не [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* с Präs., так что преим. иначе, в противном случае [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* вместо *na ga˚* метрически вм. [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
   <sub>attested</sub>
 
 **PWKVN-3-V5)** **3.** *mā* V. 5.
@@ -1105,17 +1105,17 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **PWKVN-3-mit-T22)** — Mit *ā* 5.
 
-- **RU:** — Mit *ā* 5.
+- **RU:** — С *ā* 5.
   <sub>attested</sub>
 
 **PWKVN-3-Desid.)** — Mit *pra* Desid. sich über Etwas (Acc.) eine richtige Vorstellung zu bilden wünschen [BHĀMATĪ 616,9].
 
-- **RU:** — Mit *pra* Desid. желать составить правильное представление о чём-либо (Acc.) [BHĀMATĪ 616,9].
+- **RU:** — С *pra* Desid. желать составить правильное представление о чем-либо (Acc.) [BHĀMATĪ 616,9].
   <sub>attested</sub>
 
 **PWKVN-3-mit-T27)** — Mit *sam* V. 5.
 
-- **RU:** — Mit *sam* V. 5.
+- **RU:** — С *sam* V. 5.
   <sub>attested</sub>
 
 ## mā
@@ -1125,7 +1125,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **SCH-1)** 1. mā mit Praes. damit nicht, [R. Gorr. 1,65,21.] purā mā mit Praes. so v.a. sonst, andernfalls,3,68,44. mā gantum arhasi metrisch statt na gan˚,2,116,5.
 
-- **RU:** 1. mā с Praes. чтобы не; [R. Gorr. 1,65,21.] purā mā с Praes. = иначе, в противном случае, 3,68,44. mā gantum arhasi метрически вместо na gan˚, 2,116,5.
+- **RU:** 1. mā с Praes. чтобы не; [R. Gorr. 1,65,21.] purā mā с Praes. = иначе, в противном случае, 3,68,44. mā gantum arhasi метрически вм. na gan˚, 2,116,5.
   <sub>attested</sub>
 
 **SCH-15)** 3. mā 15. mitá neben sáṃmita [Maitr. S. 2,11,1] (140,4).
@@ -1135,7 +1135,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **SCH-ā-1)** — Mit ā 1. bilden, hervorbringen, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07)
 
-- **RU:** — Mit ā 1. создавать, производить, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07)
+- **RU:** — С ā 1. создавать, производить, [ṚV. 3,38,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07)
   <sub>attested</sub>
 
 **SCH-ā-2)** — 2. herbeischaffen, [ṚV. 10,56,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02)
@@ -1145,22 +1145,22 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 
 **SCH-pra)** — Mit pra, pramita m. ˚ein Toter, [S I,150,2.]
 
-- **RU:** — Mit pra, pramita m. ˚умерший, [S I,150,2.]
+- **RU:** — С pra, pramita m. ˚умерший, [S I,150,2.]
   <sub>attested</sub>
 
 **SCH-Desid.)** — Desid. sich über etwas (Akk.) eine richtige Vorstellung zu bilden wünschen, Bhāmatī 616,9.
 
-- **RU:** — Desid. желать составить правильное представление о чём-либо (Akk.), Bhāmatī 616,9.
+- **RU:** — Desid. желать составить правильное представление о чем-либо (Akk.), Bhāmatī 616,9.
   <sub>attested</sub>
 
 **SCH-sam)** — Mit sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
 
-- **RU:** — Mit sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
+- **RU:** — С sam, sáṃmita, [Maitr. S. 2,11,1] (140,4).
   <sub>attested</sub>
 
 **SCH-Mā-Lakṣmī)** Mā ˚ = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī in mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Sollte nicht māpatya bei Böhtlingk als mā + apatya zu fassen, d. h. mā hier = Lakṣmī sein? [Z.]
 
-- **RU:** Mā = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī в mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Не следует ли māpatya у Бётлинка понимать как mā + apatya, то есть mā здесь = Lakṣmī? [Z.]
+- **RU:** Mā = Lakṣmī, [S I,53,5] v.u. (Ko.); [Vās. 122,5.] — mā = Lakṣmī в mālava Prabandhacintāmaṇi 190,3; Kielhorn in EI 6,246, N. 12. — Не следует ли māpatya у Бетлинка понимать как mā + apatya, то есть mā здесь = Lakṣmī? [Z.]
   <sub>lexicographic</sub>
 
 ## mā
@@ -1171,7 +1171,7 @@ In Verbindung mit *arhasi* st. *na* aus metrischen Rücksichten: *klaivyaṃ mā
 **main)** 5. *mā* mit *apa* durch Tausch vergüten, heimgeben: *˚mitya*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
 
-- **RU:** 5. *mā* mit *apa* вознаграждать путём обмена, воздавать: *˚mitya*
+- **RU:** 5. *mā* mit *apa* вознаграждать путем обмена, воздавать: *˚mitya*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
   <sub>attested</sub>
 
@@ -1553,10 +1553,10 @@ Schol. zu [KAP. 1,137.] *anumita* gefolgert, geschlossen
 [KUMĀRAS. 1,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,37)
 [BHĀṢĀP. 49]).
 
-- **RU:** — 2) составлять представление о чём-либо или ком-либо; из чего-либо (abl. instr.) заключать, умозаключать, делать вывод: *yathā kālo 'numīyate . bhūtabhavyabhavacchabdaḥ*
+- **RU:** — 2) составлять представление о чем-либо или ком-либо; из чего-либо (abl. instr.) заключать, умозаключать, делать вывод: *yathā kālo 'numīyate . bhūtabhavyabhavacchabdaḥ*
 [BHĀG. P. 2,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,12) *evaṃ kālo 'pyanumitaḥ saukṣmye sthaulye ca*
 [3,11,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,3) *amuṣya vayaṃ kathamanumimīmahi* как нам это понимать / как нам об этом составить представление?
-[5,22,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,1) *vapurhyanumimīmaste meghasyeva savidyutaḥ* так преим. мы представляем твоё тело подобным туче, пронизанной молниями
+[5,22,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,1) *vapurhyanumimīmaste meghasyeva savidyutaḥ* так преим. мы представляем твое тело подобным туче, пронизанной молниями
 [MBH. 12,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1851) *tadaiva te 'numīyante (˚māryante* [ed. Bomb.]) *kuṇape kṛmayo* (так [ed. Bomb.]) *yathā* их рассматривают, подобно червям в трупе
 [4872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4872) *tadetadṛṣiṇā proktaṃ vistareṇānumīyate* так преим. из этого делают умозаключение
 [8819.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8819) *dṛṣṭvā bhavantaṃ na śaknumo 'numātum* мы не можем составить о тебе никакого представления, мы не можем угадать, кто ты
@@ -1574,14 +1574,14 @@ Schol. zu [KAP. 1,137.] *anumita* gefolgert, geschlossen
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 28.] [BHĀG. P. 6,1,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,46) [KIR. 5,47.] [GAUḌAP.] к [SĀṂKHYAK. 5.] [P. 6,3,80](https://ashtadhyayi.com/sutraani/6/3/80), схол. *anvamīyata śuddheti śāntena vapuṣaiva sā*
 [RAGH. 15,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,77) [17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,17) [11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,11) *anumīyamāna*
 [KULL.] к [M. 1,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,21) *anumātavya*
-схол. к [KAP. 1,137.] *anumita* выведенный, заключённый
+схол. к [KAP. 1,137.] *anumita* выведенный, заключенный
 [VARĀH. BṚH. S. 51,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,36)
 [KUSUM. 60,10.] *tejoviśeṣānumita* выведенный из
 [RAGH. 2,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,7) [68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,68) [5,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,12)
 [KUMĀRAS. 3,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,60)
 [PRAB. 79,5.]
 [LA. (II) 86,9.] — *anumīya*
-[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) ошибочно вместо *anunīya*, как гласит [ed. Bomb.].
+[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) ошибочно вм. *anunīya*, как гласит [ed. Bomb.].
 — ср. *anumā, anumāna, anumiti, anumeya* (также
 [KUMĀRAS. 1,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,37)
 [BHĀṢĀP. 49]).
@@ -1608,7 +1608,7 @@ Schol. zu [KAP. 1,137.] *anumita* gefolgert, geschlossen
 [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8)
 [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
 
-- **RU:** — *abhi* измерять по чему-либо / отмерять на чём-либо
+- **RU:** — *abhi* измерять по чему-либо / отмерять на чем-либо
 [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8)
 [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
   <sub>attested</sub>
@@ -1716,7 +1716,7 @@ Schol. zu [KAP. 1,137.] *anumita* gefolgert, geschlossen
 
 - **RU:** — *ni*
  1) определять меру: *nimita* к пояснение от *nigha*
-[P. 3,3,87.](https://ashtadhyayi.com/sutraani/3/3/87) *cakṣurnimita* определённый на глаз
+[P. 3,3,87.](https://ashtadhyayi.com/sutraani/3/3/87) *cakṣurnimita* определенный на глаз
 [TBR. 1,1,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,4,1) *durnimita* плохо измеренный, неправильный: *pada*
 [RAGH. 7,10](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,10) = [KUMĀRAS. 7,61.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,61)
   <sub>attested</sub>
@@ -1849,7 +1849,7 @@ Schol.) [BHĀG. P. 3,16,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/
 [NIR. 2,8.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,8) *devanirmita*
 [ĀŚV. GṚHY. 4,7,11.] — *tābhyāṃ sa śakalābhyāṃ ca divaṃ bhūmiṃ ca nirmame*
 [M. 1,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,13) *kumbhaṃ nirmāti cakreṇa kumbhakāro mṛdā (mṛdo?) bhuvi*
-[BRAHMAVAIV. P.] bei [BOHLEN] zu [BHARTṚ. 2,93.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,93) *vārāṇasīm — nirmame*
+[BRAHMAVAIV. P.] у [BOHLEN] к [BHARTṚ. 2,93.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,93) *vārāṇasīm — nirmame*
 [MBH. 13,1955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1955)
 [RAGH. 15,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,28)
 [RĀJA-TAR. 1,98.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,98) [5,120.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,120) *yathānyāyaṃ nirmamire dvārāṇyāyatanāni ca*
@@ -1892,7 +1892,7 @@ Schol.) [BHĀG. P. 3,16,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/
 [KUMĀRAS. 1,48.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,48) *kośaṃ viśvaprakāśākhyaṃ niramāt* составил
 [Verz. d. Oxf. H. 188,b,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?188) *grantho niramāyi*
 [212,a,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?212) *nāṭakaṃ nirmāya*
-[PRAB. 2,18.] *dharmam — prākprajāpatinirmitam* установленный, определённый
+[PRAB. 2,18.] *dharmam — prākprajāpatinirmitam* установленный, определенный
 [M. 9,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,46) *bāhuyuddhamidaṃ raṅge saprāśnikamakātaram . kriyābalasamājñātamaśastraṃ nirmitaṃ purā ..*
 [HARIV. 4697.](https://sanskrit-lexicon-scans.github.io/hariv?4697) *kṛtāntavihitaṃ karma yadbhavetpūrvanirmitam*
 [Spr. 717.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?717) *sā (vṛttiḥ) hi dhātraiva nirmitā*
@@ -1903,15 +1903,15 @@ Schol.) [BHĀG. P. 3,16,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/
 [Spr. 1323.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1323)
 [PAÑCAT. 138,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?138,5) *tvayā matkulakṣayo nirmitaḥ*
 [257,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,8) [BHĀG. P. 5,14,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,7) *tāṃ (nītiṃ) cecchaknoṣi nirmātum* проявлять
-[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) *atirātrau ca nirmitau* so преим. совершённый, отпразднованный
-[R. ed. Bomb. 1,14,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,14,42) *baṃhīyasīṃ laghiṣṭhāṃ vā giraṃ nirmānti vāgminaḥ* so преим. говорить как им угодно цит. bei
-[KULL] zu [M. 5,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,64)
+[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) *atirātrau ca nirmitau* so преим. совершенный, отпразднованный
+[R. ed. Bomb. 1,14,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,14,42) *baṃhīyasīṃ laghiṣṭhāṃ vā giraṃ nirmānti vāgminaḥ* so преим. говорить как им угодно цит. у
+[KULL] к [M. 5,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,64)
   <sub>attested</sub>
 
 **2))** — 2) *nirmita* so v. a. *nirūḍha* oder *svatantra* vom Opferthier: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
 [ĀŚV. ŚR. 3,8,3. 4.]
 
-- **RU:** — 2) *nirmita* so преим. *nirūḍha* oder *svatantra* о жертвенном животном: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
+- **RU:** — 2) *nirmita* so преим. *nirūḍha* или *svatantra* о жертвенном животном: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
 [ĀŚV. ŚR. 3,8,3. 4.]
   <sub>attested</sub>
 
@@ -2016,7 +2016,7 @@ Schol.) [BHĀG. P. 3,16,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/
 [KATHĀS. 34,222.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,222) *teṣāmāmaraṇaṃ bhikṣā prāyaścittaṃ vinirmitam*
 [Spr. 2500.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2500) *vidhātrā vinirmitam — vibhūṣaṇaṃ maunamapaṇḍitānām*
 [3340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3340) *udgātre ca tathodīcī dakṣiṇaiṣā vinirmitā*
-[R. 1,13,48](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,48) ([40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,40) [GORR.]). *atirātre vinirmite (atirātrau ca nirmitau* [ed. Bomb.]) so преим. совершённый, отпразднованный
+[R. 1,13,48](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,48) ([40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,40) [GORR.]). *atirātre vinirmite (atirātrau ca nirmitau* [ed. Bomb.]) so преим. совершенный, отпразднованный
 [45.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,45)
 — ср. *vinirmāṇa, vinirmātar, vinirmiti* .
   <sub>attested</sub>
@@ -2084,14 +2084,14 @@ Schol. zu [KAP. 1,130.]
 [Spr. 378.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?378) *vapuḥparimita (jīva)*
 [4087.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4087) *tyāge vā pauruṣe vāpi tasya nābhūtparimitecchatā*
 [RĀJA-TAR. 3,254.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,254) *yathā kulālaḥ parimitairmṛtpiṇḍaiḥ parimitāneva ghaṭānkaroti*
-[GAUḌAP.] zu [SĀṂKHYAK. 14.] [SĀH. D. 28,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?28,14) ограниченный so преим. незначительный, малый: *parimitāyus* недолговечный
+[GAUḌAP.] к [SĀṂKHYAK. 14.] [SĀH. D. 28,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?28,14) ограниченный so преим. незначительный, малый: *parimitāyus* недолговечный
 [R. 3,55,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,20) *atha vā phālgunasyaiṣa bhāraḥ parimito raṇe*
 [MBH. 6,4922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4922) *parimitāhāra* принимающий мало пищи
 [1,4623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4623) [SĀV. 1,5.] *˚kathā* _adj._
 [MEGH. 81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *parimitābharaṇā*
 [MĀLAV. 43.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?43)
-[PAÑCAT. 188,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?188,12) *parimitatva* _n._ ограниченность, стеснённость
-схол. zu [KAP. 1,130.]
+[PAÑCAT. 188,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?188,12) *parimitatva* _n._ ограниченность, стесненность
+схол. к [KAP. 1,130.]
 — ср. *parimāṇa, parimiti, parimeya, aparimita* .
   <sub>attested</sub>
 
@@ -2147,7 +2147,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 [MAITRYUP. 6,11.] *tadaśakyo 'yamarthaḥ pramātum*
 [HIT. 74,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?74,7) *na pramātuṃ mahābāhuḥ śakyo 'yaṃ madhusūdanaḥ*
 [HARIV. 9169.](https://sanskrit-lexicon-scans.github.io/hariv?9169) *pratyakṣapramita*
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 226.]
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 226.]
 — ср. *pramā, pramāṇa, pramātar, pramitākṣarā, pramiti, prameya* .
   <sub>attested</sub>
 
@@ -2165,7 +2165,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 
 - **RU:** — *prati* воспроизводить, подражать: *gāyatreṇa prati mimīte arkam*
 [ṚV. 1,164,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.24) [10,13,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.013.html#rv10.013.03) *na vaḥ pratimai* (dat. inf.) *sukṛtāni*
-[3,60,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.060.html#rv03.060.04) [VS. 20,37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,37) [KAUŚ. 20.] partic. *pratimita* отражённый, отражающийся
+[3,60,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.060.html#rv03.060.04) [VS. 20,37.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?20,37) [KAUŚ. 20.] partic. *pratimita* отраженный, отражающийся
 [KATHĀS. 23,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,42)
 [RĀJA-TAR. 5,482.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,482)
 — ср. *pratimā, pratimāna, pratimeya* .
@@ -2225,7 +2225,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 
 - **RU:** — ср.
 
-*vimāna* und u. 1. *mi* mit *vi* .
+*vimāna* и u. 1. *mi* mit *vi* .
   <sub>attested</sub>
 
 ## mā
@@ -2340,7 +2340,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 [MBH. 3,2657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2657) *śikhyaṇḍa˚*
 [YĀJÑ. 3,324.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,324) *karāgra˚ (madhya)* толщиной в
 [MBH. 4,394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.394) *yojanāyuta˚* (так следует читать) длиной в
-[PAÑCAR. 1,11,17.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,11,17) [KĀM. NĪTIS. 14,29.] [SŪRYAS. 6,3.] *hastatrayasaṃmite* на расстоянии трёх Хаста
+[PAÑCAR. 1,11,17.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,11,17) [KĀM. NĪTIS. 14,29.] [SŪRYAS. 6,3.] *hastatrayasaṃmite* на расстоянии трех Хаста
 [VARĀH. BṚH. S. 54,75.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,75) *padahastasaṃkhyayā saṃmitāni — aṅgulāni*
 [53,65.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,65) *dināni paśuromabhiḥ saṃmitāni* равный по числу
 [YĀJÑ. 1,180.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,180) *loma˚ (vatsarān)*
@@ -2378,18 +2378,18 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 [PAÑCAR. 2,7,28.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,7,28) *mṛtyu˚ (˚saṃdhita* [ed. Bomb.]) so v. a. dem Tode geweiht
 [MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462)
 
-- **RU:** — 5) *saṃmita* снабжённый, наделённый (instr.): *saptabhirdvāraiḥ*
+- **RU:** — 5) *saṃmita* снабженный, наделенный (instr.): *saptabhirdvāraiḥ*
 [PAÑCAR. 1,7,58.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,58) *supuṇyajala˚*
 [MBH. 1,1232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1232) *buddhi˚*
 [N. (BOPP) 25,9] *(buddhisaṃmata*
 [MBH. 3,3018](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3018), aber die [ed. Bomb.] *˚saṃmita)*.* dvādaśaskandha˚ (bhāgavata)* состоящий из двенадцати Ск.
-[PAÑCAR. 2,7,28.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,7,28) *mṛtyu˚ (˚saṃdhita* [ed. Bomb.]) так преим. обречённый смерти
+[PAÑCAR. 2,7,28.](https://sanskrit-lexicon-scans.github.io/pancar/app1?2,7,28) *mṛtyu˚ (˚saṃdhita* [ed. Bomb.]) так преим. обреченный смерти
 [MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462)
   <sub>attested</sub>
 
 **addendum)** — Vgl. *asaṃmita, dvirephagaṇasaṃmitā* und *saṃmiti* .
 
-- **RU:** — ср. *asaṃmita, dvirephagaṇasaṃmitā* und *saṃmiti* .
+- **RU:** — ср. *asaṃmita, dvirephagaṇasaṃmitā* и *saṃmiti* .
   <sub>attested</sub>
 
 ## mā
@@ -2415,7 +2415,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 [ṚV. PRĀT. 17,11.]
 [Ind. St. 8,111. 285. 392.]
 
-- **RU:** — 2) определённый определ. метр
+- **RU:** — 2) определенный определ. метр
 [ṚV. PRĀT. 17,11.]
 [Ind. St. 8,111. 285. 392.]
   <sub>lexicographic</sub>
@@ -2437,7 +2437,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
 
 - **RU:** 5. *mā* *(me), mayate* менять, обменивать
-[DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* und *˚māya*
+[DHĀTUP. 22,65.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) absol. *˚mitya* и *˚māya*
 [P. 6,4,70.](https://ashtadhyayi.com/sutraani/6/4/70) [3,4,19.](https://ashtadhyayi.com/sutraani/3/4/19)
 [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216) — desid. *mitsate*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54) [58.](https://ashtadhyayi.com/sutraani/7/4/58)
@@ -2448,7 +2448,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 *˚māya*
 [6,4,70](https://ashtadhyayi.com/sutraani/6/4/70), Sch. [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216)
 
-- **RU:** — *apa* чередоваться: *˚mitya yācate* или *yācitvāpamayate* он попрошайничает поочерёдно
+- **RU:** — *apa* чередоваться: *˚mitya yācate* или *yācitvāpamayate* он попрошайничает поочередно
 [P. 3,3,19](https://ashtadhyayi.com/sutraani/3/3/19), схол.
 *˚māya*
 [6,4,70](https://ashtadhyayi.com/sutraani/6/4/70), схол. [VOP. 26,216.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,216)
@@ -2490,7 +2490,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
 
 **cross-ref)** 6. *mā* s. u. 1. und 2. *mi* .
 
-- **RU:** 6. *mā* см. 1. und 2. *mi* .
+- **RU:** 6. *mā* см. 1. и 2. *mi* .
   <sub>lexicographic</sub>
 
 ## mā
@@ -2588,7 +2588,7 @@ Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 [SĀH. D. 121,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?121,6) [122,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?122,18) [155,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?155,7)
 [SARVADARŚANAS. 28,6.]
 
-- **RU:** — *anu* caus. давать основание заключать о чём-либо (acc.), — делать вывод о чём-либо
+- **RU:** — *anu* caus. давать основание заключать о чем-либо (acc.), — делать вывод о чем-либо
 [SĀH. D. 121,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?121,6) [122,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?122,18) [155,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?155,7)
 [SARVADARŚANAS. 28,6.]
   <sub>attested</sub>
@@ -2625,11 +2625,11 @@ Z. 14 nach 6, 6 einzuschalten: *mā bhūtkālātyayo yathā*
 
 **1)** 1. *mā*
  1) *mā bhūdāgataḥ* so v. a. sollte er nicht vielleicht gekommen sein?
-[Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
+[Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937 "Spr. (II) 937: ādṛṣṭiprasaraṃ priyasya padavīmudvīkṣya nirviṇṇayā vicchinneṣu paśiṣvahaḥpariṇatau dhvānte samunmīlati | dattvaikaṃ saśucā gṛhaṃ prati padaṃ pānthastr… — (343.) Die Frau eines auf Reisen befindlichen Mannes schaut nach dem Pfade, auf dem ihr Geliebter kommen soll, so weit das Auge nur reicht")
 
 - **RU:** 1. *mā*
- 1) *mā bhūdāgataḥ* так преим. неужели он, пожалуй, пришёл?
-[Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937)
+ 1) *mā bhūdāgataḥ* так преим. неужели он, пожалуй, пришел?
+[Spr. (II) 937.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?937 "Spr. (II) 937: ādṛṣṭiprasaraṃ priyasya padavīmudvīkṣya nirviṇṇayā vicchinneṣu paśiṣvahaḥpariṇatau dhvānte samunmīlati | dattvaikaṃ saśucā gṛhaṃ prati padaṃ pānthastr… — (343.) Die Frau eines auf Reisen befindlichen Mannes schaut nach dem Pfade, auf dem ihr Geliebter kommen soll, so weit das Auge nur reicht")
   <sub>attested</sub>
 
 **3)** — 3)

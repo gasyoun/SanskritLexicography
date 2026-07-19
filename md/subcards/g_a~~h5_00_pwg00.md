@@ -122,7 +122,7 @@
 [SARVADARŚANAS. 169,17. fg.] singend
 [KATHĀS. 121,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,130)
 
-- **RU:** — *pra*, *pragīta* произнесённый нараспев, воспетый: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (а именно *ṛcaḥ* и *yajūṃṣi)*
+- **RU:** — *pra*, *pragīta* произнесенный нараспев, воспетый: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (а именно *ṛcaḥ* и *yajūṃṣi)*
 [SARVADARŚANAS. 169,17. fg.] поя, нараспев
 [KATHĀS. 121,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,130)
   <sub>attested</sub>

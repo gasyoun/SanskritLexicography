@@ -34,7 +34,7 @@
 [4,27,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,10) *ubhayorapi rājendra saṃbandhenānubadhyatām . ikṣvākukulam* «приводить в связь»
 [R. 1,72,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,8) *anyo'nyānubaddha (trivarga)*
 [Verz. d. Oxf. H. 216,a,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?216) *anubaddhena hṛṃdā śṛṇvanhareḥ kathāḥ* «со скованным, полностью на [это] направленным сердцем»
-[BHĀG. P. 3,22,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,33) pass. «как» Анубандха «быть присоединённым»: *dviścakāro 'nubadhyate*
+[BHĀG. P. 3,22,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,33) pass. «как» Анубандха «быть присоединенным»: *dviścakāro 'nubadhyate*
 [P. 3,1,44](https://ashtadhyayi.com/sutraani/3/1/44), схол.
   <sub>attested</sub>
 
@@ -76,7 +76,7 @@
 **5)** — 5) auf Etwas bestehen
 [KATHĀS. 49,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,47)
 
-- **RU:** — 5) «настаивать на чём-л.»
+- **RU:** — 5) «настаивать на чем-л.»
 [KATHĀS. 49,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,47)
   <sub>attested</sub>
 

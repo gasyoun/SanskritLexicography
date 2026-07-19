@@ -157,7 +157,7 @@
 [R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) fehlerhaft für *upā˚* getadelt. wie die [ed. Bomb.] liest.
 
 - **RU:** — 5) *upalabdha*
-[R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) ошибочно вместо *upā˚* порицается. как читает [ed. Bomb.].
+[R. 2,40,45](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,45) ошибочно вм. *upā˚* порицается. как читает [ed. Bomb.].
   <sub>lexicographic</sub>
 
 **caus-intro)** — Vgl. *upalabdhavya* fgg., *upalabhya* fgg. — caus.

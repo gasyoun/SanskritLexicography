@@ -41,16 +41,16 @@ Schol. zu [KAP. 1,90.] [ŚAṂK.] zu [BṚH. ĀR. UP. p. 36. 191. 247.] [ŚIŚ. 
 [KĀṬH. 12,8.] разделять, прерывать: *evaṃ bhāryāśca putrāśca suhṛdaśca vasūni ca . sametya vyavadhīyante*
 [R. GORR. 2,114,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,13) *nāhaṃmameti bhāvo 'yaṃ puruṣe vyavadhīyate*
 [BHĀG. P. 4,29,70.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,70) *etāṃ smṛtiṃ te — na hyeṣa vyavadhātkālaḥ*
-[6,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,4) *vyavahita* разделённый, разлучённый
-[VS. PRĀT. 1,38.] [3,64.] [94.] схол. zu [4,134. 167.] схол. zu [P. 1,1,66.](https://ashtadhyayi.com/sutraani/1/1/66) [67.](https://ashtadhyayi.com/sutraani/1/1/67) [4,82.](https://ashtadhyayi.com/sutraani/1/4/82) [8,1,38.](https://ashtadhyayi.com/sutraani/8/1/38) *a˚* не
+[6,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,4) *vyavahita* разделенный, разлученный
+[VS. PRĀT. 1,38.] [3,64.] [94.] схол. к [4,134. 167.] схол. к [P. 1,1,66.](https://ashtadhyayi.com/sutraani/1/1/66) [67.](https://ashtadhyayi.com/sutraani/1/1/67) [4,82.](https://ashtadhyayi.com/sutraani/1/4/82) [8,1,38.](https://ashtadhyayi.com/sutraani/8/1/38) *a˚* не
 
-разделённый, непосредственно примыкающий, — следующий
+разделенный, непосредственно примыкающий, — следующий
 [AK. 3,2,17.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,17)
-[H. 1451.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1451) схол. zu [VS. PRĀT. 5,29.] схол. zu [P. 1,1,7.](https://ashtadhyayi.com/sutraani/1/1/7) прерванный, задержанный: *śāpavyavahitasmṛti*
-[ŚĀK. 71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) разделённый чем-либо лежащим между, отсюда преим. скрытый, ускользающий от восприятия
-схол. zu [KAP. 1,90.] [ŚAṂK.] zu [BṚH. ĀR. UP. p. 36. 191. 247.] [ŚIŚ. 9,26.] разделённый, отсюда преим. стоящий напротив, противоположный, враждебный: *˚pṛtanā*
+[H. 1451.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1451) схол. к [VS. PRĀT. 5,29.] схол. к [P. 1,1,7.](https://ashtadhyayi.com/sutraani/1/1/7) прерванный, задержанный: *śāpavyavahitasmṛti*
+[ŚĀK. 71,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,18) разделенный чем-либо лежащим между, отсюда преим. скрытый, ускользающий от восприятия
+схол. к [KAP. 1,90.] [ŚAṂK.] к [BṚH. ĀR. UP. p. 36. 191. 247.] [ŚIŚ. 9,26.] разделенный, отсюда преим. стоящий напротив, противоположный, враждебный: *˚pṛtanā*
 [BHĀG. P. 1,9,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36) находящийся лишь в отношении к чему-либо, непосредственно не затронутый: *pūrveṇa pratyāsannānukampāsaṃbandhādanukampyamānādeva pratyayo vihitaḥ . saṃprati vyavahitādapi* (не сам достойный сострадания, но то, что находится в отношении к достойному сострадания) *yathā syāditi vacanam*
-[KĀŚ.] zu [P. 5,3,77.](https://ashtadhyayi.com/sutraani/5/3/77) *a˚* непосредственно направленный на что-либо: *ahaitukyavyavahitā*
+[KĀŚ.] к [P. 5,3,77.](https://ashtadhyayi.com/sutraani/5/3/77) *a˚* непосредственно направленный на что-либо: *ahaitukyavyavahitā*
 ([BURN.]: qui ne se distingue plus de moi) *yā bhaktiḥ puruṣottame*
 [BHĀG. P. 3,29,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,12)
 — ср. *vyavadhā* сл.

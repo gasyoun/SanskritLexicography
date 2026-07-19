@@ -24,7 +24,7 @@
 [5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010)
 
 - **RU:** — 3) *hṛdayanihitavaira* (Conj.) сокрытый в сердце
-[Spr. 2340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2340) *sunihita* надёжно сохранённый
+[Spr. 2340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2340) *sunihita* надежно сохраненный
 [5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010)
   <sub>attested</sub>
 

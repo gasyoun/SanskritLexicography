@@ -98,7 +98,7 @@
 — 1〉 erkennen, kennen lernen, ausfindig machen, in Erfahrung bringen, bemerken, wahrnehmen, inne werden, vernehmen, — dass (mit doppeltem Acc. oder mit *yad*), erfahren —, lernen von (Gen.), eine richtige Erkenntniss erlangen oder haben, unterscheiden, Gewissheit haben, Etwas in Etwas (Loc.) erkennen, — sehen, wissen, dass, (mit doppeltem Acc.).
 
 - **RU:** — С *vi*
-— 1〉 распознавать, знакомиться, разузнавать, разведывать, замечать, воспринимать, осознавать, слышать, — что (с двойным Acc. или с *yad*), узнавать —, учиться у (Gen.), обретать или иметь верное познание, различать, иметь уверенность, узнавать что-либо в чём-либо (Loc.) — видеть, знать, что, (с двойным Acc.).
+— 1〉 распознавать, знакомиться, разузнавать, разведывать, замечать, воспринимать, осознавать, слышать, — что (с двойным Acc. или с *yad*), узнавать —, учиться у (Gen.), обретать или иметь верное познание, различать, иметь уверенность, узнавать что-либо в чем-либо (Loc.) — видеть, знать, что, (с двойным Acc.).
   <sub>attested</sub>
 
 **Mit T33 (mit T39/T40))** — Mit *na* und Inf. nicht wissen, was — heisst, nie in den Fall kommen zu. *vijñāyate* es ist bekannt, — anerkannt, es wird gelehrt. *mā vijñāyi* mit einem Vorangehenden Nom. bei Grammatikern es werde darunter nicht — verstanden, so v. a. man sehe dieses nicht als — an.
@@ -118,7 +118,7 @@
 
 **caus (1))** — 1〉 Etwas kund thun, verkünden, berichten, seine Meinung aussprechen, verkünden — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), erklären —, sagen, dass (mit doppeltem Acc.).
 
-- **RU:** — 1〉 оповещать о чём-либо, возвещать, сообщать, высказывать своё мнение, возвещать — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), объяснять —, говорить, что (с двойным Acc.).
+- **RU:** — 1〉 оповещать о чем-либо, возвещать, сообщать, высказывать свое мнение, возвещать — ([RĀJAT. 3,241](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)), объяснять —, говорить, что (с двойным Acc.).
   <sub>attested</sub>
 
 **caus (2))** — 2〉 mit Acc. der Person es Jmd begreiflich machen, belehren, zu wissen thun, in Kenntniss setzen, sprechen —, sagen zu, mit einer Bitte oder Frage angehen, — in Betreff von (*˚artham, prati* oder Dat.).

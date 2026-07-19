@@ -14,7 +14,7 @@
 [SĀY.] zu [2.] *gā* zieht: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
 
-- **RU:** — *pra* выступать вперёд, уходить, идти, приходить в движение: *ṛṣvā te pādā pra yajjigāsi*
+- **RU:** — *pra* выступать вперед, уходить, идти, приходить в движение: *ṛṣvā te pādā pra yajjigāsi*
 [ṚV. 10,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.073.html#rv10.073.03) *mā pra gāma patho vayam*
 [57,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.057.html#rv10.057.01) *sūryāyā vahatuḥ prāgāt*
 [85,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.13) *pra dīdhitirjigāti*

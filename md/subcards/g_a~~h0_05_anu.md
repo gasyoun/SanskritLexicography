@@ -16,7 +16,7 @@
 [ṚV. 10,12,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.03) *acchinnaṃ tantuṃ pṛthivyā anu geṣam*
 [TS. 1,2,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,3,3) идти следом, следовать: *gacchantaṃ pṛṣṭhato 'nvagāt*
 [MBH. 3,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2303) *damayantī tamanvagāt*
-[2307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2307) [14554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14554) [R. 1,44,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,16) [RAGH. 7,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,29) [8,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,49) [12,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,14) идти вдоль пути, следовать чьим-либо путём: *mā bālipathamanvagāḥ*
+[2307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2307) [14554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14554) [R. 1,44,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,16) [RAGH. 7,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,29) [8,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,49) [12,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,14) идти вдоль пути, следовать чьим-либо путем: *mā bālipathamanvagāḥ*
 [R. 4,30,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,21)
   <sub>attested</sub>
 

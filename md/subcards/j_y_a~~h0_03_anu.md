@@ -40,13 +40,13 @@
 [DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
 [MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
-[10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
+[10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] к [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
 [BHAṬṬ. 1,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,23)
 [SIDDH. K. 167,a,5.]
 *anujñātaviśrama*
 [ŚĀK. 32,11](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,11), v. l. *anujānātu me bhavān* дай мне на это согласие
 [MBH. 3,2047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2047)
-[R. 1,21,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,17) *anujñātaṃ devyā* царица даровала это, дала своё согласие
+[R. 1,21,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,17) *anujñātaṃ devyā* царица даровала это, дала свое согласие
 [MĀLAV. 16,11.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?16,11) *bhavatāmananujñātaṃ ruṇaddhi mama vikramam* отсутствующее с вашей стороны согласие
 [R. 5,58,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,7) *brahma yastvananujñātamadhīyānādavāpnuyāt* не имея на то разрешения
 [M. 2,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,116) *yaḥ svāminānanujñātamādhiṃ bhuṅkte*
@@ -68,7 +68,7 @@
 **3)** — 3) Etwas bereuen: *agṛhṇāṃ yacca te pāṇima gniṃ paryaṇayaṃ ca yat . anujānāmi tatsarvamasmin loke paratra ca ..*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8)
 
-- **RU:** — 3) сожалеть о чём-л., раскаиваться: *agṛhṇāṃ yacca te pāṇima gniṃ paryaṇayaṃ ca yat . anujānāmi tatsarvamasmin loke paratra ca ..*
+- **RU:** — 3) сожалеть о чем-л., раскаиваться: *agṛhṇāṃ yacca te pāṇima gniṃ paryaṇayaṃ ca yat . anujānāmi tatsarvamasmin loke paratra ca ..*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8)
   <sub>attested</sub>
 
@@ -136,7 +136,7 @@
 [MBH. 1,5899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5899) [3,2293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2293) [2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2748) [14842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14842)
 [ŚĀK. 32,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,11)
 [PAÑCAT. 8,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?8,15)
-[ŚUK. 42,6.] Также о неодушевлённых предметах: *rathaṃ divyamindradattam — anujñāya*
+[ŚUK. 42,6.] Также о неодушевленных предметах: *rathaṃ divyamindradattam — anujñāya*
 [R. 6,97,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,4) *anujñātaṃ tu rāmeṇa tadvimānaṃ manojavam . utpapāta*
 [108,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,108,1) *sarvamevānujānāmi cīrāṇyevānuyāntu me* я прощаюсь со всем, оставляю всё позади
 [2,37,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,4)

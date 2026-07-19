@@ -179,7 +179,7 @@ fünf (die vorigen mit der *dhruvā*)
 in [Ind. St. 4,280.] *dāsīsabhaṃ nṛpasabhaṃ rakṣaḥsabhamimā diśaḥ* dieses sind Hinweise so v. a. einzelne Beispiele
 [AK. 3,6,3,27.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,3,27) [1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,1,6) [6,40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,6,6,40)
 
-- **RU:** — 3) указание, намёк: *vamanadravyayogānāṃ digiyaṃ saṃprakīrtitā*
+- **RU:** — 3) указание, намек: *vamanadravyayogānāṃ digiyaṃ saṃprakīrtitā*
 [SUŚR. 1,160,9.] *anayaiva diśā*
 [KULL.] к [M. 7,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,126) *muneḥ pāṭhoktadiśā*
 [SĀH. D. 18,5.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,5) *ityuktadiśā*

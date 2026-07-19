@@ -197,7 +197,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [R. 2,34,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,6) [7](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,7) *riktapāṇirna* (так следует читать) *paśyeta rājānam*
 [VET. in LA. 2,14.] [MBH. 1,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1248) *asāvatrabhavānvarṇāśramāṇāṃ rakṣitā prāgeva muktāsano vaḥ pratipālapati . paśyatainam*
 [ŚĀK. 63,15. fgg.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,15) *matsaṃdeśaiḥ sukhayitumalaṃ paśya sādhvīṃ niśīthe*
-видеть кого-л. в смысле [MEGH. 86.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?86) преим. допустить пред своё лицо, принять: *prārthayedyadi māṃ kaściddaṇḍyaste *
+видеть кого-л. в смысле [MEGH. 86.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?86) преим. допустить пред свое лицо, принять: *prārthayedyadi māṃ kaściddaṇḍyaste *
 
 * sa pumānbhavet . bharturanveṇārthaṃ tu paśyeyaṃ brāhmaṇānaham ..*
 видеть, смотреть в смысле [N. 13,43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,43) преим. усматривать, переживать, быть причастным к: *tatoṃ bhadrāṇi paśyati*
@@ -207,7 +207,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [R. 1,1,88.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,88) [2,20,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,20,34) *tadetatsadanam — paśyasva*
 [MBH. 3,10595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10595) *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau* в смысле преим. находить
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) оглядываться в поисках, разыскивать: *paśyadhvaṃ sārathiṃ kṣipraṃ mama yuktaṃ prayāsyataḥ*
-[MBH. 4,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1172) принимать в расчёт, взвешивать: *teṣāṃ grāmyāṇi kāryāṇi — paśyet*
+[MBH. 4,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1172) принимать в расчет, взвешивать: *teṣāṃ grāmyāṇi kāryāṇi — paśyet*
 [M. 7,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,120) [8,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,2) [24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,24) *yo 'rthāndharmeṇa paśyati*
 [175.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,175) [12,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,19) [YĀJÑ. 1,326.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,326) *aparaṃ ca paśya*
 [HIT. 16,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?16,7) [41,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?41,5) *itivṛttaṃ balasyāntaṃ svakulasyāpi lāñchanam . maraṇaṃ vā samīpasthaṃ kāmiloko na paśyati ..*
@@ -233,12 +233,12 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [M. 7,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,25)
 [MBH. 4,1583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1583)
 [DAŚAK.] в [BENF. Chr. 182,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) без *sādhu* то же
-[BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) мед. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* «я это вижу, я в этом убеждён», вставленное в середину предложения: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
+[BHAG. 2,69.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,69) [5,5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,5) [13,27.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,29) [18,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,16) мед. [MBH. 7,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4251) — *paśyāmi* «я это вижу, я в этом убежден», вставленное в середину предложения: *tādṛgrūpaṃ ca paśyāmi vidyotayati me gṛham*
 Часто [N. 13,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,25) *paśya*, чтобы привлечь внимание, вставляется в предложение или ставится в начале наподобие междометия: *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) [7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
 [MĀRK. P. 14,62.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,62) [24,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?24,34) *paśya kūrmapatirvaddho mūṣikeṇa vimocitaḥ*
 [Spr. 608.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?608) *paśya* и *paśyata* как выражения изумления и похвалы
-[MED. avy. 64. 65. 30.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,64) Когда такое *paśya* или *paśyata* обращает внимание на нечто достойное похвалы, личная форма глагола в предложении сохраняет своё ударение согласно [P. 8,1,39.](https://ashtadhyayi.com/sutraani/8/1/39) *paśya paśya* (или *paśyata paśyata) māṇavako bhuṅkte śobhanam*
+[MED. avy. 64. 65. 30.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,64) Когда такое *paśya* или *paśyata* обращает внимание на нечто достойное похвалы, личная форма глагола в предложении сохраняет свое ударение согласно [P. 8,1,39.](https://ashtadhyayi.com/sutraani/8/1/39) *paśya paśya* (или *paśyata paśyata) māṇavako bhuṅkte śobhanam*
 схол. *paśya* в прозаических сочинениях нередко предваряет стих,
 напр. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,16) [17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,17) [24,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,8) [27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6) [30,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,15) [97,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?97,15) [111,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,13) [20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,20)
   <sub>attested</sub>
@@ -343,7 +343,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [M. 3,176](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,176) (= [MBH. 13,4292](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4292)). [MBH. 3,2426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2426) [12096.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12096) [4,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1738) [5,4569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4569) [7,1737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1737) [6199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6199) [HARIV. 8806.](https://sanskrit-lexicon-scans.github.io/hariv?8806) [R. 2,113,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,113,4) [R. GORR. 2,59,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,59,4) [75,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,75,22) [5,10,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,10,7) [6,3,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,3,6) [VĀYU-P.] в [Verz. d. Oxf. H. 50,b,39.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?50) *bhavasya devasya kilānupaśyataḥ* перед взором бога
 [BHĀG. P. 8,12,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,23) *(tasmin) brahmarudrau ca bhūtāni bhedenājño 'nupaśyati*
 [4,7,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,52) *nahyanyamanupaśyāmi kaṃcidyaudhiṣṭhire bale . yaḥ śaktaḥ samare bhīṣmaṃ pratiyoddhum*
-[MBH. 6,5456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5456) *ātmanaḥ sadṛśaṃ sā tu bhartāraṃ nānvapaśyata* нашёл
+[MBH. 6,5456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5456) *ātmanaḥ sadṛśaṃ sā tu bhartāraṃ nānvapaśyata* нашел
 [9,2986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2986) *nānyaṃ tvadasya śaraṇaṃ bhramato 'nupaśye*
 [BHĀG. P. 7,9,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,44) *na ca śreyo 'nupaśyāmi hatvā svajanamāhave*
 [BHAG. 1,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,31)
@@ -353,7 +353,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 смотреть вслед, снова видеть: [2,30,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,4) *kvacicchṛṇoti śṛṇvatyāṃ paśyantyāmanupaśyati*
 [BHĀG. P. 4,25,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,60) *yaddṛṣṭaṃ dṛṣṭamanupaśyati*
 оглядываться назад [PRAŚNOP. 4,5.] *anupaśya yathā pūrve pratipaśya yathāpare*
-принимать в расчёт, взвешивать, учитывать: [KAṬHOP. 1,6.] *dharmamevānupaśyantaścakrurdharmaparāyaṇāḥ*
+принимать в расчет, взвешивать, учитывать: [KAṬHOP. 1,6.] *dharmamevānupaśyantaścakrurdharmaparāyaṇāḥ*
 [MBH. 1,2477.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2477)
 [R. 2,51,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,8)
 [R. GORR. 2,94,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,94,10) *trivargam*
@@ -589,7 +589,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [9101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9101) [BHĀG. P. 3,32,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,30) распознавать как: *yadbhūtayoniṃ paripaśyanti dhīrāḥ*
 [MUṆḌ. UP. 1,1,6. 2,2,7.]
 [BHĀG. P. 3,25,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,18) — *paripaśyate*
-[PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10) ошибочно вместо *paripacyate* .
+[PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10) ошибочно вм. *paripacyate* .
   <sub>attested</sub>
 
 ## prapaś
@@ -636,7 +636,7 @@ z. B. [ŚĀK. 5,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,
 [7,1057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1057) *prapaśyamāna*
 [5,752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.752)
 
-- **RU:** — *pra* смотреть вперёд, предвидеть; видеть перед собой: *indra pra ṇaḥ puraeteva paśyaḥ*
+- **RU:** — *pra* смотреть вперед, предвидеть; видеть перед собой: *indra pra ṇaḥ puraeteva paśyaḥ*
 [ṚV. 6,47,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.07) *gātuṃ prapaśyan*
 [AV. 13,1,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.04) *prapaśyanto yudhenyāni bhūri*
 [ṚV. 10,120,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.120.html#rv10.120.05) [1,174,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.06) *paśurvai nīyamānaḥ sa mṛtyuṃ prāpaśyat*
@@ -873,7 +873,7 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 [MBH. 5,743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.743) *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
 [M. 7,222.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,222) увидеть кого-л. так преим. встретиться с кем-л., допустить кого-л. к себе: *uttiṣṭha śakra saṃpaśya devarṣīṃśca samāgatām*
 [MBH. 5,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.498)
-[R. 2,34,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,34) обращать своё внимание на что-л., рассматривать, взвешивать: *dhyānayogena saṃpaśyedgatimasyāntarātmanaḥ*
+[R. 2,34,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,34) обращать свое внимание на что-л., рассматривать, взвешивать: *dhyānayogena saṃpaśyedgatimasyāntarātmanaḥ*
 [M. 6,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,73) *lokasaṃgrahamevāpi saṃpaśyankartumarhasi*
 [BHAG. 3,20.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,20) *so 'sya kāryāṇi saṃpaśyetsabhyaireva tribhirvṛtaḥ*
 [M. 8,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,10) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,45)
@@ -961,7 +961,7 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 
 **11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
 
-- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
+- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вм. второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вм. первого Acc. в виде исключения Loc. (v. l. Acc.), вм. второго — _Adv._ при *vat*.
   <sub>attested</sub>
 
 **12)** — 12〉 mit dem geistigen Auge erschauen (von Sehern und Dichtern); daher auch erfinden (z. B. Opfergebräuche). *svapnān* Traumgesichte sehen.
@@ -991,7 +991,7 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 
 **17)** — 17〉 *paśyāmi* in den Satz eingeschoben, so v. a. ich sehe es, ich bin davon überzeugt.
 
-- **RU:** — 17〉 *paśyāmi* вставленное в предложение, так преим. я вижу это, я убеждён в этом.
+- **RU:** — 17〉 *paśyāmi* вставленное в предложение, так преим. я вижу это, я убежден в этом.
   <sub>attested</sub>
 
 **18)** — 18〉 *paśya* sich und **paśyata* sehet interjectionsartig in den Satz eingeschoben oder vorangestellt, um die Aufmerksamkeit zu erregen. *paśya* leitet in prosaischen Schriften häufig einen Vers ein. Vgl. *spaś*.
@@ -1166,7 +1166,7 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 
 **mit_T61_4)** — 4〉 kennen, erkennen, — als (mit doppeltem Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Fehlerhaft für *˚pacyate*.
 
-- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Ошибочно вместо *˚pacyate*.
+- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Ошибочно вм. *˚pacyate*.
   <sub>attested</sub>
 
 **mit_T66)** — Mit *pra*
@@ -1201,7 +1201,7 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 
 **mit_T66_6)** — 6〉 vorausblicken, voraussehen.
 
-- **RU:** — 6〉 смотреть вперёд, предвидеть.
+- **RU:** — 6〉 смотреть вперед, предвидеть.
   <sub>attested</sub>
 
 **mit_T66_7)** — 7〉 erkennen, kennen.
@@ -1461,8 +1461,8 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
 
 - **RU:** 1. *paś*
-[Sp. 602, Z. 1] добавь ещё
-[Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] добавь ещё: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* принимающий вред за пользу и пользу за вред
+[Sp. 602, Z. 1] добавь еще
+[Spr. 4310](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4310); [Z. 26] добавь еще: *anarthamarthataḥ paśyannarthaṃ caivāpyanarthataḥ* принимающий вред за пользу и пользу за вред
 [Spr. 3454.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3454)
   <sub>attested</sub>
 
@@ -1484,8 +1484,8 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 
 
 **1)** 1. *paś* mit *prati* erleben, erfahren: *nāpriyaṃ pratipaśyeyuḥ*
-[Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380)
+[Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380 "Spr. (II) 3380: na mriyeyurna jīryeyuḥ sarve syuḥ sarvakāmikāḥ | nāpriyaṃ pratipaśyeyurvaśitvaṃ yadi vai bhavet || — (4332.) Niemand stürbe, Niemand alterte, Jedermann würde aller seiner Wünsche theilhaftig und Niemand erlebte etwas Unangenehmes, wenn Willensfreiheit bestände.")
 
 - **RU:** 1. *paś* с *prati* переживать, испытывать: *nāpriyaṃ pratipaśyeyuḥ*
-[Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380)
+[Spr. (II) 3380.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3380 "Spr. (II) 3380: na mriyeyurna jīryeyuḥ sarve syuḥ sarvakāmikāḥ | nāpriyaṃ pratipaśyeyurvaśitvaṃ yadi vai bhavet || — (4332.) Niemand stürbe, Niemand alterte, Jedermann würde aller seiner Wünsche theilhaftig und Niemand erlebte etwas Unangenehmes, wenn Willensfreiheit bestände.")
   <sub>attested</sub>

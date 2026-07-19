@@ -109,7 +109,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [H. 1488.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1488)
 [an. 2,277.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,277)
 
-- **RU:** 1) раскалывать, проламывать, пробивать отверстие в чём-либо, разбивать, разносить, разрывать, разрезать: *puraḥ*
+- **RU:** 1) раскалывать, проламывать, пробивать отверстие в чем-либо, разбивать, разносить, разрывать, разрезать: *puraḥ*
 [ṚV. 1,53,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.053.html#rv01.053.08) [2,14,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.014.html#rv02.014.06)
 [AIT. BR. 1,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,25) *adrim*
 [ṚV. 1,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.03) [4,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.11) *valam*
@@ -234,12 +234,12 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [9,281.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,281) *vāri bhidyamānam* бурлящая, ревущая вода, прорывающая берега
 [R. 1,26,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,6) *yugānte bhidyamānānāṃ sāgarāṇāmiva svanaḥ* прорывающийся, выходящий из берегов
 [HARIV. 5003.](https://sanskrit-lexicon-scans.github.io/hariv?5003) *sāgarasyeva bhidyataḥ*
-[R. GORR. 2,5,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) планета или комета прорывает звезду, когда проходит сквозь неё: *ketunā dhūmaketostu nakṣatrāṇi trayodaśa . bharaṇyādīni bhinnāni nānuyānti niśākaram ..*
+[R. GORR. 2,5,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) планета или комета прорывает звезду, когда проходит сквозь нее: *ketunā dhūmaketostu nakṣatrāṇi trayodaśa . bharaṇyādīni bhinnāni nānuyānti niśākaram ..*
 [HARIV. 4259.](https://sanskrit-lexicon-scans.github.io/hariv?4259)
 [SŪRYAS. 8,13.]
 [VARĀH. BṚH. S. 4,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,25) [26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,26) [6,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,9) [9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28)
 [Spr. 1886.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1886) [2354.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2354) [2649.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2649) *yadi bhintte sūryasuto rohiṇyāḥ śakaṭam*
-[2367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2367) *tamaḥ, timiraṃ bhid* прорвать тьму, — рассеять её
+[2367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2367) *tamaḥ, timiraṃ bhid* прорвать тьму, — рассеять ее
 [P. Einl. 2.] [ŚĀK. 181.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?181) [VID. 145.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?145) *yo na bhidyate (saṃgatasaṃdhiḥ)* союз, который не может быть нарушен,
 [Spr. 4880.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4880) *yaiśunyādbhidyate snehaḥ*
 [199.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?199) *saṃbandhibhinno 'pi gireḥ kulasya snehastadekāyatanaṃ jagāma*

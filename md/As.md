@@ -56,12 +56,12 @@ _PWG article — 16 sub-card(s), 90 sense(s) · RU 90/90 · EN 0/90_
 
 **upa-var-1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 
-- **RU:** — Mit *anu* 1〉 находиться вблизи кого-либо (Gen.) [HEMĀDRI 1,35,20].
+- **RU:** — С *anu* 1〉 находиться вблизи кого-либо (Gen.) [HEMĀDRI 1,35,20].
   <sub>attested</sub>
 
 **adhi-var)** **2.** *ās* I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
 
-- **RU:** **2.** *ās* I. 1. Mit *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
+- **RU:** **2.** *ās* I. 1. С *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — С *anu* I. 1.
   <sub>attested</sub>
 
 ## ās
@@ -143,10 +143,10 @@ _PWG article — 16 sub-card(s), 90 sense(s) · RU 90/90 · EN 0/90_
 [R. 1,4,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,13) [31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,31)
 [HIT. 29,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?29,12) pass. impers.: *āsyatāmiti coktaḥ sannāsītābhimukhaṃ guroḥ*
 [M. 2,193.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,193)
-[N. 12,49.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,49) с acc. вместо более употребительного loc.: *etadāsanamāsyatām*
+[N. 12,49.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,49) с acc. вм. более употребительного loc.: *etadāsanamāsyatām*
 [VIKR. 27,16.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?27,16) *tasya — pūrvaṃ samudrataṭamāsataḥ*
 [R. 4,10,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,7) *imānyāsanamukhyāni āsyetāṃ munipuṃgavau* (возможно, следует читать: *āsyatāṃ munipuṃgavaiḥ*)
-[1,72,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15) о животных и мёртвых телах: «покоиться, лежать»
+[1,72,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,15) о животных и мертвых телах: «покоиться, лежать»
 [MEGH. 53.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?53) *vidyādharaśarīrāṇi tatra hyasmākamāsate*
 [KATHĀS. 26,265.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,265)
   <sub>attested</sub>
@@ -179,10 +179,10 @@ _PWG article — 16 sub-card(s), 90 sense(s) · RU 90/90 · EN 0/90_
 [12991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12991) *tatra (āśrame) kaścidṛṣirāsāṃ cakre*
 [1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) [2,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.104) [5,256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.256) *icchāmi nityamevāhaṃ tvayā putra sahāsitum*
 [3,14465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14465) [KATHĀS. 25,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,68) [VID. 290.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?290) [BRAHMA-P. 52,2.] [BHAṬṬ. 4,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,6) [8,79.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,79) *lokānuparyuparyāste mādhavaḥ*
-[VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) *kurūnāste* «он живёт среди» Куру
+[VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) *kurūnāste* «он живет среди» Куру
 [P. 1,4,51](https://ashtadhyayi.com/sutraani/1/4/51), Вартт. 2, схол.
-*dūrata ās* «пребывать вдали, быть удалённым»
-[CĀT. 1.] о неодушевлённом: «наличествовать, иметься»: *(yatra) mudaḥ pramuda āsate*
+*dūrata ās* «пребывать вдали, быть удаленным»
+[CĀT. 1.] о неодушевленном: «наличествовать, иметься»: *(yatra) mudaḥ pramuda āsate*
 [ṚV. 9,113,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.113.html#rv09.113.11) *āsānebhirmiyedhaiḥ*
 [6,51,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.051.html#rv06.051.12) *āsīnāmūrjamupa ye sacante*
 [AV. 18,4,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.40)
@@ -209,7 +209,7 @@ bes. häufig *sattram* sessionem (sacrificam) sedere
 [ŚAT. BR. 4,5,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,12) [9,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,9,1) [5,5,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,5,13) [11,5,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,1) *kṛtvā mūtramupaspṛśya saṃdhyāṃ so 'ste* (für *sa āste) sma* (verrichtete er seine Andacht) *naiṣadhaḥ . akṛtvā pādayoḥ śaucaṃ tatrainaṃ kalirāviśat ..*
 [N. 7,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,3)
 
-- **RU:** — 3) «оставаться сидеть, сидеть неподвижно, медлить, оставаться, выдерживать, пребывать (в неизменном состоянии)»; как в значении бездействия, так и стойкости или спокойного достоинства: *vayo nakiṣṭe paptivāṃsa āsate vyuṣṭau*
+- **RU:** — 3) «оставаться сидеть, сидеть неподвижно, медлить, оставаться, выдерживать, пребывать (в неизменном состоянии)»; как в знач. бездействия, так и стойкости или спокойного достоинства: *vayo nakiṣṭe paptivāṃsa āsate vyuṣṭau*
 [ṚV. 1,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.06) [2,43,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.03) *jyokpitṛṣvāstām*
 [AV. 1,14,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.014.html#av01.014.01) *āste bhaga āsīnasya ūrdhvastiṣṭhati tiṣṭhataḥ*
 [AIT. BR. 7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15)
@@ -227,13 +227,13 @@ bes. häufig *sattram* sessionem (sacrificam) sedere
 особ. часто *sattram* sessionem (sacrificam) sedere
 [TS. 7,1,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,4,1)
 [AIT. BR. 2,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,19) *ye dīrghasattramāsīran*
-[ŚAT. BR. 4,5,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,12) [9,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,9,1) [5,5,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,5,13) [11,5,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,1) *kṛtvā mūtramupaspṛśya saṃdhyāṃ so 'ste* (вместо *sa āste) sma* («совершал молитву») *naiṣadhaḥ . akṛtvā pādayoḥ śaucaṃ tatrainaṃ kalirāviśat ..*
+[ŚAT. BR. 4,5,1,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,12) [9,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,9,1) [5,5,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,5,13) [11,5,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,1) *kṛtvā mūtramupaspṛśya saṃdhyāṃ so 'ste* (вм. *sa āste) sma* («совершал молитву») *naiṣadhaḥ . akṛtvā pādayoḥ śaucaṃ tatrainaṃ kalirāviśat ..*
 [N. 7,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,3)
   <sub>attested</sub>
 
 **4)** — 4) einer Handlung fortwährend obliegen, in einem Zustande oder Verhältnisse verharren, sich längere Zeit hindurch darin befinden, anhalten, dauern; die Ergänzung ist mannigf. Art:
 
-- **RU:** — 4) «непрестанно быть занятым каким-либо действием, пребывать в каком-либо состоянии или положении, находиться в нём продолжительное время, длиться, продолжаться»; дополнение носит характер разнообр.:
+- **RU:** — 4) «непрестанно быть занятым каким-либо действием, пребывать в каком-либо состоянии или положении, находиться в нем продолжительное время, длиться, продолжаться»; дополнение носит характер разнообр.:
   <sub>attested</sub>
 
 **4a)** a) ein mit dem praed. congruirendes partic., _adj._ oder subst.: *ṛtasya yoniṃ vimṛśanta āsate*
@@ -310,7 +310,7 @@ bes. häufig *sattram* sessionem (sacrificam) sedere
 *prāyamāsmahe* «мы медленно умираем» (см. *i* с *pra*) «мы обрекаем себя на голодную смерть»
 [R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
 [56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) ср. также u. *upa* и *prāyamupaviṣṭān*
-[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (см. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. ещё u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (ср. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
+[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (см. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. еще u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (ср. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
   <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
@@ -324,7 +324,7 @@ bes. häufig *sattram* sessionem (sacrificam) sedere
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) Hierher ist wohl auch zu ziehen: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 und 64.
 
-- **RU:** — c) _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* («он ведёт себя совершенно спокойно») *parjanyastatra kāraṇam ..*
+- **RU:** — c) _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* («он ведет себя совершенно спокойно») *parjanyastatra kāraṇam ..*
 [MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
 [PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
 [HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* («будь здоров, благополучствуй») *ramasva ca*
@@ -530,7 +530,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [M. 3,104.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,104) *viśvāvasuśca ye cānye te 'pyupāsantu me makham*
 [MBH. 14,2871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2871)
 
-- **RU:** — 4) присутствовать, принимать участие в чём-л.: *upāsate ye gṛhasthāḥ parapākam*
+- **RU:** — 4) присутствовать, принимать участие в чем-л.: *upāsate ye gṛhasthāḥ parapākam*
 [M. 3,104.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,104) *viśvāvasuśca ye cānye te 'pyupāsantu me makham*
 [MBH. 14,2871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2871)
   <sub>mixed</sub>
@@ -749,7 +749,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 ([KULL.]: = *prāgagrāndarbhānadhyāsīnaḥ*)
 [M. 2,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,75)
 
-- **RU:** — 2) сидеть на чём-либо: *prākkūlānparyupāsīnaḥ*
+- **RU:** — 2) сидеть на чем-либо: *prākkūlānparyupāsīnaḥ*
 ([KULL.]: = *prāgagrāndarbhānadhyāsīnaḥ*)
 [M. 2,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,75)
   <sub>attested</sub>
@@ -765,7 +765,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [MBH. 4,574.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.574) *ete mayā mahāghorāḥ samgrāmāḥ paryupāsitāḥ*
 [ARJ. 8,21.]
 
-- **RU:** — 4) присутствовать, принимать участие в чём-либо: *striyo gītasvanaṃ tasya muditāḥ paryupāsate*
+- **RU:** — 4) присутствовать, принимать участие в чем-либо: *striyo gītasvanaṃ tasya muditāḥ paryupāsate*
 [MBH. 4,574.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.574) *ete mayā mahāghorāḥ samgrāmāḥ paryupāsitāḥ*
 [ARJ. 8,21.]
   <sub>attested</sub>
@@ -983,7 +983,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [7,16,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.016.html#rv07.016.09) *prajāvatā vacasā vahnirāsā ca huve ni ca satsīha devaiḥ* coram vehens
 [1,76,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.076.html#rv01.076.04) [129,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.129.html#rv01.129.05) [10,115,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.115.html#rv10.115.03) *tve agne viśve amṛtāso adruha āsā devā haviradantyāhutam* лично присутствующий
 [2,1,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.14) *viśvā yaścarṣaṇīrabhyā3sā vājeṣu sāsahat* cominus, муж против мужа
-[5,23,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.023.html#rv05.023.01) *bhasadaśvo na yamasāna āsā* он жуёт, словно конь, которого ведут за поводья спереди,
+[5,23,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.023.html#rv05.023.01) *bhasadaśvo na yamasāna āsā* он жует, словно конь, которого ведут за поводья спереди,
 [6,3,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.04) *adha dyutānaḥ pitroḥ sacāsāmanuta guhyaṃ cāru pṛśneḥ*
 [4,5,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.10) *asya hi svayaśastara āsā vidharmanmanyase*
 [5,17,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.017.html#rv05.017.02) *nū na iddhi vāryamāsā sacante sūrayaḥ*
@@ -991,7 +991,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 [6,32,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.01) *anyasyāsā jihvayā jenyo vṛṣā*
 [1,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.02) *āsāvivāsannaditimuruṣyet*
 [152,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.152.html#rv01.152.06) *āsā gāvo vandyāso nokṣaṇaḥ*
-[168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) ср. *āsayā* . — В comp. см. *ādaghna, āspātra, anās, svās*; ср. также ещё *āsan* и *āsya* .
+[168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) ср. *āsayā* . — В comp. см. *ādaghna, āspātra, anās, svās*; ср. также еще *āsan* и *āsya* .
   <sub>attested</sub>
 
 ## ās
@@ -1087,7 +1087,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 [KATHĀS. 121,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,99) — caus.
 [ṢAḌV. BR. 2,4.]
 
-- **RU:** — 5) *āstām* означает здесь преим. пусть это останется, пусть будет оставлено без обсуждения, я ничего не хочу об этом знать; ср. ещё
+- **RU:** — 5) *āstām* означает здесь преим. пусть это останется, пусть будет оставлено без обсуждения, я ничего не хочу об этом знать; ср. еще
 [Spr. 406.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?406) [3737.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3737) [4710.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4710)
 [KATHĀS. 74,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,85) [94,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?94,27) imperat. с *yathā* так что: *tato jayendrasenākhyāṃ tāṃ sa dadhyau tathā yathā . āsatāṃ niśi nāryo 'nyāḥ* так преим. так что о других женщинах больше не могло быть и речи
 [67,23.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,23) — *āsita* сидящий
@@ -1108,7 +1108,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 [SARVADARŚANAS. 118,8]; vgl. *na pramāṇapathamavatarati*
 [135,2] v. u.
 
-- **RU:** — 3) *nityamukhaṃ na pramāṇapaddhatimadhyāste* так преим. не поддаётся доказательству
+- **RU:** — 3) *nityamukhaṃ na pramāṇapaddhatimadhyāste* так преим. не поддается доказательству
 [SARVADARŚANAS. 118,8]; ср. *na pramāṇapathamavatarati*
 [135,2] снизу
   <sub>attested</sub>

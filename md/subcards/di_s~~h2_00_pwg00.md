@@ -80,7 +80,7 @@
 
 **nachtrag_T49_1_hinausstrecken)** 1) hinausstrecken [TBR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,4,8)
 
-- **RU:** 1) вытягивать вперёд [TBR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,4,8)
+- **RU:** 1) вытягивать вперед [TBR. 2,1,4,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,4,8)
   <sub>attested</sub>
 
 **nachtrag_T50_2)** — 2) Z. 4 lies 49, 7 st. 94, 7.

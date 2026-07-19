@@ -5,7 +5,7 @@
 
 **e)** — e〉 besiegt werden von (Instr.), Jmd nachstehen.
 
-- **RU:** — e〉 быть побеждённым кем-л. (Instr.), уступать кому-л.
+- **RU:** — e〉 быть побежденным кем-л. (Instr.), уступать кому-л.
   <sub>attested</sub>
 
 **f)** — f〉 ablassen —, abstehen von, untreu werden; mit Abl.
@@ -40,7 +40,7 @@
 
 **7c)** — c〉 ermangelnd, ohne — seiend (die Ergänzung im Abl., Instr. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишённый, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
   <sub>attested</sub>
 
 **caus)** — Caus.
@@ -87,7 +87,7 @@
 
 **mit-T18-4)** — 4〉 ungenau für Pass. weichen, schwinden.
 
-- **RU:** — 4〉 неточно вместо Pass. отступать, исчезать.
+- **RU:** — 4〉 неточно вм. Pass. отступать, исчезать.
   <sub>attested</sub>
 
 **mit-T18-5)** — 5〉 Pass.
@@ -147,7 +147,7 @@
 
 **mit-T18-6f)** — f〉 am Ende eines Comp. ermangelnd, ohne — seiend.
 
-- **RU:** — f〉 в конце Comp. лишённый, не имеющий.
+- **RU:** — f〉 в конце Comp. лишенный, не имеющий.
   <sub>attested</sub>
 
 **mit-T18-7)** — 7〉 *prajahita* s. bes.
@@ -169,7 +169,7 @@
 
 **mit-T36-2a)** — a〉 ausgeschlossen von (Abl.).
 
-- **RU:** — a〉 исключённый из (Abl.).
+- **RU:** — a〉 исключенный из (Abl.).
   <sub>attested</sub>
 
 **mit-T36-2b)** — b〉 geschwunden, dahin seiend.
@@ -179,7 +179,7 @@
 
 **mit-T36-2c)** — c〉 ermangelnd, ohne — seiend; die Ergänzung im Instr.
 
-- **RU:** — c〉 лишённый, не имеющий; дополнение в Instr.
+- **RU:** — c〉 лишенный, не имеющий; дополнение в Instr.
   <sub>attested</sub>
 
 **mit-T41)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
@@ -308,7 +308,7 @@
 
 **mit-T47-11c)** — c〉 ermangelnd, ohne — seiend, beraubt —, getrennt —, frei von (Instr., Abl. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишённый, не имеющий, лишённый —, отделённый —, свободный от (Instr., Abl. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий, лишенный —, отделенный —, свободный от (Instr., Abl. или предшествует в Comp.).
   <sub>attested</sub>
 
 **addenda-ptcp)** — Caus. s. *vihāpita* [Nachtr. 6].

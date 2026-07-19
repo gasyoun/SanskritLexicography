@@ -9,8 +9,8 @@
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
 
 - **RU:** — *nis*
- 1) «выступать вперёд, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
-[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* «выступающий вперёд»
+ 1) «выступать вперед, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
+[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* «выступающий вперед»
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
   <sub>attested</sub>
 

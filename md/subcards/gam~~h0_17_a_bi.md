@@ -56,7 +56,7 @@
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) [10,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,1)
 [MBH. 2,1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1994) *vanāni kramaśastāta sarvāṇyevābhyagacchata*
 [3,16656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16656) *abhigata* «пришедший к» (dat.): *viniścayenābhigato 'smi te*
-[MBH. 3,16700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16700) «посещённый»: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
+[MBH. 3,16700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16700) «посещенный»: *mayā pūrvaṃ bahuśo 'bhigato hi saḥ*
 [R. 4,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,59,11)
   <sub>attested</sub>
 

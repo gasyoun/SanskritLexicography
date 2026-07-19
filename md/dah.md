@@ -4,6 +4,111 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 ## dah
 
+`dah~~h0_zz_nws00`
+
+
+**NWS-1)** *dah* [Ved , unsp] verbrennen (Akk), durch Feuer verzehren (Akk). [ oft bildlich, was aus den Objecten ersichtlich ist. ]
+
+- **RU:** *dah* [Ved , unsp] сжигать (Acc), уничтожать огнем (Acc). [ часто в переносном смысле, что явствует из объектов. ] Graßmann 1873 (1996) : 586
+  <sub>attested</sub>
+
+**NWS-2)** [Ved , unsp] ( dáhati I ) brennen. Kaus: verbrennen lassen
+
+- **RU:** [Ved , unsp] ( dáhati I ) гореть. Kaus: заставлять сжечь Hillebrandt 1885 : 92
+  <sub>attested</sub>
+
+**NWS-3)** [Ved , unsp] ( I ) brennen, verbrennen. ṚV 4,4,4
+
+- **RU:** [Ved , unsp] ( I ) гореть, сжигать. ṚV 4,4,4 Geldner 1907 : 80
+  <sub>attested</sub>
+
+**NWS-4)** [Ved , unsp] „faire du mal“. Caland 1908, p. 100
+
+- **RU:** [Ved , unsp] «причинять зло». Caland 1908, p. 100 Renou 1934 : 293
+  <sub>attested</sub>
+
+**NWS-5)** *+ ati : darüber - hinṭeg brennen, austrocknen. Śbh 1,4,1,14 .* [Ved , unsp] + ánu : 1) aufbrennen, ganz verbrennen (Akk); 2) aufbrennen, entbrennen, intr. Ved , unsp
+
+- **RU:** *+ ati : darüber - hinṭeg brennen, austrocknen. Śbh 1,4,1,14 .* [Ved , unsp] + ánu : 1) воспламенять, полностью сжигать (Acc); 2) воспламеняться, разгораться, intr. Ved , unsp Graßmann 1873 (1996) : 586
+  <sub>attested</sub>
+
+**NWS-6)** *+ anunis : der ṇeihe nach verbrennen. āV 9,2,4 .* [Ved , unsp] + apa ( apadagdha ): burned out ( duḥsvapnya ). AV(P) 7.7,8 . Ved , unsp ; Renou 1957 (1) : 76 (s.v. apadagdha )
+
+- **RU:** *+ anunis : der ṇeihe nach verbrennen. āV 9,2,4 .* [Ved , unsp] + apa ( apadagdha ): выгоревший ( duḥsvapnya ). AV(P) 7.7,8 . Ved , unsp ; Renou 1957 (1) : 76 (s.v. apadagdha )
+  <sub>attested</sub>
+
+**NWS-7)** *+ ápa : hinṭegbrennen, durch ghlut vertreiben (ākk).* [Ved , unsp] + abhí : anbrennen (Akk). Ved , unsp
+
+- **RU:** *+ ápa : hinṭegbrennen, durch ghlut vertreiben (ākk).* [Ved , unsp] + abhí : поджигать (Acc). Ved , unsp Graßmann 1873 (1996) : 586
+  <sub>attested</sub>
+
+**NWS-8)** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : herabbrennen, durch Glut herabtreiben (Akk) von (Abl). Ved , unsp
+
+- **RU:** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : выжигать вниз, вытеснять жаром (Acc) от (Abl). Ved , unsp Graßmann 1873 (1996) : 586
+  <sub>attested</sub>
+
+**NWS-9)** *+ ā , phass khaus: sich verbrennen. chhū Vī 16, 3 .* [Ved , unsp] + ud ( uddahati ): burns up. Śikṣās 324.15 (vs) . Buddh , unsp ; BHSD : 130 (s.v. uddahati )
+
+- **RU:** *+ ā , phass khaus: sich verbrennen. chhū Vī 16, 3 .* [Ved , unsp] + ud ( uddahati ): сжигает дотла. Śikṣās 324.15 (vs) . Buddh , unsp ; BHSD : 130 (s.v. uddahati )
+  <sub>attested</sub>
+
+**NWS-10)** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): set on fire. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
+
+- **RU:** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): поджигать. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
+  <sub>attested</sub>
+
+**NWS-11)** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – wegbrennen, ausräuchern; versengen, verbrennen, auch fig. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp
+
+- **RU:** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – выжигать, выкуривать; опалять, сжигать, также перен. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp Geldner 1907 : 80
+  <sub>attested</sub>
+
+**NWS-12)** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) is tormented (with passion or desire). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
+
+- **RU:** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) томится (страстью или желанием). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
+  <sub>attested</sub>
+
+**NWS-13)** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : versengen. ṚV 3,18,1 . Ved , unsp
+
+- **RU:** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : опалять. ṚV 3,18,1 . Ved , unsp Geldner 1907 : 80
+  <sub>attested</sub>
+
+**NWS-14)** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : verbrennen. ṚV 10,16,1 . Ved , unsp
+
+- **RU:** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : сжигать. ṚV 10,16,1 . Ved , unsp Geldner 1907 : 80
+  <sub>attested</sub>
+
+**NWS-15)** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) consumed; b) tawny or reddish brown (like impure blood). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
+
+- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожженный, испепеленный; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
+  <sub>mixed</sub>
+
+**NWS-16)** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): is consumed, burnt away [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )
+
+- **RU:** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): сгорает, испепеляется [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )
+  <sub>attested</sub>
+
+**NWS-17)** *+ sam : völlig verbrennen. ṚV 10,16,13 .* [Ved , unsp] + sám : zusammenbrennen, verbrennen, vernichten (Akk). Ved , unsp
+
+- **RU:** *+ sam : völlig verbrennen. ṚV 10,16,13 .* [Ved , unsp] + sám : сжигать дотла, испепелять, уничтожать (Acc). Ved , unsp Graßmann 1873 (1996) : 586
+  <sub>attested</sub>
+
+**NWS-18)** [Buddh , unsp] [ dahāpaya - (Kaus)] verbrennen lassen. AbhisDh § 14.6.13A5 . BHS[Mvu]; vgl. Pā. dahāpeti
+
+- **RU:** [Buddh , unsp] [ dahāpaya - (Kaus)] заставлять сжечь. AbhisDh § 14.6.13A5 . BHS[Mvu]; ср. Pā. dahāpeti Karashima 2012 : 287 (s.v. dahāpaya -)
+  <sub>attested</sub>
+
+**NWS-19)** [dahiṣyant Ep , unsp] Adj mfn [PtzFut] burning. R VII.21.42 . from dah .
+
+- **RU:** [dahiṣyant Ep , unsp] Adj mfn [PtzFut] пылающий, горящий (буд. время). R VII.21.42 . от dah . Sen 1951 : 57 (s.v. dah )
+  <sub>attested</sub>
+
+**NWS-20)** [didhakṣamāṇa Ep , unsp] Adj mfn [Des PtzPräs] wishing to burn. R II.12.110 . from dah .
+
+- **RU:** [didhakṣamāṇa Ep , unsp] Adj mfn [Des PtzPräs] желающий сжечь. R II.12.110 . от dah . Sen 1951 : 56 (s.v. dah )
+  <sub>attested</sub>
+
+## dah
+
 `dah~~h0_00_pwg00`
 
 
@@ -62,7 +167,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [ṚV. PRĀT. 4,41]); *dhakṣyati* (Кар.
 [6] из [SIDDH. K.] к [P. 7,2,10](https://ashtadhyayi.com/sutraani/7/2/10)), *dahiṣyati* эп.
 [MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120)
-[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также мед.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнём, гореть*: *mā māmedho daśatayaścito dhāk*
+[BHĀG. P. 4,14,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12); эп. также мед.; *dagdhum, dagdhvā, dagdha*; *жечь, сжигать, гореть* — основное значение корня: *сжигать, пожирать огнем, гореть*: *mā māmedho daśatayaścito dhāk*
 [ṚV. 1,158,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.158.html#rv01.158.04) [2,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.04) *tṛṇā dahan*
 [3,29,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.06) *dāru dhakṣat*
 [6,3,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.04) [10,91,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.091.html#rv10.091.07) — [1,130,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.130.html#rv01.130.08) [4,4,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.04) [28,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.028.html#rv04.028.03) [7,1,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.07) *yadagnirāpo adahatpraviśya*
@@ -113,12 +218,12 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 **caus./desid./intens. — main)** — pass. verbrannt werden, verbrennen, brennen, in Flammen stehen: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) durch Feuer entfernt werden, getilgt werden überh.: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) brennen, von Wunden [SUŚR. 1,103,17.] von innerer Gluth verzehrt werden, — vergehen, sich abhärmen: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* gequält —, mitgenommen werden [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) Mit transit. Bed. verbrennen: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) — partic. *dagdha*
 
-- **RU:** — pass. «быть сожжённым, гореть, пылать, стоять в пламени»: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) «быть устранённым огнём, быть уничтоженным» вообще: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) «гореть» (о ранах) [SUŚR. 1,103,17.] «быть снедаемым внутренним жаром, — томиться, изнывать»: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* «быть измученным —, изнурённым» [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) С transit. знач. «сгорать»: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) — partic. *dagdha*
+- **RU:** — pass. «быть сожженным, гореть, пылать, стоять в пламени»: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) «быть устраненным огнем, быть уничтоженным» вообще: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) «гореть» (о ранах) [SUŚR. 1,103,17.] «быть снедаемым внутренним жаром, — томиться, изнывать»: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* «быть измученным —, изнуренным» [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) С transit. знач. «сгорать»: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) — partic. *dagdha*
   <sub>attested</sub>
 
 **1)** 1) verbrannt [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) angebrannt (von Speisen): *pattrāṇām* (lies: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] im [ŚKDR.] Uneig. in Gluth versetzt, verzehrt, gemartert, gequält: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) ein vom Feuer der Verdauungskraft (vgl. *jaṭharāgni, jāṭharo 'gniḥ*) verbrannter d. i. hungriger Magen.
 
-- **RU:** 1) «сожжённый» [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) «подгоревший» (о кушаньях): *pattrāṇām* (читай: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] в [ŚKDR.] неточно «приведённый в жар, снедаемый, измученный, истерзанный»: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) «сожжённый огнём пищеварительной силы» (ср. *jaṭharāgni, jāṭharo 'gniḥ*) т.е. «голодный желудок»
+- **RU:** 1) «сожженный» [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) «подгоревший» (о кушаньях): *pattrāṇām* (читай: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] в [ŚKDR.] неточно «приведенный в жар, снедаемый, измученный, истерзанный»: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) «сожженный огнем пищеварительной силы» (ср. *jaṭharāgni, jāṭharo 'gniḥ*) т.е. «голодный желудок»
   <sub>attested</sub>
 
 **2)** — 2) vom Gram verzehrt, betrübt: *ruddhāyāmapi vāci sasmitamidaṃ dagdhānanaṃ jāyate* [AMAR. 24.] Schol. : *dagdhamiti dhikkāroktau* .
@@ -128,7 +233,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 **3)** — 3) verbrannt so v. a. ohne Saft und Kraft: *(brahma) kutīrthādāgataṃ dagdhamapavarṇaṃ ca bhakṣitam* [ŚIKṢĀ 50] in [Ind. St. 4,268.]
 
-- **RU:** — 3) «сожжённый», отсюда преим. «лишённый сока и силы»: *(brahma) kutīrthādāgataṃ dagdhamapavarṇaṃ ca bhakṣitam* [ŚIKṢĀ 50] в [Ind. St. 4,268.]
+- **RU:** — 3) «сожженный», отсюда преим. «лишенный сока и силы»: *(brahma) kutīrthādāgataṃ dagdhamapavarṇaṃ ca bhakṣitam* [ŚIKṢĀ 50] в [Ind. St. 4,268.]
   <sub>attested</sub>
 
 **4)** — 4) unheilvoll: *dagdhākṣara* gewisse Buchstaben, die in Gedichten für unheilvoll gelten, [SHAKESP.] Hindust. Dict.; vgl. *dagdha* 2,b.
@@ -360,7 +465,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [YĀJÑ. 1,340](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,340) *prāṇānnādagdhvā* zu lesen. — caus. pass. sich verbrennen: *sa yathā tatra nādāhyeta*
 [CHĀND. UP. 6,16,3.] Man hätte *nādahyeta* erwartet.
 
-- **RU:** — *ā* см. *ādahana* . Вместо *prāṇānādagdhvā*
+- **RU:** — *ā* см. *ādahana* . Вм. *prāṇānādagdhvā*
 [PAÑCAT. I,392](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,392) следует читать
 [YĀJÑ. 1,340](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,340) *prāṇānnādagdhvā* . — caus. pass. «сжигаться, обжигаться»: *sa yathā tatra nādāhyeta*
 [CHĀND. UP. 6,16,3.] Ожидалось бы *nādahyeta*.
@@ -396,7 +501,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [8,23,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.023.html#rv08.023.14) [1,99,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.099.html#rv01.099.01) [KAUŚ. 52. 83.] pass.: *pāṇḍupāvakamāsādya nyadahyanta narādhipāḥ*
 [MBH. 1,4454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4454)
 
-- **RU:** — *ni* «сжигать дотла, испепелять огнём»: *rakṣo ni dhakṣi*
+- **RU:** — *ni* «сжигать дотла, испепелять огнем»: *rakṣo ni dhakṣi*
 [ṚV. 6,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.10) *ni māyinastapuṣā rakṣaso daha*
 [8,23,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.023.html#rv08.023.14) [1,99,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.099.html#rv01.099.01) [KAUŚ. 52. 83.] pass.: *pāṇḍupāvakamāsādya nyadahyanta narādhipāḥ*
 [MBH. 1,4454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4454)
@@ -442,7 +547,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [R. 2,36,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,29)
 [BHĀG. P. 7,7,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,7,36)
 
-- **RU:** — *nis* «выжигать, сжигать, уничтожать/поедать огнём, полностью уничтожать»: *śītāḥ santo hṛdayaṃ nirdahanti*
+- **RU:** — *nis* «выжигать, сжигать, уничтожать/поедать огнем, полностью уничтожать»: *śītāḥ santo hṛdayaṃ nirdahanti*
 [ṚV. 10,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.09) *agniradbhyo niradahajjarūtham*
 [80,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.080.html#rv10.080.03) [103,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.103.html#rv10.103.12) [AV. 7,108,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.108.html#av07.108.02) [9,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.04) [5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.05) [31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.31) [TS. 2,2,5,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,5,2) *tasyākṣiṇī nirdadāha*
 [ŚAT. BR. 1,7,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,6) *idaṃ vā asāvāditya udyanneva yathāyamagnirnirdahedevamoṣadhīrannādyaṃ *
@@ -507,7 +612,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [16,279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.279) [3,14829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14829) [MĀRK. P. 39,61.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?39,61) *tayājñānaṃ vinirdahan*
 [BHĀG. P. 9,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,7,24)
 
-- **RU:** — *vinis* «сжигать, испепелять огнём, уничтожать полностью»: *jagadvinirdahedetat* (*astram*)
+- **RU:** — *vinis* «сжигать, испепелять огнем, уничтожать полностью»: *jagadvinirdahedetat* (*astram*)
 [MBH. 1,5307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5307)
 [ARJ. 3,52.] *eṣa senāḥ — agnivatsamare tāta cariṣyati vinirdahan*
 [MBH. 5,5769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5769) *cakrānalavinirdagdha*
@@ -620,7 +725,7 @@ vernichtet
 - **RU:** [PAÑCAT. I,191.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,191) — pass. «загораться, гореть, сгорать»: *vṛkṣasyeva pradahyataḥ*
 [MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *vastraṃ pradahyate*
 [VARĀH. BṚH. S. 72,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,6) *tasyāḥ kṛpaṇacakṣurbhyāṃ pradahyetāpi medinī*
-[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) *pradagdha* «сожжённый»
+[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) *pradagdha* «сожженный»
 [ŚAT. BR. 11,1,6,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,6,33)
 [R. 3,42,53.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,53)
 [VARĀH. BṚH. S. 72,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,2) *yena pūrvaṃ pradagdhāni śatrusainyāni*
@@ -653,7 +758,7 @@ vernichtet
 [10,87,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.24) [20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.20) [23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.23) [1,12,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.012.html#rv01.012.05) [79,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.079.html#rv01.079.06) [AV. 1,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.028.html#av01.028.02) [3,1,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.01) [3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.03) *agniṣṭapati pratidahati*
 [ŚAT. BR. 4,4,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,5,8) *sa tvā pratidhakṣyati*
 
-- **RU:** — *prati* встречать огнём, отвечать пламенем на пламя: *prati pratīcīrdahatādarātīḥ*
+- **RU:** — *prati* встречать огнем, отвечать пламенем на пламя: *prati pratīcīrdahatādarātīḥ*
 [ṚV. 3,18,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.018.html#rv03.018.01) *pratyagne mithunā daha*
 [10,87,24.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.24) [20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.20) [23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.23) [1,12,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.012.html#rv01.012.05) [79,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.079.html#rv01.079.06) [AV. 1,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.028.html#av01.028.02) [3,1,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.01) [3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.03) *agniṣṭapati pratidahati*
 [ŚAT. BR. 4,4,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,5,8) *sa tvā pratidhakṣyati*
@@ -677,8 +782,8 @@ vernichtet
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
 
 - **RU:** — *vi* «выжигать» (рану и т.д.)
-[SUŚR. 1,100,21.] «повредить огнём, обжигать»: *mainamagne vi daho mābhi śocaḥ*
-[ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) «сжигать, уничтожать огнём»: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
+[SUŚR. 1,100,21.] «повредить огнем, обжигать»: *mainamagne vi daho mābhi śocaḥ*
+[ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) «сжигать, уничтожать огнем»: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
 [MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) — pass.
   <sub>attested</sub>
 
@@ -709,7 +814,7 @@ vernichtet
 [R. SCHL. 2,7,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,7,14) — partic. *vidagdha*
 
 - **RU:** — 3) «раздуваться от важности, важничать»: *vṛthā saubhāgyamānena durbhage tvaṃ vidahyase . girinadyā iva srotastava saubhāgyamasthiram ..*
-[R. GORR. 2,6,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,12) Вместо этого: *saubhāgyena vikatthase*
+[R. GORR. 2,6,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,12) Вм. этого: *saubhāgyena vikatthase*
 [R. SCHL. 2,7,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,7,14) — partic. *vidagdha*
   <sub>attested</sub>
 
@@ -718,7 +823,7 @@ vernichtet
 [KAUŚ. 60. 83.]
 [NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26)
 
-- **RU:** 1) «сожжённый»: *tasyai ha (vṛkalāyai) vidagdhāyai sṛgālaḥ saṃbhavati*
+- **RU:** 1) «сожженный»: *tasyai ha (vṛkalāyai) vidagdhāyai sṛgālaḥ saṃbhavati*
 [ŚAT. BR. 12,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,5) *a˚*
 [KAUŚ. 60. 83.]
 [NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26)
@@ -727,7 +832,7 @@ vernichtet
 **pp-2)** — 2) entzündet: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
 [SUŚR. 2,5,21.]
 
-- **RU:** — 2) «воспалённый»: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
+- **RU:** — 2) «воспаленный»: *śophayorupanāhaṃ tu kuryādāmavidagdhayoḥ . avidagdhaḥ śamaṃ yāti vidagdhaḥ pākameti ca*
 [SUŚR. 2,5,21.]
   <sub>attested</sub>
 
@@ -739,7 +844,7 @@ vernichtet
 [20,13.] *bhuktaṃ chardayatyavidagdhamatisāryate vā*
 [118,15. 2,139,16.] Vgl. *pittavidagdhadṛṣṭi* .
 
-- **RU:** — 3) «переработанный внутренним огнём, желчью, которая варит пищу в желудке; сваренный»: *˚bhukta*
+- **RU:** — 3) «переработанный внутренним огнем, желчью, которая варит пищу в желудке; сваренный»: *˚bhukta*
 [SUŚR. 2,110,14.] *rasa*
 [545,10.] *śleṣman*
 [1,79,8.] *pitta*
@@ -780,14 +885,14 @@ vernichtet
 [TRIK. 3,1,5.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,5) *vidagdhā = vāṇinī*
 [3,248.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,248) Vgl. *durvidagdha, vidagdha* N. pr., *vidāha* .
 
-- **RU:** — 5) (тот, кто однажды обжёгся, поумнел на опыте) «умный, разумный, искушённый»: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
+- **RU:** — 5) (тот, кто однажды обжегся, поумнел на опыте) «умный, разумный, искушенный»: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
 [MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) *˚pariṣad*
 [BHARTṚ. 3,42.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,42)
 [VIKR. 3,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,12) *nāvidagdhaḥ priyaṃ brūyāt*
 [PAÑCAT. I,180.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,180) [RĀJA-TAR. 5,79.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,79) *neyaṃ gaṇanā vidagdhasya puruṣasya*
 [DAŚAK.] в [BENF. Chr. 188,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *vidagdhālāpānām — kavīnām*
 [BHARTṚ. 1,52.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,52) *˚vacana*
-[PAÑCAT. 112,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?112,25) «хитрый, лукавый», о девушках, искушённых в любовных искусствах,
+[PAÑCAT. 112,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?112,25) «хитрый, лукавый», о девушках, искушенных в любовных искусствах,
 [BHĀG. P. 6,18,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,28)
 [BRAHMA-P. 55,15.]
 [DHŪRTAS. 78,4.]
@@ -826,7 +931,7 @@ vernichtet
 [AV. 18,3,71.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.71)
 [KĀTY. ŚR. 25,7,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,7,5)
 [ŚAT. BR. 9,1,1,42.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,42) [11,1,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,5,8) [14,8,15,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,15,12) «уничтожать»: *rāmaṃ putraṃ na me bālaṃ rāma saṃdagdhumarhasi*
-[R. GORR. 1,77,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,12) — pass. «сгорать, быть сожжённым»: *abhijanaḥ saṃdahyatāṃ vahninā*
+[R. GORR. 1,77,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,12) — pass. «сгорать, быть сожженным»: *abhijanaḥ saṃdahyatāṃ vahninā*
 [BHARTṚ. 2,32.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,32) *saṃdagdhaṃ rakṣaḥ*
 [TS. 1,8,7,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,8,7,2) «гореть, пылать»: *saṃdahyamānasarvāṅga eṣāmudvahanādhinā*
 [BHĀG. P. 3,30,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,30,8) «изнывать, терзаться»: *pratyāgatāsuḥ samadahyatāntaḥ* (v. l. *samatapyata*)
@@ -862,203 +967,6 @@ vernichtet
 
 ## dah
 
-`dah~~h1_00_pwg00`
-
-
-**2)** *dah* (= 1. *dah*) _adj._ brennend, am Ende eines comp.: *dakṣiṇadhak (˚sad*
-[VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
-
-- **RU:** *dah* (= 1. *dah*) _adj._ «пылающий, горящий», в конце comp.: *dakṣiṇadhak (˚sad*
-[VS.]) [LĀṬY. 5,7,3]; ср. *uśadhak* .
-  <sub>attested</sub>
-
-## dah
-
-`dah~~h2_00_pwg00`
-
-
-**1. основное значение)** 1. *dah*
-Z. 3 *dahiṣyati* auch
-[PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
-
-* na me dahyati kiṃ ca na* verbrennt mir Nichts
-[Spr. 3448.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3448) *dagdha* 4) *˚tithi*
-[Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* würde dieses auch gebrannt
-[VṚDDHA-CĀṆ. 11,7.]
-
-- **RU:** 1. *dah*
-стк. 3 *dahiṣyati* тоже
-[PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
-
-* na me dahyati kiṃ ca na* у меня ничего не сгорает
-[Spr. 3448.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3448) *dagdha* 4) *˚tithi*
-[Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* было бы и это сожжено
-[VṚDDHA-CĀṆ. 11,7.]
-  <sub>attested</sub>
-
-**note a)** — *anu*
- 1)
-[NĪLAK.] : *dagdhaṃ kālātmanā īśvareṇa anuvahati (!) vahnyādiḥ*.* anudahati* wird doch wohl = *anudahyate* (so ist zu lesen) sein.
-
-- **RU:** — *anu*
- 1)
-[NĪLAK.] : *dagdhaṃ kālātmanā īśvareṇa anuvahati (!) vahnyādiḥ*.* anudahati* видимо, следует читать = *anudahyate* (так и нужно читать).
-  <sub>attested</sub>
-
-**note b)** — *ni*, *nyadahankāṣṭhaveṣṭitam (kalevaram)*
-[BHĀG. P. 10,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,6,33)
-
-- **RU:** — *ni*, *nyadahankāṣṭhaveṣṭitam (kalevaram)*
-[BHĀG. P. 10,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,6,33)
-  <sub>attested</sub>
-
-**causative)** — *pra* caus. verbrennen lassen: *yāvaccāgnau mṛte patyau strī nātmānaṃ pradāhayet*
-[Spr. 2479.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2479)
-
-- **RU:** — *pra* caus. давать сжечь, велеть сжечь: *yāvaccāgnau mṛte patyau strī nātmānaṃ pradāhayet*
-[Spr. 2479.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2479)
-  <sub>attested</sub>
-
-**causative, transitive)** — *vi* verbrennen, versengen: *vidadāha tamaṅgeṣu śīto 'pi malayānilaḥ*
-[KATHĀS. 104,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,8) — partic. *vidagdha*
-
-- **RU:** — *vi* сжигать, опалять: *vidadāha tamaṅgeṣu śīto 'pi malayānilaḥ*
-[KATHĀS. 104,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,8) — partic. *vidagdha*
-  <sub>attested</sub>
-
-**5))** 5) verschmitzt, verschlagen
-[Spr. 586](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?586), v. l.
-
-- **RU:** 5) хитрый, лукавый
-[Spr. 586](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?586), v. l.
-  <sub>attested</sub>
-
-**intensive/desiderative)** — *sam* verbrennen, versengen: *kugrāmavāsaḥ* u. s. w. *vināgninā saṃdahate śarīram*
-[Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
-
-- **RU:** — *sam* сжигать, опалять: *kugrāmavāsaḥ* и т.д. *vināgninā saṃdahate śarīram*
-[Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
-  <sub>attested</sub>
-
-## dah
-
-`dah~~h3_00_pwg00`
-
-
-**1)** *dah*, *hemante himapātena padminī kiṃ na dahyate* versengt werden
-[Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385)
-
-- **RU:** *dah*, *hemante himapātena padminī kiṃ na dahyate* «обжигаться, опаляться»
-[Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385)
-  <sub>attested</sub>
-
-## dah
-
-`dah~~h0_zz_nws00`
-
-
-**NWS-1)** *dah* [Ved , unsp] verbrennen (Akk), durch Feuer verzehren (Akk). [ oft bildlich, was aus den Objecten ersichtlich ist. ]
-
-- **RU:** *dah* [Ved , unsp] сжигать (Acc), уничтожать огнём (Acc). [ часто в переносном смысле, что явствует из объектов. ] Graßmann 1873 (1996) : 586
-  <sub>attested</sub>
-
-**NWS-2)** [Ved , unsp] ( dáhati I ) brennen. Kaus: verbrennen lassen
-
-- **RU:** [Ved , unsp] ( dáhati I ) гореть. Kaus: заставлять сжечь Hillebrandt 1885 : 92
-  <sub>attested</sub>
-
-**NWS-3)** [Ved , unsp] ( I ) brennen, verbrennen. ṚV 4,4,4
-
-- **RU:** [Ved , unsp] ( I ) гореть, сжигать. ṚV 4,4,4 Geldner 1907 : 80
-  <sub>attested</sub>
-
-**NWS-4)** [Ved , unsp] „faire du mal“. Caland 1908, p. 100
-
-- **RU:** [Ved , unsp] «причинять зло». Caland 1908, p. 100 Renou 1934 : 293
-  <sub>attested</sub>
-
-**NWS-5)** *+ ati : darüber - hinṭeg brennen, austrocknen. Śbh 1,4,1,14 .* [Ved , unsp] + ánu : 1) aufbrennen, ganz verbrennen (Akk); 2) aufbrennen, entbrennen, intr. Ved , unsp
-
-- **RU:** *+ ati : darüber - hinṭeg brennen, austrocknen. Śbh 1,4,1,14 .* [Ved , unsp] + ánu : 1) воспламенять, полностью сжигать (Acc); 2) воспламеняться, разгораться, intr. Ved , unsp Graßmann 1873 (1996) : 586
-  <sub>attested</sub>
-
-**NWS-6)** *+ anunis : der ṇeihe nach verbrennen. āV 9,2,4 .* [Ved , unsp] + apa ( apadagdha ): burned out ( duḥsvapnya ). AV(P) 7.7,8 . Ved , unsp ; Renou 1957 (1) : 76 (s.v. apadagdha )
-
-- **RU:** *+ anunis : der ṇeihe nach verbrennen. āV 9,2,4 .* [Ved , unsp] + apa ( apadagdha ): выгоревший ( duḥsvapnya ). AV(P) 7.7,8 . Ved , unsp ; Renou 1957 (1) : 76 (s.v. apadagdha )
-  <sub>attested</sub>
-
-**NWS-7)** *+ ápa : hinṭegbrennen, durch ghlut vertreiben (ākk).* [Ved , unsp] + abhí : anbrennen (Akk). Ved , unsp
-
-- **RU:** *+ ápa : hinṭegbrennen, durch ghlut vertreiben (ākk).* [Ved , unsp] + abhí : поджигать (Acc). Ved , unsp Graßmann 1873 (1996) : 586
-  <sub>attested</sub>
-
-**NWS-8)** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : herabbrennen, durch Glut herabtreiben (Akk) von (Abl). Ved , unsp
-
-- **RU:** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : выжигать вниз, вытеснять жаром (Acc) от (Abl). Ved , unsp Graßmann 1873 (1996) : 586
-  <sub>attested</sub>
-
-**NWS-9)** *+ ā , phass khaus: sich verbrennen. chhū Vī 16, 3 .* [Ved , unsp] + ud ( uddahati ): burns up. Śikṣās 324.15 (vs) . Buddh , unsp ; BHSD : 130 (s.v. uddahati )
-
-- **RU:** *+ ā , phass khaus: sich verbrennen. chhū Vī 16, 3 .* [Ved , unsp] + ud ( uddahati ): сжигает дотла. Śikṣās 324.15 (vs) . Buddh , unsp ; BHSD : 130 (s.v. uddahati )
-  <sub>attested</sub>
-
-**NWS-10)** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): set on fire. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
-
-- **RU:** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): поджигать. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
-  <sub>attested</sub>
-
-**NWS-11)** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – wegbrennen, ausräuchern; versengen, verbrennen, auch fig. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp
-
-- **RU:** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – выжигать, выкуривать; опалять, сжигать, также перен. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp Geldner 1907 : 80
-  <sub>attested</sub>
-
-**NWS-12)** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) is tormented (with passion or desire). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
-
-- **RU:** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) томится (страстью или желанием). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
-  <sub>attested</sub>
-
-**NWS-13)** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : versengen. ṚV 3,18,1 . Ved , unsp
-
-- **RU:** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : опалять. ṚV 3,18,1 . Ved , unsp Geldner 1907 : 80
-  <sub>attested</sub>
-
-**NWS-14)** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : verbrennen. ṚV 10,16,1 . Ved , unsp
-
-- **RU:** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : сжигать. ṚV 10,16,1 . Ved , unsp Geldner 1907 : 80
-  <sub>attested</sub>
-
-**NWS-15)** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) consumed; b) tawny or reddish brown (like impure blood). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
-
-- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожжённый, испепелённый; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
-  <sub>mixed</sub>
-
-**NWS-16)** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): is consumed, burnt away [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )
-
-- **RU:** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): сгорает, испепеляется [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )
-  <sub>attested</sub>
-
-**NWS-17)** *+ sam : völlig verbrennen. ṚV 10,16,13 .* [Ved , unsp] + sám : zusammenbrennen, verbrennen, vernichten (Akk). Ved , unsp
-
-- **RU:** *+ sam : völlig verbrennen. ṚV 10,16,13 .* [Ved , unsp] + sám : сжигать дотла, испепелять, уничтожать (Acc). Ved , unsp Graßmann 1873 (1996) : 586
-  <sub>attested</sub>
-
-**NWS-18)** [Buddh , unsp] [ dahāpaya - (Kaus)] verbrennen lassen. AbhisDh § 14.6.13A5 . BHS[Mvu]; vgl. Pā. dahāpeti
-
-- **RU:** [Buddh , unsp] [ dahāpaya - (Kaus)] заставлять сжечь. AbhisDh § 14.6.13A5 . BHS[Mvu]; ср. Pā. dahāpeti Karashima 2012 : 287 (s.v. dahāpaya -)
-  <sub>attested</sub>
-
-**NWS-19)** [dahiṣyant Ep , unsp] Adj mfn [PtzFut] burning. R VII.21.42 . from dah .
-
-- **RU:** [dahiṣyant Ep , unsp] Adj mfn [PtzFut] пылающий, горящий (буд. время). R VII.21.42 . от dah . Sen 1951 : 57 (s.v. dah )
-  <sub>attested</sub>
-
-**NWS-20)** [didhakṣamāṇa Ep , unsp] Adj mfn [Des PtzPräs] wishing to burn. R II.12.110 . from dah .
-
-- **RU:** [didhakṣamāṇa Ep , unsp] Adj mfn [Des PtzPräs] желающий сжечь. R II.12.110 . от dah . Sen 1951 : 56 (s.v. dah )
-  <sub>attested</sub>
-
-## dah~~h0_zz_pw
-
 `dah~~h0_zz_pw`
 
 
@@ -1071,7 +979,7 @@ Z. 3 *dahiṣyati* auch
 
 **1a)** — a〉 verbrennen, durch Feuer verzehren, brennen (auch in medic. Sinne). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
 
-- **RU:** — a〉 сжигать, испепелять огнём, жечь (также в мед. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
+- **RU:** — a〉 сжигать, испепелять огнем, жечь (также в мед. смысле). *dhakṣyet* [78,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?78).
   <sub>attested</sub>
 
 **1b)** — b〉 verbrennen, versengen, so v. a. vollständig vernichten. *adhākṣam* [{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
@@ -1091,7 +999,7 @@ Z. 3 *dahiṣyati* auch
 
 **2b)** — b〉 durch Feuer entfernt werden, getilgt werden, zu Nichte werden überh.
 
-- **RU:** — b〉 быть устраняемым огнём, изглаживаться, обращаться в ничто вообще
+- **RU:** — b〉 быть устраняемым огнем, изглаживаться, обращаться в ничто вообще
   <sub>attested</sub>
 
 **2c)** — c〉 von innerer Glut verzehrt werden, — vergehen, geplagt —, gequält werden, sich abhärmen.
@@ -1105,17 +1013,17 @@ Z. 3 *dahiṣyati* auch
 
 **a)** — a〉 verbrannt, angebrannt.
 
-- **RU:** — a) сожжённый, обожжённый.
+- **RU:** — a) сожженный, обожженный.
   <sub>attested</sub>
 
 **b)** — b〉 in Glut versetzt, verzehrt, gemartert, gequält.
 
-- **RU:** — b〉 повергнутый в жар, испепелённый, измученный, истерзанный.
+- **RU:** — b〉 повергнутый в жар, испепеленный, измученный, истерзанный.
   <sub>attested</sub>
 
 **d)** — d〉 verbrannt, so v. a. ohne Saft und Kraft.
 
-- **RU:** — d) сожжённый, отсюда преим. без сока и силы.
+- **RU:** — d) сожженный, отсюда преим. без сока и силы.
   <sub>attested</sub>
 
 **e)** — e〉 unheilvoll.
@@ -1251,15 +1159,15 @@ Z. 3 *dahiṣyati* auch
 
 - **RU:** — 2〉 нагревать, накалять [ĀPAST. 1,17,10].
 — С *ava* сгорать, спекаться от огня. *avadagdha* также поврежденный огнем [CARAKA. 5,12].
-— С *ā* в *ādahana ādagdhvā* [PAÑCAT. 1,392](https://sanskrit-lexicon-scans.github.io/pantankose/app2?1,392) ошибочно вместо *adagdhvā*.
+— С *ā* в *ādahana ādagdhvā* [PAÑCAT. 1,392](https://sanskrit-lexicon-scans.github.io/pantankose/app2?1,392) ошибочно вм. *adagdhvā*.
 — Caus. Pass. обжигаться, сгорать.
 — С *abhyā* в *abhyādāhya* ([Nachtr. 2]).
 — С *upa* подпаливать, поджигать [{{MBH. 7,211,17->MBH. 12,211,17||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}]. поджигать, поднести огонь к (Acc.).
-— С *ni* сжигать дотла, испепелять огнём. Pass. быть сожжённым, сгорать.
-— С *nis* выгорать, сгорать, быть испепелённым огнём, уничтожаться полностью. Pass. также съёживаться, увядать. *tuṣāreṇa padminī* [VIKRAMĀṄKAC. 16,14].
+— С *ni* сжигать дотла, испепелять огнем. Pass. быть сожженным, сгорать.
+— С *nis* выгорать, сгорать, быть испепеленным огнем, уничтожаться полностью. Pass. также съеживаться, увядать. *tuṣāreṇa padminī* [VIKRAMĀṄKAC. 16,14].
 — Caus. давать сжечь, велеть сжечь.
 — С *anunis* сжигать один за другим, по очереди.
-— С *vinis* сжигать, испепелять огнём, уничтожать полностью.
+— С *vinis* сжигать, испепелять огнем, уничтожать полностью.
 — С *pari* обжигать вокруг, охватывать пламенем, сжигать. Pass. гореть, пылать.
 — С *saṃpari* Pass. (*˚dahyati*) сгорать, изнывать от зноя.
 — С *pra* сжигать, опалять, уничтожать. Pass. воспламеняться, гореть, сгорать. *pradagadha* сжигает, уничтожает.
@@ -1287,11 +1195,11 @@ Z. 3 *dahiṣyati* auch
 
 **b)** — b〉 durch Brand beschädigen, anbrennen.
 
-- **RU:** — b〉 повреждать огнём, подпаливать.
+- **RU:** — b〉 повреждать огнем, подпаливать.
 
 **c)** — c〉 verbrennen, versengen, durch Feuer vernichten.
 
-- **RU:** — в) жечь, спалять, уничтожать огнём.
+- **RU:** — в) жечь, спалять, уничтожать огнем.
   <sub>attested</sub>
 
 **d)** — d〉 zersetzen, verderben [CARAKA. 6,18].
@@ -1336,12 +1244,12 @@ Z. 3 *dahiṣyati* auch
 
 **a)** — a〉 verbrannt.
 
-- **RU:** — а) сожжённый.
+- **RU:** — а) сожженный.
   <sub>attested</sub>
 
 **b)** — b〉 entzündet.
 
-- **RU:** — б) воспалённый.
+- **RU:** — б) воспаленный.
   <sub>attested</sub>
 
 **c)** — c〉 von innerlichem Feuer, von der Galle, welche die Speisen im Magen kocht, verarbeitet, verdaut.
@@ -1378,7 +1286,7 @@ Z. 3 *dahiṣyati* auch
 
 **a)** — a〉 verbrannt werden.
 
-- **RU:** — a) быть сожжённым.
+- **RU:** — a) быть сожженным.
   <sub>attested</sub>
 
 **b)** — b〉 brennen, glühen.
@@ -1397,4 +1305,96 @@ Z. 3 *dahiṣyati* auch
  — С *vyatisam* сжигать вперемешку, целиком, огулом.
  — С *anusam* сгорать вдоль, по длине.
 ** 2. ** *˚dah* _Adj._ горящий.
+  <sub>attested</sub>
+
+## dah
+
+`dah~~h1_00_pwg00`
+
+
+**2)** *dah* (= 1. *dah*) _adj._ brennend, am Ende eines comp.: *dakṣiṇadhak (˚sad*
+[VS.]) [LĀṬY. 5,7,3]; vgl. *uśadhak* .
+
+- **RU:** *dah* (= 1. *dah*) _adj._ «пылающий, горящий», в конце comp.: *dakṣiṇadhak (˚sad*
+[VS.]) [LĀṬY. 5,7,3]; ср. *uśadhak* .
+  <sub>attested</sub>
+
+## dah
+
+`dah~~h2_00_pwg00`
+
+
+**1. основное значение)** 1. *dah*
+Z. 3 *dahiṣyati* auch
+[PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
+
+* na me dahyati kiṃ ca na* verbrennt mir Nichts
+[Spr. 3448.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3448) *dagdha* 4) *˚tithi*
+[Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* würde dieses auch gebrannt
+[VṚDDHA-CĀṆ. 11,7.]
+
+- **RU:** 1. *dah*
+стк. 3 *dahiṣyati* тоже
+[PRASAṄGĀBH. 16,3.] pass.: *mithilāyāṃ pradīptāyāṃ *
+
+* na me dahyati kiṃ ca na* у меня ничего не сгорает
+[Spr. 3448.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3448) *dagdha* 4) *˚tithi*
+[Verz. d. Oxf. H. 86,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [333,b, No. 785.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?333) — caus.: *na śudhyati yathā bhāṇḍaṃ surāyā dāhitaṃ sat* было бы и это сожжено
+[VṚDDHA-CĀṆ. 11,7.]
+  <sub>attested</sub>
+
+**note a)** — *anu*
+ 1)
+[NĪLAK.] : *dagdhaṃ kālātmanā īśvareṇa anuvahati (!) vahnyādiḥ*.* anudahati* wird doch wohl = *anudahyate* (so ist zu lesen) sein.
+
+- **RU:** — *anu*
+ 1)
+[NĪLAK.] : *dagdhaṃ kālātmanā īśvareṇa anuvahati (!) vahnyādiḥ*.* anudahati* видимо, следует читать = *anudahyate* (так и нужно читать).
+  <sub>attested</sub>
+
+**note b)** — *ni*, *nyadahankāṣṭhaveṣṭitam (kalevaram)*
+[BHĀG. P. 10,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,6,33)
+
+- **RU:** — *ni*, *nyadahankāṣṭhaveṣṭitam (kalevaram)*
+[BHĀG. P. 10,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,6,33)
+  <sub>attested</sub>
+
+**causative)** — *pra* caus. verbrennen lassen: *yāvaccāgnau mṛte patyau strī nātmānaṃ pradāhayet*
+[Spr. 2479.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2479)
+
+- **RU:** — *pra* caus. давать сжечь, велеть сжечь: *yāvaccāgnau mṛte patyau strī nātmānaṃ pradāhayet*
+[Spr. 2479.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2479)
+  <sub>attested</sub>
+
+**causative, transitive)** — *vi* verbrennen, versengen: *vidadāha tamaṅgeṣu śīto 'pi malayānilaḥ*
+[KATHĀS. 104,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,8) — partic. *vidagdha*
+
+- **RU:** — *vi* сжигать, опалять: *vidadāha tamaṅgeṣu śīto 'pi malayānilaḥ*
+[KATHĀS. 104,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,8) — partic. *vidagdha*
+  <sub>attested</sub>
+
+**5))** 5) verschmitzt, verschlagen
+[Spr. 586](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?586), v. l.
+
+- **RU:** 5) хитрый, лукавый
+[Spr. 586](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?586), v. l.
+  <sub>attested</sub>
+
+**intensive/desiderative)** — *sam* verbrennen, versengen: *kugrāmavāsaḥ* u. s. w. *vināgninā saṃdahate śarīram*
+[Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
+
+- **RU:** — *sam* сжигать, опалять: *kugrāmavāsaḥ* и т.д. *vināgninā saṃdahate śarīram*
+[Spr. 690.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?690)
+  <sub>attested</sub>
+
+## dah
+
+`dah~~h3_00_pwg00`
+
+
+**1)** *dah*, *hemante himapātena padminī kiṃ na dahyate* versengt werden
+[Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385 "Spr. (II) 6385: śatrorucchedanārthāya na sāmno 'styanyadauṣadham | demante himapātena padminī kiṃ na dahyate || — Um einen Feind zu vernichten, giebt es kein anderes Mittel als die Milde: versengt nicht ein Schneefall im Winter eine Lotuspflanze?")
+
+- **RU:** *dah*, *hemante himapātena padminī kiṃ na dahyate* «обжигаться, опаляться»
+[Spr. (II) 6385.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6385 "Spr. (II) 6385: śatrorucchedanārthāya na sāmno 'styanyadauṣadham | demante himapātena padminī kiṃ na dahyate || — Um einen Feind zu vernichten, giebt es kein anderes Mittel als die Milde: versengt nicht ein Schneefall im Winter eine Lotuspflanze?")
   <sub>attested</sub>

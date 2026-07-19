@@ -227,7 +227,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [AK. 2,8,2,31.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,31)
 [DAŚAK.] в [BENF. Chr. 201,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) [BHAṬṬ. 14,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,7) *rajjuṃ baddhvātha vā kaṇṭhe*
 [R. 2,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,29) pass. в этом знач.: *srajaṃ tadā badhyati*
-[HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* связанный, закованный в оковы, привязанный, прикреплённый; взятый в плен
+[HARIV. 13088.](https://sanskrit-lexicon-scans.github.io/hariv?13088) — *baddha* связанный, закованный в оковы, привязанный, прикрепленный; взятый в плен
 [AK. 3,1,42.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,42) [3,2,44.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,44) [3,4,14,83.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,83)
 [H. 438.](https://sanskrit-lexicon-scans.github.io/abch2/app1?438)
 [HALĀY. 2,185. 4,62.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,185) *grīvāyāṃ baddhaḥ*
@@ -237,7 +237,7 @@ Schol. zu [24.](https://ashtadhyayi.com/sutraani/2/3/24)
 [6,74,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.074.html#rv06.074.03) *pāśe*
 [AV. 2,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.012.html#av02.012.02) *ātmanhyaṅgāni baddhāni*
 [TBR. 1,2,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,6,4) *tantryaḥ*
-[LĀṬY. 4,1,2.] *gaurbaddhavatmā* у которой телёнок привязан (в стойле) стоит
+[LĀṬY. 4,1,2.] *gaurbaddhavatmā* у которой теленок привязан (в стойле) стоит
 [ŚAT. BR. 4,2,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,4,22) — [SŪRYAS. 12,73.] *uccairbaddhāni cīrāṇi lakṣmaṇena* высоко подвешенный
 [R. GORR. 2,108,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,108,8) *ekaveṇī* привязанный наверху
 [MEGH. 89.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89) *navabaddhasya dantinaḥ* недавно связанный, — пойманный

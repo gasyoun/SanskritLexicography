@@ -27,7 +27,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [30,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.030.html#rv10.030.06) [AV. 7,52,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.052.html#av07.052.02) *saṃ jānata svairdakṣairamūrāḥ*
 [ṚV. 1,68,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.068.html#rv01.068.08) (4). *saṃ jānate na yatante mithaste*
 [7,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.076.html#rv07.076.05) *saṃjānānā upa sīdannabhijñu*
-[1,72,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.072.html#rv01.072.05) *īlitā hi śere saṃjānānāḥ* умиротворённый
+[1,72,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.072.html#rv01.072.05) *īlitā hi śere saṃjānānāḥ* умиротворенный
 [ŚAT. BR. 2,3,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,3) *saṃ jānāthāṃ dyāvāpṛthivī*
 [VS. 2,16.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,16)
 [ŚAT. BR. 1,8,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,3,12) [3,6,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,14) [4,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,2) [9,4,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,21) *saṃ jānītāṃ me grāmaḥ*

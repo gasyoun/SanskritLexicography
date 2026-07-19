@@ -12,11 +12,11 @@
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (s. d.).
 
 - **RU:** 3. *iṣ*, *icchati*
-[BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* und *eṣṭā*
+[BHĀTUP. 28,59.] [P. 7,3,77.](https://ashtadhyayi.com/sutraani/7/3/77) *aicchat; iyeṣa, īṣathus, īṣus; eṣiṣyati; eṣitā* и *eṣṭā*
 [P. 7,2,48.](https://ashtadhyayi.com/sutraani/7/2/48)
-[VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; мед. (ved. und ep.
+[VOP. 8,79.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,79) [13,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,4) *aiṣiṣus*; мед. (ved. и ep.
 [P. 3,1,85](https://ashtadhyayi.com/sutraani/3/1/85), Кар., схол.)
-*icchate; īṣe, īṣāte*; inf. *eṣṭum* und *eṣitum; eṣitvā*
+*icchate; īṣe, īṣāte*; inf. *eṣṭum* и *eṣitum; eṣitvā*
 [VOP. 26,207](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,207); partic. *iṣṭa* (см.).
   <sub>attested</sub>
 
@@ -45,7 +45,7 @@
 [7,102,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.102.html#rv07.102.01) *vikṣvi1cchata*
 [104,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.18) *anyamasmadicchatu kaṃ cit*
 [AV. 6,20,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.020.html#av06.020.01) [10,1,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.001.html#av10.001.07) [14,2,19.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.19) *gātumicchati*
-[ṚV. 1,80,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.080.html#rv01.080.06) [112,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.112.html#rv01.112.16) [3,1,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.02) und oft. *kavīricchāmi saṃdṛśe*
+[ṚV. 1,80,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.080.html#rv01.080.06) [112,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.112.html#rv01.112.16) [3,1,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.02) и oft. *kavīricchāmi saṃdṛśe*
 [3,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.01) [1,25,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.16) [161,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.161.html#rv01.161.14) [164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) [165,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.01) [108,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.108.html#rv01.108.01) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.108.html#rv01.108.05) *yajñasya kiṃ cideṣiṣyāmaḥ prajñātyai*
 [AIT. BR. 2,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,1) [13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,13) *iṣṭaṃ ca vittaṃ ceti . aiṣiṣuriva vā etadyajñaṃ tamavidan*
 [ŚAT. BR. 1,9,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,20) [4,5,10,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,10,1) [14,4,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,3) мед.: *anyamicchasva subhage patiṃ mat*
@@ -61,7 +61,7 @@
 [53,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.053.html#rv06.053.06) *antaricchanti taṃ jane rudraṃ paro manīṣayā*
 [8,61,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.061.html#rv08.061.03) [AV. 11,9,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.009.html#av11.009.08)
 
-- **RU:** a) *icchati manasā* und ähnlichen: «желать иметь, вожделеть, домогаться»: *yamaicchāma manasā so3yamāgāt*
+- **RU:** a) *icchati manasā* и ähnlichen: «желать иметь, вожделеть, домогаться»: *yamaicchāma manasā so3yamāgāt*
 [ṚV. 10,53,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.02) *icchāmīddhṛdā manasā cidindram*
 [6,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.028.html#rv06.028.05) *paṇericcha hṛdi priyam*
 [53,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.053.html#rv06.053.06) *antaricchanti taṃ jane rudraṃ paro manīṣayā*
@@ -165,7 +165,7 @@
 [ŚĀK. CH. 158,6.] *icchāmi kathitām* «я желаю, чтобы вы указали мне их»
 [R. 6,83,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,83,10) *bhartāraṃ* («в качестве супруга») *māmanicchatīm*
 [5,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,24,8) с acc. cum infin.: *yadi — māṃ ca jīvitumicchasi*
-[SĀV. 5,100.] с acc. и abl. или loc. «домогаться чего-л. от кого-л.» или «стараться получить что-л., ожидать чего-л. от чего-л., искать что-л. в чём-л.»: *rājāntevāsiyājyebhyaḥ sīdanniccheddhanaṃ kṣudhā*
+[SĀV. 5,100.] с acc. и abl. или loc. «домогаться чего-л. от кого-л.» или «стараться получить что-л., ожидать чего-л. от чего-л., искать что-л. в чем-л.»: *rājāntevāsiyājyebhyaḥ sīdanniccheddhanaṃ kṣudhā*
 [YĀJÑ. 1,130.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,130) *keciddaivātsvabhāvādvā kālātpuruṣakārataḥ . saṃyoge kecidicchanti phalaṃ kuśalabuddhayaḥ ..*
 [349.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,349) ср. далее ниже u. мед. — с inf.
 [P. 3,3,158.](https://ashtadhyayi.com/sutraani/3/3/158) *sraṣṭumicchannimāḥ prajāḥ*
@@ -206,7 +206,7 @@
 [MBH. 14,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.153) *svaptumicche*
 [3,16751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16751) *jñātumicchāmahe*
 [1,1040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1040) [270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.270) [2,267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.267) [3,8468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8468) [12668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12668) [R. 1,39,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,10) [3,18,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,7) [BRAHMA-P. in LA. 49,13.] *icchethāḥ*
-[N. 14,23.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,23) С acc. вещи и loc. лица: «домогаться чего-л. от кого-л.» (букв. «искать что-л. в ком-л.»), «обращаться к кому-л. с просьбой о чём-л.»: *asminnanuśāsanamīṣe*
+[N. 14,23.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,23) С acc. вещи и loc. лица: «домогаться чего-л. от кого-л.» (букв. «искать что-л. в ком-л.»), «обращаться к кому-л. с просьбой о чем-л.»: *asminnanuśāsanamīṣe*
 [AIT. BR. 6,30.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,30) *asyāmevecchāmahā iti tatheti tasyāmaicchanta . sainānabravītprātaḥ vaḥ prativaktāsmīti tasmātstriyaḥ patyāvicchante tasmādu stryanurātraṃ patyāvicchate*
 [3,22.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,22) *tasyāmapitvamīṣāte*
 [ŚAT. BR. 1,8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,8) *deveṣu yajñe bhāgamīṣire*

@@ -147,7 +147,7 @@ _PWG article — 54 sub-card(s), 247 sense(s) · RU 247/247 · EN 0/247_
 [AIT. BR. 6,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,33) *pādamagṛhṇāt*
 [KĀṬH. 13,2.]
 
-- **RU:** — *abhi* схватить, поймать врасплох: *etyākāle 'bhihāya mukhamapyagṛhṇāt* подошёл, внезапно схватил его и зажал ему рот
+- **RU:** — *abhi* схватить, поймать врасплох: *etyākāle 'bhihāya mukhamapyagṛhṇāt* подошел, внезапно схватил его и зажал ему рот
 [AIT. BR. 6,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,33) *pādamagṛhṇāt*
 [KĀṬH. 13,2.]
   <sub>attested</sub>
@@ -715,7 +715,7 @@ nach Comm.): *samahāsta mudam*
 
 **e)** — e〉 besiegt werden von (Instr.), Jmd nachstehen.
 
-- **RU:** — e〉 быть побеждённым кем-л. (Instr.), уступать кому-л.
+- **RU:** — e〉 быть побежденным кем-л. (Instr.), уступать кому-л.
   <sub>attested</sub>
 
 **f)** — f〉 ablassen —, abstehen von, untreu werden; mit Abl.
@@ -750,7 +750,7 @@ nach Comm.): *samahāsta mudam*
 
 **7c)** — c〉 ermangelnd, ohne — seiend (die Ergänzung im Abl., Instr. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишённый, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
   <sub>attested</sub>
 
 **caus)** — Caus.
@@ -797,7 +797,7 @@ nach Comm.): *samahāsta mudam*
 
 **mit-T18-4)** — 4〉 ungenau für Pass. weichen, schwinden.
 
-- **RU:** — 4〉 неточно вместо Pass. отступать, исчезать.
+- **RU:** — 4〉 неточно вм. Pass. отступать, исчезать.
   <sub>attested</sub>
 
 **mit-T18-5)** — 5〉 Pass.
@@ -857,7 +857,7 @@ nach Comm.): *samahāsta mudam*
 
 **mit-T18-6f)** — f〉 am Ende eines Comp. ermangelnd, ohne — seiend.
 
-- **RU:** — f〉 в конце Comp. лишённый, не имеющий.
+- **RU:** — f〉 в конце Comp. лишенный, не имеющий.
   <sub>attested</sub>
 
 **mit-T18-7)** — 7〉 *prajahita* s. bes.
@@ -879,7 +879,7 @@ nach Comm.): *samahāsta mudam*
 
 **mit-T36-2a)** — a〉 ausgeschlossen von (Abl.).
 
-- **RU:** — a〉 исключённый из (Abl.).
+- **RU:** — a〉 исключенный из (Abl.).
   <sub>attested</sub>
 
 **mit-T36-2b)** — b〉 geschwunden, dahin seiend.
@@ -889,7 +889,7 @@ nach Comm.): *samahāsta mudam*
 
 **mit-T36-2c)** — c〉 ermangelnd, ohne — seiend; die Ergänzung im Instr.
 
-- **RU:** — c〉 лишённый, не имеющий; дополнение в Instr.
+- **RU:** — c〉 лишенный, не имеющий; дополнение в Instr.
   <sub>attested</sub>
 
 **mit-T41)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
@@ -1018,7 +1018,7 @@ nach Comm.): *samahāsta mudam*
 
 **mit-T47-11c)** — c〉 ermangelnd, ohne — seiend, beraubt —, getrennt —, frei von (Instr., Abl. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишённый, не имеющий, лишённый —, отделённый —, свободный от (Instr., Abl. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий, лишенный —, отделенный —, свободный от (Instr., Abl. или предшествует в Comp.).
   <sub>attested</sub>
 
 **addenda-ptcp)** — Caus. s. *vihāpita* [Nachtr. 6].
@@ -1139,18 +1139,18 @@ nach Comm.): *samahāsta mudam*
 
 **1-liegen-lassen)** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) liegen lassen: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
-[Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038)
+[Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038 "Spr. (II) 7038: siṃhakṣuṇṇakarīndrakumbhagalitaṃ raktāktamuktāphalaṃ kāntare badarīdhiyā drutamagādbhillasya patnī mudā | pāṇibhyāmupagṛhya śuklakaṭhinaṃ tadvīkṣya dū… — (5231.) Die Frau eines Wilden ging in einem Walde in ihrer Freude rasch auf eine mit Blut beschmierte Perle zu, die aus der Stirn eines von einem Löwen zerrissenen Elephanten gefallen war, in der Meinung es sei eine Brus…")
 
 - **RU:** [11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) оставлять лежать, бросать: *dantakāṣṭhaṃ śucipradeśe*
 [VARĀH. BṚH. S. 85,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?85,8)
-[Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038)
+[Spr. (II) 7038.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7038 "Spr. (II) 7038: siṃhakṣuṇṇakarīndrakumbhagalitaṃ raktāktamuktāphalaṃ kāntare badarīdhiyā drutamagādbhillasya patnī mudā | pāṇibhyāmupagṛhya śuklakaṭhinaṃ tadvīkṣya dū… — (5231.) Die Frau eines Wilden ging in einem Walde in ihrer Freude rasch auf eine mit Blut beschmierte Perle zu, die aus der Stirn eines von einem Löwen zerrissenen Elephanten gefallen war, in der Meinung es sei eine Brus…")
   <sub>attested</sub>
 
 **2))** — 2) entlassen, emittere: Samen
 [ṚV. 10,61,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.06) *aśmavarṣaṃ grāmeṣu*
 [RĀJA-TAR. 1,264.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,264) *puṣpāñjalīn*
 [373.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,373) *hṛtāmbhasaḥ svasmādeva kaṇānghanasya jahataḥ*
-[Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017) *agniṃ svapṛṣṭhataḥ*
+[Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017 "Spr. (II) 7017: sāmudrāstimayo nṛpāśca sadṛśā eke hṛtānambhasaḥ svasmādeva kaṇānghanasya jahato jānanti ye dātṛtām | sarvasmātsphuṭaluṇṭhitādvitarato leśānkilānye 'pi… — (5227.) Die Timi im Meere und Fürsten gleichen einander: wenn jene meinen, die Wolke sei freigebig, wenn sie einige aus dem ihnen gehörigen Wasser geraubten Tropfen entlasse") *agniṃ svapṛṣṭhataḥ*
 [KATHĀS. 39,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,146) *śardhaṃ jahāti māṣaḥ* bewirkt, dass man entlässt,
 [VOP. 26,61.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,61)
 
@@ -1158,7 +1158,7 @@ nach Comm.): *samahāsta mudam*
 [ṚV. 10,61,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.06) *aśmavarṣaṃ grāmeṣu*
 [RĀJA-TAR. 1,264.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,264) *puṣpāñjalīn*
 [373.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,373) *hṛtāmbhasaḥ svasmādeva kaṇānghanasya jahataḥ*
-[Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017) *agniṃ svapṛṣṭhataḥ*
+[Spr. (II) 7017.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7017 "Spr. (II) 7017: sāmudrāstimayo nṛpāśca sadṛśā eke hṛtānambhasaḥ svasmādeva kaṇānghanasya jahato jānanti ye dātṛtām | sarvasmātsphuṭaluṇṭhitādvitarato leśānkilānye 'pi… — (5227.) Die Timi im Meere und Fürsten gleichen einander: wenn jene meinen, die Wolke sei freigebig, wenn sie einige aus dem ihnen gehörigen Wasser geraubten Tropfen entlasse") *agniṃ svapṛṣṭhataḥ*
 [KATHĀS. 39,146.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,146) *śardhaṃ jahāti māṣaḥ* заставляет отпускать,
 [VOP. 26,61.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,61)
   <sub>attested</sub>
@@ -1226,29 +1226,29 @@ S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
   <sub>attested</sub>
 
 **4-aufgegeben-werden)** [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) — aufgegeben —, vermieden werden: *kopaścetasi hīyatām*
-[Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328), v. l. abnehmen, geringer werden, hinschwinden, vergehen, zu Ende gehen, zu Schanden —, zu Nichte werden
+[Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328 "Spr. (II) 3328: nanvātmanyavadhīyatāṃ bhavarase vairāgyamādhīyatāṃ bandhubhyo vyavadhīyatāṃ surasarittīre sadā sthīyatām | bhikṣārthaṃ vyavasīyatāṃ pratidinaṃ satkarm… — (1412.) Man wende doch die Aufmerksamkeit auf sich, entsage vollständig den Süssigkeiten der Welt, trenne sich von den Angehörigen, halte sich beständig am Ufer des Götterflusses (der Gaṅgā) auf, entschliesse sich zum Be…"), v. l. abnehmen, geringer werden, hinschwinden, vergehen, zu Ende gehen, zu Schanden —, zu Nichte werden
 [CHĀND. UP. 4,16,3.]
 [PRAŚNOP. 3,11.] *nākālato vardhate hīyate ca candraḥ samudro 'pi*
-[Spr. (II) 3539.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3539) *rātriḥ*
+[Spr. (II) 3539.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3539 "Spr. (II) 3539: nākālato bhānurupaiti yogaṃ nākālato 'staṃ giriumabhyupaiti | nākālato vardhate ca candraḥ samudro 'pi mahormimālī || — (4377.) Ausser der Zeit tritt die Sonne in kein Sternbild, ausser der Zeit begiebt sie sich nicht zum Berge des Untergangs, ausser der Zeit wachsen und schwinden weder der Mond noch das mit hohen Wogen bekränzte Meer.") *rātriḥ*
 [R. 6,82,58.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,58) *āyuḥ*
-[Spr. (II) 913.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?913) (*yajñaḥ*) *saṃvatsaramatho sāgraṃ vartate na ca hīyate*
+[Spr. (II) 913.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?913 "Spr. (II) 913: ātmānamanuśoca tvaṃ kimanyamanuśocasi | āyustu hīyate yasya sthitasyātha gatasya ca || — (3697.) Beklage dich selbst und nicht einen Andern, da dein Leben hinschwindet, du magst stehen oder gehen.") (*yajñaḥ*) *saṃvatsaramatho sāgraṃ vartate na ca hīyate*
 [R. 7,92,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,92,19) *dharmaḥ*
 [M. 9,188.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,188) *bhūtamapyanupanyastaṃ hīyate vyavahārataḥ*
 [YĀJÑ. 2,19.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,19) *pūjā pūjārheṣu*
 [MBH. 1,6424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6424) *prāṇaḥ*
 [3,11951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11951) *bharturarthaḥ*
 [R. 5,9,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,43) *buddhiḥ*
-[Spr. (II) 4473.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4473) [6318.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6318) [6856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6856) *matiḥ*
+[Spr. (II) 4473.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4473 "Spr. (II) 4473: buddhiśca hīyate puṃsāṃ nīcaiḥ saha samāgamāt | madhyamairmadhyatāṃ yāti śreṣṭhatāṃ yāti cottamaiḥ ||") [6318.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6318) [6856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6856) *matiḥ*
 [7405.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7405) *ghairyam*
 [458.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?458) [ŚĀK. 194](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?194), v. l. [MĀLAV. 79.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?79) [KATHĀS. 65,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,52) [MĀRK. P. 16,51.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,51) [44,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?44,20) [SARVADARŚANAS. 166,5.] abgehen, abgezogen werden: *svatribhāgaḥ*
 [VARĀH. BṚH. S. 7,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,2) den Kürzern ziehen, unterliegen, zu Schaden kommen (von Personen)
 [M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42)
 [MBH. 1,6291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6291) [4,768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.768) *hīyanti saṃyuge*
-[6,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2917) [R. 2,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,36) [Spr. (II) 3133.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3133) *naro hīyate vardhate ca*
+[6,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2917) [R. 2,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,36) [Spr. (II) 3133.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3133 "Spr. (II) 3133: dharme vardhati vardhanti sarvabhūtāni sarvadā | tāsminhrasati hīyante tasmāddharmaṃ na lopayet || — Gedeiht die Gerechtigkeit, so gedeihen stets alle Unterthanen") *naro hīyate vardhate ca*
 [4125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4125) [5556.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5556) [7517.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7517) [KATHĀS. 50,44](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,44) (beim Kampfe). beim Gottesurtheil mit der Wagschale so v. a. weniger wiegen
 [MIT. 145,12. fg.] *yo dhāvatā na hātavyastiṣṭhannapi na hīyate* so v. a. wird nicht ereilt
 [MBH. 12,8138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8138) *hīyamāna, sama, vardhamāna* ein Schwächerer
-[Spr. (II) 7406. fg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7406) mit abl. kommen um, verlustig gehen
+[Spr. (II) 7406. fg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7406 "Spr. (II) 7406: hīyamānena vai sandhiḥ paryeṣṭavyaḥ samen ca | vigraho vardhamānena matireṣā bṛhaspateḥ || — (5410.) Mit einem Schwächeren und mit einem Gleichen soll man Frieden zu machen suchen") mit abl. kommen um, verlustig gehen
 [P. 5,4,45.](https://ashtadhyayi.com/sutraani/5/4/45) *arthāt*
 [KAṬHOP. 2,1.] *brāhmaṇyāt*
 [M. 3,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,17) *patilokāt*
@@ -1257,7 +1257,7 @@ S. 6, 4, 8. 16, 12, 1. *bhūtebhyaḥ*
 [74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,74) *svargāt*
 [75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,75) *balāt*
 [MBH. 4,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.767) *tapasaḥ*
-[15,997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.997) [Spr. (II) 1936.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1936) [1978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1978) [5088.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5088) [KATHĀS. 46,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,118) [MĀRK. P. 113,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,33) mit *˚tas*
+[15,997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.997) [Spr. (II) 1936.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1936 "Spr. (II) 1936: kopastapo nāśayati kruddho bhraśyatyathāyuṣaḥ | kruddhasya galate jñānaṃ kruddhaścārthācca hīyate || — Der Zorn macht Kasteiungen zu Nichte, der Zornige kommt um ein hohes Alter, dem Zornigen entrinnt das Wissen, der Zornige geht des Vortheils verlustig.") [1978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1978) [5088.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5088) [KATHĀS. 46,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,118) [MĀRK. P. 113,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,33) mit *˚tas*
 dass. [P. 5,4,47](https://ashtadhyayi.com/sutraani/5/4/47) (vgl. jedoch 45). *aṃśapradānatas*
 [M. 9,211.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,211) mit instr. dass. [P. 5,4,47.](https://ashtadhyayi.com/sutraani/5/4/47) *vṛttena*
 Schol. *aṅgasarvasvaiḥ, sarveṇa*
@@ -1267,29 +1267,29 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [BHĀG. P. 3,20,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,48)
 
 - **RU:** [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) — быть оставленным, быть избегаемым: *kopaścetasi hīyatām*
-[Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328), v. l. убывать, уменьшаться, иссякать, исчезать, подходить к концу, рассыпаться, сводиться к ничему
+[Spr. (II) 3328](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3328 "Spr. (II) 3328: nanvātmanyavadhīyatāṃ bhavarase vairāgyamādhīyatāṃ bandhubhyo vyavadhīyatāṃ surasarittīre sadā sthīyatām | bhikṣārthaṃ vyavasīyatāṃ pratidinaṃ satkarm… — (1412.) Man wende doch die Aufmerksamkeit auf sich, entsage vollständig den Süssigkeiten der Welt, trenne sich von den Angehörigen, halte sich beständig am Ufer des Götterflusses (der Gaṅgā) auf, entschliesse sich zum Be…"), v. l. убывать, уменьшаться, иссякать, исчезать, подходить к концу, рассыпаться, сводиться к ничему
 [CHĀND. UP. 4,16,3.]
 [PRAŚNOP. 3,11.] *nākālato vardhate hīyate ca candraḥ samudro 'pi*
-[Spr. (II) 3539.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3539) *rātriḥ*
+[Spr. (II) 3539.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3539 "Spr. (II) 3539: nākālato bhānurupaiti yogaṃ nākālato 'staṃ giriumabhyupaiti | nākālato vardhate ca candraḥ samudro 'pi mahormimālī || — (4377.) Ausser der Zeit tritt die Sonne in kein Sternbild, ausser der Zeit begiebt sie sich nicht zum Berge des Untergangs, ausser der Zeit wachsen und schwinden weder der Mond noch das mit hohen Wogen bekränzte Meer.") *rātriḥ*
 [R. 6,82,58.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,58) *āyuḥ*
-[Spr. (II) 913.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?913) (*yajñaḥ*) *saṃvatsaramatho sāgraṃ vartate na ca hīyate*
+[Spr. (II) 913.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?913 "Spr. (II) 913: ātmānamanuśoca tvaṃ kimanyamanuśocasi | āyustu hīyate yasya sthitasyātha gatasya ca || — (3697.) Beklage dich selbst und nicht einen Andern, da dein Leben hinschwindet, du magst stehen oder gehen.") (*yajñaḥ*) *saṃvatsaramatho sāgraṃ vartate na ca hīyate*
 [R. 7,92,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,92,19) *dharmaḥ*
 [M. 9,188.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,188) *bhūtamapyanupanyastaṃ hīyate vyavahārataḥ*
 [YĀJÑ. 2,19.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,19) *pūjā pūjārheṣu*
 [MBH. 1,6424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6424) *prāṇaḥ*
 [3,11951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11951) *bharturarthaḥ*
 [R. 5,9,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,43) *buddhiḥ*
-[Spr. (II) 4473.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4473) [6318.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6318) [6856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6856) *matiḥ*
+[Spr. (II) 4473.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4473 "Spr. (II) 4473: buddhiśca hīyate puṃsāṃ nīcaiḥ saha samāgamāt | madhyamairmadhyatāṃ yāti śreṣṭhatāṃ yāti cottamaiḥ ||") [6318.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6318) [6856.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6856) *matiḥ*
 [7405.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7405) *ghairyam*
 [458.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?458) [ŚĀK. 194](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?194), v. l. [MĀLAV. 79.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?79) [KATHĀS. 65,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,52) [MĀRK. P. 16,51.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,51) [44,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?44,20) [SARVADARŚANAS. 166,5.] уходить, вычитаться: *svatribhāgaḥ*
 [VARĀH. BṚH. S. 7,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,2) потерпеть поражение, проиграть, пострадать (о людях)
 [M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42)
 [MBH. 1,6291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6291) [4,768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.768) *hīyanti saṃyuge*
-[6,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2917) [R. 2,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,36) [Spr. (II) 3133.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3133) *naro hīyate vardhate ca*
+[6,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2917) [R. 2,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,36) [Spr. (II) 3133.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3133 "Spr. (II) 3133: dharme vardhati vardhanti sarvabhūtāni sarvadā | tāsminhrasati hīyante tasmāddharmaṃ na lopayet || — Gedeiht die Gerechtigkeit, so gedeihen stets alle Unterthanen") *naro hīyate vardhate ca*
 [4125.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4125) [5556.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5556) [7517.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7517) [KATHĀS. 50,44](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,44) (в бою). при Божьем суде с весами: преим. весить меньше
 [MIT. 145,12. fg.] *yo dhāvatā na hātavyastiṣṭhannapi na hīyate* т. е. преим. его не настигают
 [MBH. 12,8138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8138) *hīyamāna, sama, vardhamāna* более слабый
-[Spr. (II) 7406. fg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7406) с abl. лишиться, потерять
+[Spr. (II) 7406. fg.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7406 "Spr. (II) 7406: hīyamānena vai sandhiḥ paryeṣṭavyaḥ samen ca | vigraho vardhamānena matireṣā bṛhaspateḥ || — (5410.) Mit einem Schwächeren und mit einem Gleichen soll man Frieden zu machen suchen") с abl. лишиться, потерять
 [P. 5,4,45.](https://ashtadhyayi.com/sutraani/5/4/45) *arthāt*
 [KAṬHOP. 2,1.] *brāhmaṇyāt*
 [M. 3,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,17) *patilokāt*
@@ -1298,7 +1298,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,74) *svargāt*
 [75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,75) *balāt*
 [MBH. 4,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.767) *tapasaḥ*
-[15,997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.997) [Spr. (II) 1936.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1936) [1978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1978) [5088.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5088) [KATHĀS. 46,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,118) [MĀRK. P. 113,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,33) с *˚tas*
+[15,997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.997) [Spr. (II) 1936.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1936 "Spr. (II) 1936: kopastapo nāśayati kruddho bhraśyatyathāyuṣaḥ | kruddhasya galate jñānaṃ kruddhaścārthācca hīyate || — Der Zorn macht Kasteiungen zu Nichte, der Zornige kommt um ein hohes Alter, dem Zornigen entrinnt das Wissen, der Zornige geht des Vortheils verlustig.") [1978.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1978) [5088.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5088) [KATHĀS. 46,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,118) [MĀRK. P. 113,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,33) с *˚tas*
 то же [P. 5,4,47](https://ashtadhyayi.com/sutraani/5/4/47) (ср. однако 45). *aṃśapradānatas*
 [M. 9,211.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,211) с instr. то же [P. 5,4,47.](https://ashtadhyayi.com/sutraani/5/4/47) *vṛttena*
 схол. *aṅgasarvasvaiḥ, sarveṇa*
@@ -1374,12 +1374,12 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 **caus-2)** — 2) es fehlen lassen an: *śaktiṃ na hāpayiṣyanti*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
-[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265) *svapauruṣamahāpayan*
+[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
 
 - **RU:** — 2) не проявлять, не давать чего-л., упускать: *śaktiṃ na hāpayiṣyanti*
 [MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
-[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265) *svapauruṣamahāpayan*
+[Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
   <sub>attested</sub>
 
@@ -1400,9 +1400,9 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [10,22,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,22)
 
 - **RU:** — 4) partic. *hāpita*
- a) повреждённый, пострадавший: залог
+ a) поврежденный, пострадавший: залог
 [YĀJÑ. 2,59.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,59)
-— b) лишённый (instr.). *asubhirindreṇa*
+— b) лишенный (instr.). *asubhirindreṇa*
 [BHĀG. P. 8,15,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,15,3) *trapayā*
 [10,22,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,22)
   <sub>attested</sub>
@@ -1418,7 +1418,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [4,4,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,26) [10,60,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,57) [11,8,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,8,28) *suhṛdaḥ*
 [1,8,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,37) *yaśaḥ*
 [8,20,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,13) verschmähen w.: *vrīhīn*
-[Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635) entgehen w.: *duḥkham*
+[Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635 "Spr. (II) 2635: tyājyaṃ sukhaṃ viṣayasaṅgamajanma puṃsāṃ duḥkhopasṛṣṭamiti mūrkhacicāraṇaiṣā | vrīhīñjihāsati sitottamataṇḍulāḍhyā- nko nāma bhostupakaṇopahitānhitārt… — (171.) Dass Freuden, die aus der Berührung mit der Aussenwelt entspringen, von Männern zu meiden seien, weil sie mit Schmerzen verbunden sind, ist eine Vernünftelei der Thoren. Wer in aller Welt, dem es um sein Bestes zu…") entgehen w.: *duḥkham*
 [SARVADARŚANAS. 103,16.] [WILSON, SĀṂKHYAK. S. 10.] *duḥkhaṃ jihāsitam* 8.
 
 - **RU:** — desid. *jihāsati* желать покинуть, желать отказаться: *deśamimam*
@@ -1427,7 +1427,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [4,4,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,26) [10,60,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,57) [11,8,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,8,28) *suhṛdaḥ*
 [1,8,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,37) *yaśaḥ*
 [8,20,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,13) презирать слово: *vrīhīn*
-[Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635) ускользать от слово: *duḥkham*
+[Spr. (II) 2635.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2635 "Spr. (II) 2635: tyājyaṃ sukhaṃ viṣayasaṅgamajanma puṃsāṃ duḥkhopasṛṣṭamiti mūrkhacicāraṇaiṣā | vrīhīñjihāsati sitottamataṇḍulāḍhyā- nko nāma bhostupakaṇopahitānhitārt… — (171.) Dass Freuden, die aus der Berührung mit der Aussenwelt entspringen, von Männern zu meiden seien, weil sie mit Schmerzen verbunden sind, ist eine Vernünftelei der Thoren. Wer in aller Welt, dem es um sein Bestes zu…") ускользать от слово: *duḥkham*
 [SARVADARŚANAS. 103,16.] [WILSON, SĀṂKHYAK. S. 10.] *duḥkhaṃ jihāsitam* 8.
   <sub>attested</sub>
 
@@ -1472,9 +1472,9 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 - **RU:** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) кого-л. [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) сторонясь, избегая
   <sub>attested</sub>
 
-**apa_4_ablegend)** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612) ablegend: *strīrūpam*
+**apa_4_ablegend)** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612 "Spr. (II) 3612: nāyaṃ te samayo rahasyamadhunā nidrāti nātho nahi sthitvā drakṣyasi pālyate prabhuriti dvāreṣu yeṣāṃ vacaḥ | cetastānapahāya yāhi bhavanaṃ devasya viś… — (1550.) «Dies ist nicht der geeignete Zeitpunkt für dich! Ich sage dir Etwas im Vertrauen: jetzt schläft der Herr") ablegend: *strīrūpam*
 
-- **RU:** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612) слагая с себя, отлагая: *strīrūpam*
+- **RU:** [Spr. (II) 3612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3612 "Spr. (II) 3612: nāyaṃ te samayo rahasyamadhunā nidrāti nātho nahi sthitvā drakṣyasi pālyate prabhuriti dvāreṣu yeṣāṃ vacaḥ | cetastānapahāya yāhi bhavanaṃ devasya viś… — (1550.) «Dies ist nicht der geeignete Zeitpunkt für dich! Ich sage dir Etwas im Vertrauen: jetzt schläft der Herr") слагая с себя, отлагая: *strīrūpam*
   <sub>attested</sub>
 
 **apa_5_befreiend)** [HARIV. 11835.](https://sanskrit-lexicon-scans.github.io/hariv?11835) sich befreiend von: *ṛṇāni*
@@ -1484,11 +1484,11 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 **apa_6_hintansetzung)** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) mit Hintansetzung von
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143)
-[Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279)
+[Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279 "Spr. (II) 7279: svardhapīḍāmapahāya yo 'yaṃ matpāpaśuddhyarthamiha pravṛttaḥ | na cetkṣamāmapyahamasya kuryāṃ mattaḥ kṛtaghno vada kīdṛśo 'nyaḥ || — (5340.) Welcher Andere, sprich, wäre undankbarer als ich, wenn ich nicht einmal Verzeihung angedeihen liesse demjenigen, welcher, die Beeinträchtigung seiner eigenen Pflichten hintansetzend, hierher gekommen ist, damit m…")
 
 - **RU:** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) пренебрегая, отодвигая на задний план
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143)
-[Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279)
+[Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279 "Spr. (II) 7279: svardhapīḍāmapahāya yo 'yaṃ matpāpaśuddhyarthamiha pravṛttaḥ | na cetkṣamāmapyahamasya kuryāṃ mattaḥ kṛtaghno vada kīdṛśo 'nyaḥ || — (5340.) Welcher Andere, sprich, wäre undankbarer als ich, wenn ich nicht einmal Verzeihung angedeihen liesse demjenigen, welcher, die Beeinträchtigung seiner eigenen Pflichten hintansetzend, hierher gekommen ist, damit m…")
   <sub>attested</sub>
 
 **apa_7_abgesehen)** [BHĀG. P. 1,9,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,37) abgesehen von
@@ -1559,7 +1559,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 **ava_6_übertroffen)** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) bei Seite gelassen —, so v. a. übertroffen werden: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
 
-- **RU:** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) быть оставленным в стороне —, тем самым преим. быть превзойдённым: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
+- **RU:** [ṚV. 10,34,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.05) быть оставленным в стороне —, тем самым преим. быть превзойденным: *vikramaścaiva vegaśca te na tenāvahīyate . balaṃ buddhiśca tejaśca sattvaṃ ca*
   <sub>attested</sub>
 
 **ava_7_kausativ)** [R. 5,2,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,11) — caus. zurückbleiben machen: *mā yāmādasmādapa jīhipo naḥ* so v. a. lass uns in diesem Lauf nicht dahintenbleiben
@@ -1635,7 +1635,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) fehlerhaft für *samujjahruḥ*, wie [ed. Bomb.] liest.
 
 - **RU:** — *samud*, *samujjahuḥ*
-[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вместо *samujjahruḥ*, как читает [ed. Bomb.].
+[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вм. *samujjahruḥ*, как читает [ed. Bomb.].
   <sub>attested</sub>
 
 ## hā
@@ -1663,10 +1663,10 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
   <sub>attested</sub>
 
 **ni_2_editorial)** [7,104,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.10) — partic. *nihīna* s. bes. und füge
-[Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888) hinzu. [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) liest [ed. Bomb.] *vihīna* .
+[Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888 "Spr. (II) 4888: mukhyānamātyānutsṛjya yo nihīnānniṣevate | sa bhorāmāpadaṃ prāpya nottāramaghigacchati || — (4726.) Wer vorzügliche Minister entlässt und sich mit schlechten abgiebt, der geräth in eine fürchterliche Noth, aus der er sich nicht zu retten weiss.") hinzu. [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) liest [ed. Bomb.] *vihīna* .
 
 - **RU:** [7,104,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.10) — partic. *nihīna* см. особ. и добавь
-[Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888). [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) читает [ed. Bomb.] *vihīna*.
+[Spr. (II) 4888](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4888 "Spr. (II) 4888: mukhyānamātyānutsṛjya yo nihīnānniṣevate | sa bhorāmāpadaṃ prāpya nottāramaghigacchati || — (4726.) Wer vorzügliche Minister entlässt und sich mit schlechten abgiebt, der geräth in eine fürchterliche Noth, aus der er sich nicht zu retten weiss."). [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) читает [ed. Bomb.] *vihīna*.
   <sub>attested</sub>
 
 ## hā
@@ -1715,7 +1715,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [12,5436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5436) kommen um (abl.), verlustig gehen: *na rāgātparihāsyathaḥ*
 [R. 7,93,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,93,8)
 
-- **RU:** — 2) ошибочно или неточно вместо pass. в знач. терпеть урон, нести ущерб, быть посрамлённым: *yadi tānyodhayiṣyāmaḥ kiṃ vai naḥ parihāsyati* (= *naṅkṣyati*
+- **RU:** — 2) ошибочно или неточно вм. pass. в знач. терпеть урон, нести ущерб, быть посрамленным: *yadi tānyodhayiṣyāmaḥ kiṃ vai naḥ parihāsyati* (= *naṅkṣyati*
 [NĪLAK.]) [MBH. 2,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2460) *vyājena sadbhirvihito dharmaste parihāsyati*
 [12,5436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5436) лишаться (abl.), терять: *na rāgātparihāsyathaḥ*
 [R. 7,93,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,93,8)
@@ -1727,24 +1727,24 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
   <sub>attested</sub>
 
 **pass.3a)** a) gemieden —, unterlassen werden: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
-[Spr. (II) 2984.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2984) *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[Spr. (II) 2984.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2984 "Spr. (II) 2984: doṣabhīteranārambhaḥ kāpuruṣasya lakṣaṇam | kairajīrṇabhayāddhrātarbhojanaṃ parihīyate || — (1257.) Aus Furcht vor Schaden gar nicht an's Werke zu gehen ist das Merkmal eines elenden Wichtes. Wer, o Bruder, lässt das Essen aus Furcht vor Unverdaulichkeit?") *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
 [R. 1,12,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,30) unterbleiben, ausbleiben, mangeln, fehlen: *sarvāścaiva kriyāstasya paryahīyanta*
 [MBH. 13,4752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4752) *parihīyamāṇasatkāra*
-[Spr. (II) 762.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?762) *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (so beide Ausgg.) *bhavatā kriyamāṇam*
+[Spr. (II) 762.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?762 "Spr. (II) 762: asamaiḥ samīyamānaḥ samaiśca parihīyamāṇasatkāraḥ | dhuri cāniyujyamānastribhirarthapatiṃ tyajati bhṛtyaḥ || — (280.) Aus drei Ursachen verlässt ein Diener einen reichen Herrn: wenn er von unter ihm Stehenden wie Einer ihres Gleichen behandelt wird, wenn ihm Gleichstehende es an freundlicher Behandlung fehlen lassen und wenn man…") *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (so beide Ausgg.) *bhavatā kriyamāṇam*
 [MBH. 1,748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.748) *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
 [R. 1,12,16. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,16) *setsyate vīra kāryārtho na kiṃcitparihāsyate*
 [HARIV. 3979](https://sanskrit-lexicon-scans.github.io/hariv?3979) = [4054](https://sanskrit-lexicon-scans.github.io/hariv?4054) = [R. 5,1,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,91) *na kālaḥ kālamatyeti na kālaḥ parihīyate* bleibt nicht aus
-[Spr. (II) 3193.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3193)
+[Spr. (II) 3193.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3193 "Spr. (II) 3193: na kālaḥ kālamatyeti na kālaḥ parihīyate | svabhāvaṃ ca samāsādya na kiñcidativartate ||")
 
 - **RU:** a) быть избегаемым —, быть оставляемым без внимания: *kairajīrṇabhayādbhrātarbhojanaṃ parihīyate*
-[Spr. (II) 2984.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2984) *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
+[Spr. (II) 2984.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2984 "Spr. (II) 2984: doṣabhīteranārambhaḥ kāpuruṣasya lakṣaṇam | kairajīrṇabhayāddhrātarbhojanaṃ parihīyate || — (1257.) Aus Furcht vor Schaden gar nicht an's Werke zu gehen ist das Merkmal eines elenden Wichtes. Wer, o Bruder, lässt das Essen aus Furcht vor Unverdaulichkeit?") *bhavadbhirna yathā yajñe parihīyeta kiṃ ca na*
 [R. 1,12,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,30) не происходить, не состояться, не хватать, отсутствовать: *sarvāścaiva kriyāstasya paryahīyanta*
 [MBH. 13,4752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4752) *parihīyamāṇasatkāra*
-[Spr. (II) 762.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?762) *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (так оба изд.) *bhavatā kriyamāṇam*
+[Spr. (II) 762.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?762 "Spr. (II) 762: asamaiḥ samīyamānaḥ samaiśca parihīyamāṇasatkāraḥ | dhuri cāniyujyamānastribhirarthapatiṃ tyajati bhṛtyaḥ || — (280.) Aus drei Ursachen verlässt ein Diener einen reichen Herrn: wenn er von unter ihm Stehenden wie Einer ihres Gleichen behandelt wird, wenn ihm Gleichstehende es an freundlicher Behandlung fehlen lassen und wenn man…") *yatkiṃcidasmadgṛhe parihīyate tadicchāmyahamaparihīyamānaṃ* (так оба изд.) *bhavatā kriyamāṇam*
 [MBH. 1,748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.748) *yathā sarvaṃ suvihitaṃ na kiṃcitparihīyate*
 [R. 1,12,16. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,12,16) *setsyate vīra kāryārtho na kiṃcitparihāsyate*
 [HARIV. 3979](https://sanskrit-lexicon-scans.github.io/hariv?3979) = [4054](https://sanskrit-lexicon-scans.github.io/hariv?4054) = [R. 5,1,91.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,91) *na kālaḥ kālamatyeti na kālaḥ parihīyate* неизбежно наступает
-[Spr. (II) 3193.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3193)
+[Spr. (II) 3193.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3193 "Spr. (II) 3193: na kālaḥ kālamatyeti na kālaḥ parihīyate | svabhāvaṃ ca samāsādya na kiñcidativartate ||")
   <sub>attested</sub>
 
 **pass.3b)** — b) schwinden, sich legen, nachlassen, aufhören: *vardhate snehaḥ krodhaśca parihīyate*
@@ -1765,13 +1765,13 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **pass.3c)** — c) den Kürzern ziehen, unterliegen, Schlimmes erfahren: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
 [MBH. 3,12858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12858) [5,5446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5446)
 [HARIV. 3090.](https://sanskrit-lexicon-scans.github.io/hariv?3090)
-[Spr. (II) 678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?678) [5344.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5344) *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* besiegt werden, nachstehen
+[Spr. (II) 678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?678 "Spr. (II) 678: avijitya ya ātmānamamātyānvijigīṣate | amitrānvājitāmātyaḥ so 'vaśaḥ parihīyate || — (3623.) Wer, bevor er den Sieg über sich selbst erfochten hat, seine Räthe, oder, bevor er den Sieg über diese erfochten, seine Feinde zu besiegen gedenkt, der geht, er mag wollen oder nicht, zu Schanden.") [5344.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5344) *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* besiegt werden, nachstehen
 [MĀLAV. 12,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?12,14)
 
 - **RU:** — c) оказаться в проигрыше, потерпеть поражение, испытать недоброе: *dharmiṣṭhāḥ parihīyante pāpīyānvardhate janaḥ*
 [MBH. 3,12858.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12858) [5,5446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5446)
 [HARIV. 3090.](https://sanskrit-lexicon-scans.github.io/hariv?3090)
-[Spr. (II) 678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?678) [5344.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5344) *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* быть побеждённым, уступать
+[Spr. (II) 678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?678 "Spr. (II) 678: avijitya ya ātmānamamātyānvijigīṣate | amitrānvājitāmātyaḥ so 'vaśaḥ parihīyate || — (3623.) Wer, bevor er den Sieg über sich selbst erfochten hat, seine Räthe, oder, bevor er den Sieg über diese erfochten, seine Feinde zu besiegen gedenkt, der geht, er mag wollen oder nicht, zu Schanden.") [5344.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5344) *na parihīyate* (*parājīyate* [ed. Bomb.]) *prativādinā gaṇadāsaḥ* быть побежденным, уступать
 [MĀLAV. 12,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?12,14)
   <sub>attested</sub>
 
@@ -1779,7 +1779,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 3,16780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16780) kommen um: *svargāt*
 [M. 9,254.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,254) *rājavaṃśāt*
 [R. 2,8,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8,22) ([7,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,17) [GORR.]). *dharmāt*
-[Spr. (II) 1973.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1973) *śarīradharmakośebhyaḥ*
+[Spr. (II) 1973.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1973 "Spr. (II) 1973: krodho nāma manuṣyasya śarīrājjāyate ripuḥ | yena tyajati mitrāṇi dharmācca parihīyate || — Der Zorn ist ja ein Feind, der aus des Menschen Leibe entspringt und seinetwegen verlässt man die Freunde und kommt um seine guten Werke.") *śarīradharmakośebhyaḥ*
 [6290.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6290) so v. a. Nichts wissen von: *na tarhi prāgavasthāyāḥ parihīyase*
 [MĀLATĪM. 69,18.]
 
@@ -1787,7 +1787,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 3,16780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16780) лишаться: *svargāt*
 [M. 9,254.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,254) *rājavaṃśāt*
 [R. 2,8,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,8,22) ([7,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,17) [GORR.]). *dharmāt*
-[Spr. (II) 1973.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1973) *śarīradharmakośebhyaḥ*
+[Spr. (II) 1973.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1973 "Spr. (II) 1973: krodho nāma manuṣyasya śarīrājjāyate ripuḥ | yena tyajati mitrāṇi dharmācca parihīyate || — Der Zorn ist ja ein Feind, der aus des Menschen Leibe entspringt und seinetwegen verlässt man die Freunde und kommt um seine guten Werke.") *śarīradharmakośebhyaḥ*
 [6290.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6290) так преим. не знать ничего о: *na tarhi prāgavasthāyāḥ parihīyase*
 [MĀLATĪM. 69,18.]
   <sub>attested</sub>
@@ -1813,18 +1813,18 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **pass.3e.beta)** — β) sich enthaltend, es fehlen lassend an: *balikarmataḥ*
 [MBH. 13,4784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4784) ermangelnd, ohne — seiend: *pramāṇāt*
 [3,2803.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2803) *sāhasāt*
-[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706) *putrairapatyairdāraiśca*
+[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706 "Spr. (II) 706: avyavasāyinamalasaṃ daivaparaṃ sāhasācca parihīṇam | pramadeva hi vṛddhapatiṃ necchatyupagūhituṃ lakṣmīḥ || — (260.) Wie ja ein junges Weib einen alten Gatten nicht umarmen mag, so die Glücksgöttin nicht den, der Nichts unternimmt, träge, verhängnissgläubig und jeder kühnen That abgeneigt ist.") *putrairapatyairdāraiśca*
 [R. 3,73,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,32) *arthena*
-[Spr. (II) 617](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?617), v. l. *kiraṇaiḥ*
+[Spr. (II) 617](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?617 "Spr. (II) 617: arthena hi vihīnasya puruṣasyālpamedhasaḥ | vicchidyante kriyāḥ sarvā grīṣme kusarito yathā || — (226.) Alle Werke eines Mannes von geringem Verstande, der des Geldes entbehrt, versiegen wie kleine Bäche in der heissen Jahreszeit."), v. l. *kiraṇaiḥ*
 [VARĀH. BṚH. S. 4,29.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,29) in comp. mit der Ergänzung: *artha˚*
 [16,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,33) [54,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [47.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,47) [90.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,90) [68,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,8) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,19) [26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,26) [BHĀṢĀP. 14.]
 
 - **RU:** — β) воздерживающийся, допускающий недостаток в: *balikarmataḥ*
-[MBH. 13,4784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4784) лишённый, не имеющий: *pramāṇāt*
+[MBH. 13,4784.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4784) лишенный, не имеющий: *pramāṇāt*
 [3,2803.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2803) *sāhasāt*
-[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706) *putrairapatyairdāraiśca*
+[Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706 "Spr. (II) 706: avyavasāyinamalasaṃ daivaparaṃ sāhasācca parihīṇam | pramadeva hi vṛddhapatiṃ necchatyupagūhituṃ lakṣmīḥ || — (260.) Wie ja ein junges Weib einen alten Gatten nicht umarmen mag, so die Glücksgöttin nicht den, der Nichts unternimmt, träge, verhängnissgläubig und jeder kühnen That abgeneigt ist.") *putrairapatyairdāraiśca*
 [R. 3,73,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,32) *arthena*
-[Spr. (II) 617](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?617), v. l. *kiraṇaiḥ*
+[Spr. (II) 617](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?617 "Spr. (II) 617: arthena hi vihīnasya puruṣasyālpamedhasaḥ | vicchidyante kriyāḥ sarvā grīṣme kusarito yathā || — (226.) Alle Werke eines Mannes von geringem Verstande, der des Geldes entbehrt, versiegen wie kleine Bäche in der heissen Jahreszeit."), v. l. *kiraṇaiḥ*
 [VARĀH. BṚH. S. 4,29.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,29) в comp. с дополнением: *artha˚*
 [16,33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,33) [54,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [47.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,47) [90.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,90) [68,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,8) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,19) [26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,26) [BHĀṢĀP. 14.]
   <sub>attested</sub>
@@ -1864,15 +1864,15 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [ŚAT. BR. 4,6,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,6) *jīvitam*
 [MBH. 1,4620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4620) *prāṇānprahāsiṣam*
 [4,432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.432) *dhanaṃ puruṣaḥ*
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) Jmd : *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") Jmd : *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
 [MBH. 2,2846.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2846) [6,2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2789) [8,4844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4844)
 [R. 2,42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30)
-[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471) mit einem unpersönlichen Subject: *mā māyuḥ prahāsīt*
+[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471 "Spr. (II) 1471: eṣa svabhāvo nārīṇāmanubhūya purā sukham | alpāmapyāpadaṃ prāpya duṣyanti prajahatyapi || — (3852.) Dies ist der Weiber angeborenes Wesen, dass sie, wenn sie auch zuvor Freuden gekostet haben, beim kleinsten Ungemach sich vergehen und sogar (den Gatten) verlassen.") mit einem unpersönlichen Subject: *mā māyuḥ prahāsīt*
 [TBR. 1,2,1,27.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,27)
 [TS. 7,3,13,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,13,1) *prāṇā hi prajahanti* (des Metrums wegen st. *prajahati*) *mām*
 [MBH. 1,6566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6566) *(tān) kṣamā lakṣmīśca dharmaśca nacirātprajahustataḥ*
 [3,8495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8495) *puruṣaṃ dhanam* (nom.)
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) *tamātmavantaṃ prajahatyanarthāḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") *tamātmavantaṃ prajahatyanarthāḥ*
 [4849.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4849) Etwas fahren lassen, aufgeben, entsagen: *ayodhyāṃ devalokaṃ vā*
 [R. 2,52,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,49) *karmabandham*
 [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) *kāmānsarvān*
@@ -1880,11 +1880,11 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [3,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,41) *svadharmam*
 [SĀV. 5,31.] *dharmakāmau*
 [MBH. 5,752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.752) *kāmamanyū*
-[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002) *rāgadveṣau*
+[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002 "Spr. (II) 5002: yaḥ kāmamanyū prajahāti rājā pātre pratiṣṭhāpayate dhanaṃ ca | viśeṣavicchutavānkṣiprakārī taṃ sarvalokaḥ kurute pramāṇam || — (4755.) Einen Fürsten, der Liebe und Zorn aufgiebt, einem Würdigen Reichthümer zukommen lässt, Urtheilskraft besitzt, gelehrt ist und schnell zu Werke geht, nimmt Jedermann sich zur Richtschnur.") *rāgadveṣau*
 [6823.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823) *bhayam*
 [R. 4,4,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,9) *śokam*
 [5,69,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,28) *na vidyāṃ prajahet* (des Metrums wegen st. *prajahyāt*)
-[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118) *pratijñām* so v. a. nicht halten
+[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118 "Spr. (II) 5118: yathā pipāsāṃ jayate puruṣaḥ prāpya vai jalam | iṣṭārtho vidyayā hyevaṃ na vidyāṃ prajahennaraḥ || — Wenn mit Hilfe des Wissens das gewünschte Ziel erreicht würde, wie man den Durst stillt, wenn man Wasser bekommt, dann würde Niemand das Wissen vernachlässigen.") *pratijñām* so v. a. nicht halten
 [MBH. 13,6907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6907) med. des Metrums wegen:
 
 *mohametau prahāsyete* fahren lassen
@@ -1896,15 +1896,15 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [ŚAT. BR. 4,6,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,6) *jīvitam*
 [MBH. 1,4620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4620) *prāṇānprahāsiṣam*
 [4,432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.432) *dhanaṃ puruṣaḥ*
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) кого-л.: *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") кого-л.: *mā tvāṃ dīrṇāḥ prahāsiṣuḥ*
 [MBH. 2,2846.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2846) [6,2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2789) [8,4844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4844)
 [R. 2,42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30)
-[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471) с безличным подлежащим: *mā māyuḥ prahāsīt*
+[Spr. (II) 1471.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1471 "Spr. (II) 1471: eṣa svabhāvo nārīṇāmanubhūya purā sukham | alpāmapyāpadaṃ prāpya duṣyanti prajahatyapi || — (3852.) Dies ist der Weiber angeborenes Wesen, dass sie, wenn sie auch zuvor Freuden gekostet haben, beim kleinsten Ungemach sich vergehen und sogar (den Gatten) verlassen.") с безличным подлежащим: *mā māyuḥ prahāsīt*
 [TBR. 1,2,1,27.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,2,1,27)
 [TS. 7,3,13,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,13,1) *prāṇā hi prajahanti* (ради метра вместо *prajahati*) *mām*
 [MBH. 1,6566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6566) *(tān) kṣamā lakṣmīśca dharmaśca nacirātprajahustataḥ*
 [3,8495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8495) *puruṣaṃ dhanam* (nom.)
-[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039) *tamātmavantaṃ prajahatyanarthāḥ*
+[Spr. (II) 3039.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3039 "Spr. (II) 3039: dhanaṃ vā puruṣo rājanpuruṣaṃ vā punardhanam | avaśyaṃ prajahātyeva tadvidvānko nu sañjvaret || — (1285.) Es verlässt nothwendig, o König, entweder der Mensch das Geld, oder aber das Geld den Menschen: wer möchte, wenn er solches weiss, sich betrüben?") *tamātmavantaṃ prajahatyanarthāḥ*
 [4849.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4849) отпускать что-л., отказываться, отрекаться: *ayodhyāṃ devalokaṃ vā*
 [R. 2,52,49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,49) *karmabandham*
 [BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) *kāmānsarvān*
@@ -1912,11 +1912,11 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [3,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,41) *svadharmam*
 [SĀV. 5,31.] *dharmakāmau*
 [MBH. 5,752.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.752) *kāmamanyū*
-[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002) *rāgadveṣau*
+[Spr. (II) 5002.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5002 "Spr. (II) 5002: yaḥ kāmamanyū prajahāti rājā pātre pratiṣṭhāpayate dhanaṃ ca | viśeṣavicchutavānkṣiprakārī taṃ sarvalokaḥ kurute pramāṇam || — (4755.) Einen Fürsten, der Liebe und Zorn aufgiebt, einem Würdigen Reichthümer zukommen lässt, Urtheilskraft besitzt, gelehrt ist und schnell zu Werke geht, nimmt Jedermann sich zur Richtschnur.") *rāgadveṣau*
 [6823.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823) *bhayam*
 [R. 4,4,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,9) *śokam*
 [5,69,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,28) *na vidyāṃ prajahet* (ради метра вместо *prajahyāt*)
-[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118) *pratijñām* так преим. не соблюдать
+[Spr. (II) 5118.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5118 "Spr. (II) 5118: yathā pipāsāṃ jayate puruṣaḥ prāpya vai jalam | iṣṭārtho vidyayā hyevaṃ na vidyāṃ prajahennaraḥ || — Wenn mit Hilfe des Wissens das gewünschte Ziel erreicht würde, wie man den Durst stillt, wenn man Wasser bekommt, dann würde Niemand das Wissen vernachlässigen.") *pratijñām* так преим. не соблюдать
 [MBH. 13,6907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6907) мед. ради метра:
 
 *mohametau prahāsyete* отпустить
@@ -1934,7 +1934,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
 [12,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1869)
 
-- **RU:** — 3) неточно вместо pass. уступать, исчезать: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* не противоречило бы метру)
+- **RU:** — 3) неточно вм. pass. уступать, исчезать: *sauhārdaṃ cāpi me tvatto na kadācitprahāsyati* (*prahāsyate* не противоречило бы метру)
 [MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *balaṃ me prajahātīva*
 [12,1869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1869)
   <sub>attested</sub>
@@ -1986,14 +1986,14 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 **ppp.5a.beta)** — β) nicht zu Stande kommend mit Etwas (instr.): *sarvakarmabhiḥ*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
 
-- **RU:** — β) не достигающий успеха в чём-л. (instr.): *sarvakarmabhiḥ*
+- **RU:** — β) не достигающий успеха в чем-л. (instr.): *sarvakarmabhiḥ*
 [Spr. (II) 6622.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6622)
   <sub>attested</sub>
 
 **ppp.5a.gamma)** — γ) ermangelnd, ohne — seiend: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
 
-- **RU:** — γ) лишённый, не имеющий: *jyotiḥ˚*
+- **RU:** — γ) лишенный, не имеющий: *jyotiḥ˚*
 [MBH. 1,6817.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6817)
   <sub>attested</sub>
 
@@ -2028,10 +2028,10 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 
 - **RU:** *vipra* покидать, оставлять, отрекаться: *dharmam*
 [MBH. 5,4157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4157) — partic. *˚hīṇa* (обычно *˚hīna*) исчезнувший, ушедший: *˚ratha*
-[MBH. 8,4868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4868) лишённый, не имеющий: *brāhmaṇaiḥ kṣatram*
+[MBH. 8,4868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4868) лишенный, не имеющий: *brāhmaṇaiḥ kṣatram*
 [3,978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.978) *bandhubhiḥ*
 [5,6002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6002) [R. 2,31,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,17) *tejasā*
-[MBH. 1,8142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8142) исключённый из: *gaganāt*
+[MBH. 1,8142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8142) исключенный из: *gaganāt*
 [3651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3651)
   <sub>attested</sub>
 
@@ -2099,7 +2099,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [MEGH. 42.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?42)
 [RAGH. 12,102.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,102)
 [VIKR. 41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41)
-[Spr. (II) 1161.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1161) [5009](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5009), v. l.
+[Spr. (II) 1161.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1161 "Spr. (II) 1161: uccaireṣa taruḥ phalaṃ ca pṛthulaṃ dṛṣṭvaiva hṛṣṭaḥ śukaḥ pakvaṃ śālivanaṃ vihāya jaḍadhīstaṃ nālikeraṃ gataḥ | tatrāruhya bubhukṣitena manasā cañcūḥ… — Der Baum hier ist hoch und gross die Frucht") [5009](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5009), v. l.
 [ŚĀK. 140.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?140)
 [RĀJA-TAR. 1,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,58)
 [BHĀG. P. 1,5,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,19) [3,14,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,47) [4,24,67.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,67) *ratham*
@@ -2116,7 +2116,7 @@ Schol. *aṅgasarvasvaiḥ, sarveṇa*
 [3,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,28) [4,21,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,7) *dvaṃdvabhāvam*
 [ṚT. 1,27.] *lajjām*
 [RAGH. 2,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,40) *nidrām*
-[5,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,73) [14,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,69) [Spr. (II) 562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?562) [4779.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4779) [5904.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5904) [6823](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823), v. l. [VARĀH. BṚH. S. 75,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,6) [KATHĀS. 45,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,190) [60,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,112) [MĀRK. P. 16,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,4) [BHĀG. P. 5,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,10) *kalpadrumatām*
+[5,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,73) [14,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,69) [Spr. (II) 562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?562 "Spr. (II) 562: ayi vijahīhi dṛḍhopagūhanaṃ tyaja navasaṅgamabhīru vallabham | aruṇakarodgama eṣa vartate varatanu saṃpravadanti kukkuṭāḥ || — Gieb auf, o Schönleibige, die du vor einer neuen Zusammenkunft dich scheust, die feste Umarmung und verlasse den Liebsten! Dort erheben sich schon die Strahlen der Mörgenröthe und die Hähne krähen!") [4779.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4779) [5904.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5904) [6823](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823), v. l. [VARĀH. BṚH. S. 75,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,6) [KATHĀS. 45,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,190) [60,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,112) [MĀRK. P. 16,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,4) [BHĀG. P. 5,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,10) *kalpadrumatām*
 [RAGH. 14,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,48)
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167)
 [SĀH. D. 25,11.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?25,11) kommen um, verlieren
@@ -2139,7 +2139,7 @@ loswerden, sich befreien von
 [RAGH. 6,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,7)
 [KUMĀRAS. 3,1.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,1) *yadratnarāśīnapi vihāyābhinandyam* so v. a. mehr als
 [ŚĀK. 27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6)
-[Spr. (II) 2468.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2468) [5546.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5546)
+[Spr. (II) 2468.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2468 "Spr. (II) 2468: jhaṭiti praviśa gehaṃ mā bahistiṣṭha kānte grahaṇasamayavelā vartate śītaraśmeḥ | api suvimalakāntiṃ vīkṣya nūnaṃ sa rāhu- rgrasati tava mukhenduṃ pūr… — (990.) Tritt flugs in's Haus und bleibe nicht draussen stehen, o Geliebte, da jetzt gerade die Zeit ist, dass der Mond gepackt wird. Pass' auf, wenn Rāhu deinen Antlitzmond von reinem Glanze erblickt, verschlingt er ihn…") [5546.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5546)
 [KATHĀS. 49,138.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,138)
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 251.] [SARVADARŚANAS. 118,12.] [CAURAP. 27.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?27) [HIT. 35,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?35,11) [65,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?65,5) [DHŪRTAS. 76,1.] *putraśokamapi* so v. a. trotz
 [PAÑCAT. 175,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?175,25) mit Ausnahme von
@@ -2167,7 +2167,7 @@ loswerden, sich befreien von
 [MEGH. 42.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?42)
 [RAGH. 12,102.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,102)
 [VIKR. 41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41)
-[Spr. (II) 1161.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1161) [5009](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5009), v. l.
+[Spr. (II) 1161.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1161 "Spr. (II) 1161: uccaireṣa taruḥ phalaṃ ca pṛthulaṃ dṛṣṭvaiva hṛṣṭaḥ śukaḥ pakvaṃ śālivanaṃ vihāya jaḍadhīstaṃ nālikeraṃ gataḥ | tatrāruhya bubhukṣitena manasā cañcūḥ… — Der Baum hier ist hoch und gross die Frucht") [5009](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5009), v. l.
 [ŚĀK. 140.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?140)
 [RĀJA-TAR. 1,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,58)
 [BHĀG. P. 1,5,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,19) [3,14,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,47) [4,24,67.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,67) *ratham*
@@ -2184,7 +2184,7 @@ loswerden, sich befreien von
 [3,54,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,28) [4,21,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,7) *dvaṃdvabhāvam*
 [ṚT. 1,27.] *lajjām*
 [RAGH. 2,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,40) *nidrām*
-[5,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,73) [14,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,69) [Spr. (II) 562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?562) [4779.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4779) [5904.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5904) [6823](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823), v. l. [VARĀH. BṚH. S. 75,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,6) [KATHĀS. 45,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,190) [60,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,112) [MĀRK. P. 16,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,4) [BHĀG. P. 5,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,10) *kalpadrumatām*
+[5,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,73) [14,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,69) [Spr. (II) 562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?562 "Spr. (II) 562: ayi vijahīhi dṛḍhopagūhanaṃ tyaja navasaṅgamabhīru vallabham | aruṇakarodgama eṣa vartate varatanu saṃpravadanti kukkuṭāḥ || — Gieb auf, o Schönleibige, die du vor einer neuen Zusammenkunft dich scheust, die feste Umarmung und verlasse den Liebsten! Dort erheben sich schon die Strahlen der Mörgenröthe und die Hähne krähen!") [4779.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4779) [5904.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5904) [6823](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6823), v. l. [VARĀH. BṚH. S. 75,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?75,6) [KATHĀS. 45,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,190) [60,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,112) [MĀRK. P. 16,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,4) [BHĀG. P. 5,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,10) *kalpadrumatām*
 [RAGH. 14,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,48)
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167)
 [SĀH. D. 25,11.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?25,11) лишиться, потерять
@@ -2207,7 +2207,7 @@ loswerden, sich befreien von
 [RAGH. 6,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,7)
 [KUMĀRAS. 3,1.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,1) *yadratnarāśīnapi vihāyābhinandyam* так преим. более чем
 [ŚĀK. 27,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,6)
-[Spr. (II) 2468.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2468) [5546.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5546)
+[Spr. (II) 2468.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2468 "Spr. (II) 2468: jhaṭiti praviśa gehaṃ mā bahistiṣṭha kānte grahaṇasamayavelā vartate śītaraśmeḥ | api suvimalakāntiṃ vīkṣya nūnaṃ sa rāhu- rgrasati tava mukhenduṃ pūr… — (990.) Tritt flugs in's Haus und bleibe nicht draussen stehen, o Geliebte, da jetzt gerade die Zeit ist, dass der Mond gepackt wird. Pass' auf, wenn Rāhu deinen Antlitzmond von reinem Glanze erblickt, verschlingt er ihn…") [5546.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5546)
 [KATHĀS. 49,138.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,138)
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 251.] [SARVADARŚANAS. 118,12.] [CAURAP. 27.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?27) [HIT. 35,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?35,11) [65,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?65,5) [DHŪRTAS. 76,1.] *putraśokamapi* так преим. вопреки
 [PAÑCAT. 175,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?175,25) за исключением
@@ -2219,11 +2219,11 @@ loswerden, sich befreien von
   <sub>attested</sub>
 
 **2)** — 2) abstehen von (abl.): *krīḍārasātprastutāt*
-[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) ohne Ergänzung eine Thätigkeit einstellen
+[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991 "Spr. (II) 991: āyāto bhavataḥ piteti sahasā māturniśamyoditaṃ dhūlīdhūsarito vihāya śiśubhiḥ krīḍārasātprastutāt | dūrātsmeramukhaḥ prasārya lalitaṃ bāhudvayaṃ bālak… — Ein Knabe, der plötzlich die von der Mutter gesprochenen Worte «dein Vater ist heimgekehrt» vernimmt, steht, grau von Staub, vom Spiele ab, das die Kinder begonnen haben, streckt aus der Ferne mit lächelndem Munde die li…") ohne Ergänzung eine Thätigkeit einstellen
 [VARĀH. BṚH. S. 77,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,3)
 
 - **RU:** — 2) воздерживаться от (abl.): *krīḍārasātprastutāt*
-[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991) без дополнения прекращать деятельность
+[Spr. (II) 991.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?991 "Spr. (II) 991: āyāto bhavataḥ piteti sahasā māturniśamyoditaṃ dhūlīdhūsarito vihāya śiśubhiḥ krīḍārasātprastutāt | dūrātsmeramukhaḥ prasārya lalitaṃ bāhudvayaṃ bālak… — Ein Knabe, der plötzlich die von der Mutter gesprochenen Worte «dein Vater ist heimgekehrt» vernimmt, steht, grau von Staub, vom Spiele ab, das die Kinder begonnen haben, streckt aus der Ferne mit lächelndem Munde die li…") без дополнения прекращать деятельность
 [VARĀH. BṚH. S. 77,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?77,3)
   <sub>attested</sub>
 
@@ -2280,14 +2280,14 @@ loswerden, sich befreien von
 [MBH. 1,6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) [6192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6192) [3,2713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2713) *śriyā*
 [15634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15634) [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [27,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,20) [38,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,15) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18) [R. GORR. 1,23,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,23,8) *anarthairvyasanaiḥ*
 [RAGH. 18,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,13)
-[Spr. (II) 6302.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6302) [6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
+[Spr. (II) 6302.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6302 "Spr. (II) 6302: vyathayanti paraṃ ceto manorathaśatairjanāḥ | nānuṣṭhānairdhanairhīnāḥ kulajā vidhavā iva || — (2909.) Arme Leute regen nur, wie Wittwen aus edlem Geschlecht, das Herz mit Hunderten von Wünschen auf, indem sie nie zur Befriedigung derselben gelangen.") [6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 [VARĀH. BṚH. S. 15,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,27) [68,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,7) [33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,33) im abl. : *patilokāt*
 [MBH. 5,7373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7373) *rājyāt*
 [R. 3,68,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,35) *dharmāt*
 [2,111,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,1) ([102,1] [SCHL.]). im comp. vorangehend: *rūpadravya˚*
 [M. 4,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,141) *mātāpitṛ˚*
 [9,177.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,177) [MBH. 1,6151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6151) [3,2343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2343) [R. 2,52,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) [ŚRUT. 17.] *deśakālavihīnāni karmāṇi*
-[Spr. (II) 2959.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2959) [6026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6026) [6089.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6089) *kleśa˚*
+[Spr. (II) 2959.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2959 "Spr. (II) 2959: deśakālavihīnāni karmāṇi viparītavat | kriyamāṇāni duṣyanti havīṃṣyaprayateṣviva || — (4216.) Handlungen, die man nicht am rechten Orte und ausser der Zeit, also auf verkehrte Weise vollbringt, werden zu Schanden, wie Opferbutter in den Händen von Unreinen.") [6026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6026) [6089.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6089) *kleśa˚*
 [6320.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6320) [6721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6721), v. l. [7037.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7037) [VARĀH. BṚH. S. 48,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,4) *ṣaṣṭiścaturvihīnā* weniger vier
 [53,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,6) [81,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,16) [58,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,15) [68,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,30) [KATHĀS. 24,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,25) [RĀJA-TAR. 6,328.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,328) [MĀRK. P. 34,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,6) [BHĀG. P. 3,24,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,47) [SARVADARŚANAS. 90,10.] — caus. partic. *vihāpita* _n._ Gabe, Geschenk
 [AK. 2,7,28.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,28)
@@ -2296,20 +2296,20 @@ loswerden, sich befreien von
 [HALĀY. 2,264.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,264)
 [PĀRŚVANĀTHAK. 4,1] (nach [AUFRECHT]).
 
-- **RU:** — γ) лишённый, без —, лишившийся —, свободный от; дополнение в instr.: *darśanena*
+- **RU:** — γ) лишенный, без —, лишившийся —, свободный от; дополнение в instr.: *darśanena*
 [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) *tvayā*
 [MBH. 1,6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) [6192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6192) [3,2713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2713) *śriyā*
 [15634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15634) [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [27,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,20) [38,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,15) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18) [R. GORR. 1,23,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,23,8) *anarthairvyasanaiḥ*
 [RAGH. 18,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,13)
-[Spr. (II) 6302.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6302) [6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
+[Spr. (II) 6302.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6302 "Spr. (II) 6302: vyathayanti paraṃ ceto manorathaśatairjanāḥ | nānuṣṭhānairdhanairhīnāḥ kulajā vidhavā iva || — (2909.) Arme Leute regen nur, wie Wittwen aus edlem Geschlecht, das Herz mit Hunderten von Wünschen auf, indem sie nie zur Befriedigung derselben gelangen.") [6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 [VARĀH. BṚH. S. 15,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,27) [68,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,7) [33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,33) в abl. : *patilokāt*
 [MBH. 5,7373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7373) *rājyāt*
 [R. 3,68,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,35) *dharmāt*
 [2,111,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,1) ([102,1] [SCHL.]). в comp. на первом месте: *rūpadravya˚*
 [M. 4,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,141) *mātāpitṛ˚*
 [9,177.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,177) [MBH. 1,6151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6151) [3,2343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2343) [R. 2,52,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) [ŚRUT. 17.] *deśakālavihīnāni karmāṇi*
-[Spr. (II) 2959.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2959) [6026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6026) [6089.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6089) *kleśa˚*
-[6320.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6320) [6721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6721), v. l. [7037.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7037) [VARĀH. BṚH. S. 48,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,4) *ṣaṣṭiścaturvihīnā* менее четырёх
+[Spr. (II) 2959.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2959 "Spr. (II) 2959: deśakālavihīnāni karmāṇi viparītavat | kriyamāṇāni duṣyanti havīṃṣyaprayateṣviva || — (4216.) Handlungen, die man nicht am rechten Orte und ausser der Zeit, also auf verkehrte Weise vollbringt, werden zu Schanden, wie Opferbutter in den Händen von Unreinen.") [6026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6026) [6089.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6089) *kleśa˚*
+[6320.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6320) [6721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6721), v. l. [7037.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7037) [VARĀH. BṚH. S. 48,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,4) *ṣaṣṭiścaturvihīnā* менее четырех
 [53,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,6) [81,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,16) [58,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,15) [68,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,30) [KATHĀS. 24,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,25) [RĀJA-TAR. 6,328.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,328) [MĀRK. P. 34,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,6) [BHĀG. P. 3,24,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,47) [SARVADARŚANAS. 90,10.] — caus. partic. *vihāpita* _n._ дар, подарок
 [AK. 2,7,28.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,28)
 [H. 386.](https://sanskrit-lexicon-scans.github.io/abch2/app1?386)
@@ -2330,11 +2330,11 @@ loswerden, sich befreien von
 
 **2)** [Z. d. d. m. G. 27,79.] Etwas fahren lassen, aufgeben: *harṣam*
 [R. 2,100,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,39) *pravihāya* mit Hintansetzung —, mit Uebergehung von
-[Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610)
+[Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610 "Spr. (II) 7610: strīmudrāṃ jhaṣaketanasya vivṛtāṃ sarvārthasaṃpatkarīṃ ye mūḍhāḥ pravihāya yānti kudhiyo mithyāphalānveṣiṇaḥ | te tenaiva nihatya nirdayataraṃ nagnīkṛ… — (3305.) Die Thörichten, die das Weib, dieses offen zu Tage liegende, Alles gewährende Siegel des Liebesgottes nicht beachtend, in ihrer Dummheit eitlen Früchten nachgehen, werden von diesem Gotte auf das unbarmherzigste…")
 
 - **RU:** [Z. d. d. m. G. 27,79.] отпускать, отказываться от чего-л.: *harṣam*
 [R. 2,100,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,39) *pravihāya* пренебрегая —, обходя
-[Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610)
+[Spr. (II) 7610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7610 "Spr. (II) 7610: strīmudrāṃ jhaṣaketanasya vivṛtāṃ sarvārthasaṃpatkarīṃ ye mūḍhāḥ pravihāya yānti kudhiyo mithyāphalānveṣiṇaḥ | te tenaiva nihatya nirdayataraṃ nagnīkṛ… — (3305.) Die Thörichten, die das Weib, dieses offen zu Tage liegende, Alles gewährende Siegel des Liebesgottes nicht beachtend, in ihrer Dummheit eitlen Früchten nachgehen, werden von diesem Gotte auf das unbarmherzigste…")
   <sub>attested</sub>
 
 ## prativihā
@@ -2383,7 +2383,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 
 *cākrandan*
 [MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) *hā janma nṛpayoṣitām*
-[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826) *hā hatāsmi*
+[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
 [MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364)
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
@@ -2392,10 +2392,10 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 [R. 6,93,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,11) *hānyeṣāṃ tena kā gatiḥ*
 [KATHĀS. 52,262.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,262) *hā na kaścinmāṃ vṛddhamanāthaṃ saṃbhāvayati*
 [PRAB. 89,15.] *hā hanta hanta*
-[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777) *hā dhik*
+[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777 "Spr. (II) 5777: rātrirgamiṣyati bhaviṣyati suprabhātaṃ bhāsvānudeṣyati hasiṣyati padmajālam | itthaṃ vicintayati kośagate dvirephe hā hanta hanta nalinīṃ gaja ujjahār… — (2625.) «Die Nacht wird vorübergehen, ein schönes Morgenroth anbrechen, die Sonne aufgehen und die Wasserrosen werden sich öffnen.» Während eine in einem Blumenkelch eingeschlossene Biene solchen Gedanken sich hingiebt,…") *hā dhik*
 [7383.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7383) [MĀLATĪM. 82,5.] [RĀJA-TAR. 1,212.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,212) *hā kaṣṭam*
 [SUŚR. 1,108,17.]
-[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316)
+[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316 "Spr. (II) 7316: svargadvārakapāṭapāṭanapaṭurdharmo na cīrṇo mayā hvāravekṣaṇadhūlidhūsaramukhā naivārthinastoṣitāḥ | kāmaṃ cāruvilāsinī madavaśātsvaone 'pi nāsvāditā… — Gute Werke, die geeignet sind die Flügel des Himmelsthores aufzureissen, habe ich nicht vollbracht")
 [HEM.]
 [YOGAŚ. 2,49.] *hākaṣṭaśabda*
 [KATHĀS. 56,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,123) *hā dhikkaṣṭam*
@@ -2404,7 +2404,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219)
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
-[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989) *hā hā tathāpi viṣayānna jahāti cetaḥ*
+[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
 [MṚCCH. 130,23.]
 [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7)
@@ -2416,7 +2416,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380)
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
-[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389) *hā hā muṣṭo 'smi*
+[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*
@@ -2441,7 +2441,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 
 *cākrandan*
 [MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) *hā janma nṛpayoṣitām*
-[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826) *hā hatāsmi*
+[Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
 [MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364)
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
@@ -2450,10 +2450,10 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [R. 6,93,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,11) *hānyeṣāṃ tena kā gatiḥ*
 [KATHĀS. 52,262.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,262) *hā na kaścinmāṃ vṛddhamanāthaṃ saṃbhāvayati*
 [PRAB. 89,15.] *hā hanta hanta*
-[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777) *hā dhik*
+[Spr. (II) 5777.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5777 "Spr. (II) 5777: rātrirgamiṣyati bhaviṣyati suprabhātaṃ bhāsvānudeṣyati hasiṣyati padmajālam | itthaṃ vicintayati kośagate dvirephe hā hanta hanta nalinīṃ gaja ujjahār… — (2625.) «Die Nacht wird vorübergehen, ein schönes Morgenroth anbrechen, die Sonne aufgehen und die Wasserrosen werden sich öffnen.» Während eine in einem Blumenkelch eingeschlossene Biene solchen Gedanken sich hingiebt,…") *hā dhik*
 [7383.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7383) [MĀLATĪM. 82,5.] [RĀJA-TAR. 1,212.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,212) *hā kaṣṭam*
 [SUŚR. 1,108,17.]
-[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316)
+[Spr. (II) 7316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7316 "Spr. (II) 7316: svargadvārakapāṭapāṭanapaṭurdharmo na cīrṇo mayā hvāravekṣaṇadhūlidhūsaramukhā naivārthinastoṣitāḥ | kāmaṃ cāruvilāsinī madavaśātsvaone 'pi nāsvāditā… — Gute Werke, die geeignet sind die Flügel des Himmelsthores aufzureissen, habe ich nicht vollbracht")
 [HEM.]
 [YOGAŚ. 2,49.] *hākaṣṭaśabda*
 [KATHĀS. 56,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,123) *hā dhikkaṣṭam*
@@ -2462,7 +2462,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219)
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
-[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989) *hā hā tathāpi viṣayānna jahāti cetaḥ*
+[Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
 [MṚCCH. 130,23.]
 [VARĀH. BṚH. S. 19,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,7)
@@ -2474,7 +2474,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380)
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
-[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389) *hā hā muṣṭo 'smi*
+[Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*

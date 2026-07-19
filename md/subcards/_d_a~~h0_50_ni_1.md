@@ -20,7 +20,7 @@
 **7)** — 7) *nihita = nihata* tief gesprochen
 [VS. PRĀT. 4,135] in [Ind. St. 4,255.]
 
-- **RU:** — 7) *nihita = nihata* произнесённый низким тоном
+- **RU:** — 7) *nihita = nihata* произнесенный низким тоном
 [VS. PRĀT. 4,135] в [Ind. St. 4,255.]
   <sub>lexicographic</sub>
 

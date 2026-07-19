@@ -16,7 +16,7 @@
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
 [DAŚAK.] in [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
 
-- **RU:** — 4) лишить кого-либо чего-либо, одержать над кем-либо верх в чём-либо, отнять у кого-либо что-либо в игре; с двойным acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
+- **RU:** — 4) лишить кого-либо чего-либо, одержать над кем-либо верх в чем-либо, отнять у кого-либо что-либо в игре; с двойным acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
 [MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)

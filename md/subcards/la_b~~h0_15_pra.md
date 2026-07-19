@@ -14,7 +14,7 @@ An beiden Stellen vielleicht auch in der Bed. 3).
 
 - **RU:** — *pra*, *prālambhi, pralambham* [P. 7,1,69](https://ashtadhyayi.com/sutraani/7/1/69), схол. [VOP. 24,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,7) 1) {%схватывать, хватать, овладевать кем-л.[MBH. 5,1551.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1551) *kāmamanyubhyāṃ pralabdhaḥ* [4320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4320)
 
-В обоих местах, возможно, также в значении знач. 3).
+В обоих местах, возможно, также в знач. 3).
   <sub>attested</sub>
 
 **2)** — 2) erlangen, bekommen

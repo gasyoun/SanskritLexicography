@@ -30,7 +30,7 @@
 (Sch.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
 [VARĀH. BṚH. S. 39 (38),4.]
 
-- **RU:** [R. 4,17,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,50) О звёздах: «совершенно удалиться, отстоять на 12 созвездий»: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
+- **RU:** [R. 4,17,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,50) О звездах: «совершенно удалиться, отстоять на 12 созвездий»: *arkātsite dvitīye budhe 'tha vā yugapadeva sthitayoḥ . vyapagatayorvā*
 (схол.: = *ādityāddvādaśasthānasthitayoḥ) tanniṣpattiratīva gurudṛṣṭyā ..*
 [VARĀH. BṚH. S. 39 (38),4.]
   <sub>lexicographic</sub>

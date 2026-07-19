@@ -10,7 +10,7 @@
 
 - **RU:** 1. *mad* с *abhi*
  2)
-[ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьянённый
+[ṚV. 1,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) *mahāpānābhimatta* опьяненный
 [BHĀG. P. 11,30,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,13)
   <sub>attested</sub>
 
@@ -46,7 +46,7 @@
 **3-lustig)** 3) *vimadan* lustig
 [AV. 20,49,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.049.html#av20.049.03)
 
-- **RU:** 3) *vimadan* весёлый
+- **RU:** 3) *vimadan* веселый
 [AV. 20,49,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.049.html#av20.049.03)
   <sub>attested</sub>
 

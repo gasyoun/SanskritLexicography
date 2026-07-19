@@ -18,7 +18,7 @@
 [P. 6,4,43.](https://ashtadhyayi.com/sutraani/6/4/43) Nicht zu belegen.
 
 - **RU:** — c) *janyate*
-[P. 6,4,43.](https://ashtadhyayi.com/sutraani/6/4/43) Не поддаётся подтверждению.
+[P. 6,4,43.](https://ashtadhyayi.com/sutraani/6/4/43) Не поддается подтверждению.
   <sub>attested</sub>
 
 **2) allgemeine Formen (медиаль))** — 2) allgemeine Formen: *ajani (jani, jāni*
@@ -29,7 +29,7 @@
 [MBH. 3,14387](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14387)), *jajñāna, jajñivaṃs; janiṣyate, ˚ti* (ep.); *janitā*; (*ā, ud*) *janiṣīṣṭa; jāta* .
 
 - **RU:** — 2) Общие формы: *ajani (jani, jāni*
-[ṚV. 8,7,36](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.007.html#rv08.007.36)) und *ajaniṣṭa*
+[ṚV. 8,7,36](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.007.html#rv08.007.36)) и *ajaniṣṭa*
 [P. 3,1,61.](https://ashtadhyayi.com/sutraani/3/1/61) [7,3,35.](https://ashtadhyayi.com/sutraani/7/3/35)
 [VOP. 11,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,7) *janiṣṭhās; jajñe, jajñiṣe, jajñire*
 [P. 6,4,98.](https://ashtadhyayi.com/sutraani/6/4/98) *jajñus* (
@@ -92,7 +92,7 @@
 [AIT. BR. 7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) *jāyate svayameva* oder *jāyate* —
 [P. 6,1,195](https://ashtadhyayi.com/sutraani/6/1/195), Sch.
 
-- **RU:** 1) быть зачатым, родиться; быть произведённым, возникать: *putraḥ*
+- **RU:** 1) быть зачатым, родиться; быть произведенным, возникать: *putraḥ*
 [ṚV. 1,31,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.11) [5,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.06)
 [AIT. BR. 7,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,14) *trirha vai puruṣo jāyate*
 [ŚAT. BR. 11,2,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,2,1,1) *ā mātarā huvāno yato jajñiṣe suśevaḥ*
@@ -103,7 +103,7 @@
 [AIT. BR. 1,16.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,16)
 [KĀTY. ŚR. 25,4,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,4,2) *hotājaniṣṭa cetanaḥ*
 [ṚV. 2,5,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.005.html#rv02.005.01) *ṛtam*
-[1,105,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.105.html#rv01.105.15) *jajñānaḥ* новорождённый
+[1,105,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.105.html#rv01.105.15) *jajñānaḥ* новорожденный
 [7,98,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.098.html#rv07.098.03) *jajñānasya brāhmasya sāma* обозн. eines Саман
 [Ind. St. 3,216.] *jāyasva mriyasva*
 [CHĀND. UP. 5,10,8.] *sā māturudarasthā tu bahūnvarṣagaṇānkila . nivasantī na vai jajñe*
@@ -145,7 +145,7 @@
 [ŚAT. BR. 14,9,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,15)
 [M. 9,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,38)
 [VARĀH. BṚH. S. 54,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,8) [20.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,20) *ajñata vā asya dantāḥ*
-[AIT. BR. 7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) *jāyate svayameva* oder *jāyate* —
+[AIT. BR. 7,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,15) *jāyate svayameva* или *jāyate* —
 [P. 6,1,195](https://ashtadhyayi.com/sutraani/6/1/195), схол.
   <sub>attested</sub>
 

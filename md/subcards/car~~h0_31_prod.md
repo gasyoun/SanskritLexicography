@@ -8,6 +8,6 @@
 [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3)
 
 - **RU:** — *prod* заставлять звучать: *proccaratpraṇavaṃ sadā*
-[HARIV. 14694.](https://sanskrit-lexicon-scans.github.io/hariv?14694) — caus. издавать звуки: *yāvannāsya proccāritasya dṛṣṭigocare gacchāmi* тот, кто издаёт эти звуки
+[HARIV. 14694.](https://sanskrit-lexicon-scans.github.io/hariv?14694) — caus. издавать звуки: *yāvannāsya proccāritasya dṛṣṭigocare gacchāmi* тот, кто издает эти звуки
 [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3)
   <sub>attested</sub>

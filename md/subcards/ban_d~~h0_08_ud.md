@@ -17,7 +17,7 @@
  1) привязывать т.е. привязывать вверх, подвешивать: *bhujaṃgamodbaddhajaṭākalāpa*
 [KUMĀRAS. 3,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,46) *udbaddhamukuṭa*
 [MBH. 13,899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.899) *udbaddhakeśa*
-[RAGH. 16,67](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,67) ошибочно вместо *udbandha˚* (т.е. с распущенными волосами, как
+[RAGH. 16,67](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,67) ошибочно вм. *udbandha˚* (т.е. с распущенными волосами, как
 [ST.] тоже переводит), как имеет [ed. Calc.]. *asminvṛkṣe kilodbaddhaṃ śarīram* подвешенный
 [MBH. 4,1312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1312) мед. повеситься
 [ŚAT. BR. 11,5,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,8) *galamudbadhya dṛḍhayā celacīrayā* затянуть себе горло

@@ -25,7 +25,7 @@
 
 **sch-1-vini)** Mit ˚vini, vinibhinna [S II,267,18] Druckfehler für vinirbhinna.
 
-- **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вместо vinirbhinna.
+- **RU:** Mit ˚vini, vinibhinna [S II,267,18] — опечатка вм. vinirbhinna.
   <sub>attested</sub>
 
 **sch-2-unterschied)** 2. bhid 2. d) Unterschied, Vāgbhaṭālaṃkāra 1,20 nach Aufrecht.

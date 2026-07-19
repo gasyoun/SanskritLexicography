@@ -15,7 +15,7 @@
 [BHĀG. P. 5,26,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,31)
 
 - **RU:** — *ava*
- 1) отрезать, отделять, разрезать; часто об отрезании жертвенной лепёшки и других предметов жертвоприношения.
+ 1) отрезать, отделять, разрезать; часто об отрезании жертвенной лепешки и других предметов жертвоприношения.
 [Z. d. d. m. G. IX, LXIV.] *yadanyasminyajñe srucyavadyati sarvaṃ tadagnau juhoti*
 [ŚAT. BR. 2,3,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,21) [1,5,3,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,25) [7,3,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,20) [4,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,9) *vapām*
 [3,8,2,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,26) *hṛdayasyaivāgre 'vadyati*

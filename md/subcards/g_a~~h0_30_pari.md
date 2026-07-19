@@ -45,6 +45,6 @@
 **4)** — 4) dahinterkommen, eine Kenntniss von Etwas erlangen: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
 
-- **RU:** — 4) дознаться, получить знание о чём-либо: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
+- **RU:** — 4) дознаться, получить знание о чем-либо: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
 [BHĀG. P. 2,6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
   <sub>attested</sub>

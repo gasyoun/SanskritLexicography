@@ -6,7 +6,7 @@
 **pra-9e)** — e) hingeschickt zu (loc.) so v. a. mit der Sorge um — beauftragt: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69)
 
-- **RU:** — e) посланный к (loc.) так преим. облечённый заботой о — поручением: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
+- **RU:** — e) посланный к (loc.) так преим. облеченный заботой о — поручением: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
 [MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69)
   <sub>attested</sub>
 

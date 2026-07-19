@@ -107,7 +107,7 @@
 
 - **RU:** — 5) переубеждать, склонять к перемене взглядов: *vibhetsyati manāṃsyeṣām*
 [MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
-[BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубеждённый, переменивший взгляды
+[BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубежденный, переменивший взгляды
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) ставший неверным, изменивший
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
   <sub>attested</sub>

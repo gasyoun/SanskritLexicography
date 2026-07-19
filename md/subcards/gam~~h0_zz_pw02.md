@@ -5,7 +5,7 @@
 
 **1)** — 1〉 zusammenkommen, zusammentreffen, sich verbinden, zusammenkommen bei (Loc.), zusammenkommen —, zusammenstossen mit (*saha, sārdham* oder Instr. allein), sich geschlechtlich verbinden mit (Instr.); von Sternen so v. a. in eine solche Stellung kommen, dass der eine Stern den andern verdeckt. *saṃgamaṃ parasparam* eine Verbindung unter einander eingehen. *samāgata* zusammengekommen, versammelt, vereint, — mit (Instr.), zusammengestossen mit (Instr.), in Conjunction stehend mit (Instr.).
 
-- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звёздах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединённый — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
+- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звездах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединенный — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
   <sub>attested</sub>
 
 **2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
@@ -59,7 +59,7 @@
 
 **ud-4)** — 4〉 sich ausbreiten, — verbreiten *udgata* weit verbreitet.
 
-- **RU:** — 4) распространяться, — расширяться *udgata* широко распространённый.
+- **RU:** — 4) распространяться, — расширяться *udgata* широко распространенный.
   <sub>attested</sub>
 
 **ud-5)** — 5〉 **udgata* vomirt.
@@ -169,7 +169,7 @@
 
 **prati-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).
 
-- **RU:** — 6) достигать определ. положения (о звёздах).
+- **RU:** — 6) достигать определ. положения (о звездах).
   <sub>attested</sub>
 
 **prati-7)** — 7〉 an Etwas gehen, unternehmen.
@@ -196,12 +196,12 @@
 
 **prati-ppp-2)** — 2〉 *heimgegangen, todt.
 
-- **RU:** — 2) *преставившийся, мёртвый.
+- **RU:** — 2) *преставившийся, мертвый.
   <sub>lexicographic</sub>
 
 **prati-ppp-3)** — 3〉 versehen mit. *hemnā* so v. a. in Gold gefasst. *baddhiprayatnopagata* begleitet von [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
 
-- **RU:** — 3) снабжённый. *hemnā* так преим. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
+- **RU:** — 3) снабженный. *hemnā* так преим. оправленный в золото. *baddhiprayatnopagata* сопровождаемый [Spr. 3134](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3134).
   <sub>attested</sub>
 
 **prati-ppp-4)** — 4〉 eingeräumt, zugestanden, anerkannt.
@@ -287,7 +287,7 @@
 
 **sam-a-4)** — 4〉 gerathen an oder in, gelangen zu, theilhaftig werden. Häufig *˚gacchati* und *˚gacchanti* herzustellen für *˚yacchati* und *˚yacchanti*.
 
-- **RU:** — 4) попадать в или к, достигать, становиться причастным. Часто *˚gacchati* и *˚gacchanti* следует восстанавливать вместо *˚yacchati* и *˚yacchanti*.
+- **RU:** — 4) попадать в или к, достигать, становиться причастным. Часто *˚gacchati* и *˚gacchanti* следует восстанавливать вм. *˚yacchati* и *˚yacchanti*.
   <sub>attested</sub>
 
 **sam-a-5)** — 5〉 eintreten, sich einfügen.
@@ -373,7 +373,7 @@
 
 **pra-nir-2)** — 2〉 sich entfernen (von Sternen), weichen.
 
-- **RU:** — 2) удаляться (о звёздах), отступать.
+- **RU:** — 2) удаляться (о звездах), отступать.
   <sub>attested</sub>
 
 **pra-nir-3)** — 3〉 sich losmachen —, sich befreien von (Abl.).
@@ -429,12 +429,12 @@
 
 **pari-2)** — 2〉 umschliessen, umgeben. *˚gata* am Ende eines Comp. umschlossen —, umgeben von.
 
-- **RU:** — 2) окружать, обступать. *˚gata* в конце Comp. окружённый —, обступленный.
+- **RU:** — 2) окружать, обступать. *˚gata* в конце Comp. окруженный —, обступленный.
   <sub>attested</sub>
 
 **pari-3)** — 3〉 sich nach allen Seiten verbreiten *˚gata* weit verbreitet.
 
-- **RU:** — 3) распространяться во все стороны *˚gata* широко распространённый.
+- **RU:** — 3) распространяться во все стороны *˚gata* широко распространенный.
   <sub>attested</sub>
 
 **pari-4)** — 4〉 dahingehen, abscheiden. *˚gata* gestorben.

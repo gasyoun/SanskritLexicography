@@ -13,7 +13,7 @@
 [BHAṬṬ. 7,94.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,94)
 
 - **RU:** — *nis*
- 1) выигрывать, добывать победой, приобретать, покорять, завоёвывать: *indralokam*
+ 1) выигрывать, добывать победой, приобретать, покорять, завоевывать: *indralokam*
 [MBH. 1,7658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7658) [5,7084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7084) *draupadīm — nirjitāmarjunena*
 [1,152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.152) *dattvā nirjitāṃ vṛddhim* (проценты)
 [M. 8,154.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,154) *prītiṃ vīryanirjitām*
@@ -51,7 +51,7 @@
 [BHĀG. P. 1,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,17) *nirjitendriyagrāma*
 [AK. 2,7,43.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,43) *diṣṭyā me nirjitā vighnāḥ*
 [R. 1,69,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,11) *(śāpaḥ) mama ca vyavasāyena tapasā caiva nirjitaḥ*
-[MBH. 3,2970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2970) *saundaryanirjitaratidvijarājakānti* побеждён, а потому преим. превзойдён
+[MBH. 3,2970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2970) *saundaryanirjitaratidvijarājakānti* побежден, а потому преим. превзойден
 [CAURAP. 30.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?30) [32.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?32)
   <sub>attested</sub>
 

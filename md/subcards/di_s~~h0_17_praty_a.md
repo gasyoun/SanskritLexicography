@@ -21,7 +21,7 @@
 **2)** — 2) Jmd (acc.) Etwas wiederberichten: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
 [MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717)
 
-- **RU:** — 2) докладывать кому-л. (acc.) о чём-л.: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
+- **RU:** — 2) докладывать кому-л. (acc.) о чем-л.: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
 [MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717)
   <sub>attested</sub>
 

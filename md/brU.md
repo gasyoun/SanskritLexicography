@@ -48,14 +48,14 @@ _PWG article — 23 sub-card(s), 110 sense(s) · RU 110/110 · EN 0/110_
 [P. 7,1,35](https://ashtadhyayi.com/sutraani/7/1/35), схол.),
 *bravītu, brūta, bruvantu; abravam* (ved. и
 [MĀRK. P. 74,26.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,26) [33](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,33)), *abruvam, abravīt (abravat*
-[MBH. 7,9283](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9283) ошибочно вместо *abravīt*, как имеет [ed. Bomb.]), *bravīt* (
+[MBH. 7,9283](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9283) ошибочно вм. *abravīt*, как имеет [ed. Bomb.]), *bravīt* (
 [HARIV. 8214.](https://sanskrit-lexicon-scans.github.io/hariv?8214) [8921](https://sanskrit-lexicon-scans.github.io/hariv?8921)), *abrūtām, abruvan (abrūvan*
 [MAITRYUP. 2,3] вероятно ошибочно), *bravat* ved., *bravātha* (
 [AV. 7,56,7](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.056.html#av07.056.07)); partic. *bruvant, bravant* (
 [ṚV. 9,39,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.039.html#rv09.039.01)); мед. *brūte, bruve, bruvīmahi, brūmahe* (
 [BHĀG. P. 7,13,22](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,22)), *bruvate; bruvīta; brūṣva, bruvadhvam*
 ([MBH. 3,2729](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2729), v. l.); *abrūta*; partic. *bruvāṇa* . Из общих форм засвидетельствована лишь 2-я pl. prec. *brūyāsta*
-[N. 17,35](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,35) ([MBH. 3,2729](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2729) вместо того *brūyāstat*, [ed. Bomb.] же — *brūyāsta* с упоминанием варианта *bruvadhvam*) .
+[N. 17,35](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,35) ([MBH. 3,2729](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2729) вм. того *brūyāstat*, [ed. Bomb.] же — *brūyāsta* с упоминанием варианта *bruvadhvam*) .
   <sub>attested</sub>
 
 **1)** 1) sagen, aussprechen, berichten; nennen;
@@ -195,14 +195,14 @@ _PWG article — 23 sub-card(s), 110 sense(s) · RU 110/110 · EN 0/110_
 [M. 2,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,115)
 [R. 3,74,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,27)
 [VID. 130.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?130) *na cāpriyaṃ prāṇiṣu yo bravīti*
-[Spr. 2790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2790) — *tānhavyakavyayorviprānanarhānmanurabravīt* он объявил её недостойной
+[Spr. 2790.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2790) — *tānhavyakavyayorviprānanarhānmanurabravīt* он объявил ее недостойной
 [M. 3,150.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,150) [4,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,103) [5,131.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,131) [6,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,54) [8,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,168) [242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,242) [292.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,292) [339.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,339) [9,182.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,182) [10,63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,63)
 
 *kāṇaṃ vāpyatha vā khañjamanyaṃ vāpi tathāvidham . tathyenāpi bruvan*
 [8,274.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,274) *yat — māṃ bruvanti jagadrurum*
-[BHĀG. P. 2,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,12) говорить о чём-л. или о ком-л. (acc.), высказываться: *mamāyamiti yo brūyānnidhiṃ satyena*
+[BHĀG. P. 2,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,12) говорить о чем-л. или о ком-л. (acc.), высказываться: *mamāyamiti yo brūyānnidhiṃ satyena*
 [M. 8,35.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,35) *akanyeti tu yaḥ kanyāṃ brūyāt*
-[225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,225) [10,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,73) [Spr. 3933.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3933) вместо простого acc. acc. с *adhikṛtya* или *pratiḥ śakuntalāmadhikṛtya bravīmi* я говорю о
+[225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,225) [10,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,73) [Spr. 3933.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3933) вм. простого acc. acc. с *adhikṛtya* или *pratiḥ śakuntalāmadhikṛtya bravīmi* я говорю о
 [Шак.] [ŚĀK. 25,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?25,5) *itīva rāmo bahusaṃgataṃ vacaḥ — saritaṃ prati bruvan*
 [R. 2,95,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,19) ([104,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,104,20) [GORR.]). говорить так — предсказывать, возвещать: *tadāpi sarvasasyānāṃ vṛddhiṃ brūyādvicakṣaṇaḥ*
 [VARĀH. BṚH. S. 22,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?22,5)
@@ -230,7 +230,7 @@ _PWG article — 23 sub-card(s), 110 sense(s) · RU 110/110 · EN 0/110_
 - **RU:** — b) мед. *svayameva brūṣva yatte bhaviṣyati sa etaṃ māhendraṃ grahamabrūta*
 [AIT. BR. 3,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,21) *nādṛṣṭaṃ dṛṣṭato brūvīta*
 [GOBH. 3,5,16.]
-[ĀŚV. GṚHY. 2,4,12.] *brūṣe* v. l. вместо *bravīṣi*
+[ĀŚV. GṚHY. 2,4,12.] *brūṣe* v. l. вм. *bravīṣi*
 [ŚĀK. 101,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,6) *brūte*
 [HIT. 17,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,18) *evaṃ bruvāṇān*
 [MBH. 3,2737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2737) [5,7098.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7098)
@@ -557,7 +557,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [ṚV. PRĀT. 11,32.]
 
 - **RU:** — *nis*
- 1) произносить (громко, отчётливо, по отдельности)
+ 1) произносить (громко, отчетливо, по отдельности)
 [ŚĀṄKH. BR. 27,1.]
 [ŚAT. BR. 4,2,2,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,2,2,12) [10,3,5,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,5,15)
 [LĀṬY. 7,12,7. 13,3.] *nedavidvānnirbravāṇi*
@@ -571,7 +571,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 - **RU:** — 2) объяснять, истолковывать
 [NIR. 2,1.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,1) *sarvajñeyārthavarṇanātsarvānukramaṇīśabdaṃ nirbruvanti vipaścitaḥ*
-[MÜLLER, SL. 216.] [DURGA] zu [NIR.] bei [MUIR, ST. II,176. 184.]
+[MÜLLER, SL. 216.] [DURGA] к [NIR.] у [MUIR, ST. II,176. 184.]
   <sub>attested</sub>
 
 ## paribrū
@@ -651,7 +651,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [AIT. BR. 6,35.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,35)
 
 *tadvākpra brūte*
-[1,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,28) [GOBH. 1,4,36.] *saptasu stotriyāsu pariśiṣṭāsu naḥ prabrūtāt* укажи, когда останется ещё семь Ст. в остатке,
+[1,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,28) [GOBH. 1,4,36.] *saptasu stotriyāsu pariśiṣṭāsu naḥ prabrūtāt* укажи, когда останется еще семь Ст. в остатке,
 [ŚĀṄKH. ŚR. 17,14,4.] *nānyaṃ pṛcchennānyasmai prabrūyāt*
 [KĀTY. ŚR. 12,3,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?12,3,17) [6,25.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?12,6,25) *kalyāṇīṃ vācam*
 [ŚĀṄKH. GṚHY. 3,7.]
@@ -768,7 +768,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 [4245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4245) *na vibrūyānnṛpo dharmam*
 [M. 8,390.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,390)
 
-- **RU:** [MBH. 1,3449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3449) высказываться о чём-либо (acc.), излагать своё мнение о чём-либо; разъяснять, толковать: *tadvākyaṃ vibrūta*
+- **RU:** [MBH. 1,3449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3449) высказываться о чем-либо (acc.), излагать свое мнение о чем-либо; разъяснять, толковать: *tadvākyaṃ vibrūta*
 [MBH. 2,2262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2262) *vyabravīdvayunā martyebhyo 'gnirvidvān*
 [ṚV. 1,145,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.145.html#rv01.145.05)
 [TS. 2,5,11,8.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,11,8) [7,3,1,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,1,3) *yāneva mā praśnānaprākṣī stāneva me vibrūhi*
@@ -829,7 +829,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 **NWS:2)** [Ved , unsp] jemandem (Dat) etwas (Akk) aussprechen. ohne Obj: reden, bes in dem Sinne: freundlich reden. zu jemandem (Dat) sagen, sprechen. [ mit wörtlich angeführter Rede und zwar so dass die Rede vorhergeht, und dann im Folgenden durch íti aufgenommen wird, oder so dass die Rede folgt, die dann bisweilen durch átha vorher angedeutet wird, oder so dass die Rede theilweise vorhergeht, theilweise folgt, oder es wird die Rede durch e. Pr z. B. káthā nur angedeutet, oder auch selbst diese Andeutung als sich von selbst verstehend ausgelassen, namentlich in Verbindungen wie ihá bravītu yás u tád cíketat „Wer dies weiss, der sage es hier". ] nennen, bezeichnen als (mit doppeltem Akk; im Pass mit doppeltem Nom), sagen dass dem besprochenen Gegenstand e. Eigenschaft oder e. Bez zukomme. jemand, etwas (Akk) lobend nennen, rühmend erwähnen
 
-- **RU:** высказывать кому-л. (Dat.) что-л. (Akk.); без объекта: говорить, в особ. в смысле: говорить ласково. говорить кому-л. (Dat.), сказать. [с буквально приводимой речью: либо речь предшествует и затем подхватывается словом íti, либо следует за основным высказыванием, иногда предвосхищённым словом átha, либо частично предшествует, частично следует; иногда речь лишь намечается формой, напр. káthā, или даже такое указание опускается как само собой разумеющееся, — особенно в оборотах типа ihá bravītu yás u tád cíketat «Кто это знает, тот пусть скажет здесь».] называть, обозначать как (с двойным Akk.; в Pass. с двойным Nom.), утверждать, что обсуждаемому предмету присуще какое-л. свойство или наименование. хвалебно называть кого-л., что-л. (Akk.), упоминать с похвалой
+- **RU:** высказывать кому-л. (Dat.) что-л. (Akk.); без объекта: говорить, в особ. в смысле: говорить ласково. говорить кому-л. (Dat.), сказать. [с буквально приводимой речью: либо речь предшествует и затем подхватывается словом íti, либо следует за основным высказыванием, иногда предвосхищенным словом átha, либо частично предшествует, частично следует; иногда речь лишь намечается формой, напр. káthā, или даже такое указание опускается как само собой разумеющееся, — особенно в оборотах типа ihá bravītu yás u tád cíketat «Кто это знает, тот пусть скажет здесь».] называть, обозначать как (с двойным Akk.; в Pass. с двойным Nom.), утверждать, что обсуждаемому предмету присуще какое-л. свойство или наименование. хвалебно называть кого-л., что-л. (Akk.), упоминать с похвалой
   <sub>attested</sub>
 
 **NWS:3)** [Ved , unsp] ( II U ) sagen, sprechen
@@ -884,7 +884,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 **NWS:13)** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* [Ved , unsp] + úpa : 1) jemand (Akk) anrufen; 2) jemand anrufen als, mit dopp. Akk oder bei der zweiten Pers auch mit dem Vok statt des zweiten Akk; 3) jemand (Akk) auffordern zu (Dat); 4) jemand (Akk) bitten um (Akk). Ved , unsp
 
-- **RU:** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* + úpa: 1) взывать к кому-л. (Akk.); 2) называть кого-л. (так-то), с двойным Akk. или, при 2-м лице, с Voc. вместо второго Akk.; 3) побуждать кого-л. (Akk.) к чему-л. (Dat.); 4) просить кого-л. (Akk.) о чём-л. (Akk.).
+- **RU:** *– bittend ansprechen, anruṛen, appellieren an. ṚV 10,35,7 .* + úpa: 1) взывать к кому-л. (Akk.); 2) называть кого-л. (так-то), с двойным Akk. или, при 2-м лице, с Voc. вм. второго Akk.; 3) побуждать кого-л. (Akk.) к чему-л. (Dat.); 4) просить кого-л. (Akk.) о чем-л. (Akk.).
   <sub>attested</sub>
 
 **NWS:14)** *– ( úpa bruvate ): they implore. ṚV ī,134,2 .* [Ved , unsp] + parā : „répliquer". JB . Ved , unsp
@@ -1074,7 +1074,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 — 1〉 laut, deutlich, einzeln aussprechen.
 
 - **RU:** — С *nis*
-— 1〉 произносить громко, отчётливо, по отдельности.
+— 1〉 произносить громко, отчетливо, по отдельности.
   <sub>attested</sub>
 
 **Mit … erklären 2)** — 2〉 erklären.
@@ -1123,7 +1123,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 **Mit … anmelden 6)** — 6〉 Jmd (Dat.) Etwas anmelden, so v. a. anbieten, darreichen [ĀPAST. 1,3,31]; Vgl. **1.** *vid* mit *ni* Caus.
 
-- **RU:** — 6〉 объявлять кому-либо (Dat.) о чём-либо, так преим. предлагать, подносить [ĀPAST. 1,3,31]; ср. **1.** *vid* с *ni* Caus.
+- **RU:** — 6〉 объявлять кому-либо (Dat.) о чем-либо, так преим. предлагать, подносить [ĀPAST. 1,3,31]; ср. **1.** *vid* с *ni* Caus.
   <sub>attested</sub>
 
 **Mit … erwidern)** Mit *pratipra* erwidern.
@@ -1157,7 +1157,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
 
 **Mit … über Etwas aussprechen 2)** — 2〉 sich über Etwas (Acc.) aussprechen, über Etwas seine Meinung sagen, eine Frage beantworten ([ĀPAST. 1,32,22]).
 
-- **RU:** — 2〉 высказываться о чём-либо (Acc.), излагать своё мнение о чём-либо, отвечать на вопрос ([ĀPAST. 1,32,22]).
+- **RU:** — 2〉 высказываться о чем-либо (Acc.), излагать свое мнение о чем-либо, отвечать на вопрос ([ĀPAST. 1,32,22]).
   <sub>attested</sub>
 
 **Mit … erläutern 3)** — 3〉 erläutern, auslegen.

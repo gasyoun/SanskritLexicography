@@ -11,5 +11,5 @@
 - **RU:** — *ni*, partic. *nītta*
 [P. 6,3,124](https://ashtadhyayi.com/sutraani/6/3/124), [Sch. 7,4,47],
 [Sch. 8,4,65], схол.
-[VOP. 26,126.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,126) *nidatta* Кар. zu [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
+[VOP. 26,126.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,126) *nidatta* Кар. к [P. 7,4,47.](https://ashtadhyayi.com/sutraani/7/4/47)
   <sub>attested</sub>

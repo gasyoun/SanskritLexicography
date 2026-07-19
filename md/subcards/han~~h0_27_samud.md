@@ -10,7 +10,7 @@
 
 **1)** 1) aufgewirbelt: Staub [HARIV. 13668](https://sanskrit-lexicon-scans.github.io/hariv?13668) (*samutthita* die neuere Ausg.). [R. 6,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,12)
 
-- **RU:** 1) взметённый вверх: пыль [HARIV. 13668](https://sanskrit-lexicon-scans.github.io/hariv?13668) (*samutthita* новейшее изд.). [R. 6,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,12)
+- **RU:** 1) взметенный вверх: пыль [HARIV. 13668](https://sanskrit-lexicon-scans.github.io/hariv?13668) (*samutthita* новейшее изд.). [R. 6,19,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,12)
   <sub>attested</sub>
 
 **2)** — 2) aufgehoben: *˚patāka* [HARIV. 16253](https://sanskrit-lexicon-scans.github.io/hariv?16253) (*samucchrita˚* die neuere Ausg.). *˚lāṅgūla* [HIT. ed. JOHNS. 1614] (*samunnata˚* SCHL. [76,6](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?76,6)). hoch gehend: *˚taraṃgiṇī gaṅgā* [MBH. 5,5757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5757) *unnatasānusamuddhatā jāhnavī* hoch auf — fliessend [KIR. 5,15.]
@@ -35,12 +35,12 @@
 
 **6)** — 6) herausgenommen: *puṣkaraṃ hradādagastyena* (richtiger *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (richtiger *samuddhṛta˚* [ed. Bomb.] und [GORR.]).
 
-- **RU:** — 6) извлечённый: *puṣkaraṃ hradādagastyena* (правильнее *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (правильнее *samuddhṛta˚* [ed. Bomb.] и [GORR.]).
+- **RU:** — 6) извлеченный: *puṣkaraṃ hradādagastyena* (правильнее *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (правильнее *samuddhṛta˚* [ed. Bomb.] и [GORR.]).
   <sub>attested</sub>
 
 **7)** — 7) in Bewegung versetzt, erregt (richtiger *samuddhuta): ūrubhujavegena samudraḥ* [R. 5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *pakṣavātasamuddhatā puṣpavṛṣṭayaḥ* [10,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,10,12) *˚marut* [UTTARAR. 95,11 (124,10).]
 
-- **RU:** — 7) приведённый в движение, взволнованный (правильнее *samuddhuta): ūrubhujavegena samudraḥ* [R. 5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *pakṣavātasamuddhatā puṣpavṛṣṭayaḥ* [10,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,10,12) *˚marut* [UTTARAR. 95,11 (124,10).]
+- **RU:** — 7) приведенный в движение, взволнованный (правильнее *samuddhuta): ūrubhujavegena samudraḥ* [R. 5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *pakṣavātasamuddhatā puṣpavṛṣṭayaḥ* [10,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,10,12) *˚marut* [UTTARAR. 95,11 (124,10).]
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *vimatisamudghātin* .
